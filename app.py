@@ -55,7 +55,7 @@ st.markdown("""
     -webkit-background-clip: text;
     color: transparent;
 '>
-🔥 Daily AI Test
+🔥 Tnpsc AI Test
 </h1>
 """, unsafe_allow_html=True)
 st.markdown("""
