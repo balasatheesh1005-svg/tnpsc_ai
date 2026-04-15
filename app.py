@@ -73,7 +73,19 @@ menu = st.sidebar.radio("📂 Menu", [
 
 # ✅ correct menu handling
 if menu == "🏠 Home":
-    show_dashboard(user)
+
+    st.markdown(f"""
+    <div style="
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    padding:20px;
+    border-radius:15px;
+    color:white;
+    text-align:center;
+    ">
+    <h2>👋 Welcome {user}</h2>
+    <p>Your TNPSC AI Dashboard</p>
+    </div>
+    """, unsafe_allow_html=True)
 
 elif menu == "🤖 AI Teacher":
     st.write("AI Teacher Page")
