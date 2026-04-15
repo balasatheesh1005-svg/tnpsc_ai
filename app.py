@@ -36,11 +36,31 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
+st.markdown("""
+<style>
+.stButton>button {
+    background: linear-gradient(90deg, #ff512f, #dd2476);
+    color: white;
+    border-radius: 12px;
+    height: 3em;
+    width: 100%;
+    font-weight: bold;
+    border: none;
+}
+</style>
+""", unsafe_allow_html=True)
 from ui.dashboard import show_dashboard
 from core.weakness_ai import add_weakness, get_total_weakness
 from core.study_planner import get_today_plan
 from core.ai_teacher import ai_teacher
 from core.revision_ai import get_revision_topics
+menu = st.sidebar.radio("📂 Menu", [
+    "🏠 Home",
+    "🧠 Weakness",
+    "📊 Progress",
+    "🏆 Leaderboard",
+    "🤖 AI Teacher"
+])
 
 username = st.text_input("Enter your name")
 
@@ -49,6 +69,24 @@ if not username:
 
 user = username
 
+# ✅ correct menu handling
+if menu == "🏠 Home":
+    show_dashboard(user)
+
+elif menu == "🤖 AI Teacher":
+    st.write("AI Teacher Page")
+    st.markdown("""
+<div style="
+background: linear-gradient(90deg, #667eea, #764ba2);
+padding:20px;
+border-radius:15px;
+color:white;
+text-align:center;
+">
+<h1>🔥 TNPSC AI</h1>
+<p>Your Smart Preparation Partner</p>
+</div>
+""", unsafe_allow_html=True)
 st.markdown("""
 <h1 style='
     background: linear-gradient(90deg, #ff512f, #dd2476);
@@ -101,52 +139,103 @@ def load_questions(subject, topic, level="easy"):
 # ---------------- START TEST ----------------
 from core.smart_selector import get_smart_topic
 from core.difficulty_ai import get_user_level
+st.markdown("""
+<div style="
+background:white;
+padding:15px;
+border-radius:12px;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+margin-bottom:15px;
+">
+<h3>📘 Daily Test</h3>
+<p>Practice smart AI-based questions</p>
+</div>
+""", unsafe_allow_html=True)
 
-if st.button("Start Daily Test"):
+col1, col2 = st.columns(2)
 
-    st.session_state.test_active = True
+with col1:
+    if st.button("🚀 Start Daily Test"):
 
-    topic_key, mode = get_smart_topic(user)
+        st.session_state.test_active = True
 
-    # 🛡️ Fix tuple
-    if isinstance(topic_key, tuple):
-        topic_key = topic_key[0]
+        topic_key, mode = get_smart_topic(user)
 
-    # 🛡️ Fix None
-    if not topic_key:
-        topic_key = "polity-historical_background"
+        if isinstance(topic_key, tuple):
+            topic_key = topic_key[0]
 
-    # ✅ ALWAYS define
-    subject, topic = topic_key.lower().split("-")
+        if not topic_key:
+            topic_key = "polity-historical_background"
 
-    level = get_user_level(user)
-    
+        subject, topic = topic_key.lower().split("-")
 
-    # 🎯 Mode UI
-    if mode == "weak":
-        st.error(f"💀 Weak Focus: {topic_key}")
-    elif mode == "revision":
-        st.warning(f"🔁 Revision Focus: {topic_key}")
-    else:
-        st.info(f"📘 New Topic: {topic_key}")
+        level = get_user_level(user)
 
-    st.info(f"🎯 Difficulty: {level.upper()}")
+        if mode == "weak":
+            st.error(f"💀 Weak Focus: {topic_key}")
+        elif mode == "revision":
+            st.warning(f"🔁 Revision Focus: {topic_key}")
+        else:
+            st.info(f"📘 New Topic: {topic_key}")
 
-    questions = load_questions(subject, topic, level)
+        st.info(f"🎯 Difficulty: {level.upper()}")
 
-    if not questions:
-        st.error(f"No questions found: {subject}/{topic}/{level}")
-        st.stop()
+        questions = load_questions(subject, topic, level)
 
-    selected = random.sample(questions, min(len(questions), 5))
+        if not questions:
+            st.error(f"No questions found: {subject}/{topic}/{level}")
+            st.stop()
 
-    st.session_state.test_qs = selected
-    st.session_state.q_index = 0
-    st.session_state.score = 0
-    st.session_state.answered = False
+        selected = random.sample(questions, min(len(questions), 5))
 
-    st.rerun()
-    
+        st.session_state.test_qs = selected
+        st.session_state.q_index = 0
+        st.session_state.score = 0
+        st.session_state.answered = False
+
+        st.rerun()
+
+    with col2:
+        if st.button("🔥 Practice Weak Topics"):
+
+            st.session_state.test_active = True
+
+            from core.weakness_ai import get_weakness
+
+            weak_topics = get_weakness(user)
+
+            if not weak_topics:
+                st.warning("No weak topics found. Practice normal test 👍")
+                st.stop()
+
+            # 🔥 highest weak topic
+            top_topic = sorted(weak_topics.items(), key=lambda x: x[1], reverse=True)[0][0]
+
+            # format fix
+            if "-" not in top_topic:
+                top_topic = f"polity-{top_topic}"
+
+            subject, topic = top_topic.lower().split("-")
+
+            level = get_user_level(user)
+
+            st.error(f"💀 Weak Focus: {top_topic}")
+            st.info(f"🎯 Difficulty: {level.upper()}")
+
+            questions = load_questions(subject, topic, level)
+
+            if not questions:
+                st.error(f"No questions found: {subject}/{topic}/{level}")
+                st.stop()
+
+            selected = random.sample(questions, min(len(questions), 5))
+
+            st.session_state.test_qs = selected
+            st.session_state.q_index = 0
+            st.session_state.score = 0
+            st.session_state.answered = False
+
+            st.rerun()        
 # ---------------- SAFETY ----------------
 if not st.session_state.test_active:
     st.info("👉 Click Start Daily Test")
@@ -229,6 +318,7 @@ else:
     total_q = len(st.session_state.test_qs)
 
     percent = int((total / total_q) * 100) if total_q > 0 else 0
+    st.progress(percent / 100)
     st.session_state.last_percent = percent
 
     from core.progress_ai import save_progress
@@ -244,18 +334,15 @@ else:
     # 🎨 CARD UI START
     st.markdown(f"""
 <div style="
-background: linear-gradient(135deg, #667eea, #764ba2);
+background: linear-gradient(135deg, #43cea2, #185a9d);
 padding:20px;
 border-radius:15px;
 color:white;
-box-shadow:0 4px 10px rgba(0,0,0,0.2);
+text-align:center;
 ">
-
-<h3>🏁 Test Completed</h3>
-
-<p><b>Score:</b> {total}/{total_q}</p>
-<p><b>Percentage:</b> {percent}%</p>
-
+<h2>🏁 Test Completed</h2>
+<h3>{percent}%</h3>
+<p>Score: {total}/{total_q}</p>
 </div>
 """, unsafe_allow_html=True)
     if percent >= 80:
@@ -432,7 +519,6 @@ from core.progress_ai import get_progress
 st.markdown("## 📊 Progress Analytics")
 
 progress = get_progress(user)
-
 total_scores = []
 
 if not progress:
