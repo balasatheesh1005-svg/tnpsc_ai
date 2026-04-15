@@ -74,6 +74,7 @@ menu = st.sidebar.radio("📂 Menu", [
 # ✅ correct menu handling
 if menu == "🏠 Home":
 
+    # 🔥 STEP 2 (Welcome Card)
     st.markdown(f"""
     <div style="
     background: linear-gradient(90deg, #667eea, #764ba2);
@@ -87,6 +88,46 @@ if menu == "🏠 Home":
     </div>
     """, unsafe_allow_html=True)
 
+    # 🔥 STEP 3 (Stats)
+    col1, col2, col3 = st.columns(3)
+
+    from core.streak_ai import get_streak
+    from core.weakness_ai import get_total_weakness
+    from core.progress_ai import get_progress
+
+    streak = get_streak(user)
+    weak = get_total_weakness(user)
+    progress = get_progress(user)
+
+    avg_score = 0
+    if progress:
+        all_scores = []
+        for s in progress.values():
+            all_scores.extend(s)
+        if all_scores:
+            avg_score = int(sum(all_scores)/len(all_scores))
+
+    with col1:
+        st.metric("🔥 Streak", f"{streak} days")
+
+    with col2:
+        st.metric("🧠 Weak Topics", weak)
+
+    with col3:
+        st.metric("📊 Avg Score", f"{avg_score}%")
+
+    # 🔥 STEP 4 (Buttons)
+    st.markdown("## ⚡ Quick Actions")
+
+    col1, col2 = st.columns(2)
+
+    with col1:
+        if st.button("🚀 Start Daily Test"):
+            st.session_state.page = "test"
+
+    with col2:
+        if st.button("🔥 Practice Weak Topics"):
+            st.session_state.page = "weak_test"
 elif menu == "🤖 AI Teacher":
     st.write("AI Teacher Page")
     st.markdown("""
@@ -122,7 +163,8 @@ st.markdown("""
 }
 </style>
 """, unsafe_allow_html=True)
-
+if "page" not in st.session_state:
+    st.session_state.page = "home"
 # ---------------- SESSION INIT ----------------
 if "test_qs" not in st.session_state:
     st.session_state.test_qs = []
