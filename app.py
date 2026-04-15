@@ -54,6 +54,14 @@ from core.weakness_ai import add_weakness, get_total_weakness
 from core.study_planner import get_today_plan
 from core.ai_teacher import ai_teacher
 from core.revision_ai import get_revision_topics
+
+username = st.text_input("Enter your name")
+
+if not username:
+    st.stop()
+
+user = username
+
 menu = st.sidebar.radio("📂 Menu", [
     "🏠 Home",
     "🧠 Weakness",
@@ -62,12 +70,6 @@ menu = st.sidebar.radio("📂 Menu", [
     "🤖 AI Teacher"
 ])
 
-username = st.text_input("Enter your name")
-
-if not username:
-    st.stop()
-
-user = username
 
 # ✅ correct menu handling
 if menu == "🏠 Home":
