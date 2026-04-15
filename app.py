@@ -1,6 +1,19 @@
 import streamlit as st
 import json, os, random
 
+def section(title):
+    st.markdown(f"""
+    <div style="
+    background:#ffffff;
+    padding:15px;
+    border-radius:12px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom:15px;
+    ">
+    <h3>{title}</h3>
+    </div>
+    """, unsafe_allow_html=True)
+
 st.set_page_config(page_title="TNPSC AI", layout="wide")
 
 st.markdown("""
@@ -72,99 +85,98 @@ menu = st.sidebar.radio("📂 Menu", [
 
 
 # ✅ correct menu handling
+# ---------------- MENU ROUTING ----------------
+
 if menu == "🏠 Home":
 
-    # 🔥 STEP 2 (Welcome Card)
-    st.markdown(f"""
-    <div style="
-    background: linear-gradient(90deg, #667eea, #764ba2);
-    padding:20px;
-    border-radius:15px;
-    color:white;
-    text-align:center;
-    ">
-    <h2>👋 Welcome {user}</h2>
-    <p>Your TNPSC AI Dashboard</p>
-    </div>
-    """, unsafe_allow_html=True)
+    section("🏠 Dashboard")
 
-    # 🔥 STEP 3 (Stats)
-    col1, col2, col3 = st.columns(3)
+    st.write(f"👋 Welcome {user}")
 
-    from core.streak_ai import get_streak
-    from core.weakness_ai import get_total_weakness
+    st.info("Use sidebar to navigate")
+
+
+
+elif menu == "📘 Daily Test":
+
+    section("📘 Daily Test")
+
+    st.write("👉 Daily Test UI here")
+
+    # 👉 இங்க உன் test logic paste பண்ணு
+
+
+
+elif menu == "🧠 Weakness":
+
+    section("🧠 Weakness Analysis")
+
+    from core.weakness_ai import get_weakness
+
+    weak_data = get_weakness(user)
+
+    if not weak_data:
+        st.success("🔥 No Weakness!")
+    else:
+        for topic, count in weak_data.items():
+            st.write(f"{topic} → {count}")
+
+
+
+elif menu == "📊 Progress":
+
+    section("📊 Progress Analytics")
+
+    import pandas as pd
     from core.progress_ai import get_progress
 
-    streak = get_streak(user)
-    weak = get_total_weakness(user)
     progress = get_progress(user)
 
-    avg_score = 0
-    if progress:
-        all_scores = []
-        for s in progress.values():
-            all_scores.extend(s)
-        if all_scores:
-            avg_score = int(sum(all_scores)/len(all_scores))
+    if not progress:
+        st.info("No data yet")
+    else:
+        df_data = []
 
-    with col1:
-        st.metric("🔥 Streak", f"{streak} days")
+        for subject, scores in progress.items():
+            avg = sum(scores) / len(scores)
+            df_data.append({
+                "Subject": subject,
+                "Average Score": avg
+            })
 
-    with col2:
-        st.metric("🧠 Weak Topics", weak)
+        df = pd.DataFrame(df_data)
 
-    with col3:
-        st.metric("📊 Avg Score", f"{avg_score}%")
+        st.bar_chart(df.set_index("Subject"))
 
-    # 🔥 STEP 4 (Buttons)
-    st.markdown("## ⚡ Quick Actions")
 
-    col1, col2 = st.columns(2)
 
-    with col1:
-        if st.button("🚀 Start Daily Test"):
-            st.session_state.page = "test"
+elif menu == "🏆 Leaderboard":
 
-    with col2:
-        if st.button("🔥 Practice Weak Topics"):
-            st.session_state.page = "weak_test"
+    section("🏆 Leaderboard")
+
+    from core.leaderboard_ai import get_top_users
+
+    leaders = get_top_users()
+
+    for i, (u, s) in enumerate(leaders, 1):
+        if u == user:
+            st.success(f"⭐ {i}. {u} → {int(s)}%")
+        else:
+            st.write(f"{i}. {u} → {int(s)}%")
+
+
+
 elif menu == "🤖 AI Teacher":
-    st.write("AI Teacher Page")
-    st.markdown("""
-<div style="
-background: linear-gradient(90deg, #667eea, #764ba2);
-padding:20px;
-border-radius:15px;
-color:white;
-text-align:center;
-">
-<h1>🔥 TNPSC AI</h1>
-<p>Your Smart Preparation Partner</p>
-</div>
-""", unsafe_allow_html=True)
-st.markdown("""
-<h1 style='
-    background: linear-gradient(90deg, #ff512f, #dd2476);
-    -webkit-background-clip: text;
-    color: transparent;
-'>
-🔥 Tnpsc AI Test
-</h1>
-""", unsafe_allow_html=True)
-st.markdown("""
-<style>
-.stButton>button {
-    background: linear-gradient(90deg, #36d1dc, #5b86e5);
-    color: white;
-    border-radius: 10px;
-    height: 3em;
-    width: 100%;
-    font-weight: bold;
-}
-</style>
-""", unsafe_allow_html=True)
-if "page" not in st.session_state:
-    st.session_state.page = "home"
+
+    section("🤖 AI Teacher")
+
+    user_q = st.text_input("Ask your doubt")
+
+    if st.button("Ask"):
+        if user_q:
+            with st.spinner("Thinking..."):
+                ans = ai_teacher(user_q, user)
+                st.success(ans)
 # ---------------- SESSION INIT ----------------
 if "test_qs" not in st.session_state:
     st.session_state.test_qs = []
@@ -207,6 +219,7 @@ margin-bottom:15px;
 <p>Practice smart AI-based questions</p>
 </div>
 """, unsafe_allow_html=True)
+
 
 col1, col2 = st.columns(2)
 
@@ -608,3 +621,9 @@ if total_scores:
         st.warning(f"⚠️ Moderate ({int(overall)}%)")
     else:
         st.error(f"❌ Not Ready ({int(overall)}%)")
+
+if st.session_state.page == "test":
+    st.write("👉 Daily Test Logic here")
+
+elif st.session_state.page == "weak_test":
+    st.write("👉 Weak Test Logic here")        
