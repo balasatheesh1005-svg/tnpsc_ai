@@ -25,7 +25,7 @@ def add_weakness(user, subject, topic):
 
     key = f"{subject}-{topic}"
 
-    data[user][key] = data[user].get(key, 0) + 1
+    data[user][key] = min(data[user].get(key, 0) + 1, 5)
 
     save_data(data)
 
@@ -71,12 +71,12 @@ def get_most_weak_topic(user):
 def reduce_weakness(user, subject, topic):
     data = load_data()
 
-    if user in data and subject in data[user]:
-        if topic in data[user][subject]:
-            data[user][subject][topic] -= 1
+    key = f"{subject}-{topic}"
 
-            # 🔥 negative ஆக போகக்கூடாது
-            if data[user][subject][topic] <= 0:
-                del data[user][subject][topic]
+    if user in data and key in data[user]:
+        data[user][key] -= 1
+
+        if data[user][key] <= 0:
+            del data[user][key]
 
     save_data(data)

@@ -23,7 +23,7 @@ def get_revision_topics(user):
 
 
 def add_revision(user, topic_key):
-    data = load_json("revision.json")
+    load()
 
     if user not in data:
         data[user] = {}
@@ -33,7 +33,7 @@ def add_revision(user, topic_key):
         "next_due": str(datetime.date.today() + datetime.timedelta(days=1)),
     }
 
-    save_json("revision.json", data)
+    save(data)
 
 
 def update_revision(user, topic_key):

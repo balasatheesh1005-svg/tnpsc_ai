@@ -335,7 +335,10 @@ elif menu == "📘 Daily Test":
 
         total = st.session_state.score
         total_q = len(st.session_state.test_qs)
-        percent = int((total / total_q) * 100)
+        if total_q == 0:
+            percent = 0
+        else:
+            percent = int((total / total_q) * 100)
 
         st.success("🏁 Test Completed")
 
