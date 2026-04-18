@@ -17,4 +17,10 @@ def get_smart_topic(user):
 
     # 📘 Normal plan
     plan = get_today_plan(user)
-    return plan["topic"], "normal"
+
+    if isinstance(plan, list):
+        topic = plan[0]
+    else:
+        topic = plan.get("topic", "polity-historical_background")
+
+    return topic, "normal"

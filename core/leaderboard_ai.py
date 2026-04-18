@@ -1,34 +1,27 @@
 import json, os
 
-FILE = "data/leaderboard.json"
+FILE = "data/progress.json"
 
 def load():
     if not os.path.exists(FILE):
         return {}
-    return json.load(open(FILE))
+    with open(FILE, "r") as f:
+        return json.load(f)
 
-def save(data):
-    json.dump(data, open(FILE, "w"), indent=4)
-
-def update_leaderboard(user, score):
-
+def get_top_users(limit=10):
     data = load()
 
-    if user not in data:
-        data[user] = []
+    scores = []
 
-    data[user].append(score)
+    for user, subjects in data.items():
+        all_scores = []
+        for s in subjects.values():
+            all_scores.extend(s)
 
-    save(data)
+        if all_scores:
+            avg = sum(all_scores) / len(all_scores)
+            scores.append((user, avg))
 
-def get_top_users():
+    scores.sort(key=lambda x: x[1], reverse=True)
 
-    data = load()
-
-    avg_scores = []
-
-    for user, scores in data.items():
-        avg = sum(scores) / len(scores)
-        avg_scores.append((user, avg))
-
-    return sorted(avg_scores, key=lambda x: x[1], reverse=True)[:5]
+    return scores[:limit]
