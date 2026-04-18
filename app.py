@@ -81,11 +81,19 @@ menu = st.sidebar.radio(
 
 
 # ---------------- LOAD QUESTIONS ----------------
-def load_questions(subject, topic, level="easy"):
-    path = f"data/questions/{subject}/{topic}_{level}.json"
-    if not os.path.exists(path):
+def load_questions(subject, topic, level):
+    import json, os
+
+    subject = subject.lower()
+    topic = topic.lower()
+
+    file_path = f"data/questions/{subject}/{topic}_{level}.json"
+
+    if not os.path.exists(file_path):
+        print("❌ Missing:", file_path)
         return []
-    with open(path, "r", encoding="utf-8") as f:
+
+    with open(file_path, encoding="utf-8") as f:
         return json.load(f)
 
 
