@@ -47,6 +47,8 @@ from core.smart_selector import get_smart_topic
 from core.leaderboard_ai import get_top_users
 from core.revision_ai import add_revision, get_due_revisions
 from core.difficulty_ai import get_user_level, get_next_level
+from core.notes_ai import load_notes
+
 
 # ---------------- USER ----------------
 username = st.text_input("Enter your name")
@@ -66,12 +68,18 @@ if "wrong_count" not in st.session_state:
 if "level" not in st.session_state:
     st.session_state.level = "easy"
 
+if "exam" not in st.session_state:
+    st.session_state["exam"] = "group1"
+
+if "user" not in st.session_state:
+    st.session_state["user"] = "satheeshkumar"
 # ---------------- MENU ----------------
 menu = st.sidebar.radio(
     "📂 Menu",
     [
         "🏠 Home",
         "📘 Daily Test",
+        "📚 Notes",
         "🧠 Weakness",
         "📊 Progress",
         "🏆 Leaderboard",
@@ -374,7 +382,64 @@ elif menu == "📘 Daily Test":
 
         st.session_state.test_active = False
 
-# ---------------- WEAKNESS ----------------
+elif menu == "📚 Notes":
+
+    st.markdown("## 📘 Notes Section")
+
+    from core.notes_ai import load_notes
+
+    subject = st.selectbox("Select Subject", ["polity", "economy"])
+    topic = st.text_input("Enter Topic", "historical_background")
+
+    if st.button("📖 Load Notes"):
+        st.session_state.notes = load_notes(subject, topic)
+
+    # ✅ safe access
+    if "notes" in st.session_state:
+
+        notes = st.session_state.notes
+
+        if not notes:
+            st.error("No notes found")
+            st.stop()
+
+        notes_data = notes.get("content", {})
+
+        # UI
+        st.markdown("## 📘 Definition")
+
+        tab1, tab2 = st.tabs(["English", "தமிழ்"])
+
+        with tab1:
+            st.write(notes_data.get("definition", {}).get("en", ""))
+
+        with tab2:
+            st.write(notes_data.get("definition", {}).get("ta", ""))
+
+        st.markdown("### 📜 Important Acts")
+
+        acts = notes_data.get("acts", [])
+
+        for act in acts:
+            st.markdown(f"#### {act.get('title', '')}")
+
+            tab1, tab2 = st.tabs(["EN", "TA"])
+
+            with tab1:
+                for p in act.get("points", {}).get("en", []):
+                    st.markdown(f"• {p}")
+
+            with tab2:
+                for p in act.get("points", {}).get("ta", []):
+                    st.markdown(f"• {p}")
+
+        if st.button("🧠 Practice from this Topic"):
+            st.session_state.test_subject = subject
+            st.session_state.test_topic = topic
+            st.session_state.start_test = True
+            st.rerun()
+
+    # -------------- WEAKNESS ----------------
 elif menu == "🧠 Weakness":
 
     section("🧠 Weakness Analysis")
