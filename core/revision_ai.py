@@ -5,35 +5,35 @@ from core.utils import load_json, save_json
 FILE = "data/revision.json"
 
 
-def load():
+def load_data():
     if not os.path.exists(FILE):
         return {}
     with open(FILE, "r") as f:
         return json.load(f)
 
 
-def save(data):
+def save_data(data):
     with open(FILE, "w") as f:
         json.dump(data, f, indent=2)
 
 
-def get_revision_topics(user):
-    data = load()
-    return data.get(user, [])
+def add_revision(user, topic):
 
+    data = load_json("revision.json")
 
-def add_revision(user, topic_key):
-    load()
+    # ✅ SAFETY
+    if not isinstance(data, dict):
+        data = {}
 
     if user not in data:
         data[user] = {}
 
-    data[user][topic_key] = {
+    data[user][topic] = {
         "level": 1,
         "next_due": str(datetime.date.today() + datetime.timedelta(days=1)),
     }
 
-    save(data)
+    save_json("revision.json", data)
 
 
 def update_revision(user, topic_key):
@@ -72,3 +72,21 @@ def get_due_revisions(user):
             due.append({"topic": topic, "next_due": info["next_due"]})
 
     return due
+
+
+def get_revision_topics(user):
+    data = load_json("revision.json")
+
+    if user not in data:
+        return []
+
+    today = datetime.date.today()
+    topics = []
+
+    for topic, info in data[user].items():
+        due_date = datetime.date.fromisoformat(info["next_due"])
+
+        if due_date <= today:
+            topics.append(topic)
+
+    return topics

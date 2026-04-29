@@ -42,19 +42,6 @@ def get_total_weakness(user):
     return sum(weak.values())
 
 
-# REDUCE
-def reduce_weakness(user, topic_key):
-    data = load_data()
-
-    if user in data and topic_key in data[user]:
-        data[user][topic_key] -= 1
-
-        if data[user][topic_key] <= 0:
-            del data[user][topic_key]
-
-    save_data(data)
-
-
 def get_most_weak_topic(user):
 
     data = load_data()

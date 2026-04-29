@@ -1,42 +1,44 @@
-import json, os
+import json
+import os
 
 FILE = "data/progress.json"
 
 
-def load():
+def load_data():
     if not os.path.exists(FILE):
         return {}
-    return json.load(open(FILE))
+    with open(FILE, "r") as f:
+        return json.load(f)
 
 
-def save(data):
-    json.dump(data, open(FILE, "w"), indent=4)
+def save_data(data):
+    with open(FILE, "w") as f:
+        json.dump(data, f, indent=4)
 
 
-# -------------------------------
-# SAVE SCORE
-# -------------------------------
-def save_progress(user, subject, score):
+# ✅ SAVE PROGRESS
+def save_progress(user, subject, topic, score):
 
-    data = load()
+    data = load_data()
 
     if user not in data:
         data[user] = {}
 
     if subject not in data[user]:
-        data[user][subject] = []
+        data[user][subject] = {}
 
-    data[user][subject].append(score)
+    if topic not in data[user][subject]:
+        data[user][subject][topic] = []
 
-    save(data)
+    data[user][subject][topic].append(score)
+
+    save_data(data)
 
 
-# -------------------------------
-# GET SUBJECT PROGRESS
-# -------------------------------
+# ✅ GET PROGRESS
 def get_progress(user):
 
-    data = load()
+    data = load_data()
 
     return data.get(user, {})
 
