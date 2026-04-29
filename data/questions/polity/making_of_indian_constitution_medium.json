@@ -1,44 +1,118 @@
 [
-  {
-    "question_en": "Assertion (A): The Constituent Assembly was formed in 1946.\nReason (R): It was formed under Cabinet Mission Plan.",
-    "question_ta": "Assertion (A): அரசியலமைப்பு சபை 1946 இல் உருவாக்கப்பட்டது.\nReason (R): இது கேபினட் மிஷன் திட்டத்தின் கீழ் உருவாக்கப்பட்டது.",
-    "options_en": [
-      "Both A and R are true, R explains A",
-      "Both A and R are true, but R not explanation",
-      "A true, R false",
-      "A false, R true"
-    ],
-    "options_ta": [
-      "A மற்றும் R சரி, R என்பது Aக்கு காரணம்",
-      "A மற்றும் R சரி, ஆனால் R காரணம் இல்லை",
-      "A சரி, R தவறு",
-      "A தவறு, R சரி"
-    ],
-    "answer": "Both A and R are true, R explains A",
-    "explanation_en": "Assembly formed in 1946 under Cabinet Mission Plan.",
-    "explanation_ta": "அரசியலமைப்பு சபை 1946 இல் கேபினட் மிஷன் திட்டத்தின் கீழ் உருவானது.",
-    "subject": "POLITY",
-    "topic": "making_of_constitution"
-  },
-  {
-    "question_en": "Assertion (A): Objective Resolution was moved by Nehru.\nReason (R): It later became Preamble.",
-    "question_ta": "Assertion (A): நோக்கு தீர்மானத்தை நேரு முன்வைத்தார்.\nReason (R): அது பின்னர் முன்னுரையாக மாறியது.",
-    "options_en": [
-      "Both A and R are true, R explains A",
-      "Both A and R true, not explanation",
-      "A true, R false",
-      "A false, R true"
-    ],
-    "options_ta": [
-      "A மற்றும் R சரி, R காரணம்",
-      "A மற்றும் R சரி, காரணம் இல்லை",
-      "A சரி, R தவறு",
-      "A தவறு, R சரி"
-    ],
-    "answer": "Both A and R are true, R explains A",
-    "explanation_en": "Objective Resolution became basis of Preamble.",
-    "explanation_ta": "நோக்கு தீர்மானம் முன்னுரையின் அடிப்படையாக ஆனது.",
-    "subject": "POLITY",
-    "topic": "making_of_constitution"
-  }
+{
+"question_en": "Assertion (A): Constituent Assembly was formed in 1946.\nReason (R): It was formed under Cabinet Mission Plan.",
+"question_ta": "Assertion (A): அரசியலமைப்பு சபை 1946 இல் உருவானது.\nReason (R): இது கேபினட் மிஷன் திட்டத்தின் கீழ் உருவானது.",
+"options_en": ["Both A and R are true and R explains A","Both A and R are true but R does not explain A","A is true but R is false","A is false but R is true"],
+"options_ta": ["A மற்றும் R சரி, R காரணம்","A மற்றும் R சரி, காரணம் இல்லை","A சரி R தவறு","A தவறு R சரி"],
+"answer": "a",
+"explanation_en": "Assembly formed in 1946 under Cabinet Mission.",
+"explanation_ta": "1946 கேபினட் மிஷன் மூலம் உருவானது.",
+"subject": "POLITY",
+"topic": "making_of_constitution"
+},
+{
+"question_en": "Assertion (A): Objective Resolution was moved by Nehru.\nReason (R): It later became the Preamble.",
+"question_ta": "Assertion (A): நோக்கு தீர்மானத்தை நேரு முன்வைத்தார்.\nReason (R): அது பின்னர் முன்னுரையாக மாறியது.",
+"options_en": ["Both true and R explains A","Both true but not explanation","A true R false","A false R true"],
+"options_ta": ["இரண்டும் சரி காரணம்","இரண்டும் சரி காரணம் இல்லை","A சரி R தவறு","A தவறு R சரி"],
+"answer": "a",
+"explanation_en": "Objective Resolution formed basis of Preamble.",
+"explanation_ta": "முன்னுரையின் அடிப்படை.",
+"subject": "POLITY",
+"topic": "making_of_constitution"
+},
+{
+"question_en": "Assertion: Drafting Committee was formed in 1947.\nReason: It drafted Constitution.",
+"question_ta": "Assertion: வரைவு குழு 1947 இல் அமைந்தது.\nReason: அது அரசியலமைப்பை உருவாக்கியது.",
+"options_en": ["Both true and R explains A","Both true not explanation","A true R false","A false R true"],
+"options_ta": ["இரண்டும் சரி காரணம்","இரண்டும் சரி காரணம் இல்லை","A சரி R தவறு","A தவறு R சரி"],
+"answer": "b",
+"explanation_en": "Both true but R is general statement.",
+"explanation_ta": "இரண்டும் சரி ஆனால் காரணம் இல்லை.",
+"subject": "POLITY",
+"topic": "making_of_constitution"
+},
+{
+"question_en": "Assertion: Assembly elections were indirect.\nReason: Members were elected by provincial assemblies.",
+"question_ta": "Assertion: தேர்தல் மறைமுகம்.\nReason: மாநில சபைகள் தேர்ந்தெடுத்தன.",
+"options_en": ["Both true and R explains A","Both true not explanation","A true R false","A false R true"],
+"options_ta": ["இரண்டும் சரி காரணம்","இரண்டும் சரி காரணம் இல்லை","A சரி R தவறு","A தவறு R சரி"],
+"answer": "a",
+"explanation_en": "Indirect election through provincial assemblies.",
+"explanation_ta": "மாநில சபைகள் மூலம் மறைமுகம்.",
+"subject": "POLITY",
+"topic": "making_of_constitution"
+},
+{
+"question_en": "Assertion: Constituent Assembly became sovereign after 1947.\nReason: British control ended.",
+"question_ta": "Assertion: 1947க்கு பின் சபை சுயாட்சி.\nReason: பிரிட்டிஷ் கட்டுப்பாடு முடிந்தது.",
+"options_en": ["Both true and R explains A","Both true not explanation","A true R false","A false R true"],
+"options_ta": ["இரண்டும் சரி காரணம்","இரண்டும் சரி காரணம் இல்லை","A சரி R தவறு","A தவறு R சரி"],
+"answer": "a",
+"explanation_en": "Independence ended British control.",
+"explanation_ta": "சுதந்திரம் காரணம்.",
+"subject": "POLITY",
+"topic": "making_of_constitution"
+},
+
+{
+"question_en": "Consider statements:\n1. Draft Constitution was published in 1948\n2. Final adopted in 1949\nChoose correct",
+"question_ta": "கூற்றுகள்:\n1. 1948 வெளியீடு\n2. 1949 ஏற்றம்\nசரி?",
+"options_en": ["Both","1 only","2 only","None"],
+"options_ta": ["இரண்டும்","1 மட்டும்","2 மட்டும்","இல்லை"],
+"answer": "a",
+"explanation_en": "Both correct.",
+"explanation_ta": "இரண்டும் சரி.",
+"subject": "POLITY",
+"topic": "making_of_constitution"
+},
+
+{
+"question_en": "Consider:\n1. Assembly partly nominated\n2. Fully elected\nCorrect?",
+"question_ta": "கூற்றுகள்:\n1. பகுதி நியமனம்\n2. முழு தேர்தல்\nசரி?",
+"options_en": ["1 only","2 only","Both","None"],
+"options_ta": ["1 மட்டும்","2 மட்டும்","இரண்டும்","இல்லை"],
+"answer": "a",
+"explanation_en": "Partly nominated.",
+"explanation_ta": "பகுதி நியமனம்.",
+"subject": "POLITY",
+"topic": "making_of_constitution"
+},
+
+{
+"question_en": "Chronology: Choose correct",
+"question_ta": "காலவரிசை சரி?",
+"options_en": ["Cabinet Mission–Assembly–Draft–Adoption","Draft–Assembly–Adoption–Mission","Adoption–Draft–Assembly–Mission","Assembly–Mission–Draft–Adoption"],
+"options_ta": ["Mission–சபை–வரைவு–ஏற்றம்","வரைவு–சபை–ஏற்றம்–Mission","ஏற்றம்–வரைவு–சபை–Mission","சபை–Mission–வரைவு–ஏற்றம்"],
+"answer": "a",
+"explanation_en": "Correct order.",
+"explanation_ta": "சரி வரிசை.",
+"subject": "POLITY",
+"topic": "making_of_constitution"
+},
+
+{
+"question_en": "Assertion: B.N. Rau prepared initial draft.\nReason: He was constitutional advisor.",
+"question_ta": "Assertion: பி.என். ராவ் ஆரம்ப வரைவு செய்தார்.\nReason: அவர் ஆலோசகர்.",
+"options_en": ["Both true and R explains A","Both true not explanation","A true R false","A false R true"],
+"options_ta": ["இரண்டும் சரி காரணம்","இரண்டும் சரி காரணம் இல்லை","A சரி R தவறு","A தவறு R சரி"],
+"answer": "a",
+"explanation_en": "Advisor prepared initial draft.",
+"explanation_ta": "ஆலோசகர் வரைவு செய்தார்.",
+"subject": "POLITY",
+"topic": "making_of_constitution"
+},
+
+{
+"question_en": "Assertion: Constitution borrowed features.\nReason: Indian Constitution is rigid.",
+"question_ta": "Assertion: பல அம்சங்கள் எடுத்தது.\nReason: இது கடினமானது.",
+"options_en": ["A true R false","A false R true","Both true","Both false"],
+"options_ta": ["A சரி R தவறு","A தவறு R சரி","இரண்டும் சரி","இரண்டும் தவறு"],
+"answer": "a",
+"explanation_en": "Borrowed features but not fully rigid.",
+"explanation_ta": "முழு கடினம் இல்லை.",
+"subject": "POLITY",
+"topic": "making_of_constitution"
+}
+
 ]
