@@ -479,7 +479,10 @@ elif menu == "📘 Daily Test":
 
         # 🔔 notification ON
         st.session_state["mentor_notification"] = True
-    
+        from core.mentor_memory import update_memory
+
+        update_memory(user, total, total_q, weak_data)
+        
         # 🏆 Rank Prediction
         def predict_rank(percent):
             if percent >= 90:
