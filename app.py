@@ -92,6 +92,13 @@ if "q_index" not in st.session_state:
 
 if "score" not in st.session_state:
     st.session_state.score = 0
+    
+if "mentor_notification" not in st.session_state:
+    st.session_state["mentor_notification"] = False
+
+if "mentor_chat" not in st.session_state:
+    st.session_state["mentor_chat"] = []
+    
 # ---------------- MENU ----------------
 menu = st.sidebar.radio(
     "📂 Menu",
@@ -103,6 +110,7 @@ menu = st.sidebar.radio(
         "📊 Progress",
         "🏆 Leaderboard",
         "🤖 AI Teacher",
+        "🤖 Personal Mentor 🔴" if st.session_state.get("mentor_notification") else "🤖 Personal Mentor",
     ],
 )
 
@@ -156,7 +164,17 @@ def get_color(score):
     else:
         return "green"
 
+import time
 
+def typing_effect(text):
+    placeholder = st.empty()
+    output = ""
+
+    for char in text:
+        output += char
+        placeholder.markdown(output)
+        time.sleep(0.01)
+        
 # ---------------- SESSION INIT ----------------
 if "test_qs" not in st.session_state:
     st.session_state.test_qs = []
@@ -447,7 +465,21 @@ elif menu == "📘 Daily Test":
 
         st.markdown(f"### ✅ Score: {total} / {total_q}")
         st.progress(percent / 100)
+        from core.ai_coach import ai_coach
+        from core.weakness_ai import get_weakness
 
+        weak_data = get_weakness(user)
+
+        coach_msg = ai_coach(user, total, total_q, weak_data)
+
+        # 🔥 store message
+        st.session_state.mentor_chat = [
+            {"role": "assistant", "content": coach_msg}
+        ]
+
+        # 🔔 notification ON
+        st.session_state["mentor_notification"] = True
+    
         # 🏆 Rank Prediction
         def predict_rank(percent):
             if percent >= 90:
@@ -483,6 +515,7 @@ elif menu == "📘 Daily Test":
         st.session_state.get("test_topic"),
         percent,
     )
+    
 elif menu == "📚 Notes":
 
     st.markdown("## 📘 Notes Section")
@@ -714,3 +747,40 @@ elif menu == "🤖 AI Teacher":
             with st.spinner("Thinking..."):
                 ans = ai_teacher(q, user)
                 st.success(ans)
+
+elif menu.startswith("🤖 Personal Mentor"):
+
+    st.markdown("## 🤖 Your Personal AI Mentor")
+
+    # 🔔 notification clear
+    if st.session_state.get("mentor_notification"):
+        st.success("🎯 New guidance available!")
+        st.session_state["mentor_notification"] = False
+
+    # 💬 chat history show
+    for msg in st.session_state.mentor_chat:
+
+        if msg["role"] == "assistant":
+            with st.chat_message("assistant"):
+                typing_effect(msg["content"])  # 🔥 HERE
+
+        else:
+            st.chat_message("user").write(msg["content"])
+
+    # 🧠 user reply
+    user_msg = st.chat_input("Ask your mentor...")
+
+    if user_msg:
+        st.session_state.mentor_chat.append(
+            {"role": "user", "content": user_msg}
+        )
+
+        from core.ai_teacher import ai_teacher
+
+        reply = ai_teacher(user_msg, user)
+
+        st.session_state.mentor_chat.append(
+            {"role": "assistant", "content": reply}
+        )
+
+        st.rerun()
