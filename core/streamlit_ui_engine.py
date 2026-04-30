@@ -42,23 +42,63 @@ def render_definition(content):
 
 # 🏛 POLITY UI
 def render_polity(content):
-    st.markdown("## 📜 Important Acts")
 
-    for act in content.get("acts", []):
+    def render_section(title, value):
 
-        st.subheader(f"📌 {act.get('title')}")
+        st.markdown(f"## 📜 {title.capitalize()}")
 
-        tab1, tab2 = st.tabs(["EN", "TA"])
+        # 🔹 Case 1: Definition (en/ta text)
+        if isinstance(value, dict) and "en" in value and isinstance(value["en"], str):
+            tab1, tab2 = st.tabs(["EN", "TA"])
 
-        with tab1:
-            for p in act.get("points", {}).get("en", []):
-                st.write("•", p)
+            with tab1:
+                st.write(value.get("en", ""))
 
-        with tab2:
-            for p in act.get("points", {}).get("ta", []):
-                st.write("•", p)
+            with tab2:
+                st.write(value.get("ta", ""))
+
+        # 🔹 Case 2: Points dict (importance type)
+        elif isinstance(value, dict) and "en" in value and isinstance(value["en"], list):
+            tab1, tab2 = st.tabs(["EN", "TA"])
+
+            with tab1:
+                for p in value.get("en", []):
+                    st.write("•", p)
+
+            with tab2:
+                for p in value.get("ta", []):
+                    st.write("•", p)
+
+        # 🔹 Case 3: List (keywords, objectives)
+        elif isinstance(value, list):
+            for item in value:
+                st.subheader(f"📌 {item.get('title')}")
+
+                tab1, tab2 = st.tabs(["EN", "TA"])
+
+                with tab1:
+                    for p in item.get("points", {}).get("en", []):
+                        st.write("•", p)
+
+                with tab2:
+                    for p in item.get("points", {}).get("ta", []):
+                        st.write("•", p)
+
+                st.markdown("---")
+
+        # 🔹 Case 4: Mind map (skip or custom render)
+        elif title == "mind_map":
+            st.info("Mind map UI coming soon 🔥")
+
+        else:
+            st.write(value)
 
         st.markdown("---")
+
+
+    # 🔥 Loop all sections
+    for key, value in content.items():
+        render_section(key, value)
 
 
 # 💰 ECONOMY UI
