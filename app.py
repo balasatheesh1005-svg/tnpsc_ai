@@ -48,11 +48,11 @@ from core.leaderboard_ai import get_top_users
 from core.revision_ai import add_revision, get_due_revisions
 from core.difficulty_ai import get_user_level, get_next_level
 from core.notes_ai import load_notes
-from core.streamlit_ui_engine import render_notes
+from core.streamlit_ui_engine import render_notes, render polity
 from core.topics_loader import get_topics
 from core.components.mindmap import render_mindmap
 from core.components.revision_cards import generate_cards_from_notes, revision_cards
-
+ 
 # ---------------- USER ----------------
 username = st.text_input("Enter your name")
 if not username:
