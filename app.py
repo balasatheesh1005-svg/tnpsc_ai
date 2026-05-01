@@ -50,6 +50,8 @@ from core.difficulty_ai import get_user_level, get_next_level
 from core.notes_ai import load_notes
 from core.streamlit_ui_engine import render_notes
 from core.topics_loader import get_topics
+from core.components.mindmap import render_mindmap
+from core.components.revision_cards import generate_cards_from_notes, revision_cards
 
 # ---------------- USER ----------------
 username = st.text_input("Enter your name")
@@ -548,6 +550,17 @@ elif menu == "📚 Notes":
 
         # 🔥 MAIN ENGINE
         render_notes(data)
+        render_polity(content["content"])
+            # Mind Map
+        if "mind_map" in content["content"]:
+            st.markdown("## 🧠 Mind Map")
+            render_mindmap(content["content"]["mind_map"])
+
+        # Revision
+        st.markdown("## 🔁 Revision")
+        cards = generate_cards_from_notes(content["content"])
+        if cards:
+            revision_cards(cards)
 
         # Debug UI type
         st.caption(f"UI Type: {data.get('ui_type')}")
