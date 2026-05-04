@@ -50,9 +50,7 @@ from core.difficulty_ai import get_user_level, get_next_level
 from core.notes_ai import load_notes
 from core.streamlit_ui_engine import render_notes, render_polity
 from core.topics_loader import get_topics
-from core.components.mindmap import render_mindmap
-from core.components.revision_cards import generate_cards_from_notes, revision_cards
- 
+
 # ---------------- USER ----------------
 username = st.text_input("Enter your name")
 if not username:
@@ -94,13 +92,13 @@ if "q_index" not in st.session_state:
 
 if "score" not in st.session_state:
     st.session_state.score = 0
-    
+
 if "mentor_notification" not in st.session_state:
     st.session_state["mentor_notification"] = False
 
 if "mentor_chat" not in st.session_state:
     st.session_state["mentor_chat"] = []
-    
+
 # ---------------- MENU ----------------
 menu = st.sidebar.radio(
     "📂 Menu",
@@ -112,7 +110,11 @@ menu = st.sidebar.radio(
         "📊 Progress",
         "🏆 Leaderboard",
         "🤖 AI Teacher",
-        "🤖 Personal Mentor 🔴" if st.session_state.get("mentor_notification") else "🤖 Personal Mentor",
+        (
+            "🤖 Personal Mentor 🔴"
+            if st.session_state.get("mentor_notification")
+            else "🤖 Personal Mentor"
+        ),
     ],
 )
 
@@ -166,7 +168,9 @@ def get_color(score):
     else:
         return "green"
 
+
 import time
+
 
 def typing_effect(text):
     placeholder = st.empty()
@@ -176,7 +180,8 @@ def typing_effect(text):
         output += char
         placeholder.markdown(output)
         time.sleep(0.01)
-        
+
+
 # ---------------- SESSION INIT ----------------
 if "test_qs" not in st.session_state:
     st.session_state.test_qs = []
@@ -475,16 +480,14 @@ elif menu == "📘 Daily Test":
         coach_msg = ai_coach(user, total, total_q, weak_data)
 
         # 🔥 store message
-        st.session_state.mentor_chat = [
-            {"role": "assistant", "content": coach_msg}
-        ]
+        st.session_state.mentor_chat = [{"role": "assistant", "content": coach_msg}]
 
         # 🔔 notification ON
         st.session_state["mentor_notification"] = True
         from core.mentor_memory import update_memory
 
         update_memory(user, total, total_q, weak_data)
-        
+
         # 🏆 Rank Prediction
         def predict_rank(percent):
             if percent >= 90:
@@ -520,7 +523,7 @@ elif menu == "📘 Daily Test":
         st.session_state.get("test_topic"),
         percent,
     )
-    
+
 elif menu == "📚 Notes":
 
     st.markdown("## 📘 Notes Section")
@@ -550,17 +553,6 @@ elif menu == "📚 Notes":
 
         # 🔥 MAIN ENGINE
         render_notes(data)
-        render_polity(content["content"])
-            # Mind Map
-        if "mind_map" in content["content"]:
-            st.markdown("## 🧠 Mind Map")
-            render_mindmap(content["content"]["mind_map"])
-
-        # Revision
-        st.markdown("## 🔁 Revision")
-        cards = generate_cards_from_notes(content["content"])
-        if cards:
-            revision_cards(cards)
 
         # Debug UI type
         st.caption(f"UI Type: {data.get('ui_type')}")
@@ -787,16 +779,12 @@ elif menu.startswith("🤖 Personal Mentor"):
     user_msg = st.chat_input("Ask your mentor...")
 
     if user_msg:
-        st.session_state.mentor_chat.append(
-            {"role": "user", "content": user_msg}
-        )
+        st.session_state.mentor_chat.append({"role": "user", "content": user_msg})
 
         from core.ai_teacher import ai_teacher
 
         reply = ai_teacher(user_msg, user)
 
-        st.session_state.mentor_chat.append(
-            {"role": "assistant", "content": reply}
-        )
+        st.session_state.mentor_chat.append({"role": "assistant", "content": reply})
 
         st.rerun()
