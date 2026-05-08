@@ -58,7 +58,9 @@ def render_polity(content):
                 st.write(value.get("ta", ""))
 
         # 🔹 Case 2: Points dict (importance type)
-        elif isinstance(value, dict) and "en" in value and isinstance(value["en"], list):
+        elif (
+            isinstance(value, dict) and "en" in value and isinstance(value["en"], list)
+        ):
             tab1, tab2 = st.tabs(["EN", "TA"])
 
             with tab1:
@@ -95,31 +97,129 @@ def render_polity(content):
 
         st.markdown("---")
 
-
     # 🔥 Loop all sections
     for key, value in content.items():
         render_section(key, value)
 
 
-# 💰 ECONOMY UI
 def render_economy(content):
-    st.markdown("## 📊 Key Concepts")
 
-    for sec in content.get("sections", []):
+    st.title("💰 Economy Notes")
 
-        st.subheader(f"📌 {sec.get('title')}")
+    # =========================
+    # Definition
+    # =========================
+    if "definition" in content:
+        st.subheader("📘 Definition")
 
         tab1, tab2 = st.tabs(["EN", "TA"])
 
         with tab1:
-            for p in sec.get("points", {}).get("en", []):
-                st.write("•", p)
+            st.info(content["definition"].get("en", ""))
+        with tab2:
+            st.info(content["definition"].get("ta", ""))
+
+
+import streamlit as st
+
+
+def render_economy(content):
+
+    st.title("💰 Economy Notes")
+
+    # =========================
+    # Definition
+    # =========================
+    if "definition" in content:
+
+        st.subheader("📘 Definition")
+
+        tab1, tab2 = st.tabs(["EN", "TA"])
+
+        with tab1:
+            st.info(content["definition"].get("en", ""))
 
         with tab2:
-            for p in sec.get("points", {}).get("ta", []):
-                st.write("•", p)
+            st.info(content["definition"].get("ta", ""))
 
         st.markdown("---")
+
+    # =========================
+    # Generic Dynamic Renderer
+    # =========================
+    skip_keys = ["definition", "important_facts", "current_affairs", "mind_map"]
+
+    for key, value in content.items():
+
+        if key in skip_keys:
+            continue
+
+        if isinstance(value, list):
+
+            section_title = key.replace("_", " ").title()
+
+            st.header(f"📌 {section_title}")
+
+            for item in value:
+
+                title = item.get("title", "")
+
+                if title:
+                    st.subheader(f"🔹 {title}")
+
+                tab1, tab2 = st.tabs(["EN", "TA"])
+
+                with tab1:
+                    for point in item.get("points", {}).get("en", []):
+                        st.write("•", point)
+
+                with tab2:
+                    for point in item.get("points", {}).get("ta", []):
+                        st.write("•", point)
+
+                st.markdown("---")
+
+    # =========================
+    # Important Facts
+    # =========================
+    if "important_facts" in content:
+
+        st.header("⭐ Important Facts")
+
+        tab1, tab2 = st.tabs(["EN", "TA"])
+
+        with tab1:
+            for point in content["important_facts"].get("en", []):
+                st.success(point)
+
+        with tab2:
+            for point in content["important_facts"].get("ta", []):
+                st.success(point)
+
+        st.markdown("---")
+
+    # =========================
+    # Current Affairs
+    # =========================
+    if "current_affairs" in content:
+
+        st.header("📰 Current Affairs")
+
+        for item in content["current_affairs"]:
+
+            st.subheader(f"🟢 {item.get('title', '')}")
+
+            tab1, tab2 = st.tabs(["EN", "TA"])
+
+            with tab1:
+                for point in item.get("points", {}).get("en", []):
+                    st.write("•", point)
+
+            with tab2:
+                for point in item.get("points", {}).get("ta", []):
+                    st.write("•", point)
+
+            st.markdown("---")
 
 
 # 🏛 HISTORY UI (same as economy structure)
