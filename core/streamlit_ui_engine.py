@@ -223,29 +223,154 @@ def render_economy(content):
 
 
 # 🏛 HISTORY UI (same as economy structure)
+import streamlit as st
+
+
 def render_history(content):
 
-    st.markdown("## 🏺 Key Topics")
+    st.title("🏛️ History Notes")
 
-    for sec in content.get("sections", []):
+    # ====================================
+    # Definition / Introduction
+    # ====================================
 
-        st.subheader(f"📌 {sec.get('title')}")
+    if "definition" in content:
+
+        st.subheader("📘 Definition")
 
         tab1, tab2 = st.tabs(["EN", "TA"])
 
         with tab1:
-            for p in sec.get("points", {}).get("en", []):
-                st.write("•", p)
+            st.info(content["definition"].get("en", ""))
 
         with tab2:
-            for p in sec.get("points", {}).get("ta", []):
-                st.write("•", p)
+            st.info(content["definition"].get("ta", ""))
 
         st.markdown("---")
+
+    # ====================================
+    # Dynamic Sections
+    # ====================================
+
+    skip_keys = [
+        "definition",
+        "important_facts",
+        "timeline",
+        "current_affairs",
+        "mind_map",
+    ]
+
+    for key, value in content.items():
+
+        if key in skip_keys:
+            continue
+
+        if isinstance(value, list):
+
+            section_title = key.replace("_", " ").title()
+
+            st.header(f"📌 {section_title}")
+
+            for item in value:
+
+                title = item.get("title", "")
+
+                if title:
+                    st.subheader(f"🔹 {title}")
+
+                tab1, tab2 = st.tabs(["EN", "TA"])
+
+                # English
+                with tab1:
+
+                    for point in item.get("points", {}).get("en", []):
+                        st.write("•", point)
+
+                # Tamil
+                with tab2:
+
+                    for point in item.get("points", {}).get("ta", []):
+                        st.write("•", point)
+
+                st.markdown("---")
+
+    # ====================================
+    # Timeline
+    # ====================================
+
     if "timeline" in content:
-        st.markdown("## ⏳ Timeline")
-        for t in content["timeline"]:
-            st.write("•", t)
+
+        st.header("⏳ Timeline")
+
+        for item in content["timeline"]:
+
+            year = item.get("year", "")
+            event = item.get("event", "")
+
+            st.markdown(f"✅ **{year}** → {event}")
+
+        st.markdown("---")
+
+    # ====================================
+    # Important Facts
+    # ====================================
+
+    if "important_facts" in content:
+
+        st.header("⭐ Important Facts")
+
+        tab1, tab2 = st.tabs(["EN", "TA"])
+
+        with tab1:
+
+            for point in content["important_facts"].get("en", []):
+                st.success(point)
+
+        with tab2:
+
+            for point in content["important_facts"].get("ta", []):
+                st.success(point)
+
+        st.markdown("---")
+
+    # ====================================
+    # Current Affairs Connection
+    # ====================================
+
+    if "current_affairs" in content:
+
+        st.header("📰 Current Affairs Link")
+
+        for item in content["current_affairs"]:
+
+            st.subheader(f"🟢 {item.get('title', '')}")
+
+            tab1, tab2 = st.tabs(["EN", "TA"])
+
+            with tab1:
+
+                for point in item.get("points", {}).get("en", []):
+                    st.write("•", point)
+
+            with tab2:
+
+                for point in item.get("points", {}).get("ta", []):
+                    st.write("•", point)
+
+            st.markdown("---")
+
+    # ====================================
+    # Mind Map
+    # ====================================
+
+    if "mind_map" in content:
+
+        st.header("🧠 Mind Map")
+
+        for item in content["mind_map"]:
+            st.markdown(f"- {item}")
+
+        st.markdown("---")
 
 
 # ❓ MCQ SECTION (COMMON)
