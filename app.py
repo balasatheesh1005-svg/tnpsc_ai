@@ -50,6 +50,8 @@ from core.difficulty_ai import get_user_level, get_next_level
 from core.notes_ai import load_notes
 from core.streamlit_ui_engine import render_notes, render_polity
 from core.topics_loader import get_topics
+from ui.dashboard import render_dashboard
+from streamlit_option_menu import option_menu
 
 # ---------------- USER ----------------
 username = st.text_input("Enter your name")
@@ -100,23 +102,33 @@ if "mentor_chat" not in st.session_state:
     st.session_state["mentor_chat"] = []
 
 # ---------------- MENU ----------------
-menu = st.sidebar.radio(
-    "📂 Menu",
-    [
-        "🏠 Home",
-        "📘 Daily Test",
-        "📚 Notes",
-        "🧠 Weakness",
-        "📊 Progress",
-        "🏆 Leaderboard",
-        "🤖 AI Teacher",
-        (
-            "🤖 Personal Mentor 🔴"
-            if st.session_state.get("mentor_notification")
-            else "🤖 Personal Mentor"
-        ),
-    ],
-)
+with st.sidebar:
+
+    selected = option_menu(
+        menu_title="📂 Menu",
+        options=[
+            "🏠 Home",
+            "📘 Daily Test",
+            "📚 Notes",
+            "🧠 Weakness",
+            "📊 Progress",
+            "🏆 Leaderboard",
+            "🤖 AI Teacher",
+            "👨‍🏫 Personal Mentor",
+        ],
+        icons=[
+            "house",
+            "clipboard-check",
+            "book",
+            "brain",
+            "bar-chart",
+            "trophy",
+            "robot",
+            "person",
+        ],
+        menu_icon="cast",
+        default_index=0,
+    )
 
 
 # ---------------- LOAD QUESTIONS ----------------
@@ -202,15 +214,12 @@ if "test_topic" not in st.session_state:
 # ================= MENU ROUTING =================
 
 # ---------------- HOME ----------------
-if menu == "🏠 Home":
-    section("🏠 Dashboard")
-    st.write(f"👋 Welcome {user}")
-    st.info("Use sidebar to navigate")
+if selected == "🏠 Home":
+    render_dashboard()
 
 
 # ---------------- DAILY TEST ----------------
-elif menu == "📘 Daily Test":
-
+elif selected == "📘 Daily Test":
     section("📘 Daily Test")
 
     col1, col2, col3 = st.columns(3)
@@ -524,7 +533,7 @@ elif menu == "📘 Daily Test":
         percent,
     )
 
-elif menu == "📚 Notes":
+elif selected == "📚 Notes":
 
     st.markdown("## 📘 Notes Section")
 
@@ -573,7 +582,8 @@ elif menu == "📚 Notes":
         st.rerun()
 
     # -------------- WEAKNESS ----------------
-elif menu == "🧠 Weakness":
+elif selected == "🧠 Weakness":
+    section("🧠 Weakness")
 
     import pandas as pd
 
@@ -617,7 +627,7 @@ elif menu == "🧠 Weakness":
         st.success("🔥 No Weakness!")
 
 # ---------------- PROGRESS ----------------
-elif menu == "📊 Progress":
+elif selected == "📊 Progress":
 
     section("📊 Progress Dashboard")
 
@@ -733,18 +743,27 @@ elif menu == "📊 Progress":
     st.write(strong)
 
 # ---------------- LEADERBOARD ----------------
-elif menu == "🏆 Leaderboard":
+elif selected == "🏆 Leaderboard":
 
     section("🏆 Leaderboard")
 
     leaders = get_top_users()
 
-    for i, (u, s) in enumerate(leaders, 1):
-        st.write(f"{i}. {u} → {int(s)}%")
+    if not leaders:
+        st.info("No leaderboard data yet")
+        st.stop()
 
+    for i, item in enumerate(leaders, 1):
+
+        try:
+            u, s = item
+            st.write(f"{i}. {u} → {int(s)}%")
+
+        except:
+            st.write(item)
 
 # ---------------- AI TEACHER ----------------
-elif menu == "🤖 AI Teacher":
+elif selected == "🤖 AI Teacher":
 
     section("🤖 AI Teacher")
 
@@ -756,7 +775,7 @@ elif menu == "🤖 AI Teacher":
                 ans = ai_teacher(q, user)
                 st.success(ans)
 
-elif menu.startswith("🤖 Personal Mentor"):
+elif selected == "👨‍🏫 Personal Mentor":
 
     st.markdown("## 🤖 Your Personal AI Mentor")
 

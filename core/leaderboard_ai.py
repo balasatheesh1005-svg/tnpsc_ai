@@ -1,6 +1,8 @@
-import json, os
+import json
+import os
 
 FILE = "data/progress.json"
+
 
 def load():
     if not os.path.exists(FILE):
@@ -8,20 +10,56 @@ def load():
     with open(FILE, "r") as f:
         return json.load(f)
 
-def get_top_users(limit=10):
-    data = load()
 
-    scores = []
+import json
+import os
 
-    for user, subjects in data.items():
+
+def get_top_users():
+
+    progress_file = "data/progress.json"
+
+    if not os.path.exists(progress_file):
+        return []
+
+    with open(progress_file, "r", encoding="utf-8") as f:
+        progress = json.load(f)
+
+    leaderboard = []
+
+    for user, subjects in progress.items():
+
         all_scores = []
-        for s in subjects.values():
-            all_scores.extend(s)
 
-        if all_scores:
-            avg = sum(all_scores) / len(all_scores)
-            scores.append((user, avg))
+        for subject, topics in subjects.items():
 
-    scores.sort(key=lambda x: x[1], reverse=True)
+            if isinstance(topics, dict):
 
-    return scores[:limit]
+                for topic, scores in topics.items():
+
+                    if isinstance(scores, list):
+                        all_scores.extend(scores)
+
+            elif isinstance(topics, list):
+
+                all_scores.extend(topics)
+
+        clean_scores = []
+
+        for s in all_scores:
+
+            try:
+                clean_scores.append(float(s))
+            except:
+                pass
+
+        if clean_scores:
+            avg = sum(clean_scores) / len(clean_scores)
+        else:
+            avg = 0
+
+        leaderboard.append((user, round(avg, 2)))
+
+    leaderboard.sort(key=lambda x: x[1], reverse=True)
+
+    return leaderboard[:10]

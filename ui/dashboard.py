@@ -1,4 +1,5 @@
 import streamlit as st
+import streamlit as st
 from core.streak_ai import get_streak
 from core.progress_ai import get_progress
 from core.weakness_ai import get_weakness
@@ -7,192 +8,158 @@ from core.leaderboard_ai import get_top_users
 import pandas as pd
 
 
-def show_dashboard(user):
+def render_dashboard():
 
-    # ---------------- HEADER ----------------
+    # ---------- SAMPLE DATA ----------
+    notes_completed = 42
+    tests_attempted = 18
+    accuracy = 76
+    daily_streak = 5
+    rank = 12
+    weak_subject = "Ancient History"
+
+    # ---------- CUSTOM CSS ----------
     st.markdown(
-        f"""
-    <div style="
-    background: linear-gradient(90deg, #667eea, #764ba2);
-    padding:20px;
-    border-radius:15px;
-    color:white;
-    ">
-    <h2>👋 Welcome, {user}</h2>
-    <p>Your AI-powered TNPSC preparation dashboard</p>
-    </div>
+        """
+    <style>
+    .card {
+        padding: 20px;
+        border-radius: 18px;
+        background: white;
+        box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .card-title {
+        font-size: 18px;
+        color: #666;
+        margin-bottom: 10px;
+    }
+
+    .card-value {
+        font-size: 32px;
+        font-weight: bold;
+        color: #111;
+    }
+    .card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+    }
+    .main-title {
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+
+    .sub-title {
+        color: #666;
+        margin-bottom: 30px;
+    }
+    </style>
     """,
         unsafe_allow_html=True,
     )
 
-    st.markdown("## 📊 Overview")
+    # ---------- HERO SECTION ----------
+    st.markdown(
+        """
+        <div class='main-title'>🚀 TNPSC AI Dashboard</div>
+        <div class='sub-title'>
+            Smart Learning • Daily Tests • AI Analysis
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+    st.markdown(
+        """
+    <div style="
+    padding:18px;
+    border-radius:15px;
+    background: linear-gradient(90deg, #1e3c72, #2a5298);
+    color:white;
+    margin-bottom:25px;
+    ">
 
+    <h3>🚀 India's No.1 AI Powered TNPSC Preparation Platform</h3>
+
+    <p>
+    Daily Tests • Smart Notes • Weakness Analysis • AI Mentor
+    </p>
+
+    </div>
+    """,
+        unsafe_allow_html=True,
+    )
+    # ---------- ROW 1 ----------
     col1, col2, col3 = st.columns(3)
 
-    # ---------------- STREAK ----------------
     with col1:
-        streak = get_streak(user)
-
         st.markdown(
             f"""
-        <div style="
-        background:#ff5e62;
-        padding:15px;
-        border-radius:12px;
-        color:white;
-        text-align:center;
-        ">
-        🔥 <h3>{streak}</h3>
-        <p>Day Streak</p>
+        <div class="card">
+            <div class="card-title">📘 Notes Completed</div>
+            <div class="card-value">{notes_completed}</div>
         </div>
         """,
             unsafe_allow_html=True,
         )
 
-    # ---------------- PROGRESS ----------------
     with col2:
-        progress = get_progress(user)
-
-        total_scores = []
-        for scores in progress.values():
-            total_scores.extend(scores)
-
-        avg = int(sum(total_scores) / len(total_scores)) if total_scores else 0
-
         st.markdown(
             f"""
-        <div style="
-        background:#43cea2;
-        padding:15px;
-        border-radius:12px;
-        color:white;
-        text-align:center;
-        ">
-        📊 <h3>{avg}%</h3>
-        <p>Avg Score</p>
+        <div class="card">
+            <div class="card-title">📝 Tests Attempted</div>
+            <div class="card-value">{tests_attempted}</div>
         </div>
         """,
             unsafe_allow_html=True,
         )
 
-    # ---------------- WEAKNESS COUNT ----------------
     with col3:
-        weak = get_weakness(user)
-        total_weak = sum(weak.values()) if weak else 0
-
         st.markdown(
             f"""
-        <div style="
-        background:#ff4d4d;
-        padding:15px;
-        border-radius:12px;
-        color:white;
-        text-align:center;
-        ">
-        🧠 <h3>{total_weak}</h3>
-        <p>Weak Areas</p>
+        <div class="card">
+            <div class="card-title">🎯 Accuracy</div>
+            <div class="card-value">{accuracy}%</div>
+        </div>
+        """,
+            unsafe_allow_html=True,
+        )
+    # ---------- ROW 2 ----------
+    col4, col5, col6 = st.columns(3)
+
+    with col4:
+        st.markdown(
+            f"""
+        <div class="card">
+            <div class="card-title">🔥 Daily Streak</div>
+            <div class="card-value">{daily_streak}</div>
         </div>
         """,
             unsafe_allow_html=True,
         )
 
-    st.markdown("---")
-
-    # ---------------- CHART + WEAKNESS ----------------
-    col1, col2 = st.columns(2)
-
-    # 📊 Progress Chart
-    with col1:
-        st.subheader("📊 Subject Performance")
-
-        progress = get_progress(user)
-
-        if progress:
-            df_data = []
-            for subject, scores in progress.items():
-                avg = sum(scores) / len(scores)
-                df_data.append({"Subject": subject, "Score": avg})
-
-            df = pd.DataFrame(df_data)
-            st.bar_chart(df.set_index("Subject"))
-        else:
-            st.info("No progress data")
-
-
-# 🧠 Weakness Heatmap
-def color_map(val):
-    if val >= 5:
-        return "background-color: #ff4d4d; color:white"
-    elif val >= 3:
-        return "background-color: #ffa64d"
-    elif val >= 1:
-        return "background-color: #ffff99"
-    return ""
-
-
-with col2:
-    st.markdown("## 🧠 Weakness Heatmap")
-
-weak_data = get_weakness(user)
-
-if not weak_data:
-    st.success("🔥 No Weakness!")
-else:
-
-    for topic, count in weak_data.items():
-
-        if count >= 10:
-            color = "#ff0000"  # 🔴 high danger
-        elif count >= 5:
-            color = "#ff6b6b"  # 🟥
-        elif count >= 2:
-            color = "#ffc107"  # 🟨
-        else:
-            color = "#28a745"  # 🟩
-
+    with col5:
         st.markdown(
             f"""
-        <div style="
-        background:{color};
-        padding:12px;
-        border-radius:10px;
-        margin-bottom:10px;
-        color:white;
-        font-weight:bold;
-        ">
-        📘 {topic} → {count}
+        <div class="card">
+            <div class="card-title">🏆 Rank</div>
+            <div class="card-value">#{rank}</div>
         </div>
         """,
             unsafe_allow_html=True,
         )
-        import pandas as pd
 
-    df = pd.DataFrame(list(weak_data.items()), columns=["Topic", "Weakness"])
-    st.dataframe(df.style.background_gradient(cmap="Reds"))
-    # ---------------- REVISION + LEADERBOARD ----------------
-    col1, col2 = st.columns(2)
-
-    # 🔁 Revision
-    with col1:
-        st.subheader("🔁 Smart Revision")
-
-        rev = get_revision_topics(user)
-
-        if not rev:
-            st.success("All clear 🔥")
-        else:
-            for t in rev[:5]:
-                st.write(f"🔁 {t}")
-
-    # 🏆 Leaderboard
-    with col2:
-        st.subheader("🏆 Top Performers")
-
-        leaders = get_top_users()
-
-        for i, (u, s) in enumerate(leaders[:5], 1):
-
-            if u == user:
-                st.success(f"⭐ {i}. {u} → {int(s)}%")
-            else:
-                st.write(f"{i}. {u} → {int(s)}%")
+    with col6:
+        st.markdown(
+            f"""
+        <div class="card">
+            <div class="card-title">📈 Weak Subject</div>
+            <div class="card-value" style="font-size:22px;">
+                {weak_subject}
+            </div>
+        </div>
+        """,
+            unsafe_allow_html=True,
+        )
