@@ -1,44 +1,64 @@
-import json, os
-from datetime import datetime
+from datetime import date, timedelta
 
-FILE = "data/streak.json"
+from core.supabase_client import supabase
 
-def load():
-    if not os.path.exists(FILE):
-        return {}
-    with open(FILE, "r") as f:
-        return json.load(f)
+TABLE = "user_streaks"
 
-def save(data):
-    with open(FILE, "w") as f:
-        json.dump(data, f, indent=2)
+
+def _parse_date(value):
+    if not value:
+        return None
+    if isinstance(value, date):
+        return value
+    return date.fromisoformat(str(value))
+
 
 def update_streak(user):
-    data = load()
+    today = date.today()
 
-    today = datetime.now().strftime("%Y-%m-%d")
+    response = supabase.table(TABLE).select("*").eq("username", user).execute()
+    rows = response.data or []
 
-    if user not in data:
-        data[user] = {"last_date": today, "streak": 1}
+    if not rows:
+        streak = 1
+        supabase.table(TABLE).insert(
+            {
+                "username": user,
+                "last_date": today.isoformat(),
+                "streak": streak,
+            }
+        ).execute()
+        return streak
+
+    row = rows[0]
+    last_date = _parse_date(row.get("last_date"))
+    streak = int(row.get("streak") or 0)
+
+    if last_date == today:
+        return streak
+
+    if last_date == today - timedelta(days=1):
+        streak += 1
     else:
-        last_date = data[user]["last_date"]
+        streak = 1
 
-        if last_date == today:
-            return data[user]["streak"]
+    supabase.table(TABLE).update(
+        {
+            "last_date": today.isoformat(),
+            "streak": streak,
+        }
+    ).eq("username", user).execute()
 
-        from datetime import timedelta
-        yesterday = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
+    return streak
 
-        if last_date == yesterday:
-            data[user]["streak"] += 1
-        else:
-            data[user]["streak"] = 1
-
-        data[user]["last_date"] = today
-
-    save(data)
-    return data[user]["streak"]
 
 def get_streak(user):
-    data = load()
-    return data.get(user, {}).get("streak", 0)
+    response = (
+        supabase.table(TABLE).select("streak").eq("username", user).limit(1).execute()
+    )
+    rows = response.data or []
+
+    if not rows:
+        return 0
+
+    return int(rows[0].get("streak") or 0)

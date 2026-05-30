@@ -1,69 +1,109 @@
-import json
-import os
+from core.supabase_client import supabase
 
-FILE = "data/weakness.json"
-
-
-def load_data():
-    if not os.path.exists(FILE):
-        return {}
-    with open(FILE, "r") as f:
-        return json.load(f)
-
-
-def save_data(data):
-    with open(FILE, "w") as f:
-        json.dump(data, f, indent=4)
-
-
+# ==========================================
 # ADD WEAKNESS
-def add_weakness(user, subject, topic):
-    data = load_data()
-
-    if user not in data:
-        data[user] = {}
-
-    key = f"{subject}-{topic}"
-
-    data[user][key] = min(data[user].get(key, 0) + 1, 5)
-
-    save_data(data)
+# ==========================================
 
 
-# GET ALL WEAKNESS
-def get_weakness(user):
-    data = load_data()
-    return data.get(user, {})
+def add_weakness(username, subject, topic):
+
+    existing = (
+        supabase.table("users_weakness")
+        .select("*")
+        .eq("username", username)
+        .eq("subject", subject)
+        .eq("topic", topic)
+        .execute()
+    )
+
+    data = existing.data
+
+    # ✅ already exists
+    if data:
+
+        weakness = data[0]["weakness"] + 1
+
+        supabase.table("users_weakness").update({"weakness": weakness}).eq(
+            "id", data[0]["id"]
+        ).execute()
+
+    # ✅ new row
+    else:
+
+        supabase.table("users_weakness").insert(
+            {"username": username, "subject": subject, "topic": topic, "weakness": 1}
+        ).execute()
 
 
-# TOTAL COUNT
-def get_total_weakness(user):
-    weak = get_weakness(user)
-    return sum(weak.values())
+# ==========================================
+# REDUCE WEAKNESS
+# ==========================================
 
 
-def get_most_weak_topic(user):
+def reduce_weakness(username, subject, topic):
 
-    data = load_data()
+    existing = (
+        supabase.table("users_weakness")
+        .select("*")
+        .eq("username", username)
+        .eq("subject", subject)
+        .eq("topic", topic)
+        .execute()
+    )
 
-    if user not in data or not data[user]:
-        return None, 0
+    data = existing.data
 
-    weakest = max(data[user], key=data[user].get)
-    count = data[user][weakest]
+    if not data:
+        return
 
-    return weakest, count
+    current = data[0]["weakness"]
+
+    new_value = max(current - 1, 0)
+
+    supabase.table("users_weakness").update({"weakness": new_value}).eq(
+        "id", data[0]["id"]
+    ).execute()
 
 
-def reduce_weakness(user, subject, topic):
-    data = load_data()
+# ==========================================
+# GET WEAKNESS
+# ==========================================
 
-    key = f"{subject}-{topic}"
 
-    if user in data and key in data[user]:
-        data[user][key] -= 1
+def get_weakness(username):
 
-        if data[user][key] <= 0:
-            del data[user][key]
+    response = (
+        supabase.table("users_weakness").select("*").eq("username", username).execute()
+    )
 
-    save_data(data)
+    rows = response.data
+
+    result = {}
+
+    for row in rows:
+
+        key = f"{row['subject']}" f"-" f"{row['topic']}"
+
+        result[key] = row["weakness"]
+
+    return result
+
+
+# ==========================================
+# MOST WEAK TOPIC
+# ==========================================
+
+
+def get_most_weak_topic(username):
+
+    weak_data = get_weakness(username)
+
+    if not weak_data:
+
+        return ("polity-historical_background", 0)
+
+    weak_topic = max(weak_data, key=weak_data.get)
+
+    count = weak_data[weak_topic]
+
+    return weak_topic, count

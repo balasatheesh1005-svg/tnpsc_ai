@@ -11,24 +11,42 @@ import pandas as pd
 def render_dashboard():
 
     # ---------- SAMPLE DATA ----------
-    notes_completed = 42
-    tests_attempted = 18
-    accuracy = 76
-    daily_streak = 5
-    rank = 12
-    weak_subject = "Ancient History"
+    user = st.session_state.get("username", "")
+    notes_completed = len(st.session_state.get("completed_notes", []))
 
+    tests_attempted = st.session_state.get("tests_attempted", 0)
+
+    accuracy = st.session_state.get("accuracy", 0)
+
+    daily_streak = st.session_state.get("streak", 0)
+
+    rank = st.session_state.get("rank", 0)
+
+    from core.weakness_ai import get_weakness
+
+    weak_data = get_weakness(user)
+
+    if weak_data:
+
+        weak_topic = max(weak_data, key=weak_data.get)
+
+        weak_subject = weak_topic.replace("-", " → ")
+
+    else:
+
+        weak_subject = "No Data"
     # ---------- CUSTOM CSS ----------
     st.markdown(
         """
     <style>
     .card {
-        padding: 20px;
-        border-radius: 18px;
-        background: white;
-        box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
-        text-align: center;
-        margin-bottom: 15px;
+    padding: 18px;
+    border-radius: 16px;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.08);
+    text-align: center;
+    margin-bottom: 15px;
+    width: 100%;
     }
 
     .card-title {
@@ -38,7 +56,7 @@ def render_dashboard():
     }
 
     .card-value {
-        font-size: 32px;
+        font-size: 24px;
         font-weight: bold;
         color: #111;
     }
@@ -46,8 +64,12 @@ def render_dashboard():
     transform: translateY(-5px);
     transition: 0.3s;
     }
+    .stButton > button {
+    width: 100%;
+    border-radius: 10px;
+    }
     .main-title {
-        font-size: 40px;
+        font-size: 26px;
         font-weight: 700;
         margin-bottom: 5px;
     }
@@ -62,11 +84,12 @@ def render_dashboard():
     )
 
     # ---------- HERO SECTION ----------
+    st.image("assets/logo.png", width=250)
     st.markdown(
         """
-        <div class='main-title'>🚀 TNPSC AI Dashboard</div>
+        <div class='main-title'>TNPSC Nova AI</div>
         <div class='sub-title'>
-            Smart Learning • Daily Tests • AI Analysis
+            Learn Smarter • Rank Faster • Powered by AI
         </div>
         """,
         unsafe_allow_html=True,
@@ -81,9 +104,11 @@ def render_dashboard():
     margin-bottom:25px;
     ">
 
-    <h3>🚀 India's No.1 AI Powered TNPSC Preparation Platform</h3>
+    <h3 style='font-size:22px;'>
+    🚀 India's No.1 AI Powered TNPSC Preparation Platform
+    </h3>
 
-    <p>
+    <p style='font-size:14px;'>
     Daily Tests • Smart Notes • Weakness Analysis • AI Mentor
     </p>
 
@@ -92,7 +117,10 @@ def render_dashboard():
         unsafe_allow_html=True,
     )
     # ---------- ROW 1 ----------
-    col1, col2, col3 = st.columns(3)
+    (
+        col1,
+        col2,
+    ) = st.columns(2)
 
     with col1:
         st.markdown(
@@ -116,6 +144,12 @@ def render_dashboard():
             unsafe_allow_html=True,
         )
 
+    # ---------- ROW 2 ----------
+    (
+        col3,
+        col4,
+    ) = st.columns(2)
+
     with col3:
         st.markdown(
             f"""
@@ -126,8 +160,6 @@ def render_dashboard():
         """,
             unsafe_allow_html=True,
         )
-    # ---------- ROW 2 ----------
-    col4, col5, col6 = st.columns(3)
 
     with col4:
         st.markdown(
@@ -139,6 +171,11 @@ def render_dashboard():
         """,
             unsafe_allow_html=True,
         )
+
+    (
+        col5,
+        col6,
+    ) = st.columns(2)
 
     with col5:
         st.markdown(

@@ -1,6 +1,8 @@
 import json
+import streamlit as st
 
 
+@st.cache_data
 def get_topics(subject):
     file_path = f"data/structure/{subject}_structure.json"
 

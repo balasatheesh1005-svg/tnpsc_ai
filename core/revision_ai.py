@@ -1,92 +1,104 @@
-import json, os
 import datetime
-from core.utils import load_json, save_json
 
-FILE = "data/revision.json"
-
-
-def load_data():
-    if not os.path.exists(FILE):
-        return {}
-    with open(FILE, "r") as f:
-        return json.load(f)
+from core.supabase_client import supabase
 
 
-def save_data(data):
-    with open(FILE, "w") as f:
-        json.dump(data, f, indent=2)
+TABLE = "user_revisions"
+
+
+def _split_topic_key(topic_key):
+    subject, topic = topic_key.split("-", 1)
+    return subject, topic
+
+
+def _join_topic_key(row):
+    return f"{row['subject']}-{row['topic']}"
 
 
 def add_revision(user, topic):
+    subject, topic_name = _split_topic_key(topic)
+    next_due = datetime.date.today() + datetime.timedelta(days=1)
 
-    data = load_json("revision.json")
-
-    # ✅ SAFETY
-    if not isinstance(data, dict):
-        data = {}
-
-    if user not in data:
-        data[user] = {}
-
-    data[user][topic] = {
-        "level": 1,
-        "next_due": str(datetime.date.today() + datetime.timedelta(days=1)),
-    }
-
-    save_json("revision.json", data)
+    supabase.table(TABLE).upsert(
+        {
+            "username": user,
+            "subject": subject,
+            "topic": topic_name,
+            "level": 1,
+            "next_due": next_due.isoformat(),
+        },
+        on_conflict="username,subject,topic",
+    ).execute()
 
 
 def update_revision(user, topic_key):
-    data = load_json("revision.json")
+    subject, topic = _split_topic_key(topic_key)
 
-    if user not in data or topic_key not in data[user]:
+    response = (
+        supabase.table(TABLE)
+        .select("*")
+        .eq("username", user)
+        .eq("subject", subject)
+        .eq("topic", topic)
+        .limit(1)
+        .execute()
+    )
+    rows = response.data or []
+
+    if not rows:
         return
 
-    level = data[user][topic_key]["level"]
+    row = rows[0]
+    level = min(int(row.get("level") or 1) + 1, 5)
 
-    level += 1
-    level = min(level, 5)
-
-    days_map = {1: 1, 2: 3, 3: 7, 4: 15, 5: 30}
+    days_map = {
+        1: 1,
+        2: 3,
+        3: 7,
+        4: 15,
+        5: 30,
+    }
 
     next_due = datetime.date.today() + datetime.timedelta(days=days_map[level])
 
-    data[user][topic_key] = {"level": level, "next_due": str(next_due)}
-
-    save_json("revision.json", data)
+    supabase.table(TABLE).update(
+        {
+            "level": level,
+            "next_due": next_due.isoformat(),
+        }
+    ).eq("id", row["id"]).execute()
 
 
 def get_due_revisions(user):
-    data = load_json("revision.json")
+    today = datetime.date.today().isoformat()
 
-    if user not in data:
-        return []
+    response = (
+        supabase.table(TABLE)
+        .select("subject,topic,next_due")
+        .eq("username", user)
+        .lte("next_due", today)
+        .order("next_due")
+        .execute()
+    )
 
-    today = datetime.date.today()
-    due = []
+    due_topics = []
 
-    for topic, info in data[user].items():
-        due_date = datetime.date.fromisoformat(info["next_due"])
+    for row in response.data or []:
+        due_topics.append((_join_topic_key(row), row["next_due"]))
 
-        if due_date <= today:
-            due.append({"topic": topic, "next_due": info["next_due"]})
-
-    return due
+    return due_topics
 
 
 def get_revision_topics(user):
-    data = load_json("revision.json")
+    today = datetime.date.today().isoformat()
 
-    if user not in data:
-        return []
+    response = (
+        supabase.table(TABLE)
+        .select("subject,topic")
+        .eq("username", user)
+        .lte("next_due", today)
+        .order("next_due")
+        .execute()
+    )
 
-    today = datetime.date.today()
-    topics = []
-
-    for topic, info in data[user].items():
-        due_date = datetime.date.fromisoformat(info["next_due"])
-
-        if due_date <= today:
-            topics.append(topic)
-
-    return topics
+    return [_join_topic_key(row) for row in response.data or []]

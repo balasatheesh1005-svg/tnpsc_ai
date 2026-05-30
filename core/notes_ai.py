@@ -1,7 +1,9 @@
 import json
 import os
+import streamlit as st
 
 
+@st.cache_data
 def load_notes(subject, topic):
     subject = subject.lower()
     topic = topic.lower()

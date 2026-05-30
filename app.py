@@ -1,5 +1,5 @@
 import streamlit as st
-import json, os, random, time
+import random, time
 
 
 # ---------------- UI HELPERS ----------------
@@ -20,8 +20,9 @@ def section(title):
 
 
 # ---------------- CONFIG ----------------
-st.set_page_config(page_title="TNPSC AI", layout="wide")
-
+st.set_page_config(
+    page_title="TNPSC Nova AI", page_icon="assets/app_icon.png", layout="wide"
+)
 # ---------------- STYLE ----------------
 st.markdown(
     """
@@ -40,26 +41,42 @@ st.markdown(
 )
 
 # ---------------- IMPORTS ----------------
-from core.ai_teacher import ai_teacher
 from core.weakness_ai import add_weakness, get_weakness, reduce_weakness
-from core.progress_ai import get_progress, save_progress
 from core.smart_selector import get_smart_topic
-from core.leaderboard_ai import get_top_users
 from core.revision_ai import add_revision, get_due_revisions
 from core.difficulty_ai import get_user_level, get_next_level
-from core.notes_ai import load_notes
-from core.streamlit_ui_engine import render_notes, render_polity
-from core.topics_loader import get_topics
+from core.question_loader import load_questions
 from ui.dashboard import render_dashboard
 from streamlit_option_menu import option_menu
+from core.storage_ai import save_user_data, load_user_data
+from core.supabase_client import supabase
+from ui.pages.leaderboard import render_leaderboard
+from ui.pages.mentor import render_mentor
+from ui.pages.notes import render_notes_page
+from ui.pages.progress import render_progress_page
+from ui.pages.teacher import render_teacher
+from ui.pages.weakness import render_weakness_page
 
+st.write("✅ Supabase Connected")
 # ---------------- USER ----------------
-username = st.text_input("Enter your name")
+username = st.text_input("👤 Enter your name", placeholder="Type your name...")
 if not username:
     st.stop()
 
 user = username
+if username:
+    st.session_state["username"] = username
+    user_data = load_user_data(username)
 
+    st.session_state["tests_attempted"] = user_data.get("tests_attempted", 0)
+
+    st.session_state["accuracy"] = user_data.get("accuracy", 0)
+
+    st.session_state["streak"] = user_data.get("streak", 0)
+
+    st.session_state["rank"] = user_data.get("rank", 0)
+
+    st.session_state["weak_subject"] = user_data.get("weak_subject", "No Data")
 # ---------------- SESSION INIT ----------------
 
 if "correct_streak" not in st.session_state:
@@ -131,45 +148,11 @@ with st.sidebar:
     )
 
 
-# ---------------- LOAD QUESTIONS ----------------
-def load_questions(subject, topic, level):
-    import json, os
-
-    subject = subject.lower()
-    topic = topic.lower()
-
-    file_path = f"data/questions/{subject}/{topic}_{level}.json"
-
-    if not os.path.exists(file_path):
-        print("❌ Missing:", file_path)
-        return []
-
-    with open(file_path, encoding="utf-8") as f:
-        return json.load(f)
-
-
 def init_test():
     st.session_state.start_time = time.time()
     st.session_state.test_active = True
     st.session_state.score = 0
     st.session_state.q_index = 0
-
-
-import json
-
-
-def load_note(file_path):
-    with open(file_path, "r", encoding="utf-8") as f:
-        return json.load(f)
-
-
-import re
-
-
-def format_topic(topic):
-    topic = topic.lower()
-    topic = re.sub(r"[^a-z0-9 ]", "", topic)
-    return topic.replace(" ", "_")
 
 
 def get_color(score):
@@ -245,12 +228,25 @@ elif selected == "📘 Daily Test":
     # 🚀 START TEST
     with col1:
         if st.button("🚀 Start Daily Test"):
+            with st.spinner("Loading questions..."):
 
-            st.session_state.test_active = True
-            st.session_state.start_time = time.time()
-            st.session_state.level = "easy"
-            st.session_state.correct_streak = 0
-            st.session_state.wrong_count = 0
+                st.success("Questions Loaded!")
+
+                st.session_state.q_index = 0
+
+                st.session_state.score = 0
+
+                st.session_state.answered = False
+
+                st.session_state.correct_streak = 0
+
+                st.session_state.wrong_count = 0
+
+                st.session_state.progress_saved = False
+
+                st.session_state.test_active = True
+                st.session_state.start_time = time.time()
+                st.session_state.level = "easy"
 
             topic_data = get_smart_topic(user)
 
@@ -272,6 +268,7 @@ elif selected == "📘 Daily Test":
 
             st.session_state.test_subject = subject
             st.session_state.test_topic = topic
+
             topic = topic.lower().replace(" ", "_")
 
             level = st.session_state.level
@@ -301,6 +298,8 @@ elif selected == "📘 Daily Test":
                 topic = f"polity-{topic}"
 
             subject, topic = topic.split("-")
+            st.session_state.test_subject = subject
+            st.session_state.test_topic = topic
 
             level = get_user_level(user)
 
@@ -321,38 +320,101 @@ elif selected == "📘 Daily Test":
 
             st.rerun()
     with col3:
+
         if st.button("📚 Revision Test"):
+
             topics = get_due_revisions(user)
 
+            # =========================
+            # NO REVISIONS
+            # =========================
+
             if not topics:
+
                 st.success("🔥 No revisions due!")
+
                 st.stop()
 
-            item = random.choice(topics)
-            topic_key = item
+            # =========================
+            # PICK REVISION
+            # =========================
+
+            topic_key, next_due = random.choice(topics)
 
             import datetime
 
             due_date = datetime.date.fromisoformat(next_due)
+
             today = datetime.date.today()
+
             days_left = (due_date - today).days
 
+            # =========================
+            # REVISION STATUS
+            # =========================
+
             st.info(f"📅 Next Revision: {next_due}")
+
             st.warning(f"⏳ Days Left: {days_left}")
 
             if days_left == 0:
+
                 st.error("🔥 Revision due TODAY!")
+
             elif days_left <= 2:
+
                 st.warning("⚠️ Upcoming revision soon")
+
+            # =========================
+            # SPLIT SUBJECT/TOPIC
+            # =========================
 
             subject, topic = topic_key.split("-")
 
+            # =========================
+            # DISPLAY TOPIC
+            # =========================
+
+            display_topic = topic.replace("_", " ").title()
+
+            st.success(f"📚 Revision Topic: " f"{display_topic}")
+
+            st.info(f"📅 Next Revision Date: " f"{next_due}")
+
+            # =========================
+            # STORE SESSION
+            # =========================
+
+            st.session_state.test_subject = subject
+
+            st.session_state.test_topic = topic
+
+            # =========================
+            # LEVEL
+            # =========================
+
             level = st.session_state.level
+
+            # =========================
+            # LOAD QUESTIONS
+            # =========================
 
             questions = load_questions(subject, topic, level)
 
+            if not questions:
+
+                st.error("❌ No revision questions found")
+
+                st.stop()
+
+            # =========================
+            # START TEST
+            # =========================
+
             st.session_state.test_qs = random.sample(questions, min(5, len(questions)))
+
             st.session_state.q_index = 0
+
             st.session_state.test_active = True
 
             st.rerun()
@@ -428,10 +490,20 @@ elif selected == "📘 Daily Test":
 
                     subject = st.session_state.test_subject
                     topic = st.session_state.test_topic
-                    topic = topic.lower().replace(" ", "_")
+                    if topic:
+
+                        topic = st.session_state.test_topic
+                        topic = topic.lower().replace(" ", "_")
+
+                    else:
+
+                        st.error("No weak topic available.")
+
+                        st.stop()
 
                     reduce_weakness(user, subject, topic)  # ✅ ONLY HERE
                     update_revision(user, f"{subject}-{topic}")
+                    st.session_state.answered = True
 
                 else:
                     st.error(f"❌ Correct Answer: {correct}")
@@ -442,9 +514,10 @@ elif selected == "📘 Daily Test":
                     subject = st.session_state.test_subject
                     topic = st.session_state.test_topic
                     topic = topic.lower().replace(" ", "_")
-
+                    st.session_state["weak_subject"] = st.session_state.test_topic
                     add_weakness(user, subject, topic)  # ✅ ONLY HERE
                     add_revision(user, f"{subject}-{topic}")
+                    st.session_state.answered = True
 
                 # 🔥 adaptive difficulty
                 st.session_state.level = get_next_level(
@@ -476,11 +549,60 @@ elif selected == "📘 Daily Test":
             percent = 0
         else:
             percent = int((total / total_q) * 100)
+        # ==========================================
+        # TEST COMPLETED
+        # ==========================================
 
         st.success("🎉 Test Completed!")
 
         st.markdown(f"### ✅ Score: {total} / {total_q}")
+
+        percent = int((total / total_q) * 100)
+
         st.progress(percent / 100)
+
+        # ==========================================
+        # 🔥 UPDATE DASHBOARD STATS
+        # ==========================================
+
+        old_attempts = st.session_state.get("tests_attempted", 0)
+
+        old_accuracy = st.session_state.get("accuracy", 0)
+
+        new_accuracy = int(
+            ((old_accuracy * old_attempts) + percent) / (old_attempts + 1)
+        )
+
+        # ✅ update after calculation
+        st.session_state["tests_attempted"] = old_attempts + 1
+
+        st.session_state["accuracy"] = new_accuracy
+
+        st.session_state["streak"] = st.session_state.get("streak", 0) + 1
+
+        st.session_state["rank"] = 120
+
+        st.session_state["weak_subject"] = "Polity"
+
+        # ==========================================
+        # 💾 SAVE USER DATA
+        # ==========================================
+
+        save_user_data(
+            username,
+            {
+                "tests_attempted": st.session_state["tests_attempted"],
+                "accuracy": st.session_state["accuracy"],
+                "streak": st.session_state["streak"],
+                "rank": st.session_state["rank"],
+                "weak_subject": st.session_state["weak_subject"],
+            },
+        )
+
+        # ==========================================
+        # 🤖 AI COACH
+        # ==========================================
+
         from core.ai_coach import ai_coach
         from core.weakness_ai import get_weakness
 
@@ -488,322 +610,121 @@ elif selected == "📘 Daily Test":
 
         coach_msg = ai_coach(user, total, total_q, weak_data)
 
-        # 🔥 store message
+        # 🔥 store mentor message
         st.session_state.mentor_chat = [{"role": "assistant", "content": coach_msg}]
 
         # 🔔 notification ON
         st.session_state["mentor_notification"] = True
+
+        # ==========================================
+        # 🧠 UPDATE MEMORY
+        # ==========================================
+
         from core.mentor_memory import update_memory
 
         update_memory(user, total, total_q, weak_data)
 
-        # 🏆 Rank Prediction
+        # ==========================================
+        # 🏆 RANK PREDICTION
+        # ==========================================
+
         def predict_rank(percent):
+
             if percent >= 90:
                 return "Top 1-100 Rank"
+
             elif percent >= 75:
                 return "Top 500 Rank"
+
             elif percent >= 60:
                 return "Top 2000 Rank"
+
             else:
                 return "Needs Improvement"
 
         rank = predict_rank(percent)
 
         st.markdown("## 🏆 Rank Prediction")
+
         st.success(f"🎯 Expected Rank: {rank}")
 
-        # 🔥 Streak
+        # ==========================================
+        # 🔥 STREAK
+        # ==========================================
+
         from core.streak_ai import update_streak
 
         streak = update_streak(user)
+
         st.success(f"🔥 Streak: {streak} days")
 
+        # ==========================================
+        # 📊 SAVE PROGRESS
+        # ==========================================
+
+        if not st.session_state.get("progress_saved", False):
+
+            from core.progress_ai import save_progress
+
+            save_progress(
+                user,
+                st.session_state.get("test_subject", "polity"),
+                st.session_state.get("test_topic", "general"),
+                percent,
+            )
+
+            st.session_state.progress_saved = True
+
+            st.success("✅ Progress Saved!")
+
+        # ==========================================
+        # 🔚 RESET TEST
+        # ==========================================
+
         st.session_state.test_active = False
+
         st.session_state.test_qs = []
 
-    from core.progress_ai import save_progress
-
-    percent = int((total / total_q) * 100)
-
-    save_progress(
-        user,
-        st.session_state.get("test_subject"),
-        st.session_state.get("test_topic"),
-        percent,
-    )
+# =====================================================
+# 📘 NOTES
+# =====================================================
 
 elif selected == "📚 Notes":
 
-    st.markdown("## 📘 Notes Section")
+    render_notes_page(section)
 
-    # 🔹 Select Subject
-    subject = st.selectbox("Select Subject", ["polity", "economy", "history"])
 
-    # 🔹 Get Topics
-    try:
-        topics = get_topics(subject)
-    except:
-        st.error("Topics not found. Check structure JSON.")
-        st.stop()
+# =====================================================
+# 🧠 WEAKNESS
+# =====================================================
 
-    # 🔹 Select Topic
-    topic = st.selectbox("Select Topic", topics)
-
-    # 🔹 Format file path
-    file_path = f"data/notes/{subject}/{format_topic(topic)}.json"
-
-    # 🔹 Debug (optional)
-    # st.write("Looking for:", file_path)
-
-    # 🔹 Load & Render
-    try:
-        data = load_note(file_path)
-
-        # 🔥 MAIN ENGINE
-        render_notes(data)
-
-        # Debug UI type
-        st.caption(f"UI Type: {data.get('ui_type')}")
-
-    except FileNotFoundError:
-        st.warning("Notes not available yet")
-
-    except Exception as e:
-        st.error("Error loading notes")
-        st.error(e)
-
-    if st.button("🧠 Practice from this Topic"):
-        st.session_state.test_subject = subject
-        st.session_state.test_topic = format_topic(topic)
-        st.session_state.start_test = True
-        st.session_state.start_time = time.time()
-
-        st.rerun()
-
-    # -------------- WEAKNESS ----------------
 elif selected == "🧠 Weakness":
-    section("🧠 Weakness")
 
-    import pandas as pd
+    render_weakness_page(section, user)
 
-    weak_data = get_weakness(user)
 
-    if weak_data:
+# =====================================================
+# 📊 PROGRESS
+# =====================================================
 
-        # ✅ STEP 1: create df FIRST
-        df = pd.DataFrame(list(weak_data.items()), columns=["Topic", "Weakness"])
-
-        # split
-        df[["Subject", "Subtopic"]] = df["Topic"].str.split("-", expand=True)
-
-        # clean UI
-        df["Subtopic"] = df["Subtopic"].str.replace("_", " ").str.title()
-
-        # ✅ STEP 2: functions AFTER df (or before, both ok)
-        def color_map(val):
-            if val >= 4:
-                return "background-color: #ff4d4d; color:white"
-            elif val >= 2:
-                return "background-color: #ffc107"
-            else:
-                return "background-color: #28a745"
-
-        def bar(val):
-            return "█" * val
-
-        # ✅ STEP 3: apply
-        df["Level"] = df["Weakness"].apply(bar)
-
-        # 🎨 Heatmap
-        st.markdown("### 🔥 Weakness Heatmap")
-        st.dataframe(df.style.applymap(color_map, subset=["Weakness"]))
-
-        # 📊 Visual
-        st.markdown("### 📊 Visual Strength")
-        st.table(df[["Subject", "Subtopic", "Level"]])
-
-    else:
-        st.success("🔥 No Weakness!")
-
-# ---------------- PROGRESS ----------------
 elif selected == "📊 Progress":
 
-    section("📊 Progress Dashboard")
-
-    progress = get_progress(user)
-
-    if not progress:
-        st.info("No data yet")
-        st.stop()
-
-    import pandas as pd
-
-    rows = []
-
-    for subject, topics in progress.items():
-
-        # ✅ if topics is dict (correct case)
-        if isinstance(topics, dict):
-
-            for topic, scores in topics.items():
-                avg = sum(scores) / len(scores)
-                rows.append({"Subject": subject, "Topic": topic, "Average": avg})
-
-        # ⚠️ fallback (old data format)
-        elif isinstance(topics, list):
-
-            avg = sum(topics) / len(topics)
-            rows.append({"Subject": subject, "Topic": "overall", "Average": avg})
-
-    df = pd.DataFrame(rows)
-
-    st.subheader("📘 Topic-wise Performance")
-    st.dataframe(df)
-
-    st.subheader("📊 Subject-wise Performance")
-    st.bar_chart(df.groupby("Subject")["Average"].mean())
-
-    st.subheader("🔥 Topic Heatmap")
-
-    for subject, topics in progress.items():
-
-        if not isinstance(topics, dict):
-            continue
-
-        st.markdown(f"### 📘 {subject.capitalize()}")
-
-        cols = st.columns(3)
-
-        i = 0
-        for topic, scores in topics.items():
-
-            avg = sum(scores) / len(scores)
-            color = get_color(avg)
-
-            text = f"**{topic}**\n\n{int(avg)}%"
-
-            with cols[i % 3]:
-
-                with st.container():
-                    if color == "red":
-                        st.markdown(
-                            f"""
-                        <div style='background-color:#ffe5e5;
-                                    padding:10px;
-                                    border-radius:10px'>
-                        {text}
-                        </div>
-                        """,
-                            unsafe_allow_html=True,
-                        )
-
-                    elif color == "orange":
-                        st.markdown(
-                            f"""
-                        <div style='background-color:#fff4e5;
-                                    padding:10px;
-                                    border-radius:10px'>
-                        {text}
-                        </div>
-                        """,
-                            unsafe_allow_html=True,
-                        )
-
-                    else:
-                        st.markdown(
-                            f"""
-                        <div style='background-color:#e6ffe6;
-                                    padding:10px;
-                                    border-radius:10px'>
-                        {text}
-                        </div>
-                        """,
-                            unsafe_allow_html=True,
-                        )
-
-            i += 1
-    heatmap = {}
-
-    for subject, topics in progress.items():
-        if isinstance(topics, dict):
-            for topic, scores in topics.items():
-                avg = sum(scores) / len(scores)
-                heatmap[topic] = avg
-
-    st.subheader("🔥 Strong vs Weak")
-
-    weak = df[df["Average"] < 50]
-    strong = df[df["Average"] >= 75]
-
-    st.write("🔻 Weak Topics")
-    st.write(weak)
-
-    st.write("💪 Strong Topics")
-    st.write(strong)
+    render_progress_page(section, user)
 
 # ---------------- LEADERBOARD ----------------
 elif selected == "🏆 Leaderboard":
 
-    section("🏆 Leaderboard")
-
-    leaders = get_top_users()
-
-    if not leaders:
-        st.info("No leaderboard data yet")
-        st.stop()
-
-    for i, item in enumerate(leaders, 1):
-
-        try:
-            u, s = item
-            st.write(f"{i}. {u} → {int(s)}%")
-
-        except:
-            st.write(item)
+    render_leaderboard(section)
 
 # ---------------- AI TEACHER ----------------
 elif selected == "🤖 AI Teacher":
 
-    section("🤖 AI Teacher")
-
-    q = st.text_input("Ask doubt")
-
-    if st.button("Ask"):
-        if q:
-            with st.spinner("Thinking..."):
-                ans = ai_teacher(q, user)
-                st.success(ans)
+    render_teacher(section, user)
 
 elif selected == "👨‍🏫 Personal Mentor":
 
-    st.markdown("## 🤖 Your Personal AI Mentor")
+    render_mentor(section, typing_effect, user)
 
-    # 🔔 notification clear
-    if st.session_state.get("mentor_notification"):
-        st.success("🎯 New guidance available!")
-        st.session_state["mentor_notification"] = False
+st.markdown("---")
 
-    # 💬 chat history show
-    for msg in st.session_state.mentor_chat:
-
-        if msg["role"] == "assistant":
-            with st.chat_message("assistant"):
-                typing_effect(msg["content"])  # 🔥 HERE
-
-        else:
-            st.chat_message("user").write(msg["content"])
-
-    # 🧠 user reply
-    user_msg = st.chat_input("Ask your mentor...")
-
-    if user_msg:
-        st.session_state.mentor_chat.append({"role": "user", "content": user_msg})
-
-        from core.ai_teacher import ai_teacher
-
-        reply = ai_teacher(user_msg, user)
-
-        st.session_state.mentor_chat.append({"role": "assistant", "content": reply})
-
-        st.rerun()
+st.caption("🚀 TNPSC AI • India's AI Powered TNPSC Preparation Platform")
