@@ -33,11 +33,24 @@ Consistency is the key to TNPSC success 🔥
 
     accuracies = []
 
-    for subject, topics in progress.items():
+    for row in progress:
 
-        for topic, scores in topics.items():
+        accuracy = row.get("accuracy")
 
-            accuracies.extend(scores)
+        if accuracy is not None:
+
+            accuracies.append(float(accuracy))
+
+    if not accuracies:
+
+        return """
+
+ðŸš€ Welcome to Nova AI Mentor
+
+Start practicing daily tests.
+
+Consistency is the key to TNPSC success ðŸ”¥
+"""
 
     avg_accuracy = sum(accuracies) / len(accuracies)
 
