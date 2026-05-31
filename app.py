@@ -41,15 +41,16 @@ st.markdown(
 )
 
 # ---------------- IMPORTS ----------------
-from core.weakness_ai import add_weakness, get_weakness, reduce_weakness
-from core.smart_selector import get_smart_topic
-from core.revision_ai import add_revision, get_due_revisions
-from core.difficulty_ai import get_user_level, get_next_level
 from core.question_loader import load_questions
+from core.test_completion import complete_test
+from core.test_evaluator import evaluate_answer
+from core.test_revision import handle_correct_revision, handle_wrong_revision
+from core.test_topic_selector import get_test_config
+from core.test_weakness import handle_correct_answer, handle_wrong_answer
 from ui.dashboard import render_dashboard
 from streamlit_option_menu import option_menu
-from core.storage_ai import save_user_data, load_user_data
-from core.supabase_client import supabase
+from core.dashboard_stats_ai import get_dashboard_stats
+from ui.pages.daily_test_renderer import render_explanation_next, render_question
 from ui.pages.leaderboard import render_leaderboard
 from ui.pages.mentor import render_mentor
 from ui.pages.notes import render_notes_page
@@ -66,17 +67,17 @@ if not username:
 user = username
 if username:
     st.session_state["username"] = username
-    user_data = load_user_data(username)
+    dashboard_stats = get_dashboard_stats(username)
 
-    st.session_state["tests_attempted"] = user_data.get("tests_attempted", 0)
+    st.session_state["tests_attempted"] = dashboard_stats["tests_attempted"]
 
-    st.session_state["accuracy"] = user_data.get("accuracy", 0)
+    st.session_state["accuracy"] = dashboard_stats["accuracy"]
 
-    st.session_state["streak"] = user_data.get("streak", 0)
+    st.session_state["streak"] = dashboard_stats["streak"]
 
-    st.session_state["rank"] = user_data.get("rank", 0)
+    st.session_state["rank"] = dashboard_stats["rank"]
 
-    st.session_state["weak_subject"] = user_data.get("weak_subject", "No Data")
+    st.session_state["weak_subject"] = dashboard_stats["weak_subject"]
 # ---------------- SESSION INIT ----------------
 
 if "correct_streak" not in st.session_state:
@@ -248,30 +249,14 @@ elif selected == "📘 Daily Test":
                 st.session_state.start_time = time.time()
                 st.session_state.level = "easy"
 
-            topic_data = get_smart_topic(user)
-
-            # 🔥 Flatten tuple completely
-            while isinstance(topic_data, tuple):
-                topic_data = topic_data[0]
-
-            topic_key = topic_data
-
-            if not topic_key:
-                topic_key = "polity-historical_background"
-
-            parts = topic_key.split("-")
-            if len(parts) == 2:
-                subject, topic = parts
-            else:
-                subject = "polity"  # default
-                topic = parts[0]
+            test_config = get_test_config(user)
+            subject = test_config["subject"]
+            topic = test_config["topic"]
 
             st.session_state.test_subject = subject
             st.session_state.test_topic = topic
 
-            topic = topic.lower().replace(" ", "_")
-
-            level = st.session_state.level
+            level = test_config["level"]
             questions = load_questions(subject, topic, level)
 
             if not questions:
@@ -287,21 +272,13 @@ elif selected == "📘 Daily Test":
     # 🔥 WEAK TEST
     with col2:
         if st.button("🔥 Practice Weak Topics"):
-            weak = get_weakness(user)
-            if not weak:
-                st.warning("No weak topics")
-                st.stop()
-
-            topic = sorted(weak.items(), key=lambda x: x[1], reverse=True)[0][0]
-
-            if "-" not in topic:
-                topic = f"polity-{topic}"
-
-            subject, topic = topic.split("-")
+            test_config = get_test_config(user, mode="weak")
+            subject = test_config["subject"]
+            topic = test_config["topic"]
             st.session_state.test_subject = subject
             st.session_state.test_topic = topic
 
-            level = get_user_level(user)
+            level = test_config["level"]
 
             st.session_state.subject = subject
             st.session_state.topic = topic
@@ -323,63 +300,9 @@ elif selected == "📘 Daily Test":
 
         if st.button("📚 Revision Test"):
 
-            topics = get_due_revisions(user)
-
-            # =========================
-            # NO REVISIONS
-            # =========================
-
-            if not topics:
-
-                st.success("🔥 No revisions due!")
-
-                st.stop()
-
-            # =========================
-            # PICK REVISION
-            # =========================
-
-            topic_key, next_due = random.choice(topics)
-
-            import datetime
-
-            due_date = datetime.date.fromisoformat(next_due)
-
-            today = datetime.date.today()
-
-            days_left = (due_date - today).days
-
-            # =========================
-            # REVISION STATUS
-            # =========================
-
-            st.info(f"📅 Next Revision: {next_due}")
-
-            st.warning(f"⏳ Days Left: {days_left}")
-
-            if days_left == 0:
-
-                st.error("🔥 Revision due TODAY!")
-
-            elif days_left <= 2:
-
-                st.warning("⚠️ Upcoming revision soon")
-
-            # =========================
-            # SPLIT SUBJECT/TOPIC
-            # =========================
-
-            subject, topic = topic_key.split("-")
-
-            # =========================
-            # DISPLAY TOPIC
-            # =========================
-
-            display_topic = topic.replace("_", " ").title()
-
-            st.success(f"📚 Revision Topic: " f"{display_topic}")
-
-            st.info(f"📅 Next Revision Date: " f"{next_due}")
+            test_config = get_test_config(user, mode="revision")
+            subject = test_config["subject"]
+            topic = test_config["topic"]
 
             # =========================
             # STORE SESSION
@@ -393,7 +316,7 @@ elif selected == "📘 Daily Test":
             # LEVEL
             # =========================
 
-            level = st.session_state.level
+            level = test_config["level"]
 
             # =========================
             # LOAD QUESTIONS
@@ -455,90 +378,39 @@ elif selected == "📘 Daily Test":
             unsafe_allow_html=True,
         )
 
-        # Progress
-        st.progress((st.session_state.q_index + 1) / len(st.session_state.test_qs))
-
-        st.subheader(f"Q{st.session_state.q_index+1}")
-
-        st.write(q["question_en"])
-        st.caption(q["question_ta"])
-
-        options = [
-            f"{q['options_en'][i]} / {q['options_ta'][i]}"
-            for i in range(len(q["options_en"]))
-        ]
-
-        selected = st.radio("Choose answer", options)
+        selected, options = render_question(q)
 
         # ---------------- SUBMIT ----------------
         if st.button("Submit"):
 
-            correct = q["answer"]
-            selected_letter = ["a", "b", "c", "d"][options.index(selected)]
+            result = evaluate_answer(
+                selected,
+                options,
+                q,
+                user,
+                st.session_state.test_subject,
+                st.session_state.test_topic,
+            )
 
-            if not st.session_state.answered:
-                from core.weakness_ai import reduce_weakness
-                from core.revision_ai import update_revision
-
-                if selected_letter == correct:
-
-                    st.success("✅ Correct")
-                    st.session_state.score += 1
-
-                    st.session_state.correct_streak += 1
-                    st.session_state.wrong_count = 0
+            if result["processed"]:
+                if result["is_correct"]:
 
                     subject = st.session_state.test_subject
                     topic = st.session_state.test_topic
-                    if topic:
-
-                        topic = st.session_state.test_topic
-                        topic = topic.lower().replace(" ", "_")
-
-                    else:
-
-                        st.error("No weak topic available.")
-
-                        st.stop()
-
-                    reduce_weakness(user, subject, topic)  # ✅ ONLY HERE
-                    update_revision(user, f"{subject}-{topic}")
-                    st.session_state.answered = True
+                    topic = handle_correct_answer(user, subject, topic)
+                    handle_correct_revision(user, subject, topic)
 
                 else:
-                    st.error(f"❌ Correct Answer: {correct}")
-
-                    st.session_state.wrong_count += 1
-                    st.session_state.correct_streak = 0
 
                     subject = st.session_state.test_subject
                     topic = st.session_state.test_topic
-                    topic = topic.lower().replace(" ", "_")
-                    st.session_state["weak_subject"] = st.session_state.test_topic
-                    add_weakness(user, subject, topic)  # ✅ ONLY HERE
-                    add_revision(user, f"{subject}-{topic}")
-                    st.session_state.answered = True
-
-                # 🔥 adaptive difficulty
-                st.session_state.level = get_next_level(
-                    st.session_state.level,
-                    st.session_state.correct_streak,
-                    st.session_state.wrong_count,
-                )
-
-                st.info(f"🎯 Next Difficulty: {st.session_state.level.upper()}")
-
-            st.session_state.answered = True
+                    topic = handle_wrong_answer(user, subject, topic)
+                    handle_wrong_revision(user, subject, topic)
 
         # ---------------- NEXT ----------------
         if st.session_state.answered:
 
-            st.info(q.get("explanation_en", ""))
-
-            if st.button("Next"):
-                st.session_state.q_index += 1
-                st.session_state.answered = False
-                st.rerun()
+            render_explanation_next(q)
     # ✅ ALWAYS DEFINE FIRST
     total = st.session_state.get("score", 0)
     total_q = len(st.session_state.get("test_qs", []))
@@ -560,69 +432,6 @@ elif selected == "📘 Daily Test":
         percent = int((total / total_q) * 100)
 
         st.progress(percent / 100)
-
-        # ==========================================
-        # 🔥 UPDATE DASHBOARD STATS
-        # ==========================================
-
-        old_attempts = st.session_state.get("tests_attempted", 0)
-
-        old_accuracy = st.session_state.get("accuracy", 0)
-
-        new_accuracy = int(
-            ((old_accuracy * old_attempts) + percent) / (old_attempts + 1)
-        )
-
-        # ✅ update after calculation
-        st.session_state["tests_attempted"] = old_attempts + 1
-
-        st.session_state["accuracy"] = new_accuracy
-
-        st.session_state["streak"] = st.session_state.get("streak", 0) + 1
-
-        st.session_state["rank"] = 120
-
-        st.session_state["weak_subject"] = "Polity"
-
-        # ==========================================
-        # 💾 SAVE USER DATA
-        # ==========================================
-
-        save_user_data(
-            username,
-            {
-                "tests_attempted": st.session_state["tests_attempted"],
-                "accuracy": st.session_state["accuracy"],
-                "streak": st.session_state["streak"],
-                "rank": st.session_state["rank"],
-                "weak_subject": st.session_state["weak_subject"],
-            },
-        )
-
-        # ==========================================
-        # 🤖 AI COACH
-        # ==========================================
-
-        from core.ai_coach import ai_coach
-        from core.weakness_ai import get_weakness
-
-        weak_data = get_weakness(user)
-
-        coach_msg = ai_coach(user, total, total_q, weak_data)
-
-        # 🔥 store mentor message
-        st.session_state.mentor_chat = [{"role": "assistant", "content": coach_msg}]
-
-        # 🔔 notification ON
-        st.session_state["mentor_notification"] = True
-
-        # ==========================================
-        # 🧠 UPDATE MEMORY
-        # ==========================================
-
-        from core.mentor_memory import update_memory
-
-        update_memory(user, total, total_q, weak_data)
 
         # ==========================================
         # 🏆 RANK PREDICTION
@@ -648,34 +457,28 @@ elif selected == "📘 Daily Test":
 
         st.success(f"🎯 Expected Rank: {rank}")
 
-        # ==========================================
-        # 🔥 STREAK
-        # ==========================================
-
-        from core.streak_ai import update_streak
-
-        streak = update_streak(user)
-
-        st.success(f"🔥 Streak: {streak} days")
+        complete_test(
+            user,
+            st.session_state.get("test_subject", "polity"),
+            st.session_state.get("test_topic", "general"),
+            percent,
+        )
 
         # ==========================================
-        # 📊 SAVE PROGRESS
+        # 🔥 REFRESH DASHBOARD STATS
         # ==========================================
 
-        if not st.session_state.get("progress_saved", False):
+        dashboard_stats = get_dashboard_stats(username)
 
-            from core.progress_ai import save_progress
+        st.session_state["tests_attempted"] = dashboard_stats["tests_attempted"]
 
-            save_progress(
-                user,
-                st.session_state.get("test_subject", "polity"),
-                st.session_state.get("test_topic", "general"),
-                percent,
-            )
+        st.session_state["accuracy"] = dashboard_stats["accuracy"]
 
-            st.session_state.progress_saved = True
+        st.session_state["streak"] = dashboard_stats["streak"]
 
-            st.success("✅ Progress Saved!")
+        st.session_state["rank"] = dashboard_stats["rank"]
+
+        st.session_state["weak_subject"] = dashboard_stats["weak_subject"]
 
         # ==========================================
         # 🔚 RESET TEST
