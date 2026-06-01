@@ -51,7 +51,7 @@ def render_weakness_page(section, user):
         st.markdown("### 🔥 Weakness Heatmap")
 
         st.dataframe(
-            df.style.applymap(color_map, subset=["Weakness"]), use_container_width=True
+            df.style.map(color_map, subset=["Weakness"]), use_container_width=True
         )
 
         # ---------------- VISUAL ----------------
