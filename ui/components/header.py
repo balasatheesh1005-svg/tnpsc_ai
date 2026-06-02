@@ -91,7 +91,7 @@ def render_header_styles():
             font-weight: 800;
         }
 
-        @media (max-width: 640px) {
+        @media (max-width: 767px) {
             .nova-hero {
                 border-radius: 20px;
                 padding: 20px;
@@ -99,6 +99,16 @@ def render_header_styles():
 
             .nova-hero-stats {
                 grid-template-columns: repeat(2, minmax(0, 1fr));
+                grid-auto-rows: 1fr;
+                gap: 0.85rem;
+                align-items: stretch;
+            }
+
+            .nova-hero-stat {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                min-height: 125px;
             }
         }
         </style>

@@ -2,6 +2,12 @@ import streamlit as st
 import random, time
 
 from ui.components.header import render_sidebar_branding
+from ui.components.cards import (
+    glass_card,
+    glass_card_html,
+    analytics_grid,
+    html_fragment,
+)
 from ui.theme import render_theme_css
 
 
@@ -34,6 +40,7 @@ from core.question_loader import load_questions
 from core.test_completion import complete_test
 from core.test_evaluator import evaluate_answer
 from core.test_revision import handle_correct_revision, handle_wrong_revision
+from core.progress_ai import get_progress
 from core.test_topic_selector import get_test_config
 from core.test_weakness import handle_correct_answer, handle_wrong_answer
 from ui.dashboard import render_dashboard
@@ -448,11 +455,115 @@ elif selected == "📘 Daily Test":
 
         st.success("🎉 Test Completed!")
 
-        st.markdown(f"### ✅ Score: {total} / {total_q}")
-
         percent = int((total / total_q) * 100)
-
         st.progress(percent / 100)
+
+        weak_topic = st.session_state.get("weak_subject", "No Data")
+        progress_rows = get_progress(user)
+        strong_topic = "No Data"
+        if progress_rows:
+            topic_scores = {}
+            for row in progress_rows:
+                topic = row.get("topic") or row.get("subject") or "No Data"
+                try:
+                    acc = float(row.get("accuracy", 0))
+                except (TypeError, ValueError):
+                    acc = 0.0
+                topic_scores.setdefault(topic, []).append(acc)
+            if topic_scores:
+                strong_topic = max(
+                    topic_scores,
+                    key=lambda topic: sum(topic_scores[topic])
+                    / len(topic_scores[topic]),
+                )
+
+        hero_html = glass_card_html(
+            "🏆 Daily Test Completed",
+            value=f"{total} / {total_q}",
+            body=f"{percent}% Accuracy",
+            extra_html=html_fragment(
+                '<p class="nova-card-copy">Keep Going! You\'re improving with every test.</p>'
+            ),
+        )
+        st.html(hero_html)
+
+        col1, col2, col3 = st.columns(3, gap="small")
+        with col1:
+            glass_card(
+                "🔥 Streak",
+                value=f"{st.session_state.get('streak', 0)} days",
+                body="Your current streak",
+            )
+        with col2:
+            glass_card(
+                "📈 Accuracy",
+                value=f"{st.session_state.get('accuracy', 0):.1f}%",
+                body="Overall accuracy",
+            )
+        with col3:
+            rank_label = (
+                f"#{st.session_state.get('rank', 0)}"
+                if st.session_state.get("rank", 0)
+                else "Not ranked"
+            )
+            glass_card(
+                "🏅 Rank",
+                value=rank_label,
+                body="Leaderboard position",
+            )
+
+        learning_summary_html = glass_card_html(
+            "📚 Learning Summary",
+            extra_html=analytics_grid(
+                [
+                    ("📚 Weak Topic", weak_topic),
+                    ("💪 Strong Topic", strong_topic),
+                ]
+            ),
+        )
+        st.html(learning_summary_html)
+
+        recommendation_text = (
+            f"Focus on {weak_topic} revision to build stronger accuracy."
+            if weak_topic != "No Data"
+            else "Keep practicing daily tests to uncover your highest priority topic."
+        )
+        st.html(
+            glass_card_html(
+                "🧠 AI Recommendation",
+                body=recommendation_text,
+            )
+        )
+
+        st.markdown("### Next Steps")
+        btn1, btn2, btn3 = st.columns(3, gap="small")
+        with btn1:
+            if st.button("📖 Review Answers", key="completion_review_answers"):
+                st.info("Review Answers is coming soon.")
+        with btn2:
+            if st.button("📚 Revision Test", key="completion_revision_test"):
+                test_config = get_test_config(user, mode="revision")
+                subject = test_config["subject"]
+                topic = test_config["topic"]
+                level = test_config["level"]
+                questions = load_questions(subject, topic, level)
+                if not questions:
+                    st.error("No revision questions found")
+                else:
+                    st.session_state.test_subject = subject
+                    st.session_state.test_topic = topic
+                    st.session_state.test_qs = random.sample(
+                        questions, min(5, len(questions))
+                    )
+                    st.session_state.q_index = 0
+                    st.session_state.score = 0
+                    st.session_state.answered = False
+                    st.session_state.test_active = True
+                    st.session_state.start_time = time.time()
+                    st.experimental_rerun()
+        with btn3:
+            if st.button("🏠 Dashboard", key="completion_dashboard"):
+                st.experimental_rerun()
 
         # ==========================================
         # 🏆 RANK PREDICTION
@@ -473,10 +584,6 @@ elif selected == "📘 Daily Test":
                 return "Needs Improvement"
 
         rank = predict_rank(percent)
-
-        st.markdown("## 🏆 Rank Prediction")
-
-        st.success(f"🎯 Expected Rank: {rank}")
 
         complete_test(
             user,

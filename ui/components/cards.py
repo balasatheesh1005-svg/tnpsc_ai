@@ -31,8 +31,7 @@ def _render_fragment(fragment):
 
 def render_card_styles():
     st.markdown(
-        _html(
-            """
+        _html("""
         <style>
         div[data-testid="stVerticalBlockBorderWrapper"] {
             border-color: var(--nova-line);
@@ -146,6 +145,41 @@ def render_card_styles():
             font-size: 0.95rem;
             line-height: 1.55;
             margin: 0.45rem 0 0;
+        }
+
+        .nova-plan-row,
+        .nova-plan-footer {
+            display: grid;
+            grid-template-columns: max-content minmax(0, 1fr);
+            gap: 0.75rem 1rem;
+            align-items: center;
+            margin-top: 1rem;
+        }
+
+        .nova-plan-label {
+            color: var(--nova-primary);
+            font-size: 0.96rem;
+            font-weight: 900;
+            line-height: 1.3;
+            white-space: nowrap;
+        }
+
+        .nova-plan-row .nova-card-copy,
+        .nova-plan-footer .nova-card-copy {
+            margin: 0;
+        }
+
+        .nova-plan-footer {
+            margin-top: 1.25rem;
+            border-top: 1px solid rgba(226, 232, 240, 0.76);
+            padding-top: 1rem;
+        }
+
+        .nova-hidden-recommendation {
+            display: none;
+            visibility: hidden;
+            height: 0;
+            overflow: hidden;
         }
 
         .nova-section-title {
@@ -262,10 +296,39 @@ def render_card_styles():
             color: #FFFFFF;
             background: #94A3B8;
             font-weight: 900;
+            box-shadow: 0 0 0 6px rgba(148, 163, 184, 0.1);
         }
 
-        .achievement-card.unlocked .achievement-icon {
-            background: var(--nova-success);
+        .achievement-icon.bronze {
+            background: linear-gradient(180deg, #c2410c, #f59e0b);
+            box-shadow: 0 14px 30px rgba(249, 115, 22, 0.18);
+        }
+
+        .achievement-icon.silver {
+            background: linear-gradient(180deg, #e5e7eb, #9ca3af);
+            color: #111827;
+            box-shadow: 0 14px 30px rgba(148, 163, 184, 0.18);
+        }
+
+        .achievement-icon.gold {
+            background: linear-gradient(180deg, #fde68a, #fbbf24);
+            color: #92400e;
+            box-shadow: 0 14px 30px rgba(245, 158, 11, 0.18);
+        }
+
+        .achievement-card.bronze.unlocked {
+            border-color: rgba(181, 108, 44, 0.35);
+            background: linear-gradient(180deg, rgba(255, 244, 229, 0.9), rgba(255, 255, 255, 0.74));
+        }
+
+        .achievement-card.silver.unlocked {
+            border-color: rgba(148, 163, 184, 0.35);
+            background: linear-gradient(180deg, rgba(248, 250, 252, 0.92), rgba(255, 255, 255, 0.74));
+        }
+
+        .achievement-card.gold.unlocked {
+            border-color: rgba(245, 158, 11, 0.35);
+            background: linear-gradient(180deg, rgba(255, 247, 237, 0.9), rgba(255, 255, 255, 0.74));
         }
 
         .achievement-title {
@@ -333,8 +396,7 @@ def render_card_styles():
             }
         }
         </style>
-        """
-        ),
+        """),
         unsafe_allow_html=True,
     )
 
@@ -358,82 +420,130 @@ def metric_card(theme, label, value, delta):
 
 def glass_card_html(title, value=None, body=None, extra_html=None):
     value_html = (
-        f'<p class="nova-card-value">{html.escape(str(value))}</p>' if value is not None else ""
+        f'<p class="nova-card-value">{html.escape(str(value))}</p>'
+        if value is not None
+        else ""
     )
     body_html = (
-        f'<p class="nova-card-copy">{html.escape(str(body))}</p>' if body is not None else ""
+        f'<p class="nova-card-copy">{html.escape(str(body))}</p>'
+        if body is not None
+        else ""
     )
-    return _html(
-        f"""
+    return _html(f"""
     <section class="nova-glass-card">
         <div class="nova-card-title">{html.escape(str(title))}</div>
         {value_html}
         {body_html}
         {_render_fragment(extra_html)}
     </section>
-    """
-    )
+    """)
 
 
 def glass_card(title, value=None, body=None, extra_html=None):
-    st.markdown(
-        glass_card_html(title, value=value, body=body, extra_html=extra_html),
-        unsafe_allow_html=True,
+    st.html(glass_card_html(title, value=value, body=body, extra_html=extra_html))
+
+
+def study_plan_card_html(
+    title,
+    revision,
+    practice,
+    goal,
+    estimated_time=None,
+    raw_recommendation=None,
+):
+    estimated_html = (
+        f'<div class="nova-plan-footer">'
+        f'<div class="nova-plan-label">⏱ Estimated Time</div>'
+        f'<div class="nova-card-copy">{html.escape(str(estimated_time))}</div>'
+        "</div>"
+        if estimated_time is not None
+        else ""
     )
+    hidden_recommendation = (
+        f'<div class="nova-hidden-recommendation">{html.escape(str(raw_recommendation))}</div>'
+        if raw_recommendation is not None
+        else ""
+    )
+    return _html(f"""
+    <section class="nova-glass-card">
+        <div class="nova-card-title">{html.escape(str(title))}</div>
+        <div class="nova-plan-row">
+            <div class="nova-plan-label">📚 Revision</div>
+            <div class="nova-card-copy">{html.escape(str(revision))}</div>
+        </div>
+        <div class="nova-plan-row">
+            <div class="nova-plan-label">📝 Practice</div>
+            <div class="nova-card-copy"><strong>{html.escape(str(practice))}</strong></div>
+        </div>
+        <div class="nova-plan-row">
+            <div class="nova-plan-label">🎯 Goal</div>
+            <div class="nova-card-copy">{html.escape(str(goal))}</div>
+        </div>
+        {estimated_html}
+        {hidden_recommendation}
+    </section>
+    """)
 
 
 def analytics_grid(items):
     cells = []
     for label, value in items:
-        cells.append(
-            _html(
-                f"""
+        cells.append(_html(f"""
             <div class="analytics-item">
                 <div class="analytics-label">{html.escape(str(label))}</div>
                 <div class="analytics-value">{html.escape(str(value))}</div>
             </div>
-            """
-            )
-        )
+            """))
     return HtmlFragment(f'<div class="analytics-grid">{"".join(cells)}</div>')
 
 
 def accuracy_gauge(value, body):
     safe_value = max(0, min(100, float(value or 0)))
-    return _fragment(
-        f"""
+    return _fragment(f"""
     <div class="gauge-wrap">
         <div class="accuracy-gauge" style="--accuracy: {safe_value * 3.6}deg;">
             <div class="accuracy-gauge-value">{safe_value:g}%</div>
         </div>
         <p class="nova-card-copy">{html.escape(str(body))}</p>
     </div>
-    """
-    )
+    """)
 
 
-def achievement_card(title, description, unlocked):
+def achievement_card(title, description, unlocked, level=None):
     state_class = "unlocked" if unlocked else "locked"
+    level_class = html.escape(str(level)) if level else ""
+    level_icon = {
+        "bronze": "🥉",
+        "silver": "🥈",
+        "gold": "🏆",
+    }.get(level, "✓" if unlocked else "○")
     state_label = "Unlocked" if unlocked else "Locked"
-    icon = "✓" if unlocked else "○"
 
-    return _fragment(
-        f"""
-    <div class="achievement-card {state_class}">
-        <div class="achievement-icon">{icon}</div>
+    classes = "achievement-card"
+    if state_class:
+        classes += f" {state_class}"
+    if level_class:
+        classes += f" {level_class}"
+
+    icon_classes = "achievement-icon"
+    if level_class:
+        icon_classes += f" {level_class}"
+
+    return _fragment(f"""
+    <div class="{classes}">
+        <div class="{icon_classes}">{level_icon}</div>
         <div>
             <div class="achievement-title">{html.escape(str(title))}</div>
             <div class="achievement-copy">{html.escape(str(description))}</div>
             <div class="achievement-state">{state_label}</div>
         </div>
     </div>
-    """
-    )
+    """)
 
 
 def achievement_grid(achievements):
     cards = "".join(
-        achievement_card(title, description, unlocked).markup
-        for title, description, unlocked in achievements
+        achievement_card(title, description, unlocked, level).markup
+        for title, description, unlocked, level in achievements
     )
     return HtmlFragment(f'<div class="achievement-grid">{cards}</div>')

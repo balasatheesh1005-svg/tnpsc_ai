@@ -2,6 +2,7 @@ import html
 
 import pandas as pd
 import streamlit as st
+import altair as alt
 
 from core.leaderboard_ai import get_top_users
 from core.progress_ai import get_progress
@@ -18,6 +19,7 @@ from ui.components.cards import (
     metric_card,
     render_card_styles,
     section_title,
+    study_plan_card_html,
 )
 from ui.components.header import render_dashboard_hero, render_header_styles
 from ui.theme import render_theme_css
@@ -34,6 +36,50 @@ def _clean_label(value, fallback="No Data"):
     if value is None or value == "":
         return fallback
     return str(value).replace("-", " -> ").title()
+
+
+def _title_case_label(text: str) -> str:
+    if not text:
+        return "No Data"
+
+    small_words = {
+        "and",
+        "or",
+        "the",
+        "a",
+        "an",
+        "in",
+        "on",
+        "at",
+        "to",
+        "for",
+        "from",
+        "by",
+        "of",
+        "with",
+        "into",
+        "over",
+        "between",
+    }
+
+    words = str(text).replace("_", " ").replace("-", " ").split()
+    formatted_words = []
+    for index, word in enumerate(words):
+        normalized = word.lower()
+        if index != 0 and normalized in small_words:
+            formatted_words.append(normalized)
+        else:
+            formatted_words.append(normalized.capitalize())
+
+    return " ".join(formatted_words)
+
+
+def format_topic_name(topic: str) -> str:
+    return _title_case_label(topic)
+
+
+def format_subject_name(subject: str) -> str:
+    return _title_case_label(subject)
 
 
 def _build_progress_df(progress_rows):
@@ -74,8 +120,8 @@ def _get_subject_summary(df):
     if subject_avg.empty:
         return "No Data", "No Data"
 
-    strongest = _clean_label(subject_avg.index[0])
-    weakest = _clean_label(subject_avg.index[-1])
+    strongest = format_subject_name(subject_avg.index[0])
+    weakest = format_subject_name(subject_avg.index[-1])
     return strongest, weakest
 
 
@@ -125,7 +171,13 @@ def render_dashboard():
 
     if weak_data:
         weak_topic = max(weak_data, key=weak_data.get)
-        weak_subject = weak_topic.replace("-", " -> ")
+        if "-" in weak_topic:
+            raw_subject, raw_topic = weak_topic.split("-", 1)
+            weak_subject = (
+                f"{format_subject_name(raw_subject)} → {format_topic_name(raw_topic)}"
+            )
+        else:
+            weak_subject = format_topic_name(weak_topic)
     else:
         weak_subject = "No Data"
 
@@ -140,26 +192,47 @@ def render_dashboard():
     )
 
     chart_df = progress_df[["test_no", "accuracy"]].copy()
-    if not chart_df.empty:
-        chart_df = chart_df.set_index("test_no")
+    latest_chart_df = chart_df.tail(10).reset_index(drop=True)
+
+    if not latest_chart_df.empty:
+        latest_chart_df = latest_chart_df.sort_values("test_no")
+        current_accuracy = latest_chart_df["accuracy"].iloc[-1]
+        best_accuracy = latest_chart_df["accuracy"].max()
+        average_accuracy = latest_chart_df["accuracy"].mean()
+    else:
+        current_accuracy = 0
+        best_accuracy = 0
+        average_accuracy = 0
 
     achievements = [
-        ("7 Day Streak", "Maintain a 7 day study streak.", daily_streak_value >= 7),
-        ("Accuracy Above 80%", "Reach 80% average accuracy.", accuracy_value >= 80),
+        (
+            "7 Day Streak",
+            "Maintain a 7 day study streak.",
+            daily_streak_value >= 7,
+            "gold",
+        ),
+        (
+            "Accuracy Above 80%",
+            "Reach 80% average accuracy.",
+            accuracy_value >= 80,
+            "silver",
+        ),
         (
             "10 Tests Completed",
             "Complete 10 practice tests.",
             tests_attempted_value >= 10,
+            "bronze",
         ),
         (
             "50 Tests Completed",
             "Complete 50 practice tests.",
             tests_attempted_value >= 50,
+            "gold",
         ),
-        ("Top 10 Rank", "Enter the leaderboard top 10.", 0 < rank_value <= 10),
+        ("Top 10 Rank", "Enter the leaderboard top 10.", 0 < rank_value <= 10, "gold"),
     ]
     unlocked_count = sum(
-        1 for _title, _description, unlocked in achievements if unlocked
+        1 for _title, _description, unlocked, _level in achievements if unlocked
     )
 
     render_theme_css()
@@ -211,12 +284,76 @@ def render_dashboard():
     section_title("Progress Overview", "Accuracy trend")
     with st.container(border=True):
         st.markdown("#### 📈 Accuracy Trend")
-        if chart_df.empty:
+        if latest_chart_df.empty:
             st.info(
                 "No users_progress records yet. Complete a test to unlock your trend chart."
             )
         else:
-            st.line_chart(chart_df, use_container_width=True, height=260)
+            st.markdown("#### 📊 Trend Summary")
+            st.html(
+                analytics_grid(
+                    [
+                        ("Current Accuracy", f"{current_accuracy:g}%"),
+                        ("Best Accuracy", f"{best_accuracy:g}%"),
+                        ("Average Accuracy", f"{average_accuracy:g}%"),
+                    ]
+                ).markup
+            )
+
+            line = (
+                alt.Chart(latest_chart_df)
+                .mark_line(
+                    interpolate="monotone",
+                    color="#2563EB",
+                    strokeWidth=3,
+                )
+                .encode(
+                    x=alt.X("test_no:Q", title="Test #", axis=alt.Axis(tickMinStep=1)),
+                    y=alt.Y(
+                        "accuracy:Q",
+                        title="Accuracy",
+                        scale=alt.Scale(domain=[0, 100]),
+                    ),
+                    tooltip=[
+                        alt.Tooltip("test_no:Q", title="Test Number"),
+                        alt.Tooltip("accuracy:Q", title="Accuracy", format=".1f"),
+                    ],
+                )
+            )
+
+            area = (
+                alt.Chart(latest_chart_df)
+                .mark_area(
+                    interpolate="monotone",
+                    opacity=0.16,
+                    color="#3B82F6",
+                )
+                .encode(
+                    x="test_no:Q",
+                    y="accuracy:Q",
+                )
+            )
+
+            target_line = (
+                alt.Chart(pd.DataFrame({"target": [75]}))
+                .mark_rule(
+                    color="#2563EB",
+                    strokeDash=[4, 4],
+                    size=2,
+                )
+                .encode(y="target:Q")
+            )
+
+            chart = (
+                alt.layer(area, line, target_line)
+                .properties(
+                    height=300,
+                    width="container",
+                )
+                .configure_view(strokeOpacity=0)
+            )
+
+            st.altair_chart(chart, use_container_width=True)
 
     analytics_html = glass_card_html(
         "📊 Weekly Analytics",
@@ -229,7 +366,7 @@ def render_dashboard():
             ]
         ),
     )
-    st.markdown(analytics_html, unsafe_allow_html=True)
+    st.html(analytics_html)
 
     col_subject, col_consistency = st.columns([1, 1], gap="small")
     with col_subject:
@@ -262,7 +399,19 @@ def render_dashboard():
         body=f"{unlocked_count} of {len(achievements)} unlocked",
         extra_html=achievement_grid(achievements),
     )
-    st.markdown(achievement_html, unsafe_allow_html=True)
+    st.html(achievement_html)
 
-    recommendation_html = glass_card_html("🧠 AI Recommendation", body=recommendation)
-    st.markdown(recommendation_html, unsafe_allow_html=True)
+    revision_text = (
+        f"Review {weak_subject} and complete high-priority revisions."
+        if weak_subject != "No Data"
+        else "Complete a diagnostic test and prioritize your revision plan."
+    )
+    recommendation_html = study_plan_card_html(
+        "🧠 AI Study Plan",
+        revision=revision_text,
+        practice="Take a Short Daily Test",
+        goal="Reach 75%+ Accuracy",
+        estimated_time="15 Minutes",
+        raw_recommendation=recommendation,
+    )
+    st.html(recommendation_html)
