@@ -1,6 +1,9 @@
 import streamlit as st
 import random, time
 
+from ui.components.header import render_sidebar_branding
+from ui.theme import render_theme_css
+
 
 # ---------------- UI HELPERS ----------------
 def section(title):
@@ -24,21 +27,7 @@ st.set_page_config(
     page_title="TNPSC Nova AI", page_icon="assets/app_icon.png", layout="wide"
 )
 # ---------------- STYLE ----------------
-st.markdown(
-    """
-<style>
-.stButton>button {
-    background: linear-gradient(90deg, #ff512f, #dd2476);
-    color: white;
-    border-radius: 10px;
-    height: 3em;
-    width: 100%;
-    font-weight: bold;
-}
-</style>
-""",
-    unsafe_allow_html=True,
-)
+render_theme_css()
 
 # ---------------- IMPORTS ----------------
 from core.question_loader import load_questions
@@ -121,6 +110,12 @@ if "mentor_chat" not in st.session_state:
 
 # ---------------- MENU ----------------
 with st.sidebar:
+    render_sidebar_branding(
+        username,
+        st.session_state.get("rank", 0),
+        st.session_state.get("accuracy", 0),
+        st.session_state.get("streak", 0),
+    )
 
     selected = option_menu(
         menu_title="📂 Menu",
@@ -146,6 +141,32 @@ with st.sidebar:
         ],
         menu_icon="cast",
         default_index=0,
+        styles={
+            "container": {
+                "padding": "0",
+                "background-color": "transparent",
+            },
+            "icon": {
+                "color": "inherit",
+                "font-size": "17px",
+            },
+            "nav-link": {
+                "font-size": "15px",
+                "text-align": "left",
+                "margin": "4px 0",
+                "--hover-color": "#EFF6FF",
+            },
+            "nav-link-selected": {
+                "background": "linear-gradient(135deg, #0F172A, #2563EB)",
+                "color": "#FFFFFF",
+            },
+            "menu-title": {
+                "font-size": "16px",
+                "font-weight": "800",
+                "color": "#0F172A",
+                "padding": "0.4rem 0.2rem 0.75rem",
+            },
+        },
     )
 
 
