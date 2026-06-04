@@ -103,6 +103,40 @@ if "start_test" not in st.session_state:
 if "test_qs" not in st.session_state:
     st.session_state.test_qs = []
 
+MENU_OPTIONS = [
+    "🏠 Home",
+    "📘 Daily Test",
+    "📚 Notes",
+    "🧠 Weakness",
+    "📊 Progress",
+    "🏆 Leaderboard",
+    "🤖 AI Teacher",
+    "👨‍🏫 Personal Mentor",
+]
+
+if "main_menu" not in st.session_state:
+    st.session_state["main_menu"] = MENU_OPTIONS[0]
+
+current_menu = st.session_state.get("main_menu", MENU_OPTIONS[0])
+if current_menu not in MENU_OPTIONS:
+    current_menu = MENU_OPTIONS[0]
+    st.session_state["main_menu"] = current_menu
+
+# ---------------- REDIRECT HANDLER ----------------
+# If a page sets `st.session_state.navigate_to`, honor it by updating
+# the main menu before current_index is computed.
+if "navigate_to" in st.session_state:
+    nav_target = st.session_state.get("navigate_to")
+    if nav_target in MENU_OPTIONS:
+        st.session_state["main_menu"] = nav_target
+        current_menu = nav_target
+    try:
+        del st.session_state["navigate_to"]
+    except Exception:
+        pass
+
+current_index = MENU_OPTIONS.index(current_menu)
+
 if "q_index" not in st.session_state:
     st.session_state.q_index = 0
 
@@ -126,16 +160,7 @@ with st.sidebar:
 
     selected = option_menu(
         menu_title="📂 Menu",
-        options=[
-            "🏠 Home",
-            "📘 Daily Test",
-            "📚 Notes",
-            "🧠 Weakness",
-            "📊 Progress",
-            "🏆 Leaderboard",
-            "🤖 AI Teacher",
-            "👨‍🏫 Personal Mentor",
-        ],
+        options=MENU_OPTIONS,
         icons=[
             "house",
             "clipboard-check",
@@ -147,7 +172,8 @@ with st.sidebar:
             "person",
         ],
         menu_icon="cast",
-        default_index=0,
+        default_index=current_index,
+        key="sidebar_main_menu",
         styles={
             "container": {
                 "padding": "0",
@@ -175,6 +201,10 @@ with st.sidebar:
             },
         },
     )
+
+    st.session_state["main_menu"] = selected
+    st.sidebar.info(f"selected = {selected}")
+    st.sidebar.info(f"main_menu = {st.session_state.get('main_menu')}")
 
 
 def init_test():
@@ -233,6 +263,27 @@ if selected == "🏠 Home":
 # ---------------- DAILY TEST ----------------
 elif selected == "📘 Daily Test":
     section("📘 Daily Test")
+    st.write("test_active =", st.session_state.get("test_active"))
+    st.write("q_index =", st.session_state.get("q_index"))
+    st.write("len(test_qs) =", len(st.session_state.get("test_qs", [])))
+    st.write("answered =", st.session_state.get("answered"))
+    # ---- DEBUG: show key session state for troubleshooting ----
+    try:
+        dbg = {
+            "main_menu": st.session_state.get("main_menu"),
+            "start_test": st.session_state.get("start_test"),
+            "test_active": st.session_state.get("test_active"),
+            "q_index": st.session_state.get("q_index"),
+            "len_test_qs": len(st.session_state.get("test_qs", [])),
+        }
+    except Exception:
+        dbg = {}
+
+    st.markdown("**DEBUG SESSION**")
+    st.write(dbg)
+
+    # Show current page selected in the menu for debugging
+    st.write("CURRENT PAGE:", selected)
 
     col1, col2, col3 = st.columns(3)
     if st.session_state.get("start_test"):
