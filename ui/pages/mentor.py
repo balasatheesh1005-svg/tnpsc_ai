@@ -1,40 +1,49 @@
 import streamlit as st
+from core.mentor_chat import mentor_reply
 
 
 def render_mentor(section, typing_effect, user):
-    st.markdown("## 🤖 Your Personal AI Mentor")
+    st.markdown("## 🤖 Nova Personal Mentor")
     section("🧑‍🏫 Personal Mentor")
 
-    from core.mentor_ai import mentor_advice
+    if "mentor_chat" not in st.session_state:
+        st.session_state.mentor_chat = [
+            {
+                "role": "assistant",
+                "content": f"Hello {user}! I am your Nova Mentor. How can I help you today?",
+            }
+        ]
 
-    msg = mentor_advice(user)
+    # Helper Chips
+    st.write("Quick Topics:")
+    cols = st.columns(4)
+    chips = [
+        "Weak Topic",
+        "Rank",
+        "Accuracy",
+        "XP",
+        "Level",
+        "Revision",
+        "Study Plan",
+    ]
 
-    st.success(msg)
-    # 🔔 notification clear
-    if st.session_state.get("mentor_notification"):
-        st.success("🎯 New guidance available!")
-        st.session_state["mentor_notification"] = False
+    for i, topic in enumerate(chips):
+        if cols[i % 4].button(topic, key=f"chip_{topic}", use_container_width=True):
+            st.session_state.mentor_chat.append({"role": "user", "content": topic})
+            reply = mentor_reply(topic, user)
+            st.session_state.mentor_chat.append({"role": "assistant", "content": reply})
+            st.rerun()
 
-    # 💬 chat history show
+    st.markdown("---")
+
+    # Render Chat History
     for msg in st.session_state.mentor_chat:
+        with st.chat_message(msg["role"]):
+            st.write(msg["content"])
 
-        if msg["role"] == "assistant":
-            with st.chat_message("assistant"):
-                typing_effect(msg["content"])  # 🔥 HERE
-
-        else:
-            st.chat_message("user").write(msg["content"])
-
-    # 🧠 user reply
-    user_msg = st.chat_input("Ask your mentor...")
-
-    if user_msg:
-        st.session_state.mentor_chat.append({"role": "user", "content": user_msg})
-
-        from core.ai_teacher import ai_teacher
-
-        reply = ai_teacher(user_msg, user)
-
+    # Chat Input
+    if prompt := st.chat_input("Ask your mentor"):
+        st.session_state.mentor_chat.append({"role": "user", "content": prompt})
+        reply = mentor_reply(prompt, user)
         st.session_state.mentor_chat.append({"role": "assistant", "content": reply})
-
         st.rerun()

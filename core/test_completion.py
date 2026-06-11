@@ -5,6 +5,7 @@ from core.mentor_memory import update_memory
 from core.progress_ai import save_progress
 from core.streak_ai import update_streak
 from core.weakness_ai import get_weakness
+from core.xp_ai import add_xp
 
 
 def complete_test(user, subject, topic, percent):
@@ -23,6 +24,31 @@ def complete_test(user, subject, topic, percent):
     streak = update_streak(user)
 
     st.success(f"🔥 Streak: {streak} days")
+
+    # 🔥 Award XP for daily test completion
+    total_xp_earned = 0
+    xp_rewards = []
+
+    # +50 XP for test completion
+    add_xp(user, 50, reward_type="daily_test_completion")
+    total_xp_earned += 50
+    xp_rewards.append("+50 XP: Test Completed")
+
+    # +50 XP for 100% accuracy bonus
+    if percent == 100:
+        add_xp(user, 50, reward_type="accuracy_100_bonus")
+        total_xp_earned += 50
+        xp_rewards.append("+50 XP: Perfect Score Bonus!")
+
+    # +100 XP for 7-day streak
+    if streak == 7:
+        add_xp(user, 100, reward_type="streak_7_day")
+        total_xp_earned += 100
+        xp_rewards.append("+100 XP: 7-Day Streak!")
+
+    # Show XP rewards
+    if xp_rewards:
+        st.info(f"⭐ XP Rewards: {' | '.join(xp_rewards)}")
 
     if not st.session_state.get("progress_saved", False):
 

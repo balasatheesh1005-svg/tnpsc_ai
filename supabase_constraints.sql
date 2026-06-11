@@ -41,3 +41,34 @@ begin
       unique (username);
   end if;
 end $$;
+
+-- PHASE 5: XP + LEVEL SYSTEM
+-- core/xp_ai.py:
+-- supabase.table("user_xp").upsert(..., on_conflict="username")
+
+-- Create table if not exists
+create table if not exists public.user_xp (
+  id uuid primary key default uuid_generate_v4(),
+  username text not null unique,
+  xp integer not null default 0,
+  level integer not null default 1,
+  updated_at timestamp with time zone default now()
+);
+
+-- Check and add unique constraint for username
+do $$
+begin
+  if not exists (
+    select 1
+    from pg_constraint
+    where conname = 'user_xp_username_key'
+  ) then
+    alter table public.user_xp
+      add constraint user_xp_username_key
+      unique (username);
+  end if;
+end $$;
+
+-- Create index for faster lookups
+create index if not exists idx_user_xp_username on public.user_xp(username);
+create index if not exists idx_user_xp_level on public.user_xp(level);

@@ -81,24 +81,9 @@ def render_notes_page(section):
     # ---------------- PRACTICE BUTTON ----------------
 
     if st.button("🧠 Practice from this Topic"):
-
         st.session_state.test_subject = subject
-
         st.session_state.test_topic = topic_key
+        st.session_state.notes_practice_trigger = True
 
-        st.session_state.start_test = True
-
-        st.session_state.start_time = time.time()
-
-        st.session_state.progress_saved = False
-
-        questions = load_questions(subject, topic_key, "easy")
-        question_count = min(5, len(questions)) if questions is not None else 0
-
-        st.success("✅ Practice Test Ready")
-        st.info(
-            f"📘 {question_count} questions generated from this topic.\n\n"
-            "🚀 Open Daily Test from the sidebar and start practicing."
-        )
-        if hasattr(st, "toast"):
-            st.toast(f"🚀 {question_count} Questions loaded successfully!")
+        st.success("✅ Topic Prepared for Practice")
+        st.info("🚀 Open **Daily Test** from the sidebar to begin your session.")

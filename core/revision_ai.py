@@ -2,7 +2,6 @@ import datetime
 
 from core.supabase_client import supabase
 
-
 TABLE = "user_revisions"
 
 
@@ -29,6 +28,25 @@ def add_revision(user, topic):
         },
         on_conflict="username,subject,topic",
     ).execute()
+
+
+def add_revision_topic(user, subject, topic, priority="high"):
+    """Add a revision queue entry for a user/topic if not already pending."""
+    normalized_topic = topic.lower().replace(" ", "_")
+    existing = (
+        supabase.table(TABLE)
+        .select("id")
+        .eq("username", user)
+        .eq("subject", subject)
+        .eq("topic", normalized_topic)
+        .limit(1)
+        .execute()
+    )
+
+    if existing.data:
+        return
+
+    add_revision(user, f"{subject}-{normalized_topic}")
 
 
 def update_revision(user, topic_key):
@@ -89,6 +107,20 @@ def get_due_revisions(user):
     return due_topics
 
 
+def _parse_due_date(value):
+    if value is None:
+        return None
+    if isinstance(value, datetime.date):
+        return value
+    try:
+        return datetime.date.fromisoformat(str(value))
+    except ValueError:
+        try:
+            return datetime.datetime.fromisoformat(str(value)).date()
+        except Exception:
+            return None
+
+
 def get_revision_topics(user):
     today = datetime.date.today().isoformat()
 
@@ -102,3 +134,47 @@ def get_revision_topics(user):
     )
 
     return [_join_topic_key(row) for row in response.data or []]
+
+
+def get_revision_overview(user):
+    today = datetime.date.today()
+    response = (
+        supabase.table(TABLE)
+        .select("subject,topic,level,next_due")
+        .eq("username", user)
+        .order("next_due")
+        .execute()
+    )
+
+    rows = response.data or []
+    overview = {
+        "total": 0,
+        "overdue": [],
+        "due_today": [],
+        "upcoming": [],
+        "queue": [],
+    }
+
+    for row in rows:
+        due_date = _parse_due_date(row.get("next_due"))
+        if due_date is None:
+            continue
+
+        item = {
+            "subject": row.get("subject") or "Unknown",
+            "topic": row.get("topic") or "Unknown",
+            "level": int(row.get("level") or 1),
+            "next_due": due_date,
+        }
+
+        overview["queue"].append(item)
+
+        if due_date < today:
+            overview["overdue"].append(item)
+        elif due_date == today:
+            overview["due_today"].append(item)
+        else:
+            overview["upcoming"].append(item)
+
+    overview["total"] = len(overview["queue"])
+    return overview

@@ -10,7 +10,7 @@ def save_progress(user, subject, topic, accuracy):
     data = {"username": user, "subject": subject, "topic": topic, "accuracy": accuracy}
 
     response = supabase.table("users_progress").insert(data).execute()
-    return response.data
+    return response.data or []
 
 
 # ====================================

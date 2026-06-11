@@ -9,7 +9,7 @@ def render_leaderboard(section):
     leaders = get_top_users()
 
     if not leaders:
-        st.info("No leaderboard data yet")
+        st.info("No users on the leaderboard yet. Complete a test to appear here.")
         st.stop()
 
     for i, item in enumerate(leaders, 1):

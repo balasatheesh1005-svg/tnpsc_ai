@@ -82,7 +82,10 @@ def _get_revision_test_config(user):
 
     topic_key, next_due = random.choice(topics)
 
-    due_date = datetime.date.fromisoformat(next_due)
+    try:
+        due_date = datetime.date.fromisoformat(str(next_due))
+    except (TypeError, ValueError):
+        due_date = datetime.date.today()
 
     today = datetime.date.today()
 
@@ -108,7 +111,11 @@ def _get_revision_test_config(user):
     # SPLIT SUBJECT/TOPIC
     # =========================
 
-    subject, topic = topic_key.split("-")
+    if "-" in topic_key:
+        subject, topic = topic_key.split("-", 1)
+    else:
+        subject = "polity"
+        topic = topic_key
 
     # =========================
     # DISPLAY TOPIC

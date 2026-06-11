@@ -33,6 +33,11 @@ def render_card_styles():
     st.markdown(
         _html("""
         <style>
+        html, body {
+            overflow-x: hidden;
+            width: 100%;
+            max-width: 100vw;
+        }
         div[data-testid="stVerticalBlockBorderWrapper"] {
             border-color: var(--nova-line);
             border-radius: 18px;
@@ -41,6 +46,10 @@ def render_card_styles():
             transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
             overflow: hidden;
             backdrop-filter: blur(14px);
+            line-height: 1.2;
+            font-weight: 900;
+            word-break: break-word;
+            overflow-wrap: anywhere;
         }
 
         div[data-testid="stVerticalBlockBorderWrapper"]:hover {
@@ -137,6 +146,7 @@ def render_card_styles():
             line-height: 1.2;
             font-weight: 900;
             margin: 0;
+            word-break: break-word;
             overflow-wrap: anywhere;
         }
 
@@ -173,6 +183,301 @@ def render_card_styles():
             margin-top: 1.25rem;
             border-top: 1px solid rgba(226, 232, 240, 0.76);
             padding-top: 1rem;
+        }
+
+        .revision-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .revision-list {
+            display: grid;
+            gap: 0.75rem;
+            margin-top: 0.75rem;
+        }
+
+        .revision-item {
+            border: 1px solid rgba(226, 232, 240, 0.86);
+            border-radius: 16px;
+            padding: 0.85rem;
+            background: rgba(248, 250, 252, 0.92);
+            display: grid;
+            gap: 0.35rem;
+        }
+
+        .revision-item-title {
+            color: var(--nova-primary);
+            font-size: 0.98rem;
+            font-weight: 900;
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        .revision-item-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.45rem;
+            align-items: center;
+            justify-content: space-between;
+            color: #475569;
+            font-size: 0.9rem;
+        }
+
+        .revision-badge {
+            border-radius: 999px;
+            padding: 0.22rem 0.6rem;
+            font-size: 0.75rem;
+            font-weight: 800;
+            letter-spacing: 0.02em;
+            background: rgba(37, 99, 235, 0.12);
+            color: #1D4ED8;
+        }
+
+        .revision-badge.overdue {
+            background: rgba(239, 68, 68, 0.12);
+            color: #B91C1C;
+        }
+
+        .revision-badge.today {
+            background: rgba(251, 191, 36, 0.16);
+            color: #92400E;
+        }
+
+        .revision-badge.upcoming {
+            background: rgba(34, 197, 94, 0.16);
+            color: #166534;
+        }
+
+        .daily-mission-list {
+            display: grid;
+            gap: 0.75rem;
+            margin-top: 0.75rem;
+        }
+
+        .daily-mission-item {
+            display: grid;
+            grid-template-columns: 2rem minmax(0, 1fr);
+            gap: 0.7rem;
+            align-items: center;
+            border: 1px solid rgba(226, 232, 240, 0.86);
+            border-radius: 16px;
+            padding: 0.85rem;
+            background: rgba(248, 250, 252, 0.92);
+        }
+
+        .daily-mission-status {
+            width: 2rem;
+            height: 2rem;
+            display: grid;
+            place-items: center;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.78);
+            font-size: 1.05rem;
+            box-shadow: inset 0 0 0 1px rgba(226, 232, 240, 0.9);
+        }
+
+        .daily-mission-label {
+            color: var(--nova-primary);
+            font-size: 0.98rem;
+            font-weight: 900;
+            line-height: 1.25;
+            overflow-wrap: anywhere;
+        }
+
+        .daily-mission-footer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 0.65rem;
+            margin-top: 1rem;
+            border-top: 1px solid rgba(226, 232, 240, 0.76);
+            padding-top: 0.85rem;
+            color: #92400E;
+            font-size: 0.9rem;
+            font-weight: 900;
+        }
+
+        .daily-mission-claimed {
+            margin-top: 0.85rem;
+            border-radius: 999px;
+            padding: 0.65rem 0.9rem;
+            background: rgba(236, 253, 245, 0.95);
+            color: #166534;
+            font-size: 0.92rem;
+            font-weight: 900;
+            text-align: center;
+            border: 1px solid rgba(34, 197, 94, 0.28);
+        }
+
+        div[data-testid="stVerticalBlockBorderWrapper"]:has(.daily-mission-list) div[data-testid="stButton"] button {
+            width: 100%;
+            min-height: 2.75rem;
+            border-radius: 999px;
+            border: 0;
+            background: linear-gradient(135deg, #FBBF24, #F59E0B);
+            color: #111827;
+            font-weight: 900;
+            box-shadow: 0 12px 24px rgba(245, 158, 11, 0.22);
+        }
+
+        .question-card {
+            border: 1px solid rgba(37, 99, 235, 0.14);
+            border-radius: 26px;
+            padding: 1.25rem;
+            background: rgba(255, 255, 255, 0.88);
+            box-shadow: 0 24px 58px rgba(15, 23, 42, 0.08);
+            margin-top: 1rem;
+        }
+
+        .question-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            margin-bottom: 1rem;
+        }
+
+        .question-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            padding: 0.45rem 0.85rem;
+            border-radius: 999px;
+            font-size: 0.85rem;
+            font-weight: 800;
+            letter-spacing: 0.01em;
+            white-space: nowrap;
+        }
+
+        .question-badge.subject {
+            color: #0F172A;
+            background: rgba(59, 130, 246, 0.12);
+            border: 1px solid rgba(59, 130, 246, 0.18);
+        }
+
+        .question-badge.difficulty {
+            color: #111827;
+            background: rgba(251, 191, 36, 0.16);
+            border: 1px solid rgba(245, 158, 11, 0.22);
+        }
+
+        .question-title {
+            font-size: 22px;
+            font-weight: 700;
+            margin: 0 0 0.75rem;
+            color: var(--nova-primary);
+            line-height: 1.2;
+        }
+
+        .progress-header {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto;
+            gap: 0.75rem;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .progress-details {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            align-items: center;
+            color: var(--nova-primary);
+            font-weight: 700;
+        }
+
+        .progress-pill {
+            border-radius: 999px;
+            padding: 0.45rem 0.85rem;
+            background: rgba(37, 99, 235, 0.12);
+            color: #1D4ED8;
+            font-size: 0.92rem;
+            font-weight: 800;
+        }
+
+        .success-pill {
+            border-radius: 999px;
+            padding: 0.45rem 0.85rem;
+            background: rgba(16, 185, 129, 0.16);
+            color: #047857;
+            font-size: 0.92rem;
+            font-weight: 800;
+        }
+
+        .answer-feedback {
+            border: 1px solid rgba(148, 163, 184, 0.28);
+            border-radius: 22px;
+            padding: 1rem;
+            background: rgba(248, 250, 252, 0.94);
+            margin-top: 1rem;
+        }
+
+        .answer-feedback.correct {
+            border-color: rgba(16, 185, 129, 0.32);
+            background: rgba(236, 253, 245, 0.94);
+            color: #065F46;
+        }
+
+        .answer-feedback.wrong {
+            border-color: rgba(239, 68, 68, 0.32);
+            background: rgba(254, 226, 226, 0.96);
+            color: #991B1B;
+        }
+
+        .explanation-card {
+            border: 1px solid rgba(37, 99, 235, 0.16);
+            border-radius: 24px;
+            padding: 1.2rem;
+            background: rgba(255, 255, 255, 0.93);
+            margin-top: 1rem;
+        }
+
+        .explanation-card h4 {
+            margin: 0 0 0.75rem;
+            font-size: 1rem;
+            color: var(--nova-primary);
+            font-weight: 900;
+        }
+
+        .explanation-card p {
+            margin: 0;
+            color: var(--nova-muted);
+            line-height: 1.65;
+        }
+
+        .revision-empty-state {
+            border: 1px solid rgba(16, 185, 129, 0.22);
+            background: rgba(236, 253, 245, 0.95);
+            color: #166534;
+            border-radius: 18px;
+            padding: 1rem;
+            text-align: center;
+            display: grid;
+            gap: 0.35rem;
+        }
+
+        .revision-empty-state .nova-card-title {
+            color: #047857;
+            font-size: 1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .revision-empty-state .nova-card-copy {
+            color: #166534;
+            margin-top: 0;
+        }
+
+        .revision-start-button {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.75rem 1rem;
+            border-radius: 999px;
+            background: linear-gradient(135deg, #2563EB, #0EA5E9);
+            color: #FFFFFF;
+            font-weight: 800;
+            text-decoration: none;
+            box-shadow: 0 10px 24px rgba(14, 165, 233, 0.18);
         }
 
         .nova-hidden-recommendation {
@@ -373,6 +678,12 @@ def render_card_styles():
             overflow: hidden;
         }
 
+        div[data-testid="stProgress"] > div > div {
+            min-height: 18px !important;
+            height: 18px !important;
+            border-radius: 999px !important;
+        }
+
         @media (max-width: 640px) {
             div[data-testid="stVerticalBlockBorderWrapper"]:hover,
             .nova-glass-card:hover {
@@ -386,8 +697,32 @@ def render_card_styles():
 
             .analytics-grid,
             .achievement-grid,
-            .gauge-wrap {
+            .gauge-wrap,
+            .nova-plan-row,
+            .revision-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .progress-header,
+            .question-badges {
+                display: block;
+            }
+
+            .question-card,
+            .answer-feedback,
+            .explanation-card {
+                padding: 1rem;
+            }
+
+            .revision-item-meta {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            div[data-testid="stProgress"] > div > div {
+                min-height: 18px !important;
+                height: 18px !important;
+                border-radius: 999px !important;
             }
 
             .accuracy-gauge {
@@ -449,6 +784,7 @@ def study_plan_card_html(
     practice,
     goal,
     estimated_time=None,
+    message=None,
     raw_recommendation=None,
 ):
     estimated_html = (
@@ -459,6 +795,11 @@ def study_plan_card_html(
         if estimated_time is not None
         else ""
     )
+    message_html = (
+        f'<p class="nova-card-copy">{html.escape(str(message))}</p>'
+        if message is not None
+        else ""
+    )
     hidden_recommendation = (
         f'<div class="nova-hidden-recommendation">{html.escape(str(raw_recommendation))}</div>'
         if raw_recommendation is not None
@@ -467,6 +808,7 @@ def study_plan_card_html(
     return _html(f"""
     <section class="nova-glass-card">
         <div class="nova-card-title">{html.escape(str(title))}</div>
+        {message_html}
         <div class="nova-plan-row">
             <div class="nova-plan-label">📚 Revision</div>
             <div class="nova-card-copy">{html.escape(str(revision))}</div>

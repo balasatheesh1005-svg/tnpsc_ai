@@ -10,7 +10,10 @@ def _parse_date(value):
         return None
     if isinstance(value, date):
         return value
-    return date.fromisoformat(str(value))
+    try:
+        return date.fromisoformat(str(value))
+    except (TypeError, ValueError):
+        return None
 
 
 def update_streak(user):

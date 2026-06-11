@@ -76,7 +76,7 @@ def get_weakness(username):
         supabase.table("users_weakness").select("*").eq("username", username).execute()
     )
 
-    rows = response.data
+    rows = response.data or []
 
     result = {}
 

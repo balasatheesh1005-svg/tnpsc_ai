@@ -5,10 +5,19 @@ import streamlit as st
 import altair as alt
 
 from core.leaderboard_ai import get_top_users
+from core.daily_mission_ai import claim_reward, get_mission_progress
 from core.progress_ai import get_progress
-from core.revision_ai import get_revision_topics
+from core.revision_scheduler import (
+    get_due_revisions as get_queue_revisions,
+    get_revision_count,
+    get_revision_overview,
+    get_top_due_revisions,
+)
+from core.test_topic_selector import get_test_config
+from core.topics_loader import get_topics
 from core.streak_ai import get_streak
 from core.weakness_ai import get_weakness
+from core.xp_ai import get_user_xp, get_level_progress, is_achievement_unlocked
 from ui.components.cards import (
     accuracy_gauge,
     achievement_grid,
@@ -22,6 +31,7 @@ from ui.components.cards import (
     study_plan_card_html,
 )
 from ui.components.header import render_dashboard_hero, render_header_styles
+from core.mentor_ai import mentor_insights
 from ui.theme import render_theme_css
 
 
@@ -80,6 +90,178 @@ def format_topic_name(topic: str) -> str:
 
 def format_subject_name(subject: str) -> str:
     return _title_case_label(subject)
+
+
+def _format_revision_label(row):
+    subject = format_subject_name(row.get("subject"))
+    topic = format_topic_name(row.get("topic"))
+    return f"{subject} → {topic}"
+
+
+def _date_label(due_date):
+    today = pd.Timestamp.now(tz="UTC").date()
+    if due_date == today:
+        return "Today"
+    if due_date < today:
+        return "Overdue"
+    return due_date.strftime("%b %d")
+
+
+def _date_display(due_date):
+    if due_date is None:
+        return "No date"
+    return due_date.strftime("%b %d")
+
+
+def _render_revision_list_items(items, max_items=5):
+    if not items:
+        return (
+            '<div class="revision-empty-state">'
+            '<p class="nova-card-title">🎉 Great Job!</p>'
+            '<p class="nova-card-copy">No revisions pending.</p>'
+            "</div>"
+        )
+
+    list_html = '<div class="revision-list">'
+    for row in items[:max_items]:
+        due_date = row.get("next_due")
+        due_label = _date_label(due_date)
+        badge_type = (
+            "today"
+            if due_date == pd.Timestamp.now(tz="UTC").date()
+            else (
+                "overdue"
+                if due_date < pd.Timestamp.now(tz="UTC").date()
+                else "upcoming"
+            )
+        )
+        list_html += (
+            '<div class="revision-item">'
+            f'<div class="revision-item-title">{html.escape(_format_revision_label(row))}</div>'
+            '<div class="revision-item-meta">'
+            f'<span class="revision-badge {badge_type}">{html.escape(due_label)}</span>'
+            f'<span class="revision-badge">Level {html.escape(str(row.get("level", 1)))}</span>'
+            "</div>"
+            "</div>"
+        )
+    if len(items) > max_items:
+        list_html += (
+            '<div class="revision-item">'
+            f'<p class="nova-card-copy">And {len(items) - max_items} more items in this queue.</p>'
+            "</div>"
+        )
+    list_html += "</div>"
+    return list_html
+
+
+def _daily_mission_item(done, label, count=None, target=None):
+    status = "✅" if done else "⬜"
+    progress = ""
+    if count is not None and target is not None:
+        progress = f" ({min(count, target)}/{target})"
+
+    return (
+        '<div class="daily-mission-item">'
+        f'<span class="daily-mission-status">{status}</span>'
+        "<div>"
+        f'<div class="daily-mission-label">{html.escape(label)}{html.escape(progress)}</div>'
+        "</div>"
+        "</div>"
+    )
+
+
+def _daily_mission_body_html(progress):
+    revision_count = int(progress.get("revision_count") or 0)
+    questions_answered = int(progress.get("questions_answered") or 0)
+    completed_count = int(progress.get("completed_count") or 0)
+
+    daily_done = bool(progress.get("daily_test_completed"))
+    revision_done = revision_count >= 2
+    questions_done = questions_answered >= 20
+
+    mission_html = (
+        '<div class="daily-mission-list">'
+        + _daily_mission_item(daily_done, "Complete 1 Daily Test")
+        + _daily_mission_item(revision_done, "Revise 2 Topics", revision_count, 2)
+        + _daily_mission_item(
+            questions_done, "Answer 20 Questions", questions_answered, 20
+        )
+        + "</div>"
+        '<div class="daily-mission-footer">'
+        f"<span>{completed_count} / 3 Completed</span>"
+        "<span>🎁 +100 XP</span>"
+        "</div>"
+    )
+
+    return mission_html
+
+
+def _daily_mission_card_html(progress):
+    mission_html = _daily_mission_body_html(progress)
+
+    return glass_card_html(
+        "🎯 Daily Mission",
+        extra_html=html_fragment(mission_html),
+    )
+
+
+def _render_daily_mission_card(user, progress):
+    completed_count = int(progress.get("completed_count") or 0)
+    reward_claimed = bool(progress.get("reward_claimed"))
+    can_claim = completed_count == 3 and not reward_claimed
+
+    with st.container(border=True):
+        st.markdown(
+            (
+                '<div class="nova-card-title">ðŸŽ¯ Daily Mission</div>'
+                + _daily_mission_body_html(progress)
+            ),
+            unsafe_allow_html=True,
+        )
+
+        if st.session_state.pop("daily_mission_claim_success", False):
+            st.success("🎉 Mission Completed\n\n+100 XP Earned\n\nAmazing consistency!")
+
+        if reward_claimed:
+            st.markdown(
+                '<div class="daily-mission-claimed">✅ Reward Claimed</div>',
+                unsafe_allow_html=True,
+            )
+        elif can_claim:
+            if st.button("🏆 Claim Reward", key="daily_mission_claim_reward"):
+                if claim_reward(user):
+                    st.session_state["daily_mission_claim_success"] = True
+                    st.rerun()
+                else:
+                    st.info("Reward already claimed or missions are not complete yet.")
+
+
+def _render_next_topic_card(user):
+    try:
+        config = get_test_config(user, mode="smart")
+        subject = config.get("subject", "polity")
+        current_topic_key = config.get("topic", "")
+
+        topics = get_topics(subject)
+        normalized = [t.lower().replace(" ", "_") for t in topics]
+
+        if current_topic_key in normalized:
+            idx = normalized.index(current_topic_key)
+            if idx + 1 < len(topics):
+                next_topic_name = topics[idx + 1]
+                glass_card(
+                    "🎯 Recommended Next Topic",
+                    value=next_topic_name,
+                    body="Next topic in your learning path.",
+                )
+            else:
+                glass_card(
+                    "🏆 Subject Journey Completed",
+                    value=subject.title(),
+                    body="You have reached the final topic in this subject.",
+                )
+    except Exception:
+        pass
 
 
 def _build_progress_df(progress_rows):
@@ -165,6 +347,15 @@ def render_dashboard():
     daily_streak_value = int(_to_float(daily_streak))
     rank_value = int(_to_float(rank))
 
+    # ---------- XP & LEVEL DATA ----------
+    xp_data = get_user_xp(user)
+    level_progress = get_level_progress(user)
+    current_level = xp_data["level"]
+    current_xp = xp_data["xp"]
+    xp_for_next = level_progress["xp_for_next"]
+    progress_percent = level_progress["progress_percent"]
+    mission_progress = get_mission_progress(user)
+
     weak_data = get_weakness(user)
     progress_rows = get_progress(user)
     progress_df = _build_progress_df(progress_rows)
@@ -230,6 +421,24 @@ def render_dashboard():
             "gold",
         ),
         ("Top 10 Rank", "Enter the leaderboard top 10.", 0 < rank_value <= 10, "gold"),
+        (
+            "🌟 Level 2",
+            "Reach Level 2 mastery.",
+            is_achievement_unlocked(user, "level_2"),
+            "silver",
+        ),
+        (
+            "⭐ Level 5",
+            "Reach Level 5 mastery.",
+            is_achievement_unlocked(user, "level_5"),
+            "gold",
+        ),
+        (
+            "🌠 Level 10",
+            "Reach Level 10 mastery.",
+            is_achievement_unlocked(user, "level_10"),
+            "gold",
+        ),
     ]
     unlocked_count = sum(
         1 for _title, _description, unlocked, _level in achievements if unlocked
@@ -239,7 +448,15 @@ def render_dashboard():
     render_header_styles()
     render_card_styles()
 
-    render_dashboard_hero(user, rank_value, accuracy_value, daily_streak_value)
+    with st.spinner("⏳ Loading Mentor Insights..."):
+        render_dashboard_hero(user, rank_value, accuracy_value, daily_streak_value)
+
+    if not progress_rows and not weak_data:
+        glass_card(
+            "ðŸŒ± No Data Yet",
+            value="Start your first test",
+            body="Your dashboard insights will appear here after you complete practice.",
+        )
 
     section_title("Your Performance", "Live stats")
     metric_rows = [
@@ -280,6 +497,116 @@ def render_dashboard():
                 "Current average accuracy from your dashboard performance.",
             ),
         )
+
+    col_next, col_xp, col_mission = st.columns(3, gap="small")
+    with col_next:
+        _render_next_topic_card(user)
+
+    with col_xp:
+        xp_card_html = (
+            '<div style="'
+            "background: linear-gradient(135deg, rgba(251, 191, 36, 0.1) 0%, rgba(245, 158, 11, 0.1) 100%);"
+            "border: 1.5px solid rgba(245, 158, 11, 0.3);"
+            "border-radius: 18px;"
+            "padding: 24px;"
+            "backdrop-filter: blur(14px);"
+            "position: relative;"
+            'overflow: hidden;">'
+            '<div style="position: absolute; top: -40px; right: -40px; width: 120px; height: 120px; '
+            "background: radial-gradient(circle, rgba(251, 191, 36, 0.15) 0%, transparent 70%);"
+            'border-radius: 50%; pointer-events: none;"></div>'
+            '<div style="position: relative; z-index: 2;">'
+            '<p style="color: rgba(79, 70, 229, 0.7); font-size: 0.9rem; font-weight: 600; margin: 0 0 8px 0;">⭐ XP & LEVEL</p>'
+            f'<p style="color: #1f2937; font-size: 2rem; font-weight: 900; margin: 0 0 4px 0;">Level {current_level}</p>'
+            f'<p style="color: rgba(79, 70, 229, 0.8); font-size: 0.95rem; margin: 12px 0 16px 0;">📊 {current_xp} / {level_progress["next_level_target"]} XP</p>'
+            '<div style="background: rgba(255, 255, 255, 0.4); border-radius: 999px; height: 8px; margin: 12px 0; overflow: hidden;">'
+            f'<div style="background: linear-gradient(90deg, #fbbf24 0%, #f59e0b 100%); width: {progress_percent}%; height: 100%; border-radius: 999px;"></div>'
+            "</div>"
+            f'<p style="color: rgba(79, 70, 229, 0.7); font-size: 0.85rem; margin: 8px 0 0 0;">➜ {xp_for_next} XP to Level {level_progress["next_level"]}</p>'
+            "</div>"
+            "</div>"
+        )
+        st.html(xp_card_html)
+
+    with col_mission:
+        _render_daily_mission_card(user, mission_progress)
+
+    due_revisions = get_queue_revisions(user)
+    revision_data = get_revision_overview(user)
+    due_count = get_revision_count(user)
+    overdue_count = len(revision_data["overdue"])
+    due_today_count = len(revision_data["due_today"])
+    upcoming_count = len(revision_data["upcoming"])
+    total_queue = revision_data["total"]
+
+    next_item = revision_data["queue"][0] if revision_data["queue"] else None
+    next_due_text = (
+        _date_label(next_item["next_due"]) if next_item else "No upcoming revisions"
+    )
+    next_topic_text = (
+        _format_revision_label(next_item) if next_item else "All caught up"
+    )
+
+    section_title("Smart Revision Scheduler", "Due Today · Overdue · Upcoming")
+    scheduler_html = (
+        '<div class="revision-grid">'
+        + glass_card_html(
+            "📅 Due Today",
+            value=due_today_count,
+            body="High-priority revisions scheduled for today.",
+            extra_html=html_fragment(
+                _render_revision_list_items(revision_data["due_today"])
+            ),
+        )
+        + glass_card_html(
+            "⏳ Overdue",
+            value=overdue_count,
+            body="Topics that need immediate review.",
+            extra_html=html_fragment(
+                _render_revision_list_items(revision_data["overdue"])
+            ),
+        )
+        + glass_card_html(
+            "🔮 Upcoming",
+            value=upcoming_count,
+            body="What is next in your spaced repetition queue.",
+            extra_html=html_fragment(
+                _render_revision_list_items(revision_data["upcoming"])
+            ),
+        )
+        + "</div>"
+    )
+    st.html(scheduler_html)
+
+    queue_html = glass_card_html(
+        "📚 Revision Queue",
+        value=total_queue,
+        body="Pending Revisions",
+        extra_html=html_fragment(
+            '<p class="nova-card-copy">🔥 Keep your weak topics fresh</p>'
+            + _render_revision_list_items(revision_data["queue"], max_items=6)
+        ),
+    )
+    st.html(queue_html)
+
+    dashboard_revision_html = glass_card_html(
+        "📅 Next Revision",
+        value=html.escape(next_topic_text),
+        body=(
+            f"🗓 Due: {html.escape(_date_display(next_item['next_due']))}"
+            if next_item
+            else "🎉 No revisions pending"
+        ),
+        extra_html=html_fragment(
+            (
+                f'<p class="nova-card-copy">⭐ Level {html.escape(str(next_item["level"]))}</p>'
+                '<a class="revision-start-button">🚀 Start Revision</a>'
+                if next_item
+                else ""
+            )
+        ),
+    )
+    st.html(dashboard_revision_html)
 
     section_title("Progress Overview", "Accuracy trend")
     with st.container(border=True):
@@ -393,6 +720,25 @@ def render_dashboard():
                 "</div>"
             ),
         )
+
+    mentor_data = mentor_insights(
+        accuracy_value,
+        daily_streak_value,
+        weak_subject,
+        strongest_subject,
+        tests_attempted_value,
+        due_revisions=len(due_revisions),
+    )
+
+    mentor_html = study_plan_card_html(
+        "🧠 Personal Mentor",
+        revision=mentor_data["revision"],
+        practice=mentor_data["practice"],
+        goal=mentor_data["goal"],
+        estimated_time=mentor_data["time"],
+        message=mentor_data["message"],
+    )
+    st.html(mentor_html)
 
     achievement_html = glass_card_html(
         "🏅 Achievements",
