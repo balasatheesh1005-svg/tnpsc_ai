@@ -84,6 +84,8 @@ from ui.pages.daily_test_renderer import render_explanation_next, render_questio
 from ui.pages.leaderboard import render_leaderboard
 from ui.pages.mentor import render_mentor
 from ui.pages.notes import render_notes_page
+from ui.pages.about import render_about_page
+from ui.pages.contact import render_contact_page
 from ui.pages.progress import render_progress_page
 from ui.pages.teacher import render_teacher
 from ui.pages.weakness import render_weakness_page
@@ -163,6 +165,8 @@ MENU_OPTIONS = [
     "🏆 Leaderboard",
     "🤖 AI Teacher",
     "👨‍🏫 Personal Mentor",
+    "ℹ️ About",
+    "📞 Contact",
 ]
 
 if "main_menu" not in st.session_state:
@@ -198,6 +202,8 @@ with st.sidebar:
             "trophy",
             "robot",
             "person",
+            "info-circle",
+            "envelope",
         ],
         menu_icon="cast",
         default_index=current_index,
@@ -763,6 +769,14 @@ elif selected == "🤖 AI Teacher":
 elif selected == "👨‍🏫 Personal Mentor":
 
     safe_call(lambda: render_mentor(section, typing_effect, user))
+
+elif selected == "ℹ️ About":
+
+    safe_call(lambda: render_about_page(section))
+
+elif selected == "📞 Contact":
+
+    safe_call(lambda: render_contact_page(section))
 
 recent_error = get_recent_error_message()
 if recent_error:
