@@ -90,15 +90,148 @@ from ui.pages.progress import render_progress_page
 from ui.pages.teacher import render_teacher
 from ui.pages.weakness import render_weakness_page
 
-st.write("✅ Supabase Connected")
-# ---------------- USER ----------------
-username = st.text_input("👤 Enter your name", placeholder="Type your name...")
-if not username:
-    st.stop()
+# ---------------- ONBOARDING / USER LOGIN ----------------
+if "username" not in st.session_state or not st.session_state["username"]:
+    st.markdown(
+        """
+        <style>
+            .stApp {
+                background: linear-gradient(135deg, #0f172a, #1e3a8a, #2563eb);
+                background-attachment: fixed;
+            }
+            [data-testid="stHeader"], [data-testid="stSidebar"] { display: none; }
+            .login-container { max-width: 450px; margin: auto; padding: 10px; }
+            .glass-card {
+                background: rgba(255, 255, 255, 0.08);
+                backdrop-filter: blur(12px);
+                border-radius: 20px;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                padding: 20px;
+                box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+                margin-bottom: 15px;
+                text-align: center;
+            }
+            .chip-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin: 15px 0; }
+            .chip {
+                padding: 6px 14px; border-radius: 100px; font-size: 0.85em; font-weight: 600;
+                display: inline-flex; align-items: center; gap: 6px;
+                backdrop-filter: blur(4px); border: 1px solid rgba(255, 255, 255, 0.1);
+            }
+            .chip-blue { background: rgba(59, 130, 246, 0.2); color: #93c5fd; }
+            .chip-green { background: rgba(34, 197, 94, 0.2); color: #86efac; }
+            .chip-purple { background: rgba(168, 85, 247, 0.2); color: #d8b4fe; }
+            .chip-orange { background: rgba(249, 115, 22, 0.2); color: #fdba74; }
+            .badge-container { display: flex; justify-content: space-around; margin-top: 15px; }
+            .badge { text-align: center; font-size: 0.7em; color: #cbd5e1; }
+            .badge span { display: block; font-size: 1.6em; margin-bottom: 4px; }
+            div[data-baseweb="input"] {
+                background-color: rgba(255, 255, 255, 0.05) !important;
+                border: 1px solid rgba(255, 255, 255, 0.2) !important;
+                border-radius: 12px !important;
+            }
+            input { color: white !important; }
+            div.stButton > button {
+                background: linear-gradient(90deg, #3b82f6, #2563eb) !important;
+                color: white !important; border: none !important; border-radius: 12px !important;
+                padding: 0.6rem !important; font-weight: 700 !important;
+                box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4) !important;
+            }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
 
-user = username
-if username:
-    st.session_state["username"] = username
+    with st.container():
+        st.markdown('<div class="login-container">', unsafe_allow_html=True)
+
+        # SECTION 1 – LOGO & BRANDING
+        col1, col2, col3 = st.columns([1, 2, 1])
+        with col2:
+            st.image("assets/app_icon.png", use_container_width=True)
+
+        st.markdown(
+            """
+            <div style="text-align: center; margin-bottom: 20px;">
+                <h1 style="color: white; margin-bottom: 0;">TNPSC Nova AI</h1>
+                <p style="color: #94a3b8; font-size: 0.9em;">India's AI Powered TNPSC Preparation Platform</p>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
+        # SECTION 2 – FEATURE CHIPS
+        st.markdown(
+            """
+            <div class="chip-container">
+                <div class="chip chip-blue">📘 Daily Tests</div>
+                <div class="chip chip-green">🤖 AI Teacher</div>
+                <div class="chip chip-purple">👨‍🏫 Personal Mentor</div>
+                <div class="chip chip-orange">📚 Smart Revision</div>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
+        # SECTION 3 – WELCOME CARD
+        st.markdown(
+            """
+            <div class="glass-card">
+                <h3 style="color: white; margin-bottom: 5px;">👋 Welcome Back</h3>
+                <p style="color: #cbd5e1; font-size: 0.95em; margin: 0;">Learn. Practice. Revise. Succeed.</p>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
+        # SECTION 4 – LOGIN SECTION
+        st.markdown(
+            "<h4 style='text-align: center; color: white; margin-bottom: 10px;'>Enter Your Name</h4>",
+            unsafe_allow_html=True,
+        )
+
+        user_input = st.text_input(
+            "👤 Your Name",
+            placeholder="Example: Satheeshkumar",
+            label_visibility="collapsed",
+        )
+        if st.button("🚀 Start Learning", use_container_width=True):
+            if user_input:
+                st.session_state["username"] = user_input
+                st.rerun()
+            else:
+                st.warning("Please enter your name to start learning!")
+
+        # SECTION 5 – TRUST / VALUE SECTION
+        st.markdown(
+            """
+            <div class="badge-container">
+                <div class="badge"><span>🏆</span>Track Accuracy</div>
+                <div class="badge"><span>📈</span>Earn XP & Level Up</div>
+                <div class="badge"><span>🔥</span>Build Daily Streaks</div>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
+        # SECTION 6 – FOOTER
+        st.markdown(
+            """
+            <div style="text-align: center; color: rgba(255,255,255,0.4); font-size: 0.8em; margin-top: 40px; line-height: 1.6;">
+                Version 1.0.0<br>
+                Made for TNPSC Aspirants 🇮🇳<br>
+                <strong>TNPSC Nova AI</strong>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
+        st.markdown("</div>", unsafe_allow_html=True)
+
+    st.stop()
+else:
+    # ---------------- USER ----------------
+    username = st.session_state["username"]
+    user = username
     dashboard_stats = safe_call(
         lambda: get_dashboard_stats(username),
         fallback=default_dashboard_stats(),
@@ -784,4 +917,4 @@ if recent_error:
 
 st.markdown("---")
 
-st.caption("🚀 TNPSC AI • India's AI Powered TNPSC Preparation Platform")
+st.caption("🚀 TNPSC AI • AI Powered TNPSC Preparation Platform")

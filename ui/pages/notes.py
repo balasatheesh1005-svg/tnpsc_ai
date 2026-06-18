@@ -1,6 +1,7 @@
 import json
 import re
 import time
+from pathlib import Path
 
 import streamlit as st
 
@@ -17,7 +18,7 @@ def load_note(file_path):
 
 def format_topic(topic):
     topic = topic.lower()
-    topic = re.sub(r"[^a-z0-9 ]", "", topic)
+    topic = re.sub(r"[^a-z0-9_ ]", "", topic)
     return topic.replace(" ", "_")
 
 
@@ -29,7 +30,11 @@ def render_notes_page(section):
 
     # ---------------- SUBJECT ----------------
 
-    subject = st.selectbox("Select Subject", ["polity", "economy", "history"])
+    notes_root = Path("data/notes")
+
+    subjects = sorted([p.name for p in notes_root.iterdir() if p.is_dir()])
+
+    subject = st.selectbox("Select Subject", subjects)
 
     # ---------------- TOPICS ----------------
 
@@ -55,14 +60,20 @@ def render_notes_page(section):
     # ---------------- FILE PATH ----------------
 
     topic_key = format_topic(topic)
-
     file_path = f"data/notes/" f"{subject}/" f"{topic_key}.json"
+
+    # DEBUG OUTPUTS
+    st.write(f"DEBUG: Selected Topic: {topic}")
+    st.write(f"DEBUG: Generated File Path: {file_path}")
 
     # ---------------- LOAD NOTE ----------------
 
     try:
-
         data = load_note(file_path)
+
+        # DEBUG OUTPUTS
+        st.write(f"DEBUG: Loaded UI Type: {data.get('ui_type')}")
+        st.write(f"DEBUG: Content Keys: {list(data.get('content', {}).keys())}")
 
         # 🔥 MAIN RENDER ENGINE
         render_notes(data)
