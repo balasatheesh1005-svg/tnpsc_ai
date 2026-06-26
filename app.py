@@ -11,7 +11,11 @@ from ui.components.cards import (
     render_card_styles,
 )
 from ui.theme import render_theme_css
+from core.auth import logout, restore_auth_session
+from core.session import is_authenticated, reset_app_state_for_logout
 from core.supabase_client import get_recent_error_message
+from ui.login import render_login_page
+from ui.signup import render_signup_page
 
 
 # ---------------- UI HELPERS ----------------
@@ -90,8 +94,10 @@ from ui.pages.progress import render_progress_page
 from ui.pages.teacher import render_teacher
 from ui.pages.weakness import render_weakness_page
 
-# ---------------- ONBOARDING / USER LOGIN ----------------
-if "username" not in st.session_state or not st.session_state["username"]:
+# ---------------- AUTHENTICATION ----------------
+restore_auth_session()
+
+if not is_authenticated():
     st.markdown(
         """
         <style>
@@ -124,17 +130,83 @@ if "username" not in st.session_state or not st.session_state["username"]:
             .badge-container { display: flex; justify-content: space-around; margin-top: 15px; }
             .badge { text-align: center; font-size: 0.7em; color: #cbd5e1; }
             .badge span { display: block; font-size: 1.6em; margin-bottom: 4px; }
-            div[data-baseweb="input"] {
-                background-color: rgba(255, 255, 255, 0.05) !important;
-                border: 1px solid rgba(255, 255, 255, 0.2) !important;
-                border-radius: 12px !important;
+            [data-testid="stTextInput"] label,
+            [data-testid="stTextInput"] label p {
+                color: #FFFFFF !important;
+                font-weight: 800 !important;
             }
-            input { color: white !important; }
-            div.stButton > button {
-                background: linear-gradient(90deg, #3b82f6, #2563eb) !important;
-                color: white !important; border: none !important; border-radius: 12px !important;
-                padding: 0.6rem !important; font-weight: 700 !important;
-                box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4) !important;
+            [data-testid="stTextInput"] div[data-baseweb="input"] {
+                background-color: #FFFFFF !important;
+                border: 1px solid #2563EB !important;
+                border-radius: 10px !important;
+                box-shadow: none !important;
+            }
+            [data-testid="stTextInput"] div[data-baseweb="input"]:focus-within {
+                border-color: #2563EB !important;
+                box-shadow: 0 0 0 2px rgba(147, 197, 253, 0.45) !important;
+            }
+            [data-testid="stTextInput"] input,
+            [data-testid="stTextInput"] input[type="password"],
+            [data-testid="stTextInput"] input[type="text"],
+            [data-testid="stTextInput"] input[type="email"] {
+                background-color: #FFFFFF !important;
+                color: #111827 !important;
+                -webkit-text-fill-color: #111827 !important;
+                caret-color: #111827 !important;
+            }
+            [data-testid="stTextInput"] input::placeholder {
+                color: #6B7280 !important;
+                -webkit-text-fill-color: #6B7280 !important;
+                opacity: 1 !important;
+            }
+            [data-testid="stTextInput"] svg {
+                color: #111827 !important;
+                fill: #111827 !important;
+            }
+            div.stButton > button,
+            div.stFormSubmitButton > button {
+                border-radius: 10px !important;
+                font-weight: 800 !important;
+            }
+            div.stButton > button[kind="primary"],
+            div.stFormSubmitButton > button[kind="primary"] {
+                background: #2563EB !important;
+                border: 1px solid #2563EB !important;
+                color: #FFFFFF !important;
+                box-shadow: 0 4px 14px rgba(37, 99, 235, 0.32) !important;
+            }
+            div.stButton > button[kind="primary"]:hover,
+            div.stFormSubmitButton > button[kind="primary"]:hover {
+                background: #1D4ED8 !important;
+                border-color: #1D4ED8 !important;
+                color: #FFFFFF !important;
+            }
+            div.stButton > button[kind="tertiary"] {
+                min-height: 2rem !important;
+                background: transparent !important;
+                border: 0 !important;
+                color: #93C5FD !important;
+                box-shadow: none !important;
+                text-decoration: none !important;
+            }
+            div.stButton > button[kind="tertiary"]:hover {
+                background: transparent !important;
+                color: #93C5FD !important;
+                text-decoration: underline !important;
+                box-shadow: none !important;
+                transform: none !important;
+            }
+            div.stButton > button:disabled,
+            div.stFormSubmitButton > button:disabled {
+                background: #9CA3AF !important;
+                border-color: #9CA3AF !important;
+                color: #FFFFFF !important;
+                opacity: 1 !important;
+                box-shadow: none !important;
+            }
+            div[data-testid="stCaptionContainer"],
+            div[data-testid="stCaptionContainer"] p {
+                color: #E5E7EB !important;
             }
         </style>
         """,
@@ -183,47 +255,31 @@ if "username" not in st.session_state or not st.session_state["username"]:
             unsafe_allow_html=True,
         )
 
-        # SECTION 4 – LOGIN SECTION
-        st.markdown(
-            "<h4 style='text-align: center; color: white; margin-bottom: 10px;'>Enter Your Name</h4>",
-            unsafe_allow_html=True,
-        )
+        if "auth_page" not in st.session_state:
+            st.session_state["auth_page"] = "login"
 
-        user_input = st.text_input(
-            "👤 Your Name",
-            placeholder="Example: Satheeshkumar",
-            label_visibility="collapsed",
-        )
-        if st.button("🚀 Start Learning", use_container_width=True):
-            if user_input:
-                st.session_state["username"] = user_input
+        login_tab, signup_tab = st.columns(2)
+        with login_tab:
+            if st.button(
+                "Login",
+                use_container_width=True,
+                disabled=st.session_state["auth_page"] == "login",
+            ):
+                st.session_state["auth_page"] = "login"
                 st.rerun()
-            else:
-                st.warning("Please enter your name to start learning!")
+        with signup_tab:
+            if st.button(
+                "Sign Up",
+                use_container_width=True,
+                disabled=st.session_state["auth_page"] == "signup",
+            ):
+                st.session_state["auth_page"] = "signup"
+                st.rerun()
 
-        # SECTION 5 – TRUST / VALUE SECTION
-        st.markdown(
-            """
-            <div class="badge-container">
-                <div class="badge"><span>🏆</span>Track Accuracy</div>
-                <div class="badge"><span>📈</span>Earn XP & Level Up</div>
-                <div class="badge"><span>🔥</span>Build Daily Streaks</div>
-            </div>
-            """,
-            unsafe_allow_html=True,
-        )
-
-        # SECTION 6 – FOOTER
-        st.markdown(
-            """
-            <div style="text-align: center; color: rgba(255,255,255,0.4); font-size: 0.8em; margin-top: 40px; line-height: 1.6;">
-                Version 1.0.0<br>
-                Made for TNPSC Aspirants 🇮🇳<br>
-                <strong>TNPSC Nova AI</strong>
-            </div>
-            """,
-            unsafe_allow_html=True,
-        )
+        if st.session_state["auth_page"] == "signup":
+            render_signup_page()
+        else:
+            render_login_page()
 
         st.markdown("</div>", unsafe_allow_html=True)
 
@@ -322,6 +378,11 @@ with st.sidebar:
         st.session_state.get("accuracy", 0),
         st.session_state.get("streak", 0),
     )
+
+    if st.button("Logout", use_container_width=True):
+        logout()
+        reset_app_state_for_logout()
+        st.rerun()
 
     selected = option_menu(
         menu_title="📂 Menu",
