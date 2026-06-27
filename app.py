@@ -208,6 +208,32 @@ if not is_authenticated():
             div[data-testid="stCaptionContainer"] p {
                 color: #E5E7EB !important;
             }
+            div[data-testid="stMarkdownContainer"] h3 {
+                color: #FFFFFF !important;
+            }
+            div[data-testid="stAlert"] [data-testid="stAlertContainer"],
+            div[data-testid="stAlert"] [data-testid="stAlertContainer"] * {
+                color: #FFFFFF !important;
+            }
+            div[data-testid="stAlert"] [data-testid="stAlertContainer"] svg {
+                fill: currentColor !important;
+            }
+            div[data-testid="stAlert"]:has([data-testid="stAlertContentSuccess"])
+            [data-testid="stAlertContainer"] {
+                background: #16A34A !important;
+            }
+            div[data-testid="stAlert"]:has([data-testid="stAlertContentError"])
+            [data-testid="stAlertContainer"] {
+                background: #DC2626 !important;
+            }
+            div[data-testid="stAlert"]:has([data-testid="stAlertContentInfo"])
+            [data-testid="stAlertContainer"] {
+                background: #2563EB !important;
+            }
+            div[data-testid="stAlert"]:has([data-testid="stAlertContentWarning"])
+            [data-testid="stAlertContainer"] {
+                background: #F97316 !important;
+            }
         </style>
         """,
         unsafe_allow_html=True,

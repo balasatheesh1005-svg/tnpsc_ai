@@ -20,6 +20,37 @@ def render_theme_css():
     st.markdown(
         f"""
         <style>
+        /*
+         * Remove Streamlit-owned sharing/branding controls only.  Keep the
+         * toolbar itself because Streamlit renders the collapsed-sidebar
+         * opener inside it.
+         */
+        [data-testid="stToolbarActions"],
+        [data-testid="stAppDeployButton"],
+        [data-testid="stMainMenu"],
+        #MainMenu,
+        .stDeployButton,
+        footer,
+        [data-testid="stFooter"],
+        #viewerBadge_link,
+        [class*="viewerBadge_container"],
+        [class*="viewerBadge_link"] {{
+            display: none !important;
+            visibility: hidden !important;
+        }}
+
+        /* Keep both sidebar controls operable above page content at all times. */
+        [data-testid="stToolbar"]:has([data-testid="stExpandSidebarButton"]),
+        [data-testid="stExpandSidebarButton"],
+        [data-testid="stSidebarCollapseButton"] {{
+            display: flex !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+            pointer-events: auto !important;
+            position: relative;
+            z-index: 1000000 !important;
+        }}
+
         :root {{
             --nova-primary: {COLORS["primary"]};
             --nova-accent: {COLORS["accent"]};
