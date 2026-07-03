@@ -63,8 +63,8 @@ def render_notes_page(section):
     file_path = f"data/notes/" f"{subject}/" f"{topic_key}.json"
 
     # DEBUG OUTPUTS
-    st.write(f"DEBUG: Selected Topic: {topic}")
-    st.write(f"DEBUG: Generated File Path: {file_path}")
+    # st.write(f"DEBUG: Selected Topic: {topic}")
+    # st.write(f"DEBUG: Generated File Path: {file_path}")
 
     # ---------------- LOAD NOTE ----------------
 
@@ -72,8 +72,8 @@ def render_notes_page(section):
         data = load_note(file_path)
 
         # DEBUG OUTPUTS
-        st.write(f"DEBUG: Loaded UI Type: {data.get('ui_type')}")
-        st.write(f"DEBUG: Content Keys: {list(data.get('content', {}).keys())}")
+        # st.write(f"DEBUG: Loaded UI Type: {data.get('ui_type')}")
+        # st.write(f"DEBUG: Content Keys: {list(data.get('content', {}).keys())}")
 
         # 🔥 MAIN RENDER ENGINE
         render_notes(data)
