@@ -26,7 +26,7 @@ def render_notes_page(section):
     section("📘 Notes Section")
 
     # Debug marker to confirm Notes page render
-    st.write("NOTES PAGE RENDERED")
+    #st.write("NOTES PAGE RENDERED")
 
     # ---------------- SUBJECT ----------------
 
