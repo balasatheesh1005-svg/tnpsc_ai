@@ -12,8 +12,11 @@ from core.topics_loader import get_topics
 
 @st.cache_data
 def load_note(file_path):
-    with open(file_path, "r", encoding="utf-8") as f:
-        return json.load(f)
+    try:
+        with open(file_path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError, ValueError):
+        return None
 
 
 def format_topic(topic):
@@ -70,6 +73,10 @@ def render_notes_page(section):
 
     try:
         data = load_note(file_path)
+
+        if data is None:
+            st.warning("ðŸ“­ Notes not available yet")
+            return
 
         # DEBUG OUTPUTS
         # st.write(f"DEBUG: Loaded UI Type: {data.get('ui_type')}")
