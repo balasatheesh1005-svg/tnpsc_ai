@@ -5,6 +5,7 @@ import streamlit as st
 
 from core.question_engine.navigator import next_index, previous_index
 from core.question_engine.progress import build_progress_state, is_correct_answer
+from core.question_engine.answer_key import get_correct_answer
 from core.question_engine.session import (
     get_session_value,
     record_answer,
@@ -43,7 +44,14 @@ def _extract_options(question):
 
 
 def _correct_answer(question):
-    return question.get("correct_answer") or question.get("answer") or question.get("correct")
+    if not question:
+        return None
+    official_answer = get_correct_answer(question.get("id")) if question else None
+    return official_answer or question.get("correct_answer") or question.get("answer") or question.get("correct")
+
+
+def _has_verified_answer(question):
+    return bool(_correct_answer(question))
 
 
 def _question_text(question):
@@ -71,17 +79,27 @@ def render_explanation(question, prefix, actions=None):
     options = dict(_extract_options(question))
     correct_text = options.get(correct_key, "")
     explanation = question.get("explanation") or {}
-    english = explanation.get("english") if isinstance(explanation, dict) else None
-    tamil = explanation.get("tamil") if isinstance(explanation, dict) else None
-    english = english or question.get("explanation_en") or "Not available yet."
-    tamil = tamil or question.get("explanation_ta") or "Not available yet."
+    english = None
+    tamil = None
+    if isinstance(explanation, dict):
+        english = explanation.get("english") or explanation.get("en")
+        tamil = explanation.get("tamil") or explanation.get("ta")
+    english = english or question.get("explanation_en") or "Explanation will be available soon."
+    tamil = tamil or question.get("explanation_ta") or "Explanation will be available soon."
 
-    answer_html = (
-        '<div class="answer-feedback correct">'
-        f"<strong>Correct Answer: {html.escape(str(correct_key))}</strong>"
-        f'<p class="nova-card-copy">{html.escape(str(correct_text))}</p>'
-        "</div>"
-    )
+    if correct_key:
+        answer_html = (
+            '<div class="answer-feedback correct">'
+            f"<strong>Correct Option: {html.escape(str(correct_key))}</strong>"
+            f'<p class="nova-card-copy">{html.escape(str(correct_text or correct_key))}</p>'
+            "</div>"
+        )
+    else:
+        answer_html = (
+            '<div class="answer-feedback">'
+            "<strong>Official answer key has not yet been verified.</strong>"
+            "</div>"
+        )
     st.html(glass_card_html("Answer Review", extra_html=html_fragment(answer_html)))
 
     st.markdown(
@@ -151,10 +169,12 @@ def render_navigation(prefix, total_questions):
 def render_review(question, prefix, actions=None):
     chosen = get_session_value(st.session_state, prefix, "selected_answer", "")
     correct = _correct_answer(question)
-    if is_correct_answer(chosen, correct):
-        st.success("Correct answer.")
+    if not correct:
+        st.warning("Official answer key has not yet been verified.")
+    elif is_correct_answer(chosen, correct):
+        st.success("Correct")
     else:
-        st.error(f"Incorrect. Correct answer is {correct}.")
+        st.error(f"Wrong. Correct option is {correct}.")
     render_explanation(question, prefix, actions=actions)
 
 
@@ -229,7 +249,7 @@ def render_question_card(
             st.session_state,
             prefix,
             selected_key,
-            is_correct_answer(selected_key, _correct_answer(question)),
+            is_correct_answer(selected_key, _correct_answer(question)) if _has_verified_answer(question) else None,
             question.get("id"),
         )
         st.rerun()

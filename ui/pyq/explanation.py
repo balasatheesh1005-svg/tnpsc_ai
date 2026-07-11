@@ -17,7 +17,7 @@ def get_pyq_explanation_actions():
             "callback": _go_to_related_note,
         },
         {
-            "label": "Practice Similar",
+            "label": "Practice Similar Questions",
             "key": "practice_similar",
             "disabled": True,
         },
