@@ -1,0 +1,277 @@
+{
+  "topic": "Percentage_Part_6",
+  "subject": "aptitude",
+  "ui_type": "aptitude",
+
+  "exam_importance": {
+    "en": "Applications of Percentage is one of the highest-weightage topics in TNPSC Aptitude. Percentage concepts are directly applied in Salary, Price, Profit & Loss, Population, Marks and Income related questions.",
+    "ta": "Percentage பயன்பாடுகள் TNPSC கணிதத்தில் அதிக முக்கியத்துவம் வாய்ந்த தலைப்பாகும். சம்பளம், விலை, லாபம்-நஷ்டம், மக்கள் தொகை, மதிப்பெண் மற்றும் வருமானம் தொடர்பான கேள்விகளில் இது நேரடியாக பயன்படுத்தப்படுகிறது."
+  },
+
+  "definition": {
+    "en": "Applications of Percentage involve using percentage concepts in real-life situations such as salary revision, price changes, population growth, discounts and profit-loss calculations.",
+    "ta": "சதவீதத்தின் பயன்பாடு என்பது சம்பள மாற்றம், விலை மாற்றம், மக்கள் தொகை, தள்ளுபடி மற்றும் லாபம்-நஷ்டம் போன்ற நடைமுறை சூழ்நிலைகளில் சதவீதத்தை பயன்படுத்துவதாகும்."
+  },
+
+  "formula_sheet": [
+    {
+      "title": "Increase",
+      "formula": "New Value = Original × (100 + P)/100",
+      "explanation": {
+        "en": "Used for increase problems.",
+        "ta": "அதிகரிப்பு கேள்விகளுக்கு பயன்படும்."
+      }
+    },
+    {
+      "title": "Decrease",
+      "formula": "New Value = Original × (100 − P)/100",
+      "explanation": {
+        "en": "Used for decrease problems.",
+        "ta": "குறைப்பு கேள்விகளுக்கு பயன்படும்."
+      }
+    },
+    {
+      "title": "Percentage Formula",
+      "formula": "Percentage = (Part / Whole) × 100",
+      "explanation": {
+        "en": "Basic percentage formula.",
+        "ta": "அடிப்படை சதவீத சூத்திரம்."
+      }
+    }
+  ],
+
+  "core_concepts": [
+    {
+      "title": "Major Applications",
+      "points": {
+        "en": [
+          "Salary Revision",
+          "Price Increase",
+          "Price Decrease",
+          "Population Growth",
+          "Population Decline",
+          "Marks Calculation",
+          "Discount",
+          "Profit & Loss",
+          "Production",
+          "Income"
+        ],
+        "ta": [
+          "சம்பள உயர்வு",
+          "விலை உயர்வு",
+          "விலை குறைவு",
+          "மக்கள் தொகை உயர்வு",
+          "மக்கள் தொகை குறைவு",
+          "மதிப்பெண் கணக்கீடு",
+          "தள்ளுபடி",
+          "லாபம் மற்றும் நஷ்டம்",
+          "உற்பத்தி",
+          "வருமானம்"
+        ]
+      }
+    }
+  ],
+
+  "shortcut_tricks": [
+    {
+      "title": "TNPSC Quick Tricks",
+      "points": {
+        "en": [
+          "10% = Divide by 10",
+          "5% = Half of 10%",
+          "25% = Divide by 4",
+          "50% = Half",
+          "75% = Three-fourths"
+        ],
+        "ta": [
+          "10% = 10-ஆல் வகுக்கவும்",
+          "5% = 10%-இன் பாதி",
+          "25% = 4-ஆல் வகுக்கவும்",
+          "50% = பாதி",
+          "75% = நான்கில் மூன்று பங்கு"
+        ]
+      }
+    }
+  ],
+
+  "exam_traps": [
+    {
+      "title": "Common Mistakes",
+      "points": {
+        "en": [
+          "Confusing increase and decrease formulas.",
+          "Using percentage on the wrong base value.",
+          "Ignoring units in word problems."
+        ],
+        "ta": [
+          "அதிகரிப்பு மற்றும் குறைப்பு சூத்திரங்களை குழப்புதல்.",
+          "தவறான அடிப்படை மதிப்பில் சதவீதம் கணக்கிடுதல்.",
+          "வார்த்தைக் கணக்குகளில் அலகுகளை கவனிக்காமல் விடுதல்."
+        ]
+      }
+    }
+  ],
+
+  "important_facts": {
+    "en": [
+      "Percentage is used in almost every aptitude topic.",
+      "Applications are more important than direct formulas in TNPSC.",
+      "Identify the base value before solving.",
+      "Read the question carefully before applying the formula."
+    ],
+    "ta": [
+      "சதவீதம் பெரும்பாலான கணித தலைப்புகளில் பயன்படுத்தப்படுகிறது.",
+      "TNPSC-ல் சூத்திரத்தை விட பயன்பாட்டு கேள்விகள் முக்கியமானவை.",
+      "முதலில் அடிப்படை மதிப்பை கண்டறிய வேண்டும்.",
+      "கேள்வியை முழுமையாக படித்த பிறகு சூத்திரத்தை பயன்படுத்த வேண்டும்."
+    ]
+  },
+  "solved_examples": [
+  {
+    "title": "Example 1 - Salary Increase",
+    "question": {
+      "en": "A person's salary is ₹25,000. It is increased by 12%. Find the new salary.",
+      "ta": "ஒருவரின் சம்பளம் ₹25,000. அது 12% உயர்கிறது. புதிய சம்பளத்தை காண்க."
+    },
+    "step1": {
+      "en": "Increase = 25000 × 12/100 = ₹3,000",
+      "ta": "அதிகரிப்பு = 25000 × 12/100 = ₹3,000"
+    },
+    "step2": {
+      "en": "New Salary = 25000 + 3000 = ₹28,000",
+      "ta": "புதிய சம்பளம் = 25000 + 3000 = ₹28,000"
+    },
+    "answer": {
+      "en": "₹28,000",
+      "ta": "₹28,000"
+    }
+  },
+  {
+    "title": "Example 2 - Price Reduction",
+    "question": {
+      "en": "A TV costs ₹40,000. A 15% discount is offered. Find the selling price.",
+      "ta": "₹40,000 மதிப்புள்ள டிவிக்கு 15% தள்ளுபடி வழங்கப்படுகிறது. விற்பனை விலையை காண்க."
+    },
+    "step1": {
+      "en": "Discount = ₹6,000",
+      "ta": "தள்ளுபடி = ₹6,000"
+    },
+    "step2": {
+      "en": "Selling Price = ₹34,000",
+      "ta": "விற்பனை விலை = ₹34,000"
+    },
+    "answer": {
+      "en": "₹34,000",
+      "ta": "₹34,000"
+    }
+  },
+  {
+    "title": "Example 3 - Population Growth",
+    "question": {
+      "en": "Population is 50,000. It increases by 8%. Find the new population.",
+      "ta": "மக்கள் தொகை 50,000. அது 8% உயர்கிறது. புதிய மக்கள் தொகையை காண்க."
+    },
+    "step1": {
+      "en": "Increase = 4,000",
+      "ta": "அதிகரிப்பு = 4,000"
+    },
+    "step2": {
+      "en": "New Population = 54,000",
+      "ta": "புதிய மக்கள் தொகை = 54,000"
+    },
+    "answer": {
+      "en": "54,000",
+      "ta": "54,000"
+    }
+  },
+  {
+    "title": "Example 4 - Marks",
+    "question": {
+      "en": "A student scored 360 out of 500. Find the percentage.",
+      "ta": "ஒரு மாணவர் 500-ல் 360 மதிப்பெண்கள் பெற்றார். சதவீதத்தை காண்க."
+    },
+    "step1": {
+      "en": "(360/500) × 100",
+      "ta": "(360/500) × 100"
+    },
+    "step2": {
+      "en": "= 72%",
+      "ta": "= 72%"
+    },
+    "answer": {
+      "en": "72%",
+      "ta": "72%"
+    }
+  },
+  {
+    "title": "Example 5 - Production",
+    "question": {
+      "en": "A factory produced 8,000 units. Production increased by 25%. Find the new production.",
+      "ta": "ஒரு தொழிற்சாலை 8,000 அலகுகள் உற்பத்தி செய்தது. 25% உயர்ந்தால் புதிய உற்பத்தியை காண்க."
+    },
+    "step1": {
+      "en": "Increase = 2,000",
+      "ta": "அதிகரிப்பு = 2,000"
+    },
+    "step2": {
+      "en": "New Production = 10,000",
+      "ta": "புதிய உற்பத்தி = 10,000"
+    },
+    "answer": {
+      "en": "10,000 Units",
+      "ta": "10,000 அலகுகள்"
+    }
+  }
+],
+"quick_revision": {
+  "en": [
+    "Percentage = (Part/Whole) ×100",
+    "Increase → Add",
+    "Decrease → Subtract",
+    "Discount means decrease",
+    "Always identify the base value first."
+  ],
+  "ta": [
+    "சதவீதம் = (பகுதி/மொத்தம்) ×100",
+    "அதிகரிப்பு → கூட்ட வேண்டும்",
+    "குறைப்பு → கழிக்க வேண்டும்",
+    "தள்ளுபடி என்பது குறைப்பாகும்",
+    "முதலில் அடிப்படை மதிப்பை கண்டறிய வேண்டும்."
+  ]
+},
+"tnpsc_focus": [
+  "Salary Problems",
+  "Price Problems",
+  "Discount",
+  "Population",
+  "Marks",
+  "Production",
+  "Income & Expenditure",
+  "Profit & Loss Applications"
+],
+"expected_questions": [
+  {
+    "question_en": "A salary increases by 15%. Find the new salary if the original salary is ₹32,000.",
+    "question_ta": "₹32,000 சம்பளம் 15% உயர்கிறது. புதிய சம்பளத்தை காண்க."
+  },
+  {
+    "question_en": "A shop offers 20% discount on ₹2,500. Find the selling price.",
+    "question_ta": "₹2,500 மதிப்புள்ள பொருளுக்கு 20% தள்ளுபடி வழங்கப்படுகிறது. விற்பனை விலையை காண்க."
+  },
+  {
+    "question_en": "A student scores 425 out of 500. Find the percentage.",
+    "question_ta": "500-ல் 425 மதிப்பெண்கள் பெற்ற மாணவரின் சதவீதத்தை காண்க."
+  }
+],
+"mind_map": [
+  "Percentage Formula",
+  "Increase",
+  "Decrease",
+  "Discount",
+  "Marks",
+  "Salary",
+  "Population",
+  "Production",
+  "Profit & Loss"
+]
+}

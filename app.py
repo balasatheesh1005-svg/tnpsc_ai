@@ -93,6 +93,7 @@ from ui.pages.contact import render_contact_page
 from ui.pages.progress import render_progress_page
 from ui.pages.teacher import render_teacher
 from ui.pages.weakness import render_weakness_page
+from ui.pyq.dashboard import render_pyq_dashboard
 
 # ---------------- AUTHENTICATION ----------------
 restore_auth_session()
@@ -374,6 +375,7 @@ initialize_session_state()
 MENU_OPTIONS = [
     "🏠 Home",
     "📘 Daily Test",
+    "PYQ",
     "📚 Notes",
     "🧠 Weakness",
     "📊 Progress",
@@ -416,6 +418,7 @@ with st.sidebar:
         icons=[
             "house",
             "clipboard-check",
+            "journal-text",
             "book",
             "brain",
             "bar-chart",
@@ -949,6 +952,15 @@ elif selected == "📘 Daily Test":
         st.session_state.pop("daily_test_config", None)
 
         st.session_state.test_qs = []
+
+# =====================================================
+# 📘 NOTES
+# =====================================================
+
+elif selected == "PYQ":
+
+    safe_call(lambda: render_pyq_dashboard(section))
+
 
 # =====================================================
 # 📘 NOTES

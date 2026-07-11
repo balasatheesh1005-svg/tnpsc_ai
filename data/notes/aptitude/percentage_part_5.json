@@ -1,0 +1,292 @@
+{
+  "topic": "Percentage_Part_5",
+  "subject": "aptitude",
+  "ui_type": "aptitude",
+
+  "exam_importance": {
+    "en": "Successive Percentage Change is one of the highest-scoring topics in TNPSC Aptitude. It is frequently asked in Group 1 and Group 2 examinations.",
+    "ta": "தொடர்ச்சியான சதவீத மாற்றம் TNPSC கணிதத்தில் அதிக மதிப்பெண் பெற உதவும் முக்கியமான தலைப்பாகும். Group 1 மற்றும் Group 2 தேர்வுகளில் இது அடிக்கடி கேட்கப்படுகிறது."
+  },
+
+  "definition": {
+    "en": "Successive Percentage Change means applying two or more percentage increases or decreases one after another on the same quantity.",
+    "ta": "ஒரே மதிப்பில் இரண்டு அல்லது அதற்கு மேற்பட்ட சதவீத அதிகரிப்பு அல்லது குறைப்புகளை தொடர்ச்சியாகப் பயன்படுத்துவதே Successive Percentage Change ஆகும்."
+  },
+
+  "formula_sheet": [
+    {
+      "title": "Net Percentage Change",
+      "formula": "Net Change = A + B + (A × B / 100)",
+      "explanation": {
+        "en": "Use this formula when both successive changes are increases or both are decreases (apply the sign correctly).",
+        "ta": "இரண்டு தொடர்ச்சியான மாற்றங்களும் ஒரே வகையாக (அதிகரிப்பு அல்லது குறைவு) இருந்தால் இந்த சூத்திரத்தை சரியான குறியுடன் பயன்படுத்த வேண்டும்."
+      }
+    },
+    {
+      "title": "Final Value",
+      "formula": "Final Value = Original × (1 ± A/100) × (1 ± B/100)",
+      "explanation": {
+        "en": "Multiply the original value by each successive factor.",
+        "ta": "ஆரம்ப மதிப்பை ஒவ்வொரு தொடர்ச்சியான பெருக்கல் காரணியாலும் பெருக்க வேண்டும்."
+      }
+    }
+  ],
+
+  "core_concepts": [
+    {
+      "title": "Important Rule",
+      "points": {
+        "en": [
+          "Second percentage is applied to the new value.",
+          "Do not simply add the percentages.",
+          "Always use multiplication for successive changes."
+        ],
+        "ta": [
+          "இரண்டாவது சதவீதம் புதிய மதிப்பின் மீது கணக்கிடப்படுகிறது.",
+          "இரண்டு சதவீதங்களையும் நேரடியாக கூட்டக்கூடாது.",
+          "தொடர்ச்சியான மாற்றங்களுக்கு பெருக்கல் முறையைப் பயன்படுத்த வேண்டும்."
+        ]
+      }
+    },
+    {
+      "title": "Applications",
+      "points": {
+        "en": [
+          "Salary Revision",
+          "Price Fluctuation",
+          "Population Growth",
+          "Production Changes",
+          "Profit & Loss"
+        ],
+        "ta": [
+          "சம்பள மாற்றம்",
+          "விலை மாற்றம்",
+          "மக்கள் தொகை மாற்றம்",
+          "உற்பத்தி மாற்றம்",
+          "லாபம் மற்றும் நஷ்டம்"
+        ]
+      }
+    }
+  ],
+
+  "shortcut_tricks": [
+    {
+      "title": "Quick Net Change",
+      "points": {
+        "en": [
+          "10% + 20% = 32%",
+          "20% + 30% = 56%",
+          "10% decrease + 10% increase ≠ 0%",
+          "Always remember AB/100."
+        ],
+        "ta": [
+          "10% + 20% = 32%",
+          "20% + 30% = 56%",
+          "10% குறைவு + 10% அதிகரிப்பு = 0% அல்ல.",
+          "AB/100 பகுதியை மறக்க வேண்டாம்."
+        ]
+      }
+    }
+  ],
+
+  "exam_traps": [
+    {
+      "title": "Common TNPSC Mistakes",
+      "points": {
+        "en": [
+          "Never add two percentages directly.",
+          "Increase followed by decrease does not cancel out.",
+          "Apply each percentage on the latest value."
+        ],
+        "ta": [
+          "இரண்டு சதவீதங்களையும் நேரடியாக கூட்டக்கூடாது.",
+          "அதிகரிப்பு மற்றும் குறைவு ஒன்றையொன்று ரத்து செய்யாது.",
+          "ஒவ்வொரு சதவீதமும் தற்போதைய மதிப்பில் கணக்கிடப்பட வேண்டும்."
+        ]
+      }
+    }
+  ],
+  "important_facts": {
+  "en": [
+    "Successive percentage changes are calculated one after another.",
+    "Each new percentage is applied to the latest value.",
+    "Never simply add two percentages.",
+    "The formula A + B + AB/100 saves time in TNPSC exams.",
+    "Increase followed by decrease does not result in zero change."
+  ],
+  "ta": [
+    "தொடர்ச்சியான சதவீத மாற்றங்கள் ஒன்றன்பின் ஒன்றாக கணக்கிடப்படுகின்றன.",
+    "ஒவ்வொரு புதிய சதவீதமும் தற்போதைய மதிப்பின் மீது கணக்கிடப்படுகிறது.",
+    "இரண்டு சதவீதங்களையும் நேரடியாக கூட்டக்கூடாது.",
+    "A + B + AB/100 என்பது TNPSC-ல் நேரத்தை மிச்சப்படுத்தும் முக்கிய சூத்திரம்.",
+    "ஒரே அளவு அதிகரிப்பும் குறைப்பும் ஏற்பட்டாலும் மொத்த மாற்றம் பூஜ்யம் ஆகாது."
+  ]
+},
+"solved_examples": [
+  {
+    "title": "Example 1",
+    "question": {
+      "en": "A salary increases by 20% and then by 10%. Find the net increase.",
+      "ta": "ஒரு சம்பளம் முதலில் 20% மற்றும் பின்னர் 10% உயர்கிறது. மொத்த உயர்வை காண்க."
+    },
+    "step1": {
+      "en": "Net = 20 + 10 + (20×10)/100",
+      "ta": "மொத்தம் = 20 + 10 + (20×10)/100"
+    },
+    "step2": {
+      "en": "= 20 + 10 + 2",
+      "ta": "= 20 + 10 + 2"
+    },
+    "step3": {
+      "en": "= 32%",
+      "ta": "= 32%"
+    },
+    "answer": {
+      "en": "32%",
+      "ta": "32%"
+    }
+  },
+
+  {
+    "title": "Example 2",
+    "question": {
+      "en": "Price decreases by 20% and again by 10%. Find the total decrease.",
+      "ta": "ஒரு பொருளின் விலை 20% மற்றும் மீண்டும் 10% குறைகிறது. மொத்தக் குறைப்பை காண்க."
+    },
+    "step1": {
+      "en": "Net = -(20 +10) + (20×10)/100",
+      "ta": "மொத்தம் = -(20+10)+(20×10)/100"
+    },
+    "step2": {
+      "en": "= -30 +2",
+      "ta": "= -30 +2"
+    },
+    "step3": {
+      "en": "= -28%",
+      "ta": "= -28%"
+    },
+    "answer": {
+      "en": "28% Decrease",
+      "ta": "28% குறைவு"
+    }
+  },
+
+  {
+    "title": "Example 3",
+    "question": {
+      "en": "Population increases by 25% and then by 20%. Find the net increase.",
+      "ta": "மக்கள் தொகை 25% மற்றும் பின்னர் 20% உயர்கிறது. மொத்த உயர்வை காண்க."
+    },
+    "step1": {
+      "en": "25+20+(25×20)/100",
+      "ta": "25+20+(25×20)/100"
+    },
+    "step2": {
+      "en": "=45+5",
+      "ta": "=45+5"
+    },
+    "step3": {
+      "en": "=50%",
+      "ta": "=50%"
+    },
+    "answer": {
+      "en": "50%",
+      "ta": "50%"
+    }
+  },
+
+  {
+    "title": "Example 4",
+    "question": {
+      "en": "Income increases by 30% and decreases by 20%. Find the net change.",
+      "ta": "வருமானம் 30% உயர்ந்து பின்னர் 20% குறைகிறது. மொத்த மாற்றத்தை காண்க."
+    },
+    "step1": {
+      "en": "30 -20 -(30×20)/100",
+      "ta": "30 -20 -(30×20)/100"
+    },
+    "step2": {
+      "en": "=10-6",
+      "ta": "=10-6"
+    },
+    "step3": {
+      "en": "=4%",
+      "ta": "=4%"
+    },
+    "answer": {
+      "en": "4% Increase",
+      "ta": "4% உயர்வு"
+    }
+  },
+
+  {
+    "title": "Example 5",
+    "question": {
+      "en": "A machine value decreases by 10% and again by 10%. Find the total decrease.",
+      "ta": "ஒரு இயந்திரத்தின் மதிப்பு 10% மற்றும் மீண்டும் 10% குறைகிறது. மொத்தக் குறைப்பை காண்க."
+    },
+    "step1": {
+      "en": "-10-10+(10×10)/100",
+      "ta": "-10-10+(10×10)/100"
+    },
+    "step2": {
+      "en": "= -20+1",
+      "ta": "= -20+1"
+    },
+    "step3": {
+      "en": "= -19%",
+      "ta": "= -19%"
+    },
+    "answer": {
+      "en": "19% Decrease",
+      "ta": "19% குறைவு"
+    }
+  }
+],
+"quick_revision": {
+  "en": [
+    "Successive Increase = A+B+AB/100",
+    "Successive Decrease = -(A+B)+AB/100",
+    "Increase then Decrease = A-B-AB/100",
+    "Always calculate on the latest value.",
+    "Never add percentages directly."
+  ],
+  "ta": [
+    "தொடர்ச்சியான உயர்வு = A+B+AB/100",
+    "தொடர்ச்சியான குறைவு = -(A+B)+AB/100",
+    "உயர்வு → குறைவு = A-B-AB/100",
+    "ஒவ்வொரு மாற்றமும் தற்போதைய மதிப்பின் மீது கணக்கிடப்படுகிறது.",
+    "சதவீதங்களை நேரடியாக கூட்டக்கூடாது."
+  ]
+},
+"tnpsc_focus": [
+  "Successive Increase",
+  "Successive Decrease",
+  "Increase then Decrease",
+  "Salary Revision",
+  "Price Revision",
+  "Population Growth",
+  "Production Change"
+],
+"expected_questions": [
+  {
+    "question_en": "A salary increases by 15% and then by 20%. Find the net increase.",
+    "question_ta": "ஒரு சம்பளம் 15% மற்றும் பின்னர் 20% உயர்கிறது. மொத்த உயர்வை காண்க."
+  },
+  {
+    "question_en": "The price of a product decreases by 25% and then by 10%. Find the overall decrease.",
+    "question_ta": "ஒரு பொருளின் விலை 25% மற்றும் பின்னர் 10% குறைகிறது. மொத்தக் குறைப்பை காண்க."
+  },
+  {
+    "question_en": "Population increases by 12% and then decreases by 8%. Find the net change.",
+    "question_ta": "மக்கள் தொகை 12% உயர்ந்து பின்னர் 8% குறைகிறது. மொத்த மாற்றத்தை காண்க."
+  }
+],
+"mind_map": [
+  "Original Value",
+  "First Percentage Change",
+  "Second Percentage Change",
+  "Net Percentage Formula",
+  "Final Value"
+]
+}
