@@ -12,7 +12,10 @@ def build_progress_state(index, total):
 
 
 def is_correct_answer(selected_answer, correct_answer):
-    return str(selected_answer or "").strip() == str(correct_answer or "").strip()
+    selected = str(selected_answer or "").strip()
+    if isinstance(correct_answer, (list, tuple, set)):
+        return selected in {str(answer or "").strip() for answer in correct_answer}
+    return selected == str(correct_answer or "").strip()
 
 
 def score_attempts(attempts):
@@ -26,4 +29,3 @@ def score_attempts(attempts):
         "correct": correct,
         "accuracy": round((correct / len(rows)) * 100, 2),
     }
-

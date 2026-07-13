@@ -1,40 +1,42 @@
 {
-  "exam": "Group 1",
-  "year": 2011,
-  "paper_series": "D",
-  "official_source": {
-    "publisher": "Tamil Nadu Public Service Commission",
-    "source_url": "https://tnpsc.gov.in/static_pdf/anskeys/05_06_2011_g1_gk.pdf",
-    "source_description": "Final answer key listed by TNPSC for Posts included in Group-I Services (Preliminary Examination), held 05.06.2011."
-  },
-  "expected_question_ids": 50,
-  "single_option_answers": 47,
-  "missing_answers": [
+  "answer_key": "data\\official\\answer_keys\\group1\\group1_2011_answer_key.json",
+  "total_answers": 50,
+  "single_answer_questions": 47,
+  "ambiguous_question_ids": [
     "PYQ_G1_2011_004",
     "PYQ_G1_2011_015",
     "PYQ_G1_2011_017"
   ],
+  "missing_answers": [],
+  "unexpected_ids": [],
   "duplicate_ids": [],
   "invalid_option_answers": [],
-  "official_multi_option_exceptions": [
-    {
-      "question_id": "PYQ_G1_2011_004",
-      "official_key_notation": "ABCD",
-      "reason": "The TNPSC D-Series final key accepts all four options."
-    },
-    {
-      "question_id": "PYQ_G1_2011_015",
-      "official_key_notation": "AB",
-      "reason": "The TNPSC D-Series final key accepts two options."
-    },
-    {
-      "question_id": "PYQ_G1_2011_017",
-      "official_key_notation": "ABCD",
-      "reason": "The TNPSC D-Series final key accepts all four options."
-    }
-  ],
-  "validation_result": "blocked",
-  "verification_result": "not_run",
-  "integration_status": "not_created",
-  "blocker": "The official key does not provide exactly one A/B/C/D answer for all 50 imported questions. Creating the requested one-answer dataset would require fabricating answers for the listed multi-option exceptions."
+  "validation_result": "pass",
+  "answer_key_helper": {
+    "named_key_path_resolves": true,
+    "answer_key_exists": true,
+    "resolution_mismatches": []
+  },
+  "verification_result": {
+    "all_50_question_ids_resolve": true,
+    "accepted_option_checks": 57,
+    "accepted_option_failures": [],
+    "rejected_option_checks": 48,
+    "rejected_option_failures": [],
+    "all_accepted_options_return_correct": true,
+    "all_rejected_options_return_wrong": true,
+    "all_option_questions_note": "Q4 and Q17 accept all A/B/C/D options, so no valid rejected option exists for those two official exceptions.",
+    "result": "pass"
+  },
+  "ui_contract": {
+    "normal_question_example": [
+      "B"
+    ],
+    "ambiguous_question_example": [
+      "A",
+      "B"
+    ],
+    "normal_display": "Correct Answer: B",
+    "ambiguous_display": "Official TNPSC Final Key accepts multiple answers: A, B"
+  }
 }

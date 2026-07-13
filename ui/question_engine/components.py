@@ -54,6 +54,16 @@ def _has_verified_answer(question):
     return bool(_correct_answer(question))
 
 
+def _format_official_answers(correct_answers):
+    if isinstance(correct_answers, (list, tuple, set)):
+        answers = [str(answer) for answer in correct_answers if str(answer)]
+    elif correct_answers:
+        answers = [str(correct_answers)]
+    else:
+        answers = []
+    return answers
+
+
 def _question_text(question):
     return question.get("question_en") or question.get("question") or "Question text not available."
 
@@ -75,7 +85,8 @@ def render_timer(prefix, total_seconds=None):
 
 
 def render_explanation(question, prefix, actions=None):
-    correct_key = _correct_answer(question) or ""
+    correct_answers = _format_official_answers(_correct_answer(question))
+    correct_key = correct_answers[0] if len(correct_answers) == 1 else ""
     options = dict(_extract_options(question))
     correct_text = options.get(correct_key, "")
     explanation = question.get("explanation") or {}
@@ -87,11 +98,18 @@ def render_explanation(question, prefix, actions=None):
     english = english or question.get("explanation_en") or "Explanation will be available soon."
     tamil = tamil or question.get("explanation_ta") or "Explanation will be available soon."
 
-    if correct_key:
+    if len(correct_answers) == 1:
         answer_html = (
             '<div class="answer-feedback correct">'
-            f"<strong>Correct Option: {html.escape(str(correct_key))}</strong>"
+            f"<strong>Correct Answer: {html.escape(str(correct_key))}</strong>"
             f'<p class="nova-card-copy">{html.escape(str(correct_text or correct_key))}</p>'
+            "</div>"
+        )
+    elif correct_answers:
+        answer_html = (
+            '<div class="answer-feedback correct">'
+            "<strong>Official TNPSC Final Key accepts multiple answers:</strong>"
+            f'<p class="nova-card-copy">{html.escape(", ".join(correct_answers))}</p>'
             "</div>"
         )
     else:
@@ -174,7 +192,14 @@ def render_review(question, prefix, actions=None):
     elif is_correct_answer(chosen, correct):
         st.success("Correct")
     else:
-        st.error(f"Wrong. Correct option is {correct}.")
+        answers = _format_official_answers(correct)
+        if len(answers) == 1:
+            st.error(f"Wrong. Correct option is {answers[0]}.")
+        else:
+            st.error(
+                "Wrong. Official TNPSC Final Key accepts multiple answers: "
+                f"{', '.join(answers)}."
+            )
     render_explanation(question, prefix, actions=actions)
 
 

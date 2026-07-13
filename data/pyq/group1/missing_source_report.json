@@ -1,0 +1,32 @@
+{
+  "year": 2014,
+  "exam": "TNPSC Group 1 Preliminary Examination",
+  "official_examination_exists": true,
+  "notification_number": "17/2013",
+  "official_preliminary_exam_date": "2014-07-20",
+  "official_question_paper_pdf_found": false,
+  "status": "Missing Official Question Paper Source",
+  "reason": "TNPSC's official Exam Dashboard and answer-key register confirm that the Group-I preliminary examination under notification 17/2013 was conducted on 20.07.2014. No TNPSC-hosted official English question-paper PDF for that preliminary examination could be located in the official question-paper archive or TNPSC document search. The import is therefore stopped before extraction, normalization, validation, subject classification, answer-key integration, or repository import.",
+  "official_sources_checked": [
+    {
+      "url": "https://tnpsc.gov.in/english/Examdashboard.aspx",
+      "purpose": "Verified notification 17/2013 and the 20.07.2014 preliminary examination date."
+    },
+    {
+      "url": "https://www.tnpsc.gov.in/english/answerkeys.aspx",
+      "purpose": "Verified the official answer-key register entry for notification 17/2013; no question-paper PDF was provided by this register."
+    },
+    {
+      "url": "https://www.tnpsc.gov.in/English/previous-questions.html",
+      "purpose": "Checked TNPSC's official previous-question-paper archive; no 2014 Group-I preliminary English paper was located."
+    }
+  ],
+  "third_party_sources_used": false,
+  "import_status": "stopped_before_import",
+  "question_count_imported": 0,
+  "validation_result": "not_applicable",
+  "subject_classification_result": "not_applicable",
+  "answer_key_result": "not_applicable",
+  "repository_status": "not_created",
+  "recommendation": "Obtain a TNPSC-hosted official 20.07.2014 Group-I Preliminary question-paper PDF, then rerun the existing import pipeline. Do not use third-party transcriptions."
+}

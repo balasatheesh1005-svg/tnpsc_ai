@@ -1,0 +1,46 @@
+{
+  "input_pdf": ".tmp\\community_2014\\studyiq_2014.pdf",
+  "status": "blocked",
+  "questions": [],
+  "extracted_blocks": 0,
+  "parsed_questions": 0,
+  "validation": {
+    "input_path": ".tmp\\pipeline_v2_smoke\\normalized_questions.json",
+    "output_path": ".tmp\\pipeline_v2_smoke\\validated_questions.json",
+    "report_path": ".tmp\\pipeline_v2_smoke\\validation_report.json",
+    "valid_count": 0,
+    "invalid_count": 0,
+    "duplicate_ids": [],
+    "errors": []
+  },
+  "duplicate": {
+    "duplicate_count": 0,
+    "duplicates": []
+  },
+  "answer_key": {
+    "answer_key_found": false,
+    "matched_count": 0,
+    "missing_ids": []
+  },
+  "repository": {
+    "output_file": "C:\\Users\\Home\\Desktop\\tnpsc_ai\\data\\pyq\\group1\\group1_2014_import_pipeline_v2.json",
+    "written_count": 0,
+    "status": "not_written"
+  },
+  "warnings": [
+    "No embedded text found; OCR input required.",
+    "OCR cleanup cannot create text; provide a text PDF or OCR output.",
+    "No numbered questions detected."
+  ],
+  "rejected": [],
+  "reports": {
+    "import_summary.json": ".tmp\\pipeline_v2_smoke\\import_summary.json",
+    "validation_report.json": ".tmp\\pipeline_v2_smoke\\validation_report.json",
+    "duplicate_report.json": ".tmp\\pipeline_v2_smoke\\duplicate_report.json",
+    "subject_report.json": ".tmp\\pipeline_v2_smoke\\subject_report.json",
+    "topic_report.json": ".tmp\\pipeline_v2_smoke\\topic_report.json",
+    "difficulty_report.json": ".tmp\\pipeline_v2_smoke\\difficulty_report.json",
+    "answerkey_report.json": ".tmp\\pipeline_v2_smoke\\answerkey_report.json",
+    "repository_report.json": ".tmp\\pipeline_v2_smoke\\repository_report.json"
+  }
+}

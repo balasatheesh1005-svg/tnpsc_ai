@@ -1,0 +1,24 @@
+{
+  "policy_result": "not_satisfied",
+  "required_independent_trusted_sources": 2,
+  "sources_evaluated": [
+    {
+      "name": "StudyIQ",
+      "url": "https://www.studyiq.com/articles/wp-content/uploads/2025/04/04172501/TNPSC_Group1_2014_GeneralStudies.pdf",
+      "downloaded": true,
+      "extractable_question_text": false,
+      "result": "not_usable_for_question_by_question_comparison"
+    },
+    {
+      "name": "GovtJobsNet",
+      "url": "https://cdn.govtjobsnet.com/previous-papers/tnpsc-group-1-prelims-2014-question-paper-with-answers.pdf",
+      "downloaded": true,
+      "extractable_question_text": false,
+      "result": "not_usable_for_question_by_question_comparison"
+    }
+  ],
+  "question_numbering_compared": false,
+  "options_compared": false,
+  "official_final_answer_key_compared": false,
+  "reason": "The StudyIQ PDF is image-only for the existing extractor. The GovtJobsNet PDF exposes only repeated branding text to the extractor. Therefore the complete questions and options cannot be independently compared, and neither source can establish the required two-source community verification."
+}
