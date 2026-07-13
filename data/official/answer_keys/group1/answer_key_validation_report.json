@@ -1,0 +1,40 @@
+{
+  "exam": "Group 1",
+  "year": 2011,
+  "paper_series": "D",
+  "official_source": {
+    "publisher": "Tamil Nadu Public Service Commission",
+    "source_url": "https://tnpsc.gov.in/static_pdf/anskeys/05_06_2011_g1_gk.pdf",
+    "source_description": "Final answer key listed by TNPSC for Posts included in Group-I Services (Preliminary Examination), held 05.06.2011."
+  },
+  "expected_question_ids": 50,
+  "single_option_answers": 47,
+  "missing_answers": [
+    "PYQ_G1_2011_004",
+    "PYQ_G1_2011_015",
+    "PYQ_G1_2011_017"
+  ],
+  "duplicate_ids": [],
+  "invalid_option_answers": [],
+  "official_multi_option_exceptions": [
+    {
+      "question_id": "PYQ_G1_2011_004",
+      "official_key_notation": "ABCD",
+      "reason": "The TNPSC D-Series final key accepts all four options."
+    },
+    {
+      "question_id": "PYQ_G1_2011_015",
+      "official_key_notation": "AB",
+      "reason": "The TNPSC D-Series final key accepts two options."
+    },
+    {
+      "question_id": "PYQ_G1_2011_017",
+      "official_key_notation": "ABCD",
+      "reason": "The TNPSC D-Series final key accepts all four options."
+    }
+  ],
+  "validation_result": "blocked",
+  "verification_result": "not_run",
+  "integration_status": "not_created",
+  "blocker": "The official key does not provide exactly one A/B/C/D answer for all 50 imported questions. Creating the requested one-answer dataset would require fabricating answers for the listed multi-option exceptions."
+}
