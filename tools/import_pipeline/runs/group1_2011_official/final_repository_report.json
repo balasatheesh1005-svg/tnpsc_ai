@@ -1,0 +1,87 @@
+{
+  "scope": "TNPSC Group 1 Preliminary 2011 official dataset only",
+  "official_dataset": "data\\pyq\\group1\\group1_2011_official.json",
+  "official_record_count": 50,
+  "sequential_ids": true,
+  "duplicate_ids": [],
+  "four_option_errors": [],
+  "missing_required_metadata": [],
+  "dashboard_smoke_test": {
+    "result": "pass",
+    "method": "streamlit headless health endpoint",
+    "endpoint": "http://localhost:8511/_stcore/health",
+    "response": "HTTP 200 ok"
+  },
+  "search": {
+    "keyword": "Remote Sensing",
+    "match_count": 2,
+    "official_match_present": true,
+    "result": "pass"
+  },
+  "filters": {
+    "criteria": {
+      "exam": "Group 1",
+      "year": 2011,
+      "subject": "General Knowledge"
+    },
+    "official_dataset_match_count": 50,
+    "runtime_repository_match_count": 51,
+    "expected_official_count": 50,
+    "result": "pass_with_legacy_count_contamination"
+  },
+  "navigation": {
+    "first_index": 0,
+    "first_id": "PYQ_G1_2011_001",
+    "last_index": 49,
+    "last_id": "PYQ_G1_2011_050",
+    "previous_at_first": 0,
+    "next_at_last": 49,
+    "has_previous_at_first": false,
+    "has_next_at_last": false,
+    "result": "pass"
+  },
+  "repository_statistics": {
+    "official_file": {
+      "total_questions": 50,
+      "by_exam": {
+        "Group 1": 50
+      },
+      "by_year": {
+        "2011": 50
+      },
+      "by_subject": {
+        "General Knowledge": 50
+      }
+    },
+    "current_group1_repository": {
+      "total_questions": 62,
+      "by_exam": {
+        "Group 1": 62
+      },
+      "by_year": {
+        "2011": 62
+      },
+      "by_subject": {
+        "General Knowledge": 51,
+        "History": 2,
+        "Geography": 1,
+        "Current Affairs": 2,
+        "Polity": 3,
+        "Aptitude": 1,
+        "Economy": 2
+      },
+      "by_difficulty": {
+        "unknown": 12
+      },
+      "invalid_questions": 62
+    },
+    "runtime_pyq_total": 62,
+    "caveat": "The generic repository invalid_questions metric marks blank correct_answer values invalid, although the import contract intentionally leaves unverified answers blank."
+  },
+  "legacy_seed": {
+    "path": "data/pyq/group1/group1_2011_seed.json",
+    "record_count": 12,
+    "recommendation": "Archive or delete after confirming no consumer relies on its deprecated non-padded IDs; it duplicates the first 12 official questions and inflates combined Group 1/2011 counts."
+  },
+  "overall_result": "pass_with_legacy_cleanup_recommendation_and_statistics_caveat"
+}

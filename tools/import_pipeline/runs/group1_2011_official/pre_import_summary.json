@@ -1,0 +1,30 @@
+{
+  "normalize": {
+    "input_path": "tools\\import_pipeline\\runs\\group1_2011_official\\raw_questions.json",
+    "output_path": "tools\\import_pipeline\\runs\\group1_2011_official\\normalized_questions.json",
+    "question_count": 50,
+    "errors": []
+  },
+  "validate": {
+    "input_path": "tools\\import_pipeline\\runs\\group1_2011_official\\normalized_questions.json",
+    "output_path": "tools\\import_pipeline\\runs\\group1_2011_official\\validated_questions.json",
+    "report_path": "tools\\import_pipeline\\runs\\group1_2011_official\\validation_report.json",
+    "valid_count": 50,
+    "invalid_count": 0,
+    "duplicate_ids": [],
+    "errors": []
+  },
+  "answer_key": {
+    "input_path": "tools\\import_pipeline\\runs\\group1_2011_official\\validated_questions.json",
+    "output_path": "tools\\import_pipeline\\runs\\group1_2011_official\\verified_questions.json",
+    "linked_count": 0,
+    "unverified_count": 50,
+    "errors": []
+  },
+  "ai_enrichment": {
+    "input_path": "tools\\import_pipeline\\runs\\group1_2011_official\\verified_questions.json",
+    "output_path": "tools\\import_pipeline\\runs\\group1_2011_official\\enriched_questions.json",
+    "question_count": 50,
+    "errors": []
+  }
+}

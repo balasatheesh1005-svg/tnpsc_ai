@@ -1,0 +1,55 @@
+{
+  "input_pdf": "official_group1_2011.pdf",
+  "work_dir": "tools\\import_pipeline\\runs\\group1_2011_official",
+  "stages": {
+    "extract": {
+      "input_pdf": "official_group1_2011.pdf",
+      "output_path": "tools\\import_pipeline\\runs\\group1_2011_official\\raw_questions.json",
+      "question_count": 0,
+      "warnings": [
+        "pypdf/PyPDF2 is not available",
+        "PyMuPDF is not available",
+        "No extractable text found. Scanned PDFs require OCR before normalization."
+      ],
+      "errors": []
+    },
+    "normalize": {
+      "input_path": "tools\\import_pipeline\\runs\\group1_2011_official\\raw_questions.json",
+      "output_path": "tools\\import_pipeline\\runs\\group1_2011_official\\normalized_questions.json",
+      "question_count": 0,
+      "errors": []
+    },
+    "validate": {
+      "input_path": "tools\\import_pipeline\\runs\\group1_2011_official\\normalized_questions.json",
+      "output_path": "tools\\import_pipeline\\runs\\group1_2011_official\\validated_questions.json",
+      "report_path": "tools\\import_pipeline\\runs\\group1_2011_official\\validation_report.json",
+      "valid_count": 0,
+      "invalid_count": 0,
+      "duplicate_ids": [],
+      "errors": []
+    },
+    "answer_key": {
+      "input_path": "tools\\import_pipeline\\runs\\group1_2011_official\\validated_questions.json",
+      "output_path": "tools\\import_pipeline\\runs\\group1_2011_official\\verified_questions.json",
+      "linked_count": 0,
+      "unverified_count": 0,
+      "errors": []
+    },
+    "ai_enrichment": {
+      "input_path": "tools\\import_pipeline\\runs\\group1_2011_official\\verified_questions.json",
+      "output_path": "tools\\import_pipeline\\runs\\group1_2011_official\\enriched_questions.json",
+      "question_count": 0,
+      "errors": []
+    },
+    "repository_import": {
+      "input_path": "tools\\import_pipeline\\runs\\group1_2011_official\\enriched_questions.json",
+      "repository_root": "data\\pyq",
+      "output_file": "data\\pyq\\imported\\imported_unknown_import_pipeline.json",
+      "imported_count": 0,
+      "skipped_count": 0,
+      "duplicate_count": 0,
+      "errors": []
+    }
+  },
+  "errors": []
+}
