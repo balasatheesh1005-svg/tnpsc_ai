@@ -1,0 +1,751 @@
+{
+  "input_pdf": "C:\\Users\\Home\\Desktop\\new s\\TNPSC_Group1_2014_GeneralStudies.pdf",
+  "status": "blocked",
+  "questions": [],
+  "extracted_blocks": 180,
+  "parsed_questions": 5,
+  "validation": {
+    "input_path": ".tmp\\group1_2014_adda247_v2\\normalized_questions.json",
+    "output_path": ".tmp\\group1_2014_adda247_v2\\validated_questions.json",
+    "report_path": ".tmp\\group1_2014_adda247_v2\\validation_report.json",
+    "valid_count": 5,
+    "invalid_count": 0,
+    "duplicate_ids": [],
+    "errors": []
+  },
+  "duplicate": {
+    "duplicate_count": 0,
+    "duplicates": []
+  },
+  "answer_key": {
+    "answer_key_found": false,
+    "matched_count": 0,
+    "missing_ids": [
+      "PYQ_G1_2014_029",
+      "PYQ_G1_2014_114",
+      "PYQ_G1_2014_129",
+      "PYQ_G1_2014_166",
+      "PYQ_G1_2014_170"
+    ]
+  },
+  "repository": {
+    "output_file": "data\\pyq\\group1\\group1_2014_verified.json",
+    "written_count": 0,
+    "status": "not_written"
+  },
+  "warnings": [
+    "No embedded text found; OCR input required."
+  ],
+  "rejected": [
+    {
+      "question_number": 1,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 2,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 4,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 6,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 7,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 9,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 10,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 12,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 1,
+      "reason": "options are incomplete or out of order"
+    },
+    {
+      "question_number": 3,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 4,
+      "reason": "options are incomplete or out of order"
+    },
+    {
+      "question_number": 45,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 2,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 3,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 3,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 7,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 8,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 9,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 10,
+      "reason": "options are incomplete or out of order"
+    },
+    {
+      "question_number": 11,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 138,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 14,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 20,
+      "reason": "options are incomplete or out of order"
+    },
+    {
+      "question_number": 22,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 23,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 24,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 25,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 27,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 28,
+      "reason": "options are incomplete or out of order"
+    },
+    {
+      "question_number": 1,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 2,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 3,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 3,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 31,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 32,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 33,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 1,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 7,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 34,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 2,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 39,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 40,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 14,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 41,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 42,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 43,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 44,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 45,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 7,
+      "reason": "options are incomplete or out of order"
+    },
+    {
+      "question_number": 48,
+      "reason": "options are incomplete or out of order"
+    },
+    {
+      "question_number": 50,
+      "reason": "options are incomplete or out of order"
+    },
+    {
+      "question_number": 52,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 53,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 56,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 59,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 62,
+      "reason": "options are incomplete or out of order"
+    },
+    {
+      "question_number": 63,
+      "reason": "options are incomplete or out of order"
+    },
+    {
+      "question_number": 65,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 66,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 67,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 68,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 69,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 70,
+      "reason": "options are incomplete or out of order"
+    },
+    {
+      "question_number": 73,
+      "reason": "options are incomplete or out of order"
+    },
+    {
+      "question_number": 75,
+      "reason": "options are incomplete or out of order"
+    },
+    {
+      "question_number": 77,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 78,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 79,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 80,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 81,
+      "reason": "options are incomplete or out of order"
+    },
+    {
+      "question_number": 82,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 85,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 86,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 87,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 88,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 6,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 89,
+      "reason": "options are incomplete or out of order"
+    },
+    {
+      "question_number": 1,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 3,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 3,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 1,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 93,
+      "reason": "options are incomplete or out of order"
+    },
+    {
+      "question_number": 95,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 1,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 2,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 3,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 2,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 8,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 96,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 97,
+      "reason": "options are incomplete or out of order"
+    },
+    {
+      "question_number": 98,
+      "reason": "options are incomplete or out of order"
+    },
+    {
+      "question_number": 7,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 100,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 2,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 1,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 101,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 102,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 103,
+      "reason": "options are incomplete or out of order"
+    },
+    {
+      "question_number": 1,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 106,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 107,
+      "reason": "options are incomplete or out of order"
+    },
+    {
+      "question_number": 109,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 110,
+      "reason": "options are incomplete or out of order"
+    },
+    {
+      "question_number": 111,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 112,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 4,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 115,
+      "reason": "options are incomplete or out of order"
+    },
+    {
+      "question_number": 117,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 118,
+      "reason": "options are incomplete or out of order"
+    },
+    {
+      "question_number": 119,
+      "reason": "options are incomplete or out of order"
+    },
+    {
+      "question_number": 122,
+      "reason": "options are incomplete or out of order"
+    },
+    {
+      "question_number": 124,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 125,
+      "reason": "options are incomplete or out of order"
+    },
+    {
+      "question_number": 126,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 127,
+      "reason": "options are incomplete or out of order"
+    },
+    {
+      "question_number": 128,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 130,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 131,
+      "reason": "options are incomplete or out of order"
+    },
+    {
+      "question_number": 132,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 133,
+      "reason": "options are incomplete or out of order"
+    },
+    {
+      "question_number": 137,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 138,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 139,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 140,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 141,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 143,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 144,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 145,
+      "reason": "options are incomplete or out of order"
+    },
+    {
+      "question_number": 146,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 149,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 155,
+      "reason": "options are incomplete or out of order"
+    },
+    {
+      "question_number": 158,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 159,
+      "reason": "options are incomplete or out of order"
+    },
+    {
+      "question_number": 161,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 1,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 162,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 164,
+      "reason": "options are incomplete or out of order"
+    },
+    {
+      "question_number": 167,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 168,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 169,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 171,
+      "reason": "options are incomplete or out of order"
+    },
+    {
+      "question_number": 172,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 173,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 174,
+      "reason": "options are incomplete or out of order"
+    },
+    {
+      "question_number": 175,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 176,
+      "reason": "options are incomplete or out of order"
+    },
+    {
+      "question_number": 180,
+      "reason": "options are incomplete or out of order"
+    },
+    {
+      "question_number": 181,
+      "reason": "options are incomplete or out of order"
+    },
+    {
+      "question_number": 183,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 184,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 185,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 186,
+      "reason": "options are incomplete or out of order"
+    },
+    {
+      "question_number": 2,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 1,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 189,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 190,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 2,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 1,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 191,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 2,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 192,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 193,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 194,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 195,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 2,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 1,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 196,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 3,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 4,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 198,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 3,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 2,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 3,
+      "reason": "four A-D options not detected"
+    },
+    {
+      "question_number": 199,
+      "reason": "options are incomplete or out of order"
+    },
+    {
+      "question_number": 1,
+      "reason": "four A-D options not detected"
+    }
+  ],
+  "reports": {
+    "import_summary.json": ".tmp\\group1_2014_adda247_v2\\import_summary.json",
+    "validation_report.json": ".tmp\\group1_2014_adda247_v2\\validation_report.json",
+    "duplicate_report.json": ".tmp\\group1_2014_adda247_v2\\duplicate_report.json",
+    "subject_report.json": ".tmp\\group1_2014_adda247_v2\\subject_report.json",
+    "topic_report.json": ".tmp\\group1_2014_adda247_v2\\topic_report.json",
+    "difficulty_report.json": ".tmp\\group1_2014_adda247_v2\\difficulty_report.json",
+    "answerkey_report.json": ".tmp\\group1_2014_adda247_v2\\answerkey_report.json",
+    "repository_report.json": ".tmp\\group1_2014_adda247_v2\\repository_report.json"
+  }
+}

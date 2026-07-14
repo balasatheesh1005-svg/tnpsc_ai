@@ -22,7 +22,7 @@ def run(pdf, exam="Group 1", year=None, work_dir=None, output=None):
     stamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     work = Path(work_dir or ROOT / "tools" / "import_pipeline_v2" / "runs" / stamp)
     source = pdf_reader.read_pdf(pdf)
-    cleaned = ocr_engine.cleanup_pages(source["pages"])
+    cleaned = ocr_engine.cleanup_pages(source["pages"], pdf)
     split = question_splitter.split_questions(cleaned["pages"])
     parsed = option_parser.parse_options(split["question_blocks"])
     normalized = [_normalize(row, exam, year, pdf) for row in parsed["questions"]]
