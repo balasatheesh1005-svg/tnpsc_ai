@@ -13,6 +13,32 @@ from typing import Any, Dict, List, Optional
 DEFAULT_ANSWER_KEY_ROOT = Path("data/official/answer_keys")
 
 
+def _load_answers_from_repository(exam, year) -> Optional[Dict[str, List[str]]]:
+    try:
+        from core.question_engine.repository import get_questions
+        filters = {}
+        if exam:
+            filters["exam"] = exam
+        if year:
+            filters["year"] = year
+        
+        questions = get_questions(filters=filters)
+        if not questions:
+            return None
+            
+        answers = {}
+        for q in questions:
+            q_id = _normalize_question_id(q.get("id"))
+            correct = q.get("correct_answers") or q.get("correct_answer") or q.get("answer") or q.get("correct")
+            if q_id and correct:
+                normalized_options = _normalize_options(correct)
+                if normalized_options:
+                    answers[q_id] = normalized_options
+        return answers if answers else None
+    except Exception:
+        return None
+
+
 def load_answer_key(exam, year):
     """Load an official answer key map, or return None safely.
 
@@ -20,11 +46,12 @@ def load_answer_key(exam, year):
     """
     try:
         key_path = _answer_key_path(exam, year)
-        if not key_path or not key_path.exists() or not key_path.is_file():
-            return None
+        if key_path and key_path.exists() and key_path.is_file():
+            answers = _read_answer_key_file(str(key_path))
+            if answers:
+                return answers
 
-        answers = _read_answer_key_file(str(key_path))
-        return answers if answers else None
+        return _load_answers_from_repository(exam, year)
     except Exception:
         return None
 
@@ -45,6 +72,13 @@ def get_correct_answer(question_id):
             answer = answers.get(target)
             if answer:
                 return answer
+
+        from core.question_engine.repository import get_question_by_id
+        question = get_question_by_id(target)
+        if question:
+            correct = question.get("correct_answers") or question.get("correct_answer") or question.get("answer") or question.get("correct")
+            if correct:
+                return _normalize_options(correct)
     except Exception:
         return None
     return None
@@ -66,7 +100,10 @@ def answer_key_exists(exam, year):
     """Return whether an official answer key file exists for exam/year."""
     try:
         key_path = _answer_key_path(exam, year)
-        return bool(key_path and key_path.exists() and key_path.is_file())
+        if key_path and key_path.exists() and key_path.is_file():
+            return True
+        answers = _load_answers_from_repository(exam, year)
+        return bool(answers)
     except Exception:
         return False
 

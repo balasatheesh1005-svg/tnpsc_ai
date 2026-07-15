@@ -32,7 +32,12 @@ class Question:
             question_en=str(row.get("question_en") or row.get("question") or ""),
             question_ta=str(row.get("question_ta") or ""),
             options=dict(row.get("options") or {}),
-            correct_answer=str(row.get("correct_answer") or row.get("answer") or ""),
+            correct_answer=str(
+                row.get("correct_answer")
+                or row.get("answer")
+                or (row.get("correct_answers")[0] if isinstance(row.get("correct_answers"), (list, tuple, set)) and row.get("correct_answers") else "")
+                or ""
+            ),
             exam=str(row.get("exam") or ""),
             year=_safe_int(row.get("year")),
             subject=str(row.get("subject") or ""),

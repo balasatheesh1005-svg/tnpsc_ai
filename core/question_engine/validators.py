@@ -14,6 +14,11 @@ def validate_question_schema(question, required_fields=None):
         return ValidationResult(False, ["invalid schema: question must be a dictionary"])
 
     for field in required:
+        if field == "correct_answer" and "correct_answers" in row:
+            val = row.get("correct_answers")
+            if val in (None, "", [], {}):
+                errors.append("missing required field: correct_answers")
+            continue
         if row.get(field) in (None, "", [], {}):
             errors.append(f"missing required field: {field}")
 
@@ -31,9 +36,19 @@ def validate_question_schema(question, required_fields=None):
             elif options.get(key) in (None, ""):
                 errors.append(f"empty option: {key}")
 
-    correct_answer = str(row.get("correct_answer") or "")
-    if correct_answer and correct_answer not in options:
-        errors.append("correct answer is not present in options")
+    correct_answer = row.get("correct_answer")
+    correct_answers = row.get("correct_answers")
+    if correct_answers is not None:
+        values = correct_answers if isinstance(correct_answers, (list, tuple, set)) else [correct_answers]
+    elif correct_answer is not None:
+        values = [correct_answer]
+    else:
+        values = []
+
+    for val in values:
+        option_key = str(val or "").strip().upper()
+        if option_key and option_key not in options:
+            errors.append(f"correct answer '{option_key}' is not present in options")
 
     explanation = row.get("explanation")
     if explanation is not None and not isinstance(explanation, dict):
