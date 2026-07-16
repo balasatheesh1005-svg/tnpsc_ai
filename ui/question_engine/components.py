@@ -148,6 +148,24 @@ def render_explanation(question, prefix, actions=None):
                     if callback:
                         callback(question)
 
+        # Clear old error if question ID has changed
+        last_q_key = f"{prefix}_last_q_id"
+        current_q_id = None
+        if question:
+            if hasattr(question, "get"):
+                current_q_id = question.get("id")
+            else:
+                current_q_id = getattr(question, "id", None)
+        
+        if st.session_state.get(last_q_key) != current_q_id:
+            st.session_state[last_q_key] = current_q_id
+            st.session_state.pop(f"{prefix}_notes_error", None)
+
+        # Render notes warning message gracefully
+        error_key = f"{prefix}_notes_error"
+        if st.session_state.get(error_key):
+            st.warning(st.session_state[error_key])
+
 
 def render_navigation(prefix, total_questions):
     previous_col, submit_col, next_col = st.columns(3, gap="small")

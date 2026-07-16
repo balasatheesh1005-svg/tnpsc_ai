@@ -27,6 +27,19 @@ class Question:
     @classmethod
     def from_dict(cls, data):
         row = dict(data or {})
+        
+        # Safely extract related_note / related_notes
+        related_note_val = ""
+        raw_val = row.get("related_note")
+        if raw_val is None or raw_val == "":
+            raw_val = row.get("related_notes")
+        
+        if isinstance(raw_val, list):
+            valid_items = [item for item in raw_val if isinstance(item, str) and item.strip()]
+            related_note_val = valid_items[0] if valid_items else ""
+        elif isinstance(raw_val, str):
+            related_note_val = raw_val.strip()
+            
         return cls(
             id=str(row.get("id", "")),
             question_en=str(row.get("question_en") or row.get("question") or ""),
@@ -45,7 +58,7 @@ class Question:
             subtopic=str(row.get("subtopic") or ""),
             difficulty=str(row.get("difficulty") or ""),
             explanation=dict(row.get("explanation") or {}),
-            related_note=str(row.get("related_note") or ""),
+            related_note=related_note_val,
             tags=list(row.get("tags") or []),
             repeat_years=list(row.get("repeat_years") or []),
             ai_trick=str(row.get("ai_trick") or ""),
@@ -71,6 +84,7 @@ class Question:
                 "correct_answer": self.correct_answer,
                 "explanation": dict(self.explanation),
                 "related_note": self.related_note,
+                "related_notes": self.related_note,
                 "tags": list(self.tags),
                 "repeat_years": list(self.repeat_years),
                 "ai_trick": self.ai_trick,

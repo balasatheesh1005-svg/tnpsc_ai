@@ -37,7 +37,32 @@ def render_notes_page(section):
 
     subjects = sorted([p.name for p in notes_root.iterdir() if p.is_dir()])
 
-    subject = st.selectbox("Select Subject", subjects)
+    # Initialize selectbox values if redirecting from PYQ
+    if "pyq_related_note" in st.session_state:
+        note_path = st.session_state.pop("pyq_related_note", None)
+        if note_path and isinstance(note_path, str):
+            try:
+                path_obj = Path(note_path)
+                parts = path_obj.parts
+                if len(parts) >= 2:
+                    subject_dir = parts[-2]
+                    topic_file = parts[-1]
+                    topic_key = Path(topic_file).stem
+                    
+                    subject_match = next((s for s in subjects if s.lower() == subject_dir.lower()), None)
+                    if subject_match:
+                        st.session_state["notes_subject"] = subject_match
+                        topics_list = get_topics(subject_match)
+                        topic_match = next((t for t in topics_list if format_topic(t) == topic_key), None)
+                        if topic_match:
+                            st.session_state["notes_topic"] = topic_match
+            except Exception:
+                pass
+
+    if "notes_subject" not in st.session_state or st.session_state["notes_subject"] not in subjects:
+        st.session_state["notes_subject"] = subjects[0] if subjects else None
+
+    subject = st.selectbox("Select Subject", subjects, key="notes_subject")
 
     # ---------------- TOPICS ----------------
 
@@ -58,7 +83,10 @@ def render_notes_page(section):
 
     # ---------------- TOPIC ----------------
 
-    topic = st.selectbox("Select Topic", topics)
+    if "notes_topic" not in st.session_state or st.session_state["notes_topic"] not in topics:
+        st.session_state["notes_topic"] = topics[0] if topics else None
+
+    topic = st.selectbox("Select Topic", topics, key="notes_topic")
 
     # ---------------- FILE PATH ----------------
 
