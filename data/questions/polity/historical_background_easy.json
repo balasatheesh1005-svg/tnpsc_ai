@@ -1,355 +1,4702 @@
 [
   {
-    "question_en": "The Constitution of India was adopted on?",
-    "question_ta": "இந்திய அரசியலமைப்பு எப்போது ஏற்றுக்கொள்ளப்பட்டது?",
-    "options_en": ["26 Jan 1950","26 Nov 1949","15 Aug 1947","2 Oct 1950"],
-    "options_ta": ["26 ஜனவரி 1950","26 நவம்பர் 1949","15 ஆகஸ்ட் 1947","2 அக்டோபர் 1950"],
-    "answer": "b",
-    "explanation_en": "The Constitution was adopted on 26 November 1949.",
-    "explanation_ta": "இந்திய அரசியலமைப்பு 26 நவம்பர் 1949 அன்று ஏற்றுக்கொள்ளப்பட்டது.",
-    "subject": "POLITY",
-    "topic": "historical_background"
-  },
-  {
-    "question_en": "Regulating Act was passed in?",
-    "question_ta": "Regulating Act எந்த ஆண்டில் இயற்றப்பட்டது?",
-    "options_en": ["1765","1773","1784","1813"],
-    "options_ta": ["1765","1773","1784","1813"],
-    "answer": "b",
-    "explanation_en": "Regulating Act 1773 was first step to regulate company.",
-    "explanation_ta": "1773 Regulating Act கிழக்கு இந்தியா கம்பெனியை கட்டுப்படுத்த தொடக்கம்.",
-    "subject": "POLITY",
-    "topic": "historical_background"
-  },
-
-  {
-    "question_en": "Who was first Governor General of Bengal?",
-    "question_ta": "பெங்காலின் முதல் கவர்னர் ஜெனரல் யார்?",
-    "options_en": ["Clive","Warren Hastings","Cornwallis","Curzon"],
-    "options_ta": ["கிளைவ்","வாரன் ஹேஸ்டிங்ஸ்","கார்ன்வாலிஸ்","கர்சன்"],
-    "answer": "b",
-    "explanation_en": "Warren Hastings was first Governor-General.",
-    "explanation_ta": "வாரன் ஹேஸ்டிங்ஸ் முதல் கவர்னர் ஜெனரல்.",
-    "subject": "POLITY",
-    "topic": "historical_background"
-  },
-
-  {
-    "question_en": "Pitt’s India Act year?",
-    "question_ta": "Pitt’s India Act எந்த ஆண்டு?",
-    "options_en": ["1773","1784","1813","1853"],
-    "options_ta": ["1773","1784","1813","1853"],
-    "answer": "b",
-    "explanation_en": "1784 Act introduced dual system.",
-    "explanation_ta": "1784 சட்டம் இரட்டை நிர்வாகம் கொண்டு வந்தது.",
-    "subject": "POLITY",
-    "topic": "historical_background"
-  },
-
-  {
-    "question_en": "Charter Act 1813 ended?",
-    "question_ta": "Charter Act 1813 எதை முடித்தது?",
-    "options_en": ["Trade monopoly","Army","Judiciary","Tax"],
-    "options_ta": ["வர்த்தக ஒரே உரிமை","படை","நீதித்துறை","வரி"],
+    "id": "HB_E_001",
+    "subject": "Polity",
+    "topic": "Historical Background",
+    "difficulty": "Easy",
+    "question_type": "Direct",
+    "question": {
+      "en": "Who was the Portuguese explorer who discovered the sea route to India in 1498?",
+      "ta": "1498-இல் இந்தியாவிற்கான கடல்வழியைக் கண்டுபிடித்த போர்ச்சுகீசிய மாலுமி யார்?"
+    },
+    "options": [
+      {
+        "id": "A",
+        "en": "Vasco da Gama",
+        "ta": "வாஸ்கோ ட காமா"
+      },
+      {
+        "id": "B",
+        "en": "Christopher Columbus",
+        "ta": "கிறிஸ்டோபர் கொலம்பஸ்"
+      },
+      {
+        "id": "C",
+        "en": "Ferdinand Magellan",
+        "ta": "பெர்டினாண்ட் மெகல்லன்"
+      },
+      {
+        "id": "D",
+        "en": "Alfonso de Albuquerque",
+        "ta": "அல்போன்சோ டி அல்புகர்க்கி"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "Vasco da Gama discovered the sea route to India, landing at Calicut in 1498.",
+      "ta": "வாஸ்கோ ட காமா 1498-இல் கள்ளிக்கோட்டையில் தரை இறங்கி இந்தியாவிற்கான கடல்வழியைக் கண்டுபிடித்தார்."
+    },
+    "why_not_others": {
+      "A": {
+        "en": "Correct. Vasco da Gama discovered it in 1498.",
+        "ta": "சரி. வாஸ்கோ ட காமா 1498-இல் இதனைக் கண்டுபிடித்தார்."
+      },
+      "B": {
+        "en": "Incorrect. Columbus discovered America in 1492.",
+        "ta": "தவறு. கொலம்பஸ் 1492-இல் அமெரிக்காவைக் கண்டுபிடித்தார்."
+      },
+      "C": {
+        "en": "Incorrect. Magellan circumnavigated the globe.",
+        "ta": "தவறு. மெகல்லன் உலகை வலம் வந்தார்."
+      },
+      "D": {
+        "en": "Incorrect. Albuquerque consolidated Portuguese power.",
+        "ta": "தவறு. அல்புகர்க்கி போர்ச்சுகீசிய ஆதிக்கத்தை பலப்படுத்தினார்."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "Remember the landing year 1498 and Calicut port.",
+      "ta": "அவர் தரை இறங்கிய ஆண்டு 1498 மற்றும் கள்ளிக்கோட்டைத் துறைமுகம் என்பதை நினைவில் கொள்க."
+    },
+    "revision_fact": {
+      "en": "Portuguese were the first Europeans to arrive in India by sea.",
+      "ta": "போர்ச்சுகீசியர்கள் கடல் வழியாக இந்தியாவிற்கு வந்த முதல் ஐரோப்பியர்கள் ஆவர்."
+    },
+    "source_reference": [
+      "M. Laxmikanth - Indian Polity",
+      "NCERT",
+      "Samacheer Kalvi"
+    ],
+    "bloom_level": "Remember",
+    "estimated_time_sec": 40,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Historical Background",
+      "Arrival of Europeans"
+    ],
+    "question_en": "Who was the Portuguese explorer who discovered the sea route to India in 1498?",
+    "question_ta": "1498-இல் இந்தியாவிற்கான கடல்வழியைக் கண்டுபிடித்த போர்ச்சுகீசிய மாலுமி யார்?",
+    "options_en": [
+      "Vasco da Gama",
+      "Christopher Columbus",
+      "Ferdinand Magellan",
+      "Alfonso de Albuquerque"
+    ],
+    "options_ta": [
+      "வாஸ்கோ ட காமா",
+      "கிறிஸ்டோபர் கொலம்பஸ்",
+      "பெர்டினாண்ட் மெகல்லன்",
+      "அல்போன்சோ டி அல்புகர்க்கி"
+    ],
     "answer": "a",
-    "explanation_en": "Ended trade monopoly of company.",
-    "explanation_ta": "கம்பெனியின் வர்த்தக ஒரே உரிமை முடிவுக்கு வந்தது.",
-    "subject": "POLITY",
-    "topic": "historical_background"
+    "explanation_en": "Vasco da Gama discovered the sea route to India, landing at Calicut in 1498.",
+    "explanation_ta": "வாஸ்கோ ட காமா 1498-இல் கள்ளிக்கோட்டையில் தரை இறங்கி இந்தியாவிற்கான கடல்வழியைக் கண்டுபிடித்தார்."
   },
-
   {
-    "question_en": "Charter Act 1833 made?",
-    "question_ta": "1833 சட்டம் என்ன மாற்றம் செய்தது?",
-    "options_en": ["GG India","President","King","None"],
-    "options_ta": ["இந்திய கவர்னர் ஜெனரல்","தலைவர்","மன்னர்","எதுவுமில்லை"],
+    "id": "HB_E_002",
+    "subject": "Polity",
+    "topic": "Historical Background",
+    "difficulty": "Easy",
+    "question_type": "Direct",
+    "question": {
+      "en": "Which British monarch granted the Royal Charter to the East India Company on December 31, 1600?",
+      "ta": "டிசம்பர் 31, 1600 அன்று கிழக்கிந்தியக் கம்பெனிக்கு அரச சாசனத்தை வழங்கிய பிரிட்டிஷ் அரசி யார்?"
+    },
+    "options": [
+      {
+        "id": "A",
+        "en": "Queen Elizabeth I",
+        "ta": "முதலாம் எலிசபெத் அரசி"
+      },
+      {
+        "id": "B",
+        "en": "Queen Victoria",
+        "ta": "விக்டோரியா மகாராணி"
+      },
+      {
+        "id": "C",
+        "en": "Queen Mary II",
+        "ta": "இரண்டாம் மேரி அரசி"
+      },
+      {
+        "id": "D",
+        "en": "King George III",
+        "ta": "மூன்றாம் ஜார்ஜ் மன்னர்"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "Queen Elizabeth I granted the royal charter on December 31, 1600.",
+      "ta": "டிசம்பர் 31, 1600 அன்று முதலாம் எலிசபெத் அரசி கிழக்கத்திய நாடுகளில் வர்த்தகம் செய்ய கம்பெனிக்கு அரச சாசனத்தை வழங்கினார்."
+    },
+    "why_not_others": {
+      "A": {
+        "en": "Correct. Queen Elizabeth I granted the charter.",
+        "ta": "சரி. முதலாம் எலிசபெத் அரசி சாசனத்தை வழங்கினார்."
+      },
+      "B": {
+        "en": "Incorrect. Queen Victoria assumed rule in 1858.",
+        "ta": "தவறு. விக்டோரியா மகாராணி 1858-இல் ஆட்சியை ஏற்றுக்கொண்டார்."
+      },
+      "C": {
+        "en": "Incorrect. Queen Mary II ruled much later.",
+        "ta": "தவறு. இரண்டாம் மேரி அரசி பிற்காலத்தில் ஆட்சி புரிந்தார்."
+      },
+      "D": {
+        "en": "Incorrect. King George III ruled during the late 18th century.",
+        "ta": "தவறு. மூன்றாம் ஜார்ஜ் மன்னர் 18-ஆம் நூற்றாண்டின் பிற்பகுதியில் ஆட்சி புரிந்தார்."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "Initially, the trade monopoly was granted for 15 years.",
+      "ta": "தொடக்கத்தில் வர்த்தக ஏகபோகம் 15 ஆண்டுகளுக்கு மட்டுமே வழங்கப்பட்டது."
+    },
+    "revision_fact": {
+      "en": "EIC was established as a joint-stock trading company in London.",
+      "ta": "EIC லண்டனில் ஒரு கூட்டுப் பங்கு வர்த்தக நிறுவனமாகத் தொடங்கப்பட்டது."
+    },
+    "source_reference": [
+      "M. Laxmikanth - Indian Polity",
+      "NCERT",
+      "Samacheer Kalvi"
+    ],
+    "bloom_level": "Remember",
+    "estimated_time_sec": 40,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Historical Background",
+      "East India Company"
+    ],
+    "question_en": "Which British monarch granted the Royal Charter to the East India Company on December 31, 1600?",
+    "question_ta": "டிசம்பர் 31, 1600 அன்று கிழக்கிந்தியக் கம்பெனிக்கு அரச சாசனத்தை வழங்கிய பிரிட்டிஷ் அரசி யார்?",
+    "options_en": [
+      "Queen Elizabeth I",
+      "Queen Victoria",
+      "Queen Mary II",
+      "King George III"
+    ],
+    "options_ta": [
+      "முதலாம் எலிசபெத் அரசி",
+      "விக்டோரியா மகாராணி",
+      "இரண்டாம் மேரி அரசி",
+      "மூன்றாம் ஜார்ஜ் மன்னர்"
+    ],
     "answer": "a",
-    "explanation_en": "GG of Bengal became GG of India.",
-    "explanation_ta": "பெங்கால் கவர்னர் இந்திய கவர்னர் ஜெனரலானார்.",
-    "subject": "POLITY",
-    "topic": "historical_background"
+    "explanation_en": "Queen Elizabeth I granted the royal charter on December 31, 1600.",
+    "explanation_ta": "டிசம்பர் 31, 1600 அன்று முதலாம் எலிசபெத் அரசி கிழக்கத்திய நாடுகளில் வர்த்தகம் செய்ய கம்பெனிக்கு அரச சாசனத்தை வழங்கினார்."
   },
-
   {
-    "question_en": "Charter Act 1853 introduced?",
-    "question_ta": "1853 சட்டம் என்ன அறிமுகப்படுத்தியது?",
-    "options_en": ["ICS exam","Army","Tax","None"],
-    "options_ta": ["ICS தேர்வு","படை","வரி","எதுவுமில்லை"],
+    "id": "HB_E_003",
+    "subject": "Polity",
+    "topic": "Historical Background",
+    "difficulty": "Easy",
+    "question_type": "Direct",
+    "question": {
+      "en": "Where did the British East India Company establish their first temporary factory in India in 1611?",
+      "ta": "1611-இல் பிரிட்டிஷ் கிழக்கிந்தியக் கம்பெனி இந்தியாவில் தங்களது முதல் தற்காலிக வர்த்தக மையத்தை எங்கு அமைத்தது?"
+    },
+    "options": [
+      {
+        "id": "A",
+        "en": "Masulipatnam",
+        "ta": "மசூலிப்பட்டினம்"
+      },
+      {
+        "id": "B",
+        "en": "Surat",
+        "ta": "சூரத்"
+      },
+      {
+        "id": "C",
+        "en": "Calcutta",
+        "ta": "கல்கத்தா"
+      },
+      {
+        "id": "D",
+        "en": "Madras",
+        "ta": "மெட்ராஸ்"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "The EIC established their first temporary trading post at Masulipatnam in 1611.",
+      "ta": "1611-இல் மசூலிப்பட்டினத்தில் கம்பெனி தனது முதல் தற்காலிக வர்த்தக மையத்தை அமைத்தது."
+    },
+    "why_not_others": {
+      "A": {
+        "en": "Correct. Masulipatnam was the first temporary factory.",
+        "ta": "சரி. மசூலிப்பட்டினம் முதல் தற்காலிக மையம் ஆகும்."
+      },
+      "B": {
+        "en": "Incorrect. Surat was the site of the first permanent factory in 1613.",
+        "ta": "தவறு. சூரத் 1613-இல் அமைக்கப்பட்ட நிரந்தர மையமாகும்."
+      },
+      "C": {
+        "en": "Incorrect. Calcutta was established much later in the late 17th century.",
+        "ta": "தவறு. கல்கத்தா 17-ஆம் நூற்றாண்டின் இறுதியில் நிறுவப்பட்டது."
+      },
+      "D": {
+        "en": "Incorrect. Madras was established in 1639-40.",
+        "ta": "தவறு. மெட்ராஸ் 1639-40-இல் நிறுவப்பட்டது."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "Differentiate between Masulipatnam (temporary, 1611) and Surat (permanent, 1613).",
+      "ta": "மசூலிப்பட்டினம் (தற்காலிக, 1611) மற்றும் சூரத் (நிரந்தர, 1613) ஆகியவற்றை வேறுபடுத்திப் படியுங்கள்."
+    },
+    "revision_fact": {
+      "en": "Captain Hawkins visited Jahangir's court in 1608.",
+      "ta": "கேப்டன் ஹாக்கின்ஸ் 1608-இல் ஜஹாங்கீர் அவைக்குச் சென்றார்."
+    },
+    "source_reference": [
+      "M. Laxmikanth - Indian Polity",
+      "NCERT",
+      "Samacheer Kalvi"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 40,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Historical Background",
+      "Trading Factories"
+    ],
+    "question_en": "Where did the British East India Company establish their first temporary factory in India in 1611?",
+    "question_ta": "1611-இல் பிரிட்டிஷ் கிழக்கிந்தியக் கம்பெனி இந்தியாவில் தங்களது முதல் தற்காலிக வர்த்தக மையத்தை எங்கு அமைத்தது?",
+    "options_en": [
+      "Masulipatnam",
+      "Surat",
+      "Calcutta",
+      "Madras"
+    ],
+    "options_ta": [
+      "மசூலிப்பட்டினம்",
+      "சூரத்",
+      "கல்கத்தா",
+      "மெட்ராஸ்"
+    ],
     "answer": "a",
-    "explanation_en": "Introduced civil services exam.",
-    "explanation_ta": "பொது சேவை தேர்வு அறிமுகமானது.",
-    "subject": "POLITY",
-    "topic": "historical_background"
+    "explanation_en": "The EIC established their first temporary trading post at Masulipatnam in 1611.",
+    "explanation_ta": "1611-இல் மசூலிப்பட்டினத்தில் கம்பெனி தனது முதல் தற்காலிக வர்த்தக மையத்தை அமைத்தது."
   },
-
   {
-    "question_en": "1858 Act transferred power to?",
-    "question_ta": "1858 சட்டம் அதிகாரத்தை யாருக்கு மாற்றியது?",
-    "options_en": ["Parliament","Crown","Company","Governor"],
-    "options_ta": ["பாராளுமன்றம்","கிரௌன்","கம்பெனி","கவர்னர்"],
-    "answer": "b",
-    "explanation_en": "Power transferred to British Crown.",
-    "explanation_ta": "அதிகாரம் கிரௌனுக்கு மாற்றப்பட்டது.",
-    "subject": "POLITY",
-    "topic": "historical_background"
-  },
-
-  {
-    "question_en": "First Viceroy of India?",
-    "question_ta": "இந்தியாவின் முதல் வைச்ராய் யார்?",
-    "options_en": ["Canning","Curzon","Hastings","Clive"],
-    "options_ta": ["கேன்னிங்","கர்சன்","ஹேஸ்டிங்ஸ்","கிளைவ்"],
+    "id": "HB_E_004",
+    "subject": "Polity",
+    "topic": "Historical Background",
+    "difficulty": "Easy",
+    "question_type": "Direct",
+    "question": {
+      "en": "Where did the East India Company set up their first permanent factory in 1613 after obtaining permission from Emperor Jahangir?",
+      "ta": "ஜஹாங்கீர் மன்னரின் அனுமதி பெற்ற பிறகு, 1613-இல் கிழக்கிந்தியக் கம்பெனி தனது முதல் நிரந்தர வர்த்தக மையத்தை எங்கு அமைத்தது?"
+    },
+    "options": [
+      {
+        "id": "A",
+        "en": "Surat",
+        "ta": "சூரத்"
+      },
+      {
+        "id": "B",
+        "en": "Masulipatnam",
+        "ta": "மசூலிப்பட்டினம்"
+      },
+      {
+        "id": "C",
+        "en": "Bombay",
+        "ta": "பம்பாய்"
+      },
+      {
+        "id": "D",
+        "en": "Calcutta",
+        "ta": "கல்கத்தா"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "The first permanent factory of EIC was established in Surat in 1613.",
+      "ta": "1613-இல் கம்பெனியின் முதல் நிரந்தர வர்த்தக மையம் சூரத்தில் அமைக்கப்பட்டது."
+    },
+    "why_not_others": {
+      "A": {
+        "en": "Correct. Surat was the first permanent factory.",
+        "ta": "சரி. சூரத் முதல் நிரந்தர வர்த்தக மையம் ஆகும்."
+      },
+      "B": {
+        "en": "Incorrect. Masulipatnam was temporary.",
+        "ta": "தவறு. மசூலிப்பட்டினம் தற்காலிக வர்த்தக மையம்."
+      },
+      "C": {
+        "en": "Incorrect. Bombay was acquired later in 1668.",
+        "ta": "தவறு. பம்பாய் பின்னர் 1668-இல் பெறப்பட்டது."
+      },
+      "D": {
+        "en": "Incorrect. Calcutta was established in 1690.",
+        "ta": "தவறு. கல்கத்தா 1690-இல் நிறுவப்பட்டது."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "Surat was a crucial trade hub on the western coast of India.",
+      "ta": "சூரத் இந்தியாவின் மேற்கு கடற்கரையின் முக்கிய வர்த்தக மையமாக இருந்தது."
+    },
+    "revision_fact": {
+      "en": "Sir Thomas Roe visited Jahangir's court in 1615 as an ambassador.",
+      "ta": "சர் தாமஸ் ரோ 1615-இல் ஜஹாங்கீர் அவைக்குத் தூதராக வருகை தந்தார்."
+    },
+    "source_reference": [
+      "M. Laxmikanth - Indian Polity",
+      "NCERT",
+      "Samacheer Kalvi"
+    ],
+    "bloom_level": "Remember",
+    "estimated_time_sec": 40,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Historical Background",
+      "Trading Factories"
+    ],
+    "question_en": "Where did the East India Company set up their first permanent factory in 1613 after obtaining permission from Emperor Jahangir?",
+    "question_ta": "ஜஹாங்கீர் மன்னரின் அனுமதி பெற்ற பிறகு, 1613-இல் கிழக்கிந்தியக் கம்பெனி தனது முதல் நிரந்தர வர்த்தக மையத்தை எங்கு அமைத்தது?",
+    "options_en": [
+      "Surat",
+      "Masulipatnam",
+      "Bombay",
+      "Calcutta"
+    ],
+    "options_ta": [
+      "சூரத்",
+      "மசூலிப்பட்டினம்",
+      "பம்பாய்",
+      "கல்கத்தா"
+    ],
     "answer": "a",
-    "explanation_en": "Lord Canning was first Viceroy.",
-    "explanation_ta": "லார்டு கேன்னிங் முதல் வைச்ராய்.",
-    "subject": "POLITY",
-    "topic": "historical_background"
+    "explanation_en": "The first permanent factory of EIC was established in Surat in 1613.",
+    "explanation_ta": "1613-இல் கம்பெனியின் முதல் நிரந்தர வர்த்தக மையம் சூரத்தில் அமைக்கப்பட்டது."
   },
-
   {
-    "question_en": "1909 reforms known as?",
-    "question_ta": "1909 திருத்தங்கள் என்ன என்று அழைக்கப்படுகின்றன?",
-    "options_en": ["Morley-Minto","Montagu","Cripps","Simon"],
-    "options_ta": ["மார்லே-மின்டோ","மொன்டாக்யூ","கிரிப்ஸ்","சைமன்"],
+    "id": "HB_E_005",
+    "subject": "Polity",
+    "topic": "Historical Background",
+    "difficulty": "Easy",
+    "question_type": "Direct",
+    "question": {
+      "en": "Which ruler issued the Golden Firman to the British East India Company in 1632, allowing them free trade?",
+      "ta": "1632-இல் பிரிட்டிஷ் கிழக்கிந்தியக் கம்பெனிக்கு இலவச வர்த்தகத்தை அனுமதிக்கும் 'பொன்னான பட்டயத்தை' (Golden Firman) வழங்கிய ஆட்சியாளர் யார்?"
+    },
+    "options": [
+      {
+        "id": "A",
+        "en": "Sultan of Golconda",
+        "ta": "கோல்கொண்டா சுல்தான்"
+      },
+      {
+        "id": "B",
+        "en": "Nawab of Bengal",
+        "ta": "வங்காள நவாப்"
+      },
+      {
+        "id": "C",
+        "en": "Mughal Emperor Jahangir",
+        "ta": "முகலாய பேரரசர் ஜஹாங்கீர்"
+      },
+      {
+        "id": "D",
+        "en": "Nawab of Arcot",
+        "ta": "ஆற்காடு நவாப்"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "The Sultan of Golconda issued the Golden Firman in 1632, allowing free trade in his ports for a fixed duty.",
+      "ta": "1632-இல் கோல்கொண்டா சுல்தான் ஒரு குறிப்பிட்ட வரிக்கு பகரமாகத் தனது துறைமுகங்களில் இலவச வர்த்தகத்தை அனுமதிக்கும் பொன்னான பட்டயத்தை வழங்கினார்."
+    },
+    "why_not_others": {
+      "A": {
+        "en": "Correct. Sultan of Golconda issued it.",
+        "ta": "சரி. கோல்கொண்டா சுல்தான் இதனை வழங்கினார்."
+      },
+      "B": {
+        "en": "Incorrect. Nawab of Bengal was not involved in 1632.",
+        "ta": "தவறு. வங்காள நவாப் 1632-இல் இதில் தொடர்பு கொள்ளவில்லை."
+      },
+      "C": {
+        "en": "Incorrect. Jahangir issued permission earlier for Surat.",
+        "ta": "தவறு. ஜஹாங்கீர் முன்னரே சூரத்திற்கு அனுமதி வழங்கியிருந்தார்."
+      },
+      "D": {
+        "en": "Incorrect. Nawab of Arcot ruled the Carnatic region later.",
+        "ta": "தவறு. ஆற்காடு நவாப் பின்னர் ஆற்காடு பகுதியை ஆட்சி புரிந்தார்."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "The Golden Firman strengthened the British trade position in South India.",
+      "ta": "பொன்னான பட்டயம் தென்னிந்தியாவில் பிரிட்டிஷ் வர்த்தக நிலையை வலுப்படுத்தியது."
+    },
+    "revision_fact": {
+      "en": "The duty was fixed at 500 Pagodas per annum.",
+      "ta": "ஆண்டு வரி 500 பகோடாக்கள் என நிர்ணயிக்கப்பட்டது."
+    },
+    "source_reference": [
+      "M. Laxmikanth - Indian Polity",
+      "NCERT",
+      "Samacheer Kalvi"
+    ],
+    "bloom_level": "Remember",
+    "estimated_time_sec": 40,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Historical Background",
+      "Trading Factories"
+    ],
+    "question_en": "Which ruler issued the Golden Firman to the British East India Company in 1632, allowing them free trade?",
+    "question_ta": "1632-இல் பிரிட்டிஷ் கிழக்கிந்தியக் கம்பெனிக்கு இலவச வர்த்தகத்தை அனுமதிக்கும் 'பொன்னான பட்டயத்தை' (Golden Firman) வழங்கிய ஆட்சியாளர் யார்?",
+    "options_en": [
+      "Sultan of Golconda",
+      "Nawab of Bengal",
+      "Mughal Emperor Jahangir",
+      "Nawab of Arcot"
+    ],
+    "options_ta": [
+      "கோல்கொண்டா சுல்தான்",
+      "வங்காள நவாப்",
+      "முகலாய பேரரசர் ஜஹாங்கீர்",
+      "ஆற்காடு நவாப்"
+    ],
     "answer": "a",
-    "explanation_en": "Morley-Minto reforms 1909.",
-    "explanation_ta": "1909 மார்லே-மின்டோ திருத்தங்கள்.",
-    "subject": "POLITY",
-    "topic": "historical_background"
+    "explanation_en": "The Sultan of Golconda issued the Golden Firman in 1632, allowing free trade in his ports for a fixed duty.",
+    "explanation_ta": "1632-இல் கோல்கொண்டா சுல்தான் ஒரு குறிப்பிட்ட வரிக்கு பகரமாகத் தனது துறைமுகங்களில் இலவச வர்த்தகத்தை அனுமதிக்கும் பொன்னான பட்டயத்தை வழங்கினார்."
   },
-
   {
-    "question_en": "Separate electorate introduced in?",
-    "question_ta": "தனி வாக்காளர் முறை எப்போது?",
-    "options_en": ["1909","1919","1935","1858"],
-    "options_ta": ["1909","1919","1935","1858"],
+    "id": "HB_E_006",
+    "subject": "Polity",
+    "topic": "Historical Background",
+    "difficulty": "Easy",
+    "question_type": "Direct",
+    "question": {
+      "en": "Which fortified settlement was built by the British East India Company in Madras in 1639-40?",
+      "ta": "1639-40-இல் மெட்ராஸில் பிரிட்டிஷ் கிழக்கிந்தியக் கம்பெனியால் கட்டப்பட்ட கோட்டை எது?"
+    },
+    "options": [
+      {
+        "id": "A",
+        "en": "Fort St. George",
+        "ta": "புனித ஜார்ஜ் கோட்டை"
+      },
+      {
+        "id": "B",
+        "en": "Fort William",
+        "ta": "புனித வில்லியம் கோட்டை"
+      },
+      {
+        "id": "C",
+        "en": "Fort St. David",
+        "ta": "புனித டேவிட் கோட்டை"
+      },
+      {
+        "id": "D",
+        "en": "Fort Angelo",
+        "ta": "புனித ஏஞ்சலோ கோட்டை"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "Fort St. George was founded by Francis Day in Madras in 1639-40.",
+      "ta": "1639-40-இல் பிரான்சிஸ் டே என்பவரால் மெட்ராஸில் புனித ஜார்ஜ் கோட்டை கட்டப்பட்டது."
+    },
+    "why_not_others": {
+      "A": {
+        "en": "Correct. Fort St. George is in Madras.",
+        "ta": "சரி. புனித ஜார்ஜ் கோட்டை மெட்ராஸில் உள்ளது."
+      },
+      "B": {
+        "en": "Incorrect. Fort William is in Calcutta.",
+        "ta": "தவறு. புனித வில்லியம் கோட்டை கல்கத்தாவில் உள்ளது."
+      },
+      "C": {
+        "en": "Incorrect. Fort St. David is in Cuddalore.",
+        "ta": "தவறு. புனித டேவிட் கோட்டை கடலூரில் உள்ளது."
+      },
+      "D": {
+        "en": "Incorrect. Fort Angelo is in Kannur, Kerala.",
+        "ta": "தவறு. புனித ஏஞ்சலோ கோட்டை கேரளாவின் கண்ணூரில் உள்ளது."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "Fort St. George was the first territorial possession of EIC in India.",
+      "ta": "புனித ஜார்ஜ் கோட்டை இந்தியாவில் EIC-ன் முதல் பிராந்திய உடைமையாகும்."
+    },
+    "revision_fact": {
+      "en": "The land was obtained on lease from the Raja of Chandragiri.",
+      "ta": "சந்திரகிரி ராஜாவால் நிலம் குத்தகைக்கு வழங்கப்பட்டது."
+    },
+    "source_reference": [
+      "M. Laxmikanth - Indian Polity",
+      "NCERT",
+      "Samacheer Kalvi"
+    ],
+    "bloom_level": "Remember",
+    "estimated_time_sec": 40,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Historical Background",
+      "Three Presidencies"
+    ],
+    "question_en": "Which fortified settlement was built by the British East India Company in Madras in 1639-40?",
+    "question_ta": "1639-40-இல் மெட்ராஸில் பிரிட்டிஷ் கிழக்கிந்தியக் கம்பெனியால் கட்டப்பட்ட கோட்டை எது?",
+    "options_en": [
+      "Fort St. George",
+      "Fort William",
+      "Fort St. David",
+      "Fort Angelo"
+    ],
+    "options_ta": [
+      "புனித ஜார்ஜ் கோட்டை",
+      "புனித வில்லியம் கோட்டை",
+      "புனித டேவிட் கோட்டை",
+      "புனித ஏஞ்சலோ கோட்டை"
+    ],
     "answer": "a",
-    "explanation_en": "Introduced in 1909 reforms.",
-    "explanation_ta": "1909 சட்டத்தில் அறிமுகமானது.",
-    "subject": "POLITY",
-    "topic": "historical_background"
+    "explanation_en": "Fort St. George was founded by Francis Day in Madras in 1639-40.",
+    "explanation_ta": "1639-40-இல் பிரான்சிஸ் டே என்பவரால் மெட்ராஸில் புனித ஜார்ஜ் கோட்டை கட்டப்பட்டது."
   },
-
   {
-    "question_en": "1919 Act introduced?",
-    "question_ta": "1919 சட்டம் என்ன அறிமுகப்படுத்தியது?",
-    "options_en": ["Dyarchy","Federal","ICS","Army"],
-    "options_ta": ["இரட்டை ஆட்சி","கூட்டாட்சி","ICS","படை"],
+    "id": "HB_E_007",
+    "subject": "Polity",
+    "topic": "Historical Background",
+    "difficulty": "Easy",
+    "question_type": "Direct",
+    "question": {
+      "en": "Which British King transferred Bombay to the East India Company in 1668 for an annual rent of 10 pounds?",
+      "ta": "1668-இல் ஆண்டு வாடகையாக 10 பவுண்டுகளுக்கு பம்பாயை கிழக்கிந்தியக் கம்பெனிக்கு மாற்றிய பிரிட்டிஷ் மன்னர் யார்?"
+    },
+    "options": [
+      {
+        "id": "A",
+        "en": "King Charles II",
+        "ta": "இரண்டாம் சார்லஸ் மன்னர்"
+      },
+      {
+        "id": "B",
+        "en": "King James I",
+        "ta": "முதலாம் ஜேம்ஸ் மன்னர்"
+      },
+      {
+        "id": "C",
+        "en": "King George II",
+        "ta": "இரண்டாம் ஜார்ஜ் மன்னர்"
+      },
+      {
+        "id": "D",
+        "en": "King William III",
+        "ta": "மூன்றாம் வில்லியம் மன்னர்"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "King Charles II received Bombay as a dowry when he married Portuguese Princess Catherine of Braganza and leased it to EIC.",
+      "ta": "போர்ச்சுகீசிய இளவரசி கேத்தரினை மணந்தபோது வரதட்சணையாகப் பெற்ற பம்பாயை, இரண்டாம் சார்லஸ் மன்னர் EIC-க்கு குத்தகைக்கு வழங்கினார்."
+    },
+    "why_not_others": {
+      "A": {
+        "en": "Correct. King Charles II leased it.",
+        "ta": "சரி. இரண்டாம் சார்லஸ் மன்னர் இதனை குத்தகைக்கு வழங்கினார்."
+      },
+      "B": {
+        "en": "Incorrect. King James I ruled earlier in 1603-1625.",
+        "ta": "தவறு. முதலாம் ஜேம்ஸ் மன்னர் 1603-1625 காலத்தில் ஆட்சி புரிந்தார்."
+      },
+      "C": {
+        "en": "Incorrect. King George II ruled in the mid-18th century.",
+        "ta": "தவறு. இரண்டாம் ஜார்ஜ் மன்னர் 18-ஆம் நூற்றாண்டின் நடுப்பகுதியில் ஆட்சி புரிந்தார்."
+      },
+      "D": {
+        "en": "Incorrect. King William III ruled in the late 17th century.",
+        "ta": "தவறு. மூன்றாம் வில்லியம் மன்னர் 17-ஆம் நூற்றாண்டின் இறுதியில் ஆட்சி புரிந்தார்."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "Bombay became the headquarters of the western presidency, replacing Surat.",
+      "ta": "சூரத்திற்குப் பதிலாக பம்பாய் மேற்கு மாகாணத்தின் தலைமையகமாக மாறியது."
+    },
+    "revision_fact": {
+      "en": "Bombay was leased to EIC in 1668 for just 10 pounds annually.",
+      "ta": "1668-இல் ஆண்டுக்கு 10 பவுண்டுகள் வாடகையில் பம்பாய் குத்தகைக்கு விடப்பட்டது."
+    },
+    "source_reference": [
+      "M. Laxmikanth - Indian Polity",
+      "NCERT",
+      "Samacheer Kalvi"
+    ],
+    "bloom_level": "Remember",
+    "estimated_time_sec": 40,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Historical Background",
+      "Three Presidencies"
+    ],
+    "question_en": "Which British King transferred Bombay to the East India Company in 1668 for an annual rent of 10 pounds?",
+    "question_ta": "1668-இல் ஆண்டு வாடகையாக 10 பவுண்டுகளுக்கு பம்பாயை கிழக்கிந்தியக் கம்பெனிக்கு மாற்றிய பிரிட்டிஷ் மன்னர் யார்?",
+    "options_en": [
+      "King Charles II",
+      "King James I",
+      "King George II",
+      "King William III"
+    ],
+    "options_ta": [
+      "இரண்டாம் சார்லஸ் மன்னர்",
+      "முதலாம் ஜேம்ஸ் மன்னர்",
+      "இரண்டாம் ஜார்ஜ் மன்னர்",
+      "மூன்றாம் வில்லியம் மன்னர்"
+    ],
     "answer": "a",
-    "explanation_en": "Dyarchy in provinces.",
-    "explanation_ta": "மாநிலங்களில் இரட்டை ஆட்சி.",
-    "subject": "POLITY",
-    "topic": "historical_background"
+    "explanation_en": "King Charles II received Bombay as a dowry when he married Portuguese Princess Catherine of Braganza and leased it to EIC.",
+    "explanation_ta": "போர்ச்சுகீசிய இளவரசி கேத்தரினை மணந்தபோது வரதட்சணையாகப் பெற்ற பம்பாயை, இரண்டாம் சார்லஸ் மன்னர் EIC-க்கு குத்தகைக்கு வழங்கினார்."
   },
-
   {
-    "question_en": "1935 Act introduced?",
-    "question_ta": "1935 சட்டம் என்ன அறிமுகப்படுத்தியது?",
-    "options_en": ["Federal","Army","Tax","None"],
-    "options_ta": ["கூட்டாட்சி","படை","வரி","எதுவுமில்லை"],
+    "id": "HB_E_008",
+    "subject": "Polity",
+    "topic": "Historical Background",
+    "difficulty": "Easy",
+    "question_type": "Direct",
+    "question": {
+      "en": "Who was the key English agent responsible for founding the settlement of Calcutta (Sutanuti, Gobindapur, and Kalikata) in 1690?",
+      "ta": "1690-இல் கல்கத்தா குடியேற்றத்தை (சுதானுதி, கோவிந்தபூர், கலிகத்தா) நிறுவிய முக்கிய ஆங்கிலேய முகவர் யார்?"
+    },
+    "options": [
+      {
+        "id": "A",
+        "en": "Job Charnock",
+        "ta": "ஜாப் சார்னக்"
+      },
+      {
+        "id": "B",
+        "en": "Francis Day",
+        "ta": "பிரான்சிஸ் டே"
+      },
+      {
+        "id": "C",
+        "en": "Robert Clive",
+        "ta": "ராபர்ட் கிளைவ்"
+      },
+      {
+        "id": "D",
+        "en": "Gerald Aungier",
+        "ta": "ஜெரால்ட் ஆங்கியர்"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "Job Charnock established the EIC factory at Sutanuti in 1690, which grew into Calcutta.",
+      "ta": "1690-இல் ஜாப் சார்னக் சுதானுதியில் வர்த்தக மையத்தை நிறுவினார், இதுவே பின்னர் கல்கத்தாவாக வளர்ந்தது."
+    },
+    "why_not_others": {
+      "A": {
+        "en": "Correct. Job Charnock founded Calcutta.",
+        "ta": "சரி. ஜாப் சார்னக் கல்கத்தாவை நிறுவினார்."
+      },
+      "B": {
+        "en": "Incorrect. Francis Day founded Madras.",
+        "ta": "தவறு. பிரான்சிஸ் டே மெட்ராஸை நிறுவினார்."
+      },
+      "C": {
+        "en": "Incorrect. Robert Clive was a military general who fought Plassey.",
+        "ta": "தவறு. ராபர்ட் கிளைவ் பிளாசிப் போரை நடத்திய ராணுவத் தளபதி ஆவார்."
+      },
+      "D": {
+        "en": "Incorrect. Gerald Aungier was the founder of modern Bombay.",
+        "ta": "தவறு. ஜெரால்ட் ஆங்கியர் நவீன பம்பாயை உருவாக்கியவர் ஆவார்."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "Calcutta was fortified as Fort William in 1700.",
+      "ta": "Calcutta 1700-இல் புனித வில்லியம் கோட்டையாக அரண் செய்யப்பட்டது."
+    },
+    "revision_fact": {
+      "en": "Calcutta was formed by combining Sutanuti, Gobindapur, and Kalikata.",
+      "ta": "சுதானுதி, கோவிந்தபூர் மற்றும் கலிகத்தா ஆகிய கிராமங்களை இணைத்து கல்கத்தா உருவாக்கப்பட்டது."
+    },
+    "source_reference": [
+      "M. Laxmikanth - Indian Polity",
+      "NCERT",
+      "Samacheer Kalvi"
+    ],
+    "bloom_level": "Remember",
+    "estimated_time_sec": 40,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Historical Background",
+      "Three Presidencies"
+    ],
+    "question_en": "Who was the key English agent responsible for founding the settlement of Calcutta (Sutanuti, Gobindapur, and Kalikata) in 1690?",
+    "question_ta": "1690-இல் கல்கத்தா குடியேற்றத்தை (சுதானுதி, கோவிந்தபூர், கலிகத்தா) நிறுவிய முக்கிய ஆங்கிலேய முகவர் யார்?",
+    "options_en": [
+      "Job Charnock",
+      "Francis Day",
+      "Robert Clive",
+      "Gerald Aungier"
+    ],
+    "options_ta": [
+      "ஜாப் சார்னக்",
+      "பிரான்சிஸ் டே",
+      "ராபர்ட் கிளைவ்",
+      "ஜெரால்ட் ஆங்கியர்"
+    ],
     "answer": "a",
-    "explanation_en": "Federal structure introduced.",
-    "explanation_ta": "கூட்டாட்சி அமைப்பு அறிமுகமானது.",
-    "subject": "POLITY",
-    "topic": "historical_background"
+    "explanation_en": "Job Charnock established the EIC factory at Sutanuti in 1690, which grew into Calcutta.",
+    "explanation_ta": "1690-இல் ஜாப் சார்னக் சுதானுதியில் வர்த்தக மையத்தை நிறுவினார், இதுவே பின்னர் கல்கத்தாவாக வளர்ந்தது."
   },
-
   {
-    "question_en": "Provincial autonomy year?",
-    "question_ta": "மாநில தன்னாட்சி எப்போது?",
-    "options_en": ["1935","1919","1909","1858"],
-    "options_ta": ["1935","1919","1909","1858"],
+    "id": "HB_E_009",
+    "subject": "Polity",
+    "topic": "Historical Background",
+    "difficulty": "Easy",
+    "question_type": "Direct",
+    "question": {
+      "en": "The Carnatic Wars were fought between which two European powers for trade supremacy in India?",
+      "ta": "இந்தியாவில் வர்த்தக ஆதிக்கத்திற்காக எந்த இரு ஐரோப்பிய நாடுகளுக்கு இடையே ஆற்காடு போர்கள் (Carnatic Wars) நடைபெற்றன?"
+    },
+    "options": [
+      {
+        "id": "A",
+        "en": "British and French",
+        "ta": "ஆங்கிலேயர் மற்றும் பிரெஞ்சுக்காரர்கள்"
+      },
+      {
+        "id": "B",
+        "en": "British and Portuguese",
+        "ta": "ஆங்கிலேயர் மற்றும் போர்ச்சுகீசியர்கள்"
+      },
+      {
+        "id": "C",
+        "en": "French and Dutch",
+        "ta": "பிரெஞ்சுக்காரர்கள் மற்றும் டச்சுக்காரர்கள்"
+      },
+      {
+        "id": "D",
+        "en": "Danish and Portuguese",
+        "ta": "டேனிஷ் மற்றும் போர்ச்சுகீசியர்கள்"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "The three Carnatic Wars (1746-1763) established British supremacy over the French in South India.",
+      "ta": "மூன்று ஆற்காடு போர்கள் (1746-1763) தென்னிந்தியாவில் பிரெஞ்சுக்காரர்களை வீழ்த்தி ஆங்கிலேய ஆதிக்கத்தை நிலைநிறுத்தின."
+    },
+    "why_not_others": {
+      "A": {
+        "en": "Correct. British and French fought the Carnatic Wars.",
+        "ta": "சரி. ஆற்காடு போர்களில் ஆங்கிலேயர்களும் பிரெஞ்சுக்காரர்களும் மோதினர்."
+      },
+      "B": {
+        "en": "Incorrect. British and Portuguese did not fight Carnatic wars.",
+        "ta": "தவறு. இவர்களுக்கு இடையே ஆற்காடு போர்கள் நடைபெறவில்லை."
+      },
+      "C": {
+        "en": "Incorrect. French and Dutch were minor players in this region.",
+        "ta": "தவறு. பிரெஞ்சுக்காரர்களும் டச்சுக்காரர்களும் இதில் முக்கிய பங்கு வகிக்கவில்லை."
+      },
+      "D": {
+        "en": "Incorrect. Danish had negligible military involvement.",
+        "ta": "தவறு. டேனிஷ் வர்த்தகர்கள் ராணுவ மோதல்களில் ஈடுபடவில்லை."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "The Battle of Wandiwash (1760) ended French military ambitions in India.",
+      "ta": "வந்தவாசிப் போர் (1760) இந்தியாவில் பிரெஞ்சுக்காரர்களின் ராணுவக் கனவை முடிவுக்குக் கொண்டு வந்தது."
+    },
+    "revision_fact": {
+      "en": "The Treaty of Paris (1763) concluded the Carnatic Wars.",
+      "ta": "பாரிஸ் உடன்படிக்கை (1763) ஆற்காடு போர்களை முடிவுக்குக் கொண்டு வந்தது."
+    },
+    "source_reference": [
+      "M. Laxmikanth - Indian Polity",
+      "NCERT",
+      "Samacheer Kalvi"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 40,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Historical Background",
+      "Carnatic Wars"
+    ],
+    "question_en": "The Carnatic Wars were fought between which two European powers for trade supremacy in India?",
+    "question_ta": "இந்தியாவில் வர்த்தக ஆதிக்கத்திற்காக எந்த இரு ஐரோப்பிய நாடுகளுக்கு இடையே ஆற்காடு போர்கள் (Carnatic Wars) நடைபெற்றன?",
+    "options_en": [
+      "British and French",
+      "British and Portuguese",
+      "French and Dutch",
+      "Danish and Portuguese"
+    ],
+    "options_ta": [
+      "ஆங்கிலேயர் மற்றும் பிரெஞ்சுக்காரர்கள்",
+      "ஆங்கிலேயர் மற்றும் போர்ச்சுகீசியர்கள்",
+      "பிரெஞ்சுக்காரர்கள் மற்றும் டச்சுக்காரர்கள்",
+      "டேனிஷ் மற்றும் போர்ச்சுகீசியர்கள்"
+    ],
     "answer": "a",
-    "explanation_en": "1935 Act introduced autonomy.",
-    "explanation_ta": "1935 சட்டம் தன்னாட்சியை கொண்டு வந்தது.",
-    "subject": "POLITY",
-    "topic": "historical_background"
+    "explanation_en": "The three Carnatic Wars (1746-1763) established British supremacy over the French in South India.",
+    "explanation_ta": "மூன்று ஆற்காடு போர்கள் (1746-1763) தென்னிந்தியாவில் பிரெஞ்சுக்காரர்களை வீழ்த்தி ஆங்கிலேய ஆதிக்கத்தை நிலைநிறுத்தின."
   },
-
   {
-    "question_en": "Indian Independence Act year?",
-    "question_ta": "இந்திய சுதந்திர சட்டம் எப்போது?",
-    "options_en": ["1947","1950","1935","1945"],
-    "options_ta": ["1947","1950","1935","1945"],
+    "id": "HB_E_010",
+    "subject": "Polity",
+    "topic": "Historical Background",
+    "difficulty": "Easy",
+    "question_type": "Direct",
+    "question": {
+      "en": "In which year was the historic Battle of Plassey fought between Siraj-ud-Daulah and the British forces?",
+      "ta": "சிராஜ்-உத்-தௌலாவிற்கும் ஆங்கிலேயப் படைகளுக்கும் இடையே புகழ்பெற்ற பிளாசிப் போர் நடைபெற்ற ஆண்டு எது?"
+    },
+    "options": [
+      {
+        "id": "A",
+        "en": "1757",
+        "ta": "1757"
+      },
+      {
+        "id": "B",
+        "en": "1764",
+        "ta": "1764"
+      },
+      {
+        "id": "C",
+        "en": "1772",
+        "ta": "1772"
+      },
+      {
+        "id": "D",
+        "en": "1761",
+        "ta": "1761"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "The Battle of Plassey was fought on June 23, 1757, laying the foundation of British political power.",
+      "ta": "பிளாசிப் போர் ஜூன் 23, 1757 அன்று நடைபெற்றது. இது இந்தியாவில் பிரிட்டிஷ் அரசியல் ஆட்சிக்கு அடித்தளம் அமைத்தது."
+    },
+    "why_not_others": {
+      "A": {
+        "en": "Correct. 1757 was the year of Battle of Plassey.",
+        "ta": "சரி. 1757 என்பது பிளாசிப் போர் நடைபெற்ற ஆண்டாகும்."
+      },
+      "B": {
+        "en": "Incorrect. 1764 was the Battle of Buxar.",
+        "ta": "தவறு. 1764 என்பது பக்சார் போர் நடைபெற்ற ஆண்டாகும்."
+      },
+      "C": {
+        "en": "Incorrect. 1772 was the year Dual Government ended.",
+        "ta": "தவறு. 1772 இரட்டையாட்சி ஒழிக்கப்பட்ட ஆண்டாகும்."
+      },
+      "D": {
+        "en": "Incorrect. 1761 was the Third Battle of Panipat.",
+        "ta": "தவறு. 1761 என்பது மூன்றாம் பானிபட் போர் நடைபெற்ற ஆண்டாகும்."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "Robert Clive led the British East India Company's army to victory.",
+      "ta": "ராபர்ட் கிளைவ் கிழக்கிந்தியக் கம்பெனிப் படைகளை வழிநடத்தி வெற்றி பெற்றார்."
+    },
+    "revision_fact": {
+      "en": "Mir Jafar's betrayal led to the defeat of Nawab Siraj-ud-Daulah.",
+      "ta": "மீர் ஜாபரின் துரோகம் நவாப் சிராஜ்-உத்-தௌலாவின் தோல்விக்குக் காரணமாக அமைந்தது."
+    },
+    "source_reference": [
+      "M. Laxmikanth - Indian Polity",
+      "NCERT",
+      "Samacheer Kalvi"
+    ],
+    "bloom_level": "Remember",
+    "estimated_time_sec": 40,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Historical Background",
+      "Battle of Plassey"
+    ],
+    "question_en": "In which year was the historic Battle of Plassey fought between Siraj-ud-Daulah and the British forces?",
+    "question_ta": "சிராஜ்-உத்-தௌலாவிற்கும் ஆங்கிலேயப் படைகளுக்கும் இடையே புகழ்பெற்ற பிளாசிப் போர் நடைபெற்ற ஆண்டு எது?",
+    "options_en": [
+      "1757",
+      "1764",
+      "1772",
+      "1761"
+    ],
+    "options_ta": [
+      "1757",
+      "1764",
+      "1772",
+      "1761"
+    ],
     "answer": "a",
-    "explanation_en": "India got independence in 1947.",
-    "explanation_ta": "1947 இந்தியா சுதந்திரம் பெற்றது.",
-    "subject": "POLITY",
-    "topic": "historical_background"
-  },
-    {
-    "question_en": "Who introduced the portfolio system?",
-    "question_ta": "Portfolio முறையை யார் அறிமுகப்படுத்தினார்?",
-    "options_en": ["Lord Dalhousie","Lord Canning","Lord Wellesley","Lord Curzon"],
-    "options_ta": ["லார்டு டல்ஹௌசி","லார்டு கேன்னிங்","லார்டு வெல்லஸ்லி","லார்டு கர்சன்"],
-    "answer": "b",
-    "explanation_en": "Lord Canning introduced portfolio system.",
-    "explanation_ta": "லார்டு கேன்னிங் portfolio முறையை அறிமுகப்படுத்தினார்.",
-    "subject": "POLITY",
-    "topic": "historical_background"
+    "explanation_en": "The Battle of Plassey was fought on June 23, 1757, laying the foundation of British political power.",
+    "explanation_ta": "பிளாசிப் போர் ஜூன் 23, 1757 அன்று நடைபெற்றது. இது இந்தியாவில் பிரிட்டிஷ் அரசியல் ஆட்சிக்கு அடித்தளம் அமைத்தது."
   },
   {
-    "question_en": "Which act created Supreme Court in Calcutta?",
-    "question_ta": "கல்கத்தாவில் உச்சநீதிமன்றத்தை உருவாக்கிய சட்டம் எது?",
-    "options_en": ["Regulating Act","Pitt’s Act","1813 Act","1853 Act"],
-    "options_ta": ["Regulating Act","Pitt’s Act","1813 Act","1853 Act"],
+    "id": "HB_E_011",
+    "subject": "Polity",
+    "topic": "Historical Background",
+    "difficulty": "Easy",
+    "question_type": "Direct",
+    "question": {
+      "en": "Who led the British army in the decisive Battle of Buxar in 1764?",
+      "ta": "1764-இல் நடைபெற்ற தீர்க்கமான பக்சார் போரில் பிரிட்டிஷ் படைகளை வழிநடத்தியவர் யார்?"
+    },
+    "options": [
+      {
+        "id": "A",
+        "en": "Major Hector Munro",
+        "ta": "மேஜர் ஹெக்டர் மன்றோ"
+      },
+      {
+        "id": "B",
+        "en": "Robert Clive",
+        "ta": "ராபர்ட் கிளைவ்"
+      },
+      {
+        "id": "C",
+        "en": "Warren Hastings",
+        "ta": "வாரன் ஹேஸ்டிங்ஸ்"
+      },
+      {
+        "id": "D",
+        "en": "Eyre Coote",
+        "ta": "அயர் கூட்"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "Major Hector Munro led the British forces at Buxar, defeating the joint army of Mir Qasim, Shuja-ud-Daulah, and Shah Alam II.",
+      "ta": "மேஜர் ஹெக்டர் மன்றோ பக்சாரில் பிரிட்டிஷ் படைகளை வழிநடத்தி, மீர் காசிம், ஷுஜா-உத்-தௌலா மற்றும் இரண்டாம் ஷா ஆலம் ஆகியோரின் கூட்டுப் படைகளைத் தோற்கடித்தார்."
+    },
+    "why_not_others": {
+      "A": {
+        "en": "Correct. Hector Munro led the army at Buxar.",
+        "ta": "சரி. ஹெக்டர் மன்றோ பக்சார் போரை வழிநடத்தினார்."
+      },
+      "B": {
+        "en": "Incorrect. Robert Clive was not present at Buxar.",
+        "ta": "தவறு. ராபர்ட் கிளைவ் பக்சார் போரின் போது அங்கு இல்லை."
+      },
+      "C": {
+        "en": "Incorrect. Warren Hastings became Governor later.",
+        "ta": "தவறு. வாரன் ஹேஸ்டிங்ஸ் பின்னர் ஆளுநராக நியமிக்கப்பட்டார்."
+      },
+      "D": {
+        "en": "Incorrect. Eyre Coote led at Wandiwash in 1760.",
+        "ta": "தவறு. அயர் கூட் 1760 வந்தவாசிப் போரை வழிநடத்தினார்."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "Battle of Buxar established EIC as a sovereign political power in Bengal.",
+      "ta": "பக்சார் போர் வங்காளத்தில் EIC-ஐ ஒரு இறையாண்மை கொண்ட அரசியல் சக்தியாக மாற்றியது."
+    },
+    "revision_fact": {
+      "en": "Unlike Plassey, Buxar was a clear military triumph for the British.",
+      "ta": "பிளாசியைப் போலன்றி, பக்சார் போர் பிரிட்டிஷாரின் உண்மையான ராணுவ வெற்றியாகும்."
+    },
+    "source_reference": [
+      "M. Laxmikanth - Indian Polity",
+      "NCERT",
+      "Samacheer Kalvi"
+    ],
+    "bloom_level": "Remember",
+    "estimated_time_sec": 40,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Historical Background",
+      "Battle of Buxar"
+    ],
+    "question_en": "Who led the British army in the decisive Battle of Buxar in 1764?",
+    "question_ta": "1764-இல் நடைபெற்ற தீர்க்கமான பக்சார் போரில் பிரிட்டிஷ் படைகளை வழிநடத்தியவர் யார்?",
+    "options_en": [
+      "Major Hector Munro",
+      "Robert Clive",
+      "Warren Hastings",
+      "Eyre Coote"
+    ],
+    "options_ta": [
+      "மேஜர் ஹெக்டர் மன்றோ",
+      "ராபர்ட் கிளைவ்",
+      "வாரன் ஹேஸ்டிங்ஸ்",
+      "அயர் கூட்"
+    ],
     "answer": "a",
-    "explanation_en": "Supreme Court was created under Regulating Act.",
-    "explanation_ta": "Regulating Act மூலம் உச்சநீதிமன்றம் உருவாக்கப்பட்டது.",
-    "subject": "POLITY",
-    "topic": "historical_background"
+    "explanation_en": "Major Hector Munro led the British forces at Buxar, defeating the joint army of Mir Qasim, Shuja-ud-Daulah, and Shah Alam II.",
+    "explanation_ta": "மேஜர் ஹெக்டர் மன்றோ பக்சாரில் பிரிட்டிஷ் படைகளை வழிநடத்தி, மீர் காசிம், ஷுஜா-உத்-தௌலா மற்றும் இரண்டாம் ஷா ஆலம் ஆகியோரின் கூட்டுப் படைகளைத் தோற்கடித்தார்."
   },
   {
-    "question_en": "Dual system was introduced by?",
-    "question_ta": "இரட்டை நிர்வாக முறை யாரால் அறிமுகப்படுத்தப்பட்டது?",
-    "options_en": ["1773","1784","1813","1853"],
-    "options_ta": ["1773","1784","1813","1853"],
-    "answer": "b",
-    "explanation_en": "1784 Pitt’s India Act introduced dual system.",
-    "explanation_ta": "1784 Pitt’s Act இரட்டை நிர்வாகத்தை அறிமுகப்படுத்தியது.",
-    "subject": "POLITY",
-    "topic": "historical_background"
-  },
-  {
-    "question_en": "Charter Act 1813 allowed entry of?",
-    "question_ta": "1813 சட்டம் யாருக்கு இந்தியா வர அனுமதி அளித்தது?",
-    "options_en": ["Missionaries","Army","Judges","Kings"],
-    "options_ta": ["மிஷனரிகள்","படை","நீதிபதிகள்","மன்னர்கள்"],
+    "id": "HB_E_012",
+    "subject": "Polity",
+    "topic": "Historical Background",
+    "difficulty": "Easy",
+    "question_type": "Direct",
+    "question": {
+      "en": "Which treaty was signed in 1765 following the Battle of Buxar, granting Diwani rights to the British?",
+      "ta": "பக்சார் போரைத் தொடர்ந்து 1765-இல் கையெழுத்திடப்பட்டு, ஆங்கிலேயர்களுக்கு திவானி உரிமைகளை வழங்கிய உடன்படிக்கை எது?"
+    },
+    "options": [
+      {
+        "id": "A",
+        "en": "Treaty of Allahabad",
+        "ta": "அலகாபாத் உடன்படிக்கை"
+      },
+      {
+        "id": "B",
+        "en": "Treaty of Madras",
+        "ta": "மெட்ராஸ் உடன்படிக்கை"
+      },
+      {
+        "id": "C",
+        "en": "Treaty of Paris",
+        "ta": "பாரிஸ் உடன்படிக்கை"
+      },
+      {
+        "id": "D",
+        "en": "Treaty of Pondicherry",
+        "ta": "பாண்டிச்சேரி உடன்படிக்கை"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "The Treaty of Allahabad was signed in August 1765 by Robert Clive and Mughal Emperor Shah Alam II.",
+      "ta": "ஆகஸ்ட் 1765-இல் ராபர்ட் கிளைவ் மற்றும் முகலாய பேரரசர் இரண்டாம் ஷா ஆலம் ஆகியோரால் அலகாபாத் உடன்படிக்கை கையெழுத்திடப்பட்டது."
+    },
+    "why_not_others": {
+      "A": {
+        "en": "Correct. Treaty of Allahabad was signed in 1765.",
+        "ta": "சரி. 1765-இல் அலகாபாத் உடன்படிக்கை கையெழுத்தானது."
+      },
+      "B": {
+        "en": "Incorrect. Treaty of Madras ended the First Anglo-Mysore War in 1769.",
+        "ta": "தவறு. மெட்ராஸ் உடன்படிக்கை 1769-இல் முதலாம் ஆங்கிலேய-மைசூர் போரை முடிவுக்குக் கொண்டு வந்தது."
+      },
+      "C": {
+        "en": "Incorrect. Treaty of Paris ended Seven Years War in 1763.",
+        "ta": "தவறு. பாரிஸ் உடன்படிக்கை 1763-இல் ஏழாண்டுப் போரை முடித்தது."
+      },
+      "D": {
+        "en": "Incorrect. Treaty of Pondicherry was signed in 1754 during the Second Carnatic War.",
+        "ta": "தவறு. பாண்டிச்சேரி உடன்படிக்கை 1754-இல் கையெழுத்தானது."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "Diwani rights allowed EIC to collect land revenues of Bengal, Bihar, and Orissa.",
+      "ta": "திவானி உரிமைகள் வங்காளம், பீகார் மற்றும் ஒடிசாவின் நிலவருவாயைச் சேகரிக்க EIC-க்கு அனுமதி அளித்தன."
+    },
+    "revision_fact": {
+      "en": "Shah Alam II granted the Diwani rights in return for a fixed pension.",
+      "ta": "பேரரசர் ஷா ஆலம் II குறிப்பிட்ட ஓய்வூதியத்திற்குப் பதிலாக திவானி உரிமையை வழங்கினார்."
+    },
+    "source_reference": [
+      "M. Laxmikanth - Indian Polity",
+      "NCERT",
+      "Samacheer Kalvi"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 40,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Historical Background",
+      "Dual Government"
+    ],
+    "question_en": "Which treaty was signed in 1765 following the Battle of Buxar, granting Diwani rights to the British?",
+    "question_ta": "பக்சார் போரைத் தொடர்ந்து 1765-இல் கையெழுத்திடப்பட்டு, ஆங்கிலேயர்களுக்கு திவானி உரிமைகளை வழங்கிய உடன்படிக்கை எது?",
+    "options_en": [
+      "Treaty of Allahabad",
+      "Treaty of Madras",
+      "Treaty of Paris",
+      "Treaty of Pondicherry"
+    ],
+    "options_ta": [
+      "அலகாபாத் உடன்படிக்கை",
+      "மெட்ராஸ் உடன்படிக்கை",
+      "பாரிஸ் உடன்படிக்கை",
+      "பாண்டிச்சேரி உடன்படிக்கை"
+    ],
     "answer": "a",
-    "explanation_en": "Missionaries were allowed to enter India.",
-    "explanation_ta": "மிஷனரிகள் இந்தியா வர அனுமதிக்கப்பட்டனர்.",
-    "subject": "POLITY",
-    "topic": "historical_background"
+    "explanation_en": "The Treaty of Allahabad was signed in August 1765 by Robert Clive and Mughal Emperor Shah Alam II.",
+    "explanation_ta": "ஆகஸ்ட் 1765-இல் ராபர்ட் கிளைவ் மற்றும் முகலாய பேரரசர் இரண்டாம் ஷா ஆலம் ஆகியோரால் அலகாபாத் உடன்படிக்கை கையெழுத்திடப்பட்டது."
   },
   {
-    "question_en": "Which act centralized administration?",
-    "question_ta": "நிர்வாகத்தை மையப்படுத்திய சட்டம் எது?",
-    "options_en": ["1833","1813","1853","1773"],
-    "options_ta": ["1833","1813","1853","1773"],
+    "id": "HB_E_013",
+    "subject": "Polity",
+    "topic": "Historical Background",
+    "difficulty": "Easy",
+    "question_type": "Direct",
+    "question": {
+      "en": "Who introduced the Dual Government (Double Government) system in Bengal in 1765?",
+      "ta": "1765-இல் வங்காளத்தில் இரட்டையாட்சி (Dual Government) முறையை அறிமுகப்படுத்தியவர் யார்?"
+    },
+    "options": [
+      {
+        "id": "A",
+        "en": "Robert Clive",
+        "ta": "ராபர்ட் கிளைவ்"
+      },
+      {
+        "id": "B",
+        "en": "Warren Hastings",
+        "ta": "வாரன் ஹேஸ்டிங்ஸ்"
+      },
+      {
+        "id": "C",
+        "en": "Lord Cornwallis",
+        "ta": "காரன்வாலிஸ் பிரபு"
+      },
+      {
+        "id": "D",
+        "en": "Lord Wellesley",
+        "ta": "வெல்லெஸ்லி பிரபு"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "Robert Clive introduced the Dual Government in Bengal where EIC controlled revenue (Diwani) and Nawab controlled administration (Nizamat).",
+      "ta": "ராபர்ட் கிளைவ் வங்காளத்தில் இரட்டையாட்சியை அறிமுகப்படுத்தினார். இதில் EIC வருவாயையும் (திவானி), நவாப் நிர்வாகத்தையும் (நிசாமத்) கட்டுப்படுத்தினர்."
+    },
+    "why_not_others": {
+      "A": {
+        "en": "Correct. Robert Clive introduced it.",
+        "ta": "சரி. ராபர்ட் கிளைவ் இதனை அறிமுகப்படுத்தினார்."
+      },
+      "B": {
+        "en": "Incorrect. Warren Hastings abolished it in 1772.",
+        "ta": "தவறு. வாரன் ஹேஸ்டிங்ஸ் 1772-இல் இதனை ஒழித்தார்."
+      },
+      "C": {
+        "en": "Incorrect. Cornwallis introduced Permanent Settlement in 1793.",
+        "ta": "தவறு. காரன்வாலிஸ் 1793-இல் நிலையான நிலவரி திட்டத்தை அறிமுகப்படுத்தினார்."
+      },
+      "D": {
+        "en": "Incorrect. Wellesley introduced the Subsidiary Alliance in 1798.",
+        "ta": "தவறு. வெல்லெஸ்லி 1798-இல் துணைப்படைத் திட்டத்தை அறிமுகப்படுத்தினார்."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "Under this system, the EIC had power without responsibility, while the Nawab had responsibility without power.",
+      "ta": "இம்முறையின் கீழ் EIC பொறுப்பற்ற அதிகாரத்தையும், நவாப் அதிகாரமற்ற பொறுப்பையும் பெற்றிருந்தனர்."
+    },
+    "revision_fact": {
+      "en": "The Great Bengal Famine of 1770 occurred during the Dual Government.",
+      "ta": "1770-ஆம் ஆண்டின் வங்காளப் பஞ்சம் இரட்டையாட்சி காலத்திலேயே ஏற்பட்டது."
+    },
+    "source_reference": [
+      "M. Laxmikanth - Indian Polity",
+      "NCERT",
+      "Samacheer Kalvi"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 40,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Historical Background",
+      "Dual Government"
+    ],
+    "question_en": "Who introduced the Dual Government (Double Government) system in Bengal in 1765?",
+    "question_ta": "1765-இல் வங்காளத்தில் இரட்டையாட்சி (Dual Government) முறையை அறிமுகப்படுத்தியவர் யார்?",
+    "options_en": [
+      "Robert Clive",
+      "Warren Hastings",
+      "Lord Cornwallis",
+      "Lord Wellesley"
+    ],
+    "options_ta": [
+      "ராபர்ட் கிளைவ்",
+      "வாரன் ஹேஸ்டிங்ஸ்",
+      "காரன்வாலிஸ் பிரபு",
+      "வெல்லெஸ்லி பிரபு"
+    ],
     "answer": "a",
-    "explanation_en": "Charter Act 1833 centralized power.",
-    "explanation_ta": "1833 சட்டம் நிர்வாகத்தை மையப்படுத்தியது.",
-    "subject": "POLITY",
-    "topic": "historical_background"
+    "explanation_en": "Robert Clive introduced the Dual Government in Bengal where EIC controlled revenue (Diwani) and Nawab controlled administration (Nizamat).",
+    "explanation_ta": "ராபர்ட் கிளைவ் வங்காளத்தில் இரட்டையாட்சியை அறிமுகப்படுத்தினார். இதில் EIC வருவாயையும் (திவானி), நவாப் நிர்வாகத்தையும் (நிசாமத்) கட்டுப்படுத்தினர்."
   },
-
   {
-    "question_en": "Assertion: 1858 Act ended Company rule Reason: Crown took control",
-    "question_ta": "கூற்று: 1858 சட்டம் கம்பெனி ஆட்சியை முடித்தது காரணம்: கிரௌன் அதிகாரம் பெற்றது",
-    "options_en": ["Both correct","Both correct but not explanation","A correct R wrong","A wrong R correct"],
-    "options_ta": ["இரண்டும் சரி","இரண்டும் சரி ஆனால் விளக்கம் அல்ல","A மட்டும் சரி","R மட்டும் சரி"],
+    "id": "HB_E_014",
+    "subject": "Polity",
+    "topic": "Historical Background",
+    "difficulty": "Easy",
+    "question_type": "Direct",
+    "question": {
+      "en": "Who abolished the Dual Government system in Bengal in 1772?",
+      "ta": "1772-இல் வங்காளத்தில் இரட்டையாட்சி முறையை ஒழித்தவர் யார்?"
+    },
+    "options": [
+      {
+        "id": "A",
+        "en": "Warren Hastings",
+        "ta": "வாரன் ஹேஸ்டிங்ஸ்"
+      },
+      {
+        "id": "B",
+        "en": "Robert Clive",
+        "ta": "ராபர்ட் கிளைவ்"
+      },
+      {
+        "id": "C",
+        "en": "Lord Cornwallis",
+        "ta": "காரன்வாலிஸ் பிரபு"
+      },
+      {
+        "id": "D",
+        "en": "Sir John Shore",
+        "ta": "சர் ஜான் ஷோர்"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "Warren Hastings abolished the Dual Government system in 1772, bringing Bengal under direct EIC control.",
+      "ta": "வாரன் ஹேஸ்டிங்ஸ் 1772-இல் இரட்டையாட்சியை ஒழித்து, வங்காளத்தை கம்பெனியின் நேரடி கட்டுப்பாட்டின் கீழ் கொண்டு வந்தார்."
+    },
+    "why_not_others": {
+      "A": {
+        "en": "Correct. Warren Hastings abolished it.",
+        "ta": "சரி. வாரன் ஹேஸ்டிங்ஸ் இதனை ஒழித்தார்."
+      },
+      "B": {
+        "en": "Incorrect. Robert Clive introduced it.",
+        "ta": "தவறு. ராபர்ட் கிளைவ் இதனை அறிமுகப்படுத்தியவர்."
+      },
+      "C": {
+        "en": "Incorrect. Cornwallis assumed office in 1786.",
+        "ta": "தவறு. காரன்வாலிஸ் 1786-இல் பொறுப்பேற்றார்."
+      },
+      "D": {
+        "en": "Incorrect. Sir John Shore ruled from 1793 to 1798.",
+        "ta": "தவறு. சர் ஜான் ஷோர் 1793-1798 காலத்தில் ஆட்சி புரிந்தார்."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "Abolishing the Dual Government was a step towards institutionalizing British administration.",
+      "ta": "இரட்டையாட்சி ஒழிப்பு பிரிட்டிஷ் நிர்வாகத்தை முறைப்படுத்துவதற்கான ஒரு வழியாகும்."
+    },
+    "revision_fact": {
+      "en": "Warren Hastings was appointed as the Governor of Bengal in 1772.",
+      "ta": "வாரன் ஹேஸ்டிங்ஸ் 1772-இல் வங்காள ஆளுநராக நியமிக்கப்பட்டார்."
+    },
+    "source_reference": [
+      "M. Laxmikanth - Indian Polity",
+      "NCERT",
+      "Samacheer Kalvi"
+    ],
+    "bloom_level": "Remember",
+    "estimated_time_sec": 40,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Historical Background",
+      "Dual Government"
+    ],
+    "question_en": "Who abolished the Dual Government system in Bengal in 1772?",
+    "question_ta": "1772-இல் வங்காளத்தில் இரட்டையாட்சி முறையை ஒழித்தவர் யார்?",
+    "options_en": [
+      "Warren Hastings",
+      "Robert Clive",
+      "Lord Cornwallis",
+      "Sir John Shore"
+    ],
+    "options_ta": [
+      "வாரன் ஹேஸ்டிங்ஸ்",
+      "ராபர்ட் கிளைவ்",
+      "காரன்வாலிஸ் பிரபு",
+      "சர் ஜான் ஷோர்"
+    ],
     "answer": "a",
-    "explanation_en": "Both are correct and related.",
-    "explanation_ta": "இரண்டும் சரி மற்றும் தொடர்புடையவை.",
-    "subject": "POLITY",
-    "topic": "historical_background"
+    "explanation_en": "Warren Hastings abolished the Dual Government system in 1772, bringing Bengal under direct EIC control.",
+    "explanation_ta": "வாரன் ஹேஸ்டிங்ஸ் 1772-இல் இரட்டையாட்சியை ஒழித்து, வங்காளத்தை கம்பெனியின் நேரடி கட்டுப்பாட்டின் கீழ் கொண்டு வந்தார்."
   },
-
   {
-    "question_en": "Indian Councils Act 1861 introduced?",
-    "question_ta": "1861 இந்திய கவுன்சில் சட்டம் என்ன அறிமுகப்படுத்தியது?",
-    "options_en": ["Nomination","Election","Army","Judiciary"],
-    "options_ta": ["நியமனம்","தேர்தல்","படை","நீதித்துறை"],
+    "id": "HB_E_015",
+    "subject": "Polity",
+    "topic": "Historical Background",
+    "difficulty": "Easy",
+    "question_type": "Direct",
+    "question": {
+      "en": "Which was the first act passed by the British Parliament to regulate and control the affairs of the East India Company in India?",
+      "ta": "இந்தியாவில் கிழக்கிந்தியக் கம்பெனியின் விவகாரங்களை ஒழுங்குபடுத்தவும் கட்டுப்படுத்தவும் பிரிட்டிஷ் பாராளுமன்றம் இயற்றிய முதல் சட்டம் எது?"
+    },
+    "options": [
+      {
+        "id": "A",
+        "en": "Regulating Act of 1773",
+        "ta": "1773 ஒழுங்குமுறைச் சட்டம்"
+      },
+      {
+        "id": "B",
+        "en": "Pitts India Act of 1784",
+        "ta": "1784 பிட்டின் இந்தியச் சட்டம்"
+      },
+      {
+        "id": "C",
+        "en": "Charter Act of 1793",
+        "ta": "1793 சாசனச் சட்டம்"
+      },
+      {
+        "id": "D",
+        "en": "Charter Act of 1813",
+        "ta": "1813 சாசனச் சட்டம்"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "The Regulating Act of 1773 was the first step by the British government to regulate EIC affairs.",
+      "ta": "1773 ஒழுங்குமுறைச் சட்டம் என்பது கம்பெனி விவகாரங்களை ஒழுங்குபடுத்த பிரிட்டிஷ் அரசாங்கம் எடுத்த முதல் படியாகும்."
+    },
+    "why_not_others": {
+      "A": {
+        "en": "Correct. Regulating Act of 1773 was the first.",
+        "ta": "சரி. 1773 ஒழுங்குமுறைச் சட்டம் முதல் சட்டமாகும்."
+      },
+      "B": {
+        "en": "Incorrect. Pitts India Act was the second major reform.",
+        "ta": "தவறு. பிட்டின் இந்தியச் சட்டம் இரண்டாவது முக்கிய சீர்திருத்தம்."
+      },
+      "C": {
+        "en": "Incorrect. Charter Acts came later at 20-year intervals.",
+        "ta": "தவறு. சாசனச் சட்டங்கள் பின்னர் 20 ஆண்டு கால இடைவெளிகளில் வந்தன."
+      },
+      "D": {
+        "en": "Incorrect. 1813 Act ended EIC monopoly partially.",
+        "ta": "தவறு. 1813 சட்டம் ஏகபோகத்தை பகுதியளவு ஒழித்தது."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "It laid the foundations of central administration in India.",
+      "ta": "இது இந்தியாவில் மத்திய நிர்வாகத்திற்கான அடித்தளத்தை அமைத்தது."
+    },
+    "revision_fact": {
+      "en": "The Act was passed based on the report of a secret committee headed by Lord North.",
+      "ta": "லார்ட் நார்த் தலைமையிலான ரகசியக் குழுவின் அறிக்கையின்படி இச்சட்டம் இயற்றப்பட்டது."
+    },
+    "source_reference": [
+      "M. Laxmikanth - Indian Polity",
+      "NCERT",
+      "Samacheer Kalvi"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 40,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Historical Background",
+      "Regulating Act 1773"
+    ],
+    "question_en": "Which was the first act passed by the British Parliament to regulate and control the affairs of the East India Company in India?",
+    "question_ta": "இந்தியாவில் கிழக்கிந்தியக் கம்பெனியின் விவகாரங்களை ஒழுங்குபடுத்தவும் கட்டுப்படுத்தவும் பிரிட்டிஷ் பாராளுமன்றம் இயற்றிய முதல் சட்டம் எது?",
+    "options_en": [
+      "Regulating Act of 1773",
+      "Pitts India Act of 1784",
+      "Charter Act of 1793",
+      "Charter Act of 1813"
+    ],
+    "options_ta": [
+      "1773 ஒழுங்குமுறைச் சட்டம்",
+      "1784 பிட்டின் இந்தியச் சட்டம்",
+      "1793 சாசனச் சட்டம்",
+      "1813 சாசனச் சட்டம்"
+    ],
     "answer": "a",
-    "explanation_en": "Members nominated.",
-    "explanation_ta": "உறுப்பினர்கள் நியமிக்கப்பட்டனர்.",
-    "subject": "POLITY",
-    "topic": "historical_background"
+    "explanation_en": "The Regulating Act of 1773 was the first step by the British government to regulate EIC affairs.",
+    "explanation_ta": "1773 ஒழுங்குமுறைச் சட்டம் என்பது கம்பெனி விவகாரங்களை ஒழுங்குபடுத்த பிரிட்டிஷ் அரசாங்கம் எடுத்த முதல் படியாகும்."
   },
-
   {
-    "question_en": "Indian Councils Act 1892 introduced?",
-    "question_ta": "1892 சட்டம் என்ன அறிமுகப்படுத்தியது?",
-    "options_en": ["Indirect election","Direct election","Army","Tax"],
-    "options_ta": ["மறைமுக தேர்தல்","நேரடி தேர்தல்","படை","வரி"],
+    "id": "HB_E_016",
+    "subject": "Polity",
+    "topic": "Historical Background",
+    "difficulty": "Easy",
+    "question_type": "Direct",
+    "question": {
+      "en": "The Regulating Act of 1773 designated the Governor of Bengal as the Governor-General of Bengal. Who was the first person to hold this post?",
+      "ta": "1773 ஒழுங்குமுறைச் சட்டம் வங்காள ஆளுநரை வங்காள கவர்னர் ஜெனரலாக மாற்றியது. இப்பதவியைப் பெற்ற முதல் நபர் யார்?"
+    },
+    "options": [
+      {
+        "id": "A",
+        "en": "Warren Hastings",
+        "ta": "வாரன் ஹேஸ்டிங்ஸ்"
+      },
+      {
+        "id": "B",
+        "en": "Lord Cornwallis",
+        "ta": "காரன்வாலிஸ் பிரபு"
+      },
+      {
+        "id": "C",
+        "en": "Lord William Bentinck",
+        "ta": "வில்லியம் பெண்டிங்க் பிரபு"
+      },
+      {
+        "id": "D",
+        "en": "Lord Canning",
+        "ta": "கானிங் பிரபு"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "Warren Hastings became the first Governor-General of Bengal under the Regulating Act of 1773.",
+      "ta": "1773 ஒழுங்குமுறைச் சட்டத்தின் கீழ் வாரன் ஹேஸ்டிங்ஸ் வங்காளத்தின் முதல் கவர்னர் ஜெனரல் ஆனார்."
+    },
+    "why_not_others": {
+      "A": {
+        "en": "Correct. Warren Hastings was the first.",
+        "ta": "சரி. வாரன் ஹேஸ்டிங்ஸ் முதல் நபராவார்."
+      },
+      "B": {
+        "en": "Incorrect. Lord Cornwallis was the second GG of Bengal.",
+        "ta": "தவறு. காரன்வாலிஸ் வங்காளத்தின் இரண்டாவது கவர்னர் ஜெனரல் ஆவார்."
+      },
+      "C": {
+        "en": "Incorrect. William Bentinck was the first Governor-General of India.",
+        "ta": "தவறு. வில்லியம் பெண்டிங்க் முதல் இந்திய கவர்னர் ஜெனரல் ஆவார்."
+      },
+      "D": {
+        "en": "Incorrect. Lord Canning was the first Viceroy of India.",
+        "ta": "தவறு. கானிங் பிரபு முதல் இந்திய வைஸ்ராய் ஆவார்."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "The Act created an Executive Council of four members to assist the Governor-General.",
+      "ta": "கவர்னர் ஜெனரலுக்கு உதவ நான்கு உறுப்பினர்களைக் கொண்ட நிர்வாகக் குழுவை இச்சட்டம் உருவாக்கியது."
+    },
+    "revision_fact": {
+      "en": "The first executive council members were Philip Francis, Clavering, Monson, and Barwell.",
+      "ta": "முதல் நிர்வாகக் குழு உறுப்பினர்கள் பிலிப் பிரான்சிஸ், கிளேவரிங், மான்சன் மற்றும் பார்வெல் ஆவர்."
+    },
+    "source_reference": [
+      "M. Laxmikanth - Indian Polity",
+      "NCERT",
+      "Samacheer Kalvi"
+    ],
+    "bloom_level": "Remember",
+    "estimated_time_sec": 40,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Historical Background",
+      "Regulating Act 1773"
+    ],
+    "question_en": "The Regulating Act of 1773 designated the Governor of Bengal as the Governor-General of Bengal. Who was the first person to hold this post?",
+    "question_ta": "1773 ஒழுங்குமுறைச் சட்டம் வங்காள ஆளுநரை வங்காள கவர்னர் ஜெனரலாக மாற்றியது. இப்பதவியைப் பெற்ற முதல் நபர் யார்?",
+    "options_en": [
+      "Warren Hastings",
+      "Lord Cornwallis",
+      "Lord William Bentinck",
+      "Lord Canning"
+    ],
+    "options_ta": [
+      "வாரன் ஹேஸ்டிங்ஸ்",
+      "காரன்வாலிஸ் பிரபு",
+      "வில்லியம் பெண்டிங்க் பிரபு",
+      "கானிங் பிரபு"
+    ],
     "answer": "a",
-    "explanation_en": "Indirect election introduced.",
-    "explanation_ta": "மறைமுக தேர்தல் அறிமுகமானது.",
-    "subject": "POLITY",
-    "topic": "historical_background"
+    "explanation_en": "Warren Hastings became the first Governor-General of Bengal under the Regulating Act of 1773.",
+    "explanation_ta": "1773 ஒழுங்குமுறைச் சட்டத்தின் கீழ் வாரன் ஹேஸ்டிங்ஸ் வங்காளத்தின் முதல் கவர்னர் ஜெனரல் ஆனார்."
   },
-
   {
-    "question_en": "Arrange: 1773, 1784, 1813",
-    "question_ta": "வரிசைப்படுத்துக: 1773, 1784, 1813",
-    "options_en": ["Correct order","Wrong order","Mixed","None"],
-    "options_ta": ["சரி","தவறு","கலப்பு","எதுவுமில்லை"],
+    "id": "HB_E_017",
+    "subject": "Polity",
+    "topic": "Historical Background",
+    "difficulty": "Easy",
+    "question_type": "Direct",
+    "question": {
+      "en": "In which year was the Supreme Court established at Fort William in Calcutta under the provisions of the Regulating Act of 1773?",
+      "ta": "1773 ஒழுங்குமுறைச் சட்டத்தின் கீழ், கல்கத்தாவில் உள்ள வில்லியம் கோட்டையில் உச்ச நீதிமன்றம் நிறுவப்பட்ட ஆண்டு எது?"
+    },
+    "options": [
+      {
+        "id": "A",
+        "en": "1774",
+        "ta": "1774"
+      },
+      {
+        "id": "B",
+        "en": "1773",
+        "ta": "1773"
+      },
+      {
+        "id": "C",
+        "en": "1781",
+        "ta": "1781"
+      },
+      {
+        "id": "D",
+        "en": "1784",
+        "ta": "1784"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "The Supreme Court was established at Calcutta in 1774 with one Chief Justice and three other judges.",
+      "ta": "1774-இல் கல்கத்தாவில் ஒரு தலைமை நீதிபதி மற்றும் மூன்று நீதிபதிகளைக் கொண்ட உச்ச நீதிமன்றம் நிறுவப்பட்டது."
+    },
+    "why_not_others": {
+      "A": {
+        "en": "Correct. The Supreme Court was set up in 1774.",
+        "ta": "சரி. 1774-இல் உச்ச நீதிமன்றம் அமைக்கப்பட்டது."
+      },
+      "B": {
+        "en": "Incorrect. 1773 was the year the Regulating Act was passed.",
+        "ta": "தவறு. 1773 என்பது சட்டம் இயற்றப்பட்ட ஆண்டாகும்."
+      },
+      "C": {
+        "en": "Incorrect. 1781 was the Act of Settlement.",
+        "ta": "தவறு. 1781 என்பது திருத்தச் சட்டம் இயற்றப்பட்ட ஆண்டாகும்."
+      },
+      "D": {
+        "en": "Incorrect. 1784 was Pitt's India Act.",
+        "ta": "தவறு. 1784 என்பது பிட்டின் இந்தியச் சட்டம் ஆகும்."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "The court had jurisdiction over British subjects and EIC employees in Bengal.",
+      "ta": "இநீதிமன்றம் வங்காளத்தில் இருந்த பிரிட்டிஷ் குடிமக்கள் மற்றும் கம்பெனி ஊழியர்கள் மீது அதிகாரம் கொண்டிருந்தது."
+    },
+    "revision_fact": {
+      "en": "The court functioned independently of the Governor-General's Council.",
+      "ta": "இநீதிமன்றம் கவர்னர் ஜெனரல் குழுவிற்கு உட்படாமல் தனித்து செயல்பட்டது."
+    },
+    "source_reference": [
+      "M. Laxmikanth - Indian Polity",
+      "NCERT",
+      "Samacheer Kalvi"
+    ],
+    "bloom_level": "Remember",
+    "estimated_time_sec": 40,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Historical Background",
+      "Supreme Court at Calcutta"
+    ],
+    "question_en": "In which year was the Supreme Court established at Fort William in Calcutta under the provisions of the Regulating Act of 1773?",
+    "question_ta": "1773 ஒழுங்குமுறைச் சட்டத்தின் கீழ், கல்கத்தாவில் உள்ள வில்லியம் கோட்டையில் உச்ச நீதிமன்றம் நிறுவப்பட்ட ஆண்டு எது?",
+    "options_en": [
+      "1774",
+      "1773",
+      "1781",
+      "1784"
+    ],
+    "options_ta": [
+      "1774",
+      "1773",
+      "1781",
+      "1784"
+    ],
     "answer": "a",
-    "explanation_en": "Correct chronological order.",
-    "explanation_ta": "சரியான கால வரிசை.",
-    "subject": "POLITY",
-    "topic": "historical_background"
+    "explanation_en": "The Supreme Court was established at Calcutta in 1774 with one Chief Justice and three other judges.",
+    "explanation_ta": "1774-இல் கல்கத்தாவில் ஒரு தலைமை நீதிபதி மற்றும் மூன்று நீதிபதிகளைக் கொண்ட உச்ச நீதிமன்றம் நிறுவப்பட்டது."
   },
-
   {
-    "question_en": "Who abolished Company rule?",
-    "question_ta": "கம்பெனி ஆட்சியை யார் முடித்தார்?",
-    "options_en": ["British Crown","Parliament","Army","Governor"],
-    "options_ta": ["கிரௌன்","பாராளுமன்றம்","படை","கவர்னர்"],
+    "id": "HB_E_018",
+    "subject": "Polity",
+    "topic": "Historical Background",
+    "difficulty": "Easy",
+    "question_type": "Direct",
+    "question": {
+      "en": "Who was the first Chief Justice of the Supreme Court established at Calcutta in 1774?",
+      "ta": "1774-இல் கல்கத்தாவில் நிறுவப்பட்ட உச்ச நீதிமன்றத்தின் முதல் தலைமை நீதிபதி யார்?"
+    },
+    "options": [
+      {
+        "id": "A",
+        "en": "Sir Elijah Impey",
+        "ta": "சர் எலிஜா இம்பே"
+      },
+      {
+        "id": "B",
+        "en": "Sir Robert Chambers",
+        "ta": "சர் ராபர்ட் சேம்பர்ஸ்"
+      },
+      {
+        "id": "C",
+        "en": "Sir John Hyde",
+        "ta": "சர் ஜான் ஹைட்"
+      },
+      {
+        "id": "D",
+        "en": "Sir William Jones",
+        "ta": "சர் வில்லியம் ஜோன்ஸ்"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "Sir Elijah Impey was appointed as the first Chief Justice of the Calcutta Supreme Court.",
+      "ta": "சர் எலிஜா இம்பே கல்கத்தா உச்ச நீதிமன்றத்தின் முதல் தலைமை நீதிபதியாக நியமிக்கப்பட்டார்."
+    },
+    "why_not_others": {
+      "A": {
+        "en": "Correct. Elijah Impey was the first Chief Justice.",
+        "ta": "சரி. எலிஜா இம்பே முதல் தலைமை நீதிபதி ஆவார்."
+      },
+      "B": {
+        "en": "Incorrect. Chambers, Hyde, and Lemaistre were the puisne judges.",
+        "ta": "தவறு. சேம்பர்ஸ், ஹைட் மற்றும் லெமைஸ்தர் ஆகியோர் இதர நீதிபதிகள் ஆவர்."
+      },
+      "C": {
+        "en": "Incorrect. Sir John Hyde was an associate judge.",
+        "ta": "தவறு. ஜான் ஹைட் ஒரு துணை நீதிபதியாகப் பணியாற்றினார்."
+      },
+      "D": {
+        "en": "Incorrect. Sir William Jones founded the Asiatic Society in 1784.",
+        "ta": "தவறு. சர் வில்லியம் ஜோன்ஸ் 1784-இல் ஆசியடிக் சொசைட்டியை நிறுவினார்."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "Impey was a school friend of Governor-General Warren Hastings.",
+      "ta": "இம்பே கவர்னர் ஜெனரல் வாரன் ஹேஸ்டிங்ஸின் பள்ளி நண்பர் ஆவார்."
+    },
+    "revision_fact": {
+      "en": "The court comprised one Chief Justice and three puisne judges.",
+      "ta": "இநீதிமன்றத்தில் ஒரு தலைமை நீதிபதியும் மூன்று இதர நீதிபதிகளும் இருந்தனர்."
+    },
+    "source_reference": [
+      "M. Laxmikanth - Indian Polity",
+      "NCERT",
+      "Samacheer Kalvi"
+    ],
+    "bloom_level": "Remember",
+    "estimated_time_sec": 40,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Historical Background",
+      "Supreme Court at Calcutta"
+    ],
+    "question_en": "Who was the first Chief Justice of the Supreme Court established at Calcutta in 1774?",
+    "question_ta": "1774-இல் கல்கத்தாவில் நிறுவப்பட்ட உச்ச நீதிமன்றத்தின் முதல் தலைமை நீதிபதி யார்?",
+    "options_en": [
+      "Sir Elijah Impey",
+      "Sir Robert Chambers",
+      "Sir John Hyde",
+      "Sir William Jones"
+    ],
+    "options_ta": [
+      "சர் எலிஜா இம்பே",
+      "சர் ராபர்ட் சேம்பர்ஸ்",
+      "சர் ஜான் ஹைட்",
+      "சர் வில்லியம் ஜோன்ஸ்"
+    ],
     "answer": "a",
-    "explanation_en": "Crown took power.",
-    "explanation_ta": "கிரௌன் அதிகாரம் பெற்றது.",
-    "subject": "POLITY",
-    "topic": "historical_background"
+    "explanation_en": "Sir Elijah Impey was appointed as the first Chief Justice of the Calcutta Supreme Court.",
+    "explanation_ta": "சர் எலிஜா இம்பே கல்கத்தா உச்ச நீதிமன்றத்தின் முதல் தலைமை நீதிபதியாக நியமிக்கப்பட்டார்."
   },
-
   {
-    "question_en": "Dyarchy means?",
-    "question_ta": "Dyarchy என்றால் என்ன?",
-    "options_en": ["Dual rule","Single rule","Federal","None"],
-    "options_ta": ["இரட்டை ஆட்சி","ஒற்றை ஆட்சி","கூட்டாட்சி","எதுவுமில்லை"],
+    "id": "HB_E_019",
+    "subject": "Polity",
+    "topic": "Historical Background",
+    "difficulty": "Easy",
+    "question_type": "Direct",
+    "question": {
+      "en": "Which Act, also known as the Act of Settlement, was passed to rectify the defects of the Regulating Act of 1773?",
+      "ta": "1773 ஒழுங்குமுறைச் சட்டத்தின் குறைபாடுகளைக் களைய இயற்றப்பட்ட 'திருத்தச் சட்டம்' (Act of Settlement) எது?"
+    },
+    "options": [
+      {
+        "id": "A",
+        "en": "Amending Act of 1781",
+        "ta": "1781 திருத்தச் சட்டம்"
+      },
+      {
+        "id": "B",
+        "en": "Pitts India Act of 1784",
+        "ta": "1784 பிட்டின் இந்தியச் சட்டம்"
+      },
+      {
+        "id": "C",
+        "en": "Charter Act of 1793",
+        "ta": "1793 சாசனச் சட்டம்"
+      },
+      {
+        "id": "D",
+        "en": "Declaring Act of 1788",
+        "ta": "1788 அறிவிப்புச் சட்டம்"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "The Amending Act of 1781, or Act of Settlement, exempts the Governor-General and Council from the jurisdiction of the Supreme Court for official actions.",
+      "ta": "1781 திருத்தச் சட்டம் (அல்லது தீர்வுச் சட்டம்) கவர்னர் ஜெனரல் மற்றும் அவரது குழுவினரின் அதிகாரப்பூர்வ நடவடிக்கைகளை நீதிமன்ற அதிகார வரம்பிலிருந்து விலக்கியது."
+    },
+    "why_not_others": {
+      "A": {
+        "en": "Correct. Amending Act of 1781 is the Act of Settlement.",
+        "ta": "சரி. 1781 திருத்தச் சட்டம் தீர்வுச் சட்டம் எனப்படுகிறது."
+      },
+      "B": {
+        "en": "Incorrect. Pitt's India Act of 1784 introduced the dual control.",
+        "ta": "தவறு. பிட்டின் இந்தியச் சட்டம் இரட்டைக் கட்டுப்பாட்டை அறிமுகப்படுத்தியது."
+      },
+      "C": {
+        "en": "Incorrect. Charter Act of 1793 renewed the monopoly.",
+        "ta": "தவறு. 1793 சாசனச் சட்டம் ஏகபோகத்தை நீட்டித்தது."
+      },
+      "D": {
+        "en": "Incorrect. Declaring Act of 1788 clarified troop maintenance costs.",
+        "ta": "தவறு. 1788 சட்டம் ராணுவப் பராமரிப்புச் செலவுகளைத் தெளிவுபடுத்தியது."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "It settled the conflict between the Supreme Court and the Executive Council.",
+      "ta": "இது உச்ச நீதிமன்றத்திற்கும் நிர்வாகக் குழுவிற்கும் இடையிலான மோதல்களைத் தீர்த்து வைத்தது."
+    },
+    "revision_fact": {
+      "en": "It exempted revenue collectors and judicial officers of company courts from Supreme Court jurisdiction.",
+      "ta": "கம்பெனி வருவாய் வசூலிப்பாளர்கள் மற்றும் நீதிமன்ற அதிகாரிகளையும் உச்ச நீதிமன்ற வரம்பிலிருந்து விலக்கியது."
+    },
+    "source_reference": [
+      "M. Laxmikanth - Indian Polity",
+      "NCERT",
+      "Samacheer Kalvi"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 40,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Historical Background",
+      "Amending Act 1781"
+    ],
+    "question_en": "Which Act, also known as the Act of Settlement, was passed to rectify the defects of the Regulating Act of 1773?",
+    "question_ta": "1773 ஒழுங்குமுறைச் சட்டத்தின் குறைபாடுகளைக் களைய இயற்றப்பட்ட 'திருத்தச் சட்டம்' (Act of Settlement) எது?",
+    "options_en": [
+      "Amending Act of 1781",
+      "Pitts India Act of 1784",
+      "Charter Act of 1793",
+      "Declaring Act of 1788"
+    ],
+    "options_ta": [
+      "1781 திருத்தச் சட்டம்",
+      "1784 பிட்டின் இந்தியச் சட்டம்",
+      "1793 சாசனச் சட்டம்",
+      "1788 அறிவிப்புச் சட்டம்"
+    ],
     "answer": "a",
-    "explanation_en": "Dual governance system.",
-    "explanation_ta": "இரட்டை நிர்வாக முறை.",
-    "subject": "POLITY",
-    "topic": "historical_background"
+    "explanation_en": "The Amending Act of 1781, or Act of Settlement, exempts the Governor-General and Council from the jurisdiction of the Supreme Court for official actions.",
+    "explanation_ta": "1781 திருத்தச் சட்டம் (அல்லது தீர்வுச் சட்டம்) கவர்னர் ஜெனரல் மற்றும் அவரது குழுவினரின் அதிகாரப்பூர்வ நடவடிக்கைகளை நீதிமன்ற அதிகார வரம்பிலிருந்து விலக்கியது."
   },
-
   {
-    "question_en": "Federal system introduced in?",
-    "question_ta": "கூட்டாட்சி அமைப்பு எப்போது?",
-    "options_en": ["1935","1919","1909","1858"],
-    "options_ta": ["1935","1919","1909","1858"],
+    "id": "HB_E_020",
+    "subject": "Polity",
+    "topic": "Historical Background",
+    "difficulty": "Easy",
+    "question_type": "Direct",
+    "question": {
+      "en": "Which act established a Board of Control to supervise the civil, military, and revenue affairs of the EIC in India, introducing Dual Control?",
+      "ta": "இந்தியாவில் EIC-ன் சிவில், ராணுவ மற்றும் வருவாய் விவகாரங்களைக் கண்காணிக்க 'கட்டுப்பாட்டு வாரியத்தை' (Board of Control) உருவாக்கி இரட்டைக் கட்டுப்பாட்டை ஏற்படுத்திய சட்டம் எது?"
+    },
+    "options": [
+      {
+        "id": "A",
+        "en": "Pitts India Act of 1784",
+        "ta": "1784 பிட்டின் இந்தியச் சட்டம்"
+      },
+      {
+        "id": "B",
+        "en": "Regulating Act of 1773",
+        "ta": "1773 ஒழுங்குமுறைச் சட்டம்"
+      },
+      {
+        "id": "C",
+        "en": "Amending Act of 1781",
+        "ta": "1781 திருத்தச் சட்டம்"
+      },
+      {
+        "id": "D",
+        "en": "Charter Act of 1793",
+        "ta": "1793 சாசனச் சட்டம்"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "Pitt's India Act of 1784 introduced a Board of Control (political affairs) and Court of Directors (commercial affairs).",
+      "ta": "1784 பிட்டின் இந்தியச் சட்டம் கட்டுப்பாட்டு வாரியம் (அரசியல்) மற்றும் இயக்குநர்கள் குழு (வர்த்தகம்) என்ற அமைப்புகளை உருவாக்கியது."
+    },
+    "why_not_others": {
+      "A": {
+        "en": "Correct. Pitt's India Act of 1784 established it.",
+        "ta": "சரி. 1784 பிட்டின் இந்தியச் சட்டம் இதனை நிறுவியது."
+      },
+      "B": {
+        "en": "Incorrect. Regulating Act had no Board of Control.",
+        "ta": "தவறு. ஒழுங்குமுறைச் சட்டத்தில் கட்டுப்பாட்டு வாரியம் இல்லை."
+      },
+      "C": {
+        "en": "Incorrect. Act of 1781 dealt with judicial jurisdiction.",
+        "ta": "தவறு. 1781 சட்டம் நீதித்துறை அதிகார வரம்பு தொடர்பானது."
+      },
+      "D": {
+        "en": "Incorrect. Charter Act of 1793 renewed EIC charter.",
+        "ta": "தவறு. 1793 சட்டம் சாசனத்தை நீட்டித்தது மாத்திரமே."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "This act divided EIC activities into political and commercial functions.",
+      "ta": "இச்சட்டம் கம்பெனியின் செயல்பாடுகளை அரசியல் மற்றும் வணிகப் பணிகளாகப் பிரித்தது."
+    },
+    "revision_fact": {
+      "en": "The Board of Control consisted of six members headed by a cabinet minister.",
+      "ta": "கட்டுப்பாட்டு வாரியம் அமைச்சரவை அமைச்சர் தலைமையிலான ஆறு உறுப்பினர்களைக் கொண்டது."
+    },
+    "source_reference": [
+      "M. Laxmikanth - Indian Polity",
+      "NCERT",
+      "Samacheer Kalvi"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 40,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Historical Background",
+      "Pitt's India Act 1784"
+    ],
+    "question_en": "Which act established a Board of Control to supervise the civil, military, and revenue affairs of the EIC in India, introducing Dual Control?",
+    "question_ta": "இந்தியாவில் EIC-ன் சிவில், ராணுவ மற்றும் வருவாய் விவகாரங்களைக் கண்காணிக்க 'கட்டுப்பாட்டு வாரியத்தை' (Board of Control) உருவாக்கி இரட்டைக் கட்டுப்பாட்டை ஏற்படுத்திய சட்டம் எது?",
+    "options_en": [
+      "Pitts India Act of 1784",
+      "Regulating Act of 1773",
+      "Amending Act of 1781",
+      "Charter Act of 1793"
+    ],
+    "options_ta": [
+      "1784 பிட்டின் இந்தியச் சட்டம்",
+      "1773 ஒழுங்குமுறைச் சட்டம்",
+      "1781 திருத்தச் சட்டம்",
+      "1793 சாசனச் சட்டம்"
+    ],
     "answer": "a",
-    "explanation_en": "1935 Act introduced federal system.",
-    "explanation_ta": "1935 சட்டம் கூட்டாட்சியை அறிமுகப்படுத்தியது.",
-    "subject": "POLITY",
-    "topic": "historical_background"
+    "explanation_en": "Pitt's India Act of 1784 introduced a Board of Control (political affairs) and Court of Directors (commercial affairs).",
+    "explanation_ta": "1784 பிட்டின் இந்தியச் சட்டம் கட்டுப்பாட்டு வாரியம் (அரசியல்) மற்றும் இயக்குநர்கள் குழு (வர்த்தகம்) என்ற அமைப்புகளை உருவாக்கியது."
   },
-
   {
-    "question_en": "Separate electorate means?",
-    "question_ta": "தனி வாக்காளர் முறை என்றால்?",
-    "options_en": ["Separate voting","Common voting","Army","None"],
-    "options_ta": ["தனி வாக்கு","ஒன்றுபட்ட வாக்கு","படை","எதுவுமில்லை"],
+    "id": "HB_E_021",
+    "subject": "Polity",
+    "topic": "Historical Background",
+    "difficulty": "Easy",
+    "question_type": "Direct",
+    "question": {
+      "en": "Under which act were the company's territories in India called the 'British possessions in India' for the first time?",
+      "ta": "எந்தச் சட்டத்தின் கீழ் இந்தியாவில் உள்ள கம்பெனியின் பகுதிகள் முதன்முறையாக 'இந்தியாவில் உள்ள பிரிட்டிஷ் உடைமைகள்' என்று அழைக்கப்பட்டன?"
+    },
+    "options": [
+      {
+        "id": "A",
+        "en": "Pitts India Act of 1784",
+        "ta": "1784 பிட்டின் இந்தியச் சட்டம்"
+      },
+      {
+        "id": "B",
+        "en": "Regulating Act of 1773",
+        "ta": "1773 ஒழுங்குமுறைச் சட்டம்"
+      },
+      {
+        "id": "C",
+        "en": "Charter Act of 1813",
+        "ta": "1813 சாசனச் சட்டம்"
+      },
+      {
+        "id": "D",
+        "en": "Charter Act of 1833",
+        "ta": "1833 சாசனச் சட்டம்"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "Pitt's India Act of 1784 explicitly declared the company's territories as 'British possessions in India'.",
+      "ta": "1784 பிட்டின் இந்தியச் சட்டம் கம்பெனி பகுதிகளை 'இந்தியாவில் உள்ள பிரிட்டிஷ் உடைமைகள்' என வெளிப்படையாக அறிவித்தது."
+    },
+    "why_not_others": {
+      "A": {
+        "en": "Correct. Pitt's India Act of 1784 made this declaration.",
+        "ta": "சரி. 1784 பிட்டின் இந்தியச் சட்டம் இந்த அறிவிப்பைச் செய்தது."
+      },
+      "B": {
+        "en": "Incorrect. Regulating Act used 'Company territories'.",
+        "ta": "தவறு. ஒழுங்குமுறைச் சட்டம் 'கம்பெனி பகுதிகள்' என்றே பயன்படுத்தியது."
+      },
+      "C": {
+        "en": "Incorrect. 1813 Act asserted Crown sovereignty but was not the first.",
+        "ta": "தவறு. 1813 சட்டம் அரசு இறையாண்மையை வலியுறுத்தியது, ஆனால் இது முதல் முறையல்ல."
+      },
+      "D": {
+        "en": "Incorrect. 1833 Act centralized administration.",
+        "ta": "தவறு. 1833 சட்டம் நிர்வாகத்தை மையப்படுத்தியது மாத்திரமே."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "This established the ultimate sovereignty of the British Crown over Indian territories.",
+      "ta": "இது இந்தியப் பகுதிகள் மீது பிரிட்டிஷ் அரசாங்கத்தின் இறுதி இறையாண்மையை நிறுவியது."
+    },
+    "revision_fact": {
+      "en": "William Pitt the Younger was the Prime Minister of Britain at this time.",
+      "ta": "இச்சட்டம் இயற்றப்பட்ட போது வில்லியம் பிட் பிரிட்டிஷ் பிரதமராக இருந்தார்."
+    },
+    "source_reference": [
+      "M. Laxmikanth - Indian Polity",
+      "NCERT",
+      "Samacheer Kalvi"
+    ],
+    "bloom_level": "Remember",
+    "estimated_time_sec": 40,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Historical Background",
+      "Pitt's India Act 1784"
+    ],
+    "question_en": "Under which act were the company's territories in India called the 'British possessions in India' for the first time?",
+    "question_ta": "எந்தச் சட்டத்தின் கீழ் இந்தியாவில் உள்ள கம்பெனியின் பகுதிகள் முதன்முறையாக 'இந்தியாவில் உள்ள பிரிட்டிஷ் உடைமைகள்' என்று அழைக்கப்பட்டன?",
+    "options_en": [
+      "Pitts India Act of 1784",
+      "Regulating Act of 1773",
+      "Charter Act of 1813",
+      "Charter Act of 1833"
+    ],
+    "options_ta": [
+      "1784 பிட்டின் இந்தியச் சட்டம்",
+      "1773 ஒழுங்குமுறைச் சட்டம்",
+      "1813 சாசனச் சட்டம்",
+      "1833 சாசனச் சட்டம்"
+    ],
     "answer": "a",
-    "explanation_en": "Separate voting for communities.",
-    "explanation_ta": "சமூகங்களுக்கான தனி வாக்கு.",
-    "subject": "POLITY",
-    "topic": "historical_background"
+    "explanation_en": "Pitt's India Act of 1784 explicitly declared the company's territories as 'British possessions in India'.",
+    "explanation_ta": "1784 பிட்டின் இந்தியச் சட்டம் கம்பெனி பகுதிகளை 'இந்தியாவில் உள்ள பிரிட்டிஷ் உடைமைகள்' என வெளிப்படையாக அறிவித்தது."
   },
-
   {
-    "question_en": "Largest Act before independence?",
-    "question_ta": "சுதந்திரத்திற்கு முன் மிகப்பெரிய சட்டம் எது?",
-    "options_en": ["1935 Act","1919 Act","1909 Act","1858 Act"],
-    "options_ta": ["1935","1919","1909","1858"],
+    "id": "HB_E_022",
+    "subject": "Polity",
+    "topic": "Historical Background",
+    "difficulty": "Easy",
+    "question_type": "Direct",
+    "question": {
+      "en": "Which act extended the trade monopoly of the East India Company for another 20 years at the end of the 18th century?",
+      "ta": "18-ஆம் நூற்றாண்டின் இறுதியில் கிழக்கிந்தியக் கம்பெனியின் வர்த்தக ஏகபோகத்தை மேலும் 20 ஆண்டுகளுக்கு நீட்டித்த சட்டம் எது?"
+    },
+    "options": [
+      {
+        "id": "A",
+        "en": "Charter Act of 1793",
+        "ta": "1793 சாசனச் சட்டம்"
+      },
+      {
+        "id": "B",
+        "en": "Pitts India Act of 1784",
+        "ta": "1784 பிட்டின் இந்தியச் சட்டம்"
+      },
+      {
+        "id": "C",
+        "en": "Charter Act of 1813",
+        "ta": "1813 சாசனச் சட்டம்"
+      },
+      {
+        "id": "D",
+        "en": "Charter Act of 1833",
+        "ta": "1833 சாசனச் சட்டம்"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "The Charter Act of 1793 renewed the trade monopoly of the EIC for an additional 20 years.",
+      "ta": "1793 சாசனச் சட்டம் கம்பெனியின் வர்த்தக ஏகபோகத்தை மேலும் 20 ஆண்டுகளுக்கு நீட்டித்தது."
+    },
+    "why_not_others": {
+      "A": {
+        "en": "Correct. Charter Act of 1793 renewed it.",
+        "ta": "சரி. 1793 சாசனச் சட்டம் இதனை நீட்டித்தது."
+      },
+      "B": {
+        "en": "Incorrect. 1784 Act did not renew charter; it reformed control.",
+        "ta": "தவறு. 1784 சட்டம் சாசனத்தை நீட்டிக்கவில்லை; கட்டுப்பாட்டை சீரமைத்தது."
+      },
+      "C": {
+        "en": "Incorrect. 1813 Act ended EIC monopoly partially.",
+        "ta": "தவறு. 1813 சட்டம் ஏகபோகத்தை பகுதியளவு ஒழித்தது."
+      },
+      "D": {
+        "en": "Incorrect. 1833 Act ended EIC monopoly completely.",
+        "ta": "தவறு. 1833 சட்டம் ஏகபோகத்தை முழுமையாக ஒழித்தது."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "All Charter Acts from 1793 to 1853 renewed EIC's administrative role in 20-year blocks.",
+      "ta": "1793 முதல் 1853 வரையிலான அனைத்து சாசனச் சட்டங்களும் 20 ஆண்டு கால அளவில் கம்பெனி நிர்வாகத்தை நீட்டித்தன."
+    },
+    "revision_fact": {
+      "en": "The 1793 Act consolidated all previous laws of EIC.",
+      "ta": "1793 சட்டம் கம்பெனியின் முந்தைய அனைத்து சட்டங்களையும் ஒருங்கிணைத்தது."
+    },
+    "source_reference": [
+      "M. Laxmikanth - Indian Polity",
+      "NCERT",
+      "Samacheer Kalvi"
+    ],
+    "bloom_level": "Remember",
+    "estimated_time_sec": 40,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Historical Background",
+      "Charter Act 1793"
+    ],
+    "question_en": "Which act extended the trade monopoly of the East India Company for another 20 years at the end of the 18th century?",
+    "question_ta": "18-ஆம் நூற்றாண்டின் இறுதியில் கிழக்கிந்தியக் கம்பெனியின் வர்த்தக ஏகபோகத்தை மேலும் 20 ஆண்டுகளுக்கு நீட்டித்த சட்டம் எது?",
+    "options_en": [
+      "Charter Act of 1793",
+      "Pitts India Act of 1784",
+      "Charter Act of 1813",
+      "Charter Act of 1833"
+    ],
+    "options_ta": [
+      "1793 சாசனச் சட்டம்",
+      "1784 பிட்டின் இந்தியச் சட்டம்",
+      "1813 சாசனச் சட்டம்",
+      "1833 சாசனச் சட்டம்"
+    ],
     "answer": "a",
-    "explanation_en": "1935 Act had maximum provisions.",
-    "explanation_ta": "1935 சட்டம் மிகப்பெரியது.",
-    "subject": "POLITY",
-    "topic": "historical_background"
+    "explanation_en": "The Charter Act of 1793 renewed the trade monopoly of the EIC for an additional 20 years.",
+    "explanation_ta": "1793 சாசனச் சட்டம் கம்பெனியின் வர்த்தக ஏகபோகத்தை மேலும் 20 ஆண்டுகளுக்கு நீட்டித்தது."
   },
-
   {
-    "question_en": "India became independent in?",
-    "question_ta": "இந்தியா எப்போது சுதந்திரம் பெற்றது?",
-    "options_en": ["1947","1950","1935","1919"],
-    "options_ta": ["1947","1950","1935","1919"],
+    "id": "HB_E_023",
+    "subject": "Polity",
+    "topic": "Historical Background",
+    "difficulty": "Easy",
+    "question_type": "Direct",
+    "question": {
+      "en": "Under the Charter Act of 1793, the salaries of the Board of Control members and their staff were to be paid from which source?",
+      "ta": "1793 சாசனச் சட்டத்தின்படி, கட்டுப்பாட்டு வாரிய உறுப்பினர்கள் மற்றும் ஊழியர்களின் சம்பளம் எதிலிருந்து வழங்கப்பட வேண்டும்?"
+    },
+    "options": [
+      {
+        "id": "A",
+        "en": "Indian Revenues",
+        "ta": "இந்திய வருவாய்"
+      },
+      {
+        "id": "B",
+        "en": "British Treasury",
+        "ta": "Britis கருவூலம்"
+      },
+      {
+        "id": "C",
+        "en": "EIC Commercial Profits",
+        "ta": "EIC வர்த்தக லாபம்"
+      },
+      {
+        "id": "D",
+        "en": "Land Taxes of Bengal only",
+        "ta": "வங்காள நிலவரி மட்டும்"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "The Charter Act of 1793 mandated that the Board of Control was to be paid out of the Indian revenues.",
+      "ta": "கட்டுப்பாட்டு வாரியத்தின் சம்பளம் இந்திய வருவாயிலிருந்து வழங்கப்பட வேண்டும் என்று 1793 சாசனச் சட்டம் கட்டாயமாக்கியது."
+    },
+    "why_not_others": {
+      "A": {
+        "en": "Correct. Salaries were paid from Indian Revenues.",
+        "ta": "சரி. சம்பளம் இந்திய வருவாயிலிருந்து வழங்கப்பட்டது."
+      },
+      "B": {
+        "en": "Incorrect. British Treasury was not charged.",
+        "ta": "தவறு. பிரிட்டிஷ் கருவூலம் இதற்குப் பயன்படுத்தப்படவில்லை."
+      },
+      "C": {
+        "en": "Incorrect. EIC commercial profits were kept separate.",
+        "ta": "தவறு. கம்பெனி வணிக லாபம் தனித்து வைக்கப்பட்டது."
+      },
+      "D": {
+        "en": "Incorrect. Charged on general Indian revenues, not just Bengal.",
+        "ta": "தவறு. வங்காளம் மட்டுமின்றி ஒட்டுமொத்த இந்திய வருவாயின் மீது சுமத்தப்பட்டது."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "This provision was criticized as a form of economic drain ('Drain of Wealth').",
+      "ta": "இவ்விதிமுறை பொருளாதாரச் சுரண்டலின் (செல்வச் சுரண்டல்) ஒரு வடிவம் என விமர்சிக்கப்பட்டது."
+    },
+    "revision_fact": {
+      "en": "This system continued until the Government of India Act 1919.",
+      "ta": "இம்முறை 1919 இந்திய அரசுச் சட்டம் வரை நீடித்தது."
+    },
+    "source_reference": [
+      "M. Laxmikanth - Indian Polity",
+      "NCERT",
+      "Samacheer Kalvi"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 40,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Historical Background",
+      "Charter Act 1793"
+    ],
+    "question_en": "Under the Charter Act of 1793, the salaries of the Board of Control members and their staff were to be paid from which source?",
+    "question_ta": "1793 சாசனச் சட்டத்தின்படி, கட்டுப்பாட்டு வாரிய உறுப்பினர்கள் மற்றும் ஊழியர்களின் சம்பளம் எதிலிருந்து வழங்கப்பட வேண்டும்?",
+    "options_en": [
+      "Indian Revenues",
+      "British Treasury",
+      "EIC Commercial Profits",
+      "Land Taxes of Bengal only"
+    ],
+    "options_ta": [
+      "இந்திய வருவாய்",
+      "Britis கருவூலம்",
+      "EIC வர்த்தக லாபம்",
+      "வங்காள நிலவரி மட்டும்"
+    ],
     "answer": "a",
-    "explanation_en": "India gained independence in 1947.",
-    "explanation_ta": "1947 இந்தியா சுதந்திரம் பெற்றது.",
-    "subject": "POLITY",
-    "topic": "historical_background"
+    "explanation_en": "The Charter Act of 1793 mandated that the Board of Control was to be paid out of the Indian revenues.",
+    "explanation_ta": "கட்டுப்பாட்டு வாரியத்தின் சம்பளம் இந்திய வருவாயிலிருந்து வழங்கப்பட வேண்டும் என்று 1793 சாசனச் சட்டம் கட்டாயமாக்கியது."
+  },
+  {
+    "id": "HB_E_024",
+    "subject": "Polity",
+    "topic": "Historical Background",
+    "difficulty": "Easy",
+    "question_type": "Direct",
+    "question": {
+      "en": "Which act abolished the East India Company's trade monopoly in India, opening trade to all British merchants except for tea and China trade?",
+      "ta": "தேயிலை மற்றும் சீனாவுடனான வர்த்தகம் தவிர, இந்தியாவில் கிழக்கிந்தியக் கம்பெனியின் வர்த்தக ஏகபோகத்தை ஒழித்து அனைத்து பிரிட்டிஷ் வணிகர்களுக்கும் கதவைத் திறந்த சட்டம் எது?"
+    },
+    "options": [
+      {
+        "id": "A",
+        "en": "Charter Act of 1813",
+        "ta": "1813 சாசனச் சட்டம்"
+      },
+      {
+        "id": "B",
+        "en": "Charter Act of 1793",
+        "ta": "1793 சாசனச் சட்டம்"
+      },
+      {
+        "id": "C",
+        "en": "Charter Act of 1833",
+        "ta": "1833 சாசனச் சட்டம்"
+      },
+      {
+        "id": "D",
+        "en": "Charter Act of 1853",
+        "ta": "1853 சாசனச் சட்டம்"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "The Charter Act of 1813 ended EIC's trade monopoly in India, keeping only tea and China trade monopoly.",
+      "ta": "1813 சாசனச் சட்டம் தேயிலை மற்றும் சீன வர்த்தகம் தவிர, இந்தியாவில் கம்பெனியின் வர்த்தக ஏகபோகத்தை ஒழித்தது."
+    },
+    "why_not_others": {
+      "A": {
+        "en": "Correct. Charter Act of 1813 introduced this change.",
+        "ta": "சரி. 1813 சாசனச் சட்டம் இம்மாற்றத்தை ஏற்படுத்தியது."
+      },
+      "B": {
+        "en": "Incorrect. 1793 Act renewed EIC trade monopoly fully.",
+        "ta": "தவறு. 1793 சட்டம் கம்பெனி வர்த்தக ஏகபோகத்தை முழுமையாக நீட்டித்தது."
+      },
+      "C": {
+        "en": "Incorrect. 1833 Act ended EIC monopoly completely.",
+        "ta": "தவறு. 1833 சட்டம் ஏகபோகத்தை முழுமையாக ஒழித்தது."
+      },
+      "D": {
+        "en": "Incorrect. 1853 Act did not deal with trade monopoly.",
+        "ta": "தவறு. 1853 சட்டம் வர்த்தக ஏகபோகம் சார்ந்தது அல்ல."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "Napoleon's continental system forced the British government to open Indian trade.",
+      "ta": "நெப்போலியனின் கண்டங்கள் தட்டுப்பாடு கொள்கை இந்திய வர்த்தகத்தைத் திறக்க வழிவகுத்தது."
+    },
+    "revision_fact": {
+      "en": "This was the first major step to reduce EIC's mercantile power.",
+      "ta": "இது கம்பெனியின் வணிக அதிகாரத்தைக் குறைக்க எடுக்கப்பட்ட முதல் முக்கிய படியாகும்."
+    },
+    "source_reference": [
+      "M. Laxmikanth - Indian Polity",
+      "NCERT",
+      "Samacheer Kalvi"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 40,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Historical Background",
+      "Charter Act 1813"
+    ],
+    "question_en": "Which act abolished the East India Company's trade monopoly in India, opening trade to all British merchants except for tea and China trade?",
+    "question_ta": "தேயிலை மற்றும் சீனாவுடனான வர்த்தகம் தவிர, இந்தியாவில் கிழக்கிந்தியக் கம்பெனியின் வர்த்தக ஏகபோகத்தை ஒழித்து அனைத்து பிரிட்டிஷ் வணிகர்களுக்கும் கதவைத் திறந்த சட்டம் எது?",
+    "options_en": [
+      "Charter Act of 1813",
+      "Charter Act of 1793",
+      "Charter Act of 1833",
+      "Charter Act of 1853"
+    ],
+    "options_ta": [
+      "1813 சாசனச் சட்டம்",
+      "1793 சாசனச் சட்டம்",
+      "1833 சாசனச் சட்டம்",
+      "1853 சாசனச் சட்டம்"
+    ],
+    "answer": "a",
+    "explanation_en": "The Charter Act of 1813 ended EIC's trade monopoly in India, keeping only tea and China trade monopoly.",
+    "explanation_ta": "1813 சாசனச் சட்டம் தேயிலை மற்றும் சீன வர்த்தகம் தவிர, இந்தியாவில் கம்பெனியின் வர்த்தக ஏகபோகத்தை ஒழித்தது."
+  },
+  {
+    "id": "HB_E_025",
+    "subject": "Polity",
+    "topic": "Historical Background",
+    "difficulty": "Easy",
+    "question_type": "Direct",
+    "question": {
+      "en": "Which act officially permitted Christian Missionaries to enter India and preach their religion?",
+      "ta": "கிறிஸ்தவ மிஷனரிகள் இந்தியாவிற்குள் நுழைந்து தங்களது மதத்தைப் பரப்ப அதிகாரப்பூர்வமாக அனுமதித்த சட்டம் எது?"
+    },
+    "options": [
+      {
+        "id": "A",
+        "en": "Charter Act of 1813",
+        "ta": "1813 சாசனச் சட்டம்"
+      },
+      {
+        "id": "B",
+        "en": "Charter Act of 1793",
+        "ta": "1793 சாசனச் சட்டம்"
+      },
+      {
+        "id": "C",
+        "en": "Charter Act of 1833",
+        "ta": "1833 சாசனச் சட்டம்"
+      },
+      {
+        "id": "D",
+        "en": "Charter Act of 1853",
+        "ta": "1853 சாசனச் சட்டம்"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "The Charter Act of 1813 allowed Christian Missionaries to come to India for moral and religious improvement.",
+      "ta": "1813 சாசனச் சட்டம் கிறிஸ்தவ மிஷனரிகள் சமயம் மற்றும் ஒழுக்கத்தை மேம்படுத்த இந்தியாவிற்கு வர அனுமதித்தது."
+    },
+    "why_not_others": {
+      "A": {
+        "en": "Correct. Charter Act of 1813 allowed missionaries.",
+        "ta": "சரி. 1813 சாசனச் சட்டம் மிஷனரிகளை அனுமதித்தது."
+      },
+      "B": {
+        "en": "Incorrect. 1793 Act did not have this provision.",
+        "ta": "தவறு. 1793 சாசனச் சட்டத்தில் இந்த அனுமதி இல்லை."
+      },
+      "C": {
+        "en": "Incorrect. 1833 Act expanded rights but was not the origin.",
+        "ta": "தவறு. 1833 சட்டம் உரிமைகளை விரிவுபடுத்தியதே தவிர, இது ஆரம்பம் அல்ல."
+      },
+      "D": {
+        "en": "Incorrect. 1853 Act was the last charter and focused on civil service and councils.",
+        "ta": "தவறு. 1853 சட்டம் சட்டமன்றக் குழு மற்றும் குடிமைப் பணிகளில் கவனம் செலுத்தியது."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "Missionaries were required to obtain a license from the Court of Directors or Board of Control.",
+      "ta": "மிஷனரிகள் இயக்குநர்கள் குழு அல்லது கட்டுப்பாட்டு வாரியத்திடம் உரிமம் பெற வேண்டும்."
+    },
+    "revision_fact": {
+      "en": "This led to early English educational institutions in India.",
+      "ta": "இது இந்தியாவில் ஆங்கிலக் கல்வி நிறுவனங்கள் உருவாகக் காரணமாக அமைந்தது."
+    },
+    "source_reference": [
+      "M. Laxmikanth - Indian Polity",
+      "NCERT",
+      "Samacheer Kalvi"
+    ],
+    "bloom_level": "Remember",
+    "estimated_time_sec": 40,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Historical Background",
+      "Charter Act 1813"
+    ],
+    "question_en": "Which act officially permitted Christian Missionaries to enter India and preach their religion?",
+    "question_ta": "கிறிஸ்தவ மிஷனரிகள் இந்தியாவிற்குள் நுழைந்து தங்களது மதத்தைப் பரப்ப அதிகாரப்பூர்வமாக அனுமதித்த சட்டம் எது?",
+    "options_en": [
+      "Charter Act of 1813",
+      "Charter Act of 1793",
+      "Charter Act of 1833",
+      "Charter Act of 1853"
+    ],
+    "options_ta": [
+      "1813 சாசனச் சட்டம்",
+      "1793 சாசனச் சட்டம்",
+      "1833 சாசனச் சட்டம்",
+      "1853 சாசனச் சட்டம்"
+    ],
+    "answer": "a",
+    "explanation_en": "The Charter Act of 1813 allowed Christian Missionaries to come to India for moral and religious improvement.",
+    "explanation_ta": "1813 சாசனச் சட்டம் கிறிஸ்தவ மிஷனரிகள் சமயம் மற்றும் ஒழுக்கத்தை மேம்படுத்த இந்தியாவிற்கு வர அனுமதித்தது."
+  },
+  {
+    "id": "HB_E_026",
+    "subject": "Polity",
+    "topic": "Historical Background",
+    "difficulty": "Easy",
+    "question_type": "Direct",
+    "question": {
+      "en": "Which act made the first financial provision of 1 Lakh rupees annually for the promotion of education and science in India?",
+      "ta": "இந்தியாவில் கல்வி மற்றும் அறிவியல் வளர்ச்சிக்காக ஆண்டுக்கு ₹1 லட்சம் நிதி ஒதுக்கீடு செய்த முதல் சட்டம் எது?"
+    },
+    "options": [
+      {
+        "id": "A",
+        "en": "Charter Act of 1813",
+        "ta": "1813 சாசனச் சட்டம்"
+      },
+      {
+        "id": "B",
+        "en": "Charter Act of 1793",
+        "ta": "1793 சாசனச் சட்டம்"
+      },
+      {
+        "id": "C",
+        "en": "Charter Act of 1833",
+        "ta": "1833 சாசனச் சட்டம்"
+      },
+      {
+        "id": "D",
+        "en": "Charter Act of 1853",
+        "ta": "1853 சாசனச் சட்டம்"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "The Charter Act of 1813 directed the EIC to spend ₹1 Lakh annually for education.",
+      "ta": "1813 சாசனச் சட்டம் கல்விக்காக ஆண்டுக்கு ₹1 லட்சம் செலவிட கம்பெனிக்கு உத்தரவிட்டது."
+    },
+    "why_not_others": {
+      "A": {
+        "en": "Correct. Charter Act of 1813 introduced the ₹1 Lakh education grant.",
+        "ta": "சரி. 1813 சாசனச் சட்டம் ₹1 லட்சம் கல்வி மானியத்தை அறிமுகப்படுத்தியது."
+      },
+      "B": {
+        "en": "Incorrect. 1793 Act did not fund education.",
+        "ta": "தவறு. 1793 சாசனச் சட்டம் கல்விக்கு நிதியளிக்கவில்லை."
+      },
+      "C": {
+        "en": "Incorrect. 1833 Act increased the amount but was not the first.",
+        "ta": "தவறு. 1833 சட்டம் தொகையை அதிகரித்தது, ஆனால் இது முதல் முறை அல்ல."
+      },
+      "D": {
+        "en": "Incorrect. 1853 Act did not introduce this grant.",
+        "ta": "தவறு. 1853 சட்டம் இக்குறிப்பிட்ட மானியத்தை அறிமுகப்படுத்தவில்லை."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "The fund remained unspent for years due to the Anglicist-Orientalist controversy.",
+      "ta": "ஆங்கிலேய-கீழைத்தேயவாதிகள் மோதலால் இந்நிதி பல ஆண்டுகள் செலவிடப்படாமல் இருந்தது."
+    },
+    "revision_fact": {
+      "en": "This was the first state funding for public education in India.",
+      "ta": "இது இந்தியாவில் பொதுக் கல்விக்காக அரசாங்கம் ஒதுக்கிய முதல் நிதியாகும்."
+    },
+    "source_reference": [
+      "M. Laxmikanth - Indian Polity",
+      "NCERT",
+      "Samacheer Kalvi"
+    ],
+    "bloom_level": "Remember",
+    "estimated_time_sec": 40,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Historical Background",
+      "Charter Act 1813"
+    ],
+    "question_en": "Which act made the first financial provision of 1 Lakh rupees annually for the promotion of education and science in India?",
+    "question_ta": "இந்தியாவில் கல்வி மற்றும் அறிவியல் வளர்ச்சிக்காக ஆண்டுக்கு ₹1 லட்சம் நிதி ஒதுக்கீடு செய்த முதல் சட்டம் எது?",
+    "options_en": [
+      "Charter Act of 1813",
+      "Charter Act of 1793",
+      "Charter Act of 1833",
+      "Charter Act of 1853"
+    ],
+    "options_ta": [
+      "1813 சாசனச் சட்டம்",
+      "1793 சாசனச் சட்டம்",
+      "1833 சாசனச் சட்டம்",
+      "1853 சாசனச் சட்டம்"
+    ],
+    "answer": "a",
+    "explanation_en": "The Charter Act of 1813 directed the EIC to spend ₹1 Lakh annually for education.",
+    "explanation_ta": "1813 சாசனச் சட்டம் கல்விக்காக ஆண்டுக்கு ₹1 லட்சம் செலவிட கம்பெனிக்கு உத்தரவிட்டது."
+  },
+  {
+    "id": "HB_E_027",
+    "subject": "Polity",
+    "topic": "Historical Background",
+    "difficulty": "Easy",
+    "question_type": "Direct",
+    "question": {
+      "en": "Which act redesignated the Governor-General of Bengal as the Governor-General of India, centralizing power?",
+      "ta": "வங்காள கவர்னர் ஜெனரல் பதவியை இந்திய கவர்னர் ஜெனரல் என மாற்றி, அதிகாரத்தை ஒரு முகப்படுத்திய சட்டம் எது?"
+    },
+    "options": [
+      {
+        "id": "A",
+        "en": "Charter Act of 1833",
+        "ta": "1833 சாசனச் சட்டம்"
+      },
+      {
+        "id": "B",
+        "en": "Charter Act of 1813",
+        "ta": "1813 சாசனச் சட்டம்"
+      },
+      {
+        "id": "C",
+        "en": "Charter Act of 1853",
+        "ta": "1853 சாசனச் சட்டம்"
+      },
+      {
+        "id": "D",
+        "en": "Government of India Act 1858",
+        "ta": "1858 இந்திய அரசுச் சட்டம்"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "The Charter Act of 1833 created the post of Governor-General of India, vesting all civil and military authority in him.",
+      "ta": "1833 சாசனச் சட்டம் இந்திய கவர்னர் ஜெனரல் பதவியை உருவாக்கி, அவரிடம் அனைத்து சிவில் மற்றும் ராணுவ அதிகாரங்களையும் ஒப்படைத்தது."
+    },
+    "why_not_others": {
+      "A": {
+        "en": "Correct. Charter Act of 1833 created this post.",
+        "ta": "சரி. 1833 சாசனச் சட்டம் இப்பதவியை உருவாக்கியது."
+      },
+      "B": {
+        "en": "Incorrect. 1813 Act retained Governor-General of Bengal.",
+        "ta": "தவறு. 1813 சட்டம் வங்காள கவர்னர் ஜெனரல் பதவியையே தக்கவைத்தது."
+      },
+      "C": {
+        "en": "Incorrect. 1853 Act kept the same designation but reformed the council.",
+        "ta": "தவறு. 1853 சட்டம் இப்பதவியைத் தக்கவைத்து, குழுவை சீரமைத்தது."
+      },
+      "D": {
+        "en": "Incorrect. 1858 Act created the Viceroy designation.",
+        "ta": "தவறு. 1858 சட்டம் வைஸ்ராய் பதவியை உருவாக்கியது."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "This act was the peak of administrative centralization in British India.",
+      "ta": "இச்சட்டம் பிரிட்டிஷ் இந்தியாவின் நிர்வாக மையப்படுத்துதலின் உச்சகட்டமாகும்."
+    },
+    "revision_fact": {
+      "en": "Madras and Bombay presidencies lost their legislative powers under this act.",
+      "ta": "மெட்ராஸ் மற்றும் பம்பாய் மாகாணங்கள் இச்சட்டத்தின் கீழ் தங்களது சட்டமியற்றும் அதிகாரங்களை இழந்தன."
+    },
+    "source_reference": [
+      "M. Laxmikanth - Indian Polity",
+      "NCERT",
+      "Samacheer Kalvi"
+    ],
+    "bloom_level": "Remember",
+    "estimated_time_sec": 40,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Historical Background",
+      "Charter Act 1833"
+    ],
+    "question_en": "Which act redesignated the Governor-General of Bengal as the Governor-General of India, centralizing power?",
+    "question_ta": "வங்காள கவர்னர் ஜெனரல் பதவியை இந்திய கவர்னர் ஜெனரல் என மாற்றி, அதிகாரத்தை ஒரு முகப்படுத்திய சட்டம் எது?",
+    "options_en": [
+      "Charter Act of 1833",
+      "Charter Act of 1813",
+      "Charter Act of 1853",
+      "Government of India Act 1858"
+    ],
+    "options_ta": [
+      "1833 சாசனச் சட்டம்",
+      "1813 சாசனச் சட்டம்",
+      "1853 சாசனச் சட்டம்",
+      "1858 இந்திய அரசுச் சட்டம்"
+    ],
+    "answer": "a",
+    "explanation_en": "The Charter Act of 1833 created the post of Governor-General of India, vesting all civil and military authority in him.",
+    "explanation_ta": "1833 சாசனச் சட்டம் இந்திய கவர்னர் ஜெனரல் பதவியை உருவாக்கி, அவரிடம் அனைத்து சிவில் மற்றும் ராணுவ அதிகாரங்களையும் ஒப்படைத்தது."
+  },
+  {
+    "id": "HB_E_028",
+    "subject": "Polity",
+    "topic": "Historical Background",
+    "difficulty": "Easy",
+    "question_type": "Direct",
+    "question": {
+      "en": "Who was the first Governor-General of India appointed under the provisions of the Charter Act of 1833?",
+      "ta": "1833 சாசனச் சட்டத்தின் பிரிவுகளின் கீழ் இந்தியாவின் முதல் கவர்னர் ஜெனரலாக நியமிக்கப்பட்டவர் யார்?"
+    },
+    "options": [
+      {
+        "id": "A",
+        "en": "Lord William Bentinck",
+        "ta": "வில்லியம் பெண்டிங்க் பிரபு"
+      },
+      {
+        "id": "B",
+        "en": "Warren Hastings",
+        "ta": "வாரன் ஹேஸ்டிங்ஸ்"
+      },
+      {
+        "id": "C",
+        "en": "Lord Cornwallis",
+        "ta": "காரன்வாலிஸ் பிரபு"
+      },
+      {
+        "id": "D",
+        "en": "Lord Canning",
+        "ta": "கானிங் பிரபு"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "Lord William Bentinck became the first Governor-General of India in 1833.",
+      "ta": "வில்லியம் பெண்டிங்க் பிரபு 1833-இல் இந்தியாவின் முதல் கவர்னர் ஜெனரல் ஆனார்."
+    },
+    "why_not_others": {
+      "A": {
+        "en": "Correct. Lord William Bentinck was the first Governor-General of India.",
+        "ta": "சரி. வில்லியம் பெண்டிங்க் பிரபு இந்தியாவின் முதல் கவர்னர் ஜெனரல் ஆவார்."
+      },
+      "B": {
+        "en": "Incorrect. Warren Hastings was the first Governor-General of Bengal.",
+        "ta": "தவறு. வாரன் ஹேஸ்டிங்ஸ் வங்காளத்தின் முதல் கவர்னர் ஜெனரல் ஆவார்."
+      },
+      "C": {
+        "en": "Incorrect. Lord Cornwallis was the Governor-General of Bengal.",
+        "ta": "தவறு. காரன்வாலிஸ் வங்காளத்தின் கவர்னர் ஜெனரலாக இருந்தார்."
+      },
+      "D": {
+        "en": "Incorrect. Lord Canning was the first Viceroy of India.",
+        "ta": "தவறு. கானிங் பிரபு இந்தியாவின் முதல் வைஸ்ராய் ஆவார்."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "Bentinck is famous for social reforms like the abolition of Sati in 1829.",
+      "ta": "பெண்டிங்க் 1829-இல் சதி ஒழிப்பு போன்ற சமூக சீர்திருத்தங்களுக்குப் புகழ்பெற்றவர்."
+    },
+    "revision_fact": {
+      "en": "He was previously the Governor of Madras from 1803 to 1807.",
+      "ta": "இவர் முன்னதாக 1803 முதல் 1807 வரை மெட்ராஸ் ஆளுநராகப் பணியாற்றினார்."
+    },
+    "source_reference": [
+      "M. Laxmikanth - Indian Polity",
+      "NCERT",
+      "Samacheer Kalvi"
+    ],
+    "bloom_level": "Remember",
+    "estimated_time_sec": 40,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Historical Background",
+      "Charter Act 1833"
+    ],
+    "question_en": "Who was the first Governor-General of India appointed under the provisions of the Charter Act of 1833?",
+    "question_ta": "1833 சாசனச் சட்டத்தின் பிரிவுகளின் கீழ் இந்தியாவின் முதல் கவர்னர் ஜெனரலாக நியமிக்கப்பட்டவர் யார்?",
+    "options_en": [
+      "Lord William Bentinck",
+      "Warren Hastings",
+      "Lord Cornwallis",
+      "Lord Canning"
+    ],
+    "options_ta": [
+      "வில்லியம் பெண்டிங்க் பிரபு",
+      "வாரன் ஹேஸ்டிங்ஸ்",
+      "காரன்வாலிஸ் பிரபு",
+      "கானிங் பிரபு"
+    ],
+    "answer": "a",
+    "explanation_en": "Lord William Bentinck became the first Governor-General of India in 1833.",
+    "explanation_ta": "வில்லியம் பெண்டிங்க் பிரபு 1833-இல் இந்தியாவின் முதல் கவர்னர் ஜெனரல் ஆனார்."
+  },
+  {
+    "id": "HB_E_029",
+    "subject": "Polity",
+    "topic": "Historical Background",
+    "difficulty": "Easy",
+    "question_type": "Direct",
+    "question": {
+      "en": "Which act completely ended the commercial activities of the East India Company, making it a purely administrative body?",
+      "ta": "கிழக்கிந்தியக் கம்பெனியின் வணிகச் செயல்பாடுகளை முழுமையாக முடிவுக்குக் கொண்டு வந்து, அதை ஒரு தூய நிர்வாக அமைப்பாக மாற்றிய சட்டம் எது?"
+    },
+    "options": [
+      {
+        "id": "A",
+        "en": "Charter Act of 1833",
+        "ta": "1833 சாசனச் சட்டம்"
+      },
+      {
+        "id": "B",
+        "en": "Charter Act of 1813",
+        "ta": "1813 சாசனச் சட்டம்"
+      },
+      {
+        "id": "C",
+        "en": "Charter Act of 1853",
+        "ta": "1853 சாசனச் சட்டம்"
+      },
+      {
+        "id": "D",
+        "en": "Government of India Act 1858",
+        "ta": "1858 இந்திய அரசுச் சட்டம்"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "The Charter Act of 1833 ended all commercial functions of the EIC (including tea and China trade).",
+      "ta": "1833 சாசனச் சட்டம் கம்பெனியின் அனைத்து வணிகச் செயல்பாடுகளையும் (தேயிலை மற்றும் சீன வர்த்தகம் உட்பட) ஒழித்தது."
+    },
+    "why_not_others": {
+      "A": {
+        "en": "Correct. Charter Act of 1833 ended commercial activities.",
+        "ta": "சரி. 1833 சாசனச் சட்டம் வணிகச் செயல்பாடுகளை ஒழித்தது."
+      },
+      "B": {
+        "en": "Incorrect. 1813 Act ended trade monopoly partially.",
+        "ta": "தவறு. 1813 சட்டம் ஏகபோகத்தை பகுதியளவு ஒழித்தது."
+      },
+      "C": {
+        "en": "Incorrect. 1853 Act kept EIC as administrative body.",
+        "ta": "தவறு. 1853 சட்டம் கம்பெனியை நிர்வாக அமைப்பாகவே தொடர்ந்தது."
+      },
+      "D": {
+        "en": "Incorrect. 1858 Act ended EIC rule entirely.",
+        "ta": "தவறு. 1858 சட்டம் கம்பெனி ஆட்சியை முழுமையாக முடித்தது."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "From 1833, the EIC held Indian territories in trust for the British Crown.",
+      "ta": "1833 முதல், EIC இந்தியப் பகுதிகளை பிரிட்டிஷ் அரசாங்கத்தின் அறங்காவலராக மட்டுமே நிர்வகித்தது."
+    },
+    "revision_fact": {
+      "en": "This opened up EIC offices and territories to direct Crown involvement later.",
+      "ta": "இது பின்னர் பிரிட்டிஷ் அரசு நேரடியாக இதில் ஈடுபட வழிவகுத்தது."
+    },
+    "source_reference": [
+      "M. Laxmikanth - Indian Polity",
+      "NCERT",
+      "Samacheer Kalvi"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 40,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Historical Background",
+      "Charter Act 1833"
+    ],
+    "question_en": "Which act completely ended the commercial activities of the East India Company, making it a purely administrative body?",
+    "question_ta": "கிழக்கிந்தியக் கம்பெனியின் வணிகச் செயல்பாடுகளை முழுமையாக முடிவுக்குக் கொண்டு வந்து, அதை ஒரு தூய நிர்வாக அமைப்பாக மாற்றிய சட்டம் எது?",
+    "options_en": [
+      "Charter Act of 1833",
+      "Charter Act of 1813",
+      "Charter Act of 1853",
+      "Government of India Act 1858"
+    ],
+    "options_ta": [
+      "1833 சாசனச் சட்டம்",
+      "1813 சாசனச் சட்டம்",
+      "1853 சாசனச் சட்டம்",
+      "1858 இந்திய அரசுச் சட்டம்"
+    ],
+    "answer": "a",
+    "explanation_en": "The Charter Act of 1833 ended all commercial functions of the EIC (including tea and China trade).",
+    "explanation_ta": "1833 சாசனச் சட்டம் கம்பெனியின் அனைத்து வணிகச் செயல்பாடுகளையும் (தேயிலை மற்றும் சீன வர்த்தகம் உட்பட) ஒழித்தது."
+  },
+  {
+    "id": "HB_E_030",
+    "subject": "Polity",
+    "topic": "Historical Background",
+    "difficulty": "Easy",
+    "question_type": "Direct",
+    "question": {
+      "en": "Which act introduced a Law Member as the fourth member of the Governor-General's Executive Council, and who was first appointed to this post?",
+      "ta": "கவர்னர் ஜெனரலின் நிர்வாகக் குழுவில் நான்காவது உறுப்பினராக ஒரு 'சட்ட உறுப்பினரைச்' சேர்த்த சட்டம் எது? இப்பதவியில் நியமிக்கப்பட்ட முதல் நபர் யார்?"
+    },
+    "options": [
+      {
+        "id": "A",
+        "en": "Charter Act of 1833, Lord Macaulay",
+        "ta": "1833 சாசனச் சட்டம், மெக்காலே பிரபு"
+      },
+      {
+        "id": "B",
+        "en": "Charter Act of 1813, Lord Warren Hastings",
+        "ta": "1813 சாசனச் சட்டம், வாரன் ஹேஸ்டிங்ஸ்"
+      },
+      {
+        "id": "C",
+        "en": "Charter Act of 1853, Lord Dalhousie",
+        "ta": "1853 சாசனச் சட்டம், டல்ஹவுசி பிரபு"
+      },
+      {
+        "id": "D",
+        "en": "Pitts India Act of 1784, Sir Elijah Impey",
+        "ta": "1784 பிட்டின் இந்தியச் சட்டம், எலிஜா இம்பே"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "The Charter Act of 1833 added a Law Member to the GG's Council, and Lord Macaulay was the first appointed member.",
+      "ta": "1833 சாசனச் சட்டம் கவர்னர் ஜெனரல் குழுவில் ஒரு சட்ட உறுப்பினரைச் சேர்த்தது. மெக்காலே பிரபு முதல் சட்ட உறுப்பினராக நியமிக்கப்பட்டார்."
+    },
+    "why_not_others": {
+      "A": {
+        "en": "Correct. Charter Act of 1833 and Lord Macaulay.",
+        "ta": "சரி. 1833 சாசனச் சட்டம் மற்றும் மெக்காலே பிரபு."
+      },
+      "B": {
+        "en": "Incorrect. 1813 Act had no Law Member.",
+        "ta": "தவறு. 1813 சாசனச் சட்டத்தில் சட்ட உறுப்பினர் இல்லை."
+      },
+      "C": {
+        "en": "Incorrect. 1853 Act made the Law Member a full member.",
+        "ta": "தவறு. 1853 சட்டம் சட்ட உறுப்பினரை முழு நேர உறுப்பினராக மாற்றியது."
+      },
+      "D": {
+        "en": "Incorrect. 1784 Act reduced executive council members to three.",
+        "ta": "தவறு. 1784 சட்டம் நிர்வாகக் குழுவின் எண்ணிக்கையை மூன்றாகக் குறைத்தது."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "The Law Member had no vote in executive decisions initially.",
+      "ta": "ஆரம்பத்தில் சட்ட உறுப்பினருக்கு நிர்வாக முடிவுகளில் வாக்களிக்கும் உரிமை இல்லை."
+    },
+    "revision_fact": {
+      "en": "Macaulay was instrumental in drafting the Indian Penal Code (IPC).",
+      "ta": "மெக்காலே இந்திய தண்டனைச் சட்டத்தை (IPC) வரைவதில் முக்கியப் பங்கு வகித்தார்."
+    },
+    "source_reference": [
+      "M. Laxmikanth - Indian Polity",
+      "NCERT",
+      "Samacheer Kalvi"
+    ],
+    "bloom_level": "Remember",
+    "estimated_time_sec": 40,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Historical Background",
+      "Charter Act 1833"
+    ],
+    "question_en": "Which act introduced a Law Member as the fourth member of the Governor-General's Executive Council, and who was first appointed to this post?",
+    "question_ta": "கவர்னர் ஜெனரலின் நிர்வாகக் குழுவில் நான்காவது உறுப்பினராக ஒரு 'சட்ட உறுப்பினரைச்' சேர்த்த சட்டம் எது? இப்பதவியில் நியமிக்கப்பட்ட முதல் நபர் யார்?",
+    "options_en": [
+      "Charter Act of 1833, Lord Macaulay",
+      "Charter Act of 1813, Lord Warren Hastings",
+      "Charter Act of 1853, Lord Dalhousie",
+      "Pitts India Act of 1784, Sir Elijah Impey"
+    ],
+    "options_ta": [
+      "1833 சாசனச் சட்டம், மெக்காலே பிரபு",
+      "1813 சாசனச் சட்டம், வாரன் ஹேஸ்டிங்ஸ்",
+      "1853 சாசனச் சட்டம், டல்ஹவுசி பிரபு",
+      "1784 பிட்டின் இந்தியச் சட்டம், எலிஜா இம்பே"
+    ],
+    "answer": "a",
+    "explanation_en": "The Charter Act of 1833 added a Law Member to the GG's Council, and Lord Macaulay was the first appointed member.",
+    "explanation_ta": "1833 சாசனச் சட்டம் கவர்னர் ஜெனரல் குழுவில் ஒரு சட்ட உறுப்பினரைச் சேர்த்தது. மெக்காலே பிரபு முதல் சட்ட உறுப்பினராக நியமிக்கப்பட்டார்."
+  },
+  {
+    "id": "HB_E_031",
+    "subject": "Polity",
+    "topic": "Historical Background",
+    "difficulty": "Easy",
+    "question_type": "Direct",
+    "question": {
+      "en": "In which year was the First Law Commission established in India under the chairmanship of Lord Macaulay?",
+      "ta": "மெக்காலே பிரபுவின் தலைமையில் இந்தியாவில் முதல் சட்ட ஆணையம் அமைக்கப்பட்ட ஆண்டு எது?"
+    },
+    "options": [
+      {
+        "id": "A",
+        "en": "1834",
+        "ta": "1834"
+      },
+      {
+        "id": "B",
+        "en": "1833",
+        "ta": "1833"
+      },
+      {
+        "id": "C",
+        "en": "1854",
+        "ta": "1854"
+      },
+      {
+        "id": "D",
+        "en": "1861",
+        "ta": "1861"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "The First Law Commission was established in 1834 under the Charter Act of 1833, headed by Lord Macaulay.",
+      "ta": "1833 சாசனச் சட்டத்தின்படி 1834-இல் மெக்காலே பிரபுவின் தலைமையில் முதல் சட்ட ஆணையம் அமைக்கப்பட்டது."
+    },
+    "why_not_others": {
+      "A": {
+        "en": "Correct. 1834 was the year the first Law Commission was established.",
+        "ta": "சரி. 1834-இல் முதல் சட்ட ஆணையம் அமைக்கப்பட்டது."
+      },
+      "B": {
+        "en": "Incorrect. 1833 was the year the Act was passed.",
+        "ta": "தவறு. 1833 சட்டம் இயற்றப்பட்ட ஆண்டாகும்."
+      },
+      "C": {
+        "en": "Incorrect. 1854 was the Macaulay Committee on Civil Services.",
+        "ta": "தவறு. 1854 குடிமைப் பணிக்கான மெக்காலே குழு அமைக்கப்பட்ட ஆண்டாகும்."
+      },
+      "D": {
+        "en": "Incorrect. 1861 was the Police Act and Councils Act.",
+        "ta": "தவறு. 1861 கவுன்சில் சட்டம் மற்றும் காவல் துறை சட்டம் இயற்றப்பட்ட ஆண்டாகும்."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "This commission prepared drafts for codifying civil and criminal laws.",
+      "ta": "இவ்வாணையம் சிவில் மற்றும் குற்றவியல் சட்டங்களை முறைப்படுத்துவதற்கான வரைவுகளைத் தயாரித்தது."
+    },
+    "revision_fact": {
+      "en": "It laid the groundwork for the Indian Penal Code (IPC) and Civil Procedure Code (CPC).",
+      "ta": "இது இந்திய தண்டனைச் சட்டம் (IPC) மற்றும் சிவில் நடைமுறைச் சட்டத்திற்கு (CPC) அடித்தளம் அமைத்தது."
+    },
+    "source_reference": [
+      "M. Laxmikanth - Indian Polity",
+      "NCERT",
+      "Samacheer Kalvi"
+    ],
+    "bloom_level": "Remember",
+    "estimated_time_sec": 40,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Historical Background",
+      "Charter Act 1833"
+    ],
+    "question_en": "In which year was the First Law Commission established in India under the chairmanship of Lord Macaulay?",
+    "question_ta": "மெக்காலே பிரபுவின் தலைமையில் இந்தியாவில் முதல் சட்ட ஆணையம் அமைக்கப்பட்ட ஆண்டு எது?",
+    "options_en": [
+      "1834",
+      "1833",
+      "1854",
+      "1861"
+    ],
+    "options_ta": [
+      "1834",
+      "1833",
+      "1854",
+      "1861"
+    ],
+    "answer": "a",
+    "explanation_en": "The First Law Commission was established in 1834 under the Charter Act of 1833, headed by Lord Macaulay.",
+    "explanation_ta": "1833 சாசனச் சட்டத்தின்படி 1834-இல் மெக்காலே பிரபுவின் தலைமையில் முதல் சட்ட ஆணையம் அமைக்கப்பட்டது."
+  },
+  {
+    "id": "HB_E_032",
+    "subject": "Polity",
+    "topic": "Historical Background",
+    "difficulty": "Easy",
+    "question_type": "Direct",
+    "question": {
+      "en": "The control of which island was transferred from the East India Company to the British Crown under the Charter Act of 1833?",
+      "ta": "1833 சாசனச் சட்டத்தின் கீழ் எந்தத் தீவின் கட்டுப்பாடு கிழக்கிந்தியக் கம்பெனியிடமிருந்து பிரிட்டிஷ் அரசிற்கு மாற்றப்பட்டது?"
+    },
+    "options": [
+      {
+        "id": "A",
+        "en": "Saint Helena",
+        "ta": "செயின்ட் ஹெலினா"
+      },
+      {
+        "id": "B",
+        "en": "Sri Lanka (Ceylon)",
+        "ta": "இலங்கை (சிலோன்)"
+      },
+      {
+        "id": "C",
+        "en": "Singapore",
+        "ta": "சிங்கப்பூர்"
+      },
+      {
+        "id": "D",
+        "en": "Hong Kong",
+        "ta": "ஹாங்காங்"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "The Charter Act of 1833 vested the administration of Saint Helena island directly in the British Crown.",
+      "ta": "1833 சாசனச் சட்டம் செயின்ட் ஹெலினா தீவின் நிர்வாகத்தை நேரடியாக பிரிட்டிஷ் கிரவுனிடம் ஒப்படைத்தது."
+    },
+    "why_not_others": {
+      "A": {
+        "en": "Correct. Saint Helena control was transferred.",
+        "ta": "சரி. செயின்ட் ஹெலினா தீவின் கட்டுப்பாடு மாற்றப்பட்டது."
+      },
+      "B": {
+        "en": "Incorrect. Sri Lanka was administered separately as a Crown colony from 1802.",
+        "ta": "தவறு. இலங்கை 1802 முதல் தனி கிரவுன் காலனியாக நிர்வகிக்கப்பட்டது."
+      },
+      "C": {
+        "en": "Incorrect. Singapore was part of Straits Settlements.",
+        "ta": "தவறு. சிங்கப்பூர் ஸ்ட்ரெய்ட்ஸ் செட்டில்மெண்ட்ஸின் ஒரு பகுதியாகும்."
+      },
+      "D": {
+        "en": "Incorrect. Hong Kong was acquired after the Opium Wars.",
+        "ta": "தவறு. ஹாங்காங் அபினிப் போர்களுக்குப் பின் பெறப்பட்டது."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "Saint Helena is famous as the place of Napoleon's exile and death.",
+      "ta": "செயின்ட் ஹெலினா நெப்போலியன் சிறைவைக்கப்பட்டு இறந்த இடமாகப் புகழ்பெற்றது."
+    },
+    "revision_fact": {
+      "en": "It was a strategic naval stopover in the Atlantic Ocean.",
+      "ta": "இது அட்லாண்டிக் பெருங்கடலில் ஒரு முக்கிய ராணுவத் துறைமுகமாக விளங்கியது."
+    },
+    "source_reference": [
+      "M. Laxmikanth - Indian Polity",
+      "NCERT",
+      "Samacheer Kalvi"
+    ],
+    "bloom_level": "Remember",
+    "estimated_time_sec": 40,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Historical Background",
+      "Charter Act 1833"
+    ],
+    "question_en": "The control of which island was transferred from the East India Company to the British Crown under the Charter Act of 1833?",
+    "question_ta": "1833 சாசனச் சட்டத்தின் கீழ் எந்தத் தீவின் கட்டுப்பாடு கிழக்கிந்தியக் கம்பெனியிடமிருந்து பிரிட்டிஷ் அரசிற்கு மாற்றப்பட்டது?",
+    "options_en": [
+      "Saint Helena",
+      "Sri Lanka (Ceylon)",
+      "Singapore",
+      "Hong Kong"
+    ],
+    "options_ta": [
+      "செயின்ட் ஹெலினா",
+      "இலங்கை (சிலோன்)",
+      "சிங்கப்பூர்",
+      "ஹாங்காங்"
+    ],
+    "answer": "a",
+    "explanation_en": "The Charter Act of 1833 vested the administration of Saint Helena island directly in the British Crown.",
+    "explanation_ta": "1833 சாசனச் சட்டம் செயின்ட் ஹெலினா தீவின் நிர்வாகத்தை நேரடியாக பிரிட்டிஷ் கிரவுனிடம் ஒப்படைத்தது."
+  },
+  {
+    "id": "HB_E_033",
+    "subject": "Polity",
+    "topic": "Historical Background",
+    "difficulty": "Easy",
+    "question_type": "Direct",
+    "question": {
+      "en": "Which section of the Charter Act of 1833 declared that no Indian should be barred from holding office under the company based on religion, birth, descent, or color?",
+      "ta": "மதம், பிறப்பிடம், இனம் அல்லது நிறத்தின் அடிப்படையில் எந்தவொரு இந்தியரும் கம்பெனி வேலைவாய்ப்புகளிலிருந்து தடுக்கப்படக் கூடாது என்று அறிவித்த 1833 சாசனச் சட்டத்தின் பிரிவு எது?"
+    },
+    "options": [
+      {
+        "id": "A",
+        "en": "Section 87",
+        "ta": "பிரிவு 87"
+      },
+      {
+        "id": "B",
+        "en": "Section 19",
+        "ta": "பிரிவு 19"
+      },
+      {
+        "id": "C",
+        "en": "Section 45",
+        "ta": "பிரிவு 45"
+      },
+      {
+        "id": "D",
+        "en": "Section 100",
+        "ta": "பிரிவு 100"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "Section 87 of the Charter Act of 1833 sowed the seeds of non-discrimination in public services.",
+      "ta": "1833 சாசனச் சட்டத்தின் பிரிவு 87 பொதுப் பணிகளில் பாகுபாடற்ற கொள்கைக்கு வித்திட்டது."
+    },
+    "why_not_others": {
+      "A": {
+        "en": "Correct. Section 87 contained this non-discrimination clause.",
+        "ta": "சரி. பிரிவு 87 இப்பாகுபாடற்ற விதியைக் கொண்டிருந்தது."
+      },
+      "B": {
+        "en": "Incorrect. Section 19 did not contain this landmark clause.",
+        "ta": "தவறு. பிரிவு 19 இல் இம்முக்கிய விதி இல்லை."
+      },
+      "C": {
+        "en": "Incorrect. Section 45 is unrelated.",
+        "ta": "தவறு. பிரிவு 45 இதற்கு தொடர்பற்றது."
+      },
+      "D": {
+        "en": "Incorrect. Section 100 is unrelated.",
+        "ta": "தவறு. பிரிவு 100 இதற்கு தொடர்பற்றது."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "This section is considered a historical precursor to Article 15 and 16 of the Indian Constitution.",
+      "ta": "இப்பிரிவு இந்திய அரசியலமைப்பின் 15 மற்றும் 16-வது விதிகளின் வரலாற்று முன்னோடியாகக் கருதப்படுகிறது."
+    },
+    "revision_fact": {
+      "en": "Court of Directors opposed the implementation of open competitive examinations despite this section.",
+      "ta": "இப்பிரிவு இருந்தபோதிலும், இயக்குநர்கள் குழு திறந்த போட்டித் தேர்வு முறைக்கு எதிர்ப்புத் தெரிவித்தது."
+    },
+    "source_reference": [
+      "M. Laxmikanth - Indian Polity",
+      "NCERT",
+      "Samacheer Kalvi"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 40,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Historical Background",
+      "Charter Act 1833"
+    ],
+    "question_en": "Which section of the Charter Act of 1833 declared that no Indian should be barred from holding office under the company based on religion, birth, descent, or color?",
+    "question_ta": "மதம், பிறப்பிடம், இனம் அல்லது நிறத்தின் அடிப்படையில் எந்தவொரு இந்தியரும் கம்பெனி வேலைவாய்ப்புகளிலிருந்து தடுக்கப்படக் கூடாது என்று அறிவித்த 1833 சாசனச் சட்டத்தின் பிரிவு எது?",
+    "options_en": [
+      "Section 87",
+      "Section 19",
+      "Section 45",
+      "Section 100"
+    ],
+    "options_ta": [
+      "பிரிவு 87",
+      "பிரிவு 19",
+      "பிரிவு 45",
+      "பிரிவு 100"
+    ],
+    "answer": "a",
+    "explanation_en": "Section 87 of the Charter Act of 1833 sowed the seeds of non-discrimination in public services.",
+    "explanation_ta": "1833 சாசனச் சட்டத்தின் பிரிவு 87 பொதுப் பணிகளில் பாகுபாடற்ற கொள்கைக்கு வித்திட்டது."
+  },
+  {
+    "id": "HB_E_034",
+    "subject": "Polity",
+    "topic": "Historical Background",
+    "difficulty": "Easy",
+    "question_type": "Direct",
+    "question": {
+      "en": "Which act separated the legislative and executive functions of the Governor-General's Council for the first time?",
+      "ta": "முதன்முறையாக கவர்னர் ஜெனரல் குழுவின் சட்டமன்ற மற்றும் நிர்வாகச் செயல்பாடுகளைப் பிரித்த சட்டம் எது?"
+    },
+    "options": [
+      {
+        "id": "A",
+        "en": "Charter Act of 1853",
+        "ta": "1853 சாசனச் சட்டம்"
+      },
+      {
+        "id": "B",
+        "en": "Charter Act of 1833",
+        "ta": "1833 சாசனச் சட்டம்"
+      },
+      {
+        "id": "C",
+        "en": "Indian Councils Act of 1861",
+        "ta": "1861 இந்தியக் கவுன்சில் சட்டம்"
+      },
+      {
+        "id": "D",
+        "en": "Government of India Act 1858",
+        "ta": "1858 இந்திய அரசுச் சட்டம்"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "The Charter Act of 1853 separated executive and legislative powers, adding six new legislative members to the council.",
+      "ta": "1853 சாசனச் சட்டம் சட்டமன்ற மற்றும் நிர்வாக அதிகாரங்களைப் பிரித்து, ஆறு புதிய சட்டமன்ற உறுப்பினர்களைக் குழுவில் சேர்த்தது."
+    },
+    "why_not_others": {
+      "A": {
+        "en": "Correct. Charter Act of 1853 introduced this separation.",
+        "ta": "சரி. 1853 சாசனச் சட்டம் இப்பாகுபாட்டை அறிமுகப்படுத்தியது."
+      },
+      "B": {
+        "en": "Incorrect. 1833 Act centralized all powers.",
+        "ta": "தவறு. 1833 சட்டம் அனைத்து அதிகாரங்களையும் ஒருமுகப்படுத்தியது."
+      },
+      "C": {
+        "en": "Incorrect. 1861 Act restored provincial legislative powers.",
+        "ta": "தவறு. 1861 சட்டம் மாகாண சட்டமன்ற அதிகாரங்களை மீட்டளித்தது."
+      },
+      "D": {
+        "en": "Incorrect. 1858 Act dealt with transfer of power to Crown.",
+        "ta": "தவறு. 1858 சட்டம் கிரவுனிடம் அதிகாரம் ஒப்படைப்பது தொடர்பானது."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "This legislative wing functioned as a mini-parliament, adopting British parliamentary procedures.",
+      "ta": "இச்சட்டமன்றப் பிரிவு பிரிட்டிஷ் நாடாளுமன்ற நடைமுறைகளைப் பின்பற்றி ஒரு சிறிய நாடாளுமன்றமாகச் செயல்பட்டது."
+    },
+    "revision_fact": {
+      "en": "The six new members were called Legislative Councillors.",
+      "ta": "இந்த ஆறு புதிய உறுப்பினர்களும் சட்டமன்ற உறுப்பினர்கள் (Legislative Councillors) என அழைக்கப்பட்டனர்."
+    },
+    "source_reference": [
+      "M. Laxmikanth - Indian Polity",
+      "NCERT",
+      "Samacheer Kalvi"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 40,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Historical Background",
+      "Charter Act 1853"
+    ],
+    "question_en": "Which act separated the legislative and executive functions of the Governor-General's Council for the first time?",
+    "question_ta": "முதன்முறையாக கவர்னர் ஜெனரல் குழுவின் சட்டமன்ற மற்றும் நிர்வாகச் செயல்பாடுகளைப் பிரித்த சட்டம் எது?",
+    "options_en": [
+      "Charter Act of 1853",
+      "Charter Act of 1833",
+      "Indian Councils Act of 1861",
+      "Government of India Act 1858"
+    ],
+    "options_ta": [
+      "1853 சாசனச் சட்டம்",
+      "1833 சாசனச் சட்டம்",
+      "1861 இந்தியக் கவுன்சில் சட்டம்",
+      "1858 இந்திய அரசுச் சட்டம்"
+    ],
+    "answer": "a",
+    "explanation_en": "The Charter Act of 1853 separated executive and legislative powers, adding six new legislative members to the council.",
+    "explanation_ta": "1853 சாசனச் சட்டம் சட்டமன்ற மற்றும் நிர்வாக அதிகாரங்களைப் பிரித்து, ஆறு புதிய சட்டமன்ற உறுப்பினர்களைக் குழுவில் சேர்த்தது."
+  },
+  {
+    "id": "HB_E_035",
+    "subject": "Polity",
+    "topic": "Historical Background",
+    "difficulty": "Easy",
+    "question_type": "Direct",
+    "question": {
+      "en": "The Charter Act of 1853 established a separate legislative body for British India. What was it called?",
+      "ta": "1853 சாசனச் சட்டம் பிரிட்டிஷ் இந்தியாவிற்கு ஒரு தனி சட்டமன்ற அமைப்பை நிறுவியது. அதன் பெயர் என்ன?"
+    },
+    "options": [
+      {
+        "id": "A",
+        "en": "Indian Legislative Council",
+        "ta": "இந்திய சட்டமன்றக் குழு"
+      },
+      {
+        "id": "B",
+        "en": "Federal Assembly",
+        "ta": "கூட்டாட்சிப் பேரவை"
+      },
+      {
+        "id": "C",
+        "en": "Council of India",
+        "ta": "இந்தியக் கவுன்சில்"
+      },
+      {
+        "id": "D",
+        "en": "Board of Control",
+        "ta": "கட்டுப்பாட்டு வாரியம்"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "The legislative wing of the GG's Council was called the Indian Legislative Council (Central Legislative Council).",
+      "ta": "கவர்னர் ஜெனரல் குழுவின் சட்டமன்றப் பிரிவு இந்திய சட்டமன்றக் குழு (மத்திய சட்டமன்றக் குழு) என்று அழைக்கப்பட்டது."
+    },
+    "why_not_others": {
+      "A": {
+        "en": "Correct. Indian Legislative Council was established.",
+        "ta": "சரி. இந்திய சட்டமன்றக் குழு நிறுவப்பட்டது."
+      },
+      "B": {
+        "en": "Incorrect. Federal Assembly was proposed in 1935.",
+        "ta": "தவறு. கூட்டாட்சிப் பேரவை 1935-இல் முன்மொழியப்பட்டது."
+      },
+      "C": {
+        "en": "Incorrect. Council of India was created in 1858 to assist the Secretary of State.",
+        "ta": "தவறு. இந்தியக் கவுன்சில் 1858-இல் அரசுச் செயலாளருக்கு உதவ உருவாக்கப்பட்டது."
+      },
+      "D": {
+        "en": "Incorrect. Board of Control was created in 1784.",
+        "ta": "தவறு. கட்டுப்பாட்டு வாரியம் 1784-இல் உருவாக்கப்பட்டது."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "This was the prototype of the modern Parliament of India.",
+      "ta": "இது நவீன இந்திய நாடாளுமன்றத்தின் ஆரம்ப வடிவமாகும்."
+    },
+    "revision_fact": {
+      "en": "It had 12 members in total for legislative business.",
+      "ta": "சட்டமன்றப் பணிகளுக்காக இதில் மொத்தம் 12 உறுப்பினர்கள் இருந்தனர்."
+    },
+    "source_reference": [
+      "M. Laxmikanth - Indian Polity",
+      "NCERT",
+      "Samacheer Kalvi"
+    ],
+    "bloom_level": "Remember",
+    "estimated_time_sec": 40,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Historical Background",
+      "Charter Act 1853"
+    ],
+    "question_en": "The Charter Act of 1853 established a separate legislative body for British India. What was it called?",
+    "question_ta": "1853 சாசனச் சட்டம் பிரிட்டிஷ் இந்தியாவிற்கு ஒரு தனி சட்டமன்ற அமைப்பை நிறுவியது. அதன் பெயர் என்ன?",
+    "options_en": [
+      "Indian Legislative Council",
+      "Federal Assembly",
+      "Council of India",
+      "Board of Control"
+    ],
+    "options_ta": [
+      "இந்திய சட்டமன்றக் குழு",
+      "கூட்டாட்சிப் பேரவை",
+      "இந்தியக் கவுன்சில்",
+      "கட்டுப்பாட்டு வாரியம்"
+    ],
+    "answer": "a",
+    "explanation_en": "The legislative wing of the GG's Council was called the Indian Legislative Council (Central Legislative Council).",
+    "explanation_ta": "கவர்னர் ஜெனரல் குழுவின் சட்டமன்றப் பிரிவு இந்திய சட்டமன்றக் குழு (மத்திய சட்டமன்றக் குழு) என்று அழைக்கப்பட்டது."
+  },
+  {
+    "id": "HB_E_036",
+    "subject": "Polity",
+    "topic": "Historical Background",
+    "difficulty": "Easy",
+    "question_type": "Direct",
+    "question": {
+      "en": "Which act officially introduced an open competition system for the selection and recruitment of civil servants in India?",
+      "ta": "இந்தியாவில் குடிமைப் பணியாளர்களைத் தேர்ந்தெடுப்பதற்கும் நியமிப்பதற்கும் திறந்த போட்டித் தேர்வு முறையை அதிகாரப்பூர்வமாக அறிமுகப்படுத்திய சட்டம் எது?"
+    },
+    "options": [
+      {
+        "id": "A",
+        "en": "Charter Act of 1853",
+        "ta": "1853 சாசனச் சட்டம்"
+      },
+      {
+        "id": "B",
+        "en": "Charter Act of 1833",
+        "ta": "1833 சாசனச் சட்டம்"
+      },
+      {
+        "id": "C",
+        "en": "Government of India Act 1858",
+        "ta": "1858 இந்திய அரசுச் சட்டம்"
+      },
+      {
+        "id": "D",
+        "en": "Indian Councils Act 1861",
+        "ta": "1861 இந்தியக் கவுன்சில் சட்டம்"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "The Charter Act of 1853 officially threw open the covenanted civil services to Indians through open competitive exams.",
+      "ta": "1853 சாசனச் சட்டம் திறந்த போட்டித் தேர்வுகள் மூலம் இந்தியர்களுக்கும் உயர் குடிமைப் பணிகளை அதிகாரப்பூர்வமாகத் திறந்துவிட்டது."
+    },
+    "why_not_others": {
+      "A": {
+        "en": "Correct. Charter Act of 1853 introduced open competition.",
+        "ta": "சரி. 1853 சாசனச் சட்டம் திறந்த போட்டியை அறிமுகப்படுத்தியது."
+      },
+      "B": {
+        "en": "Incorrect. 1833 Act proposed it but was withdrawn due to directors' protest.",
+        "ta": "தவறு. 1833 சட்டம் இதனை முன்மொழிந்தாலும் இயக்குநர்களின் எதிர்ப்பால் கைவிடப்பட்டது."
+      },
+      "C": {
+        "en": "Incorrect. 1858 Act maintained the open competition framework.",
+        "ta": "தவறு. 1858 சட்டம் இத்திறந்த போட்டித் தேர்வு முறையைத் தொடர்ந்தது."
+      },
+      "D": {
+        "en": "Incorrect. 1861 Act did not introduce this reform.",
+        "ta": "தவறு. 1861 சட்டம் இச்சீர்திருத்தத்தை அறிமுகப்படுத்தவில்லை."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "This ended the patronage system of the EIC Directors.",
+      "ta": "இது கம்பெனி இயக்குநர்களின் வாரிசுரிமை அல்லது செல்வாக்கு முறையை ஒழித்தது."
+    },
+    "revision_fact": {
+      "en": "Satyendranath Tagore became the first Indian to clear the Civil Services Exam in 1863.",
+      "ta": "சத்யேந்திரநாத் தாகூர் 1863-இல் குடிமைப் பணித் தேர்வில் வென்ற முதல் இந்தியர் ஆவார்."
+    },
+    "source_reference": [
+      "M. Laxmikanth - Indian Polity",
+      "NCERT",
+      "Samacheer Kalvi"
+    ],
+    "bloom_level": "Remember",
+    "estimated_time_sec": 40,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Historical Background",
+      "Charter Act 1853"
+    ],
+    "question_en": "Which act officially introduced an open competition system for the selection and recruitment of civil servants in India?",
+    "question_ta": "இந்தியாவில் குடிமைப் பணியாளர்களைத் தேர்ந்தெடுப்பதற்கும் நியமிப்பதற்கும் திறந்த போட்டித் தேர்வு முறையை அதிகாரப்பூர்வமாக அறிமுகப்படுத்திய சட்டம் எது?",
+    "options_en": [
+      "Charter Act of 1853",
+      "Charter Act of 1833",
+      "Government of India Act 1858",
+      "Indian Councils Act 1861"
+    ],
+    "options_ta": [
+      "1853 சாசனச் சட்டம்",
+      "1833 சாசனச் சட்டம்",
+      "1858 இந்திய அரசுச் சட்டம்",
+      "1861 இந்தியக் கவுன்சில் சட்டம்"
+    ],
+    "answer": "a",
+    "explanation_en": "The Charter Act of 1853 officially threw open the covenanted civil services to Indians through open competitive exams.",
+    "explanation_ta": "1853 சாசனச் சட்டம் திறந்த போட்டித் தேர்வுகள் மூலம் இந்தியர்களுக்கும் உயர் குடிமைப் பணிகளை அதிகாரப்பூர்வமாகத் திறந்துவிட்டது."
+  },
+  {
+    "id": "HB_E_037",
+    "subject": "Polity",
+    "topic": "Historical Background",
+    "difficulty": "Easy",
+    "question_type": "Direct",
+    "question": {
+      "en": "Which committee was appointed in 1854 to implement the reforms in the Indian Civil Service?",
+      "ta": "இந்தியக் குடிமைப் பணி சீர்திருத்தங்களை நடைமுறைப்படுத்த 1854-இல் அமைக்கப்பட்ட குழு எது?"
+    },
+    "options": [
+      {
+        "id": "A",
+        "en": "Macaulay Committee",
+        "ta": "மெக்காலே குழு"
+      },
+      {
+        "id": "B",
+        "en": "Aitchison Committee",
+        "ta": "அட்சிசன் குழு"
+      },
+      {
+        "id": "C",
+        "en": "Lee Commission",
+        "ta": "லீ ஆணையம்"
+      },
+      {
+        "id": "D",
+        "en": "Welby Commission",
+        "ta": "வெல்பி குழு"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "The Committee on the Indian Civil Service (Macaulay Committee) was appointed in 1854.",
+      "ta": "1854-இல் இந்தியக் குடிமைப் பணிக்கான குழு (மெக்காலே குழு) அமைக்கப்பட்டது."
+    },
+    "why_not_others": {
+      "A": {
+        "en": "Correct. Macaulay Committee was appointed in 1854.",
+        "ta": "சரி. 1854-இல் மெக்காலே குழு நியமிக்கப்பட்டது."
+      },
+      "B": {
+        "en": "Incorrect. Aitchison Committee was appointed in 1886.",
+        "ta": "தவறு. அட்சிசன் குழு 1886-இல் அமைக்கப்பட்டது."
+      },
+      "C": {
+        "en": "Incorrect. Lee Commission was appointed in 1923.",
+        "ta": "தவறு. லீ ஆணையம் 1923-இல் அமைக்கப்பட்டது."
+      },
+      "D": {
+        "en": "Incorrect. Welby Commission studied Indian expenditure in 1895.",
+        "ta": "தவறு. வெல்பி குழு 1895-இல் இந்தியச் செலவினங்களை ஆராய்ந்தது."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "This committee recommended that recruitment should be based on merit through examination.",
+      "ta": "இக்குழு தேர்வுகள் மூலம் தகுதி அடிப்படையில் மட்டுமே நியமனங்கள் இருக்க வேண்டும் எனப் பரிந்துரைத்தது."
+    },
+    "revision_fact": {
+      "en": "The examinations were initially held only in London.",
+      "ta": "தொடக்கத்தில் இதேர்வுகள் லண்டனில் மட்டுமே நடத்தப்பட்டன."
+    },
+    "source_reference": [
+      "M. Laxmikanth - Indian Polity",
+      "NCERT",
+      "Samacheer Kalvi"
+    ],
+    "bloom_level": "Remember",
+    "estimated_time_sec": 40,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Historical Background",
+      "Charter Act 1853"
+    ],
+    "question_en": "Which committee was appointed in 1854 to implement the reforms in the Indian Civil Service?",
+    "question_ta": "இந்தியக் குடிமைப் பணி சீர்திருத்தங்களை நடைமுறைப்படுத்த 1854-இல் அமைக்கப்பட்ட குழு எது?",
+    "options_en": [
+      "Macaulay Committee",
+      "Aitchison Committee",
+      "Lee Commission",
+      "Welby Commission"
+    ],
+    "options_ta": [
+      "மெக்காலே குழு",
+      "அட்சிசன் குழு",
+      "லீ ஆணையம்",
+      "வெல்பி குழு"
+    ],
+    "answer": "a",
+    "explanation_en": "The Committee on the Indian Civil Service (Macaulay Committee) was appointed in 1854.",
+    "explanation_ta": "1854-இல் இந்தியக் குடிமைப் பணிக்கான குழு (மெக்காலே குழு) அமைக்கப்பட்டது."
+  },
+  {
+    "id": "HB_E_038",
+    "subject": "Polity",
+    "topic": "Historical Background",
+    "difficulty": "Easy",
+    "question_type": "Direct",
+    "question": {
+      "en": "Which act introduced local representation in the Indian Legislative Council for the first time?",
+      "ta": "மத்திய சட்டமன்றக் குழுவில் முதன்முறையாக உள்ளூர் பிரதிநிதித்துவத்தை அறிமுகப்படுத்திய சட்டம் எது?"
+    },
+    "options": [
+      {
+        "id": "A",
+        "en": "Charter Act of 1853",
+        "ta": "1853 சாசனச் சட்டம்"
+      },
+      {
+        "id": "B",
+        "en": "Charter Act of 1833",
+        "ta": "1833 சாசனச் சட்டம்"
+      },
+      {
+        "id": "C",
+        "en": "Indian Councils Act 1861",
+        "ta": "1861 இந்தியக் கவுன்சில் சட்டம்"
+      },
+      {
+        "id": "D",
+        "en": "Indian Councils Act 1892",
+        "ta": "1892 இந்தியக் கவுன்சில் சட்டம்"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "The Charter Act of 1853 introduced local representation: 4 out of 6 legislative members were appointed by local governments of Madras, Bombay, Bengal, and Agra.",
+      "ta": "1853 சாசனச் சட்டம் உள்ளூர் பிரதிநிதித்துவத்தை அறிமுகப்படுத்தியது: 6 சட்டமன்ற உறுப்பினர்களில் 4 பேர் மெட்ராஸ், பம்பாய், வங்காளம், ஆக்ரா உள்ளூர் அரசுகளால் நியமிக்கப்பட்டனர்."
+    },
+    "why_not_others": {
+      "A": {
+        "en": "Correct. Charter Act of 1853 introduced local representation.",
+        "ta": "சரி. 1853 சாசனச் சட்டம் உள்ளூர் பிரதிநிதித்துவத்தை அறிமுகப்படுத்தியது."
+      },
+      "B": {
+        "en": "Incorrect. 1833 Act had no local representation.",
+        "ta": "தவறு. 1833 சாசனச் சட்டத்தில் உள்ளூர் பிரதிநிதித்துவம் இல்லை."
+      },
+      "C": {
+        "en": "Incorrect. 1861 Act added non-official Indian members but at central executive level.",
+        "ta": "தவறு. 1861 சட்டம் மத்திய மாகாண மட்டத்தில் அதிகாரப்பூர்வமற்ற இந்திய உறுப்பினர்களைச் சேர்த்தது."
+      },
+      "D": {
+        "en": "Incorrect. 1892 Act expanded councils but was not the first to introduce local official representation.",
+        "ta": "தவறு. 1892 சட்டம் கவுன்சில்களை விரிவுபடுத்தியதே தவிர, இது ஆரம்பம் அல்ல."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "These local representatives were British officials serving in those presidencies, not native Indians.",
+      "ta": "இவ்வுள்ளூர் பிரதிநிதிகள் பிரிட்டிஷ் அதிகாரிகளே ஆவர், உள்ளூர் இந்தியர்கள் அல்ல."
+    },
+    "revision_fact": {
+      "en": "This was the first recognition of provincial representation in central lawmaking.",
+      "ta": "மத்திய சட்டமியற்றலில் மாகாணப் பிரதிநிதித்துவத்தை அங்கீகரித்த முதல் நிகழ்வு இதுவாகும்."
+    },
+    "source_reference": [
+      "M. Laxmikanth - Indian Polity",
+      "NCERT",
+      "Samacheer Kalvi"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 40,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Historical Background",
+      "Charter Act 1853"
+    ],
+    "question_en": "Which act introduced local representation in the Indian Legislative Council for the first time?",
+    "question_ta": "மத்திய சட்டமன்றக் குழுவில் முதன்முறையாக உள்ளூர் பிரதிநிதித்துவத்தை அறிமுகப்படுத்திய சட்டம் எது?",
+    "options_en": [
+      "Charter Act of 1853",
+      "Charter Act of 1833",
+      "Indian Councils Act 1861",
+      "Indian Councils Act 1892"
+    ],
+    "options_ta": [
+      "1853 சாசனச் சட்டம்",
+      "1833 சாசனச் சட்டம்",
+      "1861 இந்தியக் கவுன்சில் சட்டம்",
+      "1892 இந்தியக் கவுன்சில் சட்டம்"
+    ],
+    "answer": "a",
+    "explanation_en": "The Charter Act of 1853 introduced local representation: 4 out of 6 legislative members were appointed by local governments of Madras, Bombay, Bengal, and Agra.",
+    "explanation_ta": "1853 சாசனச் சட்டம் உள்ளூர் பிரதிநிதித்துவத்தை அறிமுகப்படுத்தியது: 6 சட்டமன்ற உறுப்பினர்களில் 4 பேர் மெட்ராஸ், பம்பாய், வங்காளம், ஆக்ரா உள்ளூர் அரசுகளால் நியமிக்கப்பட்டனர்."
+  },
+  {
+    "id": "HB_E_039",
+    "subject": "Polity",
+    "topic": "Historical Background",
+    "difficulty": "Easy",
+    "question_type": "Direct",
+    "question": {
+      "en": "Which act ended the rule of the East India Company and transferred the government, territories, and revenues of India to the British Crown?",
+      "ta": "கிழக்கிந்தியக் கம்பெனியின் ஆட்சியை முடிவுக்குக் கொண்டு வந்து, இந்திய நிர்வாகம், பகுதிகள் மற்றும் வருவாயை பிரிட்டிஷ் அரசிற்கு மாற்றிய சட்டம் எது?"
+    },
+    "options": [
+      {
+        "id": "A",
+        "en": "Government of India Act 1858",
+        "ta": "1858 இந்திய அரசுச் சட்டம்"
+      },
+      {
+        "id": "B",
+        "en": "Indian Independence Act 1947",
+        "ta": "1947 இந்திய விடுதலைச் சட்டம்"
+      },
+      {
+        "id": "C",
+        "en": "Regulating Act of 1773",
+        "ta": "1773 ஒழுங்குமுறைச் சட்டம்"
+      },
+      {
+        "id": "D",
+        "en": "Charter Act of 1853",
+        "ta": "1853 சாசனச் சட்டம்"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "The GOI Act of 1858 was passed in the wake of the Revolt of 1857, establishing direct Crown Rule.",
+      "ta": "1857 பெரும் புரட்சியின் விளைவாக 1858 இந்திய அரசுச் சட்டம் இயற்றப்பட்டு, நேரடி பிரிட்டிஷ் கிரவுன் ஆட்சி நிறுவப்பட்டது."
+    },
+    "why_not_others": {
+      "A": {
+        "en": "Correct. Government of India Act 1858 transferred the power.",
+        "ta": "சரி. 1858 இந்திய அரசுச் சட்டம் அதிகாரத்தை மாற்றியது."
+      },
+      "B": {
+        "en": "Incorrect. 1947 Act transferred power to independent India.",
+        "ta": "தவறு. 1947 சட்டம் சுதந்திர இந்தியாவிற்கு அதிகாரத்தை மாற்றியது."
+      },
+      "C": {
+        "en": "Incorrect. 1773 Act regulated EIC but maintained company rule.",
+        "ta": "தவறு. 1773 சட்டம் கம்பெனியை ஒழுங்குபடுத்தியதே அன்றி ஆட்சியை ஒழிக்கவில்லை."
+      },
+      "D": {
+        "en": "Incorrect. 1853 Act was the last charter but did not end company rule immediately.",
+        "ta": "தவறு. 1853 சட்டம் கடைசி சாசனம் ஆனால் கம்பெனி ஆட்சியை உடனடியாக ஒழிக்கவில்லை."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "The Act is also known as the Act for the Good Government of India.",
+      "ta": "இச்சட்டம் 'இந்தியாவின் நல்லாட்சிக்கான சட்டம்' என்றும் அழைக்கப்படுகிறது."
+    },
+    "revision_fact": {
+      "en": "It abolished the Court of Directors and Board of Control, ending Dual Government.",
+      "ta": "It abolished the Court of Directors and Board of Control, ending Dual Government."
+    },
+    "source_reference": [
+      "M. Laxmikanth - Indian Polity",
+      "NCERT",
+      "Samacheer Kalvi"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 40,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Historical Background",
+      "Government of India Act 1858"
+    ],
+    "question_en": "Which act ended the rule of the East India Company and transferred the government, territories, and revenues of India to the British Crown?",
+    "question_ta": "கிழக்கிந்தியக் கம்பெனியின் ஆட்சியை முடிவுக்குக் கொண்டு வந்து, இந்திய நிர்வாகம், பகுதிகள் மற்றும் வருவாயை பிரிட்டிஷ் அரசிற்கு மாற்றிய சட்டம் எது?",
+    "options_en": [
+      "Government of India Act 1858",
+      "Indian Independence Act 1947",
+      "Regulating Act of 1773",
+      "Charter Act of 1853"
+    ],
+    "options_ta": [
+      "1858 இந்திய அரசுச் சட்டம்",
+      "1947 இந்திய விடுதலைச் சட்டம்",
+      "1773 ஒழுங்குமுறைச் சட்டம்",
+      "1853 சாசனச் சட்டம்"
+    ],
+    "answer": "a",
+    "explanation_en": "The GOI Act of 1858 was passed in the wake of the Revolt of 1857, establishing direct Crown Rule.",
+    "explanation_ta": "1857 பெரும் புரட்சியின் விளைவாக 1858 இந்திய அரசுச் சட்டம் இயற்றப்பட்டு, நேரடி பிரிட்டிஷ் கிரவுன் ஆட்சி நிறுவப்பட்டது."
+  },
+  {
+    "id": "HB_E_040",
+    "subject": "Polity",
+    "topic": "Historical Background",
+    "difficulty": "Easy",
+    "question_type": "Direct",
+    "question": {
+      "en": "The Government of India Act 1858 created a new office of Secretary of State for India. To whom was this office directly responsible?",
+      "ta": "1858 இந்திய அரசுச் சட்டம் இந்திய விவகாரங்களுக்கான அரசுச் செயலாளர் என்ற புதிய பதவியை உருவாக்கியது. இப்பதவி யாருக்கு நேரடியாகப் பொறுப்பானது?"
+    },
+    "options": [
+      {
+        "id": "A",
+        "en": "British Parliament",
+        "ta": "பிரிட்டிஷ் பாராளுமன்றம்"
+      },
+      {
+        "id": "B",
+        "en": "Viceroy of India",
+        "ta": "இந்திய வைஸ்ராய்"
+      },
+      {
+        "id": "C",
+        "en": "Governor-General of India",
+        "ta": "இந்திய கவர்னர் ஜெனரல்"
+      },
+      {
+        "id": "D",
+        "en": "Mughal Emperor",
+        "ta": "முகலாய பேரரசர்"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "The Secretary of State was a member of the British Cabinet and was directly responsible to the British Parliament.",
+      "ta": "இந்திய அரசுச் செயலாளர் பிரிட்டிஷ் அமைச்சரவையின் உறுப்பினராகவும் பிரிட்டிஷ் பாராளுமன்றத்திற்கு நேரடியாகப் பொறுப்பானவராகவும் இருந்தார்."
+    },
+    "why_not_others": {
+      "A": {
+        "en": "Correct. Responsible to British Parliament.",
+        "ta": "சரி. பிரிட்டிஷ் பாராளுமன்றத்திற்குப் பொறுப்பானவர்."
+      },
+      "B": {
+        "en": "Incorrect. The Viceroy was subordinate to the Secretary of State.",
+        "ta": "தவறு. வைஸ்ராய் அரசுச் செயலாளருக்குக் கீழ்ப்பட்டவர் ஆவார்."
+      },
+      "C": {
+        "en": "Incorrect. The Governor-General designation was changed.",
+        "ta": "தவறு. கவர்னர் ஜெனரல் பதவி வைஸ்ராய் என மாற்றப்பட்டது."
+      },
+      "D": {
+        "en": "Incorrect. The Mughal Emperor office was abolished by this act.",
+        "ta": "தவறு. முகலாய பேரரசர் பதவி இச்சட்டத்தால் ஒழிக்கப்பட்டது."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "A 15-member advisory Council of India was established to assist him.",
+      "ta": "அவருக்கு உதவ 15 உறுப்பினர்களைக் கொண்ட இந்தியக் கவுன்சில் அமைக்கப்பட்டது."
+    },
+    "revision_fact": {
+      "en": "The Secretary of State was the corporate head of this council.",
+      "ta": "அரசுச் செயலாளர் இக்கவுன்சிலின் தலைவராகச் செயல்பட்டார்."
+    },
+    "source_reference": [
+      "M. Laxmikanth - Indian Polity",
+      "NCERT",
+      "Samacheer Kalvi"
+    ],
+    "bloom_level": "Remember",
+    "estimated_time_sec": 40,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Historical Background",
+      "Government of India Act 1858"
+    ],
+    "question_en": "The Government of India Act 1858 created a new office of Secretary of State for India. To whom was this office directly responsible?",
+    "question_ta": "1858 இந்திய அரசுச் சட்டம் இந்திய விவகாரங்களுக்கான அரசுச் செயலாளர் என்ற புதிய பதவியை உருவாக்கியது. இப்பதவி யாருக்கு நேரடியாகப் பொறுப்பானது?",
+    "options_en": [
+      "British Parliament",
+      "Viceroy of India",
+      "Governor-General of India",
+      "Mughal Emperor"
+    ],
+    "options_ta": [
+      "பிரிட்டிஷ் பாராளுமன்றம்",
+      "இந்திய வைஸ்ராய்",
+      "இந்திய கவர்னர் ஜெனரல்",
+      "முகலாய பேரரசர்"
+    ],
+    "answer": "a",
+    "explanation_en": "The Secretary of State was a member of the British Cabinet and was directly responsible to the British Parliament.",
+    "explanation_ta": "இந்திய அரசுச் செயலாளர் பிரிட்டிஷ் அமைச்சரவையின் உறுப்பினராகவும் பிரிட்டிஷ் பாராளுமன்றத்திற்கு நேரடியாகப் பொறுப்பானவராகவும் இருந்தார்."
+  },
+  {
+    "id": "HB_E_041",
+    "subject": "Polity",
+    "topic": "Historical Background",
+    "difficulty": "Easy",
+    "question_type": "Direct",
+    "question": {
+      "en": "Under the Government of India Act 1858, the Governor-General of India was given the title of Viceroy. Who was the first Viceroy of India?",
+      "ta": "1858 இந்திய அரசுச் சட்டத்தின் கீழ், இந்திய கவர்னர் ஜெனரலுக்கு வைஸ்ராய் என்ற பட்டம் வழங்கப்பட்டது. இந்தியாவின் முதல் வைஸ்ராய் யார்?"
+    },
+    "options": [
+      {
+        "id": "A",
+        "en": "Lord Canning",
+        "ta": "கானிங் பிரபு"
+      },
+      {
+        "id": "B",
+        "en": "Lord Warren Hastings",
+        "ta": "வாரன் ஹேஸ்டிங்ஸ்"
+      },
+      {
+        "id": "C",
+        "en": "Lord Mountbatten",
+        "ta": "மவுண்ட்பேட்டன் பிரபு"
+      },
+      {
+        "id": "D",
+        "en": "Lord Dalhousie",
+        "ta": "டல்ஹவுசி பிரபு"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "Lord Canning became the first Viceroy of India, representing the British Crown directly.",
+      "ta": "கானிங் பிரபு பிரிட்டிஷ் கிரவுனின் நேரடிப் பிரதிநிதியாக இந்தியாவின் முதல் வைஸ்ராய் ஆனார்."
+    },
+    "why_not_others": {
+      "A": {
+        "en": "Correct. Lord Canning was the first Viceroy.",
+        "ta": "சரி. கானிங் பிரபு முதல் வைஸ்ராய் ஆவார்."
+      },
+      "B": {
+        "en": "Incorrect. Warren Hastings was the first Governor-General of Bengal.",
+        "ta": "தவறு. வாரன் ஹேஸ்டிங்ஸ் வங்காளத்தின் முதல் கவர்னர் ஜெனரல் ஆவார்."
+      },
+      "C": {
+        "en": "Incorrect. Lord Mountbatten was the last Viceroy of India.",
+        "ta": "தவறு. மவுண்ட்பேட்டன் பிரபு இந்தியாவின் இறுதி வைஸ்ராய் ஆவார்."
+      },
+      "D": {
+        "en": "Incorrect. Lord Dalhousie was Governor-General from 1848 to 1856.",
+        "ta": "தவறு. டல்ஹவுசி பிரபு 1848-1856 காலத்தில் கவர்னர் ஜெனரலாக இருந்தார்."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "Canning served as Governor-General during the Revolt of 1857.",
+      "ta": "1857 பெரும் புரட்சியின் போது கானிங் பிரபு கவர்னர் ஜெனரலாக இருந்தார்."
+    },
+    "revision_fact": {
+      "en": "The word Viceroy means 'in place of the king'.",
+      "ta": "வைஸ்ராய் என்ற சொல்லுக்கு 'மன்னரின் இடத்தில் இருப்பவர்' என்று பொருளாகும்."
+    },
+    "source_reference": [
+      "M. Laxmikanth - Indian Polity",
+      "NCERT",
+      "Samacheer Kalvi"
+    ],
+    "bloom_level": "Remember",
+    "estimated_time_sec": 40,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Historical Background",
+      "Government of India Act 1858"
+    ],
+    "question_en": "Under the Government of India Act 1858, the Governor-General of India was given the title of Viceroy. Who was the first Viceroy of India?",
+    "question_ta": "1858 இந்திய அரசுச் சட்டத்தின் கீழ், இந்திய கவர்னர் ஜெனரலுக்கு வைஸ்ராய் என்ற பட்டம் வழங்கப்பட்டது. இந்தியாவின் முதல் வைஸ்ராய் யார்?",
+    "options_en": [
+      "Lord Canning",
+      "Lord Warren Hastings",
+      "Lord Mountbatten",
+      "Lord Dalhousie"
+    ],
+    "options_ta": [
+      "கானிங் பிரபு",
+      "வாரன் ஹேஸ்டிங்ஸ்",
+      "மவுண்ட்பேட்டன் பிரபு",
+      "டல்ஹவுசி பிரபு"
+    ],
+    "answer": "a",
+    "explanation_en": "Lord Canning became the first Viceroy of India, representing the British Crown directly.",
+    "explanation_ta": "கானிங் பிரபு பிரிட்டிஷ் கிரவுனின் நேரடிப் பிரதிநிதியாக இந்தியாவின் முதல் வைஸ்ராய் ஆனார்."
+  },
+  {
+    "id": "HB_E_042",
+    "subject": "Polity",
+    "topic": "Historical Background",
+    "difficulty": "Easy",
+    "question_type": "Direct",
+    "question": {
+      "en": "Where did Lord Canning read Queen Victoria's Proclamation on November 1, 1858, announcing the transfer of power?",
+      "ta": "அதிகார மாற்றத்தை அறிவிக்கும் விக்டோரியா மகாராணியின் பேரறிக்கையை நவம்பர் 1, 1858 அன்று கானிங் பிரபு எங்கு வாசித்தார்?"
+    },
+    "options": [
+      {
+        "id": "A",
+        "en": "Allahabad",
+        "ta": "அலகாபாத்"
+      },
+      {
+        "id": "B",
+        "en": "Calcutta",
+        "ta": "கல்கத்தா"
+      },
+      {
+        "id": "C",
+        "en": "Delhi",
+        "ta": "டெல்லி"
+      },
+      {
+        "id": "D",
+        "en": "Madras",
+        "ta": "மெட்ராஸ்"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "Lord Canning read Queen Victoria's Proclamation at a grand Durbar in Allahabad on November 1, 1858.",
+      "ta": "நவம்பர் 1, 1858 அன்று அலகாபாத்தில் நடைபெற்ற தர்பாரில் கானிங் பிரபு விக்டோரியா மகாராணியின் பேரறிக்கையை வாசித்தார்."
+    },
+    "why_not_others": {
+      "A": {
+        "en": "Correct. Allahabad was the location.",
+        "ta": "சரி. அலகாபாத் தர்பாரில் வாசிக்கப்பட்டது."
+      },
+      "B": {
+        "en": "Incorrect. Calcutta was the capital but not the site of this durbar.",
+        "ta": "தவறு. கல்கத்தா தலைநகராக இருந்தபோதிலும் தர்பார் அங்கு நடைபெறவில்லை."
+      },
+      "C": {
+        "en": "Incorrect. Delhi Durbar happened later in 1877, 1903, and 1911.",
+        "ta": "தவறு. டெல்லி தர்பார் பின்னர் 1877, 1903, 1911 ஆண்டுகளில் நடைபெற்றது."
+      },
+      "D": {
+        "en": "Incorrect. Madras was not the venue.",
+        "ta": "தவறு. மெட்ராஸ் இதற்கான தளம் அல்ல."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "This proclamation is called the 'Magna Carta of the people of India'.",
+      "ta": "இப்பேரறிக்கை 'இந்திய மக்களின் மகா சாசனம்' என்று அழைக்கப்படுகிறது."
+    },
+    "revision_fact": {
+      "en": "It promised non-interference in religious matters and respect for treaty rights.",
+      "ta": "மத விவகாரங்களில் தலையிடாமை மற்றும் சுதேச அரசுகளின் ஒப்பந்த உரிமைகளை மதிப்பதாக இது உறுதியளித்தது."
+    },
+    "source_reference": [
+      "M. Laxmikanth - Indian Polity",
+      "NCERT",
+      "Samacheer Kalvi"
+    ],
+    "bloom_level": "Remember",
+    "estimated_time_sec": 40,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Historical Background",
+      "Government of India Act 1858"
+    ],
+    "question_en": "Where did Lord Canning read Queen Victoria's Proclamation on November 1, 1858, announcing the transfer of power?",
+    "question_ta": "அதிகார மாற்றத்தை அறிவிக்கும் விக்டோரியா மகாராணியின் பேரறிக்கையை நவம்பர் 1, 1858 அன்று கானிங் பிரபு எங்கு வாசித்தார்?",
+    "options_en": [
+      "Allahabad",
+      "Calcutta",
+      "Delhi",
+      "Madras"
+    ],
+    "options_ta": [
+      "அலகாபாத்",
+      "கல்கத்தா",
+      "டெல்லி",
+      "மெட்ராஸ்"
+    ],
+    "answer": "a",
+    "explanation_en": "Lord Canning read Queen Victoria's Proclamation at a grand Durbar in Allahabad on November 1, 1858.",
+    "explanation_ta": "நவம்பர் 1, 1858 அன்று அலகாபாத்தில் நடைபெற்ற தர்பாரில் கானிங் பிரபு விக்டோரியா மகாராணியின் பேரறிக்கையை வாசித்தார்."
+  },
+  {
+    "id": "HB_E_043",
+    "subject": "Polity",
+    "topic": "Historical Background",
+    "difficulty": "Easy",
+    "question_type": "Direct",
+    "question": {
+      "en": "Which act legalized the Portfolio System introduced by Lord Canning in 1859?",
+      "ta": "1859-இல் கானிங் பிரபுவால் அறிமுகப்படுத்தப்பட்ட துறைவாரி முறையை (Portfolio System) சட்டப்பூர்வமாக்கிய சட்டம் எது?"
+    },
+    "options": [
+      {
+        "id": "A",
+        "en": "Indian Councils Act of 1861",
+        "ta": "1861 இந்தியக் கவுன்சில் சட்டம்"
+      },
+      {
+        "id": "B",
+        "en": "Indian Councils Act of 1892",
+        "ta": "1892 இந்தியக் கவுன்சில் சட்டம்"
+      },
+      {
+        "id": "C",
+        "en": "Government of India Act 1858",
+        "ta": "1858 இந்திய அரசுச் சட்டம்"
+      },
+      {
+        "id": "D",
+        "en": "Charter Act of 1853",
+        "ta": "1853 சாசனச் சட்டம்"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "The Indian Councils Act of 1861 legalized the portfolio system where members were made in charge of specific departments.",
+      "ta": "1861 இந்தியக் கவுன்சில் சட்டம் துறைவாரி முறையை சட்டப்பூர்வமாக்கியது. இதன் மூலம் உறுப்பினர்கள் குறிப்பிட்ட துறைகளின் பொறுப்பாளர்களாக்கப்பட்டனர்."
+    },
+    "why_not_others": {
+      "A": {
+        "en": "Correct. Indian Councils Act of 1861 legalized it.",
+        "ta": "சரி. 1861 இந்தியக் கவுன்சில் சட்டம் இதனை சட்டப்பூர்வமாக்கியது."
+      },
+      "B": {
+        "en": "Incorrect. 1892 Act expanded functions of councils.",
+        "ta": "தவறு. 1892 சட்டம் கவுன்சில்களின் பணிகளை விரிவுபடுத்தியது."
+      },
+      "C": {
+        "en": "Incorrect. 1858 Act reorganized the executive control.",
+        "ta": "தவறு. 1858 சட்டம் நிர்வாகக் கட்டுப்பாட்டை சீரமைத்தது."
+      },
+      "D": {
+        "en": "Incorrect. 1853 Act separated legislative and executive functions.",
+        "ta": "தவறு. 1853 சட்டம் சட்டமன்ற மற்றும் நிர்வாகப் பணிகளைப் பிரித்தது."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "The Portfolio System laid the foundation of the modern cabinet system in India.",
+      "ta": "துறைவாரி முறை இந்தியாவில் நவீன அமைச்சரவை முறைக்கு அடித்தளம் அமைத்தது."
+    },
+    "revision_fact": {
+      "en": "Under this, an executive member could issue orders on behalf of the council for his department.",
+      "ta": "இதன் கீழ், ஒரு நிர்வாக உறுப்பினர் தனது துறை சார்பாக குழுவின் பெயரில் உத்தரவுகளைப் பிறப்பிக்கலாம்."
+    },
+    "source_reference": [
+      "M. Laxmikanth - Indian Polity",
+      "NCERT",
+      "Samacheer Kalvi"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 40,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Historical Background",
+      "Indian Councils Act 1861"
+    ],
+    "question_en": "Which act legalized the Portfolio System introduced by Lord Canning in 1859?",
+    "question_ta": "1859-இல் கானிங் பிரபுவால் அறிமுகப்படுத்தப்பட்ட துறைவாரி முறையை (Portfolio System) சட்டப்பூர்வமாக்கிய சட்டம் எது?",
+    "options_en": [
+      "Indian Councils Act of 1861",
+      "Indian Councils Act of 1892",
+      "Government of India Act 1858",
+      "Charter Act of 1853"
+    ],
+    "options_ta": [
+      "1861 இந்தியக் கவுன்சில் சட்டம்",
+      "1892 இந்தியக் கவுன்சில் சட்டம்",
+      "1858 இந்திய அரசுச் சட்டம்",
+      "1853 சாசனச் சட்டம்"
+    ],
+    "answer": "a",
+    "explanation_en": "The Indian Councils Act of 1861 legalized the portfolio system where members were made in charge of specific departments.",
+    "explanation_ta": "1861 இந்தியக் கவுன்சில் சட்டம் துறைவாரி முறையை சட்டப்பூர்வமாக்கியது. இதன் மூலம் உறுப்பினர்கள் குறிப்பிட்ட துறைகளின் பொறுப்பாளர்களாக்கப்பட்டனர்."
+  },
+  {
+    "id": "HB_E_044",
+    "subject": "Polity",
+    "topic": "Historical Background",
+    "difficulty": "Easy",
+    "question_type": "Direct",
+    "question": {
+      "en": "Who were the three Indians nominated to the Legislative Council by Viceroy Lord Canning in 1862 under the Indian Councils Act of 1861?",
+      "ta": "1861 இந்தியக் கவுன்சில் சட்டத்தின் கீழ், 1862-இல் வைஸ்ராய் கானிங் பிரபுவால் சட்டமன்றக் குழுவிற்கு நியமிக்கப்பட்ட மூன்று இந்தியர்கள் யார்?"
+    },
+    "options": [
+      {
+        "id": "A",
+        "en": "Raja of Benares, Maharaja of Patiala, and Sir Dinkar Rao",
+        "ta": "பெனாரஸ் ராஜா, பட்டியாலா மகாராஜா மற்றும் சர் தினகர் ராவ்"
+      },
+      {
+        "id": "B",
+        "en": "Raja of Tanjore, Nawab of Arcot, and Nana Fadnavis",
+        "ta": "தஞ்சாவூர் ராஜா, ஆற்காடு நவாப் மற்றும் நானா பட்னாவிஸ்"
+      },
+      {
+        "id": "C",
+        "en": "Maharaja of Mysore, Nizam of Hyderabad, and Sir Syed Ahmed Khan",
+        "ta": "மைசூர் மகாராஜா, ஹைதராபாத் நிஜாம் மற்றும் சர் சையத் அகமது கான்"
+      },
+      {
+        "id": "D",
+        "en": "Raja of Benares, Maharaja of Gwalior, and Sir Dinkar Rao",
+        "ta": "பெனாரஸ் ராஜா, குவாலியர் மகாராஜா மற்றும் சர் தினகர் ராவ்"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "In 1862, Lord Canning nominated the Raja of Benares, the Maharaja of Patiala, and Sir Dinkar Rao as non-official members.",
+      "ta": "1862-இல் கானிங் பிரபு பெனாரஸ் ராஜா, பட்டியாலா மகாராஜா மற்றும் சர் தினகர் ராவ் ஆகியோரை அதிகாரப்பூர்வமற்ற உறுப்பினர்களாக நியமித்தார்."
+    },
+    "why_not_others": {
+      "A": {
+        "en": "Correct. Raja of Benares, Maharaja of Patiala, and Sir Dinkar Rao.",
+        "ta": "சரி. பெனாரஸ் ராஜா, பட்டியாலா மகாராஜா மற்றும் சர் தினகர் ராவ்."
+      },
+      "B": {
+        "en": "Incorrect. Other options contain figures who were not nominated in 1862.",
+        "ta": "தவறு. இதர இணைகளில் உள்ளவர்கள் 1862-இல் நியமிக்கப்பட்டவர்கள் அல்லர்."
+      },
+      "C": {
+        "en": "Incorrect. Sir Syed Ahmed Khan was nominated later in 1878.",
+        "ta": "தவறு. சர் சையத் அகமது கான் பின்னர் 1878 இல் நியமிக்கப்பட்டார்."
+      },
+      "D": {
+        "en": "Incorrect. Maharaja of Gwalior was not among the three nominated in 1862.",
+        "ta": "தவறு. குவாலியர் மகாராஜா 1862-இல் நியமிக்கப்பட்ட மூவருள் ஒருவர் அல்லர்."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "This was the beginning of the association of Indians in the lawmaking process.",
+      "ta": "இது சட்டமியற்றும் செயல்பாட்டில் இந்தியர்களை இணைத்துக் கொள்ளும் கொள்கையின் தொடக்கமாகும்."
+    },
+    "revision_fact": {
+      "en": "These members had limited power and could not discuss financial matters.",
+      "ta": "இவ்வுறுப்பினர்கள் வரம்பிற்குட்பட்ட அதிகாரத்தையே பெற்றிருந்தனர், நிதி விவகாரங்களை விவாதிக்க முடியாது."
+    },
+    "source_reference": [
+      "M. Laxmikanth - Indian Polity",
+      "NCERT",
+      "Samacheer Kalvi"
+    ],
+    "bloom_level": "Remember",
+    "estimated_time_sec": 40,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Historical Background",
+      "Indian Councils Act 1861"
+    ],
+    "question_en": "Who were the three Indians nominated to the Legislative Council by Viceroy Lord Canning in 1862 under the Indian Councils Act of 1861?",
+    "question_ta": "1861 இந்தியக் கவுன்சில் சட்டத்தின் கீழ், 1862-இல் வைஸ்ராய் கானிங் பிரபுவால் சட்டமன்றக் குழுவிற்கு நியமிக்கப்பட்ட மூன்று இந்தியர்கள் யார்?",
+    "options_en": [
+      "Raja of Benares, Maharaja of Patiala, and Sir Dinkar Rao",
+      "Raja of Tanjore, Nawab of Arcot, and Nana Fadnavis",
+      "Maharaja of Mysore, Nizam of Hyderabad, and Sir Syed Ahmed Khan",
+      "Raja of Benares, Maharaja of Gwalior, and Sir Dinkar Rao"
+    ],
+    "options_ta": [
+      "பெனாரஸ் ராஜா, பட்டியாலா மகாராஜா மற்றும் சர் தினகர் ராவ்",
+      "தஞ்சாவூர் ராஜா, ஆற்காடு நவாப் மற்றும் நானா பட்னாவிஸ்",
+      "மைசூர் மகாராஜா, ஹைதராபாத் நிஜாம் மற்றும் சர் சையத் அகமது கான்",
+      "பெனாரஸ் ராஜா, குவாலியர் மகாராஜா மற்றும் சர் தினகர் ராவ்"
+    ],
+    "answer": "a",
+    "explanation_en": "In 1862, Lord Canning nominated the Raja of Benares, the Maharaja of Patiala, and Sir Dinkar Rao as non-official members.",
+    "explanation_ta": "1862-இல் கானிங் பிரபு பெனாரஸ் ராஜா, பட்டியாலா மகாராஜா மற்றும் சர் தினகர் ராவ் ஆகியோரை அதிகாரப்பூர்வமற்ற உறுப்பினர்களாக நியமித்தார்."
+  },
+  {
+    "id": "HB_E_045",
+    "subject": "Polity",
+    "topic": "Historical Background",
+    "difficulty": "Easy",
+    "question_type": "Direct",
+    "question": {
+      "en": "Which act empowered the Viceroy of India to issue ordinances in emergencies without the consent of the Legislative Council?",
+      "ta": "சட்டமன்றக் குழுவின் அனுமதியின்றி அவசரக் காலங்களில் அவசரச் சட்டங்களை (Ordinances) பிறப்பிக்க வைஸ்ராய்க்கு அதிகாரம் அளித்த சட்டம் எது?"
+    },
+    "options": [
+      {
+        "id": "A",
+        "en": "Indian Councils Act of 1861",
+        "ta": "1861 இந்தியக் கவுன்சில் சட்டம்"
+      },
+      {
+        "id": "B",
+        "en": "Indian Councils Act of 1892",
+        "ta": "1892 இந்தியக் கவுன்சில் சட்டம்"
+      },
+      {
+        "id": "C",
+        "en": "Government of India Act 1858",
+        "ta": "1858 இந்திய அரசுச் சட்டம்"
+      },
+      {
+        "id": "D",
+        "en": "Government of India Act 1935",
+        "ta": "1935 இந்திய அரசுச் சட்டம்"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "The Indian Councils Act of 1861 empowered the Viceroy to issue ordinances during emergencies.",
+      "ta": "1861 இந்தியக் கவுன்சில் சட்டம் அவசரக் காலங்களில் அவசரச் சட்டங்களை பிறப்பிக்க வைஸ்ராய்க்கு அதிகாரம் வழங்கியது."
+    },
+    "why_not_others": {
+      "A": {
+        "en": "Correct. Indian Councils Act of 1861 introduced this power.",
+        "ta": "சரி. 1861 இந்தியக் கவுன்சில் சட்டம் இவ்வதிகாரத்தை அறிமுகப்படுத்தியது."
+      },
+      "B": {
+        "en": "Incorrect. 1892 Act did not introduce this power.",
+        "ta": "தவறு. 1892 சட்டம் இவ்வதிகாரத்தை அறிமுகப்படுத்தவில்லை."
+      },
+      "C": {
+        "en": "Incorrect. 1858 Act did not contain ordinance provisions.",
+        "ta": "தவறு. 1858 சட்டத்தில் அவசரச் சட்டம் பற்றிய பிரிவுகள் இல்லை."
+      },
+      "D": {
+        "en": "Incorrect. 1935 Act expanded executive power but was not the origin.",
+        "ta": "தவறு. 1935 சட்டம் அதிகாரத்தை விரிவுபடுத்தியதே தவிர, இது ஆரம்பம் அல்ல."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "The life of such an ordinance was limited to six months.",
+      "ta": "இத்தகைய அவசரச் சட்டங்களின் ஆயுட்காலம் ஆறு மாதங்களாக வரம்பிடப்பட்டிருந்தது."
+    },
+    "revision_fact": {
+      "en": "This is the historical origin of the ordinance-making power under Article 123 of the Constitution.",
+      "ta": "இதுவே தற்போதைய அரசியலமைப்பின் 123-வது விதியின் கீழ் உள்ள அவசரச் சட்டம் பிறப்பிக்கும் அதிகாரத்தின் வரலாற்றுத் தொடக்கமாகும்."
+    },
+    "source_reference": [
+      "M. Laxmikanth - Indian Polity",
+      "NCERT",
+      "Samacheer Kalvi"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 40,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Historical Background",
+      "Indian Councils Act 1861"
+    ],
+    "question_en": "Which act empowered the Viceroy of India to issue ordinances in emergencies without the consent of the Legislative Council?",
+    "question_ta": "சட்டமன்றக் குழுவின் அனுமதியின்றி அவசரக் காலங்களில் அவசரச் சட்டங்களை (Ordinances) பிறப்பிக்க வைஸ்ராய்க்கு அதிகாரம் அளித்த சட்டம் எது?",
+    "options_en": [
+      "Indian Councils Act of 1861",
+      "Indian Councils Act of 1892",
+      "Government of India Act 1858",
+      "Government of India Act 1935"
+    ],
+    "options_ta": [
+      "1861 இந்தியக் கவுன்சில் சட்டம்",
+      "1892 இந்தியக் கவுன்சில் சட்டம்",
+      "1858 இந்திய அரசுச் சட்டம்",
+      "1935 இந்திய அரசுச் சட்டம்"
+    ],
+    "answer": "a",
+    "explanation_en": "The Indian Councils Act of 1861 empowered the Viceroy to issue ordinances during emergencies.",
+    "explanation_ta": "1861 இந்தியக் கவுன்சில் சட்டம் அவசரக் காலங்களில் அவசரச் சட்டங்களை பிறப்பிக்க வைஸ்ராய்க்கு அதிகாரம் வழங்கியது."
+  },
+  {
+    "id": "HB_E_046",
+    "subject": "Polity",
+    "topic": "Historical Background",
+    "difficulty": "Easy",
+    "question_type": "Direct",
+    "question": {
+      "en": "Which act gave the members of the Legislative Council the right to discuss the budget and ask questions to the executive?",
+      "ta": "சட்டமன்றக் குழு உறுப்பினர்களுக்கு பட்ஜெட்டை விவாதிக்கவும், நிர்வாகத்திடம் வினாக்கள் கேட்கவும் உரிமை வழங்கிய சட்டம் எது?"
+    },
+    "options": [
+      {
+        "id": "A",
+        "en": "Indian Councils Act of 1892",
+        "ta": "1892 இந்தியக் கவுன்சில் சட்டம்"
+      },
+      {
+        "id": "B",
+        "en": "Indian Councils Act of 1861",
+        "ta": "1861 இந்தியக் கவுன்சில் சட்டம்"
+      },
+      {
+        "id": "C",
+        "en": "Indian Councils Act of 1909",
+        "ta": "1909 இந்தியக் கவுன்சில் சட்டம்"
+      },
+      {
+        "id": "D",
+        "en": "Government of India Act 1919",
+        "ta": "1919 இந்திய அரசுச் சட்டம்"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "The Indian Councils Act of 1892 expanded the functions of the legislative councils, allowing budget discussion.",
+      "ta": "1892 இந்தியக் கவுன்சில் சட்டம் சட்டமன்றக் குழுக்களின் பணிகளை விரிவுபடுத்தி, பட்ஜெட் விவாதத்தை அனுமதித்தது."
+    },
+    "why_not_others": {
+      "A": {
+        "en": "Correct. Indian Councils Act of 1892 introduced these functions.",
+        "ta": "சரி. 1892 இந்தியக் கவுன்சில் சட்டம் இப்பணிகளை அறிமுகப்படுத்தியது."
+      },
+      "B": {
+        "en": "Incorrect. 1861 Act did not permit budget discussion.",
+        "ta": "தவறு. 1861 சட்டம் பட்ஜெட் விவாதத்தை அனுமதிக்கவில்லை."
+      },
+      "C": {
+        "en": "Incorrect. 1909 Act expanded these rights further (supplementary questions).",
+        "ta": "தவறு. 1909 சட்டம் இவ்வுரிமைகளை மேலும் விரிவுபடுத்தியது (துணை வினாக்கள்)."
+      },
+      "D": {
+        "en": "Incorrect. 1919 Act introduced bicameralism.",
+        "ta": "தவறு. 1919 சட்டம் இரு அவை சட்டமன்ற முறையை அறிமுகப்படுத்தியது."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "Members had to give a 6-day prior notice to ask questions.",
+      "ta": "வினாக்கள் கேட்க உறுப்பினர்கள் 6 நாட்களுக்கு முன்னரே அறிவிப்பு வழங்க வேண்டும்."
+    },
+    "revision_fact": {
+      "en": "No supplementary questions were allowed under the 1892 Act.",
+      "ta": "1892 சட்டத்தின் கீழ் துணை வினாக்கள் கேட்க அனுமதிக்கப்படவில்லை."
+    },
+    "source_reference": [
+      "M. Laxmikanth - Indian Polity",
+      "NCERT",
+      "Samacheer Kalvi"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 40,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Historical Background",
+      "Indian Councils Act 1892"
+    ],
+    "question_en": "Which act gave the members of the Legislative Council the right to discuss the budget and ask questions to the executive?",
+    "question_ta": "சட்டமன்றக் குழு உறுப்பினர்களுக்கு பட்ஜெட்டை விவாதிக்கவும், நிர்வாகத்திடம் வினாக்கள் கேட்கவும் உரிமை வழங்கிய சட்டம் எது?",
+    "options_en": [
+      "Indian Councils Act of 1892",
+      "Indian Councils Act of 1861",
+      "Indian Councils Act of 1909",
+      "Government of India Act 1919"
+    ],
+    "options_ta": [
+      "1892 இந்தியக் கவுன்சில் சட்டம்",
+      "1861 இந்தியக் கவுன்சில் சட்டம்",
+      "1909 இந்தியக் கவுன்சில் சட்டம்",
+      "1919 இந்திய அரசுச் சட்டம்"
+    ],
+    "answer": "a",
+    "explanation_en": "The Indian Councils Act of 1892 expanded the functions of the legislative councils, allowing budget discussion.",
+    "explanation_ta": "1892 இந்தியக் கவுன்சில் சட்டம் சட்டமன்றக் குழுக்களின் பணிகளை விரிவுபடுத்தி, பட்ஜெட் விவாதத்தை அனுமதித்தது."
+  },
+  {
+    "id": "HB_E_047",
+    "subject": "Polity",
+    "topic": "Historical Background",
+    "difficulty": "Easy",
+    "question_type": "Direct",
+    "question": {
+      "en": "The Indian Councils Act of 1909 is popularly known by which other name?",
+      "ta": "1909 இந்தியக் கவுன்சில் சட்டம் எந்தப் பெயரால் பிரபலமாக அழைக்கப்படுகிறது?"
+    },
+    "options": [
+      {
+        "id": "A",
+        "en": "Morley-Minto Reforms",
+        "ta": "மோர்லி-மிண்டோ சீர்திருத்தங்கள்"
+      },
+      {
+        "id": "B",
+        "en": "Montagu-Chelmsford Reforms",
+        "ta": "மாண்டேகு-செம்ஸ்ஃபோர்டு சீர்திருத்தங்கள்"
+      },
+      {
+        "id": "C",
+        "en": "Wavell Plan",
+        "ta": "வேவல் திட்டம்"
+      },
+      {
+        "id": "D",
+        "en": "Mountbatten Plan",
+        "ta": "மவுண்ட்பேட்டன் திட்டம்"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "The Indian Councils Act of 1909 is called Morley-Minto Reforms (Lord Morley was S.O.S., Lord Minto was Viceroy).",
+      "ta": "1909 இந்தியக் கவுன்சில் சட்டம் மோர்லி-மிண்டோ சீர்திருத்தங்கள் எனப்படுகிறது (மோர்லி அரசுச் செயலாளர், மிண்டோ வைஸ்ராய்)."
+    },
+    "why_not_others": {
+      "A": {
+        "en": "Correct. Morley-Minto Reforms.",
+        "ta": "சரி. மோர்லி-மிண்டோ சீர்திருத்தங்கள்."
+      },
+      "B": {
+        "en": "Incorrect. Mont-Ford Reforms refer to the 1919 Act.",
+        "ta": "தவறு. மாண்டேகு-செம்ஸ்ஃபோர்டு சீர்திருத்தங்கள் என்பது 1919 சட்டமாகும்."
+      },
+      "C": {
+        "en": "Incorrect. Wavell Plan was proposed in 1945.",
+        "ta": "தவறு. வேவல் திட்டம் 1945-இல் முன்மொழியப்பட்டது."
+      },
+      "D": {
+        "en": "Incorrect. Mountbatten Plan was proposed on June 3, 1947.",
+        "ta": "தவறு. மவுண்ட்பேட்டன் திட்டம் ஜூன் 3, 1947 அன்று முன்மொழியப்பட்டது."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "This act introduced communal representation for Muslims.",
+      "ta": "இச்சட்டம் முஸ்லிம்களுக்கான வகுப்புவாத பிரதிநிதித்துவத்தை அறிமுகப்படுத்தியது."
+    },
+    "revision_fact": {
+      "en": "It increased the size of the Central Legislative Council from 16 to 60.",
+      "ta": "இது மத்திய சட்டமன்றக் குழுவின் எண்ணிக்கையை 16லிருந்து 60 ஆக உயர்த்தியது."
+    },
+    "source_reference": [
+      "M. Laxmikanth - Indian Polity",
+      "NCERT",
+      "Samacheer Kalvi"
+    ],
+    "bloom_level": "Remember",
+    "estimated_time_sec": 40,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Historical Background",
+      "Indian Councils Act 1909"
+    ],
+    "question_en": "The Indian Councils Act of 1909 is popularly known by which other name?",
+    "question_ta": "1909 இந்தியக் கவுன்சில் சட்டம் எந்தப் பெயரால் பிரபலமாக அழைக்கப்படுகிறது?",
+    "options_en": [
+      "Morley-Minto Reforms",
+      "Montagu-Chelmsford Reforms",
+      "Wavell Plan",
+      "Mountbatten Plan"
+    ],
+    "options_ta": [
+      "மோர்லி-மிண்டோ சீர்திருத்தங்கள்",
+      "மாண்டேகு-செம்ஸ்ஃபோர்டு சீர்திருத்தங்கள்",
+      "வேவல் திட்டம்",
+      "மவுண்ட்பேட்டன் திட்டம்"
+    ],
+    "answer": "a",
+    "explanation_en": "The Indian Councils Act of 1909 is called Morley-Minto Reforms (Lord Morley was S.O.S., Lord Minto was Viceroy).",
+    "explanation_ta": "1909 இந்தியக் கவுன்சில் சட்டம் மோர்லி-மிண்டோ சீர்திருத்தங்கள் எனப்படுகிறது (மோர்லி அரசுச் செயலாளர், மிண்டோ வைஸ்ராய்)."
+  },
+  {
+    "id": "HB_E_048",
+    "subject": "Polity",
+    "topic": "Historical Background",
+    "difficulty": "Easy",
+    "question_type": "Direct",
+    "question": {
+      "en": "Who is known as the 'Father of Communal Electorate' in India?",
+      "ta": "இந்தியாவில் 'வகுப்புவாத பிரதிநிதித்துவத்தின் தந்தை' என்று அழைக்கப்படுபவர் யார்?"
+    },
+    "options": [
+      {
+        "id": "A",
+        "en": "Lord Minto",
+        "ta": "மிண்டோ பிரபு"
+      },
+      {
+        "id": "B",
+        "en": "Lord Morley",
+        "ta": "மோர்லி பிரபு"
+      },
+      {
+        "id": "C",
+        "en": "Lord Chelmsford",
+        "ta": "செம்ஸ்ஃபோர்டு பிரபு"
+      },
+      {
+        "id": "D",
+        "en": "Lord Curzon",
+        "ta": "கர்சன் பிரபு"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "Lord Minto is called the Father of Communal Electorate for introducing separate electorates for Muslims in 1909.",
+      "ta": "1909-இல் முஸ்லிம்களுக்குத் தனித் தொகுதிகளை அறிமுகப்படுத்தியதற்காக மிண்டோ பிரபு வகுப்புவாத பிரதிநிதித்துவத்தின் தந்தை எனப்படுகிறார்."
+    },
+    "why_not_others": {
+      "A": {
+        "en": "Correct. Lord Minto is the Father of Communal Electorate.",
+        "ta": "சரி. மிண்டோ பிரபு வகுப்புவாத பிரதிநிதித்துவத்தின் தந்தை ஆவார்."
+      },
+      "B": {
+        "en": "Incorrect. Lord Morley was the Secretary of State.",
+        "ta": "தவறு. மோர்லி பிரபு இந்திய அரசுச் செயலாளராக இருந்தார்."
+      },
+      "C": {
+        "en": "Incorrect. Lord Chelmsford was Viceroy in 1919.",
+        "ta": "தவறு. செம்ஸ்ஃபோர்டு பிரபு 1919-இல் வைஸ்ராயாக இருந்தார்."
+      },
+      "D": {
+        "en": "Incorrect. Lord Curzon is associated with the partition of Bengal in 1905.",
+        "ta": "தவறு. கர்சன் பிரபு 1905 வங்கப் பிரிவினையுடன் தொடர்புடையவர் ஆவார்."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "Morley wrote to Minto: 'We are sowing dragon's teeth, and the harvest will be bitter.'",
+      "ta": "மோர்லி மிண்டோவிற்கு எழுதினார்: 'நாம் நாகப்பாம்பின் பற்களை விதைக்கிறோம், இதன் விளைவு கசப்பானதாக இருக்கும்.'"
+    },
+    "revision_fact": {
+      "en": "This communal representation was later extended to other communities in 1919 and 1935.",
+      "ta": "இவகுப்புவாத பிரதிநிதித்துவம் பின்னர் 1919 மற்றும் 1935-இல் இதர பிரிவினருக்கும் விரிவுபடுத்தப்பட்டது."
+    },
+    "source_reference": [
+      "M. Laxmikanth - Indian Polity",
+      "NCERT",
+      "Samacheer Kalvi"
+    ],
+    "bloom_level": "Remember",
+    "estimated_time_sec": 40,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Historical Background",
+      "Indian Councils Act 1909"
+    ],
+    "question_en": "Who is known as the 'Father of Communal Electorate' in India?",
+    "question_ta": "இந்தியாவில் 'வகுப்புவாத பிரதிநிதித்துவத்தின் தந்தை' என்று அழைக்கப்படுபவர் யார்?",
+    "options_en": [
+      "Lord Minto",
+      "Lord Morley",
+      "Lord Chelmsford",
+      "Lord Curzon"
+    ],
+    "options_ta": [
+      "மிண்டோ பிரபு",
+      "மோர்லி பிரபு",
+      "செம்ஸ்ஃபோர்டு பிரபு",
+      "கர்சன் பிரபு"
+    ],
+    "answer": "a",
+    "explanation_en": "Lord Minto is called the Father of Communal Electorate for introducing separate electorates for Muslims in 1909.",
+    "explanation_ta": "1909-இல் முஸ்லிம்களுக்குத் தனித் தொகுதிகளை அறிமுகப்படுத்தியதற்காக மிண்டோ பிரபு வகுப்புவாத பிரதிநிதித்துவத்தின் தந்தை எனப்படுகிறார்."
+  },
+  {
+    "id": "HB_E_049",
+    "subject": "Polity",
+    "topic": "Historical Background",
+    "difficulty": "Easy",
+    "question_type": "Direct",
+    "question": {
+      "en": "Who was the first Indian to join the Viceroy's Executive Council under the provisions of the Indian Councils Act 1909?",
+      "ta": "1909 இந்தியக் கவுன்சில் சட்டத்தின் கீழ் வைஸ்ராயின் நிர்வாகக் குழுவில் இணைந்த முதல் இந்தியர் யார்?"
+    },
+    "options": [
+      {
+        "id": "A",
+        "en": "Satyendra Prasad Sinha",
+        "ta": "சத்யேந்திர பிரசாத் சின்கா"
+      },
+      {
+        "id": "B",
+        "en": "Satyendranath Tagore",
+        "ta": "சத்யேந்திரநாத் தாகூர்"
+      },
+      {
+        "id": "C",
+        "en": "Rash Behari Ghosh",
+        "ta": "ராஷ் பிஹாரி கோஷ்"
+      },
+      {
+        "id": "D",
+        "en": "Gopal Krishna Gokhale",
+        "ta": "கோபால கிருஷ்ண கோகலே"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "Satyendra Prasad Sinha was appointed as the Law Member, becoming the first Indian in the Viceroy's Executive Council.",
+      "ta": "சத்யேந்திர பிரசாத் சின்கா சட்டம் உறுப்பினராக நியமிக்கப்பட்டு வைஸ்ராயின் நிர்வாகக் குழுவில் சேர்ந்த முதல் இந்தியர் ஆனார்."
+    },
+    "why_not_others": {
+      "A": {
+        "en": "Correct. Satyendra Prasad Sinha was the first Indian member.",
+        "ta": "சரி. சத்யேந்திர பிரசாத் சின்கா முதல் இந்திய உறுப்பினர் ஆவார்."
+      },
+      "B": {
+        "en": "Incorrect. Satyendranath Tagore was the first Indian civil servant.",
+        "ta": "தவறு. சத்யேந்திரநாத் தாகூர் முதல் இந்திய குடிமைப் பணியாளர் ஆவார்."
+      },
+      "C": {
+        "en": "Incorrect. Rash Behari Ghosh was a moderate leader who presided Surat session.",
+        "ta": "தவறு. ராஷ் பிஹாரி கோஷ் சூரத் மாநாட்டிற்குத் தலைமை தாங்கிய மிதவாதத் தலைவர் ஆவார்."
+      },
+      "D": {
+        "en": "Incorrect. Gokhale was a member of the imperial legislative council but not the executive council.",
+        "ta": "தவறு. கோகலே மத்திய சட்டமன்றக் குழுவில் உறுப்பினராக இருந்தார், நிர்வாகக் குழுவில் அல்ல."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "He was later elevated as Lord Sinha of Raipur.",
+      "ta": "இவர் பின்னர் ராய்பூரின் சின்கா பிரபுவாக உயர்த்தப்பட்டார்."
+    },
+    "revision_fact": {
+      "en": "This reform satisfied the moderate nationalists' demand for executive association.",
+      "ta": "நிர்வாகக் குழுவில் இந்தியர்களைச் சேர்க்க வேண்டும் என்ற மிதவாதிகளின் கோரிக்கையை இச்சீர்திருத்தம் நிறைவேற்றியது."
+    },
+    "source_reference": [
+      "M. Laxmikanth - Indian Polity",
+      "NCERT",
+      "Samacheer Kalvi"
+    ],
+    "bloom_level": "Remember",
+    "estimated_time_sec": 40,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Historical Background",
+      "Indian Councils Act 1909"
+    ],
+    "question_en": "Who was the first Indian to join the Viceroy's Executive Council under the provisions of the Indian Councils Act 1909?",
+    "question_ta": "1909 இந்தியக் கவுன்சில் சட்டத்தின் கீழ் வைஸ்ராயின் நிர்வாகக் குழுவில் இணைந்த முதல் இந்தியர் யார்?",
+    "options_en": [
+      "Satyendra Prasad Sinha",
+      "Satyendranath Tagore",
+      "Rash Behari Ghosh",
+      "Gopal Krishna Gokhale"
+    ],
+    "options_ta": [
+      "சத்யேந்திர பிரசாத் சின்கா",
+      "சத்யேந்திரநாத் தாகூர்",
+      "ராஷ் பிஹாரி கோஷ்",
+      "கோபால கிருஷ்ண கோகலே"
+    ],
+    "answer": "a",
+    "explanation_en": "Satyendra Prasad Sinha was appointed as the Law Member, becoming the first Indian in the Viceroy's Executive Council.",
+    "explanation_ta": "சத்யேந்திர பிரசாத் சின்கா சட்டம் உறுப்பினராக நியமிக்கப்பட்டு வைஸ்ராயின் நிர்வாகக் குழுவில் சேர்ந்த முதல் இந்தியர் ஆனார்."
+  },
+  {
+    "id": "HB_E_050",
+    "subject": "Polity",
+    "topic": "Historical Background",
+    "difficulty": "Easy",
+    "question_type": "Direct",
+    "question": {
+      "en": "Which act introduced the system of Dyarchy (dual rule) in the provinces of British India?",
+      "ta": "பிரிட்டிஷ் இந்தியாவின் மாகாணங்களில் இரட்டையாட்சி (Dyarchy) முறையை அறிமுகப்படுத்திய சட்டம் எது?"
+    },
+    "options": [
+      {
+        "id": "A",
+        "en": "Government of India Act 1919",
+        "ta": "1919 இந்திய அரசுச் சட்டம்"
+      },
+      {
+        "id": "B",
+        "en": "Government of India Act 1935",
+        "ta": "1935 இந்திய அரசுச் சட்டம்"
+      },
+      {
+        "id": "C",
+        "en": "Indian Councils Act 1909",
+        "ta": "1909 இந்தியக் கவுன்சில் சட்டம்"
+      },
+      {
+        "id": "D",
+        "en": "Indian Independence Act 1947",
+        "ta": "1947 இந்திய விடுதலைச் சட்டம்"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "The GOI Act 1919 (Montagu-Chelmsford Reforms) introduced Dyarchy in the provinces, splitting subjects into Transferred and Reserved.",
+      "ta": "1919 இந்திய அரசுச் சட்டம் (மாண்டேகு-செம்ஸ்ஃபோர்டு சீர்திருத்தங்கள்) மாகாணங்களில் இரட்டையாட்சியை அறிமுகப்படுத்தி, துறைகளை மாற்றப்பட்ட மற்றும் ஒதுக்கப்பட்ட துறைகளாகப் பிரித்தது."
+    },
+    "why_not_others": {
+      "A": {
+        "en": "Correct. GOI Act 1919 introduced provincial dyarchy.",
+        "ta": "சரி. 1919 இந்திய அரசுச் சட்டம் மாகாண இரட்டையாட்சியை அறிமுகப்படுத்தியது."
+      },
+      "B": {
+        "en": "Incorrect. 1935 Act abolished provincial dyarchy and introduced dyarchy at the center.",
+        "ta": "தவறு. 1935 சட்டம் மாகாண இரட்டையாட்சியை ஒழித்து மத்தியில் இரட்டையாட்சியை அறிமுகப்படுத்தியது."
+      },
+      "C": {
+        "en": "Incorrect. 1909 Act did not introduce dyarchy.",
+        "ta": "தவறு. 1909 சட்டம் இரட்டையாட்சியை அறிமுகப்படுத்தவில்லை."
+      },
+      "D": {
+        "en": "Incorrect. 1947 Act focused on partition and independence.",
+        "ta": "தவறு. 1947 சட்டம் விடுதலை மற்றும் பிரிவினையில் கவனம் செலுத்தியது."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "Reserved subjects were kept under the Governor's direct control, while Transferred subjects were handled by ministers.",
+      "ta": "ஒதுக்கப்பட்ட துறைகள் ஆளுநரின் நேரடி கட்டுப்பாட்டில் இருந்தன, மாற்றப்பட்ட துறைகள் அமைச்சர்களால் நிர்வகிக்கப்பட்டன."
+    },
+    "revision_fact": {
+      "en": "This system was abolished by the Government of India Act 1935.",
+      "ta": "இம்முறை பின்னர் 1935 இந்திய அரசுச் சட்டத்தால் ஒழிக்கப்பட்டது."
+    },
+    "source_reference": [
+      "M. Laxmikanth - Indian Polity",
+      "NCERT",
+      "Samacheer Kalvi"
+    ],
+    "bloom_level": "Understand",
+    "estimated_time_sec": 40,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Historical Background",
+      "Government of India Act 1919"
+    ],
+    "question_en": "Which act introduced the system of Dyarchy (dual rule) in the provinces of British India?",
+    "question_ta": "பிரிட்டிஷ் இந்தியாவின் மாகாணங்களில் இரட்டையாட்சி (Dyarchy) முறையை அறிமுகப்படுத்திய சட்டம் எது?",
+    "options_en": [
+      "Government of India Act 1919",
+      "Government of India Act 1935",
+      "Indian Councils Act 1909",
+      "Indian Independence Act 1947"
+    ],
+    "options_ta": [
+      "1919 இந்திய அரசுச் சட்டம்",
+      "1935 இந்திய அரசுச் சட்டம்",
+      "1909 இந்தியக் கவுன்சில் சட்டம்",
+      "1947 இந்திய விடுதலைச் சட்டம்"
+    ],
+    "answer": "a",
+    "explanation_en": "The GOI Act 1919 (Montagu-Chelmsford Reforms) introduced Dyarchy in the provinces, splitting subjects into Transferred and Reserved.",
+    "explanation_ta": "1919 இந்திய அரசுச் சட்டம் (மாண்டேகு-செம்ஸ்ஃபோர்டு சீர்திருத்தங்கள்) மாகாணங்களில் இரட்டையாட்சியை அறிமுகப்படுத்தி, துறைகளை மாற்றப்பட்ட மற்றும் ஒதுக்கப்பட்ட துறைகளாகப் பிரித்தது."
   }
 ]

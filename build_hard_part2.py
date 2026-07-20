@@ -1,0 +1,435 @@
+import json
+import sys
+from pathlib import Path
+
+target_path = Path(r"c:\Users\Home\Desktop\tnpsc_ai\data\questions\polity\historical_background_hard.json")
+with open(target_path, "r", encoding="utf-8") as f:
+    questions = json.load(f)
+
+def make_q(q_id, q_type, q_en, q_ta, opt_a_en, opt_a_ta, opt_b_en, opt_b_ta, opt_c_en, opt_c_ta, opt_d_en, opt_d_ta,
+           correct_ans, exp_en, exp_ta, wno_a_en, wno_a_ta, wno_b_en, wno_b_ta, wno_c_en, wno_c_ta, wno_d_en, wno_d_ta,
+           tip_en, tip_ta, rev_en, rev_ta, bloom, est_time, tags):
+    opts = [
+        {"id": "A", "en": opt_a_en, "ta": opt_a_ta},
+        {"id": "B", "en": opt_b_en, "ta": opt_b_ta},
+        {"id": "C", "en": opt_c_en, "ta": opt_c_ta},
+        {"id": "D", "en": opt_d_en, "ta": opt_d_ta}
+    ]
+    opts_en = [opt_a_en, opt_b_en, opt_c_en, opt_d_en]
+    opts_ta = [opt_a_ta, opt_b_ta, opt_c_ta, opt_d_ta]
+    
+    return {
+        "id": q_id,
+        "subject": "Polity",
+        "topic": "Historical Background",
+        "difficulty": "Hard",
+        "question_type": q_type,
+        "question": {"en": q_en, "ta": q_ta},
+        "options": opts,
+        "correct_answer": correct_ans,
+        "explanation": {"en": exp_en, "ta": exp_ta},
+        "why_not_others": {
+            "A": {"en": wno_a_en, "ta": wno_a_ta},
+            "B": {"en": wno_b_en, "ta": wno_b_ta},
+            "C": {"en": wno_c_en, "ta": wno_c_ta},
+            "D": {"en": wno_d_en, "ta": wno_d_ta}
+        },
+        "tnpsc_tip": {"en": tip_en, "ta": tip_ta},
+        "revision_fact": {"en": rev_en, "ta": rev_ta},
+        "source_reference": ["M. Laxmikanth - Indian Polity", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": bloom,
+        "estimated_time_sec": est_time,
+        "pyq_similarity": "High",
+        "tags": tags,
+        "question_en": q_en,
+        "question_ta": q_ta,
+        "options_en": opts_en,
+        "options_ta": opts_ta,
+        "answer": correct_ans.lower(),
+        "explanation_en": exp_en,
+        "explanation_ta": exp_ta
+    }
+
+# ---------------------------------------------------------
+# 10 STATEMENT BASED QUESTIONS (HB_H_011 to HB_H_020)
+# ---------------------------------------------------------
+
+questions.append(make_q(
+    "HB_H_011", "Statement Based",
+    "Consider the following statements regarding the legal evolution under the Regulating Act 1773 and Amending Act 1781:\n1. The Regulating Act 1773 established an Executive Council of four members to assist the Governor-General of Bengal, with decisions taken by majority vote.\n2. The Supreme Court established at Calcutta in 1774 possessed jurisdiction over all native Indians across Bengal, Bihar, and Orissa in personal law matters.\n3. The Amending Act 1781 explicitly exempted the Governor-General and members of his council from Supreme Court jurisdiction for official acts done by them.\nWhich of the statements given above are correct?",
+    "1773 ஒழுங்குமுறைச் சட்டம் மற்றும் 1781 திருத்தச் சட்டத்தின் கீழ் ஏற்பட்ட சட்ட வளர்ச்சி பற்றிய பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. 1773 ஒழுங்குமுறைச் சட்டம் வங்காள கவர்னர் ஜெனரலுக்கு உதவ நான்கு உறுப்பினர்களைக் கொண்ட நிர்வாகக் குழுவை அமைத்தது, முடிவுகள் பெரும்பான்மை வாக்களிப்பால் எடுக்கப்பட்டன.\n2. 1774 இல் கொல்கத்தாவில் அமைக்கப்பட்ட உச்ச நீதிமன்றம் தனிநபர் சட்ட விவகாரங்களில் வங்காளம், பீகார், ஒரிசா முழுவதும் உள்ள அனைத்து சுதேசி இந்தியர்கள் மீதும் அதிகார வரம்பைக் கொண்டிருந்தது.\n3. 1781 திருத்தச் சட்டம் கவர்னர் ஜெனரல் மற்றும் அவரது கவுன்சில் உறுப்பினர்களை அவர்களின் அதிகாரப்பூர்வ பணிகளுக்காக உச்ச நீதிமன்ற அதிகார வரம்பிலிருந்து வெளிப்படையாக விலக்கியது.\nஎது சரி?",
+    "1 and 2 only", "1 மற்றும் 2 மட்டும்",
+    "1 and 3 only", "1 மற்றும் 3 மட்டும்",
+    "2 and 3 only", "2 மற்றும் 3 மட்டும்",
+    "1, 2 and 3", "1, 2 மற்றும் 3",
+    "B",
+    "Statement 1 is correct (Executive council had 4 members, GG had casting vote only in ties). Statement 2 is INCORRECT (Supreme Court jurisdiction over natives was restricted to Calcutta inhabitants, or those employed under EIC, or by written consent). Statement 3 is correct (1781 Act exempted official executive acts).",
+    "கூற்று 1 சரி (நிர்வாகக் குழு 4 உறுப்பினர்கள்). கூற்று 2 தவறு (உச்ச நீதிமன்ற அதிகார வரம்பு கொல்கத்தா வாசிகள்/EIC ஊழியர்களுக்கு மட்டுமே பொருந்தியது). கூற்று 3 சரி (1781 சட்டம் அதிகாரப்பூர்வ பணிகளுக்கு விலக்களித்தது).",
+    "Incorrect. Statement 2 is false.",
+    "தவறு. கூற்று 2 தவறானது.",
+    "Correct. Statements 1 and 3 are correct; Statement 2 is false.",
+    "சரி. கூற்றுகள் 1 மற்றும் 3 சரி; கூற்று 2 தவறானது.",
+    "Incorrect. Statement 2 is false.",
+    "தவறு. கூற்று 2 தவறானது.",
+    "Incorrect. Statement 2 is false.",
+    "தவறு. கூற்று 2 தவறானது.",
+    "TNPSC Trap: Supreme Court (1774) had jurisdiction over Calcutta inhabitants, NOT all native Indians of Bengal, Bihar, Orissa.",
+    "TNPSC பொறி: 1774 உச்ச நீதிமன்ற அதிகார வரம்பு கொல்கத்தா வாசிகளுக்கு மட்டுமே இருந்தது, முழு வங்காள இந்தியர்களுக்கும் அல்ல.",
+    "Amending Act 1781 required Supreme Court to administer personal law of defendant (Hindu law for Hindus, Mohammedan law for Muslims).",
+    "1781 திருத்தச் சட்டம் பிரதிவாதியின் தனிநபர் சட்டத்தை (இந்துக்களுக்கு இந்து சட்டம், முஸ்லிம்களுக்கு இசுலாமிய சட்டம்) நீதிமன்றம் பயன்படுத்த உத்தரவிட்டது.",
+    "Analyze", 75, ["Polity", "Historical Background", "Regulating Act 1773", "Amending Act 1781"]
+))
+
+questions.append(make_q(
+    "HB_H_012", "Statement Based",
+    "Consider the following statements regarding the provisions of the Charter Act of 1813:\n1. It ended the East India Company's trade monopoly in India, but retained its monopoly over trade in Tea and trade with China.\n2. It allocated a sum of Rupees One Lakh annually to be spent on the revival and promotion of literature and encouragement of learned natives of India.\n3. It granted permission to Christian missionaries to enter India for the purpose of promoting moral and religious improvement.\nWhich of the statements given above are correct?",
+    "1813 ஆம் ஆண்டின் சாசனச் சட்டத்தின் விதிகள் பற்றிய பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இது இந்தியாவில் கிழக்கிந்தியக் கம்பெனியின் வர்த்தக ஏகபோகத்தை முடிவுக்குக் கொண்டு வந்தது, ஆனால் தேயிலை வர்த்தகம் மற்றும் சீனாவுடனான வர்த்தகத்தின் மீதான ஏகபோகத்தைத் தக்க வைத்துக் கொண்டது.\n2. இது இந்தியாவில் இலக்கியத்தை உயிர்ப்பிக்கவும், மேம்படுத்தவும், கற்றறிந்த இந்தியர்களை ஊக்குவிக்கவும் ஆண்டுதோறும் ரூ. 1 லட்சம் ஒதுக்கீடு செய்தது.\n3. இது இந்தியாவில் ஒழுக்க மற்றும் சமய முன்னேற்றத்தை ஊக்குவிக்கும் நோக்கில் கிறிஸ்தவ மிஷனரிகள் நுழைய அனுமதி வழங்கியது.\nஎது சரி?",
+    "1 and 2 only", "1 மற்றும் 2 மட்டும்",
+    "2 and 3 only", "2 மற்றும் 3 மட்டும்",
+    "1 and 3 only", "1 மற்றும் 3 மட்டும்",
+    "1, 2 and 3", "1, 2 மற்றும் 3",
+    "D",
+    "All three statements are correct. Charter Act 1813 ended Indian trade monopoly except Tea and China trade, allocated Rs 1 Lakh for education/literature, and allowed Christian missionaries.",
+    "மூன்று கூற்றுகளும் சரியானவை. 1813 சாசனச் சட்டம் தேயிலை, சீனா தவிர ஏகபோகத்தை ஒழித்தது, கல்விக்கு ரூ. 1 லட்சம் ஒதுக்கியது, மிஷனரிகளை அனுமதித்தது.",
+    "Incorrect. Statement 3 is also correct.",
+    "தவறு. கூற்று 3-ம் சரியானது.",
+    "Incorrect. Statement 1 is also correct.",
+    "தவறு. கூற்று 1-ம் சரியானது.",
+    "Incorrect. Statement 2 is also correct.",
+    "தவறு. கூற்று 2-ம் சரியானது.",
+    "Correct. All three statements are historically accurate.",
+    "சரி. மூன்று கூற்றுகளும் வரலாற்று ரீதியாகச் சரியானவை.",
+    "Charter Act 1813 explicitly asserted the sovereignty of the British Crown over Company territories in India.",
+    "1813 சாசனச் சட்டம் கம்பெனியின் இந்தியப் பகுதிகள் மீது பிரிட்டிஷ் முடிஅரசின் இறையாண்மையை வெளிப்படையாக அறிவித்தது.",
+    "The remaining monopolies (Tea and Trade with China) were completely abolished by Charter Act 1833.",
+    "மீதமிருந்த ஏகபோகங்களும் (தேயிலை மற்றும் சீனா வர்த்தகம்) 1833 சாசனச் சட்டத்தால் முழுமையாக ஒழிக்கப்பட்டன.",
+    "Analyze", 75, ["Polity", "Historical Background", "Charter Act 1813", "Statement Based"]
+))
+
+questions.append(make_q(
+    "HB_H_013", "Statement Based",
+    "Consider the following statements regarding the legal and structural features of the Charter Act of 1833:\n1. It added Lord Macaulay as the Law Member to the Governor-General's Council, leading to the establishment of the First Law Commission.\n2. Laws made under this Act were termed 'Acts', whereas laws enacted under previous Charter Acts were called 'Regulations'.\n3. It successfully implemented open competition for selecting civil servants, removing the patronage of the Court of Directors.\nWhich of the statements given above is/are correct?",
+    "1833 ஆம் ஆண்டின் சாசனச் சட்டத்தின் சட்ட மற்றும் கட்டமைப்பு அம்சங்கள் பற்றிய பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இது கவர்னர் ஜெனரல் கவுன்சிலில் லார்ட் மெக்காலேயை சட்ட உறுப்பினராகச் சேர்த்தது, இது முதல் சட்ட ஆணையம் அமைய வழிவகுத்தது.\n2. இச்சட்டத்தின் கீழ் இயற்றப்பட்ட விதிகள் 'சட்டங்கள்' (Acts) எனப்பட்டன, முந்தைய சாசனச் சட்டங்களின் கீழ் இயற்றப்பட்டவை 'ஒழுங்குமுறைகள்' (Regulations) எனப்பட்டன.\n3. இது இயக்குநர்கள் அவையின் ஆதரவு உரிமையை நீக்கி, குடிமைப் பணியாளர்களைத் தேர்ந்தெடுப்பதற்கான திறந்தவெளிப் போட்டியை வெற்றிகரமாக அமல்படுத்தியது.\nஎது சரி?",
+    "1 and 2 only", "1 மற்றும் 2 மட்டும்",
+    "2 and 3 only", "2 மற்றும் 3 மட்டும்",
+    "1 and 3 only", "1 மற்றும் 3 மட்டும்",
+    "1, 2 and 3", "1, 2 மற்றும் 3",
+    "A",
+    "Statement 1 is correct (Macaulay added as Law Member, headed First Law Commission). Statement 2 is correct (laws named 'Acts' instead of 'Regulations'). Statement 3 is INCORRECT because open competition was negated due to opposition from Court of Directors; open competition succeeded only under Charter Act 1853.",
+    "கூற்று 1 சரி (மெக்காலே சட்ட உறுப்பினர், முதல் சட்ட ஆணையத் தலைவர்). கூற்று 2 சரி (சட்டங்கள் 'Acts' எனப்பட்டன). கூற்று 3 தவறு, ஏனெனில் 1833 இல் திறந்தவெளிப் போட்டி முயற்சி இயக்குநர்கள் அவையின் எதிர்ப்பால் ரத்து செய்யப்பட்டது; அது 1853 இல் மட்டுமே வெற்றிகரமாக வந்தது.",
+    "Correct. Statements 1 and 2 are correct; Statement 3 is false.",
+    "சரி. கூற்றுகள் 1 மற்றும் 2 சரி; கூற்று 3 தவறானது.",
+    "Incorrect. Statement 3 is false.",
+    "தவறு. கூற்று 3 தவறானது.",
+    "Incorrect. Statement 3 is false.",
+    "தவறு. கூற்று 3 தவறானது.",
+    "Incorrect. Statement 3 is false.",
+    "தவறு. கூற்று 3 தவறானது.",
+    "TNPSC Trap: Section 87 of Charter Act 1833 stated no Indian shall be disabled from holding office based on religion, place of birth, descent, or colour (first anti-discrimination declaration).",
+    "TNPSC பொறி: 1833 சாசனச் சட்டத்தின் பிரிவு 87 மதம், பிறந்த இடம், இனம், நிறம் அடிப்படையில் எந்த இந்தியருக்கும் வேலைவாய்ப்பு மறுக்கப்படக் கூடாது எனக் கூறியது.",
+    "Lord William Bentinck became the first Governor-General of India under Charter Act 1833.",
+    "1833 சாசனச் சட்டத்தின் கீழ் வில்லியம் பென்டிங்க் பிரபு இந்தியாவின் முதல் கவர்னர் ஜெனரலானார்.",
+    "Analyze", 75, ["Polity", "Historical Background", "Charter Act 1833", "Law Commission"]
+))
+
+questions.append(make_q(
+    "HB_H_014", "Statement Based",
+    "Consider the following statements regarding the Charter Act of 1853:\n1. It introduced an open competition system for selection and recruitment of civil servants, throwing open the covenanted civil service to Indians.\n2. The Macaulay Committee (Committee on the Indian Civil Service) was appointed in 1854 pursuant to this Act.\n3. It introduced for the first time local representation in the Central Legislative Council, with four members appointed by local governments of Madras, Bombay, Bengal, and Agra.\nWhich of the statements given above are correct?",
+    "1853 ஆம் ஆண்டின் சாசனச் சட்டம் பற்றிய பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இது குடிமைப் பணியாளர்களைத் தேர்ந்தெடுப்பதற்கும் சேர்ப்பதற்கும் திறந்தவெளிப் போட்டி முறையை அறிமுகப்படுத்தி, ஒப்பந்த குடிமைப் பணியை இந்தியர்களுக்குத் திறந்தது.\n2. இச்சட்டத்தைத் தொடர்ந்து 1854 இல் மெக்காலே குழு (இந்திய குடிமைப் பணிக்கான குழு) நியமிக்கப்பட்டது.\n3. மதராஸ், பம்பாய், வங்காளம் மற்றும் ஆக்ரா உள்ளூர் அரசுகளால் நியமிக்கப்பட்ட நான்கு உறுப்பினர்களுடன் இது முதன்முறையாக மத்திய சட்டமன்ற கவுன்சிலில் உள்ளூர் பிரதிநிதித்துவத்தை அறிமுகப்படுத்தியது.\nஎது சரி?",
+    "1 and 2 only", "1 மற்றும் 2 மட்டும்",
+    "2 and 3 only", "2 மற்றும் 3 மட்டும்",
+    "1 and 3 only", "1 மற்றும் 3 மட்டும்",
+    "1, 2 and 3", "1, 2 மற்றும் 3",
+    "D",
+    "All three statements are correct. Open competition introduced, Macaulay Committee set up in 1854, and local representation introduced in Central Legislative Council (4 members from Madras, Bombay, Bengal, Agra).",
+    "மூன்று கூற்றுகளும் சரியானவை. திறந்தவெளிப் போட்டி அறிமுகமானது, 1854 இல் மெக்காலே குழு அமைந்தது, மற்றும் மத்திய கவுன்சிலில் உள்ளூர் பிரதிநிதித்துவம் (மதராஸ், பம்பாய், வங்காளம், ஆக்ரா) வந்தது.",
+    "Incorrect. Statement 3 is also correct.",
+    "தவறு. கூற்று 3-ம் சரியானது.",
+    "Incorrect. Statement 1 is also correct.",
+    "தவறு. கூற்று 1-ம் சரியானது.",
+    "Incorrect. Statement 2 is also correct.",
+    "தவறு. கூற்று 2-ம் சரியானது.",
+    "Correct. All three statements accurately reflect the Charter Act 1853 features.",
+    "சரி. மூன்று கூற்றுகளும் 1853 சாசனச் சட்ட அம்சங்களைச் சரியாகப் பிரதிபலிக்கின்றன.",
+    "Charter Act 1853 was the LAST Charter Act passed by British Parliament between 1793 and 1853.",
+    "1793 முதல் 1853 வரை இயற்றப்பட்ட சாசனச் சட்டங்களின் வரிசையில் 1853 சாசனச் சட்டமே கடைசியானதாகும்.",
+    "It separated legislative and executive functions of Governor-General's Council for the first time.",
+    "இது கவர்னர் ஜெனரல் கவுன்சிலின் சட்டமன்ற மற்றும் நிர்வாகப் பணிகளை முதன்முறையாகப் பிரித்தது.",
+    "Analyze", 75, ["Polity", "Historical Background", "Charter Act 1853", "Macaulay Committee"]
+))
+
+questions.append(make_q(
+    "HB_H_015", "Statement Based",
+    "Consider the following statements regarding the Government of India Act 1858:\n1. It abolished the Board of Control and Court of Directors, ending the system of Double Government established by Pitt's India Act 1784.\n2. It created a 15-member advisory Council of India to assist the Secretary of State for India, chaired by the Secretary of State.\n3. The Governor-General of India was designated as the Viceroy of India, acting as the direct representative of the British Crown in India.\nWhich of the statements given above are correct?",
+    "1858 ஆம் ஆண்டின் இந்திய அரசுச் சட்டம் பற்றிய பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இது கட்டுப்பாட்டு வாரியம் மற்றும் இயக்குநர்கள் அவையைக் கலைத்து 1784 பிட் இந்தியச் சட்டத்தால் அமைக்கப்பட்ட இரட்டை ஆட்சி முறையை முடிவுக்குக் கொண்டு வந்தது.\n2. இது இந்திய அரசுச் செயலாளருக்கு உதவ 15 உறுப்பினர்களைக் கொண்ட ஆலோசனைக் குழுவான இந்திய கவுன்சிலை உருவாக்கி, அரசுச் செயலாளரை அதன் தலைவராக்கியது.\n3. இந்திய கவர்னர் ஜெனரல், இந்தியாவில் பிரிட்டிஷ் முடிஅரசின் நேரடிப் பிரதிநிதியாகச் செயல்படும் வகையில் இந்திய வைஸ்ராய் என மாற்றப்பட்டார்.\nஎது சரி?",
+    "1 and 2 only", "1 மற்றும் 2 மட்டும்",
+    "2 and 3 only", "2 மற்றும் 3 மட்டும்",
+    "1 and 3 only", "1 மற்றும் 3 மட்டும்",
+    "1, 2 and 3", "1, 2 மற்றும் 3",
+    "D",
+    "All three statements are correct. Ended Double Govt (Board of Control & Directors), created 15-member Council of India under Secretary of State, and redesignated GG as Viceroy (Lord Canning).",
+    "மூன்று கூற்றுகளும் சரியானவை. இரட்டை நிர்வாகத்தைக் கலைத்தது, அரசுச் செயலாளர் தலைமையில் 15 உறுப்பினர்கள் கொண்ட இந்திய கவுன்சிலை உருவாக்கியது, GG-ஐ வைஸ்ராய் (கேனிங் பிரபு) என மாற்றியது.",
+    "Incorrect. Statement 3 is also correct.",
+    "தவறு. கூற்று 3-ம் சரியானது.",
+    "Incorrect. Statement 1 is also correct.",
+    "தவறு. கூற்று 1-ம் சரியானது.",
+    "Incorrect. Statement 2 is also correct.",
+    "தவறு. கூற்று 2-ம் சரியானது.",
+    "Correct. All three statements are 100% accurate.",
+    "சரி. மூன்று கூற்றுகளும் 100% சரியானவை.",
+    "GOI Act 1858 was styled as the 'Act for the Good Government of India'.",
+    "1858 இந்திய அரசுச் சட்டம் 'இந்தியாவின் நல்லாட்சிக்கான சட்டம்' என அழைக்கப்பட்டது.",
+    "Lord Stanley became the first Secretary of State for India; Lord Canning became the first Viceroy of India.",
+    "லார்ட் ஸ்டான்லி முதல் இந்திய அரசுச் செயலாளரானார்; கேனிங் பிரபு முதல் வைஸ்ராயானார்.",
+    "Analyze", 75, ["Polity", "Historical Background", "Government of India Act 1858", "Statement Based"]
+))
+
+# ---------------------------------------------------------
+# 8 ASSERTION & REASON QUESTIONS (HB_H_021 to HB_H_028)
+# ---------------------------------------------------------
+
+questions.append(make_q(
+    "HB_H_021", "Assertion & Reason",
+    "Assertion (A): The Charter Act of 1833 marks the absolute climax of administrative centralization in British India.\nReason (R): It completely deprived the Governors of Bombay and Madras of their legislative powers and concentrated all law-making authority exclusively in the Governor-General of India in Council.",
+    "கூற்று (A): 1833 ஆம் ஆண்டின் சாசனச் சட்டம் பிரிட்டிஷ் இந்தியாவில் நிர்வாக மத்தியமயமாக்கலின் உச்சகட்டத்தைக் குறிக்கிறது.\nகாரணம் (R): இது பம்பாய் மற்றும் மதராஸ் கவர்னர்களின் சட்டமியற்றும் அதிகாரங்களை முழுமையாகப் பறித்து, அனைத்து சட்ட அதிகாரத்தையும் இந்திய கவர்னர் ஜெனரல் கவுன்சிலிடம் மட்டுமே குவித்தது.",
+    "Both A and R are true, and R is the correct explanation of A.",
+    "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்.",
+    "Both A and R are true, but R is NOT the correct explanation of A.",
+    "A மற்றும் R இரண்டும் சரி, ஆனால் R என்பது A விற்கு சரியான விளக்கம் அல்ல.",
+    "A is true, but R is false.",
+    "A சரி, ஆனால் R தவறு.",
+    "A is false, but R is true.",
+    "A தவறு, ஆனால் R சரி.",
+    "A",
+    "Both A and R are true and R explains A. Stripping Bombay and Madras of law-making power and concentrating all legislative authority in the Central Council created peak centralization.",
+    "கூற்றும் காரணமும் சரி. பம்பாய், மதராஸின் சட்ட அதிகாரங்கள் பறிக்கப்பட்டு மையத்தில் குவிக்கப்பட்டதால் இது மத்தியமயமாக்கலின் உச்சமானது.",
+    "Correct. Depriving presidency governors of legislative powers (R) directly created peak centralization (A).",
+    "சரி. மாகாண கவர்னர்களின் சட்ட அதிகாரம் பறிக்கப்பட்டதே (R) மத்தியமயமாக்கலின் உச்சத்திற்குக் (A) காரணமாகும்.",
+    "Incorrect. R directly explains A.",
+    "தவறு. R நேரடியாக A-வை விளக்குகிறது.",
+    "Incorrect. Both are true.",
+    "தவறு. இரண்டும் சரி.",
+    "Incorrect. A is true.",
+    "தவறு. A சரியானது.",
+    "Centralization trajectory: 1773 Regulating Act (start) -> 1833 Charter Act (climax) -> 1861 Indian Councils Act (reversal/decentralization).",
+    "மத்தியமயமாக்கல் பாதை: 1773 (தொடக்கம்) -> 1833 (உச்சம்) -> 1861 (பரவலாக்கல் திருப்பம்).",
+    "Laws made under 1833 Act were called 'Acts', whereas earlier ones were called 'Regulations'.",
+    "1833 சட்டத்தின் கீழ் இயற்றப்பட்டவை 'சட்டங்கள்' எனப்பட்டன, முந்தையவை 'ஒழுங்குமுறைகள்' எனப்பட்டன.",
+    "Analyze", 75, ["Polity", "Historical Background", "Assertion and Reason", "Centralization Climax"]
+))
+
+questions.append(make_q(
+    "HB_H_022", "Assertion & Reason",
+    "Assertion (A): The Indian Councils Act of 1861 is regarded as the turning point of legislative decentralization in India.\nReason (R): It restored law-making powers to the Presidencies of Bombay and Madras and provided for establishing new legislative councils for Bengal, NWFP, and Punjab.",
+    "கூற்று (A): 1861 ஆம் ஆண்டின் இந்தியக் கவுன்சில்கள் சட்டம் இந்தியாவில் சட்டமன்ற பரவலாக்கலின் திருப்புமுனையாகக் கருதப்படுகிறது.\nகாரணம் (R): இது பம்பாய் மற்றும் மதராஸ் மாகாணங்களுக்கு சட்டமியற்றும் அதிகாரங்களை மீண்டும் வழங்கியதுடன் வங்காளம், வடமேற்கு எல்லைப்புற மாகாணம், பஞ்சாப் ஆகியவற்றிற்கு புதிய சட்டமன்ற கவுன்சில்களை அமைக்க வழிவகை செய்தது.",
+    "Both A and R are true, and R is the correct explanation of A.",
+    "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்.",
+    "Both A and R are true, but R is NOT the correct explanation of A.",
+    "A மற்றும் R இரண்டும் சரி, ஆனால் R என்பது A விற்கு சரியான விளக்கம் அல்ல.",
+    "A is true, but R is false.",
+    "A சரி, ஆனால் R தவறு.",
+    "A is false, but R is true.",
+    "A தவறு, ஆனால் R சரி.",
+    "A",
+    "Both A and R are true and R explains A. Restoring legislative powers to Bombay & Madras reversed 1833 centralization and initiated provincial legislative devolution culminating in 1935 Provincial Autonomy.",
+    "கூற்றும் காரணமும் சரி. பம்பாய், மதராஸின் சட்ட அதிகாரங்களை மீட்டு புதிய கவுன்சில்களை அமைத்ததே பரவலாக்கலின் திருப்புமுனையாக அமைந்தது.",
+    "Correct. Reversing central legislative monopoly (R) directly marks the turning point of decentralization (A).",
+    "சரி. மத்திய சட்ட ஏகபோகத்தைத் தலைகீழாக்கியதே (R) பரவலாக்கலின் திருப்புமுனையாக (A) அமைந்தது.",
+    "Incorrect. R directly explains A.",
+    "தவறு. R நேரடியாக A-வை விளக்குகிறது.",
+    "Incorrect. Both statements are true.",
+    "தவறு. இரண்டு கூற்றுகளும் உண்மையானவை.",
+    "Incorrect. A is true.",
+    "தவறு. A சரியானது.",
+    "1861 Act also legalized Lord Canning's Portfolio system (1859) and gave Viceroy Ordinance-making powers (6 months validity).",
+    "1861 சட்டம் போர்ட்ஃபோலியோ முறையை அங்கீகரித்ததுடன் வைஸ்ராய்க்கு அவசரச் சட்ட அதிகாரத்தை (6 மாதங்கள்) அளித்தது.",
+    "New Legislative Councils formed: Bengal (1862), NWFP (1886), Punjab (1897).",
+    "புதிய சட்டமன்ற கவுன்சில்கள்: வங்காளம் (1862), வடமேற்கு எல்லைப்புற மாகாணம் (1886), பஞ்சாப் (1897).",
+    "Analyze", 75, ["Polity", "Historical Background", "Assertion and Reason", "Decentralization Turning Point"]
+))
+
+questions.append(make_q(
+    "HB_H_023", "Assertion & Reason",
+    "Assertion (A): The Indian Councils Act of 1909 (Morley-Minto Reforms) is criticized for sowing the seeds of partition of India.\nReason (R): It legalized communalism in Indian politics by introducing separate electorates for Muslims, wherein Muslim candidates were elected only by Muslim voters.",
+    "கூற்று (A): 1909 ஆம் ஆண்டின் இந்தியக் கவுன்சில்கள் சட்டம் (மோர்லே-மிண்டோ சீர்திருத்தங்கள்) இந்தியப் பிரிவினைக்கு வித்திட்டதாக விமர்சிக்கப்படுகிறது.\nகாரணம் (R): இது முஸ்லிம்களுக்குத் தனித் தொகுதிகளை அறிமுகப்படுத்தியதன் மூலம் இந்திய அரசியலில் வகுப்புவாதத்தைச் சட்டப்பூர்வமாக்கியது, அங்கு முஸ்லிம் வேட்பாளர்கள் முஸ்லிம் வாக்காளர்களால் மட்டுமே தேர்ந்தெடுக்கப்பட்டனர்.",
+    "Both A and R are true, and R is the correct explanation of A.",
+    "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்.",
+    "Both A and R are true, but R is NOT the correct explanation of A.",
+    "A மற்றும் R இரண்டும் சரி, ஆனால் R என்பது A விற்கு சரியான விளக்கம் அல்ல.",
+    "A is true, but R is false.",
+    "A சரி, ஆனால் R தவறு.",
+    "A is false, but R is true.",
+    "A தவறு, ஆனால் R சரி.",
+    "A",
+    "Both A and R are true and R explains A. Institutionalizing separate electorates created formal religious divisions in representation, leading eventually to two-nation theory and partition.",
+    "கூற்றும் காரணமும் சரி. தனித் தொகுதிகளைச் சட்டப்பூர்வமாக்கியதே மத ரீதியிலான பிரிவினையை உண்டாக்கி 1947 பிரிவினைக்கு வித்திட்டது.",
+    "Correct. Legalizing separate electorates (R) was the direct institutional cause for sowing seeds of partition (A).",
+    "சரி. தனித் தொகுதிகளைச் சட்டப்பூர்வமாக்கியதே (R) பிரிவினைக்கு வித்திட்டதன் (A) காரணமாக்கும்.",
+    "Incorrect. R directly explains A.",
+    "தவறு. R நேரடியாக A-வை விளக்குகிறது.",
+    "Incorrect. Both statements are true.",
+    "தவறு. இரண்டு கூற்றுகளும் உண்மையானவை.",
+    "Incorrect. A is true.",
+    "தவறு. A சரியானது.",
+    "Lord Minto came to be known as the 'Father of Communal Electorate'.",
+    "லார்ட் மிண்டோ 'வகுப்புவாதத் தொகுதிகளின் தந்தை' என அழைக்கப்பட்டார்.",
+    "Satyendra Prasad Sinha was the first Indian appointed to Viceroy's Executive Council.",
+    "சத்யேந்திர பிரசாத் சின்ஹா வைஸ்ராயின் நிர்வாகக் குழுவில் நியமிக்கப்பட்ட முதல் இந்தியர் ஆவார்.",
+    "Analyze", 75, ["Polity", "Historical Background", "Assertion and Reason", "1909 Partition Seeds"]
+))
+
+questions.append(make_q(
+    "HB_H_024", "Assertion & Reason",
+    "Assertion (A): The system of Dyarchy introduced in the provinces by the Government of India Act 1919 broke down in practice and failed to deliver responsible government.\nReason (R): Important portfolios like Law & Order, Finance, and Revenue were kept in the Reserved list under the non-responsible Governor's Executive Council, depriving Indian Ministers of funds and control over Transferred subjects.",
+    "கூற்று (A): 1919 ஆம் ஆண்டின் இந்திய அரசுச் சட்டத்தால் மாகாணங்களில் அறிமுகப்படுத்தப்பட்ட இரட்டை ஆட்சி முறை நடைமுறையில் முறிந்து பொறுப்புள்ள அரசாங்கத்தை வழங்கத் தவறியது.\nகாரணம் (R): சட்டம்-ஒழுங்கு, நிதி, வருவாய் போன்ற முக்கியமான துறைகள் பொறுப்பற்ற கவர்னரின் நிர்வாகக் குழுவின் கீழ் 'ஒதுக்கப்பட்ட' பட்டியலில் வைக்கப்பட்டதால், இந்திய அமைச்சர்கள் நிதி ஆதாரங்கள் மற்றும் கட்டுப்பாடற்ற 'மாற்றப்பட்ட' துறைகளுடன் விடப்பட்டனர்.",
+    "Both A and R are true, and R is the correct explanation of A.",
+    "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்.",
+    "Both A and R are true, but R is NOT the correct explanation of A.",
+    "A மற்றும் R இரண்டும் சரி, ஆனால் R என்பது A விற்கு சரியான விளக்கம் அல்ல.",
+    "A is true, but R is false.",
+    "A சரி, ஆனால் R தவறு.",
+    "A is false, but R is true.",
+    "A தவறு, ஆனால் R சரி.",
+    "A",
+    "Both A and R are true and R explains A. Dyarchy failed because Indian ministers held Transferred subjects (Education, Health) but lacked financial control (Reserved subject under Governor), creating administrative paralysis.",
+    "கூற்றும் காரணமும் சரி. நிதியைக் கவர்னரின் ஒதுக்கப்பட்ட பட்டியலில் வைத்திருந்ததால் மாற்றப்பட்ட துறை அமைச்சர்களால் கொள்கைகளைச் செயல்படுத்த முடியவில்லை.",
+    "Correct. Retaining Finance under Reserved list (R) directly crippled ministerial responsibility and caused Dyarchy failure (A).",
+    "சரி. நிதியை ஒதுக்கப்பட்ட பட்டியலில் வைத்திருந்ததே (R) இரட்டை ஆட்சித் தோல்விக்குக் (A) காரணமாகும்.",
+    "Incorrect. R directly explains A.",
+    "தவறு. R நேரடியாக A-வை விளக்குகிறது.",
+    "Incorrect. Both statements are true.",
+    "தவறு. இரண்டு கூற்றுகளும் உண்மையானவை.",
+    "Incorrect. A is true.",
+    "தவறு. A சரியானது.",
+    "Dyarchy in provinces was abolished by the Government of India Act 1935 and replaced with Provincial Autonomy.",
+    "மாகாண இரட்டை ஆட்சி 1935 இந்திய அரசுச் சட்டத்தால் ஒழிக்கப்பட்டு மாகாண தன்னாட்சி கொண்டுவரப்பட்டது.",
+    "GOI Act 1919 set up Central Public Service Commission in 1926 based on Lee Commission recommendations (1923).",
+    "1919 சட்டம் 1923 லீ ஆணையப் பரிந்துரையின்படி 1926 இல் மத்திய பொதுச் சேவை ஆணையத்தை அமைத்தது.",
+    "Analyze", 75, ["Polity", "Historical Background", "Assertion and Reason", "Dyarchy Breakdown"]
+))
+
+questions.append(make_q(
+    "HB_H_025", "Assertion & Reason",
+    "Assertion (A): The proposed All-India Federation under the Government of India Act 1935 never actually came into existence.\nReason (R): Joining the Federation was optional for Princely States, and the required threshold of accessions by princely rulers was never achieved.",
+    "கூற்று (A): 1935 ஆம் ஆண்டின் இந்திய அரசுச் சட்டத்தின் கீழ் உத்தேசிக்கப்பட்ட அகில இந்திய கூட்டாட்சி ஒருபோதும் நடைமுறைக்கு வரவில்லை.\nகாரணம் (R): கூட்டாட்சியில் இணைவது சுதேச சமஸ்தானங்களுக்கு விருப்பத்தின் பேரில் அமைந்தது, மேலும் சுதேச மன்னர்களின் தேவையான அளவிலான இணைப்புச் சாசனங்கள் பெறப்படவில்லை.",
+    "Both A and R are true, and R is the correct explanation of A.",
+    "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்.",
+    "Both A and R are true, but R is NOT the correct explanation of A.",
+    "A மற்றும் R இரண்டும் சரி, ஆனால் R என்பது A விற்கு சரியான விளக்கம் அல்ல.",
+    "A is true, but R is false.",
+    "A சரி, ஆனால் R தவறு.",
+    "A is false, but R is true.",
+    "A தவறு, ஆனால் R சரி.",
+    "A",
+    "Both A and R are true and R explains A. The 1935 Federation required princely states representing at least 50% of total princely population to join. Rulers refused to surrender sovereign rights, so the federation never materialized.",
+    "கூற்றும் காரணமும் சரி. 50% சுதேச சமஸ்தான மக்கள் தொகையைக் கொண்ட மன்னர்கள் இணைப்புக் சாசனத்தில் கையெழுத்திடாததால் கூட்டாட்சி அமையவே இல்லை.",
+    "Correct. Refusal by Princely States to join (R) directly caused the non-implementation of the All-India Federation (A).",
+    "சரி. சுதேச மன்னர்கள் இணைய மறுத்ததே (R) அகில இந்திய கூட்டாட்சி அமையாததற்கான (A) நேரடிக் காரணமாகும்.",
+    "Incorrect. R directly explains A.",
+    "தவறு. R நேரடியாக A-வை விளக்குகிறது.",
+    "Incorrect. Both statements are true.",
+    "தவறு. இரண்டு கூற்றுகளும் உண்மையானவை.",
+    "Incorrect. A is true.",
+    "தவறு. A சரியானது.",
+    "Notice: British Indian Provinces were MANDATORILY part of 1935 Federation, while Princely States were OPTIONAL.",
+    "கவனிக்க: பிரிட்டிஷ் இந்திய மாகாணங்கள் கூட்டாட்சியில் கட்டாயமாகச் சேர்க்கப்பட்டன, சுதேச சமஸ்தானங்கள் விருப்பத்தின் அடிப்படையில் இருந்தன.",
+    "Government of India Act 1935 introduced Provincial Autonomy in 1937.",
+    "1935 இந்திய அரசுச் சட்டம் 1937 இல் மாகாண தன்னாட்சியை அமல்படுத்தியது.",
+    "Analyze", 75, ["Polity", "Historical Background", "Assertion and Reason", "1935 Federation Failure"]
+))
+
+questions.append(make_q(
+    "HB_H_026", "Assertion & Reason",
+    "Assertion (A): The Constituent Assembly of India transformed into a fully sovereign body only after the passage of the Indian Independence Act of 1947.\nReason (R): Section 6 of the Indian Independence Act 1947 explicitly abolished British parliamentary control over India and empowered the Constituent Assembly to alter or repeal any Act of British Parliament applying to India.",
+    "கூற்று (A): 1947 ஆம் ஆண்டின் இந்திய சுதந்திரச் சட்டம் நிறைவேற்றப்பட்ட பின்னரே இந்திய அரசியலமைப்பு சபை ஒரு முழுமையான சுயாட்சி (இறையாண்மை) அமைப்பாக மாறியது.\nகாரணம் (R): 1947 இந்திய சுதந்திரச் சட்டத்தின் பிரிவு 6 பிரிட்டிஷ் பாராளுமன்றக் கட்டுப்பாட்டை ஒழித்ததுடன், இந்தியாவில் பொருந்தும் எந்தவொரு பிரிட்டிஷ் சட்டத்தையும் மாற்றுவதற்கோ அல்லது ரத்து செய்வதற்கோ அரசியலமைப்பு சபைக்கு அதிகாரமளித்தது.",
+    "Both A and R are true, and R is the correct explanation of A.",
+    "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்.",
+    "Both A and R are true, but R is NOT the correct explanation of A.",
+    "A மற்றும் R இரண்டும் சரி, ஆனால் R என்பது A விற்கு சரியான விளக்கம் அல்ல.",
+    "A is true, but R is false.",
+    "A சரி, ஆனால் R தவறு.",
+    "A is false, but R is true.",
+    "A தவறு, ஆனால் R சரி.",
+    "A",
+    "Both A and R are true and R explains A. When created under Cabinet Mission Plan in Nov 1946, the Constituent Assembly was a non-sovereign body under British authority. Section 6 of 1947 Act conferred total sovereignty and power to repeal British Acts.",
+    "கூற்றும் காரணமும் சரி. 1946 கேபினட் மிஷன் திட்டத்தின் கீழ் அமைந்தபோது சபை பிரிட்டிஷ் அதிகாரத்தில் இருந்தது. 1947 சட்டத்தின் பிரிவு 6 முழு இறையாண்மையை வழங்கியது.",
+    "Correct. Section 6 of 1947 Act (R) legally conferred complete sovereignty on the Assembly (A).",
+    "சரி. 1947 சட்டத்தின் பிரிவு 6 (R) அரசியலமைப்பு சபைக்கு சட்டப்பூர்வ முழு இறையாண்மையை (A) அளித்தது.",
+    "Incorrect. R directly explains A.",
+    "தவறு. R நேரடியாக A-வை விளக்குகிறது.",
+    "Incorrect. Both statements are true.",
+    "தவறு. இரண்டு கூற்றுகளும் உண்மையானவை.",
+    "Incorrect. A is true.",
+    "தவறு. A சரியானது.",
+    "Under 1947 Act, the Assembly performed dual roles: Constituent (headed by Dr. Rajendra Prasad) and Legislative (headed by G.V. Mavlankar).",
+    "1947 சட்டப்படி சபை அரசியலமைப்பு உருவாக்கம் (தலைவர்: ராஜேந்திர பிரசாத்) மற்றும் சட்டமன்றப் பணி (தலைவர்: ஜி.வி. மாவ்லங்கர்) ஆகிய இரு பணிகளைச் செய்தது.",
+    "The Indian Independence Act 1947 proclaimed the lapse of British paramountcy over Princely States.",
+    "1947 சுதந்திரச் சட்டம் சுதேச சமஸ்தானங்கள் மீதான பிரிட்டிஷ் மேலாதிக்கம் முடிவுக்கு வந்ததாக அறிவித்தது.",
+    "Analyze", 75, ["Polity", "Historical Background", "Assertion and Reason", "Assembly Sovereignty"]
+))
+
+questions.append(make_q(
+    "HB_H_027", "Assertion & Reason",
+    "Assertion (A): The Charter Act of 1793 laid the early institutional root of Dadabhai Naoroji's 'Drain of Wealth' theory.\nReason (R): It mandated that the salaries, pensions, and administrative expenses of the Board of Control and its staff in London should be charged directly upon the revenues of India.",
+    "கூற்று (A): 1793 ஆம் ஆண்டின் சாசனச் சட்டம் தாதாபாய் நௌரோஜியின் 'செல்வச் சுரண்டல்' கோட்பாட்டின் ஆரம்பகால நிறுவன அடித்தளமிட்டது.\nகாரணம் (R): இது லண்டனில் உள்ள கட்டுப்பாட்டு வாரியம் மற்றும் அதன் ஊழியர்களின் ஊதியம், ஓய்வூதியம் மற்றும் நிர்வாகச் செலவுகள் நேரடியாக இந்திய வருவாயிலிருந்தே வழங்கப்பட வேண்டும் எனக் கட்டாயப்படுத்தியது.",
+    "Both A and R are true, and R is the correct explanation of A.",
+    "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்.",
+    "Both A and R are true, but R is NOT the correct explanation of A.",
+    "A மற்றும் R இரண்டும் சரி, ஆனால் R என்பது A விற்கு சரியான விளக்கம் அல்ல.",
+    "A is true, but R is false.",
+    "A சரி, ஆனால் R தவறு.",
+    "A is false, but R is true.",
+    "A தவறு, ஆனால் R சரி.",
+    "A",
+    "Both A and R are true and R explains A. Paying London-based British officials out of Indian revenues initiated unilateral financial transfer of Indian wealth to Britain, forming the core basis of Dadabhai Naoroji's Drain of Wealth theory.",
+    "கூற்றும் காரணமும் சரி. லண்டனில் உள்ள பிரிட்டிஷ் அதிகாரிகளுக்கு இந்திய வருவாயிலிருந்து சம்பளம் வழங்க உத்தரவிட்டது இந்திய செல்வத்தை பிரிட்டனுக்கு மாற்றியதால் செல்வச் சுரண்டல் கோட்பாட்டிற்கு அடித்தளமானது.",
+    "Correct. Charging Board of Control expenses on Indian revenues (R) directly laid the economic root of Drain of Wealth (A).",
+    "சரி. லண்டன் வாரியச் செலவுகளை இந்திய வருவாயில் சுமத்தியதே (R) செல்வச் சுரண்டலின் (A) மூலக் காரணமானது.",
+    "Incorrect. R directly explains A.",
+    "தவறு. R நேரடியாக A-வை விளக்குகிறது.",
+    "Incorrect. Both statements are true.",
+    "தவறு. இரண்டு கூற்றுகளும் உண்மையானவை.",
+    "Incorrect. A is true.",
+    "தவறு. A சரியானது.",
+    "The practice of paying Board of Control salaries from Indian revenues continued from 1793 until Government of India Act 1919.",
+    "இந்திய வருவாயிலிருந்து கட்டுப்பாட்டு வாரியத்திற்கு சம்பளம் வழங்கும் நடைமுறை 1793 முதல் 1919 வரை தொடர்ந்தது.",
+    "1793 Act extended East India Company trade monopoly for another 20 years.",
+    "1793 சட்டம் கிழக்கிந்தியக் கம்பெனியின் வர்த்தக ஏகபோகத்தை மேலும் 20 ஆண்டுகளுக்கு நீட்டித்தது.",
+    "Analyze", 75, ["Polity", "Historical Background", "Assertion and Reason", "1793 Drain of Wealth"]
+))
+
+questions.append(make_q(
+    "HB_H_028", "Assertion & Reason",
+    "Assertion (A): The Government of India Act 1935 is recognized as the principal structural blueprint for the 1950 Constitution of India.\nReason (R): Nearly 250 articles of the 1950 Indian Constitution were adapted directly or with minor modifications from the provisions of the Government of India Act 1935.",
+    "கூற்று (A): 1935 ஆம் ஆண்டின் இந்திய அரசுச் சட்டம் 1950 இந்திய அரசியலமைப்பின் முதன்மை அமைப்புக் வரைபடமாக அங்கீகரிக்கப்படுகிறது.\nகாரணம் (R): 1950 இந்திய அரசியலமைப்பின் சுமார் 250 விதிகள் 1935 இந்திய அரசுச் சட்டத்தின் விதிகளிலிருந்து நேரடியாகவோ அல்லது சிறிய மாற்றங்களுடனோ எடுத்தாளப்பட்டன.",
+    "Both A and R are true, and R is the correct explanation of A.",
+    "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்.",
+    "Both A and R are true, but R is NOT the correct explanation of A.",
+    "A மற்றும் R இரண்டும் சரி, ஆனால் R என்பது A விற்கு சரியான விளக்கம் அல்ல.",
+    "A is true, but R is false.",
+    "A சரி, ஆனால் R தவறு.",
+    "A is false, but R is true.",
+    "A தவறு, ஆனால் R சரி.",
+    "A",
+    "Both A and R are true and R explains A. Dr. B.R. Ambedkar and Constituent Assembly members extensively borrowed Federal scheme, Office of Governor, Judiciary, PSCs, Emergency provisions, and Administrative details (nearly 250 provisions) from 1935 Act.",
+    "கூற்றும் காரணமும் சரி. கூட்டாட்சி, ஆளுநர் பதவி, நீதித்துறை, அவசரக்கால விதிகள் என சுமார் 250 விதிகள் 1935 சட்டத்திலிருந்து நேரடியாக எடுக்கப்பட்டதால் இது முதன்மை வரைபடமானது.",
+    "Correct. Direct borrowing of ~250 articles (R) explains why 1935 Act is called the principal structural blueprint (A).",
+    "சரி. சுமார் 250 விதிகள் நேரடியாக எடுக்கப்பட்டதே (R) 1935 சட்டம் முதன்மை வரைபடம் எனப்பட்டதற்கான (A) விளக்கமாகும்.",
+    "Incorrect. R directly explains A.",
+    "தவறு. R நேரடியாக A-வை விளக்குகிறது.",
+    "Incorrect. Both statements are true.",
+    "தவறு. இரண்டு கூற்றுகளும் உண்மையானவை.",
+    "Incorrect. A is true.",
+    "தவறு. A சரியானது.",
+    "Dr. B.R. Ambedkar stated: 'As to the accusation that the Draft Constitution has reproduced a good part of the Government of India Act, 1935, I make no apologies.'",
+    "டாக்டர் பி.ஆர். அம்பேத்கர் கூறினார்: 'வரைவு அரசியலமைப்பு 1935 சட்டத்தின் பெரும்பகுதியை எடுத்தாண்டுள்ளது என்ற குற்றச்சாட்டுக்கு நான் மன்னிப்பு கேட்கப் போவதில்லை.'",
+    "The 1935 Act was the longest Act passed by British Parliament until then (321 sections, 10 schedules).",
+    "1935 சட்டம் பிரிட்டிஷ் பாராளுமன்றத்தால் நிறைவேற்றப்பட்ட மிக நீண்ட சட்டமாகும் (321 பிரிவுகள், 10 அட்டவணைகள்).",
+    "Analyze", 75, ["Polity", "Historical Background", "Assertion and Reason", "1935 Constitution Blueprint"]
+))
+
+# Save updated questions to target file
+with open(target_path, "w", encoding="utf-8") as f:
+    json.dump(questions, f, ensure_ascii=False, indent=2)
+
+print(f"Added up to Q28 ({len(questions)} total questions).")

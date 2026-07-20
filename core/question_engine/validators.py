@@ -23,7 +23,14 @@ def validate_question_schema(question, required_fields=None):
             errors.append(f"missing required field: {field}")
 
     options = row.get("options")
-    if not isinstance(options, dict):
+    if isinstance(options, list):
+        options_dict = {}
+        for opt in options:
+            if isinstance(opt, dict) and "id" in opt:
+                val = opt.get("en") or opt.get("ta") or ""
+                options_dict[opt["id"]] = val
+        options = options_dict
+    elif not isinstance(options, dict):
         errors.append("invalid schema: options must be a dictionary")
         options = {}
 

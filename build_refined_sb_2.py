@@ -1,0 +1,602 @@
+import json
+import sys
+from pathlib import Path
+
+target_path = Path(r"c:\Users\Home\Desktop\tnpsc_ai\data\questions\polity\historical_background_statement_based.json")
+with open(target_path, "r", encoding="utf-8") as f:
+    questions = json.load(f)
+
+def make_q(q_id, q_type, q_en, q_ta, opt_a_en, opt_a_ta, opt_b_en, opt_b_ta, opt_c_en, opt_c_ta, opt_d_en, opt_d_ta,
+           correct_ans, exp_en, exp_ta, wno_a_en, wno_a_ta, wno_b_en, wno_b_ta, wno_c_en, wno_c_ta, wno_d_en, wno_d_ta,
+           tip_en, tip_ta, rev_en, rev_ta, bloom, est_time, tags):
+    opts = [
+        {"id": "A", "en": opt_a_en, "ta": opt_a_ta},
+        {"id": "B", "en": opt_b_en, "ta": opt_b_ta},
+        {"id": "C", "en": opt_c_en, "ta": opt_c_ta},
+        {"id": "D", "en": opt_d_en, "ta": opt_d_ta}
+    ]
+    opts_en = [opt_a_en, opt_b_en, opt_c_en, opt_d_en]
+    opts_ta = [opt_a_ta, opt_b_ta, opt_c_ta, opt_d_ta]
+    
+    return {
+        "id": q_id,
+        "subject": "Polity",
+        "topic": "Historical Background",
+        "difficulty": "Hard",
+        "question_type": q_type,
+        "question": {"en": q_en, "ta": q_ta},
+        "options": opts,
+        "correct_answer": correct_ans,
+        "explanation": {"en": exp_en, "ta": exp_ta},
+        "why_not_others": {
+            "A": {"en": wno_a_en, "ta": wno_a_ta},
+            "B": {"en": wno_b_en, "ta": wno_b_ta},
+            "C": {"en": wno_c_en, "ta": wno_c_ta},
+            "D": {"en": wno_d_en, "ta": wno_d_ta}
+        },
+        "tnpsc_tip": {"en": tip_en, "ta": tip_ta},
+        "revision_fact": {"en": rev_en, "ta": rev_ta},
+        "source_reference": ["M. Laxmikanth - Indian Polity", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": bloom,
+        "estimated_time_sec": est_time,
+        "pyq_similarity": "High",
+        "tags": tags,
+        "question_en": q_en,
+        "question_ta": q_ta,
+        "options_en": opts_en,
+        "options_ta": opts_ta,
+        "answer": correct_ans.lower(),
+        "explanation_en": exp_en,
+        "explanation_ta": exp_ta
+    }
+
+# =========================================================
+# 20 THREE STATEMENT QUESTIONS (HB_SB_011 to HB_SB_030)
+# =========================================================
+
+# HB_SB_011
+questions.append(make_q(
+    "HB_SB_011", "Statement Based",
+    "With reference to the executive structure under the Regulating Act 1773, Pitt's India Act 1784, and Charter Act 1833, consider the following statements:\n1. The 1773 Act created a 4-member Executive Council to assist the Governor-General of Bengal.\n2. The 1784 Act reduced the Governor-General's Council membership from four to three members.\n3. The 1833 Act added a Fifth Law Member with full voting rights on executive decisions.\nWhich of the statements given above are correct?",
+    "1773 ஒழுங்குமுறைச் சட்டம், 1784 பிட் இந்தியச் சட்டம் மற்றும் 1833 சாசனச் சட்டம் ஆகியவற்றின் கீழ் நிர்வாகக் கட்டமைப்பு குறித்து பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. 1773 சட்டம் வங்காள கவர்னர் ஜெனரலுக்கு உதவ 4 உறுப்பினர்கள் கொண்ட நிர்வாகக் குழுவை உருவாக்கியது.\n2. 1784 சட்டம் கவர்னர் ஜெனரல் கவுன்சில் உறுப்பினர்களின் எண்ணிக்கையை 4 லிருந்து 3 ஆகக் குறைத்தது.\n3. 1833 சட்டம் நிர்வாக முடிவுகளில் முழு வாக்களிக்கும் அதிகாரம் கொண்ட ஐந்தாவது சட்ட உறுப்பினரைச் சேர்த்தது.\nஎது சரி?",
+    "1 and 2 only", "1 மற்றும் 2 மட்டும்",
+    "2 and 3 only", "2 மற்றும் 3 மட்டும்",
+    "1 and 3 only", "1 மற்றும் 3 மட்டும்",
+    "1, 2 and 3", "1, 2 மற்றும் 3",
+    "A",
+    "Statements 1 and 2 are correct. Statement 3 is INCORRECT because the 1833 Act added a FOURTH member (Lord Macaulay) as Law Member (not 5th), and he did NOT have voting rights on executive decisions.",
+    "கூற்றுகள் 1 மற்றும் 2 சரி. கூற்று 3 தவறு, ஏனெனில் 1833 சட்டம் மெக்காலேயை 4வது உறுப்பினராகச் சேர்த்தது (5வது அல்ல), மேலும் அவருக்கு நிர்வாக முடிவுகளில் வாக்களிக்கும் உரிமை இல்லை.",
+    "Correct. Statements 1 and 2 are correct; Statement 3 is false.",
+    "சரி. கூற்றுகள் 1 மற்றும் 2 சரி; கூற்று 3 தவறானது.",
+    "Incorrect. Statement 3 is false.",
+    "தவறு. கூற்று 3 தவறானது.",
+    "Incorrect. Statement 3 is false.",
+    "தவறு. கூற்று 3 தவறானது.",
+    "Incorrect. Statement 3 is false.",
+    "தவறு. கூற்று 3 தவறானது.",
+    "TNPSC Trap: Lord Macaulay was added as 4th member in 1833 (not 5th) and had no voting rights in executive business.",
+    "TNPSC பொறி: 1833 இல் மெக்காலே 4வது உறுப்பினராகச் சேர்க்கப்பட்டார் (5வது அல்ல) மற்றும் வாக்களிக்கும் உரிமை இல்லை.",
+    "The 4th Law Member was made a full member of GG Executive Council only by Charter Act 1853.",
+    "1853 சாசனச் சட்டத்தின் மூலமே சட்ட உறுப்பினர் முழு கவுன்சில் உறுப்பினராக்கப்பட்டார்.",
+    "Analyze", 75, ["Polity", "Historical Background", "Executive Council Evolution", "Three Statement"]
+))
+
+# HB_SB_012
+questions.append(make_q(
+    "HB_SB_012", "Statement Based",
+    "With reference to social, educational, and legal evolution in British India, consider the following statements:\n1. The Charter Act of 1813 allocated Rs 1 Lakh per year for the promotion of literature and education in India.\n2. Section 87 of the Charter Act of 1833 provided that no Indian should be barred from holding employment under the Company based on religion, place of birth, descent, or colour.\n3. The Charter Act of 1853 introduced local representation in the Central Legislative Council with four members appointed by local governments of Madras, Bombay, Bengal, and Agra.\nWhich of the statements given above are correct?",
+    "பிரிட்டிஷ் இந்தியாவில் சமூக, கல்வி மற்றும் சட்ட வளர்ச்சி குறித்து பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. 1813 சாசனச் சட்டம் இந்தியாவில் கல்வி மற்றும் இலக்கிய மேம்பாட்டிற்காக ஆண்டுக்கு ரூ. 1 லட்சம் ஒதுக்கியது.\n2. 1833 சாசனச் சட்டத்தின் பிரிவு 87 மதம், பிறந்த இடம், இனம் அல்லது நிறம் அடிப்படையில் எந்தவொரு இந்தியருக்கும் வேலைவாய்ப்பு மறுக்கப்படக் கூடாது எனக் கூறியது.\n3. 1853 சாசனச் சட்டம் மதராஸ், பம்பாய், வங்காளம், ஆக்ரா உள்ளூர் அரசுகளால் நியமிக்கப்பட்ட நான்கு உறுப்பினர்களுடன் மத்திய கவுன்சிலில் உள்ளூர் பிரதிநிதித்துவத்தை அறிமுகப்படுத்தியது.\nஎது சரி?",
+    "1 and 2 only", "1 மற்றும் 2 மட்டும்",
+    "2 and 3 only", "2 மற்றும் 3 மட்டும்",
+    "1 and 3 only", "1 மற்றும் 3 மட்டும்",
+    "1, 2 and 3", "1, 2 மற்றும் 3",
+    "D",
+    "All three statements are correct. 1813 allocated Rs 1 Lakh education fund, 1833 Section 87 enacted non-discrimination, and 1853 introduced local representation (4 members from Madras, Bombay, Bengal, Agra).",
+    "மூன்று கூற்றுகளும் சரியானவை. 1813 இல் கல்வி நிதி, 1833 பிரிவு 87 இல் பாகுபாடற்ற விதி, மற்றும் 1853 இல் 4 மாகாண உள்ளூர் பிரதிநிதித்துவம்.",
+    "Incorrect. Statement 3 is also correct.",
+    "தவறு. கூற்று 3-ம் சரியானது.",
+    "Incorrect. Statement 1 is also correct.",
+    "தவறு. கூற்று 1-ம் சரியானது.",
+    "Incorrect. Statement 2 is also correct.",
+    "தவறு. கூற்று 2-ம் சரியானது.",
+    "Correct. All three statements accurately describe constitutional provisions.",
+    "சரி. மூன்று கூற்றுகளும் அரசியலமைப்பு விதிகளைத் துல்லியமாக விவரிக்கின்றன.",
+    "Section 87 of Charter Act 1833 is considered the historical precursor to Article 15 and 16 of the Indian Constitution.",
+    "1833 சாசனச் சட்டத்தின் பிரிவு 87 தற்போதைய 15 மற்றும் 16 விதிகளுக்கு முன்னோடியாகக் கருதப்படுகிறது.",
+    "1853 Charter Act created a 6-member Indian Legislative Council (Mini-Parliament).",
+    "1853 சாசனச் சட்டம் 6 உறுப்பினர்கள் கொண்ட இந்திய சட்டமன்ற கவுன்சிலை ('மினி-பாராளுமன்றம்') உருவாக்கியது.",
+    "Analyze", 75, ["Polity", "Historical Background", "Charter Acts Progressive Provisions", "Three Statement"]
+))
+
+# HB_SB_013
+questions.append(make_q(
+    "HB_SB_013", "Statement Based",
+    "With reference to the legislative evolution under Crown Rule, consider the following statements:\n1. The Government of India Act 1858 replaced Company rule with direct Crown Rule via the Secretary of State for India.\n2. The Indian Councils Act 1861 legalized Lord Canning's Portfolio System introduced in 1859.\n3. The Indian Councils Act 1892 allowed members of the legislative council to ask supplementary questions during budget discussions.\nWhich of the statements given above is/are correct?",
+    "முடிஅரசு ஆட்சியின் கீழ் சட்டமன்ற வளர்ச்சி குறித்து பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. 1858 இந்திய அரசுச் சட்டம் கம்பெனி ஆட்சியை ஒழித்து இந்திய அரசுச் செயலாளர் மூலம் நேரடி முடிஅரசு ஆட்சியை அமைத்தது.\n2. 1861 இந்தியக் கவுன்சில்கள் சட்டம் 1859 இல் லார்ட் கேனிங் கொண்டு வந்த துறை ஒதுக்கீடு முறைக்கு சட்டப்பூர்வ அங்கீகாரம் அளித்தது.\n3. 1892 இந்தியக் கவுன்சில்கள் சட்டம் பட்ஜெட் விவாதத்தின் போது துணைக் கேள்விகள் கேட்க உறுப்பினர்களுக்கு அனுமதி அளித்தது.\nஎது சரி?",
+    "1 and 2 only", "1 மற்றும் 2 மட்டும்",
+    "2 and 3 only", "2 மற்றும் 3 மட்டும்",
+    "1 and 3 only", "1 மற்றும் 3 மட்டும்",
+    "1, 2 and 3", "1, 2 மற்றும் 3",
+    "A",
+    "Statements 1 and 2 are correct. Statement 3 is INCORRECT because the 1892 Act allowed budget discussion and asking questions, but did NOT permit supplementary questions (which were allowed in 1909).",
+    "கூற்றுகள் 1 மற்றும் 2 சரி. கூற்று 3 தவறு, ஏனெனில் 1892 சட்டம் பட்ஜெட் விவாதம் & கேள்விகளை அனுமதித்தது, ஆனால் துணைக் கேள்விகளை அனுமதிக்கவில்லை (அது 1909 இல் வந்தது).",
+    "Correct. Statements 1 and 2 are correct; Statement 3 is false.",
+    "சரி. கூற்றுகள் 1 மற்றும் 2 சரி; கூற்று 3 தவறானது.",
+    "Incorrect. Statement 3 is false.",
+    "தவறு. கூற்று 3 தவறானது.",
+    "Incorrect. Statement 3 is false.",
+    "தவறு. கூற்று 3 தவறானது.",
+    "Incorrect. Statement 3 is false.",
+    "தவறு. கூற்று 3 தவறானது.",
+    "TNPSC Trap: Supplementary questions were allowed under 1909 Morley-Minto reforms, NOT under 1892 Act.",
+    "TNPSC பொறி: துணைக் கேள்விகள் கேட்கும் உரிமை 1909 சட்டத்தில்தான் வந்தது, 1892 இல் அல்ல.",
+    "1861 Act restored legislative powers to Bombay and Madras Presidencies.",
+    "1861 சட்டம் பம்பாய் மற்றும் மதராஸ் மாகாணங்களுக்கு சட்ட அதிகாரங்களை மீட்டு வழங்கியது.",
+    "Analyze", 75, ["Polity", "Historical Background", "Crown Rule Legislative Arc", "Three Statement"]
+))
+
+# HB_SB_014
+questions.append(make_q(
+    "HB_SB_014", "Statement Based",
+    "With reference to the expansion of Communal Electorates in British India, consider the following statements:\n1. The Indian Councils Act 1909 introduced Separate Electorates exclusively for Muslims.\n2. The Government of India Act 1919 extended Separate Electorates to Sikhs, Indian Christians, Anglo-Indians, and Europeans.\n3. The Government of India Act 1935 extended Separate Electorates to Depressed Classes (Scheduled Castes), Women, and Labour.\nWhich of the statements given above are correct?",
+    "பிரிட்டிஷ் இந்தியாவில் வகுப்புவாதத் தொகுதிகளின் விரிவாக்கம் குறித்து பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. 1909 இந்தியக் கவுன்சில்கள் சட்டம் முஸ்லிம்களுக்கு மட்டுமே பிரத்யேகத் தனித் தொகுதியை அறிமுகப்படுத்தியது.\n2. 1919 இந்திய அரசுச் சட்டம் சீக்கியர்கள், இந்தியக் கிறிஸ்தவர்கள், ஆங்கிலோ-இந்தியர்கள், ஐரோப்பியர்களுக்குத் தனித் தொகுதிகளை விரிவுபடுத்தியது.\n3. 1935 இந்திய அரசுச் சட்டம் தாழ்த்தப்பட்ட பிரிவினர் (பட்டியல் சாதியினர்), பெண்கள், தொழிலாளர்களுக்குத் தனித் தொகுதிகளை விரிவுபடுத்தியது.\nஎது சரி?",
+    "1 and 2 only", "1 மற்றும் 2 மட்டும்",
+    "2 and 3 only", "2 மற்றும் 3 மட்டும்",
+    "1 and 3 only", "1 மற்றும் 3 மட்டும்",
+    "1, 2 and 3", "1, 2 மற்றும் 3",
+    "D",
+    "All three statements are correct. Electorates expanded in 3 distinct stages: 1909 (Muslims) -> 1919 (Sikhs, Christians, Anglo-Indians, Europeans) -> 1935 (Depressed classes, Women, Labour).",
+    "மூன்று கூற்றுகளும் சரியானவை. தொகுதி விரிவாக்கம் 3 கட்டங்கள்: 1909 (முஸ்லிம்கள்) -> 1919 (சீக்கியர்கள், கிறிஸ்தவர்கள்) -> 1935 (பட்டியல் சாதியினர், பெண்கள்).",
+    "Incorrect. Statement 3 is also correct.",
+    "தவறு. கூற்று 3-ம் சரியானது.",
+    "Incorrect. Statement 1 is also correct.",
+    "தவறு. கூற்று 1-ம் சரியானது.",
+    "Incorrect. Statement 2 is also correct.",
+    "தவறு. கூற்று 2-ம் சரியானது.",
+    "Correct. All three statements accurately describe communal representation progression.",
+    "சரி. மூன்று கூற்றுகளும் வகுப்புவாத பிரதிநிதித்துவ வளர்ச்சியைத் துல்லியமாக விவரிக்கின்றன.",
+    "Lord Minto was designated the 'Father of Communal Electorate' following the 1909 reforms.",
+    "1909 சீர்திருத்தங்களைத் தொடர்ந்து லார்ட் மிண்டோ 'வகுப்புவாதத் தொகுதிகளின் தந்தை' எனப்பட்டார்.",
+    "Poona Pact (1932) between Gandhi and Ambedkar retained joint electorate for Depressed Classes with reserved seats.",
+    "பூனா ஒப்பந்தம் (1932) தாழ்த்தப்பட்ட பிரிவினருக்கு இடஒதுக்கீட்டுடன் கூடிய கூட்டுத் தொகுதியைத் தக்கவைத்தது.",
+    "Analyze", 75, ["Polity", "Historical Background", "Communal Electorates Progressive Expansion", "Three Statement"]
+))
+
+# HB_SB_015
+questions.append(make_q(
+    "HB_SB_015", "Statement Based",
+    "With reference to Dyarchy and Provincial Autonomy, consider the following statements:\n1. The Government of India Act 1919 introduced Dyarchy in eight provinces by dividing subjects into Reserved and Transferred.\n2. The Government of India Act 1935 abolished Provincial Dyarchy and introduced Provincial Autonomy in 1937.\n3. The Government of India Act 1935 successfully operated Dyarchy at the Central level throughout World War II.\nWhich of the statements given above is/are correct?",
+    "இரட்டை ஆட்சி மற்றும் மாகாண தன்னாட்சி குறித்து பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. 1919 இந்திய அரசுச் சட்டம் துறைகளை ஒதுக்கப்பட்டவை மற்றும் மாற்றப்பட்டவை எனப் பிரித்து 8 மாகாணங்களில் இரட்டை ஆட்சியை அறிமுகப்படுத்தியது.\n2. 1935 இந்திய அரசுச் சட்டம் மாகாண இரட்டை ஆட்சியை ஒழித்து 1937 இல் மாகாண தன்னாட்சியை அறிமுகப்படுத்தியது.\n3. 1935 இந்திய அரசுச் சட்டம் இரண்டாம் உலகப் போர் முழுவதும் மத்திய மட்டத்தில் இரட்டை ஆட்சியை வெற்றிகரமாக இயக்கியது.\nஎது சரி?",
+    "1 and 2 only", "1 மற்றும் 2 மட்டும்",
+    "2 and 3 only", "2 மற்றும் 3 மட்டும்",
+    "1 and 3 only", "1 மற்றும் 3 மட்டும்",
+    "1, 2 and 3", "1, 2 மற்றும் 3",
+    "A",
+    "Statements 1 and 2 are correct. Statement 3 is INCORRECT because Dyarchy at the Centre proposed by 1935 Act NEVER came into operation at all.",
+    "கூற்றுகள் 1 மற்றும் 2 சரி. கூற்று 3 தவறு, ஏனெனில் 1935 சட்டத்தில் உத்தேசிக்கப்பட்ட மத்திய இரட்டை ஆட்சி ஒருபோதும் நடைமுறைக்கு வரவே இல்லை.",
+    "Correct. Statements 1 and 2 are correct; Statement 3 is false.",
+    "சரி. கூற்றுகள் 1 மற்றும் 2 சரி; கூற்று 3 தவறானது.",
+    "Incorrect. Statement 3 is false.",
+    "தவறு. கூற்று 3 தவறானது.",
+    "Incorrect. Statement 3 is false.",
+    "தவறு. கூற்று 3 தவறானது.",
+    "Incorrect. Statement 3 is false.",
+    "தவறு. கூற்று 3 தவறானது.",
+    "TNPSC Trap: Dyarchy at the Centre under 1935 Act was NEVER brought into force.",
+    "TNPSC பொறி: 1935 சட்டத்தின் மத்திய இரட்டை ஆட்சி ஒருபோதும் அமலுக்கு வரவில்லை.",
+    "Under 1919 Act, Reserved subjects included Finance and Police, while Transferred subjects included Education and Health.",
+    "1919 சட்டத்தில் ஒதுக்கப்பட்ட துறைகளில் நிதியும் காவலும் இருந்தன; மாற்றப்பட்ட துறைகளில் கல்வியும் சுகாதாரமும் இருந்தன.",
+    "Analyze", 75, ["Polity", "Historical Background", "Dyarchy vs Autonomy Arc", "Three Statement"]
+))
+
+# HB_SB_016
+questions.append(make_q(
+    "HB_SB_016", "Statement Based",
+    "With reference to the executive Ordinance-making powers in India, consider the following statements:\n1. Ordinance-making power was first introduced by the Indian Councils Act of 1861, empowering the Viceroy to issue ordinances valid for 6 months during emergencies.\n2. Sections 42 and 43 of the Government of India Act 1935 empowered the Governor-General to issue ordinances during legislative recess and emergencies.\n3. The 1950 Indian Constitution incorporated Executive Ordinance powers under Article 123 for President and Article 213 for Governor.\nWhich of the statements given above are correct?",
+    "இந்தியாவில் நிர்வாகத்தின் அவசரச்சட்ட அதிகாரம் (Ordinance) குறித்து பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. அவசரச்சட்ட அதிகாரம் 1861 இந்தியக் கவுன்சில்கள் சட்டத்தால் முதன்முறையாக அறிமுகப்படுத்தப்பட்டு வைஸ்ராய்க்கு 6 மாத அவசரச்சட்ட அதிகாரம் அளித்தது.\n2. 1935 இந்திய அரசுச் சட்டத்தின் பிரிவுகள் 42 மற்றும் 43 கவர்னர் ஜெனரலுக்கு அவசரச்சட்டம் பிறப்பிக்கும் அதிகாரத்தை வழங்கின.\n3. 1950 இந்திய அரசியலமைப்பு பிரிவு 123 (குடியரசுத் தலைவர்) மற்றும் பிரிவு 213 (ஆளுநர்) ஆகியவற்றின் கீழ் அவசரச்சட்ட அதிகாரங்களைச் சேர்த்தது.\nஎது சரி?",
+    "1 and 2 only", "1 மற்றும் 2 மட்டும்",
+    "2 and 3 only", "2 மற்றும் 3 மட்டும்",
+    "1 and 3 only", "1 மற்றும் 3 மட்டும்",
+    "1, 2 and 3", "1, 2 மற்றும் 3",
+    "D",
+    "All three statements are correct. Traces Ordinance power evolution from 1861 Act (6 months) -> 1935 Act (Sections 42/43) -> 1950 Constitution (Articles 123 & 213).",
+    "மூன்று கூற்றுகளும் சரியானவை. அவசரச்சட்ட அதிகாரம் 1861 சட்டம் (6 மாதங்கள்) -> 1935 சட்டம் (பிரிவுகள் 42/43) -> 1950 அரசியலமைப்பு (பிரிவுகள் 123 & 213).",
+    "Incorrect. Statement 3 is also correct.",
+    "தவறு. கூற்று 3-ம் சரியானது.",
+    "Incorrect. Statement 1 is also correct.",
+    "தவறு. கூற்று 1-ம் சரியானது.",
+    "Incorrect. Statement 2 is also correct.",
+    "தவறு. கூற்று 2-ம் சரியானது.",
+    "Correct. All three statements accurately trace Ordinance power lineage.",
+    "சரி. மூன்று கூற்றுகளும் அவசரச்சட்ட அதிகாரப் பாதையைத் துல்லியமாகக் காட்டுகின்றன.",
+    "Ordinances have the same force and effect as an Act of Parliament/Legislature.",
+    "அவசரச்சட்டம் பாராளுமன்ற சட்டத்திற்கு இணையான அதிகாரம் கொண்டது.",
+    "Max life of an Ordinance without legislative approval is 6 months and 6 weeks.",
+    "சட்டமன்ற ஒப்புதலின்றி அவசரச்சட்டத்தின் அதிகபட்ச ஆயுட்காலம் 6 மாதங்கள் மற்றும் 6 வாரங்கள் ஆகும்.",
+    "Analyze", 75, ["Polity", "Historical Background", "Ordinance Power Lineage", "Three Statement"]
+))
+
+# HB_SB_017
+questions.append(make_q(
+    "HB_SB_017", "Statement Based",
+    "With reference to the evolution of higher judiciary in British India, consider the following statements:\n1. The Regulating Act 1773 established a Supreme Court of Judicature at Calcutta in 1774 with Sir Elijah Impey as its first Chief Justice.\n2. The Indian High Courts Act 1861 abolished Supreme Courts and Sadar Adalats, establishing High Courts at Calcutta, Bombay, and Madras.\n3. The Government of India Act 1935 established a Federal Court (1937), whose appellate decisions were subject to final appeal to the House of Lords in London.\nWhich of the statements given above is/are correct?",
+    "பிரிட்டிஷ் இந்தியாவில் உயர் நீதித்துறை வளர்ச்சி குறித்து பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. 1773 ஒழுங்குமுறைச் சட்டம் 1774 இல் சர் எலிஜா இம்பேயைத் தலைமை நீதிபதியாகக் கொண்டு கொல்கத்தா உச்ச நீதிமன்றத்தை நிறுவியது.\n2. 1861 உயர் நீதிமன்றங்கள் சட்டம் பழைய நீதிமன்றங்களைக் கலைத்து கொல்கத்தா, பம்பாய், மதராஸ் உயர் நீதிமன்றங்களை உருவாக்கியது.\n3. 1935 இந்திய அரசுச் சட்டம் கூட்டாட்சி நீதிமன்றத்தை (1937) நிறுவியது, இதன் மேல்முறையீடுகள் லண்டனில் உள்ள பிரபுக்கள் சபைக்குச் சென்றன.\nஎது சரி?",
+    "1 and 2 only", "1 மற்றும் 2 மட்டும்",
+    "2 and 3 only", "2 மற்றும் 3 மட்டும்",
+    "1 and 3 only", "1 மற்றும் 3 மட்டும்",
+    "1, 2 and 3", "1, 2 மற்றும் 3",
+    "A",
+    "Statements 1 and 2 are correct. Statement 3 is INCORRECT because appeals from the Federal Court of India (1937) lay to the Privy Council (Judicial Committee of Privy Council) in London, NOT to the House of Lords.",
+    "கூற்றுகள் 1 மற்றும் 2 சரி. கூற்று 3 தவறு, ஏனெனில் 1937 கூட்டாட்சி நீதிமன்றத்தின் மேல்முறையீடுகள் லண்டனில் உள்ள பிரிவி கவுன்சிலுக்குச் சென்றன (பிரபுக்கள் சபைக்கு அல்ல).",
+    "Correct. Statements 1 and 2 are correct; Statement 3 is false.",
+    "சரி. கூற்றுகள் 1 மற்றும் 2 சரி; கூற்று 3 தவறானது.",
+    "Incorrect. Statement 3 is false.",
+    "தவறு. கூற்று 3 தவறானது.",
+    "Incorrect. Statement 3 is false.",
+    "தவறு. கூற்று 3 தவறானது.",
+    "Incorrect. Statement 3 is false.",
+    "தவறு. கூற்று 3 தவறானது.",
+    "TNPSC Trap: Appeals from Federal Court (1937) went to the PRIVY COUNCIL, not House of Lords.",
+    "TNPSC பொறி: 1937 கூட்டாட்சி நீதிமன்ற மேல்முறையீடுகள் பிரிவி கவுன்சிலுக்குச் சென்றன (பிரபுக்கள் சபைக்கு அல்ல).",
+    "Supreme Court of India inaugurated on January 28, 1950, replacing both Federal Court and Judicial Committee of Privy Council.",
+    "இந்திய உச்ச நீதிமன்றம் 1950 ஜனவரி 28 அன்று தொடங்கப்பட்டு கூட்டாட்சி நீதிமன்றம் மற்றும் பிரிவி கவுன்சில் அதிகாரம் இரண்டையும் ஏற்றது.",
+    "Analyze", 75, ["Polity", "Historical Background", "Judicial System Arc", "Three Statement"]
+))
+
+# HB_SB_018
+questions.append(make_q(
+    "HB_SB_018", "Statement Based",
+    "With reference to civil services evolution in India, consider the following statements:\n1. The Charter Act of 1833 successfully implemented open competitive examinations for Civil Services recruitment.\n2. The Charter Act of 1853 established open competition for civil services, following which Macaulay Committee was appointed in 1854.\n3. The Lee Commission (1923) recommended establishing a Public Service Commission, leading to the Central PSC in 1926.\nWhich of the statements given above are correct?",
+    "இந்தியாவில் குடிமைப் பணிகள் வளர்ச்சி குறித்து பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. 1833 சாசனச் சட்டம் குடிமைப் பணி ஆட்சேர்ப்புக்கு திறந்தவெளிப் போட்டித் தேர்வு முறையை வெற்றிகரமாக அமல்படுத்தியது.\n2. 1853 சாசனச் சட்டம் குடிமைப் பணிகளுக்கு திறந்தவெளிப் போட்டியை நிறுவியது, இதன் பின் 1854 இல் மெக்காலே குழு அமைக்கப்பட்டது.\n3. லீ ஆணையம் (1923) பொதுச் சேவை ஆணையத்தை நிறுவப் பரிந்துரைத்து 1926 இல் மத்திய PSC அமையக் காரணமானது.\nஎது சரி?",
+    "1 and 2 only", "1 மற்றும் 2 மட்டும்",
+    "2 and 3 only", "2 மற்றும் 3 மட்டும்",
+    "1 and 3 only", "1 மற்றும் 3 மட்டும்",
+    "1, 2 and 3", "1, 2 மற்றும் 3",
+    "B",
+    "Statement 1 is INCORRECT because the 1833 attempt at open competition was negated due to opposition from Court of Directors. Statements 2 and 3 are correct (1853 succeeded, 1854 Macaulay Comm, 1923 Lee Comm -> 1926 Central PSC).",
+    "கூற்று 1 தவறு, ஏனெனில் 1833 இல் திறந்தவெளிப் போட்டி முயற்சி இயக்குநர்கள் அவையின் எதிர்ப்பால் ரத்து செய்யப்பட்டது. கூற்றுகள் 2 மற்றும் 3 சரி.",
+    "Incorrect. Statement 1 is false.",
+    "தவறு. கூற்று 1 தவறானது.",
+    "Correct. Statements 2 and 3 are correct; Statement 1 is false.",
+    "சரி. கூற்றுகள் 2 மற்றும் 3 சரி; கூற்று 1 தவறானது.",
+    "Incorrect. Statement 1 is false.",
+    "தவறு. கூற்று 1 தவறானது.",
+    "Incorrect. Statement 1 is false.",
+    "தவறு. கூற்று 1 தவறானது.",
+    "TNPSC Trap: 1833 Act ATTEMPTED open competition (negated); 1853 Act ACTUALLY IMPLEMENTED open competition.",
+    "TNPSC பொறி: 1833 சட்டம் திறந்தவெளிப் போட்டியை முயற்சித்தது (ரத்தானது); 1853 சட்டமே அதைச் செயல்படுத்தியது.",
+    "Satyendranath Tagore became the first Indian to clear ICS examination in 1863.",
+    "1863 இல் சத்யேந்திரநாத் தாகூர் ICS தேர்வில் தேர்ச்சியடைந்த முதல் இந்தியர் ஆனார்.",
+    "Analyze", 75, ["Polity", "Historical Background", "Civil Services Evolutionary Lineage", "Three Statement"]
+))
+
+# HB_SB_019
+questions.append(make_q(
+    "HB_SB_019", "Statement Based",
+    "With reference to financial control and budgetary powers, consider the following statements:\n1. The Indian Councils Act 1861 granted council members the right to vote on the annual budget.\n2. The Indian Councils Act 1892 permitted budget discussion for the first time with six days prior notice.\n3. The Government of India Act 1919 granted council members the right to vote on demands for grants and separated Provincial Budgets from the Central Budget.\nWhich of the statements given above are correct?",
+    "நிதி கட்டுப்பாடு மற்றும் பட்ஜெட் அதிகாரங்கள் குறித்து பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. 1861 இந்தியக் கவுன்சில்கள் சட்டம் ஆண்டு பட்ஜெட் மீது வாக்களிக்கும் உரிமையை உறுப்பினர்களுக்கு வழங்கியது.\n2. 1892 இந்தியக் கவுன்சில்கள் சட்டம் முதன்முறையாக ஆறு நாட்கள் முன்னறிவிப்புடன் பட்ஜெட்டை விவாதிக்க அனுமதித்தது.\n3. 1919 இந்திய அரசுச் சட்டம் மானியக் கோரிக்கைகள் மீது வாக்களிக்கும் உரிமையை வழங்கியதுடன் மாகாண பட்ஜெட்டை மத்திய பட்ஜெட்டிலிருந்து பிரித்தது.\nஎது சரி?",
+    "1 and 2 only", "1 மற்றும் 2 மட்டும்",
+    "2 and 3 only", "2 மற்றும் 3 மட்டும்",
+    "1 and 3 only", "1 மற்றும் 3 மட்டும்",
+    "1, 2 and 3", "1, 2 மற்றும் 3",
+    "B",
+    "Statement 1 is INCORRECT because the 1861 Act did NOT permit budget discussion or voting. Statements 2 and 3 are correct (1892 introduced discussion, 1919 introduced voting on demands & provincial budget separation).",
+    "கூற்று 1 தவறு, ஏனெனில் 1861 சட்டத்தில் பட்ஜெட் விவாதமோ வாக்களிப்போ அனுமதிக்கப்படவில்லை. கூற்றுகள் 2 மற்றும் 3 சரி.",
+    "Incorrect. Statement 1 is false.",
+    "தவறு. கூற்று 1 தவறானது.",
+    "Correct. Statements 2 and 3 are correct; Statement 1 is false.",
+    "சரி. கூற்றுகள் 2 மற்றும் 3 சரி; கூற்று 1 தவறானது.",
+    "Incorrect. Statement 1 is false.",
+    "தவறு. கூற்று 1 தவறானது.",
+    "Incorrect. Statement 1 is false.",
+    "தவறு. கூற்று 1 தவறானது.",
+    "Financial Control Arc: 1861 (No budget discussion) -> 1892 (Discussion allowed, no voting) -> 1919 (Voting on demands for grants & provincial budget separation).",
+    "நிதி கட்டுப்பாட்டு வளர்ச்சி: 1861 (விவாதம் இல்லை) -> 1892 (விவாதம் மட்டும்) -> 1919 (வாக்களிப்பு & மாகாண பட்ஜெட் பிரிப்பு).",
+    "First Indian Budget was presented on February 18, 1860 by James Wilson.",
+    "1860 பிப்ரவரி 18 அன்று ஜேம்ஸ் வில்சனால் முதல் இந்திய பட்ஜெட் தாக்கல் செய்யப்பட்டது.",
+    "Analyze", 75, ["Polity", "Historical Background", "Financial Control Progression", "Three Statement"]
+))
+
+# HB_SB_020
+questions.append(make_q(
+    "HB_SB_020", "Statement Based",
+    "With reference to Indian association in executive administration, consider the following statements:\n1. The Indian Councils Act 1861 nominated three non-official Indians to the Central Legislative Council in 1862.\n2. The Indian Councils Act 1909 appointed Satyendra Prasad Sinha as the first Indian Law Member in the Viceroy's Executive Council.\n3. The Government of India Act 1919 mandated that all six members of the Viceroy's Executive Council must be Indian nationals.\nWhich of the statements given above is/are correct?",
+    "நிர்வாகத்தில் இந்தியர் சேர்க்கை குறித்து பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. 1861 இந்தியக் கவுன்சில்கள் சட்டம் 1862 இல் 3 அரசுசாரா இந்தியர்களை மத்திய சட்டமன்ற கவுன்சிலுக்கு நியமித்தது.\n2. 1909 இந்தியக் கவுன்சில்கள் சட்டம் சத்யேந்திர பிரசாத் சின்ஹாவை வைஸ்ராய் நிர்வாகக் குழுவின் முதல் இந்திய சட்ட உறுப்பினராக நியமித்தது.\n3. 1919 இந்திய அரசுச் சட்டம் வைஸ்ராய் நிர்வாகக் குழுவின் 6 உறுப்பினர்களும் இந்திய குடிமக்களாக இருக்க வேண்டும் எனப் பணித்தது.\nஎது சரி?",
+    "1 and 2 only", "1 மற்றும் 2 மட்டும்",
+    "2 and 3 only", "2 மற்றும் 3 மட்டும்",
+    "1 and 3 only", "1 மற்றும் 3 மட்டும்",
+    "1, 2 and 3", "1, 2 மற்றும் 3",
+    "A",
+    "Statements 1 and 2 are correct. Statement 3 is INCORRECT because the 1919 Act required THREE out of six members (other than Commander-in-Chief) to be Indian, NOT all members.",
+    "கூற்றுகள் 1 மற்றும் 2 சரி. கூற்று 3 தவறு, ஏனெனில் 1919 சட்டம் 6 இல் 3 உறுப்பினர்கள் மட்டுமே இந்தியர்களாக இருக்க வேண்டும் எனப் பணித்தது (அனைவரும் அல்ல).",
+    "Correct. Statements 1 and 2 are correct; Statement 3 is false.",
+    "சரி. கூற்றுகள் 1 மற்றும் 2 சரி; கூற்று 3 தவறானது.",
+    "Incorrect. Statement 3 is false.",
+    "தவறு. கூற்று 3 தவறானது.",
+    "Incorrect. Statement 3 is false.",
+    "தவறு. கூற்று 3 தவறானது.",
+    "Incorrect. Statement 3 is false.",
+    "தவறு. கூற்று 3 தவறானது.",
+    "TNPSC Trap: 1919 Act required 3 of 6 members of GG Executive Council (other than Commander-in-Chief) to be Indian.",
+    "TNPSC பொறி: 1919 சட்டம் GG நிர்வாகக் குழுவின் 6 உறுப்பினர்களில் 3 பேர் இந்தியர்களாக இருக்க உத்தரவிட்டது.",
+    "In September 1946, an All-Indian Interim Cabinet was formed headed by Jawaharlal Nehru.",
+    "1946 செப்டம்பரில் ஜவஹர்லால் நேரு தலைமையில் அனைத்து இந்தியர்கள் கொண்ட இடைக்கால அமைச்சரவை அமைக்கப்பட்டது.",
+    "Analyze", 75, ["Polity", "Historical Background", "Executive Indianization Progression", "Three Statement"]
+))
+
+# HB_SB_021
+questions.append(make_q(
+    "HB_SB_021", "Statement Based",
+    "With reference to Pitt's India Act of 1784, consider the following statements:\n1. It created a Board of Control of six Privy Councillors to superintend political and military operations in India.\n2. It constituted a Secret Committee of three Court of Directors members to transmit secret orders to India.\n3. It increased the Governor-General's Council membership from four to five.\nWhich of the statements given above are correct?",
+    "1784 பிட் இந்தியச் சட்டம் குறித்து பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இது இந்தியாவில் அரசியல், இராணுவ நடவடிக்கைகளைக் கண்காணிக்க 6 உறுப்பினர்கள் கொண்ட கட்டுப்பாட்டு வாரியத்தை உருவாக்கியது.\n2. இது இந்தியாவிற்கு இரகசிய உத்தரவுகளை அனுப்ப 3 இயக்குநர்களைக் கொண்ட இரகசியக் குழுவை (Secret Committee) அமைத்தது.\n3. இது கவர்னர் ஜெனரல் கவுன்சில் உறுப்பினர்களின் எண்ணிக்கையை நான்கிலிருந்து ஐந்தாக உயர்த்தியது.\nஎது சரி?",
+    "1 and 2 only", "1 மற்றும் 2 மட்டும்",
+    "2 and 3 only", "2 மற்றும் 3 மட்டும்",
+    "1 and 3 only", "1 மற்றும் 3 மட்டும்",
+    "1, 2 and 3", "1, 2 மற்றும் 3",
+    "A",
+    "Statements 1 and 2 are correct. Statement 3 is INCORRECT because Pitt's India Act 1784 REDUCED the Governor-General's Council membership from 4 to 3 (not increased to 5).",
+    "கூற்றுகள் 1 மற்றும் 2 சரி. கூற்று 3 தவறு, ஏனெனில் 1784 பிட் சட்டம் GG கவுன்சில் உறுப்பினர்களை 4 லிருந்து 3 ஆகக் குறைத்தது (5 ஆக உயர்த்தவில்லை).",
+    "Correct. Statements 1 and 2 are correct; Statement 3 is false.",
+    "சரி. கூற்றுகள் 1 மற்றும் 2 சரி; கூற்று 3 தவறானது.",
+    "Incorrect. Statement 3 is false.",
+    "தவறு. கூற்று 3 தவறானது.",
+    "Incorrect. Statement 3 is false.",
+    "தவறு. கூற்று 3 தவறானது.",
+    "Incorrect. Statement 3 is false.",
+    "தவறு. கூற்று 3 தவறானது.",
+    "The Secret Committee transmitted secret orders regarding war, peace, and diplomacy to India.",
+    "இரகசியக் குழு போர், அமைதி, இராஜதந்திரம் குறித்த இரகசிய உத்தரவுகளை இந்தியாவிற்கு அனுப்பியது.",
+    "Pitt's India Act 1784 established the System of Double Government.",
+    "1784 பிட் இந்தியச் சட்டம் இரட்டை ஆட்சி முறையை நிறுவியது.",
+    "Analyze", 75, ["Polity", "Historical Background", "Pitt's India Act 1784", "Three Statement"]
+))
+
+# HB_SB_022
+questions.append(make_q(
+    "HB_SB_022", "Statement Based",
+    "With reference to the Charter Act of 1833, consider the following statements:\n1. It appointed Lord William Bentinck as the first Governor-General of India.\n2. It established the First Law Commission under the chairmanship of Lord Macaulay to codify Indian laws.\n3. It retained the East India Company's commercial monopoly over trade in Tea and trade with China.\nWhich of the statements given above are correct?",
+    "1833 சாசனச் சட்டம் குறித்து பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இது வில்லியம் பென்டிங்க் பிரபுவை இந்தியாவின் முதல் கவர்னர் ஜெனரலாக நியமித்தது.\n2. இது இந்திய சட்டங்களைத் தொகுக்க லார்ட் மெக்காலே தலைமையில் முதல் சட்ட ஆணையத்தை நிறுவியது.\n3. இது தேயிலை வர்த்தகம் மற்றும் சீனாவுடனான வர்த்தகத்தின் மீதான கிழக்கிந்தியக் கம்பெனியின் வர்த்தக ஏகபோகத்தைத் தக்கவைத்துக் கொண்டது.\nஎது சரி?",
+    "1 and 2 only", "1 மற்றும் 2 மட்டும்",
+    "2 and 3 only", "2 மற்றும் 3 மட்டும்",
+    "1 and 3 only", "1 மற்றும் 3 மட்டும்",
+    "1, 2 and 3", "1, 2 மற்றும் 3",
+    "A",
+    "Statements 1 and 2 are correct. Statement 3 is INCORRECT because the Charter Act of 1833 ABOLISHED all commercial monopolies completely (including Tea and China trade, which were retained earlier under 1813 Act).",
+    "கூற்றுகள் 1 மற்றும் 2 சரி. கூற்று 3 தவறு, ஏனெனில் 1833 சாசனச் சட்டம் தேயிலை, சீனா உட்பட அனைத்து வர்த்தக ஏகபோகங்களையும் முழுமையாக ஒழித்தது.",
+    "Correct. Statements 1 and 2 are correct; Statement 3 is false.",
+    "சரி. கூற்றுகள் 1 மற்றும் 2 சரி; கூற்று 3 தவறானது.",
+    "Incorrect. Statement 3 is false.",
+    "தவறு. கூற்று 3 தவறானது.",
+    "Incorrect. Statement 3 is false.",
+    "தவறு. கூற்று 3 தவறானது.",
+    "Incorrect. Statement 3 is false.",
+    "தவறு. கூற்று 3 தவறானது.",
+    "TNPSC Trap: 1813 Act retained Tea & China trade monopoly; 1833 Act ended ALL commercial trade completely.",
+    "TNPSC பொறி: 1813 சட்டம் தேயிலை, சீனா வர்த்தகத்தைத் தக்கவைத்தது; 1833 சட்டம் அனைத்தையும் ஒழித்தது.",
+    "Laws made under 1833 Act were called 'Acts', whereas earlier ones were called 'Regulations'.",
+    "1833 சட்டத்தின் கீழ் இயற்றப்பட்டவை 'சட்டங்கள்' எனப்பட்டன, முந்தையவை 'ஒழுங்குமுறைகள்' எனப்பட்டன.",
+    "Analyze", 75, ["Polity", "Historical Background", "Charter Act 1833", "Three Statement"]
+))
+
+# HB_SB_023
+questions.append(make_q(
+    "HB_SB_023", "Statement Based",
+    "With reference to the Government of India Act 1858, consider the following statements:\n1. It created a 15-member advisory Council of India in London to assist the Secretary of State for India.\n2. The Secretary of State for India was a member of the British Cabinet and answerable to British Parliament.\n3. Members of the Council of India were directly elected by British Indian voters.\nWhich of the statements given above are correct?",
+    "1858 இந்திய அரசுச் சட்டம் குறித்து பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இது இந்திய அரசுச் செயலாளருக்கு உதவ லண்டனில் 15 உறுப்பினர்கள் கொண்ட ஆலோசனைக் குழுவான இந்திய கவுன்சிலை உருவாக்கியது.\n2. இந்திய அரசுச் செயலாளர் பிரிட்டிஷ் அமைச்சரவை உறுப்பினராகவும் பாராளுமன்றத்திற்குப் பொறுப்பானவராகவும் இருந்தார்.\n3. இந்திய கவுன்சில் உறுப்பினர்கள் பிரிட்டிஷ் இந்திய வாக்காளர்களால் நேரடியாகத் தேர்ந்தெடுக்கப்பட்டனர்.\nஎது சரி?",
+    "1 and 2 only", "1 மற்றும் 2 மட்டும்",
+    "2 and 3 only", "2 மற்றும் 3 மட்டும்",
+    "1 and 3 only", "1 மற்றும் 3 மட்டும்",
+    "1, 2 and 3", "1, 2 மற்றும் 3",
+    "A",
+    "Statements 1 and 2 are correct. Statement 3 is INCORRECT because Council of India members were APPOINTED (7 by Crown and 8 by Court of Directors), NOT elected by Indian voters.",
+    "கூற்றுகள் 1 மற்றும் 2 சரி. கூற்று 3 தவறு, ஏனெனில் இந்திய கவுன்சில் உறுப்பினர்கள் நியமிக்கப்பட்டனர் (7 பிரிட்டிஷ் அரசால், 8 இயக்குநர்கள் அவையால்), இந்திய வாக்காளர்களால் தேர்ந்தெடுக்கப்படவில்லை.",
+    "Correct. Statements 1 and 2 are correct; Statement 3 is false.",
+    "சரி. கூற்றுகள் 1 மற்றும் 2 சரி; கூற்று 3 தவறானது.",
+    "Incorrect. Statement 3 is false.",
+    "தவறு. கூற்று 3 தவறானது.",
+    "Incorrect. Statement 3 is false.",
+    "தவறு. கூற்று 3 தவறானது.",
+    "Incorrect. Statement 3 is false.",
+    "தவறு. கூற்று 3 தவறானது.",
+    "Lord Stanley was the first Secretary of State for India, and Lord Canning was the first Viceroy.",
+    "லார்ட் ஸ்டான்லி முதல் இந்திய அரசுச் செயலாளரானார், கேனிங் பிரபு முதல் வைஸ்ராயானார்.",
+    "1858 Act was known as the 'Act for Good Government of India'.",
+    "1858 சட்டம் 'இந்தியாவின் நல்லாட்சிக்கான சட்டம்' எனப்பட்டது.",
+    "Analyze", 75, ["Polity", "Historical Background", "Government of India Act 1858", "Three Statement"]
+))
+
+# HB_SB_024
+questions.append(make_q(
+    "HB_SB_024", "Statement Based",
+    "With reference to the Indian Councils Act of 1892, consider the following statements:\n1. It increased the number of additional non-official members in Central Legislative Council to between 10 and 16.\n2. It permitted legislative members to discuss the budget and address questions to the executive.\n3. It allowed council members to move resolutions on the budget and vote on demand items.\nWhich of the statements given above are correct?",
+    "1892 ஆம் ஆண்டின் இந்தியக் கவுன்சில்கள் சட்டம் குறித்து பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இது மத்திய சட்டமன்ற கவுன்சிலில் கூடுதல் அரசுசாரா உறுப்பினர்களின் எண்ணிக்கையை 10 முதல் 16 வரை உயர்த்தியது.\n2. இது உறுப்பினர்கள் பட்ஜெட்டை விவாதிக்கவும் நிர்வாகத்திற்கு கேள்விகள் கேட்கவும் அனுமதித்தது.\n3. இது உறுப்பினர்கள் பட்ஜெட் மீது தீர்மானங்களை நகர்த்தவும் கோரிக்கைகள் மீது வாக்களிக்கவும் அனுமதித்தது.\nஎது சரி?",
+    "1 and 2 only", "1 மற்றும் 2 மட்டும்",
+    "2 and 3 only", "2 மற்றும் 3 மட்டும்",
+    "1 and 3 only", "1 மற்றும் 3 மட்டும்",
+    "1, 2 and 3", "1, 2 மற்றும் 3",
+    "A",
+    "Statements 1 and 2 are correct. Statement 3 is INCORRECT because resolutions on budget and voting were NOT permitted in 1892 (resolutions came in 1909, voting in 1919).",
+    "கூற்றுகள் 1 மற்றும் 2 சரி. கூற்று 3 தவறு, ஏனெனில் 1892 சட்டத்தில் பட்ஜெட் தீர்மானங்களோ வாக்களிப்போ அனுமதிக்கப்படவில்லை.",
+    "Correct. Statements 1 and 2 are correct; Statement 3 is false.",
+    "சரி. கூற்றுகள் 1 மற்றும் 2 சரி; கூற்று 3 தவறானது.",
+    "Incorrect. Statement 3 is false.",
+    "தவறு. கூற்று 3 தவறானது.",
+    "Incorrect. Statement 3 is false.",
+    "தவறு. கூற்று 3 தவறானது.",
+    "Incorrect. Statement 3 is false.",
+    "தவறு. கூற்று 3 தவறானது.",
+    "1892 Act required 6 days prior notice to ask questions on public interest.",
+    "1892 சட்டத்தில் பொதுநலக் கேள்விகள் கேட்க 6 நாட்கள் முன்னறிவிப்பு தேவைப்பட்டது.",
+    "The word 'election' was avoided in the text of 1892 Act.",
+    "1892 சட்டத்தின் உரையில் 'தேர்தல்' என்ற சொல் தவிர்க்கப்பட்டது.",
+    "Analyze", 75, ["Polity", "Historical Background", "Indian Councils Act 1892", "Three Statement"]
+))
+
+# HB_SB_025
+questions.append(make_q(
+    "HB_SB_025", "Statement Based",
+    "With reference to the Indian Councils Act of 1909 (Morley-Minto Reforms), consider the following statements:\n1. It retained official majority in the Central Legislative Council, but allowed non-official majority in Provincial Legislative Councils.\n2. Satyendra Prasad Sinha was appointed as the first Indian Finance Member in the Viceroy's Executive Council.\n3. It introduced separate electorates for Muslims, legalizing communalism in Indian politics.\nWhich of the statements given above are correct?",
+    "1909 இந்தியக் கவுன்சில்கள் சட்டம் (மோர்லே-மிண்டோ சீர்திருத்தங்கள்) குறித்து பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இது மத்திய கவுன்சிலில் அதிகாரபூர்வ பெரும்பான்மையைத் தக்கவைத்தது, ஆனால் மாகாண கவுன்சில்களில் அரசுசாரா பெரும்பான்மையை அனுமதித்தது.\n2. சத்யேந்திர பிரசாத் சின்ஹா வைஸ்ராய் நிர்வாகக் குழுவின் முதல் இந்திய நிதி உறுப்பினராக நியமிக்கப்பட்டார்.\n3. இது முஸ்லிம்களுக்குத் தனித் தொகுதிகளை அறிமுகப்படுத்தி இந்திய அரசியலில் வகுப்புவாதத்தைச் சட்டப்பூர்வமாக்கியது.\nஎது சரி?",
+    "1 and 2 only", "1 மற்றும் 2 மட்டும்",
+    "2 and 3 only", "2 மற்றும் 3 மட்டும்",
+    "1 and 3 only", "1 மற்றும் 3 மட்டும்",
+    "1, 2 and 3", "1, 2 மற்றும் 3",
+    "C",
+    "Statements 1 and 3 are correct. Statement 2 is INCORRECT because S.P. Sinha was appointed as the LAW Member (not Finance Member) in the Viceroy's Executive Council.",
+    "கூற்றுகள் 1 மற்றும் 3 சரி. கூற்று 2 தவறு, ஏனெனில் எஸ்.பி. சின்ஹா வைஸ்ராய் நிர்வாகக் குழுவின் சட்ட உறுப்பினராகவே நியமிக்கப்பட்டார் (நிதி உறுப்பினர் அல்ல).",
+    "Incorrect. Statement 2 is false.",
+    "தவறு. கூற்று 2 தவறானது.",
+    "Incorrect. Statement 2 is false.",
+    "தவறு. கூற்று 2 தவறானது.",
+    "Correct. Statements 1 and 3 are correct; Statement 2 is false.",
+    "சரி. கூற்றுகள் 1 மற்றும் 3 சரி; கூற்று 2 தவறானது.",
+    "Incorrect. Statement 2 is false.",
+    "தவறு. கூற்று 2 தவறானது.",
+    "TNPSC Trap: S.P. Sinha was appointed as Law Member (not Finance Member).",
+    "TNPSC பொறி: எஸ்.பி. சின்ஹா சட்ட உறுப்பினராக நியமிக்கப்பட்டார் (நிதி உறுப்பினர் அல்ல).",
+    "Lord Minto came to be known as the 'Father of Communal Electorate'.",
+    "லார்ட் மிண்டோ 'வகுப்புவாதத் தொகுதிகளின் தந்தை' என அழைக்கப்பட்டார்.",
+    "Analyze", 75, ["Polity", "Historical Background", "Indian Councils Act 1909", "Three Statement"]
+))
+
+# HB_SB_026
+questions.append(make_q(
+    "HB_SB_026", "Statement Based",
+    "With reference to the Government of India Act of 1919, consider the following statements:\n1. It introduced Bicameralism at the Centre consisting of Council of State and Legislative Assembly.\n2. It created the office of High Commissioner for India in London.\n3. It mandated that a Statutory Commission be appointed after five years to inquire into its working.\nWhich of the statements given above are correct?",
+    "1919 இந்திய அரசுச் சட்டம் குறித்து பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இது மத்தியில் மாநிலங்களவை மற்றும் சட்டமன்றப் பேரவை கொண்ட ஈரவை முறையை அறிமுகப்படுத்தியது.\n2. இது லண்டனில் இந்திய உயர் ஆணையர் அலுவலகத்தை உருவாக்கியது.\n3. இச்சட்டம் செயல்படுவதை ஆராய ஐந்து ஆண்டுகளுக்குப் பின் ஒரு சட்டப்பூர்வ ஆணையம் அமைக்கப்பட வேண்டும் எனக் கட்டாயப்படுத்தியது.\nஎது சரி?",
+    "1 and 2 only", "1 மற்றும் 2 மட்டும்",
+    "2 and 3 only", "2 மற்றும் 3 மட்டும்",
+    "1 and 3 only", "1 மற்றும் 3 மட்டும்",
+    "1, 2 and 3", "1, 2 மற்றும் 3",
+    "A",
+    "Statements 1 and 2 are correct. Statement 3 is INCORRECT because the 1919 Act provided for appointing a Statutory Commission after TEN years (not 5 years), which led to Simon Commission in 1927 (appointed 2 years early).",
+    "கூற்றுகள் 1 மற்றும் 2 சரி. கூற்று 3 தவறு, ஏனெனில் 1919 சட்டம் 10 ஆண்டுகளுக்குப் பின்னரே சட்டப்பூர்வ ஆணையம் அமைக்கப்பட வேண்டும் எனக் கூறியது (5 ஆண்டுகள் அல்ல).",
+    "Correct. Statements 1 and 2 are correct; Statement 3 is false.",
+    "சரி. கூற்றுகள் 1 மற்றும் 2 சரி; கூற்று 3 தவறானது.",
+    "Incorrect. Statement 3 is false.",
+    "தவறு. கூற்று 3 தவறானது.",
+    "Incorrect. Statement 3 is false.",
+    "தவறு. கூற்று 3 தவறானது.",
+    "Incorrect. Statement 3 is false.",
+    "தவறு. கூற்று 3 தவறானது.",
+    "TNPSC Trap: Statutory Commission timeframe in 1919 Act was 10 YEARS (Simon Commission came in Nov 1927).",
+    "TNPSC பொறி: 1919 சட்டப்படி விசாரணை ஆணைய காலம் 10 ஆண்டுகள் (சைமன் குழு 1927 நவம்பரில் வந்தது).",
+    "1919 Act introduced direct elections in India for the first time.",
+    "1919 சட்டம் இந்தியாவில் முதன்முறையாக நேரடித் தேர்தலை அறிமுகப்படுத்தியது.",
+    "Analyze", 75, ["Polity", "Historical Background", "Government of India Act 1919", "Three Statement"]
+))
+
+# HB_SB_027
+questions.append(make_q(
+    "HB_SB_027", "Statement Based",
+    "With reference to the Government of India Act of 1935, consider the following statements:\n1. It introduced Bicameralism in six out of eleven provinces (Bengal, Bombay, Madras, Bihar, Assam, United Provinces).\n2. It provided for the establishment of the Reserve Bank of India in 1935.\n3. It provided for the establishment of a Federal Court which began functioning in 1937.\nWhich of the statements given above are correct?",
+    "1935 இந்திய அரசுச் சட்டம் குறித்து பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இது 11 மாகாணங்களில் 6 மாகாணங்களில் (வங்காளம், பம்பாய், மதராஸ், பீகார், அசாம், ஐக்கிய மாகாணங்கள்) ஈரவை முறையை அறிமுகப்படுத்தியது.\n2. இது 1935 இல் இந்திய ரிசர்வ் வங்கியை நிறுவ வழிவகை செய்தது.\n3. இது 1937 இல் செயல்படத் தொடங்கிய கூட்டாட்சி நீதிமன்றத்தை நிறுவ வழிவகை செய்தது.\nஎது சரி?",
+    "1 and 2 only", "1 மற்றும் 2 மட்டும்",
+    "2 and 3 only", "2 மற்றும் 3 மட்டும்",
+    "1 and 3 only", "1 மற்றும் 3 மட்டும்",
+    "1, 2 and 3", "1, 2 மற்றும் 3",
+    "D",
+    "All three statements are correct. Bicameralism in 6 provinces, RBI established in April 1935, and Federal Court started functioning in Oct 1937 under Sir Maurice Gwyer.",
+    "மூன்று கூற்றுகளும் சரியானவை. 6 மாகாணங்களில் ஈரவை முறை, 1935 இல் ரிசர்வ் வங்கி அமைப்பு, மற்றும் 1937 இல் கூட்டாட்சி நீதிமன்றம் அமல்.",
+    "Incorrect. Statement 3 is also correct.",
+    "தவறு. கூற்று 3-ம் சரியானது.",
+    "Incorrect. Statement 1 is also correct.",
+    "தவறு. கூற்று 1-ம் சரியானது.",
+    "Incorrect. Statement 2 is also correct.",
+    "தவறு. கூற்று 2-ம் சரியானது.",
+    "Correct. All three statements accurately reflect the GOI Act 1935.",
+    "சரி. மூன்று கூற்றுகளும் 1935 அரசுச் சட்டத்தைத் துல்லியமாகப் பிரதிபலிக்கின்றன.",
+    "Sir Maurice Gwyer was the first Chief Justice of the Federal Court established in 1937.",
+    "1937 இல் அமைக்கப்பட்ட கூட்டாட்சி நீதிமன்றத்தின் முதல் தலைமை நீதிபதி சர் மோரிஸ் குவையர் ஆவார்.",
+    "1935 Act also provided for Federal Public Service Commission, Provincial PSC, and Joint PSC.",
+    "1935 சட்டம் கூட்டாட்சி, மாகாண மற்றும் கூட்டு பொதுச் சேவை ஆணையங்களை நிறுவ வழிவகை செய்தது.",
+    "Analyze", 75, ["Polity", "Historical Background", "Government of India Act 1935", "Three Statement"]
+))
+
+# HB_SB_028
+questions.append(make_q(
+    "HB_SB_028", "Statement Based",
+    "With reference to the Indian Independence Act of 1947, consider the following statements:\n1. It explicitly abolished the requirement of Royal Assent by the British Crown for bills passed by Dominion legislatures.\n2. It abolished the office of Secretary of State for India and transferred his functions to Secretary of State for Commonwealth Affairs.\n3. It mandated that the British Monarch retain the title 'Emperor of India' as a ceremonial head.\nWhich of the statements given above are correct?",
+    "1947 இந்திய சுதந்திரச் சட்டம் குறித்து பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இது டொமினியன் சட்டமன்றங்கள் நிறைவேற்றும் மசோதாக்களுக்கு பிரிட்டிஷ் மன்னரின் அரச ஒப்புதல் தேவையை வெளிப்படையாக ரத்து செய்தது.\n2. இது இந்திய அரசுச் செயலாளர் பதவியை ஒழித்து அவரது பொறுப்புகளை காமன்வெல்த் விவகாரச் செயலாளருக்கு மாற்றியது.\n3. இது பிரிட்டிஷ் மன்னர் 'இந்தியப் பேரரசர்' என்ற பட்டத்தை சடங்கு தலைவராகத் தக்கவைக்க வேண்டும் எனக் கட்டாயப்படுத்தியது.\nஎது சரி?",
+    "1 and 2 only", "1 மற்றும் 2 மட்டும்",
+    "2 and 3 only", "2 மற்றும் 3 மட்டும்",
+    "1 and 3 only", "1 மற்றும் 3 மட்டும்",
+    "1, 2 and 3", "1, 2 மற்றும் 3",
+    "A",
+    "Statements 1 and 2 are correct. Statement 3 is INCORRECT because the 1947 Act DROPPED the title 'Emperor of India' from the Royal style and titles of the King of England.",
+    "கூற்றுகள் 1 மற்றும் 2 சரி. கூற்று 3 தவறு, ஏனெனில் 1947 சுதந்திரச் சட்டம் இங்கிலாந்து மன்னரின் பட்டங்களிலிருந்து 'இந்தியப் பேரரசர்' என்ற பட்டத்தை நீக்கியது.",
+    "Correct. Statements 1 and 2 are correct; Statement 3 is false.",
+    "சரி. கூற்றுகள் 1 மற்றும் 2 சரி; கூற்று 3 தவறானது.",
+    "Incorrect. Statement 3 is false.",
+    "தவறு. கூற்று 3 தவறானது.",
+    "Incorrect. Statement 3 is false.",
+    "தவறு. கூற்று 3 தவறானது.",
+    "Incorrect. Statement 3 is false.",
+    "தவறு. கூற்று 3 தவறானது.",
+    "TNPSC Trap: 1947 Act dropped 'Emperor of India' title from the British Sovereign's titles.",
+    "TNPSC பொறி: 1947 சட்டம் 'இந்தியப் பேரரசர்' என்ற பட்டத்தை பிரிட்டிஷ் மன்னரின் பட்டங்களிலிருந்து நீக்கியது.",
+    "Indian Independence Act 1947 granted full power to Dominion Assemblies to frame any Constitution and repeal British Acts.",
+    "1947 சுதந்திரச் சட்டம் டொமினியன் சபைகளுக்கு புதிய அரசியலமைப்பை உருவாக்கவும் பிரிட்டிஷ் சட்டங்களை ரத்து செய்யவும் முழு அதிகாரம் அளித்தது.",
+    "Analyze", 75, ["Polity", "Historical Background", "Indian Independence Act 1947", "Three Statement"]
+))
+
+# HB_SB_029
+questions.append(make_q(
+    "HB_SB_029", "Statement Based",
+    "With reference to the Constituent Assembly under the Cabinet Mission Plan (1946), consider the following statements:\n1. The total strength of the Constituent Assembly was fixed at 389 members (296 for British India and 93 for Princely States).\n2. Members from British Indian provinces were indirectly elected by members of provincial legislative assemblies using single transferable vote.\n3. The Objective Resolution laying down the fundamentals of the Constitution was drafted and moved by Dr. B.R. Ambedkar.\nWhich of the statements given above are correct?",
+    "கேபினட் மிஷன் திட்டத்தின் கீழ் (1946) அமைக்கப்பட்ட அரசியலமைப்பு சபை குறித்து பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. அரசியலமைப்பு சபையின் மொத்த உறுப்பினர்களின் எண்ணிக்கை 389 என நிர்ணயிக்கப்பட்டது (பிரிட்டிஷ் இந்தியா 296, சுதேச சமஸ்தானங்கள் 93).\n2. பிரிட்டிஷ் இந்திய மாகாண உறுப்பினர்கள் மாகாண சட்டமன்ற உறுப்பினர்களால் ஒற்றை மாற்றத்தக்க வாக்கு மூலம் மறைமுகமாகத் தேர்ந்தெடுக்கப்பட்டனர்.\n3. அரசியலமைப்பின் அடிப்படைகளை வரைந்த நோக்குத் தீர்மானம் டாக்டர் பி.ஆர். அம்பேத்கரால் வரைந்து முன்வைக்கப்பட்டது.\nஎது சரி?",
+    "1 and 2 only", "1 மற்றும் 2 மட்டும்",
+    "2 and 3 only", "2 மற்றும் 3 மட்டும்",
+    "1 and 3 only", "1 மற்றும் 3 மட்டும்",
+    "1, 2 and 3", "1, 2 மற்றும் 3",
+    "A",
+    "Statements 1 and 2 are correct. Statement 3 is INCORRECT because the historic Objective Resolution was moved by JAWAHARLAL NEHRU on December 13, 1946 (not Dr. B.R. Ambedkar).",
+    "கூற்றுகள் 1 மற்றும் 2 சரி. கூற்று 3 தவறு, ஏனெனில் வரலாற்றுச் சிறப்புமிக்க நோக்குத் தீர்மானத்தை 1946 டிசம்பர் 13 அன்று ஜவஹர்லால் நேரு முன்வைத்தார் (அம்பேத்கர் அல்ல).",
+    "Correct. Statements 1 and 2 are correct; Statement 3 is false.",
+    "சரி. கூற்றுகள் 1 மற்றும் 2 சரி; கூற்று 3 தவறானது.",
+    "Incorrect. Statement 3 is false.",
+    "தவறு. கூற்று 3 தவறானது.",
+    "Incorrect. Statement 3 is false.",
+    "தவறு. கூற்று 3 தவறானது.",
+    "Incorrect. Statement 3 is false.",
+    "தவறு. கூற்று 3 தவறானது.",
+    "TNPSC Trap: Objective Resolution was moved by Pandit Jawaharlal Nehru on Dec 13, 1946 (adopted Jan 22, 1947).",
+    "TNPSC பொறி: நோக்குத் தீர்மானத்தை 1946 டிசம்பர் 13 இல் பண்டிதர் ஜவஹர்லால் நேரு முன்வைத்தார்.",
+    "Dr. B.R. Ambedkar served as Chairman of the 7-member Drafting Committee set up on August 29, 1947.",
+    "1947 ஆகஸ்ட் 29 இல் அமைக்கப்பட்ட 7 உறுப்பினர்கள் கொண்ட வரைவுக் குழுவின் தலைவராக டாக்டர் பி.ஆர். அம்பேத்கர் பணியாற்றினார்.",
+    "Analyze", 75, ["Polity", "Historical Background", "Constituent Assembly Objectives", "Three Statement"]
+))
+
+# HB_SB_030
+questions.append(make_q(
+    "HB_SB_030", "Statement Based",
+    "With reference to the Government of India Act of 1935 division of powers and emergency provisions, consider the following statements:\n1. It divided legislative subjects into Federal List (59 items), Provincial List (54 items), and Concurrent List (36 items).\n2. Residuary legislative powers were assigned personally to the Governor-General.\n3. Section 93 empowered the Provincial Governor to assume full provincial executive and legislative powers if normal constitutional machinery failed.\nWhich of the statements given above are correct?",
+    "1935 இந்திய அரசுச் சட்டத்தின் அதிகாரப் பகிர்வு மற்றும் அவசரகால விதிகள் குறித்து பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இது சட்டத் துறைகளை கூட்டாட்சி (59), மாகாண (54), மற்றும் இணைப்பு (36) பட்டியல்களாகப் பிரித்தது.\n2. எஞ்சிய சட்ட அதிகாரங்கள் கவர்னர் ஜெனரலிடம் தனிப்பட்ட முறையில் ஒப்படைக்கப்பட்டன.\n3. பிரிவு 93 அரசியலமைப்பு இயந்திரம் முறிந்தால் மாகாண கவர்னரே முழு நிர்வாக மற்றும் சட்ட அதிகாரங்களையும் ஏற்க வழிவகை செய்தது.\nஎது சரி?",
+    "1 and 2 only", "1 மற்றும் 2 மட்டும்",
+    "2 and 3 only", "2 மற்றும் 3 மட்டும்",
+    "1 and 3 only", "1 மற்றும் 3 மட்டும்",
+    "1, 2 and 3", "1, 2 மற்றும் 3",
+    "D",
+    "All three statements are correct. 3-List scheme (Federal 59, Provincial 54, Concurrent 36), Residuary powers to GG, and Section 93 (precursor to Article 356 President's Rule).",
+    "மூன்று கூற்றுகளும் சரியானவை. 3 பட்டியல்கள் திட்டம், எஞ்சிய அதிகாரம் வைஸ்ராயிடம், மற்றும் பிரிவு 93 (பிரிவு 356 குடியரசுத் தலைவர் ஆட்சிக்கு முன்னோடி).",
+    "Incorrect. Statement 3 is also correct.",
+    "தவறு. கூற்று 3-ம் சரியானது.",
+    "Incorrect. Statement 1 is also correct.",
+    "தவறு. கூற்று 1-ம் சரியானது.",
+    "Incorrect. Statement 2 is also correct.",
+    "தவறு. கூற்று 2-ம் சரியானது.",
+    "Correct. All three statements accurately reflect the GOI Act 1935 provisions.",
+    "சரி. மூன்று கூற்றுகளும் 1935 அரசுச் சட்ட விதிகளையும் துல்லியமாகப் பிரதிபலிக்கின்றன.",
+    "Section 93 of GOI Act 1935 directly evolved into Article 356 (President's Rule) in the 1950 Constitution.",
+    "1935 சட்டத்தின் பிரிவு 93 நேரடியாக 1950 அரசியலமைப்பின் பிரிவு 356 (குடியரசுத் தலைவர் ஆட்சி) ஆக உருவானது.",
+    "Government of India Act 1935 contained 321 sections and 10 schedules.",
+    "1935 இந்திய அரசுச் சட்டம் 321 பிரிவுகள் மற்றும் 10 அட்டவணைகளைக் கொண்டிருந்தது.",
+    "Analyze", 75, ["Polity", "Historical Background", "Government of India Act 1935", "Three Statement"]
+))
+
+# Save part 2
+questions.sort(key=lambda x: x["id"])
+with open(target_path, "w", encoding="utf-8") as f:
+    json.dump(questions, f, ensure_ascii=False, indent=2)
+
+print(f"Refined Part 2 complete: {len(questions)} questions saved.")

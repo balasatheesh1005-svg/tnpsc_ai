@@ -6,31 +6,12 @@ def render_practice_button(subject, topic):
     st.markdown("---")
 
 
+from ui.notes.renderer import render_notes_engine
+
+
 # 🔥 MAIN ENTRY
 def render_notes(data):
-    st.info(f"📘 {data.get('topic')}")
-    content = data.get("content", data)
-    ui_type = data.get("ui_type", "default")
-
-    render_definition(content)
-
-    if ui_type == "polity":
-        render_polity(content)
-
-    elif ui_type == "economy":
-        render_economy(content)
-
-    elif ui_type == "history":
-        render_history(content)
-
-    elif ui_type == "aptitude":
-        render_aptitude(content)
-
-    elif ui_type == "reasoning":
-        render_reasoning(content)
-
-    render_mcqs(content)
-    render_practice_button(data.get("subject"), data.get("topic"))
+    render_notes_engine(data)
 
 
 # 📘 DEFINITION (COMMON FOR ALL)

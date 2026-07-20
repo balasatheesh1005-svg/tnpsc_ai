@@ -1,0 +1,66 @@
+import json
+import os
+
+q_list = []
+
+def make_q(id_num, diff, q_type, q_en, q_ta, opt_list, ans, exp_en, exp_ta, wno, tip_en, tip_ta, rf_en, rf_ta, tags, bloom="Understand", est_time=60):
+    ans_upper = ans.upper()
+    ans_lower = ans.lower()
+    
+    opts_dict = []
+    opts_en = []
+    opts_ta = []
+    for opt_id, o_en, o_ta in opt_list:
+        opts_dict.append({"id": opt_id, "en": o_en, "ta": o_ta})
+        opts_en.append(o_en)
+        opts_ta.append(o_ta)
+        
+    return {
+        "id": f"HB_GT_{id_num:03d}",
+        "subject": "Polity",
+        "topic": "Historical Background of the Indian Constitution",
+        "difficulty": diff,
+        "question_type": q_type,
+        "question": {"en": q_en, "ta": q_ta},
+        "options": opts_dict,
+        "correct_answer": ans_upper,
+        "explanation": {"en": exp_en, "ta": exp_ta},
+        "why_not_others": wno,
+        "tnpsc_tip": {"en": tip_en, "ta": tip_ta},
+        "revision_fact": {"en": rf_en, "ta": rf_ta},
+        "source_reference": [
+            "M. Laxmikanth - Indian Polity",
+            "NCERT Class XI/XII - Indian Constitution at Work",
+            "Samacheer Kalvi - Standard 11/12 Political Science"
+        ],
+        "bloom_level": bloom,
+        "estimated_time_sec": est_time,
+        "pyq_similarity": "High",
+        "tags": tags,
+        "question_en": q_en,
+        "question_ta": q_ta,
+        "options_en": opts_en,
+        "options_ta": opts_ta,
+        "answer": ans_lower,
+        "explanation_en": exp_en,
+        "explanation_ta": exp_ta
+    }
+
+# We will populate 100 questions with precise distributions:
+# Direct MCQ: 25, Conceptual MCQ: 20, Statement Based: 15, Assertion & Reason: 10, Match the Following: 10, Chronology: 10, Integrated Evolution: 10
+# Answer distribution: 25 A, 25 B, 25 C, 25 D
+# Easy: 20, Medium: 35, Hard: 45
+
+# 1-10
+q_list.append(make_q(1, "Easy", "Direct MCQ", "Which Act designated Governor of Bengal as Governor-General of Bengal?", "வங்காள ஆளுநரை 'வங்காள கவர்னர்-ஜெனரல்' என மாற்றிய சட்டம் எது?", [("A", "Regulating Act of 1773", "1773 ஒழுங்குமுறைச் சட்டம்"), ("B", "Pitt's India Act of 1784", "1784 பிட் இந்தியச் சட்டம்"), ("C", "Charter Act of 1813", "1813 சாசனச் சட்டம்"), ("D", "Charter Act of 1833", "1833 சாசனச் சட்டம்")], "A", "1773 Regulating Act created GG of Bengal.", "1773 சட்டம் வங்காள கவர்னர்-ஜெனரலை உருவாக்கியது.", {"A": {"en": "Correct.", "ta": "சரி."}, "B": {"en": "Incorrect.", "ta": "தவறு."}, "C": {"en": "Incorrect.", "ta": "தவறு."}, "D": {"en": "Incorrect.", "ta": "தவறு."}}, "1773 Act laid foundation of central administration.", "1773 சட்டம் மத்திய நிர்வாகத்திற்கு அடிக்கல் நாட்டியது.", Warren Hastings was 1st GG of Bengal in 1773., "1773-ல் வாரன் ஹேஸ்டிங்ஸ் முதல் கவர்னர்-ஜெனரலானார்.", ["Polity", "Regulating Act 1773"], "Remember", 45))
+q_list.append(make_q(2, "Medium", "Conceptual MCQ", "What was dual control under Pitt's India Act 1784?", "1784 பிட் இந்தியச் சட்டத்தின் இரட்டை ஆட்சி யாது?", [("A", "Reserved and Transferred division", "ஒதுக்கப்பட்ட மற்றும் மாற்றப்பட்ட துறைகள்"), ("B", "Court of Directors (Commercial) and Board of Control (Political)", "இயக்குநர்கள் அவை (வணிகம்) மற்றும் கட்டுப்பாட்டு வாரியம் (அரசியல்)"), ("C", "Federal and Provincial division", "கூட்டாட்சி மற்றும் மாகாணப் பிரிப்பு"), ("D", "Bicameral central legislature", "இரு அவை மத்திய சட்டமன்றம்")], "B", "Court of Directors managed commercial affairs; Board of Control managed political affairs.", "இயக்குநர்கள் அவை வணிகத்தையும் கட்டுப்பாட்டு வாரியம் அரசியலையும் நிர்வகித்தன.", {"A": {"en": "Incorrect.", "ta": "தவறு."}, "B": {"en": "Correct.", "ta": "சரி."}, "C": {"en": "Incorrect.", "ta": "தவறு."}, "D": {"en": "Incorrect.", "ta": "தவறு."}}, "Board of Control political control.", "கட்டுப்பாட்டு வாரியம் அரசியல் கட்டுப்பாடு.", 1784 Act called territories British possessions., "1784 சட்டம் பிரிட்டிஷ் உடமைகள் எனக் குறிப்பிட்டது.", ["Polity", "Pitts India Act 1784"], "Understand", 60))
+q_list.append(make_q(3, "Hard", "Statement Based", "Consider statements regarding Charter Act 1833:\n1. Designated GG of Bengal as GG of India.\n2. Made EIC purely administrative body.\n3. Introduced open competition for ICS.\nWhich are correct?", "1833 சாசனச் சட்டம் பற்றிய கூற்றுகள்:\n1. வங்காள GG-ஐ இந்திய GG-ஆக மாற்றியது.\n2. கம்பெனியை நிர்வாக அமைப்பாக மாற்றியது.\n3. போட்டித் தேர்வை வெற்றிகரமாக அமல்படுத்தியது.\nஎவை சரியானவை?", [("A", "1 and 2 only", "1 மற்றும் 2 மட்டுமே"), ("B", "2 and 3 only", "2 மற்றும் 3 மட்டுமே"), ("C", "1 and 3 only", "1 மற்றும் 3 மட்டுமே"), ("D", "1, 2 and 3", "1, 2 மற்றும் 3")], "A", "1 and 2 are correct. Open competition attempt in 1833 failed; succeeded in 1853.", "1 மற்றும் 2 சரி. 1833 போட்டித் தேர்வு முயற்சி தோல்வி; 1853-ல் வெற்றி.", {"A": {"en": "Correct.", "ta": "சரி."}, "B": {"en": "Incorrect.", "ta": "தவறு."}, "C": {"en": "Incorrect.", "ta": "தவறு."}, "D": {"en": "Incorrect.", "ta": "தவறு."}}, "Open competition attempted in 1833; succeeded in 1853.", "போட்டித் தேர்வு 1833-ல் முயற்சி; 1853-ல் வெற்றி.", William Bentinck was 1st GG of India., "வில்லியம் பென்டிங்க் 1வது இந்திய கவர்னர்-ஜெனரல்.", ["Polity", "Charter Act 1833"], "Analyze", 75))
+q_list.append(make_q(4, "Hard", "Assertion & Reason", "Assertion (A): Charter Act 1853 separated legislative and executive functions.\nReason (R): Added 6 legislative councillors creating Central Legislative Council.", "கூற்று (A): 1853 சாசனச் சட்டம் சட்ட-நிர்வாகப் பணிகளைப் பிரித்தது.\nகாரணம் (R): 6 புதிய சட்ட உறுப்பினர்களைச் சேர்த்து மத்திய சட்ட மேலவையை உருவாக்கியது.", [("A", "Both (A) and (R) are true and (R) is correct explanation", "(A) மற்றும் (R) உண்மை, (R) சரியான விளக்கம்"), ("B", "Both true but (R) NOT correct explanation", "இரண்டும் உண்மை, ஆனால் (R) சரியான விளக்கமல்ல"), ("C", "(A) true but (R) false", "(A) உண்மை, (R) தவறு"), ("D", "(A) false but (R) true", "(A) தவறு, (R) உண்மை")], "A", "6 legislative members established distinct legislative wing.", "6 புதிய சட்ட உறுப்பினர்கள் சட்டப்பிரிவை உருவாக்கினர்.", {"A": {"en": "Correct.", "ta": "சரி."}, "B": {"en": "Incorrect.", "ta": "தவறு."}, "C": {"en": "Incorrect.", "ta": "தவறு."}, "D": {"en": "Incorrect.", "ta": "தவறு."}}, "Local representation introduced in 1853 Act.", "1853-ல் உள்ளூர் பிரதிநிதித்துவம் அறிமுகமானது.", 1853 Act created mini-parliament., "1853 சட்டம் சிறிய நாடாளுமன்றத்தை உருவாக்கியது.", ["Polity", "Charter Act 1853"], "Evaluate", 90))
+q_list.append(make_q(5, "Medium", "Match the Following", "Match Institutions with Acts:\nA. Fort William SC\nB. Board of Control\nC. Secretary of State\nD. Federal Court\n1. GOI Act 1858\n2. GOI Act 1935\n3. Regulating Act 1773\n4. Pitt's India Act 1784", "பொருத்துக:\nA. உச்ச நீதிமன்றம்\nB. கட்டுப்பாட்டு வாரியம்\nC. அரசுச் செயலர்\nD. கூட்டாட்சி நீதிமன்றம்\n1. 1858 சட்டம்\n2. 1935 சட்டம்\n3. 1773 சட்டம்\n4. 1784 சட்டம்", [("A", "A-3, B-4, C-1, D-2", "A-3, B-4, C-1, D-2"), ("B", "A-4, B-3, C-1, D-2", "A-4, B-3, C-1, D-2"), ("C", "A-3, B-1, C-4, D-2", "A-3, B-1, C-4, D-2"), ("D", "A-2, B-4, C-1, D-3", "A-2, B-4, C-1, D-3")], "A", "Match: A-3, B-4, C-1, D-2.", "பொருத்தம்: A-3, B-4, C-1, D-2.", {"A": {"en": "Correct.", "ta": "சரி."}, "B": {"en": "Incorrect.", "ta": "தவறு."}, "C": {"en": "Incorrect.", "ta": "தவறு."}, "D": {"en": "Incorrect.", "ta": "தவறு."}}, "SC 1774, Federal Court 1937.", "உச்ச நீதிமன்றம் 1774, கூட்டாட்சி நீதிமன்றம் 1937.", Secretary of State replaced Board of Control in 1858., "1858-ல் அரசுச் செயலர் கட்டுப்பாட்டு வாரியத்திற்குப் பதில் வந்தார்.", ["Polity", "Match the Following"], "Analyze", 75))
+q_list.append(make_q(6, "Medium", "Chronology", "Arrange Acts in order:\n1. 1892 Act\n2. 1853 Act\n3. 1861 Act\n4. 1909 Act", "வரிசைப்படுத்துக:\n1. 1892 சட்டம்\n2. 1853 சட்டம்\n3. 1861 சட்டம்\n4. 1909 சட்டம்", [("A", "2 -> 3 -> 1 -> 4", "2 -> 3 -> 1 -> 4"), ("B", "3 -> 2 -> 1 -> 4", "3 -> 2 -> 1 -> 4"), ("C", "2 -> 1 -> 3 -> 4", "2 -> 1 -> 3 -> 4"), ("D", "2 -> 3 -> 4 -> 1", "2 -> 3 -> 4 -> 1")], "A", "Sequence: 1853 -> 1861 -> 1892 -> 1909.", "வரிசை: 1853 -> 1861 -> 1892 -> 1909.", {"A": {"en": "Correct.", "ta": "சரி."}, "B": {"en": "Incorrect.", "ta": "தவறு."}, "C": {"en": "Incorrect.", "ta": "தவறு."}, "D": {"en": "Incorrect.", "ta": "தவறு."}}, "1853 EIC rule, 1861-1909 Crown rule.", "1853 கம்பெனி ஆட்சி, 1861-1909 முடி ஆட்சி.", 1853 last Charter Act., "1853 கடைசி சாசனச் சட்டம்.", ["Polity", "Chronology"], "Analyze", 75))
+q_list.append(make_q(7, "Hard", "Integrated Evolution", "Trace Executive Council evolution 1773-1909:", "நிர்வாகக் குழு வளர்ச்சியை ஆராய்க 1773-1909:", [("A", "4 members (1773) -> 4th Law member (1833) -> 5th member (1861) -> 1st Indian member (1909)", "4 உறுப்பினர்கள் (1773) -> 4வது சட்ட உறுப்பினர் (1833) -> 5வது உறுப்பினர் (1861) -> 1வது இந்திய உறுப்பினர் (1909)"), ("B", "4th Law member (1773) -> 4 members (1833) -> 1st Indian (1861) -> 5th member (1909)", "4வது சட்ட உறுப்பினர் (1773) -> 4 உறுப்பினர்கள் (1833) -> 1வது இந்திய உறுப்பினர் (1861) -> 5வது உறுப்பினர் (1909)"), ("C", "1st Indian member (1773) -> 4 members (1833) -> 4th Law (1861) -> 5th member (1909)", "1வது இந்திய உறுப்பினர் (1773) -> 4 உறுப்பினர்கள் (1833) -> 4வது சட்ட உறுப்பினர் (1861) -> 5வது உறுப்பினர் (1909)"), ("D", "4 members (1773) -> 1st Indian (1833) -> 4th Law (1861) -> 5th member (1909)", "4 உறுப்பினர்கள் (1773) -> 1வது இந்திய உறுப்பினர் (1833) -> 4வது சட்ட உறுப்பினர் (1861) -> 5வது உறுப்பினர் (1909)")], "A", "Evolution: 1773 (4 members) -> 1833 (Macaulay) -> 1861 (Finance member) -> 1909 (S.P. Sinha).", "வளர்ச்சி: 1773 (4 உறுப்பினர்கள்) -> 1833 (மெக்காலே) -> 1861 (நிதி உறுப்பினர்) -> 1909 (எஸ்.பி. சின்கா).", {"A": {"en": "Correct.", "ta": "சரி."}, "B": {"en": "Incorrect.", "ta": "தவறு."}, "C": {"en": "Incorrect.", "ta": "தவறு."}, "D": {"en": "Incorrect.", "ta": "தவறு."}}, "Macaulay 1833, S.P. Sinha 1909.", "மெக்காலே 1833, எஸ்.பி. சின்கா 1909.", 5th member 1861 was Finance member James Wilson., "1861 5வது உறுப்பினர் நிதி உறுப்பினர் ஜேம்ஸ் வில்சன்.", ["Polity", "Integrated Evolution"], "Evaluate", 90))
+q_list.append(make_q(8, "Medium", "Direct MCQ", "Amending Act 1781 exempted whom from SC jurisdiction for official acts?", "1781 திருத்தச் சட்டம் யாரை உச்ச நீதிமன்ற வரம்பிலிருந்து விலக்கியது?", [("A", "GG and Council only", "GG மற்றும் கவுன்சில் மட்டுமே"), ("B", "Servants of Company only", "கம்பெனி ஊழியர்கள் மட்டுமே"), ("C", "Both GG in Council and Servants of Company for official acts", "அதிகாரப்பூர்வ பணிகளுக்காக GG கவுன்சில் மற்றும் கம்பெனி ஊழியர்கள் இருசாரரும்"), ("D", "Judges of SC only", "உச்ச நீதிமன்ற நீதிபதிகள் மட்டுமே")], "C", "Exempted both GG-in-Council and Company servants for official acts.", "அதிகாரப்பூர்வ பணிகளுக்காக இருசாரருக்கும் விலக்களித்தது.", {"A": {"en": "Incorrect.", "ta": "தவறு."}, "B": {"en": "Incorrect.", "ta": "தவறு."}, "C": {"en": "Correct.", "ta": "சரி."}, "D": {"en": "Incorrect.", "ta": "தவறு."}}, "1781 Act also exempted revenue collection.", "1781 சட்டம் வருவாய் வசூலையும் விலக்கியது.", 1781 Act is Act of Settlement., "1781 சட்டம் சீரமைப்புச் சட்டமாகும்.", ["Polity", "Act of Settlement 1781"], "Understand", 60))
+q_list.append(make_q(9, "Hard", "Conceptual MCQ", "What was Council of India under 1858 Act?", "1858 சட்டத்தின் கீழ் இந்தியக் குழு யாது?", [("A", "15-member advisory body chaired by Secretary of State", "அரசுச் செயலரைத் தலைவராகக் கொண்ட 15 உறுப்பினர் ஆலோசனைக் குழு"), ("B", "Elected legislative assembly", "தேர்ந்தெடுக்கப்பட்ட சட்டமன்றம்"), ("C", "6-member executive cabinet", "6 உறுப்பினர் நிர்வாக அமைச்சரவை"), ("D", "Judicial tribunal", "நீதிமன்ற தீர்ப்பாயம்")], "A", "15-member advisory body in London assisting Secretary of State.", "லண்டனில் இயங்கிய அரசுச் செயலருக்கு உதவும் 15 உறுப்பினர் ஆலோசனைக் குழு.", {"A": {"en": "Correct.", "ta": "சரி."}, "B": {"en": "Incorrect.", "ta": "தவறு."}, "C": {"en": "Incorrect.", "ta": "தவறு."}, "D": {"en": "Incorrect.", "ta": "தவறு."}}, "8 Crown nominees, 7 Directors nominees.", "8 முடி நியமனங்கள், 7 இயக்குநர்கள் நியமனங்கள்.", Council of India abolished by 1935 Act., "இந்தியக் குழு 1935 சட்டத்தால் ஒழிக்கப்பட்டது.", ["Polity", "GOI Act 1858"], "Analyze", 75))
+q_list.append(make_q(10, "Medium", "Statement Based", "Consider statements on Indian Councils Act 1861:\n1. Initiated decentralization restoring Bombay/Madras powers.\n2. Empowered Viceroy to issue Ordinances (6 months life).\n3. Introduced elected Indian majority.\nWhich are correct?", "1861 இந்தியக் கவுன்சில்கள் சட்டம் பற்றிய கூற்றுகள்:\n1. பம்பாய்/மதராஸ் அதிகாரங்களை மீட்டு பரவலாக்கத்தைத் தொடங்கியது.\n2. வைஸ்ராய்க்கு அவசரச் சட்ட அதிகாரம் அளித்தது.\n3. தேர்ந்தெடுக்கப்பட்ட இந்திய பெரும்பான்மையை அறிமுகப்படுத்தியது.\nஎவை சரியானவை?", [("A", "1 and 2 only", "1 மற்றும் 2 மட்டுமே"), ("B", "2 and 3 only", "2 மற்றும் 3 மட்டுமே"), ("C", "1 and 3 only", "1 மற்றும் 3 மட்டுமே"), ("D", "1, 2 and 3", "1, 2 மற்றும் 3")], "A", "1 and 2 correct; 3 false because members were nominated.", "1 மற்றும் 2 சரி; உறுப்பினர்கள் நியமிக்கப்பட்டதால் 3 தவறு.", {"A": {"en": "Correct.", "ta": "சரி."}, "B": {"en": "Incorrect.", "ta": "தவறு."}, "C": {"en": "Incorrect.", "ta": "தவறு."}, "D": {"en": "Incorrect.", "ta": "தவறு."}}, "Ordinance life was 6 months.", "அவசரச் சட்ட ஆயுள் 6 மாதங்கள்.", Nominated Indians: Raja of Benaras, Maharaja of Patiala, Sir Dinkar Rao (1862)., "நியமிக்கப்பட்ட இந்தியர்கள்: பெனாரஸ் ராஜா, பட்டியாலா மகாராஜா, தினகர் ராவ்.", ["Polity", "Indian Councils Act 1861"], "Analyze", 75))
+
+print(f"Loaded {len(q_list)} questions.")
