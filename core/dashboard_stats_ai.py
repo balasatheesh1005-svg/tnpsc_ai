@@ -1,3 +1,4 @@
+from core.progress_ai import get_progress
 from core.streak_ai import get_streak
 from core.supabase_client import supabase
 from core.weakness_ai import get_weakness
@@ -75,11 +76,11 @@ def get_user_rank(user, all_progress=None):
 
 
 def get_dashboard_stats(user):
+    user_progress = get_progress(user)
     progress_response = (
         supabase.table("users_progress").select("username, accuracy").execute()
     )
     all_progress = progress_response.data or []
-    user_progress = [row for row in all_progress if row.get("username") == user]
     weak_data = get_weakness(user)
     xp_data = get_user_xp(user)
     level_progress = get_level_progress(user)

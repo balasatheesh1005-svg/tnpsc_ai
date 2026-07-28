@@ -59,16 +59,23 @@ def save_auth_session(session, user, profile):
     st.session_state["auth_profile"] = profile or {}
     persist_auth_session(session)
 
-    user_id = getattr(user, "id", None)
-    email = getattr(user, "email", None)
-    if isinstance(user, dict):
-        user_id = user_id or user.get("id")
-        email = email or user.get("email")
+    profile_dict = profile or {}
 
-    st.session_state["user_id"] = user_id
-    st.session_state["email"] = (profile or {}).get("email") or email
-    st.session_state["username"] = (profile or {}).get("username") or email
-    st.session_state["full_name"] = (profile or {}).get("full_name") or ""
+    # Extract user_id UUID from profiles.id first, falling back to auth user object
+    user_id = profile_dict.get("id") or getattr(user, "id", None)
+    if isinstance(user, dict) and not user_id:
+        user_id = user.get("id")
+
+    email = profile_dict.get("email") or getattr(user, "email", None)
+    if isinstance(user, dict) and not email:
+        email = user.get("email")
+
+    username = profile_dict.get("username") or email or ""
+
+    st.session_state["user_id"] = str(user_id) if user_id else None
+    st.session_state["username"] = username
+    st.session_state["email"] = email
+    st.session_state["full_name"] = profile_dict.get("full_name") or ""
 
 
 def is_authenticated():
@@ -76,11 +83,27 @@ def is_authenticated():
 
 
 def current_user_id():
+    """Returns the current logged in user's profiles.id UUID."""
     return st.session_state.get("user_id")
 
 
 def current_username():
+    """Returns the current logged in username for display and legacy lookups."""
     return st.session_state.get("username", "")
+
+
+def current_user_email():
+    """Returns the current logged in user email."""
+    return st.session_state.get("email", "")
+
+
+def get_session_identity():
+    """Returns dual-identity dictionary for the current session state."""
+    return {
+        "user_id": st.session_state.get("user_id"),
+        "username": st.session_state.get("username", ""),
+        "email": st.session_state.get("email", ""),
+    }
 
 
 def clear_auth_session():
@@ -95,3 +118,4 @@ def reset_app_state_for_logout():
         if key not in preserved:
             st.session_state.pop(key, None)
     clear_auth_session()
+

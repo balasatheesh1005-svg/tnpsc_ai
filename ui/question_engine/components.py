@@ -230,72 +230,13 @@ def render_question_card(
     timer_seconds=None,
     explanation_actions=None,
 ):
-    if not question:
-        st.info("No question selected.")
-        return
-
-    progress = build_progress_state(question_number - 1, total_questions)
-    meta = meta_fields or ["exam", "year", "subject"]
-    meta_html = "".join(
-        f'<span class="progress-pill">{html.escape(str(question.get(field, field.title())))}</span>'
-        for field in meta
+    from ui.question_engine.universal_renderer import render_universal_question_card
+    render_universal_question_card(
+        question_data=question,
+        question_number=question_number,
+        total_questions=total_questions,
+        prefix=prefix,
+        timer_seconds=timer_seconds,
+        explanation_actions=explanation_actions,
     )
 
-    st.markdown(
-        f"""
-        <div class="progress-header">
-            <div class="progress-details">
-                <span class="progress-pill">Question {progress["current"]} / {progress["total"]}</span>
-                {meta_html}
-            </div>
-            <span class="progress-pill">{int(progress["percent"] * 100)}% Complete</span>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-    if timer_seconds:
-        render_timer(prefix, timer_seconds)
-    if progress["total"]:
-        st.progress(progress["percent"])
-
-    difficulty = question.get("difficulty") or "Medium"
-    st.markdown(
-        f"""
-        <section class="nova-glass-card question-card">
-            <div class="question-badges">
-                <span class="question-badge subject">{html.escape(str(question.get("subject", "General")))}</span>
-                <span class="question-badge difficulty">{html.escape(str(difficulty))}</span>
-            </div>
-            <div class="question-title">{html.escape(str(_question_text(question)))}</div>
-            <p class="nova-card-copy">{html.escape(str(question.get("question_ta") or ""))}</p>
-        </section>
-        """,
-        unsafe_allow_html=True,
-    )
-
-    option_rows = _extract_options(question)
-    option_labels = [f"{key}. {value}" for key, value in option_rows]
-    if not option_labels:
-        st.info("Options are not available for this question.")
-        return
-
-    selected = st.radio(
-        "Select the best answer",
-        option_labels,
-        key=f"{prefix}_selected_option_{question.get('id', question_number)}",
-        disabled=get_session_value(st.session_state, prefix, "answered", False),
-    )
-
-    if render_navigation(prefix, total_questions):
-        selected_key = selected.split(".", 1)[0] if selected else ""
-        record_answer(
-            st.session_state,
-            prefix,
-            selected_key,
-            is_correct_answer(selected_key, _correct_answer(question)) if _has_verified_answer(question) else None,
-            question.get("id"),
-        )
-        st.rerun()
-
-    if get_session_value(st.session_state, prefix, "answered", False):
-        render_review(question, prefix, actions=explanation_actions)

@@ -252,6 +252,55 @@ def render_theme_css():
                 padding: 0.72rem 0.82rem !important;
             }}
         }}
+
+        /* --- UNIVERSAL QUESTION RENDERER STYLES --- */
+        .statement-card {{
+            background: rgba(248, 250, 252, 0.9);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+            border-left: 4px solid var(--nova-accent);
+            border-radius: 12px;
+            padding: 12px 16px;
+            margin-bottom: 10px;
+        }}
+        .statement-num {{
+            font-size: 0.75rem;
+            font-weight: 800;
+            color: var(--nova-accent);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: block;
+            margin-bottom: 4px;
+        }}
+        .statement-text-en {{ font-size: 0.95rem; font-weight: 600; color: #0F172A; }}
+        .statement-text-ta {{ font-size: 0.9rem; color: #334155; margin-top: 4px; }}
+
+        .ar-container {{ display: flex; flex-direction: column; gap: 10px; margin-top: 10px; }}
+        .ar-box {{ border-radius: 14px; padding: 14px 18px; border: 1px solid #E2E8F0; }}
+        .assertion-box {{ background: rgba(37, 99, 235, 0.05); border-left: 5px solid #2563EB; }}
+        .reason-box {{ background: rgba(147, 51, 234, 0.05); border-left: 5px solid #9333EA; }}
+        .ar-label {{ font-size: 0.78rem; font-weight: 850; text-transform: uppercase; display: block; margin-bottom: 4px; }}
+        .assertion-box .ar-label {{ color: #2563EB; }}
+        .reason-box .ar-label {{ color: #9333EA; }}
+
+        .exp-subcard {{ border-radius: 12px; padding: 12px 16px; margin-bottom: 10px; border-left: 4px solid #94A3B8; background: #F8FAFC; }}
+        .exp-subcard.context {{ border-left-color: #2563EB; background: #EFF6FF; }}
+        .exp-subcard.reason {{ border-left-color: #059669; background: #ECFDF5; }}
+        .exp-subcard.impact {{ border-left-color: #7C3AED; background: #F5F3FF; }}
+        .exp-subcard.trap {{ border-left-color: #DC2626; background: #FEF2F2; }}
+        .exp-subcard.trick {{ border-left-color: #D97706; background: #FFFBEB; }}
+
+        .wno-card {{ background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; padding: 12px; margin-bottom: 10px; }}
+        .wno-header {{ display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }}
+        .wno-badge {{ font-size: 0.68rem; font-weight: 850; padding: 2px 8px; border-radius: 99px; }}
+        .correct-badge {{ background: #DCFCE7; color: #15803D; }}
+        .incorrect-badge {{ background: #F1F5F9; color: #64748B; }}
+
+        .tip-card {{ background: linear-gradient(135deg, #FEF3C7, #FDE68A); border-radius: 14px; padding: 14px 18px; color: #78350F; margin-bottom: 12px; }}
+        .fact-card {{ background: linear-gradient(135deg, #E0E7FF, #C7D2FE); border-radius: 14px; padding: 14px 18px; color: #3730A3; margin-bottom: 12px; }}
+
+        .timer-pill {{ background: #FEF2F2 !important; color: #DC2626 !important; border: 1px solid #FECACA !important; font-weight: 800 !important; }}
+        .bloom {{ background: #F3E8FF !important; color: #7E22CE !important; }}
+        .tamil-text {{ font-family: system-ui, -apple-system, sans-serif; line-height: 1.5; }}
         </style>
         """,
         unsafe_allow_html=True,

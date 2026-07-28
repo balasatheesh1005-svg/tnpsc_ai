@@ -889,3 +889,328 @@ def achievement_grid(achievements):
         for title, description, unlocked, level in achievements
     )
     return HtmlFragment(f'<div class="achievement-grid">{cards}</div>')
+
+
+def repository_progress_card(repo_type: str, completed_count: int, total_repos: int = 9) -> HtmlFragment:
+    pct = int((max(1, completed_count) / max(1, total_repos)) * 100)
+    formatted_name = repo_type.replace("_", " ").title()
+    return _fragment(f"""
+    <div style="background: #F8FAFC; border: 1px solid #E2E8F0; padding: 16px; border-radius: 14px; margin-bottom: 16px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap; gap: 8px;">
+            <div>
+                <span style="font-weight: 800; color: #0F172A; font-size: 0.95rem;">
+                    📊 Repository Progress: <b>{html.escape(formatted_name)}</b>
+                </span>
+            </div>
+            <span style="background: #2563EB; color: white; padding: 4px 12px; border-radius: 12px; font-weight: 800; font-size: 0.85rem;">
+                {completed_count} / {total_repos} Completed ({pct}%)
+            </span>
+        </div>
+        <div style="width: 100%; background: #E2E8F0; height: 10px; border-radius: 5px; overflow: hidden;">
+            <div style="width: {pct}%; background: linear-gradient(90deg, #2563EB, #16A34A); height: 100%; transition: width 0.4s ease;"></div>
+        </div>
+    </div>
+    """)
+
+
+def learning_journey_roadmap(current_repo_type: str, avail: dict) -> HtmlFragment:
+    stages = [
+        ("notes", "Study Notes", "📖"),
+        ("easy", "Easy", "🟢"),
+        ("medium", "Medium", "🟡"),
+        ("hard", "Hard", "🔴"),
+        ("statement_based", "Statement", "📋"),
+        ("assertion_reason", "Assertion & Reason", "⚖️"),
+        ("match_the_following", "Match the Following", "📊"),
+        ("chronology", "Chronology", "⏱️"),
+        ("pyq", "PYQ", "🏛️"),
+        ("grand_test", "Grand Test", "🏆"),
+    ]
+
+    curr_key = current_repo_type.lower().strip()
+    order_keys = [s[0] for s in stages if s[0] != "notes"]
+    curr_idx = order_keys.index(curr_key) if curr_key in order_keys else 0
+
+    items_html = ""
+    for idx, (key, label, icon) in enumerate(stages):
+        if key == "notes":
+            status_badge = "✅"
+            bg_color = "#DCFCE7"
+            text_color = "#15803D"
+            border_color = "#86EFAC"
+        else:
+            stage_order_idx = order_keys.index(key)
+            if stage_order_idx < curr_idx:
+                status_badge = "✅"
+                bg_color = "#DCFCE7"
+                text_color = "#15803D"
+                border_color = "#86EFAC"
+            elif stage_order_idx == curr_idx:
+                status_badge = "⏳ Current"
+                bg_color = "#DBEAFE"
+                text_color = "#1E40AF"
+                border_color = "#93C5FD"
+            elif avail.get(key, False):
+                status_badge = "🟢 Ready"
+                bg_color = "#F0FDF4"
+                text_color = "#166534"
+                border_color = "#BBF7D0"
+            else:
+                status_badge = "🔒 Locked"
+                bg_color = "#F8FAFC"
+                text_color = "#64748B"
+                border_color = "#E2E8F0"
+
+        arrow = " → " if idx < len(stages) - 1 else ""
+        items_html += f"""
+        <div style="display:inline-flex; align-items:center; margin: 3px 2px;">
+            <div style="background:{bg_color}; border:1px solid {border_color}; color:{text_color}; padding:5px 10px; border-radius:8px; font-weight:700; font-size:0.78rem; white-space:nowrap;">
+                {icon} {html.escape(label)} <span style="font-size:0.72rem; opacity:0.95;">({status_badge})</span>
+            </div>
+            <span style="color:#94A3B8; font-weight:700; margin:0 3px; font-size:0.8rem;">{arrow}</span>
+        </div>
+        """
+
+    return _fragment(f"""
+    <div style="background: #FFFFFF; border: 1px solid #E2E8F0; padding: 14px; border-radius: 14px; margin-bottom: 16px;">
+        <h4 style="margin: 0 0 8px 0; color: #0F172A; font-size: 0.92rem; font-weight: 800;">🧭 Learning Journey Roadmap</h4>
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 2px;">
+            {items_html}
+        </div>
+    </div>
+    """)
+
+
+def micro_motivation_banner(accuracy: int, streak: int, curr_idx: int) -> HtmlFragment:
+    messages = []
+    if accuracy >= 90:
+        messages.append("🌟 Outstanding consistency! You are operating at top TNPSC accuracy levels.")
+    elif accuracy >= 75:
+        messages.append("📈 Solid progress! You are steadily building strong subject recall.")
+    elif accuracy < 50:
+        messages.append("💡 Keep pushing! Review detailed explanations to solidify weaker concepts.")
+
+    if streak >= 7:
+        messages.append("🔥 7-Day Streak Active! Your continuous effort guarantees long-term retention.")
+
+    if curr_idx == 6:
+        messages.append("🚀 Great momentum! Only two repositories remaining before Grand Test.")
+    elif curr_idx == 7:
+        messages.append("🏆 Milestone Unlocked! Grand Test is now unlocked for complete topic mastery.")
+
+    if not messages:
+        messages.append("💪 Every question practiced brings you closer to TNPSC success!")
+
+    selected_msg = messages[0]
+    return _fragment(f"""
+    <div style="background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%); border-left: 4px solid #2563EB; padding: 12px 16px; border-radius: 8px; margin-bottom: 16px; color: #1E40AF; font-weight: 700; font-size: 0.88rem;">
+        {html.escape(selected_msg)}
+    </div>
+    """)
+
+
+def mentor_personality_banner(message: str) -> HtmlFragment:
+    return _fragment(f"""
+    <div style="background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%); border-left: 5px solid #3B82F6; padding: 18px 24px; border-radius: 18px; margin-bottom: 20px; box-shadow: 0 12px 28px rgba(15, 23, 42, 0.15); backdrop-filter: blur(14px);">
+        <div style="display: flex; align-items: center; gap: 14px;">
+            <span style="font-size: 1.8rem; background: rgba(59, 130, 246, 0.2); border-radius: 50%; width: 46px; height: 46px; display: grid; place-items: center;">🧠</span>
+            <div>
+                <span style="color: #93C5FD; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em;">Nova AI Mentor Intelligence</span>
+                <div style="color: #FFFFFF; font-size: 1.15rem; font-weight: 800; margin-top: 2px;">"{html.escape(message)}"</div>
+            </div>
+        </div>
+    </div>
+    """)
+
+
+def latest_achievement_single_card(title: str, description: str, level: str = "gold") -> HtmlFragment:
+    return _fragment(f"""
+    <div class="achievement-card unlocked {html.escape(level)}" style="margin-top: 0.5rem;">
+        <div class="achievement-icon {html.escape(level)}">🏆</div>
+        <div>
+            <div class="achievement-title">{html.escape(title)}</div>
+            <div class="achievement-copy">{html.escape(description)}</div>
+            <div class="achievement-state">✅ Most Recent Unlock</div>
+        </div>
+    </div>
+    """)
+
+
+def revision_5level_target_card(target: dict) -> HtmlFragment:
+    s = html.escape(str(target.get("level1_subject", "Polity")))
+    t = html.escape(str(target.get("level2_topic", "Fundamental Rights")))
+    r = html.escape(str(target.get("level3_repository", "Hard Repository")))
+    q = html.escape(str(target.get("level4_question_type", "Assertion & Reason")))
+    est = html.escape(str(target.get("estimated_time_mins", 12)))
+    status = html.escape(str(target.get("status", "Due Today")))
+    acc = target.get("accuracy", 50)
+
+    return _fragment(f"""
+    <div class="nova-glass-card" style="border-left: 5px solid #2563EB; background: linear-gradient(135deg, rgba(239, 246, 255, 0.95) 0%, rgba(255, 255, 255, 0.88) 100%); padding: 20px;">
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; margin-bottom: 12px; gap: 8px;">
+            <span style="background: rgba(37, 99, 235, 0.12); color: #1D4ED8; font-size: 0.78rem; font-weight: 850; padding: 4px 10px; border-radius: 999px;">
+                🎯 5-Level Target • {status}
+            </span>
+            <span style="color: #475569; font-size: 0.85rem; font-weight: 800;">
+                ⏱️ Estimated {est} mins
+            </span>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 1.05rem; font-weight: 900; color: #0F172A; margin: 8px 0 14px;">
+            <span>{s}</span>
+            <span style="color: #2563EB;">↓</span>
+            <span>{t}</span>
+            <span style="color: #2563EB;">↓</span>
+            <span>{r}</span>
+            <span style="color: #2563EB;">↓</span>
+            <span style="background: #2563EB; color: white; padding: 2px 10px; border-radius: 8px;">{q}</span>
+        </div>
+        <div style="color: #64748B; font-size: 0.88rem; font-weight: 750;">
+            📊 Current Sub-Repository Accuracy: <strong style="color: #0F172A;">{acc}%</strong>
+        </div>
+    </div>
+    """)
+
+
+def revision_progress_card(completed: int, remaining: int, percentage: int) -> HtmlFragment:
+    return _fragment(f"""
+    <div class="nova-glass-card" style="padding: 20px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+            <span style="font-weight: 850; color: #0F172A; font-size: 0.95rem;">📊 Daily Revision Progress</span>
+            <span style="background: #DCFCE7; color: #15803D; font-weight: 850; font-size: 0.85rem; padding: 4px 12px; border-radius: 12px;">
+                {percentage}% Completed
+            </span>
+        </div>
+        <div style="width: 100%; background: #E2E8F0; height: 10px; border-radius: 5px; overflow: hidden; margin-bottom: 12px;">
+            <div style="width: {percentage}%; background: linear-gradient(90deg, #2563EB, #16A34A); height: 100%; transition: width 0.4s ease;"></div>
+        </div>
+        <div style="display: flex; justify-content: space-between; font-size: 0.88rem; font-weight: 750; color: #475569;">
+            <span>✅ Completed Today: <strong>{completed}</strong></span>
+            <span>⏳ Remaining: <strong>{remaining}</strong></span>
+        </div>
+    </div>
+    """)
+
+
+def learning_dna_grid(dna: dict) -> HtmlFragment:
+    dimensions = [
+        ("Knowledge", dna.get("knowledge", 5), "🧠"),
+        ("Memory", dna.get("memory", 4), "💡"),
+        ("Application", dna.get("application", 2), "⚙️"),
+        ("Analysis", dna.get("analysis", 1), "🔍"),
+        ("Speed", dna.get("speed", 4), "⚡"),
+        ("Accuracy", dna.get("accuracy", 3), "🎯"),
+        ("Consistency", dna.get("consistency", 5), "🔥"),
+        ("Revision Habit", dna.get("revision", 4), "📅"),
+    ]
+
+    cards_html = ""
+    for label, stars, icon in dimensions:
+        star_str = "★" * stars + "☆" * (5 - stars)
+        cards_html += f"""
+        <div style="background: rgba(248, 250, 252, 0.88); border: 1px solid #E2E8F0; border-radius: 14px; padding: 12px; text-align: center;">
+            <div style="font-size: 1.3rem; margin-bottom: 2px;">{icon}</div>
+            <div style="color: #475569; font-size: 0.78rem; font-weight: 800; text-transform: uppercase;">{html.escape(label)}</div>
+            <div style="color: #F59E0B; font-size: 1.05rem; font-weight: 900; margin-top: 4px;">{star_str}</div>
+        </div>
+        """
+
+    return _fragment(f"""
+    <div class="nova-glass-card" style="padding: 20px;">
+        <div style="font-size: 1.05rem; font-weight: 900; color: #0F172A; margin-bottom: 14px; display: flex; align-items: center; gap: 8px;">
+            <span>🧬 Learning DNA Profile</span>
+            <span style="font-size: 0.78rem; background: rgba(59, 130, 246, 0.12); color: #2563EB; padding: 2px 8px; border-radius: 999px; font-weight: 800;">8 Dimensions</span>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px;">
+            {cards_html}
+        </div>
+    </div>
+    """)
+
+
+def root_cause_bottleneck_card(root_cause: str, explanation: str, bottleneck: str) -> HtmlFragment:
+    rc = html.escape(str(root_cause))
+    exp = html.escape(str(explanation))
+    btn = html.escape(str(bottleneck))
+
+    return _fragment(f"""
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px;">
+        <div class="nova-glass-card" style="border-left: 5px solid #EF4444; padding: 20px;">
+            <div style="color: #DC2626; font-size: 0.78rem; font-weight: 850; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px;">
+                🔍 Root Cause Detected
+            </div>
+            <div style="color: #0F172A; font-size: 1.35rem; font-weight: 950; margin-bottom: 8px;">
+                {rc}
+            </div>
+            <div style="color: #475569; font-size: 0.9rem; line-height: 1.5; font-weight: 700;">
+                {exp}
+            </div>
+        </div>
+        <div class="nova-glass-card" style="border-left: 5px solid #F59E0B; padding: 20px;">
+            <div style="color: #D97706; font-size: 0.78rem; font-weight: 850; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px;">
+                ⚠️ Current Learning Bottleneck
+            </div>
+            <div style="color: #0F172A; font-size: 1.05rem; font-weight: 900; line-height: 1.4; margin-bottom: 8px; background: rgba(245, 158, 11, 0.1); padding: 8px 12px; border-radius: 10px; border: 1px solid rgba(245, 158, 11, 0.3);">
+                {btn}
+            </div>
+            <div style="color: #64748B; font-size: 0.85rem; font-weight: 750;">
+                The single largest obstacle preventing Topic Mastery.
+            </div>
+        </div>
+    </div>
+    """)
+
+
+def recovery_plan_timeline(steps: list, estimated_sessions: str) -> HtmlFragment:
+    steps_html = ""
+    for idx, s in enumerate(steps, 1):
+        steps_html += f"""
+        <div style="display: flex; align-items: center; gap: 12px; padding: 10px 14px; background: rgba(248, 250, 252, 0.9); border: 1px solid #E2E8F0; border-radius: 12px; margin-bottom: 8px;">
+            <span style="background: #2563EB; color: white; border-radius: 50%; width: 26px; height: 26px; display: grid; place-items: center; font-size: 0.82rem; font-weight: 900; flex-shrink: 0;">{idx}</span>
+            <span style="color: #0F172A; font-weight: 850; font-size: 0.92rem;">{html.escape(s)}</span>
+        </div>
+        """
+
+    est = html.escape(str(estimated_sessions))
+    return _fragment(f"""
+    <div class="nova-glass-card" style="padding: 20px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; flex-wrap: wrap; gap: 8px;">
+            <span style="font-size: 1.05rem; font-weight: 900; color: #0F172A;">🛠️ Actionable Recovery Plan</span>
+            <span style="background: #DBEAFE; color: #1E40AF; font-size: 0.82rem; font-weight: 850; padding: 4px 12px; border-radius: 999px;">
+                ⏱️ Estimated: {est}
+            </span>
+        </div>
+        <div>
+            {steps_html}
+        </div>
+    </div>
+    """)
+
+
+def mastery_probability_ring(current_pct: float, projected_pct: float) -> HtmlFragment:
+    c = round(current_pct, 1)
+    p = round(projected_pct, 1)
+
+    return _fragment(f"""
+    <div class="nova-glass-card" style="padding: 20px; text-align: center;">
+        <div style="font-size: 1.05rem; font-weight: 900; color: #0F172A; margin-bottom: 14px;">
+            📈 Projected Topic Mastery Probability
+        </div>
+        <div style="display: flex; justify-content: center; align-items: center; gap: 24px; flex-wrap: wrap;">
+            <div>
+                <div style="color: #64748B; font-size: 0.8rem; font-weight: 800; text-transform: uppercase;">Current Mastery</div>
+                <div style="color: #0F172A; font-size: 2rem; font-weight: 950; margin-top: 2px;">{c}%</div>
+            </div>
+            <div style="font-size: 1.8rem; color: #2563EB; font-weight: 900;">➜</div>
+            <div>
+                <div style="color: #166534; font-size: 0.8rem; font-weight: 800; text-transform: uppercase;">Expected Mastery</div>
+                <div style="color: #16A34A; font-size: 2.2rem; font-weight: 950; margin-top: 2px;">{p}%</div>
+            </div>
+        </div>
+        <div style="color: #64748B; font-size: 0.85rem; font-weight: 750; margin-top: 12px; background: rgba(34, 197, 94, 0.08); padding: 8px; border-radius: 8px; border: 1px solid rgba(34, 197, 94, 0.2);">
+            🎯 Completing the recommended recovery plan is expected to increase Topic Mastery to <strong>{p}%</strong>.
+        </div>
+    </div>
+    """)
+
+
+

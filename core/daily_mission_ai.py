@@ -1,19 +1,27 @@
 import datetime
+import logging
 
+from core.session import current_user_id, current_username
 from core.supabase_client import supabase
 from core.xp_ai import add_xp
 
+logger = logging.getLogger(__name__)
+
 TABLE = "daily_missions"
 DAILY_MISSION_REWARD_XP = 100
+
+
+from core.user_identity import resolve_user_id as _resolve_user_id
 
 
 def _today():
     return datetime.date.today().isoformat()
 
 
-def _mission_defaults(username, mission_date):
+def _mission_defaults(user_id, display_username, mission_date):
     return {
-        "username": username,
+        "user_id": user_id,
+        "username": display_username,
         "mission_date": mission_date,
         "daily_test_completed": False,
         "revision_count": 0,
@@ -22,14 +30,20 @@ def _mission_defaults(username, mission_date):
     }
 
 
-def get_today_mission(username):
-    """Get or create today's mission row for a user."""
+def get_today_mission(user=None):
+    """Get or create today's mission row for a user using user_id UUID."""
+    user_id = _resolve_user_id(user)
+    if not user_id:
+        logger.error(f"[DATA INTEGRITY ALERT] get_today_mission failed: user_id IS NULL for user={user}")
+        return _mission_defaults(None, "unknown", _today())
+
+    display_username = current_username() or (str(user) if user and not (len(str(user)) == 36 and str(user).count("-") == 4) else "unknown")
     mission_date = _today()
 
     response = (
         supabase.table(TABLE)
         .select("*")
-        .eq("username", username)
+        .eq("user_id", user_id)
         .eq("mission_date", mission_date)
         .limit(1)
         .execute()
@@ -37,17 +51,17 @@ def get_today_mission(username):
     rows = response.data or []
 
     if rows:
+        if rows[0].get("user_id") is None:
+            logger.warning(f"[DATA INTEGRITY ALERT] Daily mission record id={rows[0].get('id')} has user_id IS NULL!")
         return rows[0]
 
-    supabase.table(TABLE).upsert(
-        _mission_defaults(username, mission_date),
-        on_conflict="username,mission_date",
-    ).execute()
+    defaults = _mission_defaults(user_id, display_username, mission_date)
+    supabase.table(TABLE).insert(defaults).execute()
 
     response = (
         supabase.table(TABLE)
         .select("*")
-        .eq("username", username)
+        .eq("user_id", user_id)
         .eq("mission_date", mission_date)
         .limit(1)
         .execute()
@@ -55,22 +69,28 @@ def get_today_mission(username):
     rows = response.data or []
 
     if rows:
+        if rows[0].get("user_id") is None:
+            logger.warning(f"[DATA INTEGRITY ALERT] Daily mission record id={rows[0].get('id')} has user_id IS NULL!")
         return rows[0]
 
-    return _mission_defaults(username, mission_date)
+    return defaults
 
 
-def update_daily_test(username):
+def update_daily_test(user=None):
     """Mark today's daily test mission as complete."""
-    mission = get_today_mission(username)
+    mission = get_today_mission(user)
+    if not mission or not mission.get("id"):
+        return
 
     supabase.table(TABLE).update({"daily_test_completed": True}).eq(
         "id", mission["id"]
     ).execute()
 
 
-def _increment_today_field(username, field_name):
-    mission = get_today_mission(username)
+def _increment_today_field(user=None, field_name=""):
+    mission = get_today_mission(user)
+    if not mission or not mission.get("id"):
+        return
     current_value = int(mission.get(field_name) or 0)
 
     supabase.table(TABLE).update({field_name: current_value + 1}).eq(
@@ -78,19 +98,19 @@ def _increment_today_field(username, field_name):
     ).execute()
 
 
-def update_revision(username):
+def update_revision(user=None):
     """Increment today's completed revision count."""
-    _increment_today_field(username, "revision_count")
+    _increment_today_field(user, "revision_count")
 
 
-def update_question_count(username):
+def update_question_count(user=None):
     """Increment today's answered question count."""
-    _increment_today_field(username, "questions_answered")
+    _increment_today_field(user, "questions_answered")
 
 
-def get_mission_progress(username):
+def get_mission_progress(user=None):
     """Return today's daily mission progress."""
-    mission = get_today_mission(username)
+    mission = get_today_mission(user)
 
     daily_test_completed = bool(mission.get("daily_test_completed"))
     revision_count = int(mission.get("revision_count") or 0)
@@ -114,20 +134,28 @@ def get_mission_progress(username):
     }
 
 
-def mission_completed(username):
+def mission_completed(user=None):
     """Return True only when all three daily missions are complete."""
-    progress = get_mission_progress(username)
+    progress = get_mission_progress(user)
     return progress["completed_count"] == 3
 
 
-def claim_reward(username):
+def claim_reward(user=None):
     """Claim the daily mission reward once all missions are complete."""
-    mission = get_today_mission(username)
+    user_id = _resolve_user_id(user)
+    if not user_id:
+        logger.error(f"[DATA INTEGRITY ALERT] claim_reward failed: user_id IS NULL for user={user}")
+        return False
+
+    mission = get_today_mission(user_id)
+
+    if not mission or not mission.get("id"):
+        return False
 
     if bool(mission.get("reward_claimed")):
         return False
 
-    if not mission_completed(username):
+    if not mission_completed(user_id):
         return False
 
     response = (
@@ -141,6 +169,6 @@ def claim_reward(username):
     if not response.data:
         return False
 
-    add_xp(username, DAILY_MISSION_REWARD_XP, reward_type="daily_mission_completion")
+    add_xp(user_id, DAILY_MISSION_REWARD_XP, reward_type="daily_mission_completion")
 
     return True

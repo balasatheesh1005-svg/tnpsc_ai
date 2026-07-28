@@ -25,6 +25,8 @@ from ui.components.cards import (
     glass_card,
     glass_card_html,
     html_fragment,
+    latest_achievement_single_card,
+    mentor_personality_banner,
     metric_card,
     render_card_styles,
     section_title,
@@ -336,7 +338,7 @@ def _build_recommendation(accuracy, weak_subject, daily_streak):
 
 
 def render_dashboard():
-    # ---------- EXISTING DASHBOARD DATA ----------
+    # ---------- DATA EXTRACTION FROM REUSED ENGINES ----------
     user = st.session_state.get("username", "")
     notes_completed = len(st.session_state.get("completed_notes", []))
     tests_attempted = st.session_state.get("tests_attempted", 0)
@@ -347,44 +349,37 @@ def render_dashboard():
     daily_streak_value = int(_to_float(daily_streak))
     rank_value = int(_to_float(rank))
 
-    # ---------- XP & LEVEL DATA ----------
+    # Reused XP & Level Engine
     xp_data = get_user_xp(user)
     level_progress = get_level_progress(user)
     current_level = xp_data["level"]
     current_xp = xp_data["xp"]
-    xp_for_next = level_progress["xp_for_next"]
-    progress_percent = level_progress["progress_percent"]
+
+    # Reused Mission Engine
     mission_progress = get_mission_progress(user)
 
+    # Reused Weakness Engine
     weak_data = get_weakness(user)
-    progress_rows = get_progress(user)
-    progress_df = _build_progress_df(progress_rows)
-
     if weak_data:
         weak_topic = max(weak_data, key=weak_data.get)
         if "-" in weak_topic:
             raw_subject, raw_topic = weak_topic.split("-", 1)
-            weak_subject = (
-                f"{format_subject_name(raw_subject)} → {format_topic_name(raw_topic)}"
-            )
+            weak_subject = f"{format_subject_name(raw_subject)} → {format_topic_name(raw_topic)}"
         else:
             weak_subject = format_topic_name(weak_topic)
     else:
         weak_subject = "No Data"
 
-    accuracy_value = max(0, min(100, _to_float(accuracy)))
+    # Reused Progress Engine
+    progress_rows = get_progress(user)
+    progress_df = _build_progress_df(progress_rows)
+    accuracy_value = max(0.0, min(100.0, _to_float(accuracy)))
     strongest_subject, weakest_progress_subject = _get_subject_summary(progress_df)
     tests_this_week = _get_weekly_tests(progress_df)
-    average_score = (
-        round(progress_df["accuracy"].mean(), 1) if not progress_df.empty else 0
-    )
-    recommendation = _build_recommendation(
-        accuracy_value, weak_subject, daily_streak_value
-    )
+    average_score = round(progress_df["accuracy"].mean(), 1) if not progress_df.empty else 0
 
     chart_df = progress_df[["test_no", "accuracy"]].copy()
     latest_chart_df = chart_df.tail(10).reset_index(drop=True)
-
     if not latest_chart_df.empty:
         latest_chart_df = latest_chart_df.sort_values("test_no")
         current_accuracy = latest_chart_df["accuracy"].iloc[-1]
@@ -395,158 +390,128 @@ def render_dashboard():
         best_accuracy = 0
         average_accuracy = 0
 
-    achievements = [
-        (
-            "7 Day Streak",
-            "Maintain a 7 day study streak.",
-            daily_streak_value >= 7,
-            "gold",
-        ),
-        (
-            "Accuracy Above 80%",
-            "Reach 80% average accuracy.",
-            accuracy_value >= 80,
-            "silver",
-        ),
-        (
-            "10 Tests Completed",
-            "Complete 10 practice tests.",
-            tests_attempted_value >= 10,
-            "bronze",
-        ),
-        (
-            "50 Tests Completed",
-            "Complete 50 practice tests.",
-            tests_attempted_value >= 50,
-            "gold",
-        ),
-        ("Top 10 Rank", "Enter the leaderboard top 10.", 0 < rank_value <= 10, "gold"),
-        (
-            "🌟 Level 2",
-            "Reach Level 2 mastery.",
-            is_achievement_unlocked(user, "level_2"),
-            "silver",
-        ),
-        (
-            "⭐ Level 5",
-            "Reach Level 5 mastery.",
-            is_achievement_unlocked(user, "level_5"),
-            "gold",
-        ),
-        (
-            "🌠 Level 10",
-            "Reach Level 10 mastery.",
-            is_achievement_unlocked(user, "level_10"),
-            "gold",
-        ),
-    ]
-    unlocked_count = sum(
-        1 for _title, _description, unlocked, _level in achievements if unlocked
-    )
+    # Reused Revision Engine
+    revision_data = get_revision_overview(user)
+    due_today_count = len(revision_data.get("due_today", []))
+    overdue_count = len(revision_data.get("overdue", []))
+    total_due_count = due_today_count + overdue_count
 
+    # Reused Achievements Engine
+    achievements = [
+        ("7 Day Streak", "Maintain a 7 day study streak.", daily_streak_value >= 7, "gold"),
+        ("Accuracy Above 80%", "Reach 80% average accuracy.", accuracy_value >= 80, "silver"),
+        ("10 Tests Completed", "Complete 10 practice tests.", tests_attempted_value >= 10, "bronze"),
+        ("50 Tests Completed", "Complete 50 practice tests.", tests_attempted_value >= 50, "gold"),
+        ("Top 10 Rank", "Enter the leaderboard top 10.", 0 < rank_value <= 10, "gold"),
+        ("🌟 Level 2", "Reach Level 2 mastery.", is_achievement_unlocked(user, "level_2"), "silver"),
+        ("⭐ Level 5", "Reach Level 5 mastery.", is_achievement_unlocked(user, "level_5"), "gold"),
+        ("🌠 Level 10", "Reach Level 10 mastery.", is_achievement_unlocked(user, "level_10"), "gold"),
+    ]
+    unlocked_achievements = [a for a in achievements if a[2]]
+    latest_achievement = unlocked_achievements[-1] if unlocked_achievements else None
+
+    # ---------- RENDER THEMES & STYLES ----------
     render_theme_css()
     render_header_styles()
     render_card_styles()
 
-    with st.spinner("⏳ Loading Mentor Insights..."):
-        render_dashboard_hero(user, rank_value, accuracy_value, daily_streak_value)
+    # ---------- PERSONALITY: ONE MENTOR MESSAGE ----------
+    if daily_streak_value >= 7:
+        mentor_msg = "Excellent consistency."
+    elif tests_attempted_value >= 20:
+        mentor_msg = "Only two repositories remain."
+    elif accuracy_value >= 80:
+        mentor_msg = "Today is perfect for Grand Test."
+    elif daily_streak_value >= 1:
+        mentor_msg = "Keep your streak alive."
+    else:
+        mentor_msg = "Focus on your weakest subject today to boost overall accuracy."
 
-    if not progress_rows and not weak_data:
+    st.html(mentor_personality_banner(mentor_msg).markup)
+
+    # ---------- HERO TITLE & SUMMARY ----------
+    render_dashboard_hero(user, rank_value, accuracy_value, daily_streak_value)
+
+    # ---------- 8 MANDATORY DASHBOARD CARDS ----------
+    section_title("Personalized Learning Intelligence", "What should I study today?")
+
+    # 1. Today's Recommendation
+    if total_due_count > 0:
+        top_due = revision_data["due_today"][0] if revision_data["due_today"] else revision_data["overdue"][0]
+        rec_title = f"📖 Revise {format_topic_name(top_due.get('topic', 'Topic'))}"
+        rec_body = f"Scheduled for today in Spaced Repetition queue ({total_due_count} topics pending)."
+    elif weak_subject != "No Data":
+        rec_title = f"📝 Continue {weak_subject}"
+        rec_body = "Target your highest weakness topic to boost overall accuracy."
+    else:
+        rec_title = "🏆 Attempt Grand Test"
+        rec_body = "Outstanding consistency! Take a full Grand Test to challenge mastery."
+
+    # 2. Today's Goal
+    try:
+        smart_cfg = get_test_config(user, mode="smart")
+        goal_title_text = f"Complete {format_subject_name(smart_cfg.get('subject', 'Polity'))}"
+    except Exception:
+        goal_title_text = "Complete Hard Repository"
+    goal_time_text = "Estimated 20 Minutes"
+
+    # Row 1: Recommendation & Goal
+    col_rec, col_goal = st.columns([1, 1], gap="small")
+    with col_rec:
         glass_card(
-            "ðŸŒ± No Data Yet",
-            value="Start your first test",
-            body="Your dashboard insights will appear here after you complete practice.",
+            "📖 Today's Recommendation",
+            value=rec_title,
+            body=rec_body,
         )
-
-    section_title("Your Performance", "Live stats")
-    metric_rows = [
-        [
-            ("streak", "🔥 Streak", f"{daily_streak_value} days", "Daily consistency"),
-            ("accuracy", "🎯 Accuracy", f"{accuracy_value:g}%", "Practice quality"),
-        ],
-        [
-            (
-                "rank",
-                "🏆 Rank",
-                f"#{rank_value}" if rank_value else "Not ranked",
-                "Leaderboard",
-            ),
-            ("tests", "📚 Tests Attempted", tests_attempted_value, "Mock practice"),
-        ],
-    ]
-
-    for row in metric_rows:
-        col1, col2 = st.columns(2, gap="small")
-        for col, (theme, label, value, delta) in zip((col1, col2), row):
-            with col:
-                metric_card(theme, label, value, delta)
-
-    col_focus, col_gauge = st.columns([1, 1], gap="small")
-    with col_focus:
+    with col_goal:
         glass_card(
-            "🎯 Today's Focus",
-            value=weak_subject,
-            body="Highest weakness topic from your current dashboard data.",
+            "🎯 Today's Goal",
+            value=goal_title_text,
+            body=f"⏱️ {goal_time_text} • Based on repository progress",
         )
 
-    with col_gauge:
+    # Row 2: Weakest, Strongest, Revision Due
+    col_weak, col_strong, col_rev = st.columns([1, 1, 1], gap="small")
+    with col_weak:
         glass_card(
-            "🧭 Accuracy Gauge",
-            extra_html=accuracy_gauge(
-                accuracy_value,
-                "Current average accuracy from your dashboard performance.",
-            ),
+            "⚠️ Weakest Subject",
+            value=weak_subject if weak_subject != "No Data" else "No Major Weakness",
+            body=f"Accuracy: {average_score:g}% (Reuse Weakness Engine)" if weak_subject != "No Data" else "Complete diagnostic test",
+        )
+    with col_strong:
+        glass_card(
+            "💪 Strongest Subject",
+            value=strongest_subject if strongest_subject != "No Data" else "Building Strength",
+            body=f"Accuracy: {best_accuracy:g}% (Reuse Progress data)" if strongest_subject != "No Data" else "Keep practicing tests",
+        )
+    with col_rev:
+        glass_card(
+            "📅 Revision Due",
+            value=f"{total_due_count} Topics",
+            body="Scheduled Today (Reuse Revision Engine)",
         )
 
-    col_next, col_xp, col_mission = st.columns(3, gap="small")
-    with col_next:
-        _render_next_topic_card(user)
-
-    with col_xp:
-        xp_card_html = (
-            '<div style="'
-            "background: linear-gradient(135deg, rgba(251, 191, 36, 0.1) 0%, rgba(245, 158, 11, 0.1) 100%);"
-            "border: 1.5px solid rgba(245, 158, 11, 0.3);"
-            "border-radius: 18px;"
-            "padding: 24px;"
-            "backdrop-filter: blur(14px);"
-            "position: relative;"
-            'overflow: hidden;">'
-            '<div style="position: absolute; top: -40px; right: -40px; width: 120px; height: 120px; '
-            "background: radial-gradient(circle, rgba(251, 191, 36, 0.15) 0%, transparent 70%);"
-            'border-radius: 50%; pointer-events: none;"></div>'
-            '<div style="position: relative; z-index: 2;">'
-            '<p style="color: rgba(79, 70, 229, 0.7); font-size: 0.9rem; font-weight: 600; margin: 0 0 8px 0;">⭐ XP & LEVEL</p>'
-            f'<p style="color: #1f2937; font-size: 2rem; font-weight: 900; margin: 0 0 4px 0;">Level {current_level}</p>'
-            f'<p style="color: rgba(79, 70, 229, 0.8); font-size: 0.95rem; margin: 12px 0 16px 0;">📊 {current_xp} / {level_progress["next_level_target"]} XP</p>'
-            '<div style="background: rgba(255, 255, 255, 0.4); border-radius: 999px; height: 8px; margin: 12px 0; overflow: hidden;">'
-            f'<div style="background: linear-gradient(90deg, #fbbf24 0%, #f59e0b 100%); width: {progress_percent}%; height: 100%; border-radius: 999px;"></div>'
-            "</div>"
-            f'<p style="color: rgba(79, 70, 229, 0.7); font-size: 0.85rem; margin: 8px 0 0 0;">➜ {xp_for_next} XP to Level {level_progress["next_level"]}</p>'
-            "</div>"
-            "</div>"
-        )
-        st.html(xp_card_html)
-
+    # Row 3: Daily Mission, Current Streak, Latest Achievement
+    col_mission, col_streak, col_achieve = st.columns([1, 1, 1], gap="small")
     with col_mission:
         _render_daily_mission_card(user, mission_progress)
+    with col_streak:
+        glass_card(
+            "🔥 Current Streak",
+            value=f"{daily_streak_value} Days",
+            body="Reuse Streak Engine • Daily momentum",
+        )
+    with col_achieve:
+        if latest_achievement:
+            st.html(latest_achievement_single_card(latest_achievement[0], latest_achievement[1], latest_achievement[3]).markup)
+        else:
+            glass_card(
+                "🏆 Latest Achievement",
+                value="First Step",
+                body="Complete your first test to unlock achievements!",
+            )
 
-    due_revisions = get_queue_revisions(user)
-    revision_data = get_revision_overview(user)
-    due_count = get_revision_count(user)
-    overdue_count = len(revision_data["overdue"])
-    due_today_count = len(revision_data["due_today"])
-    upcoming_count = len(revision_data["upcoming"])
-    total_queue = revision_data["total"]
-
-    next_item = revision_data["queue"][0] if revision_data["queue"] else None
-    next_due_text = (
-        _date_label(next_item["next_due"]) if next_item else "No upcoming revisions"
-    )
-    next_topic_text = (
-        _format_revision_label(next_item) if next_item else "All caught up"
-    )
-
+    # ---------- DETAILED ENGINE PANELS ----------
     section_title("Smart Revision Scheduler", "Due Today · Overdue · Upcoming")
     scheduler_html = (
         '<div class="revision-grid">'
@@ -568,7 +533,7 @@ def render_dashboard():
         )
         + glass_card_html(
             "🔮 Upcoming",
-            value=upcoming_count,
+            value=len(revision_data["upcoming"]),
             body="What is next in your spaced repetition queue.",
             extra_html=html_fragment(
                 _render_revision_list_items(revision_data["upcoming"])
@@ -578,45 +543,12 @@ def render_dashboard():
     )
     st.html(scheduler_html)
 
-    queue_html = glass_card_html(
-        "📚 Revision Queue",
-        value=total_queue,
-        body="Pending Revisions",
-        extra_html=html_fragment(
-            '<p class="nova-card-copy">🔥 Keep your weak topics fresh</p>'
-            + _render_revision_list_items(revision_data["queue"], max_items=6)
-        ),
-    )
-    st.html(queue_html)
-
-    dashboard_revision_html = glass_card_html(
-        "📅 Next Revision",
-        value=html.escape(next_topic_text),
-        body=(
-            f"🗓 Due: {html.escape(_date_display(next_item['next_due']))}"
-            if next_item
-            else "🎉 No revisions pending"
-        ),
-        extra_html=html_fragment(
-            (
-                f'<p class="nova-card-copy">⭐ Level {html.escape(str(next_item["level"]))}</p>'
-                '<a class="revision-start-button">🚀 Start Revision</a>'
-                if next_item
-                else ""
-            )
-        ),
-    )
-    st.html(dashboard_revision_html)
-
-    section_title("Progress Overview", "Accuracy trend")
+    section_title("Progress Analytics", "Accuracy trend & history")
     with st.container(border=True):
         st.markdown("#### 📈 Accuracy Trend")
         if latest_chart_df.empty:
-            st.info(
-                "No users_progress records yet. Complete a test to unlock your trend chart."
-            )
+            st.info("No users_progress records yet. Complete a test to unlock your trend chart.")
         else:
-            st.markdown("#### 📊 Trend Summary")
             st.html(
                 analytics_grid(
                     [
@@ -626,100 +558,30 @@ def render_dashboard():
                     ]
                 ).markup
             )
-
             line = (
                 alt.Chart(latest_chart_df)
-                .mark_line(
-                    interpolate="monotone",
-                    color="#2563EB",
-                    strokeWidth=3,
-                )
+                .mark_line(interpolate="monotone", color="#2563EB", strokeWidth=3)
                 .encode(
                     x=alt.X("test_no:Q", title="Test #", axis=alt.Axis(tickMinStep=1)),
-                    y=alt.Y(
-                        "accuracy:Q",
-                        title="Accuracy",
-                        scale=alt.Scale(domain=[0, 100]),
-                    ),
+                    y=alt.Y("accuracy:Q", title="Accuracy", scale=alt.Scale(domain=[0, 100])),
                     tooltip=[
                         alt.Tooltip("test_no:Q", title="Test Number"),
                         alt.Tooltip("accuracy:Q", title="Accuracy", format=".1f"),
                     ],
                 )
             )
-
             area = (
                 alt.Chart(latest_chart_df)
-                .mark_area(
-                    interpolate="monotone",
-                    opacity=0.16,
-                    color="#3B82F6",
-                )
-                .encode(
-                    x="test_no:Q",
-                    y="accuracy:Q",
-                )
+                .mark_area(interpolate="monotone", opacity=0.16, color="#3B82F6")
+                .encode(x="test_no:Q", y="accuracy:Q")
             )
-
             target_line = (
                 alt.Chart(pd.DataFrame({"target": [75]}))
-                .mark_rule(
-                    color="#2563EB",
-                    strokeDash=[4, 4],
-                    size=2,
-                )
+                .mark_rule(color="#2563EB", strokeDash=[4, 4], size=2)
                 .encode(y="target:Q")
             )
-
-            chart = (
-                alt.layer(area, line, target_line)
-                .properties(
-                    height=300,
-                    width="container",
-                )
-                .configure_view(strokeOpacity=0)
-            )
-
+            chart = alt.layer(area, line, target_line).properties(height=280, width="container").configure_view(strokeOpacity=0)
             st.altair_chart(chart, use_container_width=True)
-
-    analytics_html = glass_card_html(
-        "📊 Weekly Analytics",
-        extra_html=analytics_grid(
-            [
-                ("Tests This Week", tests_this_week),
-                ("Average Score", f"{average_score:g}%"),
-                ("Best Subject", strongest_subject),
-                ("Weakest Subject", weakest_progress_subject),
-            ]
-        ),
-    )
-    st.html(analytics_html)
-
-    col_subject, col_consistency = st.columns([1, 1], gap="small")
-    with col_subject:
-        glass_card(
-            "💪 Strongest Subject",
-            value=strongest_subject,
-            body="Based on highest average accuracy in users_progress.",
-        )
-
-    with col_consistency:
-        consistency_note = (
-            "Excellent consistency. Keep protecting this streak."
-            if daily_streak_value >= 7
-            else "Build toward a 7 day streak with one focused session daily."
-        )
-        glass_card(
-            "🔥 Study Consistency",
-            value=f"{daily_streak_value} days",
-            body=consistency_note,
-            extra_html=html_fragment(
-                '<div class="mini-stat">'
-                f'<p class="nova-card-copy">Tests completed: {tests_attempted_value}</p>'
-                f'<p class="nova-card-copy">Notes completed: {notes_completed}</p>'
-                "</div>"
-            ),
-        )
 
     mentor_data = mentor_insights(
         accuracy_value,
@@ -727,11 +589,10 @@ def render_dashboard():
         weak_subject,
         strongest_subject,
         tests_attempted_value,
-        due_revisions=len(due_revisions),
+        due_revisions=len(revision_data.get("due_today", [])),
     )
-
     mentor_html = study_plan_card_html(
-        "🧠 Personal Mentor",
+        "🧠 Personal Mentor Strategy",
         revision=mentor_data["revision"],
         practice=mentor_data["practice"],
         goal=mentor_data["goal"],
@@ -740,24 +601,3 @@ def render_dashboard():
     )
     st.html(mentor_html)
 
-    achievement_html = glass_card_html(
-        "🏅 Achievements",
-        body=f"{unlocked_count} of {len(achievements)} unlocked",
-        extra_html=achievement_grid(achievements),
-    )
-    st.html(achievement_html)
-
-    revision_text = (
-        f"Review {weak_subject} and complete high-priority revisions."
-        if weak_subject != "No Data"
-        else "Complete a diagnostic test and prioritize your revision plan."
-    )
-    recommendation_html = study_plan_card_html(
-        "🧠 AI Study Plan",
-        revision=revision_text,
-        practice="Take a Short Daily Test",
-        goal="Reach 75%+ Accuracy",
-        estimated_time="15 Minutes",
-        raw_recommendation=recommendation,
-    )
-    st.html(recommendation_html)

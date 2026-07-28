@@ -82,6 +82,80 @@ from core.progress_ai import get_progress
 from core.test_topic_selector import get_test_config
 from core.test_weakness import handle_correct_answer, handle_wrong_answer
 from ui.dashboard import render_dashboard
+from ui.revision.dashboard import render_revision_dashboard
+from ui.intelligence.dashboard import render_learning_intelligence_dashboard
+from streamlit_option_menu import option_menu
+from core.dashboard_stats_ai import get_dashboard_stats
+from ui.pages.daily_test_renderer import render_explanation_next, render_question
+from ui.pages.leaderboard import render_leaderboard
+from ui.pages.mentor import render_mentor
+from ui.pages.notes import render_notes_page
+
+
+# ---------------- UI HELPERS ----------------
+def section(title):
+    st.markdown(
+        f"""
+    <div style="
+    background:#ffffff;
+    padding:15px;
+    border-radius:12px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom:15px;">
+    <h3>{title}</h3>
+    </div>
+    """,
+        unsafe_allow_html=True,
+    )
+
+
+def show_friendly_error(message=None):
+    st.warning(message or "Something went wrong. Please try again.")
+
+
+def safe_call(callback, fallback=None, message=None):
+    try:
+        return callback()
+    except Exception as e:
+        import traceback
+
+        st.code(traceback.format_exc())
+        return fallback
+
+
+def default_dashboard_stats():
+    return {
+        "tests_attempted": 0,
+        "accuracy": 0,
+        "streak": 0,
+        "rank": 0,
+        "weak_subject": "No Data",
+        "xp": 0,
+        "level": 1,
+        "level_progress": {},
+    }
+
+
+# ---------------- CONFIG ----------------
+st.set_page_config(
+    page_title="TNPSC Nova AI", page_icon="assets/app_icon.png", layout="wide"
+)
+# ---------------- STYLE ----------------
+render_theme_css()
+
+# ---------------- IMPORTS ----------------
+from core.question_loader import load_questions
+from core.daily_mission_ai import (
+    update_daily_test,
+    update_revision as update_daily_mission_revision,
+)
+from core.test_completion import complete_test
+from core.test_evaluator import evaluate_answer
+from core.test_revision import handle_correct_revision, handle_wrong_revision
+from core.progress_ai import get_progress
+from core.test_topic_selector import get_test_config
+from core.test_weakness import handle_correct_answer, handle_wrong_answer
+from ui.dashboard import render_dashboard
 from streamlit_option_menu import option_menu
 from core.dashboard_stats_ai import get_dashboard_stats
 from ui.pages.daily_test_renderer import render_explanation_next, render_question
@@ -94,9 +168,22 @@ from ui.pages.progress import render_progress_page
 from ui.pages.teacher import render_teacher
 from ui.pages.weakness import render_weakness_page
 from ui.pyq.dashboard import render_pyq_dashboard
+from core.navigation_v2.navigation_state import (
+    init_navigation_state,
+    get_selected_subject,
+    get_selected_topic,
+    get_selected_topic_key,
+    set_global_topic,
+    clear_selected_subject,
+    clear_selected_topic,
+)
+from ui.navigation_v2.subject_selector import render_subject_selector
+from ui.navigation_v2.topic_selector import render_topic_selector
+from ui.navigation_v2.topic_hub import render_topic_hub
 
 # ---------------- AUTHENTICATION ----------------
 restore_auth_session()
+
 
 if not is_authenticated():
     st.markdown(
@@ -317,28 +404,23 @@ else:
     user = username
     dashboard_stats = safe_call(
         lambda: get_dashboard_stats(username),
-        fallback=default_dashboard_stats(),
-        message=get_recent_error_message() or "Something went wrong. Please try again.",
+        fallback=default_dashboard_stats()
     )
-
-    recent_error = get_recent_error_message()
-    if recent_error:
-        show_friendly_error(recent_error)
 
     st.session_state["tests_attempted"] = dashboard_stats.get("tests_attempted", 0)
 
     st.session_state["accuracy"] = dashboard_stats.get("accuracy", 0)
 
     st.session_state["streak"] = dashboard_stats.get("streak", 0)
-
     st.session_state["rank"] = dashboard_stats.get("rank", 0)
-
     st.session_state["weak_subject"] = dashboard_stats.get("weak_subject", "No Data")
 
     fetched_lv = dashboard_stats.get("level", 1)
     if "xp_level" in st.session_state and fetched_lv > st.session_state["xp_level"]:
         st.session_state["xp_level_up"] = True
     st.session_state["xp_level"] = fetched_lv
+
+
 # ---------------- SESSION INIT ----------------
 
 
@@ -364,10 +446,12 @@ def initialize_session_state():
         "xp_level": 1,
         "xp_level_up": False,
         "test_start_xp": 0,
+        "study_stage": "notes",
     }
     for key, val in defaults.items():
         if key not in st.session_state:
             st.session_state[key] = val
+    init_navigation_state()
 
 
 initialize_session_state()
@@ -378,6 +462,8 @@ MENU_OPTIONS = [
     "PYQ",
     "📚 Notes",
     "🧠 Weakness",
+    "🔄 Smart Revision",
+    "🧬 Learning Intelligence",
     "📊 Progress",
     "🏆 Leaderboard",
     "🤖 AI Teacher",
@@ -421,6 +507,8 @@ with st.sidebar:
             "journal-text",
             "book",
             "brain",
+            "arrow-repeat",
+            "cpu",
             "bar-chart",
             "trophy",
             "robot",
@@ -461,57 +549,9 @@ with st.sidebar:
 
     st.session_state["main_menu"] = selected
 
-    # Auto-close sidebar on mobile after menu item selection
-    # This script runs on every render, but the JS itself checks conditions
-    st.markdown(
-        """
-        <script>
-            // Function to close the sidebar
-            function closeSidebarOnMobile() {
-                // Check if we are on a mobile device (sidebar is collapsible)
-                if (window.innerWidth < 768) { // Common mobile breakpoint
-                    const sidebar = window.parent.document.querySelector('[data-testid="stSidebar"]');
-                    // Check if sidebar is currently expanded (open)
-                    if (sidebar && sidebar.getAttribute('aria-expanded') === 'true') {
-                        const collapseButton = sidebar.querySelector('[data-testid="stSidebarNavCollapseButton"]');
-                        if (collapseButton) {
-                            collapseButton.click(); // Programmatically click the collapse button
-                        }
-                    }
-                }
-            }
-            setTimeout(closeSidebarOnMobile, 100); // Small delay to ensure DOM is updated after potential re-render
-        </script>
-        """,
-        unsafe_allow_html=True,
-    )
-
-
-def get_color(score):
-    if score < 50:
-        return "red"
-    elif score < 75:
-        return "orange"
-    else:
-        return "green"
-
-
-import time
-
-
-def typing_effect(text):
-    placeholder = st.empty()
-    output = ""
-
-    for char in text:
-        output += char
-        placeholder.markdown(output)
-        time.sleep(0.01)
-
 
 def render_today_topic_card(user):
     """Display the daily recommended topic card before the test starts."""
-    # Cache config once to ensure "No random mismatch" across reruns
     if "daily_test_config" not in st.session_state:
         st.session_state.daily_test_config = get_test_config(user)
 
@@ -526,9 +566,8 @@ def render_today_topic_card(user):
         else "💰" if subj_lower == "economy" else "📚"
     )
 
-    # Create the glass card with analytics grid
     card_html = glass_card_html(
-        "📘 Today's Topic",
+        "📘 Today's Recommended Topic",
         value=topic_display,
         body="",
         extra_html=analytics_grid(
@@ -546,8 +585,19 @@ def render_today_topic_card(user):
 
 # ---------------- HOME ----------------
 if selected == "🏠 Home":
-    with st.spinner("⏳ Loading Dashboard..."):
-        safe_call(render_dashboard)
+    nav_view = st.session_state.get("nav_view", "topic_hub")
+    render_card_styles()
+    
+    if nav_view == "subject_select":
+        render_subject_selector()
+    elif nav_view == "topic_select":
+        render_topic_selector()
+    else:
+        t_hub, t_dash = st.tabs(["📚 Study Hub", "📊 Performance Dashboard"])
+        with t_hub:
+            render_topic_hub(user)
+        with t_dash:
+            safe_call(render_dashboard)
 
 
 # ---------------- DAILY TEST ----------------
@@ -606,7 +656,6 @@ elif selected == "📘 Daily Test":
                         "test_start_xp": st.session_state.get("xp", 0),
                     }
                 )
-            # Use the cached config to ensure the same topic is loaded
             if "daily_test_config" in st.session_state:
                 test_config = st.session_state.daily_test_config
             else:
@@ -624,6 +673,7 @@ elif selected == "📘 Daily Test":
                 st.stop()
             st.session_state.test_qs = random.sample(questions, min(10, len(questions)))
             st.rerun()
+
     # 🔥 WEAK TEST
     with col2:
         if st.button("🔥 Practice Weak Topics", disabled=is_active):
@@ -649,6 +699,7 @@ elif selected == "📘 Daily Test":
                 st.stop()
             st.session_state.test_qs = random.sample(questions, min(5, len(questions)))
             st.rerun()
+
     with col3:
         if st.button("📚 Start Revision Test", disabled=is_active):
             with st.spinner("⏳ Fetching Revision Queue..."):
@@ -684,16 +735,19 @@ elif selected == "📘 Daily Test":
         st.warning("No questions loaded")
         st.stop()
 
-    if st.session_state.q_index < len(st.session_state.test_qs):
+    total_q = len(st.session_state.get("test_qs", []))
+    if st.session_state.q_index < total_q:
         q = st.session_state.test_qs[st.session_state.q_index]
-        selected, options = render_question(q)
+        selected_ans, options = render_question(q)
 
         # ---------------- SUBMIT ----------------
-        if not st.session_state.answered:  # Hide Submit button after submission
-            if st.button("Submit Answer"):
+        if not st.session_state.answered:
+            if st.button("Submit Answer", type="primary", use_container_width=True):
+                selected_key = selected_ans.split(".", 1)[0] if selected_ans else ""
+                st.session_state["last_selected_option"] = selected_key
 
                 result = evaluate_answer(
-                    selected,
+                    selected_ans,
                     options,
                     q,
                     user,
@@ -718,8 +772,7 @@ elif selected == "📘 Daily Test":
         if st.session_state.answered:
             render_explanation_next(q)
 
-    total_q = len(st.session_state.get("test_qs", []))
-    if st.session_state.q_index >= total_q and total_q > 0:
+    elif total_q > 0:
         total = st.session_state.get("score", 0)
         percent = int((total / total_q) * 100)
 
@@ -735,220 +788,31 @@ elif selected == "📘 Daily Test":
             elif st.session_state.test_mode == "revision":
                 update_daily_mission_revision(user)
 
-            # 🔥 REFRESH DASHBOARD STATS & DETECT LEVEL UP
+            # Refresh Dashboard Stats
             old_level = st.session_state.get("xp_level", 1)
-
             dashboard_stats = safe_call(
                 lambda: get_dashboard_stats(username),
                 fallback=default_dashboard_stats(),
-                message=get_recent_error_message()
-                or "Something went wrong. Please try again.",
             )
-            st.session_state["tests_attempted"] = dashboard_stats.get(
-                "tests_attempted", 0
-            )
-            st.session_state["accuracy"] = dashboard_stats.get("accuracy", 0)
-            st.session_state["streak"] = dashboard_stats.get("streak", 0)
-            st.session_state["rank"] = dashboard_stats.get("rank", 0)
-            st.session_state["weak_subject"] = dashboard_stats.get(
-                "weak_subject", "No Data"
-            )
-            st.session_state["xp"] = dashboard_stats.get("xp", 0)
+            if dashboard_stats:
+                st.session_state["tests_attempted"] = dashboard_stats.get("tests_attempted", 0)
+                st.session_state["accuracy"] = dashboard_stats.get("accuracy", 0)
+                st.session_state["streak"] = dashboard_stats.get("streak", 0)
+                st.session_state["rank"] = dashboard_stats.get("rank", 0)
+                st.session_state["weak_subject"] = dashboard_stats.get("weak_subject", "No Data")
+                st.session_state["xp"] = dashboard_stats.get("xp", 0)
+                new_level = dashboard_stats.get("level", 1)
+                if new_level > old_level:
+                    st.session_state["xp_level_up"] = True
+                st.session_state["xp_level"] = new_level
 
-            new_level = dashboard_stats.get("level", 1)
-            if new_level > old_level:
-                st.session_state["xp_level_up"] = True
-            st.session_state["xp_level"] = new_level
-
-            # 🏆 LEVEL UP CELEBRATION
             if st.session_state.get("xp_level_up"):
                 st.balloons()
-                st.success(
-                    f"🎉 LEVEL UP!\n\n🏆 Reached Level {st.session_state['xp_level']}"
-                )
+                st.success(f"🎉 LEVEL UP!\n\n🏆 Reached Level {st.session_state['xp_level']}")
                 st.session_state["xp_level_up"] = False
 
             st.session_state.test_results_processed = True
             st.session_state.test_active = False
-
-    # ---------------- RESULT ----------------
-    if st.session_state.q_index >= total_q and total_q > 0:
-        total = st.session_state.get("score", 0)
-        percent = int((total / total_q) * 100)
-        # ==========================================
-        # TEST COMPLETED
-        # ==========================================
-
-        st.markdown(
-            f"""
-            <div class="progress-header">
-                <div class="progress-details">
-                    <span class="progress-pill">🎉 Test Completed</span>
-                    <span class="progress-pill">Score: {total} / {total_q}</span>
-                </div>
-                <span class="progress-pill">Accuracy: {percent}%</span>
-            </div>
-            """,
-            unsafe_allow_html=True,
-        )
-
-        weak_topic = st.session_state.get("weak_subject", "No Data")
-        progress_rows = get_progress(user)
-        strong_topic = "No Data"
-        if progress_rows:
-            topic_scores = {}
-            for row in progress_rows:
-                topic = row.get("topic") or row.get("subject") or "No Data"
-                try:
-                    acc = float(row.get("accuracy", 0))
-                except (TypeError, ValueError):
-                    acc = 0.0
-                topic_scores.setdefault(topic, []).append(acc)
-            if topic_scores:
-                strong_topic = max(
-                    topic_scores,
-                    key=lambda topic: sum(topic_scores[topic])
-                    / len(topic_scores[topic]),
-                )
-
-        xp_earned = st.session_state.get("xp", 0) - st.session_state.get(
-            "test_start_xp", 0
-        )
-        show_weak = True
-        weak_success_html = ""
-
-        if percent >= 90:
-            show_weak = False
-            weak_success_html = (
-                '<div class="answer-feedback correct">'
-                "<strong>🎉 No Weak Topics Detected</strong><br>"
-                '<span class="nova-card-copy">Only strong topics remain based on your excellent accuracy.</span>'
-                "</div>"
-            )
-        elif weak_topic in (None, "No Data"):
-            show_weak = False
-            weak_success_html = (
-                '<div class="answer-feedback correct">'
-                "<strong>🎉 Excellent Performance</strong><br>"
-                '<span class="nova-card-copy">No weak topics identified in this test.</span>'
-                "</div>"
-            )
-        elif weak_topic == strong_topic:
-            show_weak = False
-            weak_success_html = ""
-
-        summary_items = [
-            ("🔥 Streak", f"{st.session_state.get('streak', 0)} days"),
-            (f"🎉 +{xp_earned} XP Earned", ""),
-            ("💪 Strong Topic", strong_topic),
-        ]
-        if show_weak and weak_topic not in (None, "No Data"):
-            summary_items.insert(2, ("📚 Weak Topic", weak_topic))
-
-        summary_html = glass_card_html(
-            "🎉 Test Completed",
-            value=f"{total} / {total_q}",
-            body="",
-            extra_html=html_fragment(
-                f'<div class="success-pill">🏆 Accuracy {percent}%</div>'
-                + analytics_grid(summary_items).markup
-                + weak_success_html
-            ),
-        )
-        st.html(summary_html)
-
-        st.markdown("### Next Steps")
-        btn1, btn2 = st.columns(2, gap="small")
-        with btn1:
-            if st.button("📚 Revise Weak Topics", key="completion_revision_test"):
-                test_config = get_test_config(user, mode="revision")
-                subject = test_config["subject"]
-                topic = test_config["topic"]
-                level = test_config["level"]
-                questions = load_questions(subject, topic, level)
-                if not questions:
-                    st.error("No revision questions found")
-                else:
-                    st.session_state.test_subject = subject
-                    st.session_state.test_topic = topic
-                    st.session_state.test_qs = random.sample(
-                        questions, min(5, len(questions))
-                    )
-                    st.session_state.q_index = 0
-                    st.session_state.score = 0
-                    st.session_state.answered = False
-                    st.session_state.test_mode = "revision"
-                    st.session_state.daily_mission_test_recorded = False
-                    st.session_state.daily_mission_revision_recorded = False
-                    st.session_state.test_active = True
-                    st.session_state.start_time = time.time()
-                    st.session_state.test_start_xp = st.session_state.get("xp", 0)
-                    st.experimental_rerun()
-        with btn2:
-            if st.button("🚀 Start New Test", key="completion_next_test"):
-                test_config = get_test_config(user)
-                subject = test_config["subject"]
-                topic = test_config["topic"]
-                level = test_config["level"]
-                questions = load_questions(subject, topic, level)
-                if not questions:
-                    st.error("No questions found")
-                else:
-                    st.session_state.test_subject = subject
-                    st.session_state.test_topic = topic
-                    st.session_state.test_qs = random.sample(
-                        questions, min(20, len(questions))
-                    )
-                    st.session_state.q_index = 0
-                    st.session_state.score = 0
-                    st.session_state.answered = False
-                    st.session_state.test_mode = "daily"
-                    st.session_state.daily_mission_test_recorded = False
-                    st.session_state.daily_mission_revision_recorded = False
-                    st.session_state.test_active = True
-                    st.session_state.start_time = time.time()
-                    st.session_state.test_start_xp = st.session_state.get("xp", 0)
-                    st.experimental_rerun()
-
-        # ==========================================
-        # 🏆 RANK PREDICTION
-        # ==========================================
-
-        def predict_rank(percent):
-
-            if percent >= 90:
-                return "Top 1-100 Rank"
-
-            elif percent >= 75:
-                return "Top 500 Rank"
-
-            elif percent >= 60:
-                return "Top 2000 Rank"
-
-            else:
-                return "Needs Improvement"
-
-        rank = predict_rank(percent)
-
-        if st.session_state.get("test_mode") in [
-            "daily",
-            "notes_practice",
-        ] and not st.session_state.get("daily_mission_test_recorded", False):
-            update_daily_test(user)
-            st.session_state.daily_mission_test_recorded = True
-
-        if st.session_state.get("test_mode") == "revision" and not st.session_state.get(
-            "daily_mission_revision_recorded", False
-        ):
-            update_daily_mission_revision(user)
-            st.session_state.daily_mission_revision_recorded = True
-
-        # ==========================================
-        # 🔚 RESET TEST
-        # ==========================================
-
-        st.session_state.test_active = False
-        # Clear cached config so next session gets fresh recommendation
         st.session_state.pop("daily_test_config", None)
 
         st.session_state.test_qs = []
@@ -981,6 +845,26 @@ elif selected == "🧠 Weakness":
 
 
 # =====================================================
+# 🔄 SMART REVISION
+# =====================================================
+
+elif selected == "🔄 Smart Revision":
+
+    safe_call(lambda: render_revision_dashboard(user))
+
+
+# =====================================================
+# 🧬 LEARNING INTELLIGENCE
+# =====================================================
+
+elif selected == "🧬 Learning Intelligence":
+
+    safe_call(lambda: render_learning_intelligence_dashboard(user))
+
+
+
+
+# =====================================================
 # 📊 PROGRESS
 # =====================================================
 
@@ -1009,10 +893,6 @@ elif selected == "ℹ️ About":
 elif selected == "📞 Contact":
 
     safe_call(lambda: render_contact_page(section))
-
-recent_error = get_recent_error_message()
-if recent_error:
-    show_friendly_error(recent_error)
 
 st.markdown("---")
 
