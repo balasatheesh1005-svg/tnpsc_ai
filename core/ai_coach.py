@@ -1,9 +1,13 @@
 from core.mentor_memory import get_memory
 from core.streak_ai import get_streak
+from core.performance import measure_time
 
-def ai_coach(user, score, total, weak_data):
+@measure_time("AI Coach Engine")
+def ai_coach(user, score, total, weak_data, context=None):
 
-    memory = get_memory(user)
+
+    memory = get_memory(user, context=context)
+
 
     percent = int((score / total) * 100) if total else 0
 
@@ -38,7 +42,8 @@ def ai_coach(user, score, total, weak_data):
         message += f"👉 Spend extra time on {clean_topics[0]} today.\n"
 
     # 🔥 Streak
-    streak = get_streak(user)
+    streak = get_streak(user, context=context)
+
     if streak >= 3:
         message += f"\n🔥 You're on a {streak}-day streak. Keep it going!\n"
 

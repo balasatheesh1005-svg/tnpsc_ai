@@ -110,10 +110,13 @@ def reduce_weakness(username=None, subject="", topic=""):
 # ==========================================
 
 
-def get_weakness(username=None):
+def get_weakness(username=None, context=None):
     """
-    Retrieves all weakness records matching user_id UUID.
+    Retrieves all weakness records matching user_id UUID or pre-fetched context.
     """
+    if context is not None and hasattr(context, "weakness") and context.weakness is not None:
+        return context.weakness
+
     user_id = _resolve_user_id(username)
     if not user_id:
         logger.error("[DATA INTEGRITY ALERT] get_weakness failed: user_id IS NULL.")
@@ -142,16 +145,14 @@ def get_weakness(username=None):
 # ==========================================
 
 
-def get_most_weak_topic(username=None):
+def get_most_weak_topic(username=None, context=None):
     """
     Returns the most weak topic tuple (topic_key, weakness_count) for the user.
     """
-    weak_data = get_weakness(username)
+    weak_data = get_weakness(username, context=context)
 
     if not weak_data:
-        return ("polity-historical_background", 0)
+        return ("polity-fundamental_rights", 0)
 
-    weak_topic = max(weak_data, key=weak_data.get)
-    count = weak_data[weak_topic]
-
-    return weak_topic, count
+    most_weak_key = max(weak_data, key=weak_data.get)
+    return (most_weak_key, weak_data[most_weak_key])

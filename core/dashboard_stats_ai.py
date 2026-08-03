@@ -38,10 +38,17 @@ def get_weak_subject(user, weak_data=None):
 def get_user_rank(user, all_progress=None):
     rows = all_progress
     if rows is None:
-        response = (
-            supabase.table("users_progress").select("username, accuracy").execute()
-        )
-        rows = response.data or []
+        import streamlit as st
+        cache_key = "global_users_progress_rank_cache"
+        if hasattr(st, "session_state") and cache_key in st.session_state:
+            rows = st.session_state[cache_key]
+        else:
+            response = (
+                supabase.table("users_progress").select("username, accuracy").execute()
+            )
+            rows = response.data or []
+            if hasattr(st, "session_state"):
+                st.session_state[cache_key] = rows
 
     user_scores = {}
 
@@ -75,23 +82,34 @@ def get_user_rank(user, all_progress=None):
     return 0
 
 
-def get_dashboard_stats(user):
-    user_progress = get_progress(user)
-    progress_response = (
-        supabase.table("users_progress").select("username, accuracy").execute()
-    )
-    all_progress = progress_response.data or []
-    weak_data = get_weakness(user)
-    xp_data = get_user_xp(user)
-    level_progress = get_level_progress(user)
+def get_dashboard_stats(user, context=None, force_refresh=False):
+    import streamlit as st
+    cache_key = f"dashboard_stats_cache_{user}"
+    if hasattr(st, "session_state") and not force_refresh and cache_key in st.session_state:
+        return st.session_state[cache_key]
 
-    return {
+    from core.user_context import UserContext
+    ctx = context or UserContext.get_or_create(user)
+
+    user_progress = get_progress(user, context=ctx)
+    weak_data = get_weakness(user, context=ctx)
+    xp_data = get_user_xp(user, context=ctx)
+    level_progress = get_level_progress(user, context=ctx)
+    streak_val = get_streak(user, context=ctx)
+
+    stats = {
         "tests_attempted": get_tests_attempted(user, user_progress),
         "accuracy": get_average_accuracy(user, user_progress),
-        "streak": get_streak(user),
+        "streak": streak_val,
         "weak_subject": get_weak_subject(user, weak_data),
-        "rank": get_user_rank(user, all_progress),
+        "rank": get_user_rank(user, all_progress=user_progress),
         "xp": xp_data["xp"],
         "level": xp_data["level"],
         "level_progress": level_progress,
     }
+
+    if hasattr(st, "session_state"):
+        st.session_state[cache_key] = stats
+
+    return stats
+

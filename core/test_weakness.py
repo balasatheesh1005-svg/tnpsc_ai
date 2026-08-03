@@ -1,6 +1,7 @@
 import streamlit as st
 
 from core.weakness_ai import add_weakness, reduce_weakness
+from core.engine_cache import clear_engine_cache
 
 
 def _normalize_topic(topic):
@@ -8,6 +9,7 @@ def _normalize_topic(topic):
 
 
 def handle_correct_answer(user, subject, topic):
+    clear_engine_cache(user)
     if topic:
 
         topic = _normalize_topic(topic)
@@ -24,6 +26,7 @@ def handle_correct_answer(user, subject, topic):
 
 
 def handle_wrong_answer(user, subject, topic):
+    clear_engine_cache(user)
     topic = _normalize_topic(topic)
 
     st.session_state["weak_subject"] = st.session_state.test_topic

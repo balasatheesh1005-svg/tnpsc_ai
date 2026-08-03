@@ -40,7 +40,7 @@ def update_streak(user=None):
             {
                 "user_id": user_id,
                 "username": display_username,
-                "last_date": today.isoformat(),
+                "last_activity_date": today.isoformat(),
                 "streak": streak,
             }
         ).execute()
@@ -48,9 +48,9 @@ def update_streak(user=None):
 
     row = rows[0]
     if row.get("user_id") is None:
-        logger.warning(f"[DATA INTEGRITY ALERT] Streak record id={row.get('id')} has user_id IS NULL!")
+        logger.warning("[DATA INTEGRITY ALERT] Streak record has user_id IS NULL!")
 
-    last_date = _parse_date(row.get("last_date"))
+    last_date = _parse_date(row.get("last_activity_date") or row.get("last_date"))
     streak = int(row.get("streak") or 0)
 
     if last_date == today:
@@ -63,23 +63,26 @@ def update_streak(user=None):
 
     supabase.table(TABLE).update(
         {
-            "last_date": today.isoformat(),
+            "last_activity_date": today.isoformat(),
             "streak": streak,
         }
-    ).eq("id", row["id"]).execute()
+    ).eq("user_id", user_id).execute()
 
     return streak
 
 
-def get_streak(user=None):
-    """Retrieves user current streak count using user_id UUID."""
+def get_streak(user=None, context=None):
+    """Retrieves user current streak count using user_id UUID or pre-fetched context."""
+    if context is not None and hasattr(context, "streak"):
+        return context.streak
+
     user_id = resolve_user_id(user)
     if not user_id:
         logger.error(f"[DATA INTEGRITY ALERT] get_streak failed: user_id IS NULL for user={user}")
         return 0
 
     response = (
-        supabase.table(TABLE).select("streak,user_id,id").eq("user_id", user_id).limit(1).execute()
+        supabase.table(TABLE).select("streak,user_id").eq("user_id", user_id).limit(1).execute()
     )
     rows = response.data or []
 
@@ -87,6 +90,7 @@ def get_streak(user=None):
         return 0
 
     if rows[0].get("user_id") is None:
-        logger.warning(f"[DATA INTEGRITY ALERT] Streak record id={rows[0].get('id')} has user_id IS NULL!")
+        logger.warning("[DATA INTEGRITY ALERT] Streak record has user_id IS NULL!")
 
     return int(rows[0].get("streak") or 0)
+

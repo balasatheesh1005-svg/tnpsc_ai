@@ -130,8 +130,15 @@ def update_revision(user=None, topic_key=""):
     ).eq("id", row["id"]).execute()
 
 
-def get_due_revisions(user=None):
-    """Retrieves list of due revision topic keys and due dates for user_id UUID."""
+def get_due_revisions(user=None, context=None):
+    """Retrieves list of due revision topic keys and due dates for user_id UUID or pre-fetched context."""
+    if context is not None and hasattr(context, "revision_overview") and context.revision_overview:
+        due_topics = []
+        for item in context.revision_overview.get("overdue", []) + context.revision_overview.get("due_today", []):
+            key = f"{item.get('subject')}-{item.get('topic')}"
+            due_topics.append((key, item.get("next_due")))
+        return due_topics
+
     user_id = _resolve_user_id(user)
     if not user_id:
         logger.error(f"[DATA INTEGRITY ALERT] get_due_revisions failed: user_id IS NULL for user={user}")
@@ -139,21 +146,23 @@ def get_due_revisions(user=None):
 
     today = datetime.date.today().isoformat()
 
-    response = (
-        supabase.table(TABLE)
-        .select("subject,topic,next_due,user_id,id")
-        .eq("user_id", user_id)
-        .lte("next_due", today)
-        .order("next_due")
-        .execute()
-    )
+    try:
+        response = (
+            supabase.table(TABLE)
+            .select("*")
+            .eq("user_id", user_id)
+            .execute()
+        )
+        rows = response.data or []
+    except Exception as e:
+        logger.warning(f"get_due_revisions query error: {e}")
+        rows = []
 
     due_topics = []
-
-    for row in response.data or []:
-        if row.get("user_id") is None:
-            logger.warning(f"[DATA INTEGRITY ALERT] Revision record id={row.get('id')} has user_id IS NULL!")
-        due_topics.append((_join_topic_key(row), row["next_due"]))
+    for row in rows:
+        due_val = row.get("next_revision") or row.get("next_due")
+        if due_val and str(due_val) <= today:
+            due_topics.append((_join_topic_key(row), due_val))
 
     return due_topics
 
@@ -172,35 +181,17 @@ def _parse_due_date(value):
             return None
 
 
-def get_revision_topics(user=None):
-    """Retrieves list of due revision topic keys for user_id UUID."""
-    user_id = _resolve_user_id(user)
-    if not user_id:
-        logger.error(f"[DATA INTEGRITY ALERT] get_revision_topics failed: user_id IS NULL for user={user}")
-        return []
-
-    today = datetime.date.today().isoformat()
-
-    response = (
-        supabase.table(TABLE)
-        .select("subject,topic,user_id,id")
-        .eq("user_id", user_id)
-        .lte("next_due", today)
-        .order("next_due")
-        .execute()
-    )
-
-    due_topics = []
-    for row in response.data or []:
-        if row.get("user_id") is None:
-            logger.warning(f"[DATA INTEGRITY ALERT] Revision record id={row.get('id')} has user_id IS NULL!")
-        due_topics.append(_join_topic_key(row))
-
-    return due_topics
+def get_revision_topics(user=None, context=None):
+    """Retrieves list of due revision topic keys for user_id UUID or pre-fetched context."""
+    due = get_due_revisions(user, context=context)
+    return [t[0] for t in due]
 
 
-def get_revision_overview(user=None):
-    """Retrieves overview dict of revisions grouped by status for user_id UUID."""
+def get_revision_overview(user=None, context=None):
+    """Retrieves overview dict of revisions grouped by status for user_id UUID or pre-fetched context."""
+    if context is not None and hasattr(context, "revision_overview") and context.revision_overview:
+        return context.revision_overview
+
     user_id = _resolve_user_id(user)
     if not user_id:
         logger.error(f"[DATA INTEGRITY ALERT] get_revision_overview failed: user_id IS NULL for user={user}")
@@ -213,15 +204,18 @@ def get_revision_overview(user=None):
         }
 
     today = datetime.date.today()
-    response = (
-        supabase.table(TABLE)
-        .select("subject,topic,level,next_due,user_id,id")
-        .eq("user_id", user_id)
-        .order("next_due")
-        .execute()
-    )
+    try:
+        response = (
+            supabase.table(TABLE)
+            .select("*")
+            .eq("user_id", user_id)
+            .execute()
+        )
+        rows = response.data or []
+    except Exception as e:
+        logger.warning(f"get_revision_overview query error: {e}")
+        rows = []
 
-    rows = response.data or []
     overview = {
         "total": 0,
         "overdue": [],
@@ -231,17 +225,18 @@ def get_revision_overview(user=None):
     }
 
     for row in rows:
-        if row.get("user_id") is None:
-            logger.warning(f"[DATA INTEGRITY ALERT] Revision record id={row.get('id')} has user_id IS NULL!")
-        due_date = _parse_due_date(row.get("next_due"))
+        due_val = row.get("next_revision") or row.get("next_due")
+        due_date = _parse_due_date(due_val)
         if due_date is None:
             continue
 
+        level_val = int(row.get("interval") or row.get("level") or 1)
         item = {
             "subject": row.get("subject") or "Unknown",
             "topic": row.get("topic") or "Unknown",
-            "level": int(row.get("level") or 1),
+            "level": level_val,
             "next_due": due_date,
+            "next_revision": due_date,
         }
 
         overview["queue"].append(item)
@@ -255,3 +250,4 @@ def get_revision_overview(user=None):
 
     overview["total"] = len(overview["queue"])
     return overview
+

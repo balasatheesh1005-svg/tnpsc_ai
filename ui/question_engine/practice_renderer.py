@@ -116,6 +116,7 @@ def render_practice_question(user: str):
                 prefix=prefix,
                 total_questions=total_q,
                 current_index=curr_i,
+                answered_map=state["answers"],
                 bookmarked_set=st.session_state.get(f"{prefix}_bookmarks", set()),
             )
 
@@ -423,7 +424,7 @@ def render_practice_result_screen(user: str):
                             "start_time": time.time(),
                             "test_start_xp": st.session_state.get("xp", 0),
                         })
-                        st.session_state["main_menu"] = "📘 Daily Test"
+                        st.session_state["main_menu"] = "🔥 Daily Challenge"
                         st.rerun()
                     else:
                         st.error("Grand Test repository could not be loaded.")

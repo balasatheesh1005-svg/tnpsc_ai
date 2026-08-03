@@ -15,25 +15,35 @@ DEFAULT_TOPIC_ID = "polity_historical_background_part1"
 
 
 def init_navigation_state():
-    """Ensure global navigation state keys exist in st.session_state."""
+    """Ensure global navigation state keys exist in st.session_state without overriding active subject/topic selection flows."""
+    if "nav_view" not in st.session_state or not st.session_state["nav_view"]:
+        st.session_state["nav_view"] = "topic_hub"
+
+    nav_view = st.session_state["nav_view"]
+
+    if nav_view == "subject_select":
+        return
+
+    if nav_view == "topic_select":
+        if "selected_subject" not in st.session_state or not st.session_state["selected_subject"]:
+            st.session_state["selected_subject"] = DEFAULT_SUBJECT
+        return
+
     if "selected_subject" not in st.session_state or not st.session_state["selected_subject"]:
         st.session_state["selected_subject"] = DEFAULT_SUBJECT
 
     if "selected_topic_id" not in st.session_state or not st.session_state["selected_topic_id"]:
         set_global_topic(st.session_state["selected_subject"], DEFAULT_TOPIC_ID)
 
-    if "nav_view" not in st.session_state:
-        st.session_state["nav_view"] = "topic_hub"
-
 
 def get_selected_subject() -> str:
     init_navigation_state()
-    return st.session_state.get("selected_subject", DEFAULT_SUBJECT)
+    return st.session_state.get("selected_subject") or DEFAULT_SUBJECT
 
 
 def get_selected_topic_id() -> str:
     init_navigation_state()
-    return st.session_state.get("selected_topic_id", DEFAULT_TOPIC_ID)
+    return st.session_state.get("selected_topic_id") or DEFAULT_TOPIC_ID
 
 
 def get_selected_repository_id() -> str:
@@ -147,38 +157,58 @@ def get_available_topics(subject: str) -> List[Dict[str, any]]:
 
 def check_repository_availability(subject: str, topic_id_or_title: str) -> Dict[str, bool]:
     """Checks file existence for notes (via topic_id) and questions (via repository_id)."""
-    subj = subject.lower().strip()
-    meta = get_topic_metadata_by_id(subj, topic_id_or_title)
-
-    topic_id = meta["topic_id"]
-    repository_id = meta["repository_id"]
-
-    note_basename = topic_id
-    if note_basename.startswith(f"{subj}_"):
-        note_basename = note_basename[len(subj) + 1:]
-
-    repo_basename = repository_id
-    if repo_basename.startswith(f"{subj}_"):
-        repo_basename = repo_basename[len(subj) + 1:]
-
-    base_n = f"data/notes/{subj}"
-    base_q = f"data/questions/{subj}"
-
-    note_candidates = [
-        f"{base_n}/{note_basename}.json",
-        f"{base_n}/{note_basename.replace('part', 'part_')}.json" if "part" in note_basename and "part_" not in note_basename else f"{base_n}/{note_basename}.json",
-    ]
-    notes_exist = any(os.path.exists(p) for p in note_candidates)
-
-    return {
-        "notes": notes_exist,
-        "easy": os.path.exists(f"{base_q}/{repo_basename}_easy.json"),
-        "medium": os.path.exists(f"{base_q}/{repo_basename}_medium.json"),
-        "hard": os.path.exists(f"{base_q}/{repo_basename}_hard.json"),
-        "statement_based": os.path.exists(f"{base_q}/{repo_basename}_statement_based.json"),
-        "assertion_reason": os.path.exists(f"{base_q}/{repo_basename}_assertion_reason.json"),
-        "match_the_following": os.path.exists(f"{base_q}/{repo_basename}_match_the_following.json"),
-        "chronology": os.path.exists(f"{base_q}/{repo_basename}_chronology.json"),
-        "grand_test": os.path.exists(f"{base_q}/{repo_basename}_grand_test.json"),
-        "pyq": os.path.exists(f"{base_q}/{repo_basename}_pyq.json"),
+    default_res = {
+        "notes": False,
+        "easy": False,
+        "medium": False,
+        "hard": False,
+        "statement_based": False,
+        "assertion_reason": False,
+        "match_the_following": False,
+        "chronology": False,
+        "grand_test": False,
+        "pyq": False,
     }
+    if not subject or not topic_id_or_title:
+        return default_res
+
+    try:
+        subj = subject.lower().strip()
+        meta = get_topic_metadata_by_id(subj, topic_id_or_title)
+        if not meta or not isinstance(meta, dict):
+            return default_res
+
+        topic_id = meta.get("topic_id", "")
+        repository_id = meta.get("repository_id", "")
+
+        note_basename = topic_id
+        if note_basename.startswith(f"{subj}_"):
+            note_basename = note_basename[len(subj) + 1 :]
+
+        repo_basename = repository_id
+        if repo_basename.startswith(f"{subj}_"):
+            repo_basename = repo_basename[len(subj) + 1 :]
+
+        base_n = f"data/notes/{subj}"
+        base_q = f"data/questions/{subj}"
+
+        note_candidates = [
+            f"{base_n}/{note_basename}.json",
+            f"{base_n}/{note_basename.replace('part', 'part_')}.json" if "part" in note_basename and "part_" not in note_basename else f"{base_n}/{note_basename}.json",
+        ]
+        notes_exist = any(os.path.exists(p) for p in note_candidates)
+
+        return {
+            "notes": notes_exist,
+            "easy": os.path.exists(f"{base_q}/{repo_basename}_easy.json"),
+            "medium": os.path.exists(f"{base_q}/{repo_basename}_medium.json"),
+            "hard": os.path.exists(f"{base_q}/{repo_basename}_hard.json"),
+            "statement_based": os.path.exists(f"{base_q}/{repo_basename}_statement_based.json"),
+            "assertion_reason": os.path.exists(f"{base_q}/{repo_basename}_assertion_reason.json"),
+            "match_the_following": os.path.exists(f"{base_q}/{repo_basename}_match_the_following.json"),
+            "chronology": os.path.exists(f"{base_q}/{repo_basename}_chronology.json"),
+            "grand_test": os.path.exists(f"{base_q}/{repo_basename}_grand_test.json"),
+            "pyq": os.path.exists(f"{base_q}/{repo_basename}_pyq.json"),
+        }
+    except Exception:
+        return default_res

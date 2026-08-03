@@ -85,23 +85,24 @@ def _ensure_user_xp_record(user_id, username=None):
         supabase.table(TABLE).insert(insert_payload).execute()
 
 
-def get_user_xp(user_id=None):
+def get_user_xp(user_id=None, context=None):
     """
-    Get current XP and level for user using user_id UUID.
+    Get current XP and level for user using user_id UUID or pre-fetched context.
 
     Args:
-        user_id: UUID user identifier or legacy identifier (optional, defaults to current_user_id())
+        user_id: UUID user identifier or legacy identifier
+        context: Optional UserContext object
 
     Returns:
         dict: {"xp": int, "level": int}
     """
+    if context is not None and hasattr(context, "xp") and context.xp:
+        return context.xp
+
     resolved_id = _resolve_user_id(user_id)
     if not resolved_id:
         logger.warning("get_user_xp called without valid user_id")
         return {"xp": 0, "level": 1}
-
-    display_name = current_username() if resolved_id == current_user_id() else None
-    _ensure_user_xp_record(resolved_id, username=display_name)
 
     response = (
         supabase.table(TABLE)
@@ -113,14 +114,11 @@ def get_user_xp(user_id=None):
     rows = response.data or []
 
     if not rows:
+        display_name = current_username() if resolved_id == current_user_id() else None
+        _ensure_user_xp_record(resolved_id, username=display_name)
         return {"xp": 0, "level": 1}
 
     row = rows[0]
-    if row.get("user_id") is None:
-        logger.warning(
-            f"[DATA INTEGRITY ALERT] Found user_xp row with NULL user_id for resolved_id='{resolved_id}'"
-        )
-
     return {
         "xp": int(row.get("xp", 0)),
         "level": int(row.get("level", 1)),
@@ -183,20 +181,20 @@ def add_xp(user_id=None, amount=0, reward_type=None):
     }
 
 
-def get_level(user_id=None):
+def get_level(user_id=None, context=None):
     """Get current level by user_id UUID."""
-    current = get_user_xp(user_id)
+    current = get_user_xp(user_id, context=context)
     return current["level"]
 
 
-def get_next_level_target(user_id=None):
+def get_next_level_target(user_id=None, context=None):
     """
     Get XP needed to reach next level by user_id UUID.
 
     Returns:
         int: XP threshold for next level (0 if at max)
     """
-    current = get_user_xp(user_id)
+    current = get_user_xp(user_id, context=context)
     current_level = current["level"]
 
     # Check if at max level
@@ -208,7 +206,7 @@ def get_next_level_target(user_id=None):
     return LEVEL_THRESHOLDS[next_level]
 
 
-def get_level_progress(user_id=None):
+def get_level_progress(user_id=None, context=None):
     """
     Get progress towards next level by user_id UUID.
 
@@ -222,7 +220,7 @@ def get_level_progress(user_id=None):
             "progress_percent": float (0-100)
         }
     """
-    current = get_user_xp(user_id)
+    current = get_user_xp(user_id, context=context)
     current_xp = current["xp"]
     current_level = current["level"]
 
@@ -247,6 +245,7 @@ def get_level_progress(user_id=None):
     progress_percent = (
         (xp_in_level / xp_needed_for_level) * 100.0 if xp_needed_for_level > 0 else 0
     )
+
 
     return {
         "current_xp": current_xp,

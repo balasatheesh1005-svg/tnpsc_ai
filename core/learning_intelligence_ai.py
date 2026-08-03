@@ -1,6 +1,7 @@
 import datetime
 import logging
 from typing import Dict, List, Any, Optional
+import streamlit as st
 
 from core.mentor_memory import get_memory
 from core.progress_ai import get_progress
@@ -9,11 +10,25 @@ from core.revision_engine import (
     get_revision_analytics_v2,
 )
 from core.streak_ai import get_streak
-from core.topics_loader import format_subject_name, format_topic_name
 from core.weakness_ai import get_weakness
 from core.xp_ai import get_level_progress, get_user_xp
 
 logger = logging.getLogger(__name__)
+
+
+def format_subject_name(subject: str) -> str:
+    """Helper to format subject name cleanly."""
+    if not subject:
+        return "General"
+    return str(subject).replace("_", " ").replace("-", " ").title()
+
+
+def format_topic_name(topic: str) -> str:
+    """Helper to format topic name cleanly."""
+    if not topic:
+        return "General"
+    return str(topic).replace("_", " ").replace("-", " ").title()
+
 
 
 def _calculate_star_rating(value: float, min_val: float = 0, max_val: float = 100) -> int:
@@ -33,20 +48,37 @@ def _calculate_star_rating(value: float, min_val: float = 0, max_val: float = 10
         return 5
 
 
-def get_learning_intelligence(user: str = None) -> Dict[str, Any]:
+from core.performance import measure_time, record_cache_hit, record_cache_miss
+from core.engine_cache import ENGINE_CACHE_KEY_PREFIX
+
+
+@measure_time("Learning Intelligence Engine")
+def get_learning_intelligence(
+    user: str = None, context: Optional[Any] = None, force_refresh: bool = False
+) -> Dict[str, Any]:
     """
     Learning Intelligence Engine V2 - Single Source of Truth.
     Synthesizes data across Progress, Weakness, Revision V2, XP, Streak, and Memory engines
     to determine WHY the student is weak and generate actionable recovery intelligence.
     """
-    # 1. Fetch Engine Data
-    progress_rows = get_progress(user)
-    weakness_data = get_weakness(user)
-    revision_plan = get_intelligent_revision_plan(user)
-    revision_analytics = get_revision_analytics_v2(user)
-    streak = get_streak(user)
-    xp_data = get_user_xp(user)
-    memory = get_memory(user)
+    user_str = str(user or "Guest")
+    cache_key = f"{ENGINE_CACHE_KEY_PREFIX}Learning Intelligence Engine_{user_str}"
+    if hasattr(st, "session_state") and not force_refresh and cache_key in st.session_state:
+        record_cache_hit("Learning Intelligence Engine")
+        return st.session_state[cache_key]
+    record_cache_miss("Learning Intelligence Engine")
+
+    from core.user_context import UserContext
+    ctx = context or UserContext.get_or_create(user)
+
+    # 1. Fetch Engine Data using shared context
+    progress_rows = get_progress(user, context=ctx)
+    weakness_data = get_weakness(user, context=ctx)
+    revision_plan = get_intelligent_revision_plan(user, context=ctx)
+    revision_analytics = get_revision_analytics_v2(user, context=ctx)
+    streak = get_streak(user, context=ctx)
+    xp_data = get_user_xp(user, context=ctx)
+    memory = get_memory(user, context=ctx)
 
     # 2. Analyze Subject & Topic Performance Breakdowns
     all_accuracies = [float(r.get("accuracy", 0)) for r in progress_rows if r.get("accuracy") is not None]
@@ -162,7 +194,7 @@ def get_learning_intelligence(user: str = None) -> Dict[str, Any]:
         mentor_insight = "Executing your recovery plan consistently will build solid topic mastery."
 
     # 11. Final Engine Output JSON Schema
-    return {
+    result = {
         "subject": subj,
         "topic": topic,
         "repository": repo,
@@ -181,3 +213,8 @@ def get_learning_intelligence(user: str = None) -> Dict[str, Any]:
         "recommendation": recommendation,
         "mentor_insight": mentor_insight,
     }
+
+    if hasattr(st, "session_state"):
+        st.session_state[cache_key] = result
+
+    return result

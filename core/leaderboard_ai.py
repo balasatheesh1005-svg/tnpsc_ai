@@ -9,6 +9,10 @@ TABLE = "users_progress"
 
 
 def get_top_users():
+    import streamlit as st
+    cache_key = "leaderboard_top_users_cache"
+    if hasattr(st, "session_state") and cache_key in st.session_state:
+        return st.session_state[cache_key]
 
     response = supabase.table(TABLE).select("username, accuracy").execute()
 
@@ -36,5 +40,8 @@ def get_top_users():
         leaderboard.append((username, round(avg_accuracy, 2)))
 
     leaderboard.sort(key=lambda x: x[1], reverse=True)
+    top_10 = leaderboard[:10]
+    if hasattr(st, "session_state"):
+        st.session_state[cache_key] = top_10
 
-    return leaderboard[:10]
+    return top_10

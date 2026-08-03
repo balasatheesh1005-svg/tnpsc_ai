@@ -14,8 +14,10 @@ from ui.theme import render_theme_css
 from core.auth import logout, restore_auth_session
 from core.session import is_authenticated, reset_app_state_for_logout
 from core.supabase_client import get_recent_error_message
+from core.performance import reset_metrics, start_timer, end_timer, record_render, print_summary, track_session, DEV_MODE
 from ui.login import render_login_page
 from ui.signup import render_signup_page
+
 
 
 # ---------------- UI HELPERS ----------------
@@ -84,78 +86,14 @@ from core.test_weakness import handle_correct_answer, handle_wrong_answer
 from ui.dashboard import render_dashboard
 from ui.revision.dashboard import render_revision_dashboard
 from ui.intelligence.dashboard import render_learning_intelligence_dashboard
-from streamlit_option_menu import option_menu
-from core.dashboard_stats_ai import get_dashboard_stats
-from ui.pages.daily_test_renderer import render_explanation_next, render_question
-from ui.pages.leaderboard import render_leaderboard
-from ui.pages.mentor import render_mentor
-from ui.pages.notes import render_notes_page
-
-
-# ---------------- UI HELPERS ----------------
-def section(title):
-    st.markdown(
-        f"""
-    <div style="
-    background:#ffffff;
-    padding:15px;
-    border-radius:12px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.1);
-    margin-bottom:15px;">
-    <h3>{title}</h3>
-    </div>
-    """,
-        unsafe_allow_html=True,
-    )
-
-
-def show_friendly_error(message=None):
-    st.warning(message or "Something went wrong. Please try again.")
-
-
-def safe_call(callback, fallback=None, message=None):
-    try:
-        return callback()
-    except Exception as e:
-        import traceback
-
-        st.code(traceback.format_exc())
-        return fallback
-
-
-def default_dashboard_stats():
-    return {
-        "tests_attempted": 0,
-        "accuracy": 0,
-        "streak": 0,
-        "rank": 0,
-        "weak_subject": "No Data",
-        "xp": 0,
-        "level": 1,
-        "level_progress": {},
-    }
-
-
-# ---------------- CONFIG ----------------
-st.set_page_config(
-    page_title="TNPSC Nova AI", page_icon="assets/app_icon.png", layout="wide"
-)
-# ---------------- STYLE ----------------
-render_theme_css()
-
-# ---------------- IMPORTS ----------------
-from core.question_loader import load_questions
-from core.daily_mission_ai import (
-    update_daily_test,
-    update_revision as update_daily_mission_revision,
-)
-from core.test_completion import complete_test
-from core.test_evaluator import evaluate_answer
-from core.test_revision import handle_correct_revision, handle_wrong_revision
-from core.progress_ai import get_progress
-from core.test_topic_selector import get_test_config
-from core.test_weakness import handle_correct_answer, handle_wrong_answer
-from ui.dashboard import render_dashboard
+from ui.planner.dashboard import render_study_planner_dashboard
+from ui.recommendation.dashboard import render_recommendation_dashboard
+from ui.exam_readiness.dashboard import render_exam_readiness_dashboard
+from ui.mock_intelligence.dashboard import render_mock_intelligence_dashboard
+from ui.predictive_performance.dashboard import render_predictive_performance_dashboard
+from ui.adaptive_revision.dashboard import render_adaptive_revision_dashboard
+from ui.exam_strategy.dashboard import render_exam_strategy_dashboard
+from ui.coach.dashboard import render_coach_dashboard
 from streamlit_option_menu import option_menu
 from core.dashboard_stats_ai import get_dashboard_stats
 from ui.pages.daily_test_renderer import render_explanation_next, render_question
@@ -180,9 +118,11 @@ from core.navigation_v2.navigation_state import (
 from ui.navigation_v2.subject_selector import render_subject_selector
 from ui.navigation_v2.topic_selector import render_topic_selector
 from ui.navigation_v2.topic_hub import render_topic_hub
+from core.user_context import UserContext
 
 # ---------------- AUTHENTICATION ----------------
 restore_auth_session()
+
 
 
 if not is_authenticated():
@@ -400,10 +340,11 @@ if not is_authenticated():
     st.stop()
 else:
     # ---------------- USER ----------------
-    username = st.session_state["username"]
+    username = st.session_state.get("username", "Guest")
     user = username
+    user_ctx = UserContext.get_or_create(username)
     dashboard_stats = safe_call(
-        lambda: get_dashboard_stats(username),
+        lambda: get_dashboard_stats(username, context=user_ctx),
         fallback=default_dashboard_stats()
     )
 
@@ -419,6 +360,7 @@ else:
     if "xp_level" in st.session_state and fetched_lv > st.session_state["xp_level"]:
         st.session_state["xp_level_up"] = True
     st.session_state["xp_level"] = fetched_lv
+
 
 
 # ---------------- SESSION INIT ----------------
@@ -458,33 +400,64 @@ initialize_session_state()
 
 MENU_OPTIONS = [
     "🏠 Home",
-    "📘 Daily Test",
-    "PYQ",
-    "📚 Notes",
-    "🧠 Weakness",
-    "🔄 Smart Revision",
-    "🧬 Learning Intelligence",
-    "📊 Progress",
-    "🏆 Leaderboard",
+    "📚 Learn & Practice",
+    "🔥 Daily Challenge",
+    "📜 PYQ",
+    "🧠 Smart Revision",
+    "📊 Analytics",
     "🤖 AI Teacher",
     "👨‍🏫 Personal Mentor",
+    "📅 Study Planner",
+    "💡 AI Recommendations",
+    "🎯 Exam Readiness",
+    "📝 Mock Intelligence",
+    "🔮 Predictive Performance",
+    "⚡ Adaptive Revision Strategy",
+    "🎯 Exam Execution Strategy",
+    "🏆 Leaderboard",
     "ℹ️ About",
     "📞 Contact",
 ]
 
-if "main_menu" not in st.session_state:
+# Alias & Backward-Compatibility Map for Session State Menu Targets
+MENU_ALIASES = {
+    "📘 Daily Test": "🔥 Daily Challenge",
+    "Daily Test": "🔥 Daily Challenge",
+    "📚 Notes": "📚 Learn & Practice",
+    "PYQ": "📜 PYQ",
+    "🔄 Smart Revision": "🧠 Smart Revision",
+    "🧠 Weakness": "📚 Learn & Practice",
+    "📊 Progress": "📊 Analytics",
+}
+
+if "main_menu" in st.session_state:
+    raw_menu = st.session_state["main_menu"]
+    if raw_menu in MENU_ALIASES:
+        st.session_state["main_menu"] = MENU_ALIASES[raw_menu]
+
+if "main_menu" not in st.session_state or st.session_state["main_menu"] not in MENU_OPTIONS:
     st.session_state["main_menu"] = MENU_OPTIONS[0]
 
 if "navigate_to" in st.session_state:
     nav_target = st.session_state.get("navigate_to")
+    if nav_target in MENU_ALIASES:
+        nav_target = MENU_ALIASES[nav_target]
     if nav_target in MENU_OPTIONS:
         st.session_state["main_menu"] = nav_target
     st.session_state.pop("navigate_to", None)
 
 current_menu = st.session_state["main_menu"]
-current_index = MENU_OPTIONS.index(current_menu)
+current_index = MENU_OPTIONS.index(current_menu) if current_menu in MENU_OPTIONS else 0
 
 # ---------------- MENU ----------------
+username = st.session_state.get("username", "Guest")
+user = username
+
+reset_metrics()
+start_timer("Total Page Render")
+track_session("active_user", user)
+
+start_timer("Sidebar")
 with st.sidebar:
     render_sidebar_branding(
         username,
@@ -503,16 +476,21 @@ with st.sidebar:
         options=MENU_OPTIONS,
         icons=[
             "house",
-            "clipboard-check",
+            "book-half",
+            "fire",
             "journal-text",
-            "book",
-            "brain",
             "arrow-repeat",
-            "cpu",
             "bar-chart",
-            "trophy",
             "robot",
             "person",
+            "calendar-event",
+            "lightbulb",
+            "speedometer",
+            "journal-check",
+            "graph-up-arrow",
+            "lightning-charge",
+            "compass",
+            "trophy",
             "info-circle",
             "envelope",
         ],
@@ -548,6 +526,10 @@ with st.sidebar:
     )
 
     st.session_state["main_menu"] = selected
+
+record_render("Sidebar", end_timer("Sidebar"))
+start_timer("Dashboard Render")
+
 
 
 def render_today_topic_card(user):
@@ -585,24 +567,106 @@ def render_today_topic_card(user):
 
 # ---------------- HOME ----------------
 if selected == "🏠 Home":
-    nav_view = st.session_state.get("nav_view", "topic_hub")
     render_card_styles()
-    
+
+    # Redesigned Home Hero Section highlighting Learn & Practice
+    st.markdown(
+        """
+        <div style="background: linear-gradient(135deg, #0F172A 0%, #1E3A8A 50%, #2563EB 100%);
+                    padding: 24px 28px; border-radius: 18px; margin-bottom: 20px; color: white;
+                    box-shadow: 0 12px 28px rgba(37, 99, 235, 0.25);">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+                <div>
+                    <span style="background: rgba(255, 255, 255, 0.18); padding: 4px 14px; border-radius: 100px; font-size: 0.8rem; font-weight: 700; border: 1px solid rgba(255, 255, 255, 0.3);">
+                        🎯 Core Learning Engine: Practice Questions
+                    </span>
+                    <h1 style="color: white; margin: 10px 0 6px 0; font-size: 1.85rem; font-weight: 900; line-height: 1.2;">
+                        TNPSC Nova AI — Learn, Practice & Succeed 🚀
+                    </h1>
+                    <p style="color: #93C5FD; margin: 0; font-size: 0.95rem; max-width: 650px;">
+                        Master TNPSC subjects through bilingual study notes, topic practice repositories, real-time analytics, and personalized weakness revision.
+                    </p>
+                </div>
+            </div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    # Feature Quick Access Grid
+    f_c1, f_c2, f_c3, f_c4 = st.columns(4, gap="small")
+    with f_c1:
+        if st.button("📚 Learn & Practice\n(Core Hub)", key="home_btn_learn_prac", use_container_width=True, type="primary"):
+            st.session_state["main_menu"] = "📚 Learn & Practice"
+            st.rerun()
+    with f_c2:
+        if st.button("🔥 Daily Challenge\n(10 Qs Simulator)", key="home_btn_daily", use_container_width=True):
+            st.session_state["main_menu"] = "🔥 Daily Challenge"
+            st.rerun()
+    with f_c3:
+        if st.button("📜 PYQ Explorer\n(Past Papers)", key="home_btn_pyq", use_container_width=True):
+            st.session_state["main_menu"] = "📜 PYQ"
+            st.rerun()
+    with f_c4:
+        if st.button("🧠 Smart Revision\n(Targeted Fixes)", key="home_btn_rev", use_container_width=True):
+            st.session_state["main_menu"] = "🧠 Smart Revision"
+            st.rerun()
+
+    st.markdown("<br>", unsafe_allow_html=True)
+
+    nav_view = st.session_state.get("nav_view", "topic_hub")
     if nav_view == "subject_select":
         render_subject_selector()
     elif nav_view == "topic_select":
         render_topic_selector()
     else:
-        t_hub, t_dash = st.tabs(["📚 Study Hub", "📊 Performance Dashboard"])
-        with t_hub:
+        home_tab = st.radio(
+            "Select Home View",
+            ["📚 Study Hub (Practice Engine)", "🤖 AI Exam Coach", "📊 Performance Dashboard"],
+            horizontal=True,
+            key="home_active_tab",
+            label_visibility="collapsed",
+        )
+        if home_tab == "📚 Study Hub (Practice Engine)":
             render_topic_hub(user)
-        with t_dash:
+        elif home_tab == "🤖 AI Exam Coach":
+            safe_call(lambda: render_coach_dashboard(user))
+        else:
             safe_call(render_dashboard)
 
 
-# ---------------- DAILY TEST ----------------
-elif selected == "📘 Daily Test":
-    section("📘 Daily Test")
+# ---------------- LEARN & PRACTICE (MAIN HUB) ----------------
+elif selected == "📚 Learn & Practice":
+    section("📚 Learn & Practice Hub")
+    render_card_styles()
+
+    learn_sub_tab = st.radio(
+        "Learn & Practice Sub-Navigation",
+        ["📚 Study Notes", "🎯 Practice Questions", "📈 Progress", "🧠 Weak Areas"],
+        horizontal=True,
+        key="learn_practice_sub_tab",
+        label_visibility="collapsed",
+    )
+
+    if learn_sub_tab == "📚 Study Notes":
+        safe_call(lambda: render_notes_page(section))
+    elif learn_sub_tab == "🎯 Practice Questions":
+        nav_view = st.session_state.get("nav_view", "topic_hub")
+        if nav_view == "subject_select":
+            render_subject_selector()
+        elif nav_view == "topic_select":
+            render_topic_selector()
+        else:
+            render_topic_hub(user)
+    elif learn_sub_tab == "📈 Progress":
+        safe_call(lambda: render_progress_page(section, user))
+    elif learn_sub_tab == "🧠 Weak Areas":
+        safe_call(lambda: render_weakness_page(section, user))
+
+
+# ---------------- DAILY CHALLENGE ----------------
+elif selected == "🔥 Daily Challenge":
+    section("🔥 Daily Challenge")
     render_card_styles()
     is_active = st.session_state.test_active
 
@@ -818,39 +882,24 @@ elif selected == "📘 Daily Test":
         st.session_state.test_qs = []
 
 # =====================================================
-# 📘 NOTES
+# 📜 PYQ
 # =====================================================
-
-elif selected == "PYQ":
-
+elif selected == "📜 PYQ" or selected == "PYQ":
     safe_call(lambda: render_pyq_dashboard(section))
 
 
 # =====================================================
-# 📘 NOTES
+# 🧠 SMART REVISION
 # =====================================================
-
-elif selected == "📚 Notes":
-
-    safe_call(lambda: render_notes_page(section))
-
-
-# =====================================================
-# 🧠 WEAKNESS
-# =====================================================
-
-elif selected == "🧠 Weakness":
-
-    safe_call(lambda: render_weakness_page(section, user))
-
-
-# =====================================================
-# 🔄 SMART REVISION
-# =====================================================
-
-elif selected == "🔄 Smart Revision":
-
+elif selected == "🧠 Smart Revision" or selected == "🔄 Smart Revision":
     safe_call(lambda: render_revision_dashboard(user))
+
+
+# =====================================================
+# 📊 ANALYTICS
+# =====================================================
+elif selected == "📊 Analytics" or selected == "📊 Progress":
+    safe_call(lambda: render_progress_page(section, user))
 
 
 # =====================================================
@@ -860,6 +909,85 @@ elif selected == "🔄 Smart Revision":
 elif selected == "🧬 Learning Intelligence":
 
     safe_call(lambda: render_learning_intelligence_dashboard(user))
+
+
+# =====================================================
+# 📅 STUDY PLANNER
+# =====================================================
+
+elif selected == "📅 Study Planner":
+
+    safe_call(lambda: render_study_planner_dashboard(user))
+
+
+# =====================================================
+# 💡 AI RECOMMENDATIONS
+# =====================================================
+
+elif selected == "💡 AI Recommendations":
+
+    safe_call(lambda: render_recommendation_dashboard(user))
+
+
+# =====================================================
+# 🎯 EXAM READINESS
+# =====================================================
+
+elif selected == "🎯 Exam Readiness":
+
+    safe_call(lambda: render_exam_readiness_dashboard(user))
+
+
+# =====================================================
+# 📝 MOCK INTELLIGENCE
+# =====================================================
+
+elif selected == "📝 Mock Intelligence":
+
+    safe_call(lambda: render_mock_intelligence_dashboard(user))
+
+
+# =====================================================
+# 🔮 PREDICTIVE PERFORMANCE
+# =====================================================
+
+elif selected == "🔮 Predictive Performance":
+
+    safe_call(lambda: render_predictive_performance_dashboard(user))
+
+
+# =====================================================
+# ⚡ ADAPTIVE REVISION STRATEGY
+# =====================================================
+
+elif selected == "⚡ Adaptive Revision Strategy":
+
+    safe_call(lambda: render_adaptive_revision_dashboard(user))
+
+
+# =====================================================
+# 🎯 EXAM EXECUTION STRATEGY
+# =====================================================
+
+elif selected == "🎯 Exam Execution Strategy":
+
+    safe_call(lambda: render_exam_strategy_dashboard(user))
+
+
+# =====================================================
+# 🤖 AI EXAM COACH DASHBOARD
+# =====================================================
+
+elif selected == "🤖 AI Exam Coach":
+
+    safe_call(lambda: render_coach_dashboard(user))
+
+
+
+
+
+
+
 
 
 
@@ -897,3 +1025,11 @@ elif selected == "📞 Contact":
 st.markdown("---")
 
 st.caption("🚀 TNPSC AI • AI Powered TNPSC Preparation Platform")
+
+record_render("Dashboard Render", end_timer("Dashboard Render"))
+overall_dur = end_timer("Total Page Render")
+record_render("Overall Page Render", overall_dur)
+
+if DEV_MODE:
+    print_summary()
+

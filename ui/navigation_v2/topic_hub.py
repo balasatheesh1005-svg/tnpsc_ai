@@ -194,7 +194,7 @@ def render_topic_hub(user: str):
         )
         if st.button("📖 Study Notes", key="hub_launch_notes", type="primary" if avail.get('notes') else "secondary", disabled=not avail.get('notes'), use_container_width=True):
             st.session_state["study_stage"] = "notes"
-            st.session_state["main_menu"] = "📚 Notes"
+            st.session_state["main_menu"] = "📚 Learn & Practice"
             st.rerun()
 
     # CARD 2: GRAND TEST
@@ -229,7 +229,7 @@ def render_topic_hub(user: str):
                         "start_time": time.time(),
                         "test_start_xp": st.session_state.get("xp", 0),
                     })
-                    st.session_state["main_menu"] = "📘 Daily Test"
+                    st.session_state["main_menu"] = "🔥 Daily Challenge"
                     st.rerun()
                 else:
                     st.error("Grand Test repository could not be loaded.")
@@ -317,17 +317,17 @@ def render_topic_hub(user: str):
     
     with t_col1:
         if st.button("🧠 Smart Revision", key="hub_tool_rev", use_container_width=True):
-            st.session_state["main_menu"] = "🧠 Weakness"
+            st.session_state["main_menu"] = "🧠 Smart Revision"
             st.rerun()
 
     with t_col2:
         if st.button("📊 Topic Analytics", key="hub_tool_analytics", use_container_width=True):
-            st.session_state["main_menu"] = "📊 Progress"
+            st.session_state["main_menu"] = "📊 Analytics"
             st.rerun()
 
     with t_col3:
         if st.button("🔍 Open PYQ Explorer", key="hub_tool_pyq", use_container_width=True):
-            st.session_state["main_menu"] = "PYQ"
+            st.session_state["main_menu"] = "📜 PYQ"
             st.rerun()
 
     with t_col4:

@@ -191,10 +191,6 @@ def sign_up(full_name, username, email, password, confirm_password):
         "username": username,
         "full_name": full_name,
         "email": email,
-        "xp": 0,
-        "streak": 0,
-        "level": 1,
-        "profile_photo": None,
     }
 
     profile_response = supabase.table("profiles").upsert(profile, on_conflict="id").execute()
@@ -242,15 +238,12 @@ def login(identifier, password):
             "username": email,
             "full_name": "",
             "email": email,
-            "xp": 0,
-            "streak": 0,
-            "level": 1,
-            "profile_photo": None,
         }
         supabase.table("profiles").upsert(profile, on_conflict="id").execute()
 
     save_auth_session(session, user, profile)
     return True, "Logged in successfully."
+
 
 
 def send_password_reset(email):

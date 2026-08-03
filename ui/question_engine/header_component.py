@@ -22,7 +22,7 @@ def render_question_header(
     if bm_key not in st.session_state:
         st.session_state[bm_key] = set()
 
-    is_bookmarked = q.id in st.session_state[bm_key]
+    is_bookmarked = (q.id in st.session_state[bm_key]) or (current_index in st.session_state[bm_key])
 
     # Progress calculation
     total = max(1, total_questions)
@@ -89,9 +89,11 @@ def render_question_header(
             bm_icon = "⭐" if is_bookmarked else "☆"
             if st.button(bm_icon, key=f"{prefix}_bm_btn_{q.id}", help="Bookmark question"):
                 if is_bookmarked:
-                    st.session_state[bm_key].remove(q.id)
+                    st.session_state[bm_key].discard(q.id)
+                    st.session_state[bm_key].discard(current_index)
                 else:
                     st.session_state[bm_key].add(q.id)
+                    st.session_state[bm_key].add(current_index)
                 st.rerun()
         with c3:
             if st.button("🚩", key=f"{prefix}_report_btn_{q.id}", help="Report issue"):

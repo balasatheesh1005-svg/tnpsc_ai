@@ -22,16 +22,22 @@ def _mission_defaults(user_id, display_username, mission_date):
     return {
         "user_id": user_id,
         "username": display_username,
+        "date": mission_date,
         "mission_date": mission_date,
         "daily_test_completed": False,
+        "revision_completed": False,
         "revision_count": 0,
+        "pyq_solved": 0,
         "questions_answered": 0,
         "reward_claimed": False,
     }
 
 
-def get_today_mission(user=None):
-    """Get or create today's mission row for a user using user_id UUID."""
+def get_today_mission(user=None, context=None):
+    """Get or create today's mission row for a user using user_id UUID or pre-fetched context."""
+    if context is not None and hasattr(context, "mission") and context.mission:
+        return context.mission
+
     user_id = _resolve_user_id(user)
     if not user_id:
         logger.error(f"[DATA INTEGRITY ALERT] get_today_mission failed: user_id IS NULL for user={user}")
@@ -44,7 +50,6 @@ def get_today_mission(user=None):
         supabase.table(TABLE)
         .select("*")
         .eq("user_id", user_id)
-        .eq("mission_date", mission_date)
         .limit(1)
         .execute()
     )
@@ -56,13 +61,22 @@ def get_today_mission(user=None):
         return rows[0]
 
     defaults = _mission_defaults(user_id, display_username, mission_date)
-    supabase.table(TABLE).insert(defaults).execute()
+    try:
+        supabase.table(TABLE).insert({
+            "user_id": user_id,
+            "username": display_username,
+            "date": mission_date,
+            "daily_test_completed": False,
+            "revision_completed": False,
+            "pyq_solved": 0,
+        }).execute()
+    except Exception as e:
+        logger.warning(f"Failed to insert daily_mission: {e}")
 
     response = (
         supabase.table(TABLE)
         .select("*")
         .eq("user_id", user_id)
-        .eq("mission_date", mission_date)
         .limit(1)
         .execute()
     )
@@ -76,8 +90,12 @@ def get_today_mission(user=None):
     return defaults
 
 
+from core.engine_cache import clear_engine_cache
+
+
 def update_daily_test(user=None):
     """Mark today's daily test mission as complete."""
+    clear_engine_cache(user)
     mission = get_today_mission(user)
     if not mission or not mission.get("id"):
         return
@@ -93,36 +111,39 @@ def _increment_today_field(user=None, field_name=""):
         return
     current_value = int(mission.get(field_name) or 0)
 
-    supabase.table(TABLE).update({field_name: current_value + 1}).eq(
-        "id", mission["id"]
-    ).execute()
+    try:
+        supabase.table(TABLE).update({field_name: current_value + 1}).eq(
+            "id", mission["id"]
+        ).execute()
+    except Exception as e:
+        logger.warning(f"Increment field '{field_name}' failed: {e}")
 
 
 def update_revision(user=None):
     """Increment today's completed revision count."""
-    _increment_today_field(user, "revision_count")
+    _increment_today_field(user, "pyq_solved")
 
 
 def update_question_count(user=None):
     """Increment today's answered question count."""
-    _increment_today_field(user, "questions_answered")
+    _increment_today_field(user, "pyq_solved")
 
 
-def get_mission_progress(user=None):
+def get_mission_progress(user=None, context=None):
     """Return today's daily mission progress."""
-    mission = get_today_mission(user)
+    mission = get_today_mission(user, context=context)
 
     daily_test_completed = bool(mission.get("daily_test_completed"))
-    revision_count = int(mission.get("revision_count") or 0)
-    questions_answered = int(mission.get("questions_answered") or 0)
+    revision_count = int(mission.get("revision_count") or (1 if mission.get("revision_completed") else 0))
+    questions_answered = int(mission.get("questions_answered") or mission.get("pyq_solved") or 0)
     reward_claimed = bool(mission.get("reward_claimed"))
 
     completed_count = 0
     if daily_test_completed:
         completed_count += 1
-    if revision_count >= 2:
+    if revision_count >= 1 or mission.get("revision_completed"):
         completed_count += 1
-    if questions_answered >= 20:
+    if questions_answered >= 10:
         completed_count += 1
 
     return {
@@ -134,20 +155,20 @@ def get_mission_progress(user=None):
     }
 
 
-def mission_completed(user=None):
+def mission_completed(user=None, context=None):
     """Return True only when all three daily missions are complete."""
-    progress = get_mission_progress(user)
+    progress = get_mission_progress(user, context=context)
     return progress["completed_count"] == 3
 
 
-def claim_reward(user=None):
+def claim_reward(user=None, context=None):
     """Claim the daily mission reward once all missions are complete."""
     user_id = _resolve_user_id(user)
     if not user_id:
         logger.error(f"[DATA INTEGRITY ALERT] claim_reward failed: user_id IS NULL for user={user}")
         return False
 
-    mission = get_today_mission(user_id)
+    mission = get_today_mission(user_id, context=context)
 
     if not mission or not mission.get("id"):
         return False
@@ -155,20 +176,15 @@ def claim_reward(user=None):
     if bool(mission.get("reward_claimed")):
         return False
 
-    if not mission_completed(user_id):
+    if not mission_completed(user_id, context=context):
         return False
 
-    response = (
-        supabase.table(TABLE)
-        .update({"reward_claimed": True})
-        .eq("id", mission["id"])
-        .eq("reward_claimed", False)
-        .execute()
-    )
-
-    if not response.data:
-        return False
+    try:
+        supabase.table(TABLE).update({"daily_test_completed": True}).eq("id", mission["id"]).execute()
+    except Exception as e:
+        logger.warning(f"claim_reward update error: {e}")
 
     add_xp(user_id, DAILY_MISSION_REWARD_XP, reward_type="daily_mission_completion")
 
     return True
+

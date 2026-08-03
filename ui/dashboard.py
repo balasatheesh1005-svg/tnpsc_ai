@@ -410,7 +410,10 @@ def render_dashboard():
     unlocked_achievements = [a for a in achievements if a[2]]
     latest_achievement = unlocked_achievements[-1] if unlocked_achievements else None
 
+    from core.performance import start_timer, end_timer, record_render
+
     # ---------- RENDER THEMES & STYLES ----------
+    start_timer("Header")
     render_theme_css()
     render_header_styles()
     render_card_styles()
@@ -431,9 +434,12 @@ def render_dashboard():
 
     # ---------- HERO TITLE & SUMMARY ----------
     render_dashboard_hero(user, rank_value, accuracy_value, daily_streak_value)
+    record_render("Header", end_timer("Header"))
 
     # ---------- 8 MANDATORY DASHBOARD CARDS ----------
+    start_timer("Hero Cards")
     section_title("Personalized Learning Intelligence", "What should I study today?")
+
 
     # 1. Today's Recommendation
     if total_due_count > 0:
@@ -510,94 +516,99 @@ def render_dashboard():
                 value="First Step",
                 body="Complete your first test to unlock achievements!",
             )
+    record_render("Hero Cards", end_timer("Hero Cards"))
 
-    # ---------- DETAILED ENGINE PANELS ----------
-    section_title("Smart Revision Scheduler", "Due Today · Overdue · Upcoming")
-    scheduler_html = (
-        '<div class="revision-grid">'
-        + glass_card_html(
-            "📅 Due Today",
-            value=due_today_count,
-            body="High-priority revisions scheduled for today.",
-            extra_html=html_fragment(
-                _render_revision_list_items(revision_data["due_today"])
-            ),
-        )
-        + glass_card_html(
-            "⏳ Overdue",
-            value=overdue_count,
-            body="Topics that need immediate review.",
-            extra_html=html_fragment(
-                _render_revision_list_items(revision_data["overdue"])
-            ),
-        )
-        + glass_card_html(
-            "🔮 Upcoming",
-            value=len(revision_data["upcoming"]),
-            body="What is next in your spaced repetition queue.",
-            extra_html=html_fragment(
-                _render_revision_list_items(revision_data["upcoming"])
-            ),
-        )
-        + "</div>"
-    )
-    st.html(scheduler_html)
+    # ---------- DEFERRED / LAZY LOADED ANALYTICS & STRATEGY ----------
+    start_timer("Revision Panel")
+    with st.expander("📊 Detailed Revision Queue, Charts & Mentor Strategy", expanded=False):
+        section_title("Smart Revision Scheduler", "Due Today · Overdue · Upcoming")
 
-    section_title("Progress Analytics", "Accuracy trend & history")
-    with st.container(border=True):
-        st.markdown("#### 📈 Accuracy Trend")
-        if latest_chart_df.empty:
-            st.info("No users_progress records yet. Complete a test to unlock your trend chart.")
-        else:
-            st.html(
-                analytics_grid(
-                    [
-                        ("Current Accuracy", f"{current_accuracy:g}%"),
-                        ("Best Accuracy", f"{best_accuracy:g}%"),
-                        ("Average Accuracy", f"{average_accuracy:g}%"),
-                    ]
-                ).markup
+        scheduler_html = (
+            '<div class="revision-grid">'
+            + glass_card_html(
+                "📅 Due Today",
+                value=due_today_count,
+                body="High-priority revisions scheduled for today.",
+                extra_html=html_fragment(
+                    _render_revision_list_items(revision_data["due_today"])
+                ),
             )
-            line = (
-                alt.Chart(latest_chart_df)
-                .mark_line(interpolate="monotone", color="#2563EB", strokeWidth=3)
-                .encode(
-                    x=alt.X("test_no:Q", title="Test #", axis=alt.Axis(tickMinStep=1)),
-                    y=alt.Y("accuracy:Q", title="Accuracy", scale=alt.Scale(domain=[0, 100])),
-                    tooltip=[
-                        alt.Tooltip("test_no:Q", title="Test Number"),
-                        alt.Tooltip("accuracy:Q", title="Accuracy", format=".1f"),
-                    ],
+            + glass_card_html(
+                "⏳ Overdue",
+                value=overdue_count,
+                body="Topics that need immediate review.",
+                extra_html=html_fragment(
+                    _render_revision_list_items(revision_data["overdue"])
+                ),
+            )
+            + glass_card_html(
+                "🔮 Upcoming",
+                value=len(revision_data["upcoming"]),
+                body="What is next in your spaced repetition queue.",
+                extra_html=html_fragment(
+                    _render_revision_list_items(revision_data["upcoming"])
+                ),
+            )
+            + "</div>"
+        )
+        st.html(scheduler_html)
+
+        section_title("Progress Analytics", "Accuracy trend & history")
+        with st.container(border=True):
+            st.markdown("#### 📈 Accuracy Trend")
+            if latest_chart_df.empty:
+                st.info("No users_progress records yet. Complete a test to unlock your trend chart.")
+            else:
+                st.html(
+                    analytics_grid(
+                        [
+                            ("Current Accuracy", f"{current_accuracy:g}%"),
+                            ("Best Accuracy", f"{best_accuracy:g}%"),
+                            ("Average Accuracy", f"{average_accuracy:g}%"),
+                        ]
+                    ).markup
                 )
-            )
-            area = (
-                alt.Chart(latest_chart_df)
-                .mark_area(interpolate="monotone", opacity=0.16, color="#3B82F6")
-                .encode(x="test_no:Q", y="accuracy:Q")
-            )
-            target_line = (
-                alt.Chart(pd.DataFrame({"target": [75]}))
-                .mark_rule(color="#2563EB", strokeDash=[4, 4], size=2)
-                .encode(y="target:Q")
-            )
-            chart = alt.layer(area, line, target_line).properties(height=280, width="container").configure_view(strokeOpacity=0)
-            st.altair_chart(chart, use_container_width=True)
+                line = (
+                    alt.Chart(latest_chart_df)
+                    .mark_line(interpolate="monotone", color="#2563EB", strokeWidth=3)
+                    .encode(
+                        x=alt.X("test_no:Q", title="Test #", axis=alt.Axis(tickMinStep=1)),
+                        y=alt.Y("accuracy:Q", title="Accuracy", scale=alt.Scale(domain=[0, 100])),
+                        tooltip=[
+                            alt.Tooltip("test_no:Q", title="Test Number"),
+                            alt.Tooltip("accuracy:Q", title="Accuracy", format=".1f"),
+                        ],
+                    )
+                )
+                area = (
+                    alt.Chart(latest_chart_df)
+                    .mark_area(interpolate="monotone", opacity=0.16, color="#3B82F6")
+                    .encode(x="test_no:Q", y="accuracy:Q")
+                )
+                target_line = (
+                    alt.Chart(pd.DataFrame({"target": [75]}))
+                    .mark_rule(color="#2563EB", strokeDash=[4, 4], size=2)
+                    .encode(y="target:Q")
+                )
+                chart = alt.layer(area, line, target_line).properties(height=280, width="container").configure_view(strokeOpacity=0)
+                st.altair_chart(chart, use_container_width=True)
 
-    mentor_data = mentor_insights(
-        accuracy_value,
-        daily_streak_value,
-        weak_subject,
-        strongest_subject,
-        tests_attempted_value,
-        due_revisions=len(revision_data.get("due_today", [])),
-    )
-    mentor_html = study_plan_card_html(
-        "🧠 Personal Mentor Strategy",
-        revision=mentor_data["revision"],
-        practice=mentor_data["practice"],
-        goal=mentor_data["goal"],
-        estimated_time=mentor_data["time"],
-        message=mentor_data["message"],
-    )
-    st.html(mentor_html)
+        mentor_data = mentor_insights(
+            accuracy_value,
+            daily_streak_value,
+            weak_subject,
+            strongest_subject,
+            tests_attempted_value,
+            due_revisions=len(revision_data.get("due_today", [])),
+        )
+        mentor_html = study_plan_card_html(
+            "🧠 Personal Mentor Strategy",
+            revision=mentor_data["revision"],
+            practice=mentor_data["practice"],
+            goal=mentor_data["goal"],
+            estimated_time=mentor_data["time"],
+            message=mentor_data["message"],
+        )
+        st.html(mentor_html)
+    record_render("Revision Panel", end_timer("Revision Panel"))
 

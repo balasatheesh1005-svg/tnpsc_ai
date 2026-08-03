@@ -8,7 +8,11 @@ from core.weakness_ai import get_weakness
 from core.xp_ai import add_xp
 
 
+from core.engine_cache import clear_engine_cache
+
+
 def complete_test(user, subject, topic, percent):
+    clear_engine_cache(user)
     weak_data = get_weakness(user)
 
     coach_msg = ai_coach(user, percent, 100, weak_data)

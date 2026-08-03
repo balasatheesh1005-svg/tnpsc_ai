@@ -10,10 +10,24 @@ from core.revision_ai import (
     get_revision_overview,
     update_revision,
 )
-from core.topics_loader import format_subject_name, format_topic_name
 from core.weakness_ai import get_weakness
 
 logger = logging.getLogger(__name__)
+
+
+def format_subject_name(subject: str) -> str:
+    """Helper to format subject name cleanly."""
+    if not subject:
+        return "General"
+    return str(subject).replace("_", " ").replace("-", " ").title()
+
+
+def format_topic_name(topic: str) -> str:
+    """Helper to format topic name cleanly."""
+    if not topic:
+        return "General"
+    return str(topic).replace("_", " ").replace("-", " ").title()
+
 
 # Standard Question Types & Repositories Mapping
 QUESTION_TYPES = [
@@ -131,14 +145,17 @@ def _analyze_5_level_target(subject: str, topic: str, progress_rows: List[Dict[s
     }
 
 
-def get_intelligent_revision_plan(user: str = None) -> Dict[str, Any]:
+def get_intelligent_revision_plan(user: str = None, context: Optional[Any] = None) -> Dict[str, Any]:
     """
     Returns today's 5-level intelligent revision target recommendation.
     Reuses existing Revision Overview, Weakness, and Progress data.
     """
-    overview = get_revision_overview(user)
-    progress_rows = get_progress(user)
-    weakness_data = get_weakness(user)
+    from core.user_context import UserContext
+    ctx = context or UserContext.get_or_create(user)
+
+    overview = get_revision_overview(user, context=ctx)
+    progress_rows = get_progress(user, context=ctx)
+    weakness_data = get_weakness(user, context=ctx)
 
     due_today = overview.get("due_today", [])
     overdue = overview.get("overdue", [])
@@ -176,7 +193,7 @@ def get_intelligent_revision_plan(user: str = None) -> Dict[str, Any]:
     return target
 
 
-def get_revision_analytics_v2(user: str = None) -> Dict[str, Any]:
+def get_revision_analytics_v2(user: str = None, context: Optional[Any] = None) -> Dict[str, Any]:
     """
     Returns comprehensive 5-level analytics for Smart Revision Dashboard:
     - Overdue items
@@ -186,9 +203,12 @@ def get_revision_analytics_v2(user: str = None) -> Dict[str, Any]:
     - Weakest Revision Areas (down to Question Type)
     - Recently Revised History
     """
-    overview = get_revision_overview(user)
-    progress_rows = get_progress(user)
-    weakness_data = get_weakness(user)
+    from core.user_context import UserContext
+    ctx = context or UserContext.get_or_create(user)
+
+    overview = get_revision_overview(user, context=ctx)
+    progress_rows = get_progress(user, context=ctx)
+    weakness_data = get_weakness(user, context=ctx)
 
     today = datetime.date.today()
     tomorrow = today + datetime.timedelta(days=1)
@@ -278,12 +298,13 @@ def get_revision_analytics_v2(user: str = None) -> Dict[str, Any]:
     }
 
 
-def get_revision_mentor_message(user: str = None) -> str:
+def get_revision_mentor_message(user: str = None, context: Optional[Any] = None) -> str:
     """
     Returns rule-based mentor guidance template for Smart Revision Engine V2.
     No LLM used.
     """
-    plan = get_intelligent_revision_plan(user)
+    plan = get_intelligent_revision_plan(user, context=context)
+
     qtype = plan.get("level4_question_type", "Medium Questions")
     repo = plan.get("level3_repository", "Medium Repository")
     status = plan.get("status", "")

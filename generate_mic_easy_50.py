@@ -1,0 +1,2123 @@
+import json
+import os
+
+questions = [
+    # Q1
+    {
+        "id": "MIC_E_001",
+        "subject": "Polity",
+        "topic": "Making of Indian Constitution",
+        "difficulty": "Easy",
+        "question_type": "Direct MCQ",
+        "question": {
+            "en": "Who among the following proposed the idea of a Constituent Assembly for India for the first time in 1934?",
+            "ta": "1934-இல் இந்தியாவிற்கான அரசியலமைப்பு நிர்ணய அவை என்ற யோசனையை முதன்முதலில் முன்மொழிந்தவர் யார்?"
+        },
+        "options": [
+            {"id": "A", "en": "M.N. Roy", "ta": "எம்.என். ராய்"},
+            {"id": "B", "en": "Jawaharlal Nehru", "ta": "ஜவஹர்லால் நேரு"},
+            {"id": "C", "en": "Mahatma Gandhi", "ta": "மகாத்மா காந்தி"},
+            {"id": "D", "en": "Dr. B.R. Ambedkar", "ta": "டாக்டர் பி.ஆர். அம்பேத்கர்"}
+        ],
+        "correct_answer": "A",
+        "explanation": {
+            "en": "M.N. Roy, a pioneer of the communist movement in India, first put forward the idea of a Constituent Assembly for India in 1934.",
+            "ta": "இந்திய கம்யூனிஸ்ட் இயக்கத்தின் முன்னோடியான எம்.என். ராய் 1934-இல் முதன்முதலில் இந்தியாவிற்கான அரசியலமைப்பு நிர்ணய அவை என்ற யோசனையை முன்வைத்தார்."
+        },
+        "why_not_others": {
+            "A": {"en": "Correct. M.N. Roy proposed it first in 1934.", "ta": "சரி. எம்.என். ராய் 1934-இல் முதன்முதலில் முன்மொழிந்தார்."},
+            "B": {"en": "Incorrect. INC formally demanded it in 1935, and Nehru declared it in 1938.", "ta": "தவறு. காங்கிரஸ் கட்சி 1935-இல் அதிகாரப்பூர்வமாக கோரியது, நேரு 1938-இல் அறிவித்தார்."},
+            "C": {"en": "Incorrect. Mahatma Gandhi spoke of Swaraj in 1922, but Roy proposed the Assembly in 1934.", "ta": "தவறு. காந்தியடிகள் 1922-இல் சுயராஜ்யம் பற்றிக் கூறினார், ஆனால் ராய் 1934-இல் அவையை முன்மொழிந்தார்."},
+            "D": {"en": "Incorrect. Dr. B.R. Ambedkar later chaired the Drafting Committee.", "ta": "தவறு. டாக்டர் பி.ஆர். அம்பேத்கர் பின்னர் வரைவுக் குழுவின் தலைவராக பணியாற்றினார்."}
+        },
+        "tnpsc_tip": {
+            "en": "Remember the year 1934 and M.N. Roy for the individual proposal, 1935 for INC demand, and 1938 for Nehru's declaration.",
+            "ta": "தனிநபர் யோசனைக்கு 1934 (எம்.என். ராய்), காங்கிரஸ் கோரிக்கைக்கு 1935, நேருவின் அறிவிப்பிற்கு 1938 ஆகிய ஆண்டுகளை நினைவில் கொள்க."
+        },
+        "revision_fact": {
+            "en": "In 1935, the Indian National Congress (INC) for the first time officially demanded a Constituent Assembly.",
+            "ta": "1935-இல் இந்திய தேசிய காங்கிரஸ் முதன்முறையாக அதிகாரப்பூர்வமாக அரசியலமைப்பு நிர்ணய அவையைக் கோரியது."
+        },
+        "source_reference": ["M. Laxmikanth", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": "Remember",
+        "estimated_time_sec": 40,
+        "pyq_similarity": "High",
+        "tags": ["Constituent Assembly", "M.N. Roy", "1934 Proposal"]
+    },
+    # Q2
+    {
+        "id": "MIC_E_002",
+        "subject": "Polity",
+        "topic": "Making of Indian Constitution",
+        "difficulty": "Easy",
+        "question_type": "Direct MCQ",
+        "question": {
+            "en": "Under which of the following plans was the Constituent Assembly of India constituted in November 1946?",
+            "ta": "நவம்பர் 1946-இல் எந்தத் திட்டத்தின் கீழ் இந்திய அரசியலமைப்பு நிர்ணய அவை அமைக்கப்பட்டது?"
+        },
+        "options": [
+            {"id": "A", "en": "Cripps Proposals (1942)", "ta": "கிரிப்ஸ் தூதுக்குழு (1942)"},
+            {"id": "B", "en": "Cabinet Mission Plan (1946)", "ta": "கேபினட் தூதுக்குழு திட்டம் (1946)"},
+            {"id": "C", "en": "Mountbatten Plan (1947)", "ta": "மவுண்ட்பேட்டன் திட்டம் (1947)"},
+            {"id": "D", "en": "Wavell Plan (1945)", "ta": "வேவல் திட்டம் (1945)"}
+        ],
+        "correct_answer": "B",
+        "explanation": {
+            "en": "The Constituent Assembly was constituted in November 1946 under the scheme formulated by the Cabinet Mission Plan.",
+            "ta": "கேபினட் தூதுக்குழு திட்டத்தின் கீழ் உருவாக்கப்பட்ட திட்டத்தின்படியே நவம்பர் 1946-இல் அரசியலமைப்பு நிர்ணய அவை அமைக்கப்பட்டது."
+        },
+        "why_not_others": {
+            "A": {"en": "Incorrect. Cripps Proposals of 1942 were rejected by the Muslim League and Congress.", "ta": "தவறு. 1942 கிரிப்ஸ் தூதுக்குழு திட்டத்தை முஸ்லிம் லீக் மற்றும் காங்கிரஸ் நிராகரித்தன."},
+            "B": {"en": "Correct. Cabinet Mission Plan formed the framework in Nov 1946.", "ta": "சரி. கேபினட் தூதுக்குழு திட்டமே நவம்பர் 1946-இல் அவையை அமைத்தது."},
+            "C": {"en": "Incorrect. Mountbatten Plan of June 3, 1947 dealt with partition.", "ta": "தவறு. ஜூன் 3, 1947 மவுண்ட்பேட்டன் திட்டம் பிரிவினையைக் கையாண்டது."},
+            "D": {"en": "Incorrect. Wavell Plan was presented at the Shimla Conference in 1945.", "ta": "தவறு. வேவல் திட்டம் 1945 சிம்லா மாநாட்டில் முன்வைக்கப்பட்டது."}
+        },
+        "tnpsc_tip": {
+            "en": "The Cabinet Mission Plan rejected the idea of two separate Constituent Assemblies.",
+            "ta": "கேபினட் தூதுக்குழு இரண்டு தனித்தனி அரசியலமைப்பு நிர்ணய அவைகள் என்ற கோரிக்கையை நிராகரித்தது."
+        },
+        "revision_fact": {
+            "en": "The Cabinet Mission arrived in India in March 1946 and published its plan on May 16, 1946.",
+            "ta": "கேபினட் தூதுக்குழு மார்ச் 1946-இல் இந்தியா வந்து மே 16, 1946-இல் தனது திட்டத்தை வெளியிட்டது."
+        },
+        "source_reference": ["M. Laxmikanth", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": "Remember",
+        "estimated_time_sec": 45,
+        "pyq_similarity": "High",
+        "tags": ["Cabinet Mission Plan", "1946", "Assembly Formation"]
+    },
+    # Q3
+    {
+        "id": "MIC_E_003",
+        "subject": "Polity",
+        "topic": "Making of Indian Constitution",
+        "difficulty": "Easy",
+        "question_type": "Direct MCQ",
+        "question": {
+            "en": "Who among the following was NOT a member of the British Cabinet Mission sent to India in 1946?",
+            "ta": "1946-இல் இந்தியாவிற்கு அனுப்பப்பட்ட பிரிட்டிஷ் கேபினட் தூதுக்குழுவில் உறுப்பினராக இல்லாதவர் யார்?"
+        },
+        "options": [
+            {"id": "A", "en": "Lord Pethick-Lawrence", "ta": "பெதிக் லாரன்ஸ் பிரபு"},
+            {"id": "B", "en": "Sir Stafford Cripps", "ta": "சர் ஸ்டாஃபோர்டு கிரிப்ஸ்"},
+            {"id": "C", "en": "A.V. Alexander", "ta": "ஏ.வி. அலெக்சாண்டர்"},
+            {"id": "D", "en": "Lord Wavell", "ta": "வேவல் பிரபு"}
+        ],
+        "correct_answer": "D",
+        "explanation": {
+            "en": "The Cabinet Mission comprised three British Cabinet Ministers: Lord Pethick-Lawrence (Secretary of State for India), Sir Stafford Cripps, and A.V. Alexander. Lord Wavell was the Viceroy.",
+            "ta": "கேபினட் தூதுக்குழுவில் மூன்று அமைச்சர்கள் இருந்தனர்: பெதிக் லாரன்ஸ், ஸ்டாஃபோர்டு கிரிப்ஸ், ஏ.வி. அலெக்சாண்டர். வேவல் பிரபு அக்காலகட்டத்தில் வைஸ்ராயாக இருந்தார்."
+        },
+        "why_not_others": {
+            "A": {"en": "Incorrect. Lord Pethick-Lawrence was the Chairman of the Cabinet Mission.", "ta": "தவறு. பெதிக் லாரன்ஸ் பிரபு கேபினட் தூதுக்குழுவின் தலைவராக இருந்தார்."},
+            "B": {"en": "Incorrect. Sir Stafford Cripps was the President of the Board of Trade and a member.", "ta": "தவறு. சர் ஸ்டாஃபோர்டு கிரிப்ஸ் வர்த்தக வாரியத் தலைவராக இருந்தார்."},
+            "C": {"en": "Incorrect. A.V. Alexander was the First Lord of the Admiralty and a member.", "ta": "தவறு. ஏ.வி. அலெக்சாண்டர் கடற்படைத் தலைவராக இருந்தார்."},
+            "D": {"en": "Correct. Lord Wavell was the Viceroy of India, not a member of the Mission.", "ta": "சரி. வேவல் பிரபு இந்தியாவின் வைஸ்ராய் ஆவர், தூதுக்குழு உறுப்பினர் அல்ல."}
+        },
+        "tnpsc_tip": {
+            "en": "Remember the trio: Pethick-Lawrence (Head), Cripps, and Alexander.",
+            "ta": "பெதிக் லாரன்ஸ் (தலைவர்), கிரிப்ஸ், அலெக்சாண்டர் ஆகிய மூவரையும் நினைவில் கொள்க."
+        },
+        "revision_fact": {
+            "en": "Lord Pethick-Lawrence was the Secretary of State for India at the time of the Cabinet Mission.",
+            "ta": "கேபினட் தூதுக்குழுவின் போது பெதிக் லாரன்ஸ் பிரபு இந்தியாவிற்கான வெளியுறவுச் செயலாளராக இருந்தார்."
+        },
+        "source_reference": ["M. Laxmikanth", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": "Remember",
+        "estimated_time_sec": 45,
+        "pyq_similarity": "High",
+        "tags": ["Cabinet Mission Members", "Pethick-Lawrence", "Cripps", "Alexander"]
+    },
+    # Q4
+    {
+        "id": "MIC_E_004",
+        "subject": "Polity",
+        "topic": "Making of Indian Constitution",
+        "difficulty": "Easy",
+        "question_type": "Direct MCQ",
+        "question": {
+            "en": "What was the total strength of the Constituent Assembly originally fixed in 1946 prior to partition?",
+            "ta": "1946-இல் பிரிவினைக்கு முன்னர் இந்திய அரசியலமைப்பு நிர்ணய அவையின் மொத்த உறுப்பினர்களின் எண்ணிக்கை யாது?"
+        },
+        "options": [
+            {"id": "A", "en": "389", "ta": "389"},
+            {"id": "B", "en": "299", "ta": "299"},
+            {"id": "C", "en": "296", "ta": "296"},
+            {"id": "D", "en": "543", "ta": "543"}
+        ],
+        "correct_answer": "A",
+        "explanation": {
+            "en": "The total strength of the Constituent Assembly originally fixed under the Cabinet Mission Plan in 1946 was 389.",
+            "ta": "1946-இல் கேபினட் தூதுக்குழு திட்டத்தின் கீழ் அரசியலமைப்பு நிர்ணய அவையின் ஆரம்ப மொத்த உறுப்பினர்கள் எண்ணிக்கை 389 ஆகும்."
+        },
+        "why_not_others": {
+            "A": {"en": "Correct. Total original strength in 1946 was 389.", "ta": "சரி. 1946-இல் ஆரம்ப மொத்த எண்ணிக்கை 389."},
+            "B": {"en": "Incorrect. 299 was the reduced strength after partition in 1947.", "ta": "தவறு. 299 என்பது 1947 பிரிவினைக்குப் பிந்தைய குறைந்த எண்ணிக்கை."},
+            "C": {"en": "Incorrect. 296 seats were allotted to British India in 1946.", "ta": "தவறு. 296 இடங்கள் பிரிட்டிஷ் இந்தியாவிற்கு ஒதுக்கப்பட்டவை."},
+            "D": {"en": "Incorrect. 543 is the present elective strength of Lok Sabha.", "ta": "தவறு. 543 என்பது தற்போதைய மக்களவை உறுப்பினர்கள் எண்ணிக்கை."}
+        },
+        "tnpsc_tip": {
+            "en": "Original Strength = 389 (296 British India + 93 Princely States). Post-partition Strength = 299.",
+            "ta": "ஆரம்ப எண்ணிக்கை = 389 (296 பிரிட்டிஷ் இந்தியா + 93 சுதேச சமஸ்தானங்கள்). பிரிவினைக்குப் பின் = 299."
+        },
+        "revision_fact": {
+            "en": "Out of 296 seats for British India, 292 were from eleven governor's provinces and 4 from chief commissioners' provinces.",
+            "ta": "பிரிட்டிஷ் இந்தியாவிற்கான 296 இடங்களில், 292 ஆளுநர் மாகாணங்களிலிருந்தும், 4 தலைமை ஆணையர் மாகாணங்களிலிருந்தும் தேர்வாகினர்."
+        },
+        "source_reference": ["M. Laxmikanth", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": "Remember",
+        "estimated_time_sec": 35,
+        "pyq_similarity": "High",
+        "tags": ["Assembly Strength", "389 Seats", "1946 Composition"]
+    },
+    # Q5
+    {
+        "id": "MIC_E_005",
+        "subject": "Polity",
+        "topic": "Making of Indian Constitution",
+        "difficulty": "Easy",
+        "question_type": "Direct MCQ",
+        "question": {
+            "en": "Out of the 389 seats in the original Constituent Assembly, how many were allotted to Princely States?",
+            "ta": "ஆரம்ப அரசியலமைப்பு நிர்ணய அவையின் 389 இடங்களில், சுதேச சமஸ்தானங்களுக்கு ஒதுக்கப்பட்ட இடங்கள் எத்தனை?"
+        },
+        "options": [
+            {"id": "A", "en": "93", "ta": "93"},
+            {"id": "B", "en": "296", "ta": "296"},
+            {"id": "C", "en": "70", "ta": "70"},
+            {"id": "D", "en": "229", "ta": "229"}
+        ],
+        "correct_answer": "A",
+        "explanation": {
+            "en": "Out of 389 total seats, 296 seats were allotted to British India and 93 seats were allotted to the Princely States.",
+            "ta": "மொத்த 389 இடங்களில், 296 இடங்கள் பிரிட்டிஷ் இந்தியாவிற்கும் 93 இடங்கள் சுதேச சமஸ்தானங்களுக்கும் ஒதுக்கப்பட்டன."
+        },
+        "why_not_others": {
+            "A": {"en": "Correct. 93 seats were allotted to Princely States.", "ta": "சரி. 93 இடங்கள் சுதேச சமஸ்தானங்களுக்கு ஒதுக்கப்பட்டன."},
+            "B": {"en": "Incorrect. 296 seats were for British India.", "ta": "தவறு. 296 இடங்கள் பிரிட்டிஷ் இந்தியாவிற்கு உரியவை."},
+            "C": {"en": "Incorrect. 70 seats were for Princely States after partition in 1947.", "ta": "தவறு. 70 இடங்கள் பிரிவினைக்குப் பிறகு சுதேச சமஸ்தானங்களுக்கு எஞ்சியவை."},
+            "D": {"en": "Incorrect. 229 seats were for provinces after partition.", "ta": "தவறு. 229 இடங்கள் பிரிவினைக்குப் பிறகு மாகாணங்களுக்கு எஞ்சியவை."}
+        },
+        "tnpsc_tip": {
+            "en": "Each province and princely state was allocated seats in proportion to their respective population (roughly 1 seat per million).",
+            "ta": "ஒவ்வொரு மாகாணம் மற்றும் சுதேச அரசிற்கும் மக்கள் தொகைக்கு ஏற்ப (தோராயமாக 10 லட்சத்திற்கு 1 இடம்) இடங்கள் ஒதுக்கப்பட்டன."
+        },
+        "revision_fact": {
+            "en": "Seats allocated to each British province were divided among Muslims, Sikhs, and General communities.",
+            "ta": "பிரிட்டிஷ் மாகாணங்களுக்கான இடங்கள் முஸ்லிம்கள், சீக்கியர்கள் மற்றும் பொதுப் பிரிவினரிடையே பிரிக்கப்பட்டன."
+        },
+        "source_reference": ["M. Laxmikanth", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": "Remember",
+        "estimated_time_sec": 40,
+        "pyq_similarity": "High",
+        "tags": ["Princely States", "93 Seats", "Allocation"]
+    },
+    # Q6
+    {
+        "id": "MIC_E_006",
+        "subject": "Polity",
+        "topic": "Making of Indian Constitution",
+        "difficulty": "Easy",
+        "question_type": "Basic Conceptual",
+        "question": {
+            "en": "How were the members of the Constituent Assembly from British Indian provinces elected?",
+            "ta": "பிரிட்டிஷ் இந்திய மாகாணங்களிலிருந்து அரசியலமைப்பு நிர்ணய அவை உறுப்பினர்கள் எவ்வாறு தேர்ந்தெடுக்கப்பட்டனர்?"
+        },
+        "options": [
+            {"id": "A", "en": "Directly elected by adult franchise", "ta": "வயதுவந்தோர் வாக்குரிமை மூலம் நேரடியாகத் தேர்ந்தெடுக்கப்பட்டனர்"},
+            {"id": "B", "en": "Indirectly elected by members of provincial legislative assemblies", "ta": "மாகாண சட்டமன்ற உறுப்பினர்களால் மறைமுகமாகத் தேர்ந்தெடுக்கப்பட்டனர்"},
+            {"id": "C", "en": "Nominated by the British Crown", "ta": "பிரிட்டிஷ் அரசரால் நியமனம் செய்யப்பட்டனர்"},
+            {"id": "D", "en": "Nominated by the Governor-General", "ta": "கவர்னர்-ஜெனரலால் நியமனம் செய்யப்பட்டனர்"}
+        ],
+        "correct_answer": "B",
+        "explanation": {
+            "en": "The members from British Indian provinces were elected indirectly by the members of provincial legislative assemblies using the single transferable vote system.",
+            "ta": "பிரிட்டிஷ் இந்திய மாகாண உறுப்பினர்கள், மாகாண சட்டமன்ற உறுப்பினர்களால் ஒற்றை மாற்றத்தக்க வாக்கு முறை மூலம் மறைமுகமாகத் தேர்ந்தெடுக்கப்பட்டனர்."
+        },
+        "why_not_others": {
+            "A": {"en": "Incorrect. The Assembly was not directly elected on adult franchise.", "ta": "தவறு. அவை வயதுவந்தோர் வாக்குரிமையால் நேரடியாகத் தேர்ந்தெடுக்கப்படவில்லை."},
+            "B": {"en": "Correct. Indirect election by provincial assemblies.", "ta": "சரி. மாகாண சட்டமன்றங்களால் மறைமுகத் தேர்வு."},
+            "C": {"en": "Incorrect. They were elected, not nominated by the Crown.", "ta": "தவறு. அவர்கள் அரசரால் நியமிக்கப்படவில்லை."},
+            "D": {"en": "Incorrect. Governor-General did not nominate provincial members.", "ta": "தவறு. கவர்னர்-ஜெனரல் மாகாண உறுப்பினர்களை நியமிக்கவில்லை."}
+        },
+        "tnpsc_tip": {
+            "en": "Constituent Assembly was a partly elected and partly nominated body.",
+            "ta": "அரசியலமைப்பு நிர்ணய அவை பகுதி அளவு தேர்ந்தெடுக்கப்பட்ட மற்றும் பகுதி அளவு நியமிக்கப்பட்ட அமைப்பாகும்."
+        },
+        "revision_fact": {
+            "en": "The elections for 296 British Indian seats were held in July-August 1946.",
+            "ta": "296 பிரிட்டிஷ் இந்திய இடங்களுக்கான தேர்தல்கள் ஜூலை-ஆகஸ்ட் 1946-இல் நடைபெற்றன."
+        },
+        "source_reference": ["M. Laxmikanth", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": "Understand",
+        "estimated_time_sec": 45,
+        "pyq_similarity": "High",
+        "tags": ["Indirect Election", "Provincial Assemblies", "Single Transferable Vote"]
+    },
+    # Q7
+    {
+        "id": "MIC_E_007",
+        "subject": "Polity",
+        "topic": "Making of Indian Constitution",
+        "difficulty": "Easy",
+        "question_type": "Direct MCQ",
+        "question": {
+            "en": "How were the representatives of the Princely States to be chosen for the Constituent Assembly?",
+            "ta": "அரசியலமைப்பு நிர்ணய அவைக்கு சுதேச சமஸ்தானங்களின் பிரதிநிதிகள் எவ்வாறு தேர்ந்தெடுக்கப்பட்டனர்?"
+        },
+        "options": [
+            {"id": "A", "en": "Elected directly by the people of Princely States", "ta": "சுதேச சமஸ்தான மக்களால் நேரடியாகத் தேர்ந்தெடுக்கப்பட்டனர்"},
+            {"id": "B", "en": "Nominated by the heads of the Princely States", "ta": "சுதேச சமஸ்தானங்களின் தலைவர்களால் நியமனம் செய்யப்பட்டனர்"},
+            {"id": "C", "en": "Elected by provincial governors", "ta": "மாகாண ஆளுநர்களால் தேர்ந்தெடுக்கப்பட்டனர்"},
+            {"id": "D", "en": "Chosen by the Viceroy of India", "ta": "இந்திய வைஸ்ராயால் தேர்ந்தெடுக்கப்பட்டனர்"}
+        ],
+        "correct_answer": "B",
+        "explanation": {
+            "en": "The representatives of Princely States were to be nominated by the heads (rulers) of the Princely States.",
+            "ta": "சுதேச சமஸ்தானங்களின் பிரதிநிதிகள் அந்தந்த சமஸ்தானங்களின் தலைவர்களால் (அரசர்களால்) நியமனம் செய்யப்பட வேண்டும்."
+        },
+        "why_not_others": {
+            "A": {"en": "Incorrect. People of Princely States did not vote directly.", "ta": "தவறு. சமஸ்தான மக்கள் நேரடியாக வாக்களிக்கவில்லை."},
+            "B": {"en": "Correct. Nominated by heads of Princely States.", "ta": "சரி. சமஸ்தானத் தலைவர்களால் நியமனம் செய்யப் பெற்றனர்."},
+            "C": {"en": "Incorrect. Provincial governors had no role in princely state nominations.", "ta": "தவறு. மாகாண ஆளுநர்களுக்கு இதில் பங்கில்லை."},
+            "D": {"en": "Incorrect. Viceroy did not select them.", "ta": "தவறு. வைஸ்ராய் தேர்வு செய்யவில்லை."}
+        },
+        "tnpsc_tip": {
+            "en": "British Indian members = Indirectly Elected; Princely State members = Nominated.",
+            "ta": "பிரிட்டிஷ் இந்திய உறுப்பினர்கள் = மறைமுகமாகத் தேர்ந்தெடுக்கப்பட்டவர்கள்; சமஸ்தான உறுப்பினர்கள் = நியமிக்கப்பட்டவர்கள்."
+        },
+        "revision_fact": {
+            "en": "Initially, the 93 seats allotted to Princely States stayed away from the Constituent Assembly.",
+            "ta": "ஆரம்பத்தில் சுதேச சமஸ்தானங்களுக்கு ஒதுக்கப்பட்ட 93 இடங்களின் பிரதிநிதிகள் அவையில் பங்கேற்காமல் விலகியிருந்தனர்."
+        },
+        "source_reference": ["M. Laxmikanth", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": "Remember",
+        "estimated_time_sec": 40,
+        "pyq_similarity": "High",
+        "tags": ["Princely States Nomination", "Composition"]
+    },
+    # Q8
+    {
+        "id": "MIC_E_008",
+        "subject": "Polity",
+        "topic": "Making of Indian Constitution",
+        "difficulty": "Easy",
+        "question_type": "Direct MCQ",
+        "question": {
+            "en": "On which date did the Constituent Assembly hold its first historic meeting?",
+            "ta": "இந்திய அரசியலமைப்பு நிர்ணய அவை தனது முதல் வரலாற்றுச் சிறப்புமிக்க கூட்டத்தை எந்த நாளில் நடத்தியது?"
+        },
+        "options": [
+            {"id": "A", "en": "December 9, 1946", "ta": "டிசம்பர் 9, 1946"},
+            {"id": "B", "en": "December 11, 1946", "ta": "டிசம்பர் 11, 1946"},
+            {"id": "C", "en": "December 13, 1946", "ta": "டிசம்பர் 13, 1946"},
+            {"id": "D", "en": "August 15, 1947", "ta": "ஆகஸ்ட் 15, 1947"}
+        ],
+        "correct_answer": "A",
+        "explanation": {
+            "en": "The Constituent Assembly held its first meeting on December 9, 1946, in the Constitution Hall (now Central Hall of Parliament) in New Delhi.",
+            "ta": "அரசியலமைப்பு நிர்ணய அவை தனது முதல் கூட்டத்தை டிசம்பர் 9, 1946 அன்று புதுடெல்லியிலுள்ள அரசியலமைப்பு அரங்கில் நடத்தியது."
+        },
+        "why_not_others": {
+            "A": {"en": "Correct. December 9, 1946 was the first meeting date.", "ta": "சரி. டிசம்பர் 9, 1946 முதல் கூட்டம் நடைபெற்ற நாள்."},
+            "B": {"en": "Incorrect. Dec 11, 1946: Dr. Rajendra Prasad elected President.", "ta": "தவறு. டிசம்பர் 11, 1946: டாக்டர் ராஜேந்திர பிரசாத் தலைவராகத் தேர்ந்தெடுக்கப்பட்டார்."},
+            "C": {"en": "Incorrect. Dec 13, 1946: Nehru moved Objectives Resolution.", "ta": "தவறு. டிசம்பர் 13, 1946: நேரு குறிக்கோள் தீர்மானத்தை முன்மொழிந்தார்."},
+            "D": {"en": "Incorrect. Aug 15, 1947: India attained Independence.", "ta": "தவறு. ஆகஸ்ட் 15, 1947: இந்தியா சுதந்திரம் பெற்றது."}
+        },
+        "tnpsc_tip": {
+            "en": "The Muslim League boycotted the first meeting and insisted on a separate state of Pakistan. Only 211 members attended.",
+            "ta": "முஸ்லிம் லீக் முதல் கூட்டத்தைப் புறக்கணித்தது. இதில் 211 உறுப்பினர்கள் மட்டுமே கலந்து கொண்டனர்."
+        },
+        "revision_fact": {
+            "en": "Winston Churchill commented on the Muslim League boycott: 'The Assembly meeting was like a wedding without the bride.'",
+            "ta": "முஸ்லிம் லீக் புறக்கணிப்பு பற்றி வின்ஸ்டன் சர்ச்சில்: 'அவையின் கூட்டம் மணமகள் இல்லாத திருமணம் போன்றது' எனக் விமர்சித்தார்."
+        },
+        "source_reference": ["M. Laxmikanth", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": "Remember",
+        "estimated_time_sec": 35,
+        "pyq_similarity": "High",
+        "tags": ["First Meeting", "December 9 1946", "Assembly Session"]
+    },
+    # Q9
+    {
+        "id": "MIC_E_009",
+        "subject": "Polity",
+        "topic": "Making of Indian Constitution",
+        "difficulty": "Easy",
+        "question_type": "Direct MCQ",
+        "question": {
+            "en": "Who served as the temporary President of the Constituent Assembly during its first meeting on December 9, 1946?",
+            "ta": "டிசம்பர் 9, 1946 அன்று நடைபெற்ற முதல் கூட்டத்தில் அரசியலமைப்பு நிர்ணய அவையின் தற்காலிகத் தலைவராகப் பணியாற்றியவர் யார்?"
+        },
+        "options": [
+            {"id": "A", "en": "Dr. Sachchidananda Sinha", "ta": "டாக்டர் சச்சிதானந்த சின்ஹா"},
+            {"id": "B", "en": "Dr. Rajendra Prasad", "ta": "டாக்டர் ராஜேந்திர பிரசாத்"},
+            {"id": "C", "en": "Dr. B.R. Ambedkar", "ta": "டாக்டர் பி.ஆர். அம்பேத்கர்"},
+            {"id": "D", "en": "C. Rajagopalachari", "ta": "சி. ராஜகோபாலாச்சாரி"}
+        ],
+        "correct_answer": "A",
+        "explanation": {
+            "en": "Dr. Sachchidananda Sinha, the oldest member, was elected as the temporary President of the Constituent Assembly following the French practice.",
+            "ta": "பிரெஞ்சு முறையைப் பின்பற்றி, அவையின் மூத்த உறுப்பினரான டாக்டர் சச்சிதானந்த சின்ஹா தற்காலிகத் தலைவராகத் தேர்ந்தெடுக்கப்பட்டார்."
+        },
+        "why_not_others": {
+            "A": {"en": "Correct. Dr. Sachchidananda Sinha was the temporary President.", "ta": "சரி. டாக்டர் சச்சிதானந்த சின்ஹா தற்காலிகத் தலைவர் ஆவர்."},
+            "B": {"en": "Incorrect. Dr. Rajendra Prasad became the permanent President on Dec 11, 1946.", "ta": "தவறு. டாக்டர் ராஜேந்திர பிரசாத் டிசம்பர் 11 அன்று நிரந்தரத் தலைவரானார்."},
+            "C": {"en": "Incorrect. Dr. Ambedkar was the Chairman of the Drafting Committee.", "ta": "தவறு. டாக்டர் அம்பேத்கர் வரைவுக் குழுவின் தலைவர்."},
+            "D": {"en": "Incorrect. C. Rajagopalachari was a prominent member and later Governor-General.", "ta": "தவறு. சி. ராஜகோபாலாச்சாரி ஒரு முக்கிய உறுப்பினர் ஆவர்."}
+        },
+        "tnpsc_tip": {
+            "en": "Remember: Temporary President = Dr. Sachchidananda Sinha; Permanent President = Dr. Rajendra Prasad.",
+            "ta": "நினைவில் கொள்க: தற்காலிகத் தலைவர் = டாக்டர் சச்சிதானந்த சின்ஹா; நிரந்தரத் தலைவர் = டாக்டர் ராஜேந்திர பிரசாத்."
+        },
+        "revision_fact": {
+            "en": "Dr. Sachchidananda Sinha was proposed for temporary presidency by Acharya J.B. Kripalani.",
+            "ta": "ஆச்சார்யா ஜே.பி. கிருபளானி டாக்டர் சச்சிதானந்த சின்ஹாவின் பெயரை தற்காலிகத் தலைவராக முன்மொழிந்தார்."
+        },
+        "source_reference": ["M. Laxmikanth", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": "Remember",
+        "estimated_time_sec": 35,
+        "pyq_similarity": "High",
+        "tags": ["Temporary President", "Sachchidananda Sinha", "French Practice"]
+    },
+    # Q10
+    {
+        "id": "MIC_E_010",
+        "subject": "Polity",
+        "topic": "Making of Indian Constitution",
+        "difficulty": "Easy",
+        "question_type": "Simple PYQ Pattern",
+        "question": {
+            "en": "The practice of appointing the oldest member as temporary President of the Constituent Assembly was borrowed from which country?",
+            "ta": "அரசியலமைப்பு நிர்ணய அவையின் மூத்த உறுப்பினரை தற்காலிகத் தலைவராக நியமிக்கும் முறை எந்த நாட்டிலிருந்து பின்பற்றப்பட்டது?"
+        },
+        "options": [
+            {"id": "A", "en": "France", "ta": "பிரான்ஸ்"},
+            {"id": "B", "en": "USA", "ta": "அமெரிக்கா"},
+            {"id": "C", "en": "Britain", "ta": "பிரிட்டன்"},
+            {"id": "D", "en": "Canada", "ta": "கனடா"}
+        ],
+        "correct_answer": "A",
+        "explanation": {
+            "en": "Following the French practice, Dr. Sachchidananda Sinha, the oldest member, was elected as the temporary President of the Assembly.",
+            "ta": "பிரெஞ்சு பாரம்பரிய முறையைப் பின்பற்றி, அவையின் மிக மூத்த உறுப்பினரான டாக்டர் சச்சிதானந்த சின்ஹா தற்காலிகத் தலைவராகத் தேர்ந்தெடுக்கப்பட்டார்."
+        },
+        "why_not_others": {
+            "A": {"en": "Correct. Borrowed from French practice.", "ta": "சரி. பிரெஞ்சு முறையிலிருந்து பெறப்பட்டது."},
+            "B": {"en": "Incorrect. US Constitution has a different presiding arrangement.", "ta": "தவறு. அமெரிக்க அரசியலமைப்பு வேறு தலைவரமைப்பு முறை உடையது."},
+            "C": {"en": "Incorrect. British House of Commons uses a Speaker system.", "ta": "தவறு. பிரிட்டிஷ் சபை சபாநாயகர் முறையைப் பயன்படுத்துகிறது."},
+            "D": {"en": "Incorrect. Canadian practice was not followed here.", "ta": "தவறு. கனடா முறை இங்கு பின்பற்றப்படவில்லை."}
+        },
+        "tnpsc_tip": {
+            "en": "This is a frequently asked PYQ in TNPSC Group 1 & Group 2 exams.",
+            "ta": "இது டிஎன்பிஎஸ்சி குரூப் 1 மற்றும் குரூப் 2 தேர்வுகளில் அடிக்கடி கேட்கப்படும் கேள்வி."
+        },
+        "revision_fact": {
+            "en": "Dr. Sachchidananda Sinha served as temporary President for just 2 days (Dec 9 & 10, 1946).",
+            "ta": "டாக்டர் சச்சிதானந்த சின்ஹா 2 நாட்கள் மட்டுமே (டிசம்பர் 9 & 10, 1946) தற்காலிகத் தலைவராகப் பணியாற்றினார்."
+        },
+        "source_reference": ["M. Laxmikanth", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": "Remember",
+        "estimated_time_sec": 35,
+        "pyq_similarity": "High",
+        "tags": ["French Practice", "Oldest Member", "Temporary President"]
+    },
+    # Q11
+    {
+        "id": "MIC_E_011",
+        "subject": "Polity",
+        "topic": "Making of Indian Constitution",
+        "difficulty": "Easy",
+        "question_type": "Direct MCQ",
+        "question": {
+            "en": "Who was elected as the permanent President of the Constituent Assembly on December 11, 1946?",
+            "ta": "டிசம்பர் 11, 1946 அன்று அரசியலமைப்பு நிர்ணய அவையின் நிரந்தரத் தலைவராகத் தேர்ந்தெடுக்கப்பட்டவர் யார்?"
+        },
+        "options": [
+            {"id": "A", "en": "Dr. Rajendra Prasad", "ta": "டாக்டர் ராஜேந்திர பிரசாத்"},
+            {"id": "B", "en": "Dr. B.R. Ambedkar", "ta": "டாக்டர் பி.ஆர். அம்பேத்கர்"},
+            {"id": "C", "en": "Jawaharlal Nehru", "ta": "ஜவஹர்லால் நேரு"},
+            {"id": "D", "en": "Sardar Vallabhbhai Patel", "ta": "சர்தார் வல்லபாய் படேல்"}
+        ],
+        "correct_answer": "A",
+        "explanation": {
+            "en": "On December 11, 1946, Dr. Rajendra Prasad was elected as the permanent President of the Constituent Assembly.",
+            "ta": "டிசம்பர் 11, 1946 அன்று டாக்டர் ராஜேந்திர பிரசாத் அரசியலமைப்பு நிர்ணய அவையின் நிரந்தரத் தலைவராக ஒருமனதாகத் தேர்ந்தெடுக்கப்பட்டார்."
+        },
+        "why_not_others": {
+            "A": {"en": "Correct. Dr. Rajendra Prasad was elected permanent President.", "ta": "சரி. டாக்டர் ராஜேந்திர பிரசாத் நிரந்தரத் தலைவராகத் தேர்வானார்."},
+            "B": {"en": "Incorrect. Dr. Ambedkar headed the Drafting Committee.", "ta": "தவறு. டாக்டர் அம்பேத்கர் வரைவுக் குழுவின் தலைவர்."},
+            "C": {"en": "Incorrect. Nehru moved Objectives Resolution and led Union Committees.", "ta": "தவறு. நேரு குறிக்கோள் தீர்மானத்தை முன்மொழிந்தார்."},
+            "D": {"en": "Incorrect. Patel headed Fundamental Rights & Provincial Committees.", "ta": "தவறு. படேல் அடிப்படை உரிமைகள் மற்றும் மாகாணக் குழுக்களுக்கு தலைமை தாங்கினார்."}
+        },
+        "tnpsc_tip": {
+            "en": "Dr. Rajendra Prasad went on to become the first President of Independent India on Jan 24, 1950.",
+            "ta": "டாக்டர் ராஜேந்திர பிரசாத் ஜனவரி 24, 1950 அன்று சுதந்திர இந்தியாவின் முதல் குடியரசுத் தலைவரானார்."
+        },
+        "revision_fact": {
+            "en": "Both H.C. Mookerjee and V.T. Krishnamachari were elected as Vice-Presidents of the Constituent Assembly.",
+            "ta": "எச்.சி. முகர்ஜி மற்றும் வி.டி. கிருஷ்ணமாச்சாரி ஆகிய இருவரும் நிர்ணய அவையின் துணைத் தலைவர்களாகத் தேர்ந்தெடுக்கப்பட்டனர்."
+        },
+        "source_reference": ["M. Laxmikanth", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": "Remember",
+        "estimated_time_sec": 35,
+        "pyq_similarity": "High",
+        "tags": ["Permanent President", "Dr. Rajendra Prasad", "Dec 11 1946"]
+    },
+    # Q12
+    {
+        "id": "MIC_E_012",
+        "subject": "Polity",
+        "topic": "Making of Indian Constitution",
+        "difficulty": "Easy",
+        "question_type": "Direct MCQ",
+        "question": {
+            "en": "Who among the following were elected as the Vice-Presidents of the Constituent Assembly?",
+            "ta": "பின்வருபவர்களில் அரசியலமைப்பு நிர்ணய அவையின் துணைத் தலைவர்களாகத் தேர்ந்தெடுக்கப்பட்டவர்கள் யார்?"
+        },
+        "options": [
+            {"id": "A", "en": "H.C. Mookerjee and V.T. Krishnamachari", "ta": "எச்.சி. முகர்ஜி மற்றும் வி.டி. கிருஷ்ணமாச்சாரி"},
+            {"id": "B", "en": "Dr. B.R. Ambedkar and Jawaharlal Nehru", "ta": "டாக்டர் பி.ஆர். அம்பேத்கர் மற்றும் ஜவஹர்லால் நேரு"},
+            {"id": "C", "en": "Sardar Patel and K.M. Munshi", "ta": "சர்தார் படேல் மற்றும் கே.எம். முன்ஷி"},
+            {"id": "D", "en": "B.N. Rau and N. Gopalaswami Ayyangar", "ta": "பி.என். ராவ் மற்றும் என். கோபாலசுவாமி அய்யங்கார்"}
+        ],
+        "correct_answer": "A",
+        "explanation": {
+            "en": "The Constituent Assembly had TWO Vice-Presidents: H.C. Mookerjee and V.T. Krishnamachari.",
+            "ta": "அரசியலமைப்பு நிர்ணய அவைக்கு இரண்டு துணைத் தலைவர்கள் இருந்தனர்: எச்.சி. முகர்ஜி மற்றும் வி.டி. கிருஷ்ணமாச்சாரி."
+        },
+        "why_not_others": {
+            "A": {"en": "Correct. Both H.C. Mookerjee and V.T. Krishnamachari were Vice-Presidents.", "ta": "சரி. எச்.சி. முகர்ஜி மற்றும் வி.டி. கிருஷ்ணமாச்சாரி இருவருமே துணைத் தலைவர்கள்."},
+            "B": {"en": "Incorrect. Ambedkar chaired Drafting Committee; Nehru led Union Powers.", "ta": "தவறு. அம்பேத்கர் வரைவுக்குழுத் தலைவர்; நேரு மத்திய அதிகாரக்குழுத் தலைவர்."},
+            "C": {"en": "Incorrect. Patel and Munshi were members of committees.", "ta": "தவறு. படேல் மற்றும் முன்ஷி குழு உறுப்பினர்கள்."},
+            "D": {"en": "Incorrect. B.N. Rau was Legal Adviser.", "ta": "தவறு. பி.என். ராவ் சட்ட ஆலோசகராக இருந்தார்."}
+        },
+        "tnpsc_tip": {
+            "en": "Remember that the Assembly had two Vice-Presidents, not one.",
+            "ta": "அரசியலமைப்பு நிர்ணய அவைக்கு இரு துணைத் தலைவர்கள் இருந்தனர் என்பதை நினைவில் கொள்க."
+        },
+        "revision_fact": {
+            "en": "H.C. Mookerjee also chaired the Minorities Sub-Committee.",
+            "ta": "எச்.சி. முகர்ஜி சிறுபான்மையினர் துணைக் குழுவின் தலைவராகவும் பணியாற்றினார்."
+        },
+        "source_reference": ["M. Laxmikanth", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": "Remember",
+        "estimated_time_sec": 40,
+        "pyq_similarity": "High",
+        "tags": ["Vice Presidents", "H.C. Mookerjee", "V.T. Krishnamachari"]
+    },
+    # Q13
+    {
+        "id": "MIC_E_013",
+        "subject": "Polity",
+        "topic": "Making of Indian Constitution",
+        "difficulty": "Easy",
+        "question_type": "Direct MCQ",
+        "question": {
+            "en": "Who was appointed as the Constitutional Adviser (Legal Adviser) to the Constituent Assembly?",
+            "ta": "அரசியலமைப்பு நிர்ணய அவையின் அரசியலமைப்பு ஆலோசகராக (சட்ட ஆலோசகர்) நியமிக்கப்பட்டவர் யார்?"
+        },
+        "options": [
+            {"id": "A", "en": "Sir B.N. Rau", "ta": "சர் பி.என். ராவ்"},
+            {"id": "B", "en": "Dr. B.R. Ambedkar", "ta": "டாக்டர் பி.ஆர். அம்பேத்கர்"},
+            {"id": "C", "en": "K.M. Munshi", "ta": "கே.எம். முன்ஷி"},
+            {"id": "D", "en": "S.N. Mukherjee", "ta": "எஸ்.என். முகர்ஜி"}
+        ],
+        "correct_answer": "A",
+        "explanation": {
+            "en": "Sir B.N. Rau (Benegal Narsing Rau) was appointed as the Constitutional Adviser to the Constituent Assembly.",
+            "ta": "சர் பி.என். ராவ் (பெனகல் நரசிங் ராவ்) அரசியலமைப்பு நிர்ணய அவையின் சட்ட ஆலோசகராக நியமிக்கப்பட்டார்."
+        },
+        "why_not_others": {
+            "A": {"en": "Correct. Sir B.N. Rau was the Constitutional Adviser.", "ta": "சரி. சர் பி.என். ராவ் அரசியலமைப்பு ஆலோசகர் ஆவர்."},
+            "B": {"en": "Incorrect. Dr. B.R. Ambedkar was the Drafting Committee Chairman.", "ta": "தவறு. டாக்டர் பி.ஆர். அம்பேத்கர் வரைவுக் குழுத் தலைவர்."},
+            "C": {"en": "Incorrect. K.M. Munshi was a member of the Drafting Committee.", "ta": "தவறு. கே.எம். முன்ஷி வரைவுக் குழுவின் ஒரு உறுப்பினர்."},
+            "D": {"en": "Incorrect. S.N. Mukherjee was the chief draftsman of the Constitution in the Assembly.", "ta": "தவறு. எஸ்.என். முகர்ஜி அவையின் முதன்மை வரைவாளராக பணியாற்றினார்."}
+        },
+        "tnpsc_tip": {
+            "en": "Do not confuse Constitutional Adviser (B.N. Rau) with Chief Draftsman (S.N. Mukherjee) or Drafting Committee Chairman (B.R. Ambedkar).",
+            "ta": "அரசியலமைப்பு ஆலோசகர் (பி.என். ராவ்), முதன்மை வரைவாளர் (எஸ்.என். முகர்ஜி), வரைவுக்குழுத் தலைவர் (பி.ஆர். அம்பேத்கர்) ஆகியோரை குழப்பிக் கொள்ள வேண்டாம்."
+        },
+        "revision_fact": {
+            "en": "Sir B.N. Rau prepared the initial raw draft of the Constitution of India.",
+            "ta": "சர் பி.என். ராவ் இந்திய அரசியலமைப்பின் ஆரம்ப வரைவை தயாரித்து வழங்கினார்."
+        },
+        "source_reference": ["M. Laxmikanth", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": "Remember",
+        "estimated_time_sec": 35,
+        "pyq_similarity": "High",
+        "tags": ["Constitutional Adviser", "B.N. Rau", "Legal Adviser"]
+    },
+    # Q14
+    {
+        "id": "MIC_E_014",
+        "subject": "Polity",
+        "topic": "Making of Indian Constitution",
+        "difficulty": "Easy",
+        "question_type": "Direct MCQ",
+        "question": {
+            "en": "Who moved the historic 'Objectives Resolution' in the Constituent Assembly on December 13, 1946?",
+            "ta": "டிசம்பர் 13, 1946 அன்று அரசியலமைப்பு நிர்ணய அவையில் வரலாற்றுச் சிறப்புமிக்க 'குறிக்கோள் தீர்மானத்தை' முன்மொழிந்தவர் யார்?"
+        },
+        "options": [
+            {"id": "A", "en": "Jawaharlal Nehru", "ta": "ஜவஹர்லால் நேரு"},
+            {"id": "B", "en": "Mahatma Gandhi", "ta": "மகாத்மா காந்தி"},
+            {"id": "C", "en": "Dr. B.R. Ambedkar", "ta": "டாக்டர் பி.ஆர். அம்பேத்கர்"},
+            {"id": "D", "en": "Dr. Rajendra Prasad", "ta": "டாக்டர் ராஜேந்திர பிரசாத்"}
+        ],
+        "correct_answer": "A",
+        "explanation": {
+            "en": "On December 13, 1946, Pandit Jawaharlal Nehru moved the historic 'Objectives Resolution' in the Assembly, outlining the philosophy and fundamentals of the constitutional structure.",
+            "ta": "டிசம்பர் 13, 1946 அன்று பண்டிதர் ஜவஹர்லால் நேரு அரசியலமைப்பின் தத்துவங்களையும் அடிப்படை வழிகாட்டுதல்களையும் கொண்ட வரலாற்றுச் சிறப்புமிக்க 'குறிக்கோள் தீர்மானத்தை' முன்மொழிந்தார்."
+        },
+        "why_not_others": {
+            "A": {"en": "Correct. Jawaharlal Nehru moved the Objectives Resolution on Dec 13, 1946.", "ta": "சரி. ஜவஹர்லால் நேரு டிசம்பர் 13, 1946-இல் குறிக்கோள் தீர்மானத்தை முன்மொழிந்தார்."},
+            "B": {"en": "Incorrect. Mahatma Gandhi was not a member of the Constituent Assembly.", "ta": "தவறு. மகாத்மா காந்தி நிர்ணய அவையின் உறுப்பினராக இல்லை."},
+            "C": {"en": "Incorrect. Ambedkar gave inputs but Nehru moved this resolution.", "ta": "தவறு. அம்பேத்கர் இதனை முன்மொழியவில்லை."},
+            "D": {"en": "Incorrect. Dr. Rajendra Prasad presided over the Assembly as President.", "ta": "தவறு. டாக்டர் ராஜேந்திர பிரசாத் தலைவராக தலைமை தாங்கினார்."}
+        },
+        "tnpsc_tip": {
+            "en": "Note: Mahatma Gandhi and Muhammad Ali Jinnah were NOT members of the Constituent Assembly.",
+            "ta": "குறிப்பு: மகாத்மா காந்தி மற்றும் முகமது அலி ஜின்னா ஆகிய இருவரும் அரசியலமைப்பு நிர்ணய அவையில் உறுப்பினர்களாக இருக்கவில்லை."
+        },
+        "revision_fact": {
+            "en": "The Preamble of the present Constitution is a modified version of the Objectives Resolution.",
+            "ta": "தற்போதைய அரசியலமைப்பின் முகப்புரை என்பது இந்த குறிக்கோள் தீர்மானத்தின் திருத்தப்பட்ட வடிவமாகும்."
+        },
+        "source_reference": ["M. Laxmikanth", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": "Remember",
+        "estimated_time_sec": 35,
+        "pyq_similarity": "High",
+        "tags": ["Objectives Resolution", "Jawaharlal Nehru", "Dec 13 1946"]
+    },
+    # Q15
+    {
+        "id": "MIC_E_015",
+        "subject": "Polity",
+        "topic": "Making of Indian Constitution",
+        "difficulty": "Easy",
+        "question_type": "Direct MCQ",
+        "question": {
+            "en": "On which date was the Objectives Resolution unanimously adopted by the Constituent Assembly?",
+            "ta": "குறிக்கோள் தீர்மானம் எந்த நாளில் அரசியலமைப்பு நிர்ணய அவையால் ஒருமனதாக ஏற்றுக்கொள்ளப்பட்டது?"
+        },
+        "options": [
+            {"id": "A", "en": "January 22, 1947", "ta": "ஜனவரி 22, 1947"},
+            {"id": "B", "en": "December 13, 1946", "ta": "டிசம்பர் 13, 1946"},
+            {"id": "C", "en": "November 26, 1949", "ta": "நவம்பர் 26, 1949"},
+            {"id": "D", "en": "January 26, 1950", "ta": "ஜனவரி 26, 1950"}
+        ],
+        "correct_answer": "A",
+        "explanation": {
+            "en": "The Objectives Resolution was unanimously adopted by the Constituent Assembly on January 22, 1947.",
+            "ta": "குறிக்கோள் தீர்மானம் ஜனவரி 22, 1947 அன்று அரசியலமைப்பு நிர்ணய அவையால் ஒருமனதாக ஏற்றுக்கொள்ளப்பட்டது."
+        },
+        "why_not_others": {
+            "A": {"en": "Correct. Adopted on January 22, 1947.", "ta": "சரி. ஜனவரி 22, 1947 அன்று ஏற்றுக்கொள்ளப்பட்டது."},
+            "B": {"en": "Incorrect. December 13, 1946 was the date it was moved by Nehru.", "ta": "தவறு. டிசம்பர் 13, 1946 அன்று நேருவால் முன்மொழியப்பட்டது."},
+            "C": {"en": "Incorrect. November 26, 1949 was the adoption date of the entire Constitution.", "ta": "தவறு. நவம்பர் 26, 1949 முழு அரசியலமைப்பும் ஏற்றுக்கொள்ளப்பட்ட நாள்."},
+            "D": {"en": "Incorrect. January 26, 1950 was the commencement date of the Constitution.", "ta": "தவறு. ஜனவரி 26, 1950 அரசியலமைப்பு நடைமுறைக்கு வந்த நாள்."}
+        },
+        "tnpsc_tip": {
+            "en": "Moved date = Dec 13, 1946; Adopted date = Jan 22, 1947. Make sure not to mix up these two dates.",
+            "ta": "முன்மொழியப்பட்ட நாள் = டிசம்பர் 13, 1946; ஏற்றுக்கொள்ளப்பட்ட நாள் = ஜனவரி 22, 1947."
+        },
+        "revision_fact": {
+            "en": "The Objectives Resolution influenced the shaping of the Constitution through all its subsequent stages.",
+            "ta": "குறிக்கோள் தீர்மானம் அரசியலமைப்பின் தொடர் உருவாக்கத்தில் பெரும் தாக்கம் செலுத்தியது."
+        },
+        "source_reference": ["M. Laxmikanth", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": "Remember",
+        "estimated_time_sec": 40,
+        "pyq_similarity": "High",
+        "tags": ["Objectives Resolution Adoption", "Jan 22 1947"]
+    },
+    # Q16
+    {
+        "id": "MIC_E_016",
+        "subject": "Polity",
+        "topic": "Making of Indian Constitution",
+        "difficulty": "Easy",
+        "question_type": "Basic Conceptual",
+        "question": {
+            "en": "Which key component of the present Indian Constitution is the modified version of the historic 'Objectives Resolution'?",
+            "ta": "தற்போதைய இந்திய அரசியலமைப்பின் எந்த முக்கிய பகுதி வரலாற்றுச் சிறப்புமிக்க 'குறிக்கோள் தீர்மானத்தின்' திருத்தப்பட்ட வடிவமாகும்?"
+        },
+        "options": [
+            {"id": "A", "en": "The Preamble", "ta": "முகப்புரை (Preamble)"},
+            {"id": "B", "en": "Fundamental Rights", "ta": "அடிப்படை உரிமைகள்"},
+            {"id": "C", "en": "Directive Principles of State Policy", "ta": "அரசு வழிகாட்டு நெறிமுறைகள்"},
+            {"id": "D", "en": "Fundamental Duties", "ta": "அடிப்படை கடமைகள்"}
+        ],
+        "correct_answer": "A",
+        "explanation": {
+            "en": "The Preamble of the present Indian Constitution is the modified form of the Objectives Resolution moved by Pandit Jawaharlal Nehru.",
+            "ta": "பண்டிதர் ஜவஹர்லால் நேருவால் முன்மொழியப்பட்ட குறிக்கோள் தீர்மானத்தின் திருத்தப்பட்ட வடிவமே தற்போதைய இந்திய அரசியலமைப்பின் முகப்புரையாகும்."
+        },
+        "why_not_others": {
+            "A": {"en": "Correct. Preamble is derived from Objectives Resolution.", "ta": "சரி. முகப்புரை குறிக்கோள் தீர்மானத்திலிருந்து உருவானது."},
+            "B": {"en": "Incorrect. Fundamental Rights are borrowed primarily from US Bill of Rights.", "ta": "தவறு. அடிப்படை உரிமைகள் அமெரிக்காவிலிருந்து பெறப்பட்டன."},
+            "C": {"en": "Incorrect. DPSP is borrowed from Irish Constitution.", "ta": "தவறு. அரசு வழிகாட்டு நெறிமுறைகள் அயர்லாந்திலிருந்து பெறப்பட்டன."},
+            "D": {"en": "Incorrect. Fundamental Duties were added by 42nd Amendment in 1976.", "ta": "தவறு. அடிப்படை கடமைகள் 1976-இல் 42வது திருத்தத்தால் சேர்க்கப்பட்டன."}
+        },
+        "tnpsc_tip": {
+            "en": "Preamble serves as the preface or introduction to the Constitution.",
+            "ta": "முகப்புரை அரசியலமைப்பின் முன்னுரையாக அல்லது அறிமுகமாகச் செயல்படுகிறது."
+        },
+        "revision_fact": {
+            "en": "The Preamble has been amended only once by the 42nd Constitutional Amendment Act of 1976.",
+            "ta": "முகப்புரை 1976-ஆம் ஆண்டின் 42-வது அரசியலமைப்புத் திருத்தச் சட்டத்தின் மூலம் ஒரே ஒரு முறை மட்டுமே திருத்தப்பட்டுள்ளது."
+        },
+        "source_reference": ["M. Laxmikanth", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": "Understand",
+        "estimated_time_sec": 35,
+        "pyq_similarity": "High",
+        "tags": ["Preamble", "Objectives Resolution", "Modified Version"]
+    },
+    # Q17
+    {
+        "id": "MIC_E_017",
+        "subject": "Polity",
+        "topic": "Making of Indian Constitution",
+        "difficulty": "Easy",
+        "question_type": "Direct MCQ",
+        "question": {
+            "en": "Which Act made the Constituent Assembly a fully sovereign body capable of altering or repealing any British law for India?",
+            "ta": "இந்தியாவிற்கான எந்த பிரிட்டிஷ் சட்டத்தையும் மாற்றவோ அல்லது ரத்து செய்யவோ அதிகாரமுள்ள முழு இறையாண்மை கொண்ட அமைப்பாக அரசியலமைப்பு நிர்ணய அவையை மாற்றிய சட்டம் எது?"
+        },
+        "options": [
+            {"id": "A", "en": "Indian Independence Act of 1947", "ta": "இந்திய சுதந்திரச் சட்டம் 1947"},
+            {"id": "B", "en": "Government of India Act of 1935", "ta": "இந்திய அரசுச் சட்டம் 1935"},
+            {"id": "C", "en": "Indian Councils Act of 1909", "ta": "இந்திய கவுன்சில்கள் சட்டம் 1909"},
+            {"id": "D", "en": "Government of India Act of 1919", "ta": "இந்திய அரசுச் சட்டம் 1919"}
+        ],
+        "correct_answer": "A",
+        "explanation": {
+            "en": "The Indian Independence Act of 1947 made the Constituent Assembly a fully sovereign body, empowering it to frame any Constitution it pleased and repeal any law made by British Parliament.",
+            "ta": "இந்திய சுதந்திரச் சட்டம் 1947 அரசியலமைப்பு நிர்ணய அவையை ஒரு முழு இறையாண்மை கொண்ட அமைப்பாக மாற்றி, பிரிட்டிஷ் நாடாளுமன்றச் சட்டங்களை ரத்து செய்யும் அதிகாரத்தையும் அளித்தது."
+        },
+        "why_not_others": {
+            "A": {"en": "Correct. Indian Independence Act 1947 made it sovereign.", "ta": "சரி. 1947 இந்திய சுதந்திரச் சட்டம் இதனை இறையாண்மை அமைப்பாக மாற்றியது."},
+            "B": {"en": "Incorrect. Government of India Act 1935 was the pre-existing constitutional framework.", "ta": "தவறு. 1935 சட்டம் அதற்கு முந்தைய சட்டக் கட்டமைப்பாகும்."},
+            "C": {"en": "Incorrect. 1909 Act introduced separate electorates.", "ta": "தவறு. 1909 சட்டம் தனித் தொகுதிகளை அறிமுகப்படுத்தியது."},
+            "D": {"en": "Incorrect. 1919 Act introduced dyarchy in provinces.", "ta": "தவறு. 1919 சட்டம் மாகாணங்களில் இரட்டை ஆட்சியை அறிமுகப்படுத்தியது."}
+        },
+        "tnpsc_tip": {
+            "en": "The 1947 Act assigned two distinct functions to the Assembly: making a constitution and enacting ordinary laws.",
+            "ta": "1947 சட்டம் அவைக்கு இரு வேறு பணிகளை வழங்கியது: அரசியலமைப்பை உருவாக்குதல் மற்றும் சாதாரண சட்டங்களை இயற்றுதல்."
+        },
+        "revision_fact": {
+            "en": "The Assembly became the first Parliament of Free India (Provisional Parliament).",
+            "ta": "நிர்ணய அவை சுதந்திர இந்தியாவின் முதல் நாடாளுமன்றமாக (தற்காலிக நாடாளுமன்றம்) செயல்பட்டது."
+        },
+        "source_reference": ["M. Laxmikanth", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": "Remember",
+        "estimated_time_sec": 45,
+        "pyq_similarity": "High",
+        "tags": ["Indian Independence Act 1947", "Sovereign Body", "Provisional Parliament"]
+    },
+    # Q18
+    {
+        "id": "MIC_E_018",
+        "subject": "Polity",
+        "topic": "Making of Indian Constitution",
+        "difficulty": "Easy",
+        "question_type": "Direct MCQ",
+        "question": {
+            "en": "Who chaired the Constituent Assembly when it met as a legislative body to enact ordinary laws for the country?",
+            "ta": "நாட்டிற்கு சாதாரண சட்டங்களை இயற்றுவதற்காக சட்டமன்றமாகச் செயல்பட்ட போது அரசியலமைப்பு நிர்ணய அவைக்கு தலைமை தாங்கியவர் யார்?"
+        },
+        "options": [
+            {"id": "A", "en": "G.V. Mavlankar", "ta": "ஜி.வி. மாவலங்கர்"},
+            {"id": "B", "en": "Dr. Rajendra Prasad", "ta": "டாக்டர் ராஜேந்திர பிரசாத்"},
+            {"id": "C", "en": "Dr. B.R. Ambedkar", "ta": "டாக்டர் பி.ஆர். அம்பேத்கர்"},
+            {"id": "D", "en": "Ananthasayanam Ayyangar", "ta": "அனந்தசயனம் அய்யங்கார்"}
+        ],
+        "correct_answer": "A",
+        "explanation": {
+            "en": "Whenever the Assembly met as a legislative body (to enact laws), it was chaired by G.V. Mavlankar. Whenever it met as a Constituent body, it was chaired by Dr. Rajendra Prasad.",
+            "ta": "அவை சட்டமன்றமாகச் (சட்டங்கள் இயற்ற) கூடிய போது ஜி.வி. மாவலங்கர் தலைமை தாங்கினார். அரசியலமைப்பு நிர்ணய அவையாகக் கூடிய போது டாக்டர் ராஜேந்திர பிரசாத் தலைமை தாங்கினார்."
+        },
+        "why_not_others": {
+            "A": {"en": "Correct. G.V. Mavlankar chaired legislative sessions.", "ta": "சரி. சட்டமன்றக் கூட்டங்களுக்கு ஜி.வி. மாவலங்கர் தலைமை தாங்கினார்."},
+            "B": {"en": "Incorrect. Dr. Rajendra Prasad chaired constituent sessions.", "ta": "தவறு. அரசியலமைப்பு உருவாக்கக் கூட்டங்களுக்கு டாக்டர் ராஜேந்திர பிரசாத் தலைமை தாங்கினார்."},
+            "C": {"en": "Incorrect. Dr. B.R. Ambedkar was the Law Minister and Drafting Chairman.", "ta": "தவறு. அம்பேத்கர் சட்ட அமைச்சராகவும் வரைவுக்குழுத் தலைவராகவும் இருந்தார்."},
+            "D": {"en": "Incorrect. Ananthasayanam Ayyangar was later the Speaker of Lok Sabha.", "ta": "தவறு. அனந்தசயனம் அய்யங்கார் பின்னர் மக்களவை சபாநாயகராக பணியாற்றியவர்."}
+        },
+        "tnpsc_tip": {
+            "en": "G.V. Mavlankar became the first Speaker of the Lok Sabha after India became a republic.",
+            "ta": "இந்தியா குடியரசான பிறகு ஜி.வி. மாவலங்கர் மக்களவையின் முதல் சபாநாயகர் ஆனார்."
+        },
+        "revision_fact": {
+            "en": "These two functions of the Constituent Assembly continued until November 26, 1949, when the task of constitution-making was completed.",
+            "ta": "அரசியலமைப்பு உருவாக்கும் பணி நவம்பர் 26, 1949 அன்று முடியும் வரை அவையின் இந்த இரு பணிகளும் தொடர்ந்தன."
+        },
+        "source_reference": ["M. Laxmikanth", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": "Remember",
+        "estimated_time_sec": 40,
+        "pyq_similarity": "High",
+        "tags": ["G.V. Mavlankar", "Legislative Body Chair", "Dual Function"]
+    },
+    # Q19
+    {
+        "id": "MIC_E_019",
+        "subject": "Polity",
+        "topic": "Making of Indian Constitution",
+        "difficulty": "Easy",
+        "question_type": "Direct MCQ",
+        "question": {
+            "en": "Following the partition under Mountbatten Plan, what was the reduced total strength of the Indian Constituent Assembly?",
+            "ta": "மவுண்ட்பேட்டன் திட்டத்தின்படி பிரிவினைக்குப் பிறகு இந்திய அரசியலமைப்பு நிர்ணய அவையின் குறைந்த மொத்த உறுப்பினர்கள் எண்ணிக்கை யாது?"
+        },
+        "options": [
+            {"id": "A", "en": "299", "ta": "299"},
+            {"id": "B", "en": "389", "ta": "389"},
+            {"id": "C", "en": "296", "ta": "296"},
+            {"id": "D", "en": "284", "ta": "284"}
+        ],
+        "correct_answer": "A",
+        "explanation": {
+            "en": "Due to the withdrawal of members from Muslim League areas after partition, the total strength of the Assembly came down to 299 from 389.",
+            "ta": "பிரிவினைக்குப் பின் முஸ்லிம் லீக் பகுதிகள் விலகியதால், அவையின் மொத்த உறுப்பினர்கள் எண்ணிக்கை 389-லிருந்து 299 ஆகக் குறைந்தது."
+        },
+        "why_not_others": {
+            "A": {"en": "Correct. Post-partition strength was 299.", "ta": "சரி. பிரிவினைக்குப் பிந்தைய உறுப்பினர்கள் எண்ணிக்கை 299."},
+            "B": {"en": "Incorrect. 389 was the pre-partition original strength.", "ta": "தவறு. 389 என்பது பிரிவினைக்கு முந்தைய ஆரம்ப எண்ணிக்கை."},
+            "C": {"en": "Incorrect. 296 was British India's original share.", "ta": "தவறு. 296 என்பது பிரிட்டிஷ் இந்தியாவின் ஆரம்ப பங்கு."},
+            "D": {"en": "Incorrect. 284 was the number of members present who signed the Constitution on Nov 26, 1949.", "ta": "தவறு. 284 என்பது நவம்பர் 26, 1949 அன்று அரசியலமைப்பில் கையொப்பமிட்ட உறுப்பினர்கள் எண்ணிக்கை."}
+        },
+        "tnpsc_tip": {
+            "en": "Post-partition: Indian Provinces = 229; Princely States = 70. Total = 299.",
+            "ta": "பிரிவினைக்குப் பின்: இந்திய மாகாணங்கள் = 229; சுதேச சமஸ்தானங்கள் = 70. மொத்தம் = 299."
+        },
+        "revision_fact": {
+            "en": "The Mountbatten Plan was announced on June 3, 1947.",
+            "ta": "மவுண்ட்பேட்டன் திட்டம் ஜூன் 3, 1947 அன்று அறிவிக்கப்பட்டது."
+        },
+        "source_reference": ["M. Laxmikanth", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": "Remember",
+        "estimated_time_sec": 35,
+        "pyq_similarity": "High",
+        "tags": ["Post Partition Strength", "299 Members", "Mountbatten Plan"]
+    },
+    # Q20
+    {
+        "id": "MIC_E_020",
+        "subject": "Polity",
+        "topic": "Making of Indian Constitution",
+        "difficulty": "Easy",
+        "question_type": "Direct MCQ",
+        "question": {
+            "en": "After partition, how many seats were allocated to the Indian Provinces in the reconstituted Constituent Assembly?",
+            "ta": "பிரிவினைக்குப் பிறகு மாற்றிமைக்கப்பட்ட நிர்ணய அவையில் இந்திய மாகாணங்களுக்கு ஒதுக்கப்பட்ட இடங்கள் எத்தனை?"
+        },
+        "options": [
+            {"id": "A", "en": "229", "ta": "229"},
+            {"id": "B", "en": "70", "ta": "70"},
+            {"id": "C", "en": "296", "ta": "296"},
+            {"id": "D", "en": "299", "ta": "299"}
+        ],
+        "correct_answer": "A",
+        "explanation": {
+            "en": "In the reconstituted Assembly of 299 members, the strength of the Indian Provinces was 229 (down from 296).",
+            "ta": "299 உறுப்பினர்கள் கொண்ட மாற்றிமைக்கப்பட்ட அவையில், இந்திய மாகாணங்களின் எண்ணிக்கை 229 ஆக (296-லிருந்து) இருந்தது."
+        },
+        "why_not_others": {
+            "A": {"en": "Correct. 229 seats for Indian Provinces.", "ta": "சரி. இந்திய மாகாணங்களுக்கு 229 இடங்கள்."},
+            "B": {"en": "Incorrect. 70 seats were for Princely States post-partition.", "ta": "தவறு. 70 இடங்கள் பிரிவினைக்குப் பிந்தைய சுதேச சமஸ்தானங்களுக்குரியவை."},
+            "C": {"en": "Incorrect. 296 was pre-partition British India strength.", "ta": "தவறு. 296 என்பது பிரிவினைக்கு முந்தைய பிரிட்டிஷ் இந்திய பலம்."},
+            "D": {"en": "Incorrect. 299 was the grand total post-partition strength.", "ta": "தவறு. 299 என்பது பிரிவினைக்குப் பிந்தைய மொத்த பலம்."}
+        },
+        "tnpsc_tip": {
+            "en": "Breakdown after partition: Provinces (229) + Princely States (70) = 299 total.",
+            "ta": "பிரிவினைக்குப் பிந்தைய பகுப்பு: மாகாணங்கள் (229) + சுதேச அரசுகள் (70) = 299 மொத்தம்."
+        },
+        "revision_fact": {
+            "en": "Among provinces, United Provinces had the largest representation (55 members) post-partition.",
+            "ta": "மாகாணங்களில், ஐக்கிய மாகாணம் (United Provinces) பிரிவினைக்குப் பிறகு அதிகபட்ச உறுப்பினர்களைக் (55 பேர்) கொண்டிருந்தது."
+        },
+        "source_reference": ["M. Laxmikanth", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": "Remember",
+        "estimated_time_sec": 40,
+        "pyq_similarity": "High",
+        "tags": ["Provinces Strength", "229 Seats", "Post Partition"]
+    },
+    # Q21
+    {
+        "id": "MIC_E_021",
+        "subject": "Polity",
+        "topic": "Making of Indian Constitution",
+        "difficulty": "Easy",
+        "question_type": "Direct MCQ",
+        "question": {
+            "en": "On which date was the Drafting Committee of the Constituent Assembly set up under Dr. B.R. Ambedkar?",
+            "ta": "டாக்டர் பி.ஆர். அம்பேத்கர் தலைமையில் அரசியலமைப்பு வரைவுக் குழு எந்த நாளில் அமைக்கப்பட்டது?"
+        },
+        "options": [
+            {"id": "A", "en": "August 29, 1947", "ta": "ஆகஸ்ட் 29, 1947"},
+            {"id": "B", "en": "August 15, 1947", "ta": "ஆகஸ்ட் 15, 1947"},
+            {"id": "C", "en": "November 26, 1949", "ta": "நவம்பர் 26, 1949"},
+            {"id": "D", "en": "December 9, 1946", "ta": "டிசம்பர் 9, 1946"}
+        ],
+        "correct_answer": "A",
+        "explanation": {
+            "en": "Among all the committees of the Constituent Assembly, the Drafting Committee set up on August 29, 1947, was the most important committee.",
+            "ta": "நிர்ணய அவையின் அனைத்துக் குழுக்களிலும் மிகவும் முக்கியமான வரைவுக் குழு ஆகஸ்ட் 29, 1947 அன்று அமைக்கப்பட்டது."
+        },
+        "why_not_others": {
+            "A": {"en": "Correct. August 29, 1947 was the date Drafting Committee was set up.", "ta": "சரி. ஆகஸ்ட் 29, 1947 வரைவுக் குழு அமைக்கப்பட்ட நாள்."},
+            "B": {"en": "Incorrect. August 15, 1947 is Indian Independence Day.", "ta": "தவறு. ஆகஸ்ட் 15, 1947 இந்திய சுதந்திர நாள்."},
+            "C": {"en": "Incorrect. November 26, 1949 was the Constitution adoption date.", "ta": "தவறு. நவம்பர் 26, 1949 அரசியலமைப்பு ஏற்றுக்கொள்ளப்பட்ட நாள்."},
+            "D": {"en": "Incorrect. December 9, 1946 was the first meeting date.", "ta": "தவறு. டிசம்பர் 9, 1946 முதல் கூட்டம் நடைபெற்ற நாள்."}
+        },
+        "tnpsc_tip": {
+            "en": "Drafting Committee was set up exactly 2 weeks after India's independence.",
+            "ta": "இந்திய சுதந்திரம் அடைந்த சரியாக 2 வாரங்களுக்குப் பிறகு வரைவுக் குழு அமைக்கப்பட்டது."
+        },
+        "revision_fact": {
+            "en": "The Drafting Committee was entrusted with the task of preparing a draft of the new Constitution.",
+            "ta": "புதிய அரசியலமைப்பின் வரைவைத் தயாரிக்கும் பணி வரைவுக் குழுவிடம் ஒப்படைக்கப்பட்டது."
+        },
+        "source_reference": ["M. Laxmikanth", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": "Remember",
+        "estimated_time_sec": 35,
+        "pyq_similarity": "High",
+        "tags": ["Drafting Committee Formation", "August 29 1947"]
+    },
+    # Q22
+    {
+        "id": "MIC_E_022",
+        "subject": "Polity",
+        "topic": "Making of Indian Constitution",
+        "difficulty": "Easy",
+        "question_type": "Direct MCQ",
+        "question": {
+            "en": "Who among the following was the Chairman of the Drafting Committee of the Constituent Assembly?",
+            "ta": "அரசியலமைப்பு நிர்ணய அவையின் வரைவுக் குழுவின் தலைவராக இருந்தவர் யார்?"
+        },
+        "options": [
+            {"id": "A", "en": "Dr. B.R. Ambedkar", "ta": "டாக்டர் பி.ஆர். அம்பேத்கர்"},
+            {"id": "B", "en": "Dr. Rajendra Prasad", "ta": "டாக்டர் ராஜேந்திர பிரசாத்"},
+            {"id": "C", "en": "Jawaharlal Nehru", "ta": "ஜவஹர்லால் நேரு"},
+            {"id": "D", "en": "Sardar Vallabhbhai Patel", "ta": "சர்தார் வல்லபாய் படேல்"}
+        ],
+        "correct_answer": "A",
+        "explanation": {
+            "en": "Dr. B.R. Ambedkar was the Chairman of the Drafting Committee and is recognized as the 'Father of the Constitution of India'.",
+            "ta": "டாக்டர் பி.ஆர். அம்பேத்கர் வரைவுக் குழுவின் தலைவராக இருந்தார், மேலும் 'இந்திய அரசியலமைப்பின் தந்தை' என்று அங்கீகரிக்கப்படுகிறார்."
+        },
+        "why_not_others": {
+            "A": {"en": "Correct. Dr. B.R. Ambedkar chaired the Drafting Committee.", "ta": "சரி. டாக்டர் பி.ஆர். அம்பேத்கர் வரைவுக் குழுவின் தலைவர் ஆவர்."},
+            "B": {"en": "Incorrect. Dr. Rajendra Prasad was the President of the Constituent Assembly.", "ta": "தவறு. டாக்டர் ராஜேந்திர பிரசாத் நிர்ணய அவையின் தலைவர்."},
+            "C": {"en": "Incorrect. Nehru headed Union Powers Committee and Union Constitution Committee.", "ta": "தவறு. நேரு மத்திய அதிகாரக் குழு மற்றும் மத்திய அரசியலமைப்புச் சாசனக் குழுவின் தலைவர்."},
+            "D": {"en": "Incorrect. Patel headed Provincial Constitution Committee.", "ta": "தவறு. படேல் மாகாண அரசியலமைப்புச் சாசனக் குழுவின் தலைவர்."}
+        },
+        "tnpsc_tip": {
+            "en": "Dr. B.R. Ambedkar is also known as 'Modern Manu'.",
+            "ta": "டாக்டர் பி.ஆர். அம்பேத்கர் 'நவீன மனு' என்றும் அழைக்கப்படுகிறார்."
+        },
+        "revision_fact": {
+            "en": "Dr. B.R. Ambedkar was the Law Minister in the first Cabinet of Independent India.",
+            "ta": "சுதந்திர இந்தியாவின் முதல் அமைச்சரவையில் டாக்டர் பி.ஆர். அம்பேத்கர் சட்ட அமைச்சராகப் பணியாற்றினார்."
+        },
+        "source_reference": ["M. Laxmikanth", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": "Remember",
+        "estimated_time_sec": 35,
+        "pyq_similarity": "High",
+        "tags": ["Dr. B.R. Ambedkar", "Drafting Committee Chairman", "Father of Constitution"]
+    },
+    # Q23
+    {
+        "id": "MIC_E_023",
+        "subject": "Polity",
+        "topic": "Making of Indian Constitution",
+        "difficulty": "Easy",
+        "question_type": "Direct MCQ",
+        "question": {
+            "en": "How many total members were there in the Drafting Committee of the Constituent Assembly (including the Chairman)?",
+            "ta": "அரசியலமைப்பு வரைவுக் குழுவில் (தலைவர் உட்பட) மொத்தம் எத்தனை உறுப்பினர்கள் இருந்தனர்?"
+        },
+        "options": [
+            {"id": "A", "en": "7", "ta": "7"},
+            {"id": "B", "en": "9", "ta": "9"},
+            {"id": "C", "en": "11", "ta": "11"},
+            {"id": "D", "en": "15", "ta": "15"}
+        ],
+        "correct_answer": "A",
+        "explanation": {
+            "en": "The Drafting Committee consisted of seven members: Dr. B.R. Ambedkar (Chairman), N. Gopalaswami Ayyangar, Alladi Krishnaswami Ayyar, Dr. K.M. Munshi, Syed Mohammad Saadullah, N. Madhava Rau, and T.T. Krishnamachari.",
+            "ta": "வரைவுக் குழுவில் மொத்தம் 7 உறுப்பினர்கள் இருந்தனர்: டாக்டர் பி.ஆர். அம்பேத்கர் (தலைவர்), என். கோபாலசுவாமி அய்யங்கார், அல்லாடி கிருஷ்ணசுவாமி அய்யர், டாக்டர் கே.எம். முன்ஷி, சையது முகமது சாதுல்லா, என். மாதவ ராவ், மற்றும் டி.டி. கிருஷ்ணமாச்சாரி."
+        },
+        "why_not_others": {
+            "A": {"en": "Correct. Total strength of Drafting Committee was 7.", "ta": "சரி. வரைவுக் குழுவின் மொத்த பலம் 7 உறுப்பினர்கள்."},
+            "B": {"en": "Incorrect. 9 is not the drafting committee strength.", "ta": "தவறு. 9 என்பது வரைவுக்குழு உறுப்பினர் எண்ணிக்கை அல்ல."},
+            "C": {"en": "Incorrect. 11 is the total number of sessions of Assembly.", "ta": "தவறு. 11 என்பது நிர்ணய அவை நடத்திய மொத்த அமர்வுகளின் எண்ணிக்கை."},
+            "D": {"en": "Incorrect. 15 was the number of women members in Assembly.", "ta": "தவறு. 15 என்பது நிர்ணய அவையில் இருந்த பெண் உறுப்பினர்களின் எண்ணிக்கை."}
+        },
+        "tnpsc_tip": {
+            "en": "Memorize the number 7 for Drafting Committee members.",
+            "ta": "வரைவுக் குழு உறுப்பினர்களின் எண்ணிக்கை 7 என்பதை மனதில் கொள்க."
+        },
+        "revision_fact": {
+            "en": "There were 15 female members in the Constituent Assembly of India.",
+            "ta": "இந்திய அரசியலமைப்பு நிர்ணய அவையில் 15 பெண் உறுப்பினர்கள் இடம் பெற்றிருந்தனர்."
+        },
+        "source_reference": ["M. Laxmikanth", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": "Remember",
+        "estimated_time_sec": 35,
+        "pyq_similarity": "High",
+        "tags": ["Drafting Committee", "7 Members", "Composition"]
+    },
+    # Q24
+    {
+        "id": "MIC_E_024",
+        "subject": "Polity",
+        "topic": "Making of Indian Constitution",
+        "difficulty": "Easy",
+        "question_type": "Direct MCQ",
+        "question": {
+            "en": "Who among the following was NOT a member of the Drafting Committee of the Constituent Assembly?",
+            "ta": "பின்வருபவர்களில் அரசியலமைப்பு வரைவுக் குழுவில் உறுப்பினராக இல்லாதவர் யார்?"
+        },
+        "options": [
+            {"id": "A", "en": "Jawaharlal Nehru", "ta": "ஜவஹர்லால் நேரு"},
+            {"id": "B", "en": "Alladi Krishnaswami Ayyar", "ta": "அல்லாடி கிருஷ்ணசுவாமி அய்யர்"},
+            {"id": "C", "en": "K.M. Munshi", "ta": "கே.எம். முன்ஷி"},
+            {"id": "D", "en": "Syed Mohammad Saadullah", "ta": "சையது முகமது சாதுல்லா"}
+        ],
+        "correct_answer": "A",
+        "explanation": {
+            "en": "Jawaharlal Nehru was NOT a member of the Drafting Committee. He headed other major committees like Union Powers Committee and Union Constitution Committee.",
+            "ta": "ஜவஹர்லால் நேரு வரைவுக் குழுவில் உறுப்பினராக இருக்கவில்லை. அவர் மத்திய அதிகாரக் குழு மற்றும் மத்திய அரசியலமைப்புச் சாசனக் குழு ஆகியவற்றின் தலைவராக இருந்தார்."
+        },
+        "why_not_others": {
+            "A": {"en": "Correct. Jawaharlal Nehru was not a member of Drafting Committee.", "ta": "சரி. ஜவஹர்லால் நேரு வரைவுக் குழுவில் உறுப்பினராக இல்லை."},
+            "B": {"en": "Incorrect. Alladi Krishnaswami Ayyar was a member.", "ta": "தவறு. அல்லாடி கிருஷ்ணசுவாமி அய்யர் வரைவுக்குழு உறுப்பினர்."},
+            "C": {"en": "Incorrect. K.M. Munshi was a member.", "ta": "தவறு. கே.எம். முன்ஷி வரைவுக்குழு உறுப்பினர்."},
+            "D": {"en": "Incorrect. Syed Mohammad Saadullah was a member.", "ta": "தவறு. சையது முகமது சாதுல்லா வரைவுக்குழு உறுப்பினர்."}
+        },
+        "tnpsc_tip": {
+            "en": "Neither Jawaharlal Nehru nor Sardar Patel were members of the 7-member Drafting Committee.",
+            "ta": "ஜவஹர்லால் நேரு மற்றும் சர்தார் படேல் ஆகிய இருவரும் 7 பேர் கொண்ட வரைவுக் குழுவில் உறுப்பினர்களாக இருக்கவில்லை."
+        },
+        "revision_fact": {
+            "en": "The 7 members were Ambedkar, Gopalaswami Ayyangar, Alladi Krishnaswami Ayyar, K.M. Munshi, Saadullah, N. Madhava Rau, and T.T. Krishnamachari.",
+            "ta": "7 உறுப்பினர்கள்: அம்பேத்கர், கோபாலசுவாமி அய்யங்கார், அல்லாடி கிருஷ்ணசுவாமி, கே.எம். முன்ஷி, சாதுல்லா, மாதவ ராவ், டி.டி. கிருஷ்ணமாச்சாரி."
+        },
+        "source_reference": ["M. Laxmikanth", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": "Remember",
+        "estimated_time_sec": 40,
+        "pyq_similarity": "High",
+        "tags": ["Drafting Committee Members", "Exclusion Trap"]
+    },
+    # Q25
+    {
+        "id": "MIC_E_025",
+        "subject": "Polity",
+        "topic": "Making of Indian Constitution",
+        "difficulty": "Easy",
+        "question_type": "TNPSC Trap Questions",
+        "question": {
+            "en": "Who replaced B.L. Mitter on the Drafting Committee after B.L. Mitter resigned due to ill-health?",
+            "ta": "உடல்நலக் குறைவால் பி.எல். மிட்டர் ராஜினாமா செய்ததையடுத்து, வரைவுக் குழுவில் அவருக்கு பதிலாக சேர்க்கப்பட்டவர் யார்?"
+        },
+        "options": [
+            {"id": "A", "en": "N. Madhava Rau", "ta": "என். மாதவ ராவ்"},
+            {"id": "B", "en": "T.T. Krishnamachari", "ta": "டி.டி. கிருஷ்ணமாச்சாரி"},
+            {"id": "C", "en": "D.P. Khaitan", "ta": "டி.பி. கைத்தான்"},
+            {"id": "D", "en": "S.N. Mukherjee", "ta": "எஸ்.என். முகர்ஜி"}
+        ],
+        "correct_answer": "A",
+        "explanation": {
+            "en": "N. Madhava Rau replaced B.L. Mitter, who resigned due to ill-health.",
+            "ta": "உடல்நலக் குறைவு காரணமாக பி.எல். மிட்டர் விலகியதையடுத்து, என். மாதவ ராவ் அவருக்குப் பதிலாக நியமிக்கப்பட்டார்."
+        },
+        "why_not_others": {
+            "A": {"en": "Correct. N. Madhava Rau replaced B.L. Mitter.", "ta": "சரி. என். மாதவ ராவ் பி.எல். மி்ட்டருக்குப் பதிலாக சேர்க்கப்பட்டார்."},
+            "B": {"en": "Incorrect. T.T. Krishnamachari replaced D.P. Khaitan after Khaitan's death in 1948.", "ta": "தவறு. டி.டி. கிருஷ்ணமாச்சாரி 1948-இல் டி.பி. கைத்தான் மறைந்த பிறகு அவருக்குப் பதிலாக நியமிக்கப்பட்டார்."},
+            "C": {"en": "Incorrect. D.P. Khaitan was an original member who died in 1948.", "ta": "தவறு. டி.பி. கைத்தான் ஆரம்ப உறுப்பினர், 1948-இல் மறைந்தார்."},
+            "D": {"en": "Incorrect. S.N. Mukherjee was the Chief Draftsman.", "ta": "தவறு. எஸ்.என். முகர்ஜி முதன்மை வரைவாளர்."}
+        },
+        "tnpsc_tip": {
+            "en": "Pairing Trap: B.L. Mitter -> N. Madhava Rau (ill-health); D.P. Khaitan -> T.T. Krishnamachari (death).",
+            "ta": "இணைப்பு நினைவகம்: பி.எல். மிட்டர் -> என். மாதவ ராவ் (உடல்நலம்); டி.பி. கைத்தான் -> டி.டி. கிருஷ்ணமாச்சாரி (மரணம்)."
+        },
+        "revision_fact": {
+            "en": "Only two replacements occurred in the original 7-member Drafting Committee.",
+            "ta": "ஆரம்ப 7 உறுப்பினர் வரைவுக் குழுவில் இரண்டு மாற்றங்கள் மட்டுமே நடைபெற்றன."
+        },
+        "source_reference": ["M. Laxmikanth", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": "Remember",
+        "estimated_time_sec": 45,
+        "pyq_similarity": "High",
+        "tags": ["N. Madhava Rau", "B.L. Mitter", "Drafting Committee Replacement"]
+    },
+    # Q26
+    {
+        "id": "MIC_E_026",
+        "subject": "Polity",
+        "topic": "Making of Indian Constitution",
+        "difficulty": "Easy",
+        "question_type": "TNPSC Trap Questions",
+        "question": {
+            "en": "Who replaced D.P. Khaitan on the Drafting Committee after D.P. Khaitan died in 1948?",
+            "ta": "1948-இல் டி.பி. கைத்தான் மறைந்ததையடுத்து, வரைவுக் குழுவில் அவருக்கு பதிலாக நியமிக்கப்பட்டவர் யார்?"
+        },
+        "options": [
+            {"id": "A", "en": "T.T. Krishnamachari", "ta": "டி.டி. கிருஷ்ணமாச்சாரி"},
+            {"id": "B", "en": "N. Madhava Rau", "ta": "என். மாதவ ராவ்"},
+            {"id": "C", "en": "C. Rajagopalachari", "ta": "சி. ராஜகோபாலாச்சாரி"},
+            {"id": "D", "en": "V.T. Krishnamachari", "ta": "வி.டி. கிருஷ்ணமாச்சாரி"}
+        ],
+        "correct_answer": "A",
+        "explanation": {
+            "en": "T.T. Krishnamachari replaced D.P. Khaitan, who died in 1948.",
+            "ta": "1948-இல் டி.பி. கைத்தான் இறந்த பிறகு டி.டி. கிருஷ்ணமாச்சாரி வரைவுக் குழுவில் நியமிக்கப்பட்டார்."
+        },
+        "why_not_others": {
+            "A": {"en": "Correct. T.T. Krishnamachari replaced D.P. Khaitan.", "ta": "சரி. டி.டி. கிருஷ்ணமாச்சாரி டி.பி. கைத்தானுக்குப் பதில் சேர்க்கப்பட்டார்."},
+            "B": {"en": "Incorrect. N. Madhava Rau replaced B.L. Mitter.", "ta": "தவறு. என். மாதவ ராவ் பி.எல். மி்ட்டருக்குப் பதில் சேர்க்கப்பட்டார்."},
+            "C": {"en": "Incorrect. C. Rajagopalachari was not on the Drafting Committee.", "ta": "தவறு. சி. ராஜகோபாலாச்சாரி வரைவுக் குழுவில் இல்லை."},
+            "D": {"en": "Incorrect. V.T. Krishnamachari was Vice-President of the Assembly.", "ta": "தவறு. வி.டி. கிருஷ்ணமாச்சாரி நிர்ணய அவையின் துணைத் தலைவர்."}
+        },
+        "tnpsc_tip": {
+            "en": "Do not confuse T.T. Krishnamachari (Drafting Committee Member) with V.T. Krishnamachari (Vice-President of Constituent Assembly).",
+            "ta": "டி.டி. கிருஷ்ணமாச்சாரி (வரைவுக்குழு உறுப்பினர்) மற்றும் வி.டி. கிருஷ்ணமாச்சாரி (துணைத் தலைவர்) ஆகியோரை குழப்பிக் கொள்ள வேண்டாம்."
+        },
+        "revision_fact": {
+            "en": "T.T. Krishnamachari later served as Union Finance Minister of India.",
+            "ta": "டி.டி. கிருஷ்ணமாச்சாரி பின்னர் இந்தியாவின் மத்திய நிதியமைச்சராகப் பணியாற்றினார்."
+        },
+        "source_reference": ["M. Laxmikanth", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": "Remember",
+        "estimated_time_sec": 45,
+        "pyq_similarity": "High",
+        "tags": ["T.T. Krishnamachari", "D.P. Khaitan", "Drafting Replacement"]
+    },
+    # Q27
+    {
+        "id": "MIC_E_027",
+        "subject": "Polity",
+        "topic": "Making of Indian Constitution",
+        "difficulty": "Easy",
+        "question_type": "Direct MCQ",
+        "question": {
+            "en": "In which month and year was the First Draft of the Constitution of India published by the Drafting Committee?",
+            "ta": "வரைவுக் குழுவினால் இந்திய அரசியலமைப்பின் முதல் வரைவு எந்த ஆண்டு எந்த மாதத்தில் வெளியிடப்பட்டது?"
+        },
+        "options": [
+            {"id": "A", "en": "February 1948", "ta": "பிப்ரவரி 1948"},
+            {"id": "B", "en": "August 1947", "ta": "ஆகஸ்ட் 1947"},
+            {"id": "C", "en": "October 1948", "ta": "அக்டோபர் 1948"},
+            {"id": "D", "en": "November 1949", "ta": "நவம்பர் 1949"}
+        ],
+        "correct_answer": "A",
+        "explanation": {
+            "en": "The Drafting Committee prepared the First Draft of the Constitution of India, which was published in February 1948 for public feedback and suggestions.",
+            "ta": "வரைவுக் குழு தயாரித்த முதல் வரைவு அரசியலமைப்பு பிப்ரவரி 1948-இல் மக்கள் கருத்து மற்றும் பரிந்துரைகளுக்காக வெளியிடப்பட்டது."
+        },
+        "why_not_others": {
+            "A": {"en": "Correct. First Draft was published in February 1948.", "ta": "சரி. முதல் வரைவு பிப்ரவரி 1948-இல் வெளியிடப்பட்டது."},
+            "B": {"en": "Incorrect. August 1947 was when Drafting Committee was set up.", "ta": "தவறு. ஆகஸ்ட் 1947-இல் வரைவுக்குழு அமைக்கப்பட்டது."},
+            "C": {"en": "Incorrect. October 1948 was when the Second Draft was published.", "ta": "தவறு. அக்டோபர் 1948-இல் இரண்டாவது வரைவு வெளியிடப்பட்டது."},
+            "D": {"en": "Incorrect. November 1949 was when the final Constitution was adopted.", "ta": "தவறு. நவம்பர் 1949-இல் இறுதி அரசியலமைப்பு ஏற்றுக்கொள்ளப்பட்டது."}
+        },
+        "tnpsc_tip": {
+            "en": "First Draft = Feb 1948 (8 months given to public); Second Draft = Oct 1948.",
+            "ta": "முதல் வரைவு = பிப்ரவரி 1948 (பொதுமக்களுக்கு 8 மாதங்கள் அவகாசம்); இரண்டாவது வரைவு = அக்டோபர் 1948."
+        },
+        "revision_fact": {
+            "en": "The people of India were given 8 months to discuss the first draft and propose amendments.",
+            "ta": "இந்திய மக்களுக்கு முதல் வரைவைப் பற்றி விவாதிக்கவும் திருத்தங்களை முன்மொழியவும் 8 மாத காலம் அவகாசம் அளிக்கப்பட்டது."
+        },
+        "source_reference": ["M. Laxmikanth", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": "Remember",
+        "estimated_time_sec": 40,
+        "pyq_similarity": "High",
+        "tags": ["First Draft", "February 1948", "Drafting Timeline"]
+    },
+    # Q28
+    {
+        "id": "MIC_E_028",
+        "subject": "Polity",
+        "topic": "Making of Indian Constitution",
+        "difficulty": "Easy",
+        "question_type": "Direct MCQ",
+        "question": {
+            "en": "How much total time did the Drafting Committee take to prepare its draft Constitution?",
+            "ta": "வரைவுக் குழு தனது வரைவு அரசியலமைப்பைத் தயாரிக்க எடுத்துக்கொண்ட மொத்த காலம் எவ்வளவு?"
+        },
+        "options": [
+            {"id": "A", "en": "Less than 6 months", "ta": "6 மாதங்களுக்கும் குறைவு"},
+            {"id": "B", "en": "2 years 11 months", "ta": "2 ஆண்டுகள் 11 மாதங்கள்"},
+            {"id": "C", "en": "1 year 6 months", "ta": "1 ஆண்டு 6 மாதங்கள்"},
+            {"id": "D", "en": "3 full years", "ta": "3 முழு ஆண்டுகள்"}
+        ],
+        "correct_answer": "A",
+        "explanation": {
+            "en": "The Drafting Committee took less than six months to prepare its draft. Out of 141 days it sat, the whole process of draft preparation was completed in under 6 months.",
+            "ta": "வரைவுக் குழு தனது வரைவைத் தயாரிக்க 6 மாதங்களுக்கும் குறைவான காலத்தையே எடுத்துக் கொண்டது. அது மொத்தம் 141 நாட்கள் மட்டுமே கூடியது."
+        },
+        "why_not_others": {
+            "A": {"en": "Correct. Drafting Committee took less than 6 months (sat for 141 days).", "ta": "சரி. வரைவுக் குழு 6 மாதங்களுக்கும் குறைவாக எடுத்துக்கொண்டது (141 நாட்கள் கூடியது)."},
+            "B": {"en": "Incorrect. 2 years 11 months 18 days was total time taken by Constituent Assembly.", "ta": "தவறு. 2 ஆண்டுகள் 11 மாதங்கள் 18 நாட்கள் என்பது முழு அரசியலமைப்பு நிர்ணய அவை எடுத்துக்கொண்ட காலம்."},
+            "C": {"en": "Incorrect. 1 year 6 months is not the drafting duration.", "ta": "தவறு. 1 ஆண்டு 6 மாதங்கள் என்பது தவறான அளவு."},
+            "D": {"en": "Incorrect. 3 full years is an incorrect estimation.", "ta": "தவறு. 3 முழு ஆண்டுகள் என்பது தவறானது."}
+        },
+        "tnpsc_tip": {
+            "en": "Distinction Trap: Drafting Committee duration = Less than 6 months (141 days); Constituent Assembly duration = 2 years, 11 months, 18 days.",
+            "ta": "வேறுபாடு: வரைவுக் குழு எடுத்துக்கொண்ட காலம் = 6 மாதங்களுக்கும் குறைவு (141 நாட்கள்); நிர்ணய அவை எடுத்துக்கொண்ட காலம் = 2 ஆண்டுகள் 11 மாதங்கள் 18 நாட்கள்."
+        },
+        "revision_fact": {
+            "en": "In total, the Drafting Committee sat for only 141 days.",
+            "ta": "வரைவுக் குழு மொத்தம் 141 நாட்கள் மட்டுமே அமர்வுகளை நடத்தியது."
+        },
+        "source_reference": ["M. Laxmikanth", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": "Remember",
+        "estimated_time_sec": 45,
+        "pyq_similarity": "High",
+        "tags": ["Drafting Committee Duration", "141 Days", "Less than 6 months"]
+    },
+    # Q29
+    {
+        "id": "MIC_E_029",
+        "subject": "Polity",
+        "topic": "Making of Indian Constitution",
+        "difficulty": "Easy",
+        "question_type": "Direct MCQ",
+        "question": {
+            "en": "Who chaired the Union Powers Committee of the Constituent Assembly?",
+            "ta": "அரசியலமைப்பு நிர்ணய அவையின் மத்திய அதிகாரக் குழுவின் தலைவராக இருந்தவர் யார்?"
+        },
+        "options": [
+            {"id": "A", "en": "Jawaharlal Nehru", "ta": "ஜவஹர்லால் நேரு"},
+            {"id": "B", "en": "Sardar Vallabhbhai Patel", "ta": "சர்தார் வல்லபாய் படேல்"},
+            {"id": "C", "en": "Dr. B.R. Ambedkar", "ta": "டாக்டர் பி.ஆர். அம்பேத்கர்"},
+            {"id": "D", "en": "Dr. Rajendra Prasad", "ta": "டாக்டர் ராஜேந்திர பிரசாத்"}
+        ],
+        "correct_answer": "A",
+        "explanation": {
+            "en": "Jawaharlal Nehru was the Chairman of the Union Powers Committee as well as the Union Constitution Committee.",
+            "ta": "ஜவஹர்லால் நேரு மத்திய அதிகாரக் குழு மற்றும் மத்திய அரசியலமைப்புச் சாசனக் குழு ஆகியவற்றின் தலைவராக இருந்தார்."
+        },
+        "why_not_others": {
+            "A": {"en": "Correct. Jawaharlal Nehru chaired Union Powers Committee.", "ta": "சரி. ஜவஹர்லால் நேரு மத்திய அதிகாரக் குழுவின் தலைவர்."},
+            "B": {"en": "Incorrect. Sardar Patel chaired Provincial Constitution Committee.", "ta": "தவறு. சர்தார் படேல் மாகாண அரசியலமைப்புச் சாசனக் குழுத் தலைவர்."},
+            "C": {"en": "Incorrect. Dr. Ambedkar chaired Drafting Committee.", "ta": "தவறு. அம்பேத்கர் வரைவுக் குழுத் தலைவர்."},
+            "D": {"en": "Incorrect. Dr. Rajendra Prasad chaired Steering Committee.", "ta": "தவறு. டாக்டர் ராஜேந்திர பிரசாத் வழிகாட்டும் குழுத் தலைவர்."}
+        },
+        "tnpsc_tip": {
+            "en": "Rule of thumb: Committees with 'Union' in title were headed by Jawaharlal Nehru (Union Powers, Union Constitution).",
+            "ta": "'மத்திய' (Union) எனத் தொடங்கும் குழுக்களுக்கு ஜவஹர்லால் நேரு தலைமை தாங்கினார்."
+        },
+        "revision_fact": {
+            "en": "Jawaharlal Nehru also chaired the States Committee (Committee for Negotiating with States).",
+            "ta": "ஜவஹர்லால் நேரு மாநிலங்கள் குழுவிற்கும் (மாநிலங்களுடன் பேச்சுவார்த்தை நடத்தும் குழு) தலைமை தாங்கினார்."
+        },
+        "source_reference": ["M. Laxmikanth", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": "Remember",
+        "estimated_time_sec": 35,
+        "pyq_similarity": "High",
+        "tags": ["Union Powers Committee", "Jawaharlal Nehru", "Committees"]
+    },
+    # Q30
+    {
+        "id": "MIC_E_030",
+        "subject": "Polity",
+        "topic": "Making of Indian Constitution",
+        "difficulty": "Easy",
+        "question_type": "Direct MCQ",
+        "question": {
+            "en": "Who chaired the Provincial Constitution Committee of the Constituent Assembly?",
+            "ta": "அரசியலமைப்பு நிர்ணய அவையின் மாகாண அரசியலமைப்புச் சாசனக் குழுவின் தலைவராக இருந்தவர் யார்?"
+        },
+        "options": [
+            {"id": "A", "en": "Sardar Vallabhbhai Patel", "ta": "சர்தார் வல்லபாய் படேல்"},
+            {"id": "B", "en": "Jawaharlal Nehru", "ta": "ஜவஹர்லால் நேரு"},
+            {"id": "C", "en": "Dr. Rajendra Prasad", "ta": "டாக்டர் ராஜேந்திர பிரசாத்"},
+            {"id": "D", "en": "J.B. Kripalani", "ta": "ஜே.பி. கிருபளானி"}
+        ],
+        "correct_answer": "A",
+        "explanation": {
+            "en": "Sardar Vallabhbhai Patel was the Chairman of the Provincial Constitution Committee.",
+            "ta": "சர்தார் வல்லபாய் படேல் மாகாண அரசியலமைப்புச் சாசனக் குழுவின் தலைவராக இருந்தார்."
+        },
+        "why_not_others": {
+            "A": {"en": "Correct. Sardar Patel chaired Provincial Constitution Committee.", "ta": "சரி. சர்தார் படேல் மாகாண அரசியலமைப்புச் சாசனக் குழுத் தலைவர்."},
+            "B": {"en": "Incorrect. Nehru chaired Union Constitution Committee.", "ta": "தவறு. நேரு மத்திய அரசியலமைப்புச் சாசனக் குழுத் தலைவர்."},
+            "C": {"en": "Incorrect. Rajendra Prasad chaired Steering Committee.", "ta": "தவறு. ராஜேந்திர பிரசாத் வழிகாட்டும் குழுத் தலைவர்."},
+            "D": {"en": "Incorrect. J.B. Kripalani chaired Fundamental Rights Sub-Committee.", "ta": "தவறு. ஜே.பி. கிருபளானி அடிப்படை உரிமைகள் துணைக் குழுத் தலைவர்."}
+        },
+        "tnpsc_tip": {
+            "en": "Sardar Patel is known as the 'Iron Man of India' for integrating princely provinces.",
+            "ta": "மாகாணங்களை ஒருங்கிணைத்ததால் சர்தார் படேல் 'இந்தியாவின் இரும்பு மனிதர்' என்று அழைக்கப்படுகிறார்."
+        },
+        "revision_fact": {
+            "en": "Sardar Patel also chaired the Advisory Committee on Fundamental Rights, Minorities and Tribal Areas.",
+            "ta": "சர்தார் படேல் அடிப்படை உரிமைகள், சிறுபான்மையினர் மற்றும் பழங்குடியினர் ஆலோசனைக் குழுவிற்கும் தலைமை தாங்கினார்."
+        },
+        "source_reference": ["M. Laxmikanth", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": "Remember",
+        "estimated_time_sec": 35,
+        "pyq_similarity": "High",
+        "tags": ["Provincial Constitution Committee", "Sardar Patel"]
+    },
+    # Q31
+    {
+        "id": "MIC_E_031",
+        "subject": "Polity",
+        "topic": "Making of Indian Constitution",
+        "difficulty": "Easy",
+        "question_type": "Direct MCQ",
+        "question": {
+            "en": "Who among the following was the Chairman of the Steering Committee of the Constituent Assembly?",
+            "ta": "அரசியலமைப்பு நிர்ணய அவையின் வழிகாட்டும் குழுவின் (Steering Committee) தலைவராக இருந்தவர் யார்?"
+        },
+        "options": [
+            {"id": "A", "en": "Dr. Rajendra Prasad", "ta": "டாக்டர் ராஜேந்திர பிரசாத்"},
+            {"id": "B", "en": "Jawaharlal Nehru", "ta": "ஜவஹர்லால் நேரு"},
+            {"id": "C", "en": "Dr. B.R. Ambedkar", "ta": "டாக்டர் பி.ஆர். அம்பேத்கர்"},
+            {"id": "D", "en": "K.M. Munshi", "ta": "கே.எம். முன்ஷி"}
+        ],
+        "correct_answer": "A",
+        "explanation": {
+            "en": "Dr. Rajendra Prasad, the President of the Constituent Assembly, was the Chairman of the Steering Committee as well as the Rules of Procedure Committee.",
+            "ta": "நிர்ணய அவையின் தலைவரான டாக்டர் ராஜேந்திர பிரசாத், வழிகாட்டும் குழு மற்றும் நடைமுறை விதிகளுக்கான குழுவின் தலைவராக பணியாற்றினார்."
+        },
+        "why_not_others": {
+            "A": {"en": "Correct. Dr. Rajendra Prasad chaired Steering Committee.", "ta": "சரி. டாக்டர் ராஜேந்திர பிரசாத் வழிகாட்டும் குழுவின் தலைவர்."},
+            "B": {"en": "Incorrect. Nehru chaired Union Powers Committee.", "ta": "தவறு. நேரு மத்திய அதிகாரக் குழுவின் தலைவர்."},
+            "C": {"en": "Incorrect. Ambedkar chaired Drafting Committee.", "ta": "தவறு. அம்பேத்கர் வரைவுக் குழுவின் தலைவர்."},
+            "D": {"en": "Incorrect. K.M. Munshi chaired Order of Business Committee.", "ta": "தவறு. கே.எம். முன்ஷி வர்த்தக ஒழுங்குமுறைக் குழுவின் தலைவர்."}
+        },
+        "tnpsc_tip": {
+            "en": "Procedural/Administrative committees like Rules of Procedure and Steering were headed by Assembly President Dr. Rajendra Prasad.",
+            "ta": "நடைமுறை விதிகள் மற்றும் வழிகாட்டும் குழு போன்ற நிர்வாகக் குழுக்களுக்கு அவைத் தலைவர் டாக்டர் ராஜேந்திர பிரசாத் தலைமை தாங்கினார்."
+        },
+        "revision_fact": {
+            "en": "Dr. Rajendra Prasad also headed the Finance and Staff Committee and Ad hoc Committee on the National Flag.",
+            "ta": "டாக்டர் ராஜேந்திர பிரசாத் நிதி மற்றும் பணியாளர் குழு மற்றும் தேசியக் கொடிக்கான தற்காலிகக் குழு ஆகியவற்றிற்கும் தலைமை தாங்கினார்."
+        },
+        "source_reference": ["M. Laxmikanth", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": "Remember",
+        "estimated_time_sec": 35,
+        "pyq_similarity": "High",
+        "tags": ["Steering Committee", "Dr. Rajendra Prasad", "Assembly Committees"]
+    },
+    # Q32
+    {
+        "id": "MIC_E_032",
+        "subject": "Polity",
+        "topic": "Making of Indian Constitution",
+        "difficulty": "Easy",
+        "question_type": "Direct MCQ",
+        "question": {
+            "en": "Who was the Chairman of the Fundamental Rights Sub-Committee of the Constituent Assembly?",
+            "ta": "அரசியலமைப்பு நிர்ணய அவையின் அடிப்படை உரிமைகள் துணைக் குழுவின் தலைவராக இருந்தவர் யார்?"
+        },
+        "options": [
+            {"id": "A", "en": "J.B. Kripalani", "ta": "ஜே.பி. கிருபளானி"},
+            {"id": "B", "en": "H.C. Mookerjee", "ta": "எச்.சி. முகர்ஜி"},
+            {"id": "C", "en": "Gopinath Bardoloi", "ta": "கோபிநாத் பர்தோலோய்"},
+            {"id": "D", "en": "A.V. Thakkar", "ta": "ஏ.வி. தாக்கர்"}
+        ],
+        "correct_answer": "A",
+        "explanation": {
+            "en": "J.B. Kripalani was the Chairman of the Fundamental Rights Sub-Committee under the main Advisory Committee headed by Patel.",
+            "ta": "படேல் தலைமையிலான முக்கிய ஆலோசனைக் குழுவின் கீழ் செயல்பட்ட அடிப்படை உரிமைகள் துணைக் குழுவின் தலைவராக ஜே.பி. கிருபளானி இருந்தார்."
+        },
+        "why_not_others": {
+            "A": {"en": "Correct. J.B. Kripalani chaired Fundamental Rights Sub-Committee.", "ta": "சரி. ஜே.பி. கிருபளானி அடிப்படை உரிமைகள் துணைக் குழுவின் தலைவர்."},
+            "B": {"en": "Incorrect. H.C. Mookerjee chaired Minorities Sub-Committee.", "ta": "தவறு. எச்.சி. முகர்ஜி சிறுபான்மையினர் துணைக் குழுவின் தலைவர்."},
+            "C": {"en": "Incorrect. Gopinath Bardoloi chaired North-East Frontier Tribal Areas Sub-Committee.", "ta": "தவறு. கோபிநாத் பர்தோலோய் வடகிழக்கு எல்லைப் பழங்குடியினர் துணைக் குழுத் தலைவர்."},
+            "D": {"en": "Incorrect. A.V. Thakkar chaired Excluded Areas Sub-Committee.", "ta": "தவறு. ஏ.வி. தாக்கர் விலக்கப்பட்ட பகுதிகள் துணைக் குழுத் தலைவர்."}
+        },
+        "tnpsc_tip": {
+            "en": "Main Advisory Committee = Sardar Patel; FR Sub-Committee = J.B. Kripalani; Minorities Sub-Committee = H.C. Mookerjee.",
+            "ta": "முக்கிய ஆலோசனைக் குழு = சர்தார் படேல்; அடிப்படை உரிமைகள் துணைக் குழு = ஜே.பி. கிருபளானி; சிறுபான்மையினர் துணைக் குழு = எச்.சி. முகர்ஜி."
+        },
+        "revision_fact": {
+            "en": "Acharya J.B. Kripalani was the President of the Indian National Congress during India's Independence in 1947.",
+            "ta": "1947-இல் இந்தியா சுதந்திரம் அடைந்த போது இந்திய தேசிய காங்கிரஸின் தலைவராக ஆச்சார்யா ஜே.பி. கிருபளானி இருந்தார்."
+        },
+        "source_reference": ["M. Laxmikanth", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": "Remember",
+        "estimated_time_sec": 40,
+        "pyq_similarity": "High",
+        "tags": ["J.B. Kripalani", "Fundamental Rights Sub-Committee"]
+    },
+    # Q33
+    {
+        "id": "MIC_E_033",
+        "subject": "Polity",
+        "topic": "Making of Indian Constitution",
+        "difficulty": "Easy",
+        "question_type": "Direct MCQ",
+        "question": {
+            "en": "On which date did the Constituent Assembly adopt the National Flag of India?",
+            "ta": "அரசியலமைப்பு நிர்ணய அவை இந்தியாவின் தேசியக் கொடியை எந்த நாளில் ஏற்றுக்கொண்டது?"
+        },
+        "options": [
+            {"id": "A", "en": "July 22, 1947", "ta": "ஜூலை 22, 1947"},
+            {"id": "B", "en": "January 24, 1950", "ta": "ஜனவரி 24, 1950"},
+            {"id": "C", "en": "August 15, 1947", "ta": "ஆகஸ்ட் 15, 1947"},
+            {"id": "D", "en": "November 26, 1949", "ta": "நவம்பர் 26, 1949"}
+        ],
+        "correct_answer": "A",
+        "explanation": {
+            "en": "The Constituent Assembly adopted the National Flag of India on July 22, 1947, a few weeks before Independence.",
+            "ta": "சுதந்திரத்திற்கு சில வாரங்களுக்கு முன், ஜூலை 22, 1947 அன்று தேசியக் கொடியை அரசியலமைப்பு நிர்ணய அவை ஏற்றுக்கொண்டது."
+        },
+        "why_not_others": {
+            "A": {"en": "Correct. National Flag was adopted on July 22, 1947.", "ta": "சரி. தேசியக் கொடி ஜூலை 22, 1947-இல் ஏற்றுக்கொள்ளப்பட்டது."},
+            "B": {"en": "Incorrect. January 24, 1950: National Anthem and Song adopted.", "ta": "தவறு. ஜனவரி 24, 1950: தேசிய கீதம் மற்றும் தேசியப் பாடல் ஏற்றுக்கொள்ளப்பட்ட நாள்."},
+            "C": {"en": "Incorrect. August 15, 1947 is Independence Day.", "ta": "தவறு. ஆகஸ்ட் 15, 1947 சுதந்திர நாள்."},
+            "D": {"en": "Incorrect. November 26, 1949 is Constitution adoption day.", "ta": "தவறு. நவம்பர் 26, 1949 அரசியலமைப்பு ஏற்றுக்கொள்ளப்பட்ட நாள்."}
+        },
+        "tnpsc_tip": {
+            "en": "Flag adopted BEFORE Independence (July 22, 1947). Anthem & Song adopted just BEFORE Republic Day (Jan 24, 1950).",
+            "ta": "தேசியக் கொடி சுதந்திரத்திற்கு முன் (ஜூலை 22, 1947) ஏற்றுக்கொள்ளப்பட்டது. கீதம் மற்றும் பாடல் குடியரசு நாளுக்கு முன் (ஜனவரி 24, 1950) ஏற்றுக்கொள்ளப்பட்டது."
+        },
+        "revision_fact": {
+            "en": "The ratio of width of the flag to its length is 2:3.",
+            "ta": "தேசியக் கொடியின் அகலத்திற்கும் நீளத்திற்கும் இடையே உள்ள விகிதம் 2:3 ஆகும்."
+        },
+        "source_reference": ["M. Laxmikanth", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": "Remember",
+        "estimated_time_sec": 35,
+        "pyq_similarity": "High",
+        "tags": ["National Flag Adoption", "July 22 1947", "Symbols"]
+    },
+    # Q34
+    {
+        "id": "MIC_E_034",
+        "subject": "Polity",
+        "topic": "Making of Indian Constitution",
+        "difficulty": "Easy",
+        "question_type": "Direct MCQ",
+        "question": {
+            "en": "On which date did the Constituent Assembly adopt the National Anthem ('Jana Gana Mana')?",
+            "ta": "அரசியலமைப்பு நிர்ணய அவை தேசிய கீதத்தை ('ஜன கண மன') எந்த நாளில் ஏற்றுக்கொண்டது?"
+        },
+        "options": [
+            {"id": "A", "en": "January 24, 1950", "ta": "ஜனவரி 24, 1950"},
+            {"id": "B", "en": "July 22, 1947", "ta": "ஜூலை 22, 1947"},
+            {"id": "C", "en": "November 26, 1949", "ta": "நவம்பர் 26, 1949"},
+            {"id": "D", "en": "January 26, 1950", "ta": "ஜனவரி 26, 1950"}
+        ],
+        "correct_answer": "A",
+        "explanation": {
+            "en": "The Constituent Assembly adopted 'Jana Gana Mana' as the National Anthem of India on January 24, 1950.",
+            "ta": "ஜனவரி 24, 1950 அன்று 'ஜன கண மன' பாடலை இந்தியாவின் தேசிய கீதமாக அரசியலமைப்பு நிர்ணய அவை ஏற்றுக்கொண்டது."
+        },
+        "why_not_others": {
+            "A": {"en": "Correct. National Anthem adopted on January 24, 1950.", "ta": "சரி. தேசிய கீதம் ஜனவரி 24, 1950 அன்று ஏற்றுக்கொள்ளப்பட்டது."},
+            "B": {"en": "Incorrect. July 22, 1947 was National Flag adoption date.", "ta": "தவறு. ஜூலை 22, 1947 தேசியக் கொடி ஏற்றுக்கொள்ளப்பட்ட நாள்."},
+            "C": {"en": "Incorrect. November 26, 1949 was Constitution adoption date.", "ta": "தவறு. நவம்பர் 26, 1949 அரசியலமைப்பு ஏற்றுக்கொள்ளப்பட்ட நாள்."},
+            "D": {"en": "Incorrect. January 26, 1950 was Republic Day.", "ta": "தவறு. ஜனவரி 26, 1950 குடியரசு நாள்."}
+        },
+        "tnpsc_tip": {
+            "en": "On Jan 24, 1950, three major events occurred: Adoption of Anthem, Adoption of Song, Election of Rajendra Prasad as 1st President.",
+            "ta": "ஜனவரி 24, 1950-இல் மூன்று முக்கிய நிகழ்வுகள் நடந்தன: தேசிய கீதம் ஏற்பு, தேசியப் பாடல் ஏற்பு, ராஜேந்திர பிரசாத் முதல் குடியரசுத் தலைவராகத் தேர்வு."
+        },
+        "revision_fact": {
+            "en": "'Jana Gana Mana' was composed originally in Bengali by Rabindranath Tagore in 1911.",
+            "ta": "'ஜன கண மன' பாடல் 1911-இல் ரவீந்திரநாத் தாகூரால் வங்காள மொழியில் இயற்றப்பட்டது."
+        },
+        "source_reference": ["M. Laxmikanth", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": "Remember",
+        "estimated_time_sec": 35,
+        "pyq_similarity": "High",
+        "tags": ["National Anthem", "Jan 24 1950", "Rabindranath Tagore"]
+    },
+    # Q35
+    {
+        "id": "MIC_E_035",
+        "subject": "Polity",
+        "topic": "Making of Indian Constitution",
+        "difficulty": "Easy",
+        "question_type": "Direct MCQ",
+        "question": {
+            "en": "On which date did the Constituent Assembly adopt 'Vande Mataram' as the National Song of India?",
+            "ta": "அரசியலமைப்பு நிர்ணய அவை 'வந்தே மாதரம்' பாடலை இந்தியாவின் தேசியப் பாடலாக எந்த நாளில் ஏற்றுக்கொண்டது?"
+        },
+        "options": [
+            {"id": "A", "en": "January 24, 1950", "ta": "ஜனவரி 24, 1950"},
+            {"id": "B", "en": "July 22, 1947", "ta": "ஜூலை 22, 1947"},
+            {"id": "C", "en": "August 15, 1947", "ta": "ஆகஸ்ட் 15, 1947"},
+            {"id": "D", "en": "November 26, 1949", "ta": "நவம்பர் 26, 1949"}
+        ],
+        "correct_answer": "A",
+        "explanation": {
+            "en": "The Constituent Assembly adopted 'Vande Mataram' as the National Song of India on January 24, 1950, giving it equal status with the National Anthem.",
+            "ta": "ஜனவரி 24, 1950 அன்று 'வந்தே மாதரம்' பாடலை தேசிய கீதத்திற்கு இணையான அந்தஸ்துடன் தேசியப் பாடலாக அரசியலமைப்பு நிர்ணய அவை ஏற்றுக்கொண்டது."
+        },
+        "why_not_others": {
+            "A": {"en": "Correct. National Song was adopted on January 24, 1950.", "ta": "சரி. தேசியப் பாடல் ஜனவரி 24, 1950 அன்று ஏற்றுக்கொள்ளப்பட்டது."},
+            "B": {"en": "Incorrect. July 22, 1947 is National Flag adoption date.", "ta": "தவறு. ஜூலை 22, 1947 தேசியக் கொடி ஏற்றுக்கொண்ட நாள்."},
+            "C": {"en": "Incorrect. August 15, 1947 is Independence Day.", "ta": "தவறு. ஆகஸ்ட் 15, 1947 சுதந்திர நாள்."},
+            "D": {"en": "Incorrect. November 26, 1949 is Law Day / Constitution Day.", "ta": "தவறு. நவம்பர் 26, 1949 அரசியலமைப்பு நாள்."}
+        },
+        "tnpsc_tip": {
+            "en": "'Vande Mataram' was composed in Sanskrit by Bankim Chandra Chatterji in his novel Anandamath (1882).",
+            "ta": "'வந்தே மாதரம்' பங்கிம் சந்திர சாட்டர்ஜியால் அவரது ஆனந்தமடம் (1882) நாவலில் சமஸ்கிருதத்தில் இயற்றப்பட்டது."
+        },
+        "revision_fact": {
+            "en": "Vande Mataram was sung for the first time at the 1896 session of the Indian National Congress.",
+            "ta": "வந்தே மாதரம் பாடல் 1896 இந்திய தேசிய காங்கிரஸ் மாநாட்டில் முதன்முறையாகப் பாடப்பட்டது."
+        },
+        "source_reference": ["M. Laxmikanth", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": "Remember",
+        "estimated_time_sec": 35,
+        "pyq_similarity": "High",
+        "tags": ["National Song", "Vande Mataram", "Bankim Chandra"]
+    },
+    # Q36
+    {
+        "id": "MIC_E_036",
+        "subject": "Polity",
+        "topic": "Making of Indian Constitution",
+        "difficulty": "Easy",
+        "question_type": "Direct MCQ",
+        "question": {
+            "en": "On which date was Dr. Rajendra Prasad elected as the first President of Independent India by the Constituent Assembly?",
+            "ta": "டாக்டர் ராஜேந்திர பிரசாத் எந்த நாளில் அரசியலமைப்பு நிர்ணய அவையால் சுதந்திர இந்தியாவின் முதல் குடியரசுத் தலைவராகத் தேர்ந்தெடுக்கப்பட்டார்?"
+        },
+        "options": [
+            {"id": "A", "en": "January 24, 1950", "ta": "ஜனவரி 24, 1950"},
+            {"id": "B", "en": "January 26, 1950", "ta": "ஜனவரி 26, 1950"},
+            {"id": "C", "en": "November 26, 1949", "ta": "நவம்பர் 26, 1949"},
+            {"id": "D", "en": "August 15, 1947", "ta": "ஆகஸ்ட் 15, 1947"}
+        ],
+        "correct_answer": "A",
+        "explanation": {
+            "en": "The Constituent Assembly elected Dr. Rajendra Prasad as the first President of India at its final session on January 24, 1950.",
+            "ta": "ஜனவரி 24, 1950 அன்று நடைபெற்ற இறுதி அமர்வில் அரசியலமைப்பு நிர்ணய அவை டாக்டர் ராஜேந்திர பிரசாத்தை இந்தியாவின் முதல் குடியரசுத் தலைவராகத் தேர்ந்தெடுத்தது."
+        },
+        "why_not_others": {
+            "A": {"en": "Correct. Elected as 1st President on January 24, 1950.", "ta": "சரி. ஜனவரி 24, 1950 அன்று முதல் குடியரசுத் தலைவராகத் தேர்வானார்."},
+            "B": {"en": "Incorrect. January 26, 1950 was when he took office as Constitution came into force.", "ta": "தவறு. ஜனவரி 26, 1950 அன்று அரசியலமைப்பு நடைமுறைக்கு வந்து அவர் பதவியேற்றார்."},
+            "C": {"en": "Incorrect. November 26, 1949 was Constitution adoption date.", "ta": "தவறு. நவம்பர் 26, 1949 அரசியலமைப்பு ஏற்றுக்கொள்ளப்பட்ட நாள்."},
+            "D": {"en": "Incorrect. August 15, 1947 was Independence Day.", "ta": "தவறு. ஆகஸ்ட் 15, 1947 சுதந்திர நாள்."}
+        },
+        "tnpsc_tip": {
+            "en": "Election date = Jan 24, 1950; Official assumption of Republic = Jan 26, 1950.",
+            "ta": "தேர்ந்தெடுக்கப்பட்ட நாள் = ஜனவரி 24, 1950; குடியரசுத் தலைவராகப் பொறுப்பேற்ற நாள் = ஜனவரி 26, 1950."
+        },
+        "revision_fact": {
+            "en": "January 24, 1950 was the 11th and final session of the Constituent Assembly.",
+            "ta": "ஜனவரி 24, 1950 என்பது அரசியலமைப்பு நிர்ணய அவையின் 11-வது மற்றும் இறுதி அமர்வாகும்."
+        },
+        "source_reference": ["M. Laxmikanth", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": "Remember",
+        "estimated_time_sec": 35,
+        "pyq_similarity": "High",
+        "tags": ["First President", "Dr. Rajendra Prasad", "Jan 24 1950"]
+    },
+    # Q37
+    {
+        "id": "MIC_E_037",
+        "subject": "Polity",
+        "topic": "Making of Indian Constitution",
+        "difficulty": "Easy",
+        "question_type": "Direct MCQ",
+        "question": {
+            "en": "In which month and year did the Constituent Assembly ratify India's membership of the Commonwealth?",
+            "ta": "அரசியலமைப்பு நிர்ணய அவை காமன்வெல்த் அமைப்பில் இந்தியாவின் உறுப்பினருரிமையை எந்த ஆண்டு எந்த மாதத்தில் உறுதி செய்தது?"
+        },
+        "options": [
+            {"id": "A", "en": "May 1949", "ta": "மே 1949"},
+            {"id": "B", "en": "July 1947", "ta": "ஜூலை 1947"},
+            {"id": "C", "en": "November 1949", "ta": "நவம்பர் 1949"},
+            {"id": "D", "en": "January 1950", "ta": "ஜனவரி 1950"}
+        ],
+        "correct_answer": "A",
+        "explanation": {
+            "en": "The Constituent Assembly ratified India's membership of the Commonwealth of Nations in May 1949.",
+            "ta": "1949 மே மாதத்தில் அரசியலமைப்பு நிர்ணய அவை காமன்வெல்த் அமைப்பில் இந்தியாவின் உறுப்பினருரிமையை உறுதி செய்தது."
+        },
+        "why_not_others": {
+            "A": {"en": "Correct. Commonwealth membership ratified in May 1949.", "ta": "சரி. மே 1949-இல் காமன்வெல்த் உறுப்பினர் உரிமை உறுதி செய்யப்பட்டது."},
+            "B": {"en": "Incorrect. July 1947 was National Flag adoption.", "ta": "தவறு. ஜூலை 1947 தேசியக் கொடி ஏற்பு."},
+            "C": {"en": "Incorrect. November 1949 was Constitution adoption.", "ta": "தவறு. நவம்பர் 1949 அரசியலமைப்பு ஏற்பு."},
+            "D": {"en": "Incorrect. January 1950 was Anthem/Song adoption and Republic Day.", "ta": "தவறு. ஜனவரி 1950 கீதம்/பாடல் ஏற்பு."}
+        },
+        "tnpsc_tip": {
+            "en": "Other major functions performed by Assembly: Ratified Commonwealth (May 1949), Flag (July 1947), Anthem & Song (Jan 1950), 1st President (Jan 1950).",
+            "ta": "அவையின் இதர பணிகள்: காமன்வெல்த் ஏற்பு (மே 1949), கொடி (ஜூலை 1947), கீதம் & பாடல் (ஜன 1950), முதல் தலைவர் (ஜன 1950)."
+        },
+        "revision_fact": {
+            "en": "India's Commonwealth membership did not affect her full sovereign status as a Republic.",
+            "ta": "காமன்வெல்த் உறுப்பினருரிமை இந்தியாவின் முழுமையான இறையாண்மை கொண்ட குடியரசு அந்தஸ்தைப் பாதிக்கவில்லை."
+        },
+        "source_reference": ["M. Laxmikanth", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": "Remember",
+        "estimated_time_sec": 40,
+        "pyq_similarity": "High",
+        "tags": ["Commonwealth Membership", "May 1949", "Ratification"]
+    },
+    # Q38
+    {
+        "id": "MIC_E_038",
+        "subject": "Polity",
+        "topic": "Making of Indian Constitution",
+        "difficulty": "Easy",
+        "question_type": "Direct MCQ",
+        "question": {
+            "en": "On which historic date was the Constitution of India adopted, enacted, and given to themselves by the people of India in the Constituent Assembly?",
+            "ta": "இந்திய மக்கள் அரசியலமைப்பு நிர்ணய அவையில் இந்திய அரசியலமைப்பை ஏற்று, இயற்றி தங்களுக்குத் தாமே வழங்கிக்கொண்ட வரலாற்றுச் சிறப்புமிக்க நாள் எது?"
+        },
+        "options": [
+            {"id": "A", "en": "November 26, 1949", "ta": "நவம்பர் 26, 1949"},
+            {"id": "B", "en": "January 26, 1950", "ta": "ஜனவரி 26, 1950"},
+            {"id": "C", "en": "August 15, 1947", "ta": "ஆகஸ்ட் 15, 1947"},
+            {"id": "D", "en": "January 24, 1950", "ta": "ஜனவரி 24, 1950"}
+        ],
+        "correct_answer": "A",
+        "explanation": {
+            "en": "The Constitution of India was adopted, enacted and passed by the Constituent Assembly on November 26, 1949, as explicitly mentioned in the Preamble.",
+            "ta": "முகப்புரையில் குறிப்பிடப்பட்டுள்ளபடி, நவம்பர் 26, 1949 அன்று இந்திய அரசியலமைப்பு நிர்ணய அவையால் அரசியலமைப்பு ஏற்றுக்கொள்ளப்பட்டு, இயற்றப்பட்டு தங்களுக்குத் தாமே வழங்கப்பட்டது."
+        },
+        "why_not_others": {
+            "A": {"en": "Correct. November 26, 1949 was the Adoption Date.", "ta": "சரி. நவம்பர் 26, 1949 அரசியலமைப்பு ஏற்றுக்கொள்ளப்பட்ட நாள்."},
+            "B": {"en": "Incorrect. January 26, 1950 was the Commencement Date.", "ta": "தவறு. ஜனவரி 26, 1950 அரசியலமைப்பு நடைமுறைக்கு வந்த நாள்."},
+            "C": {"en": "Incorrect. August 15, 1947 was Independence Day.", "ta": "தவறு. ஆகஸ்ட் 15, 1947 சுதந்திர நாள்."},
+            "D": {"en": "Incorrect. January 24, 1950 was the final signing session.", "ta": "தவறு. ஜனவரி 24, 1950 இறுதி கையொப்ப அமர்வு."}
+        },
+        "tnpsc_tip": {
+            "en": "November 26 is celebrated every year in India as 'Constitution Day' (Samvidhan Divas).",
+            "ta": "நவம்பர் 26 இந்தியாவில் ஒவ்வொரு ஆண்டும் 'அரசியலமைப்பு தினம்' (சம்விதான் திவாஸ்) எனக் கொண்டாடப்படுகிறது."
+        },
+        "revision_fact": {
+            "en": "Constitution Day celebration was introduced officially in the year 2015 to mark Dr. B.R. Ambedkar's 125th birth anniversary.",
+            "ta": "டாக்டர் பி.ஆர். அம்பேத்கரின் 125வது பிறந்தநாளை முன்னிட்டு 2015 ஆம் ஆண்டு முதல் அதிகாரப்பூர்வமாக அரசியலமைப்பு தினம் கொண்டாடப்படுகிறது."
+        },
+        "source_reference": ["M. Laxmikanth", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": "Remember",
+        "estimated_time_sec": 35,
+        "pyq_similarity": "High",
+        "tags": ["Constitution Adoption", "Nov 26 1949", "Constitution Day"]
+    },
+    # Q39
+    {
+        "id": "MIC_E_039",
+        "subject": "Polity",
+        "topic": "Making of Indian Constitution",
+        "difficulty": "Easy",
+        "question_type": "Direct MCQ",
+        "question": {
+            "en": "How many Articles and Schedules were present in the original Constitution of India as adopted on November 26, 1949?",
+            "ta": "நவம்பர் 26, 1949 அன்று ஏற்றுக்கொள்ளப்பட்ட மூல இந்திய அரசியலமைப்பில் எத்தனை சரத்துகள் (Articles) மற்றும் அட்டவணைகள் (Schedules) இருந்தன?"
+        },
+        "options": [
+            {"id": "A", "en": "395 Articles and 8 Schedules", "ta": "395 சரத்துகள் மற்றும் 8 அட்டவணைகள்"},
+            {"id": "B", "en": "395 Articles and 12 Schedules", "ta": "395 சரத்துகள் மற்றும் 12 அட்டவணைகள்"},
+            {"id": "C", "en": "448 Articles and 12 Schedules", "ta": "448 சரத்துகள் மற்றும் 12 அட்டவணைகள்"},
+            {"id": "D", "en": "300 Articles and 10 Schedules", "ta": "300 சரத்துகள் மற்றும் 10 அட்டவணைகள்"}
+        ],
+        "correct_answer": "A",
+        "explanation": {
+            "en": "The Constitution as adopted on November 26, 1949 contained a Preamble, 395 Articles, and 8 Schedules.",
+            "ta": "நவம்பர் 26, 1949 அன்று ஏற்றுக்கொள்ளப்பட்ட அரசியலமைப்பில் ஒரு முகப்புரை, 395 சரத்துகள் மற்றும் 8 அட்டவணைகள் இருந்தன."
+        },
+        "why_not_others": {
+            "A": {"en": "Correct. Original Constitution had 395 Articles and 8 Schedules.", "ta": "சரி. மூல அரசியலமைப்பில் 395 சரத்துகள் மற்றும் 8 அட்டவணைகள் இருந்தன."},
+            "B": {"en": "Incorrect. 12 Schedules is the present number of schedules.", "ta": "தவறு. 12 அட்டவணைகள் என்பது தற்போதைய அட்டவணைகளின் எண்ணிக்கை."},
+            "C": {"en": "Incorrect. 448 Articles and 12 Schedules represents present expanded structure.", "ta": "தவறு. 448 சரத்துகள் மற்றும் 12 அட்டவணைகள் என்பது தற்போதைய விரிவாக்கப்பட்ட கட்டமைப்பு."},
+            "D": {"en": "Incorrect. 300 Articles is an incorrect count.", "ta": "தவறு. 300 சரத்துகள் என்பது தவறான எண்ணிக்கை."}
+        },
+        "tnpsc_tip": {
+            "en": "Original = 395 Articles & 8 Schedules. Present = ~470 Articles & 12 Schedules.",
+            "ta": "மூல அரசியலமைப்பு = 395 சரத்துகள் & 8 அட்டவணைகள். தற்போதைய = ~470 சரத்துகள் & 12 அட்டவணைகள்."
+        },
+        "revision_fact": {
+            "en": "The Preamble was enacted AFTER the entire Constitution was already enacted.",
+            "ta": "முழு அரசியலமைப்பும் இயற்றப்பட்ட பிறகே முகப்புரை இயற்றப்பட்டது."
+        },
+        "source_reference": ["M. Laxmikanth", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": "Remember",
+        "estimated_time_sec": 35,
+        "pyq_similarity": "High",
+        "tags": ["395 Articles", "8 Schedules", "Original Composition"]
+    },
+    # Q40
+    {
+        "id": "MIC_E_040",
+        "subject": "Polity",
+        "topic": "Making of Indian Constitution",
+        "difficulty": "Easy",
+        "question_type": "Direct MCQ",
+        "question": {
+            "en": "How many members of the Constituent Assembly were actually present and signed the official copy of the Constitution on November 26, 1949?",
+            "ta": "நவம்பர் 26, 1949 அன்று அவையில் நேரில் கலந்து கொண்டு அரசியலமைப்பின் அதிகாரப்பூர்வ பிரதியில் கையொப்பமிட்ட உறுப்பினர்கள் எத்தனை பேர்?"
+        },
+        "options": [
+            {"id": "A", "en": "284", "ta": "284"},
+            {"id": "B", "en": "299", "ta": "299"},
+            {"id": "C", "en": "389", "ta": "389"},
+            {"id": "D", "en": "211", "ta": "211"}
+        ],
+        "correct_answer": "A",
+        "explanation": {
+            "en": "Out of total 299 members, only 284 members were actually present on November 26, 1949, and appended their signatures to the Constitution.",
+            "ta": "மொத்தமுள்ள 299 உறுப்பினர்களில், 284 உறுப்பினர்கள் மட்டுமே நவம்பர் 26, 1949 அன்று நேரில் கலந்து கொண்டு அரசியலமைப்பில் கையொப்பமிட்டனர்."
+        },
+        "why_not_others": {
+            "A": {"en": "Correct. Exactly 284 members signed the Constitution.", "ta": "சரி. சரியாக 284 உறுப்பினர்கள் கையொப்பமிட்டனர்."},
+            "B": {"en": "Incorrect. 299 was total reconstituted membership.", "ta": "தவறு. 299 என்பது பிரிவினைக்குப் பிந்தைய மொத்த உறுப்பினர்கள் எண்ணிக்கை."},
+            "C": {"en": "Incorrect. 389 was original pre-partition membership.", "ta": "தவறு. 389 என்பது பிரிவினைக்கு முந்தைய ஆரம்ப உறுப்பினர் எண்ணிக்கை."},
+            "D": {"en": "Incorrect. 211 was the number of members present at the first meeting on Dec 9, 1946.", "ta": "தவறு. 211 என்பது டிசம்பர் 9, 1946 முதல் கூட்டத்தில் பங்கேற்ற உறுப்பினர்கள் எண்ணிக்கை."}
+        },
+        "tnpsc_tip": {
+            "en": "First meeting presence = 211 members; Final signing presence = 284 members.",
+            "ta": "முதல் கூட்ட வருகை = 211 உறுப்பினர்கள்; இறுதி கையொப்ப வருகை = 284 உறுப்பினர்கள்."
+        },
+        "revision_fact": {
+            "en": "The motion on Draft Constitution was declared passed on November 26, 1949, after receiving the signature of the President and members.",
+            "ta": "தலைவர் மற்றும் உறுப்பினர்களின் கையொப்பத்தைப் பெற்ற பிறகு நவம்பர் 26, 1949 அன்று அரசியலமைப்பு வரைவுத் தீர்மானம் நிறைவேற்றப்பட்டதாக அறிவிக்கப்பட்டது."
+        },
+        "source_reference": ["M. Laxmikanth", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": "Remember",
+        "estimated_time_sec": 40,
+        "pyq_similarity": "High",
+        "tags": ["284 Signatures", "Signing of Constitution", "Nov 26 1949"]
+    },
+    # Q41
+    {
+        "id": "MIC_E_041",
+        "subject": "Polity",
+        "topic": "Making of Indian Constitution",
+        "difficulty": "Easy",
+        "question_type": "Direct MCQ",
+        "question": {
+            "en": "On which date did the Constitution of India come into full force and commencement?",
+            "ta": "இந்திய அரசியலமைப்பு முழுமையாக நடைமுறைக்கு (commencement) வந்த நாள் எது?"
+        },
+        "options": [
+            {"id": "A", "en": "January 26, 1950", "ta": "ஜனவரி 26, 1950"},
+            {"id": "B", "en": "November 26, 1949", "ta": "நவம்பர் 26, 1949"},
+            {"id": "C", "en": "August 15, 1947", "ta": "ஆகஸ்ட் 15, 1947"},
+            {"id": "D", "en": "January 24, 1950", "ta": "ஜனவரி 24, 1950"}
+        ],
+        "correct_answer": "A",
+        "explanation": {
+            "en": "The Constitution of India came into full force and effect on January 26, 1950, which is celebrated as Republic Day of India.",
+            "ta": "இந்திய அரசியலமைப்பு ஜனவரி 26, 1950 அன்று முழுமையாக நடைமுறைக்கு வந்தது. இந்நாள் இந்தியாவில் 'குடியரசு தினமாக' கொண்டாடப்படுகிறது."
+        },
+        "why_not_others": {
+            "A": {"en": "Correct. January 26, 1950 is the Date of Commencement.", "ta": "சரி. ஜனவரி 26, 1950 அரசியலமைப்பு நடைமுறைக்கு வந்த நாள்."},
+            "B": {"en": "Incorrect. November 26, 1949 is the Date of Adoption.", "ta": "தவறு. நவம்பர் 26, 1949 அரசியலமைப்பு ஏற்றுக்கொள்ளப்பட்ட நாள்."},
+            "C": {"en": "Incorrect. August 15, 1947 is Independence Day.", "ta": "தவறு. ஆகஸ்ட் 15, 1947 சுதந்திர நாள்."},
+            "D": {"en": "Incorrect. January 24, 1950 was the final session of Assembly.", "ta": "தவறு. ஜனவரி 24, 1950 அவையின் இறுதி அமர்வு நாள்."}
+        },
+        "tnpsc_tip": {
+            "en": "Adoption Date = Nov 26, 1949 (Samvidhan Divas); Commencement Date = Jan 26, 1950 (Republic Day).",
+            "ta": "ஏற்றுக்கொள்ளப்பட்ட நாள் = நவ 26, 1949 (அரசியலமைப்பு தினம்); நடைமுறைக்கு வந்த நாள் = ஜன 26, 1950 (குடியரசு தினம்)."
+        },
+        "revision_fact": {
+            "en": "With the commencement of the Constitution on Jan 26, 1950, the Indian Independence Act 1947 and Govt of India Act 1935 were repealed.",
+            "ta": "ஜனவரி 26, 1950-இல் அரசியலமைப்பு நடைமுறைக்கு வந்தவுடன் 1947 சுதந்திரச் சட்டமும் 1935 இந்திய அரசுச் சட்டமும் ரத்தாயின."
+        },
+        "source_reference": ["M. Laxmikanth", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": "Remember",
+        "estimated_time_sec": 35,
+        "pyq_similarity": "High",
+        "tags": ["Commencement of Constitution", "Jan 26 1950", "Republic Day"]
+    },
+    # Q42
+    {
+        "id": "MIC_E_042",
+        "subject": "Polity",
+        "topic": "Making of Indian Constitution",
+        "difficulty": "Easy",
+        "question_type": "Basic Conceptual",
+        "question": {
+            "en": "Why was January 26 specifically chosen as the date of commencement of the Constitution of India?",
+            "ta": "இந்திய அரசியலமைப்பு நடைமுறைக்கு வரும் நாளாக ஜனவரி 26 சிறப்பாகத் தேர்ந்தெடுக்கப்பட்டது ஏன்?"
+        },
+        "options": [
+            {"id": "A", "en": "To commemorate the 'Purna Swaraj' day celebrated in 1930 following the Lahore Session of INC", "ta": "1930-இல் லாகூர் காங்கிரஸ் மாநாட்டைத் தொடர்ந்து கொண்டாடப்பட்ட 'பூர்ண சுயராஜ்ய' தினத்தை நினைவுகூர"},
+            {"id": "B", "en": "It was the day Mahatma Gandhi started the Dandi March", "ta": "மகாத்மா காந்தி தண்டி யாத்திரையைத் தொடங்கிய நாள்"},
+            {"id": "C", "en": "It was the day the Cabinet Mission Plan arrived in India", "ta": "கேபினட் தூதுக்குழு இந்தியா வந்தடைந்த நாள்"},
+            {"id": "D", "en": "It was the day Dr. B.R. Ambedkar was appointed Chairman", "ta": "டாக்டர் பி.ஆர். அம்பேத்கர் வரைவுக்குழுத் தலைவராக நியமிக்கப்பட்ட நாள்"}
+        ],
+        "correct_answer": "A",
+        "explanation": {
+            "en": "January 26 was chosen because on that day in 1930, Purna Swaraj (Complete Independence) day was celebrated following the resolution of the Lahore Session (Dec 1929) of INC.",
+            "ta": "டிசம்பர் 1929 லாகூர் காங்கிரஸ் மாநாட்டின் தீர்மானத்தைத் தொடர்ந்து, ஜனவரி 26, 1930 அன்று 'பூர்ண சுயராஜ்யத் தினம்' கொண்டாடப்பட்டதால் அந்நாள் தேர்ந்தெடுக்கப்பட்டது."
+        },
+        "why_not_others": {
+            "A": {"en": "Correct. Chosen to commemorate 1930 Purna Swaraj day.", "ta": "சரி. 1930 பூர்ண சுயராஜ்ய தினத்தை நினைவுகூரத் தேர்ந்தெடுக்கப்பட்டது."},
+            "B": {"en": "Incorrect. Dandi March started on March 12, 1930.", "ta": "தவறு. தண்டி யாத்திரை மார்ச் 12, 1930-இல் தொடங்கியது."},
+            "C": {"en": "Incorrect. Cabinet Mission arrived in March 1946.", "ta": "தவறு. கேபினட் தூதுக்குழு மார்ச் 1946-இல் வந்தது."},
+            "D": {"en": "Incorrect. Ambedkar was appointed Chairman on August 29, 1947.", "ta": "தவறு. அம்பேத்கர் ஆகஸ்ட் 29, 1947-இல் தலைவரானார்."}
+        },
+        "tnpsc_tip": {
+            "en": "Lahore Session of INC (1929) was presided over by Jawaharlal Nehru, where Purna Swaraj resolution was passed.",
+            "ta": "1929 லாகூர் காங்கிரஸ் மாநாட்டிற்கு ஜவஹர்லால் நேரு தலைமை தாங்கினார், அங்கு பூர்ண சுயராஜ்ய தீர்மானம் நிறைவேற்றப்பட்டது."
+        },
+        "revision_fact": {
+            "en": "Article 394 specifies the date of commencement as 26th January, 1950.",
+            "ta": "சரத்து 394 அரசியலமைப்பு நடைமுறைக்கு வரும் நாளை ஜனவரி 26, 1950 எனக் குறிப்பிடுகிறது."
+        },
+        "source_reference": ["M. Laxmikanth", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": "Understand",
+        "estimated_time_sec": 45,
+        "pyq_similarity": "High",
+        "tags": ["January 26 Reason", "Purna Swaraj 1930", "Lahore Session"]
+    },
+    # Q43
+    {
+        "id": "MIC_E_043",
+        "subject": "Polity",
+        "topic": "Making of Indian Constitution",
+        "difficulty": "Easy",
+        "question_type": "TNPSC Trap Questions",
+        "question": {
+            "en": "Which among the following constitutional provisions came into immediate force on November 26, 1949 itself?",
+            "ta": "பின்வருவனவற்றுள் நவம்பர் 26, 1949 அன்றே உடனடி நடைமுறைக்கு வந்த அரசியலமைப்பு விதிகள் எவை?"
+        },
+        "options": [
+            {"id": "A", "en": "Provisions relating to Citizenship, Elections, and Provisional Parliament", "ta": "குடியுரிமை, தேர்தல்கள் மற்றும் தற்காலிக நாடாளுமன்றம் தொடர்பான விதிகள்"},
+            {"id": "B", "en": "Fundamental Rights and Directive Principles", "ta": "அடிப்படை உரிமைகள் மற்றும் அரசு வழிகாட்டு நெறிமுறைகள்"},
+            {"id": "C", "en": "Union Judiciary and Supreme Court", "ta": "மத்திய நீதித்துறை மற்றும் உச்ச நீதிமன்றம்"},
+            {"id": "D", "en": "Panchayati Raj and Emergency Provisions", "ta": "பஞ்சாயத்து ராஜ் மற்றும் அவசரநிலைப் பிரகடன விதிகள்"}
+        ],
+        "correct_answer": "A",
+        "explanation": {
+            "en": "Some provisions relating to citizenship, elections, provisional parliament, and short title (Articles 5, 6, 7, 8, 9, 60, 324, 366, 367, 379, 380, 388, 391, 392, 393) came into force on Nov 26, 1949 itself.",
+            "ta": "குடியுரிமை, தேர்தல்கள், தற்காலிக நாடாளுமன்றம் (சரத்துகள் 5, 6, 7, 8, 9, 60, 324 போன்றவை) தொடர்பான சில பகுதிகள் நவம்பர் 26, 1949 அன்றே உடனடி நடைமுறைக்கு வந்தன."
+        },
+        "why_not_others": {
+            "A": {"en": "Correct. Citizenship, elections & provisional parliament provisions came on Nov 26, 1949.", "ta": "சரி. குடியுரிமை, தேர்தல்கள், தற்காலிக நாடாளுமன்ற விதிகள் நவம்பர் 26, 1949 அன்றே நடைமுறைக்கு வந்தன."},
+            "B": {"en": "Incorrect. Fundamental Rights and DPSP came into force on Jan 26, 1950.", "ta": "தவறு. அடிப்படை உரிமைகள் மற்றும் அரசு நெறிமுறைகள் ஜனவரி 26, 1950-இல் நடைமுறைக்கு வந்தன."},
+            "C": {"en": "Incorrect. Supreme Court and Union Judiciary came into force on Jan 26, 1950.", "ta": "தவறு. உச்ச நீதிமன்றம் ஜனவரி 26, 1950-இல் நடைமுறைக்கு வந்தது."},
+            "D": {"en": "Incorrect. Emergency and local bodies provisions came on Jan 26, 1950.", "ta": "தவறு. அவசரநிலை விதிகள் ஜனவரி 26, 1950-இல் நடைமுறைக்கு வந்தன."}
+        },
+        "tnpsc_tip": {
+            "en": "Article 394 listed the specific articles that came into force immediately on Nov 26, 1949.",
+            "ta": "சரத்து 394 நவம்பர் 26, 1949 அன்று உடனடியாக நடைமுறைக்கு வந்த குறிப்பிட்ட சரத்துகளைப் பட்டியலிட்டது."
+        },
+        "revision_fact": {
+            "en": "The remaining major provisions of the Constitution came into force on January 26, 1950.",
+            "ta": "அரசியலமைப்பின் பிற முக்கிய பகுதிகள் அனைத்தும் ஜனவரி 26, 1950 அன்று நடைமுறைக்கு வந்தன."
+        },
+        "source_reference": ["M. Laxmikanth", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": "Understand",
+        "estimated_time_sec": 45,
+        "pyq_similarity": "High",
+        "tags": ["Immediate Enforcement", "Nov 26 1949", "Citizenship Elections"]
+    },
+    # Q44
+    {
+        "id": "MIC_E_044",
+        "subject": "Polity",
+        "topic": "Making of Indian Constitution",
+        "difficulty": "Easy",
+        "question_type": "Direct MCQ",
+        "question": {
+            "en": "What was the total time taken by the Constituent Assembly to complete the task of framing the Constitution of India?",
+            "ta": "இந்திய அரசியலமைப்பை உருவாக்கும் பணியை நிறைவு செய்ய அரசியலமைப்பு நிர்ணய அவை எடுத்துக்கொண்ட மொத்த காலம் எவ்வளவு?"
+        },
+        "options": [
+            {"id": "A", "en": "2 years, 11 months, and 18 days", "ta": "2 ஆண்டுகள், 11 மாதங்கள் மற்றும் 18 நாட்கள்"},
+            {"id": "B", "en": "3 years, 2 months, and 10 days", "ta": "3 ஆண்டுகள், 2 மாதங்கள் மற்றும் 10 நாட்கள்"},
+            {"id": "C", "en": "1 year, 11 months, and 18 days", "ta": "1 ஆண்டு, 11 மாதங்கள் மற்றும் 18 நாட்கள்"},
+            {"id": "D", "en": "2 years, 8 months, and 12 days", "ta": "2 ஆண்டுகள், 8 மாதங்கள் மற்றும் 12 நாட்கள்"}
+        ],
+        "correct_answer": "A",
+        "explanation": {
+            "en": "The Constituent Assembly took exactly 2 years, 11 months, and 18 days to frame the Constitution of India (from Dec 9, 1946 to Nov 26, 1949).",
+            "ta": "அரசியலமைப்பு நிர்ணய அவை இந்திய அரசியலமைப்பை உருவாக்க சரியாக 2 ஆண்டுகள், 11 மாதங்கள் மற்றும் 18 நாட்கள் (டிசம்பர் 9, 1946 முதல் நவம்பர் 26, 1949 வரை) எடுத்துக்கொண்டது."
+        },
+        "why_not_others": {
+            "A": {"en": "Correct. Exactly 2 years, 11 months, and 18 days.", "ta": "சரி. சரியாக 2 ஆண்டுகள், 11 மாதங்கள் மற்றும் 18 நாட்கள்."},
+            "B": {"en": "Incorrect. 3 years 2 months is an overestimate.", "ta": "தவறு. 3 ஆண்டுகள் 2 மாதங்கள் என்பது தவறான அளவு."},
+            "C": {"en": "Incorrect. 1 year 11 months is an underestimate.", "ta": "தவறு. 1 ஆண்டு 11 மாதங்கள் என்பது தவறான அளவு."},
+            "D": {"en": "Incorrect. 2 years 8 months is incorrect.", "ta": "தவறு. 2 ஆண்டுகள் 8 மாதங்கள் என்பது தவறானது."}
+        },
+        "tnpsc_tip": {
+            "en": "Classic TNPSC question! Remember the sequence: 2 Years - 11 Months - 18 Days.",
+            "ta": "புகழ்பெற்ற டிஎன்பிஎஸ்சி கேள்வி! வரிசையை நினைவில் கொள்க: 2 ஆண்டுகள் - 11 மாதங்கள் - 18 நாட்கள்."
+        },
+        "revision_fact": {
+            "en": "During this period of 2 years 11 months 18 days, the Assembly held 11 sessions.",
+            "ta": "இந்த 2 ஆண்டுகள் 11 மாதங்கள் 18 நாட்களில் நிர்ணய அவை 11 அமர்வுகளை நடத்தியது."
+        },
+        "source_reference": ["M. Laxmikanth", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": "Remember",
+        "estimated_time_sec": 35,
+        "pyq_similarity": "High",
+        "tags": ["Time Taken", "2 Years 11 Months 18 Days", "Duration"]
+    },
+    # Q45
+    {
+        "id": "MIC_E_045",
+        "subject": "Polity",
+        "topic": "Making of Indian Constitution",
+        "difficulty": "Easy",
+        "question_type": "Direct MCQ",
+        "question": {
+            "en": "How many total sessions were held by the Constituent Assembly in total for framing the Constitution?",
+            "ta": "அரசியலமைப்பை உருவாக்க அரசியலமைப்பு நிர்ணய அவை மொத்தம் எத்தனை அமர்வுகளை (Sessions) நடத்தியது?"
+        },
+        "options": [
+            {"id": "A", "en": "11 sessions", "ta": "11 அமர்வுகள்"},
+            {"id": "B", "en": "15 sessions", "ta": "15 அமர்வுகள்"},
+            {"id": "C", "en": "7 sessions", "ta": "7 அமர்வுகள்"},
+            {"id": "D", "en": "24 sessions", "ta": "24 அமர்வுகள்"}
+        ],
+        "correct_answer": "A",
+        "explanation": {
+            "en": "The Constituent Assembly held a total of 11 sessions over 2 years, 11 months, and 18 days.",
+            "ta": "அரசியலமைப்பு நிர்ணய அவை 2 ஆண்டுகள், 11 மாதங்கள், 18 நாட்களில் மொத்தம் 11 அமர்வுகளை நடத்தியது."
+        },
+        "why_not_others": {
+            "A": {"en": "Correct. Total 11 sessions were held.", "ta": "சரி. மொத்தம் 11 அமர்வுகள் நடைபெற்றன."},
+            "B": {"en": "Incorrect. 15 was the number of women members.", "ta": "தவறு. 15 என்பது பெண் உறுப்பினர்களின் எண்ணிக்கை."},
+            "C": {"en": "Incorrect. 7 was the number of Drafting Committee members.", "ta": "தவறு. 7 என்பது வரைவுக்குழு உறுப்பினர்களின் எண்ணிக்கை."},
+            "D": {"en": "Incorrect. 24 refers to Jan 24 final meeting date.", "ta": "தவறு. 24 என்பது ஜனவரி 24 இறுதி நாள் குறிப்பு."}
+        },
+        "tnpsc_tip": {
+            "en": "Note: On Jan 24, 1950, the Assembly met for a final special session, making it 11 regular sessions plus 1 special session.",
+            "ta": "குறிப்பு: ஜனவரி 24, 1950 அன்று அவை ஒரு சிறப்பு இறுதி அமர்வாகக் கூடியது."
+        },
+        "revision_fact": {
+            "en": "The constitution-makers had gone through the constitutions of about 60 countries.",
+            "ta": "அரசியலமைப்பு உருவாக்குநர்கள் சுமார் 60 நாடுகளின் அரசியலமைப்புகளை ஆய்வு செய்தனர்."
+        },
+        "source_reference": ["M. Laxmikanth", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": "Remember",
+        "estimated_time_sec": 35,
+        "pyq_similarity": "High",
+        "tags": ["11 Sessions", "Assembly Sessions", "Duration"]
+    },
+    # Q46
+    {
+        "id": "MIC_E_046",
+        "subject": "Polity",
+        "topic": "Making of Indian Constitution",
+        "difficulty": "Easy",
+        "question_type": "Direct MCQ",
+        "question": {
+            "en": "How many days did the Constituent Assembly spend on considering the Draft Constitution?",
+            "ta": "அரசியலமைப்பு வரைவைப் பரிசீலிப்பதற்காக அரசியலமைப்பு நிர்ணய அவை எத்தனை நாட்களைச் செலவிட்டது?"
+        },
+        "options": [
+            {"id": "A", "en": "114 days", "ta": "114 நாட்கள்"},
+            {"id": "B", "en": "141 days", "ta": "141 நாட்கள்"},
+            {"id": "C", "en": "365 days", "ta": "365 நாட்கள்"},
+            {"id": "D", "en": "165 days", "ta": "165 நாட்கள்"}
+        ],
+        "correct_answer": "A",
+        "explanation": {
+            "en": "The Draft Constitution was considered by the Assembly for 114 days.",
+            "ta": "அரசியலமைப்பு வரைவு நிர்ணய அவையால் 114 நாட்கள் பரிசீலிக்கப்பட்டது."
+        },
+        "why_not_others": {
+            "A": {"en": "Correct. Draft Constitution consideration took 114 days.", "ta": "சரி. வரைவு அரசியலமைப்பு பரிசீலனை 114 நாட்கள் நீடித்தது."},
+            "B": {"en": "Incorrect. 141 days was the total sittings of the Drafting Committee.", "ta": "தவறு. 141 நாட்கள் என்பது வரைவுக்குழு கூடி அமர்ந்த மொத்த நாட்கள்."},
+            "C": {"en": "Incorrect. 365 is days in a year.", "ta": "தவறு. 365 ஒரு ஆண்டின் நாட்கள்."},
+            "D": {"en": "Incorrect. 165 was total days of 11 sessions.", "ta": "தவறு. 165 என்பது 11 அமர்வுகளின் மொத்த நாட்கள்."}
+        },
+        "tnpsc_tip": {
+            "en": "Numbers Trap: Assembly consideration of Draft = 114 days; Drafting Committee sittings = 141 days; Total Assembly session days = 165 days.",
+            "ta": "எண் வேறுபாடுகள்: வரைவு பரிசீலனை = 114 நாட்கள்; வரைவுக்குழு அமர்வுகள் = 141 நாட்கள்; அவையின் மொத்த அமர்வு நாட்கள் = 165 நாட்கள்."
+        },
+        "revision_fact": {
+            "en": "The total meetings/sittings of the Assembly across 11 sessions amounted to 165 days.",
+            "ta": "11 அமர்வுகளில் நிர்ணய அவையின் மொத்த கூட்ட நாட்கள் 165 நாட்கள் ஆகும்."
+        },
+        "source_reference": ["M. Laxmikanth", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": "Remember",
+        "estimated_time_sec": 40,
+        "pyq_similarity": "High",
+        "tags": ["114 Days", "Draft Consideration", "Assembly Meetings"]
+    },
+    # Q47
+    {
+        "id": "MIC_E_047",
+        "subject": "Polity",
+        "topic": "Making of Indian Constitution",
+        "difficulty": "Easy",
+        "question_type": "Direct MCQ",
+        "question": {
+            "en": "What was the total expenditure incurred in framing the Constitution of India?",
+            "ta": "இந்திய அரசியலமைப்பை உருவாக்க ஆன மொத்த செலவு எவ்வளவு?"
+        },
+        "options": [
+            {"id": "A", "en": "₹64 Lakhs", "ta": "₹64 லட்சம்"},
+            {"id": "B", "en": "₹1 Crore", "ta": "₹1 கோடி"},
+            {"id": "C", "en": "₹50 Lakhs", "ta": "₹50 லட்சம்"},
+            {"id": "D", "en": "₹10 Lakhs", "ta": "₹10 லட்சம்"}
+        ],
+        "correct_answer": "A",
+        "explanation": {
+            "en": "The total expenditure incurred in making the Constitution of India was about ₹64 lakhs (specifically ₹63,96,729).",
+            "ta": "இந்திய அரசியலமைப்பை உருவாக்குவதற்கு ஆன மொத்த செலவு சுமார் ₹64 லட்சம் (துல்லியமாக ₹63,96,729) ஆகும்."
+        },
+        "why_not_others": {
+            "A": {"en": "Correct. Total expenditure was ₹64 Lakhs.", "ta": "சரி. மொத்த செலவு ₹64 லட்சம் ஆகும்."},
+            "B": {"en": "Incorrect. ₹1 Crore is an overestimate.", "ta": "தவறு. ₹1 கோடி என்பது தவறான அளவு."},
+            "C": {"en": "Incorrect. ₹50 Lakhs is an underestimate.", "ta": "தவறு. ₹50 லட்சம் என்பது தவறான அளவு."},
+            "D": {"en": "Incorrect. ₹10 Lakhs is incorrect.", "ta": "தவறு. ₹10 லட்சம் என்பது தவறானது."}
+        },
+        "tnpsc_tip": {
+            "en": "Remember the round figure ₹64 Lakhs (exact figure: ₹63,96,729).",
+            "ta": "தோராய தொகை ₹64 லட்சம் என்பதை நினைவில் கொள்க (துல்லிய தொகை: ₹63,96,729)."
+        },
+        "revision_fact": {
+            "en": "The Constitution of India was framed after studying constitutions of about 60 nations.",
+            "ta": "சுமார் 60 நாடுகளின் அரசியலமைப்புகளை ஆராய்ந்த பிறகே இந்திய அரசியலமைப்பு உருவாக்கப்பட்டது."
+        },
+        "source_reference": ["M. Laxmikanth", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": "Remember",
+        "estimated_time_sec": 35,
+        "pyq_similarity": "High",
+        "tags": ["64 Lakhs", "Expenditure", "Cost of Constitution"]
+    },
+    # Q48
+    {
+        "id": "MIC_E_048",
+        "subject": "Polity",
+        "topic": "Making of Indian Constitution",
+        "difficulty": "Easy",
+        "question_type": "Direct MCQ",
+        "question": {
+            "en": "Who was the official calligrapher who handwritten the original Constitution of India in flowing italic style?",
+            "ta": "இந்திய அரசியலமைப்பின் மூலப் பிரதியை அழகிய சாய்ந்த எழுத்து முறையில் (italic style) கைகளால் எழுதிய அதிகாரப்பூர்வ கையெழுத்து கலைஞர் யார்?"
+        },
+        "options": [
+            {"id": "A", "en": "Prem Behari Narain Raizada", "ta": "பிரேம் பிஹாரி நரேன் ரைசாதா"},
+            {"id": "B", "en": "Nandalal Bose", "ta": "நந்தலால் போஸ்"},
+            {"id": "C", "en": "Beohar Rammanohar Sinha", "ta": "பியோஹர் ராம்மனோஹர் சின்ஹா"},
+            {"id": "D", "en": "Vantambadi V. Rama Rao", "ta": "வந்தம்பாடி வி. ராம ராவ்"}
+        ],
+        "correct_answer": "A",
+        "explanation": {
+            "en": "Prem Behari Narain Raizada was the calligrapher of the original Indian Constitution. The original text was handwritten by him in flowing italic style.",
+            "ta": "பிரேம் பிஹாரி நரேன் ரைசாதா இந்திய அரசியலமைப்பு மூலப் பிரதியின் கையெழுத்துக் கலைஞர் ஆவர். அவர் அழகிய சாய்ந்த எழுத்து வடிவில் கையால் எழுதினார்."
+        },
+        "why_not_others": {
+            "A": {"en": "Correct. Prem Behari Narain Raizada was the calligrapher.", "ta": "சரி. பிரேம் பிஹாரி நரேன் ரைசாதா கையெழுத்துக் கலைஞர் ஆவர்."},
+            "B": {"en": "Incorrect. Nandalal Bose beautified and decorated the pages.", "ta": "தவறு. நந்தலால் போஸ் பக்கங்களை சித்திர வேலைப்பாடுகளால் அலங்கரித்தார்."},
+            "C": {"en": "Incorrect. Beohar Rammanohar Sinha illuminated the Preamble page.", "ta": "தவறு. பியோஹர் ராம்மனோஹர் சின்ஹா முகப்புரைப் பக்கத்தை அலங்கரித்தார்."},
+            "D": {"en": "Incorrect. V. Rama Rao was not associated with calligraphy.", "ta": "தவறு. ராம ராவ் இதனுடன் தொடர்புடையவர் அல்ல."}
+        },
+        "tnpsc_tip": {
+            "en": "Calligrapher (English) = Prem Behari Narain Raizada; Calligrapher (Hindi) = Vasant Krishnan Vaidya; Artists = Nandalal Bose & Rammanohar Sinha.",
+            "ta": "எழுத்தாளர் (ஆங்கிலம்) = பிரேம் பிஹாரி நரேன் ரைசாதா; எழுத்தாளர் (ஹிந்தி) = வசந்த் கிரிஷ்ணன் வைத்யா; ஓவியர்கள் = நந்தலால் போஸ் & ராம்மனோஹர் சின்ஹா."
+        },
+        "revision_fact": {
+            "en": "Prem Behari Narain Raizada did not charge any fee for handwriting the Constitution, but requested his name on every page and with his grandfather on the last page.",
+            "ta": "ரைசாதா கைப்பட எழுத எவ்விதக் கட்டணமும் பெறவில்லை, ஆனால் ஒவ்வொரு பக்கத்திலும் தனது பெயரையும் இறுதிப் பக்கத்தில் தனது தாத்தாவின் பெயரையும் எழுத அனுமதி கோரினார்."
+        },
+        "source_reference": ["M. Laxmikanth", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": "Remember",
+        "estimated_time_sec": 40,
+        "pyq_similarity": "High",
+        "tags": ["Calligrapher", "Prem Behari Narain Raizada", "Handwritten Constitution"]
+    },
+    # Q49
+    {
+        "id": "MIC_E_049",
+        "subject": "Polity",
+        "topic": "Making of Indian Constitution",
+        "difficulty": "Easy",
+        "question_type": "Direct MCQ",
+        "question": {
+            "en": "Which famous artist from Shantiniketan led the team that beautified and decorated the original manuscript of the Indian Constitution?",
+            "ta": "சாந்திநிகேதனைச் சேர்ந்த எந்த பிரபல கலைஞர் இந்திய அரசியலமைப்பின் மூலப் பிரதியை அழகுபடுத்தி ஓவியங்களால் அலங்கரித்த குழுவிற்கு தலைமை தாங்கினார்?"
+        },
+        "options": [
+            {"id": "A", "en": "Nandalal Bose", "ta": "நந்தலால் போஸ்"},
+            {"id": "B", "en": "Raja Ravi Varma", "ta": "ராஜா ரவி வர்மா"},
+            {"id": "C", "en": "Abanindranath Tagore", "ta": "அபனிந்திரநாத் தாகூர்"},
+            {"id": "D", "en": "Jamini Roy", "ta": "ஜாமினி ராய்"}
+        ],
+        "correct_answer": "A",
+        "explanation": {
+            "en": "Nandalal Bose, along with artists from Shantiniketan (including Beohar Rammanohar Sinha), beautified and decorated the pages of the original Constitution.",
+            "ta": "நந்தலால் போஸ் சாந்திநிகேதன் கலைஞர்களுடன் (பியோஹர் ராம்மனோஹர் சின்ஹா உட்பட) இணைந்து அரசியலமைப்பு மூலப் பக்கங்களை ஓவியங்களால் அலங்கரித்தார்."
+        },
+        "why_not_others": {
+            "A": {"en": "Correct. Nandalal Bose led the art team from Shantiniketan.", "ta": "சரி. நந்தலால் போஸ் சாந்திநிகேதன் ஓவியக் குழுவிற்கு தலைமை தாங்கினார்."},
+            "B": {"en": "Incorrect. Raja Ravi Varma was a renowned 19th century painter from Kerala.", "ta": "தவறு. ராஜா ரவி வர்மா 19-ஆம் நூற்றாண்டு கேரள ஓவியர்."},
+            "C": {"en": "Incorrect. Abanindranath Tagore founded Bengal School of Art.", "ta": "தவறு. அபனிந்திரநாத் தாகூர் வங்காள ஓவியப் பள்ளியைத் தோற்றுவித்தவர்."},
+            "D": {"en": "Incorrect. Jamini Roy was a folk-style painter.", "ta": "தவறு. ஜாமினி ராய் நாட்டுப்புற பாணி ஓவியர்."}
+        },
+        "tnpsc_tip": {
+            "en": "Nandalal Bose decorated all the 22 parts of the Constitution with historical artwork.",
+            "ta": "நந்தலால் போஸ் அரசியலமைப்பின் 22 பாகங்களையும் வரலாற்றுச் சிறப்புமிக்க ஓவியங்களால் அலங்கரித்தார்."
+        },
+        "revision_fact": {
+            "en": "Beohar Rammanohar Sinha illuminated and decorated the original Preamble page.",
+            "ta": "பியோஹர் ராம்மனோஹர் சின்ஹா மூல முகப்புரைப் பக்கத்தை சித்திரங்களால் அலங்கரித்தார்."
+        },
+        "source_reference": ["M. Laxmikanth", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": "Remember",
+        "estimated_time_sec": 40,
+        "pyq_similarity": "High",
+        "tags": ["Nandalal Bose", "Shantiniketan Artwork", "Manuscript Decoration"]
+    },
+    # Q50
+    {
+        "id": "MIC_E_050",
+        "subject": "Polity",
+        "topic": "Making of Indian Constitution",
+        "difficulty": "Easy",
+        "question_type": "Direct MCQ",
+        "question": {
+            "en": "What symbol (emblem) was adopted as the official seal of the Constituent Assembly of India?",
+            "ta": "இந்திய அரசியலமைப்பு நிர்ணய அவையின் அதிகாரப்பூர்வ முத்திரையாக (seal) ஏற்றுக்கொள்ளப்பட்ட சின்னம் எது?"
+        },
+        "options": [
+            {"id": "A", "en": "Elephant", "ta": "யானை"},
+            {"id": "B", "en": "Tiger", "ta": "புலி"},
+            {"id": "C", "en": "Lion Capital of Ashoka", "ta": "அசோகரின் சிம்மத் தூண்"},
+            {"id": "D", "en": "Peacock", "ta": "மயில்"}
+        ],
+        "correct_answer": "A",
+        "explanation": {
+            "en": "Elephant was adopted as the official symbol (seal) of the Constituent Assembly of India.",
+            "ta": "யானை சின்னம் இந்திய அரசியலமைப்பு நிர்ணய அவையின் அதிகாரப்பூர்வ முத்திரையாக (seal) ஏற்றுக்கொள்ளப்பட்டது."
+        },
+        "why_not_others": {
+            "A": {"en": "Correct. Elephant was the official seal of Constituent Assembly.", "ta": "சரி. யானை நிர்ணய அவையின் அதிகாரப்பூர்வ முத்திரையாகும்."},
+            "B": {"en": "Incorrect. Tiger is India's National Animal (adopted in 1973).", "ta": "தவறு. புலி இந்தியாவின் தேசிய விலங்கு (1973-இல் ஏற்கப்பட்டது)."},
+            "C": {"en": "Incorrect. Lion Capital of Ashoka is National Emblem of India (adopted Jan 26, 1950).", "ta": "தவறு. அசோகரின் சிம்மத் தூண் இந்தியாவின் தேசியச் சின்னம்."},
+            "D": {"en": "Incorrect. Peacock is India's National Bird (adopted 1963).", "ta": "தவறு. மயில் இந்தியாவின் தேசியப் பறவை."}
+        },
+        "tnpsc_tip": {
+            "en": "Classic Trap: Do not confuse Assembly Seal (Elephant) with National Emblem (Lion Capital of Sarnath).",
+            "ta": "எச்சரிக்கை: நிர்ணய அவையின் முத்திரை (யானை) மற்றும் தேசியச் சின்னம் (சாரநாத் சிம்மத் தூண்) ஆகியவற்றை குழப்பக் கூடாது."
+        },
+        "revision_fact": {
+            "en": "S.N. Mukherjee was the Chief Draftsman of the Constitution in the Constituent Assembly.",
+            "ta": "எஸ்.என். முகர்ஜி நிர்ணய அவையின் முதன்மை வரைவாளராகப் (Chief Draftsman) பணியாற்றினார்."
+        },
+        "source_reference": ["M. Laxmikanth", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": "Remember",
+        "estimated_time_sec": 35,
+        "pyq_similarity": "High",
+        "tags": ["Elephant Seal", "Assembly Emblem", "Constituent Assembly Symbol"]
+    }
+]
+
+# Ensure backward compatibility flat fields are added to each question item
+for q in questions:
+    q["question_en"] = q["question"]["en"]
+    q["question_ta"] = q["question"]["ta"]
+    q["options_en"] = [opt["en"] for opt in q["options"]]
+    q["options_ta"] = [opt["ta"] for opt in q["options"]]
+    q["answer"] = q["correct_answer"].lower()
+    q["explanation_en"] = q["explanation"]["en"]
+    q["explanation_ta"] = q["explanation"]["ta"]
+
+target_file = r"c:\Users\Home\Desktop\tnpsc_ai\data\questions\polity\making_of_indian_constitution_easy.json"
+os.makedirs(os.path.dirname(target_file), exist_ok=True)
+
+with open(target_file, "w", encoding="utf-8") as f:
+    json.dump(questions, f, ensure_ascii=False, indent=2)
+
+print(f"Successfully generated {len(questions)} high-quality MCQs into {target_file}")

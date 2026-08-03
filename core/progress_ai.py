@@ -43,10 +43,13 @@ def save_progress(user=None, subject="", topic="", accuracy=0, topic_id=None, re
     return response.data or []
 
 
-def get_progress(user=None):
+def get_progress(user=None, context=None):
     """
-    Retrieves user progress records from public.users_progress matching user_id UUID.
+    Retrieves user progress records from public.users_progress matching user_id UUID or pre-fetched context.
     """
+    if context is not None and hasattr(context, "progress") and context.progress is not None:
+        return context.progress
+
     user_id = _resolve_user_id(user)
     if not user_id:
         logger.error("[DATA INTEGRITY ALERT] get_progress failed: user_id IS NULL.")
@@ -64,3 +67,4 @@ def get_progress(user=None):
             )
 
     return rows
+

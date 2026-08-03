@@ -71,6 +71,7 @@ def start_practice_session(
     st.session_state["practice_attempts"] = []
     st.session_state["practice_score"] = 0
     st.session_state["practice_bookmarks"] = set()
+    st.session_state["practice_visited"] = {0}
     st.session_state["practice_started_at"] = time.time()
 
     return True
@@ -128,10 +129,7 @@ def next_practice_question() -> bool:
     curr_i = st.session_state.get("practice_current_index", 0)
 
     if curr_i + 1 < total_q:
-        st.session_state["practice_current_index"] = curr_i + 1
-        st.session_state["practice_index"] = curr_i + 1
-        st.session_state["practice_answered"] = False
-        st.session_state["practice_selected_answer"] = None
+        set_practice_question_index(curr_i + 1)
         return True
     else:
         st.session_state["practice_completed"] = True
@@ -145,6 +143,10 @@ def set_practice_question_index(index: int):
     if 0 <= index < len(questions):
         st.session_state["practice_current_index"] = index
         st.session_state["practice_index"] = index
+        
+        # Record visited index
+        visited = st.session_state.setdefault("practice_visited", set())
+        visited.add(index)
         
         # Restore answered state for this index if recorded
         answers = st.session_state.get("practice_answers", {})

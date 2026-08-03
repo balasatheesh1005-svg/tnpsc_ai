@@ -52,16 +52,40 @@ def render_notes_engine(data: dict):
     inject_notes_theme_css()
     inject_animations_css()
 
-    # Extract metadata & content payload
+    # 1. Preserve original data & extract content payload
+    full_data = data
     content = data.get("content", data)
     if not isinstance(content, dict):
         content = data
+
+    # Combine content with top-level keys from full_data for section keys defined at top-level
+    combined_content = dict(content)
+    top_level_section_keys = [
+        "revision_cards",
+        "flashcards",
+        "mind_map",
+        "quick_revision",
+        "fact_box",
+        "important_facts",
+        "timeline",
+        "chronology",
+        "memory_tricks",
+        "mnemonics",
+        "trap_points",
+        "expected_questions",
+        "pyq_references",
+        "knowledge_graph",
+        "relationships",
+    ]
+    for k in top_level_section_keys:
+        if k in full_data and k not in combined_content:
+            combined_content[k] = full_data[k]
 
     subject = data.get("subject", "General Knowledge")
     topic = data.get("topic", "TNPSC Chapter")
 
     # Compute reading time dynamically if absent
-    reading_time = data.get("reading_time", estimate_reading_time(content))
+    reading_time = data.get("reading_time", estimate_reading_time(combined_content))
 
     metadata = {
         "subject": subject,
@@ -75,9 +99,30 @@ def render_notes_engine(data: dict):
     registered_sections = []  # List of tuples: (order, key, value, spec)
     generic_topic_cards = []  # Fallback for dynamic topic sections
 
-    meta_skip_keys = {"subject", "topic", "language", "ui_type", "reading_time", "completion_pct", "difficulty", "content"}
+    meta_skip_keys = {
+        "subject",
+        "topic",
+        "language",
+        "ui_type",
+        "reading_time",
+        "completion_pct",
+        "difficulty",
+        "content",
+        "meta",
+        "metadata",
+        "keywords",
+        "learning_outcomes",
+        "constitutional_significance",
+        "pyq_reference",
+        "related_topics",
+        "prerequisites",
+        "next_topic",
+        "references",
+        "ai_metadata",
+        "sections",
+    }
 
-    for key, value in content.items():
+    for key, value in combined_content.items():
         if key in meta_skip_keys or not value:
             continue
 
@@ -95,7 +140,7 @@ def render_notes_engine(data: dict):
     toc_items = []
     for order, key, val, spec in registered_sections:
         toc_items.append((f"sec_{key}", spec.display_title or key.replace("_", " ").title(), spec.icon))
-    
+
     if generic_topic_cards:
         toc_items.append(("sec_topic_cards", "Topic Breakdown", "📌"))
 
@@ -128,10 +173,20 @@ def render_notes_engine(data: dict):
     # 16. RENDER AI TEACHER PANEL
     render_ai_teacher(topic)
 
-    # 17. RENDER REVISION CARDS (if triggered or if flashcard data present)
-    if st.session_state.get("show_revision_cards", False):
-        cards_sample = content.get("timeline", content.get("important_facts", [topic]))
-        render_revision_cards(cards_sample if isinstance(cards_sample, list) else [cards_sample])
+    # 17. RENDER REVISION CARDS (only fallback if show_revision_cards is True and flashcards not already rendered)
+    has_flashcards_rendered = "revision_cards" in combined_content or "flashcards" in combined_content
+    if not has_flashcards_rendered and st.session_state.get("show_revision_cards", False):
+        cards = full_data.get(
+            "revision_cards",
+            content.get(
+                "flashcards",
+                content.get(
+                    "timeline",
+                    content.get("important_facts", [topic])
+                )
+            )
+        )
+        render_revision_cards(cards if isinstance(cards, list) else [cards])
 
     # 20. RENDER BOOKMARKS, USER NOTES & HIGHLIGHTS
     render_bookmarks(topic)

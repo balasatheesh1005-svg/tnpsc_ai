@@ -35,14 +35,20 @@ def _normalize_exam_key(exam):
     return EXAM_FOLDER_MAP.get(normalized) or EXAM_FOLDER_MAP.get(compact) or compact
 
 
+import streamlit as st
+
+
 def refresh_pyq_cache():
     """Clear cached PYQ data after adding or updating JSON files."""
     refresh_question_cache()
+    load_all_pyq.clear()
 
 
+@st.cache_data
 def load_all_pyq():
     """Load all PYQ questions safely from data/pyq."""
     return load_questions_from_path(PYQ_ROOT)
+
 
 
 def load_exam_pyq(exam):

@@ -44,33 +44,89 @@ def _normalize_metadata(subject: str, item) -> Dict[str, any]:
     }
 
 
-@st.cache_data
+def validate_topic_registration(topic_meta: dict) -> bool:
+    """Validates that a topic metadata dictionary contains all required fields."""
+    required_fields = ["topic_id", "display_title", "part", "total_parts", "subject"]
+    if not isinstance(topic_meta, dict):
+        print(
+            "VALIDATION FAILED\n\n"
+            f"Reason: Expected dict, got {type(topic_meta).__name__}\n"
+            "Missing field: all\n"
+            "File: core/topics_loader.py\n"
+            "Function: validate_topic_registration"
+        )
+        return False
+
+    for field in required_fields:
+        if field not in topic_meta or topic_meta[field] is None or str(topic_meta[field]).strip() == "":
+            print(
+                "VALIDATION FAILED\n\n"
+                f"Reason: Required field '{field}' is missing or empty\n"
+                f"Missing field: {field}\n"
+                "File: core/topics_loader.py\n"
+                "Function: validate_topic_registration"
+            )
+            return False
+
+    return True
+
+
 def get_topic_metadata_list(subject: str) -> List[Dict[str, any]]:
     subj = subject.lower().strip()
     file_path = f"data/structure/{subj}_structure.json"
 
-    if not os.path.exists(file_path):
-        # Fallback list if file missing
-        default_titles = [
-            "Historical Background Part 1",
-            "Historical Background Part 2",
-            "Historical Background Part 3",
-            "Historical Background Part 4",
-            "Making of Indian Constitution",
-            "Features of Indian Constitution",
-            "Preamble",
-            "Fundamental Rights",
-        ]
-        return [_normalize_metadata(subj, t) for t in default_titles]
+    topics_list = []
+    if os.path.exists(file_path):
+        try:
+            with open(file_path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            raw_topics = data.get("topics", [])
+            topics_list = [_normalize_metadata(subj, t) for t in raw_topics]
+        except Exception as e:
+            print(f"⚠️ Error reading topic structure for {subj}: {e}")
 
-    try:
-        with open(file_path, "r", encoding="utf-8") as f:
-            data = json.load(f)
-        raw_topics = data.get("topics", [])
-        return [_normalize_metadata(subj, t) for t in raw_topics]
-    except Exception as e:
-        print(f"⚠️ Error reading topic structure for {subj}: {e}")
-        return []
+    # Auto-discover note JSON files in data/notes/{subj}/ if not already registered
+    notes_dir = f"data/notes/{subj}"
+    if os.path.exists(notes_dir):
+        existing_ids = {t["topic_id"] for t in topics_list}
+        for filename in sorted(os.listdir(notes_dir)):
+            if filename.endswith(".json"):
+                base_name = filename[:-5]
+                auto_id = f"{subj}_{base_name}"
+                if auto_id not in existing_ids:
+                    note_path = os.path.join(notes_dir, filename)
+                    display_title = base_name.replace("_", " ").title()
+                    part = 1
+                    total_parts = 1
+                    try:
+                        with open(note_path, "r", encoding="utf-8") as nf:
+                            note_data = json.load(nf)
+                            meta_block = note_data.get("meta") or note_data.get("metadata") or {}
+                            if isinstance(meta_block, dict):
+                                display_title = meta_block.get("display_title") or display_title
+                                auto_id = meta_block.get("topic_id") or auto_id
+                                part = meta_block.get("part", 1)
+                                total_parts = meta_block.get("total_parts", 1)
+                    except Exception:
+                        pass
+
+                    new_topic = {
+                        "topic_id": auto_id,
+                        "repository_id": auto_id,
+                        "display_title": display_title,
+                        "part": part,
+                        "total_parts": total_parts,
+                        "subject": subj,
+                    }
+                    topics_list.append(new_topic)
+                    existing_ids.add(auto_id)
+
+    validated_topics = []
+    for t in topics_list:
+        if validate_topic_registration(t):
+            validated_topics.append(t)
+
+    return validated_topics
 
 
 def get_topics(subject: str) -> List[Dict[str, any]]:
@@ -118,3 +174,18 @@ def get_topic_key(subject: str, topic: str) -> str:
     """Legacy helper function for backward compatibility."""
     meta = get_topic_metadata_by_id(subject, topic)
     return meta["repository_id"]
+
+
+def format_subject_name(subject: str) -> str:
+    """Formats raw subject string for display."""
+    if not subject:
+        return "General"
+    return str(subject).replace("_", " ").replace("-", " ").title()
+
+
+def format_topic_name(topic: str) -> str:
+    """Formats raw topic string for display."""
+    if not topic:
+        return "General"
+    return str(topic).replace("_", " ").replace("-", " ").title()
+

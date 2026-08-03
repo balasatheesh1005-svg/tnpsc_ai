@@ -53,9 +53,13 @@ def get_recent_error_message(max_age_seconds=5):
     return "Something went wrong. Please try again."
 
 
+from core.performance import record_query
+
+
 class _RetryQuery:
-    def __init__(self, query):
+    def __init__(self, query, table_name: str = "unknown"):
         self._query = query
+        self.table_name = table_name
 
     def __getattr__(self, name):
         attr = getattr(self._query, name)
@@ -64,15 +68,23 @@ class _RetryQuery:
 
             def execute_with_retry(*args, **kwargs):
                 last_error = None
+                start_t = time.perf_counter()
 
                 for attempt in range(MAX_RETRIES):
                     try:
-                        return attr(*args, **kwargs)
+                        res = attr(*args, **kwargs)
+                        dur = time.perf_counter() - start_t
+                        record_query(self.table_name, dur, success=True)
+                        return res
                     except Exception as error:
                         last_error = error
-                        if attempt < MAX_RETRIES - 1:
+                        if _is_network_error(error) and attempt < MAX_RETRIES - 1:
                             time.sleep(RETRY_DELAY_SECONDS)
+                        else:
+                            break
 
+                dur = time.perf_counter() - start_t
+                record_query(self.table_name, dur, success=False)
                 _record_error(last_error)
                 return SimpleNamespace(data=[], count=0, error=last_error)
 
@@ -85,7 +97,7 @@ class _RetryQuery:
             result = attr(*args, **kwargs)
             if result is self._query:
                 return self
-            return _RetryQuery(result)
+            return _RetryQuery(result, table_name=self.table_name)
 
         return chained
 
@@ -95,10 +107,11 @@ class _SafeSupabaseClient:
         self._client = client
 
     def table(self, name):
-        return _RetryQuery(self._client.table(name))
+        return _RetryQuery(self._client.table(name), table_name=name)
 
     def __getattr__(self, name):
         return getattr(self._client, name)
 
 
 supabase = _SafeSupabaseClient(create_client(SUPABASE_URL, SUPABASE_KEY))
+

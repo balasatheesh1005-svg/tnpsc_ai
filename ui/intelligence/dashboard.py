@@ -28,7 +28,10 @@ def render_learning_intelligence_dashboard(user: str = None):
     render_card_styles()
 
     # Fetch Engine V2 Master Intelligence (Zero UI Calculation)
-    intel = get_learning_intelligence(user)
+    from core.user_context import UserContext
+    ctx = UserContext.get_or_create(user)
+    intel = get_learning_intelligence(user, context=ctx)
+
 
     # ---------------- 8. MENTOR INSIGHT ----------------
     mentor_msg = intel.get("mentor_insight", "Focus on your targeted recovery plan to build topic mastery.")
