@@ -166,6 +166,9 @@ def render_topic_selector():
             f'border:1px solid #E2E8F0;">{html.escape(card_data["practice_status"])}</span>'
         )
 
+        badges_list = [b for b in [part_badge_html, notes_badge_html, gt_badge_html, repos_badge_html] if b]
+        badges_container_html = f'<div style="display: flex; flex-wrap: wrap; gap: 6px; min-height: 64px; align-content: flex-start; margin-bottom: 12px;">{"".join(badges_list)}</div>'
+
         with col:
             with st.container(border=True):
                 st.markdown(
@@ -181,19 +184,7 @@ def render_topic_selector():
                     unsafe_allow_html=True,
                 )
 
-                st.markdown(
-                    dedent(
-                        f"""
-                        <div style="display: flex; flex-wrap: wrap; gap: 6px; min-height: 64px; align-content: flex-start; margin-bottom: 12px;">
-                            {part_badge_html}
-                            {notes_badge_html}
-                            {gt_badge_html}
-                            {repos_badge_html}
-                        </div>
-                        """
-                    ).strip(),
-                    unsafe_allow_html=True,
-                )
+                st.markdown(badges_container_html, unsafe_allow_html=True)
 
                 if st.button(
                     "Enter Topic Hub 🚀",

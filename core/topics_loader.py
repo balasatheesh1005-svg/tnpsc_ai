@@ -110,6 +110,9 @@ def get_topic_metadata_list(subject: str) -> List[Dict[str, any]]:
                     except Exception:
                         pass
 
+                    if auto_id in existing_ids:
+                        continue
+
                     new_topic = {
                         "topic_id": auto_id,
                         "repository_id": auto_id,

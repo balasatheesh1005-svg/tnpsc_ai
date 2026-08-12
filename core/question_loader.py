@@ -45,10 +45,23 @@ def load_questions(
     if repo_basename.startswith(f"{subject}_"):
         repo_basename = repo_basename[len(subject) + 1:]
 
-    file_paths = [
-        f"data/questions/{subject}/{repo_basename}_{repo_type}.json",
-        f"data/questions/{subject}/{repo_id}_{repo_type}.json",
-    ]
+    type_candidates = [repo_type]
+    if repo_type in ["statement", "statement_based"]:
+        type_candidates = ["statement_based", "statement"]
+    elif repo_type in ["match", "match_the_following"]:
+        type_candidates = ["match_the_following", "match"]
+    elif repo_type in ["assertion", "assertion_reason", "reasoning"]:
+        type_candidates = ["reasoning", "assertion_reason", "assertion"]
+    elif repo_type in ["pyq", "pyq_practice"]:
+        type_candidates = ["pyq", "pyq_practice"]
+
+
+
+    file_paths = []
+    for cand in type_candidates:
+        file_paths.append(f"data/questions/{subject}/{repo_basename}_{cand}.json")
+        file_paths.append(f"data/questions/{subject}/{repo_id}_{cand}.json")
+
 
     for file_path in file_paths:
         if os.path.exists(file_path):

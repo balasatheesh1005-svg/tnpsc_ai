@@ -1,3 +1,4 @@
+import re
 import streamlit as st
 from ui.notes.layout import section_anchor
 
@@ -137,6 +138,14 @@ def render_revision_cards(cards_data):
         st.info("ℹ️ No flashcards available for this topic.")
         return
 
+    topic_id = str(st.session_state.get("selected_topic_id", "default_topic"))
+    clean_topic_id = re.sub(r"[^a-zA-Z0-9_]", "_", topic_id)
+
+    if st.session_state.get("last_fc_topic_id") != topic_id:
+        st.session_state.flashcard_index = 0
+        st.session_state.flashcard_flipped = False
+        st.session_state.last_fc_topic_id = topic_id
+
     if "flashcard_index" not in st.session_state:
         st.session_state.flashcard_index = st.session_state.get("current_flashcard_index", 0)
 
@@ -202,16 +211,20 @@ def render_revision_cards(cards_data):
         st.session_state.current_flashcard_index = st.session_state.flashcard_index
         st.session_state.flashcard_reveal = False
 
+    key_flip = f"flashcard_{clean_topic_id}_{curr_idx}_flip"
+    key_prev = f"flashcard_{clean_topic_id}_{curr_idx}_prev"
+    key_next = f"flashcard_{clean_topic_id}_{curr_idx}_next"
+
     col1, col2, col3 = st.columns(3)
     with col1:
-        st.button("🔄 Flip / Reveal", key="btn_fc_flip", on_click=flip_card_cb, use_container_width=True)
+        st.button("🔄 Flip / Reveal", key=key_flip, on_click=flip_card_cb, use_container_width=True)
 
     with col2:
         is_first = curr_idx <= 0
-        st.button("⬅️ Previous", key="btn_fc_prev", on_click=prev_card_cb, disabled=is_first, use_container_width=True)
+        st.button("⬅️ Previous", key=key_prev, on_click=prev_card_cb, disabled=is_first, use_container_width=True)
 
     with col3:
         is_last = curr_idx >= total_cards - 1
-        st.button("Next ➡️", key="btn_fc_next", on_click=next_card_cb, disabled=is_last, use_container_width=True)
+        st.button("Next ➡️", key=key_next, on_click=next_card_cb, disabled=is_last, use_container_width=True)
 
     st.markdown("</div>", unsafe_allow_html=True)

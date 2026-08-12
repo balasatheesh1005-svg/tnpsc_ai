@@ -81,6 +81,11 @@ def render_notes_engine(data: dict):
         if k in full_data and k not in combined_content:
             combined_content[k] = full_data[k]
 
+    # Normalize revision_cards vs flashcards to ensure single authoritative deck
+    if "revision_cards" in combined_content and combined_content["revision_cards"]:
+        if "flashcards" in combined_content:
+            del combined_content["flashcards"]
+
     subject = data.get("subject", "General Knowledge")
     topic = data.get("topic", "TNPSC Chapter")
 
@@ -98,6 +103,7 @@ def render_notes_engine(data: dict):
     # Identify available sections in JSON and map to component registry
     registered_sections = []  # List of tuples: (order, key, value, spec)
     generic_topic_cards = []  # Fallback for dynamic topic sections
+    seen_spec_orders = set()
 
     meta_skip_keys = {
         "subject",
@@ -128,7 +134,9 @@ def render_notes_engine(data: dict):
 
         spec = GLOBAL_REGISTRY.match_key(key)
         if spec:
-            registered_sections.append((spec.order, key, value, spec))
+            if spec.order not in seen_spec_orders:
+                registered_sections.append((spec.order, key, value, spec))
+                seen_spec_orders.add(spec.order)
         else:
             # Generic topic card section (e.g. constitutional_articles, powers_and_functions, etc.)
             generic_topic_cards.append((key, value))
