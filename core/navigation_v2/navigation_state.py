@@ -203,12 +203,12 @@ def check_repository_availability(subject: str, topic_id_or_title: str) -> Dict[
             "easy": os.path.exists(f"{base_q}/{repo_basename}_easy.json"),
             "medium": os.path.exists(f"{base_q}/{repo_basename}_medium.json"),
             "hard": os.path.exists(f"{base_q}/{repo_basename}_hard.json"),
-            "statement_based": os.path.exists(f"{base_q}/{repo_basename}_statement_based.json"),
-            "assertion_reason": os.path.exists(f"{base_q}/{repo_basename}_assertion_reason.json"),
-            "match_the_following": os.path.exists(f"{base_q}/{repo_basename}_match_the_following.json"),
+            "statement_based": os.path.exists(f"{base_q}/{repo_basename}_statement_based.json") or os.path.exists(f"{base_q}/{repo_basename}_statement.json"),
+            "assertion_reason": os.path.exists(f"{base_q}/{repo_basename}_assertion_reason.json") or os.path.exists(f"{base_q}/{repo_basename}_reasoning.json") or os.path.exists(f"{base_q}/{repo_basename}_assertion.json"),
+            "match_the_following": os.path.exists(f"{base_q}/{repo_basename}_match_the_following.json") or os.path.exists(f"{base_q}/{repo_basename}_match.json"),
             "chronology": os.path.exists(f"{base_q}/{repo_basename}_chronology.json"),
             "grand_test": os.path.exists(f"{base_q}/{repo_basename}_grand_test.json"),
-            "pyq": os.path.exists(f"{base_q}/{repo_basename}_pyq.json"),
+            "pyq": os.path.exists(f"{base_q}/{repo_basename}_pyq.json") or os.path.exists(f"{base_q}/{repo_basename}_pyq_practice.json"),
         }
     except Exception:
         return default_res
