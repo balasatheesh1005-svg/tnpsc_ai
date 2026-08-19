@@ -1,0 +1,815 @@
+# build_dpsp_part1_notes.py
+# Generates production-ready bilingual TNPSC Group 1 notes for:
+# "Directive Principles of State Policy – Part 1" (Articles 36–39A)
+# Target file: data/notes/polity/directive_principles_part_1.json
+
+import json
+import os
+
+def create_dpsp_part1_notes():
+    note_data = {
+        "meta": {
+            "topic_id": "polity_directive_principles_part_1",
+            "repository_id": "polity_directive_principles",
+            "display_title": "Directive Principles of State Policy – Part 1",
+            "part": 1,
+            "total_parts": 3,
+            "subject": "polity",
+            "chapter": "Directive Principles of State Policy",
+            "language": "English + Tamil"
+        },
+        "metadata": {
+            "version": "2.0",
+            "status": "approved",
+            "review_status": "gold_standard",
+            "difficulty": "foundation",
+            "estimated_study_time": {
+                "reading": "35 min",
+                "revision": "15 min",
+                "total": "50 min"
+            }
+        },
+        "keywords": [
+            "Directive Principles of State Policy",
+            "அரசு வழிகாட்டு நெறிமுறைகள்",
+            "Part IV Constitution",
+            "பகுதி IV அரசியலமைப்பு",
+            "Articles 36 to 51",
+            "உறுப்புகள் 36 முதல் 51 வரை",
+            "Welfare State",
+            "நல அரசு",
+            "Social and Economic Democracy",
+            "சமூக மற்றும் பொருளாதார ஜனநாயகம்",
+            "Article 36 Definition of State",
+            "உறுப்பு 36 அரசின் வரையறை",
+            "Article 37 Non-Justiciable Nature",
+            "உறுப்பு 37 நீதிமன்றங்களால் அமல்படுத்தப்பட முடியாத இயல்பு",
+            "Fundamental in Governance",
+            "நாட்டின் ஆட்சியில் அடிப்படை",
+            "Article 38 Social Order and Minimising Inequalities",
+            "உறுப்பு 38 சமூக ஒழுங்கு மற்றும் சமத்துவமின்மையைக் குறைத்தல்",
+            "Article 38(2) 44th Amendment 1978",
+            "உறுப்பு 38(2) 44வது திருத்தம் 1978",
+            "Article 39 Policy Principles",
+            "உறுப்பு 39 கொள்கைக் கோட்பாடுகள்",
+            "Article 39(a) Livelihood",
+            "உறுப்பு 39(a) வாழ்வாதாரம்",
+            "Article 39(b) Material Resources",
+            "உறுப்பு 39(b) பொது நலன் பொருள் வளங்கள்",
+            "Article 39(c) Concentration of Wealth",
+            "உறுப்பு 39(c) செல்வக் குவிப்புத் தடை",
+            "Article 39(d) Equal Pay for Equal Work",
+            "உறுப்பு 39(d) சம வேலைக்கு சம ஊதியம்",
+            "Article 39(e) Health of Workers",
+            "உறுப்பு 39(e) தொழிலாளர் சுகாதாரம்",
+            "Article 39(f) Protection of Children",
+            "உறுப்பு 39(f) குழந்தைகள் பாதுகாப்பு",
+            "Article 39A Equal Justice and Free Legal Aid",
+            "உறுப்பு 39A சம நீதியும் இலவச சட்ட உதவியும்",
+            "42nd Constitutional Amendment 1976",
+            "42வது அரசியலமைப்பு திருத்தம் 1976",
+            "Socialist Gandhian Liberal Principles",
+            "சமதர்ம காந்திய தாராளமய கோட்பாடுகள்",
+            "Champakam Dorairajan Minerva Mills",
+            "செண்பகம் துரைராஜன் மினர்வா மில்ஸ் வழக்குகள்"
+        ],
+        "learning_outcomes": {
+            "Understand": {
+                "en": [
+                    "Understand the foundation, philosophy, and welfare state vision of Directive Principles in Part IV (Articles 36–51).",
+                    "Understand Article 36 (Definition of State) and its direct constitutional cross-reference to Article 12 in Part III.",
+                    "Understand Article 37 (Non-justiciable nature vs Fundamental status in nation governance).",
+                    "Understand Article 38 (Securing a Social Order & 44th Amendment addition of 38(2) on minimising inequalities).",
+                    "Understand the six sub-clauses of Article 39(a)–(f) and the mandate of Article 39A (Equal Justice & Free Legal Aid).",
+                    "Understand the conventional academic classification into Socialist, Gandhian, and Liberal-Intellectual principles."
+                ],
+                "ta": [
+                    "பகுதி IV-ல் உள்ள அரசு வழிகாட்டு நெறிமுறைகளின் அடித்தளம், தத்துவம் மற்றும் நல அரசு தொலைநோக்கைப் புரிந்து கொள்ளுதல் (உறுப்புகள் 36–51).",
+                    "உறுப்பு 36 (அரசின் வரையறை) மற்றும் பகுதி III உறுப்பு 12-உடனான அதன் நேரடி அரசியலமைப்பு தொடர்பைப் புரிந்து கொள்ளுதல்.",
+                    "உறுப்பு 37 (நீதிமன்றங்களால் அமல்படுத்த முடியாத இயல்பு vs நாட்டின் ஆட்சியில் அடிப்படையான நிலை) ஆகியவற்றைப் புரிந்து கொள்ளுதல்.",
+                    "உறுப்பு 38 (சமூக ஒழுங்கைப் பேணுதல் & 44வது திருத்தத்தின் மூலம் சமத்துவமின்மையைக் குறைக்க 38(2) சேர்க்கப்பட்டது) ஆகியவற்றைப் புரிந்து கொள்ளுதல்.",
+                    "உறுப்பு 39(a)–(f)-ன் ஆறு உட்பிரிவுகளையும் உறுப்பு 39A-ன் (சம நீதியும் இலவச சட்ட உதவியும்) கட்டளையையும் புரிந்து கொள்ளுதல்.",
+                    "சமதர்ம, காந்திய மற்றும் தாராளமய-அறிவுசார் கோட்பாடுகள் என்ற மரபுவழி கல்வி வகைப்பாட்டைப் புரிந்து கொள்ளுதல்."
+                ]
+            },
+            "Remember": {
+                "en": [
+                    "Remember that DPSP are contained in Part IV (Articles 36 to 51) of the Indian Constitution, inspired by the Irish Constitution of 1937.",
+                    "Remember that Article 36 adopts the definition of 'State' from Article 12 in Part III.",
+                    "Remember that Article 37 explicitly declares DPSP non-justiciable but fundamental in the governance of the country.",
+                    "Remember that Article 38(2) was added by the 44th Constitutional Amendment Act, 1978.",
+                    "Remember that Articles 39(f) and 39A were added/modified by the 42nd Constitutional Amendment Act, 1976.",
+                    "Remember that DPSP classification into Socialist, Gandhian, and Liberal is NOT written in the Constitution text."
+                ],
+                "ta": [
+                    "DPSP இந்திய அரசியலமைப்பின் பகுதி IV-ல் (உறுப்புகள் 36 முதல் 51 வரை) 1937 அயர்லாந்து அரசியலமைப்பிலிருந்து பெறப்பட்டு பொறிக்கப்பட்டுள்ளதை நினைவில் கொள்ளுதல்.",
+                    "உறுப்பு 36 பகுதி III உறுப்பு 12-லிருந்து 'அரசு' வரையறையை ஏற்றுக்கொள்கிறது என்பதை நினைவில் கொள்ளுதல்.",
+                    "உறுப்பு 37 DPSP-ஐ நீதிமன்றத்தால் அமல்படுத்த முடியாதது ஆனால் நாட்டின் ஆட்சியில் அடிப்படையானது என வெளிப்படையாக அறிவிக்கிறது என்பதை நினைவில் கொள்ளுதல்.",
+                    "உறுப்பு 38(2) 1978-ன் 44வது அரசியலமைப்பு திருத்தச் சட்டத்தால் சேர்க்கப்பட்டது என்பதை நினைவில் கொள்ளுதல்.",
+                    "உறுப்புகள் 39(f) மற்றும் 39A 1976-ன் 42வது அரசியலமைப்பு திருத்தச் சட்டத்தால் சேர்க்கப்பட்டன/மாற்றப்பட்டன என்பதை நினைவில் கொள்ளுதல்.",
+                    "சமதர்ம, காந்திய, தாராளமய DPSP வகைப்பாடு அரசியலமைப்பு உரையில் எழுதப்படவில்லை என்பதை நினைவில் கொள்ளுதல்."
+                ]
+            },
+            "Analyze": {
+                "en": [
+                    "Analyze the core distinction between Fundamental Rights (Political Democracy, Negative Obligations, Justiciable) and DPSP (Social & Economic Democracy, Positive Obligations, Non-justiciable).",
+                    "Analyze the legal synergy between Article 39(b)/(c) and Article 31C saving legislation from challenge under Articles 14 and 19.",
+                    "Analyze the constitutional relationship between Article 39A, Article 14 (Equal Protection), Article 21 (Fair Trial & Legal Aid), and NALSA 1987.",
+                    "Analyze the evolution of FR vs DPSP hierarchy from Champakam Dorairajan (1951) to Minerva Mills (1980) Basic Structure balance."
+                ],
+                "ta": [
+                    "அடிப்படை உரிமைகள் (அரசியல் ஜனநாயகம், எதிர்மறை கடமைகள், நீதிமன்றத்தால் அமல்படுத்தக் கூடியவை) மற்றும் DPSP (சமூக & பொருளாதார ஜனநாயகம், நேர்மறை கடமைகள், அமல்படுத்த முடியாதவை) இடையேயான முதன்மை வேறுபாட்டை பகுப்பாய்வு செய்தல்.",
+                    "உறுப்பு 39(b)/(c) மற்றும் உறுப்பு 31C இடையேயான சட்டப்பூர்வ ஒருங்கிணைப்பை பகுப்பாய்வு செய்தல் (உறுப்புகள் 14, 19 சவால்களிலிருந்து சட்டங்களைக் காப்பாற்றுதல்).",
+                    "உறுப்பு 39A, உறுப்பு 14 (சமமான பாதுகாப்பு), உறுப்பு 21 (நியாயமான விசாரணை & சட்ட உதவி) மற்றும் NALSA 1987 இடையேயான தொடர்பைப் பகுப்பாய்வு செய்தல்.",
+                    "செண்பகம் துரைராஜன் (1951) முதல் மினர்வா மில்ஸ் (1980) அடிப்படை அமைப்பு சமநிலை வரை FR vs DPSP படிநிலையின் வளர்ச்சியை பகுப்பாய்வு செய்தல்."
+                ]
+            },
+            "Apply": {
+                "en": [
+                    "Apply TNPSC trap points to avoid confusing Article 39A (Free Legal Aid DPSP) with Article 32 / Article 226 (Writ Remedies).",
+                    "Distinguish Article 38(1) original provision from Article 38(2) 44th Amendment addition in preliminary statement-based items.",
+                    "Correctly categorize specific articles into Socialist, Gandhian, and Liberal-Intellectual groups in Match the Following MCQs."
+                ],
+                "ta": [
+                    "உறுப்பு 39A (இலவச சட்ட உதவி DPSP) மற்றும் உறுப்பு 32 / 226 (பேராணை பரிகாரங்கள்) ஆகியவற்றை குழப்பிக் கொள்ளாமல் இருக்க டிஎன்பிஎஸ்சி பொறி புள்ளிகளைப் பயன்படுத்துதல்.",
+                    "தேர்வு வினாக்களில் உறுப்பு 38(1) அசல் விதியையும் உறுப்பு 38(2) 44வது திருத்தச் சேர்க்கையையும் சரியாக வேறுபடுத்துதல்.",
+                    "பொருத்துக வினாக்களில் குறிப்பிட்ட உறுப்புகளைச் சமதர்ம, காந்திய மற்றும் தாராளமயக் குழுக்களாகச் சரியாக வகைப்படுத்துதல்."
+                ]
+            }
+        },
+        "subject": "Polity",
+        "topic": "Directive Principles of State Policy – Part 1",
+        "language": "bilingual",
+        "ui_type": "polity",
+        "sections": [
+            {
+                "id": "sec_dpsp_overview",
+                "title_en": "1. DPSP: Constitutional Overview, Foundation & Philosophy",
+                "title_ta": "1. அரசு வழிகாட்டு நெறிமுறைகள்: அரசியலமைப்பு கண்ணோட்டம், அடித்தளம் & தத்துவம்",
+                "type": "standard_topic"
+            },
+            {
+                "id": "sec_article_36",
+                "title_en": "2. Article 36: Definition of 'State' in Part IV",
+                "title_ta": "2. உறுப்பு 36: பகுதி IV-ல் 'அரசு' என்பதன் வரையறை",
+                "type": "standard_topic"
+            },
+            {
+                "id": "sec_article_37",
+                "title_en": "3. Article 37: Application & Non-Justiciable Nature of DPSP",
+                "title_ta": "3. உறுப்பு 37: நெறிமுறைகளின் பயன்பாடும் நீதிமன்றங்களால் அமல்படுத்த முடியாத இயல்பும்",
+                "type": "standard_topic"
+            },
+            {
+                "id": "sec_article_38",
+                "title_en": "4. Article 38: State to Secure a Social Order for Welfare of People",
+                "title_ta": "4. உறுப்பு 38: மக்கள் நலனுக்காக சமூக ஒழுங்கை அரசு உறுதிப்படுத்துதல்",
+                "type": "standard_topic"
+            },
+            {
+                "id": "sec_article_39",
+                "title_en": "5. Article 39: Certain Principles of Policy to be Followed by the State (Clauses a to f)",
+                "title_ta": "5. உறுப்பு 39: அரசு பின்பற்ற வேண்டிய குறிப்பிட்ட கொள்கைக் கோட்பாடுகள் (உட்பிரிவுகள் a முதல் f வரை)",
+                "type": "standard_topic"
+            },
+            {
+                "id": "sec_article_39a",
+                "title_en": "6. Article 39A: Equal Justice and Free Legal Aid",
+                "title_ta": "6. உறுப்பு 39A: சம நீதியும் இலவச சட்ட உதவியும்",
+                "type": "standard_topic"
+            },
+            {
+                "id": "sec_dpsp_classification",
+                "title_en": "7. Conventional DPSP Classification (Socialist, Gandhian & Liberal)",
+                "title_ta": "7. நெறிமுறைகளின் மரபுவழி வகைப்பாடு (சமதர்ம, காந்திய & தாராளமய)",
+                "type": "standard_topic"
+            },
+            {
+                "id": "sec_cases_amendments",
+                "title_en": "8. Landmark Judicial Case Laws & Constitutional Amendments (Part 1)",
+                "title_ta": "8. முக்கிய மைல்கல் வழக்கு தீர்ப்புகள் & அரசியலமைப்பு திருத்தங்கள் (பகுதி 1)",
+                "type": "standard_topic"
+            },
+            {
+                "id": "sec_traps_revision",
+                "title_en": "9. TNPSC Traps, Comparison Framework & High-Yield Revision",
+                "title_ta": "9. டிஎன்பிஎஸ்சி பொறிகள், ஒப்பீட்டு அமைப்பும் முக்கிய திருப்புதலும்",
+                "type": "standard_topic"
+            }
+        ],
+        "content": {
+            "definition": {
+                "en": "Directive Principles of State Policy (DPSP) are constitutional ideals and non-justiciable directives enshrined in Part IV (Articles 36 to 51) of the Constitution of India. Borrowed from the Irish Constitution of 1937, DPSP command the State to secure a Welfare State promoting social, economic, and political justice, serving as fundamental guidelines for governance and law-making without being enforceable by judicial writs.",
+                "ta": "அரசு வழிகாட்டு நெறிமுறைகள் (DPSP) என்பது இந்திய அரசியலமைப்பின் பகுதி IV-ல் (உறுப்புகள் 36 முதல் 51 வரை) பொறிக்கப்பட்டுள்ள அரசியலமைப்பு லட்சியங்கள் மற்றும் நீதிமன்றங்களால் அமல்படுத்த முடியாத வழிகாட்டுதல்கள் ஆகும். 1937 அயர்லாந்து அரசியலமைப்பிலிருந்து பெறப்பட்ட இவை, சமூக, பொருளாதார மற்றும் அரசியல் நீதியை மேம்படுத்தும் ஒரு 'நல அரசை' (Welfare State) அமைக்க அரசுக்கு ஆணையிடுகின்றன. இவை நீதிமன்ற பேராணைகள் மூலம் அமல்படுத்தப்பட முடியாவிட்டாலும், நாட்டின் ஆட்சிக்கும் சட்டங்களை உருவாக்குவதற்கும் அடிப்படையான வழிகாட்டுதல்களாகச் செயல்படுகின்றன."
+            },
+            "introduction": {
+                "en": "Part 1 of the Directive Principles of State Policy series provides an exhaustive foundation of Part IV of the Constitution of India. It thoroughly covers the general framework (Articles 36–51), Article 36 (Definition of State), Article 37 (Non-justiciability vs Governance importance), Article 38 (Social order & 44th Amendment addition of 38(2)), Article 39(a) to 39(f) (Core socio-economic policy directives), Article 39A (Equal Justice & Free Legal Aid), the 3-fold conventional classification (Socialist, Gandhian, Liberal-Intellectual), comparison tables, landmark case laws, and constitutional amendments.",
+                "ta": "அரசு வழிகாட்டு நெறிமுறைகள் தொடரின் பகுதி 1, இந்திய அரசியலமைப்பின் பகுதி IV இன் முழுமையான அடித்தளத்தை வழங்குகிறது. இது பொதுவான அமைப்பு (உறுப்புகள் 36–51), உறுப்பு 36 (அரசின் வரையறை), உறுப்பு 37 (நீதிமன்றங்களால் அமல்படுத்த முடியாத இயல்பு vs ஆட்சியின் முக்கியத்துவம்), உறுப்பு 38 (சமூக ஒழுங்கு & 44வது திருத்தத்தின் மூலம் 38(2) சேர்க்கப்பட்டது), உறுப்பு 39(a) முதல் 39(f) வரை (முக்கிய சமூக-பொருளாதாரக் கொள்கைக் கோட்பாடுகள்), உறுப்பு 39A (சம நீதியும் இலவச சட்ட உதவியும்), 3 வகை மரபுவழி வகைப்பாடு (சமதர்ம, காந்திய, தாராளமய-அறிவுசார்), ஒப்பீட்டு அட்டவணைகள், முக்கிய தீர்ப்புகள் மற்றும் அரசியலமைப்பு திருத்தங்கள் ஆகியவற்றை விரிவாக உள்ளடக்கியுள்ளது."
+            },
+            "sec_dpsp_overview": [
+                {
+                    "title": "1. Meaning, Part IV & Constitutional Objective (பொருள், பகுதி IV & அரசியலமைப்பு நோக்கம்)",
+                    "points": {
+                        "en": [
+                            "Part & Articles: Enshrined in Part IV of the Constitution, spanning Articles 36 to 51.",
+                            "Constitutional Objective: To establish a 'Welfare State' (நல அரசு) as opposed to a mere 'Police State' (காவல் அரசு) under colonial rule.",
+                            "Social and Economic Democracy: While Fundamental Rights (Part III) ensure Political Democracy, DPSP (Part IV) aim at establishing Social and Economic Democracy in the country.",
+                            "Inspiration & Source: Borrowed from the Constitution of Ireland (1937), which had copied it from the Spanish Constitution. Also resembles the 'Instrument of Instructions' enumerated in the Government of India Act, 1935.",
+                            "Dr. B.R. Ambedkar's View: Ambedkar described DPSP as 'Novel Features' (நவீன அம்சங்கள்) of the Constitution and declared that along with Fundamental Rights, they contain the philosophy of the Constitution.",
+                            "Granville Austin's View: Referred to Part III and Part IV together as the 'Conscience of the Constitution' (அரசியலமைப்பின் மனசாட்சி)."
+                        ],
+                        "ta": [
+                            "பகுதி & உறுப்புகள்: அரசியலமைப்பின் பகுதி IV-ல் பொறிக்கப்பட்டு, உறுப்புகள் 36 முதல் 51 வரை பரவியுள்ளன.",
+                            "அரசியலமைப்பு நோக்கம்: காலனித்துவ ஆட்சியின் கீழ் இருந்த வெறும் 'காவல் அரசு' (Police State) என்பதற்கு மாற்றாக ஒரு 'நல அரசை' (Welfare State) நிறுவுவது.",
+                            "சமூக மற்றும் பொருளாதார ஜனநாயகம்: அடிப்படை உரிமைகள் (பகுதி III) அரசியல் ஜனநாயகத்தை உறுதி செய்யும் வேளையில், DPSP (பகுதி IV) நாட்டில் சமூக மற்றும் பொருளாதார ஜனநாயகத்தை நிறுவுவதை நோக்கமாகக் கொண்டுள்ளன.",
+                            "ஈர்ப்பு மூலம் & ஆதாரம்: 1937 அயர்லாந்து அரசியலமைப்பிலிருந்து பெறப்பட்டது (அயர்லாந்து ஸ்பானிஷ் அரசியலமைப்பிலிருந்து பெற்றது). மேலும் இது 1935 இந்திய அரசாங்கச் சட்டத்தின் 'வழிகாட்டுதல் ஆவணத்தை' (Instrument of Instructions) ஒத்துள்ளது.",
+                            "டாக்டர் பி.ஆர். அம்பேத்கர் பார்வை: அம்பேத்கர் DPSP-ஐ அரசியலமைப்பின் 'நவீன அம்சங்கள்' (Novel Features) என்று விவரித்தார், மேலும் அடிப்படை உரிமைகளுடன் இணைந்து இவை அரசியலமைப்பின் தத்துவத்தைக் கொண்டுள்ளன என்று பிரகடனப்படுத்தினார்.",
+                            "கான்வில் ஆஸ்டின் பார்வை: பகுதி III மற்றும் பகுதி IV ஆகிய இரண்டையும் இணைந்து 'அரசியலமைப்பின் மனசாட்சி' (Conscience of the Constitution) என்று குறிப்பிட்டடார்."
+                        ]
+                    }
+                },
+                {
+                    "title": "2. Why DPSP Was Included & Non-Justiciable Nature (DPSP சேர்க்கப்பட்ட காரணமும் நீதிமன்ற அமலாக்கமின்மையும்)",
+                    "points": {
+                        "en": [
+                            "Why Included? Framers recognized that newly independent India lacked sufficient financial resources and administrative infrastructure to make socio-economic rights immediately enforceable.",
+                            "Sir B.N. Rau's Recommendation: Constitutional Advisor Sir B.N. Rau recommended dividing rights into two categories: 1. Justiciable Rights (Part III), 2. Non-Justiciable Rights (Part IV).",
+                            "Real Sanction Behind DPSP: Though non-justiciable in courts, the real sanction behind DPSP is PUBLIC OPINION and the ELECTION BALLOT BOX. As Dr. Ambedkar remarked, a government which rests on popular vote can ill-afford to ignore DPSP at election time.",
+                            "Importance in Governance: Serve as a fundamental guide for Parliament, State Legislatures, and Executive in framing laws, policies, and welfare schemes (e.g. MGNREGA, Panchayati Raj, Free Legal Aid)."
+                        ],
+                        "ta": [
+                            "ஏன் சேர்க்கப்பட்டது? புதிதாக சுதந்திரமடைந்த இந்தியாவில் சமூக-பொருளாதார உரிமைகளை உடனடியாக நீதிமன்றம் மூலம் அமல்படுத்த போதிய நிதி ஆதாரங்களும் நிர்வாகக் கட்டமைப்பும் இல்லை என்பதை வரைவாளர்கள் உணர்ந்தனர்.",
+                            "சர் பி.என். ராவ் பரிந்துரை: அரசியலமைப்பு ஆலோசகர் சர் பி.என். ராவ் உரிமைகளை இரண்டு வகைகளாகப் பிரிக்கப் பரிந்துரைத்தார்: 1. நீதிமன்றத்தால் அமல்படுத்தக்கூடிய உரிமைகள் (பகுதி III), 2. அமல்படுத்த முடியாத உரிமைகள் (பகுதி IV).",
+                            "DPSP-ன் பின்னால் உள்ள உண்மையான அதிகாரம்: நீதிமன்றங்களில் அமல்படுத்தப்பட முடியாவிட்டாலும், DPSP-ன் பின்னால் உள்ள உண்மையான அதிகாரம் 'பொதுமக்கள் கருத்து' (Public Opinion) மற்றும் 'தேர்தல் வாக்குப்பெட்டி' ஆகும். டாக்டர் அம்பேத்கர் குறிப்பிட்டது போல, மக்கள் வாக்குகளை நம்பியிருக்கும் ஒரு அரசாங்கம் தேர்தல் நேரத்தில் DPSP-ஐ புறக்கணிக்க முடியாது.",
+                            "ஆட்சியில் முக்கியத்துவம்: சட்டங்கள், கொள்கைகள் மற்றும் நலத்திட்டங்களை (எ.கா. மகாத்மா காந்தி தேசிய ஊரக வேலை உறுதித் திட்டம், பஞ்சாயத்து ராஜ், இலவச சட்ட உதவி) உருவாக்குவதில் நாடாளுமன்றம், மாநில சட்டமன்றங்கள் மற்றும் நிர்வாகத்திற்கு ஒரு அடிப்படை வழிகாட்டியாகச் செயல்படுகின்றன."
+                        ]
+                    }
+                }
+            ],
+            "sec_article_36": [
+                {
+                    "title": "1. Definition of 'State' under Article 36 (உறுப்பு 36-ன் கீழ் 'அரசு' என்பதன் வரையறை)",
+                    "points": {
+                        "en": [
+                            "Constitutional Text: Article 36 states: 'In this Part, unless the context otherwise requires, \"the State\" has the same meaning as in Part III.'",
+                            "Cross-Reference to Article 12: Article 36 directly incorporates the definition of State under Article 12 without re-defining it.",
+                            "Entities Included under Article 36:\n1. Executive and Legislature of Union (Government of India & Parliament)\n2. Executive and Legislature of States (State Governments & State Assemblies/Councils)\n3. All Local Authorities (Municipalities, Panchayats, District Boards)\n4. All Other Statutory and Non-Statutory Authorities (LIC, ONGC, SAIL, BHEL, PSUs, Universities).",
+                            "Why Article 36 is Important: It explicitly binds ALL levels of government—from Union Parliament down to Village Panchayats and public sector undertakings—to implement the Directive Principles in their respective domains.",
+                            "Comparison: Is Article 36 different from Article 12? NO, the substantive meaning is identical. Article 12 defines State for Part III (FR enforcement/prohibition), whereas Article 36 defines State for Part IV (DPSP implementation)."
+                        ],
+                        "ta": [
+                            "அரசியலமைப்பு உரை: உறுப்பு 36 கூறுகிறது: 'இப்பகுதியில், சூழல் வேறுவிதமாகக் கோரினாலன்றி, \"அரசு\" என்பது பகுதி III-ல் உள்ள அதே பொருளைக் கொண்டிருக்கும்.'",
+                            "உறுப்பு 12-உடனான குறுக்குக் குறிப்பு: உறுப்பு 36 மீண்டும் வரையறுக்காமல் பகுதி III உறுப்பு 12-ன் கீழ் உள்ள அரசு வரையறையை நேரடியாக இணைத்துக்கொள்கிறது.",
+                            "உறுப்பு 36-ன் கீழ் சேர்க்கப்பட்டுள்ள அமைப்புகள்:\n1. மத்திய அரசின் நிர்வாகமும் நாடாளுமன்றமும் (இந்திய அரசு & நாடாளுமன்றம்)\n2. மாநிலங்களின் நிர்வாகமும் சட்டமன்றமும் (மாநில அரசுகள் & மாநில சட்டமன்றங்கள்/மேலவைகள்)\n3. அனைத்து உள்ளாட்சி அமைப்புகள் (நகராட்சிகள், ஊராட்சிகள், மாவட்ட வாரியங்கள்)\n4. அனைத்து இதர சட்டப்பூர்வ மற்றும் சட்டப்பூர்வமற்ற அமைப்புகள் (எல்ஐசி, ஓஎன்ஜிசி, சேலம் எஃகு ஆலை, பெல், பொதுத்துறை நிறுவனங்கள், பல்கலைக்கழகங்கள்).",
+                            "உறுப்பு 36 ஏன் முக்கியமானது: இது மத்திய நாடாளுமன்றம் முதல் கிராம ஊராட்சிகள் மற்றும் பொதுத்துறை நிறுவனங்கள் வரையிலான அனைத்து அரசு நிலைகளையும் தங்கள் களங்களில் வழிகாட்டு நெறிமுறைகளை அமல்படுத்த வெளிப்படையாகக் கட்டுப்படுத்துகிறது.",
+                            "ஒப்பீடு: உறுப்பு 36 உறுப்பு 12-லிருந்து வேறுபட்டதா? இல்லை, பொருள் முற்றிலும் ஒன்றே. உறுப்பு 12 பகுதி III-க்காக (FR அமலாக்கம்/தடை) அரசை வரையறுக்கிறது, உறுப்பு 36 பகுதி IV-க்காக (DPSP அமலாக்கம்) அரசை வரையறுக்கிறது."
+                        ]
+                    }
+                }
+            ],
+            "sec_article_37": [
+                {
+                    "title": "1. Application & Fundamental Nature of DPSP (உறுப்பு 37: நெறிமுறைகளின் பயன்பாடும் அடிப்படை இயல்பும்)",
+                    "points": {
+                        "en": [
+                            "Three Core Mandates of Article 37:\n1. Non-Enforceable by Courts: 'The provisions contained in this Part shall not be enforceable by any court.' (No writ of Mandamus can be issued under Art 32/226 to direct government to pass DPSP law).\n2. Fundamental in Governance: '...nevertheless the principles therein laid down are fundamental in the governance of the country...'\n3. Duty of the State: '...and it shall be the duty of the State to apply these principles in making laws.'",
+                            "Crucial Principle: 'Non-Justiciable' does NOT mean 'Unimportant'. Courts cannot enforce DPSP directly, but courts DO use DPSP to interpret ambiguous statutory provisions and assess 'Reasonable Restrictions' under Article 19.",
+                            "Simple Practical Example: If a state government does not enact a law providing old age pension, a citizen CANNOT file a writ petition under Article 32 claiming violation of DPSP. However, when the state DOES enact pension schemes, it is fulfilling its constitutional duty under Article 37.",
+                            "TNPSC Trap: Article 37 makes DPSP non-justiciable, but declares them FUNDAMENTAL in governance. Do not confuse non-justiciability with lack of constitutional validity!"
+                        ],
+                        "ta": [
+                            "உறுப்பு 37-ன் 3 முக்கிய கட்டளைகள்:\n1. நீதிமன்றங்களால் அமல்படுத்தப்பட முடியாதவை: 'இப்பகுதியில் உள்ள விதிகளை எந்த நீதிமன்றத்தின் மூலமும் அமல்படுத்த முடியாது.' (DPSP சட்டத்தை இயற்றுமாறு அரசுக்கு ஆணையிட உறுப்பு 32/226-ன் கீழ் பேராணை பிறப்பிக்க முடியாது).\n2. நாட்டின் ஆட்சியில் அடிப்படையானவை: '...இருப்பினும் இதில் கூறப்பட்டுள்ள கோட்பாடுகள் நாட்டின் ஆட்சியில் அடிப்படையானவை...'\n3. அரசின் கடமை: '...மேலும் சட்டங்களை உருவாக்குவதில் இக்கோட்பாடுகளைப் பயன்படுத்துவது அரசின் கடமையாகும்.'",
+                            "முக்கியக் கோட்பாடு: 'நீதிமன்றத்தால் அமல்படுத்த முடியாதது' என்பது 'முக்கியமற்றது' என்று பொருள்படாது. நீதிமன்றங்கள் DPSP-ஐ நேரடியாக அமல்படுத்த முடியாது, ஆனால் தெளிவற்ற சட்ட விதிகளுக்கு விளக்கமளிக்கவும் உறுப்பு 19-ன் கீழ் 'நியாயமான கட்டுப்பாடுகளை' மதிப்பிடவும் DPSP-ஐப் பயன்படுத்துகின்றன.",
+                            "எளிய நடைமுறை உதாரணம்: ஒரு மாநில அரசு முதியோர் ஓய்வூதியச் சட்டத்தை இயற்றாவிட்டால், ஒரு குடிமகன் DPSP மீறப்பட்டதாகக் கூறி உறுப்பு 32-ன் கீழ் பேராணை மனு தாக்கல் செய்ய முடியாது. இருப்பினும், அரசு ஓய்வூதியத் திட்டங்களை இயற்றும்போது, அது உறுப்பு 37-ன் கீழ் தனது அரசியலமைப்பு கடமையை நிறைவேற்றுகிறது.",
+                            "டிஎன்பிஎஸ்சி பொறி: உறுப்பு 37 DPSP-ஐ நீதிமன்றத்தால் அமல்படுத்த முடியாததாக்குகிறது, ஆனால் ஆட்சியில் 'அடிப்படையானது' என அறிவிக்கிறது. அமல்படுத்த முடியாத இயல்பை அரசியலமைப்பு செல்லுபடி இன்மையோடு குழப்பிக் கொள்ள வேண்டாம்!"
+                        ]
+                    }
+                }
+            ],
+            "sec_article_38": [
+                {
+                    "title": "1. Social Order & Minimising Inequalities (உறுப்பு 38: சமூக ஒழுங்கும் சமத்துவமின்மையைக் குறைத்தலும்)",
+                    "points": {
+                        "en": [
+                            "Core Objective: Directs the State to promote the welfare of the people by securing and protecting a social order in which justice—social, economic and political—shall inform all institutions of national life.",
+                            "Echoes Preamble: Article 38 directly incorporates the Preamble's pledge of Justice (Social, Economic, and Political).",
+                            "Distinction between Article 38(1) and Article 38(2):\n- Article 38(1) [Original Provision]: Mandates the State to secure a social order for the promotion of welfare of the people by ensuring social, economic, and political justice.\n- Article 38(2) [Added by 44th Constitutional Amendment Act, 1978]: Mandates the State to strive to MINIMISE INEQUALITIES in income, and endeavor to eliminate inequalities in status, facilities, and opportunities, not only among individuals but also among groups of people residing in different areas or engaged in different vocations.",
+                            "TNPSC Relevance: 44th Amendment Act 1978 (Morarji Desai Govt) inserted Article 38(2). This is a high-frequency exam factual item!",
+                            "2-Line Revision: Article 38 = Social Order + Justice (Social, Economic, Political) + Minimising Inequalities (38(2) via 44th CAA 1978)."
+                        ],
+                        "ta": [
+                            "முதன்மை நோக்கம்: சமூக, பொருளாதார மற்றும் அரசியல் நீதி தேசிய வாழ்க்கையின் அனைத்து நிறுவனங்களிலும் நிறைந்திருக்கும் ஒரு சமூக ஒழுங்கை உறுதிசெய்து பாதுகாப்பதன் மூலம் மக்களின் நலனை மேம்படுத்த அரசுக்கு ஆணையிடுகிறது.",
+                            "முகப்புரையின் எதிரொலி: உறுப்பு 38 முகப்புரையின் நீதி (சமூக, பொருளாதார மற்றும் அரசியல்) உறுதிமொழியை நேரடியாக உள்ளடக்கியுள்ளது.",
+                            "உறுப்பு 38(1) மற்றும் 38(2) இடையேயான வேறுபாடு:\n- உறுப்பு 38(1) [அசல் விதி]: சமூக, பொருளாதார, அரசியல் நீதியை உறுதி செய்வதன் மூலம் மக்கள் நலனை மேம்படுத்துவதற்கான சமூக ஒழுங்கை அரசு உருவாக்க ஆணையிடுகிறது.\n- உறுப்பு 38(2) [1978-ன் 44வது அரசியலமைப்பு திருத்தச் சட்டத்தால் சேர்க்கப்பட்டது]: வருமானத்தில் உள்ள சமத்துவமின்மையைக் குறைக்கவும், தனிநபர்களிடையே மட்டுமின்றி வெவ்வேறு பகுதிகளில் வாழும் அல்லது வெவ்வேறு தொழில்களில் ஈடுபட்டுள்ள குழுக்களிடையே அந்தஸ்து, வசதிகள் மற்றும் வாய்ப்புகளில் உள்ள சமத்துவமின்மையை ஒழிக்கவும் அரசு முயல வேண்டும் எனக் கட்டளையிடுகிறது.",
+                            "டிஎன்பிஎஸ்சி முக்கியத்துவம்: 1978-ன் 44வது திருத்தச் சட்டம் (மொரார்ஜி தேசாய் அரசு) உறுப்பு 38(2)-ஐ இணைத்தது. இது அடிக்கடி கேட்கப்படும் தேர்வு வினாவாகும்!",
+                            "2-வரி திருப்புதல்: உறுப்பு 38 = சமூக ஒழுங்கு + நீதி (சமூக, பொருளாதார, அரசியல்) + சமத்துவமின்மையைக் குறைத்தல் (38(2) 44வது திருத்தம் மூலம்)."
+                        ]
+                    }
+                }
+            ],
+            "sec_article_39": [
+                {
+                    "title": "1. Article 39(a) to 39(c): Policy Directives on Livelihood & Wealth (கொள்கைக் கோட்பாடுகள் a முதல் c வரை)",
+                    "points": {
+                        "en": [
+                            "Article 39(a) – Adequate Means of Livelihood:\n- Provision: Citizens, men and women equally, have the right to an adequate means of livelihood.\n- Meaning & Example: State must create economic conditions, employment schemes, and self-employment opportunities (e.g. MGNREGA, Deendayal Antyodaya Yojana).\n- TNPSC Trap: Article 39(a) is a DPSP directive, NOT a fundamental right under Part III.\n\nArticle 39(b) – Distribution of Material Resources:\n- Provision: Ownership and control of the material resources of the community are so distributed as best to subserve the common good.\n- Meaning & Example: Prevention of private monopolies over natural resources (mines, land, water, transport). Land reforms, ceiling on land holdings, nationalization of banks/buses (State of TN v. Abu Kavur Bai 1984).\n- Constitutional Status: Protected under Article 31C (laws giving effect to 39(b) cannot be invalidated under Art 14 & 19).\n\nArticle 39(c) – Prevention of Concentration of Wealth:\n- Provision: Operation of the economic system does not result in the concentration of wealth and means of production to the common detriment.\n- Meaning & Example: Progressive taxation, anti-trust laws, Monopolies and Restrictive Trade Practices (MRTP) Act, Competition Act 2002.\n- Constitutional Status: Protected under Article 31C along with 39(b)."
+                        ],
+                        "ta": [
+                            "உறுப்பு 39(a) – போதுமான வாழ்வாதார வழிவகைகள்:\n- விதி: குடிமக்கள், ஆண்கள் மற்றும் பெண்கள் இருபாலரும் சமமாக, போதுமான வாழ்வாதார வழிவகைகளைப் பெற உரிமை உண்டு.\n- பொருள் & உதாரணம்: அரசு பொருளாதார நிலைகள், வேலைவாய்ப்புத் திட்டங்கள் மற்றும் சுயவேலைவாய்ப்பு வாய்ப்புகளை உருவாக்க வேண்டும் (எ.கா. மகாத்மா காந்தி வேலை உறுதித் திட்டம்).\n- டிஎன்பிஎஸ்சி பொறி: உறுப்பு 39(a) ஒரு DPSP வழிகாட்டுதலேயன்றி, பகுதி III-ன் கீழ் உள்ள அடிப்படை உரிமை அல்ல.\n\nஉறுப்பு 39(b) – பொருள் வளங்களின் பங்கீடு:\n- விதி: சமூகத்தின் பொருள் வளங்களின் உரிமையும் கட்டுப்பாடும் பொது நலனுக்குச் சிறந்த முறையில் சேவை செய்யும் வகையில் பகிரப்பட வேண்டும்.\n- பொருள் & உதாரணம்: இயற்கை வளங்கள் மீது (சுரங்கங்கள், நிலம், நீர், போக்குவரத்து) தனியார் முற்றுரிமையைத் தடுத்தல். நில சீர்திருத்தங்கள், நில உச்சவரம்பு, வங்கிகள்/பேருந்துகள் தேசியமயமாக்கல் (தமிழ்நாடு அரசு எதிர் அபு கவூர் பாய் 1984).\n- அரசியலமைப்பு அந்தஸ்து: உறுப்பு 31C-ன் கீழ் பாதுகாப்பு (39(b)-ஐ செயல்படுத்தும் சட்டங்களை உறுப்புகள் 14, 19-ன் கீழ் செல்லாததாக்க முடியாது).\n\nஉறுப்பு 39(c) – செல்வக் குவிப்புத் தடை:\n- விதி: பொருளாதார அமைப்பின் செயல்பாடு பொது நலனுக்குத் தீங்கு விளைவிக்கும் வகையில் செல்வமும் உற்பத்தி சாதனங்களும் குவிவதற்கு வழிவகுக்கக் கூடாது.\n- பொருள் & உதாரணம்: படிப் படியான வரி விதிப்பு, முற்றுரிமை எதிர்ப்புச் சட்டங்கள், MRTP சட்டம், போட்டிச் சட்டம் 2002.\n- அரசியலமைப்பு அந்தஸ்து: 39(b)-உடன் உறுப்பு 31C-ன் கீழ் பாதுகாக்கப்படுகிறது."
+                        ]
+                    }
+                },
+                {
+                    "title": "2. Article 39(d) to 39(f): Equal Pay, Worker Health & Child Protection (கொள்கைக் கோட்பாடுகள் d முதல் f வரை)",
+                    "points": {
+                        "en": [
+                            "Article 39(d) – Equal Pay for Equal Work:\n- Provision: There is equal pay for equal work for both men and women.\n- Meaning & Case Law: Mandates no gender discrimination in remuneration. In Randhir Singh v. Union of India (1982), SC held that 'Equal pay for equal work' is a constitutional goal under Art 39(d) read with Arts 14 & 16, enforceable in casual vs permanent employment disputes.\n- Legislation: Equal Remuneration Act, 1976.\n\nArticle 39(e) – Protection of Health of Workers & Children:\n- Provision: Health and strength of workers, men and women, and the tender age of children are not abused and citizens are not forced by economic necessity to enter avocations unsuited to their age or strength.\n- Legislation: Factories Act 1948, Mines Act 1952, Occupational Safety Codes.\n\nArticle 39(f) – Opportunities for Healthy Development of Children:\n- Provision: Children are given opportunities and facilities to develop in a healthy manner and in conditions of freedom and dignity, and childhood and youth are protected against exploitation and moral and material abandonment.\n- Amendment History: Substituted by the 42nd Constitutional Amendment Act, 1976 (originally worded differently).\n- Legislation: Child Labour (Prohibition and Regulation) Act 1986, POCSO Act 2012, Juvenile Justice Act 2015."
+                        ],
+                        "ta": [
+                            "உறுப்பு 39(d) – சம வேலைக்கு சம ஊதியம்:\n- விதி: ஆண்கள் மற்றும் பெண்கள் இருபாலருக்கும் சம வேலைக்கு சம ஊதியம் வழங்கப்பட வேண்டும்.\n- பொருள் & வழக்கு தீர்ப்பு: ஊதியத்தில் பாலின பாகுபாடு இருக்கக்கூடாது. ரந்தீர் சிங் எதிர் இந்திய யூனியன் (1982) வழக்கில், உச்ச நீதிமன்றம் 'சம வேலைக்கு சம ஊதியம்' என்பது உறுப்புகள் 14, 16-உடன் வாசிக்கப்படும் உறுப்பு 39(d)-ன் கீழ் ஒரு அரசியலமைப்பு இலக்காகும் என்று தீர்ப்பளித்தது.\n- சட்டம்: சம ஊதியச் சட்டம், 1976.\n\nஉறுப்பு 39(e) – தொழிலாளர்கள் & குழந்தைகள் சுகாதாரப் பாதுகாப்பு:\n- விதி: ஆண், பெண் தொழிலாளர்களின் சுகாதாரமும் வலிமையும், குழந்தைகளின் பிஞ்சு வயதும் துஷ்பிரயோகம் செய்யப்படக்கூடாது, மேலும் குடிமக்கள் பொருளாதார அவசியத்தால் தங்கள் வயதுக்கோ அல்லது வலிமைக்கோ பொருந்தாத தொழில்களில் ஈடுபடக் கட்டாயப்படுத்தப்படக்கூடாது.\n- சட்டம்: தொழிற்சாலைகள் சட்டம் 1948, சுரங்கங்கள் சட்டம் 1952.\n\nஉறுப்பு 39(f) – குழந்தைகள் ஆரோக்கியமான வளர்ச்சி வாய்ப்புகள்:\n- விதி: குழந்தைகள் ஆரோக்கியமான முறையிலும் சுதந்திரம் மற்றும் கண்ணியமான சூழ்நிலையிலும் வளர வாய்ப்புகளும் வசதிகளும் வழங்கப்பட வேண்டும், மேலும் குழந்தைப் பருவமும் இளமையும் சுரண்டல் மற்றும் ஒழுக்க, பொருள் கைவிடலுக்கு எதிராகப் பாதுகாக்கப்பட வேண்டும்.\n- திருத்த வரலாறு: 1976-ன் 42வது அரசியலமைப்பு திருத்தச் சட்டத்தால் மாற்றியமைக்கப்பட்டது (அசல் உரை வேறுவிதமாக இருந்தது).\n- சட்டம்: குழந்தைகள் தொழிலாளர் சட்டம் 1986, போக்ஸோ சட்டம் 2012, சிறுவர் நீதிச் சட்டம் 2015."
+                        ]
+                    }
+                }
+            ],
+            "sec_article_39a": [
+                {
+                    "title": "1. Equal Justice & Free Legal Aid under Article 39A (உறுப்பு 39A: சம நீதியும் இலவச சட்ட உதவியும்)",
+                    "points": {
+                        "en": [
+                            "Constitutional Mandate: Added by the 42nd Constitutional Amendment Act, 1976. Directs the State to promote justice on a basis of equal opportunity and provide free legal aid by suitable legislation or schemes to ensure opportunities for securing justice are not denied to any citizen by reason of economic or other disabilities.",
+                            "Constitutional Synergy: Operates in harmony with Article 14 (Equality before Law) and Article 21 (Right to Life & Personal Liberty). In Hussainara Khatoon v. Home Secretary, Bihar (1979), SC held that free legal service to the poor is an inalienable element of 'reasonable, fair and just' procedure under Article 21.",
+                            "Statutory Framework – NALSA 1987:\n- Legal Services Authorities Act, 1987 was enacted by Parliament to give effect to Article 39A.\n- Established NALSA (National Legal Services Authority), SALSA (State Level - TNSALSA), and DLSA (District Level).\n- Lok Adalats (மக்கள் நீதிமன்றம்) were granted statutory status under this Act to provide speedy, cost-free dispute resolution.",
+                            "Comparison with Writs: Article 39A is a DPSP policy goal implemented via statutes (NALSA Act), whereas Article 32 & Article 226 are constitutional WRIT REMEDIES for enforcing rights!"
+                        ],
+                        "ta": [
+                            "அரசியலமைப்பு கட்டளை: 1976-ன் 42வது அரசியலமைப்பு திருத்தச் சட்டத்தால் சேர்க்கப்பட்டது. சம வாய்ப்பின் அடிப்படையில் நீதியை மேம்படுத்தவும், பொருளாதார அல்லது பிற இயலாமைகள் காரணமாக எந்தவொரு குடிமகனுக்கும் நீதிபெறும் வாய்ப்புகள் மறுக்கப்படாமல் இருப்பதை உறுதிசெய்யப் பொருத்தமான சட்டம் அல்லது திட்டங்கள் மூலம் இலவச சட்ட உதவியை வழங்கவும் அரசுக்கு ஆணையிடுகிறது.",
+                            "அரசியலமைப்பு ஒருங்கிணைப்பு: உறுப்பு 14 (சட்டத்தின் முன் சமத்துவம்) மற்றும் உறுப்பு 21 (வாழ்வு & தனிநபர் சுதந்திர உரிமை) ஆகியவற்றுடன் இணக்கமாகச் செயல்படுகிறது. உசைனாரா கத்தூன் எதிர் பீகார் அரசு (1979) வழக்கில், ஏழைகளுக்கு இலவச சட்ட சேவை என்பது உறுப்பு 21-ன் கீழ் 'நியாயமான மற்றும் நேர்மையான' நடைமுறையின் பிரிக்க முடியாத அம்சம் என உச்ச நீதிமன்றம் தீர்ப்பளித்தது.",
+                            "சட்டப்பூர்வ கட்டமைப்பு – NALSA 1987:\n- உறுப்பு 39A-க்கு செயலாக்கம் அளிக்க நாடாளுமன்றத்தால் சட்டப்பணிகள் ஆணைக்குழு சட்டம், 1987 இயற்றப்பட்டது.\n- NALSA (தேசிய சட்டப்பணிகள் ஆணைக்குழு), SALSA (மாநில நிலை - TNSALSA) மற்றும் DLSA (மாவட்ட நிலை) ஆகியவற்றை நிறுவியது.\n- விரைவான, கட்டணமற்ற தகராறு தீர்வை வழங்க இந்தச் சட்டத்தின் கீழ் லோக் அதாலத்துகளுக்கு (மக்கள் நீதிமன்றம்) சட்டப்பூர்வ அந்தஸ்து வழங்கப்பட்டது.",
+                            "பேராணைகளுடனான ஒப்பீடு: உறுப்பு 39A என்பது சட்டங்கள் (NALSA சட்டம்) மூலம் அமல்படுத்தப்படும் ஒரு DPSP கொள்கை இலக்காகும், ஆனால் உறுப்பு 32 & 226 என்பவை உரிமைகளை அமல்படுத்துவதற்கான அரசியலமைப்பு பேராணை பரிகாரங்கள் ஆகும்!"
+                        ]
+                    }
+                }
+            ],
+            "sec_dpsp_classification": [
+                {
+                    "title": "1. Conventional 3-Fold Classification (மரபுவழி 3 வகைப்பாடு)",
+                    "points": {
+                        "en": [
+                            "IMPORTANT DISCLAIMER: The Constitution of India does NOT contain any formal classification of Directive Principles. The division into Socialist, Gandhian, and Liberal-Intellectual categories is a CONVENTIONAL ACADEMIC CLASSIFICATION based on ideological content.",
+                            "1. Socialist Principles (சமதர்மக் கோட்பாடுகள்):\n- Objective: To establish a democratic socialist state, eliminate socio-economic inequalities, and ensure decent standard of life.\n- Key Articles in Part 1: Article 38, Article 39(a)-(f), Article 39A. (Also Arts 41, 42, 43, 43A, 47 in later parts).\n- Memory Aid: 'Welfare, Livelihood, Wealth Control, Equal Pay, Worker Health, Free Legal Aid'.\n\n2. Gandhian Principles (காந்தியக் கோட்பாடுகள்):\n- Objective: To reconstruct India based on Mahatma Gandhi's Gram Swaraj and rural upliftment philosophy.\n- Key Articles in DPSP: Article 40 (Village Panchayats), Article 43 (Cottage Industries), Article 43B (Cooperatives), Article 46 (SC/ST educational/economic interests), Article 47 (Prohibition of intoxicating drinks), Article 48 (Prohibition of slaughter of cows/calves).\n- Memory Aid: 'Panchayat, Cottage Industry, SC/ST upliftment, Liquor ban, Cow protection'.\n\n3. Liberal-Intellectual Principles (தாராளமய-அறிவுசார்க் கோட்பாடுகள்):\n- Objective: To promote liberal ideology, uniform laws, scientific temper, and international peace.\n- Key Articles in DPSP: Article 44 (Uniform Civil Code), Article 45 (Early childhood education), Article 48 (Scientific agriculture/animal husbandry), Article 48A (Environment/forests/wildlife), Article 49 (Monuments), Article 50 (Separation of Judiciary from Executive), Article 51 (International peace).\n- Memory Aid: 'UCC, Early Education, Environment, Monuments, Judiciary Separation, World Peace'."
+                        ],
+                        "ta": [
+                            "முக்கிய எச்சரிக்கை: இந்திய அரசியலமைப்பு உரையில் அரசு வழிகாட்டு நெறிமுறைகளின் எந்தவொரு அதிகாரப்பூர்வ வகைப்பாடும் இல்லை. சமதர்ம, காந்திய மற்றும் தாராளமய-அறிவுசார் பிரிவுகளாகப் பிரிப்பது தத்துவார்த்த உள்ளடக்கத்தின் அடிப்படையில் அமைந்த ஒரு மரபுவழி கல்வி வகைபாடாகும் (CONVENTIONAL ACADEMIC CLASSIFICATION).",
+                            "1. சமதர்மக் கோட்பாடுகள்:\n- நோக்கம்: ஒரு ஜனநாயக சமதர்ம அரசை நிறுவுதல், சமூக-பொருளாதார சமத்துவமின்மையை ஒழித்தல் மற்றும் கண்ணியமான வாழ்க்கைத் தரத்தை உறுதி செய்தல்.\n- பகுதி 1-ல் உள்ள முக்கிய உறுப்புகள்: உறுப்பு 38, உறுப்பு 39(a)-(f), உறுப்பு 39A. (மேலும் பிந்தைய பகுதிகளில் உறுப்புகள் 41, 42, 43, 43A, 47).\n- நினைவுக் சூத்திரம்: 'நலன், வாழ்வாதாரம், செல்வக் கட்டுப்பாடு, சம ஊதியம், தொழிலாளர் சுகாதாரம், இலவச சட்ட உதவி'.\n\n2. காந்தியக் கோட்பாடுகள்:\n- நோக்கம்: மகாத்மா காந்தியின் கிராம சுயராஜ்யம் மற்றும் கிராமப்புற மேம்பாட்டுத் தத்துவத்தின் அடிப்படையில் இந்தியாவை மறுசீரமைத்தல்.\n- DPSP-ல் உள்ள முக்கிய உறுப்புகள்: உறுப்பு 40 (கிராம ஊராட்சிகள்), உறுப்பு 43 (குடில்தொழில்கள்), உறுப்பு 43B (கூட்டுறவுச் சங்கங்கள்), உறுப்பு 46 (எஸ்சி/எஸ்டி கல்வி/பொருளாதார நலன்), உறுப்பு 47 (மதுவிலக்கு), உறுப்பு 48 (பசு வதை தடை).\n- நினைவுக் சூத்திரம்: 'ஊராட்சி, குடில்தொழில், எஸ்சி/எஸ்டி மேம்பாடு, மதுவிலக்கு, பசு பாதுகாப்பு'.\n\n3. தாராளமய-அறிவுசார்க் கோட்பாடுகள்:\n- நோக்கம்: தாராளமயத் தத்துவம், சீரான சட்டங்கள், அறிவியல் மனப்பான்மை மற்றும் சர்வதேச அமைதியை மேம்படுத்துதல்.\n- DPSP-ல் உள்ள முக்கிய உறுப்புகள்: உறுப்பு 44 (பொது சிவில் சட்டம்), உறுப்பு 45 (முன்பருவக் கல்வி), உறுப்பு 48 (அறிவியல் விவசாயம்), உறுப்பு 48A (சுற்றுச்சூழல்/காடுகள்/வனவிலங்குகள்), உறுப்பு 49 (ஸ்மாரகங்கள்), உறுப்பு 50 (நிர்வாகத்திலிருந்து நீதித்துறை பிரிப்பு), உறுப்பு 51 (சர்வதேச அமைதி).\n- நினைவுக் சூத்திரம்: 'UCC, முன்பருவக் கல்வி, சுற்றுச்சூழல், நினைவிடங்கள், நீதித்துறை பிரிப்பு, உலக அமைதி'."
+                        ]
+                    }
+                }
+            ],
+            "sec_cases_amendments": [
+                {
+                    "title": "1. Landmark Case Laws & Judicial Evolution (முக்கிய வழக்கு தீர்ப்புகளும் நீதித்துறை வளர்ச்சியும்)",
+                    "points": {
+                        "en": [
+                            "1. Champakam Dorairajan v. State of Madras (1951):\n- Issue: Conflict between Fundamental Rights (Art 15/29) and DPSP (Art 46 reservation order).\n- SC Ruling: Fundamental Rights are SUPERIOR to DPSP. DPSP must run as subsidiary/subordinate to Part III. Led to 1st Amendment Act 1951.\n\n2. Re Kerala Education Bill (1958):\n- Principle: SC introduced the Doctrine of Harmonious Construction (இணக்கமான விளக்கக் கோட்பாடு). FRs and DPSP should be interpreted harmoniously without destroying either.\n\n3. 25th Amendment Act 1971 & Kesavananda Bharati (1973):\n- Article 31C inserted: Saved laws implementing Art 39(b) & 39(c) from being invalidated under Arts 14, 19, 31.\n- SC Verdict: Upheld Art 31C Part 1 saving laws for 39(b)/(c), establishing that DPSP 39(b)/(c) can take precedence over Arts 14 and 19.\n\n4. Minerva Mills v. Union of India (1980):\n- Issue: 42nd Amendment extended 31C protection to ALL DPSPs.\n- SC Ruling: Struck down the extension. Held that the BALANCE between Part III and Part IV is a BASIC FEATURE of the Constitution. Neither is superior to the other.\n\n5. Randhir Singh v. Union of India (1982):\n- Ruling: Equal Pay for Equal Work (Art 39(d)) is a constitutional obligation enforceable under Art 14 & 16.\n\n6. Hussainara Khatoon v. Home Secretary, Bihar (1979):\n- Ruling: Free legal aid under Art 39A is a fundamental right implicit under Article 21."
+                        ],
+                        "ta": [
+                            "1. செண்பகம் துரைராஜன் எதிர் மதராஸ் மாநிலம் (1951):\n- பிரச்சினை: அடிப்படை உரிமைகளுக்கும் (15/29) DPSP-க்கும் (46 இடஒதுக்கீடு) இடையிலான மோதல்.\n- உச்ச நீதிமன்றத் தீர்ப்பு: அடிப்படை உரிமைகள் DPSP-ஐ விட மேலானவை. DPSP பகுதி III-க்கு துணையாகவே செயல்பட வேண்டும். இது 1வது திருத்தச் சட்டம் 1951-க்கு வழிவகுத்தது.\n\n2. கேரளா கல்வி மசோதா வழக்கு (1958):\n- கோட்பாடு: உச்ச நீதிமன்றம் இணக்கமான விளக்கக் கோட்பாட்டை (Harmonious Construction) அறிமுகப்படுத்தியது. FR மற்றும் DPSP இரண்டும் ஒன்றை ஒன்று அழிக்காமல் இணக்கமாக விளக்கப்பட வேண்டும்.\n\n3. 25வது திருத்தச் சட்டம் 1971 & கேசவானந்த பாரதி (1973):\n- உறுப்பு 31C இணைக்கப்பட்டது: 39(b) & 39(c)-ஐ செயல்படுத்தும் சட்டங்களை உறுப்புகள் 14, 19, 31-லிருந்து காப்பாற்றியது.\n- உச்ச நீதிமன்றத் தீர்ப்பு: 39(b)/(c)-க்கான 31C முதல் பகுதியை உறுதி செய்து, DPSP 39(b)/(c) உறுப்புகள் 14, 19-ஐ விட முதன்மை பெறலாம் என நிறுவியது.\n\n4. மினர்வா மில்ஸ் எதிர் இந்திய யூனியன் (1980):\n- பிரச்சினை: 42வது திருத்தம் 31C பாதுகாப்பை அனைத்து DPSP-களுக்கும் நீட்டித்தது.\n- உச்ச நீதிமன்றத் தீர்ப்பு: நீட்டிப்பை ரத்து செய்தது. பகுதி III மற்றும் பகுதி IV இடையிலான சமநிலையே அரசியலமைப்பின் 'அடிப்படை அம்சம்' (Basic Feature) எனத் தீர்ப்பளித்தது.\n\n5. ரந்தீர் சிங் எதிர் இந்திய யூனியன் (1982):\n- தீர்ப்பு: சம வேலைக்கு சம ஊதியம் (39(d)) என்பது உறுப்புகள் 14 & 16-ன் கீழ் அமல்படுத்தக்கூடிய அரசியலமைப்பு கடமையாகும்.\n\n6. உசைனாரா கத்தூன் எதிர் பீகார் அரசு (1979):\n- தீர்ப்பு: உறுப்பு 39A-ன் கீழ் இலவச சட்ட உதவி என்பது உறுப்பு 21-ன் கீழ் மறைமுகமாக உள்ள ஒரு அடிப்படை உரிமையாகும்."
+                        ]
+                    }
+                },
+                {
+                    "title": "2. Constitutional Amendments Affecting Part 1 DPSP (பகுதி 1 DPSP-ஐ பாதிக்கும் அரசியலமைப்பு திருத்தங்கள்)",
+                    "points": {
+                        "en": [
+                            "1. 42nd Constitutional Amendment Act, 1976 (Mini-Constitution under Indira Gandhi Govt):\n- Added Article 39A: Equal Justice and Free Legal Aid.\n- Substituted Article 39(f): Opportunities for healthy development of children.\n- Added Article 43A: Participation of workers in management of industries.\n- Added Article 48A: Protection of environment, forests, and wildlife.\n\n2. 44th Constitutional Amendment Act, 1978 (Morarji Desai Govt):\n- Added Article 38(2): Mandates State to strive to minimise inequalities in income, status, facilities, and opportunities.\n\n3. Other Key DPSP Amendments (For Overview Context):\n- 86th Amendment Act 2002: Changed subject matter of Art 45 (Early childhood care up to 6 yrs) and made education under 21A a Fundamental Right.\n- 97th Amendment Act 2011: Added Article 43B (Promotion of co-operative societies)."
+                        ],
+                        "ta": [
+                            "1. 1976-ன் 42வது அரசியலமைப்பு திருத்தச் சட்டம் (இந்திரா காந்தி ஆட்சியில் சிறிய அரசியலமைப்பு):\n- உறுப்பு 39A சேர்க்கப்பட்டது: சம நீதியும் இலவச சட்ட உதவியும்.\n- உறுப்பு 39(f) மாற்றப்பட்டது: குழந்தைகள் ஆரோக்கியமான முறையில் வளர்வதற்கான வாய்ப்புகள்.\n- உறுப்பு 43A சேர்க்கப்பட்டது: தொழில்களில் தொழிலாளர்களின் பங்கேற்பு.\n- உறுப்பு 48A சேர்க்கப்பட்டது: சுற்றுச்சூழல், காடுகள் மற்றும் வனவிலங்குகள் பாதுகாப்பு.\n\n2. 1978-ன் 44வது அரசியலமைப்பு திருத்தச் சட்டம் (மொரார்ஜி தேசாய் அரசு):\n- உறுப்பு 38(2) சேர்க்கப்பட்டது: வருமானம், அந்தஸ்து, வசதிகள் மற்றும் வாய்ப்புகளில் உள்ள சமத்துவமின்மையைக் குறைக்க அரசு முயல வேண்டும்.\n\n3. பிற முக்கிய DPSP திருத்தங்கள் (சுருக்கமான பின்னணிக்கு):\n- 2002-ன் 86வது திருத்தச் சட்டம்: உறுப்பு 45-ன் பொருளை மாற்றியது (6 வயது வரை முன்பருவக் கல்வி) மற்றும் உறுப்பு 21A-ன் கீழ் கல்வியை அடிப்படை உரிமையாக்கியது.\n- 2011-ன் 97வது திருத்தச் சட்டம்: உறுப்பு 43B சேர்க்கப்பட்டது (கூட்டுறவுச் சங்கங்கள் மேம்பாடு)."
+                        ]
+                    }
+                }
+            ],
+            "sec_traps_revision": [
+                {
+                    "title": "1. High-Yield Summary of Articles 36 to 39A (உறுப்புகள் 36 முதல் 39A வரை முக்கிய திருப்புதல்)",
+                    "points": {
+                        "en": [
+                            "Article 36: Definition of State (same as Article 12).",
+                            "Article 37: DPSP non-justiciable in courts, but fundamental in governance of the country.",
+                            "Article 38(1): Securing a social order promoting welfare of people (social, economic, political justice).",
+                            "Article 38(2): Minimising inequalities in income, status, facilities, opportunities (added by 44th CAA 1978).",
+                            "Article 39(a): Adequate means of livelihood for all citizens.",
+                            "Article 39(b): Material resources of community distributed for common good (protected by Art 31C).",
+                            "Article 39(c): Prevention of concentration of wealth and means of production (protected by Art 31C).",
+                            "Article 39(d): Equal pay for equal work for men and women.",
+                            "Article 39(e): Protection of health and strength of workers and children.",
+                            "Article 39(f): Opportunities for healthy development of children (modified by 42nd CAA 1976).",
+                            "Article 39A: Equal justice and free legal aid to the poor (added by 42nd CAA 1976; statutory body NALSA 1987)."
+                        ],
+                        "ta": [
+                            "உறுப்பு 36: அரசின் வரையறை (உறுப்பு 12 போன்றதே).",
+                            "உறுப்பு 37: DPSP நீதிமன்றங்களால் அமல்படுத்த முடியாதது, ஆனால் நாட்டின் ஆட்சியில் அடிப்படையானது.",
+                            "உறுப்பு 38(1): மக்கள் நலனை மேம்படுத்தும் சமூக ஒழுங்கை உருவாக்குதல் (சமூக, பொருளாதார, அரசியல் நீதி).",
+                            "உறுப்பு 38(2): வருமானம், அந்தஸ்து, வசதி, வாய்ப்புகளில் சமத்துவமின்மையைக் குறைத்தல் (44வது திருத்தம் 1978 மூலம் சேர்க்கப்பட்டது).",
+                            "உறுப்பு 39(a): அனைத்துக் குடிமக்களுக்கும் போதுமான வாழ்வாதார வழிவகைகள்.",
+                            "உறுப்பு 39(b): பொது நலனுக்காகச் சமூகத்தின் பொருள் வளங்களைப் பகிர்ந்தளித்தல் (உறுப்பு 31C பாதுகாப்பு).",
+                            "உறுப்பு 39(c): செல்வக் குவிப்பு மற்றும் உற்பத்தி சாதனங்கள் குவிவதைத் தடுத்தல் (உறுப்பு 31C பாதுகாப்பு).",
+                            "உறுப்பு 39(d): ஆண், பெண் இருபாலருக்கும் சம வேலைக்கு சம ஊதியம்.",
+                            "உறுப்பு 39(e): தொழிலாளர்கள் மற்றும் குழந்தைகளின் ஆரோக்கியம் மற்றும் வலிமை பாதுகாப்பு.",
+                            "உறுப்பு 39(f): குழந்தைகள் ஆரோக்கியமான முறையில் வளர்வதற்கான வாய்ப்புகள் (42வது திருத்தம் 1976 மூலம் மாற்றப்பட்டது).",
+                            "உறுப்பு 39A: ஏழைகளுக்குச் சம நீதியும் இலவச சட்ட உதவியும் (42வது திருத்தம் 1976 மூலம் சேர்க்கப்பட்டது; NALSA 1987 சட்டம்)."
+                        ]
+                    }
+                }
+            ],
+            "tables": [
+                {
+                    "title_en": "1. Fundamental Rights (Part III) vs Directive Principles (Part IV)",
+                    "title_ta": "1. அடிப்படை உரிமைகள் (பகுதி III) vs அரசு வழிகாட்டு நெறிமுறைகள் (பகுதி IV)",
+                    "headers_en": ["Feature / Dimension", "Fundamental Rights (Part III)", "Directive Principles (Part IV)"],
+                    "headers_ta": ["அம்சம் / பரிமாணம்", "அடிப்படை உரிமைகள் (பகுதி III)", "அரசு வழிகாட்டு நெறிமுறைகள் (பகுதி IV)"],
+                    "rows_en": [
+                        ["Nature & Character", "Negative obligations (prohibit State from taking arbitrary actions)", "Positive obligations (command State to perform specific welfare duties)"],
+                        ["Justiciability", "Justiciable (enforceable by Supreme Court Art 32 & High Court Art 226)", "Non-justiciable (cannot be enforced by courts; no writ can be issued)"],
+                        ["Primary Objective", "To establish Political Democracy in India", "To establish Social and Economic Democracy and a Welfare State"],
+                        ["Sanction Behind", "Legal Sanction (backed by judicial enforcement and constitutional remedies)", "Moral and Political Sanction (backed by public opinion and election ballot)"],
+                        ["Scope of Application", "Mainly individualistic (protects individual liberty against State)", "Collective & Societal (promotes welfare of the community as a whole)"],
+                        ["Emergency Suspension", "Can be suspended during National Emergency (except Articles 20 & 21)", "Cannot be suspended as they are non-enforceable policy guidelines"],
+                        ["Source of Inspiration", "US Constitution (Bill of Rights)", "Irish Constitution 1937 (Spanish origin) & GOI Act 1935"]
+                    ],
+                    "rows_ta": [
+                        ["இயல்பு & தன்மை", "எதிர்மறை கடமைகள் (தன்னிச்சையான அரசு நடவடிக்கைகளைத் தடாப்பவை)", "நேர்மறை கடமைகள் (குறிப்பிட்ட நலக் கடமைகளைச் செய்ய அரசுக்கு ஆணையிடுபவை)"],
+                        ["நீதிமன்ற அமலாக்கம்", "அமல்படுத்தக் கூடியவை (உச்ச நீதிமன்றம் உறுப்பு 32 & உயர் நீதிமன்றம் உறுப்பு 226 மூலம்)", "அமல்படுத்த முடியாதவை (நீதிமன்றங்களால் அமல்படுத்த முடியாது; பேராணை வராது)"],
+                        ["முதன்மை நோக்கம்", "இந்தியாவில் அரசியல் ஜனநாயகத்தை நிறுவுவது", "சமூக மற்றும் பொருளாதார ஜனநாயகம் மற்றும் நல அரசை நிறுவுவது"],
+                        ["பின்னால் உள்ள அதிகாரம்", "சட்டப்பூர்வ அதிகாரம் (நீதிமன்ற அமலாக்கம் மற்றும் பரிகாரங்களின் ஆதரவு)", "ஒழுக்க மற்றும் அரசியல் அதிகாரம் (பொதுமக்கள் கருத்து மற்றும் தேர்தல் வாக்கின் ஆதரவு)"],
+                        ["பயன்பாட்டு எல்லை", "முக்கியமாக தனிநபர் சார்ந்தது (அரசுக்கு எதிராக தனிநபர் சுதந்திரத்தைப் பாதுகாப்பது)", "கூட்டு & சமூக சார்ந்தது (ஒட்டுமொத்த சமூகத்தின் நலனை மேம்படுத்துவது)"],
+                        ["அவசரநிலை இடைநிறுத்தம்", "தேசிய அவசரநிலையின் போது இடைநிறுத்தப்படலாம் (உறுப்புகள் 20 & 21 தவிர)", "இடைநிறுத்தப்பட முடியாது ஏனெனில் இவை அமல்படுத்த முடியாத கொள்கை வழிகாட்டுதல்கள்"],
+                        ["ஈர்ப்பு மூலம்", "அமெரிக்க அரசியலமைப்பு (Bill of Rights)", "1937 அயர்லாந்து அரசியலமைப்பு & 1935 இந்திய அரசுச் சட்டம்"]
+                    ]
+                },
+                {
+                    "title_en": "2. Article 12 (Part III) vs Article 36 (Part IV)",
+                    "title_ta": "2. உறுப்பு 12 (பகுதி III) vs உறுப்பு 36 (பகுதி IV)",
+                    "headers_en": ["Aspect", "Article 12 (Part III)", "Article 36 (Part IV)"],
+                    "headers_ta": ["அம்சம்", "உறுப்பு 12 (பகுதி III)", "உறுப்பு 36 (பகுதி IV)"],
+                    "rows_en": [
+                        ["Constitutional Purpose", "Defines 'State' against whom Fundamental Rights are enforced and protected", "Defines 'State' responsible for implementing Directive Principles of State Policy"],
+                        ["Textual Definition", "Contains the explicit 4-part definition of State (Union, State, Local, Other)", "Does NOT re-define State; explicitly adopts the definition given under Article 12"],
+                        ["Applicability Scope", "Confined strictly to Part III of the Constitution", "Confined strictly to Part IV of the Constitution"],
+                        ["Substantive Meaning", "Identical substantive scope (includes Union, State, Local, & Other Statutory/PSU bodies)", "Identical substantive scope (same entities as Article 12)"]
+                    ],
+                    "rows_ta": [
+                        ["அரசியலமைப்பு நோக்கம்", "எந்த அரசுக்கு எதிராக அடிப்படை உரிமைகள் அமல்படுத்தப்படுகின்றனவோ அந்த 'அரசை' வரையறுக்கிறது", "வழிகாட்டு நெறிமுறைகளை அமல்படுத்துவதற்குப் பொறுப்பான 'அரசை' வரையறுக்கிறது"],
+                        ["உரை வரையறை", "அரசின் வெளிப்படையான 4-பகுதி வரையறையைக் கொண்டுள்ளது (மத்திய, மாநில, உள்ளாட்சி, இதர)", "மீண்டும் வரையறுக்கவில்லை; உறுப்பு 12-ல் கொடுக்கப்பட்ட வரையறையை வெளிப்படையாக ஏற்கிறது"],
+                        ["பொருந்தும் எல்லை", "அரசியலமைப்பின் பகுதி III-க்கு மட்டுமே கட்டுப்பட்டது", "அரசியலமைப்பின் பகுதி IV-க்கு மட்டுமே கட்டுப்பட்டது"],
+                        ["பொருள் எல்லை", "அதே பொருள் எல்லை (மத்திய, மாநில, உள்ளாட்சி மற்றும் இதர சட்டப்பூர்வ/பொதுத்துறை அமைப்புகள்)", "அதே பொருள் எல்லை (உறுப்பு 12 போன்ற அதே அமைப்புகள்)"]
+                    ]
+                },
+                {
+                    "title_en": "3. Article 37 (DPSP Application) vs Article 32 (Constitutional Remedies)",
+                    "title_ta": "3. உறுப்பு 37 (DPSP பயன்பாடு) vs உறுப்பு 32 (அரசியலமைப்பு பரிகாரங்கள்)",
+                    "headers_en": ["Feature", "Article 37 (Part IV)", "Article 32 (Part III)"],
+                    "headers_ta": ["அம்சம்", "உறுப்பு 37 (பகுதி IV)", "உறுப்பு 32 (பகுதி III)"],
+                    "rows_en": [
+                        ["Core Status", "Declares DPSP non-justiciable but fundamental in governance", "Guarantees a fundamental right to move Supreme Court for enforcement of Part III"],
+                        ["Judicial Enforcement", "Expressly bars courts from enforcing DPSP (No writ can be issued)", "Empowers Supreme Court to issue Habeas Corpus, Mandamus, Certiorari, etc."],
+                        ["Nature of Duty", "Imposes a moral & political duty on State to apply principles in law-making", "Imposes a legally binding obligation on courts to grant constitutional remedies"],
+                        ["Basic Structure Status", "Principles inform governance; court interpretation tool", "Article 32 is itself an integral part of the Basic Structure of the Constitution"]
+                    ],
+                    "rows_ta": [
+                        ["முதன்மை அந்தஸ்து", "DPSP நீதிமன்றங்களால் அமல்படுத்த முடியாதது ஆனால் ஆட்சியில் அடிப்படையானது என அறிவிக்கிறது", "பகுதி III உரிமைகளை அமல்படுத்த உச்ச நீதிமன்றத்தை அணுகும் அடிப்படை உரிமையை உத்தரவாதம் செய்கிறது"],
+                        ["நீதிமன்ற அமலாக்கம்", "DPSP-ஐ அமல்படுத்துவதிலிருந்து நீதிமன்றங்களை வெளிப்படையாகத் தடுக்கிறது (பேராணை வராது)", "ஆட்கொணர், கட்டளையிடும், சான்றளிப்பு போன்ற பேராணைகளை வெளியிட உச்ச நீதிமன்றத்திற்கு அதிகாரம் அளிக்கிறது"],
+                        ["கடமையின் இயல்பு", "சட்டம் உருவாக்குவதில் கோட்பாடுகளைப் பயன்படுத்த அரசுக்கு ஒழுக்க & அரசியல் கடமையை விதிக்கிறது", "அரசியலமைப்புப் பரிகாரங்களை வழங்க நீதிமன்றங்களுக்குச் சட்டப்பூர்வக் கட்டாயக் கடமையை விதிக்கிறது"],
+                        ["அடிப்படை அமைப்பு அந்தஸ்து", "கோட்பாடுகள் ஆட்சியை நல்வழிப்படுத்துகின்றன; நீதிமன்ற விளக்கக் கருவி", "உறுப்பு 32 தானே அரசியலமைப்பின் அடிப்படை அமைப்பின் ஒருங்கிணைந்த பகுதியாகும்"]
+                    ]
+                },
+                {
+                    "title_en": "4. Article 38 (Social Order) vs Article 39 (Policy Principles)",
+                    "title_ta": "4. உறுப்பு 38 (சமூக ஒழுங்கு) vs உறுப்பு 39 (கொள்கைக் கோட்பாடுகள்)",
+                    "headers_en": ["Dimension", "Article 38", "Article 39"],
+                    "headers_ta": ["பரிமாணம்", "உறுப்பு 38", "உறுப்பு 39"],
+                    "rows_en": [
+                        ["Scope & Character", "Broad umbrella provision directing State to secure a Social Order for overall welfare", "Specific directive containing 6 concrete policy principles (clauses a to f)"],
+                        ["Key Focus Areas", "Justice (Social, Economic, Political) and Minimising Inequalities in income/status", "Livelihood, Material Resources, Wealth Concentration, Equal Pay, Worker Health, Child Welfare"],
+                        ["Amendments", "Article 38(2) added by 44th Amendment Act 1978 (Minimising inequalities)", "Article 39(f) modified by 42nd Amendment Act 1976 (Childhood protection)"],
+                        ["Constitutional Protection", "General DPSP directive", "Articles 39(b) and 39(c) enjoy special immunity under Article 31C over Arts 14 & 19"]
+                    ],
+                    "rows_ta": [
+                        ["எல்லை & தன்மை", "ஒட்டுமொத்த நலனுக்காகச் சமூக ஒழுங்கை உருவாக்க அரசுக்கு ஆணையிடும் பரந்த பொது விதி", "6 குறிப்பிட்ட கொள்கைக் கோட்பாடுகளைக் கொண்ட குறிப்பிட்ட வழிகாட்டுதல் (உட்பிரிவுகள் a முதல் f)"],
+                        ["முக்கிய கவனப் பகுதிகள்", "நீதி (சமூக, பொருளாதார, அரசியல்) மற்றும் வருமானம்/அந்தஸ்தில் உள்ள சமத்துவமின்மையைக் குறைத்தல்", "வாழ்வாதாரம், பொருள் வளங்கள், செல்வக் குவிப்பு, சம ஊதியம், தொழிலாளர் சுகாதாரம், குழந்தை நலன்"],
+                        ["திருத்தங்கள்", "உறுப்பு 38(2) 1978-ன் 44வது திருத்தத்தால் சேர்க்கப்பட்டது (சமத்துவமின்மையைக் குறைத்தல்)", "உறுப்பு 39(f) 1976-ன் 42வது திருத்தத்தால் மாற்றப்பட்டது (குழந்தைப் பருவப் பாதுகாப்பு)"],
+                        ["அரசியலமைப்புப் பாதுகாப்பு", "பொதுவான DPSP வழிகாட்டுதல்", "உறுப்புகள் 39(b) மற்றும் 39(c) உறுப்பு 31C-ன் கீழ் உறுப்புகள் 14 & 19-ஐ விட சிறப்புப் பாதுகாப்பு பெறுகின்றன"]
+                    ]
+                },
+                {
+                    "title_en": "5. Article 39(b) [Material Resources] vs Article 39(c) [Wealth Concentration]",
+                    "title_ta": "5. உறுப்பு 39(b) [பொருள் வளங்கள்] vs உறுப்பு 39(c) [செல்வக் குவிப்பு]",
+                    "headers_en": ["Feature", "Article 39(b)", "Article 39(c)"],
+                    "headers_ta": ["அம்சம்", "உறுப்பு 39(b)", "உறுப்பு 39(c)"],
+                    "rows_en": [
+                        ["Objective", "Positive distribution of community's material resources to subserve common good", "Negative prevention of economic system resulting in concentration of wealth & production means"],
+                        ["Action Required", "Affirmative State action (land reforms, bus/bank nationalization, public ownership)", "Regulatory State control (anti-monopoly laws, progressive income tax, Competition Act)"],
+                        ["Examples", "Tamil Nadu Stage Carriages Act (State of TN v. Abu Kavur Bai 1984), Coal Mines Nationalization", "MRTP Act 1969, Competition Act 2002, Wealth Tax Act, Wealth Ceiling laws"],
+                        ["Article 31C Protection", "Protected under Art 31C (laws implementing 39(b) prevail over Arts 14 and 19)", "Protected under Art 31C (laws implementing 39(c) prevail over Arts 14 and 19)"]
+                    ],
+                    "rows_ta": [
+                        ["நோக்கம்", "பொது நலனுக்குச் சேவை செய்ய சமூகத்தின் பொருள் வளங்களை நேர்மறையாகப் பகிர்ந்தளித்தல்", "பொருளாதார அமைப்பு செல்வக் குவிப்பிற்கு வழிவகுப்பதை எதிர்மறையாகத் தடுத்தல்"],
+                        ["தேவையான நடவடிக்கை", "நேர்மறை அரசு நடவடிக்கை (நில சீர்திருத்தங்கள், பேருந்து/வங்கி தேசியமயமாக்கல், பொது உடமை)", "கட்டுப்பாட்டு அரசு நடவடிக்கை (முற்றுரிமை எதிர்ப்புச் சட்டங்கள், படிப் படியான வருமான வரி, போட்டிச் சட்டம்)"],
+                        ["உதாரணங்கள்", "தமிழ்நாடு மேடைப் பேருந்துகள் சட்டம் (அபு கவூர் பாய் வழக்கு 1984), நிலக்கரி சுரங்கங்கள் தேசியமயமாக்கல்", "MRTP சட்டம் 1969, போட்டிச் சட்டம் 2002, செல்வ வரி சட்டம், சொத்து உச்சவரம்புச் சட்டங்கள்"],
+                        ["உறுப்பு 31C பாதுகாப்பு", "உறுப்பு 31C-ன் கீழ் பாதுகாப்பு (39(b)-ஐ செயல்படுத்தும் சட்டங்கள் 14, 19-ஐ விட மேலோங்கும்)", "உறுப்பு 31C-ன் கீழ் பாதுகாப்பு (39(c)-ஐ செயல்படுத்தும் சட்டங்கள் 14, 19-ஐ விட மேலோங்கும்)"]
+                    ]
+                },
+                {
+                    "title_en": "6. Article 39(d) [Equal Pay DPSP] vs Article 16 [Equality in Employment FR]",
+                    "title_ta": "6. உறுப்பு 39(d) [சம ஊதிய DPSP] vs உறுப்பு 16 [வேலைவாய்ப்பு சமத்துவ FR]",
+                    "headers_en": ["Aspect", "Article 39(d) (DPSP)", "Article 16 (Part III FR)"],
+                    "headers_ta": ["அம்சம்", "உறுப்பு 39(d) (DPSP)", "உறுப்பு 16 (பகுதி III FR)"],
+                    "rows_en": [
+                        ["Legal Nature", "Policy directive demanding Equal Pay for Equal Work for both men and women", "Justiciable Fundamental Right guaranteeing Equality of Opportunity in Public Employment"],
+                        ["Direct Writs", "Cannot be enforced directly as an independent writ petition under Art 32", "Enforceable directly via Article 32 writ petition for public employment discrimination"],
+                        ["Judicial Integration", "SC held 39(d) is enforceable when read TOGETHER with Articles 14 & 16 (Randhir Singh 1982)", "Article 16 provides the constitutional anchor for non-discrimination in employment"],
+                        ["Enacting Statute", "Equal Remuneration Act, 1976 passed to give statutory effect to Article 39(d)", "Public Employment (Requirement as to Residence) Act & Reservation policies under 16(4)"]
+                    ],
+                    "rows_ta": [
+                        ["சட்டப்பூர்வ இயல்பு", "ஆண், பெண் இருபாலருக்கும் சம வேலைக்கு சம ஊதியம் கோரும் கொள்கை வழிகாட்டுதல்", "பொது வேலைவாய்ப்பில் சமவாய்ப்பை உத்தரவாதம் செய்யும் நீதிமன்றத்தால் அமல்படுத்தக்கூடிய அடிப்படை உரிமை"],
+                        ["நேரடி பேராணைகள்", "உறுப்பு 32-ன் கீழ் ஒரு சுயாதீன பேராணை மனுவாக நேரடியாக அமல்படுத்த முடியாது", "பொது வேலைவாய்ப்பு பாகுபாட்டிற்கு உறுப்பு 32 பேராணை மனு மூலம் நேரடியாக அமல்படுத்தலாம்"],
+                        ["நீதித்துறை ஒருங்கிணைப்பு", "உறுப்புகள் 14 & 16-உடன் இணைந்து வாசிக்கப்படும் போது 39(d) அமல்படுத்தத்தக்கது (ரந்தீர் சிங் 1982)", "உறுப்பு 16 வேலைவாய்ப்பில் பாகுபாடற்ற தன்மையின் அரசியலமைப்பு நங்கூரத்தை வழங்குகிறது"],
+                        ["இயற்றப்பட்ட சட்டம்", "உறுப்பு 39(d)-க்கு சட்டப்பூர்வ செயலாக்கம் அளிக்க சம ஊதியச் சட்டம், 1976 இயற்றப்பட்டது", "பொது வேலைவாய்ப்பு (வசிப்பிடத் தேவை) சட்டம் & உறுப்பு 16(4)-ன் கீழ் இடஒதுக்கீட்டுக் கொள்கைகள்"]
+                    ]
+                },
+                {
+                    "title_en": "7. Article 39A vs Article 32 vs Article 226",
+                    "title_ta": "7. உறுப்பு 39A vs உறுப்பு 32 vs உறுப்பு 226",
+                    "headers_en": ["Dimension", "Article 39A (DPSP)", "Article 32 (Supreme Court)", "Article 226 (High Court)"],
+                    "headers_ta": ["பரிமாணம்", "உறுப்பு 39A (DPSP)", "உறுப்பு 32 (உச்ச நீதிமன்றம்)", "உறுப்பு 226 (உயர் நீதிமன்றம்)"],
+                    "rows_en": [
+                        ["Part & Status", "Part IV DPSP Policy Directive (added by 42nd CAA 1976)", "Part III Fundamental Right (Guaranteed Constitutional Remedy)", "Part VI Constitutional Right (Discretionary Writ Jurisdiction)"],
+                        ["Primary Mandate", "State policy to provide Equal Justice & Free Legal Aid to poor", "Guarantees right to move Supreme Court for enforcement of Part III FRs", "Empowers High Courts to issue writs for FRs and ordinary legal rights"],
+                        ["Enforcement Tool", "Implemented via Parliamentary statutes like Legal Services Authorities Act 1987 (NALSA)", "Executed directly by SC issuing 5 Writs (Habeas Corpus, Mandamus, etc.)", "Executed directly by HC issuing 5 Writs for FRs or legal rights"],
+                        ["Territorial Reach", "Nationwide directive for State legislation", "Entire territory of India", "Territorial limits of the concerned State"]
+                    ],
+                    "rows_ta": [
+                        ["பகுதி & அந்தஸ்து", "பகுதி IV DPSP கொள்கை வழிகாட்டுதல் (42வது திருத்தம் 1976 மூலம் சேர்க்கப்பட்டது)", "பகுதி III அடிப்படை உரிமை (உத்தரவாதமளிக்கப்பட்ட அரசியலமைப்பு பரிகாரம்)", "பகுதி VI அரசியலமைப்பு உரிமை (விருப்பப் பேராணை அதிகாரம்)"],
+                        ["முதன்மை கட்டளை", "ஏழைகளுக்குச் சம நீதியும் இலவச சட்ட உதவியும் வழங்குவதற்கான அரசு கொள்கை", "பகுதி III அடிப்படை உரிமைகளை அமல்படுத்த உச்ச நீதிமன்றத்தை அணுகும் உரிமையை உத்தரவாதம் செய்கிறது", "அடிப்படை உரிமைகள் மற்றும் சாதாரண சட்ட உரிமைகளுக்காக பேராணைகளை வெளியிட உயர் நீதிமன்றங்களுக்கு அதிகாரம் அளிக்கிறது"],
+                        ["அமலாக்கக் கருவி", "சட்டப்பணிகள் ஆணைக்குழு சட்டம் 1987 (NALSA) போன்ற நாடாளுமன்றச் சட்டங்கள் மூலம் செயல்படுத்தப்படுகிறது", "5 பேராணைகளை (ஆட்கொணர், கட்டளையிடும் போன்றவை) பிறப்பித்து உச்ச நீதிமன்றத்தால் நேரடியாக நிறைவேற்றப்படுகிறது", "அடிப்படை உரிமைகள் அல்லது சட்ட உரிமைகளுக்காக 5 பேராணைகளைப் பிறப்பித்து உயர் நீதிமன்றத்தால் நேரடியாக நிறைவேற்றப்படுகிறது"],
+                        ["புவியியல் எல்லை", "அரசுச் சட்டங்களுக்கான நாடு தழுவிய வழிகாட்டுதல்", "இந்தியாவின் முழு நிலப்பரப்பு", "தொடர்புடைய மாநிலத்தின் புவியியல் எல்லை"]
+                    ]
+                },
+                {
+                    "title_en": "8. Conventional Classification: Socialist vs Gandhian vs Liberal-Intellectual",
+                    "title_ta": "8. மரபுவழி வகைப்பாடு: சமதர்ம vs காந்திய vs தாராளமய-அறிவுசார்",
+                    "headers_en": ["Category", "Core Objective & Ideology", "Key Articles Covered", "Representative Schemes / Laws"],
+                    "headers_ta": ["பிரிவு", "முதன்மை நோக்கம் & தத்துவம்", "உள்ளடக்கப்பட்ட முக்கிய உறுப்புகள்", "பிரதிநிதித்துவ திட்டங்கள் / சட்டங்கள்"],
+                    "rows_en": [
+                        ["Socialist Principles (சமதர்மக் கோட்பாடுகள்)", "Democratic socialism, welfare state, socio-economic equality, worker protection", "Articles 38, 39(a)-(f), 39A, 41, 42, 43, 43A, 47", "MGNREGA, Equal Remuneration Act 1976, NALSA 1987, Maternity Benefit Act"],
+                        ["Gandhian Principles (காந்தியக் கோட்பாடுகள்)", "Gram Swaraj, self-governance, rural cottage industry, cow protection, prohibition", "Articles 40, 43, 43B, 46, 47, 48", "73rd CAA 1992 (Panchayati Raj), KVIC, State Prohibition Laws, 97th CAA (Cooperatives)"],
+                        ["Liberal-Intellectual Principles (தாராளமய-அறிவுசார்க் கோட்பாடுகள்)", "Uniform civil code, early education, environment, heritage protection, world peace", "Articles 44, 45, 48, 48A, 49, 50, 51", "Goa Civil Code, 86th CAA 2002, Environment Protection Act 1986, ASI Act"]
+                    ],
+                    "rows_ta": [
+                        ["சமதர்மக் கோட்பாடுகள்", "ஜனநாயக சமதர்மம், நல அரசு, சமூக-பொருளாதார சமத்துவம், தொழிலாளர் பாதுகாப்பு", "உறுப்புகள் 38, 39(a)-(f), 39A, 41, 42, 43, 43A, 47", "மகாத்மா காந்தி வேலை உறுதித் திட்டம், சம ஊதியச் சட்டம் 1976, NALSA 1987, பேறுகால நலச் சட்டம்"],
+                        ["காந்தியக் கோட்பாடுகள்", "கிராம சுயராஜ்யம், சுய ஆட்சி, கிராமக் குடில்தொழில், பசு பாதுகாப்பு, மதுவிலக்கு", "உறுப்புகள் 40, 43, 43B, 46, 47, 48", "73வது திருத்தம் 1992 (பஞ்சாயத்து ராஜ்), காதி வாரியம், மாநில மதுவிலக்குச் சட்டங்கள், 97வது திருத்தம் (கூட்டுறவு)"],
+                        ["தாராளமய-அறிவுசார்க் கோட்பாடுகள்", "பொது சிவில் சட்டம், முன்பருவக் கல்வி, சுற்றுச்சூழல், பாரம்பரியப் பாதுகாப்பு, உலக அமைதி", "உறுப்புகள் 44, 45, 48, 48A, 49, 50, 51", "கோவா சிவில் சட்டம், 86வது திருத்தம் 2002, சுற்றுச்சூழல் பாதுகாப்புச் சட்டம் 1986, தொல்லியல் துறை சட்டம்"]
+                    ]
+                }
+            ],
+            "important_facts": {
+                "en": [
+                    "Part IV of the Constitution contains Articles 36 to 51 detailing the Directive Principles of State Policy.",
+                    "DPSP were borrowed from the Irish Constitution of 1937, which had derived them from the Spanish Constitution.",
+                    "Sir B.N. Rau (Constitutional Advisor) recommended dividing individual rights into Justiciable (Part III) and Non-Justiciable (Part IV).",
+                    "Article 36 adopts the exact definition of 'State' from Article 12 in Part III.",
+                    "Article 37 explicitly declares DPSP non-enforceable by courts, but FUNDAMENTAL in the governance of the country.",
+                    "Article 38(2) was inserted by the 44th Constitutional Amendment Act, 1978 to minimise inequalities in income, status, facilities, and opportunities.",
+                    "Articles 39(b) and 39(c) enjoy special constitutional immunity under Article 31C against Articles 14 and 19.",
+                    "Article 39(d) mandates Equal Pay for Equal Work for both men and women (Equal Remuneration Act 1976).",
+                    "Article 39A (Equal Justice & Free Legal Aid) was added by 42nd Amendment 1976 and implemented via Legal Services Authorities Act 1987 (NALSA).",
+                    "Minerva Mills v. Union of India (1980) established that the BALANCE between Fundamental Rights (Part III) and DPSP (Part IV) is part of the Basic Structure of the Constitution."
+                ],
+                "ta": [
+                    "அரசியலமைப்பின் பகுதி IV-ல் அரசு வழிகாட்டு நெறிமுறைகளை விரிவாகக் கூறும் உறுப்புகள் 36 முதல் 51 வரை உள்ளன.",
+                    "DPSP 1937 அயர்லாந்து அரசியலமைப்பிலிருந்து பெறப்பட்டது (அயர்லாந்து ஸ்பானிஷ் அரசியலமைப்பிலிருந்து பெற்றது).",
+                    "அரசியலமைப்பு ஆலோசகர் சர் பி.என். ராவ் தனிநபர் உரிமைகளை நீதிமன்றத்தால் அமல்படுத்தக்கூடியவை (பகுதி III) மற்றும் அமல்படுத்த முடியாதவை (பகுதி IV) எனப் பிரிக்கப் பரிந்துரைத்தார்.",
+                    "உறுப்பு 36 பகுதி III உறுப்பு 12-லிருந்து 'அரசு' வரையறையை அப்படியே ஏற்கிறது.",
+                    "உறுப்பு 37 DPSP-ஐ நீதிமன்றங்களால் அமல்படுத்த முடியாதது ஆனால் நாட்டின் ஆட்சியில் அடிப்படையானது என வெளிப்படையாக அறிவிக்கிறது.",
+                    "வருமானம், அந்தஸ்து, வசதி, வாய்ப்புகளில் சமத்துவமின்மையைக் குறைக்க 1978-ன் 44வது அரசியலமைப்பு திருத்தச் சட்டத்தால் உறுப்பு 38(2) இணைக்கப்பட்டது.",
+                    "உறுப்புகள் 39(b) மற்றும் 39(c) உறுப்பு 31C-ன் கீழ் உறுப்புகள் 14 மற்றும் 19-க்கு எதிராகச் சிறப்பு அரசியலமைப்பு விலக்குப் பாதுகாப்பு பெறுகின்றன.",
+                    "உறுப்பு 39(d) ஆண், பெண் இருபாலருக்கும் சம வேலைக்கு சம ஊதியம் வழங்குவதை கட்டாயமாக்குகிறது (சம ஊதியச் சட்டம் 1976).",
+                    "உறுப்பு 39A (சம நீதியும் இலவச சட்ட உதவியும்) 1976-ன் 42வது திருத்தத்தால் சேர்க்கப்பட்டு 1987 சட்டப்பணிகள் ஆணைக்குழு சட்டம் (NALSA) மூலம் செயல்படுத்தப்பட்டது.",
+                    "மினர்வா மில்ஸ் வழக்கில் (1980) அடிப்படை உரிமைகளுக்கும் (பகுதி III) DPSP-க்கும் (பகுதி IV) இடையிலான சமநிலையே அரசியலமைப்பின் 'அடிப்படை அமைப்பு' என நிறுவப்பட்டது."
+                ]
+            },
+            "tnpsc_traps": [
+                {
+                    "title": "1. Part IV vs Part III Justiciability Trap (பகுதி IV vs பகுதி III நீதிமன்ற அமலாக்கப் பொறி)",
+                    "points": {
+                        "en": [
+                            "DPSP are NOT enforceable by courts. If a State fails to implement Article 39(a) (livelihood) or Article 39A (legal aid), a citizen CANNOT file a writ petition under Article 32 or 226 directly for DPSP enforcement.",
+                            "Do NOT confuse non-justiciability with lack of constitutional status! DPSP are constitutionally declared 'FUNDAMENTAL in governance' under Article 37."
+                        ],
+                        "ta": [
+                            "DPSP-ஐ நீதிமன்றங்கள் மூலம் அமல்படுத்த முடியாது. ஒரு மாநில அரசு உறுப்பு 39(a) (வாழ்வாதாரம்) அல்லது 39A (சட்ட உதவி) ஆகியவற்றைச் செயல்படுத்த தவறினால், ஒரு குடிமகன் DPSP அமலாக்கத்திற்காக நேரடியாக உறுப்பு 32 அல்லது 226-ன் கீழ் பேராணை மனு தாக்கல் செய்ய முடியாது.",
+                            "அமல்படுத்த முடியாத இயல்பை அரசியலமைப்பு அந்தஸ்து இன்மையோடு குழப்பிக் கொள்ள வேண்டாம்! உறுப்பு 37-ன் கீழ் DPSP அரசியலமைப்பு ரீதியாக 'ஆட்சியில் அடிப்படையானது' என அறிவிக்கப்பட்டுள்ளது."
+                        ]
+                    }
+                },
+                {
+                    "title": "2. Article 36 vs Article 12 Trap (உறுப்பு 36 vs உறுப்பு 12 பொறி)",
+                    "points": {
+                        "en": [
+                            "Article 36 does NOT create a new definition of State. It explicitly cross-references Article 12 in Part III.",
+                            "The 4 categories of State (Union, State, Local, Other Authorities) apply equally to DPSP implementation under Article 36."
+                        ],
+                        "ta": [
+                            "உறுப்பு 36 ஒரு புதிய அரசு வரையறையை உருவாக்கவில்லை. இது பகுதி III உறுப்பு 12-ஐ வெளிப்படையாகக் குறுக்குக் குறிப்பு செய்கிறது.",
+                            "அரசின் 4 பிரிவுகள் (மத்திய, மாநில, உள்ளாட்சி, இதர அமைப்புகள்) உறுப்பு 36-ன் கீழ் DPSP அமலாக்கத்திற்கும் சீராகப் பொருந்தும்."
+                        ]
+                    }
+                },
+                {
+                    "title": "3. Article 38(1) vs Article 38(2) Amendment Trap (உறுப்பு 38(1) vs 38(2) திருத்தப் பொறி)",
+                    "points": {
+                        "en": [
+                            "Article 38(1) (Social Order for Welfare & Justice) was part of the ORIGINAL 1950 Constitution.",
+                            "Article 38(2) (Minimising inequalities in income, status, facilities, opportunities) was added by the 44th Constitutional Amendment Act, 1978 (NOT 42nd Amendment!)."
+                        ],
+                        "ta": [
+                            "உறுப்பு 38(1) (நலன் & நீதிக்கான சமூக ஒழுங்கு) அசல் 1950 அரசியலமைப்பின் பகுதியாகும்.",
+                            "உறுப்பு 38(2) (வருமானம், அந்தஸ்து, வசதி, வாய்ப்புகளில் சமத்துவமின்மையைக் குறைத்தல்) 1978-ன் 44வது அரசியலமைப்பு திருத்தச் சட்டத்தால் சேர்க்கப்பட்டது (42வது திருத்தம் அல்ல!)."
+                        ]
+                    }
+                },
+                {
+                    "title": "4. Article 39(b) vs Article 39(c) Article 31C Immunity Trap (உறுப்பு 39(b) vs 39(c) உறுப்பு 31C பாதுகாப்புப் பொறி)",
+                    "points": {
+                        "en": [
+                            "ONLY Articles 39(b) (material resources) and 39(c) (prevention of wealth concentration) enjoy constitutional immunity under Article 31C.",
+                            "If a law is enacted to give effect to Art 39(b) or 39(c), it cannot be declared void on the ground that it violates Article 14 (Equality) or Article 19 (Freedoms)."
+                        ],
+                        "ta": [
+                            "உறுப்புகள் 39(b) (பொருள் வளங்கள்) மற்றும் 39(c) (செல்வக் குவிப்புத் தடை) மட்டுமே உறுப்பு 31C-ன் கீழ் அரசியலமைப்பு விலக்குப் பாதுகாப்பு பெறுகின்றன.",
+                            "உறுப்பு 39(b) அல்லது 39(c)-ஐ செயல்படுத்த ஒரு சட்டம் இயற்றப்பட்டால், அது உறுப்பு 14 (சமத்துவம்) அல்லது உறுப்பு 19 (சுதந்திரங்கள்) ஆகியவற்றை மீறுகிறது என்ற அடிப்படையில் செல்லாததாக்கப்பட முடியாது."
+                        ]
+                    }
+                },
+                {
+                    "title": "5. Article 39(d) vs Article 16 Trap (உறுப்பு 39(d) vs உறுப்பு 16 பொறி)",
+                    "points": {
+                        "en": [
+                            "Article 39(d) ('Equal pay for equal work') is a DPSP directive. It is NOT enumerated as a standalone Fundamental Right in Part III.",
+                            "However, Supreme Court (Randhir Singh case 1982) ruled that Equal Pay for Equal Work is enforceable when read TOGETHER with Articles 14 and 16."
+                        ],
+                        "ta": [
+                            "உறுப்பு 39(d) ('சம வேலைக்கு சம ஊதியம்') என்பது ஒரு DPSP வழிகாட்டுதலாகும். இது பகுதி III-ல் ஒரு சுயாதீனமான அடிப்படை உரிமையாகப் பட்டியலிடப்படவில்லை.",
+                            "இருப்பினும், உறுப்புகள் 14 மற்றும் 16-உடன் இணைந்து வாசிக்கப்படும் போது சம வேலைக்கு சம ஊதியம் என்பது அமல்படுத்தத்தக்கது என்று உச்ச நீதிமன்றம் (ரந்தீர் சிங் வழக்கு 1982) தீர்ப்பளித்தது."
+                        ]
+                    }
+                },
+                {
+                    "title": "6. Article 39A vs Article 32 / 226 Trap (உறுப்பு 39A vs 32 / 226 பொறி)",
+                    "points": {
+                        "en": [
+                            "Article 39A provides for FREE LEGAL AID (added by 42nd Amendment 1976). It is a DPSP directive implemented statutorily via NALSA 1987.",
+                            "Do NOT confuse Article 39A with Article 32 or Article 226, which are Constitutional WRIT REMEDIES!"
+                        ],
+                        "ta": [
+                            "உறுப்பு 39A இலவச சட்ட உதவிக்கு வழிவகுக்கிறது (42வது திருத்தம் 1976 மூலம் சேர்க்கப்பட்டது). இது NALSA 1987 மூலம் சட்டப்பூர்வமாக செயல்படுத்தப்படும் ஒரு DPSP வழிகாட்டுதலாகும்.",
+                            "உறுப்பு 39A-ஐ அரசியலமைப்பு பேராணை பரிகாரங்களான உறுப்பு 32 அல்லது உறுப்பு 226-உடன் குழப்பிக் கொள்ள வேண்டாம்!"
+                        ]
+                    }
+                },
+                {
+                    "title": "7. DPSP Conventional Classification Trap (DPSP மரபுவழி வகைப்பாட்டுப் பொறி)",
+                    "points": {
+                        "en": [
+                            "The division of DPSP into Socialist, Gandhian, and Liberal-Intellectual categories is NOT explicitly written in the Constitution of India.",
+                            "It is a conventional academic classification used by constitutional experts and commentators for study convenience."
+                        ],
+                        "ta": [
+                            "DPSP-ஐ சமதர்ம, காந்திய மற்றும் தாராளமய-அறிவுசார் பிரிவுகளாகப் பிரிப்பது இந்திய அரசியலமைப்பில் வெளிப்படையாக எழுதப்படவில்லை.",
+                            "இது படிப்பு வசதிக்காக அரசியலமைப்பு வல்லுநர்கள் மற்றும் விமர்சகர்களால் பயன்படுத்தப்படும் ஒரு மரபுவழி கல்வி வகைபாடாகும்."
+                        ]
+                    }
+                }
+            ],
+            "mind_map": [
+                {
+                    "title": "Directive Principles of State Policy (Part IV)",
+                    "short_label": "DPSP Overview",
+                    "children": [
+                        {
+                            "title": "Constitutional Foundation (Articles 36–51)",
+                            "short_label": "Part IV Core",
+                            "children": [
+                                {
+                                    "title": "Source: Irish Constitution 1937 (Spanish origin) & GOI Act 1935",
+                                    "short_label": "Source"
+                                },
+                                {
+                                    "title": "Goal: Welfare State & Socio-Economic Democracy",
+                                    "short_label": "Goal"
+                                },
+                                {
+                                    "title": "Nature: Non-Justiciable (Art 37) but Fundamental in Governance",
+                                    "short_label": "Nature"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Articles 36 to 39A Breakdown",
+                            "short_label": "Part 1 Articles",
+                            "children": [
+                                {
+                                    "title": "Article 36: Definition of State (Cross-reference to Article 12)",
+                                    "short_label": "Art 36 State"
+                                },
+                                {
+                                    "title": "Article 37: Non-enforceable in courts; Fundamental in governance duty",
+                                    "short_label": "Art 37 Application"
+                                },
+                                {
+                                    "title": "Article 38: Social Order (38(1)) + Minimising Inequalities (38(2) 44th CAA)",
+                                    "short_label": "Art 38 Welfare"
+                                },
+                                {
+                                    "title": "Article 39: Policy Directives (39(a) to 39(f))",
+                                    "short_label": "Art 39 Directives",
+                                    "children": [
+                                        {"title": "39(a): Adequate Livelihood", "short_label": "39(a)"},
+                                        {"title": "39(b): Material Resources Distribution (Art 31C protection)", "short_label": "39(b)"},
+                                        {"title": "39(c): Prevention of Wealth Concentration (Art 31C protection)", "short_label": "39(c)"},
+                                        {"title": "39(d): Equal Pay for Equal Work (Equal Remuneration Act 1976)", "short_label": "39(d)"},
+                                        {"title": "39(e): Worker & Child Health Protection", "short_label": "39(e)"},
+                                        {"title": "39(f): Healthy Child Development (42nd CAA 1976)", "short_label": "39(f)"}
+                                    ]
+                                },
+                                {
+                                    "title": "Article 39A: Equal Justice & Free Legal Aid (42nd CAA 1976 / NALSA 1987)",
+                                    "short_label": "Art 39A Free Aid"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Conventional 3-Fold Classification",
+                            "short_label": "Categories",
+                            "children": [
+                                {
+                                    "title": "Socialist Principles: Arts 38, 39, 39A, 41, 42, 43, 43A, 47",
+                                    "short_label": "Socialist"
+                                },
+                                {
+                                    "title": "Gandhian Principles: Arts 40, 43, 43B, 46, 47, 48",
+                                    "short_label": "Gandhian"
+                                },
+                                {
+                                    "title": "Liberal-Intellectual: Arts 44, 45, 48, 48A, 49, 50, 51",
+                                    "short_label": "Liberal"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "quick_revision": {
+                "en": [
+                    "DPSP are contained in Part IV (Articles 36 to 51) of the Constitution, borrowed from the Irish Constitution of 1937.",
+                    "Objective: To establish a Welfare State and secure Social and Economic Democracy.",
+                    "Article 36 adopts the definition of 'State' given in Article 12 (Part III).",
+                    "Article 37 explicitly declares DPSP non-justiciable by courts, but FUNDAMENTAL in governance of the country.",
+                    "Article 38 mandates a Social Order for welfare; Article 38(2) added by 44th CAA 1978 directs minimising inequalities.",
+                    "Article 39(a) guarantees adequate means of livelihood for all citizens.",
+                    "Articles 39(b) & 39(c) direct material resources distribution and wealth concentration prevention (protected by Art 31C).",
+                    "Article 39(d) commands Equal Pay for Equal Work for men and women (Equal Remuneration Act 1976).",
+                    "Article 39(e) protects health of workers/children; Article 39(f) protects healthy development of children (modified by 42nd CAA 1976).",
+                    "Article 39A (Free Legal Aid) was added by 42nd CAA 1976 and statutorily executed via NALSA Act 1987.",
+                    "DPSP classification (Socialist, Gandhian, Liberal) is a conventional academic division, NOT written in the Constitution.",
+                    "Minerva Mills (1980) established that the harmony and balance between Part III (FRs) and Part IV (DPSP) is a Basic Structure feature."
+                ],
+                "ta": [
+                    "DPSP அரசியலமைப்பின் பகுதி IV-ல் (உறுப்புகள் 36 முதல் 51 வரை) 1937 அயர்லாந்து அரசியலமைப்பிலிருந்து பெறப்பட்டு பொறிக்கப்பட்டுள்ளன.",
+                    "நோக்கம்: ஒரு நல அரசை நிறுவுவது மற்றும் சமூக மற்றும் பொருளாதார ஜனநாயகத்தைப் பாதுகாப்பது.",
+                    "உறுப்பு 36 பகுதி III உறுப்பு 12-ல் கொடுக்கப்பட்ட 'அரசு' வரையறையை ஏற்கிறது.",
+                    "உறுப்பு 37 DPSP நீதிமன்றங்களால் அமல்படுத்த முடியாதது, ஆனால் நாட்டின் ஆட்சியில் அடிப்படையானது என வெளிப்படையாக அறிவிக்கிறது.",
+                    "உறுப்பு 38 நலனுக்கான சமூக ஒழுங்கை கட்டாயமாக்குகிறது; 44வது திருத்தம் 1978 மூலம் சேர்க்கப்பட்ட 38(2) சமத்துவமின்மையைக் குறைக்க ஆணையிடுகிறது.",
+                    "உறுப்பு 39(a) அனைத்துக் குடிமக்களுக்கும் போதுமான வாழ்வாதார வழிவகைகளை உத்தரவாதம் செய்கிறது.",
+                    "உறுப்புகள் 39(b) & 39(c) பொருள் வளப் பகிர்வு மற்றும் செல்வக் குவிப்புத் தடையை வழிநடத்துகின்றன (உறுப்பு 31C பாதுகாப்பு).",
+                    "உறுப்பு 39(d) ஆண், பெண் இருபாலருக்கும் சம வேலைக்கு சம ஊதியம் வழங்கக் கட்டளையிடுகிறது (சம ஊதியச் சட்டம் 1976).",
+                    "உறுப்பு 39(e) தொழிலாளர்கள்/குழந்தைகளின் சுகாதாரத்தைப் பாதுகாக்கிறது; 39(f) குழந்தைகள் ஆரோக்கியமான வளர்ச்சியைப் பாதுகாக்கிறது (42வது திருத்தம் 1976).",
+                    "உறுப்பு 39A (இலவச சட்ட உதவி) 42வது திருத்தம் 1976 மூலம் சேர்க்கப்பட்டு 1987 NALSA சட்டம் மூலம் சட்டப்பூர்வமாக செயல்படுத்தப்பட்டது.",
+                    "DPSP வகைப்பாடு (சமதர்ம, காந்திய, தாராளமய) ஒரு மரபுவழி கல்வி பிரிவே தவிர, அரசியலமைப்பில் எழுதப்படவில்லை.",
+                    "மினர்வா மில்ஸ் வழக்கில் (1980) பகுதி III (FR) மற்றும் பகுதி IV (DPSP) இடையிலான இணக்கமும் சமநிலையும் அடிப்படை அமைப்பு எனக் கூறப்பட்டது."
+                ]
+            }
+        }
+    }
+
+    output_dir = "data/notes/polity"
+    os.makedirs(output_dir, exist_ok=True)
+    output_path = os.path.join(output_dir, "directive_principles_part_1.json")
+
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(note_data, f, ensure_ascii=False, indent=2)
+
+    print(f"Successfully generated DPSP Part 1 Notes at {output_path}")
+
+if __name__ == "__main__":
+    create_dpsp_part1_notes()

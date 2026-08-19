@@ -1,0 +1,1116 @@
+# build_dpsp_statement_50.py
+# Generates 50 Statement-based MCQs for Directive Principles of State Policy (DPSP)
+# Target file: data/questions/polity/directive_principles_statement.json
+
+import json
+import os
+
+def generate_50_statement_mcqs():
+    questions = []
+
+    def add_q(q_id, q_type, q_en, q_ta, opt_a_en, opt_a_ta, opt_b_en, opt_b_ta, opt_c_en, opt_c_ta, opt_d_en, opt_d_ta, correct, exp_en, exp_ta, tip_en, tip_ta, w_a_en, w_a_ta, w_b_en, w_b_ta, w_c_en, w_c_ta, w_d_en, w_d_ta):
+        q_obj = {
+            "id": f"DPSP_S_{q_id:03d}",
+            "subject": "Polity",
+            "topic": "Directive Principles of State Policy",
+            "difficulty": "Medium",
+            "question_type": q_type,
+            "question": {
+                "en": q_en,
+                "ta": q_ta
+            },
+            "options": [
+                {"id": "A", "en": opt_a_en, "ta": opt_a_ta},
+                {"id": "B", "en": opt_b_en, "ta": opt_b_ta},
+                {"id": "C", "en": opt_c_en, "ta": opt_c_ta},
+                {"id": "D", "en": opt_d_en, "ta": opt_d_ta}
+            ],
+            "correct_answer": correct,
+            "explanation": {
+                "en": exp_en,
+                "ta": exp_ta
+            },
+            "why_not_others": {
+                "A": {"en": w_a_en, "ta": w_a_ta},
+                "B": {"en": w_b_en, "ta": w_b_ta},
+                "C": {"en": w_c_en, "ta": w_c_ta},
+                "D": {"en": w_d_en, "ta": w_d_ta}
+            },
+            "tnpsc_tip": {
+                "en": tip_en,
+                "ta": tip_ta
+            }
+        }
+        questions.append(q_obj)
+
+    # -------------------------------------------------------------------------
+    # Q1 (Correct: A) - 2-statement
+    # -------------------------------------------------------------------------
+    add_q(
+        1, "Statement",
+        "Consider the following statements regarding Articles 36 and 37 of the Constitution:\n1. Article 36 defines the term 'State' for Part IV to have the same meaning as in Part III (Article 12).\n2. Article 37 explicitly declares that Directive Principles shall not be enforceable by any court, but are fundamental in the governance of the country.\nWhich of the statements given above is/are CORRECT?",
+        "அரசியலமைப்பின் உறுப்புகள் 36 மற்றும் 37 பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. உறுப்பு 36 பகுதி IV-க்கான 'அரசு' என்ற வார்த்தையை பகுதி III-ல் (உறுப்பு 12) உள்ள அதே பொருளைக் கொண்டிருக்குமாறு வரையறுக்கிறது.\n2. உறுப்பு 37 வழிகாட்டு நெறிமுறைகள் எந்தவொரு நீதிமன்றத்தாலும் அமல்படுத்தப்பட முடியாதவை, ஆனால் நாட்டின் ஆட்சியில் அடிப்படையானவை என வெளிப்படையாக அறிவிக்கிறது.\nமேலே கொடுக்கப்பட்டுள்ள கூற்றுகளில் எது/எவை சரியானது/சரியானவை?",
+        "Both 1 and 2", "1 மற்றும் 2 இரண்டும்",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Neither 1 nor 2", "1-ம் இல்லை 2-ம் இல்லை",
+        "A",
+        "Both statements 1 and 2 are CORRECT. Article 36 adopts Article 12 definition of State for Part IV. Article 37 states that DPSPs are non-justiciable in courts, but fundamental in governance and it is the duty of the State to apply these principles in making laws.",
+        "கூற்றுகள் 1 மற்றும் 2 இரண்டும் சரியானவை. உறுப்பு 36 பகுதி IV-க்காக உறுப்பு 12-ன் அரசு வரையறையை ஏற்கிறது. உறுப்பு 37 DPSP-கள் நீதிமன்றங்களில் அமல்படுத்த முடியாதவை, ஆனால் ஆட்சியில் அடிப்படையானவை மற்றும் சட்டம் இயற்றுவதில் இக்கோட்பாடுகளைப் பயன்படுத்துவது அரசின் கடமை எனக் கூறுகிறது.",
+        "Remember: Art 36 = State definition; Art 37 = Non-justiciable but fundamental in governance.",
+        "நினைவில் கொள்க: உறுப்பு 36 = அரசு வரையறை; உறுப்பு 37 = அமல்படுத்த முடியாதது ஆனால் ஆட்சியில் அடிப்படையானது.",
+        "Correct. Both statements 1 and 2 are correct.", "சரி. கூற்றுகள் 1 மற்றும் 2 இரண்டும் சரியானவை.",
+        "Statement 2 is also correct.", "கூற்று 2-ம் சரியானதாகும்.",
+        "Statement 1 is also correct.", "கூற்று 1-ம் சரியானதாகும்.",
+        "Both statements are true.", "இரண்டு கூற்றுகளும் உண்மையானவை."
+    )
+
+    # -------------------------------------------------------------------------
+    # Q2 (Correct: B) - 3-statement
+    # -------------------------------------------------------------------------
+    add_q(
+        2, "Statement",
+        "Consider the following statements regarding Article 38 of the Constitution:\n1. Article 38(1) directs the State to secure a social order for the promotion of welfare of the people.\n2. Article 38(2) directs the State to strive to minimise inequalities in income, status, facilities, and opportunities.\n3. Article 38(2) was present in the original Constitution of 1950.\nWhich of the statements given above is/are CORRECT?",
+        "அரசியலமைப்பின் உறுப்பு 38 பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. உறுப்பு 38(1) மக்கள் நலனை மேம்படுத்துவதற்கான ஒரு சமூக ஒழுங்கை உறுதி செய்ய அரசுக்கு வழிகாட்டுகிறது.\n2. உறுப்பு 38(2) வருமானம், அந்தஸ்து, வசதிகள் மற்றும் வாய்ப்புகளில் உள்ள சமத்துவமின்மையைக் குறைக்க அரசு முயல வேண்டும் என வழிகாட்டுகிறது.\n3. உறுப்பு 38(2) 1950-ன் அசல் அரசியலமைப்பில் இடம்பெற்றிருந்தது.\nமேலே கொடுக்கப்பட்டுள்ள கூற்றுகளில் எது/எவை சரியானது/சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "1 and 2 only", "1 மற்றும் 2 மட்டுமே",
+        "2 and 3 only", "2 மற்றும் 3 மட்டுமே",
+        "1, 2 and 3", "1, 2 மற்றும் 3",
+        "B",
+        "Statements 1 and 2 are correct. Statement 3 is INCORRECT because Article 38(2) was inserted by the 44th Constitutional Amendment Act, 1978; it was not in the original 1950 text.",
+        "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பு 38(2) 1978-ன் 44வது அரசியலமைப்பு திருத்தச் சட்டத்தால் இணைக்கப்பட்டது; இது அசல் 1950 உரையில் இல்லை.",
+        "TNPSC Trap: Article 38(2) was added by 44th CAA 1978, NOT in original 1950 text.",
+        "டிஎன்பிஎஸ்சி பொறி: உறுப்பு 38(2) 44வது திருத்தம் 1978 மூலம் சேர்க்கப்பட்டது, அசல் 1950 உரையில் இல்லை.",
+        "Statement 2 is also correct.", "கூற்று 2-ம் சரியானதாகும்.",
+        "Correct. Statements 1 and 2 are correct; Statement 3 is false.", "சரி. கூற்றுகள் 1 மற்றும் 2 சரியானவை; கூற்று 3 தவறானது.",
+        "Statement 3 is incorrect.", "கூற்று 3 தவறானது.",
+        "Statement 3 is incorrect.", "கூற்று 3 தவறானது."
+    )
+
+    # -------------------------------------------------------------------------
+    # Q3 (Correct: C) - 4-statement
+    # -------------------------------------------------------------------------
+    add_q(
+        3, "Statement",
+        "Consider the following statements regarding the socialist directives under Article 39:\n1. Article 39(a) directs the State to secure adequate means of livelihood for all citizens.\n2. Article 39(b) directs that ownership and control of material resources are so distributed as best to subserve the common good.\n3. Article 39(c) directs that the operation of the economic system does not result in the concentration of wealth.\n4. Article 39(d) directs equal pay for equal work for both men and women.\nWhich of the statements given above are CORRECT?",
+        "உறுப்பு 39-ன் கீழ் உள்ள சமதர்ம வழிகாட்டல்கள் பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. உறுப்பு 39(a) அனைத்துக் குடிமக்களுக்கும் போதுமான வாழ்வாதார வழிவகைகளை உறுதி செய்ய அரசுக்கு வழிகாட்டுகிறது.\n2. உறுப்பு 39(b) பொது நலனுக்குச் பயன்படும் வகையில் பொருள் வளங்களின் உரிமையும் கட்டுப்பாடும் பகிரப்பட வேண்டும் என வழிகாட்டுகிறது.\n3. உறுப்பு 39(c) பொருளாதார அமைப்பின் செயல்பாடு செல்வக் குவிப்பிற்கு வழிவகுக்கக் கூடாது என வழிகாட்டுகிறது.\n4. உறுப்பு 39(d) ஆண், பெண் இருபாலருக்கும் சம வேலைக்கு சம ஊதியத்தை வழிகாட்டுகிறது.\nமேலே கொடுக்கப்பட்டுள்ள கூற்றுகளில் எவை சரியானவை?",
+        "1, 2 and 3 only", "1, 2 மற்றும் 3 மட்டுமே",
+        "2, 3 and 4 only", "2, 3 மற்றும் 4 மட்டுமே",
+        "1, 2, 3 and 4", "1, 2, 3 மற்றும் 4",
+        "1 and 4 only", "1 மற்றும் 4 மட்டுமே",
+        "C",
+        "All four statements 1, 2, 3, and 4 are CORRECT. They represent clauses (a), (b), (c), and (d) of Article 39 respectively.",
+        "1, 2, 3 மற்றும் 4 ஆகிய நான்கு கூற்றுகளும் சரியானவை. அவை முறையே உறுப்பு 39-ன் உட்பிரிவுகள் (a), (b), (c), மற்றும் (d) ஆகியவற்றைப் பிரதிபலிக்கின்றன.",
+        "Memorize Art 39 clauses: (a) Livelihood, (b) Material resources, (c) Wealth concentration, (d) Equal pay.",
+        "உறுப்பு 39 உட்பிரிவுகளை மனப்பாடம் செய்க: (a) வாழ்வாதாரம், (b) பொருள் வளங்கள், (c) செல்வக் குவிப்பு, (d) சம ஊதியம்.",
+        "Statement 4 is also correct.", "கூற்று 4-ம் சரியானதாகும்.",
+        "Statement 1 is also correct.", "கூற்று 1-ம் சரியானதாகும்.",
+        "Correct. Statements 1, 2, 3 and 4 are all correct.", "சரி. கூற்றுகள் 1, 2, 3 மற்றும் 4 அனைத்தும் சரியானவை.",
+        "Statements 2 and 3 are also correct.", "கூற்றுகள் 2 மற்றும் 3-ம் சரியானவை."
+    )
+
+    # -------------------------------------------------------------------------
+    # Q4 (Correct: D) - 2-statement
+    # -------------------------------------------------------------------------
+    add_q(
+        4, "Statement",
+        "Consider the following statements regarding Article 39A:\n1. Article 39A was added by the 44th Constitutional Amendment Act, 1978.\n2. Article 39A deals with protection of environment, forests, and wildlife.\nWhich of the statements given above is/are CORRECT?",
+        "உறுப்பு 39A பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. உறுப்பு 39A 1978-ன் 44வது அரசியலமைப்பு திருத்தச் சட்டத்தால் சேர்க்கப்பட்டது.\n2. உறுப்பு 39A சுற்றுச்சூழல், காடுகள் மற்றும் வனவிலங்குகளைப் பாதுகாப்பதைப் பற்றியது.\nமேலே கொடுக்கப்பட்டுள்ள கூற்றுகளில் எது/எவை சரியானது/சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Both 1 and 2", "1 மற்றும் 2 இரண்டும்",
+        "Neither 1 nor 2", "1-ம் இல்லை 2-ம் இல்லை",
+        "D",
+        "NEITHER statement 1 NOR 2 is correct. Article 39A was added by the 42nd Constitutional Amendment Act, 1976 (NOT 44th), and it deals with Equal Justice and Free Legal Aid (NOT environment protection, which is Article 48A).",
+        "1 மற்றும் 2 ஆகிய இரண்டு கூற்றுகளும் தவறானவை. உறுப்பு 39A 1976-ன் 42வது அரசியலமைப்பு திருத்தச் சட்டத்தால் சேர்க்கப்பட்டது (44வது அல்ல), மேலும் இது சம நீதி மற்றும் இலவச சட்ட உதவியைப் பற்றியது (சுற்றுச்சூழல் பாதுகாப்பு அல்ல, அது உறுப்பு 48A).",
+        "Double Trap: 39A was added by 42nd CAA (1976) for Free Legal Aid.", "இரட்டைப் பொறி: 39A 42வது திருத்தம் (1976) மூலம் இலவச சட்ட உதவிக்காகச் சேர்க்கப்பட்டது.",
+        "Statement 1 is incorrect (added by 42nd CAA).", "கூற்று 1 தவறானது (42வது திருத்தத்தால் சேர்க்கப்பட்டது).",
+        "Statement 2 is incorrect (deals with Free Legal Aid).", "கூற்று 2 தவறானது (இலவச சட்ட உதவியைப் பற்றியது).",
+        "Both statements are incorrect.", "இரண்டு கூற்றுகளும் தவறானவை.",
+        "Correct. Neither statement 1 nor 2 is correct.", "சரி. 1-ம் இல்லை 2-ம் இல்லை என்பது சரியானது."
+    )
+
+    # -------------------------------------------------------------------------
+    # Q5 (Correct: A) - 3-statement
+    # -------------------------------------------------------------------------
+    add_q(
+        5, "Statement",
+        "Consider the following statements regarding Article 40 (Village Panchayats):\n1. Article 40 directs the State to organize village panchayats and endow them with necessary powers as units of self-government.\n2. Article 40 reflects Mahatma Gandhi's concept of Gram Swaraj.\n3. The 73rd Constitutional Amendment Act, 1992 deleted Article 40 from Part IV.\nWhich of the statements given above is/are CORRECT?",
+        "உறுப்பு 40 (கிராம பஞ்சாயத்துகள்) பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. உறுப்பு 40 கிராம பஞ்சாயத்துகளை அமைக்கவும், சுயராஜ்ய அலகுகளாக அவை செயல்படத் தேவையான அதிகாரங்களை வழங்கவும் அரசுக்கு வழிகாட்டுகிறது.\n2. உறுப்பு 40 மகாத்மா காந்தியின் கிராம சுயராஜ்யக் கருத்தைப் பிரதிபலிக்கிறது.\n3. 1992-ன் 73வது அரசியலமைப்பு திருத்தச் சட்டம் பகுதி IV-லிருந்து உறுப்பு 40-ஐ நீக்கியது.\nமேலே கொடுக்கப்பட்டுள்ள கூற்றுகளில் எது/எவை சரியானது/சரியானவை?",
+        "1 and 2 only", "1 மற்றும் 2 மட்டுமே",
+        "2 and 3 only", "2 மற்றும் 3 மட்டுமே",
+        "1 and 3 only", "1 மற்றும் 3 மட்டுமே",
+        "1, 2 and 3", "1, 2 மற்றும் 3",
+        "A",
+        "Statements 1 and 2 are correct. Statement 3 is INCORRECT because the 73rd Amendment Act 1992 inserted Part IX (Arts 243-243O) and 11th Schedule to implement Article 40, but DID NOT delete Article 40 from Part IV.",
+        "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் 1992-ன் 73வது திருத்தச் சட்டம் உறுப்பு 40-ஐ செயல்படுத்த பகுதி IX மற்றும் 11வது அட்டவணையை இணைத்தது, ஆனால் பகுதி IV-லிருந்து உறுப்பு 40-ஐ நீக்கவில்லை.",
+        "Article 40 remains intact in Part IV as the DPSP guiding principle.", "உறுப்பு 40 பகுதி IV-ல் DPSP வழிகாட்டும் கோட்பாடாகத் தொடர்ந்து செயல்படுகிறது.",
+        "Correct. Statements 1 and 2 are correct; Statement 3 is false.", "சரி. கூற்றுகள் 1 மற்றும் 2 சரியானவை; கூற்று 3 தவறானது.",
+        "Statement 3 is incorrect.", "கூற்று 3 தவறானது.",
+        "Statement 3 is incorrect.", "கூற்று 3 தவறானது.",
+        "Statement 3 is incorrect.", "கூற்று 3 தவறானது."
+    )
+
+    # -------------------------------------------------------------------------
+    # Q6 (Correct: B) - 4-statement
+    # -------------------------------------------------------------------------
+    add_q(
+        6, "Statement",
+        "Consider the following statements regarding Article 41:\n1. Article 41 directs the State to secure Right to Work, to Education and to Public Assistance in cases of unemployment, old age, sickness and disablement.\n2. The directive under Article 41 is subject to the limits of the State's economic capacity and development.\n3. A citizen can directly enforce Article 41 by filing a writ petition under Article 32.\n4. MGNREGA 2005 statutorily fulfills the Right to Work directive under Article 41.\nWhich of the statements given above are CORRECT?",
+        "உறுப்பு 41 பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. உறுப்பு 41 வேலையின்மை, முதியோர், நோய் மற்றும் ஊனம் ஆகியவற்றில் வேலை, கல்வி மற்றும் பொது உதவி உரிமையை உறுதி செய்ய அரசுக்கு வழிகாட்டுகிறது.\n2. உறுப்பு 41-ன் கீழ் உள்ள வழிகாட்டல் அரசின் பொருளாதாரத் திறன் மற்றும் வளர்ச்சியின் வரம்புகளுக்கு உட்பட்டது.\n3. ஒரு குடிமகன் உறுப்பு 32-ன் கீழ் பேராணை மனு தாக்கல் செய்வதன் மூலம் உறுப்பு 41-ஐ நேரடியாக அமல்படுத்த முடியும்.\n4. MGNREGA 2005 உறுப்பு 41-ன் கீழ் உள்ள வேலை உரிமை வழிகாட்டலைச் சட்டப்பூர்வமாக நிறைவேற்றுகிறது.\nமேலே கொடுக்கப்பட்டுள்ள கூற்றுகளில் எவை சரியானவை?",
+        "1, 2 and 3 only", "1, 2 மற்றும் 3 மட்டுமே",
+        "1, 2 and 4 only", "1, 2 மற்றும் 4 மட்டுமே",
+        "2, 3 and 4 only", "2, 3 மற்றும் 4 மட்டுமே",
+        "1, 2, 3 and 4", "1, 2, 3 மற்றும் 4",
+        "B",
+        "Statements 1, 2, and 4 are correct. Statement 3 is INCORRECT because Article 41 is a Part IV DPSP and is non-justiciable under Article 37; it cannot be enforced by filing a writ under Article 32.",
+        "கூற்றுகள் 1, 2 மற்றும் 4 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பு 41 என்பது பகுதி IV DPSP மற்றும் உறுப்பு 37-ன் கீழ் அமல்படுத்த முடியாதது; உறுப்பு 32-ன் கீழ் பேராணை தாக்கல் செய்வதன் மூலம் இதை அமல்படுத்த முடியாது.",
+        "Remember: DPSPs cannot be enforced via Article 32 writ petitions.", "நினைவில் கொள்க: DPSP-களை உறுப்பு 32 பேராணை மனுக்கள் மூலம் அமல்படுத்த முடியாது.",
+        "Statement 4 is also correct.", "கூற்று 4-ம் சரியானதாகும்.",
+        "Correct. Statements 1, 2 and 4 are correct; Statement 3 is false.", "சரி. கூற்றுகள் 1, 2 மற்றும் 4 சரியானவை; கூற்று 3 தவறானது.",
+        "Statement 1 is also correct.", "கூற்று 1-ம் சரியானதாகும்.",
+        "Statement 3 is incorrect.", "கூற்று 3 தவறானது."
+    )
+
+    # -------------------------------------------------------------------------
+    # Q7 (Correct: C) - 2-statement
+    # -------------------------------------------------------------------------
+    add_q(
+        7, "Statement",
+        "Consider the following statements regarding Article 42:\n1. Article 42 directs the State to make provision for securing just and humane conditions of work and for maternity relief.\n2. The Maternity Benefit (Amendment) Act, 2017 raised statutory paid maternity leave from 12 weeks to 26 weeks implementing Article 42.\nWhich of the statements given above is/are CORRECT?",
+        "உறுப்பு 42 பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. உறுப்பு 42 நியாயமான மற்றும் மனிதத்தன்மையுள்ள வேலை நிலைமைகள் மற்றும் பேறுகால உதவியை உறுதி செய்ய அரசுக்கு வழிகாட்டுகிறது.\n2. பேறுகால நல (திருத்தச்) சட்டம் 2017 உறுப்பு 42-ஐ செயல்படுத்தி சட்டப்பூர்வ சம்பள விடுப்பை 12 வாரங்களிலிருந்து 26 வாரங்களாக உயர்த்தியது.\nமேலே கொடுக்கப்பட்டுள்ள கூற்றுகளில் எது/எவை சரியானது/சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Both 1 and 2", "1 மற்றும் 2 இரண்டும்",
+        "Neither 1 nor 2", "1-ம் இல்லை 2-ம் இல்லை",
+        "C",
+        "Both statements 1 and 2 are CORRECT. Article 42 covers just and humane work conditions and maternity relief. The Maternity Benefit Amendment Act 2017 statutorily expanded paid maternity leave to 26 weeks.",
+        "கூற்றுகள் 1 மற்றும் 2 இரண்டும் சரியானவை. உறுப்பு 42 நியாயமான வேலை நிலைமைகள் மற்றும் பேறுகால உதவியை உள்ளடக்கியது. பேறுகால நல திருத்தச் சட்டம் 2017 சட்டப்பூர்வ சம்பள விடுப்பை 26 வாரங்களாக உயர்த்தியது.",
+        "TN Takeaway: Tamil Nadu Govt grants 12 months paid maternity leave for women employees.", "தமிழகத் தகவல்: தமிழக அரசு பெண் ஊழியர்களுக்கு 12 மாதங்கள் சம்பளப் பேறுகால விடுப்பு வழங்குகிறது.",
+        "Statement 2 is also correct.", "கூற்று 2-ம் சரியானதாகும்.",
+        "Statement 1 is also correct.", "கூற்று 1-ம் சரியானதாகும்.",
+        "Correct. Both statements 1 and 2 are correct.", "சரி. கூற்றுகள் 1 மற்றும் 2 இரண்டும் சரியானவை.",
+        "Both statements are true.", "இரண்டு கூற்றுகளும் உண்மையானவை."
+    )
+
+    # -------------------------------------------------------------------------
+    # Q8 (Correct: D) - 3-statement
+    # -------------------------------------------------------------------------
+    add_q(
+        8, "Statement",
+        "Consider the following statements regarding Article 43, 43A, and 43B:\n1. Article 43 directs securing a living wage and promotion of cottage industries in rural areas.\n2. Article 43A directs participation of workers in management of undertakings and was added by the 42nd Amendment 1976.\n3. Article 43B directs promotion of voluntary formation of Co-operative Societies and was added by the 97th Amendment 2011.\nWhich of the statements given above are CORRECT?",
+        "உறுப்புகள் 43, 43A, மற்றும் 43B பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. உறுப்பு 43 வாழ்வாதார ஊதியம் மற்றும் கிராமப்புறங்களில் குடில்தொழில்கள் மேம்பாட்டிற்கு வழிகாட்டுகிறது.\n2. உறுப்பு 43A தொழிற்சாலைகள் மேலாண்மையில் தொழிலாளர்களின் பங்கேற்பிற்கு வழிகாட்டுகிறது மற்றும் 1976-ன் 42வது திருத்தத்தால் சேர்க்கப்பட்டது.\n3. உறுப்பு 43B கூட்டுறவுச் சங்கங்களின் தன்னார்வ உருவாக்கத்திற்கு வழிகாட்டுகிறது மற்றும் 2011-ன் 97வது திருத்தத்தால் சேர்க்கப்பட்டது.\nமேலே கொடுக்கப்பட்டுள்ள கூற்றுகளில் எவை சரியானவை?",
+        "1 and 2 only", "1 மற்றும் 2 மட்டுமே",
+        "2 and 3 only", "2 மற்றும் 3 மட்டுமே",
+        "1 and 3 only", "1 மற்றும் 3 மட்டுமே",
+        "1, 2 and 3", "1, 2 மற்றும் 3",
+        "D",
+        "All three statements 1, 2, and 3 are CORRECT. Article 43 (living wage/cottage industry original), 43A (workers participation - 42nd CAA 1976), 43B (co-operative societies - 97th CAA 2011).",
+        "1, 2 மற்றும் 3 ஆகிய மூன்று கூற்றுகளும் சரியானவை. உறுப்பு 43 (வாழ்வாதார ஊதியம்/குடில்தொழில் அசல்), 43A (தொழிலாளர் பங்கேற்பு - 42வது திருத்தம் 1976), 43B (கூட்டுறவுச் சங்கங்கள் - 97வது திருத்தம் 2011).",
+        "Recall: 43 (Original), 43A (42nd CAA 1976), 43B (97th CAA 2011).", "நினைவு கொள்க: 43 (அசல்), 43A (42வது திருத்தம் 1976), 43B (97வது திருத்தம் 2011).",
+        "Statement 3 is also correct.", "கூற்று 3-ம் சரியானதாகும்.",
+        "Statement 1 is also correct.", "கூற்று 1-ம் சரியானதாகும்.",
+        "Statement 2 is also correct.", "கூற்று 2-ம் சரியானதாகும்.",
+        "Correct. Statements 1, 2 and 3 are all correct.", "சரி. கூற்றுகள் 1, 2 மற்றும் 3 அனைத்தும் சரியானவை."
+    )
+
+    # -------------------------------------------------------------------------
+    # Q9 (Correct: A) - 4-statement
+    # -------------------------------------------------------------------------
+    add_q(
+        9, "Statement",
+        "Consider the following statements regarding Article 44 (Uniform Civil Code):\n1. Article 44 directs the State to endeavor to secure for citizens a Uniform Civil Code throughout India.\n2. Goa is currently the only Indian State with a operational Uniform Civil Code (Goa Civil Code 1867).\n3. Article 44 has been declared a justiciable Fundamental Right under Part III by the Supreme Court.\n4. In Shah Bano case (1985), the Supreme Court observed with regret that Article 44 had remained a dead letter.\nWhich of the statements given above are CORRECT?",
+        "உறுப்பு 44 (பொது சிவில் சட்டம்) பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. உறுப்பு 44 இந்தியா முழுவதும் குடிமக்களுக்கு ஒரு பொது சிவில் சட்டத்தை உறுதி செய்ய அரசு முயல வேண்டும் என வழிகாட்டுகிறது.\n2. கோவா தற்போது செயல்பாட்டில் உள்ள பொது சிவில் சட்டத்தைக் கொண்ட ஒரே இந்திய மாநிலமாகும் (கோவா சிவில் சட்டம் 1867).\n3. உறுப்பு 44-ஐ உச்ச நீதிமன்றம் பகுதி III-ன் கீழ் அமல்படுத்தக்கூடிய அடிப்படை உரிமையாக அறிவித்துள்ளது.\n4. ஷா பானோ வழக்கில் (1985), உறுப்பு 44 செயலற்ற எழுத்தாக இருப்பதாக உச்ச நீதிமன்றம் வருத்தத்துடன் குறிப்பிட்டது.\nமேலே கொடுக்கப்பட்டுள்ள கூற்றுகளில் எவை சரியானவை?",
+        "1, 2 and 4 only", "1, 2 மற்றும் 4 மட்டுமே",
+        "1, 2 and 3 only", "1, 2 மற்றும் 3 மட்டுமே",
+        "2, 3 and 4 only", "2, 3 மற்றும் 4 மட்டுமே",
+        "1, 2, 3 and 4", "1, 2, 3 மற்றும் 4",
+        "A",
+        "Statements 1, 2, and 4 are correct. Statement 3 is INCORRECT because Article 44 remains a Part IV Directive Principle, NOT a Part III Fundamental Right.",
+        "கூற்றுகள் 1, 2 மற்றும் 4 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பு 44 தொடர்ந்து பகுதி IV வழிகாட்டு நெறிமுறையாகவே உள்ளது, பகுதி III அடிப்படை உரிமை அல்ல.",
+        "Article 44 is a DPSP, not a Fundamental Right.", "உறுப்பு 44 ஒரு DPSP, அடிப்படை உரிமை அல்ல.",
+        "Correct. Statements 1, 2 and 4 are correct; Statement 3 is false.", "சரி. கூற்றுகள் 1, 2 மற்றும் 4 சரியானவை; கூற்று 3 தவறானது.",
+        "Statement 3 is incorrect.", "கூற்று 3 தவறானது.",
+        "Statement 3 is incorrect.", "கூற்று 3 தவறானது.",
+        "Statement 3 is incorrect.", "கூற்று 3 தவறானது."
+    )
+
+    # -------------------------------------------------------------------------
+    # Q10 (Correct: B) - 2-statement
+    # -------------------------------------------------------------------------
+    add_q(
+        10, "Statement",
+        "Consider the following statements regarding Article 45:\n1. The original Article 45 provided for free and compulsory education for all children until they complete the age of 14 years within 10 years of Constitution commencement.\n2. The 86th Constitutional Amendment Act, 2002 modified Article 45 to direct early childhood care and education for children below the age of 6 years.\nWhich of the statements given above is/are CORRECT?",
+        "உறுப்பு 45 பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. அசல் உறுப்பு 45 அரசியலமைப்பு தொடங்கிய 10 ஆண்டுகளுக்குள் 14 வயது நிறைவடையும் வரை அனைத்துக் குழந்தைகளுக்கும் இலவச மற்றும் கட்டாயக் கல்வியை வழங்கியது.\n2. 2002-ன் 86வது அரசியலமைப்பு திருத்தச் சட்டம் உறுப்பு 45-ஐ திருத்தி 6 வயதுக்குட்பட்ட குழந்தைகளுக்கான முன்பருவக் பராமரிப்பு மற்றும் கல்வியை வழிகாட்டியது.\nமேலே கொடுக்கப்பட்டுள்ள கூற்றுகளில் எது/எவை சரியானது/சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "Both 1 and 2", "1 மற்றும் 2 இரண்டும்",
+        "2 only", "2 மட்டுமே",
+        "Neither 1 nor 2", "1-ம் இல்லை 2-ம் இல்லை",
+        "B",
+        "Both statements 1 and 2 are CORRECT. The 86th Amendment Act 2002 shifted education for ages 6-14 to Part III Article 21A (FR), and modified Article 45 (DPSP) to focus on early childhood care and education for children below 6 years.",
+        "கூற்றுகள் 1 மற்றும் 2 இரண்டும் சரியானவை. 86வது திருத்தச் சட்டம் 2002 6-14 வயதுக் கல்வியைப் பகுதி III உறுப்பு 21A-க்கு (FR) மாற்றியது, மேலும் உறுப்பு 45-ஐ (DPSP) 6 வயதுக்குட்பட்ட குழந்தைகளுக்கான முன்பருவக் பராமரிப்பு மற்றும் கல்வியில் கவனம் செலுத்துமாறு திருத்தியது.",
+        "86th CAA 2002 tri-furcated education: Art 21A (6-14 FR), Art 45 (below 6 DPSP), Art 51A(k) (6-14 FD).", "86வது திருத்தம் 2002 கல்வியை 3 ஆகப் பிரித்தது: உறுப்பு 21A (6-14 FR), உறுப்பு 45 (6-க்கு கீழ் DPSP), உறுப்பு 51A(k) (6-14 FD).",
+        "Statement 2 is also correct.", "கூற்று 2-ம் சரியானதாகும்.",
+        "Correct. Both statements 1 and 2 are correct.", "சரி. கூற்றுகள் 1 மற்றும் 2 இரண்டும் சரியானவை.",
+        "Statement 1 is also correct.", "கூற்று 1-ம் சரியானதாகும்.",
+        "Both statements are true.", "இரண்டு கூற்றுகளும் உண்மையானவை."
+    )
+
+    # -------------------------------------------------------------------------
+    # Q11 (Correct: C) - 3-statement
+    # -------------------------------------------------------------------------
+    add_q(
+        11, "Statement",
+        "Consider the following statements regarding Article 46:\n1. Article 46 directs the State to promote with special care the educational and economic interests of SCs, STs, and other weaker sections.\n2. Article 46 is a justiciable Fundamental Right under Part III of the Constitution.\n3. Article 46 provides the constitutional directive backing for affirmative action reservations in education and public employment under Articles 15(4) and 16(4).\nWhich of the statements given above is/are CORRECT?",
+        "உறுப்பு 46 பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. உறுப்பு 46 எஸ்சி, எஸ்டி மற்றும் பிற எளிய பிரிவினரின் கல்வி மற்றும் பொருளாதார நலன்களை சிறப்பு கவனத்துடன் மேம்படுத்த அரசுக்கு வழிகாட்டுகிறது.\n2. உறுப்பு 46 என்பது அரசியலமைப்பின் பகுதி III-ன் கீழ் உள்ள ஓர் அமல்படுத்தக்கூடிய அடிப்படை உரிமையாகும்.\n3. உறுப்பு 46 உறுப்புகள் 15(4) மற்றும் 16(4)-ன் கீழ் கல்வி மற்றும் பொது வேலைவாய்ப்பில் இடஒதுக்கீடுகளுக்கான அரசியலமைப்பு வழிகாட்டுதல் ஆதரவை வழங்குகிறது.\nமேலே கொடுக்கப்பட்டுள்ள கூற்றுகளில் எது/எவை சரியானது/சரியானவை?",
+        "1 and 2 only", "1 மற்றும் 2 மட்டுமே",
+        "2 and 3 only", "2 மற்றும் 3 மட்டுமே",
+        "1 and 3 only", "1 மற்றும் 3 மட்டுமே",
+        "1, 2 and 3", "1, 2 மற்றும் 3",
+        "C",
+        "Statements 1 and 3 are correct. Statement 2 is INCORRECT because Article 46 is a Part IV Directive Principle, NOT a Part III Fundamental Right.",
+        "கூற்றுகள் 1 மற்றும் 3 சரியானவை. கூற்று 2 தவறானது, ஏனெனில் உறுப்பு 46 என்பது பகுதி IV வழிகாட்டு நெறிமுறை, பகுதி III அடிப்படை உரிமை அல்ல.",
+        "Article 46 is a DPSP; reservation powers are enacted under Part III Arts 15 & 16.", "உறுப்பு 46 ஒரு DPSP; இடஒதுக்கீட்டு அதிகாரங்கள் பகுதி III உறுப்புகள் 15 & 16-ன் கீழ் இயற்றப்படுகின்றன.",
+        "Statement 2 is incorrect.", "கூற்று 2 தவறானது.",
+        "Statement 2 is incorrect.", "கூற்று 2 தவறானது.",
+        "Correct. Statements 1 and 3 are correct; Statement 2 is false.", "சரி. கூற்றுகள் 1 மற்றும் 3 சரியானவை; கூற்று 2 தவறானது.",
+        "Statement 2 is incorrect.", "கூற்று 2 தவறானது."
+    )
+
+    # -------------------------------------------------------------------------
+    # Q12 (Correct: D) - 4-statement
+    # -------------------------------------------------------------------------
+    add_q(
+        12, "Statement",
+        "Consider the following statements regarding Article 47:\n1. Article 47 regards raising the level of nutrition and standard of living and improving public health as primary duties of the State.\n2. Article 47 directs prohibition of intoxicating drinks and drugs injurious to health except for medicinal purposes.\n3. Carrying on trade in intoxicating liquor is a Fundamental Right guaranteed under Article 19(1)(g).\n4. In F.N. Balsara (1951), SC upheld state prohibition laws as reasonable restrictions under Article 19(6).\nWhich of the statements given above are CORRECT?",
+        "உறுப்பு 47 பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. உறுப்பு 47 சத்துணவு நிலை, வாழ்க்கை முறை மற்றும் பொது சுகாதாரத்தை உயர்த்துவதை அரசின் முதன்மைக் கடமைகளாகக் கருதுகிறது.\n2. உறுப்பு 47 மருத்துவ நோக்கங்களைத் தவிர போதைப் பானங்கள் மற்றும் ஆரோக்கியத்திற்குத் தீங்கு விளைவிக்கும் மருந்துகள் அருந்துவதை மதுவிலக்கு செய்ய வழிகாட்டுகிறது.\n3. போதைப் பான வியாபாரம் செய்வது உறுப்பு 19(1)(g)-ன் கீழ் உத்தரவாதம் அளிக்கப்பட்ட அடிப்படை உரிமையாகும்.\n4. F.N. பால்சரா வழக்கில் (1951), மாநில மதுவிலக்குச் சட்டங்களை உறுப்பு 19(6)-ன் கீழ் நியாயமான கட்டுப்பாடுகளாக SC உறுதி செய்தது.\nமேலே கொடுக்கப்பட்டுள்ள கூற்றுகளில் எவை சரியானவை?",
+        "1, 2 and 3 only", "1, 2 மற்றும் 3 மட்டுமே",
+        "2, 3 and 4 only", "2, 3 மற்றும் 4 மட்டுமே",
+        "1, 3 and 4 only", "1, 3 மற்றும் 4 மட்டுமே",
+        "1, 2 and 4 only", "1, 2 மற்றும் 4 மட்டுமே",
+        "D",
+        "Statements 1, 2, and 4 are correct. Statement 3 is INCORRECT because trade in intoxicating liquor is NOT a Fundamental Right under Article 19(1)(g) (res extra commercium).",
+        "கூற்றுகள் 1, 2 மற்றும் 4 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் போதைப் பான வியாபாரம் செய்வது உறுப்பு 19(1)(g)-ன் கீழ் அடிப்படை உரிமை அல்ல (res extra commercium).",
+        "Liquor trade is res extra commercium (outside constitutional trade protection).", "மதுபான வியாபாரம் வணிகத்திற்கு அப்பாற்பட்டது (அரசியலமைப்பு வர்த்தக பாதுகாப்பிற்கு வெளியே உள்ளது).",
+        "Statement 3 is incorrect.", "கூற்று 3 தவறானது.",
+        "Statement 3 is incorrect.", "கூற்று 3 தவறானது.",
+        "Statement 3 is incorrect.", "கூற்று 3 தவறானது.",
+        "Correct. Statements 1, 2 and 4 are correct; Statement 3 is false.", "சரி. கூற்றுகள் 1, 2 மற்றும் 4 சரியானவை; கூற்று 3 தவறானது."
+    )
+
+    # -------------------------------------------------------------------------
+    # Q13 (Correct: A) - 2-statement
+    # -------------------------------------------------------------------------
+    add_q(
+        13, "Statement",
+        "Consider the following statements regarding Article 48:\n1. Article 48 directs the State to organize agriculture and animal husbandry on modern and scientific lines.\n2. The text of Article 48 explicitly prohibits cow slaughter on the grounds of Hindu religious rituals.\nWhich of the statements given above is/are CORRECT?",
+        "உறுப்பு 48 பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. உறுப்பு 48 நவீன மற்றும் அறிவியல் முறைகளில் விவசாயம் மற்றும் கால்நடை வளர்ப்பை அமைக்க அரசுக்கு வழிகாட்டுகிறது.\n2. உறுப்பு 48-ன் உரை இந்து மதச் சடங்குகளின் அடிப்படையில் பசு வதையை வெளிப்படையாகத் தடுக்கிறது.\nமேலே கொடுக்கப்பட்டுள்ள கூற்றுகளில் எது/எவை சரியானது/சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Both 1 and 2", "1 மற்றும் 2 இரண்டும்",
+        "Neither 1 nor 2", "1-ம் இல்லை 2-ம் இல்லை",
+        "A",
+        "Statement 1 is correct. Statement 2 is INCORRECT because Article 48 frames cow slaughter prohibition on scientific agriculture and economic preservation of milch/draught cattle, NOT on religious grounds.",
+        "கூற்று 1 சரியானது. கூற்று 2 தவறானது, ஏனெனில் உறுப்பு 48 பசு வதைத் தடையை அறிவியல் விவசாயம் மற்றும் பால் தரும்/பாரம் இழுக்கும் கால்நடைகளின் பொருளாதாரப் பாதுகாப்பின் அடிப்படையில் அமைக்கிறது, மதக் காரணங்களின் அடிப்படையில் அல்ல.",
+        "TNPSC Trap: Article 48 text does NOT mention religion or rituals.", "டிஎன்பிஎஸ்சி பொறி: உறுப்பு 48 உரையில் மதமோ அல்லது சடங்குகளோ குறிப்பிடப்படவில்லை.",
+        "Correct. Statement 1 is correct; Statement 2 is false.", "சரி. கூற்று 1 சரியானது; கூற்று 2 தவறானது.",
+        "Statement 2 is incorrect.", "கூற்று 2 தவறானது.",
+        "Statement 2 is incorrect.", "கூற்று 2 தவறானது.",
+        "Statement 1 is true.", "கூற்று 1 உண்மையானது."
+    )
+
+    # -------------------------------------------------------------------------
+    # Q14 (Correct: B) - 3-statement
+    # -------------------------------------------------------------------------
+    add_q(
+        14, "Statement",
+        "Consider the following statements regarding environmental directives:\n1. Article 48A (Part IV DPSP) directs the State to protect and improve the environment, forests, and wildlife.\n2. Article 51A(g) (Part IV-A FD) imposes a fundamental duty on every citizen to protect and improve the natural environment.\n3. Both Article 48A and Article 51A(g) were inserted by the 42nd Constitutional Amendment Act, 1976.\nWhich of the statements given above are CORRECT?",
+        "சுற்றுச்சூழல் வழிகாட்டல்கள் பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. உறுப்பு 48A (பகுதி IV DPSP) சுற்றுச்சூழல், காடுகள் மற்றும் வனவிலங்குகளைப் பாதுகாக்கவும் மேம்படுத்தவும் அரசுக்கு வழிகாட்டுகிறது.\n2. உறுப்பு 51A(g) (பகுதி IV-A FD) இயற்கைச் சுற்றுச்சூழலைப் பாதுகாக்கவும் மேம்படுத்தவும் ஒவ்வொரு குடிமகனுக்கும் ஓர் அடிப்படைக் கடமையை விதிக்கிறது.\n3. உறுப்பு 48A மற்றும் உறுப்பு 51A(g) ஆகிய இரண்டும் 1976-ன் 42வது அரசியலமைப்பு திருத்தச் சட்டத்தால் இணைக்கப்பட்டன.\nமேலே கொடுக்கப்பட்டுள்ள கூற்றுகளில் எவை சரியானவை?",
+        "1 and 2 only", "1 மற்றும் 2 மட்டுமே",
+        "1, 2 and 3", "1, 2 மற்றும் 3",
+        "2 and 3 only", "2 மற்றும் 3 மட்டுமே",
+        "1 and 3 only", "1 மற்றும் 3 மட்டுமே",
+        "B",
+        "All three statements 1, 2, and 3 are CORRECT. Article 48A (State DPSP) and Article 51A(g) (Citizen Duty) were both inserted by the 42nd Amendment Act 1976.",
+        "1, 2 மற்றும் 3 ஆகிய மூன்று கூற்றுகளும் சரியானவை. உறுப்பு 48A (அரசு DPSP) மற்றும் உறுப்பு 51A(g) (குடிமகன் கடமை) ஆகிய இரண்டும் 1976-ன் 42வது திருத்தச் சட்டத்தால் இணைக்கப்பட்டன.",
+        "42nd CAA 1976 created dual environmental protection (State Art 48A + Citizen Art 51A(g)).", "42வது திருத்தம் 1976 இரட்டை சுற்றுச்சூழல் பாதுகாப்பை உருவாக்கியது (அரசு உறுப்பு 48A + குடிமகன் உறுப்பு 51A(g)).",
+        "Statement 3 is also correct.", "கூற்று 3-ம் சரியானதாகும்.",
+        "Correct. Statements 1, 2 and 3 are all correct.", "சரி. கூற்றுகள் 1, 2 மற்றும் 3 அனைத்தும் சரியானவை.",
+        "Statement 1 is also correct.", "கூற்று 1-ம் சரியானதாகும்.",
+        "Statement 2 is also correct.", "கூற்று 2-ம் சரியானதாகும்."
+    )
+
+    # -------------------------------------------------------------------------
+    # Q15 (Correct: C) - 4-statement
+    # -------------------------------------------------------------------------
+    add_q(
+        15, "Statement",
+        "Consider the following statements regarding Articles 49 and 50:\n1. Article 49 directs the State to protect monuments and places of artistic or historic interest declared of national importance.\n2. Article 49 is a justiciable Fundamental Right under Part III of the Constitution.\n3. Article 50 directs the State to take steps to separate the judiciary from the executive in public services.\n4. The Code of Criminal Procedure (CrPC) 1973 statutorily separated the Subordinate Judiciary from Executive Officers.\nWhich of the statements given above are CORRECT?",
+        "உறுப்புகள் 49 மற்றும் 50 பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. உறுப்பு 49 தேசிய முக்கியத்துவம் வாய்ந்தது என அறிவிக்கப்பட்ட கலை அல்லது வரலாற்று ஆர்வம் கொண்ட நினைவிடங்கள் மற்றும் இடங்களைப் பாதுகாக்க அரசுக்கு வழிகாட்டுகிறது.\n2. உறுப்பு 49 என்பது அரசியலமைப்பின் பகுதி III-ன் கீழ் உள்ள ஓர் அமல்படுத்தக்கூடிய அடிப்படை உரிமையாகும்.\n3. உறுப்பு 50 பொது சேவைகளில் நிர்வாகத்திலிருந்து நீதித்துறையைப் பிரிக்க நடவடிக்கைகள் எடுக்க அரசுக்கு வழிகாட்டுகிறது.\n4. 1973 குற்றவியல் நடைமுறைச் சட்டம் (CrPC) கீழ்நிலை நீதித்துறையை நிர்வாக அதிகாரிகளிடமிருந்து சட்டப்பூர்வமாகப் பிரித்தது.\nமேலே கொடுக்கப்பட்டுள்ள கூற்றுகளில் எவை சரியானவை?",
+        "1, 2 and 3 only", "1, 2 மற்றும் 3 மட்டுமே",
+        "2, 3 and 4 only", "2, 3 மற்றும் 4 மட்டுமே",
+        "1, 3 and 4 only", "1, 3 மற்றும் 4 மட்டுமே",
+        "1, 2, 3 and 4", "1, 2, 3 மற்றும் 4",
+        "C",
+        "Statements 1, 3, and 4 are correct. Statement 2 is INCORRECT because Article 49 is a Part IV DPSP, NOT a Part III Fundamental Right.",
+        "கூற்றுகள் 1, 3 மற்றும் 4 சரியானவை. கூற்று 2 தவறானது, ஏனெனில் உறுப்பு 49 என்பது பகுதி IV DPSP, பகுதி III அடிப்படை உரிமை அல்ல.",
+        "Article 49 = Monuments Protection DPSP (AMASR Act 1958).", "உறுப்பு 49 = நினைவிடங்கள் பாதுகாப்பு DPSP (AMASR சட்டம் 1958).",
+        "Statement 2 is incorrect.", "கூற்று 2 தவறானது.",
+        "Statement 2 is incorrect.", "கூற்று 2 தவறானது.",
+        "Correct. Statements 1, 3 and 4 are correct; Statement 2 is false.", "சரி. கூற்றுகள் 1, 3 மற்றும் 4 சரியானவை; கூற்று 2 தவறானது.",
+        "Statement 2 is incorrect.", "கூற்று 2 தவறானது."
+    )
+
+    # -------------------------------------------------------------------------
+    # Q16 (Correct: D) - 2-statement
+    # -------------------------------------------------------------------------
+    add_q(
+        16, "Statement",
+        "Consider the following statements regarding Article 51:\n1. Article 51 directs the State to promote international peace and security and foster respect for international law and treaty obligations.\n2. Article 51 automatically makes all international treaties signed by India self-executing in Indian courts without Parliamentary legislation.\nWhich of the statements given above is/are CORRECT?",
+        "உறுப்பு 51 பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. உறுப்பு 51 சர்வதேச அமைதி மற்றும் பாதுகாப்பை மேம்படுத்தவும் சர்வதேச சட்டம் மற்றும் ஒப்பந்தக் கடமைகளுக்கு மரியாதையை வளர்க்கவும் அரசுக்கு வழிகாட்டுகிறது.\n2. உறுப்பு 51 இந்தியா கையெழுத்திட்ட அனைத்து பன்னாட்டு ஒப்பந்தங்களையும் நாடாளுமன்றச் சட்டமின்றி இந்திய நீதிமன்றங்களில் தானாகவே செயல்படுபவையாக மாற்றுகிறது.\nமேலே கொடுக்கப்பட்டுள்ள கூற்றுகளில் எது/எவை சரியானது/சரியானவை?",
+        "2 only", "2 மட்டுமே",
+        "Both 1 and 2", "1 மற்றும் 2 இரண்டும்",
+        "Neither 1 nor 2", "1-ம் இல்லை 2-ம் இல்லை",
+        "1 only", "1 மட்டுமே",
+        "D",
+        "Statement 1 is correct. Statement 2 is INCORRECT because India follows a Dualist system; international treaties require Parliamentary legislation under Article 253 to be directly enforceable in domestic courts.",
+        "கூற்று 1 சரியானது. கூற்று 2 தவறானது, ஏனெனில் இந்தியா ஒரு இருத்துவ முறையைப் பின்பற்றுகிறது; பன்னாட்டு ஒப்பந்தங்கள் உள்நாட்டு நீதிமன்றங்களில் நேரடியாக அமல்படுத்தப்பட உறுப்பு 253-ன் கீழ் நாடாளுமன்றச் சட்டம் தேவைப்படுகிறது.",
+        "Dualist Model: Art 51 is policy guide; Art 253 provides legislative enactment power.", "இருத்துவ மாதிரி: உறுப்பு 51 கொள்கை வழிகாட்டி; உறுப்பு 253 சட்ட இயற்றல் அதிகாரத்தை வழங்குகிறது.",
+        "Statement 2 is incorrect.", "கூற்று 2 தவறானது.",
+        "Statement 2 is incorrect.", "கூற்று 2 தவறானது.",
+        "Statement 1 is correct.", "கூற்று 1 சரியானது.",
+        "Correct. Statement 1 is correct; Statement 2 is false.", "சரி. கூற்று 1 சரியானது; கூற்று 2 தவறானது."
+    )
+
+    # -------------------------------------------------------------------------
+    # Q17 (Correct: A) - 3-statement
+    # -------------------------------------------------------------------------
+    add_q(
+        17, "Statement",
+        "Consider the following statements regarding the classification of DPSP:\n1. The 3-fold classification into Socialist, Gandhian, and Liberal-Intellectual principles is explicitly written into Part IV of the Constitution.\n2. Articles 40, 43, 43B, 46, 47, and 48 contain principles reflecting Gandhian ideology.\n3. Articles 38, 39, 39A, 41, 42, 43, and 43A contain principles reflecting Socialist ideology.\nWhich of the statements given above is/are CORRECT?",
+        "DPSP வகைப்பாடு பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. சமதர்ம, காந்திய மற்றும் தாராளமய-அறிவுசார் கோட்பாடுகள் என்ற 3-அடுக்கு வகைப்பாடு அரசியலமைப்பின் பகுதி IV-ல் வெளிப்படையாக எழுதப்பட்டுள்ளது.\n2. உறுப்புகள் 40, 43, 43B, 46, 47, மற்றும் 48 ஆகியவை காந்தியத் தத்துவத்தைப் பிரதிபலிக்கும் கோட்பாடுகளைக் கொண்டுள்ளன.\n3. உறுப்புகள் 38, 39, 39A, 41, 42, 43, மற்றும் 43A ஆகியவை சமதர்மத் தத்துவத்தைப் பிரதிபலிக்கும் கோட்பாடுகளைக் கொண்டுள்ளன.\nமேலே கொடுக்கப்பட்டுள்ள கூற்றுகளில் எது/எவை சரியானது/சரியானவை?",
+        "2 and 3 only", "2 மற்றும் 3 மட்டுமே",
+        "1 and 2 only", "1 மற்றும் 2 மட்டுமே",
+        "1 and 3 only", "1 மற்றும் 3 மட்டுமே",
+        "1, 2 and 3", "1, 2 மற்றும் 3",
+        "A",
+        "Statements 2 and 3 are correct. Statement 1 is INCORRECT because the 3-fold classification is an ACADEMIC division by scholars, NOT written in the Constitution text.",
+        "கூற்றுகள் 2 மற்றும் 3 சரியானவை. கூற்று 1 தவறானது, ஏனெனில் 3-அடுக்கு வகைப்பாடு அறிஞர்களின் கல்விசார் பிரிவாகும், அரசியலமைப்பு உரையில் எழுதப்படவில்லை.",
+        "Classification is academic; Part IV text has no sub-headings.", "வகைப்பாடு கல்விசார்பானது; பகுதி IV உரையில் துணைத் தலைப்புகள் இல்லை.",
+        "Correct. Statements 2 and 3 are correct; Statement 1 is false.", "சரி. கூற்றுகள் 2 மற்றும் 3 சரியானவை; கூற்று 1 தவறானது.",
+        "Statement 1 is incorrect.", "கூற்று 1 தவறானது.",
+        "Statement 1 is incorrect.", "கூற்று 1 தவறானது.",
+        "Statement 1 is incorrect.", "கூற்று 1 தவறானது."
+    )
+
+    # -------------------------------------------------------------------------
+    # Q18 (Correct: B) - 4-statement
+    # -------------------------------------------------------------------------
+    add_q(
+        18, "Statement",
+        "Consider the following statements regarding landmark Supreme Court judgments on FR vs DPSP:\n1. Champakam Dorairajan (1951) held that Fundamental Rights are superior to DPSP, and DPSPs must run as subsidiary to Part III.\n2. Re Kerala Education Bill (1958) formulated the Doctrine of Harmonious Construction to balance Part III and Part IV.\n3. Kesavananda Bharati (1973) upheld the first part of Article 31C protecting Articles 39(b) and 39(c) against Articles 14 and 19.\n4. Minerva Mills (1980) held that harmony and balance between Part III and Part IV is an essential feature of the Basic Structure.\nWhich of the statements given above are CORRECT?",
+        "FR vs DPSP குறித்த முக்கிய உச்ச நீதிமன்றத் தீர்ப்புகள் பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. செண்பகம் துரைராஜன் வழக்கில் (1951) DPSP-ஐ விட அடிப்படை உரிமைகள் மேலானவை என்றும், DPSP பகுதி III-க்கு துணையாகச் செயல்பட வேண்டும் என்றும் தீர்ப்பளிக்கப்பட்டது.\n2. கேரளா கல்வி மசோதா வழக்கில் (1958) பகுதி III மற்றும் பகுதி IV ஆகியவற்றைச் சமநிலைப்படுத்த இணக்கமான விளக்கக் கோட்பாடு உருவாக்கப்பட்டது.\n3. கேசவானந்த பாரதி வழக்கில் (1973) உறுப்புகள் 14 மற்றும் 19-க்கு எதிராக 39(b) மற்றும் 39(c)-ஐப் பாதுகாக்கும் உறுப்பு 31C-ன் முதல் பகுதி உறுதி செய்யப்பட்டது.\n4. மினர்வா மில்ஸ் வழக்கில் (1980) பகுதி III மற்றும் பகுதி IV இடையிலான இணக்கமும் சமநிலையும் அடிப்படை அமைப்பின் அத்தியாவசிய அம்சம் எனத் தீர்ப்பளிக்கப்பட்டது.\nமேலே கொடுக்கப்பட்டுள்ள கூற்றுகளில் எவை சரியானவை?",
+        "1, 2 and 3 only", "1, 2 மற்றும் 3 மட்டுமே",
+        "1, 2, 3 and 4", "1, 2, 3 மற்றும் 4",
+        "2, 3 and 4 only", "2, 3 மற்றும் 4 மட்டுமே",
+        "1, 3 and 4 only", "1, 3 மற்றும் 4 மட்டுமே",
+        "B",
+        "All four statements 1, 2, 3, and 4 are CORRECT. They represent the complete 4-stage judicial evolution of FR vs DPSP relationship from 1951 to 1980.",
+        "1, 2, 3 மற்றும் 4 ஆகிய நான்கு கூற்றுகளும் சரியானவை. அவை 1951 முதல் 1980 வரையிலான FR vs DPSP தொடர்பின் முழுமையான 4-அடுக்கு நீதித்துறை வளர்ச்சியைப் பிரதிபலிக்கின்றன.",
+        "Chronology: Champakam (1951) -> Kerala Ed (1958) -> Kesavananda (1973) -> Minerva Mills (1980).", "காலவரிசை: செண்பகம் (1951) -> கேரளா கல்வி (1958) -> கேசவானந்த (1973) -> மினர்வா மில்ஸ் (1980).",
+        "Statement 4 is also correct.", "கூற்று 4-ம் சரியானதாகும்.",
+        "Correct. Statements 1, 2, 3 and 4 are all correct.", "சரி. கூற்றுகள் 1, 2, 3 மற்றும் 4 அனைத்தும் சரியானவை.",
+        "Statement 1 is also correct.", "கூற்று 1-ம் சரியானதாகும்.",
+        "Statement 2 is also correct.", "கூற்று 2-ம் சரியானதாகும்."
+    )
+
+    # -------------------------------------------------------------------------
+    # Q19 (Correct: C) - 2-statement
+    # -------------------------------------------------------------------------
+    add_q(
+        19, "Statement",
+        "Consider the following statements regarding Article 31C:\n1. Article 31C was inserted by the 25th Constitutional Amendment Act, 1971 to protect Articles 39(b) and 39(c) laws from Articles 14 and 19.\n2. The 42nd Constitutional Amendment Act, 1976 extended Article 31C protection to ALL Directive Principles in Part IV, but this extension was struck down in Minerva Mills (1980).\nWhich of the statements given above is/are CORRECT?",
+        "உறுப்பு 31C பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. உறுப்பு 31C உறுப்புகள் 14 மற்றும் 19-லிருந்து 39(b) மற்றும் 39(c) சட்டங்களைப் பாதுகாக்க 1971-ன் 25வது அரசியலமைப்பு திருத்தச் சட்டத்தால் இணைக்கப்பட்டது.\n2. 1976-ன் 42வது அரசியலமைப்பு திருத்தச் சட்டம் பகுதி IV-ல் உள்ள அனைத்து வழிகாட்டு நெறிமுறைகளுக்கும் உறுப்பு 31C பாதுகாப்பை நீட்டித்தது, ஆனால் இந்த நீட்டிப்பு மினர்வா மில்ஸ் வழக்கில் (1980) ரத்து செய்யப்பட்டது.\nமேலே கொடுக்கப்பட்டுள்ள கூற்றுகளில் எது/எவை சரியானது/சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Both 1 and 2", "1 மற்றும் 2 இரண்டும்",
+        "Neither 1 nor 2", "1-ம் இல்லை 2-ம் இல்லை",
+        "C",
+        "Both statements 1 and 2 are CORRECT. 25th CAA 1971 added Art 31C (upheld in Kesavananda 1973 for 39b/c). 42nd CAA 1976 expanded 31C to all DPSPs, which was invalidated in Minerva Mills 1980, restoring 31C protection exclusively for 39(b) and (c).",
+        "கூற்றுகள் 1 மற்றும் 2 இரண்டும் சரியானவை. 25வது திருத்தம் 1971 உறுப்பு 31C-ஐச் சேர்த்தது. 42வது திருத்தம் 1976 31C-ஐ அனைத்து DPSP-களுக்கும் விரிவாக்கியது, இது மினர்வா மில்ஸ் 1980 வழக்கில் செல்லாததாக்கப்பட்டு 39(b) மற்றும் (c)-க்கு மட்டுமே மீண்டும் மீட்டெடுக்கப்பட்டது.",
+        "Present Law: Article 31C protects ONLY Articles 39(b) and 39(c).", "தற்போதைய சட்டம்: உறுப்பு 31C உறுப்புகள் 39(b) மற்றும் 39(c)-ஐ மட்டுமே பாதுகாக்கிறது.",
+        "Statement 2 is also correct.", "கூற்று 2-ம் சரியானதாகும்.",
+        "Statement 1 is also correct.", "கூற்று 1-ம் சரியானதாகும்.",
+        "Correct. Both statements 1 and 2 are correct.", "சரி. கூற்றுகள் 1 மற்றும் 2 இரண்டும் சரியானவை.",
+        "Both statements are true.", "இரண்டு கூற்றுகளும் உண்மையானவை."
+    )
+
+    # -------------------------------------------------------------------------
+    # Q20 (Correct: D) - 3-statement
+    # -------------------------------------------------------------------------
+    add_q(
+        20, "Statement",
+        "Consider the following statements regarding DPSP Constitutional Amendments:\n1. The 42nd Amendment Act 1976 added four new DPSPs: Articles 39(f), 39A, 43A, and 48A.\n2. The 44th Amendment Act 1978 added Article 38(2) directing the State to minimise inequalities in income, status, facilities, and opportunities.\n3. The 86th Amendment Act 2002 modified Article 45 directing early childhood care and education for children below 6 years.\nWhich of the statements given above are CORRECT?",
+        "DPSP அரசியலமைப்பு திருத்தங்கள் பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. 1976-ன் 42வது திருத்தச் சட்டம் நான்கு புதிய DPSP-களைச் சேர்த்தது: உறுப்புகள் 39(f), 39A, 43A, மற்றும் 48A.\n2. 1978-ன் 44வது திருத்தச் சட்டம் வருமானம், அந்தஸ்து, வசதிகள் மற்றும் வாய்ப்புகளில் உள்ள சமத்துவமின்மையைக் குறைக்க அரசுக்கு வழிகாட்டும் உறுப்பு 38(2)-ஐச் சேர்த்தது.\n3. 2002-ன் 86வது திருத்தச் சட்டம் 6 வயதுக்குட்பட்ட குழந்தைகளுக்கான முன்பருவக் பராமரிப்பு மற்றும் கல்வியை வழிகாட்டும் உறுப்பு 45-ஐ திருத்தியது.\nமேலே கொடுக்கப்பட்டுள்ள கூற்றுகளில் எவை சரியானவை?",
+        "1 and 2 only", "1 மற்றும் 2 மட்டுமே",
+        "2 and 3 only", "2 மற்றும் 3 மட்டுமே",
+        "1 and 3 only", "1 மற்றும் 3 மட்டுமே",
+        "1, 2 and 3", "1, 2 மற்றும் 3",
+        "D",
+        "All three statements 1, 2, and 3 are CORRECT. 42nd CAA (4 DPSPs: 39f, 39A, 43A, 48A), 44th CAA (Art 38(2)), 86th CAA (Art 45 modified).",
+        "1, 2 மற்றும் 3 ஆகிய மூன்று கூற்றுகளும் சரியானவை. 42வது திருத்தம் (4 DPSP-கள்: 39f, 39A, 43A, 48A), 44வது திருத்தம் (உறுப்பு 38(2)), 86வது திருத்தம் (உறுப்பு 45 திருத்தப்பட்டது).",
+        "Amendment Summary: 42nd CAA = 4 DPSPs; 44th CAA = Art 38(2); 86th CAA = Art 45 modified; 97th CAA = Art 43B.",
+        "திருத்தச் சுருக்கம்: 42வது திருத்தம் = 4 DPSP-கள்; 44வது திருத்தம் = உறுப்பு 38(2); 86வது திருத்தம் = உறுப்பு 45 திருத்தம்; 97வது திருத்தம் = உறுப்பு 43B.",
+        "Statement 3 is also correct.", "கூற்று 3-ம் சரியானதாகும்.",
+        "Statement 1 is also correct.", "கூற்று 1-ம் சரியானதாகும்.",
+        "Statement 2 is also correct.", "கூற்று 2-ம் சரியானதாகும்.",
+        "Correct. Statements 1, 2 and 3 are all correct.", "சரி. கூற்றுகள் 1, 2 மற்றும் 3 அனைத்தும் சரியானவை."
+    )
+
+    # -------------------------------------------------------------------------
+    # Q21 (Correct: A) - 4-statement
+    # -------------------------------------------------------------------------
+    add_q(
+        21, "Statement",
+        "Consider the following statements regarding DPSP (Part IV) vs Fundamental Duties (Part IV-A):\n1. DPSPs are contained in Part IV, while Fundamental Duties are contained in Part IV-A.\n2. DPSPs were present in the original 1950 Constitution, while Fundamental Duties were added by the 42nd Amendment Act 1976.\n3. Both Part IV DPSPs and Part IV-A Fundamental Duties are non-justiciable in courts.\n4. Fundamental Duties automatically override Directive Principles in case of any overlap.\nWhich of the statements given above are CORRECT?",
+        "DPSP (பகுதி IV) vs அடிப்படைக் கடமைகள் (பகுதி IV-A) பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. DPSP-கள் பகுதி IV-ல் உள்ளன, அதே நேரத்தில் அடிப்படைக் கடமைகள் பகுதி IV-A-ல் உள்ளன.\n2. DPSP-கள் அசல் 1950 அரசியலமைப்பில் இருந்தன, அதே நேரத்தில் அடிப்படைக் கடமைகள் 1976-ன் 42வது திருத்தச் சட்டத்தால் சேர்க்கப்பட்டன.\n3. பகுதி IV DPSP-கள் மற்றும் பகுதி IV-A அடிப்படைக் கடமைகள் ஆகிய இரண்டும் நீதிமன்றங்களில் அமல்படுத்த முடியாதவை.\n4. மோதல் ஏற்படும் போது அடிப்படைக் கடமைகள் வழிகாட்டு நெறிமுறைகளைத் தானாகவே மிஞ்சும்.\nமேலே கொடுக்கப்பட்டுள்ள கூற்றுகளில் எவை சரியானவை?",
+        "1, 2 and 3 only", "1, 2 மற்றும் 3 மட்டுமே",
+        "1, 2 and 4 only", "1, 2 மற்றும் 4 மட்டுமே",
+        "2, 3 and 4 only", "2, 3 மற்றும் 4 மட்டுமே",
+        "1, 2, 3 and 4", "1, 2, 3 மற்றும் 4",
+        "A",
+        "Statements 1, 2, and 3 are correct. Statement 4 is INCORRECT because Fundamental Duties DO NOT override Directive Principles; both operate in complementary non-conflicting domains.",
+        "கூற்றுகள் 1, 2 மற்றும் 3 சரியானவை. கூற்று 4 தவறானது, ஏனெனில் அடிப்படைக் கடமைகள் வழிகாட்டு நெறிமுறைகளை மிஞ்சுவதில்லை; இரண்டும் ஒன்றுக்கொன்று நிரப்பியாகச் செயல்படுகின்றன.",
+        "Part IV = State Directives; Part IV-A = Citizen Duties. Neither overrides the other.", "பகுதி IV = அரசு வழிகாட்டல்கள்; பகுதி IV-A = குடிமகன் கடமைகள். ஒன்றையும் மற்றொன்று மிஞ்சாது.",
+        "Correct. Statements 1, 2 and 3 are correct; Statement 4 is false.", "சரி. கூற்றுகள் 1, 2 மற்றும் 3 சரியானவை; கூற்று 4 தவறானது.",
+        "Statement 4 is incorrect.", "கூற்று 4 தவறானது.",
+        "Statement 4 is incorrect.", "கூற்று 4 தவறானது.",
+        "Statement 4 is incorrect.", "கூற்று 4 தவறானது."
+    )
+
+    # -------------------------------------------------------------------------
+    # Q22 (Correct: B) - 2-statement
+    # -------------------------------------------------------------------------
+    add_q(
+        22, "Statement",
+        "Consider the following statements regarding Articles 39(b) and 39(c):\n1. Article 39(b) deals with the distribution of ownership and control of material resources to subserve common good.\n2. Article 39(c) deals with preventing the concentration of wealth and means of production to common detriment.\nWhich of the statements given above is/are CORRECT?",
+        "உறுப்புகள் 39(b) மற்றும் 39(c) பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. உறுப்பு 39(b) பொது நலனுக்குப் பயன்படும் வகையில் பொருள் வளங்களின் உரிமையும் கட்டுப்பாடும் பகிரப்படுவதைப் பற்றியது.\n2. உறுப்பு 39(c) பொதுப் பாதகத்திற்கு வழிவகுக்கும் வகையில் செல்வமும் உற்பத்தி சாதனங்களும் குவிப்பதைத் தடுப்பதைப் பற்றியது.\nமேலே கொடுக்கப்பட்டுள்ள கூற்றுகளில் எது/எவை சரியானது/சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "Both 1 and 2", "1 மற்றும் 2 இரண்டும்",
+        "2 only", "2 மட்டுமே",
+        "Neither 1 nor 2", "1-ம் இல்லை 2-ம் இல்லை",
+        "B",
+        "Both statements 1 and 2 are CORRECT. Article 39(b) focuses on material resources distribution, and Article 39(c) focuses on preventing wealth concentration. Both clauses receive legal immunity under Article 31C.",
+        "கூற்றுகள் 1 மற்றும் 2 இரண்டும் சரியானவை. உறுப்பு 39(b) பொருள் வளப் பகிர்வில் கவனம் செலுத்துகிறது, மேலும் உறுப்பு 39(c) செல்வக் குவிப்பைத் தடுப்பதில் கவனம் செலுத்துகிறது. இரண்டு உட்பிரிவுகளும் உறுப்பு 31C-ன் கீழ் சட்டப் பாதுகாப்பைப் பெறுகின்றன.",
+        "Shortcut: 39(b) = Distribution of Material Resources; 39(c) = Concentration of Wealth Prevention.", "குறுக்குவழி: 39(b) = பொருள் வளப் பகிர்வு; 39(c) = செல்வக் குவிப்புத் தடை.",
+        "Statement 2 is also correct.", "கூற்று 2-ம் சரியானதாகும்.",
+        "Correct. Both statements 1 and 2 are correct.", "சரி. கூற்றுகள் 1 மற்றும் 2 இரண்டும் சரியானவை.",
+        "Statement 1 is also correct.", "கூற்று 1-ம் சரியானதாகும்.",
+        "Both statements are true.", "இரண்டு கூற்றுகளும் உண்மையானவை."
+    )
+
+    # -------------------------------------------------------------------------
+    # Q23 (Correct: C) - 3-statement
+    # -------------------------------------------------------------------------
+    add_q(
+        23, "Statement",
+        "Consider the following statements regarding Article 39(d) (Equal Pay for Equal Work):\n1. Article 39(d) directs equal pay for equal work for both men and women.\n2. In Randhir Singh case (1982), Supreme Court read Article 39(d) alongside Articles 14 and 16 to make it an enforceable constitutional goal in public services.\n3. The Equal Remuneration Act, 1976 provides statutory enforcement for Article 39(d).\nWhich of the statements given above are CORRECT?",
+        "உறுப்பு 39(d) (சம வேலைக்கு சம ஊதியம்) பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. உறுப்பு 39(d) ஆண், பெண் இருபாலருக்கும் சம வேலைக்கு சம ஊதியத்தை வழிகாட்டுகிறது.\n2. ரந்தீர் சிங் வழக்கில் (1982), உச்ச நீதிமன்றம் உறுப்பு 39(d)-ஐ உறுப்புகள் 14 மற்றும் 16-உடன் சேர்த்து வாசித்து பொதுப்பணியில் அதை அமல்படுத்தக்கூடிய அரசியலமைப்பு இலக்காக்கியது.\n3. சம ஊதியச் சட்டம் 1976 உறுப்பு 39(d)-க்கு சட்டப்பூர்வ அமலாக்கத்தை வழங்குகிறது.\nமேலே கொடுக்கப்பட்டுள்ள கூற்றுகளில் எவை சரியானவை?",
+        "1 and 2 only", "1 மற்றும் 2 மட்டுமே",
+        "2 and 3 only", "2 மற்றும் 3 மட்டுமே",
+        "1, 2 and 3", "1, 2 மற்றும் 3",
+        "1 and 3 only", "1 மற்றும் 3 மட்டுமே",
+        "C",
+        "All three statements 1, 2, and 3 are CORRECT. Article 39(d) contains the directive, Randhir Singh (1982) integrated it with Articles 14 & 16, and Equal Remuneration Act 1976 provides statutory backing.",
+        "1, 2 மற்றும் 3 ஆகிய மூன்று கூற்றுகளும் சரியானவை. உறுப்பு 39(d) வழிகாட்டலைக் கொண்டுள்ளது, ரந்தீர் சிங் (1982) அதை உறுப்புகள் 14 & 16-உடன் இணைத்தது, மேலும் சம ஊதியச் சட்டம் 1976 சட்டப்பூர்வ ஆதரவை வழங்குகிறது.",
+        "Equal Remuneration Act 1976 statutorily supports Art 39(d).", "சம ஊதியச் சட்டம் 1976 உறுப்பு 39(d)-க்கு சட்டப்பூர்வ ஆதரவளிக்கிறது.",
+        "Statement 3 is also correct.", "கூற்று 3-ம் சரியானதாகும்.",
+        "Statement 1 is also correct.", "கூற்று 1-ம் சரியானதாகும்.",
+        "Correct. Statements 1, 2 and 3 are all correct.", "சரி. கூற்றுகள் 1, 2 மற்றும் 3 அனைத்தும் சரியானவை.",
+        "Statement 2 is also correct.", "கூற்று 2-ம் சரியானதாகும்."
+    )
+
+    # -------------------------------------------------------------------------
+    # Q24 (Correct: D) - 4-statement
+    # -------------------------------------------------------------------------
+    add_q(
+        24, "Statement",
+        "Consider the following quotes and commentaries on Part IV DPSP:\n1. Sir B.N. Rau recommended dividing rights into justiciable (Part III) and non-justiciable (Part IV).\n2. Dr. B.R. Ambedkar described DPSPs as 'Novel Features' of the Indian Constitution.\n3. Granville Austin called Fundamental Rights and DPSPs the 'Conscience of the Constitution'.\n4. Prof. K.T. Shah criticized DPSP as 'a cheque on a bank, payable only when the resources of the bank permit'.\nWhich of the statements given above are CORRECT?",
+        "பகுதி IV DPSP குறித்த பின்வரும் மேற்கோள்கள் மற்றும் விமர்சனங்களைக் கருதுக:\n1. சார் பி.என். ராவ் உரிமைகளை அமல்படுத்தக்கூடியவை (பகுதி III) மற்றும் அமல்படுத்த முடியாதவை (பகுதி IV) எனப் பிரிக்கப் பரிந்துரைத்தார்.\n2. டாக்டர் பி.ஆர். அம்பேத்கர் DPSP-ஐ இந்திய அரசியலமைப்பின் 'நவீன அம்சங்கள்' என விவரித்தார்.\n3. கிரான்வில் ஆஸ்டின் அடிப்படை உரிமைகள் மற்றும் DPSP-களை 'அரசியலமைப்பின் மனசாட்சி' என்று அழைத்தார்.\n4. பேராசிரியர் கே.டி. ஷா DPSP-ஐ 'வங்கியின் வசதி அனுமதிக்கும் போது மட்டுமே செலுத்தத்தக்க காசோலை' என விமர்சித்தார்.\nமேலே கொடுக்கப்பட்டுள்ள கூற்றுகளில் எவை சரியானவை?",
+        "1, 2 and 3 only", "1, 2 மற்றும் 3 மட்டுமே",
+        "2, 3 and 4 only", "2, 3 மற்றும் 4 மட்டுமே",
+        "1, 3 and 4 only", "1, 3 மற்றும் 4 மட்டுமே",
+        "1, 2, 3 and 4", "1, 2, 3 மற்றும் 4",
+        "D",
+        "All four statements 1, 2, 3, and 4 are CORRECT. They accurately reflect historical statements and Constituent Assembly commentary on Part IV DPSPs.",
+        "1, 2, 3 மற்றும் 4 ஆகிய நான்கு கூற்றுகளும் சரியானவை. அவை பகுதி IV DPSP-கள் குறித்த வரலாற்று கூற்றுகள் மற்றும் அரசியலமைப்பு நிர்ணய சபை விமர்சனங்களை துல்லியமாகப் பிரதிபலிக்கின்றன.",
+        "All 4 quotes are standard TNPSC questions on Constituent Assembly history.", "4 மேற்கோள்களும் அரசியலமைப்பு நிர்ணய சபை வரலாறு குறித்த தரப்படுத்தப்பட்ட டிஎன்பிஎஸ்சி வினாக்கள் ஆகும்.",
+        "Statement 4 is also correct.", "கூற்று 4-ம் சரியானதாகும்.",
+        "Statement 1 is also correct.", "கூற்று 1-ம் சரியானதாகும்.",
+        "Statement 2 is also correct.", "கூற்று 2-ம் சரியானதாகும்.",
+        "Correct. Statements 1, 2, 3 and 4 are all correct.", "சரி. கூற்றுகள் 1, 2, 3 மற்றும் 4 அனைத்தும் சரியானவை."
+    )
+
+    # -------------------------------------------------------------------------
+    # Q25 (Correct: A) - 2-statement
+    # -------------------------------------------------------------------------
+    add_q(
+        25, "Statement",
+        "Consider the following statements regarding Articles 39(e) and 39(f):\n1. Article 39(e) directs protection of health and strength of workers and tender age of children against economic abuse.\n2. Article 39(f) directs that children are given opportunities to develop in a healthy manner and in conditions of freedom and dignity.\nWhich of the statements given above is/are CORRECT?",
+        "உறுப்புகள் 39(e) மற்றும் 39(f) பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. உறுப்பு 39(e) தொழிலாளர்களின் ஆரோக்கியம், வலிமை மற்றும் குழந்தைகளின் இளம் வயதைப் பொருளாதாரத் துஷ்பிரயோகத்திலிருந்து பாதுகாக்க வழிகாட்டுகிறது.\n2. உறுப்பு 39(f) குழந்தைகள் ஆரோக்கியமான முறையிலும் சுதந்திரம் மற்றும் கண்ணியமான சூழ்நிலைகளிலும் வளர்வதற்கான வாய்ப்புகள் வழங்கப்பட வேண்டும் என வழிகாட்டுகிறது.\nமேலே கொடுக்கப்பட்டுள்ள கூற்றுகளில் எது/எவை சரியானது/சரியானவை?",
+        "Both 1 and 2", "1 மற்றும் 2 இரண்டும்",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Neither 1 nor 2", "1-ம் இல்லை 2-ம் இல்லை",
+        "A",
+        "Both statements 1 and 2 are CORRECT. Article 39(e) protects worker health & child tender age; Article 39(f) guarantees healthy child development opportunities (substituted by 42nd CAA 1976).",
+        "கூற்றுகள் 1 மற்றும் 2 இரண்டும் சரியானவை. உறுப்பு 39(e) தொழிலாளர் சுகாதாரம் & குழந்தை இளம் வயதைப் பாதுகாக்கிறது; உறுப்பு 39(f) ஆரோக்கியமான குழந்தை வளர்ச்சி வாய்ப்புகளை உத்தரவாதம் செய்கிறது (42வது திருத்தம் 1976 மூலம் மாற்றப்பட்டது).",
+        "Article 39(f) was modified by 42nd CAA 1976.", "உறுப்பு 39(f) 42வது திருத்தம் 1976 மூலம் மாற்றியமைக்கப்பட்டது.",
+        "Correct. Both statements 1 and 2 are correct.", "சரி. கூற்றுகள் 1 மற்றும் 2 இரண்டும் சரியானவை.",
+        "Statement 2 is also correct.", "கூற்று 2-ம் சரியானதாகும்.",
+        "Statement 1 is also correct.", "கூற்று 1-ம் சரியானதாகும்.",
+        "Both statements are true.", "இரண்டு கூற்றுகளும் உண்மையானவை."
+    )
+
+    # -------------------------------------------------------------------------
+    # Q26 (Correct: B) - 3-statement
+    # -------------------------------------------------------------------------
+    add_q(
+        26, "Statement",
+        "Consider the following statements regarding the Living Wage concept under Article 43:\n1. Article 43 directs the State to secure to all workers a living wage and a decent standard of life.\n2. Living Wage is higher than Minimum Wage and Fair Wage in labor jurisprudence.\n3. Article 43 mandates that 100% of industrial undertakings in India must be owned directly by the Union Government.\nWhich of the statements given above is/are CORRECT?",
+        "உறுப்பு 43-ன் கீழ் வாழ்வாதார ஊதியக் கருத்து பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. உறுப்பு 43 அனைத்துத் தொழிலாளர்களுக்கும் வாழ்வாதார ஊதியம் மற்றும் கண்ணியமான வாழ்க்கை முறையை உறுதி செய்ய அரசுக்கு வழிகாட்டுகிறது.\n2. தொழிலாளர் சட்டவியலில் வாழ்வாதார ஊதியம் என்பது குறைந்தபட்ச ஊதியம் மற்றும் நியாயமான ஊதியத்தை விட உயர்ந்தது.\n3. இந்தியாவில் உள்ள 100% தொழில்துறை நிறுவனங்களும் நேரடியாக மத்திய அரசாங்கத்திற்குச் சொந்தமாக இருக்க வேண்டும் என உறுப்பு 43 கட்டாயமாக்குகிறது.\nமேலே கொடுக்கப்பட்டுள்ள கூற்றுகளில் எது/எவை சரியானது/சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "1 and 2 only", "1 மற்றும் 2 மட்டுமே",
+        "2 and 3 only", "2 மற்றும் 3 மட்டுமே",
+        "1, 2 and 3", "1, 2 மற்றும் 3",
+        "B",
+        "Statements 1 and 2 are correct. Statement 3 is INCORRECT because Article 43 does not mandate 100% state ownership of industries; it promotes cottage industries on individual or co-operative basis and fair labor conditions.",
+        "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பு 43 தொழிற்சாலைகளை 100% அரசுடைமையாக்கக் கட்டாயப்படுத்தவில்லை; இது தனிநபர் அல்லது கூட்டுறவு அடிப்படையில் குடில்தொழில்கள் மற்றும் நியாயமான தொழிலாளர் நிலைமைகளை மேம்படுத்துகிறது.",
+        "Wage Hierarchy: Minimum Wage < Fair Wage < Living Wage (Art 43).", "ஊதியப் படிநிலை: குறைந்தபட்ச ஊதியம் < நியாயமான ஊதியம் < வாழ்வாதார ஊதியம் (உறுப்பு 43).",
+        "Statement 2 is also correct.", "கூற்று 2-ம் சரியானதாகும்.",
+        "Correct. Statements 1 and 2 are correct; Statement 3 is false.", "சரி. கூற்றுகள் 1 மற்றும் 2 சரியானவை; கூற்று 3 தவறானது.",
+        "Statement 3 is incorrect.", "கூற்று 3 தவறானது.",
+        "Statement 3 is incorrect.", "கூற்று 3 தவறானது."
+    )
+
+    # -------------------------------------------------------------------------
+    # Q27 (Correct: C) - 4-statement
+    # -------------------------------------------------------------------------
+    add_q(
+        27, "Statement",
+        "Consider the following entities included in the definition of 'State' under Article 36 read with Article 12 for Part IV:\n1. Government and Parliament of India\n2. Government and Legislature of each of the States\n3. All local authorities such as Panchayats, Municipalities, and District Boards\n4. Statutory bodies like Life Insurance Corporation (LIC) and Oil and Natural Gas Corporation (ONGC)\nWhich of the entities given above are included in the definition of 'State'?",
+        "பகுதி IV-க்காக உறுப்பு 12-உடன் சேர்த்து வாசிக்கப்படும் உறுப்பு 36-ன் கீழ் 'அரசு' என்ற வரையறையில் சேர்க்கப்பட்டுள்ள பின்வரும் அமைப்புகளைக் கருதுக:\n1. இந்திய அரசு மற்றும் நாடாளுமன்றம்\n2. ஒவ்வொரு மாநிலத்தின் அரசு மற்றும் சட்டமன்றம்\n3. பஞ்சாயத்துகள், நகராட்சிகள் மற்றும் மாவட்ட வாரியங்கள் போன்ற அனைத்து உள்ளாட்சி அமைப்புகளும்\n4. ஆயுள் காப்பீட்டுக் கழகம் (LIC) மற்றும் எண்ணெய் மற்றும் இயற்கை எரிவாயுக் கழகம் (ONGC) போன்ற சட்டப்பூர்வ அமைப்புகள்\nமேலே கொடுக்கப்பட்டுள்ள அமைப்புகளில் எவை 'அரசு' என்ற வரையறையில் சேர்க்கப்பட்டுள்ளன?",
+        "1, 2 and 3 only", "1, 2 மற்றும் 3 மட்டுமே",
+        "1 and 2 only", "1 மற்றும் 2 மட்டுமே",
+        "1, 2, 3 and 4", "1, 2, 3 மற்றும் 4",
+        "3 and 4 only", "3 மற்றும் 4 மட்டுமே",
+        "C",
+        "All four entities 1, 2, 3, and 4 are INCLUDED under Article 12/36 definition of State, binding all of them to apply Part IV Directive Principles.",
+        "1, 2, 3 மற்றும் 4 ஆகிய நான்கு அமைப்புகளும் உறுப்பு 12/36 அரசு வரையறையின் கீழ் சேர்க்கப்பட்டுள்ளன, அவை அனைத்தும் பகுதி IV வழிகாட்டு நெறிமுறைகளைப் பயன்படுத்தக் கட்டுப்படுத்தப்பட்டுள்ளன.",
+        "Article 12 definition applies identically to Part III (FR) and Part IV (DPSP via Art 36).", "உறுப்பு 12 வரையறை பகுதி III (FR) மற்றும் பகுதி IV (உறுப்பு 36 வழியே DPSP) ஆகிய இரண்டிற்கும் ஒரே மாதிரியாகப் பொருந்தும்.",
+        "Statutory corporations are also included.", "சட்டப்பூர்வ நிறுவனங்களும் சேர்க்கப்பட்டுள்ளன.",
+        "Local authorities are also included.", "உள்ளாட்சி அமைப்புகளும் சேர்க்கப்பட்டுள்ளன.",
+        "Correct. Entities 1, 2, 3 and 4 are all included under Article 12/36 State definition.", "சரி. 1, 2, 3 மற்றும் 4 ஆகிய அமைப்புகள் அனைத்தும் உறுப்பு 12/36 அரசு வரையறையின் கீழ் சேர்க்கப்பட்டுள்ளன.",
+        "Central and state governments are also included.", "மத்திய மற்றும் மாநில அரசுகளும் சேர்க்கப்பட்டுள்ளன."
+    )
+
+    # -------------------------------------------------------------------------
+    # Q28 (Correct: D) - 2-statement
+    # -------------------------------------------------------------------------
+    add_q(
+        28, "Statement",
+        "Consider the following statements regarding Article 37:\n1. Article 37 states that Directive Principles are fundamental in the governance of the country.\n2. Article 37 states that it shall be the duty of the State to apply these principles in making laws.\nWhich of the statements given above is/are CORRECT?",
+        "உறுப்பு 37 பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. உறுப்பு 37 வழிகாட்டு நெறிமுறைகள் நாட்டின் ஆட்சியில் அடிப்படையானவை எனக் கூறுகிறது.\n2. உறுப்பு 37 சட்டம் இயற்றுவதில் இக்கோட்பாடுகளைப் பயன்படுத்துவது அரசின் கடமை எனக் கூறுகிறது.\nமேலே கொடுக்கப்பட்டுள்ள கூற்றுகளில் எது/எவை சரியானது/சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Neither 1 nor 2", "1-ம் இல்லை 2-ம் இல்லை",
+        "Both 1 and 2", "1 மற்றும் 2 இரண்டும்",
+        "D",
+        "Both statements 1 and 2 are CORRECT. Article 37 contains two key pillars: 1) Non-justiciable in courts, but fundamental in governance; 2) Duty of the State to apply these principles in making laws.",
+        "கூற்றுகள் 1 மற்றும் 2 இரண்டும் சரியானவை. உறுப்பு 37 இரண்டு முக்கியத் தூண்களைக் கொண்டுள்ளது: 1) நீதிமன்றங்களில் அமல்படுத்த முடியாதது, ஆனால் ஆட்சியில் அடிப்படையானது; 2) சட்டம் இயற்றுவதில் இக்கோட்பாடுகளைப் பயன்படுத்துவது அரசின் கடமை.",
+        "Article 37 establishes the constitutional mandate for legislative policy enactment.", "உறுப்பு 37 சட்டமன்றக் கொள்கை இயற்றலுக்கான அரசியலமைப்பு கட்டளையை நிறுவுகிறது.",
+        "Statement 2 is also correct.", "கூற்று 2-ம் சரியானதாகும்.",
+        "Statement 1 is also correct.", "கூற்று 1-ம் சரியானதாகும்.",
+        "Both statements are true.", "இரண்டு கூற்றுகளும் உண்மையானவை.",
+        "Correct. Both statements 1 and 2 are correct.", "சரி. கூற்றுகள் 1 மற்றும் 2 இரண்டும் சரியானவை."
+    )
+
+    # -------------------------------------------------------------------------
+    # Q29 (Correct: A) - 3-statement
+    # -------------------------------------------------------------------------
+    add_q(
+        29, "Statement",
+        "Consider the following statements regarding environmental constitutional amendments:\n1. Article 48A (State environment protection directive) was added to Part IV.\n2. Article 48A was added by the 44th Constitutional Amendment Act, 1978.\n3. Forests and Protection of Wild Animals were transferred from State List to Concurrent List by the 42nd Amendment Act 1976.\nWhich of the statements given above is/are CORRECT?",
+        "சுற்றுச்சூழல் அரசியலமைப்பு திருத்தங்கள் பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. உறுப்பு 48A (அரசு சுற்றுச்சூழல் பாதுகாப்பு வழிகாட்டல்) பகுதி IV-ல் சேர்க்கப்பட்டது.\n2. உறுப்பு 48A 1978-ன் 44வது அரசியலமைப்பு திருத்தச் சட்டத்தால் சேர்க்கப்பட்டது.\n3. காடுகள் மற்றும் வனவிலங்குகள் பாதுகாப்பு ஆகியவை 1976-ன் 42வது திருத்தச் சட்டத்தால் மாநிலப் பட்டியலிலிருந்து பொதுப் பட்டியலுக்கு மாற்றப்பட்டன.\nமேலே கொடுக்கப்பட்டுள்ள கூற்றுகளில் எது/எவை சரியானது/சரியானவை?",
+        "1 and 3 only", "1 மற்றும் 3 மட்டுமே",
+        "1 and 2 only", "1 மற்றும் 2 மட்டுமே",
+        "2 and 3 only", "2 மற்றும் 3 மட்டுமே",
+        "1, 2 and 3", "1, 2 மற்றும் 3",
+        "A",
+        "Statements 1 and 3 are correct. Statement 2 is INCORRECT because Article 48A was inserted by the 42nd Amendment Act 1976, NOT the 44th Amendment Act 1978.",
+        "கூற்றுகள் 1 மற்றும் 3 சரியானவை. கூற்று 2 தவறானது, ஏனெனில் உறுப்பு 48A 1976-ன் 42வது திருத்தச் சட்டத்தால் சேர்க்கப்பட்டது, 1978-ன் 44வது திருத்தச் சட்டத்தால் அல்ல.",
+        "Remember: Art 48A = 42nd CAA (1976).", "நினைவில் கொள்க: உறுப்பு 48A = 42வது திருத்தம் (1976).",
+        "Correct. Statements 1 and 3 are correct; Statement 2 is false.", "சரி. கூற்றுகள் 1 மற்றும் 3 சரியானவை; கூற்று 2 தவறானது.",
+        "Statement 2 is incorrect.", "கூற்று 2 தவறானது.",
+        "Statement 2 is incorrect.", "கூற்று 2 தவறானது.",
+        "Statement 2 is incorrect.", "கூற்று 2 தவறானது."
+    )
+
+    # -------------------------------------------------------------------------
+    # Q30 (Correct: B) - 4-statement
+    # -------------------------------------------------------------------------
+    add_q(
+        30, "Statement",
+        "Consider the following statements regarding Supreme Court observations on Uniform Civil Code (Article 44):\n1. In Sarla Mudgal (1995), SC urged the Union Govt to enforce Article 44 to stop bigamous marriages via conversion.\n2. In Shayara Bano (2017), SC struck down Instant Triple Talaq under Article 14.\n3. In John Vallamattom (2003), SC observed that a common civil code will help national integration.\n4. Uniform Civil Code is currently implemented nationwide by an Act of Parliament.\nWhich of the statements given above are CORRECT?",
+        "பொது சிவில் சட்டம் (உறுப்பு 44) குறித்த உச்ச நீதிமன்ற அவதானிப்புகள் பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. சர்லா முத்கல் வழக்கில் (1995), மதம் மாறி இரட்டைத் திருமணம் செய்வதைத் தடுக்க உறுப்பு 44-ஐ அமல்படுத்துமாறு மத்திய அரசை SC வலியுறுத்தியது.\n2. ஷாயரா பானோ வழக்கில் (2017), முத்தலாக் முறையை உறுப்பு 14-ன் கீழ் SC ரத்து செய்தது.\n3. ஜான் வல்லமட்டம் வழக்கில் (2003), பொது சிவில் சட்டம் தேசிய ஒருமைப்பாட்டிற்கு உதவும் என SC குறிப்பிட்டது.\n4. பொது சிவில் சட்டம் தற்போது நாடாளுமன்றச் சட்டம் மூலம் நாடு முழுவதும் அமல்படுத்தப்பட்டுள்ளது.\nமேலே கொடுக்கப்பட்டுள்ள கூற்றுகளில் எவை சரியானவை?",
+        "1 and 2 only", "1 மற்றும் 2 மட்டுமே",
+        "1, 2 and 3 only", "1, 2 மற்றும் 3 மட்டுமே",
+        "2, 3 and 4 only", "2, 3 மற்றும் 4 மட்டுமே",
+        "1, 2, 3 and 4", "1, 2, 3 மற்றும் 4",
+        "B",
+        "Statements 1, 2, and 3 are correct. Statement 4 is INCORRECT because there is no nationwide Uniform Civil Code Act passed by Parliament yet; Article 44 remains a Part IV DPSP goal (operating locally only in Goa).",
+        "கூற்றுகள் 1, 2 மற்றும் 3 சரியானவை. கூற்று 4 தவறானது, ஏனெனில் நாடு தழுவிய பொது சிவில் சட்டச் சட்டம் எதுவும் இதுவரை நாடாளுமன்றத்தால் நிறைவேற்றப்படவில்லை; உறுப்பு 44 பகுதி IV DPSP இலக்காகவே நீடிக்கிறது (கோவாவில் மட்டுமே உள்ளூர் சட்டமாகச் செயல்படுகிறது).",
+        "Art 44 UCC remains a DPSP policy directive.", "உறுப்பு 44 UCC ஒரு DPSP கொள்கை வழிகாட்டலாகவே உள்ளது.",
+        "Statement 3 is also correct.", "கூற்று 3-ம் சரியானதாகும்.",
+        "Correct. Statements 1, 2 and 3 are correct; Statement 4 is false.", "சரி. கூற்றுகள் 1, 2 மற்றும் 3 சரியானவை; கூற்று 4 தவறானது.",
+        "Statement 4 is incorrect.", "கூற்று 4 தவறானது.",
+        "Statement 4 is incorrect.", "கூற்று 4 தவறானது."
+    )
+
+    # -------------------------------------------------------------------------
+    # Q31 (Correct: C) - 2-statement
+    # -------------------------------------------------------------------------
+    add_q(
+        31, "Statement",
+        "Consider the following statements regarding Articles 43A and 43B:\n1. Article 43A directs the State to secure participation of workers in management of industrial undertakings.\n2. Article 43B directs the State to promote voluntary formation, autonomous functioning, and professional management of co-operative societies.\nWhich of the statements given above is/are CORRECT?",
+        "உறுப்புகள் 43A மற்றும் 43B பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. உறுப்பு 43A தொழிற்சாலைகள் மேலாண்மையில் தொழிலாளர்களின் பங்கேற்பை உறுதி செய்ய அரசுக்கு வழிகாட்டுகிறது.\n2. உறுப்பு 43B கூட்டுறவுச் சங்கங்களின் தன்னார்வ உருவாக்கம், தன்னாட்சி செயல்பாடு மற்றும் தொழில்முறை மேலாண்மையை மேம்படுத்த அரசுக்கு வழிகாட்டுகிறது.\nமேலே கொடுக்கப்பட்டுள்ள கூற்றுகளில் எது/எவை சரியானது/சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Both 1 and 2", "1 மற்றும் 2 இரண்டும்",
+        "Neither 1 nor 2", "1-ம் இல்லை 2-ம் இல்லை",
+        "C",
+        "Both statements 1 and 2 are CORRECT. Article 43A (workers in management - 42nd CAA 1976); Article 43B (co-operative societies - 97th CAA 2011).",
+        "கூற்றுகள் 1 மற்றும் 2 இரண்டும் சரியானவை. உறுப்பு 43A (மேலாண்மையில் தொழிலாளர்கள் - 42வது திருத்தம் 1976); உறுப்பு 43B (கூட்டுறவுச் சங்கங்கள் - 97வது திருத்தம் 2011).",
+        "Recall: 43A = Workers participation; 43B = Co-operatives.", "நினைவு கொள்க: 43A = தொழிலாளர்கள் பங்கேற்பு; 43B = கூட்டுறவுச் சங்கங்கள்.",
+        "Statement 2 is also correct.", "கூற்று 2-ம் சரியானதாகும்.",
+        "Statement 1 is also correct.", "கூற்று 1-ம் சரியானதாகும்.",
+        "Correct. Both statements 1 and 2 are correct.", "சரி. கூற்றுகள் 1 மற்றும் 2 இரண்டும் சரியானவை.",
+        "Both statements are true.", "இரண்டு கூற்றுகளும் உண்மையானவை."
+    )
+
+    # -------------------------------------------------------------------------
+    # Q32 (Correct: D) - 3-statement
+    # -------------------------------------------------------------------------
+    add_q(
+        32, "Statement",
+        "Consider the following statements regarding the 86th Constitutional Amendment Act, 2002:\n1. It added Article 21A as a Fundamental Right in Part III for free and compulsory education for children aged 6 to 14 years.\n2. It substituted the subject matter of Article 45 in Part IV to early childhood care and education for children below 6 years.\n3. It added clause (k) to Article 51A in Part IV-A making it a duty of parents/guardians to provide education opportunities for children aged 6 to 14 years.\nWhich of the statements given above are CORRECT?",
+        "2002-ன் 86வது அரசியலமைப்பு திருத்தச் சட்டம் பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. இது 6 முதல் 14 வயது வரையிலான குழந்தைகளுக்கு இலவச மற்றும் கட்டாயக் கல்விக்காகப் பகுதி III-ல் உறுப்பு 21A-ஐ அடிப்படை உரிமையாகச் சேர்த்தது.\n2. இது பகுதி IV-ல் உறுப்பு 45-ன் பொருளை 6 வயதுக்குட்பட்ட குழந்தைகளுக்கான முன்பருவக் பராமரிப்பு மற்றும் கல்வியாக மாற்றியமைத்தது.\n3. இது பகுதி IV-A-ல் உறுப்பு 51A-ல் (k) உட்பிரிவைச் சேர்த்து 6 முதல் 14 வயது வரையிலான குழந்தைகளுக்குக் கல்வி வாய்ப்புகளை வழங்குவதைப் பெற்றோர்/பாதுகாவலர்களின் கடமையாக்கியது.\nமேலே கொடுக்கப்பட்டுள்ள கூற்றுகளில் எவை சரியானவை?",
+        "1 and 2 only", "1 மற்றும் 2 மட்டுமே",
+        "2 and 3 only", "2 மற்றும் 3 மட்டுமே",
+        "1 and 3 only", "1 மற்றும் 3 மட்டுமே",
+        "1, 2 and 3", "1, 2 மற்றும் 3",
+        "D",
+        "All three statements 1, 2, and 3 are CORRECT. The 86th CAA 2002 effected a complete 3-part educational reform across Part III, Part IV, and Part IV-A.",
+        "1, 2 மற்றும் 3 ஆகிய மூன்று கூற்றுகளும் சரியானவை. 86வது திருத்தம் 2002 பகுதி III, பகுதி IV, மற்றும் பகுதி IV-A ஆகிய மூன்றிலும் ஒரு முழுமையான 3-பகுதி கல்விச் சீர்திருத்தத்தைச் செய்தது.",
+        "Tri-part 86th CAA 2002: Art 21A (FR), Art 45 (DPSP), Art 51A(k) (FD).", "3-பகுதி 86வது திருத்தம் 2002: உறுப்பு 21A (FR), உறுப்பு 45 (DPSP), உறுப்பு 51A(k) (FD).",
+        "Statement 3 is also correct.", "கூற்று 3-ம் சரியானதாகும்.",
+        "Statement 1 is also correct.", "கூற்று 1-ம் சரியானதாகும்.",
+        "Statement 2 is also correct.", "கூற்று 2-ம் சரியானதாகும்.",
+        "Correct. Statements 1, 2 and 3 are all correct.", "சரி. கூற்றுகள் 1, 2 மற்றும் 3 அனைத்தும் சரியானவை."
+    )
+
+    # -------------------------------------------------------------------------
+    # Q33 (Correct: A) - 4-statement
+    # -------------------------------------------------------------------------
+    add_q(
+        33, "Statement",
+        "Consider the following statements regarding Panchayati Raj (Article 40 & 73rd Amendment):\n1. Article 40 is a Gandhian DPSP directing organization of village panchayats.\n2. The 73rd Amendment Act 1992 added Part IX (Articles 243 to 243O) to constitutionalize Panchayati Raj.\n3. The 73rd Amendment Act 1992 added the 11th Schedule containing 29 functional items for Panchayats.\n4. Article 40 was deleted from Part IV upon the passage of the 73rd Amendment Act.\nWhich of the statements given above are CORRECT?",
+        "பஞ்சாயத்து ராஜ் (உறுப்பு 40 & 73வது திருத்தம்) பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. உறுப்பு 40 கிராம பஞ்சாயத்துகளை அமைக்க வழிகாட்டும் ஒரு காந்திய DPSP ஆகும்.\n2. 1992-ன் 73வது திருத்தச் சட்டம் பஞ்சாயத்து ராஜிற்கு அரசியலமைப்பு அந்தஸ்து வழங்க பகுதி IX-ஐ (உறுப்புகள் 243 முதல் 243O வரை) சேர்த்தது.\n3. 1992-ன் 73வது திருத்தச் சட்டம் பஞ்சாயத்துகளுக்கான 29 செயல்முறைப் பொருட்களைக் கொண்ட 11வது அட்டவணையைச் சேர்த்தது.\n4. 73வது திருத்தச் சட்டம் நிறைவேற்றப்பட்டவுடன் பகுதி IV-லிருந்து உறுப்பு 40 நீக்கப்பட்டது.\nமேலே கொடுக்கப்பட்டுள்ள கூற்றுகளில் எவை சரியானவை?",
+        "1, 2 and 3 only", "1, 2 மற்றும் 3 மட்டுமே",
+        "1 and 2 only", "1 மற்றும் 2 மட்டுமே",
+        "2, 3 and 4 only", "2, 3 மற்றும் 4 மட்டுமே",
+        "1, 2, 3 and 4", "1, 2, 3 மற்றும் 4",
+        "A",
+        "Statements 1, 2, and 3 are correct. Statement 4 is INCORRECT because Article 40 WAS NOT deleted; it remains active in Part IV.",
+        "கூற்றுகள் 1, 2 மற்றும் 3 சரியானவை. கூற்று 4 தவறானது, ஏனெனில் உறுப்பு 40 நீக்கப்படவில்லை; இது பகுதி IV-ல் தொடர்ந்து செயல்படுகிறது.",
+        "Article 40 was NOT deleted by 73rd CAA 1992.", "73வது திருத்தம் 1992 மூலம் உறுப்பு 40 நீக்கப்படவில்லை.",
+        "Correct. Statements 1, 2 and 3 are correct; Statement 4 is false.", "சரி. கூற்றுகள் 1, 2 மற்றும் 3 சரியானவை; கூற்று 4 தவறானது.",
+        "Statement 3 is also correct.", "கூற்று 3-ம் சரியானதாகும்.",
+        "Statement 4 is incorrect.", "கூற்று 4 தவறானது.",
+        "Statement 4 is incorrect.", "கூற்று 4 தவறானது."
+    )
+
+    # -------------------------------------------------------------------------
+    # Q34 (Correct: B) - 2-statement
+    # -------------------------------------------------------------------------
+    add_q(
+        34, "Statement",
+        "Consider the following statements regarding State of Tamil Nadu v. L. Abu Kavur Bai (1984):\n1. The Supreme Court upheld Tamil Nadu's Stage Carriages (Acquisition) Act nationalizing private bus routes under Article 39(b) and Article 31C.\n2. The Supreme Court held that 'material resources of the community' includes private transport vehicles subserving public transport needs.\nWhich of the statements given above is/are CORRECT?",
+        "தமிழ்நாடு அரசு எதிர் எல். அபு கவூர் பாய் வழக்கு (1984) பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. உறுப்பு 39(b) மற்றும் உறுப்பு 31C-ன் கீழ் தனியார் பேருந்து பாதைகளைத் தேசியமயமாக்கும் தமிழ்நாட்டின் பேருந்துகள் (கையகப்படுத்துதல்) சட்டத்தை உச்ச நீதிமன்றம் உறுதி செய்தது.\n2. 'சமூகத்தின் பொருள் வளங்கள்' என்பது பொதுப் போக்குவரத்துத் தேவைகளுக்குப் பயன்படும் தனியார் போக்குவரத்து வாகனங்களையும் உள்ளடக்கும் என உச்ச நீதிமன்றம் தீர்ப்பளித்தது.\nமேலே கொடுக்கப்பட்டுள்ள கூற்றுகளில் எது/எவை சரியானது/சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "Both 1 and 2", "1 மற்றும் 2 இரண்டும்",
+        "2 only", "2 மட்டுமே",
+        "Neither 1 nor 2", "1-ம் இல்லை 2-ம் இல்லை",
+        "B",
+        "Both statements 1 and 2 are CORRECT. In Abu Kavur Bai (1984), a Constitution Bench upheld Tamil Nadu's bus nationalization legislation under Article 39(b) protected by Article 31C.",
+        "கூற்றுகள் 1 மற்றும் 2 இரண்டும் சரியானவை. அபு கவூர் பாய் வழக்கில் (1984), உறுப்பு 31C-ஆல் பாதுகாக்கப்பட்ட உறுப்பு 39(b)-ன் கீழ் தமிழ்நாட்டின் பேருந்து தேசியமயமாக்கல் சட்டத்தை ஓர் அரசியலமைப்பு அமர்வு உறுதி செய்தது.",
+        "Abu Kavur Bai (1984) is a landmark TNPSC case on Art 39(b) material resources and Art 31C.", "அபு கவூர் பாய் (1984) உறுப்பு 39(b) பொருள் வளங்கள் மற்றும் உறுப்பு 31C குறித்த முக்கிய டிஎன்பிஎஸ்சி வழக்காகும்.",
+        "Statement 2 is also correct.", "கூற்று 2-ம் சரியானதாகும்.",
+        "Correct. Both statements 1 and 2 are correct.", "சரி. கூற்றுகள் 1 மற்றும் 2 இரண்டும் சரியானவை.",
+        "Statement 1 is also correct.", "கூற்று 1-ம் சரியானதாகும்.",
+        "Both statements are true.", "இரண்டு கூற்றுகளும் உண்மையானவை."
+    )
+
+    # -------------------------------------------------------------------------
+    # Q35 (Correct: C) - 3-statement
+    # -------------------------------------------------------------------------
+    add_q(
+        35, "Statement",
+        "Consider the following statements regarding Article 41:\n1. Article 41 directs the State to secure Right to Work, to Education and to Public Assistance.\n2. Public assistance under Article 41 specifically covers cases of unemployment, old age, sickness, and disablement.\n3. Realization of Article 41 directives is explicitly subject to the limits of economic capacity and development of the State.\nWhich of the statements given above are CORRECT?",
+        "உறுப்பு 41 பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. உறுப்பு 41 வேலை, கல்வி மற்றும் பொது உதவி உரிமையை உறுதி செய்ய அரசுக்கு வழிகாட்டுகிறது.\n2. உறுப்பு 41-ன் கீழ் பொது உதவி என்பது வேலையின்மை, முதியோர், நோய் மற்றும் ஊனம் ஆகிய நிகழ்வுகளைக் குறிப்பாக உள்ளடக்கியது.\n3. உறுப்பு 41 வழிகாட்டல்களை நிறைவேற்றுவது அரசின் பொருளாதாரத் திறன் மற்றும் வளர்ச்சியின் வரம்புகளுக்கு வெளிப்படையாக உட்பட்டது.\nமேலே கொடுக்கப்பட்டுள்ள கூற்றுகளில் எவை சரியானவை?",
+        "1 and 2 only", "1 மற்றும் 2 மட்டுமே",
+        "2 and 3 only", "2 மற்றும் 3 மட்டுமே",
+        "1, 2 and 3", "1, 2 மற்றும் 3",
+        "1 and 3 only", "1 மற்றும் 3 மட்டுமே",
+        "C",
+        "All three statements 1, 2, and 3 are CORRECT. Article 41 explicitly outlines these 3 core aspects.",
+        "1, 2 மற்றும் 3 ஆகிய மூன்று கூற்றுகளும் சரியானவை. உறுப்பு 41 இந்த 3 முக்கிய அம்சங்களையும் வெளிப்படையாக விவரிக்கிறது.",
+        "Article 41 explicitly includes economic capacity qualification.", "உறுப்பு 41 பொருளாதாரத் திறன் தகுதியை வெளிப்படையாக உள்ளடக்கியுள்ளது.",
+        "Statement 3 is also correct.", "கூற்று 3-ம் சரியானதாகும்.",
+        "Statement 1 is also correct.", "கூற்று 1-ம் சரியானதாகும்.",
+        "Correct. Statements 1, 2 and 3 are all correct.", "சரி. கூற்றுகள் 1, 2 மற்றும் 3 அனைத்தும் சரியானவை.",
+        "Statement 2 is also correct.", "கூற்று 2-ம் சரியானதாகும்."
+    )
+
+    # -------------------------------------------------------------------------
+    # Q36 (Correct: D) - 4-statement
+    # -------------------------------------------------------------------------
+    add_q(
+        36, "Statement",
+        "Consider the following statements regarding Article 42:\n1. Article 42 directs securing just and humane conditions of work.\n2. Article 42 directs providing maternity relief.\n3. In Bandhua Mukti Morcha (1984), SC read Article 42 into Article 21 to mandate humane working conditions for bonded laborers.\n4. Article 42 mandates a compulsory 5-day work week in all private IT companies.\nWhich of the statements given above are CORRECT?",
+        "உறுப்பு 42 பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. உறுப்பு 42 நியாயமான மற்றும் மனிதத்தன்மையுள்ள வேலை நிலைமைகளை உறுதி செய்ய வழிகாட்டுகிறது.\n2. உறுப்பு 42 பேறுகால உதவி வழங்க வழிகாட்டுகிறது.\n3. பந்துவா முக்தி மோர்ச்சா வழக்கில் (1984), கொத்தடிமைகளுக்கு மனிதத்தன்மை வேலை நிலைமைகளைக் கட்டாயமாக்க SC உறுப்பு 42-ஐ உறுப்பு 21-க்குள் வாசித்தது.\n4. உறுப்பு 42 அனைத்துத் தனியார் தகவல் தொழில்நுட்ப நிறுவனங்களிலும் கட்டாய 5-நாள் வேலை வாரத்தைக் கட்டாயமாக்குகிறது.\nமேலே கொடுக்கப்பட்டுள்ள கூற்றுகளில் எவை சரியானவை?",
+        "1 and 2 only", "1 மற்றும் 2 மட்டுமே",
+        "1, 2 and 4 only", "1, 2 மற்றும் 4 மட்டுமே",
+        "2, 3 and 4 only", "2, 3 மற்றும் 4 மட்டுமே",
+        "1, 2 and 3 only", "1, 2 மற்றும் 3 மட்டுமே",
+        "D",
+        "Statements 1, 2, and 3 are correct. Statement 4 is INCORRECT because Article 42 does not mandate a 5-day IT work week; working hours are regulated under statutory labor Acts.",
+        "கூற்றுகள் 1, 2 மற்றும் 3 சரியானவை. கூற்று 4 தவறானது, ஏனெனில் உறுப்பு 42 5-நாள் IT வேலை வாரத்தைக் கட்டாயப்படுத்தவில்லை; வேலை நேரங்கள் சட்டப்பூர்வ தொழிலாளர் சட்டங்களின் கீழ் முறைப்படுத்தப்படுகின்றன.",
+        "Article 42 sets policy guidelines for humane work conditions and maternity relief.", "உறுப்பு 42 மனிதத்தன்மை வேலை நிலைமைகள் மற்றும் பேறுகால உதவிக்கான கொள்கை வழிகாட்டுதல்களை அமைக்கிறது.",
+        "Statement 3 is also correct.", "கூற்று 3-ம் சரியானதாகும்.",
+        "Statement 4 is incorrect.", "கூற்று 4 தவறானது.",
+        "Statement 4 is incorrect.", "கூற்று 4 தவறானது.",
+        "Correct. Statements 1, 2 and 3 are correct; Statement 4 is false.", "சரி. கூற்றுகள் 1, 2 மற்றும் 3 சரியானவை; கூற்று 4 தவறானது."
+    )
+
+    # -------------------------------------------------------------------------
+    # Q37 (Correct: A) - 2-statement
+    # -------------------------------------------------------------------------
+    add_q(
+        37, "Statement",
+        "Consider the following statements regarding Article 46:\n1. Article 46 directs promotion with special care of the educational and economic interests of Scheduled Castes, Scheduled Tribes, and other weaker sections.\n2. Article 46 directs protection of SCs and STs from social injustice and all forms of exploitation.\nWhich of the statements given above is/are CORRECT?",
+        "உறுப்பு 46 பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. உறுப்பு 46 பட்டியல் சாதியினர், பட்டியல் பழங்குடியினர் மற்றும் பிற எளிய பிரிவினரின் கல்வி மற்றும் பொருளாதார நலன்களை சிறப்பு கவனத்துடன் மேம்படுத்த வழிகாட்டுகிறது.\n2. உறுப்பு 46 எஸ்சி மற்றும் எஸ்டி பிரிவினரைச் சமூக அநீதி மற்றும் அனைத்து வகையான சுரண்டல்களிலிருந்தும் பாதுகாக்க வழிகாட்டுகிறது.\nமேலே கொடுக்கப்பட்டுள்ள கூற்றுகளில் எது/எவை சரியானது/சரியானவை?",
+        "Both 1 and 2", "1 மற்றும் 2 இரண்டும்",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Neither 1 nor 2", "1-ம் இல்லை 2-ம் இல்லை",
+        "A",
+        "Both statements 1 and 2 are CORRECT. Article 46 covers both 1) educational and economic promotion; 2) protection from social injustice and all forms of exploitation.",
+        "கூற்றுகள் 1 மற்றும் 2 இரண்டும் சரியானவை. உறுப்பு 46 1) கல்வி மற்றும் பொருளாதார மேம்பாடு; 2) சமூக அநீதி மற்றும் அனைத்து வகையான சுரண்டல்களிலிருந்தும் பாதுகாப்பு ஆகிய இரண்டையும் உள்ளடக்கியது.",
+        "Article 46 combines economic upliftment with social protection.", "உறுப்பு 46 பொருளாதார மேம்பாட்டைச் சமூகப் பாதுகாப்புடன் இணைக்கிறது.",
+        "Correct. Both statements 1 and 2 are correct.", "சரி. கூற்றுகள் 1 மற்றும் 2 இரண்டும் சரியானவை.",
+        "Statement 2 is also correct.", "கூற்று 2-ம் சரியானதாகும்.",
+        "Statement 1 is also correct.", "கூற்று 1-ம் சரியானதாகும்.",
+        "Both statements are true.", "இரண்டு கூற்றுகளும் உண்மையானவை."
+    )
+
+    # -------------------------------------------------------------------------
+    # Q38 (Correct: B) - 3-statement
+    # -------------------------------------------------------------------------
+    add_q(
+        38, "Statement",
+        "Consider the following statements regarding Article 47:\n1. Article 47 regards raising nutrition level and standard of living as primary duties of the State.\n2. Article 47 directs prohibition of consumption of intoxicating drinks except for medicinal purposes.\n3. Article 47 prohibits medicinal use of alcohol under all circumstances.\nWhich of the statements given above is/are CORRECT?",
+        "உறுப்பு 47 பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. உறுப்பு 47 சத்துணவு நிலை மற்றும் வாழ்க்கை முறையை உயர்த்துவதை அரசின் முதன்மைக் கடமைகளாகக் கருதுகிறது.\n2. உறுப்பு 47 மருத்துவ நோக்கங்களைத் தவிர போதைப் பானங்கள் அருந்துவதை மதுவிலக்கு செய்ய வழிகாட்டுகிறது.\n3. உறுப்பு 47 அனைத்து சூழ்நிலைகளிலும் ஆல்கஹாலின் மருத்துவப் பயன்பாட்டைத் தடுக்கிறது.\nமேலே கொடுக்கப்பட்டுள்ள கூற்றுகளில் எது/எவை சரியானது/சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "1 and 2 only", "1 மற்றும் 2 மட்டுமே",
+        "2 and 3 only", "2 மற்றும் 3 மட்டுமே",
+        "1, 2 and 3", "1, 2 மற்றும் 3",
+        "B",
+        "Statements 1 and 2 are correct. Statement 3 is INCORRECT because Article 47 EXPLICITLY EXCEPTIONS medicinal purposes from prohibition.",
+        "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பு 47 மருத்துவ நோக்கங்களை மதுவிலக்கிலிருந்து வெளிப்படையாக விலக்குகிறது.",
+        "TNPSC Trap: Medicinal use of alcohol is EXEMPTED from prohibition under Article 47.", "டிஎன்பிஎஸ்சி பொறி: உறுப்பு 47-ன் கீழ் ஆல்கஹாலின் மருத்துவப் பயன்பாட்டிற்கு மதுவிலக்கிலிருந்து விலக்கு அளிக்கப்பட்டுள்ளது.",
+        "Statement 2 is also correct.", "கூற்று 2-ம் சரியானதாகும்.",
+        "Correct. Statements 1 and 2 are correct; Statement 3 is false.", "சரி. கூற்றுகள் 1 மற்றும் 2 சரியானவை; கூற்று 3 தவறானது.",
+        "Statement 3 is incorrect.", "கூற்று 3 தவறானது.",
+        "Statement 3 is incorrect.", "கூற்று 3 தவறானது."
+    )
+
+    # -------------------------------------------------------------------------
+    # Q39 (Correct: C) - 4-statement
+    # -------------------------------------------------------------------------
+    add_q(
+        39, "Statement",
+        "Consider the following statements regarding Article 48:\n1. Article 48 directs organizing agriculture and animal husbandry on modern scientific lines.\n2. Article 48 directs prohibiting slaughter of cows, calves, and other milch and draught cattle.\n3. In Mirzapur Moti Kureshi (2005), a 7-judge bench upheld total prohibition of cow progeny slaughter.\n4. Article 48 prohibits commercial poultry farming in rural villages.\nWhich of the statements given above are CORRECT?",
+        "உறுப்பு 48 பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. உறுப்பு 48 நவீன அறிவியல் முறைகளில் விவசாயம் மற்றும் கால்நடை வளர்ப்பை அமைக்க வழிகாட்டுகிறது.\n2. உறுப்பு 48 பசுக்கள், கன்றுகள் மற்றும் பிற பால் தரும் மற்றும் பாரம் இழுக்கும் கால்நடைகளைக் கொல்வதைத் தடுக்க வழிகாட்டுகிறது.\n3. மிர்சாபூர் மோதி குரேஷி வழக்கில் (2005), 7-நீதிபதிகள் அமர்வு பசு சந்ததிகள் வதை மீதான முழுத் தடையை உறுதி செய்தது.\n4. உறுப்பு 48 கிராமப்புறங்களில் வணிகரீதியான கோழிப் பண்ணைகளைத் தடுக்கிறது.\nமேலே கொடுக்கப்பட்டுள்ள கூற்றுகளில் எவை சரியானவை?",
+        "1 and 2 only", "1 மற்றும் 2 மட்டுமே",
+        "2, 3 and 4 only", "2, 3 மற்றும் 4 மட்டுமே",
+        "1, 2 and 3 only", "1, 2 மற்றும் 3 மட்டுமே",
+        "1, 2, 3 and 4", "1, 2, 3 மற்றும் 4",
+        "C",
+        "Statements 1, 2, and 3 are correct. Statement 4 is INCORRECT because Article 48 encourages scientific agriculture and animal husbandry, NOT banning poultry farming.",
+        "கூற்றுகள் 1, 2 மற்றும் 3 சரியானவை. கூற்று 4 தவறானது, ஏனெனில் உறுப்பு 48 அறிவியல் விவசாயம் மற்றும் கால்நடை வளர்ப்பை ஊக்குவிக்கிறது, கோழிப் பண்ணைகளைத் தடை செய்யவில்லை.",
+        "Mirzapur Kureshi 2005 (7 judges) upheld total ban on cow progeny slaughter based on organic dung value.", "மிர்சாபூர் குரேஷி 2005 (7 நீதிபதிகள்) இயற்கை எரு உர மதிப்பின் அடிப்படையில் பசு சந்ததிகள் வதை மீதான முழுத் தடையை உறுதி செய்தது.",
+        "Statement 3 is also correct.", "கூற்று 3-ம் சரியானதாகும்.",
+        "Statement 4 is incorrect.", "கூற்று 4 தவறானது.",
+        "Correct. Statements 1, 2 and 3 are correct; Statement 4 is false.", "சரி. கூற்றுகள் 1, 2 மற்றும் 3 சரியானவை; கூற்று 4 தவறானது.",
+        "Statement 4 is incorrect.", "கூற்று 4 தவறானது."
+    )
+
+    # -------------------------------------------------------------------------
+    # Q40 (Correct: D) - 2-statement
+    # -------------------------------------------------------------------------
+    add_q(
+        40, "Statement",
+        "Consider the following statements regarding Article 49:\n1. Article 49 directs protection of monuments and places of artistic or historic interest declared of national importance by Parliament.\n2. The Ancient Monuments and Archaeological Sites and Remains (AMASR) Act 1958 statutorily implements Article 49.\nWhich of the statements given above is/are CORRECT?",
+        "உறுப்பு 49 பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. உறுப்பு 49 நாடாளுமன்றத்தால் தேசிய முக்கியத்துவம் வாய்ந்தது என அறிவிக்கப்பட்ட கலை அல்லது வரலாற்று ஆர்வம் கொண்ட நினைவிடங்கள் மற்றும் இடங்களைப் பாதுகாக்க வழிகாட்டுகிறது.\n2. பழங்கால நினைவிடங்கள் மற்றும் தொல்லியல் இடங்கள் மற்றும் எஞ்சியவைகள் (AMASR) சட்டம் 1958 உறுப்பு 49-ஐச் சட்டப்பூர்வமாகச் செயல்படுத்துகிறது.\nமேலே கொடுக்கப்பட்டுள்ள கூற்றுகளில் எது/எவை சரியானது/சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Neither 1 nor 2", "1-ம் இல்லை 2-ம் இல்லை",
+        "Both 1 and 2", "1 மற்றும் 2 இரண்டும்",
+        "D",
+        "Both statements 1 and 2 are CORRECT. Article 49 protects monuments of national importance, and AMASR Act 1958 (administered by ASI) statutorily executes this directive.",
+        "கூற்றுகள் 1 மற்றும் 2 இரண்டும் சரியானவை. உறுப்பு 49 தேசிய முக்கியத்துவம் வாய்ந்த நினைவிடங்களைப் பாதுகாக்கிறது, மேலும் 1958 AMASR சட்டம் (ASI-ஆல் நிர்வகிக்கப்படுகிறது) இவ்வாணையைச் சட்டப்பூர்வமாக நிறைவேற்றுகிறது.",
+        "Statutory Link: Art 49 -> AMASR Act 1958 & Archaeological Survey of India (ASI).", "சட்டப்பூர்வ இணைப்பு: உறுப்பு 49 -> AMASR சட்டம் 1958 & இந்திய தொல்லியல் துறை (ASI).",
+        "Statement 2 is also correct.", "கூற்று 2-ம் சரியானதாகும்.",
+        "Statement 1 is also correct.", "கூற்று 1-ம் சரியானதாகும்.",
+        "Both statements are true.", "இரண்டு கூற்றுகளும் உண்மையானவை.",
+        "Correct. Both statements 1 and 2 are correct.", "சரி. கூற்றுகள் 1 மற்றும் 2 இரண்டும் சரியானவை."
+    )
+
+    # -------------------------------------------------------------------------
+    # Q41 (Correct: A) - 3-statement
+    # -------------------------------------------------------------------------
+    add_q(
+        41, "Statement",
+        "Consider the following statements regarding Article 50:\n1. Article 50 directs the separation of judiciary from executive in the public services of the State.\n2. The Code of Criminal Procedure (CrPC) 1973 statutorily separated Judicial Magistrates from Executive Officers.\n3. Executive Magistrates retain administrative preventive powers (such as Section 144 CrPC) for maintaining public order.\nWhich of the statements given above are CORRECT?",
+        "உறுப்பு 50 பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. உறுப்பு 50 மாநிலப் பொது சேவைகளில் நிர்வாகத்திலிருந்து நீதித்துறையைப் பிரிக்க வழிகாட்டுகிறது.\n2. 1973 குற்றவியல் நடைமுறைச் சட்டம் (CrPC) நீதித்துறை மேஜிஸ்திரேட்டுகளை நிர்வாக அதிகாரிகளிடமிருந்து சட்டப்பூர்வமாகப் பிரித்தது.\n3. நிர்வாக மேஜிஸ்திரேட்டுகள் பொது அமைதியைப் பேண நிர்வாகத் தடுப்பு அதிகாரங்களை (CrPC பிரிவு 144 போன்றவை) தக்கவைத்துக் கொள்கின்றனர்.\nமேலே கொடுக்கப்பட்டுள்ள கூற்றுகளில் எவை சரியானவை?",
+        "1, 2 and 3", "1, 2 மற்றும் 3",
+        "1 and 2 only", "1 மற்றும் 2 மட்டுமே",
+        "2 and 3 only", "2 மற்றும் 3 மட்டுமே",
+        "1 and 3 only", "1 மற்றும் 3 மட்டுமே",
+        "A",
+        "All three statements 1, 2, and 3 are CORRECT. Article 50 directs separation, CrPC 1973 executed judicial trial separation, and Executive Magistrates retain administrative law & order powers.",
+        "1, 2 மற்றும் 3 ஆகிய மூன்று கூற்றுகளும் சரியானவை. உறுப்பு 50 பிரிப்பிற்கு வழிகாட்டுகிறது, CrPC 1973 நீதித்துறை விசாரணை பிரிவை நிறைவேற்றியது, மற்றும் நிர்வாக மேஜிஸ்திரேட்டுகள் நிர்வாகச் சட்டம் & ஒழுங்கு அதிகாரங்களைத் தக்கவைத்துக் கொள்கின்றனர்.",
+        "Article 50 separates JUDICIAL TRIAL functions from Executive Officers.", "உறுப்பு 50 நீதித்துறை விசாரணை செயல்பாடுகளை நிர்வாக அதிகாரிகளிடமிருந்து பிரிக்கிறது.",
+        "Correct. Statements 1, 2 and 3 are all correct.", "சரி. கூற்றுகள் 1, 2 மற்றும் 3 அனைத்தும் சரியானவை.",
+        "Statement 3 is also correct.", "கூற்று 3-ம் சரியானதாகும்.",
+        "Statement 1 is also correct.", "கூற்று 1-ம் சரியானதாகும்.",
+        "Statement 2 is also correct.", "கூற்று 2-ம் சரியானதாகும்."
+    )
+
+    # -------------------------------------------------------------------------
+    # Q42 (Correct: B) - 4-statement
+    # -------------------------------------------------------------------------
+    add_q(
+        42, "Statement",
+        "Consider the following components of Article 51 (International Peace & Security):\n1. Promote international peace and security\n2. Maintain just and honourable relations between nations\n3. Foster respect for international law and treaty obligations\n4. Encourage settlement of international disputes by arbitration\nWhich of the components given above are included in Article 51?",
+        "உறுப்பு 51-ன் (சர்வதேச அமைதி & பாதுகாப்பு) பின்வரும் கூறுகளைக் கருதுக:\n1. சர்வதேச அமைதி மற்றும் பாதுகாப்பை மேம்படுத்துதல்\n2. நாடுகளுக்கிடையே நியாயமான மற்றும் கெளரவமான உறவுகளைப் பேணுதல்\n3. சர்வதேச சட்டம் மற்றும் ஒப்பந்தக் கடமைகளுக்கு மரியாதையை வளர்த்தல்\n4. நடுவர் மன்றம் மூலம் சர்வதேசத் தகராறுகளைத் தீர்ப்பதை ஊக்குவித்தல்\nமேலே கொடுக்கப்பட்டுள்ள கூறுகளில் எவை உறுப்பு 51-ல் சேர்க்கப்பட்டுள்ளன?",
+        "1, 2 and 3 only", "1, 2 மற்றும் 3 மட்டுமே",
+        "1, 2, 3 and 4", "1, 2, 3 மற்றும் 4",
+        "2, 3 and 4 only", "2, 3 மற்றும் 4 மட்டுமே",
+        "1, 3 and 4 only", "1, 3 மற்றும் 4 மட்டுமே",
+        "B",
+        "All four components 1, 2, 3, and 4 are INCLUDED as clauses (a), (b), (c), and (d) of Article 51 respectively.",
+        "1, 2, 3 மற்றும் 4 ஆகிய நான்கு கூறுகளும் முறையே உறுப்பு 51-ன் உட்பிரிவுகள் (a), (b), (c), மற்றும் (d) ஆகச் சேர்க்கப்பட்டுள்ளன.",
+        "Memorize Art 51: (a) Peace, (b) Just relations, (c) Treaty respect, (d) Arbitration.", "உறுப்பு 51 மனப்பாடம் செய்க: (a) அமைதி, (b) நியாயமான உறவுகள், (c) ஒப்பந்த மரியாதை, (d) நடுவர் மன்றம்.",
+        "Component 4 is also included.", "கூறு 4-ம் சேர்க்கப்பட்டுள்ளது.",
+        "Correct. Components 1, 2, 3 and 4 are all included under Article 51.", "சரி. 1, 2, 3 மற்றும் 4 ஆகிய கூறுகள் அனைத்தும் உறுப்பு 51-ன் கீழ் சேர்க்கப்பட்டுள்ளன.",
+        "Component 1 is also included.", "கூறு 1-ம் சேர்க்கப்பட்டுள்ளது.",
+        "Component 2 is also included.", "கூறு 2-ம் சேர்க்கப்பட்டுள்ளது."
+    )
+
+    # -------------------------------------------------------------------------
+    # Q43 (Correct: C) - 2-statement
+    # -------------------------------------------------------------------------
+    add_q(
+        43, "Statement",
+        "Consider the following statements regarding Sanjeev Coke Manufacturing Co. v. Bharat Coking Coal Ltd. (1983):\n1. The Supreme Court upheld the constitutional validity of coking coal nationalization laws under Article 31C.\n2. The Supreme Court affirmed that 'material resources' under Article 39(b) include private coking coal mines taken over for public distribution.\nWhich of the statements given above is/are CORRECT?",
+        "சஞ்சீவ் கோக் உற்பத்தி நிறுவனம் எதிர் பாரத் கோக்கிங் நிலக்கரி நிறுவனம் வழக்கு (1983) பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. உறுப்பு 31C-ன் கீழ் கோக்கிங் நிலக்கரி தேசியமயமாக்கல் சட்டங்களின் அரசியலமைப்பு செல்லுபடித் தன்மையை உச்ச நீதிமன்றம் உறுதி செய்தது.\n2. பொது விநியோகத்திற்காகக் கையகப்படுத்தப்பட்ட தனியாருக்குச் சொந்தமான கோக்கிங் நிலக்கரி சுரங்கங்களும் உறுப்பு 39(b)-ன் கீழ் 'பொருள் வளங்களில்' அடங்கும் என உச்ச நீதிமன்றம் உறுதிப்படுத்தியது.\nமேலே கொடுக்கப்பட்டுள்ள கூற்றுகளில் எது/எவை சரியானது/சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Both 1 and 2", "1 மற்றும் 2 இரண்டும்",
+        "Neither 1 nor 2", "1-ம் இல்லை 2-ம் இல்லை",
+        "C",
+        "Both statements 1 and 2 are CORRECT. Sanjeev Coke (1983) reaffirmed that nationalization of private coal assets subserving public good is protected under Art 31C enforcing Art 39(b).",
+        "கூற்றுகள் 1 மற்றும் 2 இரண்டும் சரியானவை. சஞ்சீவ் கோக் வழக்கு (1983) பொது நலனுக்குப் பயன்படும் தனியார் நிலக்கரி சொத்துக்களைத் தேசியமயமாக்குவது உறுப்பு 39(b)-ஐ செயல்படுத்தும் உறுப்பு 31C-ன் கீழ் பாதுகாக்கப்படுகிறது என்பதை மீண்டும் உறுதிப்படுத்தியது.",
+        "Sanjeev Coke 1983 expanded material resources under Art 39(b) to private coal mines.", "சஞ்சீவ் கோக் 1983 உறுப்பு 39(b)-ன் கீழ் உள்ள பொருள் வளங்களைத் தனியார் நிலக்கரி சுரங்கங்களுக்கும் விரிவாக்கியது.",
+        "Statement 2 is also correct.", "கூற்று 2-ம் சரியானதாகும்.",
+        "Statement 1 is also correct.", "கூற்று 1-ம் சரியானதாகும்.",
+        "Correct. Both statements 1 and 2 are correct.", "சரி. கூற்றுகள் 1 மற்றும் 2 இரண்டும் சரியானவை.",
+        "Both statements are true.", "இரண்டு கூற்றுகளும் உண்மையானவை."
+    )
+
+    # -------------------------------------------------------------------------
+    # Q44 (Correct: D) - 3-statement
+    # -------------------------------------------------------------------------
+    add_q(
+        44, "Statement",
+        "Consider the following statements regarding the Instrument of Instructions (GOI Act 1935) and DPSP:\n1. The Government of India Act 1935 contained an 'Instrument of Instructions' issued to the Governor-General and Governors.\n2. Dr. B.R. Ambedkar explicitly noted in the Constituent Assembly that DPSPs resemble the Instrument of Instructions.\n3. Both Instrument of Instructions and DPSP were directly enforceable by filing suits in the Federal Court.\nWhich of the statements given above is/are CORRECT?",
+        "வழிகாட்டுதல் ஆவணம் (1935 இந்திய அரசாங்கச் சட்டம்) மற்றும் DPSP பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. 1935 இந்திய அரசாங்கச் சட்டம் கவர்னர் ஜெனரல் மற்றும் ஆளுநர்களுக்கு வழங்கப்பட்ட 'வழிகாட்டுதல் ஆவணத்தைக்' கொண்டிருந்தது.\n2. DPSP-கள் வழிகாட்டுதல் ஆவணத்தைப் போன்றவை என்று டாக்டர் பி.ஆர். அம்பேத்கர் அரசியலமைப்பு நிர்ணய சபையில் வெளிப்படையாகக் குறிப்பிட்டார்.\n3. வழிகாட்டுதல் ஆவணம் மற்றும் DPSP ஆகிய இரண்டும் ஃபெடரல் நீதிமன்றத்தில் வழக்குகள் தாக்கல் செய்வதன் மூலம் நேரடியாக அமல்படுத்தக்கூடியவையாக இருந்தன.\nமேலே கொடுக்கப்பட்டுள்ள கூற்றுகளில் எது/எவை சரியானது/சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "2 and 3 only", "2 மற்றும் 3 மட்டுமே",
+        "1 and 3 only", "1 மற்றும் 3 மட்டுமே",
+        "1 and 2 only", "1 மற்றும் 2 மட்டுமே",
+        "D",
+        "Statements 1 and 2 are correct. Statement 3 is INCORRECT because NEITHER Instrument of Instructions of 1935 NOR DPSP of Part IV were enforceable in courts.",
+        "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் 1935 வழிகாட்டுதல் ஆவணமோ அல்லது பகுதி IV DPSP-யோ நீதிமன்றங்களில் அமல்படுத்தக்கூடியவையாக இருக்கவில்லை.",
+        "Key Point: Neither Instrument of Instructions nor DPSP was justiciable.", "முக்கியக் குறிப்பு: வழிகாட்டுதல் ஆவணமோ அல்லது DPSP-யோ அமல்படுத்தக்கூடியவை அல்ல.",
+        "Statement 3 is incorrect.", "கூற்று 3 தவறானது.",
+        "Statement 3 is incorrect.", "கூற்று 3 தவறானது.",
+        "Statement 3 is incorrect.", "கூற்று 3 தவறானது.",
+        "Correct. Statements 1 and 2 are correct; Statement 3 is false.", "சரி. கூற்றுகள் 1 மற்றும் 2 சரியானவை; கூற்று 3 தவறானது."
+    )
+
+    # -------------------------------------------------------------------------
+    # Q45 (Correct: A) - 4-statement
+    # -------------------------------------------------------------------------
+    add_q(
+        45, "Statement",
+        "Consider the following statements regarding the Welfare State concept in Part IV:\n1. Part IV DPSPs transform the philosophical character of the Indian State from a colonial Police State to a modern Welfare State.\n2. The primary constitutional objective of Part IV is securing social and economic democracy.\n3. Political democracy (Part III) and Social/Economic democracy (Part IV) are mutually exclusive and contradictory.\n4. Dr. B.R. Ambedkar stated that political democracy cannot last unless social democracy lies at its base.\nWhich of the statements given above are CORRECT?",
+        "பகுதி IV-ல் உள்ள நல அரசுக் கருத்து பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. பகுதி IV DPSP-கள் இந்திய அரசின் தத்துவார்த்த இயல்பைக் காலனித்துவ காவல் அரசிலிருந்து நவீன நல அரசாக மாற்றியமைக்கின்றன.\n2. பகுதி IV-ன் முதன்மை அரசியலமைப்பு நோக்கம் சமூக மற்றும் பொருளாதார ஜனநாயகத்தைப் பாதுகாப்பதாகும்.\n3. அரசியல் ஜனநாயகம் (பகுதி III) மற்றும் சமூக/பொருளாதார ஜனநாயகம் (பகுதி IV) ஆகியவை ஒன்றுக்கொன்று விலக்கப்பட்டவை மற்றும் முரண்பாடானவை.\n4. அதன் அடித்தளத்தில் சமூக ஜனநாயகம் இல்லாவிட்டால் அரசியல் ஜனநாயகம் நீடிக்க முடியாது என டாக்டர் பி.ஆர். அம்பேத்கர் கூறினார்.\nமேலே கொடுக்கப்பட்டுள்ள கூற்றுகளில் எவை சரியானவை?",
+        "1, 2 and 4 only", "1, 2 மற்றும் 4 மட்டுமே",
+        "1 and 2 only", "1 மற்றும் 2 மட்டுமே",
+        "2, 3 and 4 only", "2, 3 மற்றும் 4 மட்டுமே",
+        "1, 2, 3 and 4", "1, 2, 3 மற்றும் 4",
+        "A",
+        "Statements 1, 2, and 4 are correct. Statement 3 is INCORRECT because Part III and Part IV are COMPLEMENTARY, not mutually exclusive or contradictory.",
+        "கூற்றுகள் 1, 2 மற்றும் 4 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் பகுதி III மற்றும் பகுதி IV ஆகியவை ஒன்றுக்கொன்று நிரப்பியானவை, பரஸ்பரம் விலக்கப்பட்டவையோ அல்லது முரண்பாடானவையோ அல்ல.",
+        "Part III (Political) + Part IV (Socio-Economic) = Full Democratic Republic.", "பகுதி III (அரசியல்) + பகுதி IV (சமூக-பொருளாதாரம்) = முழுமையான ஜனநாயகக் குடியரசு.",
+        "Correct. Statements 1, 2 and 4 are correct; Statement 3 is false.", "சரி. கூற்றுகள் 1, 2 மற்றும் 4 சரியானவை; கூற்று 3 தவறானது.",
+        "Statement 4 is also correct.", "கூற்று 4-ம் சரியானதாகும்.",
+        "Statement 3 is incorrect.", "கூற்று 3 தவறானது.",
+        "Statement 3 is incorrect.", "கூற்று 3 தவறானது."
+    )
+
+    # -------------------------------------------------------------------------
+    # Q46 (Correct: B) - 2-statement
+    # -------------------------------------------------------------------------
+    add_q(
+        46, "Statement",
+        "Consider the following statements regarding Kesavananda Bharati (1973) ruling on Article 31C:\n1. The Supreme Court UPHELD the first part of Article 31C protecting Articles 39(b) and 39(c) laws from Articles 14 and 19.\n2. The Supreme Court STRUCK DOWN the second part of Article 31C which attempted to bar judicial review of whether a law actually implemented Article 39(b) or 39(c).\nWhich of the statements given above is/are CORRECT?",
+        "உறுப்பு 31C மீதான கேசவானந்த பாரதி (1973) தீர்ப்பு பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. உறுப்புகள் 14 மற்றும் 19-லிருந்து 39(b) மற்றும் 39(c) சட்டங்களைப் பாதுகாக்கும் உறுப்பு 31C-ன் முதல் பகுதியை உச்ச நீதிமன்றம் உறுதி செய்தது.\n2. ஒரு சட்டம் உண்மையில் உறுப்பு 39(b) அல்லது 39(c)-ஐ செயல்படுத்துகிறதா என்பது மீதான நீதித்துறை ஆய்வைத் தடுக்க முயன்ற உறுப்பு 31C-ன் இரண்டாவது பகுதியை உச்ச நீதிமன்றம் ரத்து செய்தது.\nமேலே கொடுக்கப்பட்டுள்ள கூற்றுகளில் எது/எவை சரியானது/சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "Both 1 and 2", "1 மற்றும் 2 இரண்டும்",
+        "2 only", "2 மட்டுமே",
+        "Neither 1 nor 2", "1-ம் இல்லை 2-ம் இல்லை",
+        "B",
+        "Both statements 1 and 2 are CORRECT. In Kesavananda Bharati (1973), the 13-judge bench upheld 31C Part 1 (protection of 39b/c), but invalidated 31C Part 2 (bar on judicial review), ruling that Judicial Review is a Basic Feature.",
+        "கூற்றுகள் 1 மற்றும் 2 இரண்டும் சரியானவை. கேசவானந்த பாரதி வழக்கில் (1973), 13-நீதிபதிகள் அமர்வு 31C பகுதி 1-ஐ உறுதி செய்தது (39b/c பாதுகாப்பு), ஆனால் 31C பகுதி 2-ஐ செல்லாததாக்கியது (நீதித்துறை ஆய்விற்கான தடை), நீதித்துறை ஆய்வு ஒரு அடிப்படை அம்சம் எனத் தீர்ப்பளித்தது.",
+        "Judicial Review is a Basic Feature; Parliament cannot block judicial scrutiny under 31C Part 2.", "நீதித்துறை ஆய்வு ஒரு அடிப்படை அம்சம்; 31C பகுதி 2-ன் கீழ் நாடாளுமன்றம் நீதித்துறை ஆய்வைத் தடுக்க முடியாது.",
+        "Statement 2 is also correct.", "கூற்று 2-ம் சரியானதாகும்.",
+        "Correct. Both statements 1 and 2 are correct.", "சரி. கூற்றுகள் 1 மற்றும் 2 இரண்டும் சரியானவை.",
+        "Statement 1 is also correct.", "கூற்று 1-ம் சரியானதாகும்.",
+        "Both statements are true.", "இரண்டு கூற்றுகளும் உண்மையானவை."
+    )
+
+    # -------------------------------------------------------------------------
+    # Q47 (Correct: C) - 3-statement
+    # -------------------------------------------------------------------------
+    add_q(
+        47, "Statement",
+        "Consider the following statements regarding the 44th Constitutional Amendment Act, 1978:\n1. It deleted Right to Property from Part III (Article 31).\n2. It re-enacted Right to Property as a legal right under Article 300A in Part XII.\n3. It inserted Article 38(2) in Part IV directing the State to minimise inequalities in income, status, facilities, and opportunities.\nWhich of the statements given above are CORRECT?",
+        "1978-ன் 44வது அரசியலமைப்பு திருத்தச் சட்டம் பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. இது பகுதி III-லிருந்து (உறுப்பு 31) சொத்து உரிமையை நீக்கியது.\n2. இது பகுதி XII-ல் உறுப்பு 300A-ன் கீழ் சொத்து உரிமையை ஒரு சட்ட உரிமையாக மீண்டும் இயற்றியது.\n3. இது பகுதி IV-ல் வருமானம், அந்தஸ்து, வசதிகள் மற்றும் வாய்ப்புகளில் உள்ள சமத்துவமின்மையைக் குறைக்க அரசுக்கு வழிகாட்டும் உறுப்பு 38(2)-ஐச் சேர்த்தது.\nமேலே கொடுக்கப்பட்டுள்ள கூற்றுகளில் எவை சரியானவை?",
+        "1 and 2 only", "1 மற்றும் 2 மட்டுமே",
+        "2 and 3 only", "2 மற்றும் 3 மட்டுமே",
+        "1, 2 and 3", "1, 2 மற்றும் 3",
+        "1 and 3 only", "1 மற்றும் 3 மட்டுமே",
+        "C",
+        "All three statements 1, 2, and 3 are CORRECT. The 44th CAA 1978 removed Art 31 FR, created Art 300A legal right, and inserted Art 38(2) DPSP.",
+        "1, 2 மற்றும் 3 ஆகிய மூன்று கூற்றுகளும் சரியானவை. 44வது திருத்தம் 1978 உறுப்பு 31 FR-ஐ அகற்றியது, உறுப்பு 300A சட்ட உரிமையை உருவாக்கியது, மற்றும் உறுப்பு 38(2) DPSP-ஐச் சேர்த்தது.",
+        "44th CAA 1978 reshaped property status and added Art 38(2).", "44வது திருத்தம் 1978 சொத்து அந்தஸ்தை மாற்றியமைத்தது மற்றும் உறுப்பு 38(2)-ஐச் சேர்த்தது.",
+        "Statement 3 is also correct.", "கூற்று 3-ம் சரியானதாகும்.",
+        "Statement 1 is also correct.", "கூற்று 1-ம் சரியானதாகும்.",
+        "Correct. Statements 1, 2 and 3 are all correct.", "சரி. கூற்றுகள் 1, 2 மற்றும் 3 அனைத்தும் சரியானவை.",
+        "Statement 2 is also correct.", "கூற்று 2-ம் சரியானதாகும்."
+    )
+
+    # -------------------------------------------------------------------------
+    # Q48 (Correct: D) - 4-statement
+    # -------------------------------------------------------------------------
+    add_q(
+        48, "Statement",
+        "Consider the following statements regarding Article 45 vs Article 21A vs Article 51A(k):\n1. Article 45 (Part IV DPSP) directs early childhood care and education for children below 6 years.\n2. Article 21A (Part III FR) guarantees free and compulsory education for children aged 6 to 14 years.\n3. Article 51A(k) (Part IV-A FD) obligates parents/guardians to provide education opportunities for children aged 6 to 14 years.\n4. All three provisions were created or modified by the 86th Constitutional Amendment Act, 2002.\nWhich of the statements given above are CORRECT?",
+        "உறுப்பு 45 vs உறுப்பு 21A vs உறுப்பு 51A(k) பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. உறுப்பு 45 (பகுதி IV DPSP) 6 வயதுக்குட்பட்ட குழந்தைகளுக்கான முன்பருவக் பராமரிப்பு மற்றும் கல்வியை வழிகாட்டுகிறது.\n2. உறுப்பு 21A (பகுதி III FR) 6 முதல் 14 வயது வரையிலான குழந்தைகளுக்கு இலவச மற்றும் கட்டாயக் கல்வியை உத்தரவாதம் செய்கிறது.\n3. உறுப்பு 51A(k) (பகுதி IV-A FD) 6 முதல் 14 வயது வரையிலான குழந்தைகளுக்குக் கல்வி வாய்ப்புகளை வழங்குவதைப் பெற்றோர்/பாதுகாவலர்களின் கடமையாக்குகிறது.\n4. மூன்று விதிகளும் 2002-ன் 86வது அரசியலமைப்பு திருத்தச் சட்டத்தால் உருவாக்கப்பட்டன அல்லது திருத்தப்பட்டன.\nமேலே கொடுக்கப்பட்டுள்ள கூற்றுகளில் எவை சரியானவை?",
+        "1, 2 and 3 only", "1, 2 மற்றும் 3 மட்டுமே",
+        "1 and 2 only", "1 மற்றும் 2 மட்டுமே",
+        "2, 3 and 4 only", "2, 3 மற்றும் 4 மட்டுமே",
+        "1, 2, 3 and 4", "1, 2, 3 மற்றும் 4",
+        "D",
+        "All four statements 1, 2, 3, and 4 are CORRECT. They represent the complete 3-tier constitutional age framework created by the 86th Amendment Act 2002.",
+        "1, 2, 3 மற்றும் 4 ஆகிய நான்கு கூற்றுகளும் சரியானவை. அவை 86வது திருத்தச் சட்டம் 2002-ஆல் உருவாக்கப்பட்ட முழுமையான 3-அடுக்கு அரசியலமைப்பு வயதுக் கட்டமைப்பைப் பிரதிபலிக்கின்றன.",
+        "Master Age Rule: Below 6 yrs = Art 45 DPSP; 6 to 14 yrs = Art 21A FR & Art 51A(k) FD.", "முதன்மைக் கொள்கை வயது விதி: 6 வயதுக்கு கீழ் = உறுப்பு 45 DPSP; 6 முதல் 14 வயது = உறுப்பு 21A FR & உறுப்பு 51A(k) FD.",
+        "Statement 4 is also correct.", "கூற்று 4-ம் சரியானதாகும்.",
+        "Statement 3 is also correct.", "கூற்று 3-ம் சரியானதாகும்.",
+        "Statement 1 is also correct.", "கூற்று 1-ம் சரியானதாகும்.",
+        "Correct. Statements 1, 2, 3 and 4 are all correct.", "சரி. கூற்றுகள் 1, 2, 3 மற்றும் 4 அனைத்தும் சரியானவை."
+    )
+
+    # -------------------------------------------------------------------------
+    # Q49 (Correct: A) - 2-statement
+    # -------------------------------------------------------------------------
+    add_q(
+        49, "Statement",
+        "Consider the following statements regarding DPSP and the Basic Structure Doctrine:\n1. The harmony and balance between Fundamental Rights (Part III) and Directive Principles (Part IV) is an essential element of the Basic Structure (Minerva Mills 1980).\n2. Parliament cannot use its amending power under Article 368 to completely repeal Part IV Directive Principles.\nWhich of the statements given above is/are CORRECT?",
+        "DPSP மற்றும் அடிப்படை அமைப்புக் கோட்பாடு பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. அடிப்படை உரிமைகள் (பகுதி III) மற்றும் வழிகாட்டு நெறிமுறைகள் (பகுதி IV) இடையிலான இணக்கமும் சமநிலையும் அடிப்படை அமைப்பின் ஓர் அத்தியாவசிய அம்சமாகும் (மினர்வா மில்ஸ் 1980).\n2. உறுப்பு 368-ன் கீழ் தனது திருத்தும் அதிகாரத்தைப் பயன்படுத்தி பகுதி IV வழிகாட்டு நெறிமுறைகளை நாடாளுமன்றம் முழுமையாக ரத்து செய்ய முடியாது.\nமேலே கொடுக்கப்பட்டுள்ள கூற்றுகளில் எது/எவை சரியானது/சரியானவை?",
+        "Both 1 and 2", "1 மற்றும் 2 இரண்டும்",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Neither 1 nor 2", "1-ம் இல்லை 2-ம் இல்லை",
+        "A",
+        "Both statements 1 and 2 are CORRECT. In Minerva Mills (1980), the SC held that Part III and Part IV form the core commitment to social revolution and their balance is a Basic Feature, limiting Parliament's power under Article 368.",
+        "கூற்றுகள் 1 மற்றும் 2 இரண்டும் சரியானவை. மினர்வா மில்ஸ் வழக்கில் (1980), பகுதி III மற்றும் பகுதி IV ஆகியவை சமூகப் புரட்சிக்கான முதன்மை அர்ப்பணிப்பாக அமைகின்றன என்றும் அவற்றின் சமநிலை ஓர் அடிப்படை அம்சம் என்றும் SC தீர்ப்பளித்தது, இது உறுப்பு 368-ன் கீழ் நாடாளுமன்றத்தின் அதிகாரத்தைக் கட்டுப்படுத்துகிறது.",
+        "Minerva Mills (1980): 'To give absolute primacy to one over the other is to disturb the harmony of the Constitution.'",
+        "மினர்வா மில்ஸ் (1980): 'ஒன்றிற்கு மற்றொன்றை விட முற்றுமுழுதான முதன்மை அளிப்பது அரசியலமைப்பின் இணக்கத்தைக் குலைப்பதாகும்.'",
+        "Correct. Both statements 1 and 2 are correct.", "சரி. கூற்றுகள் 1 மற்றும் 2 இரண்டும் சரியானவை.",
+        "Statement 2 is also correct.", "கூற்று 2-ம் சரியானதாகும்.",
+        "Statement 1 is also correct.", "கூற்று 1-ம் சரியானதாகும்.",
+        "Both statements are true.", "இரண்டு கூற்றுகளும் உண்மையானவை."
+    )
+
+    # -------------------------------------------------------------------------
+    # Q50 (Correct: B) - 3-statement
+    # -------------------------------------------------------------------------
+    add_q(
+        50, "Statement",
+        "Consider the following statements regarding Article 51 and international treaty enforcement in India:\n1. In Jolly George Varghese (1980), SC affirmed that India follows a Dualist model regarding international treaties.\n2. Article 253 empowers Parliament to make any law for implementing any treaty, agreement, or convention with any other country.\n3. International treaties signed by the President of India automatically alter domestic statutory rights without Parliamentary legislation.\nWhich of the statements given above is/are CORRECT?",
+        "இந்தியாவில் உறுப்பு 51 மற்றும் பன்னாட்டு ஒப்பந்த அமலாக்கம் பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. ஜாலி ஜார்ஜ் வர்கீஸ் வழக்கில் (1980), பன்னாட்டு ஒப்பந்தங்கள் குறித்து இந்தியா ஒரு இருத்துவ மாதிரியைப் பின்பற்றுகிறது என்பதை SC உறுதி செய்தது.\n2. எந்தவொரு பிற நாட்டுடனும் செய்யப்பட்ட எந்தவொரு ஒப்பந்தம் அல்லது உடன்படிக்கையை அமல்படுத்துவதற்காக எந்தவொரு சட்டத்தையும் இயற்ற உறுப்பு 253 நாடாளுமன்றத்திற்கு அதிகாரமளிக்கிறது.\n3. இந்தியக் குடியரசுத் தலைவரால் கையெழுத்திடப்பட்ட பன்னாட்டு ஒப்பந்தங்கள் நாடாளுமன்றச் சட்டமின்றி உள்நாட்டுச் சட்ட உரிமைகளைத் தானாகவே மாற்றியமைக்கின்றன.\nமேலே கொடுக்கப்பட்டுள்ள கூற்றுகளில் எது/எவை சரியானது/சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "1 and 2 only", "1 மற்றும் 2 மட்டுமே",
+        "2 and 3 only", "2 மற்றும் 3 மட்டுமே",
+        "1, 2 and 3", "1, 2 மற்றும் 3",
+        "B",
+        "Statements 1 and 2 are correct. Statement 3 is INCORRECT because under India's Dualist system, an international treaty DOES NOT automatically alter domestic statutory rights unless Parliament enacts legislation under Article 253.",
+        "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் இந்தியாவின் இருத்துவ முறையின் கீழ், நாடாளுமன்றம் உறுப்பு 253-ன் கீழ் சட்டத்தை இயற்றாவிட்டால் பன்னாட்டு ஒப்பந்தம் உள்நாட்டுச் சட்ட உரிமைகளைத் தானாகவே மாற்றியமைக்காது.",
+        "TNPSC Takeaway: Art 51 = DPSP foreign policy directive; Art 253 = Parliamentary treaty-enacting power.", "டிஎன்பிஎஸ்சி தகவல்: உறுப்பு 51 = DPSP வெளியுறவுக் கொள்கை வழிகாட்டல்; உறுப்பு 253 = நாடாளுமன்ற ஒப்பந்த இயற்றல் அதிகாரம்.",
+        "Statement 2 is also correct.", "கூற்று 2-ம் சரியானதாகும்.",
+        "Correct. Statements 1 and 2 are correct; Statement 3 is false.", "சரி. கூற்றுகள் 1 மற்றும் 2 சரியானவை; கூற்று 3 தவறானது.",
+        "Statement 3 is incorrect.", "கூற்று 3 தவறானது.",
+        "Statement 3 is incorrect.", "கூற்று 3 தவறானது."
+    )
+
+    output_dir = "data/questions/polity"
+    os.makedirs(output_dir, exist_ok=True)
+    output_path = os.path.join(output_dir, "directive_principles_statement.json")
+
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(questions, f, ensure_ascii=False, indent=2)
+
+    print(f"Successfully generated {len(questions)} DPSP Statement MCQs at {output_path}")
+
+    counts = {"A": 0, "B": 0, "C": 0, "D": 0}
+    for q in questions:
+        counts[q["correct_answer"]] += 1
+    print(f"Answer Key Distribution: A={counts['A']}, B={counts['B']}, C={counts['C']}, D={counts['D']}")
+
+if __name__ == "__main__":
+    generate_50_statement_mcqs()
