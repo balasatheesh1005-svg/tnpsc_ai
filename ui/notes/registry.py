@@ -60,7 +60,7 @@ class ComponentRegistry:
         # 6. Timeline
         self.register(ComponentSpec(6, ["timeline", "chronology"], render_timeline, icon="⏳", display_title="Timeline"))
         # 8. Comparison
-        self.register(ComponentSpec(8, ["comparison", "comparison_sg_ag"], render_comparison, icon="⚖️", display_title="Comparison"))
+        self.register(ComponentSpec(8, ["comparison", "comparison_sg_ag", "tables"], render_comparison, icon="⚖️", display_title="Comparison"))
         # 9. Fact Box
         self.register(ComponentSpec(9, ["important_facts", "facts", "fact_box"], render_fact_box, icon="💡", display_title="Fact Box"))
         # 10. Memory Tricks
@@ -68,7 +68,7 @@ class ComponentRegistry:
         # 11. Quick Revision
         self.register(ComponentSpec(11, ["quick_revision", "revision_summary"], render_revision, icon="⚡", display_title="Quick Revision"))
         # 12. Trap Points
-        self.register(ComponentSpec(12, ["exam_trap", "trap_points", "traps"], render_trap_points, icon="⚠️", display_title="Trap Points"))
+        self.register(ComponentSpec(12, ["exam_trap", "trap_points", "traps", "tnpsc_traps"], render_trap_points, icon="⚠️", display_title="Trap Points"))
         # 13. Expected Questions
         self.register(ComponentSpec(13, ["expected_questions", "question_areas"], render_expected_questions, icon="🎯", display_title="Expected Questions"))
         # 14. PYQ References
@@ -78,7 +78,7 @@ class ComponentRegistry:
         # 17. Revision Cards
         self.register(ComponentSpec(17, ["revision_cards", "flashcards"], render_revision_cards, icon="🎴", display_title="Revision Cards"))
         # 18. Mind Map
-        self.register(ComponentSpec(18, ["mind_map"], render_mind_map, icon="🗺️", display_title="Mind Map"))
+        self.register(ComponentSpec(18, ["mind_map", "concept_map"], render_mind_map, icon="🗺️", display_title="Mind Map"))
         # 19. Knowledge Graph
         self.register(ComponentSpec(19, ["knowledge_graph", "relationships"], render_knowledge_graph, icon="🕸️", display_title="Knowledge Graph"))
 

@@ -1,0 +1,780 @@
+# -*- coding: utf-8 -*-
+"""
+Builder Script for Fundamental Rights 25 Match the Following MCQs Repository
+Target Path: data/questions/polity/fundamental_rights_match_the_following.json
+"""
+
+import json
+import os
+import sys
+from pathlib import Path
+
+sys.stdout.reconfigure(encoding='utf-8')
+
+target_path = Path(r"c:\Users\Home\Desktop\tnpsc_ai\data\questions\polity\fundamental_rights_match_the_following.json")
+target_path.parent.mkdir(parents=True, exist_ok=True)
+
+def make_mf_q(q_id, difficulty, q_en, q_ta,
+              l1_a_en, l1_a_ta, l1_b_en, l1_b_ta, l1_c_en, l1_c_ta, l1_d_en, l1_d_ta,
+              l2_1_en, l2_1_ta, l2_2_en, l2_2_ta, l2_3_en, l2_3_ta, l2_4_en, l2_4_ta,
+              opt_a_code, opt_b_code, opt_c_code, opt_d_code, correct_ans,
+              exp_en, exp_ta, wno_a_en, wno_a_ta, wno_b_en, wno_b_ta, wno_c_en, wno_c_ta, wno_d_en, wno_d_ta,
+              tip_en, tip_ta, rev_en, rev_ta, bloom, est_time, tags):
+    
+    codes = [opt_a_code, opt_b_code, opt_c_code, opt_d_code]
+    wnos = {
+        "A": {"en": wno_a_en, "ta": wno_a_ta},
+        "B": {"en": wno_b_en, "ta": wno_b_ta},
+        "C": {"en": wno_c_en, "ta": wno_c_ta},
+        "D": {"en": wno_d_en, "ta": wno_d_ta}
+    }
+    
+    letters = ["A", "B", "C", "D"]
+    target_idx = letters.index(correct_ans)
+    if target_idx != 0:
+        codes[0], codes[target_idx] = codes[target_idx], codes[0]
+        wnos["A"], wnos[correct_ans] = wnos[correct_ans], wnos["A"]
+        
+    opt_a_code, opt_b_code, opt_c_code, opt_d_code = codes
+    
+    list_1 = [
+        {"id": "A", "en": l1_a_en, "ta": l1_a_ta},
+        {"id": "B", "en": l1_b_en, "ta": l1_b_ta},
+        {"id": "C", "en": l1_c_en, "ta": l1_c_ta},
+        {"id": "D", "en": l1_d_en, "ta": l1_d_ta}
+    ]
+    
+    list_2 = [
+        {"id": "1", "en": l2_1_en, "ta": l2_1_ta},
+        {"id": "2", "en": l2_2_en, "ta": l2_2_ta},
+        {"id": "3", "en": l2_3_en, "ta": l2_3_ta},
+        {"id": "4", "en": l2_4_en, "ta": l2_4_ta}
+    ]
+    
+    opts = [
+        {"id": "A", "en": opt_a_code, "ta": opt_a_code},
+        {"id": "B", "en": opt_b_code, "ta": opt_b_code},
+        {"id": "C", "en": opt_c_code, "ta": opt_c_code},
+        {"id": "D", "en": opt_d_code, "ta": opt_d_code}
+    ]
+    opts_en = [opt_a_code, opt_b_code, opt_c_code, opt_d_code]
+    opts_ta = [opt_a_code, opt_b_code, opt_c_code, opt_d_code]
+    
+    return {
+        "id": q_id,
+        "subject": "Polity",
+        "topic": "Fundamental Rights",
+        "difficulty": difficulty,
+        "question_type": "Match the Following",
+        "question": {"en": q_en, "ta": q_ta},
+        "list_1": list_1,
+        "list_2": list_2,
+        "options": opts,
+        "correct_answer": correct_ans,
+        "explanation": {"en": exp_en, "ta": exp_ta},
+        "why_not_others": wnos,
+        "tnpsc_tip": {"en": tip_en, "ta": tip_ta},
+        "revision_fact": {"en": rev_en, "ta": rev_ta},
+        "source_reference": ["M. Laxmikanth - Indian Polity", "NCERT", "Samacheer Kalvi"],
+        "bloom_level": bloom,
+        "estimated_time_sec": est_time,
+        "pyq_similarity": "High",
+        "tags": tags,
+        "question_en": q_en,
+        "question_ta": q_ta,
+        "options_en": opts_en,
+        "options_ta": opts_ta,
+        "answer": correct_ans.lower(),
+        "explanation_en": exp_en,
+        "explanation_ta": exp_ta
+    }
+
+questions = []
+
+# ==============================================================================
+# 25 MATCH THE FOLLOWING QUESTIONS (FR_MF_001 to FR_MF_025)
+# ==============================================================================
+
+# FR_MF_001 (Easy)
+questions.append(make_mf_q(
+    "FR_MF_001", "Easy",
+    "Match List I (Articles of Right to Equality) with List II (Constitutional Provisions) and select the correct answer using the codes given below:\n\nList I\nA. Article 14\nB. Article 15\nC. Article 17\nD. Article 18\n\nList II\n1. Equality before Law and Equal Protection of Laws\n2. Prohibition of Discrimination on grounds of religion, race, caste, sex, place of birth\n3. Abolition of Untouchability and prohibition of its practice\n4. Abolition of Titles except military or academic distinctions",
+    "பட்டியல் I-ஐ (சமத்துவ உரிமைப் பிரிவுகள்) பட்டியல் II உடன் (அரசியலமைப்பு விதிகள்) பொருத்தி கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான பதிலைத் தேர்ந்தெடுக்கவும்:\n\nபட்டியல் I\nA. பிரிவு 14\nB. பிரிவு 15\nC. பிரிவு 17\nD. பிரிவு 18\n\nபட்டியல் II\n1. சட்டத்தின் முன் சமன் மற்றும் சட்டங்களின் சமமான பாதுகாப்பு\n2. மதம், இனம், சாதி, பாலினம், பிறந்த இடம் ஆகியவற்றின் அடிப்படையில் பாகுபாடு தடை\n3. தீண்டாமை ஒழிப்பு மற்றும் அதை நடைமுறைப்படுத்துவது தடை\n4. இராணுவ அல்லது கல்விச் சிறப்புகளைத் தவிர பிற பட்டங்கள் ஒழிப்பு",
+    "Article 14", "பிரிவு 14",
+    "Article 15", "பிரிவு 15",
+    "Article 17", "பிரிவு 17",
+    "Article 18", "பிரிவு 18",
+    "Equality before Law and Equal Protection of Laws", "சட்டத்தின் முன் சமன் மற்றும் சட்டங்களின் சமமான பாதுகாப்பு",
+    "Prohibition of Discrimination on grounds of religion, race, caste, sex, place of birth", "மதம், இனம், சாதி, பாலினம், பிறந்த இடம் ஆகியவற்றின் அடிப்படையில் பாகுபாடு தடை",
+    "Abolition of Untouchability and prohibition of its practice", "தீண்டாமை ஒழிப்பு மற்றும் அதை நடைமுறைப்படுத்துவது தடை",
+    "Abolition of Titles except military or academic distinctions", "இராணுவ அல்லது கல்விச் சிறப்புகளைத் தவிர பிற பட்டங்கள் ஒழிப்பு",
+    "A-1, B-2, C-3, D-4", "A-2, B-1, C-4, D-3", "A-1, B-3, C-2, D-4", "A-4, B-2, C-3, D-1", "A",
+    "A-1: Article 14 provides Equality before Law. B-2: Article 15 prohibits discrimination. C-3: Article 17 abolishes Untouchability. D-4: Article 18 abolishes Titles.",
+    "A-1: பிரிவு 14 சட்டத்தின் முன் சமத்துவத்தை வழங்குகிறது. B-2: பிரிவு 15 பாகுபாட்டைத் தடுக்கிறது. C-3: பிரிவு 17 தீண்டாமையை ஒழிக்கிறது. D-4: பிரிவு 18 பட்டங்களை ஒழிக்கிறது.",
+    "Correct. A-1, B-2, C-3, D-4 is the exact match for all Articles 14, 15, 17, and 18.", "சரி. A-1, B-2, C-3, D-4 என்பது நான்கு பிரிவுகளுக்குமான சரியான பொருத்தமாகும்.",
+    "Incorrect. Article 14 matches 1, not 2.", "தவறு. பிரிவு 14 பொருத்தம் 1 ஆகும்.",
+    "Incorrect. Article 15 matches 2, not 3.", "தவறு. பிரிவு 15 பொருத்தம் 2 ஆகும்.",
+    "Incorrect. Article 18 matches 4, not 1.", "தவறு. பிரிவு 18 பொருத்தம் 4 ஆகும்.",
+    "TNPSC Trap: Article 16 (Public Employment) is omitted here, so do not confuse Art 15 (general non-discrimination) with Art 16.",
+    "TNPSC பொறி: பிரிவு 15 பொது பாகுபாட்டுத் தடை, பிரிவு 16 பொது வேலைவாய்ப்புச் சமத்துவம்.",
+    "Articles 14 to 18 form the Right to Equality group in Part III.",
+    "பிரிவுகள் 14 முதல் 18 வரை பகுதி III-ன் சமத்துவ உரிமைப் பிரிவை உருவாக்குகின்றன.",
+    "Understand", 60, ["Polity", "Fundamental Rights", "Right to Equality", "Match the Following"]
+))
+
+# FR_MF_002 (Easy)
+questions.append(make_mf_q(
+    "FR_MF_002", "Easy",
+    "Match List I (Article 19(1) Freedoms) with List II (Specific Freedom Sub-clauses) and select the correct answer using the codes given below:\n\nList I\nA. Freedom of Speech and Expression\nB. Freedom to Assemble Peacefully\nC. Freedom to Form Associations or Unions\nD. Freedom to Practice Profession or Trade\n\nList II\n1. Article 19(1)(a)\n2. Article 19(1)(b)\n3. Article 19(1)(c)\n4. Article 19(1)(g)",
+    "பட்டியல் I-ஐ (பிரிவு 19(1) சுதந்திரங்கள்) பட்டியல் II உடன் (குறிப்பிட்ட உட்பிரிவுகள்) பொருத்தி சரியான பதிலைத் தேர்ந்தெடுக்கவும்:\n\nபட்டியல் I\nA. பேச்சு மற்றும் கருத்துச் சுதந்திரம்\nB. ஆயுதங்களின்றி அமைதியாகக் கூடும் சுதந்திரம்\nC. சங்கங்கள் அல்லது தொழிற்சங்கங்களை அமைக்கும் சுதந்திரம்\nD. தொழில் அல்லது வர்த்தகம் செய்யும் சுதந்திரம்\n\nபட்டியல் II\n1. பிரிவு 19(1)(a)\n2. பிரிவு 19(1)(b)\n3. பிரிவு 19(1)(c)\n4. பிரிவு 19(1)(g)",
+    "Freedom of Speech and Expression", "பேச்சு மற்றும் கருத்துச் சுதந்திரம்",
+    "Freedom to Assemble Peacefully", "ஆயுதங்களின்றி அமைதியாகக் கூடும் சுதந்திரம்",
+    "Freedom to Form Associations or Unions", "சங்கங்கள் அல்லது தொழிற்சங்கங்களை அமைக்கும் சுதந்திரம்",
+    "Freedom to Practice Profession or Trade", "தொழில் அல்லது வர்த்தகம் செய்யும் சுதந்திரம்",
+    "Article 19(1)(a)", "பிரிவு 19(1)(a)",
+    "Article 19(1)(b)", "பிரிவு 19(1)(b)",
+    "Article 19(1)(c)", "பிரிவு 19(1)(c)",
+    "Article 19(1)(g)", "பிரிவு 19(1)(g)",
+    "A-1, B-2, C-3, D-4", "A-2, B-1, C-4, D-3", "A-1, B-3, C-2, D-4", "A-4, B-3, C-2, D-1", "B",
+    "A-1: Speech & Expression is 19(1)(a). B-2: Peaceful assembly is 19(1)(b). C-3: Associations/unions is 19(1)(c). D-4: Profession/trade is 19(1)(g).",
+    "A-1: பேச்சுச் சுதந்திரம் 19(1)(a). B-2: அமைதியாகக் கூடுதல் 19(1)(b). C-3: சங்கங்கள் 19(1)(c). D-4: தொழில் சுதந்திரம் 19(1)(g).",
+    "Correct. A-1, B-2, C-3, D-4 matches all Article 19(1) freedoms accurately.", "சரி. A-1, B-2, C-3, D-4 என்பது சரியான பொருத்தமாகும்.",
+    "Incorrect. 19(1)(a) is Speech, not Assembly.", "தவறு. 19(1)(a) பேச்சுச் சுதந்திரம் ஆகும்.",
+    "Incorrect. 19(1)(b) is Assembly, not Associations.", "தவறு. 19(1)(b) கூடுதல் சுதந்திரம் ஆகும்.",
+    "Incorrect. 19(1)(g) is Trade/Profession, not Speech.", "தவறு. 19(1)(g) தொழில் சுதந்திரம் ஆகும்.",
+    "TNPSC Trap: Article 19(1)(f) [Right to Property] was deleted by the 44th Constitutional Amendment Act, 1978.",
+    "TNPSC பொறி: 19(1)(f) [சொத்துரிமை] 44-வது திருத்தச் சட்டம் 1978 மூலம் நீக்கப்பட்டது.",
+    "The 97th Amendment 2011 added 'co-operative societies' to Article 19(1)(c).",
+    "97-வது திருத்தம் 2011 19(1)(c)-ல் 'கூட்டுறவு சங்கங்கள்' என்ற சொல்லைச் சேர்த்தது.",
+    "Understand", 60, ["Polity", "Fundamental Rights", "Article 19", "Six Freedoms", "Match the Following"]
+))
+
+# FR_MF_003 (Easy)
+questions.append(make_mf_q(
+    "FR_MF_003", "Easy",
+    "Match List I (Articles on Personal Protection) with List II (Legal Protections) and select the correct answer using the codes given below:\n\nList I\nA. Article 20(1)\nB. Article 20(2)\nC. Article 20(3)\nD. Article 21A\n\nList II\n1. Protection against Ex-Post Facto Laws\n2. Protection against Double Jeopardy\n3. Protection against Self-Incrimination\n4. Right to Free and Compulsory Education for Children aged 6-14",
+    "பட்டியல் I-ஐ (தனிநபர் பாதுகாப்புப் பிரிவுகள்) பட்டியல் II உடன் (சட்டப் பாதுகாப்புகள்) பொருத்தி சரியான பதிலதைத் தேர்ந்தெடுக்கவும்:\n\nபட்டியல் I\nA. பிரிவு 20(1)\nB. பிரிவு 20(2)\nC. பிரிவு 20(3)\nD. பிரிவு 21A\n\nபட்டியல் II\n1. பின்னோக்கிய விளைவு சட்டங்களுக்கு எதிரான பாதுகாப்பு\n2. இரட்டைத் தண்டனைக்கு எதிரான பாதுகாப்பு\n3. தங்களுக்குத் தாங்களே சாட்சியமளிப்பதற்கு எதிரான பாதுகாப்பு\n4. 6-14 வயது குழந்தைகளுக்கான இலவச கட்டாயக் கல்வி உரிமை",
+    "Article 20(1)", "பிரிவு 20(1)",
+    "Article 20(2)", "பிரிவு 20(2)",
+    "Article 20(3)", "பிரிவு 20(3)",
+    "Article 21A", "பிரிவு 21A",
+    "Protection against Ex-Post Facto Laws", "பின்னோக்கிய விளைவு சட்டங்களுக்கு எதிரான பாதுகாப்பு",
+    "Protection against Double Jeopardy", "இரட்டைத் தண்டனைக்கு எதிரான பாதுகாப்பு",
+    "Protection against Self-Incrimination", "தங்களுக்குத் தாங்களே சாட்சியமளிப்பதற்கு எதிரான பாதுகாப்பு",
+    "Right to Free and Compulsory Education for Children aged 6-14", "6-14 வயது குழந்தைகளுக்கான இலவச கட்டாயக் கல்வி உரிமை",
+    "A-1, B-2, C-3, D-4", "A-2, B-1, C-4, D-3", "A-1, B-3, C-2, D-4", "A-4, B-2, C-3, D-1", "C",
+    "A-1: Art 20(1) Ex-post facto law. B-2: Art 20(2) Double jeopardy. C-3: Art 20(3) Self-incrimination. D-4: Art 21A Right to Education.",
+    "A-1: பிரிவு 20(1) பின்னோக்கிய சட்டம். B-2: பிரிவு 20(2) இரட்டைத் தண்டனை. C-3: பிரிவு 20(3) தன் சாட்சியம். D-4: பிரிவு 21A கல்வி உரிமை.",
+    "Correct. A-1, B-2, C-3, D-4 is the exact match.", "சரி. A-1, B-2, C-3, D-4 என்பது சரியான பொருத்தமாகும்.",
+    "Incorrect. 20(1) is Ex-post facto, not double jeopardy.", "தவறு. 20(1) பின்னோக்கிய சட்டப் பாதுகாப்பு ஆகும்.",
+    "Incorrect. 20(2) is Double jeopardy, not self-incrimination.", "தவறு. 20(2) இரட்டைத் தண்டனைப் பாதுகாப்பு ஆகும்.",
+    "Incorrect. 21A is Education, not ex-post facto.", "தவறு. 21A கல்வி உரிமை ஆகும்.",
+    "TNPSC Trap: Protection against ex-post facto laws (20(1)) applies to CRIMINAL laws only, NOT civil/tax laws.",
+    "TNPSC பொறி: பின்னோக்கிய விளைவு சட்டப் பாதுகாப்பு (20(1)) குற்றவியல் சட்டங்களுக்கு மட்டுமே பொருந்தும்.",
+    "Article 21A was inserted by the 86th Constitutional Amendment Act, 2002.",
+    "பிரிவு 21A 86-வது அரசியலமைப்பு திருத்தச் சட்டம் 2002 மூலம் சேர்க்கப்பட்டது.",
+    "Understand", 60, ["Polity", "Fundamental Rights", "Article 20", "Article 21A", "Match the Following"]
+))
+
+# FR_MF_004 (Easy)
+questions.append(make_mf_q(
+    "FR_MF_004", "Easy",
+    "Match List I (Articles on Exploitation & Religion) with List II (Core Rights) and select the correct answer using the codes given below:\n\nList I\nA. Article 23\nB. Article 24\nC. Article 25\nD. Article 27\n\nList II\n1. Prohibition of Human Trafficking, Begar, and Forced Labor\n2. Prohibition of Employment of Children below 14 in Hazardous Occupations\n3. Freedom of Conscience and Right to Profess, Practice, and Propagate Religion\n4. Freedom from Payment of Taxes for Promotion of any Particular Religion",
+    "பட்டியல் I-ஐ (சுரண்டல் மற்றும் மதப் பிரிவுகள்) பட்டியல் II உடன் (முக்கிய உரிமைகள்) பொருத்தி சரியான பதிலதைத் தேர்ந்தெடுக்கவும்:\n\nபட்டியல் I\nA. பிரிவு 23\nB. பிரிவு 24\nC. பிரிவு 25\nD. பிரிவு 27\n\nபட்டியல் II\n1. மனித வர்த்தகம், வெட்டி வேலை மற்றும் கட்டாய வேலை தடை\n2. அபாயகரமான தொழில்களில் 14 வயதுக்குட்பட்ட குழந்தைகளை ஈடுபடுத்துவது தடை\n3. மனசாட்சி சுதந்திரம் மற்றும் மதத்தைப் பரப்பவும் பின்பற்றவும் உரிமை\n4. குறிப்பிட்ட மதப் பிரச்சாரத்திற்காக வரி செலுத்துவதிலிருந்து விலக்கு",
+    "Article 23", "பிரிவு 23",
+    "Article 24", "பிரிவு 24",
+    "Article 25", "பிரிவு 25",
+    "Article 27", "பிரிவு 27",
+    "Prohibition of Human Trafficking, Begar, and Forced Labor", "மனித வர்த்தகம், வெட்டி வேலை மற்றும் கட்டாய வேலை தடை",
+    "Prohibition of Employment of Children below 14 in Hazardous Occupations", "அபாயகரமான தொழில்களில் 14 வயதுக்குட்பட்ட குழந்தைகளை ஈடுபடுத்துவது தடை",
+    "Freedom of Conscience and Right to Profess, Practice, and Propagate Religion", "மனசாட்சி சுதந்திரம் மற்றும் மதத்தைப் பரப்பவும் பின்பற்றவும் உரிமை",
+    "Freedom from Payment of Taxes for Promotion of any Particular Religion", "குறிப்பிட்ட மதப் பிரச்சாரத்திற்காக வரி செலுத்துவதிலிருந்து விலக்கு",
+    "A-1, B-2, C-3, D-4", "A-2, B-1, C-4, D-3", "A-1, B-3, C-2, D-4", "A-4, B-3, C-2, D-1", "D",
+    "A-1: Art 23 Begar prohibition. B-2: Art 24 Child labor prohibition. C-3: Art 25 Individual religion freedom. D-4: Art 27 Tax immunity for religion.",
+    "A-1: பிரிவு 23 வெட்டி வேலை தடை. B-2: பிரிவு 24 குழந்தைத் தொழிலாளர் தடை. C-3: பிரிவு 25 மத சுதந்திரம். D-4: பிரிவு 27 மத வரி விலக்கு.",
+    "Correct. A-1, B-2, C-3, D-4 accurately matches all four Articles.", "சரி. A-1, B-2, C-3, D-4 என்பது நான்கு பிரிவுகளுக்குமான சரியான பொருத்தமாகும்.",
+    "Incorrect. Article 23 matches 1, not 2.", "தவறு. பிரிவு 23 பொருத்தம் 1 ஆகும்.",
+    "Incorrect. Article 24 matches 2, not 3.", "தவறு. பிரிவு 24 பொருத்தம் 2 ஆகும்.",
+    "Incorrect. Article 27 matches 4, not 1.", "தவறு. பிரிவு 27 பொருத்தம் 4 ஆகும்.",
+    "TNPSC Trap: Article 27 bars TAXATION for promotion of religion, but FEES can be levied to provide secular services.",
+    "TNPSC பொறி: பிரிவு 27 மத வளர்ச்சிக்கான வரியைத் தடை செய்கிறது, ஆனால் சேவைக் கட்டணங்களை அனுமதிக்கிறது.",
+    "Article 23 protects against both State and private individuals.",
+    "பிரிவு 23 அரசு மற்றும் தனிநபர்கள் இருவருக்கு எதிராகவுமே பாதுகாப்பு அளிக்கிறது.",
+    "Understand", 60, ["Polity", "Fundamental Rights", "Article 23", "Article 24", "Article 25", "Article 27", "Match the Following"]
+))
+
+# FR_MF_005 (Easy)
+questions.append(make_mf_q(
+    "FR_MF_005", "Easy",
+    "Match List I (Names of Five Writs) with List II (Literal Meaning in Latin) and select the correct answer using the codes given below:\n\nList I\nA. Habeas Corpus\nB. Mandamus\nC. Prohibition\nD. Quo-Warranto\n\nList II\n1. To have the body of\n2. We Command\n3. To forbid or stay proceedings\n4. By what authority or warrant?",
+    "பட்டியல் I-ஐ (ஐந்து பேராணைகளின் பெயர்கள்) பட்டியல் II உடன் (லத்தீன் மொழியில் நேரடிப் பொருள்) பொருத்தி சரியான பதிலதைத் தேர்ந்தெடுக்கவும்:\n\nபட்டியல் I\nA. ஆட்கொணர்வுப் பேராணை (Habeas Corpus)\nB. கட்டளைப் பேராணை (Mandamus)\nC. தடையுறுத்துப் பேராணை (Prohibition)\nD. தகுதி வினவல் பேராணை (Quo-Warranto)\n\nபட்டியல் II\n1. உடலைக் கொணர்தல் (To have the body of)\n2. நாம் ஆணையிடுகிறோம் (We Command)\n3. தடுத்தல் அல்லது நிறுத்தி வைத்தல் (To forbid)\n4. எந்த அதிகாரத்தின் அடிப்படையில்? (By what authority?)",
+    "Habeas Corpus", "ஆட்கொணர்வுப் பேராணை (Habeas Corpus)",
+    "Mandamus", "கட்டளைப் பேராணை (Mandamus)",
+    "Prohibition", "தடையுறுத்துப் பேராணை (Prohibition)",
+    "Quo-Warranto", "தகுதி வினவல் பேராணை (Quo-Warranto)",
+    "To have the body of", "உடலைக் கொணர்தல் (To have the body of)",
+    "We Command", "நாம் ஆணையிடுகிறோம் (We Command)",
+    "To forbid or stay proceedings", "தடுத்தல் அல்லது நிறுத்தி வைத்தல் (To forbid)",
+    "By what authority or warrant?", "எந்த அதிகாரத்தின் அடிப்படையில்? (By what authority?)",
+    "A-1, B-2, C-3, D-4", "A-2, B-1, C-4, D-3", "A-1, B-3, C-2, D-4", "A-4, B-3, C-2, D-1", "A",
+    "A-1: Habeas Corpus = To have the body of. B-2: Mandamus = We Command. C-3: Prohibition = To forbid. D-4: Quo-Warranto = By what authority.",
+    "A-1: ஆட்கொணர்வு = உடலைக் கொணர்தல். B-2: கட்டளை = நாம் ஆணையிடுகிறோம். C-3: தடையுறுத்தல் = தடுத்தல். D-4: தகுதி வினவல் = எந்த அதிகாரத்தின் படி.",
+    "Correct. A-1, B-2, C-3, D-4 is the exact Latin meaning match for the writs.", "சரி. A-1, B-2, C-3, D-4 என்பது பேராணைகளின் லத்தீன் பொருளுக்கான சரியான பொருத்தமாகும்.",
+    "Incorrect. Habeas Corpus means To have the body of (1).", "தவறு. ஆட்கொணர்வு என்றால் உடலைக் கொணர்தல் (1).",
+    "Incorrect. Mandamus means We Command (2).", "தவறு. கட்டளைப் பேராணை என்றால் நாம் ஆணையிடுகிறோம் (2).",
+    "Incorrect. Quo-Warranto means By what authority (4).", "தவறு. தகுதி வினவல் என்றால் எந்த அதிகாரத்தின் படி (4).",
+    "TNPSC Trap: Certiorari literally means 'To be certified' or 'To be informed' (preventive and curative).",
+    "TNPSC பொறி: சான்றாய்வுப் பேராணை (Certiorari) என்றால் 'சான்றளித்தல்' அல்லது 'தெரிவித்தல்' என்று பொருள்.",
+    "Dr. B.R. Ambedkar called Article 32 (Writ Jurisdiction) the 'Heart and Soul' of the Constitution.",
+    "டாக்டர் பி.ஆர். அம்பேத்கர் பிரிவு 32-ஐ அரசியலமைப்பின் 'இதயம் மற்றும் ஆன்மா' என்று அழைத்தார்.",
+    "Understand", 60, ["Polity", "Fundamental Rights", "Five Writs", "Latin Meanings", "Match the Following"]
+))
+
+# FR_MF_006 (Medium)
+questions.append(make_mf_q(
+    "FR_MF_006", "Medium",
+    "Match List I (Article 12 State Categories) with List II (Specific Bodies Included) and select the correct answer using the codes given below:\n\nList I\nA. Executive and Legislative organs of Union\nB. Executive and Legislative organs of States\nC. Local Authorities\nD. Other Statutory and Non-Statutory Authorities\n\nList II\n1. President of India, Prime Minister, and Parliament\n2. Governor, Chief Minister, and State Legislative Assemblies\n3. Municipalities, Panchayats, District Boards, and Improvement Trusts\n4. LIC, ONGC, SAIL, and Electricity Boards",
+    "பட்டியல் I-ஐ (பிரிவு 12 அரசு வகைகள்) பட்டியல் II உடன் (சேர்க்கப்பட்ட அமைப்புகள்) பொருத்தி சரியான பதிலதைத் தேர்ந்தெடுக்கவும்:\n\nபட்டியல் I\nA. மத்திய அரசின் நிர்வாக மற்றும் சட்டமன்ற உறுப்புகள்\nB. மாநில அரசின் நிர்வாக மற்றும் சட்டமன்ற உறுப்புகள்\nC. உள்ளாட்சி அமைப்புகள்\nD. பிற சட்டப்பூர்வ மற்றும் சட்டப்பூர்வமற்ற அமைப்புகள்\n\nபட்டியல் II\n1. குடியரசுத் தலைவர், பிரதமர் மற்றும் நாடாளுமன்றம்\n2. ஆளுநர், முதலமைச்சர் மற்றும் மாநில சட்டமன்றங்கள்\n3. நகராட்சிகள், ஊராட்சிகள், மாவட்ட வாரியங்கள்\n4. எல்.ஐ.சி, ஓ.என்.ஜி.சி, சேல் மற்றும் மின்சார வாரியங்கள்",
+    "Executive and Legislative organs of Union", "மத்திய அரசின் நிர்வாக மற்றும் சட்டமன்ற உறுப்புகள்",
+    "Executive and Legislative organs of States", "மாநில அரசின் நிர்வாக மற்றும் சட்டமன்ற உறுப்புகள்",
+    "Local Authorities", "உள்ளாட்சி அமைப்புகள்",
+    "Other Statutory and Non-Statutory Authorities", "பிற சட்டப்பூர்வ மற்றும் சட்டப்பூர்வமற்ற அமைப்புகள்",
+    "President of India, Prime Minister, and Parliament", "குடியரசுத் தலைவர், பிரதமர் மற்றும் நாடாளுமன்றம்",
+    "Governor, Chief Minister, and State Legislative Assemblies", "ஆளுநர், முதலமைச்சர் மற்றும் மாநில சட்டமன்றங்கள்",
+    "Municipalities, Panchayats, District Boards, and Improvement Trusts", "நகராட்சிகள், ஊராட்சிகள், மாவட்ட வாரியங்கள்",
+    "LIC, ONGC, SAIL, and Electricity Boards", "எல்.ஐ.சி, ஓ.என்.ஜி.சி, சேல் மற்றும் மின்சார வாரியங்கள்",
+    "A-1, B-2, C-3, D-4", "A-2, B-1, C-4, D-3", "A-1, B-3, C-2, D-4", "A-4, B-3, C-2, D-1", "B",
+    "A-1: Union organs include President & Parliament. B-2: State organs include Governor & Assembly. C-3: Local authorities include Municipalities & Panchayats. D-4: Other authorities include LIC, ONGC, SAIL.",
+    "A-1: மத்திய உறுப்புகள் குடியரசுத் தலைவர் & நாடாளுமன்றம். B-2: மாநில உறுப்புகள் ஆளுநர் & சட்டமன்றம். C-3: உள்ளாட்சி நகராட்சிகள். D-4: பிற அமைப்புகள் எல்.ஐ.சி, ஓ.என்.ஜி.சி.",
+    "Correct. A-1, B-2, C-3, D-4 matches all Article 12 categories.", "சரி. A-1, B-2, C-3, D-4 என்பது பிரிவு 12-ன் அமைப்புகளுக்கான சரியான பொருத்தமாகும்.",
+    "Incorrect. Union organ is 1, not 2.", "தவறு. மத்திய உறுப்பு 1 ஆகும்.",
+    "Incorrect. Local Authorities match 3, not 2.", "தவறு. உள்ளாட்சி அமைப்புகள் 3 ஆகும்.",
+    "Incorrect. Other authorities match 4, not 1.", "தவறு. பிற அமைப்புகள் 4 ஆகும்.",
+    "TNPSC Trap: Judiciary acting in judicial capacity is generally NOT State under Art 12, but in administrative capacity it IS State.",
+    "TNPSC பொறி: நீதித்துறை தனது நீதித்துறை பணியைச் செய்யும்போது பிரிவு 12-ன் கீழ் வராது, ஆனால் நிர்வாகப் பணியின் போது வரும்.",
+    "Article 12 defines 'State' exclusively for Part III of the Constitution.",
+    "பிரிவு 12 பகுதி III-ன் பயன்பாட்டிற்காக மட்டுமே 'அரசு' என்பதை வரையறுக்கிறது.",
+    "Understand", 60, ["Polity", "Fundamental Rights", "Article 12", "State Definition", "Match the Following"]
+))
+
+# FR_MF_007 (Medium)
+questions.append(make_mf_q(
+    "FR_MF_007", "Medium",
+    "Match List I (Doctrines and Equality Concepts) with List II (Legal Descriptions) and select the correct answer using the codes given below:\n\nList I\nA. Doctrine of Severability\nB. Doctrine of Eclipse\nC. Equality before Law\nD. Equal Protection of the Laws\n\nList II\n1. Only the offending unconstitutional part of a law is void if separable from the rest\n2. Inconsistent pre-constitutional law is not dead ab initio, but remains dormant under a shadow\n3. British concept (negative) denoting absence of any special privileges to any individual\n4. American concept (positive) denoting equal treatment under equal circumstances",
+    "பட்டியல் I-ஐ (கோட்பாடுகள் மற்றும் சமத்துவக் கருத்துகள்) பட்டியல் II உடன் (சட்ட விளக்கங்கள்) பொருத்தி சரியான பதிலதைத் தேர்ந்தெடுக்கவும்:\n\nபட்டியல் I\nA. பிரித்தல் கோட்பாடு (Severability)\nB. கிரகணக் கோட்பாடு (Eclipse)\nC. சட்டத்தின் முன் சமன்\nD. சட்டங்களின் சமமான பாதுகாப்பு\n\nபட்டியல் II\n1. பிரிக்கக்கூடியதாக இருந்தால் சட்டத்தின் மீறும் பகுதி மட்டுமே செல்லாததாகும்\n2. அரசியலமைப்புக்கு முந்தைய முரணான சட்டம் முழுமையாக இறக்கவில்லை, நிழலில் செயலற்றதாக உள்ளது\n3. பிரிட்டிஷ் கருத்து (எதிர்மறை) - தனிநபருக்கு சிறப்பு உரிமைகள் இல்லை என்பதைக் குறிக்கிறது\n4. அமெரிக்கக் கருத்து (நேர்மறை) - சமமான சூழ்நிலையில் சமமான சிகிச்சை அளிக்கப்பட வேண்டும் என்பதைக் குறிக்கிறது",
+    "Doctrine of Severability", "பிரித்தல் கோட்பாடு (Severability)",
+    "Doctrine of Eclipse", "கிரகணக் கோட்பாடு (Eclipse)",
+    "Equality before Law", "சட்டத்தின் முன் சமன்",
+    "Equal Protection of the Laws", "சட்டங்களின் சமமான பாதுகாப்பு",
+    "Only the offending unconstitutional part of a law is void if separable from the rest", "பிரிக்கக்கூடியதாக இருந்தால் சட்டத்தின் மீறும் பகுதி மட்டுமே செல்லாததாகும்",
+    "Inconsistent pre-constitutional law is not dead ab initio, but remains dormant under a shadow", "அரசியலமைப்புக்கு முந்தைய முரணான சட்டம் முழுமையாக இறக்கவில்லை, நிழலில் செயலற்றதாக உள்ளது",
+    "British concept (negative) denoting absence of any special privileges to any individual", "பிரிட்டிஷ் கருத்து (எதிர்மறை) - தனிநபருக்கு சிறப்பு உரிமைகள் இல்லை என்பதைக் குறிக்கிறது",
+    "American concept (positive) denoting equal treatment under equal circumstances", "அமெரிக்கக் கருத்து (நேர்மறை) - சமமான சூழ்நிலையில் சமமான சிகிச்சை அளிக்கப்பட வேண்டும் என்பதைக் குறிக்கிறது",
+    "A-1, B-2, C-3, D-4", "A-2, B-1, C-4, D-3", "A-1, B-3, C-2, D-4", "A-4, B-3, C-2, D-1", "C",
+    "A-1: Severability isolates invalid part. B-2: Eclipse makes pre-constitutional law dormant (Bhikaji case). C-3: Equality before law is British negative concept. D-4: Equal protection of laws is US positive concept.",
+    "A-1: பிரித்தல் கோட்பாடு மீறும் பகுதியை மட்டும் பிரிக்கிறது. B-2: கிரகணக் கோட்பாடு பழைய சட்டத்தை மறைத்து வைக்கிறது. C-3: சட்டத்தின் முன் சமன் பிரிட்டிஷ் எதிர்மறை. D-4: சட்டங்களின் சமமான பாதுகாப்பு அமெரிக்க நேர்மறை.",
+    "Correct. A-1, B-2, C-3, D-4 matches all four constitutional doctrines and equality concepts.", "சரி. A-1, B-2, C-3, D-4 என்பது கோட்பாடுகள் மற்றும் சமத்துவக் கருத்துகளுக்கான சரியான பொருத்தமாகும்.",
+    "Incorrect. Severability matches 1, not 2.", "தவறு. பிரித்தல் கோட்பாடு பொருத்தம் 1 ஆகும்.",
+    "Incorrect. Eclipse matches 2, not 3.", "தவறு. கிரகணக் கோட்பாடு பொருத்தம் 2 ஆகும்.",
+    "Incorrect. Equal Protection matches 4, not 1.", "தவறு. சமமான பாதுகாப்பு பொருத்தம் 4 ஆகும்.",
+    "TNPSC Trap: Doctrine of Eclipse applies primarily to PRE-CONSTITUTIONAL laws under Article 13(1).",
+    "TNPSC பொறி: கிரகணக் கோட்பாடு முதன்மையாக பிரிவு 13(1)-ன் கீழ் உள்ள அரசியலமைப்புக்கு முந்தைய சட்டங்களுக்கே பொருந்தும்.",
+    "Equality before law forms part of Dicey's Rule of Law.",
+    "சட்டத்தின் முன் சமன் டைசியின் 'சட்டத்தின் ஆட்சி' கோட்பாட்டின் ஒரு பகுதியாகும்.",
+    "Understand", 60, ["Polity", "Fundamental Rights", "Doctrine of Eclipse", "Equality before Law", "Match the Following"]
+))
+
+# FR_MF_008 (Medium)
+questions.append(make_mf_q(
+    "FR_MF_008", "Medium",
+    "Match List I (Article 15 Clauses) with List II (Specific Reservation Exceptions) and select the correct answer using the codes given below:\n\nList I\nA. Article 15(3)\nB. Article 15(4)\nC. Article 15(5)\nD. Article 15(6)\n\nList II\n1. Special provisions for Women and Children\n2. Special provisions for advancement of SEBCs/SCs/STs (Added by 1st CAA 1951)\n3. Reservation for SEBCs/SCs/STs in Private Educational Institutions (Added by 93rd CAA 2005)\n4. Up to 10% reservation for Economically Weaker Sections (EWS) in educational institutions (Added by 103rd CAA 2019)",
+    "பட்டியல் I-ஐ (பிரிவு 15 உட்பிரிவுகள்) பட்டியல் II உடன் (குறிப்பிட்ட இடஒதுக்கீடு விதிவிலக்குகள்) பொருத்தி சரியான பதிலதைத் தேர்ந்தெடுக்கவும்:\n\nபட்டியல் I\nA. பிரிவு 15(3)\nB. பிரிவு 15(4)\nC. பிரிவு 15(5)\nD. பிரிவு 15(6)\n\nபட்டியல் II\n1. பெண்கள் மற்றும் குழந்தைகளுக்கான சிறப்பு ஏற்பாடுகள்\n2. பிற்படுத்தப்பட்டோர்/SC/ST முன்னேற்றத்திற்கான சிறப்பு ஏற்பாடுகள் (1-வது திருத்தம் 1951)\n3. தனியார் கல்வி நிறுவனங்களில் பிற்படுத்தப்பட்டோர்/SC/ST இடஒதுக்கீடு (93-வது திருத்தம் 2005)\n4. கல்வி நிறுவனங்களில் EWS பிரிவினருக்கு 10% வரை இடஒதுக்கீடு (103-வது திருத்தம் 2019)",
+    "Article 15(3)", "பிரிவு 15(3)",
+    "Article 15(4)", "பிரிவு 15(4)",
+    "Article 15(5)", "பிரிவு 15(5)",
+    "Article 15(6)", "பிரிவு 15(6)",
+    "Special provisions for Women and Children", "பெண்கள் மற்றும் குழந்தைகளுக்கான சிறப்பு ஏற்பாடுகள்",
+    "Special provisions for advancement of SEBCs/SCs/STs (Added by 1st CAA 1951)", "பிற்படுத்தப்பட்டோர்/SC/ST முன்னேற்றத்திற்கான சிறப்பு ஏற்பாடுகள் (1-வது திருத்தம் 1951)",
+    "Reservation for SEBCs/SCs/STs in Private Educational Institutions (Added by 93rd CAA 2005)", "தனியார் கல்வி நிறுவனங்களில் பிற்படுத்தப்பட்டோர்/SC/ST இடஒதுக்கீடு (93-வது திருத்தம் 2005)",
+    "Up to 10% reservation for Economically Weaker Sections (EWS) in educational institutions (Added by 103rd CAA 2019)", "கல்வி நிறுவனங்களில் EWS பிரிவினருக்கு 10% வரை இடஒதுக்கீடு (103-வது திருத்தம் 2019)",
+    "A-1, B-2, C-3, D-4", "A-2, B-1, C-4, D-3", "A-1, B-3, C-2, D-4", "A-4, B-3, C-2, D-1", "D",
+    "A-1: 15(3) Women & Children. B-2: 15(4) 1st CAA SEBCs. C-3: 15(5) 93rd CAA Private Institutions. D-4: 15(6) 103rd CAA EWS.",
+    "A-1: 15(3) பெண்கள்/குழந்தைகள். B-2: 15(4) 1வது திருத்தம் SEBC. C-3: 15(5) 93வது திருத்தம் தனியார் நிறுவனங்கள். D-4: 15(6) 103வது திருத்தம் EWS.",
+    "Correct. A-1, B-2, C-3, D-4 matches all Article 15 sub-clauses.", "சரி. A-1, B-2, C-3, D-4 என்பது பிரிவு 15 உட்பிரிவுகளுக்கான சரியான பொருத்தமாகும்.",
+    "Incorrect. 15(3) matches 1, not 2.", "தவறு. 15(3) பொருத்தம் 1 ஆகும்.",
+    "Incorrect. 15(4) matches 2, not 3.", "தவறு. 15(4) பொருத்தம் 2 ஆகும்.",
+    "Incorrect. 15(6) matches 4, not 1.", "தவறு. 15(6) பொருத்தம் 4 ஆகும்.",
+    "TNPSC Trap: Article 15(5) specifically EXCLUDES minority educational institutions referred to in Article 30(1).",
+    "TNPSC பொறி: பிரிவு 15(5) சிறுபான்மையினர் கல்வி நிறுவனங்களுக்கு (பிரிவு 30) விலக்கு அளிக்கிறது.",
+    "Article 15(4) was enacted to override the Champakam Dorairajan case judgment (1951).",
+    "சண்பகம் துரைராஜன் வழக்கின் (1951) தீர்ப்பை முறியடிக்க பிரிவு 15(4) கொண்டுவரப்பட்டது.",
+    "Understand", 60, ["Polity", "Fundamental Rights", "Article 15", "Reservations", "Match the Following"]
+))
+
+# FR_MF_009 (Medium)
+questions.append(make_mf_q(
+    "FR_MF_009", "Medium",
+    "Match List I (Article 16 Amendments & Clauses) with List II (Employment Reservation Provisions) and select the correct answer using the codes given below:\n\nList I\nA. Article 16(4A)\nB. Article 16(4B)\nC. Article 16(6)\nD. Article 16(3)\n\nList II\n1. Reservation in promotions for SCs and STs (Added by 77th CAA 1995)\n2. Carry-forward of unfilled backlog reserved vacancies beyond 50% cap (Added by 81st CAA 2000)\n3. Up to 10% reservation for EWS in public employment (Added by 103rd CAA 2019)\n4. Power of Parliament to prescribe Residence as a requirement for employment",
+    "பட்டியல் I-ஐ (பிரிவு 16 திருத்தங்கள்) பட்டியல் II உடன் (வேலைவாய்ப்பு இடஒதுக்கீடு விதிகள்) பொருத்தி சரியான பதிலதைத் தேர்ந்தெடுக்கவும்:\n\nபட்டியல் I\nA. பிரிவு 16(4A)\nB. பிரிவு 16(4B)\nC. பிரிவு 16(6)\nD. பிரிவு 16(3)\n\nபட்டியல் II\n1. SC மற்றும் ST பிரிவினருக்கு பதவி உயர்வில் இடஒதுக்கீடு (77-வது திருத்தம் 1995)\n2. 50% வரம்பிற்கு அப்பால் காலிப்பணியிடங்களை நிரப்புதல் (Carry-forward) (81-வது திருத்தம் 2000)\n3. பொது வேலைவாய்ப்பில் EWS பிரிவினருக்கு 10% வரை இடஒதுக்கீடு (103-வது திருத்தம் 2019)\n4. வேலைவாய்ப்பிற்கு இருப்பிட நிபந்தனையை விதிக்கும் நாடாளுமன்ற அதிகாரம்",
+    "Article 16(4A)", "பிரிவு 16(4A)",
+    "Article 16(4B)", "பிரிவு 16(4B)",
+    "Article 16(6)", "பிரிவு 16(6)",
+    "Article 16(3)", "பிரிவு 16(3)",
+    "Reservation in promotions for SCs and STs (Added by 77th CAA 1995)", "SC மற்றும் ST பிரிவினருக்கு பதவி உயர்வில் இடஒதுக்கீடு (77-வது திருத்தம் 1995)",
+    "Carry-forward of unfilled backlog reserved vacancies beyond 50% cap (Added by 81st CAA 2000)", "50% வரம்பிற்கு அப்பால் காலிப்பணியிடங்களை நிரப்புதல் (Carry-forward) (81-வது திருத்தம் 2000)",
+    "Up to 10% reservation for EWS in public employment (Added by 103rd CAA 2019)", "பொது வேலைவாய்ப்பில் EWS பிரிவினருக்கு 10% வரை இடஒதுக்கீடு (103-வது திருத்தம் 2019)",
+    "Power of Parliament to prescribe Residence as a requirement for employment", "வேலைவாய்ப்பிற்கு இருப்பிட நிபந்தனையை விதிக்கும் நாடாளுமன்ற அதிகாரம்",
+    "A-1, B-2, C-3, D-4", "A-2, B-1, C-4, D-3", "A-1, B-3, C-2, D-4", "A-4, B-3, C-2, D-1", "A",
+    "A-1: 16(4A) 77th CAA Promotion reservation. B-2: 16(4B) 81st CAA Backlog carry-forward. C-3: 16(6) 103rd CAA EWS. D-4: 16(3) Residence requirement by Parliament.",
+    "A-1: 16(4A) பதவி உயர்வு இடஒதுக்கீடு. B-2: 16(4B) காலிப்பணியிடம் கொண்டு செல்லுதல். C-3: 16(6) EWS 10%. D-4: 16(3) இருப்பிட விதி.",
+    "Correct. A-1, B-2, C-3, D-4 matches all Article 16 sub-clauses.", "சரி. A-1, B-2, C-3, D-4 என்பது பிரிவு 16 திருத்தங்களுக்கான சரியான பொருத்தமாகும்.",
+    "Incorrect. 16(4A) matches 1, not 2.", "தவறு. 16(4A) பொருத்தம் 1 ஆகும்.",
+    "Incorrect. 16(4B) matches 2, not 3.", "தவறு. 16(4B) பொருத்தம் 2 ஆகும்.",
+    "Incorrect. 16(3) matches 4, not 1.", "தவறு. 16(3) பொருத்தம் 4 ஆகும்.",
+    "TNPSC Trap: Only PARLIAMENT (not State Legislatures) can prescribe residence requirement under Article 16(3).",
+    "TNPSC பொறி: 16(3)-ன் கீழ் நாடாளுமன்றம் மட்டுமே இருப்பிட விதியை விதிக்க முடியும்.",
+    "The 85th Amendment Act 2001 provided 'consequential seniority' for SC/ST promoted candidates.",
+    "85-வது திருத்தம் 2001 SC/ST பதவி உயர்வு பெற்றோருக்கு 'தொடர் பணி மூப்பு' வழங்கியது.",
+    "Analyze", 60, ["Polity", "Fundamental Rights", "Article 16", "Public Employment", "Match the Following"]
+))
+
+# FR_MF_010 (Medium)
+questions.append(make_mf_q(
+    "FR_MF_010", "Medium",
+    "Match List I (Grounds of Reasonable Restriction under Article 19(2)) with List II (Constitutional Origin/Nature) and select the correct answer using the codes given below:\n\nList I\nA. Sovereignty and Integrity of India\nB. Public Order and Incitement to an Offence\nC. Contempt of Court\nD. Friendly relations with Foreign States\n\nList II\n1. Added by 16th Constitutional Amendment Act, 1963\n2. Added by 1st Constitutional Amendment Act, 1951\n3. Restriction to protect dignity and authority of Judiciary\n4. Added by 1st Constitutional Amendment Act, 1951 to maintain diplomatic harmony",
+    "பட்டியல் I-ஐ (பிரிவு 19(2) நியாயமான கட்டுப்பாட்டு மைதானங்கள்) பட்டியல் II உடன் (அரசியலமைப்பு தோற்றம்/தன்மை) பொருத்தி சரியான பதிலதைத் தேர்ந்தெடுக்கவும்:\n\nபட்டியல் I\nA. இந்தியாவின் இறையாண்மை மற்றும் ஒருமைப்பாடு\nB. பொது ஒழுங்கு மற்றும் குற்றத்திற்குத் தூண்டுதல்\nC. நீதிமன்ற அவமதிப்பு\nD. வெளிநாடுகளுடனான நட்புறவு\n\nபட்டியல் II\n1. 16-வது அரசியலமைப்பு திருத்தச் சட்டம் 1963 மூலம் சேர்க்கப்பட்டது\n2. 1-வது அரசியலமைப்பு திருத்தச் சட்டம் 1951 மூலம் சேர்க்கப்பட்டது\n3. நீதித்துறையின் கண்ணியம் மற்றும் அதிகாரத்தைப் பாதுகாப்பதற்கான கட்டுப்பாடு\n4. இராஜதந்திர இணக்கத்தைப் பேண 1-வது திருத்தம் 1951 மூலம் சேர்க்கப்பட்டது",
+    "Sovereignty and Integrity of India", "இந்தியாவின் இறையாண்மை மற்றும் ஒருமைப்பாடு",
+    "Public Order and Incitement to an Offence", "பொது ஒழுங்கு மற்றும் குற்றத்திற்குத் தூண்டுதல்",
+    "Contempt of Court", "நீதிமன்ற அவமதிப்பு",
+    "Friendly relations with Foreign States", "வெளிநாடுகளுடனான நட்புறவு",
+    "Added by 16th Constitutional Amendment Act, 1963", "16-வது அரசியலமைப்பு திருத்தச் சட்டம் 1963 மூலம் சேர்க்கப்பட்டது",
+    "Added by 1st Constitutional Amendment Act, 1951", "1-வது அரசியலமைப்பு திருத்தச் சட்டம் 1951 மூலம் சேர்க்கப்பட்டது",
+    "Restriction to protect dignity and authority of Judiciary", "நீதித்துறையின் கண்ணியம் மற்றும் அதிகாரத்தைப் பாதுகாப்பதற்கான கட்டுப்பாடு",
+    "Added by 1st Constitutional Amendment Act, 1951 to maintain diplomatic harmony", "இராஜதந்திர இணக்கத்தைப் பேண 1-வது திருத்தம் 1951 மூலம் சேர்க்கப்பட்டது",
+    "A-1, B-2, C-3, D-4", "A-2, B-1, C-4, D-3", "A-1, B-3, C-2, D-4", "A-4, B-3, C-2, D-1", "B",
+    "A-1: Sovereignty & Integrity added by 16th CAA 1963. B-2: Public order added by 1st CAA 1951. C-3: Contempt of Court protects judiciary. D-4: Friendly relations added by 1st CAA 1951.",
+    "A-1: இறையாண்மை 16வது திருத்தம் 1963. B-2: பொது ஒழுங்கு 1வது திருத்தம் 1951. C-3: நீதிமன்ற அவமதிப்பு. D-4: வெளிநாட்டு நட்புறவு 1வது திருத்தம் 1951.",
+    "Correct. A-1, B-2, C-3, D-4 matches all Article 19(2) restriction grounds.", "சரி. A-1, B-2, C-3, D-4 என்பது கட்டுப்பாட்டு காரணங்களுக்கான சரியான பொருத்தமாகும்.",
+    "Incorrect. Sovereignty was added by 16th CAA (1), not 1st CAA (2).", "தவறு. இறையாண்மை 16வது திருத்தம் மூலம் சேர்க்கப்பட்டது (1).",
+    "Incorrect. Public order was added by 1st CAA (2), not 3.", "தவறு. பொது ஒழுங்கு 1வது திருத்தம் மூலம் சேர்க்கப்பட்டது (2).",
+    "Incorrect. Friendly relations is 4, not 1.", "தவறு. வெளிநாட்டு நட்புறவு 4 ஆகும்.",
+    "TNPSC Trap: There are 8 grounds of restriction under Article 19(2). 'Sovereignty and Integrity of India' was added by the 16th CAA 1963 following the 1962 China War.",
+    "TNPSC பொறி: 19(2)-ன் கீழ் 8 கட்டுப்பாட்டுக் காரணங்கள் உள்ளன. 'இறையாண்மை மற்றும் ஒருமைப்பாடு' 1963-ல் 16வது திருத்தம் மூலம் சேர்க்கப்பட்டது.",
+    "Article 19(2) grounds must be REASONABLE and are subject to judicial review.",
+    "பிரிவு 19(2) கட்டுப்பாடுகள் நியாயமானவையாக இருக்க வேண்டும் மற்றும் நீதித்துறை மறுஆய்வுக்கு உட்பட்டவை.",
+    "Analyze", 60, ["Polity", "Fundamental Rights", "Article 19(2)", "Reasonable Restrictions", "Match the Following"]
+))
+
+# FR_MF_011 (Medium)
+questions.append(make_mf_q(
+    "FR_MF_011", "Medium",
+    "Match List I (Expanded Rights under Article 21) with List II (Landmark Cases) and select the correct answer using the codes given below:\n\nList I\nA. Right to Privacy\nB. Right to Clean Environment\nC. Right to Free Legal Aid\nD. Right to Speedy Trial\n\nList II\n1. Justice K.S. Puttaswamy Case (2017)\n2. Subhash Kumar v. State of Bihar (1991)\n3. M.H. Hoskot v. State of Maharashtra (1978)\n4. Hussainara Khatoon v. Home Secretary, Bihar (1979)",
+    "பட்டியல் I-ஐ (பிரிவு 21-ன் கீழ் விரிவாக்கப்பட்ட உரிமைகள்) பட்டியல் II உடன் (வரலாற்றுச் சிறப்புமிக்க வழக்குகள்) பொருத்தி சரியான பதிலதைத் தேர்ந்தெடுக்கவும்:\n\nபட்டியல் I\nA. தனியுரிமை (Right to Privacy)\nB. தூய்மையான சுற்றுச்சூழல் உரிமை\nC. இலவச சட்ட உதவி உரிமை\nD. விரைவு விசாரணை உரிமை (Right to Speedy Trial)\n\nபட்டியல் II\n1. நீதிபதி கே.எஸ். புட்டசுவாமி வழக்கு (2017)\n2. சுபாஷ் குமார் எதிராக பீகார் மாநில வழக்கு (1991)\n3. எம்.எச். ஹோஸ்காட் எதிராக மகாராஷ்டிர மாநில வழக்கு (1978)\n4. ஹுசைனாரா காதுன் எதிராக பீகார் உள்துறைச் செயலாளர் வழக்கு (1979)",
+    "Right to Privacy", "தனியுரிமை (Right to Privacy)",
+    "Right to Clean Environment", "தூய்மையான சுற்றுச்சூழல் உரிமை",
+    "Right to Free Legal Aid", "இலவச சட்ட உதவி உரிமை",
+    "Right to Speedy Trial", "விரைவு விசாரணை உரிமை (Right to Speedy Trial)",
+    "Justice K.S. Puttaswamy Case (2017)", "நீதிபதி கே.எஸ். புட்டசுவாமி வழக்கு (2017)",
+    "Subhash Kumar v. State of Bihar (1991)", "சுபாஷ் குமார் எதிராக பீகார் மாநில வழக்கு (1991)",
+    "M.H. Hoskot v. State of Maharashtra (1978)", "எம்.எச். ஹோஸ்காட் எதிராக மகாராஷ்டிர மாநில வழக்கு (1978)",
+    "Hussainara Khatoon v. Home Secretary, Bihar (1979)", "ஹுசைனாரா காதுன் எதிராக பீகார் உள்துறைச் செயலாளர் வழக்கு (1979)",
+    "A-1, B-2, C-3, D-4", "A-2, B-1, C-4, D-3", "A-1, B-3, C-2, D-4", "A-4, B-3, C-2, D-1", "C",
+    "A-1: Privacy is Puttaswamy 2017. B-2: Clean Environment is Subhash Kumar 1991. C-3: Free Legal Aid is Hoskot 1978. D-4: Speedy Trial is Hussainara Khatoon 1979.",
+    "A-1: தனியுரிமை புட்டசுவாமி வழக்கு. B-2: தூய்மை சுற்றுச்சூழல் சுபாஷ் குமார் வழக்கு. C-3: இலவச சட்ட உதவி ஹோஸ்காட் வழக்கு. D-4: விரைவு விசாரணை ஹுசைனாரா காதுன் வழக்கு.",
+    "Correct. A-1, B-2, C-3, D-4 matches all expanded rights under Article 21.", "சரி. A-1, B-2, C-3, D-4 என்பது பிரிவு 21 விரிவாக்கப்பட்ட உரிமைகளுக்கான சரியான பொருத்தமாகும்.",
+    "Incorrect. Privacy is Puttaswamy (1), not Subhash Kumar (2).", "தவறு. தனியுரிமை புட்டசுவாமி வழக்கு (1) ஆகும்.",
+    "Incorrect. Clean Environment is Subhash Kumar (2), not Hoskot (3).", "தவறு. தூய்மை சுற்றுச்சூழல் சுபாஷ் குமார் வழக்கு (2) ஆகும்.",
+    "Incorrect. Speedy Trial is Hussainara Khatoon (4), not Puttaswamy (1).", "தவறு. விரைவு விசாரணை ஹுசைனாரா காதுன் வழக்கு (4) ஆகும்.",
+    "TNPSC Trap: Right to Life under Article 21 does NOT include 'Right to Die' (Gian Kaur case 1996).",
+    "TNPSC பொறி: பிரிவு 21-ன் கீழ் வாழும் உரிமை என்பது 'சாகும் உரிமையை' உள்ளடக்காது (ஞான் கவுர் வழக்கு 1996).",
+    "Maneka Gandhi case (1978) opened the floodgates for expanding the scope of Article 21.",
+    "மேனகா காந்தி வழக்கு (1978) பிரிவு 21-ன் எல்லையை விரிவுபடுத்துவதற்கான கதவுகளைத் திறந்தது.",
+    "Analyze", 60, ["Polity", "Fundamental Rights", "Article 21", "Right to Privacy", "Landmark Cases", "Match the Following"]
+))
+
+# FR_MF_012 (Medium)
+questions.append(make_mf_q(
+    "FR_MF_012", "Medium",
+    "Match List I (Article 22 Clauses) with List II (Safeguards / Powers) and select the correct answer using the codes given below:\n\nList I\nA. Article 22(1)\nB. Article 22(2)\nC. Article 22(4)\nD. Article 22(7)\n\nList II\n1. Right to be informed of grounds of arrest and consult legal practitioner\n2. Right to be produced before nearest magistrate within 24 hours\n3. Detention beyond 3 months requires Advisory Board report\n4. Power of Parliament alone to prescribe maximum period of preventive detention",
+    "பட்டியல் I-ஐ (பிரிவு 22 உட்பிரிவுகள்) பட்டியல் II உடன் (பாதுகாப்புகள் / அதிகாரங்கள்) பொருத்தி சரியான பதிலதைத் தேர்ந்தெடுக்கவும்:\n\nபட்டியல் I\nA. பிரிவு 22(1)\nB. பிரிவு 22(2)\nC. பிரிவு 22(4)\nD. பிரிவு 22(7)\n\nபட்டியல் II\n1. கைது செய்ததற்கான காரணங்களை அறியவும் வழக்கறிஞரைக் கலந்தாலோசிக்கவும் உரிமை\n2. 24 மணி நேரத்திற்குள் அருகிலுள்ள நடுவர் முன் ஆஜர்படுத்தப்படும் உரிமை\n3. 3 மாதங்களுக்கு மேலான தடுப்புக்காவலுக்கு ஆலோசனைக் குழுவின் அறிக்கை தேவை\n4. தடுப்புக்காவலின் அதிகபட்ச காலத்தை நிர்ணயிக்க நாடாளுமன்றத்திற்கு மட்டுமே அதிகாரம்",
+    "Article 22(1)", "பிரிவு 22(1)",
+    "Article 22(2)", "பிரிவு 22(2)",
+    "Article 22(4)", "பிரிவு 22(4)",
+    "Article 22(7)", "பிரிவு 22(7)",
+    "Right to be informed of grounds of arrest and consult legal practitioner", "கைது செய்ததற்கான காரணங்களை அறியவும் வழக்கறிஞரைக் கலந்தாலோசிக்கவும் உரிமை",
+    "Right to be produced before nearest magistrate within 24 hours", "24 மணி நேரத்திற்குள் அருகிலுள்ள நடுவர் முன் ஆஜர்படுத்தப்படும் உரிமை",
+    "Detention beyond 3 months requires Advisory Board report", "3 மாதங்களுக்கு மேலான தடுப்புக்காவலுக்கு ஆலோசனைக் குழுவின் அறிக்கை தேவை",
+    "Power of Parliament alone to prescribe maximum period of preventive detention", "தடுப்புக்காவலின் அதிகபட்ச காலத்தை நிர்ணயிக்க நாடாளுமன்றத்திற்கு மட்டுமே அதிகாரம்",
+    "A-1, B-2, C-3, D-4", "A-2, B-1, C-4, D-3", "A-1, B-3, C-2, D-4", "A-4, B-3, C-2, D-1", "D",
+    "A-1: 22(1) Arrest grounds & lawyer. B-2: 22(2) Magistrate in 24 hrs. C-3: 22(4) 3 months advisory board. D-4: 22(7) Parliament max period power.",
+    "A-1: 22(1) காரணங்கள் அறிய உரிமை. B-2: 22(2) 24 மணி நேர நடுவர் ஆஜர். C-3: 22(4) 3 மாத ஆலோசனைக் குழு. D-4: 22(7) நாடாளுமன்ற அதிகாரம்.",
+    "Correct. A-1, B-2, C-3, D-4 matches all Article 22 safeguards.", "சரி. A-1, B-2, C-3, D-4 என்பது பிரிவு 22 பாதுகாப்புகளுக்கான சரியான பொருத்தமாகும்.",
+    "Incorrect. 22(1) matches 1, not 2.", "தவறு. 22(1) பொருத்தம் 1 ஆகும்.",
+    "Incorrect. 22(2) matches 2, not 3.", "தவறு. 22(2) பொருத்தம் 2 ஆகும்.",
+    "Incorrect. 22(7) matches 4, not 1.", "தவறு. 22(7) பொருத்தம் 4 ஆகும்.",
+    "TNPSC Trap: Article 22(1) and 22(2) safeguards do NOT apply to enemy aliens or persons detained under preventive detention laws.",
+    "TNPSC பொறி: பிரிவு 22(1) & (2) பாதுகாப்புகள் எதிரி நாட்டு மக்களுக்கோ தடுப்புக்காவலர்களுக்கோ கிடைக்காது.",
+    "44th CAA 1978 proposed reducing detention period to 2 months, but this amendment was NEVER notified.",
+    "44-வது திருத்தம் காலத்தை 2 மாதமாகக் குறைக்க முன்மொழிந்தது, ஆனால் அது இதுவரை அறிவிக்கப்படவிலை.",
+    "Understand", 60, ["Polity", "Fundamental Rights", "Article 22", "Preventive Detention", "Match the Following"]
+))
+
+# FR_MF_013 (Medium)
+questions.append(make_mf_q(
+    "FR_MF_013", "Medium",
+    "Match List I (Articles 25 to 28) with List II (Religious Freedom Scope) and select the correct answer using the codes given below:\n\nList I\nA. Article 25\nB. Article 26\nC. Article 27\nD. Article 28\n\nList II\n1. Individual freedom of conscience and right to profess, practice, and propagate religion\n2. Collective right of religious denominations to manage their own religious affairs\n3. State prohibition against levying taxes for promotion of any specific religion\n4. Prohibition / Restriction of religious instruction in State-funded or State-aided educational institutions",
+    "பட்டியல் I-ஐ (பிரிவுகள் 25 முதல் 28) பட்டியல் II உடன் (மத சுதந்திர எல்லை) பொருத்தி சரியான பதிலதைத் தேர்ந்தெடுக்கவும்:\n\nபட்டியல் I\nA. பிரிவு 25\nB. பிரிவு 26\nC. பிரிவு 27\nD. பிரிவு 28\n\nபட்டியல் II\n1. தனிநபர் மனசாட்சி சுதந்திரம் மற்றும் மதத்தைப் பின்பற்றிப் பரப்பும் உரிமை\n2. மதப் பிரிவினர் தங்களது சொந்த மத விவகாரங்களை நிர்வகிக்கும் குழும உரிமை\n3. குறிப்பிட்ட மதத்தை உயர்த்த வரியைப் பயன்படுத்த அரசுக்கு உள்ள தடை\n4. அரசு நிதி பெறுகின்ற கல்வி நிறுவனங்களில் மதக் கல்வி வழங்குவதற்கான தடை/கட்டுப்பாடு",
+    "Article 25", "பிரிவு 25",
+    "Article 26", "பிரிவு 26",
+    "Article 27", "பிரிவு 27",
+    "Article 28", "பிரிவு 28",
+    "Individual freedom of conscience and right to profess, practice, and propagate religion", "தனிநபர் மனசாட்சி சுதந்திரம் மற்றும் மதத்தைப் பின்பற்றிப் பரப்பும் உரிமை",
+    "Collective right of religious denominations to manage their own religious affairs", "மதப் பிரிவினர் தங்களது சொந்த மத விவகாரங்களை நிர்வகிக்கும் குழும உரிமை",
+    "State prohibition against levying taxes for promotion of any specific religion", "குறிப்பிட்ட மதத்தை உயர்த்த வரியைப் பயன்படுத்த அரசுக்கு உள்ள தடை",
+    "Prohibition / Restriction of religious instruction in State-funded or State-aided educational institutions", "அரசு நிதி பெறுகின்ற கல்வி நிறுவனங்களில் மதக் கல்வி வழங்குவதற்கான தடை/கட்டுப்பாடு",
+    "A-1, B-2, C-3, D-4", "A-2, B-1, C-4, D-3", "A-1, B-3, C-2, D-4", "A-4, B-3, C-2, D-1", "A",
+    "A-1: Art 25 Individual freedom. B-2: Art 26 Denominational freedom. C-3: Art 27 Tax prohibition. D-4: Art 28 Religious instruction restriction.",
+    "A-1: பிரிவு 25 தனிநபர் உரிமை. B-2: பிரிவு 26 குழும உரிமை. C-3: பிரிவு 27 வரித் தடை. D-4: பிரிவு 28 மதக் கல்வித் தடை.",
+    "Correct. A-1, B-2, C-3, D-4 matches all Articles 25-28.", "சரி. A-1, B-2, C-3, D-4 என்பது மத சுதந்திரப் பிரிவுகளுக்கான சரியான பொருத்தமாகும்.",
+    "Incorrect. Art 25 is Individual freedom (1), not Denominational (2).", "தவறு. பிரிவு 25 தனிநபர் சுதந்திரம் (1) ஆகும்.",
+    "Incorrect. Art 26 is Denominational freedom (2), not Tax (3).", "தவறு. பிரிவு 26 குழும உரிமை (2) ஆகும்.",
+    "Incorrect. Art 28 is Religious instruction (4), not Individual (1).", "தவறு. பிரிவு 28 மதக் கல்வி கட்டுப்பாடு (4) ஆகும்.",
+    "TNPSC Trap: Article 25 guarantees INDIVIDUAL rights, whereas Article 26 guarantees COLLECTIVE rights to religious denominations.",
+    "TNPSC பொறி: பிரிவு 25 தனிநபர் உரிமையையும், பிரிவு 26 குழும உரிமையையும் வழங்குகிறது.",
+    "In Rev Stainislaus case (1977), Supreme Court held right to propagate does NOT include right to convert.",
+    "ஸ்டைனிஸ்லாஸ் வழக்கில் (1977) மதத்தைப் பரப்பும் உரிமை மதமாற்றம் செய்யும் உரிமையை உள்ளடக்காது எனத் தீர்ப்பளிக்கப்பட்டது.",
+    "Understand", 60, ["Polity", "Fundamental Rights", "Articles 25-28", "Freedom of Religion", "Match the Following"]
+))
+
+# FR_MF_014 (Medium)
+questions.append(make_mf_q(
+    "FR_MF_014", "Medium",
+    "Match List I (Minority Rights Sub-clauses) with List II (Constitutional Guarantees) and select the correct answer using the codes given below:\n\nList I\nA. Article 29(1)\nB. Article 29(2)\nC. Article 30(1)\nD. Article 30(2)\n\nList II\n1. Right of any section of citizens having distinct language, script, or culture to conserve the same\n2. No citizen denied admission into state-aided educational institution on grounds ONLY of religion, race, caste, language\n3. Right of all religious and linguistic minorities to establish and administer educational institutions of their choice\n4. State shall not discriminate in granting aid to any educational institution on ground that it is under minority management",
+    "பட்டியல் I-ஐ (சிறுபான்மையினர் உரிமை உட்பிரிவுகள்) பட்டியல் II உடன் (அரசியலமைப்பு உத்தரவாதங்கள்) பொருத்தி சரியான பதிலதைத் தேர்ந்தெடுக்கவும்:\n\nபட்டியல் I\nA. பிரிவு 29(1)\nB. பிரிவு 29(2)\nC. பிரிவு 30(1)\nD. பிரிவு 30(2)\n\nபட்டியல் II\n1. தனித்துவமான மொழி, எழுத்து, கலாச்சாரம் கொண்ட குடிமக்களின் எந்தவொரு பிரிவும் அதனைப் பாதுகாக்கும் உரிமை\n2. அரசு நிதி பெறும் கல்வி நிறுவன சேர்க்கையில் மதம், இனம், சாதி, மொழி காரணமாக குடிமகனுக்கு மறுப்புத் தடை\n3. அனைத்து மத மற்றும் மொழி சிறுபான்மையினரும் விரும்பிய கல்வி நிறுவனங்களை நிறுவி நிர்வகிக்கும் உரிமை\n4. சிறுபான்மையினர் நிர்வகிக்கிறார்கள் என்ற காரணத்தால் கல்வி உதவித்தொகை வழங்குவதில் அரசு பாகுபாடு காட்டக்கூடாது",
+    "Article 29(1)", "பிரிவு 29(1)",
+    "Article 29(2)", "பிரிவு 29(2)",
+    "Article 30(1)", "பிரிவு 30(1)",
+    "Article 30(2)", "பிரிவு 30(2)",
+    "Right of any section of citizens having distinct language, script, or culture to conserve the same", "தனித்துவமான மொழி, எழுத்து, கலாச்சாரம் கொண்ட குடிமக்களின் எந்தவொரு பிரிவும் அதனைப் பாதுகாக்கும் உரிமை",
+    "No citizen denied admission into state-aided educational institution on grounds ONLY of religion, race, caste, language", "அரசு நிதி பெறும் கல்வி நிறுவன சேர்க்கையில் மதம், இனம், சாதி, மொழி காரணமாக குடிமகனுக்கு மறுப்புத் தடை",
+    "Right of all religious and linguistic minorities to establish and administer educational institutions of their choice", "அனைத்து மத மற்றும் மொழி சிறுபான்மையினரும் விரும்பிய கல்வி நிறுவனங்களை நிறுவி நிர்வகிக்கும் உரிமை",
+    "State shall not discriminate in granting aid to any educational institution on ground that it is under minority management", "சிறுபான்மையினர் நிர்வகிக்கிறார்கள் என்ற காரணத்தால் கல்வி உதவித்தொகை வழங்குவதில் அரசு பாகுபாடு காட்டக்கூடாது",
+    "A-1, B-2, C-3, D-4", "A-2, B-1, C-4, D-3", "A-1, B-3, C-2, D-4", "A-4, B-3, C-2, D-1", "B",
+    "A-1: 29(1) Conserve language/script/culture. B-2: 29(2) Non-discrimination in admission. C-3: 30(1) Right to establish minority institutions. D-4: 30(2) Non-discrimination in state aid.",
+    "A-1: 29(1) கலாச்சாரம் பாதுகாத்தல். B-2: 29(2) சேர்க்கையில் பாகுபாடின்மை. C-3: 30(1) சிறுபான்மை நிறுவனம் நிறுவுதல். D-4: 30(2) அரசு உதவியில் பாகுபாடின்மை.",
+    "Correct. A-1, B-2, C-3, D-4 matches all sub-clauses of Articles 29 & 30.", "சரி. A-1, B-2, C-3, D-4 என்பது பிரிவுகள் 29 மற்றும் 30 உட்பிரிவுகளுக்கான சரியான பொருத்தமாகும்.",
+    "Incorrect. 29(1) matches 1, not 2.", "தவறு. 29(1) பொருத்தம் 1 ஆகும்.",
+    "Incorrect. 29(2) matches 2, not 3.", "தவறு. 29(2) பொருத்தம் 2 ஆகும்.",
+    "Incorrect. 30(2) matches 4, not 1.", "தவறு. 30(2) பொருத்தம் 4 ஆகும்.",
+    "TNPSC Trap: Article 29 protects 'any section of citizens' (both majority & minority), whereas Article 30 protects ONLY minorities (religious & linguistic).",
+    "TNPSC பொறி: பிரிவு 29 அனைத்துக் குடிமக்களுக்கும் பொருந்தும், ஆனால் பிரிவு 30 சிறுபான்மையினருக்கு மட்டுமே பொருந்தும்.",
+    "TMA Pai Foundation case (2002) held that the unit for determining minority status is the STATE.",
+    "டி.எம்.ஏ பை அறக்கட்டளை வழக்கில் (2002) சிறுபான்மையினரைத் தீர்மானிக்கும் அலகு 'மாநிலம்' எனத் தீர்ப்பளிக்கப்பட்டது.",
+    "Analyze", 60, ["Polity", "Fundamental Rights", "Article 29", "Article 30", "Minority Rights", "Match the Following"]
+))
+
+# FR_MF_015 (Medium)
+questions.append(make_mf_q(
+    "FR_MF_015", "Medium",
+    "Match List I (Five Writs) with List II (Primary Function / Against Whom Issued) and select the correct answer using the codes given below:\n\nList I\nA. Habeas Corpus\nB. Mandamus\nC. Prohibition\nD. Certiorari\n\nList II\n1. Issued against illegal detention by state or private entity; sets detainee free\n2. Issued to compel a public authority to perform a mandatory statutory duty\n3. Issued to a lower court to prevent it from exceeding its jurisdiction (Preventive)\n4. Issued to a lower court/tribunal to quash an order passed without jurisdiction (Preventive and Curative)",
+    "பட்டியல் I-ஐ (ஐந்து பேராணைகள்) பட்டியல் II உடன் (முதன்மைப் பணி / யாருக்கு எதிராக வெளியிடப்படுகிறது) பொருத்தி சரியான பதிலதைத் தேர்ந்தெடுக்கவும்:\n\nபட்டியல் I\nA. ஆட்கொணர்வு பேராணை\nB. கட்டளைப் பேராணை\nC. தடையுறுத்துப் பேராணை\nD. சான்றாய்வுப் பேராணை\n\nபட்டியல் II\n1. அரசு அல்லது தனியார் அமைப்பின் சட்டவிரோதக் காவலுக்கு எதிராக வெளியிடப்பட்டு நபரை விடுவிக்கிறது\n2. பொது அதிகாரியைத் தனது சட்டப்பூர்வக் கடமையைச் செய்ய வற்புறுத்த வெளியிடப்படுகிறது\n3. கீழ் நீதிமன்றம் அதிகார வரம்பை மீறுவதைத் தடுக்க வெளியிடப்படுகிறது (தடுப்பு நடவடிக்கை)\n4. கீழ் நீதிமன்றம் அதிகார வரம்பின்றி பிறப்பித்த உத்தரவை ரத்து செய்ய வெளியிடப்படுகிறது (தடுப்பு மற்றும் நிவாரண நடவடிக்கை)",
+    "Habeas Corpus", "ஆட்கொணர்வு பேராணை",
+    "Mandamus", "கட்டளைப் பேராணை",
+    "Prohibition", "தடையுறுத்துப் பேராணை",
+    "Certiorari", "சான்றாய்வுப் பேராணை",
+    "Issued against illegal detention by state or private entity; sets detainee free", "அரசு அல்லது தனியார் அமைப்பின் சட்டவிரோதக் காவலுக்கு எதிராக வெளியிடப்பட்டு நபரை விடுவிக்கிறது",
+    "Issued to compel a public authority to perform a mandatory statutory duty", "பொது அதிகாரியைத் தனது சட்டப்பூர்வக் கடமையைச் செய்ய வற்புறுத்த வெளியிடப்படுகிறது",
+    "Issued to a lower court to prevent it from exceeding its jurisdiction (Preventive)", "கீழ் நீதிமன்றம் அதிகார வரம்பை மீறுவதைத் தடுக்க வெளியிடப்படுகிறது (தடுப்பு நடவடிக்கை)",
+    "Issued to a lower court/tribunal to quash an order passed without jurisdiction (Preventive and Curative)", "கீழ் நீதிமன்றம் அதிகார வரம்பின்றி பிறப்பித்த உத்தரவை ரத்து செய்ய வெளியிடப்படுகிறது (தடுப்பு மற்றும் நிவாரண நடவடிக்கை)",
+    "A-1, B-2, C-3, D-4", "A-2, B-1, C-4, D-3", "A-1, B-3, C-2, D-4", "A-4, B-3, C-2, D-1", "C",
+    "A-1: Habeas Corpus frees illegal detainee. B-2: Mandamus compels public duty. C-3: Prohibition prevents overreaching. D-4: Certiorari quashes invalid order.",
+    "A-1: ஆட்கொணர்வு காவலில் இருந்து விடுவிக்கிறது. B-2: கட்டளை பொதுக் கடமையை செய்ய வைக்கிறது. C-3: தடையுறுத்தல் எல்லை மீறலைத் தடுக்கிறது. D-4: சான்றாய்வு தவறான உத்தரவை ரத்து செய்கிறது.",
+    "Correct. A-1, B-2, C-3, D-4 matches all four writs to their primary functions.", "சரி. A-1, B-2, C-3, D-4 என்பது பேராணைகளின் பணிகளுக்கான சரியான பொருத்தமாகும்.",
+    "Incorrect. Habeas Corpus matches 1, not 2.", "தவறு. ஆட்கொணர்வு பேராணை பொருத்தம் 1 ஆகும்.",
+    "Incorrect. Mandamus matches 2, not 3.", "தவறு. கட்டளைப் பேராணை பொருத்தம் 2 ஆகும்.",
+    "Incorrect. Certiorari matches 4, not 1.", "தவறு. சான்றாய்வுப் பேராணை பொருத்தம் 4 ஆகும்.",
+    "TNPSC Trap: Habeas Corpus is the ONLY writ that can be issued against private individuals as well as public authorities.",
+    "TNPSC பொறி: ஆட்கொணர்வு பேராணை மட்டுமே தனிநபர்களுக்கு எதிராகவும் வெளியிடப்படக்கூடிய ஒரே பேராணையாகும்.",
+    "In 1991, Supreme Court expanded Certiorari to cover administrative authorities affecting individual rights.",
+    "1991-ல் சான்றாய்வு பேராணை நிர்வாக அதிகாரிகளுக்கும் விரிவாக்கப்பட்டது.",
+    "Understand", 60, ["Polity", "Fundamental Rights", "Writs Functions", "Article 32", "Match the Following"]
+))
+
+# FR_MF_016 (Medium)
+questions.append(make_mf_q(
+    "FR_MF_016", "Medium",
+    "Match List I (Writ Jurisdiction Features) with List II (Supreme Court Art 32 vs High Court Art 226) and select the correct answer using the codes given below:\n\nList I\nA. Subject Matter Scope\nB. Territorial Jurisdiction\nC. Mandatory vs Discretionary\nD. Fundamental Right Status\n\nList II\n1. SC is narrower (FRs only); HC is wider (FRs + Legal Rights)\n2. SC is wider (Entire India); HC is narrower (State territory)\n3. SC cannot refuse (Compulsory); HC can refuse (Discretionary)\n4. Art 32 is itself a Fundamental Right; Art 226 is a Constitutional Right",
+    "பட்டியல் I-ஐ (பேராணை அதிகார அம்சங்கள்) பட்டியல் II உடன் (உச்ச நீதிமன்றம் பிரிவு 32 எதிராக உயர் நீதிமன்றம் பிரிவு 226) பொருத்தி சரியான பதிலதைத் தேர்ந்தெடுக்கவும்:\n\nபட்டியல் I\nA. பொருள் எல்லை (Subject Matter Scope)\nB. புவியியல் எல்லை (Territorial Jurisdiction)\nC. கட்டாயமா விருப்ப உரிமையா\nD. அடிப்படை உரிமை அந்தஸ்து\n\nபட்டியல் II\n1. உச்ச நீதிமன்றம் குறுகியது (அடிப்படை உரிமை மட்டுமே); உயர் நீதிமன்றம் விரிவானது (அடிப்படை + சட்ட உரிமை)\n2. உச்ச நீதிமன்றம் விரிவானது (முழு இந்தியா); உயர் நீதிமன்றம் குறுகியது (மாநில எல்லை)\n3. உச்ச நீதிமன்றம் மறுக்க முடியாது (கட்டாயம்); உயர் நீதிமன்றம் மறுக்கலாம் (விருப்ப உரிமை)\n4. பிரிவு 32 தானே ஒரு அடிப்படை உரிமை; பிரிவு 226 ஒரு அரசியலமைப்பு உரிமை",
+    "Subject Matter Scope", "பொருள் எல்லை (Subject Matter Scope)",
+    "Territorial Jurisdiction", "புவியியல் எல்லை (Territorial Jurisdiction)",
+    "Mandatory vs Discretionary", "கட்டாயமா விருப்ப உரிமையா",
+    "Fundamental Right Status", "அடிப்படை உரிமை அந்தஸ்து",
+    "SC is narrower (FRs only); HC is wider (FRs + Legal Rights)", "உச்ச நீதிமன்றம் குறுகியது (அடிப்படை உரிமை மட்டுமே); உயர் நீதிமன்றம் விரிவானது (அடிப்படை + சட்ட உரிமை)",
+    "SC is wider (Entire India); HC is narrower (State territory)", "உச்ச நீதிமன்றம் விரிவானது (முழு இந்தியா); உயர் நீதிமன்றம் குறுகியது (மாநில எல்லை)",
+    "SC cannot refuse (Compulsory); HC can refuse (Discretionary)", "உச்ச நீதிமன்றம் மறுக்க முடியாது (கட்டாயம்); உயர் நீதிமன்றம் மறுக்கலாம் (விருப்ப உரிமை)",
+    "Art 32 is itself a Fundamental Right; Art 226 is a Constitutional Right", "பிரிவு 32 தானே ஒரு அடிப்படை உரிமை; பிரிவு 226 ஒரு அரசியலமைப்பு உரிமை",
+    "A-1, B-2, C-3, D-4", "A-2, B-1, C-4, D-3", "A-1, B-3, C-2, D-4", "A-4, B-3, C-2, D-1", "D",
+    "A-1: Subject matter HC wider than SC. B-2: Territory SC wider than HC. C-3: SC compulsory, HC discretionary. D-4: Art 32 is FR, Art 226 is Constitutional right.",
+    "A-1: பொருள் எல்லையில் உயர் நீதிமன்றம் பெரியது. B-2: புவியியல் எல்லையில் உச்ச நீதிமன்றம் பெரியது. C-3: உச்ச நீதிமன்றம் கட்டாயம், உயர் நீதிமன்றம் விருப்பம். D-4: பிரிவு 32 அடிப்படை உரிமை.",
+    "Correct. A-1, B-2, C-3, D-4 matches all comparison features of Art 32 vs Art 226.", "சரி. A-1, B-2, C-3, D-4 என்பது ஒப்பீட்டு அம்சங்களுக்கான சரியான பொருத்தமாகும்.",
+    "Incorrect. Subject matter scope is 1, not 2.", "தவறு. பொருள் எல்லை பொருத்தம் 1 ஆகும்.",
+    "Incorrect. Territorial jurisdiction is 2, not 1.", "தவறு. புவியியல் எல்லை பொருத்தம் 2 ஆகும்.",
+    "Incorrect. FR status is 4, not 1.", "தவறு. அடிப்படை உரிமை அந்தஸ்து 4 ஆகும்.",
+    "TNPSC Trap: High Court's writ jurisdiction under Article 226 is WIDER in subject matter than Supreme Court's under Article 32.",
+    "TNPSC பொறி: பொருள் எல்லையில் (subject matter) உயர் நீதிமன்றத்தின் பேராணை அதிகாரம் உச்ச நீதிமன்றத்தை விட விரிவானது.",
+    "L. Chandra Kumar case (1997) held writ jurisdiction of SC & HC forms Basic Structure.",
+    "சந்திர குமார் வழக்கில் (1997) பேராணை அதிகாரம் அடிப்படை அமைப்பு எனத் தீர்ப்பளிக்கப்பட்டது.",
+    "Analyze", 60, ["Polity", "Fundamental Rights", "Article 32 vs Article 226", "Writ Jurisdiction", "Match the Following"]
+))
+
+# FR_MF_017 (Medium)
+questions.append(make_mf_q(
+    "FR_MF_017", "Medium",
+    "Match List I (Articles 33, 34, 35, and 300A) with List II (Constitutional Scope) and select the correct answer using the codes given below:\n\nList I\nA. Article 33\nB. Article 34\nC. Article 35\nD. Article 300A\n\nList II\n1. Parliament power to restrict Fundamental Rights of Armed Forces, Police, and Intelligence personnel\n2. Restrictions on Fundamental Rights while Martial Law is in force in any area and Parliament indemnity by law\n3. Power to make laws to give effect to specified Part III offences rests EXCLUSIVELY with Parliament\n4. Persons not to be deprived of property save by authority of law (Legal Right in Part XII)",
+    "பட்டியல் I-ஐ (பிரிவுகள் 33, 34, 35 மற்றும் 300A) பட்டியல் II உடன் (அரசியலமைப்பு எல்லை) பொருத்தி சரியான பதிலதைத் தேர்ந்தெடுக்கவும்:\n\nபட்டியல் I\nA. பிரிவு 33\nB. பிரிவு 34\nC. பிரிவு 35\nD. பிரிவு 300A\n\nபட்டியல் II\n1. முப்படைகள், காவல் படைகள் மற்றும் உளவு அமைப்புகளின் அடிப்படை உரிமைகளைக் கட்டுப்படுத்தும் நாடாளுமன்ற அதிகாரம்\n2. இராணுவ ஆட்சி (Martial Law) அமலில் உள்ள காலத்தில் அடிப்படை உரிமைகள் மீதான கட்டுப்பாடு மற்றும் நஷ்டஈடு வழங்கும் சட்டம்\n3. பகுதி III குற்றங்களுக்குச் செயல்வடிவம் கொடுக்கும் சட்டங்களை இயற்றும் அதிகாரம் நாடாளுமன்றத்திற்கு மட்டுமே உண்டு\n4. சட்டத்தின் அதிகாரத்தின் மூலமே தவிர சொத்தைப் பறிக்கக் கூடாது (பகுதி XII-ல் சட்டப் பூர்வ உரிமை)",
+    "Article 33", "பிரிவு 33",
+    "Article 34", "பிரிவு 34",
+    "Article 35", "பிரிவு 35",
+    "Article 300A", "பிரிவு 300A",
+    "Parliament power to restrict Fundamental Rights of Armed Forces, Police, and Intelligence personnel", "முப்படைகள், காவல் படைகள் மற்றும் உளவு அமைப்புகளின் அடிப்படை உரிமைகளைக் கட்டுப்படுத்தும் நாடாளுமன்ற அதிகாரம்",
+    "Restrictions on Fundamental Rights while Martial Law is in force in any area and Parliament indemnity by law", "இராணுவ ஆட்சி (Martial Law) அமலில் உள்ள காலத்தில் அடிப்படை உரிமைகள் மீதான கட்டுப்பாடு மற்றும் நஷ்டஈடு வழங்கும் சட்டம்",
+    "Power to make laws to give effect to specified Part III offences rests EXCLUSIVELY with Parliament", "பகுதி III குற்றங்களுக்குச் செயல்வடிவம் கொடுக்கும் சட்டங்களை இயற்றும் அதிகாரம் நாடாளுமன்றத்திற்கு மட்டுமே உண்டு",
+    "Persons not to be deprived of property save by authority of law (Legal Right in Part XII)", "சட்டத்தின் அதிகாரத்தின் மூலமே தவிர சொத்தைப் பறிக்கக் கூடாது (பகுதி XII-ல் சட்டப் பூர்வ உரிமை)",
+    "A-1, B-2, C-3, D-4", "A-2, B-1, C-4, D-3", "A-1, B-3, C-2, D-4", "A-4, B-3, C-2, D-1", "A",
+    "A-1: Art 33 Armed forces restriction. B-2: Art 34 Martial law indemnity. C-3: Art 35 Exclusive Parliament power. D-4: Art 300A Legal right to property.",
+    "A-1: பிரிவு 33 முப்படைகள் கட்டுப்பாடு. B-2: பிரிவு 34 இராணுவ ஆட்சி நஷ்டஈடு. C-3: பிரிவு 35 நாடாளுமன்ற பிரத்யேக அதிகாரம். D-4: பிரிவு 300A சொத்துரிமை.",
+    "Correct. A-1, B-2, C-3, D-4 matches all four constitutional Articles accurately.", "சரி. A-1, B-2, C-3, D-4 என்பது நான்கு பிரிவுகளுக்குமான சரியான பொருத்தமாகும்.",
+    "Incorrect. Article 33 matches 1, not 2.", "தவறு. பிரிவு 33 பொருத்தம் 1 ஆகும்.",
+    "Incorrect. Article 34 matches 2, not 3.", "தவறு. பிரிவு 34 பொருத்தம் 2 ஆகும்.",
+    "Incorrect. Article 300A matches 4, not 1.", "தவறு. பிரிவு 300A பொருத்தம் 4 ஆகும்.",
+    "TNPSC Trap: Laws under Article 33 and 35 can be enacted ONLY by Parliament, not State Legislatures.",
+    "TNPSC பொறி: பிரிவு 33 மற்றும் 35-ன் கீழ் நாடாளுமன்றம் மட்டுமே சட்டங்களை இயற்ற முடியும்.",
+    "Article 300A was added by the 44th Constitutional Amendment Act, 1978.",
+    "பிரிவு 300A 44-வது அரசியலமைப்பு திருத்தச் சட்டம் 1978 மூலம் சேர்க்கப்பட்டது.",
+    "Analyze", 60, ["Polity", "Fundamental Rights", "Article 33", "Article 34", "Article 35", "Article 300A", "Match the Following"]
+))
+
+# FR_MF_018 (Medium)
+questions.append(make_mf_q(
+    "FR_MF_018", "Medium",
+    "Match List I (Exceptions to Fundamental Rights) with List II (Constitutional Provisions / Protection Scope) and select the correct answer using the codes given below:\n\nList I\nA. Article 31A\nB. Article 31B\nC. Article 31C (Original 25th CAA 1971)\nD. Article 31C (Expanded 42nd CAA 1976)\n\nList II\n1. Saves five categories of agrarian reform laws from challenge under Articles 14 and 19\n2. Immunizes laws placed in Ninth Schedule from challenge (subject to IR Coelho judicial review post-1973)\n3. Protects laws giving effect to DPSP Article 39(b) and 39(c) from Articles 14 and 19\n4. Attempted to protect laws giving effect to ALL DPSPs; struck down in Minerva Mills (1980)",
+    "பட்டியல் I-ஐ (அடிப்படை உரிமைகளுக்கான விதிவிலக்குகள்) பட்டியல் II உடன் (பாதுகாப்பு எல்லை) பொருத்தி சரியான பதிலதைத் தேர்ந்தெடுக்கவும்:\n\nபட்டியல் I\nA. பிரிவு 31A\nB. பிரிவு 31B\nC. பிரிவு 31C (மூல வடிவம் 25வது திருத்தம் 1971)\nD. பிரிவு 31C (விரிவாக்கம் 42வது திருத்தம் 1976)\n\nபட்டியல் II\n1. நிலச்சீர்திருத்த 5 வகை சட்டங்களை பிரிவுகள் 14 மற்றும் 19-லிருந்து பாதுகாக்கிறது\n2. 9-வது அட்டவணையில் சேர்க்கப்படும் சட்டங்களைப் பாதுகாக்கிறது (1973-க்குப் பிந்தைய ஐ.ஆர். கோயல்ஹோ மறுஆய்வுக்கு உட்பட்டு)\n3. DPSP பிரிவு 39(b) மற்றும் 39(c)-ஐ அமல்படுத்தும் சட்டங்களை பிரிவுகள் 14 மற்றும் 19-லிருந்து பாதுகாக்கிறது\n4. அனைத்து DPSP-களையும் பாதுகாக்க முயன்றது; மினர்வா மில்ஸ் வழக்கில் (1980) ரத்து செய்யப்பட்டது",
+    "Article 31A", "பிரிவு 31A",
+    "Article 31B", "பிரிவு 31B",
+    "Article 31C (Original 25th CAA 1971)", "பிரிவு 31C (மூல வடிவம் 25வது திருத்தம் 1971)",
+    "Article 31C (Expanded 42nd CAA 1976)", "பிரிவு 31C (விரிவாக்கம் 42வது திருத்தம் 1976)",
+    "Saves five categories of agrarian reform laws from challenge under Articles 14 and 19", "நிலச்சீர்திருத்த 5 வகை சட்டங்களை பிரிவுகள் 14 மற்றும் 19-லிருந்து பாதுகாக்கிறது",
+    "Immunizes laws placed in Ninth Schedule from challenge (subject to IR Coelho judicial review post-1973)", "9-வது அட்டவணையில் சேர்க்கப்படும் சட்டங்களைப் பாதுகாக்கிறது (1973-க்குப் பிந்தைய ஐ.ஆர். கோயல்ஹோ மறுஆய்வுக்கு உட்பட்டு)",
+    "Protects laws giving effect to DPSP Article 39(b) and 39(c) from Articles 14 and 19", "DPSP பிரிவு 39(b) மற்றும் 39(c)-ஐ அமல்படுத்தும் சட்டங்களை பிரிவுகள் 14 மற்றும் 19-லிருந்து பாதுகாக்கிறது",
+    "Attempted to protect laws giving effect to ALL DPSPs; struck down in Minerva Mills (1980)", "அனைத்து DPSP-களையும் பாதுகாக்க முயன்றது; மினர்வா மில்ஸ் வழக்கில் (1980) ரத்து செய்யப்பட்டது",
+    "A-1, B-2, C-3, D-4", "A-2, B-1, C-4, D-3", "A-1, B-3, C-2, D-4", "A-4, B-3, C-2, D-1", "B",
+    "A-1: Art 31A Agrarian reforms. B-2: Art 31B Ninth Schedule protection. C-3: Art 31C 39(b)&(c) protection. D-4: Art 31C expanded form struck down in Minerva Mills.",
+    "A-1: 31A நிலச்சீர்திருத்த பாதுகாப்பு. B-2: 31B 9வது அட்டவணை. C-3: 31C 39(b)&(c) பாதுகாப்பு. D-4: 31C விரிவாக்கம் மினர்வா மில்ஸில் ரத்து.",
+    "Correct. A-1, B-2, C-3, D-4 matches all Article 31 exception clauses.", "சரி. A-1, B-2, C-3, D-4 என்பது விதிவிலக்குக் கோட்பாடுகளுக்கான சரியான பொருத்தமாகும்.",
+    "Incorrect. Article 31A matches 1, not 2.", "தவறு. பிரிவு 31A பொருத்தம் 1 ஆகும்.",
+    "Incorrect. Article 31B matches 2, not 1.", "தவறு. பிரிவு 31B பொருத்தம் 2 ஆகும்.",
+    "Incorrect. Article 31C expanded matches 4, not 1.", "தவறு. 31C விரிவாக்கம் பொருத்தம் 4 ஆகும்.",
+    "TNPSC Trap: Article 31C introduced the famous maxim: 'Where Article 31C comes in, Article 14 goes out.'",
+    "TNPSC பொறி: 'பிரிவு 31C உள்ளே வரும்போது, பிரிவு 14 வெளியே செல்கிறது' என்ற பொன்மொழி பிரிவு 31C-ஆல் அறிமுகப்படுத்தப்பட்டது.",
+    "IR Coelho case (2007) fixed April 24, 1973 as the cutoff date for Ninth Schedule judicial review.",
+    "ஐ.ஆர். கோயல்ஹோ வழக்கு (2007) 1973 ஏப்ரல் 24-ஐ 9வது அட்டவணை மறுஆய்வுக்கான எல்லைத் தேதியாக நிர்ணயித்தது.",
+    "Analyze", 60, ["Polity", "Fundamental Rights", "Article 31A", "Article 31B", "Article 31C", "Ninth Schedule", "Match the Following"]
+))
+
+# FR_MF_019 (Hard)
+questions.append(make_mf_q(
+    "FR_MF_019", "Hard",
+    "Match List I (Fundamental Rights Applicability Categories) with List II (Specific Articles Included) and select the correct answer using the codes given below:\n\nList I\nA. Rights available ONLY to Citizens of India\nB. Rights available to ALL Persons (Citizens and Foreigners)\nC. Rights protected against BOTH State and Private Individuals\nD. Rights containing explicit Constitutional Exceptions under Part III\n\nList II\n1. Articles 15, 16, 19, 29, and 30\n2. Articles 14, 20, 21, 21A, 22, 23, 24, 25, 26, 27, and 28\n3. Articles 15(2), 17, 23, and 24\n4. Articles 31A, 31B, 31C, 33, 34, and 35",
+    "பட்டியல் I-ஐ (அடிப்படை உரிமைகள் பொருந்தும் தன்மைகள்) பட்டியல் II உடன் (சேர்க்கப்பட்ட குறிப்பிட்ட பிரிவுகள்) பொருத்தி சரியான பதிலதைத் தேர்ந்தெடுக்கவும்:\n\nபட்டியல் I\nA. இந்தியக் குடிமக்களுக்கு மட்டுமே உரித்தான உரிமைகள்\nB. அனைத்து நபர்களுக்கும் (குடிமக்கள் மற்றும் வெளிநாட்டினர்) கிடைக்கும் உரிமைகள்\nC. அரசு மற்றும் தனிநபர்கள் இருவருக்குமே எதிராகப் பாதுகாப்பு அளிக்கும் உரிமைகள்\nD. பகுதி III-ன் கீழ் வெளிப்படையான அரசியலமைப்பு விதிவிலக்குகளைக் கொண்ட பிரிவுகள்\n\nபட்டியல் II\n1. பிரிவுகள் 15, 16, 19, 29 மற்றும் 30\n2. பிரிவுகள் 14, 20, 21, 21A, 22, 23, 24, 25, 26, 27 மற்றும் 28\n3. பிரிவுகள் 15(2), 17, 23 மற்றும் 24\n4. பிரிவுகள் 31A, 31B, 31C, 33, 34 மற்றும் 35",
+    "Rights available ONLY to Citizens of India", "இந்தியக் குடிமக்களுக்கு மட்டுமே உரித்தான உரிமைகள்",
+    "Rights available to ALL Persons (Citizens and Foreigners)", "அனைத்து நபர்களுக்கும் (குடிமக்கள் மற்றும் வெளிநாட்டினர்) கிடைக்கும் உரிமைகள்",
+    "Rights protected against BOTH State and Private Individuals", "அரசு மற்றும் தனிநபர்கள் இருவருக்குமே எதிராகப் பாதுகாப்பு அளிக்கும் உரிமைகள்",
+    "Rights containing explicit Constitutional Exceptions under Part III", "பகுதி III-ன் கீழ் வெளிப்படையான அரசியலமைப்பு விதிவிலக்குகளைக் கொண்ட பிரிவுகள்",
+    "Articles 15, 16, 19, 29, and 30", "பிரிவுகள் 15, 16, 19, 29 மற்றும் 30",
+    "Articles 14, 20, 21, 21A, 22, 23, 24, 25, 26, 27, and 28", "பிரிவுகள் 14, 20, 21, 21A, 22, 23, 24, 25, 26, 27 மற்றும் 28",
+    "Articles 15(2), 17, 23, and 24", "பிரிவுகள் 15(2), 17, 23 மற்றும் 24",
+    "Articles 31A, 31B, 31C, 33, 34, and 35", "பிரிவுகள் 31A, 31B, 31C, 33, 34 மற்றும் 35",
+    "A-1, B-2, C-3, D-4", "A-2, B-1, C-4, D-3", "A-1, B-3, C-2, D-4", "A-4, B-3, C-2, D-1", "C",
+    "A-1: Citizens ONLY = 15, 16, 19, 29, 30. B-2: All Persons = 14, 20, 21, 21A, 22, 23, 24, 25, 26, 27, 28. C-3: Private + State = 15(2), 17, 23, 24. D-4: Exceptions = 31A-C, 33-35.",
+    "A-1: குடிமக்கள் மட்டுமே = 15, 16, 19, 29, 30. B-2: அனைவரும் = 14, 20, 21, 21A, 22, 23, 24, 25, 26, 27, 28. C-3: தனியார்+அரசு = 15(2), 17, 23, 24. D-4: விதிவிலக்குகள் = 31A-C, 33-35.",
+    "Correct. A-1, B-2, C-3, D-4 matches all applicability classifications.", "சரி. A-1, B-2, C-3, D-4 என்பது பொருந்தும் தன்மைகளுக்கான சரியான பொருத்தமாகும்.",
+    "Incorrect. Citizens ONLY is 1, not 2.", "தவறு. குடிமக்கள் மட்டுமே என்பது 1 ஆகும்.",
+    "Incorrect. All Persons is 2, not 3.", "தவறு. அனைவரும் என்பது 2 ஆகும்.",
+    "Incorrect. Exceptions is 4, not 1.", "தவறு. விதிவிலக்குகள் என்பது 4 ஆகும்.",
+    "TNPSC Trap: Memorize the 5 Citizen-ONLY Articles: 15, 16, 19, 29, 30. Foreigners cannot claim these rights.",
+    "TNPSC பொறி: குடிமக்களுக்கு மட்டுமே உரித்தான 5 பிரிவுகள்: 15, 16, 19, 29, 30. வெளிநாட்டினர் இவற்றைக் கோர முடியாது.",
+    "Enemy aliens do NOT enjoy protection against arrest and detention under Article 22.",
+    "எதிரி நாட்டு மக்களுக்கு பிரிவு 22-ன் கீழ் கைதுக்கு எதிரான பாதுகாப்பு கிடைக்காது.",
+    "Analyze", 60, ["Polity", "Fundamental Rights", "Citizens vs Foreigners", "Article Classification", "Match the Following"]
+))
+
+# FR_MF_020 (Hard)
+questions.append(make_mf_q(
+    "FR_MF_020", "Hard",
+    "Match List I (Emergency Provisions & Amendments) with List II (Impact on Fundamental Rights) and select the correct answer using the codes given below:\n\nList I\nA. Article 358\nB. Article 359\nC. 44th CAA 1978 on Article 358\nD. 44th CAA 1978 on Article 359\n\nList II\n1. Automatic suspension of Article 19 freedoms during National Emergency\n2. Presidential Order suspending right to move court for enforcement of specified FRs\n3. Restricts Article 19 suspension ONLY to emergencies declared on grounds of War or External Aggression\n4. Prohibits suspension of Articles 20 and 21 under any circumstances during emergency",
+    "பட்டியல் I-ஐ (அவசரநிலை விதிகள் & திருத்தங்கள்) பட்டியல் II உடன் (அடிப்படை உரிமைகள் மீதான தாக்கம்) பொருத்தி சரியான பதிலதைத் தேர்ந்தெடுக்கவும்:\n\nபட்டியல் I\nA. பிரிவு 358\nB. பிரிவு 359\nC. பிரிவு 358 மீதான 44-வது திருத்தம் 1978\nD. பிரிவு 359 மீதான 44-வது திருத்தம் 1978\n\nபட்டியல் II\n1. தேசிய அவசரநிலையின் போது பிரிவு 19 உரிமைகள் தானாகவே இடைநீக்கம் செய்யப்படுதல்\n2. குறிப்பிட்ட உரிமைகளை அமல்படுத்த நீதிமன்றம் செல்வதை இடைநீக்கம் செய்யும் குடியரசுத் தலைவர் உத்தரவு\n3. பிரிவு 19 இடைநீக்கத்தை போர் அல்லது வெளிநாட்டு ஆக்கிரமிப்பு காரணங்களுக்கு மட்டுமே வரம்பிற்குட்படுத்துதல்\n4. அவசரநிலையின் போது எந்தச் சூழ்நிலையிலும் பிரிவுகள் 20 மற்றும் 21-ஐ இடைநீக்கம் செய்வதைத் தடுத்தல்",
+    "Article 358", "பிரிவு 358",
+    "Article 359", "பிரிவு 359",
+    "44th CAA 1978 on Article 358", "பிரிவு 358 மீதான 44-வது திருத்தம் 1978",
+    "44th CAA 1978 on Article 359", "பிரிவு 359 மீதான 44-வது திருத்தம் 1978",
+    "Automatic suspension of Article 19 freedoms during National Emergency", "தேசிய அவசரநிலையின் போது பிரிவு 19 உரிமைகள் தானாகவே இடைநீக்கம் செய்யப்படுதல்",
+    "Presidential Order suspending right to move court for enforcement of specified FRs", "குறிப்பிட்ட உரிமைகளை அமல்படுத்த நீதிமன்றம் செல்வதை இடைநீக்கம் செய்யும் குடியரசுத் தலைவர் உத்தரவு",
+    "Restricts Article 19 suspension ONLY to emergencies declared on grounds of War or External Aggression", "பிரிவு 19 இடைநீக்கத்தை போர் அல்லது வெளிநாட்டு ஆக்கிரமிப்பு காரணங்களுக்கு மட்டுமே வரம்பிற்குட்படுத்துதல்",
+    "Prohibits suspension of Articles 20 and 21 under any circumstances during emergency", "அவசரநிலையின் போது எந்தச் சூழ்நிலையிலும் பிரிவுகள் 20 மற்றும் 21-ஐ இடைநீக்கம் செய்வதைத் தடுத்தல்",
+    "A-1, B-2, C-3, D-4", "A-2, B-1, C-4, D-3", "A-1, B-3, C-2, D-4", "A-4, B-3, C-2, D-1", "D",
+    "A-1: Art 358 Automatic suspension of Art 19. B-2: Art 359 Presidential Order. C-3: 44th CAA restricted Art 358 to external emergency. D-4: 44th CAA protected Arts 20 & 21 from suspension.",
+    "A-1: 358 பிரிவு 19 தானாக இடைநீக்கம். B-2: 359 குடியரசுத் தலைவர் உத்தரவு. C-3: 44வது திருத்தம் 358-ஐ வெளிப்புற அவசரநிலைக்கு மட்டுமே என்றது. D-4: 44வது திருத்தம் 20, 21-ஐ பாதுகாத்தது.",
+    "Correct. A-1, B-2, C-3, D-4 matches all Emergency & Fundamental Rights provisions.", "சரி. A-1, B-2, C-3, D-4 என்பது அவசரநிலை மற்றும் அடிப்படை உரிமைகளுக்கான சரியான பொருத்தமாகும்.",
+    "Incorrect. Article 358 matches 1, not 2.", "தவறு. பிரிவு 358 பொருத்தம் 1 ஆகும்.",
+    "Incorrect. Article 359 matches 2, not 1.", "தவறு. பிரிவு 359 பொருத்தம் 2 ஆகும்.",
+    "Incorrect. 44th CAA on Art 359 matches 4, not 1.", "தவறு. 359 மீதான 44வது திருத்தம் பொருத்தம் 4 ஆகும்.",
+    "TNPSC Trap: Articles 20 and 21 CANNEVER be suspended under Article 359, even during National Emergency.",
+    "TNPSC பொறி: பிரிவுகள் 20 மற்றும் 21-ஐ தேசிய அவசரநிலையின் போது கூட பிரிவு 359-ன் கீழ் இடைநீக்கம் செய்ய முடியாது.",
+    "Article 358 operates automatically throughout India, whereas Article 359 requires a specific Presidential Order.",
+    "பிரிவு 358 தானாகவே செயல்படும், ஆனால் பிரிவு 359 குடியரசுத் தலைவரின் தனி உத்தரவைக் கோருகிறது.",
+    "Analyze", 60, ["Polity", "Fundamental Rights", "Article 358", "Article 359", "National Emergency", "Match the Following"]
+))
+
+# FR_MF_021 (Hard)
+questions.append(make_mf_q(
+    "FR_MF_021", "Hard",
+    "Match List I (Landmark Judicial Cases Part 1) with List II (Constitutional Principles Rulings) and select the correct answer using the codes given below:\n\nList I\nA. Champakam Dorairajan Case (1951)\nB. Shankari Prasad Case (1951)\nC. AK Gopalan Case (1950)\nD. Balaji Raghavan Case (1996)\n\nList II\n1. Fundamental Rights prevail over DPSPs; led to 1st Constitutional Amendment Act 1951\n2. Parliament has power under Article 368 to amend any Fundamental Right in Part III\n3. Narrow interpretation of Article 21 strictly under 'procedure established by law'\n4. National Awards (Bharat Ratna, Padma Awards) are valid decorations, not titles under Article 18",
+    "பட்டியல் I-ஐ (வரலாற்றுச் சிறப்புமிக்க வழக்குகள் பகுதி 1) பட்டியல் II உடன் (அரசியலமைப்புத் தீர்ப்புகள்) பொருத்தி சரியான பதிலதைத் தேர்ந்தெடுக்கவும்:\n\nபட்டியல் I\nA. சண்பகம் துரைராஜன் வழக்கு (1951)\nB. சங்கரி பிரசாத் வழக்கு (1951)\nC. ஏ.கே. கோபாலன் வழக்கு (1950)\nD. பாலாஜி ராகவன் வழக்கு (1996)\n\nபட்டியல் II\n1. DPSP-களை விட அடிப்படை உரிமைகளே மேலோங்கும்; 1-வது அரசியலமைப்பு திருத்தத்திற்கு வழிவகுத்தது\n2. பிரிவு 368-ன் கீழ் பகுதி III-ல் உள்ள எந்தவொரு அடிப்படை உரிமையையும் திருத்த நாடாளுமன்றத்திற்கு அதிகாரம் உண்டு\n3. பிரிவு 21-ஐ 'சட்டத்தால் அமைக்கப்பட்ட நடைமுறை' என்பதன் கீழ் குறுகிய நோக்கில் மட்டுமே பொருள் கொள்ளுதல்\n4. பாரத ரத்னா மற்றும் பத்ம விருதுகள் செல்லுபடியாகும் கெளரவங்கள், பிரிவு 18-ன் கீழ் பட்டங்கள் அல்ல",
+    "Champakam Dorairajan Case (1951)", "சண்பகம் துரைராஜன் வழக்கு (1951)",
+    "Shankari Prasad Case (1951)", "சங்கரி பிரசாத் வழக்கு (1951)",
+    "AK Gopalan Case (1950)", "ஏ.கே. கோபாலன் வழக்கு (1950)",
+    "Balaji Raghavan Case (1996)", "பாலாஜி ராகவன் வழக்கு (1996)",
+    "Fundamental Rights prevail over DPSPs; led to 1st Constitutional Amendment Act 1951", "DPSP-களை விட அடிப்படை உரிமைகளே மேலோங்கும்; 1-வது அரசியலமைப்பு திருத்தத்திற்கு வழிவகுத்தது",
+    "Parliament has power under Article 368 to amend any Fundamental Right in Part III", "பிரிவு 368-ன் கீழ் பகுதி III-ல் உள்ள எந்தவொரு அடிப்படை உரிமையையும் திருத்த நாடாளுமன்றத்திற்கு அதிகாரம் உண்டு",
+    "Narrow interpretation of Article 21 strictly under 'procedure established by law'", "பிரிவு 21-ஐ 'சட்டத்தால் அமைக்கப்பட்ட நடைமுறை' என்பதன் கீழ் குறுகிய நோக்கில் மட்டுமே பொருள் கொள்ளுதல்",
+    "National Awards (Bharat Ratna, Padma Awards) are valid decorations, not titles under Article 18", "பாரத ரத்னா மற்றும் பத்ம விருதுகள் செல்லுபடியாகும் கெளரவங்கள், பிரிவு 18-ன் கீழ் பட்டங்கள் அல்ல",
+    "A-1, B-2, C-3, D-4", "A-2, B-1, C-4, D-3", "A-1, B-3, C-2, D-4", "A-4, B-3, C-2, D-1", "A",
+    "A-1: Champakam Dorairajan gave FR primacy over DPSP. B-2: Shankari Prasad upheld Parliament power to amend FRs. C-3: AK Gopalan gave narrow Art 21 view. D-4: Balaji Raghavan upheld National Awards.",
+    "A-1: சண்பகம் துரைராஜன் வழக்கு அடிப்படை உரிமை முன்னுரிமை. B-2: சங்கரி பிரசாத் வழக்கு திருத்தும் அதிகாரம். C-3: ஏ.கே. கோபாலன் வழக்கு குறுகிய 21. D-4: பாலாஜி ராகவன் வழக்கு தேசிய விருதுகள்.",
+    "Correct. A-1, B-2, C-3, D-4 matches all landmark cases part 1.", "சரி. A-1, B-2, C-3, D-4 என்பது வழக்குகள் பகுதி 1-க்கான சரியான பொருத்தமாகும்.",
+    "Incorrect. Champakam Dorairajan matches 1, not 2.", "தவறு. சண்பகம் துரைராஜன் வழக்கு பொருத்தம் 1 ஆகும்.",
+    "Incorrect. Shankari Prasad matches 2, not 1.", "தவறு. சங்கரி பிரசாத் வழக்கு பொருத்தம் 2 ஆகும்.",
+    "Incorrect. Balaji Raghavan matches 4, not 1.", "தவறு. பாலாஜி ராகவன் வழக்கு பொருத்தம் 4 ஆகும்.",
+    "TNPSC Trap: Champakam Dorairajan case led directly to the enactment of the First Constitutional Amendment Act, 1951 (Art 15(4)).",
+    "TNPSC பொறி: சண்பகம் துரைராஜன் வழக்கு நேரடியாக 1-வது அரசியலமைப்பு திருத்தத்திற்கு (பிரிவு 15(4)) வழிவகுத்தது.",
+    "In Sajjan Singh case (1965), Supreme Court reiterated Shankari Prasad ruling.",
+    "சஜ்ஜன் சிங் வழக்கில் (1965) உச்ச நீதிமன்றம் சங்கரி பிரசாத் தீர்ப்பை மீண்டும் உறுதிப்படுத்தியது.",
+    "Analyze", 60, ["Polity", "Fundamental Rights", "Landmark Cases", "Champakam Dorairajan", "Shankari Prasad", "Match the Following"]
+))
+
+# FR_MF_022 (Hard)
+questions.append(make_mf_q(
+    "FR_MF_022", "Hard",
+    "Match List I (Landmark Judicial Cases Part 2) with List II (Constitutional Rulings) and select the correct answer using the codes given below:\n\nList I\nA. Golaknath Case (1967)\nB. Kesavananda Bharati Case (1973)\nC. Maneka Gandhi Case (1978)\nD. Minerva Mills Case (1980)\n\nList II\n1. FRs are transcendental; Parliament cannot amend Part III under Article 368\n2. Basic Structure doctrine formulated; Parliament can amend FRs without damaging basic structure\n3. 'Due Process of Law' integrated into Article 21; procedure must be just, fair, and reasonable\n4. Harmony and balance between Part III (FRs) and Part IV (DPSPs) is part of Basic Structure",
+    "பட்டியல் I-ஐ (வரலாற்றுச் சிறப்புமிக்க வழக்குகள் பகுதி 2) பட்டியல் II உடன் (அரசியலமைப்புத் தீர்ப்புகள்) பொருத்தி சரியான பதிலதைத் தேர்ந்தெடுக்கவும்:\n\nபட்டியல் I\nA. கோலக்நாத் வழக்கு (1967)\nB. கேசவாநந்த பாரதி வழக்கு (1973)\nC. மேனகா காந்தி வழக்கு (1978)\nD. மினர்வா மில்ஸ் வழக்கு (1980)\n\nபட்டியல் II\n1. அடிப்படை உரிமைகள் உன்னதமானவை; பிரிவு 368-ன் கீழ் பகுதி III-ஐ நாடாளுமன்றம் திருத்த முடியாது\n2. அடிப்படை அமைப்பு கோட்பாடு உருவாக்கம்; அடிப்படை அமைப்பைச் சிதைக்காமல் நாடாளுமன்றம் திருத்தலாம்\n3. 'சட்டத்தின் உரிய நடைமுறை' பிரிவு 21-ல் இணைக்கப்பட்டது; நடைமுறை நியாயமாகவும் நேர்மையாகவும் இருக்க வேண்டும்\n4. பகுதி III (FR) மற்றும் பகுதி IV (DPSP) இடையேயான சமநிலை அரசியலமைப்பின் அடிப்படை அமைப்பாகும்",
+    "Golaknath Case (1967)", "கோலக்நாத் வழக்கு (1967)",
+    "Kesavananda Bharati Case (1973)", "கேசவாநந்த பாரதி வழக்கு (1973)",
+    "Maneka Gandhi Case (1978)", "மேனகா காந்தி வழக்கு (1978)",
+    "Minerva Mills Case (1980)", "மினர்வா மில்ஸ் வழக்கு (1980)",
+    "FRs are transcendental; Parliament cannot amend Part III under Article 368", "அடிப்படை உரிமைகள் உன்னதமானவை; பிரிவு 368-ன் கீழ் பகுதி III-ஐ நாடாளுமன்றம் திருத்த முடியாது",
+    "Basic Structure doctrine formulated; Parliament can amend FRs without damaging basic structure", "அடிப்படை அமைப்பு கோட்பாடு உருவாக்கம்; அடிப்படை அமைப்பைச் சிதைக்காமல் நாடாளுமன்றம் திருத்தலாம்",
+    "'Due Process of Law' integrated into Article 21; procedure must be just, fair, and reasonable", "'சட்டத்தின் உரிய நடைமுறை' பிரிவு 21-ல் இணைக்கப்பட்டது; நடைமுறை நியாயமாகவும் நேர்மையாகவும் இருக்க வேண்டும்",
+    "Harmony and balance between Part III (FRs) and Part IV (DPSPs) is part of Basic Structure", "பகுதி III (FR) மற்றும் பகுதி IV (DPSP) இடையேயான சமநிலை அரசியலமைப்பின் அடிப்படை அமைப்பாகும்",
+    "A-1, B-2, C-3, D-4", "A-2, B-1, C-4, D-3", "A-1, B-3, C-2, D-4", "A-4, B-3, C-2, D-1", "B",
+    "A-1: Golaknath prohibited amending Part III. B-2: Kesavananda created Basic Structure. C-3: Maneka Gandhi introduced Due Process into Art 21. D-4: Minerva Mills affirmed Part III & IV balance.",
+    "A-1: கோலக்நாத் பகுதி III-ஐ திருத்தத் தடை. B-2: கேசவாநந்த அடிப்படை அமைப்பு கோட்பாடு. C-3: மேனகா காந்தி உரிய சட்ட நடைமுறை. D-4: மினர்வா மில்ஸ் பகுதி III-IV சமநிலை.",
+    "Correct. A-1, B-2, C-3, D-4 matches all four landmark constitutional cases.", "சரி. A-1, B-2, C-3, D-4 என்பது நான்கு முக்கிய வழக்குகளுக்கான சரியான பொருத்தமாகும்.",
+    "Incorrect. Golaknath matches 1, not 2.", "தவறு. கோலக்நாத் வழக்கு பொருத்தம் 1 ஆகும்.",
+    "Incorrect. Kesavananda matches 2, not 1.", "தவறு. கேசவாநந்த பாரதி வழக்கு பொருத்தம் 2 ஆகும்.",
+    "Incorrect. Minerva Mills matches 4, not 1.", "தவறு. மினர்வா மில்ஸ் வழக்கு பொருத்தம் 4 ஆகும்.",
+    "TNPSC Trap: Golaknath case (1967) prohibited amending Fundamental Rights, but Kesavananda Bharati (1973) OVERRULED Golaknath and permitted amending FRs subject to Basic Structure.",
+    "TNPSC பொறி: கோலக்நாத் வழக்கு அடிப்படை உரிமைகளைத் திருத்தத் தடை விதித்தது, ஆனால் கேசவாநந்த பாரதி வழக்கு அதனை ரத்து செய்து அடிப்படை அமைப்புக்கு உட்பட்டு திருத்த அனுமதித்தது.",
+    "Kesavananda Bharati case was decided on April 24, 1973 by a 7:6 majority of 13 judges.",
+    "கேசவாநந்த பாரதி வழக்கு 1973 ஏப்ரல் 24 அன்று 13 நீதிபதிகள் அமர்வில் 7:6 என்ற பெரும்பான்மையில் தீர்ப்பளிக்கப்பட்டது.",
+    "Analyze", 60, ["Polity", "Fundamental Rights", "Kesavananda Bharati Case", "Golaknath Case", "Minerva Mills Case", "Basic Structure", "Match the Following"]
+))
+
+# FR_MF_023 (Hard)
+questions.append(make_mf_q(
+    "FR_MF_023", "Hard",
+    "Match List I (Reservation Landmark Judgments) with List II (Key Rulings) and select the correct answer using the codes given below:\n\nList I\nA. Indra Sawhney Case (1992)\nB. M. Nagaraj Case (2006)\nC. Jarnail Singh Case (2018)\nD. Janhit Abhiyan Case (2022)\n\nList II\n1. 50% ceiling cap on reservation and exclusion of 'Creamy Layer' for OBCs\n2. Mandatory collection of quantifiable data showing backwardness and inadequacy of representation for SC/ST promotion reservation\n3. Extended Creamy Layer principle to SCs and STs for promotion reservation and modified Nagaraj backwardness data rule\n4. Upheld the 103rd Constitutional Amendment Act (10% EWS reservation) by a 3:2 majority",
+    "பட்டியல் I-ஐ (இடஒதுக்கீடு வரலாற்று தீர்ப்புகள்) பட்டியல் II உடன் (முக்கிய தீர்ப்புகள்) பொருத்தி சரியான பதிலதைத் தேர்ந்தெடுக்கவும்:\n\nபட்டியல் I\nA. இந்திரா சாவ்னி வழக்கு (1992)\nB. எம். நாகராஜ் வழக்கு (2006)\nC. ஜர்னைல் சிங் வழக்கு (2018)\nD. ஜன்ஹித் அபியான் வழக்கு (2022)\n\nபட்டியல் II\n1. இடஒதுக்கீட்டிற்கு 50% உச்சவரம்பு மற்றும் OBC பிரிவினருக்கு 'கிரீமி லேயர்' விலக்கு\n2. SC/ST பதவி உயர்வு இடஒதுக்கீட்டிற்கு பின்தங்கிய நிலைக்கான அளவிடக்கூடிய தரவுகளைச் சேகரிப்பது கட்டாயம்\n3. பதவி உயர்வு இடஒதுக்கீட்டில் SC/ST பிரிவினருக்கும் கிரீமி லேயர் கோட்பாட்டை நீட்டித்தல்\n4. 103-வது அரசியலமைப்பு திருத்தச் சட்டத்தை (10% EWS இடஒதுக்கீடு) 3:2 பெரும்பான்மையில் உறுதி செய்தல்",
+    "Indra Sawhney Case (1992)", "இந்திரா சாவ்னி வழக்கு (1992)",
+    "M. Nagaraj Case (2006)", "எம். நாகராஜ் வழக்கு (2006)",
+    "Jarnail Singh Case (2018)", "ஜர்னைல் சிங் வழக்கு (2018)",
+    "Janhit Abhiyan Case (2022)", "ஜன்ஹித் அபியான் வழக்கு (2022)",
+    "50% ceiling cap on reservation and exclusion of 'Creamy Layer' for OBCs", "இடஒதுக்கீட்டிற்கு 50% உச்சவரம்பு மற்றும் OBC பிரிவினருக்கு 'கிரீமி லேயர்' விலக்கு",
+    "Mandatory collection of quantifiable data showing backwardness and inadequacy of representation for SC/ST promotion reservation", "SC/ST பதவி உயர்வு இடஒதுக்கீட்டிற்கு பின்தங்கிய நிலைக்கான அளவிடக்கூடிய தரவுகளைச் சேகரிப்பது கட்டாயம்",
+    "Extended Creamy Layer principle to SCs and STs for promotion reservation and modified Nagaraj backwardness data rule", "பதவி உயர்வு இடஒதுக்கீட்டில் SC/ST பிரிவினருக்கும் கிரீமி லேயர் கோட்பாட்டை நீட்டித்தல்",
+    "Upheld the 103rd Constitutional Amendment Act (10% EWS reservation) by a 3:2 majority", "103-வது அரசியலமைப்பு திருத்தச் சட்டத்தை (10% EWS இடஒதுக்கீடு) 3:2 பெரும்பான்மையில் உறுதி செய்தல்",
+    "A-1, B-2, C-3, D-4", "A-2, B-1, C-4, D-3", "A-1, B-3, C-2, D-4", "A-4, B-3, C-2, D-1", "C",
+    "A-1: Indra Sawhney fixed 50% cap & creamy layer. B-2: M. Nagaraj mandated quantifiable data. C-3: Jarnail Singh extended creamy layer to SCs/STs. D-4: Janhit Abhiyan upheld EWS 10%.",
+    "A-1: இந்திரா சாவ்னி 50% வரம்பு & கிரீமி லேயர். B-2: நாகராஜ் தரவுகள் கட்டாயம். C-3: ஜர்னைல் சிங் SC/ST கிரீமி லேயர் நீட்டிப்பு. D-4: ஜன்ஹித் அபியான் EWS உறுதி.",
+    "Correct. A-1, B-2, C-3, D-4 matches all reservation landmark judgments.", "சரி. A-1, B-2, C-3, D-4 என்பது இடஒதுக்கீட்டு தீர்ப்புகளுக்கான சரியான பொருத்தமாகும்.",
+    "Incorrect. Indra Sawhney matches 1, not 2.", "தவறு. இந்திரா சாவ்னி வழக்கு பொருத்தம் 1 ஆகும்.",
+    "Incorrect. M. Nagaraj matches 2, not 1.", "தவறு. எம். நாகராஜ் வழக்கு பொருத்தம் 2 ஆகும்.",
+    "Incorrect. Janhit Abhiyan matches 4, not 1.", "தவறு. ஜன்ஹித் அபியான் வழக்கு பொருத்தம் 4 ஆகும்.",
+    "TNPSC Trap: Indra Sawhney case (1992) held that reservation in PROMOTIONS is NOT permissible, which led to the 77th CAA 1995 (Art 16(4A)).",
+    "TNPSC பொறி: இந்திரா சாவ்னி வழக்கு பதவி உயர்வில் இடஒதுக்கீடு கூடாது என்றது; அதனை மாற்றவே 77வது திருத்தம் (16(4A)) கொண்டுவரப்பட்டது.",
+    "Janhit Abhiyan judgment (2022) affirmed that EWS reservation outside the 50% cap does not violate Basic Structure.",
+    "ஜன்ஹித் அபியான் தீர்ப்பு 50% வரம்பிற்கு அப்பால் EWS இடஒதுக்கீடு வழங்வது அடிப்படை அமைப்பை மீறாது என உறுதி செய்தது.",
+    "Analyze", 60, ["Polity", "Fundamental Rights", "Indra Sawhney Case", "M Nagaraj Case", "103rd Amendment", "Reservation Cases", "Match the Following"]
+))
+
+# FR_MF_024 (Hard)
+questions.append(make_mf_q(
+    "FR_MF_024", "Hard",
+    "Match List I (Major Constitutional Amendment Acts) with List II (Key Changes in Fundamental Rights) and select the correct answer using the codes given below:\n\nList I\nA. 1st Constitutional Amendment Act, 1951\nB. 24th Constitutional Amendment Act, 1971\nC. 44th Constitutional Amendment Act, 1978\nD. 86th Constitutional Amendment Act, 2002\n\nList II\n1. Added Article 15(4), Article 31A, Article 31B, and the Ninth Schedule\n2. Amended Article 13 and Article 368 affirming Parliament power to amend Fundamental Rights\n3. Deleted Right to Property (Article 31) and protected Articles 20 & 21 during Emergency\n4. Inserted Article 21A for Right to Free & Compulsory Education for 6-14 age group",
+    "பட்டியல் I-ஐ (முக்கிய அரசியலமைப்பு திருத்தச் சட்டங்கள்) பட்டியல் II உடன் (அடிப்படை உரிமைகளில் கொண்டுவரப்பட்ட மாற்றங்கள்) பொருத்தி சரியான பதிலதைத் தேர்ந்தெடுக்கவும்:\n\nபட்டியல் I\nA. 1-வது அரசியலமைப்பு திருத்தச் சட்டம், 1951\nB. 24-வது அரசியலமைப்பு திருத்தச் சட்டம், 1971\nC. 44-வது அரசியலமைப்பு திருத்தச் சட்டம், 1978\nD. 86-வது அரசியலமைப்பு திருத்தச் சட்டம், 2002\n\nபட்டியல் II\n1. பிரிவு 15(4), பிரிவு 31A, பிரிவு 31B மற்றும் 9-வது அட்டவணையைச் சேர்த்தது\n2. அடிப்படை உரிமைகளைத் திருத்தும் நாடாளுமன்ற அதிகாரத்தை உறுதி செய்ய பிரிவுகள் 13 மற்றும் 368-ஐத் திருத்தியது\n3. சொத்துரிமையை (பிரிவு 31) நீக்கியது மற்றும் அவசரநிலையின் போது பிரிவுகள் 20 & 21-ஐ பாதுகாத்தது\n4. 6-14 வயது குழந்தைகளுக்கான கல்வி உரிமைக்காக பிரிவு 21A-ஐச் சேர்த்தது",
+    "1st Constitutional Amendment Act, 1951", "1-வது அரசியலமைப்பு திருத்தச் சட்டம், 1951",
+    "24th Constitutional Amendment Act, 1971", "24-வது அரசியலமைப்பு திருத்தச் சட்டம், 1971",
+    "44th Constitutional Amendment Act, 1978", "44-வது அரசியலமைப்பு திருத்தச் சட்டம், 1978",
+    "86th Constitutional Amendment Act, 2002", "86-வது அரசியலமைப்பு திருத்தச் சட்டம், 2002",
+    "Added Article 15(4), Article 31A, Article 31B, and the Ninth Schedule", "பிரிவு 15(4), பிரிவு 31A, பிரிவு 31B மற்றும் 9-வது அட்டவணையைச் சேர்த்தது",
+    "Amended Article 13 and Article 368 affirming Parliament power to amend Fundamental Rights", "அடிப்படை உரிமைகளைத் திருத்தும் நாடாளுமன்ற அதிகாரத்தை உறுதி செய்ய பிரிவுகள் 13 மற்றும் 368-ஐத் திருத்தியது",
+    "Deleted Right to Property (Article 31) and protected Articles 20 & 21 during Emergency", "சொத்துரிமையை (பிரிவு 31) நீக்கியது மற்றும் அவசரநிலையின் போது பிரிவுகள் 20 & 21-ஐ பாதுகாத்தது",
+    "Inserted Article 21A for Right to Free & Compulsory Education for 6-14 age group", "6-14 வயது குழந்தைகளுக்கான கல்வி உரிமைக்காக பிரிவு 21A-ஐச் சேர்த்தது",
+    "A-1, B-2, C-3, D-4", "A-2, B-1, C-4, D-3", "A-1, B-3, C-2, D-4", "A-4, B-3, C-2, D-1", "D",
+    "A-1: 1st CAA 1951 Art 15(4) & 9th Sched. B-2: 24th CAA 1971 Art 13 & 368. C-3: 44th CAA 1978 Art 31 deletion & Arts 20/21 protection. D-4: 86th CAA 2002 Art 21A.",
+    "A-1: 1வது திருத்தம் 15(4) & 9வது அட்டவணை. B-2: 24வது திருத்தம் 13 & 368. C-3: 44வது திருத்தம் சொத்துரிமை நீக்கம் & 20/21 பாதுகாப்பு. D-4: 86வது திருத்தம் 21A கல்வி உரிமை.",
+    "Correct. A-1, B-2, C-3, D-4 matches all major constitutional amendment acts.", "சரி. A-1, B-2, C-3, D-4 என்பது முக்கிய அரசியலமைப்பு திருத்தங்களுக்கான சரியான பொருத்தமாகும்.",
+    "Incorrect. 1st CAA matches 1, not 2.", "தவறு. 1-வது திருத்தம் பொருத்தம் 1 ஆகும்.",
+    "Incorrect. 24th CAA matches 2, not 1.", "தவறு. 24-வது திருத்தம் பொருத்தம் 2 ஆகும்.",
+    "Incorrect. 86th CAA matches 4, not 1.", "தவறு. 86-வது திருத்தம் பொருத்தம் 4 ஆகும்.",
+    "TNPSC Trap: 24th CAA 1971 was passed to nullify the Golaknath case judgment (1967).",
+    "TNPSC பொறி: 24-வது திருத்தச் சட்டம் 1971 கோலக்நாத் வழக்கின் தீர்ப்பை ரத்து செய்வதற்காக நிறைவேற்றப்பட்டது.",
+    "44th CAA 1978 replaced the word 'internal disturbance' with 'armed rebellion' in Article 352.",
+    "44-வது திருத்தம் 1978 பிரிவு 352-ல் 'உள்நாட்டுக் குழப்பம்' என்ற சொல்லுக்குப் பதிலாக 'ஆயுதமேந்திய கிளர்ச்சி' என மாற்றியது.",
+    "Analyze", 60, ["Polity", "Fundamental Rights", "1st Amendment", "24th Amendment", "44th Amendment", "86th Amendment", "Match the Following"]
+))
+
+# FR_MF_025 (Hard)
+questions.append(make_mf_q(
+    "FR_MF_025", "Hard",
+    "Match List I (Basic Structure Features derived from Part III) with List II (Landmark Rulings) and select the correct answer using the codes given below:\n\nList I\nA. Judicial Review under Articles 32 and 226\nB. Doctrine of Basic Structure limiting Amendment Power\nC. Balance and Harmony between Part III and Part IV\nD. Non-arbitrariness as the core of Equality under Article 14\n\nList II\n1. L. Chandra Kumar v. Union of India (1997)\n2. Kesavananda Bharati v. State of Kerala (1973)\n3. Minerva Mills Ltd. v. Union of India (1980)\n4. E.P. Royappa v. State of Tamil Nadu (1974)",
+    "பட்டியல் I-ஐ (பகுதி III அடிப்படையிலான அடிப்படை அமைப்பு அம்சங்கள்) பட்டியல் II உடன் (வரலாற்று தீர்ப்புகள்) பொருத்தி சரியான பதிலதைத் தேர்ந்தெடுக்கவும்:\n\nபட்டியல் I\nA. பிரிவுகள் 32 மற்றும் 226-ன் கீழ் நீதித்துறை மறுஆய்வு\nB. திருத்தும் அதிகாரத்தைக் கட்டுப்படுத்தும் அடிப்படை அமைப்பு கோட்பாடு\nC. பகுதி III மற்றும் பகுதி IV இடையேயான சமநிலை மற்றும் அமைதி\nD. பிரிவு 14-ன் கீழ் சமத்துவத்தின் மையமான தன்னிச்சையின்மை\n\nபட்டியல் II\n1. எல். சந்திர குமார் எதிராக இந்திய யூனியன் வழக்கு (1997)\n2. கேசவாநந்த பாரதி எதிராக கேரள மாநில வழக்கு (1973)\n3. மினர்வா மில்ஸ் எதிராக இந்திய யூனியன் வழக்கு (1980)\n4. ஈ.பி. ராயப்பா எதிராக தமிழ்நாடு மாநில வழக்கு (1974)",
+    "Judicial Review under Articles 32 and 226", "பிரிவுகள் 32 மற்றும் 226-ன் கீழ் நீதித்துறை மறுஆய்வு",
+    "Doctrine of Basic Structure limiting Amendment Power", "திருத்தும் அதிகாரத்தைக் கட்டுப்படுத்தும் அடிப்படை அமைப்பு கோட்பாடு",
+    "Balance and Harmony between Part III and Part IV", "பகுதி III மற்றும் பகுதி IV இடையேயான சமநிலை மற்றும் அமைதி",
+    "Non-arbitrariness as the core of Equality under Article 14", "பிரிவு 14-ன் கீழ் சமத்துவத்தின் மையமான தன்னிச்சையின்மை",
+    "L. Chandra Kumar v. Union of India (1997)", "எல். சந்திர குமார் எதிராக இந்திய யூனியன் வழக்கு (1997)",
+    "Kesavananda Bharati v. State of Kerala (1973)", "கேசவாநந்த பாரதி எதிராக கேரள மாநில வழக்கு (1973)",
+    "Minerva Mills Ltd. v. Union of India (1980)", "மினர்வா மில்ஸ் எதிராக இந்திய யூனியன் வழக்கு (1980)",
+    "E.P. Royappa v. State of Tamil Nadu (1974)", "ஈ.பி. ராயப்பா எதிராக தமிழ்நாடு மாநில வழக்கு (1974)",
+    "A-1, B-2, C-3, D-4", "A-2, B-1, C-4, D-3", "A-1, B-3, C-2, D-4", "A-4, B-3, C-2, D-1", "D",
+    "A-1: Judicial Review is Basic Structure (Chandra Kumar 1997). B-2: Basic Structure doctrine (Kesavananda 1973). C-3: Part III & IV balance (Minerva Mills 1980). D-4: Non-arbitrariness equality (EP Royappa 1974).",
+    "A-1: நீதித்துறை மறுஆய்வு சந்திர குமார் வழக்கு. B-2: அடிப்படை அமைப்பு கோட்பாடு கேசவாநந்த பாரதி வழக்கு. C-3: பகுதி III-IV சமநிலை மினர்வா மில்ஸ் வழக்கு. D-4: தன்னிச்சையின்மை ராயப்பா வழக்கு.",
+    "Correct. A-1, B-2, C-3, D-4 matches all Basic Structure rulings.", "சரி. A-1, B-2, C-3, D-4 என்பது அடிப்படை அமைப்பு தீர்ப்புகளுக்கான சரியான பொருத்தமாகும்.",
+    "Incorrect. Judicial review matches 1, not 2.", "தவறு. நீதித்துறை மறுஆய்வு பொருத்தம் 1 ஆகும்.",
+    "Incorrect. Basic Structure matches 2, not 1.", "தவறு. அடிப்படை அமைப்பு கோட்பாடு பொருத்தம் 2 ஆகும்.",
+    "Incorrect. Non-arbitrariness matches 4, not 1.", "தவறு. தன்னிச்சையின்மை பொருத்தம் 4 ஆகும்.",
+    "TNPSC Trap: Judicial Review under Articles 32 and 226 CANNOT be excluded even for administrative tribunals (Chandra Kumar 1997).",
+    "TNPSC பொறி: நிர்வாக தீர்ப்பாயங்களுக்குக் கூட பிரிவுகள் 32 மற்றும் 226-ன் கீழ் நீதித்துறை மறுஆய்வை விலக்க முடியாது.",
+    "The concept of Basic Structure is NOT defined in the Constitution, but is a judicial doctrine evolved by the Supreme Court.",
+    "அடிப்படை அமைப்பு என்ற கருத்து அரசியலமைப்பில் வரையறுக்கப்படவில்லை, இது உச்ச நீதிமன்றத்தால் உருவாக்கப்பட்ட ஒரு கோட்பாடாகும்.",
+    "Analyze", 60, ["Polity", "Fundamental Rights", "Basic Structure", "Chandra Kumar Case", "Kesavananda Bharati Case", "EP Royappa Case", "Match the Following"]
+))
+
+# Save full 25 questions dataset
+print(f"Total Match the Following questions compiled: {len(questions)}")
+assert len(questions) == 25, f"Expected 25 questions, got {len(questions)}"
+
+with open(target_path, "w", encoding="utf-8") as f:
+    json.dump(questions, f, ensure_ascii=False, indent=2)
+
+print(f"✅ Successfully wrote 25 Match the Following MCQs to {target_path}")

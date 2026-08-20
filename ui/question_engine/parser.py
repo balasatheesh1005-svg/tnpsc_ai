@@ -18,6 +18,8 @@ class OptionItem:
             return en_text
         if lang_mode == "TA" or not en_text:
             return ta_text
+        if en_text == ta_text:
+            return en_text
         return f"{en_text} / {ta_text}"
 
 

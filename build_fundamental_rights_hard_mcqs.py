@@ -1,0 +1,1779 @@
+# -*- coding: utf-8 -*-
+"""
+Master Builder for Fundamental Rights – Hard 50 MCQs (Bilingual)
+Subject: Indian Polity
+Topic: Fundamental Rights
+Type: Hard
+Target Output: data/questions/polity/fundamental_rights_hard.json
+"""
+
+import json
+import os
+import sys
+
+sys.stdout.reconfigure(encoding='utf-8')
+
+questions = [
+  # 1. Multi-Statement / Analytical: Article 12 State Scope - Ans: C
+  {
+    "id": "FR_H_001",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "Hard",
+    "question_type": "Multi-Statement",
+    "question": {
+      "en": "Consider the following statements regarding the definition of 'State' under Article 12:\n\n1. A private body or agency working as an instrument of the State falls within the definition of State.\n2. The Judiciary in its purely judicial functions is included within the definition of State under Article 12.\n3. Statutory and non-statutory authorities like LIC, ONGC, and SAIL are treated as State.\n\nWhich of the statements given above is/are correct?",
+      "ta": "உறுப்பு 12-ன் கீழ் 'அரசு' என்பதன் வரையறை பற்றிய பின்வரும் கூற்றுகளை ஆராய்க:\n\n1. அரசின் முகவராக அல்லது கருவியாகச் செயல்படும் ஒரு தனியார் அமைப்பும் அரசு என்ற வரையறைக்குள் அடங்கும்.\n2. நீதித்துறை தன் தூய நீதித்துறை செயல்பாடுகளில் உறுப்பு 12-ன் கீழ் அரசு என்ற வரையறைக்குள் சேர்க்கப்பட்டுள்ளது.\n3. எல்.ஐ.சி (LIC), ஓ.என்.ஜி.சி (ONGC), சேல் (SAIL) போன்ற சட்டப்பூர்வ மற்றும் சட்டப்பூர்வமற்ற அமைப்புகள் அரசு என நடத்தப்படுகின்றன.\n\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?"
+    },
+    "options": [
+      { "id": "A", "en": "1 and 2 only", "ta": "1 மற்றும் 2 மட்டுமே" },
+      { "id": "B", "en": "2 and 3 only", "ta": "2 மற்றும் 3 மட்டுமே" },
+      { "id": "C", "en": "1 and 3 only", "ta": "1 மற்றும் 3 மட்டுமே" },
+      { "id": "D", "en": "1, 2 and 3", "ta": "1, 2 மற்றும் 3" }
+    ],
+    "correct_answer": "C",
+    "explanation": {
+      "en": "Statement 1 is correct (Ajay Hasia test: private agency acting as state instrumentality is State). Statement 2 is INCORRECT (Judiciary in its judicial capacity is NOT State under Art 12, though in administrative capacity it is State). Statement 3 is correct (Statutory bodies like LIC, ONGC are State).",
+      "ta": "கூற்று 1 சரி (அஜய் ஹாசியா சோதனை: அரசின் கருவியாகச் செயல்படும் தனியார் அமைப்பு அரசு). கூற்று 2 தவறு (நீதித்துறை தன் நீதிப் பணியில் உறுப்பு 12 அரசு அல்ல, ஆனால் நிர்வாகப் பணியில் அரசு). கூற்று 3 சரி (LIC, ONGC சட்டப்பூர்வ அமைப்புகள் அரசு)."
+    },
+    "why_not_others": {
+      "A": { "en": "Incorrect because Statement 2 is false.", "ta": "கூற்று 2 தவறானது என்பதால் தவறானது." },
+      "B": { "en": "Incorrect because Statement 2 is false.", "ta": "கூற்று 2 தவறானது என்பதால் தவறானது." },
+      "C": { "en": "Correct. Statements 1 and 3 are true; Statement 2 is false.", "ta": "சரி. கூற்றுகள் 1 மற்றும் 3 சரியானவை; கூற்று 2 தவறானது." },
+      "D": { "en": "Incorrect because Statement 2 is false.", "ta": "கூற்று 2 தவறானது என்பதால் தவறானது." }
+    },
+    "tnpsc_tip": {
+      "en": "TRAP: Judiciary in judicial capacity is NOT State under Art 12; in administrative capacity, IT IS State.",
+      "ta": "பொறி: நீதித்துறை அதன் நீதித்துறைச் செயல்பாட்டில் உறுப்பு 12-ன் கீழ் அரசு அல்ல; அதன் நிர்வாகச் செயல்பாட்டில் அரசு ஆகும்."
+    },
+    "metadata": { "subject": "Polity", "topic": "Fundamental Rights", "type": "Hard", "level": "TNPSC Group 1" }
+  },
+
+  # 2. Advanced Conceptual: Doctrines under Article 13 - Ans: B
+  {
+    "id": "FR_H_002",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "Hard",
+    "question_type": "Advanced Conceptual",
+    "question": {
+      "en": "Consider the following constitutional doctrines evolved under Article 13:\n\n1. Doctrine of Severability allows the valid portion of a statute to survive if it can be separated from the unconstitutional portion.\n2. Doctrine of Waiver permits an Indian citizen to voluntarily give up or waive his Fundamental Rights.\n3. Doctrine of Eclipse applies only to pre-constitutional laws in respect of Fundamental Rights.\n\nWhich of the statements given above is/are correct?",
+      "ta": "உறுப்பு 13-ன் கீழ் உருவான பின்வரும் அரசியலமைப்பு கோட்பாடுகளை ஆராய்க:\n\n1. பிரிபடுதன்மை கோட்பாடு (Doctrine of Severability) ஒரு சட்டத்தின் செல்லுபடியாகும் பகுதியை அரசியலமைப்புக்கு முரணான பகுதியிலிருந்து பிரிக்க முடிந்தால் அப் பகுதி தழைத்து வாழ அனுமதிக்கிறது.\n2. தள்ளுபடிக் கோட்பாடு (Doctrine of Waiver) ஒரு இந்தியக் குடிமகன் தன் அடிப்படை உரிமைகளைத் தன்னிச்சையாக விட்டுக்கொடுக்க அல்லது தள்ளுபடி செய்ய அனுமதிக்கிறது.\n3. மறைப்புக் கோட்பாடு (Doctrine of Eclipse) அடிப்படை உரிமைகளைப் பொறுத்தவரை அரசியலமைப்பிற்கு முந்தைய சட்டங்களுக்கு மட்டுமே பொருந்தும்.\n\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?"
+    },
+    "options": [
+      { "id": "A", "en": "1 and 2 only", "ta": "1 மற்றும் 2 மட்டுமே" },
+      { "id": "B", "en": "1 and 3 only", "ta": "1 மற்றும் 3 மட்டுமே" },
+      { "id": "C", "en": "2 and 3 only", "ta": "2 மற்றும் 3 மட்டுமே" },
+      { "id": "D", "en": "1, 2 and 3", "ta": "1, 2 மற்றும் 3" }
+    ],
+    "correct_answer": "B",
+    "explanation": {
+      "en": "Statement 1 is correct (A.K. Gopalan case). Statement 2 is INCORRECT (In Basheshar Nath v. CIT 1959, SC held that no citizen can waive his Fundamental Rights in India). Statement 3 is correct (Eclipse applies to Art 13(1) pre-constitutional laws).",
+      "ta": "கூற்று 1 சரி. கூற்று 2 தவறு (பஷேஷர் நாத் வழக்கு 1959-ல் எந்த இந்தியக் குடிமகனும் தன் அடிப்படை உரிமையைத் தள்ளுபடி செய்ய முடியாது என SC தீர்ப்பளித்தது). கூற்று 3 சரி (மறைப்புக் கோட்பாடு உறுப்பு 13(1) பழைய சட்டங்களுக்குப் பொருந்தும்)."
+    },
+    "why_not_others": {
+      "A": { "en": "Statement 2 is false; FRs cannot be waived in India.", "ta": "கூற்று 2 தவறு; இந்தியாவில் FRs-ஐத் தள்ளுபடி செய்ய முடியாது." },
+      "B": { "en": "Correct. Statements 1 and 3 are correct.", "ta": "சரி. கூற்றுகள் 1 மற்றும் 3 சரியானவை." },
+      "C": { "en": "Statement 2 is false.", "ta": "கூற்று 2 தவறானது." },
+      "D": { "en": "Statement 2 is false.", "ta": "கூற்று 2 தவறானது." }
+    },
+    "tnpsc_tip": {
+      "en": "Basheshar Nath (1959): Fundamental Rights CANNOT be waived by any person in India.",
+      "ta": "பஷேஷர் நாத் (1959): இந்தியாவில் எந்தவொரு நபராலும் அடிப்படை உரிமைகளைத் தள்ளுபடி செய்ய முடியாது."
+    },
+    "metadata": { "subject": "Polity", "topic": "Fundamental Rights", "type": "Hard", "level": "TNPSC Group 1" }
+  },
+
+  # 3. Case-Law Based: Champakam Dorairajan to 1st CAA - Ans: A
+  {
+    "id": "FR_H_003",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "Hard",
+    "question_type": "Case-law Based",
+    "question": {
+      "en": "Assertion (A): Article 15(4) was inserted into the Constitution by the 1st Constitutional Amendment Act, 1951.\nReason (R): The Supreme Court in State of Madras v. Champakam Dorairajan (1951) struck down the Communal G.O. of Madras providing communal quotas in medical/engineering admissions as violating Article 29(2).\n\nSelect the correct code:",
+      "ta": "கூற்று (A): 1வது அரசியலமைப்பு திருத்தச் சட்டம் 1951 மூலம் அரசியலமைப்பில் உறுப்பு 15(4) சேர்க்கப்பட்டது.\nகாரணம் (R): மெட்ராஸ் மாநிலம் எதிர் செம்பகம் துரைராஜன் (1951) வழக்கில் மருத்துவ/பொறியியல் சேர்க்கையில் வகுப்புவாரி இடஒதுக்கீடு வழங்கிய மெட்ராஸின் வகுப்புவாரி அரசாணையை (Communal G.O.) உறுப்பு 29(2)-ஐ மீறுவதாகக் கூறி உச்ச நீதிமன்றம் ரத்து செய்தது.\n\nசரியான குறியீட்டைத் தேர்ந்தெடுக்கவும்:"
+    },
+    "options": [
+      { "id": "A", "en": "Both A and R are true, and R is the correct explanation of A.", "ta": "A மற்றும் R இரண்டும் உண்மையானவை, மேலும் R என்பது A-வின் சரியான விளக்கமாகும்." },
+      { "id": "B", "en": "Both A and R are true, but R is NOT the correct explanation of A.", "ta": "A மற்றும் R இரண்டும் உண்மையானவை, ஆனால் R என்பது A-வின் சரியான விளக்கம் அல்ல." },
+      { "id": "C", "en": "A is true, but R is false.", "ta": "A உண்மையானது, ஆனால் R தவறானது." },
+      { "id": "D", "en": "A is false, but R is true.", "ta": "A தவறானது, ஆனால் R உண்மையானது." }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "Both A and R are true. In Champakam Dorairajan (1951), SC struck down the Communal G.O. under Art 29(2). Parliament immediately passed the 1st CAA 1951 inserting Art 15(4) to overcome this judgment.",
+      "ta": "A மற்றும் R இரண்டும் சரி. செம்பகம் துரைராஜன் (1951) வழக்கில் SC வகுப்புவாரி அரசாணையை 29(2)-ன் கீழ் ரத்து செய்தது. இத்தீர்ப்பை முறியடிக்க நாடாளுமன்றம் உடனடியாக 1வது திருத்தம் 1951 மூலம் உறுப்பு 15(4)-ஐச் சேர்த்தது."
+    },
+    "why_not_others": {
+      "A": { "en": "Correct. R directly explains why Parliament inserted Article 15(4) via 1st CAA 1951.", "ta": "சரி. நாடாளுமன்றம் 1வது திருத்தம் 1951 மூலம் உறுப்பு 15(4)-ஐ ஏன் சேர்த்தது என்பதை R நேரடியாக விளக்குகிறது." },
+      "B": { "en": "Incorrect because R IS the direct causal explanation of A.", "ta": "தவறு, ஏனெனில் R என்பது A-வின் நேரடி காரண விளக்கமாகும்." },
+      "C": { "en": "Incorrect because R is true.", "ta": "R உண்மையானது என்பதால் தவறானது." },
+      "D": { "en": "Incorrect because A is true.", "ta": "A உண்மையானது என்பதால் தவறானது." }
+    },
+    "tnpsc_tip": {
+      "en": "Champakam Dorairajan (1951) -> Communal G.O. Struck down -> 1st CAA 1951 inserted Article 15(4).",
+      "ta": "செம்பகம் துரைராஜன் (1951) -> வகுப்புவாரி அரசாணை ரத்து -> 1வது திருத்தம் 1951 உறுப்பு 15(4)-ஐச் சேர்த்தது."
+    },
+    "metadata": { "subject": "Polity", "topic": "Fundamental Rights", "type": "Hard", "level": "TNPSC Group 1" }
+  },
+
+  # 4. Constitutional Application: Article 16 Reservation Sub-clauses Matrix - Ans: D
+  {
+    "id": "FR_H_004",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "Hard",
+    "question_type": "Constitutional Application",
+    "question": {
+      "en": "Match List-I (Article 16 Provision) with List-II (Constitutional Amendment / Objective):\n\nList-I:\na. Article 16(3)\nb. Article 16(4A)\nc. Article 16(4B)\nd. Article 16(6)\n\nList-II:\n1. 77th CAA 1995 (Reservation in Promotion for SCs/STs)\n2. 81st CAA 2000 (Backlog Vacancies Carry-Forward Exemption)\n3. 103rd CAA 2019 (10% EWS Reservation)\n4. Parliamentary Law prescribing Residence Requirement for employment\n\nSelect the correct matching code:",
+      "ta": "பட்டியல்-I (உறுப்பு 16 விதி) ஐ பட்டியல்-II (அரசியலமைப்பு திருத்தம் / நோக்கம்) உடன் பொருத்துக:\n\nபட்டியல்-I:\na. உறுப்பு 16(3)\nb. உறுப்பு 16(4A)\nc. உறுப்பு 16(4B)\nd. உறுப்பு 16(6)\n\nபட்டியல்-II:\n1. 77வது திருத்தம் 1995 (SCs/STs-க்கு பதவி உயர்வில் இடஒதுக்கீடு)\n2. 81வது திருத்தம் 2000 (பின்தங்கிய காலிப்பணியிடங்களை முன்னெடுத்துச் செல்லும் விலக்கு)\n3. 103வது திருத்தம் 2019 (10% EWS இடஒதுக்கீடு)\n4. வேலைவாய்ப்பிற்கான வசிப்பிடத் தேவையை நிர்ணயிக்கும் நாடாளுமன்றச் சட்டம்\n\nசரியான குறியீட்டைத் தேர்ந்தெடுக்கவும்:"
+    },
+    "options": [
+      { "id": "A", "en": "a-1, b-4, c-2, d-3", "ta": "a-1, b-4, c-2, d-3" },
+      { "id": "B", "en": "a-4, b-2, c-1, d-3", "ta": "a-4, b-2, c-1, d-3" },
+      { "id": "C", "en": "a-3, b-1, c-2, d-4", "ta": "a-3, b-1, c-2, d-4" },
+      { "id": "D", "en": "a-4, b-1, c-2, d-3", "ta": "a-4, b-1, c-2, d-3" }
+    ],
+    "correct_answer": "D",
+    "explanation": {
+      "en": "a. Art 16(3) = Residence requirement by Parliamentary law (4)\nb. Art 16(4A) = 77th CAA 1995 Promotion quota for SC/ST (1)\nc. Art 16(4B) = 81st CAA 2000 Backlog vacancies carry-forward (2)\nd. Art 16(6) = 103rd CAA 2019 EWS quota (3).",
+      "ta": "a. உறுப்பு 16(3) = நாடாளுமன்ற வசிப்பிடச் சட்டம் (4)\nb. உறுப்பு 16(4A) = 77வது திருத்தம் 1995 SC/ST பதவி உயர்வு ஒதுக்கீடு (1)\nc. உறுப்பு 16(4B) = 81வது திருத்தம் 2000 பின்தங்கிய காலிப்பணியிடங்கள் (2)\nd. உறுப்பு 16(6) = 103வது திருத்தம் 2019 EWS ஒதுக்கீடு (3)."
+    },
+    "why_not_others": {
+      "A": { "en": "Incorrect pairing of 16(3) and 16(4A).", "ta": "16(3) மற்றும் 16(4A) தவறாக இணைக்கப்பட்டுள்ளது." },
+      "B": { "en": "Incorrect pairing of 16(4A) and 16(4B).", "ta": "16(4A) மற்றும் 16(4B) தவறாக இணைக்கப்பட்டுள்ளது." },
+      "C": { "en": "Incorrect pairing of 16(3).", "ta": "16(3) தவறாக இணைக்கப்பட்டுள்ளது." },
+      "D": { "en": "Correct matching: a-4, b-1, c-2, d-3.", "ta": "சரியான பொருத்தம்: a-4, b-1, c-2, d-3." }
+    },
+    "tnpsc_tip": {
+      "en": "Art 16(3) = Residence; 16(4A) = 77th CAA SC/ST Promotion; 16(4B) = 81st CAA Backlog; 16(6) = 103rd CAA EWS.",
+      "ta": "உறுப்பு 16(3) = வசிப்பிடம்; 16(4A) = 77வது திருத்தம் SC/ST பதவி உயர்வு; 16(4B) = 81வது திருத்தம் பின்தங்கிய பணி; 16(6) = 103வது திருத்தம் EWS."
+    },
+    "metadata": { "subject": "Polity", "topic": "Fundamental Rights", "type": "Hard", "level": "TNPSC Group 1" }
+  },
+
+  # 5. Advanced Conceptual: Article 19(1) Freedoms vs Restrictions Table - Ans: B
+  {
+    "id": "FR_H_005",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "Hard",
+    "question_type": "Advanced Conceptual",
+    "question": {
+      "en": "Which of the following pairings between Article 19 Freedom and its corresponding Reasonable Restriction Clause is INCORRECT?",
+      "ta": "உறுப்பு 19 சுதந்திரம் மற்றும் அதற்குரிய நியாயமான கட்டுப்பாட்டுப் பிரிவுக்கு இடையேயான பின்வரும் இணைப்புகளில் எது தவறானது?"
+    },
+    "options": [
+      { "id": "A", "en": "Article 19(1)(a) Freedom of Speech and Expression ➔ Article 19(2)", "ta": "உறுப்பு 19(1)(a) பேச்சு மற்றும் கருத்துச் சுதந்திரம் ➔ உறுப்பு 19(2)" },
+      { "id": "B", "en": "Article 19(1)(b) Freedom of Assembly ➔ Article 19(4)", "ta": "உறுப்பு 19(1)(b) அமைதியாக கூடும் சுதந்திரம் ➔ உறுப்பு 19(4)" },
+      { "id": "C", "en": "Article 19(1)(c) Freedom to form Associations/Cooperatives ➔ Article 19(4)", "ta": "உறுப்பு 19(1)(c) சங்கங்கள்/கூட்டுறவு அமைக்கும் சுதந்திரம் ➔ உறுப்பு 19(4)" },
+      { "id": "D", "en": "Article 19(1)(d) Freedom of Movement ➔ Article 19(5)", "ta": "உறுப்பு 19(1)(d) சுதந்திரமாக நடமாடும் உரிமை ➔ உறுப்பு 19(5)" }
+    ],
+    "correct_answer": "B",
+    "explanation": {
+      "en": "Option B is incorrect because Article 19(1)(b) (Freedom of Assembly) is restricted under Article 19(3), NOT Article 19(4). Article 19(4) restricts Article 19(1)(c) (Associations/Unions).",
+      "ta": "விருப்பம் B தவறானது, ஏனெனில் உறுப்பு 19(1)(b) (கூடும் சுதந்திரம்) உறுப்பு 19(3)-ன் கீழ் கட்டுப்படுத்தப்படுகிறது, உறுப்பு 19(4)-ன் கீழ் அல்ல. உறுப்பு 19(4) உறுப்பு 19(1)(c)-ஐக் (சங்கங்கள்) கட்டுப்படுத்துகிறது."
+    },
+    "why_not_others": {
+      "A": { "en": "19(1)(a) restriction is in Art 19(2) (Correct).", "ta": "19(1)(a) கட்டுப்பாடு 19(2)-ல் உள்ளது (சரி)." },
+      "B": { "en": "Correct. 19(1)(b) restriction is in Art 19(3), NOT Art 19(4).", "ta": "சரி. 19(1)(b) கட்டுப்பாடு 19(3)-ல் உள்ளது, 19(4)-ல் அல்ல." },
+      "C": { "en": "19(1)(c) restriction is in Art 19(4) (Correct).", "ta": "19(1)(c) கட்டுப்பாடு 19(4)-ல் உள்ளது (சரி)." },
+      "D": { "en": "19(1)(d) restriction is in Art 19(5) (Correct).", "ta": "19(1)(d) கட்டுப்பாடு 19(5)-ல் உள்ளது (சரி)." }
+    },
+    "tnpsc_tip": {
+      "en": "19(1)(a) -> 19(2); 19(1)(b) -> 19(3); 19(1)(c) -> 19(4); 19(1)(d)&(e) -> 19(5); 19(1)(g) -> 19(6).",
+      "ta": "19(1)(a) -> 19(2); 19(1)(b) -> 19(3); 19(1)(c) -> 19(4); 19(1)(d)&(e) -> 19(5); 19(1)(g) -> 19(6)."
+    },
+    "metadata": { "subject": "Polity", "topic": "Fundamental Rights", "type": "Hard", "level": "TNPSC Group 1" }
+  },
+
+  # 6. Multi-Statement / Analytical: Article 20 Three Protections Deep Analysis - Ans: C
+  {
+    "id": "FR_H_006",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "Hard",
+    "question_type": "Multi-Statement",
+    "question": {
+      "en": "Consider the following statements regarding protections under Article 20:\n\n1. The protection against Ex-Post-Facto laws (Art 20(1)) forbids the retrospective imposition of criminal penalties, but does not prevent a reduction in punishment under a later law.\n2. The protection against Double Jeopardy (Art 20(2)) applies to departmental inquiries as well as criminal trials.\n3. The immunity against Self-Incrimination (Art 20(3)) extends to both oral testimony and production of physical evidence like handwriting specimens.\n\nWhich of the statements given above is/are correct?",
+      "ta": "உறுப்பு 20-ன் கீழ் உள்ள பாதுகாப்புகள் பற்றிய பின்வரும் கூற்றுகளை ஆராய்க:\n\n1. முந்தைய தேதியிட்ட சட்டப் பாதுகாப்பு (உறுப்பு 20(1)) முந்தைய தேதியிட்ட குற்றவியல் தண்டனையைத் தடை செய்கிறது, ஆனால் பிந்தைய சட்டத்தின் கீழ் தண்டனையைக் குறைப்பதைத் தடுக்காது.\n2. இரட்டை தண்டனைத் தடை (உறுப்பு 20(2)) துறைசார் விசாரணைகளுக்கும் குற்றவியல் வழக்குகளுக்கும் சமமாகப் பொருந்தும்.\n3. தனக்குத்தானே சாட்சியமளிப்பதற்கு எதிரான பாதுகாப்பு (உறுப்பு 20(3)) வாய்மொழி சாட்சியத்திற்கும் மாதிரிக் கையெழுத்து போன்ற பௌதிக சான்றுகளை வழங்குவதற்கும் நீட்டிக்கப்படுகிறது.\n\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?"
+    },
+    "options": [
+      { "id": "A", "en": "1 and 2 only", "ta": "1 மற்றும் 2 மட்டுமே" },
+      { "id": "B", "en": "2 and 3 only", "ta": "2 மற்றும் 3 மட்டுமே" },
+      { "id": "C", "en": "1 only", "ta": "1 மட்டுமே" },
+      { "id": "D", "en": "1, 2 and 3", "ta": "1, 2 மற்றும் 3" }
+    ],
+    "correct_answer": "C",
+    "explanation": {
+      "en": "Statement 1 is correct (Rattan Lal v. State of Punjab: beneficial retrospective reduction of sentence is constitutional). Statement 2 is INCORRECT (Double Jeopardy applies ONLY to judicial trials, NOT departmental proceedings). Statement 3 is INCORRECT (Self-Incrimination protects against testimonial disclosures ONLY, NOT physical evidence like specimen handwriting - Kathi Kalu Oghad case).",
+      "ta": "கூற்று 1 சரி (ரத்தன் லால் வழக்கு: தண்டனையைக் குறைக்கும் பிந்தைய சட்டம் செல்லுபடியாகும்). கூற்று 2 தவறு (இரட்டை தண்டனை நீதிமன்ற விசாரணைக்கு மட்டுமே பொருந்தும்). கூற்று 3 தவறு (கையெழுத்து போன்ற பௌதிக சான்றுகளுக்கு 20(3) பொருந்தாது - காதி கலு ஓகாட் வழக்கு)."
+    },
+    "why_not_others": {
+      "A": { "en": "Statement 2 is false.", "ta": "கூற்று 2 தவறானது." },
+      "B": { "en": "Statements 2 and 3 are false.", "ta": "கூற்றுகள் 2 மற்றும் 3 தவறானவை." },
+      "C": { "en": "Correct. Statement 1 is true; Statements 2 and 3 are false.", "ta": "சரி. கூற்று 1 மட்டுமே சரியானது; கூற்றுகள் 2 மற்றும் 3 தவறானவை." },
+      "D": { "en": "Statements 2 and 3 are false.", "ta": "கூற்றுகள் 2 மற்றும் 3 தவறானவை." }
+    },
+    "tnpsc_tip": {
+      "en": "Beneficial retrospective reduction of criminal sentence is VALID; Art 20(1) bars enhancement of penalty.",
+      "ta": "குற்றவியல் தண்டனையைக் குறைக்கும் பிந்தைய சட்டம் செல்லுபடியாகும்; உறுப்பு 20(1) தண்டனையை அதிகரிப்பதை மட்டுமே தடுக்கிறது."
+    },
+    "metadata": { "subject": "Polity", "topic": "Fundamental Rights", "type": "Hard", "level": "TNPSC Group 1" }
+  },
+
+  # 7. Case-Law Based: Article 21 Expansion Case Law Synthesis - Ans: A
+  {
+    "id": "FR_H_007",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "Hard",
+    "question_type": "Case-law Based",
+    "question": {
+      "en": "Match List-I (Landmark Judgment) with List-II (Article 21 Expanded Right):\n\nList-I:\na. Olga Tellis v. BMC (1985)\nb. Parmanand Katara v. Union of India (1989)\nc. Unni Krishnan v. State of AP (1993)\nd. K.S. Puttaswamy v. Union of India (2017)\n\nList-II:\n1. Right to Emergency Medical Aid\n2. Right to Privacy\n3. Right to Livelihood\n4. Right to Education (Primary level up to 14 years)\n\nSelect the correct code:",
+      "ta": "பட்டியல்-I (முக்கிய வழக்கு தீர்ப்பு) ஐ பட்டியல்-II (உறுப்பு 21 விரிவாக்கப்பட்ட உரிமை) உடன் பொருத்துக:\n\nபட்டியல்-I:\na. ஒல்கா டெல்லிஸ் எதிர் BMC (1985)\nb. பர்மானந்த் கட்டாரா எதிர் இந்திய யூனியன் (1989)\nc. உன்னிகிருஷ்ணன் எதிர் ஆந்திரப் பிரதேசம் (1993)\nd. K.S. புட்டசுவாமி எதிர் இந்திய யூனியன் (2017)\n\nபட்டியல்-II:\n1. அவசர மருத்துவ உதவி உரிமை\n2. தனிமனித ரகசிய உரிமை (Privacy)\n3. வாழ்வாதார உரிமை (Livelihood)\n4. கல்வி உரிமை (14 வயது வரை)\n\nசரியான குறியீட்டைத் தேர்ந்தெடுக்கவும்:"
+    },
+    "options": [
+      { "id": "A", "en": "a-3, b-1, c-4, d-2", "ta": "a-3, b-1, c-4, d-2" },
+      { "id": "B", "en": "a-1, b-3, c-2, d-4", "ta": "a-1, b-3, c-2, d-4" },
+      { "id": "C", "en": "a-3, b-4, c-1, d-2", "ta": "a-3, b-4, c-1, d-2" },
+      { "id": "D", "en": "a-2, b-1, c-4, d-3", "ta": "a-2, b-1, c-4, d-3" }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "a. Olga Tellis 1985 = Right to Livelihood (3)\nb. Parmanand Katara 1989 = Right to Emergency Medical Aid (1)\nc. Unni Krishnan 1993 = Right to Education up to 14 years (4)\nd. K.S. Puttaswamy 2017 = Right to Privacy (2).",
+      "ta": "a. ஒல்கா டெல்லிஸ் 1985 = வாழ்வாதார உரிமை (3)\nb. பர்மானந்த் கட்டாரா 1989 = அவசர மருத்துவ உதவி உரிமை (1)\nc. உன்னிகிருஷ்ணன் 1993 = 14 வயது வரை கல்வி உரிமை (4)\nd. K.S. புட்டசுவாமி 2017 = ரகசிய உரிமை (2)."
+    },
+    "why_not_others": {
+      "A": { "en": "Correct matching: a-3, b-1, c-4, d-2.", "ta": "சரியான பொருத்தம்: a-3, b-1, c-4, d-2." },
+      "B": { "en": "Incorrect pairing of Olga Tellis and Parmanand Katara.", "ta": "ஒல்கா டெல்லிஸ் மற்றும் பர்மானந்த் கட்டாரா தவறாகப் பொருத்தப்பட்டுள்ளன." },
+      "C": { "en": "Incorrect pairing of Unni Krishnan.", "ta": "உன்னிகிருஷ்ணன் தவறாகப் பொருத்தப்பட்டுள்ளது." },
+      "D": { "en": "Incorrect pairing of Olga Tellis.", "ta": "ஒல்கா டெல்லிஸ் தவறாகப் பொருத்தப்பட்டுள்ளது." }
+    },
+    "tnpsc_tip": {
+      "en": "Art 21 is a reservoir of implied rights expanded through judicial decisions.",
+      "ta": "உறுப்பு 21 என்பது நீதித்துறைத் தீர்ப்புகள் மூலம் விரிவுபடுத்தப்பட்ட உள்ளார்ந்த உரிமைகளின் களஞ்சியமாகும்."
+    },
+    "metadata": { "subject": "Polity", "topic": "Fundamental Rights", "type": "Hard", "level": "TNPSC Group 1" }
+  },
+
+  # 8. High-Level TNPSC Trap: Article 22 Preventive Detention Grounds & Representation - Ans: D
+  {
+    "id": "FR_H_008",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "Hard",
+    "question_type": "High-level TNPSC Trap",
+    "question": {
+      "en": "Consider the following statements regarding Preventive Detention under Article 22:\n\n1. The detenu has the constitutional right to be communicated the grounds of detention as soon as may be.\n2. The detenu has the constitutional right to be afforded the earliest opportunity of making a representation against the order.\n3. The detaining authority is constitutionally bound to disclose every single material fact to the detenu without exception.\n\nWhich of the statements given above are correct?",
+      "ta": "உறுப்பு 22-ன் கீழ் உள்ள தடுப்புக் காவல் பற்றிய பின்வரும் கூற்றுகளை ஆராய்க:\n\n1. காவலில் வைக்கப்பட்டவருக்குக் காவலுக்கான காரணங்கள் விரைவில் தெரிவிக்கப்படும் அரசியலமைப்பு உரிமை உண்டு.\n2. காவலில் வைக்கப்பட்டவருக்கு அக் காவல் உத்தரவுக்கு எதிராக மேல்முறையீட்டு மனு (representation) செய்ய மிக முந்தைய வாய்ப்பு வழங்கப்படும் அரசியலமைப்பு உரிமை உண்டு.\n3. தடுப்புக் காவல் அதிகாரி எந்தவொரு விலக்குமின்றி அனைத்து ஆதார உண்மைகளையும் காவலில் வைக்கப்பட்டவரிடம் வெளிப்படுத்த அரசியலமைப்பு ரீதியாகக் கடமைப்பட்டுள்ளார்.\n\nமேற்கூறிய கூற்றுகளில் எவை சரியானவை?"
+    },
+    "options": [
+      { "id": "A", "en": "1 and 3 only", "ta": "1 மற்றும் 3 மட்டுமே" },
+      { "id": "B", "en": "2 and 3 only", "ta": "2 மற்றும் 3 மட்டுமே" },
+      { "id": "C", "en": "1, 2 and 3", "ta": "1, 2 மற்றும் 3" },
+      { "id": "D", "en": "1 and 2 only", "ta": "1 மற்றும் 2 மட்டுமே" }
+    ],
+    "correct_answer": "D",
+    "explanation": {
+      "en": "Statements 1 and 2 are correct per Art 22(5). Statement 3 is INCORRECT because under Art 22(6), the detaining authority CAN REFUSE to disclose facts which it considers against public interest to disclose.",
+      "ta": "கூற்றுகள் 1 மற்றும் 2 சரி (உறுப்பு 22(5)). கூற்று 3 தவறு, ஏனெனில் உறுப்பு 22(6)-ன் கீழ் பொது நலனுக்கு எதிரான உண்மைகளை வெளிப்படுத்த அதிகாரி மறுக்க முடியும்."
+    },
+    "why_not_others": {
+      "A": { "en": "Statement 3 is false.", "ta": "கூற்று 3 தவறானது." },
+      "B": { "en": "Statement 3 is false.", "ta": "கூற்று 3 தவறானது." },
+      "C": { "en": "Statement 3 is false.", "ta": "கூற்று 3 தவறானது." },
+      "D": { "en": "Correct. Statements 1 and 2 are correct; Statement 3 is false.", "ta": "சரி. கூற்றுகள் 1 மற்றும் 2 சரியானவை; கூற்று 3 தவறானது." }
+    },
+    "tnpsc_tip": {
+      "en": "TRAP: Article 22(6) allows withholding facts if disclosure is against Public Interest.",
+      "ta": "பொறி: உறுப்பு 22(6) பொது நலனுக்கு எதிராக இருந்தால் உண்மைகளை மறைக்க அனுமதிக்கிறது."
+    },
+    "metadata": { "subject": "Polity", "topic": "Fundamental Rights", "type": "Hard", "level": "TNPSC Group 1" }
+  },
+
+  # 9. Multi-Statement / Analytical: Articles 25 to 28 Freedom of Religion Analysis - Ans: C
+  {
+    "id": "FR_H_009",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "Hard",
+    "question_type": "Multi-Statement",
+    "question": {
+      "en": "Which of the following statements is/are correct regarding Freedom of Religion under Articles 25 to 28?\n\n1. Individual freedom under Article 25 is subject to public order, morality, health, and other provisions of Part III.\n2. Denominational freedom under Article 26 is subject to public order, morality, and health, but is NOT subject to other provisions of Part III.\n3. Article 27 bans the levying of both taxes and fees for religious purposes.\n\nSelect the correct code:",
+      "ta": "உறுப்புகள் 25 முதல் 28 வரையிலான மத சுதந்திரம் பற்றிய பின்வரும் கூற்றுகளில் எது/எவை சரியானவை?\n\n1. உறுப்பு 25-ன் கீழ் தனிநபர் சுதந்திரம் பொது ஒழுங்கு, ஒழுக்கம், சுகாதாரம் மற்றும் பகுதி III-ன் பிற விதிகளுக்கு உட்பட்டது.\n2. உறுப்பு 26-ன் கீழ் சமயக் குழு சுதந்திரம் பொது ஒழுங்கு, ஒழுக்கம், சுகாதாரத்திற்கு உட்பட்டது, ஆனால் பகுதி III-ன் பிற விதிகளுக்கு உட்பட்டது அல்ல.\n3. உறுப்பு 27 மத நோக்கங்களுக்காக வரிகள் மற்றும் கட்டணங்கள் இரண்டையும் தடை செய்கிறது.\n\nசரியான குறியீட்டைத் தேர்ந்தெடுக்கவும்:"
+    },
+    "options": [
+      { "id": "A", "en": "1 only", "ta": "1 மட்டுமே" },
+      { "id": "B", "en": "1 and 3 only", "ta": "1 மற்றும் 3 மட்டுமே" },
+      { "id": "C", "en": "1 and 2 only", "ta": "1 மற்றும் 2 மட்டுமே" },
+      { "id": "D", "en": "1, 2 and 3", "ta": "1, 2 மற்றும் 3" }
+    ],
+    "correct_answer": "C",
+    "explanation": {
+      "en": "Statement 1 is correct (Art 25(1) text). Statement 2 is correct (Art 26 text omits 'other provisions of Part III', unlike Art 25). Statement 3 is INCORRECT (Art 27 bans TAXES, but permits FEES).",
+      "ta": "கூற்று 1 சரி (உறுப்பு 25(1) உரை). கூற்று 2 சரி (உறுப்பு 26 உரையில் 'பகுதி III-ன் பிற விதிகள்' என்ற சொல் இல்லை). கூற்று 3 தவறு (உறுப்பு 27 வரிகளைத் தடுக்கிறது, கட்டணங்களை அனுமதிக்கிறது)."
+    },
+    "why_not_others": {
+      "A": { "en": "Statement 2 is also correct.", "ta": "கூற்று 2-ம் சரியானது." },
+      "B": { "en": "Statement 3 is false.", "ta": "கூற்று 3 தவறானது." },
+      "C": { "en": "Correct. Statements 1 and 2 are true; Statement 3 is false.", "ta": "சரி. கூற்றுகள் 1 மற்றும் 2 சரியானவை; கூற்று 3 தவறானது." },
+      "D": { "en": "Statement 3 is false.", "ta": "கூற்று 3 தவறானது." }
+    },
+    "tnpsc_tip": {
+      "en": "TRAP: Art 25 is subject to Part III rights; Art 26 is NOT subject to other Part III rights.",
+      "ta": "பொறி: உறுப்பு 25 பகுதி III உரிமைகளுக்கு உட்பட்டது; உறுப்பு 26 பகுதி III-ன் பிற உரிமைகளுக்கு உட்பட்டது அல்ல."
+    },
+    "metadata": { "subject": "Polity", "topic": "Fundamental Rights", "type": "Hard", "level": "TNPSC Group 1" }
+  },
+
+  # 10. Constitutional Application: Writs Distinction Matrix - Ans: B
+  {
+    "id": "FR_H_010",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "Hard",
+    "question_type": "Constitutional Application",
+    "question": {
+      "en": "Match List-I (Writ) with List-II (Specific Functional Scope / Exclusion):\n\nList-I:\na. Habeas Corpus\nb. Mandamus\nc. Prohibition\nd. Quo Warranto\n\nList-II:\n1. Cannot be issued against President or State Governors\n2. Enforceable against both Public and Private entities\n3. Locus Standi is relaxed for any interested person\n4. Preventative only, issued to lower court while case is pending\n\nSelect the correct code:",
+      "ta": "பட்டியல்-I (பேராணை) ஐ பட்டியல்-II (குறிப்பிட்ட செயல்பாட்டு எல்லை / விலக்கு) உடன் பொருத்துக:\n\nபட்டியல்-I:\na. Habeas Corpus\nb. Mandamus\nc. Prohibition\nd. Quo Warranto\n\nபட்டியல்-II:\n1. குடியரசுத் தலைவர் அல்லது ஆளுநர்களுக்கு எதிராகப் பிறப்பிக்க முடியாது\n2. அரசு மற்றும் தனியார் அமைப்புகள் இருவருக்குமே எதிராக அமல்படுத்தக்கூடியது\n3. எந்தவொரு ஆர்வமுள்ள நபருக்கும் மனு உரிமை (Locus Standi) தளர்த்தப்பட்டது\n4. தடுப்பு நடவடிக்கை மட்டுமே, வழக்கு நிலுவையில் இருக்கும் போது கீழ் நீதிமன்றத்திற்கு வழங்கப்படுவது\n\nசரியான குறியீட்டைத் தேர்ந்தெடுக்கவும்:"
+    },
+    "options": [
+      { "id": "A", "en": "a-1, b-2, c-4, d-3", "ta": "a-1, b-2, c-4, d-3" },
+      { "id": "B", "en": "a-2, b-1, c-4, d-3", "ta": "a-2, b-1, c-4, d-3" },
+      { "id": "C", "en": "a-2, b-4, c-1, d-3", "ta": "a-2, b-4, c-1, d-3" },
+      { "id": "D", "en": "a-3, b-1, c-4, d-2", "ta": "a-3, b-1, c-4, d-2" }
+    ],
+    "correct_answer": "B",
+    "explanation": {
+      "en": "a. Habeas Corpus = Public + Private entities (2)\nb. Mandamus = Not against President/Governors (1)\nc. Prohibition = Preventative to lower court (4)\nd. Quo Warranto = Locus Standi relaxed (3).",
+      "ta": "a. Habeas Corpus = அரசு + தனியார் அமைப்புகள் (2)\nb. Mandamus = குடியரசுத் தலைவர்/ஆளுநர்களுக்கு எதிராக முடியாது (1)\nc. Prohibition = கீழ் நீதிமன்றத்திற்குத் தடுப்பு நடவடிக்கை (4)\nd. Quo Warranto = மனு உரிமை தளர்த்தப்பட்டது (3)."
+    },
+    "why_not_others": {
+      "A": { "en": "Incorrect pairing of Habeas Corpus and Mandamus.", "ta": "Habeas Corpus மற்றும் Mandamus தவறாகப் பொருத்தப்பட்டுள்ளன." },
+      "B": { "en": "Correct matching: a-2, b-1, c-4, d-3.", "ta": "சரியான பொருத்தம்: a-2, b-1, c-4, d-3." },
+      "C": { "en": "Incorrect pairing of Mandamus and Prohibition.", "ta": "Mandamus மற்றும் Prohibition தவறாகப் பொருத்தப்பட்டுள்ளன." },
+      "D": { "en": "Incorrect pairing of Habeas Corpus and Quo Warranto.", "ta": "Habeas Corpus மற்றும் Quo Warranto தவறாகப் பொருத்தப்பட்டுள்ளன." }
+    },
+    "tnpsc_tip": {
+      "en": "Habeas Corpus = Public+Private; Mandamus = Excludes President/Gov; Prohibition = Preventative; Quo Warranto = Relaxed locus standi.",
+      "ta": "Habeas Corpus = அரசு+தனியார்; Mandamus = குடியரசுத் தலைவர் நீக்கம்; Prohibition = தடுப்பு; Quo Warranto = தளர்த்தப்பட்ட மனு உரிமை."
+    },
+    "metadata": { "subject": "Polity", "topic": "Fundamental Rights", "type": "Hard", "level": "TNPSC Group 1" }
+  },
+
+  # 11. Multi-Statement / Analytical: Article 31, 31A, 31B, 31C Development - Ans: A
+  {
+    "id": "FR_H_011",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "Hard",
+    "question_type": "Multi-Statement",
+    "question": {
+      "en": "Consider the following statements regarding Articles 31A, 31B, and 31C:\n\n1. Article 31A saves 5 categories of agrarian reform laws from challenge under Articles 14 and 19.\n2. Article 31B protects laws placed in the Ninth Schedule from fundamental rights challenge.\n3. The second part of Article 31C ('no law containing a declaration shall be questioned in any court') was declared UNCONSTITUTIONAL in Kesavananda Bharati case (1973).\n\nWhich of the statements given above is/are correct?",
+      "ta": "உறுப்புகள் 31A, 31B, மற்றும் 31C பற்றிய பின்வரும் கூற்றுகளை ஆராய்க:\n\n1. உறுப்பு 31A 5 வகை நிலச்சீர்திருத்தச் சட்டங்களை உறுப்புகள் 14 மற்றும் 19 சவால்களிலிருந்து காப்பாற்றுகிறது.\n2. உறுப்பு 31B ஒன்பதாவது அட்டவணையில் வைக்கப்பட்ட சட்டங்களை அடிப்படை உரிமை சவால்களிலிருந்து பாதுகாக்கிறது.\n3. உறுப்பு 31C-ன் இரண்டாவது பகுதி ('அறிவிப்பைக் கொண்ட எந்தச் சட்டத்தையும் நீதிமன்றத்தில் வினவ முடியாது') கேசவானந்த பாரதி வழக்கில் (1973) அரசியலமைப்புக்கு முரணானது என அறிவிக்கப்பட்டது.\n\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?"
+    },
+    "options": [
+      { "id": "A", "en": "1, 2 and 3", "ta": "1, 2 மற்றும் 3" },
+      { "id": "B", "en": "1 and 2 only", "ta": "1 மற்றும் 2 மட்டுமே" },
+      { "id": "C", "en": "2 and 3 only", "ta": "2 மற்றும் 3 மட்டுமே" },
+      { "id": "D", "en": "1 and 3 only", "ta": "1 மற்றும் 3 மட்டுமே" }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "All 3 statements are correct. Art 31A saves 5 agrarian reform categories. Art 31B shields 9th Schedule laws. In Kesavananda Bharati (1973), SC struck down the second part of Art 31C because it excluded judicial review, which is a basic feature.",
+      "ta": "3 கூற்றுகளுமே சரி. உறுப்பு 31A 5 நிலச்சீர்திருத்தப் பிரிவுகளைக் காப்பாற்றுகிறது. உறுப்பு 31B 9வது அட்டவணையைப் பாதுகாக்கிறது. கேசவானந்த பாரதியில் (1973) உறுப்பு 31C-ன் 2வது பகுதியை SC ரத்து செய்தது, ஏனெனில் அது நீதித்துறை ஆய்வைத் தடுத்தது."
+    },
+    "why_not_others": {
+      "A": { "en": "Correct. All three statements are constitutionally true.", "ta": "சரி. மூன்று கூற்றுகளுமே அரசியலமைப்பு ரீதியாக உண்மையானவை." },
+      "B": { "en": "Statement 3 is also correct.", "ta": "கூற்று 3-ம் சரியானது." },
+      "C": { "en": "Statement 1 is also correct.", "ta": "கூற்று 1-ம் சரியானது." },
+      "D": { "en": "Statement 2 is also correct.", "ta": "கூற்று 2-ம் சரியானது." }
+    },
+    "tnpsc_tip": {
+      "en": "Kesavananda (1973) struck down 2nd part of Art 31C because Judicial Review cannot be excluded by legislation.",
+      "ta": "கேசவானந்த (1973) உறுப்பு 31C-ன் 2வது பகுதியை ரத்து செய்தது, ஏனெனில் சட்டமியற்றலால் நீதித்துறை ஆய்வைத் தடுக்க முடியாது."
+    },
+    "metadata": { "subject": "Polity", "topic": "Fundamental Rights", "type": "Hard", "level": "TNPSC Group 1" }
+  },
+
+  # 12. Advanced Conceptual: Articles 33, 34, 35 Parliamentary Powers - Ans: D
+  {
+    "id": "FR_H_012",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "Hard",
+    "question_type": "Advanced Conceptual",
+    "question": {
+      "en": "Consider the following statements regarding Parliamentary exclusivity under Article 35:\n\n1. Parliament ALONE has the power to prescribe residence as a condition for public employment under Article 16(3).\n2. Parliament ALONE can empower lower courts (other than Supreme Court and High Courts) to issue writs under Article 32(3).\n3. Parliament ALONE can prescribe punishment for offences under Article 17 (Untouchability) and Article 23 (Forced Labour).\n\nWhich of the statements given above is/are correct?",
+      "ta": "உறுப்பு 35-ன் கீழ் நாடாளுமன்ற பிரத்யேக அதிகாரம் பற்றிய பின்வரும் கூற்றுகளை ஆராய்க:\n\n1. உறுப்பு 16(3)-ன் கீழ் பொது வேலைவாய்ப்பிற்கு வசிப்பிடத்தை ஒரு நிபந்தனையாக நிர்ணயிக்க நாடாளுமன்றத்திற்கு மட்டுமே அதிகாரம் உண்டு.\n2. உறுப்பு 32(3)-ன் கீழ் கீழ் நீதிமன்றங்களுக்கு (உச்ச & உயர் நீதிமன்றங்கள் தவிர) மனுக்களைப் பிறப்பிக்க அதிகாரமளிக்க நாடாளுமன்றத்திற்கு மட்டுமே அதிகாரம் உண்டு.\n3. உறுப்பு 17 (தீண்டாமை) மற்றும் உறுப்பு 23 (கட்டாய வேலை) குற்றங்களுக்கான தண்டனைகளை நிர்ணயிக்க நாடாளுமன்றத்திற்கு மட்டுமே அதிகாரம் உண்டு.\n\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?"
+    },
+    "options": [
+      { "id": "A", "en": "1 and 2 only", "ta": "1 மற்றும் 2 மட்டுமே" },
+      { "id": "B", "en": "2 and 3 only", "ta": "2 மற்றும் 3 மட்டுமே" },
+      { "id": "C", "en": "1 and 3 only", "ta": "1 மற்றும் 3 மட்டுமே" },
+      { "id": "D", "en": "1, 2 and 3", "ta": "1, 2 மற்றும் 3" }
+    ],
+    "correct_answer": "D",
+    "explanation": {
+      "en": "All 3 statements are correct. Article 35 explicitly reserves legislative powers for Arts 16(3), 32(3), 33, 34, 17, and 23 EXCLUSIVELY to Parliament so that FR implementation and penal laws remain uniform throughout India.",
+      "ta": "3 கூற்றுகளுமே சரி. உறுப்பு 35 உறுப்புகள் 16(3), 32(3), 33, 34, 17, 23 ஆகியவற்றுக்கான சட்ட அதிகாரங்களை நாடாளுமன்றத்திற்கு மட்டுமே ஒதுக்குகிறது, இதனால் FR அமலாக்கமும் தண்டனைச் சட்டங்களும் இந்தியா முழுவதும் சீராக இருக்கும்."
+    },
+    "why_not_others": {
+      "A": { "en": "Statement 3 is also correct.", "ta": "கூற்று 3-ம் சரியானது." },
+      "B": { "en": "Statement 1 is also correct.", "ta": "கூற்று 1-ம் சரியானது." },
+      "C": { "en": "Statement 2 is also correct.", "ta": "கூற்று 2-ம் சரியானது." },
+      "D": { "en": "Correct. All 3 statements describe Article 35 exclusive parliamentary powers.", "ta": "சரி. 3 கூற்றுகளுமே உறுப்பு 35-ன் நாடாளுமன்ற பிரத்யேக அதிகாரங்களை விவரிக்கின்றன." }
+    },
+    "tnpsc_tip": {
+      "en": "Article 35 prevents State Legislatures from making divergent laws on core FR penal matters.",
+      "ta": "உறுப்பு 35 முதன்மையான FR தண்டனை விஷயங்களில் மாநில சட்டமன்றங்கள் வேறுபட்ட சட்டங்களை இயற்றுவதைத் தடுக்கிறது."
+    },
+    "metadata": { "subject": "Polity", "topic": "Fundamental Rights", "type": "Hard", "level": "TNPSC Group 1" }
+  },
+
+  # 13. Amendment / Basic Structure: Minerva Mills & 42nd CAA Invalidations - Ans: C
+  {
+    "id": "FR_H_013",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "Hard",
+    "question_type": "Amendment / Basic Structure",
+    "question": {
+      "en": "In Minerva Mills v. Union of India (1980), which two specific clauses inserted by the 42nd Constitutional Amendment Act, 1976 were struck down by the Supreme Court as violating the Basic Structure?",
+      "ta": "மினர்வா மில்ஸ் எதிர் இந்திய யூனியன் (1980) வழக்கில், 42வது அரசியலமைப்பு திருத்தச் சட்டம் 1976 மூலம் சேர்க்கப்பட்ட எந்த இரண்டு குறிப்பிட்ட பிரிவுகளை அடிப்படை கட்டமைப்பை மீறுவதாகக் கூறி உச்ச நீதிமன்றம் ரத்து செய்தது?"
+    },
+    "options": [
+      { "id": "A", "en": "Article 31A and Article 31B", "ta": "உறுப்பு 31A மற்றும் உறுப்பு 31B" },
+      { "id": "B", "en": "Article 15(4) and Article 16(4)", "ta": "உறுப்பு 15(4) மற்றும் உறுப்பு 16(4)" },
+      { "id": "C", "en": "Clauses (4) and (5) of Article 368 (which excluded judicial review of constitutional amendments and granted unlimited amending power)", "ta": "உறுப்பு 368-ன் பிரிவுகள் (4) மற்றும் (5) (இவை அரசியலமைப்பு திருத்தங்களின் நீதித்துறை ஆய்வைத் தடுத்து வரம்பற்ற திருத்தும் அதிகாரத்தை வழங்கின)" },
+      { "id": "D", "en": "Article 21A and Article 51A", "ta": "உறுப்பு 21A மற்றும் உறுப்பு 51A" }
+    ],
+    "correct_answer": "C",
+    "explanation": {
+      "en": "In Minerva Mills (1980), SC struck down Clauses (4) and (5) of Article 368 inserted by 42nd CAA 1976 because limited amending power is itself a basic feature, and judicial review cannot be excluded.",
+      "ta": "மினர்வா மில்ஸ் (1980) வழக்கில், 42வது திருத்தம் 1976 மூலம் சேர்க்கப்பட்ட உறுப்பு 368-ன் பிரிவுகள் (4) மற்றும் (5)-ஐ SC ரத்து செய்தது, ஏனெனில் வரம்பிற்குட்பட்ட திருத்தும் அதிகாரமே ஒரு அடிப்படை அம்சமாகும்."
+    },
+    "why_not_others": {
+      "A": { "en": "Arts 31A and 31B were not struck down in Minerva Mills.", "ta": "உறுப்புகள் 31A மற்றும் 31B மினர்வா மில்ஸில் ரத்து செய்யப்படவில்லை." },
+      "B": { "en": "Reservation clauses were not struck down.", "ta": "இடஒதுக்கீட்டுப் பிரிவுகள் ரத்து செய்யப்படவில்லை." },
+      "C": { "en": "Correct. Art 368(4) & (5) were struck down in Minerva Mills 1980.", "ta": "சரி. உறுப்பு 368(4) & (5) மினர்வா மில்ஸ் 1980-ல் ரத்து செய்யப்பட்டன." },
+      "D": { "en": "Art 21A and 51A are valid constitutional provisions.", "ta": "உறுப்புகள் 21A மற்றும் 51A செல்லுபடியாகும் அரசியலமைப்பு விதிகள்." }
+    },
+    "tnpsc_tip": {
+      "en": "Minerva Mills 1980: 1. Struck down Art 368(4)&(5); 2. Affirmed FR-DPSP harmonious balance as Basic Structure.",
+      "ta": "மினர்வா மில்ஸ் 1980: 1. உறுப்பு 368(4)&(5) ரத்து; 2. FR-DPSP நல்லிணக்கச் சமநிலை அடிப்படை கட்டமைப்பு என உறுதி."
+    },
+    "metadata": { "subject": "Polity", "topic": "Fundamental Rights", "type": "Hard", "level": "TNPSC Group 1" }
+  },
+
+  # 14. High-Level TNPSC Trap: Article 29(2) Admission Grounds vs Sex - Ans: B
+  {
+    "id": "FR_H_014",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "Hard",
+    "question_type": "High-level TNPSC Trap",
+    "question": {
+      "en": "A state-aided women's college denies admission to male applicants. Is this denial of admission a violation of Article 29(2)?",
+      "ta": "அரசு உதவிபெறும் மகளிர் கல்லூரி ஒன்று ஆண் விண்ணப்பதாரர்களுக்குச் சேர்க்கை மறுக்கிறது. இந்தச் சேர்க்கை மறுப்பு உறுப்பு 29(2)-ஐ மீறுவதாகுமா?"
+    },
+    "options": [
+      { "id": "A", "en": "Yes, because Article 29(2) prohibits discrimination on the ground of Sex.", "ta": "ஆம், ஏனெனில் உறுப்பு 29(2) பாலின அடிப்படையில் பாகுபாடு காட்டுவதைத் தடுக்கிறது." },
+      { "id": "B", "en": "No, because Article 29(2) prohibits denial of admission ONLY on grounds of Religion, Race, Caste, Language — 'Sex' is NOT a prohibited ground under Article 29(2).", "ta": "இல்லை, ஏனெனில் உறுப்பு 29(2) மதம், இனம், சாதி, மொழி ஆகிய 4 அடிப்படைகளில் மட்டுமே சேர்க்கை மறுப்பதைத் தடுக்கிறது — 'பாலினம்' (Sex) உறுப்பு 29(2)-ல் தடைசெய்யப்பட்ட அடிப்படை அல்ல." },
+      { "id": "C", "en": "Yes, because all educational institutions must admit 50% males.", "ta": "ஆம், ஏனெனில் அனைத்துக் கல்வி நிறுவனங்களும் 50% ஆண்களைச் சேர்க்க வேண்டும்." },
+      { "id": "D", "en": "No, but only if the college is located in a rural village.", "ta": "இல்லை, ஆனால் அக்கல்லூரி கிராமப்புறத்தில் அமைந்திருந்தால் மட்டுமே." }
+    ],
+    "correct_answer": "B",
+    "explanation": {
+      "en": "University of Madras v. Shantha Bai (1951): Article 29(2) lists 4 grounds only: Religion, Race, Caste, Language. 'Sex' is omitted from Art 29(2). Hence, establishing women's colleges or men's colleges does not violate Art 29(2).",
+      "ta": "சாந்தா பாய் வழக்கு (1951): உறுப்பு 29(2) 4 அடிப்படைகளை மட்டுமே பட்டியலிடுகிறது: மதம், இனம், சாதி, மொழி. 'பாலினம்' 29(2)-ல் இல்லை. எனவே, மகளிர் கல்லூரி ஆண்களுக்குச் சேர்க்கை மறுப்பது 29(2)-ஐ மீறாது."
+    },
+    "why_not_others": {
+      "A": { "en": "Incorrect. 'Sex' is NOT listed in Article 29(2).", "ta": "தவறு. 'பாலினம்' உறுப்பு 29(2)-ல் பட்டியலிடப்படவில்லை." },
+      "B": { "en": "Correct. Art 29(2) omits 'Sex', so single-sex educational institutions are valid under Art 29(2).", "ta": "சரி. உறுப்பு 29(2) 'பாலினத்தை' விடுவிக்கிறது, எனவே ஒற்றைப் பாலினக் கல்லூரிகள் 29(2)-ன் கீழ் செல்லுபடியாகும்." },
+      "C": { "en": "No such 50% male quota exists.", "ta": "அத்தகைய 50% ஆண் ஒதுக்கீடு எதுவும் இல்லை." },
+      "D": { "en": "College location is irrelevant.", "ta": "கல்லூரி இடம் தொடர்பற்றது." }
+    },
+    "tnpsc_tip": {
+      "en": "TRAP: Art 15(1) includes 'Sex'; Art 29(2) OMITS 'Sex' (grounds are Religion, Race, Caste, Language only).",
+      "ta": "பொறி: உறுப்பு 15(1) 'பாலினத்தை' உள்ளடக்கும்; உறுப்பு 29(2) 'பாலினத்தை' விடுவிக்கிறது (அடிப்படைகள் மதம், இனம், சாதி, மொழி மட்டுமே)."
+    },
+    "metadata": { "subject": "Polity", "topic": "Fundamental Rights", "type": "Hard", "level": "TNPSC Group 1" }
+  },
+
+  # 15. Advanced Conceptual: FR vs DPSP Conflict Evolution - Ans: D
+  {
+    "id": "FR_H_015",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "Hard",
+    "question_type": "Advanced Conceptual",
+    "question": {
+      "en": "Consider the following statements regarding the evolution of primacy between Fundamental Rights and Directive Principles:\n\n1. In Champakam Dorairajan (1951), Supreme Court ruled that Fundamental Rights prevail over Directive Principles in case of conflict.\n2. The 25th CAA 1971 introduced Article 31C giving primacy to DPSP Articles 39(b) and 39(c) over Fundamental Rights Articles 14 and 19.\n3. The 42nd CAA 1976 attempted to give primacy to ALL Directive Principles over Articles 14 and 19, but this extension was struck down in Minerva Mills (1980).\n\nWhich of the statements given above are correct?",
+      "ta": "அடிப்படை உரிமைகள் மற்றும் அரசு நெறிமுறைக் கோட்பாடுகளுக்கு இடையேயான முதன்மை நிலையின் வளர்ச்சி பற்றிய பின்வரும் கூற்றுகளை ஆராய்க:\n\n1. செம்பகம் துரைராஜன் (1951) வழக்கில் மோதல் ஏற்படும் போது DPSP-ஐ விட அடிப்படை உரிமைகளே மேலோங்கும் என உச்ச நீதிமன்றம் தீர்ப்பளித்தது.\n2. 25வது திருத்தம் 1971 உறுப்பு 31C-ஐ அறிமுகப்படுத்தி அடிப்படை உரிமைகள் 14 மற்றும் 19-ஐ விட DPSP உறுப்புகள் 39(b) மற்றும் 39(c)-க்கு முதன்மை அளித்தது.\n3. 42வது திருத்தம் 1976 அனைத்து DPSP-களுக்கும் உறுப்புகள் 14 மற்றும் 19-ஐ விட முதன்மை அளிக்க முயன்றது, ஆனால் இந்த விரிவாக்கம் மினர்வா மில்ஸில் (1980) ரத்து செய்யப்பட்டது.\n\nமேற்கூறிய கூற்றுகளில் எவை சரியானவை?"
+    },
+    "options": [
+      { "id": "A", "en": "1 and 2 only", "ta": "1 மற்றும் 2 மட்டுமே" },
+      { "id": "B", "en": "2 and 3 only", "ta": "2 மற்றும் 3 மட்டுமே" },
+      { "id": "C", "en": "1 and 3 only", "ta": "1 மற்றும் 3 மட்டுமே" },
+      { "id": "D", "en": "1, 2 and 3", "ta": "1, 2 மற்றும் 3" }
+    ],
+    "correct_answer": "D",
+    "explanation": {
+      "en": "All 3 statements are correct. Champakam 1951 gave primacy to FRs. 25th CAA 1971 gave 39(b)&(c) priority over Arts 14 & 19 via Art 31C. 42nd CAA extended Art 31C to ALL DPSPs, which Minerva Mills 1980 struck down, restoring Art 31C to 39(b)&(c) only.",
+      "ta": "3 கூற்றுகளுமே சரி. செம்பகம் 1951 FRs-க்கு முதன்மை அளித்தது. 25வது திருத்தம் 39(b)&(c)-க்கு முதன்மை அளித்தது. 42வது திருத்தம் அனைத்து DPSP-களுக்கும் விரிவாக்கியதை மினர்வா மில்ஸ் 1980 ரத்து செய்தது."
+    },
+    "why_not_others": {
+      "A": { "en": "Statement 3 is also correct.", "ta": "கூற்று 3-ம் சரியானது." },
+      "B": { "en": "Statement 1 is also correct.", "ta": "கூற்று 1-ம் சரியானது." },
+      "C": { "en": "Statement 2 is also correct.", "ta": "கூற்று 2-ம் சரியானது." },
+      "D": { "en": "Correct. All 3 statements describe the authentic constitutional history of FR vs DPSP primacy.", "ta": "சரி. 3 கூற்றுகளுமே FR vs DPSP முதன்மை நிலையின் உண்மையான அரசியலமைப்பு வரலாற்றை விவரிக்கின்றன." }
+    },
+    "tnpsc_tip": {
+      "en": "Present position: Only DPSP Articles 39(b) and 39(c) enjoy priority over FR Articles 14 and 19 via Art 31C.",
+      "ta": "தற்போதைய நிலை: DPSP உறுப்புகள் 39(b) மற்றும் 39(c) மட்டுமே உறுப்பு 31C மூலம் FR உறுப்புகள் 14 மற்றும் 19-ஐ விட முன்னுரிமை பெறுகின்றன."
+    },
+    "metadata": { "subject": "Polity", "topic": "Fundamental Rights", "type": "Hard", "level": "TNPSC Group 1" }
+  },
+
+  # Rest of 35 Hard MCQs building complete set up to FR_H_050
+  # 16. Case-Law Based: Maneka Gandhi Passport Impounding Scope - Ans: B
+  {
+    "id": "FR_H_016",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "Hard",
+    "question_type": "Case-law Based",
+    "question": {
+      "en": "In Maneka Gandhi v. Union of India (1978), why did the Supreme Court invalidate the impounding of Maneka Gandhi's passport by the Regional Passport Officer?",
+      "ta": "மேனகா காந்தி எதிர் இந்திய யூனியன் (1978) வழக்கில், மண்டல பாஸ்போர்ட் அதிகாரியால் மேனகா காந்தியின் பாஸ்போர்ட் பறிமுதல் செய்யப்பட்டதை உச்ச நீதிமன்றம் ஏன் செல்லாததாக்கியது?"
+    },
+    "options": [
+      { "id": "A", "en": "Because passports cannot be impounded under any law in India.", "ta": "ஏனெனில் இந்தியாவில் எந்தச் சட்டத்தின் கீழும் பாஸ்போர்ட்டை பறிமுதல் செய்ய முடியாது என்பதால்." },
+      { "id": "B", "en": "Because the procedure under the Passports Act 1967 did not afford an opportunity of being heard (violating Audi Alteram Partem / Natural Justice), making it arbitrary under Article 14 and unreasonable under Article 21.", "ta": "ஏனெனில் பாஸ்போர்ட் சட்டம் 1967-ன் கீழ் உள்ள நடைமுறை விசாரணைக்கான வாய்ப்பை வழங்கவில்லை (இயற்கை நீதி / Audi Alteram Partem மீறல்), இது உறுப்பு 14-ன் கீழ் தன்னிச்சையானதாகவும் உறுப்பு 21-ன் கீழ் நியாயமற்றதாகவும் அமைந்தது." },
+      { "id": "C", "en": "Because passport issuance is a DPSP under Article 51.", "ta": "ஏனெனில் பாஸ்போர்ட் வழங்குவது உறுப்பு 51-ன் கீழ் உள்ள DPSP என்பதால்." },
+      { "id": "D", "en": "Because only the Supreme Court can impound passports.", "ta": "ஏனெனில் உச்ச நீதிமன்றம் மட்டுமே பாஸ்போர்ட்டை பறிமுதல் செய்ய முடியும் என்பதால்." }
+    ],
+    "correct_answer": "B",
+    "explanation": {
+      "en": "In Maneka Gandhi (1978), SC held that 'procedure established by law' under Art 21 must comply with Principles of Natural Justice (Audi Alteram Partem). Denial of hearing rendered the impounding order arbitrary and invalid.",
+      "ta": "மேனகா காந்தி (1978) வழக்கில், உறுப்பு 21-ன் கீழ் 'சட்டத்தால் நிறுவப்பட்ட நடைமுறை' இயற்கை நீதி தத்துவங்களுக்குக் (Audi Alteram Partem) கீழ்ப்படிய வேண்டும் என SC தீர்ப்பளித்தது. விசாரணை மறுப்பு உத்தரவைச் செல்லாததாக்கியது."
+    },
+    "why_not_others": {
+      "A": { "en": "Passports CAN be impounded under valid fair procedure.", "ta": "நியாயமான நடைமுறையின் கீழ் பாஸ்போர்ட்டைப் பறிமுதல் செய்ய முடியும்." },
+      "B": { "en": "Correct. Audi Alteram Partem violation rendered procedure unjust and unfair.", "ta": "சரி. Audi Alteram Partem மீறல் நடைமுறையை நியாயமற்றதாக்கியது." },
+      "C": { "en": "Passport is not a DPSP under Art 51.", "ta": "பாஸ்போர்ட் உறுப்பு 51-ன் கீழ் DPSP அல்ல." },
+      "D": { "en": "Executive officers can impound passports following fair procedure.", "ta": "நியாயமான நடைமுறையைப் பின்பற்றி நிர்வாக அதிகாரிகள் பாஸ்போர்ட்டைப் பறிமுதல் செய்ய முடியும்." }
+    },
+    "tnpsc_tip": {
+      "en": "Maneka Gandhi (1978): Principles of Natural Justice (Audi Alteram Partem) are built into Article 21.",
+      "ta": "மேனகா காந்தி (1978): இயற்கை நீதி தத்துவங்கள் (Audi Alteram Partem) உறுப்பு 21-க்குள் கட்டமைக்கப்பட்டுள்ளன."
+    },
+    "metadata": { "subject": "Polity", "topic": "Fundamental Rights", "type": "Hard", "level": "TNPSC Group 1" }
+  },
+
+  # 17. Constitutional Application: Article 22(1) Lawyer Right & Legal Aid (Art 39A) - Ans: A
+  {
+    "id": "FR_H_017",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "Hard",
+    "question_type": "Constitutional Application",
+    "question": {
+      "en": "In Khatri v. State of Bihar (1981) and Hussainara Khatoon (1979), how did the Supreme Court connect Article 21 and Article 39A with Article 22(1) regarding indigent accused persons?",
+      "ta": "காத்ரி எதிர் பீகார் மாநிலம் (1981) மற்றும் ஹுசைனாரா கத்தூன் (1979) வழக்குகளில், ஏழை பிரதிவாதிகள் தொடர்பாக உறுப்பு 21 மற்றும் உறுப்பு 39A-ஐ உறுப்பு 22(1)-டன் உச்ச நீதிமன்றம் எவ்வாறு இணைத்தது?"
+    },
+    "options": [
+      { "id": "A", "en": "It declared that the Right to Free Legal Aid for poor accused persons at State expense is a Fundamental Right under Article 21, reinforcing Article 22(1) and Article 39A.", "ta": "அரசுச் செலவில் ஏழை பிரதிவாதிகளுக்கு இலவசச் சட்ட உதவி பெறும் உரிமை (Free Legal Aid) உறுப்பு 21-ன் கீழ் ஒரு அடிப்படை உரிமை என அறிவித்தது, இது உறுப்பு 22(1) மற்றும் உறுப்பு 39A-ஐ வலுப்படுத்துகிறது." },
+      { "id": "B", "en": "It held that legal aid is available only to taxpayers.", "ta": "சட்ட உதவி வரி செலுத்துவோருக்கு மட்டுமே கிடைக்கும் எனத் தீர்ப்பளித்தது." },
+      { "id": "C", "en": "It abolished the right of accused persons to engage lawyers.", "ta": "பிரதிவாதிகள் வழக்கறிஞர்களை அமர்த்தும் உரிமையை ஒழித்தது." },
+      { "id": "D", "en": "It held that free legal aid applies only in civil property suits.", "ta": "இலவசச் சட்ட உதவி சிவில் சொத்து வழக்குகளுக்கு மட்டுமே பொருந்தும் எனத் தீர்ப்பளித்தது." }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "In Hussainara Khatoon & Khatri cases, SC held that Right to Free Legal Aid is an essential ingredient of 'reasonable, fair and just' procedure under Art 21, operationalizing DPSP Art 39A and Art 22(1).",
+      "ta": "ஹுசைனாரா கத்தூன் & காத்ரி வழக்குகளில், இலவசச் சட்ட உதவி உரிமை உறுப்பு 21-ன் கீழ் நியாயமான நடைமுறையின் அத்தியாவசிய அங்கம் என SC தீர்ப்பளித்து DPSP உறுப்பு 39A & 22(1)-ஐச் செயல்பட வைத்தது."
+    },
+    "why_not_others": {
+      "A": { "en": "Correct. Free Legal Aid is a Fundamental Right under Art 21 for indigent accused.", "ta": "சரி. ஏழைக் குற்றஞ்சாட்டப்பட்டோருக்கு இலவசச் சட்ட உதவி உறுப்பு 21-ன் கீழ் அடிப்படை உரிமை." },
+      "B": { "en": "Legal aid is specifically intended for indigent/poor accused.", "ta": "சட்ட உதவி குறிப்பாக ஏழைக் குற்றஞ்சாட்டப்பட்டோருக்கானது." },
+      "C": { "en": "Right to consult a lawyer is protected under Art 22(1).", "ta": "வழக்கறிஞரைக் கலந்தாலோசிக்கும் உரிமை உறுப்பு 22(1)-ல் பாதுகாக்கப்படுகிறது." },
+      "D": { "en": "Free legal aid applies critically to criminal trials involving deprivation of liberty.", "ta": "இலவசச் சட்ட உதவி சுதந்திரத்தைப் பறிக்கும் குற்றவியல் வழக்குகளுக்கு முக்கியமாகப் பொருந்தும்." }
+    },
+    "tnpsc_tip": {
+      "en": "Hussainara Khatoon (1979) = Right to Speed Trial & Free Legal Aid under Article 21.",
+      "ta": "ஹுசைனாரா கத்தூன் (1979) = உறுப்பு 21-ன் கீழ் விரைவு விசாரணை & இலவசச் சட்ட உதவி உரிமை."
+    },
+    "metadata": { "subject": "Polity", "topic": "Fundamental Rights", "type": "Hard", "level": "TNPSC Group 1" }
+  },
+
+  # 18. Multi-Statement / Analytical: Minority Educational Institutions Rights & Limits - Ans: C
+  {
+    "id": "FR_H_018",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "Hard",
+    "question_type": "Multi-Statement",
+    "question": {
+      "en": "Consider the following statements regarding minority educational institutions under Article 30:\n\n1. Minority educational institutions have the absolute right to admit ONLY students belonging to their own minority community.\n2. If a minority educational institution receives financial aid from the State, it cannot deny admission to any citizen on grounds ONLY of religion, race, caste, language (Art 29(2)).\n3. The State can enforce regulatory standards of education, teacher qualifications, and syllabus on minority institutions receiving State aid.\n\nWhich of the statements given above are correct?",
+      "ta": "உறுப்பு 30-ன் கீழ் உள்ள சிறுபான்மை கல்வி நிறுவனங்கள் பற்றிய பின்வரும் கூற்றுகளை ஆராய்க:\n\n1. சிறுபான்மை கல்வி நிறுவனங்கள் தங்கள் சொந்த சிறுபான்மை சமூகத்தைச் சேர்ந்த மாணவர்களை மட்டுமே சேர்க்கும் பூரண உரிமை கொண்டுள்ளன.\n2. ஒரு சிறுபான்மை கல்வி நிறுவனம் அரசிடமிருந்து நிதியுதவி பெற்றால், அது மதம், இனம், சாதி, மொழி ஆகியவற்றின் அடிப்படையில் மட்டுமே எந்தவொரு குடிமகனுக்கும் சேர்க்கை மறுக்க முடியாது (உறுப்பு 29(2)).\n3. அரசு நிதியுதவி பெறும் சிறுபான்மை நிறுவனங்கள் மீது கல்வித் தரம், ஆசிரியர் தகுதிகள் மற்றும் பாடத்திட்டத்தின் ஒழுங்குமுறைத் தரங்களை அரசு அமல்படுத்த முடியும்.\n\nமேற்கூறிய கூற்றுகளில் எவை சரியானவை?"
+    },
+    "options": [
+      { "id": "A", "en": "1 and 2 only", "ta": "1 மற்றும் 2 மட்டுமே" },
+      { "id": "B", "en": "1 and 3 only", "ta": "1 மற்றும் 3 மட்டுமே" },
+      { "id": "C", "en": "2 and 3 only", "ta": "2 மற்றும் 3 மட்டுமே" },
+      { "id": "D", "en": "1, 2 and 3", "ta": "1, 2 மற்றும் 3" }
+    ],
+    "correct_answer": "C",
+    "explanation": {
+      "en": "Statement 1 is INCORRECT (St. Stephen's Case & T.M.A. Pai: aided minority institutions must admit a reasonable percentage of non-minority students under Art 29(2)). Statements 2 and 3 are correct.",
+      "ta": "கூற்று 1 தவறு (செயின்ட் ஸ்டீபன் வழக்கு & T.M.A. பாய்: அரசு உதவிபெறும் சிறுபான்மை நிறுவனங்கள் உறுப்பு 29(2)-ன் கீழ் சிறுபான்மையற்ற மாணவர்களையும் சேர்க்க வேண்டும்). கூற்றுகள் 2 மற்றும் 3 சரி."
+    },
+    "why_not_others": {
+      "A": { "en": "Statement 1 is false.", "ta": "கூற்று 1 தவறானது." },
+      "B": { "en": "Statement 1 is false.", "ta": "கூற்று 1 தவறானது." },
+      "C": { "en": "Correct. Statements 2 and 3 are true; Statement 1 is false.", "ta": "சரி. கூற்றுகள் 2 மற்றும் 3 சரியானவை; கூற்று 1 தவறானது." },
+      "D": { "en": "Statement 1 is false.", "ta": "கூற்று 1 தவறானது." }
+    },
+    "tnpsc_tip": {
+      "en": "Aided Minority Institutions are subject to Article 29(2) non-discrimination for non-minority student admissions.",
+      "ta": "அரசு உதவிபெறும் சிறுபான்மை நிறுவனங்கள் சிறுபான்மையற்ற மாணவர்கள் சேர்க்கையில் உறுப்பு 29(2) பாகுபாடின்மைக்கு உட்பட்டவை."
+    },
+    "metadata": { "subject": "Polity", "topic": "Fundamental Rights", "type": "Hard", "level": "TNPSC Group 1" }
+  },
+
+  # 19. High-Level TNPSC Trap: Article 32 Res Judicata & Habeas Corpus Exception - Ans: B
+  {
+    "id": "FR_H_019",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "Hard",
+    "question_type": "High-level TNPSC Trap",
+    "question": {
+      "en": "The principle of 'Res Judicata' (a matter already decided by a competent court cannot be reopened) applies to writ petitions filed under Article 32. Which specific writ is EXEMPTED from the rule of Res Judicata?",
+      "ta": "'Res Judicata' கோட்பாடு (தகுதியான நீதிமன்றத்தால் ஏற்கனவே தீர்க்கப்பட்ட விஷயத்தை மீண்டும் விசாரிக்க முடியாது) உறுப்பு 32-ன் கீழ் தாக்கல் செய்யப்படும் மனுக்களுக்குப் பொருந்தும். Res Judicata விதியிலிருந்து விலக்களிக்கப்பட்ட குறிப்பிட்ட பேராணை எது?"
+    },
+    "options": [
+      { "id": "A", "en": "Mandamus", "ta": "செயலுறுத்தும் பேராணை (Mandamus)" },
+      { "id": "B", "en": "Habeas Corpus", "ta": "ஆட்கொணர்வு பேராணை (Habeas Corpus)" },
+      { "id": "C", "en": "Certiorari", "ta": "நெறிமுறையுறுத்தும் பேராணை (Certiorari)" },
+      { "id": "D", "en": "Prohibition", "ta": "தடைசெய் பேராணை (Prohibition)" }
+    ],
+    "correct_answer": "B",
+    "explanation": {
+      "en": "In Daryao v. State of UP (1961), SC held that Res Judicata applies to Art 32 petitions (if High Court dismisses under Art 226 on merits, Art 32 is barred), EXCEPT for Habeas Corpus petitions where personal liberty is at stake.",
+      "ta": "தார்யாவோ வழக்கு (1961): உறுப்பு 32 மனுக்களுக்கு Res Judicata பொருந்தும், ஆனால் தனிநபர் சுதந்திரம் ஆபத்திலிருக்கும் ஆட்கொணர்வு பேராணைக்கு (Habeas Corpus) மட்டும் விலக்கு உண்டு."
+    },
+    "why_not_others": {
+      "A": { "en": "Mandamus is bound by Res Judicata.", "ta": "Mandamus Res Judicata விதியால் கட்டுப்பட்டது." },
+      "B": { "en": "Correct. Habeas Corpus is EXEMPTED from Res Judicata rule.", "ta": "சரி. ஆட்கொணர்வு பேராணைக்கு Res Judicata விதியிலிருந்து விலக்கு உண்டு." },
+      "C": { "en": "Certiorari is bound by Res Judicata.", "ta": "Certiorari Res Judicata விதியால் கட்டுப்பட்டது." },
+      "D": { "en": "Prohibition is bound by Res Judicata.", "ta": "Prohibition Res Judicata விதியால் கட்டுப்பட்டது." }
+    },
+    "tnpsc_tip": {
+      "en": "TRAP: Habeas Corpus is the ONLY writ petition exempted from the rule of Res Judicata.",
+      "ta": "பொறி: Res Judicata விதியிலிருந்து விலக்கு பெற்ற ஒரே மனு ஆட்கொணர்வு பேராணை (Habeas Corpus) மட்டுமே."
+    },
+    "metadata": { "subject": "Polity", "topic": "Fundamental Rights", "type": "Hard", "level": "TNPSC Group 1" }
+  },
+
+  # 20. Advanced Conceptual: Articles 20(3) Self-Incrimination Immunity Tests - Ans: C
+  {
+    "id": "FR_H_020",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "Hard",
+    "question_type": "Advanced Conceptual",
+    "question": {
+      "en": "Consider the following conditions for claiming protection under Article 20(3) (No Self-Incrimination):\n\n1. The person claiming protection must be an 'accused of an offence' at the time of making the statement.\n2. The protection applies to both criminal and civil proceedings.\n3. The statement must be compelled testimony likely to expose the person to criminal prosecution.\n\nWhich of the statements given above are correct?",
+      "ta": "உறுப்பு 20(3) (தனக்குத்தானே சாட்சியமளிப்பதற்கு எதிரான பாதுகாப்பு) பாதுகாப்பைக் கோருவதற்கான பின்வரும் நிபந்தனைகளை ஆராய்க:\n\n1. பாதுகாப்பைக் கோரும் நபர் அறிக்கையளிக்கும் நேரத்தில் 'குற்றஞ்சாட்டப்பட்ட நபராக' (accused of an offence) இருக்க வேண்டும்.\n2. இப் பாதுகாப்பு குற்றவியல் மற்றும் சிவில் நடவடிக்கைகள் இரண்டிற்கும் பொருந்தும்.\n3. அறிக்கை அ நபரை குற்றவியல் விசாரணைக்கு உள்ளாக்கும் கட்டாயச் சாட்சியமாக இருக்க வேண்டும்.\n\nமேற்கூறிய கூற்றுகளில் எவை சரியானவை?"
+    },
+    "options": [
+      { "id": "A", "en": "1 and 2 only", "ta": "1 மற்றும் 2 மட்டுமே" },
+      { "id": "B", "en": "2 and 3 only", "ta": "2 மற்றும் 3 மட்டுமே" },
+      { "id": "C", "en": "1 and 3 only", "ta": "1 மற்றும் 3 மட்டுமே" },
+      { "id": "D", "en": "1, 2 and 3", "ta": "1, 2 மற்றும் 3" }
+    ],
+    "correct_answer": "C",
+    "explanation": {
+      "en": "Statements 1 and 3 are correct. Statement 2 is INCORRECT because Article 20(3) protection applies ONLY to Criminal proceedings, NOT to civil proceedings or administrative inquiries.",
+      "ta": "கூற்றுகள் 1 மற்றும் 3 சரி. கூற்று 2 தவறு, ஏனெனில் உறுப்பு 20(3) பாதுகாப்பு குற்றவியல் நடவடிக்கைகளுக்கு மட்டுமே பொருந்தும், சிவில் அல்லது நிர்வாக விசாரணைகளுக்கு அல்ல."
+    },
+    "why_not_others": {
+      "A": { "en": "Statement 2 is false; Art 20(3) does not apply to civil proceedings.", "ta": "கூற்று 2 தவறு; 20(3) சிவில் நடவடிக்கைகளுக்குப் பொருந்தாது." },
+      "B": { "en": "Statement 2 is false.", "ta": "கூற்று 2 தவறானது." },
+      "C": { "en": "Correct. Statements 1 and 3 are true; Statement 2 is false.", "ta": "சரி. கூற்றுகள் 1 மற்றும் 3 சரியானவை; கூற்று 2 தவறானது." },
+      "D": { "en": "Statement 2 is false.", "ta": "கூற்று 2 தவறானது." }
+    },
+    "tnpsc_tip": {
+      "en": "Art 20(3) requires: 1. Accused status, 2. Compulsion, 3. Incriminating testimonial disclosure.",
+      "ta": "உறுப்பு 20(3)-க்கு தேவை: 1. குற்றஞ்சாட்டப்பட்ட நிலை, 2. கட்டாயம், 3. குற்றஞ்சாட்டும் சாட்சிய வெளிப்பாடு."
+    },
+    "metadata": { "subject": "Polity", "topic": "Fundamental Rights", "type": "Hard", "level": "TNPSC Group 1" }
+  },
+
+  # Adding questions 21 to 50 covering complete scope with exact JSON standards...
+  # 21. Constitutional Application: Article 31C Scope Limit (Kesavananda & Minerva) - Ans: A
+  {
+    "id": "FR_H_021",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "Hard",
+    "question_type": "Constitutional Application",
+    "question": {
+      "en": "What is the present operative legal status of Article 31C following the judgments in Kesavananda Bharati (1973) and Minerva Mills (1980)?",
+      "ta": "கேசவானந்த பாரதி (1973) மற்றும் மினர்வா மில்ஸ் (1980) தீர்ப்புகளைத் தொடர்ந்து உறுப்பு 31C-ன் தற்போதைய நடைமுறைச் சட்ட நிலை என்ன?"
+    },
+    "options": [
+      { "id": "A", "en": "Laws giving effect to DPSP Articles 39(b) and 39(c) ONLY are protected from challenge under Articles 14 and 19; the extension to ALL DPSPs was struck down, and judicial review remains open.", "ta": "DPSP உறுப்புகள் 39(b) மற்றும் 39(c)-க்கு மட்டுமே செயலுருவம் கொடுக்கும் சட்டங்கள் உறுப்புகள் 14 மற்றும் 19 சவால்களிலிருந்து பாதுகாக்கப்படுகின்றன; அனைத்து DPSP-களுக்குமான விரிவாக்கம் ரத்து செய்யப்பட்டது, மேலும் நீதித்துறை ஆய்வு திறந்தே உள்ளது." },
+      { "id": "B", "en": "Article 31C was completely erased from the Constitution.", "ta": "உறுப்பு 31C அரசியலமைப்பிலிருந்து முற்றிலும் நீக்கப்பட்டது." },
+      { "id": "C", "en": "All Directive Principles override all Fundamental Rights without judicial review.", "ta": "அனைத்து அரசு நெறிமுறைக் கோட்பாடுகளும் நீதித்துறை ஆய்வின்றி அனைத்து அடிப்படை உரிமைகளையும் முறியடிக்கின்றன." },
+      { "id": "D", "en": "Article 31C applies only during Financial Emergency under Article 360.", "ta": "உறுப்பு 31C உறுப்பு 360-ன் கீழ் நிதி அவசரநிலையின் போது மட்டுமே பொருந்தும்." }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "Kesavananda (1973) invalidated the judicial review exclusion clause. Minerva Mills (1980) invalidated extending Art 31C to all DPSPs. Hence, Art 31C currently protects laws giving effect to Art 39(b)&(c) against Arts 14 & 19.",
+      "ta": "கேசவானந்த (1973) நீதித் தடைப் பகுதியை ரத்து செய்தது. மினர்வா மில்ஸ் (1980) அனைத்து DPSP-களுக்குமான விரிவாக்கத்தை ரத்து செய்தது. எனவே, உறுப்பு 31C தற்போது 39(b)&(c) சட்டங்களை 14 & 19-லிருந்து மட்டுமே காப்பாற்றுகிறது."
+    },
+    "why_not_others": {
+      "A": { "en": "Correct. Art 31C applies ONLY to 39(b)&(c) laws subject to judicial review.", "ta": "சரி. உறுப்பு 31C நீதித்துறை ஆய்வுக்கு உட்பட்டு 39(b)&(c) சட்டங்களுக்கு மட்டுமே பொருந்தும்." },
+      "B": { "en": "Art 31C still exists in its original valid form.", "ta": "உறுப்பு 31C அதன் அசல் செல்லுபடியாகும் வடிவில் இன்னும் உள்ளது." },
+      "C": { "en": "Judicial review cannot be excluded.", "ta": "நீதித்துறை ஆய்வைத் தடுக்க முடியாது." },
+      "D": { "en": "Financial emergency is not required.", "ta": "நிதி அவசரநிலை தேவையில்லை." }
+    },
+    "tnpsc_tip": {
+      "en": "Art 31C scope today = Saves Art 39(b)&(c) laws from Arts 14 & 19 challenge; Judicial Review active.",
+      "ta": "இன்றைய உறுப்பு 31C எல்லை = 39(b)&(c) சட்டங்களை 14 & 19 சவால்களிலிருந்து காக்கிறது; நீதித்துறை ஆய்வு அமலில் உள்ளது."
+    },
+    "metadata": { "subject": "Polity", "topic": "Fundamental Rights", "type": "Hard", "level": "TNPSC Group 1" }
+  },
+
+  # 22. Case-Law Based: EWS Quota Janhit Abhiyan Ruling 2022 - Ans: B
+  {
+    "id": "FR_H_022",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "Hard",
+    "question_type": "Amendment / Basic Structure",
+    "question": {
+      "en": "In Janhit Abhiyan v. Union of India (2022), what majority decision did the 5-judge Constitution Bench render regarding the 103rd Amendment Act 2019 (10% EWS Quota under Arts 15(6) and 16(6))?",
+      "ta": "ஜன்ஹித் அபியான் எதிர் இந்திய யூனியன் (2022) வழக்கில், 103வது திருத்தச் சட்டம் 2019 (உறுப்புகள் 15(6) & 16(6)-ன் கீழ் 10% EWS ஒதுக்கீடு) பற்றி 5 நீதிபதிகள் அரசியலமைப்பு அமர்வு என்ன பெரும்பான்மைத் தீர்ப்பை வழங்கியது?"
+    },
+    "options": [
+      { "id": "A", "en": "Unanimously struck down EWS quota as violating the Basic Structure.", "ta": "அடிப்படை கட்டமைப்பை மீறுவதாகக் கூறி EWS ஒதுக்கீட்டை ஒருமனதாக ரத்து செய்தது." },
+      { "id": "B", "en": "Upheld the 103rd Amendment by 3:2 majority, holding that reservation based solely on economic criteria and breaching the 50% limit for EWS does NOT violate the Basic Structure.", "ta": "3:2 பெரும்பான்மையால் 103வது திருத்தத்தை உறுதி செய்தது, பொருளாதார அளவுகோல் அடிப்படையில் மட்டுமே இடஒதுக்கீடு தருவதும் EWS-க்காக 50% வரம்பை மீறுவதும் அடிப்படை கட்டமைப்பை மீறாது எனத் தீர்ப்பளித்தது." },
+      { "id": "C", "en": "Referred the matter to a 13-judge bench without deciding.", "ta": "தீர்மானிக்காமல் விஷயத்தை 13 நீதிபதிகள் அமர்வுக்கு மாற்றியது." },
+      { "id": "D", "en": "Declared that EWS quota applies only to central government jobs in Delhi.", "ta": "EWS ஒதுக்கீடு டெல்லியில் உள்ள மத்திய அரசு வேலைகளுக்கு மட்டுமே பொருந்தும் என அறிவித்தது." }
+    ],
+    "correct_answer": "B",
+    "explanation": {
+      "en": "In Janhit Abhiyan (2022), a 5-judge bench (3:2 majority) upheld 103rd CAA 2019. SC held that economic criteria alone can form a valid basis for affirmative action and 50% ceiling applies to Art 15(4)/16(4) social reservations, not Art 15(6)/16(6) EWS.",
+      "ta": "ஜன்ஹித் அபியான் (2022) வழக்கில் 5 நீதிபதிகள் அமர்வு (3:2 பெரும்பான்மை) 103வது திருத்தத்தை உறுதி செய்தது. பொருளாதார அளவுகோல் இடஒதுக்கீட்டிற்குச் செல்லுபடியாகும் அடிப்படையாகும் என்றும் 50% வரம்பு 15(4)/16(4)-க்கு மட்டுமே பொருந்தும் என்றும் தீர்ப்பளித்தது."
+    },
+    "why_not_others": {
+      "A": { "en": "EWS quota was UPHELD, not struck down.", "ta": "EWS ஒதுக்கீடு உறுதி செய்யப்பட்டது, ரத்து செய்யப்படவில்லை." },
+      "B": { "en": "Correct. Janhit Abhiyan (2022) upheld 103rd CAA EWS quota by 3:2 majority.", "ta": "சரி. ஜன்ஹித் அபியான் (2022) 3:2 பெரும்பான்மையால் 103வது திருத்த EWS ஒதுக்கீட்டை உறுதி செய்தது." },
+      "C": { "en": "5-judge bench decided the case finally.", "ta": "5 நீதிபதிகள் அமர்வு வழக்கை இறுதியாகத் தீர்மானித்தது." },
+      "D": { "en": "Applies nationwide.", "ta": "நாடு முழுவதும் பொருந்தும்." }
+    },
+    "tnpsc_tip": {
+      "en": "Janhit Abhiyan (2022) = 103rd CAA 2019 (10% EWS quota under Arts 15(6) & 16(6)) UPHELD by 3:2 majority.",
+      "ta": "ஜன்ஹித் அபியான் (2022) = 103வது திருத்தம் 2019 (உறுப்புகள் 15(6) & 16(6)-ன் கீழ் 10% EWS ஒதுக்கீடு) 3:2 பெரும்பான்மையால் உறுதி செய்யப்பட்டது."
+    },
+    "metadata": { "subject": "Polity", "topic": "Fundamental Rights", "type": "Hard", "level": "TNPSC Group 1" }
+  },
+
+  # 23. Multi-Statement / Analytical: Article 17 PCR Act & SC/ST Atrocities Act Integration - Ans: C
+  {
+    "id": "FR_H_023",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "Hard",
+    "question_type": "Multi-Statement",
+    "question": {
+      "en": "Consider the following statements regarding Article 17 (Abolition of Untouchability):\n\n1. Article 17 is available against both the State and private individuals.\n2. The Protection of Civil Rights Act, 1955 prescribes that offences committed on the ground of untouchability carry a mandatory minimum imprisonment and fine.\n3. The word 'Untouchability' is defined in the SC/ST (Prevention of Atrocities) Act, 1989.\n\nWhich of the statements given above are correct?",
+      "ta": "உறுப்பு 17 (தீண்டாமை ஒழிப்பு) பற்றிய பின்வரும் கூற்றுகளை ஆராய்க:\n\n1. உறுப்பு 17 அரசு மற்றும் தனியார் நபர்கள் இருவருக்குமே எதிராகக் கிடைக்கக்கூடியது.\n2. 1955 சிவில் உரிமைகள் பாதுகாப்புச் சட்டம் தீண்டாமை அடிப்படையில் செய்யப்படும் குற்றங்களுக்குக் கட்டாயக் குறைந்தபட்ச சிறைத்தண்டனை மற்றும் அபராதத்தை நிர்ணயிக்கிறது.\n3. 'தீண்டாமை' என்ற சொல் SC/ST (வன்கொடுமைத் தடுப்பு) சட்டம் 1989-ல் வரையறுக்கப்பட்டுள்ளது.\n\nமேற்கூறிய கூற்றுகளில் எவை சரியானவை?"
+    },
+    "options": [
+      { "id": "A", "en": "1 and 3 only", "ta": "1 மற்றும் 3 மட்டுமே" },
+      { "id": "B", "en": "2 and 3 only", "ta": "2 மற்றும் 3 மட்டுமே" },
+      { "id": "C", "en": "1 and 2 only", "ta": "1 மற்றும் 2 மட்டுமே" },
+      { "id": "D", "en": "1, 2 and 3", "ta": "1, 2 மற்றும் 3" }
+    ],
+    "correct_answer": "C",
+    "explanation": {
+      "en": "Statements 1 and 2 are correct. Statement 3 is INCORRECT because 'Untouchability' is NOT defined in the Constitution, PCR Act 1955, OR the SC/ST Atrocities Act 1989.",
+      "ta": "கூற்றுகள் 1 மற்றும் 2 சரி. கூற்று 3 தவறு, ஏனெனில் 'தீண்டாமை' அரசியலமைப்பிலோ, 1955 சட்டத்திலோ அல்லது 1989 SC/ST சட்டத்திலோ எங்குமே வரையறுக்கப்படவில்லை."
+    },
+    "why_not_others": {
+      "A": { "en": "Statement 3 is false.", "ta": "கூற்று 3 தவறானது." },
+      "B": { "en": "Statement 3 is false.", "ta": "கூற்று 3 தவறானது." },
+      "C": { "en": "Correct. Statements 1 and 2 are correct; Statement 3 is false.", "ta": "சரி. கூற்றுகள் 1 மற்றும் 2 சரியானவை; கூற்று 3 தவறானது." },
+      "D": { "en": "Statement 3 is false.", "ta": "கூற்று 3 தவறானது." }
+    },
+    "tnpsc_tip": {
+      "en": "TRAP: Neither Art 17 nor PCR Act 1955 nor SC/ST Act 1989 defines the word 'Untouchability'.",
+      "ta": "பொறி: உறுப்பு 17, 1955 சட்டம், 1989 SC/ST சட்டம் எதிலுமே 'தீண்டாமை' என்ற சொல் வரையறுக்கப்படவில்லை."
+    },
+    "metadata": { "subject": "Polity", "topic": "Fundamental Rights", "type": "Hard", "level": "TNPSC Group 1" }
+  },
+
+  # 24. Constitutional Application: Writs Prohibition vs Certiorari Judicial Stage Test - Ans: D
+  {
+    "id": "FR_H_024",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "Hard",
+    "question_type": "Constitutional Application",
+    "question": {
+      "en": "A lower court completes hearing a case where it has no jurisdiction, but HAS NOT YET DELIVERED its final order. Which writ should the aggrieved party apply for to immediately halt proceedings?",
+      "ta": "ஒரு கீழ் நீதிமன்றம் தனக்கு அதிகார வரம்பு இல்லாத வழக்கை விசாரித்து முடித்துவிட்டது, ஆனால் இன்னும் தன் இறுதி உத்தரவை வழங்கவில்லை. நடவடிக்கைகளை உடனடியாக நிறுத்த பாதிக்கப்பட்ட தரப்பு எந்தப் பேராணைக்கு விண்ணப்பிக்க வேண்டும்?"
+    },
+    "options": [
+      { "id": "A", "en": "Certiorari only", "ta": "Certiorari மட்டுமே" },
+      { "id": "B", "en": "Mandamus only", "ta": "Mandamus மட்டுமே" },
+      { "id": "C", "en": "Quo Warranto only", "ta": "Quo Warranto மட்டுமே" },
+      { "id": "D", "en": "Prohibition (or Prohibition + Certiorari if order delivered later)", "ta": "Prohibition (தடைசெய் பேராணை) மட்டுமே" }
+    ],
+    "correct_answer": "D",
+    "explanation": {
+      "en": "Since the order HAS NOT YET BEEN DELIVERED and proceedings are still pending, Prohibition is the appropriate writ to stop the court from exceeding jurisdiction. Once order is passed, Certiorari quashes it.",
+      "ta": "இறுதி உத்தரவு இன்னும் வழங்கப்படாததால் வழக்கு நிலுவையில் உள்ளது, எனவே நீதிமன்றம் அதிகார வரம்பை மீறுவதைத் தடுக்க Prohibition பேராணையே பொருத்தமானது. உத்தரவு வழங்கப்பட்ட பின் Certiorari அதை ரத்து செய்யும்."
+    },
+    "why_not_others": {
+      "A": { "en": "Certiorari requires an order to be ALREADY passed to quash it.", "ta": "Certiorari-க்கு ஏற்கனவே உத்தரவு வழங்கப்பட்டிருக்க வேண்டும்." },
+      "B": { "en": "Mandamus compels a positive public duty.", "ta": "Mandamus ஒரு நேர்மறை கடமையைச் செய்யக் கட்டளையிடுகிறது." },
+      "C": { "en": "Quo Warranto is for public office usurpation.", "ta": "Quo Warranto பொதுப் பதவியைக் கைப்பற்றுவதற்கு உரியது." },
+      "D": { "en": "Correct. While proceedings are pending before final order, Prohibition applies.", "ta": "சரி. இறுதி உத்தரவுக்கு முன் வழக்கு நிலுவையில் இருக்கும் வரை Prohibition பொருந்தும்." }
+    },
+    "tnpsc_tip": {
+      "en": "Stage test: Pending proceedings = Prohibition; Order already passed = Certiorari.",
+      "ta": "கட்ட சோதனை: நிலுவையிலுள்ள வழக்கு = Prohibition; ஏற்கனவே வழங்கப்பட்ட உத்தரவு = Certiorari."
+    },
+    "metadata": { "subject": "Polity", "topic": "Fundamental Rights", "type": "Hard", "level": "TNPSC Group 1" }
+  },
+
+  # 25. Advanced Conceptual: Fundamental Rights and Preamble Ideals Integration - Ans: A
+  {
+    "id": "FR_H_025",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "Hard",
+    "question_type": "Advanced Conceptual",
+    "question": {
+      "en": "Consider the following statements regarding the integration of Preamble philosophy with Fundamental Rights:\n\n1. Right to Equality (Arts 14-18) operationalizes 'Equality of status and opportunity' pledged in Preamble.\n2. Right to Freedom of Religion (Arts 25-28) operationalizes 'Liberty of belief, faith and worship' pledged in Preamble.\n3. Abolition of Untouchability (Art 17) and prohibition of forced labour (Art 23) operationalize 'Fraternity assuring the dignity of the individual'.\n\nWhich of the statements given above are correct?",
+      "ta": "முகவுரைத் தத்துவத்தை அடிப்படை உரிமைகளுடன் இணைப்பது பற்றிய பின்வரும் கூற்றுகளை ஆராய்க:\n\n1. சமத்துவ உரிமை (உறுப்புகள் 14-18) முகவுரையில் வாக்குறுதியளிக்கப்பட்ட 'அந்தஸ்து மற்றும் வாய்ப்பு சமத்துவத்தை' செயல்படுத்துகிறது.\n2. மத சுதந்திர உரிமை (உறுப்புகள் 25-28) முகவுரையில் வாக்குறுதியளிக்கப்பட்ட 'நம்பிக்கை, பக்தி மற்றும் வழிபாட்டு சுதந்திரத்தை' செயல்படுத்துகிறது.\n3. தீண்டாமை ஒழிப்பு (உறுப்பு 17) மற்றும் கட்டாய வேலை தடை (உறுப்பு 23) ஆகியவை 'தனிநபர் கண்ணியத்தை உறுதி செய்யும் சகோதரத்துவத்தை' செயல்படுத்துகின்றன.\n\nமேற்கூறிய கூற்றுகளில் எவை சரியானவை?"
+    },
+    "options": [
+      { "id": "A", "en": "1, 2 and 3", "ta": "1, 2 மற்றும் 3" },
+      { "id": "B", "en": "1 and 2 only", "ta": "1 மற்றும் 2 மட்டுமே" },
+      { "id": "C", "en": "2 and 3 only", "ta": "2 மற்றும் 3 மட்டுமே" },
+      { "id": "D", "en": "1 and 3 only", "ta": "1 மற்றும் 3 மட்டுமே" }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "All 3 statements are correct. Part III FRs provide the enforceable legal framework translating the noble philosophy of the Preamble into concrete constitutional guarantees.",
+      "ta": "3 கூற்றுகளுமே சரி. பகுதி III FRs முகவுரையின் உயரிய தத்துவத்தை உண்மையான அரசியலமைப்பு உத்தரவாதங்களாக மாற்றும் அமல்படுத்தக்கூடிய சட்ட அமைப்பை வழங்குகின்றன."
+    },
+    "why_not_others": {
+      "A": { "en": "Correct. All 3 statements accurately reflect the Preamble-FR synthesis.", "ta": "சரி. 3 கூற்றுகளுமே முகவுரை-FR இணைப்பைத் துல்லியமாகப் பிரதிபலிக்கின்றன." },
+      "B": { "en": "Statement 3 is also correct.", "ta": "கூற்று 3-ம் சரியானது." },
+      "C": { "en": "Statement 1 is also correct.", "ta": "கூற்று 1-ம் சரியானது." },
+      "D": { "en": "Statement 2 is also correct.", "ta": "கூற்று 2-ம் சரியானது." }
+    },
+    "tnpsc_tip": {
+      "en": "Preamble sets the philosophical goals; Part III Fundamental Rights provides the justiciable remedies.",
+      "ta": "முகவுரை தத்துவ இலக்குகளை நிர்ணயிக்கிறது; பகுதி III அடிப்படை உரிமைகள் நீதிமன்றத் தீர்வுகளை வழங்குகின்றன."
+    },
+    "metadata": { "subject": "Polity", "topic": "Fundamental Rights", "type": "Hard", "level": "TNPSC Group 1" }
+  },
+
+  # Questions 26 to 50 completing exact 50 Hard MCQs...
+  # 26. Case-Law Based: Shankari Prasad & Sajjan Singh to Golak Nath Evolution - Ans: C
+  {
+    "id": "FR_H_026",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "Hard",
+    "question_type": "Case-law Based",
+    "question": {
+      "en": "Prior to Golak Nath (1967), what view did the Supreme Court take in Shankari Prasad (1951) and Sajjan Singh (1965) regarding Parliament's power to amend Fundamental Rights under Article 368?",
+      "ta": "கோலக் நாத்திற்கு (1967) முன், சங்கரி பிரசாத் (1951) மற்றும் சஜ்ஜன் சிங் (1965) வழக்குகளில் உறுப்பு 368-ன் கீழ் அடிப்படை உரிமைகளைத் திருத்தும் நாடாளுமன்ற அதிகாரம் குறித்து உச்ச நீதிமன்றம் என்ன கருத்தைக் கொண்டிருந்தது?"
+    },
+    "options": [
+      { "id": "A", "en": "Parliament cannot amend Fundamental Rights under any circumstances.", "ta": "நாடாளுமன்றம் எந்தச் சூழ்நிலையிலும் அடிப்படை உரிமைகளைத் திருத்த முடியாது." },
+      { "id": "B", "en": "Constitutional Amendments require ratifications by all 28 States.", "ta": "அரசியலமைப்பு திருத்தங்களுக்கு 28 மாநிலங்களின் ஒப்புதலும் தேவை." },
+      { "id": "C", "en": "Parliament has full power to amend any Part III Fundamental Right under Article 368, holding that 'law' in Article 13(2) includes only ordinary law, NOT constitutional amendment laws.", "ta": "உறுப்பு 13(2)-ல் உள்ள 'சட்டம்' என்பது சாதாரண சட்டத்தை மட்டுமே குறிக்கும், அரசியலமைப்பு திருத்தச் சட்டத்தை அல்ல எனக் கூறி உறுப்பு 368-ன் கீழ் எந்தப் பகுதி III உரிமையையும் திருத்த நாடாளுமன்றத்திற்கு முழு அதிகாரம் உண்டு எனக் கருதியது." },
+      { "id": "D", "en": "Right to Property could not be amended, but other rights could be.", "ta": "சொத்துரிமையை திருத்த முடியாது, ஆனால் பிற உரிமைகளைத் திருத்தலாம்." }
+    ],
+    "correct_answer": "C",
+    "explanation": {
+      "en": "In Shankari Prasad (1951) & Sajjan Singh (1965), SC held that constitutional amendment under Art 368 is an exercise of constituent power, not ordinary legislative power; hence 'law' in Art 13(2) does not include Art 368 amendments.",
+      "ta": "சங்கரி பிரசாத் (1951) & சஜ்ஜன் சிங் (1965) வழக்குகளில், உறுப்பு 368-ன் கீழ் திருத்தம் என்பது அரசியலமைப்பு அதிகாரம் என்றது; எனவே உறுப்பு 13(2)-ல் உள்ள 'சட்டம்' 368 திருத்தங்களை உள்ளடக்காது."
+    },
+    "why_not_others": {
+      "A": { "en": "This view was adopted later in Golak Nath 1967.", "ta": "இக் கருத்து பின்னர் கோலக் நாத் 1967-ல் ஏற்றுக்கொள்ளப்பட்டது." },
+      "B": { "en": "All state ratification is not required.", "ta": "அனைத்து மாநில ஒப்புதலும் தேவையில்லை." },
+      "C": { "en": "Correct. Shankari Prasad & Sajjan Singh held Art 13(2) 'law' does NOT include Art 368 constituent amendments.", "ta": "சரி. சங்கரி பிரசாத் & சஜ்ஜன் சிங் உறுப்பு 13(2) 'சட்டம்' உறுப்பு 368 திருத்தங்களை உள்ளடக்காது என்றன." },
+      "D": { "en": "No distinction was drawn for property right.", "ta": "சொத்துரிமைக்கு எந்த தனி வேறுபாடும் செய்யப்படவில்லை." }
+    },
+    "tnpsc_tip": {
+      "en": "Shankari Prasad (1951) & Sajjan Singh (1965) = Art 13(2) law != Art 368 amendment -> Parliament can amend FRs.",
+      "ta": "சங்கரி பிரசாத் (1951) & சஜ்ஜன் சிங் (1965) = உறுப்பு 13(2) சட்டம் != உறுப்பு 368 திருத்தம் -> நாடாளுமன்றம் FRs-ஐத் திருத்தலாம்."
+    },
+    "metadata": { "subject": "Polity", "topic": "Fundamental Rights", "type": "Hard", "level": "TNPSC Group 1" }
+  },
+
+  # 27. High-Level TNPSC Trap: Article 19(1)(e) Residence vs Schedule 5/6 Restrictions - Ans: B
+  {
+    "id": "FR_H_027",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "Hard",
+    "question_type": "High-level TNPSC Trap",
+    "question": {
+      "en": "Under Article 19(5), reasonable restrictions on the freedom of movement [19(1)(d)] and freedom of residence [19(1)(e)] can be imposed on which two specific grounds?",
+      "ta": "உறுப்பு 19(5)-ன் கீழ், நடமாடும் சுதந்திரம் [19(1)(d)] மற்றும் வசிக்கும் சுதந்திரம் [19(1)(e)] ஆகியவற்றின் மீது எந்த இரண்டு குறிப்பிட்ட அடிப்படைகளில் நியாயமான கட்டுப்பாடுகளை விதிக்க முடியும்?"
+    },
+    "options": [
+      { "id": "A", "en": "Public order and Morality only", "ta": "பொது ஒழுங்கு மற்றும் ஒழுக்கம் மட்டுமே" },
+      { "id": "B", "en": "1. In the interest of the general public, and 2. For the protection of the interests of any Scheduled Tribe.", "ta": "1. பொதுமக்களின் நலனைக் கருதி (General Public), மற்றும் 2. எந்தவொரு பட்டியல் பழங்குடியினரின் நலன்களைப் பாதுகாப்பதற்காக (Protection of Scheduled Tribes)." },
+      { "id": "C", "en": "Sovereignty of India and Contempt of Court", "ta": "இந்தியாவின் இறையாண்மை மற்றும் நீதிமன்ற அவமதிப்பு" },
+      { "id": "D", "en": "Decency and Defamation", "ta": "கண்ணியம் மற்றும் அவதூறு" }
+    ],
+    "correct_answer": "B",
+    "explanation": {
+      "en": "Article 19(5) specifies EXACTLY TWO grounds of restriction for movement and residence: (1) In the interest of the general public, and (2) For the protection of the interests of any Scheduled Tribe (to protect tribal culture, land, and autonomy).",
+      "ta": "உறுப்பு 19(5) நடமாட்டம் மற்றும் வசிப்பிடக் கட்டுப்பாட்டிற்கு சரியாக இரண்டு அடிப்படைகளைக் குறிப்பிடுகிறது: (1) பொதுமக்களின் நலன், மற்றும் (2) பட்டியல் பழங்குடியினரின் நலன் பாதுகாப்பு."
+    },
+    "why_not_others": {
+      "A": { "en": "Public order & Morality are for Assembly/Speech grounds.", "ta": "பொது ஒழுங்கு & ஒழுக்கம் கூடும்/பேச்சு அடிப்படைகளுக்கு உரியவை." },
+      "B": { "en": "Correct. Art 19(5) restriction grounds = General Public + Protection of Scheduled Tribes.", "ta": "சரி. உறுப்பு 19(5) கட்டுப்பாட்டு அடிப்படைகள் = பொதுமக்கள் நலன் + பட்டியல் பழங்குடியினர் நலப் பாதுகாப்பு." },
+      "C": { "en": "Sovereignty & Contempt of Court are under Art 19(2).", "ta": "இறையாண்மை & நீதிமன்ற அவமதிப்பு உறுப்பு 19(2)-ல் உள்ளன." },
+      "D": { "en": "Decency & Defamation are under Art 19(2).", "ta": "கண்ணியம் & அவதூறு உறுப்பு 19(2)-ல் உள்ளன." }
+    },
+    "tnpsc_tip": {
+      "en": "TRAP: Protection of Scheduled Tribes interest is a specific constitutional restriction ground for movement and residence (Art 19(5)).",
+      "ta": "பொறி: பட்டியல் பழங்குடியினர் நலப் பாதுகாப்பு என்பது நடமாட்டம் மற்றும் வசிப்பிடத்திற்கான குறிப்பிட்ட அரசியலமைப்பு கட்டுப்பாட்டு அடிப்படையாகும் (உறுப்பு 19(5))."
+    },
+    "metadata": { "subject": "Polity", "topic": "Fundamental Rights", "type": "Hard", "level": "TNPSC Group 1" }
+  },
+
+  # 28. Multi-Statement / Analytical: Mandatory Rights vs Directive Principles Harmony - Ans: C
+  {
+    "id": "FR_H_028",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "Hard",
+    "question_type": "Multi-Statement",
+    "question": {
+      "en": "Consider the following statements regarding the Basic Structure doctrine and Fundamental Rights:\n\n1. Judicial Review under Article 32 and Article 226 is part of the Basic Structure.\n2. The harmonious balance between Part III (Fundamental Rights) and Part IV (DPSP) is part of the Basic Structure.\n3. The Right to Property under Article 300A is part of the Basic Structure of the Constitution.\n\nWhich of the statements given above are correct?",
+      "ta": "அடிப்படை கட்டமைப்புக் கோட்பாடு மற்றும் அடிப்படை உரிமைகள் பற்றிய பின்வரும் கூற்றுகளை ஆராய்க:\n\n1. உறுப்பு 32 மற்றும் உறுப்பு 226-ன் கீழ் நீதித்துறை ஆய்வு (Judicial Review) அடிப்படை கட்டமைப்பின் பகுதியாகும்.\n2. பகுதி III (அடிப்படை உரிமைகள்) மற்றும் பகுதி IV (DPSP) இடையேயான நல்லிணக்கச் சமநிலை அடிப்படை கட்டமைப்பின் பகுதியாகும்.\n3. உறுப்பு 300A-ன் கீழ் சொத்துரிமை அரசியலமைப்பின் அடிப்படை கட்டமைப்பின் பகுதியாகும்.\n\nமேற்கூறிய கூற்றுகளில் எவை சரியானவை?"
+    },
+    "options": [
+      { "id": "A", "en": "1 and 3 only", "ta": "1 மற்றும் 3 மட்டுமே" },
+      { "id": "B", "en": "2 and 3 only", "ta": "2 மற்றும் 3 மட்டுமே" },
+      { "id": "C", "en": "1 and 2 only", "ta": "1 மற்றும் 2 மட்டுமே" },
+      { "id": "D", "en": "1, 2 and 3", "ta": "1, 2 மற்றும் 3" }
+    ],
+    "correct_answer": "C",
+    "explanation": {
+      "en": "Statements 1 and 2 are correct (L. Chandra Kumar 1997 & Minerva Mills 1980). Statement 3 is INCORRECT because the Right to Property is a legal right and is NOT part of the Basic Structure.",
+      "ta": "கூற்றுகள் 1 மற்றும் 2 சரி (எல். சந்திரகுமார் 1997 & மினர்வா மில்ஸ் 1980). கூற்று 3 தவறு, ஏனெனில் சொத்துரிமை ஒரு சட்டப்பூர்வ உரிமை, அது அடிப்படை கட்டமைப்பின் பகுதி அல்ல."
+    },
+    "why_not_others": {
+      "A": { "en": "Statement 3 is false; Property is not basic structure.", "ta": "கூற்று 3 தவறு; சொத்துரிமை அடிப்படை கட்டமைப்பு அல்ல." },
+      "B": { "en": "Statement 3 is false.", "ta": "கூற்று 3 தவறானது." },
+      "C": { "en": "Correct. Statements 1 and 2 are true; Statement 3 is false.", "ta": "சரி. கூற்றுகள் 1 மற்றும் 2 சரியானவை; கூற்று 3 தவறானது." },
+      "D": { "en": "Statement 3 is false.", "ta": "கூற்று 3 தவறானது." }
+    },
+    "tnpsc_tip": {
+      "en": "TRAP: Right to Property was deleted from Part III by 44th CAA 1978 and is NOT part of Basic Structure.",
+      "ta": "பொறி: சொத்துரிமை 44வது திருத்தம் 1978 மூலம் பகுதி III லிருந்து நீக்கப்பட்டது, அது அடிப்படை கட்டமைப்பின் பகுதி அல்ல."
+    },
+    "metadata": { "subject": "Polity", "topic": "Fundamental Rights", "type": "Hard", "level": "TNPSC Group 1" }
+  },
+
+  # 29. Constitutional Application: Article 21 and Bodily Integrity (DK Basu Guidelines) - Ans: A
+  {
+    "id": "FR_H_029",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "Hard",
+    "question_type": "Constitutional Application",
+    "question": {
+      "en": "In D.K. Basu v. State of West Bengal (1997), the Supreme Court laid down mandatory guidelines regarding police arrests and custodial violence. Under which Fundamental Right did the Court derive these safeguards?",
+      "ta": "D.K. பாசு எதிர் மேற்கு வங்காள மாநிலம் (1997) வழக்கில், காவல்துறை கைதுகள் மற்றும் காவல் வன்முறைக்கு எதிராகக் கட்டாய வழிகாட்டுதல்களை உச்ச நீதிமன்றம் வழங்கியது. எந்த அடிப்படை உரிமையின் கீழ் நீதிமன்றம் இந்த பாதுகாப்புகளைப் பெற்றது?"
+    },
+    "options": [
+      { "id": "A", "en": "Article 21 (Right to Life and Personal Liberty including human dignity)", "ta": "உறுப்பு 21 (மனிதக் கண்ணியம் உட்பட வாழ்வு மற்றும் தனிநபர் சுதந்திர உரிமை)" },
+      { "id": "B", "en": "Article 19(1)(d) (Freedom of Movement)", "ta": "உறுப்பு 19(1)(d) (நடமாடும் சுதந்திரம்)" },
+      { "id": "C", "en": "Article 25 (Freedom of Conscience)", "ta": "உறுப்பு 25 (மனச்சாட்சி சுதந்திரம்)" },
+      { "id": "D", "en": "Article 30 (Minority Rights)", "ta": "உறுப்பு 30 (சிறுபான்மையினர் உரிமைகள்)" }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "In D.K. Basu (1997), SC held that custodial violence and torture violate Article 21 (Right to Life with Dignity) and issued 11 mandatory arrest/detention procedures for police.",
+      "ta": "D.K. பாசு (1997) வழக்கில், காவல் வன்முறையும் சித்திரவதையும் உறுப்பு 21-ஐ (கண்ணியமான வாழ்வுரிமை) மீறுகின்றன எனத் தீர்ப்பளித்து காவல்துறைக்கு 11 கட்டாய வழிகாட்டுதல்களை வழங்கியது."
+    },
+    "why_not_others": {
+      "A": { "en": "Correct. D.K. Basu guidelines derived directly from Article 21.", "ta": "சரி. D.K. பாசு வழிகாட்டுதல்கள் நேரடியாக உறுப்பு 21-லிருந்து பெறப்பட்டவை." },
+      "B": { "en": "Art 19(1)(d) is for general movement.", "ta": "உறுப்பு 19(1)(d) பொதுவான நடமாட்டத்திற்கு உரியது." },
+      "C": { "en": "Art 25 is for religion.", "ta": "உறுப்பு 25 மதத்திற்கு உரியது." },
+      "D": { "en": "Art 30 is for minority educational institutions.", "ta": "உறுப்பு 30 சிறுபான்மை கல்வி நிறுவனங்களுக்கு உரியது." }
+    },
+    "tnpsc_tip": {
+      "en": "D.K. Basu (1997) = Custodial Violence Guidelines under Article 21.",
+      "ta": "D.K. பாசு (1997) = உறுப்பு 21-ன் கீழ் காவல் வன்முறைத் தடுப்பு வழிகாட்டுதல்கள்."
+    },
+    "metadata": { "subject": "Polity", "topic": "Fundamental Rights", "type": "Hard", "level": "TNPSC Group 1" }
+  },
+
+  # 30. Case-Law Based: 24th Amendment Act 1971 & Golak Nath Override - Ans: B
+  {
+    "id": "FR_H_030",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "Hard",
+    "question_type": "Amendment / Basic Structure",
+    "question": {
+      "en": "Which Amendment Act was passed by Parliament to nullify the Golak Nath (1967) judgment by declaring that nothing in Article 13 shall apply to constitutional amendments made under Article 368?",
+      "ta": "உறுப்பு 13-ல் உள்ள எதுவும் உறுப்பு 368-ன் கீழ் செய்யப்படும் அரசியலமைப்பு திருத்தங்களுக்குப் பொருந்தாது என அறிவித்து, கோலக் நாத் (1967) தீர்ப்பை முறியடிக்க நாடாளுமன்றத்தால் இயற்றப்பட்ட திருத்தச் சட்டம் எது?"
+    },
+    "options": [
+      { "id": "A", "en": "42nd Constitutional Amendment Act, 1976", "ta": "42வது அரசியலமைப்பு திருத்தச் சட்டம், 1976" },
+      { "id": "B", "en": "24th Constitutional Amendment Act, 1971", "ta": "24வது அரசியலமைப்பு திருத்தச் சட்டம், 1971" },
+      { "id": "C", "en": "44th Constitutional Amendment Act, 1978", "ta": "44வது அரசியலமைப்பு திருத்தச் சட்டம், 1978" },
+      { "id": "D", "en": "25th Constitutional Amendment Act, 1971", "ta": "25வது அரசியலமைப்பு திருத்தச் சட்டம், 1971" }
+    ],
+    "correct_answer": "B",
+    "explanation": {
+      "en": "The 24th CAA 1971 inserted Art 13(4) and Art 368(3) clarifying that constitutional amendments under Art 368 are not 'laws' under Art 13, overriding Golak Nath. This 24th Amendment was upheld in Kesavananda Bharati (1973).",
+      "ta": "24வது திருத்தம் 1971 உறுப்பு 13(4) மற்றும் 368(3)-ஐச் சேர்த்து உறுப்பு 368 திருத்தங்கள் உறுப்பு 13-ன் கீழ் 'சட்டம்' அல்ல எனத் தெளிவுபடுத்தி கோலக் நாத் தீர்ப்பை முறியடித்தது. இது கேசவானந்த பாரதியில் உறுதி செய்யப்பட்டது."
+    },
+    "why_not_others": {
+      "A": { "en": "42nd CAA was enacted in 1976.", "ta": "42வது திருத்தம் 1976-ல் இயற்றப்பட்டது." },
+      "B": { "en": "Correct. 24th CAA 1971 overrode Golak Nath by amending Art 13 & Art 368.", "ta": "சரி. 24வது திருத்தம் 1971 உறுப்புகள் 13 & 368-ஐத் திருத்தி கோலக் நாத் தீர்ப்பை முறியடித்தது." },
+      "C": { "en": "44th CAA was enacted in 1978.", "ta": "44வது திருத்தம் 1978-ல் இயற்றப்பட்டது." },
+      "D": { "en": "25th CAA 1971 inserted Art 31C for DPSP 39(b)&(c).", "ta": "25வது திருத்தம் 1971 DPSP 39(b)&(c)-க்காக உறுப்பு 31C-ஐச் சேர்த்தது." }
+    },
+    "tnpsc_tip": {
+      "en": "24th CAA 1971 added Art 13(4) & Art 368(3) -> Overrode Golak Nath 1967 -> Upheld in Kesavananda 1973.",
+      "ta": "24வது திருத்தம் 1971 உறுப்பு 13(4) & 368(3)-ஐச் சேர்த்தது -> கோலக் நாத் 1967-ஐ முறியடித்தது -> கேசவானந்த 1973-ல் உறுதி செய்யப்பட்டது."
+    },
+    "metadata": { "subject": "Polity", "topic": "Fundamental Rights", "type": "Hard", "level": "TNPSC Group 1" }
+  },
+
+  # Questions 31 to 50 covering complete scope with exact JSON standards...
+  # 31. Multi-Statement / Analytical: Article 21A & RTE Act Legal Requirements - Ans: A
+  {
+    "id": "FR_H_031",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "Hard",
+    "question_type": "Multi-Statement",
+    "question": {
+      "en": "Consider the following statements regarding Article 21A and the Right to Education Act, 2009:\n\n1. Private unaided non-minority schools are legally bound to reserve 25% seats for children from disadvantaged groups.\n2. Minority educational institutions (aided or unaided) are EXEMPTED from the 25% reservation mandate under the RTE Act 2009 (Pramati judgment 2014).\n3. Article 21A covers free education for children from 0 to 18 years.\n\nWhich of the statements given above are correct?",
+      "ta": "உறுப்பு 21A மற்றும் 2009 இலவசக் கல்வி உரிமைச் சட்டம் பற்றிய பின்வரும் கூற்றுகளை ஆராய்க:\n\n1. தனியார் உதவிபெறா சிறுபான்மையற்ற பள்ளிகள் நலிவடைந்த பிரிவைச் சேர்ந்த குழந்தைகளுக்கு 25% இடங்களை ஒதுக்கச் சட்டப்பூர்வமாகக் கடமைப்பட்டுள்ளன.\n2. சிறுபான்மை கல்வி நிறுவனங்கள் (உதவிபெறும்/பெறாதவை) RTE சட்டம் 2009-ன் 25% இடஒதுக்கீடு ஆணையிலிருந்து விலக்கப்பட்டுள்ளன (பிரமதி வழக்கு தீர்ப்பு 2014).\n3. உறுப்பு 21A 0 முதல் 18 வயது வரையிலான குழந்தைகளுக்கு இலவசக் கல்வியை உள்ளடக்குகிறது.\n\nமேற்கூறிய கூற்றுகளில் எவை சரியானவை?"
+    },
+    "options": [
+      { "id": "A", "en": "1 and 2 only", "ta": "1 மற்றும் 2 மட்டுமே" },
+      { "id": "B", "en": "2 and 3 only", "ta": "2 மற்றும் 3 மட்டுமே" },
+      { "id": "C", "en": "1 and 3 only", "ta": "1 மற்றும் 3 மட்டுமே" },
+      { "id": "D", "en": "1, 2 and 3", "ta": "1, 2 மற்றும் 3" }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "Statements 1 and 2 are correct (Pramati Educational Trust 2014 upheld 25% quota in non-minority private schools and exempted Art 30(1) minority schools). Statement 3 is INCORRECT (Art 21A covers 6 to 14 years ONLY).",
+      "ta": "கூற்றுகள் 1 மற்றும் 2 சரி (பிரமதி வழக்கு 2014 தனியார் சிறுபான்மையற்ற பள்ளிகளில் 25% ஒதுக்கீட்டை உறுதி செய்து சிறுபான்மை பள்ளிகளுக்கு விலக்களித்தது). கூற்று 3 தவறு (உறுப்பு 21A 6 முதல் 14 வயதை மட்டுமே உள்ளடக்கும்)."
+    },
+    "why_not_others": {
+      "A": { "en": "Correct. Statements 1 and 2 are true; Statement 3 is false.", "ta": "சரி. கூற்றுகள் 1 மற்றும் 2 சரியானவை; கூற்று 3 தவறானது." },
+      "B": { "en": "Statement 3 is false.", "ta": "கூற்று 3 தவறானது." },
+      "C": { "en": "Statement 3 is false.", "ta": "கூற்று 3 தவறானது." },
+      "D": { "en": "Statement 3 is false.", "ta": "கூற்று 3 தவறானது." }
+    },
+    "tnpsc_tip": {
+      "en": "Pramati Case (2014): RTE Act 2009 25% private quota is valid, but DOES NOT apply to Minority Schools under Art 30(1).",
+      "ta": "பிரமதி வழக்கு (2014): RTE சட்டம் 2009 25% தனியார் ஒதுக்கீடு செல்லுபடியாகும், ஆனால் உறுப்பு 30(1) சிறுபான்மை பள்ளிகளுக்குப் பொருந்தாது."
+    },
+    "metadata": { "subject": "Polity", "topic": "Fundamental Rights", "type": "Hard", "level": "TNPSC Group 1" }
+  },
+
+  # 32. Constitutional Application: Article 300A Property Rights Extent - Ans: C
+  {
+    "id": "FR_H_032",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "Hard",
+    "question_type": "Constitutional Application",
+    "question": {
+      "en": "Which of the following describes the exact constitutional remedy available if the Executive deprives a citizen of private property WITHOUT statutory authority of law?",
+      "ta": "சட்டப்பூர்வ அதிகாரமின்றி நிர்வாகம் ஒரு குடிமகனின் தனியார் சொத்தைப் பறித்தால் கிடைக்கக்கூடிய துல்லியமான அரசியலமைப்புத் தீர்வை விவரிப்பது எது?"
+    },
+    "options": [
+      { "id": "A", "en": "Direct writ petition under Article 32 in Supreme Court for violation of a Fundamental Right.", "ta": "அடிப்படை உரிமை மீறலுக்காக உச்ச நீதிமன்றத்தில் உறுப்பு 32-ன் கீழ் நேரடி மனு." },
+      { "id": "B", "en": "Automatic impeachment of the Minister.", "ta": "அமைச்சரின் தானியங்கி பதவி நீக்கம்." },
+      { "id": "C", "en": "Writ petition under Article 226 in High Court for violation of Article 300A, or filing an ordinary civil suit.", "ta": "உறுப்பு 300A மீறலுக்காக உயர் நீதிமன்றத்தில் உறுப்பு 226-ன் கீழ் மனு தாக்கல் செய்தல் அல்லது சாதாரண சிவில் வழக்கு தொடருதல்." },
+      { "id": "D", "en": "No legal remedy exists because property is no longer protected by the Constitution.", "ta": "சொத்து இனி அரசியலமைப்பால் பாதுகாக்கப்படாததால் எந்தச் சட்டத் தீர்வும் இல்லை." }
+    ],
+    "correct_answer": "C",
+    "explanation": {
+      "en": "Because Right to Property is a legal/constitutional right under Art 300A (not a FR in Part III), violation by executive action without law can be challenged under Art 226 in High Court or civil court, NOT under Art 32 in Supreme Court.",
+      "ta": "சொத்துரிமை பகுதி XII-ல் உறுப்பு 300A-ன் கீழ் சட்டப்பூர்வ உரிமையாக இருப்பதால், சட்டமற்ற நிர்வாக பறிப்பை உயர் நீதிமன்ற உறுப்பு 226 அல்லது சிவில் நீதிமன்றத்தில் மட்டுமே எதிர்க்க முடியும், உறுப்பு 32-ல் அல்ல."
+    },
+    "why_not_others": {
+      "A": { "en": "Art 32 applies ONLY to Fundamental Rights in Part III.", "ta": "உறுப்பு 32 பகுதி III-ல் உள்ள அடிப்படை உரிமைகளுக்கு மட்டுமே பொருந்தும்." },
+      "B": { "en": "Impeachment does not apply.", "ta": "பதவி நீக்கம் பொருந்தாது." },
+      "C": { "en": "Correct. Art 226 in High Court or civil suit is the appropriate remedy for Art 300A violation.", "ta": "சரி. உறுப்பு 300A மீறலுக்கு உயர் நீதிமன்ற உறுப்பு 226 அல்லது சிவில் வழக்கே பொருத்தமான தீர்வு." },
+      "D": { "en": "Art 300A provides constitutional protection against arbitrary executive action.", "ta": "உறுப்பு 300A தன்னிச்சையான நிர்வாக நடவடிக்கைக்கு எதிராக அரசியலமைப்புப் பாதுகாப்பை வழங்குகிறது." }
+    },
+    "tnpsc_tip": {
+      "en": "Art 300A violation -> Art 226 (High Court) / Civil Court; Art 32 (Supreme Court) CANNOT be invoked.",
+      "ta": "உறுப்பு 300A மீறல் -> உறுப்பு 226 (உயர் நீதிமன்றம்) / சிவில் நீதிமன்றம்; உறுப்பு 32 (உச்ச நீதிமன்றம்) பயன்படுத்த முடியாது."
+    },
+    "metadata": { "subject": "Polity", "topic": "Fundamental Rights", "type": "Hard", "level": "TNPSC Group 1" }
+  },
+
+  # 33. High-Level TNPSC Trap: Article 18 Award Titles Balaji Raghavan Ruling - Ans: D
+  {
+    "id": "FR_H_033",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "Hard",
+    "question_type": "High-level TNPSC Trap",
+    "question": {
+      "en": "In Balaji Raghavan v. Union of India (1996), what did the Supreme Court rule regarding National Awards (Bharat Ratna, Padma Vibhushan, Padma Bhushan, Padma Shri) under Article 18?",
+      "ta": "பாலாஜி ராகவன் எதிர் இந்திய யூனியன் (1996) வழக்கில், உறுப்பு 18-ன் கீழ் தேசிய விருதுகள் (பாரத ரத்னா, பத்ம விபூஷன், பத்ம பூஷன், பத்மஸ்ரீ) பற்றி உச்ச நீதிமன்றம் என்ன தீர்ப்பளித்தது?"
+    },
+    "options": [
+      { "id": "A", "en": "Declared National Awards unconstitutional titles and banned them completely.", "ta": "தேசிய விருதுகளை அரசியலமைப்புக்கு முரணான பட்டங்கள் என அறிவித்து முற்றிலும் தடை செய்தது." },
+      { "id": "B", "en": "Ruled that National Awards can be used as prefixes or suffixes to awardees' names.", "ta": "தேசிய விருதுகளை விருது பெற்றவர்களின் பெயர்களுக்கு முன்னொட்டாகவோ பின்னொட்டாகவோ பயன்படுத்தலாம் எனத் தீர்ப்பளித்தது." },
+      { "id": "C", "en": "Ruled that National Awards can be conferred only on military personnel.", "ta": "தேசிய விருதுகளை ராணுவத்தினருக்கு மட்டுமே வழங்க முடியும் எனத் தீர்ப்பளித்தது." },
+      { "id": "D", "en": "Upheld National Awards as valid merit decorations (NOT prohibited 'titles'), BUT ruled that they CANNOT be used as prefixes or suffixes to the awardees' names.", "ta": "தேசிய விருதுகளைச் செல்லுபடியாகும் தகுதி அலங்காரங்களாக (தடைசெய்யப்பட்ட 'பட்டங்கள்' அல்ல) உறுதி செய்தது, ஆனால் அவற்றை விருது பெற்றவர்களின் பெயர்களுக்கு முன்னொட்டாகவோ பின்னொட்டாகவோ பயன்படுத்த முடியாது எனத் தீர்ப்பளித்தது." }
+    ],
+    "correct_answer": "D",
+    "explanation": {
+      "en": "In Balaji Raghavan (1996), SC held National Awards do not violate Art 18 as they are merit decorations, NOT noble titles. However, using them as prefixes/suffixes (e.g. 'Bharat Ratna X') results in forfeiture of award.",
+      "ta": "பாலாஜி ராகவன் (1996) வழக்கில், தேசிய விருதுகள் தகுதி அலங்காரங்கள் என்பதால் உறுப்பு 18-ஐ மீறாது என SC தீர்ப்பளித்தது. ஆனால் அவற்றை பெயருக்கு முன்/பின் பயன்படுத்தினால் (எ.கா. 'பாரத ரத்னா X') விருது திரும்பப் பெறப்படும்."
+    },
+    "why_not_others": {
+      "A": { "en": "National Awards were UPHELD, not banned.", "ta": "தேசிய விருதுகள் உறுதி செய்யப்பட்டன, தடை செய்யப்படவில்லை." },
+      "B": { "en": "Prefix/Suffix usage is EXPRESSLY FORBIDDEN by SC.", "ta": "முன்னொட்டு/பின்னொட்டு பயன்பாடு SC-ஆல் வெளிப்படையாகத் தடை செய்யப்பட்டுள்ளது." },
+      "C": { "en": "National Awards are conferred on civilians for distinguished service.", "ta": "தேசிய விருதுகள் சிறந்த சேவைக்காக சிவிலியன்களுக்கு வழங்கப்படுகின்றன." },
+      "D": { "en": "Correct. National Awards are valid merit decorations, BUT prefix/suffix use is forbidden.", "ta": "சரி. தேசிய விருதுகள் செல்லுபடியாகும் தகுதி அலங்காரங்கள், ஆனால் முன்னொட்டு/பின்னொட்டு பயன்பாடு தடை செய்யப்பட்டுள்ளது." }
+    },
+    "tnpsc_tip": {
+      "en": "Balaji Raghavan (1996) = National Awards valid; Prefix/Suffix usage strictly PROHIBITED.",
+      "ta": "பாலாஜி ராகவன் (1996) = தேசிய விருதுகள் செல்லுபடியாகும்; முன்னொட்டு/பின்னொட்டு பயன்பாடு முற்றிலும் தடை செய்யப்பட்டது."
+    },
+    "metadata": { "subject": "Polity", "topic": "Fundamental Rights", "type": "Hard", "level": "TNPSC Group 1" }
+  },
+
+  # 34. Multi-Statement / Analytical: Article 25 Hindu Definition & Secular Activity Limits - Ans: B
+  {
+    "id": "FR_H_034",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "Hard",
+    "question_type": "Multi-Statement",
+    "question": {
+      "en": "Consider the following statements regarding the Explanations to Article 25:\n\n1. Explanation I explicitly permits the wearing and carrying of Kirpans as part of the profession of the Sikh religion.\n2. Explanation II states that references to 'Hindus' in Article 25(2)(b) shall be construed as including persons professing the Sikh, Jain, or Buddhist religion.\n3. State intervention for social welfare and reform opening public Hindu temples applies ONLY to orthodox Sanatana Hindus.\n\nWhich of the statements given above are correct?",
+      "ta": "உறுப்பு 25-ன் விளக்கங்கள் பற்றிய பின்வரும் கூற்றுகளை ஆராய்க:\n\n1. விளக்கம் I சீக்கிய மதத்தைப் பின்பற்றுதலின் பகுதியாக கிர்பான் (வாள்) அணிவதையும் வைப்பதையும் வெளிப்படையாக அனுமதிக்கிறது.\n2. விளக்கம் II உறுப்பு 25(2)(b)-ல் உள்ள 'இந்துக்கள்' என்ற குறிப்பு சீக்கியர், ஜைனர் அல்லது பௌத்த மதத்தைப் பின்பற்றுவோரையும் உள்ளடக்கியதாகக் கருதப்படும் எனக் கூறுகிறது.\n3. பொது இந்து கோயில்களைத் திறந்துவிடும் சமூக நலன் மற்றும் சீர்திருத்தத்திற்கான அரசின் தலையீடு சனாதன இந்துக்களுக்கு மட்டுமே பொருந்தும்.\n\nமேற்கூறிய கூற்றுகளில் எவை சரியானவை?"
+    },
+    "options": [
+      { "id": "A", "en": "1 and 3 only", "ta": "1 மற்றும் 3 மட்டுமே" },
+      { "id": "B", "en": "1 and 2 only", "ta": "1 மற்றும் 2 மட்டுமே" },
+      { "id": "C", "en": "2 and 3 only", "ta": "2 மற்றும் 3 மட்டுமே" },
+      { "id": "D", "en": "1, 2 and 3", "ta": "1, 2 மற்றும் 3" }
+    ],
+    "correct_answer": "B",
+    "explanation": {
+      "en": "Statements 1 and 2 are correct (Explanations I and II to Art 25). Statement 3 is INCORRECT because Explanation II expands 'Hindu' institutions to include Sikh, Jain, and Buddhist public religious institutions as well.",
+      "ta": "கூற்றுகள் 1 மற்றும் 2 சரி (உறுப்பு 25-ன் விளக்கங்கள் I மற்றும் II). கூற்று 3 தவறு, ஏனெனில் விளக்கம் II 'இந்து' நிறுவனங்களை சீக்கிய, ஜைன, பௌத்த பொது நிறுவனங்களையும் உள்ளடக்கியதாக விரிவுபடுத்துகிறது."
+    },
+    "why_not_others": {
+      "A": { "en": "Statement 3 is false.", "ta": "கூற்று 3 தவறானது." },
+      "B": { "en": "Correct. Statements 1 and 2 are correct; Statement 3 is false.", "ta": "சரி. கூற்றுகள் 1 மற்றும் 2 சரியானவை; கூற்று 3 தவறானது." },
+      "C": { "en": "Statement 3 is false.", "ta": "கூற்று 3 தவறானது." },
+      "D": { "en": "Statement 3 is false.", "ta": "கூற்று 3 தவறானது." }
+    },
+    "tnpsc_tip": {
+      "en": "Article 25 Explanation II: 'Hindu' includes Sikh, Jain, and Buddhist religions for temple entry reform.",
+      "ta": "உறுப்பு 25 விளக்கம் II: கோயில் நுழைவு சீர்திருத்தத்திற்கு 'இந்து' என்பதில் சீக்கியர், ஜைனர், பௌத்த மதங்களும் அடங்கும்."
+    },
+    "metadata": { "subject": "Polity", "topic": "Fundamental Rights", "type": "Hard", "level": "TNPSC Group 1" }
+  },
+
+  # 35. Case-Law Based: Right to Education Unni Krishnan & Mohini Jain Evolution - Ans: C
+  {
+    "id": "FR_H_035",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "Hard",
+    "question_type": "Case-law Based",
+    "question": {
+      "en": "In Unni Krishnan v. State of Andhra Pradesh (1993), how did the Supreme Court modify its earlier extreme ruling in Mohini Jain v. State of Karnataka (1992) regarding the Right to Education?",
+      "ta": "உன்னிகிருஷ்ணன் எதிர் ஆந்திரப் பிரதேசம் (1993) வழக்கில், கல்வி உரிமை தொடர்பாக மோஹினி ஜெயின் எதிர் கர்நாடகா மாநிலம் (1992) வழக்கில் வழங்கிய தனது முந்தைய தீவிரத் தீர்ப்பை உச்ச நீதிமன்றம் எவ்வாறு மாற்றியமைத்தது?"
+    },
+    "options": [
+      { "id": "A", "en": "Unni Krishnan completely rejected the Right to Education as a Fundamental Right.", "ta": "உன்னிகிருஷ்ணன் கல்வி உரிமையை ஒரு அடிப்படை உரிமை அல்ல என முற்றிலும் நிராகரித்தது." },
+      { "id": "B", "en": "Mohini Jain limited education to primary level, whereas Unni Krishnan expanded it to PhD level.", "ta": "மோஹினி ஜெயின் கல்வியைத் தொடக்க நிலையுடன் கட்டுப்படுத்தியது, உன்னிகிருஷ்ணன் அதை முனைவர் (PhD) நிலை வரை விரிவுபடுத்தியது." },
+      { "id": "C", "en": "Mohini Jain declared Right to Education at ALL levels (including professional) a FR under Art 21; Unni Krishnan LIMITED the Fundamental Right to primary education up to 14 years of age, holding higher education subject to State economic capacity.", "ta": "மோஹினி ஜெயின் அனைத்து நிலைகளிலும் (தொழில்முறை உட்பட) கல்வி உரிமையை உறுப்பு 21-ல் FR என அறிவித்தது; உன்னிகிருஷ்ணன் அடிப்படை உரிமையை 14 வயது வரையிலான தொடக்கக் கல்வியுடன் கட்டுப்படுத்தி, உயர்கல்வியை அரசின் பொருளாதார வசதிக்கு உட்பட்டது எனத் தீர்ப்பளித்தது." },
+      { "id": "D", "en": "Unni Krishnan transferred education to the Union List.", "ta": "உன்னிகிருஷ்ணன் கல்வியை மத்தியப் பட்டியலுக்கு மாற்றியது." }
+    ],
+    "correct_answer": "C",
+    "explanation": {
+      "en": "Mohini Jain (1992) held Right to Education at all levels is a FR. Unni Krishnan (1993) refined this: Every child has a FR to free education until 14 years of age; beyond 14, right to education is subject to limits of state economic capacity (drives Art 21A & 86th CAA).",
+      "ta": "மோஹினி ஜெயின் (1992) அனைத்து நிலைகளிலும் கல்வி உரிமை FR என்றது. உன்னிகிருஷ்ணன் (1993) இதைச் சீரமைத்தது: 14 வயது வரை மட்டுமே இலவசக் கல்வி FR; 14-க்கு மேல் அரசின் பொருளாதார வசதிக்கு உட்பட்டது (இதுவே 21A & 86வது திருத்தத்திற்கு வழிவகுத்தது)."
+    },
+    "why_not_others": {
+      "A": { "en": "Unni Krishnan REAFFIRMED Right to Education up to 14 years as a FR.", "ta": "உன்னிகிருஷ்ணன் 14 வயது வரை கல்வி உரிமையை FR என மீண்டும் உறுதிப்படுத்தியது." },
+      "B": { "en": "Reversed description.", "ta": "தலைகீழான விளக்கம்." },
+      "C": { "en": "Correct. Unni Krishnan limited FR education to age 14, setting the stage for Art 21A.", "ta": "சரி. உன்னிகிருஷ்ணன் FR கல்வியை 14 வயதுடன் கட்டுப்படுத்தி உறுப்பு 21A-க்கு அடித்தளமிட்டது." },
+      "D": { "en": "Education remains in Concurrent List (List III).", "ta": "கல்வி பொதுப் பட்டியலில் (List III) உள்ளது." }
+    },
+    "tnpsc_tip": {
+      "en": "Mohini Jain (1992) -> Unni Krishnan (1993 - 14 yrs limit) -> 86th CAA 2002 (Article 21A inserted).",
+      "ta": "மோஹினி ஜெயின் (1992) -> உன்னிகிருஷ்ணன் (1993 - 14 வயது வரம்பு) -> 86வது திருத்தம் 2002 (உறுப்பு 21A சேர்ப்பு)."
+    },
+    "metadata": { "subject": "Polity", "topic": "Fundamental Rights", "type": "Hard", "level": "TNPSC Group 1" }
+  },
+
+  # Questions 36 to 50 completing exact 50 Hard MCQs...
+  # 36. Advanced Conceptual: Articles 19(1)(a) Free Press & Commercial Speech - Ans: B
+  {
+    "id": "FR_H_036",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "Hard",
+    "question_type": "Advanced Conceptual",
+    "question": {
+      "en": "Consider the following implied rights included by Supreme Court interpretation under Article 19(1)(a) Freedom of Speech and Expression:\n\n1. Freedom of the Press (Express Newspapers Case 1958).\n2. Commercial Advertisements / Commercial Speech (Tata Press Case 1995).\n3. Right to Information (State of UP v. Raj Narain 1975).\n4. Right to Telecast / Broadcast (Cricket Association of Bengal Case 1995).\n\nWhich of the above implied rights are recognized under Article 19(1)(a)?",
+      "ta": "உறுப்பு 19(1)(a) பேச்சு மற்றும் கருத்துச் சுதந்திரத்தின் கீழ் உச்ச நீதிமன்ற விளக்கத்தால் சேர்க்கப்பட்ட பின்வரும் உள்ளார்ந்த உரிமைகளை ஆராய்க:\n\n1. பத்திரிகை சுதந்திரம் (எக்ஸ்பிரஸ் செய்தித்தாள் வழக்கு 1958).\n2. வர்த்தக விளம்பரங்கள் / வர்த்தகப் பேச்சு (டாடா பிரஸ் வழக்கு 1995).\n3. தகவல் அறியும் உரிமை (உத்தரப்பிரதேச மாநிலம் எதிர் ராஜ் நரேன் 1975).\n4. ஒளிபரப்பு உரிமை (பெங்கால் கிரிக்கெட் சங்கம் வழக்கு 1995).\n\nமேற்கூறிய உள்ளார்ந்த உரிமைகளில் எவை உறுப்பு 19(1)(a)-ன் கீழ் அங்கீகரிக்கப்பட்டுள்ளன?"
+    },
+    "options": [
+      { "id": "A", "en": "1 and 3 only", "ta": "1 மற்றும் 3 மட்டுமே" },
+      { "id": "B", "en": "1, 2, 3 and 4", "ta": "1, 2, 3 மற்றும் 4" },
+      { "id": "C", "en": "1, 3 and 4 only", "ta": "1, 3 மற்றும் 4 மட்டுமே" },
+      { "id": "D", "en": "2 and 4 only", "ta": "2 மற்றும் 4 மட்டுமே" }
+    ],
+    "correct_answer": "B",
+    "explanation": {
+      "en": "All 4 implied rights (Freedom of Press, Commercial Speech, Right to Information, and Right to Telecast) have been recognized by the Supreme Court as integral aspects of Article 19(1)(a).",
+      "ta": "4 உள்ளார்ந்த உரிமைகளுமே (பத்திரிகை சுதந்திரம், வர்த்தக விளம்பரம், தகவல் அறியும் உரிமை, ஒளிபரப்பு உரிமை) உறுப்பு 19(1)(a)-ன் அங்கங்களாக உச்ச நீதிமன்றத்தால் அங்கீகரிக்கப்பட்டுள்ளன."
+    },
+    "why_not_others": {
+      "A": { "en": "Statements 2 and 4 are also recognized.", "ta": "கூற்றுகள் 2 மற்றும் 4-ம் அங்கீகரிக்கப்பட்டவை." },
+      "B": { "en": "Correct. All 4 rights are implied under Art 19(1)(a).", "ta": "சரி. 4 உரிமைகளுமே உறுப்பு 19(1)(a)-ன் கீழ் உள்ளார்ந்தவை." },
+      "C": { "en": "Statement 2 is also recognized.", "ta": "கூற்று 2-ம் அங்கீகரிக்கப்பட்டது." },
+      "D": { "en": "Statements 1 and 3 are also recognized.", "ta": "கூற்றுகள் 1 மற்றும் 3-ம் அங்கீகரிக்கப்பட்டவை." }
+    },
+    "tnpsc_tip": {
+      "en": "Article 19(1)(a) includes Freedom of Press, RTI, Commercial Speech, and Right to Silence.",
+      "ta": "உறுப்பு 19(1)(a) பத்திரிகை சுதந்திரம், RTI, வர்த்தகப் பேச்சு, மற்றும் மௌன உரிமையையும் உள்ளடக்கும்."
+    },
+    "metadata": { "subject": "Polity", "topic": "Fundamental Rights", "type": "Hard", "level": "TNPSC Group 1" }
+  },
+
+  # 37. Constitutional Application: Article 32 vs Article 226 Locus Standi PIL Evolution - Ans: D
+  {
+    "id": "FR_H_037",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "Hard",
+    "question_type": "Constitutional Application",
+    "question": {
+      "en": "In S.P. Gupta v. Union of India (1981 - Judges Transfer Case), how did Justice P.N. Bhagwati revolutionize writ jurisdiction under Articles 32 and 226?",
+      "ta": "எஸ்.பி. குப்தா எதிர் இந்திய யூனியன் (1981 - நீதிபதிகள் இடமாற்ற வழக்கு) வழக்கில், நீதிபதி P.N. பகவதி உறுப்புகள் 32 மற்றும் 226-ன் கீழ் உள்ள மனு அதிகார வரம்பில் என்ன புரட்சிகரமான மாற்றத்தை செய்தார்?"
+    },
+    "options": [
+      { "id": "A", "en": "Abolished writ jurisdiction of High Courts.", "ta": "உயர் நீதிமன்றங்களின் மனு அதிகார வரம்பை ஒழித்தார்." },
+      { "id": "B", "en": "Restricted writ filing to advocates with 20 years experience.", "ta": "20 ஆண்டுகள் அனுபவமுள்ள வழக்கறிஞர்களுக்கு மட்டுமே மனு தாக்கல் செய்வதைக் கட்டுப்படுத்தினார்." },
+      { "id": "C", "en": "Banned non-governmental organizations from entering courts.", "ta": "அரசுசாரா அமைப்புகள் நீதிமன்றங்களுக்குள் நுழைவதைத் தடை செய்தார்." },
+      { "id": "D", "en": "Formalized Public Interest Litigation (PIL) by relaxing Locus Standi, allowing any public-spirited citizen/NGO to move court under Art 32/226 for enforcement of FRs of disadvantaged persons.", "ta": "பாதிக்கப்பட்ட ஏழை/நலிவடைந்த நபர்களின் அடிப்படை உரிமைகளை நிலைநாட்ட எந்தவொரு பொதுநலக் குடிமகனும்/NGO-வும் உறுப்பு 32/226-ன் கீழ் நீதிமன்றத்தை அணுக மனு உரிமையை (Locus Standi) தளர்த்தி பொதுநல வழக்கிற்கு (PIL) வடிவம் கொடுத்தார்." }
+    ],
+    "correct_answer": "D",
+    "explanation": {
+      "en": "In S.P. Gupta (1981), Justice P.N. Bhagwati laid down firm principles of Public Interest Litigation (PIL), holding that where a legal injury is caused to a person unable to approach court due to poverty/disability, any member of the public can maintain a writ petition under Art 32/226.",
+      "ta": "எஸ்.பி. குப்தா (1981) வழக்கில், வறுமையால் நீதிமன்றத்தை அணுக முடியாதவருக்குப் பாதிப்பு ஏற்பட்டால் எந்தவொரு பொது நநபரும் உறுப்பு 32/226-ன் கீழ் மனு தாக்கல் செய்யக்கூடும் என PIL தத்துவங்களை P.N. பகவதி நிறுவினார்."
+    },
+    "why_not_others": {
+      "A": { "en": "High Court writ jurisdiction was expanded, not abolished.", "ta": "உயர் நீதிமன்ற மனு அதிகாரம் விரிவுபடுத்தப்பட்டது, ஒழிக்கப்படவில்லை." },
+      "B": { "en": "Advocate experience threshold was not prescribed.", "ta": "வழக்கறிஞர் அனுபவ வரம்பு விதிக்கப்படவில்லை." },
+      "C": { "en": "NGOs were actively PERMITTED to file PILs.", "ta": "NGOs PIL தாக்கல் செய்ய தீவிரமாக அனுமதிக்கப்பட்டன." },
+      "D": { "en": "Correct. S.P. Gupta 1981 formalized Public Interest Litigation (PIL) in India.", "ta": "சரி. எஸ்.பி. குப்தா 1981 இந்தியாவில் பொதுநல வழக்கிற்கு (PIL) வடிவமளித்தது." }
+    },
+    "tnpsc_tip": {
+      "en": "S.P. Gupta (1981) = Judges Transfer Case = Watershed for PIL (Public Interest Litigation) in India.",
+      "ta": "எஸ்.பி. குப்தா (1981) = நீதிபதிகள் இடமாற்ற வழக்கு = இந்தியாவில் PIL (பொதுநல வழக்கு) திருப்புமுனை."
+    },
+    "metadata": { "subject": "Polity", "topic": "Fundamental Rights", "type": "Hard", "level": "TNPSC Group 1" }
+  },
+
+  # 38. High-Level TNPSC Trap: Article 20(2) Double Jeopardy Administrative Disciplinary Action - Ans: A
+  {
+    "id": "FR_H_038",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "Hard",
+    "question_type": "High-level TNPSC Trap",
+    "question": {
+      "en": "In S.A. Venkataraman v. Union of India (1954), a civil servant was dismissed following an inquiry under the Public Servants (Inquiries) Act 1950 and subsequently prosecuted under the Prevention of Corruption Act. Why did the Supreme Court reject the plea of Double Jeopardy under Article 20(2)?",
+      "ta": "எஸ்.ஏ. வெங்கடராமன் எதிர் இந்திய யூனியன் (1954) வழக்கில், 1950 அரசு ஊழியர் விசாரணைச் சட்டத்தின் கீழ் விசாரணைக்குப் பின் ஒரு சிவில் ஊழியர் பணிநீக்கம் செய்யப்பட்டு, பின்னர் ஊழல் தடுப்புச் சட்டத்தின் கீழ் விசாரிக்கப்பட்டார். உறுப்பு 20(2) இரட்டை தண்டனை மனுவை உச்ச நீதிமன்றம் ஏன் நிராகரித்தது?"
+    },
+    "options": [
+      { "id": "A", "en": "Because the prior departmental inquiry commissioner was NOT a Court of Law or Judicial Tribunal, and departmental dismissal was an administrative penalty, NOT a judicial prosecution.", "ta": "ஏனெனில் முந்தைய துறைசார் விசாரணை ஆணையர் ஒரு நீதிமன்றம் அல்லது நீதித்துறை தீர்ப்பாயம் அல்ல, மேலும் துறைசார் பணிநீக்கம் ஒரு நிர்வாகத் தண்டனையே (administrative penalty) தவிர நீதித்துறை விசாரணையின் தண்டனை அல்ல." },
+      { "id": "B", "en": "Because civil servants are exempt from Article 20 protection.", "ta": "ஏனெனில் அரசு ஊழியர்களுக்கு உறுப்பு 20 பாதுகாப்பிலிருந்து விலக்கு உண்டு." },
+      { "id": "C", "en": "Because Prevention of Corruption Act overrides Part III.", "ta": "ஏனெனில் ஊழல் தடுப்புச் சட்டம் பகுதி III-ஐ முறியடிக்கிறது." },
+      { "id": "D", "en": "Because double jeopardy applies only to property cases.", "ta": "ஏனெனில் இரட்டை தண்டனைத் தடை சொத்து வழக்குகளுக்கு மட்டுமே பொருந்தும்." }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "In Venkataraman (1954), SC held that Art 20(2) applies ONLY when both proceedings are judicial prosecutions before a court/tribunal. Departmental inquiries are administrative in nature and do not bar criminal prosecution.",
+      "ta": "வெங்கடராமன் (1954) வழக்கில், இரண்டு நடவடிக்கைகளுமே நீதிமன்ற விசாரணைக்கு முன் இருந்தால் மட்டுமே 20(2) பொருந்தும் என SC தீர்ப்பளித்தது. துறைசார் விசாரணை நிர்வாக சார்ந்ததே."
+    },
+    "why_not_others": {
+      "A": { "en": "Correct. Departmental proceedings != Judicial prosecution -> Art 20(2) not attracted.", "ta": "சரி. துறைசார் நடவடிக்கை != நீதி விசாரணை -> உறுப்பு 20(2) பொருந்தாது." },
+      "B": { "en": "Civil servants enjoy Art 20 criminal protections.", "ta": "அரசு ஊழியர்களுக்கு உறுப்பு 20 குற்றவியல் பாதுகாப்புகள் உண்டு." },
+      "C": { "en": "No statute overrides Part III.", "ta": "எந்தச் சட்டமும் பகுதி III-ஐ முறியடிக்காது." },
+      "D": { "en": "Double jeopardy applies to criminal prosecutions.", "ta": "இரட்டை தண்டனைத் தடை குற்றவியல் வழக்குகளுக்குப் பொருந்தும்." }
+    },
+    "tnpsc_tip": {
+      "en": "TRAP: Departmental Penalty + Criminal Prosecution does NOT violate Art 20(2) Double Jeopardy.",
+      "ta": "பொறி: துறைசார் தண்டனை + குற்றவியல் வழக்கு உறுப்பு 20(2) இரட்டை தண்டனைத் தடையை மீறாது."
+    },
+    "metadata": { "subject": "Polity", "topic": "Fundamental Rights", "type": "Hard", "level": "TNPSC Group 1" }
+  },
+
+  # 39. Multi-Statement / Analytical: Right to Education Article 21A & 86th CAA Scope - Ans: C
+  {
+    "id": "FR_H_039",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "Hard",
+    "question_type": "Multi-Statement",
+    "question": {
+      "en": "Consider the following statements regarding the Right to Education under Article 21A:\n\n1. Article 21A makes free and compulsory education a Fundamental Right for children aged 6 to 14 years in such manner as the State may, by law, determine.\n2. The Right of Children to Free and Compulsory Education (RTE) Act was enacted in 2009 and came into force on April 1, 2010.\n3. The RTE Act 2009 extends the right of free education up to university degree level for all BPL students.\n\nWhich of the statements given above are correct?",
+      "ta": "உறுப்பு 21A-ன் கீழ் உள்ள கல்வி உரிமை பற்றிய பின்வரும் கூற்றுகளை ஆராய்க:\n\n1. உறுப்பு 21A 6 முதல் 14 வயதுக் குழந்தைகளுக்கு அரசு சட்டத்தால் நிர்ணயிக்கும் முறையில் இலவச மற்றும் கட்டாயக் கல்வியை ஒரு அடிப்படை உரிமையாக்குகிறது.\n2. குழந்தைகளின் இலவச மற்றும் கட்டாயக் கல்வி உரிமைச் சட்டம் (RTE) 2009-ல் இயற்றப்பட்டு ஏப்ரல் 1, 2010 அன்று அமலுக்கு வந்தது.\n3. RTE சட்டம் 2009 வறுமைக் கோட்டிற்கு கீழ் உள்ள அனைத்து மாணவர்களுக்கும் பல்கலைக்கழக பட்டப்படிப்பு நிலை வரை இலவசக் கல்வி உரிமையை விரிவுபடுத்துகிறது.\n\nமேற்கூறிய கூற்றுகளில் எவை சரியானவை?"
+    },
+    "options": [
+      { "id": "A", "en": "1 and 3 only", "ta": "1 மற்றும் 3 மட்டுமே" },
+      { "id": "B", "en": "2 and 3 only", "ta": "2 மற்றும் 3 மட்டுமே" },
+      { "id": "C", "en": "1 and 2 only", "ta": "1 மற்றும் 2 மட்டுமே" },
+      { "id": "D", "en": "1, 2 and 3", "ta": "1, 2 மற்றும் 3" }
+    ],
+    "correct_answer": "C",
+    "explanation": {
+      "en": "Statements 1 and 2 are correct. Statement 3 is INCORRECT because the RTE Act 2009 and Article 21A apply strictly to elementary education (6 to 14 years / Classes I to VIII), NOT university education.",
+      "ta": "கூற்றுகள் 1 மற்றும் 2 சரி. கூற்று 3 தவறு, ஏனெனில் RTE சட்டம் 2009 மற்றும் உறுப்பு 21A தொடக்கக் கல்விக்கு மட்டுமே (6 முதல் 14 வயது / 1 முதல் 8ம் வகுப்பு) பொருந்தும், பல்கலைக்கழகக் கல்விக்கு அல்ல."
+    },
+    "why_not_others": {
+      "A": { "en": "Statement 3 is false.", "ta": "கூற்று 3 தவறானது." },
+      "B": { "en": "Statement 3 is false.", "ta": "கூற்று 3 தவறானது." },
+      "C": { "en": "Correct. Statements 1 and 2 are correct; Statement 3 is false.", "ta": "சரி. கூற்றுகள் 1 மற்றும் 2 சரியானவை; கூற்று 3 தவறானது." },
+      "D": { "en": "Statement 3 is false.", "ta": "கூற்று 3 தவறானது." }
+    },
+    "tnpsc_tip": {
+      "en": "Article 21A & RTE Act 2009 = Elementary Education (Ages 6-14 / Classes 1-8). Enforced April 1, 2010.",
+      "ta": "உறுப்பு 21A & RTE சட்டம் 2009 = தொடக்கக் கல்வி (6-14 வயது / 1-8 வகுப்புகள்). அமல் ஏப்ரல் 1, 2010."
+    },
+    "metadata": { "subject": "Polity", "topic": "Fundamental Rights", "type": "Hard", "level": "TNPSC Group 1" }
+  },
+
+  # 40. Constitutional Application: Article 356 Dismissal & Secularism (SR Bommai) - Ans: B
+  {
+    "id": "FR_H_040",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "Hard",
+    "question_type": "Constitutional Application",
+    "question": {
+      "en": "A State Government pursues state policies violating the constitutional principle of Secularism. Under the ruling in S.R. Bommai (1994), what constitutional action can the Union Government take against that State Government?",
+      "ta": "ஒரு மாநில அரசு மதச்சார்பின்மை என்ற அரசியலமைப்புக் கோட்பாட்டை மீறும் மாநிலக் கொள்கைகளைப் பின்பற்றுகிறது. எஸ்.ஆர். பொம்மை (1994) தீர்ப்பின் கீழ், மத்திய அரசு அம்மாநில அரசுக்கு எதிராக என்ன அரசியலமைப்பு நடவடிக்கையை எடுக்க முடியும்?"
+    },
+    "options": [
+      { "id": "A", "en": "No action can be taken because secularism is not mentioned in Part III.", "ta": "மதச்சார்பின்மை பகுதி III-ல் குறிப்பிடப்படாததால் எந்த நடவடிக்கையும் எடுக்க முடியாது." },
+      { "id": "B", "en": "The Union Government can issue directions under Article 356 (President's Rule) to dismiss the State Government, because Secularism is part of the Basic Structure and violating it amounts to breakdown of constitutional machinery in the State.", "ta": "மத்திய அரசு உறுப்பு 356-ன் கீழ் (குடியரசுத் தலைவர் ஆட்சி) மாநில அரசைப் பணிநீக்கம் செய்ய வழிநடத்தலாம், ஏனெனில் மதச்சார்பின்மை அடிப்படை கட்டமைப்பின் பகுதியாகும், அதை மீறுவது மாநிலத்தில் அரசியலமைப்பு இயந்திரத்தின் முறிவாகக் கருதப்படும்." },
+      { "id": "C", "en": "The Governor can dissolve Parliament immediately.", "ta": "ஆளுநர் நாடாளுமன்றத்தை உடனடியாகக் கலைக்க முடியும்." },
+      { "id": "D", "en": "The Supreme Court will automatically take over administration of the State.", "ta": "உச்ச நீதிமன்றம் மாநில நிர்வாகத்தைத் தானாகவே பொறுப்பேற்கும்." }
+    ],
+    "correct_answer": "B",
+    "explanation": {
+      "en": "In S.R. Bommai (1994), SC held that Secularism is a Basic Feature of the Constitution. If a State Government acts against secularism, it is a ground for imposing President's Rule under Article 356.",
+      "ta": "எஸ்.ஆர். பொம்மை (1994) வழக்கில், மதச்சார்பின்மை அடிப்படை அம்சம் என SC தீர்ப்பளித்தது. ஒரு மாநில அரசு மதச்சார்பின்மைக்கு எதிராகச் செயல்பட்டால் அது உறுப்பு 356-ன் கீழ் குடியரசுத் தலைவர் ஆட்சி விதிக்க காரணியாகும்."
+    },
+    "why_not_others": {
+      "A": { "en": "Secularism is a Basic Feature of the whole Constitution.", "ta": "மதச்சார்பின்மை முழு அரசியலமைப்பின் அடிப்படை அம்சமாகும்." },
+      "B": { "en": "Correct. Anti-secular state action = Breakdown of constitutional machinery -> Art 356 President's Rule valid.", "ta": "சரி. மதச்சார்பற்ற தன்மைக்கு எதிரான நடவடிக்கை = அரசியலமைப்பு இயந்திர முறிவு -> உறுப்பு 356 குடியரசுத் தலைவர் ஆட்சி செல்லுபடியாகும்." },
+      "C": { "en": "Governor cannot dissolve Parliament.", "ta": "ஆளுநர் நாடாளுமன்றத்தைக் கலைக்க முடியாது." },
+      "D": { "en": "Supreme Court does not run state administration.", "ta": "உச்ச நீதிமன்றம் மாநில நிர்வாகத்தை நடத்துவதில்லை." }
+    },
+    "tnpsc_tip": {
+      "en": "S.R. Bommai (1994) = Anti-secular state policies justify Article 356 dismissal.",
+      "ta": "எஸ்.ஆர். பொம்மை (1994) = மதச்சார்பின்மைக்கு எதிரான மாநிலக் கொள்கைகள் உறுப்பு 356 பணிநீக்கத்தை நியாயப்படுத்துகின்றன."
+    },
+    "metadata": { "subject": "Polity", "topic": "Fundamental Rights", "type": "Hard", "level": "TNPSC Group 1" }
+  },
+
+  # 41. Advanced Conceptual: Articles 14, 19, 21 Interconnection Tests - Ans: A
+  {
+    "id": "FR_H_041",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "Hard",
+    "question_type": "Advanced Conceptual",
+    "question": {
+      "en": "When a law enacted by Parliament deprives a person of personal liberty under Article 21, what three cumulative constitutional tests must that law satisfy after Maneka Gandhi (1978)?",
+      "ta": "நாடாளுமன்றத்தால் இயற்றப்பட்ட ஒரு சட்டம் உறுப்பு 21-ன் கீழ் ஒரு நபரின் தனிநபர் சுதந்திரத்தைப் பறிக்கும் போது, மேனகா காந்திக்குக் (1978) பின் அச்சட்டம் எந்த மூன்று கூட்டு அரசியலமைப்பு சோதனைகளையும் பூர்த்தி செய்ய வேண்டும்?"
+    },
+    "options": [
+      { "id": "A", "en": "1. It must prescribe a valid procedure under a valid law, 2. The procedure must be just, fair and reasonable (not arbitrary under Art 14), and 3. The procedure must satisfy reasonable restrictions under Art 19.", "ta": "1. செல்லுபடியாகும் சட்டத்தின் கீழ் செல்லுபடியாகும் நடைமுறையை நிர்ணயிக்க வேண்டும், 2. நடைமுறை நியாயமானதாக, நேர்மையானதாக இருக்க வேண்டும் (உறுப்பு 14-ன் கீழ் தன்னிச்சையானதாக இருக்கக்கூடாது), மற்றும் 3. நடைமுறை உறுப்பு 19-ன் கீழ் நியாயமான கட்டுப்பாடுகளை பூர்த்தி செய்ய வேண்டும்." },
+      { "id": "B", "en": "1. Ratification by half the State assemblies, 2. Approval by Finance Commission, and 3. Presidential ordinance.", "ta": "1. பாதி மாநில சட்டமன்றங்களின் ஒப்புதல், 2. நிதி ஆணைய ஒப்புதல், மற்றும் 3. குடியரசுத் தலைவர் அவசரச் சட்டம்." },
+      { "id": "C", "en": "1. Inclusion in the 9th Schedule, 2. Governor approval, and 3. Panchayat resolution.", "ta": "1. 9வது அட்டவணையில் சேர்ப்பு, 2. ஆளுநர் ஒப்புதல், மற்றும் 3. பஞ்சாயத்து தீர்மானம்." },
+      { "id": "D", "en": "1. Unanimous vote in Lok Sabha, 2. Attorney General sanction, and 3. Exception of all civil liabilities.", "ta": "1. மக்களவையில் ஏகமனதான வாக்கு, 2. தலைமை வழக்கறிஞர் அனுமதி, மற்றும் 3. அனைத்து சிவில் பொறுப்புகள் விலக்கு." }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "Maneka Gandhi (1978) established that procedure depriving life/liberty under Art 21 must satisfy the combined test of Articles 14, 19, and 21 ('Golden Triangle' triple test).",
+      "ta": "மேனகா காந்தி (1978) உறுப்பு 21-ன் கீழ் வாழ்வு/சுதந்திரத்தைப் பறிக்கும் நடைமுறை உறுப்புகள் 14, 19, மற்றும் 21-ன் கூட்டுச் சோதனையை ('தங்க முக்கோணம்' முப்பரிமாண சோதனை) பூர்த்தி செய்ய வேண்டும் என நிறுவியது."
+    },
+    "why_not_others": {
+      "A": { "en": "Correct. Valid procedure + Art 14 fairness + Art 19 reasonableness is the triple test.", "ta": "சரி. செல்லுபடியாகும் நடைமுறை + உறுப்பு 14 நேர்மை + உறுப்பு 19 நியாயம் ஆகியவையே முப்பரிமாண சோதனையாகும்." },
+      "B": { "en": "State ratification is not for ordinary penal laws.", "ta": "சாதாரண தண்டனைச் சட்டங்களுக்கு மாநில ஒப்புதல் தேவையில்லை." },
+      "C": { "en": "9th Schedule is not a test for Art 21 validity.", "ta": "9வது அட்டவணை உறுப்பு 21 செல்லுபடிக்கான சோதனை அல்ல." },
+      "D": { "en": "Attorney General sanction is irrelevant.", "ta": "தலைமை வழக்கறிஞர் அனுமதி தொடர்பற்றது." }
+    },
+    "tnpsc_tip": {
+      "en": "Triple Test of Article 21 = Law + Art 14 fairness + Art 19 reasonableness.",
+      "ta": "உறுப்பு 21-ன் முப்பரிமாண சோதனை = சட்டம் + உறுப்பு 14 நேர்மை + உறுப்பு 19 நியாயம்."
+    },
+    "metadata": { "subject": "Polity", "topic": "Fundamental Rights", "type": "Hard", "level": "TNPSC Group 1" }
+  },
+
+  # 42. High-Level TNPSC Trap: Article 30(1) vs Article 30(1A) Property Compensation - Ans: C
+  {
+    "id": "FR_H_042",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "Hard",
+    "question_type": "High-level TNPSC Trap",
+    "question": {
+      "en": "Following the deletion of the Right to Property from Part III in 1978, which two specific situations STILL RETAIN a constitutional guarantee of compensation when the State compulsorily acquires land?",
+      "ta": "1978-ல் பகுதி III லிருந்து சொத்துரிமை நீக்கப்பட்டதைத் தொடர்ந்து, அரசு கட்டாயமாக நிலத்தைக் கையகப்படுத்தும் போது எந்த இரண்டு குறிப்பிட்ட சூழ்நிலைகள் இன்னும் அரசியலமைப்பு ரீதியான இழப்பீட்டு உத்தரவாதத்தைத் தக்கவைத்துக் கொண்டுள்ளன?"
+    },
+    "options": [
+      { "id": "A", "en": "1. Industrial corporate land, and 2. Mining properties.", "ta": "1. தொழில் நிறுவன நிலங்கள், மற்றும் 2. சுரங்கச் சொத்துக்கள்." },
+      { "id": "B", "en": "1. Government quarters, and 2. Public parks.", "ta": "1. அரசு குடியிருப்பு நிலங்கள், மற்றும் 2. பொதுப் பூங்காக்கள்." },
+      { "id": "C", "en": "1. Property of a Minority Educational Institution (Article 30(1A)), and 2. Land held by a person under personal cultivation within the statutory ceiling limit (Article 31A proviso).", "ta": "1. சிறுபான்மை கல்வி நிறுவனத்தின் சொத்து (உறுப்பு 30(1A)), மற்றும் 2. சட்டப்பூர்வ உச்ச வரம்பிற்குள் ஒருவர் சொந்தச் சாகுபடியில் வைத்துள்ள நிலம் (உறுப்பு 31A விதிவிலக்கு)." },
+      { "id": "D", "en": "1. Foreign embassy property, and 2. Religious temples of majority community.", "ta": "1. வெளிநாட்டுத் தூதரகச் சொத்து, மற்றும் 2. பெரும்பான்மை சமூகத்தின் மதக் கோயில்கள்." }
+    ],
+    "correct_answer": "C",
+    "explanation": {
+      "en": "Even after the 44th CAA 1978, constitutional compensation guarantee survives ONLY in two cases: 1. Art 30(1A) minority educational institution property, and 2. Art 31A second proviso (personal cultivation land within ceiling limit).",
+      "ta": "44வது திருத்தம் 1978-க்குப் பிறகும் அரசியலமைப்பு இழப்பீட்டு உத்தரவாதம் 2 சந்தர்ப்பங்களில் மட்டுமே நீடிக்கிறது: 1. உறுப்பு 30(1A) சிறுபான்மை கல்வி நிறுவனச் சொத்து, மற்றும் 2. உறுப்பு 31A 2வது விதிவிலக்கு (வரம்பிற்குள் சொந்த சாகுபடி நிலம்)."
+    },
+    "why_not_others": {
+      "A": { "en": "Corporate and mining land do not have constitutional compensation guarantees.", "ta": "நிறுவன மற்றும் சுரங்க நிலங்களுக்கு அரசியலமைப்பு இழப்பீட்டு உத்தரவாதம் இல்லை." },
+      "B": { "en": "Public parks do not have constitutional compensation guarantees.", "ta": "பொதுப் பூங்காக்களுக்கு அரசியலமைப்பு இழப்பீட்டு உத்தரவாதம் இல்லை." },
+      "C": { "en": "Correct. Arts 30(1A) & 31A proviso are the ONLY two constitutional compensation exceptions surviving today.", "ta": "சரி. உறுப்புகள் 30(1A) & 31A விதிவிலக்கு ஆகியவை மட்டுமே இன்று நீடிக்கும் 2 அரசியலமைப்பு இழப்பீட்டு விலக்குகள்." },
+      "D": { "en": "Foreign embassy property is governed by international diplomatic law.", "ta": "வெளிநாட்டுத் தூதரகச் சொத்து சர்வதேசத் தூதரகச் சட்டத்தால் ஆளப்படுகிறது." }
+    },
+    "tnpsc_tip": {
+      "en": "TRAP: Constitutional compensation guarantee survives ONLY under Art 30(1A) (Minority school) and Art 31A proviso (Personal cultivation land).",
+      "ta": "பொறி: அரசியலமைப்பு இழப்பீட்டு உத்தரவாதம் உறுப்பு 30(1A) (சிறுபான்மை பள்ளி) மற்றும் உறுப்பு 31A (சொந்த சாகுபடி நிலம்) ஆகிய 2-ல் மட்டுமே நீடிக்கிறது."
+    },
+    "metadata": { "subject": "Polity", "topic": "Fundamental Rights", "type": "Hard", "level": "TNPSC Group 1" }
+  },
+
+  # 43. Multi-Statement / Analytical: Fundamental Rights Non-Absolute Character - Ans: A
+  {
+    "id": "FR_H_043",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "Hard",
+    "question_type": "Multi-Statement",
+    "question": {
+      "en": "Consider the following statements regarding the general characteristics of Fundamental Rights in India:\n\n1. Fundamental Rights are qualified rights, NOT absolute rights, as the State can impose reasonable restrictions on them.\n2. Most Fundamental Rights are available against the arbitrary action of the State, while some are also available against private individuals.\n3. All Fundamental Rights are automatically suspended during a proclamation of National Emergency under Article 352.\n\nWhich of the statements given above are correct?",
+      "ta": "இந்தியாவில் அடிப்படை உரிமைகளின் பொதுவான அம்சங்கள் பற்றிய பின்வரும் கூற்றுகளை ஆராய்க:\n\n1. அடிப்படை உரிமைகள் வரம்பிற்குட்பட்ட உரிமைகள் (qualified rights), முற்றுமுழுதான உரிமைகள் (absolute rights) அல்ல, ஏனெனில் அரசு அவற்றின் மீது நியாயமான கட்டுப்பாடுகளை விதிக்க முடியும்.\n2. பெரும்பாலான அடிப்படை உரிமைகள் அரசின் தன்னிச்சையான நடவடிக்கைக்கு எதிராகக் கிடைக்கக்கூடியவை, சில உரிமைகள் தனியார் நபர்களுக்கு எதிராகவும் கிடைக்கக்கூடியவை.\n3. உறுப்பு 352-ன் கீழ் தேசிய அவசரநிலை பிரகடனத்தின் போது அனைத்து அடிப்படை உரிமைகளும் தானாகவே இடைநிறுத்தப்படுகின்றன.\n\nமேற்கூறிய கூற்றுகளில் எவை சரியானவை?"
+    },
+    "options": [
+      { "id": "A", "en": "1 and 2 only", "ta": "1 மற்றும் 2 மட்டுமே" },
+      { "id": "B", "en": "2 and 3 only", "ta": "2 மற்றும் 3 மட்டுமே" },
+      { "id": "C", "en": "1 and 3 only", "ta": "1 மற்றும் 3 மட்டுமே" },
+      { "id": "D", "en": "1, 2 and 3", "ta": "1, 2 மற்றும் 3" }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "Statements 1 and 2 are correct. Statement 3 is INCORRECT because Articles 20 and 21 CANNOT be suspended during National Emergency under any circumstances (44th CAA 1978), and Art 19 is suspended only during external emergency (Art 358).",
+      "ta": "கூற்றுகள் 1 மற்றும் 2 சரி. கூற்று 3 தவறு, ஏனெனில் உறுப்புகள் 20 மற்றும் 21 எந்தச் சூழ்நிலையிலும் தேசிய அவசரநிலையின் போது இடைநிறுத்தப்பட முடியாது (44வது திருத்தம் 1978)."
+    },
+    "why_not_others": {
+      "A": { "en": "Correct. Statements 1 and 2 are true; Statement 3 is false.", "ta": "சரி. கூற்றுகள் 1 மற்றும் 2 சரியானவை; கூற்று 3 தவறானது." },
+      "B": { "en": "Statement 3 is false.", "ta": "கூற்று 3 தவறானது." },
+      "C": { "en": "Statement 3 is false.", "ta": "கூற்று 3 தவறானது." },
+      "D": { "en": "Statement 3 is false.", "ta": "கூற்று 3 தவறானது." }
+    },
+    "tnpsc_tip": {
+      "en": "Fundamental Rights are qualified (not absolute) & justiciable. Articles 20 and 21 can NEVER be suspended.",
+      "ta": "அடிப்படை உரிமைகள் வரம்பிற்குட்பட்டவை (முற்றுமுழுதானவை அல்ல) & நிலைநிறுத்தக்கூடியவை. உறுப்புகள் 20 மற்றும் 21-ஐ ஒருபோதும் இடைநிறுத்த முடியாது."
+    },
+    "metadata": { "subject": "Polity", "topic": "Fundamental Rights", "type": "Hard", "level": "TNPSC Group 1" }
+  },
+
+  # 44. Case-Law Based: 93rd CAA & Higher Education Reservation (Ashoka Kumar Thakur) - Ans: B
+  {
+    "id": "FR_H_044",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "Hard",
+    "question_type": "Amendment / Basic Structure",
+    "question": {
+      "en": "In Ashoka Kumar Thakur v. Union of India (2008), what landmark ruling did the Supreme Court deliver regarding Article 15(5) (93rd CAA 2005) and 27% OBC reservation in higher educational institutions?",
+      "ta": "அசோக் குமார் தாக்கூர் எதிர் இந்திய யூனியன் (2008) வழக்கில், உறுப்பு 15(5) (93வது திருத்தம் 2005) மற்றும் உயர்கல்வி நிறுவனங்களில் 27% OBC இடஒதுக்கீடு குறித்து உச்ச நீதிமன்றம் என்ன மைல்கல் தீர்ப்பை வழங்கியது?"
+    },
+    "options": [
+      { "id": "A", "en": "Struck down 93rd CAA as violating the Basic Structure.", "ta": "அடிப்படை கட்டமைப்பை மீறுவதாகக் கூறி 93வது திருத்தத்தை ரத்து செய்தது." },
+      { "id": "B", "en": "Upheld the constitutional validity of Article 15(5) and 27% OBC quota in central educational institutions, subject to the exclusion of the 'Creamy Layer'.", "ta": "உறுப்பு 15(5) மற்றும் மத்திய கல்வி நிறுவனங்களில் 27% OBC ஒதுக்கீட்டின் அரசியலமைப்புச் செல்லுபடியை 'கிரீமி லேயர்' (சலுகை பெற்ற மேல்தட்டு) விலக்கத்திற்கு உட்பட்டு உறுதி செய்தது." },
+      { "id": "C", "en": "Abolished OBC reservation in private colleges.", "ta": "தனியார் கல்லூரிகளில் OBC இடஒதுக்கீட்டை ஒழித்தது." },
+      { "id": "D", "en": "Declared that Creamy Layer concept applies to SCs and STs as well.", "ta": "கிரீமி லேயர் கோட்பாடு SCs மற்றும் STs-க்கும் பொருந்தும் என அறிவித்தது." }
+    ],
+    "correct_answer": "B",
+    "explanation": {
+      "en": "In Ashoka Kumar Thakur (2008), SC upheld 93rd CAA 1976 (Art 15(5)) and 27% OBC quota under Central Educational Institutions Act 2006, reaffirming that Creamy Layer must be excluded from OBC reservation.",
+      "ta": "அசோக் குமார் தாக்கூர் (2008) வழக்கில், 93வது திருத்தம் (15(5)) & 27% OBC ஒதுக்கீட்டை SC உறுதி செய்தது, மேலும் OBC இடஒதுக்கீட்டிலிருந்து கிரீமி லேயர் விலக்கப்பட வேண்டும் என்பதை மீண்டும் வலியுறுத்தியது."
+    },
+    "why_not_others": {
+      "A": { "en": "93rd CAA was UPHELD, not struck down.", "ta": "93வது திருத்தம் உறுதி செய்யப்பட்டது, ரத்து செய்யப்படவில்லை." },
+      "B": { "en": "Correct. Ashoka Kumar Thakur (2008) upheld Art 15(5) & 27% OBC higher education quota with Creamy Layer exclusion.", "ta": "சரி. அசோக் குமார் தாக்கூர் (2008) கிரீமி லேயர் விலக்குடன் உறுப்பு 15(5) & 27% OBC உயர்கல்வி ஒதுக்கீட்டை உறுதி செய்தது." },
+      "C": { "en": "Art 15(5) enables reservation in private colleges as well.", "ta": "உறுப்பு 15(5) தனியார் கல்லூரிகளிலும் இடஒதுக்கீட்டை அனுமதிக்கிறது." },
+      "D": { "en": "Creamy Layer in SC/ST was not established in Ashoka Kumar Thakur.", "ta": "SC/ST-ல் கிரீமி லேயர் அசோக் குமார் தாக்கூரில் நிறுவப்படவில்லை." }
+    },
+    "tnpsc_tip": {
+      "en": "Ashoka Kumar Thakur (2008) = Upheld Art 15(5) & 27% OBC quota in Central Educational Institutions with Creamy Layer exclusion.",
+      "ta": "அசோக் குமார் தாக்கூர் (2008) = கிரீமி லேயர் விலக்குடன் மத்திய கல்வி நிறுவனங்களில் உறுப்பு 15(5) & 27% OBC ஒதுக்கீடு உறுதி."
+    },
+    "metadata": { "subject": "Polity", "topic": "Fundamental Rights", "type": "Hard", "level": "TNPSC Group 1" }
+  },
+
+  # 45. Constitutional Application: Article 32 Locus Standi vs PIL Principles - Ans: A
+  {
+    "id": "FR_H_045",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "Hard",
+    "question_type": "Constitutional Application",
+    "question": {
+      "en": "Which of the following conditions MUST be satisfied for a Public Interest Litigation (PIL) petition to be maintainable under Article 32 in the Supreme Court?",
+      "ta": "உச்ச நீதிமன்றத்தில் உறுப்பு 32-ன் கீழ் ஒரு பொதுநல வழக்கு (PIL) மனு ஏற்றுக்கொள்ளப்பட பின்வரும் எந்த நிபந்தனை கண்டிப்பாகப் பூர்த்தி செய்யப்பட வேண்டும்?"
+    },
+    "options": [
+      { "id": "A", "en": "The petition must seek enforcement of a Fundamental Right of a person or class of persons who, by reason of poverty, disability, or socially disadvantaged position, are unable to approach the court themselves.", "ta": "வறுமை, இயலாமை அல்லது சமூகப் பின்தங்கிய நிலை காரணமாகத் தாங்களே நீதிமன்றத்தை அணுக முடியாத ஒரு நபர் அல்லது மக்கள் பிரிவினரின் அடிப்படை உரிமையை நிலைநாட்ட மனு கோர வேண்டும்." },
+      { "id": "B", "en": "The petitioner must be a registered political party advocate.", "ta": "மனுதாரர் பதிவு செய்யப்பட்ட அரசியல் கட்சியின் வழக்கறிஞராக இருக்க வேண்டும்." },
+      { "id": "C", "en": "The petition must seek enforcement of a private breach of contract.", "ta": "மனு ஒரு தனியார் ஒப்பந்த மீறலை அமல்படுத்தக் கோர வேண்டும்." },
+      { "id": "D", "en": "The petitioner must pay a minimum court fee of Rs 10,000.", "ta": "மனுதாரர் குறைந்தபட்சம் ரூ 10,000 நீதிமன்றக் கட்டணம் செலுத்த வேண்டும்." }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "S.P. Gupta (1981): PIL under Art 32 requires: 1. Violation of Fundamental Rights, 2. Public interest or enforcement of rights of vulnerable persons unable to access court, and 3. Absence of personal/private gain or oblique motive.",
+      "ta": "எஸ்.பி. குப்தா (1981): உறுப்பு 32-ன் கீழ் PIL-க்கு தேவை: 1. அடிப்படை உரிமை மீறல், 2. நீதிமன்றத்தை அணுக முடியாத ஏழை/நலிவடைந்தோர் உரிமை நிலைநாட்டல், 3. சுயலாப நோக்கமின்மை."
+    },
+    "why_not_others": {
+      "A": { "en": "Correct. PIL under Art 32 requires FR violation of disadvantaged persons.", "ta": "சரி. உறுப்பு 32-ன் கீழ் PIL-க்கு நலிவடைந்தோரின் அடிப்படை உரிமை மீறல் தேவை." },
+      "B": { "en": "Political party membership is not required.", "ta": "அரசியல் கட்சி உறுப்பினர் தகுதி தேவையில்லை." },
+      "C": { "en": "PIL does NOT lie for private contractual breaches.", "ta": "தனியார் ஒப்பந்த மீறல்களுக்கு PIL பொருந்தாது." },
+      "D": { "en": "Court fee is not a maintainability condition for PIL.", "ta": "நீதிமன்றக் கட்டணம் PIL ஏற்றுக்கொள்ளும் நிபந்தனை அல்ல." }
+    },
+    "tnpsc_tip": {
+      "en": "PIL under Art 32 requires: 1. Part III FR violation, 2. Public interest/disadvantaged group, 3. Bona fide motive.",
+      "ta": "உறுப்பு 32 PIL-க்கு தேவை: 1. பகுதி III FR மீறல், 2. பொது நலன்/நலிவடைந்த குழு, 3. நேர்மையான நோக்கம்."
+    },
+    "metadata": { "subject": "Polity", "topic": "Fundamental Rights", "type": "Hard", "level": "TNPSC Group 1" }
+  },
+
+  # 46. Advanced Conceptual: Articles 15(6) & 16(6) EWS Quota Mechanics - Ans: D
+  {
+    "id": "FR_H_046",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "Hard",
+    "question_type": "Amendment / Basic Structure",
+    "question": {
+      "en": "Consider the following statements regarding the 103rd Constitutional Amendment Act, 2019:\n\n1. It inserted Article 15(6) to enable up to 10% EWS reservation in educational admissions.\n2. It inserted Article 16(6) to enable up to 10% EWS reservation in public employment.\n3. The EWS reservation is IN ADDITION to existing reservations and excludes SCs, STs, and OBCs already covered under Articles 15(4), 15(5), 16(4).\n\nWhich of the statements given above are correct?",
+      "ta": "2019-ன் 103வது அரசியலமைப்பு திருத்தச் சட்டம் பற்றிய பின்வரும் கூற்றுகளை ஆராய்க:\n\n1. இது கல்விச் சேர்க்கையில் 10% வரை EWS இடஒதுக்கீட்டை வழங்க உறுப்பு 15(6)-ஐச் சேர்த்தது.\n2. இது பொது வேலைவாய்ப்பில் 10% வரை EWS இடஒதுக்கீட்டை வழங்க உறுப்பு 16(6)-ஐச் சேர்த்தது.\n3. EWS இடஒதுக்கீடு தற்போதைய இடஒதுக்கீடுகளுக்குக் கூடுதலானது (IN ADDITION) மற்றும் உறுப்புகள் 15(4), 15(5), 16(4)-ன் கீழ் ஏற்கனவே உள்ளடக்கப்பட்டுள்ள SCs, STs, OBCs-ஐ விலக்குகிறது.\n\nமேற்கூறிய கூற்றுகளில் எவை சரியானவை?"
+    },
+    "options": [
+      { "id": "A", "en": "1 and 2 only", "ta": "1 மற்றும் 2 மட்டுமே" },
+      { "id": "B", "en": "2 and 3 only", "ta": "2 மற்றும் 3 மட்டுமே" },
+      { "id": "C", "en": "1 and 3 only", "ta": "1 மற்றும் 3 மட்டுமே" },
+      { "id": "D", "en": "1, 2 and 3", "ta": "1, 2 மற்றும் 3" }
+    ],
+    "correct_answer": "D",
+    "explanation": {
+      "en": "All 3 statements are correct. 103rd CAA 2019 added Arts 15(6) and 16(6) for up to 10% EWS quota in addition to existing quotas, specifically excluding SC/ST/OBC categories.",
+      "ta": "3 கூற்றுகளுமே சரி. 103வது திருத்தம் 2019 SC/ST/OBC பிரிவுகளைத் தவிர்த்து தற்போதைய ஒதுக்கீடுகளுக்குக் கூடுதலாக 10% வரை EWS ஒதுக்கீட்டிற்கு உறுப்புகள் 15(6) & 16(6)-ஐச் சேர்த்தது."
+    },
+    "why_not_others": {
+      "A": { "en": "Statement 3 is also correct.", "ta": "கூற்று 3-ம் சரியானது." },
+      "B": { "en": "Statement 1 is also correct.", "ta": "கூற்று 1-ம் சரியானது." },
+      "C": { "en": "Statement 2 is also correct.", "ta": "கூற்று 2-ம் சரியானது." },
+      "D": { "en": "Correct. All 3 statements describe the constitutional design of 103rd CAA EWS quota.", "ta": "சரி. 3 கூற்றுகளுமே 103வது திருத்த EWS ஒதுக்கீட்டின் அரசியலமைப்பு அமைப்பை விவரிக்கின்றன." }
+    },
+    "tnpsc_tip": {
+      "en": "103rd CAA 2019 = Arts 15(6) & 16(6) -> 10% EWS Quota for non-SC/ST/OBC general poor.",
+      "ta": "103வது திருத்தம் 2019 = உறுப்புகள் 15(6) & 16(6) -> SC/ST/OBC அல்லாத பொதுப் பிரிவு ஏழைகளுக்கு 10% EWS ஒதுக்கீடு."
+    },
+    "metadata": { "subject": "Polity", "topic": "Fundamental Rights", "type": "Hard", "level": "TNPSC Group 1" }
+  },
+
+  # 47. High-Level TNPSC Trap: Article 31B 9th Schedule Retrospective Protection - Ans: B
+  {
+    "id": "FR_H_047",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "Hard",
+    "question_type": "High-level TNPSC Trap",
+    "question": {
+      "en": "Under Article 31B, if an Act included in the Ninth Schedule had already been declared void by a High Court or Supreme Court before its inclusion, what happens to that Act upon inclusion in the Ninth Schedule?",
+      "ta": "உறுப்பு 31B-ன் கீழ், ஒன்பதாவது அட்டவணையில் சேர்க்கப்படுவதற்கு முன் ஒரு சட்டம் உயர் நீதிமன்றம் அல்லது உச்ச நீதிமன்றத்தால் ஏற்கனவே செல்லாது என அறிவிக்கப்பட்டிருந்தால், அது ஒன்பதாவது அட்டவணையில் சேர்க்கப்பட்டதும் என்னவாகும்?"
+    },
+    "options": [
+      { "id": "A", "en": "It remains void forever and cannot be revived by Ninth Schedule inclusion.", "ta": "அது எப்போதும் செல்லாததாகவே இருக்கும், 9வது அட்டவணை சேர்ப்பால் உயிர்ப்பிக்கப்பட முடியாது." },
+      { "id": "B", "en": "It is constitutionally validated retrospectively from the date of its enactment, removing the judicial invalidation (subject to I.R. Coelho post-1973 Basic Structure review).", "ta": "நீதிமன்ற ரத்து நீக்கப்பட்டு, அது இயற்றப்பட்ட தேதியிலிருந்தே முந்தைய தேதியிட்டு அரசியலமைப்பு ரீதியாகச் செல்லுபடியாக்கப்படுகிறது (ஐ.ஆர். கொஹெலோ 1973-க்குப் பிந்தைய அடிப்படை கட்டமைப்பு ஆய்வுக்கு உட்பட்டு)." },
+      { "id": "C", "en": "It requires fresh enactment by all 28 State Assemblies.", "ta": "அனைத்து 28 மாநில சட்டமன்றங்களாலும் புதிய இயற்றல் தேவைப்படுகிறது." },
+      { "id": "D", "en": "It is transferred to the Union List automatically.", "ta": "அது தானாக மத்தியப் பட்டியலுக்கு மாற்றப்படும்." }
+    ],
+    "correct_answer": "B",
+    "explanation": {
+      "en": "Article 31B operates retrospectively. Even if a law was declared void by a court, its subsequent inclusion in the Ninth Schedule cures the invalidity retrospectively from the date of enactment.",
+      "ta": "உறுப்பு 31B முந்தைய தேதியிட்டுச் செயல்படுகிறது. ஒரு சட்டம் நீதிமன்றத்தால் செல்லாது என அறிவிக்கப்பட்டிருந்தாலும், 9வது அட்டவணையில் சேர்க்கப்பட்டதும் அச் செல்லாத்தன்மை இயற்றப்பட்ட தேதியிலிருந்தே குணமடையும்."
+    },
+    "why_not_others": {
+      "A": { "en": "Art 31B explicitly cures past judicial invalidation retrospectively.", "ta": "உறுப்பு 31B கடந்தகால நீதிமன்ற ரத்தை முந்தைய தேதியிட்டு சரிசெய்கிறது." },
+      "B": { "en": "Correct. Art 31B cures judicial invalidation retrospectively upon 9th Schedule inclusion.", "ta": "சரி. 9வது அட்டவணையில் சேர்க்கப்பட்டதும் உறுப்பு 31B நீதிமன்ற ரத்தை முந்தைய தேதியிட்டுச் சரிசெய்கிறது." },
+      "C": { "en": "Fresh state re-enactment is not required.", "ta": "புதிய மாநில மறு-இயற்றல் தேவையில்லை." },
+      "D": { "en": "List transfer does not occur.", "ta": "பட்டியல் மாற்றம் நடப்பதில்லை." }
+    },
+    "tnpsc_tip": {
+      "en": "Article 31B has RETROSPECTIVE operation validation power.",
+      "ta": "உறுப்பு 31B முந்தைய தேதியிட்ட (RETROSPECTIVE) அரசியலமைப்புச் செல்லுபாட்டு அதிகாரத்தைக் கொண்டுள்ளது."
+    },
+    "metadata": { "subject": "Polity", "topic": "Fundamental Rights", "type": "Hard", "level": "TNPSC Group 1" }
+  },
+
+  # 48. Constitutional Application: Writs Quo Warranto Substantive Office Voidance Effect - Ans: C
+  {
+    "id": "FR_H_048",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "Hard",
+    "question_type": "Constitutional Application",
+    "question": {
+      "en": "When the High Court issues a writ of Quo Warranto declaring a person's appointment to a public office illegal, what is the immediate legal effect on the office holder and the decisions taken by him prior to the order?",
+      "ta": "ஒரு நபரின் பொதுப் பதவி நியமனம் சட்டவிரோதமானது என உயர் நீதிமன்றம் Quo Warranto (தகுதி வினா) பேராணையைப் பிறப்பிக்கும் போது, அப்பதவி வகிப்பவர் மீதும் உத்தரவுக்கு முன் அவரால் எடுக்கப்பட்ட முடிவுகள் மீதும் உடனடி சட்ட விளைவு என்ன?"
+    },
+    "options": [
+      { "id": "A", "en": "The person is sent to 10 years imprisonment automatically.", "ta": "அந்நபர் தானாகவே 10 ஆண்டுகள் சிறைத்தண்டனைக்கு அனுப்பப்படுவார்." },
+      { "id": "B", "en": "All decisions taken prior to the order are automatically rendered criminal offences.", "ta": "உத்தரவுக்கு முன் எடுக்கப்பட்ட அனைத்து முடிவுகளும் தானாகவே குற்றவியல் குற்றங்களாக மாறும்." },
+      { "id": "C", "en": "The illegal holder is ousted/dislodged from the public office immediately; however, past bona fide official acts done prior to the ouster are generally saved by the 'De Facto Doctrine'.", "ta": "சட்டவிரோதமாகப் பதவி வகிப்பவர் உடனடியாகப் பொதுப் பதவியிலிருந்து நீக்கப்படுவார் (ousted); இருப்பினும், பதவி நீக்கத்திற்கு முன் செய்யப்பட்ட கடந்தகால நேர்மையான அதிகாரப்பூர்வ செயல்கள் பொதுவாக 'De Facto கோட்பாட்டினால்' காப்பாற்றப்படுகின்றன." },
+      { "id": "D", "en": "The public office itself is permanently abolished.", "ta": "அப் பொதுப் பதவியே நிரந்தரமாக ஒழிக்கப்படும்." }
+    ],
+    "correct_answer": "C",
+    "explanation": {
+      "en": "Quo Warranto ousts the illegal usurper from public office. Under the 'De Facto Doctrine' (Gokaraju Rangaraju case), official acts performed by an officer de facto prior to declaration of invalidity remain valid in public interest.",
+      "ta": "Quo Warranto சட்டவிரோதமாகப் பதவி வகிப்பவரைப் பதவியிலிருந்து நீக்குகிறது. 'De Facto கோட்பாட்டின்' கீழ் (கோகராஜு ரங்கராஜு வழக்கு), செல்லாமை அறிவிப்பிற்கு முன் அவராக்கப்பட்ட அதிகாரப்பூர்வ செயல்கள் பொது நலனில் செல்லுபடியாகும்."
+    },
+    "why_not_others": {
+      "A": { "en": "Imprisonment is not ordered in Quo Warranto unless separate criminal charges exist.", "ta": "தனி குற்றவியல் குற்றச்சாட்டு இல்லாதவரை Quo Warranto-வில் சிறைத்தண்டனை விதிக்கப்படுவதில்லை." },
+      "B": { "en": "Past acts do not automatically become criminal offences.", "ta": "கடந்தகால செயல்கள் தானாக குற்றங்களாக மாறுவதில்லை." },
+      "C": { "en": "Correct. Usurper is ousted + Past acts saved by De Facto Doctrine.", "ta": "சரி. ஆக்கிரமிப்பாளர் நீக்கப்படுவார் + கடந்தகால செயல்கள் De Facto கோட்பாட்டால் காப்பாற்றப்படும்." },
+      "D": { "en": "The office itself survives; only the usurper is removed.", "ta": "பதவி நீடிக்கும்; ஆக்கிரமிப்பாளர் மட்டுமே நீக்கப்படுவார்." }
+    },
+    "tnpsc_tip": {
+      "en": "Quo Warranto = Ouster of usurper + Past official acts saved by De Facto Doctrine.",
+      "ta": "Quo Warranto = ஆக்கிரமிப்பாளர் நீக்கம் + прошлые அதிகாரப்பூர்வ செயல்கள் De Facto கோட்பாட்டால் காப்பாற்றப்படும்."
+    },
+    "metadata": { "subject": "Polity", "topic": "Fundamental Rights", "type": "Hard", "level": "TNPSC Group 1" }
+  },
+
+  # 49. Amendment / Basic Structure: 42nd CAA 1976 vs 44th CAA 1978 Emergency FR Package - Ans: A
+  {
+    "id": "FR_H_049",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "Hard",
+    "question_type": "Amendment / Basic Structure",
+    "question": {
+      "en": "Which statement correctly describes how Article 358 and Article 359 operate regarding suspension of Fundamental Rights during a National Emergency?",
+      "ta": "தேசிய அவசரநிலையின் போது அடிப்படை உரிமைகளை இடைநிறுத்துவது தொடர்பாக உறுப்பு 358 மற்றும் உறுப்பு 359 எவ்வாறு செயல்படுகின்றன என்பதைச் சரியாக விவரிக்கும் கூற்று எது?"
+    },
+    "options": [
+      { "id": "A", "en": "Article 358 automatically suspends Article 19 ONLY during External Emergency (war/external aggression); Article 359 requires a specific Presidential Order to suspend enforcement of specified FRs, BUT Articles 20 and 21 CANNOT be suspended even under Article 359.", "ta": "வெளிநாட்டு அவசரநிலையின் (போர்/வெளிநாட்டு ஆக்கிரமிப்பு) போது மட்டுமே உறுப்பு 358 தானாக உறுப்பு 19-ஐ இடைநிறுத்துகிறது; உறுப்பு 359 குறிப்பிட்ட FRs அமலாக்கத்தை இடைநிறுத்தக் குறிப்பிட்ட குடியரசுத் தலைவர் ஆணைகோருகிறது, ஆனால் உறுப்பு 359-ன் கீழ் கூட உறுப்புகள் 20 மற்றும் 21 இடைநிறுத்தப்பட முடியாது." },
+      { "id": "B", "en": "Article 358 suspends Article 21, while Article 359 suspends Article 14.", "ta": "உறுப்பு 358 உறுப்பு 21-ஐ இடைநிறுத்துகிறது, உறுப்பு 359 உறுப்பு 14-ஐ இடைநிறுத்துகிறது." },
+      { "id": "C", "en": "Both Articles 358 and 359 automatically suspend all Part III rights during internal armed rebellion.", "ta": "உள்நாட்டு ஆயுதமேந்திய கலகத்தின் போது 358 மற்றும் 359 இரண்டுமே அனைத்து பகுதி III உரிமைகளையும் தானாக இடைநிறுத்துகின்றன." },
+      { "id": "D", "en": "Article 359 applies to State Emergency under Article 356 only.", "ta": "உறுப்பு 359 உறுப்பு 356-ன் கீழ் மாநில அவசரநிலைக்கு மட்டுமே பொருந்தும்." }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "Art 358 operates automatically for Art 19 during External Emergency (44th CAA 1978). Art 359 requires a Presidential Order for specified rights, but 44th CAA 1978 explicitly barred Art 359 from suspending Arts 20 & 21.",
+      "ta": "வெளிநாட்டு அவசரநிலையின் போது உறுப்பு 358 உறுப்பு 19-க்கு தானாகச் செயல்படுகிறது (44வது திருத்தம் 1978). உறுப்பு 359 குடியரசுத் தலைவர் ஆணை கோருகிறது, ஆனால் 44வது திருத்தம் 1978 உறுப்புகள் 20 & 21-ஐ 359-லிருந்து விலக்கியது."
+    },
+    "why_not_others": {
+      "A": { "en": "Correct. Art 358 = Art 19 (External Emergency); Art 359 = Presidential Order (Arts 20 & 21 immune).", "ta": "சரி. உறுப்பு 358 = உறுப்பு 19 (வெளிநாட்டு அவசரநிலை); உறுப்பு 359 = குடியரசுத் தலைவர் ஆணை (20 & 21 பாதுகாப்பானது)." },
+      "B": { "en": "Article 21 CANNOT be suspended by Art 358.", "ta": "உறுப்பு 21 உறுப்பு 358-ஆல் இடைநிறுத்தப்பட முடியாது." },
+      "C": { "en": "44th CAA 1978 barred Art 358 suspension during internal armed rebellion.", "ta": "44வது திருத்தம் 1978 உள்நாட்டு ஆயுதக் கலகத்தின் போது உறுப்பு 358 இடைநிறுத்தத்தைத் தடுத்தது." },
+      "D": { "en": "Art 359 applies during Art 352 National Emergency.", "ta": "உறுப்பு 359 உறுப்பு 352 தேசிய அவசரநிலைக்குப் பொருந்தும்." }
+    },
+    "tnpsc_tip": {
+      "en": "44th CAA 1978: 1. Art 358 applies ONLY to External Emergency; 2. Arts 20 & 21 CANNOT be suspended under Art 359.",
+      "ta": "44வது திருத்தம் 1978: 1. உறுப்பு 358 வெளிநாட்டு அவசரநிலைக்கு மட்டுமே பொருந்தும்; 2. உறுப்புகள் 20 & 21 உறுப்பு 359-ன் கீழ் இடைநிறுத்தப்பட முடியாது."
+    },
+    "metadata": { "subject": "Polity", "topic": "Fundamental Rights", "type": "Hard", "level": "TNPSC Group 1" }
+  },
+
+  # 50. High-Level TNPSC Trap: Complete Fundamental Rights Exceptions Synthesis - Ans: B
+  {
+    "id": "FR_H_050",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "Hard",
+    "question_type": "High-level TNPSC Trap",
+    "question": {
+      "en": "Which of the following complete combinations of Articles represents exceptions to Fundamental Rights explicitly provided within Part III itself?",
+      "ta": "பின்வரும் எந்த முழுமையான உறுப்புகளின் சேர்க்கை பகுதி III-க்குள்ளேயே வெளிப்படையாக வழங்கப்பட்டுள்ள அடிப்படை உரிமைகளுக்கான விலக்குகளைக் (Exceptions to FRs) குறிக்கிறது?"
+    },
+    "options": [
+      { "id": "A", "en": "Articles 14, 19, and 21", "ta": "உறுப்புகள் 14, 19, மற்றும் 21" },
+      { "id": "B", "en": "Articles 31A, 31B, 31C, 33, 34, and 35", "ta": "உறுப்புகள் 31A, 31B, 31C, 33, 34, மற்றும் 35" },
+      { "id": "C", "en": "Articles 5, 6, 7, 8, and 9", "ta": "உறுப்புகள் 5, 6, 7, 8, மற்றும் 9" },
+      { "id": "D", "en": "Articles 52, 53, 54, and 55", "ta": "உறுப்புகள் 52, 53, 54, மற்றும் 55" }
+    ],
+    "correct_answer": "B",
+    "explanation": {
+      "en": "Articles 31A (saving agrarian laws), 31B (validation of 9th schedule laws), 31C (saving DPSP laws), 33 (Armed forces restriction), 34 (Martial law restriction), and 35 (Parliamentary enforcement) constitute the explicit Exceptions to Fundamental Rights in Part III.",
+      "ta": "உறுப்புகள் 31A (நிலச் சட்டங்கள் காப்பு), 31B (9வது அட்டவணைச் சட்டங்கள் செல்லுபடி), 31C (DPSP சட்டங்கள் காப்பு), 33 (ஆயுதப் படை கட்டுப்பாடு), 34 (ராணுவச் சட்டம்), 35 (நாடாளுமன்ற அமலாக்கம்) ஆகியவை பகுதி III-ல் உள்ள அடிப்படை உரிமைகளுக்கான வெளிப்படையான விலக்குகளாகும்."
+    },
+    "why_not_others": {
+      "A": { "en": "Arts 14, 19, 21 are core Fundamental Rights, not exceptions.", "ta": "உறுப்புகள் 14, 19, 21 முதன்மை அடிப்படை உரிமைகள், விலக்குகள் அல்ல." },
+      "B": { "en": "Correct. Arts 31A, 31B, 31C, 33, 34, 35 are the explicit Exceptions to FRs in Part III.", "ta": "சரி. உறுப்புகள் 31A, 31B, 31C, 33, 34, 35 பகுதி III-ல் உள்ள FRs விலக்குகள்." },
+      "C": { "en": "Arts 5-9 belong to Part II Citizenship.", "ta": "உறுப்புகள் 5-9 பகுதி II குடியுரிமைக்கு உரியவை." },
+      "D": { "en": "Arts 52-55 belong to Part V Union Executive.", "ta": "உறுப்புகள் 52-55 பகுதி V மத்திய நிர்வாகத்திற்கு உரியவை." }
+    },
+    "tnpsc_tip": {
+      "en": "Exceptions to Fundamental Rights in Part III = Articles 31A, 31B, 31C, 33, 34, and 35.",
+      "ta": "பகுதி III-ல் அடிப்படை உரிமைகளுக்கான விலக்குகள் = உறுப்புகள் 31A, 31B, 31C, 33, 34, மற்றும் 35."
+    },
+    "metadata": { "subject": "Polity", "topic": "Fundamental Rights", "type": "Hard", "level": "TNPSC Group 1" }
+  }
+]
+
+target_file = "data/questions/polity/fundamental_rights_hard.json"
+os.makedirs(os.path.dirname(target_file), exist_ok=True)
+
+with open(target_file, "w", encoding="utf-8") as f:
+    json.dump(questions, f, ensure_ascii=False, indent=2)
+
+print(f"Successfully generated '{target_file}' with exactly {len(questions)} Hard MCQs!")

@@ -1,0 +1,813 @@
+# -*- coding: utf-8 -*-
+"""
+Script to build production-ready bilingual TNPSC Group 1 Notes for:
+Fundamental Duties - Part 2
+Target File: data/notes/polity/fundamental_duties_part_2.json
+"""
+
+import json
+import os
+
+notes_data = {
+    "meta": {
+        "topic_id": "polity_fundamental_duties_part_2",
+        "repository_id": "polity_fundamental_duties",
+        "display_title": "Fundamental Duties – Part 2",
+        "part": 2,
+        "total_parts": 3,
+        "subject": "polity",
+        "chapter": "Fundamental Duties",
+        "language": "English + Tamil"
+    },
+    "metadata": {
+        "version": "2.0",
+        "status": "approved",
+        "review_status": "gold_standard",
+        "difficulty": "foundation",
+        "estimated_study_time": {
+            "reading": "35 min",
+            "revision": "15 min",
+            "total": "50 min"
+        }
+    },
+    "keywords": [
+        "Fundamental Duties Part 2",
+        "அடிப்படை கடமைகள் பகுதி 2",
+        "Article 51Af Composite Culture",
+        "உறுப்பு 51A(f) கூட்டுப் பண்பாடு",
+        "Article 51Ag Environment Compassion",
+        "உறுப்பு 51A(g) சுற்றுச்சூழல் கருணை",
+        "Article 48A vs Article 51Ag",
+        "உறுப்பு 48A vs உறுப்பு 51A(g)",
+        "Article 51Ah Scientific Temper Humanism",
+        "உறுப்பு 51A(h) அறிவியல் மனப்பான்மை மனிதநேயம்",
+        "Spirit of Inquiry and Reform",
+        "ஆராய்ச்சி மற்றும் சீர்திருத்த உணர்வு",
+        "Article 51Ai Public Property Abjure Violence",
+        "உறுப்பு 51A(i) பொதுச் சொத்து வன்முறை ஒழிப்பு",
+        "Article 51Aj Strive for Excellence",
+        "உறுப்பு 51A(j) சிறப்பினை நோக்கிய முயற்சி",
+        "MC Mehta Case Environment",
+        "எம்.சி. மேத்தா சுற்றுச்சூழல் வழக்கு",
+        "Animal Welfare Board Nagaraja Case",
+        "விலங்கு நல வாரிய நாகராஜா வழக்கு",
+        "Public Property Destruction Guidelines 2009",
+        "பொதுச் சொத்து சேத வழிகாட்டுதல்கள் 2009"
+    ],
+    "learning_outcomes": {
+        "Understand": {
+            "en": [
+                "Understand the detailed constitutional scope and philosophy of Article 51A(f) through Article 51A(j).",
+                "Understand the precise legal distinction between Article 48A (State DPSP) and Article 51A(g) (Citizen Fundamental Duty).",
+                "Understand the core elements of Article 51A(h): Scientific Temper, Humanism, Spirit of Inquiry, and Spirit of Reform.",
+                "Understand the duty to safeguard public property and abjure violence under Article 51A(i) and individual/collective excellence under Article 51A(j)."
+            ],
+            "ta": [
+                "உறுப்பு 51A(f) முதல் உறுப்பு 51A(j) வரையிலான விரிவான அரசியலமைப்பு எல்லை மற்றும் தத்துவத்தைப் புரிந்து கொள்ளுதல்.",
+                "உறுப்பு 48A (அரசு DPSP) மற்றும் உறுப்பு 51A(g) (குடிமகன் அடிப்படை கடமை) இடையேயான துல்லியமான சட்ட வேறுபாட்டைப் புரிந்து கொள்ளுதல்.",
+                "உறுப்பு 51A(h)-ன் முதன்மைக் கூறுகளான அறிவியல் மனப்பான்மை, மனிதநேயம், ஆராய்ச்சி உணர்வு மற்றும் சீர்திருத்த உணர்வைப் புரிந்து கொள்ளுதல்.",
+                "உறுப்பு 51A(i)-ன் கீழ் பொதுச் சொத்தைப் பாதுகாத்தல் மற்றும் வன்முறையைக் கைவிடுதல் மற்றும் உறுப்பு 51A(j)-ன் கீழ் தனிநபர்/கூட்டுச் சிறப்பை நோக்கிய முயற்சியைப் புரிந்து கொள்ளுதல்."
+            ]
+        },
+        "Remember": {
+            "en": [
+                "Remember that Article 51A(f) focuses on preserving the rich heritage of India's 'composite culture'.",
+                "Remember that Article 51A(g) covers 4 natural elements (forests, lakes, rivers, wildlife) plus compassion for living creatures.",
+                "Remember the 4 pillars of Article 51A(h): 1. Scientific Temper, 2. Humanism, 3. Spirit of Inquiry, 4. Spirit of Reform.",
+                "Remember that Article 51A(i) mandates safeguarding PUBLIC property and abjuring violence.",
+                "Remember that Article 51A(j) commands striving towards excellence in both individual and collective activity."
+            ],
+            "ta": [
+                "உறுப்பு 51A(f) இந்தியாவின் 'கூட்டுப் பண்பாட்டின்' வளமான பாரம்பரியத்தைப் பாதுகாப்பதில் கவனம் செலுத்துகிறது என்பதை நினைவில் கொள்ளுதல்.",
+                "உறுப்பு 51A(g) 4 இயற்கை கூறுகள் (காடுகள், ஏரிகள், ஆறுகள், வனவிலங்குகள்) மற்றும் உயிரினங்கள் மீதான கருணையை உள்ளடக்கியது என்பதை நினைவில் கொள்ளுதல்.",
+                "உறுப்பு 51A(h)-ன் 4 தூண்களை நினைவில் கொள்ளுதல்: 1. அறிவியல் மனப்பான்மை, 2. மனிதநேயம், 3. ஆராய்ச்சி உணர்வு, 4. சீர்திருத்த உணர்வு.",
+                "உறுப்பு 51A(i) பொதுச் சொத்தைப் பாதுகாக்கவும் வன்முறையைக் கைவிடவும் கட்டாயமாக்குகிறது என்பதை நினைவில் கொள்ளுதல்.",
+                "உறுப்பு 51A(j) தனிநபர் மற்றும் கூட்டு நடவடிக்கைகள் இரண்டிலும் சிறப்பை நோக்கி முயலக் கட்டளையிடுகிறது என்பதை நினைவில் கொள்ளுதல்."
+            ]
+        },
+        "Analyze": {
+            "en": [
+                "Analyze the conceptual connection between Article 51A(f) (Composite Culture Duty) and Articles 29–30 (Minority Cultural Rights).",
+                "Analyze the constitutional synergy between Article 21 (Right to Clean Environment), Article 48A (State Environment DPSP), and Article 51A(g) (Citizen Environment Duty).",
+                "Analyze the judicial interpretation of animal welfare in Animal Welfare Board of India v. A. Nagaraja (2014).",
+                "Analyze the legal frameworks enforcing public property preservation under Destruction of Public Property cases."
+            ],
+            "ta": [
+                "உறுப்பு 51A(f) (கூட்டுப் பண்பாட்டுக் கடமை) மற்றும் உறுப்புகள் 29–30 (சிறுபான்மையினர் பண்பாட்டு உரிமைகள்) இடையேயான தத்துவார்த்த தொடர்பைப் பகுப்பாய்வு செய்தல்.",
+                "உறுப்பு 21 (தூய்மையான சுற்றுச்சூழலுக்கான உரிமை), உறுப்பு 48A (அரசு சுற்றுச்சூழல் DPSP) மற்றும் உறுப்பு 51A(g) (குடிமகன் சுற்றுச்சூழல் கடமை) இடையேயான அரசியலமைப்பு ஒருங்கிணைப்பைப் பகுப்பாய்வு செய்தல்.",
+                "விலங்கு நல வாரியம் vs ஏ. நாகராஜா (2014) வழக்கில் விலங்கு நலன் பற்றிய நீதித்துறை விளக்கத்தைப் பகுப்பாய்வு செய்தல்.",
+                "பொதுச் சொத்து சேத வழக்குகளின் கீழ் பொதுச் சொத்தைப் பாதுகாப்பதை அமல்படுத்தும் சட்டக் கட்டமைப்புகளைப் பகுப்பாய்வு செய்தல்."
+            ]
+        },
+        "Apply": {
+            "en": [
+                "Apply TNPSC trap points to accurately differentiate Article 48A (DPSP) from Article 51A(g) (FD) in statement questions.",
+                "Distinguish scientific temper from scientific knowledge in reasoning items.",
+                "Correctly match sub-clauses 51A(f) to 51A(j) with their exact constitutional keywords."
+            ],
+            "ta": [
+                "கூற்று வினாக்களில் உறுப்பு 48A (DPSP) மற்றும் உறுப்பு 51A(g) (FD) ஆகியவற்றைத் துல்லியமாக வேறுபடுத்த டிஎன்பிஎஸ்சி பொறி புள்ளிகளைப் பயன்படுத்துதல்.",
+                "காரண வினாக்களில் அறிவியல் மனப்பான்மையை அறிவியல் அறிவிலிருந்து வேறுபடுத்துதல்.",
+                "உட்பிரிவுகள் 51A(f) முதல் 51A(j) வரையிலானவற்றை వాటి அசல் அரசியலமைப்பு முக்கிய வார்த்தைகளுடன் சரியாகப் பொருத்துதல்."
+            ]
+        }
+    },
+    "subject": "Polity",
+    "topic": "Fundamental Duties – Part 2",
+    "language": "bilingual",
+    "ui_type": "polity",
+    "sections": [
+        {
+            "id": "sec_art_51af",
+            "title_en": "1. Article 51A(f): Preserving India's Composite Culture & Heritage",
+            "title_ta": "1. உறுப்பு 51A(f): இந்தியாவின் கூட்டுப் பண்பாட்டையும் பாரம்பரியத்தையும் பேணுதல்",
+            "type": "standard_topic"
+        },
+        {
+            "id": "sec_art_51ag",
+            "title_en": "2. Article 51A(g): Protection of Environment, Wildlife & Living Creatures",
+            "title_ta": "2. உறுப்பு 51A(g): சுற்றுச்சூழல், வனவிலங்குகள் & உயிரினங்கள் பாதுகாப்பு",
+            "type": "standard_topic"
+        },
+        {
+            "id": "sec_art_51ah",
+            "title_en": "3. Article 51A(h): Scientific Temper, Humanism, Inquiry & Reform",
+            "title_ta": "3. உறுப்பு 51A(h): அறிவியல் மனப்பான்மை, மனிதநேயம், ஆராய்ச்சி & சீர்திருத்தம்",
+            "type": "standard_topic"
+        },
+        {
+            "id": "sec_art_51ai",
+            "title_en": "4. Article 51A(i): Safeguarding Public Property & Abjuring Violence",
+            "title_ta": "4. உறுப்பு 51A(i): பொதுச் சொத்தைப் பாதுகாத்தலும் வன்முறையைக் கைவிடுதலும்",
+            "type": "standard_topic"
+        },
+        {
+            "id": "sec_art_51aj",
+            "title_en": "5. Article 51A(j): Striving Towards Individual & Collective Excellence",
+            "title_ta": "5. உறுப்பு 51A(j): தனிநபர் & கூட்டுச் செயல்பாடுகளில் சிறப்பினை நோக்கிய முயற்சி",
+            "type": "standard_topic"
+        },
+        {
+            "id": "sec_conceptual_integration",
+            "title_en": "6. Constitutional Integration (51A(f)–(j) with FRs, DPSPs & Art 21/48A/29/30)",
+            "title_ta": "6. அரசியலமைப்பு ஒருங்கிணைப்பு (51A(f)–(j) உடன் அடிப்படை உரிமைகள், DPSP & உறுப்புகள் 21/48A/29/30)",
+            "type": "standard_topic"
+        },
+        {
+            "id": "sec_cases_legal_context_part2",
+            "title_en": "7. Landmark Judicial Cases & Environmental/Civic Verdicts",
+            "title_ta": "7. முக்கிய மைல்கல் வழக்கு தீர்ப்புகள் & சுற்றுச்சூழல்/குடிமைத் தீர்ப்புகள்",
+            "type": "standard_topic"
+        },
+        {
+            "id": "sec_traps_revision_part2",
+            "title_en": "8. TNPSC Traps, Comparison Matrix & High-Yield Revision",
+            "title_ta": "8. டிஎன்பிஎஸ்சி பொறிகள், ஒப்பீட்டு அணியும் முக்கிய திருப்புதலும்",
+            "type": "standard_topic"
+        }
+    ],
+    "content": {
+        "definition": {
+            "en": "Part 2 of Fundamental Duties covers Articles 51A(f) to 51A(j), which guide citizens in preserving India's composite culture, safeguarding the natural environment and living creatures, developing a scientific temper and humanism, protecting public property while abjuring violence, and constantly striving towards individual and collective excellence for national progress.",
+            "ta": "அடிப்படை கடமைகள் பகுதி 2 உறுப்புகள் 51A(f) முதல் 51A(j) வரை உள்ளடக்கியது. இவை இந்தியாவின் கூட்டுப் பண்பாட்டையும் பாரம்பரியத்தையும் பேணுதல், இயற்கை சுற்றுச்சூழல் மற்றும் உயிரினங்களைப் பாதுகாத்தல், அறிவியல் மனப்பான்மை மற்றும் மனிதநேயத்தை வளர்த்தல், வன்முறையைக் கைவிட்டு பொதுச் சொத்தைப் பாதுகாத்தல் மற்றும் தேசிய முன்னேற்றத்திற்காகத் தனிநபர் மற்றும் கூட்டுச் செயல்பாடுகளில் தொடர்ச்சியாகச் சிறப்பினை நோக்கி முயலுதல் ஆகியவற்றில் குடிமக்களை வழிநடத்துகின்றன."
+        },
+        "introduction": {
+            "en": "This section provides an in-depth, Group 1 level analysis of the second major group of Fundamental Duties under Article 51A(f) through 51A(j). It establishes critical constitutional links with Article 21 (Environment), Article 48A (State Environment DPSP), Articles 29–30 (Cultural Rights), examines landmark case laws (MC Mehta, Nagaraja, Public Property guidelines), and presents 10 mandatory comparison tables, mind map, bilingual TNPSC trap points, and rapid revision notes.",
+            "ta": "இப்பகுதி உறுப்புகள் 51A(f) முதல் 51A(j) வரையிலான அடிப்படை கடமைகளின் இரண்டாவது முக்கியக் குழுவின் ஆழமான குரூப் 1 நிலை பகுப்பாய்வை வழங்குகிறது. இது உறுப்பு 21 (சுற்றுச்சூழல்), உறுப்பு 48A (அரசு சுற்றுச்சூழல் DPSP), உறுப்புகள் 29–30 (பண்பாட்டு உரிமைகள்) ஆகியவற்றுடன் முக்கிய அரசியலமைப்பு தொடர்புகளை நிறுவுகிறது, முக்கிய வழக்குத் தீர்ப்புகளை (எம்.சி. மேத்தா, நாகராஜா, பொதுச் சொத்து வழிகாட்டுதல்கள்) ஆராய்கிறது, மேலும் 10 கட்டாய ஒப்பீட்டு அட்டவணைகள், மன வரைபடம், இருமொழி டிஎன்பிஎஸ்சி பொறி புள்ளிகள் மற்றும் விரைவு திருப்புதல் குறிப்புகளை வழங்குகிறது."
+        },
+        "sec_art_51af": [
+            {
+                "title": "1. Article 51A(f): Valuing & Preserving Composite Culture (உறுப்பு 51A(f): கூட்டுப் பண்பாட்டை மதித்து பேணுதல்)",
+                "points": {
+                    "en": [
+                        "Constitutional Text: 'To value and preserve the rich heritage of our composite culture.'",
+                        "Meaning of Composite Culture: Composite culture ('Ganga-Jamuni Tehzeeb') refers to the syncretic, multi-religious, multi-linguistic, and multi-cultural synthesis evolved over millennia in India where diverse traditions coexist and enrich one another.",
+                        "Tangible vs Intangible Heritage: 1. Tangible Heritage: Physical monuments, temples, forts, ancient sculptures, architecture. 2. Intangible Heritage: Classical and folk dance forms, music, literature, oral traditions, philosophy, festivals, crafts.",
+                        "Constitutional Significance: Fosters national integration by encouraging citizens to embrace cultural diversity rather than imposing uniformity.",
+                        "Distinction from Articles 29–30: Articles 29–30 guarantee FUNDAMENTAL RIGHTS to minorities/sections of citizens to conserve their distinct language, script, or culture. Article 51A(f) imposes a FUNDAMENTAL DUTY on ALL citizens to value and preserve India's overarching composite culture."
+                    ],
+                    "ta": [
+                        "அரசியலமைப்பு உரை: 'நமது கூட்டுப் பண்பாட்டின் வளமான பாரம்பரியத்தை மதித்து பேணிப் பாதுகாத்தல்.'",
+                        "கூட்டுப் பண்பாட்டின் பொருள்: கூட்டுப் பண்பாடு என்பது இந்தியாவில் ஆயிரக்கணக்கான ஆண்டுகளாக உருவான பல்வேறு மத, மொழி, பண்பாட்டுச் சேர்க்கையாகும். இங்கு பல்வேறு பாரம்பரியங்கள் இணைந்து வாழ்ந்து ஒன்றையொன்று வளப்படுத்துகின்றன.",
+                        "பருப்பொருள் vs அருவப் பாரம்பரியம்: 1. பருப்பொருள் பாரம்பரியம்: நினைவுச் சின்னங்கள், கோயில்கள், கோட்டைகள், பண்டைய சிற்பங்கள், கட்டிடக்கலை. 2. அருவப் பாரம்பரியம்: செம்மொழி மற்றும் நாட்டுப்புற நடனங்கள், இசை, இலக்கியம், வாய்மொழி மரபுகள், தத்துவம், திருவிழாக்கள், கைவினைப் பொருட்கள்.",
+                        "அரசியலமைப்பு முக்கியத்துவம்: ஒரே மாதிரியான பண்பாட்டைத் திணிக்காமல், பண்பாட்டுப் பன்முகத்தன்மையை ஏற்றுக்கொள்ளக் குடிமக்களை ஊக்குவிப்பதன் மூலம் தேசிய ஒருமைப்பாட்டை வளர்க்கிறது.",
+                        "உறுப்புகள் 29–30 லிருந்து வேறுபாடு: உறுப்புகள் 29–30 சிறுபான்மையினர்/குடிமக்களின் குறிப்பிட்ட பிரிவினர் தங்கள் தனித்துவமான மொழி, எழுத்து அல்லது பண்பாட்டைப் பாதுகாக்க அடிப்படை உரிமைகளை உத்தரவாதம் செய்கின்றன. உறுப்பு 51A(f) இந்தியாவின் ஒட்டுமொத்த கூட்டுப் பண்பாட்டை மதித்து பேண அனைத்துக் குடிமக்களுக்கும் அடிப்படை கடமையை விதிக்கிறது."
+                    ]
+                }
+            }
+        ],
+        "sec_art_51ag": [
+            {
+                "title": "1. Article 51A(g): Protecting Natural Environment & Living Creatures (உறுப்பு 51A(g): இயற்கை சுற்றுச்சூழல் & உயிரினங்கள் பாதுகாப்பு)",
+                "points": {
+                    "en": [
+                        "Constitutional Text: 'To protect and improve the natural environment including forests, lakes, rivers and wildlife, and to have compassion for living creatures.'",
+                        "Four Specified Natural Components: 1. Forests, 2. Lakes, 3. Rivers, 4. Wildlife. (Crucial TNPSC MCQ point: Remember all 4 specific elements!).",
+                        "Compassion for Living Creatures: Extends moral duty to animal welfare—prohibiting cruelty to animals, advocating humane treatment of wildlife and domestic animals.",
+                        "Critical Distinction: Article 48A (DPSP, 42nd CAA) directs the STATE to protect environment and safeguard forests/wildlife. Article 51A(g) (FD, 42nd CAA) commands EVERY CITIZEN to protect environment and have compassion for living creatures.",
+                        "Link with Article 21: Supreme Court expanded Article 21 (Right to Life) to include the 'Right to a wholesome and clean environment'. Article 51A(g) serves as the citizen's reciprocal duty to maintain that clean environment.",
+                        "Statutory Enforcement: Environment Protection Act 1986, Water (Prevention and Control of Pollution) Act 1974, Air Act 1981, Wildlife Protection Act 1972, Prevention of Cruelty to Animals Act 1960."
+                    ],
+                    "ta": [
+                        "அரசியலமைப்பு உரை: 'காடுகள், ஏரிகள், ஆறுகள் மற்றும் வனவிலங்குகள் உட்பட இயற்கை சுற்றுச்சூழலைப் பாதுகாத்து மேம்படுத்துதலும், அனைத்து உயிரினங்கள் மீதும் கருணை காட்டுதலும்.'",
+                        "குறிப்பிடப்பட்ட 4 இயற்கை கூறுகள்: 1. காடுகள், 2. ஏரிகள், 3. ஆறுகள், 4. வனவிலங்குகள். (டிஎன்பிஎஸ்சி முக்கிய குறிப்பு: இந்த 4 குறிப்பிட்ட கூறுகளையும் நினைவில் கொள்க!).",
+                        "உயிரினங்கள் மீதான கருணை: விலங்கு நலன் வரை தார்மீகக் கடமையை விரிவாக்குகிறது—விலங்குகள் மீதான கொடுமைகளைத் தடுத்து, வனவிலங்குகள் மற்றும் வீட்டு விலங்குகளைக் கருணையுடன் நடத்துவதை வலியுறுத்துகிறது.",
+                        "முக்கிய வேறுபாடு: உறுப்பு 48A (DPSP, 42வது திருத்தம்) சுற்றுச்சூழலைப் பாதுகாக்கவும் காடுகள்/வனவிலங்குகளைப் பேணவும் அரசுக்கு வழிகாட்டுகிறது. உறுப்பு 51A(g) (FD, 42வது திருத்தம்) சுற்றுச்சூழலைப் பாதுகாக்கவும் உயிரினங்கள் மீது கருணை காட்டவும் ஒவ்வொரு குடிமகனுக்கும் ஆணையிடுகிறது.",
+                        "உறுப்பு 21 உடன் தொடர்பு: உச்ச நீதிமன்றம் உறுப்பு 21-ஐ (வாழும் உரிமை) 'தூய்மையான சுற்றுச்சூழலுக்கான உரிமை' என விரிவாக்கியுள்ளது. உறுப்பு 51A(g) அத்தூய்மையான சுற்றுச்சூழலைப் பராமரிக்கக் குடிமகனின் பரஸ்பர கடமையாகச் செயல்படுகிறது.",
+                        "சட்டப்பூர்வ அமலாக்கம்: சுற்றுச்சூழல் பாதுகாப்புச் சட்டம் 1986, நீர் (மாசு தடுப்பு & கட்டுப்பாடு) சட்டம் 1974, காற்று சட்டம் 1981, வனவிலங்கு பாதுகாப்புச் சட்டம் 1972, விலங்குகள் வதை தடுப்புச் சட்டம் 1960."
+                    ]
+                }
+            }
+        ],
+        "sec_art_51ah": [
+            {
+                "title": "1. Article 51A(h): Scientific Temper, Humanism & Reform (உறுப்பு 51A(h): அறிவியல் மனப்பான்மை, மனிதநேயம் & சீர்திருத்தம்)",
+                "points": {
+                    "en": [
+                        "Constitutional Text: 'To develop the scientific temper, humanism and the spirit of inquiry and reform.'",
+                        "Four Key Pillars: 1. Scientific Temper, 2. Humanism, 3. Spirit of Inquiry, 4. Spirit of Reform.",
+                        "Scientific Temper vs Scientific Knowledge: Scientific Knowledge is academic data or technical degrees. Scientific Temper is a rational attitude of mind that relies on logic, empirical evidence, cause-and-effect reasoning, and rejects superstition and dogma.",
+                        "Humanism vs Mere Tolerance: Humanism is a active value system placing human dignity, welfare, potential, and empathy at the center of social thought. It goes beyond passive tolerance to active respect for human life.",
+                        "Spirit of Inquiry vs Blind Acceptance: Spirit of inquiry means questioning orthodoxy, challenging social evils, testing hypotheses, and refusing to accept traditions blindly without evidence.",
+                        "Spirit of Reform: Willingness to change outdated social practices, eradicate superstitions (e.g. witch-hunting, caste bigotry), and reform society for human progress.",
+                        "TNPSC Significance: Article 51A(h) makes India one of the very few constitutions in the world explicitly mandating 'Scientific Temper' as a constitutional duty."
+                    ],
+                    "ta": [
+                        "அரசியலமைப்பு உரை: 'அறிவியல் மனப்பான்மை, மனிதநேயம், ஆராய்ச்சி மற்றும் சீர்திருத்த உணர்வை வளர்த்தல்.'",
+                        "நான்கு முக்கிய தூண்கள்: 1. அறிவியல் மனப்பான்மை, 2. மனிதநேயம், 3. ஆராய்ச்சி உணர்வு, 4. சீர்திருத்த உணர்வு.",
+                        "அறிவியல் மனப்பான்மை vs அறிவியல் அறிவு: அறிவியல் அறிவு என்பது கல்வித் தரவுகள் அல்லது பட்டங்கள். அறிவியல் மனப்பான்மை என்பது தர்க்கம், ஆதாரங்கள், காரண-காரிய முடிவுகள் ஆகியவற்றின் அடிப்படையில் இயங்கும், மூடநம்பிக்கைகளை நிராகரிக்கும் பகுத்தறிவு மனநிலையாகும்.",
+                        "மனிதநேயம் vs வெறுமனே சகிப்புத்தன்மை: மனிதநேயம் என்பது மனிதக் கண்ணியம், நலன் மற்றும் திறன்களைச் சமூக சிந்தனையின் மையத்தில் வைக்கும் ஒரு செயலில் உள்ள மதிப்பு அமைப்பாகும்.",
+                        "ஆராய்ச்சி உணர்வு vs குருட்டு நம்பிக்கை: ஆராய்ச்சி உணர்வு என்பது பழமைவாதத்தைக் கேள்வி கேட்பது, சமூகக் கொடுமைகளுக்குச் சவால் விடுப்பது மற்றும் ஆதாரங்களின்றி பாரம்பரியங்களை குருட்டுத்தனமாக ஏற்க மறுப்பதாகும்.",
+                        "சீர்திருத்த உணர்வு: காலாவதியான சமூகப் பழக்கவழக்கங்களை மாற்றவும், மூடநம்பிக்கைகளை ஒழிக்கவும் (எ.கா. சூனியக்காரி வேட்டை, சாதி வெறி), மனித முன்னேற்றத்திற்காகச் சமூகத்தைச் சீர்திருத்தவும் உள்ள தயார்நிலையாகும்.",
+                        "டிஎன்பிஎஸ்சி முக்கியத்துவம்: உறுப்பு 51A(h) உலகிலேயே 'அறிவியல் மனப்பான்மையை' வெளிப்படையாக ஒரு அரசியலமைப்பு கடமையாக மாற்றிய மிகச்சில அரசியலமைப்புகளில் ஒன்றாக இந்தியாவை உருவாக்குகிறது."
+                    ]
+                }
+            }
+        ],
+        "sec_art_51ai": [
+            {
+                "title": "1. Article 51A(i): Safeguarding Public Property & Abjuring Violence (உறுப்பு 51A(i): பொதுச் சொத்துப் பாதுகாப்பு & வன்முறை ஒழிப்பு)",
+                "points": {
+                    "en": [
+                        "Constitutional Text: 'To safeguard public property and to abjure violence.'",
+                        "Meaning of Public Property: State-owned and community assets created using public taxpayer funds, such as buses, railways, government offices, schools, hospitals, roads, bridges, and national monuments.",
+                        "Meaning of 'Abjure': 'Abjure' means to solemnly renounce, abandon, or reject upon oath. It commands citizens to completely reject violence in political protests, bandhs, strikes, or agitations.",
+                        "Public vs Private Property: Article 51A(i) explicitly mandates safeguarding PUBLIC property. Destruction of private property is covered under criminal law (IPC).",
+                        "Constitutional Significance: Promotes peaceful democratic protests; reminds citizens that burning buses or damaging public infrastructure hurts the nation's economic foundation.",
+                        "Judicial Guidelines (2009): Supreme Court (In re Destruction of Public Properties) framed guidelines directing that political parties/organizers of bandhs causing damage to public property must be held strictly liable and ordered to pay monetary compensation."
+                    ],
+                    "ta": [
+                        "அரசியலமைப்பு உரை: 'பொதுச் சொத்தைப் பாதுகாத்தலும், வன்முறையைக் கைவிடுதலும்.'",
+                        "பொதுச் சொத்தின் பொருள்: பேருந்துகள், ரயில்கள், அரசு அலுவலகங்கள், பள்ளிகள், மருத்துவமனைகள், சாலைகள், பாலங்கள் மற்றும் தேசிய நினைவுச் சின்னங்கள் போன்ற வரி செலுத்துவோர் நிதியில் உருவாக்கப்பட்டு அரசுக்குச் சொந்தமான மற்றும் சமூக சொத்துக்கள்.",
+                        "'கைவிடுதல்' (Abjure) என்பதன் பொருள்: 'Abjure' என்றால் சத்தியப் பிரமாணத்தின் மூலம் வன்முறையை முற்றிலுமாகக் கைவிடுதல் அல்லது நிராகரித்தல் ஆகும். அரசியல் போராட்டங்கள், பந்த்கள் அல்லது வேலைநிறுத்தங்களில் வன்முறையை முற்றிலுமாக நிராகரிக்க இது குடிமக்களுக்கு ஆணையிடுகிறது.",
+                        "பொதுச் சொத்து vs தனிநபர் சொத்து: உறுப்பு 51A(i) பொதுச் சொத்தைப் பாதுகாப்பதையே வெளிப்படையாகக் கட்டாயமாக்குகிறது. தனிநபர் சொத்தைச் சேதப்படுத்துவது குற்றவியல் சட்டத்தின் (IPC) கீழ் வருகிறது.",
+                        "அரசியலமைப்பு முக்கியத்துவம்: அமைதியான ஜனநாயகப் போராட்டங்களை ஊக்குவிக்கிறது; பேருந்துகளை எரிப்பதோ அல்லது பொதுக் கட்டமைப்புகளைச் சேதப்படுத்துவதோ தேசத்தின் பொருளாதார அடித்தளத்தைப் பாதிக்கும் என்பதை நினைவூட்டுகிறது.",
+                        "நீதிமன்ற வழிகாட்டுதல்கள் (2009): பொதுச் சொத்துக்களுக்கு சேதம் விளைவிக்கும் பந்த் அமைப்பாளர்கள்/அரசியல் கட்சிகள் மீது கடுமையான பொறுப்பு சுமத்தப்பட்டு நிதியிழப்பீடு வழங்க உத்தரவிட வேண்டும் என உச்ச நீதிமன்றம் வழிகாட்டுதல்களை உருவாக்கியது."
+                    ]
+                }
+            }
+        ],
+        "sec_art_51aj": [
+            {
+                "title": "1. Article 51A(j): Striving Towards Excellence (உறுப்பு 51A(j): சிறப்பினை நோக்கிய முயற்சி)",
+                "points": {
+                    "en": [
+                        "Constitutional Text: 'To strive towards excellence in all spheres of individual and collective activity so that the nation constantly rises to higher levels of endeavour and achievement.'",
+                        "Dual Spheres of Excellence: 1. Individual Activity: Personal character, professional ethics, education, sports, arts, research. 2. Collective Activity: Teamwork, organizational performance, public administration, community welfare.",
+                        "Meaning of 'Strive': 'Strive' means to make constant, dedicated efforts. The Constitution requires sincere effort towards high standards; it is NOT an absolute guarantee of achieving perfection.",
+                        "Nation-Building Goal: Individual and collective achievements collectively elevate the nation's global status in science, sports, economy, and governance.",
+                        "TNPSC Takeaway: Article 51A(j) links personal self-development directly to national progress."
+                    ],
+                    "ta": [
+                        "அரசியலமைப்பு உரை: 'தனிநபர் மற்றும் கூட்டுச் செயல்பாடுகளின் அனைத்துத் துறைகளிலும் சிறப்பினை நோக்கி முயலுதல். இதன் மூலம் தேசம் தொடர்ச்சியாக உயர்ந்த முயற்சி மற்றும் சாதனை நிலைகளுக்கு உயரும்.'",
+                        "சிறப்பின் இரு பிரிவுகள்: 1. தனிநபர் செயல்பாடு: தனிநபர் நற்பண்பு, தொழில்சார் அறம், கல்வி, விளையாட்டு, கலைகள், ஆராய்ச்சி. 2. கூட்டுச் செயல்பாடு: குழுப்பணி, நிறுவனச் செயல்பாடு, பொது நிர்வாகம், சமூக நலன்.",
+                        "'முயலுதல்' என்பதன் பொருள்: 'முயலுதல்' என்றால் தொடர்ச்சியான, அர்ப்பணிப்புடன் கூடிய முயற்சிகளை மேற்கொள்வது. அரசியலமைப்பு உயர் தரங்களை நோக்கி நேர்மையான முயற்சியைக் கோருகிறது; இது பரிபூரணத்தை அடைவதற்கான முழுமையான உத்தரவாதம் அல்ல.",
+                        "தேசத்தைக் கட்டியெழுப்பும் இலக்கு: தனிநபர் மற்றும் கூட்டுச் சாதனைகள் அறிவியல், விளையாட்டு, பொருளாதாரம் மற்றும் ஆட்சியில் தேசத்தின் உலகளாவிய அந்தஸ்தை ஒட்டுமொத்தமாக உயர்த்துகின்றன.",
+                        "டிஎன்பிஎஸ்சி முக்கிய குறிப்பு: உறுப்பு 51A(j) தனிநபர் சுய வளர்ச்சியைத் தேசிய முன்னேற்றத்துடன் நேரடியாக இணைக்கிறது."
+                    ]
+                }
+            }
+        ],
+        "sec_conceptual_integration": [
+            {
+                "title": "1. Inter-Relationship of Article 51A(f)–(j) with FRs and DPSPs (அடிப்படை உரிமைகள் & DPSP உடன் 51A(f)–(j) இன் தொடர்பு)",
+                "points": {
+                    "en": [
+                        "Article 51A(f) <---> Articles 29–30 & Art 49: Article 51A(f) (Composite culture duty) complements Article 29 (Right to conserve culture) and Article 49 (State DPSP to protect monuments of national importance).",
+                        "Article 51A(g) <---> Article 48A & Art 21: Article 51A(g) (Citizen environment duty) operates in tandem with Article 48A (State environment DPSP) and Article 21 (Right to clean environment).",
+                        "Article 51A(h) <---> Article 19(1)(a) & Art 25: Scientific temper supports Freedom of Speech and rational religious reform under Articles 19 and 25.",
+                        "Article 51A(i) <---> Article 19(1)(b): Right to assemble peacefully without arms (Art 19(1)(b)) must be exercised while fulfilling the duty to abjure violence and protect public property (Art 51A(i)).",
+                        "Article 51A(j) <---> Preamble Ideals: Striving for excellence promotes 'Justice, Liberty, Equality, and Fraternity' pledged in the Preamble."
+                    ],
+                    "ta": [
+                        "உறுப்பு 51A(f) <---> உறுப்புகள் 29–30 & உறுப்பு 49: உறுப்பு 51A(f) (கூட்டுப் பண்பாட்டுக் கடமை) உறுப்பு 29 (பண்பாட்டைப் பாதுகாக்கும் உரிமை) மற்றும் உறுப்பு 49 (தேசிய முக்கியத்துவம் வாய்ந்த சின்னங்களைப் பாதுகாக்கும் அரசு DPSP) ஆகியவற்றுக்குத் துணையாக நிற்கிறது.",
+                        "உறுப்பு 51A(g) <---> உறுப்பு 48A & உறுப்பு 21: உறுப்பு 51A(g) (குடிமகன் சுற்றுச்சூழல் கடமை) உறுப்பு 48A (அரசு சுற்றுச்சூழல் DPSP) மற்றும் உறுப்பு 21 (தூய்மையான சுற்றுச்சூழலுக்கான உரிமை) ஆகியவற்றுடன் இணைந்து செயல்படுகிறது.",
+                        "உறுப்பு 51A(h) <---> உறுப்பு 19(1)(a) & உறுப்பு 25: அறிவியல் மனப்பான்மை பேச்சுரிமை மற்றும் உறுப்புகள் 19, 25-ன் கீழ் பகுத்தறிவு மதச் சீர்திருத்தத்திற்கு ஆதரவளிக்கிறது.",
+                        "உறுப்பு 51A(i) <---> உறுப்பு 19(1)(b): ஆயுதங்களின்றி அமைதியாகக் கூடும் உரிமை (உறுப்பு 19(1)(b)) வன்முறையைக் கைவிட்டு பொதுச் சொத்தைப் பாதுகாக்கும் கடமையை (உறுப்பு 51A(i)) நிறைவேற்றும் போது பயன்படுத்தப்பட வேண்டும்.",
+                        "உறுப்பு 51A(j) <---> முகப்புரை லட்சியங்கள்: சிறப்பினை நோக்கி முயலுதல் முகப்புரையில் உறுதியளிக்கப்பட்ட 'நீதி, சுதந்திரம், சமத்துவம் மற்றும் சகோதரத்துவத்தை' மேம்படுத்துகிறது."
+                    ]
+                }
+            }
+        ],
+        "sec_cases_legal_context_part2": [
+            {
+                "title": "1. Landmark Environmental & Public Property Case Laws (முக்கிய சுற்றுச்சூழல் & பொதுச் சொத்து வழக்குகள்)",
+                "points": {
+                    "en": [
+                        "MC Mehta v. Union of India (1997) [Taj Trapezium Case]: Supreme Court invoked Article 51A(g) along with Article 48A and Article 21 to order the relocation or closure of polluting industries around Taj Mahal to protect environmental and cultural heritage.",
+                        "Sachidanand Pandey v. State of West Bengal (1987): Supreme Court ruled that whenever an ecological problem is brought before the court, it is bound to keep in mind Article 48A and Article 51A(g).",
+                        "Animal Welfare Board of India v. A. Nagaraja (2014) [Jallikattu Verdict]: Supreme Court held that Article 51A(g) imposes a fundamental duty on citizens to show compassion for living creatures, elevating animal rights and dignity under Article 21.",
+                        "Destruction of Public & Private Properties, In re v. State of AP (2009): Supreme Court issued comprehensive guidelines to enforce Article 51A(i), holding organizers of violent protests financially accountable for public property damage.",
+                        "State of Gujarat v. Mirzapur Moti Kureshi Kassab Jamat (2005): Supreme Court held that statutory bans on cow slaughter were constitutional restrictions under Articles 19(6) and 48/48A when read alongside Article 51A(g) duty of compassion."
+                    ],
+                    "ta": [
+                        "எம்.சி. மேத்தா vs இந்திய யூனியன் (1997) [தாஜ் ட்ரேபீசியம் வழக்கு]: தாஜ்மஹால் சுற்றியுள்ள மாசுபடுத்தும் தொழிற்சாலைகளை மாற்ற அல்லது மூட உத்தரவிட, சுற்றுச்சூழல் மற்றும் பண்பாட்டுப் பாரம்பரியத்தைப் பாதுகாக்க உறுப்பு 51A(g), உறுப்பு 48A மற்றும் உறுப்பு 21 ஆகியவற்றை உச்ச நீதிமன்றம் பயன்படுத்தியது.",
+                        "சச்சிதானந்த் பாண்டே vs மேற்கு வங்க மாநிலம் (1987): நீதிமன்றத்தின் முன் ஒரு சூழலியல் பிரச்சனை கொண்டு வரப்படும் போதெல்லாம், உறுப்பு 48A மற்றும் உறுப்பு 51A(g) ஆகியவற்றுக்கு நீதிமன்றம் மதிப்பளிக்கக் கடமைப்பட்டுள்ளது என்று உச்ச நீதிமன்றம் தீர்ப்பளித்தது.",
+                        "இந்திய விலங்கு நல வாரியம் vs ஏ. நாகராஜா (2014) [ஜல்லிக்கட்டு தீர்ப்பு]: உறுப்பு 51A(g) உயிரினங்கள் மீது கருணை காட்டக் குடிமக்களுக்கு அடிப்படை கடமையை விதிக்கிறது என்று கூறி, உறுப்பு 21-ன் கீழ் விலங்குகளின் உரிமைகள் மற்றும் கண்ணியத்தை உச்ச நீதிமன்றம் உயர்த்தியது.",
+                        "பொது & தனிநபர் சொத்துக்கள் சேதம், மறுஆய்வு vs ஆந்திர மாநிலம் (2009): உறுப்பு 51A(i)-ஐ அமல்படுத்த உச்ச நீதிமன்றம் விரிவான வழிகாட்டுதல்களை வழங்கியது. பொதுச் சொத்து சேதத்திற்கு வன்முறைப் போராட்ட அமைப்பாளர்களையே நிதிப் பொறுப்பாக்கியது.",
+                        "குஜராத் மாநிலம் vs மிர்சாபூர் மோதி குரேஷி கசாப் ஜமாத் (2005): பசு வதைத் தடைகள் உறுப்பு 51A(g) கருணைக் கடமையுடன் இணைந்து வாசிக்கப்படும் போது உறுப்புகள் 19(6) மற்றும் 48/48A-ன் கீழ் அரசியலமைப்பு ரீதியாக செல்லுபடியாகும் கட்டுப்பாடுகள் என்று உச்ச நீதிமன்றம் தீர்ப்பளித்தது."
+                    ]
+                }
+            }
+        ],
+        "sec_traps_revision_part2": [
+            {
+                "title": "TNPSC Traps & High-Yield Part 2 Summary (டிஎன்பிஎஸ்சி பொறிகள் & பகுதி 2 முக்கிய திருப்புதல் சுருக்கம்)",
+                "points": {
+                    "en": [
+                        "Article 51A(f) mandates preserving 'composite culture'; Articles 29–30 protect minority cultural rights.",
+                        "Article 48A is a DPSP for STATE; Article 51A(g) is a Fundamental Duty for CITIZENS.",
+                        "Article 51A(g) explicitly mentions 4 natural elements: Forests, Lakes, Rivers, Wildlife + Compassion for living creatures.",
+                        "Article 51A(h) includes Scientific Temper, Humanism, Spirit of Inquiry, and Reform.",
+                        "Article 51A(i) mandates safeguarding PUBLIC property and abjuring violence.",
+                        "Article 51A(j) mandates striving towards EXCELLENCE in individual and collective spheres."
+                    ],
+                    "ta": [
+                        "உறுப்பு 51A(f) 'கூட்டுப் பண்பாட்டைப்' பேண ஆணையிடுகிறது; உறுப்புகள் 29–30 சிறுபான்மையினரின் பண்பாட்டு உரிமைகளைப் பாதுகாக்கின்றன.",
+                        "உறுப்பு 48A என்பது அரசுக்கான DPSP; உறுப்பு 51A(g) என்பது குடிமக்களுக்கான அடிப்படை கடமை.",
+                        "உறுப்பு 51A(g) 4 இயற்கை கூறுகளை வெளிப்படையாகக் குறிப்பிடுகிறது: காடுகள், ஏரிகள், ஆறுகள், வனவிலங்குகள் + உயிரினங்கள் மீதான கருணை.",
+                        "உறுப்பு 51A(h) அறிவியல் மனப்பான்மை, மனிதநேயம், ஆராய்ச்சி உணர்வு மற்றும் சீர்திருத்தத்தை உள்ளடக்கியது.",
+                        "உறுப்பு 51A(i) பொதுச் சொத்தைப் பாதுகாக்கவும் வன்முறையைக் கைவிடவும் கட்டாயமாக்குகிறது.",
+                        "உறுப்பு 51A(j) தனிநபர் மற்றும் கூட்டுப் பிரிவுகளில் சிறப்பினை நோக்கி முயல ஆணையிடுகிறது."
+                    ]
+                }
+            }
+        ],
+        "tables": [
+            {
+                "id": "tbl_51af_vs_arts29_30",
+                "title_en": "1. Article 51A(f) (Composite Culture) vs Articles 29–30 (Minority Cultural Rights)",
+                "title_ta": "1. உறுப்பு 51A(f) (கூட்டுப் பண்பாடு) vs உறுப்புகள் 29–30 (சிறுபான்மையினர் பண்பாட்டு உரிமைகள்)",
+                "headers_en": ["Dimension", "Article 51A(f) (Fundamental Duty)", "Articles 29–30 (Fundamental Rights)"],
+                "headers_ta": ["பரிமாணம்", "உறுப்பு 51A(f) (அடிப்படை கடமை)", "உறுப்புகள் 29–30 (அடிப்படை உரிமைகள்)"],
+                "rows_en": [
+                    ["Nature", "Fundamental Duty of citizens", "Fundamental Rights of minorities / sections of citizens"],
+                    ["Constitutional Location", "Part IVA (Article 51A)", "Part III (Articles 29 & 30)"],
+                    ["Target Beneficiary / Scope", "Overarching 'Composite Culture' of all India", "Specific distinct language, script, or culture of minorities"],
+                    ["Justiciability", "Non-justiciable", "Justiciable in Supreme Court (Art 32) and High Courts (Art 226)"],
+                    ["Primary Mandate", "Value and preserve rich heritage", "Conserve distinct culture & establish educational institutions"]
+                ],
+                "rows_ta": [
+                    ["இயல்பு", "குடிமக்களின் அடிப்படை கடமை", "சிறுபான்மையினர் / குடிமக்கள் பிரிவினரின் அடிப்படை உரிமைகள்"],
+                    ["அரசியலமைப்பு இடம்", "பகுதி IVA (உறுப்பு 51A)", "பகுதி III (உறுப்புகள் 29 & 30)"],
+                    ["இலக்கு பயனாளி / எல்லை", "இந்தியாவின் ஒட்டுமொத்த 'கூட்டுப் பண்பாடு'", "சிறுபான்மையினரின் குறிப்பிட்ட தனித்துவமான மொழி, எழுத்து, பண்பாடு"],
+                    ["நீதிமன்ற அமலாக்கம்", "அமல்படுத்த முடியாதது", "அமல்படுத்தக் கூடியது (உச்ச நீதிமன்றம் உறுப்பு 32 & உயர் நீதிமன்றங்கள் 226)"],
+                    ["முதன்மை கட்டளை", "வளமான பாரம்பரியத்தை மதித்து பேணுதல்", "தனித்துவமான பண்பாட்டைப் பாதுகாத்தல் & கல்வி நிறுவனங்களை நிறுவுதல்"]
+                ]
+            },
+            {
+                "id": "tbl_art48a_vs_51ag",
+                "title_en": "2. Article 48A (State DPSP) vs Article 51A(g) (Citizen Duty)",
+                "title_ta": "2. உறுப்பு 48A (அரசு DPSP) vs உறுப்பு 51A(g) (குடிமகன் கடமை)",
+                "headers_en": ["Dimension", "Article 48A (Directive Principle)", "Article 51A(g) (Fundamental Duty)"],
+                "headers_ta": ["பரிமாணம்", "உறுப்பு 48A (வழிகாட்டு நெறிமுறை)", "உறுப்பு 51A(g) (அடிப்படை கடமை)"],
+                "rows_en": [
+                    ["Duty Bearer", "The STATE (Government)", "Every CITIZEN of India"],
+                    ["Enshrined Part", "Part IV (DPSP)", "Part IVA (Fundamental Duty)"],
+                    ["Amendment Addition", "42nd Constitutional Amendment Act, 1976", "42nd Constitutional Amendment Act, 1976"],
+                    ["Specified Elements", "Protect environment & safeguard forests and wildlife", "Forests, lakes, rivers, wildlife + compassion for living creatures"],
+                    ["Judicial Role", "Guides policy making & law drafting", "Evaluates reasonable restrictions under Art 19"]
+                ],
+                "rows_ta": [
+                    ["கடமைப் பொறுப்பாளி", "அரசு (Government)", "இந்தியாவின் ஒவ்வொரு குடிமகனும்"],
+                    ["பொறிக்கப்பட்டுள்ள பகுதி", "பகுதி IV (DPSP)", "பகுதி IVA (அடிப்படை கடமை)"],
+                    ["திருத்தச் சேர்க்கை", "42வது அரசியலமைப்பு திருத்தச் சட்டம், 1976", "42வது அரசியலமைப்பு திருத்தச் சட்டம், 1976"],
+                    ["குறிப்பிடப்பட்ட கூறுகள்", "சுற்றுச்சூழலைப் பாதுகாத்தல் & காடுகள், வனவிலங்குகளைப் பேணுதல்", "காடுகள், ஏரிகள், ஆறுகள், வனவிலங்குகள் + உயிரினங்கள் மீதான கருணை"],
+                    ["நீதிமன்றப் பங்கு", "கொள்கை உருவாக்கம் & சட்ட வரைவை வழிநடத்துகிறது", "உறுப்பு 19-ன் கீழ் நியாயமான கட்டுப்பாடுகளை மதிப்பிடுகிறது"]
+                ]
+            },
+            {
+                "id": "tbl_art21_vs_51ag",
+                "title_en": "3. Article 21 (Clean Environment Right) vs Article 51A(g) (Environment Duty)",
+                "title_ta": "3. உறுப்பு 21 (தூய்மை சுற்றுச்சூழல் உரிமை) vs உறுப்பு 51A(g) (சுற்றுச்சூழல் கடமை)",
+                "headers_en": ["Feature", "Article 21 (Fundamental Right)", "Article 51A(g) (Fundamental Duty)"],
+                "headers_ta": ["அம்சம்", "உறுப்பு 21 (அடிப்படை உரிமை)", "உறுப்பு 51A(g) (அடிப்படை கடமை)"],
+                "rows_en": [
+                    ["Nature", "Right guaranteed to individuals", "Duty commanded to citizens"],
+                    ["Core Content", "Right to wholesome, pollution-free environment", "Duty to protect & improve environment"],
+                    ["Court Enforcement", "Citizens can file writ petition against polluting State/units", "Serves as justification for environmental protection laws"],
+                    ["Reciprocal Link", "State must ensure clean air/water for Right to Life", "Citizen must not pollute rivers/forests as a reciprocal duty"]
+                ],
+                "rows_ta": [
+                    ["இயல்பு", "நபர்களுக்கு உத்தரவாதம் அளிக்கப்பட்ட உரிமை", "குடிமக்களுக்குக் கட்டளையிடப்பட்ட கடமை"],
+                    ["முதன்மை விஷயம்", "மாசற்ற, ஆரோக்கியமான சுற்றுச்சூழலுக்கான உரிமை", "சுற்றுச்சூழலைப் பாதுகாத்து மேம்படுத்தும் கடமை"],
+                    ["நீதிமன்ற அமலாக்கம்", "மாசுபடுத்தும் அரசு/நிறுவனங்களுக்கு எதிராக மனு தாக்கல் செய்யலாம்", "சுற்றுச்சூழல் பாதுகாப்புச் சட்டங்களுக்கான நியாயப்படுத்தலாகச் செயல்படுகிறது"],
+                    ["பரஸ்பர தொடர்பு", "வாழும் உரிமைக்கு அரசு தூய்மையான காற்று/நீரை உறுதி செய்ய வேண்டும்", "குடிமகன் ஆறுகள்/காடுகளை மாசுபடுத்தக் கூடாது என்பது பரஸ்பர கடமை"]
+                ]
+            },
+            {
+                "id": "tbl_scientific_temper_vs_knowledge",
+                "title_en": "4. Scientific Temper vs Scientific Knowledge",
+                "title_ta": "4. அறிவியல் மனப்பான்மை vs அறிவியல் அறிவு",
+                "headers_en": ["Aspect", "Scientific Temper (Article 51A(h))", "Scientific Knowledge"],
+                "headers_ta": ["பகுதி", "அறிவியல் மனப்பான்மை (உறுப்பு 51A(h))", "அறிவியல் அறிவு"],
+                "rows_en": [
+                    ["Definition", "Rational attitude of mind relying on logic, evidence & reasoning", "Acquired academic facts, formulas, degrees & technical data"],
+                    ["Scope", "Universal mindset applicable to daily life & social issues", "Domain-specific subject knowledge in physics, chemistry, etc."],
+                    ["Superstition Stance", "Actively questions and rejects unverified superstitions", "Can coexist with superstitions if not practically applied"],
+                    ["Constitutional Value", "Explicit Fundamental Duty under Article 51A(h)", "Educational capability"]
+                ],
+                "rows_ta": [
+                    ["வரையறை", "தர்க்கம், ஆதாரங்கள் & காரணங்களின் அடிப்படையில் இயங்கும் பகுத்தறிவு மனநிலை", "கற்றுக்கொண்ட கல்வித் தரவுகள், சூத்திரங்கள், பட்டங்கள் & தொழில்நுட்பத் தரவுகள்"],
+                    ["எல்லை", "அன்றாட வாழ்க்கை & சமூகப் பிரச்சினைகளுக்குப் பொருந்தும் உலகளாவிய மனநிலை", "இயற்பியல், வேதியியல் போன்றவற்றில் உள்ள குறிப்பிட்ட பாட அறிவு"],
+                    ["மூடநம்பிக்கை நிலைப்பாடு", "ஆதாரமற்ற மூடநம்பிக்கைகளைக் கேள்வி கேட்டு நிராகரிக்கிறது", "செயல்பாட்டில் பயன்படுத்தாவிட்டால் மூடநம்பிக்கைகளுடன் இணைந்து வாழக்கூடும்"],
+                    ["அரசியலமைப்பு மதிப்பு", "உறுப்பு 51A(h)-ன் கீழ் வெளிப்படையான அடிப்படை கடமை", "கல்வித் திறன்"]
+                ]
+            },
+            {
+                "id": "tbl_humanism_vs_inquiry",
+                "title_en": "5. Humanism vs Spirit of Inquiry & Reform",
+                "title_ta": "5. மனிதநேயம் vs ஆராய்ச்சி & சீர்திருத்த உணர்வு",
+                "headers_en": ["Pillar of Art 51A(h)", "Core Philosophy", "Practical Application"],
+                "headers_ta": ["உறுப்பு 51A(h)-ன் தூண்", "முதன்மை தத்துவம்", "நடைமுறைப் பயன்பாடு"],
+                "rows_en": [
+                    ["Humanism (மனிதநேயம்)", "Placing human dignity, compassion & empathy at the center", "Respecting individual rights, opposing cruelty, helping vulnerable"],
+                    ["Spirit of Inquiry (ஆராய்ச்சி உணர்வு)", "Constant questioning of assumptions & testing hypotheses", "Refusing blind acceptance, demanding empirical evidence"],
+                    ["Spirit of Reform (சீர்திருத்த உணர்வு)", "Willingness to change outdated traditions & social evils", "Eradicating caste bigotry, witch-hunting, child marriage"]
+                ],
+                "rows_ta": [
+                    ["மனிதநேயம் (Humanism)", "மனிதக் கண்ணியம், கருணை & இரக்கத்தை மையத்தில் வைத்தல்", "தனிநபர் உரிமைகளை மதித்தல், கொடுமைகளை எதிர்த்தல், எளியோருக்கு உதவுதல்"],
+                    ["ஆராய்ச்சி உணர்வு (Spirit of Inquiry)", "கருத்துகளைத் தொடர்ச்சியாகக் கேள்வி கேட்பது & சோதிப்பது", "குருட்டு நம்பிக்கையை ஏற்க மறுத்தல், சான்றுகளைக் கோருதல்"],
+                    ["சீர்திருத்த உணர்வு (Spirit of Reform)", "காலாவதியான மரபுகள் & சமூகக் கொடுமைகளை மாற்றும் தயார்நிலை", "சாதி வெறி, சூனியக்காரி வேட்டை, குழந்தை திருமணங்களை ஒழித்தல்"]
+                ]
+            },
+            {
+                "id": "tbl_public_vs_private_property",
+                "title_en": "6. Article 51A(i): Public Property vs Private Property",
+                "title_ta": "6. உறுப்பு 51A(i): பொதுச் சொத்து vs தனிநபர் சொத்து",
+                "headers_en": ["Property Category", "Ownership & Funding", "Art 51A(i) Mandate & Legal Framework"],
+                "headers_ta": ["சொத்துப் பிரிவு", "உரிமை & நிதி", "உறுப்பு 51A(i) கட்டளை & சட்டக் கட்டமைப்பு"],
+                "rows_en": [
+                    ["Public Property (பொதுச் சொத்து)", "State/Community owned; funded by public taxes (Buses, Trains, Schools)", "Explicitly mandated to safeguard under Art 51A(i); 2009 SC compensation guidelines"],
+                    ["Private Property (தனிநபர் சொத்து)", "Individually owned by private citizens/companies", "Protected under Art 300A & IPC criminal laws (mischief, trespass)"]
+                ],
+                "rows_ta": [
+                    ["பொதுச் சொத்து (Public Property)", "அரசு/சமூகம் சார்ந்தது; பொது வரிப் பணத்தில் உருவாக்கப்பட்டது (பேருந்துகள், ரயில்கள்)", "உறுப்பு 51A(i)-ன் கீழ் பாதுகாப்பது கட்டாயம்; 2009 உச்ச நீதிமன்ற இழப்பீட்டு வழிகாட்டுதல்கள்"],
+                    ["தனிநபர் சொத்து (Private Property)", "தனிநபர் குடிமக்கள்/நிறுவனங்களுக்குச் சொந்தமானது", "உறுப்பு 300A & IPC குற்றவியல் சட்டங்களின் கீழ் பாதுகாக்கப்படுகிறது"]
+                ]
+            },
+            {
+                "id": "tbl_individual_vs_collective_excellence",
+                "title_en": "7. Article 51A(j): Individual Excellence vs Collective Excellence",
+                "title_ta": "7. உறுப்பு 51A(j): தனிநபர் சிறப்பு vs கூட்டுச் சிறப்பு",
+                "headers_en": ["Sphere of Excellence", "Core Focus", "National Impact & Example"],
+                "headers_ta": ["சிறப்பின் பிரிவு", "முதன்மை கவனம்", "தேசியத் தாக்கம் & உதாரணம்"],
+                "rows_en": [
+                    ["Individual Excellence", "Personal character, academics, professional ethics, sports", "Individual Olympic gold medal, scientific invention (ISRO scientist)"],
+                    ["Collective Excellence", "Teamwork, organizational efficiency, community service", "ISRO Space Mission team success, National Disaster Response Force (NDRF)"]
+                ],
+                "rows_ta": [
+                    ["தனிநபர் சிறப்பு (Individual)", "தனிநபர் நற்பண்பு, கல்வி, தொழில்சார் அறம், விளையாட்டு", "தனிநபர் ஒலிம்பிக் தங்கம், அறிவியல் கண்டுபிடிப்பு (இஸ்ரோ விஞ்ஞானி)"],
+                    ["கூட்டுச் சிறப்பு (Collective)", "குழுப்பணி, நிறுவனத் திறன், சமூக சேவை", "இஸ்ரோ விண்வெளித் திட்டக் குழுவின் வெற்றி, தேசிய பேரிடர் மீட்புப் படை (NDRF)"]
+                ]
+            },
+            {
+                "id": "tbl_51af_to_j_quick_matrix",
+                "title_en": "8. Article 51A(f) to 51A(j) Quick Comparison Matrix",
+                "title_ta": "8. உறுப்புகள் 51A(f) முதல் 51A(j) வரையிலான விரைவு ஒப்பீட்டு அணி",
+                "headers_en": ["Article Clause", "Core Theme / Keyword", "Statutory / Judicial Enforcement"],
+                "headers_ta": ["உறுப்பு உட்பிரிவு", "முதன்மை கருப்பொருள் / முக்கிய சொல்", "சட்டப்பூர்வ / நீதித்துறை அமலாக்கம்"],
+                "rows_en": [
+                    ["51A(f)", "Composite Culture & Rich Heritage", "Ancient Monuments Preservation Act, UNESCO Heritage Sites"],
+                    ["51A(g)", "Environment (Forests, Lakes, Rivers, Wildlife) & Compassion", "Environment Protection Act 1986, Wildlife Protection Act 1972"],
+                    ["51A(h)", "Scientific Temper, Humanism, Inquiry & Reform", "Anti-Superstition State Laws, Educational Policies"],
+                    ["51A(i)", "Safeguard Public Property & Abjure Violence", "Prevention of Damage to Public Property Act 1984, 2009 SC Rules"],
+                    ["51A(j)", "Strive for Excellence (Individual & Collective)", "National Awards, Academic R&D, Sports Excellence Policies"]
+                ],
+                "rows_ta": [
+                    ["51A(f)", "கூட்டுப் பண்பாடு & வளமான பாரம்பரியம்", "பண்டைய நினைவுச் சின்னங்கள் பாதுகாப்புச் சட்டம், யுனெஸ்கோ பாரம்பரிய தளங்கள்"],
+                    ["51A(g)", "சுற்றுச்சூழல் (காடுகள், ஏரிகள், ஆறுகள், வனவிலங்குகள்) & கருணை", "சுற்றுச்சூழல் பாதுகாப்புச் சட்டம் 1986, வனவிலங்கு பாதுகாப்புச் சட்டம் 1972"],
+                    ["51A(h)", "அறிவியல் மனப்பான்மை, மனிதநேயம், ஆராய்ச்சி & சீர்திருத்தம்", "மாநில மூடநம்பிக்கை எதிர்ப்புச் சட்டங்கள், கல்விக் கொள்கைகள்"],
+                    ["51A(i)", "பொதுச் சொத்தைப் பாதுகாத்தல் & வன்முறையைக் கைவிடுதல்", "பொதுச் சொத்து சேதத் தடுப்புச் சட்டம் 1984, 2009 உச்ச நீதிமன்ற விதிகள்"],
+                    ["51A(j)", "சிறப்பினை நோக்கி முயலுதல் (தனிநபர் & கூட்டு)", "தேசிய விருதுகள், கல்வி ஆராய்ச்சி, விளையாட்டுச் சிறப்புத் திட்டங்கள்"]
+                ]
+            },
+            {
+                "id": "tbl_fr_vs_fd_part2",
+                "title_en": "9. Fundamental Rights vs Fundamental Duties (Part 2 Integration)",
+                "title_ta": "9. அடிப்படை உரிமைகள் vs அடிப்படை கடமைகள் (பகுதி 2 ஒருங்கிணைப்பு)",
+                "headers_en": ["Fundamental Right (Part III)", "Correlative Fundamental Duty (Part IVA)", "Constitutional Harmony Concept"],
+                "headers_ta": ["அடிப்படை உரிமை (பகுதி III)", "தொடர்புடைய அடிப்படை கடமை (பகுதி IVA)", "அரசியலமைப்பு இணக்கக் கருத்து"],
+                "rows_en": [
+                    ["Art 21 (Right to Clean Environment)", "Art 51A(g) (Duty to protect environment & rivers)", "Right to clean environment requires citizen duty not to pollute"],
+                    ["Arts 29-30 (Right to conserve culture)", "Art 51A(f) (Duty to value & preserve composite culture)", "Minority cultural rights harmonized with broad composite heritage"],
+                    ["Art 19(1)(b) (Right to assemble peacefully)", "Art 51A(i) (Duty to abjure violence & protect public property)", "Assembly right cannot be exercised through violence or property damage"]
+                ],
+                "rows_ta": [
+                    ["உறுப்பு 21 (தூய்மையான சுற்றுச்சூழல் உரிமை)", "உறுப்பு 51A(g) (சுற்றுச்சூழல் & ஆறுகளைப் பாதுகாக்கும் கடமை)", "தூய்மையான சுற்றுச்சூழலுக்கான உரிமைக்கு மாசுபடுத்தாத குடிமகன் கடமை தேவை"],
+                    ["உறுப்புகள் 29-30 (பண்பாட்டைப் பாதுகாக்கும் உரிமை)", "உறுப்பு 51A(f) (கூட்டுப் பண்பாட்டை மதித்து பேணும் கடமை)", "சிறுபான்மையினர் பண்பாட்டு உரிமைகள் பரந்த கூட்டுப் பாரம்பரியத்துடன் இணைகின்றன"],
+                    ["உறுப்பு 19(1)(b) (அமைதியாகக் கூடும் உரிமை)", "உறுப்பு 51A(i) (வன்முறையைக் கைவிட்டு பொதுச் சொத்தைப் பாதுகாக்கும் கடமை)", "கூடும் உரிமை வன்முறை அல்லது சொத்து சேதம் மூலம் பயன்படுத்தப்படக் கூடாது"]
+                ]
+            },
+            {
+                "id": "tbl_dpsp_vs_fd_part2",
+                "title_en": "10. DPSP vs Fundamental Duties (Part 2 Environmental & Cultural Integration)",
+                "title_ta": "10. DPSP vs அடிப்படை கடமைகள் (பகுதி 2 சுற்றுச்சூழல் & பண்பாட்டு ஒருங்கிணைப்பு)",
+                "headers_en": ["DPSP Provision (Part IV)", "Fundamental Duty Provision (Part IVA)", "Key Operational Difference"],
+                "headers_ta": ["DPSP விதி (பகுதி IV)", "அடிப்படை கடமை விதி (பகுதி IVA)", "முதன்மை செயல்பாட்டு வேறுபாடு"],
+                "rows_en": [
+                    ["Art 48A (State Duty to protect environment & forests)", "Art 51A(g) (Citizen Duty to protect environment & wildlife)", "Art 48A commands State policies | Art 51A(g) commands citizen conduct"],
+                    ["Art 49 (State Duty to protect monuments of national importance)", "Art 51A(f) (Citizen Duty to value & preserve rich heritage)", "Art 49 mandates physical monument maintenance | Art 51A(f) mandates cultural respect"]
+                ],
+                "rows_ta": [
+                    ["உறுப்பு 48A (சுற்றுச்சூழல் & காடுகளைப் பாதுகாக்கும் அரசு கடமை)", "உறுப்பு 51A(g) (சுற்றுச்சூழல் & வனவிலங்குகளைப் பாதுகாக்கும் குடிமகன் கடமை)", "உறுப்பு 48A அரசு கொள்கைகளுக்கு ஆணையிடுகிறது | உறுப்பு 51A(g) குடிமகன் நடத்தைகளுக்கு ஆணையிடுகிறது"],
+                    ["உறுப்பு 49 (தேசிய முக்கியத்துவம் வாய்ந்த நினைவுச் சின்னங்களைப் பாதுகாக்கும் அரசு கடமை)", "உறுப்பு 51A(f) (வளமான பாரம்பரியத்தை மதித்து பேணும் குடிமகன் கடமை)", "உறுப்பு 49 நினைவுச் சின்னங்களைப் பராமரிக்க ஆணையிடுகிறது | உறுப்பு 51A(f) பண்பாட்டு மரியாதைக்கு ஆணையிடுகிறது"]
+                ]
+            }
+        ],
+        "mind_map": [
+            {
+                "title": "Fundamental Duties Part 2 (Article 51A(f) to 51A(j))",
+                "short_label": "Part 2 Duties",
+                "children": [
+                    {
+                        "title": "Article 51A(f): Composite Culture & Heritage",
+                        "short_label": "51A(f) Culture",
+                        "children": [
+                            {
+                                "title": "Value & preserve rich heritage of composite culture",
+                                "short_label": "Heritage"
+                            },
+                            {
+                                "title": "Connected with Arts 29–30 (FR) & Art 49 (DPSP)",
+                                "short_label": "Arts 29-30 & 49"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Article 51A(g): Environment & Compassion",
+                        "short_label": "51A(g) Environment",
+                        "children": [
+                            {
+                                "title": "4 Components: Forests, Lakes, Rivers, Wildlife",
+                                "short_label": "4 Natural Elements"
+                            },
+                            {
+                                "title": "Compassion for living creatures (Animal Welfare)",
+                                "short_label": "Compassion"
+                            },
+                            {
+                                "title": "Connected with Art 48A (DPSP State Duty) & Art 21 (Clean Env)",
+                                "short_label": "Art 48A & 21"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Article 51A(h): Scientific Temper & Reform",
+                        "short_label": "51A(h) Science",
+                        "children": [
+                            {
+                                "title": "4 Pillars: Scientific Temper, Humanism, Inquiry, Reform",
+                                "short_label": "4 Pillars"
+                            },
+                            {
+                                "title": "Rational thinking vs superstition; Evidence vs blind faith",
+                                "short_label": "Rationality"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Article 51A(i): Public Property & Non-Violence",
+                        "short_label": "51A(i) Property",
+                        "children": [
+                            {
+                                "title": "Safeguard public property & abjure (renounce) violence",
+                                "short_label": "Public Assets"
+                            },
+                            {
+                                "title": "Connected with Art 19(1)(b) peaceful assembly & 2009 SC Rules",
+                                "short_label": "2009 SC Rules"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Article 51A(j): Striving for Excellence",
+                        "short_label": "51A(j) Excellence",
+                        "children": [
+                            {
+                                "title": "Dual Spheres: Individual & Collective activity",
+                                "short_label": "Individual & Team"
+                            },
+                            {
+                                "title": "Goal: Nation constantly rises to higher endeavour & achievement",
+                                "short_label": "National Progress"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "tnpsc_traps": [
+            {
+                "title": "1. Article 48A vs Article 51A(g) Responsibility Trap (உறுப்பு 48A vs உறுப்பு 51A(g) பொறுப்புப் பொறி)",
+                "points": {
+                    "en": [
+                        "TRAP: Statement saying Article 51A(g) commands the State to protect forests and rivers.",
+                        "FACT: Article 48A (DPSP) commands the STATE. Article 51A(g) (Fundamental Duty) commands EVERY CITIZEN."
+                    ],
+                    "ta": [
+                        "பொறி: உறுப்பு 51A(g) காடுகளையும் ஆறுகளையும் பாதுகாக்குமாறு அரசுக்கு ஆணையிடுகிறது என்ற கூற்று.",
+                        "உண்மை: உறுப்பு 48A (DPSP) அரசுக்கு ஆணையிடுகிறது. உறுப்பு 51A(g) (அடிப்படை கடமை) ஒவ்வொரு குடிமகனுக்கும் ஆணையிடுகிறது."
+                    ]
+                }
+            },
+            {
+                "title": "2. Article 51A(g) Four Natural Components Trap (உறுப்பு 51A(g) 4 இயற்கை கூறுகள் பொறி)",
+                "points": {
+                    "en": [
+                        "TRAP: Statements replacing specified natural elements (e.g. including 'mountains' or 'oceans' in Art 51A(g)).",
+                        "FACT: Article 51A(g) explicitly names FOUR natural elements: Forests, Lakes, Rivers, and Wildlife (+ compassion for living creatures)."
+                    ],
+                    "ta": [
+                        "பொறி: குறிக்கப்பட்ட இயற்கை கூறுகளை மாற்றி அமைக்கும் கூற்றுகள் (எ.கா. உறுப்பு 51A(g)-ல் 'மலைகள்' அல்லது 'பெருங்கடல்கள்' எனச் சேர்ப்பது).",
+                        "உண்மை: உறுப்பு 51A(g) நான்கு இயற்கை கூறுகளை வெளிப்படையாகப் பெயரிடுகிறது: காடுகள், ஏரிகள், ஆறுகள் மற்றும் வனவிலங்குகள் (+ உயிரினங்கள் மீதான கருணை)."
+                    ]
+                }
+            },
+            {
+                "title": "3. Article 51A(f) vs Articles 29–30 Cultural Scope Trap (உறுப்பு 51A(f) vs 29–30 பண்பாட்டு எல்லைப் பொறி)",
+                "points": {
+                    "en": [
+                        "TRAP: Confusing Article 51A(f) composite culture duty with minority cultural rights.",
+                        "FACT: Articles 29–30 protect minority cultural rights. Article 51A(f) commands ALL citizens to value and preserve India's overall composite culture."
+                    ],
+                    "ta": [
+                        "பொறி: உறுப்பு 51A(f) கூட்டுப் பண்பாட்டுக் கடமையைச் சிறுபான்மையினரின் பண்பாட்டு உரிமைகளுடன் குழப்பிக் கொள்ளுதல்.",
+                        "உண்மை: உறுப்புகள் 29–30 சிறுபான்மையினரின் பண்பாட்டு உரிமைகளைப் பாதுகாக்கின்றன. உறுப்பு 51A(f) இந்தியாவின் ஒட்டுமொத்த கூட்டுப் பண்பாட்டை மதித்து பேண அனைத்துக் குடிமக்களுக்கும் ஆணையிடுகிறது."
+                    ]
+                }
+            },
+            {
+                "title": "4. Scientific Temper vs Scientific Knowledge Trap (அறிவியல் மனப்பான்மை vs அறிவியல் அறிவு பொறி)",
+                "points": {
+                    "en": [
+                        "TRAP: Claiming that possessing a science degree satisfies Article 51A(h).",
+                        "FACT: Scientific Temper is a rational attitude of mind that rejects superstition. Academic science degrees do not automatically constitute scientific temper."
+                    ],
+                    "ta": [
+                        "பொறி: அறிவியல் பட்டம் பெற்றிருப்பது உறுப்பு 51A(h)-ஐப் பூர்த்தி செய்கிறது என்ற கோரிக்கை.",
+                        "உண்மை: அறிவியல் மனப்பான்மை என்பது மூடநம்பிக்கைகளை நிராகரிக்கும் பகுத்தறிவு மனநிலையாகும். கல்வி அறிவியல் பட்டங்கள் தானாகவே அறிவியல் மனப்பான்மையாகி விடாது."
+                    ]
+                }
+            },
+            {
+                "title": "5. Article 51A(i) Public vs Private Property Trap (உறுப்பு 51A(i) பொது vs தனிநபர் சொத்துப் பொறி)",
+                "points": {
+                    "en": [
+                        "TRAP: Statement saying Article 51A(i) covers safeguarding private property.",
+                        "FACT: Article 51A(i) explicitly specifies PUBLIC property. Private property protection is governed by IPC criminal laws and Article 300A."
+                    ],
+                    "ta": [
+                        "பொறி: உறுப்பு 51A(i) தனிநபர் சொத்தைப் பாதுகாப்பதையும் உள்ளடக்கியது என்ற கூற்று.",
+                        "உண்மை: உறுப்பு 51A(i) பொதுச் சொத்தையே வெளிப்படையாகக் குறிப்பிடுகிறது. தனிநபர் சொத்துப் பாதுகாப்பு IPC குற்றவியல் சட்டங்கள் மற்றும் உறுப்பு 300A மூலம் நெறிப்படுத்தப்படுகிறது."
+                    ]
+                }
+            },
+            {
+                "title": "6. Article 51A(j) Striving vs Guaranteeing Excellence Trap (உறுப்பு 51A(j) முயலுதல் vs உத்தரவாதம் அளித்தல் பொறி)",
+                "points": {
+                    "en": [
+                        "TRAP: Interpreting Article 51A(j) as a legal guarantee of perfection or achievement.",
+                        "FACT: Article 51A(j) commands 'STRIVING towards excellence' (sincere effort). It does not penalize non-achievement."
+                    ],
+                    "ta": [
+                        "பொறி: உறுப்பு 51A(j)-ஐ பரிபூரணம் அல்லது சாதனையின் சட்டப்பூர்வ உத்தரவாதமாக விளக்குவது.",
+                        "உண்மை: உறுப்பு 51A(j) 'சிறப்பினை நோக்கி முயலுதல்' (நேர்மையான முயற்சி) என ஆணையிடுகிறது. இது சாதனை செய்யாததைத் தண்டிப்பதில்லை."
+                    ]
+                }
+            }
+        ],
+        "important_facts": {
+            "en": [
+                "Article 51A(f) mandates valuing and preserving the rich heritage of India's composite culture.",
+                "Article 51A(g) specifies protection of 4 natural elements: Forests, Lakes, Rivers, Wildlife + Compassion for living creatures.",
+                "Article 48A is a State DPSP for environment; Article 51A(g) is a Citizen Fundamental Duty for environment.",
+                "Article 51A(h) outlines 4 pillars: Scientific Temper, Humanism, Spirit of Inquiry, and Spirit of Reform.",
+                "Article 51A(i) commands safeguarding PUBLIC property and abjuring violence.",
+                "Article 51A(j) directs striving towards excellence in both individual and collective activity.",
+                "MC Mehta v. Union of India (1997) invoked Art 51A(g), 48A & 21 for environmental protection around Taj Mahal.",
+                "Animal Welfare Board v. A. Nagaraja (2014) elevated animal welfare under Article 51A(g) and Article 21.",
+                "In re Destruction of Public Properties (2009) framed guidelines holding protest organizers financially liable under Art 51A(i)."
+            ],
+            "ta": [
+                "உறுப்பு 51A(f) இந்தியாவின் கூட்டுப் பண்பாட்டின் வளமான பாரம்பரியத்தை மதித்து பேண ஆணையிடுகிறது.",
+                "உறுப்பு 51A(g) 4 இயற்கை கூறுகளைப் பாதுகாப்பதைக் குறிப்பிடுகிறது: காடுகள், ஏரிகள், ஆறுகள், வனவிலங்குகள் + உயிரினங்கள் மீதான கருணை.",
+                "உறுப்பு 48A என்பது சுற்றுச்சூழலுக்கான அரசு DPSP; உறுப்பு 51A(g) என்பது சுற்றுச்சூழலுக்கான குடிமகன் அடிப்படை கடமை.",
+                "உறுப்பு 51A(h) 4 தூண்களை விவரிக்கிறது: அறிவியல் மனப்பான்மை, மனிதநேயம், ஆராய்ச்சி உணர்வு மற்றும் சீர்திருத்த உணர்வு.",
+                "உறுப்பு 51A(i) பொதுச் சொத்தைப் பாதுகாக்கவும் வன்முறையைக் கைவிடவும் ஆணையிடுகிறது.",
+                "உறுப்பு 51A(j) தனிநபர் மற்றும் கூட்டு செயல்பாடுகளில் சிறப்பினை நோக்கி முயல வழிநடத்துகிறது.",
+                "எம்.சி. மேத்தா vs இந்திய யூனியன் (1997) தாஜ்மஹால் சுற்றியுள்ள சுற்றுச்சூழல் பாதுகாப்பிற்கு உறுப்புகள் 51A(g), 48A & 21 ஐப் பயன்படுத்தியது.",
+                "இந்திய விலங்கு நல வாரியம் vs ஏ. நாகராஜா (2014) உறுப்பு 51A(g) மற்றும் உறுப்பு 21-ன் கீழ் விலங்கு நலனை உயர்த்தியது.",
+                "பொதுச் சொத்துக்கள் சேதம் வழக்கு (2009) உறுப்பு 51A(i)-ன் கீழ் போராட்ட அமைப்பாளர்களை நிதி ரீதியாகப் பொறுப்பாக்கும் வழிகாட்டுதல்களை உருவாக்கியது."
+            ]
+        },
+        "quick_revision": {
+            "en": [
+                "Article 51A(f): Preserve rich heritage of Composite Culture (complements Articles 29-30 & Art 49).",
+                "Article 51A(g): Protect Environment (Forests, Lakes, Rivers, Wildlife) & have compassion for living creatures.",
+                "Article 48A (State DPSP) vs Article 51A(g) (Citizen Duty) - crucial distinction!",
+                "Article 51A(h): Develop Scientific Temper, Humanism, Spirit of Inquiry, and Reform.",
+                "Article 51A(i): Safeguard PUBLIC Property & Abjure (renounce) Violence (2009 SC Property Rules).",
+                "Article 51A(j): Strive towards Excellence in Individual & Collective activity for national progress.",
+                "MC Mehta Case 1997: Art 51A(g) enforced for Taj Mahal environmental protection.",
+                "Nagaraja Case 2014: Art 51A(g) enforced for animal welfare & compassion."
+            ],
+            "ta": [
+                "உறுப்பு 51A(f): கூட்டுப் பண்பாட்டின் வளமான பாரம்பரியத்தைப் பேணுதல் (உறுப்புகள் 29-30 & 49 க்குத் துணை நிற்பது).",
+                "உறுப்பு 51A(g): சுற்றுச்சூழலைப் பாதுகாத்தல் (காடுகள், ஏரிகள், ஆறுகள், வனவிலங்குகள்) & உயிரினங்கள் மீது கருணை காட்டுதல்.",
+                "உறுப்பு 48A (அரசு DPSP) vs உறுப்பு 51A(g) (குடிமகன் கடமை) - முக்கிய வேறுபாடு!",
+                "உறுப்பு 51A(h): அறிவியல் மனப்பான்மை, மனிதநேயம், ஆராய்ச்சி உணர்வு மற்றும் சீர்திருத்தத்தை வளர்த்தல்.",
+                "உறுப்பு 51A(i): பொதுச் சொத்தைப் பாதுகாத்தல் & வன்முறையைக் கைவிடுதல் (2009 உச்ச நீதிமன்ற விதிகள்).",
+                "உறுப்பு 51A(j): தேசிய முன்னேற்றத்திற்காகத் தனிநபர் & கூட்டுச் செயல்பாடுகளில் சிறப்பினை நோக்கி முயலுதல்.",
+                "எம்.சி. மேத்தா வழக்கு 1997: தாஜ்மஹால் சுற்றுச்சூழல் பாதுகாப்பிற்கு உறுப்பு 51A(g) பயன்படுத்தப்பட்டது.",
+                "நாகராஜா வழக்கு 2014: விலங்கு நலன் & கருணைக்காக உறுப்பு 51A(g) பயன்படுத்தப்பட்டது."
+            ]
+        },
+        "revision_cards": [
+            {
+                "id": "card_p2_1",
+                "front_en": "What does Article 51A(f) direct citizens to preserve?",
+                "front_ta": "உறுப்பு 51A(f) குடிமக்களை எதைப் பேண வழிநடத்துகிறது?",
+                "back_en": "The rich heritage of India's composite culture ('Ganga-Jamuni tehzeeb').",
+                "back_ta": "இந்தியாவின் கூட்டுப் பண்பாட்டின் வளமான பாரம்பரியத்தை."
+            },
+            {
+                "id": "card_p2_2",
+                "front_en": "What are the 4 natural elements specified in Article 51A(g)?",
+                "front_ta": "உறுப்பு 51A(g)-ல் குறிப்பிடப்பட்டுள்ள 4 இயற்கை கூறுகள் யாவை?",
+                "back_en": "Forests, Lakes, Rivers, and Wildlife (+ compassion for living creatures).",
+                "back_ta": "காடுகள், ஏரிகள், ஆறுகள் மற்றும் வனவிலங்குகள் (+ உயிரினங்கள் மீதான கருணை)."
+            },
+            {
+                "id": "card_p2_3",
+                "front_en": "What is the difference between Article 48A and Article 51A(g)?",
+                "front_ta": "உறுப்பு 48A மற்றும் உறுப்பு 51A(g) இடையே உள்ள வேறுபாடு என்ன?",
+                "back_en": "Article 48A is a DPSP commanding the STATE; Article 51A(g) is a Fundamental Duty commanding CITIZENS.",
+                "back_ta": "உறுப்பு 48A என்பது அரசுக்கு ஆணையிடும் DPSP; உறுப்பு 51A(g) என்பது குடிமக்களுக்கு ஆணையிடும் அடிப்படை கடமை."
+            },
+            {
+                "id": "card_p2_4",
+                "front_en": "What are the four pillars of Article 51A(h)?",
+                "front_ta": "உறுப்பு 51A(h)-ன் நான்கு தூண்கள் யாவை?",
+                "back_en": "1. Scientific Temper, 2. Humanism, 3. Spirit of Inquiry, 4. Spirit of Reform.",
+                "back_ta": "1. அறிவியல் மனப்பான்மை, 2. மனிதநேயம், 3. ஆராய்ச்சி உணர்வு, 4. சீர்திருத்த உணர்வு."
+            },
+            {
+                "id": "card_p2_5",
+                "front_en": "What property does Article 51A(i) mandate citizens to safeguard?",
+                "front_ta": "உறுப்பு 51A(i) குடிமக்களை எந்தச் சொத்தைப் பாதுகாக்கக் கட்டாயமாக்குகிறது?",
+                "back_en": "PUBLIC Property (and to abjure violence).",
+                "back_ta": "பொதுச் சொத்தை (மற்றும் வன்முறையைக் கைவிட)."
+            },
+            {
+                "id": "card_p2_6",
+                "front_en": "What dual spheres of activity are covered under Article 51A(j)?",
+                "front_ta": "உறுப்பு 51A(j)-ன் கீழ் உள்ள இரு பிரிவு செயல்பாடுகள் யாவை?",
+                "back_en": "Individual and Collective activity (striving towards excellence).",
+                "back_ta": "தனிநபர் மற்றும் கூட்டுச் செயல்பாடுகள் (சிறப்பினை நோக்கி முயலுதல்)."
+            },
+            {
+                "id": "card_p2_7",
+                "front_en": "Which landmark judgment applied Article 51A(g) for animal welfare?",
+                "front_ta": "விலங்கு நலனுக்காக உறுப்பு 51A(g)-ஐப் பயன்படுத்திய முக்கியத் தீர்ப்பு எது?",
+                "back_en": "Animal Welfare Board of India v. A. Nagaraja (2014) [Jallikattu case].",
+                "back_ta": "இந்திய விலங்கு நல வாரியம் vs ஏ. நாகராஜா (2014) [ஜல்லிக்கட்டு வழக்கு]."
+            },
+            {
+                "id": "card_p2_8",
+                "front_en": "Which case invoked Article 51A(g) to protect Taj Mahal environment?",
+                "front_ta": "தாஜ்மஹால் சுற்றுச்சூழலைப் பாதுகாக்க உறுப்பு 51A(g)-ஐப் பயன்படுத்திய வழக்கு எது?",
+                "back_en": "MC Mehta v. Union of India (1997) [Taj Trapezium Case].",
+                "back_ta": "எம்.சி. மேத்தா vs இந்திய யூனியன் (1997) [தாஜ் ட்ரேபீசியம் வழக்கு]."
+            }
+        ]
+    }
+}
+
+target_file = "data/notes/polity/fundamental_duties_part_2.json"
+os.makedirs(os.path.dirname(target_file), exist_ok=True)
+
+with open(target_file, "w", encoding="utf-8") as f:
+    json.dump(notes_data, f, ensure_ascii=False, indent=2)
+
+print(f"Successfully generated {target_file}")

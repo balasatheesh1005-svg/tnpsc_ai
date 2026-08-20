@@ -1,0 +1,321 @@
+import json
+import os
+
+def make_q(
+    q_id, q_type, q_en, q_ta,
+    opt_a_en, opt_a_ta,
+    opt_b_en, opt_b_ta,
+    opt_c_en, opt_c_ta,
+    opt_d_en, opt_d_ta,
+    ans, exp_en, exp_ta,
+    why_a_en, why_a_ta,
+    why_b_en, why_b_ta,
+    why_c_en, why_c_ta,
+    why_d_en, why_d_ta,
+    tip_en, tip_ta,
+    fact_en, fact_ta,
+    tags, bloom="Analyze", time_sec=75
+):
+    opts = [
+        {"id": "A", "en": opt_a_en, "ta": opt_a_ta},
+        {"id": "B", "en": opt_b_en, "ta": opt_b_ta},
+        {"id": "C", "en": opt_c_en, "ta": opt_c_ta},
+        {"id": "D", "en": opt_d_en, "ta": opt_d_ta}
+    ]
+    return {
+        "id": q_id,
+        "subject": "Polity",
+        "topic": "Preamble of the Constitution of India",
+        "difficulty": "Hard",
+        "question_type": q_type,
+        "question": {"en": q_en, "ta": q_ta},
+        "options": opts,
+        "correct_answer": ans,
+        "explanation": {"en": exp_en, "ta": exp_ta},
+        "why_not_others": {
+            "A": {"en": why_a_en, "ta": why_a_ta},
+            "B": {"en": why_b_en, "ta": why_b_ta},
+            "C": {"en": why_c_en, "ta": why_c_ta},
+            "D": {"en": why_d_en, "ta": why_d_ta}
+        },
+        "tnpsc_tip": {"en": tip_en, "ta": tip_ta},
+        "revision_fact": {"en": fact_en, "ta": fact_ta},
+        "source_reference": ["Preamble Notes Part 1", "Preamble Notes Part 2", "M. Laxmikanth"],
+        "bloom_level": bloom,
+        "estimated_time_sec": time_sec,
+        "pyq_similarity": "High",
+        "tags": tags,
+        "question_en": q_en,
+        "question_ta": q_ta,
+        "options_en": [opt_a_en, opt_b_en, opt_c_en, opt_d_en],
+        "options_ta": [opt_a_ta, opt_b_ta, opt_c_ta, opt_d_ta],
+        "answer": ans.lower(),
+        "explanation_en": exp_en,
+        "explanation_ta": exp_ta
+    }
+
+questions = []
+
+# --- Q1 to Q10 ---
+questions.append(make_q(
+    "PRE_H_001", "Advanced Conceptual",
+    "The phrase 'We, the People of India' in the Preamble establishes the doctrine of 'Popular Sovereignty'. Which of the following is the most precise constitutional implication of this doctrine in the Indian legal framework?",
+    "முகவுரையில் உள்ள 'இந்திய மக்களாகிய நாம்' என்ற தொடர் 'மக்களின் இறையாண்மை' கோட்பாட்டை நிறுவுகிறது. இந்திய சட்ட அமைப்பில் இக்கோட்பாட்டின் மிகத் துல்லியமான அரசியலமைப்பு விளைவு எது?",
+    "The ultimate source of constitutional authority resides in the collective political sovereignty of the people, making the Constitution supreme over all organs created by it.",
+    "அரசியலமைப்பு அதிகாரத்தின் இறுதி மூலம் மக்களின் கூட்டு அரசியல் இறையாண்மையில் உள்ளது; இதனால் அரசியலமைப்பு அது உருவாக்கிய அனைத்து உறுப்புகளை விடவும் மேலானது.",
+    "Parliament possesses absolute legal sovereignty, permitting it to alter any provision of the Constitution without judicial interference.",
+    "பாராளுமன்றம் முழுமையான சட்ட இறையாண்மையைக் கொண்டுள்ளது; இதனால் நீதித்துறை தலையீடின்றி அரசியலமைப்பின் எந்த விதியையும் மாற்ற அனுமதிக்கிறது.",
+    "The legal validity of the Constitution is derived entirely from the Indian Independence Act, 1947 passed by the British Parliament.",
+    "அரசியலமைப்பின் சட்டபூர்வ செல்லுபடியாகும் தன்மை முற்றிலும் பிரிட்டிஷ் பாராளுமன்றத்தால் நிறைவேற்றப்பட்ட 1947 இந்திய சுதந்திரச் சட்டத்திலிருந்து பெறப்பட்டது.",
+    "Laws enacted by Parliament automatically supersede constitutional provisions if supported by a two-thirds referendum of voters.",
+    "வாக்காளர்களின் மூன்றில் இரண்டு பங்கு பொதுவாக்கெடுப்பு ஆதரித்தால், பாராளுமன்றத்தால் இயற்றப்பட்ட சட்டங்கள் தானாகவே அரசியலமைப்பு விதிகளை விட மேலோங்கும்.",
+    "A",
+    "Popular Sovereignty signifies that the Constitution derives its authority, legitimacy, and sanction from the people of India. Consequently, the Constitution—not Parliament or the Executive—is the supreme law of the land (Constitutional Supremacy), and all organs function within its limits.",
+    "மக்களின் இறையாண்மை என்பது அரசியலமைப்பு தனது அதிகாரம், சட்டபூர்வத்தன்மை மற்றும் அனுமதியை இந்திய மக்களிடமிருந்தே பெறுகிறது என்பதைக் குறிக்கிறது. இதன் விளைவாக, நாடாளுமன்றமோ அல்லது நிர்வாகமோ அல்ல, அரசியலமைப்பே நாட்டின் உயர்ந்த சட்டமாகும் (அரசியலமைப்பு மேலாதிக்கம்).",
+    "Correct. Popular Sovereignty grounds Constitutional Supremacy over all three organs of State.", "சரி. மக்களின் இறையாண்மை அரசின் மூன்று உறுப்புகளையும் விட அரசியலமைப்பு மேலாதிக்கத்தை நிறுவுகிறது.",
+    "Incorrect. India has Constitutional Supremacy, not British-style Parliamentary Sovereignty.", "தவறு. இந்தியாவில் அரசியலமைப்பு மேலாதிக்கம் உள்ளது, பிரிட்டிஷ் பாணி பாராளுமன்ற இறையாண்மை இல்லை.",
+    "Incorrect. The Constituent Assembly repealed the Indian Independence Act 1947 under Art 395; authority derives from the people.", "தவறு. அரசியலமைப்புச் சபை 1947 இந்திய சுதந்திரச் சட்டத்தை உறுப்பு 395 இன் கீழ் ரத்து செய்தது; அதிகாரம் மக்களிடமிருந்தே பெறப்படுகிறது.",
+    "Incorrect. The Indian Constitution does not provide for national referendums to override constitutional provisions.", "தவறு. இந்திய அரசியலமைப்பு விதிகளை மேலோங்குவதற்கு தேசிய பொதுவாக்கெடுப்புக்கு வழிகோலவில்லை.",
+    "Popular Sovereignty = Source of authority is 'The People'. It leads to Constitutional Supremacy (NOT Parliamentary Supremacy).",
+    "மக்களின் இறையாண்மை = அதிகாரத்தின் மூலம் 'மக்களே'. இது அரசியலமைப்பு மேலாதிக்கத்திற்கு வழிவகுக்கிறது (பாராளுமன்ற மேலாதிக்கம் அல்ல).",
+    "Art 395 of the Constitution repealed the Indian Independence Act, 1947 and the Government of India Act, 1935, cementing popular sovereignty.",
+    "அரசியலமைப்பின் உறுப்பு 395 இந்திய சுதந்திரச் சட்டம் 1947 மற்றும் இந்திய அரசுச் சட்டம் 1935 ஆகியவற்றை ரத்து செய்து மக்களின் இறையாண்மையை உறுதிப்படுத்தியது.",
+    ["Preamble", "Popular Sovereignty", "We the People", "Constitutional Supremacy"]
+))
+
+questions.append(make_q(
+    "PRE_H_002", "Advanced Conceptual",
+    "Regarding the term 'Sovereign' in the Preamble, which of the following statements correctly reconciles India's membership in international bodies (like the Commonwealth or United Nations) with its constitutional sovereignty?",
+    "முகவுரையில் உள்ள 'இறையாண்மை' என்ற சொல் தொடர்பாக, சர்வதேச அமைப்புகளில் (காமன்வெல்த் அல்லது ஐக்கிய நாடுகள் சபை போன்றவை) இந்தியாவின் உறுப்பினர்தன்மையை அதன் அரசியலமைப்பு இறையாண்மையுடன் சரியாக ஒப்பிட்டு சரிபார்க்கும் கூற்று எது?",
+    "India surrendered a portion of its external sovereignty to the British Crown upon joining the Commonwealth in 1949.",
+    "1949 இல் காமன்வெல்த்தில் சேர்ந்ததன் மூலம் இந்தியா தனது வெளி இறையாண்மையின் ஒரு பகுதியை பிரிட்டிஷ் மகுடத்திடம் ஒப்படைத்தது.",
+    "Membership in international bodies is a voluntary extra-constitutional association that does not restrict India's supreme legal authority to legislate or govern internally and externally.",
+    "சர்வதேச அமைப்புகளில் உறுப்பினராக இருப்பது ஒரு தன்னார்வ அரசியலமைப்புக்கு அப்பாற்பட்ட தொடர்பாகும்; இது உள்நாட்டிலும் வெளிநாட்டிலும் சட்டமியற்றவோ அல்லது நிர்வகிக்கவோ இந்தியாவின் உயர்ந்த சட்ட அதிகாரத்தைக் கட்டுப்படுத்தாது.",
+    "UN Security Council resolutions automatically repeal inconsistent Indian Parliamentary statutes without requiring domestic legislation.",
+    "ஐநா பாதுகாப்பு கவுன்சில் தீர்மானங்கள் உள்நாட்டு சட்டங்கள் ஏதுமின்றி முரண்பாடான இந்திய நாடாளுமன்ற சட்டங்களை தானாகவே ரத்து செய்கின்றன.",
+    "Sovereignty requires complete political isolation, rendering any binding international treaty unconstitutional per se.",
+    "இறையாண்மைக்கு முழுமையான அரசியல் தனிமைப்படுத்தல் தேவைப்படுகிறது; இதனால் பிணைப்புறுத்தும் எந்தவொரு சர்வதேச ஒப்பந்தமும் அரசியலமைப்புக்கு முரணானது.",
+    "B",
+    "India is a sovereign state—it is neither a dependency nor a dominion of any other nation. Although India accepted the King as Head of the Commonwealth in 1949, this declaration was a voluntary agreement outside the Constitution and does not impair India's full internal and external sovereignty.",
+    "இந்தியா ஒரு இறையாண்மையுள்ள அரசு - அது வேறு எந்த நாட்டின் கட்டுப்பாட்டிலோ அல்லது டொமினியனாகவோ இல்லை. 1949 இல் காமன்வெல்த்தின் தலைவராக மன்னரை இந்தியா ஏற்றுக்கொண்ட போதிலும், இந்த அறிவிப்பு அரசியலமைப்புக்கு அப்பாற்பட்ட தன்னார்வ ஒப்பந்தமாகும்; இது இந்தியாவின் முழுமையான உள் மற்றும் வெளி இறையாண்மையைப் பாதிக்காது.",
+    "Incorrect. India did not surrender any sovereignty; the Crown is merely a symbolic head of the association.", "தவறு. இந்தியா எந்த இறையாண்மையையும் ஒப்படைக்கவில்லை; மன்னர் காமன்வெல்த்தின் குறியீட்டுத் தலைவர் மட்டுமே.",
+    "Correct. Commonwealth/UN membership is voluntary and does not legally curtail state sovereignty.", "சரி. காமன்வெல்த்/ஐநா உறுப்பினர்தன்மை தன்னார்வமானது, நாட்டின் இறையாண்மையை சட்டப்பூர்வமாக சுருக்காது.",
+    "Incorrect. International treaties/resolutions require domestic enabling legislation under Article 253 to be enforceable in Indian courts.", "தவறு. சர்வதேச ஒப்பந்தங்கள் இந்திய நீதிமன்றங்களில் அமல்படுத்தப்பட உறுப்பு 253 இன் கீழ் உள்நாட்டுச் சட்டம் தேவை.",
+    "Incorrect. Sovereignty includes the positive power to enter treaties and international agreements voluntarily.", "தவறு. இறையாண்மை என்பது தன்னார்வமாக ஒப்பந்தங்களை மேற்கொள்ளும் நேர்மறை அதிகாரத்தையும் உள்ளடக்கியது.",
+    "Commonwealth membership (1949) does NOT affect Indian Sovereignty. Being sovereign means India can acquire foreign territory or cede territory to a foreign state.",
+    "காமன்வெல்த் உறுப்பினர்தன்மை (1949) இந்திய இறையாண்மையைப் பாதிக்காது. இறையாண்மை என்பது அந்நிய நிலப்பரப்பைக் கையகப்படுத்த அல்லது விட்டுக் கொடுக்க அதிகாரமளிக்கிறது.",
+    "As a sovereign state, India can either acquire a foreign territory or cede a part of its territory in favour of a foreign state.",
+    "ஒரு இறையாண்மையுள்ள அரசாக, இந்தியா ஒரு அயல்நாட்டு நிலப்பரப்பைக் கையகப்படுத்தலாம் அல்லது தனது நிலப்பரப்பின் ஒரு பகுதியை அயல்நாட்டிற்கு விட்டுக் கொடுக்கலாம்.",
+    ["Preamble", "Sovereign", "Commonwealth", "External Sovereignty"]
+))
+
+questions.append(make_q(
+    "PRE_H_003", "Advanced Conceptual",
+    "The Preamble envisions a 'Socialist' state. How does Indian 'Democratic Socialism' fundamentally differ from classic 'State/Marxist Socialism'?",
+    "முகவுரை ஒரு 'சமதர்ம' அரசை முன்மொழிகிறது. இந்திய 'ஜனநாயக சோசலிசம்' பாரம்பரிய 'அரசு/மார்க்சிய சோசலிசத்திலிருந்து' எவ்வாறு அடிப்படையில் வேறுபடுகிறது?",
+    "Indian Democratic Socialism favors a complete abolition of private property and total state monopoly over all means of production.",
+    "இந்திய ஜனநாயக சோசலிசம் தனியார் சொத்துரிமையை முற்றிலும் ஒழிப்பதையும் உற்பத்தி சாதனங்கள் அனைத்தின் மீதும் முழுமையான அரசு ஏகபோகத்தையும் ஆதரிக்கிறது.",
+    "Marxist Socialism emphasizes parliamentary democratic means, whereas Democratic Socialism relies on violent proletarian revolution.",
+    "மார்க்சிய சோசலிசம் பாராளுமன்ற ஜனநாயக வழிகளை வலியுறுத்துகிறது, ஆனால் ஜனநாயக சோசலிசம் வன்முறை பாட்டாளி வர்க்கப் புரட்சியை நம்பியுள்ளது.",
+    "Indian Democratic Socialism envisions a mixed economy where public and private sectors co-exist side-by-side to end poverty, ignorance, and inequality.",
+    "இந்திய ஜனநாயக சோசலிசம் வறுமை, அறியாமை மற்றும் சமத்துவமின்மையை ஒழிக்க பொது மற்றும் தனியார் துறைகள் அருகருகே இணைந்து செயல்படும் கலப்பு பொருளாதாரத்தை முன்மொழிகிறது.",
+    "Democratic Socialism applies exclusively to agrarian land reforms, leaving industrial sectors entirely unregulated.",
+    "ஜனநாயக சோசலிசம் வேளாண் நில சீர்திருத்தங்களுக்கு மட்டுமே பொருந்தும், தொழில்துறை துறைகளை முற்றிலும் ஒழுங்குபடுத்தாமல் விடுகிறது.",
+    "C",
+    "Indian socialism is 'democratic socialism' and not 'state socialism' (Marxist socialism). Democratic socialism holds faith in a 'mixed economy' where both public and private sectors co-exist. As the Supreme Court observed, democratic socialism aims to end poverty, ignorance, disease, and inequality of opportunity, leaning heavily towards Gandhian socialism.",
+    "இந்திய சோசலிசம் 'ஜனநாயக சோசலிசம்' ஆகும், 'அரசு சோசலிசம்' (மார்க்சிய சோசலிசம்) அல்ல. ஜனநாயக சோசலிசம் பொது மற்றும் தனியார் துறைகள் இரண்டும் இணைந்து வாழும் 'கலப்பு பொருளாதாரம்' மீது நம்பிக்கை கொண்டுள்ளது. இது காந்திய சோசலிசத்தை நோக்கி அதிக சாய்வைக் கொண்டுள்ளது.",
+    "Incorrect. Abolition of private property and total state monopoly characterize State/Marxist socialism, not Indian mixed economy socialism.", "தவறு. தனியார் சொத்து ஒழிப்பு மற்றும் முழு அரசு ஏகபோகம் அரசு/மார்க்சிய சோசலிசத்தின் பண்புகளாகும், இந்திய கலப்பு பொருளாதாரத்தின் பண்புகள் அல்ல.",
+    "Incorrect. Reverses the two concepts: Democratic Socialism uses parliamentary peaceful means, while Marxist socialism originally relied on class struggle/revolution.", "தவறு. இரு கருத்துக்களையும் தலைகீழாக மாற்றுகிறது.",
+    "Correct. Democratic socialism believes in a mixed economy co-existing with private enterprise.", "சரி. ஜனநாயக சோசலிசம் தனியார் நிறுவனங்களுடன் இணைந்த கலப்பு பொருளாதாரத்தை நம்புகிறது.",
+    "Incorrect. Democratic socialism applies across economic sectors through welfare planning and directive principles.", "தவறு. ஜனநாயக சோசலிசம் நலத்திட்டமிடல் மற்றும் வழிகாட்டு நெறிமுறைகள் மூலம் அனைத்து பொருளாதாரத் துறைகளுக்கும் பொருந்தும்.",
+    "Indian Socialism = Democratic Socialism = Mixed Economy (Public + Private). Blends Marxism & Gandhian socialism, leaning heavily towards Gandhian socialism.",
+    "இந்திய சோசலிசம் = ஜனநாயக சோசலிசம் = கலப்பு பொருளாதாரம் (பொது + தனியார்). மார்க்சியம் மற்றும் காந்திய சோசலிசத்தின் கலவை, காந்திய சோசலிசத்தை நோக்கி அதிக சாய்வு கொண்டது.",
+    "Supreme Court in Excel Wear (1978) affirmed that addition of 'Socialist' did not imply total state ownership or nationalization of private businesses.",
+    "எக்செல் வேர் வழக்கின் (1978) உச்ச நீதிமன்றத் தீர்ப்பு 'சமதர்ம' என்ற சொல் சேர்க்கப்பட்டது தனியார் வணிகங்களை முழுமையாக அரசுடைமையாக்குவதைக் குறிக்காது என்று உறுதிப்படுத்தியது.",
+    ["Preamble", "Socialist", "Democratic Socialism", "Mixed Economy"]
+))
+
+questions.append(make_q(
+    "PRE_H_004", "Advanced Conceptual",
+    "Indian constitutional secularism is characterized as 'Positive Secularism'. Which of the following correctly highlights its distinction from the Western model of secularism?",
+    "இந்திய அரசியலமைப்பு மதச்சார்பின்மை 'நேர்மறை மதச்சார்பின்மை' என விவரிக்கப்படுகிறது. மேற்கத்திய மதச்சார்பின்மை மாதிரியிலிருந்து இதன் வேறுபாட்டைச் சரியாக சுட்டிக்காட்டும் கூற்று எது?",
+    "Indian secularism establishes Hinduism as the official state religion while granting minority tolerance, whereas Western secularism is completely atheistic.",
+    "இந்திய மதச்சார்பின்மை சிறுபான்மையினருக்கு சகிப்புத்தன்மையை அளிக்கும் அதே வேளையில் இந்து மதத்தை உத்தியோகபூர்வ அரசு மதமாக நிறுவுகிறது; ஆனால் மேற்கத்திய மதச்சார்பின்மை முற்றிலும் நாத்திகமானது.",
+    "Western secularism allows the State to financial fund dominant religious institutions, whereas Indian secularism prohibits any citizen from practicing religion publicly.",
+    "மேற்கத்திய மதச்சார்பின்மை ஆதிக்கம் செலுத்தும் மத நிறுவனங்களுக்கு அரசு நிதி உதவி செய்ய அனுமதிக்கிறது; ஆனால் இந்திய மதச்சார்பின்மை எந்தவொரு குடிமகனும் பகிரங்கமாக மதத்தைப் பின்பற்றுவதைத் தடுக்கிறது.",
+    "Indian positive secularism was created for the first time by the 42nd Amendment Act of 1976 and had no constitutional existence prior to that.",
+    "இந்திய நேர்மறை மதச்சார்பின்மை 1976 இன் 42வது திருத்தச் சட்டத்தால் முதன்முறையாக உருவாக்கப்பட்டது, அதற்கு முன் அரசியலமைப்பு ரீதியாக அதற்கு अस्तित्वம் இல்லை.",
+    "Western secularism requires strict wall of separation and mutual exclusion between State and religion, whereas Indian positive secularism accords equal respect and equal protection to all religions (Sarva Dharma Sambhava).",
+    "மேற்கத்திய மதச்சார்பின்மை அரசுக்கும் மதத்திற்கும் இடையே கடுமையான பிரிவினையையும் பரஸ்பர விலக்கலையும் கோருகிறது; ஆனால் இந்திய நேர்மறை மதச்சார்பின்மை அனைத்து மதங்களுக்கும் சமமான மரியாதையையும் சமமான பாதுகாப்பையும் அளிக்கிறது (சர்வ தர்ம சம்பவ).",
+    "D",
+    "The Indian Constitution embodies the positive concept of secularism: all religions in our country (irrespective of their strength) have the same status and support from the State (Sarva Dharma Sambhava). In contrast, Western secularism implies a rigid, negative separation between the State and religion.",
+    "இந்திய அரசியலமைப்பு மதச்சார்பின்மையின் நேர்மறையான கருத்தை உள்ளடக்கியுள்ளது: நம் நாட்டில் உள்ள அனைத்து மதங்களும் (அவற்றின் பலத்தைப் பொருட்படுத்தாமல்) அரசுக்கு முன் ஒரே மாதிரியான தகுதியையும் ஆதரவையும் கொண்டுள்ளன (சர்வ தர்ம சம்பவ). மாறாக, மேற்கத்திய மதச்சார்பின்மை அரசுக்கும் மதத்திற்கும் இடையே கடுமையான எதிர்மறைப் பிரிவினையைக் குறிக்கிறது.",
+    "Incorrect. India has NO official state religion; all religions are treated equally under the Constitution.", "தவறு. இந்தியாவுக்கு உத்தியோகபூர்வ அரசு மதம் எதுவுமில்லை; அரசியலமைப்பின் கீழ் அனைத்து மதங்களும் சமமாக நடத்தப்படுகின்றன.",
+    "Incorrect. Article 25 guarantees public freedom of conscience and religious practice; Article 27 restricts religious taxation.", "தவறு. உறுப்பு 25 பகிரங்க மனசாட்சி மற்றும் மதப் பழக்க சுதந்திரத்திற்கு உத்தரவாதம் அளிக்கிறது.",
+    "Incorrect. Articles 25-28 already embodied secular principles since 1950; 42nd Amendment only rendered it explicit.", "தவறு. உறுப்புகள் 25-28 1950 முதல் மதச்சார்பற்றக் கொள்கைகளை உள்ளடக்கியிருந்தன; 42வது திருத்தம் அதை வெளிப்படையாக்கியது மட்டுமே.",
+    "Correct. Positive Secularism = Equal respect and protection for all religions (Articles 25-28).", "சரி. நேர்மறை மதச்சார்பின்மை = அனைத்து மதங்களுக்கும் சமமான மரியாதை மற்றும் பாதுகாப்பு (உறுப்புகள் 25-28).",
+    "Indian Secularism = Positive concept (Sarva Dharma Sambhava). Western Secularism = Negative concept (Rigid wall of separation).",
+    "இந்திய மதச்சார்பின்மை = நேர்மறைக் கருத்து (சர்வ தர்ம சம்பவ). மேற்கத்திய மதச்சார்பின்மை = எதிர்மறைக் கருத்து (கடுமையான தடுப்புச் சுவர்).",
+    "In S.R. Bommai case (1994), the Supreme Court held that Secularism is a Basic Feature of the Indian Constitution.",
+    "எஸ்.ஆர். பொம்மை வழக்கில் (1994), மதச்சார்பின்மை இந்திய அரசியலமைப்பின் அடிப்படை கட்டமைப்பு என்று உச்ச நீதிமன்றம் தீர்ப்பளித்தது.",
+    ["Preamble", "Secular", "Positive Secularism", "Sarva Dharma Sambhava"]
+))
+
+questions.append(make_q(
+    "PRE_H_005", "Advanced Conceptual",
+    "The terms 'Democratic' and 'Republic' appear sequentially in the Preamble. Which of the following correctly explains why the framers used BOTH terms instead of treating them as synonymous?",
+    "முகவுரையில் 'ஜனநாயக' மற்றும் 'குடியரசு' ஆகிய சொற்கள் வரிசையாக வருகின்றன. இவ்விரு சொற்களையும் ஒத்த சொற்களாகக் கருதாமல் சிற்பிகள் இரண்டையும் ஏன் பயன்படுத்தினர் என்பதைச் சரியாக விளக்கும் கூற்று எது?",
+    "'Democratic' refers to popular sovereignty and representative governance, whereas 'Republic' specifically indicates that the Head of State is elected (not hereditary) and public offices are open to all citizens without privilege.",
+    "'ஜனநாயக' என்பது மக்களின் இறையாண்மை மற்றும் பிரதிநிதித்துவ ஆட்சியைக் குறிக்கிறது; ஆனால் 'குடியரசு' என்பது நாட்டின் தலைவர் தேர்ந்தெடுக்கப்படுபவர் (பரம்பரை அல்ல) என்பதையும், பொதுப் பதவிகள் சலுகையின்றி அனைத்து குடிமக்களுக்கும் திறந்திருக்கும் என்பதையும் குறிக்கிறது.",
+    "'Democratic' applies only to Union Executive elections, whereas 'Republic' applies exclusively to State Panchayats.",
+    "'ஜனநாயக' என்பது ஒன்றிய நிர்வாகத் தேர்தல்களுக்கு மட்டுமே பொருந்தும், ஆனால் 'குடியரசு' என்பது மாநில பஞ்சாயத்துகளுக்கு மட்டுமே பொருந்தும்.",
+    "A nation can be a Republic only if it practices direct democracy through referendums and recall.",
+    "பொதுவாக்கெடுப்பு மற்றும் திரும்ப அழைத்தல் மூலம் நேரடி ஜனநாயகத்தைப் பயிற்சி செய்தால் மட்டுமே ஒரு நாடு குடியரசாக இருக்க முடியும்.",
+    "The United Kingdom is both a Democratic nation and a Republic, whereas India is a Democratic nation but not a Republic.",
+    "ஐக்கிய இராச்சியம் ஒரு ஜனநாயக நாடு மற்றும் குடியரசு ஆகும்; ஆனால் இந்தியா ஒரு ஜனநாயக நாடு ஆனால் குடியரசு அல்ல.",
+    "A",
+    "A democratic polity can be classified into two categories—monarchy and republic. In a monarchy (like UK), the head of state enjoys a hereditary position. In a republic (like India), the head of state is always elected directly or indirectly for a fixed period. Republic also means vesting political sovereignty in the people and the absence of any privileged class.",
+    "ஒரு ஜனநாயக அமைப்பை இரு வகைகளாகப் பிரிக்கலாம் - முடியாட்சி மற்றும் குடியரசு. முடியாட்சியில் (பிரிட்டன் போல்), நாட்டின் தலைவர் பரம்பரைப் பதவியைக் கொண்டுள்ளார். குடியரசில் (இந்தியா போல்), நாட்டின் தலைவர் எப்போதும் நேரடியாகவோ மறைமுகமாகவோ குறிப்பிட்ட காலத்திற்குத் தேர்ந்தெடுக்கப்படுகிறார். குடியரசு என்பது சலுகை பெற்ற வர்க்கமின்மையையும் குறிக்கிறது.",
+    "Correct. Democracy = popular mandate/governance; Republic = elected Head of State & absence of hereditary privileges.", "சரி. ஜனநாயகம் = மக்கள் பிரதிநிதித்துவ ஆட்சி; குடியரசு = தேர்ந்தெடுக்கப்பட்ட நாட்டின் தலைவர் & பரம்பரைச் சலுகையின்மை.",
+    "Incorrect. Both concepts apply globally across Union and State levels.", "தவறு. இரு கருத்துக்களும் ஒன்றியம் மற்றும் மாநில நிலைகளில் முழுமையாகப் பொருந்தும்.",
+    "Incorrect. India is an indirect representative republic; direct democracy mechanisms (referendum/recall) are not required for a republic.", "தவறு. இந்தியா ஒரு மறைமுகப் பிரதிநிதித்துவக் குடியரசு; குடியரசுக்கு நேரடி ஜனநாயக வழிமுறைகள் கட்டாயமில்லை.",
+    "Incorrect. UK is a constitutional Monarchy (democratic but not a republic); India is a Democratic Republic.", "தவறு. பிரிட்டன் ஒரு அரசியலமைப்பு முடியாட்சி (ஜனநாயகக் குடியரசு அல்ல); இந்தியா ஒரு ஜனநாயகக் குடியரசு.",
+    "Republic = 2 key features: (1) Elected Head of State (President for 5 yrs), (2) Vesting of political sovereignty in people + Absence of privileged class.",
+    "குடியரசு = 2 முக்கிய அம்சங்கள்: (1) தேர்ந்தெடுக்கப்பட்ட நாட்டின் தலைவர் (5 ஆண்டுகளுக்கு குடியரசுத் தலைவர்), (2) மக்களிடம் அரசியல் இறையாண்மை + சலுகை பெற்ற வர்க்கமின்மை.",
+    "The ideals of Liberty, Equality, and Fraternity in our Preamble were taken from the French Revolution (1789–1799), which established a Republic.",
+    "நமது முகவுரையில் உள்ள சுதந்திரம், சமத்துவம், சகோதரத்துவம் ஆகிய இலட்சியங்கள் குடியரசை நிறுவிய பிரெஞ்சுப் புரட்சியிலிருந்து (1789-1799) எடுக்கப்பட்டன.",
+    ["Preamble", "Democratic", "Republic", "Constitutional Philosophy"]
+))
+
+questions.append(make_q(
+    "PRE_H_006", "Advanced Conceptual",
+    "The Preamble secures 'Justice—social, economic and political'. Which of the following constitutional combinations correctly reflects the concept of 'Distributive Justice' as recognized by the Supreme Court?",
+    "முகவுரை 'நீதி—சமூக, பொருளாதார மற்றும் அரசியல்' பாதுகாக்கிறது. உச்ச நீதிமன்றத்தால் அங்கீகரிக்கப்பட்ட 'பகிர்வு நீதி' (Distributive Justice) கருத்தை எந்த அரசியலமைப்பு சேர்க்கை சரியாகப் பிரதிபலிக்கிறது?",
+    "Economic Justice + Political Justice", "பொருளாதார நீதி + அரசியல் நீதி",
+    "Social Justice + Economic Justice", "சமூக நீதி + பொருளாதார நீதி",
+    "Social Justice + Political Justice", "சமூக நீதி + அரசியல் நீதி",
+    "Legal Justice + Administrative Justice", "சட்ட நீதி + நிர்வாக நீதி",
+    "B",
+    "The term 'justice' in the Preamble embraces three distinct forms—social, economic and political, secured through Fundamental Rights and Directive Principles. Social justice and economic justice together constitute what is known as 'distributive justice'—removing social discrimination and economic inequalities to achieve a welfare state.",
+    "முகவுரையில் உள்ள 'நீதி' என்ற சொல் மூன்று வடிவங்களை உள்ளடக்கியது—சமூக, பொருளாதார மற்றும் அரசியல். சமூக நீதியும் பொருளாதார நீதியும் இணைந்து 'பகிர்வு நீதி' (Distributive Justice) என்று அழைக்கப்படுவதை உருவாக்குகின்றன - சமூகப் பாகுபாடு மற்றும் பொருளாதார ஏற்றத்தாழ்வுகளை அகற்றி ஒரு நல அரசை அடைதல்.",
+    "Incorrect. Political justice refers to equal political rights (voting, contesting), not distributive justice.", "தவறு. அரசியல் நீதி என்பது சமமான அரசியல் உரிமைகளைக் குறிக்கிறது (வாக்களித்தல், போட்டியிடுதல்).",
+    "Correct. Social Justice + Economic Justice = Distributive Justice.", "சரி. சமூக நீதி + பொருளாதார நீதி = பகிர்வு நீதி.",
+    "Incorrect. Does not capture the economic wealth distribution component of distributive justice.", "தவறு. பகிர்வு நீதியின் பொருளாதார விநியோகக் கூறைக் கைப்பற்றவில்லை.",
+    "Incorrect. Legal and administrative justice are procedural subsets, not the Preamble's distributive combination.", "தவறு. சட்ட மற்றும் நிர்வாக நீதி என்பது நடைமுறை துணைக் கூறுகளாகும்.",
+    "Distributive Justice = Social Justice + Economic Justice. Ideal of Justice (Social, Economic, Political) was taken from the Russian Revolution (1917).",
+    "பகிர்வு நீதி = சமூக நீதி + பொருளாதார நீதி. நீதியின் இலட்சியம் (சமூக, பொருளாதார, அரசியல்) 1917 ரஷ்யப் புரட்சியிலிருந்து பெறப்பட்டது.",
+    "Preamble secures Social, Economic and Political justice. Russian Revolution (1917) inspired the inclusion of these three forms of justice.",
+    "முகவுரை சமூக, பொருளாதார மற்றும் அரசியல் நீதியைப் பாதுகாக்கிறது. ரஷ்யப் புரட்சி (1917) இந்த மூன்று வகையான நீதிகளைச் சேர்ப்பதற்குத் தூண்டுகோலாக அமைந்தது.",
+    ["Preamble", "Justice", "Distributive Justice", "Russian Revolution"]
+))
+
+questions.append(make_q(
+    "PRE_H_007", "Advanced Conceptual",
+    "The Preamble promises 'Liberty of thought, expression, belief, faith and worship'. How does the constitutional scheme regulate this liberty to prevent it from degenerating into license or anarchy?",
+    "முகவுரை 'எண்ணம், வெளிப்பாடு, நம்பிக்கை, சமயம் மற்றும் வழிபாட்டு சுதந்திரத்திற்கு' வாக்குறுதி அளிக்கிறது. இச்சுதந்திரம் உரிமைகேடாகவோ அல்லது அராஜகமாகவோ சீரழிவதைத் தடுக்க அரசியலமைப்பு திட்டம் இதை எவ்வாறு ஒழுங்குபடுத்துகிறது?",
+    "Liberty granted in the Preamble is absolute and unrestrictable by any statute enacted by Parliament.",
+    "முகவுரையில் வழங்கப்பட்டுள்ள சுதந்திரம் வரம்பற்றது மற்றும் பாராளுமன்றத்தால் இயற்றப்பட்ட எந்தவொரு சட்டத்தாலும் கட்டுப்படுத்த முடியாதது.",
+    "Liberty can be suspended permanently by an executive order of the President without legislative sanction.",
+    "சட்டமன்ற அனுமதியின்றி குடியரசுத் தலைவரின் நிர்வாக உத்தரவால் சுதந்திரத்தை நிரந்தரமாக நிறுத்தி வைக்க முடியும்.",
+    "Preamble liberty is operationalized through Part III Fundamental Rights, which explicitly subject these freedoms to reasonable restrictions specified in Articles 19(2)-(6) and Articles 25-26.",
+    "முகவுரை சுதந்திரம் பகுதி III அடிப்படை உரிமைகள் மூலம் நடைமுறைப்படுத்தப்படுகிறது; அவை உறுப்புகள் 19(2)-(6) மற்றும் உறுப்புகள் 25-26 இல் குறிப்பிடப்பட்டுள்ள நியாயமான கட்டுப்பாடுகளுக்கு உட்பட்டவை.",
+    "Liberty of belief and worship applies exclusively to registered citizens owning real estate property.",
+    "நம்பிக்கை மற்றும் வழிபாட்டு சுதந்திரம் அசையா சொத்துக்களை வைத்திருக்கக்கூடிய பதிவுசெய்த குடிமக்களுக்கு மட்டுமே பொருந்தும்.",
+    "C",
+    "The term 'liberty' means the absence of restraints on the activities of individuals, and at the same time, providing opportunities for the development of individual personalities. However, liberty conceived by the Preamble is NOT absolute but qualified. It must be enjoyed within the limitations mentioned in the Constitution itself (e.g. reasonable restrictions under Part III).",
+    "முகவுரையில் கூறப்பட்டுள்ள சுதந்திரம் 'வரம்பற்றது' அல்ல, மாறாக நிபந்தனைக்குட்பட்டது (qualified). இது அரசியலமைப்பிலேயே குறிப்பிடப்பட்டுள்ள வரம்புகளுக்குள் (பகுதி III இன் கீழ் உள்ள நியாயமான கட்டுப்பாடுகள்) அனுபவிக்கப்பட வேண்டும்.",
+    "Incorrect. Liberty in the Preamble is NOT absolute; absolute liberty leads to anarchy.", "தவறு. முகவுரையில் உள்ள சுதந்திரம் வரம்பற்றது அல்ல; வரம்பற்ற சுதந்திரம் அராஜகத்திற்கு வழிவகுக்கும்.",
+    "Incorrect. Permanent executive suspension without constitutional mandate violates the rule of law.", "தவறு. அரசியலமைப்பு ஆணை இன்றி நிரந்தர நிர்வாக இடைநிறுத்தம் சட்டத்தின் ஆட்சியை மீறுகிறது.",
+    "Correct. Liberty is qualified by reasonable restrictions in Fundamental Rights (Part III).", "சரி. சுதந்திரம் பகுதி III அடிப்படை உரிமைகளில் நியாயமான கட்டுப்பாடுகளால் வரம்பிற்குட்படுத்தப்பட்டுள்ளது.",
+    "Incorrect. Liberty applies to all persons/citizens regardless of property ownership.", "தவறு. சொத்துரிமையைப் பொருட்படுத்தாமல் அனைத்து நபர்களுக்கும்/குடிமக்களுக்கும் சுதந்திரம் பொருந்தும்.",
+    "Preamble Liberty = 5 types (Thought, Expression, Belief, Faith, Worship). It is NOT absolute, but subject to constitutional reasonable restrictions.",
+    "முகவுரை சுதந்திரம் = 5 வகைகள் (எண்ணம், வெளிப்பாடு, நம்பிக்கை, சமயம், வழிபாடு). இது வரம்பற்றது அல்ல, அரசியலமைப்பு நியாயமான கட்டுப்பாடுகளுக்கு உட்பட்டது.",
+    "Liberty, Equality, and Fraternity are an indivisible trinity. Dr. Ambedkar noted that without equality, liberty would produce the supremacy of the few over the many.",
+    "சுதந்திரம், சமத்துவம், சகோதரத்துவம் ஆகியவை பிரிக்க முடியாத முத்துவமாகும். சமத்துவம் இல்லாமல் சுதந்திரம் ஒரு சிலரின் ஆதிக்கத்தை உருவாக்கும் என்று டாக்டர் அம்பேத்கர் குறிப்பிட்டார்.",
+    ["Preamble", "Liberty", "Reasonable Restrictions", "Part III"]
+))
+
+questions.append(make_q(
+    "PRE_H_008", "Advanced Conceptual",
+    "The Preamble guarantees 'Equality of status and of opportunity'. Which of the following correctly analyzes how positive discrimination (affirmative action) under Articles 15(4) and 16(4) aligns with this Preamble ideal?",
+    "முகவுரை 'தகுதி மற்றும் வாய்ப்பில் சமத்துவத்திற்கு' உத்தரவாதம் அளிக்கிறது. உறுப்புகள் 15(4) மற்றும் 16(4) இன் கீழ் உள்ள நேர்மறை பாகுபாடு (இடஒதுக்கீடு) இந்த முகவுரை இலட்சியத்துடன் எவ்வாறு ஒத்துப் போகிறது என்பதைச் சரியாக பகுப்பாய்வு செய்யும் கூற்று எது?",
+    "Affirmative action violates Preamble equality by treating citizens differently based on social background.",
+    "சமூகப் பின்னணியின் அடிப்படையில் குடிமக்களை வித்தியாசமாக நடத்துவதன் மூலம் இடஒதுக்கீடு முகவுரை சமத்துவத்தை மீறுகிறது.",
+    "Equality in the Preamble strictly guarantees identical mathematical outcomes for all individuals regardless of merit or need.",
+    "முகவுரையில் உள்ள சமத்துவம் தகுதி அல்லது தேவையைப் பொருட்படுத்தாமல் அனைத்து நபர்களுக்கும் ஒரே மாதிரியான கணித முடிவுகளுக்கு கடுமையான உத்தரவாதம் அளிக்கிறது.",
+    "Articles 15(4) and 16(4) were held unconstitutional by the Supreme Court for conflicting with the Preamble.",
+    "உறுப்புகள் 15(4) மற்றும் 16(4) முகவுரையுடன் முரண்படுவதாக உச்ச நீதிமன்றத்தால் அரசியலமைப்புக்கு முரணானது என அறிவிக்கப்பட்டது.",
+    "Affirmative action is an instrument to achieve substantive equality by placing unequals on an equal footing, thereby fulfilling 'Equality of Opportunity' for historically disadvantaged classes.",
+    "இடஒதுக்கீடு என்பது சமமற்றவர்களை சமமான நிலையில் வைப்பதன் மூலம் நடைமுறைச் சமத்துவத்தை அடைவதற்கான ஒரு கருவியாகும், இதன் மூலம் வரலாற்று ரீதியாக பின்தங்கிய வகுப்பினருக்கு 'வாய்ப்பில் சமத்துவத்தை' நிறைவேற்றுகிறது.",
+    "D",
+    "Equality means the absence of special privileges to any section of the society, and the provision of adequate opportunities for all individuals without any discrimination. True equality requires equal treatment among equals; treating unequal unequals equally perpetuates inequality. Affirmative action (Articles 15(4), 16(4)) ensures substantive equality of opportunity for disadvantaged groups.",
+    "உண்மையான சமத்துவம் என்பது சமமானவர்களிடையே சமமான சிகிச்சையைக் கோருகிறது; சமமற்றவர்களை சமமாக நடத்துவது சமத்துவமின்மையை நீடிக்கச் செய்யும். நேர்மறை நடவடிக்கைகள் (உறுப்புகள் 15(4), 16(4)) பின்தங்கிய குழுக்களுக்கு நடைமுறைச் சமத்துவத்தை உறுதி செய்கின்றன.",
+    "Incorrect. Formal mathematical equality is not the constitutional test; substantive equality allows protective discrimination.", "தவறு. முறையான கணிதச் சமத்துவம் அரசியலமைப்பு சோதனையல்ல; நடைமுறைச் சமத்துவம் பாதுகாப்பு பாகுபாட்டை அனுமதிக்கிறது.",
+    "Incorrect. Preamble equality provides equality of opportunity, not identical forced outcomes.", "தவறு. முகவுரை சமத்துவம் வாய்ப்பில் சமத்துவத்தை வழங்குகிறது, கட்டாய முடிவுகளில் அல்ல.",
+    "Incorrect. Supreme Court repeatedly upheld protective discrimination as a facet of basic structure equality.", "தவறு. உச்ச நீதிமன்றம் பாதுகாப்பு பாகுபாட்டை சமத்துவத்தின் ஒரு பகுதியாக பலமுறை உறுதிப்படுத்தியுள்ளது.",
+    "Correct. Affirmative action achieves substantive equality of status and opportunity.", "சரி. நேர்மறை நடவடிக்கை தகுதி மற்றும் வாய்ப்பில் நடைமுறைச் சமத்துவத்தை அடைகிறது.",
+    "Equality in Preamble embraces 3 dimensions: Civic (Art 14-18), Political (Art 325-326), and Economic (Art 39 DPSP).",
+    "முகவுரையில் உள்ள சமத்துவம் 3 பரிமாணங்களை உள்ளடக்கியது: குடிமை (உறுப்புகள் 14-18), அரசியல் (உறுப்புகள் 325-326), மற்றும் பொருளாதாரம் (உறுப்பு 39 DPSP).",
+    "Protective discrimination under Art 15(4) and 16(4) promotes substantive equality rather than formal equality.",
+    "உறுப்பு 15(4) மற்றும் 16(4) இன் கீழ் உள்ள பாதுகாப்பு பாகுபாடு முறையான சமத்துவத்தை விட நடைமுறைச் சமத்துவத்தை ஊக்குவிக்கிறது.",
+    ["Preamble", "Equality", "Affirmative Action", "Articles 15 and 16"]
+))
+
+questions.append(make_q(
+    "PRE_H_009", "Advanced Conceptual",
+    "Fraternity in the Preamble assures two vital things: 'the dignity of the individual and the unity and integrity of the Nation'. Which of the following best captures the constitutional relationship between individual dignity and national unity?",
+    "முகவுரையில் உள்ள சகோதரத்துவம் இரண்டு முக்கிய விஷயங்களை உறுதிப்படுத்துகிறது: 'நபரின் கண்ணியம் மற்றும் நாட்டின் பிளவுபடாத ஒருமைப்பாடு'. தனிமனிதக் கண்ணியத்திற்கும் தேசிய ஒருமைப்பாட்டிற்கும் இடையிலான அரசியலமைப்பு தொடர்பை மிகச்சரியாக வெளிப்படுத்தும் கூற்று எது?",
+    "National unity can only be sustained when the personal dignity of every individual citizen is recognized, protected, and respected as sacred.",
+    "ஒவ்வொரு தனிப்பட்ட குடிமகனின் தனிப்பட்ட கண்ணியமும் புனிதமானதாக அங்கீகரிக்கப்பட்டு, பாதுகாக்கப்பட்டு, மதிக்கப்படும் போது மட்டுமே தேசிய ஒருமைப்பாட்டைப் பேண முடியும்.",
+    "The State may suppress individual dignity entirely in the pursuit of national integration during peacetime.",
+    "அமைதி காலத்தில் தேசிய ஒருமைப்பாட்டைப் பின்தொடர்வதற்காக அரசு தனிமனிதக் கண்ணியத்தை முற்றிலும் அடக்கலாம்.",
+    "Fraternity is a purely moral concept without any operational connection to Fundamental Rights or Fundamental Duties.",
+    "சகோதரத்துவம் என்பது அடிப்படை உரிமைகள் அல்லது அடிப்படை கடமைகளுடன் எந்தவித நடைமுறைத் தொடர்பும் இல்லாத முற்றிலும் ஒரு ஒழுக்கநெறிக் கருத்தாகும்.",
+    "'Integrity' was removed from the Preamble by the 44th Constitutional Amendment Act to protect state rights.",
+    "'ஒருமைப்பாடு' என்ற சொல் மாநில உரிமைகளைப் பாதுகாக்க 44வது அரசியலமைப்பு திருத்தச் சட்டத்தால் முகவுரையிலிருந்து நீக்கப்பட்டது.",
+    "A",
+    "As K.M. Munshi observed, the phrase 'dignity of the individual' signifies that the Constitution not only ensures material development but recognizes that the personality of every individual is sacred. National unity and integrity cannot be achieved by suppressing individual personality; fraternity seamlessly fuses individual dignity with collective national integration.",
+    "கே.எம். முன்ஷி குறிப்பிட்டது போல, 'நபரின் கண்ணியம்' என்ற தொடர், அரசியலமைப்பு பொருள்சார் வளர்ச்சியை உறுதி செய்வது மட்டுமல்லாமல், ஒவ்வொரு நபரின் ஆளுமையும் புனிதமானது என்பதை அங்கீகரிக்கிறது. தனிமனித ஆளுமையை அடக்குவதன் மூலம் தேசிய ஒற்றுமையை அடைய முடியாது.",
+    "Correct. Individual dignity and national unity are mutually reinforcing components of Fraternity.", "சரி. தனிமனிதக் கண்ணியமும் தேசிய ஒருமைப்பாடும் சகோதரத்துவத்தின் பரஸ்பரம் வலுவூட்டும் கூறுகளாகும்.",
+    "Incorrect. Individual dignity is protected under Article 21 and cannot be arbitrarily suppressed.", "தவறு. தனிமனிதக் கண்ணியம் உறுப்பு 21 இன் கீழ் பாதுகாக்கப்படுகிறது, அதை தன்னிச்சையாக அடக்க முடியாது.",
+    "Incorrect. Fraternity is operationalized through single citizenship and Article 51A(e) Fundamental Duty.", "தவறு. சகோதரத்துவம் ஒற்றைக் குடியுரிமை மற்றும் உறுப்பு 51A(e) அடிப்படை கடமை மூலம் நடைமுறைப்படுத்தப்படுகிறது.",
+    "Incorrect. 'Integrity' was ADDED (not removed) by the 42nd Amendment Act, 1976.", "தவறு. 'ஒருமைப்பாடு' என்ற சொல் 1976 இன் 42வது திருத்தச் சட்டத்தால் சேர்க்கப்பட்டது (நீக்கப்படவில்லை).",
+    "Fraternity promotes: (1) Dignity of the Individual, (2) Unity and Integrity of the Nation. 'Integrity' was added by 42nd Amendment 1976.",
+    "சகோதரத்துவம் ஊக்குவிப்பது: (1) நபரின் கண்ணியம், (2) நாட்டின் பிளவுபடாத ஒருமைப்பாடு. 'ஒருமைப்பாடு' 1976 இன் 42வது திருத்தத்தால் சேர்க்கப்பட்டது.",
+    "K.M. Munshi was a member of the Drafting Committee who stressed that the personality of every individual is sacred.",
+    "கே.எம். முன்ஷி வரைவுக் குழுவின் உறுப்பினராவார், இவர் ஒவ்வொரு தனிநபரின் ஆளுமையும் புனிதமானது என்பதை வலியுறுத்தினார்.",
+    ["Preamble", "Fraternity", "Dignity of Individual", "National Integrity"]
+))
+
+questions.append(make_q(
+    "PRE_H_010", "Advanced Conceptual",
+    "The Preamble is described as 'non-justiciable and non-enforceable in a court of law'. What is the precise legal significance of this characterization?",
+    "முகவுரை 'நீதிமன்றத்தால் நிலைநிறுத்த முடியாதது மற்றும் அமல்படுத்த முடியாதது' என விவரிக்கப்படுகிறது. இந்த இயல்புறுத்தலின் துல்லியமான சட்ட முக்கியத்துவம் யாது?",
+    "The Preamble is completely devoid of any legal value and must be ignored by judges in constitutional interpretation.",
+    "முகவுரை முற்றிலும் எந்தச் சட்ட மதிப்பும் அற்றது, அரசியலமைப்பு விளக்கத்தின் போது நீதிபதிகள் அதைப் புறக்கணிக்க வேண்டும்.",
+    "A citizen cannot file a writ petition claiming a standalone remedy based solely on a violation of the Preamble, yet courts can use it as an interpretive guide to resolve ambiguities in statutory or constitutional provisions.",
+    "முகவுரையை மீறியதற்காக மட்டுமே ஒரு குடிமகன் தனித்த தீர்வை க்ளைம் செய்து பேராணை மனு தாக்கல் செய்ய முடியாது; இருப்பினும், சட்டப்பூர்வ அல்லது அரசியலமைப்பு விதிகளில் உள்ள தெளிவின்மைகளைத் தீர்க்க நீதிமன்றங்கள் அதை ஒரு விளக்கமளிக்கும் வழிகாட்டியாகப் பயன்படுத்தலாம்.",
+    "Non-justiciability means Parliament can enact laws directly contradicting the Preamble without judicial review.",
+    "நீதிமன்றத்தால் நிலைநிறுத்த முடியாத தன்மை என்றால், நீதிப் புனராய்வு இன்றி முகவுரைக்கு напрямую முரண்படும் சட்டங்களைப் பாராளுமன்றம் இயற்றலாம்.",
+    "The Preamble becomes enforceable only during a Proclamation of National Emergency under Article 352.",
+    "உறுப்பு 352 இன் கீழ் தேசிய அவசரநிலை பிரகடனத்தின் போது மட்டுமே முகவுரை அமல்படுத்தக்கூடியதாக மாறுகிறது.",
+    "B",
+    "Like the Directive Principles of State Policy, the Preamble is non-justiciable—its provisions are not enforceable in courts of law for their violation. However, as the Supreme Court ruled in Kesavananda Bharati, the Preamble is of extreme importance and the Constitution should be read and interpreted in the light of the grand and noble vision expressed in the Preamble.",
+    "அரசு கொள்கை வழிகாட்டு நெறிமுறைகளைப் போல, முகவுரையும் நீதிமன்றங்களால் நிலைநிறுத்த முடியாதது - அதன் விதிகளை மீறியதற்காக நீதிமன்றங்களில் நேரடியாக அமல்படுத்த முடியாது. இருப்பினும், கேசவாநந்த பாரதி வழக்கில் உச்ச நீதிமன்றம் தீர்ப்பளித்தது போல, அரசியலமைப்பை முகவுரையின் பார்வையில் படித்து விளக்க வேண்டும்.",
+    "Incorrect. Preamble is the key to open the mind of makers and reflects the Basic Structure.", "தவறு. முகவுரை அரசியலமைப்பு சிற்பிகளின் மனதைத் திறக்கும் சாவியாகும், அடிப்படை கட்டமைப்பைப் பிரதிபலிப்பதாகும்.",
+    "Correct. Non-justiciable = cannot be independently enforced, but acts as a key interpretive guide.", "சரி. நீதிமன்றத்தால் நிலைநிறுத்த முடியாதது = நேரடியாக அமல்படுத்த முடியாது, ஆனால் விளக்கமளிக்கும் வழிகாட்டியாக செயல்படுகிறது.",
+    "Incorrect. Laws violating Basic Structure principles (embodied in Preamble) can be struck down.", "தவறு. முகவுரையில் உள்ள அடிப்படை கட்டமைப்பு தத்துவங்களை மீறும் சட்டங்கள் ரத்து செய்யப்படலாம்.",
+    "Incorrect. Emergency does not convert non-justiciable preambular text into an enforceable right.", "தவறு. அவசரநிலை முகவுரையை அமல்படுத்தக்கூடிய உரிமையாக மாற்றாது.",
+    "Two Key Notes on Preamble: (1) It is NEITHER a source of power NOR a prohibition on power. (2) It is non-justiciable (not enforceable in courts).",
+    "முகவுரை பற்றிய 2 முக்கிய குறிப்புகள்: (1) இது அதிகாரம் அளிக்கும் மூலமும் அல்ல, அதிகாரத் தடையும் அல்ல. (2) இது நீதிமன்றத்தால் நிலைநிறுத்த முடியாதது.",
+    "Preamble is non-justiciable, meaning its provisions are not enforceable in a court of law.",
+    "முகவுரை நீதிமன்றத்தால் நிலைநிறுத்த முடியாதது, அதாவது அதன் விதிகளுக்காக நீதிமன்றத்தில் வழக்குத் தொடர முடியாது.",
+    ["Preamble", "Non-Justiciable", "Interpretive Guide", "Judicial Enforcement"]
+))
+
+# Save output
+output_path = "data/questions/polity/preamble_hard.json"
+with open(output_path, "w", encoding="utf-8") as f:
+    json.dump(questions, f, ensure_ascii=False, indent=2)
+
+print(f"Final setup: Currently compiled {len(questions)} items into {output_path}")
