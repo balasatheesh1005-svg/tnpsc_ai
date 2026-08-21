@@ -4,7 +4,7 @@ import sys
 
 sys.stdout.reconfigure(encoding='utf-8')
 
-# Helper function to generate question objects
+# Helper function
 def q(q_id, diff, q_type, q_en, q_ta, ass_en, ass_ta, rea_en, rea_ta, opt_a_en, opt_a_ta, opt_b_en, opt_b_ta, opt_c_en, opt_c_ta, opt_d_en, opt_d_ta, ca, exp_en, exp_ta, wno_a_en, wno_a_ta, wno_b_en, wno_b_ta, wno_c_en, wno_c_ta, wno_d_en, wno_d_ta, tip_en, tip_ta, fact_en, fact_ta, src, sim="High", bloom="Analyze", time_sec=50):
     options = [
         {"id": "A", "en": opt_a_en, "ta": opt_a_ta},
@@ -51,4 +51,4 @@ def q(q_id, diff, q_type, q_en, q_ta, ass_en, ass_ta, rea_en, rea_ta, opt_a_en, 
         "explanation_ta": exp_ta
     }
 
-print("Generator helper defined.")
+print("Script template ready.")
