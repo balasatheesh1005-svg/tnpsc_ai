@@ -67,6 +67,8 @@ def render_notes_engine(data: dict):
         "concept_map",
         "tables",
         "comparison",
+        "comparison_tables",
+        "comparison_table",
         "quick_revision",
         "fact_box",
         "important_facts",

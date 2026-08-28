@@ -1,0 +1,697 @@
+# -*- coding: utf-8 -*-
+"""
+Builder Script for Supreme Court of India Notes — Part 2
+Subject: Indian Polity
+Topic: Supreme Court of India – Part 2 (Jurisdiction & Powers)
+"""
+
+import json
+import os
+import sys
+
+sys.stdout.reconfigure(encoding='utf-8')
+
+print("==================================================")
+print("BUILDING SUPREME COURT NOTES — PART 2")
+print("==================================================")
+
+part2_data = {
+  "meta": {
+    "topic_id": "polity_supreme_court_part_2",
+    "repository_id": "polity_supreme_court",
+    "display_title": "Supreme Court of India – Part 2",
+    "part": 2,
+    "total_parts": 3,
+    "subject": "polity",
+    "chapter": "Supreme Court of India",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "topic_id": "polity_supreme_court_part_2",
+    "repository_id": "polity_supreme_court",
+    "display_title": "Supreme Court of India – Part 2",
+    "part": 2,
+    "total_parts": 3,
+    "subject": "polity",
+    "chapter": "Supreme Court of India",
+    "language": "English + Tamil"
+  },
+  "keywords": [
+    "Original Jurisdiction",
+    "Article 131",
+    "Writ Jurisdiction",
+    "Article 32",
+    "Article 226",
+    "Habeas Corpus",
+    "Mandamus",
+    "Prohibition",
+    "Certiorari",
+    "Quo Warranto",
+    "Appellate Jurisdiction",
+    "Article 132",
+    "Article 133",
+    "Article 134",
+    "Article 134A",
+    "Article 135",
+    "Special Leave Petition",
+    "Article 136",
+    "Review Jurisdiction",
+    "Article 137",
+    "Article 138",
+    "Article 139",
+    "Article 139A",
+    "Article 140",
+    "Article 141",
+    "Article 142",
+    "Article 143",
+    "Article 144",
+    "Article 145",
+    "Article 147",
+    "Curative Petition",
+    "Court of Record",
+    "Article 129",
+    "Complete Justice",
+    "Judicial Review",
+    "TNPSC Polity Notes"
+  ],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [
+        "Master Original Jurisdiction under Article 131: Federal disputes (Centre vs State, State vs State) and its constitutional exclusions (water disputes Art 262, pre-Constitution treaties).",
+        "Master Writ Jurisdiction under Article 32: Five writs (Habeas Corpus, Mandamus, Prohibition, Certiorari, Quo Warranto) and deep comparison with High Court Writ Jurisdiction under Article 226.",
+        "Understand Appellate Jurisdiction (Articles 132 to 135): Constitutional (Art 132), Civil (Art 133), Criminal (Art 134), Certificate (Art 134A), and Federal Court existing jurisdiction (Art 135).",
+        "Master Special Leave Petition (SLP) under Article 136: Extraordinary discretionary appellate power and explicit exclusion of Military Courts Martial.",
+        "Understand Review Jurisdiction (Article 137), Enlargement of Jurisdiction (Article 138), Writ Power Conferment (Article 139), Transfer of Cases (Article 139A), Ancillary Powers (Article 140), and Curative Petition (Rupa Ashok Hurra Case 2002).",
+        "Master Advisory Jurisdiction under Article 143: Presidential references and non-binding advisory opinions.",
+        "Understand Court of Record (Article 129), Article 141 (Binding Law), Article 142 (Complete Justice), Article 144 (Authorities acting in aid of SC), Article 145 (Rules of Court), and Article 147 (Interpretation)."
+      ],
+      "ta": [
+        "உறுப்பு 131-ன் கீழ் மூல ஆதிக்கம்: கூட்டாட்சித் தகராறுகள் மற்றும் விலக்குகள் (நதிநீர் தகராறுகள் விதி 262).",
+        "உறுப்பு 32-ன் கீழ் பேராணை அதிகாரம்: 5 பேராணைகள் மற்றும் உறுப்பு 226 உயர் நீதிமன்ற அதிகாரத்துடன் ஒப்பீடு.",
+        "மேல்முறையீட்டு ஆதிக்கத்தைப் புரிந்துகொள்ளுதல் (உறுப்புகள் 132 முதல் 135 வரை): அரசியலமைப்பு, சிவில், குற்றவியல், சான்றிதழ் (விதி 134A) மற்றும் கூட்டாட்சி நீதிமன்ற அதிகாரம் (விதி 135).",
+        "உறுப்பு 136-ன் கீழ் சிறப்பு விடுப்பு மனுவை (SLP) உணர்தல்: சிறப்பு விருப்பவுரிமை மேல்முறையீட்டு அதிகாரம் மற்றும் இராணுவ நீதிமன்றங்கள் விலக்கு.",
+        "சீராய்வு ஆதிக்கம் (உறுப்பு 137), ஆதிக்க விரிவாக்கம் (உறுப்பு 138), பேராணை அதிகாரம் வழங்கல் (உறுப்பு 139), வழக்குகள் மாற்றம் (உறுப்பு 139A), துணை அதிகாரங்கள் (உறுப்பு 140) மற்றும் நிவர்த்தி மனுவை (Curative Petition) புரிந்துகொள்ளுதல்.",
+        "உறுப்பு 143-ன் கீழ் ஆலோசனை ஆதிக்கத்தில் தேர்ச்சி பெறுதல்: குடியரசுத் தலைவர் குறிப்புகள் மற்றும் கட்டாயமில்லாத ஆலோசனை அபிப்பிராயங்கள்.",
+        "பதிவு நீதிமன்றம் (உறுப்பு 129), உறுப்பு 141 (கட்டுப்படுத்தும் சட்டம்), உறுப்பு 142 (முழுமையான நீதி), உறுப்பு 144 (உதவியாக செயல்படும் அமைப்புகள்), உறுப்பு 145 (நீதிமன்ற விதிகள்) மற்றும் உறுப்பு 147 (அரசியலமைப்பு விளக்கம்) ஆகியவற்றைப் புரிந்துகொள்ளுதல்."
+      ]
+    }
+  },
+  "subject": "polity",
+  "topic": "Supreme Court of India",
+  "language": "English + Tamil",
+  "ui_type": "standard_notes",
+  "sections": [
+    {
+      "id": "sec_original_jurisdiction",
+      "title_en": "1. Original Jurisdiction of Supreme Court (Article 131 & Art 135)",
+      "title_ta": "1. உச்ச நீதிமன்றத்தின் மூல ஆதிக்கம் (உறுப்பு 131 & விதி 135)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_writ_jurisdiction",
+      "title_en": "2. Writ Jurisdiction & Five Constitutional Writs (Article 32 vs Article 226 & Art 139)",
+      "title_ta": "2. பேராணை ஆதிக்கம் & ஐந்து அரசியலமைப்பு பேராணைகள் (உறுப்பு 32 vs உறுப்பு 226 & விதி 139)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_appellate_jurisdiction",
+      "title_en": "3. Appellate Jurisdiction & Special Leave Petition (Articles 132 to 136 & Art 134A)",
+      "title_ta": "3. மேல்முறையீட்டு ஆதிக்கம் & சிறப்பு விடுப்பு மனு - SLP (உறுப்புகள் 132 முதல் 136 & விதி 134A)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_review_curative",
+      "title_en": "4. Review Jurisdiction, Transfer of Cases & Ancillary Powers (Articles 137, 138, 139A & 140)",
+      "title_ta": "4. சீராய்வு ஆதிக்கம், வழக்குகள் மாற்றம் & துணை அதிகாரங்கள் (உறுப்புகள் 137, 138, 139A & 140)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_advisory_jurisdiction",
+      "title_en": "5. Advisory Jurisdiction of Supreme Court (Article 143 & Article 145)",
+      "title_ta": "5. உச்ச நீதிமன்றத்தின் ஆலோசனை ஆதிக்கம் (உறுப்பு 143 & உறுப்பு 145)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_court_of_record_art142",
+      "title_en": "6. Court of Record, Binding Law, Complete Justice & Authorities (Articles 129, 141, 142, 144 & 147)",
+      "title_ta": "6. பதிவு நீதிமன்றம், கட்டுப்படுத்தும் சட்டம், முழுமையான நீதி & உதவியாக செயல்படும் அமைப்புகள் (உறுப்புகள் 129, 141, 142, 144 & 147)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "comparison_tables",
+      "title_en": "7. Mandatory Comparison Tables (9 Tables)",
+      "title_ta": "7. கட்டாய ஒப்பீட்டு அட்டவணைகள் (9 அட்டவணைகள்)",
+      "type": "comparison"
+    },
+    {
+      "id": "mind_map",
+      "title_en": "8. Mind Map & TNPSC Trap Points",
+      "title_ta": "8. மன வரைபடம் & டிஎன்பிஎஸ்சி பொறிப் புள்ளிகள்",
+      "type": "mind_map"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "Jurisdiction of the Supreme Court refers to the constitutional scope of powers under Articles 129 to 147, categorized into Original (Art 131, 135), Writ (Art 32, 139), Appellate (Arts 132-136), Review & Transfer (Arts 137, 138, 139A, 140), Advisory (Art 143), Rules (Art 145), and Extraordinary powers for doing complete justice (Arts 141, 142, 144, 147).",
+      "ta": "உச்ச நீதிமன்றத்தின் ஆதிக்கம் என்பது உறுப்புகள் 129 முதல் 147 வரையிலான அரசியலமைப்பு அதிகாரங்களின் எல்லையைக் குறிக்கிறது."
+    },
+    "introduction": {
+      "en": "The Indian Supreme Court possesses one of the widest jurisdictions globally under Articles 129 to 147. As an Original Federal Court (Art 131), Guardian of Fundamental Rights (Art 32), Ultimate Appellate Authority (Arts 132-136), Advisory Body (Art 143), and Court of Record (Art 129), it ensures constitutional supremacy. Article 144 mandates all civil and judicial authorities in India to act in aid of the Supreme Court.",
+      "ta": "இந்திய உச்ச நீதிமன்றம் உறுப்புகள் 129 முதல் 147 வரை பரந்த அதிகார வரம்பைக் கொண்டுள்ளது. உறுப்பு 144 இந்தியாவின் அனைத்து சிவில் மற்றும் நீதித்துறை அதிகார அமைப்புகளும் உச்ச நீதிமன்றத்திற்கு உதவியாகச் செயல்பட வேண்டும் எனக் கட்டளையிடுகிறது."
+    },
+    "sec_original_jurisdiction": [
+      {
+        "title_en": "Article 131 & Article 135 — Original & Federal Court Jurisdiction",
+        "title_ta": "உறுப்பு 131 & உறுப்பு 135 — மூல & கூட்டாட்சி நீதிமன்ற ஆதிக்கம்",
+        "points": {
+          "en": [
+            "Original & Exclusive Jurisdiction (Article 131): Power to hear federal disputes in the FIRST INSTANCE. Covers: 1. GOI vs State(s); 2. GOI + State(s) vs State(s); 3. State vs State.",
+            "Pre-Condition: Dispute must involve a Legal Right question.",
+            "Exclusions from Art 131: Pre-Constitution treaties, Inter-State Water Disputes under Article 262, Finance Commission references under Article 280, Commercial disputes.",
+            "Article 135 Jurisdiction: Confers jurisdiction and powers of the pre-Constitution Federal Court over matters not covered under Articles 133 or 134."
+          ],
+          "ta": [
+            "மூல & முற்றுரிமை ஆதிக்கம் (உறுப்பு 131): கூட்டாட்சித் தகராறுகளை முதன்முறையாக நேரடியாக விசாரிக்கும் அதிகாரம். 1. மத்திய அரசு vs மாநிலம்(கள்); 2. மத்திய அரசு + மாநிலம் vs மாநிலம்(கள்); 3. மாநிலம் vs மாநிலம்.",
+            "சட்ட உரிமைத் தேவை: தகராறில் சட்ட உரிமை பற்றிய கேள்வி இருக்க வேண்டும்.",
+            "விலக்குகள்: முன்-ஒப்பந்தங்கள், உறுப்பு 262 நதிநீர் தகராறுகள், உறுப்பு 280 நிதிக்குழு விஷயங்கள்.",
+            "உறுப்பு 135 ஆதிக்கம்: உறுப்புகள் 133/134-ல் இல்லாத விஷயங்களில் கூட்டாட்சி நீதிமன்றத்தின் (Federal Court) அதிகாரங்களை உச்ச நீதிமன்றத்திற்கு அளிக்கிறது."
+          ]
+        }
+      }
+    ],
+    "sec_writ_jurisdiction": [
+      {
+        "title_en": "Article 32 & Article 139 — Writ Jurisdiction & Powers",
+        "title_ta": "உறுப்பு 32 & உறுப்பு 139 — பேராணை ஆதிக்கம் & அதிகாரங்கள்",
+        "points": {
+          "en": [
+            "Article 32 Writ Jurisdiction: Supreme Court issues writs ONLY for enforcement of Fundamental Rights. Dr. Ambedkar called Article 32 the 'Heart and Soul of the Constitution'.",
+            "Article 139 (Conferment of Additional Writ Powers): Parliament may by law confer on Supreme Court power to issue writs for purposes OTHER THAN Fundamental Rights (e.g. general legal rights).",
+            "Five Writs: Habeas Corpus, Mandamus, Prohibition, Certiorari, Quo-Warranto.",
+            "Article 32 (SC) vs Article 226 (HC): Art 32 IS ITSELF a Fundamental Right; Art 226 has wider subject scope (FRs + other legal rights)."
+          ],
+          "ta": [
+            "உறுப்பு 32 பேராணை ஆதிக்கம்: அடிப்படை உரிமைகளை அமல்படுத்த மட்டுமே SC பேராணைகளை பிறப்பிக்கிறது. டாக்டர் அம்பேத்கர் உறுப்பு 32-ஐ 'இதயம் மற்றும் ஆன்மா' என்றார்.",
+            "உறுப்பு 139 (கூடுதல் பேராணை அதிகாரங்கள் வழங்கல்): அடிப்படை உரிமைகள் அல்லாத பிற நோக்கங்களுக்கும் பேராணைகள் பிறப்பிக்கும் அதிகாரத்தை நாடாளுமன்றம் சட்டத்தின் மூலம் உச்ச நீதிமன்றத்திற்கு வழங்கலாம்.",
+            "ஐந்து பேராணைகள்: ஆட்கொணர்வு, கட்டளையுறுத்தும், தடையுறுத்தும், ஆவணக் கேட்பு, தகுதி வினவும்.",
+            "உறுப்பு 32 (SC) vs உறுப்பு 226 (HC): உறுப்பு 32 தானே அடிப்படை உரிமை; உறுப்பு 226 பரந்த பாட எல்லை கொண்டது."
+          ]
+        }
+      }
+    ],
+    "sec_appellate_jurisdiction": [
+      {
+        "title_en": "Articles 132 to 136 — Appellate Jurisdiction & Special Leave Petition (SLP)",
+        "title_ta": "உறுப்புகள் 132 முதல் 136 — மேல்முறையீட்டு ஆதிக்கம் & சிறப்பு விடுப்பு மனு (SLP)",
+        "points": {
+          "en": [
+            "Article 132: Constitutional Appeals on substantial question of law interpretation.",
+            "Article 133: Civil Appeals (30th Amend 1972 removed Rs 20,000 monetary limit).",
+            "Article 134: Criminal Appeals (Death sentence reversed acquittal or HC certificate).",
+            "Article 134A: Certificate for Appeal decided by High Court immediately after judgment (44th Amend 1978).",
+            "Article 136 (Special Leave Petition - SLP): Plenary discretionary power to grant special leave against any judgment of any court/tribunal in India. EXCLUDES Armed Forces Military Courts Martial!"
+          ],
+          "ta": [
+            "உறுப்பு 132: அரசியலமைப்பு மேல்முறையீடுகள்.",
+            "உறுப்பு 133: சிவில் மேல்முறையீடுகள் (1972 30-வது திருத்தம் 20,000 ரூபாய் வரம்பை நீக்கியது).",
+            "உறுப்பு 134: குற்றவியல் மேல்முறையீடுகள் (மரண தண்டனை ரத்து அல்லது HC சான்றிதழ்).",
+            "உறுப்பு 134A: மேல்முறையீட்டு சான்றிதழ் (1978 44-வது திருத்தம்).",
+            "உறுப்பு 136 (சிறப்பு விடுப்பு மனு - SLP): எந்தவொரு நீதிமன்ற உத்தரவையும் எதிர்த்து சிறப்பு அனுமதி வழங்கும் அதிகாரம். இராணுவ நீதிமன்றங்கள் வெளிப்படையாக விலக்கப்பட்டுள்ளன!"
+          ]
+        }
+      }
+    ],
+    "sec_review_curative": [
+      {
+        "title_en": "Articles 137, 138, 139A & 140 — Review, Case Transfers & Ancillary Powers",
+        "title_ta": "உறுப்புகள் 137, 138, 139A & 140 — சீராய்வு, வழக்குகள் மாற்றம் & துணை அதிகாரங்கள்",
+        "points": {
+          "en": [
+            "Article 137 (Review Jurisdiction): Power of Supreme Court to review any judgment pronounced or order made by it to correct errors apparent on face of record.",
+            "Article 138 (Enlargement of Jurisdiction): Parliament may by law extend Supreme Court jurisdiction with respect to Union List matters or special agreements.",
+            "Article 139A (Transfer of Cases): Introduced by 42nd Amend 1976 & 44th Amend 1978. SC may withdraw cases involving same/substantially same questions of law pending before HC(s) to itself, or transfer pending cases from one HC to another.",
+            "Article 140 (Ancillary Powers): Parliament may by law grant supplementary/ancillary powers to Supreme Court to enable it to exercise its jurisdiction effectively.",
+            "Curative Petition: Evolved in Rupa Ashok Hurra v. Ashok Hurra (2002) as a rarest-of-rare final remedy after Review Petition dismissal under Art 137."
+          ],
+          "ta": [
+            "உறுப்பு 137 (சீராய்வு ஆதிக்கம்): வெளிப்படையான பிழைகளைத் திருத்த தனது சொந்த தீர்ப்புகளைச் சீராய்வு செய்யும் அதிகாரம்.",
+            "உறுப்பு 138 (ஆதிக்க விரிவாக்கம்): மத்தியப் பட்டியல் விஷயங்களில் உச்ச நீதிமன்ற அதிகார வரம்பை நாடாளுமன்றம் சட்டத்தின் மூலம் விரிவாக்கலாம்.",
+            "உறுப்பு 139A (வழக்குகள் மாற்றம்): 42-வது & 44-வது திருத்தங்களால் சேர்க்கப்பட்டது. உயர் நீதிமன்றங்களில் நிலுவையிலுள்ள ஒரே மாதிரியான சட்டக் கேள்விகள் கொண்ட வழக்குகளை உச்ச நீதிமன்றத்திற்கு மாற்றலாம் அல்லது ஒரு HC-லிருந்து மற்றொரு HC-க்கு மாற்றலாம்.",
+            "உறுப்பு 140 (துணை அதிகாரங்கள்): உச்ச நீதிமன்றம் தனது அதிகார வரம்பைத் திறம்படச் செயல்படுத்துவதற்கான துணை அதிகாரங்களை நாடாளுமன்றம் சட்டத்தின் மூலம் வழங்கலாம்.",
+            "நிவர்த்தி மனு (Curative Petition): உறுப்பு 137 சீராய்வு மனு தள்ளுபடிக்குப் பின் ரூபா அசோக் ஹுர்ரா வழக்கின் (2002) மூலம் உருவாக்கப்பட்ட இறுதி பரிகாரம்."
+          ]
+        }
+      }
+    ],
+    "sec_advisory_jurisdiction": [
+      {
+        "title_en": "Article 143 & Article 145 — Advisory Jurisdiction & Court Rules",
+        "title_ta": "உறுப்பு 143 & உறுப்பு 145 — ஆலோசனை ஆதிக்கம் & நீதிமன்ற விதிகள்",
+        "points": {
+          "en": [
+            "Article 143 (Advisory Jurisdiction): President may seek SC opinion on: 1. Question of law/fact of public importance (SC MAY or MAY NOT express opinion); 2. Pre-Constitution treaties (SC MUST express opinion). Opinion is NON-BINDING on President.",
+            "Article 145 (Rules of Court): Supreme Court framed rules for regulating practice and procedure of Court with approval of President.",
+            "Article 145(3) Constitution Bench Rule: Cases involving substantial question of law as to Constitution interpretation or Art 143 references MUST be heard by a Bench of AT LEAST 5 JUDGES."
+          ],
+          "ta": [
+            "உறுப்பு 143 (ஆலோசனை ஆதிக்கம்): குடியரசுத் தலைவர் SC ஆலோசனையைக் கோரலாம்: 1. பொது முக்கியத்துவம் வாய்ந்த கேள்வி (கருத்து தெரிவிக்கலாம்/மறுக்கலாம்); 2. முன் ஒப்பந்தங்கள் (கட்டாயம் தெரிவிக்க வேண்டும்). கருத்து குடியரசுத் தலைவரைக் கட்டுப்படுத்தாது.",
+            "உறுப்பு 145 (நீதிமன்ற விதிகள்): குடியரசுத் தலைவர் ஒப்புதலுடன் உச்ச நீதிமன்ற நடைமுறை விதிகளையும் அமைப்பையும் CJI உருவாக்குகிறது.",
+            "உறுப்பு 145(3) அரசியலமைப்பு அமர்வு விதி: அரசியலமைப்பு விளக்கம் அல்லது உறுப்பு 143 குறிப்புகளைக் குறைந்தபட்சம் 5 நீதிபதிகள் கொண்ட அமர்வு விசாரிக்க வேண்டும்."
+          ]
+        }
+      }
+    ],
+    "sec_court_of_record_art142": [
+      {
+        "title_en": "Articles 129, 141, 142, 144 & 147 — Binding Law, Complete Justice & Interpretation",
+        "title_ta": "உறுப்புகள் 129, 141, 142, 144 & 147 — கட்டுப்படுத்தும் சட்டம், முழுமையான நீதி & விளக்கம்",
+        "points": {
+          "en": [
+            "Article 129: Supreme Court is a Court of Record and has power to punish for CONTEMPT of itself.",
+            "Article 141: Law declared by Supreme Court is BINDING ON ALL COURTS within India.",
+            "Article 142: Power to pass any decree or order necessary for doing COMPLETE JUSTICE in any pending cause.",
+            "Article 144 (Civil & Judicial Authorities in Aid): All authorities, civil and judicial, in the territory of India SHALL ACT IN AID OF THE SUPREME COURT.",
+            "Article 147 (Interpretation): Clarifies references to interpretation of Constitution and Government of India Act 1935."
+          ],
+          "ta": [
+            "உறுப்பு 129: உச்ச நீதிமன்றம் ஒரு பதிவு நீதிமன்றமாகும் (Court of Record) மற்றும் தன் அவமதிப்பிற்குத் தண்டிக்கும் அதிகாரம் கொண்டது.",
+            "உறுப்பு 141: SC சட்டத்தை இந்தியாவின் அனைத்து நீதிமன்றங்களுக்கும் கட்டுப்படியாக்குகிறது.",
+            "உறுப்பு 142: நிலுவையிலுள்ள வழக்கில் முழுமையான நீதியைத் (Complete Justice) வழங்க ஆணைகளைப் பிறப்பிக்கும் அதிகாரம்.",
+            "உறுப்பு 144 (உதவியாக செயல்படும் அமைப்புகள்): இந்தியாவின் அனைத்து சிவில் மற்றும் நீதித்துறை அதிகார அமைப்புகளும் உச்ச நீதிமன்றத்திற்கு உதவியாகச் செயல்பட வேண்டும்.",
+            "உறுப்பு 147 (அரசியலமைப்பு விளக்கம்): அரசியலமைப்பு மற்றும் 1935 இந்திய அரசுச் சட்டத்தின் விளக்கவுரைகளைக் குறிப்பிடுகிறது."
+          ]
+        }
+      }
+    ],
+    "revision_cards": [
+      {
+        "id": "sc_p2_c1",
+        "front_en": "Which Article governs the Original Jurisdiction of the Supreme Court for federal disputes?",
+        "front_ta": "கூட்டாட்சித் தகராறுகளுக்கான உச்ச நீதிமன்றத்தின் மூல ஆதிக்கத்தை வரையறுக்கும் உறுப்பு எது?",
+        "back_en": "ARTICLE 131 (Centre vs State, State vs State disputes).",
+        "back_ta": "உறுப்பு 131 (மத்திய vs மாநிலம், மாநிலம் vs மாநிலத் தகராறுகள்)."
+      },
+      {
+        "id": "sc_p2_c2",
+        "front_en": "Are Inter-State Water Disputes included under Article 131 Original Jurisdiction?",
+        "front_ta": "மாநிலங்களுக்கு இடையிலான நதிநீர் தகராறுகள் உறுப்பு 131 மூல ஆதிக்கத்தில் அடங்குமா?",
+        "back_en": "NO. Inter-State Water Disputes (Article 262) are explicitly EXCLUDED from Article 131.",
+        "back_ta": "இல்லை. நதிநீர் தகராறுகள் (உறுப்பு 262) உறுப்பு 131-லிருந்து வெளிப்படையாக விலக்கப்பட்டுள்ளன."
+      },
+      {
+        "id": "sc_p2_c3",
+        "front_en": "What is the key difference between Article 32 and Article 226 regarding Fundamental Rights?",
+        "front_ta": "அடிப்படை உரிமைகள் தொடர்பாக உறுப்பு 32 மற்றும் உறுப்பு 226-க்கு இடையிலான முக்கிய வேறுபாடு என்ன?",
+        "back_en": "Article 32 is ITSELF a Fundamental Right (SC); Article 226 (HC) applies for FRs AND other legal rights.",
+        "back_ta": "உறுப்பு 32 தானே ஒரு அடிப்படை உரிமை (SC); உறுப்பு 226 (HC) அடிப்படை உரிமைகள் மற்றும் பிற சட்ட உரிமைகளுக்கும் பொருந்தும்."
+      },
+      {
+        "id": "sc_p2_c4",
+        "front_en": "Which writ can be sought by ANY interested person, regardless of locus standi?",
+        "front_ta": "பாதிக்கப்பட்ட நபர் மட்டுமின்றி எந்தவொரு ஆர்வமுள்ள நபராலும் கோரப்படக்கூடிய பேராணை எது?",
+        "back_en": "QUO-WARRANTO (Inquires into legality of claim to public office).",
+        "back_ta": "தகுதி வினவும் பேராணை (Quo-Warranto)."
+      },
+      {
+        "id": "sc_p2_c5",
+        "front_en": "Does Special Leave Petition under Article 136 apply to Military Courts Martial?",
+        "front_ta": "உறுப்பு 136-ன் கீழ் சிறப்பு விடுப்பு மனு (SLP) இராணுவ நீதிமன்றங்களுக்குப் (Courts Martial) பொருந்துமா?",
+        "back_en": "NO. Article 136 explicitly EXCLUDES decisions of Armed Forces Military Courts.",
+        "back_ta": "இல்லை. உறுப்பு 136 இராணுவ நீதிமன்றங்களின் உத்தரவுகளை வெளிப்படையாக விலக்குகிறது."
+      },
+      {
+        "id": "sc_p2_c6",
+        "front_en": "Under Article 143, is the advisory opinion of Supreme Court binding on the President?",
+        "front_ta": "உறுப்பு 143-ன் கீழ் உச்ச நீதிமன்றத்தின் ஆலோசனை அபிப்பிராயம் குடியரசுத் தலைவரைக் கட்டுப்படுத்துமா?",
+        "back_en": "NO. Advisory opinion under Article 143 is ONLY ADVISORY and NOT binding.",
+        "back_ta": "இல்லை. உறுப்பு 143-ன் கீழ் ஆலோசனை அபிப்பிராயம் வெறும் ஆலோசனையே தவிர கட்டுப்படுத்தாது."
+      },
+      {
+        "id": "sc_p2_c7",
+        "front_en": "Which landmark judgment introduced the concept of 'Curative Petition'?",
+        "front_ta": "'நிவர்த்தி மனு (Curative Petition)' என்ற கருத்தை அறிமுகப்படுத்திய வரலாற்றுச் சிறப்புமிக்க தீர்ப்பு எது?",
+        "back_en": "Rupa Ashok Hurra v. Ashok Hurra (2002).",
+        "back_ta": "ரூபா அசோக் ஹுர்ரா v. அசோக் ஹுர்ரா (2002)."
+      },
+      {
+        "id": "sc_p2_c8",
+        "front_en": "Which Article declares that all civil and judicial authorities shall act in aid of the Supreme Court?",
+        "front_ta": "அனைத்து சிவில் மற்றும் நீதித்துறை அதிகார அமைப்புகளும் உச்ச நீதிமன்றத்திற்கு உதவியாகச் செயல்பட வேண்டும் எனக் கூறும் உறுப்பு எது?",
+        "back_en": "ARTICLE 144.",
+        "back_ta": "உறுப்பு 144."
+      },
+      {
+        "id": "sc_p2_c9",
+        "front_en": "What power is granted to the Supreme Court under Article 142?",
+        "front_ta": "உறுப்பு 142-ன் கீழ் உச்ச நீதிமன்றத்திற்கு என்ன அதிகாரம் வழங்கப்பட்டுள்ளது?",
+        "back_en": "Power to pass any decree/order necessary for doing COMPLETE JUSTICE in any pending cause.",
+        "back_ta": "நிலுவையிலுள்ள வழக்கில் முழுமையான நீதியைத் (Complete Justice) வழங்கத் தேவையான ஆணை பிறப்பிக்கும் அதிகாரம்."
+      },
+      {
+        "id": "sc_p2_c10",
+        "front_en": "Which Article empowers the Supreme Court to transfer cases from one High Court to another?",
+        "front_ta": "ஒரு உயர் நீதிமன்றத்திலிருந்து மற்றொரு உயர் நீதிமன்றத்திற்கு வழக்குகளை மாற்ற உச்ச நீதிமன்றத்திற்கு அதிகாரமளிக்கும் உறுப்பு எது?",
+        "back_en": "ARTICLE 139A (Transfer of Certain Cases).",
+        "back_ta": "உறுப்பு 139A (வழக்குகள் மாற்றம்)."
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "tbl_art32_vs_art226_p2",
+        "title_en": "1. Article 32 vs Article 226 Writ Jurisdiction Comparison",
+        "title_ta": "1. உறுப்பு 32 vs உறுப்பு 226 பேராணை ஆதிக்கம் ஒப்பீடு",
+        "headers_en": ["Feature / Dimension", "Article 32 (Supreme Court)", "Article 226 (High Courts)"],
+        "headers_ta": ["அம்சம் / காரணி", "உறுப்பு 32 (உச்ச நீதிமன்றம்)", "உறுப்பு 226 (உயர் நீதிமன்றங்கள்)"],
+        "rows_en": [
+          ["Fundamental Right Status", "IS ITSELF a Fundamental Right (Right to Constitutional Remedies)", "NOT a Fundamental Right (Constitutional remedy provision)"],
+          ["Subject Matter Scope", "ONLY for enforcement of Fundamental Rights (Narrower subject scope)", "For Fundamental Rights AND 'any other legal purpose' (Wider subject scope)"],
+          ["Territorial Scope", "Entire Territory of India (Wider territorial scope)", "Respective State / UT territorial limits (Narrower territorial scope)"],
+          ["Discretionary Nature", "SC CANNOT refuse to exercise jurisdiction (Guarantor of FRs)", "HC MAY refuse to issue writs (Discretionary remedy)"],
+          ["Constitutional Organ", "Apex Union Judiciary", "State Judiciary"]
+        ],
+        "rows_ta": [
+          ["அடிப்படை உரிமை நிலை", "தானே ஒரு அடிப்படை உரிமையாகும் (அரசியலமைப்பு பரிகார உரிமை)", "அடிப்படை உரிமையல்ல (அரசியலமைப்பு விதி மட்டுமே)"],
+          ["பாட எல்லை", "அடிப்படை உரிமைகளை அமல்படுத்த மட்டுமே (குறுகிய பாட எல்லை)", "அடிப்படை உரிமைகள் மற்றும் 'பிற சட்ட உரிமைகளுக்கும்' (பரந்த பாட எல்லை)"],
+          ["நிலப்பரப்பு எல்லை", "இந்தியா முழுவதற்கும் பொருந்தும் (பரந்த நிலப்பரப்பு)", "சம்மந்தப்பட்ட மாநில எல்லைக்குள் மட்டுமே (குறுகிய நிலப்பரப்பு)"],
+          ["விருப்பவுரிமைத் தன்மை", "SC அதிகாரத்தைப் பயன்படுத்த மறுக்க முடியாது (பாதுகாவலன்)", "HC பேராணை பிறப்பிக்க மறுக்கலாம் (விருப்பவுரிமை பரிகாரம்)"],
+          ["அரசியலமைப்பு உறுப்பு", "உச்ச ஒன்றிய நீதித்துறை", "மாநில நீதித்துறை"]
+        ]
+      },
+      {
+        "id": "tbl_orig_vs_appellate_p2",
+        "title_en": "2. Original vs Appellate Jurisdiction Comparison",
+        "title_ta": "2. மூல ஆதிக்கம் vs மேல்முறையீட்டு ஆதிக்கம் ஒப்பீடு",
+        "headers_en": ["Aspect", "Original Jurisdiction (Article 131)", "Appellate Jurisdiction (Articles 132–136)"],
+        "headers_ta": ["கூறு", "மூல ஆதிக்கம் (உறுப்பு 131)", "மேல்முறையீட்டு ஆதிக்கம் (உறுப்புகள் 132–136)"],
+        "rows_en": [
+          ["Hearing Forum", "Heard directly in the FIRST INSTANCE in Supreme Court", "Heard against decisions of lower courts / High Courts"],
+          ["Subject Matter", "Federal disputes (Centre vs State, State vs State)", "Constitutional, Civil, Criminal matters, and SLP"],
+          ["Exclusivity", "EXCLUSIVE to Supreme Court (No other court can hear)", "Shared appeal hierarchy (HC -> SC)"],
+          ["Pre-Condition", "Dispute must involve a Legal Right question", "Requires HC Certificate (Art 134A) or SC Special Leave (Art 136)"],
+          ["Exclusions", "Water disputes (Art 262), pre-Constitution treaties", "Art 136 excludes Military Courts Martial"]
+        ],
+        "rows_ta": [
+          ["விசாரணை அரங்கம்", "உச்ச நீதிமன்றத்தில் நேரடியாக முதன்முறையாக விசாரிக்கப்படுவது", "கீழ் நீதிமன்றங்கள் / உயர் நீதிமன்ற முடிவுகளுக்கு எதிராக விசாரணை"],
+          ["பாடப்பொருள்", "கூட்டாட்சித் தகராறுகள் (மத்திய vs மாநிலம், மாநிலம் vs மாநிலம்)", "அரசியலமைப்பு, சிவில், குற்றவியல் மற்றும் SLP விஷயங்கள்"],
+          ["முற்றுரிமை", "உச்ச நீதிமன்றத்திற்கு மட்டுமே முற்றுரிமை (வேறு நீதிமன்றம் முடியாது)", "பகிரப்பட்ட மேல்முறையீட்டு வரிசை (HC -> SC)"],
+          ["முன்-நிபந்தனை", "தகராறில் சட்ட உரிமை பற்றிய கேள்வி இருக்க வேண்டும்", "HC சான்றிதழ் (விதி 134A) அல்லது SC சிறப்பு அனுமதி (விதி 136) தேவை"],
+          ["விலக்குகள்", "நதிநீர் தகராறுகள் (விதி 262), அரசியலமைப்பிற்கு முந்தைய உடன்படிக்கைகள்", "விதி 136 இராணுவ நீதிமன்றங்களை விலக்குகிறது"]
+        ]
+      },
+      {
+        "id": "tbl_appeal_vs_review_vs_slp_p2",
+        "title_en": "3. Appeal vs Review vs Special Leave Petition (SLP) Comparison",
+        "title_ta": "3. மேல்முறையீடு vs சீராய்வு vs சிறப்பு விடுப்பு மனு (SLP) ஒப்பீடு",
+        "headers_en": ["Feature", "Ordinary Appeal (Arts 132-134)", "Review Petition (Article 137)", "Special Leave Petition (Article 136)"],
+        "headers_ta": ["அம்சம்", "சாதாரண மேல்முறையீடு (விதிகள் 132-134)", "சீராய்வு மனு (உறுப்பு 137)", "சிறப்பு விடுப்பு மனு (உறுப்பு 136)"],
+        "rows_en": [
+          ["Target Decision", "High Court judgment / decree", "Supreme Court's OWN judgment / order", "ANY court / tribunal order in India"],
+          ["Nature of Power", "Statutory / Constitutional right of appeal", "Power to correct error apparent on face of record", "Extraordinary residual discretionary power"],
+          ["Prerequisite", "HC Certificate under Art 134A or death sentence", "Error apparent or new evidence discovered", "Discretion of SC to grant leave"],
+          ["Military Exemption", "N/A", "N/A", "Military Courts Martial explicitly EXCLUDED"]
+        ],
+        "rows_ta": [
+          ["இலக்கு முடிவு", "உயர் நீதிமன்றத் தீர்ப்பு / உத்தரவு", "உச்ச நீதிமன்றத்தின் சொந்த தீர்ப்பு / உத்தரவு", "இந்தியாவில் உள்ள எந்தவொரு நீதிமன்ற உத்தரவு"],
+          ["அதிகாரத் தன்மை", "சட்டப்பூர்வ / அரசியலமைப்பு மேல்முறையீட்டு உரிமை", "பதிவேட்டின் முகப்பிலுள்ள பிழையைத் திருத்தும் அதிகாரம்", "சிறப்பு எச்ச விருப்பவுரிமை அதிகாரம்"],
+          ["முன்-தேவை", "விதி 134A கீழ் HC சான்றிதழ் அல்லது மரண தண்டனை", "வெளிப்படையான பிழை அல்லது புதிய ஆதாரம்", "அனுமதி வழங்க SC-ன் விருப்பவுரிமை"],
+          ["இராணுவ விலக்கு", "பொருந்தாது", "பொருந்தாது", "இராணுவ நீதிமன்றங்கள் வெளிப்படையாக விலக்கப்பட்டுள்ளன"]
+        ]
+      },
+      {
+        "id": "tbl_art136_vs_art137_p2",
+        "title_en": "4. Article 136 (SLP) vs Article 137 (Review) Comparison",
+        "title_ta": "4. உறுப்பு 136 (SLP) vs உறுப்பு 137 (சீராய்வு) ஒப்பீடு",
+        "headers_en": ["Parameter", "Article 136 (Special Leave Petition)", "Article 137 (Review Jurisdiction)"],
+        "headers_ta": ["அளவுரு", "உறுப்பு 136 (சிறப்பு விடுப்பு மனு)", "உறுப்பு 137 (சீராய்வு ஆதிக்கம்)"],
+        "rows_en": [
+          ["Target Court", "Applies to judgments of ANY court/tribunal in India", "Applies ONLY to judgments of SUPREME COURT itself"],
+          ["Timing", "Filed to seek permission to appeal against a lower court order", "Filed after Supreme Court pronounces its final judgment"],
+          ["Grounds", "Substantial injustice, gross error of law", "Error apparent on face of record, discovery of new evidence"],
+          ["Discretionary Scope", "SC has wide discretion to grant or refuse leave", "SC reviews only within established legal review parameters"],
+          ["Armed Forces Exclusion", "Armed Forces Military Courts explicitly EXCLUDED", "Applies to SC judgments"]
+        ],
+        "rows_ta": [
+          ["இலக்கு நீதிமன்றம்", "இந்தியாவில் உள்ள எந்தவொரு நீதிமன்ற உத்தரவுக்கும் பொருந்தும்", "உச்ச நீதிமன்றத்தின் சொந்த தீர்ப்புகளுக்கு மட்டுமே பொருந்தும்"],
+          ["நேரம்", "கீழ் நீதிமன்ற உத்தரவை எதிர்த்து மேல்முறையீடு செய்ய அனுமதி கோரல்", "உச்ச நீதிமன்றம் தனது இறுதித் தீர்ப்பை வழங்கிய பின் தாக்கல்"],
+          ["அடிப்படைகள்", "பெரும் நீதித்தவறு, சட்டத்தின் மொத்தப் பிழை", "பதிவேட்டின் முகப்பிலுள்ள வெளிப்படையான பிழை, புதிய ஆதாரம்"],
+          ["விருப்பவுரிமை எல்லை", "அனுமதி வழங்க அல்லது மறுக்க SC-க்கு பரந்த விருப்பவுரிமை உண்டு", "வரையறுக்கப்பட்ட சட்ட அளவுருக்களுக்குள் மட்டுமே சீராய்வு"],
+          ["இராணுவ விலக்கு", "இராணுவ நீதிமன்றங்கள் வெளிப்படையாக விலக்கப்பட்டுள்ளன", "SC தீர்ப்புகளுக்குப் பொருந்தும்"]
+        ]
+      },
+      {
+        "id": "tbl_art143_vs_art142_p2",
+        "title_en": "5. Article 143 (Advisory) vs Article 142 (Complete Justice) Comparison",
+        "title_ta": "5. உறுப்பு 143 (ஆலோசனை) vs உறுப்பு 142 (முழுமையான நீதி) ஒப்பீடு",
+        "headers_en": ["Feature", "Article 143 (Advisory Jurisdiction)", "Article 142 (Complete Justice Power)"],
+        "headers_ta": ["அம்சம்", "உறுப்பு 143 (ஆலோசனை ஆதிக்கம்)", "உறுப்பு 142 (முழுமையான நீதி அதிகாரம்)"],
+        "rows_en": [
+          ["Initiator", "Referred by the PRESIDENT OF INDIA to SC", "Invoked by SUPREME COURT in pending cases"],
+          ["Binding Nature", "Opinion is ADVISORY ONLY; NOT binding on President", "Decree/Order is BINDING and enforceable throughout India"],
+          ["Purpose", "To seek legal/factual opinion on public importance matters", "To do COMPLETE JUSTICE in any cause or matter pending"],
+          ["Bench Requirement", "MUST be heard by Constitution Bench (min 5 Judges)", "Heard by the Bench seized of the matter"]
+        ],
+        "rows_ta": [
+          ["தொடங்குபவர்", "இந்தியக் குடியரசுத் தலைவரால் SC-க்குக் கோரிக்கை", "நிலுவையிலுள்ள வழக்குகளில் உச்ச நீதிமன்றத்தால் பயன்படுத்தப்படுவது"],
+          ["கட்டுப்படுத்தும் தன்மை", "கருத்து வெறும் ஆலோசனையே; குடியரசுத் தலைவரைக் கட்டுப்படுத்தாது", "ஆணை/உத்தரவு இந்தியா முழுவதும் கட்டுப்படுத்தும் மற்றும் அமலாகும்"],
+          ["நோக்கம்", "பொது முக்கியத்துவம் வாய்ந்த சட்ட/உண்மை ஆலோசனையைப் பெற", "நிலுவையிலுள்ள வழக்கில் முழுமையான நீதியை (Complete Justice) வழங்க"],
+          ["அமர்வு தேவை", "குறைந்தபட்சம் 5 நீதிபதிகள் கொண்ட அரசியலமைப்பு அமர்வு விசாரிக்க வேண்டும்", "வழக்கை விசாரிக்கும் அமர்வால் பிறப்பிக்கப்படும்"]
+        ]
+      },
+      {
+        "id": "tbl_prohibition_vs_certiorari_p2",
+        "title_en": "6. Prohibition vs Certiorari Writs Comparison",
+        "title_ta": "6. தடையுறுத்தும் vs ஆவணக் கேட்புப் பேராணைகள் ஒப்பீடு",
+        "headers_en": ["Parameter", "Prohibition Writ", "Certiorari Writ"],
+        "headers_ta": ["அளவுரு", "தடையுறுத்தும் பேராணை (Prohibition)", "ஆவணக் கேட்புப் பேராணை (Certiorari)"],
+        "rows_en": [
+          ["Nature of Remedy", "PREVENTIVE ONLY ('Prevention is better than cure')", "Both PREVENTIVE and CURATIVE"],
+          ["Timing of Issue", "Issued WHILE proceedings are pending in lower court", "Issued AFTER order/judgment has been passed by lower court"],
+          ["Objective", "Prevents lower court from exceeding jurisdiction", "Quashes order passed without or in excess of jurisdiction"],
+          ["Scope Expansion", "Issued ONLY against Judicial and Quasi-Judicial bodies", "Issued against Judicial, Quasi-Judicial AND Administrative bodies (since 1991)"]
+        ],
+        "rows_ta": [
+          ["பரிகாரத்தின் தன்மை", "தடுப்பு மட்டுமே ('வருமுன் காப்பதே சிறந்தது')", "தடுப்பு மற்றும் நிவர்த்தி இரண்டுமே"],
+          ["வழங்கும் நேரம்", "கீழ் நீதிமன்றத்தில் வழக்கு நிலுவையில் இருக்கும் போதே", "கீழ் நீதிமன்றம் உத்தரவு/தீர்ப்பு வழங்கிய பின்"],
+          ["நோக்கம்", "கீழ் நீதிமன்றம் தன் அதிகார வரம்பை மீறுவதைத் தடுக்கிறது", "அதிகார வரம்பின்றி பிறப்பிக்கப்பட்ட உத்தரவை ரத்து செய்கிறது"],
+          ["எல்லை விரிவாக்கம்", "நீதித்துறை மற்றும் பகுதி-நீதித்துறை அமைப்புகளுக்கு மட்டுமே", "நீதித்துறை, பகுதி-நீதித்துறை மற்றும் நிர்வாக அமைப்புகளுக்கும் பொருந்தும் (1991 முதல்)"]
+        ]
+      },
+      {
+        "id": "tbl_habeas_vs_mandamus_p2",
+        "title_en": "7. Habeas Corpus vs Mandamus Writs Comparison",
+        "title_ta": "7. ஆட்கொணர்வு vs கட்டளையுறுத்தும் பேராணைகள் ஒப்பீடு",
+        "headers_en": ["Feature", "Habeas Corpus Writ", "Mandamus Writ"],
+        "headers_ta": ["அம்சம்", "ஆட்கொணர்வுப் பேராணை (Habeas Corpus)", "கட்டளையுறுத்தும் பேராணை (Mandamus)"],
+        "rows_en": [
+          ["Literal Meaning", "'To have the body of'", "'We Command'"],
+          ["Primary Target", "Against illegal detention of a person", "Against non-performance of mandatory legal duty by public official"],
+          ["Private Individuals", "CAN be issued against private individuals as well as public authorities", "CANNOT be issued against private individuals"],
+          ["Exempted Authorities", "No executive exemption for illegal detention", "Exempted: Cannot be issued against President or State Governors"]
+        ],
+        "rows_ta": [
+          ["நேரடிப் பொருள்", "'உடலைக் கொண்டு வா'", "'நாங்கள் கட்டளையிடுகிறோம்'"],
+          ["முதன்மை இலக்கு", "ஒரு நபரின் சட்டவிரோதக் காவலுக்கு எதிராக", "பொது அதிகாரி தனது சட்டப்பூர்வக் கடமையைச் செய்யாததற்கு எதிராக"],
+          ["தனிநபர்கள் நிலை", "அரசு அதிகாரிகள் மற்றும் தனிநபர்களுக்கும் எதிராகப் பிறப்பிக்கலாம்", "தனிநபர்களுக்கு எதிராகப் பிறப்பிக்க முடியாது"],
+          ["விலக்களிக்கப்பட்ட அதிகாரிகள்", "சட்டவிரோதக் காவலுக்கு நிர்வாக விலக்கு இல்லை", "விலக்கு: குடியரசுத் தலைவர் அல்லது மாநில ஆளுநர்களுக்கு எதிராகப் பிறப்பிக்க முடியாது"]
+        ]
+      },
+      {
+        "id": "tbl_court_of_record_p2",
+        "title_en": "8. Court of Record (Art 129) vs Ordinary Court of Appeal",
+        "title_ta": "8. பதிவு நீதிமன்றம் (விதி 129) vs சாதாரண மேல்முறையீட்டு நீதிமன்றம் ஒப்பீடு",
+        "headers_en": ["Aspect", "Court of Record (Article 129)", "Ordinary Court of Appeal"],
+        "headers_ta": ["கூறு", "பதிவு நீதிமன்றம் (உறுப்பு 129)", "சாதாரண மேல்முறையீட்டு நீதிமன்றம்"],
+        "rows_en": [
+          ["Evidentiary Value", "Records preserved for perpetual memory & unquestionable evidentiary value", "Records have standard case relevance"],
+          ["Contempt Power", "Inherently possesses power to punish for contempt of itself", "Does not inherently possess summary contempt powers unless specified"],
+          ["Constitutional Source", "Article 129 (Supreme Court) & Article 215 (High Courts)", "Provisions governing statutory appeals"],
+          ["Precedent Status", "Judgments constitute binding precedents for all subordinate courts (Art 141)", "Decisions bind only immediate parties unless law declaring court"]
+        ],
+        "rows_ta": [
+          ["சான்றாதார மதிப்பு", "நடவடிக்கைகள் நிரந்தர நினைவாகப் பாதுகாக்கப்பட்டு கேள்வி கேட்க முடியாத சான்றாதார மதிப்பு கொண்டவை", "பதிவேடுகள் வழக்கமான வழக்குத் தொடர்பைக் கொண்டவை"],
+          ["அவமதிப்பு அதிகாரம்", "தன் நீதிமன்ற அவமதிப்பிற்குத் தண்டிக்கும் அதிகாரம் இயல்பாகவே உண்டு", "சுருக்கமான அவமதிப்புத் தண்டனை அதிகாரம் இயல்பாக இல்லை"],
+          ["அரசியலமைப்பு ஆதாரம்", "உறுப்பு 129 (உச்ச நீதிமன்றம்) & உறுப்பு 215 (உயர் நீதிமன்றங்கள்)", "சட்டப்பூர்வ மேல்முறையீடுகளை ஒழுங்குபடுத்தும் விதிகள்"],
+          ["முன்னுதாரண நிலை", "தீர்ப்புகள் அனைத்துச் சார்பு நீதிமன்றங்களையும் கட்டுப்படுத்தும் முன்னுதாரணங்கள் (விதி 141)", "முடிவுகள் சம்மந்தப்பட்ட தரப்பினரை மட்டுமே கட்டுப்படுத்தும்"]
+        ]
+      },
+      {
+        "id": "tbl_sc_vs_hc_writ_p2",
+        "title_en": "9. Supreme Court vs High Court Writ Scope Comparison",
+        "title_ta": "9. உச்ச நீதிமன்றம் vs உயர் நீதிமன்ற பேராணை எல்லை ஒப்பீடு",
+        "headers_en": ["Feature", "Supreme Court Writ Jurisdiction (Art 32)", "High Court Writ Jurisdiction (Art 226)"],
+        "headers_ta": ["அம்சம்", "உச்ச நீதிமன்ற பேராணை எல்லை (விதி 32)", "உயர் நீதிமன்ற பேராணை எல்லை (விதி 226)"],
+        "rows_en": [
+          ["Remedy Status", "Article 32 IS ITSELF a Fundamental Right", "Article 226 is a Constitutional remedy, NOT a Fundamental Right"],
+          ["Enforcement Scope", "ONLY for enforcement of Fundamental Rights", "For Fundamental Rights AND 'for any other legal purpose'"],
+          ["Refusal Power", "SC CANNOT refuse to exercise Art 32 jurisdiction", "HC MAY refuse to issue writs (Discretionary remedy)"],
+          ["Territorial Reach", "Entire Territory of India", "Within State / UT territorial jurisdiction"]
+        ],
+        "rows_ta": [
+          ["பரிகார நிலை", "உறுப்பு 32 தானே ஒரு அடிப்படை உரிமையாகும்", "உறுப்பு 226 அரசியலமைப்புப் பரிகார விதி; அடிப்படை உரிமையல்ல"],
+          ["அமலாக்க எல்லை", "அடிப்படை உரிமைகளை அமல்படுத்த மட்டுமே", "அடிப்படை உரிமைகள் மற்றும் 'பிற சட்ட உரிமைகளுக்கும்'"],
+          ["மறுப்பு அதிகாரம்", "SC அதிகாரத்தைப் பயன்படுத்த மறுக்க முடியாது", "HC பேராணை பிறப்பிக்க மறுக்கலாம் (விருப்பவுரிமை பரிகாரம்)"],
+          ["நிலப்பரப்பு வரம்பு", "இந்தியா முழுவதற்கும் பொருந்தும்", "மாநில / யூனியன் பிரதேச எல்லைக்குள்"]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "Supreme Court Jurisdiction & Powers (Articles 129 to 147)",
+        "short_label": "Supreme Court Part 2",
+        "children": [
+          {
+            "title": "1. Original & Writ Jurisdiction",
+            "short_label": "Original & Writs",
+            "children": [
+              {"title": "Art 131 Original: Federal disputes; Art 135 Federal Court powers; Excludes Water (Art 262)", "short_label": "Art 131/135"},
+              {"title": "Art 32 Writs: 5 Writs; Art 139 Additional writ powers", "short_label": "Art 32/139"}
+            ]
+          },
+          {
+            "title": "2. Appellate & SLP Jurisdiction",
+            "short_label": "Appellate & SLP",
+            "children": [
+              {"title": "Appeals (Arts 132-135): Constitutional, Civil (30th Amend), Criminal; Art 134A HC Certificate", "short_label": "Appeals"},
+              {"title": "Art 136 SLP: Plenary discretionary power; Excludes Military Courts Martial", "short_label": "Art 136 SLP"}
+            ]
+          },
+          {
+            "title": "3. Review, Transfers & Advisory",
+            "short_label": "Review & Advisory",
+            "children": [
+              {"title": "Art 137 Review; Art 138 Enlargement; Art 139A Case Transfers; Art 140 Ancillary powers; Curative Petition", "short_label": "Arts 137-140"},
+              {"title": "Art 143 Advisory: Presidential reference; Non-binding; Art 145 Bench Rules", "short_label": "Art 143/145"}
+            ]
+          },
+          {
+            "title": "4. Court of Record & Complete Justice",
+            "short_label": "Record & Art 142",
+            "children": [
+              {"title": "Art 129 Court of Record: Contempt power; Art 141 Law binding on all courts", "short_label": "Art 129/141"},
+              {"title": "Art 142 Complete Justice; Art 144 Authorities in aid; Art 147 Interpretation", "short_label": "Arts 142/144/147"}
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": "1. Article 136 Military Court Exclusion Trap (SLP இராணுவ நீதிமன்ற விலக்குப் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Believing Special Leave Petition (SLP) under Article 136 can be filed against judgments of Military Courts Martial.",
+            "FACT: Article 136 explicitly EXCLUDES any judgment, determination, sentence, or order passed by any court or tribunal constituted under LAWS RELATING TO THE ARMED FORCES!"
+          ],
+          "ta": [
+            "பொறி: இராணுவ நீதிமன்றங்களின் (Courts Martial) தீர்ப்புகளுக்கு எதிராக உறுப்பு 136-ன் கீழ் சிறப்பு விடுப்பு மனு (SLP) தாக்கல் செய்ய முடியும் என நினைப்பது.",
+            "உண்மை: உறுப்பு 136 இராணுவச் சட்டங்களின் கீழ் அமைக்கப்பட்ட இராணுவ நீதிமன்றங்களின் தீர்ப்புகளை வெளிப்படையாக விலக்குகிறது!"
+          ]
+        }
+      },
+      {
+        "title": "2. Article 143 Non-Binding Advisory Trap (ஆலோசனை அபிப்பிராயக் கட்டுப்பாடுப் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Assuming the advisory opinion rendered by Supreme Court under Article 143 is binding on the President.",
+            "FACT: The opinion expressed by the Supreme Court under Article 143 is ONLY ADVISORY AND NOT BINDING on the President!"
+          ],
+          "ta": [
+            "பொறி: உறுப்பு 143-ன் கீழ் உச்ச நீதிமன்றம் அளிக்கும் ஆலோசனை அபிப்பிராயம் குடியரசுத் தலைவரைக் கட்டுப்படுத்தும் என நினைப்பது.",
+            "உண்மை: உறுப்பு 143-ன் கீழ் உச்ச நீதிமன்றம் அளிக்கும் கருத்து வெறும் ஆலோசனையே தவிர குடியரசுத் தலைவரைக் கட்டுப்படுத்தாது!"
+          ]
+        }
+      },
+      {
+        "title": "3. Article 32 vs Article 226 Scope Trap (பேராணை எல்லைக் குழப்பப் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Believing Supreme Court under Article 32 has wider subject jurisdiction than High Courts under Article 226.",
+            "FACT: High Courts under Article 226 have a WIDER subject jurisdiction because they can issue writs for Fundamental Rights AND ordinary legal rights, whereas Supreme Court under Article 32 can issue writs ONLY for Fundamental Rights!"
+          ],
+          "ta": [
+            "பொறி: உறுப்பு 32-ன் கீழ் உச்ச நீதிமன்றத்திற்கு உறுப்பு 226 கீழ் உயர் நீதிமன்றங்களை விட பரந்த பாட ஆதிக்கம் உள்ளது என நினைப்பது.",
+            "உண்மை: உயர் நீதிமன்றங்களுக்கு உறுப்பு 226-ன் கீழ் பரந்த பாட ஆதிக்கம் உள்ளது!"
+          ]
+        }
+      },
+      {
+        "title": "4. Article 131 Inter-State Water Dispute Trap (நதிநீர் தகராறு மூல ஆதிக்கப் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Thinking Inter-State Water Disputes are decided by Supreme Court under Article 131 Original Jurisdiction.",
+            "FACT: Inter-State Water Disputes under Article 262 are EXPLICITLY EXCLUDED from Article 131 Original Jurisdiction!"
+          ],
+          "ta": [
+            "பொறி: மாநிலங்களுக்கு இடையிலான நதிநீர் தகராறுகள் உறுப்பு 131 மூல ஆதிக்கத்தின் கீழ் உச்ச நீதிமன்றத்தால் தீர்க்கப்படுகின்றன என நினைப்பது.",
+            "உண்மை: உறுப்பு 262-ன் கீழ் நதிநீர் தகராறுகள் உறுப்பு 131 மூல ஆதிக்கத்திலிருந்து வெளிப்படையாக விலக்கப்பட்டுள்ளன!"
+          ]
+        }
+      },
+      {
+        "title": "5. Quo-Warranto Locus Standi Trap (தகுதி வினவும் பேராணை Locus Standi பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Believing only an aggrieved person whose personal legal right is violated can file a petition for Quo-Warranto.",
+            "FACT: Quo-Warranto is a unique exception where ANY INTERESTED PERSON can move the court!"
+          ],
+          "ta": [
+            "பொறி: பாதிக்கப்பட்ட நபர் மட்டுமே தகுதி வினவும் பேராணையைத் தாக்கல் செய்ய முடியும் என நினைப்பது.",
+            "உண்மை: தகுதி வினவும் பேராணையில் எந்தவொரு ஆர்வமுள்ள நபரும் நீதிமன்றத்தை அணுகலாம்!"
+          ]
+        }
+      }
+    ],
+    "quick_revision": {
+      "en": [
+        "Original Jurisdiction: Article 131 (Federal disputes). Article 135 (Federal Court pre-Constitution powers). Excludes Water Disputes (Art 262).",
+        "Writ Jurisdiction: Article 32 (Guarantor of FRs). Article 139 (Additional writ powers conferred by Parliament). SC issues writs ONLY for FRs.",
+        "Appellate Jurisdiction: Articles 132 (Constitutional), 133 (Civil - 30th Amend), 134 (Criminal), 134A (HC Certificate), 136 (SLP - Excludes Military Courts Martial).",
+        "Review & Transfers: Article 137 (Review), Article 138 (Enlargement), Article 139A (Case Transfers between HCs), Article 140 (Ancillary powers). Curative Petition (Rupa Hurra 2002).",
+        "Advisory Jurisdiction: Article 143 (Presidential reference; non-binding). Article 145 (Rules of Court & min 5 Judges Bench).",
+        "Court of Record & Authorities: Article 129 (Contempt), Article 141 (Binding law), Article 142 (Complete Justice), Article 144 (Authorities in aid of SC), Article 147 (Interpretation)."
+      ],
+      "ta": [
+        "மூல ஆதிக்கம்: உறுப்பு 131 (கூட்டாட்சித் தகராறுகள்). உறுப்பு 135 (கூட்டாட்சி நீதிமன்ற அதிகாரங்கள்). நதிநீர் தகராறுகள் (விதி 262) விலக்கு.",
+        "பேராணை ஆதிக்கம்: உறுப்பு 32 (அடிப்படை உரிமைகள் பாதுகாவலன்). உறுப்பு 139 (கூடுதல் பேராணை அதிகாரங்கள்). SC அடிப்படை உரிமைகளுக்கு மட்டுமே.",
+        "மேல்முறையீட்டு ஆதிக்கம்: உறுப்புகள் 132, 133, 134, 134A (HC சான்றிதழ்), 136 (SLP - இராணுவ நீதிமன்றங்கள் விலக்கு).",
+        "சீராய்வு & மாற்றங்கள்: உறுப்பு 137 (சீராய்வு), உறுப்பு 138 (ஆதிக்க விரிவாக்கம்), உறுப்பு 139A (வழக்குகள் மாற்றம்), உறுப்பு 140 (துணை அதிகாரங்கள்). நிவர்த்தி மனு.",
+        "ஆலோசனை ஆதிக்கம்: உறுப்பு 143 (குடியரசுத் தலைவர் குறிப்பு; கட்டுப்படுத்தாது). உறுப்பு 145 (நீதிமன்ற விதிகள் & குறைந்தபட்சம் 5 நீதிபதிகள் அமர்வு).",
+        "பதிவு நீதிமன்றம் & அமைப்புகள்: உறுப்பு 129 (அவமதிப்பு), உறுப்பு 141 (கட்டுப்படுத்தும் சட்டம்), உறுப்பு 142 (முழுமையான நீதி), உறுப்பு 144 (உதவியாக செயல்படும் அமைப்புகள்), உறுப்பு 147 (விளக்கம்)."
+      ]
+    },
+    "must_remember": {
+      "en": [
+        "MUST REMEMBER: Article 131 Original Jurisdiction applies ONLY to federal disputes.",
+        "MUST REMEMBER: Article 135 covers pre-Constitution Federal Court jurisdiction.",
+        "MUST REMEMBER: Article 139 empowers Parliament to confer additional writ powers on Supreme Court.",
+        "MUST REMEMBER: Article 134A governs High Court certificates for appeal to Supreme Court.",
+        "MUST REMEMBER: Article 136 (SLP) explicitly EXCLUDES Military Courts Martial.",
+        "MUST REMEMBER: Article 139A empowers SC to transfer cases between High Courts.",
+        "MUST REMEMBER: Article 140 empowers Parliament to confer ancillary powers on SC.",
+        "MUST REMEMBER: Article 144 mandates all civil and judicial authorities to act in aid of Supreme Court.",
+        "MUST REMEMBER: Article 145(3) requires a minimum 5-Judge Constitution Bench for Article 143 references.",
+        "MUST REMEMBER: Article 147 relates to constitutional interpretation references."
+      ],
+      "ta": [
+        "நினைவில் கொள்க: உறுப்பு 131 மூல ஆதிக்கம் கூட்டாட்சித் தகராறுகளுக்கு மட்டுமே பொருந்தும்.",
+        "நினைவில் கொள்க: உறுப்பு 135 கூட்டாட்சி நீதிமன்ற அதிகாரங்களை உள்ளடக்குகிறது.",
+        "நினைவில் கொள்க: உறுப்பு 139 உச்ச நீதிமன்றத்திற்கு கூடுதல் பேராணை அதிகாரங்களை வழங்க நாடாளுமன்றத்திற்கு அதிகாரமளிக்கிறது.",
+        "நினைவில் கொள்க: உறுப்பு 134A உயர் நீதிமன்ற மேல்முறையீட்டு சான்றிதழை ஒழுங்குபடுத்துகிறது.",
+        "நினைவில் கொள்க: உறுப்பு 136 (SLP) இராணுவ நீதிமன்றங்களை வெளிப்படையாக விலக்குகிறது.",
+        "நினைவில் கொள்க: உறுப்பு 139A உயர் நீதிமன்றங்களுக்கு இடையே வழக்குகளை மாற்ற உச்ச நீதிமன்றத்திற்கு அதிகாரமளிக்கிறது.",
+        "நினைவில் கொள்க: உறுப்பு 140 SC-க்கு துணை அதிகாரங்களை வழங்க நாடாளுமன்றத்திற்கு அதிகாரமளிக்கிறது.",
+        "நினைவில் கொள்க: உறுப்பு 144 அனைத்து சிவில் மற்றும் நீதித்துறை அதிகார அமைப்புகளும் உச்ச நீதிமன்றத்திற்கு உதவியாகச் செயல்பட வேண்டும் எனக் கூறுகிறது.",
+        "நினைவில் கொள்க: உறுப்பு 145(3) உறுப்பு 143 குறிப்புகளுக்குக் குறைந்தபட்சம் 5 நீதிபதிகள் கொண்ட அமர்வை கோருகிறது.",
+        "நினைவில் கொள்க: உறுப்பு 147 அரசியலமைப்பு விளக்கவுரைகளைக் குறிப்பிடுகிறது."
+      ]
+    }
+  }
+}
+
+target_file = "data/notes/polity/supreme_court_part_2.json"
+os.makedirs("data/notes/polity", exist_ok=True)
+
+with open(target_file, "w", encoding="utf-8") as f:
+  json.dump(part2_data, f, ensure_ascii=False, indent=2)
+
+print(f"✅ Supreme Court Part 2 updated with Articles 135, 138, 139, 139A, 140, 144, 145, 147 tags and saved to: {target_file}")

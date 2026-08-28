@@ -169,6 +169,14 @@ def get_topic_metadata_by_id(subject: str, topic_id_or_title: str) -> Dict[str, 
         if meta["repository_id"] == query or meta["repository_id"] == query_id:
             return meta
 
+    # 4. Flexible match on cleaned alpha-numeric title/id (e.g. matching variations like "Prime Minister – Part 1")
+    query_clean = re.sub(r"[^a-z0-9]", "", query.lower())
+    for meta in meta_list:
+        meta_id_clean = re.sub(r"[^a-z0-9]", "", meta["topic_id"].lower())
+        meta_title_clean = re.sub(r"[^a-z0-9]", "", meta["display_title"].lower())
+        if query_clean == meta_id_clean or query_clean == meta_title_clean:
+            return meta
+
     # Fallback auto-constructed metadata
     return _normalize_metadata(subj, query)
 

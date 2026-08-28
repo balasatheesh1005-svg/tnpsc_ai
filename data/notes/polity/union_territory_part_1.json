@@ -1,0 +1,1034 @@
+{
+  "meta": {
+    "topic_id": "polity_union_territory_part_1",
+    "repository_id": "polity_union_territory",
+    "display_title": "Union and its Territory – Part 1",
+    "part": 1,
+    "total_parts": 3,
+    "subject": "polity",
+    "chapter": "Union and its Territory",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "topic_id": "polity_union_territory_part_1",
+    "repository_id": "polity_union_territory",
+    "display_title": "Union and its Territory – Part 1",
+    "part": 1,
+    "total_parts": 3,
+    "subject": "polity",
+    "chapter": "Union and its Territory",
+    "language": "English + Tamil"
+  },
+  "keywords": [
+    "Union and its Territory",
+    "இந்திய ஒன்றியம் மற்றும் அதன் ஆட்சி நிலப்பரப்பு",
+    "Article 1 India that is Bharat",
+    "உறுப்பு 1 இந்தியா என்னும் பாரதம்",
+    "Union of States vs Federation",
+    "மாநிலங்களின் ஒன்றியம் vs கூட்டாட்சி",
+    "Territory of India vs Union of India",
+    "இந்திய ஆட்சி நிலப்பரப்பு vs இந்திய ஒன்றியம்",
+    "Article 2 Admission of New States",
+    "உறுப்பு 2 புதிய மாநிலங்களைச் சேர்த்தல்",
+    "Article 3 Reorganisation of Existing States",
+    "உறுப்பு 3 இருக்கும் மாநிலங்களின் மறுசீரமைப்பு",
+    "President Recommendation State Views",
+    "குடியரசுத் தலைவர் பரிந்துரை மாநிலக் கருத்துகள்",
+    "Article 4 Simple Majority Non-368 Amendment",
+    "உறுப்பு 4 சாதாரண பெரும்பான்மை 368 அல்லாத திருத்தம்",
+    "Indestructible Union of Destructible States",
+    "அழிக்கக்கூடிய மாநிலங்களின் அழிக்க முடியாத ஒன்றியம்",
+    "TNPSC Group 1 Polity Notes"
+  ],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [
+        "Understand Article 1: 'India, that is Bharat, shall be a Union of States' (Part I of the Constitution).",
+        "Differentiate between 'Union of India' (States only) and 'Territory of India' (States + UTs + Acquired Territories).",
+        "Analyze why Dr. B.R. Ambedkar chose 'Union of States' over 'Federation of States' (No agreement among sovereign states; No right to secede).",
+        "Understand Article 2: Parliament's power to admit into the Union or establish new States (external territories).",
+        "Understand Article 3: Parliament's power to form new States, increase/diminish area, and alter boundaries or names of existing States (internal reorganisation).",
+        "Master the constitutional procedure under Article 3: Presidential recommendation and referral of Bill to State Legislature for views.",
+        "Master the high-yield TNPSC distinction: State Legislature's views are consultative and NOT binding on Parliament (Views ≠ Consent/Veto).",
+        "Understand Article 4: Laws under Articles 2 & 3 modifying First and Fourth Schedules are passed by simple majority and are NOT Article 368 amendments."
+      ],
+      "ta": [
+        "உறுப்பு 1-ஐப் புரிந்துகொள்ளுதல்: 'இந்தியா என்னும் பாரதம் மாநிலங்களின் ஒன்றியமாக இருக்கும்' (அரசியலமைப்பின் பகுதி I).",
+        "'இந்திய ஒன்றியம்' (மாநிலங்கள் மட்டுமே) மற்றும் 'இந்திய ஆட்சி நிலப்பரப்பு' (மாநிலங்கள் + யூனியன் பிரதேசங்கள் + கையகப்படுத்தப்பட்ட நிலப்பரப்புகள்) ஆகியவற்றை வேறுபடுத்துதல்.",
+        "டாக்டர் பி.ஆர். அம்பேத்கர் 'மாநிலங்களின் கூட்டாட்சி' என்பதற்குப் பதிலாக 'மாநிலங்களின் ஒன்றியம்' என்பதை ஏன் தேர்வு செய்தார் என்பதை ஆராய்தல் (ஒப்பந்தத்தால் உருவானதல்ல; பிரிந்து செல்லும் உரிமையில்லை).",
+        "உறுப்பு 2-ஐப் புரிந்துகொள்ளுதல்: புதிய மாநிலங்களை ஒன்றியத்தில் சேர்த்துக் கொள்ள அல்லது நிறுவுவதற்கான நாடாளுமன்றத்தின் அதிகாரம் (வெளிப்புற நிலப்பரப்புகள்).",
+        "உறுப்பு 3-ஐப் புரிந்துகொள்ளுதல்: இருக்கும் மாநிலங்களின் எல்லையை, பரப்பை, பெயரை மாற்ற அல்லது புதிய மாநிலத்தை உருவாக்க நாடாளுமன்றத்தின் அதிகாரம் (உட்புற மறுசீரமைப்பு).",
+        "உறுப்பு 3-ன் கீழ் அரசியலமைப்பு நடைமுறையில் தேர்ச்சி பெறுதல்: குடியரசுத் தலைவரின் பரிந்துரை மற்றும் கருத்துகளுக்காக மாநில சட்டமன்றத்திற்கு மசோதாவை அனுப்புதல்.",
+        "முக்கியத் தேர்வு வேறுபாட்டில் தேர்ச்சி பெறுதல்: மாநில சட்டமன்றத்தின் கருத்துகள் ஆலோசனையானவை மட்டுமே; நாடாளுமன்றத்தைக் கட்டுப்படுத்தாது (கருத்துகள் ≠ ஒப்புதல்/வீட்டோ).",
+        "உறுப்பு 4-ஐப் புரிந்துகொள்ளுதல்: முதலாவது மற்றும் நான்காவது அட்டவணைகளை மாற்றும் உறுப்புகள் 2 & 3-ன் கீழ் உள்ள சட்டங்கள் சாதாரண பெரும்பான்மையால் நிறைவேற்றப்படுகின்றன; அவை விதி 368 அரசியலமைப்பு திருத்தங்கள் அல்ல."
+      ]
+    },
+    "Remember": {
+      "en": [
+        "Remember Article 1 describes India as a 'Union of States' rather than a 'Federation of States'.",
+        "Remember 'Territory of India' is a wider expression than 'Union of India'.",
+        "Remember Article 2 applies to admission/establishment of NEW states (external).",
+        "Remember Article 3 applies to reorganisation of EXISTING states (internal).",
+        "Remember Article 3 Bill requires PRIOR recommendation of the President.",
+        "Remember Parliament is NOT bound by the views of the State Legislature under Article 3.",
+        "Remember Article 4 specifies that Article 2 and 3 laws are NOT constitutional amendments under Article 368.",
+        "Remember India is described as an 'Indestructible Union of destructible States'."
+      ],
+      "ta": [
+        "இந்தியா 'மாநிலங்களின் கூட்டாட்சி' என்பதற்குப் பதிலாக 'மாநிலங்களின் ஒன்றியம்' என விவரிக்கப்படுகிறது என்பதை நினைவில் கொள்க.",
+        "'இந்திய ஆட்சி நிலப்பரப்பு' என்பது 'இந்திய ஒன்றியம்' என்பதை விடப் பரந்த சொல் என்பதை நினைவில் கொள்க.",
+        "உறுப்பு 2 புதிய மாநிலங்களைச் சேர்ப்பதற்குப் பொருந்தும் (வெளிப்புறம்) என்பதை நினைவில் கொள்க.",
+        "உறுப்பு 3 இருக்கும் மாநிலங்களை மறுசீரமைப்பதற்குப் பொருந்தும் (உட்புறம்) என்பதை நினைவில் கொள்க.",
+        "உறுப்பு 3 மசோதாவிற்கு குடியரசுத் தலைவரின் முன் பரிந்துரை தேவை என்பதை நினைவில் கொள்க.",
+        "உறுப்பு 3-ன் கீழ் மாநில சட்டமன்றத்தின் கருத்துகளுக்கு நாடாளுமன்றம் கட்டுப்படாது என்பதை நினைவில் கொள்க.",
+        "உறுப்புகள் 2 & 3 சட்டங்கள் விதி 368-ன் கீழ் அரசியலமைப்பு திருத்தங்கள் அல்ல என உறுப்பு 4 கூறுகிறது என்பதை நினைவில் கொள்க.",
+        "இந்தியா 'அழிக்கக்கூடிய மாநிலங்களின் அழிக்க முடியாத ஒன்றியம்' என விவரிக்கப்படுகிறது என்பதை நினைவில் கொள்க."
+      ]
+    }
+  },
+  "subject": "polity",
+  "topic": "Union and its Territory",
+  "language": "English + Tamil",
+  "ui_type": "standard_notes",
+  "sections": [
+    {
+      "id": "sec_ut_art1_union_vs_territory",
+      "title_en": "1. Article 1 — Name, Union of States & Territory of India",
+      "title_ta": "1. உறுப்பு 1 — பெயர், மாநிலங்களின் ஒன்றியம் & இந்திய ஆட்சி நிலப்பரப்பு",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_ut_meaning_union_of_states",
+      "title_en": "2. Meaning of 'Union of States' vs Federation (Ambedkar's Doctrine)",
+      "title_ta": "2. 'மாநிலங்களின் ஒன்றியம்' என்பதன் பொருள் vs கூட்டாட்சி (அம்பேத்கரின் கோட்பாடு)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_ut_art2_admission_new_states",
+      "title_en": "3. Article 2 — Admission or Establishment of New States (External)",
+      "title_ta": "3. உறுப்பு 2 — புதிய மாநிலங்களைச் சேர்த்தல் அல்லது நிறுவுதல் (வெளிப்புறம்)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_ut_art3_reorganisation_existing_states",
+      "title_en": "4. Article 3 — Reorganisation of Existing States (Internal)",
+      "title_ta": "4. உறுப்பு 3 — இருக்கும் மாநிலங்களின் மறுசீரமைப்பு (உட்புறம்)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_ut_art3_procedure_president_state_views",
+      "title_en": "5. Constitutional Procedure under Article 3 — Presidential Recommendation & State Views",
+      "title_ta": "5. உறுப்பு 3-ன் கீழ் அரசியலமைப்பு நடைமுறை — குடியரசுத் தலைவர் பரிந்துரை & மாநிலக் கருத்துகள்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_ut_art4_non_368_amendment",
+      "title_en": "6. Article 4 — Laws under Articles 2 & 3 are Not Article 368 Amendments",
+      "title_ta": "6. உறுப்பு 4 — உறுப்புகள் 2 & 3-ன் கீழ் உள்ள சட்டங்கள் விதி 368 திருத்தங்கள் அல்ல",
+      "type": "standard_topic"
+    },
+    {
+      "id": "comparison_tables",
+      "title_en": "7. Mandatory Comparison Tables (8 Tables)",
+      "title_ta": "7. கட்டாய ஒப்பீட்டு அட்டவணைகள் (8 அட்டவணைகள்)",
+      "type": "comparison"
+    },
+    {
+      "id": "mind_map",
+      "title_en": "8. Mind Map, TNPSC Tips & Trap Analysis",
+      "title_ta": "8. மன வரைபடம், டிஎன்பிஎஸ்சி குறிப்புகள் & பொறிப் பகுப்பாய்வு",
+      "type": "mind_map"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "Part 1 of Union and its Territory notes covers Part I of the Constitution (Articles 1 to 4). It explains the expression 'India, that is Bharat', the legal distinction between 'Union of India' and 'Territory of India', Article 2 (admission/establishment of external new states), Article 3 (internal reorganisation of existing states), Presidential recommendation, State Legislature views, and Article 4 (simple majority non-368 amendment mechanism).",
+      "ta": "இந்திய ஒன்றியம் மற்றும் அதன் ஆட்சி நிலப்பரப்பு குறிப்புகளின் பகுதி 1, அரசியலமைப்பின் பகுதி I (உறுப்புகள் 1 முதல் 4 வரை) விவரிக்கிறது. இதில் 'இந்தியா என்னும் பாரதம்' என்ற தொடர், 'இந்திய ஒன்றியம்' மற்றும் 'இந்திய ஆட்சி நிலப்பரப்பு' இடையிலான சட்ட வேறுபாடு, உறுப்பு 2 (வெளிப்புறப் புதிய மாநிலங்களைச் சேர்த்தல்/நிறுவுதல்), உறுப்பு 3 (இருக்கும் மாநிலங்களின் உட்புற மறுசீரமைப்பு), குடியரசுத் தலைவரின் பரிந்துரை, மாநில சட்டமன்றக் கருத்துகள் மற்றும் உறுப்பு 4 (சாதாரண பெரும்பான்மை 368 அல்லாத திருத்த முறை) ஆகியவை அடங்கும்."
+    },
+    "introduction": {
+      "en": "Part I of the Constitution of India titled 'The Union and its Territory' comprises Articles 1 to 4. Article 1 defines the name and territory of the Union. Article 2 empowers Parliament to admit or establish new States from outside India. Article 3 empowers Parliament to reorganisation existing Indian States internally. Article 4 clarifies that laws made under Articles 2 and 3 are passed by simple majority and do not require constitutional amendments under Article 368.",
+      "ta": "இந்திய அரசியலமைப்பின் பகுதி I 'ஒன்றியமும் அதன் ஆட்சி நிலப்பரப்பும்' என்ற தலைப்பில் உறுப்புகள் 1 முதல் 4 வரை உள்ளடக்கிக் கொண்டுள்ளது. உறுப்பு 1 ஒன்றியத்தின் பெயர் மற்றும் ஆட்சி நிலப்பரப்பை வரையறுக்கிறது. உறுப்பு 2 இந்தியாவுக்கு வெளியே உள்ள புதிய மாநிலங்களைச் சேர்க்க அல்லது நிறுவ நாடாளுமன்றத்திற்கு அதிகாரம் அளிக்கிறது. உறுப்பு 3 இந்தியாவில் உள்ள இருக்கும் மாநிலங்களை உட்புறமாக மறுசீரமைக்க நாடாளுமன்றத்திற்கு அதிகாரம் அளிக்கிறது. உறுப்பு 4, உறுப்புகள் 2 மற்றும் 3-ன் கீழ் செய்யப்படும் சட்டங்கள் சாதாரண பெரும்பான்மையால் நிறைவேற்றப்படும் என்றும் உறுப்பு 368-ன் கீழ் அரசியலமைப்பு திருத்தமாகப் கருதப்படாது என்றும் தெளிவுபடுத்துகிறது."
+    },
+    "sec_ut_art1_union_vs_territory": [
+      {
+        "title_en": "Article 1 — Name, Union of States & Categories of Territory",
+        "title_ta": "உறுப்பு 1 — பெயர், மாநிலங்களின் ஒன்றியம் & ஆட்சி நிலப்பரப்பு வகைகள்",
+        "points": {
+          "en": [
+            "Article 1(1): 'India, that is Bharat, shall be a Union of States.'",
+            "Dual Names Incorporated: The Constituent Assembly adopted both traditional 'Bharat' and modern 'India'.",
+            "Three Categories of Territory of India (Article 1(3)):",
+            "  1. Territories of the States (28 States at present).",
+            "  2. Union Territories specified in the First Schedule (8 UTs at present).",
+            "  3. Such other territories as may be acquired by India at any time (e.g., Pondicherry, Goa, Dadra & Nagar Haveli acquired post-1950).",
+            "CRITICAL TNPSC DISTINCTION — 'Union of India' vs 'Territory of India':",
+            "  • 'Union of India': Narrower expression; includes ONLY the States which are members of the federal system.",
+            "  • 'Territory of India': Wider expression; includes States + Union Territories + Acquired Territories."
+          ],
+          "ta": [
+            "உறுப்பு 1(1): 'இந்தியா என்னும் பாரதம், மாநிலங்களின் ஒன்றியமாக இருக்கும்.'",
+            "இரட்டைப் பெயர்கள் சேர்க்கை: அரசியலமைப்பு நிர்ணய சபை பாரம்பரிய 'பாரதம்' மற்றும் நவீன 'இந்தியா' ஆகிய இரண்டையும் ஏற்றுக்கொண்டது.",
+            "இந்திய ஆட்சி நிலப்பரப்பின் மூன்று பிரிவுகள் (உறுப்பு 1(3)):",
+            "  1. மாநிலங்களின் ஆட்சி நிலப்பரப்புகள் (தற்போது 28 மாநிலங்கள்).",
+            "  2. முதலாவது அட்டவணையில் குறிப்பிடப்பட்டுள்ள யூனியன் பிரதேசங்கள் (தற்போது 8 யூனியன் பிரதேசங்கள்).",
+            "  3. எந்த நேரத்திலும் இந்தியாவால் கையகப்படுத்தப்படக்கூடிய பிற நிலப்பரப்புகள் (எ.கா: 1950க்குப் பின் கையகப்படுத்தப்பட்ட பாண்டிச்சேரி, கோவா, தாத்ரா & நாகர் ஹவேலி).",
+            "முக்கியத் தேர்வு வேறுபாடு — 'இந்திய ஒன்றியம்' vs 'இந்திய ஆட்சி நிலப்பரப்பு':",
+            "  • 'இந்திய ஒன்றியம்' (Union of India): குறுகிய சொல்; கூட்டாட்சி அமைப்பின் உறுப்பினர்களாக உள்ள மாநிலங்களை மட்டுமே உள்ளடக்கியது.",
+            "  • 'இந்திய ஆட்சி நிலப்பரப்பு' (Territory of India): பரந்த சொல்; மாநிலங்கள் + யூனியன் பிரதேசங்கள் + கையகப்படுத்தப்பட்ட நிலப்பரப்புகளை உள்ளடக்கியது."
+          ]
+        }
+      }
+    ],
+    "sec_ut_meaning_union_of_states": [
+      {
+        "title_en": "Meaning of 'Union of States' vs Federation (Dr. Ambedkar's Doctrine)",
+        "title_ta": "'மாநிலங்களின் ஒன்றியம்' என்பதன் பொருள் vs கூட்டாட்சி (அம்பேத்கரின் கோட்பாடு)",
+        "points": {
+          "en": [
+            "Why 'Union of States' and NOT 'Federation of States'?",
+            "Dr. B.R. Ambedkar explained two primary constitutional reasons in the Constituent Assembly:",
+            "  1. Not an Agreement: The Indian Federation is NOT the result of an agreement among sovereign states (unlike the American Federation).",
+            "  2. No Right to Secede: The States have NO right to secede or break away from the Union. The Federation is a Union because it is indestructible.",
+            "Indestructible Union of Destructible States:",
+            "  • India is an 'Indestructible Union of destructible States'.",
+            "  • Parliament can alter boundaries, area, or names of States (destructible states), but States cannot destroy or secede from the Union (indestructible union).",
+            "  • In contrast, USA is an 'Indestructible Union of indestructible States' (US Congress cannot alter state boundaries without state consent)."
+          ],
+          "ta": [
+            "'மாநிலங்களின் கூட்டாட்சி' என்பதற்குப் பதிலாக 'மாநிலங்களின் ஒன்றியம்' ஏன்?",
+            "டாக்டர் பி.ஆர். அம்பேத்கர் அரசியலமைப்பு நிர்ணய சபையில் இரண்டு முக்கிய அரசியலமைப்புக் காரணங்களை விளக்கினார்:",
+            "  1. ஒப்பந்தத்தால் உருவானதல்ல: இந்தியக் கூட்டாட்சி என்பது இறையாண்மையுள்ள மாநிலங்களுக்கு இடையேயான ஒப்பந்தத்தின் முடிவால் உருவானதல்ல (அமெரிக்கக் கூட்டாட்சி போலல்லாமல்).",
+            "  2. பிரிந்து செல்லும் உரிமையில்லை: ஒன்றியத்திலிருந்து பிரிந்து செல்ல மாநிலங்களுக்கு எந்த உரிமையும் இல்லை. அழிக்க முடியாதது என்பதால் இது ஒன்றியம் எனப்படுகிறது.",
+            "அழிக்கக்கூடிய மாநிலங்களின் அழிக்க முடியாத ஒன்றியம்:",
+            "  • இந்தியா என்பது 'அழிக்கக்கூடிய மாநிலங்களின் அழிக்க முடியாத ஒன்றியம்' ஆகும்.",
+            "  • நாடாளுமன்றம் மாநிலங்களின் எல்லைகள், பரப்பு அல்லது பெயர்களை மாற்றலாம் (அழிக்கக்கூடிய மாநிலங்கள்), ஆனால் மாநிலங்கள் ஒன்றியத்தை அழிக்கவோ பிரிந்து செல்லவோ முடியாது (அழிக்க முடியாத ஒன்றியம்).",
+            "  • மாறாக, அமெரிக்கா என்பது 'அழிக்க முடியாத மாநிலங்களின் அழிக்க முடியாத ஒன்றியம்' ஆகும் (மாநில ஒப்புதலின்றி அமெரிக்கக் காங்கிரஸ் மாநில எல்லைகளை மாற்ற முடியாது)."
+          ]
+        }
+      }
+    ],
+    "sec_ut_art2_admission_new_states": [
+      {
+        "title_en": "Article 2 — Admission or Establishment of New States (External)",
+        "title_ta": "உறுப்பு 2 — புதிய மாநிலங்களைச் சேர்த்தல் அல்லது நிறுவுதல் (வெளிப்புறம்)",
+        "points": {
+          "en": [
+            "Article 2 Mandate: Parliament may by law admit into the Union, or establish, new States on such terms and conditions as it thinks fit.",
+            "Two Powers Granted to Parliament under Article 2:",
+            "  1. Power to admit into the Union new States (refers to admission of states already in existence outside India).",
+            "  2. Power to establish new States (refers to creation of states not previously in existence).",
+            "SCOPE OF ARTICLE 2: Article 2 relates specifically to the admission or establishment of new States that were NOT part of the Union of India previously.",
+            "Examples: Admission of Sikkim as an Associate State (35th Amendment 1974) and full State (36th Amendment 1975)."
+          ],
+          "ta": [
+            "உறுப்பு 2 கட்டளை: நாடாளுமன்றம் சட்டத்தின் மூலம் புதிய மாநிலங்களை ஒன்றியத்தில் சேர்க்கலாம் அல்லது தான் சரி எனக் கருதும் நிபந்தனைகளின் கீழ் நிறுவலாம்.",
+            "உறுப்பு 2-ன் கீழ் நாடாளுமன்றத்திற்கு வழங்கப்பட்ட இரண்டு அதிகாரங்கள்:",
+            "  1. புதிய மாநிலங்களை ஒன்றியத்தில் சேர்க்கும் அதிகாரம் (இந்தியாவிற்கு வெளியே ஏற்கனவே உள்ள மாநிலங்களைச் சேர்ப்பது).",
+            "  2. புதிய மாநிலங்களை நிறுவும் அதிகாரம் (முன்பு இல்லாத புதிய மாநிலங்களை உருவாக்குவது).",
+            "உறுப்பு 2-ன் எல்லை: உறுப்பு 2 என்பது ஏற்கனவே இந்திய ஒன்றியத்தின் பகுதியாக இல்லாத புதிய மாநிலங்களைச் சேர்ப்பதற்கு அல்லது நிறுவுவதற்கு மட்டுமே பொருந்தும்.",
+            "எடுத்துக்காட்டுகள்: சிக்கிம் இணை மாநிலமாகச் சேர்க்கப்படுதல் (35-வது திருத்தம் 1974) மற்றும் முழு மாநிலமாதல் (36-வது திருத்தம் 1975)."
+          ]
+        }
+      }
+    ],
+    "sec_ut_art3_reorganisation_existing_states": [
+      {
+        "title_en": "Article 3 — Reorganisation of Existing States (Internal)",
+        "title_ta": "உறுப்பு 3 — இருக்கும் மாநிலங்களின் மறுசீரமைப்பு (உட்புறம்)",
+        "points": {
+          "en": [
+            "Article 3 Mandate: Parliament may by law reorganise existing States within the Union of India.",
+            "Five Specific Powers under Article 3:",
+            "  (a) Form a new State by separation of territory from any State or by uniting two or more States or parts of States.",
+            "  (b) Increase the area of any State.",
+            "  (c) Diminish the area of any State.",
+            "  (d) Alter the boundaries of any State.",
+            "  (e) Alter the name of any State.",
+            "SCOPE OF ARTICLE 3: Article 3 relates exclusively to the internal reorganisation of existing States and Union Territories forming part of India."
+          ],
+          "ta": [
+            "உறுப்பு 3 கட்டளை: நாடாளுமன்றம் சட்டத்தின் மூலம் இந்திய ஒன்றியத்திற்குள் இருக்கும் மாநிலங்களை மறுசீரமைக்கலாம்.",
+            "உறுப்பு 3-ன் கீழ் 5 குறிப்பிட்ட அதிகாரங்கள்:",
+            "  (a) ஏதேனும் ஒரு மாநிலத்திலிருந்து நிலப்பரப்பைப் பிரித்து அல்லது இரண்டு/அதற்கு மேற்பட்ட மாநிலங்களை இணைத்துப் புதிய மாநிலத்தை உருவாக்குதல்.",
+            "  (b) எந்தவொரு மாநிலத்தின் பரப்பையும் அதிகரித்தல்.",
+            "  (c) எந்தவொரு மாநிலத்தின் பரப்பையும் குறைத்தல்.",
+            "  (d) எந்தவொரு மாநிலத்தின் எல்லைகளையும் மாற்றுதல்.",
+            "  (e) எந்தவொரு மாநிலத்தின் பெயரையும் மாற்றுதல்.",
+            "உறுப்பு 3-ன் எல்லை: உறுப்பு 3 என்பது இந்தியாவின் பகுதியாக இருக்கும் மாநிலங்கள் மற்றும் யூனியன் பிரதேசங்களின் உட்புற மறுசீரமைப்பிற்கு மட்டுமே பொருந்தும்."
+          ]
+        }
+      }
+    ],
+    "sec_ut_art3_procedure_president_state_views": [
+      {
+        "title_en": "Constitutional Procedure under Article 3 — Presidential Recommendation & State Views",
+        "title_ta": "உறுப்பு 3-ன் கீழ் அரசியலமைப்பு நடைமுறை — குடியரசுத் தலைவர் பரிந்துரை & மாநிலக் கருத்துகள்",
+        "points": {
+          "en": [
+            "Two Constitutional Conditions for Article 3 Bill:",
+            "  Condition 1: An Article 3 Bill can be introduced in either House of Parliament ONLY on the PRIOR RECOMMENDATION OF THE PRESIDENT.",
+            "  Condition 2: Where the Bill affects the area, boundaries, or name of any State, the President MUST refer the Bill to the concerned State Legislature for expressing its views within a specified period.",
+            "CRITICAL TNPSC TRAP — Views vs Consent / Veto:",
+            "  • Consultation, NOT Consent: Parliament or President is NOT bound by the views of the State Legislature. Parliament may accept or reject all or any of the views.",
+            "  • No Fresh Reference: If Parliament amends the Bill after receiving State views, NO fresh reference to the State Legislature is required.",
+            "  • Union Territories Exception: In case of Union Territories, no reference to UT Legislature is constitutionally required."
+          ],
+          "ta": [
+            "உறுப்பு 3 மசோதாவுக்கான இரண்டு அரசியலமைப்பு நிபந்தனைகள்:",
+            "  நிபந்தனை 1: உறுப்பு 3 மசோதாவை நாடாளுமன்றத்தின் எந்தவொரு அவையிலும் குடியரசுத் தலைவரின் முன் பரிந்துரையுடன் மட்டுமே அறிமுகப்படுத்த முடியும்.",
+            "  நிபந்தனை 2: மசோதா ஏதேனும் ஒரு மாநிலத்தின் பரப்பு, எல்லை அல்லது பெயரைப் பாதிக்கும் போது, குடியரசுத் தலைவர் குறிப்பிட்ட காலத்திற்குள் கருத்துகளைத் தெரிவிக்க அம்மசோதாவைச் சம்பந்தப்பட்ட மாநில சட்டமன்றத்திற்கு அனுப்ப வேண்டும்.",
+            "முக்கியத் தேர்வுப் பொறி — கருத்துகள் vs ஒப்புதல் / வீட்டோ:",
+            "  • ஆலோசனை மட்டுமே, ஒப்புதல் அல்ல: நாடாளுமன்றமோ குடியரசுத் தலைவரோ மாநில சட்டமன்றத்தின் கருத்துகளுக்குக் கட்டுப்பட்டவர்கள் அல்ல. நாடாளுமன்றம் கருத்துகளை ஏற்கலாம் அல்லது நிராகரிக்கலாம்.",
+            "  • புதிய அனுப்பல் தேவையில்லை: மாநிலக் கருத்துகளைப் பெற்ற பிறகு நாடாளுமன்றம் மசோதாவில் திருத்தம் செய்தால், மாநில சட்டமன்றத்திற்கு மீண்டும் அனுப்ப வேண்டிய அவசியமில்லை.",
+            "  • யூனியன் பிரதேசங்கள் விலக்கு: யூனியன் பிரதேசங்களின் விஷயத்தில், யூனியன் பிரதேச சட்டமன்றத்திற்கு அனுப்ப வேண்டிய கட்டாயம் இல்லை."
+          ]
+        }
+      }
+    ],
+    "sec_ut_art4_non_368_amendment": [
+      {
+        "title_en": "Article 4 — Laws under Articles 2 & 3 are Not Article 368 Amendments",
+        "title_ta": "உறுப்பு 4 — உறுப்புகள் 2 & 3-ன் கீழ் உள்ள சட்டங்கள் விதி 368 திருத்தங்கள் அல்ல",
+        "points": {
+          "en": [
+            "Article 4(1) Mandate: Laws made under Article 2 or Article 3 shall contain provisions for the amendment of the First Schedule (list of States & UTs) and Fourth Schedule (allocation of Rajya Sabha seats).",
+            "Article 4(2) Constitutional Rule: 'No such law as aforesaid shall be deemed to be an amendment of this Constitution for the purposes of Article 368.'",
+            "Legislative Majority Required: Laws under Articles 2 and 3 can be passed by PARLIAMENT BY A SIMPLE MAJORITY and simple legislative process (like an ordinary bill).",
+            "CRITICAL EXAM TRAP: Altering state boundaries or creating new states does NOT require a special majority or Article 368 constitutional amendment procedure!"
+          ],
+          "ta": [
+            "உறுப்பு 4(1) கட்டளை: உறுப்பு 2 அல்லது உறுப்பு 3-ன் கீழ் செய்யப்படும் சட்டங்கள் முதலாவது அட்டவணை (மாநிலங்கள் & UT-கள் பட்டியல்) மற்றும் நான்காவது அட்டவணை (மாநிலங்களவை இடங்கள் ஒதுக்கீடு) திருத்தங்களுக்கான விதிகளைக் கொண்டிருக்கும்.",
+            "உறுப்பு 4(2) அரசியலமைப்பு விதி: 'மேற்கூறிய எந்தவொரு சட்டமும் உறுப்பு 368-ன் நோக்கங்களுக்காக இந்த அரசியலமைப்பின் திருத்தமாகக் கருதப்படக் கூடாது.'",
+            "தேவைப்படும் சட்டமன்ற பெரும்பான்மை: உறுப்புகள் 2 மற்றும் 3-ன் கீழ் உள்ள சட்டங்கள் நாடாளுமன்றத்தால் சாதாரண பெரும்பான்மை (Simple Majority) மற்றும் சாதாரண நடைமுறை மூலம் நிறைவேற்றப்படலாம்.",
+            "முக்கியத் தேர்வுப் பொறி: மாநில எல்லைகளை மாற்றுவது அல்லது புதிய மாநிலங்களை உருவாக்குவது சிறப்பு பெரும்பான்மையையோ உறுப்பு 368 அரசியலமைப்பு திருத்த நடைமுறையையோ கோராது!"
+          ]
+        }
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "tbl_art2_vs_art3_p1",
+        "title_en": "1. Article 2 vs Article 3 Core Comparison",
+        "title_ta": "1. உறுப்பு 2 vs உறுப்பு 3 முதன்மை ஒப்பீடு",
+        "headers_en": [
+          "Comparison Dimension",
+          "Article 2 (External Admission)",
+          "Article 3 (Internal Reorganisation)"
+        ],
+        "headers_ta": [
+          "ஒப்பீட்டுப் பரிமாணம்",
+          "உறுப்பு 2 (வெளிப்புறச் சேர்க்கை)",
+          "உறுப்பு 3 (உட்புற மறுசீரமைப்பு)"
+        ],
+        "rows_en": [
+          [
+            "Territorial Scope",
+            "Relates to territories NOT currently part of India",
+            "Relates exclusively to existing States & UTs of India"
+          ],
+          [
+            "Primary Power",
+            "Admission or establishment of new States",
+            "Formation, area/boundary/name alteration of existing States"
+          ],
+          [
+            "Parliamentary Discretion",
+            "Terms and conditions as Parliament thinks fit",
+            "Procedure governed by Presidential recommendation & State views"
+          ],
+          [
+            "Key Example",
+            "Admission of Sikkim (36th Amendment 1975)",
+            "Bifurcation of Andhra Pradesh to form Telangana (2014)"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "ஆட்சி எல்லை",
+            "தற்போது இந்தியாவின் பகுதியாக இல்லாத நிலப்பரப்புகளுக்குப் பொருந்தும்",
+            "இந்தியாவின் இருக்கும் மாநிலங்கள் & UT-களுக்கு மட்டுமே பொருந்தும்"
+          ],
+          [
+            "முதன்மை அதிகாரம்",
+            "புதிய மாநிலங்களைச் சேர்த்தல் அல்லது நிறுவுதல்",
+            "இருக்கும் மாநிலங்களின் உருவாக்கம், பரப்பு/எல்லை/பெயர் மாற்றம்"
+          ],
+          [
+            "நாடாளுமன்ற விருப்பம்",
+            "நாடாளுமன்றம் சரி என நினைக்கும் நிபந்தனைகள்",
+            "குடியரசுத் தலைவர் பரிந்துரை & மாநிலக் கருத்துகள் சார்ந்த நடைமுறை"
+          ],
+          [
+            "முக்கிய எடுத்துக்காட்டு",
+            "சிக்கிம் சேர்க்கை (36-வது திருத்தம் 1975)",
+            "தெலங்கானாவை உருவாக்க ஆந்திரப் பிரதேசம் பிரிக்கப்படுதல் (2014)"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_union_vs_territory_p1",
+        "title_en": "2. Union of India vs Territory of India Comparison",
+        "title_ta": "2. இந்திய ஒன்றியம் vs இந்திய ஆட்சி நிலப்பரப்பு ஒப்பீடு",
+        "headers_en": [
+          "Parameter",
+          "Union of India (உள்ளடக்கிய ஒன்றியம்)",
+          "Territory of India (ஆட்சி நிலப்பரப்பு)"
+        ],
+        "headers_ta": [
+          "அளவுரு",
+          "இந்திய ஒன்றியம் (Union of India)",
+          "இந்திய ஆட்சி நிலப்பரப்பு (Territory of India)"
+        ],
+        "rows_en": [
+          [
+            "Expression Scope",
+            "Narrower constitutional expression",
+            "Wider constitutional expression"
+          ],
+          [
+            "Entities Included",
+            "Includes ONLY the 28 States (federal members)",
+            "Includes 28 States + 8 UTs + Acquired Territories"
+          ],
+          [
+            "Federal Rights",
+            "States share federal powers with Union",
+            "UTs and acquired territories are administered directly by Union"
+          ],
+          [
+            "Constitutional Article",
+            "Article 1(1)",
+            "Article 1(3)"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "சொல்லின் எல்லை",
+            "குறுகிய அரசியலமைப்புச் சொல்",
+            "பரந்த அரசியலமைப்புச் சொல்"
+          ],
+          [
+            "சேர்க்கப்பட்டுள்ள அமைப்புகள்",
+            "28 மாநிலங்களை மட்டுமே உள்ளடக்கியது",
+            "28 மாநிலங்கள் + 8 UT-கள் + கையகப்படுத்தப்பட்ட நிலப்பரப்புகள்"
+          ],
+          [
+            "கூட்டாட்சி உரிமைகள்",
+            "மாநிலங்கள் ஒன்றியத்துடன் கூட்டாட்சி அதிகாரங்களைப் பகிர்கின்றன",
+            "UT-கள் நேரடியாக ஒன்றியத்தால் நிர்வகிக்கப்படுகின்றன"
+          ],
+          [
+            "அரசியலமைப்பு விதி",
+            "உறுப்பு 1(1)",
+            "உறுப்பு 1(3)"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_views_vs_consent_p1",
+        "title_en": "3. State Legislature Views vs Consent Comparison",
+        "title_ta": "3. மாநில சட்டமன்றக் கருத்துகள் vs ஒப்புதல் ஒப்பீடு",
+        "headers_en": [
+          "Aspect",
+          "State Legislature Views (உறுப்பு 3)",
+          "Mandatory Legal Consent (ஒப்புதல்)"
+        ],
+        "headers_ta": [
+          "அம்சம்",
+          "மாநில சட்டமன்றக் கருத்துகள் (Views)",
+          "கட்டாயச் சட்டப்பூர்வ ஒப்புதல் (Consent)"
+        ],
+        "rows_en": [
+          [
+            "Legal Status",
+            "Consultative and advisory only",
+            "Legally binding condition precedent"
+          ],
+          [
+            "Binding Nature",
+            "Parliament can ACCEPT or REJECT views completely",
+            "Parliament CANNOT proceed without explicit consent"
+          ],
+          [
+            "Applicability in India",
+            "Applies to Indian States under Article 3",
+            "Applies to US States under US Constitution"
+          ],
+          [
+            "Veto Power",
+            "State Legislature has ZERO veto power over reorganisation",
+            "State Legislature holds absolute veto power"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "சட்ட நிலை",
+            "ஆலோசனை மற்றும் வழிகாட்டுதல் மட்டுமே",
+            "சட்டப்படி கட்டுப்படுத்தும் முதன்மை நிபந்தனை"
+          ],
+          [
+            "கட்டுப்படுத்தும் தன்மை",
+            "நாடாளுமன்றம் கருத்துகளை முழுமையாக ஏற்கலாம் அல்லது நிராகரிக்கலாம்",
+            "தெளிவான ஒப்புதலின்றி நாடாளுமன்றம் தொடர முடியாது"
+          ],
+          [
+            "இந்தியாவில் பயன்பாடு",
+            "உறுப்பு 3-ன் கீழ் இந்திய மாநிலங்களுக்குப் பொருந்தும்",
+            "அமெரிக்க அரசியலமைப்பின் கீழ் அமெரிக்க மாநிலங்களுக்குப் பொருந்தும்"
+          ],
+          [
+            "வீட்டோ அதிகாரம்",
+            "மறுசீரமைப்பில் மாநில சட்டமன்றத்திற்குப் பூஜ்ஜிய வீட்டோ அதிகாரம்",
+            "மாநில சட்டமன்றம் முழுமையான வீட்டோ அதிகாரத்தைக் கொண்டுள்ளது"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_art4_vs_art368_p1",
+        "title_en": "4. Article 4 Simple Majority Law vs Article 368 Amendment",
+        "title_ta": "4. உறுப்பு 4 சாதாரண பெரும்பான்மைச் சட்டம் vs உறுப்பு 368 திருத்தம்",
+        "headers_en": [
+          "Feature",
+          "Article 4 Law (Articles 2 & 3)",
+          "Article 368 Constitutional Amendment"
+        ],
+        "headers_ta": [
+          "அம்சம்",
+          "உறுப்பு 4 சட்டம் (உறுப்புகள் 2 & 3)",
+          "உறுப்பு 368 அரசியலமைப்பு திருத்தம்"
+        ],
+        "rows_en": [
+          [
+            "Majority Required",
+            "Simple Majority of members present and voting",
+            "Special Majority (2/3rd present & voting + majority of total membership)"
+          ],
+          [
+            "Constitutional Classification",
+            "NOT deemed to be an amendment under Art 368",
+            "Formal Constitutional Amendment Act"
+          ],
+          [
+            "Presidential Assent",
+            "Ordinary Presidential assent",
+            "Special Presidential assent mandated under Art 368"
+          ],
+          [
+            "Schedules Modified",
+            "Modifies First and Fourth Schedules directly",
+            "Modifies constitutional articles directly"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "தேவைப்படும் பெரும்பான்மை",
+            "வந்து வாக்களிக்கும் உறுப்பினர்களின் சாதாரண பெரும்பான்மை",
+            "சிறப்பு பெரும்பான்மை (2/3 வந்து வாக்களித்தல் + மொத்த உறுப்பினர்களில் பெரும்பான்மை)"
+          ],
+          [
+            "அரசியலமைப்பு வகைப்பாடு",
+            "விதி 368-ன் கீழ் திருத்தமாகக் கருதப்படாது",
+            "முறைப்படியான அரசியலமைப்பு திருத்தச் சட்டம்"
+          ],
+          [
+            "குடியரசுத் தலைவர் ஒப்புதல்",
+            "சாதாரண குடியரசுத் தலைவர் ஒப்புதல்",
+            "விதி 368-ன் கீழ் கட்டாயமாக்கப்பட்ட சிறப்பு ஒப்புதல்"
+          ],
+          [
+            "மாற்றப்படும் அட்டவணைகள்",
+            "முதலாவது மற்றும் நான்காவது அட்டவணைகளை நேரடியாக மாற்றுகிறது",
+            "அரசியலமைப்பு விதிகளையே நேரடியாக மாற்றுகிறது"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_indestructible_p1",
+        "title_en": "5. Indestructible Union Concept Comparison (India vs USA)",
+        "title_ta": "5. அழிக்க முடியாத ஒன்றியம் ஒப்பீடு (இந்தியா vs அமெரிக்கா)",
+        "headers_en": [
+          "Dimension",
+          "Indian Model (Article 1 to 4)",
+          "American Model (US Constitution)"
+        ],
+        "headers_ta": [
+          "காரணி",
+          "இந்திய மாதிரி (உறுப்புகள் 1 முதல் 4)",
+          "அமெரிக்க மாதிரி (அமெரிக்க அரசியலமைப்பு)"
+        ],
+        "rows_en": [
+          [
+            "Constitutional Formula",
+            "Indestructible Union of DESTRUCTIBLE States",
+            "Indestructible Union of INDESTRUCTIBLE States"
+          ],
+          [
+            "Territorial Integrity of States",
+            "States have NO guaranteed territorial integrity",
+            "States HAVE guaranteed territorial integrity"
+          ],
+          [
+            "State Consent for Boundary Alteration",
+            "Not required (Parliament can alter unilaterally)",
+            "Mandatory consent of state legislature required"
+          ],
+          [
+            "Right to Secede",
+            "NO right to secede from Union",
+            "NO right to secede from Union"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "அரசியலமைப்புச் சூத்திரம்",
+            "அழிக்கக்கூடிய மாநிலங்களின் அழிக்க முடியாத ஒன்றியம்",
+            "அழிக்க முடியாத மாநிலங்களின் அழிக்க முடியாத ஒன்றியம்"
+          ],
+          [
+            "மாநிலங்களின் நிலப்பரப்பு ஒருமைப்பாடு",
+            "மாநிலங்களுக்கு நிலப்பரப்பு ஒருமைப்பாடு உத்தரவாதம் இல்லை",
+            "மாநிலங்களுக்கு நிலப்பரப்பு ஒருமைப்பாடு உத்தரவாதம் உண்டு"
+          ],
+          [
+            "எல்லை மாற்றத்திற்கு மாநில ஒப்புதல்",
+            "தேவையில்லை (நாடாளுமன்றம் ஒருதலைப்பட்சமாக மாற்றலாம்)",
+            "மாநில சட்டமன்றத்தின் கட்டாய ஒப்புதல் தேவை"
+          ],
+          [
+            "பிரிந்து செல்லும் உரிமை",
+            "ஒன்றியத்திலிருந்து பிரிந்து செல்ல உரிமை இல்லை",
+            "ஒன்றியத்திலிருந்து பிரிந்து செல்ல உரிமை இல்லை"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_art1_to_4_summary_p1",
+        "title_en": "6. Articles 1 to 4 Complete Summary Table",
+        "title_ta": "6. உறுப்புகள் 1 முதல் 4 முழுமையான சுருக்க அட்டவணை",
+        "headers_en": [
+          "Article",
+          "Subject Matter",
+          "Key Takeaway for TNPSC"
+        ],
+        "headers_ta": [
+          "உறுப்பு",
+          "பொருள்",
+          "டிஎன்பிஎஸ்சி முக்கியக் குறிப்பு"
+        ],
+        "rows_en": [
+          [
+            "Article 1",
+            "Name and Territory of the Union",
+            "India, that is Bharat; Union of States; 3 categories of territory"
+          ],
+          [
+            "Article 2",
+            "Admission or Establishment of New States",
+            "External territories outside India admitted or established"
+          ],
+          [
+            "Article 3",
+            "Formation & Reorganisation of Existing States",
+            "Internal reorganisation (Form, Increase, Diminish, Boundaries, Name)"
+          ],
+          [
+            "Article 4",
+            "Laws under Articles 2 & 3 Supplemental Provisions",
+            "Passed by Simple Majority; NOT Article 368 amendments"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "உறுப்பு 1",
+            "ஒன்றியத்தின் பெயர் மற்றும் ஆட்சி நிலப்பரப்பு",
+            "இந்தியா என்னும் பாரதம்; மாநிலங்களின் ஒன்றியம்; 3 வகை ஆட்சி நிலப்பரப்பு"
+          ],
+          [
+            "உறுப்பு 2",
+            "புதிய மாநிலங்களைச் சேர்த்தல் அல்லது நிறுவுதல்",
+            "இந்தியாவிற்கு வெளியே உள்ள வெளிப்புற நிலப்பரப்புகள் சேர்ப்பு"
+          ],
+          [
+            "உறுப்பு 3",
+            "இருக்கும் மாநிலங்களின் உருவாக்கம் & மறுசீரமைப்பு",
+            "உட்புற மறுசீரமைப்பு (உருவாக்கம், பரப்பு அதிகரிப்பு/குறைப்பு, எல்லை, பெயர்)"
+          ],
+          [
+            "உறுப்பு 4",
+            "உறுப்புகள் 2 & 3-ன் கீழ் உள்ள சட்டங்களின் துணை விதிகள்",
+            "சாதாரண பெரும்பான்மையால் நிறைவேற்றம்; விதி 368 திருத்தங்கள் அல்ல"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_categories_territory_p1",
+        "title_en": "7. Three Categories of Territory of India (Article 1(3))",
+        "title_ta": "7. இந்திய ஆட்சி நிலப்பரப்பின் மூன்று பிரிவுகள் (உறுப்பு 1(3))",
+        "headers_en": [
+          "Category",
+          "Constitutional Definition",
+          "Governance Framework"
+        ],
+        "headers_ta": [
+          "பிரிவு",
+          "அரசியலமைப்பு வரைவிலக்கணம்",
+          "நிர்வாகக் கட்டமைப்பு"
+        ],
+        "rows_en": [
+          [
+            "Territories of States",
+            "28 States listed in the First Schedule",
+            "Federal division of powers between Union and State"
+          ],
+          [
+            "Union Territories",
+            "8 UTs specified in the First Schedule",
+            "Directly administered by Union through President / Administrator"
+          ],
+          [
+            "Acquired Territories",
+            "Foreign territories acquired by purchase, treaty, conquest",
+            "Administered directly by Union until constitutionally reorganized"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "மாநிலங்களின் நிலப்பரப்புகள்",
+            "முதலாவது அட்டவணையில் உள்ள 28 மாநிலங்கள்",
+            "ஒன்றியம் மற்றும் மாநிலத்திற்கு இடையிலான கூட்டாட்சி அதிகாரப் பகிர்வு"
+          ],
+          [
+            "யூனியன் பிரதேசங்கள்",
+            "முதலாவது அட்டவணையில் குறிப்பிடப்பட்டுள்ள 8 UT-கள்",
+            "குடியரசுத் தலைவர் / நிர்வாகி மூலம் ஒன்றியத்தால் நேரடி நிர்வாகம்"
+          ],
+          [
+            "கையகப்படுத்தப்பட்ட நிலப்பரப்புகள்",
+            "வாங்குதல், ஒப்பந்தம், வெற்றி மூலம் பெறப்பட்ட வெளிநாட்டு நிலப்பரப்புகள்",
+            "அரசியலமைப்புப்படி மறுசீரமைக்கப்படும் வரை ஒன்றியத்தால் நேரடி நிர்வாகம்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_five_powers_art3_p1",
+        "title_en": "8. Five Powers of Parliament under Article 3 Breakdown",
+        "title_ta": "8. உறுப்பு 3-ன் கீழ் நாடாளுமன்றத்தின் 5 அதிகாரங்களின் பகுப்பாய்வு",
+        "headers_en": [
+          "Sub-Clause",
+          "Specific Reorganisation Power",
+          "Practical Application Example"
+        ],
+        "headers_ta": [
+          "துணை விதி",
+          "குறிப்பிட்ட மறுசீரமைப்பு அதிகாரம்",
+          "நடைமுறைப் பயன்பாட்டு எடுத்துக்காட்டு"
+        ],
+        "rows_en": [
+          [
+            "Article 3(a)",
+            "Form a new State by separation or uniting territories",
+            "Carving out Telangana from Andhra Pradesh (2014)"
+          ],
+          [
+            "Article 3(b)",
+            "Increase the area of any State",
+            "Adding contiguous district/territory to a neighboring State"
+          ],
+          [
+            "Article 3(c)",
+            "Diminish the area of any State",
+            "Reducing state territory to form a new Union Territory"
+          ],
+          [
+            "Article 3(d)",
+            "Alter the boundaries of any State",
+            "Adjusting border enclave lines between two States"
+          ],
+          [
+            "Article 3(e)",
+            "Alter the name of any State",
+            "Renaming Uttaranchal to Uttarakhand (2006) / Orissa to Odisha (2011)"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "உறுப்பு 3(a)",
+            "பிரிப்பதன் மூலம் அல்லது இணைப்பதன் மூலம் புதிய மாநிலத்தை உருவாக்குதல்",
+            "ஆந்திரப் பிரதேசத்திலிருந்து தெலங்கானாவைப் பிரித்தல் (2014)"
+          ],
+          [
+            "உறுப்பு 3(b)",
+            "எந்தவொரு மாநிலத்தின் பரப்பையும் அதிகரித்தல்",
+            "அண்டை மாநிலத்துடன் மாவட்டத்தைச் சேர்த்தல்"
+          ],
+          [
+            "உறுப்பு 3(c)",
+            "எந்தவொரு மாநிலத்தின் பரப்பையும் குறைத்தல்",
+            "புதிய யூனியன் பிரதேசத்தை உருவாக்க மாநிலப் பரப்பைக் குறைத்தல்"
+          ],
+          [
+            "உறுப்பு 3(d)",
+            "எந்தவொரு மாநிலத்தின் எல்லைகளையும் மாற்றுதல்",
+            "இரண்டு மாநிலங்களுக்கு இடையேயான எல்லைக் கோடுகளைச் சரிசெய்தல்"
+          ],
+          [
+            "உறுப்பு 3(e)",
+            "எந்தவொரு மாநிலத்தின் பெயரையும் மாற்றுதல்",
+            "உத்தராஞ்சலை உத்தராகண்ட் என (2006) / ஒரிசாவை ஒடிசா என (2011) பெயர் மாற்றுதல்"
+          ]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "Union and its Territory — Constitutional Foundation (Part 1)",
+        "short_label": "Union & Territory Part 1",
+        "children": [
+          {
+            "title": "1. Article 1: Name & Scope",
+            "short_label": "Article 1",
+            "children": [
+              {
+                "title": "India, that is Bharat = Union of States",
+                "short_label": "Union of States"
+              },
+              {
+                "title": "Territory of India (States + UTs + Acquired) wider than Union of India",
+                "short_label": "Territory vs Union"
+              }
+            ]
+          },
+          {
+            "title": "2. Article 2 vs Article 3",
+            "short_label": "Art 2 vs Art 3",
+            "children": [
+              {
+                "title": "Article 2: Admission/Establishment of external new states",
+                "short_label": "Art 2 External"
+              },
+              {
+                "title": "Article 3: Internal reorganisation of existing states (Form, Area, Boundary, Name)",
+                "short_label": "Art 3 Internal"
+              }
+            ]
+          },
+          {
+            "title": "3. Article 3 Procedure",
+            "short_label": "Art 3 Procedure",
+            "children": [
+              {
+                "title": "Prior Recommendation of President required",
+                "short_label": "President Rec"
+              },
+              {
+                "title": "Referral to State Legislature for Views (Not binding on Parliament)",
+                "short_label": "State Views Non-binding"
+              }
+            ]
+          },
+          {
+            "title": "4. Article 4 & Doctrine",
+            "short_label": "Art 4 & Doctrine",
+            "children": [
+              {
+                "title": "Art 4: Laws under Art 2/3 passed by Simple Majority; NOT Art 368 amendments",
+                "short_label": "Simple Majority Non-368"
+              },
+              {
+                "title": "Indestructible Union of Destructible States (Ambedkar Doctrine)",
+                "short_label": "Indestructible Union"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": "1. Article 2 vs Article 3 Scope Trap (உறுப்பு 2 vs உறுப்பு 3 எல்லைப் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Describing the creation of Telangana or reorganisation of Jammu & Kashmir under Article 2.",
+            "FACT: Article 2 applies ONLY to external territories admitted/established into India. Internal reorganisation of existing Indian States is strictly under ARTICLE 3."
+          ],
+          "ta": [
+            "பொறி: தெலங்கானா உருவாக்கத்தையோ அல்லது ஜம்மு காஷ்மீர் மறுசீரமைப்பையோ உறுப்பு 2-ன் கீழ் விவரிப்பது.",
+            "உண்மை: உறுப்பு 2 இந்தியாவில் சேர்க்கப்படும் வெளிப்புற நிலப்பரப்புகளுக்கு மட்டுமே பொருந்தும். இருக்கும் இந்திய மாநிலங்களின் உட்புற மறுசீரமைப்பு முற்றிலும் உறுப்பு 3-ன் கீழ் வருகிறது."
+          ]
+        }
+      },
+      {
+        "title": "2. State Legislature Views vs Consent Trap (மாநிலக் கருத்துகள் vs ஒப்புதல் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Believing that Parliament cannot alter a State's boundaries without the consent of that State's Legislature.",
+            "FACT: The President refers the Bill to the State Legislature ONLY for its VIEWS. Parliament is NOT constitutionally bound by those views and can reject them completely."
+          ],
+          "ta": [
+            "பொறி: மாநில சட்டமன்றத்தின் ஒப்புதலின்றி நாடாளுமன்றம் ஒரு மாநிலத்தின் எல்லைகளை மாற்ற முடியாது என நம்புவது.",
+            "உண்மை: குடியரசுத் தலைவர் மசோதாவை அதன் கருத்துகளுக்காக மட்டுமே மாநில சட்டமன்றத்திற்கு அனுப்புகிறார். நாடாளுமன்றம் அந்த கருத்துகளுக்குக் கட்டுப்படாது, அவற்றை முழுமையாக நிராகரிக்கலாம்."
+          ]
+        }
+      },
+      {
+        "title": "3. Article 4 Constitutional Amendment Trap (உறுப்பு 4 அரசியலமைப்பு திருத்தப் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Stating that altering state names or boundaries requires a special majority constitutional amendment under Article 368.",
+            "FACT: Article 4 explicitly declares that laws under Articles 2 and 3 are NOT constitutional amendments under Article 368. They are passed by a SIMPLE MAJORITY."
+          ],
+          "ta": [
+            "பொறி: மாநில பெயர்கள் அல்லது எல்லைகளை மாற்றுவதற்கு உறுப்பு 368-ன் கீழ் சிறப்பு பெரும்பான்மை அரசியலமைப்பு திருத்தம் தேவை எனக் கூறுவது.",
+            "உண்மை: உறுப்புகள் 2 மற்றும் 3-ன் கீழ் உள்ள சட்டங்கள் உறுப்பு 368-ன் கீழ் அரசியலமைப்பு திருத்தங்கள் அல்ல என்று உறுப்பு 4 வெளிப்படையாக அறிவிக்கிறது. அவை சாதாரண பெரும்பான்மையால் நிறைவேற்றப்படுகின்றன."
+          ]
+        }
+      },
+      {
+        "title": "4. Union of India vs Territory of India Trap (இந்திய ஒன்றியம் vs ஆட்சி நிலப்பரப்பு பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Treating 'Union of India' and 'Territory of India' as identical expressions.",
+            "FACT: 'Union of India' includes ONLY the 28 States. 'Territory of India' is a much wider expression including States + Union Territories + Acquired Territories."
+          ],
+          "ta": [
+            "பொறி: 'இந்திய ஒன்றியம்' மற்றும் 'இந்திய ஆட்சி நிலப்பரப்பு' ஆகியவற்றை ஒரே சொல்லாகக் கருதுவது.",
+            "உண்மை: 'இந்திய ஒன்றியம்' 28 மாநிலங்களை மட்டுமே உள்ளடக்கியது. 'இந்திய ஆட்சி நிலப்பரப்பு' என்பது மாநிலங்கள் + UT-கள் + கையகப்படுத்தப்பட்ட நிலப்பரப்புகளை உள்ளடக்கிய பரந்த சொல்."
+          ]
+        }
+      },
+      {
+        "title": "5. Prior Recommendation Requirement Trap (முன் பரிந்துரைத் தேவைப் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Thinking an Article 3 Bill can be introduced directly in Parliament by any MP without Presidential involvement.",
+            "FACT: An Article 3 Bill CANNOT be introduced in either House of Parliament without the PRIOR RECOMMENDATION OF THE PRESIDENT."
+          ],
+          "ta": [
+            "பொறி: குடியரசுத் தலைவரின் தலையீடின்றி நாடாளுமன்றத்தில் எந்தவொரு எம்.பி.யும் உறுப்பு 3 மசோதாவை நேரடியாக அறிமுகப்படுத்தலாம் என நினைப்பது.",
+            "உண்மை: குடியரசுத் தலைவரின் முன் பரிந்துரையின்றி உறுப்பு 3 மசோதாவை நாடாளுமன்றத்தின் எந்த அவையிலும் அறிமுகப்படுத்த முடியாது."
+          ]
+        }
+      }
+    ],
+    "quick_revision": {
+      "en": [
+        "Part I of Constitution: Articles 1 to 4 ('The Union and its Territory').",
+        "Article 1: 'India, that is Bharat, shall be a Union of States.'",
+        "Territory of India (States + UTs + Acquired) is wider than Union of India (States only).",
+        "Indestructible Union of Destructible States: States cannot secede; Parliament can reorganisation states.",
+        "Article 2: Admission or establishment of NEW states (external).",
+        "Article 3: Internal reorganisation of EXISTING states (Form, Increase, Diminish, Boundaries, Name).",
+        "Article 3 Procedure: Prior recommendation of President + State Legislature views (consultative, not binding).",
+        "Article 4: Laws under Art 2/3 passed by Simple Majority; NOT Article 368 amendments."
+      ],
+      "ta": [
+        "அரசியலமைப்பின் பகுதி I: உறுப்புகள் 1 முதல் 4 வரை ('ஒன்றியமும் அதன் ஆட்சி நிலப்பரப்பும்').",
+        "உறுப்பு 1: 'இந்தியா என்னும் பாரதம், மாநிலங்களின் ஒன்றியமாக இருக்கும்.'",
+        "இந்திய ஆட்சி நிலப்பரப்பு (மாநிலங்கள் + UT-கள் + கையகப்படுத்தப்பட்டவை) என்பது இந்திய ஒன்றியத்தை (மாநிலங்கள் மட்டுமே) விடப் பரந்தது.",
+        "அழிக்கக்கூடிய மாநிலங்களின் அழிக்க முடியாத ஒன்றியம்: மாநிலங்கள் பிரிந்து செல்ல முடியாது; நாடாளுமன்றம் மாநிலங்களை மறுசீரமைக்கலாம்.",
+        "உறுப்பு 2: புதிய மாநிலங்களைச் சேர்த்தல் அல்லது நிறுவுதல் (வெளிப்புறம்).",
+        "உறுப்பு 3: இருக்கும் மாநிலங்களின் உட்புற மறுசீரமைப்பு (உருவாக்கம், பரப்பு அதிகரிப்பு/குறைப்பு, எல்லை, பெயர்).",
+        "உறுப்பு 3 நடைமுறை: குடியரசுத் தலைவரின் முன் பரிந்துரை + மாநில சட்டமன்றக் கருத்துகள் (ஆலோசனையானது, கட்டுப்படுத்தாது).",
+        "உறுப்பு 4: உறுப்புகள் 2/3-ன் கீழ் உள்ள சட்டங்கள் சாதாரண பெரும்பான்மையால் நிறைவேற்றம்; விதி 368 திருத்தங்கள் அல்ல."
+      ]
+    },
+    "must_remember": {
+      "en": [
+        "MUST REMEMBER: Article 1 uses both 'India' and 'Bharat'.",
+        "MUST REMEMBER: India is a 'Union of States', not a federation formed by agreement.",
+        "MUST REMEMBER: States have NO right to secede from the Union of India.",
+        "MUST REMEMBER: Article 2 = External new states; Article 3 = Internal existing states.",
+        "MUST REMEMBER: Article 3 Bill requires PRIOR recommendation of the President.",
+        "MUST REMEMBER: Parliament is NOT bound by the views of the State Legislature under Article 3.",
+        "MUST REMEMBER: State Legislature has ZERO veto power over state reorganisation.",
+        "MUST REMEMBER: Article 4 laws are passed by SIMPLE MAJORITY and are NOT Article 368 amendments.",
+        "MUST REMEMBER: 'Territory of India' includes States, UTs, and Acquired Territories.",
+        "MUST REMEMBER: India is an 'Indestructible Union of destructible States'."
+      ],
+      "ta": [
+        "நினைவில் கொள்க: உறுப்பு 1 'இந்தியா' மற்றும் 'பாரதம்' ஆகிய இரண்டு பெயர்களையும் பயன்படுத்துகிறது.",
+        "நினைவில் கொள்க: இந்தியா என்பது 'மாநிலங்களின் ஒன்றியம்', ஒப்பந்தத்தால் உருவான கூட்டாட்சி அல்ல.",
+        "நினைவில் கொள்க: இந்திய ஒன்றியத்திலிருந்து பிரிந்து செல்ல மாநிலங்களுக்கு உரிமை இல்லை.",
+        "நினைவில் கொள்க: உறுப்பு 2 = வெளிப்புற புதிய மாநிலங்கள்; உறுப்பு 3 = உட்புற இருக்கும் மாநிலங்கள்.",
+        "நினைவில் கொள்க: உறுப்பு 3 மசோதாவிற்கு குடியரசுத் தலைவரின் முன் பரிந்துரை தேவை.",
+        "நினைவில் கொள்க: உறுப்பு 3-ன் கீழ் மாநில சட்டமன்றத்தின் கருத்துகளுக்கு நாடாளுமன்றம் கட்டுப்படாது.",
+        "நினைவில் கொள்க: மாநில மறுசீரமைப்பில் மாநில சட்டமன்றத்திற்குப் பூஜ்ஜிய வீட்டோ அதிகாரம் உண்டு.",
+        "நினைவில் கொள்க: உறுப்பு 4 சட்டங்கள் சாதாரண பெரும்பான்மையால் நிறைவேற்றப்படுகின்றன, விதி 368 திருத்தங்கள் அல்ல.",
+        "நினைவில் கொள்க: 'இந்திய ஆட்சி நிலப்பரப்பு' என்பது மாநிலங்கள், UT-கள் மற்றும் கையகப்படுத்தப்பட்ட நிலப்பரப்புகளை உள்ளடக்கியது.",
+        "நினைவில் கொள்க: இந்தியா என்பது 'அழிக்கக்கூடிய மாநிலங்களின் அழிக்க முடியாத ஒன்றியம்' ஆகும்."
+      ]
+    },
+    "revision_cards": [
+      {
+        "id": "ut_p1_c1",
+        "front_en": "What names does Article 1 of the Constitution use for our country?",
+        "front_ta": "அரசியலமைப்பின் உறுப்பு 1 நமது நாட்டிற்கு எந்தப் பெயர்களைப் பயன்படுத்துகிறது?",
+        "back_en": "'India, that is Bharat, shall be a Union of States.' Both India and Bharat are used.",
+        "back_ta": "'இந்தியா என்னும் பாரதம், மாநிலங்களின் ஒன்றியமாக இருக்கும்.' இந்தியா மற்றும் பாரதம் ஆகிய இரண்டும் பயன்படுகின்றன."
+      },
+      {
+        "id": "ut_p1_c2",
+        "front_en": "Why did Dr. Ambedkar prefer 'Union of States' over 'Federation of States'?",
+        "front_ta": "டாக்டர் அம்பேத்கர் 'மாநிலங்களின் கூட்டாட்சி' என்பதற்குப் பதிலாக 'மாநிலங்களின் ஒன்றியம்' என்பதை ஏன் தேர்வு செய்தார்?",
+        "back_en": "1) Not formed by agreement among sovereign states; 2) States have NO right to secede.",
+        "back_ta": "1) மாநிலங்களின் ஒப்பந்தத்தால் உருவானதல்ல; 2) பிரிந்து செல்ல மாநிலங்களுக்கு உரிமை இல்லை."
+      },
+      {
+        "id": "ut_p1_c3",
+        "front_en": "What is the difference between 'Union of India' and 'Territory of India'?",
+        "front_ta": "'இந்திய ஒன்றியம்' மற்றும் 'இந்திய ஆட்சி நிலப்பரப்பு' இடையிலான வேறுபாடு என்ன?",
+        "back_en": "'Union of India' includes ONLY States. 'Territory of India' includes States + UTs + Acquired Territories.",
+        "back_ta": "'இந்திய ஒன்றியம்' மாநிலங்களை மட்டுமே உள்ளடக்கியது. 'இந்திய ஆட்சி நிலப்பரப்பு' மாநிலங்கள் + UT-கள் + கையகப்படுத்தப்பட்ட நிலப்பரப்புகளை உள்ளடக்கியது."
+      },
+      {
+        "id": "ut_p1_c4",
+        "front_en": "Which Article governs the admission or establishment of NEW states from outside India?",
+        "front_ta": "இந்தியாவிற்கு வெளியே உள்ள புதிய மாநிலங்களைச் சேர்க்க அல்லது நிறுவ எந்த விதி ஒழுங்குபடுத்துகிறது?",
+        "back_en": "ARTICLE 2.",
+        "back_ta": "உறுப்பு 2."
+      },
+      {
+        "id": "ut_p1_c5",
+        "front_en": "Which Article governs the internal reorganisation of EXISTING Indian States?",
+        "front_ta": "இருக்கும் இந்திய மாநிலங்களின் உட்புற மறுசீரமைப்பை எந்த விதி ஒழுங்குபடுத்துகிறது?",
+        "back_en": "ARTICLE 3.",
+        "back_ta": "உறுப்பு 3."
+      },
+      {
+        "id": "ut_p1_c6",
+        "front_en": "Is the prior recommendation of the President required for introducing an Article 3 Bill?",
+        "front_ta": "உறுப்பு 3 மசோதாவை அறிமுகப்படுத்த குடியரசுத் தலைவரின் முன் பரிந்துரை தேவையா?",
+        "back_en": "YES. An Article 3 Bill can ONLY be introduced on the prior recommendation of the President.",
+        "back_ta": "ஆம். குடியரசுத் தலைவரின் முன் பரிந்துரையுடன் மட்டுமே உறுப்பு 3 மசோதாவை அறிமுகப்படுத்த முடியும்."
+      },
+      {
+        "id": "ut_p1_c7",
+        "front_en": "Is Parliament constitutionally bound by the views of a State Legislature under Article 3?",
+        "front_ta": "உறுப்பு 3-ன் கீழ் மாநில சட்டமன்றத்தின் கருத்துகளுக்கு நாடாளுமன்றம் அரசியலமைப்புப்படி கட்டுப்பட்டுள்ளதா?",
+        "back_en": "NO. State views are purely consultative. Parliament can accept or reject them completely.",
+        "back_ta": "இல்லை. மாநிலக் கருத்துகள் ஆலோசனையானவை மட்டுமே. நாடாளுமன்றம் அவற்றை ஏற்கலாம் அல்லது நிராகரிக்கலாம்."
+      },
+      {
+        "id": "ut_p1_c8",
+        "front_en": "Are laws passed under Articles 2 and 3 treated as constitutional amendments under Article 368?",
+        "front_ta": "உறுப்புகள் 2 மற்றும் 3-ன் கீழ் நிறைவேற்றப்படும் சட்டங்கள் விதி 368-ன் கீழ் அரசியலமைப்பு திருத்தங்களாகக் கருதப்படுகின்றனவா?",
+        "back_en": "NO. Article 4 clarifies they are passed by Simple Majority and are NOT Article 368 amendments.",
+        "back_ta": "இல்லை. அவை சாதாரண பெரும்பான்மையால் நிறைவேற்றப்படுகின்றன என்றும் விதி 368 திருத்தங்கள் அல்ல என்றும் உறுப்பு 4 கூறுகிறது."
+      },
+      {
+        "id": "ut_p1_c9",
+        "front_en": "Why is India described as an 'Indestructible Union of destructible States'?",
+        "front_ta": "இந்தியா ஏன் 'அழிக்கக்கூடிய மாநிலங்களின் அழிக்க முடியாத ஒன்றியம்' என விவரிக்கப்படுகிறது?",
+        "back_en": "Parliament can alter state boundaries/names, but States cannot destroy or secede from the Union.",
+        "back_ta": "நாடாளுமன்றம் மாநில எல்லைகள்/பெயர்களை மாற்றலாம், ஆனால் மாநிலங்கள் ஒன்றியத்தை அழிக்கவோ பிரிந்து செல்லவோ முடியாது."
+      },
+      {
+        "id": "ut_p1_c10",
+        "front_en": "Does a bill altering a State's name require a fresh reference to the State if amended in Parliament?",
+        "front_ta": "நாடாளுமன்றத்தில் திருத்தப்பட்டால் மாநில பெயர் மாற்றும் மசோதா மாநிலத்திற்கு மீண்டும் அனுப்பப்பட வேண்டுமா?",
+        "back_en": "NO. No fresh reference to the State Legislature is required for amendments made in Parliament.",
+        "back_ta": "இல்லை. நாடாளுமன்றத்தில் செய்யப்படும் திருத்தங்களுக்கு மாநில சட்டமன்றத்திற்கு மீண்டும் அனுப்ப வேண்டிய அவசியமில்லை."
+      }
+    ]
+  }
+}

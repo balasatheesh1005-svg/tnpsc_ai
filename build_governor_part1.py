@@ -1,0 +1,679 @@
+# -*- coding: utf-8 -*-
+"""
+Builder Script for Governor of a State Notes — Part 1
+Subject: Indian Polity
+Topic: Governor of a State – Part 1
+"""
+
+import json
+import os
+import sys
+
+sys.stdout.reconfigure(encoding='utf-8')
+
+print("==================================================")
+print("BUILDING GOVERNOR NOTES — PART 1")
+print("==================================================")
+
+part1_data = {
+  "meta": {
+    "topic_id": "polity_governor_part_1",
+    "repository_id": "polity_governor",
+    "display_title": "Governor of a State – Part 1",
+    "part": 1,
+    "total_parts": 3,
+    "subject": "polity",
+    "chapter": "Governor of a State",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "topic_id": "polity_governor_part_1",
+    "repository_id": "polity_governor",
+    "display_title": "Governor of a State – Part 1",
+    "part": 1,
+    "total_parts": 3,
+    "subject": "polity",
+    "chapter": "Governor of a State",
+    "language": "English + Tamil"
+  },
+  "keywords": [
+    "Governor of a State",
+    "Article 153",
+    "Article 154",
+    "Article 155",
+    "Article 156",
+    "Article 157",
+    "Article 158",
+    "Article 159",
+    "Article 160",
+    "Article 161",
+    "Article 162",
+    "Constitutional Head",
+    "Nominal Executive",
+    "De Jure Executive",
+    "Appointment of Governor",
+    "Pleasure of President",
+    "TNPSC Polity"
+  ],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [
+        "Master the constitutional position of the Governor under Article 153 as the executive head of the State.",
+        "Understand the dual role of the Governor: Constitutional Head of State and Representative of the Union Government.",
+        "Learn the appointment process under Article 155 (Appointed by President by warrant under hand and seal; Canadian model).",
+        "Understand qualifications under Article 157 (Citizen of India, 35 years of age) and conditions under Article 158.",
+        "Analyze term of office under Article 156 (5 years subject to President's pleasure) and oath under Article 159 (administered by CJ of High Court)."
+      ],
+      "ta": [
+        "உறுப்பு 153-ன் கீழ் மாநிலத்தின் நிர்வாகத் தலைவராக ஆளுநரின் அரசியலமைப்பு நிலையைத் தெரிந்துகொள்ளுதல்.",
+        "ஆளுநரின் இரட்டைப் பங்கை அறிந்துகொள்ளுதல்: மாநிலத்தின் அரசியலமைப்புத் தலைவர் மற்றும் மத்திய அரசின் பிரதிநிதி.",
+        "உறுப்பு 155-ன் கீழ் நியமன முறையைப் புரிந்துகொள்ளுதல் (குடியரசுத் தலைவரால் சாசனம் மூலம் நியமிக்கப்படுபவர்; கனடா மாதிரி).",
+        "உறுப்பு 157 தகுதிகள் (இந்தியக் குடிமகன், 35 வயது) மற்றும் உறுப்பு 158 நிபந்தனைகளைப் புரிந்துகொள்ளுதல்.",
+        "உறுப்பு 156 பதவிக்காலம் (குடியரசுத் தலைவரின் விருப்பத்திற்குட்பட்ட 5 ஆண்டுகள்) மற்றும் உறுப்பு 159 பதவிப் பிரமாணம் (உயர் நீதிமன்ற தலைமை நீதிபதி வழங்குவது) ஆகியவற்றைக் கற்றல்."
+      ]
+    }
+  },
+  "subject": "polity",
+  "topic": "Governor of a State",
+  "language": "English + Tamil",
+  "ui_type": "standard_notes",
+  "sections": [
+    {
+      "id": "sec_constitutional_position",
+      "title_en": "1. Constitutional Position & Executive Role (Articles 153 & 154)",
+      "title_ta": "1. அரசியலமைப்பு நிலை & நிர்வாகப் பொறுப்பு (உறுப்புகள் 153 & 154)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_appointment_procedure",
+      "title_en": "2. Appointment of Governor & Model Context (Article 155)",
+      "title_ta": "2. ஆளுநர் நியமன முறை & மாதிரிப் பின்னணி (உறுப்பு 155)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_qualifications_conditions",
+      "title_en": "3. Qualifications & Conditions of Office (Articles 157 & 158)",
+      "title_ta": "3. பதவிக்கான தகுதிகள் & நிபந்தனைகள் (உறுப்புகள் 157 & 158)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_tenure_pleasure",
+      "title_en": "4. Tenure of Office & Pleasure of President (Article 156)",
+      "title_ta": "4. பதவிக்காலம் & குடியரசுத் தலைவரின் விருப்பக் கோட்பாடு (உறுப்பு 156)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_oath_administration",
+      "title_en": "5. Oath of Office & Administering Authority (Article 159)",
+      "title_ta": "5. பதவிப் பிரமாணம் & பிரமாணம் செய்து வைக்கும் அதிகாரி (உறுப்பு 159)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_articles_map",
+      "title_en": "6. State Executive Articles Map (Articles 153 to 162)",
+      "title_ta": "6. மாநில நிர்வாக விதிகள் வரைபடம் (உறுப்புகள் 153 முதல் 162)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "comparison_tables",
+      "title_en": "7. Mandatory Comparison Tables (Oppositional Analysis)",
+      "title_ta": "7. கட்டாய ஒப்பீட்டு அட்டவணைகள் (எதிர்நிலை பகுப்பாய்வு)",
+      "type": "comparison"
+    },
+    {
+      "id": "mind_map",
+      "title_en": "8. Mind Map & TNPSC Trap Points",
+      "title_ta": "8. மன வரைபடம் & டிஎன்பிஎஸ்சி பொறிப் புள்ளிகள்",
+      "type": "mind_map"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "The Governor is the constitutional head of a State in India, forming a key component of the State Executive alongside the Chief Minister, Council of Ministers, and Advocate General.",
+      "ta": "ஆளுநர் என்பவர் இந்தியாவின் ஒரு மாநிலத்தின் அரசியலமைப்புத் தலைவராவார். முதலமைச்சர், அமைச்சரவை மற்றும் மாநில தலைமை வழக்கறிஞருடன் இணைந்து மாநில நிர்வாகத்தின் முக்கிய அங்கமாகச் செயல்படுகிறார்."
+    },
+    "introduction": {
+      "en": "Part VI of the Constitution of India (Articles 153 to 167) deals with the State Executive. The Governor functions in a dual capacity: as the nominal (De Jure) executive head of the State and as a representative of the Union Government.",
+      "ta": "இந்திய அரசியலமைப்பின் பகுதி VI (உறுப்புகள் 153 முதல் 167 வரை) மாநில நிர்வாகத்தைப் பற்றி விவரிக்கிறது. ஆளுநர் ஒரு இரட்டைத் தன்மையில் செயல்படுகிறார்: மாநிலத்தின் பெயரளவு (De Jure) நிர்வாகத் தலைவராகவும் மற்றும் மத்திய அரசின் பிரதிநிதியாகவும் செயல்படுகிறார்."
+    },
+    "sec_constitutional_position": [
+      {
+        "title_en": "Article 153 — Office of the Governor",
+        "title_ta": "உறுப்பு 153 — ஆளுநர் பதவி",
+        "points": {
+          "en": [
+            "Article 153 mandates that there shall be a Governor for each State.",
+            "7th Constitutional Amendment Act (1956) facilitated the appointment of the SAME person as Governor for two or more States.",
+            "The Governor forms an integral part of the State Legislature under Article 168."
+          ],
+          "ta": [
+            "உறுப்பு 153 ஒவ்வொரு மாநிலத்திற்கும் ஒரு ஆளுநர் இருக்க வேண்டும் எனக் கூறுகிறது.",
+            "1956-ஆம் ஆண்டின் 7-வது அரசியலமைப்புச் சட்டத்திருத்தம் ஒரே நபரை இரண்டு அல்லது அதற்கு மேற்பட்ட மாநிலங்களின் ஆளுநராக நியமிக்க வழிவகை செய்தது.",
+            "உறுப்பு 168-ன் கீழ் ஆளுநர் மாநில சட்டமன்றத்தின் பிரிக்க முடியாத அங்கமாகச் செயல்படுகிறார்."
+          ]
+        }
+      },
+      {
+        "title_en": "Article 154 — Executive Power of State & De Jure vs De Facto Distinction",
+        "title_ta": "உறுப்பு 154 — மாநில நிர்வாக அதிகாரம் & சட்டப்பூர்வ vs உண்மையான தலைவர்கள் வேறுபாடு",
+        "points": {
+          "en": [
+            "Article 154(1) states that the executive power of the State shall be vested in the Governor and shall be exercised by him either directly or through officers subordinate to him.",
+            "Nominal / Constitutional Head (De Jure): Governor of the State.",
+            "Real Executive Leader (De Facto): Chief Minister along with the Council of Ministers.",
+            "Westminster Model Replica: The Governor acts on the aid and advice of the Council of Ministers headed by the Chief Minister (except in discretionary matters)."
+          ],
+          "ta": [
+            "உறுப்பு 154(1)-ன் படி மாநிலத்தின் நிர்வாக அதிகாரம் ஆளுநரிடம் ஒப்படைக்கப்பட்டுள்ளது, அது அவரால் நேரடியாவோ அல்லது கீழ்நிலை அதிகாரிகள் மூலமாகவோ செயல்படுத்தப்படும்.",
+            "பெயரளவு / அரசியலமைப்புத் தலைவர் (De Jure): மாநில ஆளுநர்.",
+            "உண்மையான நிர்வாகத் தலைவர் (De Facto): முதலமைச்சர் தலைமையிலான அமைச்சரவை.",
+            "நாடாளுமன்ற முறை மாதிரி: முதலமைச்சர் தலைமையிலான அமைச்சரவையின் ஆலோசனையின் பேரிலேயே ஆளுநர் செயல்படுகிறார் (சுயவிருப்ப அதிகாரங்கள் தவிர)."
+          ]
+        }
+      }
+    ],
+    "sec_appointment_procedure": [
+      {
+        "title_en": "Article 155 — Appointment of Governor",
+        "title_ta": "உறுப்பு 155 — ஆளுநர் நியமனம்",
+        "points": {
+          "en": [
+            "The Governor of a State is appointed by the President by warrant under his hand and seal.",
+            "The Governor is NEITHER directly elected by the people NOR indirectly elected by a specially constituted electoral college.",
+            "The Governor's office is an independent constitutional office and is NOT an employment under the Central Government.",
+            "Canadian Model Adoption: India adopted the Canadian model where the Governor of a province is appointed by the Governor-General (Centre), rejecting the US model of directly elected Governors."
+          ],
+          "ta": [
+            "மாநில ஆளுநர் குடியரசுத் தலைவரால் அவரது சொந்த கையொப்பம் மற்றும் முத்திரையுடனான சாசனம் மூலம் நியமிக்கப்படுகிறார்.",
+            "ஆளுநர் மக்களால் நேரடியாகவோ அல்லது சிறப்பு வாக்காளர் குழுவால் மறைமுகமாகவோ தேர்ந்தெடுக்கப்படுவதில்லை.",
+            "ஆளுநர் பதவி என்பது ஒரு சுதந்திரமான அரசியலமைப்பு பதவியாகும்; இது மத்திய அரசின் கீழ் உள்ள ஒரு வேலையல்ல.",
+            "கனடா மாதிரிப் பின்பற்றுதல்: அமெரிக்காவின் நேரடியாகத் தேர்ந்தெடுக்கப்படும் ஆளுநர் முறையை நிராகரித்து, மத்திய அரசால் ஆளுநர் நியமிக்கப்படும் கனடா முறையை இந்தியா ஏற்றுக்கொண்டது."
+          ]
+        }
+      },
+      {
+        "title_en": "Constitutional Conventions of Appointment",
+        "title_ta": "நியமனம் தொடர்பான அரசியலமைப்பு மரபுகள்",
+        "points": {
+          "en": [
+            "Outsider Convention: He should be an outsider, i.e., he should not belong to the State where he is appointed, so that he is free from local politics.",
+            "CM Consultation Convention: While appointing the Governor, the President is expected to consult the Chief Minister of the concerned State to ensure smooth functioning.",
+            "Note: Both these conventions have been frequently violated in Indian political practice."
+          ],
+          "ta": [
+            "வெளிமாநிலத்தவர் மரபு: அவர் நியமிக்கப்படும் மாநிலத்தைச் சேர்ந்தவராக இருக்கக்கூடாது; இதன் மூலம் உள்ளூர் அரசியலில் இருந்து விடுபட்டு நடுநிலையாகச் செயல்பட முடியும்.",
+            "முதலமைச்சர் கலந்தாய்வு மரபு: ஆளுநரை நியமிக்கும் போது, சுமூகமான நிர்வாகத்திற்குச் சம்மந்தப்பட்ட மாநில முதலமைச்சரைக் குடியரசுத் தலைவர் கலந்தாலோசிக்க வேண்டும்.",
+            "குறிப்பு: இந்த இரு மரபுகளும் இந்திய அரசியல் நடைமுறையில் அடிக்கடி மீறப்பட்டுள்ளன."
+          ]
+        }
+      }
+    ],
+    "sec_qualifications_conditions": [
+      {
+        "title_en": "Article 157 — Qualifications for Appointment",
+        "title_ta": "உறுப்பு 157 — நியமனத்திற்கான தகுதிகள்",
+        "points": {
+          "en": [
+            "1. He must be a citizen of India.",
+            "2. He must have completed the age of 35 years.",
+            "Note: The Constitution lays down ONLY THESE TWO qualifications for appointment as Governor."
+          ],
+          "ta": [
+            "1. அவர் இந்தியக் குடிமகனாக இருக்க வேண்டும்.",
+            "2. அவர் 35 வயது பூர்த்தியடைந்தவராக இருக்க வேண்டும்.",
+            "குறிப்பு: அரசியலமைப்பு ஆளுநர் நியமனத்திற்கு இந்த இரு தகுதிகளை மட்டுமே தெளிவாகக் குறிப்பிட்டுள்ளது."
+          ]
+        }
+      },
+      {
+        "title_en": "Article 158 — Conditions of Governor's Office",
+        "title_ta": "உறுப்பு 158 — ஆளுநர் பததிக்கான நிபந்தனைகள்",
+        "points": {
+          "en": [
+            "He should not be a member of either House of Parliament or a House of the State Legislature. If such a person is appointed, he is deemed to have vacated his seat in that House on the date he enters upon his office.",
+            "He should not hold any other office of profit.",
+            "He is entitled without payment of rent to the use of his official residence (Raj Bhavan).",
+            "His emoluments and allowances are determined by Parliament by law and cannot be diminished during his term of office.",
+            "Sharing Emoluments (Art 158(3A)): When the same person is appointed as Governor of two or more States, the emoluments and allowances payable to him are allocated among the States in such proportion as determined by the President."
+          ],
+          "ta": [
+            "அவர் நாடாளுமன்றத்தின் எந்தவொரு அவையிலோ அல்லது மாநில சட்டமன்றத்தின் எந்தவொரு அவையிலோ உறுப்பினராக இருக்கக்கூடாது. அவ்வாறு இருப்பவர் நியமிக்கப்பட்டால், பதவியேற்கும் நாளில் அவையிலிருந்து விலகியதாகக் கருதப்படுவார்.",
+            "அவர் எந்தவொரு ஆதாயம் தரும் பதவியையும் வகிக்கக்கூடாது.",
+            "அவர் வாடகையின்றி தனது அதிகாரப்பூர்வ இருப்பிடத்தைப் (ராஜ் பவன்) பயன்படுத்த உரிமையுடையவர்.",
+            "அவரது ஊதியங்கள் மற்றும் படிகள் நாடாளுமன்றச் சட்டத்தால் தீர்மானிக்கப்படுகின்றன மற்றும் அவரது பதவிக்காலத்தில் குறைக்கப்பட முடியாது.",
+            "ஊதியப் பங்கீடு (விதி 158(3A)): ஒரே நபர் இரண்டு அல்லது அதற்கு மேற்பட்ட மாநிலங்களின் ஆளுநராக நியமிக்கப்படும் போது, அவருக்கு வழங்கப்படும் ஊதியம் மற்றும் படிகள் குடியரசுத் தலைவரால் தீர்மானிக்கப்படும் விகிதத்தில் மாநிலங்களால் பகிர்ந்து அளிக்கப்படும்."
+          ]
+        }
+      }
+    ],
+    "sec_tenure_pleasure": [
+      {
+        "title_en": "Article 156 — Term of Office & Pleasure of President",
+        "title_ta": "உறுப்பு 156 — பதவிக்காலம் & குடியரசுத் தலைவரின் விருப்பக் கோட்பாடு",
+        "points": {
+          "en": [
+            "Article 156(1): The Governor shall hold office during the pleasure of the President.",
+            "Article 156(2): The Governor may, by writing under his hand addressed to the President, resign his office.",
+            "Article 156(3): Subject to the foregoing provisions, a Governor shall hold office for a term of 5 years from the date on which he enters upon his office.",
+            "No Fixed Security of Tenure: The 5-year term is subject to the pleasure of the President. The President can remove/transfer a Governor at any time without assigning any reason.",
+            "Continuation Proviso: A Governor shall, notwithstanding the expiration of his term, continue to hold office until his successor enters upon his office (prevents constitutional vacuum).",
+            "B.P. Singhal Case (2010): Supreme Court held that the President has the power to remove a Governor at any time without assigning reasons, BUT the removal cannot be arbitrary, whimsical, or based on political grounds."
+          ],
+          "ta": [
+            "உறுப்பு 156(1): ஆளுநர் குடியரசுத் தலைவரின் விருப்பம் உள்ளவரை பதவியில் நீடிப்பார்.",
+            "உறுப்பு 156(2): ஆளுநர் குடியரசுத் தலைவருக்குத் தனது கையொப்பமிட்ட கடிதம் மூலம் ராஜினாமா செய்யாலம்.",
+            "உறுப்பு 156(3): மேற்கண்ட விதிகளுக்கு உட்பட்டு, பதவியேற்ற நாளிலிருந்து 5 ஆண்டுகள் வரை பதவியில் நீடிப்பார்.",
+            "நிலையான பதவிக்காலப் பாதுகாப்பு இல்லை: 5 ஆண்டு பதவிக்காலம் குடியரசுத் தலைவரின் விருப்பத்திற்கு உட்பட்டது. எந்தக் காரணமும் குறிப்பிடாமல் குடியரசுத் தலைவர் ஆளுநரை எப்போது வேண்டுமானாலும் நீக்கலாம் அல்லது இடமாற்றம் செய்யலாம்.",
+            "தொடர்ச்சி விதி: பதவிக்காலம் முடிந்தபோதிலும், புதிய ஆளுநர் பதவியேற்கும் வரை தற்போதைய ஆளுநர் பதவியில் தொடர்வார் (அரசியலமைப்பு வெற்றிடத்தைத் தவிர்க்க).",
+            "பி.பி. சிங்கால் வழக்கு (2010): காரணமின்றி ஆளுநரை நீக்க குடியரசுத் தலைவருக்கு அதிகாரமுள்ளது, ஆனால் அந்த நீக்கம் தன்னிச்சையானதாகவோ அல்லது அரசியல் காரணங்களுக்காகவோ இருக்கக்கூடாது என உச்ச நீதிமன்றம் தீர்ப்பளித்தது."
+          ]
+        }
+      }
+    ],
+    "sec_oath_administration": [
+      {
+        "title_en": "Article 159 — Oath or Affirmation by Governor",
+        "title_ta": "உறுப்பு 159 — ஆளுநரின் பதவிப் பிரமாணம்",
+        "points": {
+          "en": [
+            "Every Governor before entering upon his office takes an Oath of Office.",
+            "Administering Authority: The Oath is administered by the Chief Justice of the High Court exercising jurisdiction over the State, or in his absence, the senior-most Judge of that High Court available.",
+            "Pledge Wording: To faithfully execute the office of Governor, to preserve, protect and defend the Constitution and the law, and to devote himself to the service and well-being of the people of the State."
+          ],
+          "ta": [
+            "ஒவ்வொரு ஆளுநரும் பதவியேற்கும் முன் பதவிப் பிரமாணம் எடுத்துக்கொள்கிறார்.",
+            "பிரமாணம் செய்து வைக்கும் அதிகாரி: அந்த மாநில உயர் நீதிமன்றத் தலைமை நீதிபதி அல்லது அவர் இல்லாத பட்சத்தில் அங்கே உள்ள மூத்த நீதிபதி பிரமாணம் செய்து வைக்கிறார்.",
+            "உறுதிமொழி உரை: ஆளுநர் பதவியை உண்மையாகவும், அரசியலமைப்பு மற்றும் சட்டத்தைப் பேணிப் பாதுகாக்கவும், மாநில மக்களின் சேவைக்குத் தன்னை அர்ப்பணிக்கவும் உறுதி ஏற்கிறார்."
+          ]
+        }
+      }
+    ],
+    "sec_articles_map": [
+      {
+        "title_en": "State Executive Articles Cheat-Sheet (Articles 153 to 162)",
+        "title_ta": "மாநில நிர்வாக விதிகள் நினைவுக் குறிப்பு (உறுப்புகள் 153 முதல் 162)",
+        "points": {
+          "en": [
+            "Article 153: Governors of States (One person for 2+ states allowed under 7th Amendment 1956)",
+            "Article 154: Executive power of State vested in Governor",
+            "Article 155: Appointment of Governor by President by warrant",
+            "Article 156: Term of office of Governor (Pleasure of President / 5 Years)",
+            "Article 157: Qualifications for appointment as Governor (Citizen, 35 years age)",
+            "Article 158: Conditions of Governor's office (No MP/MLA, No office of profit, Emoluments)",
+            "Article 159: Oath or affirmation by the Governor (Administered by CJ of High Court)",
+            "Article 160: Discharge of functions of Governor in certain contingencies",
+            "Article 161: Power of Governor to grant pardons, reprieves, remissions, etc.",
+            "Article 162: Extent of executive power of State (Co-extensive with legislative competence)"
+          ],
+          "ta": [
+            "உறுப்பு 153: மாநிலங்களின் ஆளுநர்கள் (1956 7-வது திருத்தத்தின் படி ஒரே நபர் 2+ மாநிலங்களுக்கு ஆளுநராகலாம்)",
+            "உறுப்பு 154: ஆளுநரிடம் ஒப்படைக்கப்பட்டுள்ள மாநில நிர்வாக அதிகாரம்",
+            "உறுப்பு 155: குடியரசுத் தலைவரால் ஆளுநர் நியமனம்",
+            "உறுப்பு 156: ஆளுநரின் பதவிக்காலம் (குடியரசுத் தலைவர் விருப்பம் / 5 ஆண்டுகள்)",
+            "உறுப்பு 157: ஆளுநர் நியமனத்திற்கான தகுதிகள் (குடிமகன், 35 வயது)",
+            "உறுப்பு 158: ஆளுநர் பததிக்கான நிபந்தனைகள் (எம்பி/எம்எல்ஏ ஆக இருக்கக்கூடாது, ஆதாயம் தரும் பதவி இல்லை)",
+            "உறுப்பு 159: ஆளுநரின் பதவிப் பிரமாணம் (உயர் நீதிமன்ற தலைமை நீதிபதி வழங்குவது)",
+            "உறுப்பு 160: சில அவசரச் சூழல்களில் ஆளுநரின் பணிகளைச் செயல்படுத்துதல்",
+            "உறுப்பு 161: ஆளுநரின் மன்னிப்பளிக்கும் அதிகாரம்",
+            "உறுப்பு 162: மாநில நிர்வாக அதிகாரத்தின் எல்லை (சட்டமன்ற அதிகார எல்லைக்கு இணையானது)"
+          ]
+        }
+      }
+    ],
+    "revision_cards": [
+      {
+        "id": "gov_p1_c1",
+        "front_en": "Which Article provides for a Governor for each State in India?",
+        "front_ta": "இந்தியாவில் ஒவ்வொரு மாநிலத்திற்கும் ஒரு ஆளுநர் இருக்க வேண்டும் எனக் கூறும் உறுப்பு எது?",
+        "back_en": "Article 153. (7th Constitutional Amendment 1956 allows 1 person as Governor for 2+ States).",
+        "back_ta": "உறுப்பு 153. (1956 7-வது திருத்தம் ஒரே நபர் 2+ மாநிலங்களுக்கு ஆளுநராக நியமிக்கப்பட அனுமதிக்கிறது)."
+      },
+      {
+        "id": "gov_p1_c2",
+        "front_en": "Who appoints the Governor of a State in India?",
+        "front_ta": "இந்தியாவில் மாநில ஆளுநரை நியமிப்பவர் யார்?",
+        "back_en": "Appointed by the President of India by warrant under his hand and seal (Article 155).",
+        "back_ta": "இந்தியக் குடியரசுத் தலைவரால் அவரது கையொப்பம் மற்றும் முத்திரையுடனான சாசனம் மூலம் நியமிக்கப்படுகிறார் (உறுப்பு 155)."
+      },
+      {
+        "id": "gov_p1_c3",
+        "front_en": "Which country's model was adopted for appointing Governors in India?",
+        "front_ta": "இந்தியாவில் ஆளுநர்களை நியமிக்க எந்த நாட்டின் மாதிரி பின்பற்றப்பட்டது?",
+        "back_en": "Canadian Model (Appointed by Centre, rejecting the US elected Governor model).",
+        "back_ta": "கனடா மாதிரி (மத்திய அரசால் நியமிக்கப்படும் முறை; அமெரிக்காவின் தேர்ந்தெடுக்கப்படும் முறை நிராகரிக்கப்பட்டது)."
+      },
+      {
+        "id": "gov_p1_c4",
+        "front_en": "What are the minimum age and citizenship qualifications for Governor under Article 157?",
+        "front_ta": "உறுப்பு 157-ன் கீழ் ஆளுநருக்கான குறைந்தபட்ச வயது மற்றும் குடியுரிமை தகுதிகள் யாவை?",
+        "back_en": "Must be a Citizen of India and completed 35 years of age.",
+        "back_ta": "இந்தியக் குடிமகனாகவும் 35 வயது பூர்த்தியடைந்தவராகவும் இருக்க வேண்டும்."
+      },
+      {
+        "id": "gov_p1_c5",
+        "front_en": "Who administers the Oath of Office to the Governor under Article 159?",
+        "front_ta": "உறுப்பு 159-ன் கீழ் ஆளுநருக்குப் பதவிப் பிரமாணம் செய்து வைப்பவர் யார்?",
+        "back_en": "Chief Justice of the State High Court (or senior-most judge available).",
+        "back_ta": "மாநில உயர் நீதிமன்றத் தலைமை நீதிபதி (அல்லது அங்கிருக்கும் மூத்த நீதிபதி)."
+      },
+      {
+        "id": "gov_p1_c6",
+        "front_en": "What is the tenure of the Governor under Article 156?",
+        "front_ta": "உறுப்பு 156-ன் கீழ் ஆளுநரின் பதவிக்காலம் என்ன?",
+        "back_en": "Holds office during the Pleasure of the President (Normal 5-year term; No fixed security of tenure).",
+        "back_ta": "குடியரசுத் தலைவரின் விருப்பம் உள்ளவரை பதவியில் நீடிப்பார் (சாதாரண 5 ஆண்டு பதவிக்காலம்; நிலையான பதவிக்காலப் பாதுகாப்பு இல்லை)."
+      },
+      {
+        "id": "gov_p1_c7",
+        "front_en": "What happens to the salary of a Governor serving two or more States under Article 158(3A)?",
+        "front_ta": "இரண்டு அல்லது அதற்கு மேற்பட்ட மாநிலங்களுக்கு ஆளுநராக இருக்கும் ஒருவரின் ஊதியம் எவ்வாறு பகிர்ந்தளிக்கப்படுகிறது (விதி 158(3A))?",
+        "back_en": "Shared between concerned States in proportion determined by the President.",
+        "back_ta": "குடியரசுத் தலைவரால் தீர்மானிக்கப்படும் விகிதத்தில் சம்பந்தப்பட்ட மாநிலங்களால் பகிர்ந்து அளிக்கப்படுகிறது."
+      },
+      {
+        "id": "gov_p1_c8",
+        "front_en": "Is the Governor an employee of the Central Government?",
+        "front_ta": "ஆளுநர் மத்திய அரசின் ஊழியரா?",
+        "back_en": "NO. The Governor's office is an independent constitutional office, NOT employment under Central Government (Hargovind Pant case).",
+        "back_ta": "இல்லை. ஆளுநர் பதவி என்பது ஒரு சுதந்திரமான அரசியலமைப்பு பதவியாகும்; இது மத்திய அரசின் கீழ் உள்ள வேலையல்ல."
+      },
+      {
+        "id": "gov_p1_c9",
+        "front_en": "What landmark 2010 Supreme Court case ruled on Governor removal by President?",
+        "front_ta": "குடியரசுத் தலைவரால் ஆளுநர் நீக்கம் குறித்து தீர்ப்பளித்த முக்கிய 2010 உச்ச நீதிமன்ற வழக்கு எது?",
+        "back_en": "B.P. Singhal v. Union of India (2010) — Removal cannot be arbitrary or based on political grounds.",
+        "back_ta": "பி.பி. சிங்கால் v. இந்திய ஒன்றியம் (2010) — ஆளுநர் நீக்கம் தன்னிச்சையாகவோ அரசியல் காரணங்களுக்காகவோ இருக்கக்கூடாது."
+      },
+      {
+        "id": "gov_p1_c10",
+        "front_en": "Does the Governor continue in office after 5 years if no successor is appointed?",
+        "front_ta": "புதிய ஆளுநர் நியமிக்கப்படாத பட்சத்தில் 5 ஆண்டுகளுக்குப் பிறகும் தற்போதைய ஆளுநர் பதவியில் தொடர்வாரா?",
+        "back_en": "YES. Continues until successor assumes office to prevent a constitutional vacuum (Art 156(3) proviso).",
+        "back_ta": "ஆம். அரசியலமைப்பு வெற்றிடத்தைத் தவிர்க்க புதிய ஆளுநர் பதவியேற்கும் வரை தொடர்வார் (விதி 156(3) proviso)."
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "tbl_governor_vs_president_p1",
+        "title_en": "1. Governor vs President Comparison (Position & Appointment)",
+        "title_ta": "1. ஆளுநர் vs குடியரசுத் தலைவர் ஒப்பீடு (நிலை & நியமனம்)",
+        "headers_en": ["Feature / Dimension", "Governor of a State", "President of India"],
+        "headers_ta": ["அம்சம் / காரணி", "மாநில ஆளுநர்", "இந்தியக் குடியரசுத் தலைவர்"],
+        "rows_en": [
+          ["Executive Status", "Constitutional Head of State Executive (Art 154)", "Constitutional Head of Union Executive (Art 53)"],
+          ["Mode of Selection", "APPOINTED by President by warrant (Art 155)", "INDIRECTLY ELECTED by Electoral College (Art 54)"],
+          ["Minimum Age", "35 Years (Art 157)", "35 Years (Art 58)"],
+          ["House Membership Eligibility", "Must NOT be an MP or MLA (Art 158)", "Must be qualified for election as Lok Sabha MP (Art 58)"],
+          ["Oath Administered By", "Chief Justice of State High Court (Art 159)", "Chief Justice of India (CJI) (Art 60)"],
+          ["Tenure Security", "No fixed tenure; Holds office during President's pleasure (Art 156)", "Fixed 5-year term; Removed ONLY by Impeachment (Art 61)"],
+          ["Multi-Office Provision", "Same person can be Governor for 2+ States (7th Amend 1956)", "No such provision; President is for whole Union"]
+        ],
+        "rows_ta": [
+          ["நிர்வாக நிலை", "மாநில நிர்வாகத்தின் அரசியலமைப்புத் தலைவர் (விதி 154)", "மத்திய நிர்வாகத்தின் அரசியலமைப்புத் தலைவர் (விதி 53)"],
+          ["தேர்வு முறை", "குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார் (விதி 155)", "வாக்காளர் குழுவால் மறைமுகமாகத் தேர்ந்தெடுக்கப்படுகிறார் (விதி 54)"],
+          ["குறைந்தபட்ச வயது", "35 வயது (விதி 157)", "35 வயது (விதி 58)"],
+          ["அவை உறுப்பினர் தகுதி", "எம்பி அல்லது எம்எல்ஏ-வாக இருக்கக்கூடாது (விதி 158)", "மக்களவை எம்பி-யாகத் தேர்ந்தெடுக்கப்படத் தகுதி வேண்டும் (விதி 58)"],
+          ["பதவிப் பிரமாணம்", "மாநில உயர் நீதிமன்றத் தலைமை நீதிபதி (விதி 159)", "இந்தியத் தலைமை நீதிபதி (CJI) (விதி 60)"],
+          ["பதவிக்காலப் பாதுகாப்பு", "நிலையான பதவிக்காலம் இல்லை; குடியரசுத் தலைவர் விருப்பம் (விதி 156)", "5 ஆண்டுகள் நிலையான பதவிக்காலம்; பதவி நீக்கம் மூலம் மட்டுமே நீக்க முடியும் (விதி 61)"],
+          ["பல பதவி ஏற்பு", "ஒரே நபர் 2+ மாநிலங்களுக்கு ஆளுநராகலாம் (1956 7-வது திருத்தம்)", "அவ்வாறு இல்லை; முழு இந்திய ஒன்றியத்திற்கும் ஒருவர்"]
+        ]
+      },
+      {
+        "id": "tbl_governor_vs_cm_p1",
+        "title_en": "2. Governor vs Chief Minister Comparison (Constitutional Head vs Real Executive)",
+        "title_ta": "2. ஆளுநர் vs முதலமைச்சர் ஒப்பீடு (அரசியலமைப்புத் தலைவர் vs உண்மையான நிர்வாகி)",
+        "headers_en": ["Dimension", "Governor of a State", "Chief Minister of a State"],
+        "headers_ta": ["அம்சம்", "மாநில ஆளுநர்", "மாநில முதலமைச்சர்"],
+        "rows_en": [
+          ["Executive Role", "De Jure (Nominal / Constitutional) Head of State", "De Facto (Real) Executive Head of State Government"],
+          ["Constitutional Article", "Article 153 & Article 154", "Article 163 & Article 164"],
+          ["Appointment Basis", "Appointed by President under Art 155", "Appointed by Governor under Art 164(1)"],
+          ["Council of Ministers", "Acts on aid and advice of COM (Art 163)", "Heads the Council of Ministers (Art 163)"],
+          ["Discretionary Powers", "Enjoys express Constitutional Discretion (Art 163(1))", "Leads political and legislative initiatives"],
+          ["Tenure", "Holds office during President's pleasure", "Holds office as long as he enjoys Assembly majority"]
+        ],
+        "rows_ta": [
+          ["நிர்வாகப் பங்கு", "பெயரளவு (De Jure) அரசியலமைப்புத் தலைவர்", "உண்மையான (De Facto) அரசாங்க நிர்வாகத் தலைவர்"],
+          ["அரசியலமைப்பு விதி", "உறுப்பு 153 & உறுப்பு 154", "உறுப்பு 163 & உறுப்பு 164"],
+          ["நியமன அடிப்படை", "விதி 155-ன் கீழ் குடியரசுத் தலைவரால் நியமனம்", "விதி 164(1)-ன் கீழ் ஆளுநரால் நியமனம்"],
+          ["அமைச்சரவை", "அமைச்சரவை ஆலோசனையின் படி செயல்படுகிறார் (விதி 163)", "அமைச்சரவையின் தலைவராகச் செயல்படுகிறார் (விதி 163)"],
+          ["சுயவிருப்ப அதிகாரம்", "தெளிவான அரசியலமைப்பு சுயவிருப்ப அதிகாரம் உண்டு (விதி 163(1))", "அரசியல் மற்றும் சட்டமன்ற செயல்பாடுகளை வழிநடத்துகிறார்"],
+          ["பதவிக்காலம்", "குடியரசுத் தலைவரின் விருப்பம் உள்ளவரை", "சட்டமன்றப் பெரும்பான்மை இருக்கும் வரை"]
+        ]
+      },
+      {
+        "id": "tbl_governor_vs_vp_p1",
+        "title_en": "3. Governor vs Vice-President Comparison",
+        "title_ta": "3. ஆளுநர் vs துணைக் குடியரசுத் தலைவர் ஒப்பீடு",
+        "headers_en": ["Feature", "Governor of a State", "Vice-President of India"],
+        "headers_ta": ["அம்சம்", "மாநில ஆளுநர்", "இந்தியத் துணைக் குடியரசுத் தலைவர்"],
+        "rows_en": [
+          ["Selection Method", "Appointed by President (Art 155)", "Elected by Parliament Electoral College (Art 66)"],
+          ["Minimum Age", "35 Years (Art 157)", "35 Years (Art 66(3))"],
+          ["House Qualification", "No specific House qualification needed", "Must be qualified for election to Rajya Sabha"],
+          ["Oath Administered By", "Chief Justice of State High Court (Art 159)", "President of India (Art 69)"],
+          ["Primary Office", "Executive Head of a State", "Ex-Officio Chairman of Rajya Sabha (Art 64)"],
+          ["Removal", "Removed by President at pleasure (Art 156)", "Removed by Rajya Sabha resolution agreed by Lok Sabha (Art 67b)"]
+        ],
+        "rows_ta": [
+          ["தேர்வு முறை", "குடியரசுத் தலைவரால் நியமனம் (விதி 155)", "நாடாளுமன்ற வாக்காளர் குழுவால் தேர்தல் (விதி 66)"],
+          ["குறைந்தபட்ச வயது", "35 வயது (விதி 157)", "35 வயது (விதி 66(3))"],
+          ["அவைத் தகுதி", "குறிப்பிட்ட அவைத் தகுதி தேவையில்லை", "மாநிலங்களவை உறுப்பினராகத் தகுதி வேண்டும்"],
+          ["பதவிப் பிரமாணம்", "மாநில உயர் நீதிமன்றத் தலைமை நீதிபதி (விதி 159)", "இந்தியக் குடியரசுத் தலைவர் (விதி 69)"],
+          ["முதன்மைப் பதவி", "மாநிலத்தின் நிர்வாகத் தலைவர்", "மாநிலங்களவையின் பதவிவழித் தலைவர் (விதி 64)"],
+          ["பதவி நீக்கம்", "குடியரசுத் தலைவர் விருப்பப்படி நீக்கம் (விதி 156)", "மாநிலங்களவைத் தீர்மானம் மூலம் நீக்கம் (விதி 67b)"]
+        ]
+      },
+      {
+        "id": "tbl_governor_vs_pm_p1",
+        "title_en": "4. Governor vs Prime Minister Comparison",
+        "title_ta": "4. ஆளுநர் vs பிரதமர் ஒப்பீடு",
+        "headers_en": ["Feature", "Governor of a State", "Prime Minister of India"],
+        "headers_ta": ["அம்சம்", "மாநில ஆளுநர்", "இந்தியப் பிரதமர்"],
+        "rows_en": [
+          ["Level of Office", "State Executive (Part VI)", "Union Executive (Part V)"],
+          ["Nature of Executive", "De Jure (Nominal) Head of State", "De Facto (Real) Head of Union Government"],
+          ["Mode of Office Entry", "Appointed by President (Art 155)", "Appointed by President as Lok Sabha Majority Leader (Art 75)"],
+          ["Oath Administered By", "Chief Justice of High Court (Art 159)", "President of India (Art 75(4))"],
+          ["Parliamentary Membership", "Must NOT be an MP or MLA", "MUST be an MP of Lok Sabha or Rajya Sabha within 6 months"]
+        ],
+        "rows_ta": [
+          ["பதவி நிலை", "மாநில நிர்வாகம் (பகுதி VI)", "மத்திய நிர்வாகம் (பகுதி V)"],
+          ["நிர்வாகத் தன்மை", "மாநிலத்தின் பெயரளவு (De Jure) தலைவர்", "மத்திய அரசின் உண்மையான (De Facto) தலைவர்"],
+          ["பதவி நுழைவு முறை", "குடியரசுத் தலைவரால் நியமனம் (விதி 155)", "மக்களவைப் பெரும்பான்மைத் தலைவராக குடியரசுத் தலைவரால் நியமனம் (விதி 75)"],
+          ["பதவிப் பிரமாணம்", "உயர் நீதிமன்றத் தலைமை நீதிபதி (விதி 159)", "இந்தியக் குடியரசுத் தலைவர் (விதி 75(4))"],
+          ["நாடாளுமன்ற உறுப்பினர்", "எம்பி அல்லது எம்எல்ஏ-வாக இருக்கக்கூடாது", "6 மாதங்களுக்குள் மக்களவை/மாநிலங்களவை எம்பியாக இருக்க வேண்டும்"]
+        ]
+      },
+      {
+        "id": "tbl_appointment_vs_election_p1",
+        "title_en": "5. Appointment vs Election Model Comparison (Why Canadian Model was chosen)",
+        "title_ta": "5. நியமனம் vs தேர்தல் மாதிரி ஒப்பீடு (ஏன் கனடா மாதிரி தேர்ந்தெடுக்கப்பட்டது)",
+        "headers_en": ["Aspect", "Elected Governor Model (US System - Rejected)", "Appointed Governor Model (Canadian System - Adopted)"],
+        "headers_ta": ["கூறு", "தேர்ந்தெடுக்கப்படும் ஆளுநர் மாதிரி (அமெரிக்க முறை - நிராகரிக்கப்பட்டது)", "நியமிக்கப்படும் ஆளுநர் மாதிரி (கனடா முறை - ஏற்றுக்கொள்ளப்பட்டது)"],
+        "rows_en": [
+          ["Executive Conflict", "Creates direct conflict between elected CM and elected Governor", "Prevents friction; Governor acts as neutral constitutional head"],
+          ["Union-State Unity", "May encourage separatist or narrow regional tendencies", "Strengthens national integration and Union supervision"],
+          ["Political Neutrality", "Governor would belong to a party and engage in active politics", "Governor can act as an impartial constitutional umpire"],
+          ["Financial Cost", "Huge expenditure on nationwide state gubernatorial elections", "No electoral expenditure required"]
+        ],
+        "rows_ta": [
+          ["நிர்வாக மோதல்", "தேர்ந்தெடுக்கப்பட்ட முதலமைச்சருக்கும் ஆளுநருக்கும் இடையே நேரடி மோதலை உருவாக்கும்", "மோதலைத் தவிர்க்கிறது; ஆளுநர் நடுநிலை அரசியலமைப்புத் தலைவராகச் செயல்படுகிறார்"],
+          ["மத்திய-மாநில ஒற்றுமை", "மாநில பிரிவினைவாதப் போக்கிற்கு வழிவகுக்கலாம்", "தேசிய ஒருமைப்பாட்டையும் மத்திய அரசின் மேற்பார்வையையும் பலப்படுத்துகிறது"],
+          ["அரசியல் நடுநிலைமை", "ஆளுநர் ஒரு அரசியல் கட்சிக்குச் சொந்தமாக தீவிர அரசியலில் ஈடுபடுவார்", "ஆளுநர் நடுநிலையான அரசியலமைப்பு நடுவராகச் செயல்பட முடியும்"],
+          ["நிதிச் செலவு", "மாநில ஆளுநர் தேர்தல்களுக்குப் பெருமளவு செலவாகும்", "தேர்தல் செலவுகள் எதுவும் தேவையில்லை"]
+        ]
+      },
+      {
+        "id": "tbl_constitutional_vs_real_exec_p1",
+        "title_en": "6. Constitutional Head vs Real Executive Comparison (State Level)",
+        "title_ta": "6. அரசியலமைப்புத் தலைவர் vs உண்மையான நிர்வாகி ஒப்பீடு (மாநில நிலை)",
+        "headers_en": ["Parameter", "Constitutional Head (Governor)", "Real Executive (Chief Minister + Council of Ministers)"],
+        "headers_ta": ["அளவுரு", "அரசியலமைப்புத் தலைவர் (ஆளுநர்)", "உண்மையான நிர்வாகி (முதலமைச்சர் + அமைச்சரவை)"],
+        "rows_en": [
+          ["Constitutional Symbol", "State executive orders issued in Governor's name (Art 166)", "Formulates and implements actual state policies"],
+          ["Democratic Mandate", "Appointed by President; no direct popular mandate", "Directly/indirectly elected by the voters of the State"],
+          ["Responsibility to Assembly", "Not answerable to State Legislative Assembly", "Collectively responsible to State Legislative Assembly (Art 164)"],
+          ["Policy Execution", "Acts on binding advice of Cabinet (except in discretion)", "Drives legislative and executive governance of the State"]
+        ],
+        "rows_ta": [
+          ["அரசியலமைப்பு சின்னம்", "அரசு நிர்வாக ஆணைகள் ஆளுநர் பெயரால் வெளியாகும் (விதி 166)", "உண்மையான மாநிலக் கொள்கைகளை உருவாக்கிச் செயல்படுத்துகிறது"],
+          ["மக்களாணை", "குடியரசுத் தலைவரால் நியமனம்; நேரடி மக்களாணை இல்லை", "மாநில வாக்காளர்களால் நேரடியாக/மறைமுகமாகத் தேர்ந்தெடுக்கப்பட்டவர்"],
+          ["சட்டமன்றப் பொறுப்பு", "மாநில சட்டமன்றத்திற்குப் பொறுப்பல்ல", "மாநில சட்டமன்றத்திற்குச் கூட்டாகப் பொறுப்பானவர்கள் (விதி 164)"],
+          ["கொள்கை அமலாக்கம்", "அமைச்சரவையின் கட்டாய ஆலோசனையின் படி செயல்படுகிறார்", "மாநிலத்தின் சட்டமன்ற மற்றும் நிர்வாக ஆட்சியை வழிநடத்துகிறது"]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "Governor of a State (Part VI - Articles 153 to 162)",
+        "short_label": "Governor Part 1",
+        "children": [
+          {
+            "title": "1. Constitutional Position",
+            "short_label": "Position",
+            "children": [
+              {"title": "Article 153: Governor for each State (7th Amend 1956: 1 person for 2+ States)", "short_label": "Art 153"},
+              {"title": "Article 154: Executive power of State vested in Governor (De Jure Head)", "short_label": "Art 154"}
+            ]
+          },
+          {
+            "title": "2. Appointment & Model",
+            "short_label": "Appointment",
+            "children": [
+              {"title": "Article 155: Appointed by President by warrant under hand and seal", "short_label": "Art 155"},
+              {"title": "Canadian Model: Appointed from Centre (Not elected like US model)", "short_label": "Canadian Model"}
+            ]
+          },
+          {
+            "title": "3. Qualifications & Conditions",
+            "short_label": "Qualifications",
+            "children": [
+              {"title": "Article 157: Citizen of India + 35 years of age", "short_label": "Art 157"},
+              {"title": "Article 158: No MP/MLA, No office of profit, Rent-free Raj Bhavan, Salary shared if 2+ States", "short_label": "Art 158"}
+            ]
+          },
+          {
+            "title": "4. Tenure & Oath",
+            "short_label": "Tenure & Oath",
+            "children": [
+              {"title": "Article 156: Holds office during Pleasure of President (5-year normal term)", "short_label": "Art 156"},
+              {"title": "Article 159: Oath administered by Chief Justice of State High Court", "short_label": "Art 159"}
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": "1. Governor Appointment Trap (ஆளுநர் நியமனப் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Believing the Governor is elected by the State Legislative Assembly or directly by the people.",
+            "FACT: Under Article 155, the Governor is APPOINTED by the President of India. There is NO election for Governor in India (Canadian model)."
+          ],
+          "ta": [
+            "பொறி: ஆளுநர் மாநில சட்டமன்றத்தால் அல்லது மக்களால் நேரடியாகத் தேர்ந்தெடுக்கப்படுகிறார் என நினைப்பது.",
+            "உண்மை: உறுப்பு 155-ன் படி ஆளுநர் இந்தியக் குடியரசுத் தலைவரால் 'நியமிக்கப்படுகிறார்'. இந்தியாவில் ஆளுநருக்குத் தேர்தல் இல்லை (கனடா மாதிரி)."
+          ]
+        }
+      },
+      {
+        "title": "2. Oath Administering Authority Trap (பதவிப் பிரமாண அதிகாரிப் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Assuming the President of India or Chief Minister administers the Oath to the Governor.",
+            "FACT: Under Article 159, the Oath to the Governor is administered by the CHIEF JUSTICE OF THE HIGH COURT exercising jurisdiction over the State (or senior-most judge available)."
+          ],
+          "ta": [
+            "பொறி: குடியரசுத் தலைவர் அல்லது முதலமைச்சர் ஆளுநருக்குப் பிரமாணம் செய்து வைக்கிறார் என நினைப்பது.",
+            "உண்மை: உறுப்பு 159-ன் படி ஆளுநருக்குப் பதவிப் பிரமாணம் செய்து வைப்பவர் உயர் நீதிமன்றத் தலைமை நீதிபதி ஆவார்."
+          ]
+        }
+      },
+      {
+        "title": "3. Five-Year Tenure Security Trap (5 ஆண்டு பதவிக்காலப் பாதுகாப்புப் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Believing the Governor has a guaranteed fixed 5-year tenure like the President.",
+            "FACT: Under Article 156(1), the Governor holds office DURING THE PLEASURE OF THE PRESIDENT. He can be removed or transferred by the President at any time without specifying reasons (B.P. Singhal 2010 ruling)."
+          ],
+          "ta": [
+            "பொறி: குடியரசுத் தலைவர் போல ஆளுநருக்கும் 5 ஆண்டுகள் நிலையான பதவிக்காலப் பாதுகாப்பு உண்டு என நினைப்பது.",
+            "உண்மை: உறுப்பு 156(1)-ன் படி ஆளுநர் குடியரசுத் தலைவரின் 'விருப்பம் உள்ளவரை' பதவியில் நீடிப்பார். குடியரசுத் தலைவர் எப்போது வேண்டுமானாலும் அவரை நீக்கலாம்."
+          ]
+        }
+      },
+      {
+        "title": "4. Age Qualification Trap (வயதுத் தகுதிப் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Confusing Governor's minimum age qualification (35 years) with CM/MLA qualification (25 years).",
+            "FACT: Article 157 sets the minimum age for Governor at 35 YEARS (Same as President and Vice-President)."
+          ],
+          "ta": [
+            "பொறி: ஆளுநரின் குறைந்தபட்ச வயதை (35 வயது) முதலமைச்சர்/எம்எல்ஏ வயதுடன் (25 வயது) குழப்பிக் கொள்ளுதல்.",
+            "உண்மை: உறுப்பு 157-ன் படி ஆளுநருக்குக் குறைந்தபட்ச வயது 35 ஆண்டுகள் ஆகும் (குடியரசுத் தலைவர் & துணைக் குடியரசுத் தலைவர் போன்றே)."
+          ]
+        }
+      },
+      {
+        "title": "5. Dual State Governor Emoluments Trap (இரட்டை மாநில ஆளுநர் ஊதியப் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Assuming a Governor serving two States receives double salary.",
+            "FACT: Under Article 158(3A), when the same person is Governor of two or more States, the emoluments are shared between the concerned States in such proportion as determined by the PRESIDENT."
+          ],
+          "ta": [
+            "பொறி: இரண்டு மாநிலங்களுக்கு ஆளுநராக இருக்கும் ஒருவருக்கு இரட்டிப்புச் சம்பளம் கிடைக்கும் என நினைப்பது.",
+            "உண்மை: உறுப்பு 158(3A)-ன் படி குடியரசுத் தலைவர் தீர்மானிக்கும் விகிதத்தில் சம்பந்தப்பட்ட மாநிலங்கள் ஊதியத்தைப் பகிர்ந்து அளிக்கும்."
+          ]
+        }
+      }
+    ],
+    "quick_revision": {
+      "en": [
+        "Office & Position: Article 153 (Governor for each state; 1 person for 2+ states allowed under 7th Amend 1956). De Jure executive head.",
+        "Executive Power: Article 154 (Vested in Governor, exercised on aid/advice of CM & Council of Ministers).",
+        "Appointment: Article 155 (Appointed by President by warrant; Canadian model).",
+        "Tenure: Article 156 (5 years subject to President's Pleasure; Resigns to President; Continues until successor assumes office).",
+        "Qualifications: Article 157 (Indian Citizen + 35 Years of Age ONLY).",
+        "Conditions: Article 158 (No MP/MLA, No office of profit, Raj Bhavan, Salary shared by States if serving 2+ states as determined by President).",
+        "Oath: Article 159 (Administered by Chief Justice of State High Court)."
+      ],
+      "ta": [
+        "பதவி & நிலை: உறுப்பு 153 (ஒவ்வொரு மாநிலத்திற்கும் ஆளுநர்; 1956 7-வது திருத்தத்தின் படி 1 நபர் 2+ மாநிலங்களுக்கு ஆளுநராகலாம்). பெயரளவு நிர்வாகத் தலைவர்.",
+        "நிர்வாக அதிகாரம்: உறுப்பு 154 (ஆளுநரிடம் ஒப்படைக்கப்பட்டுள்ளது, முதலமைச்சர் மற்றும் அமைச்சரவை ஆலோசனையின் படி செயல்படுகிறார்).",
+        "நியமனம்: உறுப்பு 155 (குடியரசுத் தலைவரால் சாசனம் மூலம் நியமனம்; கனடா மாதிரி).",
+        "பதவிக்காலம்: உறுப்பு 156 (குடியரசுத் தலைவர் விருப்பத்திற்குட்பட்ட 5 ஆண்டுகள்; குடியரசுத் தலைவரிடம் ராஜினாமா; புதியவர் வரும் வரை தொடர்ச்சி).",
+        "தகுதிகள்: உறுப்பு 157 (இந்தியக் குடிமகன் + 35 வயது மட்டுமே).",
+        "நிபந்தனைகள்: உறுப்பு 158 (எம்பி/எம்எல்ஏ பதவி இல்லை, ஆதாயம் தரும் பதவி இல்லை, ராஜ் பவன், 2+ மாநிலங்களுக்கு குடியரசுத் தலைவர் வகுக்கும் விகிதத்தில் ஊதியப் பங்கீடு).",
+        "பதவிப் பிரமாணம்: உறுப்பு 159 (மாநில உயர் நீதிமன்றத் தலைமை நீதிபதி வழங்குவது)."
+      ]
+    },
+    "must_remember": {
+      "en": [
+        "MUST REMEMBER: Governor is APPOINTED by President (Art 155), NOT elected.",
+        "MUST REMEMBER: Minimum age is 35 YEARS (Art 157).",
+        "MUST REMEMBER: Oath is administered by CHIEF JUSTICE OF HIGH COURT (Art 159).",
+        "MUST REMEMBER: Holds office during PLEASURE OF PRESIDENT (Art 156(1)).",
+        "MUST REMEMBER: 7th Amendment 1956 allows 1 Governor for 2 or more States."
+      ],
+      "ta": [
+        "நினைவில் கொள்க: ஆளுநர் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார் (விதி 155), தேர்ந்தெடுக்கப்படுவதில்லை.",
+        "நினைவில் கொள்க: குறைந்தபட்ச வயது 35 ஆண்டுகள் (விதி 157).",
+        "நினைவில் கொள்க: பதவிப் பிரமாணம் உயர் நீதிமன்றத் தலைமை நீதிபதியால் வழங்கப்படுகிறது (விதி 159).",
+        "நினைவில் கொள்க: குடியரசுத் தலைவரின் விருப்பம் உள்ளவரை பதவியில் நீடிப்பார் (விதி 156(1)).",
+        "நினைவில் கொள்க: 1956 7-வது திருத்தம் ஒரே ஆளுநரை 2 அல்லது அதற்கு மேற்பட்ட மாநிலங்களுக்கு நியமிக்க அனுமதிக்கிறது."
+      ]
+    }
+  }
+}
+
+target_file = "data/notes/polity/governor_part_1.json"
+os.makedirs("data/notes/polity", exist_ok=True)
+
+with open(target_file, "w", encoding="utf-8") as f:
+  json.dump(part1_data, f, ensure_ascii=False, indent=2)
+
+print(f"✅ Governor Part 1 with revision_cards successfully updated and saved to: {target_file}")

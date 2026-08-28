@@ -60,7 +60,7 @@ class ComponentRegistry:
         # 6. Timeline
         self.register(ComponentSpec(6, ["timeline", "chronology"], render_timeline, icon="⏳", display_title="Timeline"))
         # 8. Comparison
-        self.register(ComponentSpec(8, ["comparison", "comparison_sg_ag", "tables"], render_comparison, icon="⚖️", display_title="Comparison"))
+        self.register(ComponentSpec(8, ["comparison", "comparison_tables", "comparison_table", "comparison_sg_ag", "tables"], render_comparison, icon="⚖️", display_title="Comparison"))
         # 9. Fact Box
         self.register(ComponentSpec(9, ["important_facts", "facts", "fact_box"], render_fact_box, icon="💡", display_title="Fact Box"))
         # 10. Memory Tricks

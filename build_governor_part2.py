@@ -1,0 +1,632 @@
+# -*- coding: utf-8 -*-
+"""
+Builder Script for Governor of a State Notes — Part 2
+Subject: Indian Polity
+Topic: Governor of a State – Part 2
+"""
+
+import json
+import os
+import sys
+
+sys.stdout.reconfigure(encoding='utf-8')
+
+print("==================================================")
+print("BUILDING GOVERNOR NOTES — PART 2")
+print("==================================================")
+
+part2_data = {
+  "meta": {
+    "topic_id": "polity_governor_part_2",
+    "repository_id": "polity_governor",
+    "display_title": "Governor of a State – Part 2",
+    "part": 2,
+    "total_parts": 3,
+    "subject": "polity",
+    "chapter": "Governor of a State",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "topic_id": "polity_governor_part_2",
+    "repository_id": "polity_governor",
+    "display_title": "Governor of a State – Part 2",
+    "part": 2,
+    "total_parts": 3,
+    "subject": "polity",
+    "chapter": "Governor of a State",
+    "language": "English + Tamil"
+  },
+  "keywords": [
+    "Governor Powers and Functions",
+    "Executive Powers",
+    "Legislative Powers",
+    "Financial Powers",
+    "Judicial Powers",
+    "Article 161 Pardoning Power",
+    "Article 213 Ordinance Power",
+    "Article 174 Summoning",
+    "Article 175 Address and Messages",
+    "Article 176 Special Address",
+    "Article 200 Assent to Bills",
+    "Article 201 Reserved Bills",
+    "Article 165 Advocate General",
+    "Article 202 State Budget",
+    "TNPSC Polity Notes"
+  ],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [
+        "Master the Executive powers of Governor (Appointments of CM, Ministers under Art 164 with collective responsibility, Advocate General Art 165, SEC Art 243K, SPSC Art 315/317).",
+        "Analyze Legislative powers (Art 174 summoning/dissolution, Art 175 right to address/send messages, Art 176 special address, 1/6th MLC nomination Art 171(5), Art 200/201 Bill assent options).",
+        "Understand Financial powers (Art 207 Money Bill recommendation, Art 202 State Budget, Art 267(2) Contingency Fund, Art 243-I/243-Y State Finance Commission).",
+        "Compare Judicial powers under Article 161 (Governor Pardon) with Article 72 (President Pardon) — Death sentence & Court-Martial distinctions.",
+        "Master Ordinance-making power under Article 213 (Conditions, 6-week expiry rule, comparison with Art 123)."
+      ],
+      "ta": [
+        "ஆளுநரின் நிர்வாக அதிகாரங்களைக் கற்றல் (கூட்டுக் கூட்டுப் பொறுப்புடன் கூடிய முதலமைச்சர், அமைச்சர்கள் நியமனம் - விதி 164, மாநில வழக்கறிஞர் - விதி 165, SEC, SPSC நியமனங்கள்).",
+        "சட்டமன்ற அதிகாரங்களைப் பகுப்பாய்வு செய்தல் (விதி 174 அவையைக் கூட்டுதல்/கலைத்தல், விதி 175 அவைக்கு உரையாற்ற/செய்தி அனுப்பும் உரிமை, விதி 176 சிறப்பு உரை, 1/6 பங்கு மேலவை நியமனம், விதி 200/201 மசோதா ஒப்புதல் சாய்வுகள்).",
+        "நிதி அதிகாரங்களைப் புரிந்துகொள்வது (விதி 207 பண மசோதா பரிந்துரை, விதி 202 மாநில வரவு செலவுத் திட்டம், விதி 267(2) அவசரக்கால நிதி).",
+        "உறுப்பு 161 (ஆளுநர் மன்னிப்பு) மற்றும் உறுப்பு 72 (குடியரசுத் தலைவர் மன்னிப்பு) இடையிலான வேறுபாடுகளைக் கற்றல் — மரண தண்டனை & ராணுவ நீதிமன்ற விதிவிலக்குகள்.",
+        "உறுப்பு 213-ன் கீழ் அவசரச் சட்ட அதிகாரத்தில் தேர்ச்சி பெறுதல் (நிபந்தனைகள், 6 வார காலாவதி விதி, விதி 123 ஒப்பீடு)."
+      ]
+    }
+  },
+  "subject": "polity",
+  "topic": "Governor of a State",
+  "language": "English + Tamil",
+  "ui_type": "standard_notes",
+  "sections": [
+    {
+      "id": "sec_executive_powers",
+      "title_en": "1. Executive Powers & Administrative Appointments (Articles 154, 164, 165, 166)",
+      "title_ta": "1. நிர்வாக அதிகாரங்கள் & நிர்வாக நியமனங்கள் (உறுப்புகள் 154, 164, 165, 166)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_legislative_powers",
+      "title_en": "2. Legislative Powers & Bill Assent Mechanics (Articles 174, 175, 176, 200, 201)",
+      "title_ta": "2. சட்டமன்ற அதிகாரங்கள் & மசோதா ஒப்புதல் முறைகள் (உறுப்புகள் 174, 175, 176, 200, 201)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_financial_powers",
+      "title_en": "3. Financial Powers & Budgetary Roles (Articles 202, 207, 267)",
+      "title_ta": "3. நிதி அதிகாரங்கள் & வரவு செலவுத் திட்டப் பங்குகள் (உறுப்புகள் 202, 207, 267)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_judicial_powers",
+      "title_en": "4. Judicial Powers & Pardoning Capacity (Article 161 vs Article 72)",
+      "title_ta": "4. நீதித்துறை அதிகாரங்கள் & மன்னிப்பளிக்கும் அதிகாரம் (உறுப்பு 161 vs உறுப்பு 72)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_ordinance_power",
+      "title_en": "5. Ordinance-Making Power of Governor (Article 213)",
+      "title_ta": "5. ஆளுநரின் அவசரச் சட்ட அதிகாரம் (உறுப்பு 213)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "comparison_tables",
+      "title_en": "6. Mandatory Comparison Tables (Powers & Functions Focus)",
+      "title_ta": "6. கட்டாய ஒப்பீட்டு அட்டவணைகள் (அதிகாரங்கள் & பணிகள் கவனம்)",
+      "type": "comparison"
+    },
+    {
+      "id": "mind_map",
+      "title_en": "7. Mind Map & TNPSC Trap Points",
+      "title_ta": "7. மன வரைபடம் & டிஎன்பிஎஸ்சி பொறிப் புள்ளிகள்",
+      "type": "mind_map"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "The Governor exercises executive, legislative, financial, judicial, and emergency/ordinance powers vested in him by the Constitution, exercising constitutional authority formally while actual decisions are driven by the Council of Ministers.",
+      "ta": "ஆளுநர் அரசியலமைப்பால் அவருக்கு வழங்கப்பட்டுள்ள நிர்வாக, சட்டமன்ற, நிதி, நீதித்துறை மற்றும் அவசரச்சட்ட அதிகாரங்களைச் செயல்படுத்துகிறார். அரசியலமைப்பு அதிகாரத்தை முறைப்படிப் பயன்படுத்தினாலும், நடைமுறை முடிவுகள் அமைச்சரவையால் வழிநடத்தப்படுகின்றன."
+    },
+    "introduction": {
+      "en": "Part VI of the Constitution outlines the specific powers of the Governor. While these powers mirror those of the President at the Union level, crucial differences exist in judicial pardoning powers (Art 161 vs Art 72), legislative bill reservation (Art 200/201), and express constitutional discretion.",
+      "ta": "அரசியலமைப்பின் பகுதி VI ஆளுநரின் குறிப்பிட்ட அதிகாரங்களை வரையறுக்கிறது. இந்த அதிகாரங்கள் மத்திய அளவில் குடியரசுத் தலைவரின் அதிகாரங்களைப் பிரதிபலித்தாலும், நீதித்துறை மன்னிப்பு அதிகாரங்கள் (விதி 161 vs விதி 72), மசோதா ஒதுக்கீடு (விதி 200/201) மற்றும் அரசியலமைப்பு சுயவிருப்ப அதிகாரங்களில் முக்கிய வேறுபாடுகள் உள்ளன."
+    },
+    "sec_executive_powers": [
+      {
+        "title_en": "Constitutional Appointments & Executive Administration (Articles 154, 164, 165, 166)",
+        "title_ta": "அரசியலமைப்பு நியமனங்கள் & நிர்வாக ஆட்சி (உறுப்புகள் 154, 164, 165, 166)",
+        "points": {
+          "en": [
+            "Executive Action Orders (Art 166(1)): All executive actions of the Government of a State are formally expressed to be taken in the name of the Governor.",
+            "Appointment of Chief Minister & Council (Art 164(1)): Appoints the Chief Minister and other Ministers on the advice of the Chief Minister.",
+            "Collective Responsibility (Art 164(2)): The Council of Ministers is collectively responsible to the Legislative Assembly of the State.",
+            "Advocate General of the State (Art 165): Appoints the Advocate General for the State and determines his remuneration. Holds office during pleasure of Governor.",
+            "State Election Commissioner (Art 243K): Appoints the SEC and determines conditions of service. (Note: SEC can be removed ONLY in like manner as a High Court Judge).",
+            "State Public Service Commission (Art 315/317): Appoints the Chairman and Members of SPSC. (CRITICAL TRAP: SPSC members are APPOINTED by Governor, BUT REMOVED ONLY by the President under Art 317!).",
+            "University Chancellorship: Acts as ex-officio Chancellor of State Universities and appoints Vice-Chancellors (under State University Acts)."
+          ],
+          "ta": [
+            "நிர்வாக ஆணை வெளியீடு (விதி 166(1)): மாநில அரசின் அனைத்து நிர்வாக நடவடிக்கைகளும் ஆளுநரின் பெயராலேயே முறைப்படி மேற்கொள்ளப்படுகின்றன.",
+            "முதலமைச்சர் & அமைச்சரவை நியமனம் (விதி 164(1)): முதலமைச்சரையும், முதலமைச்சரின் ஆலோசனையின் பேரில் இதர அமைச்சர்களையும் நியமிக்கிறார்.",
+            "கூட்டுப் பொறுப்பு (விதி 164(2)): அமைச்சரவை மாநிலச் சட்டப்பேரவைக்குக் கூட்டாகப் பொறுப்பானது.",
+            "மாநில தலைமை வழக்கறிஞர் (விதி 165): மாநிலத்தின் அட்வகேட் ஜெனரலை நியமித்து அவரது ஊதியத்தைத் தீர்மானிக்கிறார். அவர் ஆளுநரின் விருப்பம் வரை பதவியில் நீடிப்பார்.",
+            "மாநிலத் தேர்தல் ஆணையர் (விதி 243K): SEC-ஐ நியமித்துப் பணி நிபந்தனைகளைத் தீர்மானிக்கிறார். (குறிப்பு: உயர் நீதிமன்ற நீதிபதியை நீக்குவது போன்றே SEC நீக்கப்பட முடியும்).",
+            "மாநில அரசுப் பணியாளர் தேர்வாணையம் (விதி 315/317): SPSC தலைவர் மற்றும் உறுப்பினர்களை நியமிக்கிறார். (முக்கியப் பொறி: SPSC உறுப்பினர்களை நியமிப்பவர் ஆளுநர், ஆனால் பதவி நீக்கம் செய்பவர் குடியரசுத் தலைவர் மட்டுமே - விதி 317!).",
+            "பல்கலைக்கழக வேந்தர்: மாநிலப் பல்கலைக்கழகங்களின் பதவிவழி வேந்தராகச் செயல்பட்டு துணைவேந்தர்களை நியமிக்கிறார்."
+          ]
+        }
+      }
+    ],
+    "sec_legislative_powers": [
+      {
+        "title_en": "Legislative Sessions, Address & Messages (Articles 174, 175 & 176)",
+        "title_ta": "சட்டமன்றக் கூட்டத்தொடர், உரை & செய்திகள் (உறுப்புகள் 174, 175 & 176)",
+        "points": {
+          "en": [
+            "Summoning & Prorogation (Art 174(1)): Summons and prorogues both Houses of the State Legislature. Six months shall not intervene between last sitting in one session and first sitting in next session.",
+            "Dissolution of Assembly (Art 174(2)(b)): Can dissolve the State Legislative Assembly before 5 years on advice of CM.",
+            "Right to Address and Send Messages (Art 175): Governor has the right to address the Legislative Assembly (or either/both Houses in bicameral) and can send messages to the House regarding any pending Bill or other matters, which the House must consider with all convenient dispatch.",
+            "Special Address (Art 176): Addresses the State Legislature at the commencement of the first session after each general election and the first session of each year."
+          ],
+          "ta": [
+            "கூட்டுதல் & ஒத்திவைத்தல் (விதி 174(1)): மாநில சட்டமன்றத்தின் கூட்டத்தைக் கூட்டுகிறார் மற்றும் ஒத்திவைக்கிறார். இரு கூட்டத்தொடர்களுக்கு இடையே 6 மாதங்களுக்கு மேல் இடைவெளி இருக்கக்கூடாது.",
+            "சட்டமன்றக் கலைப்பு (விதி 174(2)(b)): முதலமைச்சரின் ஆலோசனையின் பேரில் 5 ஆண்டுகளுக்கு முன்பே சட்டப்பேரவையைக் கலைக்கலாம்.",
+            "உரையாற்ற மற்றும் செய்தி அனுப்பும் உரிமை (விதி 175): மாநில சட்டமன்றத்தில் உரையாற்றவும், நிலுவையில் உள்ள மசோதாக்கள் அல்லது பிற விஷயங்கள் குறித்து அவைக்குச் செய்திகளை அனுப்பவும் ஆளுநருக்கு உரிமையுண்டு. அவை அதை உடனடியாக பரிசீலிக்க வேண்டும்.",
+            "சிறப்பு உரை (விதி 176): பொதுத் தேர்தலுக்குப் பிந்தைய முதல் கூட்டத்தொடரின் தொடக்கத்திலும், ஒவ்வொரு ஆண்டின் முதல் கூட்டத்தொடரின் தொடக்கத்திலும் உரையாற்றுகிறார்."
+          ]
+        }
+      },
+      {
+        "title_en": "Nomination of Members & Bill Assent Options (Articles 171, 200, 201)",
+        "title_ta": "உறுப்பினர்கள் நியமனம் & மசோதா ஒப்புதல் சாய்வுகள் (உறுப்புகள் 171, 200, 201)",
+        "points": {
+          "en": [
+            "Nomination to Legislative Council (Art 171(5)): Nominates 1/6th of total members of MLC from persons having special knowledge in Literature, Science, Art, Co-operative Movement, and Social Service. (Note: 'Co-operative Movement' is present in Art 171 but NOT in Rajya Sabha Art 80!).",
+            "Article 200 Assent Options: When a Bill passed by State Legislature is presented to Governor, he has 4 options:",
+            "  1. Gives assent to the Bill (Bill becomes Act).",
+            "  2. Withholds assent to the Bill (Bill dies).",
+            "  3. Returns the Bill for reconsideration (Non-Money Bills only). If re-passed by Legislature with or without amendments, Governor MUST give assent.",
+            "  4. Reserves the Bill for President's consideration (Mandatory if Bill endangers position of High Court).",
+            "Article 201 Reserved Bills: When reserved, President can give assent, withhold assent, or direct Governor to return Bill (reconsidered within 6 months). President is NOT bound to assent even if re-passed!"
+          ],
+          "ta": [
+            "சட்ட மேலவை உறுப்பினர்கள் நியமனம் (விதி 171(5)): இலக்கியம், அறிவியல், கலை, கூட்டுறவு இயக்கம், சமூக சேவை ஆகிய துறைகளில் 1/6 பங்கு உறுப்பினர்களை நியமிக்கிறார். (குறிப்பு: 'கூட்டுறவு இயக்கம்' என்பது மாநில மேலவை நியமனத்தில் மட்டுமே உள்ளது, மாநிலங்களவையில் இல்லை!).",
+            "உறுப்பு 200 மசோதா ஒப்புதல் சாய்வுகள்: சட்டமன்றம் நிறைவேற்றிய மசோதா ஆளுநரிடம் வரும்போது 4 சாய்வுகள் உள்ளன:",
+            "  1. மசோதாவிற்கு ஒப்புதல் அளித்தல் (மசோதா சட்டமாகிறது).",
+            "  2. ஒப்புதலை நிறுத்தி வைத்தல் (மசோதா ரத்தாகிறது).",
+            "  3. மறுபரிசீலனைக்குத் திருப்பி அனுப்புதல் (பண மசோதா தவிர). சட்டமன்றம் மீண்டும் நிறைவேற்றினால் ஆளுநர் கட்டாயம் ஒப்புதல் அளிக்க வேண்டும்.",
+            "  4. குடியரசுத் தலைவரின் பரிசீலனைக்கு ஒதுக்கி வைத்தல் (உயர் நீதிமன்ற அதிகாரத்தைப் பாதிக்கும் மசோதாக்களுக்கு இது கட்டாயம்).",
+            "உறுப்பு 201 ஒதுக்கப்பட்ட மசோதாக்கள்: குடியரசுத் தலைவர் ஒப்புதல் அளிக்கலாம், நிறுத்தி வைக்கலாம் அல்லது திருப்பி அனுப்ப ஆணையிடலாம் (6 மாதத்திற்குள் பரிசீலனை). மீண்டும் நிறைவேற்றினாலும் குடியரசுத் தலைவர் ஒப்புதல் அளிக்கக் கடமைப்பட்டவரல்ல!"
+          ]
+        }
+      }
+    ],
+    "sec_financial_powers": [
+      {
+        "title_en": "Budget, Money Bills & Contingency Fund Roles",
+        "title_ta": "வரவு செலவுத் திட்டம், பண மசோதாக்கள் & அவசரக்கால நிதிப் பங்குகள்",
+        "points": {
+          "en": [
+            "Money Bills Recommendation (Art 207(1)): Money Bills can be introduced in the Legislative Assembly ONLY with the prior recommendation of the Governor.",
+            "Annual Financial Statement (Art 202): Ensures that the State Budget (Annual Financial Statement) is laid before the State Legislature every financial year.",
+            "State Contingency Fund (Art 267(2)): Can make advances out of the Contingency Fund of the State to meet unforeseen expenditure pending authorization by Legislature.",
+            "State Finance Commission (Art 243-I & 243-Y): Constitutes a Finance Commission every 5 years to review the financial position of Panchayats and Municipalities."
+          ],
+          "ta": [
+            "பண மசோதா பரிந்துரை (விதி 207(1)): பண மசோதாக்கள் ஆளுநரின் முன் பரிந்துரையுடன் மட்டுமே சட்டப்பேரவையில் அறிமுகப்படுத்தப்பட முடியும்.",
+            "ஆண்டு நிதிநிலை அறிக்கை (விதி 202): மாநில பட்ஜெட் (ஆண்டு நிதிநிலை அறிக்கை) ஒவ்வொரு நிதியாண்டும் சட்டமன்றத்தில் சமர்ப்பிக்கப்படுவதை உறுதி செய்கிறார்.",
+            "மாநில அவசரக்கால நிதி (விதி 267(2)): சட்டமன்ற ஒப்புதலுக்கு நிலுவையில் உள்ள எதிர்பாராத செலவினங்களைச் சந்திக்க மாநில அவசரக்கால நிதியிலிருந்து முன்பணம் வழங்கலாம்.",
+            "மாநில நிதி ஆணையம் (விதி 243-I & 243-Y): பஞ்சாயத்துகள் மற்றும் நகராட்சிகளின் நிதி நிலையை ஆய்வு செய்ய 5 ஆண்டுகளுக்கு ஒருமுறை மாநில நிதி ஆணையத்தை அமைக்கிறார்."
+          ]
+        }
+      }
+    ],
+    "sec_judicial_powers": [
+      {
+        "title_en": "Article 161 — Governor's Pardoning Power vs Article 72",
+        "title_ta": "உறுப்பு 161 — ஆளுநரின் மன்னிப்பளிக்கும் அதிகாரம் vs உறுப்பு 72",
+        "points": {
+          "en": [
+            "Article 161 Scope: Governor can grant pardons, reprieves, respites, and remissions of punishment or suspend, remit, and commute the sentence of any person convicted of an offense against a STATE LAW.",
+            "Five Judicial Terms:",
+            "  1. Pardon: Completely absolves the convict from all sentences and disqualifications.",
+            "  2. Reprieve: Stay of execution of a sentence (especially death) for a temporary period.",
+            "  3. Respite: Awarding a lesser sentence instead of prescribed one due to special facts (e.g., pregnancy, disability).",
+            "  4. Remission: Reducing the amount of sentence without changing its character (e.g., 2 years rigorous imprisonment to 1 year).",
+            "  5. Commutation: Substitution of one form of punishment for a lighter form (e.g., death sentence to life imprisonment).",
+            "CRITICAL DISTINCTION WITH PRESIDENT (Art 72):",
+            "  • Death Sentence: Governor CANNOT PARDON a death sentence (Only President can pardon death sentence). Governor can only suspend, remit, or commute a death sentence.",
+            "  • Court-Martial: Governor has NO POWER regarding sentences imposed by a Military Court / Court-Martial (Only President has power)."
+          ],
+          "ta": [
+            "உறுப்பு 161 எல்லை: மாநில சட்டத்திற்கு எதிரான குற்றத்திற்காகத் தண்டிக்கப்பட்ட நபருக்கு மன்னிப்பு, காலநீட்டிப்பு, தளர்வு, குறைப்பு அளிக்க ஆளுநருக்கு அதிகாரமுள்ளது.",
+            "ஐந்து நீதித்துறை சொற்கள்:",
+            "  1. Pardon (மன்னிப்பு): தண்டனை மற்றும் தகுதியிழப்புகள் அனைத்திலிருந்தும் முற்றிலும் விடுவித்தல்.",
+            "  2. Reprieve (தற்காலிகத் தடை): தண்டனையைத் (குறிப்பாக மரண தண்டனை) தற்காலிகமாக ஒத்திவைத்தல்.",
+            "  3. Respite (தண்டனைத் தளர்வு): சிறப்பு காரணங்களால் (கர்ப்பம், ஊனம்) குறைந்த தண்டனை வழங்குதல்.",
+            "  4. Remission (தண்டனைக் குறைப்பு): தண்டனையின் தன்மையை மாற்றாமல் கால அளவைக் குறைத்தல் (எ.கா. 2 ஆண்டு கடுங்காவல் 1 ஆண்டாகக் குறைப்பு).",
+            "  5. Commutation (தண்டனை மாற்றம்): கடுமையான தண்டனையை இலகுவான தண்டனையாக மாற்றுதல் (எ.கா. மரண தண்டனை ஆயுள் தண்டனையாக மாற்றம்).",
+            "குடியரசுத் தலைவருடனான முக்கிய வேறுபாடு (விதி 72):",
+            "  • மரண தண்டனை: ஆளுநரால் மரண தண்டனையை முற்றிலும் மன்னித்து விடுவிக்க (Pardon) முடியாது (குடியரசுத் தலைவர் மட்டுமே முடியும்). ஆளுநர் மரண தண்டனையை ஒத்திவைக்கலாம் அல்லது குறைக்கலாம்.",
+            "  • ராணுவ நீதிமன்றம்: ராணுவ நீதிமன்றத் தண்டனைகளில் ஆளுநருக்கு எந்த அதிகாரமும் இல்லை (குடியரசுத் தலைவருக்கு மட்டுமே உண்டு)."
+          ]
+        }
+      },
+      {
+        "title_en": "Judicial Appointments & Consultations (Articles 217 & 233)",
+        "title_ta": "நீதித்துறை நியமனங்கள் & கலந்தாய்வுகள் (உறுப்புகள் 217 & 233)",
+        "points": {
+          "en": [
+            "High Court Judges Consultation (Art 217(1)): Governor is consulted by the President when appointing Judges of the State High Court.",
+            "District Judges Appointment (Art 233): Appointments, postings, and promotions of District Judges are made by the Governor in consultation with the High Court."
+          ],
+          "ta": [
+            "உயர் நீதிமன்ற நீதிபதிகள் கலந்தாய்வு (விதி 217(1)): மாநில உயர் நீதிமன்ற நீதிபதிகளை நியமிக்கும் போது குடியரசுத் தலைவர் ஆளுநரைக் கலந்தாலோசிக்கிறார்.",
+            "மாவட்ட நீதிபதிகள் நியமனம் (விதி 233): மாவட்ட நீதிபதிகளின் நியமனம், இடமாற்றம் மற்றும் பதவி உயர்வு உயர் நீதிமன்ற கலந்தாய்வுடன் ஆளுநரால் செய்யப்படுகிறது."
+          ]
+        }
+      }
+    ],
+    "sec_ordinance_power": [
+      {
+        "title_en": "Article 213 — Ordinance-Making Power of Governor",
+        "title_ta": "உறுப்பு 213 — ஆளுநரின் அவசரச் சட்ட அதிகாரம்",
+        "points": {
+          "en": [
+            "Promulgation Condition: Promulgates ordinances ONLY when the State Legislature (or either House in bicameral) is NOT in session, and he is satisfied that circumstances exist requiring immediate action.",
+            "Legal Force: An ordinance has the SAME force and effect as an Act of the State Legislature.",
+            "Expiry Mandate: Must be laid before the State Legislature when it reassembles. It ceases to operate after 6 WEEKS from the reassembly of the Legislature (or earlier if disapproved by resolution).",
+            "Max Life of Ordinance: 6 Months + 6 Weeks (since maximum gap between legislative sessions is 6 months).",
+            "President's Instruction Proviso: Governor cannot promulgate certain ordinances without prior instructions from the President (e.g. Bills requiring President's reservation or affecting Central laws)."
+          ],
+          "ta": [
+            "பிறப்பிக்கும் நிபந்தனை: மாநில சட்டமன்றம் (அல்லது இரு அவைகளில் ஒன்று) கூட்டத்தொடரில் இல்லாத போது, உடனடி நடவடிக்கை தேவைப்படும் சூழல் நிலவினால் மட்டுமே அவசரச் சட்டம் பிறப்பிக்க முடியும்.",
+            "சட்டப்பூர்வ அதிகாரம்: அவசரச் சட்டம் மாநில சட்டமன்றச் சட்டத்திற்கு இணையான அதே அதிகாரத்தையும் விளைவையும் கொண்டது.",
+            "காலாவதி விதி: சட்டமன்றம் மீண்டும் கூடியதும் அதன் முன் சமர்ப்பிக்கப்பட வேண்டும். கூடிய நாளில் இருந்து 6 வாரங்களுக்குப் பின் (அல்லது நிராகரிப்புத் தீர்மானம் நிறைவேற்றப்பட்டால் அதற்கு முன்பே) காலாவதியாகும்.",
+            "அதிகபட்ச ஆயுட்காலம்: 6 மாதங்கள் + 6 வாரங்கள் (கூட்டத்தொடர்களுக்கு இடையிலான அதிகபட்ச இடைவெளி 6 மாதங்கள் என்பதால்).",
+            "குடியரசுத் தலைவர் முன்-அனுமதி விதி: சில அவசரச் சட்டங்களைக் குடியரசுத் தலைவரின் முன்-அனுமதியின்றி ஆளுநர் பிறப்பிக்க முடியாது (எ.கா. குடியரசுத் தலைவர் ஒப்புதல் தேவைப்படும் மசோதாக்கள்)."
+          ]
+        }
+      }
+    ],
+    "revision_cards": [
+      {
+        "id": "gov_p2_c1",
+        "front_en": "Who appoints the Advocate General of a State under Article 165?",
+        "front_ta": "உறுப்பு 165-ன் கீழ் மாநில அட்வகேட் ஜெனரலை நியமிப்பவர் யார்?",
+        "back_en": "Governor of the State (Holds office during the pleasure of the Governor).",
+        "back_ta": "மாநில ஆளுநர் (ஆளுநரின் விருப்பம் உள்ளவரை பதவியில் நீடிப்பார்)."
+      },
+      {
+        "id": "gov_p2_c2",
+        "front_en": "Who appoints and who removes the Chairman and Members of State Public Service Commission (SPSC)?",
+        "front_ta": "SPSC தலைவர் மற்றும் உறுப்பினர்களை நியமிப்பவர் யார்? பதவி நீக்கம் செய்பவர் யார்?",
+        "back_en": "APPOINTED by Governor (Art 315), BUT REMOVED ONLY BY THE PRESIDENT under Article 317.",
+        "back_ta": "நியமிப்பவர் ஆளுநர் (விதி 315), ஆனால் பதவி நீக்கம் செய்பவர் குடியரசுத் தலைவர் மட்டுமே (விதி 317)."
+      },
+      {
+        "id": "gov_p2_c3",
+        "front_en": "What additional field is included in MLC nomination (Art 171) that is NOT present in Rajya Sabha nomination (Art 80)?",
+        "front_ta": "மாநிலங்களவை நியமனத்தில் (விதி 80) இல்லாத எந்தக் கூடுதல் துறை மேலவை நியமனத்தில் (விதி 171) உள்ளது?",
+        "back_en": "'Co-operative Movement' (Literature, Science, Art, Co-operative Movement, Social Service).",
+        "back_ta": "'கூட்டுறவு இயக்கம்' (இலக்கியம், அறிவியல், கலை, கூட்டுறவு இயக்கம், சமூக சேவை)."
+      },
+      {
+        "id": "gov_p2_c4",
+        "front_en": "What are the 4 options for a Governor when a Bill is presented under Article 200?",
+        "front_ta": "உறுப்பு 200-ன் கீழ் மசோதா சமர்ப்பிக்கப்படும் போது ஆளுநருக்கு உள்ள 4 சாய்வுகள் யாவை?",
+        "back_en": "1. Give Assent; 2. Withhold Assent; 3. Return for Reconsideration; 4. Reserve for President.",
+        "back_ta": "1. ஒப்புதல் அளித்தல்; 2. ஒப்புதலை நிறுத்துதல்; 3. மறுபரிசீலனைக்கு திருப்புதல்; 4. குடியரசுத் தலைவருக்கு ஒதுக்குதல்."
+      },
+      {
+        "id": "gov_p2_c5",
+        "front_en": "Can the Governor PARDON a death sentence under Article 161?",
+        "front_ta": "உறுப்பு 161-ன் கீழ் ஆளுநர் மரண தண்டனையை முற்றிலும மன்னிக்க முடியுமா?",
+        "back_en": "NO. ONLY the President under Article 72 can pardon a death sentence. Governor can only suspend, remit, or commute it.",
+        "back_ta": "இல்லை. குடியரசுத் தலைவர் மட்டுமே மரண தண்டனையை மன்னிக்க முடியும் (விதி 72). ஆளுநர் அதை ஒத்திவைக்க அல்லது குறைக்க மட்டுமே முடியும்."
+      },
+      {
+        "id": "gov_p2_c6",
+        "front_en": "Under Article 213, when does a Governor's Ordinance cease to operate after reassembly?",
+        "front_ta": "உறுப்பு 213-ன் கீழ் சட்டமன்றம் மீண்டும் கூடிய நாளில் இருந்து ஆளுநர் அவசரச் சட்டம் எப்போது காலாவதியாகும்?",
+        "back_en": "Ceases to operate after 6 WEEKS from reassembly of the State Legislature.",
+        "back_ta": "மாநில சட்டமன்றம் மீண்டும் கூடிய நாளில் இருந்து 6 வாரங்களில் காலாவதியாகும்."
+      },
+      {
+        "id": "gov_p2_c7",
+        "front_en": "Is a Money Bill introduced in Assembly with prior recommendation of Governor?",
+        "front_ta": "ஆளுநரின் முன் பரிந்துரையுடன் மட்டுமே பண மசோதா சட்டப்பேரவையில் அறிமுகப்படுத்தப்படுமா?",
+        "back_en": "YES. Under Article 207(1), Money Bills require prior recommendation of Governor.",
+        "back_ta": "ஆம். உறுப்பு 207(1)-ன் படி பண மசோதாக்களுக்கு ஆளுநரின் முன் பரிந்துரை கட்டாயமாகும்."
+      },
+      {
+        "id": "gov_p2_c8",
+        "front_en": "Who appoints District Judges in a State under Article 233?",
+        "front_ta": "உறுப்பு 233-ன் கீழ் மாநிலத்தில் மாவட்ட நீதிபதிகளை நியமிப்பவர் யார்?",
+        "back_en": "Governor of the State in consultation with the High Court.",
+        "back_ta": "மாநில உயர் நீதிமன்றக் கலந்தாய்வுடன் மாநில ஆளுநர்."
+      },
+      {
+        "id": "gov_p2_c9",
+        "front_en": "What is the maximum life of an Ordinance promulgated by Governor?",
+        "front_ta": "ஆளுநர் பிறப்பிக்கும் அவசரச் சட்டத்தின் அதிகபட்ச ஆயுட்காலம் என்ன?",
+        "back_en": "6 Months + 6 Weeks.",
+        "back_ta": "6 மாதங்கள் + 6 வாரங்கள்."
+      },
+      {
+        "id": "gov_p2_c10",
+        "front_en": "Under Article 164(2), to whom is the Council of Ministers collectively responsible?",
+        "front_ta": "உறுப்பு 164(2)-ன் கீழ் அமைச்சரவை யாருக்குக் கூட்டாகப் பொறுப்பானது?",
+        "back_en": "Collectively responsible to the State Legislative Assembly.",
+        "back_ta": "மாநிலச் சட்டப்பேரவைக்குக் கூட்டாகப் பொறுப்பானது."
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "tbl_gov_vs_pres_powers_p2",
+        "title_en": "1. Governor vs President Powers Comparison",
+        "title_ta": "1. ஆளுநர் vs குடியரசுத் தலைவர் அதிகாரங்கள் ஒப்பீடு",
+        "headers_en": ["Power Dimension", "Governor of a State", "President of India"],
+        "headers_ta": ["அதிகார அம்சம்", "மாநில ஆளுநர்", "இந்தியக் குடியரசுத் தலைவர்"],
+        "rows_en": [
+          ["Executive Actions", "Expressed in Governor's name for State (Art 166)", "Expressed in President's name for Union (Art 77)"],
+          ["Ordinance Article", "Article 213 (State Legislative subjects)", "Article 123 (Union & Concurrent subjects)"],
+          ["Pardon of Death Sentence", "CANNOT PARDON death sentence (Art 161)", "CAN PARDON death sentence (Art 72)"],
+          ["Court-Martial Pardons", "NO POWER over Military Courts", "FULL POWER over Military Courts (Art 72)"],
+          ["Diplomatic & Military Powers", "NO diplomatic or military command powers", "Supreme Commander of Armed Forces & Diplomatic Head"],
+          ["Bill Assent Options", "4 Options (Assent, Withhold, Return, Reserve) (Art 200)", "3 Options (Assent, Withhold, Return) (Art 111)"]
+        ],
+        "rows_ta": [
+          ["நிர்வாக ஆணைகள்", "மாநில அளவில் ஆளுநர் பெயரால் வெளியாகும் (விதி 166)", "மத்திய அளவில் குடியரசுத் தலைவர் பெயரால் வெளியாகும் (விதி 77)"],
+          ["அவசரச் சட்ட விதி", "உறுப்பு 213 (மாநில சட்டமன்றப் பட்டியல்கள்)", "உறுப்பு 123 (மத்திய & பொதுப் பட்டியல்கள்)"],
+          ["மரண தண்டனை மன்னிப்பு", "மரண தண்டனையை முற்றிலும மன்னிக்க முடியாது (விதி 161)", "மரண தண்டனையை முற்றிலும மன்னிக்க முடியும் (விதி 72)"],
+          ["ராணுவ நீதிமன்ற மன்னிப்பு", "ராணுவ நீதிமன்றத் தண்டனையில் அதிகாரமில்லை", "ராணுவ நீதிமன்றத் தண்டனையில் முழு அதிகாரம் (விதி 72)"],
+          ["இராஜதந்திர & ராணுவ அதிகாரம்", "இராஜதந்திர அல்லது ராணுவ அதிகாரங்கள் இல்லை", "முப்படைகளின் தலைமைத் தளபதி & இராஜதந்திரத் தலைவர்"],
+          ["மசோதா ஒப்புதல் சாய்வுகள்", "4 சாய்வுகள் (ஒப்புதல், நிறுத்தம், திருப்புதல், ஒதுக்கீடு) (விதி 200)", "3 சாய்வுகள் (ஒப்புதல், நிறுத்தம், திருப்புதல்) (விதி 111)"]
+        ]
+      },
+      {
+        "id": "tbl_gov_vs_cm_exec_p2",
+        "title_en": "2. Governor vs Chief Minister Executive Role",
+        "title_ta": "2. ஆளுநர் vs முதலமைச்சர் நிர்வாகப் பங்கு",
+        "headers_en": ["Dimension", "Governor of a State", "Chief Minister of a State"],
+        "headers_ta": ["அம்சம்", "மாநில ஆளுநர்", "மாநில முதலமைச்சர்"],
+        "rows_en": [
+          ["Executive Title", "De Jure (Formal) Head of State Executive", "De Facto (Real) Head of State Administration"],
+          ["Appointments", "Appoints CM, Ministers, Advocate General, SPSC", "Advises Governor on all ministerial appointments"],
+          ["Cabinet Meetings", "Does not attend Cabinet meetings", "Presides over Cabinet meetings and directs policy"],
+          ["Communication Bridge", "Receives administrative info from CM under Art 167", "Duty to communicate all Cabinet decisions to Governor (Art 167)"]
+        ],
+        "rows_ta": [
+          ["நிர்வாகத் தலைப்பு", "மாநில நிர்வாகத்தின் பெயரளவு (De Jure) தலைவர்", "மாநில நிர்வாகத்தின் உண்மையான (De Facto) தலைவர்"],
+          ["நியமனங்கள்", "முதலமைச்சர், அமைச்சர்கள், வழக்கறிஞரை நியமிக்கிறார்", "அனைத்து நியமனங்களுக்கும் ஆளுநருக்கு ஆலோசனை வழங்குகிறார்"],
+          ["கேபினட் கூட்டங்கள்", "கேபினட் கூட்டங்களில் பங்கேற்பதில்லை", "கேபினட் கூட்டங்களுக்குத் தலைமை தாங்கிக் கொள்கைகளை வழிநடத்துகிறார்"],
+          ["தொடர்புப் பாலம்", "விதி 167-ன் கீழ் முதலமைச்சரிடமிருந்து தகவல்களைப் பெறுகிறார்", "அனைத்து முடிவுகளையும் ஆளுநருக்குத் தெரிவிக்கும் கடமை (விதி 167)"]
+        ]
+      },
+      {
+        "id": "tbl_art161_vs_art72_p2",
+        "title_en": "3. Article 161 vs Article 72 Comparison (Pardoning Power)",
+        "title_ta": "3. உறுப்பு 161 vs உறுப்பு 72 ஒப்பீடு (மன்னிப்பளிக்கும் அதிகாரம்)",
+        "headers_en": ["Parameter", "Article 161 (Governor Pardon)", "Article 72 (President Pardon)"],
+        "headers_ta": ["அளவுரு", "உறுப்பு 161 (ஆளுநர் மன்னிப்பு)", "உறுப்பு 72 (குடியரசுத் தலைவர் மன்னிப்பு)"],
+        "rows_en": [
+          ["Jurisdiction", "Applies to offenses against STATE LAWS", "Applies to offenses against UNION LAWS"],
+          ["Pardon Death Sentence", "CANNOT PARDON death sentence completely", "CAN PARDON death sentence completely"],
+          ["Suspend Death Sentence", "CAN suspend, remit, or commute death sentence", "CAN suspend, remit, or commute death sentence"],
+          ["Court-Martial Sentences", "NO POWER over Court-Martial / Military Courts", "FULL POWER over Court-Martial / Military Courts"]
+        ],
+        "rows_ta": [
+          ["அதிகார வரம்பு", "மாநிலச் சட்டங்களுக்கு எதிரான குற்றங்களுக்கு பொருந்தும்", "மத்தியச் சட்டங்களுக்கு எதிரான குற்றங்களுக்கு பொருந்தும்"],
+          ["மரண தண்டனை மன்னிப்பு", "மரண தண்டனையை முற்றிலும மன்னிக்க முடியாது", "மரண தண்டனையை முற்றிலும மன்னிக்க முடியும்"],
+          ["மரண தண்டனைக் குறைப்பு", "மரண தண்டனையை ஒத்திவைக்கலாம், குறைக்கலாம், மாற்றலாம்", "மரண தண்டனையை ஒத்திவைக்கலாம், குறைக்கலாம், மாற்றலாம்"],
+          ["ராணுவ நீதிமன்றத் தண்டனை", "ராணுவ நீதிமன்றத் தண்டனையில் அதிகாரமில்லை", "ராணுவ நீதிமன்றத் தண்டனையில் முழு அதிகாரம் உண்டு"]
+        ]
+      },
+      {
+        "id": "tbl_art213_vs_art123_p2",
+        "title_en": "4. Governor's Ordinance (Art 213) vs President's Ordinance (Art 123)",
+        "title_ta": "4. ஆளுநர் அவசரச் சட்டம் (விதி 213) vs குடியரசுத் தலைவர் அவசரச் சட்டம் (விதி 123)",
+        "headers_en": ["Feature", "Governor's Ordinance (Article 213)", "President's Ordinance (Article 123)"],
+        "headers_ta": ["அம்சம்", "ஆளுநர் அவசரச் சட்டம் (உறுப்பு 213)", "குடியரசுத் தலைவர் அவசரச் சட்டம் (உறுப்பு 123)"],
+        "rows_en": [
+          ["Legislative Scope", "Limited to State List and Concurrent List", "Covers Union List and Concurrent List"],
+          ["Session Condition", "Promulgated when State Assembly/Legislature is NOT in session", "Promulgated when Parliament is NOT in session"],
+          ["Prior Instruction", "Requires President's prior instruction for certain subjects", "No prior instruction needed from any outside authority"],
+          ["Max Expiry Duration", "Ceases 6 weeks after reassembly of State Legislature", "Ceases 6 weeks after reassembly of Parliament"]
+        ],
+        "rows_ta": [
+          ["சட்டமன்ற எல்லை", "மாநிலப் பட்டியல் மற்றும் பொதுப் பட்டியலுக்கு உட்பட்டது", "மத்தியப் பட்டியல் மற்றும் பொதுப் பட்டியலுக்கு உட்பட்டது"],
+          ["கூட்டத்தொடர் நிபந்தனை", "மாநில சட்டமன்றம் கூட்டத்தொடரில் இல்லாத போது பிறப்பிக்கப்படும்", "நாடாளுமன்றம் கூட்டத்தொடரில் இல்லாத போது பிறப்பிக்கப்படும்"],
+          ["முன்-அனுமதி", "சில விஷயங்களுக்கு குடியரசுத் தலைவரின் முன்-அனுமதி தேவை", "யாருடைய முன்-அனுமதியும் தேவையில்லை"],
+          ["அதிகபட்ச காலாவதி", "சட்டமன்றம் மீண்டும் கூடிய 6 வாரங்களில் காலாவதியாகும்", "நாடாளுமன்றம் மீண்டும் கூடிய 6 வாரங்களில் காலாவதியாகும்"]
+        ]
+      },
+      {
+        "id": "tbl_legislative_vs_executive_p2",
+        "title_en": "5. Governor's Legislative Power vs Executive Power",
+        "title_ta": "5. ஆளுநரின் சட்டமன்ற அதிகாரம் vs நிர்வாக அதிகாரம்",
+        "headers_en": ["Aspect", "Legislative Power", "Executive Power"],
+        "headers_ta": ["கூறு", "சட்டமன்ற அதிகாரம்", "நிர்வாக அதிகாரம்"],
+        "rows_en": [
+          ["Primary Focus", "Enactment of State laws, summoning sessions, Bill assent", "Administration of State, executive orders, appointments"],
+          ["Constitutional Articles", "Articles 174, 175, 176, 200, 201, 213", "Articles 154, 164, 165, 166, 315"],
+          ["Key Actions", "Promulgating ordinances, Assenting to Bills, Nominating 1/6th MLCs", "Appointing CM, Ministers, Advocate General, SEC, SPSC members"],
+          ["Assembly Role", "Summoning, proroguing, and dissolving Assembly", "Conducting administration in Governor's name"]
+        ],
+        "rows_ta": [
+          ["முதன்மை கவனம்", "மாநிலச் சட்டங்களை இயற்றுதல், அவையைக் கூட்டுதல், மசோதா ஒப்புதல்", "மாநில நிர்வாகம், நிர்வாக ஆணைகள், நியமனங்கள்"],
+          ["அரசியலமைப்பு விதிகள்", "உறுப்புகள் 174, 175, 176, 200, 201, 213", "உறுப்புகள் 154, 164, 165, 166, 315"],
+          ["முக்கியச் செயல்பாடுகள்", "அவசரச் சட்டம் பிறப்பித்தல், மசோதா ஒப்புதல், 1/6 மேலவை எம்பி நியமனம்", "முதலமைச்சர், அமைச்சர்கள், வழக்கறிஞர், SEC, SPSC நியமனம்"],
+          ["சட்டமன்றப் பங்கு", "சட்டப்பேரவையைக் கூட்டுதல், ஒத்திவைத்தல் மற்றும் கலைத்தல்", "ஆளுநர் பெயரால் மாநில நிர்வாகத்தை நடத்துதல்"]
+        ]
+      },
+      {
+        "id": "tbl_assent_vs_reservation_p2",
+        "title_en": "6. Assent vs Withholding Assent vs Reservation for President (Art 200)",
+        "title_ta": "6. ஒப்புதல் vs நிறுத்தம் vs குடியரசுத் தலைவர் ஒதுக்கீடு (விதி 200)",
+        "headers_en": ["Option under Art 200", "Action Taken by Governor", "Legal Result"],
+        "headers_ta": ["விதி 200 சாய்வு", "ஆளுநர் எடுக்கும் நடவடிக்கை", "சட்டப்பூர்வ முடிவு"],
+        "rows_en": [
+          ["Give Assent", "Signs the Bill passed by Legislature", "Bill becomes an enforceable Act of State Legislature"],
+          ["Withhold Assent", "Refuses to sign the Bill", "Bill dies and fails to become law"],
+          ["Return for Reconsideration", "Sends non-Money Bill back with message for changes", "If re-passed by Legislature, Governor MUST give assent"],
+          ["Reserve for President", "Sends Bill for President's consideration (Art 201)", "Governor's role ends; President decides under Art 201"]
+        ],
+        "rows_ta": [
+          ["ஒப்புதல் அளித்தல்", "சட்டமன்றம் நிறைவேற்றிய மசோதாவில் கையொப்பமிடுகிறார்", "மசோதா மாநிலச் சட்டமாக நடைமுறைக்கு வருகிறது"],
+          ["ஒப்புதலை நிறுத்துதல்", "மசோதாவில் கையொப்பமிட மறுக்கிறார்", "மசோதா நிராகரிக்கப்பட்டு சட்டமாகாமல் போகிறது"],
+          ["மறுபரிசீலனைக்கு அனுப்புதல்", "பண மசோதா அல்லாததை திருத்தப் பரிந்துரையுடன் அனுப்புகிறார்", "சட்டமன்றம் மீண்டும் நிறைவேற்றினால் ஆளுநர் கட்டாயம் ஒப்புதல் அளிக்க வேண்டும்"],
+          ["குடியரசுத் தலைவருக்கு ஒதுக்கீடு", "மசோதாவைக் குடியரசுத் தலைவர் பரிசீலனைக்கு அனுப்புகிறார் (விதி 201)", "ஆளுநரின் பங்கு முடிகிறது; குடியரசுத் தலைவர் விதி 201-ன் கீழ் முடிவெடுப்பார்"]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "Governor Powers & Functions (Part VI - Articles 154 to 213)",
+        "short_label": "Governor Part 2",
+        "children": [
+          {
+            "title": "1. Executive Powers",
+            "short_label": "Executive",
+            "children": [
+              {"title": "Art 166: Executive actions in Governor's name", "short_label": "Art 166"},
+              {"title": "Art 164 & 165: Appoints CM, Ministers (Collective Responsibility Art 164(2)), Advocate General", "short_label": "Appointments"},
+              {"title": "Art 315/317: Appoints SPSC (Removed ONLY by President)", "short_label": "SPSC Trap"}
+            ]
+          },
+          {
+            "title": "2. Legislative Powers",
+            "short_label": "Legislative",
+            "children": [
+              {"title": "Art 174, 175 & 176: Summoning, proroguing, address & messages", "short_label": "Art 174-176"},
+              {"title": "Art 171(5): Nominates 1/6th MLCs (Includes Co-operative Movement)", "short_label": "Art 171"},
+              {"title": "Art 200 & 201: 4 Bill Assent options & President Reservation", "short_label": "Art 200/201"}
+            ]
+          },
+          {
+            "title": "3. Financial & Judicial Powers",
+            "short_label": "Financial & Judicial",
+            "children": [
+              {"title": "Art 207: Money Bill prior recommendation", "short_label": "Money Bill"},
+              {"title": "Art 161: Pardoning power (Cannot pardon death sentence or Court-Martial)", "short_label": "Art 161"}
+            ]
+          },
+          {
+            "title": "4. Ordinance Power",
+            "short_label": "Ordinance",
+            "children": [
+              {"title": "Art 213: Promulgated when Legislature not in session (Max 6 weeks after reassembly)", "short_label": "Art 213"}
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": "1. Death Sentence Pardoning Trap (மரண தண்டனை மன்னிப்புப் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Believing the Governor can completely pardon a death sentence under Article 161.",
+            "FACT: Under Article 161, the Governor CANNOT PARDON a death sentence. ONLY the President of India under Article 72 can pardon a death sentence. The Governor can only suspend, remit, or commute a death sentence."
+          ],
+          "ta": [
+            "பொறி: உறுப்பு 161-ன் கீழ் ஆளுநர் மரண தண்டனையை முற்றிலும மன்னிக்க முடியும் என நினைப்பது.",
+            "உண்மை: உறுப்பு 161-ன் கீழ் ஆளுநரால் மரண தண்டனையை முற்றிலும் மன்னிக்க (Pardon) முடியாது. குடியரசுத் தலைவர் மட்டுமே மரண தண்டனையை மன்னிக்க முடியும். ஆளுநர் மரண தண்டனையைக் குறைக்கவோ ஒத்திவைக்கவோ மட்டுமே முடியும்."
+          ]
+        }
+      },
+      {
+        "title": "2. SPSC Member Removal Trap (SPSC உறுப்பினர் நீக்கப் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Assuming the Governor who appoints SPSC Chairman and Members can also remove them.",
+            "FACT: While the Governor APPOINTS the Chairman and Members of State Public Service Commission (Art 315), they can be REMOVED ONLY BY THE PRESIDENT under Article 317 on grounds of misbehaviour after a Supreme Court inquiry."
+          ],
+          "ta": [
+            "பொறி: SPSC தலைவர் மற்றும் உறுப்பினர்களை நியமிக்கும் ஆளுநரே அவர்களைப் பதவி நீக்கமும் செய்யலாம் என நினைப்பது.",
+            "உண்மை: ஆளுநர் SPSC உறுப்பினர்களை நியமித்தாலும் (விதி 315), அவர்களைப் பதவி நீக்கம் செய்யும் அதிகாரம் உச்ச நீதிமன்ற விசாரணைக்குப் பின் குடியரசுத் தலைவருக்கு மட்டுமே உண்டு (விதி 317)."
+          ]
+        }
+      },
+      {
+        "title": "3. Ordinance Expiry Timeline Trap (அவசரச் சட்டக் காலாவதி பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Believing a Governor's ordinance automatically lasts for 6 months.",
+            "FACT: Under Article 213, an ordinance must be laid before the Legislature when it reassembles and ceases to operate after 6 WEEKS from reassembly. 6 months is the maximum gap between sessions."
+          ],
+          "ta": [
+            "பொறி: ஆளுநரின் அவசரச் சட்டம் தானாகவே 6 மாதங்கள் நீடிக்கும் என நினைப்பது.",
+            "உண்மை: உறுப்பு 213-ன் படி சட்டமன்றம் மீண்டும் கூடிய நாளில் இருந்து 6 வாரங்களில் அவசரச் சட்டம் காலாவதியாகும். 6 மாதங்கள் என்பது கூட்டத்தொடர்களுக்கு இடையிலான அதிகபட்ச இடைவெளியாகும்."
+          ]
+        }
+      },
+      {
+        "title": "4. Legislative Council Nomination Trap (சட்ட மேலவை நியமனப் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Thinking the fields for nomination to State Legislative Council (Art 171) are identical to Rajya Sabha (Art 80).",
+            "FACT: Article 171(5) for MLC nomination includes 'CO-OPERATIVE MOVEMENT', which is NOT present in Article 80 for Rajya Sabha nominations by President!"
+          ],
+          "ta": [
+            "பொறி: சட்ட மேலவை நியமனத் துறைகளும் (விதி 171) மாநிலங்களவை நியமனத் துறைகளும் (விதி 80) ஒன்றுதான் என நினைப்பது.",
+            "உண்மை: மேலவை நியமனத்தில் 'கூட்டுறவு இயக்கம்' (Co-operative Movement) என்ற துறை கூடுதலாக உள்ளது. இது மாநிலங்களவை நியமனத்தில் இல்லை!"
+          ]
+        }
+      },
+      {
+        "title": "5. Re-passed Reserved Bill Assent Trap (மீண்டும் நிறைவேற்றப்பட்ட மசோதா பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Believing the President MUST give assent if a reserved Bill under Art 201 is re-passed by the State Legislature.",
+            "FACT: When a Bill is returned by Governor to Legislature (Art 200), Governor MUST assent if re-passed. BUT if a Bill is reserved for President (Art 201), the President is NOT BOUND to give assent even if re-passed by State Legislature!"
+          ],
+          "ta": [
+            "பொறி: ஒதுக்கப்பட்ட மசோதாவை மாநில சட்டமன்றம் மீண்டும் நிறைவேற்றினால் குடியரசுத் தலைவர் கட்டாயம் ஒப்புதல் அளிக்க வேண்டும் என நினைப்பது.",
+            "உண்மை: விதி 200-ன் கீழ் ஆளுநர் திருப்பிய மசோதாவை மீண்டும் நிறைவேற்றினால் ஆளுநர் ஒப்புதல் அளிக்க வேண்டும். ஆனால் விதி 201-ன் கீழ் குடியரசுத் தலைவருக்கு ஒதுக்கப்பட்ட மசோதாவை மீண்டும் நிறைவேற்றினாலும் குடியரசுத் தலைவர் ஒப்புதல் அளிக்கக் கடமைப்பட்டவரல்ல!"
+          ]
+        }
+      }
+    ],
+    "quick_revision": {
+      "en": [
+        "Executive Powers: Art 166 (Orders in Governor's name), Art 164 (Appoints CM & Ministers with collective responsibility), Art 165 (Advocate General), Art 315 (Appoints SPSC; Removed ONLY by President).",
+        "Legislative Powers: Art 174 (Summon, prorogue, dissolve Assembly), Art 175 (Right to address and send messages), Art 176 (Special address), Art 171(5) (Nominates 1/6th MLCs with Co-operative movement).",
+        "Bill Assent: Art 200 (Assent, Withhold, Return non-Money Bill, Reserve for President). Art 201 (President options for reserved Bills).",
+        "Financial Powers: Art 207 (Money Bill prior recommendation), Art 202 (State Budget), Art 267(2) (State Contingency Fund).",
+        "Judicial Powers: Art 161 (Pardon state offences; CANNOT pardon death sentence or Court-Martial). Art 217 (Consulted for HC Judges), Art 233 (Appoints District Judges).",
+        "Ordinance Power: Art 213 (Promulgated when Legislature not in session; Expires 6 weeks after reassembly; Max 6 months + 6 weeks)."
+      ],
+      "ta": [
+        "நிர்வாக அதிகாரங்கள்: விதி 166 (ஆளுநர் பெயரால் ஆணைகள்), விதி 164 (கூட்டுப் பொறுப்புடன் முதலமைச்சர் & அமைச்சர்கள் நியமனம்), விதி 165 (அட்வகேட் ஜெனரல்), விதி 315 (SPSC நியமனம்; நீக்கம் குடியரசுத் தலைவர் மட்டுமே).",
+        "சட்டமன்ற அதிகாரங்கள்: விதி 174 (கூட்டுதல், ஒத்திவைத்தல், அவையைக் கலைத்தல்), விதி 175 (உரையாற்ற மற்றும் செய்தி அனுப்பும் உரிமை), விதி 176 (சிறப்பு உரை), விதி 171(5) (கூட்டுறவு இயக்கம் உட்பட 1/6 மேலவை எம்பி நியமனம்).",
+        "மசோதா ஒப்புதல்: விதி 200 (ஒப்புதல், நிறுத்தம், திருப்புதல், குடியரசுத் தலைவர் ஒதுக்கீடு). விதி 201 (ஒதுக்கப்பட்ட மசோதாவில் குடியரசுத் தலைவர் முடிவுகள்).",
+        "நிதி அதிகாரங்கள்: விதி 207 (பண மசோதா முன்-பரிந்துரை), விதி 202 (மாநில பட்ஜெட்), விதி 267(2) (மாநில அவசரக்கால நிதி).",
+        "நீதித்துறை அதிகாரங்கள்: விதி 161 (மாநிலக் குற்றங்களுக்கு மன்னிப்பு; மரண தண்டனை & ராணுவ நீதிமன்ற மன்னிப்பு இல்லை). விதி 217 (உயர் நீதிமன்ற நீதிபதிகள் கலந்தாய்வு), விதி 233 (மாவட்ட நீதிபதிகள் நியமனம்).",
+        "அவசரச் சட்ட அதிகாரம்: விதி 213 (சட்டமன்றம் இல்லாத போது பிறப்பிப்பு; கூடிய 6 வாரங்களில் காலாவதி; அதிகபட்சம் 6 மாதங்கள் + 6 வாரங்கள்)."
+      ]
+    },
+    "must_remember": {
+      "en": [
+        "MUST REMEMBER: Article 161 = Governor Pardoning Power (CANNOT pardon death sentence).",
+        "MUST REMEMBER: Article 213 = Governor Ordinance Power (Expires 6 weeks after reassembly).",
+        "MUST REMEMBER: Article 200 = Bill Assent Options & President Reservation.",
+        "MUST REMEMBER: SPSC Chairman & Members APPOINTED by Governor, BUT REMOVED ONLY by President (Art 317).",
+        "MUST REMEMBER: MLC nomination (Art 171) includes 'Co-operative Movement'."
+      ],
+      "ta": [
+        "நினைவில் கொள்க: உறுப்பு 161 = ஆளுநர் மன்னிப்பளிக்கும் அதிகாரம் (மரண தண்டனையை மன்னிக்க முடியாது).",
+        "நினைவில் கொள்க: உறுப்பு 213 = ஆளுநர் அவசரச் சட்ட அதிகாரம் (மீண்டும் கூடிய 6 வாரங்களில் காலாவதியாகும்).",
+        "நினைவில் கொள்க: உறுப்பு 200 = மசோதா ஒப்புதல் சாய்வுகள் & குடியரசுத் தலைவர் ஒதுக்கீடு.",
+        "நினைவில் கொள்க: SPSC தலைவரை நியமிப்பவர் ஆளுநர், ஆனால் பதவி நீக்கம் செய்பவர் குடியரசுத் தலைவர் மட்டுமே (விதி 317).",
+        "நினைவில் கொள்க: மேலவை நியமனத்தில் (விதி 171) 'கூட்டுறவு இயக்கம்' சேர்க்கப்பட்டுள்ளது."
+      ]
+    }
+  }
+}
+
+target_file = "data/notes/polity/governor_part_2.json"
+os.makedirs("data/notes/polity", exist_ok=True)
+
+with open(target_file, "w", encoding="utf-8") as f:
+  json.dump(part2_data, f, ensure_ascii=False, indent=2)
+
+print(f"✅ Governor Part 2 with revision_cards successfully updated and saved to: {target_file}")

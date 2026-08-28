@@ -1,0 +1,880 @@
+import json
+import os
+import sys
+
+sys.stdout.reconfigure(encoding='utf-8')
+
+print("==================================================")
+print("BUILDING VICE-PRESIDENT NOTES — PART 3")
+print("==================================================")
+
+part3_data = {
+  "meta": {
+    "topic_id": "polity_vice_president_part_3",
+    "repository_id": "polity_vice_president",
+    "display_title": "Vice-President – Part 3",
+    "part": 3,
+    "total_parts": 3,
+    "subject": "polity",
+    "chapter": "Vice-President of India",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "topic_id": "polity_vice_president_part_3",
+    "repository_id": "polity_vice_president",
+    "display_title": "Vice-President – Part 3",
+    "part": 3,
+    "total_parts": 3,
+    "subject": "polity",
+    "chapter": "Vice-President of India",
+    "language": "English + Tamil"
+  },
+  "keywords": [
+    "Vice-President of India",
+    "Article 67(b)",
+    "Removal Procedure",
+    "Effective Majority",
+    "Article 68",
+    "Casual Vacancy",
+    "Article 65",
+    "Acting President",
+    "Article 70",
+    "President Discharge of Functions Act 1969",
+    "Article 71",
+    "Supreme Court Jurisdiction",
+    "M. Hidayatullah 1969",
+    "Master Comparison Tables",
+    "TNPSC Master Revision"
+  ],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [
+        "Master the step-by-step procedure for removal of Vice-President under Article 67(b) (RS Effective Majority + LS Simple Majority).",
+        "Understand vacancy mechanisms under Article 68 and contrast regular vs casual vacancy timelines.",
+        "Learn Article 65 Acting President provisions and Article 70 contingencies (1969 M. Hidayatullah succession case).",
+        "Understand Supreme Court exclusive jurisdiction over election disputes under Article 71 and validity of past acts.",
+        "Review 8 Master Comparison Tables, Article 63–71 Master Map, and 10-second rapid revision."
+      ],
+      "ta": [
+        "உறுப்பு 67(b)-ன் கீழ் துணைக் குடியரசுத் தலைவர் பதவி நீக்க நடைமுறையை முழுமையாகக் கற்றல் (மாநிலங்களவை Effective Majority + மக்களவை Simple Majority).",
+        "உறுப்பு 68-ன் கீழ் காலியிட முறைகளைப் புரிந்துகொண்டு வழக்கமான vs அவசரக் காலியிடக் கால வரம்புகளை ஒப்பிடுதல்.",
+        "உறுப்பு 65 செயல் குடியரசுத் தலைவர் விதிகள் மற்றும் உறுப்பு 70 அவசர நிலைகளைக் கற்றல் (1969 எம். இதயத்துல்லா வாரிசுரிமை நிகழ்வு).",
+        "உறுப்பு 71-ன் கீழ் தேர்தல் தகராறுகளில் உச்ச நீதிமன்றத்தின் தனிப்பட்ட அதிகாரம் மற்றும் முந்தைய நடவடிக்கைகளின் செல்லுபடியாகும் தன்மையைப் புரிந்துகொள்ளுதல்.",
+        "8 முதன்மை ஒப்பீட்டு அட்டவணைகள், உறுப்புகள் 63-71 முதன்மை வரைபடம் மற்றும் 10 வினாடி அதிவேகத் திருப்புதலை மதிப்பாய்வு செய்தல்."
+      ]
+    }
+  },
+  "subject": "polity",
+  "topic": "Vice-President",
+  "language": "English + Tamil",
+  "ui_type": "standard_notes",
+  "sections": [
+    {
+      "id": "sec_removal_procedure_detailed",
+      "title_en": "1. Detailed Removal Procedure (Article 67(b))",
+      "title_ta": "1. விரிவான பதவி நீக்க நடைமுறை (உறுப்பு 67(b))",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_vacancy_and_timing_art_68",
+      "title_en": "2. Vacancy in Office & Election Timing (Article 68)",
+      "title_ta": "2. பதவிக் காலியிடம் & தேர்தல் கால வரம்புகள் (உறுப்பு 68)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_acting_president_art_65",
+      "title_en": "3. Vice-President Acting as President (Article 65)",
+      "title_ta": "3. துணைக் குடியரசுத் தலைவர் செயல் குடியரசுத் தலைவராகச் செயல்படுதல் (உறுப்பு 65)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_art_70_contingencies_1969_act",
+      "title_en": "4. Article 70 Contingencies & 1969 Succession Crisis",
+      "title_ta": "4. உறுப்பு 70 அவசர நிலைகள் & 1969 குடியரசுத் தலைவர் வாரிசுரிமை நிகழ்வு",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_art_71_election_disputes",
+      "title_en": "5. Article 71 Election Disputes & Supreme Court Jurisdiction",
+      "title_ta": "5. உறுப்பு 71 தேர்தல் தகராறுகள் & உச்ச நீதிமன்ற அதிகாரம்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_cases_and_tenures",
+      "title_en": "6. Important Cases, Historical Principles & Notable Tenures",
+      "title_ta": "6. முக்கிய வழக்குகள், வரலாற்றுத் தத்துவங்கள் & குறிப்பிடத்தக்க பதவிக் காலங்கள்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "comparison_tables",
+      "title_en": "7. Master Comparison Tables (8 Comprehensive Tables)",
+      "title_ta": "7. முதன்மை ஒப்பீட்டு அட்டவணைகள் (8 முழுமையான அட்டவணைகள்)",
+      "type": "comparison"
+    },
+    {
+      "id": "sec_master_revision_suite",
+      "title_en": "8. Master Revision Suite (Articles 63–71 & 10-Sec Revision)",
+      "title_ta": "8. முதன்மைத் திருப்புதல் தொகுப்பு (உறுப்புகள் 63-71 & 10-வினாடி திருப்புதல்)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "mind_map",
+      "title_en": "9. Complete Vice-President Mind Map & TNPSC Traps",
+      "title_ta": "9. முழுமையான துணைக் குடியரசுத் தலைவர் மன வரைபடம் & TNPSC பொறிகள்",
+      "type": "mind_map"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "Part 3 completes the Vice-President study suite by analyzing the constitutional removal procedure under Article 67(b), vacancy dynamics under Article 68, the Acting Presidency mechanism under Article 65, Parliament's contingency legislation under Article 70 (1969 Succession Act), election dispute adjudication by Supreme Court under Article 71, and 8 comprehensive Master Comparison Tables.",
+      "ta": "பகுதி 3 உறுப்பு 67(b)-ன் கீழ் பதவி நீக்க நடைமுறை, உறுப்பு 68-ன் கீழ் காலியிட இயக்கவியல், உறுப்பு 65-ன் கீழ் செயல் குடியரசுத் தலைவர் முறை, உறுப்பு 70 நாடாளுமன்ற அவசரநிலைச் சட்டம் (1969 வாரிசுரிமைச் சட்டம்), உறுப்பு 71-ன் கீழ் உச்ச நீதிமன்றத் தேர்தல் தகராறுத் தீர்ப்பு மற்றும் 8 முதன்மை ஒப்பீட்டு அட்டவணைகளை ஆராய்ந்து துணைக் குடியரசுத் தலைவர் பாடப் பகுதியை முழுமைப்படுத்துகிறது."
+    },
+    "introduction": {
+      "en": "The constitutional removal of the Vice-President is uniquely structured: it requires no formal impeachment process, no constitutionally specified ground, originates solely in the Rajya Sabha passed by an effective majority, and requires simple majority agreement from the Lok Sabha. When both Presidential and Vice-Presidential offices fall vacant simultaneously, Parliament's 1969 Act empowers the Chief Justice of India to discharge Presidential functions.",
+      "ta": "துணைக் குடியரசுத் தலைவர் பதவி நீக்கம் தனித்துவமானது: இதற்கு அரசியலமைப்பு பதவி நீக்கம் (Impeachment) தேவையில்லை, குறிப்பிட்ட காரணங்கள் தேவையில்லை, மாநிலங்களவையில் மட்டுமே Effective Majority மூலம் தொடங்கப்பட்டு மக்களவையின் சாதாரண பெரும்பான்மை ஒப்புதல் பெற வேண்டும். குடியரசுத் தலைவர் மற்றும் துணைக் குடியரசுத் தலைவர் பதவிகள் இரண்டும் ஒரே நேரத்தில் காலியாகும் போது, 1969 சட்டத்தின் கீழ் இந்திய தலைமை நீதிபதி செயல் தலைவராவார்."
+    },
+    "sec_removal_procedure_detailed": [
+      {
+        "title": "1. Detailed Removal Procedure (Article 67(b))",
+        "points": {
+          "en": [
+            "No Formal Impeachment: Unlike the President who is impeached under Article 61 for 'Violation of the Constitution', the Vice-President is NOT subjected to formal impeachment.",
+            "No Ground Specified: The Constitution specifies NO GROUND whatsoever for the removal of the Vice-President.",
+            "Exclusive Origin in Rajya Sabha: A resolution for removal can ONLY be initiated in the Rajya Sabha (Council of States). It CANNOT originate in the Lok Sabha.",
+            "14 Days' Advance Notice: Must be preceded by at least 14 days' written notice of intention to move the resolution.",
+            "Effective Majority in Rajya Sabha: Must be passed by the Rajya Sabha by an EFFECTIVE MAJORITY — defined as a majority of all the THEN members of the Rajya Sabha (Total Capacity minus Vacancies).",
+            "Simple Majority Agreement in Lok Sabha: Must be agreed to by the Lok Sabha by a SIMPLE MAJORITY (majority of members present and voting).",
+            "Presiding & Voting Restrictions: The Vice-President CANNOT preside over Rajya Sabha when his removal resolution is discussed. He has the right to speak in the House, BUT HE CANNOT VOTE AT ALL (neither ordinary vote nor casting vote)."
+          ],
+          "ta": [
+            "அரசியலமைப்பு பதவி நீக்கம் இல்லை: 'அரசியலமைப்பை மீறுதல்' என்ற காரணத்திற்காக உறுப்பு 61-ன் கீழ் குடியரசுத் தலைவர் பதவி நீக்கம் செய்யப்படுவது போல் துணைக் குடியரசுத் தலைவருக்குத் தேவையில்லை.",
+            "காரணம் குறிப்பிடப்படவில்லை: துணைக் குடியரசுத் தலைவரைப் பதவி நீக்கம் செய்ய எந்தவொரு காரணமும் அரசியலமைப்பில் குறிப்பிடப்படவில்லை.",
+            "மாநிலங்களவையில் மட்டுமே தொடக்கம்: பதவி நீக்கத் தீர்மானம் மாநிலங்களவையில் மட்டுமே தொடங்கப்பட முடியும். மக்களவையில் தொடங்க முடியாது.",
+            "14 நாட்கள் முன்னறிவிப்பு: தீர்மானம் கொண்டு வர குறைந்தபட்சம் 14 நாட்களுக்கு முன் எழுத்துப்பூர்வ அறிவிப்பு வழங்கப்பட வேண்டும்.",
+            "மாநிலங்களவையில் Effective Majority: மாநிலங்களவையில் அன்றைய மொத்த உறுப்பினர்களின் பெரும்பான்மையால் (Effective Majority = மொத்த இடங்கள் - காலியிடங்கள்) நிறைவேற்றப்பட வேண்டும்.",
+            "மக்களவையில் Simple Majority ஒப்புதல்: மக்களவையில் சாதாரண பெரும்பான்மையால் (வந்திருந்து வாக்களிக்கும் உறுப்பினர்கள் பெரும்பான்மை) ஒப்புதல் பெற வேண்டும்.",
+            "தலைமை தாங்குதல் & வாக்கு வரம்பு: தனது பதவி நீக்கத் தீர்மானத்தின் போது துணைக் குடியரசுத் தலைவர் அவைக்குத் தலைமை தாங்க முடியாது. அவையில் பேச உரிமை உண்டு, ஆனால் வாக்களிக்கவே முடியாது."
+          ]
+        }
+      }
+    ],
+    "sec_vacancy_and_timing_art_68": [
+      {
+        "title": "2. Vacancy in Office & Election Timelines (Article 68)",
+        "points": {
+          "en": [
+            "Causes of Vacancy: (1) Expiry of 5-year tenure, (2) Resignation, (3) Removal by Parliament, (4) Death, (5) Election set aside by Supreme Court (Art 71).",
+            "Regular Expiry Election Timeline: Article 68(1) mandates that election to fill a vacancy caused by the expiration of the term shall be completed BEFORE the expiration of the term.",
+            "Casual Vacancy Election Timeline: Article 68(2) specifies that election to fill a casual vacancy (resignation, removal, death) shall be held 'as soon as possible' after the occurrence of the vacancy.",
+            "No Explicit 6-Month Deadline in Art 68: Note that Article 68 uses 'as soon as possible' for Vice-President casual vacancy, unlike Article 62(2) for President which strictly specifies 'within six months'. However, in practice elections are conducted promptly.",
+            "Newly Elected Vice-President Tenure: A person elected to fill a casual vacancy holds office for a FULL TERM OF 5 YEARS from the date he enters upon his office (Article 68(2))."
+          ],
+          "ta": [
+            "காலியிடக் காரணங்கள்: (1) 5 ஆண்டுகள் காலம் முடிவடைதல், (2) ராஜினாமா, (3) நாடாளுமன்றப் பதவி நீக்கம், (4) மரணம், (5) உச்ச நீதிமன்றத்தால் தேர்தல் ரத்து செய்யப்படுதல் (Art 71).",
+            "வழக்கமான காலியிடத் தேர்தல் காலம்: உறுப்பு 68(1)-ன் படி, பதவிக் காலம் முடிவதற்கு முன்பே அடுத்த தேர்தலை நடத்தி முடிக்க வேண்டும்.",
+            "அவசரக் காலியிடத் தேர்தல் காலம்: உறுப்பு 68(2)-ன் படி, அவசரக் காலியிடத்திற்கு (ராஜினாமா, பதவி நீக்கம், மரணம்) 'যত விரைவில் சாத்தியமோ' தேர்தல் நடத்தப்பட வேண்டும்.",
+            "6 மாத காலக் கெடு இல்லை: உறுப்பு 68-ல் துணைக் குடியரசுத் தலைவர் அவசரக் காலியிடத்திற்கு 'যত விரைவில் சாத்தியமோ' என்றே உள்ளது (குடியரசுத் தலைவருக்கு உறுப்பு 62(2)-ல் 6 மாதங்கள் என்ற கெடு உள்ளது போல் அல்ல).",
+            "புதிய உறுப்பினரின் பதவிக் காலம்: அவசரக் காலியிடத்திற்குத் தேர்ந்தெடுக்கப்படும் புதிய துணைக் குடியரசுத் தலைவர் பதவியேற்ற நாளிலிருந்து முழுமையாக 5 ஆண்டுகள் பதவி வகிப்பார்."
+          ]
+        }
+      }
+    ],
+    "sec_acting_president_art_65": [
+      {
+        "title": "3. Vice-President Acting as President (Article 65)",
+        "points": {
+          "en": [
+            "Casual Vacancy in Presidency (Art 65(1)): In the event of a vacancy in the office of President by reason of death, resignation, or removal, the Vice-President ACTS AS PRESIDENT until a new President is elected (Maximum 6 months under Art 62(2)).",
+            "Temporary Absence of President (Art 65(2)): When the President is unable to discharge functions owing to absence, illness, or any other cause, the Vice-President DISCHARGES HIS FUNCTIONS until the President resumes duties.",
+            "Full Presidential Powers & Immunities: While acting as or discharging functions of President, the Vice-President has all powers, immunities, and privileges of the President of India.",
+            "Relinquishment of RS Duties: He CANNOT perform the duties of the Chairman of Rajya Sabha during this acting period. The Deputy Chairman of Rajya Sabha presides over the House.",
+            "Salary Adjustment: Entitled to the salary and allowances of the President of India (not Rajya Sabha Chairman salary)."
+          ],
+          "ta": [
+            "குடியரசுத் தலைவர் பதவிக் காலியிடம் (Art 65(1)): மரணம், ராஜினாமா அல்லது பதவி நீக்கத்தால் குடியரசுத் தலைவர் பதவி காலியாகும் போது, புதிய தலைவர் தேர்வாகும் வரை (அதிகபட்சம் 6 மாதங்கள்) துணைக் குடியரசுத் தலைவர் செயல் குடியரசுத் தலைவராகப் பணியாற்றுவார்.",
+            "தற்காலிக வருகையின்மை (Art 65(2)): நோய் அல்லது வருகையின்மையால் குடியரசுத் தலைவர் பணியாற்ற முடியாத போது, அவர் மீண்டும் வரும் வரை துணைக் குடியரசுத் தலைவர் அவரது பணிகளைச் செய்வார்.",
+            "முழு அதிகாரங்கள் & சலுகைகள்: செயல் தலைவராக இருக்கும் போது குடியரசுத் தலைவரின் அனைத்து அதிகாரங்கள் மற்றும் விலக்குகளைப் பெறுகிறார்.",
+            "மாநிலங்களவைப் பணி நீக்கம்: இக்காலத்தில் மாநிலங்களவைத் தலைவர் பணிகளைச் செய்ய முடியாது. துணைத் தலைவர் அவையை நடத்துவார்.",
+            "ஊதிய மாற்றம்: மாநிலங்களவைத் தலைவர் ஊதியத்திற்குப் பதிலாகக் குடியரசுத் தலைவருக்கான ஊதியத்தைப் பெறுவார்."
+          ]
+        }
+      }
+    ],
+    "sec_art_70_contingencies_1969_act": [
+      {
+        "title": "4. Article 70 Contingencies & President (Discharge of Functions) Act 1969",
+        "points": {
+          "en": [
+            "Article 70 Provision: Empowers Parliament to make law for the discharge of the functions of the President in any contingency not provided for in Chapter I of Part V.",
+            "President (Discharge of Functions) Act 1969: Parliament enacted this law specifying that if BOTH the offices of President and Vice-President fall vacant, the CHIEF JUSTICE OF INDIA (or in his absence, the SENIOR-MOST JUDGE OF THE SUPREME COURT) shall act as President.",
+            "The 1969 Succession Crisis Case Study: In May 1969, President Dr. Zakir Husain died in office. VP V.V. Giri became Acting President. In July 1969, V.V. Giri resigned as VP to contest the Presidential election. Both offices became vacant!",
+            "Historical CJI Acting Presidency: Chief Justice of India Justice M. Hidayatullah acted as President of India from 20 July 1969 to 24 August 1969 until V.V. Giri was elected and sworn in as President."
+          ],
+          "ta": [
+            "உறுப்பு 70 விதி: பகுதி V அத்தியாயம் I-ல் குறிப்பிடப்படாத இதர அவசர நிலைகளில் குடியரசுத் தலைவர் பணிகளைச் செய்ய நாடாளுமன்றத்திற்குச் சட்டமியற்றும் அதிகாரம் அளிக்கிறது.",
+            "குடியரசுத் தலைவர் (பணிகள் செய்தல்) சட்டம் 1969: குடியரசுத் தலைவர் மற்றும் துணைக் குடியரசுத் தலைவர் பதவிகள் இரண்டும் ஒரே நேரத்தில் காலியாகும் போது, இந்திய தலைமை நீதிபதி (CJI) (அல்லது மூத்த உச்ச நீதிமன்ற நீதிபதி) செயல் தலைவராவார்.",
+            "1969 வாரிசுரிமை நிகழ்வு: மே 1969-ல் குடியரசுத் தலைவர் டாக்டர் ஜாகீர் உசேன் மறைந்தார். VP வி.வி.கிரி செயல் தலைவரானார். ஜூலை 1969-ல் வி.வி.கிரி குடியரசுத் தலைவர் தேர்தலில் போட்டியிட தனது VP பதவியை ராஜினாமா செய்தார். இரு பதவிகளும் காலியாயின!",
+            "தலைமை நீதிபதியின் வரலாற்றுச் சிறப்புமிக்க செயல் தலைவர்ப் பணி: இந்திய தலைமை நீதிபதி நீதியரசர் எம். இதயத்துல்லா 20 ஜூலை 1969 முதல் 24 ஆகஸ்ட் 1969 வரை செயல் குடியரசுத் தலைவராகப் பணியாற்றினார்."
+          ]
+        }
+      }
+    ],
+    "sec_art_71_election_disputes": [
+      {
+        "title": "5. Article 71 Election Disputes & Supreme Court Authority",
+        "points": {
+          "en": [
+            "Exclusive SC Jurisdiction: Article 71(1) states that ALL doubts and disputes arising out of or in connection with the election of President or Vice-President shall be inquired into and decided EXCLUSIVELY BY THE SUPREME COURT, whose decision shall be final.",
+            "Validity of Past Acts: Article 71(2) specifies that if the election of a Vice-President is declared void by the Supreme Court, acts done by him in the performance of the duties of his office on or before the date of such declaration SHALL NOT BE INVALIDATED.",
+            "Parliamentary Law Making: Article 71(3) empowers Parliament to regulate by law any matter relating to or connected with the election of President/VP (e.g. Presidential and Vice-Presidential Elections Act 1952).",
+            "Vacancy in Electoral College: Article 71(4) clarifies that an election cannot be challenged on the ground of the existence of any vacancy among the members of the Electoral College."
+          ],
+          "ta": [
+            "உச்ச நீதிமன்றத்தின் தனிப்பட்ட அதிகாரம்: உறுப்பு 71(1)-ன் கீழ் குடியரசுத் தலைவர் / துணைக் குடியரசுத் தலைவர் தேர்தல் தொடர்பான அனைத்துத் தகராறுகளையும் உச்ச நீதிமன்றம் மட்டுமே விசாரித்து இறுதித் தீர்ப்பு அளிக்கும்.",
+            "முந்தைய நடவடிக்கைகளின் செல்லுபடியாகும் தன்மை: உறுப்பு 71(2)-ன் படி, துணைக் குடியரசுத் தலைவர் தேர்தல் செல்லாது என உச்ச நீதிமன்றம் அறிவித்தாலும், அந்த அறிவிப்புத் தேதிக்கு முன் அவராற் செய்யப்பட்ட பணிகள் செல்லாததாகாது (செல்லுபடியாகும்).",
+            "நாடாளுமன்றச் சட்ட அதிகாரம்: உறுப்பு 71(3)-ன் படி, நாடாளுமன்றம் தேர்தல் தொடர்பான நடைமுறைகளுக்குச் சட்டமியற்றலாம் (எ.கா. 1952 தேர்தல் சட்டம்).",
+            "வாக்காளர் குழு காலியிடம் காரணம் அல்ல: உறுப்பு 71(4)-ன் படி, வாக்காளர் குழுவில் இடங்கள் காலியாக உள்ளன என்ற காரணத்தைக் கூறித் தேர்தலை எதிர்க்க முடியாது."
+          ]
+        }
+      }
+    ],
+    "sec_cases_and_tenures": [
+      {
+        "title": "6. Important Cases, Historical Principles & Notable Tenures",
+        "points": {
+          "en": [
+            "Kihoto Hollohan v. Zachillhu (1992): Supreme Court held that the Chairman of Rajya Sabha while deciding disqualifications under the Tenth Schedule acts as a tribunal, and his decisions are subject to judicial review.",
+            "Dr. S. Radhakrishnan (1952–1962): First Vice-President of India; served two full consecutive 5-year terms; elected unopposed twice.",
+            "Mohammad Hamid Ansari (2007–2017): Second Vice-President of India to serve two full 5-year terms.",
+            "Died in Office: Krishna Kant (1997–2002) is the ONLY Vice-President of India who died in office (27 July 2002).",
+            "Resigned to Become President: V.V. Giri (1969) and R. Venkataraman (1987) resigned as Vice-President upon election as President of India."
+          ],
+          "ta": [
+            "கிஹோட்டோ ஹோல்லோஹன் வழக்கு (1992): பத்தாவது அட்டவணையின் கீழ் மாநிலங்களவைத் தலைவர் தகுதியின்மையை முடிவெடுக்கும் போது தீர்ப்பாயமாகச் செயல்படுகிறார்; அவரது முடிவு நீதித்துறை மறுஆய்வுக்கு உட்பட்டது என உச்ச நீதிமன்றம் தீர்ப்பளித்தது.",
+            "டாக்டர் எஸ். ராதாகிருஷ்ணன் (1952-1962): இந்தியாவின் முதல் துணைக் குடியரசுத் தலைவர்; தொடர்ந்து இருமுறை 5 ஆண்டுகள் முழுமையாகப் பதவி வகித்தார்; இருமுறையும் போட்டியின்றித் தேர்வானார்.",
+            "முகமது ஹமீத் அன்சாரி (2007-2017): தொடர்ந்து இருமுறை முழுமையாகப் பதவி வகித்த இரண்டாவது துணைக் குடியரசுத் தலைவர்.",
+            "பதவியில் மரணமடைந்தவர்: கிருஷ்ண காந்த் (1997-2002) பதவியில் இருக்கும் போதே மரணமடைந்த ஒரே இந்தியத் துணைக் குடியரசுத் தலைவர் ஆவார் (27 ஜூலை 2002).",
+            "குடியரசுத் தலைவராக ராஜினாமா செய்தவர்கள்: வி.வி.கிரி (1969) மற்றும் ஆர்.வெங்கடராமன் (1987) குடியரசுத் தலைவராகத் தேர்வானதால் தனது VP பதவியை ராஜினாமா செய்தனர்."
+          ]
+        }
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "tbl_master_pres_vs_vp",
+        "title_en": "1. President vs Vice-President Complete Constitutional Comparison",
+        "title_ta": "1. குடியரசுத் தலைவர் vs துணைக் குடியரசுத் தலைவர் முழுமையான ஒப்பீடு",
+        "headers_en": ["Feature", "President of India", "Vice-President of India"],
+        "headers_ta": ["அம்சம்", "இந்தியக் குடியரசுத் தலைவர்", "இந்தியத் துணைக் குடியரசுத் தலைவர்"],
+        "rows_en": [
+          ["Precedence Rank", "1st Rank (Head of State)", "2nd Rank (Head of Rajya Sabha)"],
+          ["Electoral College", "Elected MPs + Elected State & UT MLAs", "ALL MPs (Elected + Nominated); No MLAs"],
+          ["House Qualification", "Must be qualified for LOK SABHA", "Must be qualified for RAJYA SABHA"],
+          ["Oath Administrator", "Chief Justice of India (Art 60)", "President of India (Art 69)"],
+          ["Resignation Addressed To", "Vice-President of India (Art 56)", "President of India (Art 67)"],
+          ["Removal Method", "Impeachment (Art 61) by 2/3rd total membership", "RS Effective Majority + LS Simple Majority (Art 67b)"]
+        ],
+        "rows_ta": [
+          ["முன்னுரிமை வரிசை", "1-வது இடம் (நாட்டின் தலைவர்)", "2-வது இடம் (மாநிலங்களவைத் தலைவர்)"],
+          ["வாக்காளர் குழு", "தேர்ந்தெடுக்கப்பட்ட எம்பிக்கள் + எம்எல்ஏக்கள்", "அனைத்து எம்பிக்கள் (தேர்ந்தெடுக்கப்பட்ட + நியமன); எம்எல்ஏக்கள் இல்லை"],
+          ["அவைத் தகுதி", "மக்களவைக்குத் தேர்வாகும் தகுதி", "மாநிலங்களவைக்குத் தேர்வாகும் தகுதி"],
+          ["பதவிப் பிரமாணம் வழங்குபவர்", "இந்திய தலைமை நீதிபதி (Art 60)", "இந்தியக் குடியரசுத் தலைவர் (Art 69)"],
+          ["ராஜினாமா பெறுநர்", "இந்தியத் துணைக் குடியரசுத் தலைவர் (Art 56)", "இந்தியக் குடியரசுத் தலைவர் (Art 67)"],
+          ["பதவி நீக்க முறை", "2/3 பங்கு மொத்த உறுப்பினர்களால் Impeachment (Art 61)", "RS Effective Majority + LS Simple Majority (Art 67b)"]
+        ]
+      },
+      {
+        "id": "tbl_master_vp_vs_rs_chairman",
+        "title_en": "2. Vice-President Office vs Rajya Sabha Chairman Role",
+        "title_ta": "2. துணைக் குடியரசுத் தலைவர் பதவி vs மாநிலங்களவைத் தலைவர் பொறுப்பு ஒப்பீடு",
+        "headers_en": ["Dimension", "Vice-President Office", "Ex-Officio Chairman of Rajya Sabha"],
+        "headers_ta": ["அம்சம்", "துணைக் குடியரசுத் தலைவர் பதவி", "மாநிலங்களவையின் பதவிவழித் தலைவர் பொறுப்பு"],
+        "rows_en": [
+          ["Constitutional Provision", "Article 63", "Article 64 & Article 89"],
+          ["Primary Responsibility", "Standby for Presidential Vacancy (Art 65)", "Presiding Officer of Rajya Sabha daily"],
+          ["Salary Basis", "No VP office salary", "Salaried as Chairman under 2nd Schedule"],
+          ["Casting Vote", "N/A", "Possesses Casting Vote under Art 100(1)"]
+        ],
+        "rows_ta": [
+          ["அரசியலமைப்பு விதி", "உறுப்பு 63", "உறுப்பு 64 & உறுப்பு 89"],
+          ["முதன்மைப் பொறுப்பு", "குடியரசுத் தலைவர் காலியிட மாற்று அதிகாரி (Art 65)", "மாநிலங்களவை அன்றாட அவைத் தலைவர்"],
+          ["ஊதிய அடிப்படை", "VP பதவிக்குத் தனியாக ஊதியமில்லை", "இரண்டாம் அட்டவணையின் கீழ் தலைவராக ஊதியம் பெறுகிறார்"],
+          ["முடிவு வாக்கு", "பொருந்தாது", "உறுப்பு 100(1)-ன் கீழ் முடிவு வாக்கு உண்டு"]
+        ]
+      },
+      {
+        "id": "tbl_master_chairman_vs_deputy_chairman",
+        "title_en": "3. Chairman vs Deputy Chairman Comparison",
+        "title_ta": "3. மாநிலங்களவைத் தலைவர் vs துணைத் தலைவர் ஒப்பீடு",
+        "headers_en": ["Feature", "Chairman of Rajya Sabha", "Deputy Chairman of Rajya Sabha"],
+        "headers_ta": ["அம்சம்", "மாநிலங்களவைத் தலைவர்", "மாநிலங்களவைத் துணைத் தலைவர்"],
+        "rows_en": [
+          ["Membership", "NOT a member of Rajya Sabha", "IS an elected member of Rajya Sabha"],
+          ["Selection", "Ex-Officio (Elected by MP Electoral College)", "Elected by Rajya Sabha members"],
+          ["Subordination", "Head of the House", "NOT subordinate to Chairman; directly responsible to RS"],
+          ["Voting when Presiding", "Casting Vote only (Art 100(1))", "Casting Vote only when presiding"]
+        ],
+        "rows_ta": [
+          ["உறுப்பினர் நிலை", "மாநிலங்களவை உறுப்பினர் அல்ல", "மாநிலங்களவையின் தேர்ந்தெடுக்கப்பட்ட உறுப்பினர்"],
+          ["தேர்வு முறை", "பதவிவழி நியமனம் (எம்பி வாக்காளர் குழுவால் தேர்வாகிறார்)", "மாநிலங்களவை உறுப்பினர்களால் தேர்வு"],
+          ["கீழ்நிலை நிலை", "அவையின் முதன்மைத் தலைவர்", "தலைவருக்குக் கீழ்நிலையானவர் அல்ல; அவைக்குப் பொறுப்பானவர்"],
+          ["தலைமை தாங்கும் போது வாக்கு", "முடிவு வாக்கு மட்டுமே (Art 100(1))", "தலைமை தாங்கும் போது முடிவு வாக்கு மட்டுமே"]
+        ]
+      },
+      {
+        "id": "tbl_master_impeachment_vs_removal",
+        "title_en": "4. President Impeachment (Art 61) vs Vice-President Removal (Art 67b)",
+        "title_ta": "4. குடியரசுத் தலைவர் பதவி நீக்கம் vs துணைக் குடியரசுத் தலைவர் பதவி நீக்கம் ஒப்பீடு",
+        "headers_en": ["Removal Parameter", "President Impeachment (Article 61)", "Vice-President Removal (Article 67(b))"],
+        "headers_ta": ["பதவி நீக்க காரணி", "குடியரசுத் தலைவர் பதவி நீக்கம் (உறுப்பு 61)", "துணைக் குடியரசுத் தலைவர் பதவி நீக்கம் (உறுப்பு 67(b))"],
+        "rows_en": [
+          ["Ground Specified", "Violation of the Constitution (Only ground)", "NO Ground specified in the Constitution"],
+          ["Initiating House", "EITHER House (Lok Sabha or Rajya Sabha)", "RAJYA SABHA ONLY"],
+          ["Initiating Majority", "2/3rd TOTAL MEMBERSHIP of initiating House", "Effective Majority of Rajya Sabha"],
+          ["Second House Role", "Investigates and passes by 2/3rd TOTAL MEMBERSHIP", "Agrees by SIMPLE MAJORITY of Lok Sabha"],
+          ["Notice Period", "14 Days' Notice (1/4th members signed)", "14 Days' Notice"]
+        ],
+        "rows_ta": [
+          ["காரணம்", "அரசியலமைப்பை மீறுதல் (மட்டுமே)", "எந்தவொரு காரணமும் குறிப்பிடப்படவில்லை"],
+          ["தொடங்கும் அவை", "நாடாளுமன்றத்தின் ஏதேனும் ஒரு அவை (LS அல்லது RS)", "மாநிலங்களவை மட்டுமே (Rajya Sabha)"],
+          ["தொடங்கும் பெரும்பான்மை", "தொடங்கும் அவையின் 2/3 பங்கு மொத்த உறுப்பினர் பெரும்பான்மை", "மாநிலங்களவையில் Effective Majority"],
+          ["இரண்டாவது அவைப் பங்கு", "விசாரித்து 2/3 பங்கு மொத்த உறுப்பினர்களால் நிறைவேற்றுதல்", "மக்களவையில் சாதாரண பெரும்பான்மை (Simple Majority) ஒப்புதல்"],
+          ["அறிவிப்பு காலம்", "14 நாட்கள் முன்னறிவிப்பு (1/4 எம்பிக்கள் கையொப்பம்)", "14 நாட்கள் முன்னறிவிப்பு"]
+        ]
+      },
+      {
+        "id": "tbl_master_regular_vs_casual_vacancy",
+        "title_en": "5. Regular Vacancy vs Casual Vacancy Comparison",
+        "title_ta": "5. வழக்கமான காலியிடம் vs அவசரக் காலியிடம் ஒப்பீடு",
+        "headers_en": ["Vacancy Aspect", "Regular Expiry Vacancy (Art 68(1))", "Casual Vacancy (Art 68(2))"],
+        "headers_ta": ["காலியிட அம்சம்", "வழக்கமான காலியிடம் (Art 68(1))", "அவசரக் காலியிடம் (Art 68(2))"],
+        "rows_en": [
+          ["Cause", "Expiration of 5-year tenure", "Resignation, Removal, Death, Election set aside"],
+          ["Election Timing", "Completed BEFORE expiration of term", "Held 'AS SOON AS POSSIBLE' after vacancy"],
+          ["Outgoing VP Status", "Continues in office until successor enters", "Office vacant; Deputy Chairman presides RS / VP acts as Pres"],
+          ["New VP Tenure", "Full 5-Year Term", "Full 5-Year Term"]
+        ],
+        "rows_ta": [
+          ["காரணம்", "5 ஆண்டுகள் பதவிக் காலம் முடிவடைதல்", "ராஜினாமா, பதவி நீக்கம், மரணம், தேர்தல் ரத்து"],
+          ["தேர்தல் காலம்", "பதவிக் காலம் முடிவதற்கு முன்பே நடத்தி முடிக்க வேண்டும்", "காலியிடம் ஏற்பட்ட பின் 'যত விரைவில் சாத்தியமோ' நடத்த வேண்டும்"],
+          ["பழைய VP நிலை", "புதிய வாரிசு வரும் வரை பதவியில் தொடருவார்", "பதவி காலி; துணைத் தலைவர் அவையை நடத்துவார்"],
+          ["புதிய VP பதவிக் காலம்", "முழுமையாக 5 ஆண்டுகள்", "முழுமையாக 5 ஆண்டுகள்"]
+        ]
+      },
+      {
+        "id": "tbl_master_acting_pres_vs_normal_vp",
+        "title_en": "6. Vice-President Acting as President vs Normal Vice-President Role",
+        "title_ta": "6. செயல் குடியரசுத் தலைவர் vs இயல்புத் துணைக் குடியரசுத் தலைவர் ஒப்பீடு",
+        "headers_en": ["Functional Parameter", "Vice-President Acting as President (Art 65)", "Normal Vice-President Role"],
+        "headers_ta": ["செயல்பாட்டுக் காரணி", "செயல் குடியரசுத் தலைவர் (Art 65)", "இயல்புத் துணைக் குடியரசுத் தலைவர்"],
+        "rows_en": [
+          ["Primary Function", "Executes all Union Executive powers of President", "Presides over Rajya Sabha as Ex-Officio Chairman"],
+          ["RS Presiding Duty", "CANNOT perform RS Chairman duties", "Performs daily RS Chairman duties"],
+          ["Salary Drawn", "President's Salary (1st Schedule / Art 65(3))", "RS Chairman Salary (2nd Schedule)"],
+          ["Maximum Duration", "Maximum 6 Months (until new President elected)", "5-Year Tenure"]
+        ],
+        "rows_ta": [
+          ["முதன்மைப் பணி", "குடியரசுத் தலைவரின் அனைத்து நிர்வாக அதிகாரங்களையும் செயல்படுத்துதல்", "மாநிலங்களவையின் பதவிவழித் தலைவராக அவையை நடத்துதல்"],
+          ["மாநிலங்களவைப் பணி", "மாநிலங்களவைத் தலைவர் பணிகளைச் செய்ய முடியாது", "மாநிலங்களவைத் தலைவரின் அன்றாடப் பணிகளைச் செய்தல்"],
+          ["பெறும் ஊதியம்", "குடியரசுத் தலைவர் ஊதியம் (Art 65(3))", "மாநிலங்களவைத் தலைவர் ஊதியம் (2nd Schedule)"],
+          ["அதிகபட்ச காலம்", "அதிகபட்சம் 6 மாதங்கள் (புதிய தலைவர் தேர்வாகும் வரை)", "5 ஆண்டுகள் பதவிக் காலம்"]
+        ]
+      },
+      {
+        "id": "tbl_master_pres_vs_vp_election",
+        "title_en": "7. President Election vs Vice-President Election Procedure",
+        "title_ta": "7. குடியரசுத் தலைவர் தேர்தல் vs துணைக் குடியரசுத் தலைவர் தேர்தல் முறை ஒப்பீடு",
+        "headers_en": ["Election Parameter", "Presidential Election (Articles 54 & 55)", "Vice-Presidential Election (Article 66)"],
+        "headers_ta": ["தேர்தல் காரணி", "குடியரசுத் தலைவர் தேர்தல் (உறுப்புகள் 54 & 55)", "துணைக் குடியரசுத் தலைவர் தேர்தல் (உறுப்பு 66)"],
+        "rows_en": [
+          ["Electoral Body", "Elected MPs + Elected State & UT MLAs", "Elected & Nominated MPs of Parliament only"],
+          ["MP Vote Value", "Weighted Value (Based on State MLA vote totals)", "EQUAL Vote Value (= 1 per MP)"],
+          ["MLA Participation", "INCLUDED (State MLAs vote)", "EXCLUDED (State MLAs do not vote)"],
+          ["Nominated MP Participation", "EXCLUDED (Cannot vote)", "INCLUDED (Can vote)"],
+          ["System of Election", "Proportional Representation by STV (Secret Ballot)", "Proportional Representation by STV (Secret Ballot)"]
+        ],
+        "rows_ta": [
+          ["வாக்காளர் அமைப்பு", "தேர்ந்தெடுக்கப்பட்ட எம்பிக்கள் + எம்எல்ஏக்கள்", "நாடாளுமன்றத்தின் தேர்ந்தெடுக்கப்பட்ட & நியமன எம்பிக்கள் மட்டுமே"],
+          ["எம்பி வாக்கு மதிப்பு", "எடையுள்ள மதிப்பு (மாநில எம்எல்ஏ வாக்குகள் அடிப்படையில்)", "சமமான வாக்கு மதிப்பு (= 1)"],
+          ["எம்எல்ஏக்கள் பங்கேற்பு", "சேர்க்கப்பட்டுள்ளனர் (எம்எல்ஏக்கள் வாக்களிப்பர்)", "விலக்கப்பட்டுள்ளனர் (எம்எல்ஏக்கள் வாக்களிக்க மாட்டார்கள்)"],
+          ["நியமன எம்பிக்கள் பங்கேற்பு", "விலக்கப்பட்டுள்ளனர் (வாக்களிக்க முடியாது)", "சேர்க்கப்பட்டுள்ளனர் (வாக்களிக்கலாம்)"],
+          ["தேர்தல் முறை", "ஒற்றை மாற்று வாக்கு விகிதாச்சார பிரதிநிதித்துவம் (ரகசிய வாக்கெடுப்பு)", "ஒற்றை மாற்று வாக்கு விகிதாச்சார பிரதிநிதித்துவம் (ரகசிய வாக்கெடுப்பு)"]
+        ]
+      },
+      {
+        "id": "tbl_master_pres_vs_vp_electoral_college_detailed",
+        "title_en": "8. President Electoral College vs Vice-President Electoral College",
+        "title_ta": "8. குடியரசுத் தலைவர் வாக்காளர் குழு vs துணைக் குடியரசுத் தலைவர் வாக்காளர் குழு ஒப்பீடு",
+        "headers_en": ["Member Category", "President's Electoral College (Article 54)", "Vice-President's Electoral College (Article 66)"],
+        "headers_ta": ["உறுப்பினர் பிரிவு", "குடியரசுத் தலைவர் வாக்காளர் குழு (உறுப்பு 54)", "துணைக் குடியரசுத் தலைவர் வாக்காளர் குழு (உறுப்பு 66)"],
+        "rows_en": [
+          ["Lok Sabha Elected Members", "VOTES", "VOTES"],
+          ["Lok Sabha Nominated Members", "DOES NOT VOTE", "VOTES"],
+          ["Rajya Sabha Elected Members", "VOTES", "VOTES"],
+          ["Rajya Sabha Nominated Members", "DOES NOT VOTE", "VOTES"],
+          ["State Assembly Elected Members", "VOTES", "DOES NOT VOTE"],
+          ["State Assembly Nominated Members", "DOES NOT VOTE", "DOES NOT VOTE"],
+          ["State Legislative Council Members", "DOES NOT VOTE", "DOES NOT VOTE"]
+        ],
+        "rows_ta": [
+          ["மக்களவை தேர்ந்தெடுக்கப்பட்ட உறுப்பினர்கள்", "வாக்களிப்பர்", "வாக்களிப்பர்"],
+          ["மக்களவை நியமன உறுப்பினர்கள்", "வாக்களிக்க முடியாது", "வாக்களிப்பர்"],
+          ["மாநிலங்களவை தேர்ந்தெடுக்கப்பட்ட உறுப்பினர்கள்", "வாக்களிப்பர்", "வாக்களிப்பர்"],
+          ["மாநிலங்களவை நியமன உறுப்பினர்கள்", "வாக்களிக்க முடியாது", "வாக்களிப்பர்"],
+          ["சட்டமன்ற தேர்ந்தெடுக்கப்பட்ட உறுப்பினர்கள்", "வாக்களிப்பர்", "வாக்களிக்க முடியாது"],
+          ["சட்டமன்ற நியமன உறுப்பினர்கள்", "வாக்களிக்க முடியாது", "வாக்களிக்க முடியாது"],
+          ["சட்டமன்ற மேலவை உறுப்பினர்கள்", "வாக்களிக்க முடியாது", "வாக்களிக்க முடியாது"]
+        ]
+      }
+    ],
+    "comparison": [
+      {
+        "id": "tbl_master_pres_vs_vp",
+        "title_en": "1. President vs Vice-President Complete Constitutional Comparison",
+        "title_ta": "1. குடியரசுத் தலைவர் vs துணைக் குடியரசுத் தலைவர் முழுமையான ஒப்பீடு",
+        "headers_en": ["Feature", "President of India", "Vice-President of India"],
+        "headers_ta": ["அம்சம்", "இந்தியக் குடியரசுத் தலைவர்", "இந்தியத் துணைக் குடியரசுத் தலைவர்"],
+        "rows_en": [
+          ["Precedence Rank", "1st Rank (Head of State)", "2nd Rank (Head of Rajya Sabha)"],
+          ["Electoral College", "Elected MPs + Elected State & UT MLAs", "ALL MPs (Elected + Nominated); No MLAs"],
+          ["House Qualification", "Must be qualified for LOK SABHA", "Must be qualified for RAJYA SABHA"],
+          ["Oath Administrator", "Chief Justice of India (Art 60)", "President of India (Art 69)"],
+          ["Resignation Addressed To", "Vice-President of India (Art 56)", "President of India (Art 67)"],
+          ["Removal Method", "Impeachment (Art 61) by 2/3rd total membership", "RS Effective Majority + LS Simple Majority (Art 67b)"]
+        ],
+        "rows_ta": [
+          ["முன்னுரிமை வரிசை", "1-வது இடம் (நாட்டின் தலைவர்)", "2-வது இடம் (மாநிலங்களவைத் தலைவர்)"],
+          ["வாக்காளர் குழு", "தேர்ந்தெடுக்கப்பட்ட எம்பிக்கள் + எம்எல்ஏக்கள்", "அனைத்து எம்பிக்கள் (தேர்ந்தெடுக்கப்பட்ட + நியமன); எம்எல்ஏக்கள் இல்லை"],
+          ["அவைத் தகுதி", "மக்களவைக்குத் தேர்வாகும் தகுதி", "மாநிலங்களவைக்குத் தேர்வாகும் தகுதி"],
+          ["பதவிப் பிரமாணம் வழங்குபவர்", "இந்திய தலைமை நீதிபதி (Art 60)", "இந்தியக் குடியரசுத் தலைவர் (Art 69)"],
+          ["ராஜினாமா பெறுநர்", "இந்தியத் துணைக் குடியரசுத் தலைவர் (Art 56)", "இந்தியக் குடியரசுத் தலைவர் (Art 67)"],
+          ["பதவி நீக்க முறை", "2/3 பங்கு மொத்த உறுப்பினர்களால் Impeachment (Art 61)", "RS Effective Majority + LS Simple Majority (Art 67b)"]
+        ]
+      },
+      {
+        "id": "tbl_master_vp_vs_rs_chairman",
+        "title_en": "2. Vice-President Office vs Rajya Sabha Chairman Role",
+        "title_ta": "2. துணைக் குடியரசுத் தலைவர் பதவி vs மாநிலங்களவைத் தலைவர் பொறுப்பு ஒப்பீடு",
+        "headers_en": ["Dimension", "Vice-President Office", "Ex-Officio Chairman of Rajya Sabha"],
+        "headers_ta": ["அம்சம்", "துணைக் குடியரசுத் தலைவர் பதவி", "மாநிலங்களவையின் பதவிவழித் தலைவர் பொறுப்பு"],
+        "rows_en": [
+          ["Constitutional Provision", "Article 63", "Article 64 & Article 89"],
+          ["Primary Responsibility", "Standby for Presidential Vacancy (Art 65)", "Presiding Officer of Rajya Sabha daily"],
+          ["Salary Basis", "No VP office salary", "Salaried as Chairman under 2nd Schedule"],
+          ["Casting Vote", "N/A", "Possesses Casting Vote under Art 100(1)"]
+        ],
+        "rows_ta": [
+          ["அரசியலமைப்பு விதி", "உறுப்பு 63", "உறுப்பு 64 & உறுப்பு 89"],
+          ["முதன்மைப் பொறுப்பு", "குடியரசுத் தலைவர் காலியிட மாற்று அதிகாரி (Art 65)", "மாநிலங்களவை அன்றாட அவைத் தலைவர்"],
+          ["ஊதிய அடிப்படை", "VP பதவிக்குத் தனியாக ஊதியமில்லை", "இரண்டாம் அட்டவணையின் கீழ் தலைவராக ஊதியம் பெறுகிறார்"],
+          ["முடிவு வாக்கு", "பொருந்தாது", "உறுப்பு 100(1)-ன் கீழ் முடிவு வாக்கு உண்டு"]
+        ]
+      },
+      {
+        "id": "tbl_master_chairman_vs_deputy_chairman",
+        "title_en": "3. Chairman vs Deputy Chairman Comparison",
+        "title_ta": "3. மாநிலங்களவைத் தலைவர் vs துணைத் தலைவர் ஒப்பீடு",
+        "headers_en": ["Feature", "Chairman of Rajya Sabha", "Deputy Chairman of Rajya Sabha"],
+        "headers_ta": ["அம்சம்", "மாநிலங்களவைத் தலைவர்", "மாநிலங்களவைத் துணைத் தலைவர்"],
+        "rows_en": [
+          ["Membership", "NOT a member of Rajya Sabha", "IS an elected member of Rajya Sabha"],
+          ["Selection", "Ex-Officio (Elected by MP Electoral College)", "Elected by Rajya Sabha members"],
+          ["Subordination", "Head of the House", "NOT subordinate to Chairman; directly responsible to RS"],
+          ["Voting when Presiding", "Casting Vote only (Art 100(1))", "Casting Vote only when presiding"]
+        ],
+        "rows_ta": [
+          ["உறுப்பினர் நிலை", "மாநிலங்களவை உறுப்பினர் அல்ல", "மாநிலங்களவையின் தேர்ந்தெடுக்கப்பட்ட உறுப்பினர்"],
+          ["தேர்வு முறை", "பதவிவழி நியமனம் (எம்பி வாக்காளர் குழுவால் தேர்வாகிறார்)", "மாநிலங்களவை உறுப்பினர்களால் தேர்வு"],
+          ["கீழ்நிலை நிலை", "அவையின் முதன்மைத் தலைவர்", "தலைவருக்குக் கீழ்நிலையானவர் அல்ல; அவைக்குப் பொறுப்பானவர்"],
+          ["தலைமை தாங்கும் போது வாக்கு", "முடிவு வாக்கு மட்டுமே (Art 100(1))", "தலைமை தாங்கும் போது முடிவு வாக்கு மட்டுமே"]
+        ]
+      },
+      {
+        "id": "tbl_master_impeachment_vs_removal",
+        "title_en": "4. President Impeachment (Art 61) vs Vice-President Removal (Art 67b)",
+        "title_ta": "4. குடியரசுத் தலைவர் பதவி நீக்கம் vs துணைக் குடியரசுத் தலைவர் பதவி நீக்கம் ஒப்பீடு",
+        "headers_en": ["Removal Parameter", "President Impeachment (Article 61)", "Vice-President Removal (Article 67(b))"],
+        "headers_ta": ["பதவி நீக்க காரணி", "குடியரசுத் தலைவர் பதவி நீக்கம் (உறுப்பு 61)", "துணைக் குடியரசுத் தலைவர் பதவி நீக்கம் (உறுப்பு 67(b))"],
+        "rows_en": [
+          ["Ground Specified", "Violation of the Constitution (Only ground)", "NO Ground specified in the Constitution"],
+          ["Initiating House", "EITHER House (Lok Sabha or Rajya Sabha)", "RAJYA SABHA ONLY"],
+          ["Initiating Majority", "2/3rd TOTAL MEMBERSHIP of initiating House", "Effective Majority of Rajya Sabha"],
+          ["Second House Role", "Investigates and passes by 2/3rd TOTAL MEMBERSHIP", "Agrees by SIMPLE MAJORITY of Lok Sabha"],
+          ["Notice Period", "14 Days' Notice (1/4th members signed)", "14 Days' Notice"]
+        ],
+        "rows_ta": [
+          ["காரணம்", "அரசியலமைப்பை மீறுதல் (மட்டுமே)", "எந்தவொரு காரணமும் குறிப்பிடப்படவில்லை"],
+          ["தொடங்கும் அவை", "நாடாளுமன்றத்தின் ஏதேனும் ஒரு அவை (LS அல்லது RS)", "மாநிலங்களவை மட்டுமே (Rajya Sabha)"],
+          ["தொடங்கும் பெரும்பான்மை", "தொடங்கும் அவையின் 2/3 பங்கு மொத்த உறுப்பினர் பெரும்பான்மை", "மாநிலங்களவையில் Effective Majority"],
+          ["இரண்டாவது அவைப் பங்கு", "விசாரித்து 2/3 பங்கு மொத்த உறுப்பினர்களால் நிறைவேற்றுதல்", "மக்களவையில் சாதாரண பெரும்பான்மை (Simple Majority) ஒப்புதல்"],
+          ["அறிவிப்பு காலம்", "14 நாட்கள் முன்னறிவிப்பு (1/4 எம்பிக்கள் கையொப்பம்)", "14 நாட்கள் முன்னறிவிப்பு"]
+        ]
+      },
+      {
+        "id": "tbl_master_regular_vs_casual_vacancy",
+        "title_en": "5. Regular Vacancy vs Casual Vacancy Comparison",
+        "title_ta": "5. வழக்கமான காலியிடம் vs அவசரக் காலியிடம் ஒப்பீடு",
+        "headers_en": ["Vacancy Aspect", "Regular Expiry Vacancy (Art 68(1))", "Casual Vacancy (Art 68(2))"],
+        "headers_ta": ["காலியிட அம்சம்", "வழக்கமான காலியிடம் (Art 68(1))", "அவசரக் காலியிடம் (Art 68(2))"],
+        "rows_en": [
+          ["Cause", "Expiration of 5-year tenure", "Resignation, Removal, Death, Election set aside"],
+          ["Election Timing", "Completed BEFORE expiration of term", "Held 'AS SOON AS POSSIBLE' after vacancy"],
+          ["Outgoing VP Status", "Continues in office until successor enters", "Office vacant; Deputy Chairman presides RS / VP acts as Pres"],
+          ["New VP Tenure", "Full 5-Year Term", "Full 5-Year Term"]
+        ],
+        "rows_ta": [
+          ["காரணம்", "5 ஆண்டுகள் பதவிக் காலம் முடிவடைதல்", "ராஜினாமா, பதவி நீக்கம், மரணம், தேர்தல் ரத்து"],
+          ["தேர்தல் காலம்", "பதவிக் காலம் முடிவதற்கு முன்பே நடத்தி முடிக்க வேண்டும்", "காலியிடம் ஏற்பட்ட பின் 'যত விரைவில் சாத்தியமோ' நடத்த வேண்டும்"],
+          ["பழைய VP நிலை", "புதிய வாரிசு வரும் வரை பதவியில் தொடருவார்", "பதவி காலி; துணைத் தலைவர் அவையை நடத்துவார்"],
+          ["புதிய VP பதவிக் காலம்", "முழுமையாக 5 ஆண்டுகள்", "முழுமையாக 5 ஆண்டுகள்"]
+        ]
+      },
+      {
+        "id": "tbl_master_acting_pres_vs_normal_vp",
+        "title_en": "6. Vice-President Acting as President vs Normal Vice-President Role",
+        "title_ta": "6. செயல் குடியரசுத் தலைவர் vs இயல்புத் துணைக் குடியரசுத் தலைவர் ஒப்பீடு",
+        "headers_en": ["Functional Parameter", "Vice-President Acting as President (Art 65)", "Normal Vice-President Role"],
+        "headers_ta": ["செயல்பாட்டுக் காரணி", "செயல் குடியரசுத் தலைவர் (Art 65)", "இயல்புத் துணைக் குடியரசுத் தலைவர்"],
+        "rows_en": [
+          ["Primary Function", "Executes all Union Executive powers of President", "Presides over Rajya Sabha as Ex-Officio Chairman"],
+          ["RS Presiding Duty", "CANNOT perform RS Chairman duties", "Performs daily RS Chairman duties"],
+          ["Salary Drawn", "President's Salary (1st Schedule / Art 65(3))", "RS Chairman Salary (2nd Schedule)"],
+          ["Maximum Duration", "Maximum 6 Months (until new President elected)", "5-Year Tenure"]
+        ],
+        "rows_ta": [
+          ["முதன்மைப் பணி", "குடியரசுத் தலைவரின் அனைத்து நிர்வாக அதிகாரங்களையும் செயல்படுத்துதல்", "மாநிலங்களவையின் பதவிவழித் தலைவராக அவையை நடத்துதல்"],
+          ["மாநிலங்களவைப் பணி", "மாநிலங்களவைத் தலைவர் பணிகளைச் செய்ய முடியாது", "மாநிலங்களவைத் தலைவரின் அன்றாடப் பணிகளைச் செய்தல்"],
+          ["பெறும் ஊதியம்", "குடியரசுத் தலைவர் ஊதியம் (Art 65(3))", "மாநிலங்களவைத் தலைவர் ஊதியம் (2nd Schedule)"],
+          ["அதிகபட்ச காலம்", "அதிகபட்சம் 6 மாதங்கள் (புதிய தலைவர் தேர்வாகும் வரை)", "5 ஆண்டுகள் பதவிக் காலம்"]
+        ]
+      },
+      {
+        "id": "tbl_master_pres_vs_vp_election",
+        "title_en": "7. President Election vs Vice-President Election Procedure",
+        "title_ta": "7. குடியரசுத் தலைவர் தேர்தல் vs துணைக் குடியரசுத் தலைவர் தேர்தல் முறை ஒப்பீடு",
+        "headers_en": ["Election Parameter", "Presidential Election (Articles 54 & 55)", "Vice-Presidential Election (Article 66)"],
+        "headers_ta": ["தேர்தல் காரணி", "குடியரசுத் தலைவர் தேர்தல் (உறுப்புகள் 54 & 55)", "துணைக் குடியரசுத் தலைவர் தேர்தல் (உறுப்பு 66)"],
+        "rows_en": [
+          ["Electoral Body", "Elected MPs + Elected State & UT MLAs", "Elected & Nominated MPs of Parliament only"],
+          ["MP Vote Value", "Weighted Value (Based on State MLA vote totals)", "EQUAL Vote Value (= 1 per MP)"],
+          ["MLA Participation", "INCLUDED (State MLAs vote)", "EXCLUDED (State MLAs do not vote)"],
+          ["Nominated MP Participation", "EXCLUDED (Cannot vote)", "INCLUDED (Can vote)"],
+          ["System of Election", "Proportional Representation by STV (Secret Ballot)", "Proportional Representation by STV (Secret Ballot)"]
+        ],
+        "rows_ta": [
+          ["வாக்காளர் அமைப்பு", "தேர்ந்தெடுக்கப்பட்ட எம்பிக்கள் + எம்எல்ஏக்கள்", "நாடாளுமன்றத்தின் தேர்ந்தெடுக்கப்பட்ட & நியமன எம்பிக்கள் மட்டுமே"],
+          ["எம்பி வாக்கு மதிப்பு", "எடையுள்ள மதிப்பு (மாநில எம்எல்ஏ வாக்குகள் அடிப்படையில்)", "சமமான வாக்கு மதிப்பு (= 1)"],
+          ["எம்எல்ஏக்கள் பங்கேற்பு", "சேர்க்கப்பட்டுள்ளனர் (எம்எல்ஏக்கள் வாக்களிப்பர்)", "விலக்கப்பட்டுள்ளனர் (எம்எல்ஏக்கள் வாக்களிக்க மாட்டார்கள்)"],
+          ["நியமன எம்பிக்கள் பங்கேற்பு", "விலக்கப்பட்டுள்ளனர் (வாக்களிக்க முடியாது)", "சேர்க்கப்பட்டுள்ளனர் (வாக்களிக்கலாம்)"],
+          ["தேர்தல் முறை", "ஒற்றை மாற்று வாக்கு விகிதாச்சார பிரதிநிதித்துவம் (ரகசிய வாக்கெடுப்பு)", "ஒற்றை மாற்று வாக்கு விகிதாச்சார பிரதிநிதித்துவம் (ரகசிய வாக்கெடுப்பு)"]
+        ]
+      },
+      {
+        "id": "tbl_master_pres_vs_vp_electoral_college_detailed",
+        "title_en": "8. President Electoral College vs Vice-President Electoral College",
+        "title_ta": "8. குடியரசுத் தலைவர் வாக்காளர் குழு vs துணைக் குடியரசுத் தலைவர் வாக்காளர் குழு ஒப்பீடு",
+        "headers_en": ["Member Category", "President's Electoral College (Article 54)", "Vice-President's Electoral College (Article 66)"],
+        "headers_ta": ["உறுப்பினர் பிரிவு", "குடியரசுத் தலைவர் வாக்காளர் குழு (உறுப்பு 54)", "துணைக் குடியரசுத் தலைவர் வாக்காளர் குழு (உறுப்பு 66)"],
+        "rows_en": [
+          ["Lok Sabha Elected Members", "VOTES", "VOTES"],
+          ["Lok Sabha Nominated Members", "DOES NOT VOTE", "VOTES"],
+          ["Rajya Sabha Elected Members", "VOTES", "VOTES"],
+          ["Rajya Sabha Nominated Members", "DOES NOT VOTE", "VOTES"],
+          ["State Assembly Elected Members", "VOTES", "DOES NOT VOTE"],
+          ["State Assembly Nominated Members", "DOES NOT VOTE", "DOES NOT VOTE"],
+          ["State Legislative Council Members", "DOES NOT VOTE", "DOES NOT VOTE"]
+        ],
+        "rows_ta": [
+          ["மக்களவை தேர்ந்தெடுக்கப்பட்ட உறுப்பினர்கள்", "வாக்களிப்பர்", "வாக்களிப்பர்"],
+          ["மக்களவை நியமன உறுப்பினர்கள்", "வாக்களிக்க முடியாது", "வாக்களிப்பர்"],
+          ["மாநிலங்களவை தேர்ந்தெடுக்கப்பட்ட உறுப்பினர்கள்", "வாக்களிப்பர்", "வாக்களிப்பர்"],
+          ["மாநிலங்களவை நியமன உறுப்பினர்கள்", "வாக்களிக்க முடியாது", "வாக்களிப்பர்"],
+          ["சட்டமன்ற தேர்ந்தெடுக்கப்பட்ட உறுப்பினர்கள்", "வாக்களிப்பர்", "வாக்களிக்க முடியாது"],
+          ["சட்டமன்ற நியமன உறுப்பினர்கள்", "வாக்களிக்க முடியாது", "வாக்களிக்க முடியாது"],
+          ["சட்டமன்ற மேலவை உறுப்பினர்கள்", "வாக்களிக்க முடியாது", "வாக்களிக்க முடியாது"]
+        ]
+      }
+    ],
+    "sec_master_revision_suite": [
+      {
+        "title": "8. Articles 63 to 71 Master Map & 10-Second Rapid Revision",
+        "points": {
+          "en": [
+            "Article 63: Office of the Vice-President of India.",
+            "Article 64: Vice-President is Ex-Officio Chairman of Rajya Sabha.",
+            "Article 65: Vice-President acts as President or discharges functions during casual vacancy or absence (Max 6 months).",
+            "Article 66: Election of Vice-President (Electoral College = All MPs; Method = STV; Minimum age = 35 years; Rajya Sabha qualification).",
+            "Article 67: Term of office (5 years), resignation to President, removal resolution initiated ONLY in Rajya Sabha (Effective Majority) + Lok Sabha agreement (Simple Majority).",
+            "Article 68: Election timing to fill regular vacancy (before expiry) and casual vacancy (as soon as possible).",
+            "Article 69: Oath or affirmation administered by President of India.",
+            "Article 70: Discharge of President's functions in other contingencies (Parliament enacted President Discharge of Functions Act 1969).",
+            "Article 71: Supreme Court has exclusive jurisdiction over election disputes."
+          ],
+          "ta": [
+            "உறுப்பு 63: இந்தியத் துணைக் குடியரசுத் தலைவர் பதவி.",
+            "உறுப்பு 64: மாநிலங்களவையின் பதவிவழித் தலைவர்.",
+            "உறுப்பு 65: காலியிடங்களின் போது செயல் குடியரசுத் தலைவராகச் செயல்படுதல் (அதிகபட்சம் 6 மாதங்கள்).",
+            "உறுப்பு 66: துணைக் குடியரசுத் தலைவர் தேர்தல் (வாக்காளர் குழு = அனைத்து எம்பிக்களும்; முறை = STV; வயது = 35; மாநிலங்களவை தகுதி).",
+            "உறுப்பு 67: பதவிக் காலம் (5 ஆண்டுகள்), குடியரசுத் தலைவரிடம் ராஜினாமா, மாநிலங்களவையில் மட்டுமே தொடங்கும் பதவி நீக்கம் (Effective Majority) + மக்களவை ஒப்புதல் (Simple Majority).",
+            "உறுப்பு 68: காலியிடத் தேர்தல் காலம் (வழக்கமானது காலம் முடிவதற்குள்; அவசரமானது சாத்தியமான விரைவில்).",
+            "உறுப்பு 69: பதவிப் பிரமாணம் (இந்தியக் குடியரசுத் தலைவரால் செய்யப்படுவது).",
+            "உறுப்பு 70: இதர அவசர நிலைகளில் குடியரசுத் தலைவர் பணிகளைச் செய்தல் (1969 நாடாளுமன்றச் சட்டம்).",
+            "உறுப்பு 71: தேர்தல் தகராறுகளை விசாரிக்கும் உச்ச நீதிமன்றத்தின் தனிப்பட்ட அதிகாரம்."
+          ]
+        }
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "Vice-President of India (Part 3: Removal, Vacancy & Master Revision)",
+        "short_label": "Vice-President Part 3",
+        "children": [
+          {
+            "title": "1. Removal Procedure (Article 67(b))",
+            "short_label": "Removal",
+            "children": [
+              {
+                "title": "No formal Impeachment; No specified ground in Constitution",
+                "short_label": "No Impeachment"
+              },
+              {
+                "title": "Initiated ONLY in Rajya Sabha (14 Days written notice)",
+                "short_label": "RS Only"
+              },
+              {
+                "title": "RS Effective Majority + LS Simple Majority Agreement",
+                "short_label": "Majority Required"
+              },
+              {
+                "title": "Cannot vote or preside during own removal resolution",
+                "short_label": "No Vote"
+              }
+            ]
+          },
+          {
+            "title": "2. Vacancy & Acting President (Articles 65 & 68)",
+            "short_label": "Vacancy & Acting",
+            "children": [
+              {
+                "title": "Art 68: Regular election before term expiry; Casual vacancy 'as soon as possible'",
+                "short_label": "Art 68 Timelines"
+              },
+              {
+                "title": "Art 65: Acts as President (Max 6 months); gets President salary & immunities",
+                "short_label": "Art 65 Acting"
+              },
+              {
+                "title": "Art 70: Parliament 1969 Act — CJI acts as President if both VP & Pres vacant",
+                "short_label": "Art 70 CJI Role"
+              }
+            ]
+          },
+          {
+            "title": "3. Article 71 & Judicial Principles",
+            "short_label": "Art 71 & Cases",
+            "children": [
+              {
+                "title": "Art 71: Supreme Court exclusive jurisdiction over election disputes",
+                "short_label": "Art 71 SC"
+              },
+              {
+                "title": "Kihoto Hollohan 1992: Chairman 10th Schedule decisions subject to judicial review",
+                "short_label": "Kihoto Case"
+              },
+              {
+                "title": "1969 Case: CJI M. Hidayatullah acted as President after Zakir Husain & Giri",
+                "short_label": "1969 Crisis"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": "1. Effective Majority vs 2/3rd Majority Removal Trap (பதவி நீக்க பெரும்பான்மைப் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Believing Vice-President removal requires a 2/3rd majority like President impeachment.",
+            "FACT: President impeachment (Art 61) requires 2/3rd TOTAL MEMBERSHIP. Vice-President removal (Art 67b) requires EFFECTIVE MAJORITY in Rajya Sabha + SIMPLE MAJORITY in Lok Sabha!"
+          ],
+          "ta": [
+            "பொறி: குடியரசுத் தலைவர் பதவி நீக்கம் போல துணைக் குடியரசுத் தலைவருக்கும் 2/3 பங்கு பெரும்பான்மை தேவை எனக் கருதுவது.",
+            "உண்மை: குடியரசுத் தலைவர் பதவி நீக்கத்திற்கு 2/3 பங்கு மொத்த பெரும்பான்மை தேவை. துணைக் குடியரசுத் தலைவர் பதவி நீக்கத்திற்கு மாநிலங்களவையில் Effective Majority + மக்களவையில் Simple Majority போதுமானது!"
+          ]
+        }
+      },
+      {
+        "title": "2. Casual Vacancy Timeline Trap (அவசரக் காலியிடக் கால கெடு பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Assuming Article 68 specifies a mandatory 6-month deadline for Vice-President casual vacancy election.",
+            "FACT: Article 62(2) specifies 'within six months' for President. Article 68(2) specifies 'as soon as possible' for Vice-President!"
+          ],
+          "ta": [
+            "பொறி: உறுப்பு 68 துணைக் குடியரசுத் தலைவர் அவசரக் காலியிடத்திற்கு 6 மாதக் கெடுவை கட்டாயமாக்குகிறது என நினைப்பது.",
+            "உண்மை: உறுப்பு 62(2) குடியரசுத் தலைவருக்கு '6 மாதங்களுக்குள்' என்கிறது. உறுப்பு 68(2) துணைக் குடியரசுத் தலைவருக்கு 'சாத்தியமான விரைவில்' என்றே குறிப்பிடுகிறது!"
+          ]
+        }
+      },
+      {
+        "title": "3. Article 70 CJI Acting Presidency Trap (தலைமை நீதிபதி செயல் தலைவர் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Believing the Constitution directly states that the Chief Justice of India acts as President when both President and VP are vacant.",
+            "FACT: The Constitution does NOT state this directly. Article 70 empowers Parliament to enact a law, and Parliament enacted the President (Discharge of Functions) Act 1969 specifying CJI!"
+          ],
+          "ta": [
+            "பொறி: அரசியலமைப்பே நேரடியாகக் குடியரசுத் தலைவர் மற்றும் VP பதவிகள் காலியாகும் போது CJI செயல் தலைவராவார் எனக் குறிப்பிடுவதாக நம்புவது.",
+            "உண்மை: அரசியலமைப்பு நேரடியாகக் குறிப்பிடவில்லை. உறுப்பு 70 நாடாளுமன்றத்திற்குச் சட்டமியற்றும் அதிகாரம் அளிக்கிறது; நாடாளுமன்றம் 1969 சட்டத்தின் மூலமே CJI-ஐ செயல் தலைவராக அனுமதித்தது!"
+          ]
+        }
+      },
+      {
+        "title": "4. Article 71 Supreme Court Jurisdiction Trap (தேர்தல் தகராறுகள் நீதிமன்றப் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Believing Election Commission of India or High Courts can decide Presidential / Vice-Presidential election disputes.",
+            "FACT: Under Article 71, ONLY the SUPREME COURT of India has exclusive and final jurisdiction over election disputes of President and Vice-President."
+          ],
+          "ta": [
+            "பொறி: தேர்தல் ஆணையம் அல்லது உயர் நீதிமன்றங்கள் குடியரசுத் தலைவர் / VP தேர்தல் தகராறுகளைத் தீர்க்கலாம் என நம்புவது.",
+            "உண்மை: உறுப்பு 71-ன் கீழ் இந்திய உச்ச நீதிமன்றத்திற்கு மட்டுமே பிரத்யேக மற்றும் இறுதியான அதிகாரம் உண்டு."
+          ]
+        }
+      },
+      {
+        "title": "5. Past Acts Validity Trap (முந்தைய நடவடிக்கைகள் செல்லுபடியாகும் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Believing acts done by a Vice-President become invalid if his election is later declared void by the Supreme Court.",
+            "FACT: Under Article 71(2), all acts done by him prior to the Supreme Court declaration SHALL NOT BE INVALIDATED (they remain fully valid)."
+          ],
+          "ta": [
+            "பொறி: துணைக் குடியரசுத் தலைவர் தேர்தல் செல்லாது என உச்ச நீதிமன்றம் அறிவித்தால் அவரது முந்தைய நடவடிக்கைகள் ரத்தாகிவிடும் எனக் கருதுவது.",
+            "உண்மை: உறுப்பு 71(2)-ன் படி உச்ச நீதிமன்ற அறிவிப்புக்கு முன் அவராற் செய்யப்பட்ட அனைத்து நடவடிக்கைகளும் செல்லுபடியாகும் (ரத்தாகாது)."
+          ]
+        }
+      },
+      {
+        "title": "6. Vice-President Resignation Recipient Trap (ராஜினாமாக் கடிதம் பெறுநர் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Believing Vice-President submits his resignation to the Rajya Sabha or Chief Justice.",
+            "FACT: The Vice-President addresses his resignation under Article 67(a) strictly to the PRESIDENT OF INDIA."
+          ],
+          "ta": [
+            "பொறி: துணைக் குடியரசுத் தலைவர் தனது ராஜினாமாக் கடிதத்தை மாநிலங்களவை அல்லது தலைமை நீதிபதியிடம் வழங்குவார் என நினைப்பது.",
+            "உண்மை: உறுப்பு 67(a)-ன் படி துணைக் குடியரசுத் தலைவர் தனது ராஜினாமாக் கடிதத்தை இந்தியக் குடியரசுத் தலைவரிடமே சமர்ப்பிக்க வேண்டும்."
+          ]
+        }
+      }
+    ],
+    "important_facts": {
+      "en": [
+        "Article 67(b) removal requires an Effective Majority in Rajya Sabha + Simple Majority in Lok Sabha.",
+        "Removal resolution CAN ORIGINATE ONLY IN RAJYA SABHA with 14 days' written notice.",
+        "The Constitution specifies NO GROUND for the removal of the Vice-President.",
+        "Under Article 68(2), a newly elected Vice-President holds office for a FULL TERM OF 5 YEARS.",
+        "Under Article 65, the Vice-President acts as President during casual vacancies for a MAXIMUM OF 6 MONTHS.",
+        "Under Parliament's 1969 Act, Chief Justice of India M. Hidayatullah acted as President in July-August 1969.",
+        "Article 71 vests exclusive jurisdiction over election disputes in the Supreme Court of India.",
+        "Acts done by Vice-President before his election is declared void by Supreme Court remain VALID under Art 71(2)."
+      ],
+      "ta": [
+        "உறுப்பு 67(b) பதவி நீக்கத்திற்கு மாநிலங்களவையில் Effective Majority + மக்களவையில் Simple Majority தேவை.",
+        "பதவி நீக்கத் தீர்மானம் 14 நாட்கள் முன்னறிவிப்புடன் மாநிலங்களவையில் மட்டுமே தொடங்கப்பட முடியும்.",
+        "துணைக் குடியரசுத் தலைவர் பதவி நீக்கத்திற்கு எந்தவொரு காரணமும் அரசியலமைப்பில் குறிப்பிடப்படவில்லை.",
+        "உறுப்பு 68(2)-ன் கீழ் அவசரக் காலியிடத்திற்குத் தேர்வாகும் புதிய துணைக் குடியரசுத் தலைவர் முழுமையாக 5 ஆண்டுகள் பதவி வகிப்பார்.",
+        "உறுப்பு 65-ன் கீழ் புதிய குடியரசுத் தலைவர் தேர்வாகும் வரை அதிகபட்சம் 6 மாதங்கள் செயல் தலைவராகப் பணியாற்றலாம்.",
+        "1969 சட்டத்தின் கீழ் இந்திய தலைமை நீதிபதி எம். இதயத்துல்லா ஜூலை-ஆகஸ்ட் 1969-ல் செயல் தலைவராகப் பணியாற்றினார்.",
+        "உறுப்பு 71 தேர்தல் தகராறுகளை விசாரிக்கும் பிரத்யேக அதிகாரத்தை உச்ச நீதிமன்றத்திற்கு வழங்குகிறது.",
+        "தேர்தல் செல்லாது என அறிவிக்கப்படும் முன் துணைக் குடியரசுத் தலைவரால் செய்யப்பட்ட பணிகள் உறுப்பு 71(2)-ன் கீழ் செல்லுபடியாகும்."
+      ]
+    },
+    "quick_revision": {
+      "en": [
+        "Article 67(b) Removal: RS Effective Majority + LS Simple Majority; 14 days notice; RS origin only; No ground specified.",
+        "Article 68 Vacancy: Expiry election before term end; Casual vacancy election 'as soon as possible'; New VP gets 5 full years.",
+        "Article 65 Acting President: Max 6 months; draws President salary; relinquishes RS Chairman duties.",
+        "Article 70 Contingencies: Parliament enacted President (Discharge of Functions) Act 1969 (CJI M. Hidayatullah acted in 1969).",
+        "Article 71 Election Disputes: Supreme Court exclusive jurisdiction; Past acts remain VALID even if election declared void."
+      ],
+      "ta": [
+        "உறுப்பு 67(b) பதவி நீக்கம்: RS Effective Majority + LS Simple Majority; 14 நாட்கள் அறிவிப்பு; RS-ல் மட்டுமே தொடக்கம்; காரணம் இல்லை.",
+        "உறுப்பு 68 காலியிடம்: காலம் முடிவதற்குள் வழக்கமான தேர்தல்; அவசரக் காலியிடத்திற்கு 'சாத்தியமான விரைவில்' தேர்தல்; புதிய VP-க்கு 5 ஆண்டுகள்.",
+        "உறுப்பு 65 செயல் தலைவர்: அதிகபட்சம் 6 மாதங்கள்; குடியரசுத் தலைவர் ஊதியம்; மாநிலங்களவைத் தலைவர் பணிகள் நிறுத்தம்.",
+        "உறுப்பு 70 அவசர நிலைகள்: 1969 நாடாளுமன்றச் சட்டம் (CJI எம். இதயத்துல்லா 1969-ல் செயல் தலைவரானார்).",
+        "உறுப்பு 71 தேர்தல் தகராறுகள்: உச்ச நீதிமன்றத் தனிப்பட்ட அதிகாரம்; தேர்தல் ரத்தானாலும் முந்தைய நடவடிக்கைகள் செல்லுபடியாகும்."
+      ]
+    },
+    "revision_cards": [
+      {
+        "title": "Article 67(b) Removal",
+        "content_en": "RS Effective Majority + LS Simple Majority; 14 days notice; RS origin only.",
+        "content_ta": "RS Effective Majority + LS Simple Majority; 14 நாட்கள் அறிவிப்பு; RS-ல் மட்டுமே தொடக்கம்."
+      },
+      {
+        "title": "No Specified Removal Ground",
+        "content_en": "The Constitution specifies NO GROUND for Vice-President removal.",
+        "content_ta": "துணைக் குடியரசுத் தலைவர் பதவி நீக்கத்திற்கு எந்தவொரு காரணமும் குறிப்பிடப்படவில்லை."
+      },
+      {
+        "title": "Article 68 Casual Vacancy",
+        "content_en": "Election held 'as soon as possible'; newly elected VP serves FULL 5-YEAR TERM.",
+        "content_ta": "தேர்தல் 'சாத்தியமான விரைவில்' நடத்தப்படும்; புதிய VP முழுமையாக 5 ஆண்டுகள் பதவி வகிப்பார்."
+      },
+      {
+        "title": "Article 65 Acting President",
+        "content_en": "Acts as President max 6 months; receives President's salary; RS duties cease.",
+        "content_ta": "அதிகபட்சம் 6 மாதங்கள் செயல் தலைவர்; குடியரசுத் தலைவர் ஊதியம் பெறுகிறார்; RS பணிகள் நிறுத்தம்."
+      },
+      {
+        "title": "Article 70 Parliament Power",
+        "content_en": "Parliament can legislate for unprovided contingencies (1969 Succession Act).",
+        "content_ta": "குறிப்பிடப்படாத அவசர நிலைகளுக்கு நாடாளுமன்றம் சட்டமியற்றலாம் (1969 வாரிசுரிமைச் சட்டம்)."
+      },
+      {
+        "title": "1969 CJI M. Hidayatullah Case",
+        "content_en": "CJI acted as President when both President (Zakir Husain) & VP (Giri) offices were vacant.",
+        "content_ta": "குடியரசுத் தலைவர் மற்றும் VP பதவிகள் காலியான போது CJI எம். இதயத்துல்லா செயல் தலைவரானார்."
+      },
+      {
+        "title": "Article 71 SC Jurisdiction",
+        "content_en": "Supreme Court has exclusive and final jurisdiction over President/VP election disputes.",
+        "content_ta": "தேர்தல் தகராறுகளை உச்ச நீதிமன்றம் மட்டுமே விசாரித்து இறுதித் தீர்ப்பு அளிக்கும்."
+      },
+      {
+        "title": "Article 71(2) Past Acts Validity",
+        "content_en": "Past acts of VP remain VALID even if election is later declared void by Supreme Court.",
+        "content_ta": "தேர்தல் ரத்து செய்யப்பட்டாலும் துணைக் குடியரசுத் தலைவரின் முந்தைய நடவடிக்கைகள் செல்லுபடியாகும்."
+      },
+      {
+        "title": "Kihoto Hollohan 1992",
+        "content_en": "Chairman's decisions under Tenth Schedule (Anti-Defection) are subject to judicial review.",
+        "content_ta": "10வது அட்டவணையின் கீழ் தலைவரின் முடிவு நீதித்துறை மறுஆய்வுக்கு உட்பட்டது."
+      },
+      {
+        "title": "Dr. S. Radhakrishnan",
+        "content_en": "First Vice-President; served 2 full consecutive terms (1952–1962); elected unopposed twice.",
+        "content_ta": "முதல் துணைக் குடியரசுத் தலைவர்; தொடர்ந்து இருமுறை 5 ஆண்டுகள் பதவி வகித்தார்."
+      },
+      {
+        "title": "Krishna Kant (1997–2002)",
+        "content_en": "ONLY Vice-President of India who died in office (27 July 2002).",
+        "content_ta": "பதவியில் இருக்கும் போதே மரணமடைந்த ஒரே இந்தியத் துணைக் குடியரசுத் தலைவர்."
+      },
+      {
+        "title": "V.V. Giri & R. Venkataraman",
+        "content_en": "Resigned as Vice-President upon being elected as President of India.",
+        "content_ta": "குடியரசுத் தலைவராகத் தேர்வானதால் துணைக் குடியரசுத் தலைவர் பதவியை ராஜினாமா செய்தனர்."
+      }
+    ]
+  }
+}
+
+target_path = 'data/notes/polity/vice_president_part_3.json'
+with open(target_path, 'w', encoding='utf-8') as f:
+    json.dump(part3_data, f, ensure_ascii=False, indent=2)
+
+print(f"✅ Vice-President Part 3 JSON built successfully: {target_path}")

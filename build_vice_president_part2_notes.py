@@ -1,0 +1,804 @@
+import json
+import os
+import sys
+
+sys.stdout.reconfigure(encoding='utf-8')
+
+print("==================================================")
+print("BUILDING VICE-PRESIDENT NOTES — PART 2")
+print("==================================================")
+
+part2_data = {
+  "meta": {
+    "topic_id": "polity_vice_president_part_2",
+    "repository_id": "polity_vice_president",
+    "display_title": "Vice-President – Part 2",
+    "part": 2,
+    "total_parts": 3,
+    "subject": "polity",
+    "chapter": "Vice-President of India",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "topic_id": "polity_vice_president_part_2",
+    "repository_id": "polity_vice_president",
+    "display_title": "Vice-President – Part 2",
+    "part": 2,
+    "total_parts": 3,
+    "subject": "polity",
+    "chapter": "Vice-President of India",
+    "language": "English + Tamil"
+  },
+  "keywords": [
+    "Vice-President of India",
+    "Ex-officio Chairman",
+    "Rajya Sabha",
+    "Article 64",
+    "Article 89",
+    "Casting Vote",
+    "Article 100",
+    "Deputy Chairman",
+    "Speaker of Lok Sabha",
+    "Article 65 Foundation",
+    "Acting President",
+    "TNPSC Polity"
+  ],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [
+        "Understand the dual identity of the Vice-President as Ex-Officio Chairman of Rajya Sabha (Articles 64 & 89).",
+        "Master the constitutional mechanism of Casting Vote under Article 100(1) (exercised only during a tie).",
+        "Compare the powers, voting rights, and removal procedures of Chairman vs Deputy Chairman of Rajya Sabha.",
+        "Compare the parliamentary powers of Speaker of Lok Sabha vs Chairman of Rajya Sabha.",
+        "Understand Article 65 foundation: salary, immunities, and relinquishment of Chairman duties while acting as President."
+      ],
+      "ta": [
+        "மாநிலங்களவையின் பதவிவழித் தலைவராகத் துணைக் குடியரசுத் தலைவரின் இரட்டை அரசியலமைப்பு நிலையைப் புரிந்துகொள்ளுதல் (உறுப்புகள் 64 & 89).",
+        "உறுப்பு 100(1)-ன் கீழ் முடிவு வாக்கு (Casting Vote) செலுத்தும் அரசியலமைப்பு முறையைத் தெரிந்துகொள்ளுதல் (சமநிலை வாக்குகள் வரும்போது மட்டுமே).",
+        "மாநிலங்களவை தலைவர் vs துணைத் தலைவரின் அதிகாரங்கள், வாக்குரிமை மற்றும் பதவி நீக்க நடைமுறைகளை ஒப்பிடுதல்.",
+        "மக்களவை சபாநாயகர் vs மாநிலங்களவை தலைவரின் நாடாளுமன்ற அதிகாரங்களை ஒப்பிடுதல்.",
+        "உறுப்பு 65-ன் கீழ் செயல் குடியரசுத் தலைவராகப் பணியாற்றும் போது ஊதியம், விலக்குகள் மற்றும் தலைவர் பொறுப்பிலிருந்து விலகுதல் ஆகியவற்றைப் புரிந்துகொள்ளுதல்."
+      ]
+    }
+  },
+  "subject": "polity",
+  "topic": "Vice-President",
+  "language": "English + Tamil",
+  "ui_type": "standard_notes",
+  "sections": [
+    {
+      "id": "sec_ex_officio_chairman",
+      "title_en": "1. Ex-Officio Chairman of Rajya Sabha (Articles 64 & 89)",
+      "title_ta": "1. மாநிலங்களவையின் பதவிவழித் தலைவர் (உறுப்புகள் 64 & 89)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_parliamentary_functions",
+      "title_en": "2. Parliamentary Functions & Conduct of Business",
+      "title_ta": "2. நாடாளுமன்றப் பணிகள் & அவை நடவடிக்கைகள் பராமரிப்பு",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_casting_vote",
+      "title_en": "3. Casting Vote Mechanism (Article 100(1))",
+      "title_ta": "3. முடிவு வாக்கு அளிக்கும் அதிகாரம் (உறுப்பு 100(1))",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_chairman_vs_deputy_chairman",
+      "title_en": "4. Chairman vs Deputy Chairman of Rajya Sabha",
+      "title_ta": "4. மாநிலங்களவைத் தலைவர் vs துணைத் தலைவர்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_speaker_vs_chairman",
+      "title_en": "5. Speaker of Lok Sabha vs Chairman of Rajya Sabha",
+      "title_ta": "5. மக்களவை சபாநாயகர் vs மாநிலங்களவைத் தலைவர்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_presidential_powers_comparison",
+      "title_en": "6. President Executive & Emergency Powers vs Vice-President Role",
+      "title_ta": "6. குடியரசுத் தலைவர் நிர்வாக/அவசரநிலை அதிகாரங்கள் vs துணைக் குடியரசுத் தலைவர்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_art_65_foundation",
+      "title_en": "7. Article 65 Presidential Vacancy & Salary Adjustments",
+      "title_ta": "7. உறுப்பு 65 குடியரசுத் தலைவர் காலியிடம் & ஊதிய மாற்றங்கள்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_part2_traps",
+      "title_en": "8. Part 2 Specialized TNPSC Trap Points",
+      "title_ta": "8. பகுதி 2 சிறப்பு TNPSC தேர்வுப் பொறிகள்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "comparison_tables",
+      "title_en": "9. Mandatory Comparison Tables (Part 2)",
+      "title_ta": "9. கட்டாய ஒப்பீட்டு அட்டவணைகள் (பகுதி 2)",
+      "type": "comparison"
+    },
+    {
+      "id": "mind_map",
+      "title_en": "10. Mind Map & Quick Revision",
+      "title_ta": "10. மன வரைபடம் & விரைவு திருப்புதல்",
+      "type": "mind_map"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "In Part 2, we examine the primary daily functioning of the Vice-President of India as the Ex-Officio Chairman of the Rajya Sabha (Article 64 & Article 89). In this capacity, he acts as the principal presiding officer of the Council of States, maintaining parliamentary decorum, interpreting rules of procedure, and exercising a Casting Vote under Article 100(1) in case of an equality of votes.",
+      "ta": "பகுதி 2-ல், மாநிலங்களவையின் (Rajya Sabha) பதவிவழித் தலைவராக (Ex-Officio Chairman) துணைக் குடியரசுத் தலைவரின் முதன்மையான அன்றாடச் செயல்பாடுகளைப் படிக்கிறோம் (உறுப்பு 64 & உறுப்பு 89). இந்த அதிகாரப் பொறுப்பில், அவர் மாநிலங்களவையின் முதன்மைத் தலைவராக அமையின் கண்ணியத்தைப் பராமரிக்கிறார், விதிமுறைகளை விளக்குகிறார், மற்றும் வாக்குகள் சமநிலவடையும் போது உறுப்பு 100(1)-ன் கீழ் முடிவு வாக்கு (Casting Vote) செலுத்துகிறார்."
+    },
+    "introduction": {
+      "en": "The Constitution assigns no independent executive functions to the Vice-President in his normal capacity. His constitutional salary, staff, and office are attached to his parliamentary designation as Chairman of Rajya Sabha. However, when he acts as President under Article 65, he temporarily relinquishes his duties as Chairman, and the Deputy Chairman of Rajya Sabha presides over the House.",
+      "ta": "இயல்பான நிலையில் துணைக் குடியரசுத் தலைவருக்குச் சுயாதீன நிர்வாக அதிகாரங்கள் எதையும் அரசியலமைப்பு வழங்கவில்லை. அவரது ஊதியம், ஊழியர்கள் மற்றும் அலுவலகம் ஆகியவை மாநிலங்களவைத் தலைவர் என்ற நாடாளுமன்றப் பதவியுடனேயே இணைக்கப்பட்டுள்ளன. இருப்பினும், உறுப்பு 65-ன் கீழ் செயல் குடியரசுத் தலைவராகப் பணியாற்றும் போது, அவர் தற்காலிகமாகத் தலைவர் பொறுப்பிலிருந்து விலகுகிறார், அப்போது மாநிலங்களவைத் துணைத் தலைவர் அவையை நடத்துவார்."
+    },
+    "sec_ex_officio_chairman": [
+      {
+        "title": "1. Dual Capacity & Article 89 Provisions",
+        "points": {
+          "en": [
+            "Ex-Officio Designation (Article 64): The Vice-President is the Ex-Officio Chairman of the Council of States (Rajya Sabha). 'Ex-officio' means by virtue of holding the office of Vice-President, he automatically becomes Chairman of Rajya Sabha.",
+            "Article 89(1): Mandates that the Vice-President of India shall be ex-officio Chairman of the Council of States.",
+            "Salary Source: Draws salary fixed by Parliament under the Second Schedule as Chairman of Rajya Sabha, NOT as Vice-President.",
+            "Non-Member Presiding Officer: Unique constitutional feature — the Chairman is NOT a member of the Rajya Sabha (unlike the Speaker of Lok Sabha who is an elected MP of Lok Sabha)."
+          ],
+          "ta": [
+            "பதவிவழிப் பெயர் (உறுப்பு 64): துணைக் குடியரசுத் தலைவர் மாநிலங்களவையின் பதவிவழித் தலைவராவார் (Ex-Officio Chairman). 'பதவிவழி' என்றால் துணைக் குடியரசுத் தலைவர் பதவியை வகிப்பதாலேயே அவர் தானாகவே மாநிலங்களவைத் தலைவராகிறார்.",
+            "உறுப்பு 89(1): இந்தியத் துணைக் குடியரசுத் தலைவர் மாநிலங்களவையின் பதவிவழித் தலைவராக இருப்பார் எனக் குறிப்பிடுகிறது.",
+            "ஊதிய ஆதாரம்: துணைக் குடியரசுத் தலைவராக அல்லாமல், மாநிலங்களவைத் தலைவராகவே இரண்டாம் அட்டவணையின் கீழ் ஊதியம் பெறுகிறார்.",
+            "உறுப்பினரல்லாத அவைத் தலைவர்: தனித்துவமான அம்சம் — மாநிலங்களவைத் தலைவர் அந்த அவையின் உறுப்பினர் அல்ல (மக்களவை சபாநாயகர் மக்களவை எம்பியாக இருப்பது போல அல்ல)."
+          ]
+        }
+      }
+    ],
+    "sec_parliamentary_functions": [
+      {
+        "title": "2. Powers and Parliamentary Functions of Chairman",
+        "points": {
+          "en": [
+            "Presiding & Order Maintenance: Responsible for orderly conduct of Rajya Sabha business, enforcement of rules of procedure, and maintaining decorum.",
+            "Interpretation of Rules: The Chairman is the final authority inside the House on the interpretation of the Constitution and Rules of Procedure regarding Rajya Sabha business.",
+            "Recognition of Speakers: Decides who will speak, time allotted for debates, and admissibility of questions, motions, and resolutions.",
+            "Secretariat Head: Exercises administrative control over the Rajya Sabha Secretariat.",
+            "Disqualification under Anti-Defection Law: Decides questions of disqualification of Rajya Sabha members under the Tenth Schedule (Anti-Defection Law). His decision is subject to judicial review (Kihoto Hollohan case 1992)."
+          ],
+          "ta": [
+            "அவை நடத்தல் & அமைதி பராமரிப்பு: மாநிலங்களவை நடவடிக்கைகளை சீராக நடத்துதல், விதிகளை அமல்படுத்துதல் மற்றும் அவை அமைதியைப் பராமரித்தல்.",
+            "விதிமுறைகள் விளக்கம்: மாநிலங்களவை நடவடிக்கைகள் தொடர்பான அரசியலமைப்பு மற்றும் விதிமுறைகளின் இறுதியான விளக்கமளிக்கும் அதிகாரம் உடையவர்.",
+            "பேச்சாளர்களை அங்கீகரித்தல்: யார் பேசுவது, விவாதத்திற்கான நேரம், கேள்விகள் மற்றும் தீர்மானங்களின் ஏற்புத்தன்மை ஆகியவற்றைத் தீர்மானிப்பவர்.",
+            "செயலகத் தலைவர்: மாநிலங்களவை செயலகத்தின் மீது நிர்வாகக் கட்டுப்பாடு செலுத்துபவர்.",
+            "கட்சித் தாவல் தடைச் சட்ட நீக்கம்: பத்தாவது அட்டவணையின் (கட்சித் தாவல் தடைச் சட்டம்) கீழ் மாநிலங்களவை உறுப்பினர்களின் தகுதியின்மையை முடிவெடுப்பவர். இவரது முடிவு நீதித்துறை மறுாய்வுக்கு உட்பட்டது (கிஹோட்டோ ஹோல்லோஹன் வழக்கு 1992)."
+          ]
+        }
+      }
+    ],
+    "sec_casting_vote": [
+      {
+        "title": "3. Casting Vote Mechanism under Article 100(1)",
+        "points": {
+          "en": [
+            "No Ordinary Vote: The Chairman does NOT vote in the first instance on any bill or motion in Rajya Sabha.",
+            "Casting Vote Requirement: Exercises a CASTING VOTE ONLY in the case of an equality of votes (tie) on any resolution or bill.",
+            "Impartiality Objective: This restriction is constitutionally designed to maintain the absolute impartiality of the presiding officer.",
+            "Voting during Removal Resolution: When a resolution for his OWN removal is under consideration (Article 67(b)), he CANNOT preside over the House. He has the right to speak and present his case in Rajya Sabha, BUT HE CANNOT VOTE AT ALL (not even a casting vote or ordinary vote, since he is not a member of the House)."
+          ],
+          "ta": [
+            "சாதாரண வாக்கு இல்லை: மாநிலங்களவையில் எந்தவொரு மசோதா அல்லது தீர்மானத்தின் மீதும் முதன்முறையில் இவர் வாக்களிக்க முடியாது.",
+            "முடிவு வாக்கு (Casting Vote): வாக்குகள் சரியாக சமநிலவடையும் போது (Tie) மட்டுமே உறுப்பு 100(1)-ன் கீழ் முடிவு வாக்கு செலுத்துவார்.",
+            "நடுநிலைமை நோக்கம்: அவைத் தலைவரின் முழுமையான நடுநிலைமையைப் பேணுவதற்காகவே இந்த அரசியலமைப்பு வரம்பு வைக்கப்பட்டுள்ளது.",
+            "பதவி நீக்கத் தீர்மானத்தின் போது வாக்குரிமை: தனது சொந்த பதவி நீக்கத் தீர்மானம் பரிசீலனையில் இருக்கும் போது (உறுப்பு 67(b)), அவர் அவைக்குத் தலைமை தாங்க முடியாது. அவையில் பேச உரிமை உண்டு, ஆனால் அவர் அவை உறுப்பினர் இல்லாததால் எவ்வித வாக்கும் (சாதாரண வாக்கோ அல்லது முடிவு வாக்கோ) அளிக்க முடியாது."
+          ]
+        }
+      }
+    ],
+    "sec_chairman_vs_deputy_chairman": [
+      {
+        "title": "4. Chairman vs Deputy Chairman of Rajya Sabha",
+        "points": {
+          "en": [
+            "Election Basis: Chairman is Ex-Officio (Vice-President elected by MP Electoral College). Deputy Chairman is ELECTED by Rajya Sabha members from amongst themselves.",
+            "Membership Status: Chairman is NOT a member of Rajya Sabha. Deputy Chairman IS a member of Rajya Sabha.",
+            "Subordination Myth: Deputy Chairman is NOT subordinate to the Chairman; he is directly responsible to the Rajya Sabha.",
+            "Presiding Role: Deputy Chairman presides when Chairman is absent, or when Vice-President is acting as President under Article 65.",
+            "Voting Rights when Presiding: Deputy Chairman while presiding cannot vote in first instance (has casting vote only). When not presiding, he is an ordinary member and CAN vote in the first instance."
+          ],
+          "ta": [
+            "தேர்தல் அடிப்படை: தலைவர் பதவிவழி நியமனம் (VP வாக்காளர் குழுவால் தேர்வாகிறார்). துணைத் தலைவர் மாநிலங்களவை உறுப்பினர்களால் தங்களுக்குள்ளிருந்தே தேர்ந்தெடுக்கப்படுகிறார்.",
+            "உறுப்பினர் நிலை: தலைவர் மாநிலங்களவை உறுப்பினர் அல்ல. துணைத் தலைவர் மாநிலங்களவை உறுப்பினர் ஆவார்.",
+            "கீழ்நிலை அல்ல: துணைத் தலைவர் தலைவருக்குக் கீழ்நிலையானவர் அல்ல; அவர் நேரடியாக மாநிலங்களவைக்கே பொறுப்பானவர்.",
+            "தலைமைத் தாங்கும் பொறுப்பு: தலைவர் இல்லாத போதோ அல்லது துணைக் குடியரசுத் தலைவர் உறுப்பு 65-ன் கீழ் செயல் தலைவராகப் பணியாற்றும் போதோ துணைத் தலைவர் அவையை நடத்துவார்.",
+            "வாக்குரிமை: தலைமை தாங்கும் போது துணைத் தலைவர் முதன்முறையில் வாக்களிக்க முடியாது (முடிவு வாக்கு மட்டுமே). தலைமை தாங்காத போது சாதாரண உறுப்பினராக முதன்முறையில் வாக்களிக்கலாம்."
+          ]
+        }
+      }
+    ],
+    "sec_speaker_vs_chairman": [
+      {
+        "title": "5. Speaker of Lok Sabha vs Chairman of Rajya Sabha (Key Distinctions)",
+        "points": {
+          "en": [
+            "Joint Sitting Presiding Power: The Speaker of Lok Sabha presides over a Joint Sitting of Parliament (Article 108). The Chairman of Rajya Sabha CANNOT preside over a Joint Sitting under any circumstances (Deputy Speaker of LS presides if Speaker absent).",
+            "Money Bill Certification: The Speaker of Lok Sabha decides whether a bill is a Money Bill (Article 110) and his decision is final. The Chairman has NO power to certify Money Bills.",
+            "House Membership: Speaker IS an elected member of Lok Sabha. Chairman is NOT a member of Rajya Sabha.",
+            "Removal Voting: Speaker can vote in the first instance when his removal resolution is discussed. Chairman CANNOT vote at all during his removal resolution."
+          ],
+          "ta": [
+            "கூட்டுக் கூட்டத் தலைமை: மக்களவை சபாநாயகர் நாடாளுமன்ற கூட்டுக் கூட்டத்திற்கு (உறுப்பு 108) தலைமை தாங்குவார். மாநிலங்களவைத் தலைவர் எந்தவொரு சூழலிலும் கூட்டுக் கூட்டத்திற்குத் தலைமை தாங்க முடியாது.",
+            "நிதி மசோதா சான்றளிப்பு: ஒரு மசோதா நிதி மசோதாவா (உறுப்பு 110) என்பதை மக்களவை சபாநாயகரே தீர்மானிக்கிறார். மாநிலங்களவைத் தலைவருக்கு அதிகாரமில்லை.",
+            "அவை உறுப்பினர் நிலை: சபாநாயகர் மக்களவையின் தேர்ந்தெடுக்கப்பட்ட உறுப்பினர். மாநிலங்களவைத் தலைவர் அவையின் உறுப்பினர் அல்ல.",
+            "பதவி நீக்க வாக்கெடுப்பு: சபாநாயகர் தனது பதவி நீக்கத் தீர்மானத்தின் போது முதன்முறையில் வாக்களிக்கலாம். மாநிலங்களவைத் தலைவர் தனது பதவி நீக்கத்தின் போது வாக்களிக்கவே முடியாது."
+          ]
+        }
+      }
+    ],
+    "sec_presidential_powers_comparison": [
+      {
+        "title": "6. President Executive & Emergency Powers vs Vice-President Powers",
+        "points": {
+          "en": [
+            "Executive Powers: President vests all Union Executive powers (Art 53) and appoints PM, Ministers, AG, CAG, CEC, Governors, Judges. Vice-President has ZERO executive appointment powers.",
+            "Military & Diplomatic Powers: President is Supreme Commander of Armed Forces and represents India diplomatically. Vice-President has ZERO military/diplomatic powers.",
+            "Ordinance Power: President promulgates Ordinances under Article 123. Vice-President has ZERO legislative ordinance powers.",
+            "Emergency Powers: President proclaims National, State, and Financial Emergencies (Arts 352, 356, 360). Vice-President has ZERO emergency powers.",
+            "Pardoning Power: President grants pardons under Article 72. Vice-President has ZERO pardoning powers."
+          ],
+          "ta": [
+            "நிர்வாக அதிகாரங்கள்: குடியரசுத் தலைவர் அனைத்து நிர்வாக அதிகாரங்களையும் கொண்டு பிரதமர், அமைச்சர்கள், AG, CAG, CEC, ஆளுநர்களை நியமிக்கிறார். துணைக் குடியரசுத் தலைவருக்கு நியமன அதிகாரங்கள் இல்லை.",
+            "இராணுவ & இராஜதந்திர அதிகாரங்கள்: குடியரசுத் தலைவர் முப்படைகளின் தலைமைத் தளபதி. துணைக் குடியரசுத் தலைவருக்கு இவ்வதிகாரங்கள் இல்லை.",
+            "அவசரச் சட்ட அதிகாரம்: குடியரசுத் தலைவர் உறுப்பு 123-ன் கீழ் அவசரச் சட்டம் பிறப்பிக்கிறார். துணைக் குடியரசுத் தலைவருக்கு இவ்வாதிக்காரம் இல்லை.",
+            "அவசரநிலை அதிகாரங்கள்: குடியரசுத் தலைவர் உறுப்புகள் 352, 356, 360-ன் கீழ் அவசரநிலைகளைப் பிரகடனம் செய்கிறார். துணைக் குடியரசுத் தலைவருக்கு இவ்வாதிக்காரம் இல்லை.",
+            "மன்னிப்பளிக்கும் அதிகாரம்: குடியரசுத் தலைவர் உறுப்பு 72-ன் கீழ் மன்னிப்பளிக்கிறார். துணைக் குடியரசுத் தலைவருக்கு இவ்வாதிக்காரம் இல்லை."
+          ]
+        }
+      }
+    ],
+    "sec_art_65_foundation": [
+      {
+        "title": "7. Article 65 Presidential Vacancy & Salary Adjustments",
+        "points": {
+          "en": [
+            "Acting Capacity: When acting as President or discharging President's functions under Article 65, the Vice-President possesses all powers, immunities, and privileges of the President.",
+            "Relinquishment of Chairman Duties: Under Article 65(1) & Article 89, while acting as President, he does NOT perform the duties of the Chairman of Rajya Sabha.",
+            "Salary Adjustment: He is NOT entitled to any salary or allowance payable to the Chairman of Rajya Sabha during this period. Instead, he draws the salary and allowances of the President of India (fixed under the First Schedule).",
+            "Maximum Duration: Can act as President ONLY for a maximum period of 6 months, within which a new President must be elected."
+          ],
+          "ta": [
+            "செயல் தலைவர் தகுதி: உறுப்பு 65-ன் கீழ் செயல் குடியரசுத் தலைவராகப் பணியாற்றும் போது, குடியரசுத் தலைவரின் அனைத்து அதிகாரங்கள் மற்றும் சலுகைகளைப் பெறுகிறார்.",
+            "தலைவர் பொறுப்பிலிருந்து விலகுதல்: உறுப்பு 65(1) & 89-ன் படி, செயல் தலைவராக இருக்கும் போது மாநிலங்களவைத் தலைவர் பணிகளைச் செய்யமாட்டார்.",
+            "ஊதிய மாற்றம்: இக்காலத்தில் மாநிலங்களவைத் தலைவருக்கான ஊதியத்தைப் பெறமாட்டார்; மாறாக இந்தியக் குடியரசுத் தலைவருக்கான ஊதியம் மற்றும் படிகளைப் பெறுவார்.",
+            "அதிகபட்ச காலம்: புதிய குடியரசுத் தலைவர் தேர்ந்தெடுக்கப்படும் வரை அதிகபட்சம் 6 மாதங்கள் மட்டுமே செயல் தலைவராக இருக்க முடியும்."
+          ]
+        }
+      }
+    ],
+    "sec_part2_traps": [
+      {
+        "title": "8. Part 2 Specialized TNPSC Trap Points",
+        "points": {
+          "en": [
+            "TRAP 1: Believing the Vice-President is a member of the Rajya Sabha. FACT: He is Ex-Officio Chairman, NOT a member of Rajya Sabha.",
+            "TRAP 2: Believing Chairman votes on every bill. FACT: He votes ONLY during a tie (Casting Vote under Art 100(1)).",
+            "TRAP 3: Believing Chairman can preside over a Joint Sitting (Art 108). FACT: ONLY the Speaker of Lok Sabha (or Deputy Speaker) presides over Joint Sittings.",
+            "TRAP 4: Believing Chairman can vote during his own removal resolution. FACT: He cannot preside and CANNOT VOTE AT ALL during his removal resolution."
+          ],
+          "ta": [
+            "பொறி 1: துணைக் குடியரசுத் தலைவர் மாநிலங்களவையின் ஒரு உறுப்பினர் என நம்புவது. உண்மை: அவர் பதவிவழித் தலைவர், உறுப்பினர் அல்ல.",
+            "பொறி 2: தலைவர் அனைத்து மசோதாக்களிலும் வாக்களிப்பார் எனக் கருதுவது. உண்மை: வாக்குகள் சமநிலவடையும் போது மட்டுமே முடிவு வாக்கு (Art 100(1)) செலுத்துவார்.",
+            "பொறி 3: மாநிலங்களவைத் தலைவர் கூட்டுக் கூட்டத்திற்குத் (Art 108) தலைமை தாங்குவார் என நினைப்பது. உண்மை: மக்களவை சபாநாயகர் மட்டுமே கூட்டுக் கூட்டத்திற்குத் தலைமை தாங்குவார்.",
+            "பொறி 4: தனது சொந்த பதவி நீக்கத் தீர்மானத்தின் போது தலைவர் வாக்களிக்கலாம் என நம்புவது. உண்மை: அவர் தலைமை தாங்க முடியாது மற்றும் வாக்களிக்கவும் முடியாது."
+          ]
+        }
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "tbl_chairman_vs_deputy_chairman",
+        "title_en": "1. Chairman vs Deputy Chairman of Rajya Sabha Comparison",
+        "title_ta": "1. மாநிலங்களவைத் தலைவர் vs துணைத் தலைவர் ஒப்பீடு",
+        "headers_en": ["Comparison Dimension", "Chairman of Rajya Sabha (Vice-President)", "Deputy Chairman of Rajya Sabha"],
+        "headers_ta": ["ஒப்பீட்டுப் பரிமாணம்", "மாநிலங்களவைத் தலைவர் (துணைக் குடியரசுத் தலைவர்)", "மாநிலங்களவைத் துணைத் தலைவர்"],
+        "rows_en": [
+          ["House Membership", "NOT a member of Rajya Sabha", "IS an elected member of Rajya Sabha"],
+          ["Selection Process", "Ex-Officio (Elected by MP Electoral College)", "Elected by Rajya Sabha members from amongst themselves"],
+          ["Casting Vote", "Casting Vote only (Art 100(1)) during tie", "Casting Vote when presiding; Ordinary Vote when not presiding"],
+          ["Removal Initiation", "Resolution initiated ONLY in Rajya Sabha (Art 67b)", "Resolution initiated in Rajya Sabha passed by majority of all members"],
+          ["Subordination Status", "Head of the House", "NOT subordinate to Chairman; directly responsible to Rajya Sabha"]
+        ],
+        "rows_ta": [
+          ["அவை உறுப்பினர் நிலை", "மாநிலங்களவை உறுப்பினர் அல்ல", "மாநிலங்களவையின் தேர்ந்தெடுக்கப்பட்ட உறுப்பினர்"],
+          ["தேர்வு முறை", "பதவிவழி நியமனம் (எம்பி வாக்காளர் குழுவால் தேர்வாகிறார்)", "மாநிலங்களவை உறுப்பினர்களால் தங்களுக்குள்ளிருந்தே தேர்வு"],
+          ["முடிவு வாக்கு (Casting Vote)", "சமநிலையின் போது முடிவு வாக்கு மட்டுமே (Art 100(1))", "தலைமை தாங்கும் போது முடிவு வாக்கு; தலைமை தாங்காத போது சாதாரண வாக்கு"],
+          ["பதவி நீக்கத் தொடக்கம்", "மாநிலங்களவையில் மட்டுமே தொடங்கும் தீர்மானம் (Art 67b)", "மாநிலங்களவை பெரும்பான்மையினரால் நிறைவேற்றப்படும் தீர்மானம்"],
+          ["கீழ்நிலை நிலை", "அவையின் முதன்மைத் தலைவர்", "தலைவருக்குக் கீழ்நிலையானவர் அல்ல; நேரடியாக அவைக்குப் பொறுப்பானவர்"]
+        ]
+      },
+      {
+        "id": "tbl_speaker_vs_chairman",
+        "title_en": "2. Speaker of Lok Sabha vs Chairman of Rajya Sabha Comparison",
+        "title_ta": "2. மக்களவை சபாநாயகர் vs மாநிலங்களவைத் தலைவர் ஒப்பீடு",
+        "headers_en": ["Feature", "Speaker of Lok Sabha", "Chairman of Rajya Sabha"],
+        "headers_ta": ["அம்சம்", "மக்களவை சபாநாயகர்", "மாநிலங்களவைத் தலைவர்"],
+        "rows_en": [
+          ["House Membership", "Elected Member of Lok Sabha", "NOT a Member of Rajya Sabha"],
+          ["Joint Sitting Presiding (Art 108)", "PRESIDES over Joint Sitting of Parliament", "CANNOT preside over Joint Sitting under any circumstances"],
+          ["Money Bill Certification (Art 110)", "DECIDES and certifies Money Bills (Final Authority)", "NO power to certify Money Bills"],
+          ["Casting Vote", "Possesses Casting Vote when presiding", "Possesses Casting Vote when presiding"],
+          ["Removal Resolution Voting", "CAN vote in 1st instance during removal resolution", "CANNOT vote at all during removal resolution"]
+        ],
+        "rows_ta": [
+          ["அவை உறுப்பினர் நிலை", "மக்களவையின் தேர்ந்தெடுக்கப்பட்ட உறுப்பினர்", "மாநிலங்களவை உறுப்பினர் அல்ல"],
+          ["கூட்டுக் கூட்டத் தலைமை (Art 108)", "நாடாளுமன்றக் கூட்டுக் கூட்டத்திற்குத் தலைமை தாங்குவார்", "எந்தவொரு சூழலிலும் கூட்டுக் கூட்டத்திற்குத் தலைமை தாங்க முடியாது"],
+          ["நிதி மசோதா சான்றளிப்பு (Art 110)", "நிதி மசோதாவைத் தீர்மானித்துச் சான்றளிப்பார்", "சான்றளிக்கும் அதிகாரம் இல்லை"],
+          ["முடிவு வாக்கு", "தலைமை தாங்கும் போது முடிவு வாக்கு உண்டு", "தலைமை தாங்கும் போது முடிவு வாக்கு உண்டு"],
+          ["பதவி நீக்க வாக்கெடுப்பு", "தனது பதவி நீக்கத்தின் போது முதன்முறையில் வாக்களிக்கலாம்", "தனது பதவி நீக்கத்தின் போது வாக்களிக்கவே முடியாது"]
+        ]
+      },
+      {
+        "id": "tbl_pres_vs_vp_powers_detailed",
+        "title_en": "3. President Executive & Emergency Powers vs Vice-President Role",
+        "title_ta": "3. குடியரசுத் தலைவர் நிர்வாக/அவசரநிலை அதிகாரங்கள் vs துணைக் குடியரசுத் தலைவர் ஒப்பீடு",
+        "headers_en": ["Power Category", "President of India", "Vice-President of India"],
+        "headers_ta": ["அதிகாரப் பிரிவு", "இந்தியக் குடியரசுத் தலைவர்", "இந்தியத் துணைக் குடியரசுத் தலைவர்"],
+        "rows_en": [
+          ["Executive Appointments", "Vested with all Union Executive powers; appoints PM, Ministers, Governors, Judges", "ZERO executive appointment powers"],
+          ["Military Command", "Supreme Commander of Defence Forces", "ZERO military powers"],
+          ["Diplomatic Representation", "Represents India in international treaties and diplomatic missions", "ZERO diplomatic powers"],
+          ["Ordinance Power", "Promulgates Ordinances under Article 123 during recess", "ZERO ordinance power"],
+          ["Emergency Powers", "Proclaims Emergencies under Articles 352, 356, and 360", "ZERO emergency powers"],
+          ["Pardoning Power", "Grants Pardons, Reprieves, Respites, Remissions under Article 72", "ZERO pardoning power"]
+        ],
+        "rows_ta": [
+          ["நிர்வாக நியமனங்கள்", "அனைத்து நிர்வாக அதிகாரங்களும் உடையவர்; பிரதமர், ஆளுநர்கள், நீதிபதிகளை நியமிக்கிறார்", "நிர்வாக நியமன அதிகாரங்கள் இல்லை"],
+          ["இராணுவத் தலைமை", "முப்படைகளின் தலைமைத் தளபதி", "இராணுவ அதிகாரங்கள் இல்லை"],
+          ["இராஜதந்திர பிரதிநிதித்துவம்", "சர்வதேச ஒப்பந்தங்கள் மற்றும் தூதரகங்களில் இந்தியாவைப் பிரதிநிதித்துவப்படுத்துகிறார்", "இராஜதந்திர அதிகாரங்கள் இல்லை"],
+          ["அவசரச் சட்ட அதிகாரம்", "உறுப்பு 123-ன் கீழ் அவசரச் சட்டம் பிறப்பிக்கிறார்", "அவசரச் சட்ட அதிகாரம் இல்லை"],
+          ["அவசரநிலை அதிகாரங்கள்", "உறுப்புகள் 352, 356, 360-ன் கீழ் அவசரநிலைகளைப் பிரகடனம் செய்கிறார்", "அவசரநிலை அதிகாரங்கள் இல்லை"],
+          ["மன்னிப்பளிக்கும் அதிகாரம்", "உறுப்பு 72-ன் கீழ் மன்னிப்பளிக்கிறார்", "மன்னிப்பளிக்கும் அதிகாரம் இல்லை"]
+        ]
+      },
+      {
+        "id": "tbl_vp_office_vs_rs_chairman_role",
+        "title_en": "4. Vice-President as VP Office vs Vice-President as Rajya Sabha Chairman",
+        "title_ta": "4. துணைக் குடியரசுத் தலைவர் பதவி vs மாநிலங்களவைத் தலைவர் பொறுப்பு ஒப்பீடு",
+        "headers_en": ["Dimension", "Vice-President as Constitutional Office", "Vice-President as Ex-Officio Chairman of RS"],
+        "headers_ta": ["அம்சம்", "துணைக் குடியரசுத் தலைவர் அரசியலமைப்புப் பதவி", "மாநிலங்களவையின் பதவிவழித் தலைவர் பொறுப்பு"],
+        "rows_en": [
+          ["Primary Duties", "Standby Officer for Presidential Vacancies (Art 65)", "Presides over Rajya Sabha proceedings daily (Art 64 & 89)"],
+          ["Salary Source", "NO constitutional salary for VP office as such", "Draws salary fixed by Parliament for Chairman of RS under 2nd Schedule"],
+          ["Executive Role", "Member of Union Executive (Part V Chapter 1)", "Parliamentary Presiding Officer"],
+          ["Removal Basis", "Removed as VP by RS Resolution + LS Agreement (Art 67b)", "Automatic cessation as Chairman upon removal as VP"]
+        ],
+        "rows_ta": [
+          ["முதன்மைப் பணிகள்", "குடியரசுத் தலைவர் காலியிடங்களுக்கான மாற்று அதிகாரி (Art 65)", "மாநிலங்களவை நடவடிக்கைகளை தினமும் நடத்துபவர் (Art 64 & 89)"],
+          ["ஊதிய ஆதாரம்", "VP பதவிக்குத் தனியாக ஊதியம் இல்லை", "இரண்டாம் அட்டவணையின் கீழ் மாநிலங்களவைத் தலைவராக ஊதியம் பெறுகிறார்"],
+          ["நிர்வாகப் பங்கு", "ஒன்றிய நிர்வாக உறுப்பினர் (பகுதி V அத்தியாயம் 1)", "நாடாளுமன்ற அவைத் தலைவர்"],
+          ["பதவி நீக்க அடிப்படை", "VP ஆக பதவி நீக்கம் செய்யப்பட்டால் தானாகவே தலைவர் பதவி முடிவுக்கு வரும்", "VP பதவி நீக்கம் செய்யப்பட்டால் தானாகவே தலைவர் பதவி ரத்து"]
+        ]
+      },
+      {
+        "id": "tbl_casting_vote_vs_ordinary_vote",
+        "title_en": "5. Casting Vote of Chairman vs Ordinary Vote Comparison",
+        "title_ta": "5. தலைவரின் முடிவு வாக்கு vs சாதாரண வாக்கு ஒப்பீடு",
+        "headers_en": ["Voting Parameter", "Casting Vote (Article 100(1))", "Ordinary Vote"],
+        "headers_ta": ["வாக்களிப்பு காரணி", "முடிவு வாக்கு (உறுப்பு 100(1))", "சாதாரண வாக்கு"],
+        "rows_en": [
+          ["When Exercised", "ONLY in case of an equality of votes (TIE)", "Exercised in the FIRST INSTANCE on any motion/bill"],
+          ["Who Exercises", "Presiding Officer (Chairman / Speaker) while presiding", "Ordinary Members of the House"],
+          ["Purpose", "To resolve deadlock and maintain presiding impartiality", "To express individual MP political preference"],
+          ["Exercise during Removal", "CANNOT be exercised during own removal resolution", "N/A"]
+        ],
+        "rows_ta": [
+          ["எப்போது செலுத்தப்படும்", "வாக்குகள் சமநிலவடையும் போது (TIE) மட்டுமே", "எந்தவொரு மசோதாவிலும் முதன்முறையிலேயே செலுத்தப்படும்"],
+          ["யார் செலுத்துவது", "தலைமை தாங்கும் அவைத் தலைவர் (Chairman / Speaker)", "அவையின் சாதாரண உறுப்பினர்கள்"],
+          ["நோக்கம்", "முடக்கத்தை நீக்கி அவை நடுநிலைமையைப் பேணுதல்", "எம்பியின் அரசியல் விருப்பத்தை வெளிப்படுத்துதல்"],
+          ["பதவி நீக்கத்தின் போது", "தனது பதவி நீக்கத்தின் போது செலுத்த முடியாது", "பொருந்தாது"]
+        ]
+      },
+      {
+        "id": "tbl_salary_and_perks_structure",
+        "title_en": "6. Vice-President Salary & Perks (Normal Role vs Acting President Role)",
+        "title_ta": "6. துணைக் குடியரசுத் தலைவர் ஊதியம் & படிகள் (இயல்பு நிலை vs செயல் தலைவர் நிலை)",
+        "headers_en": ["Financial & Legal Aspect", "Normal Capacity (Chairman of Rajya Sabha)", "Acting President Capacity (Article 65)"],
+        "headers_ta": ["நிதி & சட்ட அம்சம்", "இயல்பு நிலை (மாநிலங்களவைத் தலைவர்)", "செயல் குடியரசுத் தலைவர் நிலை (உறுப்பு 65)"],
+        "rows_en": [
+          ["Salary Source", "Paid as Chairman of Rajya Sabha (2nd Schedule)", "Paid as President of India (1st Schedule / Art 65(3))"],
+          ["RS Presiding Duties", "Performs daily duties of Chairman of RS", "Relinquishes duties of Chairman of RS (Deputy Chairman presides)"],
+          ["Emoluments & Privileges", "Emoluments fixed for RS Chairman by Parliament", "Entitled to all emoluments, allowances & immunities of President"],
+          ["Residence", "Official Vice-President Residence", "Entitled to Rashtrapati Bhavan official residence"]
+        ],
+        "rows_ta": [
+          ["ஊதிய ஆதாரம்", "மாநிலங்களவைத் தலைவராக ஊதியம் பெறுகிறார் (2nd Schedule)", "இந்தியக் குடியரசுத் தலைவராக ஊதியம் பெறுகிறார் (Art 65(3))"],
+          ["மாநிலங்களவைப் பணிகள்", "மாநிலங்களவைத் தலைவரின் அன்றாடப் பணிகளைச் செய்கிறார்", "தலைவர் பணிகளிலிருந்து விலகுகிறார் (துணைத் தலைவர் நடத்துவார்)"],
+          ["படிகள் & சலுகைகள்", "மாநிலங்களவைத் தலைவருக்கான படிகள்", "குடியரசுத் தலைவரின் அனைத்துப் படிகள் மற்றும் சலுகைகளைப் பெறுகிறார்"],
+          ["வாழிடம்", "அதிகாரப்பூர்வ துணைக் குடியரசுத் தலைவர் வாழிடம்", "அதிகாரப்பூர்வ குடியரசுத் தலைவர் பவன் (Rashtrapati Bhavan) உரிமை"]
+        ]
+      }
+    ],
+    "comparison": [
+      {
+        "id": "tbl_chairman_vs_deputy_chairman",
+        "title_en": "1. Chairman vs Deputy Chairman of Rajya Sabha Comparison",
+        "title_ta": "1. மாநிலங்களவைத் தலைவர் vs துணைத் தலைவர் ஒப்பீடு",
+        "headers_en": ["Comparison Dimension", "Chairman of Rajya Sabha (Vice-President)", "Deputy Chairman of Rajya Sabha"],
+        "headers_ta": ["ஒப்பீட்டுப் பரிமாணம்", "மாநிலங்களவைத் தலைவர் (துணைக் குடியரசுத் தலைவர்)", "மாநிலங்களவைத் துணைத் தலைவர்"],
+        "rows_en": [
+          ["House Membership", "NOT a member of Rajya Sabha", "IS an elected member of Rajya Sabha"],
+          ["Selection Process", "Ex-Officio (Elected by MP Electoral College)", "Elected by Rajya Sabha members from amongst themselves"],
+          ["Casting Vote", "Casting Vote only (Art 100(1)) during tie", "Casting Vote when presiding; Ordinary Vote when not presiding"],
+          ["Removal Initiation", "Resolution initiated ONLY in Rajya Sabha (Art 67b)", "Resolution initiated in Rajya Sabha passed by majority of all members"],
+          ["Subordination Status", "Head of the House", "NOT subordinate to Chairman; directly responsible to Rajya Sabha"]
+        ],
+        "rows_ta": [
+          ["அவை உறுப்பினர் நிலை", "மாநிலங்களவை உறுப்பினர் அல்ல", "மாநிலங்களவையின் தேர்ந்தெடுக்கப்பட்ட உறுப்பினர்"],
+          ["தேர்வு முறை", "பதவிவழி நியமனம் (எம்பி வாக்காளர் குழுவால் தேர்வாகிறார்)", "மாநிலங்களவை உறுப்பினர்களால் தங்களுக்குள்ளிருந்தே தேர்வு"],
+          ["முடிவு வாக்கு (Casting Vote)", "சமநிலையின் போது முடிவு வாக்கு மட்டுமே (Art 100(1))", "தலைமை தாங்கும் போது முடிவு வாக்கு; தலைமை தாங்காத போது சாதாரண வாக்கு"],
+          ["பதவி நீக்கத் தொடக்கம்", "மாநிலங்களவையில் மட்டுமே தொடங்கும் தீர்மானம் (Art 67b)", "மாநிலங்களவை பெரும்பான்மையினரால் நிறைவேற்றப்படும் தீர்மானம்"],
+          ["கீழ்நிலை நிலை", "அவையின் முதன்மைத் தலைவர்", "தலைவருக்குக் கீழ்நிலையானவர் அல்ல; நேரடியாக அவைக்குப் பொறுப்பானவர்"]
+        ]
+      },
+      {
+        "id": "tbl_speaker_vs_chairman",
+        "title_en": "2. Speaker of Lok Sabha vs Chairman of Rajya Sabha Comparison",
+        "title_ta": "2. மக்களவை சபாநாயகர் vs மாநிலங்களவைத் தலைவர் ஒப்பீடு",
+        "headers_en": ["Feature", "Speaker of Lok Sabha", "Chairman of Rajya Sabha"],
+        "headers_ta": ["அம்சம்", "மக்களவை சபாநாயகர்", "மாநிலங்களவைத் தலைவர்"],
+        "rows_en": [
+          ["House Membership", "Elected Member of Lok Sabha", "NOT a Member of Rajya Sabha"],
+          ["Joint Sitting Presiding (Art 108)", "PRESIDES over Joint Sitting of Parliament", "CANNOT preside over Joint Sitting under any circumstances"],
+          ["Money Bill Certification (Art 110)", "DECIDES and certifies Money Bills (Final Authority)", "NO power to certify Money Bills"],
+          ["Casting Vote", "Possesses Casting Vote when presiding", "Possesses Casting Vote when presiding"],
+          ["Removal Resolution Voting", "CAN vote in 1st instance during removal resolution", "CANNOT vote at all during removal resolution"]
+        ],
+        "rows_ta": [
+          ["அவை உறுப்பினர் நிலை", "மக்களவையின் தேர்ந்தெடுக்கப்பட்ட உறுப்பினர்", "மாநிலங்களவை உறுப்பினர் அல்ல"],
+          ["கூட்டுக் கூட்டத் தலைமை (Art 108)", "நாடாளுமன்றக் கூட்டுக் கூட்டத்திற்குத் தலைமை தாங்குவார்", "எந்தவொரு சூழலிலும் கூட்டுக் கூட்டத்திற்குத் தலைமை தாங்க முடியாது"],
+          ["நிதி மசோதா சான்றளிப்பு (Art 110)", "நிதி மசோதாவைத் தீர்மானித்துச் சான்றளிப்பார்", "சான்றளிக்கும் அதிகாரம் இல்லை"],
+          ["முடிவு வாக்கு", "தலைமை தாங்கும் போது முடிவு வாக்கு உண்டு", "தலைமை தாங்கும் போது முடிவு வாக்கு உண்டு"],
+          ["பதவி நீக்க வாக்கெடுப்பு", "தனது பதவி நீக்கத்தின் போது முதன்முறையில் வாக்களிக்கலாம்", "தனது பதவி நீக்கத்தின் போது வாக்களிக்கவே முடியாது"]
+        ]
+      },
+      {
+        "id": "tbl_pres_vs_vp_powers_detailed",
+        "title_en": "3. President Executive & Emergency Powers vs Vice-President Role",
+        "title_ta": "3. குடியரசுத் தலைவர் நிர்வாக/அவசரநிலை அதிகாரங்கள் vs துணைக் குடியரசுத் தலைவர் ஒப்பீடு",
+        "headers_en": ["Power Category", "President of India", "Vice-President of India"],
+        "headers_ta": ["அதிகாரப் பிரிவு", "இந்தியக் குடியரசுத் தலைவர்", "இந்தியத் துணைக் குடியரசுத் தலைவர்"],
+        "rows_en": [
+          ["Executive Appointments", "Vested with all Union Executive powers; appoints PM, Ministers, Governors, Judges", "ZERO executive appointment powers"],
+          ["Military Command", "Supreme Commander of Defence Forces", "ZERO military powers"],
+          ["Diplomatic Representation", "Represents India in international treaties and diplomatic missions", "ZERO diplomatic powers"],
+          ["Ordinance Power", "Promulgates Ordinances under Article 123 during recess", "ZERO ordinance power"],
+          ["Emergency Powers", "Proclaims Emergencies under Articles 352, 356, and 360", "ZERO emergency powers"],
+          ["Pardoning Power", "Grants Pardons, Reprieves, Respites, Remissions under Article 72", "ZERO pardoning power"]
+        ],
+        "rows_ta": [
+          ["நிர்வாக நியமனங்கள்", "அனைத்து நிர்வாக அதிகாரங்களும் உடையவர்; பிரதமர், ஆளுநர்கள், நீதிபதிகளை நியமிக்கிறார்", "நிர்வாக நியமன அதிகாரங்கள் இல்லை"],
+          ["இராணுவத் தலைமை", "முப்படைகளின் தலைமைத் தளபதி", "இராணுவ அதிகாரங்கள் இல்லை"],
+          ["இராஜதந்திர பிரதிநிதித்துவம்", "சர்வதேச ஒப்பந்தங்கள் மற்றும் தூதரகங்களில் இந்தியாவைப் பிரதிநிதித்துவப்படுத்துகிறார்", "இராஜதந்திர அதிகாரங்கள் இல்லை"],
+          ["அவசரச் சட்ட அதிகாரம்", "உறுப்பு 123-ன் கீழ் அவசரச் சட்டம் பிறப்பிக்கிறார்", "அவசரச் சட்ட அதிகாரம் இல்லை"],
+          ["அவசரநிலை அதிகாரங்கள்", "உறுப்புகள் 352, 356, 360-ன் கீழ் அவசரநிலைகளைப் பிரகடனம் செய்கிறார்", "அவசரநிலை அதிகாரங்கள் இல்லை"],
+          ["மன்னிப்பளிக்கும் அதிகாரம்", "உறுப்பு 72-ன் கீழ் மன்னிப்பளிக்கிறார்", "மன்னிப்பளிக்கும் அதிகாரம் இல்லை"]
+        ]
+      },
+      {
+        "id": "tbl_vp_office_vs_rs_chairman_role",
+        "title_en": "4. Vice-President as VP Office vs Vice-President as Rajya Sabha Chairman",
+        "title_ta": "4. துணைக் குடியரசுத் தலைவர் பதவி vs மாநிலங்களவைத் தலைவர் பொறுப்பு ஒப்பீடு",
+        "headers_en": ["Dimension", "Vice-President as Constitutional Office", "Vice-President as Ex-Officio Chairman of RS"],
+        "headers_ta": ["அம்சம்", "துணைக் குடியரசுத் தலைவர் அரசியலமைப்புப் பதவி", "மாநிலங்களவையின் பதவிவழித் தலைவர் பொறுப்பு"],
+        "rows_en": [
+          ["Primary Duties", "Standby Officer for Presidential Vacancies (Art 65)", "Presides over Rajya Sabha proceedings daily (Art 64 & 89)"],
+          ["Salary Source", "NO constitutional salary for VP office as such", "Draws salary fixed by Parliament for Chairman of RS under 2nd Schedule"],
+          ["Executive Role", "Member of Union Executive (Part V Chapter 1)", "Parliamentary Presiding Officer"],
+          ["Removal Basis", "Removed as VP by RS Resolution + LS Agreement (Art 67b)", "Automatic cessation as Chairman upon removal as VP"]
+        ],
+        "rows_ta": [
+          ["முதன்மைப் பணிகள்", "குடியரசுத் தலைவர் காலியிடங்களுக்கான மாற்று அதிகாரி (Art 65)", "மாநிலங்களவை நடவடிக்கைகளை தினமும் நடத்துபவர் (Art 64 & 89)"],
+          ["ஊதிய ஆதாரம்", "VP பதவிக்குத் தனியாக ஊதியம் இல்லை", "இரண்டாம் அட்டவணையின் கீழ் மாநிலங்களவைத் தலைவராக ஊதியம் பெறுகிறார்"],
+          ["நிர்வாகப் பங்கு", "ஒன்றிய நிர்வாக உறுப்பினர் (பகுதி V அத்தியாயம் 1)", "நாடாளுமன்ற அவைத் தலைவர்"],
+          ["பதவி நீக்க அடிப்படை", "VP ஆக பதவி நீக்கம் செய்யப்பட்டால் தானாகவே தலைவர் பதவி முடிவுக்கு வரும்", "VP பதவி நீக்கம் செய்யப்பட்டால் தானாகவே தலைவர் பதவி ரத்து"]
+        ]
+      },
+      {
+        "id": "tbl_casting_vote_vs_ordinary_vote",
+        "title_en": "5. Casting Vote of Chairman vs Ordinary Vote Comparison",
+        "title_ta": "5. தலைவரின் முடிவு வாக்கு vs சாதாரண வாக்கு ஒப்பீடு",
+        "headers_en": ["Voting Parameter", "Casting Vote (Article 100(1))", "Ordinary Vote"],
+        "headers_ta": ["வாக்களிப்பு காரணி", "முடிவு வாக்கு (உறுப்பு 100(1))", "சாதாரண வாக்கு"],
+        "rows_en": [
+          ["When Exercised", "ONLY in case of an equality of votes (TIE)", "Exercised in the FIRST INSTANCE on any motion/bill"],
+          ["Who Exercises", "Presiding Officer (Chairman / Speaker) while presiding", "Ordinary Members of the House"],
+          ["Purpose", "To resolve deadlock and maintain presiding impartiality", "To express individual MP political preference"],
+          ["Exercise during Removal", "CANNOT be exercised during own removal resolution", "N/A"]
+        ],
+        "rows_ta": [
+          ["எப்போது செலுத்தப்படும்", "வாக்குகள் சமநிலவடையும் போது (TIE) மட்டுமே", "எந்தவொரு மசோதாவிலும் முதன்முறையிலேயே செலுத்தப்படும்"],
+          ["யார் செலுத்துவது", "தலைமை தாங்கும் அவைத் தலைவர் (Chairman / Speaker)", "அவையின் சாதாரண உறுப்பினர்கள்"],
+          ["நோக்கம்", "முடக்கத்தை நீக்கி அவை நடுநிலைமையைப் பேணுதல்", "எம்பியின் அரசியல் விருப்பத்தை வெளிப்படுத்துதல்"],
+          ["பதவி நீக்கத்தின் போது", "தனது பதவி நீக்கத்தின் போது செலுத்த முடியாது", "பொருந்தாது"]
+        ]
+      },
+      {
+        "id": "tbl_salary_and_perks_structure",
+        "title_en": "6. Vice-President Salary & Perks (Normal Role vs Acting President Role)",
+        "title_ta": "6. துணைக் குடியரசுத் தலைவர் ஊதியம் & படிகள் (இயல்பு நிலை vs செயல் தலைவர் நிலை)",
+        "headers_en": ["Financial & Legal Aspect", "Normal Capacity (Chairman of Rajya Sabha)", "Acting President Capacity (Article 65)"],
+        "headers_ta": ["நிதி & சட்ட அம்சம்", "இயல்பு நிலை (மாநிலங்களவைத் தலைவர்)", "செயல் குடியரசுத் தலைவர் நிலை (உறுப்பு 65)"],
+        "rows_en": [
+          ["Salary Source", "Paid as Chairman of Rajya Sabha (2nd Schedule)", "Paid as President of India (1st Schedule / Art 65(3))"],
+          ["RS Presiding Duties", "Performs daily duties of Chairman of RS", "Relinquishes duties of Chairman of RS (Deputy Chairman presides)"],
+          ["Emoluments & Privileges", "Emoluments fixed for RS Chairman by Parliament", "Entitled to all emoluments, allowances & immunities of President"],
+          ["Residence", "Official Vice-President Residence", "Entitled to Rashtrapati Bhavan official residence"]
+        ],
+        "rows_ta": [
+          ["ஊதிய ஆதாரம்", "மாநிலங்களவைத் தலைவராக ஊதியம் பெறுகிறார் (2nd Schedule)", "இந்தியக் குடியரசுத் தலைவராக ஊதியம் பெறுகிறார் (Art 65(3))"],
+          ["மாநிலங்களவைப் பணிகள்", "மாநிலங்களவைத் தலைவரின் அன்றாடப் பணிகளைச் செய்கிறார்", "தலைவர் பணிகளிலிருந்து விலகுகிறார் (துணைத் தலைவர் நடத்துவார்)"],
+          ["படிகள் & சலுகைகள்", "மாநிலங்களவைத் தலைவருக்கான படிகள்", "குடியரசுத் தலைவரின் அனைத்துப் படிகள் மற்றும் சலுகைகளைப் பெறுகிறார்"],
+          ["வாழிடம்", "அதிகாரப்பூர்வ துணைக் குடியரசுத் தலைவர் வாழிடம்", "அதிகாரப்பூர்வ குடியரசுத் தலைவர் பவன் (Rashtrapati Bhavan) உரிமை"]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "Vice-President (Part 2: Rajya Sabha & Functions)",
+        "short_label": "Vice-President Part 2",
+        "children": [
+          {
+            "title": "1. Ex-Officio Chairman of Rajya Sabha",
+            "short_label": "Chairman RS",
+            "children": [
+              {
+                "title": "Article 64 & 89: Vice-President is Ex-Officio Chairman",
+                "short_label": "Art 64 Ex-Officio"
+              },
+              {
+                "title": "NOT a member of Rajya Sabha (Unique Feature)",
+                "short_label": "Non-Member"
+              },
+              {
+                "title": "Draws salary as Chairman of RS under Second Schedule",
+                "short_label": "Salary Source"
+              }
+            ]
+          },
+          {
+            "title": "2. Casting Vote Mechanism",
+            "short_label": "Casting Vote",
+            "children": [
+              {
+                "title": "Article 100(1): No vote in 1st instance; votes ONLY during TIE",
+                "short_label": "Art 100(1) Tie"
+              },
+              {
+                "title": "Maintains absolute impartiality of Presiding Officer",
+                "short_label": "Impartiality"
+              },
+              {
+                "title": "Cannot vote at all during own removal resolution (Art 67b)",
+                "short_label": "No Vote in Removal"
+              }
+            ]
+          },
+          {
+            "title": "3. Chairman vs Deputy Chairman & Speaker",
+            "short_label": "Comparisons",
+            "children": [
+              {
+                "title": "Deputy Chairman presides when Chairman absent or acting as President",
+                "short_label": "Deputy Chairman"
+              },
+              {
+                "title": "Speaker presides Joint Sitting (Art 108); Chairman CANNOT",
+                "short_label": "Joint Sitting"
+              },
+              {
+                "title": "Speaker certifies Money Bills (Art 110); Chairman CANNOT",
+                "short_label": "Money Bill"
+              }
+            ]
+          },
+          {
+            "title": "4. Article 65 Acting Presidency Foundation",
+            "short_label": "Acting President",
+            "children": [
+              {
+                "title": "Relinquishes RS Chairman duties while acting as President",
+                "short_label": "Relinquish RS"
+              },
+              {
+                "title": "Draws President's salary and immunities during acting period",
+                "short_label": "President Salary"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": "1. Ex-Officio Member vs Presiding Officer Trap (அவை உறுப்பினர் அல்லாத தலைவர் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Assuming the Chairman of Rajya Sabha is a member of the Rajya Sabha.",
+            "FACT: The Vice-President is Ex-Officio Chairman, BUT HE IS NOT A MEMBER OF RAJYA SABHA (unlike the Speaker of Lok Sabha who is an elected MP)."
+          ],
+          "ta": [
+            "பொறி: மாநிலங்களவைத் தலைவர் மாநிலங்களவையின் ஒரு உறுப்பினர் எனக் கருதுவது.",
+            "உண்மை: துணைக் குடியரசுத் தலைவர் பதவிவழித் தலைவர் ஆவார், ஆனால் அவர் மாநிலங்களவையின் உறுப்பினர் அல்ல (மக்களவை சபாநாயகர் உறுப்பினராக இருப்பது போல அல்ல)."
+          ]
+        }
+      },
+      {
+        "title": "2. Joint Sitting Presiding Power Trap (கூட்டுக் கூட்டத் தலைமை பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Believing the Vice-President / Chairman of Rajya Sabha can preside over a Joint Sitting of Parliament under Article 108.",
+            "FACT: The Chairman of Rajya Sabha CANNOT preside over a Joint Sitting under any circumstances. ONLY the Speaker of Lok Sabha (or Deputy Speaker) presides!"
+          ],
+          "ta": [
+            "பொறி: மாநிலங்களவைத் தலைவர் நாடாளுமன்ற கூட்டுக் கூட்டத்திற்குத் (உறுப்பு 108) தலைமை தாங்குவார் என நினைப்பது.",
+            "உண்மை: மாநிலங்களவைத் தலைவர் எந்தவொரு சூழலிலும் கூட்டுக் கூட்டத்திற்குத் தலைமை தாங்க முடியாது. மக்களவை சபாநாயகர் மட்டுமே தலைமை தாங்குவார்!"
+          ]
+        }
+      },
+      {
+        "title": "3. Money Bill Certification Trap (நிதி மசோதா சான்றளிப்பு பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Believing the Chairman of Rajya Sabha has power to certify whether a bill is a Money Bill.",
+            "FACT: ONLY the Speaker of Lok Sabha has the constitutional power under Article 110 to certify a Money Bill."
+          ],
+          "ta": [
+            "பொறி: மாநிலங்களவைத் தலைவருக்கு நிதி மசோதாவைச் சான்றளிக்கும் அதிகாரம் உண்டு என நம்புவது.",
+            "உண்மை: மக்களவை சபாநாயகருக்கு மட்டுமே உறுப்பு 110-ன் கீழ் நிதி மசோதாவைச் சான்றளிக்கும் அதிகாரம் உண்டு."
+          ]
+        }
+      },
+      {
+        "title": "4. Casting Vote Voting Power Trap (முடிவு வாக்கு செலுத்தும் முறை பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Assuming the Chairman votes on every bill introduced in Rajya Sabha.",
+            "FACT: The Chairman does NOT vote in the first instance. He exercises a CASTING VOTE ONLY in case of an equality of votes (Tie) under Article 100(1)."
+          ],
+          "ta": [
+            "பொறி: மாநிலங்களவையில் அறிமுகப்படுத்தப்படும் அனைத்து மசோதாக்களிலும் தலைவர் வாக்களிப்பார் எனக் கருதுவது.",
+            "உண்மை: தலைவர் முதன்முறையில் வாக்களிக்க முடியாது. வாக்குகள் சமநிலை அடையும் போது (Tie) மட்டுமே உறுப்பு 100(1)-ன் கீழ் முடிவு வாக்கு செலுத்துவார்."
+          ]
+        }
+      },
+      {
+        "title": "5. Removal Resolution Voting Power Trap (தனது பதவி நீக்கத்தின் போது வாக்கு பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Believing the Vice-President can cast a casting vote when his own removal resolution is discussed.",
+            "FACT: When his removal resolution is under consideration (Art 67b), he cannot preside AND CANNOT VOTE AT ALL (neither ordinary vote nor casting vote)."
+          ],
+          "ta": [
+            "பொறி: தனது சொந்த பதவி நீக்கத் தீர்மானத்தின் போது துணைக் குடியரசுத் தலைவர் முடிவு வாக்கு செலுத்தலாம் என நம்புவது.",
+            "உண்மை: தனது பதவி நீக்கத் தீர்மானம் பரிசீலனையில் இருக்கும் போது, அவர் தலைமை தாங்க முடியாது மற்றும் வாக்களிக்கவும் முடியாது."
+          ]
+        }
+      },
+      {
+        "title": "6. Acting President Salary Source Trap (செயல் தலைவர் ஊதிய ஆதார பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Believing the Vice-President receives both Rajya Sabha Chairman salary and President salary while acting as President.",
+            "FACT: Under Article 65(3), while acting as President, he receives ONLY the salary of the President and CANNOT draw Rajya Sabha Chairman salary."
+          ],
+          "ta": [
+            "பொறி: செயல் தலைவராக இருக்கும் போது மாநிலங்களவைத் தலைவர் ஊதியம் மற்றும் குடியரசுத் தலைவர் ஊதியம் இரண்டையும் பெறுவார் எனக் கருதுவது.",
+            "உண்மை: உறுப்பு 65(3)-ன் கீழ் செயல் தலைவராக இருக்கும் போது குடியரசுத் தலைவருக்கான ஊதியத்தை மட்டுமே பெறுவார்; மாநிலங்களவைத் தலைவர் ஊதியத்தைப் பெறமாட்டார்."
+          ]
+        }
+      }
+    ],
+    "important_facts": {
+      "en": [
+        "Under Article 64 & Article 89, the Vice-President is the Ex-Officio Chairman of the Rajya Sabha.",
+        "The Chairman of Rajya Sabha is NOT a member of the Rajya Sabha.",
+        "The Chairman exercises a Casting Vote under Article 100(1) ONLY in the case of an equality of votes (tie).",
+        "The Chairman of Rajya Sabha CANNOT preside over a Joint Sitting of Parliament under Article 108.",
+        "The Speaker of Lok Sabha alone certifies Money Bills under Article 110.",
+        "When acting as President under Article 65, the Vice-President relinquishes duties as Chairman of Rajya Sabha."
+      ],
+      "ta": [
+        "உறுப்புகள் 64 & 89-ன் கீழ் துணைக் குடியரசுத் தலைவர் மாநிலங்களவையின் பதவிவழித் தலைவராவார்.",
+        "மாநிலங்களவைத் தலைவர் மாநிலங்களவையின் உறுப்பினர் அல்ல.",
+        "வாக்குகள் சமநிலையடையும் போது (Tie) மட்டுமே உறுப்பு 100(1)-ன் கீழ் முடிவு வாக்கு செலுத்துவார்.",
+        "மாநிலங்களவைத் தலைவர் நாடாளுமன்ற கூட்டுக் கூட்டத்திற்குத் (Art 108) தலைமை தாங்க முடியாது.",
+        "மக்களவை சபாநாயகர் மட்டுமே உறுப்பு 110-ன் கீழ் நிதி மசோதாக்களைச் சான்றளிக்கிறார்.",
+        "உறுப்பு 65-ன் கீழ் செயல் குடியரசுத் தலைவராகப் பணியாற்றும் போது மாநிலங்களவைத் தலைவர் பொறுப்பிலிருந்து விலகுகிறார்."
+      ]
+    },
+    "quick_revision": {
+      "en": [
+        "Ex-Officio Chairman: Articles 64 & 89 — Vice-President presides over Rajya Sabha as Ex-Officio Chairman (Not a member of RS).",
+        "Casting Vote: Article 100(1) — Votes ONLY during a tie. Cannot vote during own removal resolution under Article 67(b).",
+        "Joint Sitting: Article 108 — ONLY Speaker of Lok Sabha presides. Chairman of RS CANNOT preside.",
+        "Money Bill: Article 110 — ONLY Speaker certifies. Chairman has NO power.",
+        "Acting President: Article 65 — Relinquishes RS Chairman duties, receives President's salary (Max 6 months)."
+      ],
+      "ta": [
+        "பதவிவழித் தலைவர்: உறுப்புகள் 64 & 89 — மாநிலங்களவையின் பதவிவழித் தலைவராகப் பணியாற்றுகிறார் (அவை உறுப்பினர் அல்ல).",
+        "முடிவு வாக்கு: உறுப்பு 100(1) — சமநிலையின் போது மட்டுமே வாக்கு. தனது பதவி நீக்கத் தீர்மானத்தின் போது வாக்களிக்க முடியாது.",
+        "கூட்டுக் கூட்டம்: உறுப்பு 108 — மக்களவை சபாநாயகர் மட்டுமே தலைமை தாங்குவார். மாநிலங்களவைத் தலைவர் தலைமை தாங்க முடியாது.",
+        "நிதி மசோதா: உறுப்பு 110 — சபாநாயகர் மட்டுமே சான்றளிப்பார். தலைவருக்கு அதிகாரமில்லை.",
+        "செயல் குடியரசுத் தலைவர்: உறுப்பு 65 — தலைவர் பணிகளிலிருந்து விலகி, குடியரசுத் தலைவர் ஊதியம் பெறுகிறார் (அதிகபட்சம் 6 மாதங்கள்)."
+      ]
+    },
+    "revision_cards": [
+      {
+        "title": "Article 64 Ex-Officio Role",
+        "content_en": "Vice-President is Ex-Officio Chairman of Rajya Sabha and shall not hold any other office of profit.",
+        "content_ta": "துணைக் குடியரசுத் தலைவர் மாநிலங்களவையின் பதவிவழித் தலைவர் ஆவார்; வேறு ஆதாயம் தரும் பதவிகளை வகிக்கக் கூடாது."
+      },
+      {
+        "title": "Article 89 Presiding Officers",
+        "content_en": "Provides for Chairman (VP) and Deputy Chairman of the Council of States.",
+        "content_ta": "மாநிலங்களவையின் தலைவர் (VP) மற்றும் துணைத் தலைவரைக் குறிப்பிடுகிறது."
+      },
+      {
+        "title": "Article 100(1) Casting Vote",
+        "content_en": "Chairman has NO vote in 1st instance; exercises Casting Vote ONLY in case of tie.",
+        "content_ta": "தலைவருக்கு முதன்முறையில் வாக்கு இல்லை; வாக்குகள் சமநிலவடையும் போது மட்டுமே முடிவு வாக்கு செலுத்துவார்."
+      },
+      {
+        "title": "Non-Member Status",
+        "content_en": "Chairman of Rajya Sabha is NOT a member of the Rajya Sabha.",
+        "content_ta": "மாநிலங்களவைத் தலைவர் மாநிலங்களவையின் உறுப்பினர் அல்ல."
+      },
+      {
+        "title": "Joint Sitting Exclusion",
+        "content_en": "Chairman of RS CANNOT preside over Joint Sitting under Article 108 (Speaker presides).",
+        "content_ta": "மாநிலங்களவைத் தலைவர் கூட்டுக் கூட்டத்திற்குத் (Art 108) தலைமை தாங்க முடியாது (சபாநாயகரே தலைமை தாங்குவார்)."
+      },
+      {
+        "title": "Money Bill Limitation",
+        "content_en": "Chairman has NO power to certify Money Bills under Article 110.",
+        "content_ta": "மாநிலங்களவைத் தலைவருக்கு நிதி மசோதாவைச் சான்றளிக்கும் அதிகாரமில்லை."
+      },
+      {
+        "title": "Deputy Chairman Role",
+        "content_en": "Elected member of RS; presides when Chairman absent or acting as President.",
+        "content_ta": "மாநிலங்களவையின் தேர்ந்தெடுக்கப்பட்ட உறுப்பினர்; தலைவர் இல்லாத போது தலைமை தாங்குவார்."
+      },
+      {
+        "title": "Voting during Removal",
+        "content_en": "Chairman CANNOT vote at all during his removal resolution under Article 67(b).",
+        "content_ta": "தனது பதவி நீக்கத் தீர்மானத்தின் போது தலைவர் வாக்களிக்கவே முடியாது."
+      },
+      {
+        "title": "Acting President Relinquishment",
+        "content_en": "Relinquishes RS Chairman duties and salary while acting as President under Article 65.",
+        "content_ta": "செயல் தலைவராகப் பணியாற்றும் போது மாநிலங்களவைத் தலைவர் பணிகள் மற்றும் ஊதியத்திலிருந்து விலகுகிறார்."
+      },
+      {
+        "title": "Salary Source",
+        "content_en": "Draws salary as Chairman of Rajya Sabha under 2nd Schedule (NO VP office salary).",
+        "content_ta": "இரண்டாம் அட்டவணையின் கீழ் மாநிலங்களவைத் தலைவராகவே ஊதியம் பெறுகிறார்."
+      },
+      {
+        "title": "Disqualification under 10th Schedule",
+        "content_en": "Chairman decides anti-defection disqualification in RS (Subject to judicial review).",
+        "content_ta": "மாநிலங்களவையில் கட்சித் தாவல் தகுதியின்மையைத் தீர்மானிக்கிறார் (நீதித்துறை மறுஆய்வுக்கு உட்பட்டது)."
+      },
+      {
+        "title": "Kihoto Hollohan 1992",
+        "content_en": "Supreme Court held Chairman's decision under 10th Schedule is subject to judicial review.",
+        "content_ta": "10வது அட்டவணையின் கீழ் தலைவரின் முடிவு நீதித்துறை மறுஆய்வுக்கு உட்பட்டது என உச்ச நீதிமன்றம் தீர்ப்பளித்தது."
+      }
+    ]
+  }
+}
+
+target_path = 'data/notes/polity/vice_president_part_2.json'
+with open(target_path, 'w', encoding='utf-8') as f:
+    json.dump(part2_data, f, ensure_ascii=False, indent=2)
+
+print(f"✅ Vice-President Part 2 JSON built successfully: {target_path}")

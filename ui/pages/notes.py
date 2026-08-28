@@ -195,6 +195,8 @@ def render_notes_page(section):
 
     candidate_files = [
         f"data/notes/{subject}/{note_basename}.json",
+        f"data/notes/{subject}/{note_basename}_part_1.json",
+        f"data/notes/{subject}/{note_basename}_part1.json",
         f"data/notes/{subject}/{note_basename.replace('part', 'part_')}.json" if "part" in note_basename and "part_" not in note_basename else f"data/notes/{subject}/{note_basename}.json",
     ]
 

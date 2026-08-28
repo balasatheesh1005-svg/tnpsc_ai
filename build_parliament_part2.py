@@ -1,0 +1,811 @@
+# -*- coding: utf-8 -*-
+"""
+Builder Script for Parliament of India Notes — Part 2
+Subject: Indian Polity
+Topic: Parliament of India – Part 2 (Procedure + Legislative Process)
+"""
+
+import json
+import os
+import sys
+
+sys.stdout.reconfigure(encoding='utf-8')
+
+print("==================================================")
+print("BUILDING PARLIAMENT NOTES — PART 2")
+print("==================================================")
+
+part2_data = {
+  "meta": {
+    "topic_id": "polity_parliament_part_2",
+    "repository_id": "polity_parliament",
+    "display_title": "Parliament of India – Part 2",
+    "part": 2,
+    "total_parts": 3,
+    "subject": "polity",
+    "chapter": "Parliament of India",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "topic_id": "polity_parliament_part_2",
+    "repository_id": "polity_parliament",
+    "display_title": "Parliament of India – Part 2",
+    "part": 2,
+    "total_parts": 3,
+    "subject": "polity",
+    "chapter": "Parliament of India",
+    "language": "English + Tamil"
+  },
+  "keywords": [
+    "Presiding Officers",
+    "Speaker of Lok Sabha",
+    "Rajya Sabha Chairman",
+    "Article 89",
+    "Article 93",
+    "Article 97",
+    "Article 100",
+    "Article 107",
+    "Article 108",
+    "Article 109",
+    "Article 110",
+    "Article 111",
+    "Article 117",
+    "Article 118",
+    "Article 123",
+    "Casting Vote",
+    "Question Hour",
+    "Zero Hour",
+    "No-Confidence Motion",
+    "Censure Motion",
+    "Calling Attention Motion",
+    "Adjournment Motion",
+    "Ordinary Bill",
+    "Money Bill",
+    "Financial Bill",
+    "Joint Sitting",
+    "Parliamentary Committees",
+    "PAC",
+    "Estimates Committee",
+    "COPU",
+    "TNPSC Polity Notes"
+  ],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [
+        "Master the constitutional roles of Presiding Officers: Lok Sabha Speaker (Art 93) & Rajya Sabha Chairman (Art 89), including casting vote (Art 100) and Money Bill certification (Art 110(3)).",
+        "Understand Parliamentary Devices: Question Hour (Starred vs Unstarred), Zero Hour (Indian innovation 1962), No-Confidence Motion, Censure Motion, Calling Attention, and Adjournment Motion.",
+        "Master the Legislative Process for Bills (Art 107 to 111): Ordinary Bill, Money Bill (Art 110 definition, Speaker certification, RS 14-day limit), Financial Bills (Art 117), President's Assent (Art 111), and Ordinance power (Art 123).",
+        "Analyze Joint Sitting mechanics under Article 108: Summoning by President, presiding officer hierarchy (Speaker -> Deputy Speaker -> RS Deputy Chairman; RS Chairman NEVER presides!), and explicit exclusions (Money Bills & Const Amend Bills).",
+        "Master Financial and Standing Committees: Public Accounts Committee (22 members, Opposition Chairman convention), Estimates Committee (30 members ALL from Lok Sabha), and COPU."
+      ],
+      "ta": [
+        "அவைத் தலைவர்களின் அரசியலமைப்புப் பங்குகளில் தேர்ச்சி பெறுதல்: மக்களவை சபாநாயகர் (விதி 93) & மாநிலங்களவைத் தலைவர் (விதி 89), முடிவு வாக்கு (விதி 100) மற்றும் பண மசோதா சான்றளிப்பு (விதி 110(3)).",
+        "நாடாளுமன்ற நடைமுறைகளைப் புரிந்துகொள்ளுதல்: கேள்வி நேரம் (நட்சத்திரக் குறி vs குறியிடப்படாத கேள்விகள்), பூஜ்ஜிய நேரம் (1962 இந்தியக் கண்டுபிடிப்பு), நம்பிக்கையில்லாத் தீர்மானம், கண்டனத் தீர்மானம், கவன ஈர்ப்புத் தீர்மானம் மற்றும் ஒத்திவைப்புத் தீர்மானம்.",
+        "மசோதாக்களின் சட்டமன்ற நடைமுறையைக் கற்றல் (விதிகள் 107 முதல் 111): சாதாரண மசோதா, பண மசோதா (விதி 110 வரையறை, சபாநாயகர் சான்றிதழ், RS 14 நாட்கள் வரம்பு), நிதி மசோதாக்கள் (விதி 117), குடியரசுத் தலைவர் ஒப்புதல் (விதி 111) மற்றும் அவசரச்சட்டம் (விதி 123).",
+        "உறுப்பு 108-ன் கீழ் கூட்டுத் தொடர் முறைகளைப் பகுப்பாய்வு செய்தல்: குடியரசுத் தலைவர் கூட்டுதல், தலைமை தாங்கும் அதிகாரி வரிசை (சபாநாயகர் -> துணை சபாநாயகர் -> RS துணைத் தலைவர்; RS தலைவர் ஒருபோதும் தலைமை தாங்கமாட்டார்!) மற்றும் விலக்குகள் (பண மசோதா & திருத்த மசோதா).",
+        "நிதி மற்றும் நிலைக்குழுக்களில் தேர்ச்சி பெறுதல்: பொதுக் கணக்குக் குழு (22 உறுப்பினர்கள், எதிர்க்கட்சித் தலைவர் மரபு), மதிப்பீட்டுக் குழு (30 உறுப்பினர்கள் அனைவரும் மக்களவையிலிருந்து மட்டுமே) மற்றும் பொதுத்துறை நிறுவனங்கள் குழு."
+      ]
+    }
+  },
+  "subject": "polity",
+  "topic": "Parliament of India",
+  "language": "English + Tamil",
+  "ui_type": "standard_notes",
+  "sections": [
+    {
+      "id": "sec_presiding_officers",
+      "title_en": "1. Presiding Officers of Parliament (Articles 89, 93, 97 & 100)",
+      "title_ta": "1. நாடாளுமன்ற அவைத் தலைவர்கள் (உறுப்புகள் 89, 93, 97 & 100)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_parliamentary_devices",
+      "title_en": "2. Parliamentary Devices & Motions (Questions, Zero Hour, Motions)",
+      "title_ta": "2. நாடாளுமன்ற நடைமுறைகள் & தீர்மானங்கள் (கேள்விகள், பூஜ்ஜிய நேரம், தீர்மானங்கள்)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_legislative_procedure_bills",
+      "title_en": "3. Classification of Bills & Legislative Stages (Articles 107, 111, 117, 118, 123)",
+      "title_ta": "3. மசோதாக்களின் வகைப்பாடு & சட்டமன்ற நிலைகள் (உறுப்புகள் 107, 111, 117, 118, 123)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_money_bill_deep_dive",
+      "title_en": "4. Deep-Dive: Money Bill Mechanics (Articles 109 & 110)",
+      "title_ta": "4. விரிவான பகுப்பாய்வு: பண மசோதா முறைகள் (உறுப்புகள் 109 & 110)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_joint_sitting_mechanics",
+      "title_en": "5. Joint Sitting of Both Houses (Article 108)",
+      "title_ta": "5. இரு அவைகளின் கூட்டுத் தொடர் (உறுப்பு 108)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_parliamentary_committees",
+      "title_en": "6. Parliamentary Committees (Financial, DRSCs, House Committees)",
+      "title_ta": "6. நாடாளுமன்றக் குழுக்கள் (நிதி, துறைசார் நிலைக்குழுக்கள், அவைக்குழுக்கள்)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "comparison_tables",
+      "title_en": "7. Mandatory Comparison Tables (Bills, Officers, Motions & Committees)",
+      "title_ta": "7. கட்டாய ஒப்பீட்டு அட்டவணைகள் (மசோதாக்கள், தலைவர்கள், தீர்மானங்கள் & குழுக்கள்)",
+      "type": "comparison"
+    },
+    {
+      "id": "mind_map",
+      "title_en": "8. Mind Map & TNPSC Trap Points",
+      "title_ta": "8. மன வரைபடம் & டிஎன்பிஎஸ்சி பொறிப் புள்ளிகள்",
+      "type": "mind_map"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "Parliamentary Procedure encompasses the rules (Article 118), devices, presiding officer regulations, legislative bill mechanics (Articles 107 to 111), joint sittings (Article 108), ordinance powers (Article 123), and committee scrutinies through which Parliament exercises its legislative and oversight responsibilities.",
+      "ta": "நாடாளுமன்ற நடைமுறை என்பது விதிகள் (உறுப்பு 118), கருவிகள், அவைத் தலைவர்களின் ஒழுங்குமுறைகள், மசோதா சட்டமியற்றும் முறைகள் (உறுப்புகள் 107 முதல் 111), கூட்டுத் தொடர்கள் (உறுப்பு 108), அவசரச்சட்ட அதிகாரம் (உறுப்பு 123) மற்றும் குழுக்களின் பரிசீலனைகள் உள்ளடக்கிய அமைப்பாகும்."
+    },
+    "introduction": {
+      "en": "Under Article 118, Parliament is empowered to make rules for regulating its procedure and conduct of business. Key frameworks include Money Bills under Article 109 & Article 110, President's Assent under Article 111, Financial Bills under Article 117, Joint Sitting under Article 108, and President's Ordinance under Article 123.",
+      "ta": "உறுப்பு 118-ன் கீழ் நாடாளுமன்றம் தனது நடைமுறைகள் மற்றும் பணிகளை ஒழுங்குபடுத்துவதற்கான விதிகளை உருவாக்க அதிகாரமளிக்கப்பட்டுள்ளது. முக்கிய அமைப்புகளில் உறுப்பு 109 & 110-ன் கீழ் பண மசோதாக்கள், உறுப்பு 111-ன் கீழ் குடியரசுத் தலைவர் ஒப்புதல், உறுப்பு 117-ன் கீழ் நிதி மசோதாக்கள், உறுப்பு 108-ன் கீழ் கூட்டுத் தொடர் மற்றும் உறுப்பு 123-ன் கீழ் அவசரச்சட்டம் ஆகியவை அடங்கும்."
+    },
+    "sec_presiding_officers": [
+      {
+        "title_en": "Speaker & Deputy Speaker of Lok Sabha (Article 93 to 97)",
+        "title_ta": "மக்களவைச் சபாநாயகர் & துணை சபாநாயகர் (உறுப்புகள் 93 முதல் 97)",
+        "points": {
+          "en": [
+            "Election & Term (Article 93): Speaker and Deputy Speaker are elected by Lok Sabha from amongst its members. Speaker remains in office during the life of Lok Sabha, and continues in office even after dissolution until immediately before the first meeting of the new Lok Sabha.",
+            "Vacation & Removal (Article 94): Speaker vacates office if he ceases to be a member of Lok Sabha, resigns by writing to Deputy Speaker, or is removed by a resolution passed by a majority of all the THEN members of Lok Sabha (Effective Majority) after 14 days prior notice.",
+            "Casting Vote (Article 100(1)): The Speaker does not vote in the first instance, BUT exercises a Casting Vote in case of an equality of votes (tie-breaker), maintaining parliamentary impartiality.",
+            "Money Bill Certification (Article 110(3)): The Speaker's decision on whether a Bill is a Money Bill or not is FINAL and cannot be questioned in any court or either House.",
+            "Joint Sitting Head: Presides over Joint Sittings of Parliament (Article 108).",
+            "Disqualification under 10th Schedule: Decides disqualification of members under Anti-Defection Law (subject to judicial review as per Kihoto Hollohan 1992 case).",
+            "Secretariat Head: Heads the Secretariat of Lok Sabha and controls administrative staff."
+          ],
+          "ta": [
+            "தேர்தல் & பதவிக்காலம் (உறுப்பு 93): சபாநாயகர் மற்றும் துணை சபாநாயகர் மக்களவை உறுப்பினர்களிலிருந்து உறுப்பினர்களால் தேர்ந்தெடுக்கப்படுகின்றனர். மக்களவையின் ஆயுட்காலம் வரை சபாநாயகர் பதவியில் நீடிப்பார், மேலும் அவைக் கலைக்கப்பட்ட பிறகும் புதிய மக்களவையின் முதல் கூட்டத்திற்கு தொட்டு முன் வரை பதவியில் தொடர்வார்.",
+            "பதவி விலகல் & நீக்கம் (உறுப்பு 94): மக்களவை உறுப்பினராக இல்லாத போது, துணை சபாநாயகருக்கு ராஜினாமா கடிதம் அளிப்பதன் மூலம் அல்லது 14 நாட்கள் முன்-அறிவிப்பிற்குப் பின் மக்களவையின் அப்போதைய உறுப்பினர்களின் பெரும்பான்மையால் (Effective Majority) தீர்மானம் நிறைவேற்றப்பட்டு நீக்கப்படலாம்.",
+            "முடிவு வாக்கு / காஸ்டிங் வோட் (உறுப்பு 100(1)): சபாநாயகர் முதல் சுற்றில் வாக்களிப்பதில்லை, ஆனால் சமநிலை (Tie) ஏற்படும் போது மட்டுமே முடிவு வாக்கைப் (Casting Vote) பயன்படுத்தி அவையின் நடுநிலைமையைப் பேணுகிறார்.",
+            "பண மசோதா சான்றளிப்பு (உறுப்பு 110(3)): ஒரு மசோதா பண மசோதாவா இல்லையா என்பது குறித்த சபாநாயகரின் முடிவே இறுதியானது; அதை எந்த நீதிமன்றத்திலோ அல்லது அவையிலோ கேள்வி கேட்க முடியாது.",
+            "கூட்டுத் தொடர் தலைமை: நாடாளுமன்றக் கூட்டுத் தொடர்களுக்குத் தலைமை தாங்குகிறார் (உறுப்பு 108).",
+            "10-வது அட்டவணை தகுதியிழப்பு: கட்சித் தாவல் தடைச் சட்டத்தின் கீழ் உறுப்பினர்களின் தகுதியிழப்பைத் தீர்மானிக்கிறார் (கிஹோட்டோ ஹோலோஹான் 1992 வழக்கின் படி இது நீதிமன்ற ஆய்வுக்கு உட்பட்டது).",
+            "செயலகத் தலைவர்: மக்களவைச் செயலகத்திற்குத் தலைமை தாங்கி நிர்வாக ஊழியர்களைக் கட்டுப்படுத்துகிறார்."
+          ]
+        }
+      },
+      {
+        "title_en": "Chairman & Deputy Chairman of Rajya Sabha (Articles 89 to 92)",
+        "title_ta": "மாநிலங்களவைத் தலைவர் & துணைத் தலைவர் (உறுப்புகள் 89 முதல் 92)",
+        "points": {
+          "en": [
+            "Ex-Officio Chairman (Article 89(1)): Vice-President of India is the ex-officio Chairman of Rajya Sabha. He is NOT a member of Rajya Sabha.",
+            "Removal: The Chairman can be removed from his office ONLY IF he is removed from his office as Vice-President of India (Article 67(b) - Resolution passed by Rajya Sabha by effective majority and agreed to by Lok Sabha).",
+            "Deputy Chairman (Article 89(2)): Elected by Rajya Sabha from amongst its members. Resigns by writing to Chairman. Removed by effective majority resolution of Rajya Sabha after 14 days notice.",
+            "Salary & Allowances (Article 97): Salary of Chairman is fixed by Parliament and charged on Consolidated Fund of India. Draws salary as Chairman of Rajya Sabha, NOT as Vice-President.",
+            "CRITICAL TRAP ON JOINT SITTING: The Chairman of Rajya Sabha NEVER presides over a Joint Sitting of Parliament because he is not a member of either House!"
+          ],
+          "ta": [
+            "பதவிவழித் தலைவர் (உறுப்பு 89(1)): இந்தியத் துணைக் குடியரசுத் தலைவர் மாநிலங்களவையின் பதவிவழித் தலைவராவார். அவர் மாநிலங்களவையில் உறுப்பினரல்ல.",
+            "பதவி நீக்கம்: துணைக் குடியரசுத் தலைவர் பதவியிலிருந்து நீக்கப்பட்டால் மட்டுமே தலைவர் பதவியிலிருந்து நீக்கப்பட முடியும் (உறுப்பு 67(b) - மாநிலங்களவையில் பெரும்பான்மை தீர்மானம் நிறைவேற்றப்பட்டு மக்களவையால் ஏற்றுக்கொள்ளப்படுதல்).",
+            "துணைத் தலைவர் (உறுப்பு 89(2)): மாநிலங்களவை உறுப்பினர்களிலிருந்து உறுப்பினர்களால் தேர்ந்தெடுக்கப்படுகிறார். தலைவருக்கு ராஜினாமா கடிதம் அளிக்கலாம். 14 நாட்கள் அறிவிப்பிற்குப் பின் மாநிலங்களவையின் பெரும்பான்மைத் தீர்மானம் மூலம் நீக்கப்படலாம்.",
+            "சம்பளம் & படிகள் (உறுப்பு 97): தலைவரின் சம்பளம் நாடாளுமன்றத்தால் நிர்ணயிக்கப்பட்டு இந்தியத் தொகுப்பு நிதியிலிருந்து வழங்கப்படுகிறது. அவர் துணைக் குடியரசுத் தலைவராக அல்லாமல் மாநிலங்களவைத் தலைவராகவே சம்பளம் பெறுகிறார்.",
+            "கூட்டுத் தொடர் குறித்த முக்கியப் பொறி: மாநிலங்களவைத் தலைவர் எந்த அவையிலும் உறுப்பினராக இல்லாததால் நாடாளுமன்றக் கூட்டுத் தொடருக்கு ஒருபோதும் தலைமை தாங்கமாட்டார்!"
+          ]
+        }
+      }
+    ],
+    "sec_parliamentary_devices": [
+      {
+        "title_en": "Question Hour, Zero Hour & Parliamentary Motions",
+        "title_ta": "கேள்வி நேரம், பூஜ்ஜிய நேரம் & நாடாளுமன்றத் தீர்மானங்கள்",
+        "points": {
+          "en": [
+            "Question Hour: First hour of every parliamentary sitting. Used by MPs to ask questions to Ministers to enforce executive accountability. Three types:",
+            "  1. Starred Question (*): Marked with an asterisk. Requires ORAL answer. Supplementary questions CAN be asked.",
+            "  2. Unstarred Question: Requires WRITTEN answer. Supplementary questions CANNOT be asked.",
+            "  3. Short Notice Question: Asked on a matter of urgent public importance by giving LESS THAN 10 DAYS notice. Answered orally.",
+            "Zero Hour: Unique INDIAN INNOVATION in parliamentary procedure since 1962. Starts immediately after Question Hour until regular agenda is taken up. NOT mentioned in Rules of Procedure (Article 118 rules). MPs raise urgent matters without prior notice.",
+            "No-Confidence Motion: Moved ONLY IN LOK SABHA under Rule 198 (Article 75(3) collective responsibility). Requires support of 50 MEMBERS for admission. No reasons need to be specified. If passed, the ENTIRE Ministry/Cabinet MUST RESIGN.",
+            "Confidence Motion: Moved by the ruling party in Lok Sabha to demonstrate majority support.",
+            "Censure Motion: Can be moved in Lok Sabha against an individual Minister or group of Ministers for specific policies/failures. Reasons MUST be specified. If passed, Ministry need not resign immediately, but must regain confidence.",
+            "Calling Attention Motion: Indian innovation since 1954. Moved by a member with Speaker's permission to call attention of a Minister to an urgent public importance matter and seek official statement.",
+            "Adjournment Motion: Moved ONLY IN LOK SABHA to draw attention to a definite matter of urgent public importance having serious consequences. Requires support of 50 MEMBERS. Involves element of censure. Interrupts normal business for minimum 2.5 hours."
+          ],
+          "ta": [
+            "கேள்வி நேரம்: நாடாளுமன்றத்தின் ஒவ்வொரு நாள் கூட்டத்தின் முதல் மணி நேரம். நிர்வாகப் பொறுப்பை உறுதி செய்ய அமைச்சர்களிடம் எம்பிக்கள் கேள்விகளைக் கேட்கப் பயன்படுகிறது. 3 வகைகள்:",
+            "  1. நட்சத்திரக் குறியிட்ட கேள்வி (*): நட்சத்திரக் குறியுடன் இருக்கும். வாய்மொழிப் பதில் தேவை. துணை கேள்விகள் கேட்க முடியும்.",
+            "  2. குறியிடப்படாத கேள்வி: எழுத்துப்பூர்வமான பதில் தேவை. துணை கேள்விகள் கேட்க முடியாது.",
+            "  3. குறுகிய கால அவகாசக் கேள்வி: 10 நாட்களுக்குள் குறைந்த அவகாசத்தில் அவசர பொது முக்கியத்துவம் வாய்ந்த கேள்வி. வாய்மொழியாகப் பதிலளிக்கப்படும்.",
+            "பூஜ்ஜிய நேரம்: 1962 முதல் நாடாளுமன்ற நடைமுறையில் உள்ள தனித்துவமான இந்தியக் கண்டுபிடிப்பு. கேள்வி நேரம் முடிந்ததும் வழக்கமான நிகழ்ச்சி நிரல் தொடங்கும் வரை இயங்கும். விதிப்புத்தகத்தில் (உறுப்பு 118 விதிகள்) குறிப்பிடப்படவில்லை. முன்-அறிவிப்பின்றி அவசர விஷயங்களை உயர்த்தலாம்.",
+            "நம்பிக்கையில்லாத் தீர்மானம்: விதி 198-ன் கீழ் மக்களவையில் மட்டுமே கொண்டு வர முடியும் (உறுப்பு 75(3) கூட்டுக் கூட்டுப் பொறுப்பு). ஏற்கப்படுவதற்கு 50 உறுப்பினர்களின் ஆதரவு தேவை. कारणोंத்தைக் குறிப்பிடத் தேவையில்லை. நிறைவேற்றப்பட்டால் முழு அமைச்சரவையும் கட்டாயம் ராஜினாமா செய்ய வேண்டும்.",
+            "நம்பிக்கை கோரும் தீர்மானம்: ஆளும் கட்சியால் தனது பெரும்பான்மையை நிரூபிக்க மக்களவையில் கொண்டு வரப்படுகிறது.",
+            "கண்டனத் தீர்மானம்: குறிப்பிட்ட கொள்கைகள்/தோல்விகளுக்காகத் தனிப்பட்ட அமைச்சர் அல்லது அமைச்சர்கள் குழுவிற்கு எதிராக மக்களவையில் கொண்டு வரலாம். காரணங்களைக் கட்டாயம் குறிப்பிட வேண்டும். நிறைவேற்றப்பட்டால் அமைச்சரவை உடனடியாக ராஜினாமா செய்ய வேண்டியதில்லை, ஆனால் நம்பிக்கையை நிரூபிக்க வேண்டும்.",
+            "கவன ஈர்ப்புத் தீர்மானம்: 1954 முதல் நடைமுறையில் உள்ள இந்தியக் கண்டுபிடிப்பு. அவசரப் பொது முக்கியத்துவம் வாய்ந்த விஷயத்தில் அமைச்சரின் கவனத்தை ஈர்த்து அதிகாரப்பூர்வ அறிக்கை கோர சபாநாயகர் அனுமதியுடன் கொண்டு வரப்படுகிறது.",
+            "அவை ஒத்திவைப்புத் தீர்மானம்: தீவிர விளைவுகளைக் கொண்ட அவசரப் பொது முக்கியத்துவம் வாய்ந்த குறிப்பிட்ட விஷயத்தில் கவனத்தை ஈர்க்க மக்களவையில் மட்டுமே கொண்டு வர முடியும். 50 உறுப்பினர்களின் ஆதரவு தேவை. இதில் கண்டன அம்சம் அடங்கியுள்ளது. வழக்கமான பணிகளை குறைந்தபட்சம் 2.5 மணி நேரம் நிறுத்தி வைத்து விவாதிக்கப்படும்."
+          ]
+        }
+      }
+    ],
+    "sec_legislative_procedure_bills": [
+      {
+        "title_en": "Classification of Bills & Legislative Stages (Articles 107, 111, 117, 118, 123)",
+        "title_ta": "மசோதாக்களின் வகைப்பாடு & சட்டமன்ற நிலைகள் (உறுப்புகள் 107, 111, 117, 118, 123)",
+        "points": {
+          "en": [
+            "Four Types of Bills:",
+            "  1. Ordinary Bill (Article 107): Concerns any matter other than financial, constitutional, or money subjects. Introduced in either House. Requires Simple Majority.",
+            "  2. Money Bill (Article 110): Contains exclusively financial matters listed in Art 110. Introduced ONLY in Lok Sabha with President's recommendation (Article 109 & 117(1)).",
+            "  3. Financial Bill (Article 117): Type I (Art 117(1)) & Type II (Art 117(3)). Deals with general revenue/expenditure matters.",
+            "  4. Constitutional Amendment Bill (Article 368): Deals with amendment of Constitution. Introduced in either House. Requires Special Majority.",
+            "Five Legislative Stages of a Bill:",
+            "  Stage 1: First Reading (Introduction of Bill & publication in Gazette).",
+            "  Stage 2: Second Reading (General discussion, Committee Scrutiny stage, Clause-by-clause consideration under Article 118 Rules).",
+            "  Stage 3: Third Reading (Voting on Bill as a whole; no amendments allowed at this stage).",
+            "  Stage 4: Bill in Second House (Passes, amends, rejects, or holds for 6 months).",
+            "  Stage 5: Assent of President (Article 111 - Assent, Withhold, or Return for reconsideration).",
+            "President's Ordinance Power (Article 123): When Parliament is not in session, President can promulgate Ordinances having same force as Parliamentary Act, subject to reassembly approval within 6 weeks."
+          ],
+          "ta": [
+            "மசோதாக்களின் நான்கு வகைகள்:",
+            "  1. சாதாரண மசோதா (உறுப்பு 107): நிதி, அரசியலமைப்பு அல்லது பண விஷயங்கள் அல்லாத பிற தலைப்புகள். எந்த அவையிலும் அறிமுகப்படுத்தலாம். எளிய பெரும்பான்மை தேவை.",
+            "  2. பண மசோதா (உறுப்பு 110): விதி 110-ல் உள்ள நிதி விஷயங்களை மட்டுமே கொண்டது. குடியரசுத் தலைவர் பரிந்துரையுடன் மக்களவையில் மட்டுமே அறிமுகப்படுத்த முடியும் (உறுப்பு 109 & 117(1)).",
+            "  3. நிதி மசோதா (உறுப்பு 117): வகை I (உறுப்பு 117(1)) & வகை II (உறுப்பு 117(3)). பொது வருவாய்/செலவின விஷயங்களைக் கையாள்கிறது.",
+            "  4. அரசியலமைப்புத் திருத்த மசோதா (உறுப்பு 368): அரசியலமைப்புத் திருத்தம் பற்றியது. எந்த அவையிலும் அறிமுகப்படுத்தலாம். சிறப்பு பெரும்பான்மை தேவை.",
+            "மசோதாவின் ஐந்து சட்டமன்ற நிலைகள்:",
+            "  நிலை 1: முதல் வாசிப்பு (மசோதா அறிமுகம் & அரசிதழில் வெளியீடு).",
+            "  நிலை 2: இரண்டாம் வாசிப்பு (பொது விவாதம், குழு பரிசீலனை நிலை, பிரிவு வாரியாக ஆய்வு - உறுப்பு 118 விதிகள்).",
+            "  நிலை 3: மூன்றாம் வாசிப்பு (முழு மசோதா மீதான வாக்கெடுப்பு; இந்நிலையில் திருத்தங்கள் அனுமதிக்கப்படாது).",
+            "  நிலை 4: இரண்டாம் அவையில் மசோதா (நிறைவேற்றுதல், திருத்துதல், நிராகரித்தல் அல்லது 6 மாதங்கள் நிறுத்துதல்).",
+            "  நிலை 5: குடியரசுத் தலைவரின் ஒப்புதல் (உறுப்பு 111 - ஒப்புதல், நிறுத்தம் அல்லது மறுபரிசீலனைக்குத் திருப்புதல்).",
+            "குடியரசுத் தலைவரின் அவசரச்சட்ட அதிகாரம் (உறுப்பு 123): நாடாளுமன்றம் கூட்டத்தொடரில் இல்லாத போது குடியரசுத் தலைவர் பிறப்பிக்கும் அவசரச்சட்டம் நாடாளுமன்றச் சட்டத்திற்கு இணையானது (மீண்டும் கூடிய 6 வாரங்களில் ஒப்புதல் தேவை)."
+          ]
+        }
+      }
+    ],
+    "sec_money_bill_deep_dive": [
+      {
+        "title_en": "Articles 109 & 110 — Money Bill Definition & Special Procedure",
+        "title_ta": "உறுப்புகள் 109 & 110 — பண மசோதா வரையறை & சிறப்பு நடைமுறை",
+        "points": {
+          "en": [
+            "Definition (Article 110(1)): A Bill is deemed to be a Money Bill if it contains ONLY provisions dealing with all or any of the following matters:",
+            "  a) Imposition, abolition, remission, alteration, or regulation of any tax.",
+            "  b) Regulation of borrowing of money or giving of guarantee by Union Govt.",
+            "  c) Custody of Consolidated Fund or Contingency Fund of India, payment into or withdrawal from such funds.",
+            "  d) Appropriation of moneys out of Consolidated Fund of India.",
+            "  e) Declaring any expenditure charged on Consolidated Fund of India.",
+            "  f) Receipt of money on account of Consolidated Fund or Public Account of India or audit of accounts.",
+            "Speaker's Certification (Article 110(3)): If any question arises whether a Bill is a Money Bill or not, the decision of Speaker of Lok Sabha is FINAL. Endorsed with Speaker's certificate when sent to RS and President.",
+            "Rajya Sabha's Limited Role (Article 109):",
+            "  1. Money Bill CANNOT be introduced in Rajya Sabha.",
+            "  2. RS CANNOT reject or amend a Money Bill.",
+            "  3. RS can ONLY make recommendations and MUST return the Bill to LS within 14 DAYS.",
+            "  4. LS may either accept or reject all or any recommendations. Bill is deemed passed in form accepted by LS.",
+            "  5. If RS does not return Bill within 14 days, it is deemed passed by both Houses at the expiry of 14 days!",
+            "President's Role (Article 111): Introduced only with prior recommendation of President. President can give assent or withhold assent, BUT CANNOT return a Money Bill for reconsideration!"
+          ],
+          "ta": [
+            "வரையறை (உறுப்பு 110(1)): பின்வரும் விஷயங்களை மட்டுமே கொண்ட ஒரு மசோதா பண மசோதாவாகக் கருதப்படும்:",
+            "  a) வரிகளை விதித்தல், ரத்து செய்தல், குறைத்தல், மாற்றுதல் அல்லது ஒழுங்குபடுத்துதல்.",
+            "  b) மத்திய அரசு கடன் வாங்குவது அல்லது உத்தரவாதம் அளிப்பதை ஒழுங்குபடுத்துதல்.",
+            "  c) இந்தியத் தொகுப்பு நிதி அல்லது அவசரக்கால நிதியைப் பாதுகாத்தல், பணம் செலுத்துதல் அல்லது எடுத்தல்.",
+            "  d) இந்தியத் தொகுப்பு நிதியிலிருந்து பணத்தை ஒதுக்கீடு செய்தல்.",
+            "  e) இந்தியத் தொகுப்பு நிதியில் சுமத்தப்பட்ட செலவினங்களை அறிவித்தல்.",
+            "  f) தொகுப்பு நிதி அல்லது பொதுக் கணக்கில் பணம் பெறுதல் அல்லது கணக்குகளைத் தணிக்கை செய்தல்.",
+            "சபாநாயகர் சான்றளிப்பு (உறுப்பு 110(3)): ஒரு மசோதா பண மசோதாவா இல்லையா என்ற கேள்வி எழுந்தால் மக்களவைச் சபாநாயகரின் முடிவே இறுதியானது. RS மற்றும் குடியரசுத் தலைவருக்கு அனுப்பப்படும் போது சபாநாயகர் சான்றிதழுடன் அனுப்பப்படும்.",
+            "மாநிலங்களவையின் வரம்பிற்குட்பட்ட பங்கு (உறுப்பு 109):",
+            "  1. பண மசோதாவை மாநிலங்களவையில் அறிமுகப்படுத்த முடியாது.",
+            "  2. RS பண மசோதாவை நிராகரிக்கவோ திருத்தவோ முடியாது.",
+            "  3. RS பரிந்துரைகளை மட்டுமே செய்ய முடியும் மற்றும் 14 நாட்களுக்குள் மசோதாவை LS-க்குத் திருப்ப வேண்டும்.",
+            "  4. பரிந்துரைகளை ஏற்கவோ நிராகரிக்கவோ மக்களவைக்கு முழு அதிகாரமுண்டு. LS ஏற்கும் வடிவில் மசோதா நிறைவேறியதாகக் கருதப்படும்.",
+            "  5. RS 14 நாட்களுக்குள் மசோதாவைத் திருப்பத் தவறினால், 14 நாட்கள் முடிந்ததும் இரு அவைகளாலும் நிறைவேற்றப்பட்டதாகக் கருதப்படும்!",
+            "குடியரசுத் தலைவரின் பங்கு (உறுப்பு 111): குடியரசுத் தலைவரின் முன் பரிந்துரையுடன் மட்டுமே அறிமுகப்படுத்தப்படும். குடியரசுத் தலைவர் ஒப்புதல் அளிக்கலாம் அல்லது நிறுத்தலாம், ஆனால் பண மசோதாவை மறுபரிசீலனைக்குத் திருப்ப முடியாது!"
+          ]
+        }
+      }
+    ],
+    "sec_joint_sitting_mechanics": [
+      {
+        "title_en": "Article 108 — Joint Sitting of Both Houses",
+        "title_ta": "உறுப்பு 108 — இரு அவைகளின் கூட்டுத் தொடர்",
+        "points": {
+          "en": [
+            "Purpose: To resolve legislative deadlock between Lok Sabha and Rajya Sabha over the passage of a Bill.",
+            "Three Deadlock Conditions (Article 108(1)):",
+            "  1. Bill is rejected by the other House; OR",
+            "  2. Houses have finally disagreed as to the amendments to be made in the Bill; OR",
+            "  3. More than 6 MONTHS elapse from the date of reception of the Bill by the other House without being passed.",
+            "Summoning Authority: PRESIDENT OF INDIA notifies intention to summon Joint Sitting.",
+            "Presiding Officer Order of Precedence:",
+            "  1. Speaker of Lok Sabha.",
+            "  2. Deputy Speaker of Lok Sabha (if Speaker absent).",
+            "  3. Deputy Chairman of Rajya Sabha (if Deputy Speaker absent).",
+            "  4. Such person as determined by members present at Joint Sitting.",
+            "CRITICAL EXCLUSION: Chairman of Rajya Sabha NEVER presides over Joint Sitting because he is not an MP!",
+            "Voting Rule: Passed by a SIMPLE MAJORITY of the total number of members of BOTH HOUSES present and voting.",
+            "Numerical Superiority: Lok Sabha always wins in Joint Sitting due to its larger numerical strength (543 vs 245).",
+            "BILL EXCLUSIONS (Where Joint Sitting CANNOT be called):",
+            "  1. Money Bills (Article 110) — LS has supreme authority.",
+            "  2. Constitutional Amendment Bills (Article 368) — Must be passed by each House separately by Special Majority!",
+            "Historical Joint Sittings (Only 3 times in Indian History):",
+            "  1. Dowry Prohibition Bill (1961).",
+            "  2. Banking Service Commission (Repeal) Bill (1978).",
+            "  3. Prevention of Terrorism Bill - POTA (2002)."
+          ],
+          "ta": [
+            "நோக்கம்: ஒரு மசோதாவை நிறைவேற்றுவதில் மக்களவைக்கும் மாநிலங்களவைக்கும் இடையே ஏற்படும் சட்டமன்ற முட்டுக் கட்டையைத் தீர்ப்பது.",
+            "மூன்று முட்டுக் கட்டை நிபந்தனைகள் (உறுப்பு 108(1)):",
+            "  1. மசோதாவை மற்ற அவை நிராகரித்தல்; அல்லது",
+            "  2. திருத்தங்கள் தொடர்பாக இரு அவைகளும் முற்றிலும் உடன்படாதிருத்தல்; அல்லது",
+            "  3. மசோதா வந்து சேரப்பெற்ற நாளிலிருந்து 6 மாதங்களுக்கு மேல் நிறைவேற்றப்படாமல் இருத்தல்.",
+            "கூட்டும் அதிகாரி: இந்தியக் குடியரசுத் தலைவர் கூட்டுத் தொடர் அறிவிப்பை வெளியிடுகிறார்.",
+            "தலைமை தாங்கும் அதிகாரி வரிசை:",
+            "  1. மக்களவைச் சபாநாயகர்.",
+            "  2. மக்களவை துணை சபாநாயகர் (சபாநாயகர் இல்லாத போது).",
+            "  3. மாநிலங்களவை துணைத் தலைவர் (துணை சபாநாயகர் இல்லாத போது).",
+            "  4. கூட்டுத் தொடரில் உள்ள உறுப்பினர்களால் தீர்மானிக்கப்படும் நபர்.",
+            "முக்கிய விலக்கு: மாநிலங்களவைத் தலைவர் எந்த அவையிலும் உறுப்பினரல்ல என்பதால் கூட்டுத் தொடருக்கு ஒருபோதும் தலைமை தாங்கமாட்டார்!",
+            "வாக்கெடுப்பு விதி: கூட்டத்தில் பங்கேற்று வாக்களிக்கும் இரு அவைகளின் மொத்த உறுப்பினர்களின் எளிய பெரும்பான்மையால் (Simple Majority) நிறைவேற்றப்படுகிறது.",
+            "எண்ணிக்கை மேலாதிக்கம்: மக்களவையின் அதிக உறுப்பினர் எண்ணிக்கை காரணமாக (543 vs 245) கூட்டுத் தொடரில் மக்களவையே வெற்றி பெறுகிறது.",
+            "கூட்டுத் தொடர் விலக்கப்பட்ட மசோதாக்கள் (கூட்ட முடியாதவை):",
+            "  1. பண மசோதாக்கள் (உறுப்பு 110) — மக்களவைக்கு உச்ச அதிகாரம் உண்டு.",
+            "  2. அரசியலமைப்புத் திருத்த மசோதாக்கள் (உறுப்பு 368) — ஒவ்வொரு அவையும் தனித்தனியாக சிறப்பு பெரும்பான்மையுடன் நிறைவேற்ற வேண்டும்!",
+            "வரலாற்றுச் சிறப்புமிக்க கூட்டுத் தொடர்கள் (இந்திய வரலாற்றில் 3 முறை மட்டுமே):",
+            "  1. வரதட்சணை தடை மசோதா (1961).",
+            "  2. வங்கி சேவை ஆணைக்குழு (ரத்து) மசோதா (1978).",
+            "  3. பயங்கரவாத தடுப்பு மசோதா - பொடா POTA (2002)."
+          ]
+        }
+      }
+    ],
+    "sec_parliamentary_committees": [
+      {
+        "title_en": "Major Parliamentary Committees (PAC, Estimates & COPU)",
+        "title_ta": "முக்கிய நாடாளுமன்றக் குழுக்கள் (PAC, மதிப்பீட்டுக் குழு & COPU)",
+        "points": {
+          "en": [
+            "Classification: Standing Committees (Permanent, constituted annually) & Ad-Hoc Committees (Temporary, created for specific inquiry/purpose).",
+            "1. Public Accounts Committee (PAC):",
+            "  • Established: 1921 under GOI Act 1919.",
+            "  • Composition: 22 Members (15 Lok Sabha + 7 Rajya Sabha). Elected annually by proportional representation by STV.",
+            "  • Chairman: Appointed by Speaker. Since 1967, an OPPOSITION party member is conventionally appointed as Chairman.",
+            "  • Function: Scrutinizes Annual Audit Reports of Comptroller and Auditor General (CAG) (CAG is 'Friend, Philosopher, and Guide' of PAC). Cannot question policy.",
+            "2. Estimates Committee:",
+            "  • Established: 1950 on recommendation of John Mathai (Finance Minister).",
+            "  • Composition: 30 Members (ALL 30 FROM LOK SABHA ONLY! Rajya Sabha has NO representation). Largest Parliamentary Committee.",
+            "  • Chairman: Appointed by Speaker from RULING party.",
+            "  • Function: Examines budget estimates and suggests 'alternative policies' to bring efficiency and economy in administration ('Continuous Economy Committee').",
+            "3. Committee on Public Undertakings (COPU):",
+            "  • Established: 1964 on recommendation of Krishna Menon Committee.",
+            "  • Composition: 22 Members (15 Lok Sabha + 7 Rajya Sabha).",
+            "  • Function: Examines reports/accounts of Public Sector Undertakings (PSUs) and CAG audit reports on PSUs.",
+            "4. Departmentally Related Standing Committees (DRSCs):",
+            "  • Established: 1993 (Expanded to 24 committees in 2004 - 16 under LS, 8 under RS).",
+            "  • Composition: 31 Members each (21 Lok Sabha + 10 Rajya Sabha).",
+            "  • Function: Detailed scrutiny of Demands for Grants of concerned ministries, Bills, and Annual Reports."
+          ],
+          "ta": [
+            "வகைப்பாடு: நிலைக்குழுக்கள் (நிலையானவை, ஆண்டுதோறும் அமைக்கப்படுபவை) & தற்காலிகக் குழுக்கள் (குறிப்பிட்ட விசாரணை/நோக்கத்திற்காக உருவாக்கப்படுபவை).",
+            "1. பொதுக் கணக்குக் குழு (Public Accounts Committee - PAC):",
+            "  • தோற்றம்: 1919 இந்திய அரசுச் சட்டத்தின் கீழ் 1921-ல் அமைக்கம்.",
+            "  • உறுப்பினர்கள்: 22 உறுப்பினர்கள் (15 மக்களவை + 7 மாநிலங்களவை). விகிதாசார ஒற்றை மாற்று வாக்கு மூலம் ஆண்டுதோறும் தேர்வு.",
+            "  • தலைவர்: சபாநாயகரால் நியமிக்கப்படுகிறார். 1967 முதல் மரபுவழியாக எதிர்க்கட்சி உறுப்பினர் தலைவராக நியமிக்கப்படுகிறார்.",
+            "  • பணி: தலைமைத் தணிக்கையாளரின் (CAG) ஆண்டுத் தணிக்கை அறிக்கைகளை ஆய்வு செய்கிறது (CAG இக்குழுவின் 'நண்பன், தத்துவவாதி மற்றும் வழிகாட்டி' ஆவார்). கொள்கைகளைக் கேள்வி கேட்க முடியாது.",
+            "2. மதிப்பீட்டுக் குழு (Estimates Committee):",
+            "  • தோற்றம்: 1950-ல் ஜான் மத்தாய் (நிதி அமைச்சர்) பரிந்துரையால் அமைக்கம்.",
+            "  • உறுப்பினர்கள்: 30 உறுப்பினர்கள் (அனைத்து 30 உறுப்பினர்களும் மக்களவையிலிருந்து மட்டுமே! மாநிலங்களவைக்கு பிரதிநிதித்துவம் இல்லை). மிகபெரிய நாடாளுமன்றக் குழு.",
+            "  • தலைவர்: ஆளுங்கட்சியிலிருந்து சபாநாயகரால் நியமிக்கப்படுகிறார்.",
+            "  • பணி: பட்ஜெட் மதிப்பீடுகளை ஆய்வு செய்து நிர்வாகத்தில் சிக்கனத்தைக் கொண்டு வர 'மாற்றுக் கொள்கைகளை' பரிந்துரைக்கிறது ('தொடர் சிக்கனக் குழு').",
+            "3. பொதுத்துறை நிறுவனங்கள் குழு (COPU):",
+            "  • தோற்றம்: 1964-ல் கிருஷ்ண மேனன் குழு பரிந்துரையால் அமைக்கம்.",
+            "  • உறுப்பினர்கள்: 22 உறுப்பினர்கள் (15 மக்களவை + 7 மாநிலங்களவை).",
+            "  • பணி: பொதுத்துறை நிறுவனங்களின் (PSUs) அறிக்கைகள், கணக்குகள் மற்றும் CAG தணிக்கை அறிக்கைகளை ஆய்வு செய்கிறது.",
+            "4. துறைசார் நிலைக்குழுக்கள் (DRSCs):",
+            "  • தோற்றம்: 1993-ல் அமைக்கம் (2004-ல் 24 குழுக்களாக விரிவாக்கம் - 16 LS கீழ், 8 RS கீழ்).",
+            "  • உறுப்பினர்கள்: தலா 31 உறுப்பினர்கள் (21 மக்களவை + 10 மாநிலங்களவை).",
+            "  • பணி: அமைச்சகங்களின் மானியக் கோரிக்கைகள், மசோதாக்கள் மற்றும் ஆண்டு அறிக்கைகளை விரிவாக ஆய்வு செய்கிறது."
+          ]
+        }
+      }
+    ],
+    "revision_cards": [
+      {
+        "id": "parl_p2_c1",
+        "front_en": "Who certifies whether a Bill is a Money Bill or not under Article 110(3)?",
+        "front_ta": "உறுப்பு 110(3)-ன் கீழ் ஒரு மசோதா பண மசோதாவா இல்லையா எனச் சான்றளிப்பவர் யார்?",
+        "back_en": "Speaker of Lok Sabha (His decision is FINAL and unquestionable).",
+        "back_ta": "மக்களவைச் சபாநாயகர் (அவரது முடிவே இறுதியானது மற்றும் கேள்வி கேட்க முடியாதது)."
+      },
+      {
+        "id": "parl_p2_c2",
+        "front_en": "How many days does Rajya Sabha have to return a Money Bill under Article 109?",
+        "front_ta": "உறுப்பு 109-ன் கீழ் பண மசோதாவைத் திருப்ப மாநிலங்களவைக்கு எத்தனை நாட்கள் அவகாசம் உள்ளது?",
+        "back_en": "14 DAYS ONLY (RS cannot reject or amend a Money Bill).",
+        "back_ta": "14 நாட்கள் மட்டுமே (RS பண மசோதாவை நிராகரிக்கவோ திருத்தவோ முடியாது)."
+      },
+      {
+        "id": "parl_p2_c3",
+        "front_en": "Who presides over a Joint Sitting of Parliament under Article 108?",
+        "front_ta": "உறுப்பு 108-ன் கீழ் நாடாளுமன்றக் கூட்டுத் தொடருக்குத் தலைமை தாங்குபவர் யார்?",
+        "back_en": "Speaker of Lok Sabha (If absent, Deputy Speaker of LS; if absent, Deputy Chairman of RS. RS Chairman NEVER presides!).",
+        "back_ta": "மக்களவைச் சபாநாயகர் (இல்லையெனில் LS துணை சபாநாயகர்; இல்லையெனில் RS துணைத் தலைவர். RS தலைவர் ஒருபோதும் தலைமை தாங்கமாட்டார்!)."
+      },
+      {
+        "id": "parl_p2_c4",
+        "front_en": "On which Bills can a Joint Sitting NOT be called under Article 108?",
+        "front_ta": "உறுப்பு 108-ன் கீழ் எந்த மசோதாக்களுக்குக் கூட்டுத் தொடரைக் கூட்ட முடியாது?",
+        "back_en": "Money Bills (Art 110) and Constitutional Amendment Bills (Art 368).",
+        "back_ta": "பண மசோதாக்கள் (விதி 110) மற்றும் அரசியலமைப்புத் திருத்த மசோதாக்கள் (விதி 368)."
+      },
+      {
+        "id": "parl_p2_c5",
+        "front_en": "What is the member composition of the Estimates Committee?",
+        "front_ta": "மதிப்பீட்டுக் குழுவின் உறுப்பினர் அமைப்பு என்ன?",
+        "back_en": "30 Members — ALL 30 FROM LOK SABHA ONLY! (Rajya Sabha has 0 members).",
+        "back_ta": "30 உறுப்பினர்கள் — அனைத்து 30 உறுப்பினர்களும் மக்களவையிலிருந்து மட்டுமே! (மாநிலங்களவைக்கு இடமில்லை)."
+      },
+      {
+        "id": "parl_p2_c6",
+        "front_en": "By convention since 1967, who is appointed as the Chairman of the Public Accounts Committee (PAC)?",
+        "front_ta": "1967 முதல் மரபுவழியாக பொதுக் கணக்குக் குழுவின் (PAC) தலைவராக நியமிக்கப்படுபவர் யார்?",
+        "back_en": "A member from the OPPOSITION party in Lok Sabha.",
+        "back_ta": "மக்களவை எதிர்க்கட்சியைச் சேர்ந்த ஒரு உறுப்பினர்."
+      },
+      {
+        "id": "parl_p2_c7",
+        "front_en": "What is the minimum member support needed to admit a No-Confidence Motion in Lok Sabha?",
+        "front_ta": "மக்களவையில் நம்பிக்கையில்லாத் தீர்மானத்தை ஏற்க தேவைப்படும் குறைந்தபட்ச உறுப்பினர் ஆதரவு எவ்வளவு?",
+        "back_en": "Support of 50 MEMBERS of Lok Sabha.",
+        "back_ta": "மக்களவையின் 50 உறுப்பினர்களின் ஆதரவு."
+      },
+      {
+        "id": "parl_p2_c8",
+        "front_en": "What is the difference between Starred (*) and Unstarred Questions during Question Hour?",
+        "front_ta": "கேள்வி நேரத்தில் நட்சத்திரக் குறியிட்ட (*) மற்றும் குறியிடப்படாத கேள்விகளுக்கு இடையிலான வேறுபாடு என்ன?",
+        "back_en": "Starred Question: ORAL answer + Supplementary questions allowed. Unstarred Question: WRITTEN answer + NO supplementaries.",
+        "back_ta": "நட்சத்திரக் கேள்வி: வாய்மொழிப் பதில் + துணை கேள்விகள் உண்டு. குறியிடப்படாத கேள்வி: எழுத்துப்பூர்வ பதில் + துணை கேள்விகள் இல்லை."
+      },
+      {
+        "id": "parl_p2_c9",
+        "front_en": "What is Zero Hour in Indian Parliamentary Procedure?",
+        "front_ta": "இந்திய நாடாளுமன்ற நடைமுறையில் பூஜ்ஜிய நேரம் என்றால் என்ன?",
+        "back_en": "An Indian innovation (since 1962) starting immediately after Question Hour to raise urgent matters without prior notice.",
+        "back_ta": "1962 முதல் கேள்வி நேரம் முடிந்ததும் முன்-அறிவிப்பின்றி அவசர விஷயங்களை உயர்த்த உள்ள ஒரு இந்தியக் கண்டுபிடிப்பு."
+      },
+      {
+        "id": "parl_p2_c10",
+        "front_en": "Can the President return a Money Bill for reconsideration under Article 111?",
+        "front_ta": "உறுப்பு 111-ன் கீழ் குடியரசுத் தலைவர் பண மசோதாவை மறுபரிசீலனைக்குத் திருப்ப முடியுமா?",
+        "back_en": "NO. President can give assent or withhold assent, BUT CANNOT return a Money Bill.",
+        "back_ta": "இல்லை. குடியரசுத் தலைவர் ஒப்புதல் அளிக்கலாம் அல்லது நிறுத்தலாம், ஆனால் பண மசோதாவைத் திருப்ப முடியாது."
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "tbl_ord_vs_money_p2",
+        "title_en": "1. Ordinary Bill vs Money Bill Comparison",
+        "title_ta": "1. சாதாரண மசோதா vs பண மசோதா ஒப்பீடு",
+        "headers_en": ["Feature / Aspect", "Ordinary Bill", "Money Bill (Article 110)"],
+        "headers_ta": ["அம்சம் / காரணி", "சாதாரண மசோதா", "பண மசோதா (உறுப்பு 110)"],
+        "rows_en": [
+          ["House of Origin", "Can be introduced in EITHER Lok Sabha or Rajya Sabha", "Can be introduced ONLY in Lok Sabha (Art 109)"],
+          ["Introducer", "Introduced by a Minister or a Private Member", "Introduced ONLY by a Minister"],
+          ["President's Recommendation", "Introduced without prior recommendation of President", "Introduced ONLY on prior recommendation of President"],
+          ["Speaker's Certificate", "Does not require Speaker's certificate", "REQUIRES Speaker's certificate as Money Bill (Art 110(3))"],
+          ["Rajya Sabha Powers", "RS can amend or reject the Bill; Can hold up to 6 months", "RS CANNOT amend or reject; Can hold for MAX 14 DAYS ONLY"],
+          ["Joint Sitting Provision", "Joint Sitting CAN be summoned by President in deadlock (Art 108)", "NO Joint Sitting provision (LS has supreme authority)"],
+          ["President's Assent Options", "Assent, Withhold, or Return for reconsideration (Art 111)", "Assent or Withhold; CANNOT return for reconsideration"]
+        ],
+        "rows_ta": [
+          ["தொடங்கும் அவை", "மக்களவை அல்லது மாநிலங்களவை இரண்டிலும் அறிமுகப்படுத்தலாம்", "மக்களவையில் மட்டுமே அறிமுகப்படுத்த முடியும் (விதி 109)"],
+          ["அறிமுகப்படுத்துபவர்", "அமைச்சர் அல்லது தனிநபர் உறுப்பினரால் அறிமுகம்", "அமைச்சரால் மட்டுமே அறிமுகப்படுத்த முடியும்"],
+          ["குடியரசுத் தலைவர் பரிந்துரை", "குடியரசுத் தலைவரின் முன் பரிந்துரையின்றி அறிமுகம்", "குடியரசுத் தலைவரின் முன் பரிந்துரையுடன் மட்டுமே அறிமுகம்"],
+          ["சபாநாயகர் சான்றிதழ்", "சபாநாயகர் சான்றிதழ் தேவையில்லை", "பண மசோதா என சபாநாயகர் சான்றளிக்க வேண்டும் (விதி 110(3))"],
+          ["மாநிலங்களவை அதிகாரங்கள்", "RS திருத்தலாம் அல்லது நிராகரிக்கலாம்; 6 மாதங்கள் நிறுத்தி வைக்கலாம்", "RS திருத்தவோ நிராகரிக்கவோ முடியாது; அதிகபட்சம் 14 நாட்கள் மட்டுமே நிறுத்தம்"],
+          ["கூட்டுத் தொடர் விதி", "முட்டுக் கட்டையின் போது கூட்டுத் தொடரைக் கூட்டலாம் (விதி 108)", "கூட்டுத் தொடர் விதி இல்லை (மக்களவைக்கு முழு அதிகாரம்)"],
+          ["குடியரசுத் தலைவர் ஒப்புதல்", "ஒப்புதல், நிறுத்தம் அல்லது மறுபரிசீலனைக்குத் திருப்புதல் (விதி 111)", "ஒப்புதல் அல்லது நிறுத்தம்; மறுபரிசீலனைக்குத் திருப்ப முடியாது"]
+        ]
+      },
+      {
+        "id": "tbl_money_vs_financial_p2",
+        "title_en": "2. Money Bill vs Financial Bill Comparison",
+        "title_ta": "2. பண மசோதா vs நிதி மசோதா ஒப்பீடு",
+        "headers_en": ["Feature", "Money Bill (Art 110)", "Financial Bill Category I (Art 117(1))", "Financial Bill Category II (Art 117(3))"],
+        "headers_ta": ["அம்சம்", "பண மசோதா (விதி 110)", "நிதி மசோதா வகை I (விதி 117(1))", "நிதி மசோதா வகை II (விதி 117(3))"],
+        "rows_en": [
+          ["Content Focus", "Exclusively Art 110 matters ONLY", "Art 110 matters + General legislation", "Involves Consolidated Fund expenditure without Art 110 matters"],
+          ["House of Origin", "Lok Sabha ONLY", "Lok Sabha ONLY", "EITHER Lok Sabha or Rajya Sabha"],
+          ["President's Recommendation", "Required prior to introduction", "Required prior to introduction", "Required before consideration by either House"],
+          ["Speaker's Certification", "Mandatory Speaker certificate", "No Speaker certificate required", "No Speaker certificate required"],
+          ["Rajya Sabha Powers", "14 days recommendation ONLY", "Same as Ordinary Bill (Amend/Reject)", "Same as Ordinary Bill (Amend/Reject)"],
+          ["Joint Sitting", "NOT Applicable", "APPLICABLE in case of deadlock", "APPLICABLE in case of deadlock"]
+        ],
+        "rows_ta": [
+          ["உள்ளடக்க கவனம்", "விதி 110 விஷயங்கள் மட்டுமே", "விதி 110 விஷயங்கள் + பொதுச் சட்டம்", "விதி 110 இன்றி தொகுப்பு நிதிச் செலவினம் பற்றியது"],
+          ["தொடங்கும் அவை", "மக்களவை மட்டுமே", "மக்களவை மட்டுமே", "மக்களவை அல்லது மாநிலங்களவை இரண்டிலும்"],
+          ["குடியரசுத் தலைவர் பரிந்துரை", "அறிமுகத்திற்கு முன் கட்டாயம்", "அறிமுகத்திற்கு முன் கட்டாயம்", "பரிசீலனைக்கு முன் கட்டாயம்"],
+          ["சபாநாயகர் சான்றிதழ்", "கட்டாய சான்றிதழ் தேவை", "சபாநாயகர் சான்றிதழ் தேவையில்லை", "சபாநாயகர் சான்றிதழ் தேவையில்லை"],
+          ["மாநிலங்களவை அதிகாரங்கள்", "14 நாட்கள் பரிந்துரை மட்டுமே", "சாதாரண மசோதா போல (திருத்தம்/நிராகரிப்பு)", "சாதாரண மசோதா போல (திருத்தம்/நிராகரிப்பு)"],
+          ["கூட்டுத் தொடர்", "பொருந்தாது", "முட்டுக் கட்டையின் போது பொருந்தும்", "முட்டுக் கட்டையின் போது பொருந்தும்"]
+        ]
+      },
+      {
+        "id": "tbl_speaker_vs_chairman_p2",
+        "title_en": "3. Lok Sabha Speaker vs Rajya Sabha Chairman Comparison",
+        "title_ta": "3. மக்களவைச் சபாநாயகர் vs மாநிலங்களவைத் தலைவர் ஒப்பீடு",
+        "headers_en": ["Parameter", "Speaker of Lok Sabha", "Chairman of Rajya Sabha"],
+        "headers_ta": ["அளவுரு", "மக்களவைச் சபாநாயகர்", "மாநிலங்களவைத் தலைவர்"],
+        "rows_en": [
+          ["Membership Status", "MUST be an elected member of Lok Sabha", "NOT a member of Rajya Sabha (Vice-President ex-officio)"],
+          ["Election Method", "Elected by Lok Sabha members from amongst themselves", "Elected by Electoral College of both Houses as Vice-President"],
+          ["Removal Authority", "Removed by Lok Sabha effective majority resolution", "Removed ONLY by Vice-President removal process"],
+          ["Money Bill Decision", "Decides whether a Bill is Money Bill or not (Art 110(3))", "NO power to decide or certify Money Bills"],
+          ["Joint Sitting Role", "Presides over Joint Sittings of Parliament (Art 108)", "NEVER presides over Joint Sittings of Parliament"],
+          ["Casting Vote", "Exercises Casting Vote in case of tie (Art 100)", "Exercises Casting Vote in case of tie (Art 100)"]
+        ],
+        "rows_ta": [
+          ["உறுப்பினர் நிலை", "மக்களவையின் தேர்ந்தெடுக்கப்பட்ட உறுப்பினராக இருக்க வேண்டும்", "மாநிலங்களவையில் உறுப்பினரல்ல (துணைக் குடியரசுத் தலைவர்)"],
+          ["தேர்தல் முறை", "மக்களவை உறுப்பினர்களிலிருந்து உறுப்பினர்களால் தேர்வு", "இரு அவைகளின் வாக்காளர் குழுவால் துணைக் குடியரசுத் தலைவராகத் தேர்வு"],
+          ["பதவி நீக்க அதிகாரம்", "மக்களவையின் பெரும்பான்மைத் தீர்மானம் மூலம் நீக்கம்", "துணைக் குடியரசுத் தலைவர் நீக்க முறை மூலம் மட்டுமே நீக்கம்"],
+          ["பண மசோதா முடிவு", "மசோதா பண மசோதாவா எனத் தீர்மானிப்பவர் (விதி 110(3))", "பண மசோதாவைத் தீர்மானிக்கும் அதிகாரமில்லை"],
+          ["கூட்டுத் தொடர் பங்கு", "நாடாளுமன்றக் கூட்டுத் தொடர்களுக்குத் தலைமை தாங்குபவர் (விதி 108)", "கூட்டுத் தொடர்களுக்கு ஒருபோதும் தலைமை தாங்கமாட்டார்"],
+          ["முடிவு வாக்கு", "சமநிலையின் போது முடிவு வாக்கைப் பயன்படுத்துகிறார் (விதி 100)", "சமநிலையின் போது முடிவு வாக்கைப் பயன்படுத்துகிறார் (விதி 100)"]
+        ]
+      },
+      {
+        "id": "tbl_motions_comparison_p2",
+        "title_en": "4. No-Confidence vs Censure vs Confidence Motion Comparison",
+        "title_ta": "4. நம்பிக்கையில்லா vs கண்டன vs நம்பிக்கை கோரும் தீர்மானங்கள் ஒப்பீடு",
+        "headers_en": ["Feature", "No-Confidence Motion", "Censure Motion", "Confidence Motion"],
+        "headers_ta": ["அம்சம்", "நம்பிக்கையில்லாத் தீர்மானம்", "கண்டனத் தீர்மானம்", "நம்பிக்கை கோரும் தீர்மானம்"],
+        "rows_en": [
+          ["Moved By", "Opposition Party in Lok Sabha", "Opposition Party in Lok Sabha", "Ruling Party / Prime Minister in Lok Sabha"],
+          ["Reasons Specified", "NO reasons need to be specified in motion", "MUST specify reason for censuring policy/action", "Moved to prove majority support"],
+          ["Target", "Moved against the ENTIRE Council of Ministers", "Moved against an individual Minister or group", "Moved for the entire Ministry"],
+          ["Member Support Needed", "Requires support of 50 MEMBERS for admission", "Requires Speaker's leave; no fixed 50 limit", "No fixed limit; taken up directly"],
+          ["Result if Passed", "Council of Ministers MUST RESIGN immediately", "Ministry need not resign, but must prove majority later", "Government retains power; if defeated, Cabinet resigns"]
+        ],
+        "rows_ta": [
+          ["கொண்டு வருபவர்", "மக்களவையில் எதிர்க்கட்சி", "மக்களவையில் எதிர்க்கட்சி", "மக்களவையில் ஆளும் கட்சி / பிரதமர்"],
+          ["காரணங்கள் குறிப்பிடல்", "காரணங்களைக் குறிப்பிடத் தேவையில்லை", "கொள்கை/செயலைக் கண்டிக்கக் காரணத்தைக் குறிப்பிட வேண்டும்", "பெரும்பான்மையை நிரூபிக்கக் கொண்டு வரப்படுகிறது"],
+          ["இலக்கு", "முழு அமைச்சரவைக்கும் எதிராகக் கொண்டு வரப்படும்", "தனிப்பட்ட அமைச்சர் அல்லது அமைச்சர்கள் குழுவிற்கு எதிராக", "முழு அமைச்சரவைக்காகக் கொண்டு வரப்படும்"],
+          ["தேவைப்படும் உறுப்பினர்கள்", "ஏற்கப்படுவதற்கு 50 உறுப்பினர்களின் ஆதரவு தேவை", "சபாநாயகர் அனுமதி தேவை; 50 உறுப்பினர் வரம்பில்லை", "குறிப்பிட்ட வரம்பில்லை; நேரடியாகக் எடுத்துக் கொள்ளப்படும்"],
+          ["நிறைவேறியதன் முடிவு", "அமைச்சரவை உடனடியாக கட்டாயம் ராஜினாமா செய்ய வேண்டும்", "அமைச்சரவை உடனடியாக விலகத் தேவையில்லை, ஆனால் பெரும்பான்மையை நிரூபிக்க வேண்டும்", "அரசு பதவியில் நீடிக்கும்; தோற்றால் அமைச்சரவை ராஜினாமா செய்யும்"]
+        ]
+      },
+      {
+        "id": "tbl_qhour_vs_zhour_p2",
+        "title_en": "5. Question Hour vs Zero Hour Comparison",
+        "title_ta": "5. கேள்வி நேரம் vs பூஜ்ஜிய நேரம் ஒப்பீடு",
+        "headers_en": ["Parameter", "Question Hour", "Zero Hour"],
+        "headers_ta": ["அளவுரு", "கேள்வி நேரம் (Question Hour)", "பூஜ்ஜிய நேரம் (Zero Hour)"],
+        "rows_en": [
+          ["Timing", "First hour of a sitting (11 AM to 12 PM)", "Starts immediately after Question Hour (12 PM to 1 PM)"],
+          ["Rules Mention", "Explicitly mentioned in Rules of Procedure", "NOT mentioned in Rules of Procedure (Informal device)"],
+          ["Origin", "Traditional parliamentary mechanism from UK", "Indian Innovation introduced in 1962"],
+          ["Prior Notice", "Prior notice required to ask questions (10+ days)", "Matters raised WITHOUT any prior notice"],
+          ["Question Types", "Starred (Oral), Unstarred (Written), Short Notice", "Matters of urgent public importance raised directly"]
+        ],
+        "rows_ta": [
+          ["நேரம்", "நாளின் முதல் மணி நேரம் (காலை 11 முதல் 12 மணி வரை)", "கேள்வி நேரம் முடிந்ததும் தொடங்கும் (மதியம் 12 முதல் 1 மணி வரை)"],
+          ["விதிகளில் குறிப்பிடுதல்", "நடைமுறை விதிப் புத்தகத்தில் தெளிவாகக் குறிப்பிடப்பட்டுள்ளது", "விதிப் புத்தகத்தில் குறிப்பிடப்படவில்லை (முறைசாரா சாதனம்)"],
+          ["தோற்றம்", "இங்கிலாந்தின் பாரம்பரிய நாடாளுமன்ற முறை", "1962-ல் அறிமுகப்படுத்தப்பட்ட இந்தியக் கண்டுபிடிப்பு"],
+          ["முன்-அறிவிப்பு", "கேள்விகள் கேட்க முன்-அறிவிப்பு தேவை (10+ நாட்கள்)", "முன்-அறிவிப்பின்றி அவசர விஷயங்களை உயர்த்தலாம்"],
+          ["கேள்வி வகைகள்", "நட்சத்திரக்குறியிட்ட, குறியிடப்படாத, குறுகிய கால அவகாசக் கேள்விகள்", "அவசரப் பொது முக்கியத்துவம் வாய்ந்த விஷயங்கள் நேரடியாக உயர்வு"]
+        ]
+      },
+      {
+        "id": "tbl_adjmotion_vs_noconf_p2",
+        "title_en": "6. Adjournment Motion vs No-Confidence Motion Comparison",
+        "title_ta": "6. அவை ஒத்திவைப்புத் தீர்மானம் vs நம்பிக்கையில்லாத் தீர்மானம் ஒப்பீடு",
+        "headers_en": ["Feature", "Adjournment Motion", "No-Confidence Motion"],
+        "headers_ta": ["அம்சம்", "அவை ஒத்திவைப்புத் தீர்மானம்", "நம்பிக்கையில்லாத் தீர்மானம்"],
+        "rows_en": [
+          ["Primary Purpose", "To discuss a definite matter of urgent public importance having serious consequences", "To test the majority support and collective responsibility of Council of Ministers"],
+          ["Support Required", "Requires support of 50 MEMBERS of Lok Sabha", "Requires support of 50 MEMBERS of Lok Sabha"],
+          ["Applicable House", "Lok Sabha ONLY", "Lok Sabha ONLY"],
+          ["Duration of Debate", "Debate must last for NOT LESS THAN 2 HOURS AND 30 MINUTES", "No fixed duration; debate continues until vote"],
+          ["Element of Censure", "Involves an element of censure against government", "Direct check on government survival; causes resignation if passed"]
+        ],
+        "rows_ta": [
+          ["முதன்மை நோக்கம்", "தீவிர விளைவுகளைக் கொண்ட அவசரப் பொது முக்கியத்துவம் வாய்ந்த விஷயத்தை விவாதிக்க", "அமைச்சரவையின் பெரும்பான்மை மற்றும் கூட்டுப் பொறுப்பைச் சோதிக்க"],
+          ["தேவைப்படும் ஆதரவு", "மக்களவையின் 50 உறுப்பினர்களின் ஆதரவு தேவை", "மக்களவையின் 50 உறுப்பினர்களின் ஆதரவு தேவை"],
+          ["பொருந்தும் அவை", "மக்களவையில் மட்டுமே", "மக்களவையில் மட்டுமே"],
+          ["விவாதக் காலம்", "விவாதம் குறைந்தபட்சம் 2 மணிநேரம் 30 நிமிடங்கள் நீடிக்க வேண்டும்", "குறிப்பிட்ட கால வரம்பில்லை; வாக்கெடுப்பு வரை விவாதம் தொடரும்"],
+          ["கண்டன அம்சம்", "அரசுக்கு எதிரான கண்டன அம்சத்தைக் கொண்டுள்ளது", "அரசு நீடிப்பதற்கான நேரடிச் சோதனை; நிறைவேற்றப்பட்டால் ராஜினாமாவுக்கு வழிவகுக்கும்"]
+        ]
+      },
+      {
+        "id": "tbl_joint_sitting_applicability_p2",
+        "title_en": "7. Joint Sitting Applicable vs Not Applicable Comparison",
+        "title_ta": "7. கூட்டுத் தொடர் பொருந்தும் vs பொருந்தாத மசோதாக்கள் ஒப்பீடு",
+        "headers_en": ["Category", "Joint Sitting APPLICABLE (Art 108)", "Joint Sitting NOT APPLICABLE"],
+        "headers_ta": ["வகை", "கூட்டுத் தொடர் பொருந்தும் (விதி 108)", "கூட்டுத் தொடர் பொருந்தாது"],
+        "rows_en": [
+          ["Eligible Bills", "Ordinary Bills & Financial Bills (Art 117(1) & 117(3))", "Money Bills (Art 110) & Constitutional Amendment Bills (Art 368)"],
+          ["Reason for Exclusion", "Disagreements over non-money legislative texts", "Money Bills: LS supreme authority. Const Amend: Requires separate special majority"],
+          ["Voting Threshold", "Simple Majority of total members present & voting at joint sitting", "Const Amend: Passed by each House separately by Special Majority"],
+          ["Presiding Authority", "Lok Sabha Speaker (or Deputy Speaker / RS Deputy Chairman)", "No joint presiding officer needed"]
+        ],
+        "rows_ta": [
+          ["தகுதியான மசோதாக்கள்", "சாதாரண மசோதாக்கள் & நிதி மசோதாக்கள் (விதி 117(1) & 117(3))", "பண மசோதாக்கள் (விதி 110) & அரசியலமைப்புத் திருத்த மசோதாக்கள் (விதி 368)"],
+          ["விலக்கிற்கான காரணம்", "நிதி அல்லாத சட்ட உரை கருத்து வேறுபாடுகள்", "பண மசோதா: LS உச்ச அதிகாரம். திருத்த மசோதா: தனித்தனி சிறப்பு பெரும்பான்மை தேவை"],
+          ["வாக்கெடுப்பு வரம்பு", "கூட்டுத் தொடரில் பங்கேற்று வாக்களிக்கும் உறுப்பினர்களின் எளிய பெரும்பான்மை", "திருத்த மசோதா: ஒவ்வொரு அவையிலும் தனித்தனியாக சிறப்பு பெரும்பான்மையால் நிறைவேற்றம்"],
+          ["தலைமை அதிகாரி", "மக்களவைச் சபாநாயகர் (அல்லது LS துணை சபாநாயகர் / RS துணைத் தலைவர்)", "கூட்டுத் தலைமை அதிகாரி தேவையில்லை"]
+        ]
+      },
+      {
+        "id": "tbl_committees_pac_est_copu_p2",
+        "title_en": "8. PAC vs Estimates Committee vs COPU Comparison",
+        "title_ta": "8. PAC vs மதிப்பீட்டுக் குழு vs COPU ஒப்பீடு",
+        "headers_en": ["Feature", "Public Accounts Committee (PAC)", "Estimates Committee", "Committee on Public Undertakings (COPU)"],
+        "headers_ta": ["அம்சம்", "பொதுக் கணக்குக் குழு (PAC)", "மதிப்பீட்டுக் குழு (Estimates)", "பொதுத்துறை நிறுவனங்கள் குழு (COPU)"],
+        "rows_en": [
+          ["Established Year", "1921 (GOI Act 1919)", "1950 (John Mathai recommendation)", "1964 (Krishna Menon Committee)"],
+          ["Total Strength", "22 Members (15 LS + 7 RS)", "30 Members (ALL 30 FROM LOK SABHA ONLY)", "22 Members (15 LS + 7 RS)"],
+          ["Chairman Origin", "Conventionally from OPPOSITION party since 1967", "Appointed from RULING party", "Appointed by Speaker from Lok Sabha members"],
+          ["Primary Function", "Examines CAG audit reports on Govt accounts", "Examines budget estimates & suggests economy ('Continuous Economy Committee')", "Examines accounts and reports of PSUs and CAG PSU reports"],
+          ["Minister Membership", "Ministers CANNOT be elected as members", "Ministers CANNOT be elected as members", "Ministers CANNOT be elected as members"]
+        ],
+        "rows_ta": [
+          ["அமைக்கப்பட்ட ஆண்டு", "1921 (1919 இந்திய அரசுச் சட்டம்)", "1950 (ஜான் மத்தாய் பரிந்துரை)", "1964 (கிருஷ்ண மேனன் குழு)"],
+          ["மொத்த உறுப்பினர்கள்", "22 உறுப்பினர்கள் (15 LS + 7 RS)", "30 உறுப்பினர்கள் (அனைத்து 30 உறுப்பினர்களும் மக்களவையிலிருந்து மட்டுமே)", "22 உறுப்பினர்கள் (15 LS + 7 RS)"],
+          ["தலைவர் தோற்றம்", "1967 முதல் மரபுவழியாக எதிர்க்கட்சியிலிருந்து", "ஆளுங்கட்சியிலிருந்து நியமனம்", "மக்களவை உறுப்பினர்களிலிருந்து சபாநாயகரால் நியமனம்"],
+          ["முதன்மைப் பணி", "அரசு கணக்குகள் மீதான CAG தணிக்கை அறிக்கைகளை ஆய்வு", "பட்ஜெட் மதிப்பீடுகளை ஆய்வு செய்து சிக்கனத்தைப் பரிந்துரை ('தொடர் சிக்கனக் குழு')", "பொதுத்துறை நிறுவனங்களின் (PSUs) கணக்குகள் மற்றும் CAG அறிக்கைகளை ஆய்வு"],
+          ["அமைச்சர் உறுப்பினர் நிலை", "அமைச்சர்கள் உறுப்பினராகத் தேர்ந்தெடுக்கப்பட முடியாது", "அமைச்சர்கள் உறுப்பினராகத் தேர்ந்தெடுக்கப்பட முடியாது", "அமைச்சர்கள் உறுப்பினராகத் தேர்ந்தெடுக்கப்பட முடியாது"]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "Parliamentary Procedure & Legislative Process (Part V)",
+        "short_label": "Parliament Part 2",
+        "children": [
+          {
+            "title": "1. Presiding Officers",
+            "short_label": "Officers",
+            "children": [
+              {"title": "Lok Sabha Speaker (Art 93): Casting Vote (Art 100), Money Bill Certificate (Art 110(3)), Joint Sitting Head (Art 108)", "short_label": "Speaker"},
+              {"title": "Rajya Sabha Chairman (Art 89): Vice-President ex-officio; NEVER presides Joint Sitting", "short_label": "Chairman"}
+            ]
+          },
+          {
+            "title": "2. Parliamentary Devices",
+            "short_label": "Devices",
+            "children": [
+              {"title": "Question Hour: Starred (*) Oral vs Unstarred Written; Short Notice (<10 days)", "short_label": "Questions"},
+              {"title": "Zero Hour: Indian innovation (1962); No prior notice required", "short_label": "Zero Hour"},
+              {"title": "Motions: No-Confidence (50 LS MPs, Cabinet resigns) vs Censure vs Calling Attention (1954) vs Adjournment", "short_label": "Motions"}
+            ]
+          },
+          {
+            "title": "3. Bills & Joint Sitting",
+            "short_label": "Bills & Deadlock",
+            "children": [
+              {"title": "Money Bill (Art 110): LS only, Speaker certificate, RS 14 days, No Joint Sitting", "short_label": "Money Bill"},
+              {"title": "Joint Sitting (Art 108): Ordinary & Financial Bills deadlock; President summons; Speaker presides", "short_label": "Joint Sitting"}
+            ]
+          },
+          {
+            "title": "4. Committees",
+            "short_label": "Committees",
+            "children": [
+              {"title": "PAC (22 MPs: 15 LS + 7 RS; CAG reports, Opposition Chairman)", "short_label": "PAC"},
+              {"title": "Estimates (30 MPs ALL LOK SABHA; Economy in expenditure)", "short_label": "Estimates"},
+              {"title": "COPU (22 MPs: 15 LS + 7 RS; PSU accounts) & DRSCs (24 committees, 31 MPs each)", "short_label": "COPU/DRSCs"}
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": "1. Joint Sitting Presiding Officer Trap (கூட்டுத் தொடர் தலைமைத் தாங்கும் அதிகாரிப் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Believing the Vice-President / Chairman of Rajya Sabha presides over a Joint Sitting if Speaker is absent.",
+            "FACT: The Chairman of Rajya Sabha NEVER presides over a Joint Sitting because he is not an MP! If Speaker is absent, Deputy Speaker of LS presides; if he is also absent, Deputy Chairman of Rajya Sabha presides."
+          ],
+          "ta": [
+            "பொறி: சபாநாயகர் இல்லாத போது மாநிலங்களவைத் தலைவர் கூட்டுத் தொடருக்குத் தலைமை தாங்குவார் என நினைப்பது.",
+            "உண்மை: மாநிலங்களவைத் தலைவர் எந்த அவையிலும் உறுப்பினரல்ல என்பதால் ஒருபோதும் கூட்டுத் தொடருக்குத் தலைமை தாங்கமாட்டார்! சபாநாயகர் இல்லாத போது LS துணை சபாநாயகரும், அவரும் இல்லாத போது RS துணைத் தலைவரும் தலைமை தாங்குவர்."
+          ]
+        }
+      },
+      {
+        "title": "2. Joint Sitting Bill Exclusion Trap (கூட்டுத் தொடர் மசோதா விலக்குப் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Thinking a Joint Sitting can be called for any Bill in case of deadlock.",
+            "FACT: A Joint Sitting under Article 108 CANNOT BE CALLED for Money Bills (Art 110) or Constitutional Amendment Bills (Art 368)! It applies ONLY to Ordinary Bills and Financial Bills."
+          ],
+          "ta": [
+            "பொறி: முட்டுக் கட்டை ஏற்படும் எந்தவொரு மசோதாவிற்கும் கூட்டுத் தொடரைக் கூட்டலாம் என நினைப்பது.",
+            "உண்மை: பண மசோதாக்கள் (விதி 110) மற்றும் அரசியலமைப்புத் திருத்த மசோதாக்களுக்கு (விதி 368) கூட்டுத் தொடரைக் கூட்ட முடியாது! சாதாரண மசோதாக்கள் மற்றும் நிதி மசோதாக்களுக்கு மட்டுமே கூட்ட முடியும்."
+          ]
+        }
+      },
+      {
+        "title": "3. Estimates Committee Composition Trap (மதிப்பீட்டுக் குழு உறுப்பினர் அமைப்புக் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Assuming the Estimates Committee includes members from both Lok Sabha and Rajya Sabha.",
+            "FACT: All 30 members of the Estimates Committee come EXCLUSIVELY FROM LOK SABHA! Rajya Sabha has zero representation in the Estimates Committee."
+          ],
+          "ta": [
+            "பொறி: மதிப்பீட்டுக் குழுவில் மக்களவை மற்றும் மாநிலங்களவை இரண்டிலிருந்தும் உறுப்பினர்கள் இருப்பார்கள் என நினைப்பது.",
+            "உண்மை: மதிப்பீட்டுக் குழுவின் 30 உறுப்பினர்களும் மக்களவையிலிருந்து மட்டுமே தேர்ந்தெடுக்கப்படுகின்றனர்! மாநிலங்களவைக்கு இதில் பிரதிநிதித்துவம் இல்லை."
+          ]
+        }
+      },
+      {
+        "title": "4. Money Bill Reconsideration Trap (பண மசோதா மறுபரிசீலனைப் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Believing the President can return a Money Bill to Lok Sabha for reconsideration.",
+            "FACT: Under Article 111, the President can give assent or withhold assent to a Money Bill, BUT CANNOT return a Money Bill for reconsideration!"
+          ],
+          "ta": [
+            "பொறி: பண மசோதாவைக் குடியரசுத் தலைவர் மக்களவைக்கு மறுபரிசீலனைக்குத் திருப்ப முடியும் என நினைப்பது.",
+            "உண்மை: உறுப்பு 111-ன் படி குடியரசுத் தலைவர் பண மசோதாவிற்கு ஒப்புதல் அளிக்கலாம் அல்லது நிறுத்தலாம், ஆனால் மறுபரிசீலனைக்குத் திருப்ப முடியாது!"
+          ]
+        }
+      },
+      {
+        "title": "5. PAC Chairman Opposition Convention Trap (PAC தலைவர் மரபுப் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Thinking the Chairman of PAC is appointed from the ruling party.",
+            "FACT: Since 1967, by parliamentary convention, the Chairman of the Public Accounts Committee (PAC) is ALWAYS appointed from the OPPOSITION party in Lok Sabha."
+          ],
+          "ta": [
+            "பொறி: PAC தலைவர் ஆளுங்கட்சியிலிருந்து நியமிக்கப்படுகிறார் என நினைப்பது.",
+            "உண்மை: 1967 முதல் நாடாளுமன்ற மரபுப்படி பொதுக் கணக்குக் குழுவின் (PAC) தலைவர் எப்போதும் மக்களவை எதிர்க்கட்சியிலிருந்தே நியமிக்கப்படுகிறார்."
+          ]
+        }
+      }
+    ],
+    "quick_revision": {
+      "en": [
+        "Presiding Officers: LS Speaker (Art 93 - Casting vote Art 100, Money Bill cert Art 110(3), Joint Sitting head Art 108). RS Chairman (Art 89 - VP ex-officio, NEVER presides Joint Sitting).",
+        "Parliamentary Devices: Question Hour (Starred * oral vs Unstarred written), Zero Hour (Indian innovation 1962, no notice), No-Confidence Motion (50 LS MPs, Cabinet resigns), Calling Attention (1954).",
+        "Money Bill: Article 110 (LS only, Speaker cert final, RS 14 days limit, no Joint Sitting, President cannot return Art 111).",
+        "Joint Sitting: Article 108 (Summoned by President for Ordinary/Financial Bills deadlock; Speaker presides; Excludes Money & Const Amend Bills).",
+        "Committees: PAC (22 MPs: 15 LS + 7 RS, CAG reports, Opposition Chairman), Estimates Committee (30 MPs ALL LOK SABHA ONLY), COPU (22 MPs)."
+      ],
+      "ta": [
+        "அவைத் தலைவர்கள்: LS சபாநாயகர் (விதி 93 - முடிவு வாக்கு விதி 100, பண மசோதா சான்றிதழ் விதி 110(3), கூட்டுத் தொடர் தலைமை விதி 108). RS தலைவர் (விதி 89 - துணைக் குடியரசுத் தலைவர், கூட்டுத் தொடருக்குத் தலைமை தாங்கமாட்டார்).",
+        "நாடாளுமன்ற நடைமுறைகள்: கேள்வி நேரம் (நட்சத்திரக் குறி * வாய்மொழி vs குறியிடப்படாத எழுத்துப்பூர்வ), பூஜ்ஜிய நேரம் (1962 இந்தியக் கண்டுபிடிப்பு), நம்பிக்கையில்லாத் தீர்மானம் (50 LS எம்பிக்கள், அமைச்சரவை விலகல்), கவன ஈர்ப்பு (1954).",
+        "பண மசோதா: உறுப்பு 110 (LS மட்டுமே, சபாநாயகர் சான்றிதழ் இறுதியானது, RS 14 நாட்கள் வரம்பு, கூட்டுத் தொடர் இல்லை, குடியரசுத் தலைவர் திருப்ப முடியாது விதி 111).",
+        "கூட்டுத் தொடர்: உறுப்பு 108 (சாதாரண/நிதி மசோதா முட்டுக் கட்டைக்கு குடியரசுத் தலைவர் கூட்டுவார்; சபாநாயகர் தலைமை; பண & திருத்த மசோதாக்களுக்கு இல்லை).",
+        "குழுக்கள்: PAC (22 எம்பிக்கள்: 15 LS + 7 RS, CAG அறிக்கைகள், எதிர்க்கட்சித் தலைவர்), மதிப்பீட்டுக் குழு (30 எம்பிக்கள் அனைவரும் மக்களவை மட்டுமே), COPU (22 எம்பிக்கள்)."
+      ]
+    },
+    "must_remember": {
+      "en": [
+        "MUST REMEMBER: Speaker's certification of Money Bill (Art 110(3)) is FINAL.",
+        "MUST REMEMBER: Rajya Sabha has ONLY 14 DAYS to consider a Money Bill (Art 109).",
+        "MUST REMEMBER: Joint Sitting (Art 108) CANNOT be called for Money Bills or Constitutional Amendment Bills.",
+        "MUST REMEMBER: RS Chairman NEVER presides over a Joint Sitting of Parliament.",
+        "MUST REMEMBER: Estimates Committee has 30 members — ALL FROM LOK SABHA ONLY."
+      ],
+      "ta": [
+        "நினைவில் கொள்க: பண மசோதா குறித்த சபாநாயகரின் சான்றளிப்பு (விதி 110(3)) இறுதியானது.",
+        "நினைவில் கொள்க: பண மசோதாவைப் பரிசீலிக்க மாநிலங்களவைக்கு 14 நாட்கள் மட்டுமே அவகாசம் உண்டு (விதி 109).",
+        "நினைவில் கொள்க: பண மசோதாக்கள் அல்லது அரசியலமைப்புத் திருத்த மசோதாக்களுக்குக் கூட்டுத் தொடரைக் கூட்ட முடியாது (விதி 108).",
+        "நினைவில் கொள்க: மாநிலங்களவைத் தலைவர் நாடாளுமன்றக் கூட்டுத் தொடருக்கு ஒருபோதும் தலைமை தாங்கமாட்டார்.",
+        "நினைவில் கொள்க: மதிப்பீட்டுக் குழுவின் 30 உறுப்பினர்களும் மக்களவையிலிருந்து மட்டுமே தேர்ந்தெடுக்கப்படுகின்றனர்."
+      ]
+    }
+  }
+}
+
+target_file = "data/notes/polity/parliament_part_2.json"
+os.makedirs("data/notes/polity", exist_ok=True)
+
+with open(target_file, "w", encoding="utf-8") as f:
+  json.dump(part2_data, f, ensure_ascii=False, indent=2)
+
+print(f"✅ Parliament Part 2 successfully updated with explicit Article tags and saved to: {target_file}")

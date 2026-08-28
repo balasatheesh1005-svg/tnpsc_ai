@@ -1,0 +1,997 @@
+{
+  "meta": {
+    "topic_id": "polity_high_court_part_1",
+    "repository_id": "polity_high_court",
+    "display_title": "High Courts in India – Part 1",
+    "part": 1,
+    "total_parts": 3,
+    "subject": "polity",
+    "chapter": "High Courts in India",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "topic_id": "polity_high_court_part_1",
+    "repository_id": "polity_high_court",
+    "display_title": "High Courts in India – Part 1",
+    "part": 1,
+    "total_parts": 3,
+    "subject": "polity",
+    "chapter": "High Courts in India",
+    "language": "English + Tamil"
+  },
+  "keywords": [
+    "High Courts in India",
+    "Part VI Chapter V",
+    "Articles 214 to 231",
+    "Article 214",
+    "Article 215 Court of Record",
+    "Article 216 Composition",
+    "Article 217 Appointment",
+    "Article 218 SC Rules",
+    "Article 219 Oath",
+    "Article 220 Practice Restriction",
+    "Article 221 Salaries",
+    "Article 222 Transfer",
+    "Article 223 Acting CJ",
+    "Article 224 Additional Judges",
+    "Article 224A Retired Judges",
+    "Retirement Age 62",
+    "Governor Role in Oath",
+    "President Role in Appointment",
+    "Judicial Independence",
+    "TNPSC Master Polity Notes"
+  ],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [
+        "Master the Constitutional Basis of High Courts under Part VI Chapter V (Articles 214 to 231) as the apex judicial institution at the State level.",
+        "Understand Article 214 (High Court for each State), Article 215 (Court of Record & Contempt power), and Article 216 (Composition determined by President).",
+        "Master Article 217 Appointment framework: President appoints by warrant after consultation with CJI, Governor of State, and HC Chief Justice. Distinguish Constitutional Text vs Collegium practice.",
+        "Analyze Qualifications (Art 217(2): Citizen + 10 yrs Judicial Office OR 10 yrs HC Advocate; NO Distinguished Jurist provision for HC!) and Tenure (retires at age 62 via 15th Amend 1963).",
+        "Master Removal Procedure (Art 217(1)(b) & Art 218): Removed ONLY by President after Parliamentary Special Majority Address on grounds of Proved Misbehaviour or Incapacity.",
+        "Understand Transfer of Judges (Article 222): President transfers after consultation with CJI.",
+        "Understand Oath before Governor (Article 219) and Special Judges: Acting CJ (Art 223), Additional & Acting Judges (Art 224), and Retired Judges (Art 224A).",
+        "Master Constitutional Safeguards for High Court Independence: Security of tenure, fixed salaries (Art 221), expenses charged on State Consolidated Fund, conduct discussion ban (Art 211), and practice restrictions (Art 220)."
+      ],
+      "ta": [
+        "பகுதி VI அத்தியாயம் V (உறுப்புகள் 214 முதல் 231) கீழ் மாநில அளவில் உச்ச நீதித்துறை அமைப்பாக உயர் நீதிமன்றங்களின் அரசியலமைப்பு அடிப்படையை உணர்தல்.",
+        "உறுப்பு 214 (ஒவ்வொரு மாநிலத்திற்கும் உயர் நீதிமன்றம்), உறுப்பு 215 (பதிவு நீதிமன்றம் & அவமதிப்பு அதிகாரம்) மற்றும் உறுப்பு 216 (குடியரசுத் தலைவரால் நிர்ணயிக்கப்படும் அமைப்பு) ஆகியவற்றைப் புரிந்துகொள்ளுதல்.",
+        "உறுப்பு 217 நியமன முறை: CJI, மாநில ஆளுநர், HC தலைமை நீதிபதி ஆலோசனையுடன் குடியரசுத் தலைவர் ஆணை மூலம் நியமிக்கிறார். அரசியலமைப்பு உரை vs கொலீஜியம் நடைமுறை வேறுபாடு.",
+        "தகுதிகள் (விதி 217(2): குடிமகன் + 10 ஆண்டுகள் நீதித்துறை பதவி அல்லது 10 ஆண்டுகள் HC வழக்கறிஞர்; HC-க்கு சிறப்புமிக்க சட்ட நிபுணர் விதி இல்லை!) மற்றும் பதவிக்காலம் (1963 15-வது திருத்தம் மூலம் 62 வயதில் ஓய்வு).",
+        "நீக்க நடைமுறையில் தேர்ச்சி பெறுதல் (விதி 217(1)(b) & விதி 218): நிரூபிக்கப்பட்ட தவறான நடத்தை அல்லது திறமையின்மை அடிப்படையில் நாடாளுமன்றச் சிறப்பு பெரும்பான்மைத் தீர்மானத்திற்குப் பின் குடியரசுத் தலைவர் மட்டுமே நீக்க முடியும்.",
+        "நீதிபதிகள் மாற்றம் (உறுப்பு 222): CJI ஆலோசனையுடன் குடியரசுத் தலைவர் ஒரு HC-லிருந்து மற்றொரு HC-க்கு மாற்றுகிறார்.",
+        "ஆளுநர் முன்னிலையில் உறுதிமொழி (உறுப்பு 219) மற்றும் சிறப்பு நீதிபதிகள்: தற்காலிக HC தலைமை நீதிபதி (விதி 223), கூடுதல் & தற்காலிக நீதிபதிகள் (விதி 224) மற்றும் ஓய்வு பெற்ற நீதிபதிகள் (விதி 224A).",
+        "உயர் நீதிமன்ற சுதந்திரத்திற்கான அரசியலமைப்புப் பாதுகாப்புகள்: பதவிப் பாதுகாப்பு, நிலையான சம்பளங்கள் (விதி 221), மாநிலத் தொகுப்பு நிதியில் சுமத்தப்பட்ட செலவுகள், சட்டமன்ற விவாதத் தடை (விதி 211) மற்றும் பயிற்சித் தடை (விதி 220)."
+      ]
+    }
+  },
+  "subject": "polity",
+  "topic": "High Courts in India",
+  "language": "English + Tamil",
+  "ui_type": "standard_notes",
+  "sections": [
+    {
+      "id": "sec_hc_constitutional_basis",
+      "title_en": "1. Constitutional Basis & Status of High Courts (Articles 214 & 215)",
+      "title_ta": "1. உயர் நீதிமன்றங்களின் அரசியலமைப்பு அடிப்படை & நிலை (உறுப்புகள் 214 & 215)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_article_216_composition",
+      "title_en": "2. Article 216 — Composition & Strength of High Courts",
+      "title_ta": "2. உறுப்பு 216 — உயர் நீதிமன்றங்களின் அமைப்பு & நீதிபதிகள் எண்ணிக்கை",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_appointment_collegium_hc",
+      "title_en": "3. Article 217 — Appointment Framework & Collegium Consultation",
+      "title_ta": "3. உறுப்பு 217 — நியமன முறை & கொலீஜியம் ஆலோசனை",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_qualifications_tenure_oath_hc",
+      "title_en": "4. Qualifications, Tenure, Retirement & Oath (Articles 217(2), 219, 221)",
+      "title_ta": "4. தகுதிகள், பதவிக்காலம், ஓய்வு & உறுதிமொழி (உறுப்புகள் 217(2), 219, 221)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_removal_transfer_hc",
+      "title_en": "5. Removal Procedure & Transfer of Judges (Articles 218 & 222)",
+      "title_ta": "5. நீதிபதிகள் நீக்க நடைமுறை & இடமாற்றம் (உறுப்புகள் 218 & 222)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_special_judges_hc",
+      "title_en": "6. Acting CJ, Additional & Retired Judges (Articles 223, 224 & 224A)",
+      "title_ta": "6. தற்காலிக தலைமை நீதிபதி, கூடுதல் & ஓய்வு பெற்ற நீதிபதிகள் (உறுப்புகள் 223, 224 & 224A)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_hc_independence",
+      "title_en": "7. Safeguards for High Court Independence (Articles 211, 215, 220 & 229)",
+      "title_ta": "7. உயர் நீதிமன்ற சுதந்திரத்திற்கான பாதுகாப்புகள் (உறுப்புகள் 211, 215, 220 & 229)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "comparison_tables",
+      "title_en": "8. Mandatory Comparison Tables (6 Tables)",
+      "title_ta": "8. கட்டாய ஒப்பீட்டு அட்டவணைகள் (6 அட்டவணைகள்)",
+      "type": "comparison"
+    },
+    {
+      "id": "mind_map",
+      "title_en": "9. Mind Map & TNPSC Trap Points",
+      "title_ta": "9. மன வரைபடம் & டிஎன்பிஎஸ்சி பொறிப் புள்ளிகள்",
+      "type": "mind_map"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "The High Court is the apex judicial institution at the State level established under Part VI Chapter V (Articles 214 to 231) of the Constitution. It functions as the principal civil/criminal court of original and appellate jurisdiction in a State, a Court of Record (Art 215), and guardian of Fundamental Rights and legal rights under Article 226.",
+      "ta": "உயர் நீதிமன்றம் என்பது அரசியலமைப்பின் பகுதி V அத்தியாயம் V (உறுப்புகள் 214 முதல் 231 வரை) கீழ் மாநில அளவில் அமைக்கப்பட்ட உச்ச நீதித்துறை அமைப்பாகும். இது மாநிலத்தின் முதன்மை மூல மற்றும் மேல்முறையீட்டு நீதிமன்றமாகவும், பதிவு நீதிமன்றமாகவும் (விதி 215) மற்றும் உறுப்பு 226-ன் கீழ் உரிமைகளின் பாதுகாவலனாகவும் செயல்படுகிறது."
+    },
+    "introduction": {
+      "en": "The High Court institution originated in India in 1862 when High Courts were set up at Calcutta, Bombay, and Madras under the Indian High Courts Act 1861. Article 214 mandates a High Court for each State, Article 217 governs appointment by the President, Article 219 provides for oath before the Governor, and Article 222 governs transfer of judges.",
+      "ta": "உயர் நீதிமன்ற அமைப்பு இந்தியாவில் 1861 இந்திய உயர் நீதிமன்றங்கள் சட்டத்தின் கீழ் 1862-ல் கல்கத்தா, பாம்பே, மதராஸ் ஆகிய இடங்களில் முதன்முதலில் அமைக்கப்பட்ட போது தோன்றியது. உறுப்பு 214 ஒவ்வொரு மாநிலத்திற்கும் உயர் நீதிமன்றம் அமைப்பதையும், உறுப்பு 217 குடியரசுத் தலைவரால் நியமனத்தையும், உறுப்பு 219 ஆளுநர் முன் உறுதிமொழியையும், உறுப்பு 222 நீதிபதிகள் இடமாற்றத்தையும் ஒழுங்குபடுத்துகிறது."
+    },
+    "sec_hc_constitutional_basis": [
+      {
+        "title_en": "Part VI Chapter V — High Courts for States (Articles 214 & 215)",
+        "title_ta": "பகுதி VI அத்தியாயம் V — மாநில உயர் நீதிமன்றங்கள் (உறுப்புகள் 214 & 215)",
+        "points": {
+          "en": [
+            "Historical Origins (1862): First three High Courts established in 1862 at Calcutta, Bombay, and Madras under Indian High Courts Act 1861. Fourth High Court established at Allahabad in 1866.",
+            "Article 214 Mandate: Declares that 'There shall be a High Court for each State'.",
+            "Common High Court Provision (Article 231): 7th Constitutional Amendment Act 1956 authorized Parliament to establish a COMMON HIGH COURT for two or more States or States and a Union Territory.",
+            "Court of Record (Article 215): Every High Court is a Court of Record with perpetual memory and power to punish for contempt of itself."
+          ],
+          "ta": [
+            "வரலாற்றுத் தோற்றம் (1862): 1861 இந்திய உயர் நீதிமன்றங்கள் சட்டத்தின் கீழ் கல்கத்தா, பாம்பே, மதராஸ் ஆகிய 3 இடங்களில் 1862-ல் முதல் உயர் நீதிமன்றங்கள் அமைக்கப்பட்டன. 4-வது உயர் நீதிமன்றம் 1866-ல் அலகாபாத்தில் அமைக்கப்பட்டது.",
+            "உறுப்பு 214 கட்டளை: 'ஒவ்வொரு மாநிலத்திற்கும் ஒரு உயர் நீதிமன்றம் இருக்க வேண்டும்' என அறிவிக்கிறது.",
+            "பொது உயர் நீதிமன்ற விதி (உறுப்பு 231): 1956 7-வது அரசியலமைப்புச் சட்டத்திருத்தம் இரண்டு அல்லது அதற்கு மேற்பட்ட மாநிலங்கள் / யூனியன் பிரதேசங்களுக்கு ஒரு பொதுவான உயர் நீதிமன்றத்தை அமைக்க நாடாளுமன்றத்திற்கு அதிகாரமளித்தது.",
+            "பதிவு நீதிமன்றம் (உறுப்பு 215): ஒவ்வொரு உயர் நீதிமன்றமும் நிரந்தர நினைவகம் மற்றும் தன் அவமதிப்பிற்குத் தண்டிக்கும் அதிகாரம் கொண்ட பதிவு நீதிமன்றமாகும்."
+          ]
+        }
+      }
+    ],
+    "sec_article_216_composition": [
+      {
+        "title_en": "Article 216 — Composition & Strength of High Courts",
+        "title_ta": "உறுப்பு 216 — உயர் நீதிமன்றங்களின் அமைப்பு & நீதிபதிகள் எண்ணிக்கை",
+        "points": {
+          "en": [
+            "Composition (Article 216): Every High Court consists of a CHIEF JUSTICE and such other Judges as the PRESIDENT OF INDIA may from time to time deem necessary to appoint.",
+            "No Constitutional Limit: The Constitution DOES NOT specify a fixed maximum strength for High Courts. It is left to the discretion of the President of India based on workload and pending cases.",
+            "Difference from Supreme Court: Supreme Court strength is determined by PARLIAMENT BY LAW (Art 124(1)), whereas High Court strength is determined by the PRESIDENT OF INDIA (Art 216)."
+          ],
+          "ta": [
+            "அமைப்பு (உறுப்பு 216): ஒவ்வொரு உயர் நீதிமன்றமும் ஒரு தலைமை நீதிபதி மற்றும் குடியரசுத் தலைவர் அவ்வப்போது அவசியம் எனக் கருதும் இதர நீதிபதிகளைக் கொண்டிருக்கும்.",
+            "அரசியலமைப்பு வரம்பு இல்லை: உயர் நீதிமன்றங்களுக்கு அரசியலமைப்பு எந்தவொரு குறிப்பிட்ட அதிகபட்ச எண்ணிக்கையையும் நிர்ணயிக்கவில்லை. பணிச்சுமையின் அடிப்படையில் குடியரசுத் தலைவரின் விருப்பத்திற்கே விட்டுவிடப்பட்டுள்ளது.",
+            "உச்ச நீதிமன்றத்திலிருந்து வேறுபாடு: உச்ச நீதிமன்ற நீதிபதிகள் எண்ணிக்கை நாடாளுமன்றச் சட்டத்தால் தீர்மானிக்கப்படுகிறது (விதி 124(1)), ஆனால் உயர் நீதிமன்ற நீதிபதிகள் எண்ணிக்கை இந்தியக் குடியரசுத் தலைவரால் தீர்மானிக்கப்படுகிறது (விதி 216)."
+          ]
+        }
+      }
+    ],
+    "sec_appointment_collegium_hc": [
+      {
+        "title_en": "Article 217 — Appointment Framework & Collegium Consultation",
+        "title_ta": "உறுப்பு 217 — நியமன முறை & கொலீஜியம் ஆலோசனை",
+        "points": {
+          "en": [
+            "Appointing Authority (Article 217(1)): Every Judge of a High Court is appointed by the PRESIDENT OF INDIA by warrant under his hand and seal.",
+            "Triple Consultation Framework under Article 217(1):",
+            "  1. Consultation with Chief Justice of India (CJI);",
+            "  2. Consultation with Governor of the State concerned;",
+            "  3. Consultation with Chief Justice of the High Court concerned (for appointment of judges other than the Chief Justice).",
+            "Collegium Practice for High Court Appointments (Third Judges Case 1998):",
+            "  • For HC Judge selection: CJI consults a Collegium of TWO SENIOR-MOST JUDGES of the Supreme Court.",
+            "  • High Court Collegium: HC Chief Justice consults two senior-most colleagues before recommending names to State Govt/Governor and CJI.",
+            "CRITICAL TRAP: The Governor is ONLY CONSULTED by the President for High Court judge appointments. The Governor DOES NOT appoint High Court judges!"
+          ],
+          "ta": [
+            "நியமிக்கும் அதிகாரி (உறுப்பு 217(1)): உயர் நீதிமன்றத்தின் ஒவ்வொரு நீதிபதியும் இந்தியக் குடியரசுத் தலைவரால் தனது கையொப்பம் மற்றும் முத்திரையுடன் கூடிய ஆணை மூலம் நியமிக்கப்படுகிறார்.",
+            "மூன்று நபர் ஆலோசனை முறை (உறுப்பு 217(1)):",
+            "  1. இந்தியத் தலைமை நீதிபதி (CJI) ஆலோசனை;",
+            "  2. சம்மந்தப்பட்ட மாநில ஆளுநர் ஆலோசனை;",
+            "  3. சம்மந்தப்பட்ட உயர் நீதிமன்றத் தலைமை நீதிபதி ஆலோசனை (தலைமை நீதிபதி அல்லாத பிற நீதிபதிகள் நியமனத்திற்கு).",
+            "உயர் நீதிமன்ற நியமனங்களுக்கான கொலீஜியம் நடைமுறை (3-வது வழக்கு 1998):",
+            "  • HC நீதிபதிகள் தேர்வுக்கு: CJI உச்ச நீதிமன்றத்தின் 2 மூத்த நீதிபதிகள் கொண்ட கொலீஜியத்தைக் கலந்தாலோசிக்கிறார்.",
+            "  • உயர் நீதிமன்ற கொலீஜியம்: HC தலைமை நீதிபதி தனது 2 மூத்த நீதிபதிகளைக் கலந்தாலோசித்து பெயர்களை பரிந்துரைக்கிறார்.",
+            "முக்கியப் பொறி: உயர் நீதிமன்ற நீதிபதிகள் நியமனத்திற்கு ஆளுநர் குடியரசுத் தலைவரால் மட்டுமே கலந்தாலோசிக்கப்படுகிறார். ஆளுநர் உயர் நீதிமன்ற நீதிபதிகளை நியமிப்பதில்லை!"
+          ]
+        }
+      }
+    ],
+    "sec_qualifications_tenure_oath_hc": [
+      {
+        "title_en": "Qualifications, Tenure, Retirement & Oath (Articles 217(2), 219, 221)",
+        "title_ta": "தகுதிகள், பதவிக்காலம், ஓய்வு & உறுதிமொழி (உறுப்புகள் 217(2), 219, 221)",
+        "points": {
+          "en": [
+            "Qualifications of High Court Judge (Article 217(2)): A person MUST satisfy the following criteria:",
+            "  1. Must be a CITIZEN OF INDIA; AND",
+            "  2. (a) Has for AT LEAST 10 YEARS held a JUDICIAL OFFICE in the territory of India; OR",
+            "  3. (b) Has for AT LEAST 10 YEARS been an ADVOCATE of a High Court (or two or more such Courts in succession).",
+            "CRITICAL TRAP ON QUALIFICATIONS: Unlike the Supreme Court, there is NO PROVISION for appointing a 'Distinguished Jurist' as a High Court judge under Article 217(2)!",
+            "Retirement Age: Retires upon attaining the AGE OF 62 YEARS. (Originally 60 years in 1950; raised to 62 years by the 15th Constitutional Amendment Act 1963).",
+            "Resignation: Resigns by writing under his hand addressed to the PRESIDENT OF INDIA.",
+            "Oath or Affirmation (Article 219): Made and subscribed before the GOVERNOR OF THE STATE (or person appointed by him). Form in THIRD SCHEDULE.",
+            "Salaries and Allowances (Article 221): Determined by Parliament by law. Charged on the Consolidated Fund of the STATE (Pensions charged on Consolidated Fund of INDIA!)."
+          ],
+          "ta": [
+            "உயர் நீதிமன்ற நீதிபதி தகுதிகள் (உறுப்பு 217(2)): ஒரு நபர் பின்வரும் நிபந்தனைகளை பூர்த்தி செய்ய வேண்டும்:",
+            "  1. இந்தியக் குடிமகனாக இருக்க வேண்டும்; மற்றும்",
+            "  2. (a) இந்தியாவில் குறைந்தபட்சம் 10 ஆண்டுகள் நீதித்துறை பதவியை (Judicial Office) வகித்திருக்க வேண்டும்; அல்லது",
+            "  3. (b) குறைந்தபட்சம் 10 ஆண்டுகள் உயர் நீதிமன்ற வழக்கறிஞராகப் பணியாற்றியிருக்க வேண்டும்.",
+            "தகுதிகள் குறித்த முக்கியப் பொறி: உச்ச நீதிமன்றம் போலல்லாமல், உயர் நீதிமன்ற நீதிபதியாக ஒரு 'சிறப்புமிக்க சட்ட நிபுணரை (Distinguished Jurist)' நியமிக்க உறுப்பு 217(2)-ல் வழியில்லை!",
+            "ஓய்வு பெறும் வயது: 62 வயதை அடையும் போது ஓய்வு பெறுகிறார். (1950-ல் 60 வயது; 1963-ஆம் ஆண்டின் 15-வது அரசியலமைப்புச் சட்டத்திருத்தம் மூலம் 62 ஆக உயர்த்தப்பட்டது).",
+            "ராஜினாமா: இந்தியக் குடியரசுத் தலைவருக்குக் கடிதம் எழுதி பதவி விலகல்.",
+            "உறுதிமொழி (உறுப்பு 219): மாநில ஆளுநர் (அல்லது அவரால் நியமிக்கப்பட்ட நபர்) முன்னிலையில் எடுக்கப்படுகிறது. 3-வது அட்டவணையில் உள்ளது.",
+            "சம்பளங்கள் & படிகள் (உறுப்பு 221): நாடாளுமன்றச் சட்டத்தால் தீர்மானிக்கப்பட்டு மாநிலத் தொகுப்பு நிதியில் சுமத்தப்படும் (ஓய்வூதியம் இந்தியத் தொகுப்பு நிதியில் சுமத்தப்படும்!)."
+          ]
+        }
+      }
+    ],
+    "sec_removal_transfer_hc": [
+      {
+        "title_en": "Removal Procedure & Transfer of Judges (Articles 218 & 222)",
+        "title_ta": "நீதிபதிகள் நீக்க நடைமுறை & இடமாற்றம் (உறுப்புகள் 218 & 222)",
+        "points": {
+          "en": [
+            "Removal Procedure (Article 217(1)(b) & Article 218): A High Court judge can be removed from office ONLY BY AN ORDER OF THE PRESIDENT after an Address by each House of Parliament supported by a SPECIAL MAJORITY in the same session.",
+            "Same Procedure as SC Judge: Article 218 applies the provisions of Article 124(4) & (5) and Judges Inquiry Act 1968 to High Court judges. Grounds: 1. Proved Misbehaviour; 2. Incapacity.",
+            "Transfer of High Court Judges (Article 222):",
+            "  • Transfer Authority: The PRESIDENT OF INDIA may transfer a judge from one High Court to any other High Court after CONSULTATION WITH THE CHIEF JUSTICE OF INDIA.",
+            "  • Collegium Requirement for Transfer: CJI consults a Collegium of 4 senior-most SC judges + CJs of both High Courts (transferor & transferee).",
+            "  • Judicial Review of Transfer: K. Ashok Reddy case (1994) & 2nd Judges Case: Transfer of judges is subject to Judicial Review ONLY to prevent arbitrary transfers."
+          ],
+          "ta": [
+            "நீக்க நடைமுறை (உறுப்பு 217(1)(b) & உறுப்பு 218): நாடாளுமன்றச் சிறப்பு பெரும்பான்மைத் தீர்மானத்திற்குப் பின் குடியரசுத் தலைவர் ஆணை மூலம் மட்டுமே உயர் நீதிமன்ற நீதிபதி நீக்கப்பட முடியும்.",
+            "SC நீதிபதி போன்றே நடைமுறை: உறுப்பு 218 SC நீதிபதிகளுக்கான உறுப்பு 124(4) & (5) மற்றும் 1968 நீதிபதிகள் விசாரணைச் சட்ட விதிகளை HC நீதிபதிகளுக்கும் பொருந்தச் செய்கிறது. அடிப்படைகள்: 1. நிரூபிக்கப்பட்ட தவறான நடத்தை; 2. திறமையின்மை.",
+            "நீதிபதிகள் இடமாற்றம் (உறுப்பு 222):",
+            "  • இடமாற்ற அதிகாரி: இந்தியத் தலைமை நீதிபதி (CJI) ஆலோசனையுடன் குடியரசுத் தலைவர் ஒரு உயர் நீதிமன்ற நீதிபதியை மற்றொரு உயர் நீதிமன்றத்திற்கு இடமாற்றம் செய்கிறார்.",
+            "  • இடமாற்றத்திற்கான கொலீஜியம் தேவை: CJI உச்ச நீதிமன்றத்தின் 4 மூத்த நீதிபதிகள் + இரு உயர் நீதிமன்றத் தலைமை நீதிபதிகளைக் கலந்தாலோசிக்கிறார்.",
+            "  • இடமாற்றம் மீதான நீதித்துறை ஆய்வு: கே. அசோக் ரெட்டி வழக்கு (1994): தன்னிச்சையான இடமாற்றங்களைத் தடுக்க மட்டுமே நீதித்துறை ஆய்வுக்கு உட்பட்டது."
+          ]
+        }
+      }
+    ],
+    "sec_special_judges_hc": [
+      {
+        "title_en": "Acting CJ, Additional & Retired Judges (Articles 223, 224 & 224A)",
+        "title_ta": "தற்காலிக தலைமை நீதிபதி, கூடுதல் & ஓய்வு பெற்ற நீதிபதிகள் (உறுப்புகள் 223, 224 & 224A)",
+        "points": {
+          "en": [
+            "Acting Chief Justice of High Court (Article 223): Appointed by the PRESIDENT OF INDIA when the office of HC CJ is vacant, absent, or unable to perform duties. Appointed from among HC judges.",
+            "Additional and Acting Judges (Article 224):",
+            "  • Additional Judges (Art 224(1)): Appointed by the PRESIDENT for a TEMPORARY PERIOD NOT EXCEEDING 2 YEARS to clear temporary increase in business or arrears of work in a High Court.",
+            "  • Acting Judges (Art 224(2)): Appointed by the PRESIDENT when a permanent HC judge (other than CJ) is absent or unable to perform duties.",
+            "  • Upper Age Limit: No person appointed as Additional or Acting Judge can hold office after attaining the AGE OF 62 YEARS.",
+            "Retired Judges at High Court (Article 224A): Added by 15th Amend 1963. Chief Justice of a High Court may, with prior consent of the PRESIDENT and person concerned, request a retired HC judge to sit and act as a judge of that High Court."
+          ],
+          "ta": [
+            "தற்காலிக உயர் நீதிமன்றத் தலைமை நீதிபதி (உறுப்பு 223): HC தலைமை நீதிபதி பதவி காலியாக உள்ள போது குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்.",
+            "கூடுதல் & தற்காலிக நீதிபதிகள் (உறுப்பு 224):",
+            "  • கூடுதல் நீதிபதிகள் (விதி 224(1)): தற்காலிக பணிச்சுமை அல்லது நிலுவைகளை முடிக்க அதிகபட்சம் 2 ஆண்டுகளுக்கு மிகாமல் குடியரசுத் தலைவரால் நியமிக்கப்படுகின்றனர்.",
+            "  • தற்காலிக நீதிபதிகள் (விதி 224(2)): நிலையான நீதிபதி வராத போது குடியரசுத் தலைவரால் நியமிக்கப்படுகின்றனர்.",
+            "  • அதிகபட்ச வயது வரம்பு: 62 வயதை அடைந்த பின் கூடுதல் அல்லது தற்காலிக நீதிபதியாகப் பதவியில் நீடிக்க முடியாது.",
+            "ஓய்வு பெற்ற நீதிபதிகள் (உறுப்பு 224A): 1963 15-வது திருத்தத்தால் சேர்க்கப்பட்டது. குடியரசுத் தலைவர் முன்-ஒப்புதலுடன் ஓய்வு பெற்ற நீதிபதியை அமர்ந்து பணியாற்ற HC தலைமை நீதிபதி கோரலாம்."
+          ]
+        }
+      }
+    ],
+    "sec_hc_independence": [
+      {
+        "title_en": "Safeguards for High Court Independence (Articles 211, 215, 220 & 229)",
+        "title_ta": "உயர் நீதிமன்ற சுதந்திரத்திற்கான பாதுகாப்புகள் (உறுப்புகள் 211, 215, 220 & 229)",
+        "points": {
+          "en": [
+            "1. Security of Tenure: Removed ONLY by President after Parliamentary Special Majority Address (Art 217(1)(b) & Art 218).",
+            "2. Fixed Service Conditions: Salaries under Art 221 cannot be altered to disadvantage during tenure (except Financial Emergency Art 360).",
+            "3. Charged Expenses (Article 229(3)): Administrative expenses and salaries of HC officers/judges charged on Consolidated Fund of STATE (non-votable by State Assembly).",
+            "4. Discussion Ban in Legislature (Article 211 & Art 121): Conduct of HC judges cannot be discussed in State Legislature or Parliament.",
+            "5. Practice Restriction after Retirement (Article 220): A permanent HC judge is BANNED from pleading in the HC where he served, but CAN practice in Supreme Court and OTHER High Courts.",
+            "6. Contempt Powers (Article 215): Power to punish for contempt of itself.",
+            "7. Freedom to Appoint Staff (Article 229): HC Chief Justice appoints officers and servants of the High Court without executive interference."
+          ],
+          "ta": [
+            "1. பதவிப் பாதுகாப்பு: நாடாளுமன்றச் சிறப்பு பெரும்பான்மைக்குப் பின் குடியரசுத் தலைவர் ஆணை மூலம் மட்டுமே நீக்கம் (விதி 218).",
+            "2. நிலையான சேவை நிபந்தனைகள்: விதி 221 சம்பளங்களைக் குறைக்க முடியாது.",
+            "3. சுமத்தப்பட்ட செலவுகள் (உறுப்பு 229(3)): உயர் நீதிமன்றச் செலவுகள் மாநிலத் தொகுப்பு நிதியில் சுமத்தப்பட்டவை (மாநிலச் சட்டமன்ற வாக்கெடுப்பிற்கு அப்பாற்பட்டவை).",
+            "4. சட்டமன்ற விவாதத் தடை (உறுப்பு 211 & 121): நீதிபதிகள் நடத்தையை நாடாளுமன்றத்திலோ மாநில சட்டமன்றத்திலோ விவாதிக்க முடியாது.",
+            "5. ஓய்வுக்குப் பின் பயிற்சித் தடை (உறுப்பு 220): பணியாற்றிய HC-ல் பயிற்சி செய்யத் தடை, ஆனால் உச்ச நீதிமன்றம் மற்றும் பிற HC-களில் பயிற்சி செய்யலாம்.",
+            "6. அவமதிப்பு அதிகாரம் (உறுப்பு 215): தன் அவமதிப்பிற்குத் தண்டிக்கும் அதிகாரம்.",
+            "7. ஊழியர்களை நியமிக்கும் சுதந்திரம் (உறுப்பு 229): நிர்வாகத் தலையீடின்றி ஊழியர்களை HC தலைமை நீதிபதி நியமிக்கிறார்."
+          ]
+        }
+      }
+    ],
+    "revision_cards": [
+      {
+        "id": "hc_p1_c1",
+        "front_en": "Which Part and Chapter of the Constitution govern High Courts in India?",
+        "front_ta": "இந்திய உயர் நீதிமன்றங்களை ஒழுங்குபடுத்தும் அரசியலமைப்பின் பகுதி மற்றும் அத்தியாயம் எது?",
+        "back_en": "Part VI, Chapter V (Articles 214 to 231).",
+        "back_ta": "பகுதி VI, அத்தியாயம் V (உறுப்புகள் 214 முதல் 231 வரை)."
+      },
+      {
+        "id": "hc_p1_c2",
+        "front_en": "Who has the constitutional authority to determine the strength of a High Court under Article 216?",
+        "front_ta": "உறுப்பு 216-ன் கீழ் உயர் நீதிமன்ற நீதிபதிகளின் எண்ணிக்கையைத் தீர்மானிக்கும் அதிகாரம் கொண்டவர் யார்?",
+        "back_en": "PRESIDENT OF INDIA (No fixed limit specified in Constitution).",
+        "back_ta": "இந்தியக் குடியரசுத் தலைவர் (அரசியலமைப்பில் குறிப்பிட்ட வரம்பில்லை)."
+      },
+      {
+        "id": "hc_p1_c3",
+        "front_en": "Who appoints High Court judges under Article 217(1)?",
+        "front_ta": "உறுப்பு 217(1)-ன் கீழ் உயர் நீதிமன்ற நீதிபதிகளை நியமிப்பவர் யார்?",
+        "back_en": "PRESIDENT OF INDIA by warrant under his hand and seal (Governor is ONLY CONSULTED).",
+        "back_ta": "இந்தியக் குடியரசுத் தலைவர் (ஆளுநர் கலந்தாலோசிக்க மட்டுமேப்படுகிறார்)."
+      },
+      {
+        "id": "hc_p1_c4",
+        "front_en": "What is the retirement age of a High Court judge?",
+        "front_ta": "உயர் நீதிமன்ற நீதிபதியின் ஓய்வு பெறும் வயது என்ன?",
+        "back_en": "62 YEARS (Raised from 60 to 62 by 15th Constitutional Amendment Act 1963).",
+        "back_ta": "62 வயது (1963 15-வது திருத்தம் மூலம் 60-லிருந்து 62 ஆக உயர்த்தப்பட்டது)."
+      },
+      {
+        "id": "hc_p1_c5",
+        "front_en": "Before whom does a High Court judge make and subscribe the Oath of Office under Article 219?",
+        "front_ta": "உறுப்பு 219-ன் கீழ் உயர் நீதிமன்ற நீதிபதி யாருடைய முன்னிலையில் உறுதிமொழி ஏற்கிறார்?",
+        "back_en": "GOVERNOR OF THE STATE (or person appointed by him).",
+        "back_ta": "மாநில ஆளுநர் (அல்லது அவரால் நியமிக்கப்பட்ட நபர்)."
+      },
+      {
+        "id": "hc_p1_c6",
+        "front_en": "Is there a provision to appoint a 'Distinguished Jurist' as a High Court judge under Article 217(2)?",
+        "front_ta": "உறுப்பு 217(2)-ன் கீழ் உயர் நீதிமன்ற நீதிபதியாக ஒரு 'சிறப்புமிக்க சட்ட நிபுணரை' நியமிக்க வழியுண்டா?",
+        "back_en": "NO. Distinguished Jurist provision exists ONLY for Supreme Court (Art 124(3)(c)), NOT for High Courts.",
+        "back_ta": "இல்லை. சிறப்புமிக்க சட்ட நிபுணர் விதி உச்ச நீதிமன்றத்திற்கு மட்டுமே உண்டு (விதி 124(3)(c)), உயர் நீதிமன்றத்திற்கு இல்லை."
+      },
+      {
+        "id": "hc_p1_c7",
+        "front_en": "Who has the authority to transfer a High Court judge from one HC to another under Article 222?",
+        "front_ta": "உறுப்பு 222-ன் கீழ் ஒரு உயர் நீதிமன்ற நீதிபதியை மற்றொரு HC-க்கு இடமாற்றம் செய்யும் அதிகாரம் கொண்டவர் யார்?",
+        "back_en": "PRESIDENT OF INDIA (after consultation with Chief Justice of India).",
+        "back_ta": "இந்தியக் குடியரசுத் தலைவர் (இந்தியத் தலைமை நீதிபதி ஆலோசனையுடன்)."
+      },
+      {
+        "id": "hc_p1_c8",
+        "front_en": "What is the maximum period for which an Additional Judge can be appointed under Article 224(1)?",
+        "front_ta": "உறுப்பு 224(1)-ன் கீழ் கூடுதல் நீதிபதி அதிகபட்சமாக எவ்வளவு காலத்திற்கு நியமிக்கப்படலாம்?",
+        "back_en": "Temporary period NOT EXCEEDING 2 YEARS.",
+        "back_ta": "2 ஆண்டுகளுக்கு மிகாத தற்காலிக காலம்."
+      },
+      {
+        "id": "hc_p1_c9",
+        "front_en": "Where are the pensions of retired High Court judges charged?",
+        "front_ta": "ஓய்வு பெற்ற உயர் நீதிமன்ற நீதிபதிகளின் ஓய்வூதியம் எங்கு சுமத்தப்படுகிறது?",
+        "back_en": "Consolidated Fund of INDIA (Salaries charged on Consolidated Fund of STATE).",
+        "back_ta": "இந்தியத் தொகுப்பு நிதியில் (சம்பளம் மாநிலத் தொகுப்பு நிதியில் சுமத்தப்படும்)."
+      },
+      {
+        "id": "hc_p1_c10",
+        "front_en": "Who has the authority to remove a High Court judge from office?",
+        "front_ta": "உயர் நீதிமன்ற நீதிபதியைப் பதவியிலிருந்து நீக்கும் அதிகாரம் கொண்டவர் யார்?",
+        "back_en": "PRESIDENT OF INDIA (on Parliamentary Address by Special Majority under Art 218). Governor CANNOT remove!",
+        "back_ta": "இந்தியக் குடியரசுத் தலைவர் (நாடாளுமன்றச் சிறப்பு பெரும்பான்மைத் தீர்மானத்திற்குப் பின்). ஆளுநரால் நீக்க முடியாது!"
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "tbl_hc_vs_sc_p1",
+        "title_en": "1. High Court vs Supreme Court Comparison",
+        "title_ta": "1. உயர் நீதிமன்றம் vs உச்ச நீதிமன்றம் ஒப்பீடு",
+        "headers_en": [
+          "Feature / Dimension",
+          "High Courts of States",
+          "Supreme Court of India"
+        ],
+        "headers_ta": [
+          "அம்சம் / காரணி",
+          "மாநில உயர் நீதிமன்றங்கள்",
+          "இந்திய உச்ச நீதிமன்றம்"
+        ],
+        "rows_en": [
+          [
+            "Constitutional Location",
+            "Part VI Chapter V (Articles 214 to 231)",
+            "Part V Chapter IV (Articles 124 to 147)"
+          ],
+          [
+            "Strength Determination",
+            "Determined by PRESIDENT OF INDIA (Art 216)",
+            "Determined by PARLIAMENT BY LAW (Art 124(1))"
+          ],
+          [
+            "Retirement Age",
+            "62 Years (15th Amend 1963)",
+            "65 Years"
+          ],
+          [
+            "Oath Administered By",
+            "GOVERNOR of the State (Art 219)",
+            "PRESIDENT of India (Art 124(6))"
+          ],
+          [
+            "Writ Scope (Art 226 vs 32)",
+            "Wider Subject Scope: Fundamental Rights + Other legal rights",
+            "Narrower Subject Scope: Fundamental Rights ONLY"
+          ],
+          [
+            "Court of Record Provision",
+            "Article 215",
+            "Article 129"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "அரசியலமைப்பு இடம்",
+            "பகுதி VI அத்தியாயம் V (உறுப்புகள் 214 முதல் 231)",
+            "பகுதி V அத்தியாயம் IV (உறுப்புகள் 124 முதல் 147)"
+          ],
+          [
+            "எண்ணிக்கை நிர்ணயம்",
+            "இந்தியக் குடியரசுத் தலைவரால் நிர்ணயம் (விதி 216)",
+            "நாடாளுமன்றச் சட்டத்தால் நிர்ணயம் (விதி 124(1))"
+          ],
+          [
+            "ஓய்வு பெறும் வயது",
+            "62 வயது (1963 15-வது திருத்தம்)",
+            "65 வயது"
+          ],
+          [
+            "உறுதிமொழி வழங்குபவர்",
+            "மாநில ஆளுநர் (விதி 219)",
+            "இந்தியக் குடியரசுத் தலைவர் (விதி 124(6))"
+          ],
+          [
+            "பேராணை எல்லை (விதி 226 vs 32)",
+            "பரந்த பாட எல்லை: அடிப்படை உரிமைகள் + பிற சட்ட உரிமைகள்",
+            "குறுகிய பாட எல்லை: அடிப்படை உரிமைகள் மட்டுமே"
+          ],
+          [
+            "பதிவு நீதிமன்ற விதி",
+            "உறுப்பு 215",
+            "உறுப்பு 129"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_hc_vs_sc_judge_p1",
+        "title_en": "2. High Court Judge vs Supreme Court Judge Comparison",
+        "title_ta": "2. உயர் நீதிமன்ற நீதிபதி vs உச்ச நீதிமன்ற நீதிபதி ஒப்பீடு",
+        "headers_en": [
+          "Parameter",
+          "High Court Judge",
+          "Supreme Court Judge"
+        ],
+        "headers_ta": [
+          "அளவுரு",
+          "உயர் நீதிமன்ற நீதிபதி",
+          "உச்ச நீதிமன்ற நீதிபதி"
+        ],
+        "rows_en": [
+          [
+            "Retirement Age",
+            "62 Years",
+            "65 Years"
+          ],
+          [
+            "Distinguished Jurist Rule",
+            "NO provision for Distinguished Jurist in appointment",
+            "Eligible if Distinguished Jurist in President's opinion (Art 124(3)(c))"
+          ],
+          [
+            "Advocate Experience Needed",
+            "10 Years as High Court Advocate",
+            "10 Years as High Court Advocate"
+          ],
+          [
+            "Judicial Experience Needed",
+            "10 Years in Judicial Office",
+            "5 Years as High Court Judge"
+          ],
+          [
+            "Post-Retirement Practice",
+            "Can practice in SC and OTHER High Courts (Banned only in HC served)",
+            "BANNED from practicing in ANY court in India (Art 124(7))"
+          ],
+          [
+            "Pension Charged On",
+            "Consolidated Fund of INDIA (Salaries on State Fund)",
+            "Consolidated Fund of INDIA"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "ஓய்வு பெறும் வயது",
+            "62 வயது",
+            "65 வயது"
+          ],
+          [
+            "சிறப்புமிக்க சட்ட நிபுணர் விதி",
+            "நியமனத்தில் சிறப்புமிக்க சட்ட நிபுணர் விதி இல்லை",
+            "குடியரசுத் தலைவர் பார்வையில் சிறப்புமிக்க சட்ட நிபுணர் தகுதி (விதி 124(3)(c))"
+          ],
+          [
+            "வழக்கறிஞர் அனுபவம்",
+            "உயர் நீதிமன்ற வழக்கறிஞராக 10 ஆண்டுகள்",
+            "உயர் நீதிமன்ற வழக்கறிஞராக 10 ஆண்டுகள்"
+          ],
+          [
+            "நீதித்துறை அனுபவம்",
+            "நீதித்துறை சேவையில் 10 ஆண்டுகள்",
+            "உயர் நீதிமன்ற நீதிபதியாக 5 ஆண்டுகள்"
+          ],
+          [
+            "ஓய்வுக்குப் பின் பயிற்சி",
+            "SC மற்றும் பிற HC-களில் பயிற்சி செய்யலாம் (பணியாற்றிய HC-ல் தடை)",
+            "இந்தியாவின் எந்தவொரு நீதிமன்றத்திலும் பயிற்சி செய்யத் தடை (விதி 124(7))"
+          ],
+          [
+            "ஓய்வூதியம் சுமத்தப்படுவது",
+            "இந்தியத் தொகுப்பு நிதியில் (சம்பளம் மாநிலத் தொகுப்பு நிதியில்)",
+            "இந்தியத் தொகுப்பு நிதியில்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_appt_vs_rem_hc_p1",
+        "title_en": "3. Appointment vs Removal of High Court Judge Comparison",
+        "title_ta": "3. உயர் நீதிமன்ற நீதிபதி நியமனம் vs நீக்கம் ஒப்பீடு",
+        "headers_en": [
+          "Aspect",
+          "Appointment of HC Judge (Article 217)",
+          "Removal of HC Judge (Article 218 & Art 124(4))"
+        ],
+        "headers_ta": [
+          "அம்சம்",
+          "உயர் நீதிமன்ற நீதிபதி நியமனம் (உறுப்பு 217)",
+          "உயர் நீதிமன்ற நீதிபதி நீக்கம் (உறுப்பு 218 & 124(4))"
+        ],
+        "rows_en": [
+          [
+            "Authority Issuing Order",
+            "PRESIDENT OF INDIA by warrant under hand and seal",
+            "PRESIDENT OF INDIA after Parliamentary Address"
+          ],
+          [
+            "Consultation / Approval",
+            "Consults CJI, Governor of State, and HC Chief Justice",
+            "Passed by SPECIAL MAJORITY in both Houses of Parliament"
+          ],
+          [
+            "Role of Governor",
+            "Governor MUST BE CONSULTED by President",
+            "Governor HAS NO ROLE in removal procedure"
+          ],
+          [
+            "Grounds Required",
+            "Fulfillment of Art 217(2) qualifications",
+            "Proved Misbehaviour OR Incapacity ONLY"
+          ],
+          [
+            "Inquiry Mechanism",
+            "Intelligence / IB checks",
+            "3-Member Judicial Committee under Judges Inquiry Act 1968"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "ஆணை பிறப்பிக்கும் அதிகாரி",
+            "இந்தியக் குடியரசுத் தலைவர் தனது கையொப்ப ஆணை மூலம்",
+            "நாடாளுமன்றத் தீர்மானத்திற்குப் பின் இந்தியக் குடியரசுத் தலைவர்"
+          ],
+          [
+            "ஆலோசனை / ஒப்புதல்",
+            "CJI, மாநில ஆளுநர் மற்றும் HC தலைமை நீதிபதியை கலந்தாலோசிக்கிறார்",
+            "நாடாளுமன்றத்தின் இரு அவைகளிலும் சிறப்பு பெரும்பான்மையால் நிறைவேற்றம்"
+          ],
+          [
+            "ஆளுநரின் பங்கு",
+            "ஆளுநர் குடியரசுத் தலைவரால் கட்டாயம் கலந்தாலோசிக்கப்படுகிறார்",
+            "நீக்க நடைமுறையில் ஆளுநருக்கு எவ்விதப் பங்கும் இல்லை"
+          ],
+          [
+            "தேவைப்படும் அடிப்படைகள்",
+            "விதி 217(2) தகுதிகளைப் பூர்த்தி செய்தல்",
+            "நிரூபிக்கப்பட்ட தவறான நடத்தை அல்லது திறமையின்மை மட்டுமே"
+          ],
+          [
+            "விசாரணை அமைப்பு",
+            "உளவுத்துறை / IB சோதனைகள்",
+            "1968 நீதிபதிகள் விசாரணைச் சட்டத்தின் கீழ் 3 உறுப்பினர்கள் குழு"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_transfer_vs_removal_hc_p1",
+        "title_en": "4. Transfer vs Removal of High Court Judge Comparison",
+        "title_ta": "4. உயர் நீதிமன்ற நீதிபதி இடமாற்றம் vs நீக்கம் ஒப்பீடு",
+        "headers_en": [
+          "Parameter",
+          "Transfer of HC Judge (Article 222)",
+          "Removal of HC Judge (Article 218)"
+        ],
+        "headers_ta": [
+          "அளவுரு",
+          "நீதிபதி இடமாற்றம் (உறுப்பு 222)",
+          "நீதிபதி நீக்கம் (உறுப்பு 218)"
+        ],
+        "rows_en": [
+          [
+            "Primary Objective",
+            "Re-allocating judicial service to another High Court",
+            "Terminating judicial office due to grave misconduct/incapacity"
+          ],
+          [
+            "Initiating Consultation",
+            "President consults Chief Justice of India (Collegium of 4 SC judges + 2 HC CJs)",
+            "Parliamentary motion signed by 100 LS / 50 RS members"
+          ],
+          [
+            "Parliament Role",
+            "Parliament has NO role in transfer of judges",
+            "Parliament MUST pass removal resolution by Special Majority"
+          ],
+          [
+            "Judicial Status After",
+            "Continues as High Court Judge in transferee High Court",
+            "Ceases to be a judge permanently"
+          ],
+          [
+            "Compensatory Allowance",
+            "Entitled to compensatory allowance under Art 222(2)",
+            "No compensatory allowance"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "முதன்மை நோக்கம்",
+            "நீதிச்சேவையை மற்றொரு உயர் நீதிமன்றத்திற்கு மறு-ஒதுக்கீடு செய்தல்",
+            "கடும் தவறான நடத்தை/திறமையின்மை காரணமாக பதவியை முடிவுக்குக் கொண்டு வருதல்"
+          ],
+          [
+            "தொடங்கும் ஆலோசனை",
+            "குடியரசுத் தலைவர் இந்தியத் தலைமை நீதிபதியை (4 SC + 2 HC CJs கொலீஜியம்) கலந்தாலோசிக்கிறார்",
+            "100 LS / 50 RS எம்பிக்கள் கையொப்பமிட்ட நாடாளுமன்றத் தீர்மானம்"
+          ],
+          [
+            "நாடாளுமன்றத்தின் பங்கு",
+            "நீதிபதிகள் இடமாற்றத்தில் நாடாளுமன்றத்திற்கு எவ்விதப் பங்கும் இல்லை",
+            "நாடாளுமன்றம் சிறப்பு பெரும்பான்மையால் நீக்கத் தீர்மானத்தை நிறைவேற்ற வேண்டும்"
+          ],
+          [
+            "அதன்பின் நீதிபதி நிலை",
+            "மாற்றப்பட்ட உயர் நீதிமன்றத்தில் நீதிபதியாகத் தொடர்கிறார்",
+            "நிரந்தரமாக நீதிபதியாக இருப்பது முடிவுக்கு வருகிறது"
+          ],
+          [
+            "ஈட்டுப் படி",
+            "உறுப்பு 222(2)-ன் கீழ் ஈட்டுப் படி பெறத் தகுதியுடையவர்",
+            "ஈட்டுப் படி இல்லை"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_hc_vs_subordinate_p1",
+        "title_en": "5. High Court vs Subordinate Courts Comparison",
+        "title_ta": "5. உயர் நீதிமன்றம் vs சார்பு நீதிமன்றங்கள் ஒப்பீடு",
+        "headers_en": [
+          "Feature",
+          "High Court (Part VI Chapter V)",
+          "Subordinate Courts (Part VI Chapter VI)"
+        ],
+        "headers_ta": [
+          "அம்சம்",
+          "உயர் நீதிமன்றம் (பகுதி VI அத்தியாயம் V)",
+          "சார்பு நீதிமன்றங்கள் (பகுதி VI அத்தியாயம் VI)"
+        ],
+        "rows_en": [
+          [
+            "Constitutional Status",
+            "Constitutional Court of Record (Art 215)",
+            "Statutory / Constitutional Subordinate Courts (Arts 233-237)"
+          ],
+          [
+            "Appointing Authority",
+            "PRESIDENT OF INDIA (Art 217)",
+            "GOVERNOR of the State (Art 233 / 234)"
+          ],
+          [
+            "Writ Powers",
+            "Possesses Writ Jurisdiction under Article 226",
+            "NO Writ Jurisdiction under Constitution"
+          ],
+          [
+            "Superintendence",
+            "Supervises all subordinate courts under Article 227 & 235",
+            "Subject to administrative and judicial superintendence of High Court"
+          ],
+          [
+            "Removal Authority",
+            "President on Parliamentary Special Majority Address",
+            "Governor / High Court administrative control rules"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "அரசியலமைப்பு நிலை",
+            "அரசியலமைப்புப் பதிவு நீதிமன்றம் (விதி 215)",
+            "சார்பு நீதிமன்றங்கள் (விதிகள் 233-237)"
+          ],
+          [
+            "நியமிக்கும் அதிகாரி",
+            "இந்தியக் குடியரசுத் தலைவர் (விதி 217)",
+            "மாநில ஆளுநர் (விதி 233 / 234)"
+          ],
+          [
+            "பேராணை அதிகாரங்கள்",
+            "உறுப்பு 226-ன் கீழ் பேராணை அதிகாரம் உண்டு",
+            "அரசியலமைப்பின் கீழ் பேராணை அதிகாரம் இல்லை"
+          ],
+          [
+            "மேற்பார்வை",
+            "உறுப்பு 227 & 235-ன் கீழ் அனைத்து சார்பு நீதிமன்றங்களையும் மேற்பார்வையிடுகிறது",
+            "உயர் நீதிமன்றத்தின் நிர்வாக மற்றும் நீதித்துறை மேற்பார்வைக்கு உட்பட்டவை"
+          ],
+          [
+            "நீக்கும் அதிகாரி",
+            "நாடாளுமன்றச் சிறப்பு பெரும்பான்மைக்குப் பின் குடியரசுத் தலைவர்",
+            "ஆளுநர் / உயர் நீதிமன்ற நிர்வாகக் கட்டுப்பாட்டு விதிகள்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_hc_cj_vs_judge_p1",
+        "title_en": "6. High Court Chief Justice vs Other High Court Judge",
+        "title_ta": "6. உயர் நீதிமன்றத் தலைமை நீதிபதி vs பிற உயர் நீதிமன்ற நீதிபதி ஒப்பீடு",
+        "headers_en": [
+          "Parameter",
+          "Chief Justice of High Court",
+          "Other Judge of High Court"
+        ],
+        "headers_ta": [
+          "அளவுரு",
+          "உயர் நீதிமன்றத் தலைமை நீதிபதி",
+          "பிற உயர் நீதிமன்ற நீதிபதி"
+        ],
+        "rows_en": [
+          [
+            "Consultation Scope",
+            "Consulted for appointment of OTHER judges of that HC",
+            "Not consulted for appointment of fellow judges"
+          ],
+          [
+            "Administrative Control",
+            "Master of Roster; framing benches & allocating judicial work",
+            "Judicial functions as allocated by Chief Justice"
+          ],
+          [
+            "Staff Appointment",
+            "Appoints officers and servants of High Court under Art 229",
+            "No administrative staff appointment powers"
+          ],
+          [
+            "Appointment Consultation",
+            "President consults CJI and Governor",
+            "President consults CJI, Governor, AND HC Chief Justice"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "ஆலோசனை எல்லை",
+            "அவ்வழக்கின் பிற நீதிபதிகள் நியமனத்திற்குக் கலந்தாலோசிக்கப்படுகிறார்",
+            "இதர நீதிபதிகள் நியமனத்திற்கு கலந்தாலோசிக்கப்படுவதில்லை"
+          ],
+          [
+            "நிர்வாகக் கட்டுப்பாடு",
+            "Master of Roster; அமர்வுகளை அமைத்தல் & பணிகளை ஒதுக்கீடு செய்தல்",
+            "தலைமை நீதிபதியால் ஒதுக்கப்படும் நீதித்துறைப் பணிகள்"
+          ],
+          [
+            "ஊழியர்கள் நியமனம்",
+            "உறுப்பு 229-ன் கீழ் உயர் நீதிமன்ற ஊழியர்களை நியமிக்கிறார்",
+            "நிர்வாக ஊழியர்கள் நியமன அதிகாரம் இல்லை"
+          ],
+          [
+            "நியமன ஆலோசனை",
+            "குடியரசுத் தலைவர் CJI மற்றும் ஆளுநரை கலந்தாலோசிக்கிறார்",
+            "குடியரசுத் தலைவர் CJI, ஆளுநர் மற்றும் HC தலைமை நீதிபதியை கலந்தாலோசிக்கிறார்"
+          ]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "High Courts Structure, Judges & Independence (Part VI)",
+        "short_label": "High Court Part 1",
+        "children": [
+          {
+            "title": "1. Constitutional Basis & Composition (Arts 214-216, 231)",
+            "short_label": "Basis & Composition",
+            "children": [
+              {
+                "title": "Part VI Chap V (Arts 214-231); Art 214 HC for each State; Art 231 Common HC (7th Amend 1956)",
+                "short_label": "Part VI"
+              },
+              {
+                "title": "Art 215 Court of Record; Art 216 Composition determined by PRESIDENT",
+                "short_label": "President Strength"
+              }
+            ]
+          },
+          {
+            "title": "2. Appointment & Collegium Evolution (Art 217)",
+            "short_label": "Appointment",
+            "children": [
+              {
+                "title": "Art 217(1): Appointed by President; Consults CJI, Governor & HC CJ",
+                "short_label": "Art 217(1)"
+              },
+              {
+                "title": "Collegium: CJI + 2 Senior SC Judges (3rd Judges 1998); Governor ONLY CONSULTED",
+                "short_label": "Collegium 2"
+              }
+            ]
+          },
+          {
+            "title": "3. Qualifications, Tenure, Removal & Transfer",
+            "short_label": "Quals, Removal & Transfer",
+            "children": [
+              {
+                "title": "Qualifications: Citizen + 10 yrs Judicial Office OR 10 yrs HC Advocate (NO Distinguished Jurist!)",
+                "short_label": "Quals"
+              },
+              {
+                "title": "Tenure: Retires at 62 yrs (15th Amend 1963); Art 219 Oath before GOVERNOR",
+                "short_label": "Age 62 Oath"
+              },
+              {
+                "title": "Removal (Art 218): Special Majority in Parliament on Proved Misbehaviour / Incapacity",
+                "short_label": "Removal"
+              },
+              {
+                "title": "Transfer (Art 222): President transfers after CJI consultation",
+                "short_label": "Transfer Art 222"
+              }
+            ]
+          },
+          {
+            "title": "4. Special Judges & Independence",
+            "short_label": "Special Judges & Independence",
+            "children": [
+              {
+                "title": "Acting CJ (Art 223), Additional/Acting (Art 224 - max 2 yrs), Retired (Art 224A)",
+                "short_label": "Special Judges"
+              },
+              {
+                "title": "Independence: Charged expenses (Art 229), Discussion ban (Art 211), Practice ban (Art 220)",
+                "short_label": "Independence"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": "1. High Court Judge Appointing vs Oath Authority Trap (நியமன vs உறுதிமொழி அதிகாரிப் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Believing the Governor of the State appoints High Court judges because they take the Oath before the Governor.",
+            "FACT: High Court judges are APPOINTED BY THE PRESIDENT OF INDIA under Article 217(1)! The Governor is ONLY CONSULTED during appointment, BUT administers the OATH of office under Article 219."
+          ],
+          "ta": [
+            "பொறி: ஆளுநர் முன்னிலையில் உறுதிமொழி எடுப்பதால் உயர் நீதிமன்ற நீதிபதிகளை ஆளுநரே நியமிக்கிறார் என நினைப்பது.",
+            "உண்மை: உயர் நீதிமன்ற நீதிபதிகள் உறுப்பு 217(1)-ன் கீழ் இந்தியக் குடியரசுத் தலைவரால் நியமிக்கப்படுகின்றனர்! ஆளுநர் நியமனத்தின் போது கலந்தாலோசிக்க மட்டுமேப்படுகிறார், ஆனால் உறுப்பு 219-ன் கீழ் உறுதிமொழியைச் செய்து வைக்கிறார்."
+          ]
+        }
+      },
+      {
+        "title": "2. High Court Distinguished Jurist Trap (சிறப்புமிக்க சட்ட நிபுணர் விதிப் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Assuming a 'Distinguished Jurist' can be appointed as a High Court judge just like in the Supreme Court.",
+            "FACT: The 'Distinguished Jurist' qualification criteria exists ONLY FOR THE SUPREME COURT under Article 124(3)(c)! There is NO SUCH PROVISION under Article 217(2) for High Court appointments."
+          ],
+          "ta": [
+            "பொறி: உச்ச நீதிமன்றம் போல உயர் நீதிமன்றத்திற்கும் ஒரு 'சிறப்புமிக்க சட்ட நிபுணரை' நீதிபதியாக நியமிக்கலாம் என நினைப்பது.",
+            "உண்மை: 'சிறப்புமிக்க சட்ட நிபுணர் (Distinguished Jurist)' தகுதி விதி உச்ச நீதிமன்றத்திற்கு மட்டுமே உண்டு (விதி 124(3)(c))! உறுப்பு 217(2)-ன் கீழ் உயர் நீதிமன்ற நியமனங்களுக்கு இத்தகைய விதி இல்லை."
+          ]
+        }
+      },
+      {
+        "title": "3. High Court Retirement Age & Pension Fund Trap (ஓய்வு பெறும் வயது & ஓய்வூதிய நிதிப் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Thinking High Court judges retire at age 65 and their pensions are paid from the State Consolidated Fund.",
+            "FACT: High Court judges retire at 62 YEARS (15th Amendment Act 1963). Their salaries are charged on the Consolidated Fund of the STATE, BUT their PENSIONS are charged on the Consolidated Fund of INDIA!"
+          ],
+          "ta": [
+            "பொறி: உயர் நீதிமன்ற நீதிபதிகள் 65 வயதில் ஓய்வு பெறுகின்றனர் மற்றும் ஓய்வூதியம் மாநிலத் தொகுப்பு நிதியிலிருந்து வழங்கப்படுகிறது என நினைப்பது.",
+            "உண்மை: உயர் நீதிமன்ற நீதிபதிகள் 62 வயதில் ஓய்வு பெறுகின்றனர் (1963 15-வது திருத்தம்). அவர்களது சம்பளம் மாநிலத் தொகுப்பு நிதியிலும், ஓய்வூதியம் இந்தியத் தொகுப்பு நிதியிலும் (Consolidated Fund of India) சுமத்தப்படுகிறது!"
+          ]
+        }
+      },
+      {
+        "title": "4. High Court Strength Determination Trap (நீதிபதிகள் எண்ணிக்கை அதிகாரம் பற்றிய பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Believing Parliament determines the strength of High Court judges by passing a law (like in Supreme Court).",
+            "FACT: Under Article 216, the strength of a High Court is determined by the PRESIDENT OF INDIA based on workload! (Parliament determines Supreme Court strength under Art 124(1))."
+          ],
+          "ta": [
+            "பொறி: உச்ச நீதிமன்றம் போல உயர் நீதிமன்ற நீதிபதிகள் எண்ணிக்கையை நாடாளுமன்றம் சட்டத்தின் மூலம் தீர்மானிக்கிறது என நினைப்பது.",
+            "உண்மை: உறுப்பு 216-ன் கீழ் உயர் நீதிமன்ற நீதிபதிகள் எண்ணிக்கை பணிச்சுமையின் அடிப்படையில் இந்தியக் குடியரசுத் தலைவரால் தீர்மானிக்கப்படுகிறது! (நாடாளுமன்றம் உச்ச நீதிமன்ற எண்ணிக்கையை மட்டுமே தீர்மானிக்கிறது)."
+          ]
+        }
+      },
+      {
+        "title": "5. Removal Authority Trap (நீக்க அதிகாரம் பற்றிய பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Believing the Governor or State Legislature can remove a High Court judge.",
+            "FACT: High Court judges CANNOT BE REMOVED by the Governor or State Legislature! Under Article 218, they are removed ONLY BY THE PRESIDENT OF INDIA after an Address by both Houses of PARLIAMENT supported by Special Majority."
+          ],
+          "ta": [
+            "பொறி: ஆளுநரோ அல்லது மாநில சட்டமன்றமோ உயர் நீதிமன்ற நீதிபதியை நீக்க முடியும் என நினைப்பது.",
+            "உண்மை: ஆளுநராலோ மாநில சட்டமன்றத்தாலோ உயர் நீதிமன்ற நீதிபதியை நீக்க முடியாது! உறுப்பு 218-ன் கீழ் நாடாளுமன்றத்தின் இரு அவைகளிலும் சிறப்பு பெரும்பான்மைத் தீர்மானம் நிறைவேற்றப்பட்ட பின்னரே இந்தியக் குடியரசுத் தலைவரால் நீக்கப்பட முடியும்."
+          ]
+        }
+      }
+    ],
+    "quick_revision": {
+      "en": [
+        "Constitutional Basis: Part VI Chapter V (Articles 214 to 231). Article 214 (HC for each State). Article 231 (Common HC for 2+ States/UTs - 7th Amend 1956).",
+        "Composition & Strength: Article 216 (Chief Justice + Judges). Strength determined by PRESIDENT OF INDIA (No fixed limit in Constitution).",
+        "Appointment: Article 217(1) (Appointed by President). Consults: CJI + Governor + HC CJ. Collegium practice: CJI + 2 senior SC judges.",
+        "Qualifications (Art 217(2)): Citizen of India + 10 yrs Judicial Office OR 10 yrs HC Advocate. NO Distinguished Jurist provision for HC!",
+        "Tenure & Oath: Retires at 62 YEARS (15th Amend 1963). Oath before GOVERNOR of State (Art 219). Salaries charged on State Fund; Pension charged on Union Fund (Art 221).",
+        "Removal (Art 218): Order of President after Parliamentary Special Majority Address on Proved Misbehaviour / Incapacity (Judges Inquiry Act 1968). Governor has NO role.",
+        "Transfer (Art 222): President transfers HC judge after consultation with CJI.",
+        "Special Judges: Acting CJ (Art 223), Additional/Acting Judges (Art 224 - max 2 yrs, max age 62), Retired Judges (Art 224A).",
+        "Independence: Charged expenses (Art 229), Discussion ban (Art 211), Practice restriction (Art 220 - banned only in HC served), Contempt (Art 215)."
+      ],
+      "ta": [
+        "அரசியலமைப்பு அடிப்படை: பகுதி VI அத்தியாயம் V (உறுப்புகள் 214 முதல் 231 வரை). உறுப்பு 214 (ஒவ்வொரு மாநிலத்திற்கும் HC). உறுப்பு 231 (பொது HC - 1956 7-வது திருத்தம்).",
+        "அமைப்பு & எண்ணிக்கை: உறுப்பு 216 (தலைமை நீதிபதி + நீதிபதிகள்). எண்ணிக்கை இந்தியக் குடியரசுத் தலைவரால் தீர்மானிக்கப்படுகிறது.",
+        "நியமனம்: உறுப்பு 217(1) (குடியரசுத் தலைவரால் நியமனம்). ஆலோசனை: CJI + ஆளுநர் + HC தலைமை நீதிபதி. கொலீஜியம்: CJI + 2 மூத்த SC நீதிபதிகள்.",
+        "தகுதிகள் (விதி 217(2)): இந்தியக் குடிமகன் + 10 ஆண்டுகள் நீதித்துறை பதவி அல்லது 10 ஆண்டுகள் HC வழக்கறிஞர். HC-க்கு சிறப்புமிக்க சட்ட நிபுணர் விதி இல்லை!",
+        "பதவிக்காலம் & உறுதிமொழி: 62 வயதில் ஓய்வு (1963 15-வது திருத்தம்). மாநில ஆளுநர் முன் உறுதிமொழி (விதி 219). சம்பளம் மாநில நிதியில்; ஓய்வூதியம் ஒன்றிய நிதியில்.",
+        "நீக்கம் (விதி 218): நாடாளுமன்றச் சிறப்பு பெரும்பான்மைக்குப் பின் குடியரசுத் தலைவர் ஆணை மூலம். ஆளுநருக்குப் பங்கில்லை.",
+        "இடமாற்றம் (விதி 222): CJI ஆலோசனையுடன் குடியரசுத் தலைவர் இடமாற்றம் செய்கிறார்.",
+        "சிறப்பு நீதிபதிகள்: தற்காலிக HC தலைமை நீதிபதி (விதி 223), கூடுதல் நீதிபதிகள் (விதி 224 - அதிகபட்சம் 2 ஆண்டுகள், 62 வயது வரை), ஓய்வு பெற்ற நீதிபதிகள் (விதி 224A).",
+        "சுதந்திரம்: சுமத்தப்பட்ட செலவுகள் (விதி 229), சட்டமன்ற விவாதத் தடை (விதி 211), பயிற்சித் தடை (விதி 220), அவமதிப்பு (விதி 215)."
+      ]
+    },
+    "must_remember": {
+      "en": [
+        "MUST REMEMBER: High Court judges are APPOINTED BY THE PRESIDENT under Article 217(1).",
+        "MUST REMEMBER: High Court judges take Oath BEFORE THE GOVERNOR of the State under Article 219.",
+        "MUST REMEMBER: High Court judges retire at 62 YEARS of age (SC judges retire at 65).",
+        "MUST REMEMBER: NO Distinguished Jurist provision exists for High Court appointments.",
+        "MUST REMEMBER: High Court strength is determined by the PRESIDENT OF INDIA (Art 216).",
+        "MUST REMEMBER: High Court judges are REMOVED ONLY BY THE PRESIDENT on Parliamentary Special Majority Address (Art 218). Governor CANNOT remove!",
+        "MUST REMEMBER: High Court judge pensions are charged on Consolidated Fund of INDIA.",
+        "MUST REMEMBER: Article 222 governs transfer of High Court judges by the President.",
+        "MUST REMEMBER: Additional Judges under Article 224(1) can be appointed for max 2 years up to age 62.",
+        "MUST REMEMBER: Article 231 allows Parliament to establish a Common High Court for 2+ States/UTs."
+      ],
+      "ta": [
+        "நினைவில் கொள்க: உறுப்பு 217(1)-ன் கீழ் உயர் நீதிமன்ற நீதிபதிகள் குடியரசுத் தலைவரால் நியமிக்கப்படுகின்றனர்.",
+        "நினைவில் கொள்க: உறுப்பு 219-ன் கீழ் உயர் நீதிமன்ற நீதிபதிகள் மாநில ஆளுநர் முன்னிலையில் உறுதிமொழி ஏற்கின்றனர்.",
+        "நினைவில் கொள்க: உயர் நீதிமன்ற நீதிபதிகள் 62 வயதில் ஓய்வு பெறுகின்றனர் (SC நீதிபதிகள் 65 வயதில்).",
+        "நினைவில் கொள்க: உயர் நீதிமன்ற நியமனங்களுக்கு சிறப்புமிக்க சட்ட நிபுணர் தகுதி விதி இல்லை.",
+        "நினைவில் கொள்க: உயர் நீதிமன்ற நீதிபதிகள் எண்ணிக்கை இந்தியக் குடியரசுத் தலைவரால் தீர்மானிக்கப்படுகிறது (விதி 216).",
+        "நினைவில் கொள்க: உயர் நீதிமன்ற நீதிபதிகள் நாடாளுமன்றச் சிறப்பு பெரும்பான்மைக்குப் பின் குடியரசுத் தலைவரால் மட்டுமே நீக்கப்பட முடியும் (விதி 218). ஆளுநரால் முடியாது!",
+        "நினைவில் கொள்க: உயர் நீதிமன்ற நீதிபதிகளின் ஓய்வூதியம் இந்தியத் தொகுப்பு நிதியில் சுமத்தப்படுகிறது.",
+        "நினைவில் கொள்க: உறுப்பு 222 குடியரசுத் தலைவரால் நீதிபதிகள் இடமாற்றத்தை ஒழுங்குபடுத்துகிறது.",
+        "நினைவில் கொள்க: உறுப்பு 224(1)-ன் கீழ் கூடுதல் நீதிபதிகள் 62 வயது வரை அதிகபட்சம் 2 ஆண்டுகளுக்கு நியமிக்கப்படலாம்.",
+        "நினைவில் கொள்க: உறுப்பு 231 நாடாளுமன்றம் பொது உயர் நீதிமன்றத்தை அமைக்க அதிகாரமளிக்கிறது."
+      ]
+    }
+  }
+}

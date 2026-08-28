@@ -1,0 +1,976 @@
+{
+  "meta": {
+    "topic_id": "polity_attorney_general_part_1",
+    "repository_id": "polity_attorney_general",
+    "display_title": "Attorney General of India – Part 1",
+    "part": 1,
+    "total_parts": 3,
+    "subject": "polity",
+    "chapter": "Attorney General of India",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "topic_id": "polity_attorney_general_part_1",
+    "repository_id": "polity_attorney_general",
+    "display_title": "Attorney General of India – Part 1",
+    "part": 1,
+    "total_parts": 3,
+    "subject": "polity",
+    "chapter": "Attorney General of India",
+    "language": "English + Tamil"
+  },
+  "keywords": [
+    "Attorney General of India",
+    "இந்திய அரசின் தலைமை வழக்கறிஞர்",
+    "Article 76",
+    "உறுப்பு 76",
+    "Article 88",
+    "உறுப்பு 88",
+    "Article 105",
+    "உறுப்பு 105",
+    "Highest Law Officer",
+    "உயர்ந்த சட்ட அதிகாரி",
+    "Constitutional Office",
+    "அரசியலமைப்பு பதவி",
+    "Pleasure of President",
+    "குடியரசுத் தலைவரின் விருப்பம்",
+    "Right of Audience",
+    "நீதிமன்றங்களில் தோன்றும் உரிமை",
+    "Parliament Participation",
+    "நாடாளுமன்றப் பங்கேற்பு",
+    "No Voting Right",
+    "வாக்களிக்கும் உரிமை இல்லை",
+    "SC Judge Qualification Standard",
+    "உச்ச நீதிமன்ற நீதிபதி தகுதி நிலை",
+    "TNPSC Group 1 Polity"
+  ],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [
+        "Master Article 76 as the Constitutional Basis for the Office of the Attorney General of India (Part V, Chapter I - The Executive).",
+        "Understand the Constitutional Status of Attorney General of India as a Constitutional Body and the Highest Law Officer of the Union Government.",
+        "Differentiate Constitutional Offices from Statutory Offices and Executive Offices.",
+        "Master the Appointment framework by the President of India under Article 76(1) and debunk the myth of Parliamentary election.",
+        "Analyze Qualification criteria (must be qualified to be appointed as a Judge of the Supreme Court under Art 124(3)).",
+        "Understand Tenure and Pleasure Principle (No fixed 5-year tenure prescribed in Constitution; holds office during President's pleasure).",
+        "Master Removal mechanism (No parliamentary impeachment procedure required; removed by President or resigns by addressing President).",
+        "Examine Primary Duties under Article 76(2) (legal advice to Union Government, Presidentially assigned legal duties, constitutional/legal functions).",
+        "Understand Right of Audience under Article 76(3) (right of audience in all courts in the territory of India).",
+        "Analyze Parliamentary Participation rights under Article 88 (right to speak and participate in Lok Sabha, Rajya Sabha, Joint Sittings, and Parliamentary Committees without voting rights)."
+      ],
+      "ta": [
+        "இந்திய அரசின் தலைமை வழக்கறிஞர் பதவியின் அரசியலமைப்பு அடிப்படையான உறுப்பு 76-ல் தேர்ச்சி பெறுதல் (பகுதி V, அத்தியாயம் I - நிர்வாகம்).",
+        "இந்திய அரசின் தலைமை வழக்கறிஞரின் அரசியலமைப்பு நிலை மற்றும் ஒன்றிய அரசின் மிகவுயர்ந்த சட்ட அதிகாரி என்பதைப் புரிந்துகொள்ளுதல்.",
+        "அரசியலமைப்புப் பதவிகள், சட்டப்பூர்வ அமைப்புகள் மற்றும் நிர்வாக அமைப்புகளுக்கு இடையிலான வேறுபாட்டைப் தெளிவடைதல்.",
+        "உறுப்பு 76(1)-ன் கீழ் இந்தியக் குடியரசுத் தலைவரால் நியமிக்கப்படும் நியமன முறையைப் புரிந்துகொள்ளுதல் (நாடாளுமன்றத் தேர்தல் அல்ல).",
+        "தகுதி வரம்புகளை ஆராய்தல் (உறுப்பு 124(3)-ன் கீழ் உச்ச நீதிமன்ற நீதிபதியாக நியமிக்கப்படும் தகுதிகளைப் பெற்றிருக்க வேண்டும்).",
+        "பதவிக்காலம் மற்றும் குடியரசுத் தலைவரின் விருப்பக் கோட்பாட்டைப் புரிந்துகொள்ளுதல் (அரசியலமைப்பில் 5 ஆண்டுகள் என நிலையான பதவிக்காலம் இல்லை).",
+        "பதவி நீக்க முறையைப் புரிந்துகொள்ளுதல் (நாடாளுமன்ற குற்றச்சாட்டு/இம்பீச்மென்ட் நடைமுறை இல்லை; குடியரசுத் தலைவரால் நீக்கப்படுதல் அல்லது ராஜினாமா செய்தல்).",
+        "உறுப்பு 76(2)-ன் கீழ் முதன்மை கடமைகளை ஆராய்தல் (ஒன்றிய அரசுக்குச் சட்ட ஆலோசனை, குடியரசுத் தலைவர் வழங்கும் சட்டப் பணிகள்).",
+        "உறுப்பு 76(3)-ன் கீழ் இந்திய எல்லைக்குள் உள்ள அனைத்து நீதிமன்றங்களிலும் தோன்றி வழக்காடும் உரிமையைப் (Right of Audience) புரிந்துகொள்ளுதல்.",
+        "உறுப்பு 88-ன் கீழ் நாடாளுமன்ற நடவடிக்கைகளில் பங்கேற்கும் உரிமைகளை ஆராய்தல் (மக்களவை, மாநிலங்களவை, கூட்டு அமர்வு, நாடாளுமன்றக் குழுக்களில் பேசவும் பங்கேற்கவும் உரிமை உண்டு; ஆனால் வாக்களிக்கும் உரிமை இல்லை)."
+      ]
+    },
+    "Remember": {
+      "en": [
+        "Remember Article 76 is the constitutional source for Attorney General of India.",
+        "Remember AG is appointed by the President of India, NOT elected by Parliament.",
+        "Remember AG must be qualified to be a Supreme Court Judge.",
+        "Remember AG has NO fixed tenure and holds office during the pleasure of the President.",
+        "Remember AG is NOT removed by parliamentary impeachment.",
+        "Remember AG has the Right of Audience in ALL courts in India (Art 76(3)).",
+        "Remember AG can speak and participate in Parliament but CANNOT VOTE (Art 88)."
+      ],
+      "ta": [
+        "இந்திய தலைமை வழக்கறிஞருக்கான அரசியலமைப்பு ஆதாரம் உறுப்பு 76 என்பதை நினைவில் கொள்க.",
+        "தலைமை வழக்கறிஞர் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்; நாடாளுமன்றத்தால் தேர்ந்தெடுக்கப்படுவதில்லை என்பதை நினைவில் கொள்க.",
+        "தலைமை வழக்கறிஞர் உச்ச நீதிமன்ற நீதிபதிக்கான தகுதிகளைக் கொண்டிருக்க வேண்டும் என்பதை நினைவில் கொள்க.",
+        "தலைமை வழக்கறிஞருக்கு நிலையான பதவிக்காலம் இல்லை; குடியரசுத் தலைவரின் விருப்பம் உள்ளவரை பதவி வகிக்கிறார் என்பதை நினைவில் கொள்க.",
+        "தலைமை வழக்கறிஞர் நாடாளுமன்ற குற்றச்சாட்டு (Impeachment) மூலம் நீக்கப்படுவதில்லை என்பதை நினைவில் கொள்க.",
+        "இந்தியாவின் அனைத்து நீதிமன்றங்களிலும் தோன்றும் உரிமை தலைமை வழக்கறிஞருக்கு உண்டு (விதி 76(3)).",
+        "தலைமை வழக்கறிஞர் நாடாளுமன்றத்தில் பேசவும் பங்கேற்கவும் முடியும், ஆனால் வாக்களிக்க முடியாது (விதி 88)."
+      ]
+    }
+  },
+  "subject": "polity",
+  "topic": "Attorney General of India",
+  "language": "English + Tamil",
+  "ui_type": "standard_notes",
+  "sections": [
+    {
+      "id": "sec_ag_constitutional_basis",
+      "title_en": "1. Article 76 & Constitutional Basis of Attorney General of India",
+      "title_ta": "1. உறுப்பு 76 & இந்திய அரசின் தலைமை வழக்கறிஞரின் அரசியலமைப்பு அடிப்படை",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_ag_constitutional_status",
+      "title_en": "2. Constitutional Status — Constitutional Office vs Statutory vs Executive",
+      "title_ta": "2. அரசியலமைப்பு நிலை — அரசியலமைப்பு பதவி vs சட்டப்பூர்வ பதவி vs நிர்வாகப் பதவி",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_ag_appointment_qualifications",
+      "title_en": "3. Appointment & Constitutional Qualifications Framework",
+      "title_ta": "3. நியமனம் & அரசியலமைப்பு தகுதிகள் கட்டமைப்பு",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_ag_tenure_removal",
+      "title_en": "4. Tenure of Office & Removal Framework (Pleasure of President)",
+      "title_ta": "4. பதவிக்காலம் & பதவி நீக்கக் கட்டமைப்பு (குடியரசுத் தலைவரின் விருப்பம்)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_ag_duties_functions",
+      "title_en": "5. Constitutional Duties & Legal Advisory Role (Article 76(2))",
+      "title_ta": "5. அரசியலமைப்பு கடமைகள் & சட்ட ஆலோசனைப் பொறுப்பு (உறுப்பு 76(2))",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_ag_audience_parliament",
+      "title_en": "6. Right of Audience (Art 76(3)) & Parliamentary Role (Art 88)",
+      "title_ta": "6. நீதிமன்றங்களில் தோன்றும் உரிமை (விதி 76(3)) & நாடாளுமன்றப் பங்கேற்பு (விதி 88)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "comparison_tables",
+      "title_en": "7. Mandatory Comparison Tables (6 Tables)",
+      "title_ta": "7. கட்டாய ஒப்பீட்டு அட்டவணைகள் (6 அட்டவணைகள்)",
+      "type": "comparison"
+    },
+    {
+      "id": "mind_map",
+      "title_en": "8. Mind Map & TNPSC Trap Points",
+      "title_ta": "8. மன வரைபடம் & டிஎன்பிஎஸ்சி பொறிப் புள்ளிகள்",
+      "type": "mind_map"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "The Attorney General of India (AGI) is the highest law officer in the country, established under Article 76 in Part V (The Executive) of the Constitution of India. The Attorney General serves as the chief legal advisor to the Government of India and represents the Union Government in legal proceedings.",
+      "ta": "இந்திய அரசின் தலைமை வழக்கறிஞர் (Attorney General of India) என்பவர் நாட்டின் மிகவுயர்ந்த சட்ட அதிகாரி ஆவார். இவர் இந்திய அரசியலமைப்பின் பகுதி V-ல் (நிர்வாகம்) உறுப்பு 76-ன் கீழ் நிறுவப்பட்ட அரசியலமைப்பு அதிகாரி ஆவார். ஒன்றிய அரசுக்கு முதன்மை சட்ட ஆலோசகராகவும், நீதிமன்றங்களில் ஒன்றிய அரசைப் பிரதிநிதித்துவப்படுத்தும் அதிகாரியாகவும் இவர் செயல்படுகிறார்."
+    },
+    "introduction": {
+      "en": "The Office of Attorney General of India is an essential constitutional pillar ensuring that the executive governance of the Union aligns with constitutional law and statutory frameworks. Appointed by the President of India, the Attorney General possesses the unique constitutional privilege of participating in Parliamentary proceedings under Article 88 while holding the Right of Audience in all courts across India under Article 76(3).",
+      "ta": "இந்தியத் தலைமை வழக்கறிஞர் அலுவலகம் என்பது ஒன்றிய அரசின் நிர்வாக ஆட்சியை அரசியலமைப்புச் சட்டம் மற்றும் சட்டப்பூர்வக் கட்டமைப்புகளுடன் சீரமைப்பதை உறுதி செய்யும் ஓர் அத்தியாவசிய அரசியலமைப்புத் தூணாகும். இந்தியக் குடியரசுத் தலைவரால் நியமிக்கப்படும் தலைமை வழக்கறிஞர், உறுப்பு 76(3)-ன் கீழ் இந்தியா முழுவதும் உள்ள அனைத்து நீதிமன்றங்களிலும் தோன்றும் உரிமையையும், உறுப்பு 88-ன் கீழ் நாடாளுமன்ற நடவடிக்கைகளில் பங்கேற்கும் தனித்துவமான அரசியலமைப்புச் சலுகையையும் கொண்டுள்ளார்."
+    },
+    "sec_ag_constitutional_basis": [
+      {
+        "title_en": "Article 76 — The Constitutional Basis & Core Provisions",
+        "title_ta": "உறுப்பு 76 — அரசியலமைப்பு அடிப்படை & முதன்மை விதிகள்",
+        "points": {
+          "en": [
+            "Constitutional Location: Part V (The Union), Chapter I (The Executive), Article 76.",
+            "Article 76(1): The President shall appoint a person who is qualified to be appointed a Judge of the Supreme Court to be Attorney General for India.",
+            "Article 76(2): It shall be the duty of the Attorney General to give advice to the Government of India upon such legal matters, and to perform such other duties of a legal character, as may from time to time be referred or assigned to him by the President.",
+            "Article 76(3): In the performance of his duties the Attorney General shall have right of audience in all courts in the territory of India.",
+            "Article 76(4): The Attorney General shall hold office during the pleasure of the President, and shall receive such remuneration as the President may determine.",
+            "Key Takeaway: Article 76 is the single primary constitutional provision dedicated exclusively to the Office of Attorney General of India."
+          ],
+          "ta": [
+            "அரசியலமைப்பு இடம்: பகுதி V (ஒன்றியம்), அத்தியாயம் I (நிர்வாகம்), உறுப்பு 76.",
+            "உறுப்பு 76(1): உச்ச நீதிமன்ற நீதிபதியாக நியமிக்கப்படத் தகுதியுடைய ஒரு நபரை இந்தியக் குடியரசுத் தலைவர் இந்திய அரசின் தலைமை வழக்கறிஞராக நியமிக்க வேண்டும்.",
+            "உறுப்பு 76(2): இந்திய அரசுக்குச் சட்ட விவகாரங்களில் அறிவுரை வழங்குவதும், குடியரசுத் தலைவரால் அவ்வப்போது அனுப்பப்படும் அல்லது ஒப்படைக்கப்படும் சட்டப் பணிகளைச் செய்வதும் தலைமை வழக்கறிஞரின் கடமையாகும்.",
+            "உறுப்பு 76(3): தனது கடமைகளை நிறைவேற்றுவதில், இந்திய எல்லைக்குள் உள்ள அனைத்து நீதிமன்றங்களிலும் தோன்றி வழக்காடும் உரிமை (Right of Audience) தலைமை வழக்கறிஞருக்கு உண்டு.",
+            "உறுப்பு 76(4): தலைமை வழக்கறிஞர் குடியரசுத் தலைவரின் விருப்பம் உள்ளவரை பதவி வகிப்பார், மேலும் குடியரசுத் தலைவர் தீர்மானிக்கும் ஊதியத்தைப் பெறுவார்.",
+            "முக்கியக் குறிப்பு: இந்தியத் தலைமை வழக்கறிஞர் அலுவலகத்திற்காக மட்டுமே பிரத்யேகமாக ஒதுக்கப்பட்ட முதன்மை அரசியலமைப்பு விதி உறுப்பு 76 ஆகும்."
+          ]
+        }
+      }
+    ],
+    "sec_ag_constitutional_status": [
+      {
+        "title_en": "Constitutional Status — Constitutional Office vs Statutory vs Executive",
+        "title_ta": "அரசியலமைப்பு நிலை — அரசியலமைப்பு பதவி vs சட்டப்பூர்வ பதவி vs நிர்வாகப் பதவி",
+        "points": {
+          "en": [
+            "Constitutional Office: The Attorney General of India is a CONSTITUTIONAL OFFICE directly created by Article 76 of the Constitution.",
+            "Highest Law Officer: Formally recognized as the FIRST and HIGHEST LAW OFFICER of the Union Government of India.",
+            "Distinction from Statutory Offices: Offices created by an Act of Parliament (e.g., CVC, NHRC, NGT, Solicitor General) are Statutory. Attorney General is NOT statutory because it derives authority directly from Article 76.",
+            "Distinction from Executive Offices: Cabinet Secretaries and Departmental Secretaries are executive/civil service posts. AG is a constitutional law officer holding office during President's pleasure.",
+            "CRITICAL EXAM TRAP: Do NOT describe the Attorney General as a statutory office or a cabinet minister. It is strictly a Constitutional Office."
+          ],
+          "ta": [
+            "அரசியலமைப்புப் பதவி: இந்தியத் தலைமை வழக்கறிஞர் என்பது அரசியலமைப்பின் உறுப்பு 76-ன் மூலம் நேரடியாக உருவாக்கப்பட்ட ஒரு அரசியலமைப்புப் பதவியாகும் (Constitutional Office).",
+            "மிகவுயர்ந்த சட்ட அதிகாரி: இந்திய ஒன்றிய அரசின் முதல் மற்றும் மிகவுயர்ந்த சட்ட அதிகாரியாக (Highest Law Officer) அதிகாரப்பூர்வமாக அங்கீகரிக்கப்பட்டுள்ளார்.",
+            "சட்டப்பூர்வப் பதவிகளிலிருந்து வேறுபாடு: நாடாளுமன்றச் சட்டத்தின் மூலம் உருவாக்கப்படும் பதவிகள் (எ.கா: CVC, NHRC, NGT, சொல்சிட்டர் ஜெனரல்) சட்டப்பூர்வ அமைப்புகள் (Statutory) ஆகும். ஆனால் தலைமை வழக்கறிஞர் உறுப்பு 76-ல் நேரடியாக உருவாக்கப்படுவதால் சட்டப்பூர்வ அமைப்பு அல்ல; அரசியலமைப்பு அமைப்பாகும்.",
+            "நிர்வாகப் பதவிகளிலிருந்து வேறுபாடு: கேபினட் செயலாளர்கள் மற்றும் துறைச் செயலாளர்கள் நிர்வாக/குடிமைப் பணிகளாகும். AG என்பவர் குடியரசுத் தலைவரின் விருப்பத்தின் பேரில் பதவி வகிக்கும் அரசியலமைப்புச் சட்ட அதிகாரி ஆவார்.",
+            "முக்கியத் தேர்வுப் பொறி: தலைமை வழக்கறிஞரைச் சட்டப்பூர்வ அலுவலகம் என்றோ அல்லது கேபினட் அமைச்சர் என்றோ விவரிக்கக் கூடாது. இது திட்டவட்டமாக ஓர் அரசியலமைப்பு அலுவலகம் மட்டுமே."
+          ]
+        }
+      }
+    ],
+    "sec_ag_appointment_qualifications": [
+      {
+        "title_en": "Appointment & Qualification Framework (Article 76(1))",
+        "title_ta": "நியமனம் & தகுதிகள் கட்டமைப்பு (உறுப்பு 76(1))",
+        "points": {
+          "en": [
+            "Appointing Authority: Appointed by the PRESIDENT OF INDIA under Article 76(1).",
+            "Executive Discretion: Appointed on the advice of the Union Cabinet / Prime Minister.",
+            "NOT Elected: Attorney General is NOT elected by Parliament, Lok Sabha, or Rajya Sabha.",
+            "Qualification Standard: Must be qualified to be appointed as a JUDGE OF THE SUPREME COURT (as per Article 124(3)).",
+            "Constitutional Qualifications Required:",
+            "  1. Must be a CITIZEN OF INDIA; AND",
+            "  2. (a) Has been a Judge of a High Court for at least 5 YEARS; OR",
+            "     (b) Has been an Advocate of a High Court for at least 10 YEARS; OR",
+            "     (c) Is, in the opinion of the President, a DISTINGUISHED JURIST.",
+            "CRITICAL DISTINCTION: Do NOT confuse AG qualifications with MP qualifications (age 25/30) or Governor/President qualifications (age 35). The benchmark is strictly Supreme Court Judge qualifications."
+          ],
+          "ta": [
+            "நியமிக்கும் அதிகாரி: உறுப்பு 76(1)-ன் கீழ் இந்தியக் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்.",
+            "நிர்வாக ஆலோசனைகள்: ஒன்றிய அமைச்சரவை / பிரதமரின் ஆலோசனையின் பேரில் குடியரசுத் தலைவர் நியமிக்கிறார்.",
+            "தேர்ந்தெடுக்கப்படுவதில்லை: தலைமை வழக்கறிஞர் நாடாளுமன்றத்தாலோ, மக்களவையாலோ அல்லது மாநிலங்களவையாலோ தேர்ந்தெடுக்கப்படுவதில்லை.",
+            "தகுதி நிலை: உறுப்பு 124(3)-ன் படி உச்ச நீதிமன்ற நீதிபதியாக நியமிக்கப்படத் தேவையான அனைத்துத் தகுதிகளையும் கொண்டிருக்க வேண்டும்.",
+            "தேவையான அரசியலமைப்புத் தகுதிகள்:",
+            "  1. இந்தியக் குடிமகனாக இருக்க வேண்டும்; மற்றும்",
+            "  2. (அ) குறைந்தபட்சம் 5 ஆண்டுகள் உயர் நீதிமன்ற நீதிபதியாகப் பணியாற்றியிருக்க வேண்டும்; அல்லது",
+            "     (ஆ) குறைந்தபட்சம் 10 ஆண்டுகள் உயர் நீதிமன்ற வழக்கறிஞராகப் பணியாற்றியிருக்க வேண்டும்; அல்லது",
+            "     (இ) குடியரசுத் தலைவரின் பார்வையில் சிறப்புமிக்க சட்ட நிபுணராக (Distinguished Jurist) இருக்க வேண்டும்.",
+            "முக்கிய வேறுபாடு: AG தகுதிகளை MP தகுதிகளுடனோ (வயது 25/30) அல்லது ஆளுநர்/குடியரசுத் தலைவர் தகுதிகளுடனோ (வயது 35) குழப்பக் கூடாது. ஒப்பீட்டு தகுதி நிலை உச்ச நீதிமன்ற நீதிபதி தகுதி மட்டுமே."
+          ]
+        }
+      }
+    ],
+    "sec_ag_tenure_removal": [
+      {
+        "title_en": "Tenure of Office & Removal Framework (Pleasure of President)",
+        "title_ta": "பதவிக்காலம் & பதவி நீக்கக் கட்டமைப்பு (குடியரசுத் தலைவரின் விருப்பம்)",
+        "points": {
+          "en": [
+            "NO Fixed Tenure: The Constitution of India DOES NOT prescribe any fixed term of office (such as 5 years or 6 years) for the Attorney General.",
+            "Pleasure Principle (Article 76(4)): Holds office during the PLEASURE OF THE PRESIDENT. Can be removed by the President at any time without assigning any constitutional reason.",
+            "Convention on Government Change: Conventionally, when the Council of Ministers (Government) resigns or is replaced, the Attorney General also submits resignation, as AG is appointed on the advice of the government of the day.",
+            "Resignation Procedure: May resign from office at any time by submitting a written resignation letter addressed to the PRESIDENT OF INDIA.",
+            "NO Impeachment Procedure: Unlike Supreme Court judges (Art 124(4)) or CAG (Art 148), there is NO parliamentary impeachment procedure or statutory inquiry required for removing the Attorney General.",
+            "CRITICAL TNPSC TRAP: Stating 'AG has a fixed tenure of 5 years' or 'AG is impeached by Parliament' is 100% FALSE!"
+          ],
+          "ta": [
+            "நிலையான பதவிக்காலம் இல்லை: இந்திய அரசியலமைப்பு தலைமை வழக்கறிஞருக்கு எவ்வித நிலையான பதவிக் காலத்தையும் (5 ஆண்டுகள் அல்லது 6 ஆண்டுகள் போன்றவை) நிர்ணயிக்கவில்லை.",
+            "விருப்பக் கோட்பாடு (உறுப்பு 76(4)): குடியரசுத் தலைவரின் விருப்பம் உள்ளவரை (Pleasure of the President) பதவி வகிக்கிறார். குடியரசுத் தலைவரால் எப்போது வேண்டுமானாலும் எந்தவொரு அரசியலமைப்பு காரணமும் தெரிவிக்காமல் நீக்கப்படலாம்.",
+            "அரசு மாற்ற மரபு: ஒன்றிய அமைச்சரவை (அரசு) ராஜினாமா செய்யும் போதோ அல்லது மாற்றப்படும் போதோ, தலைமை வழக்கறிஞரும் தனது பதவி விலகலைச் சமர்ப்பிப்பது வழக்கம் (ஏனெனில் அப்போதைய ప్రభుత్వ ஆலோசனையினாலேயே நியமிக்கப்பட்டார்).",
+            "ராஜினாமா நடைமுறை: இந்தியக் குடியரசுத் தலைவருக்குத் தனது கையொப்பமிட்ட பதவி விலகல் கடிதத்தை அளித்து எப்போது வேண்டுமானாலும் பதவி விலகலாம்.",
+            "குற்றச்சாட்டு/இம்பீச்மென்ட் இல்லை: உச்ச நீதிமன்ற நீதிபதிகள் (விதி 124(4)) அல்லது CAG (விதி 148) போல தலைமை வழக்கறிஞரை நீக்க நாடாளுமன்ற குற்றச்சாட்டு நடைமுறையோ சட்டப்பூர்வ விசாரணையோ தேவையில்லை.",
+            "முக்கியத் தேர்வுப் பொறி: 'AG 5 ஆண்டுகள் நிலையான பதவிக்காலம் கொண்டவர்' அல்லது 'AG நாடாளுமன்றத்தால் இம்பீச் செய்யப்படுகிறார்' என்று கூறுவது 100% தவறானதாகும்!"
+          ]
+        }
+      }
+    ],
+    "sec_ag_duties_functions": [
+      {
+        "title_en": "Constitutional Duties & Legal Advisory Framework (Article 76(2))",
+        "title_ta": "அரசியலமைப்பு கடமைகள் & சட்ட ஆலோசனை கட்டமைப்பு (உறுப்பு 76(2))",
+        "points": {
+          "en": [
+            "Chief Legal Advisor: Gives legal advice to the Government of India on legal matters referred by the President.",
+            "Presidential References: Performs legal duties assigned by the President of India from time to time.",
+            "Constitutional Functions: Discharges functions conferred by the Constitution of India or any statutory law.",
+            "Representation in Supreme Court: Represents the Government of India in all cases in the Supreme Court in which the Union Government is concerned (under Presidential Order 1950).",
+            "Article 143 Representation: Represents the Government of India in any reference made by the President to the Supreme Court under Article 143 (Advisory Jurisdiction).",
+            "High Court Appearance: Appears in High Courts in cases involving the Government of India when requested by the Union Government.",
+            "NOT Personal Lawyer: AG is NOT a civil servant, does not handle every single routine routine case, and is not prohibited from private legal practice except against the Government of India."
+          ],
+          "ta": [
+            "முதன்மை சட்ட ஆலோசகர்: குடியரசுத் தலைவரால் அனுப்பப்படும் சட்ட விவகாரங்களில் இந்திய அரசுக்குச் சட்ட ஆலோசனை வழங்குகிறார்.",
+            "குடியரசுத் தலைவர் ஒப்படைப்புகள்: குடியரசுத் தலைவரால் அவ்வப்போது ஒப்படைக்கப்படும் சட்ட ரீதியிலான கடமைகளைச் செய்கிறார்.",
+            "அரசியலமைப்புப் பணிகள்: அரசியலமைப்பு அல்லது பிற சட்டங்கள் மூலம் வழங்கப்பட்ட சட்டப் பணிகளை நிறைவேற்றுகிறார்.",
+            "உச்ச நீதிமன்றப் பிரதிநிதித்துவம்: ஒன்றிய அரசு தொடர்பான அனைத்து வழக்குகளிலும் உச்ச நீதிமன்றத்தில் இந்திய அரசின் சார்பில் ஆஜராகி வழக்காடுகிறார் (1950 குடியரசுத் தலைவர் ஆணைப்படி).",
+            "உறுப்பு 143 பிரதிநிதித்துவம்: உறுப்பு 143-ன் கீழ் (ஆலோசனை அதிகாரம்) குடியரசுத் தலைவர் உச்ச நீதிமன்றத்திற்கு அனுப்பும் வினாக்களில் இந்திய அரசின் சார்பில் ஆஜராகிறார்.",
+            "உயர் நீதிமன்ற ஆஜர்: ஒன்றிய அரசு கேட்டுக்கொள்ளும் பட்சத்தில், இந்திய அரசு தொடர்பான வழக்குகளில் உயர் நீதிமன்றங்களிலும் ஆஜராகிறார்.",
+            "சொந்த வழக்கறிஞர் அல்ல: AG அரசு ஊழியர் (Civil Servant) அல்ல. அனைத்து அன்றாட வழக்குகளையும் தனிப்பட்ட முறையில் கையாள்வதில்லை. மேலும் இந்திய அரசுக்கு எதிராக வழக்காடாத வரை தனியார் சட்டப் பயிற்சி மேற்கொள்ளத் தடையில்லை."
+          ]
+        }
+      }
+    ],
+    "sec_ag_audience_parliament": [
+      {
+        "title_en": "Right of Audience (Art 76(3)) & Parliamentary Participation Rights (Art 88)",
+        "title_ta": "நீதிமன்றங்களில் தோன்றும் உரிமை (விதி 76(3)) & நாடாளுமன்றப் பங்கேற்பு (விதி 88)",
+        "points": {
+          "en": [
+            "Right of Audience (Article 76(3)): Attorney General has the RIGHT OF AUDIENCE in ALL COURTS within the territory of India while performing constitutional duties.",
+            "Parliamentary Participation (Article 88):",
+            "  • Has the right to speak and take part in the proceedings of Lok Sabha and Rajya Sabha.",
+            "  • Has the right to take part in Joint Sittings of both Houses of Parliament.",
+            "  • Has the right to be named a member of, and participate in, any Parliamentary Committee to which he may be named.",
+            "NO VOTING RIGHT (Article 88): Under Article 88, Attorney General DOES NOT HAVE A RIGHT TO VOTE in Parliament or its committees by virtue of office.",
+            "Privileges & Immunities (Article 105(4)): Under Article 105(4), Attorney General enjoys all parliamentary privileges and immunities available to a Member of Parliament when taking part in proceedings.",
+            "CRITICAL TRAP: Participation Rights != Voting Right. AG can speak and sit in Parliament, but CANNOT VOTE!"
+          ],
+          "ta": [
+            "நீதிமன்றங்களில் தோன்றும் உரிமை (உறுப்பு 76(3)): தனது கடமைகளைச் செய்யும் போது, இந்திய எல்லைக்குள் அமைந்துள்ள அனைத்து நீதிமன்றங்களிலும் தோன்றி வழக்காடும் உரிமை (Right of Audience) தலைமை வழக்கறிஞருக்கு உண்டு.",
+            "நாடாளுமன்றப் பங்கேற்பு உரிமைகள் (உறுப்பு 88):",
+            "  • மக்களவை மற்றும் மாநிலங்களவை நடவடிக்கைகளில் பேசவும் பங்கேற்கவும் உரிமை உண்டு.",
+            "  • நாடாளுமன்ற இரு அவைகளின் கூட்டு அமர்வில் (Joint Sitting) பங்கேற்க உரிமை உண்டு.",
+            "  • பெயரிடப்படும் எந்தவொரு நாடாளுமன்றக் குழுவிலும் உறுப்பினராகப் பெயரிடப்பட்டு பங்கேற்க உரிமை உண்டு.",
+            "வாக்களிக்கும் உரிமை இல்லை (உறுப்பு 88): உறுப்பு 88-ன் கீழ், தலைமை வழக்கறிஞருக்கு நாடாளுமன்றத்திலோ அல்லது அதன் குழுக்களிலோ வாக்களிக்கும் உரிமை (NO RIGHT TO VOTE) கிடையாது.",
+            "சலுகைகள் & விலக்களிப்புகள் (உறுப்பு 105(4)): உறுப்பு 105(4)-ன் படி, நாடாளுமன்ற நடவடிக்கைகளில் பங்கேற்கும் போது நாடாளுமன்ற உறுப்பினருக்குரிய (MP) அனைத்துச் சலுகைகளையும் விலக்களிப்புகளையும் AG அனுபவிக்கிறார்.",
+            "முக்கியத் தேர்வுப் பொறி: பங்கேற்கும் உரிமை ≠ வாக்களிக்கும் உரிமை. AG நாடாளுமன்றத்தில் பேசலாம், அமரலாம்; ஆனால் வாக்களிக்க முடியாது!"
+          ]
+        }
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "tbl_ag_vs_advocate_general_p1",
+        "title_en": "1. Attorney General of India vs Advocate General of the State",
+        "title_ta": "1. இந்தியத் தலைமை வழக்கறிஞர் vs மாநில அட்வகேட் ஜெனரல் ஒப்பீடு",
+        "headers_en": [
+          "Feature / Parameter",
+          "Attorney General of India (AGI)",
+          "Advocate General of the State"
+        ],
+        "headers_ta": [
+          "அம்சம் / காரணி",
+          "இந்தியத் தலைமை வழக்கறிஞர் (AGI)",
+          "மாநில அட்வகேட் ஜெனரல்"
+        ],
+        "rows_en": [
+          [
+            "Constitutional Provision",
+            "Article 76 (Part V - Union)",
+            "Article 165 (Part VI - State)"
+          ],
+          [
+            "Jurisdiction Level",
+            "Union Level (Government of India)",
+            "State Level (State Government)"
+          ],
+          [
+            "Appointing Authority",
+            "President of India",
+            "Governor of the State"
+          ],
+          [
+            "Qualification Benchmark",
+            "Qualified to be a Supreme Court Judge (Art 124(3))",
+            "Qualified to be a High Court Judge (Art 217(2))"
+          ],
+          [
+            "Legislature Participation",
+            "Participates in Parliament / Joint Sitting (Art 88)",
+            "Participates in State Legislature / Joint Houses (Art 177)"
+          ],
+          [
+            "Voting Privilege",
+            "No right to vote in Parliament",
+            "No right to vote in State Legislature"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "அரசியலமைப்பு விதி",
+            "உறுப்பு 76 (பகுதி V - ஒன்றியம்)",
+            "உறுப்பு 165 (பகுதி VI - மாநிலம்)"
+          ],
+          [
+            "அதிகார வரம்பு நிலை",
+            "ஒன்றிய நிலை (இந்திய அரசு)",
+            "மாநில நிலை (மாநில அரசு)"
+          ],
+          [
+            "நியமிக்கும் அதிகாரி",
+            "இந்தியக் குடியரசுத் தலைவர்",
+            "மாநில ஆளுநர்"
+          ],
+          [
+            "தகுதி நிலை",
+            "உச்ச நீதிமன்ற நீதிபதி தகுதி (விதி 124(3))",
+            "உயர் நீதிமன்ற நீதிபதி தகுதி (விதி 217(2))"
+          ],
+          [
+            "சட்டமன்றப் பங்கேற்பு",
+            "நாடாளுமன்றம் / கூட்டு அமர்வில் பங்கேற்பு (விதி 88)",
+            "மாநில சட்டமன்றத்தில் பங்கேற்பு (விதி 177)"
+          ],
+          [
+            "வாக்களிக்கும் உரிமை",
+            "நாடாளுமன்றத்தில் வாக்களிக்கும் உரிமை இல்லை",
+            "மாநில சட்டமன்றத்தில் வாக்களிக்கும் உரிமை இல்லை"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_ag_vs_solicitor_general_p1",
+        "title_en": "2. Attorney General vs Solicitor General of India",
+        "title_ta": "2. தலைமை வழக்கறிஞர் vs சொல்சிட்டர் ஜெனரல் ஒப்பீடு",
+        "headers_en": [
+          "Feature",
+          "Attorney General of India (AG)",
+          "Solicitor General of India (SG)"
+        ],
+        "headers_ta": [
+          "அம்சம்",
+          "இந்தியத் தலைமை வழக்கறிஞர் (AG)",
+          "இந்தியச் சொல்சிட்டர் ஜெனரல் (SG)"
+        ],
+        "rows_en": [
+          [
+            "Constitutional Status",
+            "Constitutional Office directly created by Article 76",
+            "Non-Constitutional / Statutory Law Officer (No Article)"
+          ],
+          [
+            "Officer Level",
+            "First & Highest Law Officer of the Union Government",
+            "Second Senior Law Officer assisting the Attorney General"
+          ],
+          [
+            "Parliament Right (Art 88)",
+            "Has constitutional right to speak/participate in Parliament",
+            "NO constitutional right under Article 88 to speak in Parliament"
+          ],
+          [
+            "Appointing Authority",
+            "President of India",
+            "Appointments Committee of the Cabinet (ACC)"
+          ],
+          [
+            "Constitutional Duties",
+            "Duties explicitly mandated under Article 76",
+            "Assists AG under Law Officers Terms & Conditions Rules"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "அரசியலமைப்பு நிலை",
+            "உறுப்பு 76-ன் கீழ் நேரடியாக உருவாக்கப்பட்ட அரசியலமைப்புப் பதவி",
+            "அரசியலமைப்பில் இல்லாத / சட்டப்பூர்வ சட்ட அதிகாரி (விதி இல்லை)"
+          ],
+          [
+            "அதிகாரி நிலை",
+            "ஒன்றிய அரசின் முதல் மற்றும் மிகவுயர்ந்த சட்ட அதிகாரி",
+            "தலைமை வழக்கறிஞருக்கு உதவும் இரண்டாவது மூத்த சட்ட அதிகாரி"
+          ],
+          [
+            "நாடாளுமன்ற உரிமை (விதி 88)",
+            "நாடாளுமன்றத்தில் பேச/பங்கேற்க அரசியலமைப்பு உரிமை உண்டு",
+            "உறுப்பு 88-ன் கீழ் நாடாளுமன்றத்தில் பேச அரசியலமைப்பு உரிமை இல்லை"
+          ],
+          [
+            "நியமிக்கும் அதிகாரி",
+            "இந்தியக் குடியரசுத் தலைவர்",
+            "அமைச்சரவையின் நியமனக் குழு (ACC)"
+          ],
+          [
+            "அரசியலமைப்பு கடமைகள்",
+            "உறுப்பு 76-ன் கீழ் வெளிப்படையாக வரையறுக்கப்பட்ட கடமைகள்",
+            "சட்ட அதிகாரிகள் சேவை விதிகளின் படி AG-க்கு உதவுதல்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_ag_vs_cag_p1",
+        "title_en": "3. Attorney General vs Comptroller and Auditor General (CAG)",
+        "title_ta": "3. தலைமை வழக்கறிஞர் vs தலைமை கணக்குத் தணிக்கையாளர் (CAG) ஒப்பீடு",
+        "headers_en": [
+          "Parameter",
+          "Attorney General of India (AG)",
+          "Comptroller & Auditor General (CAG)"
+        ],
+        "headers_ta": [
+          "அளவுரு",
+          "இந்தியத் தலைமை வழக்கறிஞர் (AG)",
+          "தலைமை கணக்குத் தணிக்கையாளர் (CAG)"
+        ],
+        "rows_en": [
+          [
+            "Constitutional Article",
+            "Article 76 (Part V Executive)",
+            "Article 148 (Part V Audit & Accounts)"
+          ],
+          [
+            "Primary Function",
+            "Chief Legal Adviser to Union Government",
+            "Guardian of Public Purse & Audit Authority"
+          ],
+          [
+            "Tenure Security",
+            "Holds office during Pleasure of President (No fixed term)",
+            "Fixed 6 years tenure or 65 years age (High Security)"
+          ],
+          [
+            "Removal Procedure",
+            "Removed by President at pleasure (No impeachment)",
+            "Removed on same grounds/manner as Supreme Court Judge"
+          ],
+          [
+            "Private Practice",
+            "Allowed private legal practice (with restrictions)",
+            "Strictly ineligible for further government employment"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "அரசியலமைப்பு விதி",
+            "உறுப்பு 76 (பகுதி V நிர்வாகம்)",
+            "உறுப்பு 148 (பகுதி V தணிக்கை & கணக்குகள்)"
+          ],
+          [
+            "முதன்மைப் பணி",
+            "ஒன்றிய அரசின் முதன்மைச் சட்ட ஆலோசகர்",
+            "பொது நிதியின் பாதுகாவலர் & தணிக்கை அதிகாரம்"
+          ],
+          [
+            "பதவிக்காலப் பாதுகாப்பு",
+            "குடியரசுத் தலைவரின் விருப்பம் உள்ளவரை (நிலையானTerm இல்லை)",
+            "நிலையான 6 ஆண்டுகள் பதவிக்காலம் அல்லது 65 வயது (உயர் பாதுகாப்பு)"
+          ],
+          [
+            "நீக்க நடைமுறை",
+            "குடியரசுத் தலைவர் விருப்பப்படி நீக்கம் (இம்பீச்மென்ட் இல்லை)",
+            "உச்ச நீதிமன்ற நீதிபதி போல சிறப்பு பெரும்பான்மை மூலம் நீக்கம்"
+          ],
+          [
+            "தனியார் பயிற்சி",
+            "தனியார் சட்டப் பயிற்சி மேற்கொள்ள அனுமதியுண்டு (கட்டுப்பாடுகளுடன்)",
+            "ஓய்வுக்குப் பின் அரசுப் பணிகளில் சேர முற்றிலும் தடையுண்டு"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_ag_vs_sc_judge_p1",
+        "title_en": "4. Attorney General vs Supreme Court Judge Comparison",
+        "title_ta": "4. தலைமை வழக்கறிஞர் vs உச்ச நீதிமன்ற நீதிபதி ஒப்பீடு",
+        "headers_en": [
+          "Dimension",
+          "Attorney General of India",
+          "Supreme Court Judge"
+        ],
+        "headers_ta": [
+          "காரணி",
+          "இந்தியத் தலைமை வழக்கறிஞர்",
+          "உச்ச நீதிமன்ற நீதிபதி"
+        ],
+        "rows_en": [
+          [
+            "Qualification",
+            "Must be qualified to be appointed as SC Judge",
+            "Appointed based on SC Judge qualification (Art 124(3))"
+          ],
+          [
+            "Nature of Office",
+            "Executive Law Officer / Legal Adviser",
+            "Judicial Authority / Adjudicator of Disputes"
+          ],
+          [
+            "Tenure",
+            "No fixed tenure (Pleasure of President)",
+            "Fixed tenure until age 65 years"
+          ],
+          [
+            "Removal",
+            "By President at pleasure without Parliament",
+            "By President only after Parliamentary Address (Special Majority)"
+          ],
+          [
+            "Parliament Rights",
+            "Can speak and participate in Parliament (Art 88)",
+            "Cannot participate in Parliament (Conduct protected Art 121)"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "தகுதி",
+            "உச்ச நீதிமன்ற நீதிபதியாக நியமிக்கப்பட தகுதி வேண்டும்",
+            "உறுப்பு 124(3) தகுதிகளின் அடிப்படையில் நியமனம்"
+          ],
+          [
+            "பதவியின் தன்மை",
+            "நிர்வாகச் சட்ட அதிகாரி / சட்ட ஆலோசகர்",
+            "நீதித்துறை அதிகாரம் / வழக்குகளைத் தீர்க்கும் நீதிபதி"
+          ],
+          [
+            "பதவிக்காலம்",
+            "நிலையான பதவிக்காலம் இல்லை (குடியரசுத் தலைவர் விருப்பம்)",
+            "65 வயது வரை நிலையான பதவிக்காலம்"
+          ],
+          [
+            "நீக்கம்",
+            "நாடாளுமன்றம் இன்றி குடியரசுத் தலைவரால் எப்போது வேண்டுமானாலும்",
+            "நாடாளுமன்ற சிறப்பு பெரும்பான்மை தீர்மானத்திற்குப் பின் மட்டுமே"
+          ],
+          [
+            "நாடாளுமன்ற உரிமைகள்",
+            "நாடாளுமன்றத்தில் பேசவும் பங்கேற்கவும் முடியும் (விதி 88)",
+            "நாடாளுமன்றத்தில் பங்கேற்க முடியாது (விதி 121 பாதுகாப்பு)"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_const_vs_statutory_office_p1",
+        "title_en": "5. Constitutional Office vs Statutory Office Framework",
+        "title_ta": "5. அரசியலமைப்பு அமைப்பு vs சட்டப்பூர்வ அமைப்பு ஒப்பீட்டுக் கட்டமைப்பு",
+        "headers_en": [
+          "Parameter",
+          "Constitutional Office (e.g., AG - Art 76)",
+          "Statutory Office (e.g., Solicitor General)"
+        ],
+        "headers_ta": [
+          "அளவுரு",
+          "அரசியலமைப்பு அமைப்பு (எ.கா: AG - விதி 76)",
+          "சட்டப்பூர்வ அமைப்பு (எ.கா: சொல்சிட்டர் ஜெனரல்)"
+        ],
+        "rows_en": [
+          [
+            "Source of Origin",
+            "Directly created by text of the Constitution",
+            "Created by an Act of Parliament / Rules"
+          ],
+          [
+            "Amendment Needed",
+            "Abolition/Change requires Constitutional Amendment",
+            "Can be altered/abolished by simple Parliamentary Act"
+          ],
+          [
+            "Article Mention",
+            "Possesses explicit Constitutional Article (Art 76)",
+            "No Constitutional Article exists"
+          ],
+          [
+            "Examples",
+            "AGI (Art 76), Advocate General (Art 165), CAG (Art 148)",
+            "Solicitor General, Additional Solicitor General, CVC, NHRC"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "தோற்றத்தின் ஆதாரம்",
+            "அரசியலமைப்பு உரையிலிருந்து நேரடியாக உருவாக்கப்படுகிறது",
+            "நாடாளுமன்றச் சட்டம் / விதிகளின் மூலம் உருவாக்கப்படுகிறது"
+          ],
+          [
+            "தேவைப்படும் திருத்தம்",
+            "மாற்றங்கள் செய்ய அரசியலமைப்புத் திருத்தம் தேவை",
+            "நாடாளுமன்ற சாதாரண சட்டத்தின் மூலம் மாற்றலாம்/நீக்கலாம்"
+          ],
+          [
+            "விதி குறிப்பிடல்",
+            "பிரத்யேக அரசியலமைப்பு விதியை உடையது (விதி 76)",
+            "எவ்வித அரசியலமைப்பு விதியும் கிடையாது"
+          ],
+          [
+            "எடுத்துக்காட்டுகள்",
+            "AGI (விதி 76), அட்வகேட் ஜெனரல் (விதி 165), CAG (விதி 148)",
+            "சொல்சிட்டர் ஜெனரல், கூடுதல் சொல்சிட்டர் ஜெனரல், CVC, NHRC"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_parl_participate_vs_vote_p1",
+        "title_en": "6. Parliament Participation Rights vs Voting Limitation (Article 88)",
+        "title_ta": "6. நாடாளுமன்றப் பங்கேற்பு உரிமைகள் vs வாக்களிக்கும் உரிமை வரம்பு (உறுப்பு 88)",
+        "headers_en": [
+          "Aspect",
+          "Allowed Rights (Article 88 & 105)",
+          "Prohibited / Restricted Rights (Article 88)"
+        ],
+        "headers_ta": [
+          "அம்சம்",
+          "அனுமதிக்கப்பட்ட உரிமைகள் (உறுப்பு 88 & 105)",
+          "தடுக்கப்பட்ட / வரம்பிற்குட்பட்ட உரிமைகள் (உறுப்பு 88)"
+        ],
+        "rows_en": [
+          [
+            "Speaking Privilege",
+            "Right to speak in Lok Sabha and Rajya Sabha",
+            "No right to vote on any Bill or Motion"
+          ],
+          [
+            "Joint Sitting Rights",
+            "Right to participate in Joint Sittings of Parliament",
+            "No right to vote during Joint Sitting divisions"
+          ],
+          [
+            "Committee Participation",
+            "Right to be named & speak in Parliamentary Committees",
+            "No right to vote in Committee decisions as AG"
+          ],
+          [
+            "Privileges",
+            "Enjoys all MP privileges under Article 105(4)",
+            "Is NOT an MP (Member of Parliament)"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "பேசும் சலுகை",
+            "மக்களவை மற்றும் மாநிலங்களவையில் பேச உரிமை உண்டு",
+            "எந்தவொரு மசோதா அல்லது தீர்மானத்தின் மீதும் வாக்களிக்க முடியாது"
+          ],
+          [
+            "கூட்டு அமர்வு உரிமைகள்",
+            "நாடாளுமன்றக் கூட்டு அமர்வில் பங்கேற்க உரிமை உண்டு",
+            "கூட்டு அமர்வு வாக்களிப்பின் போது வாக்களிக்க முடியாது"
+          ],
+          [
+            "குழுப் பங்கேற்பு",
+            "நாடாளுமன்றக் குழுக்களில் பெயரிடப்பட்டுப் பேச உரிமை உண்டு",
+            "குழு முடிவுகளின் போது வாக்களிக்கும் உரிமை இல்லை"
+          ],
+          [
+            "சலுகைகள்",
+            "உறுப்பு 105(4)-ன் கீழ் MP-க்குரிய அனைத்துச் சலுகைகளும் உண்டு",
+            "நாடாளுமன்ற உறுப்பினர் (MP) அல்ல"
+          ]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "Attorney General of India — Constitutional Position (Part 1)",
+        "short_label": "Attorney General Part 1",
+        "children": [
+          {
+            "title": "1. Constitutional Basis & Status",
+            "short_label": "Basis & Status",
+            "children": [
+              {
+                "title": "Article 76 (Part V Executive); Highest Law Officer of Union",
+                "short_label": "Article 76"
+              },
+              {
+                "title": "Constitutional Office (NOT Statutory; NOT Civil Servant)",
+                "short_label": "Constitutional Office"
+              }
+            ]
+          },
+          {
+            "title": "2. Appointment & Qualifications",
+            "short_label": "Appointment & Quals",
+            "children": [
+              {
+                "title": "Appointed by President on Cabinet advice; NOT elected by Parliament",
+                "short_label": "Appointed by President"
+              },
+              {
+                "title": "Qualified to be Supreme Court Judge (Citizen + 5 yrs HC Judge / 10 yrs HC Advocate / Distinguished Jurist)",
+                "short_label": "SC Judge Quals"
+              }
+            ]
+          },
+          {
+            "title": "3. Tenure & Removal Framework",
+            "short_label": "Tenure & Removal",
+            "children": [
+              {
+                "title": "NO Fixed Tenure; Holds office during Pleasure of President",
+                "short_label": "Pleasure of President"
+              },
+              {
+                "title": "Resigns to President; NO Parliamentary Impeachment required",
+                "short_label": "No Impeachment"
+              }
+            ]
+          },
+          {
+            "title": "4. Duties, Audience & Parliament Rights",
+            "short_label": "Duties & Rights",
+            "children": [
+              {
+                "title": "Gives Legal Advice to Govt; Performs legal duties assigned by President",
+                "short_label": "Legal Advice"
+              },
+              {
+                "title": "Right of Audience in ALL courts in India (Art 76(3))",
+                "short_label": "Right of Audience"
+              },
+              {
+                "title": "Can speak/participate in Parliament & Committees (Art 88); CANNOT VOTE",
+                "short_label": "Speak Yes, Vote NO"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": "1. Election vs Appointment Trap (தேர்தல் vs நியமனப் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Statements suggesting that the Attorney General is elected by Lok Sabha or Parliament.",
+            "FACT: Attorney General is strictly APPOINTED BY THE PRESIDENT of India under Article 76(1). There is NO election."
+          ],
+          "ta": [
+            "பொறி: தலைமை வழக்கறிஞர் மக்களவையாலோ அல்லது நாடாளுமன்றத்தாலோ தேர்ந்தெடுக்கப்படுகிறார் எனக் கூறும் வாக்கியங்கள்.",
+            "உண்மை: உறுப்பு 76(1)-ன் கீழ் தலைமை வழக்கறிஞர் குடியரசுத் தலைவரால் மட்டுமே நியமிக்கப்படுகிறார். அங்குத் தேர்தல் எதுவுமில்லை."
+          ]
+        }
+      },
+      {
+        "title": "2. Fixed Tenure Misconception Trap (நிலையான பதவிக்காலக் குழப்பப் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Believing that the Attorney General has a fixed term of 5 years like the President or Governor.",
+            "FACT: The Constitution prescribes NO FIXED TENURE. AG holds office during the PLEASURE OF THE PRESIDENT (Art 76(4))."
+          ],
+          "ta": [
+            "பொறி: தலைமை வழக்கறிஞர் குடியரசுத் தலைவர் அல்லது ஆளுநரைப் போல 5 ஆண்டுகள் நிலையான பதவிக்காலம் கொண்டவர் என நினைப்பது.",
+            "உண்மை: அரசியலமைப்பு எவ்வித நிலையான பதவிக் காலத்தையும் நிர்ணயிக்கவில்லை. AG குடியரசுத் தலைவரின் விருப்பம் உள்ளவரை (Pleasure of President) பதவி வகிக்கிறார்."
+          ]
+        }
+      },
+      {
+        "title": "3. Impeachment Procedure Trap (குற்றச்சாட்டு நடைமுறைப் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Assuming that Attorney General is removed by Parliament through impeachment like a Supreme Court judge.",
+            "FACT: Attorney General can be removed by the President at any time without any parliamentary address or impeachment process."
+          ],
+          "ta": [
+            "பொறி: உச்ச நீதிமன்ற நீதிபதியைப் போல தலைமை வழக்கறிஞரும் நாடாளுமன்ற குற்றச்சாட்டுத் தீர்மானம் (Impeachment) மூலம் நீக்கப்படுகிறார் என நினைப்பது.",
+            "உண்மை: நாடாளுமன்றத் தீர்மானம் எதுவுமின்றி குடியரசுத் தலைவரால் எப்போது வேண்டுமானாலும் தலைமை வழக்கறிஞர் பதவியிலிருந்து நீக்கப்படலாம்."
+          ]
+        }
+      },
+      {
+        "title": "4. Parliamentary Voting Right Trap (வாக்களிக்கும் உரிமைப் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Thinking that because AG can speak in Parliament, AG can also vote on bills.",
+            "FACT: Under Article 88, Attorney General can speak and participate in proceedings, but DOES NOT HAVE A RIGHT TO VOTE."
+          ],
+          "ta": [
+            "பொறி: AG நாடாளுமன்றத்தில் பேச முடியும் என்பதால் மசோதாக்களின் மீது வாக்களிக்கவும் முடியும் என நினைப்பது.",
+            "உண்மை: உறுப்பு 88-ன் கீழ் தலைமை வழக்கறிஞர் பேசவும் பங்கேற்கவும் மட்டுமே முடியும்; வாக்களிக்கும் உரிமை (NO RIGHT TO VOTE) கிடையாது."
+          ]
+        }
+      },
+      {
+        "title": "5. Statutory Office Classification Trap (சட்டப்பூர்வ அமைப்புக் குழப்பப் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Classifying Attorney General as a statutory officer or confusing AG with Solicitor General.",
+            "FACT: Attorney General is a CONSTITUTIONAL OFFICE (Article 76). Solicitor General is a statutory/executive non-constitutional post."
+          ],
+          "ta": [
+            "பொறி: தலைமை வழக்கறிஞரைச் சட்டப்பூர்வ அதிகாரி என வகைப்படுத்துவது அல்லது சொல்சிட்டர் ஜெனரலுடன் குழப்பிக் கொள்வது.",
+            "உண்மை: தலைமை வழக்கறிஞர் என்பவர் அரசியலமைப்புப் பதவி (உறுப்பு 76). சொல்சிட்டர் ஜெனரல் மட்டுமே சட்டப்பூர்வ/நிர்வாகப் பதவியாகும்."
+          ]
+        }
+      }
+    ],
+    "quick_revision": {
+      "en": [
+        "Constitutional Provision: Article 76 in Part V Chapter I (The Executive). Highest Law Officer of the Union Government.",
+        "Appointing Authority: Appointed by President of India on advice of Union Cabinet under Article 76(1). NOT elected.",
+        "Qualifications: Must be qualified to be appointed as a Supreme Court Judge (Citizen + 5 yrs HC Judge / 10 yrs HC Advocate / Distinguished Jurist).",
+        "Tenure & Removal: No fixed tenure; holds office during the pleasure of the President (Art 76(4)). Resigns to President; no impeachment.",
+        "Duties: Legal advice to Govt of India, legal duties assigned by President, functions under Constitution/laws (Art 76(2)).",
+        "Right of Audience: Right of audience in ALL courts in the territory of India (Art 76(3)).",
+        "Parliamentary Role: Right to speak & participate in Lok Sabha, Rajya Sabha, Joint Sittings & Committees (Art 88). NO RIGHT TO VOTE.",
+        "Privileges: Enjoys all MP privileges under Article 105(4) when participating in Parliament."
+      ],
+      "ta": [
+        "அரசியலமைப்பு விதி: பகுதி V அத்தியாயம் I-ல் உள்ள உறுப்பு 76 (நிர்வாகம்). ஒன்றிய அரசின் மிகவுயர்ந்த சட்ட அதிகாரி.",
+        "நியமிக்கும் அதிகாரி: உறுப்பு 76(1)-ன் கீழ் அமைச்சரவை ஆலோசனையின் படி குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார். தேர்ந்தெடுக்கப்படுவதில்லை.",
+        "தகுதிகள்: உச்ச நீதிமன்ற நீதிபதியாக நியமிக்கப்படும் தகுதியைப் பெற்றிருக்க வேண்டும் (குடிமகன் + 5 ஆண்டுகள் HC நீதிபதி / 10 ஆண்டுகள் HC வழக்கறிஞர் / சிறப்புமிக்க சட்ட நிபுணர்).",
+        "பதவிக்காலம் & நீக்கம்: நிலையான பதவிக்காலம் இல்லை; குடியரசுத் தலைவரின் விருப்பம் உள்ளவரை பதவி வகிக்கிறார். குடியரசுத் தலைவரிடம் ராஜினாமா; இம்பீச்மென்ட் இல்லை.",
+        "கடமைகள்: இந்திய அரசுக்குச் சட்ட ஆலோசனை, குடியரசுத் தலைவர் ஒப்படைக்கும் பணிகள், அரசியலமைப்பு கடமைகள் (விதி 76(2)).",
+        "தோன்றும் உரிமை: இந்திய எல்லைக்குள் உள்ள அனைத்து நீதிமன்றங்களிலும் தோன்றி வழக்காடும் உரிமை உண்டு (விதி 76(3)).",
+        "நாடாளுமன்றப் பங்கு: மக்களவை, மாநிலங்களவை, கூட்டு அமர்வு & குழுக்களில் பேசவும் பங்கேற்கவும் உரிமை உண்டு (விதி 88). வாக்களிக்கும் உரிமை இல்லை.",
+        "சலுகைகள்: நாடாளுமன்றத்தில் பங்கேற்கும் போது உறுப்பு 105(4)-ன் கீழ் MP-க்குரிய அனைத்துச் சலுகைகளையும் அனுபவிக்கிறார்."
+      ]
+    },
+    "must_remember": {
+      "en": [
+        "MUST REMEMBER: Article 76 is the sole constitutional provision establishing the Office of Attorney General of India.",
+        "MUST REMEMBER: Attorney General is the HIGHEST LAW OFFICER of the Union Government of India.",
+        "MUST REMEMBER: AG is appointed by the President, NOT elected by Parliament.",
+        "MUST REMEMBER: AG qualification benchmark is Supreme Court Judge (Art 124(3)).",
+        "MUST REMEMBER: AG has NO fixed tenure and holds office during the pleasure of the President.",
+        "MUST REMEMBER: AG can resign by writing under hand addressed to the President.",
+        "MUST REMEMBER: AG is NOT removed through parliamentary impeachment.",
+        "MUST REMEMBER: Article 76(3) grants AG the Right of Audience in ALL courts across India.",
+        "MUST REMEMBER: Article 88 allows AG to speak in Parliament but EXPLICITLY DENIES the Right to Vote.",
+        "MUST REMEMBER: Attorney General enjoys MP privileges under Article 105(4) during parliamentary participation."
+      ],
+      "ta": [
+        "நினைவில் கொள்க: இந்தியத் தலைமை வழக்கறிஞர் அலுவலகத்தை நிறுவும் ஒரே அரசியலமைப்பு விதி உறுப்பு 76 ஆகும்.",
+        "நினைவில் கொள்க: தலைமை வழக்கறிஞர் இந்திய ஒன்றிய அரசின் மிகவுயர்ந்த சட்ட அதிகாரி (Highest Law Officer) ஆவார்.",
+        "நினைவில் கொள்க: AG குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்; நாடாளுமன்றத்தால் தேர்ந்தெடுக்கப்படுவதில்லை.",
+        "நினைவில் கொள்க: AG தகுதி நிலை உச்ச நீதிமன்ற நீதிபதி தகுதி ஆகும் (விதி 124(3)).",
+        "நினைவில் கொள்க: AG-க்கு நிலையான பதவிக்காலம் இல்லை; குடியரசுத் தலைவரின் விருப்பம் உள்ளவரை பதவி வகிக்கிறார்.",
+        "நினைவில் கொள்க: AG குடியரசுத் தலைவரிடம் தனது கையொப்பமிட்ட பதவி விலகல் கடிதத்தை அளித்து விலகலாம்.",
+        "நினைவில் கொள்க: AG நாடாளுமன்ற குற்றச்சாட்டு (Impeachment) மூலம் நீக்கப்படுவதில்லை.",
+        "நினைவில் கொள்க: உறுப்பு 76(3) இந்தியா முழுவதிலும் உள்ள அனைத்து நீதிமன்றங்களிலும் தோன்றும் உரிமையை AG-க்கு அளிக்கிறது.",
+        "நினைவில் கொள்க: உறுப்பு 88 AG நாடாளுமன்றத்தில் பேச அனுமதிக்கிறது, ஆனால் வாக்களிக்கும் உரிமையைத் திட்டவட்டமாக மறுக்கிறது.",
+        "நினைவில் கொள்க: நாடாளுமன்றப் பங்கேற்பின் போது உறுப்பு 105(4)-ன் கீழ் MP-க்குரிய சலுகைகளை AG பெறுகிறார்."
+      ]
+    },
+    "revision_cards": [
+      {
+        "id": "ag_p1_c1",
+        "front_en": "Which Article of the Constitution of India provides for the Office of the Attorney General of India?",
+        "front_ta": "இந்தியத் தலைமை வழக்கறிஞர் அலுவலகத்திற்கு வழிகோலும் அரசியலமைப்பு உறுப்பு எது?",
+        "back_en": "ARTICLE 76 (Part V Chapter I — The Executive).",
+        "back_ta": "உறுப்பு 76 (பகுதி V அத்தியாயம் I — நிர்வாகம்)."
+      },
+      {
+        "id": "ag_p1_c2",
+        "front_en": "Who appoints the Attorney General of India under Article 76(1)?",
+        "front_ta": "உறுப்பு 76(1)-ன் கீழ் இந்தியத் தலைமை வழக்கறிஞரை நியமிப்பவர் யார்?",
+        "back_en": "The PRESIDENT OF INDIA (on advice of the Union Cabinet).",
+        "back_ta": "இந்தியக் குடியரசுத் தலைவர் (ஒன்றிய அமைச்சரவை ஆலோசனையின் படி)."
+      },
+      {
+        "id": "ag_p1_c3",
+        "front_en": "What is the qualification benchmark required for appointment as Attorney General of India?",
+        "front_ta": "இந்தியத் தலைமை வழக்கறிஞராக நியமிக்கப்படத் தேவையான தகுதி நிலை என்ன?",
+        "back_en": "Must be qualified to be appointed as a JUDGE OF THE SUPREME COURT (Art 124(3)).",
+        "back_ta": "உச்ச நீதிமன்ற நீதிபதியாக நியமிக்கப்படும் தகுதிகளைப் பெற்றிருக்க வேண்டும் (விதி 124(3))."
+      },
+      {
+        "id": "ag_p1_c4",
+        "front_en": "Is there any fixed term of office prescribed in the Constitution for the Attorney General?",
+        "front_ta": "தலைமை வழக்கறிஞருக்கு அரசியலமைப்பில் நிலையான பதவிக்காலம் ஏதேனும் நிர்ணயிக்கப்பட்டுள்ளதா?",
+        "back_en": "NO. The Constitution prescribes no fixed tenure. Holds office during PLEASURE OF THE PRESIDENT.",
+        "back_ta": "இல்லை. அரசியலமைப்பில் நிலையான பதவிக்காலம் இல்லை. குடியரசுத் தலைவரின் விருப்பம் உள்ளவரை பதவி வகிக்கிறார்."
+      },
+      {
+        "id": "ag_p1_c5",
+        "front_en": "Is the Attorney General removed through parliamentary impeachment?",
+        "front_ta": "தலைமை வழக்கறிஞர் நாடாளுமன்ற குற்றச்சாட்டுத் தீர்மானம் (Impeachment) மூலம் நீக்கப்படுகிறாரா?",
+        "back_en": "NO. AG is removed by the President at pleasure without any parliamentary impeachment procedure.",
+        "back_ta": "இல்லை. நாடாளுமன்றத் தீர்மானம் எதுவுமின்றி குடியரசுத் தலைவரால் எப்போது வேண்டுமானாலும் நீக்கப்படலாம்."
+      },
+      {
+        "id": "ag_p1_c6",
+        "front_en": "Which Article grants the Attorney General the Right of Audience in all courts across India?",
+        "front_ta": "இந்தியா முழுவதிலும் உள்ள அனைத்து நீதிமன்றங்களிலும் தோன்றும் உரிமையை தலைமை வழக்கறிஞருக்கு வழங்கும் உறுப்பு எது?",
+        "back_en": "ARTICLE 76(3).",
+        "back_ta": "உறுப்பு 76(3)."
+      },
+      {
+        "id": "ag_p1_c7",
+        "front_en": "Can the Attorney General speak and participate in Parliamentary proceedings under Article 88?",
+        "front_ta": "உறுப்பு 88-ன் கீழ் தலைமை வழக்கறிஞர் நாடாளுமன்ற நடவடிக்கைகளில் பேசவும் பங்கேற்கவும் முடியுமா?",
+        "back_en": "YES. AG has the right to speak and participate in Lok Sabha, Rajya Sabha, Joint Sittings & Committees.",
+        "back_ta": "ஆம். மக்களவை, மாநிலங்களவை, கூட்டு அமர்வு மற்றும் குழுக்களில் பேசவும் பங்கேற்கவும் உரிமை உண்டு."
+      },
+      {
+        "id": "ag_p1_c8",
+        "front_en": "Does the Attorney General have a right to vote in Parliament under Article 88?",
+        "front_ta": "உறுப்பு 88-ன் கீழ் தலைமை வழக்கறிஞருக்கு நாடாளுமன்றத்தில் வாக்களிக்கும் உரிமை உள்ளதா?",
+        "back_en": "NO. AG does NOT have a right to vote in Parliament.",
+        "back_ta": "இல்லை. தலைமை வழக்கறிஞருக்கு நாடாளுமன்றத்தில் வாக்களிக்கும் உரிமை கிடையாது."
+      },
+      {
+        "id": "ag_p1_c9",
+        "front_en": "Which Article provides parliamentary privileges to the Attorney General during participation?",
+        "front_ta": "நாடாளுமன்றப் பங்கேற்பின் போது தலைமை வழக்கறிஞருக்கு MP-க்குரிய சலுகைகளை வழங்கும் உறுப்பு எது?",
+        "back_en": "ARTICLE 105(4).",
+        "back_ta": "உறுப்பு 105(4)."
+      },
+      {
+        "id": "ag_p1_c10",
+        "front_en": "Is the Solicitor General of India a constitutional office under Article 76?",
+        "front_ta": "இந்தியச் சொல்சிட்டர் ஜெனரல் உறுப்பு 76-ன் கீழ் அமைந்த ஒரு அரசியலமைப்புப் பதவியா?",
+        "back_en": "NO. Solicitor General is a statutory/executive law officer. ONLY Attorney General is under Art 76.",
+        "back_ta": "இல்லை. சொல்சிட்டர் ஜெனரல் ஒரு சட்டப்பூர்வ/நிர்வாக அதிகாரி. தலைமை வழக்கறிஞர் மட்டுமே விதி 76-ன் கீழ் உள்ளவர்."
+      }
+    ]
+  }
+}
