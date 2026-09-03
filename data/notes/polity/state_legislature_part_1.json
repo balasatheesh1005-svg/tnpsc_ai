@@ -1,0 +1,808 @@
+{
+  "meta": {
+    "topic_id": "polity_state_legislature_part_1",
+    "repository_id": "polity_state_legislature",
+    "display_title": "State Legislature – Part 1: Foundation & Legislative Structure",
+    "part": 1,
+    "total_parts": 3,
+    "subject": "polity",
+    "chapter": "State Legislature",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "topic_id": "polity_state_legislature_part_1",
+    "repository_id": "polity_state_legislature",
+    "display_title": "State Legislature – Part 1: Foundation & Legislative Structure",
+    "part": 1,
+    "total_parts": 3,
+    "subject": "polity",
+    "chapter": "State Legislature",
+    "language": "English + Tamil"
+  },
+  "keywords": [
+    "State Legislature",
+    "மாநில சட்டமன்றம்",
+    "Legislative Assembly Vidhan Sabha",
+    "சட்டமன்றப் பேரவை விதான் சபா",
+    "Legislative Council Vidhan Parishad",
+    "சட்ட மேலவை விதான் பரிஷத்",
+    "Article 168",
+    "உறுப்பு 168",
+    "Article 169",
+    "உறுப்பு 169",
+    "Article 170",
+    "உறுப்பு 170",
+    "Article 171",
+    "உறுப்பு 171",
+    "Unicameral vs Bicameral",
+    "ஓரவை vs ஈரவை",
+    "Council Composition Formula",
+    "மேலவை அமைப்புச் சூத்திரம்",
+    "TNPSC Group 1 Polity Notes"
+  ],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [
+        "Understand Part VI Chapter III of the Constitution (Articles 168 to 212) governing State Legislatures.",
+        "Understand the distinction between Unicameral and Bicameral State Legislatures and the current 6 Bicameral States.",
+        "Understand Articles 168 to 176 covering composition, creation/abolition of councils, qualifications, and duration.",
+        "Understand the exact constitutional composition formula of the Legislative Council (1/3 local bodies, 1/12 graduates, 1/12 teachers, 1/3 MLAs, 1/6 Governor nomination).",
+        "Understand qualifications (25 yrs Assembly vs 30 yrs Council) and disqualifications under Articles 191 & 192."
+      ],
+      "ta": [
+        "மாநில சட்டமன்றங்களை ஒழுங்குபடுத்தும் அரசியலமைப்பின் பகுதி VI அத்தியாயம் III-ஐ (உறுப்புகள் 168 முதல் 212 வரை) புரிந்துகொள்ளுதல்.",
+        "ஓரவை மற்றும் ஈரவை மாநில சட்டமன்றங்கள் இடையேயான வேறுபாடு மற்றும் தற்போதுள்ள 6 ஈரவை மாநிலங்களைப் புரிந்துகொள்ளுதல்.",
+        "அமைப்பு, மேலவை உருவாக்கம்/நீக்கம், தகுதிகள் மற்றும் பதவிக்காலத்தைக் கையாளும் உறுப்புகள் 168 முதல் 176 வரை புரிந்துகொள்ளுதல்.",
+        "சட்ட மேலவையின் துல்லியமான அரசியலமைப்பு அமைப்புச் சூத்திரத்தைப் (1/3 உள்ளாட்சி, 1/12 பட்டதாரிகள், 1/12 ஆசிரியர்கள், 1/3 எம்.எல்.ஏ-க்கள், 1/6 ஆளுநர் நியமனம்) புரிந்துகொள்ளுதல்.",
+        "உறுப்புகள் 191 & 192-ன் கீழ் தகுதிகள் (சட்டமன்றம் 25 வயது vs மேலவை 30 வயது) மற்றும் தகுதிநீக்கங்களைப் புரிந்துகொள்ளுதல்."
+      ]
+    },
+    "Remember": {
+      "en": [
+        "Remember Article 168 mandates Governor + Assembly (+ Council where applicable) forms the State Legislature.",
+        "Remember Governor is an INTEGRAL PART of the State Legislature, but NOT a member of either House.",
+        "Remember Article 169 empowers Parliament to create or abolish Legislative Councils by simple majority based on Assembly special majority resolution.",
+        "Remember Legislative Assembly strength: Max 500, Min 60 (except small states like Sikkim 32, Mizoram 40, Goa 40, Puducherry 30).",
+        "Remember Legislative Council strength: Max 1/3rd of Assembly strength, Min 40.",
+        "Remember 6 States with Bicameral Legislatures: Andhra Pradesh, Telangana, Karnataka, Maharashtra, Uttar Pradesh, Bihar.",
+        "Remember Governor nominates 1/6th of Council members from Literature, Science, Art, Co-operative Movement, Social Service."
+      ],
+      "ta": [
+        "உறுப்பு 168 ஆளுநர் + சட்டமன்றப் பேரவை (+ பொருந்தும் இடங்களில் மேலவை) இணைந்து மாநில சட்டமன்றத்தை உருவாக்குகிறது என்பதை நினைவில் கொள்ளுதல்.",
+        "ஆளுநர் மாநில சட்டமன்றத்தின் ஓர் ஒருங்கிணைந்த அங்கம், ஆனால் எந்தவொரு அவையின் உறுப்பினரும் அல்ல என்பதை நினைவில் கொள்ளுதல்.",
+        "சட்டமன்றப் பேரவையின் சிறப்புப் பெரும்பான்மை தீர்மானத்தின் அடிப்படையில் எளிய பெரும்பான்மையால் மேலவையை உருவாக்கவோ நீக்கவோ நாடாளுமன்றத்திற்கு உறுப்பு 169 அதிகாரம் அளிக்கிறது என்பதை நினைவில் கொள்ளுதல்.",
+        "சட்டமன்றப் பேரவை பலம்: அதிகபட்சம் 500, குறைந்தபட்சம் 60 (சசிக்கிம் 32, மிசோரம் 40, கோவா 40, புதுச்சேரி 30 போன்ற சிறிய மாநிலங்கள் தவிர).",
+        "சட்ட மேலவை பலம்: பேரவை பலத்தில் அதிகபட்சம் 1/3 பங்கு, குறைந்தபட்சம் 40.",
+        "ஈரவை சட்டமன்றம் கொண்ட 6 மாநிலங்கள்: ஆந்திரப் பிரதேசம், தெலங்கானா, கர்நாடகம், மகாராஷ்டிரா, உத்தரப் பிரதேசம், பீகார்.",
+        "இலக்கியம், அறிவியல், கலை, கூட்டுறவு இயக்கம், சமூக சேவை ஆகியவற்றிலிருந்து மேலவையின் 1/6 பங்கு உறுப்பினர்களை ஆளுநர் நியமிக்கிறார்."
+      ]
+    },
+    "Analyze": {
+      "en": [
+        "Analyze why Co-operative Movement is included in Governor's nomination under Article 171 but NOT in President's nomination under Article 80.",
+        "Analyze why Legislative Council creation/abolition under Article 169 is NOT deemed a constitutional amendment under Article 368.",
+        "Analyze why Legislative Council is a permanent house (no dissolution) while Legislative Assembly can be dissolved earlier by Governor."
+      ],
+      "ta": [
+        "உறுப்பு 171-ன் கீழ் ஆளுநர் நியமனத்தில் 'கூட்டுறவு இயக்கம்' ஏன் சேர்க்கப்பட்டுள்ளது, ஆனால் உறுப்பு 80-ன் கீழ் குடியரசுத் தலைவர் நியமனத்தில் ஏன் சேர்க்கப்படவில்லை என பகுப்பாய்வு செய்தல்.",
+        "உறுப்பு 169-ன் கீழ் மேலவை உருவாக்கம்/நீக்கம் ஏன் உறுப்பு 368-ன் கீழ் அரசியலமைப்புத் திருத்தமாகக் கருதப்படுவதில்லை என பகுப்பாய்வு செய்தல்.",
+        "சட்டமன்றப் பேரவை ஆளுநரால் கலைக்கப்பட முடிந்தது என்றாலும், சட்ட மேலவை ஏன் ஒரு நிரந்தர அவையாக (கலைக்க முடியாது) உள்ளது என பகுப்பாய்வு செய்தல்."
+      ]
+    },
+    "Apply": {
+      "en": [
+        "Apply composition formulas to calculate graduate, teacher, MLA, and Governor nomination quotients in exam problems.",
+        "Eliminate distractor options on minimum age, house strength, and Article matching in TNPSC Group 1 questions."
+      ],
+      "ta": [
+        "தேர்வு வினாக்களில் பட்டதாரி, ஆசிரியர், எம்.எல்.ஏ மற்றும் ஆளுநர் நியமனப் பங்கீடுகளைக் கணக்கிட அமைப்புச் சூத்திரங்களைப் பயன்படுத்துதல்.",
+        "TNPSC குரூப் 1 வினாக்களில் குறைந்தபட்ச வயது, அவை பலம் மற்றும் உறுப்புகள் பொருத்துதல் குறித்த தவறான விருப்பங்களை நீக்குதல்."
+      ]
+    }
+  },
+  "subject": "polity",
+  "topic": "State Legislature",
+  "language": "English + Tamil",
+  "ui_type": "standard_notes",
+  "sections": [
+    {
+      "id": "sec_sl_introduction_framework",
+      "title_en": "1. Introduction, Constitutional Position & Legislative Architecture",
+      "title_ta": "1. அறிமுகம், அரசியலமைப்பு நிலை & சட்டவாக்க அமைப்பியல்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_sl_articles_168_176_map",
+      "title_en": "2. Constitutional Provisions Overview (Articles 168 to 176)",
+      "title_ta": "2. அரசியலமைப்பு விதிகள் கண்ணோட்டம் (உறுப்புகள் 168 முதல் 176 வரை)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_sl_unicameral_vs_bicameral",
+      "title_en": "3. Unicameral vs Bicameral Legislatures & 6 Bicameral States",
+      "title_ta": "3. ஓரவை vs ஈரவை சட்டமன்றங்கள் & 6 ஈரவை மாநிலங்கள்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_sl_assembly_composition_term",
+      "title_en": "4. Legislative Assembly (Vidhan Sabha): Composition & Term",
+      "title_ta": "4. சட்டமன்றப் பேரவை (விதான் சபா): அமைப்பு & பதவிக்காலம்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_sl_council_composition_formula",
+      "title_en": "5. Legislative Council (Vidhan Parishad): Composition Formula Breakdown",
+      "title_ta": "5. சட்ட மேலவை (விதான் பரிஷத்): அமைப்புச் சூத்திர விளக்கம்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_sl_qualifications_disqualifications",
+      "title_en": "6. Qualifications & Disqualifications of Members (Articles 173, 191, 192)",
+      "title_ta": "6. உறுப்பினர்களின் தகுதிகள் & தகுதிநீக்கங்கள் (உறுப்புகள் 173, 191, 192)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "comparison_tables",
+      "title_en": "7. Mandatory Comparison Tables (3 Master Tables)",
+      "title_ta": "7. கட்டாய ஒப்பீட்டு அட்டவணைகள் (3 முதன்மை அட்டவணைகள்)",
+      "type": "comparison"
+    },
+    {
+      "id": "mind_map",
+      "title_en": "8. Mind Map, TNPSC Tips & Trap Analysis",
+      "title_ta": "8. மன வரைபடம், டிஎன்பிஎஸ்சி குறிப்புகள் & பொறிப் பகுப்பாய்வு",
+      "type": "mind_map"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "The State Legislature is the constitutional legislative organ of a State in India, governed by Part VI, Chapter III (Articles 168 to 212). It consists of the Governor and the Legislative Assembly (Vidhan Sabha), along with the Legislative Council (Vidhan Parishad) in bicameral States.",
+      "ta": "மாநில சட்டமன்றம் என்பது இந்தியாவில் உள்ள ஒரு மாநிலத்தின் அரசியலமைப்பு சட்டவாக்க அங்கமாகும். இது பகுதி VI, அத்தியாயம் III (உறுப்புகள் 168 முதல் 212 வரை) மூலம் ஒழுங்குபடுத்தப்படுகிறது. இது ஆளுநர் மற்றும் சட்டமன்றப் பேரவையையும் (விதான் சபா), ஈரவை கொண்ட மாநிலங்களில் சட்ட மேலவையையும் (விதான் பரிஷத்) உள்ளடக்கியது."
+    },
+    "introduction": {
+      "en": "The Constitution provides a uniform pattern of governance for States, similar to the Parliamentary system at the Centre. Article 168 mandates that for every State there shall be a Legislature. While most Indian States have a unicameral system (Governor + Legislative Assembly), six States currently possess a bicameral system with an Upper House called the Legislative Council.",
+      "ta": "மத்தியில் உள்ள நாடாளுமன்ற முறையைப் போலவே, மாநிலங்களுக்கும் ஒரு சீரான ஆட்சி அமைப்பை அரசியலமைப்பு வழங்குகிறது. உறுப்பு 168 ஒவ்வொரு மாநிலத்திற்கும் ஒரு சட்டமன்றம் இருக்க வேண்டும் எனக் கட்டாயப்படுத்துகிறது. பெரும்பாலான இந்திய மாநிலங்கள் ஓரவை முறையைக் (ஆளுநர் + சட்டமன்றப் பேரவை) கொண்டிருந்தாலும், தற்போது ஆறு மாநிலங்கள் சட்ட மேலவை என்ற மேலவையுடன் கூடிய ஈரவை முறையைக் கொண்டுள்ளன."
+    },
+    "sec_sl_introduction_framework": [
+      {
+        "title": "1. Meaning and Constitutional Structure (மாநில சட்டமன்றத்தின் பொருள் மற்றும் அமைப்பியல்)",
+        "points": {
+          "en": [
+            "Constitutional Location: Part VI ('The States'), Chapter III ('The State Legislature'), Articles 168 to 212.",
+            "Integrity of Governor: Under Article 168, the Governor is an INTEGRAL PART of the State Legislature (just as the President is an integral part of Parliament under Article 79).",
+            "Governor's Status: The Governor is NOT a member of either House of the Legislature, but no Bill can become law without the Governor's assent.",
+            "Unicameral vs Bicameral: A State Legislature with one House (Legislative Assembly) is UNICAMERAL. A State Legislature with two Houses (Assembly + Council) is BICAMERAL."
+          ],
+          "ta": [
+            "அரசியலமைப்பு இடம்: பகுதி VI ('மாநிலங்கள்'), அத்தியாயம் III ('மாநில சட்டமன்றம்'), உறுப்புகள் 168 முதல் 212 வரை.",
+            "ஆளுநரின் அங்கம்: உறுப்பு 168-ன் கீழ், ஆளுநர் மாநில சட்டமன்றத்தின் ஓர் ஒருங்கிணைந்த அங்கமாவார் (நாடாளுமன்றத்தின் உறுப்பு 79-ன் கீழ் குடியரசுத் தலைவர் போல).",
+            "ஆளுநரின் நிலை: ஆளுநர் சட்டமன்றத்தின் எந்தவொரு அவையின் உறுப்பினரும் அல்ல, ஆனால் ஆளுநரின் ஒப்புதல் இன்றி எந்தவொரு மசோதாவும் சட்டமாக முடியாது.",
+            "ஓரவை vs ஈரவை: ஒரு அவையைக் (சட்டமன்றப் பேரவை) கொண்ட மாநில சட்டமன்றம் ஓரவை ஆகும். இரண்டு அவைகளைக் (பேரவை + மேலவை) கொண்ட மாநில சட்டமன்றம் ஈரவை ஆகும்."
+          ]
+        }
+      }
+    ],
+    "sec_sl_articles_168_176_map": [
+      {
+        "title": "1. Article-by-Article Constitutional Breakdown (உறுப்பு வாரியான அரசியலமைப்பு விளக்கம்)",
+        "points": {
+          "en": [
+            "Article 168: Constitution of Legislatures in States (Mandates Governor + Assembly + Council where applicable). TNPSC Clue: Defines structural composition.",
+            "Article 169: Abolition or creation of Legislative Councils in States. TNPSC Clue: Assembly passes resolution by SPECIAL MAJORITY -> Parliament passes law by SIMPLE MAJORITY. NOT an amendment under Article 368!",
+            "Article 170: Composition of the Legislative Assemblies (Vidhan Sabha). Max = 500, Min = 60. Direct election based on adult suffrage.",
+            "Article 171: Composition of the Legislative Councils (Vidhan Parishad). Max = 1/3rd of Assembly strength, Min = 40. Indirect election + Governor nomination.",
+            "Article 172: Duration of State Legislatures. Assembly = 5 years; Council = Permanent House (1/3 members retire every 2nd year).",
+            "Article 173: Qualification for membership. Citizen of India; Assembly age >= 25 years; Council age >= 30 years.",
+            "Article 174: Sessions of State Legislature, prorogation and dissolution by Governor. Maximum gap between sessions = 6 months.",
+            "Article 175: Right of Governor to address and send messages to House(s).",
+            "Article 176: Special address by Governor (First session after general election & first session of each year)."
+          ],
+          "ta": [
+            "உறுப்பு 168: மாநில சட்டமன்றங்களின் அமைப்பு (ஆளுநர் + பேரவை + பொருந்தும் இடங்களில் மேலவையைக் கட்டாயப்படுத்துகிறது). TNPSC குறிப்பு: அமைப்பியல் அமைப்பை வரையறுக்கிறது.",
+            "உறுப்பு 169: மாநிலங்களில் சட்ட மேலவைகளை உருவாக்குதல் அல்லது நீக்குதல். TNPSC குறிப்பு: பேரவை சிறப்புப் பெரும்பான்மையால் தீர்மானம் நிறைவேற்றும் -> நாடாளுமன்றம் எளிய பெரும்பான்மையால் சட்டம் இயற்றும். உறுப்பு 368-ன் கீழ் திருத்தம் அல்ல!",
+            "உறுப்பு 170: சட்டமன்றப் பேரவைகளின் (விதான் சபா) அமைப்பு. அதிகபட்சம் = 500, குறைந்தபட்சம் = 60. வயதுவந்தோர் வாக்குரிமை அடிப்படையில் நேரடித் தேர்தல்.",
+            "உறுப்பு 171: சட்ட மேலவைகளின் (விதான் பரிஷத்) அமைப்பு. அதிகபட்சம் = பேரவை பலத்தில் 1/3 பங்கு, குறைந்தபட்சம் = 40. மறைமுகத் தேர்தல் + ஆளுநர் நியமனம்.",
+            "உறுப்பு 172: மாநில சட்டமன்றங்களின் பதவிக்காலம். பேரவை = 5 ஆண்டுகள்; மேலவை = நிரந்தர அவை (ஒவ்வொரு 2வது ஆண்டிலும் 1/3 உறுப்பினர்கள் ஓய்வு).",
+            "உறுப்பு 173: உறுப்பினர் தகுதி. இந்தியக் குடிமகன்; பேரவை வயது >= 25 ஆண்டுகள்; மேலவை வயது >= 30 ஆண்டுகள்.",
+            "உறுப்பு 174: மாநில சட்டமன்றக் கூட்டத்தொடர்கள், ஆளுநரின் ஒத்திவைப்பு மற்றும் கலைப்பு. கூட்டத்தொடர்களுக்கு இடையேயான அதிகபட்ச இடைவெளி = 6 மாதங்கள்.",
+            "உறுப்பு 175: அவைகளுக்கு உரையாற்றவும் செய்திகளை அனுப்பவும் ஆளுநருக்கு உள்ள உரிமை.",
+            "உறுப்பு 176: ஆளுநரின் சிறப்பு உரை (பொதுத் தேர்தலுக்குப் பிந்தைய முதல் கூட்டத்தொடர் & ஒவ்வொரு ஆண்டின் முதல் கூட்டத்தொடர்)."
+          ]
+        }
+      }
+    ],
+    "sec_sl_unicameral_vs_bicameral": [
+      {
+        "title": "1. Unicameral vs Bicameral System & Current 6 Bicameral States (ஓரவை vs ஈரவை முறை & தற்போதைய 6 ஈரவை மாநிலங்கள்)",
+        "points": {
+          "en": [
+            "Unicameral System: Consists of Governor + Legislative Assembly only (22 out of 28 States in India). E.g., Tamil Nadu, Kerala, Punjab, West Bengal.",
+            "Bicameral System: Consists of Governor + Legislative Assembly (Lower House) + Legislative Council (Upper House) (6 out of 28 States).",
+            "VERIFIED CURRENT LIST OF 6 BICAMERAL STATES:",
+            "1. Andhra Pradesh (ஆந்திரப் பிரதேசம்)",
+            "2. Telangana (தெலங்கானா)",
+            "3. Karnataka (கர்நாடகம்)",
+            "4. Maharashtra (மகாராஷ்டிரா)",
+            "5. Uttar Pradesh (உத்தரப் பிரதேசம்)",
+            "6. Bihar (பீகார்)",
+            "Memory Shortcut Mnemonic: 'KUMBAT' or 'MABUTOK' (Karnataka, UP, Maharashtra, Bihar, Andhra Pradesh, Telangana).",
+            "Historical Note: Jammu & Kashmir Legislative Council was abolished by the J&K Reorganisation Act, 2019. Tamil Nadu Legislative Council was abolished with effect from November 1, 1986 (M.G. Ramachandran tenure)."
+          ],
+          "ta": [
+            "ஓரவை முறை: ஆளுநர் + சட்டமன்றப் பேரவை மட்டுமே கொண்டது (இந்தியாவில் 28 மாநிலங்களில் 22 மாநிலங்கள்). எ.கா: தமிழ்நாடு, கேரளா, பஞ்சாப், மேற்கு வங்கம்.",
+            "ஈரவை முறை: ஆளுநர் + சட்டமன்றப் பேரவை (கீழவை) + சட்ட மேலவை (மேலவை) கொண்டது (28 மாநிலங்களில் 6 மாநிலங்கள்).",
+            "சரிபார்க்கப்பட்ட தற்போதைய 6 ஈரவை மாநிலங்களின் பட்டியல்:",
+            "1. ஆந்திரப் பிரதேசம்",
+            "2. தெலங்கானா",
+            "3. கர்நாடகம்",
+            "4. மகாராஷ்டிரா",
+            "5. உத்தரப் பிரதேசம்",
+            "6. பீகார்",
+            "நினைவு குறுக்குவழி: 'KUMBAT' (கர்நாடகம், UP, மகாராஷ்டிரா, பீகார், ஆந்திரா, தெலங்கானா).",
+            "வரலாற்றுப் குறிப்பு: ஜம்மு & காஷ்மீர் சட்ட மேலவை 2019 மறுசீரமைப்புச் சட்டத்தால் நீக்கப்பட்டது. தமிழ்நாடு சட்ட மேலவை நவம்பர் 1, 1986 முதல் நீக்கப்பட்டது (எம்.ஜி.ஆர் பதவிக்காலம்)."
+          ]
+        }
+      }
+    ],
+    "sec_sl_assembly_composition_term": [
+      {
+        "title": "1. Legislative Assembly (Vidhan Sabha) Architecture (சட்டமன்றப் பேரவை அமைப்பியல்)",
+        "points": {
+          "en": [
+            "Nature: Popularly elected Lower House representing the people of the State.",
+            "Numerical Strength: Maximum limit = 500 members; Minimum limit = 60 members (Article 170).",
+            "Constitutional Exceptions for Smaller States: Sikkim = 32; Mizoram = 40; Goa = 40; Puducherry (UT) = 30.",
+            "Election Method: Directly elected by the voters of territorial constituencies on the basis of Universal Adult Suffrage (First-Past-The-Post system).",
+            "Reservation of Seats: Article 332 provides reservation of seats for Scheduled Castes (SC) and Scheduled Tribes (ST) based on population ratio (Extended till 2030 by 104th CAA 2019).",
+            "Anglo-Indian Nomination Discontinued: Nomination of 1 Anglo-Indian member by Governor under Article 333 was DISCONTINUED by the 104th CAA 2019.",
+            "Term & Dissolution: Normal term is 5 years from date of first meeting. Governor can dissolve Assembly at any time before 5 years. Term can be extended during National Emergency by Parliament for up to 1 year at a time (max 6 months after Emergency ceases)."
+          ],
+          "ta": [
+            "தன்மை: மாநில மக்களைப் பிரதிநிதித்துவப்படுத்தும் மக்களால் நேரடியாகத் தேர்ந்தெடுக்கப்படும் கீழவை.",
+            "எண்ணிக்கைப் பலம்: அதிகபட்ச வரம்பு = 500 உறுப்பினர்கள்; குறைந்தபட்ச வரம்பு = 60 உறுப்பினர்கள் (உறுப்பு 170).",
+            "சிறிய மாநிலங்களுக்கான அரசியலமைப்பு விதிவிலக்குகள்: சிக்கிம் = 32; மிசோரம் = 40; கோவா = 40; புதுச்சேரி (UT) = 30.",
+            "தேர்தல் முறை: வயதுவந்தோர் வாக்குரிமையின் அடிப்படையில் பிராந்தியத் தொகுதிகளின் வாக்காளர்களால் நேரடியாகத் தேர்ந்தெடுக்கப்படுகிறார்கள் (முதலில் இலக்கை அடைபவர் முறை).",
+            "இடஒதுக்கீடு: உறுப்பு 332 மக்கள் தொகை விகிதாச்சாரத்தின் அடிப்படையில் பட்டியல் சாதியினர் (SC) மற்றும் பட்டியல் பழங்குடியினருக்கு (ST) இடஒதுக்கீடு வழங்குகிறது (104வது திருத்தம் 2019-ன் படி 2030 வரை நீட்டிப்பு).",
+            "ஆங்கிலோ-இந்தியன் நியமனம் ரத்து: உறுப்பு 333-ன் கீழ் ஆளுநரால் 1 ஆங்கிலோ-இந்திய உறுப்பினர் நியமிக்கப்படும் விதி 104வது திருத்தம் 2019 மூலம் நீக்கப்பட்டது.",
+            "பதவிக்காலம் & கலைப்பு: சாதாரண பதவிக்காலம் முதல் கூட்ட தேதியிலிருந்து 5 ஆண்டுகள். 5 ஆண்டுகளுக்கு முன் ஆளுநர் எப்போது வேண்டுமானாலும் பேரவையைக் கலைக்கலாம். தேசிய அவசரநிலையின் போது நாடாளுமன்றத்தால் ஒரு நேரத்தில் 1 ஆண்டு வரை நீட்டிக்கப்படலாம் (அவசரநிலை முடிந்த பின் அதிகபட்சம் 6 மாதங்கள்)."
+          ]
+        }
+      }
+    ],
+    "sec_sl_council_composition_formula": [
+      {
+        "title": "1. Legislative Council (Vidhan Parishad) Composition Formula (சட்ட மேலவை அமைப்புச் சூத்திரம்)",
+        "points": {
+          "en": [
+            "Nature: Indirectly elected and nominated Upper House representing local bodies, graduates, teachers, MLAs, and special experts.",
+            "Numerical Limits (Article 171): Maximum strength = NOT MORE THAN 1/3rd of the total strength of the Legislative Assembly of that State; Minimum strength = NOT LESS THAN 40 members.",
+            "CONSTITUTIONAL COMPOSITION FORMULA (5 CATEGORIES):",
+            "1. One-Third (1/3rd): Elected by electorates consisting of members of Local Authorities (Municipalities, District Boards, Panchayat Samitis).",
+            "2. One-Twelfth (1/12th): Elected by electorates consisting of Graduates of 3 years standing residing in the State.",
+            "3. One-Twelfth (1/12th): Elected by electorates consisting of Teachers of at least 3 years standing in educational institutions not lower than secondary schools.",
+            "4. One-Third (1/3rd): Elected by members of the Legislative Assembly (MLAs) from amongst persons who are not members of the Assembly.",
+            "5. One-Sixth (1/6th): NOMINATED BY THE GOVERNOR from persons having special knowledge or practical experience in 5 fields: Literature, Science, Art, Co-operative Movement, and Social Service.",
+            "CRITICAL TNPSC EXAM FEATURE: 'Co-operative Movement' is present in Governor's nomination under Art 171, but ABSENT in President's nomination to Rajya Sabha under Art 80!"
+          ],
+          "ta": [
+            "தன்மை: உள்ளாட்சி அமைப்புகள், பட்டதாரிகள், ஆசிரியர்கள், எம்.எல்.ஏ-க்கள் மற்றும் சிறப்பு வல்லுநர்களைப் பிரதிநிதித்துவப்படுத்தும் மறைமுகமாகத் தேர்ந்தெடுக்கப்படும் மற்றும் நியமிக்கப்படும் மேலவை.",
+            "எண்ணிக்கை வரம்புகள் (உறுப்பு 171): அதிகபட்ச பலம் = அந்த மாநில சட்டமன்றப் பேரவையின் மொத்த பலத்தில் 1/3 பங்கிற்கு மிகாமல்; குறைந்தபட்ச பலம் = 40 உறுப்பினர்களுக்குக் குறையாமல்.",
+            "அரசியலமைப்பு அமைப்புச் சூத்திரம் (5 பகுப்புகள்):",
+            "1. மூன்றில் ஒரு பங்கு (1/3): உள்ளாட்சி அமைப்புகளின் உறுப்பினர்களைக் கொண்ட வாக்காளர் தொகுதியால் தேர்ந்தெடுக்கப்படுகிறார்கள் (நகராட்சிகள், மாவட்ட வாரியங்கள்).",
+            "2. பன்னிரண்டில் ஒரு பங்கு (1/12): மாநிலத்தில் வசிக்கும் 3 ஆண்டுகள் தேர்ச்சி பெற்ற பட்டதாரிகளைக் கொண்ட வாக்காளர் தொகுதியால் தேர்ந்தெடுக்கப்படுகிறார்கள்.",
+            "3. பன்னிரண்டில் ஒரு பங்கு (1/12): மேல்நிலைப்பள்ளிக்குக் குறையாத கல்வி நிறுவனங்களில் 3 ஆண்டுகள் அனுபவம் கொண்ட ஆசிரியர்களால் தேர்ந்தெடுக்கப்படுகிறார்கள்.",
+            "4. மூன்றில் ஒரு பங்கு (1/3): சட்டமன்றப் பேரவை உறுப்பினர்களால் (எம்.எல்.ஏ-க்கள்) பேரவை உறுப்பினர் அல்லாத நபர்களிலிருந்து தேர்ந்தெடுக்கப்படுகிறார்கள்.",
+            "5. ஆறில் ஒரு பங்கு (1/6): 5 துறைகளில் சிறப்பு அறிவு அல்லது நடைமுறை அனுபவம் உள்ள நபர்களிலிருந்து ஆளுநரால் நியமிக்கப்படுகிறார்கள்: இலக்கியம், அறிவியல், கலை, கூட்டுறவு இயக்கம், மற்றும் சமூக சேவை.",
+            "முக்கிய TNPSC தேர்வு அம்சம்: 'கூட்டுறவு இயக்கம்' உறுப்பு 171-ன் கீழ் ஆளுநர் நியமனத்தில் உள்ளது, ஆனால் உறுப்பு 80-ன் கீழ் மாநிலங்களவைக்குக் குடியரசுத் தலைவர் செய்யும் நியமனத்தில் இல்லை!"
+          ]
+        }
+      }
+    ],
+    "sec_sl_qualifications_disqualifications": [
+      {
+        "title": "1. Qualifications & Disqualifications of Members (உறுப்பினர்களின் தகுதிகள் & தகுதிநீக்கங்கள்)",
+        "points": {
+          "en": [
+            "Qualifications (Article 173): (1) Must be a Citizen of India; (2) Minimum Age: 25 years for Legislative Assembly, 30 years for Legislative Council; (3) Must subscribe to oath before ECI authorized officer; (4) Additional qualifications prescribed by Representation of the People Act, 1951.",
+            "Disqualifications (Article 191): (1) Holding any office of profit under Union/State Govt (other than Minister); (2) Unsound mind declared by competent court; (3) Undischarged insolvent; (4) Loss of Indian citizenship or voluntary foreign allegiance; (5) Disqualified under any law made by Parliament (RPA 1951); (6) Disqualified under 10th Schedule (Anti-Defection Law).",
+            "Decision on Disqualifications (Article 192): Question of disqualification under Article 191(1) is decided by the GOVERNOR after obtaining the BINDING OPINION of the Election Commission of India (ECI).",
+            "Anti-Defection Exception: Disqualification under 10th Schedule is decided by the SPEAKER (Assembly) or CHAIRMAN (Council), NOT the Governor."
+          ],
+          "ta": [
+            "தகுதிகள் (உறுப்பு 173): (1) இந்தியக் குடிமகனாக இருக்க வேண்டும்; (2) குறைந்தபட்ச வயது: சட்டமன்றப் பேரவைக்கு 25 ஆண்டுகள், சட்ட மேலவைக்கு 30 ஆண்டுகள்; (3) ECI அதிகாரியிடம் உறுதிமொழி ஏற்க வேண்டும்; (4) மக்கள் பிரதிநிதித்துவச் சட்டம் 1951 விதிக்கும் கூடுதல் தகுதிகள்.",
+            "தகுதிநீக்கங்கள் (உறுப்பு 191): (1) மத்திய/மாநில அரசில் ஆதாயம் தரும் பதவி வகித்தல் (அமைச்சர் தவிர); (2) நீதிமன்றத்தால் மனநலமற்றவர் என அறிவிக்கப்படுதல்; (3) தீர்க்கப்படாத திவாலானவர்; (4) இந்தியக் குடியுரிமை இழப்பு அல்லது வெளிநாட்டிற்கு விசுவாசம்; (5) நாடாளுமன்றச் சட்டத்தின் கீழ் (RPA 1951) தகுதிநீக்கம் செய்யப்படுதல்; (6) 10வது அட்டவணையின் கீழ் தகுதிநீக்கம் (கட்சித் தாவல் தடை).",
+            "தகுதிநீக்கம் குறித்த முடிவு (உறுப்பு 192): உறுப்பு 191(1)-ன் கீழ் தகுதிநீக்கம் குறித்த வினாவிற்கு இந்தியத் தேர்தல் ஆணையத்தின் (ECI) கட்டுப்படுத்தும் கருத்தைப் பெற்ற பிறகு ஆளுநர் முடிவெடுக்கிறார்.",
+            "கட்சித் தாவல் விதிவிலக்கு: 10வது அட்டவணையின் கீழ் தகுதிநீக்கம் சபாநாயகரால் (பேரவை) அல்லது தலைவரால் (மேலவை) தீர்மானிக்கப்படுகிறது, ஆளுநரால் அல்ல."
+          ]
+        }
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "tbl_unicameral_vs_bicameral_sl_p1",
+        "title_en": "1. Unicameral vs Bicameral State Legislature",
+        "title_ta": "1. ஓரவை vs ஈரவை மாநில சட்டமன்றம்",
+        "headers_en": [
+          "Comparison Dimension",
+          "Unicameral State Legislature",
+          "Bicameral State Legislature"
+        ],
+        "headers_ta": [
+          "ஒப்பீட்டுப் பரிமாணம்",
+          "ஓரவை மாநில சட்டமன்றம்",
+          "ஈரவை மாநில சட்டமன்றம்"
+        ],
+        "rows_en": [
+          [
+            "Number of Houses",
+            "Single House (Legislative Assembly only)",
+            "Two Houses (Legislative Assembly + Legislative Council)"
+          ],
+          [
+            "Constitutional Component",
+            "Governor + Legislative Assembly",
+            "Governor + Legislative Assembly + Legislative Council"
+          ],
+          [
+            "Prevalence in India",
+            "Prevalent in 22 out of 28 States (e.g., Tamil Nadu, Kerala)",
+            "Prevalent in 6 States (AP, Telangana, KN, MH, UP, Bihar)"
+          ],
+          [
+            "Legislative Delay Capacity",
+            "No second house delay; passed directly to Governor",
+            "Council can delay ordinary bills for up to 4 months total"
+          ],
+          [
+            "Creation / Abolition",
+            "Can become Bicameral under Article 169 resolution",
+            "Council can be abolished under Article 169 resolution"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "அவைகளின் எண்ணிக்கை",
+            "ஒற்றை அவை (சட்டமன்றப் பேரவை மட்டுமே)",
+            "இரண்டு அவைகள் (சட்டமன்றப் பேரவை + சட்ட மேலவை)"
+          ],
+          [
+            "அரசியலமைப்பு அங்கம்",
+            "ஆளுநர் + சட்டமன்றப் பேரவை",
+            "ஆளுநர் + சட்டமன்றப் பேரவை + சட்ட மேலவை"
+          ],
+          [
+            "இந்தியாவில் பரவல்",
+            "28-ல் 22 மாநிலங்களில் உள்ளது (எ.கா: தமிழ்நாடு, கேரளா)",
+            "6 மாநிலங்களில் உள்ளது (ஆந்திரா, தெலங்கானா, கர்நாடகம், மகாராஷ்டிரா, UP, பீகார்)"
+          ],
+          [
+            "சட்டவாக்கத் தாமத அதிகாரம்",
+            "இரண்டாவது அவை தாமதம் இல்லை; ஆளுநருக்கு நேரடியாக அனுப்பப்படும்",
+            "மேலவை சாதாரண மசோதாக்களை மொத்தம் 4 மாதங்கள் வரை தாமதிக்கலாம்"
+          ],
+          [
+            "உருவாக்கம் / நீக்கம்",
+            "உறுப்பு 169 தீர்மானம் மூலம் ஈரவையாக மாறலாம்",
+            "உறுப்பு 169 தீர்மானம் மூலம் மேலவை நீக்கப்படலாம்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_assembly_vs_council_structure_p1",
+        "title_en": "2. Legislative Assembly (Vidhan Sabha) vs Legislative Council (Vidhan Parishad)",
+        "title_ta": "2. சட்டமன்றப் பேரவை (விதான் சபா) vs சட்ட மேலவை (விதான் பரிஷத்)",
+        "headers_en": [
+          "Feature",
+          "Legislative Assembly (Lower House)",
+          "Legislative Council (Upper House)"
+        ],
+        "headers_ta": [
+          "அம்சம்",
+          "சட்டமன்றப் பேரவை (கீழவை)",
+          "சட்ட மேலவை (மேலவை)"
+        ],
+        "rows_en": [
+          [
+            "Popular Name",
+            "Vidhan Sabha / House of People's Representatives",
+            "Vidhan Parishad / House of Elders"
+          ],
+          [
+            "Nature of House",
+            "Temporary House (Subject to Dissolution)",
+            "Permanent House (Not Subject to Dissolution)"
+          ],
+          [
+            "Numerical Strength Limits",
+            "Max: 500 | Min: 60 (Art 170)",
+            "Max: 1/3rd of Assembly | Min: 40 (Art 171)"
+          ],
+          [
+            "Election Method",
+            "Direct Election by People (Adult Suffrage)",
+            "Indirect Election (5/6th) + Governor Nomination (1/6th)"
+          ],
+          [
+            "Minimum Age Limit",
+            "25 Years",
+            "30 Years"
+          ],
+          [
+            "Term of House / Members",
+            "5 Years for House (Unless dissolved earlier)",
+            "House is Permanent; 6 Years term for individual members"
+          ],
+          [
+            "Retirement System",
+            "All members retire together on dissolution",
+            "1/3rd of members retire every 2nd year"
+          ],
+          [
+            "Presiding Officers",
+            "Speaker & Deputy Speaker",
+            "Chairman & Deputy Chairman"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "பிரபலமான பெயர்",
+            "விதான் சபா / மக்கள் பிரதிநிதிகள் அவை",
+            "விதான் பரிஷத் / மூத்தோர் அவை"
+          ],
+          [
+            "அவையின் தன்மை",
+            "தற்காலிக அவை (கலைப்பிற்கு உட்பட்டது)",
+            "நிரந்தர அவை (கலைப்பிற்கு உட்பட்டது அல்ல)"
+          ],
+          [
+            "எண்ணிக்கைப் பல வரம்புகள்",
+            "அதிகபட்சம்: 500 | குறைந்தபட்சம்: 60 (உறுப்பு 170)",
+            "அதிகபட்சம்: பேரவையில் 1/3 | குறைந்தபட்சம்: 40 (உறுப்பு 171)"
+          ],
+          [
+            "தேர்தல் முறை",
+            "மக்களால் நேரடித் தேர்தல் (வயதுவந்தோர் வாக்குரிமை)",
+            "மறைமுகத் தேர்தல் (5/6) + ஆளுநர் நியமனம் (1/6)"
+          ],
+          [
+            "குறைந்தபட்ச வயது வரம்பு",
+            "25 ஆண்டுகள்",
+            "30 ஆண்டுகள்"
+          ],
+          [
+            "அவை / உறுப்பினர் பதவிக்காலம்",
+            "அவைக்கு 5 ஆண்டுகள் (முன்பே கலைக்கப்படாவிட்டால்)",
+            "அவை நிரந்தரமானது; தனிநபர் உறுப்பினருக்கு 6 ஆண்டுகள் பதவிக்காலம்"
+          ],
+          [
+            "ஓய்வு பெறும் முறை",
+            "கலைக்கப்படும் போது அனைத்து உறுப்பினர்களும் ஒன்றாக ஓய்வு பெறுகின்றனர்",
+            "ஒவ்வொரு 2வது ஆண்டிலும் 1/3 பங்கு உறுப்பினர்கள் ஓய்வு பெறுகின்றனர்"
+          ],
+          [
+            "தலைமை அதிகாரிகள்",
+            "சபாநாயகர் & துணை சபாநாயகர்",
+            "தலைவர் & துணைத் தலைவர்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_qualifications_assembly_vs_council_p1",
+        "title_en": "3. Qualifications & Disqualifications Summary",
+        "title_ta": "3. தகுதிகள் & தகுதிநீக்கங்கள் சுருக்கம்",
+        "headers_en": [
+          "Parameter",
+          "Legislative Assembly (MLA)",
+          "Legislative Council (MLC)"
+        ],
+        "headers_ta": [
+          "அளவுகோல்",
+          "சட்டமன்றப் பேரவை (MLA)",
+          "சட்ட மேலவை (MLC)"
+        ],
+        "rows_en": [
+          [
+            "Minimum Age",
+            "25 Years",
+            "30 Years"
+          ],
+          [
+            "Electoral Registration",
+            "Elector in any Assembly Constituency of the State",
+            "Elector in any Assembly Constituency of the State"
+          ],
+          [
+            "Nomination Qualification",
+            "N/A (Anglo-Indian nomination discontinued)",
+            "Resident of State for Governor Nomination (Art 171(5))"
+          ],
+          [
+            "Disqualification Authority (Art 192)",
+            "Governor (on binding opinion of ECI)",
+            "Governor (on binding opinion of ECI)"
+          ],
+          [
+            "Anti-Defection Authority (10th Sched)",
+            "Speaker of Legislative Assembly",
+            "Chairman of Legislative Council"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "குறைந்தபட்ச வயது",
+            "25 ஆண்டுகள்",
+            "30 ஆண்டுகள்"
+          ],
+          [
+            "வாக்காளர் பதிவு",
+            "மாநிலத்தின் ஏதேனும் ஒரு சட்டமன்றத் தொகுதியில் வாக்காளர்",
+            "மாநிலத்தின் ஏதேனும் ஒரு சட்டமன்றத் தொகுதியில் வாக்காளர்"
+          ],
+          [
+            "நியமனத் தகுதி",
+            "பொருந்தாது (ஆங்கிலோ-இந்தியன் நியமனம் ரத்து)",
+            "ஆளுநர் நியமனத்திற்கு மாநிலத்தின் வசிப்பாளர் (உறுப்பு 171(5))"
+          ],
+          [
+            "தகுதிநீக்க அதிகாரம் (உறுப்பு 192)",
+            "ஆளுநர் (ECI-ன் கட்டுப்படுத்தும் ஆலோசனையின் படி)",
+            "ஆளுநர் (ECI-ன் கட்டுப்படுத்தும் ஆலோசனையின் படி)"
+          ],
+          [
+            "கட்சித் தாவல் தடை அதிகாரம் (10வது அட்டவணை)",
+            "சட்டமன்றப் பேரவை சபாநாயகர்",
+            "சட்ட மேலவைத் தலைவர்"
+          ]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "State Legislature — Foundation & Architecture (Part 1)",
+        "short_label": "State Leg Part 1",
+        "children": [
+          {
+            "title": "1. Constitutional Basis (Part VI, Arts 168-176)",
+            "short_label": "Articles 168-176",
+            "children": [
+              {
+                "title": "Art 168: Governor + Assembly (+ Council)",
+                "short_label": "Art 168"
+              },
+              {
+                "title": "Art 169: Council Creation/Abolition (Not Art 368)",
+                "short_label": "Art 169"
+              }
+            ]
+          },
+          {
+            "title": "2. Unicameral vs Bicameral System",
+            "short_label": "6 Bicameral States",
+            "children": [
+              {
+                "title": "22 Unicameral States | 6 Bicameral States (KUMBAT)",
+                "short_label": "6 States"
+              },
+              {
+                "title": "AP, Telangana, Karnataka, Maharashtra, UP, Bihar",
+                "short_label": "State List"
+              }
+            ]
+          },
+          {
+            "title": "3. Houses Comparison & Composition",
+            "short_label": "Assembly & Council",
+            "children": [
+              {
+                "title": "Assembly (500 max, 60 min | 25 yrs age | Direct election)",
+                "short_label": "Assembly"
+              },
+              {
+                "title": "Council (1/3rd Assembly max, 40 min | 30 yrs age | Permanent)",
+                "short_label": "Council"
+              },
+              {
+                "title": "Council Formula: 1/3 local + 1/12 grad + 1/12 teach + 1/3 MLAs + 1/6 Gov Nom",
+                "short_label": "Composition Formula"
+              }
+            ]
+          },
+          {
+            "title": "4. Qualifications & Disqualifications",
+            "short_label": "Qual & Disqual",
+            "children": [
+              {
+                "title": "Art 173 Age (25 vs 30) | Art 191 Office of Profit",
+                "short_label": "Art 173 & 191"
+              },
+              {
+                "title": "Art 192 Disqualification by Governor + ECI opinion",
+                "short_label": "Art 192"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": "1. Governor as House Member Fallacy Trap (ஆளுநர் அவை உறுப்பினர் பற்றிய தவறான எண்ணப் பொறி)",
+        "points": {
+          "en": [
+            "COMMON DISTRACTOR: Statements claiming 'The Governor is a member of the State Legislative Assembly' or 'Governor presides over the Assembly'.",
+            "WHY IT LOOKS CORRECT: Under Article 168, the Governor is an integral component of the State Legislature, so candidates assume he is a member.",
+            "ACTUAL RULE: Governor is an INTEGRAL PART of the Legislature, but NOT A MEMBER of either House. The Speaker presides over Assembly; Chairman presides over Council.",
+            "ELIMINATION CLUE: If any statement says 'Governor is a member of Legislative Assembly', ELIMINATE IT IMMEDIATELY."
+          ],
+          "ta": [
+            "பொதுவான பொறி: 'ஆளுநர் மாநில சட்டமன்றப் பேரவையின் உறுப்பினர்' அல்லது 'ஆளுநர் பேரவைக்குத் தலைமை தாங்குகிறார்' என்று கூறும் கூற்றுகள்.",
+            "ஏன் சரியாகத் தெரிகிறது?: உறுப்பு 168-ன் கீழ் ஆளுநர் மாநில சட்டமன்றத்தின் ஓர் அங்கமாக இருப்பதால், அவர் ஓர் உறுப்பினர் என வேட்பாளர்கள் நினைக்கிறார்கள்.",
+            "உண்மையான விதி: ஆளுநர் சட்டமன்றத்தின் ஓர் ஒருங்கிணைந்த அங்கம், ஆனால் எந்த அவையின் உறுப்பினரும் அல்ல. பேரவைக்கு சபாநாயகரும், மேலவைக்குத் தலைவரும் தலைமை தாங்குவர்.",
+            "நீக்கல் குறிப்பு: 'ஆளுநர் சட்டமன்றப் பேரவையின் உறுப்பினர்' எனக் கூறும் கூற்றை உடனடியாக நீக்கவும்."
+          ]
+        }
+      },
+      {
+        "title": "2. Co-operative Movement Nomination Difference Trap (கூட்டுறவு இயக்கம் நியமன வேறுபாட்டுப் பொறி)",
+        "points": {
+          "en": [
+            "COMMON DISTRACTOR: Believing that fields for Governor's Council nomination (Art 171) and President's Rajya Sabha nomination (Art 80) are identical.",
+            "WHY IT LOOKS CORRECT: Both involve nominations by Executive Heads from special fields.",
+            "ACTUAL RULE: Art 80 (President) has 4 fields: Literature, Science, Art, Social Service. Art 171 (Governor) has 5 fields: Literature, Science, Art, CO-OPERATIVE MOVEMENT, Social Service.",
+            "ELIMINATION CLUE: 'Co-operative Movement' exists ONLY in State Legislative Council nomination (Governor), NOT in Rajya Sabha nomination (President)."
+          ],
+          "ta": [
+            "பொதுவான பொறி: ஆளுநரின் மேலவை நியமனத் துறைகளும் (உறுப்பு 171) குடியரசுத் தலைவரின் மாநிலங்களவை நியமனத் துறைகளும் (உறுப்பு 80) ஒன்றே என நம்புவது.",
+            "ஏன் சரியாகத் தெரிகிறது?: இரண்டும் சிறப்புத் துறைகளிலிருந்து நிர்வாகத் தலைவர்களால் செய்யப்படும் நியமனங்களை உள்ளடக்கியவை.",
+            "உண்மையான விதி: உறுப்பு 80 (குடியரசுத் தலைவர்) 4 துறைகளைக் கொண்டது: இலக்கியம், அறிவியல், கலை, சமூக சேவை. உறுப்பு 171 (ஆளுநர்) 5 துறைகளைக் கொண்டது: இலக்கியம், அறிவியல், கலை, கூட்டுறவு இயக்கம், சமூக சேவை.",
+            "நீக்கல் குறிப்பு: 'கூட்டுறவு இயக்கம்' என்பது மாநில சட்ட மேலவை நியமனத்தில் மட்டுமே உண்டு (ஆளுநர்), மாநிலங்களவை நியமனத்தில் இல்லை (குடியரசுத் தலைவர்)."
+          ]
+        }
+      },
+      {
+        "title": "3. Article 169 Amendment Status Trap (உறுப்பு 169 திருத்த நிலை பொறி)",
+        "points": {
+          "en": [
+            "COMMON DISTRACTOR: Believing that a law passed by Parliament under Article 169 to create/abolish a Legislative Council requires a Constitutional Amendment under Article 368.",
+            "WHY IT LOOKS CORRECT: It changes the structure of a State Legislature from Unicameral to Bicameral.",
+            "ACTUAL RULE: Article 169 explicitly states that such a law passed by Parliament is NOT to be deemed an amendment of the Constitution for the purposes of Article 368. It is passed by a Simple Majority in Parliament!",
+            "ELIMINATION CLUE: Assembly resolution = Special Majority | Parliamentary law under Art 169 = Simple Majority (Not Art 368)."
+          ],
+          "ta": [
+            "பொதுவான பொறி: சட்ட மேலவையை உருவாக்க/நீக்க உறுப்பு 169-ன் கீழ் நாடாளுமன்றம் இயற்றும் சட்டம் உறுப்பு 368-ன் கீழ் அரசியலமைப்பு திருத்தத்தைக் கோருகிறது என நம்புவது.",
+            "ஏன் சரியாகத் தெரிகிறது?: இது ஒரு மாநில சட்டமன்றத்தின் அமைப்பை ஓரவையிலிருந்து ஈரவையாக மாற்றுகிறது.",
+            "உண்மையான விதி: உறுப்பு 169-ன் கீழ் நாடாளுமன்றத்தால் இயற்றப்படும் சட்டம் உறுப்பு 368-ன் நோக்கங்களுக்கான அரசியலமைப்பு திருத்தமாகக் கருதப்படக் கூடாது எனத் தெளிவுபடுத்துகிறது. இது நாடாளுமன்றத்தில் எளிய பெரும்பான்மையால் நிறைவேற்றப்படுகிறது!",
+            "நீக்கல் குறிப்பு: பேரவைத் தீர்மானம் = சிறப்புப் பெரும்பான்மை | உறுப்பு 169 நாடாளுமன்றச் சட்டம் = எளிய பெரும்பான்மை (உறுப்பு 368 அல்ல)."
+          ]
+        }
+      },
+      {
+        "title": "4. Legislative Council Minimum Strength Exception Trap (சட்ட மேலவை குறைந்தபட்ச பலப் பொறி)",
+        "points": {
+          "en": [
+            "COMMON DISTRACTOR: Confusing Assembly minimum strength (60) with Council minimum strength (40).",
+            "WHY IT LOOKS CORRECT: Candidates swap the numbers 60 and 40 between the two Houses.",
+            "ACTUAL RULE: Legislative Assembly: Max 500, Min 60. Legislative Council: Max 1/3rd of Assembly, Min 40.",
+            "ELIMINATION CLUE: Remember: Assembly Min = 60 | Council Min = 40."
+          ],
+          "ta": [
+            "பொதுவான பொறி: பேரவையின் குறைந்தபட்ச பலத்தையும் (60) மேலவையின் குறைந்தபட்ச பலத்தையும் (40) குழப்பிக் கொள்வது.",
+            "ஏன் சரியாகத் தெரிகிறது?: வேட்பாளர்கள் 60 மற்றும் 40 ஆகிய எண்களை இரு அவைகளுக்கிடையே மாற்றி யோசிக்கிறார்கள்.",
+            "உண்மையான விதி: சட்டமன்றப் பேரவை: அதிகபட்சம் 500, குறைந்தபட்சம் 60. சட்ட மேலவை: அதிகபட்சம் பேரவையில் 1/3, குறைந்தபட்சம் 40.",
+            "நீக்கல் குறிப்பு: நினைவில் கொள்க: பேரவை குறைந்தபட்சம் = 60 | மேலவை குறைந்தபட்சம் = 40."
+          ]
+        }
+      }
+    ],
+    "important_facts": {
+      "en": [
+        "Part VI Chapter III (Articles 168 to 212) governs State Legislatures.",
+        "Governor is an integral part of State Legislature under Article 168, but not a member of either House.",
+        "Article 169 empowers Parliament to create/abolish Legislative Councils by Simple Majority based on Assembly Special Majority resolution.",
+        "There are currently 6 Bicameral States: AP, Telangana, Karnataka, Maharashtra, UP, Bihar (KUMBAT).",
+        "Assembly strength: Max 500, Min 60 (Sikkim 32, Mizoram 40, Goa 40, Puducherry 30 are exceptions).",
+        "Council strength: Max 1/3rd of Assembly strength, Min 40.",
+        "Council Composition: 1/3 local bodies + 1/12 graduates + 1/12 teachers + 1/3 MLAs + 1/6 Governor nomination.",
+        "Governor nominates 1/6th Council members from Literature, Science, Art, Co-operative Movement, Social Service.",
+        "Minimum Age: Assembly = 25 years | Council = 30 years.",
+        "Article 192: Disqualification under Art 191 is decided by Governor on binding opinion of Election Commission of India (except Anti-Defection which is decided by Speaker/Chairman)."
+      ],
+      "ta": [
+        "பகுதி VI அத்தியாயம் III (உறுப்புகள் 168 முதல் 212 வரை) மாநில சட்டமன்றங்களை ஒழுங்குபடுத்துகிறது.",
+        "உறுப்பு 168-ன் கீழ் ஆளுநர் மாநில சட்டமன்றத்தின் ஓர் ஒருங்கிணைந்த அங்கம், ஆனால் எந்த அவையின் உறுப்பினரும் அல்ல.",
+        "பேரவையின் சிறப்புப் பெரும்பான்மை தீர்மானத்தின் அடிப்படையில் எளிய பெரும்பான்மையால் மேலவையை உருவாக்க/நீக்க நாடாளுமன்றத்திற்கு உறுப்பு 169 அதிகாரம் அளிக்கிறது.",
+        "தற்போது 6 ஈரவை மாநிலங்கள் உள்ளன: ஆந்திரா, தெலங்கானா, கர்நாடகம், மகாராஷ்டிரா, UP, பீகார் (KUMBAT).",
+        "பேரவை பலம்: அதிகபட்சம் 500, குறைந்தபட்சம் 60 (சிக்கிம் 32, மிசோரம் 40, கோவா 40, புதுச்சேரி 30 விதிவிலக்குகள்).",
+        "மேலவை பலம்: அதிகபட்சம் பேரவையில் 1/3, குறைந்தபட்சம் 40.",
+        "மேலவை அமைப்பு: 1/3 உள்ளாட்சி + 1/12 பட்டதாரிகள் + 1/12 ஆசிரியர்கள் + 1/3 எம்.எல்.ஏ-க்கள் + 1/6 ஆளுநர் நியமனம்.",
+        "இலக்கியம், அறிவியல், கலை, கூட்டுறவு இயக்கம், சமூக சேவை ஆகியவற்றிலிருந்து 1/6 மேலவை உறுப்பினர்களை ஆளுநர் நியமிக்கிறார்.",
+        "குறைந்தபட்ச வயது: பேரவை = 25 ஆண்டுகள் | மேலவை = 30 ஆண்டுகள்.",
+        "உறுப்பு 192: உறுப்பு 191-ன் கீழ் தகுதிநீக்கம் இந்தியத் தேர்தல் ஆணையத்தின் கட்டுப்படுத்தும் ஆலோசனையின் படி ஆளுநரால் தீர்மானிக்கப்படுகிறது (கட்சி தாவல் தவிர)."
+      ]
+    },
+    "quick_revision": {
+      "en": [
+        "10-SEC REVISION: State Legislature (Part VI, Arts 168-212) | Governor + Assembly (+ Council) | 6 Bicameral States (KUMBAT) | Assembly 25 yrs (Min 60) | Council 30 yrs (Min 40).",
+        "30-SEC REVISION: Article 168 defines Legislature composition. Article 169 enables Council creation/abolition via Assembly Special Majority + Parliament Simple Majority (Not Art 368). Assembly has max 500, min 60 (Sikkim 32 exception). Council has max 1/3 Assembly strength, min 40. Council formula: 1/3 local + 1/12 grad + 1/12 teach + 1/3 MLAs + 1/6 Gov Nom (Co-operative Movement included). Disqualification decided by Governor + ECI opinion under Art 192.",
+        "2-MIN REVISION: Assembly is popularly elected for 5 years (can be dissolved earlier). Council is a permanent house (1/3 members retire every 2nd year, individual term 6 years). Governor is an integral part of Legislature but not a member of either House. 6 Bicameral States: Andhra Pradesh, Telangana, Karnataka, Maharashtra, UP, Bihar. Tamil Nadu Council abolished Nov 1, 1986. Disqualification under Art 191 (office of profit, etc.) decided by Governor via ECI; Anti-defection under 10th Schedule decided by Speaker/Chairman."
+      ],
+      "ta": [
+        "10-வினாடி திருப்புதல்: மாநில சட்டமன்றம் (பகுதி VI, உறுப்புகள் 168-212) | ஆளுநர் + பேரவை (+ மேலவை) | 6 ஈரவை மாநிலங்கள் (KUMBAT) | பேரவை 25 வயது (குறைந்தது 60) | மேலவை 30 வயது (குறைந்தது 40).",
+        "30-வினாடி திருப்புதல்: உறுப்பு 168 சட்டமன்ற அமைப்பை வரையறுக்கிறது. உறுப்பு 169 பேரவை சிறப்புப் பெரும்பான்மை + நாடாளுமன்ற எளிய பெரும்பான்மை மூலம் மேலவை உருவாக்கத்தை/நீக்கத்தை அனுமதிக்கிறது (உறுப்பு 368 அல்ல). பேரவை அதிகபட்சம் 500, குறைந்தபட்சம் 60 (சிக்கிம் 32 விதிவிலக்கு). மேலவை அதிகபட்சம் பேரவையில் 1/3, குறைந்தபட்சம் 40. மேலவை சூத்திரம்: 1/3 உள்ளாட்சி + 1/12 பட்டதாரி + 1/12 ஆசிரியர் + 1/3 எம்.எல்.ஏ + 1/6 ஆளுநர் நியமனம் (கூட்டுறவு இயக்கம் சேர்க்கப்பட்டுள்ளது). உறுப்பு 192-ன் கீழ் தகுதிநீக்கம் ஆளுநர் + ECI ஆலோசனை மூலம் தீர்மானிக்கப்படுகிறது.",
+        "2-நிமிட திருப்புதல்: பேரவை மக்களால் 5 ஆண்டுகளுக்குத் தேர்ந்தெடுக்கப்படுகிறது (முன்பே கலைக்கப்படலாம்). மேலவை ஒரு நிரந்தர அவை (ஒவ்வொரு 2வது ஆண்டிலும் 1/3 உறுப்பினர்கள் ஓய்வு, தனிநபர் பதவிக்காலம் 6 ஆண்டுகள்). ஆளுநர் சட்டமன்றத்தின் ஓர் அங்கம் ஆனால் எந்த அவையின் உறுப்பினரும் அல்ல. 6 ஈரவை மாநிலங்கள்: ஆந்திரா, தெலங்கானா, கர்நாடகம், மகாராஷ்டிரா, UP, பீகார். தமிழ்நாடு மேலவை நவம்பர் 1, 1986-ல் நீக்கப்பட்டது. உறுப்பு 191 தகுதிநீக்கம் ECI மூலம் ஆளுநரால் தீர்மானிக்கப்படுகிறது; 10வது அட்டவணை கட்சி தாவல் சபாநாயகர்/தலைவரால் தீர்மானிக்கப்படுகிறது."
+      ]
+    },
+    "revision_cards": [
+      {
+        "id": "sl_p1_c1",
+        "front_en": "Which Part and Chapter of the Constitution deal with State Legislature?",
+        "front_ta": "அரசியலமைப்பின் எந்தப் பகுதி மற்றும் அத்தியாயம் மாநில சட்டமன்றத்தைக் கையாள்கிறது?",
+        "back_en": "PART VI, CHAPTER III (ARTICLES 168 TO 212).",
+        "back_ta": "பகுதி VI, அத்தியாயம் III (உறுப்புகள் 168 முதல் 212 வரை)."
+      },
+      {
+        "id": "sl_p1_c2",
+        "front_en": "Is the Governor a member of the State Legislative Assembly?",
+        "front_ta": "ஆளுநர் மாநில சட்டமன்றப் பேரவையின் உறுப்பினரா?",
+        "back_en": "NO. The Governor is an INTEGRAL PART of the Legislature under Art 168, but NOT a member of either House.",
+        "back_ta": "இல்லை. ஆளுநர் உறுப்பு 168-ன் கீழ் சட்டமன்றத்தின் ஓர் அங்கம், ஆனால் எந்த அவையின் உறுப்பினரும் அல்ல."
+      },
+      {
+        "id": "sl_p1_c3",
+        "front_en": "Which Article provides for the creation or abolition of Legislative Councils in States?",
+        "front_ta": "மாநிலங்களில் சட்ட மேலவைகளை உருவாக்க அல்லது நீக்க வழிவகை செய்யும் உறுப்பு எது?",
+        "back_en": "ARTICLE 169 (Assembly Special Majority -> Parliament Simple Majority law).",
+        "back_ta": "உறுப்பு 169 (பேரவை சிறப்புப் பெரும்பான்மை -> நாடாளுமன்ற எளிய பெரும்பான்மை சட்டம்)."
+      },
+      {
+        "id": "sl_p1_c4",
+        "front_en": "Is a Parliamentary law passed under Article 169 considered a Constitutional Amendment under Article 368?",
+        "front_ta": "உறுப்பு 169-ன் கீழ் இயற்றப்படும் நாடாளுமன்றச் சட்டம் உறுப்பு 368-ன் கீழ் அரசியலமைப்பு திருத்தமாகக் கருதப்படுமா?",
+        "back_en": "NO. Article 169 explicitly states it is NOT deemed an amendment for the purposes of Article 368.",
+        "back_ta": "இல்லை. உறுப்பு 169 உறுப்பு 368-ன் நோக்கங்களுக்கான திருத்தமாகக் கருதப்படக் கூடாது எனத் தெளிவுபடுத்துகிறது."
+      },
+      {
+        "id": "sl_p1_c5",
+        "front_en": "Which 6 Indian States currently have a Bicameral Legislature?",
+        "front_ta": "தற்போது ஈரவை சட்டமன்றம் கொண்டுள்ள 6 இந்திய மாநிலங்கள் எவை?",
+        "back_en": "Andhra Pradesh, Telangana, Karnataka, Maharashtra, Uttar Pradesh, Bihar (Mnemonic: KUMBAT).",
+        "back_ta": "ஆந்திரப் பிரதேசம், தெலங்கானா, கர்நாடகம், மகாராஷ்டிரா, உத்தரப் பிரதேசம், பீகார் (KUMBAT)."
+      },
+      {
+        "id": "sl_p1_c6",
+        "front_en": "What are the maximum and minimum strength limits for Legislative Assemblies under Article 170?",
+        "front_ta": "உறுப்பு 170-ன் கீழ் சட்டமன்றப் பேரவைகளின் அதிகபட்ச மற்றும் குறைந்தபட்ச பல வரம்புகள் யாவை?",
+        "back_en": "MAXIMUM: 500 members | MINIMUM: 60 members (Exceptions: Sikkim 32, Mizoram 40, Goa 40, Puducherry 30).",
+        "back_ta": "அதிகபட்சம்: 500 உறுப்பினர்கள் | குறைந்தபட்சம்: 60 உறுப்பினர்கள் (விதிவிலக்குகள்: சிக்கிம் 32, மிசோரம் 40, கோவா 40, புதுச்சேரி 30)."
+      },
+      {
+        "id": "sl_p1_c7",
+        "front_en": "What are the maximum and minimum strength limits for Legislative Councils under Article 171?",
+        "front_ta": "உறுப்பு 171-ன் கீழ் சட்ட மேலவைகளின் அதிகபட்ச மற்றும் குறைந்தபட்ச பல வரம்புகள் யாவை?",
+        "back_en": "MAXIMUM: 1/3rd of total strength of Legislative Assembly | MINIMUM: 40 members.",
+        "back_ta": "அதிகபட்சம்: சட்டமன்றப் பேரவையின் மொத்த பலத்தில் 1/3 பங்கு | குறைந்தபட்சம்: 40 உறுப்பினர்கள்."
+      },
+      {
+        "id": "sl_p1_c8",
+        "front_en": "What fraction of Legislative Council members is nominated by the Governor, and from which 5 fields?",
+        "front_ta": "சட்ட மேலவை உறுப்பினர்களில் எந்தப் பங்கு ஆளுநரால் நியமிக்கப்படுகிறார்கள், எந்த 5 துறைகளிலிருந்து?",
+        "back_en": "ONE-SIXTH (1/6th), from Literature, Science, Art, Co-operative Movement, and Social Service.",
+        "back_ta": "ஆறில் ஒரு பங்கு (1/6), இலக்கியம், அறிவியல், கலை, கூட்டுறவு இயக்கம், மற்றும் சமூக சேவை ஆகியவற்றிலிருந்து."
+      },
+      {
+        "id": "sl_p1_c9",
+        "front_en": "What are the minimum age qualifications for Legislative Assembly and Legislative Council members?",
+        "front_ta": "சட்டமன்றப் பேரவை மற்றும் சட்ட மேலவை உறுப்பினர்களுக்கான குறைந்தபட்ச வயதுத் தகுதிகள் யாவை?",
+        "back_en": "Legislative Assembly (MLA): 25 YEARS | Legislative Council (MLC): 30 YEARS.",
+        "back_ta": "சட்டமன்றப் பேரவை (MLA): 25 ஆண்டுகள் | சட்ட மேலவை (MLC): 30 ஆண்டுகள்."
+      },
+      {
+        "id": "sl_p1_c10",
+        "front_en": "Who decides on the disqualification of a member under Article 191(1)?",
+        "front_ta": "உறுப்பு 191(1)-ன் கீழ் ஒரு உறுப்பினரின் தகுதிநீக்கம் குறித்து யார் முடிவெடுக்கிறார்?",
+        "back_en": "GOVERNOR, after obtaining the binding opinion of the Election Commission of India (ECI).",
+        "back_ta": "இந்தியத் தேர்தல் ஆணையத்தின் (ECI) கட்டுப்படுத்தும் கருத்தைப் பெற்ற பிறகு ஆளுநர்."
+      }
+    ]
+  }
+}

@@ -1,0 +1,1724 @@
+{
+  "meta": {
+    "topic_id": "polity_election_commission_part_2",
+    "repository_id": "polity_election_commission",
+    "display_title": "Election Commission & Electoral System – Part 2: Electoral System & Election Process",
+    "part": 2,
+    "total_parts": 3,
+    "subject": "polity",
+    "chapter": "Election Commission",
+    "language": "English + Tamil"
+  },
+  "metadata": {
+    "topic_id": "polity_election_commission_part_2",
+    "repository_id": "polity_election_commission",
+    "display_title": "Election Commission & Electoral System – Part 2: Electoral System & Election Process",
+    "part": 2,
+    "total_parts": 3,
+    "subject": "polity",
+    "chapter": "Election Commission",
+    "language": "English + Tamil"
+  },
+  "keywords": [
+    "Electoral System First Past the Post FPTP",
+    "தேர்தல் முறை அதிக வாக்குகள் பெற்றவர் வெற்றி முறை",
+    "Proportional Representation Single Transferable Vote STV",
+    "விகிதாசார பிரதிநிதித்துவம் ஒற்றை மாற்றத்தக்க வாக்கு",
+    "Direct vs Indirect Elections Lok Sabha Rajya Sabha",
+    "நேரடி vs மறைமுகத் தேர்தல்கள் மக்களவை மாநிலங்களவை",
+    "Presidential Election Electoral College STV Quota",
+    "குடியரசுத் தலைவர் தேர்தல் வாக்காளர் குழும வாக்கு முறை",
+    "Vice Presidential Election Electoral College",
+    "துணைக் குடியரசுத் தலைவர் தேர்தல் வாக்காளர் குழுமம்",
+    "State Legislative Council Election Categories",
+    "மாநில சட்டமன்ற மேலவை தேர்தல் பிரிவுகள்",
+    "Chronological Election Process Notification Polling Counting",
+    "காலவரிசை தேர்தல் செயல்முறை அறிவிப்பு வாக்குப்பதிவு எண்ணுதல்",
+    "EVM VVPAT Electronic Voting Machine NOTA",
+    "மின்னணு வாக்குப்பதிவு இயந்திரம் VVPAT நோட்டா",
+    "Model Code of Conduct MCC Enforcement",
+    "மாதிரி நடத்தை விதிமுறை MCC அமலாக்கம்",
+    "Election Petition High Court Article 329",
+    "தேர்தல் மனு உயர் நீதிமன்றம் உறுப்பு 329",
+    "TNPSC Group 1 Election Process Notes"
+  ],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [
+        "Understand the working mechanics of First-Past-the-Post (FPTP) system used for Lok Sabha and State Legislative Assembly elections.",
+        "Understand the mechanics of Proportional Representation by means of Single Transferable Vote (PR-STV) used for Rajya Sabha, State Legislative Council, President, and Vice-President elections.",
+        "Understand the composition of Electoral Colleges for Presidential and Vice-Presidential elections and their constitutional differences.",
+        "Understand the chronological step-by-step election process from notification to declaration of results.",
+        "Understand the legal and operational status of NOTA, Model Code of Conduct (MCC), EVM-VVPAT auditing, and Election Petitions."
+      ],
+      "ta": [
+        "மக்களவை மற்றும் மாநில சட்டமன்றத் தேர்தல்களுக்குப் பயன்படுத்தப்படும் அதிக வாக்குகள் பெற்றவர் வெற்றி முறையின் (FPTP) செயல்பாடுகளைப் புரிந்துகொள்ளுதல்.",
+        "மாநிலங்களவை, சட்ட மேலவை, குடியரசுத் தலைவர் மற்றும் துணைக் குடியரசுத் தலைவர் தேர்தல்களுக்குப் பயன்படுத்தப்படும் ஒற்றை மாற்றத்தக்க வாக்கு மூலமான விகிதாசார பிரதிநிதித்துவ முறையின் (PR-STV) செயல்பாடுகளைப் புரிந்துகொள்ளுதல்.",
+        "குடியரசுத் தலைவர் மற்றும் துணைக் குடியரசுத் தலைவர் தேர்தல்களுக்கான வாக்காளர் குழுமங்களின் (Electoral Colleges) கட்டமைப்பு மற்றும் அவற்றின் அரசியலமைப்பு வேறுபாடுகளைப் புரிந்துகொள்ளுதல்.",
+        "தேர்தல் அறிவிப்பு முதல் முடிவுகள் அறிவிப்பு வரையிலான காலவரிசைப்படி தேர்தல் செயல்முறையைப் புரிந்துகொள்ளுதல்.",
+        "நோட்டா (NOTA), மாதிரி நடத்தை விதிமுறை (MCC), EVM-VVPAT கணக்காய்வு மற்றும் தேர்தல் மனுக்களின் சட்டப்பூர்வ மற்றும் செயல்பாட்டு நிலையைப் புரிந்துகொள்ளுதல்."
+      ]
+    },
+    "Remember": {
+      "en": [
+        "Remember FPTP requires simple plurality (highest votes), NOT necessarily 50%+1 absolute majority.",
+        "Remember Presidential Electoral College excludes nominated members, whereas Vice-Presidential Electoral College includes nominated MPs of both Houses.",
+        "Remember Rajya Sabha elections use PR-STV with OPEN BALLOT system.",
+        "Remember NOTA (2013 SC ruling) does NOT automatically invalidate an election even if NOTA receives the highest number of votes.",
+        "Remember Election Petition can ONLY be presented to the High Court after election completion under Section 80 of RPA 1951."
+      ],
+      "ta": [
+        "FPTP அதிக வாக்குகளை (Plurality) மட்டுமே கோருகிறதே தவிர கட்டாயமாக 50%+1 தனிப் பெரும்பான்மையைக் கோருவதில்லை என்பதை நினைவில் கொள்ளுதல்.",
+        "குடியரசுத் தலைவர் வாக்காளர் குழுமம் நியமன உறுப்பினர்களை விலக்குகிறது, அதே சமயம் துணைக் குடியரசுத் தலைவர் வாக்காளர் குழுமம் இரு அவைகளின் நியமன எம்பிக்களையும் உள்ளடக்குகிறது என்பதை நினைவில் கொள்ளுதல்.",
+        "மாநிலங்களவைத் தேர்தல்கள் திறந்த வாக்குப்பதிவு (Open Ballot) முறையுடன் கூடிய PR-STV-ஐப் பயன்படுத்துகின்றன என்பதை நினைவில் கொள்ளுதல்.",
+        "நோட்டா (2013 SC தீர்ப்பு) அதிக வாக்குகள் பெற்றாலும் தேர்தலைத் தானாகவே ரத்து செய்யாது என்பதை நினைவில் கொள்ளுதல்.",
+        "RPA 1951 பிரிவு 80-ன் கீழ் தேர்தல் முடிந்த பிறகே உயர் நீதிமன்றத்தில் தேர்தல் மனுவை தாக்கல் செய்ய முடியும் என்பதை நினைவில் கொள்ளுதல்."
+      ]
+    },
+    "Analyze": {
+      "en": [
+        "Analyze why India adopted FPTP for general constituency elections while adopting PR-STV for indirect constitutional elections.",
+        "Analyze the legal enforceability of Model Code of Conduct vs statutory offences under Representation of the People Act, 1951."
+      ],
+      "ta": [
+        "இந்தியா ஏன் பொதுத் தொகுதித் தேர்தல்களுக்கு FPTP-ஐயும் மறைமுக அரசியலமைப்புத் தேர்தல்களுக்கு PR-STV-ஐயும் приняத்தது என பகுப்பாய்வு செய்தல்.",
+        "மாதிரி நடத்தை விதிமுறையின் சட்ட அமலாக்கத்தன்மை vs மக்கள் பிரதிநிதித்துவச் சட்டம் 1951-ன் கீழ் உள்ள சட்டப்பூர்வ குற்றங்களைப் பகுப்பாய்வு செய்தல்."
+      ]
+    }
+  },
+  "subject": "Polity",
+  "topic": "Election Commission & Electoral System",
+  "language": "English + Tamil",
+  "ui_type": "standard_notes",
+  "sections": [
+    {
+      "id": "sec_eci_p2_intro",
+      "title_en": "1. Introduction to Electoral Systems",
+      "title_ta": "1. தேர்தல் முறைகள் அறிமுகம்",
+      "type": "conceptual_breakdown"
+    },
+    {
+      "id": "sec_eci_p2_fptp",
+      "title_en": "2. First-Past-the-Post (FPTP) System Mechanics",
+      "title_ta": "2. அதிக வாக்குகள் பெற்றவர் வெற்றி முறை (FPTP) செயல்பாடுகள்",
+      "type": "conceptual_breakdown"
+    },
+    {
+      "id": "sec_eci_p2_pr",
+      "title_en": "3. Proportional Representation (PR) System Concept",
+      "title_ta": "3. விகிதாசார பிரதிநிதித்துவ முறை (PR) கருத்து",
+      "type": "conceptual_breakdown"
+    },
+    {
+      "id": "sec_eci_p2_stv",
+      "title_en": "4. Single Transferable Vote (STV) System Mechanics",
+      "title_ta": "4. ஒற்றை மாற்றத்தக்க வாக்கு முறை (STV) செயல்பாடுகள்",
+      "type": "conceptual_breakdown"
+    },
+    {
+      "id": "sec_eci_p2_fptp_vs_pr_stv",
+      "title_en": "5. FPTP vs PR-STV Master Comparison",
+      "title_ta": "5. FPTP vs PR-STV முதன்மை ஒப்பீடு",
+      "type": "comparative_analysis"
+    },
+    {
+      "id": "sec_eci_p2_direct_vs_indirect",
+      "title_en": "6. Direct Elections vs Indirect Elections",
+      "title_ta": "6. நேரடித் தேர்தல்கள் vs மறைமுகத் தேர்தல்கள்",
+      "type": "comparative_analysis"
+    },
+    {
+      "id": "sec_eci_p2_rajya_sabha_election",
+      "title_en": "7. Rajya Sabha Election Mechanics & Open Ballot Rule",
+      "title_ta": "7. மாநிலங்களவைத் தேர்தல் முறை & திறந்த வாக்குப்பதிவு விதி",
+      "type": "procedural_analysis"
+    },
+    {
+      "id": "sec_eci_p2_presidential_election",
+      "title_en": "8. Presidential Election — Electoral College & STV Quota Formula",
+      "title_ta": "8. குடியரசுத் தலைவர் தேர்தல் — வாக்காளர் குழுமம் & STV ஒதுக்கீட்டுச் சூத்திரம்",
+      "type": "procedural_analysis"
+    },
+    {
+      "id": "sec_eci_p2_vp_election",
+      "title_en": "9. Vice-Presidential Election — Electoral College Mechanics",
+      "title_ta": "9. துணைக் குடியரசுத் தலைவர் தேர்தல் — வாக்காளர் குழும முறை",
+      "type": "procedural_analysis"
+    },
+    {
+      "id": "sec_eci_p2_legislative_council",
+      "title_en": "10. State Legislative Council Election — 5 Categories Breakdown",
+      "title_ta": "10. மாநில சட்ட மேலவைத் தேர்தல் — 5 பிரிவுகள் பகுப்பாய்வு",
+      "type": "procedural_analysis"
+    },
+    {
+      "id": "sec_eci_p2_election_process",
+      "title_en": "11. Chronological Step-by-Step Election Process",
+      "title_ta": "11. காலவரிசைப்படி தேர்தல் செயல்முறை படிகள்",
+      "type": "procedural_analysis"
+    },
+    {
+      "id": "sec_eci_p2_electoral_roll_epic",
+      "title_en": "12. Electoral Roll Preparation & EPIC Voter Registration",
+      "title_ta": "12. வாக்காளர் பட்டியல் தயாரிப்பு & EPIC வாக்காளர் பதிவு",
+      "type": "procedural_analysis"
+    },
+    {
+      "id": "sec_eci_p2_nomination_scrutiny",
+      "title_en": "13. Candidate Nomination, Security Deposit & Scrutiny",
+      "title_ta": "13. வேட்புமனுத் தாக்கல், பிணைத் தொகை & பரிசீலனை",
+      "type": "procedural_analysis"
+    },
+    {
+      "id": "sec_eci_p2_polling_evm_vvpat",
+      "title_en": "14. Polling Operations, EVM Architecture & VVPAT Audit Trail",
+      "title_ta": "14. வாக்குப்பதிவு, EVM கட்டமைப்பு & VVPAT தணிக்கை",
+      "type": "technical_analysis"
+    },
+    {
+      "id": "sec_eci_p2_nota",
+      "title_en": "15. None of the Above (NOTA) — Legal Status & SC Judgments",
+      "title_ta": "15. நோட்டா (NOTA) — சட்டப்பூர்வ நிலை & உச்ச நீதிமன்றத் தீர்ப்புகள்",
+      "type": "legal_analysis"
+    },
+    {
+      "id": "sec_eci_p2_secret_ballot",
+      "title_en": "16. Secrecy of Ballot & Democratic Freedom",
+      "title_ta": "16. இரகசிய வாக்குப்பதிவு & ஜனநாயக சுதந்திரம்",
+      "type": "conceptual_breakdown"
+    },
+    {
+      "id": "sec_eci_p2_mcc",
+      "title_en": "17. Model Code of Conduct (MCC) Enforcement Framework",
+      "title_ta": "17. மாதிரி நடத்தை விதிமுறை (MCC) அமலாக்கக் கட்டமைப்பு",
+      "type": "legal_analysis"
+    },
+    {
+      "id": "sec_eci_p2_election_petition",
+      "title_en": "18. Election Disputes & Election Petitions under Article 329(b)",
+      "title_ta": "18. தேர்தல் தகராறுகள் & உறுப்பு 329(b)-ன் கீழ் தேர்தல் மனுக்கள்",
+      "type": "legal_analysis"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "The Electoral System comprises the legal, constitutional, and administrative rules governing candidate nomination, voting methods (FPTP or PR-STV), polling mechanics (EVM/VVPAT), voter eligibility, Model Code of Conduct enforcement, and determination of election winners across direct and indirect constitutional elections.",
+      "ta": "தேர்தல் முறை என்பது வேட்புமனுத் தாக்கல், வாக்களிக்கும் முறைகள் (FPTP அல்லது PR-STV), வாக்குப்பதிவு நடைமுறைகள் (EVM/VVPAT), வாக்காளர் தகுதி, மாதிரி நடத்தை விதிமுறை அமலாக்கம் மற்றும் நேரடி/மறைமுக அரசியலமைப்புத் தேர்தல்களில் வெற்றியாளர்களைத் தீர்மானிக்கும் சட்டப்பூர்வ, அரசியலமைப்பு மற்றும் நிர்வாக விதிகளை உள்ளடக்கியதாகும்."
+    },
+    "introduction": {
+      "en": "Part 2 details the practical mechanics of elections in India, contrasting plurality voting in single-member constituencies (FPTP) with proportional representation via single transferable vote (PR-STV) in indirect constitutional elections, while outlining the complete election cycle from notification to dispute resolution.",
+      "ta": "பகுதி 2 இந்தியாவில் தேர்தல்களின் நடைமுறைச் செயல்பாடுகளை விரிவாக விளக்குகிறது, ஒற்றை உறுப்பினர் தொகுதிகளில் அதிக வாக்குகள் பெற்றவர் வெற்றி முறையை (FPTP) மறைமுகத் தேர்தல்களில் ஒற்றை மாற்றத்தக்க வாக்கு மூலமான விகிதாசார பிரதிநிதித்துவத்துடன் (PR-STV) ஒப்பிட்டு, தேர்தல் அறிவிப்பு முதல் தகராறு தீர்வு வரையிலான முழுமையான தேர்தல் சுழற்சியை கோடிட்டுக் காட்டுகிறது."
+    },
+    "sec_eci_p2_intro": [
+      {
+        "title": {
+          "en": "Overview of Indian Electoral Systems",
+          "ta": "இந்தியத் தேர்தல் முறைகளின் மேலோட்டம்"
+        },
+        "points": {
+          "en": [
+            "India employs a dual electoral system: First-Past-the-Post (FPTP) for direct democratic elections, and Proportional Representation by Single Transferable Vote (PR-STV) for indirect constitutional elections.",
+            "Direct Elections (FPTP): Lok Sabha & State Legislative Assemblies.",
+            "Indirect Elections (PR-STV): Rajya Sabha, State Legislative Councils, President of India, Vice-President of India."
+          ],
+          "ta": [
+            "இந்தியா இரட்டைத் தேர்தல் முறையைப் பயன்படுத்துகிறது: நேரடி ஜனநாயகத் தேர்தல்களுக்கு அதிக வாக்குகள் பெற்றவர் வெற்றி முறை (FPTP), மற்றும் மறைமுக அரசியலமைப்புத் தேர்தல்களுக்கு ஒற்றை மாற்றத்தக்க வாக்கு மூலமான விகிதாசார பிரதிநிதித்துவம் (PR-STV).",
+            "நேரடித் தேர்தல்கள் (FPTP): மக்களவை & மாநில சட்டமன்றங்கள்.",
+            "மறைமுகத் தேர்தல்கள் (PR-STV): மாநிலங்களவை, மாநில சட்ட மேலவைகள், இந்தியக் குடியரசுத் தலைவர், துணைக் குடியரசுத் தலைவர்."
+          ]
+        }
+      }
+    ],
+    "sec_eci_p2_fptp": [
+      {
+        "title": {
+          "en": "First-Past-the-Post (FPTP) Mechanics & Features",
+          "ta": "அதிக வாக்குகள் பெற்றவர் வெற்றி முறையின் (FPTP) செயல்பாடுகள் & அம்சங்கள்"
+        },
+        "points": {
+          "en": [
+            "Also known as Simple Plurality System.",
+            "The country/state is divided into single-member territorial constituencies.",
+            "Voter votes for ONE individual candidate.",
+            "Candidate obtaining the HIGHEST number of valid votes in a constituency is declared elected.",
+            "Plurality vs Majority: FPTP requires PLURALITY (more votes than any other candidate), NOT necessarily an absolute majority (50%+1). A candidate can win with 30% or 40% of total votes if opponents split the remaining votes.",
+            "Used for: Lok Sabha, State Legislative Assemblies, Gram Panchayats, Municipal Wards."
+          ],
+          "ta": [
+            "எளிய பன்மை வாக்கு முறை (Simple Plurality System) என்றும் அழைக்கப்படுகிறது.",
+            "நாடு/மாநிலம் ஒற்றை உறுப்பினர் புவியியல் தொகுதிகளாகப் பிரிக்கப்படுகிறது.",
+            "வாக்காளர் ஒரு தனிப்பட்ட வேட்பாளருக்கு மட்டுமே வாக்களிக்கிறார்.",
+            "தொகுதியில் செல்லுபடியாகும் வாக்குகளில் அதிக எண்ணிக்கையிலான வாக்குகளைப் பெறும் வேட்பாளர் வெற்றி பெற்றவராக அறிவிக்கப்படுவார்.",
+            "பன்மை vs தனிப் பெரும்பான்மை: FPTP பன்மையை (மற்ற வேட்பாளர்களை விட அதிக வாக்குகள்) மட்டுமே கோருகிறதே தவிர கட்டாயமாகத் தனிப் பெரும்பான்மையைக் (50%+1) கோருவதில்லை. எதிராளிகளின் வாக்குகள் பிரியும் போது 30% அல்லது 40% வாக்குகளைப் பெறும் வேட்பாளரும் வெற்றி பெற முடியும்.",
+            "பயன்படுத்தப்படும் இடங்கள்: மக்களவை, மாநில சட்டமன்றங்கள், கிராம ஊராட்சிகள், நகராட்சி வார்டுகள்."
+          ]
+        }
+      }
+    ],
+    "sec_eci_p2_pr": [
+      {
+        "title": {
+          "en": "Proportional Representation System Concepts",
+          "ta": "விகிதாசார பிரதிநிதித்துவ முறை கருத்துகள்"
+        },
+        "points": {
+          "en": [
+            "Aims to ensure political parties secure seats in proportion to their total vote share.",
+            "Prevents situation where a party with 45% vote share wins 80% seats (common in FPTP).",
+            "Types: List System (used in European parliamentary democracies) and Single Transferable Vote (STV) System (used in India)."
+          ],
+          "ta": [
+            "அரசியல் கட்சிகள் பெறும் மொத்த வாக்குச் சதவீதத்திற்கு ஏற்ப நாடாளுமன்றத்தில் இடங்களைப் பெறுவதை உறுதி செய்வதை நோக்கமாகக் கொண்டுள்ளது.",
+            "45% வாக்குச் சதவீதம் பெறும் ஒரு கட்சி 80% இடங்களை வெல்லும் சூழ்நிலையைத் தடுக்கிறது (FPTP-ல் இயல்பானது).",
+            "வகைகள்: பட்டியல் முறை (ஐரோப்பிய ஜனநாயகங்களில் பயன்பாடு) மற்றும் ஒற்றை மாற்றத்தக்க வாக்கு முறை (STV) (இந்தியாவில் பயன்பாடு)."
+          ]
+        }
+      }
+    ],
+    "sec_eci_p2_stv": [
+      {
+        "title": {
+          "en": "Single Transferable Vote (STV) System Mechanics",
+          "ta": "ஒற்றை மாற்றத்தக்க வாக்கு முறை (STV) செயல்பாடுகள்"
+        },
+        "points": {
+          "en": [
+            "Used in multi-member constituencies or indirect legislative bodies in India.",
+            "Preferential Voting: Voter ranks candidates in order of preference (1, 2, 3...).",
+            "Quota Requirement: Candidate must secure a calculated minimum quota of votes to be declared elected.",
+            "Transfer of Excess/Eliminated Votes: Surplus votes above the quota or votes of lowest candidates are transferred according to voters' subsequent preferences until all seats are filled."
+          ],
+          "ta": [
+            "இந்தியாவில் பல உறுப்பினர் தொகுதிகள் அல்லது மறைமுகச் சட்டமன்ற அமைப்புகளில் பயன்படுத்தப்படுகிறது.",
+            "முன்னுரிமை வாக்குப்பதிவு: வாக்காளர் வேட்பாளர்களை முன்னுரிமை அடிப்படையில் (1, 2, 3...) வரிசைப்படுத்துகிறார்.",
+            "ஒதுக்கீட்டுத் தேவை (Quota): வெற்றி பெற கணக்கிடப்பட்ட குறைந்தபட்ச வாக்கு ஒதுக்கீட்டை வேட்பாளர் பெற வேண்டும்.",
+            "வாக்குகள் மாற்றம்: ஒதுக்கீட்டிற்கு அதிகமான உபரி வாக்குகள் அல்லது கடைசி இடத்தில் உள்ள வேட்பாளர்களின் வாக்குகள் வாக்காளர்களின் அடுத்தடுத்த முன்னுரிமைகளுக்கு ஏற்ப மாற்றப்பட்டு இடங்கள் நிரப்பப்படுகின்றன."
+          ]
+        }
+      }
+    ],
+    "sec_eci_p2_fptp_vs_pr_stv": [
+      {
+        "title": {
+          "en": "FPTP vs PR-STV Master Comparison",
+          "ta": "FPTP vs PR-STV முதன்மை ஒப்பீடு"
+        },
+        "points": {
+          "en": [
+            "FPTP: Simple plurality, single-member constituency, direct voter-candidate link, stable majorities, used for Lok Sabha & Assemblies.",
+            "PR-STV: Quota based, multi-member/indirect electorate, proportional representation, complex counting, used for Rajya Sabha, Councils, President, VP."
+          ],
+          "ta": [
+            "FPTP: எளிய பன்மை, ஒற்றை உறுப்பினர் தொகுதி, நேரடி வாக்காளர்-வேட்பாளர் தொடர்பு, நிலையான பெரும்பான்மை, மக்களவை & சட்டமன்றங்களுக்குப் பயன்பாடு.",
+            "PR-STV: ஒதுக்கீடு அடிப்படை, பல உறுப்பினர்/மறைமுக வாக்காளர் தொகுதி, விகிதாசார பிரதிநிதித்துவம், சிக்கலான எண்ணுதல், மாநிலங்களவை, மேலவைகள், குடியரசுத் தலைவர், VP-க்கு பயன்பாடு."
+          ]
+        }
+      }
+    ],
+    "sec_eci_p2_direct_vs_indirect": [
+      {
+        "title": {
+          "en": "Direct Elections vs Indirect Elections Breakdown",
+          "ta": "நேரடித் தேர்தல்கள் vs மறைமுகத் தேர்தல்கள் பகுப்பாய்வு"
+        },
+        "points": {
+          "en": [
+            "Direct Elections: Citizens directly cast vote for candidates (Lok Sabha, Legislative Assemblies, Local Bodies).",
+            "Indirect Elections: Citizens elect representatives (MLAs/MPs), who in turn vote to elect candidates (Rajya Sabha, Legislative Councils, President, Vice-President)."
+          ],
+          "ta": [
+            "நேரடித் தேர்தல்கள்: குடிமக்கள் நேரடியாக வேட்பாளர்களுக்கு வாக்களிக்கிறார்கள் (மக்களவை, சட்டமன்றங்கள், உள்ளாட்சி அமைப்புகள்).",
+            "மறைமுகத் தேர்தல்கள்: குடிமக்கள் பிரதிநிதிகளை (MLAs/MPs) தேர்ந்தெடுக்கிறார்கள், அவர்கள் வேட்பாளர்களைத் தேர்ந்தெடுக்க வாக்களிக்கிறார்கள் (மாநிலங்களவை, சட்ட மேலவைகள், குடியரசுத் தலைவர், துணைக் குடியரசுத் தலைவர்)."
+          ]
+        }
+      }
+    ],
+    "sec_eci_p2_rajya_sabha_election": [
+      {
+        "title": {
+          "en": "Rajya Sabha Election Mechanics & Open Ballot Rule",
+          "ta": "மாநிலங்களவைத் தேர்தல் முறை & திறந்த வாக்குப்பதிவு விதி"
+        },
+        "points": {
+          "en": [
+            "Electoral College: Elected members of State Legislative Assemblies (MLAs ONLY; nominated MLAs & MLCs do NOT vote).",
+            "Voting System: Proportional Representation by Single Transferable Vote (PR-STV).",
+            "Open Ballot System: Introduced in 2003 (amendment to RPA 1951) to curb cross-voting and money power. MLA must show marked ballot paper to designated party agent before dropping it into ballot box. NOT a violation of secrecy of ballot (upheld by SC in Kuldip Nayar v. UOI 2006)."
+          ],
+          "ta": [
+            "வாக்காளர் குழுமம்: மாநில சட்டமன்றங்களின் தேர்ந்தெடுக்கப்பட்ட உறுப்பினர்கள் (MLAs மட்டுமே; நியமன MLAs & MLCs வாக்களிக்க முடியாது).",
+            "வாக்களிக்கும் முறை: ஒற்றை மாற்றத்தக்க வாக்கு மூலமான விகிதாசார பிரதிநிதித்துவம் (PR-STV).",
+            "திறந்த வாக்குப்பதிவு முறை (Open Ballot): குறுக்கு வாக்களிப்பு மற்றும் பண பலத்தைத் தடுக்க 2003 இல் (RPA 1951 திருத்தம்) கொண்டுவரப்பட்டது. MLA தனது குறிக்கப்பட்ட வாக்குச் சீட்டைப் பெட்டியில் போடுவதற்கு முன் கட்சியின் முகவரிடம் காண்பிக்க வேண்டும். இது இரகசிய வாக்குப்பதிவு மீறல் அல்ல (குல்தீப் நாயர் v. UOI 2006 வழக்கில் SC உறுதி செய்தது)."
+          ]
+        }
+      }
+    ],
+    "sec_eci_p2_presidential_election": [
+      {
+        "title": {
+          "en": "Presidential Election — Electoral College & Quota Formula",
+          "ta": "குடியரசுத் தலைவர் தேர்தல் — வாக்காளர் குழுமம் & STV ஒதுக்கீட்டுச் சூத்திரம்"
+        },
+        "points": {
+          "en": [
+            "Article 54 Electoral College: 1. Elected members of BOTH Houses of Parliament (Lok Sabha & Rajya Sabha), 2. Elected members of Legislative Assemblies of States, 3. Elected members of Legislative Assemblies of UTs of Delhi, Puducherry & J&K (70th CAA 1992).",
+            "EXCLUDED: Nominated members of Lok Sabha, Rajya Sabha, State Assemblies, and ALL members of Legislative Councils.",
+            "Value of MLA Vote = (State Population / Total Elected MLAs) / 1000.",
+            "Value of MP Vote = Total Value of Votes of all elected MLAs of all States / Total Elected MPs of Parliament.",
+            "Electoral Quota = [Total Valid Votes Cast / (1 + 1)] + 1 = [Total Valid Votes / 2] + 1 (Absolute Majority of 50%+1)."
+          ],
+          "ta": [
+            "உறுப்பு 54 வாக்காளர் குழுமம்: 1. நாடாளுமன்றத்தின் இரு அவைகளின் தேர்ந்தெடுக்கப்பட்ட உறுப்பினர்கள் (மக்களவை & மாநிலங்களவை), 2. மாநில சட்டமன்றங்களின் தேர்ந்தெடுக்கப்பட்ட உறுப்பினர்கள், 3. டெல்லி, புதுச்சேரி & ஜம்மு காஷ்மீர் UT சட்டமன்றங்களின் தேர்ந்தெடுக்கப்பட்ட உறுப்பினர்கள் (70வது திருத்தம் 1992).",
+            "விலக்கப்பட்டவர்கள்: மக்களவை, மாநிலங்களவை, மாநில சட்டமன்றங்களின் நியமன உறுப்பினர்கள் மற்றும் சட்ட மேலவைகளின் அனைத்து உறுப்பினர்களும்.",
+            "MLA வாக்கின் மதிப்பு = (மாநில மக்கள் தொகை / தேர்ந்தெடுக்கப்பட்ட மொத்த MLAs) / 1000.",
+            "MP வாக்கின் மதிப்பு = அனைத்து மாநிலங்களின் தேர்ந்தெடுக்கப்பட்ட அனைத்து MLAs-ன் மொத்த வாக்கு மதிப்பு / நாடாளுமன்றத்தின் தேர்ந்தெடுக்கப்பட்ட மொத்த எம்பிக்கள்.",
+            "தேர்தல் ஒதுக்கீடு (Quota) = [செல்லுபடியாகும் மொத்த வாக்குகள் / (1 + 1)] + 1 = [மொத்த வாக்குகள் / 2] + 1 (50%+1 தனிப் பெரும்பான்மை)."
+          ]
+        }
+      }
+    ],
+    "sec_eci_p2_vp_election": [
+      {
+        "title": {
+          "en": "Vice-Presidential Election — Electoral College Mechanics",
+          "ta": "துணைக் குடியரசுத் தலைவர் தேர்தல் — வாக்காளர் குழும முறை"
+        },
+        "points": {
+          "en": [
+            "Article 66 Electoral College: Consists of members of BOTH Houses of Parliament ONLY (Lok Sabha & Rajya Sabha).",
+            "INCLUDES BOTH Elected AND Nominated MPs of Parliament.",
+            "EXCLUDES State Assemblies (MLAs) and Legislative Councils (MLCs) entirely.",
+            "Voting System: Proportional Representation by Single Transferable Vote (PR-STV) with SECRET BALLOT."
+          ],
+          "ta": [
+            "உறுப்பு 66 வாக்காளர் குழுமம்: நாடாளுமன்றத்தின் இரு அவைகளின் (மக்களவை & மாநிலங்களவை) உறுப்பினர்களை மட்டுமே கொண்டது.",
+            "நாடாளுமன்றத்தின் தேர்ந்தெடுக்கப்பட்ட மற்றும் நியமிக்கப்பட்ட இரு வகை எம்பிக்களையும் உள்ளடக்குகிறது.",
+            "மாநில சட்டமன்றங்கள் (MLAs) மற்றும் சட்ட மேலவைகளை (MLCs) முற்றிலும் விலக்குகிறது.",
+            "வாக்களிக்கும் முறை: இரகசிய வாக்குப்பதிவுடன் கூடிய ஒற்றை மாற்றத்தக்க வாக்கு மூலமான விகிதாசார பிரதிநிதித்துவம் (PR-STV)."
+          ]
+        }
+      }
+    ],
+    "sec_eci_p2_legislative_council": [
+      {
+        "title": {
+          "en": "State Legislative Council Election — 5 Categories Breakdown",
+          "ta": "மாநில சட்ட மேலவைத் தேர்தல் — 5 பிரிவுகள் பகுப்பாய்வு"
+        },
+        "points": {
+          "en": [
+            "Article 171(3) Composition Categories:",
+            "1. 1/3rd elected by Local Authorities (Municipalities, District Boards).",
+            "2. 1/12th elected by Graduates electorate (residing at least 3 years in state).",
+            "3. 1/12th elected by Teachers electorate (teaching at least 3 years in secondary/higher schools).",
+            "4. 1/3rd elected by State Legislative Assembly Members (MLAs) from non-assembly members.",
+            "5. 1/6th NOMINATED by Governor (special knowledge in Literature, Science, Art, Co-operative Movement, Social Service)."
+          ],
+          "ta": [
+            "உறுப்பு 171(3) கட்டமைப்புப் பிரிவுகள்:",
+            "1. 1/3 பங்கு உள்ளாட்சி அமைப்புகளால் தேர்ந்தெடுக்கப்படுபவர்கள் (நகராட்சிகள், மாவட்ட வாரியங்கள்).",
+            "2. 1/12 பங்கு பட்டதாரிகள் வாக்காளர்களால் தேர்ந்தெடுக்கப்படுபவர்கள் (மாநிலத்தில் குறைந்தபட்சம் 3 ஆண்டுகள் வசிப்பவர்கள்).",
+            "3. 1/12 பங்கு ஆசிரியர்கள் வாக்காளர்களால் தேர்ந்தெடுக்கப்படுபவர்கள் (இரண்டாம் நிலை/உயர்நிலைப் பள்ளிகளில் குறைந்தபட்சம் 3 ஆண்டுகள் கற்பிப்பவர்கள்).",
+            "4. 1/3 பங்கு மாநில சட்டமன்ற உறுப்பினர்களால் (MLAs) தேர்ந்தெடுக்கப்படுபவர்கள்.",
+            "5. 1/6 பங்கு ஆளுநரால் நியமிக்கப்படுபவர்கள் (இலக்கியம், அறிவியல், கலை, கூட்டுறவு இயக்கம், சமூகச் சேவையில் சிறப்பு அறிவு கொண்டவர்கள்)."
+          ]
+        }
+      }
+    ],
+    "sec_eci_p2_election_process": [
+      {
+        "title": {
+          "en": "Chronological Step-by-Step Election Process",
+          "ta": "காலவரிசைப்படி தேர்தல் செயல்முறை படிகள்"
+        },
+        "points": {
+          "en": [
+            "1. Delimitation & Electoral Roll Preparation",
+            "2. Election Notification (issued by President for Lok Sabha / Governor for State Assembly under advice of ECI)",
+            "3. Nomination Filing by Candidates (last date fixed by ECI)",
+            "4. Scrutiny of Nominations by Returning Officer (RO)",
+            "5. Withdrawal of Candidature",
+            "6. Election Campaign (must stop 48 hours before close of poll)",
+            "7. Polling (voting via EVM/VVPAT)",
+            "8. Counting of Votes & Declaration of Result"
+          ],
+          "ta": [
+            "1. தொகுதி மறுவரையறை & வாக்காளர் பட்டியல் தயாரிப்பு",
+            "2. தேர்தல் அறிவிப்பு (ECI ஆலோசனையின் பேரில் மக்களவைக்கு குடியரசுத் தலைவர் / சட்டமன்றத்திற்கு ஆளுநர் வெளியிடுதல்)",
+            "3. வேட்பாளர்கள் வேட்புமனுத் தாக்கல் செய்தல் (ECI-ஆல் கடைசி தேதி நிர்ணயம்)",
+            "4. தேர்தல் நடத்தும் அதிகாரியால் (RO) வேட்புமனுக்கள் பரிசீலனை",
+            "5. வேட்புமனு வாபஸ் பெறுதல்",
+            "6. தேர்தல் பிரச்சாரம் (வாக்குப்பதிவு முடிவதற்கு 48 மணி நேரத்திற்கு முன் நிறுத்தப்பட வேண்டும்)",
+            "7. வாக்குப்பதிவு (EVM/VVPAT மூலம் வாக்களிப்பு)",
+            "8. வாக்குகள் எண்ணுதல் & முடிவுகள் அறிவிப்பு"
+          ]
+        }
+      }
+    ],
+    "sec_eci_p2_electoral_roll_epic": [
+      {
+        "title": {
+          "en": "Electoral Roll Preparation & EPIC Registration",
+          "ta": "வாக்காளர் பட்டியல் தயாரிப்பு & EPIC வாக்காளர் பதிவு"
+        },
+        "points": {
+          "en": [
+            "Electoral Roll is prepared under RPA 1950 by Electoral Registration Officer (ERO).",
+            "Qualifying Dates: ECI uses 4 qualifying dates annually (Jan 1, April 1, July 1, Oct 1) under Election Laws Amendment Act 2021.",
+            "EPIC: Electoral Photo Identity Card issued by ECI since 1993."
+          ],
+          "ta": [
+            "RPA 1950-ன் கீழ் வாக்காளர் பதிவு அதிகாரியால் (ERO) வாக்காளர் பட்டியல் தயாரிக்கப்படுகிறது.",
+            "தகுதி தேதிகள்: 2021 தேர்தல் சட்டத் திருத்தத்தின் கீழ் ECI ஆண்டுக்கு 4 தகுதி தேதிகளைப் (ஜனவரி 1, ஏப்ரல் 1, ஜூலை 1, அக்டோபர் 1) பயன்படுத்துகிறது.",
+            "EPIC: 1993 முதல் ECI-ஆல் வழங்கப்படும் புகைப்படத்துடன் கூடிய வாக்காளர் அடையாள அட்டை."
+          ]
+        }
+      }
+    ],
+    "sec_eci_p2_nomination_scrutiny": [
+      {
+        "title": {
+          "en": "Candidate Nomination, Security Deposit & Scrutiny",
+          "ta": "வேட்புமனுத் தாக்கல், பிணைத் தொகை & பரிசீலனை"
+        },
+        "points": {
+          "en": [
+            "Filing Nomination: Form 2A (Lok Sabha) / Form 2B (Assembly) before Returning Officer.",
+            "Security Deposit: Rs. 25,000 for Lok Sabha (Rs. 12,500 for SC/ST); Rs. 10,000 for Assembly (Rs. 5,000 for SC/ST).",
+            "Forfeiture of Deposit: Candidate forfeits security deposit if failing to secure AT LEAST 1/6th (16.67%) of total valid votes polled in constituency."
+          ],
+          "ta": [
+            "வேட்புமனு தாக்கல்: தேர்தல் நடத்தும் அதிகாரியிடம் படிவம் 2A (மக்களவை) / படிவம் 2B (சட்டமன்றம்).",
+            "பிணைத் தொகை (Security Deposit): மக்களவைக்கு ரூ. 25,000 (SC/ST-க்கு ரூ. 12,500); சட்டமன்றத்திற்கு ரூ. 10,000 (SC/ST-க்கு ரூ. 5,000).",
+            "பிணைத் தொகை இழப்பு: தொகுதியில் பதிவான செல்லுபடியாகும் மொத்த வாக்குகளில் குறைந்தபட்சம் 1/6 பங்கு (16.67%) வாக்குகளைப் பெறத் தவறினால் பிணைத் தொகை பறிமுதல் செய்யப்படும்."
+          ]
+        }
+      }
+    ],
+    "sec_eci_p2_polling_evm_vvpat": [
+      {
+        "title": {
+          "en": "EVM Architecture & VVPAT Audit Trail Mechanics",
+          "ta": "EVM கட்டமைப்பு & VVPAT தணிக்கை முறைச் செயல்பாடுகள்"
+        },
+        "points": {
+          "en": [
+            "EVM Architecture: Consists of Control Unit (with Presiding Officer) and Balloting Unit (in voting compartment). Manufactured by BEL (Bangalore) and ECIL (Hyderabad). Standalone non-networked machines.",
+            "VVPAT (Voter Verifiable Paper Audit Trail): Prints paper slip showing candidate name, symbol, and serial number for 7 SECONDS behind a glass window before dropping into sealed box.",
+            "Mandatory Paper Slip Audit: ECI audits VVPAT paper slips of 5 randomly selected polling stations per assembly constituency/segment."
+          ],
+          "ta": [
+            "EVM கட்டமைப்பு: கட்டுப்பாட்டு அலகு (Control Unit - வாக்குச்சாவடி தலைமை அதிகாரியிடம்) மற்றும் வாக்களிக்கும் அலகு (Balloting Unit - வாக்களிக்கும் அறையில்) கொண்டது. BEL (பெங்களூரு) மற்றும் ECIL (ஹைதராபாத்) நிறுவனங்களால் தயாரிக்கப்படும் தனித்துவமான நெட்வொர்க் இல்லாத இயந்திரங்கள்.",
+            "VVPAT (வாக்காளர் சரிபார்க்கும் காகித தணிக்கை): வாக்காளர் வாக்களித்த வேட்பாளர் பெயர், சின்னம், வரிசை எண்ணைக் காட்டும் காகிதச் சீட்டை 7 விநாடிகள் கண்ணாடி சாளரத்தின் பின் காட்டி பெட்டியில் விழச்செய்கிறது.",
+            "கட்டாயக் காகிதச் சீட்டு தணிக்கை: ECI ஒரு சட்டமன்றத் தொகுதிக்கு தன்னிச்சையாகத் தேர்ந்தெடுக்கப்பட்ட 5 வாக்குச்சாவடிகளின் VVPAT காகிதச் சீட்டுகளைத் தணிக்கை செய்கிறது."
+          ]
+        }
+      }
+    ],
+    "sec_eci_p2_nota": [
+      {
+        "title": {
+          "en": "None of the Above (NOTA) — Legal Status & Exam Traps",
+          "ta": "நோட்டா (NOTA) — சட்டப்பூர்வ நிலை & தேர்வுப் பொறிகள்"
+        },
+        "points": {
+          "en": [
+            "Introduced following SC judgment in PUCL v. Union of India (2013). First used in Assembly elections in Dec 2013.",
+            "Protects secrecy of voter rejection under Art 19(1)(a).",
+            "HIGH-VALUE TRAP: NOTA votes are treated as INVALID/NEUTRAL votes. Even if NOTA receives the highest number of votes, the candidate getting the second highest votes is declared ELECTED. NOTA does NOT force a re-election under parliamentary election rules."
+          ],
+          "ta": [
+            "PUCL v. யூனியன் ஆஃப் இந்தியா (2013) உச்ச நீதிமன்றத் தீர்ப்பைத் தொடர்ந்து கொண்டுவரப்பட்டது. 2013 டிசம்பரில் சட்டமன்றத் தேர்தல்களில் முதன்முதலில் பயன்படுத்தப்பட்டது.",
+            "உறுப்பு 19(1)(a)-ன் கீழ் வாக்காளரின் நிராகரிப்பு இரகசியத்தைப் பாதுகாக்கிறது.",
+            "உயர் மதிப்புப் பொறி: நோட்டா வாக்குகள் செல்லாத/நடுநிலையான வாக்குகளாகவே கருதப்படுகின்றன. நோட்டா அதிக வாக்குகளைப் பெற்றாலும், இரண்டாவது அதிக வாக்குகள் பெறும் வேட்பாளரே வெற்றி பெற்றவராக அறிவிக்கப்படுவார். நாடாளுமன்றத் தேர்தல் விதிகளின் கீழ் நோட்டா மறுதேர்தலைக் கட்டாயப்படுத்துவதில்லை."
+          ]
+        }
+      }
+    ],
+    "sec_eci_p2_secret_ballot": [
+      {
+        "title": {
+          "en": "Secrecy of Ballot & Democratic Freedom",
+          "ta": "இரகசிய வாக்குப்பதிவு & ஜனநாயக சுதந்திரம்"
+        },
+        "points": {
+          "en": [
+            "Constitutional right flowing from freedom of expression under Art 19(1)(a).",
+            "Exceptions: Open ballot in Rajya Sabha elections (to prevent corruption)."
+          ],
+          "ta": [
+            "உறுப்பு 19(1)(a)-ன் கீழ் பேச்சு சுதந்திரத்திலிருந்து வெளிப்படும் அரசியலமைப்பு உரிமை.",
+            "விலக்குகள்: மாநிலங்களவைத் தேர்தல்களில் திறந்த வாக்குப்பதிவு (ஊழலைத் தடுக்க)."
+          ]
+        }
+      }
+    ],
+    "sec_eci_p2_mcc": [
+      {
+        "title": {
+          "en": "Model Code of Conduct (MCC) Enforcement Framework",
+          "ta": "மாதிரி நடத்தை விதிமுறை (MCC) அமலாக்கக் கட்டமைப்பு"
+        },
+        "points": {
+          "en": [
+            "MCC is a set of administrative guidelines formulated by consensus of political parties.",
+            "Operational Period: Comes into force IMMEDIATELY upon ECI election schedule announcement till completion of election.",
+            "Legal Status: MCC is NOT a statutory Act passed by Parliament (non-statutory code). However, ECI enforces specific violations through corresponding provisions in IPC / RPA 1951."
+          ],
+          "ta": [
+            "MCC என்பது அரசியல் கட்சிகளின் ஒப்புதலுடன் உருவாக்கப்பட்ட நிர்வாக வழிகாட்டுதல்களின் தொகுப்பாகும்.",
+            "செயல்பாட்டுக் காலம்: ECI தேர்தல் கால அட்டவணையை அறிவித்த உடனேயே அமலுக்கு வந்து தேர்தல் முடியும் வரை தொடரும்.",
+            "சட்டப்பூர்வ நிலை: MCC நாடாளுமன்றத்தால் இயற்றப்பட்ட சட்டப்பூர்வ சட்டம் அல்ல (சட்டப்பூர்வமற்ற குறியீடு). இருப்பினும், ECI IPC / RPA 1951-ன் இணையான விதிகளின் மூலம் குறிப்பிட்ட மீறல்களை அமல்படுத்துகிறது."
+          ]
+        }
+      }
+    ],
+    "sec_eci_p2_election_petition": [
+      {
+        "title": {
+          "en": "Election Disputes & Election Petitions under Article 329(b)",
+          "ta": "தேர்தல் தகராறுகள் & உறுப்பு 329(b)-ன் கீழ் தேர்தல் மனுக்கள்"
+        },
+        "points": {
+          "en": [
+            "Under Article 329(b) and Part VI of RPA 1951, elections CANNOT be challenged via writ petitions during polling process.",
+            "Election Petition: The SOLE legal remedy to challenge an election outcome.",
+            "Forum: Original jurisdiction lies with HIGH COURT of the respective State (Section 80A of RPA 1951). Appeal lies to Supreme Court.",
+            "Time Limit: Must be presented within 45 DAYS from date of election result declaration."
+          ],
+          "ta": [
+            "உறுப்பு 329(b) மற்றும் RPA 1951 பகுதி VI-ன் கீழ், வாக்குப்பதிவு நடைமுறையின் போது பேராணை மனுக்கள் மூலம் தேர்தலைச் சவால் செய்ய முடியாது.",
+            "தேர்தல் மனு (Election Petition): தேர்தல் முடிவைச் சவால் செய்வதற்கான ஒரே சட்டப்பூர்வ தீர்வு.",
+            "அதிகார அமைப்பு: சம்பந்தப்பட்ட மாநிலத்தின் உயர் நீதிமன்றம் அசல் அதிகார வரம்பைக் கொண்டுள்ளது (RPA 1951 பிரிவு 80A). மேல்முறையீடு உச்ச நீதிமன்றத்தில் செய்யப்படும்.",
+            "கால வரம்பு: தேர்தல் முடிவு அறிவிக்கப்பட்ட தேதியிலிருந்து 45 நாட்களுக்குள் தாக்கல் செய்யப்பட வேண்டும்."
+          ]
+        }
+      }
+    ],
+    "tables": [
+      {
+        "id": "tbl_fptp_system_features_p2",
+        "title_en": "First-Past-The-Post (FPTP) System Features & Scope",
+        "title_ta": "அதிக வாக்குகள் பெற்றவர் வெற்றி முறை (FPTP) அம்சங்கள் & வரம்பு",
+        "headers_en": [
+          "Feature",
+          "FPTP Specification",
+          "Constitutional / Statutory Scope"
+        ],
+        "headers_ta": [
+          "அம்சம்",
+          "FPTP குறிப்பீடு",
+          "அரசியலமைப்பு / சட்டப்பூர்வ வரம்பு"
+        ],
+        "rows_en": [
+          [
+            "Constituency Structure",
+            "Single-member territorial constituency",
+            "Lok Sabha & State Assemblies"
+          ],
+          [
+            "Voting Method",
+            "Voter marks choice for ONE individual candidate",
+            "Direct voting via EVM"
+          ],
+          [
+            "Winning Criterion",
+            "HIGHEST valid votes polled (Simple Plurality)",
+            "Does NOT require 50%+1 absolute majority"
+          ],
+          [
+            "Representative Link",
+            "Direct geographic link between voter and MP/MLA",
+            "Clear constituency accountability"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "தொகுதி கட்டமைப்பு",
+            "ஒற்றை உறுப்பினர் புவியியல் தொகுதி",
+            "மக்களவை & மாநில சட்டமன்றங்கள்"
+          ],
+          [
+            "வாக்களிக்கும் முறை",
+            "வாக்காளர் ஒரு தனிப்பட்ட வேட்பாளரை மட்டுமே தேர்வு செய்கிறார்",
+            "EVM மூலம் நேரடி வாக்களிப்பு"
+          ],
+          [
+            "வெற்றி அளவுகோல்",
+            "பதிவான அதிக செல்லுபடியாகும் வாக்குகள் (எளிய பன்மை)",
+            "50%+1 தனிப் பெரும்பான்மை தேவையில்லை"
+          ],
+          [
+            "பிரதிநிதி தொடர்பு",
+            "வாக்காளர் மற்றும் MP/MLA இடையே நேரடி புவியியல் தொடர்பு",
+            "தெளிவான தொகுதிப் பொறுப்புக்கூறல்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_pr_system_types_p2",
+        "title_en": "Proportional Representation System Types & Mechanics",
+        "title_ta": "விகிதாசார பிரதிநிதித்துவ முறை வகைகள் & செயல்பாடுகள்",
+        "headers_en": [
+          "PR System Type",
+          "Voting Mechanics",
+          "Key Purpose",
+          "Indian Usage"
+        ],
+        "headers_ta": [
+          "PR முறை வகை",
+          "வாக்களிக்கும் செயல்பாடுகள்",
+          "முக்கிய நோக்கம்",
+          "இந்தியப் பயன்பாடு"
+        ],
+        "rows_en": [
+          [
+            "List System",
+            "Voters vote for party lists in multi-member districts",
+            "Pure party vote-to-seat proportionality",
+            "NOT used in India"
+          ],
+          [
+            "Single Transferable Vote (STV)",
+            "Voters rank candidates by preference (1, 2, 3...)",
+            "Proportional representation with candidate choice",
+            "Rajya Sabha, Councils, Pres, VP"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "பட்டியல் முறை (List System)",
+            "வாக்காளர்கள் பல உறுப்பினர் தொகுதிகளில் கட்சிப் பட்டியல்களுக்கு வாக்களிக்கிறார்கள்",
+            "தூய்மையான கட்சி வாக்கு-இடங்களின் விகிதாசாரம்",
+            "இந்தியாவில் பயன்படுத்தப்படவில்லை"
+          ],
+          [
+            "ஒற்றை மாற்றத்தக்க வாக்கு (STV)",
+            "வாக்காளர்கள் வேட்பாளர்களை முன்னுரிமைப்படி (1, 2, 3...) வரிசைப்படுத்துகிறார்கள்",
+            "வேட்பாளர் தேர்வுடன் கூடிய விகிதாசார பிரதிநிதித்துவம்",
+            "மாநிலங்களவை, மேலவைகள், குடியரசுத் தலைவர், VP"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_fptp_vs_pr_stv_master_p2",
+        "title_en": "FPTP vs Proportional Representation STV Master Comparison",
+        "title_ta": "FPTP vs விகிதாசார பிரதிநிதித்துவ STV முதன்மை ஒப்பீடு",
+        "headers_en": [
+          "Comparison Attribute",
+          "First-Past-The-Post (FPTP)",
+          "Single Transferable Vote (PR-STV)"
+        ],
+        "headers_ta": [
+          "ஒப்பீட்டுப் பண்பு",
+          "அதிக வாக்குகள் பெற்றவர் வெற்றி முறை (FPTP)",
+          "ஒற்றை மாற்றத்தக்க வாக்கு (PR-STV)"
+        ],
+        "rows_en": [
+          [
+            "Constituency Type",
+            "Single-member territorial constituency",
+            "Multi-member constituency / Electoral college"
+          ],
+          [
+            "Ballot Paper Marking",
+            "Single cross / button press for one candidate",
+            "Preferential ranking (1, 2, 3...) of candidates"
+          ],
+          [
+            "Winning Criterion",
+            "Plurality (highest votes polled)",
+            "Calculated Quota of votes"
+          ],
+          [
+            "Vote Transfer",
+            "No vote transfer possible",
+            "Surplus/eliminated votes transferred by preference"
+          ],
+          [
+            "Ballot Secrecy",
+            "Secret ballot mandatory",
+            "Secret ballot (Pres/VP) / Open ballot (Rajya Sabha)"
+          ],
+          [
+            "Elections Applicable",
+            "Lok Sabha, Assembly, Gram Panchayat, Wards",
+            "Rajya Sabha, Legislative Council, President, Vice-President"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "தொகுதி வகை",
+            "ஒற்றை உறுப்பினர் புவியியல் தொகுதி",
+            "பல உறுப்பினர் தொகுதி / வாக்காளர் குழுமம்"
+          ],
+          [
+            "வாக்குச் சீட்டு குறியீடு",
+            "ஒரு வேட்பாளருக்கு ஒற்றைக் குறியீடு / பொத்தான் அழுத்துதல்",
+            "வேட்பாளர்களின் முன்னுரிமை வரிசைப்பாடு (1, 2, 3...)"
+          ],
+          [
+            "வெற்றி அளவுகோல்",
+            "பன்மை (பதிவான அதிக வாக்குகள்)",
+            "கணக்கிடப்பட்ட வாக்கு ஒதுக்கீடு (Quota)"
+          ],
+          [
+            "வாக்கு மாற்றம்",
+            "வாக்கு மாற்றம் சாத்தியமில்லை",
+            "உபரி/நீக்கப்பட்ட வாக்குகள் முன்னுரிமைப்படி மாற்றம்"
+          ],
+          [
+            "வாக்கு இரகசியம்",
+            "இரகசிய வாக்குப்பதிவு கட்டாயம்",
+            "இரகசிய வாக்குப்பதிவு (Pres/VP) / திறந்த வாக்குப்பதிவு (மாநிலங்களவை)"
+          ],
+          [
+            "பொருந்தும் தேர்தல்கள்",
+            "மக்களவை, சட்டமன்றம், கிராம ஊராட்சி, வார்டுகள்",
+            "மாநிலங்களவை, சட்ட மேலவை, குடியரசுத் தலைவர், துணைக் குடியரசுத் தலைவர்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_direct_vs_indirect_elections_p2",
+        "title_en": "Direct Elections vs Indirect Elections Comparison",
+        "title_ta": "நேரடித் தேர்தல்கள் vs மறைமுகத் தேர்தல்கள் ஒப்பீடு",
+        "headers_en": [
+          "Dimension",
+          "Direct Elections",
+          "Indirect Elections"
+        ],
+        "headers_ta": [
+          "பரிமாணம்",
+          "நேரடித் தேர்தல்கள்",
+          "மறைமுகத் தேர்தல்கள்"
+        ],
+        "rows_en": [
+          [
+            "Electorate",
+            "All eligible registered citizens (Adult Suffrage)",
+            "Elected representatives (MLAs / MPs)"
+          ],
+          [
+            "Electoral Method",
+            "First-Past-the-Post (FPTP)",
+            "Proportional Representation by STV"
+          ],
+          [
+            "Offices Covered",
+            "Lok Sabha & State Legislative Assemblies",
+            "Rajya Sabha, Legislative Councils, President, VP"
+          ],
+          [
+            "Voter Participation",
+            "Universal direct citizen participation",
+            "Mediated through elected representatives"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "வாக்காளர்கள்",
+            "தகுதியான அனைத்து பதிவுசெய்த குடிமக்கள் (வயது வந்தோர் வாக்குரிமை)",
+            "தேர்ந்தெடுக்கப்பட்ட பிரதிநிதிகள் (MLAs / MPs)"
+          ],
+          [
+            "தேர்தல் முறை",
+            "அதிக வாக்குகள் பெற்றவர் வெற்றி முறை (FPTP)",
+            "STV மூலமான விகிதாசார பிரதிநிதித்துவம்"
+          ],
+          [
+            "உள்ளடக்கப்படும் அமைப்புகள்",
+            "மக்களவை & மாநில சட்டமன்றங்கள்",
+            "மாநிலங்களவை, சட்ட மேலவைகள், குடியரசுத் தலைவர், VP"
+          ],
+          [
+            "வாக்காளர் பங்கேற்பு",
+            "அனைவருக்குமான நேரடி குடிமக்கள் பங்கேற்பு",
+            "தேர்ந்தெடுக்கப்பட்ட பிரதிநிதிகள் மூலம் அமைதல்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_rajya_sabha_election_rules_p2",
+        "title_en": "Rajya Sabha Election System & Open Ballot Mechanics",
+        "title_ta": "மாநிலங்களவைத் தேர்தல் முறை & திறந்த வாக்குப்பதிவு செயல்பாடுகள்",
+        "headers_en": [
+          "Attribute",
+          "Rajya Sabha Specification",
+          "Legal Provision / Case Law"
+        ],
+        "headers_ta": [
+          "பண்பு",
+          "மாநிலங்களவைக் குறிப்பீடு",
+          "சட்ட விதி / வழக்குத் தீர்ப்பு"
+        ],
+        "rows_en": [
+          [
+            "Electoral College",
+            "Elected members of State Assemblies (MLAs ONLY)",
+            "Art 80(4) (Nominated MLAs & MLCs excluded)"
+          ],
+          [
+            "Electoral System",
+            "Proportional Representation by STV",
+            "Art 80(4)"
+          ],
+          [
+            "Ballot System",
+            "OPEN BALLOT System (MLA shows ballot to party agent)",
+            "2003 RPA Amendment & Kuldip Nayar v. UOI 2006"
+          ],
+          [
+            "NOTA Applicability",
+            "NOTA is NOT applicable in Rajya Sabha polls",
+            "Supreme Court Ruling 2018"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "வாக்காளர் குழுமம்",
+            "மாநில சட்டமன்றங்களின் தேர்ந்தெடுக்கப்பட்ட உறுப்பினர்கள் (MLAs மட்டுமே)",
+            "உறுப்பு 80(4) (நியமன MLAs & MLCs விலக்கம்)"
+          ],
+          [
+            "தேர்தல் முறை",
+            "STV மூலமான விகிதாசார பிரதிநிதித்துவம்",
+            "உறுப்பு 80(4)"
+          ],
+          [
+            "வாக்குப்பதிவு முறை",
+            "திறந்த வாக்குப்பதிவு முறை (MLA கட்சி முகவரிடம் காட்ட வேண்டும்)",
+            "2003 RPA திருத்தம் & குல்தீப் நாயர் v. UOI 2006"
+          ],
+          [
+            "நோட்டா பொருந்துதல்",
+            "மாநிலங்களவைத் தேர்தல்களில் நோட்டா பொருந்தாது",
+            "உச்ச நீதிமன்றத் தீர்ப்பு 2018"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_presidential_election_ec_p2",
+        "title_en": "Presidential Election Electoral College & Quota Calculation",
+        "title_ta": "குடியரசுத் தலைவர் தேர்தல் வாக்காளர் குழுமம் & ஒதுக்கீட்டுக் கணக்கீடு",
+        "headers_en": [
+          "Component",
+          "Presidential Election Formula / Composition",
+          "Constitutional Basis"
+        ],
+        "headers_ta": [
+          "கூறு",
+          "குடியரசுத் தலைவர் தேர்தல் சூத்திரம் / கட்டமைப்பு",
+          "அரசியலமைப்பு அடிப்படை"
+        ],
+        "rows_en": [
+          [
+            "Electoral College",
+            "Elected MPs (LS+RS) + Elected MLAs of States + Delhi, Puducherry, J&K Assemblies",
+            "Article 54"
+          ],
+          [
+            "Excluded Members",
+            "Nominated MPs, Nominated MLAs & ALL MLCs of Legislative Councils",
+            "Art 54"
+          ],
+          [
+            "MLA Vote Value Formula",
+            "(State Population / Total Elected MLAs in State) / 1000",
+            "Article 55(2)(a) (1971 Census)"
+          ],
+          [
+            "MP Vote Value Formula",
+            "Total Vote Value of all elected MLAs of all States / Total Elected MPs",
+            "Article 55(2)(c)"
+          ],
+          [
+            "Winning Quota Formula",
+            "[Total Valid Votes Cast / 2] + 1 (50%+1 Absolute Majority)",
+            "Article 55(3) PR-STV"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "வாக்காளர் குழுமம்",
+            "தேர்ந்தெடுக்கப்பட்ட MPs (LS+RS) + தேர்ந்தெடுக்கப்பட்ட MLAs + டெல்லி, புதுச்சேரி, J&K சட்டமன்றங்கள்",
+            "உறுப்பு 54"
+          ],
+          [
+            "விலக்கப்பட்ட உறுப்பினர்கள்",
+            "நியமன MPs, நியமன MLAs & சட்ட மேலவைகளின் அனைத்து MLCs",
+            "உறுப்பு 54"
+          ],
+          [
+            "MLA வாக்கு மதிப்புச் சூத்திரம்",
+            "(மாநில மக்கள் தொகை / மாநிலத்தில் தேர்ந்தெடுக்கப்பட்ட மொத்த MLAs) / 1000",
+            "உறுப்பு 55(2)(a) (1971 கணக்கெடுப்பு)"
+          ],
+          [
+            "MP வாக்கு மதிப்புச் சூத்திரம்",
+            "அனைத்து மாநிலங்களின் தேர்ந்தெடுக்கப்பட்ட அனைத்து MLAs-ன் மொத்த வாக்கு மதிப்பு / மொத்த தேர்ந்தெடுக்கப்பட்ட MPs",
+            "உறுப்பு 55(2)(c)"
+          ],
+          [
+            "வெற்றி ஒதுக்கீட்டுச் சூத்திரம்",
+            "[பதிவான செல்லுபடியாகும் மொத்த வாக்குகள் / 2] + 1 (50%+1 தனிப் பெரும்பான்மை)",
+            "உறுப்பு 55(3) PR-STV"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_vp_election_ec_p2",
+        "title_en": "Vice-Presidential Election Electoral College & Features",
+        "title_ta": "துணைக் குடியரசுத் தலைவர் தேர்தல் வாக்காளர் குழுமம் & அம்சங்கள்",
+        "headers_en": [
+          "Feature",
+          "Vice-Presidential Election Specification",
+          "Constitutional Provision"
+        ],
+        "headers_ta": [
+          "அம்சம்",
+          "துணைக் குடியரசுத் தலைவர் தேர்தல் குறிப்பீடு",
+          "அரசியலமைப்பு விதி"
+        ],
+        "rows_en": [
+          [
+            "Electoral College",
+            "Members of BOTH Houses of Parliament ONLY (Lok Sabha & Rajya Sabha)",
+            "Article 66(1)"
+          ],
+          [
+            "Nominated MPs Role",
+            "INCLUDES BOTH Elected and Nominated MPs of Parliament",
+            "Art 66(1)"
+          ],
+          [
+            "State Assemblies Role",
+            "State MLAs and MLCs are COMPLETELY EXCLUDED",
+            "Art 66(1)"
+          ],
+          [
+            "Electoral System",
+            "Proportional Representation by STV with Secret Ballot",
+            "Article 66(1)"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "வாக்காளர் குழுமம்",
+            "நாடாளுமன்றத்தின் இரு அவைகளின் (மக்களவை & மாநிலங்களவை) உறுப்பினர்கள் மட்டுமே",
+            "உறுப்பு 66(1)"
+          ],
+          [
+            "நியமன MPs பங்கு",
+            "நாடாளுமன்றத்தின் தேர்ந்தெடுக்கப்பட்ட மற்றும் நியமிக்கப்பட்ட இரு எம்பிக்களையும் உள்ளடக்குகிறது",
+            "உறுப்பு 66(1)"
+          ],
+          [
+            "மாநில சட்டமன்றங்கள் பங்கு",
+            "மாநில MLAs மற்றும் MLCs முற்றிலும் விலக்கப்படுகிறார்கள்",
+            "உறுப்பு 66(1)"
+          ],
+          [
+            "தேர்தல் முறை",
+            "இரகசிய வாக்குப்பதிவுடன் கூடிய STV மூலமான விகிதாசார பிரதிநிதித்துவம்",
+            "உறுப்பு 66(1)"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_pres_vs_vp_electoral_college_p2",
+        "title_en": "President vs Vice-President Electoral College Comparison",
+        "title_ta": "குடியரசுத் தலைவர் vs துணைக் குடியரசுத் தலைவர் வாக்காளர் குழும ஒப்பீடு",
+        "headers_en": [
+          "Comparison Parameter",
+          "Presidential Electoral College (Art 54)",
+          "Vice-Presidential Electoral College (Art 66)"
+        ],
+        "headers_ta": [
+          "ஒப்பீட்டு அளவுகோல்",
+          "குடியரசுத் தலைவர் வாக்காளர் குழுமம் (உறுப்பு 54)",
+          "துணைக் குடியரசுத் தலைவர் வாக்காளர் குழுமம் (உறுப்பு 66)"
+        ],
+        "rows_en": [
+          [
+            "Houses Included",
+            "Lok Sabha, Rajya Sabha & State Legislative Assemblies",
+            "Lok Sabha and Rajya Sabha ONLY"
+          ],
+          [
+            "Nominated MPs",
+            "EXCLUDED from voting",
+            "INCLUDED in voting"
+          ],
+          [
+            "State MLAs",
+            "INCLUDED (Elected MLAs of States + Delhi/Puducherry/J&K)",
+            "EXCLUDED entirely"
+          ],
+          [
+            "State MLCs",
+            "EXCLUDED entirely",
+            "EXCLUDED entirely"
+          ],
+          [
+            "Ballot Secrecy",
+            "Secret Ballot",
+            "Secret Ballot"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "உள்ளடக்கப்படும் அவைகள்",
+            "மக்களவை, மாநிலங்களவை & மாநில சட்டமன்றங்கள்",
+            "மக்களவை மற்றும் மாநிலங்களவை மட்டுமே"
+          ],
+          [
+            "நியமன MPs",
+            "வாக்களிப்பதிலிருந்து விலக்கம்",
+            "வாக்களிப்பில் சேர்க்கப்படுகிறார்கள்"
+          ],
+          [
+            "மாநில MLAs",
+            "சேர்க்கப்படுகிறார்கள் (மாநிலங்களின் தேர்ந்தெடுக்கப்பட்ட MLAs + டெல்லி/புதுச்சேரி/J&K)",
+            "முற்றிலும் விலக்கப்படுகிறார்கள்"
+          ],
+          [
+            "மாநில MLCs",
+            "முற்றிலும் விலக்கப்படுகிறார்கள்",
+            "முற்றிலும் விலக்கப்படுகிறார்கள்"
+          ],
+          [
+            "வாக்கு இரகசியம்",
+            "இரகசிய வாக்குப்பதிவு",
+            "இரகசிய வாக்குப்பதிவு"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_legislative_council_electorates_p2",
+        "title_en": "State Legislative Council 5 Election Categories Breakdown",
+        "title_ta": "மாநில சட்ட மேலவைத் தேர்தல் 5 பிரிவுகள் பகுப்பாய்வு",
+        "headers_en": [
+          "Fraction",
+          "Electorate Category",
+          "Electing Authority / Source",
+          "Selection Mode"
+        ],
+        "headers_ta": [
+          "பின்னம்",
+          "வாக்காளர் பிரிவு வகை",
+          "தேர்ந்தெடுக்கும் அதிகார அமைப்பு / மூலம்",
+          "தேர்வு முறை"
+        ],
+        "rows_en": [
+          [
+            "1/3rd",
+            "Local Authorities",
+            "Municipalities, District Boards, Local Bodies in State",
+            "Elected via PR-STV"
+          ],
+          [
+            "1/3rd",
+            "Members of Legislative Assembly",
+            "Elected MLAs of the State Assembly",
+            "Elected via PR-STV"
+          ],
+          [
+            "1/12th",
+            "Graduates Electorate",
+            "Graduates residing at least 3 years in the State",
+            "Elected via PR-STV"
+          ],
+          [
+            "1/12th",
+            "Teachers Electorate",
+            "Secondary/higher school teachers (min 3 yrs experience)",
+            "Elected via PR-STV"
+          ],
+          [
+            "1/6th",
+            "Governor Nominees",
+            "Special knowledge in Literature, Science, Art, Co-op, Social Service",
+            "NOMINATED by Governor"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "1/3 பங்கு",
+            "உள்ளாட்சி அமைப்புகள்",
+            "மாநிலத்தில் உள்ள நகராட்சிகள், மாவட்ட வாரியங்கள், உள்ளாட்சி அமைப்புகள்",
+            "PR-STV மூலம் தேர்வு"
+          ],
+          [
+            "1/3 பங்கு",
+            "சட்டமன்ற உறுப்பினர்கள்",
+            "மாநில சட்டமன்றத்தின் தேர்ந்தெடுக்கப்பட்ட MLAs",
+            "PR-STV மூலம் தேர்வு"
+          ],
+          [
+            "1/12 பங்கு",
+            "பட்டதாரிகள் வாக்காளர்கள்",
+            "மாநிலத்தில் குறைந்தபட்சம் 3 ஆண்டுகள் வசிக்கும் பட்டதாரிகள்",
+            "PR-STV மூலம் தேர்வு"
+          ],
+          [
+            "1/12 பங்கு",
+            "ஆசிரியர்கள் வாக்காளர்கள்",
+            "உயர்நிலை/மேல்நிலைப் பள்ளி ஆசிரியர்கள் (குறைந்தது 3 ஆண்டுகள் அனுபவம்)",
+            "PR-STV மூலம் தேர்வு"
+          ],
+          [
+            "1/6 பங்கு",
+            "ஆளுநர் நியமன உறுப்பினர்கள்",
+            "இலக்கியம், அறிவியல், கலை, கூட்டுறவு, சமூகச் சேவையில் சிறப்பு அறிவு",
+            "ஆளுநரால் நியமனம்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_chronological_election_steps_p2",
+        "title_en": "Step-by-Step Chronological Election Process",
+        "title_ta": "காலவரிசைப்படி படிப் படியான தேர்தல் செயல்முறை",
+        "headers_en": [
+          "Stage",
+          "Process Step",
+          "Authority Responsible",
+          "Key Requirement"
+        ],
+        "headers_ta": [
+          "நிலை",
+          "செயல்முறை படி",
+          "பொறுப்பான அதிகார அமைப்பு",
+          "முக்கியத் தேவை"
+        ],
+        "rows_en": [
+          [
+            "1",
+            "Issue of Notification",
+            "President (LS) / Governor (Assembly) on ECI advice",
+            "Calls upon constituencies to elect"
+          ],
+          [
+            "2",
+            "Filing Nominations",
+            "Candidates before Returning Officer (RO)",
+            "Within 7 days of notification"
+          ],
+          [
+            "3",
+            "Scrutiny of Nominations",
+            "Returning Officer (RO)",
+            "Verification of candidate eligibility"
+          ],
+          [
+            "4",
+            "Withdrawal of Candidature",
+            "Candidates",
+            "Within 2 days of scrutiny"
+          ],
+          [
+            "5",
+            "Campaigning Period",
+            "Political Parties & Candidates",
+            "Must stop 48 hours before poll completion"
+          ],
+          [
+            "6",
+            "Polling & Voting",
+            "Presiding Officers & Polling Staff under ECI",
+            "Voting via EVM & VVPAT"
+          ],
+          [
+            "7",
+            "Counting & Result Declaration",
+            "Returning Officer under ECI supervision",
+            "Issue of Election Certificate"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "1",
+            "அறிவிப்பு வெளியீடு",
+            "ECI ஆலோசனையில் குடியரசுத் தலைவர் (LS) / ஆளுநர் (சட்டமன்றம்)",
+            "தேர்ந்தெடுக்கத் தொகுதிகளுக்கு அழைப்பு"
+          ],
+          [
+            "2",
+            "வேட்புமனு தாக்கல்",
+            "தேர்தல் நடத்தும் அதிகாரியிடம் (RO) வேட்பாளர்கள்",
+            "அறிவிப்பு வந்த 7 நாட்களுக்குள்"
+          ],
+          [
+            "3",
+            "வேட்புமனுக்கள் பரிசீலனை",
+            "தேர்தல் நடத்தும் அதிகாரி (RO)",
+            "வேட்பாளர் தகுதியை சரிபார்த்தல்"
+          ],
+          [
+            "4",
+            "வேட்புமனு வாபஸ் பெறுதல்",
+            "வேட்பாளர்கள்",
+            "பரிசீலனை முடிந்த 2 நாட்களுக்குள்"
+          ],
+          [
+            "5",
+            "பிரச்சாரக் காலம்",
+            "அரசியல் கட்சிகள் & வேட்பாளர்கள்",
+            "வாக்குப்பதிவு முடிவதற்கு 48 மணி நேரத்திற்கு முன் நிறுத்தம்"
+          ],
+          [
+            "6",
+            "வாக்குப்பதிவு",
+            "ECI-ன் கீழ் வாக்குச்சாவடி தலைமை அதிகாரிகள் & பணியாளர்கள்",
+            "EVM & VVPAT மூலம் வாக்களிப்பு"
+          ],
+          [
+            "7",
+            "எண்ணுதல் & முடிவுகள் அறிவிப்பு",
+            "ECI மேற்பார்வையில் தேர்தல் நடத்தும் அதிகாரி",
+            "தேர்தல் சான்றிதழ் வழங்கல்"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_evm_vvpat_components_p2",
+        "title_en": "EVM & VVPAT Technical & Administrative Structure",
+        "title_ta": "EVM & VVPAT தொழில்நுட்ப & நிர்வாகக் கட்டமைப்பு",
+        "headers_en": [
+          "Unit Component",
+          "Function & Operational Role",
+          "Manufacturer / Security Feature"
+        ],
+        "headers_ta": [
+          "அலகு கூறு",
+          "பணி & செயல்பாட்டுப் பங்கு",
+          "தயாரிப்பாளர் / பாதுகாப்பு அம்சம்"
+        ],
+        "rows_en": [
+          [
+            "Control Unit (CU)",
+            "Kept with Presiding Officer; activates Balloting Unit for each voter",
+            "BEL / ECIL; standalone non-networked micro-controller"
+          ],
+          [
+            "Ballot Unit (BU)",
+            "Kept in polling compartment; voter presses button to vote",
+            "Tamper-detection circuitry"
+          ],
+          [
+            "VVPAT Unit",
+            "Prints paper slip showing serial no, candidate name & symbol for 7 SECONDS",
+            "Sealed drop box; 5 random polling stations paper audit per constituency"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "கட்டுப்பாட்டு அலகு (CU)",
+            "வாக்குச்சாவடி தலைமை அதிகாரியிடம் இருக்கும்; ஒவ்வொரு வாக்காளருக்கும் வாக்களிக்கும் அலகை இயக்குகிறது",
+            "BEL / ECIL; நெட்வொர்க் இல்லாத தனித்துவமான மைக்ரோ-கண்ட்ரோலர்"
+          ],
+          [
+            "வாக்களிக்கும் அலகு (BU)",
+            "வாக்களிக்கும் அறையில் இருக்கும்; வாக்காளர் பொத்தானை அழுத்தி வாக்களிக்கிறார்",
+            "முறைகேடு கண்டறியும் மின்சுற்று"
+          ],
+          [
+            "VVPAT அலகு",
+            "வரிசை எண், வேட்பாளர் பெயர் & சின்னத்தைக் காட்டும் காகிதச் சீட்டை 7 விநாடிகள் அச்சிட்டுக் காட்டுகிறது",
+            "சீலிடப்பட்ட பெட்டி; தொகுதிக்கு தன்னிச்சையாக 5 வாக்குச்சாவடிகள் காகிதத் தணிக்கை"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_nota_facts_traps_p2",
+        "title_en": "NOTA Features, Legal Status & Exam Traps Comparison",
+        "title_ta": "நோட்டா (NOTA) அம்சங்கள், சட்டப்பூர்வ நிலை & தேர்வுப் பொறிகள் ஒப்பீடு",
+        "headers_en": [
+          "Aspect",
+          "NOTA Legal Provision / Fact",
+          "Common Exam Trap / Misconception"
+        ],
+        "headers_ta": [
+          "அம்சம்",
+          "நோட்டா சட்டப்பூர்வ விதி / உண்மை",
+          "பொதுவான தேர்வுப் பொறி / தவறான நம்பிக்கை"
+        ],
+        "rows_en": [
+          [
+            "Origin Landmark",
+            "Supreme Court judgment in PUCL v. UOI (2013)",
+            "NOT created by Parliamentary Act"
+          ],
+          [
+            "Vote Classification",
+            "Treated as INVALID / NEUTRAL votes in tallying",
+            "NOT counted as valid candidate votes"
+          ],
+          [
+            "Highest NOTA Effect",
+            "Candidate with 2nd highest votes is declared ELECTED",
+            "Does NOT automatically force re-election in Parliamentary polls"
+          ],
+          [
+            "Rajya Sabha Usage",
+            "Banned in Rajya Sabha polls by SC in 2018",
+            "NOT available in Rajya Sabha indirect elections"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "தோற்ற மைல்கல்",
+            "PUCL v. UOI (2013) வழக்கில் உச்ச நீதிமன்றத் தீர்ப்பு",
+            "நாடாளுமன்றச் சட்டத்தால் உருவாக்கப்படவில்லை"
+          ],
+          [
+            "வாக்கு வகைப்பாடு",
+            "வாக்கு எண்ணிக்கையில் செல்லாத / நடுநிலையான வாக்குகளாகக் கருதப்படும்",
+            "செல்லுபடியாகும் வேட்பாளர் வாக்குகளாக எண்ணப்படாது"
+          ],
+          [
+            "அதிக நோட்டா விளைவு",
+            "2வது அதிக வாக்குகள் பெறும் வேட்பாளர் வெற்றி பெற்றவராக அறிவிக்கப்படுவார்",
+            "நாடாளுமன்றத் தேர்தல் விதிகளில் மறுதேர்தலைத் தானாகக் கட்டாயப்படுத்தாது"
+          ],
+          [
+            "மாநிலங்களவை பயன்பாடு",
+            "2018 இல் SC தீர்ப்பால் மாநிலங்களவைத் தேர்தல்களில் தடை செய்யப்பட்டது",
+            "மாநிலங்களவை மறைமுகத் தேர்தல்களில் கிடைக்காது"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_mcc_vs_statutory_laws_p2",
+        "title_en": "Model Code of Conduct vs Statutory Election Laws",
+        "title_ta": "மாதிரி நடத்தை விதிமுறை vs சட்டப்பூர்வ தேர்தல் சட்டங்கள்",
+        "headers_en": [
+          "Attribute",
+          "Model Code of Conduct (MCC)",
+          "Statutory Election Laws (RPA 1951 / IPC)"
+        ],
+        "headers_ta": [
+          "பண்பு",
+          "மாதிரி நடத்தை விதிமுறை (MCC)",
+          "சட்டப்பூர்வ தேர்தல் சட்டங்கள் (RPA 1951 / IPC)"
+        ],
+        "rows_en": [
+          [
+            "Legal Status",
+            "Non-statutory administrative consensus guidelines",
+            "Enacted statutory Acts passed by Parliament"
+          ],
+          [
+            "Effective Period",
+            "From ECI election announcement date till poll completion",
+            "Permanently in force"
+          ],
+          [
+            "Direct Court Punishment",
+            "ECI cannot directly imprison under MCC (enforces via RPA/IPC)",
+            "Courts impose statutory fines and imprisonment"
+          ],
+          [
+            "Key Provisions",
+            "Ban on government announcements, official vehicle misuse, hate speech",
+            "Corrupt practices (Sec 123), bribery, booth capturing"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "சட்டப்பூர்வ நிலை",
+            "சட்டப்பூர்வமற்ற நிர்வாக ஒப்புதல் வழிகாட்டுதல்கள்",
+            "நாடாளுமன்றத்தால் இயற்றப்பட்ட சட்டப்பூர்வ சட்டங்கள்"
+          ],
+          [
+            "அமல்படுத்தப்படும் காலம்",
+            "ECI தேர்தல் அறிவிப்பு தேதி முதல் தேர்தல் முடியும் வரை",
+            "நிரந்தரமாக அமலில் இருக்கும்"
+          ],
+          [
+            "நேரடி நீதிமன்றத் தண்டனை",
+            "MCC-ன் கீழ் ECI நேரடியாகச் சிறை தண்டனை விதிக்க முடியாது (RPA/IPC மூலம் அமல்படுத்துகிறது)",
+            "நீதிமன்றங்கள் சட்டப்பூர்வ அபராதம் மற்றும் சிறை தண்டனை விதிக்கின்றன"
+          ],
+          [
+            "முக்கிய விதிகள்",
+            "அரசு அறிவிப்புகளுக்குத் தடை, அரசு வாகனத் தவறான பயன்பாடு, வெறுப்புப் பேச்சு",
+            "ஊழல் நடவடிக்கைகள் (பிரிவு 123), லஞ்சம், வாக்குச்சாவடி கைப்பற்றுதல்"
+          ]
+        ]
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "ELECTORAL SYSTEM & ELECTION PROCESS (PART 2)",
+        "short_label": "Electoral System Part 2 Mind Map",
+        "children": [
+          {
+            "title": "1. Voting Systems",
+            "short_label": "Voting Systems",
+            "children": [
+              {
+                "title": "FPTP: Simple plurality, highest votes wins (Lok Sabha & Assemblies)",
+                "short_label": "FPTP System"
+              },
+              {
+                "title": "PR-STV: Quota based preferential voting (Rajya Sabha, Pres, VP, Councils)",
+                "short_label": "PR-STV System"
+              }
+            ]
+          },
+          {
+            "title": "2. Electoral Colleges",
+            "short_label": "Electoral Colleges",
+            "children": [
+              {
+                "title": "President: Elected MPs + Elected MLAs (Delhi/Puducherry/J&K included; Nominees excluded)",
+                "short_label": "Pres Electoral College"
+              },
+              {
+                "title": "Vice-President: BOTH Elected + Nominated MPs of Parliament ONLY (MLAs excluded)",
+                "short_label": "VP Electoral College"
+              },
+              {
+                "title": "Rajya Sabha: Elected MLAs ONLY (Open Ballot system)",
+                "short_label": "RS Electoral College"
+              }
+            ]
+          },
+          {
+            "title": "3. Election Cycle & Integrity",
+            "short_label": "Election Cycle",
+            "children": [
+              {
+                "title": "Process: Notification -> Nomination -> Scrutiny -> Poll -> Counting",
+                "short_label": "Election Steps"
+              },
+              {
+                "title": "EVM & VVPAT: Standalone machines; 7-sec VVPAT paper slip display",
+                "short_label": "EVM-VVPAT"
+              },
+              {
+                "title": "NOTA: SC 2013 PUCL judgment; 2nd highest candidate wins if NOTA is 1st",
+                "short_label": "NOTA Status"
+              },
+              {
+                "title": "MCC: Operational from announcement date; non-statutory guidelines",
+                "short_label": "MCC Status"
+              }
+            ]
+          },
+          {
+            "title": "4. Election Disputes",
+            "short_label": "Disputes & Petitions",
+            "children": [
+              {
+                "title": "Art 329(b): Election Petition to High Court post-poll sole remedy",
+                "short_label": "Election Petition HC"
+              },
+              {
+                "title": "Time Limit: 45 Days from result declaration under RPA 1951 Sec 81",
+                "short_label": "45 Days Limit"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tnpsc_traps": [
+      {
+        "title": {
+          "en": "Trap 1: FPTP Plurality vs Absolute Majority Confusion",
+          "ta": "பொறி 1: FPTP பன்மை vs தனிப் பெரும்பான்மை குழப்பப் பொறி"
+        },
+        "points": {
+          "en": [
+            "CONCEPT: Winner determination in First-Past-The-Post.",
+            "MEMORY SHORTCUT: FPTP = HIGHEST votes (Plurality); NOT necessarily 50%+1.",
+            "COMMON CONFUSION: Believing an MP or MLA must secure over 50% of votes to win.",
+            "CORRECT RULE: In FPTP, the candidate with the highest number of valid votes wins, regardless of whether it is 35% or 55%.",
+            "EXAM APPLICATION: FPTP requires Plurality, NOT absolute majority."
+          ],
+          "ta": [
+            "கருத்து: அதிக வாக்குகள் பெற்றவர் வெற்றி முறையில் வெற்றியாளரைத் தீர்மானித்தல்.",
+            "நினைவு குறுக்குவழி: FPTP = அதிக வாக்குகள் (பன்மை); 50%+1 கட்டாயமில்லை.",
+            "பொதுவான குழப்பம்: வெற்றி பெற ஒரு MP அல்லது MLA 50%-க்கும் அதிகமான வாக்குகளைப் பெற வேண்டும் என நம்புவது.",
+            "சரியான விதி: FPTP-ல், அதிக செல்லுபடியாகும் வாக்குகளைப் பெறும் வேட்பாளர் (35% அல்லது 55% எதுவாக இருந்தாலும்) வெற்றி பெற்றவராக அறிவிக்கப்படுவார்.",
+            "தேர்வுப் பயன்பாடு: FPTP பன்மையைக் (Plurality) கோருகிறது, தனிப் பெரும்பான்மையை அல்ல."
+          ]
+        }
+      },
+      {
+        "title": {
+          "en": "Trap 2: Presidential vs Vice-Presidential Electoral College Nominated Members Trap",
+          "ta": "பொறி 2: குடியரசுத் தலைவர் vs துணைக் குடியரசுத் தலைவர் வாக்காளர் குழும நியமன உறுப்பினர்கள் பொறி"
+        },
+        "points": {
+          "en": [
+            "CONCEPT: Role of nominated MPs in Presidential vs VP elections.",
+            "MEMORY SHORTCUT: President = Nominated MPs EXCLUDED; Vice-President = Nominated MPs INCLUDED.",
+            "COMMON CONFUSION: Thinking nominated members are excluded from Vice-Presidential elections.",
+            "CORRECT RULE: Art 54 excludes nominated MPs from Presidential polls; Art 66 includes nominated MPs in Vice-Presidential polls.",
+            "EXAM APPLICATION: Nominated MPs vote in VP election ONLY."
+          ],
+          "ta": [
+            "கருத்து: குடியரசுத் தலைவர் vs VP தேர்தல்களில் நியமன எம்பிக்களின் பங்கு.",
+            "நினைவு குறுக்குவழி: குடியரசுத் தலைவர் = நியமன MPs விலக்கம்; துணைக் குடியரசுத் தலைவர் = நியமன MPs சேர்க்கை.",
+            "பொதுவான குழப்பம்: துணைக் குடியரசுத் தலைவர் தேர்தலிலும் நியமன உறுப்பினர்கள் விலக்கப்படுகிறார்கள் என நினைப்பது.",
+            "சரியான விதி: உறுப்பு 54 குடியரசுத் தலைவர் தேர்தலில் நியமன எம்பிக்களை விலக்குகிறது; உறுப்பு 66 துணைக் குடியரசுத் தலைவர் தேர்தலில் நியமன எம்பிக்களைச் சேர்க்கிறது.",
+            "தேர்வுப் பயன்பாடு: நியமன MPs VP தேர்தலில் மட்டுமே வாக்களிக்கிறார்கள்."
+          ]
+        }
+      }
+    ],
+    "distractor_analysis": [],
+    "important_facts": {
+      "en": [
+        "FPTP system is used for Lok Sabha and State Legislative Assembly elections in India.",
+        "PR-STV system is used for Rajya Sabha, State Legislative Councils, President, and Vice-President elections.",
+        "Presidential Electoral College (Art 54) includes elected MPs and elected MLAs of States, Delhi, Puducherry & J&K; nominated members are excluded.",
+        "Vice-Presidential Electoral College (Art 66) includes BOTH elected and nominated MPs of Parliament ONLY; State MLAs are excluded.",
+        "Rajya Sabha elections use PR-STV with an OPEN BALLOT system (MLA shows marked ballot to party agent).",
+        "NOTA was introduced following Supreme Court judgment in PUCL v. UOI (2013).",
+        "If NOTA gets the highest votes in a constituency, the candidate receiving the 2nd highest votes is declared ELECTED.",
+        "VVPAT prints a paper slip showing candidate details for 7 SECONDS before dropping into sealed box.",
+        "Model Code of Conduct (MCC) is a non-statutory administrative code coming into force immediately upon election announcement.",
+        "Under Art 329(b), an election can ONLY be challenged via an Election Petition presented to the High Court within 45 days of result declaration."
+      ],
+      "ta": [
+        "இந்தியாவில் மக்களவை மற்றும் மாநில சட்டமன்றத் தேர்தல்களுக்கு FPTP முறை பயன்படுத்தப்படுகிறது.",
+        "மாநிலங்களவை, சட்ட மேலவைகள், குடியரசுத் தலைவர் மற்றும் துணைக் குடியரசுத் தலைவர் தேர்தல்களுக்கு PR-STV முறை பயன்படுத்தப்படுகிறது.",
+        "குடியரசுத் தலைவர் வாக்காளர் குழுமம் (உறுப்பு 54) தேர்ந்தெடுக்கப்பட்ட MPs மற்றும் மாநிலங்கள், டெல்லி, புதுச்சேரி & J&K தேர்ந்தெடுக்கப்பட்ட MLAs-ஐ உள்ளடக்குகிறது; நியமன உறுப்பினர்கள் விலக்கப்படுகிறார்கள்.",
+        "துணைக் குடியரசுத் தலைவர் வாக்காளர் குழுமம் (உறுப்பு 66) நாடாளுமன்றத்தின் தேர்ந்தெடுக்கப்பட்ட மற்றும் நியமிக்கப்பட்ட இரு எம்பிக்களையும் மட்டுமே உள்ளடக்குகிறது; மாநில MLAs விலக்கப்படுகிறார்கள்.",
+        "மாநிலங்களவைத் தேர்தல்கள் திறந்த வாக்குப்பதிவு முறையுடன் (Open Ballot) PR-STV-ஐப் பயன்படுத்துகின்றன.",
+        "PUCL v. UOI (2013) உச்ச நீதிமன்றத் தீர்ப்பைத் தொடர்ந்து நோட்டா (NOTA) கொண்டுவரப்பட்டது.",
+        "ஒரு தொகுதியில் நோட்டா அதிக வாக்குகளைப் பெற்றாலும், 2வது அதிக வாக்குகள் பெறும் வேட்பாளரே வெற்றி பெற்றவராக அறிவிக்கப்படுவார்.",
+        "VVPAT காகிதச் சீட்டு 7 விநாடிகள் வேட்பாளர் விவரங்களைக் காட்டி சீலிடப்பட்ட பெட்டியில் விழுகிறது.",
+        "மாதிரி நடத்தை விதிமுறை (MCC) என்பது தேர்தல் அறிவிப்பு வெளியான உடனேயே அமலுக்கு வரும் சட்டப்பூர்வமற்ற நிர்வாகக் குறியீடாகும்.",
+        "உறுப்பு 329(b)-ன் கீழ், தேர்தல் முடிவு அறிவிக்கப்பட்ட 45 நாட்களுக்குள் உயர் நீதிமன்றத்தில் தாக்கல் செய்யப்படும் தேர்தல் மனு மூலமே தேர்தலைச் சவால் செய்ய முடியும்."
+      ]
+    },
+    "quick_revision": {
+      "en": [
+        "10-SEC REVISION: Electoral System Part 2 | FPTP: Lok Sabha & Assembly (Plurality wins) | PR-STV: Rajya Sabha, Pres, VP, Councils | Pres Electoral College: Elected MPs + Elected MLAs (Nominees excluded) | VP Electoral College: Elected + Nominated MPs ONLY (MLAs excluded) | RS Polls: Open Ballot | NOTA: 2013 SC ruling (2nd highest candidate wins) | MCC: Non-statutory (starts on announcement) | Election Petition: High Court within 45 days (Art 329(b)).",
+        "30-SEC REVISION: India uses FPTP for Lok Sabha/Assemblies (highest votes wins, absolute majority not required). Indirect elections use PR-STV: Rajya Sabha (Open Ballot, elected MLAs only), President (Art 54: Elected MPs + Elected MLAs of States/UTs, value of vote formula, 50%+1 quota), Vice-President (Art 66: Elected + Nominated MPs of Parliament ONLY). Legislative Councils have 5 election categories (1/3 local, 1/3 MLAs, 1/12 grads, 1/12 teachers, 1/6 Governor nominees). Process: Notification -> Nomination -> Scrutiny -> Poll -> Counting. EVM/VVPAT prints slip for 7 seconds. NOTA does not force re-election. MCC is non-statutory code enforced by ECI. Election Petition to High Court within 45 days under Art 329(b).",
+        "2-MIN REVISION: Complete Electoral System Mechanics: FPTP vs PR-STV: FPTP operates in single-member constituencies where the candidate obtaining simple plurality of valid votes is elected. PR-STV operates in indirect elections using preferential ranking (1, 2, 3...) to fulfill a calculated vote quota. Constitutional Electoral Colleges: President (Art 54): Elected MPs (LS+RS) + Elected MLAs of all States + Delhi/Puducherry/J&K Assemblies; Nominated MPs/MLAs & all MLCs excluded. Value of MLA vote depends on State population; Value of MP vote equals total MLA votes / total elected MPs. Quota = [Total Votes / 2] + 1. Vice-President (Art 66): Consists ONLY of members of Parliament (both Lok Sabha & Rajya Sabha), including BOTH Elected and Nominated MPs; State Assemblies completely excluded. Rajya Sabha Elections: Elected MLAs only vote using PR-STV under OPEN BALLOT system (MLA shows ballot to party agent). Legislative Council Elections (Art 171(3)): 1/3rd Local Bodies, 1/3rd MLAs, 1/12th Graduates, 1/12th Teachers, 1/6th Governor nominees. Operational Rules: Deposit forfeiture occurs if securing less than 1/6th valid votes. VVPAT displays printed slip for 7 seconds. NOTA (2013 SC ruling) is a neutral vote; candidate with 2nd highest votes wins if NOTA is 1st. MCC is a non-statutory consensus code operational from election announcement. Disputes: Article 329(b) bars writs during polling; Election Petition to High Court under Sec 80 of RPA 1951 within 45 days is sole remedy.",
+        "5-MIN REVISION: Master Synthesis Part 2: Electoral Systems & Election Process: Plurality System (FPTP): Single-member constituencies, direct voting, candidate with highest votes wins (no 50%+1 requirement). Used in Lok Sabha, Legislative Assemblies, Panchayats, Municipal Wards. Proportional System (PR-STV): Preferential voting, quota requirement, surplus/eliminated vote transfer. Used in Rajya Sabha (open ballot), Legislative Councils (1/3 local, 1/3 MLAs, 1/12 grads, 1/12 teachers, 1/6 Governor nominees), President & Vice-President. Comparative Electoral Colleges: Presidential Electoral College (Art 54) includes elected MPs + elected MLAs (States + Delhi/Puducherry/J&K); excludes nominated members. VP Electoral College (Art 66) includes elected + nominated MPs of Parliament ONLY; excludes State MLAs entirely. Election Process Cycle: 1. Notification by President/Governor, 2. Nomination filing (Form 2A/2B, security deposit Rs 25,000 LS / Rs 10,000 Assembly; 1/6th vote threshold for deposit return), 3. Scrutiny by RO, 4. Withdrawal, 5. Campaign (stops 48h before poll close), 6. Polling (EVM standalone unit + VVPAT 7-sec paper slip), 7. Counting & Result. Legal & Regulatory Mechanisms: NOTA (PUCL 2013 judgment) allows rejection secrecy under Art 19(1)(a); neutral vote status means 2nd candidate wins if NOTA is highest. Model Code of Conduct (MCC) is an administrative consensus code operational immediately on election announcement. Election Disputes: Art 329(b) bars judicial interference during elections; Election Petition under Sec 80 of RPA 1951 presented to designated High Court within 45 days of result is sole post-poll remedy.",
+        "10-MIN MASTER REVISION: Master Overview Part 2: Comprehensive Group 1 Electoral System Notes: Electoral Methods: India adopts First-Past-The-Post (FPTP) for direct general elections and Proportional Representation by Single Transferable Vote (PR-STV) for indirect constitutional elections. FPTP Mechanics: Country/State divided into single-member territorial constituencies; voters vote for a single candidate; the candidate securing the HIGHEST valid votes (plurality) is declared elected, without needing an absolute majority (50%+1). FPTP applies to Lok Sabha, State Legislative Assemblies, Gram Panchayats, and Municipal Wards. PR-STV Mechanics: Applied in multi-member bodies or indirect elections; voters rank candidates preferentially (1, 2, 3...); candidates must achieve a calculated vote quota to win; surplus votes above quota or votes of eliminated lowest candidates are transferred according to subsequent preferences. Indirect Election Systems: 1. Rajya Sabha (Art 80): Elected MLAs of States vote using PR-STV under OPEN BALLOT system (amended RPA 1951 in 2003, upheld in Kuldip Nayar 2006; MLA shows marked ballot to party agent). Nominated MLAs & MLCs do NOT vote. NOTA is banned in RS polls (SC 2018). 2. President of India (Arts 54 & 55): Electoral College comprises elected MPs (LS+RS) + elected MLAs of all States + elected MLAs of UTs of Delhi, Puducherry & J&K (70th CAA 1992). Nominated members of Parliament/Assemblies and ALL members of State Legislative Councils are EXCLUDED. Value of MLA vote = (State Pop / Total Elected MLAs) / 1000 (1971 census). Value of MP vote = Total Value of all State MLA votes / Total Elected MPs. Quota = [Total Valid Votes / 2] + 1 (Absolute Majority 50%+1). 3. Vice-President of India (Art 66): Electoral College comprises members of BOTH Houses of Parliament ONLY (Lok Sabha & Rajya Sabha). INCLUDES BOTH Elected and Nominated MPs. EXCLUDES State Assemblies (MLAs) and Legislative Councils (MLCs) entirely. Voting is by PR-STV with Secret Ballot. 4. State Legislative Council (Art 171(3)): 1/3rd elected by Local Authorities, 1/3rd elected by Assembly MLAs, 1/12th elected by Graduates, 1/12th elected by Teachers, 1/6th NOMINATED by Governor. Chronological Election Cycle: Notification by President (LS) / Governor (Assembly) -> Nomination filing before Returning Officer (Deposit: Rs 25,000 LS / Rs 10,000 Assembly; forfeited if < 1/6th valid votes polled) -> Scrutiny by RO -> Withdrawal -> Campaigning (stops 48 hours before poll close) -> Polling (EVM Control & Ballot Units + VVPAT printing 7-sec paper slip; 5 random polling stations per assembly segment paper audited) -> Counting & Result. NOTA & MCC Framework: NOTA introduced post-PUCL v. UOI (2013) SC judgment under Art 19(1)(a); NOTA votes are invalid/neutral tally; if NOTA gets highest votes, candidate with 2nd highest votes is declared ELECTED (does not force re-election). Model Code of Conduct (MCC) is a non-statutory administrative consensus code operational immediately on ECI election schedule announcement. Election Disputes: Article 329(b) bars courts from stalling election process via writ petitions; Election Petition under Section 80 of RPA 1951 presented to the High Court of the State within 45 days of result declaration is the sole post-poll legal remedy."
+      ],
+      "ta": [
+        "10-வினாடி மறுபார்வை: தேர்தல் முறை பகுதி 2 | FPTP: மக்களவை & சட்டமன்றம் (பன்மை வெற்றி) | PR-STV: மாநிலங்களவை, Pres, VP, மேலவைகள் | Pres வாக்காளர் குழுமம்: தேர்ந்தெடுக்கப்பட்ட MPs + தேர்ந்தெடுக்கப்பட்ட MLAs (நியமனங்கள் விலக்கம்) | VP வாக்காளர் குழுமம்: தேர்ந்தெடுக்கப்பட்ட + நியமிக்கப்பட்ட MPs மட்டுமே (MLAs விலக்கம்) | RS தேர்தல்கள்: திறந்த வாக்குப்பதிவு | நோட்டா: 2013 SC தீர்ப்பு (2வது அதிக வாக்கு பெற்றவர் வெற்றி) | MCC: சட்டப்பூர்வமற்றது (அறிவிப்பில் தொடக்கம்) | தேர்தல் மனு: 45 நாட்களுக்குள் உயர் நீதிமன்றம் (உறுப்பு 329(b)).",
+        "30-வினாடி மறுபார்வை: இந்தியா மக்களவை/சட்டமன்றங்களுக்கு FPTP-ஐப் பயன்படுத்துகிறது (அதிக வாக்குகள் பெற்றவர் வெற்றி, தனிப் பெரும்பான்மை தேவையில்லை). மறைமுகத் தேர்தல்கள் PR-STV-ஐப் பயன்படுத்துகின்றன: மாநிலங்களவை (திறந்த வாக்குப்பதிவு, தேர்ந்தெடுக்கப்பட்ட MLAs மட்டுமே), குடியரசுத் தலைவர் (உறுப்பு 54: தேர்ந்தெடுக்கப்பட்ட MPs + மாநிலங்கள்/UTs தேர்ந்தெடுக்கப்பட்ட MLAs, வாக்கு மதிப்புச் சூத்திரம், 50%+1 ஒதுக்கீடு), துணைக் குடியரசுத் தலைவர் (உறுப்பு 66: நாடாளுமன்றத்தின் தேர்ந்தெடுக்கப்பட்ட + நியமிக்கப்பட்ட MPs மட்டுமே). சட்ட மேலவைகளில் 5 தேர்தல் பிரிவுகள் உள்ளன (1/3 உள்ளாட்சி, 1/3 MLAs, 1/12 பட்டதாரிகள், 1/12 ஆசிரியர்கள், 1/6 ஆளுநர் நியமனங்கள்). செயல்முறை: அறிவிப்பு -> வேட்புமனு -> பரிசீலனை -> வாக்குப்பதிவு -> எண்ணுதல். EVM/VVPAT 7 விநாடிகள் காகிதச் சீட்டைக் காட்டுகிறது. நோட்டா மறுதேர்தலைக் கட்டாயப்படுத்தாது. MCC என்பது ECI-ஆல் அமல்படுத்தப்படும் சட்டப்பூர்வமற்ற குறியீடு. உறுப்பு 329(b)-ன் கீழ் 45 நாட்களுக்குள் உயர் நீதிமன்றத்தில் தேர்தல் மனு.",
+        "2-நிமிட மறுபார்வை: முழுமையான தேர்தல் முறை செயல்பாடுகள்: FPTP vs PR-STV: FPTP ஒற்றை உறுப்பினர் தொகுதிகளில் செயல்படுகிறது, அங்கு செல்லுபடியாகும் வாக்குகளின் எளிய பன்மையைப் பெறும் வேட்பாளர் தேர்ந்தெடுக்கப்படுகிறார். PR-STV மறைமுகத் தேர்தல்களில் கணக்கிடப்பட்ட வாக்கு ஒதுக்கீட்டைப் பூர்த்தி செய்ய முன்னுரிமை வரிசைப்பாட்டை (1, 2, 3...) பயன்படுத்துகிறது. அரசியலமைப்பு வாக்காளர் குழுமங்கள்: குடியரசுத் தலைவர் (உறுப்பு 54): தேர்ந்தெடுக்கப்பட்ட MPs (LS+RS) + அனைத்து மாநிலங்களின் தேர்ந்தெடுக்கப்பட்ட MLAs + டெல்லி/புதுச்சேரி/J&K சட்டமன்றங்கள்; நியமன MPs/MLAs & அனைத்து MLCs விலக்கம். MLA வாக்கின் மதிப்பு மாநில மக்கள் தொகையைச் சார்ந்தது; MP வாக்கின் மதிப்பு மொத்த MLA வாக்குகள் / மொத்த தேர்ந்தெடுக்கப்பட்ட எம்பிக்களுக்குச் சமம். ஒதுக்கீடு = [மொத்த வாக்குகள் / 2] + 1. துணைக் குடியரசுத் தலைவர் (உறுப்பு 66): நாடாளுமன்ற உறுப்பினர்களை மட்டுமே கொண்டது (மக்களவை & மாநிலங்களவை இரண்டும்), தேர்ந்தெடுக்கப்பட்ட மற்றும் நியமிக்கப்பட்ட இரு எம்பிக்களையும் உள்ளடக்குகிறது; மாநில சட்டமன்றங்கள் முற்றிலும் விலக்கப்படுகின்றன. மாநிலங்களவைத் தேர்தல்கள்: தேர்ந்தெடுக்கப்பட்ட MLAs மட்டுமே திறந்த வாக்குப்பதிவு முறையில் (MLA கட்சி முகவரிடம் வாக்குச் சீட்டைக் காட்டுவார்) PR-STV-ஐப் பயன்படுத்தி வாக்களிக்கிறார்கள். சட்ட மேலவைத் தேர்தல்கள் (உறுப்பு 171(3)): 1/3 பங்கு உள்ளாட்சி அமைப்புகள், 1/3 பங்கு MLAs, 1/12 பங்கு பட்டதாரிகள், 1/12 பங்கு ஆசிரியர்கள், 1/6 பங்கு ஆளுநர் நியமனங்கள். செயல்பாட்டு விதிகள்: 1/6 பங்கிற்குள் செல்லுபடியாகும் வாக்குகளைப் பெற்றால் பிணைத் தொகை பறிமுதல் செய்யப்படும். VVPAT அச்சிடப்பட்ட சீட்டை 7 விநாடிகள் காட்டுகிறது. நோட்டா (2013 SC தீர்ப்பு) ஒரு நடுநிலையான வாக்கு; நோட்டா 1வது இடத்தைப் பெற்றால் 2வது அதிக வாக்குகள் பெறும் வேட்பாளர் வெற்றி பெறுவார். MCC என்பது தேர்தல் அறிவிப்பு முதல் செயல்படும் சட்டப்பூர்வமற்ற ஒப்புதல் குறியீடாகும். தகராறுகள்: உறுப்பு 329(b) வாக்குப்பதிவின் போது பேராணைகளைத் தடுக்கிறது; RPA 1951 பிரிவு 80-ன் கீழ் 45 நாட்களுக்குள் உயர் நீதிமன்றத்தில் தாக்கல் செய்யப்படும் தேர்தல் மனுவே ஒரே தீர்வு.",
+        "5-நிமிட மறுபார்வை: முதன்மை ஒருங்கிணைப்பு பகுதி 2: தேர்தல் முறைகள் & தேர்தல் செயல்முறை: பன்மை முறை (FPTP): ஒற்றை உறுப்பினர் தொகுதிகள், நேரடி வாக்களிப்பு, அதிக வாக்குகள் பெறும் வேட்பாளர் வெற்றி (50%+1 தேவை இல்லை). மக்களவை, சட்டமன்றங்கள், பஞ்சாயத்துகள், நகராட்சி வார்டுகளில் பயன்பாடு. விகிதாசார முறை (PR-STV): முன்னுரிமை வாக்களிப்பு, ஒதுக்கீட்டுத் தேவை, உபரி/நீக்கப்பட்ட வாக்கு மாற்றம். மாநிலங்களவை (திறந்த வாக்குப்பதிவு), சட்ட மேலவைகள் (1/3 உள்ளாட்சி, 1/3 MLAs, 1/12 பட்டதாரிகள், 1/12 ஆசிரியர்கள், 1/6 ஆளுநர் நியமனங்கள்), குடியரசுத் தலைவர் & துணைக் குடியரசுத் தலைவரில் பயன்பாடு. ஒப்பீட்டு வாக்காளர் குழுமங்கள்: குடியரசுத் தலைவர் வாக்காளர் குழுமம் (உறுப்பு 54) தேர்ந்தெடுக்கப்பட்ட MPs + தேர்ந்தெடுக்கப்பட்ட MLAs (மாநிலங்கள் + டெல்லி/புதுச்சேரி/J&K) உள்ளடக்குகிறது; நியமன உறுப்பினர்களை விலக்குகிறது. VP வாக்காளர் குழுமம் (உறுப்பு 66) நாடாளுமன்றத்தின் தேர்ந்தெடுக்கப்பட்ட + நியமிக்கப்பட்ட MPs மட்டுமே உள்ளடக்குகிறது; மாநில MLAs-ஐ முற்றிலும் விலக்குகிறது. தேர்தல் செயல்முறை சுழற்சி: 1. குடியரசுத் தலைவர்/ஆளுநர் அறிவிப்பு, 2. வேட்புமனு தாக்கல் (படிவம் 2A/2B, பிணைத் தொகை ரூ 25,000 LS / ரூ 10,000 சட்டமன்றம்; பிணைத் தொகை திரும்பப் பெற 1/6 பங்கு வாக்கு வரம்பு), 3. RO பரிசீலனை, 4. வாபஸ் பெறுதல், 5. பிரச்சாரம் (வாக்குப்பதிவு முடிவதற்கு 48 மணி நேரத்திற்கு முன் நிறுத்தம்), 6. வாக்குப்பதிவு (EVM தனி அலகு + VVPAT 7-செக் காகிதச் சீட்டு), 7. எண்ணுதல் & முடிவுகள். சட்டப்பூர்வ & ஒழுங்குமுறை இயந்திரங்கள்: நோட்டா (PUCL 2013 தீர்ப்பு) உறுப்பு 19(1)(a)-ன் கீழ் நிராகரிப்பு இரகசியத்தை அனுமதிக்கிறது; நடுநிலை வாக்கு நிலை என்றால் நோட்டா முதன்மையாக இருந்தாலும் 2வது வேட்பாளர் வெற்றி பெறுவார். மாதிரி நடத்தை விதிமுறை (MCC) என்பது தேர்தல் அறிவிப்பில் உடனடி அமலுக்கு வரும் நிர்வாக ஒப்புதல் குறியீடாகும். தேர்தல் தகராறுகள்: உறுப்பு 329(b) தேர்தலின் போது நீதித்துறை தலையீட்டைத் தடுக்கிறது; முடிவு அறிவிக்கப்பட்ட 45 நாட்களுக்குள் உயர் நீதிமன்றத்தில் தாக்கல் செய்யப்படும் RPA 1951 பிரிவு 80-ன் கீழ் தேர்தல் மனுவே தேர்தலுக்குப் பிந்தைய ஒரே தீர்வு.",
+        "10-நிமிட முதன்மை மறுபார்வை: முதன்மை மேலோட்டம் பகுதி 2: முழுமையான குரூப் 1 தேர்தல் முறை குறிப்புகள்: தேர்தல் முறைகள்: இந்தியா நேரடிப் பொதுத் தேர்தல்களுக்கு அதிக வாக்குகள் பெற்றவர் வெற்றி முறையையும் (FPTP) மறைமுக அரசியலமைப்புத் தேர்தல்களுக்கு ஒற்றை மாற்றத்தக்க வாக்கு மூலமான விகிதாசார பிரதிநிதித்துவத்தையும் (PR-STV) приняத்தது. FPTP செயல்பாடுகள்: நாடு/மாநிலம் ஒற்றை உறுப்பினர் புவியியல் தொகுதிகளாகப் பிரிக்கப்படுகிறது; வாக்காளர்கள் ஒரு வேட்பாளருக்கு வாக்களிக்கிறார்கள்; செல்லுபடியாகும் வாக்குகளின் அதிக பன்மையைப் (Plurality) பெறும் வேட்பாளர் 50%+1 தனிப் பெரும்பான்மை இன்றியே வெற்றி பெற்றவராக அறிவிக்கப்படுகிறார். FPTP மக்களவை, மாநில சட்டமன்றங்கள், கிராம ஊராட்சிகள் மற்றும் நகராட்சி வார்டுகளுக்குப் பொருந்தும். PR-STV செயல்பாடுகள்: பல உறுப்பினர் அமைப்புகள் அல்லது மறைமுகத் தேர்தல்களில் பயன்படுத்தப்படுகிறது; வாக்காளர்கள் வேட்பாளர்களை முன்னுரிமைப்படி (1, 2, 3...) வரிசைப்படுத்துகிறார்கள்; வேட்பாளர்கள் வெற்றி பெற கணக்கிடப்பட்ட வாக்கு ஒதுக்கீட்டைப் பெற வேண்டும்; உபரி வாக்குகள் அல்லது நீக்கப்பட்ட கடைசி வேட்பாளர்களின் வாக்குகள் அடுத்தடுத்த முன்னுரிமைகளுக்கு மாற்றப்படுகின்றன. மறைமுகத் தேர்தல் முறைகள்: 1. மாநிலங்களவை (உறுப்பு 80): மாநிலங்களின் தேர்ந்தெடுக்கப்பட்ட MLAs திறந்த வாக்குப்பதிவு முறையில் (Open Ballot - 2003 இல் RPA 1951 திருத்தம், குல்தீப் நாயர் 2006 இல் உறுதி செய்யப்பட்டது; MLA தனது வாக்குச் சீட்டைக் கட்சி முகவரிடம் காட்ட வேண்டும்) PR-STV-ஐப் பயன்படுத்தி வாக்களிக்கிறார்கள். நியமன MLAs & MLCs வாக்களிக்க முடியாது. RS தேர்தல்களில் நோட்டா தடை செய்யப்பட்டுள்ளது (SC 2018). 2. இந்தியக் குடியரசுத் தலைவர் (உறுப்புகள் 54 & 55): வாக்காளர் குழுமம் தேர்ந்தெடுக்கப்பட்ட MPs (LS+RS) + அனைத்து மாநிலங்களின் தேர்ந்தெடுக்கப்பட்ட MLAs + டெல்லி, புதுச்சேரி & J&K UTக்கள் தேர்ந்தெடுக்கப்பட்ட MLAs (70வது திருத்தம் 1992) உள்ளடக்கியது. நாடாளுமன்றம்/சட்டமன்றங்களின் நியமன உறுப்பினர்கள் மற்றும் மாநில சட்ட மேலவைகளின் அனைத்து உறுப்பினர்களும் விலக்கப்படுகிறார்கள். MLA வாக்கின் மதிப்பு = (மாநில மக்கள் தொகை / தேர்ந்தெடுக்கப்பட்ட மொத்த MLAs) / 1000 (1971 கணக்கெடுப்பு). MP வாக்கின் மதிப்பு = அனைத்து மாநிலங்களின் மொத்த MLA வாக்குகள் / தேர்ந்தெடுக்கப்பட்ட மொத்த MPs. ஒதுக்கீடு = [செல்லுபடியாகும் மொத்த வாக்குகள் / 2] + 1 (50%+1 தனிப் பெரும்பான்மை). 3. இந்தியத் துணைக் குடியரசுத் தலைவர் (உறுப்பு 66): வாக்காளர் குழுமம் நாடாளுமன்றத்தின் இரு அவைகளின் (மக்களவை & மாநிலங்களவை) உறுப்பினர்களை மட்டுமே கொண்டது. தேர்ந்தெடுக்கப்பட்ட மற்றும் நியமிக்கப்பட்ட இரு எம்பிக்களையும் உள்ளடக்குகிறது. மாநில சட்டமன்றங்கள் (MLAs) மற்றும் சட்ட மேலவைகளை (MLCs) முற்றிலும் விலக்குகிறது. இரகசிய வாக்குப்பதிவுடன் கூடிய PR-STV மூலம் வாக்களிப்பு. 4. மாநில சட்ட மேலவை (உறுப்பு 171(3)): 1/3 பங்கு உள்ளாட்சி அமைப்புகளால், 1/3 பங்கு சட்டமன்ற MLAs-ஆல், 1/12 பங்கு பட்டதாரிகளால், 1/12 பங்கு ஆசிரியர்களால், 1/6 பங்கு ஆளுநரால் நியமனம். காலவரிசைத் தேர்தல் சுழற்சி: குடியரசுத் தலைவர் (LS) / ஆளுநர் (சட்டமன்றம்) அறிவிப்பு -> தேர்தல் நடத்தும் அதிகாரியிடம் வேட்புமனுத் தாக்கல் (பிணைத் தொகை: ரூ 25,000 LS / ரூ 10,000 சட்டமன்றம்; பதிவான வாக்குகளில் < 1/6 பங்கு பெற்றால் பிணைத் தொகை பறிமுதல்) -> RO பரிசீலனை -> வாபஸ் பெறுதல் -> பிரச்சாரம் (வாக்குப்பதிவு முடிவதற்கு 48 மணி நேரத்திற்கு முன் நிறுத்தம்) -> வாக்குப்பதிவு (EVM கட்டுப்பாட்டு & வாக்களிக்கும் அலகுகள் + VVPAT 7-செக் காகிதச் சீட்டு அச்சு; தொகுதிக்கு தன்னிச்சையாக 5 வாக்குச்சாவடிகள் காகிதத் தணிக்கை) -> எண்ணுதல் & முடிவுகள். நோட்டா & MCC கட்டமைப்பு: நோட்டா PUCL v. UOI (2013) SC தீர்ப்பைத் தொடர்ந்து உறுப்பு 19(1)(a)-ன் கீழ் கொண்டுவரப்பட்டது; நோட்டா வாக்குகள் செல்லாத/நடுநிலை வாக்கு கணக்கு; நோட்டா அதிக வாக்குகள் பெற்றாலும் 2வது அதிக வாக்கு பெற்ற வேட்பாளர் வெற்றி பெற்றவராக அறிவிக்கப்படுவார் (மறுதேர்தலைக் கட்டாயப்படுத்தாது). மாதிரி நடத்தை விதிமுறை (MCC) என்பது ECI தேர்தல் கால அட்டவணையை அறிவித்த உடனேயே அமலுக்கு வரும் சட்டப்பூர்வமற்ற நிர்வாக ஒப்புதல் குறியீடாகும். தேர்தல் தகராறுகள்: உறுப்பு 329(b) பேராணை மனுக்கள் மூலம் தேர்தல் நடைமுறையை நீதிமன்றங்கள் நிறுத்துவதைத் தடுக்கிறது; முடிவு அறிவிக்கப்பட்ட 45 நாட்களுக்குள் மாநிலத்தின் உயர் நீதிமன்றத்தில் தாக்கல் செய்யப்படும் RPA 1951 பிரிவு 80-ன் கீழ் தேர்தல் மனுவே தேர்தலுக்குப் பிந்தைய ஒரே சட்டப்பூர்வ தீர்வாகும்."
+      ]
+    },
+    "revision_cards": [
+      {
+        "id": "card_eci_p2_1",
+        "front_en": "Which voting system is used for Lok Sabha and State Legislative Assembly elections?",
+        "front_ta": "மக்களவை மற்றும் மாநில சட்டமன்றத் தேர்தல்களுக்கு எந்த வாக்களிக்கும் முறை பயன்படுத்தப்படுகிறது?",
+        "back_en": "First-Past-the-Post (FPTP) system (Simple Plurality).",
+        "back_ta": "அதிக வாக்குகள் பெற்றவர் வெற்றி முறை (FPTP) (எளிய பன்மை)."
+      },
+      {
+        "id": "card_eci_p2_2",
+        "front_en": "Which voting system is used for Rajya Sabha, President, and Vice-President elections?",
+        "front_ta": "மாநிலங்களவை, குடியரசுத் தலைவர் மற்றும் துணைக் குடியரசுத் தலைவர் தேர்தல்களுக்கு எந்த வாக்களிக்கும் முறை பயன்படுத்தப்படுகிறது?",
+        "back_en": "Proportional Representation by means of Single Transferable Vote (PR-STV).",
+        "back_ta": "ஒற்றை மாற்றத்தக்க வாக்கு மூலமான விகிதாசார பிரதிநிதித்துவம் (PR-STV)."
+      },
+      {
+        "id": "card_eci_p2_3",
+        "front_en": "Who comprises the Presidential Electoral College under Article 54?",
+        "front_ta": "உறுப்பு 54-ன் கீழ் குடியரசுத் தலைவர் வாக்காளர் குழுமத்தில் யார் யார் இடம் பெற்றுள்ளனர்?",
+        "back_en": "Elected MPs (LS+RS) + Elected MLAs of all States + Elected MLAs of UTs of Delhi, Puducherry & J&K (Nominees excluded).",
+        "back_ta": "தேர்ந்தெடுக்கப்பட்ட MPs (LS+RS) + அனைத்து மாநிலங்களின் தேர்ந்தெடுக்கப்பட்ட MLAs + டெல்லி, புதுச்சேரி & J&K UTக்கள் தேர்ந்தெடுக்கப்பட்ட MLAs (நியமனங்கள் விலக்கம்)."
+      },
+      {
+        "id": "card_eci_p2_4",
+        "front_en": "Who comprises the Vice-Presidential Electoral College under Article 66?",
+        "front_ta": "உறுப்பு 66-ன் கீழ் துணைக் குடியரசுத் தலைவர் வாக்காளர் குழுமத்தில் யார் யார் இடம் பெற்றுள்ளனர்?",
+        "back_en": "Members of BOTH Houses of Parliament ONLY (includes BOTH Elected and Nominated MPs; State MLAs excluded).",
+        "back_ta": "நாடாளுமன்றத்தின் இரு அவைகளின் உறுப்பினர்கள் மட்டுமே (தேர்ந்தெடுக்கப்பட்ட மற்றும் நியமிக்கப்பட்ட இரு எம்பிக்களையும் உள்ளடக்குகிறது; மாநில MLAs விலக்கம்)."
+      },
+      {
+        "id": "card_eci_p2_5",
+        "front_en": "Who votes in Rajya Sabha elections under Article 80(4)?",
+        "front_ta": "உறுப்பு 80(4)-ன் கீழ் மாநிலங்களவைத் தேர்தல்களில் யார் வாக்களிக்கிறார்கள்?",
+        "back_en": "Elected members of State Legislative Assemblies ONLY (Elected MLAs) via OPEN BALLOT.",
+        "back_ta": "மாநில சட்டமன்றங்களின் தேர்ந்தெடுக்கப்பட்ட உறுப்பினர்கள் மட்டுமே (தேர்ந்தெடுக்கப்பட்ட MLAs) திறந்த வாக்குப்பதிவு மூலம்."
+      },
+      {
+        "id": "card_eci_p2_6",
+        "front_en": "What is the formula for the fraction of Governor nominees in State Legislative Councils under Art 171(3)?",
+        "front_ta": "உறுப்பு 171(3)-ன் கீழ் மாநில சட்ட மேலவைகளில் ஆளுநர் நியமன உறுப்பினர்களின் பின்னச் சூத்திரம் என்ன?",
+        "back_en": "1/6th of total strength nominated by Governor.",
+        "back_ta": "மொத்த எண்ணிக்கையில் 1/6 பங்கு ஆளுநரால் நியமிக்கப்படுபவர்கள்."
+      },
+      {
+        "id": "card_eci_p2_7",
+        "front_en": "What fraction of valid votes must a candidate secure to avoid forfeiture of security deposit?",
+        "front_ta": "பிணைத் தொகை பறிமுதலைத் தவிர்க்க ஒரு வேட்பாளர் செல்லுபடியாகும் వాக்குகளில் என்ன பின்னத்தைப் பெற வேண்டும்?",
+        "back_en": "AT LEAST 1/6th (16.67%) of total valid votes polled in constituency.",
+        "back_ta": "தொகுதியில் பதிவான செல்லுபடியாகும் மொத்த வாக்குகளில் குறைந்தபட்சம் 1/6 பங்கு (16.67%)."
+      },
+      {
+        "id": "card_eci_p2_8",
+        "front_en": "For how many seconds does the VVPAT paper slip display voter choice before dropping into the sealed box?",
+        "front_ta": "VVPAT காகிதச் சீட்டு சீலிடப்பட்ட பெட்டியில் விழுவதற்கு முன் எத்தனை விநாடிகள் வாக்காளர் தேர்வை அச்சிட்டுக் காட்டுகிறது?",
+        "back_en": "7 SECONDS.",
+        "back_ta": "7 விநாடிகள்."
+      },
+      {
+        "id": "card_eci_p2_9",
+        "front_en": "Does NOTA automatically force a re-election if NOTA receives the highest number of votes?",
+        "front_ta": "நோட்டா அதிக வாக்குகளைப் பெற்றால் அது தானாகவே மறுதேர்தலைக் கட்டாயப்படுத்துமா?",
+        "back_en": "NO. The candidate receiving the 2nd highest votes is declared ELECTED.",
+        "back_ta": "இல்லை. 2வது அதிக வாக்குகள் பெறும் வேட்பாளரே வெற்றி பெற்றவராக அறிவிக்கப்படுவார்."
+      },
+      {
+        "id": "card_eci_p2_10",
+        "front_en": "What is the legal status and operational timing of the Model Code of Conduct (MCC)?",
+        "front_ta": "மாதிரி நடத்தை விதிமுறையின் (MCC) சட்டப்பூர்வ நிலை மற்றும் செயல்பாட்டுக் காலம் என்ன?",
+        "back_en": "Non-statutory administrative code; comes into force IMMEDIATELY upon ECI election schedule announcement.",
+        "back_ta": "சட்டப்பூர்வமற்ற நிர்வாகக் குறியீடு; ECI தேர்தல் கால அட்டவணையை அறிவித்த உடனேயே அமலுக்கு வரும்."
+      },
+      {
+        "id": "card_eci_p2_11",
+        "front_en": "Which court has original jurisdiction to hear Election Petitions challenging Lok Sabha/Assembly election results?",
+        "front_ta": "மக்களவை/சட்டமன்றத் தேர்தல் முடிவுகளைச் சவால் செய்யும் தேர்தல் மனுக்களை விசாரிக்க எந்த நீதிமன்றத்திற்கு அசல் அதிகார வரம்பு உள்ளது?",
+        "back_en": "HIGH COURT of the respective State under Section 80A of RPA 1951.",
+        "back_ta": "RPA 1951 பிரிவு 80A-ன் கீழ் சம்பந்தப்பட்ட மாநிலத்தின் உயர் நீதிமன்றம்."
+      },
+      {
+        "id": "card_eci_p2_12",
+        "front_en": "What is the time limit for filing an Election Petition post-election result declaration?",
+        "front_ta": "தேர்தல் முடிவு அறிவிக்கப்பட்ட பிறகு தேர்தல் மனு தாக்கல் செய்வதற்கான கால வரம்பு என்ன?",
+        "back_en": "Within 45 DAYS from the date of result declaration (Section 81 of RPA 1951).",
+        "back_ta": "தேர்தல் முடிவு அறிவிக்கப்பட்ட தேதியிலிருந்து 45 நாட்களுக்குள் (RPA 1951 பிரிவு 81)."
+      },
+      {
+        "id": "card_eci_p2_13",
+        "front_en": "Which Supreme Court judgment introduced NOTA in Indian elections?",
+        "front_ta": "இந்தியத் தேர்தல்களில் நோட்டாவை அறிமுகப்படுத்திய உச்ச நீதிமன்றத் தீர்ப்பு எது?",
+        "back_en": "People's Union for Civil Liberties (PUCL) v. Union of India (2013).",
+        "back_ta": "பீப்பிள்ஸ் யூனியன் ஃபார் சிவில் லிபர்டீஸ் (PUCL) v. யூனியன் ஆஃப் இந்தியா (2013)."
+      },
+      {
+        "id": "card_eci_p2_14",
+        "front_en": "Which census data is used for calculating MLA vote value in Presidential elections till post-2026 census?",
+        "front_ta": "2026-க்குப் பிந்தைய கணக்கெடுப்பு வரை குடியரசுத் தலைவர் தேர்தலில் MLA வாக்கு மதிப்பைக் கணக்கிட எந்த மக்கள் தொகைக் கணக்கெடுப்புத் தரவு பயன்படுத்தப்படுகிறது?",
+        "back_en": "1971 CENSUS data (as fixed by 84th CAA 2001).",
+        "back_ta": "1971 மக்கள் தொகைக் கணக்கெடுப்புத் தரவு (84வது திருத்தம் 2001-ல் நிர்ணயிக்கப்பட்டது)."
+      },
+      {
+        "id": "card_eci_p2_15",
+        "front_en": "Is secrecy of ballot violated by the Open Ballot system in Rajya Sabha elections?",
+        "front_ta": "மாநிலங்களவைத் தேர்தல்களில் திறந்த வாக்குப்பதிவு முறை மூலம் வாக்கு இரகசியம் மீறப்படுகிறதா?",
+        "back_en": "NO. Supreme Court upheld Open Ballot in Kuldip Nayar v. UOI (2006) to prevent cross-voting corruption.",
+        "back_ta": "இல்லை. குறுக்கு வாக்களிப்பு ஊழலைத் தடுக்க குல்தீப் நாயர் v. UOI (2006) வழக்கில் திறந்த வாக்குப்பதிவை உச்ச நீதிமன்றம் உறுதி செய்தது."
+      }
+    ]
+  }
+}
