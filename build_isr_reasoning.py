@@ -1,0 +1,571 @@
+# -*- coding: utf-8 -*-
+"""
+Builder for Inter-State Relations Reasoning (Assertion-Reason) MCQs (25 questions: ISR_R_001 to ISR_R_025)
+"""
+import json
+import os
+from pathlib import Path
+from collections import Counter
+from tools.nova_content_engine.validator import ContentValidator
+
+def make_r(qid, diff, stem_en, stem_ta, correct_ans, exp_en, exp_ta,
+           wno_a_en, wno_a_ta, wno_b_en, wno_b_ta, wno_c_en, wno_c_ta, wno_d_en, wno_d_ta,
+           tip_en, tip_ta, rev_en, rev_ta, bloom="Evaluate", est_time=80, tags=None):
+    opt_a_en = "Both (A) and (R) are true and (R) is the correct explanation of (A)"
+    opt_a_ta = "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
+    opt_b_en = "Both (A) and (R) are true but (R) is not the correct explanation of (A)"
+    opt_b_ta = "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கம் அல்ல"
+    opt_c_en = "(A) is true but (R) is false"
+    opt_c_ta = "(A) சரி, ஆனால் (R) தவறு"
+    opt_d_en = "(A) is false but (R) is true"
+    opt_d_ta = "(A) தவறு, ஆனால் (R) சரி"
+
+    return {
+        "id": qid,
+        "subject": "Polity",
+        "topic": "Inter-State Relations",
+        "difficulty": diff,
+        "question_type": "Assertion-Reason",
+        "question": {"en": stem_en, "ta": stem_ta},
+        "question_en": stem_en,
+        "question_ta": stem_ta,
+        "options": [
+            {"id": "A", "en": opt_a_en, "ta": opt_a_ta},
+            {"id": "B", "en": opt_b_en, "ta": opt_b_ta},
+            {"id": "C", "en": opt_c_en, "ta": opt_c_ta},
+            {"id": "D", "en": opt_d_en, "ta": opt_d_ta}
+        ],
+        "options_en": [opt_a_en, opt_b_en, opt_c_en, opt_d_en],
+        "options_ta": [opt_a_ta, opt_b_ta, opt_c_ta, opt_d_ta],
+        "correct_answer": correct_ans,
+        "answer": correct_ans.lower(),
+        "explanation": {"en": exp_en, "ta": exp_ta},
+        "explanation_en": exp_en,
+        "explanation_ta": exp_ta,
+        "why_not_others": {
+            "A": {"en": wno_a_en, "ta": wno_a_ta},
+            "B": {"en": wno_b_en, "ta": wno_b_ta},
+            "C": {"en": wno_c_en, "ta": wno_c_ta},
+            "D": {"en": wno_d_en, "ta": wno_d_ta}
+        },
+        "tnpsc_tip": {"en": tip_en, "ta": tip_ta},
+        "revision_fact": {"en": rev_en, "ta": rev_ta},
+        "source_reference": ["M. Laxmikanth - Indian Polity", "Constitution of India", "Samacheer Kalvi Class 12"],
+        "bloom_level": bloom,
+        "estimated_time_sec": est_time,
+        "pyq_similarity": "High",
+        "tags": tags or ["Inter-State Relations", "Assertion-Reason", "Reasoning"]
+    }
+
+def get_reasoning_questions():
+    q = []
+
+    # 001 - Ans A
+    q.append(make_r(
+        "ISR_R_001", "Hard",
+        "Assertion (A): Article 262 empowers Parliament to exclude the jurisdiction of the Supreme Court and all other courts in respect of inter-State river water disputes.\nReason (R): Inter-State river water disputes involve sensitive socio-political considerations, equitable sharing, and riparian rights that are best adjudicated by specialized tribunals rather than formalistic judicial litigation.",
+        "கூற்று (A): மாநிலங்களுக்கு இடையேயான நதிநீர் தகராறுகளில் உச்ச நீதிமன்றம் மற்றும் பிற அனைத்து நீதிமன்றங்களின் அதிகார வரம்பையும் விலக்க நாடாளுமன்றத்திற்கு உறுப்பு 262 அதிகாரம் அளிக்கிறது.\nகாரணம் (R): மாநிலங்களுக்கு இடையேயான நதிநீர் தகராறுகள் உணர்வுபூர்வமான சமூக-அரசியல் அம்சங்கள், சமமான பகிர்வு மற்றும் வடிநில உரிமைகளை உள்ளடக்கியிருப்பதால், சாதாரண நீதிமன்ற வழக்குகளை விட சிறப்பு தீர்ப்பாயங்களால் மட்டுமே இவற்றைச் சரியாகத் தீர்க்க முடியும்.",
+        "A",
+        "Both (A) and (R) are true and (R) correctly explains (A). The Constituent Assembly recognized that water sharing disputes involve extra-legal, political, and socio-economic dimensions unsuitable for strict legalistic adjudication, leading to the enactment of Article 262.",
+        "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும். நதிநீர்ப் பகிர்வு தகராறுகள் வெறும் சட்ட விதிகளைத் தாண்டி சமூக, பொருளாதார, அரசியல் பரிமாணங்களைக் கொண்டுள்ளதால் சாதாரண நீதிமன்றங்களை விட சிறப்பு தீர்ப்பாயங்களே சிறந்தது எனக் கருதி உறுப்பு 262 இயற்றப்பட்டது.",
+        "Option A is correct because (R) provides the constitutional rationale for (A).", "(A)-விற்கான அரசியலமைப்புத் தேவையை (R) சரியாக விளக்குவதால் விருப்பம் A சரி.",
+        "Option B is incorrect because (R) is indeed the direct explanation.", "(R) நேரடி விளக்கம் என்பதால் விருப்பம் B தவறு.",
+        "Option C is incorrect because (R) is true.", "(R) சரியானது என்பதால் விருப்பம் C தவறு.",
+        "Option D is incorrect because (A) is true.", "(A) சரியானது என்பதால் விருப்பம் D தவறு.",
+        "Article 262 ouster of courts is grounded in the need for specialized non-adversarial tribunal mechanisms.",
+        "உறுப்பு 262-ன் நீதிமன்ற வரம்பு விலக்கு சிறப்பு நடுவர் மன்ற முறைமையின் தேவையை அடிப்படையாகக் கொண்டது.",
+        "Article 262 empowers Parliament to bar judicial jurisdiction over inter-state river water disputes.",
+        "மாநிலங்களுக்கு இடையேயான நதிநீர் தகராறுகளில் நீதிமன்ற அதிகார வரம்பை விலக்க நாடாளுமன்றத்திற்கு உறுப்பு 262 அதிகாரம் அளிக்கிறது.",
+        tags=["Article 262", "Supreme Court Bar", "Tribunal Rationale"]
+    ))
+
+    # 002 - Ans B
+    q.append(make_r(
+        "ISR_R_002", "Medium",
+        "Assertion (A): Under Article 261, full faith and credit must be accorded to public acts, records, and judicial proceedings of every State throughout the territory of India.\nReason (R): Decrees and final orders delivered by civil courts in any State are capable of execution anywhere within the territory of India under Article 261(3).",
+        "கூற்று (A): உறுப்பு 261-ன் கீழ், இந்தியா முழுவதும் ஒவ்வொரு மாநிலத்தின் பொதுச் சட்டங்கள், பதிவேடுகள் மற்றும் நீதித்துறை நடவடிக்கைகளுக்கு முழு நம்பிக்கையும் சான்றும் அளிக்கப்பட வேண்டும்.\nகாரணம் (R): உறுப்பு 261(3)-ன் கீழ் எந்தவொரு மாநிலத்தின் உரிமையியல் நீதிமன்றங்களால் வழங்கப்படும் தீர்ப்பாணைகள் மற்றும் இறுதி ஆணைகள் இந்தியா முழுவதும் நிறைவேற்றப்படலாம்.",
+        "B",
+        "Both (A) and (R) are true, but (R) is an operational consequence regarding civil decrees rather than the foundational explanation of why public acts and records are accorded full faith and credit (which is to prevent federating units from acting as foreign jurisdictions).",
+        "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கம் அல்ல. (R) என்பது உரிமையியல் தீர்ப்புகளை நிறைவேற்றுவது தொடர்பான ஒரு துணை விதியே அன்றி, பொது ஆவணங்களுக்கு முழு நம்பிக்கை அளிக்கப்படுவதற்கான கூட்டாட்சி தத்துவக் காரணம் அல்ல.",
+        "Option A is incorrect because (R) is an operative clause, not the causal explanation of (A).", "(R) என்பது செயல்முறை விதியே தவிர காரண விளக்கம் அல்ல என்பதால் விருப்பம் A தவறு.",
+        "Option B is correct because both statements are true independent provisions under Article 261.", "இரண்டு கூற்றுகளும் உறுப்பு 261-ன் கீழான உண்மை விதிகள் என்பதால் விருப்பம் B சரி.",
+        "Option C is incorrect because (R) is true.", "(R) உண்மை என்பதால் விருப்பம் C தவறு.",
+        "Option D is incorrect because (A) is true.", "(A) உண்மை என்பதால் விருப்பம் D தவறு.",
+        "Article 261 ensures horizontal federal comity across public acts (clause 1) and civil decrees (clause 3).",
+        "உறுப்பு 261 பொதுச் சட்டங்கள் (பிரிவு 1) மற்றும் உரிமையியல் தீர்ப்புகள் (பிரிவு 3) ஆகியவற்றில் மாநிலங்களுக்கிடையேயான பரஸ்பர மரியாதையை உறுதி செய்கிறது.",
+        "Full Faith and Credit clause unifies public acts and civil decrees across all Indian States.",
+        "முழு நம்பிக்கையும் சான்றும் விதி இந்தியாவின் அனைத்து மாநிலங்களிலும் பொதுச் சட்டங்கள் மற்றும் உரிமையியல் தீர்ப்புகளை ஒருங்கிணைக்கிறது.",
+        tags=["Article 261", "Full Faith and Credit", "Horizontal Federalism"]
+    ))
+
+    # 003 - Ans C
+    q.append(make_r(
+        "ISR_R_003", "Medium",
+        "Assertion (A): The Inter-State Council was formally established under Article 263 by a Presidential Order issued in May 1990.\nReason (R): The Inter-State Council possesses binding constitutional powers to overrule statutory acts and executive decisions of State Cabinets.",
+        "கூற்று (A): மே 1990-ல் வெளியிடப்பட்ட குடியரசுத் தலைவரின் ஆணையின் மூலம் உறுப்பு 263-ன் கீழ் மாநிலங்களுக்கு இடையிலான மன்றம் முறைப்படி நிறுவப்பட்டது.\nகாரணம் (R): மாநில அமைச்சரவைகளின் சட்டப்பூர்வ சட்டங்கள் மற்றும் நிர்வாக முடிவுகளை ரத்து செய்யும் பிணைப்புள்ள அரசியலமைப்பு அதிகாரம் மாநிலங்களுக்கு இடையிலான மன்றத்திற்கு உண்டு.",
+        "C",
+        "Assertion (A) is true: The Inter-State Council was set up on 28th May 1990 by a Presidential Order. Reason (R) is false: The Inter-State Council is purely an advisory and consultative body with zero power to overrule State Cabinets or legislatures.",
+        "(A) சரி, ஆனால் (R) தவறு. கூற்று (A) சரி: 1990 மே 28 அன்று குடியரசுத் தலைவர் ஆணை மூலம் மன்றம் அமைக்கப்பட்டது. காரணம் (R) தவறு: மாநிலங்களுக்கு இடையிலான மன்றம் ஆலோசனைக் குழுவே தவிர, மாநில அமைச்சரவைகளின் முடிவுகளை ரத்து செய்யும் அதிகாரம் இதற்கு அறவே இல்லை.",
+        "Option A is incorrect because (R) is completely false.", "(R) முற்றிலும் தவறானது என்பதால் விருப்பம் A தவறு.",
+        "Option B is incorrect because (R) is false.", "(R) தவறு என்பதால் விருப்பம் B தவறு.",
+        "Option C is correct because (A) is historically accurate while (R) claims non-existent veto powers.", "(A) வரலாற்று உண்மை மற்றும் (R) இல்லாத அதிகாரத்தைக் கூறுவதால் விருப்பம் C சரி.",
+        "Option D is incorrect because (A) is true.", "(A) சரியானது என்பதால் விருப்பம் D தவறு.",
+        "The Inter-State Council has no executive veto; its role under Article 263 is strictly advisory and deliberative.",
+        "மன்றத்திற்கு எந்த நிர்வாக வீட்டோ அதிகாரமும் இல்லை; உறுப்பு 263-ன் கீழ் இதன் பணி ஆலோசனையே ஆகும்.",
+        "Inter-State Council was formed in May 1990 as an advisory body without binding veto powers.",
+        "மாநிலங்களுக்கு இடையிலான மன்றம் மே 1990-ல் பிணைப்பற்ற ஆலோசனைக் குழுவாக அமைக்கப்பட்டது.",
+        tags=["Inter-State Council 1990", "Advisory Nature", "No Veto Power"]
+    ))
+
+    # 004 - Ans D
+    q.append(make_r(
+        "ISR_R_004", "Hard",
+        "Assertion (A): Zonal Councils in India were created by the 7th Constitutional Amendment Act, 1956 as constitutional bodies under Article 263A.\nReason (R): Zonal Councils are statutory bodies established under Part III of the States Reorganisation Act, 1956.",
+        "கூற்று (A): இந்தியாவில் மண்டலக் குழுக்கள் 7-வது அரசியலமைப்புத் திருத்தச் சட்டம் 1956-ன் மூலம் உறுப்பு 263A-ன் கீழ் அரசியலமைப்பு அமைப்புகளாக உருவாக்கப்பட்டன.\nகாரணம் (R): மண்டலக் குழுக்கள் 1956-ஆம் ஆண்டின் மாநில மறுசீரமைப்புச் சட்டத்தின் பகுதி III-ன் கீழ் நிறுவப்பட்ட சட்டப்பூர்வ அமைப்புகள் ஆகும்.",
+        "D",
+        "Assertion (A) is false: Article 263A does not exist, and Zonal Councils are NOT constitutional bodies. Reason (R) is true: Zonal Councils were created under Part III (Sections 15–22) of the States Reorganisation Act, 1956 as statutory bodies.",
+        "(A) தவறு, ஆனால் (R) சரி. கூற்று (A) தவறு: அரசியலமைப்பில் உறுப்பு 263A என்ற விதியே இல்லை, மண்டலக் குழுக்கள் அரசியலமைப்பு அமைப்புகள் அல்ல. காரணம் (R) சரி: 1956 மாநில மறுசீரமைப்புச் சட்டத்தின் பகுதி III-ன் கீழ் சட்டப்பூர்வ அமைப்புகளாக இவை உருவாக்கப்பட்டன.",
+        "Option A is incorrect because (A) is false.", "(A) தவறாக இருப்பதால் விருப்பம் A தவறு.",
+        "Option B is incorrect because (A) is false.", "(A) தவறு என்பதால் விருப்பம் B தவறு.",
+        "Option C is incorrect because (A) is false.", "(A) தவறு என்பதால் விருப்பம் C தவறு.",
+        "Option D is correct because (A) falsely claims constitutional status while (R) correctly identifies statutory origin under the 1956 Act.", "(A) தவறாக அரசியலமைப்பு அந்தஸ்து கோருவதாலும், (R) 1956 சட்டப்பூர்வ மூலத்தைச் சரியாகக் குறிப்பிடுவதாலும் விருப்பம் D சரி.",
+        "Zonal Councils = Statutory (1956 Act); Inter-State Council = Constitutional (Article 263).",
+        "மண்டலக் குழுக்கள் = சட்டப்பூர்வமானது (1956 சட்டம்); மாநிலங்களுக்கு இடையிலான மன்றம் = அரசியலமைப்பு சார்ந்தது (உறுப்பு 263).",
+        "Zonal Councils are statutory bodies under the States Reorganisation Act of 1956.",
+        "மண்டலக் குழுக்கள் 1956-ஆம் ஆண்டின் மாநில மறுசீரமைப்புச் சட்டத்தின் கீழ் உருவாக்கப்பட்ட சட்டப்பூர்வ அமைப்புகளாகும்.",
+        tags=["Zonal Councils", "States Reorganisation Act", "Statutory Status"]
+    ))
+
+    # 005 - Ans A
+    q.append(make_r(
+        "ISR_R_005", "Hard",
+        "Assertion (A): Final decrees and orders delivered by criminal courts are excluded from the operation of the direct execution clause under Article 261(3).\nReason (R): Under established principles of conflict of laws, one sovereign state does not enforce the penal laws or criminal judgments of another jurisdiction.",
+        "கூற்று (A): குற்றவியல் நீதிமன்றங்களால் வழங்கப்படும் இறுதித் தீர்ப்பாணைகள் மற்றும் ஆணைகள் உறுப்பு 261(3)-ன் கீழான நேரடி நிறைவேற்ற விதியிலிருந்து விலக்கப்பட்டுள்ளன.\nகாரணம் (R): சட்ட முரண்பாடுகளின் நிறுவப்பட்ட விதிகளின்படி, ஒரு நாட்டின் அரசு மற்றொரு அதிகார வரம்பின் தண்டனைச் சட்டங்களையோ அல்லது குற்றவியல் தீர்ப்புகளையோ நேரடியாக அமல்படுத்துவதில்லை.",
+        "A",
+        "Both (A) and (R) are true and (R) is the correct explanation of (A). Article 261(3) is confined to civil court judgments because penal laws are territorial and no state executes the criminal or penal decrees of another state.",
+        "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும். குற்றவியல் சட்டங்கள் பிராந்திய வரம்பிற்குட்பட்டவை மற்றும் ஒரு மாநிலம் மற்றொரு மாநிலத்தின் தண்டனைத் தீர்ப்புகளை நிறைவேற்றுவதில்லை என்பதால், உறுப்பு 261(3) உரிமையியல் நீதிமன்றங்களுக்கு மட்டுமே பொருந்தும் வகையில் உருவாக்கப்பட்டது.",
+        "Option A is correct because (R) states the universal legal reason why penal decrees are excluded from Article 261(3).", "குற்றவியல் தீர்ப்புகள் விலக்கப்பட்டதற்கான சட்டக் காரணத்தை (R) விளக்குவதால் விருப்பம் A சரி.",
+        "Option B is incorrect because (R) is the exact jurisprudential reason.", "(R) சரியான நீதிநெறி விளக்கம் என்பதால் விருப்பம் B தவறு.",
+        "Option C is incorrect because (R) is true.", "(R) சரியானது என்பதால் விருப்பம் C தவறு.",
+        "Option D is incorrect because (A) is true.", "(A) சரியானது என்பதால் விருப்பம் D தவறு.",
+        "Article 261(3) = Civil courts only. Penal decrees are strictly excluded under the territorial principle of criminal law.",
+        "உறுப்பு 261(3) = உரிமையியல் நீதிமன்றங்கள் மட்டுமே. குற்றவியல் தீர்ப்புகள் இதன் கீழ் நிறைவேற்றப்பட முடியாது.",
+        "Article 261(3) execution applies only to civil judgments, excluding penal decrees.",
+        "உறுப்பு 261(3) நிறைவேற்றம் உரிமையியல் தீர்ப்புகளுக்கு மட்டுமே பொருந்தும், குற்றவியல் தீர்ப்புகளுக்கு அல்ல.",
+        tags=["Article 261(3)", "Penal Exclusion", "Conflict of Laws"]
+    ))
+
+    # 006 - Ans B
+    q.append(make_r(
+        "ISR_R_006", "Medium",
+        "Assertion (A): The Prime Minister of India serves as the Chairman of the Inter-State Council.\nReason (R): The Union Home Minister serves as the Chairman of the Standing Committee of the Inter-State Council.",
+        "கூற்று (A): இந்தியப் பிரதமர் மாநிலங்களுக்கு இடையிலான மன்றத்தின் தலைவராகச் செயல்படுகிறார்.\nகாரணம் (R): மத்திய உள்துறை அமைச்சர் மாநிலங்களுக்கு இடையிலான மன்றத்தின் நிலைக்குழுவின் தலைவராகச் செயல்படுகிறார்.",
+        "B",
+        "Both (A) and (R) are true statements regarding the institutional leadership of the Inter-State Council structure, but (R) describes the Standing Committee, which is not the causal reason why the Prime Minister heads the plenary Council.",
+        "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கம் அல்ல. பிரதமர் மன்றத்தின் தலைவர் என்பதும் உள்துறை அமைச்சர் நிலைக்குழுவின் தலைவர் என்பதும் தனித்தனி உண்மைகளே தவிர ஒன்றுக்கொன்று காரண விளக்கங்கள் அல்ல.",
+        "Option A is incorrect because (R) does not explain why the PM chairs the plenary Council.", "(R) பிரதமரின் தலைமைக்கான காரண விளக்கம் அல்ல என்பதால் விருப்பம் A தவறு.",
+        "Option B is correct because both institutional leadership statements are true.", "இரு அமைப்புகளின் தலைமை குறித்த கூற்றுகளும் உண்மையானவை என்பதால் விருப்பம் B சரி.",
+        "Option C is incorrect because (R) is true.", "(R) உண்மை என்பதால் விருப்பம் C தவறு.",
+        "Option D is incorrect because (A) is true.", "(A) உண்மை என்பதால் விருப்பம் D தவறு.",
+        "Remember the division: Plenary Inter-State Council is chaired by PM; Standing Committee is chaired by Home Minister.",
+        "நினைவில் கொள்க: முழு மாநிலங்களுக்கு இடையிலான மன்றத்திற்குப் பிரதமர் தலைவர்; நிலைக்குழுவிற்கு உள்துறை அமைச்சர் தலைவர்.",
+        "The Prime Minister chairs the Inter-State Council while the Home Minister chairs its Standing Committee.",
+        "பிரதமர் மாநிலங்களுக்கு இடையிலான மன்றத்திற்கும், உள்துறை அமைச்சர் அதன் நிலைக்குழுவிற்கும் தலைமை தாங்குகின்றனர்.",
+        tags=["ISC Chairman", "Standing Committee", "Home Minister"]
+    ))
+
+    # 007 - Ans C
+    q.append(make_r(
+        "ISR_R_007", "Hard",
+        "Assertion (A): The River Boards Act, 1956 provides for the establishment of advisory River Boards on inter-State rivers by the Central Government.\nReason (R): Numerous River Boards have been actively constituted under the 1956 Act and have resolved major river water disputes across India.",
+        "கூற்று (A): மாநிலங்களுக்கு இடையேயான நதிகளின் மீது மத்திய அரசால் ஆலோசனைக் குழுக்களாக நதி வாரியங்களை அமைக்க 1956 நதி வாரியங்கள் சட்டம் வகை செய்கிறது.\nகாரணம் (R): 1956-ஆம் ஆண்டின் சட்டத்தின் கீழ் பல நதி வாரியங்கள் தீவிரமாக அமைக்கப்பட்டு, இந்தியாவில் உள்ள பல முக்கிய நதிநீர் தகராறுகளைத் தீர்த்து வைத்துள்ளன.",
+        "C",
+        "Assertion (A) is true: The River Boards Act, 1956 empowers the Central Government to establish River Boards for regulation and development of inter-state rivers. Reason (R) is false: In actual practice, not a single River Board has ever been established by the Central Government under the 1956 Act till date.",
+        "(A) சரி, ஆனால் (R) தவறு. கூற்று (A) சரி: நதிகளை ஒழுங்குபடுத்த நதி வாரியங்களை அமைக்க 1956 சட்டம் வகை செய்கிறது. காரணம் (R) தவறு: நடைமுறையில், 1956 சட்டத்தின் கீழ் இன்று வரை மத்திய அரசால் ஒரு நதி வாரியம் கூட அமைக்கப்படவில்லை.",
+        "Option A is incorrect because (R) is completely false.", "(R) முற்றிலும் தவறானது என்பதால் விருப்பம் A தவறு.",
+        "Option B is incorrect because (R) is false.", "(R) தவறு என்பதால் விருப்பம் B தவறு.",
+        "Option C is correct because (A) describes the statutory provision while (R) makes a false factual claim.", "(A) சட்ட விதியைச் சரியாகவும், (R) தவறான வரலாற்றுத் தகவலையும் கொண்டுள்ளதால் விருப்பம் C சரி.",
+        "Option D is incorrect because (A) is true.", "(A) சரியானது என்பதால் விருப்பம் D தவறு.",
+        "Key administrative paradox: The River Boards Act exists on statute books, but ZERO River Boards were ever constituted.",
+        "முக்கிய நிர்வாக முரண்: நதி வாரியச் சட்டம் புத்தகத்தில் இருந்தாலும், இதுவரை ஒரு நதி வாரியமும் அமைக்கப்படவில்லை.",
+        "River Boards Act 1956 enables advisory boards, but no board has ever been constituted under it.",
+        "1956 நதி வாரியங்கள் சட்டம் ஆலோசனைக் குழுக்களை அமைக்க வகை செய்தாலும், அதன் கீழ் ஒரு வாரியமும் அமைக்கப்படவில்லை.",
+        tags=["River Boards Act 1956", "Zero Boards Formed", "Statutory Inaction"]
+    ))
+
+    # 008 - Ans D
+    q.append(make_r(
+        "ISR_R_008", "Hard",
+        "Assertion (A): Under Article 262, the Supreme Court of India is completely powerless to hear any appeal or petition regarding an inter-State river water tribunal's decision.\nReason (R): In the 2018 Cauvery judgment, the Supreme Court ruled that Article 136 is an overarching constitutional remedy that cannot be barred by statutory clauses like Section 11 of the IRWD Act.",
+        "கூற்று (A): உறுப்பு 262-ன் கீழ், மாநிலங்களுக்கு இடையேயான நதிநீர் தீர்ப்பாயத்தின் முடிவு குறித்து எந்தவொரு மேல்முறையீட்டையோ அல்லது மனுவையோ விசாரிக்க இந்திய உச்ச நீதிமன்றத்திற்கு எந்த அதிகாரமும் இல்லை.\nகாரணம் (R): 2018 காவிரி தீர்ப்பில், உறுப்பு 136-ன் கீழான சிறப்பு விடுப்பு மனு அதிகாரத்தை IRWD சட்டத்தின் பிரிவு 11 போன்ற சாதாரண சட்டப் பிரிவுகளால் தடுக்க முடியாது என்று உச்ச நீதிமன்றம் தீர்ப்பளித்தது.",
+        "D",
+        "Assertion (A) is false: The Supreme Court can and does entertain Special Leave Petitions under Article 136 against Tribunal decisions (as confirmed in the Cauvery 2018 ruling). Reason (R) is true: The Supreme Court held that Article 136 is an entrenched constitutional power that statutory provisions like Section 11 cannot extinguish.",
+        "(A) தவறு, ஆனால் (R) சரி. கூற்று (A) தவறு: தீர்ப்பாய முடிவுகளுக்கு எதிராக உறுப்பு 136-ன் கீழ் சிறப்பு விடுப்பு மனுக்களை விசாரிக்க உச்ச நீதிமன்றத்திற்கு அதிகாரம் உண்டு (2018 காவிரி தீர்ப்பு). காரணம் (R) சரி: உறுப்பு 136 என்பது அரசியலமைப்பு வழங்கிய அதிகாரம் என்பதால், சாதாரண சட்டப் பிரிவான பிரிவு 11-ஆல் அதைத் தடுக்க முடியாது என உச்ச நீதிமன்றம் தீர்ப்பளித்தது.",
+        "Option A is incorrect because (A) is false.", "(A) தவறு என்பதால் விருப்பம் A தவறு.",
+        "Option B is incorrect because (A) is false.", "(A) தவறு என்பதால் விருப்பம் B தவறு.",
+        "Option C is incorrect because (A) is false.", "(A) தவறு என்பதால் விருப்பம் C தவறு.",
+        "Option D is correct because (A) is false (SC retains jurisdiction under Art 136) while (R) correctly explains the 2018 ruling.", "(A) தவறு (உறுப்பு 136-ன் கீழ் உச்ச நீதிமன்றத்திற்கு அதிகாரம் உண்டு) மற்றும் (R) 2018 தீர்ப்பைச் சரியாகக் குறிப்பிடுவதால் விருப்பம் D சரி.",
+        "Even though Article 262 bars ordinary jurisdiction, Article 136 SLP jurisdiction remains intact (Karnataka v. TN 2018).",
+        "உறுப்பு 262 சாதாரண அதிகார வரம்பைத் தடுத்தாலும், உறுப்பு 136-ன் கீழான SLP அதிகாரம் நீடிக்கிறது (காவிரி வழக்கு 2018).",
+        "Supreme Court retains Article 136 special leave jurisdiction over river water tribunals.",
+        "நதிநீர் தீர்ப்பாய முடிவுகளின் மீது உறுப்பு 136-ன் கீழான சிறப்பு விடுப்பு அதிகார வரம்பை உச்ச நீதிமன்றம் கொண்டுள்ளது.",
+        tags=["Article 136", "Cauvery 2018", "Supreme Court Jurisdiction"]
+    ))
+
+    # 009 - Ans A
+    q.append(make_r(
+        "ISR_R_009", "Hard",
+        "Assertion (A): In the Atiabari Tea Co. case (1961), the Supreme Court struck down the Assam Taxation on Goods Carried by Road or on Inland Waterways Act.\nReason (R): The impugned tax directly and immediately restricted the free movement and transit of tea through the State of Assam, thereby violating Article 301.",
+        "கூற்று (A): அத்தியாபாரி டீ கம்பெனி வழக்கில் (1961), அசாம் மாநிலத்தின் சாலை மற்றும் உள்நாட்டு நீர்வழி சரக்கு வரிச் சட்டத்தை உச்ச நீதிமன்றம் ரத்து செய்தது.\nகாரணம் (R): சர்ச்சைக்குரிய இந்த வரி அசாம் மாநிலத்தின் வழியாக தேயிலை கொண்டு செல்லப்படுவதை நேரடியாகவும் உடனடியாகவும் தடுத்து, உறுப்பு 301-ன் கீழான வர்த்தக சுதந்திரத்தை மீறியது.",
+        "A",
+        "Both (A) and (R) are true and (R) is the correct explanation of (A). The Supreme Court ruled in Atiabari that taxes that place direct and immediate restrictions on the movement of goods violate Article 301 unless saved by Article 304(b).",
+        "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும். அத்தியாபாரி வழக்கில், பொருட்களின் போக்குவரத்தைத் நேரடியாகவும் உடனடியாகவும் தடுக்கும் வரிகள் உறுப்பு 301-ஐ மீறுபவை எனத் தீர்ப்பளிக்கப்பட்டு அசாம் வரிச் சட்டம் ரத்து செய்யப்பட்டது.",
+        "Option A is correct because (R) gives the legal ratio decidendi for the decision in (A).", "(A)-ன் தீர்ப்பிற்கான சட்டக் காரணத்தை (R) துல்லியமாக விளக்குவதால் விருப்பம் A சரி.",
+        "Option B is incorrect because (R) is the exact explanation.", "(R) சரியான விளக்கம் என்பதால் விருப்பம் B தவறு.",
+        "Option C is incorrect because (R) is true.", "(R) சரியானது என்பதால் விருப்பம் C தவறு.",
+        "Option D is incorrect because (A) is true.", "(A) சரியானது என்பதால் விருப்பம் D தவறு.",
+        "Atiabari doctrine: Direct and immediate restrictions on movement of goods violate Article 301.",
+        "அத்தியாபாரி கோட்பாடு: பொருட்கள் போக்குவரத்தின் மீதான நேரடி மற்றும் உடனடித் தடைகள் உறுப்பு 301-ஐ மீறும்.",
+        "Atiabari Tea Co. case struck down Assam tax for directly and immediately impeding Article 301 trade.",
+        "வர்த்தக சுதந்திரத்தை நேரடியாகத் தடுத்ததால் அசாம் வரியை அத்தியாபாரி வழக்கில் உச்ச நீதிமன்றம் ரத்து செய்தது.",
+        tags=["Atiabari 1961", "Direct and Immediate Restriction", "Article 301 Ratio"]
+    ))
+
+    # 010 - Ans B
+    q.append(make_r(
+        "ISR_R_010", "Medium",
+        "Assertion (A): Article 301 of the Constitution establishes that trade, commerce, and intercourse throughout the territory of India shall be free.\nReason (R): Under Article 302, Parliament may by law impose such restrictions on the freedom of trade and commerce as may be required in the public interest.",
+        "கூற்று (A): அரசியலமைப்பின் 301-வது உறுப்பு இந்தியா முழுவதும் வர்த்தகம், வணிகம் மற்றும் தொடர்பு சுதந்திரமாக இருக்க வேண்டும் என்பதை நிறுவுகிறது.\nகாரணம் (R): உறுப்பு 302-ன் கீழ், பொது நலனுக்குத் தேவைப்படும் பட்சத்தில் வர்த்தகம் மற்றும் வணிகச் சுதந்திரத்தின் மீது நாடாளுமன்றம் சட்டத்தின் மூலம் கட்டுப்பாடுகளை விதிக்கலாம்.",
+        "B",
+        "Both (A) and (R) are true constitutional provisions in Part XIII. However, (R) is a qualification/restriction on the general freedom, not the explanation of why trade is made free under Article 301 (which is to foster national economic unity).",
+        "(A) மற்றும் (R) ஆகிய இரண்டும் பகுதி XIII-ல் உள்ள உண்மை விதிகள். ஆனால் (R) என்பது வர்த்தக சுதந்திரத்தின் மீதான ஒரு கட்டுப்பாடே தவிர, வர்த்தகம் ஏன் சுதந்திரமாக இருக்க வேண்டும் என்பதற்கான கூட்டாட்சி தத்துவக் காரணம் அல்ல.",
+        "Option A is incorrect because Article 302 is an exception, not the causal rationale of Article 301.", "உறுப்பு 302 ஒரு விதிவிலக்கே தவிர உறுப்பு 301-ற்கான மூலக் காரணம் அல்ல என்பதால் விருப்பம் A தவறு.",
+        "Option B is correct because both are valid, independent constitutional provisions.", "இரண்டு கூற்றுகளும் உண்மையானவை என்பதால் விருப்பம் B சரி.",
+        "Option C is incorrect because (R) is true.", "(R) உண்மை என்பதால் விருப்பம் C தவறு.",
+        "Option D is incorrect because (A) is true.", "(A) உண்மை என்பதால் விருப்பம் D தவறு.",
+        "Article 301 guarantees trade freedom; Article 302 empowers Parliament to restrict it in the public interest.",
+        "உறுப்பு 301 வர்த்தக சுதந்திரத்தை அளிக்கிறது; உறுப்பு 302 பொது நலன் கருதி அதைக் கட்டுப்படுத்த நாடாளுமன்றத்திற்கு அதிகாரம் அளிக்கிறது.",
+        "Article 301 establishes trade freedom, subject to parliamentary restrictions under Article 302.",
+        "உறுப்பு 301 வர்த்தக சுதந்திரத்தை நிறுவுகிறது; இது உறுப்பு 302-ன் கீழான நாடாளுமன்றக் கட்டுப்பாடுகளுக்கு உட்பட்டது.",
+        tags=["Article 301", "Article 302", "Trade Freedom Exceptions"]
+    ))
+
+    # 011 - Ans C
+    q.append(make_r(
+        "ISR_R_011", "Medium",
+        "Assertion (A): The 101st Constitutional Amendment Act, 2016 inserted Article 279A to constitute the Goods and Services Tax (GST) Council.\nReason (R): In the GST Council, State Governments have no voting power and only possess an observer status while the Union Government holds 100% voting weight.",
+        "கூற்று (A): 101-வது அரசியலமைப்புத் திருத்தச் சட்டம் 2016, சரக்கு மற்றும் சேவை வரி (GST) மன்றத்தை உருவாக்க உறுப்பு 279A-ஐச் சேர்த்தது.\nகாரணம் (R): ஜிஎஸ்டி மன்றத்தில் மாநில அரசுகளுக்கு எந்த வாக்குரிமையும் இல்லை; ஒன்றிய அரசுக்கு 100% வாக்குரிமை உள்ள நிலையில் மாநிலங்கள் பார்வையாளர் அந்தஸ்தை மட்டுமே கொண்டுள்ளன.",
+        "C",
+        "Assertion (A) is true: The 101st Amendment inserted Article 279A creating the GST Council. Reason (R) is false: In the GST Council, the Union Government has one-third (33.3%) of the total votes cast, and all the State Governments combined have two-thirds (66.7%) of the total votes cast. Every decision requires a 75% majority.",
+        "(A) சரி, ஆனால் (R) தவறு. கூற்று (A) சரி: 101-வது திருத்தம் உறுப்பு 279A-ஐச் சேர்த்து ஜிஎஸ்டி மன்றத்தை நிறுவியது. காரணம் (R) தவறு: ஜிஎஸ்டி மன்றத்தில் ஒன்றிய அரசுக்கு மூன்றில் ஒரு பங்கு (33.3%) வாக்குகளும், மாநில அரசுகளுக்கு மூன்றில் இரண்டு பங்கு (66.7%) வாக்குகளும் உள்ளன; முடிவெடுக்க 75% பெரும்பான்மை தேவை.",
+        "Option A is incorrect because (R) is demonstrably false.", "(R) முற்றிலும் தவறானது என்பதால் விருப்பம் A தவறு.",
+        "Option B is incorrect because (R) is false.", "(R) தவறு என்பதால் விருப்பம் B தவறு.",
+        "Option C is correct because (A) is an authentic constitutional milestone while (R) misstates the voting structure.", "(A) உண்மை மற்றும் (R) வாக்குக் கட்டமைப்பைத் தவறாகக் குறிப்பிடுவதால் விருப்பம் C சரி.",
+        "Option D is incorrect because (A) is true.", "(A) சரியானது என்பதால் விருப்பம் D தவறு.",
+        "GST Council voting formula: Centre = 1/3 weightage; States combined = 2/3 weightage; Majority threshold = 3/4 (75%).",
+        "ஜிஎஸ்டி மன்ற வாக்கு சூத்திரம்: ஒன்றியம் = 1/3 பங்கு; மாநிலங்கள் இணைந்து = 2/3 பங்கு; தேவைப்படும் பெரும்பான்மை = 75%.",
+        "Article 279A created the GST Council where States collectively hold two-thirds voting weight.",
+        "உறுப்பு 279A ஜிஎஸ்டி மன்றத்தை உருவாக்கியது; இதில் மாநிலங்கள் கூட்டாக மூன்றில் இரண்டு பங்கு வாக்கு பலத்தைக் கொண்டுள்ளன.",
+        tags=["Article 279A", "GST Council", "Voting Formula"]
+    ))
+
+    # 012 - Ans D
+    q.append(make_r(
+        "ISR_R_012", "Medium",
+        "Assertion (A): Sikkim was one of the seven founding member states of the North-Eastern Council established under the 1971 Act.\nReason (R): Sikkim was incorporated as the eighth member state of the North-Eastern Council through a parliamentary amendment passed in 2002.",
+        "கூற்று (A): 1971-ஆம் ஆண்டின் சட்டத்தின் கீழ் நிறுவப்பட்ட வடகிழக்குக் குழுவின் ஏழு நிறுவன உறுப்பு மாநிலங்களில் ஒன்றாக சிக்கிம் இருந்தது.\nகாரணம் (R): 2002-ஆம் ஆண்டில் நாடாளுமன்றத்தால் இயற்றப்பட்ட சட்டத் திருத்தத்தின் மூலம் சிக்கிம் வடகிழக்குக் குழுவின் எட்டாவது உறுப்பு மாநிலமாகச் சேர்க்கப்பட்டது.",
+        "D",
+        "Assertion (A) is false: The North-Eastern Council Act, 1971 originally covered only the 'Seven Sisters' (Assam, Manipur, Meghalaya, Nagaland, Tripura, Arunachal Pradesh, and Mizoram). Reason (R) is true: Sikkim was formally added as the 8th member state in December 2002 via the North-Eastern Council (Amendment) Act, 2002.",
+        "(A) தவறு, ஆனால் (R) சரி. கூற்று (A) தவறு: 1971 சட்டத்தின் கீழ் அசல் வடகிழக்குக் குழுவில் 'ஏழு சகோதரி' மாநிலங்கள் மட்டுமே இருந்தன; சிக்கிம் அப்போது சேர்க்கப்படவில்லை. காரணம் (R) சரி: 2002 டிசம்பரில் இயற்றப்பட்ட திருத்தச் சட்டம் மூலமே சிக்கிம் எட்டாவது மாநிலமாகச் சேர்க்கப்பட்டது.",
+        "Option A is incorrect because (A) is false.", "(A) தவறு என்பதால் விருப்பம் A தவறு.",
+        "Option B is incorrect because (A) is false.", "(A) தவறு என்பதால் விருப்பம் B தவறு.",
+        "Option C is incorrect because (A) is false.", "(A) தவறு என்பதால் விருப்பம் C தவறு.",
+        "Option D is correct because (A) is historically false while (R) correctly identifies the 2002 induction of Sikkim.", "(A) தவறானது மற்றும் (R) 2002-ல் சிக்கிம் சேர்க்கப்பட்டதைச் சரியாகக் குறிப்பிடுவதால் விருப்பம் D சரி.",
+        "Sikkim became an Indian State in 1975, but joined the North-Eastern Council in 2002 as its 8th member.",
+        "சிக்கிம் 1975-ல் இந்திய மாநிலமானது, ஆனால் வடகிழக்குக் குழுவில் 2002-ல் 8-வது மாநிலமாக இணைந்தது.",
+        "Sikkim was inducted into the North-Eastern Council as its 8th member in December 2002.",
+        "டிசம்பர் 2002-ல் வடகிழக்குக் குழுவின் எட்டாவது உறுப்பினராக சிக்கிம் சேர்க்கப்பட்டது.",
+        tags=["Sikkim 2002", "North-Eastern Council", "Eighth Member"]
+    ))
+
+    # 013 - Ans A
+    q.append(make_r(
+        "ISR_R_013", "Hard",
+        "Assertion (A): Under Article 304(b), no Bill imposing reasonable restrictions on trade and commerce can be introduced in a State Legislature without the previous sanction of the President.\nReason (R): The requirement of Presidential previous sanction ensures that individual States do not create parochial trade barriers that balkanize the national economic market.",
+        "கூற்று (A): உறுப்பு 304(b)-ன் கீழ், வர்த்தகம் மற்றும் வணிகத்தின் மீது நியாயமான கட்டுப்பாடுகளை விதிக்கும் எந்தவொரு மசோதாவையும் குடியரசுத் தலைவரின் முன் அனுமதியின்றி மாநில சட்டமன்றத்தில் அறிமுகப்படுத்த முடியாது.\nகாரணம் (R): குடியரசுத் தலைவரின் முன் அனுமதி தேவை என்ற நிபந்தனை, தனித்தனி மாநிலங்கள் தேசிய பொருளாதாரச் சந்தையைத் துண்டாடும் குறுகிய வர்த்தகத் தடைகளை உருவாக்காமல் இருப்பதை உறுதி செய்கிறது.",
+        "A",
+        "Both (A) and (R) are true and (R) correctly explains the constitutional objective of (A). The framers placed the check of Presidential prior sanction in Article 304(b) specifically to safeguard the common economic market of India from parochial provincial protectionism.",
+        "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும். தனித்தனி மாநிலங்கள் குறுகிய நோக்கத்துடன் பிற மாநிலப் பொருட்கள் மீது கட்டுப்பாடுகளை விதித்து தேசியப் பொருளாதார ஒற்றுமையைப் பாதிக்காமல் தடுக்கவே குடியரசுத் தலைவரின் முன் அனுமதி தேவை என்ற நிபந்தனை உறுப்பு 304(b)-ல் வைக்கப்பட்டது.",
+        "Option A is correct because (R) gives the exact constitutional rationale behind the proviso to Article 304(b).", "உறுப்பு 304(b)-ன் நிபந்தனைக்கான அரசியலமைப்பு நோக்கத்தை (R) விளக்குவதால் விருப்பம் A சரி.",
+        "Option B is incorrect because (R) is the direct explanation.", "(R) நேரடி விளக்கம் என்பதால் விருப்பம் B தவறு.",
+        "Option C is incorrect because (R) is true.", "(R) உண்மை என்பதால் விருப்பம் C தவறு.",
+        "Option D is incorrect because (A) is true.", "(A) உண்மை என்பதால் விருப்பம் D தவறு.",
+        "Presidential previous sanction in Article 304(b) preserves India as a single common economic market.",
+        "உறுப்பு 304(b)-ன் குடியரசுத் தலைவரின் முன் அனுமதி இந்தியாவை ஒரே பொதுப் பொருளாதாரச் சந்தையாகப் பாதுகாக்கிறது.",
+        "Article 304(b) prior sanction prevents state-level trade protectionism across India.",
+        "உறுப்பு 304(b)-ன் முன் அனுமதி மாநில அளவிலான வர்த்தகப் பாதுகாப்புவாதத்தைத் தடுக்கிறது.",
+        tags=["Article 304(b)", "Presidential Prior Sanction", "National Market"]
+    ))
+
+    # 014 - Ans B
+    q.append(make_r(
+        "ISR_R_014", "Medium",
+        "Assertion (A): The Chief Ministers of member States in each zone act as Vice-Chairman of the Zonal Council by annual rotation.\nReason (R): The Union Home Minister serves as the common Chairman of all five statutory Zonal Councils in India.",
+        "கூற்று (A): ஒவ்வொரு மண்டலத்திலும் உள்ள உறுப்பு மாநிலங்களின் முதலமைச்சர்கள் ஆண்டு சுழற்சி முறையில் மண்டலக் குழுவின் துணைத் தலைவராகச் செயல்படுகின்றனர்.\nகாரணம் (R): இந்தியாவில் உள்ள ஐந்து சட்டப்பூர்வ மண்டலக் குழுக்களுக்கும் மத்திய உள்துறை அமைச்சர் பொதுத் தலைவராகச் செயல்படுகிறார்.",
+        "B",
+        "Both (A) and (R) are correct statutory facts under the States Reorganisation Act, 1956. However, the Home Minister serving as common Chairman is an independent institutional rule and not the reason why Chief Ministers rotate annually as Vice-Chairmen.",
+        "(A) மற்றும் (R) ஆகிய இரண்டும் 1956 மாநில மறுசீரமைப்புச் சட்டத்தின் கீழான உண்மை விதிகள். ஆனால் உள்துறை அமைச்சர் பொதுத் தலைவராக இருப்பது தனி விதி; அது முதலமைச்சர்கள் சுழற்சி முறையில் துணைத் தலைவராக இருப்பதற்கான காரண விளக்கம் அல்ல.",
+        "Option A is incorrect because (R) does not explain the annual rotation of Chief Ministers.", "(R) முதலமைச்சர்களின் சுழற்சிக்கான காரணம் அல்ல என்பதால் விருப்பம் A தவறு.",
+        "Option B is correct because both statements are true independent facts.", "இரண்டு கூற்றுகளும் உண்மையானவை என்பதால் விருப்பம் B சரி.",
+        "Option C is incorrect because (R) is true.", "(R) உண்மை என்பதால் விருப்பம் C தவறு.",
+        "Option D is incorrect because (A) is true.", "(A) உண்மை என்பதால் விருப்பம் D தவறு.",
+        "Zonal Council leadership: Union Home Minister = Permanent Chairman; Chief Ministers = Vice-Chairman by 1-year rotation.",
+        "மண்டலக் குழு தலைமை: மத்திய உள்துறை அமைச்சர் = நிரந்தரத் தலைவர்; முதலமைச்சர்கள் = 1 ஆண்டு சுழற்சி முறை துணைத் தலைவர்.",
+        "Chief Ministers rotate annually as Zonal Council Vice-Chairman while the Home Minister chairs.",
+        "உள்துறை அமைச்சர் தலைமை தாங்க, முதலமைச்சர்கள் ஆண்டுதோறும் மண்டலக் குழு துணைத் தலைவராகச் சுழற்சி முறையில் பதவி வகிக்கின்றனர்.",
+        tags=["Zonal Leadership", "Vice-Chairman Rotation", "Home Minister Chair"]
+    ))
+
+    # 015 - Ans C
+    q.append(make_r(
+        "ISR_R_015", "Hard",
+        "Assertion (A): Under Section 6(2) of the IRWD Act, 1956, once a Water Disputes Tribunal award is gazetted by the Central Government, it acquires the same force as an order or decree of the Supreme Court.\nReason (R): An inter-State river water tribunal award is merely an executive recommendation that requires an Act of Parliament to acquire legal enforceability.",
+        "கூற்று (A): 1956 நதிநீர் தகராறுகள் சட்டத்தின் பிரிவு 6(2)-ன் கீழ், தீர்ப்பாயத்தின் தீர்ப்பு மத்திய அரசால் அரசிதழில் வெளியிடப்பட்டவுடன், அது உச்ச நீதிமன்றத்தின் ஆணை அல்லது தீர்ப்பாணையின் வலிமையைப் பெறுகிறது.\nகாரணம் (R): மாநிலங்களுக்கு இடையேயான நதிநீர் தீர்ப்பாயத்தின் முடிவு என்பது வெறும் நிர்வாகப் பரிந்துரையே தவிர, அது சட்டப்பூர்வ வலிமை பெற நாடாளுமன்றத்தின் தனிச் சட்டம் தேவைப்படுகிறது.",
+        "C",
+        "Assertion (A) is true: Section 6(2) (inserted by the 2002 amendment) explicitly provides that upon publication in the Official Gazette, the decision of the Tribunal shall have the same force as an order or decree of the Supreme Court. Reason (R) is false: The award is binding and enforceable as a decree of the Supreme Court; it is NOT merely an advisory recommendation requiring subsequent legislation.",
+        "(A) சரி, ஆனால் (R) தவறு. கூற்று (A) சரி: பிரிவு 6(2)-ன் படி, அரசிதழில் வெளியானவுடன் தீர்ப்பாய முடிவு உச்ச நீதிமன்ற ஆணைக்கு சமமான வலிமை பெறுகிறது. காரணம் (R) தவறு: இத்தீர்ப்பு பிணைப்புள்ள இறுதித் தீர்ப்பாகும்; இதற்கு நாடாளுமன்றத்தின் தனிச் சட்டம் எதுவும் தேவையில்லை.",
+        "Option A is incorrect because (R) is false.", "(R) தவறு என்பதால் விருப்பம் A தவறு.",
+        "Option B is incorrect because (R) is false.", "(R) தவறு என்பதால் விருப்பம் B தவறு.",
+        "Option C is correct because (A) accurately states Section 6(2) while (R) erroneously claims it is a non-binding recommendation.", "(A) பிரிவு 6(2)-ஐச் சரியாகவும், (R) அதை வெறும் பரிந்துரை எனத் தவறாகவும் குறிப்பிடுவதால் விருப்பம் C சரி.",
+        "Option D is incorrect because (A) is true.", "(A) உண்மை என்பதால் விருப்பம் D தவறு.",
+        "Section 6(2) of IRWD Act: Gazetted Tribunal Award = Order/Decree of Supreme Court.",
+        "IRWD சட்டம் பிரிவு 6(2): அரசிதழில் வெளியான தீர்ப்பாய முடிவு = உச்ச நீதிமன்ற ஆணை/தீர்ப்பாணை.",
+        "Gazetted river water tribunal awards hold the force of a Supreme Court decree under Section 6(2).",
+        "அரசிதழில் வெளியிடப்பட்ட நதிநீர் தீர்ப்பாய தீர்ப்புகள் பிரிவு 6(2)-ன் கீழ் உச்ச நீதிமன்ற ஆணைக்கு நிகரானவை.",
+        tags=["Section 6(2)", "Award Status", "Supreme Court Decree Equivalence"]
+    ))
+
+    # 016 - Ans D
+    q.append(make_r(
+        "ISR_R_016", "Hard",
+        "Assertion (A): Under Article 303(1), Parliament possesses unrestricted constitutional power to pass trade laws that give preference to one State over another.\nReason (R): Article 303(2) permits Parliament to enact discriminatory trade legislation only when it is declared necessary to deal with a situation of scarcity of goods in any part of India.",
+        "கூற்று (A): உறுப்பு 303(1)-ன் கீழ், ஒரு மாநிலத்திற்கு மற்றொரு மாநிலத்தை விட முன்னுரிமை அளிக்கும் வர்த்தகச் சட்டங்களை இயற்ற நாடாளுமன்றத்திற்கு எல்லையற்ற அரசியலமைப்பு அதிகாரம் உண்டு.\nகாரணம் (R): உறுப்பு 303(2) நாட்டின் எந்தப் பகுதியிலும் பொருட்கள் பற்றாக்குறை ஏற்படும் போது அச்சூழலைக் கையாள மட்டுமே பாகுபாடான வர்த்தகச் சட்டங்களை இயற்ற நாடாளுமன்றத்திற்கு அனுமதிக்கிறது.",
+        "D",
+        "Assertion (A) is false: Article 303(1) explicitly PROHIBITS Parliament and State Legislatures from making any law giving preference to one State over another or discriminating between States. Reason (R) is true: Article 303(2) creates the sole narrow exception allowing Parliament to make discriminatory laws strictly to tackle situations arising from scarcity of goods.",
+        "(A) தவறு, ஆனால் (R) சரி. கூற்று (A) தவறு: உறுப்பு 303(1) மாநிலங்களுக்கிடையே பாகுபாடு காட்டுவதையோ அல்லது ஒரு மாநிலத்திற்கு முன்னுரிமை அளிப்பதையோ நாடாளுமன்றத்திற்கும் மாநில சட்டமன்றங்களுக்கும் தெளிவாகத் தடை செய்கிறது. காரணம் (R) சரி: பொருட்கள் பற்றாக்குறையின் போது மட்டுமே பாகுபாடான சட்டங்களை இயற்ற உறுப்பு 303(2) நாடாளுமன்றத்திற்கு விதிவிலக்கு அளிக்கிறது.",
+        "Option A is incorrect because (A) is false.", "(A) தவறு என்பதால் விருப்பம் A தவறு.",
+        "Option B is incorrect because (A) is false.", "(A) தவறு என்பதால் விருப்பம் B தவறு.",
+        "Option C is incorrect because (A) is false.", "(A) தவறு என்பதால் விருப்பம் C தவறு.",
+        "Option D is correct because (A) is false (discrimination is barred) while (R) correctly identifies the narrow scarcity exception.", "(A) தவறானது (பாகுபாடு தடை செய்யப்பட்டுள்ளது) மற்றும் (R) பற்றாக்குறை விதிவிலக்கைச் சரியாகக் குறிப்பிடுவதால் விருப்பம் D சரி.",
+        "Article 303(1) bars preference; Article 303(2) carves out the sole exception for Parliament during SCARCITY of goods.",
+        "உறுப்பு 303(1) பாகுபாட்டைத் தடை செய்கிறது; உறுப்பு 303(2) பொருட்கள் பற்றாக்குறையின் போது நாடாளுமன்றத்திற்கு மட்டும் விதிவிலக்கு அளிக்கிறது.",
+        "Article 303 prohibits state preference, with an exception for Parliament only during scarcity of goods.",
+        "பொருட்கள் பற்றாக்குறையின் போது நாடாளுமன்றத்திற்கு உள்ள விதிவிலக்கு தவிர்த்து, மாநிலங்களிடையே முன்னுரிமை அளிப்பதை உறுப்பு 303 தடை செய்கிறது.",
+        tags=["Article 303", "Non-Discrimination", "Scarcity Exception"]
+    ))
+
+    # 017 - Ans A
+    q.append(make_r(
+        "ISR_R_017", "Medium",
+        "Assertion (A): Members of an Inter-State River Water Disputes Tribunal are nominated exclusively by the Chief Justice of India.\nReason (R): Nomination by the head of the judiciary ensures that the adjudication of sensitive inter-State water disputes remains insulated from executive partisanship and political pressure.",
+        "கூற்று (A): மாநிலங்களுக்கு இடையேயான நதிநீர் தகராறுகள் தீர்ப்பாயத்தின் உறுப்பினர்கள் இந்தியத் தலைமை நீதிபதியால் மட்டுமே பரிந்துரைக்கப்படுகிறார்கள்.\nகாரணம் (R): நீதித்துறையின் தலைவரால் உறுப்பினர்கள் நியமிக்கப்படுவது, உணர்வுபூர்வமான மாநிலங்களுக்கிடையேயான நதிநீர் தகராறுகளை விசாரிக்கும் போது நிர்வாக ஒருதலைப்பட்சத்தன்மை மற்றும் அரசியல் அழுத்தங்களிலிருந்து தீர்ப்பாயம் விடுபட்டிருப்பதை உறுதி செய்கிறது.",
+        "A",
+        "Both (A) and (R) are true and (R) correctly explains (A). Under Section 4(2) of the IRWD Act, 1956, the Tribunal consists of a Chairman and two other members nominated by the Chief Justice of India from among persons who are or have been judges of the Supreme Court or High Courts, guaranteeing impartiality.",
+        "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும். 1956 IRWD சட்டம் பிரிவு 4(2)-ன் படி, உச்ச நீதிமன்ற அல்லது உயர் நீதிமன்ற நீதிபதிகளிலிருந்து இந்தியத் தலைமை நீதிபதி உறுப்பினர்களைப் பரிந்துரைக்கிறார்; இது அரசியல் தலையீடின்றி நடுநிலையுடன் தீர்ப்பளிக்க உதவுகிறது.",
+        "Option A is correct because (R) provides the institutional logic for CJI nomination in (A).", "தலைமை நீதிபதியின் பரிந்துரைக்கான காரணத்தை (R) சரியாக விளக்குவதால் விருப்பம் A சரி.",
+        "Option B is incorrect because (R) is the direct explanation.", "(R) நேரடி விளக்கம் என்பதால் விருப்பம் B தவறு.",
+        "Option C is incorrect because (R) is true.", "(R) உண்மை என்பதால் விருப்பம் C தவறு.",
+        "Option D is incorrect because (A) is true.", "(A) உண்மை என்பதால் விருப்பம் D தவறு.",
+        "CJI nomination guarantees that inter-state water tribunals function with judicial independence and federal neutrality.",
+        "தலைமை நீதிபதியின் பரிந்துரை நதிநீர் தீர்ப்பாயங்கள் கூட்டாட்சி நடுநிலையுடன் செயல்படுவதை உறுதி செய்கிறது.",
+        "Water disputes tribunals are nominated by the Chief Justice of India to safeguard judicial neutrality.",
+        "நீதித்துறை நடுநிலையைப் பாதுகாக்க நதிநீர் தீர்ப்பாய உறுப்பினர்களை இந்தியத் தலைமை நீதிபதி நியமிக்கிறார்.",
+        tags=["CJI Nomination", "Judicial Neutrality", "Section 4 IRWD Act"]
+    ))
+
+    # 018 - Ans B
+    q.append(make_r(
+        "ISR_R_018", "Hard",
+        "Assertion (A): Under Article 305 of the Constitution, existing laws and laws providing for State monopolies are completely shielded from being invalidated under Article 301.\nReason (R): State Governments in India frequently create statutory corporations to operate exclusive public transportation and electricity supply services.",
+        "கூற்று (A): அரசியலமைப்பின் 305-வது உறுப்பின் கீழ், அரசு ஏகபோகங்களை வழங்கும் சட்டங்கள் உறுப்பு 301-ன் கீழ் செல்லாததாக்கப்படுவதிலிருந்து முழுமையாகப் பாதுகாக்கப்படுகின்றன.\nகாரணம் (R): இந்தியாவில் மாநில அரசுகள் பிரத்யேக பொதுப் போக்குவரத்து மற்றும் மின் விநியோக சேவைகளை இயக்க சட்டப்பூர்வ கழகங்களை அடிக்கடி உருவாக்குகின்றன.",
+        "B",
+        "Both (A) and (R) are true. Article 305 specifically saves laws providing for State monopolies from the operation of Articles 301 and 303. State corporations operating transport/electricity are valid examples, but the existence of such corporations is not the constitutional explanation of Article 305 (which was amended by the 4th Amendment 1955 to enable socialist state enterprises).",
+        "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கம் அல்ல. உறுப்பு 305 அரசு ஏகபோகங்களைப் பாதுகாக்கிறது என்பதும், மாநிலங்கள் போக்குவரத்துக் கழகங்களை நடத்துவதும் தனித்தனி உண்மைகளே தவிர, (R) என்பது (A)-விற்கான அரசியலமைப்பு வரலாற்று விளக்கம் அல்ல.",
+        "Option A is incorrect because (R) is an illustrative example, not the constitutional justification of Article 305.", "(R) ஒரு உதாரணமே தவிர அரசியலமைப்பு விளக்கம் அல்ல என்பதால் விருப்பம் A தவறு.",
+        "Option B is correct because both statements are true.", "இரண்டு கூற்றுகளும் உண்மையானவை என்பதால் விருப்பம் B சரி.",
+        "Option C is incorrect because (R) is true.", "(R) உண்மை என்பதால் விருப்பம் C தவறு.",
+        "Option D is incorrect because (A) is true.", "(A) உண்மை என்பதால் விருப்பம் D தவறு.",
+        "Article 305 immunizes State monopolies (nationalization) against challenges under Article 301 (freedom of trade).",
+        "உறுப்பு 305 அரசு ஏகபோகங்களை (தேசியமயமாக்கல்) உறுப்பு 301-ன் கீழான சவால்களிலிருந்து பாதுகாக்கிறது.",
+        "Article 305 protects state monopolies from trade freedom restrictions under Article 301.",
+        "உறுப்பு 305 அரசு ஏகபோகங்களை உறுப்பு 301 வர்த்தக சுதந்திரக் கட்டுப்பாடுகளிலிருந்து பாதுகாக்கிறது.",
+        tags=["Article 305", "State Monopolies", "Trade Immunity"]
+    ))
+
+    # 019 - Ans C
+    q.append(make_r(
+        "ISR_R_019", "Medium",
+        "Assertion (A): The Sarkaria Commission (1988) recommended the establishment of a permanent Inter-State Council under Article 263 of the Constitution.\nReason (R): The Sarkaria Commission recommended that Article 131 should be abolished to make the Inter-State Council the sole supreme judicial court for federal disputes.",
+        "கூற்று (A): அரசியலமைப்பின் 263-வது உறுப்பின் கீழ் ஒரு நிரந்தர மாநிலங்களுக்கு இடையிலான மன்றத்தை நிறுவ வேண்டும் என்று சர்க்காரியா ஆணையம் (1988) பரிந்துரைத்தது.\nகாரணம் (R): மாநிலங்களுக்கு இடையிலான மன்றத்தையே கூட்டாட்சித் தகராறுகளுக்கான ஒரே உச்ச நீதிமன்றமாக மாற்றுவதற்கு உறுப்பு 131 நீக்கப்பட வேண்டும் என்று சர்க்காரியா ஆணையம் பரிந்துரைத்தது.",
+        "C",
+        "Assertion (A) is true: The Sarkaria Commission recommended setting up an Inter-State Council under Article 263. Reason (R) is false: The Sarkaria Commission never recommended abolishing Article 131 or replacing the Supreme Court with an executive council. Article 131 judicial adjudication and Article 263 consultation operate in distinct spheres.",
+        "(A) சரி, ஆனால் (R) தவறு. கூற்று (A) சரி: சர்க்காரியா ஆணையம் உறுப்பு 263-ன் கீழ் மன்றத்தை அமைக்கப் பரிந்துரைத்தது. காரணம் (R) தவறு: உறுப்பு 131-ஐ நீக்க வேண்டும் என்றோ அல்லது உச்ச நீதிமன்றத்திற்குப் பதிலாக மன்றத்தை நீதி அமைப்பாக மாற்ற வேண்டும் என்றோ சர்க்காரியா ஆணையம் எப்போதும் கூறவில்லை.",
+        "Option A is incorrect because (R) is completely false.", "(R) முற்றிலும் தவறானது என்பதால் விருப்பம் A தவறு.",
+        "Option B is incorrect because (R) is false.", "(R) தவறு என்பதால் விருப்பம் B தவறு.",
+        "Option C is correct because (A) is true and (R) attributes a false recommendation.", "(A) உண்மை மற்றும் (R) தவறான தகவலைக் கொண்டிருப்பதால் விருப்பம் C சரி.",
+        "Option D is incorrect because (A) is true.", "(A) உண்மை என்பதால் விருப்பம் D தவறு.",
+        "Sarkaria Commission recommended an advisory council under Article 263; it never undermined Article 131 court powers.",
+        "சர்க்காரியா ஆணையம் ஆலோசனைக் குழுவையே பரிந்துரைத்தது; உச்ச நீதிமன்றத்தின் உறுப்பு 131 அதிகாரத்தை அது ஒருபோதும் குறைக்கவில்லை.",
+        "Sarkaria Commission recommended setting up a permanent Inter-State Council under Article 263.",
+        "சர்க்காரியா ஆணையம் உறுப்பு 263-ன் கீழ் நிரந்தர மாநிலங்களுக்கு இடையிலான மன்றத்தை அமைக்கப் பரிந்துரைத்தது.",
+        tags=["Sarkaria Commission", "Article 263", "Article 131 Separation"]
+    ))
+
+    # 020 - Ans D
+    q.append(make_r(
+        "ISR_R_020", "Hard",
+        "Assertion (A): The Inter-State Council was permanently and automatically established on 26th January 1950 by the self-executing force of Article 263.\nReason (R): Article 263 is an enabling constitutional provision empowering the President to establish such a Council whenever it appears that public interests would be served.",
+        "கூற்று (A): 1950 ஜனவரி 26 அன்று உறுப்பு 263 தானாகவே நடைமுறைக்கு வந்ததன் மூலம் மாநிலங்களுக்கு இடையிலான மன்றம் நிரந்தரமாக நிறுவப்பட்டது.\nகாரணம் (R): பொது நலனுக்குத் தேவைப்படும் போதெல்லாம் இத்தகைய மன்றத்தை அமைக்க குடியரசுத் தலைவருக்கு அதிகாரம் அளிக்கும் ஒரு வழிகாட்டுதல் விதியே உறுப்பு 263 ஆகும்.",
+        "D",
+        "Assertion (A) is false: Article 263 is not self-executing; it did not automatically create an Inter-State Council on 26 January 1950. It took 40 years until May 1990 for a comprehensive council to be set up. Reason (R) is true: Article 263 is an enabling provision empowering the President by order to establish such a council.",
+        "(A) தவறு, ஆனால் (R) சரி. கூற்று (A) தவறு: உறுப்பு 263 தானாகவே மன்றத்தை உருவாக்கவில்லை; 1950-க்குப் பின் 40 ஆண்டுகள் கழித்து 1990-லேயே பொது மன்றம் அமைக்கப்பட்டது. காரணம் (R) சரி: தேவைப்படும் போது குடியரசுத் தலைவர் ஆணை மூலம் மன்றத்தை அமைக்க அதிகாரம் அளிக்கும் விதியே உறுப்பு 263 ஆகும்.",
+        "Option A is incorrect because (A) is false.", "(A) தவறு என்பதால் விருப்பம் A தவறு.",
+        "Option B is incorrect because (A) is false.", "(A) தவறு என்பதால் விருப்பம் B தவறு.",
+        "Option C is incorrect because (A) is false.", "(A) தவறு என்பதால் விருப்பம் C தவறு.",
+        "Option D is correct because (A) is false while (R) correctly describes Article 263 as an enabling power.", "(A) தவறானது மற்றும் (R) உறுப்பு 263-ஐ அதிகாரம் அளிக்கும் விதியாகச் சரியாகக் குறிப்பிடுவதால் விருப்பம் D சரி.",
+        "Article 263 is an enabling provision: the Council is established by Presidential Order, not automatic perpetual existence.",
+        "உறுப்பு 263 அதிகாரம் அளிக்கும் விதி: குடியரசுத் தலைவரின் ஆணை மூலமே மன்றம் நிறுவப்படுகிறது, தானாக அல்ல.",
+        "Article 263 enables the President to establish an Inter-State Council when public interest requires.",
+        "பொது நலன் தேவைப்படும் போது குடியரசுத் தலைவர் மாநிலங்களுக்கு இடையிலான மன்றத்தை அமைக்க உறுப்பு 263 வகை செய்கிறது.",
+        tags=["Article 263", "Enabling Provision", "Presidential Order"]
+    ))
+
+    # 021 - Ans A
+    q.append(make_r(
+        "ISR_R_021", "Hard",
+        "Assertion (A): In the Jindal Stainless case (2017), a 9-judge Constitution Bench held that non-discriminatory State entry taxes do not violate the freedom of trade guaranteed under Article 301.\nReason (R): Article 304(a) expressly empowers States to levy taxes on goods imported from other States provided that similar locally manufactured goods are subjected to identical non-discriminatory taxation.",
+        "கூற்று (A): ஜிண்டால் ஸ்டெயின்லெஸ் வழக்கில் (2017), மாநிலங்கள் விதிக்கும் பாகுபாடற்ற நுழைவு வரிகள் உறுப்பு 301-ன் கீழான வர்த்தக சுதந்திரத்தை மீறாது என்று 9 நீதிபதிகள் கொண்ட அரசியலமைப்பு அமர்வு தீர்ப்பளித்தது.\nகாரணம் (R): உள்ளூரில் உற்பத்தி செய்யப்படும் ஒத்த பொருட்களுக்கு இணையாக பாகுபாடற்ற வரி விதிக்கப்படும் பட்சத்தில், பிற மாநிலங்களிலிருந்து வரும் பொருட்கள் மீது வரி விதிக்க உறுப்பு 304(a) மாநிலங்களுக்கு வெளிப்படையாக அதிகாரம் அளிக்கிறது.",
+        "A",
+        "Both (A) and (R) are true and (R) correctly explains (A). The 9-judge bench in Jindal Stainless held that non-discriminatory taxation authorized under Article 304(a) does not constitute an actionable restriction on trade under Article 301, overruling the earlier compensatory tax doctrine.",
+        "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும். ஜிண்டால் ஸ்டெயின்லெஸ் வழக்கில், உறுப்பு 304(a)-ன் கீழ் உள்ளூர் பொருட்களுக்கு சமமாக பாகுபாடின்றி விதிக்கப்படும் வரிகள் உறுப்பு 301-ன் கீழ் வர்த்தகத் தடையாக அமையாது என 9 நீதிபதிகள் அமர்வு தீர்ப்பளித்தது.",
+        "Option A is correct because (R) provides the constitutional justification for the ruling in (A).", "தீர்ப்பிற்கான அரசியலமைப்பு அடிப்படையை (R) துல்லியமாக விளக்குவதால் விருப்பம் A சரி.",
+        "Option B is incorrect because (R) is the exact explanation.", "(R) சரியான விளக்கம் என்பதால் விருப்பம் B தவறு.",
+        "Option C is incorrect because (R) is true.", "(R) உண்மை என்பதால் விருப்பம் C தவறு.",
+        "Option D is incorrect because (A) is true.", "(A) உண்மை என்பதால் விருப்பம் D தவறு.",
+        "Jindal Stainless (2017, 9 judges): Non-discriminatory tax under Article 304(a) does not violate Article 301.",
+        "ஜிண்டால் ஸ்டெயின்லெஸ் (2017, 9 நீதிபதிகள்): உறுப்பு 304(a)-ன் கீழான பாகுபாடற்ற வரி உறுப்பு 301-ஐ மீறாது.",
+        "Non-discriminatory entry tax is valid under Article 304(a) as affirmed in Jindal Stainless (2017).",
+        "பாகுபாடற்ற நுழைவு வரி உறுப்பு 304(a)-ன் கீழ் செல்லும் என்று ஜிண்டால் ஸ்டெயின்லெஸ் (2017) வழக்கில் உறுதி செய்யப்பட்டது.",
+        tags=["Jindal Stainless 2017", "Article 304(a)", "Entry Tax Constitutional"]
+    ))
+
+    # 022 - Ans B
+    q.append(make_r(
+        "ISR_R_022", "Medium",
+        "Assertion (A): The Inter-State Council Secretariat (ISCS) has functioned as the joint secretariat for both the Inter-State Council and all the Zonal Councils since 2011.\nReason (R): The Inter-State Council Secretariat is headed by an officer of the rank of Secretary to the Government of India.",
+        "கூற்று (A): 2011 முதல் மாநிலங்களுக்கு இடையிலான மன்றச் செயலகம் (ISCS) மாநிலங்களுக்கு இடையிலான மன்றம் மற்றும் அனைத்து மண்டலக் குழுக்கள் ஆகிய இரண்டிற்கும் பொதுச் செயலகமாகச் செயல்பட்டு வருகிறது.\nகாரணம் (R): மாநிலங்களுக்கு இடையிலான மன்றச் செயலகத்திற்கு இந்திய அரசின் செயலாளர் அந்தஸ்தில் உள்ள ஓர் அதிகாரி தலைமை தாங்குகிறார்.",
+        "B",
+        "Both (A) and (R) are true administrative facts regarding the ISCS. However, the rank of the heading officer (Secretary to GoI) is not the causal reason why administrative responsibilities for Zonal Councils were merged with ISCS in 2011 (which was done to streamline administrative machinery and foster institutional cohesion).",
+        "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கம் அல்ல. 2011 முதல் இரண்டுக்கும் பொதுவான செயலகமாக உள்ளது என்பதும், அதற்கு அரசுச் செயலாளர் தலைமை தாங்குகிறார் என்பதும் தனித்தனி உண்மைகளே அன்றி காரண விளக்கங்கள் அல்ல.",
+        "Option A is incorrect because the officer rank is not the causal reason for institutional merger.", "அதிகாரியின் அந்தஸ்து நிர்வாக இணைப்பிற்கான காரணம் அல்ல என்பதால் விருப்பம் A தவறு.",
+        "Option B is correct because both statements are factually accurate.", "இரண்டு கூற்றுகளும் உண்மையானவை என்பதால் விருப்பம் B சரி.",
+        "Option C is incorrect because (R) is true.", "(R) உண்மை என்பதால் விருப்பம் C தவறு.",
+        "Option D is incorrect because (A) is true.", "(A) உண்மை என்பதால் விருப்பம் D தவறு.",
+        "ISCS dual role: Administers Inter-State Council (since 1991) and Zonal Councils (since 2011), headed by Secretary to GoI.",
+        "மன்றச் செயலகத்தின் இரட்டைப் பணி: மன்றம் (1991 முதல்) மற்றும் மண்டலக் குழுக்களை (2011 முதல்) நிர்வகிக்கிறது; செயலாளர் அந்தஸ்து அதிகாரி தலைவர்.",
+        "Inter-State Council Secretariat serves both ISC and Zonal Councils, headed by a Secretary to GoI.",
+        "இந்திய அரசுச் செயலாளரின் கீழ் இயங்கும் மன்றச் செயலகம் மன்றம் மற்றும் மண்டலக் குழுக்கள் இரண்டிற்கும் சேவையாற்றுகிறது.",
+        tags=["ISCS Secretariat", "Dual Mandate", "Secretary to GoI"]
+    ))
+
+    # 023 - Ans C
+    q.append(make_r(
+        "ISR_R_023", "Hard",
+        "Assertion (A): In the 2018 Cauvery judgment, the Supreme Court of India firmly rejected the Harmon Doctrine of absolute territorial sovereignty in inter-State water disputes.\nReason (R): The Harmon Doctrine mandates that downstream States possess an absolute proprietary monopoly over river waters to the complete exclusion of upstream States.",
+        "கூற்று (A): 2018 காவிரி தீர்ப்பில், மாநிலங்களுக்கு இடையேயான நதிநீர் தகராறுகளில் முழுமையான பிராந்திய இறையாண்மையைக் கோரும் ஹார்மன் கோட்பாட்டை இந்திய உச்ச நீதிமன்றம் உறுதியாக நிராகரித்தது.\nகாரணம் (R): நதி உற்பத்தியாகும் மேல் மாநிலங்களை முற்றிலுமாகப் புறக்கணித்து, கீழ் வடிநில மாநிலங்கள் மட்டுமே நதிநீரின் மீது முழுமையான பிரத்யேக உரிமை கொண்டுள்ளன என்று ஹார்மன் கோட்பாடு கூறுகிறது.",
+        "C",
+        "Assertion (A) is true: The Supreme Court rejected the Harmon Doctrine and held river water to be a national asset. Reason (R) is false: The Harmon Doctrine (originated in the US by Attorney General Judson Harmon in 1895) asserted that the UPSTREAM (upper riparian) State has absolute sovereignty to use all water originating in its territory, not the downstream state.",
+        "(A) சரி, ஆனால் (R) தவறு. கூற்று (A) சரி: ஹார்மன் கோட்பாட்டை நிராகரித்து நதிநீரைத் தேசியச் சொத்தாக உச்ச நீதிமன்றம் அறிவித்தது. காரணம் (R) தவறு: ஹார்மன் கோட்பாடு நதி உற்பத்தியாகும் மேல் மாநிலத்திற்கே (Upstream state) முழு உரிமை உண்டு எனக் கூறியதே தவிர கீழ் மாநிலத்திற்கு அல்ல.",
+        "Option A is incorrect because (R) completely misdefines the Harmon Doctrine.", "ஹார்மன் கோட்பாட்டை (R) தவறாக விளக்குவதால் விருப்பம் A தவறு.",
+        "Option B is incorrect because (R) is false.", "(R) தவறு என்பதால் விருப்பம் B தவறு.",
+        "Option C is correct because (A) correctly reflects the Cauvery ruling while (R) distorts the Harmon Doctrine.", "(A) காவிரி தீர்ப்பைச் சரியாகவும், (R) ஹார்மன் கோட்பாட்டைத் தவறாகவும் குறிப்பிடுவதால் விருப்பம் C சரி.",
+        "Option D is incorrect because (A) is true.", "(A) உண்மை என்பதால் விருப்பம் D தவறு.",
+        "Harmon Doctrine claimed absolute sovereignty for UPSTREAM states. India rejected it in favor of equitable apportionment.",
+        "ஹார்மன் கோட்பாடு மேல் மாநிலத்திற்கு முழு உரிமை கோரியது. இந்தியா அதை நிராகரித்து சமநீதிப் பகிர்வை ஏற்றுக்கொண்டது.",
+        "The Supreme Court rejected the Harmon Doctrine in 2018, holding river water as a national asset.",
+        "2018-ல் உச்ச நீதிமன்றம் ஹார்மன் கோட்பாட்டை நிராகரித்து, நதிநீரை ஒரு தேசியச் சொத்தாக அறிவித்தது.",
+        tags=["Harmon Doctrine", "Cauvery 2018", "Equitable Apportionment"]
+    ))
+
+    # 024 - Ans D
+    q.append(make_r(
+        "ISR_R_024", "Hard",
+        "Assertion (A): Entry 17 of the State List (List II) confers on States an absolute, untrammeled power to divert and consume all waters of an inter-State river passing through their territory.\nReason (R): Entry 17 of the State List is expressly qualified by the words 'subject to the provisions of Entry 56 of List I' (Union List).",
+        "கூற்று (A): மாநிலப் பட்டியலின் (பட்டியல் II) பதிவு 17, மாநிலங்கள் தங்களின் எல்லைக்குள் பாயும் மாநிலங்களுக்கு இடையேயான நதிநீரைத் திருப்பிவிடவும் பயன்படுத்தவும் எல்லையற்ற முழு அதிகாரத்தை வழங்குகிறது.\nகாரணம் (R): மாநிலப் பட்டியலின் பதிவு 17 என்பது 'மத்தியப் பட்டியலின் (பட்டியல் I) பதிவு 56-ன் விதிகளுக்கு உட்பட்டது' என்ற சொற்களால் தெளிவாகக் கட்டுப்படுத்தப்பட்டுள்ளது.",
+        "D",
+        "Assertion (A) is false: States do not possess absolute power over inter-state rivers; Entry 17 is expressly subordinate to Entry 56 of List I, and waters are shared equitably. Reason (R) is true: The text of Entry 17 of List II reads: 'Water, that is to say, water supplies, irrigation and canals, drainage and embankments, water storage and water power subject to the provisions of Entry 56 of List I'.",
+        "(A) தவறு, ஆனால் (R) சரி. கூற்று (A) தவறு: மாநிலங்களுக்கு நதிநீரின் மீது எல்லையற்ற அதிகாரம் இல்லை; பதிவு 17 மத்தியப் பட்டியல் பதிவு 56-க்கு உட்பட்டது. காரணம் (R) சரி: மாநிலப் பட்டியல் பதிவு 17 என்பது 'மத்தியப் பட்டியல் பதிவு 56-ன் விதிகளுக்கு உட்பட்டது' என்று அரசியலமைப்பு வாசகங்களில் தெளிவாகக் குறிப்பிடப்பட்டுள்ளது.",
+        "Option A is incorrect because (A) is false.", "(A) தவறு என்பதால் விருப்பம் A தவறு.",
+        "Option B is incorrect because (A) is false.", "(A) தவறு என்பதால் விருப்பம் B தவறு.",
+        "Option C is incorrect because (A) is false.", "(A) தவறு என்பதால் விருப்பம் C தவறு.",
+        "Option D is correct because (A) makes an unconstitutional claim of absolute state sovereignty while (R) quotes the exact constitutional text.", "(A) தவறான எல்லையற்ற உரிமையைக் கோருவதாலும், (R) சரியான அரசியலமைப்பு வாசகத்தைக் குறிப்பிடுவதாலும் விருப்பம் D சரி.",
+        "State legislative power over water (List II Entry 17) is expressly subordinate to Union power (List I Entry 56).",
+        "நீர் மீதான மாநிலச் சட்ட அதிகாரம் (பட்டியல் II பதிவு 17) ஒன்றிய அதிகாரத்திற்கு (பட்டியல் I பதிவு 56) உட்பட்டது.",
+        "Entry 17 of List II is explicitly made subject to Entry 56 of List I regarding inter-State rivers.",
+        "மாநிலங்களுக்கு இடையிலான நதிகள் குறித்து மாநிலப் பட்டியல் பதிவு 17 மத்தியப் பட்டியல் பதிவு 56-க்கு உட்பட்டது.",
+        tags=["Entry 17 List II", "Entry 56 List I", "Constitutional Limitation"]
+    ))
+
+    # 025 - Ans A
+    q.append(make_r(
+        "ISR_R_025", "Medium",
+        "Assertion (A): Under Article 263(a), the Inter-State Council can inquire into and advise upon disputes which may have arisen between States.\nReason (R): Unlike the Supreme Court which renders legally binding judgments under Article 131, the Inter-State Council functions purely as a consultative, non-adjudicatory forum.",
+        "கூற்று (A): உறுப்பு 263(a)-ன் கீழ், மாநிலங்களுக்கு இடையே எழுந்திருக்கக்கூடிய தகராறுகள் குறித்து விசாரித்து ஆலோசனை வழங்க மாநிலங்களுக்கு இடையிலான மன்றத்திற்கு அதிகாரம் உண்டு.\nகாரணம் (R): உறுப்பு 131-ன் கீழ் உச்ச நீதிமன்றம் சட்டப்பூர்வமாகப் பிணைக்கும் தீர்ப்புகளை வழங்குவது போலன்றி, மாநிலங்களுக்கு இடையிலான மன்றம் முற்றிலும் ஆலோசனைக் குழுவாக மட்டுமே செயல்படுகிறது.",
+        "A",
+        "Both (A) and (R) are true and (R) correctly explains (A). The Constituent Assembly deliberately drafted Article 263 to create a forum for political inquiry, consensus-building, and advice, contrasting with the binding judicial adjudication entrusted to the Supreme Court under Article 131.",
+        "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும். உறுப்பு 131-ன் கீழ் உச்ச நீதிமன்றத்திற்குப் பிணைக்கும் தீர்ப்பளிக்கும் அதிகாரம் வழங்கப்பட்டுள்ள நிலையில், உறுப்பு 263-ன் கீழ் மன்றத்திற்கு ஆலோசனை மற்றும் சமரச அதிகாரமே வழங்கப்பட்டுள்ளது என்பதை (R) சரியாக விளக்குகிறது.",
+        "Option A is correct because (R) highlights the constitutional distinction between advisory Art 263 and judicial Art 131.", "ஆலோசனை உறுப்பு 263 மற்றும் நீதித்துறை உறுப்பு 131 இடையேயான அரசியலமைப்பு வேறுபாட்டை (R) விளக்குவதால் விருப்பம் A சரி.",
+        "Option B is incorrect because (R) is the direct explanation.", "(R) நேரடி விளக்கம் என்பதால் விருப்பம் B தவறு.",
+        "Option C is incorrect because (R) is true.", "(R) உண்மை என்பதால் விருப்பம் C தவறு.",
+        "Option D is incorrect because (A) is true.", "(A) உண்மை என்பதால் விருப்பம் D தவறு.",
+        "Article 263 = Advisory inquiry; Article 131 = Binding judicial adjudication. Distinct constitutional spheres.",
+        "உறுப்பு 263 = ஆலோசனைக் குழு; உறுப்பு 131 = பிணைக்கும் நீதிமன்றத் தீர்ப்பு. இரண்டும் தனித்துவமான துறைகள்.",
+        "Inter-State Council acts as an advisory forum under Article 263, distinct from Article 131 adjudication.",
+        "மாநிலங்களுக்கு இடையிலான மன்றம் உறுப்பு 263-ன் கீழ் உறுப்பு 131-லிருந்து வேறுபட்ட ஆலோசனைக் குழுவாகச் செயல்படுகிறது.",
+        tags=["Article 263(a)", "Article 131", "Advisory vs Judicial"]
+    ))
+
+    return q
+
+if __name__ == "__main__":
+    qs = get_reasoning_questions()
+    print(f"[REASONING] Total questions: {len(qs)}")
+    assert len(qs) == 25
+    keys = Counter(q["correct_answer"] for q in qs)
+    print(f"[REASONING] Key Distribution: {dict(keys)}")
+
+    # Check collisions
+    existing_stems = set()
+    for cat in ["easy", "medium", "hard", "statement_based", "pyq"]:
+        fp = f"data/questions/polity/inter_state_relations_{cat}.json"
+        if os.path.exists(fp):
+            with open(fp, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            for item in data:
+                existing_stems.add(item["question_en"].strip().lower())
+
+    for q_item in qs:
+        s_en = q_item["question_en"].strip().lower()
+        if s_en in existing_stems:
+            raise ValueError(f"Duplicate stem detected: {q_item['id']}")
+
+    print("[REASONING] 0 collisions with existing files!")
+
+    out_file = Path("data/questions/polity/inter_state_relations_reasoning.json")
+    with open(out_file, "w", encoding="utf-8") as f:
+        json.dump(qs, f, indent=2, ensure_ascii=False)
+
+    rep = ContentValidator.validate_file(str(out_file), expected_count=25, expected_prefix="ISR_R_")
+    print(rep.summary())
+    assert rep.is_valid, "Validation failed!"
+    print("[REASONING] Validation PASSED!")

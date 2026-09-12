@@ -45,6 +45,39 @@ def load_questions(
     if repo_basename.startswith(f"{subject}_"):
         repo_basename = repo_basename[len(subject) + 1:]
 
+    repo_basenames = [repo_basename]
+    alias_map = {
+        "finance_commission": ["finance_commission", "fc"],
+        "fc": ["fc", "finance_commission"],
+        "attorney_general": ["attorney_general", "ag"],
+        "ag": ["ag", "attorney_general"],
+        "advocate_general": ["advocate_general", "advg"],
+        "advg": ["advg", "advocate_general"],
+        "cag": ["cag", "comptroller_and_auditor_general"],
+        "election_commission": ["election_commission", "ec"],
+        "ec": ["ec", "election_commission"],
+        "panchayati_raj": ["panchayati_raj", "pr"],
+        "pr": ["pr", "panchayati_raj"],
+        "municipalities": ["municipalities", "mun"],
+        "mun": ["mun", "municipalities"],
+        "electoral_reforms": ["electoral_reforms", "er"],
+        "er": ["er", "electoral_reforms"],
+        "inter_state_relations": ["inter_state_relations", "isr"],
+        "isr": ["isr", "inter_state_relations"],
+        "constitutional_amendments": ["constitutional_amendments", "amendments", "ca"],
+        "amendments": ["constitutional_amendments", "amendments", "ca"],
+        "constitutional_schedules": ["constitutional_schedules", "schedules", "sch"],
+        "schedules": ["constitutional_schedules", "schedules", "sch"],
+        "upsc_state_psc": ["upsc_state_psc", "upsc", "upsc_psc"],
+        "upsc": ["upsc", "upsc_state_psc", "upsc_psc"],
+        "constitutional_statutory_bodies": ["constitutional_statutory_bodies", "csb"],
+        "csb": ["csb", "constitutional_statutory_bodies"],
+    }
+    if repo_basename in alias_map:
+        for alias in alias_map[repo_basename]:
+            if alias not in repo_basenames:
+                repo_basenames.append(alias)
+
     type_candidates = [repo_type]
     if repo_type in ["statement", "statement_based"]:
         type_candidates = ["statement_based", "statement"]
@@ -55,13 +88,12 @@ def load_questions(
     elif repo_type in ["pyq", "pyq_practice"]:
         type_candidates = ["pyq", "pyq_practice"]
 
-
-
     file_paths = []
     for cand in type_candidates:
-        file_paths.append(f"data/questions/{subject}/{repo_basename}_{cand}.json")
+        for r_base in repo_basenames:
+            file_paths.append(f"data/questions/{subject}/{r_base}_{cand}.json")
+            file_paths.append(f"data/questions/{subject}/{subject}_{r_base}_{cand}.json")
         file_paths.append(f"data/questions/{subject}/{repo_id}_{cand}.json")
-
 
     for file_path in file_paths:
         if os.path.exists(file_path):
@@ -69,8 +101,9 @@ def load_questions(
                 with open(file_path, encoding="utf-8") as f:
                     return json.load(f)
             except Exception as e:
-                print(f"❌ Error loading question file {file_path}: {e}")
+                print(f"[ERROR] Error loading question file {file_path}: {e}")
                 return []
 
-    print(f"❌ Missing question repository file for repo_id='{repo_id}', type='{repo_type}'")
+    print(f"[MISSING] Missing question repository file for repo_id='{repo_id}', type='{repo_type}'")
     return []
+

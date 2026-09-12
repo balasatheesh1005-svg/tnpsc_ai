@@ -1,0 +1,667 @@
+# -*- coding: utf-8 -*-
+"""
+Builder for Electoral Reforms Reasoning / Assertion-Reason 25 MCQs (ER_R_001 to ER_R_025).
+Strictly adheres to the 24-field TNPSC Nova AI schema.
+"""
+
+import json
+import os
+from er_mcq_helper import make_er_q
+from rebalance_er_helper import balance_question_keys
+from tools.nova_content_engine.validator import ContentValidator
+
+OUTPUT_PATH = os.path.join("data", "questions", "polity", "electoral_reforms_reasoning.json")
+ALIAS_PATH = os.path.join("data", "questions", "polity", "electoral_reforms_assertion_reason.json")
+
+OPT_A_EN = "Both (A) and (R) are true, and (R) is the correct explanation of (A)"
+OPT_A_TA = "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
+
+OPT_B_EN = "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)"
+OPT_B_TA = "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல"
+
+OPT_C_EN = "(A) is true, but (R) is false"
+OPT_C_TA = "(A) சரி, ஆனால் (R) தவறு"
+
+OPT_D_EN = "(A) is false, but (R) is true"
+OPT_D_TA = "(A) தவறு, ஆனால் (R) சரி"
+
+def get_reasoning_questions():
+    qs = []
+
+    # ER_R_001
+    qs.append(make_er_q(
+        qid="ER_R_001", diff="Hard", qtype="Assertion-Reason", subtopic="Electoral Bonds Unconstitutionality",
+        en_stem="Given below are two statements, one labelled as Assertion (A) and the other as Reason (R):\nAssertion (A): The Supreme Court of India declared the Electoral Bonds Scheme unconstitutional in February 2024.\nReason (R): Anonymous political contributions violate the fundamental right of voters to know about the financing of political parties under Article 19(1)(a).",
+        ta_stem="கீழே கொடுக்கப்பட்டுள்ள இரண்டு கூற்றுகளில் ஒன்று கூற்று (A) என்றும் மற்றொன்று காரணம் (R) என்றும் குறிக்கப்பட்டுள்ளன:\nகூற்று (A): 2024 பிப்ரவரியில் தேர்தல் பத்திரங்கள் திட்டத்தை இந்திய உச்ச நீதிமன்றம் அரசியலமைப்புக்கு முரணானது என அறிவித்தது.\nகாரணம் (R): பெயரற்ற அரசியல் நன்கொடைகள் அரசியல் கட்சிகளின் நிதி ஆதாரங்களை அறியும் வாக்காளர்களின் சரத்து 19(1)(a)-ன் கீழான அடிப்படை உரிமையை மீறுகின்றன.",
+        en_a=OPT_A_EN, ta_a=OPT_A_TA, en_b=OPT_B_EN, ta_b=OPT_B_TA, en_c=OPT_C_EN, ta_c=OPT_C_TA, en_d=OPT_D_EN, ta_d=OPT_D_TA,
+        correct_key="A",
+        exp_en="Both (A) and (R) are true, and (R) correctly explains (A). In ADR v. Union of India (2024), the 5-judge Constitution Bench held that the voter's Right to Information under Article 19(1)(a) is essential for exercising an informed franchise, and anonymous corporate donations subvert this right.",
+        exp_ta="(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும். 2024 ADR தீர்ப்பில், வாக்காளர்களின் சரத்து 19(1)(a)-ன் கீழான தகவல் அறியும் உரிமை ஜனநாயகத்தின் அடித்தளம் என்றும், பெயரற்ற தேர்தல் பத்திரங்கள் அதை மீறுகின்றன என்றும் உச்ச நீதிமன்றம் கூறியது.",
+        why_a_en="Correct. Reason directly provides the legal grounding of the Assertion.",
+        why_a_ta="சரியானது. காரணம் கூற்றின் சட்ட அடிப்படையை துல்லியமாக விளக்குகிறது.",
+        why_b_en="Incorrect. (R) is indeed the direct explanation.",
+        why_b_ta="தவறானது. (R) நேரடி விளக்கமாகும்.",
+        why_c_en="Incorrect. Both statements are true.",
+        why_c_ta="தவறானது. இரண்டும் சரியான கூற்றுகள்.",
+        why_d_en="Incorrect. (A) is true.",
+        why_d_ta="தவறானது. (A) சரியானது.",
+        tip_en="Article 19(1)(a) includes the voter's right to know candidate and party funding details.",
+        tip_ta="சரத்து 19(1)(a) வேட்பாளர் மற்றும் கட்சியின் நிதி விவரங்களை அறியும் உரிமையையும் உள்ளடக்கியது.",
+        fact_en="The Supreme Court delivered a unanimous 5-0 verdict striking down the scheme on 15 February 2024.",
+        fact_ta="2024 பிப்ரவரி 15 அன்று 5-0 என்ற ஒருமனதான தீர்ப்பை உச்ச நீதிமன்றம் வழங்கியது.",
+        tags=["Electoral Bonds", "Assertion Reason", "Article 19(1)(a)"]
+    ))
+
+    # ER_R_002
+    qs.append(make_er_q(
+        qid="ER_R_002", diff="Medium", qtype="Assertion-Reason", subtopic="Lily Thomas Section 8(4)",
+        en_stem="Given below are two statements, one labelled as Assertion (A) and the other as Reason (R):\nAssertion (A): Convicted legislators sentenced to two or more years of imprisonment are immediately disqualified upon conviction.\nReason (R): The Supreme Court in Lily Thomas (2013) struck down Section 8(4) of RPA 1951 which had granted a 3-month protection window to sitting MPs and MLAs.",
+        ta_stem="கீழே கொடுக்கப்பட்டுள்ள இரண்டு கூற்றுகளில் ஒன்று கூற்று (A) என்றும் மற்றொன்று காரணம் (R) என்றும் குறிக்கப்பட்டுள்ளன:\nகூற்று (A): இரண்டு அல்லது அதற்கு மேற்பட்ட ஆண்டுகள் சிறைத் தண்டனை விதிக்கப்படும் மக்கள் பிரதிநிதிகள் தண்டனை விதிக்கப்பட்ட உடனேயே தகுதிநீக்கம் செய்யப்படுகின்றனர்.\nகாரணம் (R): லில்லி தாமஸ் (2013) வழக்கில், பதவியில் உள்ள எம்.பி., எம்.எல்.ஏ-க்களுக்கு 3 மாத கால பாதுகாப்பு அளித்த மக்கள் பிரதிநிதித்துவச் சட்டம் பிரிவு 8(4)-ஐ உச்ச நீதிமன்றம் ரத்து செய்தது.",
+        en_a=OPT_A_EN, ta_a=OPT_A_TA, en_b=OPT_B_EN, ta_b=OPT_B_TA, en_c=OPT_C_EN, ta_c=OPT_C_TA, en_d=OPT_D_EN, ta_d=OPT_D_TA,
+        correct_key="A",
+        exp_en="Both (A) and (R) are true, and (R) correctly explains (A). The immediate disqualification of convicted lawmakers happens precisely because Section 8(4), which had previously delayed disqualification by 3 months pending appeal, was struck down as unconstitutional in Lily Thomas.",
+        exp_ta="(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும். மேல்முறையீடு முடியும் வரை 3 மாத அவகாசம் அளித்த பிரிவு 8(4) ரத்து செய்யப்பட்டதன் காரணமாகவே தற்போது தண்டனை விதிக்கப்பட்ட உடனேயே தகுதிநீக்கம் அமலாகிறது.",
+        why_a_en="Correct. The striking down of Section 8(4) is the direct legal cause of immediate disqualification.",
+        why_a_ta="சரியானது. பிரிவு 8(4) ரத்து செய்யப்பட்டதே உடனடி தகுதிநீக்கத்திற்கு நேரடி காரணமாகும்.",
+        why_b_en="Incorrect. (R) directly explains (A).",
+        why_b_ta="தவறானது. (R) நேரடி விளக்கமாகும்.",
+        why_c_en="Incorrect. Both statements are true.",
+        why_c_ta="தவறானது. இரண்டும் சரி.",
+        why_d_en="Incorrect. (A) is true.",
+        why_d_ta="தவறானது. (A) சரி.",
+        tip_en="Disqualification takes effect the moment the trial court sentences the member to 2+ years.",
+        tip_ta="நீதிமன்றம் 2 ஆண்டுகள் சிறைத் தண்டனை விதித்த தருணத்திலேயே தகுதிநீக்கம் அமலுக்கு வருகிறது.",
+        fact_en="Section 8(4) had protected convicted legislators since the original enactment in 1951 until 2013.",
+        fact_ta="1951 முதல் 2013 வரை பிரிவு 8(4) மக்கள் பிரதிநிதிகளுக்கு பாதுகாப்பு அளித்து வந்தது.",
+        tags=["Lily Thomas", "Immediate Disqualification", "Section 8(4)"]
+    ))
+
+    # ER_R_003
+    qs.append(make_er_q(
+        qid="ER_R_003", diff="Hard", qtype="Assertion-Reason", subtopic="Right to Vote Legal Nature",
+        en_stem="Given below are two statements, one labelled as Assertion (A) and the other as Reason (R):\nAssertion (A): Prisoners in lawful police or judicial custody cannot challenge their disenfranchisement under Section 62(5) of RPA 1951 as a violation of a Fundamental Right.\nReason (R): The Right to Vote in India is a Statutory Right created and regulated by law, and not a Fundamental Right guaranteed under Part III of the Constitution.",
+        ta_stem="கீழே கொடுக்கப்பட்டுள்ள இரண்டு கூற்றுகளில் ஒன்று கூற்று (A) என்றும் மற்றொன்று காரணம் (R) என்றும் குறிக்கப்பட்டுள்ளன:\nகூற்று (A): சிறையிலுள்ள கைதிகள் தங்களது வாக்குரிமை மறுக்கப்படுவதை சரத்து 32-ன் கீழ் அடிப்படை உரிமை மீறல் என்று கூறி உச்ச நீதிமன்றத்தில் சவால் செய்ய முடியாது.\nகாரணம் (R): இந்தியாவில் வாக்களிக்கும் உரிமை என்பது சட்டத்தால் உருவாக்கப்பட்ட சட்டப்பூர்வ உரிமையே (Statutory Right) தவிர, அரசியலமைப்பின் பகுதி III-ன் கீழான அடிப்படை உரிமை அல்ல.",
+        en_a=OPT_A_EN, ta_a=OPT_A_TA, en_b=OPT_B_EN, ta_b=OPT_B_TA, en_c=OPT_C_EN, ta_c=OPT_C_TA, en_d=OPT_D_EN, ta_d=OPT_D_TA,
+        correct_key="A",
+        exp_en="Both (A) and (R) are true, and (R) is the correct explanation of (A). In Anukul Chandra Pradhan (1997), the Supreme Court upheld the constitutional validity of Section 62(5) barring prisoners from voting precisely on the ground that the Right to Vote is a statutory right subject to statutory limitations imposed by Parliament.",
+        exp_ta="(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும். அனுகுல் சந்திர பிரதான் (1997) வழக்கில், வாக்களிக்கும் உரிமை என்பது ஒரு சட்டப்பூர்வ உரிமை மட்டுமே என்பதால் கைதிகளுக்கு வாக்குரிமை மறுக்கும் பிரிவு 62(5) அரசியலமைப்பு ரீதியாக செல்லும் என தீர்ப்பளிக்கப்பட்டது.",
+        why_a_en="Correct. Because the right to vote is merely statutory, Parliament can legitimately exclude prisoners.",
+        why_a_ta="சரியானது. வாக்குரிமை சட்டப்பூர்வ உரிமை என்பதால் கைதிகளை விலக்கி வைக்கும் நாடாளுமன்ற அதிகாரம் செல்லும்.",
+        why_b_en="Incorrect. (R) directly explains (A).",
+        why_b_ta="தவறானது. (R) நேரடி விளக்கம்.",
+        why_c_en="Incorrect. Both statements are true.",
+        why_c_ta="தவறானது. இரண்டும் சரி.",
+        why_d_en="Incorrect. (A) is true.",
+        why_d_ta="தவறானது. (A) சரி.",
+        tip_en="In contrast, the right of voters to KNOW candidate antecedents IS a Fundamental Right under Art 19(1)(a).",
+        tip_ta="இதற்கு மாறாக, வேட்பாளரைப் பற்றி அறியும் உரிமை சரத்து 19(1)(a)-ன் கீழான அடிப்படை உரிமையாகும்.",
+        fact_en="Persons under preventive detention can vote by postal ballot under the proviso to Section 62(5).",
+        fact_ta="பிரிவு 62(5) வரம்புரையின் கீழ் தடுப்புக் காவலில் உள்ளவர்கள் தபால் வாக்கு போடலாம்.",
+        tags=["Right to Vote", "Statutory Right", "Prisoners Disenfranchisement", "Section 62(5)"]
+    ))
+
+    # ER_R_004
+    qs.append(make_er_q(
+        qid="ER_R_004", diff="Medium", qtype="Assertion-Reason", subtopic="Model Code of Conduct Nature",
+        en_stem="Given below are two statements, one labelled as Assertion (A) and the other as Reason (R):\nAssertion (A): The Election Commission has repeatedly advised against enacting the Model Code of Conduct into a statutory law.\nReason (R): Legal proceedings under an Act of Parliament would be subject to protracted judicial appeals, undermining the rapid enforcement needed during the brief election period.",
+        ta_stem="கீழே கொடுக்கப்பட்டுள்ள இரண்டு கூற்றுகளில் ஒன்று கூற்று (A) என்றும் மற்றொன்று காரணம் (R) என்றும் குறிக்கப்பட்டுள்ளன:\nகூற்று (A): மாதிரி தேர்தல் நடத்தை விதிகளை நாடாளுமன்றச் சட்டமாக மாற்றுவதற்கு எதிராக தேர்தல் ஆணையம் தொடர்ந்து கருத்து தெரிவித்து வருகிறது.\nகாரணம் (R): சட்டப்பூர்வ நடவடிக்கைகளுக்கு நீதிமன்றங்களில் மேல்முறையீடுகள் நீண்ட காலம் நீடிக்கும் என்பதால், குறுகிய தேர்தல் காலத்தில் தேவைப்படும் உடனடி விரைவான நடவடிக்கை பாதிக்கப்படும்.",
+        en_a=OPT_A_EN, ta_a=OPT_A_TA, en_b=OPT_B_EN, ta_b=OPT_B_TA, en_c=OPT_C_EN, ta_c=OPT_C_TA, en_d=OPT_D_EN, ta_d=OPT_D_TA,
+        correct_key="A",
+        exp_en="Both (A) and (R) are true, and (R) correctly explains (A). ECI prefers the non-statutory MCC because its inherent powers under Article 324 allow it to act swiftly within hours (issuing show-cause notices, banning leaders for 48 hours, transferring officers), whereas statutory criminal trials would take years.",
+        exp_ta="(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும். நீதிமன்ற வழக்குகள் பல ஆண்டுகள் நீடிக்கும் என்பதால், குறுகிய தேர்தல் காலத்தில் சரத்து 324-ன் கீழ் சில மணி நேரங்களிலேயே நடவடிக்கை எடுக்க MCC சட்டப்பூர்வமற்றதாக இருப்பதே சிறந்தது என ECI கருதுகிறது.",
+        why_a_en="Correct. Reason explains why ECI opposes statutory backing for MCC.",
+        why_a_ta="சரியானது. ECI ஏன் MCC-க்கு சட்ட அந்தஸ்தை எதிர்க்கிறது என்பதை காரணம் சரியாக விளக்குகிறது.",
+        why_b_en="Incorrect. (R) is the exact explanation.",
+        why_b_ta="தவறானது. (R) துல்லியமான விளக்கம்.",
+        why_c_en="Incorrect. Both statements are true.",
+        why_c_ta="தவறானது. இரண்டும் சரி.",
+        why_d_en="Incorrect. (A) is true.",
+        why_d_ta="தவறானது. (A) சரி.",
+        tip_en="Standing Committee on Law and Justice (2013) had recommended statutory status, but ECI rejected it.",
+        tip_ta="நாடாளுமன்ற நிலைக்குழு சட்ட அந்தஸ்தை பரிந்துரைத்த போதிலும் ECI அதை நிராகரித்தது.",
+        fact_en="MCC was first created as a voluntary code by political parties themselves in Kerala in 1960.",
+        fact_ta="1960-ல் கேரளாவில் கட்சிகளால் தாமாக முன்வந்து ஏற்றுக்கொள்ளப்பட்டதே MCC ஆகும்.",
+        tags=["MCC Non-Statutory", "Speedy Enforcement", "Article 324"]
+    ))
+
+    # ER_R_005
+    qs.append(make_er_q(
+        qid="ER_R_005", diff="Hard", qtype="Assertion-Reason", subtopic="Rajya Sabha Open Ballot",
+        en_stem="Given below are two statements, one labelled as Assertion (A) and the other as Reason (R):\nAssertion (A): The Supreme Court in Kuldip Nayar (2006) upheld the validity of the open ballot system in Rajya Sabha elections.\nReason (R): Cross-voting and corruption in the Council of States elections threatened the integrity of democratic representation and justified transparency.",
+        ta_stem="கீழே கொடுக்கப்பட்டுள்ள இரண்டு கூற்றுகளில் ஒன்று கூற்று (A) என்றும் மற்றொன்று காரணம் (R) என்றும் குறிக்கப்பட்டுள்ளன:\nகூற்று (A): குல்தீப் நய்யார் (2006) வழக்கில், மாநிலங்களவைத் தேர்தல்களில் திறந்த வாக்குச்சீட்டு முறையின் செல்லுபடியை உச்ச நீதிமன்றம் உறுதி செய்தது.\nகாரணம் (R): மாநிலங்களவைத் தேர்தலில் நிலவிய கட்சித் துரோகம் மற்றும் ஊழல் ஆகியவை ஜனநாயக பிரதிநிதித்துவத்தின் மாண்பை அச்சுறுத்தியதால் வெளிப்படைத்தன்மை நியாயப்படுத்தப்பட்டது.",
+        en_a=OPT_A_EN, ta_a=OPT_A_TA, en_b=OPT_B_EN, ta_b=OPT_B_TA, en_c=OPT_C_EN, ta_c=OPT_C_TA, en_d=OPT_D_EN, ta_d=OPT_D_TA,
+        correct_key="A",
+        exp_en="Both (A) and (R) are true, and (R) correctly explains (A). The Supreme Court held that the open ballot in Rajya Sabha was a valid statutory measure enacted by Parliament in 2003 to stamp out the rampant corruption and horse-trading that previously plagued secret ballot Rajya Sabha elections.",
+        exp_ta="(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும். மாநிலங்களவை தேர்தல்களில் பணபலம் மற்றும் குதிரை பேரத்தைத் தடுப்பதற்காகவே 2003-ல் திறந்த வாக்குச்சீட்டு கொண்டுவரப்பட்டதால் அது செல்லும் என உச்ச நீதிமன்றம் தீர்ப்பளித்தது.",
+        why_a_en="Correct. Reason explains why Parliament introduced open ballot and why the court upheld it.",
+        why_a_ta="சரியானது. திறந்த வாக்குச்சீட்டு முறை ஏன் உறுதி செய்யப்பட்டது என்பதை காரணம் சரியாக விளக்குகிறது.",
+        why_b_en="Incorrect. (R) explains (A).",
+        why_b_ta="தவறானது. (R) நேரடி விளக்கம்.",
+        why_c_en="Incorrect. Both statements are true.",
+        why_c_ta="தவறானது. இரண்டும் சரி.",
+        why_d_en="Incorrect. (A) is true.",
+        why_d_ta="தவறானது. (A) சரி.",
+        tip_en="In Shailesh Parmar (2018), NOTA was held inapplicable to Rajya Sabha open ballot elections.",
+        tip_ta="2018 சைலேஷ் பார்மர் வழக்கில், மாநிலங்களவை திறந்த வாக்குச்சீட்டு தேர்தலில் NOTA செல்லாது எனப்பட்டது.",
+        fact_en="The 2003 amendment also removed the requirement for a Rajya Sabha candidate to reside in the contesting state.",
+        fact_ta="2003 சட்டத்திருத்தம் மாநிலங்களவை வேட்பாளர் அதே மாநிலத்தில் வசிக்க வேண்டும் என்ற விதியையும் நீக்கியது.",
+        tags=["Kuldip Nayar 2006", "Open Ballot", "Rajya Sabha Integrity"]
+    ))
+
+    # ER_R_006
+    qs.append(make_er_q(
+        qid="ER_R_006", diff="Hard", qtype="Assertion-Reason", subtopic="Delimitation Bar on Court Interference",
+        en_stem="Given below are two statements, one labelled as Assertion (A) and the other as Reason (R):\nAssertion (A): No court in India can entertain an election petition challenging the redrawn boundaries of a parliamentary constituency determined by the Delimitation Commission.\nReason (R): Article 329(a) of the Constitution expressly bars the interference by courts in electoral matters concerning the validity of any law relating to the delimitation of constituencies.",
+        ta_stem="கீழே கொடுக்கப்பட்டுள்ள இரண்டு கூற்றுகளில் ஒன்று கூற்று (A) என்றும் மற்றொன்று காரணம் (R) என்றும் குறிக்கப்பட்டுள்ளன:\nகூற்று (A): தொகுதி மறுவரையறை ஆணையத்தால் மாற்றி அமைக்கப்பட்ட நாடாளுமன்றத் தொகுதி எல்லைகளை எதிர்த்து இந்தியாவின் எந்த நீதிமன்றத்திலும் வழக்குத் தொடர முடியாது.\nகாரணம் (R): இந்திய அரசியலமைப்பின் சரத்து 329(a), தொகுதி மறுவரையறை தொடர்பான எந்தவொரு சட்டத்தின் செல்லுபடியிலும் நீதிமன்றங்கள் தலையிடுவதை வெளிப்படையாகத் தடை செய்கிறது.",
+        en_a=OPT_A_EN, ta_a=OPT_A_TA, en_b=OPT_B_EN, ta_b=OPT_B_TA, en_c=OPT_C_EN, ta_c=OPT_C_TA, en_d=OPT_D_EN, ta_d=OPT_D_TA,
+        correct_key="A",
+        exp_en="Both (A) and (R) are true, and (R) correctly explains (A). Under Article 329(a), once the Delimitation Commission's orders are published in the Gazette, they acquire the force of law and cannot be questioned in any court, as affirmed in Meghraj Kothari (1967).",
+        exp_ta="(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும். சரத்து 329(a) மறுவரையறை விவகாரங்களில் நீதிமன்ற தலையீட்டை முழுமையாக தடை செய்துள்ளதால், மேக்ராஜ் கோத்தாரி தீர்ப்பின்படி அரசிதழில் வெளியான பின் இதை எதிர்த்து வழக்கு தொடர முடியாது.",
+        why_a_en="Correct. Article 329(a) provides the constitutional justification for the bar on judicial challenge.",
+        why_a_ta="சரியானது. சரத்து 329(a) நீதிமன்ற தலையீட்டிற்கு முழுமையான தடையை விதிக்கிறது.",
+        why_b_en="Incorrect. (R) is the constitutional basis of (A).",
+        why_b_ta="தவறானது. (R) அரசியலமைப்பு அடிப்படையாகும்.",
+        why_c_en="Incorrect. Both statements are true.",
+        why_c_ta="தவறானது. இரண்டும் சரி.",
+        why_d_en="Incorrect. (A) is true.",
+        why_d_ta="தவறானது. (A) சரி.",
+        tip_en="Article 329(b) deals with challenging the election of a returned candidate via an Election Petition.",
+        tip_ta="சரத்து 329(b) தேர்தல் மனு மூலம் வெற்றி பெற்ற வேட்பாளரின் தேர்தலை எதிர்ப்பது பற்றியது.",
+        fact_en="Meghraj Kothari v. Delimitation Commission (1967) is the leading constitutional precedent on Article 329(a).",
+        fact_ta="1967 மேக்ராஜ் கோத்தாரி வழக்கு சரத்து 329(a) மீதான முதன்மையான அரசியலமைப்பு முன்மாதிரியாகும்.",
+        tags=["Article 329(a)", "Delimitation Orders", "Judicial Bar", "Meghraj Kothari"]
+    ))
+
+    # ER_R_007
+    qs.append(make_er_q(
+        qid="ER_R_007", diff="Medium", qtype="Assertion-Reason", subtopic="State Funding in Kind Rationale",
+        en_stem="Given below are two statements, one labelled as Assertion (A) and the other as Reason (R):\nAssertion (A): The Indrajit Gupta Committee (1998) recommended that state funding of elections should be provided strictly in kind and not in cash.\nReason (R): Cash subsidies given to political parties run a high risk of diversion, embezzlement, and proliferation of non-serious political parties.",
+        ta_stem="கீழே கொடுக்கப்பட்டுள்ள இரண்டு கூற்றுகளில் ஒன்று கூற்று (A) என்றும் மற்றொன்று காரணம் (R) என்றும் குறிக்கப்பட்டுள்ளன:\nகூற்று (A): தேர்தல்களுக்கான அரசு நிதியுதவி ரொக்கமாக இல்லாமல் கண்டிப்பாக பொருளுதவி வடிவில் மட்டுமே வழங்கப்பட வேண்டும் என்று இந்திரஜித் குப்தா குழு (1998) பரிந்துரைத்தது.\nகாரணம் (R): கட்சிகளுக்கு ரொக்கமாக நிதி வழங்கினால் அது தவறாகப் பயன்படுத்தப்படுவதற்கும், போலி கட்சிகள் பெருகுவதற்கும் அதிக வாய்ப்புள்ளது.",
+        en_a=OPT_A_EN, ta_a=OPT_A_TA, en_b=OPT_B_EN, ta_b=OPT_B_TA, en_c=OPT_C_EN, ta_c=OPT_C_TA, en_d=OPT_D_EN, ta_d=OPT_D_TA,
+        correct_key="A",
+        exp_en="Both (A) and (R) are true, and (R) correctly explains (A). The Indrajit Gupta Committee restricted its proposed state support to non-cash benefits (free airtime, fuel, premises, paper) specifically to prevent the corruption and bogus party proliferation that direct cash grants would unleash.",
+        exp_ta="(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும். ரொக்கப் பணம் தவறாக திசைதிருப்பப்படுவதையும் போலி கட்சிகள் உருவாவதையும் தடுக்கவே பொருளுதவி வடிவில் மட்டுமே வழங்கப்பட வேண்டும் என இந்திரஜித் குப்தா குழு திட்டவட்டமாக கூறியது.",
+        why_a_en="Correct. Reason directly gives the rationale behind the in-kind recommendation.",
+        why_a_ta="சரியானது. பொருளுதவி பரிந்துரைக்கான காரணத்தை (R) துல்லியமாக விளக்குகிறது.",
+        why_b_en="Incorrect. (R) is the exact rationale.",
+        why_b_ta="தவறானது. (R) துல்லியமான காரணம்.",
+        why_c_en="Incorrect. Both statements are true.",
+        why_c_ta="தவறானது. இரண்டும் சரி.",
+        why_d_en="Incorrect. (A) is true.",
+        why_d_ta="தவறானது. (A) சரி.",
+        tip_en="In kind aid includes: free Doordarshan/AIR time, electoral rolls, petrol vouchers, and microphones.",
+        tip_ta="பொருளுதவி: தூர்தர்ஷன் நேரம், வாக்காளர் பட்டியல், எரிபொருள் கூப்பன்கள் மற்றும் ஒலிபெருக்கி வசதிகள்.",
+        fact_en="The committee also recommended that state aid should be restricted exclusively to recognized political parties.",
+        fact_ta="அங்கீகரிக்கப்பட்ட கட்சிகளுக்கு மட்டுமே இவ்வுதவி வழங்கப்பட வேண்டும் எனவும் இக்குழு கூறியது.",
+        tags=["State Funding", "Indrajit Gupta 1998", "Funding in Kind"]
+    ))
+
+    # ER_R_008
+    qs.append(make_er_q(
+        qid="ER_R_008", diff="Hard", qtype="Assertion-Reason", subtopic="Section 33(7) Rationale",
+        en_stem="Given below are two statements, one labelled as Assertion (A) and the other as Reason (R):\nAssertion (A): The Election Commission has recommended amending Section 33(7) of RPA 1951 to restrict a candidate to contesting from only ONE constituency.\nReason (R): Under Section 70, a candidate winning from two seats must resign from one seat within 10 days, causing an avoidable by-election and burdening the state exchequer.",
+        ta_stem="கீழே கொடுக்கப்பட்டுள்ள இரண்டு கூற்றுகளில் ஒன்று கூற்று (A) என்றும் மற்றொன்று காரணம் (R) என்றும் குறிக்கப்பட்டுள்ளன:\nகூற்று (A): மக்கள் பிரதிநிதித்துவச் சட்டம் பிரிவு 33(7)-ஐத் திருத்தி ஒரு வேட்பாளர் ஒரே ஒரு தொகுதியில் மட்டுமே போட்டியிட அனுமதிக்க வேண்டும் என்று தேர்தல் ஆணையம் பரிந்துரைத்துள்ளது.\nகாரணம் (R): பிரிவு 70-ன் கீழ், இரு தொகுதிகளில் வெற்றி பெறும் வேட்பாளர் 10 நாட்களுக்குள் ஒரு தொகுதியை ராஜினாமா செய்ய வேண்டும்; இது தவிர்க்கக்கூடிய இடைத்தேர்தலை ஏற்படுத்தி அரசுக்கு நிதி இழப்பை உண்டாக்குகிறது.",
+        en_a=OPT_A_EN, ta_a=OPT_A_TA, en_b=OPT_B_EN, ta_b=OPT_B_TA, en_c=OPT_C_EN, ta_c=OPT_C_TA, en_d=OPT_D_EN, ta_d=OPT_D_TA,
+        correct_key="A",
+        exp_en="Both (A) and (R) are true, and (R) correctly explains (A). Section 70 mandates resignation from one seat, which causes an inevitable, costly by-election. This specific wastage of administrative resources is why ECI and the Law Commission proposed 'one candidate, one constituency'.",
+        exp_ta="(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும். இரு இடங்களில் வென்றால் பிரிவு 70-ன் படி ஒரு இடத்தை துறக்க வேண்டும் என்பதும், அதனால் ஏற்படும் தேவையற்ற இடைத்தேர்தல் செலவுமே தேர்தல் ஆணையத்தின் 'ஒரு வேட்பாளர், ஒரு தொகுதி' பரிந்துரைக்கு முதன்மைக் காரணமாகும்.",
+        why_a_en="Correct. Reason gives the exact justification for ECI's proposed amendment to Section 33(7).",
+        why_a_ta="சரியானது. தேர்தல் ஆணையத்தின் பரிந்துரைக்கான காரணத்தை (R) துல்லியமாக விளக்குகிறது.",
+        why_b_en="Incorrect. (R) directly explains (A).",
+        why_b_ta="தவறானது. (R) நேரடி விளக்கம்.",
+        why_c_en="Incorrect. Both statements are true.",
+        why_c_ta="தவறானது. இரண்டும் சரி.",
+        why_d_en="Incorrect. (A) is true.",
+        why_d_ta="தவறானது. (A) சரி.",
+        tip_en="In Ashwini Upadhyay (2023), the Supreme Court left the amendment of Section 33(7) to the wisdom of Parliament.",
+        tip_ta="2023 அஸ்வினி உபாத்யாய் வழக்கில் உச்ச நீதிமன்றம் இத்திருத்தத்தை நாடாளுமன்றத்தின் பரிசீலனைக்கு விட்டது.",
+        fact_en="Alternatively, ECI proposed that candidates vacating a seat should bear the entire cost of the by-election (₹5L for Assembly, ₹10L for Lok Sabha).",
+        fact_ta="மாற்றாக, இடத்தை ராஜினாமா செய்யும் வேட்பாளரே இடைத்தேர்தல் செலவை ஏற்க வேண்டும் எனவும் ECI பரிந்துரைத்தது.",
+        tags=["Section 33(7)", "Section 70", "By-Election Burden", "ECI Proposal"]
+    ))
+
+    # ER_R_009
+    qs.append(make_er_q(
+        qid="ER_R_009", diff="Hard", qtype="Assertion-Reason", subtopic="Tenth Schedule 91st Amendment Split Deletion",
+        en_stem="Given below are two statements, one labelled as Assertion (A) and the other as Reason (R):\nAssertion (A): The 91st Constitutional Amendment Act, 2003 deleted Paragraph 3 of the Tenth Schedule, eliminating the one-third (1/3rd) split exemption.\nReason (R): The 1/3rd split provision had been widely misused by opportunistic politicians to engineer mass defections under the guise of intra-party splits.",
+        ta_stem="கீழே கொடுக்கப்பட்டுள்ள இரண்டு கூற்றுகளில் ஒன்று கூற்று (A) என்றும் மற்றொன்று காரணம் (R) என்றும் குறிக்கப்பட்டுள்ளன:\nகூற்று (A): 91-வது அரசியலமைப்புச் சட்டத்திருத்தம் 2003, பத்தாவது அட்டவணையின் பத்தி 3-ஐ நீக்கி, மூன்றில் ஒரு பங்கு (1/3) பிளவுக்கான விலக்கை ஒழித்தது.\nகாரணம் (R): உள்கட்சி பிளவு என்ற போர்வையில் கூకుக் கட்சித் தாவல்களை மேற்கொள்வதற்காக சந்தர்ப்பவாத அரசியல்வாதிகளால் இந்த 1/3 பிளவு விதி பரவலாக துஷ்பிரயோகம் செய்யப்பட்டது.",
+        en_a=OPT_A_EN, ta_a=OPT_A_TA, en_b=OPT_B_EN, ta_b=OPT_B_TA, en_c=OPT_C_EN, ta_c=OPT_C_TA, en_d=OPT_D_EN, ta_d=OPT_D_TA,
+        correct_key="A",
+        exp_en="Both (A) and (R) are true, and (R) correctly explains (A). Paragraph 3 of the 10th Schedule allowed defection if one-third of the legislature party broke away. Because this legitimized bulk defections and destabilized elected governments, Parliament deleted it in 2003 via the 91st Amendment.",
+        exp_ta="(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும். மூன்றில் ஒரு பங்கு உறுப்பினர்கள் கூட்டாக கட்சித் தாவினால் தகுதிநீக்கத்திலிருந்து தப்பிக்க முடியும் என்ற விதி ஆட்சிகளை கவிழ்க்க தவறாகப் பயன்படுத்தப்பட்டதால், 91-வது திருத்தத்தின் மூலம் நாடாளுமன்றம் அதை நீக்கியது.",
+        why_a_en="Correct. Reason explains why Parliament omitted Paragraph 3 in 2003.",
+        why_a_ta="சரியானது. நாடாளுமன்றம் ஏன் பத்தி 3-ஐ நீக்கியது என்பதை காரணம் சரியாக விளக்குகிறது.",
+        why_b_en="Incorrect. (R) is the exact rationale.",
+        why_b_ta="தவறானது. (R) துல்லியமான காரணம்.",
+        why_c_en="Incorrect. Both statements are true.",
+        why_c_ta="தவறானது. இரண்டும் சரி.",
+        why_d_en="Incorrect. (A) is true.",
+        why_d_ta="தவறானது. (A) சரி.",
+        tip_en="Merger under Paragraph 4 (requiring at least two-thirds members) is still valid.",
+        tip_ta="பத்தி 4-ன் கீழான 2/3 உறுப்பினர்கள் இணையும் சேர்க்கை இன்றும் செல்லுபடியாகும்.",
+        fact_en="The 91st Amendment also limited the size of the Council of Ministers to 15% of the House strength.",
+        fact_ta="91-வது திருத்தம் அமைச்சரவை அளவையும் 15% ஆகக் கட்டுப்படுத்தியது.",
+        tags=["91st Amendment", "Tenth Schedule", "Paragraph 3 Omitted", "Split Exemption"]
+    ))
+
+    # ER_R_010
+    qs.append(make_er_q(
+        qid="ER_R_010", diff="Hard", qtype="Assertion-Reason", subtopic="Speaker Judicial Review Kihoto Hollohan",
+        en_stem="Given below are two statements, one labelled as Assertion (A) and the other as Reason (R):\nAssertion (A): Decisions of the Speaker under the Tenth Schedule disqualifying a member are open to judicial review by the High Courts and Supreme Court.\nReason (R): When deciding disqualification petitions under the Tenth Schedule, the Speaker acts as a statutory tribunal exercising judicial power.",
+        ta_stem="கீழே கொடுக்கப்பட்டுள்ள இரண்டு கூற்றுகளில் ஒன்று கூற்று (A) என்றும் மற்றொன்று காரணம் (R) என்றும் குறிக்கப்பட்டுள்ளன:\nகூற்று (A): பத்தாவது அட்டவணையின் கீழ் உறுப்பினரை தகுதிநீக்கம் செய்யும் சபாநாயகரின் முடிவுகள் உயர் நீதிமன்றங்கள் மற்றும் உச்ச நீதிமன்றத்தின் நீதிப் புனராய்வுக்கு உட்பட்டவை.\nகாரணம் (R): பத்தாவது அட்டவணையின் கீழான தகுதிநீக்க மனுக்கள் மீது முடிவெடுக்கும் போது சபாநாயகர் நீதித்துறை அதிகாரத்தைப் பயன்படுத்தும் ஒரு தீர்ப்பாயமாகச் (Tribunal) செயல்படுகிறார்.",
+        en_a=OPT_A_EN, ta_a=OPT_A_TA, en_b=OPT_B_EN, ta_b=OPT_B_TA, en_c=OPT_C_EN, ta_c=OPT_C_TA, en_d=OPT_D_EN, ta_d=OPT_D_TA,
+        correct_key="A",
+        exp_en="Both (A) and (R) are true, and (R) correctly explains (A). In Kihoto Hollohan (1992), the Constitution Bench held that while functioning under the Tenth Schedule, the Speaker acts as a tribunal determining rights and liabilities, making their decisions amenable to judicial review under Articles 226, 227, and 136.",
+        exp_ta="(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும். கிகோட்டோ ஹோல்லோஹான் (1992) வழக்கில், பத்தாவது அட்டவணையின் கீழ் முடிவெடுக்கும் போது சபாநாயகர் ஒரு நீதிமன்றம் போன்ற தீர்ப்பாயமாக செயல்படுவதால் அவரது உத்தரவு நீதிப் புனராய்வுக்கு உட்பட்டது எனத் தீர்ப்பளிக்கப்பட்டது.",
+        why_a_en="Correct. The tribunal status of the Speaker is the legal foundation for judicial review.",
+        why_a_ta="சரியானது. சபாநாயகர் ஒரு தீர்ப்பாயமாகச் செயல்படுவதே நீதிப் புனராய்வுக்கு அடிப்படை காரணமாகும்.",
+        why_b_en="Incorrect. (R) explains (A).",
+        why_b_ta="தவறானது. (R) நேரடி விளக்கம்.",
+        why_c_en="Incorrect. Both statements are true.",
+        why_c_ta="தவறானது. இரண்டும் சரி.",
+        why_d_en="Incorrect. (A) is true.",
+        why_d_ta="தவறானது. (A) சரி.",
+        tip_en="However, courts will not intervene at an interlocutory stage before the Speaker renders a final order.",
+        tip_ta="எனினும் சபாநாயகர் இறுதி முடிவெடுக்கும் முன் இடைக்கால நிலையில் நீதிமன்றங்கள் தலையிடாது.",
+        fact_en="Paragraph 7 of the Tenth Schedule, which had barred court jurisdiction, was struck down as unconstitutional.",
+        fact_ta="நீதிமன்ற தலையீட்டைத் தடுத்த பத்தி 7 அரசியலமைப்புக்கு எதிரானது என ரத்து செய்யப்பட்டது.",
+        tags=["Kihoto Hollohan 1992", "Speaker as Tribunal", "Judicial Review"]
+    ))
+
+    # ER_R_011 to ER_R_025
+    # ER_R_011
+    qs.append(make_er_q(
+        qid="ER_R_011", diff="Medium", qtype="Assertion-Reason", subtopic="Resurgence India Blank Columns",
+        en_stem="Given below are two statements, one labelled as Assertion (A) and the other as Reason (R):\nAssertion (A): A Returning Officer can reject the nomination paper of a candidate who leaves columns blank in the Form 26 affidavit despite being reminded.\nReason (R): Leaving blank columns violates the citizen's fundamental Right to Know candidate antecedents under Article 19(1)(a).",
+        ta_stem="கீழே கொடுக்கப்பட்டுள்ள இரண்டு கூற்றுகளில் ஒன்று கூற்று (A) என்றும் மற்றொன்று காரணம் (R) என்றும் குறிக்கப்பட்டுள்ளன:\nகூற்று (A): நினைவூட்டப்பட்ட பின்னரும் படிவம் 26 உறுதிமொழிப் பத்திரத்தில் உள்ள பத்திகளை நிரப்பாமல் காலியாக விடும் வேட்பாளரின் வேட்புமனுவை தேர்தல் நடத்தும் அலுவலர் நிராகரிக்கலாம்.\nகாரணம் (R): பத்திகளை காலியாக விடுவது சரத்து 19(1)(a)-ன் கீழான வேட்பாளரைப் பற்றி அறியும் குடிமக்களின் அடிப்படை உரிமையை மீறுவதாகும்.",
+        en_a=OPT_A_EN, ta_a=OPT_A_TA, en_b=OPT_B_EN, ta_b=OPT_B_TA, en_c=OPT_C_EN, ta_c=OPT_C_TA, en_d=OPT_D_EN, ta_d=OPT_D_TA,
+        correct_key="A",
+        exp_en="Both (A) and (R) are true, and (R) correctly explains (A). In Resurgence India v. ECI (2013), the Supreme Court ruled that leaving blanks in Form 26 defeats the voter's Right to Know under Article 19(1)(a), rendering the nomination invalid.",
+        exp_ta="(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும். ரீசர்ஜன்ஸ் இந்தியா (2013) வழக்கில், பத்திகளை காலியாக விடுவது வாக்காளரின் அறியும் உரிமையைப் பறிப்பதால் வேட்புமனு நிராகரிக்கப்பட வேண்டும் என தீர்ப்பளிக்கப்பட்டது.",
+        why_a_en="Correct. Reason gives the constitutional foundation of the nomination rejection rule.",
+        why_a_ta="சரியானது. மனு நிராகரிப்பிற்கான அரசியலமைப்பு காரணத்தை (R) துல்லியமாக விளக்குகிறது.",
+        why_b_en="Incorrect. (R) directly explains (A).",
+        why_b_ta="தவறானது. (R) நேரடி விளக்கம்.",
+        why_c_en="Incorrect. Both statements are true.",
+        why_c_ta="தவறானது. இரண்டும் சரி.",
+        why_d_en="Incorrect. (A) is true.",
+        why_d_ta="தவறானது. (A) சரி.",
+        tip_en="Candidates must explicitly write 'Nil' or 'Not Applicable' instead of leaving blanks.",
+        tip_ta="காலியாக விடாமல் 'எதுவுமில்லை' அல்லது 'பொருந்தாது' என வேட்பாளர் கட்டாயம் எழுத வேண்டும்.",
+        fact_en="This judgment eliminated candidate evasion of criminal disclosures by simply omitting answers.",
+        fact_ta="பதிலளிக்காமல் தவிர்ப்பதன் மூலம் குற்றப்பின்னணியை மறைக்கும் உத்திக்கு இத்தீர்ப்பு முற்றுப்புள்ளி வைத்தது.",
+        tags=["Resurgence India 2013", "Form 26", "Right to Know", "Nomination Rejection"]
+    ))
+
+    # ER_R_012
+    qs.append(make_er_q(
+        qid="ER_R_012", diff="Medium", qtype="Assertion-Reason", subtopic="Section 10A Disqualification",
+        en_stem="Given below are two statements, one labelled as Assertion (A) and the other as Reason (R):\nAssertion (A): Filing a false or fabricated account of election expenses can lead to disqualification under Section 10A of RPA 1951.\nReason (R): Section 10A requires the candidate to lodge an account of expenses 'in the manner required by or under this Act'.",
+        ta_stem="கீழே கொடுக்கப்பட்டுள்ள இரண்டு கூற்றுகளில் ஒன்று கூற்று (A) என்றும் மற்றொன்று காரணம் (R) என்றும் குறிக்கப்பட்டுள்ளன:\nகூற்று (A): தவறான அல்லது போலியான தேர்தல் செலவுக் கணக்குகளை தாக்கல் செய்வது மக்கள் பிரதிநிதித்துவச் சட்டம் பிரிவு 10A-ன் கீழ் தகுதிநீக்கத்திற்கு வழிவகுக்கும்.\nகாரணம் (R): பிரிவு 10A இச்சட்டத்தின் கீழ் 'தேவைப்படும் முறையின்படி' செலவுக் கணக்கை தாக்கல் செய்வதை வேட்பாளருக்கு கட்டாயமாக்குகிறது.",
+        en_a=OPT_A_EN, ta_a=OPT_A_TA, en_b=OPT_B_EN, ta_b=OPT_B_TA, en_c=OPT_C_EN, ta_c=OPT_C_TA, en_d=OPT_D_EN, ta_d=OPT_D_TA,
+        correct_key="A",
+        exp_en="Both (A) and (R) are true, and (R) correctly explains (A). In Umlesh Yadav (2011) and Ashok Shankarrao Chavan (2014), the courts affirmed that lodging an untrue or manipulated account (e.g. concealing paid news) is not lodging an account 'in the manner required', attracting 3-year disqualification under Section 10A.",
+        exp_ta="(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும். அசோக் சவான் மற்றும் உம்லேஷ் யாதவ் வழக்குகளில், பொய்யான கணக்கை சமர்ப்பிப்பது சட்டப்படி முறையான கணக்காகாது என்பதால் பிரிவு 10A-ன் கீழ் 3 ஆண்டு தகுதிநீக்கம் செல்லும் என உறுதி செய்யப்பட்டது.",
+        why_a_en="Correct. Statutory wording 'in the manner required' encompasses accuracy and truthfulness.",
+        why_a_ta="சரியானது. 'தேவைப்படும் முறையின்படி' என்பது உண்மையான கணக்கையே குறிக்கும் என்பதால் தகுதிநீக்கம் செல்லும்.",
+        why_b_en="Incorrect. (R) explains (A).",
+        why_b_ta="தவறானது. (R) நேரடி விளக்கம்.",
+        why_c_en="Incorrect. Both statements are true.",
+        why_c_ta="தவறானது. இரண்டும் சரி.",
+        why_d_en="Incorrect. (A) is true.",
+        why_d_ta="தவறானது. (A) சரி.",
+        tip_en="Filing an account on paper that suppresses paid news expenditure triggers Section 10A.",
+        tip_ta="ஊதியச் செய்தி செலவை மறைத்து கணக்கு காட்டுவது பிரிவு 10A-ஐ மீறுவதாகும்.",
+        fact_en="Section 10A was added by an amendment in 1966.",
+        fact_ta="1966 சட்டத்திருத்தத்தின் மூலம் பிரிவு 10A இணைக்கப்பட்டது.",
+        tags=["Section 10A", "Expense Account Truthfulness", "Umlesh Yadav"]
+    ))
+
+    # ER_R_013
+    qs.append(make_er_q(
+        qid="ER_R_013", diff="Hard", qtype="Assertion-Reason", subtopic="Section 126A Exit Poll Restriction",
+        en_stem="Given below are two statements, one labelled as Assertion (A) and the other as Reason (R):\nAssertion (A): Publication of exit poll results in media is prohibited from the start of the first phase of voting until the close of the final phase.\nReason (R): Dissemination of exit polls after early phases can unduly influence the choices of voters in constituencies voting in later phases.",
+        ta_stem="கீழே கொடுக்கப்பட்டுள்ள இரண்டு கூற்றுகளில் ஒன்று கூற்று (A) என்றும் மற்றொன்று காரணம் (R) என்றும் குறிக்கப்பட்டுள்ளன:\nகூற்று (A): முதற்கட்ட வாக்குப்பதிவு தொடங்குவது முதல் இறுதிக்கட்டம் முடியும் வரை ஊடகங்களில் வாக்குக்கணிப்பு முடிவுகளை வெளியிடுவது தடை செய்யப்பட்டுள்ளது.\nகாரணம் (R): முந்தைய கட்டங்களின் முடிவுகள் வெளியாவது பிந்தைய கட்டங்களில் வாக்களிக்கவிருக்கும் வாக்காளர்களின் சுதந்திரமான முடிவை ஒருதலைப்பட்சமாக பாதிக்கக்கூடும்.",
+        en_a=OPT_A_EN, ta_a=OPT_A_TA, en_b=OPT_B_EN, ta_b=OPT_B_TA, en_c=OPT_C_EN, ta_c=OPT_C_TA, en_d=OPT_D_EN, ta_d=OPT_D_TA,
+        correct_key="A",
+        exp_en="Both (A) and (R) are true, and (R) correctly explains (A). The objective of Section 126A of RPA 1951 is to prevent the bandwagon effect and cognitive distortion where early exit poll projections influence voters in subsequent phases.",
+        exp_ta="(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும். ஆரம்பகட்ட வாக்குக்கணிப்பு முடிவுகள் வெளியாகி, அடுத்தடுத்த கட்டங்களில் வாக்களிக்கும் மக்களின் மனநிலையை பாதிக்கக் கூடாது (Bandwagon effect) என்பதற்காகவே பிரிவு 126A தடை விதிக்கிறது.",
+        why_a_en="Correct. Reason gives the exact legislative intent behind the multi-phase exit poll ban.",
+        why_a_ta="சரியானது. பல கட்ட தேர்தல் வாக்குக்கணிப்பு தடைக்கான காரணத்தை (R) துல்லியமாக விளக்குகிறது.",
+        why_b_en="Incorrect. (R) explains (A).",
+        why_b_ta="தவறானது. (R) நேரடி விளக்கம்.",
+        why_c_en="Incorrect. Both statements are true.",
+        why_c_ta="தவறானது. இரண்டும் சரி.",
+        why_d_en="Incorrect. (A) is true.",
+        why_d_ta="தவறானது. (A) சரி.",
+        tip_en="Section 126A ban expires 30 minutes after the conclusion of polling in the final phase.",
+        tip_ta="இறுதிக்கட்ட வாக்குப்பதிவு முடிந்து 30 நிமிடங்களுக்குப் பிறகு இத்தடை தானாக நீங்கிவிடும்.",
+        fact_en="Section 126A was enacted by Parliament in 2009.",
+        fact_ta="2009-ல் நாடாளுமன்றத்தால் பிரிவு 126A இயற்றப்பட்டது.",
+        tags=["Section 126A", "Exit Poll Ban", "Bandwagon Effect"]
+    ))
+
+    # ER_R_014
+    qs.append(make_er_q(
+        qid="ER_R_014", diff="Hard", qtype="Assertion-Reason", subtopic="Section 123(3) Secularism Rationale",
+        en_stem="Given below are two statements, one labelled as Assertion (A) and the other as Reason (R):\nAssertion (A): In Abhiram Singh (2017), the Supreme Court interpreted 'his religion' in Section 123(3) broadly to include the religion of voters.\nReason (R): Free and fair elections in a secular republic require that the democratic electoral process remains completely separated from religious, communal, or caste divisions.",
+        ta_stem="கீழே கொடுக்கப்பட்டுள்ள இரண்டு கூற்றுகளில் ஒன்று கூற்று (A) என்றும் மற்றொன்று காரணம் (R) என்றும் குறிக்கப்பட்டுள்ளன:\nகூற்று (A): அபிராம் சிங் (2017) வழக்கில், பிரிவு 123(3)-ல் உள்ள 'அவரது மதம்' என்பது வாக்காளர்களின் மதத்தையும் உள்ளடக்கும் என உச்ச நீதிமன்றம் பரந்த விளக்கம் அளித்தது.\nகாரணம் (R): மதச்சார்பற்ற ஜனநாயகக் குடியரசில் சுதந்திரமான தேர்தல்கள் நடைபெற தேர்தல் களம் மத, ஜாதி மற்றும் வகுப்புவாத பிரிவினைகளிலிருந்து முழுமையாக விலகி இருக்க வேண்டும்.",
+        en_a=OPT_A_EN, ta_a=OPT_A_TA, en_b=OPT_B_EN, ta_b=OPT_B_TA, en_c=OPT_C_EN, ta_c=OPT_C_TA, en_d=OPT_D_EN, ta_d=OPT_D_TA,
+        correct_key="A",
+        exp_en="Both (A) and (R) are true, and (R) correctly explains (A). The 7-judge Constitution Bench in Abhiram Singh held that secularism is a basic feature of the Constitution and Section 123(3) must be interpreted purposively to bar identity-based appeals to voters.",
+        exp_ta="(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும். மதச்சார்பின்மை அரசியலமைப்பின் அடிப்படை கட்டமைப்பு என்பதால், வாக்காளர்களின் மத அடையாளத்தைப் பயன்படுத்தி வாக்கு சேகரிப்பதைத் தடுக்க பிரிவு 123(3)-க்கு பரந்த விளக்கம் அளிக்கப்பட்டது.",
+        why_a_en="Correct. Secularism as a basic feature is the underlying foundation of the majority verdict in Abhiram Singh.",
+        why_a_ta="சரியானது. மதச்சார்பின்மையை நிலைநிறுத்தவே பெரும்பான்மை அமர்வு இத்தீர்ப்பை வழங்கியது.",
+        why_b_en="Incorrect. (R) explains (A).",
+        why_b_ta="தவறானது. (R) நேரடி விளக்கம்.",
+        why_c_en="Incorrect. Both statements are true.",
+        why_c_ta="தவறானது. இரண்டும் சரி.",
+        why_d_en="Incorrect. (A) is true.",
+        why_d_ta="தவறானது. (A) சரி.",
+        tip_en="The verdict was delivered by a 4:3 majority on 2 January 2017.",
+        tip_ta="2017 ஜனவரி 2 அன்று 4:3 என்ற பெரும்பான்மை அடிப்படையில் இத்தீர்ப்பு வழங்கப்பட்டது.",
+        fact_en="Section 123(3) covers religion, race, caste, community, and language.",
+        fact_ta="பிரிவு 123(3) மதம், இனம், ஜாதி, சமூகம் மற்றும் மொழி ஆகியவற்றை உள்ளடக்கியது.",
+        tags=["Abhiram Singh 2017", "Secularism", "Section 123(3)"]
+    ))
+
+    # ER_R_015
+    qs.append(make_er_q(
+        qid="ER_R_015", diff="Hard", qtype="Assertion-Reason", subtopic="Delimitation 84th Amendment Rationale",
+        en_stem="Given below are two statements, one labelled as Assertion (A) and the other as Reason (R):\nAssertion (A): The 84th Constitutional Amendment Act, 2001 froze the total allocation of Lok Sabha seats to the States up to the year 2026 based on the 1971 census.\nReason (R): Reallocating parliamentary seats strictly based on the 2001 population would have penalized states that successfully implemented family planning and population stabilization programs.",
+        ta_stem="கீழே கொடுக்கப்பட்டுள்ள இரண்டு கூற்றுகளில் ஒன்று கூற்று (A) என்றும் மற்றொன்று காரணம் (R) என்றும் குறிக்கப்பட்டுள்ளன:\nகூற்று (A): 84-வது அரசியலமைப்புச் சட்டத்திருத்தம் 2001, மாநிலங்களுக்கான மொத்த மக்களவை இடங்களின் ஒதுக்கீட்டை 1971 கணக்கெடுப்பின்படி 2026 வரை முடக்கியது.\nகாரணம் (R): 2001 மக்கள் தொகை அடிப்படையில் இடங்களை மறுஒதுக்கீடு செய்திருந்தால், குடும்பக் கட்டுப்பாடு திட்டங்களை சிறப்பாகச் செயல்படுத்திய மாநிலங்கள் இடங்களை இழந்து தண்டிக்கப்பட்டிருக்கும்.",
+        en_a=OPT_A_EN, ta_a=OPT_A_TA, en_b=OPT_B_EN, ta_b=OPT_B_TA, en_c=OPT_C_EN, ta_c=OPT_C_TA, en_d=OPT_D_EN, ta_d=OPT_D_TA,
+        correct_key="A",
+        exp_en="Both (A) and (R) are true, and (R) correctly explains (A). The legislative intent of the 84th Amendment was to provide a level-playing field and avoid penalizing progressive southern and western states that curtailed fertility rates in line with national demographic goals.",
+        exp_ta="(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும். குடும்பக் கட்டுப்பாட்டை அமல்படுத்திய மாநிலங்களின் பிரதிநிதித்துவம் குறையாமல் பாதுகாப்பதே 84-வது திருத்தத்தின் முதன்மை நோக்கமாகும்.",
+        why_a_en="Correct. Reason gives the explicit policy justification behind freezing seats till 2026.",
+        why_a_ta="சரியானது. 2026 வரை முடக்கியதற்கான உண்மையான கொள்கைக் காரணத்தை (R) துல்லியமாக விளக்குகிறது.",
+        why_b_en="Incorrect. (R) directly explains (A).",
+        why_b_ta="தவறானது. (R) நேரடி விளக்கம்.",
+        why_c_en="Incorrect. Both statements are true.",
+        why_c_ta="தவறானது. இரண்டும் சரி.",
+        why_d_en="Incorrect. (A) is true.",
+        why_d_ta="தவறானது. (A) சரி.",
+        tip_en="Total seats = 1971 census; Boundaries within state = 2001 census (87th Amendment).",
+        tip_ta="மொத்த இடங்கள் = 1971 கணக்கெடுப்பு; மாநில எல்லைகள் = 2001 கணக்கெடுப்பு (87-வது திருத்தம்).",
+        fact_en="42nd Amendment in 1976 had earlier frozen seat allocation till the year 2000.",
+        fact_ta="1976-ன் 42-வது திருத்தம் 2000 ஆம் ஆண்டு வரை முதலில் முடக்கியிருந்தது.",
+        tags=["Delimitation", "84th Amendment", "Family Planning", "1971 Census"]
+    ))
+
+    # ER_R_016
+    qs.append(make_er_q(
+        qid="ER_R_016", diff="Medium", qtype="Assertion-Reason", subtopic="Section 61A EVM Statutory Backing",
+        en_stem="Given below are two statements, one labelled as Assertion (A) and the other as Reason (R):\nAssertion (A): The Supreme Court in A.C. Jose v. Sivan Pillai (1984) declared the use of EVMs in the 1982 Paravur by-election to be invalid.\nReason (R): At the time of the 1982 by-election, the Representation of the People Act, 1951 contained no statutory provision permitting the use of voting machines instead of ballot papers.",
+        ta_stem="கீழே கொடுக்கப்பட்டுள்ள இரண்டு கூற்றுகளில் ஒன்று கூற்று (A) என்றும் மற்றொன்று காரணம் (R) என்றும் குறிக்கப்பட்டுள்ளன:\nகூற்று (A): 1982 பறவூர் இடைத்தேர்தலில் EVM பயன்படுத்தப்பட்டதை ஏ.சி. ஜோஸ் எதிர் சிவன் பிள்ளை (1984) வழக்கில் உச்ச நீதிமன்றம் செல்லாது என அறிவித்தது.\nகாரணம் (R): 1982 இடைத்தேர்தல் நடைபெற்ற போது, காகித வாக்குச்சீட்டுகளுக்குப் பதிலாக வாக்குப்பதிவு இயந்திரங்களைப் பயன்படுத்த மக்கள் பிரதிநிதித்துவச் சட்டம் 1951-ல் எவ்வித சட்ட அங்கீகாரமும் இல்லை.",
+        en_a=OPT_A_EN, ta_a=OPT_A_TA, en_b=OPT_B_EN, ta_b=OPT_B_TA, en_c=OPT_C_EN, ta_c=OPT_C_TA, en_d=OPT_D_EN, ta_d=OPT_D_TA,
+        correct_key="A",
+        exp_en="Both (A) and (R) are true, and (R) correctly explains (A). In A.C. Jose (1984), the Supreme Court ruled that Article 324 cannot override the explicit statutory requirements of RPA 1951 which contemplated only paper ballot papers. To cure this defect, Parliament inserted Section 61A in 1989.",
+        exp_ta="(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும். சட்டம் காகித வாக்குச்சீட்டை மட்டுமே அங்கீகரித்திருந்த போது ECI தன்னிச்சையாக EVM-ஐப் பயன்படுத்த முடியாது என உச்ச நீதிமன்றம் தீர்ப்பளித்தது; இதனாலேயே 1989-ல் பிரிவு 61A சேர்க்கப்பட்டது.",
+        why_a_en="Correct. Reason gives the precise legal basis on which the 1984 court struck down the election.",
+        why_a_ta="சரியானது. 1984 தீர்ப்பின் சட்ட அடிப்படையை காரணம் துல்லியமாக விளக்குகிறது.",
+        why_b_en="Incorrect. (R) explains (A).",
+        why_b_ta="தவறானது. (R) நேரடி விளக்கம்.",
+        why_c_en="Incorrect. Both statements are true.",
+        why_c_ta="தவறானது. இரண்டும் சரி.",
+        why_d_en="Incorrect. (A) is true.",
+        why_d_ta="தவறானது. (A) சரி.",
+        tip_en="Section 61A took effect from 15 March 1989, giving EVMs statutory legitimacy.",
+        tip_ta="1989 மார்ச் 15 முதல் பிரிவு 61A நடைமுறைக்கு வந்து EVM-க்கு சட்ட அங்கீகாரம் அளித்தது.",
+        fact_en="The constitutional validity of Section 61A was affirmed by the Madras High Court in 2001.",
+        fact_ta="2001-ல் சென்னை உயர் நீதிமன்றம் பிரிவு 61A-ன் அரசியலமைப்பு செல்லுபடியை உறுதி செய்தது.",
+        tags=["AC Jose 1984", "Section 61A", "EVM Statutory Basis"]
+    ))
+
+    # ER_R_017
+    qs.append(make_er_q(
+        qid="ER_R_017", diff="Medium", qtype="Assertion-Reason", subtopic="Section 128 Secrecy of Ballot",
+        en_stem="Given below are two statements, one labelled as Assertion (A) and the other as Reason (R):\nAssertion (A): Violation of secrecy of voting by any polling officer or agent is an offence punishable with imprisonment under Section 128 of RPA 1951.\nReason (R): Secrecy of the ballot is vital to ensure that electors can vote freely without fear of intimidation, retribution, or coercion.",
+        ta_stem="கீழே கொடுக்கப்பட்டுள்ள இரண்டு கூற்றுகளில் ஒன்று கூற்று (A) என்றும் மற்றொன்று காரணம் (R) என்றும் குறிக்கப்பட்டுள்ளன:\nகூற்று (A): வாக்குச்சாவடி அலுவலர் அல்லது முகவரால் வாக்களிப்பின் ரகசியத்தன்மை மீறப்படுவது மக்கள் பிரதிநிதித்துவச் சட்டம் பிரிவு 128-ன் கீழ் சிறைத்தண்டனைக்குரிய குற்றமாகும்.\nகாரணம் (R): அச்சுறுத்தல், பழிவாங்கல் அல்லது வற்புறுத்தலின்றி வாக்காளர்கள் சுதந்திரமாக வாக்களிப்பதை உறுதி செய்ய வாக்களிப்பின் ரகசியத்தன்மை இன்றியமையாததாகும்.",
+        en_a=OPT_A_EN, ta_a=OPT_A_TA, en_b=OPT_B_EN, ta_b=OPT_B_TA, en_c=OPT_C_EN, ta_c=OPT_C_TA, en_d=OPT_D_EN, ta_d=OPT_D_TA,
+        correct_key="A",
+        exp_en="Both (A) and (R) are true, and (R) correctly explains (A). Section 128 punishes breach of secrecy with up to 3 months prison specifically to protect voters from being coerced or targeted based on how they cast their vote.",
+        exp_ta="(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும். வாக்காளர்கள் யாருக்கு வாக்களித்தார்கள் என்பதை அறிந்து அவர்களை அச்சுறுத்துவதைத் தடுத்து சுதந்திரமான வாக்கை உறுதி செய்யவே பிரிவு 128 ரகசியத்தன்மையை கட்டாயமாக்குகிறது.",
+        why_a_en="Correct. Reason gives the democratic rationale for penalizing breaches of ballot secrecy.",
+        why_a_ta="சரியானது. ரகசியத்தன்மையை மீறுபவர்களை தண்டிப்பதற்கான ஜனநாயகக் காரணத்தை (R) விளக்குகிறது.",
+        why_b_en="Incorrect. (R) explains (A).",
+        why_b_ta="தவறானது. (R) நேரடி விளக்கம்.",
+        why_c_en="Incorrect. Both statements are true.",
+        why_c_ta="தவறானது. இரண்டும் சரி.",
+        why_d_en="Incorrect. (A) is true.",
+        why_d_ta="தவறானது. (A) சரி.",
+        tip_en="Section 128 imposes imprisonment up to 3 months or fine or both.",
+        tip_ta="பிரிவு 128 மூன்று மாதங்கள் வரை சிறை அல்லது அபராதம் விதிக்கிறது.",
+        fact_en="Supreme Court in PUCL (2013) held secrecy of voting is an integral part of free and fair elections.",
+        fact_ta="2013 PUCL வழக்கில் வாக்களிப்பின் ரகசியம் சுதந்திரமான தேர்தலின் பிரிக்க முடியாத பகுதி எனப்பட்டது.",
+        tags=["Section 128", "Secrecy of Ballot", "Penal Safeguard"]
+    ))
+
+    # ER_R_018
+    qs.append(make_er_q(
+        qid="ER_R_018", diff="Hard", qtype="Assertion-Reason", subtopic="Section 100(1)(c) Improper Rejection",
+        en_stem="Given below are two statements, one labelled as Assertion (A) and the other as Reason (R):\nAssertion (A): When a nomination paper of a candidate is improperly rejected by the Returning Officer, the High Court will declare the entire election void without requiring proof that the result was materially affected.\nReason (R): Improper rejection of a valid candidate eliminates them from the race entirely, making it impossible to ascertain how the electorate would have voted had that candidate been on the ballot.",
+        ta_stem="கீழே கொடுக்கப்பட்டுள்ள இரண்டு கூற்றுகளில் ஒன்று கூற்று (A) என்றும் மற்றொன்று காரணம் (R) என்றும் குறிக்கப்பட்டுள்ளன:\nகூற்று (A): தேர்தல் நடத்தும் அலுவலரால் ஒரு வேட்பாளரின் வேட்புமனு தவறாக நிராகரிக்கப்பட்டால், தேர்தல் முடிவு கணிசமாக பாதிக்கப்பட்டது என்பதை நிரூபிக்காமலேயே உயர் நீதிமன்றம் முழு தேர்தலையும் செல்லாது என அறிவிக்கும்.\nகாரணம் (R): ஒரு தகுதியான வேட்பாளர் தவறாக நிராகரிக்கப்படும் போது அவர் தேர்தல் களத்திலிருந்தே முழுமையாக நீக்கப்படுவதால், அவர் போட்டியிட்டிருந்தால் மக்கள் எவ்வாறு வாக்களித்திருப்பார்கள் என்பதைக் கணிப்பது இயலாத ஒன்றாகும்.",
+        en_a=OPT_A_EN, ta_a=OPT_A_TA, en_b=OPT_B_EN, ta_b=OPT_B_TA, en_c=OPT_C_EN, ta_c=OPT_C_TA, en_d=OPT_D_EN, ta_d=OPT_D_TA,
+        correct_key="A",
+        exp_en="Both (A) and (R) are true, and (R) correctly explains (A). Under Section 100(1)(c) of RPA 1951, improper rejection of a nomination is fatal per se. In contrast to improper acceptance (Sec 100(1)(d)(i)), where votes can be mathematically analyzed, improper rejection creates an irrebuttable presumption that the election result was tainted.",
+        exp_ta="(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும். பிரிவு 100(1)(c)-ன் கீழ் வேட்புமனு தவறாக நிராகரிக்கப்பட்டால் அது தேர்தலை தானாக ரத்து செய்யும்; ஏனெனில் அந்த வேட்பாளர் களத்தில் இருந்திருந்தால் தேர்தல் முடிவே மாறியிருக்கக்கூடும் என்பதால் முடிவு பாதிக்கப்பட்டது என சட்டம் தானாக அனுமானிக்கிறது.",
+        why_a_en="Correct. Reason gives the precise legal philosophy why Section 100(1)(c) does not require proving material effect.",
+        why_a_ta="சரியானது. பிரிவு 100(1)(c)-க்கு முடிவு பாதிக்கப்பட்டது என்பதை ஏன் நிரூபிக்க தேவையில்லை என்பதற்கான சட்ட நியாயத்தை (R) துல்லியமாக விளக்குகிறது.",
+        why_b_en="Incorrect. (R) explains (A).",
+        why_b_ta="தவறானது. (R) நேரடி விளக்கம்.",
+        why_c_en="Incorrect. Both statements are true.",
+        why_c_ta="தவறானது. இரண்டும் சரி.",
+        why_d_en="Incorrect. (A) is true.",
+        why_d_ta="தவறானது. (A) சரி.",
+        tip_en="Improper REJECTION (100(1)(c)) = Automatically void. Improper ACCEPTANCE (100(1)(d)(i)) = Must prove material effect.",
+        tip_ta="தவறான நிராகரிப்பு = தானாக ரத்தாகும்; தவறான ஏற்பு = முடிவு பாதிக்கப்பட்டது நிரூபிக்கப்பட வேண்டும்.",
+        fact_en="This was affirmed in the landmark Supreme Court ruling in Surendra Nath Khoya v. Shivraj Singh Chouhan.",
+        fact_ta="சுரேந்திர நாத் வழக்கில் உச்ச நீதிமன்றம் இக்கோட்பாட்டை உறுதி செய்தது.",
+        tags=["Section 100(1)(c)", "Improper Rejection", "Automatic Void", "Election Petition"]
+    ))
+
+    # ER_R_019
+    qs.append(make_er_q(
+        qid="ER_R_019", diff="Hard", qtype="Assertion-Reason", subtopic="Section 182 Companies Act Cap Striking Down",
+        en_stem="Given below are two statements, one labelled as Assertion (A) and the other as Reason (R):\nAssertion (A): The Supreme Court in 2024 struck down the amendment to Section 182(1) of the Companies Act, 2013 that had removed the 7.5% profit cap on corporate donations.\nReason (R): Permitting loss-making companies to make unlimited political donations opened the floodgates for money laundering through shell companies.",
+        ta_stem="கீழே கொடுக்கப்பட்டுள்ள இரண்டு கூற்றுகளில் ஒன்று கூற்று (A) என்றும் மற்றொன்று காரணம் (R) என்றும் குறிக்கப்பட்டுள்ளன:\nகூற்று (A): நிறுவனங்களின் அரசியல் நன்கொடைகளுக்கான 7.5% நிகர லாப வரம்பை நீக்கிய கம்பெனிகள் சட்டம் பிரிவு 182(1) திருத்தத்தை 2024-ல் உச்ச நீதிமன்றம் ரத்து செய்தது.\nகாரணம் (R): நஷ்டத்தில் இயங்கும் நிறுவனங்களும் வரம்பற்ற அரசியல் நன்கொடைகளை வழங்க அனுமதிப்பது போலி நிறுவனங்கள் (Shell Companies) மூலம் கறுப்புப் பணத்தை வெளுப்பதற்கான வாசலைத் திறந்துவிட்டது.",
+        en_a=OPT_A_EN, ta_a=OPT_A_TA, en_b=OPT_B_EN, ta_b=OPT_B_TA, en_c=OPT_C_EN, ta_c=OPT_C_TA, en_d=OPT_D_EN, ta_d=OPT_D_TA,
+        correct_key="A",
+        exp_en="Both (A) and (R) are true, and (R) correctly explains (A). The Supreme Court held that treating profit-making and loss-making companies identically for unlimited donations was manifestly arbitrary under Article 14 because loss-making companies had no commercial justification for donations other than acting as conduits for illicit political funding.",
+        exp_ta="(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும். நஷ்டமடையும் நிறுவனங்கள் நன்கொடை அளிக்க அனுமதிப்பது போலி நிறுவனங்கள் மூலம் கறுப்புப் பணத்தை அரசியலில் நுழைக்க மட்டுமே பயன்படும் என்பதால், இத்திருத்தம் தன்னிச்சையானது மற்றும் சரத்து 14-க்கு எதிரானது என உச்ச நீதிமன்றம் ரத்து செய்தது.",
+        why_a_en="Correct. Reason gives the constitutional justification for striking down the amendment to Section 182.",
+        why_a_ta="சரியானது. பிரிவு 182 திருத்தம் ஏன் ரத்து செய்யப்பட்டது என்பதற்கான காரணத்தை (R) விளக்குகிறது.",
+        why_b_en="Incorrect. (R) explains (A).",
+        why_b_ta="தவறானது. (R) நேரடி விளக்கம்.",
+        why_c_en="Incorrect. Both statements are true.",
+        why_c_ta="தவறானது. இரண்டும் சரி.",
+        why_d_en="Incorrect. (A) is true.",
+        why_d_ta="தவறானது. (A) சரி.",
+        tip_en="Before the 2017 amendment, a company had to be in existence for at least 3 years and could donate at most 7.5% of its average net profits.",
+        tip_ta="2017-க்கு முன் நிறுவனம் குறைந்தது 3 ஆண்டுகள் இயங்கி இருக்க வேண்டும் மற்றும் சராசரி லாபத்தில் 7.5% மட்டுமே நன்கொடை அளிக்க முடியும்.",
+        fact_en="The court also restored the requirement for companies to disclose political donations in their Profit & Loss accounts.",
+        fact_ta="நிறுவனங்கள் தங்களது லாப-நஷ்ட கணக்கில் அரசியல் நன்கொடைகளை வெளிப்படையாகக் குறிப்பிட வேண்டும் என்ற விதியையும் நீதிமன்றம் மீட்டெடுத்தது.",
+        tags=["Companies Act Section 182", "Electoral Bonds Verdict", "Shell Companies", "Article 14"]
+    ))
+
+    # ER_R_020
+    qs.append(make_er_q(
+        qid="ER_R_020", diff="Hard", qtype="Assertion-Reason", subtopic="Section 126A Exit Poll Constitutionality",
+        en_stem="Given below are two statements, one labelled as Assertion (A) and the other as Reason (R):\nAssertion (A): The statutory ban on conducting and publishing exit polls under Section 126A of RPA 1951 is a constitutionally valid restriction.\nReason (R): Freedom of speech and press under Article 19(1)(a) is subject to reasonable restrictions under Article 19(2), and ensuring free and fair elections is a compelling public interest.",
+        ta_stem="கீழே கொடுக்கப்பட்டுள்ள இரண்டு கூற்றுகளில் ஒன்று கூற்று (A) என்றும் மற்றொன்று காரணம் (R) என்றும் குறிக்கப்பட்டுள்ளன:\nகூற்று (A): மக்கள் பிரதிநிதித்துவச் சட்டம் பிரிவு 126A-ன் கீழ் வாக்குக்கணிப்புகளை நடத்துவதற்கும் வெளியிடுவதற்கும் விதிக்கப்பட்டுள்ள சட்டப்பூர்வ தடை அரசியலமைப்பு ரீதியாக செல்லுபடியாகும் கட்டுப்பாடாகும்.\nகாரணம் (R): சரத்து 19(1)(a)-ன் கீழான பேச்சு மற்றும் பத்திரிகை சுதந்திரம் சரத்து 19(2)-ன் கீழான நியாயமான கட்டுப்பாடுகளுக்கு உட்பட்டது; மேலும் சுதந்திரமான நியாயமான தேர்தலை உறுதி செய்வது ஒரு கட்டாய பொது நலனாகும்.",
+        en_a=OPT_A_EN, ta_a=OPT_A_TA, en_b=OPT_B_EN, ta_b=OPT_B_TA, en_c=OPT_C_EN, ta_c=OPT_C_TA, en_d=OPT_D_EN, ta_d=OPT_D_TA,
+        correct_key="A",
+        exp_en="Both (A) and (R) are true, and (R) correctly explains (A). The restriction on exit polls during the polling period is a reasonable, proportionate restriction under Article 19(2) designed to prevent voter manipulation and preserve the level playing field of elections, which is part of the basic structure.",
+        exp_ta="(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும். சுதந்திரமான மற்றும் நியாயமான தேர்தல் என்பது அரசியலமைப்பின் அடிப்படை கட்டமைப்பு என்பதால், தேர்தல் காலத்தில் வாக்குக்கணிப்புக்கு தடை விதிப்பது சரத்து 19(2)-ன் கீழான நியாயமான கட்டுப்பாடாகும்.",
+        why_a_en="Correct. Article 19(2) provides the constitutional justification for the statutory restriction in Section 126A.",
+        why_a_ta="சரியானது. சரத்து 19(2) பிரிவு 126A-ன் கீழான சட்டப்பூர்வ கட்டுப்பாட்டிற்கு அரசியலமைப்பு அங்கீகாரம் அளிக்கிறது.",
+        why_b_en="Incorrect. (R) explains (A).",
+        why_b_ta="தவறானது. (R) நேரடி விளக்கம்.",
+        why_c_en="Incorrect. Both statements are true.",
+        why_c_ta="தவறானது. இரண்டும் சரி.",
+        why_d_en="Incorrect. (A) is true.",
+        why_d_ta="தவறானது. (A) சரி.",
+        tip_en="In 1999, the Supreme Court struck down ECI guidelines banning exit polls only because ECI lacked statutory backing at that time; Section 126A cured that lack of power in 2009.",
+        tip_ta="1999-ல் ECI-க்கு சட்ட அதிகாரம் இல்லாததால் வழிகாட்டுதல் ரத்தானது; 2009-ல் நாடாளுமன்றம் பிரிவு 126A-ஐ இயற்றி சட்ட அங்கீகாரம் அளித்தது.",
+        fact_en="Section 126A applies to print media, electronic media, radio, and digital internet platforms.",
+        fact_ta="அச்சு, தொலைக்காட்சி, வானொலி மற்றும் இணையம் என அனைத்திற்கும் பிரிவு 126A பொருந்தும்.",
+        tags=["Section 126A", "Exit Poll Validity", "Article 19(2)", "Reasonable Restriction"]
+    ))
+
+    # ER_R_021
+    qs.append(make_er_q(
+        qid="ER_R_021", diff="Medium", qtype="Assertion-Reason", subtopic="Form 6B Voluntary Nature",
+        en_stem="Given below are two statements, one labelled as Assertion (A) and the other as Reason (R):\nAssertion (A): The Election Commission cannot delete an existing voter's name from the electoral roll solely because they failed to submit their Aadhaar number in Form 6B.\nReason (R): Under the Election Laws (Amendment) Act, 2021, linking of the Aadhaar number with the electoral roll is purely voluntary.",
+        ta_stem="கீழே கொடுக்கப்பட்டுள்ள இரண்டு கூற்றுகளில் ஒன்று கூற்று (A) என்றும் மற்றொன்று காரணம் (R) என்றும் குறிக்கப்பட்டுள்ளன:\nகூற்று (A): படிவம் 6B-ல் ஆதார் எண்ணை சமர்ப்பிக்கவில்லை என்ற ஒரே காரணத்திற்காக வாக்காளர் பட்டியலிலிருந்து ஒரு வாக்காளரின் பெயரை தேர்தல் ஆணையம் நீக்க முடியாது.\nகாரணம் (R): தேர்தல் சட்டங்கள் (திருத்தச்) சட்டம் 2021-ன் கீழ், ஆதார் எண்ணை வாக்காளர் பட்டியலுடன் இணைப்பது முற்றிலும் தன்னார்வமானது (Voluntary).",
+        en_a=OPT_A_EN, ta_a=OPT_A_TA, en_b=OPT_B_EN, ta_b=OPT_B_TA, en_c=OPT_C_EN, ta_c=OPT_C_TA, en_d=OPT_D_EN, ta_d=OPT_D_TA,
+        correct_key="A",
+        exp_en="Both (A) and (R) are true, and (R) correctly explains (A). Section 23(6) of RPA 1950 explicitly provides that no person's name shall be deleted from the electoral roll for non-submission of an Aadhaar number, confirming that the linkage is entirely optional.",
+        exp_ta="(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும். மக்கள் பிரதிநிதித்துவச் சட்டம் பிரிவு 23(6), ஆதார் எண் வழங்காத காரணத்திற்காக யாரையும் வாக்காளர் பட்டியலிலிருந்து நீக்கக் கூடாது என்று தெளிவாகக் கூறி இணைப்பை தன்னார்வமாக்கியுள்ளது.",
+        why_a_en="Correct. Reason gives the statutory basis why non-submission does not cause deletion.",
+        why_a_ta="சரியானது. ஆதார் எண் தராததால் ஏன் பெயர் நீக்கப்படக் கூடாது என்பதற்கான சட்ட விதியை காரணம் விளக்குகிறது.",
+        why_b_en="Incorrect. (R) explains (A).",
+        why_b_ta="தவறானது. (R) நேரடி விளக்கம்.",
+        why_c_en="Incorrect. Both statements are true.",
+        why_c_ta="தவறானது. இரண்டும் சரி.",
+        why_d_en="Incorrect. (A) is true.",
+        why_d_ta="தவறானது. (A) சரி.",
+        tip_en="Supreme Court recorded ECI's undertaking that Aadhaar is optional in September 2023.",
+        tip_ta="2023 செப்டம்பரில் ஆதார் விருப்பத்தேர்வே என்ற ECI-ன் உறுதிமொழியை உச்ச நீதிமன்றம் பதிவு செய்தது.",
+        fact_en="Form 6B was notified under the Registration of Electors (Amendment) Rules, 2022.",
+        fact_ta="2022 வாக்காளர் பதிவு திருத்த விதிகளின் கீழ் படிவம் 6B அறிமுகப்படுத்தப்பட்டது.",
+        tags=["Form 6B", "Aadhaar Linking Voluntary", "Section 23(6)"]
+    ))
+
+    # ER_R_022
+    qs.append(make_er_q(
+        qid="ER_R_022", diff="Medium", qtype="Assertion-Reason", subtopic="Braille on EVMs Inclusion",
+        en_stem="Given below are two statements, one labelled as Assertion (A) and the other as Reason (R):\nAssertion (A): The ballot units of all EVMs in India are embossed with Braille numbering on the right side of the blue voting buttons.\nReason (R): Braille signage empowers visually impaired voters to cast their votes independently and securely without having to rely on a sighted companion.",
+        ta_stem="கீழே கொடுக்கப்பட்டுள்ள இரண்டு கூற்றுகளில் ஒன்று கூற்று (A) என்றும் மற்றொன்று காரணம் (R) என்றும் குறிக்கப்பட்டுள்ளன:\nகூற்று (A): இந்தியாவில் உள்ள அனைத்து EVM வாக்குப்பதிவு அலகுகளிலும் நீல நிற வாக்கு பொத்தான்களின் வலதுபுறத்தில் பிரெய்லி எண்கள் பொறிக்கப்பட்டுள்ளன.\nகாரணம் (R): பிரெய்லி குறியீடுகள் பார்வையற்ற வாக்காளர்கள் மற்றொரு நபரின் உதவியின்றி சுயமாகவும் ரகசியமாகவும் வாக்களிக்க உதவுகின்றன.",
+        en_a=OPT_A_EN, ta_a=OPT_A_TA, en_b=OPT_B_EN, ta_b=OPT_B_TA, en_c=OPT_C_EN, ta_c=OPT_C_TA, en_d=OPT_D_EN, ta_d=OPT_D_TA,
+        correct_key="A",
+        exp_en="Both (A) and (R) are true, and (R) correctly explains (A). ECI introduced Braille signage nationwide in 2009 to protect the secret franchise and autonomy of visually impaired voters, in accordance with the Rights of Persons with Disabilities principles.",
+        exp_ta="(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும். பார்வையற்ற வாக்காளர்களின் ரகசிய வாக்குரிமையையும் தற்சார்பையும் பாதுகாக்கவே 2009 முதல் நாடு முழுவதும் EVM இயந்திரங்களில் பிரெய்லி குறியீடுகள் கட்டாயமாக்கப்பட்டன.",
+        why_a_en="Correct. Reason gives the democratic accessibility justification for Braille on EVMs.",
+        why_a_ta="சரியானது. பிரெய்லி குறியீடுகள் இருப்பதற்கான ஜனநாயக காரணத்தை (R) துல்லியமாக விளக்குகிறது.",
+        why_b_en="Incorrect. (R) explains (A).",
+        why_b_ta="தவறானது. (R) நேரடி விளக்கம்.",
+        why_c_en="Incorrect. Both statements are true.",
+        why_c_ta="தவறானது. இரண்டும் சரி.",
+        why_d_en="Incorrect. (A) is true.",
+        why_d_ta="தவறானது. (A) சரி.",
+        tip_en="Braille embossed numbers 1 to 16 are placed next to each candidate's button on the ballot unit.",
+        tip_ta="1 முதல் 16 வரையிலான பிரெய்லி எண்கள் ஒவ்வொரு வேட்பாளர் பொத்தானின் அருகிலும் இருக்கும்.",
+        fact_en="ECI also prints dummy ballot sheets in Braille and supplies them to presiding officers.",
+        fact_ta="வாக்குச்சாவடி தலைமை அலுவலர்களுக்கு பிரெய்லி மாதிரி வாக்குத்தாள்களும் வழங்கப்படுகின்றன.",
+        tags=["Braille on EVM", "Accessible Elections", "2009 Initiative"]
+    ))
+
+    # ER_R_023
+    qs.append(make_er_q(
+        qid="ER_R_023", diff="Hard", qtype="Assertion-Reason", subtopic="Section 123(2) Spiritual Censure",
+        en_stem="Given below are two statements, one labelled as Assertion (A) and the other as Reason (R):\nAssertion (A): Threatening voters that voting for a rival candidate will bring divine displeasure or religious excommunication is treated as Undue Influence under Section 123(2) of RPA 1951.\nReason (R): Spiritual intimidation impairs the free agency of the elector and interferes with the free exercise of their electoral right.",
+        ta_stem="கீழே கொடுக்கப்பட்டுள்ள இரண்டு கூற்றுகளில் ஒன்று கூற்று (A) என்றும் மற்றொன்று காரணம் (R) என்றும் குறிக்கப்பட்டுள்ளன:\nகூற்று (A): எதிர்த்தரப்பு வேட்பாளருக்கு வாக்களித்தால் கடவுளின் கோபத்திற்கு ஆளாவாய் அல்லது மதத்தை விட்டு நீக்கப்படுவாய் என்று வாக்காளர்களை அச்சுறுத்துவது பிரிவு 123(2)-ன் கீழ் 'தவறான செல்வாக்கு' (Undue Influence) ஆகும்.\nகாரணம் (R): ஆன்மீக அச்சுறுத்தல்கள் வாக்காளரின் சுதந்திரமான முடிவெடுக்கும் திறனைப் பாதித்து, அவர்களது தேர்தல் உரிமையை சுதந்திரமாகப் பயன்படுத்துவதில் தலையிடுகின்றன.",
+        en_a=OPT_A_EN, ta_a=OPT_A_TA, en_b=OPT_B_EN, ta_b=OPT_B_TA, en_c=OPT_C_EN, ta_c=OPT_C_TA, en_d=OPT_D_EN, ta_d=OPT_D_TA,
+        correct_key="A",
+        exp_en="Both (A) and (R) are true, and (R) correctly explains (A). Proviso (a)(ii) to Section 123(2) explicitly provides that inducing belief that an elector will become an object of divine displeasure or spiritual censure is deemed to interfere with the free exercise of electoral rights.",
+        exp_ta="(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும். பிரிவு 123(2) வரம்புரை (a)(ii), தெய்வ குற்றம் அல்லது மத சாபத்திற்கு ஆளாவாய் என அச்சுறுத்துவது வாக்காளரின் சுதந்திரமான வாக்குரிமையில் குறுக்கிடுவதாகக் கருதுகிறது.",
+        why_a_en="Correct. Reason directly quotes the statutory objective of Section 123(2).",
+        why_a_ta="சரியானது. பிரிவு 123(2)-ன் சட்ட நோக்கத்தை காரணம் துல்லியமாக விவரிக்கிறது.",
+        why_b_en="Incorrect. (R) explains (A).",
+        why_b_ta="தவறானது. (R) நேரடி விளக்கம்.",
+        why_c_en="Incorrect. Both statements are true.",
+        why_c_ta="தவறானது. இரண்டும் சரி.",
+        why_d_en="Incorrect. (A) is true.",
+        why_d_ta="தவறானது. (A) சரி.",
+        tip_en="Undue influence voids the election under Section 100(1)(b) in the High Court.",
+        tip_ta="தவறான செல்வாக்கு பிரிவு 100(1)(b)-ன் கீழ் உயர் நீதிமன்றத்தில் தேர்தலை ரத்து செய்ய வழிவகுக்கும்.",
+        fact_en="Promising public policy measures like building a temple or hospital is NOT undue influence under proviso (b).",
+        fact_ta="பொதுக் கொள்கையாக மருத்துவமனை அல்லது கோவில் கட்டுவதாகக் கூறுவது தவறான செல்வாக்காகாது (வரம்புரை b).",
+        tags=["Section 123(2)", "Undue Influence", "Spiritual Censure", "Corrupt Practice"]
+    ))
+
+    # ER_R_024
+    qs.append(make_er_q(
+        qid="ER_R_024", diff="Hard", qtype="Assertion-Reason", subtopic="Section 11 Disqualification Reduction",
+        en_stem="Given below are two statements, one labelled as Assertion (A) and the other as Reason (R):\nAssertion (A): The Election Commission has statutory discretion under Section 11 of RPA 1951 to reduce the period of disqualification of a convicted person.\nReason (R): Section 11 requires that the Election Commission must record its reasons in writing before modifying any disqualification period.",
+        ta_stem="கீழே கொடுக்கப்பட்டுள்ள இரண்டு கூற்றுகளில் ஒன்று கூற்று (A) என்றும் மற்றொன்று காரணம் (R) என்றும் குறிக்கப்பட்டுள்ளன:\nகூற்று (A): மக்கள் பிரதிநிதித்துவச் சட்டம் பிரிவு 11-ன் கீழ் குற்றத்தண்டனை பெற்ற ஒரு நபரின் தகுதிநீக்கக் காலத்தைக் குறைக்க தேர்தல் ஆணையத்திற்கு சட்டப்பூர்வ விருப்புரிமை உண்டு.\nகாரணம் (R): எந்தவொரு தகுதிநீக்கக் காலத்தையும் மாற்றியமைப்பதற்கு முன் தேர்தல் ஆணையம் அதற்கான காரணங்களை எழுத்துப்பூர்வமாகப் பதிவு செய்ய வேண்டும் என்று பிரிவு 11 கட்டாயமாக்குகிறது.",
+        en_a=OPT_B_EN, ta_a=OPT_B_TA, en_b=OPT_A_EN, ta_b=OPT_A_TA, en_c=OPT_C_EN, ta_c=OPT_C_TA, en_d=OPT_D_EN, ta_d=OPT_D_TA,
+        correct_key="A",
+        exp_en="Both (A) and (R) are true, but (R) is a statutory condition, not the causative explanation of why ECI possesses this power. The power was granted by Parliament to handle mitigating circumstances and administrative equity, while recording reasons in writing is a procedural safeguard against arbitrary exercise.",
+        exp_ta="(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல. பிரிவு 11 தகுதிநீக்கத்தைக் குறைக்க ECI-க்கு அதிகாரம் அளிக்கிறது என்பதும், அதற்கு எழுத்துப்பூர்வ காரணங்களை பதிவு செய்ய வேண்டும் என்பதும் தனித்தனி சட்ட உண்மைகள்; எழுத்துப்பூர்வ காரணம் என்பது நடைமுறை பாதுகாப்பே தவிர அதிகாரத்திற்கான மூலகாரணம் அல்ல.",
+        why_a_en="Correct. Both are true, but procedural condition is not the causal explanation of the power.",
+        why_a_ta="சரியானது. இரண்டும் சரி, ஆனால் நடைமுறை விதி என்பது அதிகாரத்திற்கான நேரடி விளக்கமல்ல.",
+        why_b_en="Incorrect. (R) is a procedural safeguard, not causal rationale.",
+        why_b_ta="தவறானது. (R) நடைமுறைப் பாதுகாப்பு மட்டுமே.",
+        why_c_en="Incorrect. Both statements are true.",
+        why_c_ta="தவறானது. இரண்டும் சரி.",
+        why_d_en="Incorrect. (A) is true.",
+        why_d_ta="தவறானது. (A) சரி.",
+        tip_en="Section 11 power cannot be used for corrupt practices disqualification under Section 8A.",
+        tip_ta="பிரிவு 8A-ன் கீழான ஊழல் நடைமுறை தகுதிநீக்கங்களுக்கு பிரிவு 11-ஐப் பயன்படுத்த முடியாது.",
+        fact_en="In Prem Singh Tamang's case (2019), ECI reduced his disqualification citing societal contribution and law change.",
+        fact_ta="2019-ல் சிக்கிம் முதல்வர் தமாங்கின் தகுதிநீக்கக் காலத்தை ECI இப்பிரிவு 11-ன் கீழேயே குறைத்தது.",
+        tags=["Section 11", "ECI Discretion", "Procedural Safeguard"]
+    ))
+
+    # ER_R_025
+    qs.append(make_er_q(
+        qid="ER_R_025", diff="Hard", qtype="Assertion-Reason", subtopic="Section 130 100-meter restriction rationale",
+        en_stem="Given below are two statements, one labelled as Assertion (A) and the other as Reason (R):\nAssertion (A): Canvassing for votes and displaying party symbols within 100 meters of a polling station on polling day is a cognizable offence under Section 130 of RPA 1951.\nReason (R): Creating a sterile neutral perimeter around the polling booth prevents last-minute intimidation of voters and preserves peaceful polling.",
+        ta_stem="கீழே கொடுக்கப்பட்டுள்ள இரண்டு கூற்றுகளில் ஒன்று கூற்று (A) என்றும் மற்றொன்று காரணம் (R) என்றும் குறிக்கப்பட்டுள்ளன:\nகூற்று (A): வாக்குப்பதிவு நாளன்று வாக்குச்சாவடியிலிருந்து 100 மீட்டர் எல்லைக்குள் வாக்கு சேகரிப்பதும் கட்சிக் கொடிகளைக் காட்சிப்படுத்துவதும் மக்கள் பிரதிநிதித்துவச் சட்டம் பிரிவு 130-ன் கீழ் கைது செய்யப்படக்கூடிய குற்றமாகும்.\nகாரணம் (R): வாக்குச்சாவடியைச் சுற்றி நடுநிலையான அமைதியான எல்லையை உருவாக்குவது கடைசி நேர அச்சுறுத்தல்களைத் தடுத்து அமைதியான வாக்குப்பதிவை உறுதி செய்கிறது.",
+        en_a=OPT_A_EN, ta_a=OPT_A_TA, en_b=OPT_B_EN, ta_b=OPT_B_TA, en_c=OPT_C_EN, ta_c=OPT_C_TA, en_d=OPT_D_EN, ta_d=OPT_D_TA,
+        correct_key="A",
+        exp_en="Both (A) and (R) are true, and (R) correctly explains (A). The 100-meter sterile perimeter under Section 130 was created specifically to ensure voters can enter the booth freely without being accosted, swayed, or intimidated by rival party workers at the doorstep.",
+        exp_ta="(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும். வாக்குச்சாவடியின் நுழைவாயிலில் வாக்காளர்களை வழிமறித்து வற்புறுத்துவதையோ அச்சுறுத்துவதையோ தடுத்து அமைதியான சூழலை உருவாக்கவே 100 மீட்டர் தூரத்திற்கு பிரச்சார தடை விதிக்கப்பட்டுள்ளது.",
+        why_a_en="Correct. Reason gives the precise rationale for the 100-meter sterile perimeter rule.",
+        why_a_ta="சரியானது. 100 மீட்டர் தடைக்கான நோக்கத்தை காரணம் துல்லியமாக விளக்குகிறது.",
+        why_b_en="Incorrect. (R) explains (A).",
+        why_b_ta="தவறானது. (R) நேரடி விளக்கம்.",
+        why_c_en="Incorrect. Both statements are true.",
+        why_c_ta="தவறானது. இரண்டும் சரி.",
+        why_d_en="Incorrect. (A) is true.",
+        why_d_ta="தவறானது. (A) சரி.",
+        tip_en="Section 131 prohibits loudspeakers and cellular phones inside this same 100-meter perimeter.",
+        tip_ta="பிரிவு 131 இந்த 100 மீட்டர் எல்லைக்குள் ஒலிபெருக்கிகள் மற்றும் மொபைல் போன்களைத் தடை செய்கிறது.",
+        fact_en="Section 130 applies equally to candidates, agents, party workers, and ordinary voters.",
+        fact_ta="வேட்பாளர்கள், முகவர்கள், தொண்டர்கள் என அனைவருக்கும் பிரிவு 130 பொருந்தும்.",
+        tags=["Section 130", "100 Meters Perimeter", "Sterile Zone", "Voter Protection"]
+    ))
+
+    return qs
+
+def main():
+    raw_qs = get_reasoning_questions()
+    print(f"Total raw questions: {len(raw_qs)}")
+    assert len(raw_qs) == 25, f"Expected 25, got {len(raw_qs)}"
+    
+    # Check ID sequence
+    for idx, q in enumerate(raw_qs, 1):
+        expected_id = f"ER_R_{idx:03d}"
+        assert q["id"] == expected_id, f"ID mismatch at {idx}: {q['id']} != {expected_id}"
+        
+    # Check uniqueness of English stems
+    stems = [q["question_en"].strip().lower() for q in raw_qs]
+    assert len(set(stems)) == 25, f"Duplicate stems found: {len(set(stems))} unique out of 25"
+    
+    # Balance keys to roughly 7 A, 6 B, 6 C, 6 D
+    balanced = balance_question_keys(raw_qs, target_counts={"A": 7, "B": 6, "C": 6, "D": 6})
+    
+    os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
+    with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
+        json.dump(balanced, f, ensure_ascii=False, indent=2)
+    print(f"Saved to {OUTPUT_PATH}")
+    
+    with open(ALIAS_PATH, "w", encoding="utf-8") as f:
+        json.dump(balanced, f, ensure_ascii=False, indent=2)
+    print(f"Saved alias to {ALIAS_PATH}")
+    
+    # Validate with ContentValidator
+    validator = ContentValidator()
+    report = validator.validate_file(OUTPUT_PATH, expected_count=25, expected_prefix="ER_R_")
+    print(report.summary())
+    assert report.is_valid, "Validation failed!"
+
+if __name__ == "__main__":
+    main()

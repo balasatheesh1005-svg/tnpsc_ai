@@ -5,6 +5,7 @@ from pathlib import Path
 import streamlit as st
 
 from core.navigation_v2.navigation_state import (
+    discover_note_parts,
     get_selected_display_title,
     get_selected_repository_id,
     get_selected_subject,
@@ -14,7 +15,7 @@ from core.streamlit_ui_engine import render_notes
 
 
 @st.cache_data
-def load_note(file_path):
+def load_note(file_path: str, mtime: float = 0):
     try:
         with open(file_path, "r", encoding="utf-8") as f:
             return json.load(f)
@@ -168,6 +169,37 @@ def render_notes_page(section):
     repository_id = get_selected_repository_id()
     display_title = get_selected_display_title()
 
+    note_basename = topic_id
+    if note_basename.startswith(f"{subject}_"):
+        note_basename = note_basename[len(subject) + 1 :]
+
+    repo_basename = repository_id
+    if repo_basename.startswith(f"{subject}_"):
+        repo_basename = repo_basename[len(subject) + 1 :]
+
+    # Dynamic multi-part discovery
+    parts_map = discover_note_parts(subject, note_basename)
+    if not parts_map and repo_basename:
+        parts_map = discover_note_parts(subject, repo_basename)
+
+    if not parts_map:
+        st.warning(f"📭 Notes for '{display_title}' are coming soon in the next content update.")
+        st.info("💡 You can attempt practice questions or grand tests for this topic in the Study Hub.")
+        return
+
+    # Numeric sorting of part numbers (1, 2, 3...)
+    part_numbers = sorted(parts_map.keys())
+    session_part_key = f"selected_part_{topic_id}"
+
+    # Auto-detect part from topic_id if user navigated to a specific part entry (e.g. polity_electoral_reforms_part_2)
+    match_part = re.search(r"_part_?(\d+)$", topic_id.lower())
+    suggested_part = int(match_part.group(1)) if match_part and int(match_part.group(1)) in part_numbers else None
+
+    if session_part_key not in st.session_state or st.session_state[session_part_key] not in part_numbers:
+        st.session_state[session_part_key] = suggested_part or part_numbers[0]
+
+    selected_part_num = st.session_state[session_part_key]
+
     hdr_col, btn_col = st.columns([3, 1], gap="small")
     with hdr_col:
         st.markdown(
@@ -189,40 +221,42 @@ def render_notes_page(section):
             st.session_state["nav_view"] = "topic_hub"
             st.rerun()
 
-    note_basename = topic_id
-    if note_basename.startswith(f"{subject}_"):
-        note_basename = note_basename[len(subject) + 1:]
+    # Part Selector UI (if multiple parts exist)
+    if len(part_numbers) > 1:
+        st.markdown("##### 📚 Select Module Part:")
+        p_cols = st.columns(len(part_numbers))
+        for idx, p_num in enumerate(part_numbers):
+            is_active = p_num == selected_part_num
+            btn_type = "primary" if is_active else "secondary"
+            btn_label = f"📖 Part {p_num}"
+            if p_cols[idx].button(btn_label, key=f"btn_part_sel_{topic_id}_{p_num}", type=btn_type, use_container_width=True):
+                st.session_state[session_part_key] = p_num
+                st.rerun()
+        st.markdown("---")
 
-    candidate_files = [
-        f"data/notes/{subject}/{note_basename}.json",
-        f"data/notes/{subject}/{note_basename}_part_1.json",
-        f"data/notes/{subject}/{note_basename}_part1.json",
-        f"data/notes/{subject}/{note_basename.replace('part', 'part_')}.json" if "part" in note_basename and "part_" not in note_basename else f"data/notes/{subject}/{note_basename}.json",
-    ]
+    # Load and Render Selected Part with mtime cache-invalidation
+    selected_file_path = parts_map[selected_part_num]
+    file_mtime = os.path.getmtime(selected_file_path) if os.path.exists(selected_file_path) else 0
+    data = load_note(selected_file_path, mtime=file_mtime)
 
-    data = None
-    loaded_path = None
-    for candidate in candidate_files:
-        if os.path.exists(candidate):
-            data = load_note(candidate)
-            if data is not None:
-                loaded_path = candidate
-                break
+    # Source Identity Debug Output (Console + UI)
+    print(f"[NOTES_LOADER] CURRENT TOPIC: {note_basename} | CURRENT PART: {selected_part_num} | LOADED FILE: {selected_file_path}")
+    st.caption(f"📌 **CURRENT TOPIC**: `{note_basename}` | **CURRENT PART**: `{selected_part_num} of {len(part_numbers)}` | **LOADED FILE**: `{selected_file_path}`")
+
+    if data is None:
+        st.error(f"❌ Error loading notes payload for Part {selected_part_num}.")
+        st.info("Please select another available part or contact support.")
+        return
 
     try:
-        if data is None:
-            st.warning(f"📭 Notes for '{display_title}' are coming soon in the next content update.")
-            st.info("💡 You can attempt practice questions or grand tests for this topic in the Study Hub.")
-            return
-
         render_notes(data)
-        st.caption(f"UI Type: {data.get('ui_type', 'unknown')}")
+        st.caption(f"UI Type: {data.get('ui_type', 'unknown')} | Part {selected_part_num} of {len(part_numbers)}")
 
         # Render 2-Minute Revision Card
         render_2_minute_revision_card(data, display_title, subject)
 
     except Exception as e:
-        st.error("❌ Error loading notes payload.")
+        st.error(f"❌ Error rendering Part {selected_part_num} notes.")
         st.exception(e)
 
     st.markdown("---")
@@ -235,4 +269,5 @@ def render_notes_page(section):
             st.rerun()
         else:
             st.error("No practice questions found for this topic.")
+
 

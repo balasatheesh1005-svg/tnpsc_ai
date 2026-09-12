@@ -1,0 +1,926 @@
+{
+  "subject": "polity",
+  "topic": "Electoral Reforms",
+  "language": "English + Tamil",
+  "ui_type": "standard_notes",
+  "reading_time": "16 mins",
+  "difficulty": "Medium",
+  "completion_pct": 85,
+  "metadata": {
+    "topic_id": "electoral_reforms",
+    "repository_id": "polity_electoral_reforms",
+    "display_title": "Electoral Reforms – Part 1: Foundations, Constitutional & Legal Framework",
+    "part": 1,
+    "total_parts": 3,
+    "subject": "polity",
+    "chapter": "Electoral Reforms",
+    "language": "English + Tamil",
+    "schema_version": "2.0",
+    "last_updated": "2026-09-05"
+  },
+  "meta": {
+    "keywords": [
+      "Electoral Reforms",
+      "Article 324",
+      "Article 325",
+      "Article 326",
+      "Article 327",
+      "Article 328",
+      "Article 329",
+      "Election Commission of India",
+      "RPA 1950",
+      "RPA 1951",
+      "Delimitation Commission",
+      "Universal Adult Suffrage",
+      "61st Constitutional Amendment",
+      "EPIC",
+      "SC ST Reservation"
+    ]
+  },
+  "keywords": [
+    "Electoral Reforms",
+    "Article 324",
+    "Article 325",
+    "Article 326",
+    "Article 327",
+    "Article 328",
+    "Article 329",
+    "Election Commission of India",
+    "RPA 1950",
+    "RPA 1951",
+    "Delimitation",
+    "Adult Suffrage",
+    "61st Amendment",
+    "EPIC",
+    "Reservation"
+  ],
+  "learning_outcomes": {
+    "Understand": {
+      "en": [
+        "Master the constitutional framework of Indian elections under Articles 324 to 329.",
+        "Differentiate between the distinct mandates of the RPA 1950 and RPA 1951.",
+        "Analyze the structure, powers, and constitutional safeguards of the Election Commission of India.",
+        "Examine the delimitation mechanism, seat freezing provisions, and reservation of seats under Articles 330 & 332."
+      ],
+      "ta": [
+        "உறுப்புகள் 324 முதல் 329 வரையிலான இந்திய தேர்தல் அரசியலமைப்பு கட்டமைப்பை முழுமையாக அறிதல்.",
+        "1950 மற்றும் 1951 மக்கள் பிரதிநிதித்துவச் சட்டங்களின் (RPA) தனித்துவமான வரம்புகளை வேறுபடுத்திப் புரிந்துகொள்ளுதல்.",
+        "இந்திய தேர்தல் ஆணையத்தின் கட்டமைப்பு, அதிகாரங்கள் மற்றும் அரசியலமைப்புப் பாதுகாப்பு ஏற்பாடுகளை ஆராய்தல்.",
+        "தொகுதி மறுவரைவு நடைமுறை, இடங்கள் முடக்கம் மற்றும் உறுப்புகள் 330, 332-ன் கீழ் எஸ்சி/எஸ்டி இடஒதுக்கீட்டை மதிப்பீடு செய்தல்."
+      ]
+    }
+  },
+  "sections": [
+    {
+      "id": "sec_meaning_and_evolution",
+      "title_en": "1. Meaning, Objectives & Evolution of Electoral Reforms",
+      "title_ta": "1. தேர்தல் சீர்திருத்தங்களின் பொருள், நோக்கங்கள் & பரிணாமம்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_constitutional_framework",
+      "title_en": "2. Constitutional Framework (Articles 324 to 329)",
+      "title_ta": "2. அரசியலமைப்பு சட்டக் கட்டமைப்பு (உறுப்புகள் 324 முதல் 329 வரை)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_election_commission_structure",
+      "title_en": "3. Election Commission of India — Structure, Powers & Autonomy",
+      "title_ta": "3. இந்திய தேர்தல் ஆணையம் — கட்டமைப்பு, அதிகாரங்கள் & தன்னாட்சி",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_rpa_1950_statute",
+      "title_en": "4. Representation of the People Act, 1950 (RPA 1950)",
+      "title_ta": "4. மக்கள் பிரதிநிதித்துவச் சட்டம், 1950 (RPA 1950)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_rpa_1951_statute",
+      "title_en": "5. Representation of the People Act, 1951 (RPA 1951)",
+      "title_ta": "5. மக்கள் பிரதிநிதித்துவச் சட்டம், 1951 (RPA 1951)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_electoral_rolls_and_registration",
+      "title_en": "6. Electoral Rolls Preparation, Revision & EPIC",
+      "title_ta": "6. வாக்காளர் பட்டியல் தயாரிப்பு, திருத்தம் & வாக்காளர் அடையாள அட்டை (EPIC)",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_delimitation_framework",
+      "title_en": "7. Delimitation of Constituencies & Delimitation Commission",
+      "title_ta": "7. தொகுதிகள் மறுவரைவு & மறுவரைவு ஆணையம்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_representation_and_reservation",
+      "title_en": "8. Representation & Reservation of Seats in Legislatures",
+      "title_ta": "8. சட்டமன்றங்களில் பிரதிநிதித்துவம் & இடஒதுக்கீடு",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_universal_adult_franchise",
+      "title_en": "9. Universal Adult Franchise & 61st Amendment Act",
+      "title_ta": "9. உலகளாவிய வயதுவந்தோர் வாக்குரிமை & 61வது அரசியலமைப்பு திருத்தச் சட்டம்",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_basic_electoral_process",
+      "title_en": "10. Step-by-Step Cycle of the Electoral Process in India",
+      "title_ta": "10. இந்தியாவில் தேர்தல் செயல்முறையின் படிநிலைக் சுழற்சி",
+      "type": "standard_topic"
+    },
+    {
+      "id": "sec_foundational_milestones",
+      "title_en": "11. Foundational Electoral Reform Milestones Chronology",
+      "title_ta": "11. ஆரம்பகால தேர்தல் சீர்திருத்த மைல்கற்களின் காலவரிசை",
+      "type": "standard_topic"
+    }
+  ],
+  "content": {
+    "definition": {
+      "en": "Electoral Reforms encompass the continuous set of constitutional, statutory, administrative, and technological changes introduced into the electoral machinery to guarantee free, fair, transparent, participatory, and clean elections, thereby upholding the foundational ethos of constitutional democracy.",
+      "ta": "தேர்தல் சீர்திருத்தங்கள் என்பது சுதந்திரமான, நியாயமான, வெளிப்படையான, பங்கேற்பு மற்றும் தூய்மையான தேர்தல்களை உறுதி செய்வதற்காக தேர்தல் நடைமுறையில் கொண்டு வரப்படும் அரசியலமைப்பு, சட்டப்பூர்வ, நிர்வாக மற்றும் தொழில்நுட்ப மாற்றங்களின் தொடர்ச்சியான தொகுப்பாகும், இதுவே ஜனநாயகத்தின் அடித்தளத்தை நிலைநிறுத்துகிறது."
+    },
+    "introduction": {
+      "en": "Elections are the bedrock of India's sovereign, socialist, secular, democratic republic. Preamble envisions political justice, which is actualized through free and fair elections. Dr. B.R. Ambedkar placed the electoral machinery in an autonomous Part XV of the Constitution (Articles 324-329), insulating election administration from executive bias and transient political pressures. Over seven decades, the electoral system evolved from manual paper ballots and ballot boxes into the world's largest democratic exercise, necessitating continuous institutional reforms.",
+      "ta": "இந்தியாவின் இறையாண்மை, சமதர்ம, மதச்சார்பற்ற, ஜனநாயகக் குடியரசின் அடித்தளம் தேர்தல்கள் ஆகும். முகப்புரை கற்பனை செய்யும் அரசியல் நீதியானது சுதந்திரமான மற்றும் நியாயமான தேர்தல்கள் மூலமே நடைமுறைப்படுத்தப்படுகிறது. டாக்டர் பி.ஆர். அம்பேத்கர் நிர்வாகத்தின் தலையீடு மற்றும் அரசியல் அழுத்தங்களிலிருந்து தேர்தல் நிர்வாகத்தைப் பாதுகாப்பதற்காக அரசியலமைப்பின் பகுதி XV-ல் (உறுப்புகள் 324-329) தேர்தல் இயந்திரத்தை ஒரு தன்னாட்சி அமைப்பாக வைத்தார். ஏழு தசாப்தங்களுக்கும் மேலாக, வாக்காளர் நடைமுறை காகித வாக்குச்சீட்டுகளிலிருந்து உலகின் மிகப்பெரிய ஜனநாயக நடைமுறையாக பரிணமித்துள்ளது."
+    },
+    "sec_meaning_and_evolution": [
+      {
+        "title_en": "Core Concept & Objectives of Electoral Reforms",
+        "title_ta": "தேர்தல் சீர்திருத்தங்களின் அடிப்படைக் கருத்து & நோக்கங்கள்",
+        "points": {
+          "en": [
+            "Meaning: Comprehensive systemic interventions aimed at cleansing the electoral process from corruption, violence, undue influence, and illegal inducements.",
+            "Primary Objectives: 1. Ensuring genuine level-playing field for all candidates and recognized political parties; 2. Preventing criminal elements from entering legislature; 3. Eliminating the vicious nexus of money and muscle power; 4. Enhancing transparency in political finance; 5. Protecting voter autonomy and universal accessibility.",
+            "Significance in Democracy: As held by the Supreme Court in Indira Nehru Gandhi v. Raj Narain (1975), 'Free and fair elections' constitutes a part of the untouchable Basic Structure of the Indian Constitution.",
+            "Pillars of Democratic Legitimacy: Periodic elections, non-discriminatory universal adult franchise, secret ballot mechanism, and independent electoral adjudication."
+          ],
+          "ta": [
+            "பொருள்: ஊழல், வன்முறை, முறையற்ற செல்வாக்கு மற்றும் சட்டவிரோத கவர்ச்சிகளிலிருந்து தேர்தல் செயல்முறையைத் தூய்மைப்படுத்துவதை நோக்கமாகக் கொண்ட விரிவான அமைப்புசார் தலையீடுகள்.",
+            "முக்கிய நோக்கங்கள்: 1. அனைத்து வேட்பாளர்கள் மற்றும் அங்கீகரிக்கப்பட்ட கட்சிகளுக்கு சமமான களத்தை உறுதி செய்தல்; 2. குற்றப் பின்னணி கொண்டவர்கள் சட்டமன்றங்களில் நுழைவதைத் தடுத்தல்; 3. பணம் மற்றும் தசை பலத்தின் தீய பிணைப்பை ஒழித்தல்; 4. அரசியல் நிதியில் வெளிப்படைத்தன்மையை அதிகரித்தல்; 5. வாக்காளர் சுதந்திரம் மற்றும் உலகளாவிய அணுகலை பாதுகாத்தல்.",
+            "ஜனநாயகத்தின் முக்கியத்துவம்: இந்திரா நேரு காந்தி v. ராஜ் நாராயணன் (1975) வழக்கில் உச்ச நீதிமன்றம் தீர்ப்பளித்தபடி, 'சுதந்திரமான மற்றும் நியாயமான தேர்தல்கள்' இந்திய அரசியலமைப்பின் மாற்ற முடியாத அடிப்படைக் கட்டமைப்பின் (Basic Structure) ஒரு பகுதியாகும்.",
+            "ஜனநாயக நம்பகத்தன்மையின் தூண்கள்: காலமுறைத் தேர்தல்கள், பாகுபாடற்ற வயதுவந்தோர் வாக்குரிமை, ரகசிய வாக்குப்பதிவு மற்றும் சுதந்திரமான தேர்தல் நீதி வழங்கல்."
+          ]
+        }
+      },
+      {
+        "title_en": "Historical Evolution Stages of Indian Electoral System",
+        "title_ta": "இந்திய தேர்தல் முறையின் வரலாற்றுப் பரிணாம நிலைகள்",
+        "points": {
+          "en": [
+            "Stage 1 (1950–1967): Era of One-Party Dominance and First Elections under Sukumar Sen (1st CEC); ballot box system with separate boxes for each candidate; high idealism but logistical challenges.",
+            "Stage 2 (1967–1988): Rise of Coalition Politics, booth capturing, caste mobilization, and criminal infiltration, sparking first reform committee (Tarkunde Committee, 1974–75).",
+            "Stage 3 (1989–2000): Legislative & Technological Breakthroughs — Lowering voting age to 18 via 61st Amendment (1988), multi-member ECI, legalizing EVM (1988), introduction of EPIC (1993) under T.N. Seshan.",
+            "Stage 4 (2000–Present): Judicial Interventions & Digital Governance — Mandatory affidavit disclosures of candidate criminal antecedents (ADR 2002), NOTA (2013), Lily Thomas immediate disqualification (2013), VVPAT deployment, and invalidation of Electoral Bonds Scheme (2024)."
+          ],
+          "ta": [
+            "நிலை 1 (1950–1967): ஒரு கட்சி ஆதிக்க சகாப்தம் மற்றும் முதல் தலைமை தேர்தல் ஆணையர் சுகுமார் சென் தலைமையில் முதல் பொதுத்தேர்தல்கள்; ஒவ்வொரு வேட்பாளருக்கும் தனித்தனி பெட்டிகள் கொண்ட வாக்குப்பெட்டி முறை.",
+            "நிலை 2 (1967–1988): கூட்டணி அரசியலின் எழுச்சி, வாக்குச்சாவடி கைப்பற்றுதல் (Booth Capturing), சாதி திரட்டல் மற்றும் குற்றவாளிகளின் ஊடுருவல், முதல் சீர்திருத்தக் குழுவான தார்குண்டே குழு (1974–75) அமைக்கப்பட்டமை.",
+            "நிலை 3 (1989–2000): சட்ட மற்றும் தொழில்நுட்ப மாற்றங்கள் — 61வது திருத்தம் (1988) மூலம் வாக்குரிமை வயது 18 ஆகக் குறைப்பு, பல உறுப்பினர் தேர்தல் ஆணையம், EVM-க்கு சட்ட அங்கீகாரம் (1988), டி.என். சேஷன் காலத்தில் வாக்காளர் அடையாள அட்டை (EPIC - 1993) அறிமுகம்.",
+            "நிலை 4 (2000–தற்போது): நீதித்துறை தலையீடுகள் & டிஜிட்டல் ஆளுகை — வேட்பாளரின் குற்றப் பின்னணி பிரமாணப் பத்திரம் கட்டாயம் (ADR 2002), நோட்டா (2013), லில்லி தாமஸ் தீர்ப்பு மூலம் உடனடி தகுதிநீக்கம் (2013), VVPAT பயன்பாடு மற்றும் தேர்தல் பத்திரங்கள் திட்டம் ரத்து (2024)."
+          ]
+        }
+      }
+    ],
+    "sec_constitutional_framework": [
+      {
+        "title_en": "Constitutional Spectrum: Part XV (Articles 324 to 329)",
+        "title_ta": "அரசியலமைப்பு கட்டமைப்பு: பகுதி XV (உறுப்புகள் 324 முதல் 329)",
+        "points": {
+          "en": [
+            "Article 324: Vests the superintendence, direction, and control of elections to Parliament, State Legislatures, President, and Vice-President exclusively in the Election Commission of India.",
+            "Article 325: One General Electoral Roll for every constituency; strictly prohibits exclusion or inclusion of any citizen on grounds ONLY of religion, race, caste, sex, or any of them.",
+            "Article 326: Elections to Lok Sabha and State Legislative Assemblies shall be on the basis of Universal Adult Suffrage; voting age reduced to 18 years by 61st Amendment.",
+            "Article 327: Power of Parliament to make statutory provisions with respect to elections to legislatures (source of RPA 1950, RPA 1951, Delimitation Acts).",
+            "Article 328: Power of State Legislature to make laws with respect to state elections, but ONLY to the extent Parliament has NOT made provisions.",
+            "Article 329: Bar on interference by courts in electoral matters — validity of delimitation laws cannot be questioned; election can be challenged ONLY through Election Petition presented to High Court."
+          ],
+          "ta": [
+            "உறுப்பு 324: நாடாளுமன்றம், மாநில சட்டமன்றங்கள், குடியரசுத் தலைவர் மற்றும் துணைத் தலைவர் தேர்தல்களை மேற்பார்வையிடுதல், வழிகாட்டுதல் மற்றும் கட்டுப்படுத்தும் அதிகாரங்களை இந்திய தேர்தல் ஆணையத்திடம் ஒப்படைக்கிறது.",
+            "உறுப்பு 325: ஒவ்வொரு தொகுதிக்கும் ஒரே பொது வாக்காளர் பட்டியல்; மதம், இனம், சாதி, பாலினம் ஆகியவற்றின் அடிப்படையில் மட்டுமே எவரையும் வாக்காளர் பட்டியலில் சேர்க்கவோ விலக்கவோ கூடாது எனத் திட்டவட்டமாகத் தடை செய்கிறது.",
+            "உறுப்பு 326: மக்களவை மற்றும் மாநில சட்டமன்றங்களுக்கான தேர்தல்கள் உலகளாவிய வயதுவந்தோர் வாக்குரிமையின் அடிப்படையில் அமைய வேண்டும்; 61வது திருத்தம் மூலம் வாக்குரிமை வயது 18 ஆகக் குறைக்கப்பட்டது.",
+            "உறுப்பு 327: சட்டமன்றத் தேர்தல்கள் தொடர்பாக சட்டங்களை இயற்ற நாடாளுமன்றத்திற்கு அதிகாரம் அளிக்கிறது (RPA 1950, RPA 1951 மற்றும் மறுவரைவுச் சட்டங்களுக்கான ஆதாரம்).",
+            "உறுப்பு 328: மாநில சட்டமன்றத் தேர்தல்கள் தொடர்பாக சட்டம் இயற்ற மாநில சட்டமன்றத்திற்கு அதிகாரம், ஆனால் நாடாளுமன்றம் சட்டம் இயற்றாத விவகாரங்களில் மட்டுமே இது பொருந்தும்.",
+            "உறுப்பு 329: தேர்தல் விவகாரங்களில் நீதிமன்றங்கள் தலையிடுவதற்குத் தடை — தொகுதி மறுவரைவு அல்லது இட ஒதுக்கீடு சட்டங்களை நீதிமன்றங்களில் கேள்வி கேட்க முடியாது; தேர்தல் மனு (Election Petition) மூலம் மட்டுமே தேர்தலை உயர்நீதிமன்றத்தில் சவால் செய்ய முடியும்."
+          ]
+        }
+      },
+      {
+        "title_en": "Constitutional Limitations & Role of Federal Legislatures",
+        "title_ta": "அரசியலமைப்பு வரம்புகள் & கூட்டாட்சி சட்டமன்றங்களின் பங்கு",
+        "points": {
+          "en": [
+            "Supremacy of Parliamentary Legislation: Article 328 is subordinate to Article 327. Parliament holds overriding plenary jurisdiction to govern elections across Union and States.",
+            "Plenary Nature of Art 324: In Mohinder Singh Gill v. CEC (1978), the Supreme Court established that where enacted statutory law is silent or insufficient, Article 324 acts as an independent reservoir of plenary power to ensure free and fair elections.",
+            "Local Body Elections Exception: ECI does NOT conduct elections to Panchayats and Municipalities. Those are conducted by State Election Commissions (SEC) under Articles 243K & 243ZA (common TNPSC trap!).",
+            "Judicial Review Balance: Under Article 329(b), courts cannot entertain ordinary civil suits or stay ongoing election processes once the election notification is issued."
+          ],
+          "ta": [
+            "நாடாளுமன்ற சட்டங்களின் மேலாதிக்கம்: உறுப்பு 328 ஆனது உறுப்பு 327-க்கு உட்பட்டது. மத்திய மற்றும் மாநில தேர்தல்களை ஒழுங்குபடுத்த நாடாளுமன்றத்திற்கே மேலான முழு அதிகாரம் உள்ளது.",
+            "உறுப்பு 324-ன் வரம்பற்ற அதிகாரம்: மொஹிந்தர் சிங் கில் v. தலைமை தேர்தல் ஆணையர் (1978) வழக்கில், இயற்றப்பட்ட சட்டம் மௌனமாக இருக்கும் இடங்களில், சுதந்திரமான தேர்தலை உறுதி செய்ய உறுப்பு 324 ஓர் அதிகார நீர்த்தேக்கமாகச் செயல்படுகிறது என உச்ச நீதிமன்றம் உறுதி செய்தது.",
+            "உள்ளாட்சித் தேர்தல்கள் விதிவிலக்கு: கிராம ஊராட்சிகள் மற்றும் நகராட்சிகளுக்கான தேர்தல்களை ECI நடத்துவதில்லை. அவை உறுப்புகள் 243K & 243ZA-ன் கீழ் மாநில தேர்தல் ஆணையங்களால் (SEC) மட்டுமே நடத்தப்படுகின்றன (TNPSC முக்கிய பொறி!).",
+            "நீதித்துறை மறுஆய்வு வரம்பு: உறுப்பு 329(b)-ன் படி தேர்தல் அறிவிப்பு வெளியான பிறகு தேர்தலை நிறுத்தவோ அல்லது சிவில் வழக்குகளை விசாரிக்கவோ நீதிமன்றங்களுக்கு அதிகாரம் இல்லை."
+          ]
+        }
+      }
+    ],
+    "sec_election_commission_structure": [
+      {
+        "title_en": "Constitutional Status, Composition & Evolution",
+        "title_ta": "அரசியலமைப்பு நிலை, கட்டமைப்பு & பரிணாமம்",
+        "points": {
+          "en": [
+            "Constitutional Status: Permanent autonomous constitutional body established on 25th January 1950 (celebrated annually as National Voters' Day since 2011).",
+            "Composition Evolution: 1950 to 15th October 1989: Single-member body (Sukumar Sen was first CEC); 16th October 1989: 2 additional ECs appointed due to voting age reduction to 18; Jan 1990: Reverted to single-member body; 1st October 1993: Permanently made multi-member body (1 CEC + 2 ECs) via Ordinance/Act.",
+            "Equal Status of Members: The CEC and the other two Election Commissioners have EQUAL powers, emoluments, and status equal to a Supreme Court Judge. In case of difference of opinion, decision is taken by majority vote (T.N. Seshan v. UOI, 1995)."
+          ],
+          "ta": [
+            "அரசியலமைப்பு அந்தஸ்து: 1950 ஜனவரி 25 அன்று நிறுவப்பட்ட நிரந்தர தன்னாட்சி அரசியலமைப்பு அமைப்பு (2011 முதல் ஆண்டுதோறும் தேசிய வாக்காளர் தினமாகக் கொண்டாடப்படுகிறது).",
+            "கட்டமைப்பு பரிணாமம்: 1950 முதல் 1989 அக்டோபர் 15 வரை: ஒற்றை நபர் ஆணையம் (முதல் CEC சுகுமார் சென்); 1989 அக்டோபர் 16: வாக்குரிமை வயது 18 ஆகக் குறைக்கப்பட்டதால் 2 கூடுதல் ஆணையர்கள் நியமனம்; ஜனவரி 1990: மீண்டும் ஒற்றை நபர் அமைப்பாக மாற்றம்; 1993 அக்டோபர் 1 முதல்: அவசரச் சட்டம் மூலம் நிரந்தரமாக பல உறுப்பினர் அமைப்பாக (1 CEC + 2 ECs) மாற்றப்பட்டது.",
+            "உறுப்பினர்களின் சம அந்தஸ்து: CEC மற்றும் பிற இரண்டு தேர்தல் ஆணையர்கள் உச்ச நீதிமன்ற நீதிபதிக்கு இணையான சம அதிகாரங்கள், சம்பளம் மற்றும் தகுதியைப் பெற்றுள்ளனர். கருத்து வேறுபாடு ஏற்பட்டால் பெரும்பான்மை வாக்குகளின் அடிப்படையில் முடிவு எடுக்கப்படும் (டி.என். சேஷன் v. இந்திய அரசு, 1995)."
+          ]
+        }
+      },
+      {
+        "title_en": "Appointment, Tenure, Removal & 2023 Statutory Framework",
+        "title_ta": "நியமனம், பதவிக்காலம், நீக்கம் & 2023 புதிய சட்டக் கட்டமைப்பு",
+        "points": {
+          "en": [
+            "Tenure: 6 years or until attaining the age of 65 years, whichever is earlier. Eligible for salary and allowances equal to a Supreme Court Judge.",
+            "Judicial Mandate in Anoop Baranwal (2023): 5-judge Constitution Bench ordered appointment by Committee of Prime Minister, Leader of Opposition (LoP), and Chief Justice of India (CJI) until Parliament enacted a law.",
+            "New Law (Act of 2023): Chief Election Commissioner and other Election Commissioners (Appointment, Conditions of Service and Term of Office) Act, 2023 replaced CJI. Selection Committee consists of: 1. Prime Minister (Chairperson), 2. Leader of Opposition or single largest opposition party in Lok Sabha, 3. Union Cabinet Minister nominated by Prime Minister.",
+            "Removal Safeguards: CEC can be removed from office ONLY in like manner and on like grounds as a Supreme Court Judge (proved misbehaviour or incapacity, requiring special majority under Art 124(4)). Other ECs cannot be removed EXCEPT on the recommendation of the CEC.",
+            "Institutional Limitations: 1. Constitution has not prescribed specific legal, judicial, or educational qualifications for members; 2. Retiring commissioners are NOT barred from further government appointment (crucial reform recommendation of Goswami & Law Commission)."
+          ],
+          "ta": [
+            "பதவிக்காலம்: 6 ஆண்டுகள் அல்லது 65 வயது வரை, இதில் எது முந்தையதோ அதுவரை. உச்ச நீதிமன்ற நீதிபதிக்கு இணையான சம்பளம் மற்றும் படிகள் வழங்கப்படுகின்றன.",
+            "அனூப் பரன்வால் வழக்கு (2023) தீர்ப்பு: நாடாளுமன்றம் சட்டம் இயற்றும் வரை பிரதமர், மக்களவை எதிர்க்கட்சித் தலைவர் மற்றும் இந்திய தலைமை நீதிபதி (CJI) அடங்கிய குழுவே நியமனம் செய்ய வேண்டும் என 5 நீதிபதிகள் அமர்வு உத்தரவிட்டது.",
+            "2023 புதிய சட்டம்: CEC மற்றும் தேர்தல் ஆணையர்கள் நியமனச் சட்டம், 2023 தலைமை நீதிபதிக்குப் பதிலாக மத்திய அமைச்சரை சேர்த்தது. தேர்வுக் குழு: 1. பிரதமர் (தலைவர்), 2. மக்களவை எதிர்க்கட்சித் தலைவர், 3. பிரதமரால் பரிந்துரைக்கப்படும் மத்திய கேபினட் அமைச்சர்.",
+            "நீக்கும் நடைமுறை பாதுகாப்பு: உச்ச நீதிமன்ற நீதிபதியை நீக்கும் அதே காரணங்கள் மற்றும் சிறப்பு பெரும்பான்மை நடைமுறை மூலமே CEC-ஐ நீக்க முடியும் (உறுப்பு 124(4)). பிற ஆணையர்களை CEC-யின் பரிந்துரையின்றி நீக்க முடியாது.",
+            "நிறுவன வரம்புகள்: 1. உறுப்பினர்களுக்கான சட்ட அல்லது குறிப்பிட்ட கல்வித் தகுதிகளை அரசியலமைப்பு வரையறுக்கவில்லை; 2. ஓய்வுபெறும் தேர்தல் ஆணையர்கள் அரசு பதவிகளை ஏற்பதற்குத் தடை இல்லை (கோஸ்வாமி மற்றும் சட்ட ஆணையத்தின் முக்கிய சீர்திருத்த பரிந்துரை)."
+          ]
+        }
+      }
+    ],
+    "sec_rpa_1950_statute": [
+      {
+        "title_en": "Representation of the People Act, 1950 — Scope & Mandate",
+        "title_ta": "மக்கள் பிரதிநிதித்துவச் சட்டம், 1950 — வரம்பு & நோக்கம்",
+        "points": {
+          "en": [
+            "Primary Focus: Governs the PRE-ELECTION structural and administrative groundwork.",
+            "Allocation of Seats: Mandates seat allocation in Lok Sabha and State Legislative Assemblies (Schedules 1 and 2).",
+            "Delimitation of Constituencies: Sets statutory rules for territorial constituency boundary demarcation and delimitation.",
+            "Electoral Rolls Framework: Qualifications of voters, preparation, publication, and annual revision of electoral rolls.",
+            "Electoral Administrative Machinery: Creates statutory posts of Chief Electoral Officer (CEO), District Election Officer (DEO), Electoral Registration Officer (ERO), and Assistant Electoral Registration Officer (AERO).",
+            "Disqualifications for Registration: Non-citizenship, unsound mind, and disqualification under corrupt practices laws (Section 16)."
+          ],
+          "ta": [
+            "முதன்மை நோக்கம்: தேர்தலுக்கு முந்தைய கட்டமைப்பு மற்றும் நிர்வாக அடிப்படையை நிர்வகிக்கிறது.",
+            "இடங்கள் ஒதுக்கீடு: மக்களவை மற்றும் மாநில சட்டமன்றங்களுக்கான இடங்களை ஒதுக்குகிறது (அட்டவணைகள் 1 மற்றும் 2).",
+            "தொகுதி மறுவரைவு: பிராந்திய தொகுதிகளின் எல்லை வரையறைக்கான சட்டப்பூர்வ விதிகளை அமைக்கிறது.",
+            "வாக்காளர் பட்டியல் கட்டமைப்பு: வாக்காளர்களின் தகுதிகள், வாக்காளர் பட்டியலை தயாரித்தல், வெளியிடுதல் மற்றும் வருடாந்திர திருத்தம் செய்தல்.",
+            "தேர்தல் நிர்வாக அதிகாரிகள்: தலைமைத் தேர்தல் அதிகாரி (CEO), மாவட்டத் தேர்தல் அதிகாரி (DEO), வாக்காளர் பதிவு அதிகாரி (ERO) ஆகிய சட்டப்பூர்வ பதவிகளை உருவாக்குகிறது.",
+            "வாக்காளர் பட்டியலில் சேருவதற்கான தகுதியின்மைகள்: குடியுரிமை இன்மை, மனநலம் குன்றியவர் மற்றும் தேர்தல் குற்றங்களுக்காக தகுதிநீக்கம் செய்யப்பட்டவர் (பிரிவு 16)."
+          ]
+        }
+      }
+    ],
+    "sec_rpa_1951_statute": [
+      {
+        "title_en": "Representation of the People Act, 1951 — Scope & Key Provisions",
+        "title_ta": "மக்கள் பிரதிநிதித்துவச் சட்டம், 1951 — வரம்பு & முக்கியப் பிரிவுகள்",
+        "points": {
+          "en": [
+            "Primary Focus: Governs the ACTUAL CONDUCT of elections, qualifications/disqualifications of candidates, offences, and post-election disputes.",
+            "Qualifications for Membership: Citizenship, minimum age (25 years for Lok Sabha/Assembly; 30 years for Rajya Sabha/Council), registered elector in any parliamentary constituency (Section 3-6).",
+            "Section 8 (Disqualification on Conviction): Section 8(1) disqualifies for specific offences like promoting enmity, bribery, rape; Section 8(3) mandates automatic disqualification on conviction for ANY offence resulting in imprisonment of not less than 2 years.",
+            "Disqualification Period: Continues during imprisonment PLUS a further period of 6 years from the date of release.",
+            "Section 123 (Corrupt Practices): Bribery, undue influence, appeal to vote/refrain from voting on ground of religion, race, caste, community or language, promoting hatred, booth capturing.",
+            "Section 80A (Election Disputes): High Court has original jurisdiction to hear Election Petitions. Must be filed within 45 days of result declaration.",
+            "Section 29A (Party Registration): Framework for political party registration with ECI. In Indian National Congress (I) v. Institute of Social Welfare (2002), SC held ECI has NO power to deregister parties except under fraud or self-dissolution."
+          ],
+          "ta": [
+            "முதன்மை நோக்கம்: தேர்தல்களை நேரடியாக நடத்துதல், வேட்பாளர்களின் தகுதிகள்/தகுதியின்மைகள், தேர்தல் குற்றங்கள் மற்றும் தேர்தல் தகராறுகளை நிர்வகிக்கிறது.",
+            "உறுப்பினர் தகுதிகள்: இந்தியக் குடியுரிமை, குறைந்தபட்ச வயது (மக்களவை/சட்டமன்றத்திற்கு 25 வயது; மாநிலங்களவை/மேலவைக்கு 30 வயது), ஏதேனும் ஒரு நாடாளுமன்றத் தொகுதியில் வாக்காளராகப் பதிந்திருக்க வேண்டும் (பிரிவுகள் 3-6).",
+            "பிரிவு 8 (குற்றத் தண்டனை தகுதிநீக்கம்): பிரிவு 8(1) லஞ்சம், பகைமையை வளர்த்தல் போன்ற குறிப்பிட்ட குற்றங்களுக்கு தகுதிநீக்கம் செய்கிறது; பிரிவு 8(3) எந்தவொரு குற்றத்திற்காகவும் 2 ஆண்டுகளுக்குக் குறையாத சிறைத் தண்டனை பெற்றால் தானியங்கி தகுதிநீக்கம் விதிக்கிறது.",
+            "தகுதிநீக்க காலம்: சிறைத் தண்டனை காலம் முழுவதும் நீடிக்கும், மேலும் சிறையிலிருந்து விடுவிக்கப்பட்ட நாளிலிருந்து கூடுதலாக 6 ஆண்டுகள் நீடிக்கும்.",
+            "பிரிவு 123 (ஊழல் நடைமுறைகள்): லஞ்சம், முறையற்ற செல்வாக்கு, மதம், இனம், சாதி, மொழி ஆகியவற்றின் அடிப்படையில் வாக்கு கோருதல், பகைமையை உண்டாக்குதல், வாக்குச்சாவடி கைப்பற்றுதல்.",
+            "பிரிவு 80A (தேர்தல் வழக்குகள்): தேர்தல் மனுக்களை விசாரிக்க உயர் நீதிமன்றத்திற்கு மட்டுமே நேரடி அதிகார வரம்பு உள்ளது. தேர்தல் முடிவுகள் அறிவிக்கப்பட்ட 45 நாட்களுக்குள் மனு தாக்கல் செய்யப்பட வேண்டும்.",
+            "பிரிவு 29A (அரசியல் கட்சி பதிவு): ECI-ல் அரசியல் கட்சிகளைப் பதிவு செய்வதற்கான சட்டக் கட்டமைப்பு. கட்சிகளை நீக்கும் அதிகாரம் ECI-க்கு இல்லை என உச்ச நீதிமன்றம் தீர்ப்பளித்தது."
+          ]
+        }
+      }
+    ],
+    "sec_electoral_rolls_and_registration": [
+      {
+        "title_en": "Electoral Rolls Preparation, Revision & 2021 Reforms",
+        "title_ta": "வாக்காளர் பட்டியல் தயாரிப்பு, திருத்தம் & 2021 சீர்திருத்தங்கள்",
+        "points": {
+          "en": [
+            "Constitutional Principle: Article 325 mandates a single common electoral roll for both Parliamentary and Assembly constituencies.",
+            "Eligibility for Registration: 1. Citizen of India; 2. Age of 18 years on qualifying date; 3. Ordinarily resident in constituency (Section 19 of RPA 1950).",
+            "Four Qualifying Dates Reform: Previously, January 1st was the sole qualifying date. The Election Laws (Amendment) Act, 2021 introduced FOUR qualifying dates: January 1, April 1, July 1, and October 1, preventing youth from waiting an entire year.",
+            "EPIC (Elector Photo Identity Card): Introduced by ECI in 1993 under CEC T.N. Seshan to eliminate bogus voting and impersonation.",
+            "Voluntary Aadhaar Linkage: Section 23(4) inserted in 2021 allows EROs to request Aadhaar for authentication, but non-furnishing cannot be a ground for voter deletion.",
+            "Voter Verification & Purging: Special Intensive Revisions (SIR) and Continuous Updation ensure deletion of deceased, shifted, and duplicate electors (Demographically Similar Entries - DSE)."
+          ],
+          "ta": [
+            "அரசியலமைப்பு கொள்கை: உறுப்பு 325 நாடாளுமன்ற மற்றும் சட்டமன்றத் தொகுதிகள் இரண்டிற்கும் ஒரே பொதுவான வாக்காளர் பட்டியலைக் கட்டாயமாக்குகிறது.",
+            "வாக்காளர் பதிவு தகுதிகள்: 1. இந்தியக் குடிமகன்; 2. தகுதி தேதியில் 18 வயது பூர்த்தி; 3. தொகுதியில் வழக்கமாக வசிப்பவர் (RPA 1950 பிரிவு 19).",
+            "நான்கு தகுதி தேதிகள் சீர்திருத்தம்: முன்பு ஜனவரி 1 மட்டுமே தகுதி தேதியாக இருந்தது. 2021 தேர்தல் சட்டத் திருத்தம் நான்கு தகுதி தேதிகளை அறிமுகப்படுத்தியது: ஜனவரி 1, ஏப்ரல் 1, ஜூலை 1 மற்றும் அக்டோபர் 1.",
+            "வாக்காளர் அடையாள அட்டை (EPIC): போலி வாக்களிப்பு மற்றும் ஆள்மாறாட்டத்தை ஒழிக்க 1993-ல் தலைமைத் தேர்தல் ஆணையர் டி.என். சேஷன் அவர்களால் அறிமுகப்படுத்தப்பட்டது.",
+            "ஆதார் இணைப்பு (விருப்பத்தின் பேரில்): 2021 திருத்தம் வாக்காளர் பட்டியலை ஆதாருடன் இணைக்க வழிவகை செய்கிறது, ஆனால் ஆதார் வழங்காத காரணத்திற்காக வாக்காளர் பெயரை நீக்க முடியாது.",
+            "வாக்காளர் பட்டியல் தூய்மைப்படுத்தல்: இறந்தவர்கள், இடம் பெயர்ந்தவர்கள் மற்றும் இரட்டைப் பதிவுகளை நீக்குவதற்கு சிறப்பு தீவிரத் திருத்தங்கள் மேற்கொள்ளப்படுகின்றன."
+          ]
+        }
+      }
+    ],
+    "sec_delimitation_framework": [
+      {
+        "title_en": "Delimitation Commission & Boundary Redrawing Principles",
+        "title_ta": "தொகுதி மறுவரைவு ஆணையம் & எல்லை மாற்றக் கோட்பாடுகள்",
+        "points": {
+          "en": [
+            "Meaning: Delimitation is the act of redrawing boundaries of Lok Sabha and State Legislative Assembly constituencies to reflect population changes.",
+            "Constitutional Mandate: Article 82 empowers Parliament to enact Delimitation Acts after every decennial Census; Article 170 governs Assembly constituencies.",
+            "Delimitation Commission Structure: High-powered statutory body consisting of: 1. Retired Supreme Court Judge (Chairperson); 2. Chief Election Commissioner (or an EC); 3. State Election Commissioner of the concerned State.",
+            "Orders are Final: Under Article 329(a) and Delimitation Acts, orders of the Delimitation Commission have the FORCE OF LAW and CANNOT be challenged in any court.",
+            "Past Delimitation Exercises: Four Delimitation Commissions constituted in India so far: 1952, 1962, 1972, and 2002 (under Justice Kuldip Singh, implemented in 2008)."
+          ],
+          "ta": [
+            "பொருள்: மக்கள் தொகை மாற்றங்களுக்கு ஏற்ப மக்களவை மற்றும் சட்டமன்றத் தொகுதிகளின் எல்லைகளை மாற்றியமைக்கும் சட்டப்பூர்வ நடவடிக்கை.",
+            "அரசியலமைப்பு கட்டமைப்பு: உறுப்பு 82 ஒவ்வொரு மக்கள் தொகை கணக்கெடுப்பிற்குப் பிறகும் நாடாளுமன்றம் மறுவரைவுச் சட்டத்தை இயற்ற அதிகாரம் அளிக்கிறது; உறுப்பு 170 சட்டமன்றங்களுக்கானது.",
+            "ஆணையத்தின் கட்டமைப்பு: 1. ஓய்வுபெற்ற உச்ச நீதிமன்ற நீதிபதி (தலைவர்); 2. தலைமைத் தேர்தல் ஆணையர்; 3. சம்பந்தப்பட்ட மாநிலத் தேர்தல் ஆணையர்.",
+            "இறுதி ஆணை: உறுப்பு 329(a)-ன் படி மறுவரைவு ஆணையத்தின் ஆணைகள் சட்டத்தின் அந்தஸ்து கொண்டவை மற்றும் எந்தவொரு நீதிமன்றத்திலும் கேள்வி கேட்க முடியாது.",
+            "கடந்த கால மறுவரைவு ஆணையங்கள்: இந்தியாவில் இதுவரை 4 மறுவரைவு ஆணையங்கள் அமைக்கப்பட்டுள்ளன: 1952, 1962, 1972 மற்றும் 2002 (நீதிபதி குல்தீப் சிங் தலைமையில், 2008-ல் நடைமுறைப்படுத்தப்பட்டது)."
+          ]
+        }
+      },
+      {
+        "title_en": "Constitutional Freezes on Constituency Allocation",
+        "title_ta": "தொகுதிகள் எண்ணிக்கையின் மீதான அரசியலமைப்பு முடக்கங்கள்",
+        "points": {
+          "en": [
+            "42nd Amendment (1976): Froze total number of Lok Sabha and Assembly seats based on 1971 Census until the year 2000 to encourage population stabilization.",
+            "84th Amendment (2001): Extended the freeze on total seats in Lok Sabha and Assemblies for another 25 years, up to the year 2026 (until first Census after 2026).",
+            "87th Amendment (2003): Allowed internal rationalization and readjustment of constituency boundaries within states based on the 2001 Census, without changing total seats allocated to any state.",
+            "Post-2026 Delimitation Challenge: Potential disparity between northern states (high population growth) and southern states (successful population control, e.g., Tamil Nadu)."
+          ],
+          "ta": [
+            "42வது திருத்தம் (1976): மக்கள் தொகை கட்டுப்பாட்டை ஊக்குவிக்க, 1971 கணக்கெடுப்பின் அடிப்படையில் 2000 ஆண்டு வரை மக்களவை மற்றும் சட்டமன்ற இடங்களின் எண்ணிக்கையை முடக்கியது.",
+            "84வது திருத்தம் (2001): இந்த முடக்கத்தை மேலும் 25 ஆண்டுகளுக்கு நீட்டித்து, 2026 ஆம் ஆண்டு வரை (2026-க்குப் பிந்தைய முதல் மக்கள் தொகை கணக்கெடுப்பு வரை) மாற்றமிலாது நீடித்தது.",
+            "87வது திருத்தம் (2003): மாநிலங்களுக்கான மொத்த இடங்களின் எண்ணிக்கையை மாற்றாமல், மாநிலங்களுக்குள் தொகுதி எல்லைகளை 2001 கணக்கெடுப்பின்படி மறுசீரமைக்க அனுமதித்தது.",
+            "2026-க்குப் பிந்தைய சவால்: மக்கள் தொகையைக் கட்டுப்படுத்திய தென் மாநிலங்களுக்கும் (எ.கா. தமிழ்நாடு), கட்டுப்படுத்தாத வட மாநிலங்களுக்கும் இடையிலான பிரதிநிதித்துவ சமத்துவமின்மை விவாதம்."
+          ]
+        }
+      }
+    ],
+    "sec_representation_and_reservation": [
+      {
+        "title_en": "Constitutional Provisions for SC & ST Legislative Reservation",
+        "title_ta": "சட்டமன்றங்களில் எஸ்சி & எஸ்டி இடஒதுக்கீட்டுக்கான அரசியலமைப்பு விதிகள்",
+        "points": {
+          "en": [
+            "Article 330: Reservation of seats for Scheduled Castes (SCs) and Scheduled Tribes (STs) in the Lok Sabha based on population proportion.",
+            "Current Lok Sabha Numbers: Out of 543 elected seats, 84 seats are reserved for SCs and 47 seats are reserved for STs (Total: 131 reserved seats).",
+            "Article 332: Reservation of seats for SCs and STs in State Legislative Assemblies in proportion to population in each state.",
+            "Article 334 (Time Limitation & Extensions): Originally intended for only 10 years (until 1960). Extended every 10 years through constitutional amendments.",
+            "104th Constitutional Amendment Act (2019): Extended reservation for SCs and STs in Lok Sabha and Assemblies for another 10 years, up to 25th January 2030; DISCONTINUED the nomination of Anglo-Indians under Articles 331 & 333.",
+            "Principle of Single-Member Territorial Constituency: Reserved constituency means only SC/ST candidates can contest, but ALL registered voters in that constituency vote."
+          ],
+          "ta": [
+            "உறுப்பு 330: மக்கள் தொகை விகிதாச்சாரத்தின் அடிப்படையில் மக்களவையில் பட்டியல் சாதிகள் (SC) மற்றும் பட்டியல் பழங்குடியினருக்கு (ST) இடஒதுக்கீடு.",
+            "தற்போதைய மக்களவை இடங்கள்: 543 தேர்ந்தெடுக்கப்பட்ட இடங்களில், எஸ்சி பிரிவினருக்கு 84 இடங்களும், எஸ்டி பிரிவினருக்கு 47 இடங்களும் ஒதுக்கப்பட்டுள்ளன (மொத்தம்: 131 இடங்கள்).",
+            "உறுப்பு 332: ஒவ்வொரு மாநிலத்திலும் உள்ள மக்கள் தொகை விகிதத்திற்கு ஏற்ப மாநில சட்டமன்றங்களில் எஸ்சி/எஸ்டி பிரிவினருக்கு இடஒதுக்கீடு.",
+            "உறுப்பு 334 (காலக்கெடு & நீட்டிப்பு): முதலில் 10 ஆண்டுகளுக்கு மட்டுமே (1960 வரை) கொண்டுவரப்பட்டது. ஒவ்வொரு 10 ஆண்டுகளுக்கும் அரசியலமைப்பு திருத்தங்கள் மூலம் நீட்டிக்கப்பட்டது.",
+            "104வது அரசியலமைப்பு திருத்தச் சட்டம் (2019): எஸ்சி/எஸ்டி இடஒதுக்கீட்டை 2030 ஜனவரி 25 வரை 10 ஆண்டுகளுக்கு நீட்டித்தது; மேலும் உறுப்புகள் 331 மற்றும் 333-ன் கீழ் ஆங்கிலோ-இந்தியர்களுக்கான நியமன முறையை ரத்து செய்தது.",
+            "ஒற்றை நபர் பிராந்திய தொகுதி: தனித்தொகுதி என்பது எஸ்சி/எஸ்டி வேட்பாளர்கள் மட்டுமே போட்டியிட முடியும், ஆனால் அத்தொகுதியில் உள்ள அனைத்து வாக்காளர்களும் வாக்களிப்பார்கள்."
+          ]
+        }
+      }
+    ],
+    "sec_universal_adult_franchise": [
+      {
+        "title_en": "Universal Adult Suffrage & 61st Constitutional Amendment",
+        "title_ta": "உலகளாவிய வயதுவந்தோர் வாக்குரிமை & 61வது அரசியலமைப்பு திருத்தச் சட்டம்",
+        "points": {
+          "en": [
+            "Article 326: Every person who is a citizen of India and who is not less than 18 years of age and not disqualified under the Constitution or law is entitled to vote.",
+            "Original Age Limit: Constitution originally set voting age at 21 years in 1950.",
+            "61st Constitutional Amendment Act, 1988: Enacted under Rajiv Gandhi Government, amended Article 326 to reduce voting age from 21 to 18 years.",
+            "Enforcement Date: Came into force on 28th March 1989 (high-frequency TNPSC question!).",
+            "Democratic Impact: Enfranchised millions of youth, dramatically increasing youth participation and civic consciousness in national politics.",
+            "Grounds for Disqualification under Art 326: Non-residence, unsoundness of mind, crime, or corrupt or illegal practice."
+          ],
+          "ta": [
+            "உறுப்பு 326: இந்தியக் குடிமகனாக இருக்கும் மற்றும் 18 வயதுக்குக் குறையாத எந்தவொரு நபரும் தகுதிநீக்கம் செய்யப்படாத வரை வாக்களிக்க உரிமை உண்டு.",
+            "அசல் வயது வரம்பு: 1950-ல் அரசியலமைப்பு அசல் வாக்களிக்கும் வயதை 21 ஆண்டுகளாக நிர்ணயித்தது.",
+            "61வது அரசியலமைப்பு திருத்தச் சட்டம், 1988: ராஜீவ் காந்தி அரசால் கொண்டுவரப்பட்டு, உறுப்பு 326-ஐத் திருத்தி வாக்களிக்கும் வயதை 21-லிருந்து 18 ஆகக் குறைத்தது.",
+            "அமலுக்கு வந்த நாள்: 1989 மார்ச் 28 அன்று நடைமுறைக்கு வந்தது (TNPSC-ல் அடிக்கடி கேட்கப்படும் கேள்வி!).",
+            "ஜனநாயகத் தாக்கம்: கோடிக்கணக்கான இளைஞர்களுக்கு வாக்குரிமை அளித்து, தேசிய அரசியலில் இளைஞர்களின் பங்களிப்பை கணிசமாக உயர்த்தியது.",
+            "வாக்களிப்பதில் தகுதிநீக்க காரணங்கள்: இந்தியாவில் வசிக்காதவர், மனநலம் குன்றியவர், குற்றம் அல்லது ஊழல் நடைமுறைகளுக்காக தகுதிநீக்கம் செய்யப்பட்டவர்."
+          ]
+        }
+      }
+    ],
+    "sec_basic_electoral_process": [
+      {
+        "title_en": "Chronological Lifecycle of an Election in India",
+        "title_ta": "இந்தியாவில் தேர்தல் செயல்முறையின் காலவரிசை சுழற்சி",
+        "points": {
+          "en": [
+            "1. Delimitation & Roll Updation: Territorial boundaries defined; continuous revision and draft rolls published.",
+            "2. Election Notification: President (for Lok Sabha) or Governor (for Assembly) issues statutory notification under RPA 1951 on recommendation of ECI.",
+            "3. Model Code of Conduct Enforced: MCC comes into force immediately upon press announcement by ECI.",
+            "4. Nomination Filing: Candidates file nomination papers with Returning Officer (RO) accompanied by security deposit and mandatory Form 26 affidavit.",
+            "5. Scrutiny of Nominations: RO examines nomination papers in presence of candidates/agents; rejects invalid papers.",
+            "6. Withdrawal of Candidature: Specified period allowed for candidates to withdraw nomination; final list of contesting candidates published and symbols allotted.",
+            "7. Campaigning Period: Minimum statutory period allowed; campaigning must CEASE 48 hours before the conclusion of poll (silence period).",
+            "8. Polling: Conducted via EVMs and VVPATs under supervision of Presiding Officer and Polling Agents.",
+            "9. Counting & Declaration: Votes counted at designated counting centres; RO formally declares result and issues Certificate of Election (Form 21C).",
+            "10. Election Petition: Post-election dispute resolution; must be filed in High Court within 45 days of declaration of result under Section 81 of RPA 1951."
+          ],
+          "ta": [
+            "1. மறுவரைவு & வாக்காளர் பட்டியல்: எல்லைகள் வரையறுக்கப்பட்டு வாக்காளர் பட்டியல் புதுப்பிக்கப்படுகிறது.",
+            "2. தேர்தல் அறிவிக்கை: ECI பரிந்துரையின் பேரில் குடியரசுத் தலைவர் (மக்களவைக்கு) அல்லது ஆளுநர் (சட்டமன்றத்திற்கு) அறிவிக்கை வெளியிடுகிறார்.",
+            "3. தேர்தல் நடத்தை விதிமுறை அமல்: தேர்தல் தேதியை ECI பத்திரிகையாளர் சந்திப்பில் அறிவித்த உடனேயே MCC அமலுக்கு வருகிறது.",
+            "4. வேட்புமனு தாக்கல்: தேர்தல் நடத்தும் அதிகாரியிடம் (RO) வைப்புத்தொகை மற்றும் படிவம் 26 பிரமாணப் பத்திரத்துடன் வேட்புமனு தாக்கல் செய்யப்படுகிறது.",
+            "5. வேட்புமனு பரிசீலனை: வேட்புமனுக்களை RO பரிசீலித்து, செல்லாத மனுக்களை நிராகரிக்கிறார்.",
+            "6. வேட்புமனு திரும்பப் பெறுதல்: வேட்புமனுவை திரும்பப் பெற குறிப்பிட்ட கால அவகாசம் வழங்கப்பட்டு, இறுதிப் பட்டியல் மற்றும் சின்னங்கள் ஒதுக்கப்படுகின்றன.",
+            "7. தேர்தல் பிரச்சாரம்: வாக்குப்பதிவு முடிவடையும் நேரத்திற்கு 48 மணி நேரத்திற்கு முன்பாக பிரச்சாரம் கட்டாயமாக நிறுத்தப்பட வேண்டும் (அமைதிக் காலம்).",
+            "8. வாக்குப்பதிவு: வாக்குச்சாவடி தலைமை அதிகாரி மற்றும் முகவர்கள் முன்னிலையில் EVM மற்றும் VVPAT மூலம் வாக்குப்பதிவு நடைபெறுகிறது.",
+            "9. வாக்கு எண்ணிக்கை & முடிவு அறிவிப்பு: வாக்குகள் எண்ணப்பட்டு, வெற்றி பெற்ற வேட்பாளருக்கு RO சான்றிதழ் (Form 21C) வழங்குகிறார்.",
+            "10. தேர்தல் மனு: தேர்தல் தகராறுகளுக்கு தீர்வு காண, முடிவுகள் அறிவிக்கப்பட்ட 45 நாட்களுக்குள் உயர்நீதிமன்றத்தில் தேர்தல் மனு தாக்கல் செய்யப்பட வேண்டும்."
+          ]
+        }
+      }
+    ],
+    "sec_foundational_milestones": [
+      {
+        "title_en": "Foundational Milestones (1950 to 2000)",
+        "title_ta": "அடிப்படை மைல்கற்கள் (1950 முதல் 2000 வரை)",
+        "points": {
+          "en": [
+            "1950 (Jan 25): Establishment of the Election Commission of India.",
+            "1950 & 1951: Enactment of RPA 1950 and RPA 1951.",
+            "1951–52: First General Elections held successfully across India under Sukumar Sen.",
+            "1974–75: Tarkunde Committee appointed by Jayaprakash Narayan (Citizens for Democracy); recommended lowering voting age and multi-member ECI.",
+            "1976: 42nd Constitutional Amendment froze total legislative seats till 2000.",
+            "1988: 61st Constitutional Amendment lowered voting age from 21 to 18 (effective March 1989).",
+            "1988: Section 61A added to RPA 1951 granting statutory backing to EVMs.",
+            "1989 & 1993: ECI converted from single-member into multi-member body.",
+            "1993: Introduction of Elector Photo Identity Cards (EPIC) under T.N. Seshan."
+          ],
+          "ta": [
+            "1950 (ஜனவரி 25): இந்திய தேர்தல் ஆணையம் (ECI) தோற்றுவிக்கப்பட்டது.",
+            "1950 & 1951: மக்கள் பிரதிநிதித்துவச் சட்டங்கள் (RPA 1950 மற்றும் 1951) இயற்றப்பட்டன.",
+            "1951–52: இந்தியாவின் முதல் பொதுத் தேர்தல்கள் தலைமைத் தேர்தல் ஆணையர் சுகுமார் சென் தலைமையில் வெற்றிகரமாக நடைபெற்றன.",
+            "1974–75: ஜெயபிரகாஷ் நாராயணனால் அமைக்கப்பட்ட தார்குண்டே குழு வாக்குரிமை வயதைக் குறைக்கவும் பல உறுப்பினர் ஆணையத்திற்கும் பரிந்துரைத்தது.",
+            "1976: 42வது அரசியலமைப்பு திருத்தம் சட்டமன்ற இடங்களின் எண்ணிக்கையை 2000 வரை முடக்கியது.",
+            "1988: 61வது அரசியலமைப்பு திருத்தம் வாக்குரிமை வயதை 21-லிருந்து 18 ஆகக் குறைத்தது (1989 மார்ச் முதல் அமல்).",
+            "1988: EVM பயன்பாட்டிற்கு சட்டப்பூர்வ அங்கீகாரம் அளிக்க RPA 1951-ல் பிரிவு 61A சேர்க்கப்பட்டது.",
+            "1989 & 1993: ECI ஒற்றை நபர் அமைப்பிலிருந்து பல உறுப்பினர் அமைப்பாக மாற்றப்பட்டது.",
+            "1993: டி.என். சேஷன் தலைமையில் வாக்காளர் புகைப்பட அடையாள அட்டை (EPIC) அறிமுகப்படுத்தப்பட்டது."
+          ]
+        }
+      }
+    ],
+    "comparison_tables": [
+      {
+        "id": "tbl_articles_324_329",
+        "title_en": "Constitutional Articles 324 to 329 Summary",
+        "title_ta": "அரசியலமைப்பு உறுப்புகள் 324 முதல் 329 சுருக்க அட்டவணை",
+        "headers_en": [
+          "Article",
+          "Subject Matter",
+          "Constitutional Scope & Significance"
+        ],
+        "headers_ta": [
+          "உறுப்பு",
+          "பொருள்",
+          "அரசியலமைப்பு வரம்பு & முக்கியத்துவம்"
+        ],
+        "rows_en": [
+          [
+            "Article 324",
+            "Superintendence, direction & control of elections",
+            "Vests election authority in Election Commission of India for Parliament, State Assemblies, President & Vice-President."
+          ],
+          [
+            "Article 325",
+            "One general electoral roll",
+            "No person ineligible for inclusion or excluded on grounds only of religion, race, caste, sex or any of them."
+          ],
+          [
+            "Article 326",
+            "Universal Adult Suffrage",
+            "Elections to Lok Sabha and State Assemblies based on adult suffrage (Voting age reduced from 21 to 18 by 61st Amend 1988)."
+          ],
+          [
+            "Article 327",
+            "Power of Parliament for electoral law",
+            "Parliament empowered to make laws regarding elections to Parliament and State Legislatures (e.g. RPA 1950, RPA 1951)."
+          ],
+          [
+            "Article 328",
+            "Power of State Legislature for election law",
+            "State Legislature can make provisions for State elections only to the extent Parliament has not made provision."
+          ],
+          [
+            "Article 329",
+            "Bar on judicial interference in electoral matters",
+            "Courts prohibited from questioning validity of delimitation laws; elections challenged only via Election Petition in High Court."
+          ]
+        ],
+        "rows_ta": [
+          [
+            "உறுப்பு 324",
+            "தேர்தல்களின் மேற்பார்வை, வழிகாட்டல் & கட்டுப்பாடு",
+            "நாடாளுமன்றம், மாநில சட்டமன்றங்கள், குடியரசுத் தலைவர் & துணைத் தலைவர் தேர்தல்களுக்கான அதிகாரத்தை ECI-க்கு அளிக்கிறது."
+          ],
+          [
+            "உறுப்பு 325",
+            "ஒரே பொது வாக்காளர் பட்டியல்",
+            "மதம், இனப்பிரிவு, சாதி, பாலினம் ஆகியவற்றின் அடிப்படையில் மட்டுமே எவரையும் சேர்க்க மறுக்கவோ விலக்கவோ முடியாது."
+          ],
+          [
+            "உறுப்பு 326",
+            "உலகளாவிய வயது வந்தோர் வாக்குரிமை",
+            "மக்களவை மற்றும் மாநில சட்டமன்றத் தேர்தல்கள் வயது வந்தோர் வாக்குரிமை அடிப்படை (61வது திருத்தம் மூலம் 21-லிருந்து 18 ஆகக் குறைப்பு)."
+          ],
+          [
+            "உறுப்பு 327",
+            "தேர்தல் சட்டத்திற்கான நாடாளுமன்ற அதிகாரம்",
+            "நாடாளுமன்ற மற்றும் மாநில சட்டமன்றத் தேர்தல்கள் தொடர்பான சட்டங்களை இயற்ற நாடாளுமன்றத்திற்கு அதிகாரம் (எ.கா. RPA 1950, 1951)."
+          ],
+          [
+            "உறுப்பு 328",
+            "தேர்தல் சட்டத்திற்கான மாநில சட்டமன்ற அதிகாரம்",
+            "நாடாளுமன்றம் சட்டம் இயற்றாத வரம்பிற்குள் மாநிலத் தேர்தல்களுக்கான சட்டங்களை மாநில சட்டமன்றம் இயற்றலாம்."
+          ],
+          [
+            "உறுப்பு 329",
+            "நீதிமன்றத் தலையீட்டிற்குத் தடை",
+            "மறுவரைவுச் சட்டங்களை நீதிமன்றங்கள் கேள்வி கேட்க முடியாது; தேர்தல் மனு மூலம் மட்டுமே உயர் நீதிமன்றத்தில் தேர்தலை எதிர்க்க முடியும்."
+          ]
+        ]
+      },
+      {
+        "id": "tbl_rpa1950_vs_rpa1951",
+        "title_en": "Master Distinction: RPA 1950 vs RPA 1951",
+        "title_ta": "ஒப்பீட்டு அட்டவணை: RPA 1950 vs RPA 1951",
+        "headers_en": [
+          "Comparison Parameter",
+          "RPA 1950",
+          "RPA 1951"
+        ],
+        "headers_ta": [
+          "ஒப்பீட்டு அளவுரு",
+          "RPA 1950 (மக்கள் பிரதிநிதித்துவச் சட்டம்)",
+          "RPA 1951 (மக்கள் பிரதிநிதித்துவச் சட்டம்)"
+        ],
+        "rows_en": [
+          [
+            "Primary Focus",
+            "PRE-ELECTION Structural Framework",
+            "ACTUAL ELECTION Conduct & Adjudication"
+          ],
+          [
+            "Key Subjects",
+            "Allocation of seats, Delimitation, Electoral rolls preparation",
+            "Conduct of polls, Nominations, Scrutiny, Counting, Results"
+          ],
+          [
+            "Voters vs Candidates",
+            "Focuses on Voters and their qualifications to register",
+            "Focuses on Candidates, qualifications, disqualifications, offences"
+          ],
+          [
+            "Administrative Machinery",
+            "Creates CEO, DEO, ERO, AERO posts",
+            "Governs Returning Officers (RO), Presiding Officers, Observers"
+          ],
+          [
+            "Disqualification Grounds",
+            "Disqualification for registration in roll (Art. 16: non-citizenship)",
+            "Disqualification for contesting/sitting as MP/MLA (Section 8: convictions)"
+          ],
+          [
+            "Dispute Resolution",
+            "Appeals against ERO decisions to CEO",
+            "Election Petitions filed before High Court (Section 80A)"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "முதன்மை நோக்கம்",
+            "தேர்தலுக்கு முந்தைய கட்டமைப்புப் பணிகள்",
+            "நேரடித் தேர்தல் நடத்துதல் & தீர்ப்பளிப்பு"
+          ],
+          [
+            "முக்கிய அம்சங்கள்",
+            "இடங்கள் ஒதுக்கீடு, மறுவரைவு, வாக்காளர் பட்டியல் தயாரிப்பு",
+            "வாக்குப்பதிவு, வேட்புமனுக்கள், பரிசீலனை, வாக்கு எண்ணிக்கை, முடிவுகள்"
+          ],
+          [
+            "வாக்காளர்கள் vs வேட்பாளர்கள்",
+            "வாக்காளர்கள் மற்றும் வாக்காளர் பதிவுத் தகுதிகளில் கவனம்",
+            "வேட்பாளர்கள், தகுதிகள், தகுதியின்மைகள் மற்றும் தேர்தல் குற்றங்களில் கவனம்"
+          ],
+          [
+            "நிர்வாக அதிகாரிகள்",
+            "CEO, DEO, ERO, AERO பதவிகளை உருவாக்குகிறது",
+            "தேர்தல் நடத்தும் அதிகாரிகள் (RO), வாக்குச்சாவடி அலுவலர்கள், பார்வையாளர்களை நிர்வகிக்கிறது"
+          ],
+          [
+            "தகுதிநீக்க காரணங்கள்",
+            "பட்டியலில் சேருவதற்கான தகுதிநீக்கம் (பிரிவு 16)",
+            "MP/MLA பதவிக்கு போட்டியிடுவதற்கான தகுதிநீக்கம் (பிரிவு 8: குற்றத்தண்டனை)"
+          ],
+          [
+            "தகராறு தீர்வு",
+            "ERO முடிவுகளுக்கு எதிரான மேல்முறையீடு CEO-விடம்",
+            "உயர்நீதிமன்றத்தில் தாக்கல் செய்யப்படும் தேர்தல் மனுக்கள் (பிரிவு 80A)"
+          ]
+        ]
+      },
+      {
+        "id": "tbl_eci_vs_sec",
+        "title_en": "ECI vs State Election Commission (SEC) Comparison",
+        "title_ta": "மத்திய ECI vs மாநில தேர்தல் ஆணையம் (SEC) ஒப்பீடு",
+        "headers_en": [
+          "Attribute",
+          "Election Commission of India (ECI)",
+          "State Election Commission (SEC)"
+        ],
+        "headers_ta": [
+          "பண்பு",
+          "இந்திய தேர்தல் ஆணையம் (ECI)",
+          "மாநில தேர்தல் ஆணையம் (SEC)"
+        ],
+        "rows_en": [
+          [
+            "Constitutional Basis",
+            "Article 324 (Part XV)",
+            "Articles 243K & 243ZA (Part IX & IXA)"
+          ],
+          [
+            "Elections Conducted",
+            "Lok Sabha, Rajya Sabha, State Assemblies, Councils, President, VP",
+            "Rural Panchayats and Urban Municipalities ONLY"
+          ],
+          [
+            "Appointment Authority",
+            "President on advice of statutory Selection Committee",
+            "Governor of the State"
+          ],
+          [
+            "Removal Safeguard",
+            "CEC removed like SC Judge; ECs on CEC recommendation",
+            "SEC removed in like manner and grounds as High Court Judge"
+          ],
+          [
+            "Subordination",
+            "Not subordinate to Central Government",
+            "Independent constitutional body, NOT subordinate to ECI"
+          ]
+        ],
+        "rows_ta": [
+          [
+            "அரசியலமைப்பு அடிப்படை",
+            "உறுப்பு 324 (பகுதி XV)",
+            "உறுப்புகள் 243K & 243ZA (பகுதி IX & IXA)"
+          ],
+          [
+            "நடத்தும் தேர்தல்கள்",
+            "மக்களவை, மாநிலங்களவை, சட்டமன்றங்கள், மேலவைகள், குடியரசுத் தலைவர், துணைத் தலைவர்",
+            "ஊராட்சிகள் மற்றும் நகராட்சிகள் மட்டுமே"
+          ],
+          [
+            "நியமன அதிகாரி",
+            "சட்டப்பூர்வ குழுவின் ஆலோசனையின் பேரில் குடியரசுத் தலைவர்",
+            "மாநில ஆளுநர்"
+          ],
+          [
+            "நீக்கும் நடைமுறை",
+            "உச்ச நீதிமன்ற நீதிபதியைப் போல CEC நீக்கப்படுகிறார்",
+            "உயர் நீதிமன்ற நீதிபதியைப் போல SEC நீக்கப்படுகிறார்"
+          ],
+          [
+            "கீழ்ப்படிதல்",
+            "மத்திய அரசுக்குக் கீழ்ப்பட்டதல்ல",
+            "ECI-க்கு கீழ்ப்பட்டதல்ல; சுதந்திரமான தனி அரசியலமைப்பு அமைப்பு"
+          ]
+        ]
+      }
+    ],
+    "important_facts": {
+      "en": [
+        "Article 324 plenary power: SC held in Mohinder Singh Gill (1978) that where statutory law is silent, ECI holds reservoir of power.",
+        "61st Amendment Act, 1988 reduced voting age from 21 to 18 years, coming into effect on 28th March 1989.",
+        "104th Amendment Act, 2019 extended SC/ST reservation in Lok Sabha and Assemblies till 2030 and eliminated Anglo-Indian nomination.",
+        "High Court has exclusive original jurisdiction to hear Election Petitions under Section 80A of RPA 1951.",
+        "84th Constitutional Amendment (2001) froze the total number of parliamentary and assembly seats till the year 2026."
+      ],
+      "ta": [
+        "உறுப்பு 324 வரம்பற்ற அதிகாரம்: சட்டம் அமைதியாக இருக்கும் இடங்களில் ECI-க்கு முழு அதிகாரம் உண்டு என உச்ச நீதிமன்றம் தீர்ப்பளித்தது (1978).",
+        "61வது திருத்தச் சட்டம், 1988 வாக்களிக்கும் வயதை 21-லிருந்து 18 ஆகக் குறைத்து, 1989 மார்ச் 28 அன்று அமலுக்கு வந்தது.",
+        "104வது திருத்தச் சட்டம், 2019 எஸ்சி/எஸ்டி இடஒதுக்கீட்டை 2030 வரை நீட்டித்து, ஆங்கிலோ-இந்தியர் நியமனத்தை ரத்து செய்தது.",
+        "RPA 1951 பிரிவு 80A-ன் கீழ் தேர்தல் மனுக்களை நேரடியாக விசாரிக்கும் முழு அதிகாரம் உயர் நீதிமன்றத்திற்கு மட்டுமே உண்டு.",
+        "84வது திருத்தச் சட்டம் (2001) நாடாளுமன்றம் மற்றும் சட்டமன்றங்களின் மொத்த இடங்களின் எண்ணிக்கையை 2026 வரை முடக்கியது."
+      ]
+    },
+    "tnpsc_traps": [
+      {
+        "title": "1. Local Body Elections Conduct Trap (உள்ளாட்சித் தேர்தல் நடத்தும் அமைப்புப் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Assuming the Election Commission of India (ECI) conducts elections to Panchayats and Municipalities.",
+            "FACT: Under Articles 243K and 243ZA, local body elections are conducted exclusively by State Election Commissions (SECs), NOT the ECI."
+          ],
+          "ta": [
+            "பொறி: உள்ளாட்சித் தேர்தல்களை (பஞ்சாயத்து & நகராட்சி) இந்திய தேர்தல் ஆணையம் நடத்துகிறது என நினைப்பது.",
+            "உண்மை: உறுப்புகள் 243K மற்றும் 243ZA-ன் படி உள்ளாட்சித் தேர்தல்களை மாநில தேர்தல் ஆணையங்கள் மட்டுமே நடத்துகின்றன; இந்திய தேர்தல் ஆணையம் அல்ல."
+          ]
+        }
+      },
+      {
+        "title": "2. Election Petition Forum Trap (தேர்தல் மனு தாக்கல் செய்யும் மன்றப் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Believing that election petitions challenging Parliamentary or Assembly elections can be filed directly in the Supreme Court.",
+            "FACT: Under Section 80A of RPA 1951 read with Article 329(b), the High Court has sole original jurisdiction to try an election petition."
+          ],
+          "ta": [
+            "பொறி: தேர்தல் மனுக்களை நேரடியாக உச்ச நீதிமன்றத்தில் தாக்கல் செய்யலாம் என நினைப்பது.",
+            "உண்மை: RPA 1951 பிரிவு 80A மற்றும் உறுப்பு 329(b)-ன் படி தேர்தல் மனுவை விசாரிக்கும் அசல் அதிகாரம் உயர் நீதிமன்றத்திற்கு மட்டுமே உண்டு."
+          ]
+        }
+      },
+      {
+        "title": "3. 61st Constitutional Amendment Enforcement Trap (61வது திருத்தச் சட்டம் அமலாக்கப் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Assuming the 61st Amendment Act reducing voting age to 18 years was enforced in 1988.",
+            "FACT: The Act was passed in 1988, but came into legal force on 28th March 1989."
+          ],
+          "ta": [
+            "பொறி: வாக்களிக்கும் வயதை 18 ஆகக் குறைத்த 61வது திருத்தச் சட்டம் 1988-ல் அமலுக்கு வந்தது என நினைப்பது.",
+            "உண்மை: இச்சட்டம் 1988-ல் நிறைவேற்றப்பட்டாலும், 1989 மார்ச் 28 அன்றே சட்டப்பூர்வமாக அமலுக்கு வந்தது."
+          ]
+        }
+      },
+      {
+        "title": "4. Delimitation Commission Immunity Trap (மறுவரையறை ஆணைய உத்தரவு மீதான வழக்குத் தடைப் பொறி)",
+        "points": {
+          "en": [
+            "TRAP: Assuming Delimitation Commission constituency orders can be challenged or stayed in High Courts under Article 226.",
+            "FACT: Article 329(a) and Section 10(2) of Delimitation Act mandate that once published in the Gazette, orders have the force of law and CANNOT be questioned in any court."
+          ],
+          "ta": [
+            "பொறி: தொகுதி மறுவரையறை ஆணையத்தின் உத்தரவுகளை உயர் நீதிமன்றத்தில் ரிட் மனு மூலம் தடையாணை பெறலாம் என நினைப்பது.",
+            "உண்மை: உறுப்பு 329(a)-ன் படி மறுவரையறை உத்தரவுகள் அரசிதழில் வெளியிடப்பட்ட பின் அவற்றை எந்த நீதிமன்றமும் கேள்வி கேட்க முடியாது."
+          ]
+        }
+      }
+    ],
+    "quick_revision": {
+      "en": [
+        "Part XV (Articles 324-329): Comprehensive constitutional framework governing elections in India.",
+        "Article 324: Superintendence, direction, and control of elections vested in ECI.",
+        "Article 325: Single general electoral roll; no discrimination based on religion, race, caste, or sex.",
+        "Article 326: Universal adult suffrage; voting age lowered from 21 to 18 by 61st CAA 1988 (in force 28 Mar 1989).",
+        "RPA 1950 vs RPA 1951: RPA 1950 governs pre-election groundwork (seats, rolls, delimitation); RPA 1951 governs actual election conduct, corrupt practices, and election disputes.",
+        "Delimitation: Article 82 & 170; seat freeze till 2026 under 84th CAA 2001; 2001 Census internal adjustment under 87th CAA 2003.",
+        "Reservation: Articles 330 (LS) & 332 (SLA) for SCs/STs extended up to 2030 by 104th CAA 2019."
+      ],
+      "ta": [
+        "பகுதி XV (உறுப்புகள் 324-329): இந்திய தேர்தல் முறைக்கான விரிவான அரசியலமைப்பு கட்டமைப்பு.",
+        "உறுப்பு 324: தேர்தல்களைக் கண்காணிக்கும், வழிநடத்தும் மற்றும் கட்டுப்படுத்தும் முழு அதிகாரம் தேர்தல் ஆணையத்திடம் உள்ளது.",
+        "உறுப்பு 325: ஒரே பொதுவான வாக்காளர் பட்டியல்; மதம், இனம், சாதி அல்லது பாலின அடிப்படையில் எவரையும் ஒதுக்க முடியாது.",
+        "உறுப்பு 326: வயதுவந்தோர் வாக்குரிமை; 61வது திருத்தச் சட்டம் (1988) மூலம் வாக்களிக்கும் வயது 21-லிருந்து 18 ஆகக் குறைக்கப்பட்டது (அமலாக்கம்: 28 மார்ச் 1989).",
+        "RPA 1950 vs RPA 1951: RPA 1950 தேர்தலுக்கு முந்தைய பணிகளையும் (இடங்கள், வாக்காளர் பட்டியல், மறுவரையறை); RPA 1951 தேர்தல் நடத்துதல், முறைகேடுகள் மற்றும் தேர்தல் வழக்குகளையும் கையாள்கிறது.",
+        "தொகுதி மறுவரையறை: உறுப்புகள் 82 & 170; 84வது திருத்தத்தின்படி 2026 வரை தொகுதிகள் எண்ணிக்கை முடக்கம்; 87வது திருத்தத்தின்படி 2001 மக்கள் தொகை அடிப்படையில் எல்லைச் சீரமைப்பு.",
+        "இடஒதுக்கீடு: மக்களவை (330) மற்றும் சட்டமன்றங்களில் (332) எஸ்சி/எஸ்டி இடஒதுக்கீடு 104வது திருத்தம் மூலம் 2030 வரை நீட்டிக்கப்பட்டது."
+      ]
+    },
+    "expected_questions": [
+      {
+        "type": "prelims",
+        "question_en": "Which Constitutional Amendment reduced the voting age from 21 years to 18 years in India?",
+        "question_ta": "இந்தியாவில் வாக்களிக்கும் வயதை 21-லிருந்து 18 ஆகக் குறைத்த அரசியலமைப்பு திருத்தச் சட்டம் எது?",
+        "answer_en": "61st Constitutional Amendment Act, 1988 (enforced on 28th March 1989).",
+        "answer_ta": "61வது அரசியலமைப்பு திருத்தச் சட்டம், 1988 (1989 மார்ச் 28 அன்று அமலுக்கு வந்தது)."
+      },
+      {
+        "type": "prelims",
+        "question_en": "Under which Article does the High Court derive power to try an Election Petition?",
+        "question_ta": "எந்த விதியின் கீழ் தேர்தல் மனுவை விசாரிக்கும் அதிகாரத்தை உயர் நீதிமன்றம் பெறுகிறது?",
+        "answer_en": "Article 329(b) read with Section 80A of the Representation of the People Act, 1951.",
+        "answer_ta": "அரசியலமைப்பு உறுப்பு 329(b) மற்றும் மக்கள் பிரதிநிதித்துவச் சட்டம் 1951-ன் பிரிவு 80A."
+      }
+    ],
+    "pyq_references": [
+      {
+        "year": "2022",
+        "exam": "TNPSC Group 1 Prelims",
+        "question": "Match the Articles: Art 324 (Superintendence of Elections), Art 325 (Single Electoral Roll), Art 326 (Adult Suffrage), Art 327 (Power of Parliament to make provision).",
+        "question_en": "Match the Articles: Art 324 (Superintendence of Elections), Art 325 (Single Electoral Roll), Art 326 (Adult Suffrage), Art 327 (Power of Parliament to make provision).",
+        "question_ta": "பொருத்துக: உறுப்பு 324 (தேர்தல் மேற்பார்வை), உறுப்பு 325 (ஒரே வாக்காளர் பட்டியல்), உறுப்பு 326 (வயதுவந்தோர் வாக்குரிமை), உறுப்பு 327 (நாடாளுமன்றத்தின் தேர்தல் சட்ட அதிகாரம்)."
+      }
+    ],
+    "revision_cards": [
+      {
+        "id": "card_p1_1",
+        "front_en": "What is the key difference between RPA 1950 and RPA 1951?",
+        "front_ta": "RPA 1950 மற்றும் RPA 1951 ஆகியவற்றுக்கு இடையேயான முக்கிய வேறுபாடு என்ன?",
+        "back_en": "RPA 1950 deals with pre-election groundwork (seat allocation, delimitation, electoral rolls). RPA 1951 deals with actual conduct of elections, qualifications, offences, and election disputes.",
+        "back_ta": "RPA 1950 தேர்தலுக்கு முந்தைய அடிப்படை கட்டமைப்பைக் கையாள்கிறது (இடங்கள் ஒதுக்கீடு, மறுவரைவு, வாக்காளர் பட்டியல்). RPA 1951 நேரடித் தேர்தல் நடத்துதல், வேட்பாளர் தகுதிகள், குற்றங்கள் மற்றும் தேர்தல் தகராறுகளைக் கையாள்கிறது."
+      },
+      {
+        "id": "card_p1_2",
+        "front_en": "Can Delimitation Commission orders be challenged in the Supreme Court or High Courts?",
+        "front_ta": "தொகுதி மறுவரைவு ஆணையத்தின் உத்தரவுகளை உச்சநீதிமன்றத்திலோ அல்லது உயர்நீதிமன்றங்களிலோ சவால் செய்ய முடியுமா?",
+        "back_en": "No. Article 329(a) bars judicial interference in delimitation laws once published in the Gazette.",
+        "back_ta": "முடியாது. அரசிதழில் வெளியிடப்பட்ட பிறகு மறுவரைவுச் சட்டங்களை நீதிமன்றங்கள் கேள்வி கேட்பதை உறுப்பு 329(a) தடை செய்கிறது."
+      },
+      {
+        "id": "card_p1_3",
+        "front_en": "What is the current composition and decision-making rule of the Election Commission of India?",
+        "front_ta": "இந்திய தேர்தல் ஆணையத்தின் தற்போதைய கட்டமைப்பு மற்றும் முடிவெடுக்கும் விதி என்ன?",
+        "back_en": "Composed of 1 Chief Election Commissioner and 2 Election Commissioners. All 3 have EQUAL powers and status equal to an SC judge. Decisions are taken by MAJORITY.",
+        "back_ta": "1 தலைமைத் தேர்தல் ஆணையர் மற்றும் 2 தேர்தல் ஆணையர்களைக் கொண்டது. மூவருக்கும் உச்ச நீதிமன்ற நீதிபதிக்கு இணையான சம அதிகாரம் உண்டு. பெரும்பான்மை அடிப்படையில் முடிவுகள் எடுக்கப்படும்."
+      }
+    ],
+    "mind_map": [
+      {
+        "title": "ELECTORAL REFORMS FOUNDATIONS (PART 1)",
+        "short_label": "Foundations",
+        "children": [
+          {
+            "title": "Constitutional Spectrum (Arts 324-329)",
+            "short_label": "Part XV",
+            "children": [
+              {
+                "title": "Art 324: ECI Plenary Superintendence",
+                "short_label": "Art 324"
+              },
+              {
+                "title": "Art 325: Single Non-Discriminatory Roll",
+                "short_label": "Art 325"
+              },
+              {
+                "title": "Art 326: Universal Adult Franchise (Age 18)",
+                "short_label": "Art 326"
+              },
+              {
+                "title": "Art 327-328: Legislative Powers of Parliament & States",
+                "short_label": "Arts 327-328"
+              },
+              {
+                "title": "Art 329: Bar on Judicial Interference",
+                "short_label": "Art 329"
+              }
+            ]
+          },
+          {
+            "title": "Statutory Twin Pillars",
+            "short_label": "Acts",
+            "children": [
+              {
+                "title": "RPA 1950: Seats, Delimitation & Voter Rolls",
+                "short_label": "RPA 1950"
+              },
+              {
+                "title": "RPA 1951: Conduct, Disqualifications & Offences",
+                "short_label": "RPA 1951"
+              }
+            ]
+          },
+          {
+            "title": "Institutional Autonomy & Representation",
+            "short_label": "Machinery",
+            "children": [
+              {
+                "title": "ECI: 1 CEC + 2 ECs (SC Judge Status & Removal)",
+                "short_label": "ECI"
+              },
+              {
+                "title": "Delimitation: Art 82 & 170 (Freeze till 2026)",
+                "short_label": "Delimitation"
+              },
+              {
+                "title": "Reservation: Arts 330, 332, 334 (Extended to 2030 by 104th Amend)",
+                "short_label": "Reservation"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

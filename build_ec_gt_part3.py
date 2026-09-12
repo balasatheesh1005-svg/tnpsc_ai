@@ -1,0 +1,686 @@
+"""
+Part 3 of Grand Test generator for Election Commission (EC_GT_051 to EC_GT_075).
+"""
+
+from ec_mcq_helper import make_ec_q
+
+def get_gt_part3():
+    qs = []
+
+    # GT 051
+    qs.append(make_ec_q(
+        qid="EC_GT_051", diff="Medium", qtype="Single-Choice", subtopic="Section 136 Offences",
+        en_stem="Under Section 136 of RPA 1951, what is the penalty for an election officer or staff member who fraudulently defaces or destroys any nomination paper or ballot box/machine?",
+        ta_stem="1951 மக்கள் பிரதிநிதித்துவச் சட்டத்தின் பிரிவு 136-ன் கீழ், வேட்புமனு அல்லது வாக்குப்பெட்டி/இயந்திரத்தை மோசடியாக சேதப்படுத்தும் தேர்தல் அதிகாரி அல்லது ஊழியருக்கு விதிக்கப்படும் தண்டனை என்ன?",
+        en_a="Imprisonment for a term which may extend to two years, or with fine, or with both", ta_a="இரண்டு ஆண்டுகள் வரை நீட்டிக்கப்படக்கூடிய சிறைத்தண்டனை, அல்லது அபராதம், அல்லது இரண்டும்",
+        en_b="Imprisonment for up to six months only", ta_b="ஆறு மாதங்கள் வரை மட்டுமே சிறை",
+        en_c="A fine of Rs. 200 without any imprisonment", ta_c="சிறைத் தண்டனையின்றி ரூ. 200 அபராதம் மட்டும்",
+        en_d="Compulsory retirement with 50% pension cut", ta_d="50% ஓய்வூதியக் குறைப்புடன் கட்டாய ஓய்வு",
+        correct_key="A",
+        exp_en="Section 136(2)(a) provides that if an offence of defacing/destroying nomination papers or ballots is committed by an officer on election duty, he shall be punishable with imprisonment up to 2 years, or fine, or both (for any other person, up to 6 months under clause (b)).",
+        exp_ta="பிரிவு 136(2)(a)-ன் படி, தேர்தல் பணியில் உள்ள அதிகாரி இக்குற்றத்தில் ஈடுபட்டால் 2 ஆண்டுகள் வரை சிறை அல்லது அபராதம் அல்லது இரண்டும் விதிக்கப்படும் (பிற நபர்களுக்கு 6 மாதம் வரை).",
+        why_a_en="Correct. Up to 2 years for officers under Section 136(2)(a).",
+        why_a_ta="சரியானது. பிரிவு 136(2)(a)-ன் கீழ் தேர்தல் அலுவலர்களுக்கு 2 ஆண்டுகள் வரை சிறை.",
+        why_b_en="Incorrect. 6 months applies to non-officers under clause (b).",
+        why_b_ta="தவறானது. 6 மாதங்கள் சாதாரண நபர்களுக்குப் பொருந்தும்.",
+        why_c_en="Incorrect. Rs. 200 fine is not the statutory penalty.",
+        why_c_ta="தவறானது. ரூ. 200 அபராதம் அல்ல.",
+        why_d_en="Incorrect. Compulsory retirement is departmental, not penal under Section 136.",
+        why_d_ta="தவறானது. கட்டாய ஓய்வு துறைசார்ந்ததே தவிர குற்றவியல் சட்டம் அல்ல.",
+        tip_en="Election officers face 4 times harsher imprisonment (2 years vs 6 months) under Section 136 due to abuse of trust.",
+        tip_ta="நம்பிக்கைத் துரோகம் காரணமாக தேர்தல் அதிகாரிகளுக்கு 4 மடங்கு கடுமையான சிறைத் தண்டனை (2 ஆண்டுகள்) விதிக்கப்படுகிறது.",
+        fact_en="Section 136 offences are cognizable under Section 136(3).",
+        fact_ta="பிரிவு 136-ன் கீழ் உள்ள குற்றங்கள் பிடியாணையின்றி கைது செய்யத்தக்க (cognizable) குற்றங்களாகும்.",
+        tags=["Section 136", "Destruction of Ballots", "Severe Penalty"]
+    ))
+
+    # GT 052
+    qs.append(make_ec_q(
+        qid="EC_GT_052", diff="Medium", qtype="Single-Choice", subtopic="Section 58 Repoll",
+        en_stem="Under Section 58 of the Representation of the People Act, 1951, on what grounds can the Election Commission declare the poll at a polling station void and appoint a day for fresh poll?",
+        ta_stem="1951 மக்கள் பிரதிநிதித்துவச் சட்டத்தின் பிரிவு 58-ன் கீழ், எந்தக் காரணங்களின் அடிப்படையில் ஒரு வாக்குச்சாவடியில் நடைபெற்ற வாக்கெடுப்பை செல்லாது என அறிவித்து மறுதேர்தல் நடத்த தேர்தல் ஆணையம் உத்தரவிட முடியும்?",
+        en_a="If any EVM/ballot box is unlawfully taken out of custody, accidentally or intentionally destroyed, or suffered an error vitiating the poll", ta_a="வாக்குப்பதிவு இயந்திரம் அல்லது வாக்குப்பெட்டி சட்டவிரோதமாக எடுத்துச் செல்லப்பட்டால், தற்செயலாகவோ அல்லது திட்டமிட்டோ அழிக்கப்பட்டால், அல்லது வாக்கெடுப்பை பாதிக்கும் பிழை ஏற்பட்டால்",
+        en_b="If the voter turnout in that polling station was below 30%", ta_b="அந்த வாக்குச்சாவடியில் வாக்குப்பதிவு 30%-க்கும் குறைவாக இருந்தால்",
+        en_c="If none of the candidates received more than 50% of the votes cast", ta_c="வேட்பாளர்கள் எவரும் பதிவான வாக்குகளில் 50%-க்கு மேல் பெறவில்லை என்றால்",
+        en_d="If the polling station was set up inside a privately owned building", ta_d="வாக்குச்சாவடி ஒரு தனியார் கட்டிடத்திற்குள் அமைக்கப்பட்டிருந்தால்",
+        correct_key="A",
+        exp_en="Section 58 of RPA 1951 empowers the ECI, upon receiving a report from the Returning Officer, to declare the poll at that polling station void and fix a date for a fresh poll if the voting machine or ballot box has been destroyed, damaged, or tampered with.",
+        exp_ta="பிரிவு 58-ன் கீழ், இயந்திரங்கள் சேதமடைந்தாலோ, அழிக்கப்பட்டாலோ அல்லது வாக்குப்பதிவு பாதிக்கப்பட்டாலோ, தேர்தல் அதிகாரி அறிக்கையின் பேரில் அந்த வாக்குச்சாவடி வாக்கெடுப்பை ரத்து செய்து மறுதேர்தல் நடத்த ECI உத்தரவிடலாம்.",
+        why_a_en="Correct. Section 58 covers destruction, loss, or damage to voting machines/ballots.",
+        why_a_ta="சரியானது. பிரிவு 58 இயந்திரங்கள் சேதமடைதல் அல்லது அழிக்கப்படுவதைக் கையாள்கிறது.",
+        why_b_en="Incorrect. Low turnout does not invalidate a poll.",
+        why_b_ta="தவறானது. குறைந்த வாக்குப்பதிவு மறுதேர்தலுக்குக் காரணமாகாது.",
+        why_c_en="Incorrect. FPTP does not require 50% majority.",
+        why_c_ta="தவறானது. 50% வாக்குகள் தேவைப்படுவதில்லை.",
+        why_d_en="Incorrect. Private buildings can be requisitioned lawfully under Section 160.",
+        why_d_ta="தவறானது. சட்டப்படி தனியார் கட்டிடங்கள் பயன்படுத்தப்படலாம்.",
+        tip_en="Section 58 deals with booth-level destruction; Section 58A specifically covers booth capturing.",
+        tip_ta="பிரிவு 58 வாக்குச்சாவடி சேதத்தைக் கையாள்கிறது; பிரிவு 58A வாக்குச்சாவடி கைப்பற்றுதலைக் கையாள்கிறது.",
+        fact_en="When a fresh poll is held under Section 58, all registered electors of that booth are entitled to vote afresh.",
+        fact_ta="பிரிவு 58-ன் கீழ் மறுதேர்தல் நடக்கும் போது அந்த பூத்தின் அனைத்து வாக்காளர்களும் மீண்டும் வாக்களிக்கலாம்.",
+        tags=["Section 58", "Fresh Poll", "Repoll Grounds"]
+    ))
+
+    # GT 053
+    qs.append(make_ec_q(
+        qid="EC_GT_053", diff="Hard", qtype="Single-Choice", subtopic="Section 58A Booth Capturing Countermand",
+        en_stem="Under Section 58A of RPA 1951, what wide power is vested in the Election Commission if booth capturing takes place on a large scale across a constituency?",
+        ta_stem="1951 மக்கள் பிரதிநிதித்துவச் சட்டத்தின் பிரிவு 58A-ன் கீழ், ஒரு தொகுதி முழுவதும் பெருமளவில் வாக்குச்சாவடி கைப்பற்றுதல் நிகழ்ந்தால் தேர்தல் ஆணையத்திற்கு உள்ள விரிவான அதிகாரம் என்ன?",
+        en_a="Power to declare the entire election in that constituency void and countermand the election", ta_a="அத்தொகுதியில் நடைபெற்ற முழு தேர்தலையும் செல்லாது என அறிவித்து தேர்தலையே ரத்து (countermand) செய்யும் அதிகாரம்",
+        en_b="Power to declare the runner-up candidate elected without holding fresh elections", ta_b="மறுதேர்தல் நடத்தாமல் இரண்டாம் இடம் பிடித்த வேட்பாளரை வெற்றி பெற்றவராக அறிவிக்கும் அதிகாரம்",
+        en_c="Power to impose President's Rule in the State under Article 356 directly", ta_c="சரத்து 356-ன் கீழ் மாநிலத்தில் குடியரசுத் தலைவர் ஆட்சியை நேரடியாக அமல்படுத்தும் அதிகாரம்",
+        en_d="Power to ban all contesting political parties from future general elections", ta_d="போட்டியிட்ட அனைத்து அரசியல் கட்சிகளையும் எதிர்காலத் தேர்தல்களில் போட்டியிட தடை செய்யும் அதிகாரம்",
+        correct_key="A",
+        exp_en="Section 58A(2)(b) empowers the Election Commission, if satisfied that booth capturing has affected the result of the election on a large scale, to countermand the election in that constituency completely, in addition to ordering repolls at specific booths under clause (a).",
+        exp_ta="பிரிவு 58A(2)(b)-ன் கீழ், வாக்குச்சாவடி கைப்பற்றுதல் முடிவுகளைப் பாதிக்கும் வகையில் பரவலாக நிகழ்ந்திருந்தால், அத்தொகுதிக்கான தேர்தலையே முழுமையாக ரத்து செய்ய (countermand) தேர்தல் ஆணையத்திற்கு அதிகாரம் உண்டு.",
+        why_a_en="Correct. Section 58A empowers ECI to countermand the election.",
+        why_a_ta="சரியானது. தேர்தலையே முழுமையாக ரத்து செய்ய பிரிவு 58A அதிகாரம் அளிக்கிறது.",
+        why_b_en="Incorrect. ECI cannot declare runners-up elected.",
+        why_b_ta="தவறானது. இரண்டாம் இடம் பெற்றவரை வெற்றியாளராக அறிவிக்க முடியாது.",
+        why_c_en="Incorrect. President's Rule is proclaimed by the President, not ECI.",
+        why_c_ta="தவறானது. குடியரசுத் தலைவர் ஆட்சி தேர்தல் ஆணையத்தால் விதிக்கப்பட முடியாது.",
+        why_d_en="Incorrect. ECI cannot ban all political parties.",
+        why_d_ta="தவறானது. அனைத்து கட்சிகளையும் தடை செய்ய முடியாது.",
+        tip_en="Section 58A was added by the 1989 RPA Amendment to tackle organized booth capturing syndicates.",
+        tip_ta="வாக்குச்சாவடி கைப்பற்றுதலைத் தடுக்க 1989 திருத்தத்தின் மூலம் பிரிவு 58A சேர்க்கப்பட்டது.",
+        fact_en="This section was famously invoked in several parliamentary constituencies during the 1990s.",
+        fact_ta="1990-களில் பல மக்களவைத் தொகுதிகளில் இச்சட்டப்பிரிவு பயன்படுத்தப்பட்டது.",
+        tags=["Section 58A", "Countermanding Election", "Booth Capturing"]
+    ))
+
+    # GT 054
+    qs.append(make_ec_q(
+        qid="EC_GT_054", diff="Medium", qtype="Single-Choice", subtopic="Section 52 Candidate Death",
+        en_stem="Following the 1996 amendment to Section 52 of RPA 1951, an election is countermanded upon the death of a candidate only if:",
+        ta_stem="1951 மக்கள் பிரதிநிதித்துவச் சட்டத்தின் பிரிவு 52-ல் 1996-ல் செய்யப்பட்ட திருத்தத்தைத் தொடர்ந்து, ஒரு வேட்பாளர் மரணமடையும் போது எப்போது மட்டுமே தேர்தல் ரத்து செய்யப்படும்?",
+        en_a="The deceased candidate was set up by a recognized National or State political party", ta_a="மரணமடைந்த வேட்பாளர் ஓர் அங்கீகரிக்கப்பட்ட தேசிய அல்லது மாநில அரசியல் கட்சியால் நிறுத்தப்பட்டிருந்தால் மட்டுமே",
+        en_b="The deceased candidate was an independent candidate who had deposited the security deposit", ta_b="மரணமடைந்த வேட்பாளர் பிணைத்தொகை செலுத்திய ஒரு சுயேச்சை வேட்பாளராக இருந்தால்",
+        en_c="Any candidate dies regardless of their political affiliation or independent status", ta_c="அரசியல் சார்பின்றி எந்தவொரு வேட்பாளர் மரணமடைந்தாலும்",
+        en_d="The deceased candidate was leading in published opinion polls", ta_d="மரணமடைந்த வேட்பாளர் கருத்துக் கணிப்புகளில் முன்னிலையில் இருந்திருந்தால்",
+        correct_key="A",
+        exp_en="Prior to 1996, death of ANY candidate countermanded the poll, leading to non-serious independents being murdered to stall elections. The 1996 amendment to Section 52 restricted countermanding/adjourning poll exclusively to the death of a candidate set up by a RECOGNIZED political party.",
+        exp_ta="1996-க்கு முன் எந்தவொரு வேட்பாளர் இறந்தாலும் தேர்தல் ரத்து செய்யப்பட்டது. இதனைத் தவிர்க்க 1996 திருத்தம் மூலம், அங்கீகரிக்கப்பட்ட தேசிய அல்லது மாநிலக் கட்சியின் வேட்பாளர் இறந்தால் மட்டுமே தேர்தல் ஒத்திவைக்கப்படும் என மாற்றப்பட்டது.",
+        why_a_en="Correct. Section 52 applies exclusively to candidates of recognized political parties.",
+        why_a_ta="சரியானது. பிரிவு 52 அங்கீகரிக்கப்பட்ட கட்சிகளின் வேட்பாளர்களுக்கு மட்டுமே பொருந்தும்.",
+        why_b_en="Incorrect. Death of independent candidates no longer stalls elections.",
+        why_b_ta="தவறானது. சுயேச்சை வேட்பாளர்கள் இறப்பினால் தேர்தல் நிறுத்தப்படுவதில்லை.",
+        why_c_en="Incorrect. The universal rule was abolished in 1996.",
+        why_c_ta="தவறானது. பொது விதி 1996-ல் மாற்றப்பட்டது.",
+        why_d_en="Incorrect. Opinion polls have no legal effect on election continuity.",
+        why_d_ta="தவறானது. கருத்துக் கணிப்புகளுக்கு சட்ட செல்லுபடி இல்லை.",
+        tip_en="When a recognized party candidate dies, the party is given 7 days to field another candidate.",
+        tip_ta="அங்கீகரிக்கப்பட்ட கட்சி வேட்பாளர் இறந்தால் மற்றொரு வேட்பாளரை நிறுத்த அக்கட்சிக்கு 7 நாட்கள் அவகாசம் அளிக்கப்படும்.",
+        fact_en="This crucial reform was recommended by the Dinesh Goswami Committee (1990).",
+        fact_ta="இம்முக்கிய சீர்திருத்தத்தை தினேஷ் கோஸ்வாமி குழு (1990) பரிந்துரைத்தது.",
+        tags=["Section 52", "Candidate Death", "1996 Amendment"]
+    ))
+
+    # GT 055
+    qs.append(make_ec_q(
+        qid="EC_GT_055", diff="Hard", qtype="Single-Choice", subtopic="Section 8A Corrupt Practices Disqualification",
+        en_stem="Under Section 8A of the Representation of the People Act, 1951, who determines the period of disqualification for a person found guilty of a corrupt practice by a High Court in an election petition?",
+        ta_stem="1951 மக்கள் பிரதிநிதித்துவச் சட்டத்தின் பிரிவு 8A-ன் கீழ், தேர்தல் மனுவில் உயர் நீதிமன்றத்தால் ஊழல் நடைமுறையில் குற்றவாளி எனத் தீர்ப்பளிக்கப்பட்ட ஒரு நபருக்கான தகுதிநீக்கக் காலத்தை தீர்மானிப்பது யார்?",
+        en_a="President of India after obtaining the opinion of the Election Commission (not exceeding six years)", ta_a="தேர்தல் ஆணையத்தின் ஆலோசனையைப் பெற்ற பிறகு இந்தியக் குடியரசுத் தலைவர் (அதிகபட்சம் ஆறு ஆண்டுகளுக்கு மிகாமல்)",
+        en_b="Chief Justice of the High Court who delivered the judgment", ta_b="தீர்ப்பை வழங்கிய உயர் நீதிமன்ற தலைமை நீதிபதி",
+        en_c="Election Commission of India acting unilaterally by gazette notification", ta_c="அரசிதழ் அறிவிப்பு மூலம் தன்னிச்சையாக செயல்படும் இந்திய தேர்தல் ஆணையம்",
+        en_d="Speaker of the Lok Sabha in consultation with the Attorney General", ta_d="அட்டர்னி ஜெனரலுடன் கலந்தாலோசித்து மக்களவை சபாநாயகர்",
+        correct_key="A",
+        exp_en="Under Section 8A, the case of every person found guilty of a corrupt practice is submitted to the President, who decides the question of disqualification and its period (up to 6 years) in accordance with the binding opinion of the Election Commission.",
+        exp_ta="பிரிவு 8A-ன் கீழ், ஊழல் குற்றவாளியின் வழக்கு குடியரசுத் தலைவரிடம் சமர்ப்பிக்கப்பட்டு, தேர்தல் ஆணையத்தின் கட்டுப்படுத்தும் ஆலோசனையின்படி அதிகபட்சம் 6 ஆண்டுகள் வரை தகுதிநீக்கக் காலத்தை குடியரசுத் தலைவர் தீர்மானிக்கிறார்.",
+        why_a_en="Correct. President decides per ECI's binding opinion under Section 8A.",
+        why_a_ta="சரியானது. பிரிவு 8A-ன் கீழ் ECI ஆலோசனையின்படி குடியரசுத் தலைவர் தீர்மானிக்கிறார்.",
+        why_b_en="Incorrect. The High Court finds guilt, but does not fix the Section 8A administrative period.",
+        why_b_ta="தவறானது. உயர் நீதிமன்றம் குற்றத்தை உறுதி செய்கிறது, ஆனால் நிர்வாகக் காலத்தை நிர்ணயிப்பதில்லை.",
+        why_c_en="Incorrect. ECI gives opinion, President makes the formal determination.",
+        why_c_ta="தவறானது. ECI ஆலோசனை வழங்குகிறது, குடியரசுத் தலைவர் உத்தரவிடுகிறார்.",
+        why_d_en="Incorrect. Speaker has no role under Section 8A.",
+        why_d_ta="தவறானது. சபாநாயகருக்கு இதில் தொடர்பில்லை.",
+        tip_en="Section 8A was substituted in 1975 to provide flexible executive discretion instead of automatic statutory 6-year disqualification.",
+        tip_ta="1975-ல் தானியங்கி தகுதிநீக்கத்திற்குப் பதிலாக நெகிழ்வான அதிகாரத்தை வழங்க பிரிவு 8A திருத்தப்பட்டது.",
+        fact_en="Section 8A specifically mandates that ECI's opinion must be tendered within 3 months of the presidential reference.",
+        fact_ta="குடியரசுத் தலைவர் பரிந்துரைத்த 3 மாதங்களுக்குள் ECI தனது ஆலோசனையை வழங்க வேண்டும்.",
+        tags=["Section 8A", "Corrupt Practice", "President and ECI"]
+    ))
+
+    # GT 056
+    qs.append(make_ec_q(
+        qid="EC_GT_056", diff="Medium", qtype="Single-Choice", subtopic="Section 11 ECI Power",
+        en_stem="Under Section 11 of the Representation of the People Act, 1951, what extraordinary power is vested in the Election Commission regarding disqualifications?",
+        ta_stem="1951 மக்கள் பிரதிநிதித்துவச் சட்டத்தின் பிரிவு 11-ன் கீழ், தகுதிநீக்கங்கள் தொடர்பாக தேர்தல் ஆணையத்திற்கு வழங்கப்பட்டுள்ள அசாதாரண அதிகாரம் என்ன?",
+        en_a="Power to remove or reduce the period of any disqualification under Chapter III (except Section 8A)", ta_a="அத்தியாயம் III-ன் கீழான எந்தவொரு தகுதிநீக்கத்தையும் நீக்க அல்லது அதன் கால அளவைக் குறைக்கும் அதிகாரம் (பிரிவு 8A தவிர)",
+        en_b="Power to increase the disqualification period up to life imprisonment", ta_b="தகுதிநீக்கக் காலத்தை வாழ்நாள் முழுவதும் அதிகரிக்கும் அதிகாரம்",
+        en_c="Power to overturn Supreme Court criminal convictions", ta_c="உச்ச நீதிமன்றத்தின் குற்றவியல் தண்டனைகளையே ரத்து செய்யும் அதிகாரம்",
+        en_d="Power to disqualify family members of convicted legislators", ta_d="தண்டனை பெற்ற சட்டமன்ற உறுப்பினரின் குடும்ப உறுப்பினர்களையும் தகுதிநீக்கம் செய்யும் அதிகாரம்",
+        correct_key="A",
+        exp_en="Section 11 provides that the Election Commission may, for reasons to be recorded in writing, remove or reduce the period of any disqualification under Chapter III of Part II (except disqualification under Section 8A).",
+        exp_ta="பிரிவு 11-ன் படி, எழுத்துப்பூர்வ காரணங்களை பதிவு செய்து, பகுதி II-ன் அத்தியாயம் III-ன் கீழ் உள்ள தகுதிநீக்கத்தை நீக்க அல்லது குறைக்க தேர்தல் ஆணையத்திற்கு அதிகாரம் உண்டு (பிரிவு 8A தவிர).",
+        why_a_en="Correct. ECI can remove or reduce disqualification under Section 11.",
+        why_a_ta="சரியானது. தகுதிநீக்கத்தை நீக்க அல்லது குறைக்க ECI-க்கு அதிகாரம் உள்ளது.",
+        why_b_en="Incorrect. ECI cannot enhance disqualifications beyond statutory limits.",
+        why_b_ta="தவறானது. தகுதிநீக்கக் காலத்தை அதிகரிக்க முடியாது.",
+        why_c_en="Incorrect. ECI cannot interfere with court criminal convictions.",
+        why_c_ta="தவறானது. நீதிமன்ற குற்றத் தீர்ப்புகளில் தலையிட முடியாது.",
+        why_d_en="Incorrect. Guilt is strictly individual.",
+        why_d_ta="தவறானது. குடும்ப உறுப்பினர்களை தகுதிநீக்கம் செய்ய முடியாது.",
+        tip_en="In 2019, ECI reduced the disqualification of Sikkim Chief Minister Prem Singh Tamang (Golay) under Section 11 to allow him to contest assembly by-polls.",
+        tip_ta="2019-ல் சிக்கிம் முதல்வர் பிரேம் சிங் தமாங்கின் தகுதிநீக்கக் காலத்தை பிரிவு 11-ன் கீழ் ECI குறைத்தது.",
+        fact_en="Section 11B confers a similar power on ECI to remove disqualifications under Section 10A (election expenses).",
+        fact_ta="பிரிவு 11B தேர்தல் செலவுக் கணக்கு தகுதிநீக்கத்தை (பிரிவு 10A) நீக்க ECI-க்கு அதிகாரம் அளிக்கிறது.",
+        tags=["Section 11", "ECI Powers", "Reduction of Disqualification"]
+    ))
+
+    # GT 057
+    qs.append(make_ec_q(
+        qid="EC_GT_057", diff="Medium", qtype="Single-Choice", subtopic="Service Voters Section 60",
+        en_stem="Under Section 60 of the Representation of the People Act, 1951, which of the following is NOT classified as a 'Service Voter' entitled to vote by postal ballot or proxy?",
+        ta_stem="1951 மக்கள் பிரதிநிதித்துவச் சட்டத்தின் பிரிவு 60-ன் கீழ், தபால் வாக்கு அல்லது பதிலாள் வாக்கு மூலம் வாக்களிக்கத் தகுதியுடைய 'சேவை வாக்காளர்' (Service Voter) என வகைப்படுத்தப்படாதவர் யார்?",
+        en_a="Private corporate employees working in overseas multinational companies", ta_a="வெளிநாட்டு பன்னாட்டு நிறுவனங்களில் பணியாற்றும் தனியார் நிறுவன ஊழியர்கள்",
+        en_b="Members of the Armed Forces of the Union of India", ta_b="இந்திய ஒன்றியத்தின் ஆயுதப்படை உறுப்பினர்கள்",
+        en_c="Members of an armed police force of a State serving outside that State", ta_c="சொந்த மாநிலத்திற்கு வெளியே பணியாற்றும் ஒரு மாநிலத்தின் ஆயுதக் காவல் படை உறுப்பினர்கள்",
+        en_d="Persons employed under the Government of India in a post outside India (diplomatic staff)", ta_d="இந்தியாவிற்கு வெளியே உள்ள பதவியில் மத்திய அரசின் கீழ் பணிபுரியும் நபர்கள் (தூதரக ஊழியர்கள்)",
+        correct_key="A",
+        exp_en="Service voters under Section 60 include (a) Armed forces members, (b) armed police of a State serving outside, (c) personnel subject to the Army Act, and (d) GOI diplomatic personnel posted abroad. Private corporate employees abroad are overseas electors under Section 20A, NOT service voters.",
+        exp_ta="பிரிவு 60-ன் கீழ் உள்ள சேவை வாக்காளர்களில் ஆயுதப்படையினர், வெளிமாநிலத்தில் உள்ள சிறப்பு காவல்படையினர், மற்றும் வெளிநாட்டு தூதரக அதிகாரிகள் அடங்குவர்; தனியார் நிறுவன பணியாளர்கள் இதில் வர மாட்டார்கள் (அவர்கள் பிரிவு 20A NRI வாக்காளர்கள்).",
+        why_a_en="Correct. Private corporate employees are ordinary overseas electors (Sec 20A), not service voters.",
+        why_a_ta="சரியானது. தனியார் ஊழியர்கள் பிரிவு 20A-ன் கீழ் சாதாரண வெளிநாட்டு வாக்காளர்கள், சேவை வாக்காளர்கள் அல்ல.",
+        why_b_en="Incorrect. Armed forces are quintessential service voters.",
+        why_b_ta="தவறானது. ஆயுதப்படையினர் முதன்மை சேவை வாக்காளர்கள்.",
+        why_c_en="Incorrect. Out-of-state state armed police are service voters under Section 60(a).",
+        why_c_ta="தவறானது. வெளிமாநில ஆயுதக் காவல்துறையினர் சேவை வாக்காளர்களே.",
+        why_d_en="Incorrect. Diplomatic personnel are service voters.",
+        why_d_ta="தவறானது. தூதரக அதிகாரிகள் சேவை வாக்காளர்களே.",
+        tip_en="The wife of a service voter (if ordinarily residing with him) is also entitled to be registered as a service voter; this facility does not automatically apply to the husband of a female service voter.",
+        tip_ta="சேவை வாக்காளரின் மனைவிக்கும் (உடன் வசித்தால்) இவ்வுரிமை உண்டு.",
+        fact_en="Service voters vote digitally through the Electronically Transmitted Postal Ballot System (ETPBS).",
+        fact_ta="சேவை வாக்காளர்கள் ETPBS மூலம் மின்னணு முறையில் தபால் வாக்குகளைப் பெறுகின்றனர்.",
+        tags=["Service Voters", "Section 60", "ETPBS"]
+    ))
+
+    # GT 058
+    qs.append(make_ec_q(
+        qid="EC_GT_058", diff="Easy", qtype="Single-Choice", subtopic="Registration Forms 6 7 8",
+        en_stem="Under the Registration of Electors Rules, 1960, which statutory form is used by a citizen for objection to an existing entry or seeking deletion of a name from the electoral roll?",
+        ta_stem="1960 வாக்காளர் பதிவு விதிகளின் கீழ், ஏற்கனவே உள்ள பதிவிற்கு ஆட்சேபனை தெரிவிக்க அல்லது வாக்காளர் பட்டியலிலிருந்து பெயரை நீக்க ஒரு குடிமகனால் பயன்படுத்தப்படும் சட்டப்பூர்வ படிவம் எது?",
+        en_a="Form 7", ta_a="படிவம் 7",
+        en_b="Form 6", ta_b="படிவம் 6",
+        en_c="Form 8", ta_c="படிவம் 8",
+        en_d="Form 6A", ta_d="படிவம் 6A",
+        correct_key="A",
+        exp_en="Under the Registration of Electors Rules, 1960:\nForm 6: Application for inclusion of name (new voter)\nForm 6A: Application for overseas elector\nForm 7: Application for objection to inclusion or deletion of name\nForm 8: Application for correction of particulars, shifting of residence, or marking as PwD.",
+        exp_ta="1960 வாக்காளர் பதிவு விதிகளின்படி:\nபடிவம் 6: புதிய வாக்காளர் சேர்க்கை\nபடிவம் 6A: வெளிநாடு வாழ் வாக்காளர் சேர்க்கை\nபடிவம் 7: பெயர் நீக்கம் அல்லது ஆட்சேபனைக்கான படிவம்\nபடிவம் 8: முகவரி மாற்றம், திருத்தம் மற்றும் மாற்றுத்திறனாளி குறிப்புக்கான படிவம்.",
+        why_a_en="Correct. Form 7 is for objection/deletion.",
+        why_a_ta="சரியானது. படிவம் 7 பெயர் நீக்கம் மற்றும் ஆட்சேபனைக்கானது.",
+        why_b_en="Incorrect. Form 6 is for new voter enrollment.",
+        why_b_ta="தவறானது. படிவம் 6 புதிய வாக்காளர் சேர்க்கைக்கானது.",
+        why_c_en="Incorrect. Form 8 is for correction of particulars/shifting.",
+        why_c_ta="தவறானது. படிவம் 8 திருத்தம் மற்றும் இடமாற்றத்திற்கான படிவம்.",
+        why_d_en="Incorrect. Form 6A is for overseas electors.",
+        why_d_ta="தவறானது. படிவம் 6A வெளிநாடு வாழ் இந்தியர்களுக்கானது.",
+        tip_en="Form 8A (transposition within constituency) was merged into Form 8 in the 2022 reforms.",
+        tip_ta="தொகுதிக்குள் இடமாற்றத்திற்கான படிவம் 8A தற்போது படிவம் 8-ல் இணைக்கப்பட்டுள்ளது.",
+        fact_en="Citizens can submit Forms 6, 7, and 8 online through the National Voters' Service Portal (NVSP) or Voter Helpline App.",
+        fact_ta="வாக்காளர் உதவி செயலி மற்றும் NVSP இணையதளம் மூலம் இப்பபடிவங்களை ஆன்லைனில் சமர்ப்பிக்கலாம்.",
+        tags=["Form 7", "Form 6", "Form 8", "Electoral Roll Forms"]
+    ))
+
+    # GT 059
+    qs.append(make_ec_q(
+        qid="EC_GT_059", diff="Medium", qtype="Single-Choice", subtopic="Roll Revision Types",
+        en_stem="What is the distinction between 'Summary Revision' and 'Intensive Revision' of electoral rolls conducted by the Election Commission?",
+        ta_stem="தேர்தல் ஆணையத்தால் நடத்தப்படும் வாக்காளர் பட்டியலின் 'சுருக்கமுறை திருத்தம்' (Summary Revision) மற்றும் 'தீவிர திருத்தம்' (Intensive Revision) ஆகியவற்றிற்கு இடையேயான வேறுபாடு என்ன?",
+        en_a="Intensive Revision involves house-to-house enumeration by enumerators from scratch, whereas Summary Revision updates the existing roll by inviting claims and objections", ta_a="தீவிர திருத்தம் என்பது வீடு வீடாகச் சென்று கணக்கெடுப்பாளர்களால் ஆரம்பம் முதல் கணக்கெடுக்கப்படுவதாகும்; சுருக்கமுறை திருத்தம் என்பது இருக்கும் பட்டியலை அடிப்படையாகக் கொண்டு ஆட்சேபனைகள் மூலம் புதுப்பிப்பதாகும்",
+        en_b="Summary Revision is conducted only during national emergency, while Intensive is for general elections", ta_b="சுருக்கமுறை திருத்தம் அவசரநிலையின் போது மட்டுமே நடத்தப்படுகிறது; தீவிர திருத்தம் பொதுத் தேர்தலுக்கானது",
+        en_c="Intensive Revision is exclusively conducted for military cantonment areas", ta_c="தீவிர திருத்தம் ராணுவப் பகுதிகளுக்காக மட்டுமே நடத்தப்படுகிறது",
+        en_d="Summary Revision is done by High Court judges, while Intensive is done by District Magistrates", ta_d="சுருக்கமுறை திருத்தம் நீதிபதிகளாலும், தீவிர திருத்தம் ஆட்சியர்களாலும் செய்யப்படுகிறது",
+        correct_key="A",
+        exp_en="In an Intensive Revision, designated enumerators visit every single household to prepare a completely fresh draft roll. In a Summary Revision (conducted annually), the existing roll is published as draft and updated through claims and objections via Forms 6, 7, and 8.",
+        exp_ta="தீவிர திருத்தத்தில் அதிகாரிகள் ஒவ்வொரு வீட்டிற்கும் நேரில் சென்று முற்றிலும் புதிய பட்டியலைத் தயாரிக்கின்றனர்; ஆண்டுதோறும் நடக்கும் சுருக்கமுறை திருத்தத்தில் இருக்கும் வரைவுப் பட்டியல் வெளியிடப்பட்டு படிவங்கள் 6, 7, 8 மூலம் திருத்தப்படுகிறது.",
+        why_a_en="Correct. Intensive = door-to-door fresh census; Summary = updating existing roll via claims.",
+        why_a_ta="சரியானது. தீவிர திருத்தம் = வீடு வீடாக புதிய கணக்கெடுப்பு; சுருக்கமுறை = கோரிக்கைகள் மூலம் புதுப்பித்தல்.",
+        why_b_en="Incorrect. Summary revision is an annual statutory routine.",
+        why_b_ta="தவறானது. சுருக்கமுறை திருத்தம் ஆண்டுதோறும் நடைபெறும் வழக்கம்.",
+        why_c_en="Incorrect. Not confined to cantonments.",
+        why_c_ta="தவறானது. ராணுவப் பகுதிகளுக்கு மட்டுமானது அல்ல.",
+        why_d_en="Incorrect. Both are conducted by EROs under ECI.",
+        why_d_ta="தவறானது. இரண்டுமே தேர்தல் பதிவு அதிகாரிகளால் செய்யப்படுகின்றன.",
+        tip_en="In addition, 'Continuous Updation' operates throughout the year between revisions until the last date of nominations.",
+        tip_ta="மேலும் வேட்புமனு தாக்கல் கடைசி நாள் வரை ஆண்டு முழுவதும் தொடர் புதுப்பித்தல் (Continuous Updation) நடைபெறுகிறது.",
+        fact_en="Section 21 of RPA 1950 governs the revision of electoral rolls.",
+        fact_ta="1950 மக்கள் பிரதிநிதித்துவச் சட்டத்தின் பிரிவு 21 வாக்காளர் பட்டியல் திருத்தத்தை நிர்வகிக்கிறது.",
+        tags=["Electoral Roll Revision", "Summary Revision", "Intensive Revision"]
+    ))
+
+    # GT 060
+    qs.append(make_ec_q(
+        qid="EC_GT_060", diff="Hard", qtype="Single-Choice", subtopic="DSE and PSE Technology",
+        en_stem="In modern electoral roll management, what automated software techniques does the Election Commission employ to identify duplicate voter entries?",
+        ta_stem="நவீன வாக்காளர் பட்டியல் நிர்வாகத்தில், போலி மற்றும் இரட்டை வாக்காளர் பதிவுகளைக் கண்டறிய தேர்தல் ஆணையம் பயன்படுத்தும் தானியங்கி மென்பொருள் உத்திகள் எவை?",
+        en_a="Demographic Similar Entries (DSE) and Photo Similar Entries (PSE) using advanced facial recognition and phonetic matching", ta_a="மேம்பட்ட முக அங்கீகாரம் மற்றும் ஒலிப்புப் பொருத்தத்தைப் பயன்படுத்தும் மக்கள் தொகையியல் ஒத்த பதிவுகள் (DSE) மற்றும் புகைப்பட ஒத்த பதிவுகள் (PSE)",
+        en_b="Biometric retina scanning at all international airports", ta_b="அனைத்து சர்வதேச விமான நிலையங்களிலும் பயோமெட்ரிக் விழித்திரை ஸ்கேனிங்",
+        en_c="Mandatory credit card transaction correlation", ta_c="கட்டாய கிரெடிட் கார்டு பரிவர்த்தனை ஒப்பீடு",
+        en_d="Social media profile mapping under IT Act", ta_d="தகவல் தொழில்நுட்ப சட்டத்தின் கீழ் சமூக ஊடக கணக்குகளை வரைபடமாக்குதல்",
+        correct_key="A",
+        exp_en="ECI's ERONET system uses automated algorithms: Demographic Similar Entries (DSE) checks for matching name, relative name, and age across constituencies; Photo Similar Entries (PSE) uses facial recognition image matching to flag identical voter photos across different EPIC numbers.",
+        exp_ta="தேர்தல் ஆணையத்தின் ERONET தளம் DSE (பெயர், வயது, உறவினர் பெயர் ஒற்றுமை) மற்றும் PSE (முக அங்கீகார மென்பொருள் மூலம் ஒரே நபரின் படம் பல இடங்களில் இருப்பதை கண்டறிதல்) ஆகியவற்றை பயன்படுத்தி இரட்டை பதிவுகளை நீக்குகிறது.",
+        why_a_en="Correct. DSE and PSE are ECI's automated duplicate detection engines.",
+        why_a_ta="சரியானது. DSE மற்றும் PSE ஆகியவை ECI-ன் இரட்டை பதிவு கண்டறியும் தொழில்நுட்பங்கள்.",
+        why_b_en="Incorrect. ECI does not scan retinas at airports.",
+        why_b_ta="தவறானது. விமான நிலையங்களில் விழித்திரை ஸ்கேனிங் இல்லை.",
+        why_c_en="Incorrect. Credit cards are irrelevant to voting rolls.",
+        why_c_ta="தவறானது. கிரெடிட் கார்டு இதில் பயன்படுத்தப்படுவதில்லை.",
+        why_d_en="Incorrect. Social media profiling is not used for roll de-duplication.",
+        why_d_ta="தவறானது. சமூக ஊடகங்கள் இதற்கு பயன்படுவதில்லை.",
+        tip_en="Suspected duplicate entries flagged by DSE/PSE must be physically verified by Booth Level Officers (BLOs) before deletion.",
+        tip_ta="கணினி கண்டறிந்தாலும், வாக்குச்சாவடி நிலை அலுவலர் (BLO) நேரில் சரிபார்த்த பின்னரே நீக்க முடியும்.",
+        fact_en="Notice under Section 22 of RPA 1950 must be served to the elector with opportunity of hearing before deleting any entry.",
+        fact_ta="வாக்காளர் பட்டியலிலிருந்து நீக்குவதற்கு முன் பிரிவு 22-ன் கீழ் வாக்காளருக்கு விளக்கம் கேட்க நோட்டீஸ் அளிக்கப்பட வேண்டும்.",
+        tags=["DSE", "PSE", "ERONET", "Duplicate Voter Detection"]
+    ))
+
+    # GT 061 to GT 075
+    # GT 061
+    qs.append(make_ec_q(
+        qid="EC_GT_061", diff="Medium", qtype="Single-Choice", subtopic="Section 53 Uncontested Elections",
+        en_stem="Under Section 53(2) of the Representation of the People Act, 1951, what is the statutory procedure if only one candidate is contesting in a constituency after the withdrawal date?",
+        ta_stem="1951 மக்கள் பிரதிநிதித்துவச் சட்டத்தின் பிரிவு 53(2)-ன் கீழ், வேட்புமனு வாபஸ் பெறும் தேதிக்குப் பிறகு ஒரு தொகுதியில் ஒரே ஒரு வேட்பாளர் மட்டுமே களத்தில் இருந்தால் சட்டப்பூர்வ நடைமுறை என்ன?",
+        en_a="The Returning Officer shall forthwith declare such candidate to be duly elected without conducting any poll", ta_a="வாக்கெடுப்பு ஏதும் நடத்தாமல் அத்தகைய வேட்பாளர் முறையாக தேர்ந்தெடுக்கப்பட்டதாக தேர்தல் நடத்தும் அதிகாரி உடனடியாக அறிவிப்பார்",
+        en_b="The poll must still be conducted to allow voters to cast NOTA votes", ta_b="வாக்காளர்கள் நோட்டா (NOTA) வாக்களிக்க அனுமதிக்க வாக்கெடுப்பு கட்டாயமாக நடத்தப்பட வேண்டும்",
+        en_c="The election is adjourned and fresh nominations called within 14 days", ta_c="தேர்தல் ஒத்திவைக்கப்பட்டு 14 நாட்களுக்குள் புதிய வேட்புமனுக்கள் கோரப்படும்",
+        en_d="The Election Commission must approve the single candidate by 2/3rd majority", ta_d="தேர்தல் ஆணையம் மூன்றில் இரண்டு பங்கு பெரும்பான்மையுடன் அத்தனி வேட்பாளருக்கு ஒப்புதல் அளிக்க வேண்டும்",
+        correct_key="A",
+        exp_en="Section 53(2) mandates that if the number of contesting candidates is equal to the number of seats to be filled, the Returning Officer shall forthwith declare such candidate to be duly elected. No polling is conducted, and NOTA cannot be invoked.",
+        exp_ta="பிரிவு 53(2)-ன் படி, நிரப்பப்பட வேண்டிய இடங்களின் எண்ணிக்கைக்கு சமமாக ஒரே ஒரு வேட்பாளர் மட்டுமே களத்தில் இருந்தால், தேர்தல் நடத்தப்படாமல் அவர் போட்டியின்றி வெற்றி பெற்றதாக உடனடியாக அறிவிக்கப்படுவார்; இங்கு நோட்டா பொருந்தாது.",
+        why_a_en="Correct. Forthwith declared elected under Section 53(2).",
+        why_a_ta="சரியானது. பிரிவு 53(2)-ன் கீழ் உடனடியாக வெற்றி பெற்றதாக அறிவிக்கப்படுவார்.",
+        why_b_en="Incorrect. Supreme Court held in 2013 that NOTA applies only where a poll is actually held.",
+        why_b_ta="தவறானது. வாக்கெடுப்பு நடக்கும் இடங்களில் மட்டுமே நோட்டா பொருந்தும் என உச்ச நீதிமன்றம் கூறியுள்ளது.",
+        why_c_en="Incorrect. Fresh nominations are not called if a valid candidate exists.",
+        why_c_ta="தவறானது. செல்லுபடியாகும் வேட்பாளர் இருக்கும் போது புதிய மனுக்கள் கோரப்படாது.",
+        why_d_en="Incorrect. ECI resolution is not required.",
+        why_d_ta="தவறானது. தேர்தல் ஆணைய தீர்மானம் தேவையில்லை.",
+        tip_en="In the 2024 Lok Sabha elections, the candidate from Surat parliamentary constituency was declared elected uncontested under Section 53(2).",
+        tip_ta="2024 மக்களவைத் தேர்தலில் சூரத் தொகுதியில் இச்சட்டப்பிரிவு 53(2)-ன் கீழ் வேட்பாளர் போட்டியின்றி தேர்ந்தெடுக்கப்பட்டார்.",
+        fact_en="Over 30 candidates have been elected uncontested to the Lok Sabha since independence.",
+        fact_ta="சுதந்திரத்திற்குப் பின் இதுவரை 30-க்கும் மேற்பட்ட வேட்பாளர்கள் மக்களவைக்கு போட்டியின்றி தேர்ந்தெடுக்கப்பட்டுள்ளனர்.",
+        tags=["Section 53", "Uncontested Election", "No NOTA"]
+    ))
+
+    # GT 062
+    qs.append(make_ec_q(
+        qid="EC_GT_062", diff="Hard", qtype="Single-Choice", subtopic="Section 36 Nomination Scrutiny",
+        en_stem="Under Section 36(2) of RPA 1951, which of the following is a valid statutory ground on which the Returning Officer MUST reject a candidate's nomination paper?",
+        ta_stem="1951 மக்கள் பிரதிநிதித்துவச் சட்டத்தின் பிரிவு 36(2)-ன் கீழ், தேர்தல் நடத்தும் அதிகாரி ஒரு வேட்பாளரின் வேட்புமனுவை கட்டாயமாக நிராகரிக்க வேண்டிய செல்லுபடியாகும் சட்டப்பூர்வ காரணம் எது?",
+        en_a="The candidate is not qualified or is disqualified for being chosen to fill the seat under Article 84, 102, 173, or 191, or the proposer is not an elector of the constituency", ta_a="வேட்பாளர் சரத்துகள் 84, 102, 173 அல்லது 191-ன் கீழ் தகுதியற்றவராகவோ அல்லது தகுதிநீக்கம் செய்யப்பட்டவராகவோ இருத்தல், அல்லது முன்மொழிபவர் அத்தொகுதியின் வாக்காளராக இல்லாமை",
+        en_b="The candidate belongs to an unrecognized registered political party", ta_b="வேட்பாளர் அங்கீகாரமற்ற பதிவு செய்யப்பட்ட அரசியல் கட்சியைச் சேர்ந்தவராக இருத்தல்",
+        en_c="The candidate has criminal cases pending against them at the trial stage", ta_c="வேட்பாளர் மீது நீதிமன்ற விசாரணைக் கட்டத்தில் குற்ற வழக்குகள் நிலுவையில் இருத்தல்",
+        en_d="The candidate's age exceeds 75 years", ta_d="வேட்பாளரின் வயது 75 ஆண்டுகளைக் கடந்திருத்தல்",
+        correct_key="A",
+        exp_en="Section 36(2) provides that the Returning Officer shall reject a nomination paper if (a) on the date of scrutiny the candidate is not qualified or is disqualified, or (b) there is failure to comply with provisions of Section 33/34, or (c) signature of candidate/proposer is not genuine.",
+        exp_ta="பிரிவு 36(2)-ன் படி, பரிசீலனை நாளன்று வேட்பாளர் தகுதியற்றவராகவோ அல்லது தகுதிநீக்கத்திற்கு ஆளானவராகவோ இருந்தால், அல்லது முன்மொழிபவர் அத்தொகுதியின் வாக்காளராக இல்லாவிட்டால் வேட்புமனு கட்டாயமாக நிராகரிக்கப்பட வேண்டும்.",
+        why_a_en="Correct. Constitutional lack of qualification or disqualification under Art 84/102/173/191 mandates rejection.",
+        why_a_ta="சரியானது. சரத்துகள் 84/102/173/191-ன் கீழான தகுதியின்மை வேட்புமனு நிராகரிப்பை கட்டாயமாக்குகிறது.",
+        why_b_en="Incorrect. Unrecognized party candidates can contest with 10 proposers.",
+        why_b_ta="தவறானது. 10 முன்மொழிபவர்களுடன் அங்கீகாரமற்ற கட்சிகள் போட்டியிடலாம்.",
+        why_c_en="Incorrect. Merely pending charges do not disqualify (must be convicted with 2+ years sentence).",
+        why_c_ta="தவறானது. வழக்கு நிலுவையில் இருப்பது தகுதிநீக்கம் ஆகாது (2 ஆண்டு தண்டனை பெற்றிருக்க வேண்டும்).",
+        why_d_en="Incorrect. There is no maximum age limit for contesting elections in India.",
+        why_d_ta="தவறானது. இந்தியாவில் தேர்தலில் போட்டியிட அதிகபட்ச வயது வரம்பு இல்லை.",
+        tip_en="Nomination papers cannot be rejected for simple clerical, technical, or printing defects (Section 36(4)).",
+        tip_ta="எழுத்துப் பிழைகள் அல்லது சிறிய அச்சுப் பிழைகளுக்காக வேட்புமனுவை நிராகரிக்க முடியாது (பிரிவு 36(4)).",
+        fact_en="The Returning Officer must record reasons in writing for every rejected nomination paper.",
+        fact_ta="நிராகரிக்கப்படும் ஒவ்வொரு வேட்புமனுவிற்கும் எழுத்துப்பூர்வ காரணங்களை தேர்தல் அதிகாரி பதிவு செய்ய வேண்டும்.",
+        tags=["Section 36", "Nomination Scrutiny", "Rejection Grounds"]
+    ))
+
+    # GT 063
+    qs.append(make_ec_q(
+        qid="EC_GT_063", diff="Medium", qtype="Single-Choice", subtopic="Oath Third Schedule",
+        en_stem="By what latest point of time must a candidate contesting a parliamentary or state assembly election subscribe to the oath or affirmation under the Third Schedule?",
+        ta_stem="பாராளுமன்ற அல்லது சட்டமன்றத் தேர்தலில் போட்டியிடும் ஒரு வேட்பாளர், மூன்றாவது அட்டவணையின் கீழான உறுதிமொழி அல்லது பிரமாணத்தை எந்த இறுதி நேரத்திற்குள் எடுக்க வேண்டும்?",
+        en_a="Before the commencement of the date of scrutiny of nominations by the Returning Officer", ta_a="தேர்தல் நடத்தும் அதிகாரியால் வேட்புமனுக்கள் பரிசீலனை செய்யப்படும் நாள் தொடங்குவதற்கு முன்பாக",
+        en_b="On the day of counting of votes before declaring results", ta_b="முடிவுகள் அறிவிக்கப்படுவதற்கு முன் வாக்கு எண்ணிக்கை நாளன்று",
+        en_c="Immediately upon filing nomination at the exact same minute", ta_c="வேட்புமனு தாக்கல் செய்த அதே நிமிடத்தில் உடனடியாக",
+        en_d="Only after winning the election before taking the seat in the House", ta_d="தேர்தலில் வெற்றி பெற்ற பிறகு அவையில் இருக்கையை ஏற்கும் முன் மட்டும்",
+        correct_key="A",
+        exp_en="In Pashupati Nath Sukul v. Nem Chandra Jain (1984), the Supreme Court held that the constitutional oath under Articles 84(a) or 173(a) must be subscribed BEFORE the date fixed for the scrutiny of nomination papers. Failing to do so invalidates the nomination under Section 36(2)(a).",
+        exp_ta="1984 பசுபதி நாத் சுகுல் வழக்கில் உச்ச நீதிமன்றம், சரத்துகள் 84(a) மற்றும் 173(a)-ன் கீழான உறுதிமொழி வேட்புமனு பரிசீலனை நாள் தொடங்குவதற்கு முன்பே எடுக்கப்பட்டிருக்க வேண்டும் என தீர்ப்பளித்தது; தவறினால் மனு நிராகரிக்கப்படும்.",
+        why_a_en="Correct. Must be made before the day of scrutiny commences.",
+        why_a_ta="சரியானது. பரிசீலனை நாள் தொடங்குவதற்கு முன்பே எடுக்கப்பட வேண்டும்.",
+        why_b_en="Incorrect. Counting day is far too late.",
+        why_b_ta="தவறானது. வாக்கு எண்ணிக்கை நாள் மிகவும் தாமதமானது.",
+        why_c_en="Incorrect. Can be taken anytime between nomination and scrutiny date.",
+        why_c_ta="தவறானது. மனு தாக்கல் செய்ததற்கும் பரிசீலனைக்கும் இடைப்பட்ட எந்த நேரத்திலும் எடுக்கலாம்.",
+        why_d_en="Incorrect. Winning candidates take a second oath under Article 99/188, but candidate qualification oath is prior to scrutiny.",
+        why_d_ta="தவறானது. வெற்றிக்குப் பின் எடுக்கும் உறுதிமொழி சரத்து 99/188-ல் உள்ளது; வேட்பாளருக்கான உறுதிமொழி பரிசீலனைக்கு முந்தையது.",
+        tip_en="The 16th Constitutional Amendment Act, 1963 added this candidate oath requirement to Articles 84 and 173 to uphold India's sovereignty and integrity.",
+        tip_ta="நாட்டின் இறையாண்மையைப் பாதுகாக்க 16-வது திருத்தச் சட்டம் 1963 மூலம் வேட்பாளர்களுக்கான உறுதிமொழி சேர்க்கப்பட்டது.",
+        fact_en="Authorized officers before whom the oath can be taken include the Returning Officer, Assistant Returning Officer, or a jail superintendent if the candidate is imprisoned.",
+        fact_ta="சிறையில் உள்ள வேட்பாளர்கள் சிறைக் கண்காணிப்பாளர் முன்னிலையில் இந்த உறுதிமொழியை எடுக்கலாம்.",
+        tags=["Candidate Oath", "Articles 84 and 173", "Third Schedule"]
+    ))
+
+    # GT 064
+    qs.append(make_ec_q(
+        qid="EC_GT_064", diff="Easy", qtype="Single-Choice", subtopic="Section 37 Withdrawal",
+        en_stem="Under Section 37 of the Representation of the People Act, 1951, can a candidate withdraw their notice of withdrawal of candidature once it has been delivered to the Returning Officer?",
+        ta_stem="1951 மக்கள் பிரதிநிதித்துவச் சட்டத்தின் பிரிவு 37-ன் கீழ், வேட்புமனுவை வாபஸ் பெறுவதற்கான அறிவிப்பை தேர்தல் நடத்தும் அதிகாரியிடம் அளித்த பிறகு, ஒரு வேட்பாளர் அந்த வாபஸ் அறிவிப்பை திரும்பப் பெற முடியுமா?",
+        en_a="No, Section 37(2) explicitly provides that no person who has given a notice of withdrawal shall be allowed to cancel the notice", ta_a="இல்லை, வாபஸ் அறிவிப்பை அளித்த எவரும் அதனை ரத்து செய்ய அனுமதிக்கப்பட மாட்டார்கள் என்று பிரிவு 37(2) வெளிப்படையாகக் கூறுகிறது",
+        en_b="Yes, within 24 hours upon payment of a cancellation fine", ta_b="ஆம், ரத்து கட்டணம் செலுத்தி 24 மணி நேரத்திற்குள் திரும்பப் பெறலாம்",
+        en_c="Yes, with the written consent of all other contesting candidates", ta_c="ஆம், போட்டியிடும் அனைத்து வேட்பாளர்களின் எழுத்துப்பூர்வ ஒப்புதலுடன்",
+        en_d="Yes, if approved by the Chief Election Commissioner", ta_d="ஆம், தலைமைத் தேர்தல் ஆணையர் அனுமதித்தால்",
+        correct_key="A",
+        exp_en="Section 37(2) of RPA 1951 explicitly mandates: 'No person who has given a notice of withdrawal of his candidature under sub-section (1) shall be allowed to cancel the notice.' The withdrawal is final and irrevocable.",
+        exp_ta="பிரிவு 37(2) திட்டவட்டமாகக் கூறுகிறது: 'உட்பிரிவு (1)-ன் கீழ் வேட்புமனுவை வாபஸ் பெற்ற எந்தவொரு நபரும் அந்த அறிவிப்பை ரத்து செய்ய அனுமதிக்கப்பட மாட்டார்.' வாபஸ் பெறுவது இறுதியானது மற்றும் மாற்ற முடியாதது.",
+        why_a_en="Correct. Withdrawal of candidature is statutorily irrevocable under Section 37(2).",
+        why_a_ta="சரியானது. பிரிவு 37(2)-ன் கீழ் வாபஸ் பெறுவது இறுதியானது மற்றும் மாற்ற முடியாதது.",
+        why_b_en="Incorrect. No fine or grace period exists.",
+        why_b_ta="தவறானது. எந்த சலுகைக் காலமும் இல்லை.",
+        why_c_en="Incorrect. Rival candidate consent is immaterial.",
+        why_c_ta="தவறானது. பிற வேட்பாளர்களின் ஒப்புதல் தேவையற்றது.",
+        why_d_en="Incorrect. ECI has no power to waive Section 37(2).",
+        why_d_ta="தவறானது. தேர்தல் ஆணையத்திற்கு இதில் விதிவிலக்கு அளிக்க அதிகாரம் இல்லை.",
+        tip_en="Notice of withdrawal must be submitted in Form 5 by 3:00 PM on the designated withdrawal date.",
+        tip_ta="குறிப்பிட்ட வாபஸ் நாளன்று மாலை 3:00 மணிக்குள் படிவம் 5-ல் வாபஸ் அறிவிப்பு அளிக்கப்பட வேண்டும்.",
+        fact_en="Withdrawal can be delivered by the candidate personally, their proposer, or an election agent authorized in writing.",
+        fact_ta="வேட்பாளர் நேரில், அல்லது அவரது முன்மொழிபவர் அல்லது எழுத்துப்பூர்வ அங்கீகாரம் பெற்ற முகவர் மூலம் சமர்ப்பிக்கலாம்.",
+        tags=["Section 37", "Withdrawal Irrevocable", "Form 5"]
+    ))
+
+    # GT 065
+    qs.append(make_ec_q(
+        qid="EC_GT_065", diff="Hard", qtype="Single-Choice", subtopic="Form 7A Ballot Order",
+        en_stem="In what specific order and classification are candidate names printed on the Ballot Unit and Form 7A under Rule 8 of the Conduct of Elections Rules, 1961?",
+        ta_stem="1961 தேர்தல் நடத்தை விதிகளின் விதி 8-ன் கீழ், வாக்குப்பதிவு அலகு மற்றும் படிவம் 7A-ல் வேட்பாளர்களின் பெயர்கள் எந்த குறிப்பிட்ட வரிசை மற்றும் வகைப்பாட்டில் அச்சிடப்படுகின்றன?",
+        en_a="In three distinct categories arranged alphabetically in the language of the area: (i) Candidates of recognized National and State parties, (ii) Candidates of registered unrecognized parties, (iii) Independent candidates", ta_a="பகுதியின் மொழியில் அகரவரிசைப்படி அமைக்கப்பட்ட மூன்று தனித்தனி பிரிவுகளில்: (i) அங்கீகரிக்கப்பட்ட தேசிய மற்றும் மாநிலக் கட்சி வேட்பாளர்கள், (ii) அங்கீகாரமற்ற பதிவு செய்யப்பட்ட கட்சிகளின் வேட்பாளர்கள், (iii) சுயேச்சை வேட்பாளர்கள்",
+        en_b="Strictly in the chronological order in which their nomination papers were filed with the Returning Officer", ta_b="தேர்தல் அதிகாரியிடம் வேட்புமனுக்கள் தாக்கல் செய்யப்பட்ட காலவரிசைப்படி",
+        en_c="Grouped by political party age and seniority of parliamentary presence", ta_c="அரசியல் கட்சிகளின் பழமை மற்றும் பாராளுமன்ற மூப்பு வரிசைப்படி",
+        en_d="In randomized computerized lottery order to ensure parity", ta_d="சமநிலையை உறுதி செய்ய கணினிமயமாக்கப்பட்ட குலுக்கல் வரிசைப்படி",
+        correct_key="A",
+        exp_en="Rule 8(1) mandates that candidate names are arranged in alphabetical order within three separate categories: Category 1: Candidates of recognized National and State political parties; Category 2: Candidates of registered un-recognized political parties; Category 3: Other (independent) candidates. NOTA appears at the very end.",
+        exp_ta="விதி 8(1)-ன் படி, வேட்பாளர்கள் அகரவரிசைப்படி 3 பிரிவுகளாக வகைப்படுத்தப்படுகின்றனர்: பிரிவு 1: அங்கீகரிக்கப்பட்ட தேசிய மற்றும் மாநிலக் கட்சி வேட்பாளர்கள்; பிரிவு 2: அங்கீகாரமற்ற கட்சிகளின் வேட்பாளர்கள்; பிரிவு 3: சுயேச்சை வேட்பாளர்கள். நோட்டா இறுதியாக வைக்கப்படுகிறது.",
+        why_a_en="Correct. 3 categories with alphabetical arrangement within each category.",
+        why_a_ta="சரியானது. 3 பிரிவுகளில் தலா அகரவரிசைப்படி பெயர்கள் அச்சிடப்படுகின்றன.",
+        why_b_en="Incorrect. Filing time is irrelevant to ballot placement.",
+        why_b_ta="தவறானது. மனு தாக்கல் நேரம் கணக்கில் கொள்ளப்படுவதில்லை.",
+        why_c_en="Incorrect. Party age is not a criterion.",
+        why_c_ta="தவறானது. கட்சியின் பழமை அளவுகோல் அல்ல.",
+        why_d_en="Incorrect. Randomized placement is not used in Indian general elections.",
+        why_d_ta="தவறானது. சீரற்ற குலுக்கல் வரிசை பயன்படுத்தப்படுவதில்லை.",
+        tip_en="This 3-category classification was introduced in 1996 to prevent recognized party candidates from getting lost among hundreds of dummy independents.",
+        tip_ta="அங்கீகரிக்கப்பட்ட கட்சிகளின் வேட்பாளர்கள் சுயேச்சைகளுக்கு இடையே மறைந்து போவதைத் தவிர்க்க 1996-ல் இம்முறை கொண்டுவரப்பட்டது.",
+        fact_en="Candidate photographs were introduced on ballot papers and EVMs in May 2015 to avoid voter confusion between candidates with identical names.",
+        fact_ta="ஒரே பெயரைக் கொண்ட வேட்பாளர்களால் ஏற்படும் குழப்பத்தைத் தவிர்க்க மே 2015 முதல் EVM-ல் வேட்பாளர் புகைப்படங்கள் சேர்க்கப்பட்டன.",
+        tags=["Form 7A", "Ballot Order", "Candidate Categories"]
+    ))
+
+    # GT 066
+    qs.append(make_ec_q(
+        qid="EC_GT_066", diff="Medium", qtype="Single-Choice", subtopic="Counting Agent Limits",
+        en_stem="Under Rule 52 of the Conduct of Elections Rules, 1961, how many counting agents is each contesting candidate permitted to appoint per counting table?",
+        ta_stem="1961 தேர்தல் நடத்தை விதிகளின் விதி 52-ன் கீழ், ஒவ்வொரு போட்டியிடும் வேட்பாளரும் ஒரு வாக்கு எண்ணிக்கை மேசைக்கு எத்தனை எண்ணிக்கை முகவர்களை (counting agents) நியமிக்க அனுமதிக்கப்படுகிறார்?",
+        en_a="One counting agent per table, plus one counting agent at the Returning Officer's table", ta_a="ஒரு மேசைக்கு ஒரு எண்ணிக்கை முகவர் மற்றும் தேர்தல் நடத்தும் அதிகாரியின் மேசைக்கு ஒரு முகவர்",
+        en_b="Three counting agents per table", ta_b="ஒரு மேசைக்கு மூன்று எண்ணிக்கை முகவர்கள்",
+        en_c="Two counting agents per table plus five roving observers", ta_c="ஒரு மேசைக்கு இரண்டு முகவர்கள் மற்றும் ஐந்து நடமாடும் பார்வையாளர்கள்",
+        en_d="No limit, based on the discretion of the candidate", ta_d="எண்ணிக்கை வரம்பில்லை, வேட்பாளரின் விருப்பப்படி",
+        correct_key="A",
+        exp_en="Rule 52(1) allows a candidate to appoint one counting agent for each counting table in the counting hall, plus one additional agent to observe at the Returning Officer's table. Typically, a counting hall has 14 counting tables plus 1 RO table.",
+        exp_ta="விதி 52(1)-ன் படி, ஒவ்வொரு வாக்கு எண்ணிக்கை மேசைக்கும் தலா ஒரு முகவரையும், தேர்தல் அதிகாரியின் மேசைக்கு ஒரு கூடுதல் முகவரையும் வேட்பாளர் நியமிக்கலாம் (பொதுவாக ஒரு அரங்கில் 14 மேசைகள் இருக்கும்).",
+        why_a_en="Correct. One per table plus one at RO table under Rule 52.",
+        why_a_ta="சரியானது. மேசைக்கு ஒருவர் மற்றும் RO மேசைக்கு ஒருவர்.",
+        why_b_en="Incorrect. Three per table is prohibited due to hall space.",
+        why_b_ta="தவறானது. மேசைக்கு மூவர் அனுமதிக்கப்படுவதில்லை.",
+        why_c_en="Incorrect. Roving agents are not permitted.",
+        why_c_ta="தவறானது. நடமாடும் முகவர்கள் அனுமதிக்கப்படுவதில்லை.",
+        why_d_en="Incorrect. Strictest statutory numerical limits apply.",
+        why_d_ta="தவறானது. கடுமையான சட்டப்பூர்வ வரம்புகள் உள்ளன.",
+        tip_en="Counting agents are formally appointed in Form 18 and must wear official photo identity badges issued by the RO.",
+        tip_ta="எண்ணிக்கை முகவர்கள் படிவம் 18 மூலம் நியமிக்கப்பட்டு RO வழங்கும் அடையாள அட்டையை அணிய வேண்டும்.",
+        fact_en="Sitting Ministers, MPs, MLAs, and individuals with government security cover CANNOT be appointed as counting agents.",
+        fact_ta="அமைச்சர்கள், எம்.பி, எம்.எல்.ஏ-க்கள் மற்றும் அரசுப் பாதுகாப்பு உள்ளவர்கள் எண்ணிக்கை முகவர்களாக செயல்பட முடியாது.",
+        tags=["Counting Agents", "Rule 52", "Form 18"]
+    ))
+
+    # GT 067
+    qs.append(make_ec_q(
+        qid="EC_GT_067", diff="Hard", qtype="Single-Choice", subtopic="Section 101 Declaring Other Candidate Elected",
+        en_stem="Under Section 101 of the Representation of the People Act, 1951, on what narrow ground can the High Court declare another candidate duly elected after setting aside the election of the returned candidate?",
+        ta_stem="1951 மக்கள் பிரதிநிதித்துவச் சட்டத்தின் பிரிவு 101-ன் கீழ், வெற்றி பெற்ற வேட்பாளரின் தேர்தலை ரத்து செய்த பிறகு, உயர் நீதிமன்றம் மற்றொரு வேட்பாளரை வெற்றி பெற்றவராக எப்போது அறிவிக்க முடியும்?",
+        en_a="If the petitioner or other candidate in fact received a majority of the valid votes, or but for votes obtained by corrupt practice would have obtained a majority", ta_a="மனுதாரர் அல்லது பிற வேட்பாளர் உண்மையில் செல்லுபடியாகும் வாக்குகளில் பெரும்பான்மையைப் பெற்றிருந்தால், அல்லது ஊழல் நடைமுறை வாக்குகள் இல்லையென்றால் பெரும்பான்மையைப் பெற்றிருப்பார் என்றால்",
+        en_b="Automatically whenever the winning candidate is disqualified", ta_b="வெற்றி பெற்ற வேட்பாளர் தகுதிநீக்கம் செய்யப்படும் போதெல்லாம் தானாகவே",
+        en_c="If the Election Commission files a joint memorandum with the Governor", ta_c="ஆளுநருடன் இணைந்து தேர்தல் ஆணையம் கூட்டு குறிப்பாணை தாக்கல் செய்தால்",
+        en_d="If the margin of victory was under 500 votes", ta_d="வெற்றி வித்தியாசம் 500 வாக்குகளுக்குள் இருந்திருந்தால்",
+        correct_key="A",
+        exp_en="Section 101 provides that if an election petitioner claims the seat, the High Court can declare him elected ONLY IF it is proven that he in fact received a majority of valid votes, or that but for the votes obtained by corrupt practice for the returned candidate, the petitioner would have obtained a majority.",
+        exp_ta="பிரிவு 101-ன் படி, வெற்றி பெற்ற வேட்பாளரின் தேர்தலை ரத்து செய்த பின், மனுதாரரே உண்மையில் செல்லுபடியாகும் பெரும்பான்மை வாக்குகளைப் பெற்றார் என்று நிரூபிக்கப்பட்டால் மட்டுமே அவரை வெற்றி பெற்றவராக உயர் நீதிமன்றம் அறிவிக்க முடியும்.",
+        why_a_en="Correct. Proof of actual majority of valid votes is mandatory under Section 101.",
+        why_a_ta="சரியானது. செல்லுபடியாகும் பெரும்பான்மை வாக்குகளைப் பெற்றதற்கான ஆதாரம் பிரிவு 101-ன் கீழ் கட்டாயமாகும்.",
+        why_b_en="Incorrect. Merely unseating the winner does not automatically make the runner-up the winner; ordinarily a bye-election is called.",
+        why_b_ta="தவறானது. வெற்றியாளரை நீக்கினால் தானாகவே இரண்டாம் இடம் பெற்றவர் வெற்றி பெற முடியாது; வழக்கமாக இடைத்தேர்தலே நடக்கும்.",
+        why_c_en="Incorrect. ECI/Governor memorandum is constitutionally irrelevant.",
+        why_c_ta="தவறானது. ECI/ஆளுநர் குறிப்பாணைக்கு இதில் இடமில்லை.",
+        why_d_en="Incorrect. Margin size does not grant automatic victory.",
+        why_d_ta="தவறானது. வாக்கு வித்தியாசம் தானியங்கி வெற்றியைத் தராது.",
+        tip_en="In Prakash Khandre v. Vijaya Kumar Khandre (2002), SC reiterated that votes cast for a disqualified candidate cannot be treated as 'thrown away' to declare the runner-up elected unless voters had notice of the disqualification.",
+        tip_ta="2002 உச்ச நீதிமன்ற தீர்ப்பில் தகுதிநீக்கத்திற்குப் பின் தானாகவே இரண்டாம் இடம் பெற்றவரை வெற்றியாளராக அறிவிக்க முடியாது என தெளிவுபடுத்தப்பட்டது.",
+        fact_en="Section 101 claims are extremely rare and require rigorous mathematical and legal proof.",
+        fact_ta="பிரிவு 101-ன் கீழான வெற்றிக் கோரிக்கைகள் மிகவும் அரிதானவை மற்றும் கடுமையான ஆதாரங்கள் தேவைப்படுபவை.",
+        tags=["Section 101", "Election Petition", "Declaring Runner-up Elected"]
+    ))
+
+    # GT 068
+    qs.append(make_ec_q(
+        qid="EC_GT_068", diff="Medium", qtype="Single-Choice", subtopic="Section 132 Disorderly Conduct",
+        en_stem="Under Section 132 of RPA 1951, what power does the Presiding Officer possess regarding any person who commits disorderly conduct inside or near a polling station?",
+        ta_stem="1951 மக்கள் பிரதிநிதித்துவச் சட்டத்தின் பிரிவு 132-ன் கீழ், வாக்குச்சாவடிக்குள் அல்லது அருகில் ஒழுங்கீனமாக நடந்து கொள்ளும் எந்தவொரு நபர் மீதும் வாக்குச்சாவடி தலைமை அலுவலருக்கு உள்ள அதிகாரம் என்ன?",
+        en_a="Direct any police officer to remove such person from the polling station immediately", ta_a="அத்தகைய நபரை வாக்குச்சாவடியிலிருந்து உடனடியாக வெளியேற்றுமாறு எந்தவொரு காவல்துறை அதிகாரிக்கும் உத்தரவிடுதல்",
+        en_b="Summarily impose a spot fine of Rs. 10,000 without police involvement", ta_b="காவல்துறையின் தலையீடின்றி உடனடியாக ரூ. 10,000 ஸ்பாட் ஃபைன் விதித்தல்",
+        en_c="Permanently delete the person's name from the electoral roll on the spot", ta_c="அந்நபரின் பெயரை வாக்குச்சாவடியிலேயே வாக்காளர் பட்டியலிலிருந்து நிரந்தரமாக நீக்குதல்",
+        en_d="Impound the person's passport and vehicle documents", ta_d="அந்நபரின் பாஸ்போர்ட் மற்றும் வாகன ஆவணங்களை பறிமுதல் செய்தல்",
+        correct_key="A",
+        exp_en="Section 132 provides that if any person misconducts himself or fails to obey the lawful directions of the Presiding Officer, he may immediately, by order of the Presiding Officer, be removed from the polling station by any police officer or authorized person.",
+        exp_ta="பிரிவு 132-ன் படி, வாக்குச்சாவடி தலைமை அலுவலரின் சட்டப்பூர்வ உத்தரவுகளுக்கு கீழ்ப்படியாத அல்லது ஒழுங்கீனமாக நடக்கும் எவரையும் வாக்குச்சாவடியிலிருந்து வெளியேற்ற காவல்துறைக்கு உத்தரவிட தலைமை அலுவலருக்கு முழு அதிகாரம் உண்டு.",
+        why_a_en="Correct. Section 132 empowers Presiding Officer to order immediate removal by police.",
+        why_a_ta="சரியானது. காவல்துறையை கொண்டு வெளியேற்ற உத்தரவிட பிரிவு 132 அதிகாரம் அளிக்கிறது.",
+        why_b_en="Incorrect. Spot fines cannot be imposed by poll officers.",
+        why_b_ta="தவறானது. ஸ்பாட் ஃபைன் விதிக்கும் அதிகாரம் இல்லை.",
+        why_c_en="Incorrect. Name deletion requires statutory process under Section 22.",
+        why_c_ta="தவறானது. வாக்காளர் பெயர் நீக்கத்திற்கு தனி சட்ட நடைமுறை உள்ளது.",
+        why_d_en="Incorrect. Passport impounding is under Passports Act.",
+        why_d_ta="தவறானது. பாஸ்போர்ட் பறிமுதல் இதில் வராது.",
+        tip_en="A person removed who re-enters without permission commits a cognizable offence punishable with up to 3 months imprisonment under Section 132(3).",
+        tip_ta="வெளியேற்றப்பட்ட நபர் அனுமதியின்றி மீண்டும் நுழைந்தால் 3 மாத சிறை தண்டனைக்குரிய குற்றமாகும் (பிரிவு 132(3)).",
+        fact_en="Section 131 prohibits the use of megaphones, loudspeakers, or shouting within 100 meters of a polling booth.",
+        fact_ta="பிரிவு 131 வாக்குச்சாவடியின் 100 மீட்டருக்குள் ஒலிபெருக்கிகள் பயன்படுத்துவதை அல்லது கூச்சலிடுவதைத் தடை செய்கிறது.",
+        tags=["Section 132", "Disorderly Conduct", "Presiding Officer Powers"]
+    ))
+
+    # GT 069
+    qs.append(make_ec_q(
+        qid="EC_GT_069", diff="Easy", qtype="Single-Choice", subtopic="Section 134A Government Canvassing",
+        en_stem="Under Section 134A of RPA 1951, what is the penalty for a government employee who acts as an election agent, polling agent, or counting agent of a candidate?",
+        ta_stem="1951 மக்கள் பிரதிநிதித்துவச் சட்டத்தின் பிரிவு 134A-ன் கீழ், ஒரு வேட்பாளரின் தேர்தல் முகவராக, வாக்குச்சாவடி முகவராக அல்லது எண்ணிக்கை முகவராக செயல்படும் அரசு ஊழியருக்கு விதிக்கப்படும் தண்டனை என்ன?",
+        en_a="Imprisonment for a term which may extend to three months, or with fine, or with both", ta_a="மூன்று மாதங்கள் வரை நீட்டிக்கப்படக்கூடிய சிறைத்தண்டனை, அல்லது அபராதம், அல்லது இரண்டும்",
+        en_b="Imprisonment for life and permanent loss of citizenship", ta_b="ஆயுள் சிறை மற்றும் குடியுரிமை இழப்பு",
+        en_c="Warning letter issued by the District Collector with no penal consequences", ta_c="எவ்வித குற்றவியல் நடவடிக்கையுமின்றி எச்சரிக்கைக் கடிதம் மட்டும்",
+        en_d="A deduction of 10% from the monthly salary for one year", ta_d="ஒரு வருடத்திற்கு மாத ஊதியத்தில் 10% பிடித்தம்",
+        correct_key="A",
+        exp_en="Section 134A explicitly criminalizes a person in the service of the Government acting as an election agent, polling agent, or counting agent, prescribing imprisonment up to 3 months, or fine, or both, in addition to disciplinary dismissal.",
+        exp_ta="பிரிவு 134A, அரசு ஊழியர் ஒருவர் வேட்பாளரின் தேர்தல் முகவராகவோ அல்லது வாக்குச்சாவடி/எண்ணிக்கை முகவராகவோ செயல்படுவதை குற்றமாக்குகிறது; இதற்கு 3 மாத சிறை அல்லது அபராதம் அல்லது இரண்டும் தண்டனையாக விதிக்கப்படும்.",
+        why_a_en="Correct. Up to 3 months imprisonment or fine under Section 134A.",
+        why_a_ta="சரியானது. பிரிவு 134A-ன் கீழ் 3 மாதங்கள் வரை சிறை அல்லது அபராதம்.",
+        why_b_en="Incorrect. Life imprisonment is far disproportionate.",
+        why_b_ta="தவறானது. ஆயுள் தண்டனை இதில் இல்லை.",
+        why_c_en="Incorrect. It is a criminal penal offence, not just an administrative warning.",
+        why_c_ta="தவறானது. இது வெறும் எச்சரிக்கை அல்ல, கிரிமினல் குற்றமாகும்.",
+        why_d_en="Incorrect. Salary deduction is not a statutory court penalty.",
+        why_d_ta="தவறானது. ஊதியப் பிடித்தம் இதில் வராது.",
+        tip_en="This section strictly enforces the doctrine of civil service neutrality during elections.",
+        tip_ta="அரசுப் பணியாளர்களின் அரசியல் நடுநிலைமையை இச்சட்டப்பிரிவு கண்டிப்பாக உறுதி செய்கிறது.",
+        fact_en="Section 134A was inserted by the Representation of the People (Amendment) Act, 1996.",
+        fact_ta="1996 திருத்தச் சட்டம் மூலம் பிரிவு 134A சேர்க்கப்பட்டது.",
+        tags=["Section 134A", "Civil Service Neutrality", "Agent Prohibition"]
+    ))
+
+    # GT 070
+    qs.append(make_ec_q(
+        qid="EC_GT_070", diff="Hard", qtype="Single-Choice", subtopic="Section 135B Paid Holiday",
+        en_stem="Under Section 135B of the Representation of the People Act, 1951, what statutory right is conferred upon employees on the day of poll?",
+        ta_stem="1951 மக்கள் பிரதிநிதித்துவச் சட்டத்தின் பிரிவு 135B-ன் கீழ், வாக்குப்பதிவு நாளன்று பணியாளர்களுக்கு வழங்கப்படும் சட்டப்பூர்வ உரிமை என்ன?",
+        en_a="Mandatory grant of a paid holiday to every person employed in any business, trade, industrial undertaking or other establishment entitled to vote", ta_a="வாக்களிக்கத் தகுதியுடைய வணிகம், தொழில் அல்லது பிற நிறுவனங்களில் பணிபுரியும் ஒவ்வொரு நபருக்கும் கட்டாய ஊதியத்துடன் கூடிய விடுமுறை (paid holiday)",
+        en_b="Permission to take 30 minutes of unpaid personal leave", ta_b="30 நிமிடங்கள் ஊதியமில்லா தனிப்பட்ட விடுப்பு எடுப்பதற்கான அனுமதி",
+        en_c="Cash bonus equal to two days' basic wages to compensate for voting expenses", ta_c="வாக்களிப்பு செலவுகளை ஈடுசெய்ய இரண்டு நாள் ஊதியத்திற்கு இணையான ரொக்க போனஸ்",
+        en_d="Exemption from reporting to work for the entire election week", ta_d="தேர்தல் வாரம் முழுவதும் பணிக்கு வருவதிலிருந்து முழு விலக்கு",
+        correct_key="A",
+        exp_en="Section 135B(1) mandates that every person employed in any business, trade, industrial undertaking or any other establishment and entitled to vote shall be granted a paid holiday on the day of poll. No deduction or abatement of wages can be made (Sec 135B(2)).",
+        exp_ta="பிரிவு 135B(1)-ன் படி, வணிக, தொழில் மற்றும் பிற நிறுவனங்களில் பணிபுரியும் வாக்களிக்கத் தகுதியுள்ள ஒவ்வொரு பணியாளருக்கும் வாக்குப்பதிவு நாளன்று ஊதியத்துடன் கூடிய விடுமுறை அளிக்கப்பட வேண்டும்; இதற்காக ஊதியப் பிடித்தம் செய்யக்கூடாது.",
+        why_a_en="Correct. Section 135B mandates a paid holiday on polling day.",
+        why_a_ta="சரியானது. பிரிவு 135B வாக்குப்பதிவு நாளன்று ஊதியத்துடன் கூடிய விடுமுறையைக் கட்டாயமாக்குகிறது.",
+        why_b_en="Incorrect. Must be a full day paid holiday, not 30 unpaid minutes.",
+        why_b_ta="தவறானது. முழு நாள் ஊதிய விடுமுறை வழங்கப்பட வேண்டும்.",
+        why_c_en="Incorrect. No cash bonus is provided.",
+        why_c_ta="தவறானது. பண போனஸ் எதுவும் சட்டத்தில் இல்லை.",
+        why_d_en="Incorrect. Only the single day of poll is a holiday, not the entire week.",
+        why_d_ta="தவறானது. வாக்குப்பதிவு நாள் மட்டுமே விடுமுறை, வாரம் முழுவதும் அல்ல.",
+        tip_en="An employer who contravenes Section 135B is punishable with fine up to Rs. 500 under Section 135B(3).",
+        tip_ta="பிரிவு 135B-ஐ மீறும் முதலாளிக்கு ரூ. 500 வரை அபராதம் விதிக்கப்படலாம்.",
+        fact_en="Exception: Does not apply to any elector whose absence would cause danger or substantial loss in respect of the employment in which he is engaged.",
+        fact_ta="விதிவிலக்கு: பணியாளர் வராவிட்டால் பெரும் ஆபத்து அல்லது இழப்பு ஏற்படும் அத்தியாவசிய பணிகளுக்கு இது பொருந்தாது.",
+        tags=["Section 135B", "Paid Holiday", "Voter Rights"]
+    ))
+
+    # GT 071
+    qs.append(make_ec_q(
+        qid="EC_GT_071", diff="Easy", qtype="Single-Choice", subtopic="Section 135C Dry Days",
+        en_stem="Under Section 135C of the Representation of the People Act, 1951, during which period is the sale and distribution of intoxicating liquor completely prohibited ('Dry Days') in a polling area?",
+        ta_stem="1951 மக்கள் பிரதிநிதித்துவச் சட்டத்தின் பிரிவு 135C-ன் கீழ், ஒரு வாக்குப்பதிவு பகுதியில் மதுபான விற்பனை மற்றும் விநியோகம் எந்தக் காலக்கட்டத்தில் முற்றிலும் தடை செய்யப்படுகிறது ('Dry Days')?",
+        en_a="During the period of 48 hours ending with the hour fixed for the conclusion of the poll", ta_a="வாக்குப்பதிவு முடிவதற்கு நிர்ணயிக்கப்பட்ட நேரத்துடன் முடிவடையும் 48 மணி நேரக் காலக்கட்டத்தில்",
+        en_b="For the entire duration of 14 days of election campaigning", ta_b="14 நாட்கள் நீடிக்கும் தேர்தல் பிரச்சாரக் காலம் முழுவதும்",
+        en_c="On counting day only", ta_c="வாக்கு எண்ணிக்கை நாளன்று மட்டும்",
+        en_d="From the date of election notification until result declaration", ta_d="தேர்தல் அறிவிக்கை வெளியான நாள் முதல் முடிவுகள் அறிவிக்கப்படும் வரை",
+        correct_key="A",
+        exp_en="Section 135C prohibits sale, giving, or distribution of intoxicating liquors in hotels, shops, eating places, or any public/private place within a polling area during the 48 hours ending with the conclusion of the poll. Violation carries imprisonment up to 6 months or fine up to Rs. 2,000.",
+        exp_ta="பிரிவு 135C, வாக்குப்பதிவு முடிவதற்கு முந்தைய 48 மணி நேரத்தில் வாக்குப்பதிவு பகுதியில் உள்ள கடைகள், உணவகங்கள் உள்ளிட்ட எந்தவொரு இடத்திலும் மதுபானங்கள் விற்பனை செய்வதையோ அல்லது வழங்குவதையோ முற்றிலும் தடை செய்கிறது.",
+        why_a_en="Correct. 48 hours ending with the close of poll under Section 135C.",
+        why_a_ta="சரியானது. வாக்குப்பதிவு முடிவதற்கு முந்தைய 48 மணி நேரம்.",
+        why_b_en="Incorrect. Not the entire 14 days.",
+        why_b_ta="தவறானது. 14 நாட்கள் முழுவதும் அல்ல.",
+        why_c_en="Incorrect. Counting day dry day is ordered separately under state excise rules, but Sec 135C mandates the 48-hour poll period.",
+        why_c_ta="தவறானது. பிரிவு 135C 48 மணி நேர வாக்குப்பதிவு காலத்தையே கட்டாயமாக்குகிறது.",
+        why_d_en="Incorrect. The statutory prohibition is not for months.",
+        why_d_ta="தவறானது. பல மாதங்களுக்கு இத்தடை நீடிப்பதில்லை.",
+        tip_en="Section 135C applies to all hotels, restaurants, clubs, and taverns, and illicit liquor is liable to confiscation.",
+        tip_ta="பிரிவு 135C அனைத்து விடுதிகள், உணவகங்கள் மற்றும் கிளப்புகளுக்கும் பொருந்தும்.",
+        fact_en="Section 135C was inserted in 1996 by the Representation of the People (Amendment) Act.",
+        fact_ta="1996 மக்கள் பிரதிநிதித்துவத் திருத்தச் சட்டம் மூலம் பிரிவு 135C சேர்க்கப்பட்டது.",
+        tags=["Section 135C", "Dry Days", "Liquor Prohibition"]
+    ))
+
+    # GT 072
+    qs.append(make_ec_q(
+        qid="EC_GT_072", diff="Hard", qtype="Single-Choice", subtopic="Section 160 Requisitioning",
+        en_stem="Under Section 160 of the Representation of the People Act, 1951, which category of premises is explicitly EXEMPT from being requisitioned by the State Government for election purposes?",
+        ta_stem="1951 மக்கள் பிரதிநிதித்துவச் சட்டத்தின் பிரிவு 160-ன் கீழ், தேர்தல் பணிகளுக்காக மாநில அரசால் கையகப்படுத்தப்படுவதிலிருந்து (requisitioned) வெளிப்படையாக விலக்கு அளிக்கப்பட்டுள்ள வளாகம் எது?",
+        en_a="Any premises or part thereof being used as a place of religious worship", ta_a="மத வழிபாட்டுத் தலமாகப் பயன்படுத்தப்படும் எந்தவொரு வளாகம் அல்லது அதன் பகுதி",
+        en_b="Privately owned educational institutions and universities", ta_b="தனியாருக்குச் சொந்தமான கல்வி நிறுவனங்கள் மற்றும் பல்கலைக்கழகங்கள்",
+        en_c="Commercial shopping complexes and cinema halls", ta_c="வணிக வளாகங்கள் மற்றும் திரையரங்குகள்",
+        en_d="Government community welfare centers", ta_d="அரசு சமூக நல மையங்கள்",
+        correct_key="A",
+        exp_en="Proviso to Section 160(1)(a) explicitly provides that 'no premises which are being lawfully used by a candidate or his agent for his residence or for an election office or which are being used as a place of religious worship' shall be requisitioned.",
+        exp_ta="பிரிவு 160(1)(a)-ன் வரம்புரையின்படி, வேட்பாளரின் குடியிருப்பு அல்லது தேர்தல் அலுவலகமாகப் பயன்படுத்தப்படும் இடங்கள் அல்லது 'மத வழிபாட்டுத் தலமாகப் பயன்படுத்தப்படும் எந்தவொரு வளாகமும்' தேர்தல் பணிகளுக்காக கையகப்படுத்தப்படக் கூடாது.",
+        why_a_en="Correct. Places of religious worship are statutorily exempt under Section 160 proviso.",
+        why_a_ta="சரியானது. மத வழிபாட்டுத் தலங்களை கையகப்படுத்த சட்டத்தில் தடை உள்ளது.",
+        why_b_en="Incorrect. Educational institutions are frequently requisitioned as polling stations.",
+        why_b_ta="தவறானது. கல்வி நிறுவனங்கள் வாக்குச்சாவடிகளாக கையகப்படுத்தப்படுகின்றன.",
+        why_c_en="Incorrect. Commercial premises can be requisitioned if needed.",
+        why_c_ta="தவறானது. தேவைப்பட்டால் வணிக வளாகங்களை கையகப்படுத்தலாம்.",
+        why_d_en="Incorrect. Government community halls are routinely requisitioned.",
+        why_d_ta="தவறானது. அரசு சமுதாயக் கூடங்கள் வழக்கமாக பயன்படுத்தப்படுகின்றன.",
+        tip_en="Section 160 also permits requisitioning of vehicles, vessels, and animals for transport of EVMs and staff.",
+        tip_ta="பிரிவு 160 தேர்தல் பணிகளுக்காக வாகனங்கள், படகுகள் மற்றும் விலங்குகளையும் கையகப்படுத்த அனுமதிக்கிறது.",
+        fact_en="Section 161 guarantees payment of statutory compensation to the owners of requisitioned premises and vehicles.",
+        fact_ta="பிரிவு 161 கையகப்படுத்தப்பட்ட வளாகங்கள் மற்றும் வாகனங்களின் உரிமையாளர்களுக்கு இழப்பீடு வழங்க உத்தரவாதம் அளிக்கிறது.",
+        tags=["Section 160", "Requisitioning Premises", "Religious Worship Exemption"]
+    ))
+
+    # GT 073
+    qs.append(make_ec_q(
+        qid="EC_GT_073", diff="Medium", qtype="Single-Choice", subtopic="Section 169 Rule Making",
+        en_stem="Under Section 169 of the Representation of the People Act, 1951, who has the power to make rules for carrying out the purposes of the Act, and in what manner?",
+        ta_stem="1951 மக்கள் பிரதிநிதித்துவச் சட்டத்தின் பிரிவு 169-ன் கீழ், இச்சட்டத்தின் நோக்கங்களை நிறைவேற்றுவதற்கான விதிகளை உருவாக்கும் அதிகாரம் யாருக்கு உள்ளது, மற்றும் எவ்வழியில்?",
+        en_a="Central Government after consulting the Election Commission, subject to laying before both Houses of Parliament", ta_a="தேர்தல் ஆணையத்துடன் கலந்தாலோசித்த பிறகு பாராளுமன்றத்தின் இரு அவைகளிலும் சமர்ப்பிப்பதற்கு உட்பட்டு மத்திய அரசால்",
+        en_b="Chief Election Commissioner independently by gazette notification without consulting the Union Government", ta_b="மத்திய அரசுடன் கலந்தாலோசிக்காமல் அரசிதழ் அறிவிப்பு மூலம் தன்னிச்சையாக தலைமைத் தேர்தல் ஆணையரால்",
+        en_c="Supreme Court of India through constitutional bench directions", ta_c="அரசியலமைப்பு அமர்வு வழிகாட்டுதல்கள் மூலம் இந்திய உச்ச நீதிமன்றத்தால்",
+        en_d="State Legislatures for their respective state territories", ta_d="தங்களின் எல்லைகளுக்காக அந்தந்த மாநில சட்டமன்றங்களால்",
+        correct_key="A",
+        exp_en="Section 169(1) vests the rule-making power in the Central Government after consulting the Election Commission. Under Section 169(3), all rules (such as Conduct of Elections Rules 1961) must be laid before each House of Parliament for 30 days.",
+        exp_ta="பிரிவு 169(1)-ன் படி, தேர்தல் ஆணையத்துடன் கலந்தாலோசித்த பின்னர் மத்திய அரசு விதிகளை உருவாக்குகிறது; பிரிவு 169(3)-ன் கீழ் அனைத்து விதிகளும் பாராளுமன்றத்தின் இரு அவைகளிலும் 30 நாட்கள் சமர்ப்பிக்கப்பட வேண்டும்.",
+        why_a_en="Correct. Central Government in consultation with ECI, laid before Parliament.",
+        why_a_ta="சரியானது. தேர்தல் ஆணைய ஆலோசனையுடன் மத்திய அரசால் உருவாக்கப்பட்டு பாராளுமன்றத்தில் வைக்கப்படுகிறது.",
+        why_b_en="Incorrect. ECI does not have independent statutory rule-making power.",
+        why_b_ta="தவறானது. தேர்தல் ஆணையத்திற்கு தன்னிச்சையான விதி உருவாக்கும் அதிகாரம் இல்லை.",
+        why_c_en="Incorrect. SC interprets rules but does not frame statutory delegated legislation.",
+        why_c_ta="தவறானது. உச்ச நீதிமன்றம் விதிகளை உருவாக்குவதில்லை.",
+        why_d_en="Incorrect. State legislatures do not make rules under Section 169.",
+        why_d_ta="தவறானது. மாநில சட்டமன்றங்கள் பிரிவு 169-ன் கீழ் விதிகளை உருவாக்க முடியாது.",
+        tip_en="The Conduct of Elections Rules, 1961 were framed by the Union Government under this exact Section 169.",
+        tip_ta="1961 தேர்தல் நடத்தை விதிகள் இந்த பிரிவு 169-ன் கீழேயே மத்திய அரசால் உருவாக்கப்பட்டன.",
+        fact_en="Section 28 of RPA 1950 contains a parallel rule-making power under which the Registration of Electors Rules 1960 were framed.",
+        fact_ta="1950 சட்டத்தின் பிரிவு 28-ன் கீழ் 1960 வாக்காளர் பதிவு விதிகள் உருவாக்கப்பட்டன.",
+        tags=["Section 169", "Rule Making Power", "Conduct of Elections Rules"]
+    ))
+
+    # GT 074
+    qs.append(make_ec_q(
+        qid="EC_GT_074", diff="Hard", qtype="Single-Choice", subtopic="Section 170 Civil Courts Bar",
+        en_stem="What does Section 170 of the Representation of the People Act, 1951 explicitly provide regarding the jurisdiction of civil courts?",
+        ta_stem="1951 மக்கள் பிரதிநிதித்துவச் சட்டத்தின் பிரிவு 170 உரிமையியல் நீதிமன்றங்களின் (civil courts) அதிகார வரம்பு குறித்து வெளிப்படையாக என்ன கூறுகிறது?",
+        en_a="No civil court shall have jurisdiction to question the legality of any action taken or decision given by the Returning Officer or other election authority", ta_a="தேர்தல் நடத்தும் அதிகாரி அல்லது பிற தேர்தல் அதிகாரிகளால் எடுக்கப்படும் எந்தவொரு நடவடிக்கை அல்லது முடிவின் சட்டப்பூர்வ தன்மையைக் கேள்வி கேட்க எந்த உரிமையியல் நீதிமன்றத்திற்கும் அதிகாரம் இல்லை",
+        en_b="Civil courts can grant interim injunctions stopping elections if fraud is alleged", ta_b="மோசடி குற்றச்சாட்டு கூறப்பட்டால் தேர்தலை நிறுத்தி இடைக்காலத் தடை விதிக்க உரிமையியல் நீதிமன்றங்களுக்கு அதிகாரம் உண்டு",
+        en_c="Civil courts have concurrent jurisdiction with High Courts to try election petitions", ta_c="தேர்தல் மனுக்களை விசாரிக்க உயர் நீதிமன்றங்களுடன் சம அதிகார வரம்பு உரிமையியல் நீதிமன்றங்களுக்கு உண்டு",
+        en_d="Civil courts can direct the Election Commission to change party symbols during an ongoing poll", ta_d="வாக்கெடுப்பு நடக்கும் போது கட்சியின் சின்னத்தை மாற்றுமாறு தேர்தல் ஆணையத்திற்கு உரிமையியல் நீதிமன்றங்கள் உத்தரவிடலாம்",
+        correct_key="A",
+        exp_en="Section 170 of RPA 1951 (Jurisdiction of civil courts barred) explicitly enacts: 'No civil court shall have jurisdiction to question the legality of any action taken or of any decision given by the returning officer or by any other person appointed under this Act in connection with an election.'",
+        exp_ta="பிரிவு 170 (உரிமையியல் நீதிமன்ற அதிகார வரம்பு தடை) தெளிவாகக் கூறுகிறது: 'தேர்தல் தொடர்பாக தேர்தல் நடத்தும் அதிகாரி அல்லது தேர்தல் அதிகாரியால் எடுக்கப்பட்ட எந்தவொரு நடவடிக்கை அல்லது முடிவின் சட்டப்பூர்வ தன்மையை கேள்வி கேட்க எந்த உரிமையியல் நீதிமன்றத்திற்கும் அதிகார வரம்பு கிடையாது.'",
+        why_a_en="Correct. Section 170 bars civil courts from questioning election officers' decisions.",
+        why_a_ta="சரியானது. பிரிவு 170 தேர்தல் அதிகாரிகளின் முடிவுகளை உரிமையியல் நீதிமன்றங்கள் கேள்வி கேட்பதைத் தடை செய்கிறது.",
+        why_b_en="Incorrect. Injunctions against elections are strictly prohibited.",
+        why_b_ta="தவறானது. தேர்தலுக்கு எதிராக இடைக்கால தடை விதிக்க முடியாது.",
+        why_c_en="Incorrect. High Courts have exclusive original jurisdiction under Section 80A.",
+        why_c_ta="தவறானது. உயர் நீதிமன்றத்திற்கு மட்டுமே பிரத்யேக அதிகாரம் உண்டு.",
+        why_d_en="Incorrect. Symbol disputes cannot be entertained by civil courts during elections.",
+        why_d_ta="தவறானது. சின்னத் தகராறுகளில் உரிமையியல் நீதிமன்றங்கள் தலையிட முடியாது.",
+        tip_en="Section 170 reinforces the constitutional bar contained in Article 329(b).",
+        tip_ta="சரத்து 329(b)-ல் உள்ள அரசியலமைப்புத் தடையை பிரிவு 170 மேலும் உறுதிப்படுத்துகிறது.",
+        fact_en="In N.P. Ponnuswami (1952), SC affirmed that Section 170 prevents piecemeal litigation from stalling elections.",
+        fact_ta="1952 பொன்னுசாமி வழக்கில் தேர்தலை முடக்கும் வழக்குகளைத் தடுக்கவே பிரிவு 170 இயற்றப்பட்டது என உச்ச நீதிமன்றம் கூறியது.",
+        tags=["Section 170", "Civil Courts Bar", "Judicial Non-Interference"]
+    ))
+
+    # GT 075
+    qs.append(make_ec_q(
+        qid="EC_GT_075", diff="Easy", qtype="Single-Choice", subtopic="Election Commission Foundation Date",
+        en_stem="On which exact date was the Election Commission of India established in accordance with the Constitution?",
+        ta_stem="இந்திய அரசியலமைப்பின்படி இந்தியத் தேர்தல் ஆணையம் எந்த துல்லியமான தேதியில் நிறுவப்பட்டது?",
+        en_a="25th January 1950", ta_a="25 ஜனவரி 1950",
+        en_b="26th January 1950", ta_b="26 ஜனவரி 1950",
+        en_c="15th August 1947", ta_c="15 ஆகஸ்ட் 1947",
+        en_d="26th November 1949", ta_d="26 நவம்பர் 1949",
+        correct_key="A",
+        exp_en="The Election Commission of India was established on 25 January 1950, one day before India became a Sovereign Democratic Republic on 26 January 1950. January 25 is celebrated annually as National Voters' Day.",
+        exp_ta="இந்தியா இறையாண்மை கொண்ட ஜனநாயகக் குடியரசாக மாறுவதற்கு ஒரு நாள் முன்னதாக, 1950 ஜனவரி 25 அன்று இந்தியத் தேர்தல் ஆணையம் நிறுவப்பட்டது. இந்நாள் ஆண்டுதோறும் தேசிய வாக்காளர் தினமாகக் கொண்டாடப்படுகிறது.",
+        why_a_en="Correct. 25 January 1950 is ECI's foundation date.",
+        why_a_ta="சரியானது. 25 ஜனவரி 1950 தேர்தல் ஆணையம் நிறுவப்பட்ட நாளாகும்.",
+        why_b_en="Incorrect. 26 January 1950 is Republic Day.",
+        why_b_ta="தவறானது. 26 ஜனவரி 1950 குடியரசு தினமாகும்.",
+        why_c_en="Incorrect. 15 August 1947 is Independence Day.",
+        why_c_ta="தவறானது. 15 ஆகஸ்ட் 1947 சுதந்திர தினமாகும்.",
+        why_d_en="Incorrect. 26 November 1949 is Constitution Adoption Day.",
+        why_d_ta="தவறானது. 26 நவம்பர் 1949 அரசியலமைப்பு ஏற்றுக்கொள்ளப்பட்ட நாளாகும்.",
+        tip_en="ECI was set up a day before Republic Day so that electoral machinery would be operational immediately under the Constitution.",
+        tip_ta="அரசியலமைப்பு நடைமுறைக்கு வரும் முன்னரே தேர்தல் இயந்திரம் தயாராக இருக்க வேண்டும் என்பதற்காக ஒரு நாள் முன்பே நிறுவப்பட்டது.",
+        fact_en="ECI's headquarters in New Delhi is named 'Nirvachan Sadan'.",
+        fact_ta="புது தில்லியில் உள்ள இந்திய தேர்தல் ஆணையத்தின் தலைமை அலுவலகம் 'நிர்வாசன் சதன்' (Nirvachan Sadan) என அழைக்கப்படுகிறது.",
+        tags=["ECI Foundation Date", "25 January 1950", "Nirvachan Sadan"]
+    ))
+
+    return qs

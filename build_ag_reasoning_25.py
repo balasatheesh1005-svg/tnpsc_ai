@@ -1,0 +1,427 @@
+# -*- coding: utf-8 -*-
+"""
+Generator for Attorney General of India Assertion-Reason MCQs (25 Questions: AG_R_001 to AG_R_025).
+Strictly adheres to:
+- Full 24-field TNPSC Nova AI schema
+- Balanced answer keys (around 6-7 of each A, B, C, D)
+- Fully bilingual (English and authentic Tamil)
+- Standard Assertion (A) and Reason (R) format
+"""
+
+import json
+import os
+import shutil
+from ag_mcq_helper import make_ag_q
+from rebalance_er_helper import balance_question_keys
+from tools.nova_content_engine.validator import ContentValidator
+
+raw_reasoning_data = [
+    # 1
+    {
+        "stem_en": "Assertion (A): The Attorney General of India conventionally submits his resignation when the Council of Ministers resigns or is replaced.\nReason (R): The Attorney General is appointed by the President on the aid and advice of the Council of Ministers.",
+        "stem_ta": "கூற்று (A): மத்திய அமைச்சரவை பதவி விலகும் போதோ அல்லது மாற்றப்படும் போதோ, இந்திய தலைமை வழக்கறிஞர் தனது பதவியை ராஜினாமா செய்வது மரபாகும்.\nகாரணம் (R): மத்திய அமைச்சரவையின் உதவி மற்றும் ஆலோசனையின் பேரிலேயே குடியரசுத் தலைவரால் தலைமை வழக்கறிஞர் நியமிக்கப்படுகிறார்.",
+        "correct_idx": 0,  # Both true, R is correct explanation
+        "exp_en": "Both (A) and (R) are true, and (R) is the correct explanation of (A). By constitutional convention, the AG resigns when the ministry changes because he is appointed on the advice of that specific Council of Ministers and the incoming government is entitled to appoint a law officer of its confidence.",
+        "exp_ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும். அமைச்சரவையின் ஆலோசனையின் பேரிலேயே AG நியமிக்கப்படுவதால், ஆட்சி மாறும்போது புதிய அரசு தன் நம்பிக்கைக்குரிய வழக்கறிஞரை நியமிக்கும் வகையில் AG பதவி விலகுவது அரசியல் மரபாக உள்ளது.",
+        "tip_en": "Convention of resignation is directly linked to the fact that appointment is made on Council of Ministers' advice.",
+        "tip_ta": "அமைச்சரவை ஆலோசனையின் பேரில் நியமிக்கப்படுவதால் ஆட்சி மாறும்போது AG பதவி விலகுவது மரபு.",
+        "fact_en": "Though Article 76 does not mention resignation upon ministry change, it is a well-settled constitutional convention.",
+        "fact_ta": "சரத்து 76-ல் குறிப்பிடப்படவில்லை என்றாலும், அமைச்சரவை மாறும்போது AG பதவி விலகுவது ஓர் உறுதியான மரபாகும்.",
+        "subtopic": "Constitutional Conventions"
+    },
+    # 2
+    {
+        "stem_en": "Assertion (A): The Attorney General of India has the right to speak and take part in the proceedings of Parliament but does not have the right to vote.\nReason (R): The Attorney General is not an elected or nominated Member of Parliament.",
+        "stem_ta": "கூற்று (A): இந்திய தலைமை வழக்கறிஞருக்கு நாடாளுமன்ற நடவடிக்கைகளில் பேசவும் பங்கேற்கவும் உரிமை உண்டு, ஆனால் வாக்களிக்கும் உரிமை இல்லை.\nகாரணம் (R): தலைமை வழக்கறிஞர் மக்களால் தேர்ந்தெடுக்கப்பட்ட அல்லது நியமிக்கப்பட்ட நாடாளுமன்ற உறுப்பினர் அல்ல.",
+        "correct_idx": 0,  # Both true, R explains A
+        "exp_en": "Both (A) and (R) are true, and (R) is the correct explanation of (A). Under Article 88, the AG can participate to provide legal counsel to the legislature, but voting is a sovereign democratic prerogative reserved exclusively for Members of Parliament.",
+        "exp_ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும். சட்ட ஆலோசனைகளை வழங்க நாடாளுமன்றத்தில் பேச உரிமை உண்டு; ஆனால் வாக்குரிமை என்பது நாடாளுமன்ற உறுப்பினர்களுக்கு மட்டுமே உரிய மக்களாட்சி உரிமை என்பதால் AG-க்கு வாக்குரிமை இல்லை.",
+        "tip_en": "Voting in Parliament is strictly an MP's constitutional prerogative under Article 100, not available to the AG under Article 88.",
+        "tip_ta": "வாக்களிக்கும் உரிமை எம்பிக்களுக்கு மட்டுமே உரியது (சரத்து 100); சரத்து 88 AG-க்கு பேச மட்டுமே உரிமை அளிக்கிறது.",
+        "fact_en": "Article 88 explicitly concludes: '...but shall not by virtue of this article be entitled to vote.'",
+        "fact_ta": "சரத்து 88 'ஆனால் இந்த பிரிவின் மூலம் வாக்களிக்க உரிமை பெறமாட்டார்' என்று தெளிவாக முடிக்கிறது.",
+        "subtopic": "Parliamentary Rights"
+    },
+    # 3
+    {
+        "stem_en": "Assertion (A): The Attorney General of India cannot claim the procedural safeguards against dismissal provided under Article 311 of the Constitution.\nReason (R): The Attorney General is not a member of the civil services of the Union nor does he hold a civil post under the Union.",
+        "stem_ta": "கூற்று (A): அரசியலமைப்பின் 311-வது பிரிவின் கீழ் வழங்கப்பட்டுள்ள பணிநீக்கப் பாதுகாப்பு நடைமுறைகளை இந்திய தலைமை வழக்கறிஞர் கோர முடியாது.\nகாரணம் (R): தலைமை வழக்கறிஞர் மத்திய குடிமைப் பணிகளின் உறுப்பினரோ அல்லது மத்திய அரசின் குடிமைப் பதவி வகிப்பவரோ அல்ல.",
+        "correct_idx": 0,  # Both true, R explains A
+        "exp_en": "Both (A) and (R) are true, and (R) correctly explains (A). Article 311 applies strictly to civil servants holding civil posts. The AG holds a constitutional professional office at the pleasure of the President (Article 76(4)) and is outside the scope of Article 311.",
+        "exp_ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும். சரத்து 311 அரசு குடிமைப் பணியாளர்களுக்கு மட்டுமே பொருந்தும். AG ஒரு அரசியலமைப்பு சட்ட ஆலோசகர் மற்றும் குடியரசுத் தலைவரின் விருப்பம் உள்ளவரை பதவியில் இருப்பவர் என்பதால் அவருக்கு சரத்து 311 பொருந்தாது.",
+        "tip_en": "Article 311 protection is only for civil servants, not for constitutional functionaries serving at pleasure like the AG.",
+        "tip_ta": "சரத்து 311 குடிமைப் பணியாளர்களுக்கு மட்டுமே பொருந்தும், தலைமை வழக்கறிஞருக்குப் பொருந்தாது.",
+        "fact_en": "The Attorney General is a professional legal adviser, not a government employee or bureaucrat.",
+        "fact_ta": "தலைமை வழக்கறிஞர் ஒரு தொழில்முறை சட்ட ஆலோசகரே தவிர அரசு ஊழியர் அல்ல.",
+        "subtopic": "Article 311 & Status"
+    },
+    # 4
+    {
+        "stem_en": "Assertion (A): The Attorney General of India is permitted to engage in private legal practice.\nReason (R): The Attorney General is not debarred from private practice because he is not a whole-time salaried government servant.",
+        "stem_ta": "கூற்று (A): இந்திய தலைமை வழக்கறிஞர் தனியார் சட்டப் பயிற்சி மேற்கொள்ள அனுமதிக்கப்படுகிறார்.\nகாரணம் (R): தலைமை வழக்கறிஞர் முழுநேர ஊதியம் பெறும் அரசு ஊழியர் அல்ல என்பதால் அவர் தனியார் பயிற்சியிலிருந்து தடை செய்யப்படவில்லை.",
+        "correct_idx": 0,  # Both true, R explains A
+        "exp_en": "Both (A) and (R) are true, and (R) correctly explains (A). Because the AG is not a full-time government servant, he is free to accept private retainers and briefs, subject to conflict of interest restrictions.",
+        "exp_ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும். AG முழுநேர அரசு ஊழியர் அல்லாததால், அரசுக்கு எதிரான வழக்குகளைத் தவிர்த்து பிற தனியார் வழக்குகளில் ஆஜராக அவருக்கு அனுமதி உண்டு.",
+        "tip_en": "AG is not a full-time government servant; hence private practice is allowed subject to ethical restrictions.",
+        "tip_ta": "AG முழுநேர அரசு ஊழியர் அல்ல, எனவே நெறிமுறை நிபந்தனைகளுடன் தனியார் பயிற்சி அனுமதிக்கப்படுகிறது.",
+        "fact_en": "The Law Officers Rules 1987 permit private practice so long as it does not conflict with Union interests.",
+        "fact_ta": "மத்திய அரசின் நலன்களுக்கு முரண்படாத வரை தனியார் சட்டப் பயிற்சியை 1987 சட்ட அதிகாரிகள் விதிகள் அனுமதிக்கின்றன.",
+        "subtopic": "Private Practice"
+    },
+    # 5
+    {
+        "stem_en": "Assertion (A): In India, the Attorney General is not a member of the Central Cabinet.\nReason (R): The Indian Constitution follows the British practice of appointing the Attorney General as a Cabinet Minister.",
+        "stem_ta": "கூற்று (A): இந்தியாவில் தலைமை வழக்கறிஞர் மத்திய அமைச்சரவையில் ஓர் உறுப்பினர் அல்ல.\nகாரணம் (R): தலைமை வழக்கறிஞரை அமைச்சரவை அமைச்சராக நியமிக்கும் பிரிட்டிஷ் நடைமுறையை இந்திய அரசியலமைப்பு பின்பற்றுகிறது.",
+        "correct_idx": 2,  # A is true, R is false
+        "exp_en": "(A) is true, but (R) is false. In India, the AG is NOT a Cabinet member; instead, there is a separate Law Minister. (R) is false because India departed from British convention by deliberately keeping the AG non-political and outside the Cabinet.",
+        "exp_ta": "(A) சரி, ஆனால் (R) தவறு. இந்தியாவில் AG அமைச்சரவை உறுப்பினர் அல்ல; தனியாக சட்ட அமைச்சர் உள்ளார். பிரிட்டனில் AG அமைச்சரவையில் இருப்பார்; ஆனால் இந்திய அரசியலமைப்பு அந்த நடைமுறையைப் பின்பற்றாமல் AG-யை அரசியலற்றவராக அமைச்சரவைக்கு வெளியே வைத்துள்ளது.",
+        "tip_en": "India departed from the British convention: in UK, AG is in Cabinet; in India, AG is NOT in Cabinet (separate Law Minister exists).",
+        "tip_ta": "பிரிட்டனில் AG அமைச்சரவையில் இருப்பார்; ஆனால் இந்தியாவில் AG அமைச்சரவையில் இல்லை (தனியாக சட்ட அமைச்சர் உள்ளார்).",
+        "fact_en": "The Indian Constituent Assembly preferred an independent, non-political legal adviser over a political minister as AG.",
+        "fact_ta": "அரசியல் அமைச்சரை விட ஓர் சுதந்திரமான சட்ட ஆலோசகரே AG-யாக இருக்க வேண்டும் என இந்திய அரசியல் நிர்ணய சபை விரும்பியது.",
+        "subtopic": "Cabinet Status"
+    },
+    # 6
+    {
+        "stem_en": "Assertion (A): Under Section 15 of the Contempt of Courts Act, 1971, a private person must obtain the prior written consent of the Attorney General to move a criminal contempt petition in the Supreme Court.\nReason (R): The requirement of consent acts as a filter to prevent frivolous, vexatious, or politically motivated contempt proceedings from burdening the Supreme Court.",
+        "stem_ta": "கூற்று (A): 1971 நீதிமன்ற அவமதிப்புச் சட்டத்தின் பிரிவு 15-ன் கீழ், உச்ச நீதிமன்றத்தில் குற்றவியல் நீதிமன்ற அவமதிப்பு வழக்கைத் தொடர ஒரு தனிநபர் தலைமை வழக்கறிஞரின் முன் எழுத்துப்பூர்வ ஒப்புதலைப் பெற வேண்டும்.\nகாரணம் (R): தேவையற்ற, அற்பமான அல்லது அரசியல் உள்நோக்கம் கொண்ட அவமதிப்பு வழக்குகள் உச்ச நீதிமன்றத்தின் நேரத்தை வீணடிப்பதைத் தடுக்கும் வடிகட்டியாக இந்த ஒப்புதல் நிபந்தனை செயல்படுகிறது.",
+        "correct_idx": 0,  # Both true, R explains A
+        "exp_en": "Both (A) and (R) are true, and (R) is the correct explanation of (A). The Supreme Court has repeatedly affirmed that the AG's consent under Section 15 is intended to safeguard the judiciary's time against frivolous and harassing litigation.",
+        "exp_ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும். நீதிமன்றத்தின் நேரத்தை வீணடிக்கும் அற்ப வழக்குகளை வடிகட்டுவதற்காகவே தலைமை வழக்கறிஞரின் முன் ஒப்புதல் கட்டாயமாக்கப்பட்டுள்ளது என உச்ச நீதிமன்றம் பல தீர்ப்புகளில் கூறியுள்ளது.",
+        "tip_en": "Section 15 Contempt of Courts Act consent is a screening mechanism against vexatious criminal contempt motions.",
+        "tip_ta": "நீதிமன்ற அவமதிப்புச் சட்டம் பிரிவு 15-ன் கீழ் AG ஒப்புதல் என்பது தேவையற்ற அவமதிப்பு வழக்குகளை வடிகட்டும் ஒரு கருவியாகும்.",
+        "fact_en": "Without the AG's written consent, a private criminal contempt petition cannot be entertained by the Supreme Court registry.",
+        "fact_ta": "தலைமை வழக்கறிஞரின் எழுத்துப்பூர்வ ஒப்புதல் இன்றி தனிநபரின் குற்றவியல் அவமதிப்பு மனுவை உச்ச நீதிமன்றம் ஏற்காது.",
+        "subtopic": "Contempt of Court"
+    },
+    # 7
+    {
+        "stem_en": "Assertion (A): The Attorney General of India has the right of pre-audience over all other advocates in all courts in India.\nReason (R): The Attorney General is placed at the top of the statutory order of precedence among advocates under Section 23 of the Advocates Act, 1961.",
+        "stem_ta": "கூற்று (A): இந்தியாவில் உள்ள அனைத்து நீதிமன்றங்களிலும் மற்ற அனைத்து வழக்கறிஞர்களையும் விட முதன்மை வழக்காடும் உரிமை இந்திய தலைமை வழக்கறிஞருக்கு உண்டு.\nகாரணம் (R): 1961 வழக்கறிஞர்கள் சட்டத்தின் பிரிவு 23-ன் கீழ் வழக்கறிஞர்களுக்கான சட்டப்பூர்வ முன்னுரிமை வரிசையில் தலைமை வழக்கறிஞர் முதலிடத்தில் வைக்கப்பட்டுள்ளார்.",
+        "correct_idx": 0,  # Both true, R explains A
+        "exp_en": "Both (A) and (R) are true, and (R) is the correct explanation of (A). Section 23(1) of the Advocates Act explicitly accords the Attorney General the right of pre-audience over all other advocates in India.",
+        "exp_ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும். வழக்கறிஞர்கள் சட்டம் பிரிவு 23(1) மற்ற அனைத்து வழக்கறிஞர்களையும் விட தலைமை வழக்கறிஞருக்கே முதன்மை வழக்காடும் உரிமையை வெளிப்படையாக வழங்குகிறது.",
+        "tip_en": "Pre-audience order (Sec 23 Advocates Act): Attorney General > Solicitor General > Additional Solicitor General.",
+        "tip_ta": "முதன்மை வழக்காடும் உரிமை: தலைமை வழக்கறிஞர் > சொலிசிட்டர் ஜெனரல் > கூடுதல் சொலிசிட்டர் ஜெனரல்.",
+        "fact_en": "Pre-audience entitles the Attorney General to be heard first when multiple counsel are present.",
+        "fact_ta": "பல வழக்கறிஞர்கள் ஆஜராகும் போது தலைமை வழக்கறிஞரின் வாதத்தை முதலில் கேட்க இந்த உரிமை வழிசெய்கிறது.",
+        "subtopic": "Right of Audience"
+    },
+    # 8
+    {
+        "stem_en": "Assertion (A): The remuneration of the Attorney General of India cannot be altered by Parliament through a regular law.\nReason (R): Under Article 76(4), the Attorney General receives such remuneration as the President may determine.",
+        "stem_ta": "கூற்று (A): இந்திய தலைமை வழக்கறிஞரின் ஊதியத்தை நாடாளுமன்றம் சாதாரண சட்டத்தின் மூலம் மாற்றியமைக்க முடியாது.\nகாரணம் (R): சரத்து 76(4)-ன் கீழ், குடியரசுத் தலைவர் நிர்ணயிக்கும் ஊதியத்தையே தலைமை வழக்கறிஞர் பெறுகிறார்.",
+        "correct_idx": 0,  # Both true, R explains A
+        "exp_en": "Both (A) and (R) are true, and (R) correctly explains (A). Article 76(4) vests the determination of the AG's remuneration exclusively in the President (executive), not in Parliament, and it is not determined under the Second Schedule.",
+        "exp_ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும். சரத்து 76(4)-ன் படி AG ஊதியத்தை குடியரசுத் தலைவரே நிர்ணயிக்கிறார்; நாடாளுமன்றச் சட்டத்தின் மூலமோ அல்லது 2-வது அட்டவணை மூலமோ இது நிர்ணயிக்கப்படுவதில்லை.",
+        "tip_en": "AG's remuneration is determined by the President under Article 76(4), not by Parliament.",
+        "tip_ta": "சரத்து 76(4)-ன் கீழ் தலைமை வழக்கறிஞரின் ஊதியத்தை குடியரசுத் தலைவரே தீர்மானிக்கிறார், நாடாளுமன்றம் அல்ல.",
+        "fact_en": "Unlike Supreme Court judges whose salaries are governed by Parliamentary statute under Article 125, AG's remuneration is determined by presidential order.",
+        "fact_ta": "சரத்து 125-ன் கீழ் நாடாளுமன்றச் சட்டத்தால் நிர்ணயிக்கப்படும் நீதிபதிகளின் ஊதியத்தைப் போலன்றி, AG ஊதியம் குடியரசுத் தலைவர் உத்தரவால் நிர்ணயிக்கப்படுகிறது.",
+        "subtopic": "Remuneration"
+    },
+    # 9
+    {
+        "stem_en": "Assertion (A): The advice tendered by the Attorney General of India is strictly binding on the Government of India.\nReason (R): The Attorney General is the highest law officer in the country created under Article 76 of the Constitution.",
+        "stem_ta": "கூற்று (A): இந்திய தலைமை வழக்கறிஞர் வழங்கும் ஆலோசனையானது இந்திய அரசாங்கத்தை சட்டப்பூர்வமாகக் கட்டுப்படுத்தும்.\nகாரணம் (R): தலைமை வழக்கறிஞர் அரசியலமைப்பின் 76-வது பிரிவின் கீழ் உருவாக்கப்பட்ட நாட்டின் மிக உயர்ந்த சட்ட அதிகாரி ஆவார்.",
+        "correct_idx": 3,  # A is false, R is true
+        "exp_en": "(A) is false, but (R) is true. The AG's advice is advisory in nature and NOT binding on the Government; the Government is free to accept or reject it. (R) is true because the AG is indeed the highest law officer under Article 76.",
+        "exp_ta": "(A) தவறு, ஆனால் (R) சரி. தலைமை வழக்கறிஞரின் ஆலோசனை அரசுக்கு ஆலோசனை மட்டுமே தவிர அதைக் கட்டாயம் பின்பற்ற வேண்டும் என்ற சட்டக் கட்டுப்பாடு இல்லை; எனவே (A) தவறு. ஆனால் சரத்து 76-ன் கீழ் AG நாட்டின் தலைமை சட்ட அதிகாரி என்பது சரியானது.",
+        "tip_en": "AG is the highest law officer, but his advice is ADVISORY, never legally binding on the Government.",
+        "tip_ta": "AG நாட்டின் மிக உயர்ந்த சட்ட அதிகாரி, ஆனால் அவரது ஆலோசனை ஒரு வழிகாட்டுதலே தவிர அரசாங்கத்தைக் கட்டுப்படுத்தாது.",
+        "fact_en": "The Union executive exercises constitutional discretion and can take a different policy view despite the AG's advice.",
+        "fact_ta": "தலைமை வழக்கறிஞரின் ஆலோசனையையும் தாண்டி மத்திய அரசு வேறு கொள்கை முடிவை எடுக்க முழு உரிமை உண்டு.",
+        "subtopic": "Advisory Functions"
+    },
+    # 10
+    {
+        "stem_en": "Assertion (A): The Attorney General of India enjoys immunity from arrest in civil cases during parliamentary sessions under Article 105(4).\nReason (R): Article 105(4) extends all the privileges and immunities of a Member of Parliament to any person who has the right to speak in Parliament under Article 88.",
+        "stem_ta": "கூற்று (A): சரத்து 105(4)-ன் கீழ் நாடாளுமன்றக் கூட்டத்தொடர் நடைபெறும் காலத்தில் சிவில் வழக்குகளில் கைது செய்யப்படுவதிலிருந்து தலைமை வழக்கறிஞருக்கு விலக்கு உண்டு.\nகாரணம் (R): சரத்து 88-ன் கீழ் நாடாளுமன்றத்தில் பேச உரிமையுள்ள அனைவருக்கும் நாடாளுமன்ற உறுப்பினர்களின் அனைத்து சலுகைகளையும் பாதுகாப்புகளையும் சரத்து 105(4) வழங்குகிறது.",
+        "correct_idx": 0,  # Both true, R explains A
+        "exp_en": "Both (A) and (R) are true, and (R) correctly explains (A). Under Article 105(4), parliamentary privileges (including immunity from civil arrest 40 days before and after sessions under Section 135A CPC) extend to the Attorney General.",
+        "exp_ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும். சரத்து 88-ன் கீழ் பேச உரிமையுள்ள தலைமை வழக்கறிஞருக்கு சரத்து 105(4)-ன் கீழ் எம்பிக்களின் அனைத்து சிறப்புரிமைகளும் (சிவில் வழக்குகளில் கைது செய்யப்படாமை உட்பட) கிடைக்கின்றன.",
+        "tip_en": "Article 105(4) explicitly extends parliamentary privileges to the Attorney General.",
+        "tip_ta": "சரத்து 105(4) நாடாளுமன்ற சலுகைகளை தலைமை வழக்கறிஞருக்கு வெளிப்படையாக வழங்குகிறது.",
+        "fact_en": "Immunity applies only to civil matters and does not extend to criminal proceedings or preventive detention.",
+        "fact_ta": "இந்த விலக்கு உரிமையியல் (சிவில்) விவகாரங்களுக்கு மட்டுமே பொருந்தும், குற்றவியல் அல்லது தடுப்புக் காவலுக்குப் பொருந்தாது.",
+        "subtopic": "Privileges & Immunities"
+    },
+    # 11
+    {
+        "stem_en": "Assertion (A): The Solicitor General and Additional Solicitors General cannot claim constitutional status under Article 76.\nReason (R): Article 76 of the Constitution mentions only the office of the Attorney General of India.",
+        "stem_ta": "கூற்று (A): சொலிசிட்டர் ஜெனரல் மற்றும் கூடுதல் சொலிசிட்டர் ஜெனரல்கள் சரத்து 76-ன் கீழ் அரசியலமைப்பு அந்தஸ்தைக் கோர முடியாது.\nகாரணம் (R): அரசியலமைப்பின் 76-வது பிரிவு இந்திய தலைமை வழக்கறிஞர் அலுவலகத்தை மட்டுமே குறிப்பிடுகிறது.",
+        "correct_idx": 0,  # Both true, R explains A
+        "exp_en": "Both (A) and (R) are true, and (R) correctly explains (A). The Constitution mentions only the Attorney General under Article 76. The Solicitor General and Additional Solicitors General are non-constitutional, executive posts created by the Government.",
+        "exp_ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும். சரத்து 76 தலைமை வழக்கறிஞரை மட்டுமே உருவாக்குகிறது. சொலிசிட்டர் ஜெனரல் மற்றும் ASG பதவிகள் நிர்வாக விதிகளால் அமைக்கப்பட்ட அரசியலமைப்பு சாரா பதவிகளாகும்.",
+        "tip_en": "Only the AG is mentioned in Article 76; SG and ASG are statutory/executive posts.",
+        "tip_ta": "சரத்து 76-ல் தலைமை வழக்கறிஞர் மட்டுமே குறிப்பிடப்பட்டுள்ளார்; SG மற்றும் ASG நிர்வாகப் பதவிகள்.",
+        "fact_en": "The offices of Solicitor General and Additional Solicitors General assist the AG under executive rules.",
+        "fact_ta": "சொலிசிட்டர் ஜெனரல் மற்றும் கூடுதல் சொலிசிட்டர் ஜெனரல்கள் நிர்வாக விதிகளின் கீழ் AG-க்கு உதவுகின்றனர்.",
+        "subtopic": "Law Officers"
+    },
+    # 12
+    {
+        "stem_en": "Assertion (A): The Attorney General of India cannot advise or hold a brief against the Government of India in any court.\nReason (R): As the chief legal adviser to the Union, holding a brief against the Union would create a direct and impermissible conflict of interest.",
+        "stem_ta": "கூற்று (A): இந்திய தலைமை வழக்கறிஞர் எந்தவொரு நீதிமன்றத்திலும் இந்திய அரசுக்கு எதிராக ஆலோசனையோ வாதாடவோ முடியாது.\nகாரணம் (R): மத்திய அரசின் தலைமைச் சட்ட ஆலோசகர் என்ற முறையில், அரசுக்கு எதிராக வாதாடுவது நேரடியான மற்றும் அனுமதிக்க முடியாத தொழில்முறை முரண்பாட்டை (conflict of interest) உருவாக்கும்.",
+        "correct_idx": 0,  # Both true, R explains A
+        "exp_en": "Both (A) and (R) are true, and (R) correctly explains (A). Under Rule 8 of the Law Officers Rules, the AG cannot advise or appear against the Government because of the paramount fiduciary duty owed to his client, the Union of India.",
+        "exp_ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும். தனது முதன்மை வாடிக்கையாளரான இந்திய ஒன்றிய அரசுக்கு உண்மையுடன் இருக்க வேண்டிய கடமை உள்ளதால், அரசுக்கு எதிராக வாதாடுவது நலன் முரண்பாட்டை ஏற்படுத்தும்.",
+        "tip_en": "AG cannot advise or appear against the Government of India; this is a fundamental conflict of interest restriction.",
+        "tip_ta": "AG இந்திய அரசுக்கு எதிராக ஆலோசிக்கவோ வாதாடவோ முடியாது; இது ஒரு அடிப்படை நலன் முரண்பாட்டுத் தடையாகும்.",
+        "fact_en": "Rule 8(1)(a) of the Law Officers (Conditions of Service) Rules 1987 strictly prohibits briefs against the GoI.",
+        "fact_ta": "1987 சட்ட அதிகாரிகள் விதிகளின் விதி 8(1)(a) இந்திய அரசுக்கு எதிரான வழக்குகளை ஏற்கத் தடை விதிக்கிறது.",
+        "subtopic": "Limitations & Ethics"
+    },
+    # 13
+    {
+        "stem_en": "Assertion (A): Unlike Judges of the Supreme Court, the Attorney General of India does not subscribe to an oath of office prescribed in the Third Schedule.\nReason (R): The Attorney General of India is not regarded as a constitutional authority under the Constitution.",
+        "stem_ta": "கூற்று (A): உச்ச நீதிமன்ற நீதிபதிகளைப் போலன்றி, இந்திய தலைமை வழக்கறிஞர் மூன்றாவது அட்டவணையில் உள்ள எந்தவொரு பதவிப் பிரமாணத்தையும் ஏற்பதில்லை.\nகாரணம் (R): இந்திய தலைமை வழக்கறிஞர் அரசியலமைப்பின் கீழ் ஓர் அரசியலமைப்பு அதிகார அமைப்பாகக் (Constitutional authority) கருதப்படுவதில்லை.",
+        "correct_idx": 2,  # A is true, R is false
+        "exp_en": "(A) is true, but (R) is false. The Constitution does NOT prescribe any oath for the AG in the Third Schedule (making (A) true). However, (R) is false because the AG is undeniably a high constitutional authority created by Article 76.",
+        "exp_ta": "(A) சரி, ஆனால் (R) தவறு. மூன்றாவது அட்டவணையில் தலைமை வழக்கறிஞருக்கான பதவிப் பிரமாணம் எதுவும் இல்லை என்பது உண்மை; எனவே (A) சரி. ஆனால் AG சரத்து 76-ன் கீழ் உருவாக்கப்பட்ட ஒரு மிக உயர்ந்த அரசியலமைப்புப் பதவி என்பதால் (R) தவறானது.",
+        "tip_en": "Third Schedule has no oath for AG, but AG IS a constitutional authority created under Article 76.",
+        "tip_ta": "மூன்றாவது அட்டவணையில் AG-க்கு பிரமாணம் இல்லை, ஆனால் AG சரத்து 76-ன் கீழ் உள்ள அரசியலமைப்பு அதிகார அமைப்பே ஆவார்.",
+        "fact_en": "The omission of an oath in the Third Schedule reflects the unique professional advocate character of the AG.",
+        "fact_ta": "3-வது அட்டவணையில் பிரமாணம் இல்லாதது தலைமை வழக்கறிஞரின் தனித்துவமான தொழில்முறை வழக்கறிஞர் பண்பைப் பிரதிபலிக்கிறது.",
+        "subtopic": "Oath & Status"
+    },
+    # 14
+    {
+        "stem_en": "Assertion (A): The Supreme Court may withdraw cases pending before High Courts and dispose of them itself on an application by the Attorney General under Article 139A.\nReason (R): Article 139A was inserted by the 42nd Amendment Act to ensure uniformity of judicial decisions across the country on major constitutional questions.",
+        "stem_ta": "கூற்று (A): சரத்து 139A-ன் கீழ் தலைமை வழக்கறிஞரின் விண்ணப்பத்தின் பேரில் உயர் நீதிமன்றங்களில் நிலுவையில் உள்ள வழக்குகளை உச்ச நீதிமன்றம் தன்னிடம் பெற்றுத் தீர்த்து வைக்கலாம்.\nகாரணம் (R): முக்கிய அரசியலமைப்பு வினாக்களில் நாடு முழுவதும் ஒரே மாதிரியான நீதித்துறை தீர்ப்புகளை உறுதி செய்வதற்காக 42-வது திருத்தச் சட்டத்தால் சரத்து 139A சேர்க்கப்பட்டது.",
+        "correct_idx": 0,  # Both true, R explains A
+        "exp_en": "Both (A) and (R) are true, and (R) correctly explains (A). Article 139A was inserted by the 42nd Amendment to avoid conflicting interpretations by different High Courts on substantial questions of law, and the AG is specifically empowered to apply for transfer.",
+        "exp_ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும். பல்வேறு உயர் நீதிமன்றங்கள் முரண்பட்ட தீர்ப்புகளை வழங்குவதைத் தவிர்த்து நாடு முழுவதும் சட்ட ஒற்றுமையை நிலைநாட்டவே 42-வது திருத்தத்தில் சரத்து 139A கொண்டுவரப்பட்டு AG-க்கு விண்ணப்பிக்கும் அதிகாரம் வழங்கப்பட்டது.",
+        "tip_en": "Article 139A transfer petitions can be moved by the AG to resolve identical legal issues across multiple High Courts.",
+        "tip_ta": "பல்வேறு உயர் நீதிமன்றங்களில் உள்ள ஒரே மாதிரியான வழக்குகளை உச்ச நீதிமன்றத்திற்கு மாற்ற AG சரத்து 139A-ல் மனு செய்யலாம்.",
+        "fact_en": "Article 139A enables the Supreme Court to withdraw cases involving substantially the same questions of general importance.",
+        "fact_ta": "பொது முக்கியத்துவம் வாய்ந்த ஒரே மாதிரியான சட்டக் கேள்விகளைக் கொண்ட வழக்குகளை உச்ச நீதிமன்றம் தன்னிடம் மாற்ற சரத்து 139A உதவுகிறது.",
+        "subtopic": "Article 139A"
+    },
+    # 15
+    {
+        "stem_en": "Assertion (A): In an advisory reference under Article 143(1), the Supreme Court is bound to deliver an opinion to the President.\nReason (R): The Attorney General of India represents the President and the Union Government in all Article 143 proceedings.",
+        "stem_ta": "கூற்று (A): சரத்து 143(1)-ன் கீழ் உள்ள குறிப்புரையில் குடியரசுத் தலைவருக்கு ஆலோசனை வழங்கிட உச்ச நீதிமன்றம் கடமைப்பட்டுள்ளது.\nகாரணம் (R): சரத்து 143 நடவடிக்கைகளில் குடியரசுத் தலைவர் மற்றும் ஒன்றிய அரசை தலைமை வழக்கறிஞர் பிரதிநிதித்துவப்படுத்துகிறார்.",
+        "correct_idx": 3,  # A is false, R is true
+        "exp_en": "(A) is false, but (R) is true. Under Article 143(1), the Supreme Court 'may' give its opinion; it is discretionary, not mandatory (as seen in Ayodhya reference 1993). (R) is true because the AG represents the Union Government in all Art 143 hearings.",
+        "exp_ta": "(A) தவறு, ஆனால் (R) சரி. சரத்து 143(1)-ன் கீழ் கருத்து வழங்குவது உச்ச நீதிமன்றத்தின் விருப்ப உரிமை (கட்டாயமில்லை); எனவே (A) தவறு. ஆனால் சரத்து 143 விசாரணைகளில் குடியரசுத் தலைவர் மற்றும் ஒன்றிய அரசை AG பிரதிநிதித்துவப்படுத்துகிறார் என்பது சரியானது.",
+        "tip_en": "Article 143(1) advisory jurisdiction is discretionary for the Supreme Court. AG represents the Union.",
+        "tip_ta": "சரத்து 143(1) ஆலோசனை உச்ச நீதிமன்றத்திற்கு கட்டாயமல்ல (விருப்ப உரிமை). அரசுக்காக AG ஆஜராகிறார்.",
+        "fact_en": "In the Ram Janmabhoomi reference (1993), the Supreme Court declined to answer the reference under Article 143(1).",
+        "fact_ta": "1993 அயோத்தி குறிப்புரையில், சரத்து 143(1)-ன் கீழ் பதிலளிக்க உச்ச நீதிமன்றம் மறுத்துவிட்டது.",
+        "subtopic": "Advisory Jurisdiction"
+    },
+    # 16
+    {
+        "stem_en": "Assertion (A): The Attorney General of India does not possess the power of nolle prosequi to unilaterally terminate criminal trials.\nReason (R): In India, withdrawal of criminal prosecution is governed by Section 321 of the CrPC and requires court consent upon application by the Public Prosecutor.",
+        "stem_ta": "கூற்று (A): குற்றவியல் வழக்குகளை தன்னிச்சையாக முடித்து வைக்கும் (nolle prosequi) அதிகாரம் இந்திய தலைமை வழக்கறிஞருக்கு இல்லை.\nகாரணம் (R): இந்தியாவில் குற்றவியல் வழக்குகளைத் திரும்பப் பெறுவது CrPC பிரிவு 321-ன் படி அரசு வழக்கறிஞரின் விண்ணப்பத்தின் பேரில் நீதிமன்ற அனுமதியுடன் மட்டுமே சாத்தியமாகும்.",
+        "correct_idx": 0,  # Both true, R explains A
+        "exp_en": "Both (A) and (R) are true, and (R) correctly explains (A). Unlike the English Attorney General who holds the common law prerogative of nolle prosequi, the Indian AG has no such power; prosecutorial withdrawal is governed by statute (Section 321 CrPC).",
+        "exp_ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும். இங்கிலாந்தைப் போலன்றி, இந்தியாவில் குற்றவியல் வழக்குகளைத் திரும்பப் பெற CrPC பிரிவு 321-ன் படி அரசு வழக்கறிஞரும் நீதிமன்றத்தின் ஒப்புதலும் கட்டாயமாகும்.",
+        "tip_en": "Indian AG lacks the common law power of nolle prosequi. Section 321 CrPC requires Public Prosecutor + court consent.",
+        "tip_ta": "இந்திய AG-க்கு nolle prosequi அதிகாரம் இல்லை. CrPC பிரிவு 321-ன் கீழ் அரசு வழக்கறிஞரும் நீதிமன்ற அனுமதியும் தேவை.",
+        "fact_en": "The Supreme Court in Subhash Chander v. State (1980) emphasized that court permission under Section 321 is a judicial check.",
+        "fact_ta": "பிரிவு 321-ன் கீழான நீதிமன்ற அனுமதி ஒரு நீதித்துறை சோதனையாகும் என உச்ச நீதிமன்றம் தீர்ப்பளித்துள்ளது.",
+        "subtopic": "Criminal Jurisprudence"
+    },
+    # 17
+    {
+        "stem_en": "Assertion (A): The Attorney General of India has right of audience in all courts throughout the territory of India under Article 76(3).\nReason (R): The Attorney General's constitutional right of audience automatically extends to all courts of Commonwealth countries under reciprocity agreements.",
+        "stem_ta": "கூற்று (A): சரத்து 76(3)-ன் கீழ் இந்திய எல்லைக்குள் உள்ள அனைத்து நீதிமன்றங்களிலும் வழக்காடும் உரிமை இந்திய தலைமை வழக்கறிஞருக்கு உண்டு.\nகாரணம் (R): பரஸ்பர ஒப்பந்தங்களின் கீழ் காமன்வெல்த் நாடுகளின் அனைத்து நீதிமன்றங்களிலும் தலைமை வழக்கறிஞரின் வழக்காடும் உரிமை தானாகவே விரிவடைகிறது.",
+        "correct_idx": 2,  # A is true, R is false
+        "exp_en": "(A) is true, but (R) is false. Article 76(3) explicitly limits the constitutional right of audience to 'all courts in the territory of India'. There is no constitutional or automatic right of audience in Commonwealth courts.",
+        "exp_ta": "(A) சரி, ஆனால் (R) தவறு. சரத்து 76(3) 'இந்திய எல்லைக்குள் உள்ள அனைத்து நீதிமன்றங்களிலும்' வழக்காடும் உரிமையையே வழங்குகிறது; எனவே (A) சரி. வெளிநாட்டு அல்லது காமன்வெல்த் நீதிமன்றங்களில் அத்தகைய தானியங்கி உரிமை எதுவும் அரசியலமைப்பில் இல்லாததால் (R) தவறானது.",
+        "tip_en": "Article 76(3) is confined to courts in the territory of India. No automatic right exists in foreign courts.",
+        "tip_ta": "சரத்து 76(3) இந்திய எல்லைக்குள் உள்ள நீதிமன்றங்களுக்கு மட்டுமே பொருந்தும்; வெளிநாட்டு நீதிமன்றங்களுக்கு அல்ல.",
+        "fact_en": "Appearances in foreign jurisdictions require special ad-hoc admission or international law accreditation.",
+        "fact_ta": "வெளிநாட்டு நீதிமன்றங்களில் ஆஜராக சிறப்பு தற்காலிக அனுமதியோ சர்வதேச அங்கீகாரமோ தேவை.",
+        "subtopic": "Right of Audience"
+    },
+    # 18
+    {
+        "stem_en": "Assertion (A): Communications between the Government of India and the Attorney General are protected by professional privilege under Section 126 of the Indian Evidence Act, 1872.\nReason (R): The Attorney General maintains a professional lawyer-client relationship with the Government of India.",
+        "stem_ta": "கூற்று (A): இந்திய அரசுக்கும் தலைமை வழக்கறிஞருக்கும் இடையிலான தகவல்தொடர்புகள் 1872 இந்திய சாட்சியச் சட்டத்தின் பிரிவு 126-ன் கீழ் தொழில்முறை ரகசியப் பாதுகாப்பைப் பெறுகின்றன.\nகாரணம் (R): இந்திய அரசுடன் தலைமை வழக்கறிஞர் ஒரு தொழில்முறை வழக்கறிஞர்-வாடிக்கையாளர் உறவைப் பேணுகிறார்.",
+        "correct_idx": 0,  # Both true, R explains A
+        "exp_en": "Both (A) and (R) are true, and (R) correctly explains (A). Section 126 of the Evidence Act protects confidential communications between an advocate and client; since the AG acts as counsel for the Union Government, this legal privilege applies.",
+        "exp_ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும். சாட்சியச் சட்டத்தின் பிரிவு 126 வழக்கறிஞர்-வாடிக்கையாளர் இடையேயான ரகசியங்களைப் பாதுகாக்கிறது; AG மத்திய அரசின் வழக்கறிஞராகச் செயல்படுவதால் இந்த சிறப்புரிமை பொருந்தும்.",
+        "tip_en": "Section 126 Evidence Act applies to AG-Government legal consultations.",
+        "tip_ta": "சாட்சியச் சட்டம் பிரிவு 126 AG மற்றும் மத்திய அரசு இடையேயான சட்ட ஆலோசனைகளுக்குப் பொருந்தும்.",
+        "fact_en": "The privilege belongs to the Union Government as client and can be waived only by the Government.",
+        "fact_ta": "இந்த ரகசிய உரிமை வாடிக்கையாளரான மத்திய அரசுக்கே உரியது, அரசால் மட்டுமே இதை விட்டுக்கொடுக்க முடியும்.",
+        "subtopic": "Evidence Act & Privilege"
+    },
+    # 19
+    {
+        "stem_en": "Assertion (A): The Attorney General of India cannot accept appointment as a director in any company without the permission of the Government of India.\nReason (R): This restriction prevents potential conflicts between corporate interests and the Attorney General's constitutional duty to advise the Union.",
+        "stem_ta": "கூற்று (A): இந்திய அரசின் அனுமதியின்றி எந்தவொரு நிறுவனத்திலும் இயக்குநர் பதவியை தலைமை வழக்கறிஞர் ஏற்க முடியாது.\nகாரணம் (R): கார்ப்பரேட் நிறுவன நலன்களுக்கும், ஒன்றிய அரசுக்கு ஆலோசிக்கும் தலைமை வழக்கறிஞரின் அரசியலமைப்பு கடமைக்கும் இடையே ஏற்படும் முரண்பாடுகளைத் தடுக்க இந்தக் கட்டுப்பாடு விதிக்கப்பட்டுள்ளது.",
+        "correct_idx": 0,  # Both true, R explains A
+        "exp_en": "Both (A) and (R) are true, and (R) correctly explains (A). Rule 8(1)(d) of the Law Officers Rules prohibits accepting directorships without GoI sanction to preserve ethical impartiality and avoid conflicts of interest.",
+        "exp_ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும். நிறுவனங்களின் இயக்குநர் பதவியை ஏற்பது அரசின் பொது நலன்களோடு முரண்பட வாய்ப்புள்ளதால், அரசின் முன் அனுமதி கட்டாயமாக்கப்பட்டுள்ளது.",
+        "tip_en": "AG cannot accept company directorships without GoI clearance to prevent corporate conflicts of interest.",
+        "tip_ta": "நலன் முரண்பாடுகளைத் தடுக்க அரசின் அனுமதியின்றி நிறுவன இயக்குநர் பதவியை AG ஏற்கக்கூடாது.",
+        "fact_en": "Rule 8(1)(d) of Law Officers (Conditions of Service) Rules 1987 governs company directorships.",
+        "fact_ta": "1987 சட்ட அதிகாரிகள் விதிகளின் விதி 8(1)(d) நிறுவன இயக்குநர் பதவிகளை நிர்வகிக்கிறது.",
+        "subtopic": "Ethics & Restrictions"
+    },
+    # 20
+    {
+        "stem_en": "Assertion (A): The Attorney General of India has administrative supervisory control over the Advocates General of all States.\nReason (R): The Attorney General is the highest law officer in the country under Article 76 of the Constitution.",
+        "stem_ta": "கூற்று (A): அனைத்து மாநிலங்களின் அட்வகேட் ஜெனரல்கள் மீதும் இந்திய தலைமை வழக்கறிஞருக்கு நிர்வாகக் கண்காணிப்பு அதிகாரம் உண்டு.\nகாரணம் (R): அரசியலமைப்பின் 76-வது பிரிவின் கீழ் தலைமை வழக்கறிஞர் நாட்டின் மிக உயர்ந்த சட்ட அதிகாரி ஆவார்.",
+        "correct_idx": 3,  # A is false, R is true
+        "exp_en": "(A) is false, but (R) is true. The Advocate General of a State is an independent constitutional authority under Article 165 appointed by the Governor and is NOT administratively subordinate to the AG. (R) is true as the AG is indeed the highest law officer in India.",
+        "exp_ta": "(A) தவறு, ஆனால் (R) சரி. மாநில அட்வகேட் ஜெனரல் சரத்து 165-ன் கீழ் இயங்கும் சுதந்திரமான அரசியலமைப்பு அலுவலர்; அவர் AG-க்குக் கீழ்நிலை அதிகாரி அல்ல என்பதால் (A) தவறு. ஆனால் சரத்து 76-ன் படி AG நாட்டின் தலைமை சட்ட அதிகாரி என்பது சரியானது.",
+        "tip_en": "Advocate General of a State (Art 165) is an independent constitutional post, NOT subordinate to the Attorney General.",
+        "tip_ta": "மாநில அட்வகேட் ஜெனரல் (சரத்து 165) சுதந்திரமான அரசியலமைப்புப் பதவி; அவர் AG-க்குக் கீழானவர் அல்ல.",
+        "fact_en": "India's federal structure keeps State constitutional officers independent of Central counterparts.",
+        "fact_ta": "இந்தியக் கூட்டாட்சி அமைப்பு மாநில அரசியலமைப்பு அதிகாரிகளை மத்திய அதிகாரிகளுக்கு கீழ்ப்படுத்தாமல் தனித்து வைக்கிறது.",
+        "subtopic": "Federal Structure"
+    },
+    # 21
+    {
+        "stem_en": "Assertion (A): A person who is a distinguished jurist in the opinion of the President is eligible to be appointed as the Attorney General of India.\nReason (R): A person must be qualified to be appointed as a Judge of the Supreme Court to be appointed as the Attorney General under Article 76(1).",
+        "stem_ta": "கூற்று (A): குடியரசுத் தலைவரின் கருத்தில் புகழ்பெற்ற சட்ட வல்லுநராக உள்ள ஒருவர் இந்திய தலைமை வழக்கறிஞராக நியமிக்கப்படத் தகுதியுடையவர் ஆவார்.\nகாரணம் (R): சரத்து 76(1)-ன் கீழ் தலைமை வழக்கறிஞராக நியமிக்கப்படுவதற்கு உச்ச நீதிமன்ற நீதிபதியாக நியமிக்கப்படத் தேவையான தகுதிகளைப் பெற்றிருக்க வேண்டும்.",
+        "correct_idx": 0,  # Both true, R explains A
+        "exp_en": "Both (A) and (R) are true, and (R) correctly explains (A). Under Article 76(1), the AG must be qualified to be an SC Judge. Article 124(3)(c) specifies that a 'distinguished jurist in the opinion of the President' qualifies to be an SC Judge; hence such a person qualifies to be AG.",
+        "exp_ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும். சரத்து 76(1)-ன் படி உச்ச நீதிமன்ற நீதிபதி தகுதி தேவை. சரத்து 124(3)(c)-ன் படி 'புகழ்பெற்ற சட்ட வல்லுநர்' உச்ச நீதிமன்ற நீதிபதியாக முடியும் என்பதால், அவரும் தலைமை வழக்கறிஞராக நியமிக்கப்படத் தகுதியுடையவர் ஆவார்.",
+        "tip_en": "SC Judge qualifications under Art 124(3) include: 5 yrs HC Judge OR 10 yrs HC Advocate OR distinguished jurist.",
+        "tip_ta": "உச்ச நீதிமன்ற நீதிபதி தகுதி: 5 ஆண்டு HC நீதிபதி அல்லது 10 ஆண்டு HC வழக்கறிஞர் அல்லது புகழ்பெற்ற சட்ட அறிஞர்.",
+        "fact_en": "While 'distinguished jurist' qualifies a person for SC judge and AG, it does NOT qualify someone to be an HC Judge or Advocate General.",
+        "fact_ta": "'புகழ்பெற்ற சட்ட வல்லுநர்' உச்ச நீதிமன்ற நீதிபதி மற்றும் AG-க்கு தகுதியாகும்; ஆனால் உயர் நீதிமன்ற நீதிபதிக்கோ மாநில அட்வகேட் ஜெனரலுக்கோ இந்தத் தகுதி கிடையாது.",
+        "subtopic": "Qualifications"
+    },
+    # 22
+    {
+        "stem_en": "Assertion (A): An individual who is qualified to be appointed as a High Court Judge is automatically qualified to be appointed as the Attorney General of India.\nReason (R): The qualification for appointment as the Advocate General of a State is qualification to be a High Court Judge.",
+        "stem_ta": "கூற்று (A): உயர் நீதிமன்ற நீதிபதியாக நியமிக்கப்படத் தகுதியுடைய ஒருவர் தானாகவே இந்திய தலைமை வழக்கறிஞராக நியமிக்கப்படத் தகுதியுடையவர் ஆவார்.\nகாரணம் (R): மாநில அட்வகேட் ஜெனரலாக நியமிக்கப்படுவதற்கான தகுதி உயர் நீதிமன்ற நீதிபதியாக நியமிக்கப்படத் தகுதி பெறுவதாகும்.",
+        "correct_idx": 3,  # A is false, R is true
+        "exp_en": "(A) is false, but (R) is true. The AG requires qualification to be a SUPREME Court Judge (Article 76(1)), not a High Court Judge; hence (A) is false. (R) is true because Article 165(1) requires qualification to be an HC Judge for the Advocate General.",
+        "exp_ta": "(A) தவறு, ஆனால் (R) சரி. தலைமை வழக்கறிஞராக உச்ச நீதிமன்ற நீதிபதிக்கான தகுதி தேவை (சரத்து 76(1)), உயர் நீதிமன்ற நீதிபதி தகுதி போதாது; எனவே (A) தவறு. ஆனால் மாநில அட்வகேட் ஜெனரலுக்கு உயர் நீதிமன்ற நீதிபதி தகுதி தேவை என்பது சரியானது (சரத்து 165(1)).",
+        "tip_en": "AG requires Supreme Court Judge qualifications (Art 76(1)); Advocate General requires High Court Judge qualifications (Art 165(1)).",
+        "tip_ta": "AG-க்கு உச்ச நீதிமன்ற நீதிபதி தகுதி தேவை; அட்வகேட் ஜெனரலுக்கு உயர் நீதிமன்ற நீதிபதி தகுதி தேவை.",
+        "fact_en": "Ten years of advocacy in a High Court qualifies for both HC and SC judgeship, but 5 years of judicial service qualifies only for HC judgeship.",
+        "fact_ta": "உயர் நீதிமன்றத்தில் 10 ஆண்டு வழக்கறிஞர் பணி HC மற்றும் SC நீதிபதி தகுதியைத் தரும்; ஆனால் 5 ஆண்டு நீதித்துறை பணி HC-க்கு மட்டுமே தகுதியாகும்.",
+        "subtopic": "Qualifications Comparison"
+    },
+    # 23
+    {
+        "stem_en": "Assertion (A): The Attorney General of India can never be named as a member of any Parliamentary Committee.\nReason (R): Under Article 88, the Attorney General is not entitled to vote in any House of Parliament or committee thereof.",
+        "stem_ta": "கூற்று (A): இந்திய தலைமை வழக்கறிஞர் எந்தவொரு நாடாளுமன்றக் குழுவிலும் உறுப்பினராகப் பெயரிடப்படவே முடியாது.\nகாரணம் (R): சரத்து 88-ன் கீழ் நாடாளுமன்றத்தின் எந்த அவையிலும் அல்லது குழுவிலும் வாக்களிக்க தலைமை வழக்கறிஞருக்கு உரிமை இல்லை.",
+        "correct_idx": 3,  # A is false, R is true
+        "exp_en": "(A) is false, but (R) is true. Under Article 88, the AG CAN be named a member of any committee of Parliament (making (A) false). (R) is true because Article 88 explicitly denies the AG the right to vote.",
+        "exp_ta": "(A) தவறு, ஆனால் (R) சரி. சரத்து 88-ன் கீழ் நாடாளுமன்றக் குழுவில் AG உறுப்பினராகப் பெயரிடப்பட முடியும் என்பதால் (A) தவறு. ஆனால் அவருக்கு வாக்குரிமை கிடையாது என்பது சரத்து 88-ன் படி உண்மையாகும்.",
+        "tip_en": "Article 88 explicitly says AG can be named a member of any committee, but has NO right to vote.",
+        "tip_ta": "சரத்து 88 AG நாடாளுமன்றக் குழுவில் உறுப்பினராகலாம் என்கிறது, ஆனால் வாக்களிக்க முடியாது.",
+        "fact_en": "Article 88 allows non-members (Ministers and AG) to participate in committee deliberations.",
+        "fact_ta": "சரத்து 88 நாடாளுமன்றக் குழு விவாதங்களில் அமைச்சர்கள் மற்றும் AG பங்கேற்க அனுமதிக்கிறது.",
+        "subtopic": "Parliamentary Committees"
+    },
+    # 24
+    {
+        "stem_en": "Assertion (A): The Attorney General of India represents the Union of India in all suits under Article 131 of the Constitution.\nReason (R): Suits under Article 131 involve federal disputes between the Union and States or between States, falling under the exclusive original jurisdiction of the Supreme Court.",
+        "stem_ta": "கூற்று (A): அரசியலமைப்பின் 131-வது பிரிவின் கீழ் உள்ள அனைத்து வழக்குகளிலும் இந்திய ஒன்றியத்தை தலைமை வழக்கறிஞர் பிரதிநிதித்துவப்படுத்துகிறார்.\nகாரணம் (R): சரத்து 131-ன் கீழான வழக்குகள் மத்திய அரசுக்கும் மாநிலங்களுக்கும் அல்லது மாநிலங்களுக்கு இடையே உள்ள கூட்டாட்சி தகராறுகளைக் குறிக்கின்றன, அவை உச்ச நீதிமன்றத்தின் பிரத்யேக அசல் அதிகார வரம்பிற்குள் வருகின்றன.",
+        "correct_idx": 0,  # Both true, R explains A
+        "exp_en": "Both (A) and (R) are true, and (R) correctly explains (A). As the Union's principal advocate, the AG appears in Article 131 original suits because these directly concern the constitutional and legal powers of the Union of India.",
+        "exp_ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும். சரத்து 131 அசல் அதிகார வரம்பில் கூட்டாட்சி தகராறுகள் விசாரிக்கப்படுவதால், ஒன்றிய அரசின் உரிமைகளைப் பாதுகாக்க AG ஆஜராகிறார்.",
+        "tip_en": "Article 131 exclusive original jurisdiction covers Centre-State and Inter-State disputes; AG represents the Union.",
+        "tip_ta": "சரத்து 131 அசல் அதிகார வரம்பு கூட்டாட்சி தகராறுகளைக் கையாள்கிறது; ஒன்றிய அரசுக்காக AG ஆஜராகிறார்.",
+        "fact_en": "State of West Bengal v. Union of India (1963) was the first major suit filed under Article 131.",
+        "fact_ta": "மேற்கு வங்க அரசு எதிர் இந்திய ஒன்றியம் (1963) சரத்து 131-ன் கீழ் தொடரப்பட்ட முதல் முக்கிய வழக்காகும்.",
+        "subtopic": "Article 131 Disputes"
+    },
+    # 25
+    {
+        "stem_en": "Assertion (A): The Attorney General of India can defend an accused person in a criminal prosecution without any permission from the Union Government.\nReason (R): The Attorney General is not debarred from private legal practice under the Constitution.",
+        "stem_ta": "கூற்று (A): இந்திய அரசின் அனுமதியின்றி குற்றவியல் வழக்கில் குற்றம் சாட்டப்பட்ட ஒரு நபருக்காக இந்திய தலைமை வழக்கறிஞர் ஆஜராகி வாதாட முடியும்.\nகாரணம் (R): அரசியலமைப்பின் கீழ் தலைமை வழக்கறிஞர் தனியார் சட்டப் பயிற்சி மேற்கொள்வதிலிருந்து தடை செய்யப்படவில்லை.",
+        "correct_idx": 3,  # A is false, R is true
+        "exp_en": "(A) is false, but (R) is true. Under Rule 8(1)(b) of the Law Officers Rules, the AG cannot defend an accused person in criminal prosecutions without the permission of the Government of India; hence (A) is false. (R) is true because the Constitution does not debar him from private practice.",
+        "exp_ta": "(A) தவறு, ஆனால் (R) சரி. 1987 சட்ட அதிகாரிகள் விதிகளின்படி அரசின் அனுமதியின்றி குற்ற வழக்குகளில் குற்றவாளிக்காக AG ஆஜராக முடியாது என்பதால் (A) தவறு. ஆனால் அரசியலமைப்பு அவரை தனியார் பயிற்சியிலிருந்து வெளிப்படையாகத் தடை செய்யவில்லை என்பது சரியானது.",
+        "tip_en": "Private practice is permitted, but defending criminal accused requires prior Government permission.",
+        "tip_ta": "தனியார் பயிற்சி அனுமதிக்கப்படுகிறது, ஆனால் குற்ற வழக்கில் ஆஜராக அரசின் முன் அனுமதி தேவை.",
+        "fact_en": "Permission is required to ensure that the chief law officer does not appear against the state's criminal justice interest.",
+        "fact_ta": "அரசின் குற்றவியல் நீதி நலன்களுக்கு எதிராக தலைமை சட்ட அதிகாரி ஆஜராவதைத் தவிர்க்க இந்த அனுமதி தேவை.",
+        "subtopic": "Criminal Defense Restrictions"
+    }
+]
+
+# Standard Assertion-Reason option sets
+OPTIONS_AR = [
+    ("Both (A) and (R) are true and (R) is the correct explanation of (A)", "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"),
+    ("Both (A) and (R) are true but (R) is not the correct explanation of (A)", "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல"),
+    ("(A) is true but (R) is false", "(A) சரி ஆனால் (R) தவறு"),
+    ("(A) is false but (R) is true", "(A) தவறு ஆனால் (R) சரி")
+]
+
+def build_questions():
+    questions = []
+    for i, item in enumerate(raw_reasoning_data):
+        qid = f"AG_R_{i+1:03d}"
+        correct_idx = item["correct_idx"]
+        correct_key = ["A", "B", "C", "D"][correct_idx]
+        
+        why_en = {}
+        why_ta = {}
+        for idx, key in enumerate(["A", "B", "C", "D"]):
+            if idx == correct_idx:
+                why_en[key] = f"Option {key} correctly evaluates the truth value and explanatory relationship between Assertion (A) and Reason (R)."
+                why_ta[key] = f"கூற்று (A) மற்றும் காரணம் (R) ஆகியவற்றின் உண்மைத் தன்மை மற்றும் விளக்கத் தொடர்பை தெரிவு {key} சரியாக மதிப்பிடுகிறது."
+            else:
+                why_en[key] = f"Option {key} is incorrect because the statement truth values or causal connection do not match this option."
+                why_ta[key] = f"கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு {key} தவறானது."
+                
+        q = make_ag_q(
+            qid=qid,
+            diff="Medium",
+            qtype="Assertion and Reason",
+            subtopic=item["subtopic"],
+            en_stem=item["stem_en"],
+            ta_stem=item["stem_ta"],
+            en_a=OPTIONS_AR[0][0],
+            ta_a=OPTIONS_AR[0][1],
+            en_b=OPTIONS_AR[1][0],
+            ta_b=OPTIONS_AR[1][1],
+            en_c=OPTIONS_AR[2][0],
+            ta_c=OPTIONS_AR[2][1],
+            en_d=OPTIONS_AR[3][0],
+            ta_d=OPTIONS_AR[3][1],
+            correct_key=correct_key,
+            exp_en=item["exp_en"],
+            exp_ta=item["exp_ta"],
+            why_a_en=why_en["A"],
+            why_a_ta=why_ta["A"],
+            why_b_en=why_en["B"],
+            why_b_ta=why_ta["B"],
+            why_c_en=why_en["C"],
+            why_c_ta=why_ta["C"],
+            why_d_en=why_en["D"],
+            why_d_ta=why_ta["D"],
+            tip_en=item["tip_en"],
+            tip_ta=item["tip_ta"],
+            fact_en=item["fact_en"],
+            fact_ta=item["fact_ta"],
+            tags=["polity", "attorney_general_of_india", "assertion_reason", item["subtopic"].lower().replace(" ", "_")]
+        )
+        questions.append(q)
+    return questions
+
+if __name__ == "__main__":
+    qs = build_questions()
+    print(f"Generated {len(qs)} raw Reasoning questions.")
+    
+    balanced_qs = balance_question_keys(qs)
+    
+    out_path = os.path.join("data", "questions", "polity", "attorney_general_reasoning.json")
+    alias_path = os.path.join("data", "questions", "polity", "attorney_general_assertion_reason.json")
+    
+    with open(out_path, "w", encoding="utf-8") as f:
+        json.dump(balanced_qs, f, ensure_ascii=False, indent=2)
+    shutil.copyfile(out_path, alias_path)
+    
+    print(f"Saved balanced Reasoning MCQs to {out_path} and {alias_path}")
+    
+    val = ContentValidator()
+    report = val.validate_file(out_path, expected_count=25, expected_prefix="AG_R_")
+    print(f"Validation Report: {'PASS' if report.is_valid else 'FAIL'} | Total: {report.total_audited}")
+    if not report.is_valid:
+        for iss in report.issues[:10]:
+            print(f"  Issue: {iss}")
+    print(f"Key Distribution: {report.key_distribution}")

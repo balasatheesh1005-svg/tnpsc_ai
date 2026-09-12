@@ -1,0 +1,343 @@
+{
+  "topic": "Inter-State Relations",
+  "topic_id": "polity_inter_state_relations",
+  "repository_id": "polity_inter_state_relations",
+  "display_title": "Inter-State Relations",
+  "subject": "polity",
+  "source_notes": [
+    "data/notes/polity/inter_state_relations_part_1.json",
+    "data/notes/polity/inter_state_relations_part_2.json",
+    "data/notes/polity/inter_state_relations_part_3.json"
+  ],
+  "target": {
+    "core": 325,
+    "grand_test": 100,
+    "overall": 425
+  },
+  "subtopics": [
+    {
+      "id": "subtopic_1_constitutional_framework_articles_261_263",
+      "name": "Constitutional Framework: Full Faith & Credit, Water Disputes & Inter-State Council (Articles 261–263)",
+      "coverage": "Article 261 (Full faith and credit to public acts, records, and judicial proceedings; civil court decrees execution; exclusion of penal/criminal laws), Article 262 (Parliamentary power to adjudicate inter-State water disputes and bar judicial jurisdiction), Article 263 (Presidential order establishing Inter-State Council for inquiring, discussing, and advising).",
+      "articles": [
+        "Article 261",
+        "Article 262",
+        "Article 263"
+      ],
+      "key_concepts": [
+        "Full Faith and Credit clause applies throughout India to public acts, records, and judicial proceedings of Union and States.",
+        "Article 261(3) execution of final judgments/orders applies strictly to CIVIL courts, not penal decrees.",
+        "Article 262 empowers Parliament by law to provide adjudication for inter-state river waters and exclude court jurisdiction.",
+        "Article 263 Inter-State Council is an advisory, non-adjudicatory body established by Presidential Order."
+      ],
+      "tnpsc_traps": [
+        "Article 261(3) decree execution applies to civil courts only, NOT criminal or revenue penal decrees.",
+        "Article 262 does not directly bar Supreme Court; it empowers Parliament by law to exclude jurisdiction.",
+        "Inter-State Council is advisory under Article 263, unlike binding judicial determinations under Article 131."
+      ],
+      "question_models": [
+        "Article identification & scope",
+        "Civil vs penal decree distinction under Article 261",
+        "Article 262 parliamentary exclusion power",
+        "Article 263 presidential order nature"
+      ],
+      "priority": "High",
+      "core_allocation": 65,
+      "grand_test_allocation": 20
+    },
+    {
+      "id": "subtopic_2_water_disputes_tribunals_river_boards",
+      "name": "Inter-State Water Disputes, Tribunals & Statutory Mechanism (1956 Acts)",
+      "coverage": "Inter-State River Water Disputes Act 1956 (IRWD Act), River Boards Act 1956, Tribunal composition (sitting SC/HC judges nominated by CJI), binding nature of gazetted award (same force as SC decree via 2002 amendment), exclusion of SC jurisdiction under Section 11 vs Article 136 SLP, major tribunals (Krishna, Godavari, Narmada, Ravi-Beas, Cauvery, Mahadayi, Mahanadi), Cauvery Water Management Authority (CWMA 2018).",
+      "articles": [
+        "Article 262",
+        "Article 131",
+        "Article 136"
+      ],
+      "key_concepts": [
+        "River Boards Act 1956: Enacted under Entry 56 of Union List; advisory boards formed on state request; in practice no River Board has been established under this Act.",
+        "IRWD Act 1956: Section 4 tribunal constitution on state complaint; Section 11 court jurisdiction bar.",
+        "2002 Amendment: 1-year reference deadline, 3-year award deadline (+2 years extension), gazetted award equals Supreme Court decree.",
+        "Article 136 SLP: Supreme Court retains special leave jurisdiction to review tribunal awards for legal or constitutional flaws (Karnataka v. TN 2018)."
+      ],
+      "tnpsc_traps": [
+        "River Boards Act 1956 boards are purely advisory, and no board has ever been constituted under this Act.",
+        "Tribunal members are nominated by the Chief Justice of India, NOT chosen by the Central Government or disputing States.",
+        "Gazetted tribunal award has the force of an order/decree of the Supreme Court, not merely an executive advisory."
+      ],
+      "question_models": [
+        "IRWD Act statutory provisions and timelines",
+        "Article 262 vs Article 131 original jurisdiction interplay",
+        "Major tribunals and basin states matching",
+        "Cauvery dispute trajectory and CWMA mechanism"
+      ],
+      "priority": "High",
+      "core_allocation": 65,
+      "grand_test_allocation": 20
+    },
+    {
+      "id": "subtopic_3_inter_state_council_and_commissions",
+      "name": "Inter-State Council, Standing Committee & Federal Commissions",
+      "coverage": "First ARC 1966 recommendation, Sarkaria Commission 1988 recommendation on Article 263, Presidential Order 1990 establishing Inter-State Council, composition (PM as Chairman, all State CMs, UT CMs/Administrators, 6 Union Cabinet Ministers), Standing Committee 1996 (chaired by Union Home Minister, 5 Cabinet Ministers + 9 CMs), Inter-State Council Secretariat (ISCS 1991), Punchhi Commission 2010 recommendations (3 meetings/year, active secretariat).",
+      "articles": [
+        "Article 263",
+        "Article 279A"
+      ],
+      "key_concepts": [
+        "Inter-State Council was set up on 28 May 1990 by Presidential Order following Sarkaria Commission recommendations.",
+        "Prime Minister is Chairman; decisions are taken by consensus.",
+        "Standing Committee (1996) is chaired by the Union Home Minister.",
+        "Inter-State Council is constitutional (Art 263), whereas Zonal Councils are statutory (1956 Act)."
+      ],
+      "tnpsc_traps": [
+        "Inter-State Council is chaired by the PRIME MINISTER; Standing Committee is chaired by the UNION HOME MINISTER.",
+        "Inter-State Council is NOT a permanent constitutional institution in the same sense as Finance Commission or Election Commission until established by Presidential Order; Sarkaria recommended it be called Inter-Governmental Council.",
+        "Decisions in ISC are by consensus, unlike the 3/4 weighted voting majority in GST Council (Art 279A)."
+      ],
+      "question_models": [
+        "ISC composition & membership identification",
+        "Sarkaria & Punchhi recommendations on ISC",
+        "Inter-State Council vs GST Council comparison",
+        "Standing Committee structure and duties"
+      ],
+      "priority": "High",
+      "core_allocation": 65,
+      "grand_test_allocation": 20
+    },
+    {
+      "id": "subtopic_4_zonal_councils_and_north_eastern_council",
+      "name": "Zonal Councils (1956 Act) & North Eastern Council (1971 Act)",
+      "coverage": "States Reorganisation Act 1956 Part III (5 Zonal Councils: Northern, Central, Eastern, Western, Southern), Union Home Minister as common Chairman, Chief Ministers as Vice-Chairman by 1-year annual rotation, membership composition, advisory role; North Eastern Council Act 1971 (8 states: Arunachal, Assam, Manipur, Meghalaya, Mizoram, Nagaland, Tripura, and Sikkim added in 2002).",
+      "articles": [
+        "Article 263"
+      ],
+      "key_concepts": [
+        "Zonal Councils are STATUTORY bodies created by Parliament under the States Reorganisation Act 1956, NOT under Article 263.",
+        "5 Zonal Councils: Northern (New Delhi), Central (Prayagraj), Eastern (Kolkata), Western (Mumbai), Southern (Chennai).",
+        "Union Home Minister is the common Chairman of all Zonal Councils.",
+        "Chief Ministers rotate annually as Vice-Chairman.",
+        "North Eastern Council is a separate statutory body under the NEC Act 1971; Sikkim added as 8th member in 2002."
+      ],
+      "tnpsc_traps": [
+        "Zonal Councils are STATUTORY (1956 Act), NOT constitutional (Art 263).",
+        "Union Home Minister chairs Zonal Councils, NOT the Prime Minister.",
+        "Sikkim is NOT part of the Eastern Zonal Council; it is part of the North Eastern Council (added in 2002).",
+        "Advisors (NITI Aayog nominee, Chief Secretaries) attend meetings but have NO voting rights."
+      ],
+      "question_models": [
+        "Zonal council member states & headquarters mapping",
+        "Chairmanship and rotation of Vice-Chairmanship",
+        "Zonal Council vs Inter-State Council constitutional distinction",
+        "North Eastern Council legal basis and Sikkim inclusion"
+      ],
+      "priority": "High",
+      "core_allocation": 65,
+      "grand_test_allocation": 20
+    },
+    {
+      "id": "subtopic_5_freedom_of_trade_commerce_intercourse_articles_301_307",
+      "name": "Freedom of Trade, Commerce & Intercourse & Landmark Case Law (Articles 301–307)",
+      "coverage": "Part XIII Articles 301 to 307: Article 301 (Freedom of trade, commerce and intercourse throughout India), Article 302 (Parliamentary restrictions in public interest), Article 303 (Prohibition of preference/discrimination, and Art 303(2) scarcity exception for Parliament), Article 304 (State powers: 304(a) non-discriminatory tax on imported goods vs 304(b) reasonable restrictions in public interest with previous sanction of President), Article 255 (cure of lack of previous sanction by subsequent assent), Article 305 (saving of existing laws & state monopolies), Article 306 (repealed Part B provision), Article 307 (authority for carrying out purposes of Part XIII); Landmark cases: Atiabari Tea Co. 1961, Automobile Transport 1962, Jindal Stainless 2016 (overruling compensatory tax doctrine).",
+      "articles": [
+        "Article 301",
+        "Article 302",
+        "Article 303",
+        "Article 304",
+        "Article 305",
+        "Article 307",
+        "Article 255",
+        "Article 19(1)(g)"
+      ],
+      "key_concepts": [
+        "Article 301 provides broad freedom across state and intra-state borders, modeled on Australian Constitution Section 92.",
+        "Article 301 vs Article 19(1)(g): Art 19(1)(g) is a Fundamental Right for citizens; Art 301 is a constitutional right available to all traders, corporations, and states.",
+        "Article 302: Parliament can impose restrictions in the public interest without requiring Presidential sanction.",
+        "Article 303(2): ONLY Parliament can discriminate or give preference, and strictly for dealing with scarcity of goods.",
+        "Article 304(b): State Legislature must obtain PREVIOUS SANCTION of the President before introducing a bill imposing reasonable restrictions in the public interest.",
+        "Article 255: Absence of prior presidential sanction under 304(b) is cured if the Act subsequently receives the President's assent.",
+        "Jindal Stainless (2016, 9-judge bench): Overruled Automobile Transport compensatory tax theory; non-discriminatory entry tax under Art 304(a) does not violate Art 301."
+      ],
+      "tnpsc_traps": [
+        "Under Article 304(b), previous sanction of the President is required to INTRODUCE the bill in the State Legislature, not merely for enactment.",
+        "State Legislatures CANNOT use the scarcity exception under Article 303(2); that power belongs ONLY to Parliament.",
+        "Compensatory tax doctrine is no longer good law after the 9-judge bench decision in Jindal Stainless (2016).",
+        "No authority has ever been appointed by Parliament under Article 307."
+      ],
+      "question_models": [
+        "Article 301 scope vs Article 19(1)(g) fundamental right",
+        "Article 302 vs Article 304(b) restriction powers comparison",
+        "Article 303(2) scarcity exception conditions",
+        "Article 304(b) presidential sanction and Article 255 cure",
+        "Landmark case law principles (Atiabari, Automobile, Jindal Stainless)"
+      ],
+      "priority": "High",
+      "core_allocation": 65,
+      "grand_test_allocation": 20
+    }
+  ],
+  "articles": [
+    "Article 261",
+    "Article 262",
+    "Article 263",
+    "Article 301",
+    "Article 302",
+    "Article 303",
+    "Article 304",
+    "Article 305",
+    "Article 306",
+    "Article 307",
+    "Article 131",
+    "Article 136",
+    "Article 255",
+    "Article 279A"
+  ],
+  "acts": [
+    "Inter-State River Water Disputes Act, 1956",
+    "River Boards Act, 1956",
+    "States Reorganisation Act, 1956",
+    "North Eastern Council Act, 1971",
+    "Constitution (Seventh Amendment) Act, 1956",
+    "Inter-State Water Disputes (Amendment) Act, 2002"
+  ],
+  "judicial_doctrines_and_cases": [
+    {
+      "case": "Atiabari Tea Co. Ltd. v. State of Assam (1961)",
+      "principle": "Direct and immediate restriction on trade movement violates Article 301; Assam tax struck down for lack of presidential sanction under Article 304(b)."
+    },
+    {
+      "case": "Automobile Transport (Rajasthan) Ltd. v. State of Rajasthan (1962)",
+      "principle": "Formulated compensatory and regulatory tax doctrine; held compensatory taxes for road/bridge maintenance do not violate Article 301."
+    },
+    {
+      "case": "Jindal Stainless Ltd. v. State of Haryana (2016)",
+      "principle": "9-judge Constitution Bench overruled compensatory tax theory; held non-discriminatory entry tax under Article 304(a) is valid and does not impede trade."
+    },
+    {
+      "case": "Cauvery Water Disputes Tribunal In re (1991 Presidential Reference)",
+      "principle": "State Ordinance nullifying tribunal's interim award was unconstitutional and violated rule of law and Article 262."
+    },
+    {
+      "case": "State of Karnataka v. State of Tamil Nadu (2018)",
+      "principle": "Supreme Court held that Article 262 and IRWD Act bar ordinary original jurisdiction under Article 131, but do not extinguish Supreme Court's appellate jurisdiction under Article 136."
+    }
+  ],
+  "commissions": [
+    {
+      "commission": "First Administrative Reforms Commission (1966)",
+      "recommendation": "Recommended establishing an Inter-State Council under Article 263 for Centre-State and Inter-State coordination."
+    },
+    {
+      "commission": "Sarkaria Commission on Centre-State Relations (1988)",
+      "recommendation": "Recommended setting up a permanent Inter-Governmental Council under Article 263 and establishing an authority under Article 307."
+    },
+    {
+      "commission": "Punchhi Commission on Centre-State Relations (2010)",
+      "recommendation": "Recommended strengthening Inter-State Council, mandating at least 3 meetings annually, and tasking its Secretariat with Zonal Councils coordination."
+    }
+  ],
+  "tnpsc_traps": [
+    {
+      "trap_id": "TRAP_01",
+      "name": "Full Faith & Credit Decree Execution",
+      "description": "Article 261(3) execution throughout India applies ONLY to final civil judgments and orders, strictly excluding penal or criminal judgments."
+    },
+    {
+      "trap_id": "TRAP_02",
+      "name": "River Boards Act Status",
+      "description": "River Boards under the River Boards Act 1956 are purely advisory, and in practice, not a single River Board has ever been constituted under this Act."
+    },
+    {
+      "trap_id": "TRAP_03",
+      "name": "Article 262 Court Bar Mechanism",
+      "description": "Article 262 does not directly bar court jurisdiction; it EMPOWERS Parliament by law to bar court jurisdiction (executed via Section 11 of IRWD Act 1956)."
+    },
+    {
+      "trap_id": "TRAP_04",
+      "name": "Article 262 vs Article 136 SLP",
+      "description": "While Article 262 bars Supreme Court original jurisdiction under Article 131, it does not bar the Supreme Court's extraordinary appellate jurisdiction under Article 136."
+    },
+    {
+      "trap_id": "TRAP_05",
+      "name": "Inter-State Council Nature",
+      "description": "The Inter-State Council under Article 263 is strictly an ADVISORY body; it has no adjudicatory or binding judicial power."
+    },
+    {
+      "trap_id": "TRAP_06",
+      "name": "Zonal Councils Legal Status",
+      "description": "Zonal Councils are STATUTORY bodies established under Part III of the States Reorganisation Act 1956, NOT constitutional bodies under Article 263."
+    },
+    {
+      "trap_id": "TRAP_07",
+      "name": "Zonal Councils Chairmanship",
+      "description": "Zonal Councils are chaired by the UNION HOME MINISTER; the Inter-State Council is chaired by the PRIME MINISTER."
+    },
+    {
+      "trap_id": "TRAP_08",
+      "name": "North Eastern Council Membership",
+      "description": "North Eastern Council is governed by the NEC Act 1971; Sikkim was added as the 8th member state in 2002, not by the original 1971 Act."
+    },
+    {
+      "trap_id": "TRAP_09",
+      "name": "Article 301 vs Article 19(1)(g)",
+      "description": "Article 19(1)(g) is a Fundamental Right available only to citizens; Article 301 is a constitutional right available to all persons, corporations, and states."
+    },
+    {
+      "trap_id": "TRAP_10",
+      "name": "Article 303(2) Scarcity Monopoly",
+      "description": "The scarcity exception to non-discrimination under Article 303(2) belongs EXCLUSIVELY to Parliament; State Legislatures can never invoke it."
+    },
+    {
+      "trap_id": "TRAP_11",
+      "name": "Article 304(b) Previous Sanction",
+      "description": "A State Bill imposing reasonable restrictions under Article 304(b) requires the PREVIOUS SANCTION of the President prior to introduction."
+    },
+    {
+      "trap_id": "TRAP_12",
+      "name": "Article 255 Sanction Cure",
+      "description": "Under Article 255, failure to obtain previous presidential sanction under Article 304(b) is cured if the enacted law subsequently receives Presidential assent."
+    },
+    {
+      "trap_id": "TRAP_13",
+      "name": "Compensatory Tax Doctrine Status",
+      "description": "The compensatory tax doctrine formulated in Automobile Transport (1962) was explicitly OVERRULED by the 9-judge bench in Jindal Stainless (2016)."
+    },
+    {
+      "trap_id": "TRAP_14",
+      "name": "Article 307 Authority Reality",
+      "description": "Article 307 enables Parliament to appoint an authority for Part XIII trade freedom, but Parliament has NEVER appointed such an authority."
+    },
+    {
+      "trap_id": "TRAP_15",
+      "name": "IRWD Act Gazetted Award Effect",
+      "description": "Under the 2002 amendment to IRWD Act 1956, a tribunal award published in the Official Gazette has the same force as an ORDER OR DECREE of the Supreme Court."
+    }
+  ],
+  "learning_targets": {
+    "easy": {
+      "target_count": 50,
+      "focus": "Foundational constitutional articles (Arts 261, 262, 263, 301-307), key statutory Acts and years (IRWD Act 1956, River Boards Act 1956, States Reorganisation Act 1956, NEC Act 1971), council composition, chairs, headquarters, basic definitions, and direct factual milestones."
+    },
+    "medium": {
+      "target_count": 50,
+      "focus": "Conceptual distinctions (civil vs penal decrees under Art 261, Art 262 tribunal vs Art 131 court, constitutional ISC vs statutory Zonal Councils, Zonal Councils vs NEC, Parliamentary Art 302 vs State Art 304, Art 304(a) tax vs Art 304(b) restrictions), two-statement questions, and application scenarios."
+    },
+    "hard": {
+      "target_count": 50,
+      "focus": "Deep analytical evaluation: Article 262(2) finality and Art 136 reviewability, Article 303(2) scarcity exception boundaries, Article 304(b) previous sanction and Article 255 cure, landmark judicial doctrines (Atiabari, Automobile Transport, Jindal Stainless 9-judge ruling), Sarkaria/Punchhi commission structural recommendations, and multi-layered federal dispute scenarios."
+    }
+  },
+  "source_boundaries": [
+    "Inter-State Relations Part 1 Notes (data/notes/polity/inter_state_relations_part_1.json)",
+    "Inter-State Relations Part 2 Notes (data/notes/polity/inter_state_relations_part_2.json)",
+    "Inter-State Relations Part 3 Notes (data/notes/polity/inter_state_relations_part_3.json)",
+    "M. Laxmikanth – Indian Polity (Chapters on Inter-State Relations, Centre-State Relations)",
+    "NCERT Class XI Political Science – Indian Constitution at Work (Chapter on Federalism)",
+    "Tamil Nadu Samacheer Kalvi Class 10 & Class 12 Political Science (Chapters on Indian Constitution and Federalism)"
+  ],
+  "mcq_generation_rules": {
+    "avoid_repetition": true,
+    "require_bilingual": true,
+    "require_distractor_analysis": true,
+    "require_revision_fact": true
+  }
+}

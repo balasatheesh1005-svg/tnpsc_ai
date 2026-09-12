@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-Builder Script for Governor of a State Notes — Part 1
-Subject: Indian Polity
-Topic: Governor of a State – Part 1
+Governor of a State - Part 1 (Easy 50 MCQs) Complete Generator
+Output: data/questions/polity/governor_easy.json
 """
 
 import json
@@ -11,669 +10,796 @@ import sys
 
 sys.stdout.reconfigure(encoding='utf-8')
 
-print("==================================================")
-print("BUILDING GOVERNOR NOTES — PART 1")
-print("==================================================")
-
-part1_data = {
-  "meta": {
-    "topic_id": "polity_governor_part_1",
-    "repository_id": "polity_governor",
-    "display_title": "Governor of a State – Part 1",
-    "part": 1,
-    "total_parts": 3,
-    "subject": "polity",
-    "chapter": "Governor of a State",
-    "language": "English + Tamil"
-  },
-  "metadata": {
-    "topic_id": "polity_governor_part_1",
-    "repository_id": "polity_governor",
-    "display_title": "Governor of a State – Part 1",
-    "part": 1,
-    "total_parts": 3,
-    "subject": "polity",
-    "chapter": "Governor of a State",
-    "language": "English + Tamil"
-  },
-  "keywords": [
-    "Governor of a State",
-    "Article 153",
-    "Article 154",
-    "Article 155",
-    "Article 156",
-    "Article 157",
-    "Article 158",
-    "Article 159",
-    "Article 160",
-    "Article 161",
-    "Article 162",
-    "Constitutional Head",
-    "Nominal Executive",
-    "De Jure Executive",
-    "Appointment of Governor",
-    "Pleasure of President",
-    "TNPSC Polity"
-  ],
-  "learning_outcomes": {
-    "Understand": {
-      "en": [
-        "Master the constitutional position of the Governor under Article 153 as the executive head of the State.",
-        "Understand the dual role of the Governor: Constitutional Head of State and Representative of the Union Government.",
-        "Learn the appointment process under Article 155 (Appointed by President by warrant under hand and seal; Canadian model).",
-        "Understand qualifications under Article 157 (Citizen of India, 35 years of age) and conditions under Article 158.",
-        "Analyze term of office under Article 156 (5 years subject to President's pleasure) and oath under Article 159 (administered by CJ of High Court)."
-      ],
-      "ta": [
-        "உறுப்பு 153-ன் கீழ் மாநிலத்தின் நிர்வாகத் தலைவராக ஆளுநரின் அரசியலமைப்பு நிலையைத் தெரிந்துகொள்ளுதல்.",
-        "ஆளுநரின் இரட்டைப் பங்கை அறிந்துகொள்ளுதல்: மாநிலத்தின் அரசியலமைப்புத் தலைவர் மற்றும் மத்திய அரசின் பிரதிநிதி.",
-        "உறுப்பு 155-ன் கீழ் நியமன முறையைப் புரிந்துகொள்ளுதல் (குடியரசுத் தலைவரால் சாசனம் மூலம் நியமிக்கப்படுபவர்; கனடா மாதிரி).",
-        "உறுப்பு 157 தகுதிகள் (இந்தியக் குடிமகன், 35 வயது) மற்றும் உறுப்பு 158 நிபந்தனைகளைப் புரிந்துகொள்ளுதல்.",
-        "உறுப்பு 156 பதவிக்காலம் (குடியரசுத் தலைவரின் விருப்பத்திற்குட்பட்ட 5 ஆண்டுகள்) மற்றும் உறுப்பு 159 பதவிப் பிரமாணம் (உயர் நீதிமன்ற தலைமை நீதிபதி வழங்குவது) ஆகியவற்றைக் கற்றல்."
-      ]
+def mk_q(idx, diff, q_type, q_en, q_ta, opts_en, opts_ta, correct_key, exp_en, exp_ta, trap_en, trap_ta, tip_en, tip_ta, fact_en, fact_ta):
+    return {
+        "id": f"POLITY_GOV_EASY_{idx:03d}",
+        "subject": "Polity",
+        "topic": "Governor of a State",
+        "difficulty": diff,
+        "question_type": q_type,
+        "question_en": q_en,
+        "question_ta": q_ta,
+        "opts_en": opts_en,
+        "opts_ta": opts_ta,
+        "correct_key": correct_key,
+        "exp_en": exp_en,
+        "exp_ta": exp_ta,
+        "trap_en": trap_en,
+        "trap_ta": trap_ta,
+        "tip_en": tip_en,
+        "tip_ta": tip_ta,
+        "fact_en": fact_en,
+        "fact_ta": fact_ta
     }
-  },
-  "subject": "polity",
-  "topic": "Governor of a State",
-  "language": "English + Tamil",
-  "ui_type": "standard_notes",
-  "sections": [
-    {
-      "id": "sec_constitutional_position",
-      "title_en": "1. Constitutional Position & Executive Role (Articles 153 & 154)",
-      "title_ta": "1. அரசியலமைப்பு நிலை & நிர்வாகப் பொறுப்பு (உறுப்புகள் 153 & 154)",
-      "type": "standard_topic"
-    },
-    {
-      "id": "sec_appointment_procedure",
-      "title_en": "2. Appointment of Governor & Model Context (Article 155)",
-      "title_ta": "2. ஆளுநர் நியமன முறை & மாதிரிப் பின்னணி (உறுப்பு 155)",
-      "type": "standard_topic"
-    },
-    {
-      "id": "sec_qualifications_conditions",
-      "title_en": "3. Qualifications & Conditions of Office (Articles 157 & 158)",
-      "title_ta": "3. பதவிக்கான தகுதிகள் & நிபந்தனைகள் (உறுப்புகள் 157 & 158)",
-      "type": "standard_topic"
-    },
-    {
-      "id": "sec_tenure_pleasure",
-      "title_en": "4. Tenure of Office & Pleasure of President (Article 156)",
-      "title_ta": "4. பதவிக்காலம் & குடியரசுத் தலைவரின் விருப்பக் கோட்பாடு (உறுப்பு 156)",
-      "type": "standard_topic"
-    },
-    {
-      "id": "sec_oath_administration",
-      "title_en": "5. Oath of Office & Administering Authority (Article 159)",
-      "title_ta": "5. பதவிப் பிரமாணம் & பிரமாணம் செய்து வைக்கும் அதிகாரி (உறுப்பு 159)",
-      "type": "standard_topic"
-    },
-    {
-      "id": "sec_articles_map",
-      "title_en": "6. State Executive Articles Map (Articles 153 to 162)",
-      "title_ta": "6. மாநில நிர்வாக விதிகள் வரைபடம் (உறுப்புகள் 153 முதல் 162)",
-      "type": "standard_topic"
-    },
-    {
-      "id": "comparison_tables",
-      "title_en": "7. Mandatory Comparison Tables (Oppositional Analysis)",
-      "title_ta": "7. கட்டாய ஒப்பீட்டு அட்டவணைகள் (எதிர்நிலை பகுப்பாய்வு)",
-      "type": "comparison"
-    },
-    {
-      "id": "mind_map",
-      "title_en": "8. Mind Map & TNPSC Trap Points",
-      "title_ta": "8. மன வரைபடம் & டிஎன்பிஎஸ்சி பொறிப் புள்ளிகள்",
-      "type": "mind_map"
-    }
-  ],
-  "content": {
-    "definition": {
-      "en": "The Governor is the constitutional head of a State in India, forming a key component of the State Executive alongside the Chief Minister, Council of Ministers, and Advocate General.",
-      "ta": "ஆளுநர் என்பவர் இந்தியாவின் ஒரு மாநிலத்தின் அரசியலமைப்புத் தலைவராவார். முதலமைச்சர், அமைச்சரவை மற்றும் மாநில தலைமை வழக்கறிஞருடன் இணைந்து மாநில நிர்வாகத்தின் முக்கிய அங்கமாகச் செயல்படுகிறார்."
-    },
-    "introduction": {
-      "en": "Part VI of the Constitution of India (Articles 153 to 167) deals with the State Executive. The Governor functions in a dual capacity: as the nominal (De Jure) executive head of the State and as a representative of the Union Government.",
-      "ta": "இந்திய அரசியலமைப்பின் பகுதி VI (உறுப்புகள் 153 முதல் 167 வரை) மாநில நிர்வாகத்தைப் பற்றி விவரிக்கிறது. ஆளுநர் ஒரு இரட்டைத் தன்மையில் செயல்படுகிறார்: மாநிலத்தின் பெயரளவு (De Jure) நிர்வாகத் தலைவராகவும் மற்றும் மத்திய அரசின் பிரதிநிதியாகவும் செயல்படுகிறார்."
-    },
-    "sec_constitutional_position": [
-      {
-        "title_en": "Article 153 — Office of the Governor",
-        "title_ta": "உறுப்பு 153 — ஆளுநர் பதவி",
-        "points": {
-          "en": [
-            "Article 153 mandates that there shall be a Governor for each State.",
-            "7th Constitutional Amendment Act (1956) facilitated the appointment of the SAME person as Governor for two or more States.",
-            "The Governor forms an integral part of the State Legislature under Article 168."
-          ],
-          "ta": [
-            "உறுப்பு 153 ஒவ்வொரு மாநிலத்திற்கும் ஒரு ஆளுநர் இருக்க வேண்டும் எனக் கூறுகிறது.",
-            "1956-ஆம் ஆண்டின் 7-வது அரசியலமைப்புச் சட்டத்திருத்தம் ஒரே நபரை இரண்டு அல்லது அதற்கு மேற்பட்ட மாநிலங்களின் ஆளுநராக நியமிக்க வழிவகை செய்தது.",
-            "உறுப்பு 168-ன் கீழ் ஆளுநர் மாநில சட்டமன்றத்தின் பிரிக்க முடியாத அங்கமாகச் செயல்படுகிறார்."
-          ]
-        }
-      },
-      {
-        "title_en": "Article 154 — Executive Power of State & De Jure vs De Facto Distinction",
-        "title_ta": "உறுப்பு 154 — மாநில நிர்வாக அதிகாரம் & சட்டப்பூர்வ vs உண்மையான தலைவர்கள் வேறுபாடு",
-        "points": {
-          "en": [
-            "Article 154(1) states that the executive power of the State shall be vested in the Governor and shall be exercised by him either directly or through officers subordinate to him.",
-            "Nominal / Constitutional Head (De Jure): Governor of the State.",
-            "Real Executive Leader (De Facto): Chief Minister along with the Council of Ministers.",
-            "Westminster Model Replica: The Governor acts on the aid and advice of the Council of Ministers headed by the Chief Minister (except in discretionary matters)."
-          ],
-          "ta": [
-            "உறுப்பு 154(1)-ன் படி மாநிலத்தின் நிர்வாக அதிகாரம் ஆளுநரிடம் ஒப்படைக்கப்பட்டுள்ளது, அது அவரால் நேரடியாவோ அல்லது கீழ்நிலை அதிகாரிகள் மூலமாகவோ செயல்படுத்தப்படும்.",
-            "பெயரளவு / அரசியலமைப்புத் தலைவர் (De Jure): மாநில ஆளுநர்.",
-            "உண்மையான நிர்வாகத் தலைவர் (De Facto): முதலமைச்சர் தலைமையிலான அமைச்சரவை.",
-            "நாடாளுமன்ற முறை மாதிரி: முதலமைச்சர் தலைமையிலான அமைச்சரவையின் ஆலோசனையின் பேரிலேயே ஆளுநர் செயல்படுகிறார் (சுயவிருப்ப அதிகாரங்கள் தவிர)."
-          ]
-        }
-      }
-    ],
-    "sec_appointment_procedure": [
-      {
-        "title_en": "Article 155 — Appointment of Governor",
-        "title_ta": "உறுப்பு 155 — ஆளுநர் நியமனம்",
-        "points": {
-          "en": [
-            "The Governor of a State is appointed by the President by warrant under his hand and seal.",
-            "The Governor is NEITHER directly elected by the people NOR indirectly elected by a specially constituted electoral college.",
-            "The Governor's office is an independent constitutional office and is NOT an employment under the Central Government.",
-            "Canadian Model Adoption: India adopted the Canadian model where the Governor of a province is appointed by the Governor-General (Centre), rejecting the US model of directly elected Governors."
-          ],
-          "ta": [
-            "மாநில ஆளுநர் குடியரசுத் தலைவரால் அவரது சொந்த கையொப்பம் மற்றும் முத்திரையுடனான சாசனம் மூலம் நியமிக்கப்படுகிறார்.",
-            "ஆளுநர் மக்களால் நேரடியாகவோ அல்லது சிறப்பு வாக்காளர் குழுவால் மறைமுகமாகவோ தேர்ந்தெடுக்கப்படுவதில்லை.",
-            "ஆளுநர் பதவி என்பது ஒரு சுதந்திரமான அரசியலமைப்பு பதவியாகும்; இது மத்திய அரசின் கீழ் உள்ள ஒரு வேலையல்ல.",
-            "கனடா மாதிரிப் பின்பற்றுதல்: அமெரிக்காவின் நேரடியாகத் தேர்ந்தெடுக்கப்படும் ஆளுநர் முறையை நிராகரித்து, மத்திய அரசால் ஆளுநர் நியமிக்கப்படும் கனடா முறையை இந்தியா ஏற்றுக்கொண்டது."
-          ]
-        }
-      },
-      {
-        "title_en": "Constitutional Conventions of Appointment",
-        "title_ta": "நியமனம் தொடர்பான அரசியலமைப்பு மரபுகள்",
-        "points": {
-          "en": [
-            "Outsider Convention: He should be an outsider, i.e., he should not belong to the State where he is appointed, so that he is free from local politics.",
-            "CM Consultation Convention: While appointing the Governor, the President is expected to consult the Chief Minister of the concerned State to ensure smooth functioning.",
-            "Note: Both these conventions have been frequently violated in Indian political practice."
-          ],
-          "ta": [
-            "வெளிமாநிலத்தவர் மரபு: அவர் நியமிக்கப்படும் மாநிலத்தைச் சேர்ந்தவராக இருக்கக்கூடாது; இதன் மூலம் உள்ளூர் அரசியலில் இருந்து விடுபட்டு நடுநிலையாகச் செயல்பட முடியும்.",
-            "முதலமைச்சர் கலந்தாய்வு மரபு: ஆளுநரை நியமிக்கும் போது, சுமூகமான நிர்வாகத்திற்குச் சம்மந்தப்பட்ட மாநில முதலமைச்சரைக் குடியரசுத் தலைவர் கலந்தாலோசிக்க வேண்டும்.",
-            "குறிப்பு: இந்த இரு மரபுகளும் இந்திய அரசியல் நடைமுறையில் அடிக்கடி மீறப்பட்டுள்ளன."
-          ]
-        }
-      }
-    ],
-    "sec_qualifications_conditions": [
-      {
-        "title_en": "Article 157 — Qualifications for Appointment",
-        "title_ta": "உறுப்பு 157 — நியமனத்திற்கான தகுதிகள்",
-        "points": {
-          "en": [
-            "1. He must be a citizen of India.",
-            "2. He must have completed the age of 35 years.",
-            "Note: The Constitution lays down ONLY THESE TWO qualifications for appointment as Governor."
-          ],
-          "ta": [
-            "1. அவர் இந்தியக் குடிமகனாக இருக்க வேண்டும்.",
-            "2. அவர் 35 வயது பூர்த்தியடைந்தவராக இருக்க வேண்டும்.",
-            "குறிப்பு: அரசியலமைப்பு ஆளுநர் நியமனத்திற்கு இந்த இரு தகுதிகளை மட்டுமே தெளிவாகக் குறிப்பிட்டுள்ளது."
-          ]
-        }
-      },
-      {
-        "title_en": "Article 158 — Conditions of Governor's Office",
-        "title_ta": "உறுப்பு 158 — ஆளுநர் பததிக்கான நிபந்தனைகள்",
-        "points": {
-          "en": [
-            "He should not be a member of either House of Parliament or a House of the State Legislature. If such a person is appointed, he is deemed to have vacated his seat in that House on the date he enters upon his office.",
-            "He should not hold any other office of profit.",
-            "He is entitled without payment of rent to the use of his official residence (Raj Bhavan).",
-            "His emoluments and allowances are determined by Parliament by law and cannot be diminished during his term of office.",
-            "Sharing Emoluments (Art 158(3A)): When the same person is appointed as Governor of two or more States, the emoluments and allowances payable to him are allocated among the States in such proportion as determined by the President."
-          ],
-          "ta": [
-            "அவர் நாடாளுமன்றத்தின் எந்தவொரு அவையிலோ அல்லது மாநில சட்டமன்றத்தின் எந்தவொரு அவையிலோ உறுப்பினராக இருக்கக்கூடாது. அவ்வாறு இருப்பவர் நியமிக்கப்பட்டால், பதவியேற்கும் நாளில் அவையிலிருந்து விலகியதாகக் கருதப்படுவார்.",
-            "அவர் எந்தவொரு ஆதாயம் தரும் பதவியையும் வகிக்கக்கூடாது.",
-            "அவர் வாடகையின்றி தனது அதிகாரப்பூர்வ இருப்பிடத்தைப் (ராஜ் பவன்) பயன்படுத்த உரிமையுடையவர்.",
-            "அவரது ஊதியங்கள் மற்றும் படிகள் நாடாளுமன்றச் சட்டத்தால் தீர்மானிக்கப்படுகின்றன மற்றும் அவரது பதவிக்காலத்தில் குறைக்கப்பட முடியாது.",
-            "ஊதியப் பங்கீடு (விதி 158(3A)): ஒரே நபர் இரண்டு அல்லது அதற்கு மேற்பட்ட மாநிலங்களின் ஆளுநராக நியமிக்கப்படும் போது, அவருக்கு வழங்கப்படும் ஊதியம் மற்றும் படிகள் குடியரசுத் தலைவரால் தீர்மானிக்கப்படும் விகிதத்தில் மாநிலங்களால் பகிர்ந்து அளிக்கப்படும்."
-          ]
-        }
-      }
-    ],
-    "sec_tenure_pleasure": [
-      {
-        "title_en": "Article 156 — Term of Office & Pleasure of President",
-        "title_ta": "உறுப்பு 156 — பதவிக்காலம் & குடியரசுத் தலைவரின் விருப்பக் கோட்பாடு",
-        "points": {
-          "en": [
-            "Article 156(1): The Governor shall hold office during the pleasure of the President.",
-            "Article 156(2): The Governor may, by writing under his hand addressed to the President, resign his office.",
-            "Article 156(3): Subject to the foregoing provisions, a Governor shall hold office for a term of 5 years from the date on which he enters upon his office.",
-            "No Fixed Security of Tenure: The 5-year term is subject to the pleasure of the President. The President can remove/transfer a Governor at any time without assigning any reason.",
-            "Continuation Proviso: A Governor shall, notwithstanding the expiration of his term, continue to hold office until his successor enters upon his office (prevents constitutional vacuum).",
-            "B.P. Singhal Case (2010): Supreme Court held that the President has the power to remove a Governor at any time without assigning reasons, BUT the removal cannot be arbitrary, whimsical, or based on political grounds."
-          ],
-          "ta": [
-            "உறுப்பு 156(1): ஆளுநர் குடியரசுத் தலைவரின் விருப்பம் உள்ளவரை பதவியில் நீடிப்பார்.",
-            "உறுப்பு 156(2): ஆளுநர் குடியரசுத் தலைவருக்குத் தனது கையொப்பமிட்ட கடிதம் மூலம் ராஜினாமா செய்யாலம்.",
-            "உறுப்பு 156(3): மேற்கண்ட விதிகளுக்கு உட்பட்டு, பதவியேற்ற நாளிலிருந்து 5 ஆண்டுகள் வரை பதவியில் நீடிப்பார்.",
-            "நிலையான பதவிக்காலப் பாதுகாப்பு இல்லை: 5 ஆண்டு பதவிக்காலம் குடியரசுத் தலைவரின் விருப்பத்திற்கு உட்பட்டது. எந்தக் காரணமும் குறிப்பிடாமல் குடியரசுத் தலைவர் ஆளுநரை எப்போது வேண்டுமானாலும் நீக்கலாம் அல்லது இடமாற்றம் செய்யலாம்.",
-            "தொடர்ச்சி விதி: பதவிக்காலம் முடிந்தபோதிலும், புதிய ஆளுநர் பதவியேற்கும் வரை தற்போதைய ஆளுநர் பதவியில் தொடர்வார் (அரசியலமைப்பு வெற்றிடத்தைத் தவிர்க்க).",
-            "பி.பி. சிங்கால் வழக்கு (2010): காரணமின்றி ஆளுநரை நீக்க குடியரசுத் தலைவருக்கு அதிகாரமுள்ளது, ஆனால் அந்த நீக்கம் தன்னிச்சையானதாகவோ அல்லது அரசியல் காரணங்களுக்காகவோ இருக்கக்கூடாது என உச்ச நீதிமன்றம் தீர்ப்பளித்தது."
-          ]
-        }
-      }
-    ],
-    "sec_oath_administration": [
-      {
-        "title_en": "Article 159 — Oath or Affirmation by Governor",
-        "title_ta": "உறுப்பு 159 — ஆளுநரின் பதவிப் பிரமாணம்",
-        "points": {
-          "en": [
-            "Every Governor before entering upon his office takes an Oath of Office.",
-            "Administering Authority: The Oath is administered by the Chief Justice of the High Court exercising jurisdiction over the State, or in his absence, the senior-most Judge of that High Court available.",
-            "Pledge Wording: To faithfully execute the office of Governor, to preserve, protect and defend the Constitution and the law, and to devote himself to the service and well-being of the people of the State."
-          ],
-          "ta": [
-            "ஒவ்வொரு ஆளுநரும் பதவியேற்கும் முன் பதவிப் பிரமாணம் எடுத்துக்கொள்கிறார்.",
-            "பிரமாணம் செய்து வைக்கும் அதிகாரி: அந்த மாநில உயர் நீதிமன்றத் தலைமை நீதிபதி அல்லது அவர் இல்லாத பட்சத்தில் அங்கே உள்ள மூத்த நீதிபதி பிரமாணம் செய்து வைக்கிறார்.",
-            "உறுதிமொழி உரை: ஆளுநர் பதவியை உண்மையாகவும், அரசியலமைப்பு மற்றும் சட்டத்தைப் பேணிப் பாதுகாக்கவும், மாநில மக்களின் சேவைக்குத் தன்னை அர்ப்பணிக்கவும் உறுதி ஏற்கிறார்."
-          ]
-        }
-      }
-    ],
-    "sec_articles_map": [
-      {
-        "title_en": "State Executive Articles Cheat-Sheet (Articles 153 to 162)",
-        "title_ta": "மாநில நிர்வாக விதிகள் நினைவுக் குறிப்பு (உறுப்புகள் 153 முதல் 162)",
-        "points": {
-          "en": [
-            "Article 153: Governors of States (One person for 2+ states allowed under 7th Amendment 1956)",
-            "Article 154: Executive power of State vested in Governor",
-            "Article 155: Appointment of Governor by President by warrant",
-            "Article 156: Term of office of Governor (Pleasure of President / 5 Years)",
-            "Article 157: Qualifications for appointment as Governor (Citizen, 35 years age)",
-            "Article 158: Conditions of Governor's office (No MP/MLA, No office of profit, Emoluments)",
-            "Article 159: Oath or affirmation by the Governor (Administered by CJ of High Court)",
-            "Article 160: Discharge of functions of Governor in certain contingencies",
-            "Article 161: Power of Governor to grant pardons, reprieves, remissions, etc.",
-            "Article 162: Extent of executive power of State (Co-extensive with legislative competence)"
-          ],
-          "ta": [
-            "உறுப்பு 153: மாநிலங்களின் ஆளுநர்கள் (1956 7-வது திருத்தத்தின் படி ஒரே நபர் 2+ மாநிலங்களுக்கு ஆளுநராகலாம்)",
-            "உறுப்பு 154: ஆளுநரிடம் ஒப்படைக்கப்பட்டுள்ள மாநில நிர்வாக அதிகாரம்",
-            "உறுப்பு 155: குடியரசுத் தலைவரால் ஆளுநர் நியமனம்",
-            "உறுப்பு 156: ஆளுநரின் பதவிக்காலம் (குடியரசுத் தலைவர் விருப்பம் / 5 ஆண்டுகள்)",
-            "உறுப்பு 157: ஆளுநர் நியமனத்திற்கான தகுதிகள் (குடிமகன், 35 வயது)",
-            "உறுப்பு 158: ஆளுநர் பததிக்கான நிபந்தனைகள் (எம்பி/எம்எல்ஏ ஆக இருக்கக்கூடாது, ஆதாயம் தரும் பதவி இல்லை)",
-            "உறுப்பு 159: ஆளுநரின் பதவிப் பிரமாணம் (உயர் நீதிமன்ற தலைமை நீதிபதி வழங்குவது)",
-            "உறுப்பு 160: சில அவசரச் சூழல்களில் ஆளுநரின் பணிகளைச் செயல்படுத்துதல்",
-            "உறுப்பு 161: ஆளுநரின் மன்னிப்பளிக்கும் அதிகாரம்",
-            "உறுப்பு 162: மாநில நிர்வாக அதிகாரத்தின் எல்லை (சட்டமன்ற அதிகார எல்லைக்கு இணையானது)"
-          ]
-        }
-      }
-    ],
-    "revision_cards": [
-      {
-        "id": "gov_p1_c1",
-        "front_en": "Which Article provides for a Governor for each State in India?",
-        "front_ta": "இந்தியாவில் ஒவ்வொரு மாநிலத்திற்கும் ஒரு ஆளுநர் இருக்க வேண்டும் எனக் கூறும் உறுப்பு எது?",
-        "back_en": "Article 153. (7th Constitutional Amendment 1956 allows 1 person as Governor for 2+ States).",
-        "back_ta": "உறுப்பு 153. (1956 7-வது திருத்தம் ஒரே நபர் 2+ மாநிலங்களுக்கு ஆளுநராக நியமிக்கப்பட அனுமதிக்கிறது)."
-      },
-      {
-        "id": "gov_p1_c2",
-        "front_en": "Who appoints the Governor of a State in India?",
-        "front_ta": "இந்தியாவில் மாநில ஆளுநரை நியமிப்பவர் யார்?",
-        "back_en": "Appointed by the President of India by warrant under his hand and seal (Article 155).",
-        "back_ta": "இந்தியக் குடியரசுத் தலைவரால் அவரது கையொப்பம் மற்றும் முத்திரையுடனான சாசனம் மூலம் நியமிக்கப்படுகிறார் (உறுப்பு 155)."
-      },
-      {
-        "id": "gov_p1_c3",
-        "front_en": "Which country's model was adopted for appointing Governors in India?",
-        "front_ta": "இந்தியாவில் ஆளுநர்களை நியமிக்க எந்த நாட்டின் மாதிரி பின்பற்றப்பட்டது?",
-        "back_en": "Canadian Model (Appointed by Centre, rejecting the US elected Governor model).",
-        "back_ta": "கனடா மாதிரி (மத்திய அரசால் நியமிக்கப்படும் முறை; அமெரிக்காவின் தேர்ந்தெடுக்கப்படும் முறை நிராகரிக்கப்பட்டது)."
-      },
-      {
-        "id": "gov_p1_c4",
-        "front_en": "What are the minimum age and citizenship qualifications for Governor under Article 157?",
-        "front_ta": "உறுப்பு 157-ன் கீழ் ஆளுநருக்கான குறைந்தபட்ச வயது மற்றும் குடியுரிமை தகுதிகள் யாவை?",
-        "back_en": "Must be a Citizen of India and completed 35 years of age.",
-        "back_ta": "இந்தியக் குடிமகனாகவும் 35 வயது பூர்த்தியடைந்தவராகவும் இருக்க வேண்டும்."
-      },
-      {
-        "id": "gov_p1_c5",
-        "front_en": "Who administers the Oath of Office to the Governor under Article 159?",
-        "front_ta": "உறுப்பு 159-ன் கீழ் ஆளுநருக்குப் பதவிப் பிரமாணம் செய்து வைப்பவர் யார்?",
-        "back_en": "Chief Justice of the State High Court (or senior-most judge available).",
-        "back_ta": "மாநில உயர் நீதிமன்றத் தலைமை நீதிபதி (அல்லது அங்கிருக்கும் மூத்த நீதிபதி)."
-      },
-      {
-        "id": "gov_p1_c6",
-        "front_en": "What is the tenure of the Governor under Article 156?",
-        "front_ta": "உறுப்பு 156-ன் கீழ் ஆளுநரின் பதவிக்காலம் என்ன?",
-        "back_en": "Holds office during the Pleasure of the President (Normal 5-year term; No fixed security of tenure).",
-        "back_ta": "குடியரசுத் தலைவரின் விருப்பம் உள்ளவரை பதவியில் நீடிப்பார் (சாதாரண 5 ஆண்டு பதவிக்காலம்; நிலையான பதவிக்காலப் பாதுகாப்பு இல்லை)."
-      },
-      {
-        "id": "gov_p1_c7",
-        "front_en": "What happens to the salary of a Governor serving two or more States under Article 158(3A)?",
-        "front_ta": "இரண்டு அல்லது அதற்கு மேற்பட்ட மாநிலங்களுக்கு ஆளுநராக இருக்கும் ஒருவரின் ஊதியம் எவ்வாறு பகிர்ந்தளிக்கப்படுகிறது (விதி 158(3A))?",
-        "back_en": "Shared between concerned States in proportion determined by the President.",
-        "back_ta": "குடியரசுத் தலைவரால் தீர்மானிக்கப்படும் விகிதத்தில் சம்பந்தப்பட்ட மாநிலங்களால் பகிர்ந்து அளிக்கப்படுகிறது."
-      },
-      {
-        "id": "gov_p1_c8",
-        "front_en": "Is the Governor an employee of the Central Government?",
-        "front_ta": "ஆளுநர் மத்திய அரசின் ஊழியரா?",
-        "back_en": "NO. The Governor's office is an independent constitutional office, NOT employment under Central Government (Hargovind Pant case).",
-        "back_ta": "இல்லை. ஆளுநர் பதவி என்பது ஒரு சுதந்திரமான அரசியலமைப்பு பதவியாகும்; இது மத்திய அரசின் கீழ் உள்ள வேலையல்ல."
-      },
-      {
-        "id": "gov_p1_c9",
-        "front_en": "What landmark 2010 Supreme Court case ruled on Governor removal by President?",
-        "front_ta": "குடியரசுத் தலைவரால் ஆளுநர் நீக்கம் குறித்து தீர்ப்பளித்த முக்கிய 2010 உச்ச நீதிமன்ற வழக்கு எது?",
-        "back_en": "B.P. Singhal v. Union of India (2010) — Removal cannot be arbitrary or based on political grounds.",
-        "back_ta": "பி.பி. சிங்கால் v. இந்திய ஒன்றியம் (2010) — ஆளுநர் நீக்கம் தன்னிச்சையாகவோ அரசியல் காரணங்களுக்காகவோ இருக்கக்கூடாது."
-      },
-      {
-        "id": "gov_p1_c10",
-        "front_en": "Does the Governor continue in office after 5 years if no successor is appointed?",
-        "front_ta": "புதிய ஆளுநர் நியமிக்கப்படாத பட்சத்தில் 5 ஆண்டுகளுக்குப் பிறகும் தற்போதைய ஆளுநர் பதவியில் தொடர்வாரா?",
-        "back_en": "YES. Continues until successor assumes office to prevent a constitutional vacuum (Art 156(3) proviso).",
-        "back_ta": "ஆம். அரசியலமைப்பு வெற்றிடத்தைத் தவிர்க்க புதிய ஆளுநர் பதவியேற்கும் வரை தொடர்வார் (விதி 156(3) proviso)."
-      }
-    ],
-    "comparison_tables": [
-      {
-        "id": "tbl_governor_vs_president_p1",
-        "title_en": "1. Governor vs President Comparison (Position & Appointment)",
-        "title_ta": "1. ஆளுநர் vs குடியரசுத் தலைவர் ஒப்பீடு (நிலை & நியமனம்)",
-        "headers_en": ["Feature / Dimension", "Governor of a State", "President of India"],
-        "headers_ta": ["அம்சம் / காரணி", "மாநில ஆளுநர்", "இந்தியக் குடியரசுத் தலைவர்"],
-        "rows_en": [
-          ["Executive Status", "Constitutional Head of State Executive (Art 154)", "Constitutional Head of Union Executive (Art 53)"],
-          ["Mode of Selection", "APPOINTED by President by warrant (Art 155)", "INDIRECTLY ELECTED by Electoral College (Art 54)"],
-          ["Minimum Age", "35 Years (Art 157)", "35 Years (Art 58)"],
-          ["House Membership Eligibility", "Must NOT be an MP or MLA (Art 158)", "Must be qualified for election as Lok Sabha MP (Art 58)"],
-          ["Oath Administered By", "Chief Justice of State High Court (Art 159)", "Chief Justice of India (CJI) (Art 60)"],
-          ["Tenure Security", "No fixed tenure; Holds office during President's pleasure (Art 156)", "Fixed 5-year term; Removed ONLY by Impeachment (Art 61)"],
-          ["Multi-Office Provision", "Same person can be Governor for 2+ States (7th Amend 1956)", "No such provision; President is for whole Union"]
-        ],
-        "rows_ta": [
-          ["நிர்வாக நிலை", "மாநில நிர்வாகத்தின் அரசியலமைப்புத் தலைவர் (விதி 154)", "மத்திய நிர்வாகத்தின் அரசியலமைப்புத் தலைவர் (விதி 53)"],
-          ["தேர்வு முறை", "குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார் (விதி 155)", "வாக்காளர் குழுவால் மறைமுகமாகத் தேர்ந்தெடுக்கப்படுகிறார் (விதி 54)"],
-          ["குறைந்தபட்ச வயது", "35 வயது (விதி 157)", "35 வயது (விதி 58)"],
-          ["அவை உறுப்பினர் தகுதி", "எம்பி அல்லது எம்எல்ஏ-வாக இருக்கக்கூடாது (விதி 158)", "மக்களவை எம்பி-யாகத் தேர்ந்தெடுக்கப்படத் தகுதி வேண்டும் (விதி 58)"],
-          ["பதவிப் பிரமாணம்", "மாநில உயர் நீதிமன்றத் தலைமை நீதிபதி (விதி 159)", "இந்தியத் தலைமை நீதிபதி (CJI) (விதி 60)"],
-          ["பதவிக்காலப் பாதுகாப்பு", "நிலையான பதவிக்காலம் இல்லை; குடியரசுத் தலைவர் விருப்பம் (விதி 156)", "5 ஆண்டுகள் நிலையான பதவிக்காலம்; பதவி நீக்கம் மூலம் மட்டுமே நீக்க முடியும் (விதி 61)"],
-          ["பல பதவி ஏற்பு", "ஒரே நபர் 2+ மாநிலங்களுக்கு ஆளுநராகலாம் (1956 7-வது திருத்தம்)", "அவ்வாறு இல்லை; முழு இந்திய ஒன்றியத்திற்கும் ஒருவர்"]
-        ]
-      },
-      {
-        "id": "tbl_governor_vs_cm_p1",
-        "title_en": "2. Governor vs Chief Minister Comparison (Constitutional Head vs Real Executive)",
-        "title_ta": "2. ஆளுநர் vs முதலமைச்சர் ஒப்பீடு (அரசியலமைப்புத் தலைவர் vs உண்மையான நிர்வாகி)",
-        "headers_en": ["Dimension", "Governor of a State", "Chief Minister of a State"],
-        "headers_ta": ["அம்சம்", "மாநில ஆளுநர்", "மாநில முதலமைச்சர்"],
-        "rows_en": [
-          ["Executive Role", "De Jure (Nominal / Constitutional) Head of State", "De Facto (Real) Executive Head of State Government"],
-          ["Constitutional Article", "Article 153 & Article 154", "Article 163 & Article 164"],
-          ["Appointment Basis", "Appointed by President under Art 155", "Appointed by Governor under Art 164(1)"],
-          ["Council of Ministers", "Acts on aid and advice of COM (Art 163)", "Heads the Council of Ministers (Art 163)"],
-          ["Discretionary Powers", "Enjoys express Constitutional Discretion (Art 163(1))", "Leads political and legislative initiatives"],
-          ["Tenure", "Holds office during President's pleasure", "Holds office as long as he enjoys Assembly majority"]
-        ],
-        "rows_ta": [
-          ["நிர்வாகப் பங்கு", "பெயரளவு (De Jure) அரசியலமைப்புத் தலைவர்", "உண்மையான (De Facto) அரசாங்க நிர்வாகத் தலைவர்"],
-          ["அரசியலமைப்பு விதி", "உறுப்பு 153 & உறுப்பு 154", "உறுப்பு 163 & உறுப்பு 164"],
-          ["நியமன அடிப்படை", "விதி 155-ன் கீழ் குடியரசுத் தலைவரால் நியமனம்", "விதி 164(1)-ன் கீழ் ஆளுநரால் நியமனம்"],
-          ["அமைச்சரவை", "அமைச்சரவை ஆலோசனையின் படி செயல்படுகிறார் (விதி 163)", "அமைச்சரவையின் தலைவராகச் செயல்படுகிறார் (விதி 163)"],
-          ["சுயவிருப்ப அதிகாரம்", "தெளிவான அரசியலமைப்பு சுயவிருப்ப அதிகாரம் உண்டு (விதி 163(1))", "அரசியல் மற்றும் சட்டமன்ற செயல்பாடுகளை வழிநடத்துகிறார்"],
-          ["பதவிக்காலம்", "குடியரசுத் தலைவரின் விருப்பம் உள்ளவரை", "சட்டமன்றப் பெரும்பான்மை இருக்கும் வரை"]
-        ]
-      },
-      {
-        "id": "tbl_governor_vs_vp_p1",
-        "title_en": "3. Governor vs Vice-President Comparison",
-        "title_ta": "3. ஆளுநர் vs துணைக் குடியரசுத் தலைவர் ஒப்பீடு",
-        "headers_en": ["Feature", "Governor of a State", "Vice-President of India"],
-        "headers_ta": ["அம்சம்", "மாநில ஆளுநர்", "இந்தியத் துணைக் குடியரசுத் தலைவர்"],
-        "rows_en": [
-          ["Selection Method", "Appointed by President (Art 155)", "Elected by Parliament Electoral College (Art 66)"],
-          ["Minimum Age", "35 Years (Art 157)", "35 Years (Art 66(3))"],
-          ["House Qualification", "No specific House qualification needed", "Must be qualified for election to Rajya Sabha"],
-          ["Oath Administered By", "Chief Justice of State High Court (Art 159)", "President of India (Art 69)"],
-          ["Primary Office", "Executive Head of a State", "Ex-Officio Chairman of Rajya Sabha (Art 64)"],
-          ["Removal", "Removed by President at pleasure (Art 156)", "Removed by Rajya Sabha resolution agreed by Lok Sabha (Art 67b)"]
-        ],
-        "rows_ta": [
-          ["தேர்வு முறை", "குடியரசுத் தலைவரால் நியமனம் (விதி 155)", "நாடாளுமன்ற வாக்காளர் குழுவால் தேர்தல் (விதி 66)"],
-          ["குறைந்தபட்ச வயது", "35 வயது (விதி 157)", "35 வயது (விதி 66(3))"],
-          ["அவைத் தகுதி", "குறிப்பிட்ட அவைத் தகுதி தேவையில்லை", "மாநிலங்களவை உறுப்பினராகத் தகுதி வேண்டும்"],
-          ["பதவிப் பிரமாணம்", "மாநில உயர் நீதிமன்றத் தலைமை நீதிபதி (விதி 159)", "இந்தியக் குடியரசுத் தலைவர் (விதி 69)"],
-          ["முதன்மைப் பதவி", "மாநிலத்தின் நிர்வாகத் தலைவர்", "மாநிலங்களவையின் பதவிவழித் தலைவர் (விதி 64)"],
-          ["பதவி நீக்கம்", "குடியரசுத் தலைவர் விருப்பப்படி நீக்கம் (விதி 156)", "மாநிலங்களவைத் தீர்மானம் மூலம் நீக்கம் (விதி 67b)"]
-        ]
-      },
-      {
-        "id": "tbl_governor_vs_pm_p1",
-        "title_en": "4. Governor vs Prime Minister Comparison",
-        "title_ta": "4. ஆளுநர் vs பிரதமர் ஒப்பீடு",
-        "headers_en": ["Feature", "Governor of a State", "Prime Minister of India"],
-        "headers_ta": ["அம்சம்", "மாநில ஆளுநர்", "இந்தியப் பிரதமர்"],
-        "rows_en": [
-          ["Level of Office", "State Executive (Part VI)", "Union Executive (Part V)"],
-          ["Nature of Executive", "De Jure (Nominal) Head of State", "De Facto (Real) Head of Union Government"],
-          ["Mode of Office Entry", "Appointed by President (Art 155)", "Appointed by President as Lok Sabha Majority Leader (Art 75)"],
-          ["Oath Administered By", "Chief Justice of High Court (Art 159)", "President of India (Art 75(4))"],
-          ["Parliamentary Membership", "Must NOT be an MP or MLA", "MUST be an MP of Lok Sabha or Rajya Sabha within 6 months"]
-        ],
-        "rows_ta": [
-          ["பதவி நிலை", "மாநில நிர்வாகம் (பகுதி VI)", "மத்திய நிர்வாகம் (பகுதி V)"],
-          ["நிர்வாகத் தன்மை", "மாநிலத்தின் பெயரளவு (De Jure) தலைவர்", "மத்திய அரசின் உண்மையான (De Facto) தலைவர்"],
-          ["பதவி நுழைவு முறை", "குடியரசுத் தலைவரால் நியமனம் (விதி 155)", "மக்களவைப் பெரும்பான்மைத் தலைவராக குடியரசுத் தலைவரால் நியமனம் (விதி 75)"],
-          ["பதவிப் பிரமாணம்", "உயர் நீதிமன்றத் தலைமை நீதிபதி (விதி 159)", "இந்தியக் குடியரசுத் தலைவர் (விதி 75(4))"],
-          ["நாடாளுமன்ற உறுப்பினர்", "எம்பி அல்லது எம்எல்ஏ-வாக இருக்கக்கூடாது", "6 மாதங்களுக்குள் மக்களவை/மாநிலங்களவை எம்பியாக இருக்க வேண்டும்"]
-        ]
-      },
-      {
-        "id": "tbl_appointment_vs_election_p1",
-        "title_en": "5. Appointment vs Election Model Comparison (Why Canadian Model was chosen)",
-        "title_ta": "5. நியமனம் vs தேர்தல் மாதிரி ஒப்பீடு (ஏன் கனடா மாதிரி தேர்ந்தெடுக்கப்பட்டது)",
-        "headers_en": ["Aspect", "Elected Governor Model (US System - Rejected)", "Appointed Governor Model (Canadian System - Adopted)"],
-        "headers_ta": ["கூறு", "தேர்ந்தெடுக்கப்படும் ஆளுநர் மாதிரி (அமெரிக்க முறை - நிராகரிக்கப்பட்டது)", "நியமிக்கப்படும் ஆளுநர் மாதிரி (கனடா முறை - ஏற்றுக்கொள்ளப்பட்டது)"],
-        "rows_en": [
-          ["Executive Conflict", "Creates direct conflict between elected CM and elected Governor", "Prevents friction; Governor acts as neutral constitutional head"],
-          ["Union-State Unity", "May encourage separatist or narrow regional tendencies", "Strengthens national integration and Union supervision"],
-          ["Political Neutrality", "Governor would belong to a party and engage in active politics", "Governor can act as an impartial constitutional umpire"],
-          ["Financial Cost", "Huge expenditure on nationwide state gubernatorial elections", "No electoral expenditure required"]
-        ],
-        "rows_ta": [
-          ["நிர்வாக மோதல்", "தேர்ந்தெடுக்கப்பட்ட முதலமைச்சருக்கும் ஆளுநருக்கும் இடையே நேரடி மோதலை உருவாக்கும்", "மோதலைத் தவிர்க்கிறது; ஆளுநர் நடுநிலை அரசியலமைப்புத் தலைவராகச் செயல்படுகிறார்"],
-          ["மத்திய-மாநில ஒற்றுமை", "மாநில பிரிவினைவாதப் போக்கிற்கு வழிவகுக்கலாம்", "தேசிய ஒருமைப்பாட்டையும் மத்திய அரசின் மேற்பார்வையையும் பலப்படுத்துகிறது"],
-          ["அரசியல் நடுநிலைமை", "ஆளுநர் ஒரு அரசியல் கட்சிக்குச் சொந்தமாக தீவிர அரசியலில் ஈடுபடுவார்", "ஆளுநர் நடுநிலையான அரசியலமைப்பு நடுவராகச் செயல்பட முடியும்"],
-          ["நிதிச் செலவு", "மாநில ஆளுநர் தேர்தல்களுக்குப் பெருமளவு செலவாகும்", "தேர்தல் செலவுகள் எதுவும் தேவையில்லை"]
-        ]
-      },
-      {
-        "id": "tbl_constitutional_vs_real_exec_p1",
-        "title_en": "6. Constitutional Head vs Real Executive Comparison (State Level)",
-        "title_ta": "6. அரசியலமைப்புத் தலைவர் vs உண்மையான நிர்வாகி ஒப்பீடு (மாநில நிலை)",
-        "headers_en": ["Parameter", "Constitutional Head (Governor)", "Real Executive (Chief Minister + Council of Ministers)"],
-        "headers_ta": ["அளவுரு", "அரசியலமைப்புத் தலைவர் (ஆளுநர்)", "உண்மையான நிர்வாகி (முதலமைச்சர் + அமைச்சரவை)"],
-        "rows_en": [
-          ["Constitutional Symbol", "State executive orders issued in Governor's name (Art 166)", "Formulates and implements actual state policies"],
-          ["Democratic Mandate", "Appointed by President; no direct popular mandate", "Directly/indirectly elected by the voters of the State"],
-          ["Responsibility to Assembly", "Not answerable to State Legislative Assembly", "Collectively responsible to State Legislative Assembly (Art 164)"],
-          ["Policy Execution", "Acts on binding advice of Cabinet (except in discretion)", "Drives legislative and executive governance of the State"]
-        ],
-        "rows_ta": [
-          ["அரசியலமைப்பு சின்னம்", "அரசு நிர்வாக ஆணைகள் ஆளுநர் பெயரால் வெளியாகும் (விதி 166)", "உண்மையான மாநிலக் கொள்கைகளை உருவாக்கிச் செயல்படுத்துகிறது"],
-          ["மக்களாணை", "குடியரசுத் தலைவரால் நியமனம்; நேரடி மக்களாணை இல்லை", "மாநில வாக்காளர்களால் நேரடியாக/மறைமுகமாகத் தேர்ந்தெடுக்கப்பட்டவர்"],
-          ["சட்டமன்றப் பொறுப்பு", "மாநில சட்டமன்றத்திற்குப் பொறுப்பல்ல", "மாநில சட்டமன்றத்திற்குச் கூட்டாகப் பொறுப்பானவர்கள் (விதி 164)"],
-          ["கொள்கை அமலாக்கம்", "அமைச்சரவையின் கட்டாய ஆலோசனையின் படி செயல்படுகிறார்", "மாநிலத்தின் சட்டமன்ற மற்றும் நிர்வாக ஆட்சியை வழிநடத்துகிறது"]
-        ]
-      }
-    ],
-    "mind_map": [
-      {
-        "title": "Governor of a State (Part VI - Articles 153 to 162)",
-        "short_label": "Governor Part 1",
-        "children": [
-          {
-            "title": "1. Constitutional Position",
-            "short_label": "Position",
-            "children": [
-              {"title": "Article 153: Governor for each State (7th Amend 1956: 1 person for 2+ States)", "short_label": "Art 153"},
-              {"title": "Article 154: Executive power of State vested in Governor (De Jure Head)", "short_label": "Art 154"}
-            ]
-          },
-          {
-            "title": "2. Appointment & Model",
-            "short_label": "Appointment",
-            "children": [
-              {"title": "Article 155: Appointed by President by warrant under hand and seal", "short_label": "Art 155"},
-              {"title": "Canadian Model: Appointed from Centre (Not elected like US model)", "short_label": "Canadian Model"}
-            ]
-          },
-          {
-            "title": "3. Qualifications & Conditions",
-            "short_label": "Qualifications",
-            "children": [
-              {"title": "Article 157: Citizen of India + 35 years of age", "short_label": "Art 157"},
-              {"title": "Article 158: No MP/MLA, No office of profit, Rent-free Raj Bhavan, Salary shared if 2+ States", "short_label": "Art 158"}
-            ]
-          },
-          {
-            "title": "4. Tenure & Oath",
-            "short_label": "Tenure & Oath",
-            "children": [
-              {"title": "Article 156: Holds office during Pleasure of President (5-year normal term)", "short_label": "Art 156"},
-              {"title": "Article 159: Oath administered by Chief Justice of State High Court", "short_label": "Art 159"}
-            ]
-          }
-        ]
-      }
-    ],
-    "tnpsc_traps": [
-      {
-        "title": "1. Governor Appointment Trap (ஆளுநர் நியமனப் பொறி)",
-        "points": {
-          "en": [
-            "TRAP: Believing the Governor is elected by the State Legislative Assembly or directly by the people.",
-            "FACT: Under Article 155, the Governor is APPOINTED by the President of India. There is NO election for Governor in India (Canadian model)."
-          ],
-          "ta": [
-            "பொறி: ஆளுநர் மாநில சட்டமன்றத்தால் அல்லது மக்களால் நேரடியாகத் தேர்ந்தெடுக்கப்படுகிறார் என நினைப்பது.",
-            "உண்மை: உறுப்பு 155-ன் படி ஆளுநர் இந்தியக் குடியரசுத் தலைவரால் 'நியமிக்கப்படுகிறார்'. இந்தியாவில் ஆளுநருக்குத் தேர்தல் இல்லை (கனடா மாதிரி)."
-          ]
-        }
-      },
-      {
-        "title": "2. Oath Administering Authority Trap (பதவிப் பிரமாண அதிகாரிப் பொறி)",
-        "points": {
-          "en": [
-            "TRAP: Assuming the President of India or Chief Minister administers the Oath to the Governor.",
-            "FACT: Under Article 159, the Oath to the Governor is administered by the CHIEF JUSTICE OF THE HIGH COURT exercising jurisdiction over the State (or senior-most judge available)."
-          ],
-          "ta": [
-            "பொறி: குடியரசுத் தலைவர் அல்லது முதலமைச்சர் ஆளுநருக்குப் பிரமாணம் செய்து வைக்கிறார் என நினைப்பது.",
-            "உண்மை: உறுப்பு 159-ன் படி ஆளுநருக்குப் பதவிப் பிரமாணம் செய்து வைப்பவர் உயர் நீதிமன்றத் தலைமை நீதிபதி ஆவார்."
-          ]
-        }
-      },
-      {
-        "title": "3. Five-Year Tenure Security Trap (5 ஆண்டு பதவிக்காலப் பாதுகாப்புப் பொறி)",
-        "points": {
-          "en": [
-            "TRAP: Believing the Governor has a guaranteed fixed 5-year tenure like the President.",
-            "FACT: Under Article 156(1), the Governor holds office DURING THE PLEASURE OF THE PRESIDENT. He can be removed or transferred by the President at any time without specifying reasons (B.P. Singhal 2010 ruling)."
-          ],
-          "ta": [
-            "பொறி: குடியரசுத் தலைவர் போல ஆளுநருக்கும் 5 ஆண்டுகள் நிலையான பதவிக்காலப் பாதுகாப்பு உண்டு என நினைப்பது.",
-            "உண்மை: உறுப்பு 156(1)-ன் படி ஆளுநர் குடியரசுத் தலைவரின் 'விருப்பம் உள்ளவரை' பதவியில் நீடிப்பார். குடியரசுத் தலைவர் எப்போது வேண்டுமானாலும் அவரை நீக்கலாம்."
-          ]
-        }
-      },
-      {
-        "title": "4. Age Qualification Trap (வயதுத் தகுதிப் பொறி)",
-        "points": {
-          "en": [
-            "TRAP: Confusing Governor's minimum age qualification (35 years) with CM/MLA qualification (25 years).",
-            "FACT: Article 157 sets the minimum age for Governor at 35 YEARS (Same as President and Vice-President)."
-          ],
-          "ta": [
-            "பொறி: ஆளுநரின் குறைந்தபட்ச வயதை (35 வயது) முதலமைச்சர்/எம்எல்ஏ வயதுடன் (25 வயது) குழப்பிக் கொள்ளுதல்.",
-            "உண்மை: உறுப்பு 157-ன் படி ஆளுநருக்குக் குறைந்தபட்ச வயது 35 ஆண்டுகள் ஆகும் (குடியரசுத் தலைவர் & துணைக் குடியரசுத் தலைவர் போன்றே)."
-          ]
-        }
-      },
-      {
-        "title": "5. Dual State Governor Emoluments Trap (இரட்டை மாநில ஆளுநர் ஊதியப் பொறி)",
-        "points": {
-          "en": [
-            "TRAP: Assuming a Governor serving two States receives double salary.",
-            "FACT: Under Article 158(3A), when the same person is Governor of two or more States, the emoluments are shared between the concerned States in such proportion as determined by the PRESIDENT."
-          ],
-          "ta": [
-            "பொறி: இரண்டு மாநிலங்களுக்கு ஆளுநராக இருக்கும் ஒருவருக்கு இரட்டிப்புச் சம்பளம் கிடைக்கும் என நினைப்பது.",
-            "உண்மை: உறுப்பு 158(3A)-ன் படி குடியரசுத் தலைவர் தீர்மானிக்கும் விகிதத்தில் சம்பந்தப்பட்ட மாநிலங்கள் ஊதியத்தைப் பகிர்ந்து அளிக்கும்."
-          ]
-        }
-      }
-    ],
-    "quick_revision": {
-      "en": [
-        "Office & Position: Article 153 (Governor for each state; 1 person for 2+ states allowed under 7th Amend 1956). De Jure executive head.",
-        "Executive Power: Article 154 (Vested in Governor, exercised on aid/advice of CM & Council of Ministers).",
-        "Appointment: Article 155 (Appointed by President by warrant; Canadian model).",
-        "Tenure: Article 156 (5 years subject to President's Pleasure; Resigns to President; Continues until successor assumes office).",
-        "Qualifications: Article 157 (Indian Citizen + 35 Years of Age ONLY).",
-        "Conditions: Article 158 (No MP/MLA, No office of profit, Raj Bhavan, Salary shared by States if serving 2+ states as determined by President).",
-        "Oath: Article 159 (Administered by Chief Justice of State High Court)."
-      ],
-      "ta": [
-        "பதவி & நிலை: உறுப்பு 153 (ஒவ்வொரு மாநிலத்திற்கும் ஆளுநர்; 1956 7-வது திருத்தத்தின் படி 1 நபர் 2+ மாநிலங்களுக்கு ஆளுநராகலாம்). பெயரளவு நிர்வாகத் தலைவர்.",
-        "நிர்வாக அதிகாரம்: உறுப்பு 154 (ஆளுநரிடம் ஒப்படைக்கப்பட்டுள்ளது, முதலமைச்சர் மற்றும் அமைச்சரவை ஆலோசனையின் படி செயல்படுகிறார்).",
-        "நியமனம்: உறுப்பு 155 (குடியரசுத் தலைவரால் சாசனம் மூலம் நியமனம்; கனடா மாதிரி).",
-        "பதவிக்காலம்: உறுப்பு 156 (குடியரசுத் தலைவர் விருப்பத்திற்குட்பட்ட 5 ஆண்டுகள்; குடியரசுத் தலைவரிடம் ராஜினாமா; புதியவர் வரும் வரை தொடர்ச்சி).",
-        "தகுதிகள்: உறுப்பு 157 (இந்தியக் குடிமகன் + 35 வயது மட்டுமே).",
-        "நிபந்தனைகள்: உறுப்பு 158 (எம்பி/எம்எல்ஏ பதவி இல்லை, ஆதாயம் தரும் பதவி இல்லை, ராஜ் பவன், 2+ மாநிலங்களுக்கு குடியரசுத் தலைவர் வகுக்கும் விகிதத்தில் ஊதியப் பங்கீடு).",
-        "பதவிப் பிரமாணம்: உறுப்பு 159 (மாநில உயர் நீதிமன்றத் தலைமை நீதிபதி வழங்குவது)."
-      ]
-    },
-    "must_remember": {
-      "en": [
-        "MUST REMEMBER: Governor is APPOINTED by President (Art 155), NOT elected.",
-        "MUST REMEMBER: Minimum age is 35 YEARS (Art 157).",
-        "MUST REMEMBER: Oath is administered by CHIEF JUSTICE OF HIGH COURT (Art 159).",
-        "MUST REMEMBER: Holds office during PLEASURE OF PRESIDENT (Art 156(1)).",
-        "MUST REMEMBER: 7th Amendment 1956 allows 1 Governor for 2 or more States."
-      ],
-      "ta": [
-        "நினைவில் கொள்க: ஆளுநர் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார் (விதி 155), தேர்ந்தெடுக்கப்படுவதில்லை.",
-        "நினைவில் கொள்க: குறைந்தபட்ச வயது 35 ஆண்டுகள் (விதி 157).",
-        "நினைவில் கொள்க: பதவிப் பிரமாணம் உயர் நீதிமன்றத் தலைமை நீதிபதியால் வழங்கப்படுகிறது (விதி 159).",
-        "நினைவில் கொள்க: குடியரசுத் தலைவரின் விருப்பம் உள்ளவரை பதவியில் நீடிப்பார் (விதி 156(1)).",
-        "நினைவில் கொள்க: 1956 7-வது திருத்தம் ஒரே ஆளுநரை 2 அல்லது அதற்கு மேற்பட்ட மாநிலங்களுக்கு நியமிக்க அனுமதிக்கிறது."
-      ]
-    }
-  }
-}
 
-target_file = "data/notes/polity/governor_part_1.json"
-os.makedirs("data/notes/polity", exist_ok=True)
+def get_easy_mcqs():
+    q = []
 
-with open(target_file, "w", encoding="utf-8") as f:
-  json.dump(part1_data, f, ensure_ascii=False, indent=2)
+    # Q1 to Q10
+    q.append(mk_q(1, "Easy", "Direct",
+        "Which Article of the Constitution of India provides that there shall be a Governor for each State?",
+        "ஒவ்வொரு மாநிலத்திற்கும் ஒரு ஆளுநர் இருக்க வேண்டும் என்று இந்திய அரசியலமைப்பின் எந்தச் சரத்து கூறுகிறது?",
+        {"A": "Article 152", "B": "Article 153", "C": "Article 154", "D": "Article 155"},
+        {"A": "சரத்து 152", "B": "சரத்து 153", "C": "சரத்து 154", "D": "சரத்து 155"},
+        "B",
+        "Article 153 of the Constitution explicitly states that 'There shall be a Governor for each State.'",
+        "அரசியலமைப்புச் சரத்து 153 'ஒவ்வொரு மாநிலத்திற்கும் ஒரு ஆளுநர் இருக்க வேண்டும்' என வெளிப்படையாகக் கூறுகிறது.",
+        "Do not confuse Article 152 (Definition of State) with Article 153 (Office of Governor).",
+        "சரத்து 152-ஐ (மாநிலத்தின் வரையறை) சரத்து 153-டன் (ஆளுநர் பதவி) குழப்பிக் கொள்ள வேண்டாம்.",
+        "Article 153 = Office of Governor.",
+        "சரத்து 153 = ஆளுநர் பதவி.",
+        "Part VI of the Constitution deals with the State Executive from Articles 153 to 167.",
+        "பகுதி VI-ல் சரத்துகள் 153 முதல் 167 வரை மாநில நிர்வாகத்தைப் பற்றிக் கூறுகிறது."))
 
-print(f"✅ Governor Part 1 with revision_cards successfully updated and saved to: {target_file}")
+    q.append(mk_q(2, "Easy", "Direct",
+        "Which Constitutional Amendment Act allowed the appointment of the same person as Governor for two or more States?",
+        "ஒரே நபரை இரண்டு அல்லது அதற்கு மேற்பட்ட மாநிலங்களின் ஆளுநராக நியமிக்க அனுமதித்த அரசியலமைப்புத் திருத்தச் சட்டம் எது?",
+        {"A": "1st Constitutional Amendment Act, 1951", "B": "7th Constitutional Amendment Act, 1956", "C": "42nd Constitutional Amendment Act, 1976", "D": "44th Constitutional Amendment Act, 1978"},
+        {"A": "1வது அரசியலமைப்புத் திருத்தச் சட்டம், 1951", "B": "7வது அரசியலமைப்புத் திருத்தச் சட்டம், 1956", "C": "42வது அரசியலமைப்புத் திருத்தச் சட்டம், 1976", "D": "44வது அரசியலமைப்புத் திருத்தச் சட்டம், 1978"},
+        "B",
+        "The 7th Constitutional Amendment Act of 1956 amended Article 153 to facilitate the appointment of the same person as Governor for two or more States.",
+        "1956-ன் 7வது அரசியலமைப்புத் திருத்தச் சட்டம் சரத்து 153-ஐத் திருத்தி, ஒரே நபரை இரண்டு அல்லது அதற்கு மேற்பட்ட மாநிலங்களின் ஆளுநராக நியமிக்க வழிவகை செய்தது.",
+        "Candidates often mistakenly pick 42nd Amendment for administrative modifications.",
+        "நிர்வாக மாற்றங்களுக்கு 42வது திருத்தம் எனத் தேர்வர்கள் தவறாகத் தேர்ந்தெடுக்கின்றனர்.",
+        "7th CAA 1956 = Reorganisation of States & Common Governor provision.",
+        "7வது திருத்தம் 1956 = மாநிலங்கள் மறுசீரமைப்பு & பொதுவான ஆளுநர் விதிமுறை.",
+        "When same person is appointed for 2 states, salary is shared between states as allocated by President.",
+        "இரண்டு மாநிலங்களுக்குப் பொதுவான ஆளுநராக நியமிக்கப்படும் போது, குடியரசுத் தலைவர் தீர்மானிக்கும் விகிதத்தில் சம்பளம் பிரிக்கப்படுகிறது."))
+
+    q.append(mk_q(3, "Easy", "Direct",
+        "Under Article 154 of the Constitution, in whom is the executive power of the State vested?",
+        "சரத்து 154-ன் படி, மாநிலத்தின் நிர்வாக அதிகாரம் யாரிடம் ஒப்படைக்கப்பட்டுள்ளது?",
+        {"A": "The Chief Minister", "B": "The Governor", "C": "The President of India", "D": "The State Legislative Assembly"},
+        {"A": "முதலமைச்சர்", "B": "ஆளுநர்", "C": "இந்தியக் குடியரசுத் தலைவர்", "D": "மாநில சட்டமன்றப் பேரவை"},
+        "B",
+        "Article 154(1) provides that the executive power of the State shall be vested in the Governor and shall be exercised by him either directly or through officers subordinate to him.",
+        "சரத்து 154(1)-ன் படி மாநிலத்தின் நிர்வாக அதிகாரம் ஆளுநரிடம் ஒப்படைக்கப்பட்டுள்ளது; அது அவரால் நேரடியாகவோ அல்லது கீழ்நிலை அதிகாரிகள் மூலமாகவோ செயல்படுத்தப்படும்.",
+        "The Chief Minister is the REAL executive head, but the Governor is the CONSTITUTIONAL / NOMINAL executive head.",
+        "முதலமைச்சர் உண்மையான நிர்வாகத் தலைவர், ஆனால் ஆளுநர் அரசியலமைப்பு / பெயரளவு நிர்வாகத் தலைவர் ஆவார்.",
+        "Governor is the head of the State Executive.",
+        "ஆளுநர் மாநில நிர்வாகத்தின் தலைவர் ஆவார்.",
+        "All executive decisions of the State government are formally taken in the name of the Governor (Article 166).",
+        "மாநில அரசின் அனைத்து நிர்வாக முடிவுகளும் ஆளுநரின் பெயரிலேயே முறைப்படி எடுக்கப்படுகின்றன (சரத்து 166)."))
+
+    q.append(mk_q(4, "Easy", "Direct",
+        "Under Article 155 of the Constitution, how is the Governor of a State appointed?",
+        "சரத்து 155-ன் படி, ஒரு மாநிலத்தின் ஆளுநர் எவ்வாறு நியமிக்கப்படுகிறார்?",
+        {"A": "Elected directly by the people of the State", "B": "Elected by the State Legislative Assembly", "C": "Appointed by the President by warrant under his hand and seal", "D": "Nominated by the Chief Justice of High Court"},
+        {"A": "மாநில மக்களால் நேரடியாகத் தேர்ந்தெடுக்கப்படுகிறார்", "B": "மாநில சட்டமன்றப் பேரவையால் தேர்ந்தெடுக்கப்படுகிறார்", "C": "குடியரசுத் தலைவரால் அவரது கையொப்பம் மற்றும் முத்திரையுடன் கூடிய ஆணை மூலம் நியமிக்கப்படுகிறார்", "D": "உயர் நீதிமன்றத் தலைமை நீதிபதியால் பரிந்துரைக்கப்படுகிறார்"},
+        "C",
+        "Article 155 states: 'The Governor of a State shall be appointed by the President by warrant under his hand and seal.'",
+        "சரத்து 155 கூறுகிறது: 'ஒரு மாநிலத்தின் ஆளுநர் குடியரசுத் தலைவரால் அவரது கையொப்பம் மற்றும் முத்திரையுடன் கூடிய சாசனத்தின் (Warrant) மூலம் நியமிக்கப்படுவார்.'",
+        "The Governor is NEITHER directly elected by the people NOR indirectly elected by an electoral college.",
+        "ஆளுநர் மக்களால் நேரடியாகவோ அல்லது வாக்காளர் குழுவால் மறைமுகமாகவோ தேர்ந்தெடுக்கப்படுபவர் அல்ல.",
+        "Governor is an nominee of the Central Government appointed by President.",
+        "ஆளுநர் குடியரசுத் தலைவரால் நியமிக்கப்படும் மத்திய அரசின் பரிந்துரைக்கப்பட்டவர் ஆவார்.",
+        "Supreme Court ruled in 1979 that the office of Governor is an independent constitutional office and NOT an employment under the Central Government.",
+        "1979-ல் உச்ச நீதிமன்றம் ஆளுநர் பதவி என்பது சுயாதீன அரசியலமைப்புப் பதவியே தவிர மத்திய அரசின் கீழ் உள்ள வேலைவாய்ப்பு அல்ல எனத் தீர்ப்பளித்தது."))
+
+    q.append(mk_q(5, "Easy", "Direct",
+        "The system of appointment of the Governor by the Centre was adopted from the Constitution of which country?",
+        "மத்திய அரசால் ஆளுநரை நியமிக்கும் முறை எந்த நாட்டின் அரசியலமைப்பிலிருந்து பெறப்பட்டது?",
+        {"A": "United States of America", "B": "Canada", "C": "Australia", "D": "United Kingdom"},
+        {"A": "அமெரிக்க ஐக்கிய நாடுகள்", "B": "கனடா", "C": "ஆஸ்திரேலியா", "D": "இங்கிலாந்து"},
+        "B",
+        "India adopted the Canadian model of Governor appointment (appointed by Union/Centre) rather than the American model (directly elected state Governor).",
+        "அமெரிக்க மாதிரியான (நேரடித் தேர்தல்) ஆளுநர் முறைக்குப் பதிலாக, கனடா மாதிரியான (மத்திய அரசால் நியமனம்) ஆளுநர் முறையை இந்தியா ஏற்றுக்கொண்டது.",
+        "USA has directly elected Governors in each state; Canada has Governors appointed by the Governor-General (Centre).",
+        "அமெரிக்காவில் ஆளுநர்கள் நேரடியாகத் தேர்ந்தெடுக்கப்படுகிறார்கள்; கனடாவில் மத்திய அரசால் நியமிக்கப்படுகிறார்கள்.",
+        "Canadian pattern avoids conflict between Governor and Chief Minister.",
+        "கனடா முறை ஆளுநருக்கும் முதலமைச்சருக்கும் இடையிலான மோதலைத் தவிர்க்கிறது.",
+        "Preserves national unity and Union control.",
+        "தேசிய ஒற்றுமை மற்றும் மத்திய அரசின் கட்டுப்பாட்டைப் பாதுகாக்கிறது."))
+
+    q.append(mk_q(6, "Easy", "Direct",
+        "Under Article 157 of the Constitution, what is the minimum age required for appointment as Governor of a State?",
+        "சரத்து 157-ன் படி, ஒரு மாநில ஆளுநராக நியமிக்கப்படுவதற்கான குறைந்தபட்ச வயது தகுதி என்ன?",
+        {"A": "25 years", "B": "30 years", "C": "35 years", "D": "40 years"},
+        {"A": "25 வயது", "B": "30 வயது", "C": "35 வயது", "D": "40 வயது"},
+        "C",
+        "Article 157 lays down only TWO qualifications: 1. Must be a citizen of India, and 2. Must have completed the age of 35 years.",
+        "சரத்து 157 இரண்டு தகுதிகளை மட்டுமே கூறுகிறது: 1. இந்தியக் குடிமகனாக இருக்க வேண்டும், 2. 35 வயதைப் பூர்த்தி செய்திருக்க வேண்டும்.",
+        "25 years is for MLA/Lok Sabha; 30 years is for MLC/Rajya Sabha; 35 years is for President, Vice-President, and Governor.",
+        "25 வயது MLA/மக்களவைக்கு; 30 வயது MLC/மாநிலங்களவைக்கு; 35 வயது குடியரசுத் தலைவர், குடியரசுத் துணைத் தலைவர் மற்றும் ஆளுநருக்கு.",
+        "Minimum age for Governor = 35 years.",
+        "ஆளுநருக்கான குறைந்தபட்ச வயது = 35 வயது.",
+        "There are only 2 constitutional qualifications for Governor in Article 157.",
+        "சரத்து 157-ல் ஆளுநருக்கு இரண்டே இரண்டு அரசியலமைப்புத் தகுதிகள் மட்டுமே உள்ளன."))
+
+    q.append(mk_q(7, "Easy", "Direct",
+        "Which of the following is NOT one of the constitutional qualifications prescribed in Article 157 for appointment as a Governor?",
+        "ஆளுநராக நியமிக்கப்படுவதற்காக சரத்து 157-ல் குறிப்பிடப்பட்டுள்ள அரசியலமைப்புத் தகுதிகளில் எது தவறானது?",
+        {"A": "Must be a citizen of India", "B": "Must have completed 35 years of age", "C": "Must belong to the same State where he is appointed", "D": "None of the above"},
+        {"A": "இந்தியக் குடிமகனாக இருக்க வேண்டும்", "B": "35 வயதைப் பூர்த்தி செய்திருக்க வேண்டும்", "C": "நியமிக்கப்படும் அதே மாநிலத்தைச் சேர்ந்தவராக இருக்க வேண்டும்", "D": "மேற்கூறிய எதுவும் இல்லை"},
+        "C",
+        "Belonging to an outside state is a CONVENTION (recommended by Sarkaria Commission), NOT a constitutional requirement prescribed under Article 157.",
+        "வெளிமாநிலத்தைச் சேர்ந்தவராக இருப்பது ஒரு மரபே (Sarkaria Commission பரிந்துரை) அன்றி சரத்து 157-ன் கீழ் உள்ள அரசியலமைப்புத் தகுதி அல்ல.",
+        "Do not confuse constitutional qualifications (Art 157) with constitutional conventions or commission recommendations.",
+        "அரசியலமைப்புத் தகுதிகளை (சரத்து 157) அரசியலமைப்பு மரபுகளுடன் குழப்பிக் கொள்ள வேண்டாம்.",
+        "Only 2 formal qualifications exist in Article 157: Citizenship and Age >= 35.",
+        "சரத்து 157-ல் குடியுரிமை மற்றும் 35 வயது ஆகிய இரண்டு தகுதிகள் மட்டுமே உள்ளன.",
+        "Convention: Governor should be an outsider to stay neutral in local politics.",
+        "மரபு: உள்ளூர் அரசியலில் நடுநிலை வகிக்க ஆளுநர் வெளிமாநிலத்தவராக இருக்க வேண்டும்."))
+
+    q.append(mk_q(8, "Easy", "Direct",
+        "Under Article 156(1) of the Constitution, what is the primary basis of the Governor's term of office?",
+        "சரத்து 156(1)-ன் படி, ஆளுநரின் பதவிக்காலத்தின் முதன்மையான அடிப்படை என்ன?",
+        {"A": "Fixed term of 5 years without any power of removal", "B": "Holds office during the pleasure of the President", "C": "Holds office during the pleasure of the State Legislative Assembly", "D": "Holds office until the Chief Minister recommends removal"},
+        {"A": "நீக்க அதிகாரம் இல்லாத 5 ஆண்டுகள் நிலையான பதவிக்காலம்", "B": "குடியரசுத் தலைவரின் விருப்பம் உள்ளவரை (Pleasure of President) பதவியில் இருப்பார்", "C": "மாநில சட்டமன்றப் பேரவையின் விருப்பம் உள்ளவரை பதவியில் இருப்பார்", "D": "முதலமைச்சர் நீக்கப் பரிந்துரைக்கும் வரை பதவியில் இருப்பார்"},
+        "B",
+        "Article 156(1) states: 'The Governor shall hold office during the pleasure of the President.'",
+        "சரத்து 156(1) கூறுகிறது: 'ஆளுநர் குடியரசுத் தலைவரின் விருப்பம் உள்ளவரை (Pleasure of the President) பதவியில் இருப்பார்.'",
+        "Subject to the pleasure of President, Article 156(3) specifies a normal term of 5 years.",
+        "குடியரசுத் தலைவரின் விருப்பத்திற்கு உட்பட்டு, சரத்து 156(3) சாதாரண பதவிக்காலமாக 5 ஆண்டுகளைக் குறிப்பிடுகிறது.",
+        "The President can remove the Governor at any time before 5 years.",
+        "குடியரசுத் தலைவர் 5 ஆண்டுகளுக்கு முன்பே எந்த நேரத்திலும் ஆளுநரை நீக்கலாம்.",
+        "Governor has no security of tenure in the Constitution.",
+        "அரசியலமைப்பில் ஆளுநருக்குப் பதவி பாதுகாப்பு கிடையாது."))
+
+    q.append(mk_q(9, "Easy", "Direct",
+        "Under Article 156(2) of the Constitution, to whom must a Governor submit his resignation letter in writing?",
+        "சரத்து 156(2)-ன் படி, ஆளுநர் தனது ராஜினாமா கடிதத்தை யாருக்கு முகவரியிட்டு எழுத வேண்டும்?",
+        {"A": "The Chief Minister of the State", "B": "The Speaker of the State Legislative Assembly", "C": "The President of India", "D": "The Chief Justice of the High Court"},
+        {"A": "மாநில முதலமைச்சர்", "B": "மாநில சட்டமன்ற சபாநாயகர்", "C": "இந்தியக் குடியரசுத் தலைவர்", "D": "உயர் நீதிமன்றத் தலைமை நீதிபதி"},
+        "C",
+        "Article 156(2) provides that the Governor may, by writing under his hand addressed to the PRESIDENT, resign his office.",
+        "சரத்து 156(2)-ன் படி, ஆளுநர் குடியரசுத் தலைவருக்குத் தன் கையொப்பமிட்ட கடிதம் மூலம் ராஜினாமா செய்ய வேண்டும்.",
+        "Candidates assume Governor resigns to Chief Minister or High Court Chief Justice. Since President appoints him, resignation goes to President.",
+        "ஆளுநர் முதலமைச்சரிடமோ அல்லது தலைமை நீதிபதியிடமோ ராஜினாமா செய்வார் எனத் தேர்வர்கள் தவறாக நினைக்கின்றனர். நியமிக்கும் அதிகாரியான குடியரசுத் தலைவரிடமே ராஜினாமா அளிக்கப்பட வேண்டும்.",
+        "Resignation takes effect immediately upon receipt.",
+        "ராஜினாமா கடிதம் பெறப்பட்டவுடன் உடனடியாக அமலுக்கு வரும்.",
+        "Applies to all state Governors.",
+        "அனைத்து மாநில ஆளுநர்களுக்கும் இது பொருந்தும்."))
+
+    q.append(mk_q(10, "Easy", "Direct",
+        "Under Article 159 of the Constitution, who administers the Oath of Office to the newly appointed Governor of a State?",
+        "சரத்து 159-ன் படி, புதிதாக நியமிக்கப்பட்ட மாநில ஆளுநருக்குப் பதவியேற்பு உறுதிமொழியை பிரமாணம் செய்து வைப்பவர் யார்?",
+        {"A": "The President of India", "B": "The Chief Justice of the High Court exercising jurisdiction in relation to the State", "C": "The Chief Minister of the State", "D": "The Speaker of the State Legislative Assembly"},
+        {"A": "இந்தியக் குடியரசுத் தலைவர்", "B": "அம்மாநிலத்தின் உயர் நீதிமன்றத் தலைமை நீதிபதி", "C": "மாநில முதலமைச்சர்", "D": "மாநில சட்டமன்ற சபாநாயகர்"},
+        "B",
+        "Article 159 specifies that the Governor must make and subscribe an oath in the presence of the Chief Justice of the High Court exercising jurisdiction in relation to the State (or in his absence, the senior-most Judge of that Court available).",
+        "சரத்து 159-ன் படி, ஆளுநர் அம்மாநிலத்தின் உயர் நீதிமன்றத் தலைமை நீதிபதி (அல்லது அவர் இல்லாத போது அம்மன்றத்தின் மூத்த நீதிபதி) முன்னிலையில் பதவியேற்பு உறுதிமொழி எடுத்துக்கொள்ள வேண்டும்.",
+        "President appoints the Governor, BUT the High Court Chief Justice administers the Oath!",
+        "குடியரசுத் தலைவர் ஆளுநரை நியமிக்கிறார், ஆனால் உயர் நீதிமன்றத் தலைமை நீதிபதி பதவியேற்பு உறுதிமொழி செய்து வைக்கிறார்!",
+        "If HC Chief Justice is absent, senior-most judge of HC administers oath.",
+        "உயர் நீதிமன்ற தலைமை நீதிபதி இல்லையென்றால், மூத்த நீதிபதி உறுதிமொழி செய்து வைப்பார்.",
+        "Form of oath includes preserving, protecting and defending the Constitution and law.",
+        "உறுதிமொழியில் அரசியலமைப்பு மற்றும் சட்டத்தைப் பேணிப் பாதுகாப்பேன் என உரைக்கப்படும்."))
+
+    # Q11
+    q.append(mk_q(11, "Easy", "Direct",
+        "Under Article 158(1) of the Constitution, what condition is imposed regarding the Governor's membership in Parliament or State Legislature?",
+        "சரத்து 158(1)-ன் படி, நாடாளுமன்றம் அல்லது மாநில சட்டமன்ற உறுப்பினராக ஆளுநர் இருப்பது குறித்து என்ன நிபந்தனை விதிக்கப்பட்டுள்ளது?",
+        {"A": "He can remain a member of Parliament while serving as Governor", "B": "He shall not be a member of either House of Parliament or of a House of the Legislature of any State", "C": "He must be an elected MLA before taking oath as Governor", "D": "He can be a member of Rajya Sabha only"},
+        {"A": "ஆளுநராகப் பணியாற்றும்போது அவர் நாடாளுமன்ற உறுப்பினராகத் தொடரலாம்", "B": "அவர் நாடாளுமன்றத்தின் எந்த அவையிலும் அல்லது எந்த மாநில சட்டமன்றத்திலும் உறுப்பினராக இருக்கக்கூடாது", "C": "ஆளுநராகப் பதவியேற்கும் முன் அவர் தேர்ந்தெடுக்கப்பட்ட MLA-வாக இருக்க வேண்டும்", "D": "அவர் மாநிலங்களவை உறுப்பினராக மட்டுமே இருக்க முடியும்"},
+        "B",
+        "Article 158(1) lays down that the Governor shall not be a member of either House of Parliament or of a House of the Legislature of any State, and if a member is appointed Governor, he shall be deemed to have vacated his seat in that House on the date he enters upon his office.",
+        "சரத்து 158(1)-ன் படி, ஆளுநர் நாடாளுமன்றத்தின் எந்த அவையிலும் அல்லது மாநில சட்டமன்றத்திலும் உறுப்பினராக இருக்கக்கூடாது; ஒருவேளை உறுப்பினராக இருப்பவர் ஆளுநராக நியமிக்கப்பட்டால், அவர் பதவியேற்கும் நாளில் அப் பதவியிலிருந்து விலகியதாகக் கருதப்படுவார்.",
+        "Vacation of legislative seat is AUTOMATIC upon entering office as Governor.",
+        "ஆளுநராகப் பதவியேற்கும் நாளில் சட்டமன்ற/நாடாளுமன்ற இடம் தானாகவே காலியாகிவிடும்.",
+        "Condition under Article 158 prevents dual office holding.",
+        "சரத்து 158-ன் நிபந்தனை இரட்டைப் பதவி வகிப்பதைத் தடுக்கிறது.",
+        "Ensures impartiality of the Governor.",
+        "ஆளுநரின் நடுநிலைமையை உறுதி செய்கிறது."))
+
+    # Q12
+    q.append(mk_q(12, "Easy", "Direct",
+        "Under Article 158(2) of the Constitution, what restriction is placed on the Governor regarding holding other offices?",
+        "சரத்து 158(2)-ன் படி, பிற பதவிகளை வகிப்பது குறித்து ஆளுநருக்கு விதிக்கப்பட்டுள்ள தடை என்ன?",
+        {"A": "He can hold any commercial office with President's permission", "B": "He shall not hold any other office of profit", "C": "He can be the Director of a private company", "D": "He can hold any honorary office in a political party"},
+        {"A": "குடியரசுத் தலைவரின் அனுமதியுடன் அவர் எந்தவொரு வணிகப் பதவியையும் வகிக்கலாம்", "B": "அவர் ஆதாயம் தரும் வேறு எந்தப் பதவியையும் (Office of Profit) வகிக்கக்கூடாது", "C": "அவர் ஒரு தனியார் நிறுவனத்தின் இயக்குநராக இருக்கலாம்", "D": "அவர் ஓர் அரசியல் கட்சியில் கௌரவப் பதவியை வகிக்கலாம்"},
+        "B",
+        "Article 158(2) explicitly mandates that 'The Governor shall not hold any other office of profit.'",
+        "சரத்து 158(2) வெளிப்படையாகக் கட்டளையிடுகிறது: 'ஆளுநர் ஆதாயம் தரும் வேறு எந்தப் பதவியையும் (Office of Profit) வகிக்கக்கூடாது.'",
+        "Office of profit includes positions under Union or State governments, local authorities, or public corporations yielding financial gain.",
+        "ஆதாயம் தரும் பதவி என்பதில் நிதி ஆதாயம் அளிக்கும் மத்திய-மாநில அரசு அல்லது உள்ளாட்சி அமைப்புகளின் பதவிகள் அடங்கும்.",
+        "Applies throughout the Governor's term.",
+        "ஆளுநரின் பதவிக்காலம் முழுமைக்கும் இத்தடை பொருந்தும்.",
+        "Ensures non-conflict of interest.",
+        "நலன்களின் முரண்பாட்டைத் தவிர்க்க உதவுகிறது."))
+
+    # Q13
+    q.append(mk_q(13, "Easy", "Direct",
+        "Under Article 158(3) of the Constitution, to what official housing facility is the Governor entitled without payment of rent?",
+        "சரத்து 158(3)-ன் படி, வாடகை ஏதுமின்றி ஆளுநருக்கு வழங்கப்படும் அதிகாரப்பூர்வ இருப்பிட வசதி எது?",
+        {"A": "Private rented bungalow paid by Union Government", "B": "Rent-free use of his official residences (Raj Bhavan)", "C": "Government guest house on daily rental basis", "D": "No housing entitlement is provided in the Constitution"},
+        {"A": "மத்திய அரசால் செலுத்தப்படும் தனியார் வாடகை பங்களா", "B": "வாடகையில்லா அவரது அதிகாரப்பூர்வ இல்லங்களின் (ராஜ் பவன்) பயன்பாடு", "C": "நாளிதழ் வாடகை அடிப்படையில் அரசு விருந்தினர் இல்லம்", "D": "அரசியலமைப்பில் எந்த இருப்பிட உரிமையும் வழங்கப்படவில்லை"},
+        "B",
+        "Article 158(3) states that the Governor shall be entitled without payment of rent to the use of his official residences.",
+        "சரத்து 158(3)-ன் படி, ஆளுநர் வாடகை ஏதுமின்றி தனது அதிகாரப்பூர்வ இல்லங்களைப் (ராஜ் பவன்) பயன்படுத்த உரிமையுடையவர் ஆவார்.",
+        "The official residence of the Governor in states is known as Raj Bhavan.",
+        "மாநிலங்களில் ஆளுநரின் அதிகாரப்பூர்வ இல்லம் 'ராஜ் பவன்' (Raj Bhavan) என அழைக்கப்படுகிறது.",
+        "Rent-free residence is a constitutional entitlement.",
+        "வாடகையில்லா இருப்பிடம் என்பது அரசியலமைப்பு உரிமையாகும்.",
+        "Covered under Article 158(3) conditions of office.",
+        "சரத்து 158(3) பதவி நிபந்தனைகளின் கீழ் இது வருகிறது."))
+
+    # Q14
+    q.append(mk_q(14, "Easy", "Direct",
+        "Who determines the emoluments, allowances, and privileges of the Governor of a State under Article 158(3)?",
+        "சரத்து 158(3)-ன் படி, மாநில ஆளுநரின் ஊதியம், படிகள் மற்றும் சலுகைகளைத் தீர்மானிப்பவர் யார்?",
+        {"A": "The State Legislative Assembly by law", "B": "The Chief Minister of the State", "C": "The Parliament by law", "D": "The State Finance Commission"},
+        {"A": "சட்டம் இயற்றுவதன் மூலம் மாநில சட்டமன்றப் பேரவை", "B": "மாநில முதலமைச்சர்", "C": "சட்டம் இயற்றுவதன் மூலம் நாடாளுமன்றம்", "D": "மாநில நிதி ஆணையம்"},
+        "C",
+        "Article 158(3) provides that the Governor shall be entitled to such emoluments, allowances and privileges as may be determined by PARLIAMENT by law.",
+        "சரத்து 158(3)-ன் படி, நாடாளுமன்றம் சட்டத்தின் மூலம் தீர்மானிக்கும் ஊதியம், படிகள் மற்றும் சலுகைகளைப் பெற ஆளுநர் உரிமையுடையவர் ஆவார்.",
+        "State Legislature does NOT determine Governor's salary; PARLIAMENT determines it!",
+        "மாநில சட்டமன்றம் ஆளுநர் சம்பளத்தைத் தீர்மானிப்பது இல்லை; நாடாளுமன்றமே தீர்மானிக்கிறது!",
+        "Governor's salary is charged on the Consolidated Fund of the STATE (Art 202(3)(a)).",
+        "ஆளுநரின் சம்பளம் அம்மாநிலத்தின் தொகுப்பு நிதியில் (Consolidated Fund of State) பொறுப்பளிக்கப்பட்டுள்ளது (Charged).",
+        "Determined by Parliament, but charged on State Consolidated Fund.",
+        "நாடாளுமன்றத்தால் தீர்மானிக்கப்படுகிறது, ஆனால் மாநில தொகுப்பு நிதியிலிருந்து வழங்கப்படுகிறது."))
+
+    # Q15
+    q.append(mk_q(15, "Easy", "Direct",
+        "Under Article 158(4) of the Constitution, what protection is given to the emoluments and allowances of the Governor during his term of office?",
+        "சரத்து 158(4)-ன் படி, ஆளுநரின் பதவிக் காலத்தில் அவரது ஊதியம் மற்றும் படிகளுக்கு வழங்கப்பட்டுள்ள பாதுகாப்பு என்ன?",
+        {"A": "They can be reduced by the State Cabinet at any time", "B": "They shall not be diminished during his term of office", "C": "They can be halved during a State Emergency", "D": "They are subject to annual vote in the State Assembly"},
+        {"A": "மாநில அமைச்சரவையால் எந்த நேரத்திலும் அவற்றைக் குறைக்கலாம்", "B": "அவரது பதவிக் காலத்தில் அவை குறைக்கப்படக் கூடாது", "C": "மாநில அவசரநிலையின் போது அவற்றைப் பாதியாகக் குறைக்கலாம்", "D": "மாநில சட்டமன்றத்தில் ஆண்டுதோறும் வாக்கெடுப்பிற்கு உட்பட்டது"},
+        "B",
+        "Article 158(4) explicitly guarantees that 'The emoluments and allowances of the Governor shall not be diminished during his term of office.'",
+        "சரத்து 158(4) வெளிப்படையாக உத்தரவாதம் அளிக்கிறது: 'ஆளுநரின் ஊதியம் மற்றும் படிகள் அவரது பதவிக் காலத்தில் குறைக்கப்படக் கூடாது.'",
+        "Financial protection ensures independence of Governor from executive or legislative coercion.",
+        "நிதிப் பாதுகாப்பு ஆளுநரின் சுதந்திரத்தை நிர்வாக அல்லது சட்டமன்ற அழுத்தங்களிலிருந்து பாதுகாக்கிறது.",
+        "Non-diminution rule applies throughout the 5-year tenure.",
+        "5 ஆண்டுகள் பதவிக்காலம் முழுமைக்கும் இக் குறைப்பில்லா விதி பொருந்தும்.",
+        "Charged expenditure under State Consolidated Fund.",
+        "மாநில தொகுப்பு நிதியின் பொறுப்பளிக்கப்பட்ட செலவினம் ஆகும்."))
+
+    # Q16
+    q.append(mk_q(16, "Easy", "Direct",
+        "Under Article 160 of the Constitution, who is authorized to make provision for the discharge of the functions of the Governor in any contingency not provided for in Part VI?",
+        "சரத்து 160-ன் படி, பகுதி VI-ல் குறிப்பிடப்படாத எதிர்பாராத சூழ்நிலைகளில் ஆளுநரின் பணிகளை ஆற்றுவதற்கு ஏற்பாடு செய்ய யாருக்கு அதிகாரம் உண்டு?",
+        {"A": "The Chief Minister of the State", "B": "The President of India", "C": "The Speaker of Legislative Assembly", "D": "The Chief Justice of High Court"},
+        {"A": "மாநில முதலமைச்சர்", "B": "இந்தியக் குடியரசுத் தலைவர்", "C": "சட்டமன்ற சபாநாயகர்", "D": "உயர் நீதிமன்றத் தலைமை நீதிபதி"},
+        "B",
+        "Article 160 states that the President may make such provision as he thinks fit for the discharge of the functions of the Governor of a State in any contingency not provided for in Part VI.",
+        "சரத்து 160-ன் படி, பகுதி VI-ல் குறிப்பிடப்படாத எந்தவொரு எதிர்பாராத சூழ்நிலையிலும் ஆளுநரின் பணிகளை ஆற்றுவதற்கு குடியரசுத் தலைவர் தகுந்த ஏற்பாடுகளைச் செய்யலாம்.",
+        "For example, if Governor dies suddenly, President appoints High Court Chief Justice to discharge Governor functions.",
+        "எடுத்துக்காட்டாக ஆளுநர் திடீரென இறந்தால், உயர் நீதிமன்றத் தலைமை நீதிபதியை ஆளுநர் பணிகளை ஆற்றக் குடியரசுத் தலைவர் நியமிப்பார்.",
+        "Article 160 covers constitutional contingencies.",
+        "சரத்து 160 அரசியலமைப்பு எதிர்பாராத நிகழ்வுகளை உள்ளடக்கக்கூடியது.",
+        "President holds ultimate authority in such contingencies.",
+        "இத்தகைய அவசர நிகழ்வுகளில் குடியரசுத் தலைவருக்கே இறுதி அதிகாரம் உண்டு."))
+
+    # Q17
+    b1 = []
+    for i in range(17, 51):
+        pass
+
+    # Generating Q17 to Q50
+    q.append(mk_q(17, "Easy", "Direct",
+        "Under Article 164(1) of the Constitution, who appoints the Chief Minister of a State?",
+        "சரத்து 164(1)-ன் படி, மாநில முதலமைச்சரை நியமிப்பவர் யார்?",
+        {"A": "The President of India", "B": "The Governor of the State", "C": "The Speaker of the State Legislative Assembly", "D": "The Chief Justice of the High Court"},
+        {"A": "இந்தியக் குடியரசுத் தலைவர்", "B": "மாநில ஆளுநர்", "C": "மாநில சட்டமன்ற சபாநாயகர்", "D": "உயர் நீதிமன்றத் தலைமை நீதிபதி"},
+        "B",
+        "Article 164(1) provides that 'The Chief Minister shall be appointed by the Governor and the other Ministers shall be appointed by the Governor on the advice of the Chief Minister.'",
+        "சரத்து 164(1)-ன் படி 'முதலமைச்சர் ஆளுநரால் நியமிக்கப்படுவார்; மற்றும் இதர அமைச்சர்கள் முதலமைச்சரின் ஆலோசனையின் பேரில் ஆளுநரால் நியமிக்கப்படுவார்கள்.'",
+        "Governor appoints Chief Minister, but he must appoint the leader of the majority party in Legislative Assembly.",
+        "ஆளுநர் முதலமைச்சரை நியமிக்கிறார், ஆனால் அவர் சட்டமன்றப் பேரவையில் பெரும்பான்மை கட்சியின் தலைவரையே நியமிக்க வேண்டும்.",
+        "Article 164(1) = Appointment of CM & Ministers.",
+        "சரத்து 164(1) = முதலமைச்சர் மற்றும் அமைச்சர்கள் நியமனம்.",
+        "Other ministers are appointed ONLY on advice of Chief Minister.",
+        "இதர அமைச்சர்கள் முதலமைச்சரின் ஆலோசனையின் பேரில் மட்டுமே நியமிக்கப்படுகிறார்கள்."))
+
+    q.append(mk_q(18, "Easy", "Direct",
+        "Under Article 165 of the Constitution, who appoints the Advocate General for the State?",
+        "சரத்து 165-ன் படி, மாநிலத்தின் தலைமை வழக்கறிஞரை (Advocate General) நியமிப்பவர் யார்?",
+        {"A": "The Chief Justice of High Court", "B": "The Governor of the State", "C": "The Law Minister of the State", "D": "The President of India"},
+        {"A": "உயர் நீதிமன்றத் தலைமை நீதிபதி", "B": "மாநில ஆளுநர்", "C": "மாநில சட்ட அமைச்சர்", "D": "இந்தியக் குடியரசுத் தலைவர்"},
+        "B",
+        "Article 165(1) states that the Governor of each State shall appoint a person who is qualified to be appointed a Judge of a High Court to be Advocate General for the State.",
+        "சரத்து 165(1)-ன் படி, உயர் நீதிமன்ற நீதிபதியாக நியமிக்கப்படத் தகுதியுள்ள ஒருவரை மாநில ஆளுநர் மாநிலத்தின் தலைமை வழக்கறிஞராக (Advocate General) நியமிப்பார்.",
+        "Attorney General of India is appointed by President (Art 76); Advocate General of State is appointed by Governor (Art 165).",
+        "இந்தியத் தலைமை வழக்கறிஞர் (Attorney General) குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார் (சரத்து 76); மாநிலத் தலைமை வழக்கறிஞர் (Advocate General) ஆளுநரால் நியமிக்கப்படுகிறார் (சரத்து 165).",
+        "Must be qualified to be a High Court judge.",
+        "உயர் நீதிமன்ற நீதிபதியாகும் தகுதி பெற்றிருக்க வேண்டும்.",
+        "Highest law officer in the State.",
+        "மாநிலத்தின் உயரிய சட்ட அதிகாரி ஆவார்."))
+
+    q.append(mk_q(19, "Easy", "Direct",
+        "Under Article 165(3) of the Constitution, what is the term of office of the Advocate General for the State?",
+        "சரத்து 165(3)-ன் படி, மாநிலத் தலைமை வழக்கறிஞரின் (Advocate General) பதவிக்காலம் என்ன?",
+        {"A": "Fixed term of 5 years", "B": "Holds office during the pleasure of the Governor", "C": "Fixed term of 6 years or age of 62", "D": "Co-terminus with State Legislative Assembly"},
+        {"A": "5 ஆண்டுகள் நிலையான பதவிக்காலம்", "B": "ஆளுநரின் விருப்பம் உள்ளவரை (Pleasure of Governor) பதவியில் இருப்பார்", "C": "6 ஆண்டுகள் அல்லது 62 வயது வரை", "D": "மாநில சட்டமன்றப் பேரவையின் பதவிக்காலம் வரை"},
+        "B",
+        "Article 165(3) states that the Advocate General shall hold office during the pleasure of the Governor, and shall receive such remuneration as the Governor may determine.",
+        "சரத்து 165(3)-ன் படி, மாநிலத் தலைமை வழக்கறிஞர் ஆளுநரின் விருப்பம் உள்ளவரை பதவியில் இருப்பார், மேலும் ஆளுநர் தீர்மானிக்கும் ஊதியத்தைப் பெறுவார்.",
+        "Advocate General has NO fixed constitutional term or security of tenure.",
+        "மாநிலத் தலைமை வழக்கறிஞருக்கு நிலையான அரசியலமைப்புப் பதவிக்காலமோ பதவி பாதுகாப்போ கிடையாது.",
+        "Resigns when the Ministry/Cabinet resigns as per convention.",
+        "அமைச்சரவை ராஜினாமா செய்யும்போது வழக்கமாக இவரும் ராஜினாமா செய்வார்.",
+        "Remuneration determined by Governor.",
+        "ஊதியம் ஆளுநரால் தீர்மானிக்கப்படுகிறது."))
+
+    q.append(mk_q(20, "Easy", "Direct",
+        "Under Article 316 of the Constitution, who appoints the Chairman and members of a State Public Service Commission (SPSC)?",
+        "சரத்து 316-ன் படி, மாநில பொதுப்பணியாளர் தேர்வாணையத்தின் (SPSC) தலைவர் மற்றும் உறுப்பினர்களை நியமிப்பவர் யார்?",
+        {"A": "The President of India", "B": "The Governor of the State", "C": "The Chief Minister of the State", "D": "The Chairman of UPSC"},
+        {"A": "இந்தியக் குடியரசுத் தலைவர்", "B": "மாநில ஆளுநர்", "C": "மாநில முதலமைச்சர்", "D": "UPSC தலைவர்"},
+        "B",
+        "Article 316(1) provides that the Chairman and other members of a State Public Service Commission shall be appointed by the Governor of the State.",
+        "சரத்து 316(1)-ன் படி, மாநில பொதுப்பணியாளர் தேர்வாணையத்தின் தலைவர் மற்றும் உறுப்பினர்கள் மாநில ஆளுநரால் நியமிக்கப்படுவார்கள்.",
+        "Governor APPOINTS SPSC members, BUT ONLY President can REMOVE them under Article 317!",
+        "ஆளுநர் SPSC உறுப்பினர்களை நியமிக்கிறார், ஆனால் சரத்து 317-ன் கீழ் குடியரசுத் தலைவர் மட்டுமே அவர்களை நீக்க முடியும்!",
+        "SPSC appointment = Governor.",
+        "SPSC நியமனம் = ஆளுநர்.",
+        "SPSC removal = President (after SC inquiry).",
+        "SPSC நீக்கம் = குடியரசுத் தலைவர் (உச்ச நீதிமன்ற விசாரணைக்குப் பின்)."))
+
+    q.append(mk_q(21, "Easy", "Direct",
+        "Who can REMOVE the Chairman or members of a State Public Service Commission (SPSC) under Article 317?",
+        "சரத்து 317-ன் படி, மாநில பொதுப்பணியாளர் தேர்வாணையத்தின் (SPSC) தலைவர் அல்லது உறுப்பினர்களை நீக்கும் அதிகாரம் யாருக்கு உண்டு?",
+        {"A": "The Governor of the State", "B": "The President of India only", "C": "The State Legislative Assembly by 2/3rd majority", "D": "The High Court Chief Justice"},
+        {"A": "மாநில ஆளுநர்", "B": "இந்தியக் குடியரசுத் தலைவர் மட்டுமே", "C": "2/3 பங்கு பெரும்பான்மையால் மாநில சட்டமன்றப் பேரவை", "D": "உயர் நீதிமன்றத் தலைமை நீதிபதி"},
+        "B",
+        "Under Article 317, the Chairman or members of SPSC can be removed ONLY by the President of India on the ground of misbehaviour, after an inquiry by the Supreme Court.",
+        "சரத்து 317-ன் படி, SPSC தலைவர் அல்லது உறுப்பினர்களை உச்ச நீதிமன்ற விசாரணைக்குப் பிறகு தவறான நடத்தை காரணத்திற்காக இந்தியக் குடியரசுத் தலைவர் மட்டுமே நீக்க முடியும்.",
+        "Classic TNPSC trap: Governor appoints SPSC members, but Governor CANNOT remove them. Only President can remove them!",
+        "முக்கிய TNPSC பொறி: ஆளுநர் SPSC உறுப்பினர்களை நியமிக்கிறார், ஆனால் அவர்களை ஆளுநர் நீக்க முடியாது. குடியரசுத் தலைவர் மட்டுமே நீக்க முடியும்!",
+        "Inquiry conducted by Supreme Court.",
+        "விசாரணை உச்ச நீதிமன்றத்தால் நடத்தப்படுகிறது.",
+        "Governor can only suspend them pending SC inquiry report.",
+        "உச்ச நீதிமன்ற விசாரணை அறிக்கை வரும் வரை ஆளுநர் அவர்களை இடைநீக்கம் மட்டுமே செய்ய முடியும்."))
+
+    q.append(mk_q(22, "Easy", "Direct",
+        "Under Article 243K of the Constitution, who appoints the State Election Commissioner?",
+        "சரத்து 243K-ன் படி, மாநிலத் தேர்தல் ஆணையரை நியமிப்பவர் யார்?",
+        {"A": "The Chief Election Commissioner of India", "B": "The Governor of the State", "C": "The Chief Minister of the State", "D": "The High Court Chief Justice"},
+        {"A": "இந்தியத் தலைமைத் தேர்தல் ஆணையர்", "B": "மாநில ஆளுநர்", "C": "மாநில முதலமைச்சர்", "D": "உயர் நீதிமன்றத் தலைமை நீதிபதி"},
+        "B",
+        "Article 243K(1) states that the State Election Commissioner shall be appointed by the Governor of the State.",
+        "சரத்து 243K(1)-ன் படி, மாநிலத் தேர்தல் ஆணையர் மாநில ஆளுநரால் நியமிக்கப்படுவார்.",
+        "Governor appoints SEC, BUT SEC can be removed ONLY in like manner and on like grounds as a Judge of a High Court (by President/Parliament).",
+        "ஆளுநர் மாநிலத் தேர்தல் ஆணையரை நியமிக்கிறார், ஆனால் உயர் நீதிமன்ற நீதிபதியை நீக்கும் அதே முறையில் மட்டுமே அவரை நீக்க முடியும்!",
+        "SEC conducts elections to Panchayats and Municipalities.",
+        "மாநிலத் தேர்தல் ஆணையர் பஞ்சாயத்துகள் மற்றும் நகராட்சிகளுக்கான தேர்தல்களை நடத்துகிறார்.",
+        "Conditions of service determined by Governor.",
+        "பணி நிபந்தனைகள் ஆளுநரால் தீர்மானிக்கப்படுகின்றன."))
+
+    q.append(mk_q(23, "Easy", "Direct",
+        "Under Article 166(1) of the Constitution, in whose name are all executive actions of the Government of a State expressed to be taken?",
+        "சரத்து 166(1)-ன் படி, ஒரு மாநில அரசின் அனைத்து நிர்வாக நடவடிக்கைகளும் யாருடைய பெயரால் எடுக்கப்படுவதாகக் குறிப்பிடப்பட வேண்டும்?",
+        {"A": "The Chief Minister", "B": "The Governor", "C": "The Council of Ministers", "D": "The President of India"},
+        {"A": "முதலமைச்சர்", "B": "ஆளுநர்", "C": "அமைச்சரவை", "D": "இந்தியக் குடியரசுத் தலைவர்"},
+        "B",
+        "Article 166(1) explicitly mandates: 'All executive action of the Government of a State shall be expressed to be taken in the name of the Governor.'",
+        "சரத்து 166(1) வெளிப்படையாகக் கட்டளையிடுகிறது: 'ஒரு மாநில அரசின் அனைத்து நிர்வாக நடவடிக்கைகளும் ஆளுநரின் பெயரால் எடுக்கப்படுவதாகக் குறிப்பிடப்பட வேண்டும்.'",
+        "Article 166(2) provides that orders made in the name of Governor shall be authenticated in such manner as specified in rules made by Governor.",
+        "ஆளுநரின் பெயரால் பிறப்பிக்கப்படும் உத்தரவுகள் ஆளுநர் உருவாக்கும் விதிகளின் படி முறைப்படுத்தப்பட வேண்டும் என சரத்து 166(2) கூறுகிறது.",
+        "Governor makes rules for convenient transaction of business of State government (Art 166(3)).",
+        "மாநில அரசுப் பணிகளை எளிதாக நடத்த ஆளுநர் விதிகளை உருவாக்குகிறார் (சரத்து 166(3)).",
+        "Constitutional formality for all state executive orders.",
+        "அனைத்து மாநில நிர்வாக உத்தரவுகளுக்குமான அரசியலமைப்பு நடைமுறை."))
+
+    q.append(mk_q(24, "Easy", "Direct",
+        "Under Article 168 of the Constitution, the State Legislature consists of the Governor and which of the following?",
+        "சரத்து 168-ன் படி, மாநில சட்டமன்றம் என்பது ஆளுநர் மற்றும் பின்வருவனவற்றில் எதனைக் கொண்டது?",
+        {"A": "Legislative Assembly (and Legislative Council where it exists)", "B": "Chief Minister and Cabinet only", "C": "High Court Judges and Advocate General", "D": "State Planning Commission"},
+        {"A": "சட்டமன்றப் பேரவை (மற்றும் மேலவை உள்ள இடங்களில் சட்டமன்ற மேலவை)", "B": "முதலமைச்சர் மற்றும் அமைச்சரவை மட்டுமே", "C": "உயர் நீதிமன்ற நீதிபதிகள் மற்றும் தலைமை வழக்கறிஞர்கள்", "D": "மாநில திட்டக் குழு"},
+        "A",
+        "Article 168(1) provides that for every State there shall be a Legislature which shall consist of the Governor and the House(s) of the Legislature (Assembly / Council).",
+        "சரத்து 168(1)-ன் படி, ஒவ்வொரு மாநிலத்திற்கும் ஆளுநர் மற்றும் சட்டமன்ற அவைகளைச் (பேரவை / மேலவை) கொண்ட ஒரு சட்டமன்றம் இருக்கும்.",
+        "Governor is an INTEGRAL PART of the State Legislature, just as the President is an integral part of Parliament (Art 79).",
+        "குடியரசுத் தலைவர் நாடாளுமன்றத்தின் ஒருங்கிணைந்த பகுதியாக இருப்பது போல, ஆளுநர் மாநில சட்டமன்றத்தின் ஒருங்கிணைந்த பகுதி ஆவார்.",
+        "Governor is not a member of either House, but part of Legislature.",
+        "ஆளுநர் எந்த அவையிலும் உறுப்பினரல்ல, ஆனால் சட்டமன்றத்தின் பகுதி ஆவார்.",
+        "No bill can become law without Governor's assent.",
+        "ஆளுநரின் ஒப்புதலின்றி எந்த மசோதாவும் சட்டமாக முடியாது."))
+
+    q.append(mk_q(25, "Easy", "Direct",
+        "Under Article 174(1) of the Constitution, what is the maximum permissible gap between the last sitting of one session and the date appointed for the first sitting of the next session of the State Legislature?",
+        "சரத்து 174(1)-ன் படி, மாநில சட்டமன்றத்தின் ஒரு கூட்டத்தொடரின் கடைசி அமர்விற்கும் அடுத்த கூட்டத்தொடரின் முதல் அமர்விற்கும் இடையே அனுமதிக்கப்படக்கூடிய அதிகபட்ச இடைவெளி என்ன?",
+        {"A": "3 months", "B": "6 months", "C": "9 months", "D": "12 months"},
+        {"A": "3 மாதங்கள்", "B": "6 மாதங்கள்", "C": "9 மாதங்கள்", "D": "12 மாதங்கள்"},
+        "B",
+        "Article 174(1) provides that six months shall not intervene between the last sitting in one session and the date appointed for its first sitting in the next session.",
+        "சரத்து 174(1)-ன் படி, ஒரு கூட்டத்தொடரின் கடைசி அமர்விற்கும் அடுத்த கூட்டத்தொடரின் முதல் அமர்விற்கும் இடையே 6 மாதங்களுக்கு மேல் இடைவெளி இருக்கக் கூடாது.",
+        "Therefore, the State Legislature must meet at least TWICE a year.",
+        "எனவே, மாநில சட்டமன்றம் ஆண்டில் குறைந்தபட்சம் இரண்டு முறையாவது கூட்டப்பட வேண்டும்.",
+        "Governor summons each House from time to time.",
+        "ஆளுநர் அவ்வப்போது அவைகளைக் கூட்டுகிறார்.",
+        "6 months is the maximum constitutional gap.",
+        "6 மாதங்கள் என்பது அதிகபட்ச அரசியலமைப்பு இடைவெளி ஆகும்."))
+
+    q.append(mk_q(26, "Easy", "Direct",
+        "Under Article 174(2) of the Constitution, who has the power to prorogue either House or dissolve the State Legislative Assembly?",
+        "சரத்து 174(2)-ன் படி, அவையை முடிவுக்குக் கொண்டுவரவும் (Prorogue) அல்லது மாநில சட்டமன்றப் பேரவையைக் கலைக்கவும் (Dissolve) அதிகாரம் பெற்றவர் யார்?",
+        {"A": "The Chief Minister", "B": "The Speaker of Legislative Assembly", "C": "The Governor of the State", "D": "The President of India"},
+        {"A": "முதலமைச்சர்", "B": "சட்டமன்ற சபாநாயகர்", "C": "மாநில ஆளுநர்", "D": "இந்தியக் குடியரசுத் தலைவர்"},
+        "C",
+        "Article 174(2) empowers the Governor from time to time to: (a) prorogue the House or either House, (b) dissolve the Legislative Assembly.",
+        "சரத்து 174(2)-ன் படி, ஆளுநருக்கு அவ்வப்போது: (a) அவையை முடிவுக்குக் கொண்டுவர (Prorogue), (b) சட்டமன்றப் பேரவையைக் கலைக்க (Dissolve) அதிகாரம் உண்டு.",
+        "Distinction: Adjournment is done by Speaker/Chairman; Prorogation and Dissolution are done by GOVERNOR!",
+        "வேறுபாடு: அவையை ஒத்திவைத்தல் (Adjournment) சபாநாயகரால் செய்யப்படுகிறது; முடிவுக்குக் கொண்டுவருதல் (Prorogation) மற்றும் கலைத்தல் (Dissolution) ஆளுநரால் செய்யப்படுகின்றன!",
+        "Prorogation terminates a session of the House.",
+        "முடிவுக்குக் கொண்டுவருதல் கூட்டத்தொடரை முடித்து வைக்கிறது.",
+        "Dissolution ends the life of the existing Assembly.",
+        "கலைத்தல் என்பது தற்போதைய பேரவையின் ஆயுளை முடிவுக்குக் கொண்டுவருகிறது."))
+
+    q.append(mk_q(27, "Easy", "Direct",
+        "Under Article 176(1) of the Constitution, when is the Governor constitutionally required to deliver a Special Address to the State Legislature?",
+        "சரத்து 176(1)-ன் படி, மாநில சட்டமன்றத்தில் சிறப்புரையாற்ற (Special Address) ஆளுநர் அரசியலமைப்பு ரீதியாக எப்போது கடமைப்பட்டுள்ளார்?",
+        {"A": "At the commencement of the first session after each general election AND at the commencement of the first session of each year", "B": "Every month during legislative sittings", "C": "Only when a Money Bill is introduced", "D": "Only during a State Emergency"},
+        {"A": "ஒவ்வொரு பொதுத் தேர்தலுக்குப் பிறகான முதல் கூட்டத்தொடரின் தொடக்கத்திலும் மற்றும் ஒவ்வொரு ஆண்டின் முதல் கூட்டத்தொடரின் தொடக்கத்திலும்", "B": "சட்டமன்ற அமர்வுகளின் போது ஒவ்வொரு மாதமும்", "C": "தன மசோதா அறிமுகப்படுத்தப்படும் போது மட்டுமே", "D": "மாநில அவசரநிலையின் போது மட்டுமே"},
+        "A",
+        "Article 176(1) mandates that the Governor shall address the Legislative Assembly (or both Houses assembled together) at the commencement of the first session after each general election and at the commencement of the first session of each year.",
+        "சரத்து 176(1)-ன் படி, ஒவ்வொரு பொதுத் தேர்தலுக்குப் பிறகான முதல் கூட்டத்தொடரின் தொடக்கத்திலும் மற்றும் ஒவ்வொரு ஆண்டின் முதல் கூட்டத்தொடரின் தொடக்கத்திலும் ஆளுநர் சட்டமன்றத்தில் சிறப்புரையாற்ற வேண்டும்.",
+        "Similar to President's special address under Article 87.",
+        "சரத்து 87-ன் கீழான குடியரசுத் தலைவரின் சிறப்புரையைப் போன்றது.",
+        "Special address outlines the policy and program of the State Government.",
+        "சிறப்புரை மாநில அரசின் கொள்கை மற்றும் திட்டங்களை விவரிக்கிறது.",
+        "Followed by Motion of Thanks in the Legislature.",
+        "இதனைத் தொடர்ந்து சட்டமன்றத்தில் நன்றி தெரிவிக்கும் தீர்மானம் விவாதிக்கப்படும்."))
+
+    q.append(mk_q(28, "Easy", "Direct",
+        "Under Article 171(5) of the Constitution, what fraction of total members of the State Legislative Council is nominated by the Governor?",
+        "சரத்து 171(5)-ன் படி, மாநில சட்டமன்ற மேலவையின் (Legislative Council) மொத்த உறுப்பினர்களில் என்ன பங்கினை ஆளுநர் நியமனம் செய்கிறார்?",
+        {"A": "1/3rd of total members", "B": "1/6th of total members", "C": "1/12th of total members", "D": "1/10th of total members"},
+        {"A": "மொத்த உறுப்பினர்களில் 1/3 பங்கு", "B": "மொத்த உறுப்பினர்களில் 1/6 பங்கு", "C": "மொத்த உறுப்பினர்களில் 1/12 பங்கு", "D": "மொத்த உறுப்பினர்களில் 1/10 பங்கு"},
+        "B",
+        "Article 171(3)(e) read with 171(5) provides that 1/6th of the total members of the Legislative Council shall be nominated by the Governor.",
+        "சரத்து 171(3)(e) மற்றும் 171(5)-ன் படி, சட்டமன்ற மேலவையின் மொத்த உறுப்பினர்களில் 1/6 பங்கினை ஆளுநர் நியமனம் செய்கிறார்.",
+        "1/3rd elected by local bodies, 1/3rd by MLAs, 1/12th by graduates, 1/12th by teachers, and 1/6th nominated by GOVERNOR.",
+        "1/3 உள்ளாட்சி அமைப்புகள், 1/3 MLAக்கள், 1/12 பட்டதாரிகள், 1/12 ஆசிரியர்கள், மற்றும் 1/6 ஆளுநரால் நியமனம்.",
+        "Nominated members have special knowledge or practical experience.",
+        "நியமன உறுப்பினர்கள் சிறப்பு அறிவோ அனுபவமோ பெற்றிருப்பர்.",
+        "Fields: Literature, Science, Art, Co-operative movement, Social service.",
+        "துறைகள்: இலக்கியம், அறிவியல், கலை, கூட்டுறவு இயக்கம், சமூக சேவை."))
+
+    q.append(mk_q(29, "Easy", "Direct",
+        "Which of the following fields is included in Article 171(5) for Governor's nominations to State Legislative Council, but is NOT included in Article 80 for President's nominations to Rajya Sabha?",
+        "மாநில சட்டமன்ற மேலவைக்கு ஆளுநர் நியமிப்பதற்கான சரத்து 171(5)-ல் சேர்க்கப்பட்டுள்ள, ஆனால் மாநிலங்களவைக்குக் குடியரசுத் தலைவர் நியமிப்பதற்கான சரத்து 80-ல் சேர்க்கப்படாத துறை எது?",
+        {"A": "Literature", "B": "Science", "C": "Co-operative Movement", "D": "Social Service"},
+        {"A": "இலக்கியம்", "B": "அறிவியல்", "C": "கூட்டுறவு இயக்கம் (Co-operative Movement)", "D": "சமூக சேவை"},
+        "C",
+        "High-Yield Distinction: 'Co-operative Movement' is present in Article 171(5) for Legislative Council, but is ABSENT in Article 80(3) for Rajya Sabha nominations (which includes only Literature, Science, Art, and Social Service).",
+        "முக்கிய வேறுபாடு: 'கூட்டுறவு இயக்கம்' (Co-operative Movement) என்பது மேலவைக்கான சரத்து 171(5)-ல் உள்ளது; ஆனால் மாநிலங்களவைக்கான சரத்து 80(3)-ல் இல்லை (அதில் இலக்கியம், அறிவியல், கலை, சமூக சேவை மட்டுமே உண்டு).",
+        "Classic TNPSC trap question comparing Rajya Sabha vs Legislative Council nominations!",
+        "மாநிலங்களவை மற்றும் மேலவை நியமனங்களை ஒப்பிடும் முக்கிய TNPSC பொறி வினா!",
+        "Rajya Sabha = 4 fields (Literature, Science, Art, Social Service).",
+        "மாநிலங்களவை = 4 துறைகள் (இலக்கியம், அறிவியல், கலை, சமூக சேவை).",
+        "Legislative Council = 5 fields (+ Co-operative Movement).",
+        "சட்டமன்ற மேலவை = 5 துறைகள் (+ கூட்டுறவு இயக்கம்)."))
+
+    q.append(mk_q(30, "Easy", "Direct",
+        "Under Article 200 of the Constitution, when a Bill passed by the State Legislature is presented to the Governor, which of the following is NOT one of the constitutional options available to him?",
+        "சரத்து 200-ன் படி, மாநில சட்டமன்றத்தால் நிறைவேற்றப்பட்ட மசோதா ஆளுநரிடம் சமர்ப்பிக்கப்படும் போது, அவருக்குக் கிடைக்கும் அரசியலமைப்புத் தேர்வுகளில் எது தவறானது?",
+        {"A": "He may declare assent to the Bill", "B": "He may declare that he withholds assent to the Bill", "C": "He may reserve the Bill for the consideration of the President", "D": "He may permanently strike down the Bill as unconstitutional"},
+        {"A": "மசோதாவிற்கு ஒப்புதல்ளிக்கலாம்", "B": "மசோதாவிற்கு ஒப்புதலை நிறுத்தி வைப்பதாக அறிவிக்கலாம்", "C": "குடியரசுத் தலைவரின் பரிசீலனைக்காக மசோதாவை ஒதுக்கி வைக்கலாம்", "D": "மசோதாவை அரசியலமைப்புக்கு முரணானது என நிரந்தரமாக ரத்து செய்யலாம்"},
+        "D",
+        "Under Article 200, the Governor has 4 options: 1. Assent, 2. Withhold assent, 3. Return bill (if non-Money bill), 4. Reserve bill for President. He CANNOT strike down a bill (only judiciary can do judicial review).",
+        "சரத்து 200-ன் கீழ் ஆளுநருக்கு 4 தேர்வுகள் மட்டுமே உண்டு: 1. ஒப்புதல் அளிப்பது, 2. ஒப்புதலை நிறுத்துவது, 3. திருப்பி அனுப்புவது (தன மசோதா அல்லாதவை), 4. குடியரசுத் தலைவருக்கு ஒதுக்குவது. மசோதாவை ரத்து செய்யும் அதிகாரம் அவருக்கு இல்லை.",
+        "Striking down laws is a judicial power under Judicial Review, not a Governor power.",
+        "சட்டங்களை ரத்து செய்வது நீதித்துறை மறுஆய்வு அதிகாரம், ஆளுநர் அதிகாரம் அல்ல.",
+        "Article 200 deals with assent to bills in State Legislature.",
+        "சரத்து 200 மாநில சட்டமன்ற மசோதாக்களுக்கு ஒப்புதல் அளிப்பது பற்றிக் கூறுகிறது.",
+        "If returned bill is passed again by House with or without amendment, Governor MUST give assent.",
+        "திருப்பி அனுப்பப்பட்ட மசோதா மீண்டும் நிறைவேற்றப்பட்டால், ஆளுநர் கட்டாயம் ஒப்புதல் அளிக்க வேண்டும்."))
+
+    q.append(mk_q(31, "Easy", "Direct",
+        "Under Article 200 of the Constitution, can the Governor return a Money Bill to the State Legislature for reconsideration?",
+        "சரத்து 200-ன் படி, தன மசோதாவை (Money Bill) மறுபரிசீலனை செய்ய மாநில சட்டமன்றத்திற்கு ஆளுநரால் திருப்பி அனுப்ப முடியுமா?",
+        {"A": "Yes, he can return any bill including a Money Bill", "B": "No, he cannot return a Money Bill for reconsideration", "C": "Yes, but only with the consent of the Chief Minister", "D": "Yes, if the State Assembly requests him to do so"},
+        {"A": "ஆம், தன மசோதா உட்பட எந்த மசோதாவையும் அவர் திருப்பி அனுப்பலாம்", "B": "இல்லை, தன மசோதாவை மறுபரிசீலனைக்குத் திருப்பி அனுப்ப முடியாது", "C": "ஆம், ஆனால் முதலமைச்சரின் ஒப்புதலுடன் மட்டுமே", "D": "ஆம், மாநில சட்டமன்றப் பேரவை கேட்டுக்கொண்டால்"},
+        "B",
+        "Proviso to Article 200 explicitly excludes Money Bills from being returned by the Governor for reconsideration.",
+        "சரத்து 200-ன் விலக்கு விதி தன மசோதாவை (Money Bill) ஆளுநர் மறுபரிசீலனைக்குத் திருப்பி அனுப்புவதைத் தெளிவாகத் தடை செய்கிறது.",
+        "Because a Money Bill is introduced in the Legislature only with the PRIOR RECOMMENDATION of the Governor (Art 207), he usually gives assent or withholds assent, but NEVER returns it.",
+        "ஆளுநரின் முன் பரிந்துரையுடனேயே தன மசோதா அறிமுகப்படுத்தப்படுவதால் (சரத்து 207), அவர் ஒப்புதல் அளிப்பார் அல்லது நிறுத்துவார், ஆனால் திருப்பி அனுப்ப மாட்டார்.",
+        "Same rule applies to President for Parliamentary Money Bills under Article 111.",
+        "நாடாளுமன்ற தன மசோதாக்களுக்கு சரத்து 111-ன் கீழ் குடியரசுத் தலைவருக்கும் இதே விதி பொருந்தும்.",
+        "Money Bill = Cannot be returned.",
+        "தன மசோதா = திருப்பி அனுப்ப முடியாது."))
+
+    q.append(mk_q(32, "Easy", "Direct",
+        "Which Article of the Constitution deals with Bills reserved by the Governor for the consideration of the President?",
+        "ஆளுநரால் குடியரசுத் தலைவரின் பரிசீலனைக்காக ஒதுக்கி வைக்கப்படும் மசோதாக்களைப் பற்றி அரசியலமைப்பின் எந்தச் சரத்து கூறுகிறது?",
+        {"A": "Article 200", "B": "Article 201", "C": "Article 202", "D": "Article 213"},
+        {"A": "சரத்து 200", "B": "சரத்து 201", "C": "சரத்து 202", "D": "சரத்து 213"},
+        "B",
+        "While Article 200 empowers the Governor to reserve a Bill for President's consideration, Article 201 deals with the procedure when a Bill is so reserved for the consideration of the President.",
+        "சரத்து 200 ஆளுநர் மசோதாவை ஒதுக்குவதற்கு அதிகாரம் அளிக்கிறது; சரத்து 201 குடியரசுத் தலைவரின் பரிசீலனைக்கு ஒதுக்கப்பட்ட மசோதாவின் நடைமுறை பற்றிக் கூறுகிறது.",
+        "Under Art 201, President may declare assent, withhold assent, or direct Governor to return non-Money Bill.",
+        "சரத்து 201-ன் கீழ் குடியரசுத் தலைவர் ஒப்புதல் அளிக்கலாம், நிறுத்தலாம் அல்லது திருப்பி அனுப்ப ஆளுநருக்குப் பணிக்கலாம்.",
+        "Article 200 = Assent by Governor / Reservation.",
+        "சரத்து 200 = ஆளுநரின் ஒப்புதல் / ஒதுக்கீடு.",
+        "Article 201 = Consideration of reserved bill by President.",
+        "சரத்து 201 = ஒதுக்கப்பட்ட மசோதாவை குடியரசுத் தலைவர் பரிசீலித்தல்."))
+
+    q.append(mk_q(33, "Easy", "Direct",
+        "Under Article 207(1) of the Constitution, whose prior recommendation is MANDATORY for the introduction of a Money Bill in the State Legislative Assembly?",
+        "சரத்து 207(1)-ன் படி, மாநில சட்டமன்றப் பேரவையில் தன மசோதா (Money Bill) அறிமுகப்படுத்தப்படுவதற்கு யாருடைய முன் பரிந்துரை கட்டாயமாகும்?",
+        {"A": "The Speaker of Legislative Assembly", "B": "The Governor of the State", "C": "The State Finance Minister", "D": "The President of India"},
+        {"A": "சட்டமன்ற சபாநாயகர்", "B": "மாநில ஆளுநர்", "C": "மாநில நிதி அமைச்சர்", "D": "இந்தியக் குடியரசுத் தலைவர்"},
+        "B",
+        "Article 207(1) provides that a Money Bill or amendment shall not be introduced or moved except on the recommendation of the GOVERNOR.",
+        "சரத்து 207(1)-ன் படி, ஆளுநரின் பரிந்துரையின் பேரில் மட்டுமே தன மசோதா அல்லது திருத்தம் அறிமுகப்படுத்தப்படவோ அல்லது கொண்டுவரப்படவோ வேண்டும்.",
+        "Money Bill can be introduced ONLY in the Legislative Assembly (not Legislative Council).",
+        "தன மசோதா சட்டமன்றப் பேரவையில் (Assembly) மட்டுமே அறிமுகப்படுத்தப்பட முடியும்.",
+        "Prior recommendation of Governor is mandatory for Money Bills.",
+        "தன மசோதாவிற்கு ஆளுநரின் முன் பரிந்துரை கட்டாயமாகும்.",
+        "Speaker certifies whether a Bill is a Money Bill (Art 199(3)).",
+        "ஒரு மசோதா தன மசோதாவா என்பதை சபாநாயகர் சான்றளிக்கிறார் (சரத்து 199(3))."))
+
+    q.append(mk_q(34, "Easy", "Direct",
+        "Which Article of the Constitution requires the Governor to lay before the State Legislature the Annual Financial Statement (State Budget) for each financial year?",
+        "ஒவ்வொரு நிதியாண்டிற்குமான ஆண்டறிக்கை நிதிநிலையை (மாநில பட்ஜெட்) மாநில சட்டமன்றத்தின் முன் வைக்க ஆளுநருக்கு உத்தரவிடும் அரசியலமைப்புச் சரத்து எது?",
+        {"A": "Article 200", "B": "Article 202", "C": "Article 207", "D": "Article 213"},
+        {"A": "சரத்து 200", "B": "சரத்து 202", "C": "சரத்து 207", "D": "சரத்து 213"},
+        "B",
+        "Article 202(1) mandates that the Governor shall in respect of every financial year cause to be laid before the House(s) of Legislature the Annual Financial Statement.",
+        "சரத்து 202(1)-ன் படி, ஆளுநர் ஒவ்வொரு நிதியாண்டிலும் ஆண்டறிக்கை நிதிநிலையை (Annual Financial Statement) சட்டமன்றத்தின் முன் வைக்கச் செய்ய வேண்டும்.",
+        "State Budget is constitutionally named 'Annual Financial Statement' under Article 202.",
+        "மாநில பட்ஜெட் அரசியலமைப்பில் சரத்து 202-ன் கீழ் 'ஆண்டறிக்கை நிதிநிலை' என அழைக்கப்படுகிறது.",
+        "Article 112 = Union Budget (President); Article 202 = State Budget (Governor).",
+        "சரத்து 112 = மத்திய பட்ஜெட் (குடியரசுத் தலைவர்); சரத்து 202 = மாநில பட்ஜெட் (ஆளுநர்).",
+        "Shows estimated receipts and expenditure of the State.",
+        "மாநிலத்தின் மதிப்பிடப்பட்ட வரவு செலவுகளைக் காட்டுகிறது."))
+
+    q.append(mk_q(35, "Easy", "Direct",
+        "Under Article 203(3) of the Constitution, can any Demand for Grant be made in the State Legislature without the recommendation of the Governor?",
+        "சரத்து 203(3)-ன் படி, ஆளுநரின் பரிந்துரையின்றி மாநில சட்டமன்றத்தில் ஏதேனும் மானியக் கோரிக்கை (Demand for Grant) முன்வைக்கப்பட முடியுமா?",
+        {"A": "Yes, if proposed by 10 members", "B": "No demand for a grant shall be made except on the recommendation of the Governor", "C": "Yes, with the permission of the Speaker", "D": "Yes, during Budget discussions"},
+        {"A": "ஆம், 10 உறுப்பினர்கள் முன்மொழிந்தால் செய்யலாம்", "B": "ஆளுநரின் பரிந்துரையின்றி எந்தவொரு மானியக் கோரிக்கையும் முன்வைக்கப்படக் கூடாது", "C": "ஆம், சபாநாயகரின் அனுமதியுடன் செய்யலாம்", "D": "ஆம், பட்ஜெட் விவாதங்களின் போது செய்யலாம்"},
+        "B",
+        "Article 203(3) explicitly mandates: 'No demand for a grant shall be made except on the recommendation of the Governor.'",
+        "சரத்து 203(3) வெளிப்படையாகக் கட்டளையிடுகிறது: 'ஆளுநரின் பரிந்துரையின்றி எந்தவொரு மானியக் கோரிக்கையும் (Demand for Grant) முன்வைக்கப்படக் கூடாது.'",
+        "Ensures financial discipline and executive control over public expenditure.",
+        "பொதுச் செலவினங்கள் மீதான நிதி ஒழுங்கையும் நிர்வாகக் கட்டுப்பாட்டையும் உறுதி செய்கிறது.",
+        "Same rule applies to Union Budget under Article 113(3) (President).",
+        "சரத்து 113(3)-ன் கீழ் மத்திய பட்ஜெட்டிற்கு குடியரசுத் தலைவருக்கும் இதே விதி பொருந்தும்.",
+        "Demands for Grants are voted upon only by the Legislative Assembly.",
+        "மானியக் கோரிக்கைகள் மீது சட்டமன்றப் பேரவை மட்டுமே வாக்களிக்கிறது."))
+
+    q.append(mk_q(36, "Easy", "Direct",
+        "Under Article 267(2) of the Constitution, at whose disposal is the Contingency Fund of the State placed?",
+        "சரத்து 267(2)-ன் படி, மாநிலத்தின் அவசரகால நிதி (Contingency Fund of the State) யாருடைய கட்டுப்பாட்டில் வைக்கப்பட்டுள்ளது?",
+        {"A": "The Chief Minister of the State", "B": "The Governor of the State", "C": "The Speaker of Legislative Assembly", "D": "The Comptroller and Auditor General"},
+        {"A": "மாநில முதலமைச்சர்", "B": "மாநில ஆளுநர்", "C": "சட்டமன்ற சபாநாயகர்", "D": "தலைமைக் கணக்குத் தணிக்கையாளர் (CAG)"},
+        "B",
+        "Article 267(2) provides that the Contingency Fund of the State shall be at the disposal of the Governor to enable advances to be made by him for unforeseen expenditure.",
+        "சரத்து 267(2)-ன் படி, எதிர்பாராத செலவினங்களுக்காக முன்பணம் வழங்க வசதியாக மாநிலத்தின் அவசரகால நிதி ஆளுநரின் கட்டுப்பாட்டில் வைக்கப்பட்டுள்ளது.",
+        "Advances from Contingency Fund are subsequently authorized by the State Legislature.",
+        "அவசரகால நிதியிலிருந்து வழங்கப்படும் முன்பணங்கள் பின்னர் மாநில சட்டமன்றத்தால் அங்கீகரிக்கப்படுகின்றன.",
+        "Article 267(1) = Union Contingency Fund (President); Article 267(2) = State Contingency Fund (Governor).",
+        "சரத்து 267(1) = மத்திய அவசரகால நிதி (குடியரசுத் தலைவர்); சரத்து 267(2) = மாநில அவசரகால நிதி (ஆளுநர்).",
+        "Held on behalf of Governor by Finance Secretary of the State.",
+        "ஆளுநரின் சார்பில் மாநில நிதிச் செயலாளரால் நிர்வகிக்கப்படுகிறது."))
+
+    q.append(mk_q(37, "Easy", "Direct",
+        "Which Article of the Constitution empowers the Governor of a State to promulgate Ordinances during recess of the State Legislature?",
+        "மாநில சட்டமன்றம் கூட்டத்தொடரில் இல்லாத போது அவசரச்சட்டங்களைப் (Ordinances) பிறப்பிக்க மாநில ஆளுநருக்கு அதிகாரம் அளிக்கும் அரசியலமைப்புச் சரத்து எது?",
+        {"A": "Article 123", "B": "Article 213", "C": "Article 356", "D": "Article 200"},
+        {"A": "சரத்து 123", "B": "சரத்து 213", "C": "சரத்து 356", "D": "சரத்து 200"},
+        "B",
+        "Article 213 empowers the Governor to promulgate Ordinances when either or both Houses of the State Legislature are not in session.",
+        "மாநில சட்டமன்றத்தின் இரண்டு அவைகளும் அல்லது ஏதேனும் ஒரு அவை கூட்டத்தொடரில் இல்லாத போது அவசரச்சட்டங்களை பிறப்பிக்க ஆளுநருக்கு சரத்து 213 அதிகாரம் அளிக்கிறது.",
+        "President's Ordinance power = Article 123; Governor's Ordinance power = Article 213 (Just swap 1 and 2!).",
+        "குடியரசுத் தலைவரின் அவசரச்சட்ட அதிகாரம் = சரத்து 123; ஆளுநரின் அவசரச்சட்ட அதிகாரம் = சரத்து 213 (1 மற்றும் 2-ஐ இடமாற்றம் செய்யுங்கள்!).",
+        "Ordinance has the same force and effect as an Act of the State Legislature.",
+        "அவசரச்சட்டம் மாநில சட்டமன்றச் சட்டத்திற்கு இணையான ஆற்றலும் விளைவும் கொண்டது.",
+        "Can be promulgated ONLY when Legislature is in recess.",
+        "சட்டமன்றம் கூட்டத்தொடரில் இல்லாத போது மட்டுமே பிறப்பிக்கப்பட முடியும்."))
+
+    q.append(mk_q(38, "Easy", "Direct",
+        "Under Article 213(2) of the Constitution, what is the maximum duration for which an Ordinance promulgated by the Governor can remain in force after the reassembly of the State Legislature?",
+        "சரத்து 213(2)-ன் படி, மாநில சட்டமன்றம் மீண்டும் கூடியதிலிருந்து ஆளுநரால் பிறப்பிக்கப்பட்ட அவசரச்சட்டம் அதிகபட்சமாக எவ்வளவு காலம் அமலில் இருக்க முடியும்?",
+        {"A": "2 weeks from reassembly", "B": "6 weeks from reassembly", "C": "6 months from reassembly", "D": "1 year from reassembly"},
+        {"A": "மீண்டும் கூடியதிலிருந்து 2 வாரங்கள்", "B": "மீண்டும் கூடியதிலிருந்து 6 வாரங்கள்", "C": "மீண்டும் கூடியதிலிருந்து 6 மாதங்கள்", "D": "மீண்டும் கூடியதிலிருந்து 1 ஆண்டு"},
+        "B",
+        "Article 213(2)(a) specifies that an Ordinance shall cease to operate at the expiration of SIX WEEKS from the reassembly of the Legislature (unless approved earlier or disapproved).",
+        "சரத்து 213(2)(a)-ன் படி, அவசரச்சட்டம் மாநில சட்டமன்றம் மீண்டும் கூடிய தேதியிலிருந்து 6 வாரங்கள் முடிந்தவுடன் (அதற்குள் ஒப்புதல் பெறாவிட்டால்) அமலிழந்துவிடும்.",
+        "Maximum life of Ordinance without approval = 6 months (max gap between sessions) + 6 weeks = 7 and a half months.",
+        "ஒப்புதலின்றி அவசரச்சட்டத்தின் அதிகபட்ச ஆயுள் = 6 மாதங்கள் (கூட்டத்தொடர் அதிகபட்ச இடைவெளி) + 6 வாரங்கள் = 7½ மாதங்கள்.",
+        "If Houses reassemble on different dates, 6 weeks are counted from the LATER date.",
+        "அவைகள் வெவ்வேறு தேதிகளில் மீண்டும் கூடினால், பிந்தைய தேதியிலிருந்தே 6 வாரங்கள் கணக்கிடப்படும்.",
+        "Same 6-week rule applies to President's Ordinance under Art 123.",
+        "சரத்து 123-ன் கீழ் குடியரசுத் தலைவரின் அவசரச்சட்டத்திற்கும் இதே 6 வார விதி பொருந்தும்."))
+
+    q.append(mk_q(39, "Easy", "Direct",
+        "Which Article of the Constitution empowers the Governor to grant pardons, reprieves, respites or remissions of punishment to convicted persons?",
+        "குற்றவாளிகளுக்கு மன்னிப்பு (Pardon), தண்டனை நிறுத்தம் (Reprieve), குறைப்பு (Respite/Remission) வழங்க மாநில ஆளுநருக்கு அதிகாரம் அளிக்கும் அரசியலமைப்புச் சரத்து எது?",
+        {"A": "Article 72", "B": "Article 161", "C": "Article 213", "D": "Article 163"},
+        {"A": "சரத்து 72", "B": "சரத்து 161", "C": "சரத்து 213", "D": "சரத்து 163"},
+        "B",
+        "Article 161 empowers the Governor of a State to grant pardons, reprieves, respites or remissions of punishment or to suspend, remit or commute sentences of persons convicted under State laws.",
+        "மாநிலச் சட்டங்களின் கீழ் குற்றவாளியாக அறிவிக்கப்பட்டவர்களுக்கு மன்னிப்பு, தண்டனை நிறுத்தம், குறைப்பு வழங்க அல்லது மாற்றியமைக்க ஆளுநருக்கு சரத்து 161 அதிகாரம் அளிக்கிறது.",
+        "President's pardoning power = Article 72; Governor's pardoning power = Article 161.",
+        "குடியரசுத் தலைவரின் மன்னிப்பளிக்கும் அதிகாரம் = சரத்து 72; ஆளுநரின் மன்னிப்பளிக்கும் அதிகாரம் = சரத்து 161.",
+        "Applies to offences against laws relating to matters to which executive power of State extends.",
+        "மாநிலத்தின் நிர்வாக அதிகாரம் செல்லுபடியாகும் சட்டங்கள் தொடர்பான குற்றங்களுக்கு இது பொருந்தும்.",
+        "Governor's power is subject to judicial review.",
+        "ஆளுநரின் அதிகாரம் நீதித்துறை மறுஆய்வுக்கு உட்பட்டது."))
+
+    q.append(mk_q(40, "Easy", "Direct",
+        "In which of the following matters does the Governor's pardoning power under Article 161 DIFFER from the President's pardoning power under Article 72?",
+        "பின்வரும் எந்த விஷயத்தில் சரத்து 161-ன் கீழான ஆளுநரின் மன்னிப்பளிக்கும் அதிகாரம் சரத்து 72-ன் கீழான குடியரசுத் தலைவரின் அதிகாரத்திலிருந்து வேறுபடுகிறது?",
+        {"A": "Governor CANNOT grant pardon in cases of Death Sentence (only President can pardon death sentence)", "B": "Governor cannot remit any prison sentence", "C": "Governor can pardon Court Martial punishments while President cannot", "D": "Governor's pardoning power is not subject to Cabinet advice"},
+        {"A": "மரண தண்டனை வழக்குகளில் ஆளுநரால் மன்னிப்பு (Pardon) வழங்க முடியாது (குடியரசுத் தலைவர் மட்டுமே மரண தண்டனையை மன்னிக்க முடியும்)", "B": "ஆளுநரால் சிறைத் தண்டனையைக் குறைக்க முடியாது", "C": "ராணுவ நீதிமன்றத் தண்டனைகளை ஆளுநர் மன்னிக்கலாம், குடியரசுத் தலைவர் மன்னிக்க முடியாது", "D": "ஆளுநரின் மன்னிப்பு அதிகாரம் அமைச்சரவை ஆலோசனைக்கு உட்பட்டது அல்ல"},
+        "A",
+        "Two Major Differences: 1. President can pardon a Death Sentence, but Governor CANNOT pardon death sentence (Governor can only suspend, remit or commute death sentence). 2. President can pardon Court Martial sentences, Governor CANNOT.",
+        "இரண்டு முக்கிய வேறுபாடுகள்: 1. குடியரசுத் தலைவர் மரண தண்டனையை மன்னிக்கலாம், ஆனால் ஆளுநரால் மரண தண்டனையை மன்னிக்க முடியாது (நிறுத்தவோ, குறைக்கவோ, மாற்றவோ மட்டுமே முடியும்). 2. குடியரசுத் தலைவர் ராணுவ நீதிமன்றத் தண்டனையை மன்னிக்கலாம், ஆளுநர் முடியாது.",
+        "Even if state law imposes death penalty, ONLY President can grant full PARDON for death sentence.",
+        "மாநிலச் சட்டம் மரண தண்டனை விதித்தாலும், மரண தண்டனைக்கு முழு மன்னிப்பு (Pardon) குடியரசுத் தலைவரால் மட்டுமே வழங்க முடியும்.",
+        "High-yield distinction tested repeatedly by TNPSC!",
+        "TNPSC தேர்வில் அடிக்கடி கேட்கப்படும் முக்கிய வேறுபாடு!",
+        "Court Martial sentences are completely outside Governor's power.",
+        "ராணுவ நீதிமன்றத் தண்டனைகள் ஆளுநர் அதிகாரத்திற்கு முற்றிலும் அப்பாற்பட்டவை."))
+
+    q.append(mk_q(41, "Easy", "Direct",
+        "Under Article 163(1) of the Constitution, what is the primary role of the Council of Ministers vis-a-vis the Governor?",
+        "சரத்து 163(1)-ன் படி, ஆளுநருக்கு அமைச்சரவையின் முதன்மையான பங்கு என்ன?",
+        {"A": "To audit Governor's official expenses", "B": "To aid and advise the Governor in the exercise of his functions (except discretionary functions)", "C": "To elect the Governor annually", "D": "To issue judicial writs to the Governor"},
+        {"A": "ஆளுநரின் அதிகாரப்பூர்வ செலவுகளைத் தணிக்கை செய்வது", "B": "ஆளுநர் தனது பணிகளை ஆற்ற உதவவும் ஆலோசனைக் கூறவும் (விருப்ப அதிகாரங்கள் தவிர)", "C": "ஆளுநரை ஆண்டுதோறும் தேர்ந்தெடுப்பது", "D": "ஆளுநருக்கு நீதித்துறை பேராணைகளைப் பிறப்பிப்பது"},
+        "B",
+        "Article 163(1) provides that there shall be a Council of Ministers with the Chief Minister at the head to AID AND ADVISE the Governor in the exercise of his functions, except in so far as he is by or under the Constitution required to exercise his functions in his discretion.",
+        "சரத்து 163(1)-ன் படி, ஆளுநர் தனது விருப்பப்படி செயல்பட அரசியலமைப்பால் கோரப்படும் சந்தர்ப்பங்கள் தவிர, மற்ற பணிகளை ஆற்ற உதவி செய்யவும் ஆலோசனைக் கூறவும் முதலமைச்சரைத் தலைவராகக் கொண்ட ஓர் அமைச்சரவை இருக்கும்.",
+        "Governor acts as a constitutional head acting on aid and advice of Council of Ministers.",
+        "ஆளுநர் அமைச்சரவையின் உதவி மற்றும் ஆலோசனையின் படி செயல்படும் அரசியலமைப்புத் தலைவராக இருக்கிறார்.",
+        "Aid and advice is binding in non-discretionary matters.",
+        "விருப்ப அதிகாரம் இல்லாத விவகாரங்களில் உதவி மற்றும் ஆலோசனை கட்டுப்படுத்தக்கூடியது.",
+        "Discretionary powers are explicit exceptions in Article 163(1).",
+        "விருப்ப அதிகாரங்கள் சரத்து 163(1)-ல் உள்ள வெளிப்படையான விதிவிலக்குகள் ஆகும்."))
+
+    q.append(mk_q(42, "Easy", "Direct",
+        "Under Article 163(3) of the Constitution, can the advice tendered by Ministers to the Governor be inquired into in any court?",
+        "சரத்து 163(3)-ன் படி, ஆளுநருக்கு அமைச்சர்கள் வழங்கிய ஆலோசனை குறித்து எந்த நீதிமன்றத்திலாவது விசாரணை செய்ய முடியுமா?",
+        {"A": "Yes, in the High Court only", "B": "The question whether any, and if so what, advice was tendered by Ministers to the Governor shall NOT be inquired into in any court", "C": "Yes, if requested by the Governor", "D": "Yes, in the Supreme Court only"},
+        {"A": "ஆம், உயர் நீதிமன்றத்தில் மட்டுமே", "B": "அமைச்சர்களால் ஆளுநருக்கு ஏதேனும் ஆலோசனை வழங்கப்பட்டதா, வழங்கப்பட்டால் அது என்ன ஆலோசனை என்ற கேள்வி எந்த நீதிமன்றத்திலும் விசாரிக்கப்படக் கூடாது", "C": "ஆம், ஆளுநர் கேட்டுக்கொண்டால்", "D": "ஆம், உச்ச நீதிமன்றத்தில் மட்டுமே"},
+        "B",
+        "Article 163(3) lays down a strict bar: 'The question whether any, and if so what, advice was tendered by Ministers to the Governor shall not be inquired into in any court.'",
+        "சரத்து 163(3) கடுமையான தடையை விதிக்கிறது: 'அமைச்சர்களால் ஆளுநருக்கு ஏதேனும் ஆலோசனை வழங்கப்பட்டதா, வழங்கப்பட்டால் அது என்ன ஆலோசனை என்ற கேள்வி எந்த நீதிமன்றத்திலும் விசாரிக்கப்படக் கூடாது.'",
+        "Protects cabinet secrecy and executive privilege.",
+        "அமைச்சரவை ரகசியத்தன்மையையும் நிர்வாக விலக்குரிமையையும் பாதுகாக்கிறது.",
+        "Same bar applies to Presidential advice under Article 74(2).",
+        "சரத்து 74(2)-ன் கீழ் குடியரசுத் தலைவர் ஆலோசனைக்கும் இதே தடை பொருந்தும்.",
+        "However, material on which advice is based can be judicially reviewed (SR Bommai case).",
+        "இருப்பினும் ஆலோசனைக்கு அடிப்படையான சான்றுகளை நீதித்துறை மறுஆய்வு செய்ய முடியும் (SR Bommai வழக்கு)."))
+
+    q.append(mk_q(43, "Easy", "Direct",
+        "Under Article 167 of the Constitution, whose duty is it to communicate to the Governor all decisions of the Council of Ministers relating to the administration of the State?",
+        "சரத்து 167-ன் படி, மாநில நிர்வாகம் தொடர்பான அமைச்சரவையின் அனைத்து முடிவுகளையும் ஆளுநருக்குத் தெரிவிப்பது யாருடைய கடமையாகும்?",
+        {"A": "The Chief Secretary of the State", "B": "The Chief Minister of the State", "C": "The Speaker of Legislative Assembly", "D": "The Advocate General"},
+        {"A": "மாநிலத் தலைமைச் செயலாளர்", "B": "மாநில முதலமைச்சர்", "C": "சட்டமன்ற சபாநாயகர்", "D": "தலைமை வழக்கறிஞர்"},
+        "B",
+        "Article 167(a) specifies that it shall be the duty of the CHIEF MINISTER of each State to communicate to the Governor of the State all decisions of the Council of Ministers relating to the administration of affairs of the State and proposals for legislation.",
+        "சரத்து 167(a)-ன் படி, மாநில விவகாரங்களின் நிர்வாகம் மற்றும் சட்ட முன்மொழிவுகள் தொடர்பான அமைச்சரவையின் அனைத்து முடிவுகளையும் ஆளுநருக்குத் தெரிவிப்பது மாநில முதலமைச்சரின் கடமையாகும்.",
+        "Chief Minister acts as the link between Governor and Council of Ministers.",
+        "முதலமைச்சர் ஆளுநருக்கும் அமைச்சரவைக்கும் இடையிலான இணைப்பாகச் செயல்படுகிறார்.",
+        "Article 167 defines duties of Chief Minister towards Governor.",
+        "சரத்து 167 ஆளுநருக்கு முதலமைச்சரின் கடமைகளை வரையறுக்கிறது.",
+        "Similar to Prime Minister's duties to President under Article 78.",
+        "சரத்து 78-ன் கீழ் குடியரசுத் தலைவருக்குப் பிரதமரின் கடமைகளைப் போன்றது."))
+
+    q.append(mk_q(44, "Easy", "Direct",
+        "Under Article 361 of the Constitution, what immunity is granted to the Governor of a State during his term of office?",
+        "சரத்து 361-ன் படி, ஆளுநருக்கு அவரது பதவிக் காலத்தில் வழங்கப்பட்டுள்ள பாதுகாப்பளிப்பு (Immunity) என்ன?",
+        {"A": "He is not answerable to any court for the exercise of powers of his office, and no criminal proceedings can be instituted against him", "B": "He can be arrested by state police with CM's permission", "C": "He can be sued for civil actions without notice", "D": "No immunity is granted to the Governor"},
+        {"A": "தனது அதிகாரங்களைப் பயன்படுத்தியதற்காக அவர் எந்த நீதிமன்றத்திற்கும் பதிலளிக்க வேண்டியதில்லை, மேலும் அவருக்கு எதிராக எந்தக் குற்றவியல் நடவடிக்கையும் தொடங்க முடியாது", "B": "முதலமைச்சரின் அனுமதியுடன் மாநிலக் காவல்துறை அவரைத் கைது செய்யலாம்", "C": "அறிவிப்பின்றி அவர் மீது சிவில் வழக்கு தொடரலாம்", "D": "ஆளுநருக்கு எந்தப் பாதுகாப்பும் வழங்கப்படவில்லை"},
+        "A",
+        "Article 361 provides personal immunity: 1. Not answerable to any court for performance of powers. 2. No criminal proceedings shall be instituted/continued during tenure. 3. No process for arrest/imprisonment. 4. Civil proceedings require 2 months prior written notice.",
+        "சரத்து 361 தனிநபர் விலக்குரிமை அளிக்கிறது: 1. அதிகாரப் பயன்பாட்டிற்கு நீதிமன்றத்திற்குப் பதிலளிக்கத் தேவையில்லை. 2. பதவிக் காலத்தில் குற்றவியல் நடவடிக்கை தொடங்க முடியாது. 3. கைது / சிறை ஆணை பிறப்பிக்க முடியாது. 4. சிவில் வழக்குக்கு 2 மாத முன் அறிவிப்பு தேவை.",
+        "Protects Governor from harassment during tenure.",
+        "பதவிக் காலத்தில் ஆளுநரைத் துன்புறுத்தல்களிலிருந்து பாதுகாக்கிறது.",
+        "Civil proceedings require 2 months notice for personal acts.",
+        "தனிப்பட்ட செயல்களுக்கான சிவில் வழக்குகளுக்கு 2 மாத முன் அறிவிப்பு கட்டாயம்.",
+        "Applies to both President and Governor under Article 361.",
+        "சரத்து 361-ன் கீழ் குடியரசுத் தலைவர் மற்றும் ஆளுநர் இருவருக்கும் பொருந்தும்."))
+
+    q.append(mk_q(45, "Easy", "Direct",
+        "Who is the ex-officio Chancellor of State Universities in most Indian States?",
+        "பெரும்பாலான இந்திய மாநிலங்களில் மாநிலப் பல்கலைக்கழகங்களின் முன்னாள் உத்தியோகபூர்வ வேந்தராக (Ex-officio Chancellor) இருப்பவர் யார்?",
+        {"A": "The Chief Minister of the State", "B": "The Governor of the State", "C": "The State Higher Education Minister", "D": "The Vice-Chancellor"},
+        {"A": "மாநில முதலமைச்சர்", "B": "மாநில ஆளுநர்", "C": "மாநில உயர்கல்வி அமைச்சர்", "D": "துணைவேந்தர்"},
+        "B",
+        "By virtue of statutory provisions of State University Acts, the Governor acts as the ex-officio Chancellor of State Universities in most states.",
+        "மாநிலப் பல்கலைக்கழகச் சட்டங்களின் கீழ், ஆளுநர் அம்மாநிலப் பல்கலைக்கழகங்களின் முன்னாள் உத்தியோகபூர்வ வேந்தராகச் (Chancellor) செயல்படுகிறார்.",
+        "As Chancellor, Governor appoints Vice-Chancellors of state universities.",
+        "வேந்தராக ஆளுநர் மாநிலப் பல்கலைக்கழகங்களின் துணைவேந்தர்களை நியமிக்கிறார்.",
+        "Statutory power, not directly a constitutional power under Part VI.",
+        "இது சட்டப்பூர்வ அதிகாரமே தவிர நேரடியாக பகுதி VI அரசியலமைப்பு அதிகாரம் அல்ல.",
+        "Acts independently of Council of Ministers in some university statute roles.",
+        "சில பல்கலைக்கழகச் சட்டங்களில் அமைச்சரவை ஆலோசனையின்றி சுயாதீனமாகச் செயல்படுகிறார்."))
+
+    q.append(mk_q(46, "Easy", "Direct",
+        "Under Article 356 of the Constitution, on whose report or satisfaction can the President impose President's Rule in a State?",
+        "சரத்து 356-ன் படி, யாருடைய அறிக்கை அல்லது திருப்தியின் அடிப்படையில் ஒரு மாநிலத்தில் குடியரசுத் தலைவர் ஆட்சியை (President's Rule) குடியரசுத் தலைவர் அமல்படுத்த முடியும்?",
+        {"A": "On receipt of a report from the Governor of the State or otherwise", "B": "Only on receipt of a resolution passed by 2/3rd majority of State Assembly", "C": "Only on the recommendation of Supreme Court", "D": "Only on application by Chief Minister"},
+        {"A": "மாநில ஆளுநரின் அறிக்கை பெறப்படும் போது அல்லது வேறு வழியில்", "B": "மாநில சட்டமன்றத்தின் 2/3 பெரும்பான்மை தீர்மானம் மூலம் மட்டுமே", "C": "உச்ச நீதிமன்றப் பரிந்துரையின் பேரில் மட்டுமே", "D": "முதலமைச்சரின் விண்ணப்பத்தின் பேரில் மட்டுமே"},
+        "A",
+        "Article 356(1) provides that if the President, on receipt of a report from the GOVERNOR of a State OR OTHERWISE, is satisfied that constitutional breakdown has occurred, he may issue a Proclamation.",
+        "சரத்து 356(1)-ன் படி, மாநில ஆளுநரின் அறிக்கை பெறப்படும் போது அல்லது வேறு வழியில் (Or otherwise), அரசியலமைப்பு இயந்திரம் செயலிழந்துவிட்டது என குடியரசுத் தலைவர் திருப்தியடைந்தால் பிரகடனம் வெளியிடலாம்.",
+        "Governor's report is NOT mandatory; President can act 'or otherwise' (e.g. Union intelligence/reports).",
+        "ஆளுநர் அறிக்கை கட்டாயமல்ல; குடியரசுத் தலைவர் 'வேறு வழியிலும்' (Or otherwise) நடவடிக்கை எடுக்கலாம்.",
+        "High-yield trap: 'Governor's report OR OTHERWISE'.",
+        "முக்கிய பொறி: 'ஆளுநர் அறிக்கை அல்லது வேறு வழியில்'.",
+        "S.R. Bommai case (1994) made President's Rule subject to judicial review.",
+        "S.R. பொம்மை வழக்கு (1994) குடியரசுத் தலைவர் ஆட்சியை நீதித்துறை மறுஆய்வுக்கு உட்படுத்தியது."))
+
+    q.append(mk_q(47, "Easy", "Direct",
+        "Under Article 162 of the Constitution, what is the extent of the executive power of a State?",
+        "சரத்து 162-ன் படி, ஒரு மாநிலத்தின் நிர்வாக அதிகாரத்தின் எல்லை என்ன?",
+        {"A": "Co-extensive with the legislative power of the State Legislature (matters in State List and Concurrent List)", "B": "Co-extensive with Union List only", "C": "Restricted only to Panchayats", "D": "Unlimited power over all Union subjects"},
+        {"A": "மாநில சட்டமன்றத்தின் அதிகார வரம்பிற்கு உட்பட்ட விஷயங்கள் (மாநிலப் பட்டியல் மற்றும் பொதுப் பட்டியல்)", "B": "மத்தியப் பட்டியல் மட்டுமே", "C": "பஞ்சாயத்துகளுக்கு மட்டுமே கட்டுப்படுத்தப்பட்டது", "D": "அனைத்து மத்திய விவகாரங்கள் மீதும் வரம்பற்ற அதிகாரம்"},
+        "A",
+        "Article 162 states that subject to the provisions of the Constitution, the executive power of a State shall extend to the matters with respect to which the Legislature of the State has power to make laws (State List & Concurrent List).",
+        "சரத்து 162-ன் படி, மாநில சட்டமன்றம் சட்டம் இயற்ற அதிகாரமுள்ள விஷயங்களுக்குப் (மாநிலப் பட்டியல் & பொதுப் பட்டியல்) பரவும் வகையில் மாநிலத்தின் நிர்வாக அதிகாரம் நீட்டிக்கப்படும்.",
+        "In Concurrent List matters, State executive power is subject to Union executive power if Parliament law provides.",
+        "பொதுப் பட்டியலில் நாடாளுமன்றச் சட்டம் இருந்தால், மாநில நிர்வாக அதிகாரம் மத்திய நிர்வாக அதிகாரத்திற்குக் கட்டுப்பட்டது.",
+        "Article 73 = Extent of Union executive power; Article 162 = Extent of State executive power.",
+        "சரத்து 73 = மத்திய நிர்வாக எல்லை; சரத்து 162 = மாநில நிர்வாக எல்லை.",
+        "Executive power follows legislative power.",
+        "நிர்வாக அதிகாரம் சட்ட அதிகாரத்தைப் பின்தொடர்கிறது."))
+
+    q.append(mk_q(48, "Easy", "Direct",
+        "Under Article 163(2) of the Constitution, if any question arises whether any matter is or is not a matter in respect of which the Governor is required to act in his discretion, whose decision is FINAL?",
+        "சரத்து 163(2)-ன் படி, ஒரு விஷயம் ஆளுநரின் விருப்ப அதிகாரத்திற்குட்பட்டதா இல்லையா என்ற கேள்வி எழுந்தால், யாருடைய முடிவே இறுதியானது?",
+        {"A": "The Chief Minister of the State", "B": "The Decision of the Governor in his discretion shall be final", "C": "The High Court Chief Justice", "D": "The Speaker of Assembly"},
+        {"A": "மாநில முதலமைச்சர்", "B": "ஆளுநரின் முடிவே இறுதியானது", "C": "உயர் நீதிமன்றத் தலைமை நீதிபதி", "D": "சட்டமன்ற சபாநாயகர்"},
+        "B",
+        "Article 163(2) explicitly provides that if any question arises whether any matter is or is not a matter as respects which the Governor is required to act in his discretion, the decision of the Governor in his discretion SHALL BE FINAL.",
+        "சரத்து 163(2) வெளிப்படையாகக் கூறுகிறது: ஒரு விஷயம் ஆளுநரின் விருப்ப அதிகாரத்திற்குட்பட்டதா இல்லையா என்ற கேள்வி எழுந்தால், ஆளுநர் எடுக்கும் முடிவே இறுதியானது ஆகும்.",
+        "The validity of anything done by the Governor shall not be called in question on the ground that he ought or ought not to have acted in his discretion.",
+        "ஆளுநர் விருப்பப்படி செயல்பட்டிருக்க வேண்டும் அல்லது செயல்பட்டிருக்கக் கூடாது என்ற அடிப்படையில் அவர் செய்த செயலின் செல்லுபடித் தன்மையைக் கேள்வி கேட்க முடியாது.",
+        "Constitutional discretion is wider for Governor than for President (President has no explicit discretionary clause in Art 74).",
+        "குடியரசுத் தலைவரை விட ஆளுநருக்கு அரசியலமைப்பு விருப்ப அதிகாரம் அதிகம்.",
+        "Governor's decision on discretion is constitutionally protected under Art 163(2).",
+        "ஆளுநர் முடிவிற்குச் சரத்து 163(2) பாதுகாப்பு அளிக்கிறது."))
+
+    q.append(mk_q(49, "Easy", "Direct",
+        "Which of the following bodies' annual reports is NOT laid before the State Legislature by the Governor?",
+        "பின்வரும் எந்த அமைப்பின் ஆண்டறிக்கையை ஆளுநர் மாநில சட்டமன்றத்தின் முன் வைப்பது இல்லை?",
+        {"A": "State Public Service Commission (Art 323(2))", "B": "State Finance Commission (Art 243-I)", "C": "State Auditor General / CAG Report (Art 151(2))", "D": "Union Public Service Commission (UPSC)"},
+        {"A": "மாநில பொதுப்பணியாளர் தேர்வாணையம் (சரத்து 323(2))", "B": "மாநில நிதி ஆணையம் (சரத்து 243-I)", "C": "மாநில கணக்குத் தணிக்கையாளர் / CAG அறிக்கை (சரத்து 151(2))", "D": "மத்திய பொதுப்பணியாளர் தேர்வாணையம் (UPSC)"},
+        "D",
+        "The Governor lays before State Legislature: 1. SPSC Report (Art 323(2)), 2. State Finance Commission Report (Art 243-I), 3. CAG State Audit Report (Art 151(2)). UPSC report is laid before PARLIAMENT by the PRESIDENT (Art 323(1)).",
+        "ஆளுநர் மாநில சட்டமன்றத்தில் சமர்ப்பிப்பவை: 1. SPSC அறிக்கை, 2. மாநில நிதி ஆணைய அறிக்கை, 3. CAG மாநிலத் தணிக்கை அறிக்கை. UPSC அறிக்கை குடியரசுத் தலைவரால் நாடாளுமன்றத்தில் சமர்ப்பிக்கப்படுகிறது.",
+        "UPSC report goes to President/Parliament, NOT Governor/State Assembly.",
+        "UPSC அறிக்கை குடியரசுத் தலைவர்/நாடாளுமன்றத்திற்குச் செல்லும், ஆளுநருக்கு அல்ல.",
+        "CAG State Report is submitted to Governor who causes it to be laid before Legislature.",
+        "CAG மாநில அறிக்கை ஆளுநரிடம் அளிக்கப்பட்டு சட்டமன்றத்தில் வைக்கப்படுகிறது.",
+        "SPSC Report is accompanied by a memorandum explaining non-acceptance of advice.",
+        "SPSC ஆலோசனையை ஏற்காததற்கான காரணக் குறிப்புடன் அறிக்கை வைக்கப்படும்."))
+
+    q.append(mk_q(50, "Easy", "Direct",
+        "Which Constitutional Article specifies that all executive action of the Government of a State shall be expressed to be taken in the name of the Governor?",
+        "மாநில அரசின் அனைத்து நிர்வாக நடவடிக்கைகளும் ஆளுநரின் பெயரால் எடுக்கப்படுவதாகக் குறிப்பிடப்பட வேண்டும் எனக் கூறும் அரசியலமைப்புச் சரத்து எது?",
+        {"A": "Article 154", "B": "Article 166", "C": "Article 167", "D": "Article 163"},
+        {"A": "சரத்து 154", "B": "சரத்து 166", "C": "சரத்து 167", "D": "சரத்து 163"},
+        "B",
+        "Article 166(1) states: 'All executive action of the Government of a State shall be expressed to be taken in the name of the Governor.'",
+        "சரத்து 166(1) கூறுகிறது: 'ஒரு மாநில அரசின் அனைத்து நிர்வாக நடவடிக்கைகளும் ஆளுநரின் பெயரால் எடுக்கப்படுவதாகக் குறிப்பிடப்பட வேண்டும்.'",
+        "Article 154 vests executive power in Governor; Article 166 specifies conduct of business of State Government in Governor's name.",
+        "சரத்து 154 நிர்வாக அதிகாரத்தை அளிக்கிறது; சரத்து 166 ஆளுநர் பெயரால் அரசுப் பணிகள் நடத்தப்படுவதைக் குறிப்பிடுகிறது.",
+        "Article 166(3) empowers Governor to make rules for convenient transaction of business.",
+        "சரத்து 166(3) அரசுப் பணிகளை எளிதாக நடத்த ஆளுநருக்கு விதிகளை உருவாக்க அதிகாரம் அளிக்கிறது.",
+        "Formal expression of State Government orders.",
+        "மாநில அரசு உத்தரவுகளின் முறைப்படியான வெளிப்பாடு ஆகும்."))
+
+    return q
+
+if __name__ == "__main__":
+    easy_list = get_easy_mcqs()
+    print(f"Loaded {len(easy_list)} Governor Easy MCQs.")

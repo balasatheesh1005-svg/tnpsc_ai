@@ -1,0 +1,509 @@
+{
+  "topic": "Centre–State Relations",
+  "topic_id": "polity_centre_state_relations",
+  "repository_id": "polity_centre_state_relations",
+  "display_title": "Centre–State Relations",
+  "subject": "polity",
+  "source_notes": [
+    "data/notes/polity/centre_state_relations_part_1.json",
+    "data/notes/polity/centre_state_relations_part_2.json",
+    "data/notes/polity/centre_state_relations_part_3.json"
+  ],
+  "target": {
+    "core": 325,
+    "grand_test": 100,
+    "overall": 425
+  },
+  "subtopics": [
+    {
+      "id": "subtopic_1_legislative_relations_territorial_and_lists",
+      "name": "Legislative Relations: Territorial Extent, Seventh Schedule & Subject Distribution (Arts 245–248, Art 246A)",
+      "coverage": "Articles 245 to 248, Article 246A, Seventh Schedule (Union List 100, State List 61, Concurrent List 52), 42nd Amendment Act 1976 transfers, doctrine of territorial nexus, extra-territorial legislation, residuary powers under Article 248.",
+      "articles": [
+        "Article 245",
+        "Article 246",
+        "Article 246A",
+        "Article 248",
+        "Seventh Schedule"
+      ],
+      "key_concepts": [
+        "Territorial jurisdiction: Parliament can legislate for whole or any part of India and make extra-territorial laws",
+        "State legislature can legislate only for the whole or part of the state, cannot make extra-territorial laws unless territorial nexus exists",
+        "Subject matter: Union List (Entry 1 to 97, now 100 items) — exclusive Parliament power",
+        "State List (Entry 1 to 66, now 61 items) — ordinarily exclusive State power",
+        "Concurrent List (Entry 1 to 47, now 52 items) — shared legislative power",
+        "42nd Amendment Act 1976 transferred 5 subjects from State List to Concurrent List: Education, Forests, Wild animals and birds, Weights and measures, Administration of justice (subordinate courts)",
+        "Article 246A: Special provision on Goods and Services Tax; simultaneous power of Parliament and State Legislatures; exclusive Parliament power for inter-state supply",
+        "Article 248: Residuary powers of legislation (including taxation) vested exclusively in Parliament"
+      ],
+      "tnpsc_traps": [
+        "Residuary legislative powers in India belong to Parliament (Centre), unlike USA and Australia where residuary powers belong to States.",
+        "Education, Forests, Wildlife are in Concurrent List (transferred by 42nd Amendment 1976), NOT State List.",
+        "GST (Article 246A) is NOT an ordinary entry in Concurrent List; it is a special standalone constitutional provision granting simultaneous power."
+      ],
+      "question_models": [
+        "Single-concept list identification",
+        "42nd Amendment transfers identification",
+        "Residuary powers allocation comparison (India vs USA/Australia/Canada)",
+        "Article 246A simultaneous taxation scope",
+        "Territorial nexus doctrine scenario"
+      ],
+      "priority": "High",
+      "core_allocation": 65,
+      "grand_test_allocation": 20
+    },
+    {
+      "id": "subtopic_2_parliament_state_list_and_repugnancy",
+      "name": "Parliamentary Legislation on State List & Repugnancy Rules (Arts 249–255)",
+      "coverage": "Articles 249 to 255. Five exceptional circumstances where Parliament can legislate on State List matters (National Interest Art 249, National Emergency Art 250, State Consent Art 252, International Treaties Art 253, President Rule Art 356). Inconsistency rules (Article 251 vs Article 254). Presidential assent exception under Article 254(2).",
+      "articles": [
+        "Article 249",
+        "Article 250",
+        "Article 251",
+        "Article 252",
+        "Article 253",
+        "Article 254",
+        "Article 255"
+      ],
+      "key_concepts": [
+        "Article 249: Rajya Sabha resolution supported by 2/3 members present and voting in national interest; remains in force for 1 year at a time; law ceases 6 months after resolution expires",
+        "Article 250: During proclamation of National Emergency (Art 352); law ceases 6 months after emergency proclamation ceases",
+        "Article 251: Inconsistency between Parliamentary law under Art 249/250 and State law; State law is inoperative to the extent of repugnancy during conflict, NOT void permanently",
+        "Article 252: Two or more States pass resolutions requesting Parliament to enact a law; applies only to consenting States and other States adopting it; CANNOT be amended or repealed by State Legislatures, ONLY by Parliament",
+        "Article 253: Parliament can make any law for whole or part of India for implementing international treaties, agreements, or conventions, even on State List subjects, without State consent",
+        "Article 254: Repugnancy between Central and State laws on Concurrent List; Central law prevails and State law is void to the extent of repugnancy",
+        "Article 254(2) Exception: If State law is reserved for President and receives Presidential assent, State law prevails in that State; BUT Parliament can still pass a subsequent law amending/repealing it",
+        "Article 255: Procedural recommendation or sanction requirements do not invalidate an Act once passed and assented to"
+      ],
+      "tnpsc_traps": [
+        "Article 249 resolution is passed by RAJYA SABHA alone (with 2/3 present & voting), NOT Lok Sabha or both Houses jointly.",
+        "Article 252 laws CANNOT be amended or repealed by the State Legislatures that requested them; ONLY Parliament can amend or repeal them.",
+        "Article 254(2) Presidential assent does NOT provide permanent immunity; Parliament can override it at any time by passing a subsequent law.",
+        "Article 251 vs 254 distinction: Under Art 251 State law is merely suspended/inoperative, whereas under Art 254 State law is void to the extent of repugnancy."
+      ],
+      "question_models": [
+        "Article matching and constitutional text identification",
+        "Rajya Sabha special federal power under Article 249",
+        "Article 252 State surrender of legislative competence",
+        "Article 253 international treaty override of State List",
+        "Article 254(2) Presidential assent mechanism and Parliamentary override"
+      ],
+      "priority": "High",
+      "core_allocation": 65,
+      "grand_test_allocation": 20
+    },
+    {
+      "id": "subtopic_3_administrative_relations_water_and_interstate",
+      "name": "Administrative Relations, Executive Directions, Water Disputes & Inter-State Council (Arts 256–263, Art 312)",
+      "coverage": "Articles 256 to 263 and Article 312. Constitutional obligations of States (Art 256). Central directions on communications, railways, and languages (Art 257). Delegation of functions (Art 258 vs Art 258A). Full faith and credit (Art 261). Inter-State river water disputes (Art 262 & ISRWD Act 1956). Inter-State Council (Art 263). All India Services (Art 312).",
+      "articles": [
+        "Article 256",
+        "Article 257",
+        "Article 258",
+        "Article 258A",
+        "Article 261",
+        "Article 262",
+        "Article 263",
+        "Article 312"
+      ],
+      "key_concepts": [
+        "Article 256: State executive power must ensure compliance with laws made by Parliament; Union can give necessary directions",
+        "Article 257: Union directions for construction/maintenance of national/military communications and protection of railways; Centre pays extra costs incurred by State",
+        "Article 258: Union may entrust executive functions to State Government with consent of Governor; Parliament law may also confer powers without consent",
+        "Article 258A: State Governor may entrust executive functions to Union Government with consent of President (inserted by 7th CAA 1956)",
+        "Article 261: Full faith and credit clause for public acts, records, and judicial proceedings of Union and States throughout India; civil court decrees executable nationwide",
+        "Article 262: Adjudication of inter-state river water disputes; Parliament by law can bar jurisdiction of Supreme Court and all other courts (Inter-State River Water Disputes Act 1956)",
+        "Article 263: Inter-State Council established by President; advisory and investigatory body, NOT a court; established May 1990 under VP Singh govt on Sarkaria Commission advice; chaired by Prime Minister",
+        "Article 312: Creation of new All India Services (IAS, IPS, IFS in 1966) by Parliament if Rajya Sabha passes resolution with 2/3 present & voting; dual control mechanism"
+      ],
+      "tnpsc_traps": [
+        "Inter-State Council (Article 263) is an ADVISORY body, NOT a judicial tribunal or constitutional court.",
+        "Article 262 river dispute tribunals bar Supreme Court jurisdiction ONLY because of Parliamentary legislation (ISRWD Act 1956), not automatically by the Constitution itself.",
+        "Reversing Article 258 (Centre delegates to State with Governor consent) and Article 258A (State delegates to Centre with President consent).",
+        "Creation of All India Services under Article 312 requires a special resolution by RAJYA SABHA alone, not Lok Sabha."
+      ],
+      "question_models": [
+        "Article 258 vs 258A directionality matching",
+        "Article 262 river water dispute tribunal powers and judicial bar",
+        "Inter-State Council composition, functions, and Sarkaria origins",
+        "Article 312 Rajya Sabha exclusive resolution power",
+        "Failure to comply with Art 256/257 leading to Art 365/356 sanctions"
+      ],
+      "priority": "High",
+      "core_allocation": 65,
+      "grand_test_allocation": 20
+    },
+    {
+      "id": "subtopic_4_financial_relations_taxes_grants_fc_gst",
+      "name": "Financial Relations: Tax Distribution, Grants-in-Aid, Finance Commission & GST Council (Arts 268–293, Art 279A, Art 280)",
+      "coverage": "Articles 268 to 293, Article 279A, Article 280. Distribution of tax revenues (Articles 268, 269, 269A, 270, 271). 80th CAA 2000 alternative devolution scheme. 101st CAA 2016 GST framework. Statutory grants under Article 275 vs Discretionary grants under Article 282. Finance Commission (Article 280). GST Council (Article 279A). Borrowing powers of States (Article 293).",
+      "articles": [
+        "Article 268",
+        "Article 269",
+        "Article 269A",
+        "Article 270",
+        "Article 271",
+        "Article 275",
+        "Article 279A",
+        "Article 280",
+        "Article 282",
+        "Article 293"
+      ],
+      "key_concepts": [
+        "Article 268: Duties levied by Union but collected and appropriated by States (stamp duties on financial instruments)",
+        "Article 269: Taxes levied and collected by Union but assigned to States (inter-state sale/consignment of goods)",
+        "Article 269A: GST on inter-state trade or commerce (IGST levied and collected by Centre, apportioned between Union and States)",
+        "Article 270: Divisible pool of central taxes distributed between Union and States based on Finance Commission recommendations (80th Amendment Act 2000)",
+        "Article 271: Surcharges for Union purposes; proceeds go exclusively to the Union and are not shareable with States (GST is excluded from Art 271)",
+        "Article 275: Statutory grants-in-aid of the revenues of States charged on Consolidated Fund of India on recommendation of Finance Commission; specific grants for tribal welfare",
+        "Article 282: Discretionary grants made by Union or State for any public purpose outside legislative competence (formerly used for Planning Commission funds)",
+        "Article 280: Finance Commission of India (Chairman + 4 members appointed by President every 5 years; quasi-judicial body; recommendations on net tax sharing, Art 275 grants, state funds for local bodies)",
+        "Article 279A: GST Council (Union Finance Minister as Chair, MoS Finance + State Finance Ministers; 3/4 weighted majority rule: Centre 1/3 weight, States 2/3 weight; quorum 1/2)",
+        "Article 293: Borrowing powers of States; States can borrow domestically only upon security of Consolidated Fund of State; CANNOT borrow abroad directly; Central consent required if any previous central loan remains outstanding"
+      ],
+      "tnpsc_traps": [
+        "Finance Commission (Article 280) recommendations are ADVISORY, not legally binding on the Government, though accepted by convention.",
+        "GST Council (Article 279A) voting weightage: Centre has 1/3 weight, all States combined have 2/3 weight; approval requires 3/4 weighted majority (neither Centre nor States alone can push a resolution).",
+        "Article 275 (Statutory grants on FC recommendation) vs Article 282 (Discretionary grants at Union executive will).",
+        "States CANNOT borrow directly from foreign countries or international financial institutions under Article 293; foreign loans must be raised through the Union Government."
+      ],
+      "question_models": [
+        "Tax classification matching (Art 268, 269, 269A, 270, 271)",
+        "Article 275 vs Article 282 grants distinction",
+        "Finance Commission composition, qualifications, and mandate under Art 280",
+        "GST Council composition, voting formula, and quorum under Art 279A",
+        "Article 293 borrowing limitations and Central consent condition"
+      ],
+      "priority": "High",
+      "core_allocation": 65,
+      "grand_test_allocation": 20
+    },
+    {
+      "id": "subtopic_5_federalism_commissions_emergency_and_scenarios",
+      "name": "Federal Dynamics, Sarkaria & Punchhi Commissions, Zonal Councils, Emergency (Arts 355/356/365, Art 131) & Case Law",
+      "coverage": "Nature of Indian federalism (unitary features vs federal features, jurists views: K.C. Wheare, Austin, Morris-Jones, Jennings, Ambedkar). S.R. Bommai v. Union of India (1994) basic structure. Sarkaria Commission (1983-1988) recommendations. Punchhi Commission (2007-2010) recommendations. Zonal Councils (States Reorganisation Act 1956) and North Eastern Council (1971). Interlinkage between Articles 355, 365, and 356. Role of Governor in federal tensions (Arts 200/201). Supreme Court exclusive original jurisdiction under Article 131. NITI Aayog cooperative/competitive federalism.",
+      "articles": [
+        "Article 131",
+        "Article 200",
+        "Article 201",
+        "Article 355",
+        "Article 356",
+        "Article 365"
+      ],
+      "key_concepts": [
+        "Nature of Indian Federalism: Quasi-federal (K.C. Wheare), Cooperative federalism (Granville Austin), Bargaining federalism (Morris-Jones), Federation with strong centralising tendency (Ivor Jennings)",
+        "S.R. Bommai case (1994): Federalism is part of the Basic Structure; Art 356 proclamation subject to judicial review; floor test mandatory; assembly cannot be dissolved before parliamentary approval",
+        "Sarkaria Commission (1983–1988): Justice R.S. Sarkaria, B. Sivaraman, Dr. S.R. Sen; 247 recommendations; Art 356 as last resort; permanent Inter-State Council under Art 263; strengthen All India Services; eminent non-political Governor with 5-year tenure consulted with CM",
+        "Punchhi Commission (2007–2010): Justice M.M. Punchhi; Localised emergency under Arts 355/356; Governor fixed 5-year tenure removable only by State Legislature impeachment; Governor as University Chancellor role removed; equal Rajya Sabha representation",
+        "Zonal Councils: Created under States Reorganisation Act 1956 (STATUTORY bodies, not constitutional); 5 Zonal Councils (Northern, Central, Eastern, Western, Southern); Union Home Minister is common Chairman; advisory role",
+        "North Eastern Council: Created under North Eastern Council Act 1971 (8 states: 7 sisters + Sikkim added 2002); statutory body",
+        "Article 355 (Duty of Union to protect State against external aggression and internal disturbance) -> Article 365 (Failure to comply with Union directions deemed failure of constitutional machinery) -> Article 356 (President Rule)",
+        "Article 131: Supreme Court exclusive original jurisdiction for federal disputes (Centre vs States, State vs State) involving legal rights; excludes private citizens and commercial disputes"
+      ],
+      "tnpsc_traps": [
+        "Zonal Councils are STATUTORY bodies under States Reorganisation Act 1956, NOT constitutional bodies under Article 263.",
+        "Sarkaria Commission was appointed in 1983 (submitted 1988), whereas Punchhi Commission was appointed in 2007 (submitted 2010).",
+        "Article 365 does NOT itself impose President Rule; it creates the legal presumption of breakdown of constitutional machinery enabling Article 356.",
+        "Article 131 applies EXCLUSIVELY to federal units (Centre and States); private citizens, companies, and public sector undertakings CANNOT file suits under Article 131.",
+        "North Eastern Council is NOT one of the 5 Zonal Councils under the 1956 Act; it was created by a separate statute in 1971."
+      ],
+      "question_models": [
+        "Jurists views on Indian federalism matching",
+        "Sarkaria vs Punchhi commission recommendation distinctions",
+        "Zonal Councils vs Inter-State Council institutional comparison",
+        "Article 355, 365, and 356 causal linkage scenarios",
+        "Article 131 federal dispute jurisdiction criteria",
+        "S.R. Bommai landmark principles and judicial review of Article 356"
+      ],
+      "priority": "High",
+      "core_allocation": 65,
+      "grand_test_allocation": 20
+    }
+  ],
+  "articles": [
+    {"article": "Article 245", "title": "Extent of laws made by Parliament and by the Legislatures of States"},
+    {"article": "Article 246", "title": "Subject-matter of laws made by Parliament and by the Legislatures of States (Seventh Schedule)"},
+    {"article": "Article 246A", "title": "Special provision with respect to goods and services tax (101st CAA 2016)"},
+    {"article": "Article 248", "title": "Residuary powers of legislation"},
+    {"article": "Article 249", "title": "Power of Parliament to legislate with respect to a matter in the State List in the national interest"},
+    {"article": "Article 250", "title": "Power of Parliament to legislate with respect to any matter in the State List if a Proclamation of Emergency is in operation"},
+    {"article": "Article 251", "title": "Inconsistency between laws made by Parliament under articles 249 and 250 and laws made by the Legislatures of States"},
+    {"article": "Article 252", "title": "Power of Parliament to legislate for two or more States by consent and adoption of such legislation by any other State"},
+    {"article": "Article 253", "title": "Legislation for giving effect to international agreements"},
+    {"article": "Article 254", "title": "Inconsistency between laws made by Parliament and laws made by the Legislatures of States (Repugnancy)"},
+    {"article": "Article 255", "title": "Requirements as to recommendations and previous sanctions to be regarded as matters of procedure only"},
+    {"article": "Article 256", "title": "Obligation of States and the Union"},
+    {"article": "Article 257", "title": "Control of the Union over States in certain cases (Communications, Railways)"},
+    {"article": "Article 258", "title": "Power of the Union to confer powers, etc., on States in certain cases"},
+    {"article": "Article 258A", "title": "Power of the States to entrust functions to the Union (7th CAA 1956)"},
+    {"article": "Article 261", "title": "Public acts, records and judicial proceedings (Full faith and credit)"},
+    {"article": "Article 262", "title": "Adjudication of disputes relating to waters of inter-State rivers or river valleys"},
+    {"article": "Article 263", "title": "Provisions with respect to an inter-State Council"},
+    {"article": "Article 268", "title": "Duties levied by the Union but collected and appropriated by the States"},
+    {"article": "Article 269", "title": "Taxes levied and collected by the Union but assigned to the States"},
+    {"article": "Article 269A", "title": "Levy and collection of goods and services tax in course of inter-State trade or commerce"},
+    {"article": "Article 270", "title": "Taxes levied and distributed between the Union and the States (Divisible pool)"},
+    {"article": "Article 271", "title": "Surcharge on certain duties and taxes for purposes of the Union"},
+    {"article": "Article 275", "title": "Grants from the Union to certain States (Statutory grants on FC recommendation)"},
+    {"article": "Article 279A", "title": "Goods and Services Tax Council (101st CAA 2016)"},
+    {"article": "Article 280", "title": "Finance Commission of India"},
+    {"article": "Article 282", "title": "Discretionary grants for any public purpose"},
+    {"article": "Article 293", "title": "Borrowing by States"},
+    {"article": "Article 312", "title": "All-India Services (Rajya Sabha 2/3 resolution)"},
+    {"article": "Article 355", "title": "Duty of the Union to protect States against external aggression and internal disturbance"},
+    {"article": "Article 356", "title": "Provisions in case of failure of constitutional machinery in States (President Rule)"},
+    {"article": "Article 365", "title": "Effect of failure to comply with, or to give effect to, directions given by the Union"},
+    {"article": "Article 131", "title": "Original jurisdiction of the Supreme Court in federal disputes"}
+  ],
+  "important_cases": [
+    {
+      "case": "S.R. Bommai v. Union of India (1994)",
+      "principle": "Federalism is an indestructible part of the Basic Structure; Article 356 proclamation is subject to judicial review; floor test is mandatory; legislative assembly cannot be dissolved before parliamentary approval."
+    },
+    {
+      "case": "State of West Bengal v. Union of India (1963)",
+      "principle": "Indian Constitution is not truly federal in the classical American sense; sovereign powers are distributed with a predominant Union authority."
+    },
+    {
+      "case": "State of Karnataka v. Union of India (1977)",
+      "principle": "Central Government power to appoint an inquiry commission under Commissions of Inquiry Act 1952 to investigate State Chief Minister/Ministers is constitutionally valid and does not violate federalism."
+    },
+    {
+      "case": "State of Bihar v. Union of India (1970)",
+      "principle": "Article 131 jurisdiction cannot be invoked by or against a public corporation, government company, or private individual; applies strictly to Union and States as constitutional constituent units."
+    }
+  ],
+  "commissions_committees": [
+    {
+      "name": "Administrative Reforms Commission (ARC)",
+      "year": 1966,
+      "chairman": "Morarji Desai (later K. Hanumanthaiya)",
+      "key_focus": "Inter-State Council establishment under Article 263, guidelines for Governors, decentralisation of planning."
+    },
+    {
+      "name": "Sarkaria Commission",
+      "year": 1983,
+      "report_year": 1988,
+      "chairman": "Justice R.S. Sarkaria",
+      "members": ["B. Sivaraman", "Dr. S.R. Sen"],
+      "recommendations_count": 247,
+      "key_recommendations": "Sparing use of Art 356 as last resort; permanent Inter-State Council under Art 263; strengthening All India Services; non-political Governor with 5-year tenure; consulting CM for Governor appointment; residuary non-tax powers to Concurrent List."
+    },
+    {
+      "name": "Punchhi Commission",
+      "year": 2007,
+      "report_year": 2010,
+      "chairman": "Justice M.M. Punchhi",
+      "members": ["D.K. Srivastava", "N.R. Madhava Menon", "Vinod Kumar Duggal", "Amaresh Bagchi"],
+      "recommendations_count": 312,
+      "key_recommendations": "Localised emergency under Articles 355/356; Governor fixed 5-year tenure removable only by State Legislature impeachment; removal of Governor as University Chancellor; equal Rajya Sabha representation of States."
+    },
+    {
+      "name": "Finance Commission of India (Article 280)",
+      "year": "Every 5 years",
+      "mandate": "Quasi-judicial constitutional body recommending devolution of divisible pool taxes (Art 270) and principles of statutory grants-in-aid (Art 275)."
+    },
+    {
+      "name": "Goods and Services Tax (GST) Council (Article 279A)",
+      "year": 2016,
+      "mandate": "Constitutional federal body for indirect tax coordination with 3/4 weighted majority (Union 1/3, States 2/3)."
+    }
+  ],
+  "constitutional_provisions": [
+    "Part XI: Relations Between the Union and the States (Chapter I: Legislative Relations Arts 245-255; Chapter II: Administrative Relations Arts 256-263)",
+    "Part XII: Finance, Property, Contracts and Suits (Chapter I: Finance Arts 264-290A; Chapter II: Borrowing Arts 292-293)",
+    "Part XIV: Services Under the Union and the States (Article 312: All-India Services)",
+    "Part XVIII: Emergency Provisions (Articles 355, 356, 365 affecting federal balance)",
+    "Seventh Schedule: Three Legislative Lists (List I Union List, List II State List, List III Concurrent List)"
+  ],
+  "comparison_targets": [
+    {
+      "concept_1": "Article 249 (National Interest)",
+      "concept_2": "Article 250 (National Emergency)",
+      "distinction": "Art 249 requires Rajya Sabha 2/3 resolution and lasts 1 year per resolution; Art 250 operates automatically during Art 352 proclamation and covers all State List subjects."
+    },
+    {
+      "concept_1": "Article 252 (State Consent)",
+      "concept_2": "Article 253 (International Treaties)",
+      "distinction": "Art 252 requires consenting resolutions by 2 or more State Assemblies and law cannot be amended by States; Art 253 allows Parliament to legislate on State List unilaterally to implement international treaties without state consent."
+    },
+    {
+      "concept_1": "Article 258 (Union delegating to State)",
+      "concept_2": "Article 258A (State delegating to Union)",
+      "distinction": "Art 258 requires Governor consent (or Central statute without consent); Art 258A was added by 7th CAA 1956 and requires President consent."
+    },
+    {
+      "concept_1": "Article 275 (Statutory Grants)",
+      "concept_2": "Article 282 (Discretionary Grants)",
+      "distinction": "Art 275 grants are charged on Consolidated Fund of India based on Finance Commission recommendations; Art 282 grants are executive discretionary allocations for public purposes."
+    },
+    {
+      "concept_1": "Inter-State Council (Art 263)",
+      "concept_2": "Zonal Councils (States Reorganisation Act 1956)",
+      "distinction": "Inter-State Council is a CONSTITUTIONAL body created by President under Art 263 chaired by Prime Minister; Zonal Councils are STATUTORY bodies created by 1956 Act chaired by Union Home Minister."
+    },
+    {
+      "concept_1": "Finance Commission (Art 280)",
+      "concept_2": "GST Council (Art 279A)",
+      "distinction": "Finance Commission is a 5-member quasi-judicial expert body advising on net tax devolution; GST Council is a permanent federal political decision-making body with 3/4 voting rules."
+    },
+    {
+      "concept_1": "Sarkaria Commission (1983)",
+      "concept_2": "Punchhi Commission (2007)",
+      "distinction": "Sarkaria focused on reviving Art 263 ISC and curbing Art 356 misuse; Punchhi proposed localized emergency and State Legislature impeachment for Governors."
+    }
+  ],
+  "chronology_targets": [
+    {
+      "year": 1950,
+      "event": "Constitution of India comes into force establishing Part XI and Part XII federal architecture."
+    },
+    {
+      "year": 1956,
+      "event": "States Reorganisation Act 1956 enacted establishing 5 statutory Zonal Councils; 7th CAA inserts Article 258A."
+    },
+    {
+      "year": 1966,
+      "event": "First Administrative Reforms Commission (ARC) appointed under Morarji Desai."
+    },
+    {
+      "year": 1971,
+      "event": "North Eastern Council Act 1971 enacted creating statutory council for North-Eastern region."
+    },
+    {
+      "year": 1976,
+      "event": "42nd Constitutional Amendment Act transfers 5 subjects (Education, Forests, Wildlife, Weights/Measures, Subordinate Courts) from State List to Concurrent List."
+    },
+    {
+      "year": 1983,
+      "event": "Sarkaria Commission on Centre–State Relations appointed by Union Government (chaired by Justice R.S. Sarkaria)."
+    },
+    {
+      "year": 1988,
+      "event": "Sarkaria Commission submits its landmark report with 247 recommendations."
+    },
+    {
+      "year": 1990,
+      "event": "Inter-State Council formally established under Article 263 by Presidential Order under Prime Minister V.P. Singh."
+    },
+    {
+      "year": 1994,
+      "event": "Supreme Court delivers landmark 9-judge bench judgment in S.R. Bommai v. Union of India declaring Federalism as Basic Structure."
+    },
+    {
+      "year": 2000,
+      "event": "80th Constitutional Amendment Act introduces alternative scheme of tax devolution (divisible pool) under Article 270 based on 10th Finance Commission."
+    },
+    {
+      "year": 2007,
+      "event": "Punchhi Commission on Centre–State Relations appointed by Government of India (chaired by Justice M.M. Punchhi)."
+    },
+    {
+      "year": 2010,
+      "event": "Punchhi Commission submits its comprehensive 7-volume report with 312 recommendations."
+    },
+    {
+      "year": 2015,
+      "event": "NITI Aayog established on January 1, 2015 replacing the Planning Commission to foster cooperative and competitive federalism."
+    },
+    {
+      "year": 2016,
+      "event": "101st Constitutional Amendment Act enacted introducing Goods and Services Tax framework (Articles 246A, 269A, 279A)."
+    },
+    {
+      "year": 2017,
+      "event": "Nationwide Goods and Services Tax (GST) rolled out on July 1, 2017."
+    }
+  ],
+  "tnpsc_traps": [
+    {
+      "trap_id": "TRAP_01",
+      "name": "Residuary Powers Allocation",
+      "description": "Residuary powers in India are vested exclusively in Parliament under Article 248, unlike USA and Australia where residuary powers belong to States."
+    },
+    {
+      "trap_id": "TRAP_02",
+      "name": "Education and Forests List Status",
+      "description": "Education and Forests are in the Concurrent List (transferred by 42nd Amendment 1976), NOT in the State List."
+    },
+    {
+      "trap_id": "TRAP_03",
+      "name": "GST Nature (Art 246A)",
+      "description": "GST under Article 246A is a special standalone constitutional provision granting simultaneous power, NOT an ordinary entry in Concurrent List."
+    },
+    {
+      "trap_id": "TRAP_04",
+      "name": "Article 249 Rajya Sabha Special Power",
+      "description": "Article 249 resolution to legislate on State List in national interest is passed by RAJYA SABHA alone (with 2/3 present and voting), NOT Lok Sabha or both houses jointly."
+    },
+    {
+      "trap_id": "TRAP_05",
+      "name": "Article 252 Irrevocability by States",
+      "description": "State Legislatures that pass resolutions under Article 252 surrender legislative competence; the resulting Central Act CANNOT be amended or repealed by State Assemblies, ONLY by Parliament."
+    },
+    {
+      "trap_id": "TRAP_06",
+      "name": "Article 254(2) Presidential Assent Override",
+      "description": "State law on Concurrent List with Presidential assent prevails in that State under Art 254(2), BUT Parliament can override it subsequently at any time."
+    },
+    {
+      "trap_id": "TRAP_07",
+      "name": "Inter-State Council Nature (Art 263)",
+      "description": "Inter-State Council is an ADVISORY body, NOT a judicial court or arbitral tribunal; it cannot deliver binding legal adjudications."
+    },
+    {
+      "trap_id": "TRAP_08",
+      "name": "Article 262 River Dispute Bar",
+      "description": "Article 262 does not directly bar Supreme Court jurisdiction; it EMPOWERS Parliament by law to bar judicial jurisdiction (which Parliament did via ISRWD Act 1956)."
+    },
+    {
+      "trap_id": "TRAP_09",
+      "name": "Article 258 vs 258A Reversal",
+      "description": "Article 258 is Centre delegating functions to State with Governor consent; Article 258A (added by 7th CAA 1956) is State delegating functions to Centre with President consent."
+    },
+    {
+      "trap_id": "TRAP_10",
+      "name": "Creation of All India Services (Art 312)",
+      "description": "New All India Services can be created ONLY after a resolution passed by RAJYA SABHA alone with 2/3 present and voting, NOT Lok Sabha alone."
+    },
+    {
+      "trap_id": "TRAP_11",
+      "name": "Zonal Councils Legal Status",
+      "description": "Zonal Councils are STATUTORY bodies established under States Reorganisation Act 1956, NOT constitutional bodies under Article 263."
+    },
+    {
+      "trap_id": "TRAP_12",
+      "name": "Zonal Council vs ISC Chairmanship",
+      "description": "Zonal Councils are chaired by the UNION HOME MINISTER; the Inter-State Council is chaired by the PRIME MINISTER."
+    },
+    {
+      "trap_id": "TRAP_13",
+      "name": "GST Council Weighted Voting Formula",
+      "description": "GST Council voting weightage: Centre has 1/3 weight, all States combined have 2/3 weight; approval requires 3/4 weighted majority (neither Centre nor States can act alone)."
+    },
+    {
+      "trap_id": "TRAP_14",
+      "name": "State Foreign Borrowing Bar",
+      "description": "State Governments have NO constitutional power to borrow loans from foreign governments or international institutions under Article 293; foreign loans must be negotiated through the Union Government."
+    },
+    {
+      "trap_id": "TRAP_15",
+      "name": "Article 131 Exclusive Federal Jurisdiction",
+      "description": "Article 131 exclusive original jurisdiction applies ONLY to disputes between Union and States or between States involving legal rights; private citizens, corporations, and PSUs CANNOT invoke Article 131."
+    }
+  ],
+  "source_boundaries": [
+    "Centre–State Relations Part 1 Notes (data/notes/polity/centre_state_relations_part_1.json)",
+    "Centre–State Relations Part 2 Notes (data/notes/polity/centre_state_relations_part_2.json)",
+    "Centre–State Relations Part 3 Notes (data/notes/polity/centre_state_relations_part_3.json)",
+    "M. Laxmikanth – Indian Polity (Chapters on Centre–State Relations, Inter-State Relations, NITI Aayog, Emergency Provisions)",
+    "NCERT Class XI Political Science – Indian Constitution at Work (Chapter on Federalism)",
+    "Tamil Nadu Samacheer Kalvi Class 10 & Class 12 Political Science (Chapters on Federalism and Centre–State Relations)"
+  ],
+  "mcq_generation_rules": {
+    "avoid_repetition": true,
+    "require_bilingual": true,
+    "require_distractor_analysis": true,
+    "require_revision_fact": true
+  }
+}

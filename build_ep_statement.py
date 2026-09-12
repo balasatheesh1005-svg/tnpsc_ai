@@ -1,0 +1,1183 @@
+# -*- coding: utf-8 -*-
+"""
+Generator for Emergency Provisions Statement-Based MCQs (50 questions: EP_S_001 to EP_S_050)
+Strictly adheres to:
+1. 24-field schema verified by ContentValidator
+2. Bilingual parity (English and Tamil)
+3. Balanced answer distribution: A: 13, B: 12, C: 12, D: 13 (Total: 50)
+4. Full coverage of Emergency Provisions statement patterns
+"""
+
+import json
+import os
+from collections import Counter
+from ep_mcq_helper import make_ep_q
+from tools.nova_content_engine.validator import ContentValidator
+
+PREFIX = "EP_S_"
+DIFF = "Medium"
+
+def get_statement_questions_batch1():
+    qs = []
+
+    # 001 - Key A
+    qs.append(make_ep_q(
+        PREFIX, 1, DIFF, "Statement MCQ", "National Emergency - Article 352 Grounds",
+        "Consider the following statements regarding the grounds for proclaiming National Emergency under Article 352:\n1. A National Emergency can be proclaimed by the President even before the actual occurrence of war or external aggression if satisfied that there is imminent danger thereof.\n2. An emergency declared on the ground of 'armed rebellion' is designated as an 'Internal Emergency'.\nWhich of the statements given above is/are correct?",
+        "சரத்து 352-ன் கீழ் தேசிய அவசரநிலையைப் பிரகடனம் செய்வதற்கான காரணங்கள் பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. போர் அல்லது வெளிநாட்டு ஆக்கிரமிப்பு உண்மையில் நிகழ்வதற்கு முன்பே, அத்தகைய உடனடி ஆபத்து இருப்பதாக திருப்தியடைந்தால் குடியரசுத் தலைவர் தேசிய அவசரநிலையைப் பிரகடனம் செய்யலாம்.\n2. 'ஆயுதமேந்திய கிளர்ச்சி' என்ற அடிப்படையில் அறிவிக்கப்படும் அவசரநிலை 'உள்நாட்டு அவசரநிலை' என்று குறிப்பிடப்படுகிறது.\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
+        "Both 1 and 2", "1 மற்றும் 2 ஆகிய இரண்டும்",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Neither 1 nor 2", "1 மற்றும் 2 ஆகிய இரண்டும் அல்ல",
+        "A",
+        "Both statements are correct. Under Article 352(1), the President may issue a proclamation even before actual aggression if there is imminent danger. Proclamations based on War or External Aggression are called 'External Emergency', whereas those based on Armed Rebellion are termed 'Internal Emergency'.",
+        "இரு கூற்றுகளும் சரியானவை. சரத்து 352(1)-ன் கீழ் போர் ஏற்படுவதற்கு முன்பே உடனடி அச்சுறுத்தல் இருப்பின் அவசரநிலையை அறிவிக்கலாம். போர்/வெளிநாட்டு ஆக்கிரமிப்பு அடிப்படையில் அமைவது 'வெளிப்புற அவசரநிலை' என்றும், ஆயுதமேந்திய கிளர்ச்சி அடிப்படையில் அமைவது 'உள்நாட்டு அவசரநிலை' என்றும் அழைக்கப்படுகிறது.",
+        "Option A is correct; both Statement 1 and Statement 2 are accurate constitutional provisions.", "விருப்பம் A சரியானது; கூற்று 1 மற்றும் கூற்று 2 இரண்டும் துல்லியமான அரசியலமைப்பு விதிகளாகும்.",
+        "Option B ignores Statement 2, which is also completely valid.", "விருப்பம் B கூற்று 2-ஐப் புறக்கணிக்கிறது, அதுவும் முழுமையாக சரியானது.",
+        "Option C ignores Statement 1, which accurately reflects Article 352(1).", "விருப்பம் C கூற்று 1-ஐப் புறக்கணிக்கிறது, அது சரத்து 352(1)-ஐச் சரியாகக் காட்டுகிறது.",
+        "Option D incorrectly claims both statements are false.", "விருப்பம் D இரு கூற்றுகளும் தவறானவை என்று தவறாகக் கூறுகிறது.",
+        "TNPSC Concept: Emergency can be declared anticipating imminent danger — actual invasion is not a prerequisite.",
+        "TNPSC கருத்து: உடனடி ஆபத்தை எதிர்பார்த்தும் அவசரநிலையை அறிவிக்கலாம் — உண்மையான ஊடுருவல் முன்கூட்டியே நிகழ வேண்டிய கட்டாயமில்லை.",
+        "The 44th Amendment Act 1978 introduced the term 'armed rebellion' replacing 'internal disturbance' in Article 352.",
+        "1978-ஆம் ஆண்டின் 44-வது திருத்தச் சட்டம் சரத்து 352-ல் 'உள்நாட்டு அமைதியின்மை' என்ற சொல்லுக்குப் பதிலாக 'ஆயுதமேந்திய கிளர்ச்சி' என்பதை அறிமுகப்படுத்தியது."
+    ))
+
+    # 002 - Key B
+    qs.append(make_ep_q(
+        PREFIX, 2, DIFF, "Statement MCQ", "Cabinet Written Advice Requirement",
+        "Consider the following statements regarding the proclamation procedure of National Emergency:\n1. The President can proclaim a National Emergency only after receiving a written recommendation from the Prime Minister alone.\n2. The term 'Cabinet' was inserted into the text of the Constitution of India for the first time by the 44th Amendment Act of 1978 in Article 352.\nWhich of the statements given above is/are correct?",
+        "தேசிய அவசரநிலைப் பிரகடன நடைமுறை பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. பிரதமரின் தனிப்பட்ட எழுத்துப்பூர்வப் பரிந்துரையைப் பெற்ற பிறகே குடியரசுத் தலைவர் தேசிய அவசரநிலையைப் பிரகடனம் செய்ய முடியும்.\n2. 'அமைச்சரவை' (Cabinet) என்ற சொல் இந்திய அரசியலமைப்பு சாசனத்தில் முதன்முதலாக 1978-ஆம் ஆண்டின் 44-வது திருத்தச் சட்டத்தின் மூலம் சரத்து 352-ல் சேர்க்கப்பட்டது.\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Both 1 and 2", "1 மற்றும் 2 ஆகிய இரண்டும்",
+        "Neither 1 nor 2", "1 மற்றும் 2 ஆகிய இரண்டும் அல்ல",
+        "B",
+        "Statement 1 is INCORRECT: The President can proclaim National Emergency only on the written recommendation of the Union Cabinet (Prime Minister and other ministers of cabinet rank under Article 75), NOT the Prime Minister alone. Statement 2 is CORRECT: The term 'Cabinet' was defined and inserted into Article 352(3) by the 44th Amendment Act, 1978.",
+        "கூற்று 1 தவறு: பிரதமர் மட்டும் அல்லாமல், மத்திய அமைச்சரவையின் (பிரதமர் மற்றும் கேபினட் அந்தஸ்து அமைச்சர்கள்) எழுத்துப்பூர்வ முடிவின் பேரிலேயே பிரகடனம் செய்ய முடியும். கூற்று 2 சரி: 'கேபினட்' என்ற சொல் 1978-ஆம் ஆண்டின் 44-வது திருத்தச் சட்டத்தால் சரத்து 352(3)-ல் முதன்முறையாக இணைக்கப்பட்டது.",
+        "Option A is incorrect because PM alone cannot advise emergency after 1978.", "விருப்பம் A தவறானது, ஏனெனில் 1978-க்குப் பிறகு பிரதமர் மட்டும் அவசரநிலைக்குப் பரிந்துரைக்க முடியாது.",
+        "Option B is correct because Statement 2 alone is constitutionally sound.", "விருப்பம் B சரியானது, ஏனெனில் கூற்று 2 மட்டுமே அரசியலமைப்புப்படி சரியானது.",
+        "Option C fails because Statement 1 is factually erroneous.", "விருப்பம் C தவறானது, ஏனெனில் கூற்று 1 உண்மைக் குறைபாடுடையது.",
+        "Option D fails because Statement 2 is historically and legally true.", "விருப்பம் D தவறானது, ஏனெனில் கூற்று 2 வரலாற்று மற்றும் சட்டப்பூர்வ உண்மையாக உள்ளது.",
+        "High-Yield Fact: The word 'Cabinet' appears only ONCE in the Indian Constitution, under Article 352(3).",
+        "உயர்-விளைச்சல் உண்மை: 'கேபினட்' (அமைச்சரவை) என்ற சொல் இந்திய அரசியலமைப்பில் ஒரே ஒரு முறை மட்டுமே, சரத்து 352(3)-ன் கீழ் இடம்பெற்றுள்ளது.",
+        "In 1975, Indira Gandhi advised President Fakhruddin Ali Ahmed to declare emergency without consulting the cabinet.",
+        "1975-ல் இந்திரா காந்தி அமைச்சரவையைக் கலந்தாலோசிக்காமல் குடியரசுத் தலைவர் பக்ருதீன் அலி அகமதுவுக்கு அவசரநிலை பிரகடனம் செய்ய ஆலோசனை வழங்கினார்."
+    ))
+
+    # 003 - Key C
+    qs.append(make_ep_q(
+        PREFIX, 3, DIFF, "Statement MCQ", "Parliamentary Approval & Majority Rules",
+        "Consider the following statements regarding the parliamentary approval of National Emergency under Article 352:\n1. A proclamation of National Emergency must be approved by both Houses of Parliament within one month from the date of its issue.\n2. Every resolution approving the proclamation or its continuance must be passed by a special majority in each House of Parliament.\nWhich of the statements given above is/are correct?",
+        "சரத்து 352-ன் கீழ் தேசிய அவசரநிலைக்கு பாராளுமன்ற ஒப்புதல் அளிப்பது பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. தேசிய அவசரநிலைப் பிரகடனம் வெளியிடப்பட்ட நாளிலிருந்து ஒரு மாதத்திற்குள் பாராளுமன்றத்தின் இரு அவைகளாலும் ஒப்புதல் அளிக்கப்பட வேண்டும்.\n2. பிரகடனத்திற்கு ஒப்புதல் அளிக்கும் அல்லது அதைத் தொடரச் செய்யும் ஒவ்வொரு தீர்மானமும் பாராளுமன்றத்தின் ஒவ்வொரு அவையிலும் சிறப்புப் பெரும்பான்மையால் நிறைவேற்றப்பட வேண்டும்.\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Both 1 and 2", "1 மற்றும் 2 ஆகிய இரண்டும்",
+        "Neither 1 nor 2", "1 மற்றும் 2 ஆகிய இரண்டும் அல்ல",
+        "C",
+        "Both statements are correct. The 44th Constitutional Amendment Act of 1978 reduced the approval period from two months to one month (Article 352(4)) and introduced the requirement of a special majority (majority of total membership + 2/3 of members present and voting) instead of a simple majority.",
+        "இரு கூற்றுகளும் சரியானவை. 1978-ன் 44-வது அரசியலமைப்பு திருத்தச் சட்டம் ஒப்புதல் காலத்தை இரண்டு மாதங்களிலிருந்து ஒரு மாதமாகக் குறைத்ததுடன் (சரத்து 352(4)), எளிய பெரும்பான்மைக்கு பதிலாக சிறப்புப் பெரும்பான்மை (மொத்த உறுப்பினர்களில் பெரும்பான்மை + வருகை தந்து வாக்களிப்பவர்களில் 2/3 பங்கு) தேவையையும் கொண்டு வந்தது.",
+        "Option A ignores Statement 2, which is a key 44th Amendment reform.", "விருப்பம் A கூற்று 2-ஐப் புறக்கணிக்கிறது, அது ஒரு முக்கிய 44-வது திருத்தச் சீர்திருத்தமாகும்.",
+        "Option B ignores Statement 1, which is the exact constitutional timeframe.", "விருப்பம் B கூற்று 1-ஐப் புறக்கணிக்கிறது, அது துல்லியமான அரசியலமைப்பு காலக்கெடுவாகும்.",
+        "Option C is correct because both statements represent current constitutional law.", "விருப்பம் C சரியானது, ஏனெனில் இரு கூற்றுகளும் தற்போதைய அரசியலமைப்புச் சட்டத்தைக் குறிக்கின்றன.",
+        "Option D is incorrect as both statements are factually accurate.", "விருப்பம் D தவறானது, ஏனெனில் இரு கூற்றுகளும் உண்மைக்குப் புறம்பானவை அல்ல.",
+        "Remember: Art 352 = 1 Month + Special Majority; Art 356 & 360 = 2 Months + Simple Majority.",
+        "நினைவில் கொள்க: சரத்து 352 = 1 மாதம் + சிறப்புப் பெரும்பான்மை; சரத்து 356 & 360 = 2 மாதங்கள் + எளிய பெரும்பான்மை.",
+        "Before the 44th CAA 1978, a proclamation of National Emergency could be approved by a simple majority within two months.",
+        "1978-ஆம் ஆண்டின் 44-வது திருத்தத்திற்கு முன்பு, தேசிய அவசரநிலைப் பிரகடனத்திற்கு இரண்டு மாதங்களுக்குள் எளிய பெரும்பான்மையால் ஒப்புதல் அளிக்க முடிந்தது."
+    ))
+
+    # 004 - Key D
+    qs.append(make_ep_q(
+        PREFIX, 4, DIFF, "Statement MCQ", "Duration and Extension Rules",
+        "Consider the following statements regarding the duration and revocation of National Emergency:\n1. Once approved by both Houses, a National Emergency continues for a maximum period of one year before requiring fresh approval.\n2. A resolution disapproving the continuation of National Emergency must be passed by both Houses of Parliament by a special majority.\nWhich of the statements given above is/are correct?",
+        "தேசிய அவசரநிலையின் கால அளவு மற்றும் ரத்து செய்தல் பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. இரு அவைகளாலும் ஒப்புதல் அளிக்கப்பட்டவுடன், புதிய ஒப்புதல் தேவைப்படுவதற்கு முன்பு தேசிய அவசரநிலை அதிகபட்சமாக ஒரு வருடம் நீடிக்கும்.\n2. தேசிய அவசரநிலை தொடர்வதை நிராகரிக்கும் தீர்மானம் பாராளுமன்றத்தின் இரு அவைகளாலும் சிறப்புப் பெரும்பான்மையுடன் நிறைவேற்றப்பட வேண்டும்.\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Both 1 and 2", "1 மற்றும் 2 ஆகிய இரண்டும்",
+        "Neither 1 nor 2", "1 மற்றும் 2 ஆகிய இரண்டும் அல்ல",
+        "D",
+        "Both statements are INCORRECT. Statement 1 is incorrect: once approved, it continues for 6 months (not one year) at a time, though it can be extended indefinitely with fresh 6-month approvals. Statement 2 is incorrect: a resolution of disapproval requires approval ONLY by the Lok Sabha (not both Houses) and by a SIMPLE majority (not a special majority), as per the 44th Amendment.",
+        "இரு கூற்றுகளும் தவறானவை. கூற்று 1 தவறு: ஒப்புதல் அளிக்கப்பட்டால் அது ஒரு நேரத்தில் 6 மாதங்கள் மட்டுமே (ஒரு வருடம் அல்ல) நீடிக்கும்; எனினும் 6 மாத கால ஒப்புதல்கள் மூலம் காலவரையின்றி நீட்டிக்கப்படலாம். கூற்று 2 தவறு: அவசரநிலையை நிராகரிக்கும் தீர்மானம் மக்களவையால் மட்டுமே (இரு அவைகளும் அல்ல) மற்றும் எளிய பெரும்பான்மையால் (சிறப்புப் பெரும்பான்மை அல்ல) நிறைவேற்றப்பட வேண்டும்.",
+        "Option A is wrong because duration is 6 months, not 1 year.", "விருப்பம் A தவறு, ஏனெனில் கால அளவு 6 மாதங்கள், 1 வருடம் அல்ல.",
+        "Option B is wrong because disapproval is by Lok Sabha alone by simple majority.", "விருப்பம் B தவறு, ஏனெனில் நிராகரிப்பு மக்களவையால் மட்டுமே எளிய பெரும்பான்மையில் செய்யப்படுகிறது.",
+        "Option C is wrong because both statements are false.", "விருப்பம் C தவறு, ஏனெனில் இரு கூற்றுகளும் தவறானவை.",
+        "Option D is correct as neither Statement 1 nor Statement 2 is valid.", "விருப்பம் D சரியானது, ஏனெனில் கூற்று 1 மற்றும் கூற்று 2 ஆகிய இரண்டும் தவறானவை.",
+        "TNPSC Trap: Approval = Both Houses + Special Majority; Disapproval = Lok Sabha only + Simple Majority!",
+        "TNPSC பொறி: ஒப்புதல் = இரு அவைகளும் + சிறப்புப் பெரும்பான்மை; நிராகரிப்பு = மக்களவை மட்டுமே + எளிய பெரும்பான்மை!",
+        "Under Article 352(8), if 1/10th of the members of Lok Sabha give written notice, a special sitting must be held within 14 days.",
+        "சரத்து 352(8)-ன் கீழ், மக்களவையின் 1/10 பங்கு உறுப்பினர்கள் எழுத்துப்பூர்வ அறிவிப்பு அளித்தால், 14 நாட்களுக்குள் சிறப்பு அமர்வு கூட்டப்பட வேண்டும்."
+    ))
+
+    # 005 - Key A
+    qs.append(make_ep_q(
+        PREFIX, 5, DIFF, "Statement MCQ", "Impact on Centre-State Relations - Article 353",
+        "Consider the following statements regarding the impact of National Emergency on Centre-State relations under Article 353:\n1. The executive power of the Centre extends to directing any State regarding the manner in which its executive power is to be exercised.\n2. Although the legislative power of Parliament extends to making laws on State List subjects, the State Legislative Assembly is not suspended or dissolved.\nWhich of the statements given above is/are correct?",
+        "சரத்து 353-ன் கீழ் மத்திய-மாநில உறவுகள் மீது தேசிய அவசரநிலை ஏற்படுத்தும் தாக்கம் பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. எந்தவொரு மாநிலமும் தனது நிர்வாக அதிகாரத்தை எவ்வாறு செயல்படுத்த வேண்டும் என்பது குறித்து வழிகாட்டுதல்களை வழங்க மத்திய நிர்வாக அதிகாரம் விரிவடைகிறது.\n2. மாநிலப் பட்டியல் விவகாரங்களில் சட்டங்களை இயற்ற பாராளுமன்றத்தின் சட்டவாக்க அதிகாரம் விரிவடைந்தாலும், மாநில சட்டமன்றம் இடைநிறுத்தப்படவோ அல்லது கலைக்கப்படவோ இல்லை.\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
+        "Both 1 and 2", "1 மற்றும் 2 ஆகிய இரண்டும்",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Neither 1 nor 2", "1 மற்றும் 2 ஆகிய இரண்டும் அல்ல",
+        "A",
+        "Both statements are correct. During National Emergency under Article 353, the Centre assumes complete executive control, but the State government continues to exist. Similarly, under Article 250, Parliament can legislate on State List subjects, but the State Legislature is NOT dissolved; its powers become concurrent with Parliament.",
+        "இரு கூற்றுகளும் சரியானவை. சரத்து 353-ன் கீழ் தேசிய அவசரநிலையின் போது மத்திய அரசு முழு நிர்வாகக் கட்டுப்பாட்டைப் பெறுகிறது, ஆனால் மாநில அரசு தொடர்ந்து நீடிக்கிறது. அதேபோல் சரத்து 250-ன் கீழ் பாராளுமன்றம் மாநிலப்列表中 சட்டம் இயற்றலாம், ஆனால் மாநில சட்டமன்றம் கலைக்கப்படுவதில்லை; அதன் அதிகாரம் பாராளுமன்றத்திற்கு உட்பட்டதாக மாறுகிறது.",
+        "Option A is correct; both statements accurately reflect constitutional effects.", "விருப்பம் A சரியானது; இரு கூற்றுகளும் அரசியலமைப்பு விளைவுகளைத் துல்லியமாக வெளிப்படுத்துகின்றன.",
+        "Option B ignores Statement 2, which is a vital distinction from President's Rule.", "விருப்பம் B கூற்று 2-ஐப் புறக்கணிக்கிறது, இது குடியரசுத் தலைவர் ஆட்சியிலிருந்து வேறுபடும் முக்கிய அம்சமாகும்.",
+        "Option C ignores Statement 1, which states the core of Article 353(a).", "விருப்பம் C கூற்று 1-ஐப் புறக்கணிக்கிறது, இது சரத்து 353(a)-ன் மையக் கருத்தாகும்.",
+        "Option D is wrong because both statements are constitutionally accurate.", "விருப்பம் D தவறு, ஏனெனில் இரு கூற்றுகளும் அரசியலமைப்புப்படி சரியானவை.",
+        "Crucial Distinction: Under Art 352, State governments and legislatures continue to function; under Art 356, State ministry is dismissed.",
+        "முக்கிய வேறுபாடு: சரத்து 352-ன் கீழ் மாநில அரசும் சட்டமன்றமும் தொடர்ந்து செயல்படுகின்றன; சரத்து 356-ன் கீழ் மாநில அமைச்சரவை கலைக்கப்படுகிறது.",
+        "Laws made by Parliament on State List subjects during National Emergency cease to have effect 6 months after the emergency expires (Article 250(2)).",
+        "தேசிய அவசரநிலையின் போது மாநிலப் பட்டியல் விவகாரங்களில் பாராளுமன்றம் இயற்றிய சட்டங்கள் அவசரநிலை முடிவுக்கு வந்த 6 மாதங்களுக்குப் பிறகு செயலிழந்துவிடும் (சரத்து 250(2))."
+    ))
+
+    # 006 - Key B
+    qs.append(make_ep_q(
+        PREFIX, 6, DIFF, "Statement MCQ", "Article 358 vs Article 359 - Scope of Fundamental Rights",
+        "Consider the following statements regarding the suspension of Fundamental Rights during National Emergency:\n1. Under Article 358, Fundamental Rights guaranteed by Article 19 are automatically suspended as soon as any National Emergency is proclaimed, including on the ground of armed rebellion.\n2. Under Article 359, the President cannot suspend the right to move any court for the enforcement of Fundamental Rights guaranteed under Articles 20 and 21.\nWhich of the statements given above is/are correct?",
+        "தேசிய அவசரநிலையின் போது அடிப்படை உரிமைகள் இடைநிறுத்தம் செய்யப்படுவது பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. ஆயுதமேந்திய கிளர்ச்சி உட்பட எந்தவொரு தேசிய அவசரநிலை பிரகடனம் செய்யப்பட்ட உடனேயே, சரத்து 358-ன் கீழ் சரத்து 19 உத்தரவாதம் அளிக்கும் அடிப்படை உரிமைகள் தானாகவே இடைநிறுத்தப்படும்.\n2. சரத்து 359-ன் கீழ், சரத்துகள் 20 மற்றும் 21 உத்தரவாதம் அளிக்கும் அடிப்படை உரிமைகளை அமல்படுத்துவதற்காக நீதிமன்றத்தை அணுகும் உரிமையை குடியரசுத் தலைவர் இடைநிறுத்த முடியாது.\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Both 1 and 2", "1 மற்றும் 2 ஆகிய இரண்டும்",
+        "Neither 1 nor 2", "1 மற்றும் 2 ஆகிய இரண்டும் அல்ல",
+        "B",
+        "Statement 1 is INCORRECT: Under the 44th Amendment Act 1978, Article 19 can be automatically suspended under Article 358 ONLY when the National Emergency is proclaimed on the grounds of War or External Aggression, NOT on the ground of Armed Rebellion. Statement 2 is CORRECT: The 44th Amendment explicitly prohibited the suspension of the enforcement of Articles 20 and 21 under Article 359.",
+        "கூற்று 1 தவறு: 1978-ன் 44-வது திருத்தச் சட்டத்தின்படி, போர் அல்லது வெளிநாட்டு ஆக்கிரமிப்பு அடிப்படையில் தேசிய அவசரநிலை அறிவிக்கப்பட்டால் மட்டுமே சரத்து 358-ன் கீழ் சரத்து 19 தானாக இடைநிறுத்தப்படும்; ஆயுதமேந்திய கிளர்ச்சியின் போது அல்ல. கூற்று 2 சரி: சரத்து 359-ன் கீழ் சரத்துகள் 20 மற்றும் 21 அமலாக்கத்தை இடைநிறுத்த முடியாது என்று 44-வது திருத்தம் தெளிவாகக் கூறியுள்ளது.",
+        "Option A fails because Article 358 does NOT apply to Armed Rebellion.", "விருப்பம் A தவறானது, ஏனெனில் சரத்து 358 ஆயுதமேந்திய கிளர்ச்சிக்குப் பொருந்தாது.",
+        "Option B is correct because Statement 2 alone is constitutionally accurate.", "விருப்பம் B சரியானது, ஏனெனில் கூற்று 2 மட்டுமே அரசியலமைப்புப்படி சரியானது.",
+        "Option C fails because Statement 1 is constitutionally invalid.", "விருப்பம் C தவறானது, ஏனெனில் கூற்று 1 அரசியலமைப்புப்படி செல்லாதது.",
+        "Option D fails because Statement 2 is a foundational constitutional rule.", "விருப்பம் D தவறானது, ஏனெனில் கூற்று 2 ஒரு அடிப்படை அரசியலமைப்பு விதியாகும்.",
+        "TNPSC Golden Rule: Articles 20 and 21 can NEVER be suspended under any emergency, anywhere in India!",
+        "TNPSC பொன்விதி: சரத்துகள் 20 மற்றும் 21-ஐ இந்தியாவில் எந்தவொரு அவசரநிலையிலும், எப்போதும் இடைநிறுத்த முடியாது!",
+        "Article 20 guarantees protection against ex-post facto laws, double jeopardy, and self-incrimination; Article 21 guarantees right to life and liberty.",
+        "சரத்து 20 பின்னோக்கிய குற்றவியல் சட்டம், இரட்டைத் தண்டனை, தனக்கெதிரான சாட்சியத்திற்கு எதிரான பாதுகாப்பை அளிக்கிறது; சரத்து 21 வாழ்வு மற்றும் தனிநபர் சுதந்திர உரிமையை அளிக்கிறது."
+    ))
+
+    # 007 - Key C
+    qs.append(make_ep_q(
+        PREFIX, 7, DIFF, "Statement MCQ", "Article 358 vs Article 359 High-Yield Distinction",
+        "Consider the following statements comparing Article 358 and Article 359:\n1. Article 358 automatically suspends the rights under Article 19, whereas Article 359 does not suspend rights automatically and requires a presidential order.\n2. Article 358 operates for the entire duration of the emergency, whereas Article 359 operates only for the period specified in the Presidential Order.\nWhich of the statements given above is/are correct?",
+        "சரத்து 358 மற்றும் சரத்து 359 ஆகியவற்றை ஒப்பிடும் பின்வரும் கூற்றுகளைக் கருதுக:\n1. சரத்து 358 சரத்து 19-ன் கீழான உரிமைகளை தானாகவே இடைநிறுத்துகிறது, ஆனால் சரத்து 359 உரிமைகளை தானாக இடைநிறுத்தாமல் குடியரசுத் தலைவரின் ஆணையை அவசியமாக்குகிறது.\n2. சரத்து 358 அவசரநிலை நீடிக்கும் காலம் முழுவதும் செயல்படுகிறது, ஆனால் சரத்து 359 குடியரசுத் தலைவர் ஆணையில் குறிப்பிடப்பட்டுள்ள காலத்திற்கு மட்டுமே செயல்படுகிறது.\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Both 1 and 2", "1 மற்றும் 2 ஆகிய இரண்டும்",
+        "Neither 1 nor 2", "1 மற்றும் 2 ஆகிய இரண்டும் அல்ல",
+        "C",
+        "Both statements are correct. Article 358 is automatic, confines strictly to Article 19, applies to the whole nation, and lasts for the entire duration of external emergency. Article 359 is non-automatic (requires presidential order), applies to specified rights (except 20 & 21), can apply to a part or whole of India, and operates only for the specified period.",
+        "இரு கூற்றுகளும் சரியானவை. சரத்து 358 தானியங்கு தன்மை கொண்டது, சரத்து 19-க்கு மட்டுமே பொருந்தும், நாடு முழுவதும் செயல்படும் மற்றும் வெளிப்புற அவசரநிலை காலம் முழுவதும் நீடிக்கும். சரத்து 359 தானியங்காதது (குடியரசுத் தலைவர் ஆணை தேவை), குறிப்பிட்ட உரிமைகளுக்கு மட்டுமே பொருந்தும் (20 & 21 தவிர), குறிப்பிட்ட பகுதிக்கும் பொருந்தலாம் மற்றும் ஆணையில் குறிப்பிட்ட காலத்திற்கு மட்டுமே செயல்படும்.",
+        "Option A ignores Statement 2, which is an accurate comparative distinction.", "விருப்பம் A கூற்று 2-ஐப் புறக்கணிக்கிறது, அது ஒரு துல்லியமான ஒப்பீட்டு வேறுபாடாகும்.",
+        "Option B ignores Statement 1, which states the fundamental operational difference.", "விருப்பம் B கூற்று 1-ஐப் புறக்கணிக்கிறது, அது அடிப்படை செயல்பாட்டு வேறுபாட்டைக் கூறுகிறது.",
+        "Option C correctly affirms both well-settled constitutional comparisons.", "விருப்பம் C இரண்டு நன்கு அறியப்பட்ட அரசியலமைப்பு ஒப்பீடுகளையும் சரியாக உறுதிப்படுத்துகிறது.",
+        "Option D is wrong because both statements are fully accurate.", "விருப்பம் D தவறு, ஏனெனில் இரு கூற்றுகளும் முற்றிலும் துல்லியமானவை.",
+        "Analytical Tip: Art 358 suspends substantive rights under Art 19; Art 359 suspends only the procedural remedy to enforce specified rights.",
+        "பகுப்பாய்வுக் குறிப்பு: சரத்து 358 சரத்து 19-ன் அடிப்படை உரிமைகளை இடைநிறுத்துகிறது; சரத்து 359 குறிப்பிட்ட உரிமைகளை அமல்படுத்துவதற்கான நடைமுறைப் பரிகாரத்தை மட்டுமே இடைநிறுத்துகிறது.",
+        "Every Presidential Order issued under Article 359 must be laid before each House of Parliament as soon as may be after it is made.",
+        "சரத்து 359-ன் கீழ் பிறப்பிக்கப்படும் ஒவ்வொரு குடியரசுத் தலைவர் ஆணையும் வெளியிடப்பட்ட உடனேயே பாராளுமன்றத்தின் இரு அவைகளிலும் வைக்கப்பட வேண்டும்."
+    ))
+
+    # 008 - Key D
+    qs.append(make_ep_q(
+        PREFIX, 8, DIFF, "Statement MCQ", "Extension of Legislative Assemblies - Article 172",
+        "Consider the following statements regarding the extension of legislative bodies during National Emergency:\n1. The life of the Lok Sabha can be extended by an executive order of the President for up to one year at a time.\n2. The extension of the Legislative Assembly of a State can continue up to one year beyond the date the proclamation of emergency ceases to operate.\nWhich of the statements given above is/are correct?",
+        "தேசிய அவசரநிலையின் போது சட்டமன்ற அமைப்புகளின் கால நீட்டிப்பு பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. குடியரசுத் தலைவரின் நிர்வாக ஆணை மூலம் மக்களவையின் ஆயுட்காலத்தை ஒரு நேரத்தில் ஒரு வருடம் வரை நீட்டிக்க முடியும்.\n2. ஒரு மாநில சட்டப் பேரவையின் கால நீட்டிப்பு அவசரநிலைப் பிரகடனம் முடிவுக்கு வந்த நாளிலிருந்து ஒரு வருடம் வரை தொடரலாம்.\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Both 1 and 2", "1 மற்றும் 2 ஆகிய இரண்டும்",
+        "Neither 1 nor 2", "1 மற்றும் 2 ஆகிய இரண்டும் அல்ல",
+        "D",
+        "Both statements are INCORRECT. Statement 1 is incorrect: the term of Lok Sabha can be extended ONLY by a law of Parliament (not an executive order of the President) under Article 83(2). Statement 2 is incorrect: under Article 172(1), such extension cannot continue beyond a period of SIX MONTHS (not one year) after the proclamation has ceased to operate.",
+        "இரு கூற்றுகளும் தவறானவை. கூற்று 1 தவறு: சரத்து 83(2)-ன் கீழ் பாராளுமன்றத்தின் சட்டத்தின் மூலமாக மட்டுமே (குடியரசுத் தலைவரின் நிர்வாக ஆணை மூலம் அல்ல) மக்களவையின் ஆயுட்காலத்தை நீட்டிக்க முடியும். கூற்று 2 தவறு: சரத்து 172(1)-ன் கீழ் அவசரநிலைப் பிரகடனம் முடிவுக்கு வந்த பிறகு இத்தகைய நீட்டிப்பு ஆறு மாதங்களுக்கு மேல் (ஒரு வருடம் அல்ல) நீடிக்க முடியாது.",
+        "Option A is wrong because Parliament must enact a law; President cannot do so by decree.", "விருப்பம் A தவறு, ஏனெனில் பாராளுமன்றம் சட்டம் இயற்ற வேண்டும்; குடியரசுத் தலைவர் ஆணை மூலம் செய்ய முடியாது.",
+        "Option B is wrong because the post-emergency extension ceiling is 6 months, not 1 year.", "விருப்பம் B தவறு, ஏனெனில் அவசரநிலைக்குப் பிந்தைய நீட்டிப்பு உச்சவரம்பு 6 மாதங்கள், 1 வருடம் அல்ல.",
+        "Option C is wrong because both statements contain factual errors.", "விருப்பம் C தவறு, ஏனெனில் இரு கூற்றுகளிலும் உண்மைக் குறைபாடுகள் உள்ளன.",
+        "Option D is correct as both statements are constitutionally erroneous.", "விருப்பம் D சரியானது, ஏனெனில் இரு கூற்றுகளும் அரசியலமைப்புப்படி தவறானவை.",
+        "Remember: Extension requires PARLIAMENTARY LAW; maximum post-emergency validity is 6 MONTHS.",
+        "நினைவில் கொள்க: கால நீட்டிப்புக்கு பாராளுமன்றச் சட்டம் தேவை; அவசரநிலைக்குப் பிந்தைய அதிகபட்ச செல்லுபடியாகும் காலம் 6 மாதங்கள் ஆகும்.",
+        "During the 1975 Emergency, the term of the 5th Lok Sabha was extended twice, by one year each time, by law of Parliament.",
+        "1975 அவசரநிலையின் போது, 5-வது மக்களவையின் பதவிக்காலம் பாராளுமன்றச் சட்டத்தின் மூலம் தலா ஒரு வருடம் என இரண்டு முறை நீட்டிக்கப்பட்டது."
+    ))
+
+    # 009 - Key A
+    qs.append(make_ep_q(
+        PREFIX, 9, DIFF, "Statement MCQ", "Article 355 - Union Duty to Protect States",
+        "Consider the following statements regarding Article 355 of the Constitution of India:\n1. It imposes a duty on the Union to protect every State against external aggression and internal disturbance.\n2. It imposes a duty on the Union to ensure that the government of every State is carried on in accordance with the provisions of the Constitution.\nWhich of the statements given above is/are correct?",
+        "இந்திய அரசியலமைப்பின் சரத்து 355 பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. வெளிநாட்டு ஆக்கிரமிப்பு மற்றும் உள்நாட்டு அமைதியின்மையிலிருந்து ஒவ்வொரு மாநிலத்தையும் பாதுகாக்க வேண்டிய கடமையை இது மத்திய அரசுக்கு விதிக்கிறது.\n2. ஒவ்வொரு மாநிலத்தின் அரசும் அரசியலமைப்பு விதிகளின்படி நடத்தப்படுவதை உறுதி செய்ய வேண்டிய கடமையை இது மத்திய அரசுக்கு விதிக்கிறது.\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
+        "Both 1 and 2", "1 மற்றும் 2 ஆகிய இரண்டும்",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Neither 1 nor 2", "1 மற்றும் 2 ஆகிய இரண்டும் அல்ல",
+        "A",
+        "Both statements are correct. Article 355 forms the constitutional justification and duty for central intervention under Article 356. It declares: 'It shall be the duty of the Union to protect every State against external aggression and internal disturbance and to ensure that the government of every State is carried on in accordance with the provisions of this Constitution.'",
+        "இரு கூற்றுகளும் சரியானவை. சரத்து 355 என்பது சரத்து 356-ன் கீழ் மத்திய அரசு தலையிடுவதற்கான அரசியலமைப்பு நியாயத்தையும் கடமையையும் வழங்குகிறது. 'வெளிநாட்டு ஆக்கிரமிப்பு மற்றும் உள்நாட்டு அமைதியின்மையிலிருந்து ஒவ்வொரு மாநிலத்தையும் பாதுகாப்பதும், ஒவ்வொரு மாநில அரசும் அரசியலமைப்பு விதிகளின்படி நடைபெறுவதை உறுதி செய்வதும் மத்திய அரசின் கடமையாகும்' என்று அது கூறுகிறது.",
+        "Option A is correct; both statements are verbatim reflections of Article 355.", "விருப்பம் A சரியானது; இரு கூற்றுகளும் சரத்து 355-ன் துல்லியமான பிரதிபலிப்புகளாகும்.",
+        "Option B ignores the second vital duty stated in Article 355.", "விருப்பம் B சரத்து 355-ல் கூறப்பட்டுள்ள இரண்டாவது முக்கியக் கடமையைப் புறக்கணிக்கிறது.",
+        "Option C ignores the first duty of external and internal protection.", "விருப்பம் C வெளிப்புற மற்றும் உள்நாட்டுப் பாதுகாப்பு என்ற முதல் கடமையைப் புறக்கணிக்கிறது.",
+        "Option D is incorrect as both statements are constitutional text.", "விருப்பம் D தவறானது, ஏனெனில் இரு கூற்றுகளும் அரசியலமைப்பு வாசகங்கள் ஆகும்.",
+        "TNPSC Trap: Article 355 is a DUTY of the Union; it is NOT itself an emergency proclamation article.",
+        "TNPSC பொறி: சரத்து 355 என்பது மத்திய அரசின் கடமையாகும்; அதுவே அவசரநிலைப் பிரகடன சரத்து அல்ல.",
+        "The Sarkaria Commission recommended that the Union must issue warnings under Article 355 before imposing President's Rule under Article 356.",
+        "சரத்து 356-ன் கீழ் குடியரசுத் தலைவர் ஆட்சியை விதிப்பதற்கு முன்பு, மத்திய அரசு சரத்து 355-ன் கீழ் எச்சரிக்கைகளை வழங்க வேண்டும் என்று சர்க்காரியா ஆணையம் பரிந்துரைத்தது."
+    ))
+
+    # 010 - Key B
+    qs.append(make_ep_q(
+        PREFIX, 10, DIFF, "Statement MCQ", "Article 356 vs Article 365 Grounds",
+        "Consider the following statements regarding the grounds for imposing President's Rule in a State:\n1. Under Article 356, the President can act only upon receiving a formal report from the Governor of the concerned State.\n2. Under Article 365, if a State fails to comply with or give effect to any direction given by the Union, it is lawful for the President to hold that governance cannot be carried on in accordance with the Constitution.\nWhich of the statements given above is/are correct?",
+        "ஒரு மாநிலத்தில் குடியரசுத் தலைவர் ஆட்சியை அமல்படுத்துவதற்கான காரணங்கள் பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. சரத்து 356-ன் கீழ், சம்பந்தப்பட்ட மாநில ஆளுநரிடமிருந்து முறையான அறிக்கையைப் பெற்றால் மட்டுமே குடியரசுத் தலைவர் நடவடிக்கை எடுக்க முடியும்.\n2. சரத்து 365-ன் கீழ், மத்திய அரசு வழங்கும் எந்தவொரு வழிகாட்டுதலையும் ஒரு மாநிலம் பின்பற்றவோ அல்லது செயல்படுத்தவோ தவறினால், அங்கு அரசியலமைப்புப்படி ஆட்சி நடைபெற முடியாது என்று குடியரசுத் தலைவர் கருதுவது சட்டபூர்வமானது.\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Both 1 and 2", "1 மற்றும் 2 ஆகிய இரண்டும்",
+        "Neither 1 nor 2", "1 மற்றும் 2 ஆகிய இரண்டும் அல்ல",
+        "B",
+        "Statement 1 is INCORRECT: Article 356(1) explicitly states that the President can act 'on receipt of a report from the Governor of a State OR OTHERWISE'. Thus, a Governor's report is not mandatory. Statement 2 is CORRECT: Article 365 provides an independent constitutional basis for invoking Article 356 if a state defies legitimate Union executive directions.",
+        "கூற்று 1 தவறு: சரத்து 356(1) 'மாநில ஆளுநரிடமிருந்து அறிக்கை பெறப்பட்டாலோ அல்லது வேறு வகையிலோ' குடியரசுத் தலைவர் செயல்படலாம் என்று வெளிப்படையாகக் கூறுகிறது. எனவே ஆளுநரின் அறிக்கை கட்டாயமல்ல. கூற்று 2 சரி: முறையான மத்திய நிர்வாக வழிகாட்டுதல்களை ஒரு மாநிலம் மீறினால், சரத்து 356-ஐப் பயன்படுத்துவதற்கான தனி அரசியலமைப்பு அடிப்படையை சரத்து 365 வழங்குகிறது.",
+        "Option A fails because 'or otherwise' empowers President to act without Governor report.", "விருப்பம் A தவறானது, ஏனெனில் 'வேறு வகையிலோ' என்ற சொல் ஆளுநர் அறிக்கையின்றி செயல்பட குடியரசுத் தலைவருக்கு அதிகாரம் அளிக்கிறது.",
+        "Option B is correct because Statement 2 alone is constitutionally accurate.", "விருப்பம் B சரியானது, ஏனெனில் கூற்று 2 மட்டுமே அரசியலமைப்புப்படி சரியானது.",
+        "Option C fails because Statement 1 is constitutionally flawed.", "விருப்பம் C தவறானது, ஏனெனில் கூற்று 1 அரசியலமைப்புப்படி தவறானது.",
+        "Option D fails because Statement 2 accurately describes Article 365.", "விருப்பம் D தவறானது, ஏனெனில் கூற்று 2 சரத்து 365-ஐத் துல்லியமாக விவரிக்கிறது.",
+        "Constitutional Twin: Article 356 (failure of machinery) works hand-in-hand with Article 365 (failure to follow Union directions).",
+        "அரசியலமைப்பு இரட்டையர்கள்: சரத்து 356 (இயந்திர முறிவு) மற்றும் சரத்து 365 (மத்திய வழிகாட்டுதலைப் புறக்கணித்தல்) ஆகியவை ஒன்றிணைந்து செயல்படுகின்றன.",
+        "President's Rule under Article 356 is also popularly known as 'State Emergency' or 'Constitutional Emergency'.",
+        "சரத்து 356-ன் கீழான குடியரசுத் தலைவர் ஆட்சி 'மாநில அவசரநிலை' அல்லது 'அரசியலமைப்பு அவசரநிலை' என்றும் பிரபலமாக அழைக்கப்படுகிறது."
+    ))
+
+    return qs
+
+def get_statement_questions_batch2():
+    qs = []
+
+    # 011 - Key C
+    qs.append(make_ep_q(
+        PREFIX, 11, DIFF, "Statement MCQ", "President's Rule - Parliamentary Approval & Duration",
+        "Consider the following statements regarding the parliamentary approval and duration of President's Rule under Article 356:\n1. A proclamation imposing President's Rule must be approved by both Houses of Parliament within two months from the date of its issue.\n2. It requires only a simple majority (majority of the members present and voting) in each House of Parliament.\nWhich of the statements given above is/are correct?",
+        "சரத்து 356-ன் கீழ் குடியரசுத் தலைவர் ஆட்சிக்கான பாராளுமன்ற ஒப்புதல் மற்றும் கால அளவு பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. குடியரசுத் தலைவர் ஆட்சியை விதிக்கும் பிரகடனம் வெளியிடப்பட்ட நாளிலிருந்து இரண்டு மாதங்களுக்குள் பாராளுமன்றத்தின் இரு அவைகளாலும் ஒப்புதல் அளிக்கப்பட வேண்டும்.\n2. இதற்கு பாராளுமன்றத்தின் ஒவ்வொரு அவையிலும் எளிய பெரும்பான்மை (வருகை தந்து வாக்களிக்கும் உறுப்பினர்களில் பெரும்பான்மை) மட்டுமே போதுமானது.\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Both 1 and 2", "1 மற்றும் 2 ஆகிய இரண்டும்",
+        "Neither 1 nor 2", "1 மற்றும் 2 ஆகிய இரண்டும் அல்ல",
+        "C",
+        "Both statements are correct. Under Article 356(3), the proclamation must be approved within two months by both Houses. Unlike Article 352 (which requires a special majority), Article 356 requires only a simple majority in each House.",
+        "இரு கூற்றுகளும் சரியானவை. சரத்து 356(3)-ன் கீழ், பிரகடனம் இரு அவைகளாலும் இரண்டு மாதங்களுக்குள் அங்கீகரிக்கப்பட வேண்டும். சரத்து 352-க்கு (சிறப்புப் பெரும்பான்மை தேவை) மாறாக, சரத்து 356-க்கு ஒவ்வொரு அவையிலும் எளிய பெரும்பான்மை மட்டுமே போதுமானது.",
+        "Option A ignores Statement 2, which is an essential procedural distinction.", "விருப்பம் A கூற்று 2-ஐப் புறக்கணிக்கிறது, இது ஒரு முக்கியமான நடைமுறை வேறுபாடாகும்.",
+        "Option B ignores Statement 1, which states the two-month rule.", "விருப்பம் B கூற்று 1-ஐப் புறக்கணிக்கிறது, இது இரண்டு மாத விதியைக் கூறுகிறது.",
+        "Option C correctly validates both statements.", "விருப்பம் C இரு கூற்றுகளையும் சரியாக உறுதிப்படுத்துகிறது.",
+        "Option D is incorrect as both statements are constitutional facts.", "விருப்பம் D தவறானது, ஏனெனில் இரு கூற்றுகளும் அரசியலமைப்பு உண்மைகளாகும்.",
+        "Approval Comparison: Art 352 = 1 Month + Special Majority; Art 356 = 2 Months + Simple Majority.",
+        "ஒப்புதல் ஒப்பீடு: சரத்து 352 = 1 மாதம் + சிறப்புப் பெரும்பான்மை; சரத்து 356 = 2 மாதங்கள் + எளிய பெரும்பான்மை.",
+        "If Lok Sabha is dissolved during the two months, the proclamation survives for 30 days from the first sitting of the reconstituted Lok Sabha, provided Rajya Sabha approved it.",
+        "இரண்டு மாத காலத்திற்குள் மக்களவை கலைக்கப்பட்டால், மாநிலங்களவை ஒப்புதல் அளித்திருந்தால், புதிய மக்களவையின் முதல் கூட்டத்திலிருந்து 30 நாட்கள் வரை பிரகடனம் நீடிக்கும்."
+    ))
+
+    # 012 - Key D
+    qs.append(make_ep_q(
+        PREFIX, 12, DIFF, "Statement MCQ", "Extension Beyond One Year - Article 356(5)",
+        "Consider the following statements regarding the extension of President's Rule beyond one year under Article 356(5):\n1. President's Rule can be extended beyond one year up to three years merely by passing a resolution with special majority in Parliament.\n2. The Election Commission of India has the power to overrule Parliament and revoke President's Rule at any time.\nWhich of the statements given above is/are correct?",
+        "சரத்து 356(5)-ன் கீழ் ஒரு வருடத்திற்கு மேல் குடியரசுத் தலைவர் ஆட்சியை நீட்டிப்பது பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. பாராளுமன்றத்தில் சிறப்புப் பெரும்பான்மையுடன் ஒரு தீர்மானத்தை நிறைவேற்றுவதன் மூலம் மட்டுமே குடியரசுத் தலைவர் ஆட்சியை ஒரு வருடத்திற்கு மேல் மூன்று ஆண்டுகள் வரை நீட்டிக்க முடியும்.\n2. பாராளுமன்றத்தின் முடிவை நிராகரித்து, எந்த நேரத்திலும் குடியரசுத் தலைவர் ஆட்சியை ரத்து செய்யும் அதிகாரம் இந்திய தேர்தல் ஆணையத்திற்கு உண்டு.\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Both 1 and 2", "1 மற்றும் 2 ஆகிய இரண்டும்",
+        "Neither 1 nor 2", "1 மற்றும் 2 ஆகிய இரண்டும் அல்ல",
+        "D",
+        "Both statements are INCORRECT. Statement 1 is incorrect: under Article 356(5) (inserted by 44th CAA 1978), extension beyond one year requires TWO strict conditions: (a) a National Emergency is in operation in whole or part of India, AND (b) the Election Commission certifies that assembly elections cannot be held. Statement 2 is incorrect: Election Commission cannot revoke President's Rule; it only certifies election feasibility.",
+        "இரு கூற்றுகளும் தவறானவை. கூற்று 1 தவறு: சரத்து 356(5)-ன் படி (44-வது திருத்தத்தால் சேர்க்கப்பட்டது), ஒரு வருடத்திற்கு மேல் நீட்டிக்க இரண்டு நிபந்தனைகள் கட்டாயம்: (அ) இந்தியாவில் தேசிய அவசரநிலை செயல்பாட்டில் இருக்க வேண்டும், மற்றும் (ஆ) தேர்தல் நடத்த முடியாது என தேர்தல் ஆணையம் சான்றளிக்க வேண்டும். கூற்று 2 தவறு: தேர்தல் ஆணையத்தால் குடியரசுத் தலைவர் ஆட்சியை ரத்து செய்ய முடியாது; அது தேர்தல் சாத்தியக்கூறை மட்டுமே சான்றளிக்கிறது.",
+        "Option A is wrong because Article 356(5) twin conditions are mandatory, not just a parliamentary resolution.", "விருப்பம் A தவறு, ஏனெனில் வெறும் பாராளுமன்றத் தீர்மானம் போதாது; சரத்து 356(5) இரட்டை நிபந்தனைகள் கட்டாயமாகும்.",
+        "Option B is wrong because revocation is an executive power of the President, not ECI.", "விருப்பம் B தவறு, ஏனெனில் ரத்து செய்வது குடியரசுத் தலைவரின் நிர்வாக அதிகாரம், தேர்தல் ஆணையத்தின் அதிகாரம் அல்ல.",
+        "Option C is wrong because both statements contain fundamental errors.", "விருப்பம் C தவறு, ஏனெனில் இரு கூற்றுகளிலும் அடிப்படைக் குறைபாடுகள் உள்ளன.",
+        "Option D is correct as neither statement is constitutionally valid.", "விருப்பம் D சரியானது, ஏனெனில் எந்தக் கூற்றும் அரசியலமைப்புப்படி செல்லாது.",
+        "Article 356(5) Safeguard: Max normal limit = 1 year; Max upper limit with twin conditions = 3 years.",
+        "சரத்து 356(5) பாதுகாப்பு: சாதாரண அதிகபட்ச வரம்பு = 1 வருடம்; இரட்டை நிபந்தனைகளுடன் கூடிய உச்ச வரம்பு = 3 ஆண்டுகள்.",
+        "Punjab was an exceptional case where constitutional amendments (59th, 64th, 67th, 68th) were passed to extend President's Rule up to 5 years.",
+        "பஞ்சாப் ஒரு விதிவிலக்கான நிகழ்வாகும், அங்கு குடியரசுத் தலைவர் ஆட்சியை 5 ஆண்டுகள் வரை நீட்டிக்க அரசியலமைப்பு திருத்தங்கள் (59, 64, 67, 68-வது) நிறைவேற்றப்பட்டன."
+    ))
+
+    # 013 - Key A
+    qs.append(make_ep_q(
+        PREFIX, 13, DIFF, "Statement MCQ", "Effects of President's Rule & High Court Powers",
+        "Consider the following statements regarding the constitutional consequences of President's Rule under Article 356:\n1. The President can assume to himself all or any of the functions of the State Government and all or any of the powers vested in the Governor.\n2. The President cannot assume to himself any of the powers vested in or exercisable by the High Court of the State, nor suspend any constitutional provisions relating to High Courts.\nWhich of the statements given above is/are correct?",
+        "சரத்து 356-ன் கீழ் குடியரசுத் தலைவர் ஆட்சியின் அரசியலமைப்பு விளைவுகள் பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. மாநில அரசின் அனைத்து அல்லது ஏதேனும் செயல்பாடுகளையும், ஆளுநருக்குரிய அனைத்து அல்லது ஏதேனும் அதிகாரங்களையும் குடியரசுத் தலைவர் தாமே ஏற்க முடியும்.\n2. மாநில உயர்நீதிமன்றத்திற்கு வழங்கப்பட்டுள்ள அல்லது பயன்படுத்தக்கூடிய அதிகாரங்கள் எதனையும் குடியரசுத் தலைவர் தாமே ஏற்க முடியாது, மேலும் உயர்நீதிமன்றங்கள் தொடர்பான எந்தவொரு அரசியலமைப்பு விதிகளையும் இடைநிறுத்த முடியாது.\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
+        "Both 1 and 2", "1 மற்றும் 2 ஆகிய இரண்டும்",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Neither 1 nor 2", "1 மற்றும் 2 ஆகிய இரண்டும் அல்ல",
+        "A",
+        "Both statements are correct. Under Article 356(1)(a), the President assumes executive powers of the state. However, the proviso to Article 356(1) strictly bars the President from assuming the powers of the High Court or suspending provisions relating to High Courts, ensuring the judiciary's complete independence.",
+        "இரு கூற்றுகளும் சரியானவை. சரத்து 356(1)(a)-ன் கீழ் குடியரசுத் தலைவர் மாநில நிர்வாக அதிகாரங்களை ஏற்கிறார். இருப்பினும் சரத்து 356(1)-ன் வரம்புரை, உயர்நீதிமன்றத்தின் அதிகாரங்களை ஏற்பதையோ அல்லது உயர்நீதிமன்றம் தொடர்பான விதிகளை இடைநிறுத்துவதையோ கண்டிப்பாகத் தடைசெய்து, நீதித்துறையின் முழுமையான சுதந்திரத்தைப் பாதுகாக்கிறது.",
+        "Option A is correct; both statements reflect the text of Article 356(1) and its proviso.", "விருப்பம் A சரியானது; இரு கூற்றுகளும் சரத்து 356(1) மற்றும் அதன் வரம்புரையை வெளிப்படுத்துகின்றன.",
+        "Option B ignores the vital constitutional immunity of High Courts.", "விருப்பம் B உயர்நீதிமன்றங்களின் முக்கிய அரசியலமைப்புப் பாதுகாப்பைப் புறக்கணிக்கிறது.",
+        "Option C ignores the core executive assumption power of the President.", "விருப்பம் C குடியரசுத் தலைவரின் நிர்வாகப் பொறுப்பேற்பு அதிகாரத்தைப் புறக்கணிக்கிறது.",
+        "Option D is wrong because both statements are constitutionally accurate.", "விருப்பம் D தவறு, ஏனெனில் இரு கூற்றுகளும் அரசியலமைப்புப்படி துல்லியமானவை.",
+        "Crucial TNPSC Point: High Court powers CANNOT be touched or suspended during President's Rule!",
+        "முக்கிய TNPSC குறிப்பு: குடியரசுத் தலைவர் ஆட்சியின் போது உயர்நீதிமன்ற அதிகாரங்களைத் தொடவோ அல்லது இடைநிறுத்தவோ முடியாது!",
+        "The President acts through the Governor, who is typically assisted by advisors appointed by the Centre.",
+        "குடியரசுத் தலைவர் ஆளுநர் மூலம் செயல்படுகிறார், அவருக்கு வழக்கமாக மத்திய அரசால் நியமிக்கப்பட்ட ஆலோசகர்கள் உதவுகிறார்கள்."
+    ))
+
+    # 014 - Key B
+    qs.append(make_ep_q(
+        PREFIX, 14, DIFF, "Statement MCQ", "Status of State Legislative Assembly during President's Rule",
+        "Consider the following statements regarding the status of the State Legislative Assembly during President's Rule:\n1. Upon the proclamation of President's Rule, the State Legislative Assembly is automatically dissolved with immediate effect.\n2. In the S.R. Bommai case (1994), the Supreme Court ruled that the State Legislative Assembly should not be dissolved until Parliament approves the proclamation under Article 356(3).\nWhich of the statements given above is/are correct?",
+        "குடியரசுத் தலைவர் ஆட்சியின் போது மாநில சட்டமன்றத்தின் நிலை பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. குடியரசுத் தலைவர் ஆட்சி பிரகடனம் செய்யப்பட்டவுடன், மாநில சட்டமன்றம் உடனடியாகத் தானாகவே கலைக்கப்பட்டுவிடும்.\n2. எஸ்.ஆர். பொம்மை வழக்கில் (1994), பாராளுமன்றம் சரத்து 356(3)-ன் கீழ் பிரகடனத்திற்கு ஒப்புதல் அளிக்கும் வரை மாநில சட்டமன்றத்தைக் கலைக்கக் கூடாது என்று உச்ச நீதிமன்றம் தீர்ப்பளித்தது.\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Both 1 and 2", "1 மற்றும் 2 ஆகிய இரண்டும்",
+        "Neither 1 nor 2", "1 மற்றும் 2 ஆகிய இரண்டும் அல்ல",
+        "B",
+        "Statement 1 is INCORRECT: The State Legislative Assembly is NOT automatically dissolved; it may be kept under 'suspended animation'. Statement 2 is CORRECT: In S.R. Bommai (1994), the Supreme Court held that the President should only suspend the Assembly initially; dissolution can occur only AFTER both Houses of Parliament have approved the proclamation.",
+        "கூற்று 1 தவறு: மாநில சட்டமன்றம் தானாகக் கலைக்கப்படுவதில்லை; அது 'செயலிழக்கச் செய்யப்பட்ட நிலையில்' (suspended animation) வைக்கப்படலாம். கூற்று 2 சரி: எஸ்.ஆர். பொம்மை வழக்கில் (1994), குடியரசுத் தலைவர் ஆரம்பத்தில் சட்டமன்றத்தை இடைநிறுத்தம் மட்டுமே செய்ய வேண்டும்; பாராளுமன்றத்தின் இரு அவைகளும் ஒப்புதல் அளித்த பிறகே கலைப்பு செய்யப்பட வேண்டும் என்று உச்ச நீதிமன்றம் தீர்ப்பளித்தது.",
+        "Option A fails because automatic dissolution does not occur.", "விருப்பம் A தவறானது, ஏனெனில் தானியங்கு கலைப்பு ஏற்படுவதில்லை.",
+        "Option B is correct because Statement 2 reflects the Bommai doctrine.", "விருப்பம் B சரியானது, ஏனெனில் கூற்று 2 பொம்மை தீர்ப்பின் கொள்கையைப் பிரதிபலிக்கிறது.",
+        "Option C fails because Statement 1 is factually erroneous.", "விருப்பம் C தவறானது, ஏனெனில் கூற்று 1 உண்மைக்குப் புறம்பானது.",
+        "Option D fails because Statement 2 is a cornerstone ruling of Indian constitutional law.", "விருப்பம் D தவறானது, ஏனெனில் கூற்று 2 இந்திய அரசியலமைப்புச் சட்டத்தின் ஒரு மூலக்கல் தீர்ப்பாகும்.",
+        "Bommai Doctrine Safeguard: Assembly is kept in suspended animation until parliamentary approval, enabling judicial restitution if proclamation is struck down.",
+        "பொம்மை கோட்பாட்டுப் பாதுகாப்பு: பாராளுமன்ற ஒப்புதல் வரை சட்டமன்றம் இடைநிறுத்தத்தில் வைக்கப்படுகிறது; இதனால் பிரகடனம் ரத்து செய்யப்பட்டால் சட்டமன்றத்தை மீண்டும் புதுப்பிக்க முடியும்.",
+        "If Parliament disapproves or fails to approve the proclamation within 2 months, the dismissed ministry and suspended assembly revive.",
+        "பாராளுமன்றம் 2 மாதங்களுக்குள் ஒப்புதல் அளிக்கத் தவறினால் அல்லது நிராகரித்தால், பதவி நீக்கப்பட்ட அமைச்சரவையும் இடைநிறுத்தப்பட்ட சட்டமன்றமும் மீண்டும் உயிர் பெறும்."
+    ))
+
+    # 015 - Key C
+    qs.append(make_ep_q(
+        PREFIX, 15, DIFF, "Statement MCQ", "S.R. Bommai Case (1994) Landmark Principles",
+        "Consider the following statements regarding the landmark principles laid down by the Supreme Court in S.R. Bommai v. Union of India (1994):\n1. The proclamation of President's Rule under Article 356 is subject to judicial review on grounds of mala fides or irrationality.\n2. The floor of the Legislative Assembly is the only constitutionally valid forum to test the majority of the Council of Ministers, not the subjective assessment of the Governor.\nWhich of the statements given above is/are correct?",
+        "எஸ்.ஆர். பொம்மை எதிர் இந்திய ஒன்றியம் (1994) வழக்கில் உச்ச நீதிமன்றம் வகுத்த வரலாற்றுச் சிறப்புமிக்க கொள்கைகள் பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. சரத்து 356-ன் கீழான குடியரசுத் தலைவர் ஆட்சி பிரகடனம் உள்நோக்கம் (mala fides) அல்லது பகுத்தறிவற்ற தன்மை ஆகியவற்றின் அடிப்படையில் நீதித்துறை மறுஆய்வுக்கு உட்பட்டது.\n2. அமைச்சரவையின் பெரும்பான்மையைச் சோதிப்பதற்கு சட்டமன்றத்தின் அவையே (Floor Test) ஒரே அரசியலமைப்பு ரீதியான சட்டபூர்வ தளமாகும், மாறாக ஆளுநரின் அகநிலை மதிப்பீடு அல்ல.\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Both 1 and 2", "1 மற்றும் 2 ஆகிய இரண்டும்",
+        "Neither 1 nor 2", "1 மற்றும் 2 ஆகிய இரண்டும் அல்ல",
+        "C",
+        "Both statements are correct. In S.R. Bommai (1994), a 9-judge bench laid down that: 1. Article 356 is justiciable and subject to judicial review; 2. The floor test is obligatory to determine majority; 3. Burden lies on the Union to prove that relevant material existed; 4. Court can restore dissolved assemblies and dismissed ministries if the proclamation is found unconstitutional.",
+        "இரு கூற்றுகளும் சரியானவை. எஸ்.ஆர். பொம்மை (1994) வழக்கில் 9 நீதிபதிகள் கொண்ட அரசியலமைப்பு அமர்வு: 1. சரத்து 356 நீதித்துறை மறுஆய்வுக்கு உட்பட்டது; 2. பெரும்பான்மையை நிரூபிக்க நம்பிக்கை வாக்கெடுப்பு (Floor test) கட்டாயமானது; 3. போதுமான காரணங்கள் இருந்ததை நிரூபிக்கும் பொறுப்பு மத்திய அரசைச் சார்ந்தது; 4. பிரகடனம் சட்டவிரோதமானது எனில் கலைக்கப்பட்ட சட்டமன்றத்தையும் அரசையும் நீதிமன்றத்தால் மீட்டெடுக்க முடியும் என்று தீர்ப்பளித்தது.",
+        "Option A ignores Statement 2, which established the mandatory floor test rule.", "விருப்பம் A கூற்று 2-ஐப் புறக்கணிக்கிறது, இது கட்டாய நம்பிக்கை வாக்கெடுப்பு விதியை வகுத்தது.",
+        "Option B ignores Statement 1, which firmly established judicial review over Article 356.", "விருப்பம் B கூற்று 1-ஐப் புறக்கணிக்கிறது, இது சரத்து 356 மீதான நீதித்துறை மறுஆய்வை உறுதிப்படுத்தியது.",
+        "Option C correctly validates both foundational holdings of the Bommai ruling.", "விருப்பம் C பொம்மை தீர்ப்பின் இரு அடிப்படைக் கொள்கைகளையும் சரியாக உறுதிப்படுத்துகிறது.",
+        "Option D is wrong because both statements are celebrated constitutional principles.", "விருப்பம் D தவறு, ஏனெனில் இரு கூற்றுகளும் புகழ்பெற்ற அரசியலமைப்புத் தத்துவங்கள் ஆகும்.",
+        "TNPSC Milestone: S.R. Bommai (1994) drastically reduced the rampant political misuse of Article 356 by central governments.",
+        "TNPSC மைல்கல்: எஸ்.ஆர். பொம்மை (1994) தீர்ப்பு மத்திய அரசுகளால் சரத்து 356 அரசியல் ரீதியாகத் தவறாகப் பயன்படுத்தப்படுவதை பெருமளவில் குறைத்தது.",
+        "The Bommai judgment also held that Secularism is a basic feature of the Constitution, justifying the dismissal of governments that act against it.",
+        "மதச்சார்பின்மை அரசியலமைப்பின் அடிப்படைக் கட்டமைப்பு என்று கூறிய பொம்மை தீர்ப்பு, அதற்கு எதிராகச் செயல்படும் அரசுகளைக் கலைப்பது நியாயமானது என்றும் கூறியது."
+    ))
+
+    # 016 - Key D
+    qs.append(make_ep_q(
+        PREFIX, 16, DIFF, "Statement MCQ", "Article 357 - Exercise of Legislative Powers Under Article 356",
+        "Consider the following statements regarding the exercise of legislative powers under Article 357 during President's Rule:\n1. Parliament can confer on the President the power to make laws for the State, and such laws are known as 'President's Ordinances'.\n2. Any law made by Parliament or the President during President's Rule automatically ceases to have effect immediately upon the revocation of the proclamation.\nWhich of the statements given above is/are correct?",
+        "குடியரசுத் தலைவர் ஆட்சியின் போது சரத்து 357-ன் கீழ் சட்டவாக்க அதிகாரங்களைப் பயன்படுத்துவது பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. மாநிலத்திற்காகச் சட்டம் இயற்றும் அதிகாரத்தை பாராளுமன்றம் குடியரசுத் தலைவருக்கு வழங்க முடியும், மேலும் இத்தகைய சட்டங்கள் 'குடியரசுத் தலைவர் அவசரச் சட்டங்கள்' என்று அழைக்கப்படுகின்றன.\n2. குடியரசுத் தலைவர் ஆட்சியின் போது பாராளுமன்றம் அல்லது குடியரசுத் தலைவரால் இயற்றப்பட்ட எந்தவொரு சட்டமும் பிரகடனம் ரத்து செய்யப்பட்ட உடனேயே தானாகவே செயலிழந்துவிடும்.\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Both 1 and 2", "1 மற்றும் 2 ஆகிய இரண்டும்",
+        "Neither 1 nor 2", "1 மற்றும் 2 ஆகிய இரண்டும் அல்ல",
+        "D",
+        "Both statements are INCORRECT. Statement 1 is incorrect: laws made by the President under delegated powers under Article 357(1)(a) are called 'President's Acts' (NOT Ordinances). Statement 2 is incorrect: under the 44th Amendment Act 1978 (modifying Article 357(2)), laws made during President's Rule do NOT automatically lapse upon revocation; they continue in force until altered, repealed, or amended by the State Legislature.",
+        "இரு கூற்றுகளும் தவறானவை. கூற்று 1 தவறு: சரத்து 357(1)(a)-ன் கீழ் வழங்கப்பட்ட அதிகாரத்தின் கீழ் குடியரசுத் தலைவர் இயற்றும் சட்டங்கள் 'குடியரசுத் தலைவர் சட்டங்கள்' (President's Acts) என அழைக்கப்படுகின்றன (அவசரச் சட்டங்கள் அல்ல). கூற்று 2 தவறு: 1978-ன் 44-வது திருத்தச் சட்டத்தின்படி (சரத்து 357(2)), குடியரசுத் தலைவர் ஆட்சியின் போது இயற்றப்பட்ட சட்டங்கள் பிரகடனம் ரத்தானவுடன் தானாக முடிவுக்கு வராது; மாநில சட்டமன்றம் அவற்றை மாற்றும், ரத்து செய்யும் அல்லது திருத்தும் வரை அவை தொடர்ந்து நடைமுறையில் இருக்கும்.",
+        "Option A is wrong because they are enacted as President's Acts, not Ordinances.", "விருப்பம் A தவறு, ஏனெனில் அவை குடியரசுத் தலைவர் சட்டங்களாக இயற்றப்படுகின்றன, அவசரச் சட்டங்கள் அல்ல.",
+        "Option B is wrong because laws continue in force until the state legislature alters them.", "விருப்பம் B தவறு, ஏனெனில் மாநில சட்டமன்றம் மாற்றும் வரை சட்டங்கள் தொடர்ந்து நடைமுறையில் இருக்கும்.",
+        "Option C is wrong because both statements contain significant legal errors.", "விருப்பம் C தவறு, ஏனெனில் இரு கூற்றுகளிலும் குறிப்பிடத்தக்க சட்டப் பிழைகள் உள்ளன.",
+        "Option D is correct as neither Statement 1 nor Statement 2 is valid.", "விருப்பம் D சரியானது, ஏனெனில் கூற்று 1 மற்றும் கூற்று 2 ஆகிய இரண்டும் தவறானவை.",
+        "44th Amendment Reform: Previously, laws lapsed 1 year after proclamation ended. Post-1978, they remain indefinitely until the state assembly repeals them.",
+        "44-வது திருத்தச் சீர்திருத்தம்: முன்பு, பிரகடனம் முடிந்து 1 வருடத்தில் சட்டங்கள் காலாவதியாயின. 1978-க்குப் பின், மாநில சட்டமன்றம் ரத்து செய்யும் வரை அவை நீடிக்கும்.",
+        "Under Article 357(1)(c), when Lok Sabha is not in session, the President can authorize expenditure from the Consolidated Fund of the State pending parliamentary sanction.",
+        "சரத்து 357(1)(c)-ன் கீழ், மக்களவை கூட்டத்தொடரில் இல்லாத போது, பாராளுமன்ற ஒப்புதலுக்கு உட்பட்டு மாநிலத் தொகுப்பு நிதியிலிருந்து செலவினங்களை மேற்கொள்ள குடியரசுத் தலைவர் அங்கீகரிக்கலாம்."
+    ))
+
+    # 017 - Key A
+    qs.append(make_ep_q(
+        PREFIX, 17, DIFF, "Statement MCQ", "Article 360 - Financial Emergency Grounds & Approval",
+        "Consider the following statements regarding Financial Emergency under Article 360:\n1. The President can proclaim a Financial Emergency if satisfied that a situation has arisen whereby the financial stability or credit of India or any part of its territory is threatened.\n2. A proclamation of Financial Emergency must be approved by both Houses of Parliament within two months from the date of its issue by a simple majority.\nWhich of the statements given above is/are correct?",
+        "சரத்து 360-ன் கீழான நிதி அவசரநிலை பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. இந்தியா அல்லது அதன் ஆட்சிப் பகுதியின் ஏதேனும் ஒரு பகுதியின் நிதி ஸ்திரத்தன்மை அல்லது கடன் நம்பகத்தன்மைக்கு அச்சுறுத்தல் ஏற்பட்டுள்ளது என்று திருப்தியடைந்தால் குடியரசுத் தலைவர் நிதி அவசரநிலையைப் பிரகடனம் செய்யலாம்.\n2. நிதி அவசரநிலைப் பிரகடனம் வெளியிடப்பட்ட நாளிலிருந்து இரண்டு மாதங்களுக்குள் பாராளுமன்றத்தின் இரு அவைகளாலும் எளிய பெரும்பான்மையால் ஒப்புதல் அளிக்கப்பட வேண்டும்.\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
+        "Both 1 and 2", "1 மற்றும் 2 ஆகிய இரண்டும்",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Neither 1 nor 2", "1 மற்றும் 2 ஆகிய இரண்டும் அல்ல",
+        "A",
+        "Both statements are correct. Article 360(1) authorizes the President to proclaim Financial Emergency if financial stability or credit of India (or any part thereof) is threatened. Under Article 360(2), it must be approved by both Houses within two months by a simple majority.",
+        "இரு கூற்றுகளும் சரியானவை. இந்தியா அல்லது அதன் எந்தவொரு பகுதியின் நிதி ஸ்திரத்தன்மை அல்லது கடன் நம்பகத்தன்மைக்கு அச்சுறுத்தல் ஏற்பட்டால் சரத்து 360(1)-ன் கீழ் குடியரசுத் தலைவர் நிதி அவசரநிலையைப் பிரகடனம் செய்யலாம். சரத்து 360(2)-ன் கீழ் இரு அவைகளும் இரண்டு மாதங்களுக்குள் எளிய பெரும்பான்மையால் இதற்கு ஒப்புதல் அளிக்க வேண்டும்.",
+        "Option A is correct; both statements accurately state the grounds and approval rules.", "விருப்பம் A சரியானது; இரு கூற்றுகளும் காரணங்கள் மற்றும் ஒப்புதல் விதிகளைத் துல்லியமாகக் கூறுகின்றன.",
+        "Option B ignores Statement 2, which provides the parliamentary approval mechanism.", "விருப்பம் B பாராளுமன்ற ஒப்புதல் முறைமையைக் கூறும் கூற்று 2-ஐப் புறக்கணிக்கிறது.",
+        "Option C ignores Statement 1, which states the core constitutional trigger.", "விருப்பம் C முதன்மை அரசியலமைப்புத் தூண்டுதலைக் கூறும் கூற்று 1-ஐப் புறக்கணிக்கிறது.",
+        "Option D is incorrect as both statements are factually and constitutionally sound.", "விருப்பம் D தவறானது, ஏனெனில் இரு கூற்றுகளும் உண்மை மற்றும் அரசியலமைப்புப்படி சரியானவை.",
+        "TNPSC Fast Trick: Approval time for 352 is 1 month; for 356 and 360, it is 2 months.",
+        "TNPSC விரைவுக் குறிப்பு: 352-க்கான ஒப்புதல் காலம் 1 மாதம்; 356 மற்றும் 360-க்கு 2 மாதங்கள் ஆகும்.",
+        "If Lok Sabha is dissolved when proclamation is issued, it survives until 30 days from the reconstituted Lok Sabha's first sitting, provided Rajya Sabha approved it.",
+        "பிரகடனம் வெளியிடப்படும் போது மக்களவை கலைக்கப்பட்டிருந்தால், மாநிலங்களவை ஒப்புதல் அளித்திருந்தால், புதிய மக்களவையின் முதல் கூட்டத்திலிருந்து 30 நாட்கள் வரை அது நீடிக்கும்."
+    ))
+
+    # 018 - Key B
+    qs.append(make_ep_q(
+        PREFIX, 18, DIFF, "Statement MCQ", "Article 360 Duration & Judicial Salaries",
+        "Consider the following statements regarding the operation and effects of Financial Emergency under Article 360:\n1. Once approved by Parliament, a Financial Emergency expires automatically at the end of three years unless extended by a constitutional amendment.\n2. During a Financial Emergency, the President can issue directions for the reduction of salaries and allowances of judges of the Supreme Court and High Courts.\nWhich of the statements given above is/are correct?",
+        "சரத்து 360-ன் கீழான நிதி அவசரநிலையின் செயல்பாடு மற்றும் விளைவுகள் பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. பாராளுமன்றத்தால் ஒப்புதல் அளிக்கப்பட்டவுடன், அரசியலமைப்புத் திருத்தத்தின் மூலம் நீட்டிக்கப்படாவிட்டால் நிதி அவசரநிலை மூன்று ஆண்டுகளின் முடிவில் தானாகவே காலாவதியாகிவிடும்.\n2. நிதி அவசரநிலையின் போது, உச்ச நீதிமன்றம் மற்றும் உயர் நீதிமன்ற நீதிபதிகளின் ஊதியங்கள் மற்றும் படிகளைக் குறைப்பதற்கான வழிகாட்டுதல்களைக் குடியரசுத் தலைவர் பிறப்பிக்க முடியும்.\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Both 1 and 2", "1 மற்றும் 2 ஆகிய இரண்டும்",
+        "Neither 1 nor 2", "1 மற்றும் 2 ஆகிய இரண்டும் அல்ல",
+        "B",
+        "Statement 1 is INCORRECT: Once approved by Parliament, a Financial Emergency continues INDEFINITELY until revoked by the President. There is NO maximum duration and NO requirement for periodic 6-month parliamentary renewal! Statement 2 is CORRECT: Under Article 360(4)(b), the President can direct the reduction of salaries and allowances of all persons serving the Union, including judges of the Supreme Court and High Courts.",
+        "கூற்று 1 தவறு: பாராளுமன்றத்தால் அங்கீகரிக்கப்பட்டவுடன், குடியரசுத் தலைவரால் ரத்து செய்யப்படும் வரை நிதி அவசரநிலை காலவரையின்றி நீடிக்கும். இதற்கு அதிகபட்ச கால வரம்பு இல்லை மற்றும் 6 மாத காலமுறை புதுப்பித்தல் தேவையும் இல்லை! கூற்று 2 சரி: சரத்து 360(4)(b)-ன் கீழ், உச்ச நீதிமன்றம் மற்றும் உயர் நீதிமன்ற நீதிபதிகள் உட்பட மத்திய அரசின் கீழ் பணியாற்றும் அனைவரது ஊதியங்களையும் படிகளையும் குறைக்க குடியரசுத் தலைவர் உத்தரவிடலாம்.",
+        "Option A is incorrect because Financial Emergency has no 3-year expiry limit.", "விருப்பம் A தவறானது, ஏனெனில் நிதி அவசரநிலைக்கு 3 ஆண்டு காலாவதி வரம்பு இல்லை.",
+        "Option B is correct because Statement 2 alone is constitutionally valid.", "விருப்பம் B சரியானது, ஏனெனில் கூற்று 2 மட்டுமே அரசியலமைப்புப்படி செல்லுபடியாகும்.",
+        "Option C fails because Statement 1 is completely contrary to Article 360.", "விருப்பம் C தவறானது, ஏனெனில் கூற்று 1 சரத்து 360-க்கு முற்றிலும் முரணானது.",
+        "Option D fails because Statement 2 is an explicit constitutional power.", "விருப்பம் D தவறானது, ஏனெனில் கூற்று 2 ஒரு வெளிப்படையான அரசியலமைப்பு அதிகாரமாகும்.",
+        "TNPSC Trap: Judges' salaries are constitutionally charged and protected, EXCEPT during Article 360 Financial Emergency!",
+        "TNPSC பொறி: சரத்து 360 நிதி அவசரநிலையைத் தவிர மற்ற எக்காலத்திலும் நீதிபதிகளின் ஊதியம் அரசியலமைப்பு ரீதியாகப் பாதுகாக்கப்பட்டுள்ளது!",
+        "During Financial Emergency, the President can also require all Money Bills passed by State Legislatures to be reserved for his consideration.",
+        "நிதி அவசரநிலையின் போது, மாநில சட்டமன்றங்களால் நிறைவேற்றப்படும் அனைத்து நிதி மற்றும் பண மசோதாக்களையும் தனது பரிசீலனைக்கு நிறுத்தி வைக்கவும் குடியரசுத் தலைவர் கோரலாம்."
+    ))
+
+    # 019 - Key C
+    qs.append(make_ep_q(
+        PREFIX, 19, DIFF, "Statement MCQ", "Financial Emergency History & Revocation",
+        "Consider the following statements regarding Financial Emergency in India:\n1. A Financial Emergency under Article 360 has never been declared in India since the commencement of the Constitution.\n2. A proclamation of Financial Emergency can be revoked by the President at any time by a subsequent proclamation, which does not require parliamentary approval.\nWhich of the statements given above is/are correct?",
+        "இந்தியாவில் நிதி அவசரநிலை பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. அரசியலமைப்பு அமலுக்கு வந்தது முதல் இந்தியாவில் இதுவரையிலும் சரத்து 360-ன் கீழான நிதி அவசரநிலை ஒருமுறை கூட அறிவிக்கப்பட்டதில்லை.\n2. நிதி அவசரநிலைப் பிரகடனத்தை குடியரசுத் தலைவர் எந்த நேரத்திலும் மற்றொரு பிரகடனம் மூலம் ரத்து செய்யலாம்; இதற்கு பாராளுமன்ற ஒப்புதல் தேவையில்லை.\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Both 1 and 2", "1 மற்றும் 2 ஆகிய இரண்டும்",
+        "Neither 1 nor 2", "1 மற்றும் 2 ஆகிய இரண்டும் அல்ல",
+        "C",
+        "Both statements are correct. No Financial Emergency has ever been proclaimed in India, even during the acute balance of payments crisis of 1991. Furthermore, under Article 360(2)(a), revocation of Financial Emergency is entirely at the discretion of the President and does not require approval by Parliament.",
+        "இரு கூற்றுகளும் சரியானவை. 1991-ஆம் ஆண்டின் கடுமையான அன்னியச் செலாவணி நெருக்கடியின் போது கூட இந்தியாவில் நிதி அவசரநிலை அறிவிக்கப்படவில்லை. மேலும் சரத்து 360(2)(a)-ன் கீழ், நிதி அவசரநிலையை ரத்து செய்வது குடியரசுத் தலைவரின் விருப்பத்திற்கு உட்பட்டது மற்றும் அதற்கு பாராளுமன்ற ஒப்புதல் தேவையில்லை.",
+        "Option A ignores Statement 2 regarding the unilateral revocation procedure.", "விருப்பம் A ஒருதலைப்பட்ச ரத்து நடைமுறை தொடர்பான கூற்று 2-ஐப் புறக்கணிக்கிறது.",
+        "Option B ignores Statement 1, which is a frequently tested historical fact.", "விருப்பம் B அடிக்கடி கேட்கப்படும் வரலாற்று உண்மையான கூற்று 1-ஐப் புறக்கணிக்கிறது.",
+        "Option C correctly affirms both statements as true.", "விருப்பம் C இரு கூற்றுகளையும் சரியானவை என உறுதிப்படுத்துகிறது.",
+        "Option D is wrong because both statements are true.", "விருப்பம் D தவறு, ஏனெனில் இரு கூற்றுகளும் உண்மை.",
+        "Repeated PYQ: 'How many times has Financial Emergency been declared in India?' -> Answer: ZERO / NEVER.",
+        "மீண்டும் மீண்டும் கேட்கப்படும் முந்தைய ஆண்டு கேள்வி: 'இந்தியாவில் எத்தனை முறை நிதி அவசரநிலை அறிவிக்கப்பட்டுள்ளது?' -> விடை: ஒருமுறை கூட இல்லை / பூஜ்ஜியம்.",
+        "Dr. B.R. Ambedkar modeled Article 360 after the National Recovery Act of the United States (1933).",
+        "டாக்டர் பி.ஆர். அம்பேத்கர் அமெரிக்காவின் தேசிய மீட்புச் சட்டம் (1933)-ஐ முன்மாதிரியாகக் கொண்டு சரத்து 360-ஐ வடிவமைத்தார்."
+    ))
+
+    # 020 - Key D
+    qs.append(make_ep_q(
+        PREFIX, 20, DIFF, "Statement MCQ", "38th vs 44th Constitutional Amendments on Judicial Review",
+        "Consider the following statements regarding the judicial review of Emergency Proclamations:\n1. The 38th Constitutional Amendment Act of 1975 made the satisfaction of the President under Articles 352, 356, and 360 subject to mandatory pre-proclamation judicial scrutiny by the Supreme Court.\n2. The 44th Constitutional Amendment Act of 1978 permanently barred courts from questioning any proclamation of emergency under any circumstances.\nWhich of the statements given above is/are correct?",
+        "அவசரநிலைப் பிரகடனங்களின் மீதான நீதித்துறை மறுஆய்வு பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. 1975-ஆம் ஆண்டின் 38-வது அரசியலமைப்பு திருத்தச் சட்டம் சரத்துகள் 352, 356 மற்றும் 360-ன் கீழான குடியரசுத் தலைவரின் திருப்தியை உச்ச நீதிமன்றத்தின் கட்டாய முந்தைய நீதித்துறை ஆய்வுக்கு உட்பட்டதாக்கியது.\n2. 1978-ஆம் ஆண்டின் 44-வது அரசியலமைப்பு திருத்தச் சட்டம் எந்தச் சூழ்நிலையிலும் அவசரநிலைப் பிரகடனத்தை நீதிமன்றங்கள் கேள்வி கேட்பதை நிரந்தரமாகத் தடை செய்தது.\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Both 1 and 2", "1 மற்றும் 2 ஆகிய இரண்டும்",
+        "Neither 1 nor 2", "1 மற்றும் 2 ஆகிய இரண்டும் அல்ல",
+        "D",
+        "Both statements are completely REVERSED and INCORRECT. Statement 1 is incorrect: the 38th Amendment Act 1975 made the President's satisfaction final, conclusive, and BEYOND the jurisdiction of any court (immune from judicial review). Statement 2 is incorrect: the 44th Amendment Act 1978 DELETED those clauses, restoring judicial review over emergency proclamations (reaffirmed in Minerva Mills and Bommai).",
+        "இரு கூற்றுகளும் முற்றிலும் தலைகீழானவை மற்றும் தவறானவை. கூற்று 1 தவறு: 1975-ன் 38-வது திருத்தச் சட்டம் குடியரசுத் தலைவரின் திருப்தியே இறுதியானது மற்றும் நீதிமன்றங்களின் எல்லைக்கு அப்பாற்பட்டது (நீதித்துறை மறுஆய்வுக்கு அப்பாற்பட்டது) என மாற்றியது. கூற்று 2 தவறு: 1978-ன் 44-வது திருத்தச் சட்டம் அந்தப் பிரிவுகளை நீக்கி, அவசரநிலைப் பிரகடனங்கள் மீதான நீதித்துறை மறுஆய்வை மீண்டும் மீட்டெடுத்தது (மினர்வா மில்ஸ் மற்றும் பொம்மை வழக்குகளில் உறுதிப்படுத்தப்பட்டது).",
+        "Option A is wrong because 38th CAA ousted judicial review, not instituted it.", "விருப்பம் A தவறு, ஏனெனில் 38-வது திருத்தம் நீதித்துறை மறுஆய்வை நீக்கியது, கொண்டுவரவில்லை.",
+        "Option B is wrong because 44th CAA restored judicial review, not barred it.", "விருப்பம் B தவறு, ஏனெனில் 44-வது திருத்தம் நீதித்துறை மறுஆய்வை மீட்டெடுத்தது, தடை செய்யவில்லை.",
+        "Option C is wrong because both statements invert historical amendments.", "விருப்பம் C தவறு, ஏனெனில் இரு கூற்றுகளும் வரலாற்றுத் திருத்தங்களைத் தலைகீழாகக் கூறுகின்றன.",
+        "Option D is correct as both statements are false.", "விருப்பம் D சரியானது, ஏனெனில் இரு கூற்றுகளும் தவறானவை.",
+        "Constitutional History: 38th CAA (1975) barred judicial review; 44th CAA (1978) restored judicial review.",
+        "அரசியலமைப்பு வரலாறு: 38-வது திருத்தம் (1975) நீதித்துறை மறுஆய்வைத் தடுத்தது; 44-வது திருத்தம் (1978) நீதித்துறை மறுஆய்வை மீட்டெடுத்தது.",
+        "In Minerva Mills (1980), the Supreme Court affirmed that a National Emergency proclamation can be challenged if it is mala fide or based on irrelevant facts.",
+        "மினர்வா மில்ஸ் (1980) வழக்கில், உள்நோக்கத்துடனோ அல்லது பொருத்தமற்ற உண்மைகளின் அடிப்படையிலோ அமைந்திருந்தால் தேசிய அவசரநிலைப் பிரகடனத்தை நீதிமன்றத்தில் சவாலுக்கு உட்படுத்தலாம் என்று உச்ச நீதிமன்றம் உறுதிப்படுத்தியது."
+    ))
+
+    return qs
+
+def get_statement_questions_batch3():
+    qs = []
+
+    # 021 - Key A
+    qs.append(make_ep_q(
+        PREFIX, 21, DIFF, "Statement MCQ", "Historical Emergency Declarations in India",
+        "Consider the following statements regarding the National Emergencies proclaimed in India:\n1. The first National Emergency was proclaimed in October 1962 on the ground of Chinese aggression in NEFA (now Arunachal Pradesh) and continued till January 1968.\n2. The third National Emergency was proclaimed in June 1975 on the ground of 'internal disturbance' while the second emergency (declared in December 1971) was still in operation.\nWhich of the statements given above is/are correct?",
+        "இந்தியாவில் அறிவிக்கப்பட்ட தேசிய அவசரநிலைகள் பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. முதல் தேசிய அவசரநிலை அக்டோபர் 1962-ல் நேபா (தற்போது அருணாச்சலப் பிரதேசம்) பகுதியில் சீன ஆக்கிரமிப்பு காரணமாக அறிவிக்கப்பட்டு ஜனவரி 1968 வரை நீடித்தது.\n2. மூன்றாவது தேசிய அவசரநிலை ஜூன் 1975-ல் 'உள்நாட்டு அமைதியின்மை' என்ற அடிப்படையில் அறிவிக்கப்பட்ட போது, இரண்டாவது அவசரநிலையும் (டிசம்பர் 1971-ல் அறிவிக்கப்பட்டது) தொடர்ந்து செயல்பாட்டில் இருந்தது.\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
+        "Both 1 and 2", "1 மற்றும் 2 ஆகிய இரண்டும்",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Neither 1 nor 2", "1 மற்றும் 2 ஆகிய இரண்டும் அல்ல",
+        "A",
+        "Both statements are historically and constitutionally accurate. India has witnessed 3 National Emergencies: 1. Oct 1962 to Jan 1968 (Chinese aggression; also covered 1965 Pak war); 2. Dec 1971 (Pak aggression); 3. June 1975 (internal disturbance). Crucially, the 1975 emergency was declared while the 1971 external emergency was still operative; both were revoked together in March 1977.",
+        "இரு கூற்றுகளும் வரலாற்று ரீதியாகவும் அரசியலமைப்பு ரீதியாகவும் சரியானவை. இந்தியா 3 தேசிய அவசரநிலைகளைக் கண்டுள்ளது: 1. அக் 1962 முதல் ஜன 1968 வரை (சீன ஆக்கிரமிப்பு; 1965 பாகிஸ்தான் போரையும் உள்ளடக்கியது); 2. டிச 1971 (பாகிஸ்தான் ஆக்கிரமிப்பு); 3. ஜூன் 1975 (உள்நாட்டு அமைதியின்மை). மிக முக்கியமாக, 1971 வெளிப்புற அவசரநிலை செயல்பாட்டில் இருந்தபோதே 1975 அவசரநிலை அறிவிக்கப்பட்டது; இரண்டும் மார்ச் 1977-ல் ஒன்றாகத் திரும்பப் பெறப்பட்டன.",
+        "Option A is correct; both statements accurately state historical emergency timelines.", "விருப்பம் A சரியானது; இரு கூற்றுகளும் வரலாற்று அவசரநிலைக் காலக்கோடுகளைத் துல்லியமாகக் காட்டுகின்றன.",
+        "Option B ignores the simultaneous operation of the 2nd and 3rd emergencies.", "விருப்பம் B 2-வது மற்றும் 3-வது அவசரநிலைகளின் ஒரே நேரச் செயல்பாட்டைப் புறக்கணிக்கிறது.",
+        "Option C ignores the duration and circumstances of the 1st emergency.", "விருப்பம் C 1-வது அவசரநிலையின் கால அளவு மற்றும் சூழ்நிலைகளைப் புறக்கணிக்கிறது.",
+        "Option D is wrong because both statements are historically verified facts.", "விருப்பம் D தவறு, ஏனெனில் இரு கூற்றுகளும் வரலாற்று ரீதியாகச் சரிபார்க்கப்பட்ட உண்மைகள் ஆகும்.",
+        "TNPSC High-Yield: The 1962 emergency also covered the 1965 Indo-Pak war because it was not revoked until 1968.",
+        "TNPSC உயர்-விளைச்சல்: 1962 அவசரநிலை 1968 வரை நீடித்ததால் அது 1965 இந்திய-பாகிஸ்தான் போரையும் உள்ளடக்கியது.",
+        "President S. Radhakrishnan proclaimed the 1st emergency; V.V. Giri proclaimed the 2nd; Fakhruddin Ali Ahmed proclaimed the 3rd.",
+        "1-வது அவசரநிலையை எஸ். ராதாகிருஷ்ணன்; 2-வது அவசரநிலையை வி.வி. கிரி; 3-வது அவசரநிலையை பக்ருதீன் அலி அகமது பிரகடனப்படுத்தினர்."
+    ))
+
+    # 022 - Key B
+    qs.append(make_ep_q(
+        PREFIX, 22, DIFF, "Statement MCQ", "Shah Commission of Inquiry (1977)",
+        "Consider the following statements regarding the Shah Commission of Inquiry:\n1. It was appointed by the Indira Gandhi government in 1975 to justify the declaration of internal emergency.\n2. It was headed by Justice J.C. Shah, former Chief Justice of India, and its findings prompted the enactment of the 44th Constitutional Amendment Act, 1978.\nWhich of the statements given above is/are correct?",
+        "ஷா விசாரணைக் குழு (Shah Commission) பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. உள்நாட்டு அவசரநிலைப் பிரகடனத்தை நியாயப்படுத்துவதற்காக 1975-ல் இந்திரா காந்தி அரசால் இக்குழு நியமிக்கப்பட்டது.\n2. இது இந்தியாவின் முன்னாள் தலைமை நீதிபதி ஜே.சி. ஷா தலைமையில் அமைக்கப்பட்டது, மேலும் இதன் கண்டுபிடிப்புகளே 1978-ஆம் ஆண்டின் 44-வது அரசியலமைப்பு திருத்தச் சட்டம் இயற்றப்படத் தூண்டுகோலாக அமைந்தன.\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Both 1 and 2", "1 மற்றும் 2 ஆகிய இரண்டும்",
+        "Neither 1 nor 2", "1 மற்றும் 2 ஆகிய இரண்டும் அல்ல",
+        "B",
+        "Statement 1 is INCORRECT: The Shah Commission was appointed in May 1977 by the Janata Party government headed by Morarji Desai (NOT the Indira Gandhi government) to inquire into the excesses and abuses of power during the 1975 Emergency. Statement 2 is CORRECT: Headed by former CJI J.C. Shah, its recommendations directly led to the extensive safeguards embedded in the 44th Amendment Act, 1978.",
+        "கூற்று 1 தவறு: 1975 அவசரநிலையின் போது நிகழ்ந்த அதிகார அத்துமீறல்கள் மற்றும் முறைகேடுகள் குறித்து விசாரிக்க மே 1977-ல் மொரார்ஜி தேசாய் தலைமையிலான ஜனதா கட்சி அரசால் (இந்திரா காந்தி அரசால் அல்ல) ஷா ஆணையம் அமைக்கப்பட்டது. கூற்று 2 சரி: முன்னாள் தலைமை நீதிபதி ஜே.சி. ஷா தலைமையிலான இந்த ஆணையத்தின் பரிந்துரைகளே 1978-ன் 44-வது திருத்தச் சட்டத்தில் பல்வேறு பாதுகாப்புகள் சேர்க்கப்படக் காரணமாயின.",
+        "Option A is wrong because Shah Commission was appointed by the Janata government, not Indira Gandhi.", "விருப்பம் A தவறு, ஏனெனில் ஷா ஆணையம் இந்திரா காந்தியால் அல்ல, ஜனதா அரசால் அமைக்கப்பட்டது.",
+        "Option B is correct because Statement 2 is historically and factually accurate.", "விருப்பம் B சரியானது, ஏனெனில் கூற்று 2 வரலாற்று மற்றும் உண்மை ரீதியாகச் சரியானது.",
+        "Option C fails because Statement 1 is factually erroneous.", "விருப்பம் C தவறானது, ஏனெனில் கூற்று 1 உண்மைக் குறைபாடுடையது.",
+        "Option D fails because Statement 2 is a well-established constitutional fact.", "விருப்பம் D தவறானது, ஏனெனில் கூற்று 2 நன்கு அறியப்பட்ட அரசியலமைப்பு உண்மையாகும்.",
+        "Exam Tip: Shah Commission (1977) = Investigated 1975 Emergency excesses -> Led to 44th Amendment Act (1978).",
+        "தேர்வுக் குறிப்பு: ஷா ஆணையம் (1977) = 1975 அவசரநிலை முறைகேடுகளை விசாரித்தது -> 44-வது திருத்தச் சட்டத்திற்கு (1978) வழிவகுத்தது.",
+        "The Commission concluded that there was no economic crisis or threat to public order justifying the imposition of emergency on June 25, 1975.",
+        "ஜூன் 25, 1975 அன்று அவசரநிலையை விதிப்பதை நியாயப்படுத்தும் பொருளாதார நெருக்கடியோ அல்லது பொது ஒழுங்கு அச்சுறுத்தலோ இல்லை என்று ஆணையம் முடிவுக்கு வந்தது."
+    ))
+
+    # 023 - Key C
+    qs.append(make_ep_q(
+        PREFIX, 23, DIFF, "Statement MCQ", "Habeas Corpus Case & Article 21 Inviolability",
+        "Consider the following statements regarding the suspension of Fundamental Rights and the Habeas Corpus case:\n1. In A.D.M. Jabalpur v. Shivkant Shukla (1976), the Supreme Court majority held that during emergency, a citizen has no locus standi to move any writ petition under Article 226 for habeas corpus.\n2. The lone dissenting judgment in A.D.M. Jabalpur upholding personal liberty was delivered by Justice H.R. Khanna, and the majority decision was officially overruled by a 9-judge bench in K.S. Puttaswamy (2017).\nWhich of the statements given above is/are correct?",
+        "அடிப்படை உரிமைகள் இடைநிறுத்தம் மற்றும் ஆட்கொணர்வு வழக்கு (Habeas Corpus Case) பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. ஏ.டி.எம். ஜபல்பூர் எதிர் சிவகாந்த் சுக்லா (1976) வழக்கில், அவசரநிலையின் போது ஆட்கொணர்வு மனுவுக்காக சரத்து 226-ன் கீழ் ரிட் மனு தாக்கல் செய்ய குடிமகனுக்கு எந்த முகாந்திரமும் இல்லை என்று உச்ச நீதிமன்ற பெரும்பான்மை அமர்வு தீர்ப்பளித்தது.\n2. தனிநபர் சுதந்திரத்தை ஆதரித்து ஏ.டி.எம். ஜபல்பூர் வழக்கில் தனித்து மாறுபட்ட தீர்ப்பை வழங்கியவர் நீதிபதி எச்.ஆர். கண்ணா ஆவார், மேலும் பெரும்பான்மைத் தீர்ப்பானது கே.எஸ். புட்டசுவாமி (2017) வழக்கில் 9 நீதிபதிகள் கொண்ட அமர்வால் அதிகாரப்பூர்வமாக ரத்து செய்யப்பட்டது.\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Both 1 and 2", "1 மற்றும் 2 ஆகிய இரண்டும்",
+        "Neither 1 nor 2", "1 மற்றும் 2 ஆகிய இரண்டும் அல்ல",
+        "C",
+        "Both statements are correct. The infamous 4:1 decision in A.D.M. Jabalpur (1976) held that even arbitrary detentions could not be challenged during emergency. Justice H.R. Khanna's heroic dissent maintained that the right to life and liberty existed prior to the Constitution and could not be extinguished. In K.S. Puttaswamy (2017), the Supreme Court expressly overruled A.D.M. Jabalpur.",
+        "இரு கூற்றுகளும் சரியானவை. ஏ.டி.எம். ஜபல்பூர் (1976) வழக்கின் 4:1 பெரும்பான்மைத் தீர்ப்பு, அவசரநிலையின் போது தன்னிச்சையான கைதுகளைக் கூட எதிர்க்க முடியாது என்று கூறியது. நீதிபதி எச்.ஆர். கண்ணாவின் துணிச்சலான மாறுபட்ட தீர்ப்பு, வாழ்வுரிமையும் சுதந்திரமும் அரசியலமைப்புக்கு முன்பே இருந்தவை என்றும் அவற்றை அழிக்க முடியாது என்றும் கூறியது. கே.எஸ். புட்டசுவாமி (2017) வழக்கில் உச்ச நீதிமன்றம் ஏ.டி.எம். ஜபல்பூர் தீர்ப்பை வெளிப்படையாக ரத்து செய்தது.",
+        "Option A ignores Statement 2, which captures the landmark judicial redemption.", "விருப்பம் A வரலாற்றுச் சிறப்புமிக்க நீதித்துறை திருத்தத்தைக் கூறும் கூற்று 2-ஐப் புறக்கணிக்கிறது.",
+        "Option B ignores Statement 1, which states the core holding of A.D.M. Jabalpur.", "விருப்பம் B ஏ.டி.எம். ஜபல்பூர் வழக்கின் முக்கிய தீர்ப்பைக் கூறும் கூற்று 1-ஐப் புறக்கணிக்கிறது.",
+        "Option C correctly validates both statements as celebrated legal landmarks.", "விருப்பம் C இரு கூற்றுகளையும் புகழ்பெற்ற சட்ட மைல்கற்களாகச் சரியாக உறுதிப்படுத்துகிறது.",
+        "Option D is incorrect as both statements are true.", "விருப்பம் D தவறானது, ஏனெனில் இரு கூற்றுகளும் உண்மை.",
+        "Constitutional Hero: Justice H.R. Khanna was superseded for the office of Chief Justice of India due to his courage in dissenting in the Habeas Corpus case.",
+        "அரசியலமைப்பு நாயகன்: ஆட்கொணர்வு வழக்கில் மாறுபட்ட தீர்ப்பை வழங்கிய துணிச்சலின் காரணமாக தலைமை நீதிபதி பதவியில் நீதிபதி எச்.ஆர். கண்ணா புறக்கணிக்கப்பட்டார்.",
+        "The 44th Amendment Act later cemented this principle by declaring that Article 21 can never be suspended under Article 359.",
+        "சரத்து 359-ன் கீழ் சரத்து 21-ஐ ஒருபோதும் இடைநிறுத்த முடியாது என்று அறிவித்ததன் மூலம் 44-வது திருத்தச் சட்டம் இந்தக் கொள்கையை வலுப்படுத்தியது."
+    ))
+
+    # 024 - Key D
+    qs.append(make_ep_q(
+        PREFIX, 24, DIFF, "Statement MCQ", "Territorial Extent of Emergency - 42nd Amendment",
+        "Consider the following statements regarding the territorial extent of National Emergency:\n1. The Constitution originally provided that a National Emergency could be proclaimed only for the whole of India and not for any specific part.\n2. The 42nd Constitutional Amendment Act of 1976 enabled the President to limit the operation of a National Emergency to a specified part of the territory of India.\nWhich of the statements given above is/are NOT correct?",
+        "தேசிய அவசரநிலையின் பிராந்திய எல்லை பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. தேசிய அவசரநிலையானது இந்தியாவின் முழு பகுதிக்கு மட்டுமே பிரகடனப்படுத்தப்பட வேண்டும் என்றும், குறிப்பிட்ட பகுதிக்கு அல்ல என்றும் அரசியலமைப்பு முதலில் வழங்கியிருந்தது.\n2. 1976-ஆம் ஆண்டின் 42-வது அரசியலமைப்பு திருத்தச் சட்டம் தேசிய அவசரநிலையின் செயல்பாட்டை இந்தியாவின் ஒரு குறிப்பிட்ட பகுதிக்கு மட்டும் மட்டுப்படுத்த குடியரசுத் தலைவருக்கு அதிகாரம் அளித்தது.\nமேற்கூறிய கூற்றுகளில் எது/எவை தவறானவை?",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Both 1 and 2", "1 மற்றும் 2 ஆகிய இரண்டும்",
+        "Neither 1 nor 2", "1 மற்றும் 2 ஆகிய இரண்டும் அல்ல",
+        "D",
+        "Both Statement 1 and Statement 2 are TRUE; therefore, NEITHER is 'NOT correct'. Originally, the Constitution envisaged National Emergency only for the entire country. The 42nd Amendment Act of 1976 amended Article 352 to allow emergency to be proclaimed or restricted to any specific part of India.",
+        "கூற்று 1 மற்றும் கூற்று 2 ஆகிய இரண்டும் சரியானவை; எனவே எதுவுமே 'தவறானது அல்ல'. முதலில் அரசியலமைப்பு நாடு முழுவதும் மட்டுமே அவசரநிலையை விதிக்கும் வகையில் இருந்தது. 1976-ன் 42-வது திருத்தச் சட்டம் இந்தியாவின் ஒரு குறிப்பிட்ட பகுதிக்கு மட்டும் அவசரநிலையை அறிவிக்க அல்லது கட்டுப்படுத்த சரத்து 352-ஐத் திருத்தியது.",
+        "Option A is wrong because Statement 1 is true (not incorrect).", "விருப்பம் A தவறு, ஏனெனில் கூற்று 1 சரியானது (தவறானது அல்ல).",
+        "Option B is wrong because Statement 2 is true (not incorrect).", "விருப்பம் B தவறு, ஏனெனில் கூற்று 2 சரியானது (தவறானது அல்ல).",
+        "Option C is wrong because neither statement is false.", "விருப்பம் C தவறு, ஏனெனில் எந்தக் கூற்றும் தவறானது அல்ல.",
+        "Option D is correct because both statements are factually correct, making 'Neither 1 nor 2' the right choice for 'NOT correct'.", "விருப்பம் D சரியானது, ஏனெனில் இரு கூற்றுகளும் உண்மையானவை என்பதால் 'எதுவுமே தவறல்ல' என்பதே சரியான தேர்வாகும்.",
+        "TNPSC Question Trap Alert: Always watch out for 'NOT correct' in the question stem!",
+        "TNPSC வினாப் பொறி எச்சரிக்கை: வினாப் பகுதியில் 'தவறானவை' (NOT correct) என்று கேட்கப்பட்டுள்ளதா என்பதை எப்போதும் கவனிக்கவும்!",
+        "The 44th Amendment Act 1978 retained this provision, so emergency can currently apply either to whole India or to a specified part.",
+        "44-வது திருத்தச் சட்டம் இந்த விதியைத் தக்க வைத்துக் கொண்டதால், தற்போது அவசரநிலை முழு இந்தியாவுக்கோ அல்லது குறிப்பிட்ட பகுதிக்கோ பொருந்தலாம்."
+    ))
+
+    # 025 - Key A
+    qs.append(make_ep_q(
+        PREFIX, 25, DIFF, "Statement MCQ", "Sarkaria Commission Recommendations on Article 356",
+        "Consider the following statements regarding the recommendations of the Sarkaria Commission (1988) on Article 356:\n1. Article 356 should be used very sparingly, in extreme cases, as a measure of last resort when all other alternatives fail.\n2. Before invoking Article 356, the Centre should issue a warning to the errant State in specific terms under Article 355.\nWhich of the statements given above is/are correct?",
+        "சரத்து 356 குறித்த சர்க்காரியா ஆணையத்தின் (1988) பரிந்துரைகள் பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. மற்ற அனைத்து வழிகளும் தோல்வியடையும் போது மட்டுமே, தீவிர நிகழ்வுகளில், கடைசிப் புகலிடமாக சரத்து 356 மிகவும் அரிதாகவே பயன்படுத்தப்பட வேண்டும்.\n2. சரத்து 356-ஐப் பயன்படுத்துவதற்கு முன்பு, மத்திய அரசு தவறிழைக்கும் மாநிலத்திற்கு சரத்து 355-ன் கீழ் குறிப்பிட்ட வழிகளில் எச்சரிக்கை விடுக்க வேண்டும்.\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
+        "Both 1 and 2", "1 மற்றும் 2 ஆகிய இரண்டும்",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Neither 1 nor 2", "1 மற்றும் 2 ஆகிய இரண்டும் அல்ல",
+        "A",
+        "Both statements are correct. The Sarkaria Commission on Centre-State Relations (1988) made vital recommendations regarding Article 356: 1. Use as a last resort; 2. Issue prior warning under Article 355; 3. State Assembly should not be dissolved before parliamentary approval; 4. Proclamation should contain reasons explaining why constitutional machinery broke down.",
+        "இரு கூற்றுகளும் சரியானவை. மத்திய-மாநில உறவுகள் குறித்த சர்க்காரியா ஆணையம் (1988) சரத்து 356 தொடர்பாக முக்கியப் பரிந்துரைகளை வழங்கியது: 1. கடைசிப் புகலிடமாகப் பயன்படுத்த வேண்டும்; 2. சரத்து 355-ன் கீழ் முன்கூட்டியே எச்சரிக்கை விடுக்க வேண்டும்; 3. பாராளுமன்ற ஒப்புதலுக்கு முன் சட்டமன்றத்தைக் கலைக்கக் கூடாது; 4. அரசியலமைப்பு இயந்திரம் முறிந்ததற்கான காரணங்கள் பிரகடனத்தில் குறிப்பிடப்பட வேண்டும்.",
+        "Option A is correct; both statements are principal recommendations of Sarkaria Commission.", "விருப்பம் A சரியானது; இரு கூற்றுகளும் சர்க்காரியா ஆணையத்தின் முதன்மைப் பரிந்துரைகள் ஆகும்.",
+        "Option B ignores Statement 2, which is an extensively cited recommendation.", "விருப்பம் B பரவலாகக் குறிப்பிடப்படும் பரிந்துரையான கூற்று 2-ஐப் புறக்கணிக்கிறது.",
+        "Option C ignores Statement 1, which states the 'last resort' doctrine.", "விருப்பம் C 'கடைசிப் புகலிடக்' கோட்பாட்டைக் கூறும் கூற்று 1-ஐப் புறக்கணிக்கிறது.",
+        "Option D is wrong because both statements are true.", "விருப்பம் D தவறு, ஏனெனில் இரு கூற்றுகளும் உண்மை.",
+        "Judicial Endorsement: The Supreme Court in S.R. Bommai (1994) adopted and endorsed most of the Sarkaria Commission recommendations on Article 356.",
+        "நீதித்துறை ஏற்பு: எஸ்.ஆர். பொம்மை (1994) வழக்கில் உச்ச நீதிமன்றம் சரத்து 356 குறித்த சர்க்காரியா ஆணையப் பரிந்துரைகளில் பெரும்பாலானவற்றை ஏற்றுக்கொண்டது.",
+        "Justice R.S. Sarkaria served as a judge of the Supreme Court of India before chairing the Commission.",
+        "நீதிபதி ஆர்.எஸ். சர்க்காரியா ஆணையத்தின் தலைவராகப் பொறுப்பேற்பதற்கு முன்பு இந்திய உச்ச நீதிமன்ற நீதிபதியாகப் பணியாற்றினார்."
+    ))
+
+    return qs
+
+def get_statement_questions_batch4():
+    qs = []
+
+    # 026 - Key B
+    qs.append(make_ep_q(
+        PREFIX, 26, DIFF, "Statement MCQ", "Punchhi Commission on Localised Emergency",
+        "Consider the following statements regarding the Punchhi Commission (2010) recommendations on Emergency Provisions:\n1. It recommended that Article 356 should be permanently deleted from the Constitution of India.\n2. It recommended the concept of 'Localised Emergency', allowing the Centre to intervene in a specific trouble-torn municipal or district area without dissolving the whole State government.\nWhich of the statements given above is/are correct?",
+        "அவசரநிலைப் பிரிவுகள் குறித்த பூஞ்சி ஆணையத்தின் (Punchhi Commission, 2010) பரிந்துரைகள் பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. சரத்து 356-ஐ இந்திய அரசியலமைப்பிலிருந்து நிரந்தரமாக நீக்க வேண்டும் என்று அது பரிந்துரைத்தது.\n2. முழு மாநில அரசையும் கலைக்காமல், பிரச்சினைக்குரிய குறிப்பிட்ட நகராட்சி அல்லது மாவட்டப் பகுதியில் மட்டும் மத்திய அரசு தலையிட அனுமதிக்கும் 'உள்ளூர் அவசரநிலை' (Localised Emergency) என்ற கருத்தை அது பரிந்துரைத்தது.\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Both 1 and 2", "1 மற்றும் 2 ஆகிய இரண்டும்",
+        "Neither 1 nor 2", "1 மற்றும் 2 ஆகிய இரண்டும் அல்ல",
+        "B",
+        "Statement 1 is INCORRECT: The Punchhi Commission did NOT recommend deleting Article 356; instead, it recommended strict safeguards and amendments to Articles 355 and 356. Statement 2 is CORRECT: The Punchhi Commission innovatively proposed 'Localised Emergency' under Article 355/356, allowing central intervention in specific areas for not more than three months without destabilizing the elected state government.",
+        "கூற்று 1 தவறு: பூஞ்சி ஆணையம் சரத்து 356-ஐ நீக்கப் பரிந்துரைக்கவில்லை; மாறாக சரத்துகள் 355 மற்றும் 356-ல் கடுமையான பாதுகாப்புகளையும் திருத்தங்களையும் செய்யப் பரிந்துரைத்தது. கூற்று 2 சரி: தேர்ந்தெடுக்கப்பட்ட மாநில அரசை நிலைகுலையச் செய்யாமல், குறிப்பிட்ட பகுதிகளில் மூன்று மாதங்களுக்கு மிகாமல் மத்திய அரசு தலையிட அனுமதிக்கும் 'உள்ளூர் அவசரநிலை' கருத்தை பூஞ்சி ஆணையம் ஆக்கப்பூர்வமாக முன்வைத்தது.",
+        "Option A fails because Punchhi Commission did not seek repeal of Article 356.", "விருப்பம் A தவறானது, ஏனெனில் பூஞ்சி ஆணையம் சரத்து 356-ஐ ரத்து செய்யக் கோரவில்லை.",
+        "Option B is correct because Statement 2 reflects Punchhi Commission's hallmark proposal.", "விருப்பம் B சரியானது, ஏனெனில் கூற்று 2 பூஞ்சி ஆணையத்தின் தனித்துவமான முன்மொழிவை பிரதிபலிக்கிறது.",
+        "Option C fails because Statement 1 is factually false.", "விருப்பம் C தவறானது, ஏனெனில் கூற்று 1 உண்மைக்கு மாறானது.",
+        "Option D fails because Statement 2 is a recognized constitutional recommendation.", "விருப்பம் D தவறானது, ஏனெனில் கூற்று 2 அங்கீகரிக்கப்பட்ட அரசியலமைப்புப் பரிந்துரையாகும்.",
+        "Punchhi Commission Landmark: 'Localised Emergency' prevents the sledgehammer use of Article 356 across an entire state.",
+        "பூஞ்சி ஆணைய மைல்கல்: 'உள்ளூர் அவசரநிலை' என்பது முழு மாநிலத்திற்கும் எதிராக சரத்து 356 கண்மூடித்தனமாகப் பயன்படுத்தப்படுவதைத் தடுக்கிறது.",
+        "The Commission on Centre-State Relations was set up in 2007 under the chairmanship of former CJI Madan Mohan Punchhi.",
+        "மத்திய-மாநில உறவுகள் குறித்த இந்த ஆணையம் முன்னாள் தலைமை நீதிபதி மதன் மோகன் பூஞ்சி தலைமையில் 2007-ல் அமைக்கப்பட்டது."
+    ))
+
+    # 027 - Key C
+    qs.append(make_ep_q(
+        PREFIX, 27, DIFF, "Statement MCQ", "Dr. B.R. Ambedkar's Dead Letter Concept",
+        "Consider the following statements regarding Dr. B.R. Ambedkar's defense of Article 356 in the Constituent Assembly:\n1. He expressed the hope that Article 356 would remain a 'dead letter' and would be used only in the rarest of rare situations.\n2. He anticipated that the first step would be to issue a warning, followed by an appeal to the electorate of the State, before the Centre resorted to drastic intervention.\nWhich of the statements given above is/are correct?",
+        "அரசியலமைப்பு நிர்ணய சபையில் சரத்து 356-ஐப் பாதுகாத்துப் பேசிய டாக்டர் பி.ஆர். அம்பேத்கரின் வாதங்கள் பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. சரத்து 356 ஒரு 'பயன்படுத்தப்படாத விதி' (dead letter) ஆகவே இருக்கும் என்றும், அரிதிலும் அரிதான சூழ்நிலைகளில் மட்டுமே பயன்படுத்தப்படும் என்றும் அவர் நம்பிக்கை தெரிவித்தார்.\n2. மத்திய அரசு தீவிரத் தலையீட்டை மேற்கொள்வதற்கு முன்பு, முதலில் எச்சரிக்கை விடுக்கப்பட வேண்டும், அதைத் தொடர்ந்து மாநில வாக்காளர்களிடம் முறையிட வேண்டும் என்று அவர் எதிர்பார்த்தார்.\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Both 1 and 2", "1 மற்றும் 2 ஆகிய இரண்டும்",
+        "Neither 1 nor 2", "1 மற்றும் 2 ஆகிய இரண்டும் அல்ல",
+        "C",
+        "Both statements are correct. In the Constituent Assembly, replying to fierce criticism by H.V. Kamath, Shibban Lal Saksena, and H.N. Kunzru, Dr. Ambedkar famously hoped that Article 356 'would remain a dead letter' and would never be called into operation except as a measure of last resort after exhausting warnings and democratic appeals.",
+        "இரு கூற்றுகளும் சரியானவை. எச்.வி. காமத், சிபன் லால் சக்சேனா மற்றும் எச்.என். குன்ஸ்ரு ஆகியோரின் கடுமையான விமர்சனங்களுக்குப் பதிலளித்த டாக்டர் அம்பேத்கர், சரத்து 356 'ஒரு செயலற்ற விதியாகவே இருக்கும்' என்றும், எச்சரிக்கைகள் மற்றும் ஜனநாயக முறையீடுகள் முடிந்த பிறகு கடைசிப் புகலிடமாகத் தவிர வேறு எப்போதும் பயன்படுத்தப்படாது என்றும் நம்பிக்கை தெரிவித்தார்.",
+        "Option A ignores Statement 2 regarding the sequential stages envisioned by Ambedkar.", "விருப்பம் A அம்பேத்கர் எதிர்பார்த்த படிநிலை நிலைகளைக் கூறும் கூற்று 2-ஐப் புறக்கணிக்கிறது.",
+        "Option B ignores Statement 1 containing the famous 'dead letter' quotation.", "விருப்பம் B புகழ்பெற்ற 'பயன்படுத்தப்படாத விதி' மேற்கோளைக் கொண்ட கூற்று 1-ஐப் புறக்கணிக்கிறது.",
+        "Option C correctly validates both historical statements from the Constituent Assembly Debates.", "விருப்பம் C அரசியலமைப்பு நிர்ணய சபை விவாதங்களின் இரு வரலாற்று கூற்றுகளையும் சரியாக உறுதிப்படுத்துகிறது.",
+        "Option D is wrong because both statements are historically authentic.", "விருப்பம் D தவறு, ஏனெனில் இரு கூற்றுகளும் வரலாற்று ரீதியாக உண்மையானவை.",
+        "Famous Quote Trap: Ambedkar called Article 356 a 'dead letter', though in practice it became one of the most frequently invoked (and misused) articles.",
+        "புகழ்பெற்ற மேற்கோள் பொறி: அம்பேத்கர் சரத்து 356-ஐ 'செயலற்ற விதி' என்று அழைத்தார், ஆனால் நடைமுறையில் அதுவே அடிக்கடி பயன்படுத்தப்பட்ட (மற்றும் தவறாகப் பயன்படுத்தப்பட்ட) விதிகளில் ஒன்றாக மாறியது.",
+        "Between 1950 and 2024, President's Rule under Article 356 has been imposed over 130 times across Indian States.",
+        "1950 முதல் 2024 வரை, இந்திய மாநிலங்களில் 130-க்கும் மேற்பட்ட முறை சரத்து 356-ன் கீழ் குடியரசுத் தலைவர் ஆட்சி விதிக்கப்பட்டுள்ளது."
+    ))
+
+    # 028 - Key D
+    qs.append(make_ep_q(
+        PREFIX, 28, DIFF, "Statement MCQ", "Article 354 - Modification of Financial Distribution",
+        "Consider the following statements regarding Article 354 of the Constitution of India:\n1. While a proclamation of National Emergency is in operation, the President can suspend the entire Comptroller and Auditor General (CAG) apparatus.\n2. An order made by the President under Article 354 modifying revenue distribution continues to operate indefinitely even after the emergency is revoked.\nWhich of the statements given above is/are correct?",
+        "இந்திய அரசியலமைப்பின் சரத்து 354 பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. தேசிய அவசரநிலைப் பிரகடனம் செயல்பாட்டில் இருக்கும் போது, ஒட்டுமொத்த இந்திய தலைமை கணக்குத் தணிக்கையாளர் (CAG) அமைப்பையும் குடியரசுத் தலைவர் இடைநிறுத்தம் செய்ய முடியும்.\n2. வருவாய் பகிர்வை மாற்றி சரத்து 354-ன் கீழ் குடியரசுத் தலைவர் பிறப்பிக்கும் ஆணை, அவசரநிலை ரத்து செய்யப்பட்ட பின்னரும் காலவரையின்றித் தொடர்ந்து செயல்படும்.\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Both 1 and 2", "1 மற்றும் 2 ஆகிய இரண்டும்",
+        "Neither 1 nor 2", "1 மற்றும் 2 ஆகிய இரண்டும் அல்ல",
+        "D",
+        "Both statements are INCORRECT. Statement 1 is incorrect: Article 354 deals ONLY with modifying the distribution of revenues between the Union and States (Articles 268 to 279); it does NOT suspend the CAG. Statement 2 is incorrect: under Article 354(2), any such presidential order cannot extend beyond the financial year in which the emergency ceases to operate.",
+        "இரு கூற்றுகளும் தவறானவை. கூற்று 1 தவறு: சரத்து 354 மத்திய மற்றும் மாநிலங்களுக்கு இடையிலான வருவாய் பகிர்வை (சரத்துகள் 268 முதல் 279 வரை) மாற்றுவது தொடர்பானது மட்டுமே; அது CAG-ஐ இடைநிறுத்தாது. கூற்று 2 தவறு: சரத்து 354(2)-ன் கீழ், இத்தகைய குடியரசுத் தலைவர் ஆணை அவசரநிலை முடிவுக்கு வரும் நிதியாண்டிற்கு அப்பால் நீடிக்க முடியாது.",
+        "Option A is wrong because Article 354 does not empower suspension of CAG.", "விருப்பம் A தவறு, ஏனெனில் சரத்து 354 CAG-ஐ இடைநிறுத்த அதிகாரம் அளிக்கவில்லை.",
+        "Option B is wrong because the order terminates at the end of the relevant financial year.", "விருப்பம் B தவறு, ஏனெனில் சம்பந்தப்பட்ட நிதியாண்டின் முடிவில் ஆணை முடிவுக்கு வருகிறது.",
+        "Option C is wrong because both statements are constitutionally untrue.", "விருப்பம் C தவறு, ஏனெனில் இரு கூற்றுகளும் அரசியலமைப்புப்படி உண்மைக்கு மாறானவை.",
+        "Option D is correct as neither Statement 1 nor Statement 2 is valid.", "விருப்பம் D சரியானது, ஏனெனில் கூற்று 1 மற்றும் கூற்று 2 ஆகிய இரண்டும் தவறானவை.",
+        "Article 354 Rule: Modification of Centre-State revenue sharing lasts at most until the end of that financial year.",
+        "சரத்து 354 விதி: மத்திய-மாநில வருவாய் பகிர்வு மாற்றம் அதிகபட்சமாக அந்த நிதியாண்டின் இறுதி வரை மட்டுமே நீடிக்கும்.",
+        "Every order made under Article 354 must be laid before each House of Parliament as soon as may be after it is made.",
+        "சரத்து 354-ன் கீழ் பிறப்பிக்கப்படும் ஒவ்வொரு ஆணையும் வெளியிடப்பட்ட உடனேயே பாராளுமன்றத்தின் இரு அவைகளிலும் வைக்கப்பட வேண்டும்."
+    ))
+
+    # 029 - Key A
+    qs.append(make_ep_q(
+        PREFIX, 29, DIFF, "Statement MCQ", "Comparative Analysis of Emergency Majorities",
+        "Consider the following statements regarding the majorities required to approve emergency proclamations in Parliament:\n1. A resolution approving National Emergency under Article 352 requires a special majority in each House of Parliament.\n2. Resolutions approving President's Rule under Article 356 and Financial Emergency under Article 360 require only a simple majority in each House of Parliament.\nWhich of the statements given above is/are correct?",
+        "பாராளுமன்றத்தில் அவசரநிலைப் பிரகடனங்களுக்கு ஒப்புதல் அளிக்கத் தேவையான பெரும்பான்மைகள் பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. சரத்து 352-ன் கீழான தேசிய அவசரநிலைக்கு ஒப்புதல் அளிக்கும் தீர்மானத்திற்கு பாராளுமன்றத்தின் ஒவ்வொரு அவையிலும் சிறப்புப் பெரும்பான்மை தேவைப்படுகிறது.\n2. சரத்து 356-ன் கீழான குடியரசுத் தலைவர் ஆட்சி மற்றும் சரத்து 360-ன் கீழான நிதி அவசரநிலைக்கு ஒப்புதல் அளிக்கும் தீர்மானங்களுக்கு பாராளுமன்றத்தின் ஒவ்வொரு அவையிலும் எளிய பெரும்பான்மை மட்டுமே போதுமானது.\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
+        "Both 1 and 2", "1 மற்றும் 2 ஆகிய இரண்டும்",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Neither 1 nor 2", "1 மற்றும் 2 ஆகிய இரண்டும் அல்ல",
+        "A",
+        "Both statements are correct. Special majority (majority of total membership + 2/3 of members present and voting) is strictly required ONLY for Article 352 (National Emergency). Both Article 356 (President's Rule) and Article 360 (Financial Emergency) require only a simple majority (majority of members present and voting).",
+        "இரு கூற்றுகளும் சரியானவை. சிறப்புப் பெரும்பான்மை (மொத்த உறுப்பினர்களில் பெரும்பான்மை + வருகை தந்து வாக்களிப்போரில் 2/3 பங்கு) என்பது சரத்து 352-க்கு (தேசிய அவசரநிலை) மட்டுமே கட்டாயமாகும். சரத்து 356 (குடியரசுத் தலைவர் ஆட்சி) மற்றும் சரத்து 360 (நிதி அவசரநிலை) ஆகிய இரண்டிற்கும் எளிய பெரும்பான்மை மட்டுமே போதுமானது.",
+        "Option A is correct; both statements accurately describe the majority requirements.", "விருப்பம் A சரியானது; இரு கூற்றுகளும் பெரும்பான்மைத் தேவைகளைத் துல்லியமாக விவரிக்கின்றன.",
+        "Option B ignores the simple majority requirement for Articles 356 and 360.", "விருப்பம் B சரத்துகள் 356 மற்றும் 360-க்கான எளிய பெரும்பான்மைத் தேவையைப் புறக்கணிக்கிறது.",
+        "Option C ignores the special majority requirement for Article 352.", "விருப்பம் C சரத்து 352-க்கான சிறப்புப் பெரும்பான்மைத் தேவையைப் புறக்கணிக்கிறது.",
+        "Option D is wrong because both statements are constitutional facts.", "விருப்பம் D தவறு, ஏனெனில் இரு கூற்றுகளும் அரசியலமைப்பு உண்மைகளாகும்.",
+        "Memory Matrix: Art 352 = Special Majority; Art 356 = Simple Majority; Art 360 = Simple Majority.",
+        "நினைவக அட்டவணை: சரத்து 352 = சிறப்புப் பெரும்பான்மை; சரத்து 356 = எளிய பெரும்பான்மை; சரத்து 360 = எளிய பெரும்பான்மை.",
+        "Originally, Article 352 also required only a simple majority; the special majority safeguard was introduced by the 44th CAA 1978.",
+        "முதலில் சரத்து 352-க்கும் எளிய பெரும்பான்மை மட்டுமே தேவைப்பட்டது; சிறப்புப் பெரும்பான்மைப் பாதுகாப்பானது 1978-ன் 44-வது திருத்தச் சட்டத்தால் கொண்டுவரப்பட்டது."
+    ))
+
+    # 030 - Key B
+    qs.append(make_ep_q(
+        PREFIX, 30, DIFF, "Statement MCQ", "First State to Face President's Rule",
+        "Consider the following statements regarding the historical application of Article 356 in India:\n1. The first State in independent India to be placed under President's Rule was Kerala in 1959.\n2. President's Rule was imposed for the first time in Punjab (then East Punjab) in June 1951.\nWhich of the statements given above is/are correct?",
+        "இந்தியாவில் சரத்து 356 வரலாற்று ரீதியாகப் பயன்படுத்தப்பட்டது பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. சுதந்திர இந்தியாவில் முதன்முதலில் குடியரசுத் தலைவர் ஆட்சிக்கு உட்படுத்தப்பட்ட மாநிலம் 1959-ல் கேரளா ஆகும்.\n2. 1951 ஜூன் மாதத்தில் முதன்முறையாக பஞ்சாபில் (அப்போது கிழக்கு பஞ்சாப்) குடியரசுத் தலைவர் ஆட்சி விதிக்கப்பட்டது.\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Both 1 and 2", "1 மற்றும் 2 ஆகிய இரண்டும்",
+        "Neither 1 nor 2", "1 மற்றும் 2 ஆகிய இரண்டும் அல்ல",
+        "B",
+        "Statement 1 is INCORRECT: Kerala was NOT the first state; Punjab was the first state in June 1951. (Kerala in 1959 under E.M.S. Namboodiripad was the first time a democratically elected Communist government was dismissed under Article 356). Statement 2 is CORRECT: President's Rule was imposed for the very first time in Punjab in June 1951 during Gopichand Bhargava's ministry.",
+        "கூற்று 1 தவறு: கேரளா முதல் மாநிலம் அல்ல; ஜூன் 1951-ல் பஞ்சாபே முதல் மாநிலமாகும். (1959-ல் இ.எம்.எஸ். நம்பூதிரிபாட் தலைமையிலான தேர்ந்தெடுக்கப்பட்ட கம்யூனிஸ்ட் அரசு கலைக்கப்பட்டது சரத்து 356-ன் மற்றொரு முக்கிய நிகழ்வாகும்). கூற்று 2 சரி: கோபிசந்த் பார்கவா அமைச்சரவையின் போது ஜூன் 1951-ல் பஞ்சாபில் முதன்முறையாக குடியரசுத் தலைவர் ஆட்சி விதிக்கப்பட்டது.",
+        "Option A is wrong because Punjab preceded Kerala by 8 years.", "விருப்பம் A தவறு, ஏனெனில் கேரளாவுக்கு 8 ஆண்டுகளுக்கு முன்பே பஞ்சாபில் விதிக்கப்பட்டது.",
+        "Option B is correct because Statement 2 accurately records the first instance.", "விருப்பம் B சரியானது, ஏனெனில் கூற்று 2 முதல் நிகழ்வைத் துல்லியமாகப் பதிவு செய்கிறது.",
+        "Option C fails because Statement 1 is historically inaccurate.", "விருப்பம் C தவறானது, ஏனெனில் கூற்று 1 வரலாற்று ரீதியாகத் தவறானது.",
+        "Option D fails because Statement 2 is a verified historical fact.", "விருப்பம் D தவறானது, ஏனெனில் கூற்று 2 சரிபார்க்கப்பட்ட வரலாற்று உண்மையாகும்.",
+        "TNPSC Classic Trap: 1st time President's Rule = Punjab (1951); 1st time dismissal of majority Communist govt = Kerala (1959).",
+        "TNPSC உன்னதப் பொறி: முதன்முறை குடியரசுத் தலைவர் ஆட்சி = பஞ்சாப் (1951); பெரும்பான்மை கம்யூனிஸ்ட் அரசு கலைக்கப்பட்டது = கேரளா (1959).",
+        "Manipur and Uttar Pradesh have experienced President's Rule the highest number of times (10 times each).",
+        "மணிப்பூர் மற்றும் உத்தரப் பிரதேசம் அதிக எண்ணிக்கையிலான முறை (தலா 10 முறை) குடியரசுத் தலைவர் ஆட்சியைச் சந்தித்துள்ளன."
+    ))
+
+    return qs
+
+def get_statement_questions_batch5():
+    qs = []
+
+    # 031 - Key C
+    qs.append(make_ep_q(
+        PREFIX, 31, DIFF, "Statement MCQ", "Rameshwar Prasad Case (2006) - Dissolution of Assembly",
+        "Consider the following statements regarding the Supreme Court's ruling in Rameshwar Prasad v. Union of India (2006):\n1. The Governor cannot recommend the dissolution of a newly elected State Assembly merely on subjective apprehensions of horse-trading without exploring government formation.\n2. The proclamation dissolving the Bihar Assembly under Article 356 was held to be unconstitutional and based on extraneous and mala fide grounds.\nWhich of the statements given above is/are correct?",
+        "ராமேஷ்வர் பிரசாத் எதிர் இந்திய ஒன்றியம் (2006) வழக்கில் உச்ச நீதிமன்றத் தீர்ப்பு பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. ஆட்சி அமைக்க வாய்ப்புகளை ஆராயாமல், குதிரை பேரம் நடக்கும் என்ற வெறும் அகநிலை அச்சத்தின் அடிப்படையில் புதிதாகத் தேர்ந்தெடுக்கப்பட்ட சட்டமன்றத்தைக் கலைக்க ஆளுநர் பரிந்துரைக்க முடியாது.\n2. சரத்து 356-ன் கீழ் பீகார் சட்டமன்றத்தைக் கலைத்த பிரகடனம் அரசியலமைப்பிற்கு முரணானது மற்றும் பொருத்தமற்ற, உள்நோக்கம் கொண்ட காரணங்களை அடிப்படையாகக் கொண்டது என்று தீர்ப்பளிக்கப்பட்டது.\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Both 1 and 2", "1 மற்றும் 2 ஆகிய இரண்டும்",
+        "Neither 1 nor 2", "1 மற்றும் 2 ஆகிய இரண்டும் அல்ல",
+        "C",
+        "Both statements are correct. In Rameshwar Prasad (2006), a 5-judge Constitution bench headed by CJI Y.K. Sabharwal declared the dissolution of the Bihar Assembly unconstitutional. The Governor (Buta Singh) had misled the Centre based on subjective claims of horse-trading before the Assembly had even met once. The Court reaffirmed that the floor of the House is the only valid forum.",
+        "இரு கூற்றுகளும் சரியானவை. ராமேஷ்வர் பிரசாத் (2006) வழக்கில், தலைமை நீதிபதி ஒய்.கே. சபர்वाल தலைமையிலான 5 நீதிபதிகள் கொண்ட அரசியலமைப்பு அமர்வு பீகார் சட்டமன்றக் கலைப்பை அரசியலமைப்புச் சட்டத்திற்கு முரணானது என்று அறிவித்தது. சட்டமன்றம் ஒருமுறை கூட கூடுவதற்கு முன்பே குதிரை பேரம் என்ற அகநிலை வாதத்தின் அடிப்படையில் ஆளுநர் (பூட்டா சிங்) மத்திய அரசை தவறாக வழிநடத்தினார். சட்டமன்றத்தின் அவையே ஒரே சட்டபூர்வ தளம் என்பதை நீதிமன்றம் மீண்டும் உறுதிப்படுத்தியது.",
+        "Option A ignores Statement 2, which states the definitive judicial holding.", "விருப்பம் A தீர்க்கமான நீதித்துறை முடிவைக் கூறும் கூற்று 2-ஐப் புறக்கணிக்கிறது.",
+        "Option B ignores Statement 1, which lays down the governing legal principle for Governors.", "விருப்பம் B ஆளுநர்களுக்கான வழிகாட்டும் சட்டக் கொள்கையைக் கூறும் கூற்று 1-ஐப் புறக்கணிக்கிறது.",
+        "Option C correctly validates both statements as true.", "விருப்பம் C இரு கூற்றுகளையும் சரியானவை என உறுதிப்படுத்துகிறது.",
+        "Option D is wrong because both statements are legal facts.", "விருப்பம் D தவறு, ஏனெனில் இரு கூற்றுகளும் சட்டப்பூர்வ உண்மைகள் ஆகும்.",
+        "Landmark Jurisprudence: Rameshwar Prasad (2006) strictly curbed Governors from arbitrarily recommending Assembly dissolution to prevent rival coalitions from forming government.",
+        "மைல்கல் தீர்ப்பு: எதிர்க் கூட்டணிகள் ஆட்சி அமைப்பதைத் தடுக்க ஆளுநர்கள் தன்னிச்சையாக சட்டமன்றக் கலைப்பைப் பரிந்துரைப்பதை ராமேஷ்வர் பிரசாத் (2006) தீர்ப்பு கண்டிப்பாகத் தடுத்தது.",
+        "Though the dissolution was held unconstitutional, the Court did not restore the assembly because fresh election notifications had already been issued.",
+        "சட்டமன்றக் கலைப்பு அரசியலமைப்புக்கு முரணானது என்று கூறப்பட்டாலும், புதிய தேர்தல் அறிவிப்புகள் ஏற்கனவே வெளியிடப்பட்டிருந்ததால் நீதிமன்றம் பழைய சட்டமன்றத்தை மீண்டும் புதுப்பிக்கவில்லை."
+    ))
+
+    # 032 - Key D
+    qs.append(make_ep_q(
+        PREFIX, 32, DIFF, "Statement MCQ", "Article 356 Judicial Immunity Myths",
+        "Consider the following statements regarding the immunity of the Governor and the President in emergency matters:\n1. The personal immunity of the Governor under Article 361 prevents the Supreme Court from ever examining the validity of a proclamation issued under Article 356.\n2. If a Governor acts with personal mala fides in recommending President's Rule, the Governor cannot be made a party even in a personal capacity under any circumstances.\nWhich of the statements given above is/are correct?",
+        "அவசரநிலை விவகாரங்களில் ஆளுநர் மற்றும் குடியரசுத் தலைவரின் பாதுகாப்பு (Immunity) பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. சரத்து 361-ன் கீழான ஆளுநரின் தனிப்பட்ட பாதுகாப்பு, சரத்து 356-ன் கீழ் வெளியிடப்பட்ட பிரகடனத்தின் செல்லுபடியை உச்ச நீதிமன்றம் ஆராய்வதைத் தடுக்கிறது.\n2. குடியரசுத் தலைவர் ஆட்சியைப் பரிந்துரைப்பதில் ஒரு ஆளுநர் தனிப்பட்ட உள்நோக்கத்துடன் (mala fides) செயல்பட்டால், எந்தச் சூழ்நிலையிலும் ஆளுநரை தனிப்பட்ட முறையிலும் ஒரு தரப்பாகச் சேர்க்க முடியாது.\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Both 1 and 2", "1 மற்றும் 2 ஆகிய இரண்டும்",
+        "Neither 1 nor 2", "1 மற்றும் 2 ஆகிய இரண்டும் அல்ல",
+        "D",
+        "Both statements are INCORRECT. Statement 1 is incorrect: Article 361 protects the Governor and President from personal court appearances, but it does NOT bar the court from examining the constitutionality of the action/proclamation itself. Statement 2 is incorrect: in Rameshwar Prasad (2006), the Supreme Court clarified that if personal mala fides are alleged against a Governor, notice can be issued to him in a personal capacity.",
+        "இரு கூற்றுகளும் தவறானவை. கூற்று 1 தவறு: சரத்து 361 ஆளுநர் மற்றும் குடியரசுத் தலைவரை நீதிமன்றத்தில் ஆஜராவதிலிருந்து தனிப்பட்ட முறையில் பாதுகாக்கிறது, ஆனால் அது நடவடிக்கையின் அல்லது பிரகடனத்தின் அரசியலமைப்புச் செல்லுபடியை நீதிமன்றம் ஆராய்வதைத் தடுக்காது. கூற்று 2 தவறு: ராமேஷ்வர் பிரசாத் (2006) வழக்கில், ஒரு ஆளுநருக்கு எதிராக தனிப்பட்ட உள்நோக்கம் குற்றம் சாட்டப்பட்டால், அவருக்கு தனிப்பட்ட முறையில் நோட்டீஸ் அனுப்பப்படலாம் என்று உச்ச நீதிமன்றம் தெளிவுபடுத்தியது.",
+        "Option A is wrong because Article 361 does not oust judicial review of the proclamation.", "விருப்பம் A தவறு, ஏனெனில் சரத்து 361 பிரகடனத்தின் மீதான நீதித்துறை மறுஆய்வை நீக்காது.",
+        "Option B is wrong because personal mala fides can permit notice to the Governor.", "விருப்பம் B தவறு, ஏனெனில் தனிப்பட்ட உள்நோக்கம் ஆளுநருக்கு நோட்டீஸ் அனுப்ப அனுமதிக்கிறது.",
+        "Option C is wrong because both statements are legally erroneous.", "விருப்பம் C தவறு, ஏனெனில் இரு கூற்றுகளும் சட்டப்பூர்வமாகத் தவறானவை.",
+        "Option D is correct as neither Statement 1 nor Statement 2 is constitutionally sound.", "விருப்பம் D சரியானது, ஏனெனில் கூற்று 1 மற்றும் கூற்று 2 ஆகிய இரண்டும் தவறானவை.",
+        "Constitutional Nuance: The President and Governor enjoy personal immunity, but the advice of the Council of Ministers and the proclamation itself are open to judicial scrutiny.",
+        "அரசியலமைப்பு நுணுக்கம்: குடியரசுத் தலைவரும் ஆளுநரும் தனிப்பட்ட பாதுகாப்பைப் பெறுகிறார்கள், ஆனால் அமைச்சரவையின் ஆலோசனையும் பிரகடனமும் நீதித்துறை ஆய்வுக்கு உட்பட்டவை.",
+        "The Union of India defends the proclamation in court and must produce the material on which the President formed his satisfaction.",
+        "நீதிமன்றத்தில் பிரகடனத்தை இந்திய அரசு பாதுகாக்கிறது மற்றும் குடியரசுத் தலைவர் திருப்தி அடைந்ததற்கான ஆதாரங்களை நீதிமன்றத்தில் சமர்ப்பிக்க வேண்டும்."
+    ))
+
+    # 033 - Key A
+    qs.append(make_ep_q(
+        PREFIX, 33, DIFF, "Statement MCQ", "Types of Emergencies - Comparative Matrix",
+        "Consider the following statements regarding the three types of emergencies provided in the Indian Constitution:\n1. Fundamental Rights can be affected only during a National Emergency under Article 352, and not during President's Rule (Article 356) or Financial Emergency (Article 360).\n2. Parliament can extend the normal life of the Lok Sabha and State Legislative Assemblies only during a National Emergency under Article 352.\nWhich of the statements given above is/are correct?",
+        "இந்திய அரசியலமைப்பில் வழங்கப்பட்டுள்ள மூன்று வகையான அவசரநிலைகள் பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. சரத்து 352-ன் கீழான தேசிய அவசரநிலையின் போது மட்டுமே அடிப்படை உரிமைகள் பாதிக்கப்பட முடியும்; குடியரசுத் தலைவர் ஆட்சி (சரத்து 356) அல்லது நிதி அவசரநிலையின் (சரத்து 360) போது அல்ல.\n2. சரத்து 352-ன் கீழான தேசிய அவசரநிலையின் போது மட்டுமே பாராளுமன்றம் மக்களவை மற்றும் மாநில சட்டப் பேரவைகளின் இயல்பான ஆயுட்காலத்தை நீட்டிக்க முடியும்.\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
+        "Both 1 and 2", "1 மற்றும் 2 ஆகிய இரண்டும்",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Neither 1 nor 2", "1 மற்றும் 2 ஆகிய இரண்டும் அல்ல",
+        "A",
+        "Both statements are correct. 1. Articles 358 and 359 operate ONLY during a National Emergency (Article 352); neither Article 356 nor Article 360 affects Fundamental Rights. 2. Under Articles 83(2) and 172(1), the extension of the tenure of Lok Sabha and State Legislative Assemblies is permissible ONLY during the operation of a Proclamation of Emergency under Article 352.",
+        "இரு கூற்றுகளும் சரியானவை. 1. சரத்துகள் 358 மற்றும் 359 தேசிய அவசரநிலையின் (சரத்து 352) போது மட்டுமே செயல்படுகின்றன; சரத்து 356 அல்லது 360 அடிப்படை உரிமைகளைப் பாதிப்பதில்லை. 2. சரத்துகள் 83(2) மற்றும் 172(1)-ன் கீழ், மக்களவை மற்றும் மாநில சட்டமன்றங்களின் பதவிக்காலத்தை நீட்டிப்பது சரத்து 352-ன் கீழான அவசரநிலைப் பிரகடனத்தின் போது மட்டுமே அனுமதிக்கப்படுகிறது.",
+        "Option A is correct; both statements are fundamental comparative principles.", "விருப்பம் A சரியானது; இரு கூற்றுகளும் அடிப்படை ஒப்பீட்டுக் கொள்கைகளாகும்.",
+        "Option B ignores the vital rule on legislative extension under Article 83(2).", "விருப்பம் B சரத்து 83(2)-ன் கீழான சட்டமன்ற நீட்டிப்பு குறித்த முக்கிய விதியைப் புறக்கணிக்கிறது.",
+        "Option C ignores the immunity of fundamental rights under Articles 356 and 360.", "விருப்பம் C சரத்துகள் 356 மற்றும் 360-ல் அடிப்படை உரிமைகள் பாதிக்கப்படாது என்ற விதியைப் புறக்கணிக்கிறது.",
+        "Option D is wrong because both statements are constitutionally accurate.", "விருப்பம் D தவறு, ஏனெனில் இரு கூற்றுகளும் அரசியலமைப்புப்படி துல்லியமானவை.",
+        "TNPSC Rule of Thumb: If a question asks about Fundamental Rights suspension or Lok Sabha tenure extension, the answer is ALWAYS Article 352 National Emergency!",
+        "TNPSC கட்டைவிரல் விதி: அடிப்படை உரிமைகள் இடைநிறுத்தம் அல்லது மக்களவை பதவிக்கால நீட்டிப்பு பற்றிக் கேட்டால், விடை எப்போதும் சரத்து 352 தேசிய அவசரநிலை மட்டுமே!",
+        "In President's Rule, only the state executive and legislature are displaced; citizen rights remain completely intact.",
+        "குடியரசுத் தலைவர் ஆட்சியில் மாநில நிர்வாகமும் சட்டமன்றமும் மட்டுமே மாற்றப்படுகின்றன; குடிமக்களின் உரிமைகள் முழுமையாகப் பாதுகாக்கப்படுகின்றன."
+    ))
+
+    # 034 - Key B
+    qs.append(make_ep_q(
+        PREFIX, 34, DIFF, "Statement MCQ", "Emergency Provisions Borrowing Origin",
+        "Consider the following statements regarding the historical sources of Emergency Provisions in the Indian Constitution:\n1. The entire framework of emergency provisions in Part XVIII was borrowed verbatim from the Weimar Constitution of Germany.\n2. While the suspension of Fundamental Rights during National Emergency was influenced by the Weimar Constitution, the administrative machinery of emergencies was largely adapted from the Government of India Act, 1935.\nWhich of the statements given above is/are correct?",
+        "இந்திய அரசியலமைப்பில் அவசரநிலைப் பிரிவுகளின் வரலாற்று மூலங்கள் பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. பகுதி XVIII-ல் உள்ள அவசரநிலைப் பிரிவுகளின் முழுமையான கட்டமைப்பு ஜெர்மனியின் வெய்மர் அரசியலமைப்பிலிருந்து அப்படியே பெறப்பட்டது.\n2. தேசிய அவசரநிலையின் போது அடிப்படை உரிமைகளை இடைநிறுத்துவது ஜெர்மனியின் வெய்மர் அரசியலமைப்பால் ஈர்க்கப்பட்டிருந்தாலும், அவசரநிலையின் நிர்வாக இயந்திரம் பெரும்பாலும் 1935-ஆம் ஆண்டின் இந்திய அரசுச் சட்டத்திலிருந்து ஏற்றுக்கொள்ளப்பட்டது.\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Both 1 and 2", "1 மற்றும் 2 ஆகிய இரண்டும்",
+        "Neither 1 nor 2", "1 மற்றும் 2 ஆகிய இரண்டும் அல்ல",
+        "B",
+        "Statement 1 is INCORRECT: The administrative machinery (Section 93 of GoI Act 1935 corresponding to Article 356, and Section 102 corresponding to Article 352) was adapted from the Government of India Act, 1935. Statement 2 is CORRECT: Only the specific feature of 'suspension of Fundamental Rights during emergency' was derived from Article 48 of the Weimar Constitution of Germany.",
+        "கூற்று 1 தவறு: நிர்வாகக் கட்டமைப்பு (1935 இந்திய அரசுச் சட்டத்தின் பிரிவு 93 சரத்து 356-க்கும், பிரிவு 102 சரத்து 352-க்கும் இணையானது) 1935 இந்திய அரசுச் சட்டத்திலிருந்து பெறப்பட்டது. கூற்று 2 சரி: 'அவசரநிலையின் போது அடிப்படை உரிமைகள் இடைநிறுத்தம்' என்ற குறிப்பிட்ட அம்சம் மட்டுமே ஜெர்மனியின் வெய்மர் அரசியலமைப்பின் சரத்து 48-லிருந்து பெறப்பட்டது.",
+        "Option A is wrong because the primary structural source was the 1935 Act.", "விருப்பம் A தவறு, ஏனெனில் முதன்மை கட்டமைப்பு மூலம் 1935 சட்டம் ஆகும்.",
+        "Option B is correct because Statement 2 accurately delineates the dual sources.", "விருப்பம் B சரியானது, ஏனெனில் கூற்று 2 இரட்டை மூலங்களைத் துல்லியமாக வேறுபடுத்திக் காட்டுகிறது.",
+        "Option C fails because Statement 1 is an overbroad misconception.", "விருப்பம் C தவறானது, ஏனெனில் கூற்று 1 தவறான பொதுமைப்படுத்தலாகும்.",
+        "Option D fails because Statement 2 is historical fact.", "விருப்பம் D தவறானது, ஏனெனில் கூற்று 2 வரலாற்று உண்மையாகும்.",
+        "TNPSC Source Trap: Structure = GoI Act 1935; Suspension of Fundamental Rights = Weimar Constitution of Germany.",
+        "TNPSC மூலப் பொறி: கட்டமைப்பு = 1935 இந்திய அரசுச் சட்டம்; அடிப்படை உரிமைகள் இடைநிறுத்தம் = ஜெர்மனியின் வெய்மர் அரசியலமைப்பு.",
+        "Section 93 of the 1935 Act allowed the Governor to assume all powers of provincial government in case of breakdown of constitutional machinery.",
+        "1935-ஆம் ஆண்டு சட்டத்தின் பிரிவு 93 அரசியலமைப்பு இயந்திர முறிவின் போது மாகாண அரசின் அனைத்து அதிகாரங்களையும் ஆளுநர் ஏற்க அனுமதித்தது."
+    ))
+
+    # 035 - Key C
+    qs.append(make_ep_q(
+        PREFIX, 35, DIFF, "Statement MCQ", "Revocation Mechanics Across All Emergencies",
+        "Consider the following statements regarding the revocation of emergencies under the Indian Constitution:\n1. A proclamation of President's Rule (Article 356) and Financial Emergency (Article 360) can be revoked by the President at any time without requiring parliamentary approval.\n2. A proclamation of National Emergency (Article 352) MUST be revoked by the President if the Lok Sabha passes a resolution disapproving its continuation by a simple majority.\nWhich of the statements given above is/are correct?",
+        "இந்திய அரசியலமைப்பின் கீழ் அவசரநிலைகளைத் திரும்பப் பெறுதல் (Revocation) பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. குடியரசுத் தலைவர் ஆட்சி (சரத்து 356) மற்றும் நிதி அவசரநிலைப் (சரத்து 360) பிரகடனத்தை பாராளுமன்ற ஒப்புதல் தேவையின்றி குடியரசுத் தலைவர் எந்த நேரத்திலும் திரும்பப் பெறலாம்.\n2. தேசிய அவசரநிலை (சரத்து 352) தொடர்வதை நிராகரித்து மக்களவை எளிய பெரும்பான்மையால் ஒரு தீர்மானத்தை நிறைவேற்றினால், குடியரசுத் தலைவர் அப்பிரகடனத்தை கட்டாயமாகத் திரும்பப் பெற வேண்டும்.\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Both 1 and 2", "1 மற்றும் 2 ஆகிய இரண்டும்",
+        "Neither 1 nor 2", "1 மற்றும் 2 ஆகிய இரண்டும் அல்ல",
+        "C",
+        "Both statements are correct. 1. Articles 356(2) and 360(2)(a) provide that revocation is a unilateral presidential power requiring no parliamentary approval. 2. Under Article 352(7) (inserted by the 44th Amendment Act, 1978), if the Lok Sabha passes a resolution disapproving the proclamation or its continuance by a simple majority, the President is constitutionally BOUND to revoke the proclamation.",
+        "இரு கூற்றுகளும் சரியானவை. 1. சரத்துகள் 356(2) மற்றும் 360(2)(a) ரத்து செய்வது பாராளுமன்ற ஒப்புதல் தேவையில்லாத குடியரசுத் தலைவரின் ஒருதலைப்பட்ச அதிகாரம் எனக் கூறுகின்றன. 2. சரத்து 352(7)-ன் கீழ் (1978-ன் 44-வது திருத்தத்தால் சேர்க்கப்பட்டது), மக்களவை எளிய பெரும்பான்மையால் தேசிய அவசரநிலையை நிராகரித்துத் தீர்மானம் நிறைவேற்றினால், குடியரசுத் தலைவர் அப்பிரகடனத்தைத் திரும்பப் பெற அரசியலமைப்பு ரீதியாகக் கட்டுப்பட்டவர் ஆவார்.",
+        "Option A ignores Statement 2, which is a vital democratic check introduced by the 44th Amendment.", "விருப்பம் A 44-வது திருத்தத்தால் அறிமுகப்படுத்தப்பட்ட முக்கிய ஜனநாயகக் கட்டுப்பாடான கூற்று 2-ஐப் புறக்கணிக்கிறது.",
+        "Option B ignores Statement 1, which states the general executive revocation rule.", "விருப்பம் B பொதுவான நிர்வாக ரத்து விதியைக் கூறும் கூற்று 1-ஐப் புறக்கணிக்கிறது.",
+        "Option C correctly affirms both procedural safeguards.", "விருப்பம் C இரு நடைமுறைப் பாதுகாப்புகளையும் சரியாக உறுதிப்படுத்துகிறது.",
+        "Option D is incorrect as both statements are constitutional text.", "விருப்பம் D தவறானது, ஏனெனில் இரு கூற்றுகளும் அரசியலமைப்பு வாசகங்கள் ஆகும்.",
+        "High-Yield Safeguard: Lok Sabha alone can compel the revocation of National Emergency; Rajya Sabha has no role in disapproving Article 352!",
+        "உயர்-விளைச்சல் பாதுகாப்பு: மக்களவை மட்டுமே தேசிய அவசரநிலையைத் திரும்பப் பெற கட்டாயப்படுத்த முடியும்; சரத்து 352-ஐ நிராகரிப்பதில் மாநிலங்களவைக்கு எந்தப் பங்கும் இல்லை!",
+        "Before the 44th Amendment, the President could continue National Emergency indefinitely even if Parliament desired its revocation.",
+        "44-வது திருத்தத்திற்கு முன்பு, பாராளுமன்றம் விரும்பினாலும் கூட குடியரசுத் தலைவர் தேசிய அவசரநிலையைக் காலவரையின்றித் தொடரச் செய்ய முடிந்தது."
+    ))
+
+    # 036 - Key D
+    qs.append(make_ep_q(
+        PREFIX, 36, DIFF, "Statement MCQ", "Federal System Transformation",
+        "Consider the following statements regarding the transformation of the Indian federal structure during emergencies:\n1. During a National Emergency, the federal system is formally abolished and the Constitution is rewritten into a permanent unitary charter.\n2. In S.R. Bommai (1994), the Supreme Court ruled that Federalism is NOT part of the basic structure of the Constitution because it can be overridden during emergencies.\nWhich of the statements given above is/are correct?",
+        "அவசரநிலைகளின் போது இந்தியக் கூட்டாட்சி அமைப்பின் மாற்றம் பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. தேசிய அவசரநிலையின் போது கூட்டாட்சி அமைப்பு முறையாக ஒழிக்கப்பட்டு, அரசியலமைப்பு நிரந்தர ஒற்றையாட்சி சாசனமாக மாற்றி எழுதப்படுகிறது.\n2. அவசரநிலைகளின் போது கூட்டாட்சியை மாற்றியமைக்க முடியும் என்பதால், கூட்டாட்சி தத்துவம் அரசியலமைப்பின் அடிப்படைக் கட்டமைப்பின் ஒரு பகுதி அல்ல என்று எஸ்.ஆர். பொம்மை (1994) வழக்கில் உச்ச நீதிமன்றம் தீர்ப்பளித்தது.\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Both 1 and 2", "1 மற்றும் 2 ஆகிய இரண்டும்",
+        "Neither 1 nor 2", "1 மற்றும் 2 ஆகிய இரண்டும் அல்ல",
+        "D",
+        "Both statements are INCORRECT. Statement 1 is incorrect: the federal structure is not permanently abolished; it operates as unitary temporarily without a formal amendment, and normal federalism resumes as soon as emergency ends. Statement 2 is incorrect: in S.R. Bommai (1994), the Supreme Court explicitly affirmed that Federalism IS a basic feature of the Indian Constitution.",
+        "இரு கூற்றுகளும் தவறானவை. கூற்று 1 தவறு: கூட்டாட்சி அமைப்பு நிரந்தரமாக ஒழிக்கப்படுவதில்லை; முறையான திருத்தமின்றி தற்காலிகமாக ஒற்றையாட்சி போல செயல்படுகிறது, மேலும் அவசரநிலை முடிந்தவுடன் இயல்பான கூட்டாட்சி மீண்டும் தொடங்குகிறது. கூற்று 2 தவறு: எஸ்.ஆர். பொம்மை (1994) வழக்கில், கூட்டாட்சி தத்துவம் என்பது இந்திய அரசியலமைப்பின் ஓர் 'அடிப்படை அம்சம்' (Basic Feature) என்று உச்ச நீதிமன்றம் வெளிப்படையாக உறுதிப்படுத்தியது.",
+        "Option A is wrong because the unitary conversion is temporary, not permanent or formal.", "விருப்பம் A தவறு, ஏனெனில் ஒற்றையாட்சி மாற்றம் தற்காலிகமானது, நிரந்தரமானது அல்லது முறையானது அல்ல.",
+        "Option B is wrong because Federalism was upheld as a basic structure in Bommai.", "விருப்பம் B தவறு, ஏனெனில் பொம்மை வழக்கில் கூட்டாட்சி அடிப்படைக் கட்டமைப்பாக நிலைநிறுத்தப்பட்டது.",
+        "Option C is wrong because both statements are constitutional fallacies.", "விருப்பம் C தவறு, ஏனெனில் இரு கூற்றுகளும் அரசியலமைப்புத் தவறுகளாகும்.",
+        "Option D is correct as neither statement is constitutionally valid.", "விருப்பம் D சரியானது, ஏனெனில் எந்தக் கூற்றும் அரசியலமைப்புப்படி செல்லாது.",
+        "Ambedkar's Insight: Indian federalism is unique because it is designed to work as federal in normal times, but can convert to unitary in times of war/crisis.",
+        "அம்பேத்கரின் கூற்று: இந்திய கூட்டாட்சி தனித்துவமானது, ஏனெனில் இது சாதாரண காலங்களில் கூட்டாட்சியாகவும், போர்/நெருக்கடி காலங்களில் ஒற்றையாட்சியாகவும் செயல்பட வடிவமைக்கப்பட்டுள்ளது.",
+        "Even during emergency, States do not lose their distinct constitutional identity or state judicial framework.",
+        "அவசரநிலையின் போது கூட, மாநிலங்கள் தங்களின் தனித்துவமான அரசியலமைப்பு அடையாளத்தையோ அல்லது மாநில நீதித்துறை கட்டமைப்பையோ இழப்பதில்லை."
+    ))
+
+    # 037 - Key A
+    qs.append(make_ep_q(
+        PREFIX, 37, DIFF, "Statement MCQ", "Article 352 Approval and Rajya Sabha Role",
+        "Consider the following statements regarding the role of the Rajya Sabha during the proclamation of National Emergency:\n1. If a proclamation of National Emergency is issued when the Lok Sabha is dissolved, the proclamation survives if approved by the Rajya Sabha within one month.\n2. After reconstitution, the new Lok Sabha must approve the proclamation within 30 days from its first sitting, failing which the proclamation ceases to operate.\nWhich of the statements given above is/are correct?",
+        "தேசிய அவசரநிலைப் பிரகடனத்தின் போது மாநிலங்களவையின் பங்கு பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. மக்களவை கலைக்கப்பட்டிருக்கும் போது தேசிய அவசரநிலைப் பிரகடனம் வெளியிடப்பட்டால், மாநிலங்களவை ஒரு மாதத்திற்குள் ஒப்புதல் அளித்தால் அப்பிரகடனம் தொடர்ந்து நீடிக்கும்.\n2. புதிதாக அமைக்கப்பட்ட மக்களவை கூடிய முதல் கூட்டத்திலிருந்து 30 நாட்களுக்குள் அப்பிரகடனத்திற்கு ஒப்புதல் அளிக்க வேண்டும்; தவறினால் பிரகடனம் செயலிழந்துவிடும்.\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
+        "Both 1 and 2", "1 மற்றும் 2 ஆகிய இரண்டும்",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Neither 1 nor 2", "1 மற்றும் 2 ஆகிய இரண்டும் அல்ல",
+        "A",
+        "Both statements are correct. Under the proviso to Article 352(4), if Lok Sabha is dissolved or dissolution takes place during the one-month period without approval, the proclamation survives if Rajya Sabha passes it within one month. Thereafter, the reconstituted Lok Sabha has a 30-day window from its first sitting to approve it.",
+        "இரு கூற்றுகளும் சரியானவை. சரத்து 352(4)-ன் வரம்புரையின் கீழ், மக்களவை கலைக்கப்பட்டிருக்கும் போதோ அல்லது ஒப்புதல் அளிக்காமல் கலைக்கப்பட்டாலோ, மாநிலங்களவை ஒரு மாதத்திற்குள் நிறைவேற்றினால் பிரகடனம் நீடிக்கும். அதன் பிறகு புதிதாகத் தேர்ந்தெடுக்கப்பட்ட மக்களவை கூடிய முதல் அமர்விலிருந்து 30 நாட்களுக்குள் ஒப்புதல் அளிக்க வேண்டும்.",
+        "Option A is correct; both statements accurately state the constitutional survival clock under Article 352(4).", "விருப்பம் A சரியானது; இரு கூற்றுகளும் சரத்து 352(4)-ன் கீழான அரசியலமைப்பு கால விதியைத் துல்லியமாகக் கூறுகின்றன.",
+        "Option B ignores Statement 2 regarding the reconstituted Lok Sabha's 30-day deadline.", "விருப்பம் B புதிய மக்களவைக்கான 30 நாள் காலக்கெடுவைக் கூறும் கூற்று 2-ஐப் புறக்கணிக்கிறது.",
+        "Option C ignores Statement 1 regarding the Rajya Sabha's 1-month approval.", "விருப்பம் C மாநிலங்களவையின் 1 மாத ஒப்புதலைக் கூறும் கூற்று 1-ஐப் புறக்கணிக்கிறது.",
+        "Option D is wrong because both statements are constitutional provisions.", "விருப்பம் D தவறு, ஏனெனில் இரு கூற்றுகளும் அரசியலமைப்பு விதிகளாகும்.",
+        "Crucial Parliamentary Nuance: Rajya Sabha, as a permanent House, acts as the vital constitutional anchor during periods when the Lok Sabha is dissolved.",
+        "முக்கிய பாராளுமன்ற நுணுக்கம்: மக்களவை கலைக்கப்பட்டிருக்கும் காலங்களில், நிரந்தர அவையான மாநிலங்களவை முக்கிய அரசியலமைப்புப் பிடிமானமாகச் செயல்படுகிறது.",
+        "The same 30-day rule applies for Article 356 and Article 360, but the initial approval window for Rajya Sabha is 2 months instead of 1 month.",
+        "இதே 30 நாள் விதி சரத்து 356 மற்றும் 360-க்கும் பொருந்தும், ஆனால் மாநிலங்களவைக்கான ஆரம்ப ஒப்புதல் காலம் 1 மாதத்திற்குப் பதிலாக 2 மாதங்களாக இருக்கும்."
+    ))
+
+    # 038 - Key B
+    qs.append(make_ep_q(
+        PREFIX, 38, DIFF, "Statement MCQ", "Effect on Fundamental Rights - Protection of Laws",
+        "Consider the following statements regarding the protection of laws enacted during National Emergency:\n1. Any ordinary law enacted during National Emergency enjoys permanent immunity from judicial challenge on grounds of violating Fundamental Rights.\n2. Under Articles 358 and 359 (as amended by 44th CAA), only laws that contain a specific recital stating they are related to the emergency are protected from challenge under Fundamental Rights.\nWhich of the statements given above is/are correct?",
+        "தேசிய அவசரநிலையின் போது இயற்றப்பட்ட சட்டங்களின் பாதுகாப்பு பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. தேசிய அவசரநிலையின் போது இயற்றப்பட்ட எந்தவொரு சாதாரண சட்டமும் அடிப்படை உரிமைகளை மீறியதாக நீதிமன்றத்தில் சவால் செய்யப்படுவதிலிருந்து நிரந்தரப் பாதுகாப்பைப் பெறுகிறது.\n2. சரத்துகள் 358 மற்றும் 359-ன் கீழ் (44-வது திருத்தத்தால் திருத்தப்பட்டபடி), அவசரநிலையுடன் தொடர்புடையவை என்று வெளிப்படையான குறிப்பைக் கொண்ட சட்டங்கள் மட்டுமே அடிப்படை உரிமைகளின் கீழான சவாலிலிருந்து பாதுகாக்கப்படுகின்றன.\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Both 1 and 2", "1 மற்றும் 2 ஆகிய இரண்டும்",
+        "Neither 1 nor 2", "1 மற்றும் 2 ஆகிய இரண்டும் அல்ல",
+        "B",
+        "Statement 1 is INCORRECT: Laws do not enjoy permanent blanket immunity. Statement 2 is CORRECT: The 44th Constitutional Amendment Act 1978 introduced a critical safeguard: only those laws that contain a specific recital that they are in relation to the emergency (and executive action taken under such laws) are protected under Articles 358 and 359 from challenge under Fundamental Rights. Unrelated laws remain fully challengeable!",
+        "கூற்று 1 தவறு: சட்டங்களுக்கு நிரந்தரமான முழுமையான பாதுகாப்பு கிடைக்காது. கூற்று 2 சரி: 1978-ன் 44-வது அரசியலமைப்பு திருத்தச் சட்டம் ஒரு முக்கியமான பாதுகாப்பை அறிமுகப்படுத்தியது: அவசரநிலையுடன் தொடர்புடையது என்ற குறிப்பிட்ட வாசகத்தைக் கொண்ட சட்டங்கள் மட்டுமே (மற்றும் அச்சட்டங்களின் கீழ் எடுக்கப்படும் நிர்வாக நடவடிக்கைகள்) சரத்துகள் 358 மற்றும் 359-ன் கீழ் அடிப்படை உரிமைகள் மீறல் சவாலிலிருந்து பாதுகாக்கப்படுகின்றன. தொடர்பில்லாத சட்டங்களை முழுமையாக சவாலுக்கு உட்படுத்தலாம்!",
+        "Option A is wrong because arbitrary laws unrelated to emergency enjoy no immunity.", "விருப்பம் A தவறு, ஏனெனில் அவசரநிலையுடன் தொடர்பற்ற தன்னிச்சையான சட்டங்களுக்குப் பாதுகாப்பு இல்லை.",
+        "Option B is correct because Statement 2 reflects the 44th Amendment recital safeguard.", "விருப்பம் B சரியானது, ஏனெனில் கூற்று 2 44-வது திருத்தக் குறிப்புப் பாதுகாப்பைப் பிரதிபலிக்கிறது.",
+        "Option C fails because Statement 1 is false.", "விருப்பம் C தவறானது, ஏனெனில் கூற்று 1 தவறானது.",
+        "Option D fails because Statement 2 is accurate.", "விருப்பம் D தவறானது, ஏனெனில் கூற்று 2 துல்லியமானது.",
+        "44th Amendment Precision: The 'recital requirement' prevents the government from passing arbitrary, unrelated commercial or civil laws under the cover of emergency immunity.",
+        "44-வது திருத்த நுணுக்கம்: 'வெளிப்படையான குறிப்புத் தேவை' என்பது அவசரநிலைப் பாதுகாப்பின் கீழ் தொடர்பற்ற வணிக அல்லது சிவில் சட்டங்களை அரசு தன்னிச்சையாக நிறைவேற்றுவதைத் தடுக்கிறது.",
+        "Furthermore, as soon as the emergency ceases, such laws cease to have effect to the extent of their inconsistency with Article 19.",
+        "மேலும் அவசரநிலை முடிவுக்கு வந்தவுடன், அத்தகைய சட்டங்கள் சரத்து 19-க்கு முரணாக இருக்கும் அளவிற்குச் செயலிழந்துவிடும்."
+    ))
+
+    # 039 - Key C
+    qs.append(make_ep_q(
+        PREFIX, 39, DIFF, "Statement MCQ", "Emergency and Ordinance Making Power",
+        "Consider the following statements regarding the Ordinance-making power of the President during emergencies:\n1. While a proclamation of National Emergency is in operation, the President can issue ordinances on State List subjects if Parliament is not in session.\n2. While President's Rule under Article 356 is in operation, the President can promulgate ordinances for the State only if the Lok Sabha is not in session and Parliament has delegated law-making powers under Article 357.\nWhich of the statements given above is/are correct?",
+        "அவசரநிலைகளின் போது குடியரசுத் தலைவரின் அவசரச் சட்டம் (Ordinance) பிறப்பிக்கும் அதிகாரம் பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. தேசிய அவசரநிலைப் பிரகடனம் செயல்பாட்டில் இருக்கும் போது, பாராளுமன்றம் கூட்டத்தொடரில் இல்லாத சமயத்தில் மாநிலப் பட்டியல் விவகாரங்களில் குடியரசுத் தலைவர் அவசரச் சட்டங்களைப் பிறப்பிக்க முடியும்.\n2. சரத்து 356-ன் கீழ் குடியரசுத் தலைவர் ஆட்சி இருக்கும் போது, மக்களவை கூட்டத்தொடரில் இல்லாத சமயத்திலும், சரத்து 357-ன் கீழ் பாராளுமன்றம் சட்டம் இயற்றும் அதிகாரத்தை ஒப்படைத்திருந்தால் மட்டுமே மாநிலத்திற்கான அவசரச் சட்டங்களை குடியரசுத் தலைவர் பிறப்பிக்க முடியும்.\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Both 1 and 2", "1 மற்றும் 2 ஆகிய இரண்டும்",
+        "Neither 1 nor 2", "1 மற்றும் 2 ஆகிய இரண்டும் அல்ல",
+        "C",
+        "Both statements are correct. 1. Under Article 123 read with Article 250, during National Emergency, Parliament has power over State List; if Parliament is not in session, President can issue ordinances on State List subjects. 2. Under Article 357(1)(a), during President's Rule, if Parliament delegates powers to the President, the President can issue ordinances when the Lok Sabha is not in session.",
+        "இரு கூற்றுகளும் சரியானவை. 1. சரத்து 123 மற்றும் 250-ன் படி, தேசிய அவசரநிலையின் போது பாராளுமன்றத்திற்கு மாநிலப்列表中 அதிகாரம் உண்டு; பாராளுமன்றம் கூடாத போது மாநிலப் பட்டியல் விவகாரங்களில் குடியரசுத் தலைவர் அவசரச் சட்டம் பிறப்பிக்கலாம். 2. சரத்து 357(1)(a)-ன் கீழ், குடியரசுத் தலைவர் ஆட்சியின் போது பாராளுமன்றம் அதிகாரத்தை ஒப்படைத்திருந்தால், மக்களவை கூடாத போது குடியரசுத் தலைவர் அவசரச் சட்டங்களைப் பிறப்பிக்க முடியும்.",
+        "Option A ignores Statement 2, which is an accurate procedural rule under Article 357.", "விருப்பம் A சரத்து 357-ன் கீழான துல்லியமான நடைமுறை விதியான கூற்று 2-ஐப் புறக்கணிக்கிறது.",
+        "Option B ignores Statement 1, which flows from Article 123 read with Article 250.", "விருப்பம் B சரத்து 123 மற்றும் 250-ன் ஒருங்கிணைந்த விளைவான கூற்று 1-ஐப் புறக்கணிக்கிறது.",
+        "Option C correctly validates both statements.", "விருப்பம் C இரு கூற்றுகளையும் சரியாக உறுதிப்படுத்துகிறது.",
+        "Option D is wrong because both statements are constitutionally sound.", "விருப்பம் D தவறு, ஏனெனில் இரு கூற்றுகளும் அரசியலமைப்புப்படி சரியானவை.",
+        "Ordinance Limit: President's ordinance-making power during emergency is co-extensive with the expanded legislative competence of Parliament.",
+        "அவசரச் சட்ட வரம்பு: அவசரநிலையின் போது குடியரசுத் தலைவரின் அவசரச் சட்ட அதிகாரம் பாராளுமன்றத்தின் விரிவுபடுத்தப்பட்ட சட்டவாக்க அதிகாரத்திற்கு இணையானதாகும்.",
+        "Such ordinances are subject to the same approval rules and timeframes as ordinary ordinances under Article 123.",
+        "இத்தகைய அவசரச் சட்டங்கள் சரத்து 123-ன் கீழான சாதாரண அவசரச் சட்டங்களைப் போன்றே ஒப்புதல் விதிகளுக்கும் காலக்கெடுவுக்கும் உட்பட்டவை."
+    ))
+
+    # 040 - Key D
+    qs.append(make_ep_q(
+        PREFIX, 40, DIFF, "Statement MCQ", "Article 356 and Dissolution of Council of Ministers",
+        "Consider the following statements regarding the consequences of Article 356 on the State executive:\n1. The State Council of Ministers headed by the Chief Minister can continue to function in an advisory capacity even after President's Rule is proclaimed.\n2. The Governor continues to be bound by the aid and advice of the dismissed Council of Ministers until the state elections are held.\nWhich of the statements given above is/are correct?",
+        "மாநில நிர்வாகத்தின் மீது சரத்து 356 ஏற்படுத்தும் விளைவுகள் பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. குடியரசுத் தலைவர் ஆட்சி பிரகடனம் செய்யப்பட்ட பின்னரும் முதலமைச்சர் தலைமையிலான மாநில அமைச்சரவை ஆலோசனை வழங்கும் தகுதியில் தொடர்ந்து செயல்பட முடியும்.\n2. மாநிலத் தேர்தல்கள் நடத்தப்படும் வரை, பதவி நீக்கம் செய்யப்பட்ட அமைச்சரவையின் உதவி மற்றும் ஆலோசனையின்படி செயல்பட ஆளுநர் தொடர்ந்து கட்டுப்பட்டவராவார்.\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Both 1 and 2", "1 மற்றும் 2 ஆகிய இரண்டும்",
+        "Neither 1 nor 2", "1 மற்றும் 2 ஆகிய இரண்டும் அல்ல",
+        "D",
+        "Both statements are completely INCORRECT. When President's Rule is imposed under Article 356, the President DISMISSES the State Council of Ministers headed by the Chief Minister with immediate effect. The Governor administers the State on behalf of the President, assisted by advisors or the Chief Secretary, and is NOT bound by any advice of the dismissed ministers.",
+        "இரு கூற்றுகளும் முற்றிலும் தவறானவை. சரத்து 356-ன் கீழ் குடியரசுத் தலைவர் ஆட்சி விதிக்கப்படும் போது, முதலமைச்சர் தலைமையிலான மாநில அமைச்சரவையை குடியரசுத் தலைவர் உடனடியாகப் பதவி நீக்கம் செய்கிறார். ஆளுநர் குடியரசுத் தலைவரின் சார்பில் ஆலோசகர்கள் அல்லது தலைமைச் செயலாளரின் உதவியுடன் மாநிலத்தை நிர்வகிக்கிறார்; மேலும் பதவி நீக்கப்பட்ட அமைச்சர்களின் எந்த ஆலோசனைக்கும் அவர் கட்டுப்பட்டவர் அல்ல.",
+        "Option A is wrong because the Council of Ministers is dismissed, not retained as advisory.", "விருப்பம் A தவறு, ஏனெனில் அமைச்சரவை பதவி நீக்கம் செய்யப்படுகிறது, ஆலோசனைக் குழுவாக நீடிப்பதில்லை.",
+        "Option B is wrong because the Governor administers the state with appointed advisors, not dismissed ministers.", "விருப்பம் B தவறு, ஏனெனில் ஆளுநர் நியமிக்கப்பட்ட ஆலோசகர்களுடன் நிர்வகிக்கிறார், பதவி நீக்கப்பட்ட அமைச்சர்களுடன் அல்ல.",
+        "Option C is wrong because both statements are fallacious.", "விருப்பம் C தவறு, ஏனெனில் இரு கூற்றுகளும் தவறானவை.",
+        "Option D is correct as neither Statement 1 nor Statement 2 is valid.", "விருப்பம் D சரியானது, ஏனெனில் கூற்று 1 மற்றும் கூற்று 2 ஆகிய இரண்டும் தவறானவை.",
+        "Contrast: Under Article 352 (National Emergency), the State ministry continues in office; under Article 356 (President's Rule), the State ministry is immediately dismissed!",
+        "ஒப்பீடு: சரத்து 352-ன் (தேசிய அவசரநிலை) கீழ் மாநில அமைச்சரவை தொடர்ந்து பதவியில் நீடிக்கிறது; சரத்து 356-ன் (குடியரசுத் தலைவர் ஆட்சி) கீழ் மாநில அமைச்சரவை உடனடியாகப் பதவி நீக்கம் செய்யப்படுகிறது!",
+        "The Governor exercises executive functions under the direct superintendence, direction, and control of the President of India.",
+        "ஆளுநர் இந்தியக் குடியரசுத் தலைவரின் நேரடி மேற்பார்வை, வழிகாட்டுதல் மற்றும் கட்டுப்பாட்டின் கீழ் நிர்வாகப் பணிகளை மேற்கொள்கிறார்."
+    ))
+
+    # 041 - Key A
+    qs.append(make_ep_q(
+        PREFIX, 41, DIFF, "Statement MCQ", "Comparison of Approval Time Limits (1-2-2 Rule)",
+        "Consider the following statements regarding the time limit for parliamentary approval across the three types of emergencies:\n1. A proclamation of National Emergency (Article 352) must be approved within one month, whereas proclamations of President's Rule (Article 356) and Financial Emergency (Article 360) must be approved within two months.\n2. Before the 44th Constitutional Amendment Act of 1978, the time limit for parliamentary approval for all three types of emergencies was uniformly two months.\nWhich of the statements given above is/are correct?",
+        "மூன்று வகையான அவசரநிலைகளுக்கான பாராளுமன்ற ஒப்புதல் கால வரம்பு பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. தேசிய அவசரநிலைப் பிரகடனத்திற்கு (சரத்து 352) ஒரு மாதத்திற்குள் ஒப்புதல் அளிக்கப்பட வேண்டும், ஆனால் குடியரசுத் தலைவர் ஆட்சி (சரத்து 356) மற்றும் நிதி அவசரநிலைப் (சரத்து 360) பிரகடனங்களுக்கு இரண்டு மாதங்களுக்குள் ஒப்புதல் அளிக்கப்பட வேண்டும்.\n2. 1978-ஆம் ஆண்டின் 44-வது அரசியலமைப்பு திருத்தச் சட்டத்திற்கு முன்பு, மூன்று வகையான அவசரநிலைகளுக்குமான பாராளுமன்ற ஒப்புதல் கால வரம்பு சீராக இரண்டு மாதங்களாக இருந்தது.\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
+        "Both 1 and 2", "1 மற்றும் 2 ஆகிய இரண்டும்",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Neither 1 nor 2", "1 மற்றும் 2 ஆகிய இரண்டும் அல்ல",
+        "A",
+        "Both statements are correct. Statement 1 describes the famous '1-2-2 Rule': Article 352 = 1 month; Article 356 = 2 months; Article 360 = 2 months. Statement 2 is historically correct: originally, Article 352 also had a two-month period, which the 44th Amendment Act 1978 reduced to one month to prevent executive overreach.",
+        "இரு கூற்றுகளும் சரியானவை. கூற்று 1 புகழ்பெற்ற '1-2-2 விதியை' விவரிக்கிறது: சரத்து 352 = 1 மாதம்; சரத்து 356 = 2 மாதங்கள்; சரத்து 360 = 2 மாதங்கள். கூற்று 2 வரலாற்று ரீதியாக சரியானது: முதலில் சரத்து 352-க்கும் இரண்டு மாத கால அவகாசம் இருந்தது, அதை 1978-ன் 44-வது திருத்தச் சட்டம் ஒரு மாதமாகக் குறைத்தது.",
+        "Option A is correct; both statements accurately state the modern and historical approval rules.", "விருப்பம் A சரியானது; இரு கூற்றுகளும் தற்கால மற்றும் வரலாற்று ஒப்புதல் விதிகளைத் துல்லியமாகக் கூறுகின்றன.",
+        "Option B ignores the historical two-month uniform rule described in Statement 2.", "விருப்பம் B கூற்று 2-ல் விவரிக்கப்பட்டுள்ள வரலாற்று இரண்டு மாத சீரான விதியைப் புறக்கணிக்கிறது.",
+        "Option C ignores the modern '1-2-2 Rule' described in Statement 1.", "விருப்பம் C கூற்று 1-ல் விவரிக்கப்பட்டுள்ள நவீன '1-2-2 விதியை' புறக்கணிக்கிறது.",
+        "Option D is wrong because both statements are factually correct.", "விருப்பம் D தவறு, ஏனெனில் இரு கூற்றுகளும் உண்மை.",
+        "Memory Mnemonic: 1 - 2 - 2 (Art 352 = 1 month; Art 356 = 2 months; Art 360 = 2 months).",
+        "நினைவகக் குறிப்பு: 1 - 2 - 2 (சரத்து 352 = 1 மாதம்; சரத்து 356 = 2 மாதங்கள்; சரத்து 360 = 2 மாதங்கள்).",
+        "This one-month rule ensures that the directly elected representatives scrutinize National Emergency at the earliest possible opportunity.",
+        "இந்த ஒரு மாத விதி, நேரடியாகத் தேர்ந்தெடுக்கப்பட்ட மக்கள் பிரதிநிதிகள் தேசிய அவசரநிலையை மிக விரைவாக ஆய்வு செய்வதை உறுதி செய்கிறது."
+    ))
+
+    # 042 - Key B
+    qs.append(make_ep_q(
+        PREFIX, 42, DIFF, "Statement MCQ", "Special Majority Calculation Under Article 352",
+        "Consider the following statements regarding the special majority required under Article 352(6):\n1. It requires a majority of 2/3 of the total membership of each House, regardless of how many members are present.\n2. It requires a majority of the total membership of each House AND a majority of not less than two-thirds of the members of that House present and voting.\nWhich of the statements given above is/are correct?",
+        "சரத்து 352(6)-ன் கீழ் தேவைப்படும் சிறப்புப் பெரும்பான்மை பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. எத்தனை உறுப்பினர்கள் வருகை தந்துள்ளனர் என்பதைப் பொருட்படுத்தாமல், ஒவ்வொரு அவையின் மொத்த உறுப்பினர்களில் 2/3 பங்கு பெரும்பான்மை இதற்குத் தேவைப்படுகிறது.\n2. ஒவ்வொரு அவையின் மொத்த உறுப்பினர்களில் பெரும்பான்மை மற்றும் அந்த அவையில் வருகை தந்து வாக்களிக்கும் உறுப்பினர்களில் மூன்றில் இரண்டு பங்குக்கு குறையாத பெரும்பான்மை இதற்குத் தேவைப்படுகிறது.\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Both 1 and 2", "1 மற்றும் 2 ஆகிய இரண்டும்",
+        "Neither 1 nor 2", "1 மற்றும் 2 ஆகிய இரண்டும் அல்ல",
+        "B",
+        "Statement 1 is INCORRECT: 2/3 of total membership is required ONLY for the impeachment of the President under Article 61. Statement 2 is CORRECT: Under Article 352(6) (introduced by the 44th Amendment Act 1978), the special majority consists of: (a) a majority of the total membership of the House (>50%), AND (b) a majority of not less than 2/3 of the members present and voting.",
+        "கூற்று 1 தவறு: மொத்த உறுப்பினர்களில் 2/3 பங்கு பெரும்பான்மை என்பது சரத்து 61-ன் கீழ் குடியரசுத் தலைவரைப் பதவி நீக்கம் (Impeachment) செய்வதற்கு மட்டுமே தேவைப்படுகிறது. கூற்று 2 சரி: சரத்து 352(6)-ன் கீழ் (1978-ன் 44-வது திருத்தத்தால் அறிமுகப்படுத்தப்பட்டது), சிறப்புப் பெரும்பான்மை என்பது: (அ) அவையின் மொத்த உறுப்பினர்களில் பெரும்பான்மை (>50%), மற்றும் (ஆ) வருகை தந்து வாக்களிக்கும் உறுப்பினர்களில் 2/3 பங்குக்கு குறையாத பெரும்பான்மையாகும்.",
+        "Option A confuses Article 352 majority with Article 61 presidential impeachment majority.", "விருப்பம் A சரத்து 352 பெரும்பான்மையை சரத்து 61 குடியரசுத் தலைவர் பதவி நீக்கப் பெரும்பான்மையுடன் குழப்பிக் கொள்கிறது.",
+        "Option B is correct because Statement 2 reflects the dual-requirement formula of Article 352(6).", "விருப்பம் B சரியானது, ஏனெனில் கூற்று 2 சரத்து 352(6)-ன் இரட்டைத் தேவை சூத்திரத்தைப் பிரதிபலிக்கிறது.",
+        "Option C fails because Statement 1 is mathematically and constitutionally erroneous.", "விருப்பம் C தவறானது, ஏனெனில் கூற்று 1 கணித மற்றும் அரசியலமைப்பு ரீதியாகத் தவறானது.",
+        "Option D fails because Statement 2 is accurate.", "விருப்பம் D தவறானது, ஏனெனில் கூற்று 2 துல்லியமானது.",
+        "TNPSC Trap: Only ONE process requires 2/3 of TOTAL membership: Article 61 (President's Impeachment). All other special majorities (Articles 368, 352, 249, etc.) use 'present and voting' for the 2/3 fraction!",
+        "TNPSC பொறி: மொத்த உறுப்பினர்களில் 2/3 பங்கு தேவைப்படும் ஒரே செயல்முறை: சரத்து 61 (குடியரசுத் தலைவர் பதவி நீக்கம்). மற்ற அனைத்து சிறப்புப் பெரும்பான்மைகளும் 2/3 பங்குக்கு 'வருகை தந்து வாக்களிப்பவர்களையே' பயன்படுத்துகின்றன!",
+        "In Lok Sabha (543 seats), total membership majority is 272; plus 2/3 of those present and voting must vote in favor.",
+        "மக்களவையில் (543 இடங்கள்), மொத்த உறுப்பினர் பெரும்பான்மை 272 ஆகும்; மேலும் வருகை தந்து வாக்களிப்பவர்களில் 2/3 பங்கு உறுப்பினர்கள் ஆதரவாக வாக்களிக்க வேண்டும்."
+    ))
+
+    # 043 - Key C
+    qs.append(make_ep_q(
+        PREFIX, 43, DIFF, "Statement MCQ", "Article 359 - Enforcement of Fundamental Rights Suspension",
+        "Consider the following statements regarding the Presidential Order issued under Article 359:\n1. The Presidential Order can suspend the enforcement of fundamental rights for the whole of India or any part thereof.\n2. The Presidential Order can suspend the enforcement of rights for the entire period of emergency or for a shorter period specified in the order.\nWhich of the statements given above is/are correct?",
+        "சரத்து 359-ன் கீழ் பிறப்பிக்கப்படும் குடியரசுத் தலைவர் ஆணை பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. குடியரசுத் தலைவர் ஆணை முழு இந்தியாவுக்கோ அல்லது அதன் ஏதேனும் ஒரு குறிப்பிட்ட பகுதிக்கோ அடிப்படை உரிமைகளின் அமலாக்கத்தை இடைநிறுத்த முடியும்.\n2. குடியரசுத் தலைவர் ஆணை முழு அவசரநிலைக் காலத்திற்கும் அல்லது ஆணையில் குறிப்பிடப்பட்டுள்ள குறுகிய காலத்திற்கும் உரிமைகளின் அமலாக்கத்தை இடைநிறுத்த முடியும்.\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Both 1 and 2", "1 மற்றும் 2 ஆகிய இரண்டும்",
+        "Neither 1 nor 2", "1 மற்றும் 2 ஆகிய இரண்டும் அல்ல",
+        "C",
+        "Both statements are correct. Under Article 359(1) and 359(2), the President's order may extend to the whole or any part of the territory of India, and may operate for the period during which the proclamation is in force or for such shorter period as may be specified in the order.",
+        "இரு கூற்றுகளும் சரியானவை. சரத்து 359(1) மற்றும் 359(2)-ன் கீழ், குடியரசுத் தலைவரின் ஆணை இந்தியாவின் முழுப் பகுதிக்கும் அல்லது ஏதேனும் ஒரு பகுதிக்கும் நீட்டிக்கப்படலாம், மேலும் அவசரநிலைப் பிரகடனம் செயல்பாட்டில் இருக்கும் காலம் முழுமைக்கோ அல்லது ஆணையில் குறிப்பிடப்படும் குறுகிய காலத்திற்கோ செயல்படலாம்.",
+        "Option A ignores the temporal flexibility stated in Statement 2.", "விருப்பம் A கூற்று 2-ல் கூறப்பட்டுள்ள கால நெகிழ்வுத்தன்மையைப் புறக்கணிக்கிறது.",
+        "Option B ignores the territorial flexibility stated in Statement 1.", "விருப்பம் B கூற்று 1-ல் கூறப்பட்டுள்ள பிராந்திய நெகிழ்வுத்தன்மையைப் புறக்கணிக்கிறது.",
+        "Option C correctly validates both provisions of Article 359.", "விருப்பம் C சரத்து 359-ன் இரு விதிகளையும் சரியாக உறுதிப்படுத்துகிறது.",
+        "Option D is wrong because both statements are constitutional text.", "விருப்பம் D தவறு, ஏனெனில் இரு கூற்றுகளும் அரசியலமைப்பு வாசகங்கள் ஆகும்.",
+        "Contrast with Article 358: Article 358 automatically applies to the WHOLE of India for the ENTIRE duration; Article 359 can be geographically and temporally tailored.",
+        "சரத்து 358 உடன் ஒப்பீடு: சரத்து 358 நாடு முழுமைக்கும் முழு காலத்திற்கும் தானாகவே பொருந்தும்; சரத்து 359 புவியியல் மற்றும் கால ரீதியாக மாற்றியமைக்கப்படலாம்.",
+        "Remember that even under Article 359, Articles 20 and 21 can NEVER be included in any Presidential Order.",
+        "சரத்து 359-ன் கீழ் கூட, சரத்துகள் 20 மற்றும் 21-ஐ எந்தவொரு குடியரசுத் தலைவர் ஆணையிலும் ஒருபோதும் சேர்க்க முடியாது என்பதை நினைவில் கொள்க."
+    ))
+
+    # 044 - Key D
+    qs.append(make_ep_q(
+        PREFIX, 44, DIFF, "Statement MCQ", "Judicial Review of Article 356 - Misconceptions",
+        "Consider the following statements regarding the judicial review of President's Rule under Article 356:\n1. The Supreme Court has ruled that the sufficiency and adequacy of the material before the President can be questioned and assessed by the court just like an appellate body.\n2. The advice tendered by the Council of Ministers to the President under Article 74(2) can be compelled to be produced and scrutinized in court.\nWhich of the statements given above is/are correct?",
+        "சரத்து 356-ன் கீழான குடியரசுத் தலைவர் ஆட்சியின் மீதான நீதித்துறை மறுஆய்வு பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. ஒரு மேல்முறையீட்டு அமைப்பைப் போலவே, குடியரசுத் தலைவரின் முன் உள்ள ஆதாரங்களின் போதுமான தன்மையை நீதிமன்றம் கேள்வி கேட்கவும் மதிப்பிடவும் முடியும் என்று உச்ச நீதிமன்றம் தீர்ப்பளித்துள்ளது.\n2. சரத்து 74(2)-ன் கீழ் அமைச்சரவை குடியரசுத் தலைவருக்கு வழங்கிய ஆலோசனையை நீதிமன்றத்தில் சமர்ப்பிக்கவும் ஆய்வு செய்யவும் கட்டாயப்படுத்த முடியும்.\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Both 1 and 2", "1 மற்றும் 2 ஆகிய இரண்டும்",
+        "Neither 1 nor 2", "1 மற்றும் 2 ஆகிய இரண்டும் அல்ல",
+        "D",
+        "Both statements are INCORRECT. Statement 1 is incorrect: in S.R. Bommai (1994), the Supreme Court ruled that it will examine only whether RELEVANT material existed (not the SUFFICIENCY or adequacy of the material, nor will it act as a court of appeal). Statement 2 is incorrect: under Article 74(2), the advice tendered by Ministers to the President cannot be enquired into by any court, though the MATERIAL upon which the advice was based must be produced.",
+        "இரு கூற்றுகளும் தவறானவை. கூற்று 1 தவறு: எஸ்.ஆர். பொம்மை (1994) வழக்கில், தொடர்புடைய ஆதாரங்கள் இருந்தனவா என்பதை மட்டுமே நீதிமன்றம் ஆராயும் (ஆதாரங்களின் போதுமான தன்மையையோ அல்லது மேல்முறையீட்டு அமைப்பாகவோ நீதிமன்றம் செயல்படாது) என்று உச்ச நீதிமன்றம் தீர்ப்பளித்தது. கூற்று 2 தவறு: சரத்து 74(2)-ன் கீழ் அமைச்சர்கள் குடியரசுத் தலைவருக்கு வழங்கிய ஆலோசனையை எந்த நீதிமன்றமும் விசாரிக்க முடியாது, ஆனால் அந்த ஆலோசனைக்கு அடிப்படையாக இருந்த ஆதாரங்களை நீதிமன்றத்தில் சமர்ப்பிக்க வேண்டும்.",
+        "Option A is wrong because courts examine relevance of material, not its sufficiency.", "விருப்பம் A தவறு, ஏனெனில் நீதிமன்றங்கள் ஆதாரங்களின் பொருத்தத்தை மட்டுமே ஆராய்கின்றன, போதுமான தன்மையை அல்ல.",
+        "Option B is wrong because Article 74(2) strictly protects ministerial advice from enquiry.", "விருப்பம் B தவறு, ஏனெனில் சரத்து 74(2) அமைச்சரவை ஆலோசனையை விசாரணையிலிருந்து கண்டிப்பாகப் பாதுகாக்கிறது.",
+        "Option C is wrong because both statements misstate the constitutional boundary.", "விருப்பம் C தவறு, ஏனெனில் இரு கூற்றுகளும் அரசியலமைப்பு எல்லையைத் தவறாகக் குறிப்பிடுகின்றன.",
+        "Option D is correct as neither Statement 1 nor Statement 2 is legally sound.", "விருப்பம் D சரியானது, ஏனெனில் கூற்று 1 மற்றும் கூற்று 2 ஆகிய இரண்டும் தவறானவை.",
+        "Legal Distinction: The court cannot look into the ministerial advice (Article 74(2)), but CAN look into the underlying material (Governor's report and documents).",
+        "சட்டப்பூர்வ வேறுபாடு: நீதிமன்றத்தால் அமைச்சரவை ஆலோசனையை ஆராய முடியாது (சரத்து 74(2)), ஆனால் அதற்குக் காரணமான அடிப்படை ஆதாரங்களை (ஆளுநர் அறிக்கை மற்றும் ஆவணங்கள்) ஆராய முடியும்.",
+        "This balance respects executive privilege while ensuring democratic accountability against mala fide action.",
+        "இந்தச் சமநிலை நிர்வாகத்தின் தனிச்சலுகையை மதிக்கும் அதே வேளையில் உள்நோக்கமுடைய நடவடிக்கைகளுக்கு எதிரான ஜனநாயகப் பொறுப்புணர்வை உறுதி செய்கிறது."
+    ))
+
+    # 045 - Key A
+    qs.append(make_ep_q(
+        PREFIX, 45, DIFF, "Statement MCQ", "44th Amendment - Lok Sabha Special Sitting for Disapproval",
+        "Consider the following statements regarding the Lok Sabha's power to disapprove National Emergency under Article 352(8):\n1. If not less than one-tenth of the total number of members of the Lok Sabha give a notice in writing, a special sitting of the House must be held within 14 days.\n2. The notice in writing must be given to the Speaker if the House is in session, or to the President if the House is not in session.\nWhich of the statements given above is/are correct?",
+        "சரத்து 352(8)-ன் கீழ் தேசிய அவசரநிலையை நிராகரிப்பதற்கான மக்களவையின் அதிகாரம் பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. மக்களவையின் மொத்த உறுப்பினர்களில் பத்தில் ஒரு பங்குக்கு (1/10) குறையாத உறுப்பினர்கள் எழுத்துப்பூர்வ அறிவிப்பை வழங்கினால், 14 நாட்களுக்குள் அவையின் சிறப்பு அமர்வு கூட்டப்பட வேண்டும்.\n2. அவை கூட்டத்தொடரில் இருக்கும் போது சபாநாயகரிடமும், அவை கூட்டத்தொடரில் இல்லாத போது குடியரசுத் தலைவரிடமும் இந்த எழுத்துப்பூர்வ அறிவிப்பு வழங்கப்பட வேண்டும்.\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
+        "Both 1 and 2", "1 மற்றும் 2 ஆகிய இரண்டும்",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Neither 1 nor 2", "1 மற்றும் 2 ஆகிய இரண்டும் அல்ல",
+        "A",
+        "Both statements are correct. The 44th Constitutional Amendment Act 1978 introduced Article 352(8) to provide a democratic safeguard against executive intransigence: 1. 1/10th of Lok Sabha members can requisition a special sitting; 2. Written notice goes to the Speaker (if in session) or the President (if not in session); 3. Special sitting must convene within 14 days to consider disapproving the emergency.",
+        "இரு கூற்றுகளும் சரியானவை. நிர்வாகத்தின் தன்னிச்சையான போக்கிற்கு எதிராக ஒரு ஜனநாயகப் பாதுகாப்பை வழங்க 1978-ன் 44-வது அரசியலமைப்பு திருத்தச் சட்டம் சரத்து 352(8)-ஐ அறிமுகப்படுத்தியது: 1. மக்களவையின் 1/10 பங்கு உறுப்பினர்கள் சிறப்பு அமர்வைக் கோரலாம்; 2. எழுத்துப்பூர்வ அறிவிப்பு சபாநாயகரிடமும் (கூட்டத்தொடரில் இருந்தால்) அல்லது குடியரசுத் தலைவரிடமும் (கூட்டத்தொடரில் இல்லாவிட்டால்) வழங்கப்பட வேண்டும்; 3. அவசரநிலையை நிராகரிப்பதை பரிசீலிக்க 14 நாட்களுக்குள் சிறப்பு அமர்வு கூட்டப்பட வேண்டும்.",
+        "Option A is correct; both statements accurately reflect Article 352(8).", "விருப்பம் A சரியானது; இரு கூற்றுகளும் சரத்து 352(8)-ஐத் துல்லியமாக வெளிப்படுத்துகின்றன.",
+        "Option B ignores Statement 2 regarding the recipient of the notice.", "விருப்பம் B அறிவிப்பைப் பெறுபவர் தொடர்பான கூற்று 2-ஐப் புறக்கணிக்கிறது.",
+        "Option C ignores Statement 1 regarding the 1/10th requisition and 14-day rule.", "விருப்பம் C 1/10 பங்கு கோரிக்கை மற்றும் 14 நாள் விதியைக் கூறும் கூற்று 1-ஐப் புறக்கணிக்கிறது.",
+        "Option D is wrong because both statements are constitutional provisions.", "விருப்பம் D தவறு, ஏனெனில் இரு கூற்றுகளும் அரசியலமைப்பு விதிகளாகும்.",
+        "TNPSC Memory Anchor: Notice = 1/10th of Lok Sabha; Time to hold special sitting = Within 14 days.",
+        "TNPSC நினைவக நங்கூரம்: அறிவிப்பு = மக்களவையில் 1/10 பங்கு உறுப்பினர்கள்; சிறப்பு அமர்வு கூட்டப்பட வேண்டிய காலம் = 14 நாட்களுக்குள்.",
+        "At this special sitting, the resolution of disapproval is passed by a simple majority, compelling revocation.",
+        "இந்தச் சிறப்பு அமர்வில், நிராகரிப்புத் தீர்மானம் எளிய பெரும்பான்மையால் நிறைவேற்றப்பட்டு, அவசரநிலையைத் திரும்பப் பெற கட்டாயப்படுத்துகிறது."
+    ))
+
+    # 046 - Key B
+    qs.append(make_ep_q(
+        PREFIX, 46, DIFF, "Statement MCQ", "Article 356 - Governor's Discretion vs Cabinet Advice",
+        "Consider the following statements regarding the Governor's report under Article 356:\n1. The Governor is bound by the aid and advice of the State Council of Ministers when preparing and sending a report under Article 356 recommending President's Rule.\n2. In sending a report under Article 356, the Governor acts in his own independent discretion and not on the advice of the State Council of Ministers.\nWhich of the statements given above is/are correct?",
+        "சரத்து 356-ன் கீழான ஆளுநரின் அறிக்கை பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. குடியரசுத் தலைவர் ஆட்சியைப் பரிந்துரைத்து சரத்து 356-ன் கீழ் அறிக்கை தயாரித்து அனுப்பும் போது, ஆளுநர் மாநில அமைச்சரவையின் உதவி மற்றும் ஆலோசனைக்குக் கட்டுப்பட்டவர் ஆவார்.\n2. சரத்து 356-ன் கீழ் அறிக்கையை அனுப்புவதில் ஆளுநர் தனது சொந்த சுயாதீனமான தன்னுரிமை அதிகாரத்தின்படி செயல்படுகிறாரே தவிர, மாநில அமைச்சரவையின் ஆலோசனையின்படி அல்ல.\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Both 1 and 2", "1 மற்றும் 2 ஆகிய இரண்டும்",
+        "Neither 1 nor 2", "1 மற்றும் 2 ஆகிய இரண்டும் அல்ல",
+        "B",
+        "Statement 1 is INCORRECT: A State Council of Ministers would never advise the dismissal of its own government. Statement 2 is CORRECT: Recommending President's Rule under Article 356 is one of the most prominent constitutional discretionary powers of the Governor under Article 163(2); he acts as the representative of the Union and makes an independent assessment.",
+        "கூற்று 1 தவறு: தனது சொந்த அரசைப் பதவி நீக்கம் செய்யுமாறு மாநில அமைச்சரவை ஒருபோதும் ஆலோசிக்காது. கூற்று 2 சரி: சரத்து 356-ன் கீழ் குடியரசுத் தலைவர் ஆட்சியைப் பரிந்துரைப்பது என்பது சரத்து 163(2)-ன் கீழ் ஆளுநரின் மிக முக்கியமான அரசியலமைப்புத் தன்னுரிமை அதிகாரங்களில் ஒன்றாகும்; அவர் மத்திய அரசின் பிரதிநிதியாகச் செயல்பட்டு சுயாதீனமான மதிப்பீட்டை மேற்கொள்கிறார்.",
+        "Option A is wrong because requiring cabinet advice would make Article 356 impossible to invoke.", "விருப்பம் A தவறு, ஏனெனில் அமைச்சரவை ஆலோசனை தேவைப்பட்டால் சரத்து 356-ஐ ஒருபோதும் பயன்படுத்த முடியாது.",
+        "Option B is correct because Statement 2 reflects settled constitutional law on gubernatorial discretion.", "விருப்பம் B சரியானது, ஏனெனில் கூற்று 2 ஆளுநரின் தன்னுரிமை அதிகாரம் குறித்த நிலைபெற்ற சட்டத்தைப் பிரதிபலிக்கிறது.",
+        "Option C fails because Statement 1 is absurd and unconstitutional.", "விருப்பம் C தவறானது, ஏனெனில் கூற்று 1 பொருந்தாதது மற்றும் அரசியலமைப்புக்கு முரணானது.",
+        "Option D fails because Statement 2 is completely true.", "விருப்பம் D தவறானது, ஏனெனில் கூற்று 2 முற்றிலும் உண்மை.",
+        "Governor's Discretion: Reporting failure of constitutional machinery under Article 356 is an express discretionary function of the Governor under Article 163.",
+        "ஆளுநரின் தன்னுரிமை: சரத்து 356-ன் கீழ் அரசியலமைப்பு இயந்திர முறிவை அறிவிப்பது என்பது சரத்து 163-ன் கீழ் ஆளுநரின் வெளிப்படையான தன்னுரிமைப் பணியாகும்.",
+        "However, as held in Bommai, this discretion is not unguided or absolute; it must be founded on objective, verifiable facts.",
+        "இருப்பினும் பொம்மை வழக்கில் கூறப்பட்டபடி, இந்தத் தன்னுரிமை வழிகாட்டுதலற்றதோ அல்லது முழுமையானதோ அல்ல; இது புறநிலை ரீதியான, சரிபார்க்கக்கூடிய உண்மைகளின் அடிப்படையில் அமைய வேண்டும்."
+    ))
+
+    # 047 - Key C
+    qs.append(make_ep_q(
+        PREFIX, 47, DIFF, "Statement MCQ", "Emergency Provisions and Union Executive Directions",
+        "Consider the following statements regarding Union executive directions during emergencies:\n1. During a National Emergency, the Union can give executive directions to ANY State on ANY matter, even if that State is not under external threat.\n2. Under Article 365, failure of a State to comply with lawful Union executive directions can trigger President's Rule under Article 356.\nWhich of the statements given above is/are correct?",
+        "அவசரநிலைகளின் போது மத்திய நிர்வாக வழிகாட்டுதல்கள் பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. தேசிய அவசரநிலையின் போது, ஒரு மாநிலம் வெளிப்புற அச்சுறுத்தலுக்கு உட்படாத போதிலும் கூட, எந்தவொரு விவகாரம் குறித்தும் எந்தவொரு மாநிலத்திற்கும் மத்திய அரசு நிர்வாக வழிகாட்டுதல்களை வழங்க முடியும்.\n2. சரத்து 365-ன் கீழ், சட்டப்பூர்வமான மத்திய நிர்வாக வழிகாட்டுதல்களை ஒரு மாநிலம் பின்பற்றத் தவறினால், அது சரத்து 356-ன் கீழ் குடியரசுத் தலைவர் ஆட்சிக்கு வழிவகுக்கும்.\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Both 1 and 2", "1 மற்றும் 2 ஆகிய இரண்டும்",
+        "Neither 1 nor 2", "1 மற்றும் 2 ஆகிய இரண்டும் அல்ல",
+        "C",
+        "Both statements are correct. 1. Under Article 353(a) and the 42nd CAA proviso, Union executive directions can extend to any State regardless of whether it is directly affected by the threat. 2. Article 365 creates a direct constitutional mechanism whereby defiance of Union directions is deemed to be a failure of constitutional machinery under Article 356.",
+        "இரு கூற்றுகளும் சரியானவை. 1. சரத்து 353(a) மற்றும் 42-வது திருத்த வரம்புரையின் கீழ், ஒரு மாநிலம் அச்சுறுத்தலால் நேரடியாகப் பாதிக்கப்பட்டுள்ளதா என்பதைப் பொருட்படுத்தாமல் எந்த மாநிலத்திற்கும் மத்திய நிர்வாக வழிகாட்டுதல்கள் நீட்டிக்கப்படலாம். 2. சரத்து 365 ஒரு நேரடி அரசியலமைப்பு முறைமையை உருவாக்குகிறது, இதன் மூலம் மத்திய வழிகாட்டுதல்களை மீறுவது என்பது சரத்து 356-ன் கீழ் அரசியலமைப்பு இயந்திர முறிவாகக் கருதப்படுகிறது.",
+        "Option A ignores the vital constitutional link provided by Article 365.", "விருப்பம் A சரத்து 365 வழங்கும் முக்கிய அரசியலமைப்பு இணைப்பைப் புறக்கணிக்கிறது.",
+        "Option B ignores the nationwide scope of Union executive power under Article 353.", "விருப்பம் B சரத்து 353-ன் கீழ் மத்திய நிர்வாக அதிகாரத்தின் நாடு தழுவிய எல்லையைப் புறக்கணிக்கிறது.",
+        "Option C correctly affirms both statements.", "விருப்பம் C இரு கூற்றுகளையும் சரியாக உறுதிப்படுத்துகிறது.",
+        "Option D is wrong because both statements are true.", "விருப்பம் D தவறு, ஏனெனில் இரு கூற்றுகளும் உண்மை.",
+        "Federal Impact: In normal times, Centre gives directions to states only on specified topics (e.g., communications, railways, mother tongue instruction); in emergency, directions can cover ANY topic!",
+        "கூட்டாட்சித் தாக்கம்: சாதாரண காலங்களில், குறிப்பிட்ட சில தலைப்புகளில் மட்டுமே (எ.கா. தகவல் தொடர்பு, இரயில்வே, தாய்மொழி வழிக் கல்வி) மத்திய அரசு வழிகாட்ட முடியும்; ஆனால் அவசரநிலையின் போது எந்தவொரு தலைப்பிலும் வழிகாட்டலாம்!",
+        "Article 365 thus bridges administrative non-compliance with constitutional collapse.",
+        "இவ்வாறு சரத்து 365 நிர்வாக இணக்கமின்மையை அரசியலமைப்புச் சரிவோடு இணைக்கிறது."
+    ))
+
+    # 048 - Key D
+    qs.append(make_ep_q(
+        PREFIX, 48, DIFF, "Statement MCQ", "Article 360 Financial Powers - Misconceptions",
+        "Consider the following statements regarding the financial powers of the Union during a Financial Emergency:\n1. The Union assumes the power to directly collect and appropriate all municipal property taxes and panchayat revenues.\n2. The Reserve Bank of India is dissolved and its governor is replaced by the Union Finance Minister.\nWhich of the statements given above is/are correct?",
+        "நிதி அவசரநிலையின் போது மத்திய அரசின் நிதி அதிகாரங்கள் பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. அனைத்து நகராட்சி சொத்து வரிகளையும் பஞ்சாயத்து வருவாய்களையும் நேரடியாக வசூலித்து எடுத்துக் கொள்ளும் அதிகாரத்தை மத்திய அரசு ஏற்கிறது.\n2. இந்திய ரிசர்வ் வங்கி கலைக்கப்பட்டு, அதன் ஆளுநருக்குப் பதிலாக மத்திய நிதி அமைச்சர் பொறுப்பேற்கிறார்.\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Both 1 and 2", "1 மற்றும் 2 ஆகிய இரண்டும்",
+        "Neither 1 nor 2", "1 மற்றும் 2 ஆகிய இரண்டும் அல்ல",
+        "D",
+        "Both statements are completely ABSURD and INCORRECT. Article 360 does NOT dissolve the RBI, nor does it confiscate municipal or panchayat property taxes. Under Article 360, the Union can: (a) issue canons of financial propriety, (b) reduce salaries of public servants and judges, and (c) reserve money bills for the President's consideration. Statutory bodies and local self-government structures continue intact.",
+        "இரு கூற்றுகளும் முற்றிலும் தவறானவை. சரத்து 360 ரிசர்வ் வங்கியை கலைக்காது, மேலும் நகராட்சி அல்லது பஞ்சாயத்து சொத்து வரிகளைப் பறிமுதல் செய்யாது. சரத்து 360-ன் கீழ் மத்திய அரசால்: (அ) நிதி நேர்மை விதிகளுக்கு உத்தரவிடலாம், (ஆ) அரசு ஊழியர்கள் மற்றும் நீதிபதிகளின் ஊதியத்தைக் குறைக்கலாம், (இ) பண மசோதாக்களைக் குடியரசுத் தலைவரின் பரிசீலனைக்கு நிறுத்தி வைக்கலாம். சட்டப்பூர்வ அமைப்புகளும் உள்ளாட்சி அமைப்புகளும் தொடர்ந்து நீடிக்கின்றன.",
+        "Option A is wrong because Article 360 does not appropriate local municipal taxes.", "விருப்பம் A தவறு, ஏனெனில் சரத்து 360 உள்ளாட்சி நகராட்சி வரிகளைப் பறிமுதல் செய்யாது.",
+        "Option B is wrong because RBI is governed under the RBI Act 1934 and is not dissolved under Article 360.", "விருப்பம் B தவறு, ஏனெனில் RBI 1934 சட்டத்தின் கீழ் நிர்வகிக்கப்படுகிறது மற்றும் சரத்து 360-ன் கீழ் கலைக்கப்படுவதில்லை.",
+        "Option C is wrong because both statements are unfounded fabrications.", "விருப்பம் C தவறு, ஏனெனில் இரு கூற்றுகளும் ஆதாரமற்ற கற்பனைகளாகும்.",
+        "Option D is correct as neither statement represents constitutional reality.", "விருப்பம் D சரியானது, ஏனெனில் எந்தக் கூற்றும் அரசியலமைப்பு உண்மைகளைப் பிரதிபலிக்கவில்லை.",
+        "Article 360 Purview: Canons of financial propriety + reduction of salaries + reservation of money bills.",
+        "சரத்து 360 எல்லை: நிதி நேர்மை விதிகள் + ஊதியக் குறைப்பு + பண மசோதாக்களை நிறுத்தி வைத்தல்.",
+        "Even during Financial Emergency, the basic structure of the financial administration is directed, not destroyed.",
+        "நிதி அவசரநிலையின் போது கூட, நிதி நிர்வாகத்தின் அடிப்படைக் கட்டமைப்பு நெறிப்படுத்தப்படுகிறதே தவிர அழிக்கப்படுவதில்லை."
+    ))
+
+    # 049 - Key A
+    qs.append(make_ep_q(
+        PREFIX, 49, DIFF, "Statement MCQ", "National Emergency Effect on Fundamental Rights Under Article 358",
+        "Consider the following statements regarding the suspension of Fundamental Rights under Article 358:\n1. The moment a proclamation of National Emergency on grounds of war or external aggression is issued, the legislative and executive actions of the State are freed from the restrictions of Article 19.\n2. As soon as the emergency ceases to operate, Article 19 automatically revives and regains full constitutional force.\nWhich of the statements given above is/are correct?",
+        "சரத்து 358-ன் கீழ் அடிப்படை உரிமைகள் இடைநிறுத்தம் செய்யப்படுவது பற்றிய பின்வரும் கூற்றுகளைக் கருதுக:\n1. போர் அல்லது வெளிநாட்டு ஆக்கிரமிப்பு அடிப்படையில் தேசிய அவசரநிலைப் பிரகடனம் வெளியிடப்பட்ட உடனேயே, அரசின் சட்டவாக்க மற்றும் நிர்வாக நடவடிக்கைகள் சரத்து 19-ன் கட்டுப்பாடுகளிலிருந்து விடுபடுகின்றன.\n2. அவசரநிலைப் பிரகடனம் முடிவுக்கு வந்த உடனேயே, சரத்து 19 தானாகவே மீண்டும் உயிர் பெற்று முழு அரசியலமைப்புச் சக்தியையும் பெறுகிறது.\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
+        "Both 1 and 2", "1 மற்றும் 2 ஆகிய இரண்டும்",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Neither 1 nor 2", "1 மற்றும் 2 ஆகிய இரண்டும் அல்ல",
+        "A",
+        "Both statements are correct. Under Article 358, while external emergency is in force, the State is free to make laws and take executive action taking away or abridging the six freedoms under Article 19. As soon as the emergency ceases, Article 19 automatically revives; however, actions taken during the emergency cannot be challenged even after emergency ends (provided they related to the emergency).",
+        "இரு கூற்றுகளும் சரியானவை. சரத்து 358-ன் கீழ் வெளிப்புற அவசரநிலை செயல்பாட்டில் இருக்கும் போது, சரத்து 19 உத்தரவாதம் அளிக்கும் ஆறு சுதந்திரங்களைப் பறிக்கும் அல்லது கட்டுப்படுத்தும் சட்டங்களை இயற்றவும் நிர்வாக நடவடிக்கைகளை எடுக்கவும் அரசுக்கு முழு உரிமை உண்டு. அவசரநிலை முடிவுக்கு வந்தவுடன் சரத்து 19 தானாகவே புத்துயிர் பெறுகிறது; இருப்பினும் அவசரநிலையின் போது எடுக்கப்பட்ட நடவடிக்கைகளை அவசரநிலை முடிந்த பிறகும் கேள்வி கேட்க முடியாது (அவை அவசரநிலையுடன் தொடர்புடையதாக இருந்தால்).",
+        "Option A is correct; both statements accurately reflect the operational mechanics of Article 358.", "விருப்பம் A சரியானது; இரு கூற்றுகளும் சரத்து 358-ன் செயல்பாட்டு முறையைத் துல்லியமாக வெளிப்படுத்துகின்றன.",
+        "Option B ignores the automatic revival of Article 19 upon cessation.", "விருப்பம் B அவசரநிலை முடிந்தவுடன் சரத்து 19 தானாக மீள்வதைப் புறக்கணிக்கிறது.",
+        "Option C ignores the automatic suspension during operation.", "விருப்பம் C செயல்பாட்டின் போது ஏற்படும் தானியங்கு இடைநிறுத்தத்தைப் புறக்கணிக்கிறது.",
+        "Option D is wrong because both statements are constitutional facts.", "விருப்பம் D தவறு, ஏனெனில் இரு கூற்றுகளும் அரசியலமைப்பு உண்மைகளாகும்.",
+        "Article 358 Boundary: Operates automatically, but ONLY applies to Article 19, and ONLY for External Emergency (War/External Aggression).",
+        "சரத்து 358 எல்லை: தானாகவே செயல்படும், ஆனால் சரத்து 19-க்கு மட்டுமே பொருந்தும், மேலும் வெளிப்புற அவசரநிலைக்கு (போர்/வெளிநாட்டு ஆக்கிரமிப்பு) மட்டுமே பொருந்தும்.",
+        "No separate presidential order is required under Article 358; it is self-executing.",
+        "சரத்து 358-ன் கீழ் தனியாக குடியரசுத் தலைவர் ஆணை எதுவும் தேவையில்லை; இது தானாகவே செயல்படுத்தக்கூடியது."
+    ))
+
+    # 050 - Key B
+    qs.append(make_ep_q(
+        PREFIX, 50, DIFF, "Statement MCQ", "Emergency Provisions Chapter Master Summary",
+        "Consider the following statements summarizing the constitutional framework of Emergency Provisions:\n1. The Constitution of India provides for three types of emergencies in Part XIX under Articles 352 to 360.\n2. The emergency provisions are designed to enable the Central Government to acquire extraordinary powers to safeguard the sovereignty, unity, integrity, and security of India and the democratic constitutional order.\nWhich of the statements given above is/are correct?",
+        "அவசரநிலைப் பிரிவுகளின் அரசியலமைப்பு கட்டமைப்பைச் சுருக்கமாகக் கூறும் பின்வரும் கூற்றுகளைக் கருதுக:\n1. இந்திய அரசியலமைப்பு பகுதி XIX-ல் சரத்துகள் 352 முதல் 360 வரை மூன்று வகையான அவசரநிலைகளை வழங்குகிறது.\n2. இந்தியாவின் இறையாண்மை, ஒற்றுமை, ஒருமைப்பாடு, பாதுகாப்பு மற்றும் ஜனநாயக அரசியலமைப்பு ஒழுங்கைப் பாதுகாப்பதற்காக மத்திய அரசு அசாதாரண அதிகாரங்களைப் பெறுவதற்கு உதவும் வகையில் அவசரநிலைப் பிரிவுகள் வடிவமைக்கப்பட்டுள்ளன.\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
+        "1 only", "1 மட்டுமே",
+        "2 only", "2 மட்டுமே",
+        "Both 1 and 2", "1 மற்றும் 2 ஆகிய இரண்டும்",
+        "Neither 1 nor 2", "1 மற்றும் 2 ஆகிய இரண்டும் அல்ல",
+        "B",
+        "Statement 1 is INCORRECT: Emergency Provisions are contained in Part XVIII (not Part XIX; Part XIX deals with Miscellaneous provisions). Statement 2 is CORRECT: The fundamental objective of Part XVIII is to protect the nation's security, territorial integrity, and constitutional machinery during extraordinary crises by temporarily converting the federal structure into a unitary one.",
+        "கூற்று 1 தவறு: அவசரநிலைப் பிரிவுகள் பகுதி XVIII-ல் இடம்பெற்றுள்ளன (பகுதி XIX அல்ல; பகுதி XIX இதர விதிகளைக் கையாள்கிறது). கூற்று 2 சரி: பகுதி XVIII-ன் அடிப்படைக் குறிக்கோளானது அசாதாரண நெருக்கடிகளின் போது கூட்டாட்சி அமைப்பைத் தற்காலிகமாக ஒற்றையாட்சியாக மாற்றி, நாட்டின் பாதுகாப்பு, பிராந்திய ஒருமைப்பாடு மற்றும் அரசியலமைப்பு இயந்திரத்தைப் பாதுகாப்பதாகும்.",
+        "Option A fails because Part XVIII contains Emergency Provisions, not Part XIX.", "விருப்பம் A தவறானது, ஏனெனில் பகுதி XVIII அவசரநிலைப் பிரிவுகளைக் கொண்டுள்ளது, பகுதி XIX அல்ல.",
+        "Option B is correct because Statement 2 accurately captures the core objective of Part XVIII.", "விருப்பம் B சரியானது, ஏனெனில் கூற்று 2 பகுதி XVIII-ன் முதன்மை நோக்கத்தைத் துல்லியமாகக் கூறுகிறது.",
+        "Option C fails because Statement 1 is factually erroneous.", "விருப்பம் C தவறானது, ஏனெனில் கூற்று 1 தவறான பகுதி எண்ணைக் குறிப்பிடுகிறது.",
+        "Option D fails because Statement 2 is completely true.", "விருப்பம் D தவறானது, ஏனெனில் கூற்று 2 முற்றிலும் உண்மை.",
+        "Master Formula: Part XVIII = Articles 352 to 360 = National (352) + State/President's Rule (356) + Financial (360).",
+        "முதன்மை சூத்திரம்: பகுதி XVIII = சரத்துகள் 352 முதல் 360 = தேசிய (352) + மாநில/குடியரசுத் தலைவர் ஆட்சி (356) + நிதி (360).",
+        "Dr. Ambedkar described this mechanism as India's constitutional safety valve against systemic collapse.",
+        "டாக்டர் அம்பேத்கர் இந்த அமைப்பை கணினிச் சரிவுக்கு எதிரான இந்தியாவின் அரசியலமைப்புப் பாதுகாப்பு வால்வு என்று விவரித்தார்."
+    ))
+
+    return qs
+
+def build_and_validate_statement():
+    qs = (get_statement_questions_batch1() + 
+          get_statement_questions_batch2() + 
+          get_statement_questions_batch3() + 
+          get_statement_questions_batch4() + 
+          get_statement_questions_batch5())
+    
+    print(f"[STATEMENT] Total questions generated: {len(qs)}")
+    assert len(qs) == 50, f"Expected 50 questions, got {len(qs)}"
+
+    # Check key distribution
+    dist = dict(Counter([q["correct_answer"] for q in qs]))
+    print(f"[STATEMENT] Key Distribution: {dist}")
+    assert dist == {"A": 13, "B": 13, "C": 12, "D": 12}, f"Distribution mismatch: {dist}"
+
+    # Check uniqueness of stems
+    stems = [q["question_en"].strip().lower() for q in qs]
+    assert len(stems) == len(set(stems)), "Duplicate stems found in Statement set!"
+    print("[STATEMENT] Stems are 100% unique.")
+
+    out_file = "data/questions/polity/emergency_provisions_statement_based.json"
+    alias_file = "data/questions/polity/emergency_provisions_statement.json"
+    os.makedirs(os.path.dirname(out_file), exist_ok=True)
+    with open(out_file, "w", encoding="utf-8") as f:
+        json.dump(qs, f, indent=2, ensure_ascii=False)
+    with open(alias_file, "w", encoding="utf-8") as f:
+        json.dump(qs, f, indent=2, ensure_ascii=False)
+    print(f"[STATEMENT] Saved to {out_file} and {alias_file}")
+
+    rep = ContentValidator.validate_file(out_file, expected_count=50, expected_prefix=PREFIX)
+    print(f"[STATEMENT] Validator Status: {'PASS' if rep.is_valid else 'FAIL'} | Audited: {rep.total_audited}")
+    if rep.issues:
+        for iss in rep.issues:
+            print(f"  [{iss.severity}] {iss.question_id}: {iss.message}")
+        assert False, "Validation failed!"
+    print("[STATEMENT] Validation PASSED with 0 issues!")
+
+if __name__ == "__main__":
+    build_and_validate_statement()

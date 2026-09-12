@@ -1,0 +1,1131 @@
+import os
+import sys
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+sys.path.insert(0, os.path.dirname(__file__))
+
+from sch_mcq_helper import make_sch_q
+
+def get_medium_questions():
+    qs = []
+
+    # M01 - M05: First Schedule & Territorial Extent
+    qs.append(make_sch_q(
+        "SCH_M_001", "Medium", "Conceptual", "First Schedule",
+        "Which Constitutional Amendment Act was enacted to transfer the Berubari Union territory to Pakistan pursuant to the Indo-Pakistan agreement, leading to an amendment in the First Schedule?",
+        "இந்தோ-பாகிஸ்தான் ஒப்பந்தத்தின்படி பெருபாரி யூனியன் பகுதியை பாகிஸ்தானுக்கு மாற்றுவதற்காக எந்த அரசியலமைப்புத் திருத்தச் சட்டம் இயற்றப்பட்டு முதல் அட்டவணை திருத்தப்பட்டது?",
+        "9th Constitutional Amendment Act, 1960", "9வது அரசியலமைப்புத் திருத்தச் சட்டம், 1960",
+        "7th Constitutional Amendment Act, 1956", "7வது அரசியலமைப்புத் திருத்தச் சட்டம், 1956",
+        "10th Constitutional Amendment Act, 1961", "10வது அரசியலமைப்புத் திருத்தச் சட்டம், 1961",
+        "12th Constitutional Amendment Act, 1962", "12வது அரசியலமைப்புத் திருத்தச் சட்டம், 1962",
+        "A",
+        "In the Berubari Union case (1960), the Supreme Court held that the cession of Indian territory to a foreign state cannot be done by mere executive action; it requires a constitutional amendment under Article 368. Consequently, the 9th Constitutional Amendment Act, 1960 was enacted to amend the First Schedule.",
+        "பெருபாரி யூனியன் வழக்கில் (1960), இந்தியப் பகுதியை வெளிநாட்டுக்கு விட்டுக்கொடுப்பது வெறும் நிர்வாக உத்தரவால் செய்ய முடியாது, சரத்து 368-ன் கீழ் அரசியலமைப்புத் திருத்தம் அவசியம் என உச்சநீதிமன்றம் தீர்ப்பளித்தது. இதன்படி முதல் அட்டவணையைத் திருத்த 9வது அரசியலமைப்புத் திருத்தச் சட்டம் 1960 இயற்றப்பட்டது.",
+        "Correct. 9th CAA 1960 was enacted for the Berubari Union cession.", "சரியானது. பெருபாரி பகுதி மாற்றத்திற்காக 9வது திருத்தம் 1960 இயற்றப்பட்டது.",
+        "Incorrect. 7th CAA 1956 implemented the States Reorganisation Act.", "தவறானது. 7வது திருத்தம் 1956 மாநிலங்கள் மறுசீரமைப்புச் சட்டத்தை நடைமுறைப்படுத்தியது.",
+        "Incorrect. 10th CAA 1961 incorporated Dadra and Nagar Haveli.", "தவறானது. 10வது திருத்தம் 1961 தாத்ரா மற்றும் நாகர் ஹவேலியை இணைத்தது.",
+        "Incorrect. 12th CAA 1962 incorporated Goa, Daman and Diu.", "தவறானது. 12வது திருத்தம் 1962 கோவா, டாமன் & டையூவை இணைத்தது.",
+        "Berubari Union (1960) -> 9th CAA 1960 amended First Schedule.",
+        "பெருபாரி யூனியன் (1960) -> 9வது திருத்தம் 1960 முதல் அட்டவணையைத் திருத்தியது.",
+        "Art 3 does not cover ceding territory to a foreign country; Article 368 amendment is required.",
+        "சரத்து 3 இந்திய நிலப்பரப்பை வெளிநாட்டுக்கு விட்டுக்கொடுக்க அதிகாரம் அளிக்காது; சரத்து 368 திருத்தம் அவசியம்."
+    ))
+
+    qs.append(make_sch_q(
+        "SCH_M_002", "Medium", "Conceptual", "First Schedule",
+        "Following the Jammu and Kashmir Reorganisation Act, 2019 and the merger of Dadra and Nagar Haveli and Daman and Diu in 2020, what is the current entry count in the First Schedule?",
+        "ஜம்மு காஷ்மீர் மறுசீரமைப்புச் சட்டம் 2019 மற்றும் 2020-ல் தாத்ரா-நாகர் ஹவேலி & டாமன்-டையூ இணைப்பிற்குப் பிறகு, முதல் அட்டவணையில் தற்போது உள்ள பதிவுகளின் எண்ணிக்கை என்ன?",
+        "28 States and 8 Union Territories", "28 மாநிலங்கள் மற்றும் 8 யூனியன் பிரதேசங்கள்",
+        "29 States and 7 Union Territories", "29 மாநிலங்கள் மற்றும் 7 யூனியன் பிரதேசங்கள்",
+        "28 States and 9 Union Territories", "28 மாநிலங்கள் மற்றும் 9 யூனியன் பிரதேசங்கள்",
+        "29 States and 8 Union Territories", "29 மாநிலங்கள் மற்றும் 8 யூனியன் பிரதேசங்கள்",
+        "A",
+        "On October 31, 2019, J&K was bifurcated into UTs of J&K and Ladakh (reducing states from 29 to 28, increasing UTs from 7 to 9). On January 26, 2020, Dadra and Nagar Haveli and Daman and Diu were merged into a single UT, reducing UTs from 9 to 8. Thus, First Schedule has 28 States and 8 UTs.",
+        "அக்டோபர் 31, 2019-ல் ஜம்மு காஷ்மீர் இரண்டு யூனியன் பிரதேசங்களாகப் பிரிக்கப்பட்டது (மாநிலங்கள் 28 ஆகக் குறைந்தது, UTகள் 9 ஆக உயர்ந்தது). பின்னர் ஜனவரி 26, 2020 அன்று தாத்ரா & நாகர் ஹவேலி மற்றும் டாமன் & டையூ ஒரே யூனியன் பிரதேசமாக இணைக்கப்பட்டதால் UTகள் 8 ஆக மாறின. எனவே தற்போது 28 மாநிலங்கள், 8 UTகள் உள்ளன.",
+        "Correct. Currently 28 States and 8 Union Territories.", "சரியானது. தற்போது 28 மாநிலங்கள் மற்றும் 8 யூனியன் பிரதேசங்கள் உள்ளன.",
+        "Incorrect. 29 States and 7 UTs was the status before Oct 2019.", "தவறானது. 29 மாநிலங்கள் மற்றும் 7 UTகள் என்பது அக்டோபர் 2019க்கு முந்தைய நிலை.",
+        "Incorrect. 28 States and 9 UTs was the interim status before Jan 2020.", "தவறானது. 28 மாநிலங்கள் மற்றும் 9 UTகள் என்பது ஜனவரி 2020க்கு முந்தைய இடைக்கால நிலை.",
+        "Incorrect. 29 States is outdated after J&K reorganisation.", "தவறானது. ஜம்மு காஷ்மீர் மாற்றத்திற்குப் பின் 29 மாநிலங்கள் என்பது தவறானது.",
+        "Current First Schedule status: 28 States + 8 UTs.",
+        "முதல் அட்டவணையின் தற்போதைய நிலை: 28 மாநிலங்கள் + 8 யூனியன் பிரதேசங்கள்.",
+        "The merger was enacted by the Dadra and Nagar Haveli and Daman and Diu (Merger of Union Territories) Act, 2019.",
+        "இந்த இணைப்பு தாத்ரா-நாகர் ஹவேலி மற்றும் டாமன்-டையூ (யூனியன் பிரதேசங்கள் இணைப்பு) சட்டம் 2019 மூலம் நடைமுறைப்படுத்தப்பட்டது."
+    ))
+
+    qs.append(make_sch_q(
+        "SCH_M_003", "Medium", "Conceptual", "First Schedule",
+        "An amendment to the First Schedule of the Constitution consequential to the formation of a new State under Article 3 is passed by Parliament through:",
+        "சரத்து 3-ன் கீழ் ஒரு புதிய மாநிலத்தை உருவாக்குவதால் முதல் அட்டவணையில் செய்யப்படும் திருத்தம் பாராளுமன்றத்தால் எவ்வாறு நிறைவேற்றப்படுகிறது?",
+        "A simple majority under Article 4, not deemed as an amendment under Article 368", "சரத்து 4-ன் கீழ் எளிய பெரும்பான்மை மூலம், சரத்து 368-ன் கீழான திருத்தமாகக் கருதப்படாது",
+        "A special majority of Parliament under Article 368", "சரத்து 368-ன் கீழ் பாராளுமன்றத்தின் சிறப்புப் பெரும்பான்மை மூலம்",
+        "A special majority of Parliament along with ratification by half of the states", "பாராளுமன்றத்தின் சிறப்புப் பெரும்பான்மை மற்றும் பாதி மாநிலங்களின் ஒப்புதல் மூலம்",
+        "An absolute majority of total membership in both Houses", "இரு அவைகளின் மொத்த உறுப்பினர் எண்ணிக்கையில் முழுப் பெரும்பான்மை மூலம்",
+        "A",
+        "Article 4(2) of the Constitution explicitly provides that any law referred to in Article 2 or Article 3 (which amends the First or Fourth Schedule) shall not be deemed to be an amendment of the Constitution for the purposes of Article 368. It can be passed by a simple majority like an ordinary law.",
+        "சரத்து 4(2)-ன் படி, சரத்து 2 அல்லது 3-ன் கீழ் முதல் அல்லது நான்காவது அட்டவணையைத் திருத்தும் சட்டம் எதுவும் சரத்து 368-ன் நோக்கங்களுக்காக அரசியலமைப்புத் திருத்தமாகக் கருதப்படாது. இது ஒரு சாதாரண சட்டம் போல எளிய பெரும்பான்மையால் நிறைவேற்றப்படலாம்.",
+        "Correct. Simple majority under Article 4; not treated as Art 368 amendment.", "சரியானது. சரத்து 4-ன் கீழ் எளிய பெரும்பான்மை; சரத்து 368 திருத்தமாகக் கருதப்படாது.",
+        "Incorrect. Article 368 special majority is not required for Art 2/3 changes.", "தவறானது. சரத்து 2/3 மாற்றங்களுக்கு சரத்து 368 சிறப்புப் பெரும்பான்மை தேவையில்லை.",
+        "Incorrect. State ratification is not required to create new states under Art 3.", "தவறானது. புதிய மாநிலங்களை உருவாக்க மாநிலங்களின் ஏற்பு தேவையில்லை.",
+        "Incorrect. Absolute majority alone is not the constitutional mechanism.", "தவறானது. முழுப் பெரும்பான்மை மட்டுமே அரசியலமைப்பு முறை அல்ல.",
+        "Article 4: Laws under Art 2 & 3 amend 1st & 4th Schedules by simple majority.",
+        "சரத்து 4: சரத்து 2 & 3-ன் கீழான சட்டங்கள் 1 & 4வது அட்டவணைகளை எளிய பெரும்பான்மையால் திருத்துகின்றன.",
+        "This allows Parliament to redraw the political map of India without the rigid procedure of Article 368.",
+        "இது பாராளுமன்றம் சரத்து 368-ன் கடுமையான நடைமுறையின்றி இந்திய வரைபடத்தை மாற்றியமைக்க வழிசெய்கிறது."
+    ))
+
+    qs.append(make_sch_q(
+        "SCH_M_004", "Medium", "Conceptual", "First Schedule",
+        "When the 100th Constitutional Amendment Act, 2015 gave effect to the Land Boundary Agreement with Bangladesh, which Schedule was amended to alter territorial limits of Assam, West Bengal, Meghalaya, and Tripura?",
+        "வங்கதேசத்துடனான எல்லை ஒப்பந்தத்தை நடைமுறைப்படுத்திய 100வது அரசியலமைப்புத் திருத்தச் சட்டம் (2015) மூலம் அசாம், மேற்கு வங்கம், மேகாலயா, திரிபுராவின் எல்லைகளை மாற்ற எந்த அட்டவணை திருத்தப்பட்டது?",
+        "First Schedule", "முதல் அட்டவணை",
+        "Sixth Schedule", "ஆறாவது அட்டவணை",
+        "Seventh Schedule", "ஏழாவது அட்டவணை",
+        "Fifth Schedule", "ஐந்தாவது அட்டவணை",
+        "A",
+        "The 100th Constitutional Amendment Act, 2015 amended the First Schedule of the Constitution to exchange enclaves and acquire/transfer territories involving India and Bangladesh across Assam, West Bengal, Meghalaya, and Tripura.",
+        "100வது அரசியலமைப்புத் திருத்தச் சட்டம் (2015), இந்தியா-வங்கதேசம் இடையே அசாம், மேற்கு வங்கம், மேகாலயா மற்றும் திரிபுரா மாநிலங்களில் உள்ள பகுதிகளைப் பரிமாறிக்கொள்வதற்காக முதல் அட்டவணையைத் திருத்தியது.",
+        "Correct. First Schedule contains territorial limits of States.", "சரியானது. முதல் அட்டவணை மாநிலங்களின் எல்லைப் பகுதிகளைக் கொண்டுள்ளது.",
+        "Incorrect. Sixth Schedule deals with tribal autonomous areas.", "தவறானது. ஆறாவது அட்டவணை பழங்குடியினர் தன்னாட்சி பகுதிகளைக் கையாள்கிறது.",
+        "Incorrect. Seventh Schedule deals with legislative lists.", "தவறானது. ஏழாவது அட்டவணை சட்டமன்ற அதிகாரப் பட்டியல்களைக் கையாள்கிறது.",
+        "Incorrect. Fifth Schedule deals with Scheduled Areas.", "தவறானது. ஐந்தாவது அட்டவணை அட்டவணைப்படுத்தப்பட்ட பகுதிகளைக் கையாள்கிறது.",
+        "100th CAA 2015: Amended First Schedule for Indo-Bangladesh LBA.",
+        "100வது திருத்தம் 2015: இந்திய-வங்கதேச நில எல்லை ஒப்பந்தத்திற்காக முதல் அட்டவணையைத் திருத்தியது.",
+        "India transferred 111 enclaves to Bangladesh and received 51 enclaves from Bangladesh.",
+        "இந்தியா 111 பகுதிகளை வங்கதேசத்திற்கு அளித்து, 51 பகுதிகளைப் பெற்றது."
+    ))
+
+    qs.append(make_sch_q(
+        "SCH_M_005", "Medium", "Conceptual", "First Schedule",
+        "Which of the following constitutional amendments restructured the First Schedule by abolishing the classification of States into Part A, Part B, Part C, and Part D?",
+        "பின்வரும் எந்த அரசியலமைப்புத் திருத்தச் சட்டம் மாநிலங்களை பகுதி A, பகுதி B, பகுதி C மற்றும் பகுதி D எனப் பிரித்திருந்த முறையை நீக்கி முதல் அட்டவணையை மாற்றியமைத்தது?",
+        "7th Constitutional Amendment Act, 1956", "7வது அரசியலமைப்புத் திருத்தச் சட்டம், 1956",
+        "1st Constitutional Amendment Act, 1951", "1வது அரசியலமைப்புத் திருத்தச் சட்டம், 1951",
+        "4th Constitutional Amendment Act, 1955", "4வது அரசியலமைப்புத் திருத்தச் சட்டம், 1955",
+        "14th Constitutional Amendment Act, 1962", "14வது அரசியலமைப்புத் திருத்தச் சட்டம், 1962",
+        "A",
+        "The 7th Constitutional Amendment Act, 1956 implemented the States Reorganisation Act, 1956. It abolished the 4-tier classification (Parts A, B, C, D) and reorganized India into 14 States and 6 Union Territories, completely restructuring the First Schedule.",
+        "7வது அரசியலமைப்புத் திருத்தச் சட்டம் 1956, மாநிலங்கள் மறுசீரமைப்புச் சட்டம் 1956-ஐ நடைமுறைப்படுத்தியது. இது பகுதி A, B, C, D என்ற 4 அடுக்கு வகைப்பாட்டை நீக்கி, 14 மாநிலங்கள் மற்றும் 6 யூனியன் பிரதேசங்களாக நாட்டை மறுசீரமைத்து முதல் அட்டவணையை மாற்றியது.",
+        "Correct. 7th CAA 1956 abolished Parts A, B, C, D classification.", "சரியானது. 7வது திருத்தம் 1956 பகுதி A, B, C, D வகைப்பாடுகளை நீக்கியது.",
+        "Incorrect. 1st CAA 1951 introduced the Ninth Schedule.", "தவறானது. 1வது திருத்தம் 1951 ஒன்பதாவது அட்டவணையை அறிமுகப்படுத்தியது.",
+        "Incorrect. 4th CAA 1955 amended Article 31 and property rights.", "தவறானது. 4வது திருத்தம் 1955 சொத்து உரிமைகள் மற்றும் சரத்து 31-ஐத் திருத்தியது.",
+        "Incorrect. 14th CAA 1962 incorporated Puducherry into First Schedule.", "தவறானது. 14வது திருத்தம் 1962 புதுச்சேரியை முதல் அட்டவணையில் சேர்த்தது.",
+        "7th CAA 1956 created 14 States and 6 UTs in First Schedule.",
+        "7வது திருத்தம் 1956 முதல் அட்டவணையில் 14 மாநிலங்கள் மற்றும் 6 UTகளை உருவாக்கியது.",
+        "It followed the recommendations of the Fazal Ali Commission (States Reorganisation Commission).",
+        "இது பசல் அலி ஆணையத்தின் (மாநிலங்கள் மறுசீரமைப்பு ஆணையம்) பரிந்துரைகளைப் பின்பற்றியது."
+    ))
+
+    # M06 - M10: Second Schedule Nuances
+    qs.append(make_sch_q(
+        "SCH_M_006", "Medium", "Conceptual", "Second Schedule",
+        "Which of the following constitutional functionaries does NOT draw emoluments and allowances specified under the Second Schedule?",
+        "பின்வரும் அரசியலமைப்புப் பொறுப்பாளர்களில் யார் இரண்டாவது அட்டவணையின் கீழ் குறிப்பிடப்பட்டுள்ள ஊதியங்கள் மற்றும் படிகளைப் பெறுவதில்லை?",
+        "Prime Minister of India", "இந்தியப் பிரதமர்",
+        "Speaker of the Lok Sabha", "மக்களவைத் தலைவர்",
+        "Comptroller and Auditor-General of India", "இந்தியத் தலைமைக் கணக்குத் தணிக்கையாளர் (CAG)",
+        "Judges of the High Court", "உயர்நீதிமன்ற நீதிபதிகள்",
+        "A",
+        "The Second Schedule lists salaries of: President, Governors, Speaker/Deputy Speaker of Lok Sabha, Chairman/Deputy Chairman of Rajya Sabha, Speaker/Deputy Speaker of State Legislative Assemblies, Chairman/Deputy Chairman of State Legislative Councils, Supreme Court Judges, High Court Judges, and the CAG. The Prime Minister, Union Ministers, and State Ministers are NOT listed in the Second Schedule; their salaries are determined by Parliament under Article 75(6).",
+        "இரண்டாவது அட்டவணையில் உள்ளவர்கள்: குடியரசுத் தலைவர், ஆளுநர்கள், மக்களவை/மாநிலங்களவைத் தலைவர்கள் & துணைத்தலைவர்கள், மாநில சட்டமன்ற/மேலவைத் தலைவர்கள் & துணைத்தலைவர்கள், உச்ச/உயர்நீதிமன்ற நீதிபதிகள் மற்றும் CAG. இந்தியப் பிரதமர் மற்றும் அமைச்சர்களின் ஊதியங்கள் இரண்டாவது அட்டவணையில் இல்லை; அவை சரத்து 75(6)-ன் படி பாராளுமன்றத்தால் நிர்ணயிக்கப்படுகின்றன.",
+        "Correct. Prime Minister's salary is not in the Second Schedule.", "சரியானது. பிரதமரின் சம்பளம் இரண்டாவது அட்டவணையில் இல்லை.",
+        "Incorrect. Lok Sabha Speaker is explicitly listed in Part C.", "தவறானது. மக்களவைத் தலைவர் பகுதி C-ல் தெளிவாகக் குறிப்பிடப்பட்டுள்ளார்.",
+        "Incorrect. CAG is listed in Part E of the Second Schedule.", "தவறானது. CAG இரண்டாவது அட்டவணையின் பகுதி E-ல் உள்ளார்.",
+        "Incorrect. High Court Judges are listed in Part D.", "தவறானது. உயர்நீதிமன்ற நீதிபதிகள் பகுதி D-ல் உள்ளனர்.",
+        "PM and Ministers are NOT in the Second Schedule (governed by Art 75(6)).",
+        "பிரதமர் மற்றும் அமைச்சர்கள் 2வது அட்டவணையில் இல்லை (சரத்து 75(6) மூலம் நிர்ணயம்).",
+        "Attorney General of India is also NOT in the Second Schedule (remuneration fixed by President under Art 76).",
+        "இந்திய அட்டர்னி ஜெனரலும் 2வது அட்டவணையில் இல்லை (சரத்து 76-ன் கீழ் குடியரசுத் தலைவரால் நிர்ணயிக்கப்படுகிறது)."
+    ))
+
+    qs.append(make_sch_q(
+        "SCH_M_007", "Medium", "Conceptual", "Second Schedule",
+        "The salary and conditions of service of the Comptroller and Auditor-General (CAG) are detailed in which Part of the Second Schedule?",
+        "இந்தியத் தலைமைக் கணக்குத் தணிக்கையாளரின் (CAG) ஊதியம் மற்றும் சேவை நிபந்தனைகள் இரண்டாவது அட்டவணையின் எந்தப் பகுதியில் விரிவாகக் கூறப்பட்டுள்ளன?",
+        "Part E", "பகுதி E",
+        "Part A", "பகுதி A",
+        "Part C", "பகுதி C",
+        "Part D", "பகுதி D",
+        "A",
+        "The Second Schedule is divided into Parts: Part A (President & Governors), Part C (Speaker/Deputy Speaker & Chairman/Deputy Chairman), Part D (Judges of Supreme Court & High Courts), and Part E (Comptroller and Auditor-General of India). (Part B was omitted by 7th CAA 1956).",
+        "இரண்டாவது அட்டவணை பகுதிகளாகப் பிரிக்கப்பட்டுள்ளது: பகுதி A (குடியரசுத் தலைவர் & ஆளுநர்கள்), பகுதி C (சபாநாயகர்/துணைச் சபாநாயகர் & தலைவர்/துணைத்தலைவர்), பகுதி D (உச்ச & உயர்நீதிமன்ற நீதிபதிகள்), மற்றும் பகுதி E (இந்திய CAG). (பகுதி B 7வது திருத்தம் 1956-ல் நீக்கப்பட்டது).",
+        "Correct. Part E covers the Comptroller and Auditor-General of India.", "சரியானது. பகுதி E இந்தியக் கணக்குத் தணிக்கையாளரைக் (CAG) குறிக்கிறது.",
+        "Incorrect. Part A covers President and Governors of States.", "தவறானது. பகுதி A குடியரசுத் தலைவர் மற்றும் ஆளுநர்களைக் குறிக்கிறது.",
+        "Incorrect. Part C covers Presiding Officers of Parliament and State Legislatures.", "தவறானது. பகுதி C பாராளுமன்ற மற்றும் சட்டமன்றத் தலைவர்களைக் குறிக்கிறது.",
+        "Incorrect. Part D covers Supreme Court and High Court Judges.", "தவறானது. பகுதி D உச்சநீதிமன்ற மற்றும் உயர்நீதிமன்ற நீதிபதிகளைக் குறிக்கிறது.",
+        "Second Schedule Parts: A=President/Gov, C=Speakers/Chairmen, D=Judges, E=CAG.",
+        "இரண்டாவது அட்டவணை பகுதிகள்: A=தலைவர்/ஆளுநர், C=சபாநாயகர்கள், D=நீதிபதிகள், E=CAG.",
+        "Part B originally dealt with salaries of ministers in Part B states, omitted in 1956.",
+        "பகுதி B தொடக்கத்தில் பகுதி B மாநில அமைச்சர்களின் சம்பளத்தைக் குறித்தது; 1956-ல் நீக்கப்பட்டது."
+    ))
+
+    qs.append(make_sch_q(
+        "SCH_M_008", "Medium", "Conceptual", "Second Schedule",
+        "Which of the following authorities determines whether emoluments, allowances, and privileges specified in the Second Schedule can be varied to the disadvantage of a Judge after appointment?",
+        "நியமனத்திற்குப் பிறகு ஒரு நீதிபதியின் ஊதியம், படிகள் மற்றும் சலுகைகளை அவருக்கு பாதகமாக குறைக்க முடியாது என்று அரசியலமைப்பு உத்தரவாதம் அளிப்பது யாரால் கூட மாற்றப்பட முடியாது?",
+        "It cannot be varied to their disadvantage by any authority during their term of office, except during a Financial Emergency",
+        "நிதி அவசரநிலையைத் தவிர, அவர்களின் பதவிக்காலத்தில் எந்த அதிகாரியாலும் பாதகமாக மாற்ற முடியாது",
+        "Parliament by a simple resolution at any time", "எந்த நேரத்திலும் பாராளுமன்றத்தின் எளிய தீர்மானம் மூலம்",
+        "President by an executive order based on economic constraints", "பொருளாதாரக் கட்டுப்பாடுகளின் அடிப்படையில் குடியரசுத் தலைவரின் நிர்வாக உத்தரவு மூலம்",
+        "Union Council of Ministers through finance ministry notification", "நிதி அமைச்சக அறிவிக்கை மூலம் மத்திய அமைச்சரவை",
+        "A",
+        "Articles 125(2) and 221(2) provide that neither the privileges nor allowances of a Judge nor rights in respect of leave of absence or pension shall be varied to his disadvantage after appointment. The only constitutional exception is under Article 360 during a Financial Emergency.",
+        "சரத்து 125(2) மற்றும் 221(2)-ன் படி, ஒரு நீதிபதியின் படிகள், விடுப்பு உரிமைகள் அல்லது ஓய்வூதியம் நியமனத்திற்குப் பிறகு அவருக்குப் பாதகமாக குறைக்கப்படக் கூடாது. சரத்து 360-ன் கீழான நிதி அவசரநிலை மட்டுமே இதற்கு ஒரே அரசியலமைப்பு விதிவிலக்காகும்.",
+        "Correct. Cannot be varied to disadvantage except during Art 360 Financial Emergency.", "சரியானது. சரத்து 360 நிதி நெருக்கடி நிலையைத் தவிர பாதகமாக குறைக்க முடியாது.",
+        "Incorrect. Parliament cannot reduce it by simple resolution.", "தவறானது. பாராளுமன்றம் எளிய தீர்மானம் மூலம் குறைக்க முடியாது.",
+        "Incorrect. President has no executive power to disadvantage judges unilaterally.", "தவறானது. தன்னிச்சையாக நீதிபதிகளுக்குப் பாதகமாக மாற்ற குடியரசுத் தலைவருக்கு அதிகாரமில்லை.",
+        "Incorrect. Council of Ministers cannot alter it by notification.", "தவறானது. அமைச்சரவை அறிவிக்கை மூலம் இதை மாற்ற முடியாது.",
+        "Salaries of Judges under 2nd Schedule are charged on the Consolidated Fund (non-votable).",
+        "2வது அட்டவணையின் கீழ் நீதிபதிகளின் சம்பளம் தொகுப்பு நிதியிலிருந்து அளிக்கப்படுகிறது (வாக்கெடுப்புக்கு உட்பட்டதல்ல).",
+        "Supreme Court judges' salaries are charged on Consolidated Fund of India; HC judges' salaries on State Consolidated Fund (pension on Union).",
+        "உச்சநீதிமன்ற நீதிபதிகள் சம்பளம் இந்தியத் தொகுப்பு நிதி; உயர்நீதிமன்ற நீதிபதிகள் சம்பளம் மாநிலத் தொகுப்பு நிதி (ஓய்வூதியம் மத்திய நிதி)."
+    ))
+
+    qs.append(make_sch_q(
+        "SCH_M_009", "Medium", "Conceptual", "Second Schedule",
+        "Why is the Attorney General of India NOT listed in the Second Schedule of the Indian Constitution?",
+        "இந்திய அட்டர்னி ஜெனரல் ஏன் இந்திய அரசியலமைப்பின் இரண்டாவது அட்டவணையில் பட்டியலிடப்படவில்லை?",
+        "Because the remuneration of the Attorney General is determined by the President under Article 76(6)",
+        "ஏனெனில் அட்டர்னி ஜெனரலின் ஊதியம் சரத்து 76(6)-ன் கீழ் குடியரசுத் தலைவரால் தீர்மானிக்கப்படுகிறது",
+        "Because the Attorney General does not hold a constitutional post", "ஏனெனில் அட்டர்னி ஜெனரல் ஒரு அரசியலமைப்புப் பதவியை வகிக்கவில்லை",
+        "Because the Attorney General is a civil servant under Article 309", "ஏனெனில் அட்டர்னி ஜெனரல் சரத்து 309-ன் கீழான ஒரு அரசு ஊழியர் ஆவார்",
+        "Because the post was created only through a statutory Act of Parliament", "ஏனெனில் இப்பொறுப்பு பாராளுமன்ற சட்டப்பூர்வ சட்டம் மூலமே உருவாக்கப்பட்டது",
+        "A",
+        "Under Article 76(6), the Attorney General shall receive such remuneration as the President may determine. Since his remuneration is not fixed by Parliament by law or Constitution, he is not included in the Second Schedule.",
+        "சரத்து 76(6)-ன் படி, குடியரசுத் தலைவர் தீர்மானிக்கும் ஊதியத்தை அட்டர்னி ஜெனரல் பெறுவார். இவரது ஊதியம் பாராளுமன்ற சட்டத்தாலோ அல்லது அரசியலமைப்பாலோ நிலையாக நிர்ணயிக்கப்படாததால், அவர் இரண்டாவது அட்டவணையில் இடம்பெறவில்லை.",
+        "Correct. Remuneration is determined by the President under Article 76(6).", "சரியானது. ஊதியம் சரத்து 76(6)-ன் கீழ் குடியரசுத் தலைவரால் நிர்ணயிக்கப்படுகிறது.",
+        "Incorrect. The Attorney General is indeed a constitutional office (Art 76).", "தவறானது. அட்டர்னி ஜெனரல் சரத்து 76-ன் கீழான அரசியலமைப்பு அலுவலகமே.",
+        "Incorrect. AG is not a civil servant under Article 309.", "தவறானது. AG சரத்து 309-ன் கீழான பொது ஊழியர் அல்ல.",
+        "Incorrect. AG is constitutional, not purely statutory.", "தவறானது. AG சட்டப்பூர்வ பதவி அல்ல, அரசியலமைப்புப் பதவி.",
+        "Attorney General holds office during the pleasure of the President; pay fixed by President.",
+        "அட்டர்னி ஜெனரல் குடியரசுத் தலைவரின் விருப்பம் உள்ளவரை பதவியில் இருப்பார்; ஊதியம் குடியரசுத் தலைவரால் நிர்ணயிக்கப்படும்.",
+        "Similarly, the Advocate General of a State (Art 165) receives remuneration determined by the Governor.",
+        "அதேபோல் மாநில அட்வகேட் ஜெனரலின் (சரத்து 165) ஊதியமும் ஆளுநரால் நிர்ணயிக்கப்படுகிறது."
+    ))
+
+    qs.append(make_sch_q(
+        "SCH_M_010", "Medium", "Conceptual", "Second Schedule",
+        "Which Part of the Second Schedule of the Indian Constitution was omitted by the Constitution (7th Amendment) Act, 1956?",
+        "இந்திய அரசியலமைப்பின் இரண்டாவது அட்டவணையின் எந்தப் பகுதி அரசியலமைப்பு (7வது திருத்தம்) சட்டம் 1956-ஆல் நீக்கப்பட்டது?",
+        "Part B", "பகுதி B",
+        "Part A", "பகுதி A",
+        "Part C", "பகுதி C",
+        "Part D", "பகுதி D",
+        "A",
+        "Part B of the Second Schedule contained provisions regarding the salaries and allowances of the Rajpramukhs and ministers of Part B states. When the 7th Amendment Act, 1956 abolished the distinction between Part A and Part B states, Part B was omitted.",
+        "இரண்டாவது அட்டவணையின் பகுதி B, ராஜ்பிரமுகர்கள் மற்றும் பகுதி B மாநிலங்களின் அமைச்சர்களின் ஊதியங்கள் பற்றிய விதிகளைக் கொண்டிருந்தது. 7வது திருத்தச் சட்டம் 1956 பகுதி A மற்றும் பகுதி B மாநிலங்களுக்கு இடையிலான வேறுபாட்டை நீக்கியபோது பகுதி B நீக்கப்பட்டது.",
+        "Correct. Part B was omitted by the 7th Constitutional Amendment Act, 1956.", "சரியானது. பகுதி B 7வது திருத்தச் சட்டம் 1956-ஆல் நீக்கப்பட்டது.",
+        "Incorrect. Part A relates to President and Governors and is active.", "தவறானது. பகுதி A குடியரசுத் தலைவர் மற்றும் ஆளுநர்களைக் குறிக்கிறது, அது நடைமுறையில் உள்ளது.",
+        "Incorrect. Part C relates to Presiding Officers and is active.", "தவறானது. பகுதி C அவைத் தலைவர்களைக் குறிக்கிறது, அது நடைமுறையில் உள்ளது.",
+        "Incorrect. Part D relates to Judges and is active.", "தவறானது. பகுதி D நீதிபதிகளைக் குறிக்கிறது, அது நடைமுறையில் உள்ளது.",
+        "Part B of Second Schedule was repealed by 7th CAA 1956.",
+        "இரண்டாவது அட்டவணையின் பகுதி B 7வது திருத்தம் 1956-ஆல் ரத்து செய்யப்பட்டது.",
+        "Currently, Second Schedule has Part A, Part C, Part D, and Part E.",
+        "தற்போது இரண்டாவது அட்டவணையில் பகுதி A, பகுதி C, பகுதி D மற்றும் பகுதி E மட்டுமே உள்ளன."
+    ))
+
+    # M11 - M15: Third Schedule Details & Specific Oaths
+    qs.append(make_sch_q(
+        "SCH_M_011", "Medium", "Conceptual", "Third Schedule",
+        "How many distinct forms of Oaths or Affirmations are prescribed under the Third Schedule of the Indian Constitution?",
+        "இந்திய அரசியலமைப்பின் மூன்றாவது அட்டவணையின் கீழ் எத்தனை தனித்துவமான பிரமாண அல்லது உறுதியேற்பு படிவங்கள் பரிந்துரைக்கப்பட்டுள்ளன?",
+        "8 forms", "8 படிவங்கள்",
+        "5 forms", "5 படிவங்கள்",
+        "10 forms", "10 படிவங்கள்",
+        "12 forms", "12 படிவங்கள்",
+        "A",
+        "The Third Schedule contains exactly 8 forms of oaths/affirmations: 1. Union Minister of office, 2. Union Minister of secrecy, 3. Candidate for Parliament, 4. Member of Parliament, 5. Supreme Court Judge & CAG, 6. State Minister of office and secrecy, 7. Candidate for State Legislature, 8. Member of State Legislature & High Court Judge.",
+        "மூன்றாவது அட்டவணையில் சரியாக 8 வகையான பிரமாண படிவங்கள் உள்ளன: 1. மத்திய அமைச்சர் பதவிப் பிரமாணம், 2. மத்திய அமைச்சர் ரகசியப் பிரமாணம், 3. பாராளுமன்ற வேட்பாளர், 4. பாராளுமன்ற உறுப்பினர், 5. உச்சநீதிமன்ற நீதிபதி & CAG, 6. மாநில அமைச்சர், 7. மாநில சட்டமன்ற வேட்பாளர், 8. மாநில சட்டமன்ற உறுப்பினர் & உயர்நீதிமன்ற நீதிபதி.",
+        "Correct. Exactly 8 forms of oaths are in the Third Schedule.", "சரியானது. சரியாக 8 படிவங்கள் மூன்றாவது அட்டவணையில் உள்ளன.",
+        "Incorrect. 5 forms is an undercount.", "தவறானது. 5 படிவங்கள் என்பது குறைவான எண்ணிக்கை.",
+        "Incorrect. 10 forms is incorrect.", "தவறானது. 10 படிவங்கள் என்பது தவறானது.",
+        "Incorrect. 12 forms confuses the number of schedules.", "தவறானது. 12 என்பது அட்டவணைகளின் எண்ணிக்கையைக் குறிக்கும் குழப்பம்.",
+        "Third Schedule contains 8 forms of Oaths and Affirmations.",
+        "மூன்றாவது அட்டவணை 8 வகையான பிரமாண படிவங்களைக் கொண்டுள்ளது.",
+        "Oaths of President (Art 60), VP (Art 69), and Governor (Art 159) are not in the Third Schedule.",
+        "குடியரசுத் தலைவர் (சரத்து 60), துணைக் குடியரசுத் தலைவர் (சரத்து 69), ஆளுநர் (சரத்து 159) பிரமாணங்கள் 3வது அட்டவணையில் இல்லை."
+    ))
+
+    qs.append(make_sch_q(
+        "SCH_M_012", "Medium", "Conceptual", "Third Schedule",
+        "By which Constitutional Amendment Act was the oath form in the Third Schedule amended to include an explicit pledge to 'uphold the sovereignty and integrity of India'?",
+        "இந்தியாவின் 'இறையாண்மையையும் ஒருமைப்பாட்டையும் நிலைநிறுத்துவேன்' என்ற உறுதிமொழியை மூன்றாவது அட்டவணையின் பிரமாணத்தில் சேர்க்க எந்த அரசியலமைப்புத் திருத்தச் சட்டம் கொண்டுவரப்பட்டது?",
+        "16th Constitutional Amendment Act, 1963", "16வது அரசியலமைப்புத் திருத்தச் சட்டம், 1963",
+        "42nd Constitutional Amendment Act, 1976", "42வது அரசியலமைப்புத் திருத்தச் சட்டம், 1976",
+        "44th Constitutional Amendment Act, 1978", "44வது அரசியலமைப்புத் திருத்தச் சட்டம், 1978",
+        "24th Constitutional Amendment Act, 1971", "24வது அரசியலமைப்புத் திருத்தச் சட்டம், 1971",
+        "A",
+        "The 16th Constitutional Amendment Act, 1963 amended the Third Schedule to insert the words 'uphold the sovereignty and integrity of India' into the forms of oath for election candidates, MPs, MLAs, Ministers, and Judges, following recommendations of the Committee on National Integration and Regionalism.",
+        "தேசிய ஒருமைப்பாடு குழுவின் பரிந்துரைகளைத் தொடர்ந்து, 16வது அரசியலமைப்புத் திருத்தச் சட்டம் 1963, மூன்றாவது அட்டவணையின் பிரமாணப் படிவங்களில் 'இந்தியாவின் இறையாண்மையையும் ஒருமைப்பாட்டையும் நிலைநிறுத்துவேன்' என்ற சொற்களைச் சேர்த்தது.",
+        "Correct. 16th CAA 1963 introduced 'sovereignty and integrity of India' in oaths.", "சரியானது. 16வது திருத்தம் 1963 'இறையாண்மையையும் ஒருமைப்பாட்டையும்' பிரமாணத்தில் சேர்த்தது.",
+        "Incorrect. 42nd CAA 1976 added 'Secular, Socialist, Integrity' to the Preamble.", "தவறானது. 42வது திருத்தம் 1976 முகப்புரையில் 'மதச்சார்பற்ற, சமதர்ம, ஒருமைப்பாடு' சொற்களைச் சேர்த்தது.",
+        "Incorrect. 44th CAA 1978 restored civil liberties after Emergency.", "தவறானது. 44வது திருத்தம் 1978 அவசரநிலைக்குப் பிந்தைய உரிமைகளை மீட்டெடுத்தது.",
+        "Incorrect. 24th CAA 1971 amended Article 368.", "தவறானது. 24வது திருத்தம் 1971 சரத்து 368-ஐத் திருத்தியது.",
+        "16th CAA 1963 added 'sovereignty and integrity' to 3rd Schedule oaths and Art 19(2).",
+        "16வது திருத்தம் 1963 மூன்றாவது அட்டவணை பிரமாணங்கள் மற்றும் சரத்து 19(2)-ல் இறையாண்மை & ஒருமைப்பாட்டைச் சேர்த்தது.",
+        "It also made it mandatory for election candidates to take an oath before scrutiny of nomination papers.",
+        "இது வேட்புமனு பரிசீலனைக்கு முன்பே வேட்பாளர்கள் உறுதிமொழி எடுப்பதையும் கட்டாயமாக்கியது."
+    ))
+
+    qs.append(make_sch_q(
+        "SCH_M_013", "Medium", "Conceptual", "Third Schedule",
+        "Who among the following takes TWO separate oaths under the Third Schedule—one of Office and one of Secrecy?",
+        "மூன்றாவது அட்டவணையின் கீழ் பதவிப் பிரமாணம் மற்றும் ரகசியக் காப்புப் பிரமாணம் என இரண்டு தனித்தனி பிரமாணங்களை எடுப்பவர் யார்?",
+        "Union Ministers and State Ministers", "மத்திய அமைச்சர்கள் மற்றும் மாநில அமைச்சர்கள்",
+        "Members of Parliament", "பாராளுமன்ற உறுப்பினர்கள்",
+        "Judges of the Supreme Court", "உச்சநீதிமன்ற நீதிபதிகள்",
+        "Comptroller and Auditor-General of India", "இந்தியத் தலைமைக் கணக்குத் தணிக்கையாளர் (CAG)",
+        "A",
+        "Ministers (both Union Ministers under Art 75 and State Ministers under Art 164) take two distinct oaths prescribed in the Third Schedule: an Oath of Office and an Oath of Secrecy. Members of Parliament, Judges, and the CAG take only one oath of office.",
+        "அமைச்சர்கள் மட்டுமே (மத்திய அமைச்சர்கள் சரத்து 75 மற்றும் மாநில அமைச்சர்கள் சரத்து 164) மூன்றாவது அட்டவணையின் கீழ் பதவிப் பிரமாணம் மற்றும் ரகசியக் காப்புப் பிரமாணம் என இரண்டு பிரமாணங்களை எடுக்கின்றனர். எம்.பி.க்கள், நீதிபதிகள் மற்றும் CAG ஒரே பதவிப் பிரமாணத்தை மட்டுமே எடுக்கின்றனர்.",
+        "Correct. Only Ministers take both Oath of Office and Oath of Secrecy.", "சரியானது. அமைச்சர்கள் மட்டுமே பதவி மற்றும் ரகசியக் காப்பு ஆகிய இரு பிரமாணங்களையும் எடுக்கின்றனர்.",
+        "Incorrect. MPs take only an Oath of Office.", "தவறானது. எம்.பி.க்கள் பதவிப் பிரமாணத்தை மட்டுமே எடுக்கின்றனர்.",
+        "Incorrect. SC Judges take only an Oath of Office.", "தவறானது. உச்சநீதிமன்ற நீதிபதிகள் பதவிப் பிரமாணத்தை மட்டுமே எடுக்கின்றனர்.",
+        "Incorrect. CAG takes only an Oath of Office.", "தவறானது. CAG பதவிப் பிரமாணத்தை மட்டுமே எடுக்கிறார்.",
+        "Two oaths in 3rd Schedule (Office + Secrecy): Union Ministers & State Ministers.",
+        "3வது அட்டவணையில் 2 பிரமாணங்கள் (பதவி + ரகசியம்): மத்திய & மாநில அமைச்சர்கள்.",
+        "Judges take oath to perform duties without fear or favour, affection or ill-will, and uphold the Constitution.",
+        "நீதிபதிகள் விருப்பு வெறுப்பின்றி, பயமின்றி அரசியலமைப்பை நிலைநிறுத்துவதாக உறுதிமொழி ஏற்கின்றனர்."
+    ))
+
+    qs.append(make_sch_q(
+        "SCH_M_014", "Medium", "Conceptual", "Third Schedule",
+        "Under the Third Schedule, the oath of the Comptroller and Auditor-General of India is identical to the form of oath prescribed for:",
+        "மூன்றாவது அட்டவணையின் கீழ், இந்தியத் தலைமைக் கணக்குத் தணிக்கையாளரின் (CAG) பிரமாணப் படிவம் யாருக்காகப் பரிந்துரைக்கப்பட்ட படிவத்திற்கு ஒத்ததாகும்?",
+        "Judges of the Supreme Court of India", "இந்திய உச்சநீதிமன்ற நீதிபதிகள்",
+        "Attorney General of India", "இந்திய அட்டர்னி ஜெனரல்",
+        "Speaker of the Lok Sabha", "மக்களவைத் தலைவர்",
+        "Chief Election Commissioner of India", "இந்தியத் தலைமைத் தேர்தல் ஆணையர்",
+        "A",
+        "In the Third Schedule, Form IV is prescribed for Judges of the Supreme Court and the Comptroller and Auditor-General of India. Both swear to bear true faith and allegiance to the Constitution, uphold sovereignty and integrity, and perform duties without fear or favour, affection or ill-will.",
+        "மூன்றாவது அட்டவணையில், படிவம் IV என்பது உச்சநீதிமன்ற நீதிபதிகள் மற்றும் இந்தியத் தலைமைக் கணக்குத் தணிக்கையாளருக்கு (CAG) பொதுவான படிவமாகும். இருவரும் அச்சமோ பாரபட்சமோ இன்றி, விருப்பு வெறுப்பின்றி கடமையாற்றுவதாக உறுதியேற்கின்றனர்.",
+        "Correct. CAG oath is identical in form to that of Supreme Court Judges.", "சரியானது. CAG பிரமாணம் உச்சநீதிமன்ற நீதிபதிகளின் பிரமாணப் படிவத்திற்கு ஒத்ததாகும்.",
+        "Incorrect. Attorney General does not have an oath in Third Schedule.", "தவறானது. அட்டர்னி ஜெனரலுக்கு மூன்றாவது அட்டவணையில் பிரமாணம் இல்லை.",
+        "Incorrect. Lok Sabha Speaker takes oath merely as an MP, not as Speaker.", "தவறானது. மக்களவைத் தலைவர் எம்.பி.யாக மட்டுமே பிரமாணம் ஏற்கிறார், தனிப் பிரமாணம் இல்லை.",
+        "Incorrect. CEC is not included in the Third Schedule.", "தவறானது. CEC மூன்றாவது அட்டவணையில் இடம்பெறவில்லை.",
+        "Third Schedule: SC Judges and CAG share Form IV of oath.",
+        "மூன்றாவது அட்டவணை: உச்சநீதிமன்ற நீதிபதிகளும் CAG-யும் படிவம் IV-ஐப் பகிர்ந்து கொள்கின்றனர்.",
+        "Lok Sabha Speaker takes oath as a Member of Parliament; there is no separate oath for the office of Speaker.",
+        "மக்களவைத் தலைவர் எம்.பி.யாகவே உறுதிமொழி ஏற்கிறார்; சபாநாயகர் பதவிக்கென தனிப் பிரமாணம் கிடையாது."
+    ))
+
+    qs.append(make_sch_q(
+        "SCH_M_015", "Medium", "Conceptual", "Third Schedule",
+        "At what stage must a candidate standing for election to Parliament or a State Legislature subscribe to the oath under the Third Schedule?",
+        "பாராளுமன்றம் அல்லது மாநில சட்டமன்றத் தேர்தலில் போட்டியிடும் ஒரு வேட்பாளர் மூன்றாவது அட்டவணையின்படி எந்தக் கட்டத்தில் உறுதிமொழி எடுக்க வேண்டும்?",
+        "Before the authorized returning officer before the scrutiny of nomination papers",
+        "வேட்புமனுக்கள் பரிசீலனை செய்யப்படுவதற்கு முன்னதாக அங்கீகரிக்கப்பட்ட தேர்தல் அதிகாரியிடம்",
+        "Immediately upon winning the election, before entering the legislative chamber",
+        "தேர்தலில் வெற்றி பெற்ற உடனே, சட்டமன்ற அவைக்குள் நுழைவதற்கு முன்",
+        "At the time of declaration of election results by the Election Commission",
+        "தேர்தல் ஆணையம் தேர்தல் முடிவுகளை அறிவிக்கும் நேரத்தில்",
+        "Only when the newly elected house convenes its first session",
+        "புதிதாக தேர்ந்தெடுக்கப்பட்ட அவை தனது முதல் கூட்டத்தை கூட்டும் போது மட்டுமே",
+        "A",
+        "Under Articles 84(a) and 173(a), as amended by the 16th CAA 1963, a person is disqualified from being chosen to fill a seat unless he subscribes to an oath set out in the Third Schedule before an authorized person before the scrutiny of nominations.",
+        "16வது திருத்தம் 1963-ஆல் திருத்தப்பட்ட சரத்து 84(a) மற்றும் 173(a)-ன் படி, வேட்புமனு பரிசீலனைக்கு முன்னதாக அதிகாரமளிக்கப்பட்ட அதிகாரியிடம் 3வது அட்டவணையின்படி உறுதிமொழி எடுக்காவிட்டால் அவர் தேர்தலில் போட்டியிட தகுதியற்றவர் ஆவார்.",
+        "Correct. Oath must be taken before scrutiny of nominations.", "சரியானது. வேட்புமனு பரிசீலனைக்கு முன்பே உறுதிமொழி எடுக்கப்பட வேண்டும்.",
+        "Incorrect. That is the stage for oath as an elected member, not as a candidate.", "தவறானது. அது தேர்ந்தெடுக்கப்பட்ட உறுப்பினருக்கானது, வேட்பாளருக்கானது அல்ல.",
+        "Incorrect. Declaration of results is too late for candidate eligibility.", "தவறானது. முடிவுகள் அறிவிக்கும் போது உறுதிமொழி ஏற்பது தகுதிக்கு பொருந்தாது.",
+        "Incorrect. First session is when elected MPs/MLAs take oath.", "தவறானது. முதல் அமர்வு என்பது தேர்ந்தெடுக்கப்பட்ட எம்.பி./எம்.எல்.ஏக்கள் பிரமாணம் ஏற்கும் இடமாகும்.",
+        "Election Candidates take oath at nomination stage before Returning Officer.",
+        "தேர்தல் வேட்பாளர்கள் வேட்புமனு கட்டத்திலேயே தேர்தல் அதிகாரியிடம் பிரமாணம் ஏற்க வேண்டும்.",
+        "Failure to take this oath before scrutiny invalidates the nomination paper.",
+        "பரிசீலனைக்கு முன் இந்த உறுதிமொழியை எடுக்கத் தவறினால் வேட்புமனு நிராகரிக்கப்படும்."
+    ))
+
+    # M16 - M20: Fourth Schedule Details & Representation
+    qs.append(make_sch_q(
+        "SCH_M_016", "Medium", "Conceptual", "Fourth Schedule",
+        "The allocation of seats in the Rajya Sabha to the States and Union Territories in the Fourth Schedule is based on which population census, and until which year is it currently frozen?",
+        "நான்காவது அட்டவணையில் மாநிலங்கள் மற்றும் யூனியன் பிரதேசங்களுக்கு மாநிலங்களவை இடங்கள் ஒதுக்கீடு எந்த மக்கள் தொகை கணக்கெடுப்பின் அடிப்படையில் அமைந்துள்ளது, மேலும் எந்த ஆண்டு வரை முடக்கப்பட்டுள்ளது?",
+        "1971 Census, frozen until the first census taken after the year 2026",
+        "1971 மக்கள் தொகை கணக்கெடுப்பு, 2026-க்குப் பிறகு எடுக்கப்படும் முதல் கணக்கெடுப்பு வரை முடக்கப்பட்டுள்ளது",
+        "2001 Census, frozen until 2031", "2001 மக்கள் தொகை கணக்கெடுப்பு, 2031 வரை முடக்கப்பட்டுள்ளது",
+        "2011 Census, frozen until 2025", "2011 மக்கள் தொகை கணக்கெடுப்பு, 2025 வரை முடக்கப்பட்டுள்ளது",
+        "1991 Census, frozen until 2026", "1991 மக்கள் தொகை கணக்கெடுப்பு, 2026 வரை முடக்கப்பட்டுள்ளது",
+        "A",
+        "The allocation of Rajya Sabha seats across States and UTs in the Fourth Schedule is based on the 1971 Census population. By the 84th Constitutional Amendment Act, 2001, this allocation was frozen until the first census after 2026.",
+        "நான்காவது அட்டவணையில் மாநிலங்களவை இடங்கள் 1971 மக்கள் தொகை கணக்கெடுப்பின் அடிப்படையில் ஒதுக்கப்பட்டுள்ளன. 84வது அரசியலமைப்புத் திருத்தச் சட்டம் 2001-ன் மூலம், இந்த ஒதுக்கீடு 2026-க்குப் பிந்தைய முதல் மக்கள் தொகை கணக்கெடுப்பு வரை முடக்கப்பட்டுள்ளது.",
+        "Correct. 1971 census population frozen until first census post-2026.", "சரியானது. 1971 கணக்கெடுப்பு 2026-க்குப் பிந்தைய முதல் கணக்கெடுப்பு வரை முடக்கப்பட்டுள்ளது.",
+        "Incorrect. 2001 census was used only for delimitation of constituencies within states.", "தவறானது. 2001 கணக்கெடுப்பு மாநிலங்களுக்குள் தொகுதி மறுசீரமைப்பிற்கு மட்டுமே பயன்படுத்தப்பட்டது.",
+        "Incorrect. 2011 census is not the basis of inter-state seat allocation.", "தவறானது. 2011 கணக்கெடுப்பு மாநிலங்களுக்கிடையேயான இட ஒதுக்கீட்டின் அடிப்படை அல்ல.",
+        "Incorrect. 1991 census was briefly considered under the 87th amendment discussions.", "தவறானது. 1991 கணக்கெடுப்பு மாநில இடப் பகிர்வுக்கு அடிப்படை அல்ல.",
+        "4th Schedule seat distribution: Based on 1971 census, frozen till post-2026 by 84th CAA 2001.",
+        "4வது அட்டவணை இட ஒதுக்கீடு: 1971 கணக்கெடுப்பு அடிப்படை, 84வது திருத்தம் 2001 மூலம் 2026 வரை முடக்கம்.",
+        "84th CAA 2001 extended the freeze originally imposed by the 42nd CAA 1976.",
+        "84வது திருத்தம் 2001, முன்னதாக 42வது திருத்தம் 1976-ஆல் விதிக்கப்பட்ட முடக்கத்தை நீடித்தது."
+    ))
+
+    qs.append(make_sch_q(
+        "SCH_M_017", "Medium", "Conceptual", "Fourth Schedule",
+        "Which of the following groups of North-Eastern States each have exactly ONE seat allocated in the Rajya Sabha under the Fourth Schedule?",
+        "நான்காவது அட்டவணையின் கீழ் தலா சரியாக ஒரு மாநிலங்களவை இடத்தை மட்டுமே கொண்டுள்ள வடகிழக்கு மாநிலங்களின் குழு எது?",
+        "Arunachal Pradesh, Manipur, Meghalaya, Mizoram, Nagaland, and Tripura",
+        "அருணாச்சலப் பிரதேசம், மணிப்பூர், மேகாலயா, மிசோரம், நாகாலாந்து மற்றும் திரிபுரா",
+        "Assam, Manipur, Meghalaya, and Sikkim", "அசாம், மணிப்பூர், மேகாலயா மற்றும் சிக்கிம்",
+        "Tripura, Mizoram, Nagaland, and Assam", "திரிபுரா, மிசோரம், நாகாலாந்து மற்றும் அசாம்",
+        "Arunachal Pradesh, Assam, and Meghalaya", "அருணாச்சலப் பிரதேசம், அசாம் மற்றும் மேகாலயா",
+        "A",
+        "In the Fourth Schedule, all North-Eastern states except Assam (which has 7 seats) have exactly 1 seat in Rajya Sabha: Arunachal Pradesh (1), Manipur (1), Meghalaya (1), Mizoram (1), Nagaland (1), Tripura (1), and Sikkim (1).",
+        "நான்காவது அட்டவணையில், அசாம் (7 இடங்கள்) தவிர மற்ற அனைத்து வடகிழக்கு மாநிலங்களும் மாநிலங்களவையில் தலா 1 இடத்தை மட்டுமே கொண்டுள்ளன: அருணாச்சல் (1), மணிப்பூர் (1), மேகாலயா (1), மிசோரம் (1), நாகாலாந்து (1), திரிபுரா (1), மற்றும் சிக்கிம் (1).",
+        "Correct. These North-Eastern states have 1 seat each; Assam has 7.", "சரியானது. இந்த வடகிழக்கு மாநிலங்கள் தலா 1 இடத்தைக் கொண்டுள்ளன; அசாம் 7 இடங்களைக் கொண்டுள்ளது.",
+        "Incorrect. Assam has 7 seats, not 1 seat.", "தவறானது. அசாம் 1 அல்ல, 7 இடங்களைக் கொண்டுள்ளது.",
+        "Incorrect. Assam has 7 seats.", "தவறானது. அசாம் 7 இடங்களைக் கொண்டுள்ளது.",
+        "Incorrect. Assam is included here which has 7 seats.", "தவறானது. 7 இடங்களைக் கொண்ட அசாம் இதில் சேர்க்கப்பட்டுள்ளது.",
+        "Rajya Sabha seats: Assam has 7; remaining 7 NE states + Sikkim have 1 seat each.",
+        "மாநிலங்களவை இடங்கள்: அசாம் 7; மீதமுள்ள 7 வடகிழக்கு மாநிலங்கள் + சிக்கிம் தலா 1 இடம்.",
+        "Goa and Puducherry also have exactly 1 seat in Rajya Sabha.",
+        "கோவா மற்றும் புதுச்சேரியும் மாநிலங்களவையில் சரியாக 1 இடத்தை மட்டுமே கொண்டுள்ளன."
+    ))
+
+    qs.append(make_sch_q(
+        "SCH_M_018", "Medium", "Conceptual", "Fourth Schedule",
+        "Unlike the United States Senate which provides equal representation (2 seats) to every State regardless of size, the Fourth Schedule of India allocates seats to States based on:",
+        "அமெரிக்க செனட் ஒவ்வொரு மாநிலத்திற்கும் சமமான பிரதிநிதித்துவம் (2 இடங்கள்) வழங்குவது போலல்லாமல், இந்தியாவின் நான்காவது அட்டவணை மாநிலங்களுக்கு இடங்களை எதன் அடிப்படையில் ஒதுக்குகிறது?",
+        "Population of each State, with smaller states given proportionately higher weightage",
+        "ஒவ்வொரு மாநிலத்தின் மக்கள் தொகை அடிப்படையில், சிறிய மாநிலங்களுக்கு விகிதாசாரப்படி கூடுதல் முக்கியத்துவத்துடன்",
+        "Equal representation of 5 seats to every State", "ஒவ்வொரு மாநிலத்திற்கும் சமமாக 5 இடங்கள்",
+        "Land area and geographical size of each State", "ஒவ்வொரு மாநிலத்தின் நிலப்பரப்பு மற்றும் புவியியல் அளவு அடிப்படையில்",
+        "State gross domestic product (SGDP) contribution", "மாநிலத்தின் மொத்த உள்நாட்டு உற்பத்தி (SGDP) பங்களிப்பு அடிப்படையில்",
+        "A",
+        "In India, Rajya Sabha seats are allocated on the basis of population of each state. However, to protect smaller states, the allocation formula does not follow strict proportionality; smaller states receive slightly higher representation per capita compared to giant states.",
+        "இந்தியாவில், மாநிலங்களவை இடங்கள் மக்கள் தொகை அடிப்படையில் ஒதுக்கப்படுகின்றன. இருப்பினும், சிறிய மாநிலங்களைப் பாதுகாக்க, நேரடி விகிதாசாரம் பின்பற்றப்படாமல் சிறிய மாநிலங்களுக்கு சற்றே அதிக பிரதிநிதித்துவம் கிடைக்கும் வகையில் சூத்திரம் அமைக்கப்பட்டுள்ளது.",
+        "Correct. Based on population, giving weighted representation to smaller states.", "சரியானது. மக்கள் தொகை அடிப்படை, சிறிய மாநிலங்களுக்கு கூடுதல் முக்கியத்துவம்.",
+        "Incorrect. India does not follow equal state representation like the US Senate.", "தவறானது. அமெரிக்கா போல சமமான மாநிலப் பிரதிநிதித்துவத்தை இந்தியா பின்பற்றவில்லை.",
+        "Incorrect. Geographical area is not the basis of seat allocation.", "தவறானது. நிலப்பரப்பு இட ஒதுக்கீட்டின் அடிப்படை அல்ல.",
+        "Incorrect. GDP contribution plays no role in seat distribution.", "தவறானது. GDP பங்களிப்பு இட ஒதுக்கீட்டில் எந்தப் பங்கையும் வகிக்கவில்லை.",
+        "Fourth Schedule: Population-based, unequal representation of states in Council of States.",
+        "நான்காவது அட்டவணை: மக்கள் தொகை அடிப்படை, மாநிலங்களவையில் மாநிலங்களுக்கு சமமற்ற பிரதிநிதித்துவம்.",
+        "Article 80(2) states that the allocation of seats shall be in accordance with the provisions of the Fourth Schedule.",
+        "சரத்து 80(2) இட ஒதுக்கீடு நான்காவது அட்டவணையின் விதிகளின்படி இருக்க வேண்டும் என்று கூறுகிறது."
+    ))
+
+    qs.append(make_sch_q(
+        "SCH_M_019", "Medium", "Conceptual", "Fourth Schedule",
+        "Following the Jammu and Kashmir Reorganisation Act, 2019, how many seats in the Rajya Sabha are allocated to the Union Territory of Jammu and Kashmir under the Fourth Schedule?",
+        "ஜம்மு காஷ்மீர் மறுசீரமைப்புச் சட்டம் 2019-க்குப் பிறகு, நான்காவது அட்டவணையின் கீழ் ஜம்மு காஷ்மீர் யூனியன் பிரதேசத்திற்கு எத்தனை மாநிலங்களவை இடங்கள் ஒதுக்கப்பட்டுள்ளன?",
+        "4 seats", "4 இடங்கள்",
+        "3 seats", "3 இடங்கள்",
+        "2 seats", "2 இடங்கள்",
+        "1 seat", "1 இடம்",
+        "A",
+        "Under the Jammu and Kashmir Reorganisation Act, 2019, the Union Territory of Jammu and Kashmir was allocated 4 seats in the Rajya Sabha (while the UT of Ladakh has no representation in the Rajya Sabha).",
+        "ஜம்மு காஷ்மீர் மறுசீரமைப்புச் சட்டம் 2019-ன் கீழ், ஜம்மு காஷ்மீர் யூனியன் பிரதேசத்திற்கு மாநிலங்களவையில் 4 இடங்கள் ஒதுக்கப்பட்டுள்ளன (லடாக் யூனியன் பிரதேசத்திற்கு மாநிலங்களவையில் இட ஒதுக்கீடு இல்லை).",
+        "Correct. UT of J&K has 4 seats in Rajya Sabha.", "சரியானது. ஜம்மு காஷ்மீர் யூனியன் பிரதேசத்திற்கு 4 இடங்கள் உள்ளன.",
+        "Incorrect. Delhi has 3 seats, not J&K.", "தவறானது. டெல்லிக்கு 3 இடங்கள் உள்ளன, ஜம்மு காஷ்மீருக்கு அல்ல.",
+        "Incorrect. No UT has 2 seats.", "தவறானது. எந்த UT-க்கும் 2 இடங்கள் இல்லை.",
+        "Incorrect. Puducherry has 1 seat, not J&K.", "தவறானது. புதுச்சேரிக்கு 1 இடம் உள்ளது, ஜம்மு காஷ்மீருக்கு அல்ல.",
+        "UT representation in RS: Delhi (3), Puducherry (1), J&K (4) = Total 8 seats from UTs.",
+        "மாநிலங்களவையில் UT பிரதிநிதித்துவம்: டெல்லி (3), புதுச்சேரி (1), J&K (4) = மொத்தம் 8 இடங்கள்.",
+        "Other 5 UTs (Ladakh, Chandigarh, Lakshadweep, Andaman & Nicobar, DNH & DD) have no RS seats due to lack of legislative assemblies.",
+        "சட்டமன்றம் இல்லாததால் மற்ற 5 யூனியன் பிரதேசங்களுக்கு மாநிலங்களவை இடங்கள் இல்லை."
+    ))
+
+    qs.append(make_sch_q(
+        "SCH_M_020", "Medium", "Conceptual", "Fourth Schedule",
+        "Which two States have the exact same number of seats (11 seats each) allocated in the Rajya Sabha under the Fourth Schedule?",
+        "நான்காவது அட்டவணையின் கீழ் மாநிலங்களவையில் சமமாக தலா 11 இடங்கள் ஒதுக்கப்பட்டுள்ள இரு மாநிலங்கள் எவை?",
+        "Madhya Pradesh and Gujarat (and Andhra Pradesh)", "மத்தியப் பிரதேசம் மற்றும் குஜராத் (மற்றும் ஆந்திரப் பிரதேசம்)",
+        "Tamil Nadu and Karnataka", "தமிழ்நாடு மற்றும் கர்நாடகா",
+        "Kerala and Punjab", "கேரளா மற்றும் பஞ்சாப்",
+        "Rajasthan and Odisha", "ராஜஸ்தான் மற்றும் ஒடிசா",
+        "A",
+        "In the Fourth Schedule, Andhra Pradesh, Gujarat, and Madhya Pradesh each have 11 seats in the Rajya Sabha. Rajasthan and Odisha each have 10 seats. Kerala has 9 seats and Punjab has 7 seats. Tamil Nadu has 18 and Karnataka has 12.",
+        "நான்காவது அட்டவணையில், ஆந்திரப் பிரதேசம், குஜராத் மற்றும் மத்தியப் பிரதேசம் ஆகிய மூன்று மாநிலங்களும் தலா 11 மாநிலங்களவை இடங்களைக் கொண்டுள்ளன. ராஜஸ்தான் மற்றும் ஒடிசா தலா 10 இடங்களையும், கேரளா 9 இடங்களையும், பஞ்சாப் 7 இடங்களையும் கொண்டுள்ளன.",
+        "Correct. MP, Gujarat, and AP each have 11 seats.", "சரியானது. மத்தியப் பிரதேசம், குஜராத் மற்றும் ஆந்திரா தலா 11 இடங்களைக் கொண்டுள்ளன.",
+        "Incorrect. Tamil Nadu has 18 seats while Karnataka has 12 seats.", "தவறானது. தமிழ்நாடு 18 இடங்களையும் கர்நாடகா 12 இடங்களையும் கொண்டுள்ளன.",
+        "Incorrect. Kerala has 9 seats and Punjab has 7 seats.", "தவறானது. கேரளா 9 இடங்களையும் பஞ்சாப் 7 இடங்களையும் கொண்டுள்ளன.",
+        "Incorrect. Rajasthan and Odisha each have 10 seats, not 11.", "தவறானது. ராஜஸ்தான் மற்றும் ஒடிசா தலா 10 இடங்களைக் கொண்டுள்ளன, 11 அல்ல.",
+        "11 seats in RS: Andhra Pradesh, Gujarat, Madhya Pradesh.",
+        "மாநிலங்களவையில் 11 இடங்கள்: ஆந்திரப் பிரதேசம், குஜராத், மத்தியப் பிரதேசம்.",
+        "10 seats in RS: Rajasthan and Odisha.",
+        "மாநிலங்களவையில் 10 இடங்கள்: ராஜஸ்தான் மற்றும் ஒடிசா."
+    ))
+
+    # M21 - M25: Fifth Schedule Powers & TAC
+    qs.append(make_sch_q(
+        "SCH_M_021", "Medium", "Conceptual", "Fifth Schedule",
+        "Under Paragraph 4 of the Fifth Schedule, what is the maximum membership of a Tribes Advisory Council (TAC), and what fraction of members must be representatives of Scheduled Tribes in the State Legislative Assembly?",
+        "ஐந்தாவது அட்டவணையின் பத்தி 4-ன் கீழ், பழங்குடியினர் ஆலோசனைக் குழுவின் (TAC) அதிகபட்ச உறுப்பினர் எண்ணிக்கை என்ன, மற்றும் அதில் எத்தனை பங்கு உறுப்பினர்கள் மாநில சட்டமன்ற ST உறுப்பினர்களாக இருக்க வேண்டும்?",
+        "Maximum 20 members, of which at least three-fourths must be ST MLAs",
+        "அதிகபட்சம் 20 உறுப்பினர்கள், அதில் குறைந்தது நான்கில் மூன்று பங்கு (3/4) ST சட்டமன்ற உறுப்பினர்களாக இருக்க வேண்டும்",
+        "Maximum 30 members, of which at least two-thirds must be ST MLAs",
+        "அதிகபட்சம் 30 உறுப்பினர்கள், அதில் குறைந்தது மூன்றில் இரண்டு பங்கு (2/3) ST சட்டமன்ற உறுப்பினர்களாக இருக்க வேண்டும்",
+        "Maximum 15 members, of which at least one-half must be ST MLAs",
+        "அதிகபட்சம் 15 உறுப்பினர்கள், அதில் குறைந்தது பாதியளவு (1/2) ST சட்டமன்ற உறுப்பினர்களாக இருக்க வேண்டும்",
+        "Maximum 25 members, nominated entirely by the Governor",
+        "அதிகபட்சம் 25 உறுப்பினர்கள், அனைவரும் ஆளுநரால் நியமிக்கப்பட வேண்டும்",
+        "A",
+        "Under Paragraph 4(1) of the Fifth Schedule, each State having Scheduled Areas must establish a Tribes Advisory Council consisting of not more than twenty members, of whom, as nearly as may be, three-fourths shall be the representatives of the Scheduled Tribes in the Legislative Assembly of the State.",
+        "ஐந்தாவது அட்டவணையின் பத்தி 4(1)-ன் படி, அட்டவணைப்படுத்தப்பட்ட பகுதிகளைக் கொண்ட ஒவ்வொரு மாநிலமும் 20 பேருக்கு மிகாமல் ஒரு பழங்குடியினர் ஆலோசனைக் குழுவை அமைக்க வேண்டும்; இதில் சுமார் நான்கில் மூன்று பங்கு (3/4) உறுப்பினர்கள் மாநில சட்டமன்றத்தின் ST பிரதிநிதிகளாக இருக்க வேண்டும்.",
+        "Correct. Max 20 members, at least 3/4th ST MLAs.", "சரியானது. அதிகபட்சம் 20 உறுப்பினர்கள், குறைந்தது 3/4 பங்கு ST சட்டமன்ற உறுப்பினர்கள்.",
+        "Incorrect. 30 members is the strength of Sixth Schedule District Councils, not TAC.", "தவறானது. 30 என்பது 6வது அட்டவணை மாவட்டக் கவுன்சிலின் எண்ணிக்கை, TAC அல்ல.",
+        "Incorrect. 15 members is incorrect.", "தவறானது. 15 உறுப்பினர்கள் என்பது தவறானது.",
+        "Incorrect. Members are not entirely nominated by the Governor.", "தவறானது. உறுப்பினர்கள் முழுவதும் ஆளுநரால் நியமிக்கப்படுவதில்லை.",
+        "Fifth Schedule TAC: Max 20 members; 3/4th ST representatives in Legislative Assembly.",
+        "5வது அட்டவணை TAC: அதிகபட்சம் 20 உறுப்பினர்கள்; 3/4 பங்கு சட்டமன்ற ST உறுப்பினர்கள்.",
+        "If ST MLAs are fewer than 3/4th, the remaining seats are filled from other ST persons in the State.",
+        "ST சட்டமன்ற உறுப்பினர்கள் 3/4 பங்குக்கு குறைவாக இருந்தால், மீதமுள்ள இடங்கள் மாநிலத்தின் பிற ST நபர்களால் நிரப்பப்படும்."
+    ))
+
+    qs.append(make_sch_q(
+        "SCH_M_022", "Medium", "Conceptual", "Fifth Schedule",
+        "Who possesses the constitutional authority under the Fifth Schedule to declare an area as a 'Scheduled Area' or increase/decrease its boundaries?",
+        "ஐந்தாவது அட்டவணையின் கீழ் ஒரு பகுதியை 'அட்டவணைப்படுத்தப்பட்ட பகுதி' என அறிவிக்க அல்லது அதன் எல்லைகளை அதிகரிக்க/குறைக்க அரசியலமைப்பு அதிகாரம் யாருக்கு உள்ளது?",
+        "The President of India", "இந்தியக் குடியரசுத் தலைவர்",
+        "The Governor of the concerned State", "சம்பந்தப்பட்ட மாநிலத்தின் ஆளுநர்",
+        "The Parliament of India by ordinary law", "சாதாரண சட்டம் மூலம் இந்தியப் பாராளுமன்றம்",
+        "The National Commission for Scheduled Tribes (NCST)", "பழங்குடியினருக்கான தேசிய ஆணையம் (NCST)",
+        "A",
+        "Under Paragraph 6 of the Fifth Schedule, the President of India is empowered to declare an area to be a Scheduled Area, alter its boundaries, or rescind such orders, in consultation with the Governor of the State.",
+        "ஐந்தாவது அட்டவணையின் பத்தி 6-ன் படி, மாநில ஆளுநருடன் கலந்தாலோசித்து, ஒரு பகுதியை அட்டவணைப்படுத்தப்பட்ட பகுதியாக அறிவிக்க, அதன் எல்லைகளை மாற்ற அல்லது ரத்து செய்ய இந்தியக் குடியரசுத் தலைவருக்கு மட்டுமே அதிகாரம் உள்ளது.",
+        "Correct. The President declares Scheduled Areas under Fifth Schedule.", "சரியானது. ஐந்தாவது அட்டவணையின் கீழ் குடியரசுத் தலைவரே அட்டவணைப் பகுதிகளை அறிவிக்கிறார்.",
+        "Incorrect. Governor is consulted, but the declaration power is with the President.", "தவறானது. ஆளுநர் கலந்தாலோசிக்கப்படுகிறார், ஆனால் அறிவிக்கும் அதிகாரம் குடியரசுத் தலைவருக்கே உள்ளது.",
+        "Incorrect. Parliament does not make individual area declarations under Paragraph 6.", "தவறானது. பத்தி 6-ன் கீழ் தனிப்பட்ட பகுதிகளைப் பாராளுமன்றம் அறிவிப்பதில்லை.",
+        "Incorrect. NCST is a constitutional advisory commission under Art 338A.", "தவறானது. NCST என்பது சரத்து 338A-ன் கீழான ஒரு ஆலோசனைக் குழுவாகும்.",
+        "Declaration of Scheduled Areas: President of India (after consulting Governor).",
+        "அட்டவணைப் பகுதிகள் அறிவிப்பு: இந்தியக் குடியரசுத் தலைவர் (ஆளுநரைக் கலந்தாலோசித்த பின்).",
+        "The criteria include: preponderance of tribal population, compactness, viable administrative entity, and economic backwardness.",
+        "பழங்குடி மக்கள் தொகை பெரும்பான்மை, பரப்பளவு ஒருமைப்பாடு மற்றும் பொருளாதார பின்தங்கிய நிலை ஆகியவை அளவுகோல்களாகும்."
+    ))
+
+    qs.append(make_sch_q(
+        "SCH_M_023", "Medium", "Conceptual", "Fifth Schedule",
+        "Which of the following powers is uniquely exercised by the Governor of a State with respect to Scheduled Areas under Paragraph 5 of the Fifth Schedule?",
+        "ஐந்தாவது அட்டவணையின் பத்தி 5-ன் கீழ் அட்டவணைப்படுத்தப்பட்ட பகுதிகள் தொடர்பாக மாநில ஆளுநரால் பிரத்யேகமாக பயன்படுத்தப்படும் அதிகாரம் எது?",
+        "Direct that any Act of Parliament or State Legislature shall not apply or shall apply with exceptions and modifications",
+        "பாராளுமன்ற அல்லது மாநில சட்டமன்ற சட்டம் எதுவும் அப்பகுதிக்குப் பொருந்தாது அல்லது விதிவிலக்குகளுடன் பொருந்தும் என உத்தரவிடுவது",
+        "Impose President's Rule directly in tribal areas without a report to the Union Cabinet",
+        "மத்திய அமைச்சரவைக்கு அறிக்கை அளிக்காமல் பழங்குடிப் பகுதிகளில் நேரடியாக குடியரசுத் தலைவர் ஆட்சியை அமல்படுத்துவது",
+        "Dissolve the State Legislative Assembly if it passes laws conflicting with tribal customs",
+        "பழங்குடி வழக்கங்களுக்கு முரணான சட்டங்களை இயற்றினால் மாநில சட்டமன்றத்தைக் கலைப்பது",
+        "Veto Constitutional Amendments passed under Article 368 if they affect tribal lands",
+        "சரத்து 368-ன் கீழான அரசியலமைப்பு திருத்தங்கள் பழங்குடி நிலங்களைப் பாதித்தால் அவற்றை ரத்து செய்வது",
+        "A",
+        "Under Paragraph 5(1) of the Fifth Schedule, the Governor may by public notification direct that any particular Act of Parliament or of the Legislature of the State shall not apply to a Scheduled Area or shall apply subject to such exceptions and modifications as he may specify.",
+        "ஐந்தாவது அட்டவணையின் பத்தி 5(1)-ன் படி, பாராளுமன்றம் அல்லது மாநில சட்டமன்றத்தின் எந்தவொரு சட்டமும் ஒரு அட்டவணைப் பகுதிக்குப் பொருந்தாது அல்லது அவர் குறிப்பிடும் விதிவிலக்குகள் மற்றும் மாற்றங்களுடன் மட்டுமே பொருந்தும் என பொது அறிவிக்கை மூலம் ஆளுநர் உத்தரவிடலாம்.",
+        "Correct. Governor can exclude or modify Parliamentary and State laws.", "சரியானது. ஆளுநர் மத்திய/மாநில சட்டங்களை விலக்கவோ அல்லது மாற்றியமைக்கவோ முடியும்.",
+        "Incorrect. Governor cannot impose President's Rule; Art 356 belongs to President.", "தவறானது. ஆளுநர் குடியரசுத் தலைவர் ஆட்சியைத் தன்னிச்சையாக விதிக்க முடியாது.",
+        "Incorrect. Governor cannot dissolve assembly merely on such grounds.", "தவறானது. இந்த காரணத்திற்காக ஆளுநர் சட்டமன்றத்தைக் கலைக்க முடியாது.",
+        "Incorrect. Governor cannot veto Constitutional Amendments.", "தவறானது. அரசியலமைப்புத் திருத்தங்களை வீட்டோ செய்யும் அதிகாரம் ஆளுநருக்கு இல்லை.",
+        "Fifth Schedule Para 5: Governor can modify or exclude Union/State Acts in Scheduled Areas.",
+        "5வது அட்டவணை பத்தி 5: ஆளுநர் மத்திய/மாநில சட்டங்களை அட்டவணைப் பகுதியில் மாற்றியமைக்கலாம் அல்லது விலக்கலாம்.",
+        "Governor can also make regulations to prohibit transfer of land by STs and regulate moneylending.",
+        "ST நிலங்கள் கைமாறுவதைத் தடுக்கவும், கந்துவட்டியைக் கட்டுப்படுத்தவும் ஆளுநர் ஒழுங்குமுறைகளை உருவாக்கலாம்."
+    ))
+
+    qs.append(make_sch_q(
+        "SCH_M_024", "Medium", "Conceptual", "Fifth Schedule",
+        "Which of the following landmark Supreme Court judgments held that government land, tribal land, and forest land in Scheduled Areas cannot be leased to non-tribal private companies for mining?",
+        "அட்டவணைப் பகுதிகளில் உள்ள அரசு நிலம், பழங்குடியினர் நிலம் மற்றும் வன நிலங்களை சுரங்கத் தொழிலுக்காக பழங்குடியினர் அல்லாத தனியார் நிறுவனங்களுக்கு குத்தகைக்கு விட முடியாது என்று தீர்ப்பளித்த உச்சநீதிமன்றத்தின் வரலாற்றுச் சிறப்புமிக்க தீர்ப்பு எது?",
+        "Samatha v. State of Andhra Pradesh (1997)", "சமதா எதிர் ஆந்திரப் பிரதேச அரசு (1997)",
+        "Minerva Mills v. Union of India (1980)", "மினர்வா மில்ஸ் எதிர் இந்திய யூனியன் (1980)",
+        "Maneka Gandhi v. Union of India (1978)", "மேனகா காந்தி எதிர் இந்திய யூனியன் (1978)",
+        "Waman Rao v. Union of India (1981)", "வாமன் ராவ் எதிர் இந்திய யூனியன் (1981)",
+        "A",
+        "In the famous Samatha judgment (1997), the Supreme Court ruled that all transfers of land in Scheduled Areas (Fifth Schedule) to private non-tribals, including leases for mining by private companies, are null and void, protecting tribal land rights.",
+        "பிரபலமான சமதா வழக்கில் (1997), ஐந்தாவது அட்டவணைப் பகுதிகளில் உள்ள நிலங்களை பழங்குடியினர் அல்லாத தனியார் நிறுவனங்களுக்கு சுரங்கக் குத்தகை உட்பட வழங்குவது செல்லாது என உச்சநீதிமன்றம் தீர்ப்பளித்து, பழங்குடியினரின் நில உரிமைகளைப் பாதுகாத்தது.",
+        "Correct. Samatha v. State of AP (1997) protected Fifth Schedule tribal lands.", "சரியானது. சமதா வழக்கு (1997) 5வது அட்டவணை பழங்குடி நிலங்களைப் பாதுகாத்தது.",
+        "Incorrect. Minerva Mills (1980) dealt with basic structure and DPSP vs FR.", "தவறானது. மினர்வா மில்ஸ் (1980) அடிப்படைக் கட்டமைப்பு பற்றியது.",
+        "Incorrect. Maneka Gandhi (1978) dealt with Article 21 due process.", "தவறானது. மேனகா காந்தி (1978) சரத்து 21 பற்றியது.",
+        "Incorrect. Waman Rao (1981) dealt with the Ninth Schedule cutoff date.", "தவறானது. வாமன் ராவ் (1981) ஒன்பதாவது அட்டவணை வரம்புத் தேதி பற்றியது.",
+        "Samatha Judgment (1997): Tribal land in Scheduled Areas cannot be transferred to non-tribals/corporations.",
+        "சமதா தீர்ப்பு (1997): அட்டவணைப் பகுதி நிலங்களை பழங்குடியினர் அல்லாதோருக்கு மாற்ற முடியாது.",
+        "This led to the concept of 'tribal cooperatives' and strict implementation of Fifth Schedule protections.",
+        "இது பழங்குடியினர் கூட்டுறவு சங்கங்கள் மற்றும் 5வது அட்டவணைப் பாதுகாப்புகளைக் கடுமையாக்க வழிவகுத்தது."
+    ))
+
+    qs.append(make_sch_q(
+        "SCH_M_025", "Medium", "Conceptual", "Fifth Schedule",
+        "The Provisions of the Panchayats (Extension to the Scheduled Areas) Act, 1996 (PESA) was enacted to extend Part IX of the Constitution to Fifth Schedule Areas based on the recommendations of which Committee?",
+        "எந்தக் குழுவின் பரிந்துரைகளின் அடிப்படையில் அரசியலமைப்பின் பகுதி IX-ஐ ஐந்தாவது அட்டவணைப் பகுதிகளுக்கு நீட்டிக்க 'பஞ்சாயத்துகள் (அட்டவணைப்படுத்தப்பட்ட பகுதிகளுக்கு நீட்டிப்பு) சட்டம் 1996' (PESA) இயற்றப்பட்டது?",
+        "Bhuria Committee", "திலீப் சிங் பூரியா குழு",
+        "Balwant Rai Mehta Committee", "பல்வந்த் ராய் மேத்தா குழு",
+        "Ashok Mehta Committee", "அசோக் மேத்தா குழு",
+        "L.M. Singhvi Committee", "எல்.எம். சிங்வி குழு",
+        "A",
+        "The PESA Act, 1996 was enacted on December 24, 1996 following the recommendations of the Dileep Singh Bhuria Committee (1995) to empower Gram Sabhas in Fifth Schedule areas with self-governance over natural resources and traditional customs.",
+        "திலீப் சிங் பூரியா குழுவின் (1995) பரிந்துரைகளைத் தொடர்ந்து, ஐந்தாவது அட்டவணைப் பகுதி கிராம சபைகளுக்கு இயற்கை வளங்கள் மற்றும் பாரம்பரிய நடைமுறைகள் மீது தன்னாட்சி அதிகாரம் அளிக்க 1996 டிசம்பர் 24 அன்று PESA சட்டம் இயற்றப்பட்டது.",
+        "Correct. Dileep Singh Bhuria Committee recommended PESA Act 1996.", "சரியானது. திலீப் சிங் பூரியா குழு PESA சட்டம் 1996-ஐப் பரிந்துரைத்தது.",
+        "Incorrect. Balwant Rai Mehta (1957) recommended 3-tier Panchayati Raj.", "தவறானது. பல்வந்த் ராய் மேத்தா (1957) 3 அடுக்கு பஞ்சாயத்து முறையைப் பரிந்துரைத்தார்.",
+        "Incorrect. Ashok Mehta (1977) recommended 2-tier Panchayati Raj.", "தவறானது. அசோக் மேத்தா (1977) 2 அடுக்கு முறையைப் பரிந்துரைத்தார்.",
+        "Incorrect. L.M. Singhvi (1986) recommended constitutional status for Panchayats.", "தவறானது. எல்.எம். சிங்வி (1986) பஞ்சாயத்துகளுக்கு அரசியலமைப்பு அந்தஸ்தைப் பரிந்துரைத்தார்.",
+        "PESA Act, 1996 is based on the Bhuria Committee recommendations.",
+        "PESA சட்டம் 1996 பூரியா குழுவின் பரிந்துரைகளை அடிப்படையாகக் கொண்டது.",
+        "PESA extends self-rule to Fifth Schedule areas across 10 States.",
+        "PESA சட்டம் 10 மாநிலங்களில் உள்ள 5வது அட்டவணைப் பகுதிகளுக்கு சுய ஆட்சியை நீட்டிக்கிறது."
+    ))
+
+    # M26 - M30: Sixth Schedule Nuances & Autonomous Districts
+    qs.append(make_sch_q(
+        "SCH_M_026", "Medium", "Conceptual", "Sixth Schedule",
+        "What is the total maximum membership of an Autonomous District Council (ADC) under the Sixth Schedule (excluding Bodoland), and how many of them are nominated by the Governor?",
+        "ஆறாவது அட்டவணையின் கீழ் (போடோலாந்து தவிர்த்து) ஒரு தன்னாட்சி மாவட்டக் குழுவின் (ADC) மொத்த அதிகபட்ச உறுப்பினர்கள் எத்தனை பேர், மற்றும் அவர்களில் எத்தனை பேரை ஆளுநர் நியமிக்கிறார்?",
+        "30 members: 26 elected on adult suffrage and 4 nominated by the Governor",
+        "30 உறுப்பினர்கள்: 26 பேர் வாக்குரிமை மூலம் தேர்ந்தெடுக்கப்படுபவர்கள் மற்றும் 4 பேர் ஆளுநரால் நியமிக்கப்படுபவர்கள்",
+        "20 members: 15 elected and 5 nominated by the Governor",
+        "20 உறுப்பினர்கள்: 15 பேர் தேர்ந்தெடுக்கப்படுபவர்கள் மற்றும் 5 பேர் ஆளுநரால் நியமிக்கப்படுபவர்கள்",
+        "25 members: 20 elected and 5 nominated by the Chief Minister",
+        "25 உறுப்பினர்கள்: 20 பேர் தேர்ந்தெடுக்கப்படுபவர்கள் மற்றும் 5 பேர் முதலமைச்சரால் நியமிக்கப்படுபவர்கள்",
+        "40 members: 30 elected and 10 nominated by the President",
+        "40 உறுப்பினர்கள்: 30 பேர் தேர்ந்தெடுக்கப்படுபவர்கள் மற்றும் 10 பேர் குடியரசுத் தலைவரால் நியமிக்கப்படுபவர்கள்",
+        "A",
+        "Under Paragraph 2 of the Sixth Schedule, each Autonomous District Council consists of not more than 30 members, of whom not more than 4 persons shall be nominated by the Governor and the rest (26) shall be elected on the basis of adult suffrage. Nominated members hold office at the Governor's pleasure; elected members hold office for 5 years.",
+        "ஆறாவது அட்டவணையின் பத்தி 2-ன் படி, ஒவ்வொரு தன்னாட்சி மாவட்டக் கவுன்சிலும் 30 பேருக்கு மிகாமல் உறுப்பினர்களைக் கொண்டிருக்கும்; இதில் 4 பேருக்கு மிகாமல் ஆளுநரால் நியமிக்கப்படுவர் மற்றும் மீதமுள்ள 26 பேர் வாக்குரிமை அடிப்படையில் தேர்ந்தெடுக்கப்படுவர். நியமன உறுப்பினர்கள் ஆளுநரின் விருப்பம் உள்ளவரை பதவியில் இருப்பர்; தேர்ந்தெடுக்கப்பட்டவர்கள் 5 ஆண்டுகள் பதவி வகிப்பர்.",
+        "Correct. 30 members: 26 elected and 4 nominated by the Governor.", "சரியானது. 30 உறுப்பினர்கள்: 26 பேர் தேர்ந்தெடுக்கப்படுபவர்கள், 4 பேர் ஆளுநரால் நியமிக்கப்படுபவர்கள்.",
+        "Incorrect. 20 members is the size of the Tribes Advisory Council under Fifth Schedule.", "தவறானது. 20 என்பது ஐந்தாவது அட்டவணை TAC அமைப்பின் எண்ணிக்கை.",
+        "Incorrect. Governor nominates members, not the Chief Minister.", "தவறானது. முதலமைச்சர் அல்ல, ஆளுநரே நியமிக்கிறார்.",
+        "Incorrect. President does not nominate members to Sixth Schedule ADCs.", "தவறானது. குடியரசுத் தலைவர் ADC உறுப்பினர்களை நியமிப்பதில்லை.",
+        "Sixth Schedule ADC: 30 members (26 elected for 5 yrs + 4 nominated by Governor).",
+        "6வது அட்டவணை ADC: 30 உறுப்பினர்கள் (26 பேர் 5 ஆண்டுக்கு தேர்வு + 4 பேர் ஆளுநர் நியமனம்).",
+        "Exception: Bodoland Territorial Council in Assam has up to 46 members (40 elected + 6 nominated).",
+        "விதிவிலக்கு: அசாமில் உள்ள போடோலாந்து பிராந்திய கவுன்சில் 46 உறுப்பினர்களைக் கொண்டுள்ளது (40 தேர்வு + 6 நியமனம்)."
+    ))
+
+    qs.append(make_sch_q(
+        "SCH_M_027", "Medium", "Conceptual", "Sixth Schedule",
+        "Which of the following is NOT one of the ten Autonomous District Councils established under the Sixth Schedule across Assam, Meghalaya, Tripura, and Mizoram?",
+        "அசாம், மேகாலயா, திரிபுரா, மிசோரம் ஆகிய மாநிலங்களில் ஆறாவது அட்டவணையின் கீழ் நிறுவப்பட்டுள்ள பத்து தன்னாட்சி மாவட்டக் கவுன்சில்களில் அல்லாதது எது?",
+        "Darjeeling Gorkha Hill Council (West Bengal)", "டார்ஜிலிங் கூர்க்கா மலை கவுன்சில் (மேற்கு வங்கம்)",
+        "Chakma Autonomous District Council (Mizoram)", "சக்மா தன்னாட்சி மாவட்ட கவுன்சில் (மிசோரம்)",
+        "Khasi Hills Autonomous District Council (Meghalaya)", "காசி மலை தன்னாட்சி மாவட்ட கவுன்சில் (மேகாலயா)",
+        "Karbi Anglong Autonomous Council (Assam)", "கர்பி அங்லாங் தன்னாட்சி கவுன்சில் (அசாம்)",
+        "A",
+        "The Sixth Schedule covers only 4 states (Assam, Meghalaya, Tripura, Mizoram) with 10 ADCs. Darjeeling Gorkha Hill Council (now Gorkhaland Territorial Administration) is in West Bengal and was created under a state statutory Act, NOT under the Sixth Schedule.",
+        "ஆறாவது அட்டவணை 4 மாநிலங்களை (அசாம், மேகாலயா, திரிபுரா, மிசோரம்) மட்டுமே 10 ADC-களுடன் உள்ளடக்கியுள்ளது. மேற்கு வங்கத்தில் உள்ள டார்ஜிலிங் கூர்க்கா மலை கவுன்சில் மாநில சட்டப்பூர்வ சட்டத்தின் கீழ் உருவாக்கப்பட்டது, 6வது அட்டவணையின் கீழ் அல்ல.",
+        "Correct. Darjeeling Gorkha Council is statutory in West Bengal, not Sixth Schedule.", "சரியானது. டார்ஜிலிங் கூர்க்கா கவுன்சில் மேற்கு வங்கத்தின் சட்டப்பூர்வ அமைப்பு, 6வது அட்டவணை அல்ல.",
+        "Incorrect. Chakma ADC is a constitutional Sixth Schedule ADC in Mizoram.", "தவறானது. சக்மா ADC என்பது மிசோரமில் உள்ள 6வது அட்டவணை ADC ஆகும்.",
+        "Incorrect. Khasi Hills ADC is a constitutional Sixth Schedule ADC in Meghalaya.", "தவறானது. காசி மலை ADC என்பது மேகாலயாவில் உள்ள 6வது அட்டவணை ADC ஆகும்.",
+        "Incorrect. Karbi Anglong is a constitutional Sixth Schedule ADC in Assam.", "தவறானது. கர்பி அங்லாங் என்பது அசாமில் உள்ள 6வது அட்டவணை ADC ஆகும்.",
+        "Sixth Schedule applies ONLY to AMTM: Assam (3), Meghalaya (3), Mizoram (3), Tripura (1) = 10 ADCs.",
+        "6வது அட்டவணை AMTM மாநிலங்களுக்கு மட்டுமே பொருந்தும்: அசாம் (3), மேகாலயா (3), மிசோரம் (3), திரிபுரா (1) = 10 ADCகள்.",
+        "Ladakh and other regions have demanded Sixth Schedule status, but it currently remains limited to AMTM.",
+        "லடாக் உள்ளிட்ட பிற பகுதிகள் 6வது அட்டவணை அந்தஸ்தைக் கோரியுள்ளன, ஆனால் தற்போது AMTM-க்கு மட்டுமே இது பொருந்தும்."
+    ))
+
+    qs.append(make_sch_q(
+        "SCH_M_028", "Medium", "Conceptual", "Sixth Schedule",
+        "How do the legislative powers of Sixth Schedule Autonomous District Councils differ fundamentally from Panchayati Raj institutions under the Eleventh Schedule?",
+        "ஆறாவது அட்டவணை தன்னாட்சி மாவட்டக் கவுன்சில்களின் சட்டமன்ற அதிகாரங்கள் பதினோராவது அட்டவணையின் கீழ் உள்ள பஞ்சாயத்து ராஜ் அமைப்புகளிலிருந்து எவ்வாறு அடிப்படையாக வேறுபடுகின்றன?",
+        "ADCs possess plenary powers to make laws on land, forests, marriage, and inheritance which have the force of law upon receiving the Governor's assent",
+        "ADC-கள் நிலம், காடுகள், திருமணம், பரம்பரை உரிமை குறித்து ஆளுநரின் ஒப்புதலுடன் சட்ட வலிமை கொண்ட சட்டங்களை இயற்றும் அதிகாரத்தைக் கொண்டுள்ளன",
+        "ADCs can enact criminal laws and operate a separate state supreme court",
+        "ADC-கள் குற்றவியல் சட்டங்களை இயற்றி தனி மாநில உச்சநீதிமன்றத்தை நடத்த முடியும்",
+        "ADCs have no powers to collect any taxes or toll on goods",
+        "ADC-களுக்கு பொருட்கள் மீது எந்த வரியும் அல்லது சுங்கவரியும் வசூலிக்கும் அதிகாரம் இல்லை",
+        "Panchayats can override Acts of Parliament while ADCs cannot",
+        "பஞ்சாயத்துகள் பாராளுமன்ற சட்டங்களை ரத்து செய்யலாம், ஆனால் ADC-களால் முடியாது",
+        "A",
+        "Unlike Panchayats which are merely local self-government bodies executing delegated functions, Sixth Schedule ADCs possess substantial legislative powers under Paragraph 3 to make laws regarding land allocation, forest management, inheritance of property, marriage, and social customs. These laws take effect upon receiving the Governor's assent.",
+        "பஞ்சாயத்துகள் ஒப்படைக்கப்பட்ட பணிகளை மட்டுமே செய்யும் உள்ளாட்சி அமைப்புகள் போலல்லாமல், 6வது அட்டவணை ADC-கள் பத்தி 3-ன் கீழ் நில ஒதுக்கீடு, வன மேலாண்மை, சொத்துரிமை, திருமணம், பழக்கவழக்கங்கள் குறித்து சட்டங்களை உருவாக்கும் உண்மையான சட்டமன்ற அதிகாரத்தைப் பெற்றுள்ளன. இவை ஆளுநரின் ஒப்புதல் பெற்றவுடன் நடைமுறைக்கு வரும்.",
+        "Correct. ADCs can make primary laws on specified subjects with Governor's assent.", "சரியானது. ADC-கள் ஆளுநரின் ஒப்புதலுடன் குறிப்பிட்ட துறைகளில் சட்டங்களை இயற்ற முடியும்.",
+        "Incorrect. ADCs cannot make general criminal codes or run separate supreme courts.", "தவறானது. ADC-கள் பொது குற்றவியல் சட்டங்களையோ தனி உச்சநீதிமன்றத்தையோ நடத்த முடியாது.",
+        "Incorrect. ADCs possess constitutional powers to levy taxes and tolls under Para 8.", "தவறானது. பத்தி 8-ன் கீழ் வரி மற்றும் சுங்கம் வசூலிக்கும் அதிகாரம் ADC-களுக்கு உண்டு.",
+        "Incorrect. Panchayats can never override Acts of Parliament.", "தவறானது. பஞ்சாயத்துகள் பாராளுமன்ற சட்டங்களை ஒருபோதும் ரத்து செய்ய முடியாது.",
+        "Sixth Schedule ADCs act as miniature regional legislatures with legislative, executive, and judicial powers.",
+        "6வது அட்டவணை ADC-கள் சட்டமன்ற, நிர்வாக, நீதித்துறை அதிகாரங்களுடன் சிறு சட்டமன்றங்களாகச் செயல்படுகின்றன.",
+        "Acts of Parliament do not automatically apply to Sixth Schedule areas unless directed by the Governor (Assam) or President (Meghalaya, Tripura, Mizoram).",
+        "பாராளுமன்ற சட்டங்கள் ஆளுநர் (அசாம்) அல்லது குடியரசுத் தலைவர் (பிற 3 மாநிலங்கள்) உத்தரவிட்டால் அன்றி தானாகப் பொருந்தாது."
+    ))
+
+    qs.append(make_sch_q(
+        "SCH_M_029", "Medium", "Conceptual", "Sixth Schedule",
+        "Under Paragraph 14 of the Sixth Schedule, who appoints a Commission to inquire into and report on the administration of autonomous districts and regions?",
+        "ஆறாவது அட்டவணையின் பத்தி 14-ன் கீழ், தன்னாட்சி மாவட்டங்கள் மற்றும் பிராந்தியங்களின் நிர்வாகம் குறித்து விசாரித்து அறிக்கை அளிக்க ஒரு ஆணையத்தை நியமிப்பவர் யார்?",
+        "The Governor of the State", "மாநில ஆளுநர்",
+        "The President of India", "இந்தியக் குடியரசுத் தலைவர்",
+        "The Chief Justice of the Gauhati High Court", "குவஹாத்தி உயர்நீதிமன்ற தலைமை நீதிபதி",
+        "The Chairman of the Rajya Sabha", "மாநிலங்களவைத் தலைவர்",
+        "A",
+        "Under Paragraph 14 of the Sixth Schedule, the Governor may at any time appoint a Commission to examine and report on any matter relating to the administration of the autonomous districts or regions. On the recommendation of such a Commission, the Governor may dissolve a District or Regional Council.",
+        "ஆறாவது அட்டவணையின் பத்தி 14-ன் படி, தன்னாட்சி மாவட்டங்கள் அல்லது பிராந்தியங்களின் நிர்வாகம் தொடர்பான எந்தவொரு விஷயத்தையும் விசாரித்து அறிக்கை அளிக்க ஆளுநர் எந்த நேரத்திலும் ஒரு ஆணையத்தை நியமிக்கலாம். அத்தகைய ஆணையத்தின் பரிந்துரையின் பேரில் ஆளுநர் ஒரு மாவட்ட கவுன்சிலைக் கலைக்கலாம்.",
+        "Correct. The Governor appoints the inquiry Commission under Para 14.", "சரியானது. பத்தி 14-ன் கீழ் ஆளுநரே விசாரணை ஆணையத்தை நியமிக்கிறார்.",
+        "Incorrect. President does not appoint the Commission under Paragraph 14.", "தவறானது. பத்தி 14-ன் கீழ் குடியரசுத் தலைவர் ஆணையத்தை நியமிப்பதில்லை.",
+        "Incorrect. Chief Justice does not appoint the Commission.", "தவறானது. தலைமை நீதிபதி ஆணையத்தை நியமிப்பதில்லை.",
+        "Incorrect. Rajya Sabha Chairman has no role in Sixth Schedule commission.", "தவறானது. மாநிலங்களவைத் தலைவருக்கு இதில் பங்கில்லை.",
+        "Sixth Schedule: Governor appoints Commission under Para 14 to review ADC administration.",
+        "6வது அட்டவணை: ADC நிர்வாகத்தை ஆய்வு செய்ய பத்தி 14-ன் கீழ் ஆளுநர் ஆணையத்தை நியமிக்கிறார்.",
+        "Based on the Commission report, Governor can order dissolution and fresh elections.",
+        "ஆணையத்தின் அறிக்கையின் அடிப்படையில் ஆளுநர் கலைப்பு மற்றும் புதிய தேர்தலுக்கு உத்தரவிடலாம்."
+    ))
+
+    qs.append(make_sch_q(
+        "SCH_M_030", "Medium", "Conceptual", "Sixth Schedule",
+        "Which Constitutional Amendment Act was enacted in 2003 to provide for the Bodoland Territorial Council (BTC) under the Sixth Schedule in Assam?",
+        "அசாமில் ஆறாவது அட்டவணையின் கீழ் போடோலாந்து பிராந்திய கவுன்சிலை (BTC) ஏற்படுத்த 2003-ல் எந்த அரசியலமைப்புத் திருத்தச் சட்டம் இயற்றப்பட்டது?",
+        "90th Constitutional Amendment Act, 2003", "90வது அரசியலமைப்புத் திருத்தச் சட்டம், 2003",
+        "86th Constitutional Amendment Act, 2002", "86வது அரசியலமைப்புத் திருத்தச் சட்டம், 2002",
+        "91st Constitutional Amendment Act, 2003", "91வது அரசியலமைப்புத் திருத்தச் சட்டம், 2003",
+        "93rd Constitutional Amendment Act, 2005", "93வது அரசியலமைப்புத் திருத்தச் சட்டம், 2005",
+        "A",
+        "The 90th Constitutional Amendment Act, 2003 amended Article 332 and the Sixth Schedule to give constitutional status and protection to the Bodoland Territorial Areas District (BTAD) and maintain representation of non-tribals and tribals in the Assam Legislative Assembly.",
+        "90வது அரசியலமைப்புத் திருத்தச் சட்டம் 2003, போடோலாந்து பிராந்திய மாவட்டப் பகுதிக்கு (BTAD) அரசியலமைப்பு அந்தஸ்து வழங்கவும், அசாம் சட்டமன்றத்தில் பிரதிநிதித்துவத்தைப் பாதுகாக்கவும் சரத்து 332 மற்றும் ஆறாவது அட்டவணையைத் திருத்தியது.",
+        "Correct. 90th CAA 2003 related to Bodoland Sixth Schedule provisions.", "சரியானது. 90வது திருத்தம் 2003 போடோலாந்து 6வது அட்டவணை விதிகள் தொடர்பானது.",
+        "Incorrect. 86th CAA 2002 made education a Fundamental Right (Art 21A).", "தவறானது. 86வது திருத்தம் 2002 கல்வியை அடிப்படை உரிமையாக்கியது (சரத்து 21A).",
+        "Incorrect. 91st CAA 2003 limited ministry size to 15% and amended 10th Schedule.", "தவறானது. 91வது திருத்தம் 2003 அமைச்சரவை அளவை 15% ஆக வரம்பிட்டு 10வது அட்டவணையைத் திருத்தியது.",
+        "Incorrect. 93rd CAA 2005 provided reservations in private educational institutions.", "தவறானது. 93வது திருத்தம் 2005 தனியார் கல்வி நிறுவனங்களில் இடஒதுக்கீடு வழங்கியது.",
+        "90th CAA 2003: Bodoland Territorial Council under Sixth Schedule.",
+        "90வது திருத்தம் 2003: 6வது அட்டவணையின் கீழ் போடோலாந்து பிராந்திய கவுன்சில்.",
+        "BTC has special legislative powers over 40 subjects, higher than standard ADCs.",
+        "BTC நிலையான ADC-களை விட அதிகமாக 40 துறைகளில் சிறப்பு சட்டமன்ற அதிகாரங்களைக் கொண்டுள்ளது."
+    ))
+
+    # M31 - M35: Seventh Schedule Lists & Transfers
+    qs.append(make_sch_q(
+        "SCH_M_031", "Medium", "Conceptual", "Seventh Schedule",
+        "Which of the following FIVE subjects were transferred from the State List (List II) to the Concurrent List (List III) by the 42nd Constitutional Amendment Act, 1976?",
+        "42வது அரசியலமைப்புத் திருத்தச் சட்டம் 1976-ன் மூலம் மாநிலப் பட்டியலிலிருந்து (பட்டியல் II) பொதுப் பட்டியலுக்கு (பட்டியல் III) மாற்றப்பட்ட ஐந்து துறைகள் எவை?",
+        "Education, Forests, Weights and Measures, Protection of Wild Animals and Birds, and Administration of Justice (except SC and HC)",
+        "கல்வி, காடுகள், எடைகள் மற்றும் அளவுகள், வனவிலங்குகள் மற்றும் பறவைகள் பாதுகாப்பு, மற்றும் நீதி நிர்வாகம் (SC & HC தவிர)",
+        "Police, Public Health, Agriculture, Fisheries, and Local Government",
+        "காவல்துறை, பொது சுகாதாரம், விவசாயம், மீன்வளம் மற்றும் உள்ளாட்சி",
+        "Banking, Insurance, Defence, Railways, and Atomic Energy",
+        "வங்கி, காப்பீடு, பாதுகாப்பு, இரயில்வே மற்றும் அணுசக்தி",
+        "Taxes on Agricultural Income, Land Revenue, Tolls, Stamp Duty, and Capitation Taxes",
+        "விவசாய வருமான வரி, நில வருவாய், சுங்கவரி, முத்திரைத்தாள் வரி மற்றும் ஆள்வரி",
+        "A",
+        "The 42nd Amendment Act, 1976 transferred 5 subjects from the State List to the Concurrent List: 1. Education, 2. Forests, 3. Weights and Measures, 4. Protection of Wild Animals and Birds, 5. Administration of Justice; constitution and organization of all courts except the Supreme Court and High Courts.",
+        "42வது திருத்தச் சட்டம் 1976 மாநிலப் பட்டியலிலிருந்து 5 துறைகளைப் பொதுப் பட்டியலுக்கு மாற்றியது: 1. கல்வி, 2. காடுகள், 3. எடைகள் மற்றும் அளவுகள், 4. வனவிலங்குகள் & பறவைகள் பாதுகாப்பு, 5. உச்ச/உயர் நீதிமன்றங்கள் தவிர மற்ற அனைத்து நீதிமன்றங்களின் நீதி நிர்வாகம்.",
+        "Correct. 42nd CAA transferred these 5 subjects to Concurrent List.", "சரியானது. 42வது திருத்தம் இந்த 5 துறைகளைப் பொதுப் பட்டியலுக்கு மாற்றியது.",
+        "Incorrect. Police, Public Health, Agriculture remain strictly in State List.", "தவறானது. காவல்துறை, சுகாதாரம், விவசாயம் இப்போதும் மாநிலப் பட்டியலிலேயே உள்ளன.",
+        "Incorrect. Banking, Defence, Railways are in Union List.", "தவறானது. வங்கி, பாதுகாப்பு, இரயில்வே ஆகியவை மத்தியப் பட்டியலில் உள்ளன.",
+        "Incorrect. Land Revenue and Agricultural taxes are in State List.", "தவறானது. நில வருவாய் மற்றும் விவசாய வரிகள் மாநிலப் பட்டியலில் உள்ளன.",
+        "42nd CAA 1976 transferred 5 subjects to List III: Education, Forests, Weights & Measures, Wild Animals, Courts Administration.",
+        "42வது திருத்தம் 1976 பொதுப் பட்டியலுக்கு 5 துறைகளை மாற்றியது: கல்வி, காடுகள், எடைகள், வனவிலங்குகள், நீதிமன்ற நிர்வாகம்.",
+        "This shift reduced State List entries from 66 to 61 and expanded Concurrent List from 47 to 52.",
+        "இதனால் மாநிலப் பட்டியல் 66-லிருந்து 61 ஆகக் குறைந்து, பொதுப் பட்டியல் 47-லிருந்து 52 ஆக உயர்ந்தது."
+    ))
+
+    qs.append(make_sch_q(
+        "SCH_M_032", "Medium", "Conceptual", "Seventh Schedule",
+        "Under the Seventh Schedule, in which List is 'Corporation Tax' located, and in which List is 'Taxes on Agricultural Income' located?",
+        "ஏழாவது அட்டவணையின் கீழ், 'நிறுவன வரி' (Corporation Tax) எந்தப் பட்டியலில் உள்ளது, மற்றும் 'விவசாய வருமானத்தின் மீதான வரிகள்' எந்தப் பட்டியலில் உள்ளது?",
+        "Corporation Tax is in Union List; Taxes on Agricultural Income is in State List",
+        "நிறுவன வரி மத்தியப் பட்டியலில் உள்ளது; விவசாய வருமான வரி மாநிலப் பட்டியலில் உள்ளது",
+        "Both are in the Union List", "இரண்டுமே மத்தியப் பட்டியலில் உள்ளன",
+        "Both are in the Concurrent List", "இரண்டுமே பொதுப் பட்டியலில் உள்ளன",
+        "Corporation Tax is in Concurrent List; Taxes on Agricultural Income is in Union List",
+        "நிறுவன வரி பொதுப் பட்டியலில் உள்ளது; விவசாய வருமான வரி மத்தியப் பட்டியலில் உள்ளது",
+        "A",
+        "Corporation Tax is Entry 85 of the Union List (List I). Taxes on Agricultural Income is Entry 46 of the State List (List II). The Union cannot levy tax on agricultural income under Entry 82 (Taxes on income other than agricultural income).",
+        "நிறுவன வரி என்பது மத்தியப் பட்டியலின் பதிவு 85 ஆகும். விவசாய வருமான வரி என்பது மாநிலப் பட்டியலின் பதிவு 46 ஆகும். மத்திய அரசு பதிவு 82-ன் கீழ் விவசாய வருமானம் தவிர்த்த வருமானத்தின் மீது மட்டுமே வரி விதிக்க முடியும்.",
+        "Correct. Corporation Tax is Union (Entry 85); Agri Income Tax is State (Entry 46).", "சரியானது. நிறுவன வரி மத்திய பட்டியல் (85); விவசாய வருமான வரி மாநில பட்டியல் (46).",
+        "Incorrect. Agri Income Tax is not in Union List.", "தவறானது. விவசாய வருமான வரி மத்திய பட்டியலில் இல்லை.",
+        "Incorrect. Direct taxes are not in Concurrent List.", "தவறானது. நேரடி வரிகள் பொதுப் பட்டியலில் இல்லை.",
+        "Incorrect. Neither is reversed.", "தவறானது. மாற்றி கூறப்பட்டுள்ளது.",
+        "Union List: Entry 82 (Income tax non-agri), Entry 85 (Corp tax). State List: Entry 46 (Agri income tax).",
+        "மத்திய பட்டியல்: பதிவு 82 (விவசாயம் அல்லாத வருமான வரி), 85 (நிறுவன வரி). மாநில பட்டியல்: பதிவு 46 (விவசாய வருமான வரி).",
+        "Agriculture and related taxes are jealously guarded state subjects under Seventh Schedule.",
+        "விவசாயம் மற்றும் அது தொடர்பான வரிகள் 7வது அட்டவணையில் மாநிலப் பட்டியலில் பாதுகாக்கப்படுகின்றன."
+    ))
+
+    qs.append(make_sch_q(
+        "SCH_M_033", "Medium", "Conceptual", "Seventh Schedule",
+        "If there is a conflict between a Central law and a State law on a subject in the Concurrent List (List III), when can the State law prevail over the Central law in that State?",
+        "பொதுப் பட்டியலில் (பட்டியல் III) உள்ள ஒரு துறையில் மத்திய சட்டத்திற்கும் மாநில சட்டத்திற்கும் இடையே முரண்பாடு ஏற்பட்டால், அந்த மாநிலத்தில் மாநில சட்டம் எப்போது மத்திய சட்டத்தை விட மேலோங்கி நிற்கும்?",
+        "If the State law was reserved for the consideration of the President and received the President's assent under Article 254(2)",
+        "மாநில சட்டம் குடியரசுத் தலைவரின் பரிசீலனைக்கு அனுப்பப்பட்டு சரத்து 254(2)-ன் கீழ் குடியரசுத் தலைவரின் ஒப்புதலைப் பெற்றிருந்தால்",
+        "If the State Legislative Assembly repasses the bill by a two-thirds special majority",
+        "மாநில சட்டமன்றம் அந்த மசோதாவை மூன்றில் இரண்டு பங்கு சிறப்புப் பெரும்பான்மையுடன் மீண்டும் நிறைவேற்றினால்",
+        "If the Governor grants his immediate unconditional assent under Article 200",
+        "சரத்து 200-ன் கீழ் ஆளுநர் உடனடியாக நிபந்தனையற்ற ஒப்புதல் அளித்தால்",
+        "If the Supreme Court confirms the State law by a summary executive order",
+        "உச்சநீதிமன்றம் நிர்வாக உத்தரவு மூலம் மாநில சட்டத்தை உறுதிப்படுத்தினால்",
+        "A",
+        "Under Article 254(2), where a law made by the Legislature of a State with respect to one of the matters in the Concurrent List contains any provision repugnant to an earlier law made by Parliament, the State law shall prevail in that State IF it has been reserved for the consideration of the President and has received his assent.",
+        "சரத்து 254(2)-ன் படி, பொதுப் பட்டியல் விவகாரத்தில் பாராளுமன்றத்தின் முந்தைய சட்டத்திற்கு முரணான மாநில சட்டமன்றத்தின் சட்டம், குடியரசுத் தலைவரின் பரிசீலனைக்கு அனுப்பப்பட்டு அவருடைய ஒப்புதலைப் பெற்றிருந்தால், அந்த மாநிலத்தில் அந்த மாநில சட்டமே மேலோங்கும்.",
+        "Correct. President's assent under Art 254(2) enables State law to prevail.", "சரியானது. சரத்து 254(2)-ன் கீழ் குடியரசுத் தலைவர் ஒப்புதல் பெற்றால் மாநில சட்டம் மேலோங்கும்.",
+        "Incorrect. A state two-thirds majority cannot override a Parliamentary law.", "தவறானது. மாநிலத்தின் 2/3 பெரும்பான்மை பாராளுமன்ற சட்டத்தை ரத்து செய்ய முடியாது.",
+        "Incorrect. Governor's assent under Art 200 is insufficient for repugnancy override.", "தவறானது. முரண்பாட்டை மேலோங்கச் செய்ய சரத்து 200 ஆளுநர் ஒப்புதல் போதாது.",
+        "Incorrect. Supreme Court interprets laws judicially, not by executive order.", "தவறானது. உச்சநீதிமன்றம் நிர்வாக உத்தரவு மூலம் சட்டங்களை ஏற்பதில்லை.",
+        "Art 254(2): State law on Concurrent subject prevails over Central law in that state IF assented to by President.",
+        "சரத்து 254(2): குடியரசுத் தலைவர் ஒப்புதல் அளித்தால் பொதுப் பட்டியலில் மாநில சட்டம் மத்திய சட்டத்தை விட மேலோங்கும்.",
+        "However, Parliament can subsequently enact a fresh law overriding that State law under the proviso to Art 254(2).",
+        "எனினும், சரத்து 254(2) வரம்பின் கீழ் பாராளுமன்றம் பின்னர் ஒரு புதிய சட்டத்தை இயற்றி அதை ரத்து செய்யலாம்."
+    ))
+
+    qs.append(make_sch_q(
+        "SCH_M_034", "Medium", "Conceptual", "Seventh Schedule",
+        "Which Constitutional Amendment Act introduced the Goods and Services Tax (GST) by inserting Article 246A, creating a special concurrent taxation power outside the traditional Seventh Schedule lists?",
+        "சரத்து 246A-ஐச் சேர்த்து, பாரம்பரிய ஏழாவது அட்டவணைப் பட்டியல்களுக்கு வெளியே ஒரு சிறப்பு ஒத்திசைவான வரிவிதிப்பு அதிகாரத்தை உருவாக்கி சரக்கு மற்றும் சேவை வரியை (GST) அறிமுகப்படுத்திய அரசியலமைப்புத் திருத்தச் சட்டம் எது?",
+        "101st Constitutional Amendment Act, 2016", "101வது அரசியலமைப்புத் திருத்தச் சட்டம், 2016",
+        "99th Constitutional Amendment Act, 2014", "99வது அரசியலமைப்புத் திருத்தச் சட்டம், 2014",
+        "102nd Constitutional Amendment Act, 2018", "102வது அரசியலமைப்புத் திருத்தச் சட்டம், 2018",
+        "103rd Constitutional Amendment Act, 2019", "103வது அரசியலமைப்புத் திருத்தச் சட்டம், 2019",
+        "A",
+        "The 101st Constitutional Amendment Act, 2016 introduced Article 246A, which confers concurrent power on both Parliament and State Legislatures to make laws with respect to goods and services tax (GST). It also amended the Seventh Schedule (Entries 84, 92 of List I and 52, 54, 55 of List II).",
+        "101வது அரசியலமைப்புத் திருத்தச் சட்டம் 2016, சரத்து 246A-ஐ அறிமுகப்படுத்தியது. இது சரக்கு மற்றும் சேவை வரி (GST) தொடர்பாக சட்டம் இயற்ற பாராளுமன்றத்திற்கும் மாநில சட்டமன்றங்களுக்கும் ஒரே நேரத்தில் பொதுவான அதிகாரத்தை அளித்தது. மேலும் ஏழாவது அட்டவணையின் பதிவுகளையும் திருத்தியது.",
+        "Correct. 101st CAA 2016 introduced GST and Article 246A.", "சரியானது. 101வது திருத்தம் 2016 GST மற்றும் சரத்து 246A-ஐ அறிமுகப்படுத்தியது.",
+        "Incorrect. 99th CAA 2014 was NJAC (struck down).", "தவறானது. 99வது திருத்தம் 2014 NJAC பற்றியது (ரத்து செய்யப்பட்டது).",
+        "Incorrect. 102nd CAA 2018 gave constitutional status to NCBC.", "தவறானது. 102வது திருத்தம் 2018 NCBC-க்கு அரசியலமைப்பு அந்தஸ்து வழங்கியது.",
+        "Incorrect. 103rd CAA 2019 provided 10% EWS reservation.", "தவறானது. 103வது திருத்தம் 2019 EWS 10% இடஒதுக்கீடு வழங்கியது.",
+        "GST Amendment: 101st CAA 2016 inserted Art 246A for simultaneous tax power.",
+        "GST திருத்தம்: 101வது திருத்தம் 2016 ஒரே நேர வரி அதிகாரத்திற்காக சரத்து 246A-ஐச் சேர்த்தது.",
+        "Petroleum crude, high speed diesel, petrol, natural gas, and ATF are temporarily outside GST.",
+        "கச்சா எண்ணெய், டீசல், பெட்ரோல், இயற்கை எரிவாயு மற்றும் விமான எரிபொருள் தற்காலிகமாக GST-க்கு வெளியே உள்ளன."
+    ))
+
+    qs.append(make_sch_q(
+        "SCH_M_035", "Medium", "Conceptual", "Seventh Schedule",
+        "Under Article 248 of the Constitution, which entity has the exclusive power to make any law with respect to any matter not enumerated in the Seventh Schedule (Residuary Powers)?",
+        "அரசியலமைப்பின் சரத்து 248-ன் கீழ், ஏழாவது அட்டவணையில் குறிப்பிடப்படாத எந்தவொரு விவகாரத்திலும் சட்டம் இயற்றுவதற்கான பிரத்யேக அதிகாரம் (எஞ்சிய அதிகாரங்கள்) யாரிடம் உள்ளது?",
+        "Parliament of India", "இந்தியப் பாராளுமன்றம்",
+        "State Legislatures", "மாநில சட்டமன்றங்கள்",
+        "President of India by Ordinance", "அவசரச் சட்டம் மூலம் இந்தியக் குடியரசுத் தலைவர்",
+        "Both Parliament and State Legislatures jointly", "பாராளுமன்றம் மற்றும் மாநில சட்டமன்றங்கள் இரண்டும் இணைந்து",
+        "A",
+        "Article 248 vests residuary powers of legislation exclusively in Parliament. Entry 97 of the Union List also grants Parliament power over 'Any other matter not enumerated in List II or List III including any tax not mentioned in either of those Lists'.",
+        "சரத்து 248 எஞ்சிய சட்டமியற்றும் அதிகாரத்தை பாராளுமன்றத்திற்கு மட்டுமே வழங்குகிறது. மேலும் மத்தியப் பட்டியலின் பதிவு 97, 'பட்டியல் II அல்லது III-ல் குறிப்பிடப்படாத எந்தவொரு விவகாரமும் மற்றும் வரிகளும்' பாராளுமன்றத்திற்கே உரியது எனக் கூறுகிறது.",
+        "Correct. Parliament has exclusive residuary powers under Article 248.", "சரியானது. சரத்து 248-ன் கீழ் பாராளுமன்றத்திற்கு மட்டுமே எஞ்சிய அதிகாரம் உண்டு.",
+        "Incorrect. State Legislatures have no residuary powers in India (unlike US/Australia).", "தவறானது. இந்தியாவில் மாநில சட்டமன்றங்களுக்கு எஞ்சிய அதிகாரங்கள் இல்லை.",
+        "Incorrect. President cannot legislate residuary matters independently of Parliament.", "தவறானது. பாராளுமன்றத்திற்குப் புறம்பாக குடியரசுத் தலைவர் எஞ்சிய சட்டங்களை இயற்ற முடியாது.",
+        "Incorrect. Residuary power is NOT joint or concurrent.", "தவறானது. எஞ்சிய அதிகாரம் கூட்டானது அல்லது பொதுவானது அல்ல.",
+        "Residuary Powers: Article 248 + Entry 97 of List I -> Exclusive to Parliament.",
+        "எஞ்சிய அதிகாரங்கள்: சரத்து 248 + பட்டியல் I பதிவு 97 -> பாராளுமன்றத்திற்கு மட்டுமே பிரத்யேகமானது.",
+        "This is drawn from the Canadian model (unlike USA and Australia where residuary powers go to States).",
+        "இது கனடா முறையிலிருந்து எடுக்கப்பட்டது (அமெரிக்கா, ஆஸ்திரேலியாவில் எஞ்சியவை மாநிலங்களிடம் உள்ளன)."
+    ))
+
+    # M36 - M40: Eighth Schedule & Classical Languages
+    qs.append(make_sch_q(
+        "SCH_M_036", "Medium", "Conceptual", "Eighth Schedule",
+        "Which of the following was the FIRST language to be added to the Eighth Schedule after the commencement of the Constitution, and by which Amendment Act?",
+        "அரசியலமைப்பு நடைமுறைக்கு வந்த பிறகு எட்டாவது அட்டவணையில் சேர்க்கப்பட்ட முதல் மொழி எது, மற்றும் எந்தத் திருத்தச் சட்டத்தின் மூலம் சேர்க்கப்பட்டது?",
+        "Sindhi by the 21st Constitutional Amendment Act, 1967", "சிந்தி மொழி, 21வது அரசியலமைப்புத் திருத்தச் சட்டம் 1967 மூலம்",
+        "Konkani by the 71st Constitutional Amendment Act, 1992", "கொங்கணி மொழி, 71வது அரசியலமைப்புத் திருத்தச் சட்டம் 1992 மூலம்",
+        "Bodo by the 92nd Constitutional Amendment Act, 2003", "போடோ மொழி, 92வது அரசியலமைப்புத் திருத்தச் சட்டம் 2003 மூலம்",
+        "Urdu by the 7th Constitutional Amendment Act, 1956", "உருது மொழி, 7வது அரசியலமைப்புத் திருத்தச் சட்டம் 1956 மூலம்",
+        "A",
+        "The Constitution initially recognized 14 languages in 1950. Sindhi was the 15th language, added by the 21st Constitutional Amendment Act, 1967. Urdu was already one of the original 14 languages.",
+        "1950-ல் அரசியலமைப்பு 14 மொழிகளை அங்கீகரித்தது. 21வது அரசியலமைப்புத் திருத்தச் சட்டம் 1967 மூலம் 15வது மொழியாக சிந்தி சேர்க்கப்பட்டது. உருது தொடக்கத்திலேயே இருந்த 14 மொழிகளில் ஒன்றாகும்.",
+        "Correct. Sindhi was the first added language via 21st CAA 1967.", "சரியானது. 21வது திருத்தம் 1967 மூலம் சேர்க்கப்பட்ட முதல் மொழி சிந்தி.",
+        "Incorrect. Konkani was added in 1992 (71st CAA).", "தவறானது. கொங்கணி 1992-ல் சேர்க்கப்பட்டது (71வது திருத்தம்).",
+        "Incorrect. Bodo was added in 2003 (92nd CAA).", "தவறானது. போடோ 2003-ல் சேர்க்கப்பட்டது (92வது திருத்தம்).",
+        "Incorrect. Urdu was in the original 14 languages in 1950.", "தவறானது. உருது 1950-ன் அசல் 14 மொழிகளில் ஒன்றாக இருந்தது.",
+        "8th Schedule chronology: Original 14 -> +1 Sindhi (21st CAA 1967) = 15.",
+        "8வது அட்டவணை காலவரிசை: அசல் 14 -> +1 சிந்தி (21வது திருத்தம் 1967) = 15.",
+        "Then +3 (KMN, 71st CAA 1992) = 18; then +4 (BDMS, 92nd CAA 2003) = 22.",
+        "பின்னர் +3 (கொங்கணி, மணிப்பூரி, நேபாளி, 1992) = 18; பின்னர் +4 (போடோ, டோக்ரி, மைதிலி, சந்தாலி, 2003) = 22."
+    ))
+
+    qs.append(make_sch_q(
+        "SCH_M_037", "Medium", "Conceptual", "Eighth Schedule",
+        "Which of the following Indian languages was the VERY FIRST to be declared as a 'Classical Language' (செம்மொழி) by the Government of India in 2004?",
+        "2004-ல் இந்திய அரசால் 'செம்மொழி'யாக அறிவிக்கப்பட்ட முதல் இந்திய மொழி எது?",
+        "Tamil", "தமிழ்",
+        "Sanskrit", "சமஸ்கிருதம்",
+        "Telugu", "தெலுங்கு",
+        "Kannada", "கன்னடம்",
+        "A",
+        "Tamil was the first language in India to be accorded Classical Language status in the year 2004. Sanskrit was declared in 2005, Telugu and Kannada in 2008, Malayalam in 2013, and Odia in 2014.",
+        "இந்தியாவிலேயே முதன்முதலாக 2004-ஆம் ஆண்டு தமிழ் மொழிக்கு செம்மொழி அந்தஸ்து வழங்கப்பட்டது. சமஸ்கிருதம் 2005-லும், தெலுங்கு மற்றும் கன்னடம் 2008-லும், மலையாளம் 2013-லும், ஒடியா 2014-லும் செம்மொழிகளாக அறிவிக்கப்பட்டன.",
+        "Correct. Tamil was declared the first Classical Language in 2004.", "சரியானது. தமிழ் 2004-ல் முதல் செம்மொழியாக அறிவிக்கப்பட்டது.",
+        "Incorrect. Sanskrit was declared classical in 2005.", "தவறானது. சமஸ்கிருதம் 2005-ல் செம்மொழியாக அறிவிக்கப்பட்டது.",
+        "Incorrect. Telugu was declared classical in 2008.", "தவறானது. தெலுங்கு 2008-ல் செம்மொழியாக அறிவிக்கப்பட்டது.",
+        "Incorrect. Kannada was declared classical in 2008.", "தவறானது. கன்னடம் 2008-ல் செம்மொழியாக அறிவிக்கப்பட்டது.",
+        "Classical Languages: Tamil (2004), Sanskrit (2005), Kannada (2008), Telugu (2008), Malayalam (2013), Odia (2014).",
+        "செம்மொழிகள்: தமிழ் (2004), சமஸ்கிருதம் (2005), கன்னடம் (2008), தெலுங்கு (2008), மலையாளம் (2013), ஒடியா (2014).",
+        "Criteria include high antiquity of early texts over 1500–2000 years and an original literary tradition.",
+        "1500–2000 ஆண்டுகள் பழமையான இலக்கியப் பாரம்பரியம் செம்மொழித் தகுதிக்கான முக்கிய அளவுகோலாகும்."
+    ))
+
+    qs.append(make_sch_q(
+        "SCH_M_038", "Medium", "Conceptual", "Eighth Schedule",
+        "Under Article 344(1) of the Constitution, who appoints the Official Language Commission, and after how many years from the commencement of the Constitution was it first constituted?",
+        "அரசியலமைப்பின் சரத்து 344(1)-ன் கீழ், உத்தியோகபூர்வ மொழி ஆணையத்தை நியமிப்பவர் யார், மற்றும் அரசியலமைப்பு தொடங்கிய எத்தனை ஆண்டுகளுக்குப் பிறகு இது முதன்முதலில் அமைக்கப்பட்டது?",
+        "The President of India, at the expiration of 5 years (1955 under B.G. Kher)",
+        "இந்தியக் குடியரசுத் தலைவர், 5 ஆண்டுகள் முடிவடைந்ததும் (1955-ல் பி.ஜி. கேர் தலைமையில்)",
+        "The Prime Minister of India, at the expiration of 10 years (1960)",
+        "இந்தியப் பிரதமர், 10 ஆண்டுகள் முடிவடைந்ததும் (1960)",
+        "The Parliament of India, at the expiration of 15 years (1965)",
+        "இந்தியப் பாராளுமன்றம், 15 ஆண்டுகள் முடிவடைந்ததும் (1965)",
+        "The Chief Justice of India, at the expiration of 2 years (1952)",
+        "இந்தியத் தலைமை நீதிபதி, 2 ஆண்டுகள் முடிவடைந்ததும் (1952)",
+        "A",
+        "Under Article 344(1), the President shall, at the expiration of five years from the commencement of the Constitution, constitute an Official Language Commission. The first Official Language Commission was appointed by the President in 1955 under the chairmanship of B.G. Kher (submitted report in 1956).",
+        "சரத்து 344(1)-ன் படி, அரசியலமைப்பு நடைமுறைக்கு வந்த 5 ஆண்டுகள் முடிவடைந்ததும் குடியரசுத் தலைவர் உத்தியோகபூர்வ மொழி ஆணையத்தை அமைக்க வேண்டும். அதன்படி 1955-ல் பி.ஜி. கேர் தலைமையில் முதல் உத்தியோகபூர்வ மொழி ஆணையத்தை குடியரசுத் தலைவர் அமைத்தார் (1956-ல் அறிக்கை சமர்ப்பிக்கப்பட்டது).",
+        "Correct. President constituted B.G. Kher Commission in 1955 under Art 344(1).", "சரியானது. குடியரசுத் தலைவர் 1955-ல் பி.ஜி. கேர் ஆணையத்தை சரத்து 344(1)-ன் கீழ் அமைத்தார்.",
+        "Incorrect. PM does not appoint the Commission.", "தவறானது. பிரதமர் மொழி ஆணையத்தை நியமிப்பதில்லை.",
+        "Incorrect. Parliament did not appoint it at 15 years.", "தவறானது. பாராளுமன்றம் 15 ஆண்டுகளில் இதை நியமிக்கவில்லை.",
+        "Incorrect. CJI has no role in appointing Official Language Commission.", "தவறானது. தலைமை நீதிபதிக்கு இதில் எந்தப் பங்கும் இல்லை.",
+        "Article 344(1): President appoints Official Language Commission (First: B.G. Kher Commission 1955).",
+        "சரத்து 344(1): குடியரசுத் தலைவர் மொழி ஆணையத்தை அமைக்கிறார் (முதல் ஆணையம்: பி.ஜி. கேர் ஆணையம் 1955).",
+        "The Parliamentary Committee on Official Language was formed in 1957 under G.B. Pant to review Kher's report.",
+        "கேர் அறிக்கையை ஆய்வு செய்ய 1957-ல் ஜி.பி. பந்த் தலைமையில் பாராளுமன்ற மொழிக் குழு அமைக்கப்பட்டது."
+    ))
+
+    qs.append(make_sch_q(
+        "SCH_M_039", "Medium", "Conceptual", "Eighth Schedule",
+        "Which of the following official languages included in the Eighth Schedule is the official language of the neighbouring country Nepal, but recognized in India due to widespread native speakers in Sikkim and West Bengal?",
+        "எட்டாவது அட்டவணையில் சேர்க்கப்பட்டுள்ள அதிகாரப்பூர்வ மொழிகளில் எது அண்டை நாடான நேபாளத்தின் அதிகாரப்பூர்வ மொழியாகும், ஆனால் சிக்கிம் மற்றும் மேற்கு வங்கத்தில் பூர்வீகப் பேச்சாளர்கள் உள்ளதால் இந்தியாவில் அங்கீகரிக்கப்பட்டுள்ளது?",
+        "Nepali", "நேபாளி",
+        "Bodo", "போடோ",
+        "Dogri", "டோக்ரி",
+        "Maithili", "மைதிலி",
+        "A",
+        "Nepali was included in the Eighth Schedule by the 71st Constitutional Amendment Act, 1992. It is spoken widely in Sikkim and the Darjeeling/Kalimpong districts of West Bengal, making it a recognized scheduled language of India despite also being Nepal's national language.",
+        "71வது அரசியலமைப்புத் திருத்தச் சட்டம் 1992 மூலம் நேபாளி எட்டாவது அட்டவணையில் சேர்க்கப்பட்டது. இது நேபாளத்தின் தேசிய மொழியாக இருந்தாலும், சிக்கிம் மற்றும் மேற்கு வங்கத்தின் டார்ஜிலிங் பகுதிகளில் பரவலாகப் பேசப்படுவதால் இந்தியாவில் அங்கீகரிக்கப்பட்ட அட்டவணை மொழியாகும்.",
+        "Correct. Nepali was added by 71st CAA 1992.", "சரியானது. 71வது திருத்தம் 1992 மூலம் நேபாளி சேர்க்கப்பட்டது.",
+        "Incorrect. Bodo is indigenous to Assam.", "தவறானது. போடோ அசாமின் பூர்வீக மொழி.",
+        "Incorrect. Dogri is spoken in Jammu.", "தவறானது. டோக்ரி ஜம்முவில் பேசப்படும் மொழி.",
+        "Incorrect. Maithili is spoken in Bihar and Jharkhand.", "தவறானது. மைதிலி பீகார் மற்றும் ஜார்க்கண்டில் பேசப்படுகிறது.",
+        "71st CAA 1992 added Konkani, Manipuri, Nepali (KMN).",
+        "71வது திருத்தம் 1992 கொங்கணி, மணிப்பூரி, நேபாளி (KMN) மொழிகளைச் சேர்த்தது.",
+        "Nepali is the official language of Sikkim alongside English.",
+        "நேபாளி ஆங்கிலத்துடன் இணைந்து சிக்கிமின் அதிகாரப்பூர்வ மொழியாக உள்ளது."
+    ))
+
+    qs.append(make_sch_q(
+        "SCH_M_040", "Medium", "Conceptual", "Eighth Schedule",
+        "What is the constitutional directive regarding the development of the Hindi language as enshrined in Article 351, in relation to the Eighth Schedule?",
+        "எட்டாவது அட்டவணை தொடர்பாக, சரத்து 351-ல் பொறிக்கப்பட்டுள்ள இந்தி மொழியின் வளர்ச்சிக்கான அரசியலமைப்பு வழிகாட்டுதல் என்ன?",
+        "To draw its vocabulary primarily on Sanskrit and secondarily on other languages of the Eighth Schedule",
+        "அதன் சொல்லகராதியை முதன்மையாக சமஸ்கிருதத்திலிருந்தும், இரண்டாவதாக எட்டாவது அட்டவணையின் பிற மொழிகளிலிருந்தும் பெறுவது",
+        "To replace all regional languages of the Eighth Schedule within 50 years",
+        "50 ஆண்டுகளுக்குள் எட்டாவது அட்டவணையின் அனைத்து பிராந்திய மொழிகளையும் மாற்றுவது",
+        "To adopt English grammar and vocabulary exclusively for technical terms",
+        "தொழில்நுட்ப சொற்களுக்கு ஆங்கில இலக்கணம் மற்றும் சொற்களஞ்சியத்தை மட்டுமே ஏற்றுக்கொள்வது",
+        "To translate only foreign legal texts into Hindi without borrowing from Indian languages",
+        "இந்திய மொழிகளிலிருந்து கடன் பெறாமல் வெளிநாட்டு சட்ட நூல்களை மட்டுமே இந்தியில் மொழிபெயர்ப்பது",
+        "A",
+        "Article 351 states that it shall be the duty of the Union to promote the spread of the Hindi language and to secure its enrichment by assimilating forms, style, and expressions used in Hindustani and in the other languages of India specified in the Eighth Schedule, and by drawing, wherever necessary or desirable, for its vocabulary, primarily on Sanskrit and secondarily on other languages.",
+        "சரத்து 351-ன் படி, இந்தி மொழியின் பரவலை ஊக்குவிப்பதும், எட்டாவது அட்டவணையில் குறிப்பிடப்பட்டுள்ள இந்திய மொழிகளின் பாணிகளையும் வெளிப்பாடுகளையும் உள்வாங்கி, அதன் சொல்லகராதியை முதன்மையாக சமஸ்கிருதத்திலிருந்தும், இரண்டாவதாக பிற மொழிகளிலிருந்தும் பெற்று வளப்படுத்துவது மத்திய அரசின் கடமையாகும்.",
+        "Correct. Art 351 directs enrichment of Hindi drawing primarily on Sanskrit and 8th Schedule languages.", "சரியானது. சரத்து 351 இந்தியை சமஸ்கிருதம் & 8வது அட்டவணை மொழிகளிலிருந்து வளப்படுத்த வழிகாட்டுகிறது.",
+        "Incorrect. The Constitution never envisioned replacing regional languages.", "தவறானது. பிராந்திய மொழிகளை மாற்ற அரசியலமைப்பு ஒருபோதும் எண்ணியதில்லை.",
+        "Incorrect. Article 351 specifies Sanskrit and Indian languages, not English.", "தவறானது. சரத்து 351 ஆங்கிலத்தை அல்ல, சமஸ்கிருதம் & இந்திய மொழிகளைக் குறிப்பிடுகிறது.",
+        "Incorrect. It explicitly commands drawing from Eighth Schedule languages.", "தவறானது. எட்டாவது அட்டவணை மொழிகளிலிருந்து சொற்களைப் பெற அது வெளிப்படையாகக் கூறுகிறது.",
+        "Article 351: Union's duty to develop Hindi, drawing on Sanskrit and Eighth Schedule languages.",
+        "சரத்து 351: சமஸ்கிருதம் & 8வது அட்டவணை மொழிகளிலிருந்து இந்தியை வளர்க்கும் மத்திய அரசின் கடமை.",
+        "Articles 343 to 351 in Part XVII deal with the Official Languages of India.",
+        "பகுதி XVII-ல் உள்ள சரத்துகள் 343 முதல் 351 வரை இந்தியாவின் அதிகாரப்பூர்வ மொழிகளைக் கையாள்கின்றன."
+    ))
+
+    # M41 - M45: Ninth Schedule & Judicial Review
+    qs.append(make_sch_q(
+        "SCH_M_041", "Medium", "Conceptual", "Ninth Schedule",
+        "In the historic I.R. Coelho v. State of Tamil Nadu (2007) judgment, what exact cutoff date was established by the Supreme Court for immunity of laws in the Ninth Schedule?",
+        "வரலாற்றுச் சிறப்புமிக்க ஐ.ஆர். கோயல்ஹோ எதிர் தமிழ்நாடு அரசு (2007) தீர்ப்பில், ஒன்பதாவது அட்டவணையில் உள்ள சட்டங்களின் பாதுகாப்பிற்காக உச்சநீதிமன்றத்தால் நிர்ணயிக்கப்பட்ட துல்லியமான வரம்புத் தேதி என்ன?",
+        "April 24, 1973 (the date of Kesavananda Bharati judgment)",
+        "ஏப்ரல் 24, 1973 (கேசவானந்த பாரதி தீர்ப்பு வழங்கப்பட்ட தேதி)",
+        "January 26, 1950 (date of Constitution commencement)",
+        "ஜனவரி 26, 1950 (அரசியலமைப்பு நடைமுறைக்கு வந்த தேதி)",
+        "June 25, 1975 (date of National Emergency imposition)",
+        "ஜூன் 25, 1975 (தேசிய அவசரநிலை பிரகடனப்படுத்தப்பட்ட தேதி)",
+        "November 26, 1949 (date of Constitution adoption)",
+        "நவம்பர் 26, 1949 (அரசியலமைப்பு ஏற்றுக்கொள்ளப்பட்ட தேதி)",
+        "A",
+        "A 9-judge Constitution Bench in I.R. Coelho (2007) unanimously held that any law inserted into the Ninth Schedule on or after April 24, 1973 (the date of the Kesavananda Bharati ruling on basic structure) is open to judicial review and can be struck down if it violates the basic structure or Fundamental Rights under Articles 14, 19, and 21.",
+        "ஐ.ஆர். கோயல்ஹோ (2007) வழக்கில் 9 நீதிபதிகள் கொண்ட அமர்வு, ஏப்ரல் 24, 1973-க்கு (கேசவானந்த பாரதி அடிப்படைக் கட்டமைப்புத் தீர்ப்பு தேதி) பிறகு ஒன்பதாவது அட்டவணையில் சேர்க்கப்பட்ட எந்தவொரு சட்டமும் நீதித்துறை மறுஆய்வுக்கு உட்பட்டது என்றும், அவை சரத்து 14, 19, 21 மற்றும் அடிப்படைக் கட்டமைப்பை மீறினால் ரத்து செய்யப்படலாம் என்றும் தீர்ப்பளித்தது.",
+        "Correct. April 24, 1973 is the cutoff date fixed in I.R. Coelho (2007).", "சரியானது. ஏப்ரல் 24, 1973 என்பது ஐ.ஆர். கோயல்ஹோ (2007) வழக்கில் நிர்ணயிக்கப்பட்ட வரம்புத் தேதி.",
+        "Incorrect. 1950 was argued by petitioners but not adopted as the post-basic structure cutoff.", "தவறானது. 1950 அடிப்படைக் கட்டமைப்புக்கு முந்தையது.",
+        "Incorrect. Emergency date 1975 was not the benchmark.", "தவறானது. அவசரநிலை தேதி இதில் அளவுகோல் அல்ல.",
+        "Incorrect. Nov 26, 1949 was adoption date, not the judicial review cutoff.", "தவறானது. நவம்பர் 26, 1949 என்பது அரசியலமைப்பு ஏற்புத் தேதி.",
+        "Ninth Schedule cutoff: April 24, 1973 (Kesavananda date). Laws added after this date are subject to Basic Structure review.",
+        "9வது அட்டவணை வரம்புத் தேதி: ஏப்ரல் 24, 1973. இதற்குப் பின் சேர்க்கப்பட்ட சட்டங்கள் அடிப்படைக் கட்டமைப்பு மறுஆய்வுக்கு உட்பட்டவை.",
+        "The judgment was delivered by a unanimous 9-judge bench headed by CJI Y.K. Sabharwal.",
+        "இந்தத் தீர்ப்பு தலைமை நீதிபதி ஒய்.கே. சபர்வால் தலைமையிலான 9 நீதிபதிகள் கொண்ட அமர்வால் ஒருமனதாக வழங்கப்பட்டது."
+    ))
+
+    qs.append(make_sch_q(
+        "SCH_M_042", "Medium", "Conceptual", "Ninth Schedule",
+        "By which Constitutional Amendment Act was the Tamil Nadu Backward Classes, Scheduled Castes and Scheduled Tribes (Reservation of Seats in Educational Institutions and of Appointments or Posts in the Services under the State) Act, 1993 (protecting 69% reservation) placed in the Ninth Schedule?",
+        "தமிழ்நாட்டின் 69% இடஒதுக்கீட்டைப் பாதுகாக்கும் தமிழ்நாடு பிற்படுத்தப்பட்டோர், எஸ்சி/எஸ்டி (கல்வி மற்றும் அரசுப் பணிகளில் இடஒதுக்கீடு) சட்டம் 1993 எந்த அரசியலமைப்புத் திருத்தச் சட்டத்தின் மூலம் ஒன்பதாவது அட்டவணையில் சேர்க்கப்பட்டது?",
+        "76th Constitutional Amendment Act, 1994", "76வது அரசியலமைப்புத் திருத்தச் சட்டம், 1994",
+        "73rd Constitutional Amendment Act, 1992", "73வது அரசியலமைப்புத் திருத்தச் சட்டம், 1992",
+        "77th Constitutional Amendment Act, 1995", "77வது அரசியலமைப்புத் திருத்தச் சட்டம், 1995",
+        "81st Constitutional Amendment Act, 2000", "81வது அரசியலமைப்புத் திருத்தச் சட்டம், 2000",
+        "A",
+        "The 76th Constitutional Amendment Act, 1994 placed the Tamil Nadu Reservation Act, 1994 in the Ninth Schedule (as Entry 257A) to protect its 69% quota from being invalidated by the 50% ceiling imposed by the Supreme Court in the Indra Sawhney case (1992).",
+        "இந்திரா சஹானி வழக்கில் (1992) உச்சநீதிமன்றம் விதித்த 50% உச்சவரம்பிலிருந்து தமிழ்நாட்டின் 69% இடஒதுக்கீட்டைப் பாதுகாக்க, 76வது அரசியலமைப்புத் திருத்தச் சட்டம் 1994 மூலம் தமிழ்நாடு இடஒதுக்கீடு சட்டம் 1994 ஒன்பதாவது அட்டவணையில் (பதிவு 257A ஆக) சேர்க்கப்பட்டது.",
+        "Correct. 76th CAA 1994 placed TN 69% reservation Act into 9th Schedule.", "சரியானது. 76வது திருத்தம் 1994 தமிழக 69% இடஒதுக்கீட்டுச் சட்டத்தை 9வது அட்டவணையில் சேர்த்தது.",
+        "Incorrect. 73rd CAA 1992 introduced Panchayati Raj (Eleventh Schedule).", "தவறானது. 73வது திருத்தம் 1992 பஞ்சாயத்து ராஜ் பற்றியது (11வது அட்டவணை).",
+        "Incorrect. 77th CAA 1995 introduced reservations in promotions for SC/ST.", "தவறானது. 77வது திருத்தம் 1995 எஸ்சி/எஸ்டி பதவி உயர்வில் இடஒதுக்கீடு பற்றியது.",
+        "Incorrect. 81st CAA 2000 introduced the carry-forward rule for backlog vacancies.", "தவறானது. 81வது திருத்தம் 2000 பின்னடைவு காலிப்பணியிடங்கள் பற்றியது.",
+        "TN 69% reservation protected in 9th Schedule: 76th CAA 1994 (Entry 257A).",
+        "தமிழக 69% இடஒதுக்கீடு 9வது அட்டவணையில் பாதுகாப்பு: 76வது திருத்தம் 1994 (பதிவு 257A).",
+        "Under the leadership of Chief Minister J. Jayalalithaa, the Tamil Nadu Assembly passed the law unanimously before Parliament enacted the 76th Amendment.",
+        "முதலமைச்சர் ஜெ. ஜெயலலிதா தலைமையில் தமிழக சட்டமன்றம் இச்சட்டத்தை ஒருமனதாக நிறைவேற்றிய பின் பாராளுமன்றம் 76வது திருத்தத்தை இயற்றியது."
+    ))
+
+    qs.append(make_sch_q(
+        "SCH_M_043", "Medium", "Conceptual", "Ninth Schedule",
+        "Which of the following Articles of the Constitution provides constitutional immunity to the Acts and Regulations included in the Ninth Schedule from being void on grounds of inconsistency with Fundamental Rights?",
+        "அடிப்படை உரிமைகளுக்கு முரணாக உள்ளது என்ற காரணத்திற்காக ஒன்பதாவது அட்டவணையில் உள்ள சட்டங்கள் செல்லாததாகாது என்ற அரசியலமைப்புப் பாதுகாப்பை வழங்கும் சரத்து எது?",
+        "Article 31B", "சரத்து 31B",
+        "Article 31A", "சரத்து 31A",
+        "Article 31C", "சரத்து 31C",
+        "Article 32", "சரத்து 32",
+        "A",
+        "Article 31B was inserted by the 1st Constitutional Amendment Act, 1951 to validate and provide immunity to Acts and Regulations specified in the Ninth Schedule, stating that none of them shall be deemed to be void on the ground that it is inconsistent with any Fundamental Right.",
+        "1வது அரசியலமைப்புத் திருத்தச் சட்டம் 1951 மூலம் சேர்க்கப்பட்ட சரத்து 31B, ஒன்பதாவது அட்டவணையில் உள்ள சட்டங்கள் அடிப்படை உரிமைகளுக்கு முரணாக உள்ளன என்ற அடிப்படையில் செல்லாததாகக் கருதப்படாது எனக் கூறி அவற்றுக்குப் பாதுகாப்பு அளிக்கிறது.",
+        "Correct. Article 31B provides immunity to Ninth Schedule laws.", "சரியானது. சரத்து 31B ஒன்பதாவது அட்டவணைச் சட்டங்களுக்குப் பாதுகாப்பு அளிக்கிறது.",
+        "Incorrect. Article 31A protects acquisition of estates and agrarian reforms.", "தவறானது. சரத்து 31A எஸ்டேட்டுகள் கையகப்படுத்துதல் மற்றும் நிலச் சீர்திருத்தங்களைப் பாதுகாக்கிறது.",
+        "Incorrect. Article 31C protects laws giving effect to DPSPs under Art 39(b) and (c).", "தவறானது. சரத்து 31C சரத்து 39(b) மற்றும் (c)-ன் கீழான நெறிமுறைக் கொள்கைச் சட்டங்களைப் பாதுகாக்கிறது.",
+        "Incorrect. Article 32 is the right to constitutional remedies.", "தவறானது. சரத்து 32 என்பது அரசியலமைப்புத் தீர்வுக்கான உரிமை.",
+        "Article 31B created the Ninth Schedule protective umbrella.",
+        "சரத்து 31B ஒன்பதாவது அட்டவணைப் பாதுகாப்புக் குடையை உருவாக்கியது.",
+        "Article 31B is retrospective in nature, validating acts even from their original enactment date.",
+        "சரத்து 31B முன்தேதியிட்டுப் பொருந்தும் தன்மை கொண்டது; சட்டங்களை அவற்றின் தொடக்க நாளிலிருந்தே பாதுகாக்கிறது."
+    ))
+
+    qs.append(make_sch_q(
+        "SCH_M_044", "Medium", "Conceptual", "Ninth Schedule",
+        "How many Acts were originally placed in the Ninth Schedule by the 1st Constitutional Amendment Act in 1951, and approximately how many are there today?",
+        "1951-ல் 1வது அரசியலமைப்புத் திருத்தச் சட்டத்தின் மூலம் ஒன்பதாவது அட்டவணையில் தொடக்கத்தில் எத்தனை சட்டங்கள் வைக்கப்பட்டன, மற்றும் தற்போது தோராயமாக எத்தனை உள்ளன?",
+        "Originally 13 Acts; currently 282 (or 284) entries",
+        "தொடக்கத்தில் 13 சட்டங்கள்; தற்போது 282 (அல்லது 284) பதிவுகள்",
+        "Originally 8 Acts; currently 100 entries", "தொடக்கத்தில் 8 சட்டங்கள்; தற்போது 100 பதிவுகள்",
+        "Originally 25 Acts; currently 350 entries", "தொடக்கத்தில் 25 சட்டங்கள்; தற்போது 350 பதிவுகள்",
+        "Originally 1 Act; currently 500 entries", "தொடக்கத்தில் 1 சட்டம்; தற்போது 500 பதிவுகள்",
+        "A",
+        "The 1st Amendment Act, 1951 placed 13 land reform Acts in the Ninth Schedule. Through repeated constitutional amendments, the number of entries has expanded to 282 (with entry 284 due to numbered sub-entries).",
+        "1வது திருத்தச் சட்டம் 1951 மூலம் ஒன்பதாவது அட்டவணையில் 13 நிலச் சீர்திருத்தச் சட்டங்கள் வைக்கப்பட்டன. தொடர்ச்சியான அரசியலமைப்புத் திருத்தங்கள் மூலம் தற்போது இதில் 282 (துணைப் பதிவுகளுடன் 284 வரை) சட்டங்கள் உள்ளன.",
+        "Correct. 13 original acts in 1951; 282 entries at present.", "சரியானது. 1951-ல் 13 அசல் சட்டங்கள்; தற்போது 282 பதிவுகள் உள்ளன.",
+        "Incorrect. 8 was the original number of schedules, not 9th schedule acts.", "தவறானது. 8 என்பது அட்டவணைகளின் எண்ணிக்கை, சட்டங்களின் எண்ணிக்கை அல்ல.",
+        "Incorrect. 25 was not the starting count.", "தவறானது. 25 என்பது தொடக்க எண்ணிக்கை அல்ல.",
+        "Incorrect. 1 act is incorrect; 13 acts were initially listed.", "தவறானது. 1 சட்டம் என்பது தவறானது; 13 சட்டங்கள் வைக்கப்பட்டன.",
+        "Ninth Schedule entries: Began with 13 acts in 1951 -> Expanded to 282+ acts today.",
+        "9வது அட்டவணைப் பதிவுகள்: 1951-ல் 13 சட்டங்களுடன் தொடங்கியது -> தற்போது 282+ சட்டங்களாக விரிவடைந்துள்ளது.",
+        "The last major amendment expanding the Ninth Schedule was the 78th CAA 1995 adding 27 land reform laws.",
+        "9வது அட்டவணையை விரிவுபடுத்திய கடைசி பெரிய திருத்தம் 78வது திருத்தம் 1995 (27 நிலச் சீர்திருத்தச் சட்டங்களைச் சேர்த்தது)."
+    ))
+
+    qs.append(make_sch_q(
+        "SCH_M_045", "Medium", "Conceptual", "Ninth Schedule",
+        "In which landmark case did the Supreme Court for the first time rule that the basic structure doctrine applies to constitutional amendments adding laws to the Ninth Schedule, establishing the 'dual test' of rights?",
+        "ஒன்பதாவது அட்டவணையில் சட்டங்களைச் சேர்க்கும் அரசியலமைப்புத் திருத்தங்களுக்கும் அடிப்படைக் கட்டமைப்புக் கோட்பாடு பொருந்தும் என உச்சநீதிமன்றம் முதன்முதலில் உறுதிசெய்து, 'இரட்டைத் தேர்வு' முறையை நிறுவிய வரலாற்றுச் சிறப்புமிக்க வழக்கு எது?",
+        "I.R. Coelho v. State of Tamil Nadu (2007)", "ஐ.ஆர். கோயல்ஹோ எதிர் தமிழ்நாடு அரசு (2007)",
+        "Shankari Prasad v. Union of India (1951)", "சங்கரி பிரசாத் எதிர் இந்திய யூனியன் (1951)",
+        "Sajjan Singh v. State of Rajasthan (1965)", "சஜ்ஜன் சிங் எதிர் ராஜஸ்தான் அரசு (1965)",
+        "Golak Nath v. State of Punjab (1967)", "கோலக் நாத் எதிர் பஞ்சாப் அரசு (1967)",
+        "A",
+        "In I.R. Coelho (2007), the Supreme Court laid down the 'dual test' (essence of rights test and impact/effect test) to determine whether a law added to the Ninth Schedule after April 24, 1973 violates the basic structure of the Constitution.",
+        "ஐ.ஆர். கோயல்ஹோ (2007) வழக்கில், ஏப்ரல் 24, 1973-க்குப் பிறகு ஒன்பதாவது அட்டவணையில் சேர்க்கப்பட்ட சட்டம் அரசியலமைப்பின் அடிப்படைக் கட்டமைப்பை மீறுகிறதா என்பதைத் தீர்மானிக்க 'இரட்டைத் தேர்வு' (உரிமைகளின் சாராம்சத் தேர்வு மற்றும் நேரடி விளைவுத் தேர்வு) கோட்பாட்டை உச்சநீதிமன்றம் வகுத்தது.",
+        "Correct. I.R. Coelho (2007) established the dual test for Ninth Schedule review.", "சரியானது. ஐ.ஆர். கோயல்ஹோ (2007) 9வது அட்டவணை மறுஆய்வுக்கான இரட்டைத் தேர்வை வகுத்தது.",
+        "Incorrect. Shankari Prasad (1951) upheld the 1st Amendment and 9th Schedule without basic structure.", "தவறானது. சங்கரி பிரசாத் (1951) 1வது திருத்தத்தை முழுமையாக ஆதரித்தது.",
+        "Incorrect. Sajjan Singh (1965) upheld 17th Amendment.", "தவறானது. சஜ்ஜன் சிங் (1965) 17வது திருத்தத்தை ஆதரித்தது.",
+        "Incorrect. Golak Nath (1967) held Parliament cannot abridge fundamental rights.", "தவறானது. கோலக் நாத் (1967) அடிப்படை உரிமைகளைத் திருத்த முடியாது என்றது.",
+        "I.R. Coelho (2007): Formulated the 'Rights Test' and 'Essence of Rights Test' for 9th Schedule scrutiny.",
+        "ஐ.ஆர். கோயல்ஹோ (2007): 9வது அட்டவணை ஆய்வுக்கு 'உரிமைகள் தேர்வு' மற்றும் 'உரிமைகளின் சாராம்சத் தேர்வு' முறையை உருவாக்கியது.",
+        "No blanket immunity exists for any law inserted after April 24, 1973.",
+        "ஏப்ரல் 24, 1973-க்குப் பிறகு சேர்க்கப்பட்ட எந்தச் சட்டத்திற்கும் முழுமையான பாதுகாப்பு கிடையாது."
+    ))
+
+    # M46 - M50: Tenth, Eleventh, Twelfth Schedules Nuances
+    qs.append(make_sch_q(
+        "SCH_M_046", "Medium", "Conceptual", "Tenth Schedule",
+        "Under the Tenth Schedule, an independent member of a House becomes disqualified to remain a member if he:",
+        "பத்தாவது அட்டவணையின் கீழ், ஒரு அவையின் சுயேச்சை உறுப்பினர் எப்போது தனது உறுப்பினர் பதவியை இழக்க நேரிடும்?",
+        "Joins any political party after election", "தேர்தலுக்குப் பிறகு ஏதேனும் ஒரு அரசியல் கட்சியில் சேர்ந்தால்",
+        "Votes against the ruling party on a money bill", "நிதி மசோதாவில் ஆளும் கட்சிக்கு எதிராக வாக்களித்தால்",
+        "Does not join a political party within six months of election", "தேர்தல் முடிந்த ஆறு மாதங்களுக்குள் ஒரு அரசியல் கட்சியில் சேரவில்லை என்றால்",
+        "Refuses to accept a nominated committee post", "நியமிக்கப்பட்ட குழுப் பொறுப்பை ஏற்க மறுத்தால்",
+        "A",
+        "Paragraph 2(2) of the Tenth Schedule provides that an elected member of a House who has been elected as such otherwise than as a candidate set up by any political party (i.e., an independent) shall be disqualified if he joins any political party after such election.",
+        "பத்தாவது அட்டவணையின் பத்தி 2(2)-ன் படி, எந்தவொரு அரசியல் கட்சியாலும் நிறுத்தப்படாமல் சுயேச்சையாக தேர்ந்தெடுக்கப்பட்ட ஒரு உறுப்பினர், தேர்தலுக்குப் பிறகு ஏதேனும் ஒரு அரசியல் கட்சியில் சேர்ந்தால் அவர் உடனடியாக தகுதிநீக்கம் செய்யப்படுவார்.",
+        "Correct. Independent member is disqualified if they join ANY political party after election.", "சரியானது. சுயேச்சை உறுப்பினர் தேர்தலுக்குப் பின் எந்தக் கட்சியிலும் சேர்ந்தால் தகுதிநீக்கம் செய்யப்படுவார்.",
+        "Incorrect. Independents are not bound by party whips, so voting against ruling party is permitted.", "தவறானது. சுயேச்சைகளுக்கு கொறடா உத்தரவு பொருந்தாது, எனவே ஆளும் கட்சியை எதிர்த்து வாக்களிக்கலாம்.",
+        "Incorrect. Independents are never required to join a party within 6 months (that applies only to NOMINATED members).", "தவறானது. 6 மாத விதி நியமன உறுப்பினர்களுக்கு மட்டுமே பொருந்தும், சுயேச்சைகளுக்கு அல்ல.",
+        "Incorrect. Refusing committee post is not a ground under Tenth Schedule.", "தவறானது. குழுப் பதவியை மறுப்பது கட்சித் தாவல் தகுதிநீக்கக் காரணியல்ல.",
+        "Tenth Schedule rules: Independent joining party = Disqualified immediately.",
+        "10வது அட்டவணை விதி: சுயேச்சை கட்சியில் சேர்ந்தால் = உடனடியாகத் தகுதிநீக்கம்.",
+        "Nominated member: Allowed to join a party within 6 months; disqualified if joining after 6 months.",
+        "நியமன உறுப்பினர்: 6 மாதங்களுக்குள் கட்சியில் சேரலாம்; 6 மாதங்களுக்குப் பின் சேர்ந்தால் தகுதிநீக்கம்."
+    ))
+
+    qs.append(make_sch_q(
+        "SCH_M_047", "Medium", "Conceptual", "Tenth Schedule",
+        "Under Paragraph 4 of the Tenth Schedule, a member of a House is exempt from disqualification on ground of defection in case of a merger of their original political party, provided not less than what proportion of members agree to such merger?",
+        "பத்தாவது அட்டவணையின் பத்தி 4-ன் கீழ், ஒரு கட்சியின் உறுப்பினர்களில் எத்தனை பங்குக்கு குறையாதவர்கள் இணைப்பிற்கு ஒப்புக்கொண்டால், கட்சி இணைப்பின் போது கட்சித் தாவல் தகுதிநீக்கத்திலிருந்து விலக்கு அளிக்கப்படுகிறது?",
+        "Two-thirds (2/3rds) of the members of the legislative party",
+        "சட்டமன்றக் கட்சியின் உறுப்பினர்களில் மூன்றில் இரண்டு பங்கு (2/3) பேர்",
+        "One-third (1/3rd) of the members of the legislative party",
+        "சட்டமன்றக் கட்சியின் உறுப்பினர்களில் மூன்றில் ஒரு பங்கு (1/3) பேர்",
+        "One-half (1/2) of the members of the legislative party",
+        "சட்டமன்றக் கட்சியின் உறுப்பினர்களில் பாதியளவு (1/2) பேர்",
+        "Three-fourths (3/4ths) of the members of the legislative party",
+        "சட்டமன்றக் கட்சியின் உறுப்பினர்களில் நான்கில் மூன்று பங்கு (3/4) பேர்",
+        "A",
+        "Under Paragraph 4(2) of the Tenth Schedule, a merger of the original political party is deemed to have taken place only if not less than two-thirds of the members of the legislature party concerned have agreed to such merger.",
+        "பத்தாவது அட்டவணையின் பத்தி 4(2)-ன் படி, சம்பந்தப்பட்ட சட்டமன்றக் கட்சியின் உறுப்பினர்களில் மூன்றில் இரண்டு பங்குக்கு (2/3) குறையாதவர்கள் இணைப்பிற்கு ஒப்புக்கொண்டால் மட்டுமே அது உண்மையான கட்சி இணைப்பாகக் கருதப்பட்டு தகுதிநீக்கத்திலிருந்து விலக்கு அளிக்கப்படும்.",
+        "Correct. Two-thirds (2/3rd) agreement is required for a valid merger exception.", "சரியானது. செல்லுபடியாகும் இணைப்பிற்கு மூன்றில் இரண்டு பங்கு (2/3) ஒப்புதல் அவசியம்.",
+        "Incorrect. One-third (1/3rd) split rule was deleted by the 91st CAA, 2003.", "தவறானது. மூன்றில் ஒரு பங்கு (1/3) பிளவு விதி 91வது திருத்தம் 2003-ஆல் நீக்கப்பட்டது.",
+        "Incorrect. One-half is not the constitutional threshold.", "தவறானது. பாதி என்பது அரசியலமைப்பு வரம்பு அல்ல.",
+        "Incorrect. Three-fourths is higher than the constitutional requirement.", "தவறானது. நான்கில் மூன்று பங்கு அவசியமில்லை.",
+        "Tenth Schedule Merger Exception: Requires at least 2/3rd members of the Legislature party.",
+        "10வது அட்டவணை இணைப்பு விதிவிலக்கு: சட்டமன்றக் கட்சியில் குறைந்தது 2/3 பங்கு உறுப்பினர்கள் தேவை.",
+        "The 91st Amendment Act, 2003 abolished the protection for 1/3rd 'splits' under Paragraph 3.",
+        "91வது திருத்தச் சட்டம் 2003, பத்தி 3-ன் கீழான 1/3 பங்கு 'பிளவு' பாதுகாப்பை முற்றிலுமாக நீக்கியது."
+    ))
+
+    qs.append(make_sch_q(
+        "SCH_M_048", "Medium", "Conceptual", "Tenth Schedule",
+        "What was the crucial ruling of the Supreme Court in the landmark Kihoto Hollohan v. Zachillhu (1992) case concerning the Tenth Schedule?",
+        "பத்தாவது அட்டவணை தொடர்பான வரலாற்றுச் சிறப்புமிக்க கிகோட்டோ ஹோலோஹான் எதிர் சாச்சிலு (1992) வழக்கில் உச்சநீதிமன்றத்தின் மிக முக்கியமான தீர்ப்பு என்ன?",
+        "The Speaker acts as a tribunal when deciding disqualification, and the decision is subject to judicial review",
+        "தகுதிநீக்கத்தை தீர்மானிக்கும் போது சபாநாயகர் ஒரு தீர்ப்பாயமாகச் செயல்படுகிறார், மேலும் அவரது முடிவு நீதித்துறை மறுஆய்வுக்கு உட்பட்டது",
+        "The Speaker's decision is absolute, final, and completely beyond the reach of any court",
+        "சபாநாயகரின் முடிவு இறுதியானது மற்றும் முழுமையானது; எந்த நீதிமன்றமும் அதில் தலையிட முடியாது",
+        "Only the President can decide defection petitions, not the Speaker",
+        "சபாநாயகர் அல்ல, குடியரசுத் தலைவர் மட்டுமே கட்சித் தாவல் மனுக்களைத் தீர்மானிக்க முடியும்",
+        "The Tenth Schedule is unconstitutional in its entirety and void",
+        "பத்தாவது அட்டவணை முழுமையாக அரசியலமைப்புக்கு முரணானது மற்றும் செல்லாதது",
+        "A",
+        "In Kihoto Hollohan (1992), a 5-judge Constitution Bench upheld the validity of the Tenth Schedule but struck down Paragraph 7 (which barred court jurisdiction). The Court held that the Speaker/Chairman acts as a tribunal while deciding disqualification petitions and their decision is subject to judicial review by High Courts and the Supreme Court under Articles 226 and 136.",
+        "கிகோட்டோ ஹோலோஹான் (1992) வழக்கில், 5 நீதிபதிகள் கொண்ட அமர்வு பத்தாவது அட்டவணையின் செல்லுபடியாகும் தன்மையை உறுதி செய்தது, ஆனால் நீதிமன்ற அதிகாரத்தைத் தடுத்த பத்தி 7-ஐ ரத்து செய்தது. தகுதிநீக்கம் குறித்து முடிவெடுக்கும் போது சபாநாயகர் ஒரு தீர்ப்பாயமாகச் செயல்படுகிறார் என்றும், அவரது முடிவு சரத்து 226 மற்றும் 136-ன் கீழ் நீதிமன்ற மறுஆய்வுக்கு உட்பட்டது என்றும் தீர்ப்பளித்தது.",
+        "Correct. Speaker acts as a tribunal; decision is subject to judicial review.", "சரியானது. சபாநாயகர் தீர்ப்பாயமாக செயல்படுகிறார்; முடிவு நீதித்துறை மறுஆய்வுக்கு உட்பட்டது.",
+        "Incorrect. The Court explicitly struck down Paragraph 7 which sought total finality.", "தவறானது. முழுமையான இறுதியை நாடிய பத்தி 7-ஐ நீதிமன்றம் ரத்து செய்தது.",
+        "Incorrect. The Speaker remains the designated authority, not the President.", "தவறானது. சபாநாயகரே அதிகாரம் படைத்தவர், குடியரசுத் தலைவர் அல்ல.",
+        "Incorrect. The Tenth Schedule was upheld, not struck down entirely.", "தவறானது. 10வது அட்டவணை முழுமையாக ரத்து செய்யப்படவில்லை, உறுதி செய்யப்பட்டது.",
+        "Kihoto Hollohan (1992): Speaker's order under 10th Schedule is subject to judicial review.",
+        "கிகோட்டோ ஹோலோஹான் (1992): 10வது அட்டவணையின் கீழான சபாநாயகர் உத்தரவு நீதித்துறை மறுஆய்வுக்கு உட்பட்டது.",
+        "Judicial review is available on grounds of mala fides, perversity, or violation of constitutional mandates.",
+        "நம்பிக்கைத் துரோகம், வரம்பு மீறல் அல்லது அரசியலமைப்பு விதி மீறல் ஆகியவற்றின் அடிப்படையில் நீதிமன்ற மறுஆய்வு செய்யலாம்."
+    ))
+
+    qs.append(make_sch_q(
+        "SCH_M_049", "Medium", "Conceptual", "Eleventh Schedule",
+        "Which Article of the Constitution gives constitutional backing to the 29 functional subjects listed in the Eleventh Schedule for Panchayats?",
+        "பஞ்சாயத்துகளுக்கான பதினோராவது அட்டவணையில் பட்டியலிடப்பட்டுள்ள 29 செயல்பாட்டுத் துறைகளுக்கு அரசியலமைப்பு அதிகாரத்தை வழங்கும் சரத்து எது?",
+        "Article 243G", "சரத்து 243G",
+        "Article 243W", "சரத்து 243W",
+        "Article 243E", "சரத்து 243E",
+        "Article 243K", "சரத்து 243K",
+        "A",
+        "Article 243G of Part IX of the Constitution provides that the Legislature of a State may endow the Panchayats with powers and authority to implement schemes for economic development and social justice, including those in relation to the matters listed in the Eleventh Schedule (29 matters).",
+        "அரசியலமைப்பின் பகுதி IX-ல் உள்ள சரத்து 243G, பதினோராவது அட்டவணையில் பட்டியலிடப்பட்டுள்ள 29 விவகாரங்கள் உட்பட, பொருளாதார வளர்ச்சி மற்றும் சமூக நீதிக்கான திட்டங்களைச் செயல்படுத்த பஞ்சாயத்துகளுக்கு அதிகாரங்களையும் பொறுப்புகளையும் மாநில சட்டமன்றம் வழங்கலாம் என்று கூறுகிறது.",
+        "Correct. Article 243G relates to powers and Eleventh Schedule matters of Panchayats.", "சரியானது. சரத்து 243G பஞ்சாயத்துகளின் அதிகாரங்கள் மற்றும் 11வது அட்டவணையுடன் தொடர்புடையது.",
+        "Incorrect. Article 243W relates to Municipalities and Twelfth Schedule.", "தவறானது. சரத்து 243W நகராட்சிகள் மற்றும் 12வது அட்டவணையுடன் தொடர்புடையது.",
+        "Incorrect. Article 243E relates to the 5-year duration of Panchayats.", "தவறானது. சரத்து 243E பஞ்சாயத்துகளின் 5 ஆண்டு பதவிக்காலம் பற்றியது.",
+        "Incorrect. Article 243K relates to the State Election Commission for Panchayats.", "தவறானது. சரத்து 243K பஞ்சாயத்துகளுக்கான மாநிலத் தேர்தல் ஆணையம் பற்றியது.",
+        "Eleventh Schedule (Panchayats): 29 subjects under Article 243G.",
+        "11வது அட்டவணை (பஞ்சாயத்துகள்): சரத்து 243G-ன் கீழ் 29 துறைகள்.",
+        "Twelfth Schedule (Municipalities): 18 subjects under Article 243W.",
+        "12வது அட்டவணை (நகராட்சிகள்): சரத்து 243W-ன் கீழ் 18 துறைகள்."
+    ))
+
+    qs.append(make_sch_q(
+        "SCH_M_050", "Medium", "Conceptual", "Twelfth Schedule",
+        "Which of the following functional items is explicitly listed in the Twelfth Schedule (Article 243W) for Municipalities, but NOT in the Eleventh Schedule for Panchayats?",
+        "பின்வரும் செயல்பாட்டுப் பணிகளில் எது நகராட்சிகளுக்கான பன்னிரண்டாவது அட்டவணையில் (சரத்து 243W) தெளிவாகப் பட்டியலிடப்பட்டுள்ளது, ஆனால் பஞ்சாயத்துகளுக்கான பதினோராவது அட்டவணையில் இல்லை?",
+        "Fire services and Urban forestry", "தீயணைப்பு சேவைகள் மற்றும் நகர்ப்புற வனவியல்",
+        "Drinking water and Fuel and fodder", "குடிநீர் மற்றும் எரிபொருள் & கால்நடைத் தீவனம்",
+        "Poverty alleviation programme and Minor irrigation", "வறுமை ஒழிப்புத் திட்டம் மற்றும் சிறு பாசனம்",
+        "Fisheries and Animal husbandry", "மீன்வளம் மற்றும் கால்நடை வளர்ப்பு",
+        "A",
+        "Fire services (Entry 7), Urban forestry (Entry 8), Slum improvement, and Urban poverty alleviation are distinctive items in the Twelfth Schedule for Municipalities (18 items). Drinking water, minor irrigation, animal husbandry, and fisheries are primarily rural items found in the Eleventh Schedule.",
+        "தீயணைப்பு சேவைகள் (பதிவு 7), நகர்ப்புற வனவியல் (பதிவு 8), சேரி மேம்பாடு மற்றும் நகர்ப்புற வறுமை ஒழிப்பு ஆகியவை நகராட்சிகளுக்கான 12வது அட்டவணையில் உள்ள பிரத்யேக துறைகளாகும். குடிநீர், சிறு பாசனம், கால்நடை வளர்ப்பு மற்றும் மீன்வளம் ஆகியவை 11வது அட்டவணையில் உள்ள கிராமப்புறத் துறைகளாகும்.",
+        "Correct. Fire services and Urban forestry are in the Twelfth Schedule.", "சரியானது. தீயணைப்பு சேவைகள் மற்றும் நகர்ப்புற வனவியல் 12வது அட்டவணையில் உள்ளன.",
+        "Incorrect. Fuel and fodder is Entry 12 of Eleventh Schedule.", "தவறானது. எரிபொருள் மற்றும் தீவனம் 11வது அட்டவணையின் பதிவு 12 ஆகும்.",
+        "Incorrect. Minor irrigation is Entry 3 of Eleventh Schedule.", "தவறானது. சிறு பாசனம் 11வது அட்டவணையின் பதிவு 3 ஆகும்.",
+        "Incorrect. Fisheries and animal husbandry are Entries 4 & 5 of Eleventh Schedule.", "தவறானது. மீன்வளம் மற்றும் கால்நடை வளர்ப்பு 11வது அட்டவணையில் உள்ளன.",
+        "Twelfth Schedule has 18 urban matters: Urban planning, fire services, water supply, public health, etc.",
+        "12வது அட்டவணையில் 18 நகர்ப்புற பணிகள் உள்ளன: நகர திட்டமிடல், தீயணைப்பு, நீர் வழங்கல், பொது சுகாதாரம் போன்றவை.",
+        "Both 11th and 12th Schedules were inserted in 1992 by the 73rd and 74th Amendment Acts respectively.",
+        "11 மற்றும் 12வது அட்டவணைகள் 1992-ல் முறையே 73 மற்றும் 74வது திருத்தச் சட்டங்களால் சேர்க்கப்பட்டன."
+    ))
+
+    return qs
+
+if __name__ == "__main__":
+    qs = get_medium_questions()
+    print(f"Loaded {len(qs)} Medium questions successfully.")

@@ -1,0 +1,686 @@
+"""
+Part 1 of Grand Test generator for Election Commission (EC_GT_001 to EC_GT_025).
+"""
+
+from ec_mcq_helper import make_ec_q
+
+def get_gt_part1():
+    qs = []
+
+    # GT 001
+    qs.append(make_ec_q(
+        qid="EC_GT_001", diff="Easy", qtype="Single-Choice", subtopic="Constitutional Status",
+        en_stem="Which Article of the Constitution guarantees that the service conditions and tenure of office of the Chief Election Commissioner shall not be varied to his disadvantage after his appointment?",
+        ta_stem="தலைமைத் தேர்தல் ஆணையரின் பணிக்கால நிபந்தனைகளும் பதவிக்காலமும் அவரது நியமனத்திற்குப் பின்னர் அவருக்கு பாதகமாக மாற்றப்படக்கூடாது என்று உத்தரவாதம் அளிக்கும் அரசியலமைப்புச் சரத்து எது?",
+        en_a="Article 324(5) Proviso", ta_a="சரத்து 324(5) வரம்புரை",
+        en_b="Article 324(2)", ta_b="சரத்து 324(2)",
+        en_c="Article 324(4)", ta_c="சரத்து 324(4)",
+        en_d="Article 324(6)", ta_d="சரத்து 324(6)",
+        correct_key="A",
+        exp_en="Under the second proviso to Article 324(5), the conditions of service and tenure of office of the Chief Election Commissioner shall not be varied to his disadvantage after his appointment.",
+        exp_ta="சரத்து 324(5)-ன் இரண்டாவது வரம்புரையின்படி, தலைமைத் தேர்தல் ஆணையரின் பணிக்கால நிபந்தனைகளும் பதவிக்காலமும் அவரது நியமனத்திற்குப் பிறகு அவருக்கு பாதகமாக மாற்றப்படலாகாது.",
+        why_a_en="Correct. Article 324(5) second proviso guarantees this safeguard.",
+        why_a_ta="சரியானது. சரத்து 324(5) இரண்டாவது வரம்புரை இப்பாதுகாப்பை அளிக்கிறது.",
+        why_b_en="Incorrect. Article 324(2) deals with the composition and appointment of the Commission.",
+        why_b_ta="தவறானது. சரத்து 324(2) ஆணையத்தின் கட்டமைப்பு மற்றும் நியமனத்தைக் கையாள்கிறது.",
+        why_c_en="Incorrect. Article 324(4) provides for the appointment of Regional Commissioners.",
+        why_c_ta="தவறானது. சரத்து 324(4) பிராந்திய ஆணையர்கள் நியமனம் பற்றியது.",
+        why_d_en="Incorrect. Article 324(6) deals with the provision of staff to ECI by the President/Governor.",
+        why_d_ta="தவறானது. சரத்து 324(6) ஊழியர்களை வழங்குவது பற்றியது.",
+        tip_en="This non-variation protection is identical to that provided to Supreme Court Judges under Article 125(2).",
+        tip_ta="இப்பாதுகாப்பு சரத்து 125(2)-ன் கீழ் உச்ச நீதிமன்ற நீதிபதிகளுக்கு வழங்கப்படும் பாதுகாப்பிற்கு இணையானது.",
+        fact_en="Notice that this protection against detrimental variation is constitutionally guaranteed only to the CEC, not other ECs.",
+        fact_ta="பாதகமாக மாற்றப்படக்கூடாது என்ற அரசியலமைப்பு உத்தரவாதம் தலைமை தேர்தல் ஆணையருக்கு மட்டுமே வழங்கப்பட்டுள்ளது.",
+        tags=["Article 324(5)", "Tenure Protection", "Grand Test"]
+    ))
+
+    # GT 002
+    qs.append(make_ec_q(
+        qid="EC_GT_002", diff="Medium", qtype="Single-Choice", subtopic="Regional Commissioners",
+        en_stem="Under Article 324(4), who has the constitutional authority to appoint Regional Commissioners to assist the Election Commission prior to general elections?",
+        ta_stem="பொதுத் தேர்தலுக்கு முன்னதாக தேர்தல் ஆணையத்திற்கு உதவுவதற்காக பிராந்திய ஆணையர்களை (Regional Commissioners) நியமிக்க சரத்து 324(4)-ன் கீழ் யாருக்கு அதிகாரம் உள்ளது?",
+        en_a="President of India after consultation with the Election Commission", ta_a="தேர்தல் ஆணையத்துடன் கலந்தாலோசித்த பிறகு இந்தியக் குடியரசுத் தலைவர்",
+        en_b="Chief Election Commissioner at his sole discretion", ta_b="தலைமைத் தேர்தல் ஆணையர் தனது சொந்த விருப்பப்படி",
+        en_c="State Governor in consultation with the High Court", ta_c="உயர் நீதிமன்றத்துடன் கலந்தாலோசித்து மாநில ஆளுநர்",
+        en_d="Union Minister of Law and Justice", ta_d="மத்திய சட்ட மற்றும் நீதித்துறை அமைச்சர்",
+        correct_key="A",
+        exp_en="Article 324(4) provides that before each general election to Lok Sabha and State Assemblies, the President may appoint, after consultation with the Election Commission, such Regional Commissioners as he may consider necessary.",
+        exp_ta="சரத்து 324(4)-ன் படி, மக்களவை மற்றும் மாநில சட்டமன்றப் பொதுத் தேர்தல்களுக்கு முன், தேர்தல் ஆணையத்துடன் கலந்தாலோசித்து குடியரசுத் தலைவர் தேவையான பிராந்திய ஆணையர்களை நியமிக்கலாம்.",
+        why_a_en="Correct. Appointed by President after consultation with ECI.",
+        why_a_ta="சரியானது. தேர்தல் ஆணையத்துடன் கலந்தாலோசித்து குடியரசுத் தலைவரால் நியமிக்கப்படுகின்றனர்.",
+        why_b_en="Incorrect. CEC cannot appoint Regional Commissioners.",
+        why_b_ta="தவறானது. தலைமை தேர்தல் ஆணையர் பிராந்திய ஆணையர்களை நியமிக்க முடியாது.",
+        why_c_en="Incorrect. Governor does not appoint Regional Commissioners.",
+        why_c_ta="தவறானது. ஆளுநர் பிராந்திய ஆணையர்களை நியமிப்பதில்லை.",
+        why_d_en="Incorrect. The Law Minister has no appointing power.",
+        why_d_ta="தவறானது. சட்ட அமைச்சருக்கு நியமன அதிகாரம் இல்லை.",
+        tip_en="Regional Commissioners, like other Election Commissioners, can only be removed on the recommendation of the CEC.",
+        tip_ta="பிராந்திய ஆணையர்களும் தலைமை தேர்தல் ஆணையரின் பரிந்துரையின் பேரில் மட்டுமே நீக்கப்பட முடியும்.",
+        fact_en="Regional Commissioners were appointed during the 1951-52 elections but the practice was subsequently replaced by Deputy Election Commissioners.",
+        fact_ta="1951-52 தேர்தலில் பிராந்திய ஆணையர்கள் நியமிக்கப்பட்டனர், ஆனால் பின்னர் துணைத் தேர்தல் ஆணையர் முறைக்கு மாற்றப்பட்டது.",
+        tags=["Regional Commissioners", "Article 324(4)", "President"]
+    ))
+
+    # GT 003
+    qs.append(make_ec_q(
+        qid="EC_GT_003", diff="Hard", qtype="Statement-based", subtopic="Removal Differences",
+        en_stem="Consider the following statements regarding the removal procedures under Article 324(5):\n1. The Chief Election Commissioner can be removed from office only through parliamentary impeachment like a Supreme Court Judge.\n2. An Election Commissioner or a Regional Commissioner can be removed from office by the President on the recommendation of the Chief Election Commissioner.\n3. The recommendation of the Chief Election Commissioner for removing an Election Commissioner is not mandatory and the President can remove an EC unilaterally.\nWhich of the statements given above is/are correct?",
+        ta_stem="சரத்து 324(5)-ன் கீழ் பதவி நீக்க நடைமுறைகள் குறித்த பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. தலைமைத் தேர்தல் ஆணையரை உச்ச நீதிமன்ற நீதிபதியைப் போன்ற பாராளுமன்ற நீக்கத் தீர்மானம் மூலமே நீக்க முடியும்.\n2. தலைமைத் தேர்தல் ஆணையரின் பரிந்துரையின் பேரில் தேர்தல் ஆணையர் அல்லது பிராந்திய ஆணையரை குடியரசுத் தலைவர் நீக்கலாம்.\n3. தேர்தல் ஆணையரை நீக்குவதற்கு தலைமைத் தேர்தல் ஆணையரின் பரிந்துரை கட்டாயமில்லை; குடியரசுத் தலைவர் தன்னிச்சையாக அவரை நீக்கலாம்.\nமேற்கண்ட கூற்றுகளில் சரியானவை எவை?",
+        en_a="1 and 2 only", ta_a="1 மற்றும் 2 மட்டுமே",
+        en_b="1, 2 and 3", ta_b="1, 2 மற்றும் 3",
+        en_c="1 only", ta_c="1 மட்டுமே",
+        en_d="2 and 3 only", ta_d="2 மற்றும் 3 மட்டுமே",
+        correct_key="A",
+        exp_en="Statements 1 and 2 are correct. Statement 3 is false: Under the first proviso to Article 324(5), an Election Commissioner or Regional Commissioner SHALL NOT be removed except on the recommendation of the CEC. In T.N. Seshan (1995), SC held that the recommendation of the CEC is a mandatory constitutional prerequisite.",
+        exp_ta="கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறு: சரத்து 324(5)-ன் கீழ் CEC-ன் பரிந்துரையின்றி பிற தேர்தல் ஆணையர்களை நீக்க முடியாது. டி.என். சேஷன் வழக்கில் தலைமை தேர்தல் ஆணையரின் பரிந்துரை கட்டாயமானது என உறுதி செய்யப்பட்டது.",
+        why_a_en="Correct. Statements 1 and 2 are accurate; Statement 3 is incorrect.",
+        why_a_ta="சரியானது. கூற்றுகள் 1 மற்றும் 2 சரியானவை; கூற்று 3 தவறானது.",
+        why_b_en="Incorrect. Statement 3 is constitutionally false.",
+        why_b_ta="தவறானது. கூற்று 3 அரசியலமைப்பிற்கு முரணானது.",
+        why_c_en="Incorrect. Statement 2 is also correct.",
+        why_c_ta="தவறானது. கூற்று 2-ம் சரியானது.",
+        why_d_en="Incorrect. Statement 1 is correct.",
+        why_d_ta="தவறானது. கூற்று 1 சரியானது.",
+        tip_en="CEC recommendation must not be arbitrary and must be based on intelligible, legally justifiable grounds.",
+        tip_ta="CEC-ன் பரிந்துரை தன்னிச்சையானதாக இருக்கக்கூடாது, சட்டபூர்வமான காரணங்களை அடிப்படையாகக் கொண்டிருக்க வேண்டும்.",
+        fact_en="In 2009, CEC N. Gopalaswami recommended the removal of EC Navin Chawla, but the President rejected the recommendation.",
+        fact_ta="2009-ல் CEC கோபாலசுவாமி தேர்தல் ஆணையர் நவீன் சாவ்லாவை நீக்கப் பரிந்துரைத்தார், ஆனால் குடியரசுத் தலைவர் அதை நிராகரித்தார்.",
+        tags=["Article 324(5)", "Removal of EC", "Constitutional Safeguards"]
+    ))
+
+    # GT 004
+    qs.append(make_ec_q(
+        qid="EC_GT_004", diff="Medium", qtype="Single-Choice", subtopic="Article 325 Significance",
+        en_stem="What is the constitutional significance of Article 325 of the Indian Constitution?",
+        ta_stem="இந்திய அரசியலமைப்பின் சரத்து 325-ன் அரசியலமைப்பு முக்கியத்துவம் என்ன?",
+        en_a="It provides for a single general electoral roll and bars separate communal electorates", ta_a="இது ஒற்றைப் பொது வாக்காளர் பட்டியலை வழங்கி தனி வகுப்புவாத வாக்காளர் தொகுதிகளைத் தடை செய்கிறது",
+        en_b="It empowers Parliament to formulate guidelines for delimitation of constituencies", ta_b="தொகுதி மறுவரையறைக்கான வழிகாட்டுதல்களை உருவாக்க பாராளுமன்றத்திற்கு அதிகாரம் அளிக்கிறது",
+        en_c="It grants fundamental right to vote to all citizens above 18 years", ta_c="18 வயதுக்கு மேற்பட்ட அனைத்து குடிமக்களுக்கும் வாக்களிக்கும் அடிப்படை உரிமையை வழங்குகிறது",
+        en_d="It creates the State Election Commissions for local body elections", ta_d="உள்ளாட்சித் தேர்தல்களுக்காக மாநில தேர்தல் ஆணையங்களை உருவாக்குகிறது",
+        correct_key="A",
+        exp_en="Article 325 abolished the colonial legacy of separate communal electorates by mandating one general electoral roll for every territorial constituency and barring ineligibility or inclusion on grounds only of religion, race, caste, or sex.",
+        exp_ta="சரத்து 325 காலனித்துவ தனி வகுப்புவாத வாக்காளர் முறையை ஒழித்து, ஒவ்வொரு தொகுதிக்கும் ஒரே பொது வாக்காளர் பட்டியலை கட்டாயமாக்குகிறது மற்றும் மதம், இனம், சாதி, பாலின அடிப்படையில் பாகுபாடு காட்டுவதைத் தடை செய்கிறது.",
+        why_a_en="Correct. Article 325 mandates a single common electoral roll, ending separate electorates.",
+        why_a_ta="சரியானது. சரத்து 325 ஒற்றைப் பொது வாக்காளர் பட்டியலை கட்டாயமாக்கி தனித் தொகுதிகளை ஒழிக்கிறது.",
+        why_b_en="Incorrect. Parliament's election law powers are under Article 327.",
+        why_b_ta="தவறானது. பாராளுமன்றத்தின் தேர்தல் சட்ட அதிகாரம் சரத்து 327-ல் உள்ளது.",
+        why_c_en="Incorrect. Adult suffrage is under Article 326, and voting is a statutory right, not a fundamental right.",
+        why_c_ta="தவறானது. வயதுவந்தோர் வாக்குரிமை சரத்து 326-ல் உள்ளது; மேலும் வாக்களிப்பது சட்டப்பூர்வ உரிமை மட்டுமே.",
+        why_d_en="Incorrect. State Election Commissions are under Articles 243K and 243ZA.",
+        why_d_ta="தவறானது. மாநில தேர்தல் ஆணையங்கள் சரத்துகள் 243K மற்றும் 243ZA-ன் கீழ் உள்ளன.",
+        tip_en="Article 325 ensures secular and egalitarian electoral participation in India.",
+        tip_ta="சரத்து 325 இந்தியாவில் மதச்சார்பற்ற மற்றும் சமத்துவமான தேர்தல் பங்கேற்பை உறுதி செய்கிறது.",
+        fact_en="Separate electorates were first introduced by the Morley-Minto Reforms (1909) and expanded by the 1919 and 1935 Acts before being abolished by Art 325.",
+        fact_ta="1909 மிண்டோ-மார்லி சீர்திருத்தங்களால் அறிமுகப்படுத்தப்பட்ட தனி வாக்காளர் தொகுதி முறையை சரத்து 325 ஒழித்தது.",
+        tags=["Article 325", "Single Electoral Roll", "Communal Electorate Abolition"]
+    ))
+
+    # GT 005
+    qs.append(make_ec_q(
+        qid="EC_GT_005", diff="Hard", qtype="Single-Choice", subtopic="Article 327 vs 328",
+        en_stem="In the context of the legislative powers over elections under Articles 327 and 328, which of the following statements is constitutionally accurate?",
+        ta_stem="சரத்துகள் 327 மற்றும் 328-ன் கீழ் தேர்தல்கள் மீதான சட்டமன்ற அதிகாரங்கள் குறித்த சூழலில், பின்வரும் கூற்றுகளில் எது அரசியலமைப்பு ரீதியாக சரியானது?",
+        en_a="The power of the State Legislature under Article 328 is residuary and subordinate to parliamentary law made under Article 327", ta_a="சரத்து 328-ன் கீழ் மாநில சட்டமன்றத்தின் அதிகாரம் எஞ்சிய அதிகாரமாகும் மற்றும் சரத்து 327-ன் கீழ் பாராளுமன்றம் இயற்றும் சட்டத்திற்கு உட்பட்டதாகும்",
+        en_b="State Legislatures possess exclusive and overriding power over all aspects of State Assembly elections", ta_b="மாநில சட்டமன்றத் தேர்தலின் அனைத்து அம்சங்களிலும் மாநில சட்டமன்றங்கள் முழுமையான மற்றும் மேலோங்கும் அதிகாரத்தைக் கொண்டுள்ளன",
+        en_c="Article 327 gives Parliament the power to amend State Panchayat and Municipality election laws", ta_c="சரத்து 327 பாராளுமன்றத்திற்கு மாநில பஞ்சாயத்து மற்றும் நகராட்சி தேர்தல் சட்டங்களை திருத்தும் அதிகாரத்தை அளிக்கிறது",
+        en_d="Both Parliament and State Legislatures have coordinate and equal powers without Union primacy", ta_d="மத்திய முதன்மையின்றி பாராளுமன்றமும் மாநில சட்டமன்றங்களும் சமமான அதிகாரங்களைக் கொண்டுள்ளன",
+        correct_key="A",
+        exp_en="Under Article 328, the State Legislature can make provisions for elections to the State Legislature only 'in so far as provision in that behalf is not made by Parliament'. Thus, parliamentary laws (RPA 1950 & 1951) under Article 327 prevail over state laws.",
+        exp_ta="சரத்து 328-ன் படி, 'பாராளுமன்றத்தால் விதிகள் உருவாக்கப்படாத வரையில் மட்டுமே' மாநில சட்டமன்றம் விதிகளை உருவாக்க முடியும். எனவே சரத்து 327-ன் கீழ் பாராளுமன்ற சட்டங்களே முதன்மையானவை.",
+        why_a_en="Correct. State legislative power under Art 328 is subordinate to Art 327.",
+        why_a_ta="சரியானது. சரத்து 328-ன் கீழ் மாநில சட்டமன்ற அதிகாரம் சரத்து 327-க்கு உட்பட்டது.",
+        why_b_en="Incorrect. State Legislatures do not have overriding power.",
+        why_b_ta="தவறானது. மாநில சட்டமன்றங்களுக்கு மேலோங்கும் அதிகாரம் இல்லை.",
+        why_c_en="Incorrect. Local body election laws are purely in the State domain under Articles 243K/243ZA.",
+        why_c_ta="தவறானது. உள்ளாட்சி தேர்தல் சட்டங்கள் மாநில அதிகார வரம்பிற்கு உட்பட்டவை.",
+        why_d_en="Incorrect. Union legislation under Article 327 enjoys constitutional supremacy.",
+        why_d_ta="தவறானது. சரத்து 327-ன் கீழ் பாராளுமன்ற சட்டங்கள் மேலோங்கும் தன்மை கொண்டவை.",
+        tip_en="Article 327 = Parliament supreme; Article 328 = State Legislature supplementary.",
+        tip_ta="சரத்து 327 = பாராளுமன்றம் முதன்மையானது; சரத்து 328 = மாநில சட்டமன்றம் துணையானது.",
+        fact_en="Parliament enacted the Representation of the People Acts of 1950 and 1951 under the authority of Article 327.",
+        fact_ta="1950 மற்றும் 1951 மக்கள் பிரதிநிதித்துவச் சட்டங்கள் சரத்து 327-ன் அதிகாரத்தின் கீழேயே இயற்றப்பட்டன.",
+        tags=["Article 327", "Article 328", "Legislative Supremacy"]
+    ))
+
+    # GT 006
+    qs.append(make_ec_q(
+        qid="EC_GT_006", diff="Easy", qtype="Single-Choice", subtopic="Article 329(a) Bar",
+        en_stem="What does Article 329(a) of the Constitution bar courts from questioning?",
+        ta_stem="இந்திய அரசியலமைப்பின் சரத்து 329(a) நீதிமன்றங்கள் எதை கேள்விக்குள்ளாக்குவதைத் தடை செய்கிறது?",
+        en_a="The validity of any law relating to the delimitation of constituencies or allotment of seats", ta_a="தொகுதிகளின் மறுவரையறை அல்லது இடங்களின் ஒதுக்கீடு தொடர்பான எந்தவொரு சட்டத்தின் செல்லுபடியாகும் தன்மை",
+        en_b="The election of any candidate to the Lok Sabha or State Legislative Assembly", ta_b="மக்களவை அல்லது சட்டமன்றத்திற்கு தேர்ந்தெடுக்கப்பட்ட எந்தவொரு வேட்பாளரின் தேர்தல்",
+        en_c="Decisions made by the Supreme Court on Presidential election disputes", ta_c="குடியரசுத் தலைவர் தேர்தல் வழக்குகளில் உச்ச நீதிமன்றம் எடுக்கும் முடிவுகள்",
+        en_d="The constitutional validity of the Model Code of Conduct", ta_d="மாதிரி நடத்தை விதிகளின் அரசியலமைப்பு செல்லுபடியாகும் தன்மை",
+        correct_key="A",
+        exp_en="Article 329(a) explicitly provides that the validity of any law relating to the delimitation of constituencies or the allotment of seats to such constituencies, made under Article 327 or Article 328, shall not be called in question in any court.",
+        exp_ta="சரத்து 329(a)-ன் படி, சரத்து 327 அல்லது 328-ன் கீழ் உருவாக்கப்பட்ட தொகுதிகளின் மறுவரையறை அல்லது இடங்களின் ஒதுக்கீடு தொடர்பான எந்தவொரு சட்டத்தின் செல்லுபடியாகும் தன்மையையும் எந்த நீதிமன்றத்திலும் கேள்வி கேட்க முடியாது.",
+        why_a_en="Correct. Delimitation laws and seat allotments cannot be questioned under Art 329(a).",
+        why_a_ta="சரியானது. தொகுதி மறுவரையறை மற்றும் இட ஒதுக்கீடு சட்டங்களை நீதிமன்றத்தில் கேள்வி கேட்க முடியாது.",
+        why_b_en="Incorrect. Questioning elections is barred except via election petition under Art 329(b).",
+        why_b_ta="தவறானது. தேர்தல் முடிவுகள் சரத்து 329(b)-ன் கீழ் தேர்தல் மனு மூலம் கேள்வி கேட்கப்படலாம்.",
+        why_c_en="Incorrect. SC decisions on Presidential disputes are final under Article 71.",
+        why_c_ta="தவறானது. சரத்து 71 உச்ச நீதிமன்ற தீர்ப்பை இறுதியானது என்கிறது.",
+        why_d_en="Incorrect. MCC is administrative, not covered under Art 329(a).",
+        why_d_ta="தவறானது. MCC என்பது நிர்வாக வழிகாட்டுதலாகும்.",
+        tip_en="Article 329(a) = Delimitation bar; Article 329(b) = General election judicial bar except via petition.",
+        tip_ta="சரத்து 329(a) = மறுவரையறை மீதான தடை; சரத்து 329(b) = தேர்தல் மனு தவிர்த்த பிற நீதிமன்ற தடை.",
+        fact_en="Delimitation Commission orders have the force of law upon publication in the Gazette and cannot be stayed by any court.",
+        fact_ta="அரசிதழில் வெளியிடப்படும் மறுவரையறை ஆணைய ஆணைகள் சட்டத்தின் மதிப்பைப் பெறுகின்றன, எந்த நீதிமன்றமும் அதற்கு தடை விதிக்க முடியாது.",
+        tags=["Article 329(a)", "Delimitation Judicial Bar", "Constitution"]
+    ))
+
+    # GT 007
+    qs.append(make_ec_q(
+        qid="EC_GT_007", diff="Medium", qtype="Single-Choice", subtopic="Section 16 RPA 1950",
+        en_stem="Under Section 16 of the Representation of the People Act, 1950, a person is disqualified for registration in an electoral roll if they:",
+        ta_stem="1950 மக்கள் பிரதிநிதித்துவச் சட்டத்தின் பிரிவு 16-ன் கீழ், ஒரு நபர் வாக்காளர் பட்டியலில் பதிவு செய்வதற்கு தகுதியற்றவராகக் கருதப்படுவது எப்போது?",
+        en_a="Are not a citizen of India, or are of unsound mind, or are disqualified under law relating to corrupt practices", ta_a="இந்தியக் குடிமகனாக இல்லாமை, மனநலம் குன்றியவர் என அறிவிக்கப்பட்டிருத்தல், அல்லது ஊழல் நடைமுறைகள் சட்டத்தின் கீழ் தகுதிநீக்கம் செய்யப்பட்டிருத்தல்",
+        en_b="Do not own agricultural or residential property within the constituency", ta_b="தொகுதிக்குள் விவசாய அல்லது குடியிருப்புச் சொத்துக்களை சொந்தமாக வைத்திருக்காத போது",
+        en_c="Have failed to pass the secondary school examination", ta_c="பத்தாம் வகுப்பு பொதுத் தேர்வில் தேர்ச்சி பெறத் தவறிய போது",
+        en_d="Have failed to link their Aadhaar card with the electoral database", ta_d="வாக்காளர் பட்டியலுடன் ஆதார் அட்டையை இணைக்கத் தவறிய போது",
+        correct_key="A",
+        exp_en="Section 16(1) of RPA 1950 specifies three grounds of disqualification from electoral registration: (a) not being an Indian citizen, (b) being declared of unsound mind by a competent court, and (c) disqualification under any law relating to corrupt practices and election offences.",
+        exp_ta="1950 சட்டத்தின் பிரிவு 16(1) வாக்காளர் பதிவிற்கான 3 தகுதியீனங்களைக் குறிப்பிடுகிறது: (அ) இந்தியக் குடிமகனாக இல்லாமை, (ஆ) மனநலம் பாதிக்கப்பட்டவராக நீதிமன்றத்தால் அறிவிக்கப்படுதல், (இ) ஊழல் குற்றங்களுக்காக தகுதிநீக்கம் செய்யப்படுதல்.",
+        why_a_en="Correct. Non-citizenship, unsound mind, and corrupt practices are the statutory disqualifications under Section 16.",
+        why_a_ta="சரியானது. குடியுரிமையின்மை, மனநலம் மற்றும் ஊழல் குற்றங்கள் பிரிவு 16-ன் கீழான தகுதியீனங்கள் ஆகும்.",
+        why_b_en="Incorrect. Property qualifications were abolished with adult suffrage.",
+        why_b_ta="தவறானது. சொத்துரிமை தகுதிகள் வயதுவந்தோர் வாக்குரிமையால் ஒழிக்கப்பட்டுவிட்டன.",
+        why_c_en="Incorrect. Literacy is not an electoral qualification.",
+        why_c_ta="தவறானது. கல்வித்தகுதி வாக்காளர் தகுதிக்கு தேவையில்லை.",
+        why_d_en="Incorrect. Aadhaar linkage is voluntary under the 2021 Act.",
+        why_d_ta="தவறானது. ஆதார் இணைப்பு 2021 சட்டப்படி விருப்பத்திற்கு உட்பட்டது.",
+        tip_en="If a registered person becomes disqualified under Section 16, their name is struck off the roll immediately (Sec 16(2)).",
+        tip_ta="பதிவு செய்த ஒருவர் பிரிவு 16-ன் கீழ் தகுதியிழந்தால், அவரது பெயர் உடனடியாக பட்டியலிலிருந்து நீக்கப்படும் (பிரிவு 16(2)).",
+        fact_en="Section 16 mirrors the constitutional provisions of Article 326.",
+        fact_ta="பிரிவு 16 அரசியலமைப்பின் சரத்து 326-ன் விதிகளை அப்படியே பிரதிபலிக்கிறது.",
+        tags=["Section 16", "RPA 1950", "Voter Disqualification"]
+    ))
+
+    # GT 008
+    qs.append(make_ec_q(
+        qid="EC_GT_008", diff="Hard", qtype="Single-Choice", subtopic="Section 9 & 9A RPA 1951",
+        en_stem="Under Section 9A of the Representation of the People Act, 1951, a person is disqualified from contesting elections if:",
+        ta_stem="1951 மக்கள் பிரதிநிதித்துவச் சட்டத்தின் பிரிவு 9A-ன் கீழ், ஒரு நபர் தேர்தலில் போட்டியிடுவதிலிருந்து தகுதிநீக்கம் செய்யப்படுவது எப்போது?",
+        en_a="There subsists a contract entered into by him with the appropriate Government for the supply of goods or execution of works", ta_a="பொருட்கள் வழங்குதல் அல்லது பணிகள் மேற்கொள்வதற்காக உரிய அரசுடன் அவரால் மேற்கொள்ளப்பட்ட ஒப்பந்தம் நடைமுறையில் இருக்கும் போது",
+        en_b="He has been dismissed from government service for corruption or disloyalty to the State", ta_b="ஊழல் அல்லது அரசுக்கு துரோகம் இழைத்த காரணத்திற்காக அரசுப் பணியிலிருந்து பணிநீக்கம் செய்யப்பட்ட போது",
+        en_c="He holds a managing agency or is a director of a private limited company", ta_c="ஒரு தனியார் நிறுவனத்தின் மேலாண்மை முகவராக அல்லது இயக்குநராக இருக்கும் போது",
+        en_d="He has failed to lodge an account of his election expenses within the prescribed time", ta_d="குறிப்பிட்ட காலத்திற்குள் தனது தேர்தல் செலவுக் கணக்கை தாக்கல் செய்யத் தவறிய போது",
+        correct_key="A",
+        exp_en="Section 9A disqualifies a person for having a subsisting contract with the appropriate Government for the supply of goods to or for the execution of any works undertaken by that Government.",
+        exp_ta="பிரிவு 9A, அரசுக்கு பொருட்களை வழங்குவதற்காகவோ அல்லது அரசின் பணிகளை மேற்கொள்வதற்காகவோ அரசுடன் செயலில் உள்ள ஒப்பந்தங்களை வைத்துள்ள ஒருவரை தகுதிநீக்கம் செய்கிறது.",
+        why_a_en="Correct. Section 9A deals with government contracts.",
+        why_a_ta="சரியானது. பிரிவு 9A அரசு ஒப்பந்தங்களைக் கையாள்கிறது.",
+        why_b_en="Incorrect. Dismissal for corruption/disloyalty is governed by Section 9 (5-year disqualification).",
+        why_b_ta="தவறானது. ஊழலுக்காக பணிநீக்கம் செய்யப்படுவது பிரிவு 9-ன் கீழ் வருகிறது.",
+        why_c_en="Incorrect. Holding office in a government company is under Section 10.",
+        why_c_ta="தவறானது. அரசு நிறுவனங்களில் பதவி வகிப்பது பிரிவு 10-ன் கீழ் வருகிறது.",
+        why_d_en="Incorrect. Failure to lodge election expenses is under Section 10A (3-year disqualification).",
+        why_d_ta="தவறானது. தேர்தல் செலவுக் கணக்கு தாக்கல் செய்யத் தவறுவது பிரிவு 10A-ன் கீழ் வருகிறது.",
+        tip_en="Section 9 = Dismissal for corruption; Section 9A = Government contracts; Section 10 = Government company office; Section 10A = Failure to lodge expenses.",
+        tip_ta="பிரிவு 9 = பணிநீக்கம்; பிரிவு 9A = அரசு ஒப்பந்தங்கள்; பிரிவு 10 = அரசு நிறுவன பதவி; பிரிவு 10A = செலவுக் கணக்கு தாக்கல் செய்யாமை.",
+        fact_en="Section 9A was inserted in 1966 to replace the broader 'office of profit' clause with specific commercial contract prohibitions.",
+        fact_ta="அரசு ஒப்பந்தங்கள் மூலம் ஆதாயம் பெறுவதைத் தடுக்க 1966-ல் பிரிவு 9A சேர்க்கப்பட்டது.",
+        tags=["Section 9A", "Government Contracts", "RPA 1951"]
+    ))
+
+    # GT 009
+    qs.append(make_ec_q(
+        qid="EC_GT_009", diff="Medium", qtype="Single-Choice", subtopic="Section 10A RPA 1951",
+        en_stem="Under Section 10A of the Representation of the People Act, 1951, what is the maximum period of disqualification imposed on a person for failure to lodge an account of election expenses?",
+        ta_stem="1951 மக்கள் பிரதிநிதித்துவச் சட்டத்தின் பிரிவு 10A-ன் கீழ், தேர்தல் செலவுக் கணக்கை தாக்கல் செய்யத் தவறியதற்காக ஒருவருக்கு விதிக்கப்படும் அதிகபட்ச தகுதிநீக்கக் காலம் என்ன?",
+        en_a="3 years from the date of the order of the Election Commission", ta_a="தேர்தல் ஆணையத்தின் உத்தரவு தேதியிலிருந்து 3 ஆண்டுகள்",
+        en_b="6 years from the date of result declaration", ta_b="தேர்தல் முடிவு அறிவிக்கப்பட்ட தேதியிலிருந்து 6 ஆண்டுகள்",
+        en_c="5 years from the date of default", ta_c="செலவுக் கணக்கு தாக்கல் செய்யத் தவறிய தேதியிலிருந்து 5 ஆண்டுகள்",
+        en_d="Permanent disqualification from contesting any future election", ta_d="எதிர்காலத் தேர்தல்களில் போட்டியிடுவதிலிருந்து நிரந்தரத் தகுதிநீக்கம்",
+        correct_key="A",
+        exp_en="Under Section 10A of RPA 1951, if the Election Commission is satisfied that a person has failed to lodge an account of election expenses within the time and manner required and has no good reason, the ECI shall disqualify him for a period of 3 years from the date of the order.",
+        exp_ta="பிரிவு 10A-ன் கீழ், தேர்தல் செலவுக் கணக்கை உரிய காலத்தில் மற்றும் முறையில் தாக்கல் செய்யத் தவறிய ஒருவரை தேர்தல் ஆணையம் தனது உத்தரவு தேதியிலிருந்து 3 ஆண்டுகளுக்கு தகுதிநீக்கம் செய்ய முடியும்.",
+        why_a_en="Correct. 3 years from the date of ECI order under Section 10A.",
+        why_a_ta="சரியானது. பிரிவு 10A-ன் கீழ் தேர்தல் ஆணைய உத்தரவு நாளிலிருந்து 3 ஆண்டுகள்.",
+        why_b_en="Incorrect. 6 years is the period for corrupt practices under Section 8A.",
+        why_b_ta="தவறானது. 6 ஆண்டுகள் என்பது ஊழல் நடைமுறை தகுதிநீக்கக் காலமாகும் (பிரிவு 8A).",
+        why_c_en="Incorrect. 5 years applies to Section 9 dismissal.",
+        why_c_ta="தவறானது. 5 ஆண்டுகள் பிரிவு 9-க்கு பொருந்தும்.",
+        why_d_en="Incorrect. Disqualification is never permanent under Section 10A.",
+        why_d_ta="தவறானது. நிரந்தர தகுதிநீக்கம் இதில் இல்லை.",
+        tip_en="Every candidate must lodge their account of election expenses within 30 days of the declaration of result (Section 78).",
+        tip_ta="முடிவு அறிவிக்கப்பட்ட 30 நாட்களுக்குள் அனைத்து வேட்பாளர்களும் தங்களின் தேர்தல் செலவுக் கணக்கை தாக்கல் செய்ய வேண்டும் (பிரிவு 78).",
+        fact_en="Under Section 11 of RPA 1951, the Election Commission has the power to reduce or remove any disqualification under Section 10A.",
+        fact_ta="பிரிவு 11-ன் கீழ், பிரிவு 10A தகுதிநீக்கக் காலத்தை குறைக்கவோ அல்லது நீக்கவோ தேர்தல் ஆணையத்திற்கு அதிகாரம் உள்ளது.",
+        tags=["Section 10A", "Election Expenses", "3 Years Disqualification"]
+    ))
+
+    # GT 010
+    qs.append(make_ec_q(
+        qid="EC_GT_010", diff="Easy", qtype="Single-Choice", subtopic="Election Expenditure Limits",
+        en_stem="Who statutorily prescribes the upper limit of election expenditure that a candidate can incur in Lok Sabha and Assembly elections?",
+        ta_stem="மக்களவை மற்றும் சட்டமன்றத் தேர்தல்களில் ஒரு வேட்பாளர் மேற்கொள்ளக்கூடிய தேர்தல் செலவினங்களின் உச்ச வரம்பை சட்டப்பூர்வமாக நிர்ணயிப்பது யார்?",
+        en_a="Central Government (Ministry of Law & Justice) in consultation with the Election Commission", ta_a="தேர்தல் ஆணையத்துடன் கலந்தாலோசித்து மத்திய அரசு (சட்ட அமைச்சகம்)",
+        en_b="Chief Election Commissioner by administrative order", ta_b="நிர்வாக உத்தரவு மூலம் தலைமைத் தேர்தல் ஆணையர்",
+        en_c="Reserve Bank of India under the Banking Regulation Act", ta_c="வங்கி ஒழுங்குமுறைச் சட்டத்தின் கீழ் இந்திய ரிசர்வ் வங்கி",
+        en_d="State Election Commission of each individual State", ta_d="ஒவ்வொரு மாநிலத்தின் மாநிலத் தேர்தல் ஆணையம்",
+        correct_key="A",
+        exp_en="Rule 90 of the Conduct of Elections Rules, 1961 fixes the expenditure limits, amended from time to time by the Central Government in consultation with the Election Commission under Section 169 of RPA 1951.",
+        exp_ta="1961 தேர்தல் நடத்தை விதிகளின் விதி 90 செலவு வரம்பை நிர்ணயிக்கிறது; 1951 சட்டத்தின் பிரிவு 169-ன் கீழ் தேர்தல் ஆணையத்துடன் கலந்தாலோசித்து மத்திய அரசு இதனைத் திருத்துகிறது.",
+        why_a_en="Correct. Prescribed by Central Government under Rule 90 in consultation with ECI.",
+        why_a_ta="சரியானது. தேர்தல் ஆணையத்துடன் கலந்தாலோசித்து மத்திய அரசு விதி 90-ன் கீழ் நிர்ணயிக்கிறது.",
+        why_b_en="Incorrect. CEC cannot unilaterally alter rules.",
+        why_b_ta="தவறானது. தேர்தல் ஆணையர் தன்னிச்சையாக விதிகளை மாற்ற முடியாது.",
+        why_c_en="Incorrect. RBI has no authority over campaign expenditure caps.",
+        why_c_ta="தவறானது. ரிசர்வ் வங்கிக்கு இதில் எவ்வித தொடர்பும் இல்லை.",
+        why_d_en="Incorrect. SEC governs local body elections, not Parliamentary/Assembly elections.",
+        why_d_ta="தவறானது. மாநில தேர்தல் ஆணையம் உள்ளாட்சித் தேர்தல்களுக்கே பொருந்தும்.",
+        tip_en="Currently, the expenditure cap is Rs. 95 lakhs (bigger states) and Rs. 75 lakhs (smaller states) for Lok Sabha candidates.",
+        tip_ta="தற்போது மக்களவை வேட்பாளரின் செலவு வரம்பு பெரிய மாநிலங்களுக்கு ரூ. 95 லட்சமாகவும், சிறிய மாநிலங்களுக்கு ரூ. 75 லட்சமாகவும் உள்ளது.",
+        fact_en="For Assembly constituencies, the limit is Rs. 40 lakhs (bigger states) and Rs. 28 lakhs (smaller states).",
+        fact_ta="சட்டமன்றத் தொகுதிகளுக்கு பெரிய மாநிலங்களில் ரூ. 40 லட்சமாகவும், சிறிய மாநிலங்களில் ரூ. 28 லட்சமாகவும் வரம்பு உள்ளது.",
+        tags=["Election Expenditure", "Rule 90", "Central Government"]
+    ))
+
+    # GT 011 to 025: Generating high quality MCQs
+    # GT 011
+    qs.append(make_ec_q(
+        qid="EC_GT_011", diff="Hard", qtype="Single-Choice", subtopic="Section 123(3) Secular Mandate",
+        en_stem="In Abhiram Singh v. C.D. Commachen (2017), how did the 7-judge Constitution Bench of the Supreme Court interpret the word 'his' in Section 123(3) of RPA 1951 regarding corrupt practices?",
+        ta_stem="அபிராம் சிங் எதிர் சி.டி. கொம்மாச்சன் (2017) வழக்கில், 1951 மக்கள் பிரதிநிதித்துவச் சட்டத்தின் பிரிவு 123(3)-ல் உள்ள 'அவரது' (his) என்ற வார்த்தையை உச்ச நீதிமன்றத்தின் 7 நீதிபதிகள் கொண்ட அரசியலமைப்பு அமர்வு எவ்வாறு விளக்கியது?",
+        en_a="Purposively to include the religion, caste, or community of the candidate, his agent, the rival candidate, and the voter", ta_a="வேட்பாளர், அவரது முகவர், எதிர்த்துப் போட்டியிடும் வேட்பாளர் மற்றும் வாக்காளர் ஆகிய எவரின் மதம், சாதி அல்லது சமூகத்தையும் உள்ளடக்கும் வகையில் விரிவாக விளக்கியது",
+        en_b="Strictly and narrowly to apply only to the personal religion of the contesting candidate", ta_b="போட்டியிடும் வேட்பாளரின் சொந்த மதத்திற்கு மட்டுமே பொருந்தும் வகையில் குறுகிய நோக்கில் விளக்கியது",
+        en_c="Exclusively to the religion of the political party leadership", ta_c="அரசியல் கட்சியின் தலைமையின் மதத்திற்கு மட்டுமே பொருந்தும் வகையில்",
+        en_d="To exempt appeals made during religious festivals from being corrupt practices", ta_d="மத விழாக்களின் போது செய்யப்படும் வேண்டுகோள்களுக்கு ஊழல் நடைமுறையிலிருந்து விலக்கு அளிக்கும் வகையில்",
+        correct_key="A",
+        exp_en="By a 4:3 majority in Abhiram Singh (2017), the Supreme Court adopted a broad purposive interpretation holding that an appeal to religion, race, caste, community, or language of the candidate, rival candidates, or the electors constitutes a corrupt practice under Section 123(3).",
+        exp_ta="அபிராம் சிங் (2017) வழக்கில் உச்ச நீதிமன்றம் 4:3 பெரும்பான்மையில், வேட்பாளர், எதிர்த்தரப்பு வேட்பாளர் அல்லது வாக்காளர் ஆகிய எவரின் சாதி, மதத்தை முன்னிறுத்தி வாக்கு சேகரிப்பதும் பிரிவு 123(3)-ன் கீழ் ஊழல் நடைமுறையே என விரிவாக தீர்ப்பளித்தது.",
+        why_a_en="Correct. Expanded 'his' to include candidate, rival, or voter to protect secular democracy.",
+        why_a_ta="சரியானது. மதச்சார்பற்ற ஜனநாயகத்தைப் பாதுகாக்க வேட்பாளர், எதிரி அல்லது வாக்காளர் அனைவரையும் உள்ளடக்கியது.",
+        why_b_en="Incorrect. The narrow interpretation was the minority view, not the majority ruling.",
+        why_b_ta="தவறானது. குறுகிய பார்வை சிறுபான்மை நீதிபதிகளின் கருத்தாகும்.",
+        why_c_en="Incorrect. Not limited to party leadership.",
+        why_c_ta="தவறானது. கட்சி தலைமைக்கு மட்டும் மட்டுப்படுத்தப்படவில்லை.",
+        why_d_en="Incorrect. There is no festival exemption.",
+        why_d_ta="தவறானது. திருவிழா விலக்கு எதுவும் இல்லை.",
+        tip_en="The Abhiram Singh ruling reinforced the secular character of Indian elections under the Basic Structure doctrine.",
+        tip_ta="அபிராம் சிங் தீர்ப்பு அடிப்படை கட்டமைப்புக் கோட்பாட்டின் கீழ் இந்திய தேர்தல்களின் மதச்சார்பற்ற தன்மையை வலுப்படுத்தியது.",
+        fact_en="Section 123(3) was originally amended in 1961 to prevent communal polarization in election campaigns.",
+        fact_ta="தேர்தல் பிரச்சாரங்களில் வகுப்புவாத பிளவுகளைத் தடுக்க 1961-ல் பிரிவு 123(3) திருத்தப்பட்டது.",
+        tags=["Section 123(3)", "Abhiram Singh Case", "Corrupt Practices", "Secularism"]
+    ))
+
+    # GT 012
+    qs.append(make_ec_q(
+        qid="EC_GT_012", diff="Medium", qtype="Single-Choice", subtopic="Election Petitions Transfer",
+        en_stem="Prior to the 19th Constitutional Amendment Act, 1966, which authorities adjudicated election disputes in India?",
+        ta_stem="1966-ல் கொண்டுவரப்பட்ட 19-வது அரசியலமைப்புத் திருத்தச் சட்டத்திற்கு முன்பாக, இந்தியாவில் தேர்தல் தகராறுகளை விசாரித்த அமைப்புகள் எவை?",
+        en_a="Ad-hoc Election Tribunals appointed by the Election Commission", ta_a="தேர்தல் ஆணையத்தால் நியமிக்கப்பட்ட தற்காலிக தேர்தல் தீர்ப்பாயங்கள் (Election Tribunals)",
+        en_b="District and Sessions Courts of the respective state", ta_b="அந்தந்த மாநிலத்தின் மாவட்ட மற்றும் அமர்வு நீதிமன்றங்கள்",
+        en_c="Special Benches of the Supreme Court of India", ta_c="இந்திய உச்ச நீதிமன்றத்தின் சிறப்பு அமர்வுகள்",
+        en_d="State Public Service Commissions", ta_d="மாநில அரசுப் பணியாளர் தேர்வாணையங்கள்",
+        correct_key="A",
+        exp_en="Prior to 1966, Article 324(1) provided for the appointment of Election Tribunals by the Election Commission. The 19th Constitutional Amendment abolished these tribunals and transferred the trial of election petitions directly to the High Courts.",
+        exp_ta="1966-க்கு முன், சரத்து 324(1) தேர்தல் தீர்ப்பாயங்களை அமைக்க வகை செய்தது. 19-வது திருத்தச் சட்டம் இத்தீர்ப்பாயங்களை ரத்து செய்து விசாரணையை நேரடியாக உயர் நீதிமன்றங்களுக்கு மாற்றியது.",
+        why_a_en="Correct. Ad-hoc Election Tribunals existed from 1951 to 1966.",
+        why_a_ta="சரியானது. 1951 முதல் 1966 வரை தேர்தல் தீர்ப்பாயங்கள் செயல்பட்டன.",
+        why_b_en="Incorrect. District courts never had election petition trial jurisdiction.",
+        why_b_ta="தவறானது. மாவட்ட நீதிமன்றங்களுக்கு இவ்வதிகாரம் இருந்ததில்லை.",
+        why_c_en="Incorrect. Supreme Court had only appellate jurisdiction.",
+        why_c_ta="தவறானது. உச்ச நீதிமன்றத்திற்கு மேல்முறையீட்டு அதிகாரம் மட்டுமே இருந்தது.",
+        why_d_en="Incorrect. PSCs have no judicial function in elections.",
+        why_d_ta="தவறானது. தேர்வாணையங்களுக்கு இதில் பங்கில்லை.",
+        tip_en="19th CAA deleted the words 'including the appointment of election tribunals' from Article 324(1).",
+        tip_ta="19-வது திருத்தச் சட்டம் சரத்து 324(1)-லிருந்து 'தேர்தல் தீர்ப்பாயங்களை அமைப்பது உட்பட' என்ற சொற்றொடரை நீக்கியது.",
+        fact_en="The reform was recommended by the Election Commission to eliminate protracted procedural delays caused by tribunals.",
+        fact_ta="தீர்ப்பாயங்களால் ஏற்பட்ட காலதாமதங்களைத் தவிர்க்க தேர்தல் ஆணையத்தின் பரிந்துரையின் பேரிலேயே இச்சீர்திருத்தம் செய்யப்பட்டது.",
+        tags=["19th Amendment", "Election Tribunals", "High Court Jurisdiction"]
+    ))
+
+    # GT 013
+    qs.append(make_ec_q(
+        qid="EC_GT_013", diff="Easy", qtype="Single-Choice", subtopic="Security Deposit Lok Sabha",
+        en_stem="What is the current security deposit required for a general candidate contesting an election to the Lok Sabha under Section 34 of RPA 1951?",
+        ta_stem="1951 மக்கள் பிரதிநிதித்துவச் சட்டத்தின் பிரிவு 34-ன் கீழ், மக்களவைத் தேர்தலில் போட்டியிடும் ஒரு பொது வேட்பாளருக்குத் தேவையான தற்போதைய பிணைத்தொகை என்ன?",
+        en_a="Rs. 25,000", ta_a="ரூ. 25,000",
+        en_b="Rs. 10,000", ta_b="ரூ. 10,000",
+        en_c="Rs. 50,000", ta_c="ரூ. 50,000",
+        en_d="Rs. 15,000", ta_d="ரூ. 15,000",
+        correct_key="A",
+        exp_en="Under Section 34(1)(a) of RPA 1951, a candidate contesting a parliamentary election must deposit Rs. 25,000 (concessionary Rs. 12,500 for SC/ST candidates).",
+        exp_ta="1951 சட்டத்தின் பிரிவு 34(1)(a)-ன் கீழ், மக்களவைத் தேர்தலில் போட்டியிடும் பொது வேட்பாளர் ரூ. 25,000 செலுத்த வேண்டும் (SC/ST வேட்பாளர்களுக்கு ரூ. 12,500).",
+        why_a_en="Correct. Rs. 25,000 for Lok Sabha general candidates.",
+        why_a_ta="சரியானது. மக்களவை பொது வேட்பாளருக்கு ரூ. 25,000.",
+        why_b_en="Incorrect. Rs. 10,000 is for State Legislative Assembly general candidates.",
+        why_b_ta="தவறானது. ரூ. 10,000 சட்டமன்ற பொது வேட்பாளருக்கான தொகையாகும்.",
+        why_c_en="Incorrect. Rs. 50,000 is not prescribed for any election.",
+        why_c_ta="தவறானது. ரூ. 50,000 எங்கும் நிர்ணயிக்கப்படவில்லை.",
+        why_d_en="Incorrect. Rs. 15,000 is the deposit for Presidential and Vice-Presidential elections.",
+        why_d_ta="தவறானது. ரூ. 15,000 குடியரசுத் தலைவர் தேர்தலுக்கான பிணைத்தொகையாகும்.",
+        tip_en="Lok Sabha: Rs. 25k (Gen) / Rs. 12.5k (SC/ST); Assembly: Rs. 10k (Gen) / Rs. 5k (SC/ST).",
+        tip_ta="மக்களவை: ரூ. 25ஆ (பொது) / ரூ. 12.5ஆ (SC/ST); சட்டமன்றம்: ரூ. 10ஆ (பொது) / ரூ. 5ஆ (SC/ST).",
+        fact_en="The deposit was increased to Rs. 25,000 by the Representation of the People (Amendment) Act, 2009.",
+        fact_ta="2009 மக்கள் பிரதிநிதித்துவத் திருத்தச் சட்டம் மூலம் இத்தொகை ரூ. 25,000 ஆக உயர்த்தப்பட்டது.",
+        tags=["Security Deposit", "Section 34", "Lok Sabha"]
+    ))
+
+    # GT 014
+    qs.append(make_ec_q(
+        qid="EC_GT_014", diff="Hard", qtype="Single-Choice", subtopic="Postal Ballot Eligibility",
+        en_stem="Under Rule 27A of the Conduct of Elections Rules, 1961, which category of citizens is eligible for the home voting facility through postal ballot?",
+        ta_stem="1961 தேர்தல் நடத்தை விதிகளின் விதி 27A-ன் கீழ், தபால் வாக்கு மூலம் வீட்டிலிருந்தே வாக்களிக்கும் வசதியைப் பெற தகுதியுடைய குடிமக்கள் பிரிவு எது?",
+        en_a="Senior citizens aged 85 years and above, and Persons with benchmark Disabilities of not less than 40%", ta_a="85 வயது மற்றும் அதற்கு மேற்பட்ட மூத்த குடிமக்கள் மற்றும் 40%-க்கு குறையாத குறைபாடுடைய மாற்றுத்திறனாளிகள்",
+        en_b="All citizens aged 60 years and above who are retired from government service", ta_b="அரசுப் பணியிலிருந்து ஓய்வு பெற்ற 60 வயது மற்றும் அதற்கு மேற்பட்ட அனைத்து குடிமக்கள்",
+        en_c="All overseas Indian citizens (NRIs) residing in foreign countries", ta_c="வெளிநாடுகளில் வசிக்கும் அனைத்து வெளிநாடு வாழ் இந்தியர்கள் (NRI)",
+        en_d="All registered taxpayers who pay income tax above the highest slab", ta_d="அதிகபட்ச வரம்பிற்கு மேல் வருமான வரி செலுத்தும் அனைத்து வரி செலுத்துவோர்",
+        correct_key="A",
+        exp_en="Under amended Rule 27A, the Election Commission provides optional home voting via postal ballot to senior citizens aged 85+ (amended in 2024 from 80+) and Persons with Disabilities (PwD) with benchmark disability of 40% or more.",
+        exp_ta="விதி 27A-ன் கீழ், 85 வயதுக்கு மேற்பட்ட மூத்த குடிமக்கள் (2024-ல் 80-லிருந்து 85 ஆக உயர்த்தப்பட்டது) மற்றும் 40% அல்லது அதற்கு மேற்பட்ட மாற்றுத்திறன் கொண்டவர்களுக்கு வீட்டிலிருந்தே தபால் வாக்கு செலுத்தும் வசதி வழங்கப்படுகிறது.",
+        why_a_en="Correct. 85+ seniors and 40%+ PwD voters.",
+        why_a_ta="சரியானது. 85+ முதியவர்கள் மற்றும் 40%+ மாற்றுத்திறனாளிகள்.",
+        why_b_en="Incorrect. Age 60 is not eligible; must be 85+.",
+        why_b_ta="தவறானது. 60 வயது தகுதியல்ல, 85+ வயது இருக்க வேண்டும்.",
+        why_c_en="Incorrect. NRIs must vote in person at polling booths in India.",
+        why_c_ta="தவறானது. வெளிநாடு வாழ் இந்தியர்கள் நேரில் மட்டுமே வாக்களிக்க வேண்டும்.",
+        why_d_en="Incorrect. Taxpayer status gives no voting privileges in India.",
+        why_d_ta="தவறானது. வரி செலுத்துவோருக்கு தனி சலுகை எதுவும் இல்லை.",
+        tip_en="The age limit was revised from 80 to 85 years in February 2024 by the Ministry of Law and Justice.",
+        tip_ta="2024 பிப்ரவரியில் வயது வரம்பு 80-லிருந்து 85 ஆக உயர்த்தப்பட்டது.",
+        fact_en="Home voting is conducted by a dedicated polling team accompanied by videographers and security personnel.",
+        fact_ta="வீட்டிலிருந்தே வாக்களிக்கும் முறை வீடியோ பதிவு மற்றும் பாதுகாப்புடன் சிறப்பு குழுவால் நடத்தப்படுகிறது.",
+        tags=["Home Voting", "Postal Ballot", "Senior Citizens 85+"]
+    ))
+
+    # GT 015
+    qs.append(make_ec_q(
+        qid="EC_GT_015", diff="Medium", qtype="Single-Choice", subtopic="EVM M3 Generation",
+        en_stem="What is the key technological security feature introduced in the M3 (Mark-3) generation Electronic Voting Machines (EVMs)?",
+        ta_stem="M3 (Mark-3) தலைமுறை மின்னணு வாக்குப்பதிவு இயந்திரங்களில் (EVM) அறிமுகப்படுத்தப்பட்ட முக்கிய தொழில்நுட்பப் பாதுகாப்பு அம்சம் என்ன?",
+        en_a="Mutual authentication between all connected units and automated tamper-detection rendering the machine inoperative if opened", ta_a="இணைக்கப்பட்ட அனைத்து அலகுகளுக்கும் இடையிலான பரஸ்பர அங்கீகாரம் மற்றும் இயந்திரத்தைத் திறக்க முயன்றால் தானாகவே இயங்காமல் போகும் சேத-கண்டறிதல் வசதி",
+        en_b="Direct wireless internet connectivity for real-time live result transmission to ECI server", ta_b="ECI சர்வருக்கு நேரடி முடிவுகளை அனுப்ப வயர்லெஸ் இணைய இணைப்பு",
+        en_c="Biometric fingerprint scanners integrated into the Ballot Unit to prevent impersonation", ta_c="ஆள்மாறாட்டத்தைத் தடுக்க வாக்குப்பதிவு அலகில் கைரேகை ஸ்கேனர்கள்",
+        en_d="Solar power backup and satellite communication link for remote booths", ta_d="தொலைதூர வாக்குச்சாவடிகளுக்காக சூரிய சக்தி மற்றும் செயற்கைக்கோள் தொடர்பு",
+        correct_key="A",
+        exp_en="M3 EVMs manufactured by BEL and ECIL feature digital certificate-based mutual authentication between CU, BU, and VVPAT, and advanced tamper-detection mechanisms that render the unit inoperative if any physical intrusion is attempted.",
+        exp_ta="M3 தலைமுறை இயந்திரங்கள் CU, BU, மற்றும் VVPAT இடையே டிஜிட்டல் சான்றிதழ் பரஸ்பர அங்கீகாரத்தைக் கொண்டுள்ளன மற்றும் எவரேனும் திறக்க முயன்றால் தானாகவே இயங்காமல் முடங்கும் அமைப்பைக் கொண்டுள்ளன.",
+        why_a_en="Correct. Mutual authentication and tamper-detection are the hallmark features of M3 EVMs.",
+        why_a_ta="சரியானது. பரஸ்பர அங்கீகாரம் மற்றும் சேத-கண்டறிதல் M3 இயந்திரங்களின் முக்கிய அம்சமாகும்.",
+        why_b_en="Incorrect. Indian EVMs never connect to the internet or any external network.",
+        why_b_ta="தவறானது. இந்திய EVM-கள் இணையத்துடனோ வேறு நெட்வொர்க்குடனோ ஒருபோதும் இணைக்கப்படுவதில்லை.",
+        why_c_en="Incorrect. EVMs do not contain biometric scanners.",
+        why_c_ta="தவறானது. பயோமெட்ரிக் ஸ்கேனர்கள் EVM-ல் இல்லை.",
+        why_d_en="Incorrect. EVMs operate on simple alkaline battery packs, not solar/satellite.",
+        why_d_ta="தவறானது. EVM-கள் சாதாரண ஆல்கலைன் பேட்டரிகளிலேயே இயங்குகின்றன.",
+        tip_en="M3 EVMs can support up to 24 Ballot Units (384 candidate buttons including NOTA).",
+        tip_ta="M3 இயந்திரங்கள் 24 வாக்குப்பதிவு அலகுகள் வரை (384 வேட்பாளர்கள்) ஆதரிக்கின்றன.",
+        fact_en="M3 generation machines were inducted across the country beginning in the 2018-2019 election cycle.",
+        fact_ta="2018-2019 தேர்தல் சுழற்சியில் M3 தலைமுறை இயந்திரங்கள் நாடு முழுவதும் பயன்பாட்டிற்கு வந்தன.",
+        tags=["M3 EVM", "EVM Technology", "Security Features"]
+    ))
+
+    # GT 016
+    qs.append(make_ec_q(
+        qid="EC_GT_016", diff="Medium", qtype="Single-Choice", subtopic="Mock Poll Rules",
+        en_stem="Before actual polling begins on election day, what is the mandatory minimum number of mock poll votes that must be cast in the presence of polling agents?",
+        ta_stem="தேர்தல் நாளில் உண்மையான வாக்குப்பதிவு தொடங்குவதற்கு முன், முகவர்கள் முன்னிலையில் குறைந்தபட்சம் எத்தனை மாதிரி வாக்குகள் (mock poll) கட்டாயமாகப் பதிவு செய்யப்பட வேண்டும்?",
+        en_a="At least 50 mock votes", ta_a="குறைந்தது 50 மாதிரி வாக்குகள்",
+        en_b="At least 100 mock votes", ta_b="குறைந்தது 100 மாதிரி வாக்குகள்",
+        en_c="At least 20 mock votes", ta_c="குறைந்தது 20 மாதிரி வாக்குகள்",
+        en_d="At least 10 mock votes", ta_d="குறைந்தது 10 மாதிரி வாக்குகள்",
+        correct_key="A",
+        exp_en="ECI statutory instructions mandate that a mock poll of at least 50 votes must be conducted by the Presiding Officer in the presence of contesting candidates or their polling agents, followed by clearing the Control Unit and stamping mock poll slips before real voting commences.",
+        exp_ta="தேர்தல் ஆணைய விதிகளின்படி, வாக்குச்சாவடி தலைமை அலுவலர் வேட்பாளர்களின் முகவர்கள் முன்னிலையில் குறைந்தது 50 மாதிரி வாக்குகளைப் பதிவு செய்து சரிபார்த்த பின்னரே கட்டுப்பாட்டு அலகை அழித்து உண்மையான வாக்கெடுப்பைத் தொடங்க வேண்டும்.",
+        why_a_en="Correct. Mandatory minimum of 50 mock votes.",
+        why_a_ta="சரியானது. குறைந்தது 50 மாதிரி வாக்குகள் பதிவு செய்யப்பட வேண்டும்.",
+        why_b_en="Incorrect. 100 is not the required minimum.",
+        why_b_ta="தவறானது. 100 கட்டாய குறைந்தபட்சம் அல்ல.",
+        why_c_en="Incorrect. 20 was the old rule, raised to 50.",
+        why_c_ta="தவறானது. 20 பழைய விதியாகும், தற்போது 50 ஆக உயர்த்தப்பட்டுள்ளது.",
+        why_d_en="Incorrect. 10 is insufficient.",
+        why_d_ta="தவறானது. 10 போதுமானது அல்ல.",
+        tip_en="Mock poll must start 90 minutes before the scheduled hour for commencement of poll.",
+        tip_ta="வாக்குப்பதிவு தொடங்குவதற்கு 90 நிமிடங்களுக்கு முன்னதாக மாதிரி வாக்குப்பதிவு தொடங்கப்பட வேண்டும்.",
+        fact_en="Failure to press the 'CLEAR' button after mock poll is a serious procedural violation that can necessitate a repoll.",
+        fact_ta="மாதிரி வாக்குப்பதிவுக்குப் பின் 'CLEAR' பொத்தானை அழுத்தத் தவறினால் மறுதேர்தல் நடத்த நேரிடலாம்.",
+        tags=["Mock Poll", "Presiding Officer", "EVM Verification"]
+    ))
+
+    # GT 017
+    qs.append(make_ec_q(
+        qid="EC_GT_017", diff="Hard", qtype="Single-Choice", subtopic="VVPAT Verification Count",
+        en_stem="Following the Supreme Court's directive in Chandrababu Naidu v. Union of India (2019), how many polling stations per Assembly constituency/segment must undergo mandatory VVPAT slip matching?",
+        ta_stem="சந்திரபாபு நாயுடு எதிர் இந்திய ஒன்றியம் (2019) வழக்கில் உச்ச நீதிமன்றத்தின் உத்தரவைத் தொடர்ந்து, ஒரு சட்டமன்றத் தொகுதிக்கு எத்தனை வாக்குச்சாவடிகளில் கட்டாய விவிபேட் சீட்டு சரிபார்ப்பு நடத்தப்பட வேண்டும்?",
+        en_a="5 randomly selected polling stations", ta_a="சீரற்ற முறையில் தேர்ந்தெடுக்கப்படும் 5 வாக்குச்சாவடிகள்",
+        en_b="1 randomly selected polling station", ta_b="சீரற்ற முறையில் தேர்ந்தெடுக்கப்படும் 1 வாக்குச்சாவடி",
+        en_c="10 randomly selected polling stations", ta_c="சீரற்ற முறையில் தேர்ந்தெடுக்கப்படும் 10 வாக்குச்சாவடிகள்",
+        en_d="50% of all polling stations in the constituency", ta_d="தொகுதியில் உள்ள அனைத்து வாக்குச்சாவடிகளில் 50%",
+        correct_key="A",
+        exp_en="In April 2019, the Supreme Court directed the Election Commission to increase VVPAT paper slip verification from 1 polling station per Assembly constituency/segment to 5 randomly selected polling stations.",
+        exp_ta="2019 ஏப்ரலில் உச்ச நீதிமன்றம், ஒரு சட்டமன்றத் தொகுதிக்கு 1 வாக்குச்சாவடி என்பதில் இருந்து சீரற்ற முறையில் தேர்ந்தெடுக்கப்படும் 5 வாக்குச்சாவடிகளில் விவிபேட் சீட்டுகளை எண்ணி சரிபார்க்குமாறு உத்தரவிட்டது.",
+        why_a_en="Correct. 5 polling stations per Assembly segment.",
+        why_a_ta="சரியானது. ஒரு சட்டமன்றத் தொகுதிக்கு 5 வாக்குச்சாவடிகள்.",
+        why_b_en="Incorrect. 1 was the previous ECI rule prior to the SC judgment.",
+        why_b_ta="தவறானது. 1 என்பது உச்ச நீதிமன்ற தீர்ப்பிற்கு முந்தைய விதியாகும்.",
+        why_c_en="Incorrect. 10 was rejected by the Court.",
+        why_c_ta="தவறானது. 10 என்பதை நீதிமன்றம் ஏற்கவில்லை.",
+        why_d_en="Incorrect. The plea for 50% physical verification was rejected by SC in 2019 and 2024.",
+        why_d_ta="தவறானது. 50% சரிபார்ப்பு கோரிக்கை உச்ச நீதிமன்றத்தால் நிராகரிக்கப்பட்டது.",
+        tip_en="The 5 polling stations are drawn by a transparent lottery system in the presence of candidates.",
+        tip_ta="வேட்பாளர்கள் முன்னிலையில் குலுக்கல் முறையில் இந்த 5 வாக்குச்சாவடிகள் தேர்ந்தெடுக்கப்படுகின்றன.",
+        fact_en="In ADR v. ECI (April 2024), SC reiterated that 100% manual VVPAT counting is unnecessary and reaffirmed the 5-station rule.",
+        fact_ta="2024 ஏப்ரலில் 100% விவிபேட் எண்ணும் கோரிக்கையை உச்ச நீதிமன்றம் மீண்டும் நிராகரித்தது.",
+        tags=["VVPAT Counting", "Supreme Court 2019", "5 Polling Stations"]
+    ))
+
+    # GT 018
+    qs.append(make_ec_q(
+        qid="EC_GT_018", diff="Medium", qtype="Single-Choice", subtopic="Presidential Election Formula",
+        en_stem="Under Article 55 of the Constitution, how is the value of the vote of an elected Member of a State Legislative Assembly (MLA) calculated for the Presidential election?",
+        ta_stem="சரத்து 55-ன் கீழ், குடியரசுத் தலைவர் தேர்தலுக்காக தேர்ந்தெடுக்கப்பட்ட ஒரு மாநில சட்டமன்ற உறுப்பினரின் (MLA) வாக்கு மதிப்பு எவ்வாறு கணக்கிடப்படுகிறது?",
+        en_a="[Total State Population / (Total Elected Assembly Seats * 1000)]", ta_a="[மாநிலத்தின் மொத்த மக்கள் தொகை / (சட்டமன்றத்திற்கு தேர்ந்தெடுக்கப்பட்ட மொத்த உறுப்பினர்கள் * 1000)]",
+        en_b="[Total State Population / Total Elected Assembly Seats] / 100", ta_b="[மாநிலத்தின் மொத்த மக்கள் தொகை / தேர்ந்தெடுக்கப்பட்ட மொத்த உறுப்பினர்கள்] / 100",
+        en_c="[Total Valid Votes Polled / Number of Contesting Candidates]", ta_c="[பதிவான மொத்த செல்லுபடியாகும் வாக்குகள் / போட்டியிடும் வேட்பாளர்களின் எண்ணிக்கை]",
+        en_d="Fixed uniformly at 100 for every MLA across all States", ta_d="அனைத்து மாநிலங்களிலும் உள்ள ஒவ்வொரு எம்.எல்.ஏ-விற்கும் ஒரே மாதிரியாக 100 என நிர்ணயிக்கப்பட்டுள்ளது",
+        correct_key="A",
+        exp_en="Under Article 55(2)(a), the value of an MLA's vote = (Total Population of State based on 1971 census) / (Total number of elected members in Legislative Assembly * 1000). If the remainder is >= 500, the value is increased by 1.",
+        exp_ta="சரத்து 55(2)(a)-ன் கீழ், ஒரு எம்.எல்.ஏ-வின் வாக்கு மதிப்பு = (1971 மக்கள் தொகை கணக்கெடுப்பின்படி மாநில மக்கள் தொகை) / (சட்டமன்றத் தேர்ந்தெடுக்கப்பட்ட உறுப்பினர்கள் * 1000). மீதி 500 அல்லது அதற்கு மேல் இருந்தால் 1 கூட்டப்படும்.",
+        why_a_en="Correct. Article 55(2)(a) formula.",
+        why_a_ta="சரியானது. சரத்து 55(2)(a) சூத்திரம்.",
+        why_b_en="Incorrect. Divisor is 1000, not 100.",
+        why_b_ta="தவறானது. வகுக்கும் எண் 1000 ஆகும், 100 அல்ல.",
+        why_c_en="Incorrect. Not based on votes polled.",
+        why_c_ta="தவறானது. பதிவான வாக்குகளை அடிப்படையாகக் கொண்டது அல்ல.",
+        why_d_en="Incorrect. Vote values vary drastically from state to state based on population (e.g. UP = 208, Sikkim = 7).",
+        why_d_ta="தவறானது. மக்கள் தொகைக்கு ஏற்ப மாநிலத்திற்கு மாநிலம் வாக்கு மதிப்பு வேறுபடும் (உ.பி = 208, சிக்கிம் = 7).",
+        tip_en="Uttar Pradesh has the highest MLA vote value (208), while Sikkim has the lowest (7). Tamil Nadu's MLA vote value is 176.",
+        tip_ta="உத்தரப் பிரதேச எம்.எல்.ஏ அதிகபட்ச வாக்கு மதிப்பையும் (208), சிக்கிம் மிகக் குறைந்த மதிப்பையும் (7) கொண்டுள்ளது. தமிழ்நாட்டின் வாக்கு மதிப்பு 176 ஆகும்.",
+        fact_en="The population used for this calculation remains pegged to the 1971 census until the first census after 2026 under the 84th Amendment.",
+        fact_ta="84-வது திருத்தத்தின்படி, 2026-க்குப் பிந்தைய மக்கள் தொகை கணக்கெடுப்பு வரை 1971 மக்கள் தொகையே பயன்படுத்தப்படுகிறது.",
+        tags=["Article 55", "Presidential Election", "MLA Vote Value"]
+    ))
+
+    # GT 019
+    qs.append(make_ec_q(
+        qid="EC_GT_019", diff="Hard", qtype="Single-Choice", subtopic="MP Vote Value Presidential",
+        en_stem="How is the value of the vote of each elected Member of Parliament (MP) calculated in the Presidential election under Article 55(2)(c)?",
+        ta_stem="சரத்து 55(2)(c)-ன் கீழ் குடியரசுத் தலைவர் தேர்தலில் தேர்ந்தெடுக்கப்பட்ட ஒவ்வொரு பாராளுமன்ற உறுப்பினரின் (MP) வாக்கு மதிப்பு எவ்வாறு கணக்கிடப்படுகிறது?",
+        en_a="Total value of votes of all elected MLAs of all States divided by the total number of elected members of both Houses of Parliament", ta_a="அனைத்து மாநிலங்களின் தேர்ந்தெடுக்கப்பட்ட அனைத்து எம்.எல்.ஏ-க்களின் மொத்த வாக்கு மதிப்பை நாடாளுமன்றத்தின் இரு அவைகளின் தேர்ந்தெடுக்கப்பட்ட மொத்த உறுப்பினர்களின் எண்ணிக்கையால் வகுப்பதன் மூலம்",
+        en_b="Total population of India divided by total number of MPs multiplied by 1000", ta_b="இந்தியாவின் மொத்த மக்கள் தொகையை மொத்த எம்.பி-க்களின் எண்ணிக்கையால் வகுத்து 1000-ஆல் பெருக்குவதன் மூலம்",
+        en_c="Fixed uniformly at 1000 votes per Member of Parliament", ta_c="ஒவ்வொரு பாராளுமன்ற உறுப்பினருக்கும் ஒரே மாதிரியாக 1000 வாக்குகள் என நிர்ணயிப்பதன் மூலம்",
+        en_d="Average of the votes secured by the MP in their respective parliamentary constituency", ta_d="அந்தந்த பாராளுமன்றத் தொகுதியில் எம்.பி பெற்ற வாக்குகளின் சராசரியைக் கொண்டு",
+        correct_key="A",
+        exp_en="Article 55(2)(c) mandates that the vote value of each MP = (Sum of vote values of all elected MLAs of all States) / (Total number of elected MPs of Lok Sabha and Rajya Sabha). In the 2022 Presidential election, the MP vote value was 700.",
+        exp_ta="சரத்து 55(2)(c)-ன் படி, ஒரு எம்.பி-யின் வாக்கு மதிப்பு = (அனைத்து மாநிலங்களின் தேர்ந்தெடுக்கப்பட்ட அனைத்து எம்.எல்.ஏ-க்களின் மொத்த வாக்கு மதிப்பு) / (மக்களவை மற்றும் மாநிலங்களவையின் தேர்ந்தெடுக்கப்பட்ட மொத்த உறுப்பினர்கள்). 2022 தேர்தலில் இது 700 ஆக இருந்தது.",
+        why_a_en="Correct. Total MLA vote value divided by total elected MPs.",
+        why_a_ta="சரியானது. அனைத்து எம்.எல்.ஏ-க்களின் மொத்த வாக்கு மதிப்பை மொத்த தேர்ந்தெடுக்கப்பட்ட எம்.பி-க்களால் வகுப்பது.",
+        why_b_en="Incorrect. Not based directly on population.",
+        why_b_ta="தவறானது. மக்கள் தொகையைக் கொண்டு நேரடியாக கணக்கிடப்படுவதில்லை.",
+        why_c_en="Incorrect. Not a fixed arbitrary number.",
+        why_c_ta="தவறானது. நிலையான தன்னிச்சையான எண் அல்ல.",
+        why_d_en="Incorrect. Constituency votes have no bearing on Presidential vote value.",
+        why_d_ta="தவறானது. தொகுதி வாக்குகளுக்கு இதில் எவ்வித தொடர்பும் இல்லை.",
+        tip_en="Nominated members of Rajya Sabha (12) and Lok Sabha have NO right to vote in Presidential elections!",
+        tip_ta="மாநிலங்களவையின் நியமன உறுப்பினர்களுக்கு (12) குடியரசுத் தலைவர் தேர்தலில் வாக்களிக்கும் உரிமை இல்லை!",
+        fact_en="Due to the dissolution of the Jammu & Kashmir Assembly, the MP vote value dropped from 708 (in 2017) to 700 in the 2022 Presidential election.",
+        fact_ta="ஜம்மு காஷ்மீர் சட்டமன்றம் கலைக்கப்பட்டிருந்ததால், 2022 தேர்தலில் எம்.பி-யின் வாக்கு மதிப்பு 708-லிருந்து 700 ஆகக் குறைந்தது.",
+        tags=["Article 55", "MP Vote Value", "Presidential Election Formula"]
+    ))
+
+    # GT 020
+    qs.append(make_ec_q(
+        qid="EC_GT_020", diff="Medium", qtype="Single-Choice", subtopic="Proportional Representation STV",
+        en_stem="Which of the following elections in India does NOT use the system of Proportional Representation by means of the Single Transferable Vote (PR-STV)?",
+        ta_stem="இந்தியாவில் பின்வரும் எந்தத் தேர்தலில் விகிதாசார பிரதிநிதித்துவ ஒற்றை மாற்று வாக்கு முறை (PR-STV) பயன்படுத்தப்படுவதில்லை?",
+        en_a="Elections to the House of the People (Lok Sabha)", ta_a="மக்களவைத் தேர்தல்கள் (House of the People)",
+        en_b="Election of the President of India", ta_b="இந்தியக் குடியரசுத் தலைவர் தேர்தல்",
+        en_c="Elections to the Council of States (Rajya Sabha)", ta_c="மாநிலங்களவைத் தேர்தல்கள் (Rajya Sabha)",
+        en_d="Elections to State Legislative Councils (Vidhan Parishad)", ta_d="மாநில சட்ட மேலவைத் தேர்தல்கள் (Vidhan Parishad)",
+        correct_key="A",
+        exp_en="Elections to the Lok Sabha and State Legislative Assemblies use the First-Past-The-Post (FPTP) plurality system. PR-STV is used for the President (Art 55), Vice-President (Art 66), Rajya Sabha (Art 80), and State Legislative Councils (Art 171).",
+        exp_ta="மக்களவை மற்றும் சட்டமன்றத் தேர்தல்களுக்கு 'முதலில் வந்தவருக்கு வெற்றி' (FPTP) முறை பயன்படுத்தப்படுகிறது. குடியரசுத் தலைவர், துணைத் தலைவர், மாநிலங்களவை மற்றும் சட்ட மேலவைத் தேர்தல்களுக்கு PR-STV பயன்படுத்தப்படுகிறது.",
+        why_a_en="Correct. Lok Sabha uses FPTP, not PR-STV.",
+        why_a_ta="சரியானது. மக்களவைக்கு FPTP முறை பயன்படுகிறது, PR-STV அல்ல.",
+        why_b_en="Incorrect. President uses PR-STV under Article 55(3).",
+        why_b_ta="தவறானது. குடியரசுத் தலைவருக்கு PR-STV முறை பயன்படுகிறது.",
+        why_c_en="Incorrect. Rajya Sabha uses PR-STV under Article 80(4).",
+        why_c_ta="தவறானது. மாநிலங்களவைக்கு PR-STV முறை பயன்படுகிறது.",
+        why_d_en="Incorrect. Legislative Councils use PR-STV under Article 171(4).",
+        why_d_ta="தவறானது. சட்ட மேலவைக்கு PR-STV முறை பயன்படுகிறது.",
+        tip_en="Direct elections = FPTP; Indirect constitutional elections = PR-STV.",
+        tip_ta="நேரடி தேர்தல்கள் = FPTP; மறைமுக அரசியலமைப்புத் தேர்தல்கள் = PR-STV.",
+        fact_en="Constitution framers chose FPTP for Lok Sabha due to simplicity and the need for stable parliamentary majorities.",
+        fact_ta="எளிமை மற்றும் நிலையான பெரும்பான்மை கருதி மக்களவைக்கு FPTP முறையை அரசியலமைப்பு நிர்ணய சபை தேர்வு செய்தது.",
+        tags=["Electoral Systems", "FPTP", "PR-STV", "Lok Sabha"]
+    ))
+
+    # GT 021
+    qs.append(make_ec_q(
+        qid="EC_GT_021", diff="Easy", qtype="Single-Choice", subtopic="Election Symbols Free vs Reserved",
+        en_stem="Under the Election Symbols (Reservation and Allotment) Order, 1968, what is a 'Free Symbol'?",
+        ta_stem="1968 தேர்தல் சின்னங்கள் ஆணையின் கீழ், 'இலவச சின்னம்' (Free Symbol) என்பது என்ன?",
+        en_a="A symbol which is not reserved for any recognized political party and is available for choice by unrecognised parties and independents", ta_a="எந்தவொரு அங்கீகரிக்கப்பட்ட கட்சிக்கும் ஒதுக்கப்படாமல், அங்கீகாரமற்ற கட்சிகள் மற்றும் சுயேச்சைகளின் தேர்விற்கு உள்ள சின்னம்",
+        en_b="A symbol that is allotted without charging any nomination fee from the candidate", ta_b="வேட்பாளரிடம் வேட்புமனு கட்டணம் வசூலிக்காமல் இலவசமாக வழங்கப்படும் சின்னம்",
+        en_c="A symbol that can be used simultaneously by two different National Parties", ta_c="இரண்டு வெவ்வேறு தேசியக் கட்சிகளால் ஒரே நேரத்தில் பயன்படுத்தப்படக்கூடிய சின்னம்",
+        en_d="A symbol exclusively reserved for candidates belonging to Scheduled Castes and Scheduled Tribes", ta_d="பட்டியலின மற்றும் பழங்குடியின வேட்பாளர்களுக்கு மட்டுமே பிரத்யேகமாக ஒதுக்கப்பட்ட சின்னம்",
+        correct_key="A",
+        exp_en="Paragraph 5 of the Symbols Order classifies symbols into 'Reserved' (reserved for recognized parties) and 'Free' (available in a general pool for unrecognized registered parties and independent candidates).",
+        exp_ta="சின்னங்கள் ஆணையின் பத்தி 5, சின்னங்களை 'ஒதுக்கப்பட்டவை' (அங்கீகரிக்கப்பட்ட கட்சிகளுக்கு) மற்றும் 'இலவச சின்னங்கள்' (அங்கீகாரமற்ற கட்சிகள் மற்றும் சுயேச்சை வேட்பாளர்களுக்கு) என வகைப்படுத்துகிறது.",
+        why_a_en="Correct. Free symbols are from the unreserved pool.",
+        why_a_ta="சரியானது. ஒதுக்கப்படாத பொதுப் பட்டியலில் உள்ளவையே இலவச சின்னங்கள்.",
+        why_b_en="Incorrect. 'Free' refers to non-reservation, not monetary fees.",
+        why_b_ta="தவறானது. 'இலவசம்' என்பது ஒதுக்கீடு இன்மையைக் குறிக்குமே தவிர கட்டணமின்மையை அல்ல.",
+        why_c_en="Incorrect. National parties cannot share symbols.",
+        why_c_ta="தவறானது. தேசியக் கட்சிகள் சின்னத்தைப் பகிர முடியாது.",
+        why_d_en="Incorrect. No symbol is reserved based on caste.",
+        why_d_ta="தவறானது. சாதி அடிப்படையில் சின்ன ஒதுக்கீடு இல்லை.",
+        tip_en="Independent candidates must specify three free symbols in order of preference in their nomination paper.",
+        tip_ta="சுயேச்சை வேட்பாளர்கள் வேட்புமனுவில் விருப்ப வரிசைப்படி 3 இலவச சின்னங்களைக் குறிப்பிட வேண்டும்.",
+        fact_en="ECI maintains a notified list of over 190 free symbols updated before every general election.",
+        fact_ta="ஒவ்வொரு பொதுத் தேர்தலுக்கு முன்பும் 190-க்கும் மேற்பட்ட இலவச சின்னங்களின் பட்டியலை ECI வெளியிடுகிறது.",
+        tags=["Election Symbols", "Free Symbols", "Symbols Order 1968"]
+    ))
+
+    # GT 022
+    qs.append(make_ec_q(
+        qid="EC_GT_022", diff="Hard", qtype="Single-Choice", subtopic="Deregistration Power",
+        en_stem="In Indian National Congress v. Institute of Social Welfare (2002), the Supreme Court ruled that the Election Commission CANNOT deregister a political party except in which of the following circumstances?",
+        ta_stem="இந்திய தேசிய காங்கிரஸ் எதிர் சமூக நல நிறுவனம் (2002) வழக்கில், பின்வரும் எந்த சூழ்நிலைகளைத் தவிர பிற காரணங்களுக்காக அரசியல் கட்சியை ரத்து செய்ய தேர்தல் ஆணையத்திற்கு அதிகாரம் இல்லை என உச்ச நீதிமன்றம் தீர்ப்பளித்தது?",
+        en_a="Where registration was obtained by fraud, or the party has ceased to pledge allegiance to the Constitution, or has been declared an unlawful association by the Central Government", ta_a="மோசடி மூலம் பதிவு பெற்றிருத்தல், அரசியலமைப்பிற்கு விசுவாசமாக இருக்க மறுத்தல், அல்லது மத்திய அரசால் சட்டவிரோத அமைப்பாக அறிவிக்கப்பட்டிருத்தல்",
+        en_b="Where the party fails to win at least 1 seat in two consecutive general elections", ta_b="தொடர்ந்து இரண்டு பொதுத் தேர்தல்களில் குறைந்தது 1 இடத்தைக் கூட வெல்லத் தவறும் போது",
+        en_c="Where the party internal elections are delayed by more than six months", ta_c="கட்சியின் உள்கட்சித் தேர்தல்கள் ஆறு மாதங்களுக்கும் மேலாக தாமதமாகும் போது",
+        en_d="Where the party receives corporate donations exceeding Rs. 100 crores", ta_d="கட்சி ரூ. 100 கோடிக்கு மேல் நிறுவன நன்கொடைகளைப் பெறும் போது",
+        correct_key="A",
+        exp_en="In 2002, the SC held that ECI exercises quasi-judicial power at the time of registration under Section 29A and has no general power to review or deregister a party except in three exceptional cases: fraud/forgery, breach of constitutional allegiance, or declaration as an unlawful association under UAPA.",
+        exp_ta="2002 தீர்ப்பில், பிரிவு 29A-ன் கீழ் கட்சியைப் பதிவு செய்யும் போது quasi-judicial அதிகாரம் கொண்ட ECI-க்கு கட்சிகளை ரத்து செய்யும் பொது அதிகாரம் இல்லை; மோசடி, அரசியலமைப்பு மீறல், அல்லது சட்டவிரோத அமைப்பாக அறிவிக்கப்படும் 3 சூழல்களில் மட்டுமே ரத்து செய்யலாம் என உச்ச நீதிமன்றம் கூறியது.",
+        why_a_en="Correct. Fraud, constitutional breach, or unlawful association under UAPA are the only 3 exceptions.",
+        why_a_ta="சரியானது. மோசடி, அரசியலமைப்பு மீறல், அல்லது சட்டவிரோத அமைப்பாக அறிவிக்கப்படுவது மட்டுமே 3 விதிவிலக்குகள்.",
+        why_b_en="Incorrect. Losing elections does not deregister a party.",
+        why_b_ta="தவறானது. தேர்தலில் தோற்பது கட்சி பதிவை ரத்து செய்யாது.",
+        why_c_en="Incorrect. Delay in internal polls leads to symbol freeze, not deregistration.",
+        why_c_ta="தவறானது. உள்கட்சித் தேர்தல் தாமதம் சின்ன முடக்கத்திற்கு வழிவகுக்கும், ரத்திற்கு அல்ல.",
+        why_d_en="Incorrect. Receiving donations is legal under Section 29B.",
+        why_d_ta="தவறானது. சட்டப்படி நன்கொடை பெறுவது தவறல்ல.",
+        tip_en="ECI has repeatedly urged Parliament to amend RPA 1951 to give it explicit power to deregister inactive parties.",
+        tip_ta="செயல்படாத கட்சிகளை ரத்து செய்ய வெளிப்படையான சட்ட அதிகாரம் வழங்குமாறு தேர்தல் ஆணையம் பலமுறை கோரியுள்ளது.",
+        fact_en="While ECI cannot deregister parties, it frequently de-lists inactive registered unrecognized parties from the roll of tax benefits.",
+        fact_ta="கட்சிகளை ரத்து செய்ய முடியாவிட்டாலும், செயல்படாத கட்சிகளை வரிவிலக்கு பட்டியலில் இருந்து ECI நீக்குகிறது.",
+        tags=["Deregistration", "Section 29A", "Supreme Court 2002"]
+    ))
+
+    # GT 023
+    qs.append(make_ec_q(
+        qid="EC_GT_023", diff="Medium", qtype="Single-Choice", subtopic="Section 127A Pamphlets",
+        en_stem="Under Section 127A of the Representation of the People Act, 1951, what must be printed on the face of every election pamphlet, poster, or handbill?",
+        ta_stem="1951 மக்கள் பிரதிநிதித்துவச் சட்டத்தின் பிரிவு 127A-ன் கீழ், ஒவ்வொரு தேர்தல் துண்டுப்பிரசுரம், சுவரொட்டி அல்லது விளம்பர அட்டையின் முகப்பில் கட்டாயமாக அச்சிடப்பட வேண்டியவை எவை?",
+        en_a="Names and addresses of the printer and the publisher", ta_a="அச்சகத்தார் மற்றும் வெளியீட்டாளரின் பெயர்கள் மற்றும் முகவரிகள்",
+        en_b="Registration number of the political party and its audited balance sheet", ta_b="அரசியல் கட்சியின் பதிவு எண் மற்றும் அதன் தணிக்கை செய்யப்பட்ட கணக்கு அறிக்கை",
+        en_c="Signature of the District Election Officer", ta_c="மாவட்ட தேர்தல் அதிகாரியின் கையொப்பம்",
+        en_d="Estimated expenditure incurred on printing the material", ta_d="அப்பொருளை அச்சிடுவதற்கு செய்யப்பட்ட உத்தேச செலவு",
+        correct_key="A",
+        exp_en="Section 127A strictly prohibits printing or publishing any election pamphlet or poster which does not bear on its face the names and addresses of the printer and the publisher, to prevent anonymous character assassination.",
+        exp_ta="பிரிவு 127A, பெயர் குறிப்பிடாமல் அவதூறு பரப்புவதைத் தடுக்க, தேர்தல் துண்டுப்பிரசுரங்கள் மற்றும் சுவரொட்டிகளில் அச்சகத்தார் மற்றும் வெளியீட்டாளரின் பெயர், முகவரி அச்சிடப்படாமல் வெளியிடுவதை கண்டிப்பாகத் தடை செய்கிறது.",
+        why_a_en="Correct. Section 127A mandates printer and publisher details.",
+        why_a_ta="சரியானது. பிரிவு 127A அச்சகத்தார் மற்றும் வெளியீட்டாளர் விபரங்களை கட்டாயமாக்குகிறது.",
+        why_b_en="Incorrect. Audited balance sheet is not required on posters.",
+        why_b_ta="தவறானது. தணிக்கை அறிக்கை சுவரொட்டிகளில் தேவையில்லை.",
+        why_c_en="Incorrect. DEO signature is not required on private campaign posters.",
+        why_c_ta="தவறானது. தேர்தல் அதிகாரியின் கையொப்பம் தேவையில்லை.",
+        why_d_en="Incorrect. Expenditure is declared to the Returning Officer, not printed on the poster.",
+        why_d_ta="தவறானது. செலவு விபரம் தேர்தல் அதிகாரியிடம் சமர்ப்பிக்கப்படுமே தவிர சுவரொட்டியில் அச்சிடப்படாது.",
+        tip_en="Violation of Section 127A is punishable with imprisonment up to 6 months or fine up to Rs. 2,000, or both.",
+        tip_ta="பிரிவு 127A-ஐ மீறினால் 6 மாத சிறை அல்லது ரூ. 2,000 அபராதம் விதிக்கப்படலாம்.",
+        fact_en="Printer must also send a declaration from the publisher along with copies of the document to the DEO within 3 days of printing.",
+        fact_ta="அச்சிட்ட 3 நாட்களுக்குள் வெளியீட்டாளரின் அறிவிப்புடன் நகல்களை அச்சகத்தார் DEO-விடம் அளிக்க வேண்டும்.",
+        tags=["Section 127A", "Election Pamphlets", "Printer Publisher Details"]
+    ))
+
+    # GT 024
+    qs.append(make_ec_q(
+        qid="EC_GT_024", diff="Hard", qtype="Single-Choice", subtopic="Section 134 Breach of Duty",
+        en_stem="Under Section 134 of the Representation of the People Act, 1951, what penalty can be imposed on any election officer or government servant guilty of an act or omission in breach of official duty?",
+        ta_stem="1951 மக்கள் பிரதிநிதித்துவச் சட்டத்தின் பிரிவு 134-ன் கீழ், தனது உத்தியோகபூர்வ கடமையில் தவறிழைக்கும் தேர்தல் அதிகாரி அல்லது அரசு ஊழியர் மீது என்ன தண்டனை விதிக்கப்படலாம்?",
+        en_a="Fine up to Rs. 500, and cognizable prosecution without need for government sanction", ta_a="ரூ. 500 வரை அபராதம் மற்றும் அரசின் முன் அனுமதி பெறத் தேவையின்றி நீதிமன்றத்தில் குற்ற வழக்குத் தொடரப்படுதல்",
+        en_b="Mandatory dismissal from service without departmental inquiry", ta_b="துறைசார் விசாரணையின்றி அரசுப் பணியிலிருந்து கட்டாய பணிநீக்கம்",
+        en_c="Rigorous imprisonment for not less than 7 years", ta_c="குறைந்தது 7 ஆண்டுகளுக்குக் குறையாத கடுங்காவல் சிறை",
+        en_d="Permanent forfeiture of pension and gratuity", ta_d="ஓய்வூதியம் மற்றும் பணிக்கொடையை நிரந்தரமாக பறிமுதல் செய்தல்",
+        correct_key="A",
+        exp_en="Section 134 provides that any person to whom the section applies (Returning Officers, Presiding Officers, poll staff) guilty of breach of official duty without reasonable cause shall be punishable with fine up to Rs. 500. Cognizance can be taken upon complaint by ECI or CEO.",
+        exp_ta="பிரிவு 134-ன் படி, தகுந்த காரணமின்றி தேர்தல் கடமையில் தவறிழைக்கும் தேர்தல் அலுவலர்கள் மீது ரூ. 500 வரை அபராதம் விதிக்கப்படலாம்; தேர்தல் ஆணையம் அல்லது தலைமை தேர்தல் அதிகாரியின் புகாரின் பேரில் வழக்குத் தொடரலாம்.",
+        why_a_en="Correct. Section 134 provides for fine up to Rs. 500 for official duty breach.",
+        why_a_ta="சரியானது. பிரிவு 134 கடமை மீறலுக்கு ரூ. 500 வரை அபராதம் விதிக்கிறது.",
+        why_b_en="Incorrect. Dismissal requires Article 311 inquiry.",
+        why_b_ta="தவறானது. பணிநீக்கத்திற்கு சரத்து 311 விசாரணை தேவை.",
+        why_c_en="Incorrect. 7 years imprisonment does not apply under Section 134.",
+        why_c_ta="தவறானது. 7 ஆண்டுகள் சிறை இதில் பொருந்தாது.",
+        why_d_en="Incorrect. Pension forfeiture is not provided in Section 134.",
+        why_d_ta="தவறானது. ஓய்வூதியப் பறிமுதல் இதில் இல்லை.",
+        tip_en="Section 134 applies to District Election Officers, Returning Officers, Presiding Officers, and Polling Officers.",
+        tip_ta="பிரிவு 134 மாவட்ட தேர்தல் அதிகாரிகள், RO-க்கள், வாக்குச்சாவடி தலைமை அலுவலர்கள் ஆகியோருக்குப் பொருந்தும்.",
+        fact_en="Section 134(3) bars civil suits for damages against officers acting in good faith under election laws.",
+        fact_ta="பிரிவு 134(3) நன்னம்பிக்கையுடன் செயல்படும் அதிகாரிகள் மீது இழப்பீட்டு வழக்குத் தொடர்வதைத் தடுக்கிறது.",
+        tags=["Section 134", "Breach of Duty", "Election Machinery"]
+    ))
+
+    # GT 025
+    qs.append(make_ec_q(
+        qid="EC_GT_025", diff="Easy", qtype="Single-Choice", subtopic="Qualifying Dates 2021",
+        en_stem="Following the Election Laws (Amendment) Act, 2021, which four dates in a calendar year serve as qualifying dates for enrollment as an elector?",
+        ta_stem="தேர்தல் சட்டங்கள் (திருத்தச்) சட்டம் 2021-ஐத் தொடர்ந்து, ஒரு காலண்டர் ஆண்டில் எந்த நான்கு தேதிகள் வாக்காளராகப் பதிவு செய்வதற்கான தகுதி நாட்களாகச் செயல்படுகின்றன?",
+        en_a="1st January, 1st April, 1st July, and 1st October", ta_a="ஜனவரி 1, ஏப்ரல் 1, ஜூலை 1 மற்றும் அக்டோபர் 1",
+        en_b="1st January, 1st May, 1st September, and 1st December", ta_b="ஜனவரி 1, மே 1, செப்டம்பர் 1 மற்றும் டிசம்பர் 1",
+        en_c="1st March, 1st June, 1st September, and 1st December", ta_c="மார்ச் 1, ஜூன் 1, செப்டம்பர் 1 மற்றும் டிசம்பர் 1",
+        en_d="1st January, 1st February, 1st March, and 1st April", ta_d="ஜனவரி 1, பிப்ரவரி 1, மார்ச் 1 மற்றும் ஏப்ரல் 1",
+        correct_key="A",
+        exp_en="Section 14(b) of the Representation of the People Act, 1950, as amended by the Election Laws (Amendment) Act 2021, defines qualifying dates as the 1st day of January, 1st day of April, 1st day of July, and 1st day of October in the calendar year.",
+        exp_ta="2021 திருத்தச் சட்டத்தின்படி 1950 மக்கள் பிரதிநிதித்துவச் சட்டத்தின் பிரிவு 14(b), ஜனவரி 1, ஏப்ரல் 1, ஜூலை 1 மற்றும் அக்டோபர் 1 ஆகிய நான்கு நாட்களை தகுதி நாட்களாக வரையறுக்கிறது.",
+        why_a_en="Correct. 1st Jan, 1st Apr, 1st Jul, 1st Oct (beginning of each quarter).",
+        why_a_ta="சரியானது. ஜனவரி 1, ஏப்ரல் 1, ஜூலை 1, அக்டோபர் 1 (ஒவ்வொரு காலாண்டின் தொடக்கம்).",
+        why_b_en="Incorrect. Months do not match statutory quarterly intervals.",
+        why_b_ta="தவறானது. மாதங்கள் காலாண்டு இடைவெளியுடன் பொருந்தவில்லை.",
+        why_c_en="Incorrect. Does not start on January 1.",
+        why_c_ta="தவறானது. ஜனவரி 1-ல் தொடங்கவில்லை.",
+        why_d_en="Incorrect. Not monthly.",
+        why_d_ta="தவறானது. மாதந்தோறும் இல்லை.",
+        tip_en="Before 2021, only 1st January was the single qualifying date for the entire year.",
+        tip_ta="2021-க்கு முன்பு ஆண்டு முழுவதும் ஜனவரி 1 மட்டுமே ஒரே தகுதி நாளாக இருந்தது.",
+        fact_en="A citizen can apply in advance (Form 6) upon turning 17 years old, to be enrolled on the upcoming quarterly qualifying date.",
+        fact_ta="17 வயது பூர்த்தியடைந்தவர்கள் தங்களின் அடுத்த தகுதி நாளில் பதிவாக முன்கூட்டியே படிவம் 6 மூலம் விண்ணப்பிக்கலாம்.",
+        tags=["Qualifying Dates", "2021 Amendment", "Section 14(b)"]
+    ))
+
+    return qs

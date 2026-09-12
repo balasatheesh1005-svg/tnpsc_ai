@@ -1,0 +1,9 @@
+import json
+import os
+from scratch_build_complete_cm_dataset_final import mk, easy_path, medium_path, hard_path
+
+def run():
+    print("Executing dataset generator...")
+
+if __name__ == "__main__":
+    run()

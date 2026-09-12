@@ -1,0 +1,686 @@
+"""
+Part 4 of Grand Test generator for Election Commission (EC_GT_076 to EC_GT_100).
+"""
+
+from ec_mcq_helper import make_ec_q
+
+def get_gt_part4():
+    qs = []
+
+    # GT 076
+    qs.append(make_ec_q(
+        qid="EC_GT_076", diff="Medium", qtype="Single-Choice", subtopic="ECI Secretariat",
+        en_stem="Who assists the Election Commission of India at its New Delhi headquarters in operational administration, drawn on deputation from the civil services?",
+        ta_stem="புது தில்லியில் உள்ள தேர்தல் ஆணையத்தின் தலைமையகத்தில் செயல்பாட்டு நிர்வாகத்தில் தேர்தல் ஆணையத்திற்கு உதவுவதற்காக சிவில் சர்வீசஸ் பணியிலிருந்து அயல்பணியில் (deputation) நியமிக்கப்படுபவர்கள் யார்?",
+        en_a="Deputy Election Commissioners and Directors General", ta_a="துணைத் தேர்தல் ஆணையர்கள் (Deputy Election Commissioners) மற்றும் தலைமை இயக்குநர்கள்",
+        en_b="Judges of the Delhi High Court", ta_b="தில்லி உயர் நீதிமன்ற நீதிபதிகள்",
+        en_c="Secretaries to the President of India", ta_c="இந்தியக் குடியரசுத் தலைவரின் செயலாளர்கள்",
+        en_d="Members of the Union Public Service Commission", ta_d="மத்திய அரசுப் பணியாளர் தேர்வாணைய உறுப்பினர்கள்",
+        correct_key="A",
+        exp_en="The Election Commission is assisted at its headquarters by Deputy Election Commissioners (drawn from the IAS/civil services on deputation), Directors General, Principal Secretaries, and Secretaries.",
+        exp_ta="தேர்தல் ஆணையத்திற்கு அதன் தலைமையகத்தில் துணைத் தேர்தல் ஆணையர்கள் (IAS அதிகாரிகள் அயல்பணியில்), தலைமை இயக்குநர்கள் மற்றும் முதன்மைச் செயலாளர்கள் உதவுகின்றனர்.",
+        why_a_en="Correct. Deputy Election Commissioners and DGs assist the Commission.",
+        why_a_ta="சரியானது. துணைத் தேர்தல் ஆணையர்கள் மற்றும் DG-க்கள் ஆணையத்திற்கு உதவுகின்றனர்.",
+        why_b_en="Incorrect. High Court judges are part of judiciary, not ECI staff.",
+        why_b_ta="தவறானது. உயர் நீதிமன்ற நீதிபதிகள் இதில் வர மாட்டார்கள்.",
+        why_c_en="Incorrect. President's secretariat is distinct.",
+        why_c_ta="தவறானது. குடியரசுத் தலைவர் செயலகம் தனித்துவமானது.",
+        why_d_en="Incorrect. UPSC members have a distinct constitutional mandate.",
+        why_d_ta="தவறானது. UPSC உறுப்பினர்கள் தனி அமைப்பு.",
+        tip_en="Deputy Election Commissioners are administrative civil servants, not constitutional commissioners under Article 324.",
+        tip_ta="துணைத் தேர்தல் ஆணையர்கள் நிர்வாக சிவில் அதிகாரிகள் மட்டுமே, சரத்து 324-ன் கீழ் உள்ள அரசியலமைப்பு ஆணையர்கள் அல்ல.",
+        fact_en="Deputy Election Commissioners hold tenure appointments typically for 3 to 5 years.",
+        fact_ta="துணைத் தேர்தல் ஆணையர்கள் பொதுவாக 3 முதல் 5 ஆண்டுகள் வரை பதவி வகிக்கின்றனர்.",
+        tags=["ECI Secretariat", "Deputy Election Commissioners", "Administration"]
+    ))
+
+    # GT 077
+    qs.append(make_ec_q(
+        qid="EC_GT_077", diff="Medium", qtype="Single-Choice", subtopic="ECI Budget Vote",
+        en_stem="In what significant way does the budget of the Election Commission differ from that of the Union Public Service Commission and Supreme Court?",
+        ta_stem="மத்திய அரசுப் பணியாளர் தேர்வாணையம் மற்றும் உச்ச நீதிமன்றத்தின் வரவு செலவுத் திட்டத்திலிருந்து இந்தியத் தேர்தல் ஆணையத்தின் நிதி எந்த முக்கிய வழியில் வேறுபடுகிறது?",
+        en_a="ECI's administrative expenditure is voted by Parliament, whereas SC and UPSC expenses are charged upon the Consolidated Fund of India", ta_a="ECI-ன் நிர்வாகச் செலவுகள் பாராளுமன்றத்தால் வாக்களிக்கப்படுகின்றன; ஆனால் SC மற்றும் UPSC செலவுகள் இந்திய ஒருங்கிணைந்த நிதியில் 'செலவிடப்பட்டவை' (charged)",
+        en_b="ECI is funded entirely by loans from international financial institutions", ta_b="ECI சர்வதேச நிதி நிறுவனங்களின் கடன்கள் மூலம் முழுமையாக நிதியளிக்கப்படுகிறது",
+        en_c="ECI's budget is determined exclusively by the Chief Justice of India", ta_c="ECI-ன் நிதி இந்திய தலைமை நீதிபதியால் மட்டுமே தீர்மானிக்கப்படுகிறது",
+        en_d="ECI charges a fee from every citizen to fund its operations", ta_d="தனது செயல்பாடுகளுக்கு நிதியளிக்க ஒவ்வொரு குடிமகனிடமிருந்தும் ECI கட்டணம் வசூலிக்கிறது",
+        correct_key="A",
+        exp_en="Under Article 112(3), expenditures of the Supreme Court, CAG, and UPSC are 'charged' upon the Consolidated Fund of India (non-votable). In contrast, ECI's expenditure is NOT charged and is subject to parliamentary vote under Ministry of Law & Justice demands.",
+        exp_ta="சரத்து 112(3)-ன் கீழ் உச்ச நீதிமன்றம் மற்றும் UPSC செலவுகள் ஒருங்கிணைந்த நிதியில் 'charged' செய்யப்படுகின்றன (வாக்கெடுப்பிற்கு அப்பாற்பட்டவை); ஆனால் ECI செலவுகள் பாராளுமன்ற வாக்கெடுப்பிற்கு உட்பட்டவை.",
+        why_a_en="Correct. ECI expenses are voted, whereas SC and UPSC are charged upon CFI.",
+        why_a_ta="சரியானது. ECI செலவுகள் வாக்களிக்கப்படுகின்றன; SC/UPSC செலவுகள் ஒருங்கிணைந்த நிதியில் charged செய்யப்படுகின்றன.",
+        why_b_en="Incorrect. No international funding is taken.",
+        why_b_ta="தவறானது. சர்வதேச நிதி எதுவும் பெறப்படுவதில்லை.",
+        why_c_en="Incorrect. Chief Justice does not determine ECI budget.",
+        why_c_ta="தவறானது. தலைமை நீதிபதி ECI நிதியைத் தீர்மானிப்பதில்லை.",
+        why_d_en="Incorrect. No fee is charged from citizens.",
+        why_d_ta="தவறானது. குடிமக்களிடம் கட்டணம் வசூலிக்கப்படுவதில்லை.",
+        tip_en="ECI has repeatedly recommended amending the Constitution to make its expenditure 'charged' upon the CFI to enhance financial autonomy.",
+        tip_ta="நிதி தன்னாட்சியை அதிகரிக்க தனது செலவுகளை 'charged' நிதியாக மாற்ற அரசியலமைப்பை திருத்துமாறு ECI பலமுறை கோரியுள்ளது.",
+        fact_en="Article 322 explicitly charges UPSC expenses; Article 146(3) charges SC expenses; but Article 324 contains no corresponding charged clause for ECI.",
+        fact_ta="சரத்து 322 UPSC செலவுகளையும், சரத்து 146(3) SC செலவுகளையும் charged செய்கிறது; ஆனால் சரத்து 324-ல் ECI-க்கு அத்தகைய விதி இல்லை.",
+        tags=["Consolidated Fund", "Charged Expenditure", "Financial Autonomy"]
+    ))
+
+    # GT 078
+    qs.append(make_ec_q(
+        qid="EC_GT_078", diff="Medium", qtype="Single-Choice", subtopic="Article 324(6) Obligation",
+        en_stem="Under Article 324(6) of the Constitution, what mandatory obligation is imposed on the President and State Governors regarding election administration?",
+        ta_stem="அரசியலமைப்பின் சரத்து 324(6)-ன் கீழ், தேர்தல் நிர்வாகம் தொடர்பாக குடியரசுத் தலைவர் மற்றும் மாநில ஆளுநர்கள் மீது விதிக்கப்பட்டுள்ள கட்டாயக் கடமை என்ன?",
+        en_a="They shall make available to the Election Commission such staff as may be necessary for the discharge of its functions when requested", ta_a="தேர்தல் ஆணையம் கோரும் போது அதன் பணிகளைச் செய்வதற்குத் தேவையான பணியாளர்களை அவர்கள் தேர்தல் ஆணையத்திற்கு கிடைக்கச் செய்ய வேண்டும்",
+        en_b="They must personally supervise the counting of votes in capital cities", ta_b="தலைநகரங்களில் வாக்கு எண்ணிக்கையை அவர்கள் நேரில் மேற்பார்வையிட வேண்டும்",
+        en_c="They must approve the list of election symbols allotted to political parties", ta_c="அரசியல் கட்சிகளுக்கு ஒதுக்கப்படும் தேர்தல் சின்னங்களின் பட்டியலுக்கு அவர்கள் ஒப்புதல் அளிக்க வேண்டும்",
+        en_d="They have the right to veto candidate nominations on grounds of public interest", ta_d="பொது நலன் கருதி வேட்புமனுக்களை ரத்து செய்யும் வீட்டோ அதிகாரம் அவர்களுக்கு உண்டு",
+        correct_key="A",
+        exp_en="Article 324(6) mandates that the President, or the Governor of a State, shall, when so requested by the Election Commission, make available to the Election Commission such staff as may be necessary for the discharge of the functions conferred on the Commission.",
+        exp_ta="சரத்து 324(6)-ன் படி, தேர்தல் ஆணையம் கோரும் போது, அதன் பணிகளைச் செய்வதற்குத் தேவையான பணியாளர்களை குடியரசுத் தலைவர் அல்லது மாநில ஆளுநர் தேர்தல் ஆணையத்திற்கு வழங்க வேண்டும்.",
+        why_a_en="Correct. Making available necessary staff under Article 324(6).",
+        why_a_ta="சரியானது. சரத்து 324(6)-ன் கீழ் தேவையான பணியாளர்களை வழங்குவது.",
+        why_b_en="Incorrect. Constitutional heads do not supervise counting.",
+        why_b_ta="தவறானது. அரசியலமைப்புத் தலைவர்கள் வாக்கு எண்ணிக்கையை மேற்பார்வையிடுவதில்லை.",
+        why_c_en="Incorrect. Symbols are approved exclusively by ECI under Symbols Order.",
+        why_c_ta="தவறானது. சின்னங்களை ECI மட்டுமே அங்கீகரிக்கிறது.",
+        why_d_en="Incorrect. No nomination veto power exists.",
+        why_d_ta="தவறானது. வேட்புமனுக்கள் மீது வீட்டோ அதிகாரம் இல்லை.",
+        tip_en="In Election Commission v. State Bank of India (1995), SC held that staff of nationalized banks and PSUs can also be requisitioned under Article 324(6) read with RPA.",
+        tip_ta="1995 எஸ்பிஐ வழக்கில் தேசியமயமாக்கப்பட்ட வங்கிகள் மற்றும் பொதுத்துறை நிறுவனங்களின் ஊழியர்களையும் தேர்தல் பணிக்கு அழைக்கலாம் என உச்ச நீதிமன்றம் கூறியது.",
+        fact_en="Over 15 million polling personnel and security forces are mobilized under Article 324(6) during Indian general elections.",
+        fact_ta="இந்தியப் பொதுத் தேர்தலின் போது 1.5 கோடிக்கும் அதிகமான தேர்தல் பணியாளர்கள் மற்றும் பாதுகாப்புப் படையினர் இப்பிரிவின் கீழ் ஈடுபடுத்தப்படுகின்றனர்.",
+        tags=["Article 324(6)", "Staff Provision", "Deputation"]
+    ))
+
+    # GT 079
+    qs.append(make_ec_q(
+        qid="EC_GT_079", diff="Hard", qtype="Single-Choice", subtopic="Section 23(3) Cutoff",
+        en_stem="Under Section 23(3) of the Representation of the People Act, 1950, what is the strict cutoff deadline after which NO amendment, transposition, or deletion of any entry can be made in the electoral roll of a constituency?",
+        ta_stem="1950 மக்கள் பிரதிநிதித்துவச் சட்டத்தின் பிரிவு 23(3)-ன் கீழ், எந்த காலக்கெடுவிற்குப் பிறகு ஒரு தொகுதியின் வாக்காளர் பட்டியலில் எந்தவொரு திருத்தமும், இடமாற்றமும் அல்லது நீக்கமும் செய்ய முடியாது?",
+        en_a="After the last date for making nominations for an election in that constituency, until the completion of that election", ta_a="அத்தொகுதியில் தேர்தலுக்கான வேட்புமனு தாக்கல் செய்வதற்கான கடைசி நாளுக்குப் பிறகு, அத்தேர்தல் முடிவடையும் வரை",
+        en_b="After the date of issuance of the official election notification", ta_b="அதிகாரப்பூர்வ தேர்தல் அறிவிக்கை வெளியிடப்படும் நாளுக்குப் பிறகு",
+        en_c="72 hours prior to the commencement of polling", ta_c="வாக்குப்பதிவு தொடங்குவதற்கு 72 மணி நேரத்திற்கு முன்பாக",
+        en_d="On the date of publication of the draft electoral roll", ta_d="வரைவு வாக்காளர் பட்டியல் வெளியிடப்படும் நாளன்று",
+        correct_key="A",
+        exp_en="Section 23(3) of RPA 1950 enacts an absolute statutory freeze: 'No amendment, transposition or deletion of any entry shall be made under section 22 and no direction for the inclusion of a name in the electoral roll shall be given under this section, after the last date for making nominations for an election in that constituency... and before the completion of that election.'",
+        exp_ta="பிரிவு 23(3) வாக்காளர் பட்டியலில் முழுமையான முடக்கத்தை விதிக்கிறது: 'ஒரு தொகுதியில் வேட்புமனு தாக்கல் செய்வதற்கான கடைசி நாளுக்குப் பின்னரும், அத்தேர்தல் முடிவடையும் வரையிலும் வாக்காளர் பட்டியலில் எந்தப் பெயரையும் சேர்க்கவோ, நீக்கவோ, திருத்தவோ முடியாது.'",
+        why_a_en="Correct. Last date for making nominations is the frozen cutoff under Section 23(3).",
+        why_a_ta="சரியானது. வேட்புமனு தாக்கல் கடைசி நாளே பிரிவு 23(3)-ன் கீழான இறுதி முடக்கத் தேதியாகும்.",
+        why_b_en="Incorrect. Inclusions are permitted after notification up to the nomination cutoff.",
+        why_b_ta="தவறானது. அறிவிக்கைக்குப் பிறகும் மனு தாக்கல் கடைசி நாள் வரை பெயர் சேர்க்கலாம்.",
+        why_c_en="Incorrect. 72 hours is not the statutory roll cutoff.",
+        why_c_ta="தவறானது. 72 மணி நேரம் அல்ல.",
+        why_d_en="Incorrect. Draft roll is published specifically to invite amendments.",
+        why_d_ta="தவறானது. வரைவுப் பட்டியல் திருத்தங்களை வரவேற்கவே வெளியிடப்படுகிறது.",
+        tip_en="A citizen whose name is included before 3:00 PM on the last date of nominations is legally entitled to vote in that election.",
+        tip_ta="வேட்புமனு தாக்கல் கடைசி நாள் மாலை 3:00 மணிக்குள் பெயர் சேர்க்கப்பட்ட குடிமகன் அத்தேர்தலில் வாக்களிக்க சட்டப்படி தகுதியுடையவர்.",
+        fact_en="In Baidyanath Panjiar v. Sita Ram Mahto (1969), SC held that inclusion of names after the Section 23(3) cutoff renders the votes invalid.",
+        fact_ta="1969 உச்ச நீதிமன்ற தீர்ப்பில் பிரிவு 23(3) காலக்கெடுவுக்குப் பின் சேர்க்கப்பட்ட பெயர்களின் வாக்குகள் செல்லாதவை என அறிவிக்கப்பட்டது.",
+        tags=["Section 23(3)", "Electoral Roll Freeze", "Nomination Cutoff"]
+    ))
+
+    # GT 080
+    qs.append(make_ec_q(
+        qid="EC_GT_080", diff="Medium", qtype="Single-Choice", subtopic="Section 24 Electoral Appeals",
+        en_stem="Under Section 24 of the Representation of the People Act, 1950, to whom does an appeal lie against an order of the Electoral Registration Officer (ERO) regarding inclusion or exclusion of a name?",
+        ta_stem="1950 மக்கள் பிரதிநிதித்துவச் சட்டத்தின் பிரிவு 24-ன் கீழ், வாக்காளர் பட்டியலில் பெயர் சேர்த்தல் அல்லது நீக்குதல் தொடர்பான தேர்தல் பதிவு அதிகாரியின் (ERO) உத்தரவுக்கு எதிராக யாரிடம் மேல்முறையீடு செய்ய முடியும்?",
+        en_a="First appeal to the District Magistrate / District Collector, and second appeal to the Chief Electoral Officer", ta_a="முதல் மேல்முறையீடு மாவட்ட ஆட்சியரிடம் / மாவட்ட மாஜிஸ்திரேட்டிடம், மற்றும் இரண்டாவது மேல்முறையீடு தலைமைத் தேர்தல் அதிகாரியிடம்",
+        en_b="Directly to the Supreme Court of India by writ petition", ta_b="ரிட் மனு மூலம் நேரடியாக இந்திய உச்ச நீதிமன்றத்தில்",
+        en_c="To the Speaker of the Legislative Assembly", ta_c="சட்டமன்ற சபாநாயகரிடம்",
+        en_d="To the Union Minister of Law and Justice", ta_d="மத்திய சட்ட மற்றும் நீதித்துறை அமைச்சரிடம்",
+        correct_key="A",
+        exp_en="Section 24 of RPA 1950 provides a two-tier statutory appeal mechanism against decisions of the ERO under Sections 22 or 23: an appeal lies first to the District Magistrate/Additional DM, and a further appeal lies to the Chief Electoral Officer (CEO) of the State.",
+        exp_ta="பிரிவு 24 இருநிலை மேல்முறையீட்டு பொறிமுறையை வழங்குகிறது: ERO உத்தரவுக்கு எதிராக முதல் மேல்முறையீடு மாவட்ட ஆட்சியரிடம் / ADM-யிடம் செல்லும்; அதற்கு அடுத்த மேல்முறையீடு மாநிலத்தின் தலைமைத் தேர்தல் அதிகாரியிடம் (CEO) செல்லும்.",
+        why_a_en="Correct. DM is first appellate authority, CEO is second appellate authority under Section 24.",
+        why_a_ta="சரியானது. மாவட்ட ஆட்சியர் முதல் மேல்முறையீட்டு அதிகாரி; CEO இரண்டாவது மேல்முறையீட்டு அதிகாரி.",
+        why_b_en="Incorrect. Direct SC writ is not the statutory appeal route.",
+        why_b_ta="தவறானது. நேரடி உச்ச நீதிமன்ற வழக்கு சட்டப்பூர்வ வழி அல்ல.",
+        why_c_en="Incorrect. Speaker has no jurisdiction over electoral roll compilation.",
+        why_c_ta="தவறானது. வாக்காளர் பட்டியலில் சபாநாயகருக்கு அதிகாரமில்லை.",
+        why_d_en="Incorrect. Law Minister has no appellate judicial function.",
+        why_d_ta="தவறானது. சட்ட அமைச்சருக்கு இதில் மேல்முறையீட்டு அதிகாரம் இல்லை.",
+        tip_en="Appeals under Section 24 must be presented within 15 days of the ERO's order in the prescribed format.",
+        tip_ta="ERO உத்தரவு வெளியான 15 நாட்களுக்குள் பிரிவு 24-ன் கீழ் மேல்முறையீடு செய்யப்பட வேண்டும்.",
+        fact_en="Section 24 was substituted in 1960 to provide quick administrative redressal without having to resort to civil courts.",
+        fact_ta="நீதிமன்றங்களுக்குச் செல்லாமல் விரைவான நிவாரணம் பெற 1960-ல் பிரிவு 24 திருத்தப்பட்டது.",
+        tags=["Section 24", "Electoral Appeals", "ERO", "District Magistrate"]
+    ))
+
+    # GT 081 to GT 100
+    # GT 081
+    qs.append(make_ec_q(
+        qid="EC_GT_081", diff="Easy", qtype="Single-Choice", subtopic="Section 31 False Declaration",
+        en_stem="Under Section 31 of the Representation of the People Act, 1950, what is the maximum penalty for making a false declaration in connection with the preparation or revision of an electoral roll?",
+        ta_stem="1950 மக்கள் பிரதிநிதித்துவச் சட்டத்தின் பிரிவு 31-ன் கீழ், வாக்காளர் பட்டியல் தயாரிப்பு அல்லது திருத்தம் தொடர்பாக தவறான அறிவிப்பைச் செய்பவருக்கு விதிக்கப்படும் அதிகபட்ச தண்டனை என்ன?",
+        en_a="Imprisonment for a term which may extend to one year, or with fine, or with both", ta_a="ஒரு ஆண்டு வரை நீட்டிக்கப்படக்கூடிய சிறைத்தண்டனை, அல்லது அபராதம், அல்லது இரண்டும்",
+        en_b="Imprisonment for up to five years and permanent loss of voting rights", ta_b="ஐந்து ஆண்டுகள் வரை சிறை மற்றும் வாக்களிக்கும் உரிமையை நிரந்தரமாக இழத்தல்",
+        en_c="A fine of Rs. 100 only", ta_c="ரூ. 100 அபராதம் மட்டுமே",
+        en_d="Debarment from taking government examinations for 3 years", ta_d="3 ஆண்டுகளுக்கு அரசுத் தேர்வுகளை எழுத தடை விதித்தல்",
+        correct_key="A",
+        exp_en="Section 31 provides that if any person makes in connection with the preparation, revision or correction of an electoral roll any statement or declaration which is false, he shall be punishable with imprisonment up to one year, or fine, or both.",
+        exp_ta="பிரிவு 31-ன் படி, வாக்காளர் பட்டியல் தயாரிப்பு, திருத்தம் தொடர்பாக பொய்யான அறிக்கை அல்லது அறிவிப்பை வெளியிடும் எந்தவொரு நபருக்கும் 1 ஆண்டு வரை சிறை அல்லது அபராதம் அல்லது இரண்டும் தண்டனையாக விதிக்கப்படும்.",
+        why_a_en="Correct. Up to 1 year imprisonment, or fine, or both under Section 31.",
+        why_a_ta="சரியானது. பிரிவு 31-ன் கீழ் 1 ஆண்டு வரை சிறை அல்லது அபராதம்.",
+        why_b_en="Incorrect. 5 years is incorrect.",
+        why_b_ta="தவறானது. 5 ஆண்டுகள் தவறானது.",
+        why_c_en="Incorrect. Imprisonment is provided in the statute.",
+        why_c_ta="தவறானது. சிறைத் தண்டனை சட்டத்தில் உள்ளது.",
+        why_d_en="Incorrect. Debarment from exams is not an RPA penalty.",
+        why_d_ta="தவறானது. தேர்வுகளுக்கு தடை இதில் வராது.",
+        tip_en="Falsely claiming ordinary residence in multiple constituencies is punishable under this section.",
+        tip_ta="பல தொகுதிகளில் போலியாக வசிப்பிடத்தைக் கூறி பதிவு செய்வது இப்பிரிவின் கீழ் தண்டனைக்குரியது.",
+        fact_en="Section 31 was inserted in 1958 to deter rampant bogus voter registration drives.",
+        fact_ta="போலி வாக்காளர் சேர்க்கையைத் தடுக்க 1958-ல் பிரிவு 31 சேர்க்கப்பட்டது.",
+        tags=["Section 31", "False Declaration", "RPA 1950"]
+    ))
+
+    # GT 082
+    qs.append(make_ec_q(
+        qid="EC_GT_082", diff="Medium", qtype="Single-Choice", subtopic="Section 127 Public Meetings",
+        en_stem="Under Section 127 of the Representation of the People Act, 1951, what is the penalty for creating disturbances at lawful election public meetings?",
+        ta_stem="1951 மக்கள் பிரதிநிதித்துவச் சட்டத்தின் பிரிவு 127-ன் கீழ், சட்டப்பூர்வமான தேர்தல் பொதுக்கூட்டங்களில் கலவரம் அல்லது இடையூறு ஏற்படுத்துபவருக்கு விதிக்கப்படும் தண்டனை என்ன?",
+        en_a="Imprisonment for a term which may extend to six months, or with fine up to Rs. 2,000, or with both", ta_a="ஆறு மாதங்கள் வரை நீட்டிக்கப்படக்கூடிய சிறைத்தண்டனை, அல்லது ரூ. 2,000 வரை அபராதம், அல்லது இரண்டும்",
+        en_b="Life imprisonment for inciting political violence", ta_b="அரசியல் வன்முறையைத் தூண்டியதற்காக ஆயுள் சிறை",
+        en_c="A spot fine of Rs. 50 only", ta_c="ரூ. 50 ஸ்பாட் ஃபைன் மட்டும்",
+        en_d="House arrest until the completion of elections", ta_d="தேர்தல் முடியும் வரை வீட்டுக் காவல்",
+        correct_key="A",
+        exp_en="Section 127(2) provides that any person who acts in a disorderly manner at a lawful political meeting held in connection with an election shall be punishable with imprisonment up to 6 months, or fine up to Rs. 2,000, or both.",
+        exp_ta="பிரிவு 127(2)-ன் படி, தேர்தல் தொடர்பான சட்டப்பூர்வமான கூட்டத்தில் அமைதிக்கு குந்தகம் விளைவிக்கும் எவருக்கும் 6 மாதங்கள் வரை சிறை அல்லது ரூ. 2,000 வரை அபராதம் அல்லது இரண்டும் விதிக்கப்படலாம்.",
+        why_a_en="Correct. Up to 6 months imprisonment or fine up to Rs. 2,000 under Section 127.",
+        why_a_ta="சரியானது. பிரிவு 127-ன் கீழ் 6 மாதங்கள் வரை சிறை அல்லது ரூ. 2,000 அபராதம்.",
+        why_b_en="Incorrect. Life imprisonment is not provided.",
+        why_b_ta="தவறானது. ஆயுள் சிறை இதில் இல்லை.",
+        why_c_en="Incorrect. Fine is up to Rs. 2,000.",
+        why_c_ta="தவறானது. அபராதம் ரூ. 2,000 வரை.",
+        why_d_en="Incorrect. House arrest is not a penal sentence under RPA.",
+        why_d_ta="தவறானது. வீட்டுக் காவல் இதில் வராது.",
+        tip_en="Under Section 127(3), the chairman of the meeting may request the police to arrest the person creating the disturbance.",
+        tip_ta="கூட்டத்தின் தலைவர் இடையூறு செய்பவரைக் கைது செய்ய காவல்துறையிடம் கோரலாம் (பிரிவு 127(3)).",
+        fact_en="Section 127 protects the freedom of political expression during democratic campaigns.",
+        fact_ta="பிரிவு 127 தேர்தல் பிரச்சாரத்தின் போது அரசியல் கருத்து சுதந்திரத்தைப் பாதுகாக்கிறது.",
+        tags=["Section 127", "Election Meetings", "Disorderly Conduct"]
+    ))
+
+    # GT 083
+    qs.append(make_ec_q(
+        qid="EC_GT_083", diff="Hard", qtype="Single-Choice", subtopic="Symbols Order Para 16A",
+        en_stem="Under Paragraph 16A of the Election Symbols (Reservation and Allotment) Order, 1968, what action can the Election Commission take against a recognized political party that fails to observe the Model Code of Conduct?",
+        ta_stem="1968 தேர்தல் சின்னங்கள் ஆணையின் பத்தி 16A-ன் கீழ், மாதிரி நடத்தை விதிமுறைகளைக் கடைப்பிடிக்கத் தவறும் அங்கீகரிக்கப்பட்ட அரசியல் கட்சிக்கு எதிராக தேர்தல் ஆணையம் என்ன நடவடிக்கை எடுக்க முடியும்?",
+        en_a="Suspend or withdraw the recognition of such political party as a National Party or State Party", ta_a="அத்தகைய அரசியல் கட்சியின் தேசியக் கட்சி அல்லது மாநிலக் கட்சி என்ற அங்கீகாரத்தை இடைநீக்கம் செய்யலாம் அல்லது ரத்து செய்யலாம்",
+        en_b="Order the immediate freezing of all bank accounts of the political party", ta_b="அரசியல் கட்சியின் அனைத்து வங்கிக் கணக்குகளையும் உடனடியாக முடக்க உத்தரவிடலாம்",
+        en_c="Arrest the party president and working committee members without warrant", ta_c="பிடியாணையின்றி கட்சியின் தலைவர் மற்றும் செயற்குழு உறுப்பினர்களைக் கைது செய்யலாம்",
+        en_d="Confiscate the party headquarters and all district party offices", ta_d="கட்சியின் தலைமை அலுவலகம் மற்றும் மாவட்ட அலுவலகங்களை பறிமுதல் செய்யலாம்",
+        correct_key="A",
+        exp_en="Paragraph 16A empowers the Commission, after giving reasonable opportunity of showing cause, to suspend or withdraw the recognition of a recognized political party if it fails to observe the Model Code of Conduct or follow lawful directions of the Commission.",
+        exp_ta="பத்தி 16A, மாதிரி நடத்தை விதிகளை அல்லது ஆணையத்தின் உத்தரவுகளைப் பின்பற்றத் தவறும் அங்கீகரிக்கப்பட்ட கட்சியின் அங்கீகாரத்தை விளக்கம் கேட்க வாய்ப்பளித்த பின்னர் இடைநீக்கம் செய்ய அல்லது ரத்து செய்ய தேர்தல் ஆணையத்திற்கு அதிகாரம் அளிக்கிறது.",
+        why_a_en="Correct. Suspend or withdraw recognition under Paragraph 16A.",
+        why_a_ta="சரியானது. பத்தி 16A-ன் கீழ் கட்சியின் அங்கீகாரத்தை இடைநீக்கம் அல்லது ரத்து செய்யலாம்.",
+        why_b_en="Incorrect. ECI cannot freeze bank accounts under Paragraph 16A.",
+        why_b_ta="தவறானது. வங்கிக் கணக்குகளை முடக்க முடியாது.",
+        why_c_en="Incorrect. ECI has no direct police arrest powers.",
+        why_c_ta="தவறானது. ஆணையத்திற்கு கைது செய்யும் அதிகாரம் இல்லை.",
+        why_d_en="Incorrect. Confiscation of party real estate is ultra vires.",
+        why_d_ta="தவறானது. அலுவலகங்களை பறிமுதல் செய்ய முடியாது.",
+        tip_en="Paragraph 16A was inserted in 1994 to give statutory teeth to the Model Code of Conduct.",
+        tip_ta="மாதிரி நடத்தை விதிகளுக்கு வலுவூட்ட 1994-ல் பத்தி 16A சேர்க்கப்பட்டது.",
+        fact_en="Withdrawal of recognition strips the party of its reserved symbol, free broadcast time, and other statutory privileges.",
+        fact_ta="அங்கீகாரம் ரத்து செய்யப்பட்டால் அக்கட்சி தனது ஒதுக்கப்பட்ட சின்னம் மற்றும் இலவச ஒளிபரப்பு நேரத்தை இழக்கும்.",
+        tags=["Paragraph 16A", "Symbols Order 1968", "Withdrawal of Recognition"]
+    ))
+
+    # GT 084
+    qs.append(make_ec_q(
+        qid="EC_GT_084", diff="Hard", qtype="Single-Choice", subtopic="Kishan Singh Tomar Case",
+        en_stem="In Kishan Singh Tomar v. Municipal Corporation of the City of Ahmedabad (2006), what did the Constitution Bench of the Supreme Court rule regarding the powers of the State Election Commission (SEC)?",
+        ta_stem="கிஷன் சிங் தோமர் எதிர் அகமதாபாத் மாநகராட்சி (2006) வழக்கில், மாநிலத் தேர்தல் ஆணையத்தின் (SEC) அதிகாரங்கள் குறித்து உச்ச நீதிமன்றத்தின் அரசியலமைப்பு அமர்வு என்ன தீர்ப்பளித்தது?",
+        en_a="The powers of the State Election Commission in respect of local body elections are co-equal and at par with the powers of the Election Commission of India under Article 324", ta_a="உள்ளாட்சித் தேர்தல்கள் தொடர்பாக மாநிலத் தேர்தல் ஆணையத்தின் அதிகாரங்கள் சரத்து 324-ன் கீழ் உள்ள இந்தியத் தேர்தல் ஆணையத்தின் அதிகாரங்களுக்கு இணையானவை மற்றும் சமமானவை",
+        en_b="The State Election Commission is an administrative subordinate department of the State Home Ministry", ta_b="மாநிலத் தேர்தல் ஆணையம் என்பது மாநில உள்துறை அமைச்சகத்தின் கீழ் உள்ள ஒரு நிர்வாகத் துறை மட்டுமே",
+        en_c="State Election Commissioners can be removed by the Chief Minister by administrative order", ta_c="மாநிலத் தேர்தல் ஆணையரை முதலமைச்சர் தனது நிர்வாக உத்தரவு மூலம் பதவி நீக்கம் செய்யலாம்",
+        en_d="State Election Commissions have jurisdiction over Lok Sabha elections in Union Territories", ta_d="யூனியன் பிரதேசங்களில் மக்களவைத் தேர்தலை நடத்தும் அதிகாரம் மாநில தேர்தல் ஆணையத்திற்கு உண்டு",
+        correct_key="A",
+        exp_en="In Kishan Singh Tomar (2006), the Supreme Court ruled that Articles 243K and 243ZA confer on the State Election Commission powers of superintendence, direction, and control over local elections that are co-equal to the plenary powers of the ECI under Article 324. State governments are bound to abide by SEC orders.",
+        exp_ta="கிஷன் சிங் தோமர் (2006) வழக்கில், உள்ளாட்சித் தேர்தல்களை நடத்துவதில் சரத்துகள் 243K மற்றும் 243ZA-ன் கீழ் மாநிலத் தேர்தல் ஆணையத்திற்கு உள்ள அதிகாரங்கள், சரத்து 324-ன் கீழ் இந்திய தேர்தல் ஆணையத்திற்கு உள்ள அதிகாரங்களுக்கு இணையானவை என உச்ச நீதிமன்றம் தீர்ப்பளித்தது.",
+        why_a_en="Correct. SEC powers are co-equal to ECI within its local body sphere.",
+        why_a_ta="சரியானது. உள்ளாட்சித் தேர்தல் வரம்பிற்குள் SEC அதிகாரங்கள் ECI-க்கு இணையானவை.",
+        why_b_en="Incorrect. SEC is an independent constitutional body, not a subordinate department.",
+        why_b_ta="தவறானது. SEC ஒரு தன்னாட்சி பெற்ற அரசியலமைப்பு அமைப்பாகும்.",
+        why_c_en="Incorrect. SEC can only be removed like a High Court Judge.",
+        why_c_ta="தவறானது. உயர் நீதிமன்ற நீதிபதி போல மட்டுமே நீக்க முடியும்.",
+        why_d_en="Incorrect. ECI conducts all Lok Sabha elections.",
+        why_d_ta="தவறானது. அனைத்து மக்களவைத் தேர்தல்களையும் ECI மட்டுமே நடத்துகிறது.",
+        tip_en="State governments cannot postpone local body elections beyond the mandatory 5-year term using executive orders.",
+        tip_ta="மாநில அரசுகள் நிர்வாக உத்தரவுகள் மூலம் 5 ஆண்டு உள்ளாட்சித் தேர்தல்களை தள்ளிப்போட முடியாது.",
+        fact_en="Articles 243-E and 243-U mandate that elections to Panchayats and Municipalities must be completed before the expiry of their 5-year duration.",
+        fact_ta="சரத்துகள் 243-E மற்றும் 243-U உள்ளாட்சி அமைப்புகளின் 5 ஆண்டு காலம் முடிவதற்கு முன்பே தேர்தலை நடத்த கட்டாயமாக்குகின்றன.",
+        tags=["Kishan Singh Tomar", "State Election Commission", "Article 243K"]
+    ))
+
+    # GT 085
+    qs.append(make_ec_q(
+        qid="EC_GT_085", diff="Medium", qtype="Single-Choice", subtopic="MCC Part VIII Manifestos",
+        en_stem="Under Part VIII of the Model Code of Conduct, what key principle must political parties adhere to while framing election manifestos?",
+        ta_stem="மாதிரி நடத்தை விதிமுறைகளின் பகுதி VIII-ன் கீழ், தேர்தல் அறிக்கைகளை உருவாக்கும் போது அரசியல் கட்சிகள் கடைப்பிடிக்க வேண்டிய முக்கிய கொள்கை என்ன?",
+        en_a="Manifestos should reflect the rationale for promises and broadly indicate the financial ways and means to fulfill them", ta_a="தேர்தல் வாக்குறுதிகளுக்கான காரணங்களை வெளிப்படுத்த வேண்டும் மற்றும் அவற்றை நிறைவேற்றுவதற்கான நிதி வழிகளையும் வழிமுறைகளையும் தோராயமாக குறிப்பிட வேண்டும்",
+        en_b="Parties must obtain prior financial clearance from the Comptroller and Auditor General (CAG)", ta_b="கட்சிகள் மத்திய கணக்குத் தணிக்கையாளரிடம் (CAG) முன்கூட்டியே நிதி அனுமதி பெற வேண்டும்",
+        en_c="Manifestos cannot promise any free welfare services or social security measures", ta_c="எந்தவொரு இலவச நலத்திட்டங்களையோ அல்லது சமூகப் பாதுகாப்பு நடவடிக்கைகளையோ அறிக்கையில் வாக்களிக்க முடியாது",
+        en_d="Manifestos must be published exclusively in English and Hindi", ta_d="தேர்தல் அறிக்கைகள் ஆங்கிலம் மற்றும் இந்தியில் மட்டுமே வெளியிடப்பட வேண்டும்",
+        correct_key="A",
+        exp_en="Part VIII of the MCC (added in 2014) requires that the manifesto must reflect the rationale for the promises and broadly indicate the financial ways and means to meet the expense to maintain the credibility of promises and financial sustainability.",
+        exp_ta="2014-ல் சேர்க்கப்பட்ட பகுதி VIII-ன் படி, தேர்தல் வாக்குறுதிகளை நிறைவேற்றுவதற்கான நியாயமான காரணங்களையும், அதற்கான நிதி திரட்டும் வழிமுறைகளையும் கட்சிகள் தோராயமாக தெரிவிக்க வேண்டும்.",
+        why_a_en="Correct. Part VIII mandates rationale and financial ways and means in manifestos.",
+        why_a_ta="சரியானது. பகுதி VIII காரணங்கள் மற்றும் நிதி வழிகளை குறிப்பிடுவதை கட்டாயமாக்குகிறது.",
+        why_b_en="Incorrect. CAG does not vet political party manifestos.",
+        why_b_ta="தவறானது. CAG கட்சி அறிக்கைகளை தணிக்கை செய்வதில்லை.",
+        why_c_en="Incorrect. Welfare promises are permitted as held in Balaji (2013).",
+        why_c_ta="தவறானது. நலத்திட்ட வாக்குறுதிகள் அனுமதிக்கப்படுகின்றன.",
+        why_d_en="Incorrect. Manifestos can be published in any regional language.",
+        why_d_ta="தவறானது. எந்த பிராந்திய மொழியிலும் வெளியிடலாம்.",
+        tip_en="Part VIII was formulated pursuant to the directions of the Supreme Court in S. Subramaniam Balaji v. State of Tamil Nadu (2013).",
+        tip_ta="2013 சுப்பிரமணியம் பாலாஜி வழக்கின் உச்ச நீதிமன்ற உத்தரவின்படியே பகுதி VIII உருவாக்கப்பட்டது.",
+        fact_en="Manifestos cannot be released during the 48-hour silence period under Section 126.",
+        fact_ta="பிரிவு 126-ன் கீழான 48 மணி நேர அமைதிக் காலத்தில் தேர்தல் அறிக்கைகளை வெளியிட முடியாது.",
+        tags=["MCC Part VIII", "Election Manifestos", "Balaji Case Guidelines"]
+    ))
+
+    # GT 086
+    qs.append(make_ec_q(
+        qid="EC_GT_086", diff="Medium", qtype="Single-Choice", subtopic="Section 29A Registration Timeline",
+        en_stem="Under Section 29A(2) of RPA 1951, within what timeframe from its date of formation must an association or body of citizens apply to the Election Commission for registration as a political party?",
+        ta_stem="1951 மக்கள் பிரதிநிதித்துவச் சட்டத்தின் பிரிவு 29A(2)-ன் கீழ், ஒரு குடிமக்கள் அமைப்பு உருவாக்கப்பட்ட தேதியிலிருந்து எத்தனை நாட்களுக்குள் அரசியல் கட்சியாகப் பதிவு செய்ய தேர்தல் ஆணையத்திடம் விண்ணப்பிக்க வேண்டும்?",
+        en_a="Within 30 days next following the date of its formation", ta_a="அது உருவாக்கப்பட்ட தேதியைத் தொடர்ந்து வரும் 30 நாட்களுக்குள்",
+        en_b="Within 90 days from the date of its formation", ta_b="உருவாக்கப்பட்ட தேதியிலிருந்து 90 நாட்களுக்குள்",
+        en_c="Within 6 months from its formation", ta_c="உருவாக்கப்பட்ட தேதியிலிருந்து 6 மாதங்களுக்குள்",
+        en_d="Anytime within two years before the general election", ta_d="பொதுத் தேர்தலுக்கு முந்தைய இரண்டு ஆண்டுகளுக்குள் எப்போது வேண்டுமானாலும்",
+        correct_key="A",
+        exp_en="Section 29A(2) mandates that an application for registration of a political party shall be made to the Election Commission 'within thirty days next following the date of its formation'.",
+        exp_ta="பிரிவு 29A(2) தெளிவாகக் கூறுகிறது: ஒரு அமைப்பு அரசியல் கட்சியாகப் பதிவு செய்வதற்கான விண்ணப்பத்தை 'அது உருவாக்கப்பட்ட தேதியைத் தொடர்ந்து வரும் முப்பது நாட்களுக்குள்' தேர்தல் ஆணையத்திடம் சமர்ப்பிக்க வேண்டும்.",
+        why_a_en="Correct. Within 30 days under Section 29A(2).",
+        why_a_ta="சரியானது. பிரிவு 29A(2)-ன் கீழ் 30 நாட்களுக்குள்.",
+        why_b_en="Incorrect. 90 days is incorrect.",
+        why_b_ta="தவறானது. 90 நாட்கள் தவறானது.",
+        why_c_en="Incorrect. 6 months is incorrect.",
+        why_c_ta="தவறானது. 6 மாதங்கள் தவறானது.",
+        why_d_en="Incorrect. Cannot wait two years.",
+        why_d_ta="தவறானது. இரண்டு ஆண்டுகள் காத்திருக்க முடியாது.",
+        tip_en="An application fee of Rs. 10,000 (non-refundable) must accompany the registration application.",
+        tip_ta="பதிவு விண்ணப்பத்துடன் ரூ. 10,000 திரும்பப் பெற முடியாத கட்டணம் செலுத்தப்பட வேண்டும்.",
+        fact_en="Section 29A was introduced by the Representation of the People (Amendment) Act, 1988.",
+        fact_ta="1988 மக்கள் பிரதிநிதித்துவத் திருத்தச் சட்டம் மூலம் பிரிவு 29A அறிமுகப்படுத்தப்பட்டது.",
+        tags=["Section 29A", "Party Registration", "30 Days Timeline"]
+    ))
+
+    # GT 087
+    qs.append(make_ec_q(
+        qid="EC_GT_087", diff="Hard", qtype="Single-Choice", subtopic="Section 29A(5) Pledge",
+        en_stem="Under Section 29A(5) of the Representation of the People Act, 1951, what specific mandatory provision must be contained in the memorandum or constitution of every registered political party?",
+        ta_stem="1951 மக்கள் பிரதிநிதித்துவச் சட்டத்தின் பிரிவு 29A(5)-ன் கீழ், பதிவுசெய்யப்பட்ட ஒவ்வொரு அரசியல் கட்சியின் விதிகளிலும் கட்டாயமாக இருக்க வேண்டிய குறிப்பிட்ட விதி எது?",
+        en_a="A specific provision that the party shall bear true faith and allegiance to the Constitution of India as by law established, and to the principles of socialism, secularism, and democracy, and would uphold the sovereignty, unity, and integrity of India", ta_a="சட்டப்படி நிறுவப்பட்ட இந்திய அரசியலமைப்பிற்கும், சோசலிசம், மதச்சார்பின்மை மற்றும் ஜனநாயகக் கொள்கைகளுக்கும் உண்மையாகவும் விசுவாசமாகவும் இருப்பதாகவும், இந்தியாவின் இறையாண்மை, ஒற்றுமை மற்றும் ஒருமைப்பாட்டை நிலைநிறுத்துவதாகவும் கூறும் ஒரு குறிப்பிட்ட விதி",
+        en_b="A provision that all party leaders must retire upon reaching the age of 65 years", ta_b="கட்சித் தலைவர்கள் அனைவரும் 65 வயதை அடைந்தவுடன் ஓய்வு பெற வேண்டும் என்ற விதி",
+        en_c="A provision mandating that the party shall not accept donations exceeding Rs. 5,000", ta_c="கட்சி ரூ. 5,000-க்கு மேல் நன்கொடைகளை ஏற்காது என்ற விதி",
+        en_d="A pledge that the party will merge with the ruling party in times of external aggression", ta_d="வெளிநாட்டுப் போரின் போது கட்சி ஆளும் கட்சியுடன் இணையும் என்ற உறுதிமொழி",
+        correct_key="A",
+        exp_en="Section 29A(5) mandates that every political party's constitution MUST contain a provision pledging true faith and allegiance to the Constitution of India, socialism, secularism, democracy, and the sovereignty, unity, and integrity of India. Failure to include this clause results in rejection of registration.",
+        exp_ta="பிரிவு 29A(5)-ன் படி, இந்திய அரசியலமைப்பு, சோசலிசம், மதச்சார்பின்மை, ஜனநாயகம் மற்றும் நாட்டின் இறையாண்மை, ஒருமைப்பாட்டிற்கு விசுவாசமாக இருப்போம் என்ற உறுதிமொழியை கட்சியின் விதிகளில் கட்டாயமாக சேர்க்க வேண்டும்; தவறினால் பதிவு நிராகரிக்கப்படும்.",
+        why_a_en="Correct. Mandatory constitutional allegiance clause under Section 29A(5).",
+        why_a_ta="சரியானது. பிரிவு 29A(5)-ன் கீழான கட்டாய அரசியலமைப்பு உறுதிமொழி விதி.",
+        why_b_en="Incorrect. No retirement age is statutorily mandated for political parties.",
+        why_b_ta="தவறானது. அரசியல் கட்சிகளுக்கு சட்டப்பூர்வ ஓய்வு வயது எதுவும் இல்லை.",
+        why_c_en="Incorrect. No donation limit clause is mandated in the constitution.",
+        why_c_ta="தவறானது. நன்கொடை வரம்பு விதி இதில் கட்டாயமில்லை.",
+        why_d_en="Incorrect. No merger clause is mandated.",
+        why_d_ta="தவறானது. இணைப்பு விதி எதுவும் தேவையில்லை.",
+        tip_en="If a registered party subsequently breaches this pledge, it can be deregistered under the exception laid down in Institute of Social Welfare (2002).",
+        tip_ta="இவ்வுறுதிமொழியை பின்னர் மீறும் கட்சியை ரத்து செய்ய முடியும் என 2002 உச்ச நீதிமன்ற தீர்ப்பு கூறியது.",
+        fact_en="This section effectively bars secessionist or anti-constitutional groups from registering as recognized political parties in India.",
+        fact_ta="பிரிவினைவாத அல்லது அரசியலமைப்புக்கு எதிரான அமைப்புகள் கட்சிகளாகப் பதிவு செய்வதை இப்பிரிவு தடுக்கிறது.",
+        tags=["Section 29A(5)", "Constitutional Pledge", "Socialism and Secularism"]
+    ))
+
+    # GT 088
+    qs.append(make_ec_q(
+        qid="EC_GT_088", diff="Medium", qtype="Single-Choice", subtopic="2023 EC Act Protection",
+        en_stem="Under Section 13 of the Chief Election Commissioner and other Election Commissioners Act, 2023, what legal protection is provided to current and former CECs and ECs?",
+        ta_stem="தலைமைத் தேர்தல் ஆணையர் மற்றும் பிற தேர்தல் ஆணையர்கள் சட்டம் 2023-ன் பிரிவு 13-ன் கீழ், தற்போதைய மற்றும் முன்னாள் தலைமைத் தேர்தல் ஆணையர்கள் மற்றும் ஆணையர்களுக்கு என்ன சட்டப் பாதுகாப்பு வழங்கப்பட்டுள்ளது?",
+        en_a="No court shall entertain or continue any civil or criminal proceedings against them for any act, search, or thing done or omitted to be done in the discharge of official duty", ta_a="உத்தியோகபூர்வ கடமையைச் செய்வதில் செய்யப்பட்ட அல்லது செய்யத் தவறிய எந்தவொரு செயலுக்காகவும் அவர்களுக்கு எதிராக எந்த நீதிமன்றமும் உரிமையியல் அல்லது குற்றவியல் நடவடிக்கைகளைத் தொடரவோ அல்லது தொடர அனுமதிக்கவோ கூடாது",
+        en_b="Immunity from paying any income tax during and after tenure", ta_b="பதவிக்காலத்திலும் அதற்குப் பின்னரும் எந்தவொரு வருமான வரியும் செலுத்துவதிலிருந்து முழு விலக்கு",
+        en_c="Automatic lifetime diplomatic passport and police escort", ta_c="தானியங்கி வாழ்நாள் தூதரக பாஸ்போர்ட் மற்றும் காவல்துறை பாதுகாப்பு",
+        en_d="Absolute right to remain in office until age 70 upon personal application", ta_d="தனிப்பட்ட விண்ணப்பத்தின் பேரில் 70 வயது வரை பதவியில் நீடிக்கும் முழு உரிமை",
+        correct_key="A",
+        exp_en="Section 13 of the 2023 Act enacts: 'Notwithstanding anything contained in any other law, no court shall entertain, continue any civil or criminal proceedings against any person who is or was a Chief Election Commissioner or an Election Commissioner for any act, thing or word committed, done or spoken by him when, or in the course of acting or purporting to act in the discharge of his official duty.'",
+        exp_ta="2023 சட்டத்தின் பிரிவு 13, தலைமைத் தேர்தல் ஆணையர் அல்லது ஆணையராக இருக்கும் அல்லது இருந்த எந்தவொரு நபருக்கும் எதிராக, அவர்களின் உத்தியோகபூர்வ கடமையின் போது செய்யப்பட்ட எந்தவொரு செயலுக்காகவும் நீதிமன்றங்கள் உரிமையியல் அல்லது குற்றவியல் வழக்குகளைத் தொடர முடியாது என முழு சட்டப் பாதுகாப்பு அளிக்கிறது.",
+        why_a_en="Correct. Section 13 grants immunity from civil/criminal proceedings for official acts.",
+        why_a_ta="சரியானது. உத்தியோகபூர்வ பணிகளுக்காக சிவில்/கிரிமினல் வழக்குகளிலிருந்து பிரிவு 13 பாதுகாப்பு அளிக்கிறது.",
+        why_b_en="Incorrect. No tax immunity exists.",
+        why_b_ta="தவறானது. வரி விலக்கு இதில் இல்லை.",
+        why_c_en="Incorrect. Not a statutory entitlement.",
+        why_c_ta="தவறானது. இது சட்டப்பூர்வ உரிமை அல்ல.",
+        why_d_en="Incorrect. Tenure remains capped at 65 years.",
+        why_d_ta="தவறானது. வயது வரம்பு 65 மட்டுமே.",
+        tip_en="This section was inserted to shield Election Commissioners from malicious retaliatory litigation post-retirement.",
+        tip_ta="ஓய்வுக்குப் பின் பழிவாங்கும் நோக்கிலான வழக்குகளிலிருந்து ஆணையர்களைப் பாதுகாக்க இச்சட்டப்பிரிவு சேர்க்கப்பட்டது.",
+        fact_en="Section 13 was introduced to provide equivalent protection as available to Judges under the Judicial Officers Protection Act, 1850.",
+        fact_ta="நீதிபதிகளுக்கு வழங்கப்படும் பாதுகாப்புக்கு இணையான பாதுகாப்பை தேர்தல் ஆணையர்களுக்கு இது வழங்குகிறது.",
+        tags=["2023 EC Act", "Section 13", "Legal Protection"]
+    ))
+
+    # GT 089
+    qs.append(make_ec_q(
+        qid="EC_GT_089", diff="Easy", qtype="Single-Choice", subtopic="2023 EC Act Salary Parity",
+        en_stem="Under Section 10 of the Chief Election Commissioner and other Election Commissioners Act, 2023, what is the salary and status of the CEC and ECs?",
+        ta_stem="தலைமைத் தேர்தல் ஆணையர் மற்றும் பிற தேர்தல் ஆணையர்கள் சட்டம் 2023-ன் பிரிவு 10-ன் கீழ், தலைமைத் தேர்தல் ஆணையர் மற்றும் ஆணையர்களின் ஊதியம் மற்றும் அந்தஸ்து எதற்கு இணையானது?",
+        en_a="Equal to the salary and conditions of service of a Judge of the Supreme Court", ta_a="உச்ச நீதிமன்ற நீதிபதியின் ஊதியம் மற்றும் சேவை நிபந்தனைகளுக்கு சமமானது",
+        en_b="Equal to the Cabinet Secretary to the Government of India", ta_b="இந்திய அரசின் கேபினட் செயலாளருக்கு சமமானது",
+        en_c="Equal to a Member of Parliament (Lok Sabha)", ta_c="மக்களவை பாராளுமன்ற உறுப்பினருக்கு சமமானது",
+        en_d="Equal to the Chief Justice of a High Court", ta_d="உயர் நீதிமன்ற தலைமை நீதிபதிக்கு சமமானது",
+        correct_key="A",
+        exp_en="Section 10 of the 2023 Act provides that the Chief Election Commissioner and other Election Commissioners shall be paid a salary which is equal to the salary of a Judge of the Supreme Court.",
+        exp_ta="2023 சட்டத்தின் பிரிவு 10-ன் படி, தலைமைத் தேர்தல் ஆணையர் மற்றும் பிற தேர்தல் ஆணையர்களுக்கு உச்ச நீதிமன்ற நீதிபதியின் ஊதியத்திற்கு சமமான ஊதியம் மற்றும் படிகள் வழங்கப்படும்.",
+        why_a_en="Correct. Salary equivalent to a Judge of the Supreme Court under amended Section 10.",
+        why_a_ta="சரியானது. பிரிவு 10-ன் கீழ் உச்ச நீதிமன்ற நீதிபதிக்கு இணையான ஊதியம்.",
+        why_b_en="Incorrect. The original Bill proposed Cabinet Secretary parity, but Parliament amended it back to SC Judge parity after public outcry.",
+        why_b_ta="தவறானது. முதலில் கேபினட் செயலாளர் முன்மொழியப்பட்டது, ஆனால் எதிர்ப்புகளுக்குப் பின் உச்ச நீதிமன்ற நீதிபதிக்கு சமமாக மாற்றப்பட்டது.",
+        why_c_en="Incorrect. MPs receive lower statutory allowances.",
+        why_c_ta="தவறானது. எம்.பி.க்களின் ஊதியம் குறைவானது.",
+        why_d_en="Incorrect. The statutory standard is SC Judge, not High Court CJ.",
+        why_d_ta="தவறானது. உச்ச நீதிமன்ற நீதிபதியே அளவுகோல்.",
+        tip_en="Current salary of a Supreme Court Judge (and hence CEC/EC) is Rs. 2,50,000 per month.",
+        tip_ta="உச்ச நீதிமன்ற நீதிபதியின் (மற்றும் CEC/EC-ன்) தற்போதைய மாத ஊதியம் ரூ. 2,50,000 ஆகும்.",
+        fact_en="This restored the parity originally created under the 1991 Act.",
+        fact_ta="1991 சட்டத்தின் கீழ் இருந்த சமநிலையை இது மீண்டும் நிலைநாட்டியது.",
+        tags=["2023 EC Act", "Section 10", "Salary Parity", "Supreme Court Judge"]
+    ))
+
+    # GT 090
+    qs.append(make_ec_q(
+        qid="EC_GT_090", diff="Easy", qtype="Single-Choice", subtopic="2023 EC Act Re-appointment",
+        en_stem="Under Section 8(2) of the Chief Election Commissioner and other Election Commissioners Act, 2023, is an Election Commissioner or CEC eligible for re-appointment?",
+        ta_stem="தலைமைத் தேர்தல் ஆணையர் மற்றும் பிற தேர்தல் ஆணையர்கள் சட்டம் 2023-ன் பிரிவு 8(2)-ன் கீழ், ஒரு தேர்தல் ஆணையர் அல்லது தலைமைத் தேர்தல் ஆணையர் மீண்டும் நியமனம் செய்யப்பட தகுதியுடையவரா?",
+        en_a="No, Section 8(2) explicitly provides that the Chief Election Commissioner and other Election Commissioners shall not be eligible for re-appointment", ta_a="இல்லை, தலைமைத் தேர்தல் ஆணையரும் பிற தேர்தல் ஆணையர்களும் மீண்டும் நியமனம் செய்யப்பட தகுதியற்றவர்கள் என்று பிரிவு 8(2) வெளிப்படையாகக் கூறுகிறது",
+        en_b="Yes, for one additional term of three years with parliamentary approval", ta_b="ஆம், பாராளுமன்ற ஒப்புதலுடன் மேலும் மூன்று ஆண்டுகள் கொண்ட ஒரு கூடுதல் பதவிக்காலத்திற்கு",
+        en_c="Yes, provided they join the ruling party prior to reappointment", ta_c="ஆம், மீண்டும் நியமிக்கப்படுவதற்கு முன் ஆளும் கட்சியில் இணைந்தால் மட்டும்",
+        en_d="Yes, at the sole discretion of the Prime Minister", ta_d="ஆம், பிரதமரின் சொந்த விருப்பப்படி",
+        correct_key="A",
+        exp_en="Section 8(2) of the 2023 Act enacts an absolute statutory bar: 'The Chief Election Commissioner and other Election Commissioners shall not be eligible for re-appointment.'",
+        exp_ta="2023 சட்டத்தின் பிரிவு 8(2) திட்டவட்டமாக கூறுகிறது: 'தலைமைத் தேர்தல் ஆணையர் மற்றும் பிற தேர்தல் ஆணையர்கள் மீண்டும் நியமனம் செய்யப்பட தகுதியற்றவர்கள் ஆவர்.'",
+        why_a_en="Correct. Barred from re-appointment under Section 8(2).",
+        why_a_ta="சரியானது. பிரிவு 8(2)-ன் கீழ் மீண்டும் நியமிக்கப்பட தடை உள்ளது.",
+        why_b_en="Incorrect. No extension or re-appointment is permitted.",
+        why_b_ta="தவறானது. நீட்டிப்போ அல்லது மறு நியமனமோ அனுமதிக்கப்படுவதில்லை.",
+        why_c_en="Incorrect. Party membership is incompatible with constitutional neutrality.",
+        why_c_ta="தவறானது. நடுநிலைமைக்கு முரணானது.",
+        why_d_en="Incorrect. Prime Minister cannot override Section 8(2).",
+        why_d_ta="தவறானது. பிரதமர் இச்சட்டப்பிரிவை மீற முடியாது.",
+        tip_en="However, an Election Commissioner CAN be appointed as the Chief Election Commissioner during their ongoing tenure, but total combined term cannot exceed 6 years.",
+        tip_ta="இருப்பினும், ஒரு தேர்தல் ஆணையர் தலைமைத் தேர்தல் ஆணையராக நியமிக்கப்படலாம்; ஆனால் மொத்த பதவிக்காலம் 6 ஆண்டுகளுக்கு மிகக்கூடாது.",
+        fact_en="The Act does not prohibit post-retirement appointments to other government offices (such as Governor), which remains a subject of ongoing debate.",
+        fact_ta="ஓய்வுக்குப் பின் ஆளுநர் போன்ற பிற அரசுப் பதவிகளை ஏற்பதை இச்சட்டம் வெளிப்படையாகத் தடை செய்யவில்லை.",
+        tags=["2023 EC Act", "Section 8(2)", "No Re-appointment"]
+    ))
+
+    # GT 091
+    qs.append(make_ec_q(
+        qid="EC_GT_091", diff="Hard", qtype="Single-Choice", subtopic="Droop Quota Calculation",
+        en_stem="In a Rajya Sabha election where 4 vacancies are to be filled and 200 valid votes are cast by MLAs, what is the winning quota of votes required for a candidate under the Droop Quota formula?",
+        ta_stem="மாநிலங்களவைத் தேர்தலில் 4 காலியிடங்களை நிரப்ப வேண்டும் மற்றும் சட்டமன்ற உறுப்பினர்களால் 200 செல்லுபடியாகும் வாக்குகள் செலுத்தப்பட்டால், ட்ரூப் ஒதுக்கீட்டு (Droop Quota) சூத்திரத்தின்படி ஒரு வேட்பாளர் வெற்றி பெறத் தேவையான வாக்குகள் என்ன?",
+        en_a="41 votes", ta_a="41 வாக்குகள்",
+        en_b="50 votes", ta_b="50 வாக்குகள்",
+        en_c="40 votes", ta_c="40 வாக்குகள்",
+        en_d="51 votes", ta_d="51 வாக்குகள்",
+        correct_key="A",
+        exp_en="The Droop Quota formula is: [Total Valid Votes / (Vacancies + 1)] + 1 = [200 / (4 + 1)] + 1 = [200 / 5] + 1 = 40 + 1 = 41 votes. Thus, any candidate securing 41 first-preference votes is immediately declared elected.",
+        exp_ta="ட்ரூப் ஒதுக்கீட்டு சூத்திரம்: [மொத்த செல்லுபடியாகும் வாக்குகள் / (காலியிடங்கள் + 1)] + 1 = [200 / (4 + 1)] + 1 = [200 / 5] + 1 = 40 + 1 = 41 வாக்குகள் ஆகும். எனவே 41 முதல் விருப்ப வாக்குகளைப் பெறும் வேட்பாளர் வெற்றி பெறுவார்.",
+        why_a_en="Correct. [200 / 5] + 1 = 41.",
+        why_a_ta="சரியானது. [200 / 5] + 1 = 41 வாக்குகள்.",
+        why_b_en="Incorrect. 50 ignores the +1 divisor and +1 quotient rule.",
+        why_b_ta="தவறானது. 50 என்பது தவறான கணக்கீடு.",
+        why_c_en="Incorrect. 40 forgets to add the mandatory +1 to the quotient.",
+        why_c_ta="தவறானது. 40 என்பது +1 கூட்ட மறந்த கணக்கீடு.",
+        why_d_en="Incorrect. 51 is mathematically incorrect.",
+        why_d_ta="தவறானது. 51 தவறானது.",
+        tip_en="The addition of 1 ensures that mathematically no more candidates than the number of vacancies can achieve the quota.",
+        tip_ta="+1 கூட்டுவது காலியிடங்களை விட அதிகமானோர் ஒதுக்கீட்டை எட்ட முடியாது என்பதை கணித ரீதியாக உறுதி செய்கிறது.",
+        fact_en="The Droop Quota was devised by English mathematician Henry Richmond Droop in 1868.",
+        fact_ta="ட்ரூப் ஒதுக்கீடு 1868-ல் ஹென்றி ரிச்மண்ட் ட்ரூப் என்பவரால் உருவாக்கப்பட்டது.",
+        tags=["Droop Quota", "Rajya Sabha Formula", "Numerical Problem"]
+    ))
+
+    # GT 092
+    qs.append(make_ec_q(
+        qid="EC_GT_092", diff="Medium", qtype="Single-Choice", subtopic="Security Deposit Assembly",
+        en_stem="What is the current security deposit for a candidate belonging to Scheduled Castes (SC) contesting a State Legislative Assembly election under Section 34 of RPA 1951?",
+        ta_stem="1951 மக்கள் பிரதிநிதித்துவச் சட்டத்தின் பிரிவு 34-ன் கீழ், மாநில சட்டமன்றத் தேர்தலில் போட்டியிடும் பட்டியலின (SC) வேட்பாளருக்கான தற்போதைய பிணைத்தொகை என்ன?",
+        en_a="Rs. 5,000", ta_a="ரூ. 5,000",
+        en_b="Rs. 10,000", ta_b="ரூ. 10,000",
+        en_c="Rs. 2,500", ta_c="ரூ. 2,500",
+        en_d="Rs. 12,500", ta_d="ரூ. 12,500",
+        correct_key="A",
+        exp_en="Under Section 34(1)(b) of RPA 1951, the security deposit for an Assembly constituency is Rs. 10,000 for general candidates, and half that amount, i.e., Rs. 5,000, for candidates belonging to Scheduled Castes or Scheduled Tribes.",
+        exp_ta="பிரிவு 34(1)(b)-ன் கீழ், சட்டமன்றத் தொகுதிக்கான பிணைத்தொகை பொது வேட்பாளர்களுக்கு ரூ. 10,000 ஆகவும், SC/ST வேட்பாளர்களுக்கு அதில் பாதியான ரூ. 5,000 ஆகவும் நிர்ணயிக்கப்பட்டுள்ளது.",
+        why_a_en="Correct. Rs. 5,000 for SC/ST candidates in Assembly polls.",
+        why_a_ta="சரியானது. சட்டமன்றத் தேர்தலில் SC/ST வேட்பாளர்களுக்கு ரூ. 5,000.",
+        why_b_en="Incorrect. Rs. 10,000 is for general candidates.",
+        why_b_ta="தவறானது. ரூ. 10,000 பொது வேட்பாளர்களுக்கானது.",
+        why_c_en="Incorrect. Rs. 2,500 was the old fee prior to 2009.",
+        why_c_ta="தவறானது. ரூ. 2,500 என்பது 2009-க்கு முந்தைய பழைய கட்டணம்.",
+        why_d_en="Incorrect. Rs. 12,500 is for SC/ST candidates in Lok Sabha elections.",
+        why_d_ta="தவறானது. ரூ. 12,500 என்பது மக்களவை SC/ST வேட்பாளர்களுக்கானது.",
+        tip_en="An SC/ST candidate can contest from a general constituency and still pay only the concessionary deposit!",
+        tip_ta="பொதுத் தொகுதியில் போட்டியிட்டாலும் SC/ST வேட்பாளர் சலுகைக் கட்டணமான ரூ. 5,000 மட்டுமே செலுத்த வேண்டும்!",
+        fact_en="The concessionary deposit was introduced to ensure fair representation and financial accessibility for marginalized communities.",
+        fact_ta="பின்தங்கிய பிரிவினரின் பிரதிநிதித்துவத்தை உறுதி செய்யவே இச்சலுகை வழங்கப்படுகிறது.",
+        tags=["Security Deposit", "Assembly Election", "SC ST Concession"]
+    ))
+
+    # GT 093
+    qs.append(make_ec_q(
+        qid="EC_GT_093", diff="Hard", qtype="Single-Choice", subtopic="Section 123(7) Corrupt Practice",
+        en_stem="Under Section 123(7) of RPA 1951, obtaining or procuring assistance from which of the following categories of persons constitutes a Corrupt Practice that can invalidate an election?",
+        ta_stem="1951 மக்கள் பிரதிநிதித்துவச் சட்டத்தின் பிரிவு 123(7)-ன் கீழ், பின்வரும் எந்த வகை நபர்களிடமிருந்து உதவி பெறுவது ஒரு தேர்தலை செல்லாததாக்கக்கூடிய ஊழல் நடைமுறையாகக் (Corrupt Practice) கருதப்படுகிறது?",
+        en_a="Gazetted officers, judges, members of the armed forces, and police forces in the service of the Government", ta_a="அரசுப் பணியில் உள்ள அரசிதழ் பதிவு பெற்ற அதிகாரிகள், நீதிபதிகள், ஆயுதப்படையினர் மற்றும் காவல்துறையினர்",
+        en_b="Professional film actors and celebrity sports stars campaigning privately", ta_b="தனியாராக பிரச்சாரம் செய்யும் தொழில்முறை திரைப்பட நடிகர்கள் மற்றும் விளையாட்டு நட்சத்திரங்கள்",
+        en_c="Members of the candidate's immediate family who are private citizens", ta_c="தனியார் குடிமக்களாக உள்ள வேட்பாளரின் நேரடிக் குடும்ப உறுப்பினர்கள்",
+        en_d="Volunteers of a registered unrecognized political party", ta_d="பதிவுசெய்யப்பட்ட அங்கீகாரமற்ற அரசியல் கட்சியின் தொண்டர்கள்",
+        correct_key="A",
+        exp_en="Section 123(7) defines corrupt practice as obtaining assistance for the furtherance of election prospects from persons in government service, including gazetted officers, judges, magistrates, members of armed forces, police, excise officers, and revenue officers.",
+        exp_ta="பிரிவு 123(7)-ன் படி, அரசுப் பணியில் உள்ள அரசிதழ் பதிவு பெற்ற அதிகாரிகள், நீதிபதிகள், ராணுவத்தினர், காவல்துறையினர், வருவாய்த் துறையினர் ஆகியோரின் சேவைகளை தனது தேர்தல் வெற்றிக்காகப் பயன்படுத்துவது கடுமையான ஊழல் நடைமுறையாகும்.",
+        why_a_en="Correct. Section 123(7) explicitly bars obtaining assistance from government servants.",
+        why_a_ta="சரியானது. பிரிவு 123(7) அரசு ஊழியர்களிடமிருந்து உதவி பெறுவதை ஊழல் குற்றமாகத் தடை செய்கிறது.",
+        why_b_en="Incorrect. Celebrity endorsements by private citizens are lawful.",
+        why_b_ta="தவறானது. தனியார் பிரபலங்களின் பிரச்சாரம் சட்டப்பூர்வமானது.",
+        why_c_en="Incorrect. Family members can lawfully campaign.",
+        why_c_ta="தவறானது. குடும்பத்தினர் பிரச்சாரம் செய்யலாம்.",
+        why_d_en="Incorrect. Party volunteers are not government servants.",
+        why_d_ta="தவறானது. கட்சித் தொண்டர்கள் அரசு ஊழியர்கள் அல்ல.",
+        tip_en="This was the very ground on which Allahabad High Court unseated Prime Minister Indira Gandhi in 1975 (obtaining assistance of Yashpal Kapoor, a gazetted officer).",
+        tip_ta="1975-ல் இந்திரா காந்தியின் தேர்தல் ரத்து செய்யப்பட்டதற்கு யஷ்பால் கபூர் என்ற அரசு அதிகாரியின் உதவியைப் பெற்றதே முக்கிய காரணமாகும்.",
+        fact_en="Section 123(7) protects the purity of public administration from being politicized during elections.",
+        fact_ta="தேர்தலின் போது அரசு நிர்வாகம் அரசியலாக்கப்படுவதைத் தடுக்க பிரிவு 123(7) உதவுகிறது.",
+        tags=["Section 123(7)", "Corrupt Practice", "Government Servant Assistance"]
+    ))
+
+    # GT 094
+    qs.append(make_ec_q(
+        qid="EC_GT_094", diff="Medium", qtype="Single-Choice", subtopic="Section 127A Printing Documents",
+        en_stem="Within how many days of printing an election pamphlet or poster must the printer send a copy along with the publisher's declaration to the District Magistrate under Section 127A(2)?",
+        ta_stem="1951 மக்கள் பிரதிநிதித்துவச் சட்டத்தின் பிரிவு 127A(2)-ன் கீழ், ஒரு தேர்தல் துண்டுப்பிரசுரம் அல்லது சுவரொட்டியை அச்சிட்ட எத்தனை நாட்களுக்குள் அச்சகத்தார் அதன் நகலை வெளியீட்டாளரின் அறிவிப்புடன் மாவட்ட மாஜிஸ்திரேட்டிடம் அனுப்ப வேண்டும்?",
+        en_a="Within three days of the printing of the document", ta_a="அச்சிடப்பட்ட மூன்று நாட்களுக்குள் (Within three days)",
+        en_b="Within fourteen days of printing", ta_b="அச்சிடப்பட்ட பதினான்கு நாட்களுக்குள்",
+        en_c="On the day of result declaration", ta_c="தேர்தல் முடிவு அறிவிக்கப்படும் நாளன்று",
+        en_d="Within 30 days of the conclusion of poll", ta_d="வாக்குப்பதிவு முடிவடைந்த 30 நாட்களுக்குள்",
+        correct_key="A",
+        exp_en="Section 127A(2)(b) requires that within 3 days after the printing of the document, one copy of the declaration together with one copy of the document must be sent by the printer to the District Magistrate (or CEO in capital).",
+        exp_ta="பிரிவு 127A(2)(b)-ன் படி, தேர்தல் துண்டுப்பிரசுரம் அல்லது சுவரொட்டி அச்சிடப்பட்ட 3 நாட்களுக்குள், வெளியீட்டாளரின் அறிவிப்பு நகலுடன் ஒரு ஆவண நகலையும் அச்சகத்தார் மாவட்ட மாஜிஸ்திரேட்டிடம் சமர்ப்பிக்க வேண்டும்.",
+        why_a_en="Correct. Within 3 days of printing under Section 127A(2)(b).",
+        why_a_ta="சரியானது. பிரிவு 127A(2)(b)-ன் கீழ் அச்சிட்ட 3 நாட்களுக்குள்.",
+        why_b_en="Incorrect. 14 days is incorrect.",
+        why_b_ta="தவறானது. 14 நாட்கள் தவறானது.",
+        why_c_en="Incorrect. Result day is far too late.",
+        why_c_ta="தவறானது. முடிவு நாள் மிகவும் தாமதமானது.",
+        why_d_en="Incorrect. 30 days is incorrect.",
+        why_d_ta="தவறானது. 30 நாட்கள் தவறானது.",
+        tip_en="Failure to send the copy within 3 days is punishable with imprisonment up to 6 months under Section 127A(4).",
+        tip_ta="3 நாட்களுக்குள் அனுப்பத் தவறினால் 6 மாதங்கள் வரை சிறை தண்டனை விதிக்கப்படலாம்.",
+        fact_en="This mechanism allows the expenditure monitoring team to cross-verify printing expenses against candidate expenditure logs.",
+        fact_ta="வேட்பாளர் காட்டும் செலவுக் கணக்கை சரிபார்க்க இக்கண்காணிப்பு முறை உதவுகிறது.",
+        tags=["Section 127A", "Pamphlet Regulation", "Three Days Limit"]
+    ))
+
+    # GT 095
+    qs.append(make_ec_q(
+        qid="EC_GT_095", diff="Easy", qtype="Single-Choice", subtopic="Postal Ballot Colors",
+        en_stem="What is the distinctive paper color of postal ballot papers used for elections to the House of the People (Lok Sabha) and State Legislative Assemblies?",
+        ta_stem="மக்களவை மற்றும் மாநில சட்டமன்றத் தேர்தல்களுக்குப் பயன்படுத்தப்படும் தபால் வாக்குச் சீட்டுகளின் தனித்துவமான காகித நிறங்கள் யாவை?",
+        en_a="White for Lok Sabha and Pink for State Legislative Assembly", ta_a="மக்களவைக்கு வெள்ளை மற்றும் மாநில சட்டமன்றத்திற்கு இளஞ்சிவப்பு (Pink)",
+        en_b="Green for Lok Sabha and Yellow for State Legislative Assembly", ta_b="மக்களவைக்கு பச்சை மற்றும் சட்டமன்றத்திற்கு மஞ்சள்",
+        en_c="Blue for Lok Sabha and Red for State Legislative Assembly", ta_c="மக்களவைக்கு நீலம் மற்றும் சட்டமன்றத்திற்கு சிவப்பு",
+        en_d="Uniformly White for both elections", ta_d="இரண்டு தேர்தல்களுக்கும் ஒரே மாதிரியாக வெள்ளை",
+        correct_key="A",
+        exp_en="Under Conduct of Elections Rules, ballot papers (including postal ballots and Ballot Unit ballot sheets) are printed on White paper for Lok Sabha elections and Pink paper for State Legislative Assembly elections.",
+        exp_ta="தேர்தல் நடத்தை விதிகளின்படி, மக்களவைத் தேர்தலுக்கான வாக்குச் சீட்டுகள் வெள்ளை நிற காகிதத்திலும், மாநில சட்டமன்றத் தேர்தலுக்கானவை இளஞ்சிவப்பு (Pink) நிற காகிதத்திலும் அச்சிடப்படுகின்றன.",
+        why_a_en="Correct. White for Lok Sabha; Pink for Assembly.",
+        why_a_ta="சரியானது. மக்களவைக்கு வெள்ளை; சட்டமன்றத்திற்கு இளஞ்சிவப்பு.",
+        why_b_en="Incorrect. Green/Yellow is incorrect.",
+        why_b_ta="தவறானது. பச்சை/மஞ்சள் தவறானது.",
+        why_c_en="Incorrect. Blue/Red is incorrect.",
+        why_c_ta="தவறானது. நீலம்/சிவப்பு தவறானது.",
+        why_d_en="Incorrect. Distinct colors are mandatory to prevent ballot mixing in simultaneous elections.",
+        why_d_ta="தவறானது. வாக்குச் சீட்டுகள் கலப்பதைத் தவிர்க்க வெவ்வேறு நிறங்கள் கட்டாயமாகும்.",
+        tip_en="For Rajya Sabha elections, the ballot paper is printed on White paper with vertical numbering.",
+        tip_ta="மாநிலங்களவைத் தேர்தலுக்கு செங்குத்து எண்களுடன் வெள்ளைத் தாளில் அச்சிடப்படுகிறது.",
+        fact_en="This color coding helps counting staff immediately separate parliamentary and assembly postal ballots during simultaneous elections.",
+        fact_ta="ஒரே நேரத்தில் நடக்கும் தேர்தல்களில் தபால் வாக்குகளை எளிதில் பிரிக்க இந்த வண்ணக் குறியீடு உதவுகிறது.",
+        tags=["Ballot Colors", "Postal Ballot", "White and Pink"]
+    ))
+
+    # GT 096
+    qs.append(make_ec_q(
+        qid="EC_GT_096", diff="Medium", qtype="Single-Choice", subtopic="Section 125 Promoting Enmity",
+        en_stem="Under Section 125 of RPA 1951, what is the maximum term of imprisonment for promoting enmity between classes in connection with an election?",
+        ta_stem="1951 மக்கள் பிரதிநிதித்துவச் சட்டத்தின் பிரிவு 125-ன் கீழ், தேர்தலின் போது வகுப்புகளிடையே பகையை வளர்ப்பதற்காக விதிக்கப்படும் அதிகபட்ச சிறைத்தண்டனை என்ன?",
+        en_a="Three years, or with fine, or with both", ta_a="மூன்று ஆண்டுகள், அல்லது அபராதம், அல்லது இரண்டும்",
+        en_b="One year only", ta_b="ஒரு ஆண்டு மட்டுமே",
+        en_c="Seven years rigorous imprisonment", ta_c="ஏழு ஆண்டுகள் கடுங்காவல் சிறை",
+        en_d="Six months simple imprisonment", ta_d="ஆறு மாதங்கள் எளிய சிறை",
+        correct_key="A",
+        exp_en="Section 125 provides that any person who in connection with an election promotes or attempts to promote feelings of enmity or hatred between different classes of citizens on grounds of religion, race, caste, community or language shall be punished with imprisonment up to 3 years, or fine, or both.",
+        exp_ta="பிரிவு 125-ன் படி, தேர்தலின் போது மதம், இனம், சாதி, சமூகம் அல்லது மொழியின் பெயரால் வகுப்புகளிடையே பகையை வளர்க்கும் அல்லது முயலும் எவருக்கும் 3 ஆண்டுகள் வரை சிறைத்தண்டனை அல்லது அபராதம் அல்லது இரண்டும் விதிக்கப்படலாம்.",
+        why_a_en="Correct. Up to 3 years imprisonment or fine under Section 125.",
+        why_a_ta="சரியானது. பிரிவு 125-ன் கீழ் 3 ஆண்டுகள் வரை சிறை அல்லது அபராதம்.",
+        why_b_en="Incorrect. 1 year is incorrect.",
+        why_b_ta="தவறானது. 1 ஆண்டு தவறானது.",
+        why_c_en="Incorrect. 7 years is not the RPA 125 penalty.",
+        why_c_ta="தவறானது. 7 ஆண்டுகள் அல்ல.",
+        why_d_en="Incorrect. 6 months is incorrect.",
+        why_d_ta="தவறானது. 6 மாதம் தவறானது.",
+        tip_en="Conviction under Section 125 results in an automatic 6-year disqualification under Section 8(1)(i).",
+        tip_ta="பிரிவு 125-ன் கீழ் தண்டனை பெற்றால் பிரிவு 8(1)(i)-ன் கீழ் தானாகவே 6 ஆண்டுகள் தகுதிநீக்கம் ஏற்படும்.",
+        fact_en="Section 125 was added in 1961 to strictly enforce the secular mandate of Article 325.",
+        fact_ta="சரத்து 325-ன் மதச்சார்பற்ற கொள்கையை நிலைநிறுத்த 1961-ல் பிரிவு 125 சேர்க்கப்பட்டது.",
+        tags=["Section 125", "Promoting Enmity", "Electoral Offence"]
+    ))
+
+    # GT 097
+    qs.append(make_ec_q(
+        qid="EC_GT_097", diff="Hard", qtype="Single-Choice", subtopic="Section 130 100 Meters Radius",
+        en_stem="Under Section 130 of the Representation of the People Act, 1951, within what distance from a polling station is canvassing, soliciting votes, and exhibiting campaign posters strictly prohibited on poll day?",
+        ta_stem="1951 மக்கள் பிரதிநிதித்துவச் சட்டத்தின் பிரிவு 130-ன் கீழ், தேர்தல் நாளன்று ஒரு வாக்குச்சாவடியிலிருந்து எத்தனை தூரத்திற்குள் வாக்கு சேகரிப்பது, பிரச்சார சுவரொட்டிகளைக் காட்டுவது கண்டிப்பாகத் தடை செய்யப்பட்டுள்ளது?",
+        en_a="Within a distance of one hundred meters of the polling station", ta_a="வாக்குச்சாவடியிலிருந்து நூறு மீட்டர் (100 meters) சுற்றளவுக்குள்",
+        en_b="Within a distance of two hundred meters", ta_b="இருநூறு மீட்டர் சுற்றளவுக்குள்",
+        en_c="Within a distance of fifty meters", ta_c="ஐம்பது மீட்டர் சுற்றளவுக்குள்",
+        en_d="Within a distance of five hundred meters", ta_d="ஐந்நூறு மீட்டர் சுற்றளவுக்குள்",
+        correct_key="A",
+        exp_en="Section 130(1) prohibits any person from canvassing, soliciting votes, persuading electors, or exhibiting notices/signs within a distance of 100 meters of the polling station on poll day. Violation carries fine up to Rs. 250 and is a cognizable offence.",
+        exp_ta="பிரிவு 130(1)-ன் படி, வாக்குப்பதிவு நாளன்று வாக்குச்சாவடியின் 100 மீட்டர் சுற்றளவுக்குள் வாக்கு சேகரிப்பது, பிரச்சார சின்னங்களை காட்சிப்படுத்துவது தடை செய்யப்பட்டுள்ளது; மீறினால் ரூ. 250 அபராதம் மற்றும் பிடியாணையின்றி கைது செய்யப்படலாம்.",
+        why_a_en="Correct. 100 meters radius under Section 130.",
+        why_a_ta="சரியானது. பிரிவு 130-ன் கீழ் 100 மீட்டர் சுற்றளவு.",
+        why_b_en="Incorrect. 200 meters is incorrect (200m is the perimeter for political party tables outside booths).",
+        why_b_ta="தவறானது. 200 மீட்டர் கட்சி மேசைகளுக்கானது; சட்டப்பூர்வ தடை வரம்பு 100 மீட்டர்.",
+        why_c_en="Incorrect. 50 meters is too close.",
+        why_c_ta="தவறானது. 50 மீட்டர் மிக அருகில் உள்ளது.",
+        why_d_en="Incorrect. 500 meters is incorrect.",
+        why_d_ta="தவறானது. 500 மீட்டர் தவறானது.",
+        tip_en="A physical perimeter line of 100 meters is marked around every polling station by the administration.",
+        tip_ta="ஒவ்வொரு வாக்குச்சாவடியைச் சுற்றிலும் 100 மீட்டர் எல்லைக் கோடு நிர்வாகத்தால் வரையப்படுகிறது.",
+        fact_en="Cellular mobile phones are also prohibited within this 100-meter perimeter except for official election authorities.",
+        fact_ta="அதிகாரிகளைத் தவிர பிற நபர்கள் இந்த 100 மீட்டர் எல்லைக்குள் செல்போன் கொண்டு செல்லவும் தடை உண்டு.",
+        tags=["Section 130", "100 Meters Radius", "Canvassing Prohibition"]
+    ))
+
+    # GT 098
+    qs.append(make_ec_q(
+        qid="EC_GT_098", diff="Medium", qtype="Single-Choice", subtopic="Section 131 Megaphones",
+        en_stem="Under Section 131 of RPA 1951, the use of megaphones, loudspeakers, or shouting to cause annoyance to voters is prohibited within what distance of a polling station?",
+        ta_stem="1951 மக்கள் பிரதிநிதித்துவச் சட்டத்தின் பிரிவு 131-ன் கீழ், ஒலிபெருக்கிகள், மெகாபோன்கள் பயன்படுத்துவது அல்லது கூச்சலிட்டு வாக்காளர்களுக்கு இடையூறு செய்வது வாக்குச்சாவடியிலிருந்து எத்தனை தூரத்திற்குள் தடை செய்யப்பட்டுள்ளது?",
+        en_a="In or near a polling station, or in any public or private place in the neighborhood thereof", ta_a="வாக்குச்சாவடிக்குள் அல்லது அருகில், அல்லது அதனைச் சுற்றியுள்ள எந்தவொரு பொது அல்லது தனியார் இடத்தில்",
+        en_b="Only inside the voting compartment itself", ta_b="வாக்குப்பதிவு மறைவிடத்திற்குள் மட்டுமே",
+        en_c="Exclusively within 10 meters of the ballot box", ta_c="வாக்குப்பெட்டியின் 10 மீட்டருக்குள் மட்டுமே",
+        en_d="Only if the sound exceeds 120 decibels", ta_d="ஒலியின் அளவு 120 டெசிபல்களுக்கு மேல் இருந்தால் மட்டுமே",
+        correct_key="A",
+        exp_en="Section 131 prohibits using or operating megaphones, loudspeakers, or shouting in or near any polling station or neighborhood to cause annoyance or interfere with polling officers. The police can seize the apparatus and arrest offenders without warrant (punishable with imprisonment up to 3 months or fine).",
+        exp_ta="பிரிவு 131 வாக்குச்சாவடிக்குள் அல்லது அதன் அருகிலுள்ள எந்த இடத்திலும் ஒலிபெருக்கிகள் பயன்படுத்துவதை அல்லது கூச்சலிடுவதைத் தடை செய்கிறது; மீறினால் காவல்துறை உபகரணங்களைப் பறிமுதல் செய்து 3 மாதங்கள் வரை சிறை தண்டனை விதிக்கப்படலாம்.",
+        why_a_en="Correct. In or near polling station or neighborhood under Section 131.",
+        why_a_ta="சரியானது. வாக்குச்சாவடிக்குள் அல்லது அருகிலுள்ள பகுதியில் ஒலிபெருக்கிகளுக்குத் தடை.",
+        why_b_en="Incorrect. Not confined to voting compartment.",
+        why_b_ta="தவறானது. வாக்கு மறைவிடத்திற்குள் மட்டும் அல்ல.",
+        why_c_en="Incorrect. Not limited to 10 meters.",
+        why_c_ta="தவறானது. 10 மீட்டர் வரை மட்டும் அல்ல.",
+        why_d_en="Incorrect. Any audible shouting that causes annoyance is barred.",
+        why_d_ta="தவறானது. இடையூறு செய்யும் எந்தவொரு சத்தமும் தடை செய்யப்படுகிறது.",
+        tip_en="Section 131 gives police the power of warrantless arrest and seizure of loudspeakers.",
+        tip_ta="பிரிவு 131 காவல்துறையினருக்கு பிடியாணையின்றி கைது செய்யும் மற்றும் ஒலிபெருக்கியை பறிமுதல் செய்யும் அதிகாரத்தை அளிக்கிறது.",
+        fact_en="Section 131 ensures an orderly, serene, and un-coerced atmosphere on election day.",
+        fact_ta="வாக்குப்பதிவு நாளன்று அமைதியான சூழலை உறுதி செய்ய பிரிவு 131 உதவுகிறது.",
+        tags=["Section 131", "Loudspeakers Prohibited", "Poll Day Decorum"]
+    ))
+
+    # GT 099
+    qs.append(make_ec_q(
+        qid="EC_GT_099", diff="Hard", qtype="Single-Choice", subtopic="Section 123(1) Bribery Scope",
+        en_stem="Under Section 123(1) of the Representation of the People Act, 1951, does a promise of public action or public policy declaration constitute the corrupt practice of 'Bribery'?",
+        ta_stem="1951 மக்கள் பிரதிநிதித்துவச் சட்டத்தின் பிரிவு 123(1)-ன் கீழ், ஒரு பொது நடவடிக்கை அல்லது பொதுக் கொள்கை அறிவிப்புக்கான வாக்குறுதி என்பது 'கையூட்டு' (Bribery) என்ற ஊழல் நடவடிக்கையாகக் கருதப்படுமா?",
+        en_a="No, the proviso to Section 123(1) explicitly states that a declaration of public policy or a promise of public action shall not be deemed to be bribery", ta_a="இல்லை, ஒரு பொதுக் கொள்கை அறிவிப்பு அல்லது பொது நடவடிக்கைக்கான வாக்குறுதி கையூட்டாகக் கருதப்படாது என்று பிரிவு 123(1)-ன் வரம்புரை வெளிப்படையாகக் கூறுகிறது",
+        en_b="Yes, any promise made during campaigning is statutorily treated as bribery", ta_b="ஆம், பிரச்சாரத்தின் போது செய்யப்படும் எந்தவொரு வாக்குறுதியும் சட்டப்படி கையூட்டாகவே கருதப்படும்",
+        en_c="Yes, if the estimated cost of the promised policy exceeds Rs. 1 crore", ta_c="ஆம், வாக்குறுதி அளிக்கப்பட்ட திட்டத்தின் உத்தேச செலவு ரூ. 1 கோடிக்கு மேல் இருந்தால்",
+        en_d="Yes, unless the policy was approved by the President prior to the election", ta_d="ஆம், தேர்தலுக்கு முன் அக்கொள்கைக்கு குடியரசுத் தலைவர் ஒப்புதல் அளித்திருந்தால் தவிர",
+        correct_key="A",
+        exp_en="Proviso to Section 123(1)(b) enacts: 'Provided that a declaration of public policy, or a promise of public action, shall not be deemed to be bribery under this clause.' Political manifestos and policy promises are therefore constitutionally protected democratic discourse.",
+        exp_ta="பிரிவு 123(1)(b)-ன் வரம்புரை தெளிவாகக் கூறுகிறது: 'ஒரு பொதுக் கொள்கை அறிவிப்பு அல்லது பொது நடவடிக்கைக்கான வாக்குறுதி இப்பிரிவின் கீழ் கையூட்டாகக் கருதப்படக்கூடாது.' எனவே தேர்தல் வாக்குறுதிகள் கையூட்டு குற்றமாகாது.",
+        why_a_en="Correct. Section 123(1) proviso explicitly protects public policy declarations.",
+        why_a_ta="சரியானது. பிரிவு 123(1) வரம்புரை பொதுக் கொள்கை வாக்குறுதிகளுக்கு விலக்கு அளிக்கிறது.",
+        why_b_en="Incorrect. Normal campaign promises are not corrupt bribery.",
+        why_b_ta="தவறானது. சாதாரண பிரச்சார வாக்குறுதிகள் கையூட்டு அல்ல.",
+        why_c_en="Incorrect. Monetary scale does not turn policy into bribery.",
+        why_c_ta="தவறானது. நிதி அளவு கொள்கையை கையூட்டாக மாற்றாது.",
+        why_d_en="Incorrect. Presidential approval is not required.",
+        why_d_ta="தவறானது. குடியரசுத் தலைவர் ஒப்புதல் தேவையில்லை.",
+        tip_en="Direct individual gratification (giving cash, alcohol, or personal goods to individual voters) IS bribery and voids the election.",
+        tip_ta="தனிப்பட்ட வாக்காளர்களுக்கு நேரடியாக பணம், மது அல்லது பொருட்கள் கொடுப்பது கையூட்டாகும்; அது தேர்தலை செல்லாததாக்கும்.",
+        fact_en="This crucial distinction was affirmed by the Supreme Court in S. Subramaniam Balaji v. State of Tamil Nadu (2013).",
+        fact_ta="2013 பாலாஜி வழக்கில் உச்ச நீதிமன்றம் இந்த வேறுபாட்டை உறுதிப்படுத்தியது.",
+        tags=["Section 123(1)", "Bribery Definition", "Public Policy Exemption"]
+    ))
+
+    # GT 100
+    qs.append(make_ec_q(
+        qid="EC_GT_100", diff="Medium", qtype="Single-Choice", subtopic="Constitutional Part XV Review",
+        en_stem="Which of the following bodies is described by constitutional scholars as the 'Fourth Pillar' or 'Bulwark of the Democratic System' in India, alongside the Supreme Court, CAG, and UPSC?",
+        ta_stem="உச்ச நீதிமன்றம், CAG, மற்றும் UPSC ஆகியவற்றுடன் சேர்த்து, இந்தியாவின் 'ஜனநாயக அமைப்பின் அரண்' அல்லது 'நான்காவது தூண்' என்று அரசியலமைப்பு அறிஞர்களால் விவரிக்கப்படும் அமைப்பு எது?",
+        en_a="Election Commission of India under Article 324", ta_a="சரத்து 324-ன் கீழ் செயல்படும் இந்தியத் தேர்தல் ஆணையம்",
+        en_b="Finance Commission of India under Article 280", ta_b="சரத்து 280-ன் கீழான இந்திய நிதிக் குழு",
+        en_c="National Commission for Scheduled Castes under Article 338", ta_c="சரத்து 338-ன் கீழான தேசிய பட்டியலின ஆணையம்",
+        en_d="Inter-State Council under Article 263", ta_d="சரத்து 263-ன் கீழான மாநிலங்களுக்கு இடையேயான கவுன்சில்",
+        correct_key="A",
+        exp_en="Dr. B.R. Ambedkar and constitutional commentators envisaged four institutional bulwarks of the Indian democratic constitution: (1) The Supreme Court, (2) The Comptroller and Auditor General, (3) The Union Public Service Commission, and (4) The Election Commission of India.",
+        exp_ta="டாக்டர் அம்பேத்கர் மற்றும் அரசியலமைப்பு அறிஞர்கள் இந்திய ஜனநாயகத்தின் நான்கு பெரும் தூண்களாகக் குறிப்பிட்டவை: (1) உச்ச நீதிமன்றம், (2) தலைமைக் கணக்குத் தணிக்கையாளர் (CAG), (3) மத்திய அரசுப் பணியாளர் தேர்வாணையம் (UPSC), மற்றும் (4) இந்தியத் தேர்தல் ஆணையம் (ECI).",
+        why_a_en="Correct. Election Commission is one of the four institutional bulwarks of the democratic system.",
+        why_a_ta="சரியானது. ஜனநாயக அமைப்பின் நான்கு தூண்களில் ஒன்றாக இந்திய தேர்தல் ஆணையம் திகழ்கிறது.",
+        why_b_en="Incorrect. Finance Commission is a quinquennial fiscal devolution body.",
+        why_b_ta="தவறானது. நிதிக் குழு ஐந்தாண்டு நிதிப் பகிர்வு அமைப்பாகும்.",
+        why_c_en="Incorrect. NCSC is a specific safeguards body under Article 338.",
+        why_c_ta="தவறானது. NCSC ஒரு குறிப்பிட்ட பாதுகாப்பு ஆணையமாகும்.",
+        why_d_en="Incorrect. Inter-State Council is a federal consultative body.",
+        why_d_ta="தவறானது. மாநிலங்களுக்கு இடையேயான கவுன்சில் கூட்டாட்சி அமைப்பாகும்.",
+        tip_en="All four institutions enjoy constitutional status to maintain checks and balances against executive overreach.",
+        tip_ta="நிர்வாகத்தின் ஆதிக்கத்தைத் தடுத்து ஜனநாயக சமநிலையைப் பேண இந்த நான்கு அமைப்புகளுக்கும் அரசியலமைப்பு அந்தஸ்து வழங்கப்பட்டுள்ளது.",
+        fact_en="Independence of the Election Commission was held to be an integral part of the Basic Structure of the Constitution in Supreme Court Advocates-on-Record Association (2023).",
+        fact_ta="2023 உச்ச நீதிமன்றத் தீர்ப்பில் தேர்தல் ஆணையத்தின் சுதந்திரம் அரசியலமைப்பின் அடிப்படை அமைப்பின் ஒரு பகுதி என உறுதி செய்யப்பட்டது.",
+        tags=["Bulwarks of Constitution", "Article 324", "Fourth Pillar", "Democracy"]
+    ))
+
+    return qs

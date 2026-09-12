@@ -1,0 +1,1045 @@
+# -*- coding: utf-8 -*-
+"""
+Generator for Attorney General of India Statement-based MCQs (50 Questions: AG_S_001 to AG_S_050).
+Strictly adheres to:
+- Full 24-field TNPSC Nova AI schema
+- Balanced answer keys (13 B, 12 C, 12 D, 13 A or balanced ~25% each)
+- Fully bilingual (English and authentic Tamil)
+- Multi-statement format ("Consider the following statements...")
+"""
+
+import json
+import os
+import shutil
+from ag_mcq_helper import make_ag_q
+from rebalance_er_helper import balance_question_keys
+from tools.nova_content_engine.validator import ContentValidator
+
+raw_statement_data = [
+    # 1
+    {
+        "stem_en": "Consider the following statements regarding the appointment and qualifications of the Attorney General of India:\n1. The Attorney General is appointed by the President under Article 76(1).\n2. A person must be qualified to be appointed as a Judge of the Supreme Court.\n3. The Constitution prescribes a minimum age of 35 years for appointment as Attorney General.\nWhich of the statements given above are correct?",
+        "stem_ta": "இந்திய தலைமை வழக்கறிஞரின் நியமனம் மற்றும் தகுதிகள் குறித்த பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. சரத்து 76(1)-ன் கீழ் குடியரசுத் தலைவரால் தலைமை வழக்கறிஞர் நியமிக்கப்படுகிறார்.\n2. உச்ச நீதிமன்ற நீதிபதியாக நியமிக்கப்படுவதற்குத் தகுதியான ஒருவரே தலைமை வழக்கறிஞராக நியமிக்கப்பட முடியும்.\n3. தலைமை வழக்கறிஞராக நியமிக்கப்படுவதற்கு அரசியலமைப்பு குறைந்தபட்சம் 35 வயதை நிர்ணயித்துள்ளது.\nமேற்கூறிய கூற்றுகளில் சரியானவை எவை?",
+        "options": [
+            ("1 and 2 only", "1 மற்றும் 2 மட்டுமே"),
+            ("2 and 3 only", "2 மற்றும் 3 மட்டுமே"),
+            ("1 and 3 only", "1 மற்றும் 3 மட்டுமே"),
+            ("1, 2 and 3", "1, 2 மற்றும் 3")
+        ],
+        "correct_idx": 0,
+        "exp_en": "Statements 1 and 2 are correct under Article 76(1). Statement 3 is incorrect because the Constitution prescribes no minimum age limit for appointment as a Supreme Court Judge or Attorney General.",
+        "exp_ta": "கூற்றுகள் 1 மற்றும் 2 சரத்து 76(1)-ன் படி சரியானவை. உச்ச நீதிமன்ற நீதிபதிக்கோ தலைமை வழக்கறிஞருக்கோ அரசியலமைப்பு குறைந்தபட்ச வயது வரம்பை நிர்ணயிக்காததால் கூற்று 3 தவறானது.",
+        "tip_en": "SC judge qualification: Citizen of India + 5 yrs HC judge OR 10 yrs HC advocate OR distinguished jurist. No minimum age!",
+        "tip_ta": "உச்ச நீதிமன்ற நீதிபதி தகுதி: இந்தியக் குடிமகன் + 5 ஆண்டுகள் HC நீதிபதி அல்லது 10 ஆண்டுகள் HC வழக்கறிஞர் அல்லது புகழ்பெற்ற சட்ட வல்லுநர். குறைந்தபட்ச வயது இல்லை!",
+        "fact_en": "Article 76(1) states the President appoints a person qualified to be appointed a Judge of the Supreme Court.",
+        "fact_ta": "சரத்து 76(1) உச்ச நீதிமன்ற நீதிபதியாக நியமிக்கப்பட தகுதியுடைய ஒருவரை குடியரசுத் தலைவர் நியமிப்பார் எனக் கூறுகிறது.",
+        "subtopic": "Appointment & Qualifications"
+    },
+    # 2
+    {
+        "stem_en": "Consider the following statements regarding the tenure and removal of the Attorney General of India:\n1. The Constitution fixes a five-year term of office for the Attorney General.\n2. The Attorney General holds office during the pleasure of the President.\n3. The Constitution provides a procedure for impeachment of the Attorney General by Parliament.\nWhich of the statements given above is/are correct?",
+        "stem_ta": "இந்திய தலைமை வழக்கறிஞரின் பதவிக்காலம் மற்றும் பதவி நீக்கம் குறித்த பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. அரசியலமைப்பு தலைமை வழக்கறிஞருக்கு ஐந்து ஆண்டுகள் பதவிக்காலத்தை நிர்ணயித்துள்ளது.\n2. தலைமை வழக்கறிஞர் குடியரசுத் தலைவரின் விருப்பம் உள்ளவரை பதவியில் நீடிப்பார்.\n3. நாடாளுமன்றத்தால் தலைமை வழக்கறிஞரை பதவி நீக்கம் செய்வதற்கான நடைமுறையை அரசியலமைப்பு வழங்குகிறது.\nமேற்கூறிய கூற்றுகளில் சரியானது/சரியானவை எது/எவை?",
+        "options": [
+            ("1 and 3 only", "1 மற்றும் 3 மட்டுமே"),
+            ("2 only", "2 மட்டுமே"),
+            ("2 and 3 only", "2 மற்றும் 3 மட்டுமே"),
+            ("1, 2 and 3", "1, 2 மற்றும் 3")
+        ],
+        "correct_idx": 1,
+        "exp_en": "Statement 2 is correct under Article 76(4). Statements 1 and 3 are incorrect: the Constitution does not fix any tenure, nor does it lay down an impeachment procedure.",
+        "exp_ta": "கூற்று 2 மட்டுமே சரத்து 76(4)-ன் படி சரியானது. அரசியலமைப்பு தலைமை வழக்கறிஞரின் பதவிக்காலத்தையோ அல்லது அவரைப் பதவி நீக்கம் செய்வதற்கான நடைமுறையையோ குறிப்பிடவில்லை என்பதால் 1 மற்றும் 3 தவறானவை.",
+        "tip_en": "AG holds office during the pleasure of the President (Art 76(4)). No fixed term, no impeachment.",
+        "tip_ta": "தலைமை வழக்கறிஞர் குடியரசுத் தலைவரின் விருப்பம் உள்ளவரை பதவியில் நீடிப்பார் (சரத்து 76(4)). நிலையான பதவிக்காலமோ, பதவி நீக்க நடைமுறையோ இல்லை.",
+        "fact_en": "Under Article 76(4), the Attorney General holds office during the pleasure of the President.",
+        "fact_ta": "சரத்து 76(4)-ன் கீழ் தலைமை வழக்கறிஞர் குடியரசுத் தலைவரின் விருப்பம் உள்ளவரை பதவியில் நீடிப்பார்.",
+        "subtopic": "Tenure & Removal"
+    },
+    # 3
+    {
+        "stem_en": "Consider the following statements regarding the parliamentary rights of the Attorney General under Article 88:\n1. The Attorney General has the right to speak in both Houses of Parliament.\n2. The Attorney General has the right to take part in joint sittings of Parliament.\n3. The Attorney General has the right to vote in parliamentary divisions.\nWhich of the statements given above are correct?",
+        "stem_ta": "சரத்து 88-ன் கீழ் தலைமை வழக்கறிஞரின் நாடாளுமன்ற உரிமைகள் குறித்த பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. நாடாளுமன்றத்தின் இரு அவைகளிலும் பேச தலைமை வழக்கறிஞருக்கு உரிமை உண்டு.\n2. நாடாளுமன்றத்தின் கூட்டுக் கூட்டத் தொடரில் பங்கேற்க தலைமை வழக்கறிஞருக்கு உரிமை உண்டு.\n3. நாடாளுமன்ற வாக்கெடுப்புகளில் வாக்களிக்க தலைமை வழக்கறிஞருக்கு உரிமை உண்டு.\nமேற்கூறிய கூற்றுகளில் சரியானவை எவை?",
+        "options": [
+            ("1 and 2 only", "1 மற்றும் 2 மட்டுமே"),
+            ("2 and 3 only", "2 மற்றும் 3 மட்டுமே"),
+            ("1 and 3 only", "1 மற்றும் 3 மட்டுமே"),
+            ("1, 2 and 3", "1, 2 மற்றும் 3")
+        ],
+        "correct_idx": 0,
+        "exp_en": "Statements 1 and 2 are correct. Statement 3 is incorrect because Article 88 explicitly bars the Attorney General from voting in Parliament.",
+        "exp_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. தலைமை வழக்கறிஞருக்கு நாடாளுமன்றத்தில் வாக்களிக்கும் உரிமை கிடையாது என சரத்து 88 தெளிவாகத் தடை செய்வதால் கூற்று 3 தவறு.",
+        "tip_en": "Article 88: Right to speak and take part in proceedings, but NO right to vote!",
+        "tip_ta": "சரத்து 88: அவைகளில் பேசவும் நடவடிக்கைகளில் பங்கேற்கவும் உரிமை உண்டு, ஆனால் வாக்களிக்க உரிமை இல்லை!",
+        "fact_en": "Article 88 applies to Ministers and the Attorney General.",
+        "fact_ta": "சரத்து 88 மத்திய அமைச்சர்கள் மற்றும் தலைமை வழக்கறிஞருக்குப் பொருந்தும்.",
+        "subtopic": "Parliamentary Rights"
+    },
+    # 4
+    {
+        "stem_en": "Consider the following statements regarding the right of audience of the Attorney General under Article 76(3):\n1. In the performance of his duties, the Attorney General has right of audience in all courts in the territory of India.\n2. The Attorney General enjoys pre-audience over all other advocates under Section 23 of the Advocates Act, 1961.\n3. The Attorney General has an automatic constitutional right of audience in foreign municipal courts.\nWhich of the statements given above are correct?",
+        "stem_ta": "சரத்து 76(3)-ன் கீழ் தலைமை வழக்கறிஞரின் வழக்காடும் உரிமை குறித்த பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. தனது கடமைகளை ஆற்றுவதில், இந்திய எல்லைக்குள் உள்ள அனைத்து நீதிமன்றங்களிலும் வழக்காடும் உரிமை தலைமை வழக்கறிஞருக்கு உண்டு.\n2. வழக்கறிஞர்கள் சட்டம் 1961 பிரிவு 23-ன் கீழ் மற்ற அனைத்து வழக்கறிஞர்களையும் விட முதன்மை வழக்காடும் உரிமை இவருக்கு உண்டு.\n3. வெளிநாட்டு உள்ளூர் நீதிமன்றங்களில் தானாகவே வழக்காடும் அரசியலமைப்பு உரிமை தலைமை வழக்கறிஞருக்கு உண்டு.\nமேற்கூறிய கூற்றுகளில் சரியானவை எவை?",
+        "options": [
+            ("1 and 2 only", "1 மற்றும் 2 மட்டுமே"),
+            ("2 and 3 only", "2 மற்றும் 3 மட்டுமே"),
+            ("1 and 3 only", "1 மற்றும் 3 மட்டுமே"),
+            ("1, 2 and 3", "1, 2 மற்றும் 3")
+        ],
+        "correct_idx": 0,
+        "exp_en": "Statements 1 and 2 are correct. Article 76(3) applies to all courts in India, and Sec 23 Advocates Act gives pre-audience. Statement 3 is incorrect as the Constitution gives no right of audience in foreign municipal courts.",
+        "exp_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. சரத்து 76(3) இந்திய எல்லைக்குள் உள்ள நீதிமன்றங்களுக்கு மட்டுமே பொருந்தும், மேலும் வழக்கறிஞர்கள் சட்டம் பிரிவு 23 முதன்மை வாதாடும் உரிமையை அளிக்கிறது. வெளிநாட்டு நீதிமன்றங்களுக்கு இது பொருந்தாது என்பதால் கூற்று 3 தவறு.",
+        "tip_en": "Right of audience in all courts in India (Art 76(3)); statutory pre-audience over all advocates (Sec 23 Advocates Act).",
+        "tip_ta": "இந்திய எல்லைக்குள் உள்ள அனைத்து நீதிமன்றங்களிலும் வழக்காடும் உரிமை (சரத்து 76(3)); முதன்மை வழக்காடும் உரிமை (வழக்கறிஞர்கள் சட்டம் பிரிவு 23).",
+        "fact_en": "Section 23 of the Advocates Act 1961 gives the Attorney General pre-audience over all other advocates.",
+        "fact_ta": "1961 வழக்கறிஞர்கள் சட்டத்தின் பிரிவு 23 தலைமை வழக்கறிஞருக்கு மற்ற அனைத்து வழக்கறிஞர்களை விட முதன்மை வழக்காடும் உரிமையை வழங்குகிறது.",
+        "subtopic": "Right of Audience"
+    },
+    # 5
+    {
+        "stem_en": "Consider the following statements regarding the privileges and immunities of the Attorney General of India:\n1. Under Article 105(4), the Attorney General enjoys all the privileges and immunities of a Member of Parliament.\n2. The Attorney General cannot be arrested in civil proceedings during parliamentary sessions.\n3. The Attorney General enjoys blanket immunity from all criminal prosecutions under the Indian Penal Code.\nWhich of the statements given above are correct?",
+        "stem_ta": "இந்திய தலைமை வழக்கறிஞரின் சலுகைகள் மற்றும் பாதுகாப்புகள் குறித்த பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. சரத்து 105(4)-ன் கீழ் ஒரு நாடாளுமன்ற உறுப்பினருக்குரிய அனைத்து சலுகைகள் மற்றும் பாதுகாப்புகள் தலைமை வழக்கறிஞருக்கும் உண்டு.\n2. நாடாளுமன்றக் கூட்டத்தொடர் நடைபெறும் காலத்தில் உரிமையியல் நடவடிக்கைகளில் தலைமை வழக்கறிஞரைக் கைது செய்ய முடியாது.\n3. இந்திய தண்டனைச் சட்டத்தின் கீழ் அனைத்து குற்றவியல் வழக்குகளிலிருந்தும் முழுமையான விலக்கு தலைமை வழக்கறிஞருக்கு உண்டு.\nமேற்கூறிய கூற்றுகளில் சரியானவை எவை?",
+        "options": [
+            ("1 and 2 only", "1 மற்றும் 2 மட்டுமே"),
+            ("2 and 3 only", "2 மற்றும் 3 மட்டுமே"),
+            ("1 and 3 only", "1 மற்றும் 3 மட்டுமே"),
+            ("1, 2 and 3", "1, 2 மற்றும் 3")
+        ],
+        "correct_idx": 0,
+        "exp_en": "Statements 1 and 2 are correct under Article 105(4). Statement 3 is incorrect because the AG enjoys no immunity from criminal prosecution.",
+        "exp_ta": "கூற்றுகள் 1 மற்றும் 2 சரத்து 105(4)-ன் கீழ் சரியானவை. தலைமை வழக்கறிஞருக்கு குற்றவியல் நடவடிக்கைகளில் இருந்து எந்தவொரு சிறப்பு விலக்கும் அளிக்கப்படவில்லை என்பதால் கூற்று 3 தவறு.",
+        "tip_en": "Article 105(4) extends parliamentary privileges to the Attorney General, but does not provide immunity from criminal law.",
+        "tip_ta": "சரத்து 105(4) நாடாளுமன்ற சலுகைகளை தலைமை வழக்கறிஞருக்கு விரிவுபடுத்துகிறது, ஆனால் குற்றவியல் சட்டத்திலிருந்து விலக்கு அளிக்காது.",
+        "fact_en": "Article 105(4) explicitly extends privileges under Article 105 to non-members entitled to speak in Parliament under Article 88.",
+        "fact_ta": "சரத்து 105(4) நாடாளுமன்றத்தில் பேச உரிமையுள்ள உறுப்பினரல்லாத நபர்களுக்கும் (AG) நாடாளுமன்ற சலுகைகளை வழங்குகிறது.",
+        "subtopic": "Privileges & Immunities"
+    },
+    # 6
+    {
+        "stem_en": "Consider the following statements regarding the restrictions on the Attorney General's private practice:\n1. He should not advise or hold a brief against the Government of India.\n2. He should not defend accused persons in criminal prosecutions without the permission of the Government.\n3. He is completely prohibited from engaging in any private legal practice.\nWhich of the statements given above are correct?",
+        "stem_ta": "தலைமை வழக்கறிஞரின் தனியார் சட்டப் பயிற்சிக்கான கட்டுப்பாடுகள் குறித்த பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. அவர் இந்திய அரசுக்கு எதிராக ஆலோசனையோ வாதாடவோ கூடாது.\n2. அரசின் அனுமதியின்றி குற்றவியல் வழக்குகளில் குற்றம் சாட்டப்பட்ட நபர்களுக்காக ஆஜராகக் கூடாது.\n3. எந்தவொரு தனியார் சட்டப் பயிற்சியிலும் ஈடுபடுவது அவருக்கு முழுமையாகத் தடை செய்யப்பட்டுள்ளது.\nமேற்கூறிய கூற்றுகளில் சரியானவை எவை?",
+        "options": [
+            ("1 and 2 only", "1 மற்றும் 2 மட்டுமே"),
+            ("2 and 3 only", "2 மற்றும் 3 மட்டுமே"),
+            ("1 and 3 only", "1 மற்றும் 3 மட்டுமே"),
+            ("1, 2 and 3", "1, 2 மற்றும் 3")
+        ],
+        "correct_idx": 0,
+        "exp_en": "Statements 1 and 2 are correct restrictions. Statement 3 is incorrect because the AG is NOT a full-time government servant and is NOT debarred from private legal practice.",
+        "exp_ta": "கூற்றுகள் 1 மற்றும் 2 சரியான கட்டுப்பாடுகள். தலைமை வழக்கறிஞர் முழுநேர அரசு ஊழியர் அல்ல, எனவே தனியார் சட்டப் பயிற்சி மேற்கொள்வது அவருக்கு முழுமையாகத் தடை செய்யப்படவில்லை என்பதால் கூற்று 3 தவறு.",
+        "tip_en": "AG is NOT debarred from private legal practice, but cannot advise/defend against GoI or take criminal defense without permission.",
+        "tip_ta": "AG தனியார் சட்டப் பயிற்சி செய்யத் தடை இல்லை, ஆனால் அரசுக்கு எதிராக வாதாடவோ, அனுமதியின்றி குற்ற வழக்குகளில் ஆஜராகவோ கூடாது.",
+        "fact_en": "The Attorney General is not a whole-time counsel for the Government nor a government servant.",
+        "fact_ta": "தலைமை வழக்கறிஞர் முழுநேர அரசு வழக்கறிஞரோ அல்லது அரசு ஊழியரோ அல்ல.",
+        "subtopic": "Limitations & Restrictions"
+    },
+    # 7
+    {
+        "stem_en": "Consider the following statements regarding the constitutional position of Law Officers in India:\n1. The office of the Attorney General of India is created by Article 76 of the Constitution.\n2. The offices of Solicitor General and Additional Solicitors General are created by Article 77 of the Constitution.\n3. The Solicitor General and Additional Solicitors General assist the Attorney General in his official duties.\nWhich of the statements given above are correct?",
+        "stem_ta": "இந்தியாவில் சட்ட அதிகாரிகளின் அரசியலமைப்பு நிலை குறித்த பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இந்திய தலைமை வழக்கறிஞர் பதவி அரசியலமைப்பின் சரத்து 76-ஆல் உருவாக்கப்பட்டது.\n2. சொலிசிட்டர் ஜெனரல் மற்றும் கூடுதல் சொலிசிட்டர் ஜெனரல் பதவிகள் அரசியலமைப்பின் சரத்து 77-ஆல் உருவாக்கப்பட்டது.\n3. சொலிசிட்டர் ஜெனரல் மற்றும் கூடுதல் சொலிசிட்டர் ஜெனரல்கள் தலைமை வழக்கறிஞரின் அலுவல் பணிகளில் அவருக்கு உதவுகின்றனர்.\nமேற்கூறிய கூற்றுகளில் சரியானவை எவை?",
+        "options": [
+            ("1 and 2 only", "1 மற்றும் 2 மட்டுமே"),
+            ("1 and 3 only", "1 மற்றும் 3 மட்டுமே"),
+            ("2 and 3 only", "2 மற்றும் 3 மட்டுமே"),
+            ("1, 2 and 3", "1, 2 மற்றும் 3")
+        ],
+        "correct_idx": 1,
+        "exp_en": "Statements 1 and 3 are correct. Statement 2 is incorrect because the Constitution mentions only the Attorney General (Article 76). Solicitor General and Additional Solicitors General are non-constitutional, executive posts.",
+        "exp_ta": "கூற்றுகள் 1 மற்றும் 3 சரியானவை. அரசியலமைப்பில் சரத்து 76-ல் தலைமை வழக்கறிஞர் மட்டுமே குறிப்பிடப்பட்டுள்ளார். சொலிசிட்டர் ஜெனரல் மற்றும் கூடுதல் சொலிசிட்டர் ஜெனரல்கள் அரசியலமைப்புப் பதவிகள் அல்ல என்பதால் கூற்று 2 தவறு.",
+        "tip_en": "Only AG is a constitutional post under Article 76. Solicitor General and ASGs are non-constitutional executive posts.",
+        "tip_ta": "சரத்து 76-ன் கீழ் தலைமை வழக்கறிஞர் மட்டுமே அரசியலமைப்புப் பதவி. சொலிசிட்டர் ஜெனரல் மற்றும் ASG அரசியலமைப்பு சாரா பதவிகள்.",
+        "fact_en": "The posts of Solicitor General and Additional Solicitors General are governed by the Law Officers (Conditions of Service) Rules 1987.",
+        "fact_ta": "சொலிசிட்டர் ஜெனரல் மற்றும் கூடுதல் சொலிசிட்டர் ஜெனரல் பதவிகள் 1987 சட்ட அதிகாரிகள் விதிகளால் நிர்வகிக்கப்படுகின்றன.",
+        "subtopic": "Law Officers"
+    },
+    # 8
+    {
+        "stem_en": "Consider the following statements regarding the remuneration of the Attorney General of India:\n1. The remuneration of the Attorney General is determined by the President.\n2. The remuneration of the Attorney General is specified in the Second Schedule of the Constitution.\n3. The remuneration of the Attorney General is not charged on the Consolidated Fund of India.\nWhich of the statements given above are correct?",
+        "stem_ta": "இந்திய தலைமை வழக்கறிஞரின் ஊதியம் குறித்த பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. தலைமை வழக்கறிஞரின் ஊதியத்தை குடியரசுத் தலைவர் நிர்ணயிக்கிறார்.\n2. தலைமை வழக்கறிஞரின் ஊதியம் அரசியலமைப்பின் இரண்டாவது அட்டவணையில் குறிப்பிடப்பட்டுள்ளது.\n3. தலைமை வழக்கறிஞரின் ஊதியம் இந்திய ஒருங்கிணைந்த நிதியத்தின் மீது 'செலவிடப்படும் நிதியாக' (Charged) வைக்கப்படவில்லை.\nமேற்கூறிய கூற்றுகளில் சரியானவை எவை?",
+        "options": [
+            ("1 and 2 only", "1 மற்றும் 2 மட்டுமே"),
+            ("1 and 3 only", "1 மற்றும் 3 மட்டுமே"),
+            ("2 and 3 only", "2 மற்றும் 3 மட்டுமே"),
+            ("1, 2 and 3", "1, 2 மற்றும் 3")
+        ],
+        "correct_idx": 1,
+        "exp_en": "Statements 1 and 3 are correct under Article 76(4). Statement 2 is incorrect because the AG's remuneration is not specified in the Second Schedule.",
+        "exp_ta": "கூற்றுகள் 1 மற்றும் 3 சரத்து 76(4)-ன் கீழ் சரியானவை. தலைமை வழக்கறிஞரின் ஊதியம் அரசியலமைப்பின் 2-வது அட்டவணையில் குறிப்பிடப்படவில்லை என்பதால் கூற்று 2 தவறு.",
+        "tip_en": "AG receives remuneration determined by President (Art 76(4)), NOT in Second Schedule, and NOT charged on CFI.",
+        "tip_ta": "தலைமை வழக்கறிஞரின் ஊதியத்தை குடியரசுத் தலைவர் நிர்ணயிக்கிறார் (சரத்து 76(4)); 2-வது அட்டவணையில் இல்லை; CFI மீது charged செலவு அல்ல.",
+        "fact_en": "Article 76(4) states: 'The Attorney-General shall receive such remuneration as the President may determine.'",
+        "fact_ta": "சரத்து 76(4) கூறுகிறது: 'குடியரசுத் தலைவர் நிர்ணயிக்கும் ஊதியத்தை தலைமை வழக்கறிஞர் பெறுவார்.'",
+        "subtopic": "Remuneration"
+    },
+    # 9
+    {
+        "stem_en": "Consider the following statements comparing the Attorney General of India and the Advocate General of a State:\n1. Both must possess the qualifications required to be a Judge of the Supreme Court.\n2. Both have the right to speak in their respective legislatures without the right to vote.\n3. Both hold office during the pleasure of the President of India.\nWhich of the statements given above is/are correct?",
+        "stem_ta": "இந்திய தலைமை வழக்கறிஞர் மற்றும் மாநில தலைமை வழக்கறிஞரை (Advocate General) ஒப்பிடும் பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இருவரும் உச்ச நீதிமன்ற நீதிபதியாவதற்குத் தேவையான தகுதிகளைக் கொண்டிருக்க வேண்டும்.\n2. இருவருக்கும் அந்தந்த சட்டமன்றங்களில் வாக்களிக்கும் உரிமையின்றி பேசும் உரிமை உண்டு.\n3. இருவரும் இந்தியக் குடியரசுத் தலைவரின் விருப்பம் உள்ளவரை பதவியில் நீடிப்பர்.\nமேற்கூறிய கூற்றுகளில் சரியானது/சரியானவை எது/எவை?",
+        "options": [
+            ("1 and 2 only", "1 மற்றும் 2 மட்டுமே"),
+            ("2 only", "2 மட்டுமே"),
+            ("2 and 3 only", "2 மற்றும் 3 மட்டுமே"),
+            ("1, 2 and 3", "1, 2 மற்றும் 3")
+        ],
+        "correct_idx": 1,
+        "exp_en": "Statement 2 is correct (Art 88 for AG, Art 177 for Advocate General). Statement 1 is incorrect because Advocate General needs HC Judge qualification. Statement 3 is incorrect because Advocate General holds office during the pleasure of the Governor.",
+        "exp_ta": "கூற்று 2 மட்டுமே சரியானது (சரத்து 88 மற்றும் சரத்து 177). மாநில அட்வகேட் ஜெனரலுக்கு உயர் நீதிமன்ற நீதிபதி தகுதி போதும் என்பதால் கூற்று 1 தவறு. அட்வகேட் ஜெனரல் ஆளுநரின் விருப்பப்படி பதவியில் நீடிப்பார் என்பதால் கூற்று 3 தவறு.",
+        "tip_en": "AG: SC Judge qualification, President's pleasure (Art 76). Advocate General: HC Judge qualification, Governor's pleasure (Art 165).",
+        "tip_ta": "AG: SC நீதிபதி தகுதி, குடியரசுத் தலைவர் விருப்பம். Adv General: HC நீதிபதி தகுதி, ஆளுநர் விருப்பம்.",
+        "fact_en": "Article 165 establishes the office of Advocate General for the State.",
+        "fact_ta": "சரத்து 165 மாநிலத்திற்கான அட்வகேட் ஜெனரல் அலுவலகத்தை நிறுவுகிறது.",
+        "subtopic": "Constitutional Comparison"
+    },
+    # 10
+    {
+        "stem_en": "Consider the following statements regarding the role of the Attorney General under the Contempt of Courts Act, 1971:\n1. Under Section 15, the Supreme Court may take cognizance of criminal contempt on a motion by the Attorney General.\n2. A private person requires the prior written consent of the Attorney General to file a criminal contempt petition in the Supreme Court.\n3. The Solicitor General cannot give consent even if the Attorney General has a conflict of interest.\nWhich of the statements given above are correct?",
+        "stem_ta": "1971 நீதிமன்ற அவமதிப்புச் சட்டத்தின் கீழ் தலைமை வழக்கறிஞரின் பங்கு குறித்த பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. பிரிவு 15-ன் கீழ், தலைமை வழக்கறிஞரின் பிரேரணையின் பேரில் உச்ச நீதிமன்றம் குற்றவியல் நீதிமன்ற அவமதிப்பை விசாரணைக்கு ஏற்கலாம்.\n2. ஒரு தனி நபர் உச்ச நீதிமன்றத்தில் குற்றவியல் நீதிமன்ற அவமதிப்பு மனுவைத் தாக்கல் செய்ய தலைமை வழக்கறிஞரின் முன் எழுத்துப்பூர்வ ஒப்புதல் தேவை.\n3. தலைமை வழக்கறிஞருக்கு முரண்பாடு (conflict of interest) இருந்தாலும் சொலிசிட்டர் ஜெனரலால் ஒப்புதல் அளிக்க முடியாது.\nமேற்கூறிய கூற்றுகளில் சரியானவை எவை?",
+        "options": [
+            ("1 and 2 only", "1 மற்றும் 2 மட்டுமே"),
+            ("2 and 3 only", "2 மற்றும் 3 மட்டுமே"),
+            ("1 and 3 only", "1 மற்றும் 3 மட்டுமே"),
+            ("1, 2 and 3", "1, 2 மற்றும் 3")
+        ],
+        "correct_idx": 0,
+        "exp_en": "Statements 1 and 2 are correct under Section 15. Statement 3 is incorrect because Section 15(3) permits the Solicitor General to act if the AG has recused or has a conflict.",
+        "exp_ta": "கூற்றுகள் 1 மற்றும் 2 பிரிவு 15-ன் கீழ் சரியானவை. தலைமை வழக்கறிஞருக்கு முரண்பாடு இருந்தால் சொலிசிட்டர் ஜெனரல் ஒப்புதல் அளிக்க சட்டத்தில் இடமுண்டு என்பதால் கூற்று 3 தவறு.",
+        "tip_en": "Sec 15 Contempt of Courts Act 1971: Criminal contempt in SC requires AG consent; SG can act if AG is unavailable or recused.",
+        "tip_ta": "நீதிமன்ற அவமதிப்புச் சட்டம் பிரிவு 15: உச்ச நீதிமன்றத்தில் குற்றவியல் அவமதிப்புக்கு AG ஒப்புதல் தேவை; AG இல்லாதபோது SG ஒப்புதல் அளிக்கலாம்.",
+        "fact_en": "Section 15(1)(b) requires written consent of the Attorney General for criminal contempt motions by private individuals.",
+        "fact_ta": "பிரிவு 15(1)(b) தனிநபர்களின் குற்றவியல் அவமதிப்பு மனுக்களுக்கு தலைமை வழக்கறிஞரின் எழுத்துப்பூர்வ ஒப்புதலைக் கட்டாயமாக்குகிறது.",
+        "subtopic": "Contempt of Court"
+    },
+    # 11
+    {
+        "stem_en": "Consider the following statements regarding the relation between the Attorney General and the Union Cabinet:\n1. The Attorney General is not a member of the Union Cabinet.\n2. There is a separate Minister of Law and Justice in the Union Cabinet to deal with legal matters at government level.\n3. In Britain, the Attorney General is a member of the Cabinet and political executive.\nWhich of the statements given above are correct?",
+        "stem_ta": "தலைமை வழக்கறிஞருக்கும் மத்திய அமைச்சரவைக்கும் இடையிலான தொடர்பு குறித்த பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. தலைமை வழக்கறிஞர் மத்திய அமைச்சரவையில் ஓர் உறுப்பினர் அல்ல.\n2. அரசு அளவில் சட்ட விவகாரங்களைக் கையாள மத்திய அமைச்சரவையில் தனி சட்ட அமைச்சர் உள்ளார்.\n3. பிரிட்டனில் தலைமை வழக்கறிஞர் அமைச்சரவை மற்றும் அரசியல் நிர்வாகத்தின் ஓர் உறுப்பினராக உள்ளார்.\nமேற்கூறிய கூற்றுகளில் சரியானவை எவை?",
+        "options": [
+            ("1 and 2 only", "1 மற்றும் 2 மட்டுமே"),
+            ("2 and 3 only", "2 மற்றும் 3 மட்டுமே"),
+            ("1 and 3 only", "1 மற்றும் 3 மட்டுமே"),
+            ("1, 2 and 3", "1, 2 மற்றும் 3")
+        ],
+        "correct_idx": 3,
+        "exp_en": "All three statements are correct. The AG in India is non-political and not a cabinet member (a separate Law Minister exists). In the UK, the AG is a political minister and cabinet member.",
+        "exp_ta": "மூன்று கூற்றுகளும் சரியானவை. இந்தியாவில் AG அமைச்சரவை உறுப்பினர் அல்ல (தனியாக சட்ட அமைச்சர் உள்ளார்). ஆனால் பிரிட்டனில் AG அமைச்சரவையின் ஓர் அரசியல் அமைச்சராக உள்ளார்.",
+        "tip_en": "India: AG is not a cabinet member; Law Minister is in cabinet. Britain: AG is a member of the cabinet/ministry.",
+        "tip_ta": "இந்தியா: AG அமைச்சரவை உறுப்பினர் அல்ல; சட்ட அமைச்சர் அமைச்சரவையில் உள்ளார். பிரிட்டன்: AG அமைச்சரவையில் உறுப்பினர்.",
+        "fact_en": "Unlike the British system, the Indian Constitution deliberately kept the Attorney General outside the Cabinet.",
+        "fact_ta": "பிரிட்டிஷ் முறையைப் போலன்றி, இந்திய அரசியலமைப்பு தலைமை வழக்கறிஞரை அமைச்சரவைக்கு வெளியே வைத்துள்ளது.",
+        "subtopic": "Status & Cabinet"
+    },
+    # 12
+    {
+        "stem_en": "Consider the following statements regarding the duties of the Attorney General under Article 76(2):\n1. To advise the Government of India upon legal matters referred by the President.\n2. To perform other legal duties assigned by the President.\n3. To discharge functions conferred on him by the Constitution or any other law.\nWhich of the statements given above are correct?",
+        "stem_ta": "சரத்து 76(2)-ன் கீழ் தலைமை வழக்கறிஞரின் கடமைகள் குறித்த பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. குடியரசுத் தலைவரால் குறிப்பிடப்படும் சட்ட விவகாரங்களில் இந்திய அரசுக்கு ஆலோசனை வழங்குவது.\n2. குடியரசுத் தலைவரால் ஒதுக்கப்படும் பிற சட்டரீதியான பணிகளை ஆற்றுவது.\n3. அரசியலமைப்பு அல்லது பிற சட்டங்களால் அவருக்கு வழங்கப்பட்ட பணிகளை நிறைவேற்றுவது.\nமேற்கூறிய கூற்றுகளில் சரியானவை எவை?",
+        "options": [
+            ("1 and 2 only", "1 மற்றும் 2 மட்டுமே"),
+            ("2 and 3 only", "2 மற்றும் 3 மட்டுமே"),
+            ("1 and 3 only", "1 மற்றும் 3 மட்டுமே"),
+            ("1, 2 and 3", "1, 2 மற்றும் 3")
+        ],
+        "correct_idx": 3,
+        "exp_en": "All three statements are direct quotes from Article 76(2) defining the duties of the Attorney General of India.",
+        "exp_ta": "மூன்று கூற்றுகளும் சரத்து 76(2)-ல் தலைமை வழக்கறிஞரின் கடமைகளாக நேரடியாகக் குறிப்பிடப்பட்டுள்ளவை.",
+        "tip_en": "Article 76(2) lists three categories of duties: advice referred by President, duties assigned by President, and functions under Constitution/law.",
+        "tip_ta": "சரத்து 76(2) மூன்று கடமைகளைக் கூறுகிறது: குடியரசுத் தலைவர் குறிக்கும் விவகாரங்களில் ஆலோசனை, அவரால் ஒதுக்கப்படும் பணிகள், சட்டம் வழங்கும் பணிகள்.",
+        "fact_en": "Article 76(2) outlines the primary functions of the Attorney General.",
+        "fact_ta": "சரத்து 76(2) தலைமை வழக்கறிஞரின் முதன்மைக் கடமைகளை வரையறுக்கிறது.",
+        "subtopic": "Duties & Functions"
+    },
+    # 13
+    {
+        "stem_en": "Consider the following statements regarding the Attorney General and parliamentary committees under Article 88:\n1. The Attorney General can be named as a member of any Parliamentary Committee.\n2. When named a member, he has the right to take part in its proceedings and speak.\n3. When named a member, he is entitled to vote on committee resolutions.\nWhich of the statements given above are correct?",
+        "stem_ta": "சரத்து 88-ன் கீழ் நாடாளுமன்றக் குழுக்களில் தலைமை வழக்கறிஞரின் பங்கு குறித்த பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. தலைமை வழக்கறிஞர் எந்தவொரு நாடாளுமன்றக் குழுவிலும் உறுப்பினராகப் பெயரிடப்படலாம்.\n2. அவ்வாறு உறுப்பினராகப் பெயரிடப்படும் போது, அதன் நடவடிக்கைகளில் பங்கேற்கவும் பேசவும் அவருக்கு உரிமை உண்டு.\n3. குழுவில் உறுப்பினராக இருக்கும் போது, அதன் தீர்மானங்கள் மீது வாக்களிக்க அவருக்கு உரிமை உண்டு.\nமேற்கூறிய கூற்றுகளில் சரியானவை எவை?",
+        "options": [
+            ("1 and 2 only", "1 மற்றும் 2 மட்டுமே"),
+            ("2 and 3 only", "2 மற்றும் 3 மட்டுமே"),
+            ("1 and 3 only", "1 மற்றும் 3 மட்டுமே"),
+            ("1, 2 and 3", "1, 2 மற்றும் 3")
+        ],
+        "correct_idx": 0,
+        "exp_en": "Statements 1 and 2 are correct under Article 88. Statement 3 is incorrect because the restriction 'shall not by virtue of this article be entitled to vote' applies equally to parliamentary committees.",
+        "exp_ta": "கூற்றுகள் 1 மற்றும் 2 சரத்து 88-ன் கீழ் சரியானவை. 'வாக்களிக்க உரிமை பெறமாட்டார்' என்ற தடை நாடாளுமன்றக் குழுக்களுக்கும் பொருந்தும் என்பதால் கூற்று 3 தவறு.",
+        "tip_en": "AG can be a committee member and speak, but can NEVER vote in Parliament or any of its committees.",
+        "tip_ta": "AG நாடாளுமன்றக் குழு உறுப்பினராக இருந்து பேசலாம், ஆனால் நாடாளுமன்றத்திலோ குழுக்களிலோ ஒருபோதும் வாக்களிக்க முடியாது.",
+        "fact_en": "Article 88 bars the Attorney General from voting in any House or committee thereof.",
+        "fact_ta": "சரத்து 88 தலைமை வழக்கறிஞர் எந்த அவையிலும் அல்லது குழுவிலும் வாக்களிப்பதைத் தடை செய்கிறது.",
+        "subtopic": "Parliamentary Committees"
+    },
+    # 14
+    {
+        "stem_en": "Consider the following statements regarding the doctrine of pleasure under Article 76(4):\n1. The Attorney General has no fixed constitutional tenure of office.\n2. The Attorney General can be removed by the President at any time without assigning any cause.\n3. The Attorney General can only be removed following an address by both Houses of Parliament.\nWhich of the statements given above are correct?",
+        "stem_ta": "சரத்து 76(4)-ன் கீழ் உள்ள 'விருப்பக் கோட்பாடு' குறித்த பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. தலைமை வழக்கறிஞருக்கு அரசியலமைப்பு ரீதியாக நிலையான பதவிக்காலம் எதுவும் இல்லை.\n2. எந்தவொரு காரணமும் கூறாமல் குடியரசுத் தலைவர் எப்போது வேண்டுமானாலும் தலைமை வழக்கறிஞரை நீக்க முடியும்.\n3. நாடாளுமன்றத்தின் இரு அவைகளின் தீர்மானத்திற்குப் பிறகே தலைமை வழக்கறிஞரை நீக்க முடியும்.\nமேற்கூறிய கூற்றுகளில் சரியானவை எவை?",
+        "options": [
+            ("1 and 2 only", "1 மற்றும் 2 மட்டுமே"),
+            ("2 and 3 only", "2 மற்றும் 3 மட்டுமே"),
+            ("1 and 3 only", "1 மற்றும் 3 மட்டுமே"),
+            ("1, 2 and 3", "1, 2 மற்றும் 3")
+        ],
+        "correct_idx": 0,
+        "exp_en": "Statements 1 and 2 are correct under Article 76(4). Statement 3 is incorrect because Parliamentary impeachment/address is required for SC/HC Judges, CAG, and CEC, but NOT for the Attorney General.",
+        "exp_ta": "கூற்றுகள் 1 மற்றும் 2 சரத்து 76(4)-ன் கீழ் சரியானவை. நாடாளுமன்ற தீர்மானம் உச்ச நீதிமன்ற நீதிபதிகள், CAG, CEC ஆகியோருக்கு மட்டுமே தேவை; தலைமை வழக்கறிஞருக்கு இது தேவையில்லை என்பதால் கூற்று 3 தவறு.",
+        "tip_en": "AG holds office during the pleasure of the President (Art 76(4)). No parliamentary address or inquiry is needed for removal.",
+        "tip_ta": "தலைமை வழக்கறிஞர் குடியரசுத் தலைவரின் விருப்பம் வரை பதவியில் நீடிப்பார். நீக்குவதற்கு நாடாளுமன்ற தீர்மானமோ விசாரணையோ தேவையில்லை.",
+        "fact_en": "Article 76(4) gives the executive plenary discretion regarding the tenure of the Attorney General.",
+        "fact_ta": "சரத்து 76(4) தலைமை வழக்கறிஞரின் பதவிக்காலம் குறித்து நிர்வாகத்திற்கு முழு அதிகாரத்தை வழங்குகிறது.",
+        "subtopic": "Tenure & Removal"
+    },
+    # 15
+    {
+        "stem_en": "Consider the following statements regarding M.C. Setalvad, the first Attorney General of India:\n1. He served as the Attorney General of India for over 13 years, making him the longest-serving AG.\n2. He also served simultaneously as the Chairman of the First Law Commission of independent India.\n3. He argued for the Union in the landmark In re Berubari Union case (1960).\nWhich of the statements given above are correct?",
+        "stem_ta": "இந்தியாவின் முதல் தலைமை வழக்கறிஞர் எம்.சி. செடல்வாட் குறித்த பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இவர் 13 ஆண்டுகளுக்கு மேலாக தலைமை வழக்கறிஞராகப் பணியாற்றி, மிக நீண்ட காலம் பதவி வகித்த AG ஆனார்.\n2. சுதந்திர இந்தியாவின் முதலாவது சட்ட ஆணையத்தின் தலைவராகவும் இவர் ஒரே நேரத்தில் பணியாற்றினார்.\n3. புகழ்பெற்ற பெருபாரி யூனியன் வழக்கில் (1960) ஒன்றிய அரசின் சார்பில் இவர் வாதாடினார்.\nமேற்கூறிய கூற்றுகளில் சரியானவை எவை?",
+        "options": [
+            ("1 and 2 only", "1 மற்றும் 2 மட்டுமே"),
+            ("2 and 3 only", "2 மற்றும் 3 மட்டுமே"),
+            ("1 and 3 only", "1 மற்றும் 3 மட்டுமே"),
+            ("1, 2 and 3", "1, 2 மற்றும் 3")
+        ],
+        "correct_idx": 3,
+        "exp_en": "All three statements are correct. M.C. Setalvad served from 1950 to 1963 (longest tenure), chaired the First Law Commission (1955-58), and argued the Berubari Union reference under Art 143.",
+        "exp_ta": "மூன்று கூற்றுகளும் சரியானவை. எம்.சி. செடல்வாட் 1950-1963 வரை நீண்ட காலம் பணியாற்றினார்; முதலாவது சட்ட ஆணையத்தின் தலைவராக இருந்தார்; பெருபாரி யூனியன் வழக்கில் அரசுக்காக வாதாடினார்.",
+        "tip_en": "M.C. Setalvad: 1st AG (1950-1963), longest tenure, 1st Law Commission Chairman (1955).",
+        "tip_ta": "எம்.சி. செடல்வாட்: 1-வது AG (1950-1963), மிக நீண்ட பதவிக்காலம், 1-வது சட்ட ஆணையத் தலைவர் (1955).",
+        "fact_en": "M.C. Setalvad's tenure of over 13 years remains an unbroken record for the office of Attorney General of India.",
+        "fact_ta": "எம்.சி. செடல்வாட்டின் 13 ஆண்டுகால பதவிக்காலம் தலைமை வழக்கறிஞர் பதவியில் இன்றளவும் முறியடிக்கப்படாத சாதனையாக உள்ளது.",
+        "subtopic": "Historical Personalities"
+    },
+    # 16
+    {
+        "stem_en": "Consider the following statements regarding the Attorney General and Article 143 (Advisory Jurisdiction):\n1. The Attorney General represents the Union Government when the President refers a question of law or fact to the Supreme Court.\n2. The Supreme Court is constitutionally bound to give an advisory opinion on all references made under Article 143(1).\n3. The advisory opinion delivered by the Supreme Court under Article 143 is binding on the Government.\nWhich of the statements given above is/are correct?",
+        "stem_ta": "சரத்து 143 (ஆலோசனை அதிகார வரம்பு) மற்றும் தலைமை வழக்கறிஞர் குறித்த பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. குடியரசுத் தலைவர் சட்டம் அல்லது உண்மை தொடர்பான வினாவை உச்ச நீதிமன்றத்திற்கு அனுப்பும்போது AG ஒன்றிய அரசைப் பிரதிநிதித்துவப்படுத்துகிறார்.\n2. சரத்து 143(1)-ன் கீழ் அனுப்பப்படும் அனைத்து குறிப்புரைகளுக்கும் உச்ச நீதிமன்றம் கருத்து வழங்க அரசியலமைப்பு ரீதியாகக் கடமைப்பட்டுள்ளது.\n3. சரத்து 143-ன் கீழ் உச்ச நீதிமன்றம் வழங்கும் ஆலோசனைக் கருத்து அரசாங்கத்தைக் கட்டுப்படுத்தும்.\nமேற்கூறிய கூற்றுகளில் சரியானது/சரியானவை எது/எவை?",
+        "options": [
+            ("1 only", "1 மட்டுமே"),
+            ("1 and 2 only", "1 மற்றும் 2 மட்டுமே"),
+            ("1 and 3 only", "1 மற்றும் 3 மட்டுமே"),
+            ("1, 2 and 3", "1, 2 மற்றும் 3")
+        ],
+        "correct_idx": 0,
+        "exp_en": "Statement 1 is correct. Statement 2 is incorrect because under Article 143(1), SC 'may' give opinion (discretionary). Statement 3 is incorrect because advisory opinions are not binding on the Government.",
+        "exp_ta": "கூற்று 1 மட்டுமே சரியானது. சரத்து 143(1)-ன் கீழ் கருத்து வழங்குவது உச்ச நீதிமன்றத்தின் விருப்ப உரிமை (கட்டாயமில்லை) என்பதால் கூற்று 2 தவறு. ஆலோசனைக் கருத்து அரசுக்குக் கட்டுப்பட்டதல்ல என்பதால் கூற்று 3 தவறு.",
+        "tip_en": "Article 143(1) advice is discretionary for SC and non-binding on the Government. AG represents the Union.",
+        "tip_ta": "சரத்து 143(1) ஆலோசனை உச்ச நீதிமன்றத்திற்கு விருப்ப உரிமை; அரசுக்குக் கட்டுப்பட்டதல்ல. AG ஒன்றியத்தை பிரதிநிதித்துவப்படுத்துகிறார்.",
+        "fact_en": "In the Ayodhya Reference (1993), the Supreme Court declined to answer the reference under Article 143(1).",
+        "fact_ta": "அயோத்தி குறிப்புரையில் (1993), சரத்து 143(1)-ன் கீழ் பதில் அளிக்க உச்ச நீதிமன்றம் மறுத்துவிட்டது.",
+        "subtopic": "Advisory Jurisdiction"
+    },
+    # 17
+    {
+        "stem_en": "Consider the following statements regarding the Attorney General's ex-officio role in the Bar Council of India:\n1. Under Section 4 of the Advocates Act, 1961, the Attorney General is an ex-officio member of the Bar Council of India.\n2. The Attorney General serves as the permanent ex-officio Chairman of the Bar Council of India.\n3. The Solicitor General is also an ex-officio member of the Bar Council of India.\nWhich of the statements given above are correct?",
+        "stem_ta": "இந்திய பார் கவுன்சிலில் தலைமை வழக்கறிஞரின் பதவி வழி பங்கு குறித்த பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. 1961 வழக்கறிஞர்கள் சட்டத்தின் பிரிவு 4-ன் கீழ், தலைமை வழக்கறிஞர் இந்திய பார் கவுன்சிலின் பதவி வழி உறுப்பினர் ஆவார்.\n2. தலைமை வழக்கறிஞர் இந்திய பார் கவுன்சிலின் நிரந்தர பதவி வழித் தலைவராகச் செயல்படுகிறார்.\n3. சொலிசிட்டர் ஜெனரலும் இந்திய பார் கவுன்சிலின் பதவி வழி உறுப்பினர் ஆவார்.\nமேற்கூறிய கூற்றுகளில் சரியானவை எவை?",
+        "options": [
+            ("1 and 2 only", "1 மற்றும் 2 மட்டுமே"),
+            ("1 and 3 only", "1 மற்றும் 3 மட்டுமே"),
+            ("2 and 3 only", "2 மற்றும் 3 மட்டுமே"),
+            ("1, 2 and 3", "1, 2 மற்றும் 3")
+        ],
+        "correct_idx": 1,
+        "exp_en": "Statements 1 and 3 are correct under Section 4 of the Advocates Act, 1961. Statement 2 is incorrect because the Chairman of the Bar Council of India is elected by its members, not held ex-officio by the AG.",
+        "exp_ta": "கூற்றுகள் 1 மற்றும் 3 சரியானவை. பார் கவுன்சில் தலைவர் அதன் உறுப்பினர்களால் தேர்ந்தெடுக்கப்படுகிறாரே தவிர, தலைமை வழக்கறிஞர் அதன் தலைவர் அல்ல என்பதால் கூற்று 2 தவறு.",
+        "tip_en": "AG and SG are ex-officio members of BCI, but the Chairman is elected, not ex-officio.",
+        "tip_ta": "AG மற்றும் SG பார் கவுன்சிலின் பதவி வழி உறுப்பினர்கள்; ஆனால் தலைவர் உறுப்பினர்களால் தேர்ந்தெடுக்கப்படுகிறார்.",
+        "fact_en": "Section 4(1)(a) and (b) of Advocates Act 1961 designate AG and SG as ex-officio members of BCI.",
+        "fact_ta": "1961 வழக்கறிஞர்கள் சட்டத்தின் பிரிவு 4(1)(a) மற்றும் (b) AG மற்றும் SG-யை பார் கவுன்சிலின் பதவி வழி உறுப்பினர்களாக நியமிக்கிறது.",
+        "subtopic": "Bar Council of India"
+    },
+    # 18
+    {
+        "stem_en": "Consider the following statements regarding the 16th Attorney General of India, R. Venkataramani:\n1. He was appointed as the 16th Attorney General of India in October 2022.\n2. He succeeded K.K. Venugopal in office.\n3. Prior to his appointment, he served as the Chief Justice of India.\nWhich of the statements given above are correct?",
+        "stem_ta": "இந்தியாவின் 16-வது தலைமை வழக்கறிஞர் ஆர். வெங்கடரமணி குறித்த பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இவர் அக்டோபர் 2022-ல் இந்தியாவின் 16-வது தலைமை வழக்கறிஞராக நியமிக்கப்பட்டார்.\n2. இவர் கே.கே. வேணுகோபாலுக்குப் பிறகு பதவிக்கு வந்தார்.\n3. இந்த நியமனத்திற்கு முன், இவர் இந்திய தலைமை நீதிபதியாகப் பணியாற்றினார்.\nமேற்கூறிய கூற்றுகளில் சரியானவை எவை?",
+        "options": [
+            ("1 and 2 only", "1 மற்றும் 2 மட்டுமே"),
+            ("2 and 3 only", "2 மற்றும் 3 மட்டுமே"),
+            ("1 and 3 only", "1 மற்றும் 3 மட்டுமே"),
+            ("1, 2 and 3", "1, 2 மற்றும் 3")
+        ],
+        "correct_idx": 0,
+        "exp_en": "Statements 1 and 2 are correct. Statement 3 is incorrect because R. Venkataramani was a Senior Advocate of the Supreme Court, not a former Chief Justice of India.",
+        "exp_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. ஆர். வெங்கடரமணி உச்ச நீதிமன்றத்தின் மூத்த வழக்கறிஞரே தவிர இந்திய தலைமை நீதிபதியாகப் பணியாற்றவில்லை என்பதால் கூற்று 3 தவறு.",
+        "tip_en": "Current 16th AG is R. Venkataramani (appointed Oct 2022, succeeding K.K. Venugopal).",
+        "tip_ta": "தற்போதைய 16-வது AG ஆர். வெங்கடரமணி (அக்டோபர் 2022-ல் நியமிக்கப்பட்டார், கே.கே. வேணுகோபாலுக்குப் பின்).",
+        "fact_en": "R. Venkataramani was designated Senior Advocate by the Supreme Court in 1997.",
+        "fact_ta": "ஆர். வெங்கடரமணி 1997-ல் உச்ச நீதிமன்றத்தால் மூத்த வழக்கறிஞராக அங்கீகரிக்கப்பட்டார்.",
+        "subtopic": "Current Affairs"
+    },
+    # 19
+    {
+        "stem_en": "Consider the following statements regarding Kesavananda Bharati v. State of Kerala (1973):\n1. Niren De was the Attorney General who represented the Union of India.\n2. The Attorney General argued that Parliament's amending power under Article 368 was absolute and unconditional.\n3. The Supreme Court accepted the Attorney General's argument and held that fundamental rights can be abrogated without limitation.\nWhich of the statements given above are correct?",
+        "stem_ta": "கேசவானந்த பாரதி எதிர் கேரள அரசு (1973) வழக்கு குறித்த பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இவ்வழக்கில் இந்திய ஒன்றியத்தின் சார்பில் வாதாடிய தலைமை வழக்கறிஞர் நீரேன் டே ஆவார்.\n2. சரத்து 368-ன் கீழ் நாடாளுமன்றத்தின் அரசியலமைப்பு திருத்த அதிகாரம் வரம்பற்றது என்று தலைமை வழக்கறிஞர் வாதிட்டார்.\n3. தலைமை வழக்கறிஞரின் வாதத்தை ஏற்ற உச்ச நீதிமன்றம், அடிப்படை உரிமைகளை வரம்பின்றி ரத்து செய்ய முடியும் எனத் தீர்ப்பளித்தது.\nமேற்கூறிய கூற்றுகளில் சரியானவை எவை?",
+        "options": [
+            ("1 and 2 only", "1 மற்றும் 2 மட்டுமே"),
+            ("2 and 3 only", "2 மற்றும் 3 மட்டுமே"),
+            ("1 and 3 only", "1 மற்றும் 3 மட்டுமே"),
+            ("1, 2 and 3", "1, 2 மற்றும் 3")
+        ],
+        "correct_idx": 0,
+        "exp_en": "Statements 1 and 2 are correct. AG Niren De argued for untrammeled amending power. Statement 3 is incorrect because the 13-judge bench rejected unlimited power and established the Basic Structure Doctrine.",
+        "exp_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. வரம்பற்ற திருத்த அதிகாரம் உண்டு என AG நீரேன் டே வாதிட்டார். ஆனால் 13 நீதிபதிகள் அமர்வு அவரது வாதத்தை நிராகரித்து அடிப்படைக் கட்டமைப்பு கோட்பாட்டை உருவாக்கியதால் கூற்று 3 தவறு.",
+        "tip_en": "Kesavananda Bharati (1973): AG Niren De argued for absolute parliamentary sovereignty; SC rejected it and formulated the Basic Structure Doctrine.",
+        "tip_ta": "கேசவானந்த பாரதி (1973): AG நீரேன் டே வரம்பற்ற திருத்த அதிகாரத்திற்காக வாதிட்டார்; உச்ச நீதிமன்றம் அதை நிராகரித்து அடிப்படைக் கட்டமைப்புக் கோட்பாட்டை வகுத்தது.",
+        "fact_en": "The landmark Kesavananda Bharati judgment was delivered on April 24, 1973 by a 7:6 majority.",
+        "fact_ta": "ஏப்ரல் 24, 1973 அன்று 7:6 பெரும்பான்மையில் கேசவானந்த பாரதி தீர்ப்பு வழங்கப்பட்டது.",
+        "subtopic": "Landmark Cases"
+    },
+    # 20
+    {
+        "stem_en": "Consider the following statements regarding the resignation convention of the Attorney General of India:\n1. By convention, the Attorney General resigns when the Council of Ministers resigns or is replaced.\n2. This convention arises because the Attorney General is appointed on the advice of the Council of Ministers.\n3. The incoming Government is constitutionally bound to accept the resignation and appoint a new Attorney General immediately.\nWhich of the statements given above are correct?",
+        "stem_ta": "இந்திய தலைமை வழக்கறிஞரின் பதவி விலகல் மரபு குறித்த பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. மத்திய அமைச்சரவை பதவி விலகும் போதோ அல்லது புதிய அரசு அமையும் போதோ தலைமை வழக்கறிஞரும் பதவி விலகுவது மரபாகும்.\n2. அமைச்சரவையின் ஆலோசனையின் பேரில் தலைமை வழக்கறிஞர் நியமிக்கப்படுவதால் இந்த மரபு பின்பற்றப்படுகிறது.\n3. புதிய அரசு அந்த ராஜினாமாவை ஏற்று உடனடியாக புதிய தலைமை வழக்கறிஞரை நியமிக்க அரசியலமைப்பு ரீதியாகக் கடமைப்பட்டுள்ளது.\nமேற்கூறிய கூற்றுகளில் சரியானவை எவை?",
+        "options": [
+            ("1 and 2 only", "1 மற்றும் 2 மட்டுமே"),
+            ("2 and 3 only", "2 மற்றும் 3 மட்டுமே"),
+            ("1 and 3 only", "1 மற்றும் 3 மட்டுமே"),
+            ("1, 2 and 3", "1, 2 மற்றும் 3")
+        ],
+        "correct_idx": 0,
+        "exp_en": "Statements 1 and 2 are correct constitutional conventions. Statement 3 is incorrect because the incoming government may choose to request the incumbent AG to continue in office.",
+        "exp_ta": "கூற்றுகள் 1 மற்றும் 2 சரியான அரசியல் மரபுகள். புதிய அரசு விரும்பினால் அதே தலைமை வழக்கறிஞரையே தொடர்ந்து நீடிக்கக் கோரலாம் என்பதால் கூற்று 3 தவறு.",
+        "tip_en": "AG conventionally resigns with the Council of Ministers, but the new government can reappoint or ask the incumbent to continue.",
+        "tip_ta": "அமைச்சரவை மாறும்போது AG பதவி விலகுவது மரபு, ஆனால் புதிய அரசு அவரைத் தொடரவும் அனுமதிக்கலாம்.",
+        "fact_en": "This convention ensures harmony and confidence between the political executive and its chief legal adviser.",
+        "fact_ta": "அரசியல் நிர்வாகத்திற்கும் அதன் தலைமைச் சட்ட ஆலோசகருக்கும் இடையே இணக்கமும் நம்பிக்கையும் இருப்பதை இந்த மரபு உறுதி செய்கிறது.",
+        "subtopic": "Constitutional Conventions"
+    },
+    # 21
+    {
+        "stem_en": "Consider the following statements regarding the restrictions under the Law Officers (Conditions of Service) Rules, 1987:\n1. The Attorney General shall not accept appointment as a director in any company without government permission.\n2. The Attorney General shall not advise any party against the Government of India or a Public Sector Undertaking.\n3. The Attorney General shall not hold briefs in any court outside Delhi without presidential sanction.\nWhich of the statements given above are correct?",
+        "stem_ta": "1987 சட்ட அதிகாரிகள் விதிகளின் கீழ் உள்ள கட்டுப்பாடுகள் குறித்த பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. அரசின் அனுமதியின்றி எந்தவொரு நிறுவனத்திலும் இயக்குநர் பதவியை தலைமை வழக்கறிஞர் ஏற்கக்கூடாது.\n2. இந்திய அரசு அல்லது பொதுத்துறை நிறுவனங்களுக்கு எதிராக எந்தவொரு தரப்பினருக்கும் தலைமை வழக்கறிஞர் ஆலோசனை வழங்கக்கூடாது.\n3. குடியரசுத் தலைவரின் அனுமதியின்றி தில்லிக்கு வெளியே உள்ள எந்த நீதிமன்றத்திலும் தலைமை வழக்கறிஞர் ஆஜராகக்கூடாது.\nமேற்கூறிய கூற்றுகளில் சரியானவை எவை?",
+        "options": [
+            ("1 and 2 only", "1 மற்றும் 2 மட்டுமே"),
+            ("2 and 3 only", "2 மற்றும் 3 மட்டுமே"),
+            ("1 and 3 only", "1 மற்றும் 3 மட்டுமே"),
+            ("1, 2 and 3", "1, 2 மற்றும் 3")
+        ],
+        "correct_idx": 0,
+        "exp_en": "Statements 1 and 2 are correct restrictions under the 1987 Rules. Statement 3 is incorrect because under Article 76(3) the AG has right of audience in all courts across India without needing separate presidential sanction for each court.",
+        "exp_ta": "கூற்றுகள் 1 மற்றும் 2 விதிகள் 1987-ன் கீழ் சரியான கட்டுப்பாடுகள். சரத்து 76(3)-ன் கீழ் இந்தியா முழுவதும் உள்ள அனைத்து நீதிமன்றங்களிலும் ஆஜராக AG-க்கு உரிமை உண்டு; ஒவ்வொரு முறையும் குடியரசுத் தலைவர் அனுமதி தேவையில்லை என்பதால் கூற்று 3 தவறு.",
+        "tip_en": "AG cannot accept company directorships or advise against GoI/PSUs without permission, but has audience in all Indian courts.",
+        "tip_ta": "அனுமதியின்றி நிறுவன இயக்குநர் பதவி ஏற்கவோ, அரசுக்கு எதிராக ஆலோசனை வழங்கவோ கூடாது; ஆனால் அனைத்து இந்திய நீதிமன்றங்களிலும் வழக்காடலாம்.",
+        "fact_en": "Rule 8 of Law Officers Rules 1987 lays down restrictions on briefs and directorships.",
+        "fact_ta": "1987 சட்ட அதிகாரிகள் விதிகளின் விதி 8 நிறுவன இயக்குநர் பதவி மற்றும் வழக்குகள் மீதான கட்டுப்பாடுகளைக் கூறுகிறது.",
+        "subtopic": "Limitations & Restrictions"
+    },
+    # 22
+    {
+        "stem_en": "Consider the following statements regarding the Attorney General in federal disputes under Article 131:\n1. Article 131 confers exclusive original jurisdiction on the Supreme Court in federal disputes.\n2. The Attorney General represents the Union of India in disputes between the Centre and one or more States.\n3. The Attorney General can represent a State in an Article 131 suit against the Union of India.\nWhich of the statements given above are correct?",
+        "stem_ta": "சரத்து 131-ன் கீழ் கூட்டாட்சித் தகராறுகளில் தலைமை வழக்கறிஞரின் பங்கு குறித்த பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. சரத்து 131 கூட்டாட்சி தகராறுகளில் உச்ச நீதிமன்றத்திற்கு பிரத்யேக அசல் அதிகார வரம்பை வழங்குகிறது.\n2. மத்திய அரசுக்கும் ஒன்று அல்லது அதற்கு மேற்பட்ட மாநிலங்களுக்கும் இடையிலான தகராறுகளில் இந்திய ஒன்றியத்தை AG பிரதிநிதித்துவப்படுத்துகிறார்.\n3. ஒன்றிய அரசுக்கு எதிரான சரத்து 131 வழக்கில் ஒரு மாநிலத்திற்காக தலைமை வழக்கறிஞர் ஆஜராக முடியும்.\nமேற்கூறிய கூற்றுகளில் சரியானவை எவை?",
+        "options": [
+            ("1 and 2 only", "1 மற்றும் 2 மட்டுமே"),
+            ("2 and 3 only", "2 மற்றும் 3 மட்டுமே"),
+            ("1 and 3 only", "1 மற்றும் 3 மட்டுமே"),
+            ("1, 2 and 3", "1, 2 மற்றும் 3")
+        ],
+        "correct_idx": 0,
+        "exp_en": "Statements 1 and 2 are correct. Statement 3 is incorrect because the AG cannot represent a party or State against his primary client, the Union of India.",
+        "exp_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. தனது முதன்மை வாடிக்கையாளரான இந்திய ஒன்றிய அரசுக்கு எதிராக எந்தவொரு மாநிலத்திற்காகவும் தலைமை வழக்கறிஞர் ஆஜராக முடியாது என்பதால் கூற்று 3 தவறு.",
+        "tip_en": "In Article 131 original jurisdiction suits, AG represents the Union of India, never a State suing the Centre.",
+        "tip_ta": "சரத்து 131 அசல் அதிகார வரம்பு வழக்குகளில் AG இந்திய ஒன்றியத்தை மட்டுமே பிரதிநிதித்துவப்படுத்துவார்.",
+        "fact_en": "Article 131 deals with disputes between GoI and States, or between two or more States.",
+        "fact_ta": "சரத்து 131 மத்திய அரசுக்கும் மாநிலங்களுக்கும் இடையிலான அல்லது மாநிலங்களுக்கு இடையிலான தகராறுகளைக் கையாள்கிறது.",
+        "subtopic": "Federal Disputes"
+    },
+    # 23
+    {
+        "stem_en": "Consider the following statements regarding the procedure of consulting the Attorney General:\n1. Administrative ministries must route all legal references to the Attorney General through the Ministry of Law and Justice.\n2. The Attorney General cannot be consulted directly by an administrative ministry without Law Ministry clearance.\n3. The Attorney General's legal opinion is binding on the Union Cabinet and cannot be overruled.\nWhich of the statements given above are correct?",
+        "stem_ta": "தலைமை வழக்கறிஞரை அணுகும் நடைமுறை குறித்த பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. நிர்வாக அமைச்சகங்கள் அனைத்து சட்ட விவகாரங்களையும் சட்ட மற்றும் நீதி அமைச்சகத்தின் வழியாகவே AG-யிடம் அனுப்ப வேண்டும்.\n2. சட்ட அமைச்சகத்தின் அனுமதியின்றி எந்தவொரு நிர்வாக அமைச்சகமும் நேரடியாக AG-யிடம் ஆலோசனை பெற முடியாது.\n3. தலைமை வழக்கறிஞரின் சட்ட ஆலோசனை மத்திய அமைச்சரவையைக் கட்டுப்படுத்தும், அதை நிராகரிக்க முடியாது.\nமேற்கூறிய கூற்றுகளில் சரியானவை எவை?",
+        "options": [
+            ("1 and 2 only", "1 மற்றும் 2 மட்டுமே"),
+            ("2 and 3 only", "2 மற்றும் 3 மட்டுமே"),
+            ("1 and 3 only", "1 மற்றும் 3 மட்டுமே"),
+            ("1, 2 and 3", "1, 2 மற்றும் 3")
+        ],
+        "correct_idx": 0,
+        "exp_en": "Statements 1 and 2 are correct under Government Allocation of Business Rules. Statement 3 is incorrect because the AG's advice is advisory and not binding on the Cabinet.",
+        "exp_ta": "கூற்றுகள் 1 மற்றும் 2 சரியான நிர்வாக நடைமுறைகள். தலைமை வழக்கறிஞரின் ஆலோசனை ஆலோசனை மட்டுமே தவிர அமைச்சரவையை சட்டப்பூர்வமாகக் கட்டுப்படுத்தாது என்பதால் கூற்று 3 தவறு.",
+        "tip_en": "All references to AG must route through Ministry of Law and Justice; opinion is advisory, not binding.",
+        "tip_ta": "AG-க்கான அனைத்து குறிப்புகளும் சட்ட அமைச்சகத்தின் வழியே செல்ல வேண்டும்; ஆலோசனை வழிகாட்டுதலே தவிர கட்டுப்படுத்தாது.",
+        "fact_en": "Department of Legal Affairs in the Ministry of Law and Justice acts as the nodal agency for legal references to the AG.",
+        "fact_ta": "சட்ட விவகாரங்கள் துறை AG-யிடம் சட்டக் குறிப்புகளை அனுப்பும் முதன்மை முகமையாகச் செயல்படுகிறது.",
+        "subtopic": "Administrative Procedure"
+    },
+    # 24
+    {
+        "stem_en": "Consider the following statements regarding ADM Jabalpur v. Shivkant Shukla (1976):\n1. Niren De was the Attorney General who argued the case for the Union of India.\n2. The Attorney General submitted that during an Emergency, citizens had no locus standi to enforce the right to life under Article 21.\n3. The Supreme Court in a 4:1 decision rejected the Attorney General's submission.\nWhich of the statements given above are correct?",
+        "stem_ta": "ஏ.டி.எம். ஜபல்பூர் எதிர் சிவகாந்த் சுக்லா (1976) வழக்கு குறித்த பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இவ்வழக்கில் இந்திய ஒன்றியத்திற்காக வாதாடிய தலைமை வழக்கறிஞர் நீரேன் டே ஆவார்.\n2. அவசரநிலையின் போது சரத்து 21-ன் கீழ் வாழ்வுரிமையை நிலைநாட்ட குடிமக்களுக்கு எந்த உரிமையும் இல்லை என AG வாதிட்டார்.\n3. உச்ச நீதிமன்றம் 4:1 பெரும்பான்மை தீர்ப்பில் தலைமை வழக்கறிஞரின் வாதத்தை நிராகரித்தது.\nமேற்கூறிய கூற்றுகளில் சரியானவை எவை?",
+        "options": [
+            ("1 and 2 only", "1 மற்றும் 2 மட்டுமே"),
+            ("2 and 3 only", "2 மற்றும் 3 மட்டுமே"),
+            ("1 and 3 only", "1 மற்றும் 3 மட்டுமே"),
+            ("1, 2 and 3", "1, 2 மற்றும் 3")
+        ],
+        "correct_idx": 0,
+        "exp_en": "Statements 1 and 2 are correct. Statement 3 is incorrect because the majority (4:1) tragically accepted the AG's submission (Justice Khanna dissented), which was later overruled in Puttaswamy (2017).",
+        "exp_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. 4 நீதிபதிகள் AG-யின் வாதத்தை ஏற்றுக்கொண்டனர் (நீதிபதி கண்ணா மட்டுமே மாறுபட்டார்) என்பதால் கூற்று 3 தவறு. இது பின்னர் புட்டசாமி வழக்கில் (2017) ரத்து செய்யப்பட்டது.",
+        "tip_en": "In ADM Jabalpur (1976), AG Niren De's extreme argument was accepted by 4:1 majority; later overruled in 2017.",
+        "tip_ta": "ADM ஜபல்பூர் வழக்கில் நீரேன் டேயின் வாதம் 4:1 பெரும்பான்மையில் ஏற்கப்பட்டது; பின்னர் 2017-ல் புட்டசாமி வழக்கில் ரத்து செய்யப்பட்டது.",
+        "fact_en": "Justice H.R. Khanna's lone dissent in ADM Jabalpur is celebrated as a high watermark of judicial courage.",
+        "fact_ta": "ADM ஜபல்பூர் வழக்கில் நீதிபதி எச்.ஆர். கண்ணாவின் தனித்த மாறுபட்ட தீர்ப்பு நீதித்துறை துணிவின் உச்சமாகக் கொண்டாடப்படுகிறது.",
+        "subtopic": "Landmark Cases"
+    },
+    # 25
+    {
+        "stem_en": "Consider the following statements regarding Soli Sorabjee's tenures as Attorney General:\n1. He served as Attorney General of India for two distinct terms.\n2. He was first appointed Attorney General in 1989 during the National Front government.\n3. He served his second term during the Atal Bihari Vajpayee government.\nWhich of the statements given above are correct?",
+        "stem_ta": "சோலி சொராப்ஜி தலைமை வழக்கறிஞராக பதவி வகித்தது குறித்த பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இவர் இரண்டு வெவ்வேறு காலகட்டங்களில் இந்திய தலைமை வழக்கறிஞராகப் பணியாற்றினார்.\n2. தேசிய முன்னணி ஆட்சியின் போது 1989-ல் இவர் முதன்முதலில் தலைமை வழக்கறிஞராக நியமிக்கப்பட்டார்.\n3. அடல் பிகாரி வாஜ்பாய் ஆட்சிக் காலத்தில் இவர் தனது இரண்டாவது பதவிக்காலத்தை ஆற்றினார்.\nமேற்கூறிய கூற்றுகளில் சரியானவை எவை?",
+        "options": [
+            ("1 and 2 only", "1 மற்றும் 2 மட்டுமே"),
+            ("2 and 3 only", "2 மற்றும் 3 மட்டுமே"),
+            ("1 and 3 only", "1 மற்றும் 3 மட்டுமே"),
+            ("1, 2 and 3", "1, 2 மற்றும் 3")
+        ],
+        "correct_idx": 3,
+        "exp_en": "All three statements are correct. Soli Sorabjee was AG from 1989 to 1990 (V.P. Singh government) and from 1998 to 2004 (Vajpayee government).",
+        "exp_ta": "மூன்று கூற்றுகளும் சரியானவை. சோலி சொராப்ஜி 1989-1990 (வி.பி. சிங் அரசு) மற்றும் 1998-2004 (வாஜ்பாய் அரசு) என இருமுறை AG-யாகப் பணியாற்றினார்.",
+        "tip_en": "Soli Sorabjee served two terms: 1989-1990 (V.P. Singh) and 1998-2004 (A.B. Vajpayee).",
+        "tip_ta": "சோலி சொராப்ஜி இரண்டு முறை பணியாற்றினார்: 1989-1990 (வி.பி. சிங்) மற்றும் 1998-2004 (வாஜ்பாய்).",
+        "fact_en": "Soli Sorabjee was renowned for defending constitutional liberties and free speech.",
+        "fact_ta": "அரசியலமைப்புச் சுதந்திரங்கள் மற்றும் பேச்சுரிமையைப் பாதுகாப்பதில் சோலி சொராப்ஜி புகழ்பெற்றவர்.",
+        "subtopic": "Historical Personalities"
+    },
+    # 26
+    {
+        "stem_en": "Consider the following statements regarding the constitutional oath of the Attorney General of India:\n1. The Third Schedule of the Constitution contains an explicit oath of office for the Attorney General.\n2. The Attorney General takes an oath administered by the President of India before entering upon office.\n3. The Constitution does not prescribe any oath of office for the Attorney General in the Third Schedule.\nWhich of the statements given above is/are correct?",
+        "stem_ta": "இந்திய தலைமை வழக்கறிஞரின் அரசியலமைப்பு பதவிப் பிரமாணம் குறித்த பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. அரசியலமைப்பின் மூன்றாவது அட்டவணையில் தலைமை வழக்கறிஞருக்கான வெளிப்படையான பதவிப் பிரமாணம் உள்ளது.\n2. பதவியேற்பதற்கு முன் இந்தியக் குடியரசுத் தலைவரால் தலைமை வழக்கறிஞருக்கு பதவிப் பிரமாணம் செய்து வைக்கப்படுகிறது.\n3. மூன்றாவது அட்டவணையில் தலைமை வழக்கறிஞருக்கென எந்தவொரு பதவிப் பிரமாணத்தையும் அரசியலமைப்பு பரிந்துரைக்கவில்லை.\nமேற்கூறிய கூற்றுகளில் சரியானது/சரியானவை எது/எவை?",
+        "options": [
+            ("1 only", "1 மட்டுமே"),
+            ("3 only", "3 மட்டுமே"),
+            ("1 and 2 only", "1 மற்றும் 2 மட்டுமே"),
+            ("2 and 3 only", "2 மற்றும் 3 மட்டுமே")
+        ],
+        "correct_idx": 1,
+        "exp_en": "Statement 3 is correct. The Constitution does NOT prescribe any oath for the Attorney General in the Third Schedule or anywhere else. Statements 1 and 2 are incorrect.",
+        "exp_ta": "கூற்று 3 மட்டுமே சரியானது. அரசியலமைப்பின் மூன்றாவது அட்டவணையிலோ அல்லது வேறு எங்குமோ தலைமை வழக்கறிஞருக்கான பதவிப் பிரமாணம் எதுவும் குறிப்பிடப்படவில்லை. எனவே 1 மற்றும் 2 தவறானவை.",
+        "tip_en": "Third Schedule has oaths for Ministers, MPs, Judges, CAG, but NO oath for the Attorney General!",
+        "tip_ta": "3-வது அட்டவணையில் அமைச்சர்கள், எம்.பி.க்கள், நீதிபதிகள், சிஏஜி ஆகியோருக்கு பதவிப் பிரமாணம் உண்டு, ஆனால் AG-க்கு இல்லை!",
+        "fact_en": "The absence of a prescribed constitutional oath reflects the unique professional status of the Attorney General.",
+        "fact_ta": "அரசியலமைப்பு பதவிப் பிரமாணம் இல்லாதது தலைமை வழக்கறிஞரின் தனித்துவமான தொழில்முறை நிலையைப் பிரதிபலிக்கிறது.",
+        "subtopic": "Oath & Status"
+    },
+    # 27
+    {
+        "stem_en": "Consider the following statements regarding the Attorney General and Supreme Court proceedings:\n1. The Attorney General is exempted from entering appearance through an Advocate-on-Record in the Supreme Court.\n2. The Attorney General can settle pleadings on behalf of the Union of India.\n3. The Attorney General has statutory pre-audience over the Solicitor General of India.\nWhich of the statements given above are correct?",
+        "stem_ta": "உச்ச நீதிமன்ற நடவடிக்கைகள் மற்றும் தலைமை வழக்கறிஞர் குறித்த பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. உச்ச நீதிமன்றத்தில் பதிவு வழக்கறிஞர் (AoR) மூலம் ஆஜராக வேண்டும் என்ற விதியிலிருந்து AG-க்கு விலக்கு உண்டு.\n2. இந்திய ஒன்றியத்தின் சார்பில் வாத ஆவணங்களை தலைமை வழக்கறிஞர் இறுதி செய்ய முடியும்.\n3. இந்திய சொலிசிட்டர் ஜெனரலை விட முதன்மை வாதாடும் சட்டப்பூர்வ உரிமை AG-க்கு உண்டு.\nமேற்கூறிய கூற்றுகளில் சரியானவை எவை?",
+        "options": [
+            ("1 and 2 only", "1 மற்றும் 2 மட்டுமே"),
+            ("2 and 3 only", "2 மற்றும் 3 மட்டுமே"),
+            ("1 and 3 only", "1 மற்றும் 3 மட்டுமே"),
+            ("1, 2 and 3", "1, 2 மற்றும் 3")
+        ],
+        "correct_idx": 3,
+        "exp_en": "All three statements are correct under Supreme Court Rules and Section 23 of the Advocates Act, 1961.",
+        "exp_ta": "மூன்று கூற்றுகளும் உச்ச நீதிமன்ற விதிகள் மற்றும் வழக்கறிஞர்கள் சட்டம் பிரிவு 23-ன் படி சரியானவை.",
+        "tip_en": "Order of pre-audience (Sec 23 Advocates Act): Attorney General > Solicitor General > Additional Solicitor General.",
+        "tip_ta": "முதன்மை வாதாடும் வரிசை: தலைமை வழக்கறிஞர் > சொலிசிட்டர் ஜெனரல் > கூடுதல் சொலிசிட்டர் ஜெனரல்.",
+        "fact_en": "Under Order IV of Supreme Court Rules, the Attorney General is exempt from requirements applicable to other advocates.",
+        "fact_ta": "உச்ச நீதிமன்ற விதிகளின் உத்தரவு IV-ன் கீழ், மற்ற வழக்கறிஞர்களுக்குப் பொருந்தும் சில விதிகளிலிருந்து AG-க்கு விலக்கு உண்டு.",
+        "subtopic": "Supreme Court Rules"
+    },
+    # 28
+    {
+        "stem_en": "Consider the following statements regarding K. Parasaran's contribution as Attorney General of India:\n1. He served as Attorney General of India under Prime Ministers Indira Gandhi and Rajiv Gandhi.\n2. He previously served as the Advocate General of Tamil Nadu.\n3. He appeared for the Union Government in the landmark Bhopal Gas Leak disaster litigation.\nWhich of the statements given above are correct?",
+        "stem_ta": "இந்திய தலைமை வழக்கறிஞராக கே. பராசரனின் பங்களிப்பு குறித்த பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இந்திரா காந்தி மற்றும் ராஜீவ் காந்தி பிரதமர்களாக இருந்தபோது இவர் தலைமை வழக்கறிஞராகப் பணியாற்றினார்.\n2. இதற்கு முன்பு இவர் தமிழ்நாட்டின் அட்வகேட் ஜெனரலாகப் பணியாற்றியுள்ளார்.\n3. வரலாற்று முக்கியத்துவம் வாய்ந்த போபால் விஷவாயுக் கசிவு வழக்கில் ஒன்றிய அரசுக்காக இவர் ஆஜரானார்.\nமேற்கூறிய கூற்றுகளில் சரியானவை எவை?",
+        "options": [
+            ("1 and 2 only", "1 மற்றும் 2 மட்டுமே"),
+            ("2 and 3 only", "2 மற்றும் 3 மட்டுமே"),
+            ("1 and 3 only", "1 மற்றும் 3 மட்டுமே"),
+            ("1, 2 and 3", "1, 2 மற்றும் 3")
+        ],
+        "correct_idx": 3,
+        "exp_en": "All three statements are correct. K. Parasaran served as Advocate General of Tamil Nadu (1976-77), AG of India (1983-89), and represented India in the Bhopal Gas disaster litigation.",
+        "exp_ta": "மூன்று கூற்றுகளும் சரியானவை. கே. பராசரன் தமிழக அட்வகேட் ஜெனரலாகவும் (1976-77), இந்திய தலைமை வழக்கறிஞராகவும் (1983-89) பணியாற்றினார்; போபால் விஷவாயு வழக்கிலும் ஆஜரானார்.",
+        "tip_en": "K. Parasaran: AG of Tamil Nadu (1976-77) and AG of India (1983-89); represented Union in Bhopal Gas disaster litigation.",
+        "tip_ta": "கே. பராசரன்: தமிழக அட்வகேட் ஜெனரல் (1976-77), இந்திய AG (1983-89); போபால் வழக்கில் ஒன்றிய அரசுக்காக ஆஜரானார்.",
+        "fact_en": "K. Parasaran was awarded the Padma Bhushan in 2003 and the Padma Vibhushan in 2011.",
+        "fact_ta": "கே. பராசரனுக்கு 2003-ல் பத்ம பூஷண் மற்றும் 2011-ல் பத்ம விபூஷண் விருதுகள் வழங்கப்பட்டன.",
+        "subtopic": "Historical Personalities"
+    },
+    # 29
+    {
+        "stem_en": "Consider the following statements regarding the Attorney General and Public Interest Litigation (PIL):\n1. The Supreme Court frequently appoints the Attorney General as amicus curiae in complex PIL cases.\n2. The Attorney General can file a PIL against the Union Government in his official capacity.\n3. The Attorney General assists the Court to ensure justice while articulating the constitutional stance of the Union.\nWhich of the statements given above are correct?",
+        "stem_ta": "பொது நல வழக்குகள் (PIL) மற்றும் தலைமை வழக்கறிஞர் குறித்த பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. சிக்கலான பொதுநல வழக்குகளில் நீதிமன்றத்திற்கு வழிகாட்ட தலைமை வழக்கறிஞரை உச்ச நீதிமன்றம் அடிக்கடி Amicus Curiae-ஆக நியமிக்கிறது.\n2. தனது அலுவல் முறை பதவியைப் பயன்படுத்தி மத்திய அரசுக்கு எதிராக தலைமை வழக்கறிஞரால் பொதுநல வழக்கு தொடர முடியும்.\n3. ஒன்றிய அரசின் அரசியலமைப்பு நிலைப்பாட்டை விளக்கும் அதே வேளையில், நீதி கிடைப்பதை உறுதி செய்ய நீதிமன்றத்திற்கு AG உதவுகிறார்.\nமேற்கூறிய கூற்றுகளில் சரியானவை எவை?",
+        "options": [
+            ("1 and 2 only", "1 மற்றும் 2 மட்டுமே"),
+            ("1 and 3 only", "1 மற்றும் 3 மட்டுமே"),
+            ("2 and 3 only", "2 மற்றும் 3 மட்டுமே"),
+            ("1, 2 and 3", "1, 2 மற்றும் 3")
+        ],
+        "correct_idx": 1,
+        "exp_en": "Statements 1 and 3 are correct. Statement 2 is incorrect because the AG represents the Union Government and cannot file a suit or petition against it.",
+        "exp_ta": "கூற்றுகள் 1 மற்றும் 3 சரியானவை. தலைமை வழக்கறிஞர் மத்திய அரசுக்கு எதிராக பொதுநல வழக்கையோ அல்லது எந்த வழக்கையோ தொடர முடியாது என்பதால் கூற்று 2 தவறு.",
+        "tip_en": "AG often acts as amicus curiae and officer of court, but CANNOT sue or file PIL against the Union Government.",
+        "tip_ta": "AG நீதிமன்ற நண்பராக (Amicus Curiae) உதவலாம், ஆனால் மத்திய அரசுக்கு எதிராக பொதுநல வழக்கு தொடர முடியாது.",
+        "fact_en": "The Attorney General owes a dual duty: to his client (the Union) and to the Court as a minister of justice.",
+        "fact_ta": "தலைமை வழக்கறிஞருக்கு இரட்டைப் பொறுப்பு உண்டு: தனது வாடிக்கையாளரான ஒன்றிய அரசு மற்றும் நீதிமன்றத்தின் நீதிக்கான கடமை.",
+        "subtopic": "Judicial Functions"
+    },
+    # 30
+    {
+        "stem_en": "Consider the following statements regarding the Attorney General and the National Judicial Appointments Commission (NJAC) case (2015):\n1. Mukul Rohatgi was the Attorney General who defended the 99th Constitutional Amendment.\n2. The Attorney General argued that the collegium system lacked constitutional backing and accountability.\n3. The Supreme Court accepted the Attorney General's defense and upheld the NJAC Act by a 4:1 majority.\nWhich of the statements given above are correct?",
+        "stem_ta": "தேசிய நீதிபதிகள் நியமன ஆணையம் (NJAC) வழக்கு (2015) மற்றும் தலைமை வழக்கறிஞர் குறித்த பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. 99-வது அரசியலமைப்புத் திருத்தத்தை ஆதரித்து வாதாடிய தலைமை வழக்கறிஞர் முகுல் ரோஹத்கி ஆவார்.\n2. கொலீஜியம் முறை அரசியலமைப்பு ஆதரவோ பொறுப்புடைமையோ இல்லாதது என்று தலைமை வழக்கறிஞர் வாதிட்டார்.\n3. உச்ச நீதிமன்றம் தலைமை வழக்கறிஞரின் வாதத்தை ஏற்றுக்கொண்டு 4:1 பெரும்பான்மையில் NJAC சட்டத்தை உறுதி செய்தது.\nமேற்கூறிய கூற்றுகளில் சரியானவை எவை?",
+        "options": [
+            ("1 and 2 only", "1 மற்றும் 2 மட்டுமே"),
+            ("2 and 3 only", "2 மற்றும் 3 மட்டுமே"),
+            ("1 and 3 only", "1 மற்றும் 3 மட்டுமே"),
+            ("1, 2 and 3", "1, 2 மற்றும் 3")
+        ],
+        "correct_idx": 0,
+        "exp_en": "Statements 1 and 2 are correct. Statement 3 is incorrect because the Supreme Court rejected the defense and struck down the 99th Amendment and NJAC Act by a 4:1 majority.",
+        "exp_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. உச்ச நீதிமன்றம் 4:1 பெரும்பான்மையில் NJAC சட்டத்தை ரத்து செய்து கொலீஜியம் முறையை மீண்டும் உறுதி செய்ததால் கூற்று 3 தவறு.",
+        "tip_en": "In NJAC case (2015), AG Mukul Rohatgi defended the 99th Amendment, but the 5-judge bench struck it down 4:1.",
+        "tip_ta": "NJAC வழக்கில் (2015), AG முகுல் ரோஹத்கி 99-வது திருத்தத்தை ஆதரித்தார், ஆனால் 5 நீதிபதிகள் அமர்வு அதை 4:1 என ரத்து செய்தது.",
+        "fact_en": "Justice J.S. Khehar authored the lead majority opinion striking down the NJAC Act.",
+        "fact_ta": "NJAC சட்டத்தை ரத்து செய்த முதன்மை பெரும்பான்மை தீர்ப்பை நீதிபதி ஜே.எஸ். கேஹர் எழுதினார்.",
+        "subtopic": "Landmark Cases"
+    },
+    # 31
+    {
+        "stem_en": "Consider the following statements regarding the Attorney General and the 1st Law Commission of India:\n1. The First Law Commission of independent India was constituted in 1955.\n2. M.C. Setalvad served concurrently as Attorney General and Chairman of the Commission.\n3. The Commission recommended creating a separate office of Director of Public Prosecutions.\nWhich of the statements given above are correct?",
+        "stem_ta": "முதலாவது சட்ட ஆணையம் மற்றும் தலைமை வழக்கறிஞர் குறித்த பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. சுதந்திர இந்தியாவின் முதலாவது சட்ட ஆணையம் 1955-ல் அமைக்கப்பட்டது.\n2. எம்.சி. செடல்வாட் ஒரே நேரத்தில் தலைமை வழக்கறிஞராகவும் சட்ட ஆணையத்தின் தலைவராகவும் பணியாற்றினார்.\n3. அரசு வழக்கறிஞர்களுக்கான தனி இயக்குநர் (DPP) அலுவலகத்தை உருவாக்க இந்த ஆணையம் பரிந்துரைத்தது.\nமேற்கூறிய கூற்றுகளைக் கவனியுங்கள்; சரியானவை எவை?",
+        "options": [
+            ("1 and 2 only", "1 மற்றும் 2 மட்டுமே"),
+            ("2 and 3 only", "2 மற்றும் 3 மட்டுமே"),
+            ("1 and 3 only", "1 மற்றும் 3 மட்டுமே"),
+            ("1, 2 and 3", "1, 2 மற்றும் 3")
+        ],
+        "correct_idx": 3,
+        "exp_en": "All three statements are correct. The 1st Law Commission under AG M.C. Setalvad submitted landmark reports including the 14th Report recommending prosecutorial independence.",
+        "exp_ta": "மூன்று கூற்றுகளும் சரியானவை. தலைமை வழக்கறிஞர் எம்.சி. செடல்வாட் தலைமையிலான முதலாவது சட்ட ஆணையம் நீதித்துறை மற்றும் வழக்கறிஞர் துறை சீர்திருத்தங்களை விரிவாகப் பரிந்துரைத்தது.",
+        "tip_en": "1st Law Commission (1955) was chaired by 1st AG M.C. Setalvad; submitted the famous 14th Report on Judicial Administration.",
+        "tip_ta": "1-வது சட்ட ஆணையத்திற்கு (1955) முதல் AG எம்.சி. செடல்வாட் தலைமை தாங்கினார்; நீதித்துறை நிர்வாகம் குறித்த புகழ்பெற்ற 14-வது அறிக்கையை சமர்ப்பித்தார்.",
+        "fact_en": "The 14th Law Commission Report is considered a foundational document of modern Indian judicial administration.",
+        "fact_ta": "14-வது சட்ட ஆணைய அறிக்கை நவீன இந்திய நீதித்துறை நிர்வாகத்தின் அடிப்படை ஆவணமாகக் கருதப்படுகிறது.",
+        "subtopic": "Law Commission"
+    },
+    # 32
+    {
+        "stem_en": "Consider the following statements regarding the Article 370 verdict (2023) and Law Officers:\n1. Attorney General R. Venkataramani defended the constitutional orders abrogating Article 370.\n2. Solicitor General Tushar Mehta appeared alongside the Attorney General for the Union Government.\n3. A 5-judge Constitution Bench unanimously upheld the abrogation of Article 370 in December 2023.\nWhich of the statements given above are correct?",
+        "stem_ta": "சரத்து 370 தீர்ப்பு (2023) மற்றும் சட்ட அதிகாரிகள் குறித்த பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. சரத்து 370-ஐ ரத்து செய்த அரசியலமைப்பு உத்தரவுகளை ஆதரித்து தலைமை வழக்கறிஞர் ஆர். வெங்கடரமணி வாதிட்டார்.\n2. ஒன்றிய அரசின் சார்பில் தலைமை வழக்கறிஞருடன் இணைந்து சொலிசிட்டர் ஜெனரல் துஷார் மேத்தாவும் ஆஜரானார்.\n3. டிசம்பர் 2023-ல் 5 நீதிபதிகள் கொண்ட அரசியலமைப்பு அமர்வு சரத்து 370 ரத்தை ஒருமனதாக உறுதி செய்தது.\nமேற்கூறிய கூற்றுகளில் சரியானவை எவை?",
+        "options": [
+            ("1 and 2 only", "1 மற்றும் 2 மட்டுமே"),
+            ("2 and 3 only", "2 மற்றும் 3 மட்டுமே"),
+            ("1 and 3 only", "1 மற்றும் 3 மட்டுமே"),
+            ("1, 2 and 3", "1, 2 மற்றும் 3")
+        ],
+        "correct_idx": 3,
+        "exp_en": "All three statements are correct. AG R. Venkataramani and SG Tushar Mehta defended the Union, and the Constitution Bench unanimously upheld the abrogation on December 11, 2023.",
+        "exp_ta": "மூன்று கூற்றுகளும் சரியானவை. AG ஆர். வெங்கடரமணி மற்றும் SG துஷார் மேத்தா வாதிட்டனர்; டிசம்பர் 11, 2023 அன்று உச்ச நீதிமன்றம் சரத்து 370 ரத்தை ஒருமனதாக உறுதி செய்தது.",
+        "tip_en": "On Dec 11, 2023, SC unanimously upheld the abrogation of Art 370 argued by AG Venkataramani & SG Mehta.",
+        "tip_ta": "டிசம்பர் 11, 2023 அன்று AG வெங்கடரமணி மற்றும் SG மேத்தா வாதிட்ட சரத்து 370 ரத்து வழக்கில் உச்ச நீதிமன்றம் ஒருமனதாக தீர்ப்பளித்தது.",
+        "fact_en": "CJI D.Y. Chandrachud led the 5-judge bench in the Article 370 judgment.",
+        "fact_ta": "தலைமை நீதிபதி டி.ஒய். சந்திரசூட் சரத்து 370 வழக்கின் 5 நீதிபதிகள் அமர்வுக்குத் தலைமை தாங்கினார்.",
+        "subtopic": "Current Affairs"
+    },
+    # 33
+    {
+        "stem_en": "Consider the following statements regarding the Attorney General and international tribunals:\n1. The Attorney General can represent the Republic of India before the International Court of Justice.\n2. M.C. Setalvad represented India before the ICJ in the Right of Passage case (1960).\n3. The Attorney General requires formal authorization and accreditation from the Government of India to appear before the ICJ.\nWhich of the statements given above are correct?",
+        "stem_ta": "சர்வதேச தீர்ப்பாயங்கள் மற்றும் இந்திய தலைமை வழக்கறிஞர் குறித்த பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. சர்வதேச நீதிமன்றத்தில் (ICJ) இந்தியக் குடியரசை தலைமை வழக்கறிஞர் பிரதிநிதித்துவப்படுத்த முடியும்.\n2. 1960-ல் போர்ச்சுகலுக்கு எதிரான பாதை உரிமை வழக்கில் ICJ-ல் இந்தியாவுக்காக எம்.சி. செடல்வாட் ஆஜரானார்.\n3. சர்வதேச நீதிமன்றத்தில் ஆஜராக இந்திய அரசிடமிருந்து முறையான அங்கீகாரம் மற்றும் நியமனம் தலைமை வழக்கறிஞருக்குத் தேவை.\nமேற்கூறிய கூற்றுகளில் சரியானவை எவை?",
+        "options": [
+            ("1 and 2 only", "1 மற்றும் 2 மட்டுமே"),
+            ("2 and 3 only", "2 மற்றும் 3 மட்டுமே"),
+            ("1 and 3 only", "1 மற்றும் 3 மட்டுமே"),
+            ("1, 2 and 3", "1, 2 மற்றும் 3")
+        ],
+        "correct_idx": 3,
+        "exp_en": "All three statements are correct. AG M.C. Setalvad argued the Right of Passage over Indian Territory case (1960) before the ICJ after formal executive authorization.",
+        "exp_ta": "மூன்று கூற்றுகளும் சரியானவை. அரசின் முறையான அங்கீகாரத்துடன் 1960-ல் சர்வதேச நீதிமன்றத்தில் பாதை உரிமை வழக்கில் எம்.சி. செடல்வாட் ஆஜரானார்.",
+        "tip_en": "AG Setalvad appeared before ICJ in Right of Passage Case (1960). AG represents India internationally when authorized.",
+        "tip_ta": "1960 பாதை உரிமை வழக்கில் AG செடல்வாட் ICJ-ல் ஆஜரானார். அரசின் அனுமதியுடன் சர்வதேச அளவில் AG இந்தியாவை பிரதிநிதித்துவப்படுத்துகிறார்.",
+        "fact_en": "The Right of Passage case was between Portugal and India concerning access to Dadra and Nagar Haveli.",
+        "fact_ta": "பாதை உரிமை வழக்கு தத்ரா மற்றும் நகர் ஹவேலி பகுதிக்கான அணுகல் தொடர்பாக போர்ச்சுகலுக்கும் இந்தியாவுக்கும் இடையில் நடைபெற்றது.",
+        "subtopic": "International Law"
+    },
+    # 34
+    {
+        "stem_en": "Consider the following statements regarding the Attorney General and criminal prosecution in India:\n1. The Attorney General does not possess a common-law power to unilaterally enter a nolle prosequi (quash prosecution).\n2. Withdrawal from criminal prosecution in India is governed by Section 321 of the Code of Criminal Procedure, 1973.\n3. Withdrawal of prosecution requires the consent of the competent trial court.\nWhich of the statements given above are correct?",
+        "stem_ta": "இந்தியாவில் குற்றவியல் வழக்கு விசாரணை மற்றும் தலைமை வழக்கறிஞர் குறித்த பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. குற்றவியல் வழக்குகளை தன்னிச்சையாக ரத்து செய்யும் (nolle prosequi) அதிகாரம் இந்திய தலைமை வழக்கறிஞருக்குக் கிடையாது.\n2. இந்தியாவில் குற்றவியல் வழக்குகளைத் திரும்பப் பெறுவது 1973 குற்றவியல் நடைமுறைச் சட்டத்தின் பிரிவு 321-ஆல் நிர்வகிக்கப்படுகிறது.\n3. வழக்குகளைத் திரும்பப் பெறுவதற்கு உரிய விசாரணை நீதிமன்றத்தின் ஒப்புதல் அவசியமாகும்.\nமேற்கூறிய கூற்றுகளில் சரியானவை எவை?",
+        "options": [
+            ("1 and 2 only", "1 மற்றும் 2 மட்டுமே"),
+            ("2 and 3 only", "2 மற்றும் 3 மட்டுமே"),
+            ("1 and 3 only", "1 மற்றும் 3 மட்டுமே"),
+            ("1, 2 and 3", "1, 2 மற்றும் 3")
+        ],
+        "correct_idx": 3,
+        "exp_en": "All three statements are correct. Unlike England, the Indian AG has no common-law prerogative of nolle prosequi; Sec 321 CrPC empowers the Public Prosecutor to withdraw with court consent.",
+        "exp_ta": "மூன்று கூற்றுகளும் சரியானவை. இங்கிலாந்தைப் போலன்றி இந்திய AG-க்கு வழக்கை ரத்து செய்யும் தன்னிச்சை அதிகாரம் இல்லை; பிரிவு 321-ன் படி நீதிமன்ற அனுமதியுடன் அரசு வழக்கறிஞரே வழக்கை திரும்பப் பெற முடியும்.",
+        "tip_en": "Unlike in England, the Indian AG cannot unilaterally stay or terminate criminal prosecutions via nolle prosequi.",
+        "tip_ta": "இங்கிலாந்தைப் போலன்றி, இந்திய AG தன்னிச்சையாக குற்றவியல் வழக்குகளை nolle prosequi மூலம் ரத்து செய்ய முடியாது.",
+        "fact_en": "Section 321 of CrPC 1973 requires the Public Prosecutor to apply their independent mind before seeking withdrawal.",
+        "fact_ta": "குற்றவியல் நடைமுறைச் சட்டம் பிரிவு 321 அரசு வழக்கறிஞர் தனது சொந்த முடிவின் அடிப்படையில் நீதிமன்ற ஒப்புதலுடன் வழக்கை திரும்பப் பெற வழிசெய்கிறது.",
+        "subtopic": "Criminal Jurisprudence"
+    },
+    # 35
+    {
+        "stem_en": "Consider the following statements regarding the Attorney General and Presidential Election petitions:\n1. Under Article 71, all doubts and disputes arising out of the election of a President are decided by the Supreme Court.\n2. The Supreme Court issues notice to the Attorney General to assist the Court in such inquiries.\n3. The decision of the Supreme Court on Presidential election petitions is final.\nWhich of the statements given above are correct?",
+        "stem_ta": "குடியரசுத் தலைவர் தேர்தல் மனுக்கள் மற்றும் தலைமை வழக்கறிஞர் குறித்த பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. சரத்து 71-ன் கீழ் குடியரசுத் தலைவர் தேர்தல் தொடர்பான அனைத்து சந்தேகங்கள் மற்றும் தகராறுகளை உச்ச நீதிமன்றம் மட்டுமே தீர்மானிக்கிறது.\n2. இத்தகைய விசாரணைகளில் நீதிமன்றத்திற்கு உதவ தலைமை வழக்கறிஞருக்கு உச்ச நீதிமன்றம் நோட்டீஸ் அனுப்புகிறது.\n3. குடியரசுத் தலைவர் தேர்தல் தகராறுகளில் உச்ச நீதிமன்றத்தின் தீர்ப்பே இறுதியானது.\nமேற்கூறிய கூற்றுகளில் சரியானவை எவை?",
+        "options": [
+            ("1 and 2 only", "1 மற்றும் 2 மட்டுமே"),
+            ("2 and 3 only", "2 மற்றும் 3 மட்டுமே"),
+            ("1 and 3 only", "1 மற்றும் 3 மட்டுமே"),
+            ("1, 2 and 3", "1, 2 மற்றும் 3")
+        ],
+        "correct_idx": 3,
+        "exp_en": "All three statements are correct under Article 71 and Supreme Court Rules.",
+        "exp_ta": "மூன்று கூற்றுகளும் சரத்து 71 மற்றும் உச்ச நீதிமன்ற விதிகளின்படி சரியானவை.",
+        "tip_en": "Article 71: Supreme Court has exclusive jurisdiction over Presidential/VP election disputes; AG assists the court.",
+        "tip_ta": "சரத்து 71: குடியரசுத் தலைவர்/துணைக் குடியரசுத் தலைவர் தேர்தல் தகராறுகளில் உச்ச நீதிமன்றத்திற்கே முழு அதிகாரம்; AG நீதிமன்றத்திற்கு உதவுகிறார்.",
+        "fact_en": "Article 71(1) gives the Supreme Court original and exclusive jurisdiction in Presidential election disputes.",
+        "fact_ta": "சரத்து 71(1) குடியரசுத் தலைவர் தேர்தல் தகராறுகளில் உச்ச நீதிமன்றத்திற்கு அசல் மற்றும் பிரத்யேக அதிகார வரம்பை அளிக்கிறது.",
+        "subtopic": "Election Disputes"
+    },
+    # 36
+    {
+        "stem_en": "Consider the following statements regarding the transfer of cases under Article 139A:\n1. Article 139A empowers the Supreme Court to withdraw cases involving substantially the same question of law from High Courts.\n2. The Supreme Court may exercise this power on an application made by the Attorney General of India.\n3. Article 139A was originally part of the Constitution in 1950.\nWhich of the statements given above are correct?",
+        "stem_ta": "சரத்து 139A-ன் கீழ் வழக்குகளை மாற்றுதல் குறித்த பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. ஒரே மாதிரியான சட்ட வினாக்கள் அடங்கிய வழக்குகளை உயர் நீதிமன்றங்களிலிருந்து உச்ச நீதிமன்றத்திற்கு மாற்ற சரத்து 139A வழிசெய்கிறது.\n2. இந்திய தலைமை வழக்கறிஞரின் விண்ணப்பத்தின் பேரில் உச்ச நீதிமன்றம் இந்த அதிகாரத்தைப் பயன்படுத்தலாம்.\n3. சரத்து 139A ஆரம்பத்திலிருந்தே 1950 அரசியலமைப்பின் ஒரு பகுதியாக இருந்தது.\nமேற்கூறிய கூற்றுகளில் சரியானவை எவை?",
+        "options": [
+            ("1 and 2 only", "1 மற்றும் 2 மட்டுமே"),
+            ("2 and 3 only", "2 மற்றும் 3 மட்டுமே"),
+            ("1 and 3 only", "1 மற்றும் 3 மட்டுமே"),
+            ("1, 2 and 3", "1, 2 மற்றும் 3")
+        ],
+        "correct_idx": 0,
+        "exp_en": "Statements 1 and 2 are correct. Statement 3 is incorrect because Article 139A was inserted by the 42nd Constitutional Amendment Act, 1976.",
+        "exp_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. சரத்து 139A என்பது 1976-ல் 42-வது அரசியலமைப்பு திருத்தச் சட்டத்தால் சேர்க்கப்பட்டது என்பதால் கூற்று 3 தவறு.",
+        "tip_en": "Article 139A was inserted by 42nd Amendment 1976. Supreme Court can transfer cases on application of the Attorney General.",
+        "tip_ta": "சரத்து 139A, 42-வது திருத்தம் 1976 மூலம் சேர்க்கப்பட்டது. AG விண்ணப்பத்தின் பேரில் உச்ச நீதிமன்றம் வழக்குகளை மாற்றலாம்.",
+        "fact_en": "Article 139A avoids conflicting judgments by multiple High Courts on identical constitutional questions.",
+        "fact_ta": "சரத்து 139A ஒரே சட்டப் பிரச்சனையில் வெவ்வேறு உயர் நீதிமன்றங்கள் முரண்பட்ட தீர்ப்புகள் வழங்குவதைத் தவிர்க்கிறது.",
+        "subtopic": "Article 139A"
+    },
+    # 37
+    {
+        "stem_en": "Consider the following statements regarding the Electoral Bonds case (2024):\n1. Attorney General R. Venkataramani defended the Electoral Bonds Scheme on behalf of the Union Government.\n2. The Attorney General submitted that citizens do not possess an unqualified right to know donor identities.\n3. The Supreme Court unanimously struck down the Electoral Bonds Scheme under Article 19(1)(a).\nWhich of the statements given above are correct?",
+        "stem_ta": "தேர்தல் பத்திரங்கள் வழக்கு (2024) குறித்த பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. மத்திய அரசின் சார்பில் தேர்தல் பத்திரத் திட்டத்தை ஆதரித்து தலைமை வழக்கறிஞர் ஆர். வெங்கடரமணி வாதிட்டார்.\n2. நன்கொடையாளர்களின் விபரங்களை அறிய குடிமக்களுக்கு வரம்பற்ற உரிமை இல்லை என்று தலைமை வழக்கறிஞர் வாதிட்டார்.\n3. சரத்து 19(1)(a)-ன் கீழ் தேர்தல் பத்திரத் திட்டத்தை உச்ச நீதிமன்றம் ஒருமனதாக ரத்து செய்தது.\nமேற்கூறிய கூற்றுகளில் சரியானவை எவை?",
+        "options": [
+            ("1 and 2 only", "1 மற்றும் 2 மட்டுமே"),
+            ("2 and 3 only", "2 மற்றும் 3 மட்டுமே"),
+            ("1 and 3 only", "1 மற்றும் 3 மட்டுமே"),
+            ("1, 2 and 3", "1, 2 மற்றும் 3")
+        ],
+        "correct_idx": 3,
+        "exp_en": "All three statements are correct. In ADR v. Union of India (Feb 2024), AG Venkataramani defended the scheme, but a 5-judge Constitution Bench struck it down unanimously under Art 19(1)(a).",
+        "exp_ta": "மூன்று கூற்றுகளும் சரியானவை. பிப்ரவரி 2024-ல் தேர்தல் பத்திரங்கள் வழக்கில் AG வாதிட்டார்; ஆனால் உச்ச நீதிமன்றம் சரத்து 19(1)(a)-ன் கீழ் இத்திட்டத்தை ஒருமனதாக ரத்து செய்தது.",
+        "tip_en": "In Electoral Bonds case (2024), SC struck down the scheme under Article 19(1)(a) rejecting the Union's defense.",
+        "tip_ta": "2024 தேர்தல் பத்திரங்கள் வழக்கில் ஒன்றிய அரசின் வாதத்தை நிராகரித்து சரத்து 19(1)(a)-ன் கீழ் உச்ச நீதிமன்றம் திட்டத்தை ரத்து செய்தது.",
+        "fact_en": "The judgment was delivered by a Constitution Bench headed by CJI D.Y. Chandrachud.",
+        "fact_ta": "தலைமை நீதிபதி டி.ஒய். சந்திரசூட் தலைமையிலான அரசியலமைப்பு அமர்வு இத்தீர்ப்பை வழங்கியது.",
+        "subtopic": "Current Affairs"
+    },
+    # 38
+    {
+        "stem_en": "Consider the following statements regarding the Aadhaar Act case (K.S. Puttaswamy, 2018):\n1. Attorney General K.K. Venugopal defended the constitutional validity of the Aadhaar Act.\n2. The Attorney General argued that the legislation properly qualified as a Money Bill under Article 110.\n3. The Supreme Court in a 4:1 majority verdict upheld the constitutional validity of the Aadhaar project.\nWhich of the statements given above are correct?",
+        "stem_ta": "ஆதார் சட்ட வழக்கு (கே.எஸ். புட்டசாமி, 2018) குறித்த பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. ஆதார் சட்டத்தின் அரசியலமைப்பு செல்லுபடியாகும் தன்மையை ஆதரித்து தலைமை வழக்கறிஞர் கே.கே. வேணுகோபால் வாதிட்டார்.\n2. இச்சட்டம் சரத்து 110-ன் கீழ் முறைப்படி பண மசோதாவாக நிறைவேற்றப்பட்டது என தலைமை வழக்கறிஞர் வாதிட்டார்.\n3. உச்ச நீதிமன்றம் 4:1 பெரும்பான்மை தீர்ப்பில் ஆதார் திட்டத்தின் செல்லுபடியாகும் தன்மையை உறுதி செய்தது.\nமேற்கூறிய கூற்றுகளில் சரியானவை எவை?",
+        "options": [
+            ("1 and 2 only", "1 மற்றும் 2 மட்டுமே"),
+            ("2 and 3 only", "2 மற்றும் 3 மட்டுமே"),
+            ("1 and 3 only", "1 மற்றும் 3 மட்டுமே"),
+            ("1, 2 and 3", "1, 2 மற்றும் 3")
+        ],
+        "correct_idx": 3,
+        "exp_en": "All three statements are correct. AG K.K. Venugopal successfully defended the Aadhaar Act before a 5-judge Constitution Bench in September 2018.",
+        "exp_ta": "மூன்று கூற்றுகளும் சரியானவை. தலைமை வழக்கறிஞர் கே.கே. வேணுகோபால் ஆதார் சட்டத்தை ஆதரித்து வாதிட்டார்; செப்டம்பர் 2018-ல் 4:1 என உச்ச நீதிமன்றம் அதை உறுதி செய்தது.",
+        "tip_en": "In Puttaswamy (Aadhaar, 2018), AG K.K. Venugopal defended the Act; SC upheld it 4:1 with Justice Chandrachud dissenting.",
+        "tip_ta": "ஆதார் வழக்கில் (2018) AG கே.கே. வேணுகோபால் வாதாடினார்; நீதிபதி சந்திரசூட் மாறுபட, 4:1 பெரும்பான்மையில் சட்டம் உறுதி செய்யப்பட்டது.",
+        "fact_en": "The majority struck down Section 57 of the Aadhaar Act which permitted private corporate entities to use Aadhaar.",
+        "fact_ta": "தனியார் நிறுவனங்கள் ஆதாரைப் பயன்படுத்த அனுமதித்த பிரிவு 57-ஐ உச்ச நீதிமன்றம் ரத்து செய்தது.",
+        "subtopic": "Landmark Cases"
+    },
+    # 39
+    {
+        "stem_en": "Consider the following statements regarding the Attorney General and Legislative Bills:\n1. The Attorney General can speak in either House of Parliament on any pending Bill.\n2. The Attorney General can introduce a Government Bill in the Lok Sabha.\n3. The Attorney General cannot vote on any Bill under Article 88.\nWhich of the statements given above are correct?",
+        "stem_ta": "சட்டமன்ற மசோதாக்கள் மற்றும் தலைமை வழக்கறிஞர் குறித்த பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. நிலுவையில் உள்ள எந்தவொரு மசோதா குறித்தும் நாடாளுமன்றத்தின் இரு அவைகளிலும் பேச AG-க்கு உரிமை உண்டு.\n2. மக்களவையில் அரசு மசோதா ஒன்றை தலைமை வழக்கறிஞரால் அறிமுகப்படுத்த முடியும்.\n3. சரத்து 88-ன் கீழ் எந்தவொரு மசோதாவின் மீதும் தலைமை வழக்கறிஞர் வாக்களிக்க முடியாது.\nமேற்கூறிய கூற்றுகளில் சரியானவை எவை?",
+        "options": [
+            ("1 and 2 only", "1 மற்றும் 2 மட்டுமே"),
+            ("1 and 3 only", "1 மற்றும் 3 மட்டுமே"),
+            ("2 and 3 only", "2 மற்றும் 3 மட்டுமே"),
+            ("1, 2 and 3", "1, 2 மற்றும் 3")
+        ],
+        "correct_idx": 1,
+        "exp_en": "Statements 1 and 3 are correct. Statement 2 is incorrect because only Members of Parliament (Ministers or private MPs) can introduce bills; the AG is not an MP and cannot introduce bills.",
+        "exp_ta": "கூற்றுகள் 1 மற்றும் 3 சரியானவை. நாடாளுமன்ற உறுப்பினர்கள் மட்டுமே மசோதாக்களை அறிமுகப்படுத்த முடியும்; AG உறுப்பினர் அல்லாததால் அவரால் மசோதாவை அறிமுகப்படுத்த முடியாது என்பதால் கூற்று 2 தவறு.",
+        "tip_en": "AG can speak on bills in Parliament (Art 88), but CANNOT introduce bills and CANNOT vote.",
+        "tip_ta": "AG மசோதாக்கள் குறித்து நாடாளுமன்றத்தில் பேசலாம் (சரத்து 88), ஆனால் மசோதாக்களை அறிமுகப்படுத்தவோ வாக்களிக்கவோ முடியாது.",
+        "fact_en": "Only a Member of Parliament can introduce a Bill under the Rules of Procedure of Lok Sabha/Rajya Sabha.",
+        "fact_ta": "நாடாளுமன்ற விதிகளின்படி நாடாளுமன்ற உறுப்பினர் மட்டுமே மசோதாவை அறிமுகப்படுத்த முடியும்.",
+        "subtopic": "Legislative Role"
+    },
+    # 40
+    {
+        "stem_en": "Consider the following statements regarding the Attorney General and Inter-State Water Disputes:\n1. Under Article 262, Parliament may by law provide for the adjudication of inter-State river water disputes.\n2. The Attorney General can appear for the Union Government before an Inter-State Water Disputes Tribunal.\n3. The Attorney General can represent one disputing State against another before the Tribunal.\nWhich of the statements given above are correct?",
+        "stem_ta": "மாநிலங்களுக்கு இடையேயான நதிநீர் தகராறுகள் மற்றும் தலைமை வழக்கறிஞர் குறித்த பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. சரத்து 262-ன் கீழ் நதிநீர் தகராறுகளைத் தீர்ப்பதற்கான சட்டங்களை நாடாளுமன்றம் இயற்றலாம்.\n2. நதிநீர் தகராறு தீர்ப்பாயத்தின் முன் மத்திய அரசின் சார்பில் தலைமை வழக்கறிஞர் ஆஜராகலாம்.\n3. தீர்ப்பாயத்தின் முன் ஒரு மாநிலத்தின் சார்பில் மற்றொரு மாநிலத்திற்கு எதிராக தலைமை வழக்கறிஞர் ஆஜராக முடியும்.\nமேற்கூறிய கூற்றுகளில் சரியானவை எவை?",
+        "options": [
+            ("1 and 2 only", "1 மற்றும் 2 மட்டுமே"),
+            ("2 and 3 only", "2 மற்றும் 3 மட்டுமே"),
+            ("1 and 3 only", "1 மற்றும் 3 மட்டுமே"),
+            ("1, 2 and 3", "1, 2 மற்றும் 3")
+        ],
+        "correct_idx": 0,
+        "exp_en": "Statements 1 and 2 are correct. Statement 3 is incorrect because the AG cannot take sides between States in federal water disputes.",
+        "exp_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. மாநிலங்களுக்கு இடையேயான தகராறில் ஒரு மாநிலத்தின் பக்கம் நின்று மற்றொரு மாநிலத்திற்கு எதிராக AG ஆஜராக முடியாது என்பதால் கூற்று 3 தவறு.",
+        "tip_en": "AG can represent Union before Water Tribunals, but cannot represent one state against another.",
+        "tip_ta": "நதிநீர் தீர்ப்பாயத்தில் மத்திய அரசுக்காக AG ஆஜராகலாம், ஆனால் ஒரு மாநிலத்திற்காக மற்றொரு மாநிலத்திற்கு எதிராக ஆஜராக முடியாது.",
+        "fact_en": "Under the Inter-State River Water Disputes Act 1956, States are represented by their respective Advocates General and Senior Advocates.",
+        "fact_ta": "1956 நதிநீர் தகராறுகள் சட்டத்தின் கீழ் மாநிலங்கள் தத்தமது அட்வகேட் ஜெனரல்களால் பிரதிநிதித்துவப்படுத்தப்படுகின்றன.",
+        "subtopic": "Inter-State Disputes"
+    },
+    # 41
+    {
+        "stem_en": "Consider the following statements regarding the Attorney General and Union Territory disputes:\n1. The Attorney General represents the Union of India in disputes regarding the powers of the Government of NCT of Delhi.\n2. The Attorney General represents the Government of NCT of Delhi against the Union in Supreme Court.\n3. In GNCTD v. Union of India (2023), the Attorney General and Solicitor General defended the authority of the Lieutenant Governor.\nWhich of the statements given above are correct?",
+        "stem_ta": "யூனியன் பிரதேச விவகாரங்கள் மற்றும் தலைமை வழக்கறிஞர் குறித்த பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. தில்லி தேசிய தலைநகர் பிரதேச அதிகாரங்கள் தொடர்பான வழக்குகளில் இந்திய ஒன்றியத்தை AG பிரதிநிதித்துவப்படுத்துகிறார்.\n2. உச்ச நீதிமன்றத்தில் மத்திய அரசுக்கு எதிராக தில்லி அரசின் சார்பில் தலைமை வழக்கறிஞர் ஆஜராகிறார்.\n3. தில்லி அரசு எதிர் மத்திய அரசு வழக்கில் (2023), துணைநிலை ஆளுநரின் அதிகாரங்களை ஆதரித்து AG மற்றும் SG வாதிட்டனர்.\nமேற்கூறிய கூற்றுகளில் சரியானவை எவை?",
+        "options": [
+            ("1 and 2 only", "1 மற்றும் 2 மட்டுமே"),
+            ("1 and 3 only", "1 மற்றும் 3 மட்டுமே"),
+            ("2 and 3 only", "2 மற்றும் 3 மட்டுமே"),
+            ("1, 2 and 3", "1, 2 மற்றும் 3")
+        ],
+        "correct_idx": 1,
+        "exp_en": "Statements 1 and 3 are correct. Statement 2 is incorrect because the AG always represents the Union of India, never Delhi against the Union.",
+        "exp_ta": "கூற்றுகள் 1 மற்றும் 3 சரியானவை. தலைமை வழக்கறிஞர் எப்போதும் இந்திய ஒன்றியத்திற்கே வாதாடுவார்; மத்திய அரசுக்கு எதிராக தில்லி அரசுக்காக ஆஜராக மாட்டார் என்பதால் கூற்று 2 தவறு.",
+        "tip_en": "AG represents the Union of India in Centre vs Delhi disputes; Delhi engages its own senior counsel.",
+        "tip_ta": "மத்திய அரசு vs தில்லி வழக்குகளில் AG இந்திய ஒன்றியத்திற்கே ஆஜராவார்; தில்லி அரசு தனி வழக்கறிஞர்களை அமர்த்துகிறது.",
+        "fact_en": "In May 2023, a 5-judge bench held that Delhi Government has legislative and executive power over services (Entry 41).",
+        "fact_ta": "மே 2023-ல் தில்லி அரசுக்கு குடிமைப் பணிகள் (Services) மீது அதிகாரம் உண்டு என 5 நீதிபதிகள் அமர்வு தீர்ப்பளித்தது.",
+        "subtopic": "Union Territories"
+    },
+    # 42
+    {
+        "stem_en": "Consider the following statements regarding the Law Officers (Conditions of Service) Rules, 1987:\n1. These rules govern the terms of appointment and restrictions applicable to the Attorney General, Solicitor General, and Additional Solicitors General.\n2. Under these rules, law officers are barred from giving advice to any party in a matter where they are likely to be consulted by the Government.\n3. These rules were enacted as a statute by the Parliament under Article 76(5).\nWhich of the statements given above are correct?",
+        "stem_ta": "1987 சட்ட அதிகாரிகள் (பணி நிபந்தனைகள்) விதிகள் குறித்த பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இவ்விதிகள் தலைமை வழக்கறிஞர், சொலிசிட்டர் ஜெனரல் மற்றும் கூடுதல் சொலிசிட்டர் ஜெனரல்களின் பணி மற்றும் கட்டுப்பாடுகளை நிர்வகிக்கின்றன.\n2. அரசாங்கத்தால் தன்னிடம் ஆலோசனை கேட்கப்பட வாய்ப்புள்ள எந்தவொரு வழக்கிலும் பிற தரப்பினருக்கு ஆலோசனை வழங்குவதை இவ்விதிகள் தடை செய்கின்றன.\n3. இவ்விதிகள் சரத்து 76(5)-ன் கீழ் நாடாளுமன்றத்தால் ஒரு சட்டமாக இயற்றப்பட்டன.\nமேற்கூறிய கூற்றுகளில் சரியானவை எவை?",
+        "options": [
+            ("1 and 2 only", "1 மற்றும் 2 மட்டுமே"),
+            ("2 and 3 only", "2 மற்றும் 3 மட்டுமே"),
+            ("1 and 3 only", "1 மற்றும் 3 மட்டுமே"),
+            ("1, 2 and 3", "1, 2 மற்றும் 3")
+        ],
+        "correct_idx": 0,
+        "exp_en": "Statements 1 and 2 are correct. Statement 3 is incorrect because there is no Article 76(5), and these are executive rules framed by the Union Government, not a parliamentary statute.",
+        "exp_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. அரசியலமைப்பில் சரத்து 76(5) என்று எதுவும் இல்லை, மேலும் இவை நிர்வாக விதிகளே தவிர நாடாளுமன்றச் சட்டம் அல்ல என்பதால் கூற்று 3 தவறு.",
+        "tip_en": "Article 76 has only 4 clauses. Law Officers Rules 1987 are executive instructions, not an Act of Parliament.",
+        "tip_ta": "சரத்து 76-ல் 4 உட்பிரிவுகள் மட்டுமே உள்ளன. 1987 விதிகள் நிர்வாக உத்தரவுகளே தவிர நாடாளுமன்றச் சட்டம் அல்ல.",
+        "fact_en": "Article 76 consists of clauses (1) to (4) only.",
+        "fact_ta": "சரத்து 76-ல் (1) முதல் (4) வரையிலான பிரிவுகள் மட்டுமே உள்ளன.",
+        "subtopic": "Service Rules"
+    },
+    # 43
+    {
+        "stem_en": "Consider the following statements regarding the Attorney General and Article 311 of the Constitution:\n1. Article 311 provides constitutional protection against dismissal, removal, or reduction in rank to civil servants.\n2. The Attorney General is considered a member of a civil service under the Union for the purposes of Article 311.\n3. The Attorney General can be removed from office at any time without the inquiry mandated by Article 311(2).\nWhich of the statements given above are correct?",
+        "stem_ta": "சரத்து 311 மற்றும் தலைமை வழக்கறிஞர் குறித்த பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. சரத்து 311 குடிமைப் பணியாளர்களுக்கு பணிநீக்கம் மற்றும் பதவி குறைப்புக்கு எதிரான அரசியலமைப்பு பாதுகாப்பை வழங்குகிறது.\n2. சரத்து 311-ன் நோக்கங்களுக்காக தலைமை வழக்கறிஞர் மத்திய குடிமைப் பணியின் ஓர் உறுப்பினராகக் கருதப்படுகிறார்.\n3. சரத்து 311(2)-ல் கூறப்பட்டுள்ள விசாரணை இன்றியே தலைமை வழக்கறிஞரை எப்போது வேண்டுமானாலும் பதவியிலிருந்து நீக்க முடியும்.\nமேற்கூறிய கூற்றுகளில் சரியானவை எவை?",
+        "options": [
+            ("1 and 2 only", "1 மற்றும் 2 மட்டுமே"),
+            ("1 and 3 only", "1 மற்றும் 3 மட்டுமே"),
+            ("2 and 3 only", "2 மற்றும் 3 மட்டுமே"),
+            ("1, 2 and 3", "1, 2 மற்றும் 3")
+        ],
+        "correct_idx": 1,
+        "exp_en": "Statements 1 and 3 are correct. Statement 2 is incorrect because the AG is NOT a civil servant under Article 311; he holds a constitutional office at the pleasure of the President.",
+        "exp_ta": "கூற்றுகள் 1 மற்றும் 3 சரியானவை. தலைமை வழக்கறிஞர் சரத்து 311-ன் கீழ் வரும் அரசு ஊழியர் அல்ல என்பதால் கூற்று 2 தவறு; எனவே இவரை விசாரணை இன்றியே நீக்கலாம்.",
+        "tip_en": "AG is NOT a civil servant under Article 311 and does not enjoy procedural protection against removal.",
+        "tip_ta": "தலைமை வழக்கறிஞர் சரத்து 311-ன் கீழ் உள்ள குடிமைப் பணியாளர் அல்ல; எனவே பணிநீக்கப் பாதுகாப்பு இவருக்குக் கிடையாது.",
+        "fact_en": "Article 311 applies only to members of civil services of the Union or all-India services or civil posts under Union/State.",
+        "fact_ta": "சரத்து 311 மத்திய குடிமைப் பணி அல்லது அகில இந்தியப் பணிகளின் உறுப்பினர்களுக்கு மட்டுமே பொருந்தும்.",
+        "subtopic": "Article 311"
+    },
+    # 44
+    {
+        "stem_en": "Consider the following statements regarding the Government of India Act, 1935 and the office of Advocate-General:\n1. Section 16 of the GoI Act 1935 created the office of Advocate-General for the Federation.\n2. The Advocate-General for the Federation was appointed by the Governor-General in his discretion.\n3. Sir Brojendra Lal Mitter was the first Advocate-General for the Federation under the 1935 Act.\nWhich of the statements given above are correct?",
+        "stem_ta": "1935 இந்திய அரசுச் சட்டம் மற்றும் அட்வகேட்-ஜெனரல் பதவி குறித்த பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. 1935 சட்டத்தின் பிரிவு 16 'கூட்டாட்சிக்கான அட்வகேட்-ஜெனரல்' பதவியை உருவாக்கியது.\n2. கூட்டாட்சிக்கான அட்வகேட்-ஜெனரல் கவர்னர்-ஜெனரலால் அவரது விருப்புரிமையின் அடிப்படையில் நியமிக்கப்பட்டார்.\n3. சர் பிரஜேந்திர லால் மிட்டர் 1935 சட்டத்தின் கீழ் கூட்டாட்சியின் முதல் அட்வகேட்-ஜெனரலாக நியமிக்கப்பட்டார்.\nமேற்கூறிய கூற்றுகளில் சரியானவை எவை?",
+        "options": [
+            ("1 and 2 only", "1 மற்றும் 2 மட்டுமே"),
+            ("2 and 3 only", "2 மற்றும் 3 மட்டுமே"),
+            ("1 and 3 only", "1 மற்றும் 3 மட்டுமே"),
+            ("1, 2 and 3", "1, 2 மற்றும் 3")
+        ],
+        "correct_idx": 3,
+        "exp_en": "All three statements are historically correct. Section 16 of GoI Act 1935 established the office, appointed by Governor-General, with Sir B.L. Mitter serving from 1937.",
+        "exp_ta": "மூன்று கூற்றுகளும் வரலாற்று ரீதியாக சரியானவை. 1935 சட்டத்தின் பிரிவு 16-ன் கீழ் கவர்னர்-ஜெனரலால் சர் பி.எல். மிட்டர் முதல் கூட்டாட்சி அட்வகேட் ஜெனரலாக நியமிக்கப்பட்டார்.",
+        "tip_en": "The colonial forerunner to AG of India was Advocate-General for the Federation under Section 16 of GoI Act 1935.",
+        "tip_ta": "இந்திய தலைமை வழக்கறிஞர் பதவியின் முன்னோடி 1935 இந்திய அரசுச் சட்டம் பிரிவு 16-ன் கீழ் இருந்த கூட்டாட்சி அட்வகேட்-ஜெனரல் பதவி ஆகும்.",
+        "fact_en": "Sir B.L. Mitter later served as the Dewan of Baroda state.",
+        "fact_ta": "சர் பி.எல். மிட்டர் பின்னர் பரோடா சமஸ்தானத்தின் திவானாகவும் பணியாற்றினார்.",
+        "subtopic": "Constitutional History"
+    },
+    # 45
+    {
+        "stem_en": "Consider the following statements regarding the Attorney General's role in Reference by President under Article 143:\n1. The Supreme Court issues notice to the Attorney General as the chief law officer of the Union.\n2. The Attorney General represents the viewpoint of the President and Union Government before the Constitution Bench.\n3. The Supreme Court can refuse to answer a reference made under Article 143(2) regarding pre-constitutional treaties.\nWhich of the statements given above are correct?",
+        "stem_ta": "சரத்து 143 குறிப்புரையில் தலைமை வழக்கறிஞரின் பங்கு குறித்த பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. ஒன்றியத்தின் தலைமைச் சட்ட அதிகாரி என்ற முறையில் உச்ச நீதிமன்றம் AG-க்கு நோட்டீஸ் அனுப்புகிறது.\n2. அரசியலமைப்பு அமர்வின் முன் குடியரசுத் தலைவர் மற்றும் மத்திய அரசின் நிலைப்பாட்டை AG எடுத்துரைக்கிறார்.\n3. அரசியலமைப்புக்கு முந்தைய உடன்படிக்கைகள் தொடர்பான சரத்து 143(2) குறிப்புரைக்கு பதில் அளிக்க உச்ச நீதிமன்றம் மறுக்க முடியும்.\nமேற்கூறிய கூற்றுகளில் சரியானவை எவை?",
+        "options": [
+            ("1 and 2 only", "1 மற்றும் 2 மட்டுமே"),
+            ("2 and 3 only", "2 மற்றும் 3 மட்டுமே"),
+            ("1 and 3 only", "1 மற்றும் 3 மட்டுமே"),
+            ("1, 2 and 3", "1, 2 மற்றும் 3")
+        ],
+        "correct_idx": 0,
+        "exp_en": "Statements 1 and 2 are correct. Statement 3 is incorrect because under Article 143(2), the Supreme Court 'shall' report its opinion (mandatory, not discretionary).",
+        "exp_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. சரத்து 143(2)-ன் கீழ் வரும் விவகாரங்களுக்கு உச்ச நீதிமன்றம் பதிலளிப்பது கட்டாயமாகும் (shall report) என்பதால் கூற்று 3 தவறு.",
+        "tip_en": "Art 143(1): SC 'may' answer (discretionary). Art 143(2): SC 'shall' answer (mandatory). AG assists in both.",
+        "tip_ta": "சரத்து 143(1): உச்ச நீதிமன்றம் பதிலளிக்கலாம் (விருப்ப உரிமை). சரத்து 143(2): பதிலளிப்பது கட்டாயம். இரண்டிலும் AG உதவுகிறார்.",
+        "fact_en": "Article 143(2) covers disputes arising out of pre-constitutional treaties, agreements, or covenants.",
+        "fact_ta": "சரத்து 143(2) அரசியலமைப்புக்கு முந்தைய உடன்படிக்கைகள் மற்றும் ஒப்பந்தங்கள் தொடர்பான தகராறுகளைக் கையாள்கிறது.",
+        "subtopic": "Advisory Jurisdiction"
+    },
+    # 46
+    {
+        "stem_en": "Consider the following statements regarding Ashok Desai and his tenure as Attorney General:\n1. He served as the Attorney General of India from 1996 to 1998.\n2. He represented the Union during the United Front coalition governments.\n3. He appeared in the landmark Vineet Narain case (1998) concerning the autonomy of the CBI and CVC.\nWhich of the statements given above are correct?",
+        "stem_ta": "அசோக் தேசாய் மற்றும் அவரது பதவிக்காலம் குறித்த பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இவர் 1996 முதல் 1998 வரை இந்திய தலைமை வழக்கறிஞராகப் பணியாற்றினார்.\n2. ஐக்கிய முன்னணி கூட்டணி அரசுகளின் போது இவர் மத்திய அரசுக்காகப் பணியாற்றினார்.\n3. சிபிஐ மற்றும் சிவிசி-யின் தன்னாட்சி தொடர்பான வரலாற்றுச் சிறப்புமிக்க வினீத் நரேன் வழக்கில் (1998) இவர் ஆஜரானார்.\nமேற்கூறிய கூற்றுகளில் சரியானவை எவை?",
+        "options": [
+            ("1 and 2 only", "1 மற்றும் 2 மட்டுமே"),
+            ("2 and 3 only", "2 மற்றும் 3 மட்டுமே"),
+            ("1 and 3 only", "1 மற்றும் 3 மட்டுமே"),
+            ("1, 2 and 3", "1, 2 மற்றும் 3")
+        ],
+        "correct_idx": 3,
+        "exp_en": "All three statements are correct. Ashok Desai was AG from 1996 to 1998 under Prime Ministers Deve Gowda and I.K. Gujral, and assisted in Vineet Narain (1998).",
+        "exp_ta": "மூன்று கூற்றுகளும் சரியானவை. அசோக் தேசாய் 1996-1998 வரை தேவ கவுடா மற்றும் குஜ்ரால் ஆட்சியில் AG-யாக இருந்தார்; வினீத் நரேன் வழக்கில் (1998) உதவினார்.",
+        "tip_en": "Ashok Desai served as AG during 1996-1998; actively assisted the SC in Vineet Narain (CBI autonomy case).",
+        "tip_ta": "அசோக் தேசாய் 1996-1998 வரை AG-யாக இருந்தார்; வினீத் நரேன் (CBI தன்னாட்சி வழக்கு) வழக்கில் உச்ச நீதிமன்றத்திற்கு உதவினார்.",
+        "fact_en": "Vineet Narain (1998) resulted in statutory status for the Central Vigilance Commission.",
+        "fact_ta": "வினீத் நரேன் வழக்கு (1998) மத்திய விழிப்புணர்வு ஆணையத்திற்கு (CVC) சட்டப்பூர்வ அந்தஸ்தைப் பெற்றுத் தந்தது.",
+        "subtopic": "Historical Personalities"
+    },
+    # 47
+    {
+        "stem_en": "Consider the following statements regarding the Attorney General and Right to Information (RTI) Act, 2005:\n1. In 2015, the Delhi High Court held that the Attorney General is a 'public authority' under Section 2(h) of the RTI Act.\n2. The Supreme Court in 2015 stayed the operation of the Delhi High Court judgment.\n3. The Union Government argued that the relationship between the AG and the Government is that of a lawyer and client.\nWhich of the statements given above are correct?",
+        "stem_ta": "தகவல் அறியும் உரிமைச் சட்டம் (RTI), 2005 மற்றும் தலைமை வழக்கறிஞர் குறித்த பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. 2015-ல் தில்லி உயர் நீதிமன்றம் தலைமை வழக்கறிஞர் RTI சட்டப் பிரிவு 2(h)-ன் கீழ் ஒரு 'பொது அதிகாரம் பெற்ற அமைப்பு' எனத் தீர்ப்பளித்தது.\n2. 2015-ல் உச்ச நீதிமன்றம் தில்லி உயர் நீதிமன்றத் தீர்ப்பின் செயல்பாட்டிற்கு இடைக்காலத் தடை விதித்தது.\n3. தலைமை வழக்கறிஞருக்கும் அரசுக்கும் இடையிலான உறவு வழக்கறிஞர்-வாடிக்கையாளர் உறவு என்று மத்திய அரசு வாதிட்டது.\nமேற்கூறிய கூற்றுகளில் சரியானவை எவை?",
+        "options": [
+            ("1 and 2 only", "1 மற்றும் 2 மட்டுமே"),
+            ("2 and 3 only", "2 மற்றும் 3 மட்டுமே"),
+            ("1 and 3 only", "1 மற்றும் 3 மட்டுமே"),
+            ("1, 2 and 3", "1, 2 மற்றும் 3")
+        ],
+        "correct_idx": 3,
+        "exp_en": "All three statements are correct. In Subhash Chandra Agarwal (2015), Delhi HC held AG is a public authority, which was stayed by the Supreme Court where the Union defended lawyer-client confidentiality.",
+        "exp_ta": "மூன்று கூற்றுகளும் சரியானவை. தில்லி உயர் நீதிமன்றம் AG ஒரு பொது அதிகாரம் கொண்ட அமைப்பு எனத் தீர்ப்பளித்தது, உச்ச நீதிமன்றம் அதற்குத் தடை விதித்தது; மத்திய அரசு வழக்கறிஞர்-வாடிக்கையாளர் ரகசியம் என வாதிட்டது.",
+        "tip_en": "Delhi HC held AG is a 'public authority' under RTI Act 2005; the judgment was stayed by the Supreme Court in 2015.",
+        "tip_ta": "தில்லி உயர் நீதிமன்றம் AG பொது அதிகார அமைப்பு எனத் தீர்ப்பளித்தது; உச்ச நீதிமன்றம் 2015-ல் இடைக்காலத் தடை விதித்தது.",
+        "fact_en": "Section 2(h) of the RTI Act defines 'public authority' as any authority established by or under the Constitution.",
+        "fact_ta": "RTI சட்டப் பிரிவு 2(h) அரசியலமைப்பால் அல்லது அதன் கீழ் நிறுவப்பட்ட எந்தவொரு அமைப்பையும் 'பொது அதிகாரம்' என வரையறுக்கிறது.",
+        "subtopic": "RTI Act & AG"
+    },
+    # 48
+    {
+        "stem_en": "Consider the following statements regarding the Attorney General and the 44th Constitutional Amendment Act, 1978:\n1. The 44th Amendment Act did not alter the text of Article 76.\n2. The 44th Amendment amended Article 359 so that Articles 20 and 21 cannot be suspended during an Emergency.\n3. The 44th Amendment required that the Attorney General must be confirmed by the Rajya Sabha.\nWhich of the statements given above are correct?",
+        "stem_ta": "44-வது அரசியலமைப்பு திருத்தச் சட்டம் (1978) மற்றும் தலைமை வழக்கறிஞர் குறித்த பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. 44-வது திருத்தச் சட்டம் சரத்து 76-ன் வாசகத்தில் எந்த மாற்றமும் செய்யவில்லை.\n2. அவசரநிலையின் போது சரத்துக்கள் 20 மற்றும் 21-ஐ இடைநிறுத்த முடியாது என்று சரத்து 359-ஐ 44-வது திருத்தம் திருத்தியது.\n3. தலைமை வழக்கறிஞர் நியமனத்திற்கு மாநிலங்களவையின் ஒப்புதல் கட்டாயம் என்று 44-வது திருத்தம் விதித்தது.\nமேற்கூறிய கூற்றுகளில் சரியானவை எவை?",
+        "options": [
+            ("1 and 2 only", "1 மற்றும் 2 மட்டுமே"),
+            ("2 and 3 only", "2 மற்றும் 3 மட்டுமே"),
+            ("1 and 3 only", "1 மற்றும் 3 மட்டுமே"),
+            ("1, 2 and 3", "1, 2 மற்றும் 3")
+        ],
+        "correct_idx": 0,
+        "exp_en": "Statements 1 and 2 are correct. Statement 3 is incorrect because no parliamentary confirmation is required for appointing the AG.",
+        "exp_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. தலைமை வழக்கறிஞர் நியமனத்திற்கு நாடாளுமன்ற ஒப்புதல் தேவையில்லை என்பதால் கூற்று 3 தவறு.",
+        "tip_en": "Article 76 remained untouched by 44th Amendment. Articles 20 & 21 can never be suspended even in Emergency (Art 359).",
+        "tip_ta": "சரத்து 76-ஐ 44-வது திருத்தம் மாற்றவில்லை. அவசரநிலையிலும் சரத்து 20 & 21 ரத்தாகாது (சரத்து 359).",
+        "fact_en": "The 44th Amendment nullified the harsh impact of the ADM Jabalpur ruling.",
+        "fact_ta": "44-வது திருத்தச் சட்டம் ADM ஜபல்பூர் தீர்ப்பின் கடுமையான பாதிப்பை நீக்கியது.",
+        "subtopic": "Constitutional Amendments"
+    },
+    # 49
+    {
+        "stem_en": "Consider the following statements regarding the Attorney General of India and the Bar:\n1. The Attorney General is considered the leader of the Indian Bar.\n2. The Attorney General is placed at the top of the order of precedence among all advocates in India.\n3. The Attorney General is automatically the disciplinary head of all State Bar Councils.\nWhich of the statements given above are correct?",
+        "stem_ta": "இந்திய வழக்கறிஞர் மன்றம் (Bar) மற்றும் தலைமை வழக்கறிஞர் குறித்த பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. தலைமை வழக்கறிஞர் இந்திய வழக்கறிஞர் மன்றத்தின் (Bar) தலைவராகக் கருதப்படுகிறார்.\n2. இந்தியாவில் உள்ள அனைத்து வழக்கறிஞர்களிலும் முன்னுரிமை வரிசையில் முதலிடத்தில் AG வைக்கப்படுகிறார்.\n3. அனைத்து மாநில வழக்கறிஞர் மன்றங்களின் ஒழுங்கு நடவடிக்கைத் தலைவராக AG தானாகவே செயல்படுகிறார்.\nமேற்கூறிய கூற்றுகளில் சரியானவை எவை?",
+        "options": [
+            ("1 and 2 only", "1 மற்றும் 2 மட்டுமே"),
+            ("2 and 3 only", "2 மற்றும் 3 மட்டுமே"),
+            ("1 and 3 only", "1 மற்றும் 3 மட்டுமே"),
+            ("1, 2 and 3", "1, 2 மற்றும் 3")
+        ],
+        "correct_idx": 0,
+        "exp_en": "Statements 1 and 2 are correct. Statement 3 is incorrect because disciplinary powers over advocates are vested in the Disciplinary Committees of the respective State Bar Councils and Bar Council of India, not the AG.",
+        "exp_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. வழக்கறிஞர்கள் மீதான ஒழுங்கு நடவடிக்கை அதிகாரம் பார் கவுன்சிலின் ஒழுங்கு நடவடிக்கைக் குழுவிடமே உள்ளது; தலைமை வழக்கறிஞரிடம் அல்ல என்பதால் கூற்று 3 தவறு.",
+        "tip_en": "AG is the leader of the Indian Bar and has top precedence under Sec 23 Advocates Act, but disciplinary power lies with Bar Councils.",
+        "tip_ta": "AG இந்திய வழக்கறிஞர் மன்றத்தின் தலைவர் மற்றும் முதன்மை முன்னுரிமை பெற்றவர்; ஆனால் ஒழுங்கு நடவடிக்கை அதிகாரம் பார் கவுன்சிலுக்கே உண்டு.",
+        "fact_en": "Section 23 of Advocates Act gives AG first pre-audience, followed by Solicitor General.",
+        "fact_ta": "வழக்கறிஞர்கள் சட்டப் பிரிவு 23 AG-க்கு முதல் முன்னுரிமையையும், அடுத்து SG-க்கும் வழங்குகிறது.",
+        "subtopic": "Bar & Legal Profession"
+    },
+    # 50
+    {
+        "stem_en": "Consider the following statements regarding Mukul Rohatgi's tenure as Attorney General of India:\n1. He was appointed as the 14th Attorney General of India in June 2014.\n2. He defended the Union in the Triple Talaq case (Shayara Bano, 2017).\n3. He stepped down in 2017 after completing a three-year term and declined an extension.\nWhich of the statements given above are correct?",
+        "stem_ta": "முகுல் ரோஹத்கி தலைமை வழக்கறிஞராக பதவி வகித்தது குறித்த பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. ஜூன் 2014-ல் இந்தியாவின் 14-வது தலைமை வழக்கறிஞராக இவர் நியமிக்கப்பட்டார்.\n2. முத்தலாக் வழக்கில் (ஷயாரா பானோ, 2017) ஒன்றிய அரசின் சார்பில் இவர் ஆஜரானார்.\n3. மூன்று ஆண்டு பதவிக்காலம் முடிவடைந்த பிறகு 2017-ல் இவர் பதவி விலகினார், நீட்டிப்பை ஏற்கவில்லை.\nமேற்கூறிய கூற்றுகளைக் கவனியுங்கள்; சரியானவை எவை?",
+        "options": [
+            ("1 and 2 only", "1 மற்றும் 2 மட்டுமே"),
+            ("2 and 3 only", "2 மற்றும் 3 மட்டுமே"),
+            ("1 and 3 only", "1 மற்றும் 3 மட்டுமே"),
+            ("1, 2 and 3", "1, 2 மற்றும் 3")
+        ],
+        "correct_idx": 3,
+        "exp_en": "All three statements are correct. Mukul Rohatgi was the 14th AG (2014-2017), argued against Triple Talaq on gender justice grounds, and returned to private practice in June 2017.",
+        "exp_ta": "மூன்று கூற்றுகளும் சரியானவை. முகுல் ரோஹத்கி 14-வது AG (2014-2017); முத்தலாக் வழக்கில் பாலின சமத்துவத்திற்காக வாதிட்டார்; 2017-ல் பணி நிறைவு செய்தார்.",
+        "tip_en": "Mukul Rohatgi: 14th AG (2014-2017); represented Union in NJAC, Triple Talaq, and Aadhaar interim hearings.",
+        "tip_ta": "முகுல் ரோஹத்கி: 14-வது AG (2014-2017); NJAC, முத்தலாக் மற்றும் ஆதார் வழக்குகளில் ஆஜரானார்.",
+        "fact_en": "Mukul Rohatgi was succeeded by Senior Advocate K.K. Venugopal as the 15th Attorney General.",
+        "fact_ta": "முகுல் ரோஹத்கிக்குப் பிறகு கே.கே. வேணுகோபால் 15-வது தலைமை வழக்கறிஞராகப் பொறுப்பேற்றார்.",
+        "subtopic": "Historical Personalities"
+    }
+]
+
+def build_questions():
+    questions = []
+    for i, item in enumerate(raw_statement_data):
+        qid = f"AG_S_{i+1:03d}"
+        opts = item["options"]
+        correct_idx = item["correct_idx"]
+        correct_key = ["A", "B", "C", "D"][correct_idx]
+        
+        why_en = {}
+        why_ta = {}
+        for idx, key in enumerate(["A", "B", "C", "D"]):
+            if idx == correct_idx:
+                why_en[key] = f"Option {key} is the correct combination based on constitutional provisions and statutory principles."
+                why_ta[key] = f"அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு {key} சரியான கூற்றுக் கலவையாகும்."
+            else:
+                why_en[key] = f"Option {key} ({opts[idx][0]}) contains incorrect statements or omits correct statements."
+                why_ta[key] = f"தெரிவு {key} ({opts[idx][1]}) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
+                
+        q = make_ag_q(
+            qid=qid,
+            diff="Medium",
+            qtype="Statement Based",
+            subtopic=item["subtopic"],
+            en_stem=item["stem_en"],
+            ta_stem=item["stem_ta"],
+            en_a=opts[0][0],
+            ta_a=opts[0][1],
+            en_b=opts[1][0],
+            ta_b=opts[1][1],
+            en_c=opts[2][0],
+            ta_c=opts[2][1],
+            en_d=opts[3][0],
+            ta_d=opts[3][1],
+            correct_key=correct_key,
+            exp_en=item["exp_en"],
+            exp_ta=item["exp_ta"],
+            why_a_en=why_en["A"],
+            why_a_ta=why_ta["A"],
+            why_b_en=why_en["B"],
+            why_b_ta=why_ta["B"],
+            why_c_en=why_en["C"],
+            why_c_ta=why_ta["C"],
+            why_d_en=why_en["D"],
+            why_d_ta=why_ta["D"],
+            tip_en=item["tip_en"],
+            tip_ta=item["tip_ta"],
+            fact_en=item["fact_en"],
+            fact_ta=item["fact_ta"],
+            tags=["polity", "attorney_general_of_india", "statement_based", item["subtopic"].lower().replace(" ", "_")]
+        )
+        questions.append(q)
+    return questions
+
+if __name__ == "__main__":
+    qs = build_questions()
+    print(f"Generated {len(qs)} raw Statement questions.")
+    
+    balanced_qs = balance_question_keys(qs)
+    
+    out_path = os.path.join("data", "questions", "polity", "attorney_general_statement_based.json")
+    alias_path = os.path.join("data", "questions", "polity", "attorney_general_statement.json")
+    
+    with open(out_path, "w", encoding="utf-8") as f:
+        json.dump(balanced_qs, f, ensure_ascii=False, indent=2)
+    shutil.copyfile(out_path, alias_path)
+    
+    print(f"Saved balanced Statement MCQs to {out_path} and {alias_path}")
+    
+    val = ContentValidator()
+    report = val.validate_file(out_path, expected_count=50, expected_prefix="AG_S_")
+    print(f"Validation Report: {'PASS' if report.is_valid else 'FAIL'} | Total: {report.total_audited}")
+    if not report.is_valid:
+        for iss in report.issues[:10]:
+            print(f"  Issue: {iss}")
+    print(f"Key Distribution: {report.key_distribution}")

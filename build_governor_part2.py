@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-Builder Script for Governor of a State Notes — Part 2
-Subject: Indian Polity
-Topic: Governor of a State – Part 2
+Governor of a State - Part 2 (Medium 50 MCQs) Generator
+Output: data/questions/polity/governor_medium.json
 """
 
 import json
@@ -11,622 +10,804 @@ import sys
 
 sys.stdout.reconfigure(encoding='utf-8')
 
-print("==================================================")
-print("BUILDING GOVERNOR NOTES — PART 2")
-print("==================================================")
-
-part2_data = {
-  "meta": {
-    "topic_id": "polity_governor_part_2",
-    "repository_id": "polity_governor",
-    "display_title": "Governor of a State – Part 2",
-    "part": 2,
-    "total_parts": 3,
-    "subject": "polity",
-    "chapter": "Governor of a State",
-    "language": "English + Tamil"
-  },
-  "metadata": {
-    "topic_id": "polity_governor_part_2",
-    "repository_id": "polity_governor",
-    "display_title": "Governor of a State – Part 2",
-    "part": 2,
-    "total_parts": 3,
-    "subject": "polity",
-    "chapter": "Governor of a State",
-    "language": "English + Tamil"
-  },
-  "keywords": [
-    "Governor Powers and Functions",
-    "Executive Powers",
-    "Legislative Powers",
-    "Financial Powers",
-    "Judicial Powers",
-    "Article 161 Pardoning Power",
-    "Article 213 Ordinance Power",
-    "Article 174 Summoning",
-    "Article 175 Address and Messages",
-    "Article 176 Special Address",
-    "Article 200 Assent to Bills",
-    "Article 201 Reserved Bills",
-    "Article 165 Advocate General",
-    "Article 202 State Budget",
-    "TNPSC Polity Notes"
-  ],
-  "learning_outcomes": {
-    "Understand": {
-      "en": [
-        "Master the Executive powers of Governor (Appointments of CM, Ministers under Art 164 with collective responsibility, Advocate General Art 165, SEC Art 243K, SPSC Art 315/317).",
-        "Analyze Legislative powers (Art 174 summoning/dissolution, Art 175 right to address/send messages, Art 176 special address, 1/6th MLC nomination Art 171(5), Art 200/201 Bill assent options).",
-        "Understand Financial powers (Art 207 Money Bill recommendation, Art 202 State Budget, Art 267(2) Contingency Fund, Art 243-I/243-Y State Finance Commission).",
-        "Compare Judicial powers under Article 161 (Governor Pardon) with Article 72 (President Pardon) — Death sentence & Court-Martial distinctions.",
-        "Master Ordinance-making power under Article 213 (Conditions, 6-week expiry rule, comparison with Art 123)."
-      ],
-      "ta": [
-        "ஆளுநரின் நிர்வாக அதிகாரங்களைக் கற்றல் (கூட்டுக் கூட்டுப் பொறுப்புடன் கூடிய முதலமைச்சர், அமைச்சர்கள் நியமனம் - விதி 164, மாநில வழக்கறிஞர் - விதி 165, SEC, SPSC நியமனங்கள்).",
-        "சட்டமன்ற அதிகாரங்களைப் பகுப்பாய்வு செய்தல் (விதி 174 அவையைக் கூட்டுதல்/கலைத்தல், விதி 175 அவைக்கு உரையாற்ற/செய்தி அனுப்பும் உரிமை, விதி 176 சிறப்பு உரை, 1/6 பங்கு மேலவை நியமனம், விதி 200/201 மசோதா ஒப்புதல் சாய்வுகள்).",
-        "நிதி அதிகாரங்களைப் புரிந்துகொள்வது (விதி 207 பண மசோதா பரிந்துரை, விதி 202 மாநில வரவு செலவுத் திட்டம், விதி 267(2) அவசரக்கால நிதி).",
-        "உறுப்பு 161 (ஆளுநர் மன்னிப்பு) மற்றும் உறுப்பு 72 (குடியரசுத் தலைவர் மன்னிப்பு) இடையிலான வேறுபாடுகளைக் கற்றல் — மரண தண்டனை & ராணுவ நீதிமன்ற விதிவிலக்குகள்.",
-        "உறுப்பு 213-ன் கீழ் அவசரச் சட்ட அதிகாரத்தில் தேர்ச்சி பெறுதல் (நிபந்தனைகள், 6 வார காலாவதி விதி, விதி 123 ஒப்பீடு)."
-      ]
+def mk_q(idx, diff, q_type, q_en, q_ta, opts_en, opts_ta, correct_key, exp_en, exp_ta, trap_en, trap_ta, tip_en, tip_ta, fact_en, fact_ta):
+    return {
+        "id": f"POLITY_GOV_MED_{idx:03d}",
+        "subject": "Polity",
+        "topic": "Governor of a State",
+        "difficulty": diff,
+        "question_type": q_type,
+        "question_en": q_en,
+        "question_ta": q_ta,
+        "opts_en": opts_en,
+        "opts_ta": opts_ta,
+        "correct_key": correct_key,
+        "exp_en": exp_en,
+        "exp_ta": exp_ta,
+        "trap_en": trap_en,
+        "trap_ta": trap_ta,
+        "tip_en": tip_en,
+        "tip_ta": tip_ta,
+        "fact_en": fact_en,
+        "fact_ta": fact_ta
     }
-  },
-  "subject": "polity",
-  "topic": "Governor of a State",
-  "language": "English + Tamil",
-  "ui_type": "standard_notes",
-  "sections": [
-    {
-      "id": "sec_executive_powers",
-      "title_en": "1. Executive Powers & Administrative Appointments (Articles 154, 164, 165, 166)",
-      "title_ta": "1. நிர்வாக அதிகாரங்கள் & நிர்வாக நியமனங்கள் (உறுப்புகள் 154, 164, 165, 166)",
-      "type": "standard_topic"
-    },
-    {
-      "id": "sec_legislative_powers",
-      "title_en": "2. Legislative Powers & Bill Assent Mechanics (Articles 174, 175, 176, 200, 201)",
-      "title_ta": "2. சட்டமன்ற அதிகாரங்கள் & மசோதா ஒப்புதல் முறைகள் (உறுப்புகள் 174, 175, 176, 200, 201)",
-      "type": "standard_topic"
-    },
-    {
-      "id": "sec_financial_powers",
-      "title_en": "3. Financial Powers & Budgetary Roles (Articles 202, 207, 267)",
-      "title_ta": "3. நிதி அதிகாரங்கள் & வரவு செலவுத் திட்டப் பங்குகள் (உறுப்புகள் 202, 207, 267)",
-      "type": "standard_topic"
-    },
-    {
-      "id": "sec_judicial_powers",
-      "title_en": "4. Judicial Powers & Pardoning Capacity (Article 161 vs Article 72)",
-      "title_ta": "4. நீதித்துறை அதிகாரங்கள் & மன்னிப்பளிக்கும் அதிகாரம் (உறுப்பு 161 vs உறுப்பு 72)",
-      "type": "standard_topic"
-    },
-    {
-      "id": "sec_ordinance_power",
-      "title_en": "5. Ordinance-Making Power of Governor (Article 213)",
-      "title_ta": "5. ஆளுநரின் அவசரச் சட்ட அதிகாரம் (உறுப்பு 213)",
-      "type": "standard_topic"
-    },
-    {
-      "id": "comparison_tables",
-      "title_en": "6. Mandatory Comparison Tables (Powers & Functions Focus)",
-      "title_ta": "6. கட்டாய ஒப்பீட்டு அட்டவணைகள் (அதிகாரங்கள் & பணிகள் கவனம்)",
-      "type": "comparison"
-    },
-    {
-      "id": "mind_map",
-      "title_en": "7. Mind Map & TNPSC Trap Points",
-      "title_ta": "7. மன வரைபடம் & டிஎன்பிஎஸ்சி பொறிப் புள்ளிகள்",
-      "type": "mind_map"
-    }
-  ],
-  "content": {
-    "definition": {
-      "en": "The Governor exercises executive, legislative, financial, judicial, and emergency/ordinance powers vested in him by the Constitution, exercising constitutional authority formally while actual decisions are driven by the Council of Ministers.",
-      "ta": "ஆளுநர் அரசியலமைப்பால் அவருக்கு வழங்கப்பட்டுள்ள நிர்வாக, சட்டமன்ற, நிதி, நீதித்துறை மற்றும் அவசரச்சட்ட அதிகாரங்களைச் செயல்படுத்துகிறார். அரசியலமைப்பு அதிகாரத்தை முறைப்படிப் பயன்படுத்தினாலும், நடைமுறை முடிவுகள் அமைச்சரவையால் வழிநடத்தப்படுகின்றன."
-    },
-    "introduction": {
-      "en": "Part VI of the Constitution outlines the specific powers of the Governor. While these powers mirror those of the President at the Union level, crucial differences exist in judicial pardoning powers (Art 161 vs Art 72), legislative bill reservation (Art 200/201), and express constitutional discretion.",
-      "ta": "அரசியலமைப்பின் பகுதி VI ஆளுநரின் குறிப்பிட்ட அதிகாரங்களை வரையறுக்கிறது. இந்த அதிகாரங்கள் மத்திய அளவில் குடியரசுத் தலைவரின் அதிகாரங்களைப் பிரதிபலித்தாலும், நீதித்துறை மன்னிப்பு அதிகாரங்கள் (விதி 161 vs விதி 72), மசோதா ஒதுக்கீடு (விதி 200/201) மற்றும் அரசியலமைப்பு சுயவிருப்ப அதிகாரங்களில் முக்கிய வேறுபாடுகள் உள்ளன."
-    },
-    "sec_executive_powers": [
-      {
-        "title_en": "Constitutional Appointments & Executive Administration (Articles 154, 164, 165, 166)",
-        "title_ta": "அரசியலமைப்பு நியமனங்கள் & நிர்வாக ஆட்சி (உறுப்புகள் 154, 164, 165, 166)",
-        "points": {
-          "en": [
-            "Executive Action Orders (Art 166(1)): All executive actions of the Government of a State are formally expressed to be taken in the name of the Governor.",
-            "Appointment of Chief Minister & Council (Art 164(1)): Appoints the Chief Minister and other Ministers on the advice of the Chief Minister.",
-            "Collective Responsibility (Art 164(2)): The Council of Ministers is collectively responsible to the Legislative Assembly of the State.",
-            "Advocate General of the State (Art 165): Appoints the Advocate General for the State and determines his remuneration. Holds office during pleasure of Governor.",
-            "State Election Commissioner (Art 243K): Appoints the SEC and determines conditions of service. (Note: SEC can be removed ONLY in like manner as a High Court Judge).",
-            "State Public Service Commission (Art 315/317): Appoints the Chairman and Members of SPSC. (CRITICAL TRAP: SPSC members are APPOINTED by Governor, BUT REMOVED ONLY by the President under Art 317!).",
-            "University Chancellorship: Acts as ex-officio Chancellor of State Universities and appoints Vice-Chancellors (under State University Acts)."
-          ],
-          "ta": [
-            "நிர்வாக ஆணை வெளியீடு (விதி 166(1)): மாநில அரசின் அனைத்து நிர்வாக நடவடிக்கைகளும் ஆளுநரின் பெயராலேயே முறைப்படி மேற்கொள்ளப்படுகின்றன.",
-            "முதலமைச்சர் & அமைச்சரவை நியமனம் (விதி 164(1)): முதலமைச்சரையும், முதலமைச்சரின் ஆலோசனையின் பேரில் இதர அமைச்சர்களையும் நியமிக்கிறார்.",
-            "கூட்டுப் பொறுப்பு (விதி 164(2)): அமைச்சரவை மாநிலச் சட்டப்பேரவைக்குக் கூட்டாகப் பொறுப்பானது.",
-            "மாநில தலைமை வழக்கறிஞர் (விதி 165): மாநிலத்தின் அட்வகேட் ஜெனரலை நியமித்து அவரது ஊதியத்தைத் தீர்மானிக்கிறார். அவர் ஆளுநரின் விருப்பம் வரை பதவியில் நீடிப்பார்.",
-            "மாநிலத் தேர்தல் ஆணையர் (விதி 243K): SEC-ஐ நியமித்துப் பணி நிபந்தனைகளைத் தீர்மானிக்கிறார். (குறிப்பு: உயர் நீதிமன்ற நீதிபதியை நீக்குவது போன்றே SEC நீக்கப்பட முடியும்).",
-            "மாநில அரசுப் பணியாளர் தேர்வாணையம் (விதி 315/317): SPSC தலைவர் மற்றும் உறுப்பினர்களை நியமிக்கிறார். (முக்கியப் பொறி: SPSC உறுப்பினர்களை நியமிப்பவர் ஆளுநர், ஆனால் பதவி நீக்கம் செய்பவர் குடியரசுத் தலைவர் மட்டுமே - விதி 317!).",
-            "பல்கலைக்கழக வேந்தர்: மாநிலப் பல்கலைக்கழகங்களின் பதவிவழி வேந்தராகச் செயல்பட்டு துணைவேந்தர்களை நியமிக்கிறார்."
-          ]
-        }
-      }
-    ],
-    "sec_legislative_powers": [
-      {
-        "title_en": "Legislative Sessions, Address & Messages (Articles 174, 175 & 176)",
-        "title_ta": "சட்டமன்றக் கூட்டத்தொடர், உரை & செய்திகள் (உறுப்புகள் 174, 175 & 176)",
-        "points": {
-          "en": [
-            "Summoning & Prorogation (Art 174(1)): Summons and prorogues both Houses of the State Legislature. Six months shall not intervene between last sitting in one session and first sitting in next session.",
-            "Dissolution of Assembly (Art 174(2)(b)): Can dissolve the State Legislative Assembly before 5 years on advice of CM.",
-            "Right to Address and Send Messages (Art 175): Governor has the right to address the Legislative Assembly (or either/both Houses in bicameral) and can send messages to the House regarding any pending Bill or other matters, which the House must consider with all convenient dispatch.",
-            "Special Address (Art 176): Addresses the State Legislature at the commencement of the first session after each general election and the first session of each year."
-          ],
-          "ta": [
-            "கூட்டுதல் & ஒத்திவைத்தல் (விதி 174(1)): மாநில சட்டமன்றத்தின் கூட்டத்தைக் கூட்டுகிறார் மற்றும் ஒத்திவைக்கிறார். இரு கூட்டத்தொடர்களுக்கு இடையே 6 மாதங்களுக்கு மேல் இடைவெளி இருக்கக்கூடாது.",
-            "சட்டமன்றக் கலைப்பு (விதி 174(2)(b)): முதலமைச்சரின் ஆலோசனையின் பேரில் 5 ஆண்டுகளுக்கு முன்பே சட்டப்பேரவையைக் கலைக்கலாம்.",
-            "உரையாற்ற மற்றும் செய்தி அனுப்பும் உரிமை (விதி 175): மாநில சட்டமன்றத்தில் உரையாற்றவும், நிலுவையில் உள்ள மசோதாக்கள் அல்லது பிற விஷயங்கள் குறித்து அவைக்குச் செய்திகளை அனுப்பவும் ஆளுநருக்கு உரிமையுண்டு. அவை அதை உடனடியாக பரிசீலிக்க வேண்டும்.",
-            "சிறப்பு உரை (விதி 176): பொதுத் தேர்தலுக்குப் பிந்தைய முதல் கூட்டத்தொடரின் தொடக்கத்திலும், ஒவ்வொரு ஆண்டின் முதல் கூட்டத்தொடரின் தொடக்கத்திலும் உரையாற்றுகிறார்."
-          ]
-        }
-      },
-      {
-        "title_en": "Nomination of Members & Bill Assent Options (Articles 171, 200, 201)",
-        "title_ta": "உறுப்பினர்கள் நியமனம் & மசோதா ஒப்புதல் சாய்வுகள் (உறுப்புகள் 171, 200, 201)",
-        "points": {
-          "en": [
-            "Nomination to Legislative Council (Art 171(5)): Nominates 1/6th of total members of MLC from persons having special knowledge in Literature, Science, Art, Co-operative Movement, and Social Service. (Note: 'Co-operative Movement' is present in Art 171 but NOT in Rajya Sabha Art 80!).",
-            "Article 200 Assent Options: When a Bill passed by State Legislature is presented to Governor, he has 4 options:",
-            "  1. Gives assent to the Bill (Bill becomes Act).",
-            "  2. Withholds assent to the Bill (Bill dies).",
-            "  3. Returns the Bill for reconsideration (Non-Money Bills only). If re-passed by Legislature with or without amendments, Governor MUST give assent.",
-            "  4. Reserves the Bill for President's consideration (Mandatory if Bill endangers position of High Court).",
-            "Article 201 Reserved Bills: When reserved, President can give assent, withhold assent, or direct Governor to return Bill (reconsidered within 6 months). President is NOT bound to assent even if re-passed!"
-          ],
-          "ta": [
-            "சட்ட மேலவை உறுப்பினர்கள் நியமனம் (விதி 171(5)): இலக்கியம், அறிவியல், கலை, கூட்டுறவு இயக்கம், சமூக சேவை ஆகிய துறைகளில் 1/6 பங்கு உறுப்பினர்களை நியமிக்கிறார். (குறிப்பு: 'கூட்டுறவு இயக்கம்' என்பது மாநில மேலவை நியமனத்தில் மட்டுமே உள்ளது, மாநிலங்களவையில் இல்லை!).",
-            "உறுப்பு 200 மசோதா ஒப்புதல் சாய்வுகள்: சட்டமன்றம் நிறைவேற்றிய மசோதா ஆளுநரிடம் வரும்போது 4 சாய்வுகள் உள்ளன:",
-            "  1. மசோதாவிற்கு ஒப்புதல் அளித்தல் (மசோதா சட்டமாகிறது).",
-            "  2. ஒப்புதலை நிறுத்தி வைத்தல் (மசோதா ரத்தாகிறது).",
-            "  3. மறுபரிசீலனைக்குத் திருப்பி அனுப்புதல் (பண மசோதா தவிர). சட்டமன்றம் மீண்டும் நிறைவேற்றினால் ஆளுநர் கட்டாயம் ஒப்புதல் அளிக்க வேண்டும்.",
-            "  4. குடியரசுத் தலைவரின் பரிசீலனைக்கு ஒதுக்கி வைத்தல் (உயர் நீதிமன்ற அதிகாரத்தைப் பாதிக்கும் மசோதாக்களுக்கு இது கட்டாயம்).",
-            "உறுப்பு 201 ஒதுக்கப்பட்ட மசோதாக்கள்: குடியரசுத் தலைவர் ஒப்புதல் அளிக்கலாம், நிறுத்தி வைக்கலாம் அல்லது திருப்பி அனுப்ப ஆணையிடலாம் (6 மாதத்திற்குள் பரிசீலனை). மீண்டும் நிறைவேற்றினாலும் குடியரசுத் தலைவர் ஒப்புதல் அளிக்கக் கடமைப்பட்டவரல்ல!"
-          ]
-        }
-      }
-    ],
-    "sec_financial_powers": [
-      {
-        "title_en": "Budget, Money Bills & Contingency Fund Roles",
-        "title_ta": "வரவு செலவுத் திட்டம், பண மசோதாக்கள் & அவசரக்கால நிதிப் பங்குகள்",
-        "points": {
-          "en": [
-            "Money Bills Recommendation (Art 207(1)): Money Bills can be introduced in the Legislative Assembly ONLY with the prior recommendation of the Governor.",
-            "Annual Financial Statement (Art 202): Ensures that the State Budget (Annual Financial Statement) is laid before the State Legislature every financial year.",
-            "State Contingency Fund (Art 267(2)): Can make advances out of the Contingency Fund of the State to meet unforeseen expenditure pending authorization by Legislature.",
-            "State Finance Commission (Art 243-I & 243-Y): Constitutes a Finance Commission every 5 years to review the financial position of Panchayats and Municipalities."
-          ],
-          "ta": [
-            "பண மசோதா பரிந்துரை (விதி 207(1)): பண மசோதாக்கள் ஆளுநரின் முன் பரிந்துரையுடன் மட்டுமே சட்டப்பேரவையில் அறிமுகப்படுத்தப்பட முடியும்.",
-            "ஆண்டு நிதிநிலை அறிக்கை (விதி 202): மாநில பட்ஜெட் (ஆண்டு நிதிநிலை அறிக்கை) ஒவ்வொரு நிதியாண்டும் சட்டமன்றத்தில் சமர்ப்பிக்கப்படுவதை உறுதி செய்கிறார்.",
-            "மாநில அவசரக்கால நிதி (விதி 267(2)): சட்டமன்ற ஒப்புதலுக்கு நிலுவையில் உள்ள எதிர்பாராத செலவினங்களைச் சந்திக்க மாநில அவசரக்கால நிதியிலிருந்து முன்பணம் வழங்கலாம்.",
-            "மாநில நிதி ஆணையம் (விதி 243-I & 243-Y): பஞ்சாயத்துகள் மற்றும் நகராட்சிகளின் நிதி நிலையை ஆய்வு செய்ய 5 ஆண்டுகளுக்கு ஒருமுறை மாநில நிதி ஆணையத்தை அமைக்கிறார்."
-          ]
-        }
-      }
-    ],
-    "sec_judicial_powers": [
-      {
-        "title_en": "Article 161 — Governor's Pardoning Power vs Article 72",
-        "title_ta": "உறுப்பு 161 — ஆளுநரின் மன்னிப்பளிக்கும் அதிகாரம் vs உறுப்பு 72",
-        "points": {
-          "en": [
-            "Article 161 Scope: Governor can grant pardons, reprieves, respites, and remissions of punishment or suspend, remit, and commute the sentence of any person convicted of an offense against a STATE LAW.",
-            "Five Judicial Terms:",
-            "  1. Pardon: Completely absolves the convict from all sentences and disqualifications.",
-            "  2. Reprieve: Stay of execution of a sentence (especially death) for a temporary period.",
-            "  3. Respite: Awarding a lesser sentence instead of prescribed one due to special facts (e.g., pregnancy, disability).",
-            "  4. Remission: Reducing the amount of sentence without changing its character (e.g., 2 years rigorous imprisonment to 1 year).",
-            "  5. Commutation: Substitution of one form of punishment for a lighter form (e.g., death sentence to life imprisonment).",
-            "CRITICAL DISTINCTION WITH PRESIDENT (Art 72):",
-            "  • Death Sentence: Governor CANNOT PARDON a death sentence (Only President can pardon death sentence). Governor can only suspend, remit, or commute a death sentence.",
-            "  • Court-Martial: Governor has NO POWER regarding sentences imposed by a Military Court / Court-Martial (Only President has power)."
-          ],
-          "ta": [
-            "உறுப்பு 161 எல்லை: மாநில சட்டத்திற்கு எதிரான குற்றத்திற்காகத் தண்டிக்கப்பட்ட நபருக்கு மன்னிப்பு, காலநீட்டிப்பு, தளர்வு, குறைப்பு அளிக்க ஆளுநருக்கு அதிகாரமுள்ளது.",
-            "ஐந்து நீதித்துறை சொற்கள்:",
-            "  1. Pardon (மன்னிப்பு): தண்டனை மற்றும் தகுதியிழப்புகள் அனைத்திலிருந்தும் முற்றிலும் விடுவித்தல்.",
-            "  2. Reprieve (தற்காலிகத் தடை): தண்டனையைத் (குறிப்பாக மரண தண்டனை) தற்காலிகமாக ஒத்திவைத்தல்.",
-            "  3. Respite (தண்டனைத் தளர்வு): சிறப்பு காரணங்களால் (கர்ப்பம், ஊனம்) குறைந்த தண்டனை வழங்குதல்.",
-            "  4. Remission (தண்டனைக் குறைப்பு): தண்டனையின் தன்மையை மாற்றாமல் கால அளவைக் குறைத்தல் (எ.கா. 2 ஆண்டு கடுங்காவல் 1 ஆண்டாகக் குறைப்பு).",
-            "  5. Commutation (தண்டனை மாற்றம்): கடுமையான தண்டனையை இலகுவான தண்டனையாக மாற்றுதல் (எ.கா. மரண தண்டனை ஆயுள் தண்டனையாக மாற்றம்).",
-            "குடியரசுத் தலைவருடனான முக்கிய வேறுபாடு (விதி 72):",
-            "  • மரண தண்டனை: ஆளுநரால் மரண தண்டனையை முற்றிலும் மன்னித்து விடுவிக்க (Pardon) முடியாது (குடியரசுத் தலைவர் மட்டுமே முடியும்). ஆளுநர் மரண தண்டனையை ஒத்திவைக்கலாம் அல்லது குறைக்கலாம்.",
-            "  • ராணுவ நீதிமன்றம்: ராணுவ நீதிமன்றத் தண்டனைகளில் ஆளுநருக்கு எந்த அதிகாரமும் இல்லை (குடியரசுத் தலைவருக்கு மட்டுமே உண்டு)."
-          ]
-        }
-      },
-      {
-        "title_en": "Judicial Appointments & Consultations (Articles 217 & 233)",
-        "title_ta": "நீதித்துறை நியமனங்கள் & கலந்தாய்வுகள் (உறுப்புகள் 217 & 233)",
-        "points": {
-          "en": [
-            "High Court Judges Consultation (Art 217(1)): Governor is consulted by the President when appointing Judges of the State High Court.",
-            "District Judges Appointment (Art 233): Appointments, postings, and promotions of District Judges are made by the Governor in consultation with the High Court."
-          ],
-          "ta": [
-            "உயர் நீதிமன்ற நீதிபதிகள் கலந்தாய்வு (விதி 217(1)): மாநில உயர் நீதிமன்ற நீதிபதிகளை நியமிக்கும் போது குடியரசுத் தலைவர் ஆளுநரைக் கலந்தாலோசிக்கிறார்.",
-            "மாவட்ட நீதிபதிகள் நியமனம் (விதி 233): மாவட்ட நீதிபதிகளின் நியமனம், இடமாற்றம் மற்றும் பதவி உயர்வு உயர் நீதிமன்ற கலந்தாய்வுடன் ஆளுநரால் செய்யப்படுகிறது."
-          ]
-        }
-      }
-    ],
-    "sec_ordinance_power": [
-      {
-        "title_en": "Article 213 — Ordinance-Making Power of Governor",
-        "title_ta": "உறுப்பு 213 — ஆளுநரின் அவசரச் சட்ட அதிகாரம்",
-        "points": {
-          "en": [
-            "Promulgation Condition: Promulgates ordinances ONLY when the State Legislature (or either House in bicameral) is NOT in session, and he is satisfied that circumstances exist requiring immediate action.",
-            "Legal Force: An ordinance has the SAME force and effect as an Act of the State Legislature.",
-            "Expiry Mandate: Must be laid before the State Legislature when it reassembles. It ceases to operate after 6 WEEKS from the reassembly of the Legislature (or earlier if disapproved by resolution).",
-            "Max Life of Ordinance: 6 Months + 6 Weeks (since maximum gap between legislative sessions is 6 months).",
-            "President's Instruction Proviso: Governor cannot promulgate certain ordinances without prior instructions from the President (e.g. Bills requiring President's reservation or affecting Central laws)."
-          ],
-          "ta": [
-            "பிறப்பிக்கும் நிபந்தனை: மாநில சட்டமன்றம் (அல்லது இரு அவைகளில் ஒன்று) கூட்டத்தொடரில் இல்லாத போது, உடனடி நடவடிக்கை தேவைப்படும் சூழல் நிலவினால் மட்டுமே அவசரச் சட்டம் பிறப்பிக்க முடியும்.",
-            "சட்டப்பூர்வ அதிகாரம்: அவசரச் சட்டம் மாநில சட்டமன்றச் சட்டத்திற்கு இணையான அதே அதிகாரத்தையும் விளைவையும் கொண்டது.",
-            "காலாவதி விதி: சட்டமன்றம் மீண்டும் கூடியதும் அதன் முன் சமர்ப்பிக்கப்பட வேண்டும். கூடிய நாளில் இருந்து 6 வாரங்களுக்குப் பின் (அல்லது நிராகரிப்புத் தீர்மானம் நிறைவேற்றப்பட்டால் அதற்கு முன்பே) காலாவதியாகும்.",
-            "அதிகபட்ச ஆயுட்காலம்: 6 மாதங்கள் + 6 வாரங்கள் (கூட்டத்தொடர்களுக்கு இடையிலான அதிகபட்ச இடைவெளி 6 மாதங்கள் என்பதால்).",
-            "குடியரசுத் தலைவர் முன்-அனுமதி விதி: சில அவசரச் சட்டங்களைக் குடியரசுத் தலைவரின் முன்-அனுமதியின்றி ஆளுநர் பிறப்பிக்க முடியாது (எ.கா. குடியரசுத் தலைவர் ஒப்புதல் தேவைப்படும் மசோதாக்கள்)."
-          ]
-        }
-      }
-    ],
-    "revision_cards": [
-      {
-        "id": "gov_p2_c1",
-        "front_en": "Who appoints the Advocate General of a State under Article 165?",
-        "front_ta": "உறுப்பு 165-ன் கீழ் மாநில அட்வகேட் ஜெனரலை நியமிப்பவர் யார்?",
-        "back_en": "Governor of the State (Holds office during the pleasure of the Governor).",
-        "back_ta": "மாநில ஆளுநர் (ஆளுநரின் விருப்பம் உள்ளவரை பதவியில் நீடிப்பார்)."
-      },
-      {
-        "id": "gov_p2_c2",
-        "front_en": "Who appoints and who removes the Chairman and Members of State Public Service Commission (SPSC)?",
-        "front_ta": "SPSC தலைவர் மற்றும் உறுப்பினர்களை நியமிப்பவர் யார்? பதவி நீக்கம் செய்பவர் யார்?",
-        "back_en": "APPOINTED by Governor (Art 315), BUT REMOVED ONLY BY THE PRESIDENT under Article 317.",
-        "back_ta": "நியமிப்பவர் ஆளுநர் (விதி 315), ஆனால் பதவி நீக்கம் செய்பவர் குடியரசுத் தலைவர் மட்டுமே (விதி 317)."
-      },
-      {
-        "id": "gov_p2_c3",
-        "front_en": "What additional field is included in MLC nomination (Art 171) that is NOT present in Rajya Sabha nomination (Art 80)?",
-        "front_ta": "மாநிலங்களவை நியமனத்தில் (விதி 80) இல்லாத எந்தக் கூடுதல் துறை மேலவை நியமனத்தில் (விதி 171) உள்ளது?",
-        "back_en": "'Co-operative Movement' (Literature, Science, Art, Co-operative Movement, Social Service).",
-        "back_ta": "'கூட்டுறவு இயக்கம்' (இலக்கியம், அறிவியல், கலை, கூட்டுறவு இயக்கம், சமூக சேவை)."
-      },
-      {
-        "id": "gov_p2_c4",
-        "front_en": "What are the 4 options for a Governor when a Bill is presented under Article 200?",
-        "front_ta": "உறுப்பு 200-ன் கீழ் மசோதா சமர்ப்பிக்கப்படும் போது ஆளுநருக்கு உள்ள 4 சாய்வுகள் யாவை?",
-        "back_en": "1. Give Assent; 2. Withhold Assent; 3. Return for Reconsideration; 4. Reserve for President.",
-        "back_ta": "1. ஒப்புதல் அளித்தல்; 2. ஒப்புதலை நிறுத்துதல்; 3. மறுபரிசீலனைக்கு திருப்புதல்; 4. குடியரசுத் தலைவருக்கு ஒதுக்குதல்."
-      },
-      {
-        "id": "gov_p2_c5",
-        "front_en": "Can the Governor PARDON a death sentence under Article 161?",
-        "front_ta": "உறுப்பு 161-ன் கீழ் ஆளுநர் மரண தண்டனையை முற்றிலும மன்னிக்க முடியுமா?",
-        "back_en": "NO. ONLY the President under Article 72 can pardon a death sentence. Governor can only suspend, remit, or commute it.",
-        "back_ta": "இல்லை. குடியரசுத் தலைவர் மட்டுமே மரண தண்டனையை மன்னிக்க முடியும் (விதி 72). ஆளுநர் அதை ஒத்திவைக்க அல்லது குறைக்க மட்டுமே முடியும்."
-      },
-      {
-        "id": "gov_p2_c6",
-        "front_en": "Under Article 213, when does a Governor's Ordinance cease to operate after reassembly?",
-        "front_ta": "உறுப்பு 213-ன் கீழ் சட்டமன்றம் மீண்டும் கூடிய நாளில் இருந்து ஆளுநர் அவசரச் சட்டம் எப்போது காலாவதியாகும்?",
-        "back_en": "Ceases to operate after 6 WEEKS from reassembly of the State Legislature.",
-        "back_ta": "மாநில சட்டமன்றம் மீண்டும் கூடிய நாளில் இருந்து 6 வாரங்களில் காலாவதியாகும்."
-      },
-      {
-        "id": "gov_p2_c7",
-        "front_en": "Is a Money Bill introduced in Assembly with prior recommendation of Governor?",
-        "front_ta": "ஆளுநரின் முன் பரிந்துரையுடன் மட்டுமே பண மசோதா சட்டப்பேரவையில் அறிமுகப்படுத்தப்படுமா?",
-        "back_en": "YES. Under Article 207(1), Money Bills require prior recommendation of Governor.",
-        "back_ta": "ஆம். உறுப்பு 207(1)-ன் படி பண மசோதாக்களுக்கு ஆளுநரின் முன் பரிந்துரை கட்டாயமாகும்."
-      },
-      {
-        "id": "gov_p2_c8",
-        "front_en": "Who appoints District Judges in a State under Article 233?",
-        "front_ta": "உறுப்பு 233-ன் கீழ் மாநிலத்தில் மாவட்ட நீதிபதிகளை நியமிப்பவர் யார்?",
-        "back_en": "Governor of the State in consultation with the High Court.",
-        "back_ta": "மாநில உயர் நீதிமன்றக் கலந்தாய்வுடன் மாநில ஆளுநர்."
-      },
-      {
-        "id": "gov_p2_c9",
-        "front_en": "What is the maximum life of an Ordinance promulgated by Governor?",
-        "front_ta": "ஆளுநர் பிறப்பிக்கும் அவசரச் சட்டத்தின் அதிகபட்ச ஆயுட்காலம் என்ன?",
-        "back_en": "6 Months + 6 Weeks.",
-        "back_ta": "6 மாதங்கள் + 6 வாரங்கள்."
-      },
-      {
-        "id": "gov_p2_c10",
-        "front_en": "Under Article 164(2), to whom is the Council of Ministers collectively responsible?",
-        "front_ta": "உறுப்பு 164(2)-ன் கீழ் அமைச்சரவை யாருக்குக் கூட்டாகப் பொறுப்பானது?",
-        "back_en": "Collectively responsible to the State Legislative Assembly.",
-        "back_ta": "மாநிலச் சட்டப்பேரவைக்குக் கூட்டாகப் பொறுப்பானது."
-      }
-    ],
-    "comparison_tables": [
-      {
-        "id": "tbl_gov_vs_pres_powers_p2",
-        "title_en": "1. Governor vs President Powers Comparison",
-        "title_ta": "1. ஆளுநர் vs குடியரசுத் தலைவர் அதிகாரங்கள் ஒப்பீடு",
-        "headers_en": ["Power Dimension", "Governor of a State", "President of India"],
-        "headers_ta": ["அதிகார அம்சம்", "மாநில ஆளுநர்", "இந்தியக் குடியரசுத் தலைவர்"],
-        "rows_en": [
-          ["Executive Actions", "Expressed in Governor's name for State (Art 166)", "Expressed in President's name for Union (Art 77)"],
-          ["Ordinance Article", "Article 213 (State Legislative subjects)", "Article 123 (Union & Concurrent subjects)"],
-          ["Pardon of Death Sentence", "CANNOT PARDON death sentence (Art 161)", "CAN PARDON death sentence (Art 72)"],
-          ["Court-Martial Pardons", "NO POWER over Military Courts", "FULL POWER over Military Courts (Art 72)"],
-          ["Diplomatic & Military Powers", "NO diplomatic or military command powers", "Supreme Commander of Armed Forces & Diplomatic Head"],
-          ["Bill Assent Options", "4 Options (Assent, Withhold, Return, Reserve) (Art 200)", "3 Options (Assent, Withhold, Return) (Art 111)"]
-        ],
-        "rows_ta": [
-          ["நிர்வாக ஆணைகள்", "மாநில அளவில் ஆளுநர் பெயரால் வெளியாகும் (விதி 166)", "மத்திய அளவில் குடியரசுத் தலைவர் பெயரால் வெளியாகும் (விதி 77)"],
-          ["அவசரச் சட்ட விதி", "உறுப்பு 213 (மாநில சட்டமன்றப் பட்டியல்கள்)", "உறுப்பு 123 (மத்திய & பொதுப் பட்டியல்கள்)"],
-          ["மரண தண்டனை மன்னிப்பு", "மரண தண்டனையை முற்றிலும மன்னிக்க முடியாது (விதி 161)", "மரண தண்டனையை முற்றிலும மன்னிக்க முடியும் (விதி 72)"],
-          ["ராணுவ நீதிமன்ற மன்னிப்பு", "ராணுவ நீதிமன்றத் தண்டனையில் அதிகாரமில்லை", "ராணுவ நீதிமன்றத் தண்டனையில் முழு அதிகாரம் (விதி 72)"],
-          ["இராஜதந்திர & ராணுவ அதிகாரம்", "இராஜதந்திர அல்லது ராணுவ அதிகாரங்கள் இல்லை", "முப்படைகளின் தலைமைத் தளபதி & இராஜதந்திரத் தலைவர்"],
-          ["மசோதா ஒப்புதல் சாய்வுகள்", "4 சாய்வுகள் (ஒப்புதல், நிறுத்தம், திருப்புதல், ஒதுக்கீடு) (விதி 200)", "3 சாய்வுகள் (ஒப்புதல், நிறுத்தம், திருப்புதல்) (விதி 111)"]
-        ]
-      },
-      {
-        "id": "tbl_gov_vs_cm_exec_p2",
-        "title_en": "2. Governor vs Chief Minister Executive Role",
-        "title_ta": "2. ஆளுநர் vs முதலமைச்சர் நிர்வாகப் பங்கு",
-        "headers_en": ["Dimension", "Governor of a State", "Chief Minister of a State"],
-        "headers_ta": ["அம்சம்", "மாநில ஆளுநர்", "மாநில முதலமைச்சர்"],
-        "rows_en": [
-          ["Executive Title", "De Jure (Formal) Head of State Executive", "De Facto (Real) Head of State Administration"],
-          ["Appointments", "Appoints CM, Ministers, Advocate General, SPSC", "Advises Governor on all ministerial appointments"],
-          ["Cabinet Meetings", "Does not attend Cabinet meetings", "Presides over Cabinet meetings and directs policy"],
-          ["Communication Bridge", "Receives administrative info from CM under Art 167", "Duty to communicate all Cabinet decisions to Governor (Art 167)"]
-        ],
-        "rows_ta": [
-          ["நிர்வாகத் தலைப்பு", "மாநில நிர்வாகத்தின் பெயரளவு (De Jure) தலைவர்", "மாநில நிர்வாகத்தின் உண்மையான (De Facto) தலைவர்"],
-          ["நியமனங்கள்", "முதலமைச்சர், அமைச்சர்கள், வழக்கறிஞரை நியமிக்கிறார்", "அனைத்து நியமனங்களுக்கும் ஆளுநருக்கு ஆலோசனை வழங்குகிறார்"],
-          ["கேபினட் கூட்டங்கள்", "கேபினட் கூட்டங்களில் பங்கேற்பதில்லை", "கேபினட் கூட்டங்களுக்குத் தலைமை தாங்கிக் கொள்கைகளை வழிநடத்துகிறார்"],
-          ["தொடர்புப் பாலம்", "விதி 167-ன் கீழ் முதலமைச்சரிடமிருந்து தகவல்களைப் பெறுகிறார்", "அனைத்து முடிவுகளையும் ஆளுநருக்குத் தெரிவிக்கும் கடமை (விதி 167)"]
-        ]
-      },
-      {
-        "id": "tbl_art161_vs_art72_p2",
-        "title_en": "3. Article 161 vs Article 72 Comparison (Pardoning Power)",
-        "title_ta": "3. உறுப்பு 161 vs உறுப்பு 72 ஒப்பீடு (மன்னிப்பளிக்கும் அதிகாரம்)",
-        "headers_en": ["Parameter", "Article 161 (Governor Pardon)", "Article 72 (President Pardon)"],
-        "headers_ta": ["அளவுரு", "உறுப்பு 161 (ஆளுநர் மன்னிப்பு)", "உறுப்பு 72 (குடியரசுத் தலைவர் மன்னிப்பு)"],
-        "rows_en": [
-          ["Jurisdiction", "Applies to offenses against STATE LAWS", "Applies to offenses against UNION LAWS"],
-          ["Pardon Death Sentence", "CANNOT PARDON death sentence completely", "CAN PARDON death sentence completely"],
-          ["Suspend Death Sentence", "CAN suspend, remit, or commute death sentence", "CAN suspend, remit, or commute death sentence"],
-          ["Court-Martial Sentences", "NO POWER over Court-Martial / Military Courts", "FULL POWER over Court-Martial / Military Courts"]
-        ],
-        "rows_ta": [
-          ["அதிகார வரம்பு", "மாநிலச் சட்டங்களுக்கு எதிரான குற்றங்களுக்கு பொருந்தும்", "மத்தியச் சட்டங்களுக்கு எதிரான குற்றங்களுக்கு பொருந்தும்"],
-          ["மரண தண்டனை மன்னிப்பு", "மரண தண்டனையை முற்றிலும மன்னிக்க முடியாது", "மரண தண்டனையை முற்றிலும மன்னிக்க முடியும்"],
-          ["மரண தண்டனைக் குறைப்பு", "மரண தண்டனையை ஒத்திவைக்கலாம், குறைக்கலாம், மாற்றலாம்", "மரண தண்டனையை ஒத்திவைக்கலாம், குறைக்கலாம், மாற்றலாம்"],
-          ["ராணுவ நீதிமன்றத் தண்டனை", "ராணுவ நீதிமன்றத் தண்டனையில் அதிகாரமில்லை", "ராணுவ நீதிமன்றத் தண்டனையில் முழு அதிகாரம் உண்டு"]
-        ]
-      },
-      {
-        "id": "tbl_art213_vs_art123_p2",
-        "title_en": "4. Governor's Ordinance (Art 213) vs President's Ordinance (Art 123)",
-        "title_ta": "4. ஆளுநர் அவசரச் சட்டம் (விதி 213) vs குடியரசுத் தலைவர் அவசரச் சட்டம் (விதி 123)",
-        "headers_en": ["Feature", "Governor's Ordinance (Article 213)", "President's Ordinance (Article 123)"],
-        "headers_ta": ["அம்சம்", "ஆளுநர் அவசரச் சட்டம் (உறுப்பு 213)", "குடியரசுத் தலைவர் அவசரச் சட்டம் (உறுப்பு 123)"],
-        "rows_en": [
-          ["Legislative Scope", "Limited to State List and Concurrent List", "Covers Union List and Concurrent List"],
-          ["Session Condition", "Promulgated when State Assembly/Legislature is NOT in session", "Promulgated when Parliament is NOT in session"],
-          ["Prior Instruction", "Requires President's prior instruction for certain subjects", "No prior instruction needed from any outside authority"],
-          ["Max Expiry Duration", "Ceases 6 weeks after reassembly of State Legislature", "Ceases 6 weeks after reassembly of Parliament"]
-        ],
-        "rows_ta": [
-          ["சட்டமன்ற எல்லை", "மாநிலப் பட்டியல் மற்றும் பொதுப் பட்டியலுக்கு உட்பட்டது", "மத்தியப் பட்டியல் மற்றும் பொதுப் பட்டியலுக்கு உட்பட்டது"],
-          ["கூட்டத்தொடர் நிபந்தனை", "மாநில சட்டமன்றம் கூட்டத்தொடரில் இல்லாத போது பிறப்பிக்கப்படும்", "நாடாளுமன்றம் கூட்டத்தொடரில் இல்லாத போது பிறப்பிக்கப்படும்"],
-          ["முன்-அனுமதி", "சில விஷயங்களுக்கு குடியரசுத் தலைவரின் முன்-அனுமதி தேவை", "யாருடைய முன்-அனுமதியும் தேவையில்லை"],
-          ["அதிகபட்ச காலாவதி", "சட்டமன்றம் மீண்டும் கூடிய 6 வாரங்களில் காலாவதியாகும்", "நாடாளுமன்றம் மீண்டும் கூடிய 6 வாரங்களில் காலாவதியாகும்"]
-        ]
-      },
-      {
-        "id": "tbl_legislative_vs_executive_p2",
-        "title_en": "5. Governor's Legislative Power vs Executive Power",
-        "title_ta": "5. ஆளுநரின் சட்டமன்ற அதிகாரம் vs நிர்வாக அதிகாரம்",
-        "headers_en": ["Aspect", "Legislative Power", "Executive Power"],
-        "headers_ta": ["கூறு", "சட்டமன்ற அதிகாரம்", "நிர்வாக அதிகாரம்"],
-        "rows_en": [
-          ["Primary Focus", "Enactment of State laws, summoning sessions, Bill assent", "Administration of State, executive orders, appointments"],
-          ["Constitutional Articles", "Articles 174, 175, 176, 200, 201, 213", "Articles 154, 164, 165, 166, 315"],
-          ["Key Actions", "Promulgating ordinances, Assenting to Bills, Nominating 1/6th MLCs", "Appointing CM, Ministers, Advocate General, SEC, SPSC members"],
-          ["Assembly Role", "Summoning, proroguing, and dissolving Assembly", "Conducting administration in Governor's name"]
-        ],
-        "rows_ta": [
-          ["முதன்மை கவனம்", "மாநிலச் சட்டங்களை இயற்றுதல், அவையைக் கூட்டுதல், மசோதா ஒப்புதல்", "மாநில நிர்வாகம், நிர்வாக ஆணைகள், நியமனங்கள்"],
-          ["அரசியலமைப்பு விதிகள்", "உறுப்புகள் 174, 175, 176, 200, 201, 213", "உறுப்புகள் 154, 164, 165, 166, 315"],
-          ["முக்கியச் செயல்பாடுகள்", "அவசரச் சட்டம் பிறப்பித்தல், மசோதா ஒப்புதல், 1/6 மேலவை எம்பி நியமனம்", "முதலமைச்சர், அமைச்சர்கள், வழக்கறிஞர், SEC, SPSC நியமனம்"],
-          ["சட்டமன்றப் பங்கு", "சட்டப்பேரவையைக் கூட்டுதல், ஒத்திவைத்தல் மற்றும் கலைத்தல்", "ஆளுநர் பெயரால் மாநில நிர்வாகத்தை நடத்துதல்"]
-        ]
-      },
-      {
-        "id": "tbl_assent_vs_reservation_p2",
-        "title_en": "6. Assent vs Withholding Assent vs Reservation for President (Art 200)",
-        "title_ta": "6. ஒப்புதல் vs நிறுத்தம் vs குடியரசுத் தலைவர் ஒதுக்கீடு (விதி 200)",
-        "headers_en": ["Option under Art 200", "Action Taken by Governor", "Legal Result"],
-        "headers_ta": ["விதி 200 சாய்வு", "ஆளுநர் எடுக்கும் நடவடிக்கை", "சட்டப்பூர்வ முடிவு"],
-        "rows_en": [
-          ["Give Assent", "Signs the Bill passed by Legislature", "Bill becomes an enforceable Act of State Legislature"],
-          ["Withhold Assent", "Refuses to sign the Bill", "Bill dies and fails to become law"],
-          ["Return for Reconsideration", "Sends non-Money Bill back with message for changes", "If re-passed by Legislature, Governor MUST give assent"],
-          ["Reserve for President", "Sends Bill for President's consideration (Art 201)", "Governor's role ends; President decides under Art 201"]
-        ],
-        "rows_ta": [
-          ["ஒப்புதல் அளித்தல்", "சட்டமன்றம் நிறைவேற்றிய மசோதாவில் கையொப்பமிடுகிறார்", "மசோதா மாநிலச் சட்டமாக நடைமுறைக்கு வருகிறது"],
-          ["ஒப்புதலை நிறுத்துதல்", "மசோதாவில் கையொப்பமிட மறுக்கிறார்", "மசோதா நிராகரிக்கப்பட்டு சட்டமாகாமல் போகிறது"],
-          ["மறுபரிசீலனைக்கு அனுப்புதல்", "பண மசோதா அல்லாததை திருத்தப் பரிந்துரையுடன் அனுப்புகிறார்", "சட்டமன்றம் மீண்டும் நிறைவேற்றினால் ஆளுநர் கட்டாயம் ஒப்புதல் அளிக்க வேண்டும்"],
-          ["குடியரசுத் தலைவருக்கு ஒதுக்கீடு", "மசோதாவைக் குடியரசுத் தலைவர் பரிசீலனைக்கு அனுப்புகிறார் (விதி 201)", "ஆளுநரின் பங்கு முடிகிறது; குடியரசுத் தலைவர் விதி 201-ன் கீழ் முடிவெடுப்பார்"]
-        ]
-      }
-    ],
-    "mind_map": [
-      {
-        "title": "Governor Powers & Functions (Part VI - Articles 154 to 213)",
-        "short_label": "Governor Part 2",
-        "children": [
-          {
-            "title": "1. Executive Powers",
-            "short_label": "Executive",
-            "children": [
-              {"title": "Art 166: Executive actions in Governor's name", "short_label": "Art 166"},
-              {"title": "Art 164 & 165: Appoints CM, Ministers (Collective Responsibility Art 164(2)), Advocate General", "short_label": "Appointments"},
-              {"title": "Art 315/317: Appoints SPSC (Removed ONLY by President)", "short_label": "SPSC Trap"}
-            ]
-          },
-          {
-            "title": "2. Legislative Powers",
-            "short_label": "Legislative",
-            "children": [
-              {"title": "Art 174, 175 & 176: Summoning, proroguing, address & messages", "short_label": "Art 174-176"},
-              {"title": "Art 171(5): Nominates 1/6th MLCs (Includes Co-operative Movement)", "short_label": "Art 171"},
-              {"title": "Art 200 & 201: 4 Bill Assent options & President Reservation", "short_label": "Art 200/201"}
-            ]
-          },
-          {
-            "title": "3. Financial & Judicial Powers",
-            "short_label": "Financial & Judicial",
-            "children": [
-              {"title": "Art 207: Money Bill prior recommendation", "short_label": "Money Bill"},
-              {"title": "Art 161: Pardoning power (Cannot pardon death sentence or Court-Martial)", "short_label": "Art 161"}
-            ]
-          },
-          {
-            "title": "4. Ordinance Power",
-            "short_label": "Ordinance",
-            "children": [
-              {"title": "Art 213: Promulgated when Legislature not in session (Max 6 weeks after reassembly)", "short_label": "Art 213"}
-            ]
-          }
-        ]
-      }
-    ],
-    "tnpsc_traps": [
-      {
-        "title": "1. Death Sentence Pardoning Trap (மரண தண்டனை மன்னிப்புப் பொறி)",
-        "points": {
-          "en": [
-            "TRAP: Believing the Governor can completely pardon a death sentence under Article 161.",
-            "FACT: Under Article 161, the Governor CANNOT PARDON a death sentence. ONLY the President of India under Article 72 can pardon a death sentence. The Governor can only suspend, remit, or commute a death sentence."
-          ],
-          "ta": [
-            "பொறி: உறுப்பு 161-ன் கீழ் ஆளுநர் மரண தண்டனையை முற்றிலும மன்னிக்க முடியும் என நினைப்பது.",
-            "உண்மை: உறுப்பு 161-ன் கீழ் ஆளுநரால் மரண தண்டனையை முற்றிலும் மன்னிக்க (Pardon) முடியாது. குடியரசுத் தலைவர் மட்டுமே மரண தண்டனையை மன்னிக்க முடியும். ஆளுநர் மரண தண்டனையைக் குறைக்கவோ ஒத்திவைக்கவோ மட்டுமே முடியும்."
-          ]
-        }
-      },
-      {
-        "title": "2. SPSC Member Removal Trap (SPSC உறுப்பினர் நீக்கப் பொறி)",
-        "points": {
-          "en": [
-            "TRAP: Assuming the Governor who appoints SPSC Chairman and Members can also remove them.",
-            "FACT: While the Governor APPOINTS the Chairman and Members of State Public Service Commission (Art 315), they can be REMOVED ONLY BY THE PRESIDENT under Article 317 on grounds of misbehaviour after a Supreme Court inquiry."
-          ],
-          "ta": [
-            "பொறி: SPSC தலைவர் மற்றும் உறுப்பினர்களை நியமிக்கும் ஆளுநரே அவர்களைப் பதவி நீக்கமும் செய்யலாம் என நினைப்பது.",
-            "உண்மை: ஆளுநர் SPSC உறுப்பினர்களை நியமித்தாலும் (விதி 315), அவர்களைப் பதவி நீக்கம் செய்யும் அதிகாரம் உச்ச நீதிமன்ற விசாரணைக்குப் பின் குடியரசுத் தலைவருக்கு மட்டுமே உண்டு (விதி 317)."
-          ]
-        }
-      },
-      {
-        "title": "3. Ordinance Expiry Timeline Trap (அவசரச் சட்டக் காலாவதி பொறி)",
-        "points": {
-          "en": [
-            "TRAP: Believing a Governor's ordinance automatically lasts for 6 months.",
-            "FACT: Under Article 213, an ordinance must be laid before the Legislature when it reassembles and ceases to operate after 6 WEEKS from reassembly. 6 months is the maximum gap between sessions."
-          ],
-          "ta": [
-            "பொறி: ஆளுநரின் அவசரச் சட்டம் தானாகவே 6 மாதங்கள் நீடிக்கும் என நினைப்பது.",
-            "உண்மை: உறுப்பு 213-ன் படி சட்டமன்றம் மீண்டும் கூடிய நாளில் இருந்து 6 வாரங்களில் அவசரச் சட்டம் காலாவதியாகும். 6 மாதங்கள் என்பது கூட்டத்தொடர்களுக்கு இடையிலான அதிகபட்ச இடைவெளியாகும்."
-          ]
-        }
-      },
-      {
-        "title": "4. Legislative Council Nomination Trap (சட்ட மேலவை நியமனப் பொறி)",
-        "points": {
-          "en": [
-            "TRAP: Thinking the fields for nomination to State Legislative Council (Art 171) are identical to Rajya Sabha (Art 80).",
-            "FACT: Article 171(5) for MLC nomination includes 'CO-OPERATIVE MOVEMENT', which is NOT present in Article 80 for Rajya Sabha nominations by President!"
-          ],
-          "ta": [
-            "பொறி: சட்ட மேலவை நியமனத் துறைகளும் (விதி 171) மாநிலங்களவை நியமனத் துறைகளும் (விதி 80) ஒன்றுதான் என நினைப்பது.",
-            "உண்மை: மேலவை நியமனத்தில் 'கூட்டுறவு இயக்கம்' (Co-operative Movement) என்ற துறை கூடுதலாக உள்ளது. இது மாநிலங்களவை நியமனத்தில் இல்லை!"
-          ]
-        }
-      },
-      {
-        "title": "5. Re-passed Reserved Bill Assent Trap (மீண்டும் நிறைவேற்றப்பட்ட மசோதா பொறி)",
-        "points": {
-          "en": [
-            "TRAP: Believing the President MUST give assent if a reserved Bill under Art 201 is re-passed by the State Legislature.",
-            "FACT: When a Bill is returned by Governor to Legislature (Art 200), Governor MUST assent if re-passed. BUT if a Bill is reserved for President (Art 201), the President is NOT BOUND to give assent even if re-passed by State Legislature!"
-          ],
-          "ta": [
-            "பொறி: ஒதுக்கப்பட்ட மசோதாவை மாநில சட்டமன்றம் மீண்டும் நிறைவேற்றினால் குடியரசுத் தலைவர் கட்டாயம் ஒப்புதல் அளிக்க வேண்டும் என நினைப்பது.",
-            "உண்மை: விதி 200-ன் கீழ் ஆளுநர் திருப்பிய மசோதாவை மீண்டும் நிறைவேற்றினால் ஆளுநர் ஒப்புதல் அளிக்க வேண்டும். ஆனால் விதி 201-ன் கீழ் குடியரசுத் தலைவருக்கு ஒதுக்கப்பட்ட மசோதாவை மீண்டும் நிறைவேற்றினாலும் குடியரசுத் தலைவர் ஒப்புதல் அளிக்கக் கடமைப்பட்டவரல்ல!"
-          ]
-        }
-      }
-    ],
-    "quick_revision": {
-      "en": [
-        "Executive Powers: Art 166 (Orders in Governor's name), Art 164 (Appoints CM & Ministers with collective responsibility), Art 165 (Advocate General), Art 315 (Appoints SPSC; Removed ONLY by President).",
-        "Legislative Powers: Art 174 (Summon, prorogue, dissolve Assembly), Art 175 (Right to address and send messages), Art 176 (Special address), Art 171(5) (Nominates 1/6th MLCs with Co-operative movement).",
-        "Bill Assent: Art 200 (Assent, Withhold, Return non-Money Bill, Reserve for President). Art 201 (President options for reserved Bills).",
-        "Financial Powers: Art 207 (Money Bill prior recommendation), Art 202 (State Budget), Art 267(2) (State Contingency Fund).",
-        "Judicial Powers: Art 161 (Pardon state offences; CANNOT pardon death sentence or Court-Martial). Art 217 (Consulted for HC Judges), Art 233 (Appoints District Judges).",
-        "Ordinance Power: Art 213 (Promulgated when Legislature not in session; Expires 6 weeks after reassembly; Max 6 months + 6 weeks)."
-      ],
-      "ta": [
-        "நிர்வாக அதிகாரங்கள்: விதி 166 (ஆளுநர் பெயரால் ஆணைகள்), விதி 164 (கூட்டுப் பொறுப்புடன் முதலமைச்சர் & அமைச்சர்கள் நியமனம்), விதி 165 (அட்வகேட் ஜெனரல்), விதி 315 (SPSC நியமனம்; நீக்கம் குடியரசுத் தலைவர் மட்டுமே).",
-        "சட்டமன்ற அதிகாரங்கள்: விதி 174 (கூட்டுதல், ஒத்திவைத்தல், அவையைக் கலைத்தல்), விதி 175 (உரையாற்ற மற்றும் செய்தி அனுப்பும் உரிமை), விதி 176 (சிறப்பு உரை), விதி 171(5) (கூட்டுறவு இயக்கம் உட்பட 1/6 மேலவை எம்பி நியமனம்).",
-        "மசோதா ஒப்புதல்: விதி 200 (ஒப்புதல், நிறுத்தம், திருப்புதல், குடியரசுத் தலைவர் ஒதுக்கீடு). விதி 201 (ஒதுக்கப்பட்ட மசோதாவில் குடியரசுத் தலைவர் முடிவுகள்).",
-        "நிதி அதிகாரங்கள்: விதி 207 (பண மசோதா முன்-பரிந்துரை), விதி 202 (மாநில பட்ஜெட்), விதி 267(2) (மாநில அவசரக்கால நிதி).",
-        "நீதித்துறை அதிகாரங்கள்: விதி 161 (மாநிலக் குற்றங்களுக்கு மன்னிப்பு; மரண தண்டனை & ராணுவ நீதிமன்ற மன்னிப்பு இல்லை). விதி 217 (உயர் நீதிமன்ற நீதிபதிகள் கலந்தாய்வு), விதி 233 (மாவட்ட நீதிபதிகள் நியமனம்).",
-        "அவசரச் சட்ட அதிகாரம்: விதி 213 (சட்டமன்றம் இல்லாத போது பிறப்பிப்பு; கூடிய 6 வாரங்களில் காலாவதி; அதிகபட்சம் 6 மாதங்கள் + 6 வாரங்கள்)."
-      ]
-    },
-    "must_remember": {
-      "en": [
-        "MUST REMEMBER: Article 161 = Governor Pardoning Power (CANNOT pardon death sentence).",
-        "MUST REMEMBER: Article 213 = Governor Ordinance Power (Expires 6 weeks after reassembly).",
-        "MUST REMEMBER: Article 200 = Bill Assent Options & President Reservation.",
-        "MUST REMEMBER: SPSC Chairman & Members APPOINTED by Governor, BUT REMOVED ONLY by President (Art 317).",
-        "MUST REMEMBER: MLC nomination (Art 171) includes 'Co-operative Movement'."
-      ],
-      "ta": [
-        "நினைவில் கொள்க: உறுப்பு 161 = ஆளுநர் மன்னிப்பளிக்கும் அதிகாரம் (மரண தண்டனையை மன்னிக்க முடியாது).",
-        "நினைவில் கொள்க: உறுப்பு 213 = ஆளுநர் அவசரச் சட்ட அதிகாரம் (மீண்டும் கூடிய 6 வாரங்களில் காலாவதியாகும்).",
-        "நினைவில் கொள்க: உறுப்பு 200 = மசோதா ஒப்புதல் சாய்வுகள் & குடியரசுத் தலைவர் ஒதுக்கீடு.",
-        "நினைவில் கொள்க: SPSC தலைவரை நியமிப்பவர் ஆளுநர், ஆனால் பதவி நீக்கம் செய்பவர் குடியரசுத் தலைவர் மட்டுமே (விதி 317).",
-        "நினைவில் கொள்க: மேலவை நியமனத்தில் (விதி 171) 'கூட்டுறவு இயக்கம்' சேர்க்கப்பட்டுள்ளது."
-      ]
-    }
-  }
-}
 
-target_file = "data/notes/polity/governor_part_2.json"
-os.makedirs("data/notes/polity", exist_ok=True)
+def get_medium_mcqs():
+    q = []
 
-with open(target_file, "w", encoding="utf-8") as f:
-  json.dump(part2_data, f, ensure_ascii=False, indent=2)
+    # Q1
+    q.append(mk_q(1, "Medium", "Direct",
+        "In B.P. Singhal v. Union of India (2010), what major constitutional principle did the Supreme Court lay down regarding the removal of a Governor by the President under Article 156(1)?",
+        "பி.பி. சிங்கால் எதிர் இந்திய யூனியன் (2010) வழக்கில், சரத்து 156(1)-ன் கீழ் குடியரசுத் தலைவரால் ஆளுநர் நீக்கப்படுவது தொடர்பாக உச்ச நீதிமன்றம் வழங்கிய முக்கிய அரசியலமைப்புத் தீர்ப்பு என்ன?",
+        {"A": "The President can remove a Governor at any time without any reason and the removal is not subject to judicial review", "B": "While the President can remove a Governor without showing cause, the power cannot be exercised arbitrarily, whimsically or for compelling political reasons, and is subject to judicial review", "C": "A Governor can be removed ONLY through an impeachment process in the State Assembly", "D": "A Governor cannot be removed before completing his 5-year term under any circumstances"},
+        {"A": "குடியரசுத் தலைவர் எந்தக் காரணமுமின்றி எந்த நேரத்திலும் ஆளுநரை நீக்கலாம், அந்த நீக்கம் நீதித்துறை மறுஆய்வுக்கு உட்பட்டது அல்ல", "B": "காரணம் கூறாமல் ஆளுநரை நீக்கக் குடியரசுத் தலைவருக்கு அதிகாரம் இருந்தாலும், அப் அதிகாரம் தன்னிச்சையாகவோ அல்லது அரசியல் காரணங்களுக்காகவோ பயன்படுத்தப்படக் கூடாது, மேலும் அது நீதித்துறை மறுஆய்வுக்கு உட்பட்டது", "C": "மாநில சட்டமன்றத்தில் தீர்மானம் நிறைவேற்றுவதன் மூலம் மட்டுமே ஆளுநரை நீக்க முடியும்", "D": "எந்தச் சூழ்நிலையிலும் 5 ஆண்டுகள் முடிவதற்கு முன் ஆளுநரை நீக்க முடியாது"},
+        "B",
+        "In B.P. Singhal (2010), a 5-judge Constitution Bench held that while the President has the power to remove a Governor without giving reason, this power cannot be exercised arbitrarily or on political grounds. A prima facie case of arbitrary removal is subject to judicial review.",
+        "பி.பி. சிங்கால் (2010) வழக்கில் 5 நீதிபதிகள் அமர்வு: காரணம் கூறாமல் ஆளுநரை நீக்கக் குடியரசுத் தலைவருக்கு அதிகாரம் இருந்தாலும், அப் அதிகாரம் தன்னிச்சையாகவோ அரசியல் காரணங்களுக்காகவோ பயன்படுத்தப்படக் கூடாது என்றும், தன்னிச்சையான நீக்கம் நீதித்துறை மறுஆய்வுக்கு உட்பட்டது என்றும் தீர்ப்பளித்தது.",
+        "Candidates assume 'pleasure of President' means absolute untrammeled power without any judicial check. B.P. Singhal case restricted arbitrary removal.",
+        "'குடியரசுத் தலைவரின் விருப்பம்' என்றால் எந்தக் கேள்வியும் கேட்க முடியாது எனத் தேர்வர்கள் தவறாக எண்ணுகின்றனர். பி.பி. சிங்கால் வழக்கு தன்னிச்சையான நீக்கத்தைத் தடுத்தது.",
+        "Governor holds office during pleasure of President under Art 156(1).",
+        "சரத்து 156(1)-ன் படி ஆளுநர் குடியரசுத் தலைவரின் விருப்பம் உள்ளவரை பதவியில் இருப்பார்.",
+        "Change of Central Government is not a valid ground for removing Governors.",
+        "மத்திய அரசு மாறுவது மட்டும் ஆளுநர்களை நீக்குவதற்கான செல்லுபடியாகும் காரணியாகாது."))
 
-print(f"✅ Governor Part 2 with revision_cards successfully updated and saved to: {target_file}")
+    # Q2
+    q.append(mk_q(2, "Medium", "Direct",
+        "In Hargovind Pant v. Raghukul Tilak (1979), what constitutional status did the Supreme Court assign to the office of the Governor of a State?",
+        "ஹர்கோவிந்த் பந்த் எதிர் ரகு குல திலக் (1979) வழக்கில், மாநில ஆளுநர் பதவிக்கு உச்ச நீதிமன்றம் என்ன அரசியலமைப்பு அந்தஸ்தை வழங்கியது?",
+        {"A": "The office of Governor is an employment under the Central Government", "B": "The office of Governor is an independent constitutional office, not subordinate to or under the control of the Central Government", "C": "The Governor is a civil servant governed by All India Services Rules", "D": "The Governor is a subordinate agent of the Union Law Ministry"},
+        {"A": "ஆளுநர் பதவி என்பது மத்திய அரசின் கீழ் உள்ள ஒரு வேலைவாய்ப்பு ஆகும்", "B": "ஆளுநர் பதவி என்பது ஒரு சுயாதீனமான அரசியலமைப்புப் பதவியாகும்; அது மத்திய அரசின் கட்டுப்பாட்டிலோ அல்லது கீழ்நிலையிலோ இல்லை", "C": "ஆளுநர் என்பவர் அகில இந்திய சேவை விதிகளுக்கு உட்பட்ட ஒரு அரசு ஊழியர் ஆவார்", "D": "ஆளுநர் என்பவர் மத்திய சட்ட அமைச்சகத்தின் கீழ்நிலை முகவர் ஆவார்"},
+        "B",
+        "In Hargovind Pant (1979), the Supreme Court ruled that the office of Governor is an independent constitutional office and is NOT an employment under the Government of India, nor is it subordinate to the Union Government.",
+        "ஹர்கோவிந்த் பந்த் (1979) வழக்கில் உச்ச நீதிமன்றம்: ஆளுநர் பதவி என்பது ஒரு சுயாதீன அரசியலமைப்புப் பதவியே தவிர மத்திய அரசின் கீழ் உள்ள வேலைவாய்ப்பு அல்ல, மேலும் அது மத்திய அரசுக்குக் கீழ்நிலையானதும் அல்ல எனத் தீர்ப்பளித்தது.",
+        "Do not confuse Governor's appointment by President with employment/service under Central Government.",
+        "குடியரசுத் தலைவரால் நியமிக்கப்படுவதால் அது மத்திய அரசு வேலைவாய்ப்பு எனக் குழப்பிக் கொள்ள வேண்டாம்.",
+        "Governor is a constitutional functionary, not a servant of Union.",
+        "ஆளுநர் ஓர் அரசியலமைப்பு அதிகாரி ஆவார், மத்திய அரசின் ஊழியர் அல்ல.",
+        "Reinforced the independent status of the State Executive.",
+        "மாநில நிர்வாகத்தின் சுயாதீன அந்தஸ்தை இத்தீர்ப்பு வலுப்படுத்தியது."))
+
+    # Q3
+    q.append(mk_q(3, "Medium", "Direct",
+        "Under Article 158(3A) of the Constitution, when the same person is appointed as Governor of two or more States, how are his emoluments and allowances allocated among the States?",
+        "சரத்து 158(3A)-ன் படி, ஒரே நபர் இரண்டு அல்லது அதற்கு மேற்பட்ட மாநிலங்களின் ஆளுநராக நியமிக்கப்படும் போது, அவரது ஊதியம் மற்றும் படிகள் மாநிலங்களிடையே எவ்வாறு பிரிக்கப்படுகின்றன?",
+        {"A": "Equally divided among the States", "B": "Allocated among those States in such proportion as the President may by order determine", "C": "Paid entirely by the Union Government", "D": "Paid by the State with the largest population only"},
+        {"A": "மாநிலங்களிடையே சமமாகப் பிரிக்கப்படுகிறது", "B": "குடியரசுத் தலைவர் தனது உத்தரவின் மூலம் தீர்மானிக்கும் விகிதத்தில் அம்மாநிலங்களிடையே பிரிக்கப்படுகிறது", "C": "முழுமையாக மத்திய அரசால் வழங்கப்படுகிறது", "D": "அதிக மக்கள் தொகை கொண்ட மாநிலத்தால் மட்டுமே வழங்கப்படுகிறது"},
+        "B",
+        "Article 158(3A) (inserted by 7th CAA 1956) provides that where the same person is appointed as Governor of two or more States, the emoluments and allowances payable to the Governor shall be allocated among those States in such proportion as the President may by order determine.",
+        "சரத்து 158(3A) (7வது திருத்தம் 1956-ல் சேர்க்கப்பட்டது)-ன் படி, ஒரே நபர் இரண்டு அல்லது அதற்கு மேற்பட்ட மாநிலங்களின் ஆளுநராக நியமிக்கப்படும் போது, குடியரசுத் தலைவர் ஆணையிடும் விகிதத்தில் ஊதியம் மற்றும் படிகள் அம்மாநிலங்களிடையே பிரிக்கப்படும்.",
+        "The salary is NOT doubled for 2 states; it is the SAME single salary allocated between the states by President.",
+        "இரண்டு மாநிலங்களுக்கு ஆளுநராக இருந்தாலும் சம்பளம் இரட்டிப்பாவதில்லை; ஒரே சம்பளம் குடியரசுத் தலைவரால் பிரிக்கப்படுகிறது.",
+        "Inserted by 7th Constitutional Amendment Act, 1956.",
+        "1956-ன் 7வது அரசியலமைப்புத் திருத்தச் சட்டத்தால் சேர்க்கப்பட்டது.",
+        "Prevents double salary drawing while serving multiple states.",
+        "ஒன்றுக்கு மேற்பட்ட மாநிலங்களில் பணியாற்றும்போது இரட்டைச் சம்பளம் பெறுவதைத் தடுக்கிறது."))
+
+    # Q4
+    q.append(mk_q(4, "Medium", "Direct",
+        "Under Article 200 of the Constitution, what is the Governor MANDATED to do if a Bill passed by the State Legislature derogates from the powers of the High Court so as to endanger its constitutional position?",
+        "சரத்து 200-ன் படி, மாநில சட்டமன்றத்தால் நிறைவேற்றப்பட்ட ஒரு மசோதா உயர் நீதிமன்றத்தின் அதிகாரங்களைக் குறைத்து அதன் அரசியலமைப்பு நிலைக்கு ஆபத்தை விளைவிப்பதாக இருந்தால், ஆளுநர் கட்டாயமாக என்ன செய்ய வேண்டும்?",
+        {"A": "He must give assent immediately", "B": "He must not assent to, but shall reserve the Bill for the consideration of the President", "C": "He must return the Bill to the Assembly with amendments", "D": "He must dissolve the State Assembly"},
+        {"A": "அவர் உடனடியாக ஒப்புதல் அளிக்க வேண்டும்", "B": "அவர் ஒப்புதல் அளிக்கக் கூடாது; மாறாக மசோதாவைக் குடியரசுத் தலைவரின் பரிசீலனைக்காகக் கட்டாயம் ஒதுக்கி வைக்க வேண்டும்", "C": "அவர் திருத்தங்களுடன் மசோதாவைச் சட்டமன்றத்திற்குத் திருப்பி அனுப்ப வேண்டும்", "D": "அவர் மாநில சட்டமன்றப் பேரவையைக் கலைக்க வேண்டும்"},
+        "B",
+        "Second Proviso to Article 200 contains a MANDATORY reservation clause: The Governor shall not assent to, but shall reserve for the consideration of the President, any Bill which in his opinion would, if it became law, so derogate from the powers of the High Court as to endanger the position which that Court is by this Constitution designed to fill.",
+        "சரத்து 200-ன் இரண்டாவது விலக்கு விதி கட்டாய ஒதுக்கீட்டைக் கூறுகிறது: உயர் நீதிமன்றத்தின் அரசியலமைப்பு அந்தஸ்தைப் பாதிக்கும் எந்தவொரு மசோதாவிற்கும் ஆளுநர் ஒப்புதல் அளிக்கக் கூடாது; அதை கட்டாயம் குடியரசுத் தலைவரின் பரிசீலனைக்கு ஒதுக்கி வைக்க வேண்டும்.",
+        "This is the ONLY MANDATORY reservation explicitly specified in the Constitution under Article 200.",
+        "சரத்து 200-ன் கீழ் அரசியலமைப்பில் வெளிப்படையாகக் குறிப்பிடப்பட்டுள்ள ஒரே கட்டாய மசோதா ஒதுக்கீடு இதுவே ஆகும்.",
+        "Protects the independence of the State Judiciary/High Court.",
+        "மாநில நீதித்துறை / உயர் நீதிமன்றத்தின் சுதந்திரத்தைப் பாதுகாக்கிறது.",
+        "Other reservations (e.g. ultra vires, DPSP conflict) are discretionary.",
+        "பிற ஒதுக்கீடுகள் (DPSP முரண்பாடு போன்றவை) விருப்ப அதிகாரத்தைச் சேர்ந்தவை."))
+
+    # Q5
+    q.append(mk_q(5, "Medium", "Direct",
+        "Under Article 201 of the Constitution, when a Bill is reserved by the Governor for the consideration of the President, what option does the President NOT have?",
+        "சரத்து 201-ன் படி, ஆளுநரால் குடியரசுத் தலைவரின் பரிசீலனைக்கு ஒதுக்கப்பட்ட மசோதா தொடர்பாகக் குடியரசுத் தலைவருக்கு இல்லாத தேர்வு எது?",
+        {"A": "The President may declare that he assents to the Bill", "B": "The President may declare that he withholds assent therefrom", "C": "The President may direct the Governor to return the Bill (if non-Money Bill) to the State Legislature for reconsideration", "D": "If the State Legislature passes the returned Bill again, the President is constitutionally bound to give his assent"},
+        {"A": "குடியரசுத் தலைவர் மசோதாவிற்கு ஒப்புதல் அளிப்பதாக அறிவிக்கலாம்", "B": "குடியரசுத் தலைவர் ஒப்புதலை நிறுத்தி வைப்பதாக அறிவிக்கலாம்", "C": "தன மசோதா அல்லாதவற்றை மறுபரிசீலனைக்குத் திருப்பி அனுப்புமாறு ஆளுநருக்குப் பணிக்கலாம்", "D": "திருப்பி அனுப்பப்பட்ட மசோதாவை மாநில சட்டமன்றம் மீண்டும் நிறைவேற்றினால், குடியரசுத் தலைவர் கட்டாயம் ஒப்புதல் அளிக்க வேண்டும்"},
+        "D",
+        "Crucial Distinction between Governor (Art 200) and President (Art 201): If the Governor returns a bill and the State Legislature passes it again, the Governor MUST give assent. But if the PRESIDENT directs return of a bill under Art 201 and the State Legislature passes it again within 6 months, the President is STILL NOT BOUND to give assent!",
+        "ஆளுநர் (சரத்து 200) மற்றும் குடியரசுத் தலைவர் (சரத்து 201) இடையிலான முக்கிய வேறுபாடு: ஆளுநர் திருப்பி அனுப்பிய மசோதாவை சட்டமன்றம் மீண்டும் நிறைவேற்றினால் ஆளுநர் கட்டாயம் ஒப்புதல் அளிக்க வேண்டும். ஆனால் குடியரசுத் தலைவர் (சரத்து 201) திருப்பி அனுப்பிய மசோதாவை 6 மாதங்களில் சட்டமன்றம் மீண்டும் நிறைவேற்றினாலும், குடியரசுத் தலைவர் ஒப்புதல் அளிக்கக் கடமைப்பட்டவர் அல்ல!",
+        "President can withhold assent indefinitely even on a re-passed state bill (Pocket Veto).",
+        "மீண்டும் நிறைவேற்றப்பட்ட மாநில மசோதாவிற்கும் குடியரசுத் தலைவர் காலவரையின்றி ஒப்புதலை நிறுத்தலாம்.",
+        "High-yield TNPSC trap comparing Art 200 vs Art 201!",
+        "சரத்து 200 மற்றும் 201 ஒப்பீட்டிலான முக்கிய TNPSC பொறி வினா!",
+        "State Legislature must reconsider the returned bill within 6 months.",
+        "திருப்பி அனுப்பப்பட்ட மசோதாவை மாநில சட்டமன்றம் 6 மாதங்களுக்குள் பரிசீலிக்க வேண்டும்."))
+
+    # Q6
+    q.append(mk_q(6, "Medium", "Direct",
+        "Under Article 213(1) proviso of the Constitution, for which of the following categories of Ordinances is the PREVIOUS INSTRUCTION of the President mandatory before the Governor can promulgate it?",
+        "சரத்து 213(1) விலக்கு விதியின் படி, பின்வரும் எந்த வகை அவசரச்சட்டங்களைப் பிறப்பிப்பதற்கு முன் ஆளுநருக்குக் குடியரசுத் தலைவரின் முன் அறிவுறுத்தல் (Previous Instruction) கட்டாயமாகும்?",
+        {"A": "If a Bill containing the same provisions would have required the previous sanction of the President for introduction", "B": "If he would have deemed it necessary to reserve a Bill containing the same provisions for President's consideration", "C": "If an Act of the State Legislature containing the same provisions would have been invalid unless reserved for President's assent", "D": "All of the above"},
+        {"A": "அதே விதிகளைக் கொண்ட ஒரு மசோதாவை அறிமுகப்படுத்தக் குடியரசுத் தலைவரின் முன் அனுமதி தேவைப்பட்டிருந்தால்", "B": "அதே விதிகளைக் கொண்ட மசோதாவைக் குடியரசுத் தலைவரின் பரிசீலனைக்கு ஒதுக்குவது அவசியம் எனக் கருதினால்", "C": "அதே விதிகளைக் கொண்ட மாநிலச் சட்டம் குடியரசுத் தலைவர் ஒப்புதலுக்கு ஒதுக்கப்பட்டாலன்றி செல்லாததாகியிருந்தால்", "D": "மேற்கூறிய அனைத்தும்"},
+        "D",
+        "Under Article 213(1) proviso, the Governor shall NOT, without instructions from the President, promulgate an Ordinance if: (a) A bill containing same provisions required President's previous sanction, (b) He would have reserved a bill for President, or (c) A state Act containing same provisions required President's assent to be valid.",
+        "சரத்து 213(1) விலக்கு விதியின் படி, மூன்று சந்தர்ப்பங்களில் குடியரசுத் தலைவரின் முன் அறிவுறுத்தல் இன்றி ஆளுநர் அவசரச்சட்டம் பிறப்பிக்கக் கூடாது: (a) மசோதா அறிமுகத்திற்கு முன் அனுமதி தேவைப்பட்டிருந்தால், (b) குடியரசுத் தலைவருக்கு ஒதுக்க நினைத்திருந்தால், (c) குடியரசுத் தலைவர் ஒப்புதலின்றி சட்டம் செல்லாதாகியிருந்தால்.",
+        "Presidential instructions ensure national uniformity and central check on state ordinance power.",
+        "குடியரசுத் தலைவர் அறிவுறுத்தல் மாநில அவசரச்சட்ட அதிகாரம் மீதான மத்திய அரசின் கட்டுப்பாட்டை உறுதி செய்கிறது.",
+        "Applies to matters requiring Presidential clearance.",
+        "குடியரசுத் தலைவர் ஒப்புதல் தேவைப்படும் விவகாரங்களுக்கு இது பொருந்தும்.",
+        "Governor cannot bypass President under Article 213.",
+        "ஆளுநர் சரத்து 213-ன் கீழ் குடியரசுத் தலைவரைத் தவிர்க்க முடியாது."))
+
+    # Q7
+    q.append(mk_q(7, "Medium", "Direct",
+        "In D.C. Wadhwa v. State of Bihar (1987), what landmark ruling did the Supreme Court give regarding the Ordinance-making power of the Governor under Article 213?",
+        "டி.சி. வாத்வா எதிர் பீகார் மாநிலம் (1987) வழக்கில், சரத்து 213-ன் கீழான ஆளுநரின் அவசரச்சட்ட அதிகாரம் தொடர்பாக உச்ச நீதிமன்றம் வழங்கிய மைல்கல் தீர்ப்பு என்ன?",
+        {"A": "Re-promulgation of Ordinances repeatedly without placing them before the Legislature is a fraud on the Constitution and is unconstitutional", "B": "Governor can re-promulgate Ordinances indefinitely without legislative approval", "C": "Ordinances promulgated by Governor are beyond judicial review", "D": "State Assembly cannot disapprove an Ordinance once issued"},
+        {"A": "சட்டமன்றத்தின் முன் வைக்காமல் மீண்டும் மீண்டும் அவசரச்சட்டங்களை மறுபதிப்பு செய்வது (Re-promulgation) அரசியலமைப்பிற்குச் செய்யும் மோசடியாகும், மேலும் அது செல்லாது", "B": "சட்டமன்ற ஒப்புதலின்றி ஆளுநர் காலவரையின்றி அவசரச்சட்டங்களை மீண்டும் பிறப்பிக்கலாம்", "C": "ஆளுநர் பிறப்பிக்கும் அவசரச்சட்டங்கள் நீதித்துறை மறுஆய்வுக்கு அப்பாற்பட்டவை", "D": "பிறப்பிக்கப்பட்ட அவசரச்சட்டத்தை மாநில சட்டமன்றம் நிராகரிக்க முடியாது"},
+        "A",
+        "In D.C. Wadhwa (1987), the Supreme Court held that re-promulgating Ordinances for years together without getting them passed by the State Legislature (Bihar government re-promulgated 256 ordinances between 1967 and 1981) was a colorable exercise of power and a FRAUD ON THE CONSTITUTION.",
+        "டி.சி. வாத்வா (1987) வழக்கில் உச்ச நீதிமன்றம்: சட்டமன்றத்தில் நிறைவேற்றாமல் பல ஆண்டுகளாக அவசரச்சட்டங்களை மீண்டும் மீண்டும் பிறப்பிப்பது (பீகார் அரசு 1967-1981 இடையே 256 அவசரச்சட்டங்களை மறுபதிப்பு செய்தது) அதிகாரத் துஷ்பிரயோகம் மற்றும் அரசியலமைப்பிற்குச் செய்யும் மோசடியாகும் எனக் கூறி ரத்து செய்தது.",
+        "Ordinance power is meant for emergency situations, NOT as a substitute for legislative law-making.",
+        "அவசரச்சட்ட அதிகாரம் அவசரச் சூழ்நிலைகளுக்கானதே அன்றி, சட்டமன்றச் சட்ட உருவாக்கத்திற்கு மாற்றாகாது.",
+        "Re-promulgation bypasses the State Legislature.",
+        "மறுபதிப்புச் செய்வது மாநில சட்டமன்றத்தைத் தவிர்க்கிறது.",
+        "Affirmed primary law-making role of Legislature.",
+        "சட்டமன்றத்தின் முதன்மைச் சட்டப் பணிக்கான பங்கை இத்தீர்ப்பு உறுதிப்படுத்தியது."))
+
+    # Q8
+    q.append(mk_q(8, "Medium", "Direct",
+        "In Shamsher Singh v. State of Punjab (1974), how did a 7-judge Constitution Bench of the Supreme Court define the constitutional position of the Governor?",
+        "சம்ஷெர் சிங் எதிர் பஞ்சாப் மாநிலம் (1974) வழக்கில், உச்ச நீதிமன்றத்தின் 7 நீதிபதிகள் கொண்ட அரசியலமைப்பு அமர்வு ஆளுநரின் அரசியலமைப்பு நிலையை எவ்வாறு வரையறுத்தது?",
+        {"A": "The Governor is a real executive head who can override the Council of Ministers in all administrative matters", "B": "The Governor is a constitutional formal head who must act on the aid and advice of the Council of Ministers, similar to the Crown in the British Parliamentary system", "C": "The Governor represents only the President and does not take advice from State Ministers", "D": "The Governor's executive acts require prior clearance from UPSC"},
+        {"A": "ஆளுநர் அனைத்து நிர்வாக விவகாரங்களிலும் அமைச்சரவையை நிராகரிக்கக்கூடிய உண்மையான நிர்வாகத் தலைவர் ஆவார்", "B": "ஆளுநர் பிரிட்டிஷ் நாடாளுமன்ற அமைப்பின் அரசரைப் போன்று, அமைச்சரவையின் உதவி மற்றும் ஆலோசனையின் படி செயல்பட வேண்டிய ஒரு பெயரளவு அரசியலமைப்புத் தலைவர் ஆவார்", "C": "ஆளுநர் குடியரசுத் தலைவரை மட்டுமே பிரதிநிதித்துவப்படுத்துகிறார், மாநில அமைச்சர்களின் ஆலோசனையைப் பெறுவதில்லை", "D": "ஆளுநரின் நிர்வாகச் செயல்களுக்கு UPSC முன் ஒப்புதல் தேவை"},
+        "B",
+        "In Shamsher Singh (1974), a 7-judge bench held that the President and Governor are constitutional heads of executive, and they exercise their formal constitutional powers on the AID AND ADVICE of the Council of Ministers, except in cases where Governor is expressly required by Constitution to act in discretion.",
+        "சம்ஷெர் சிங் (1974) வழக்கில் 7 நீதிபதிகள் அமர்வு: குடியரசுத் தலைவரும் ஆளுநரும் பெயரளவு அரசியலமைப்புத் தலைவர்களாவர்; அரசியலமைப்பு வெளிப்படையாக விருப்ப அதிகாரம் அளித்துள்ள இடங்கள் தவிர, மற்ற இடங்களில் அமைச்சரவையின் உதவி மற்றும் ஆலோசனையின் படியே செயல்பட வேண்டும் எனத் தீர்ப்பளித்தது.",
+        "Reaffirmed parliamentary democracy in States.",
+        "மாநிலங்களில் நாடாளுமன்ற ஜனநாயக முறையை மீண்டும் உறுதிப்படுத்தியது.",
+        "Governor cannot act independently in routine administrative appointments.",
+        "சாதாரண நிர்வாக நியமனங்களில் ஆளுநர் தன்னிச்சையாகச் செயல்பட முடியாது.",
+        "Aid and advice is the general constitutional rule.",
+        "உதவி மற்றும் ஆலோசனையே பொதுவான அரசியலமைப்பு விதியாகும்."))
+
+    # Q9
+    q.append(mk_q(9, "Medium", "Direct",
+        "In S.R. Bommai v. Union of India (1994), what major rule did the Supreme Court lay down regarding testing the majority of a Council of Ministers headed by a Chief Minister?",
+        "எஸ்.ஆர். பொம்மை எதிர் இந்திய யூனியன் (1994) வழக்கில், முதலமைச்சர் தலைமையிலான அமைச்சரவையின் பெரும்பான்மையைச் சோதிப்பது தொடர்பாக உச்ச நீதிமன்றம் வழங்கிய முக்கிய விதி என்ன?",
+        {"A": "The majority of a Ministry should be tested ONLY on the floor of the State Legislative Assembly, and NOT in the Governor's Raj Bhavan", "B": "The Governor can decide the majority based on private affidavits submitted to him", "C": "The President decides majority through Union Cabinet resolution", "D": "High Court Chief Justice decides majority"},
+        {"A": "அமைச்சரவையின் பெரும்பான்மை மாநில சட்டமன்றப் பேரவையின் தளத்தில் (Floor of the Assembly) மட்டுமே சோதிக்கப்பட வேண்டும்; ஆளுநரின் ராஜ் பவனில் அல்ல", "B": "தனியாரிடம் பெறும் வாக்குமூலங்கள் அடிப்படையில் ஆளுநரே பெரும்பான்மையைத் தீர்மானிக்கலாம்", "C": "மத்திய அமைச்சரவைத் தீர்மானம் மூலம் குடியரசுத் தலைவர் பெரும்பான்மையைத் தீர்மானிக்கிறார்", "D": "உயர் நீதிமன்றத் தலைமை நீதிபதி பெரும்பான்மையைத் தீர்மானிக்கிறார்"},
+        "A",
+        "In S.R. Bommai (1994), a 9-judge bench ruled that the floor of the House is the ONLY constitutionally recognized forum for testing the majority of the Ministry, and the Governor cannot dismiss a Ministry based on subjective assessment outside the Assembly.",
+        "எஸ்.ஆர். பொம்மை (1994) வழக்கில் 9 நீதிபதிகள் அமர்வு: அமைச்சரவையின் பெரும்பான்மையைச் சோதிக்கும் ஒரே அரசியலமைப்பு அமைப்பு சட்டமன்றப் பேரவையின் தளம் (Floor Test) மட்டுமே என்றும், ஆளுநர் பேரவைக்கு வெளியே தனது தனிப்பட்ட மதிப்பீட்டின் அடிப்படையில் அமைச்சரவையை நீக்கக் கூடாது என்றும் தீர்ப்பளித்தது.",
+        "Floor Test is mandatory before recommending Article 356 breakdown.",
+        "சரத்து 356 முடக்கத்தைப் பரிந்துரைக்கும் முன் சட்டமன்றத் தளச் சோதனை (Floor Test) கட்டாயமாகும்.",
+        "Prevented subjective Raj Bhavan headcounts.",
+        "ராஜ் பவனில் நடக்கும் தனிப்பட்ட தலை எண்ணிக்கையை இது தடுத்தது.",
+        "Preserved democratic sanctity of elected Assemblies.",
+        "தேர்ந்தெடுக்கப்பட்ட சட்டமன்றங்களின் ஜனநாயகப் புனிதத்தைப் பாதுகாத்தது."))
+
+    # Q10
+    q.append(mk_q(10, "Medium", "Direct",
+        "In Nabam Rebia v. Deputy Speaker (2016), what constitutional limit was placed on the Governor's discretionary powers under Article 163?",
+        "நபம் ரெபியா எதிர் துணை சபாநாயகர் (2016) வழக்கில், சரத்து 163-ன் கீழான ஆளுநரின் விருப்ப அதிகாரங்கள் மீது விதிக்கப்பட்ட அரசியலமைப்பு வரம்பு என்ன?",
+        {"A": "Governor's discretionary powers under Article 163 are limited, and the Governor cannot summon or advance an Assembly session or decide legislative business without aid and advice of the Cabinet", "B": "Governor has absolute unlimited discretionary power in all legislative matters", "C": "Governor can remove the Speaker directly without Assembly vote", "D": "Governor can suspend High Court judges during legislative conflict"},
+        {"A": "சரத்து 163-ன் கீழ் ஆளுநரின் விருப்ப அதிகாரங்கள் வரம்பிற்குட்பட்டவை; அமைச்சரவையின் உதவி மற்றும் ஆலோசனையின்றி ஆளுநர் சட்டமன்றத்தைக் கூட்டவோ அல்லது நிகழ்ச்சிநிரலைத் தீர்மானிக்கவோ முடியாது", "B": "அனைத்து சட்டமன்ற விவகாரங்களிலும் ஆளுநருக்கு வரம்பற்ற விருப்ப அதிகாரம் உண்டு", "C": "சட்டமன்ற வாக்கின்றி சபாநாயகரை ஆளுநரே நேரடியாக நீக்கலாம்", "D": "சட்டமன்ற மோதலின் போது உயர் நீதிமன்ற நீதிபதிகளை ஆளுநர் இடைநீக்கம் செய்யலாம்"},
+        "A",
+        "In Nabam Rebia (2016), a 5-judge Constitution Bench held that the Governor does not possess general discretionary power to summon, prorogue or dissolve the House under Article 174 without the aid and advice of the Chief Minister and Council of Ministers.",
+        "நபம் ரெபியா (2016) வழக்கில் 5 நீதிபதிகள் அமர்வு: முதலமைச்சர் மற்றும் அமைச்சரவையின் உதவி மற்றும் ஆலோசனையின்றி அவையைக் கூட்டவோ, முடிவுக்குக் கொண்டுவரவோ அல்லது கலைக்கவோ ஆளுநருக்குப் பொதுவான விருப்ப அதிகாரம் கிடையாது எனத் தீர்ப்பளித்தது.",
+        "Governor cannot act as a parallel political authority or bypass Cabinet in summoning Assembly.",
+        "சட்டமன்றத்தைக் கூட்டுவதில் ஆளுநர் இணை அரசியல் அதிகாரியாகச் செயல்படவோ அமைச்சரவையைத் தவிர்க்கவோ முடியாது.",
+        "Article 163 discretion is narrow and specified.",
+        "சரத்து 163 விருப்ப அதிகாரம் குறுகியது மற்றும் வரையறுக்கப்பட்டது.",
+        "Reinforced Speaker's authority and Cabinet supremacy in legislative agenda.",
+        "சட்டமன்ற நிகழ்ச்சிநிரலில் சபாநாயகர் மற்றும் அமைச்சரவையின் மேலாண்மையை உறுதிப்படுத்தியது."))
+
+    # Q11 to Q50
+    for i in range(11, 51):
+        pass
+
+    # Populate Q11 to Q50 for Medium
+    q.append(mk_q(11, "Medium", "Direct",
+        "Under Article 167(c) of the Constitution, what power does the Governor have regarding a decision taken by an individual Minister?",
+        "சரத்து 167(c)-ன் படி, ஒரு தனிப்பட்ட அமைச்சர் எடுத்த முடிவு தொடர்பாக ஆளுநருக்கு என்ன அதிகாரம் உள்ளது?",
+        {"A": "Governor can annul the minister's decision directly", "B": "Governor can require the Chief Minister to submit for consideration of the Council of Ministers any matter on which a decision has been taken by a Minister but has not been considered by the Council", "C": "Governor can dismiss the minister immediately", "D": "Governor can refer the minister to UPSC for inquiry"},
+        {"A": "ஆளுநர் அமைச்சரின் முடிவை நேரடியாக ரத்து செய்யலாம்", "B": "ஒரு அமைச்சரால் முடிவு எடுக்கப்பட்டு ஆனால் அமைச்சரவையால் பரிசீலிக்கப்படாத விவகாரத்தை அமைச்சரவையின் பரிசீலனைக்குச் சமர்ப்பிக்குமாறு முதலமைச்சரைக் கேட்கலாம்", "C": "ஆளுநர் அந்த அமைச்சரை உடனடியாக நீக்கலாம்", "D": "ஆளுநர் அந்த அமைச்சரை விசாரணைக்காக UPSC-க்கு அனுப்பலாம்"},
+        "B",
+        "Article 167(c) states that if the Governor so requires, the CM must submit for the consideration of the Council of Ministers any matter on which a decision has been taken by a Minister but which has not been considered by the Council.",
+        "சரத்து 167(c)-ன் படி, ஒரு அமைச்சரால் முடிவு எடுக்கப்பட்டு அமைச்சரவையால் பரிசீலிக்கப்படாத விஷயத்தை, ஆளுநர் கேட்டுக் கொண்டால், முதலமைச்சர் அமைச்சரவையின் பரிசீலனைக்கு வைக்க வேண்டும்.",
+        "Enforces Collective Responsibility of the Council of Ministers (Article 164(2)).",
+        "அமைச்சரவையின் கூட்டுப் பொறுப்பை (சரத்து 164(2)) இது உறுதி செய்கிறது.",
+        "Ensures cabinet review of individual ministerial actions.",
+        "தனிப்பட்ட அமைச்சரின் முடிவுகளை அமைச்சரவை மறுஆய்வு செய்வதை உறுதி செய்கிறது.",
+        "Duty of CM to comply with Governor's requirement under Art 167(c).",
+        "சரத்து 167(c)-ன் கீழ் ஆளுநர் கோரிக்கையை நிறைவேற்றுவது முதலமைச்சரின் கடமையாகும்."))
+
+    q.append(mk_q(12, "Medium", "Direct",
+        "Under Article 161 of the Constitution, can the Governor grant pardon to a person sentenced under a Central Law (Union Subject)?",
+        "சரத்து 161-ன் படி, மத்தியச் சட்டத்தின் (மத்தியப் பட்டியல் குற்றங்கள்) கீழ் தண்டனை பெற்ற ஒருவருக்கு ஆளுநரால் மன்னிப்பு அளிக்க முடியுமா?",
+        {"A": "Yes, Governor can pardon offences under both State and Central laws", "B": "No, Governor's pardoning power under Article 161 extends ONLY to offences against laws relating to matters to which the executive power of the State extends", "C": "Yes, if recommended by State Legislative Assembly", "D": "Yes, with permission of High Court Chief Justice"},
+        {"A": "ஆம், மாநில மற்றும் மத்தியச் சட்டங்கள் இரண்டின் கீழான குற்றங்களையும் ஆளுநர் மன்னிக்கலாம்", "B": "இல்லை, சரத்து 161-ன் கீழான ஆளுநரின் மன்னிப்பளிக்கும் அதிகாரம் மாநிலத்தின் நிர்வாக அதிகாரம் செல்லுபடியாகும் சட்டங்கள் தொடர்பான குற்றங்களுக்கு மட்டுமே பொருந்தும்", "C": "ஆம், மாநில சட்டமன்றப் பேரவை பரிந்துரைத்தால்", "D": "ஆம், உயர் நீதிமன்றத் தலைமை நீதிபதியின் அனுமதியுடன்"},
+        "B",
+        "Article 161 specifies that the Governor's power extends to persons convicted of any offence against any law relating to a matter to which the EXECUTIVE POWER OF THE STATE extends.",
+        "சரத்து 161 தெளிவுபடுத்துகிறது: மாநிலத்தின் நிர்வாக அதிகாரம் பரவியுள்ள விஷயங்கள் தொடர்பான சட்டத்திற்கு எதிரான குற்றங்களுக்கு மட்டுமே ஆளுநரின் மன்னிப்பளிக்கும் அதிகாரம் பொருந்தும்.",
+        "President pardons for Central laws and Court Martial; Governor pardons for State laws.",
+        "குடியரசுத் தலைவர் மத்திய சட்டங்கள் மற்றும் ராணுவ நீதிமன்றத் தண்டனைகளை மன்னிக்கிறார்; ஆளுநர் மாநிலச் சட்டங்களை மன்னிக்கிறார்.",
+        "Follows the federal division of executive powers between Union (Art 73) and States (Art 162).",
+        "மத்திய (சரத்து 73) மற்றும் மாநில (சரத்து 162) நிர்வாக அதிகாரப் பகிர்வைப் பின்தொடர்கிறது.",
+        "Governor cannot trench upon Central executive domain.",
+        "மத்திய நிர்வாக அதிகார வரம்பில் ஆளுநர் தலையிட முடியாது."))
+
+    q.append(mk_q(13, "Medium", "Direct",
+        "Under Article 213(2)(b) of the Constitution, can an Ordinance promulgated by the Governor be withdrawn by him at any time?",
+        "சரத்து 213(2)(b)-ன் படி, ஆளுநரால் பிறப்பிக்கப்பட்ட அவசரச்சட்டம் அவரால் எந்த நேரத்திலும் திரும்பப் பெறப்பட முடியுமா?",
+        {"A": "No, an Ordinance can never be withdrawn once promulgated", "B": "Yes, an Ordinance may be withdrawn at any time by the Governor", "C": "Yes, but only with 2/3rd majority consent of Legislative Council", "D": "Yes, but only after 6 months"},
+        {"A": "இல்லை, பிறப்பிக்கப்பட்ட அவசரச்சட்டத்தை ஒருபோதும் திரும்பப் பெற முடியாது", "B": "ஆம், ஆளுநரால் எந்த நேரத்திலும் அவசரச்சட்டம் திரும்பப் பெறப்படலாம்", "C": "ஆம், ஆனால் சட்டமன்ற மேலவையின் 2/3 பெரும்பான்மை ஒப்புதலுடன் மட்டுமே", "D": "ஆம், ஆனால் 6 மாதங்களுக்குப் பிறகு மட்டுமே"},
+        "B",
+        "Article 213(2)(b) explicitly provides that an Ordinance promulgated by the Governor 'may be withdrawn at any time by the Governor.'",
+        "சரத்து 213(2)(b) வெளிப்படையாகக் கூறுகிறது: 'ஆளுநரால் பிறப்பிக்கப்பட்ட அவசரச்சட்டம் அவரால் எந்த நேரத்திலும் திரும்பப் பெறப்படலாம்.'",
+        "Withdrawal of Ordinance is done on the aid and advice of the Council of Ministers.",
+        "அவசரச்சட்டம் திரும்பப் பெறப்படுவது அமைச்சரவையின் உதவி மற்றும் ஆலோசனையின் பேரிலேயே செய்யப்படுகிறது.",
+        "Same rule applies to President's Ordinance under Article 123(2)(b).",
+        "சரத்து 123(2)(b)-ன் கீழ் குடியரசுத் தலைவரின் அவசரச்சட்டத்திற்கும் இதே விதி பொருந்தும்.",
+        "Provides flexibility to executive law-making.",
+        "நிர்வாகச் சட்ட உருவாக்கத்திற்குத் நெகிழ்வுத்தன்மையை அளிக்கிறது."))
+
+    q.append(mk_q(14, "Medium", "Direct",
+        "Which Recommendation of the Sarkaria Commission (1983) regarding the appointment of Governors is widely cited in Indian Polity?",
+        "ஆளுநர் நியமனம் தொடர்பாக இந்திய அரசியல் அமைப்பில் பரவலாக மேற்கோள் காட்டப்படும் சர்க்காரியா ஆணையத்தின் (1983) முக்கியப் பரிந்துரை எது?",
+        {"A": "Governor should be an eminent person in some walk of life, from outside the State, and a detached figure not deeply connected with local politics", "B": "Governor should be elected by the State Assembly", "C": "Governor should belong to the ruling party of the State", "D": "Governor should be a retired Supreme Court Judge only"},
+        {"A": "ஆளுநர் என்பவர் ஏதேனும் ஒரு துறையில் சிறந்தவராகவும், வெளிமாநிலத்தைச் சேர்ந்தவராகவும், உள்ளூர் அரசியலில் தீவிரமாக ஈடுபடாத நடுநிலையானவராகவும் இருக்க வேண்டும்", "B": "ஆளுநர் மாநில சட்டமன்றத்தால் தேர்ந்தெடுக்கப்பட வேண்டும்", "C": "ஆளுநர் மாநில ஆளுங்கட்சியைச் சேர்ந்தவராக இருக்க வேண்டும்", "D": "ஆளுநர் ஓய்வுபெற்ற உச்ச நீதிமன்ற நீதிபதியாக மட்டுமே இருக்க வேண்டும்"},
+        "A",
+        "Sarkaria Commission (1983) recommended: 1. Governor should be an eminent person from outside the State. 2. Detached figure not deeply involved in local politics. 3. Should not be a person who has taken active part in politics in recent past. 4. CM should be consulted before appointment.",
+        "சர்க்காரியா ஆணையம் (1983) பரிந்துரைத்தது: 1. ஆளுநர் வெளிமாநிலத்தைச் சேர்ந்த சிறந்த நபராக இருக்க வேண்டும். 2. உள்ளூர் அரசியலில் தொடர்பில்லாத நடுநிலையானவராக இருக்க வேண்டும். 3. சமீபத்திய கடந்த காலத்தில் தீவிர அரசியலில் ஈடுபட்டவராக இருக்கக்கூடாது. 4. நியமனத்திற்கு முன் முதலமைச்சரைக் கலந்தாலோசிக்க வேண்டும்.",
+        "Sarkaria Commission focused on Centre-State Relations.",
+        "சர்க்காரியா ஆணையம் மத்திய-மாநில உறவுகளில் கவனம் செலுத்தியது.",
+        "Sarkaria recommendations are conventions aimed at ensuring Governor's political neutrality.",
+        "ஆளுநரின் அரசியல் நடுநிலைமையை உறுதிசெய்யும் மரபுகளாக இப்பரிந்துரைகள் அமைகின்றன.",
+        "Endorsed in Punchhi Commission (2007) and various SC judgments.",
+        "புஞ்சி ஆணையம் மற்றும் பல்வேறு உச்ச நீதிமன்றத் தீர்ப்புகளில் இது ஆதரிக்கப்பட்டது."))
+
+    q.append(mk_q(15, "Medium", "Direct",
+        "Which Reform Commission recommended that the phrase 'during the pleasure of the President' in Article 156 should be deleted and Governors should be removed ONLY by impeachment by the State Legislature?",
+        "சரத்து 156-ல் உள்ள 'குடியரசுத் தலைவரின் விருப்பம் உள்ளவரை' என்ற தொடர் நீக்கப்பட்டு, மாநில சட்டமன்றத்தில் கண்டனத் தீர்மானம் (Impeachment) நிறைவேற்றுவதன் மூலம் மட்டுமே ஆளுநர் நீக்கப்பட வேண்டும் எனப் பரிந்துரைத்த சீர்திருத்த ஆணையம் எது?",
+        {"A": "Administrative Reforms Commission (1966)", "B": "Rajamannar Committee (1969)", "C": "Punchhi Commission (2007)", "D": "Law Commission of India (1999)"},
+        {"A": "நிர்வாக சீர்திருத்த ஆணையம் (1966)", "B": "ராஜமன்னார் குழு (1969)", "C": "புஞ்சி ஆணையம் (Punchhi Commission, 2007)", "D": "இந்திய சட்ட ஆணையம் (1999)"},
+        "C",
+        "The Second Commission on Centre-State Relations (Punchhi Commission 2007) recommended that the phrase 'pleasure of the President' be deleted from Constitution and Governor should have a fixed 5-year tenure, removable only by impeachment by State Legislature.",
+        "இரண்டாவது மத்திய-மாநில உறவுகள் ஆணையம் (புஞ்சி ஆணையம் 2007): 'குடியரசுத் தலைவரின் விருப்பம்' என்ற தொடரை அரசியலமைப்பிலிருந்து நீக்கவும், ஆளுநருக்கு 5 ஆண்டுகள் நிலையான பதவிக்காலம் வழங்கி, மாநில சட்டமன்றக் கண்டனத் தீர்மானம் (Impeachment) மூலம் மட்டுமே நீக்கப்பட வேண்டும் என்றும் பரிந்துரைத்தது.",
+        "Punchhi Commission sought to give Governor security of tenure similar to High Court judges.",
+        "உயர் நீதிமன்ற நீதிபதிகளைப் போல ஆளுநருக்கும் பதவி பாதுகாப்பு அளிக்க புஞ்சி ஆணையம் முயன்றது.",
+        "Proposed impeachment procedure similar to President's impeachment.",
+        "குடியரசுத் தலைவர் நீக்கம் போன்ற கண்டனத் தீர்மான நடைமுறையைப் பரிந்துரைத்தது.",
+        "Aim: Prevent arbitrary dismissal of Governors upon change of Union government.",
+        "நோக்கம்: மத்திய அரசு மாறும்போது ஆளுநர்கள் தன்னிச்சையாக நீக்கப்படுவதைத் தடுப்பது."))
+
+    q.append(mk_q(16, "Medium", "Direct",
+        "Under Article 233 of the Constitution, who appoints District Judges in a State?",
+        "சரத்து 233-ன் படி, ஒரு மாநிலத்தில் மாவட்ட நீதிபதிகளை (District Judges) நியமிப்பவர் யார்?",
+        {"A": "The High Court Chief Justice independently", "B": "The Governor of the State in consultation with the High Court exercising jurisdiction in relation to such State", "C": "The State Public Service Commission", "D": "The Law Minister of the State"},
+        {"A": "உயர் நீதிமன்றத் தலைமை நீதிபதி சுயாதீனமாக", "B": "அம்மாநிலத்திற்குரிய உயர் நீதிமன்றத்தைக் கலந்தாலோசித்து மாநில ஆளுநர்", "C": "மாநில பொதுப்பணியாளர் தேர்வாணையம்", "D": "மாநில சட்ட அமைச்சர்"},
+        "B",
+        "Article 233(1) states: 'Appointments of persons to be, and the posting and promotion of, district judges in any State shall be made by the Governor of the State in consultation with the High Court exercising jurisdiction in relation to such State.'",
+        "சரத்து 233(1) கூறுகிறது: 'மாநிலத்தில் மாவட்ட நீதிபதிகள் நியமனம், பணிப்படைப்பு மற்றும் பதவி உயர்வு ஆகியவை அம்மாநிலத்திற்குரிய உயர் நீதிமன்றத்தைக் கலந்தாலோசித்து மாநில ஆளுநரால் செய்யப்படும்.'",
+        "Governor appoints District Judges, but MANDATORY consultation with High Court is required.",
+        "ஆளுநர் மாவட்ட நீதிபதிகளை நியமிக்கிறார், ஆனால் உயர் நீதிமன்றத்துடனான கலந்தாலோசனை கட்டாயமாகும்.",
+        "Article 234 covers appointment of other judicial officers (below district judge) by Governor after consulting SPSC and High Court.",
+        "சரத்து 234 கீழ்நிலை நீதித்துறை அதிகாரிகளை SPSC மற்றும் உயர் நீதிமன்றத்தைக் கலந்தாலோசித்து ஆளுநர் நியமிப்பதைக் கூறுகிறது.",
+        "Judicial appointments at district level are made by Governor.",
+        "மாவட்ட அளவிலான நீதித்துறை நியமனங்கள் ஆளுநரால் செய்யப்படுகின்றன."))
+
+    q.append(mk_q(17, "Medium", "Direct",
+        "Under Article 217(1) of the Constitution, what is the Governor's role in the appointment of Judges of the High Court?",
+        "சரத்து 217(1)-ன் படி, உயர் நீதிமன்ற நீதிபதிகள் நியமனத்தில் ஆளுநரின் பங்கு என்ன?",
+        {"A": "Governor appoints High Court judges directly", "B": "Governor of the State concerned is CONSULTED by the President before appointing High Court judges", "C": "Governor administers oath only and has no consultation role", "D": "Governor can veto High Court judge appointments"},
+        {"A": "ஆளுநர் உயர் நீதிமன்ற நீதிபதிகளை நேரடியாக நியமிக்கிறார்", "B": "உயர் நீதிமன்ற நீதிபதிகளை நியமிக்கும் முன் குடியரசுத் தலைவரால் சம்பந்தப்பட்ட மாநில ஆளுநர் கலந்தாலோசிக்கப்படுகிறார்", "C": "ஆளுநர் பதவியேற்பு மட்டுமே செய்து வைப்பார், கலந்தாலோசனை பங்கு இல்லை", "D": "உயர் நீதிமன்ற நீதிபதி நியமனங்களை ஆளுநர் நிராகரிக்கலாம் (Veto)"},
+        "B",
+        "Article 217(1) provides that every Judge of a High Court shall be appointed by the President by warrant under his hand and seal after consultation with the Chief Justice of India, the Governor of the State, and (in case of appointment of a Judge other than CJ) the Chief Justice of the High Court.",
+        "சரத்து 217(1)-ன் படி, உயர் நீதிமன்ற நீதிபதிகள் இந்தியக் குடியரசுத் தலைவரால், இந்தியத் தலைமை நீதிபதி, மாநில ஆளுநர் மற்றும் உயர் நீதிமன்றத் தலைமை நீதிபதி ஆகியோரைக் கலந்தாலோசித்த பிறகே நியமிக்கப்படுகிறார்கள்.",
+        "High Court judges are APPOINTED by President, NOT Governor; Governor is merely CONSULTED.",
+        "உயர் நீதிமன்ற நீதிபதிகள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்கள், ஆளுநரால் அல்ல; ஆளுநரிடம் கலந்தாலோசனை மட்டுமே செய்யப்படுகிறது.",
+        "Distinction: District Judges = Appointed by Governor (Art 233); High Court Judges = Appointed by President (Art 217).",
+        "வேறுபாடு: மாவட்ட நீதிபதிகள் = ஆளுநர் நியமனம் (சரத்து 233); உயர் நீதிமன்ற நீதிபதிகள் = குடியரசுத் தலைவர் நியமனம் (சரத்து 217).",
+        "Very common TNPSC Group 1 distinction question!",
+        "அடிக்கடி கேட்கப்படும் முக்கிய TNPSC குரூப் 1 வேறுபாட்டு வினா!"))
+
+    q.append(mk_q(18, "Medium", "Direct",
+        "Under Article 371 and Articles 371A to 371J, special constitutional responsibilities are assigned to Governors of certain States. For which State does Article 371A confer special responsibility on the Governor with respect to law and order?",
+        "சரத்து 371 மற்றும் 371A முதல் 371J வரை சில மாநிலங்களின் ஆளுநர்களுக்குச் சிறப்புப் பொறுப்புகள் வழங்கப்பட்டுள்ளன. சரத்து 371A எந்த மாநில ஆளுநருக்குச் சட்டம் ஒழுங்கு தொடர்பான சிறப்புப் பொறுப்பை வழங்குகிறது?",
+        {"A": "Nagaland", "B": "Assam", "C": "Manipur", "D": "Sikkim"},
+        {"A": "நாகாலாந்து (Nagaland)", "B": "அஸ்ஸாம்", "C": "மணிப்பூர்", "D": "சிக்கிம்"},
+        "A",
+        "Article 371A (inserted by 13th CAA 1962) confers special responsibility on the Governor of NAGALAND with respect to law and order in the State so long as internal disturbances continue.",
+        "சரத்து 371A (13வது திருத்தம் 1962)-ன் படி, நாகாலாந்து மாநிலத்தில் உள்நாட்டு அமைதியின்மை நீடிக்கும் வரை சட்டம் ஒழுங்கு தொடர்பாக ஆளுநருக்குச் சிறப்புப் பொறுப்பு வழங்கப்பட்டுள்ளது.",
+        "Governor acts in his individual judgment after consulting Council of Ministers in Nagaland law & order.",
+        "நாகாலாந்து சட்டம் ஒழுங்கில் அமைச்சரவையைக் கலந்தாலோசித்த பின் ஆளுநர் தனது தனிப்பட்ட முடிவின் படி செயல்படுவார்.",
+        "Article 371 = Maharashtra & Gujarat; Article 371A = Nagaland; Article 371B = Assam; Article 371C = Manipur.",
+        "சரத்து 371 = மகாராஷ்டிரா & குஜராத்; சரத்து 371A = நாகாலாந்து; சரத்து 371B = அஸ்ஸாம்; சரத்து 371C = மணிப்பூர்.",
+        "Special responsibility is an instance of constitutional discretion.",
+        "சிறப்புப் பொறுப்பு అనేది அரசியலமைப்பு விருப்ப அதிகாரத்தின் ஒரு வடிவமாகும்."))
+
+    q.append(mk_q(19, "Medium", "Direct",
+        "Under Fifth Schedule of the Constitution, what special power is conferred on the Governor regarding the application of Acts of Parliament or State Legislature to Scheduled Areas?",
+        "அரசியலமைப்பின் ஐந்தாவது அட்டவணையின் கீழ், பழங்குடியினர் பகுதிகளுக்கு (Scheduled Areas) நாடாளுமன்ற அல்லது மாநிலச் சட்டங்களைப் பயன்படுத்துவது குறித்து ஆளுநருக்கு வழங்கப்பட்டுள்ள சிறப்பு அதிகாரம் என்ன?",
+        {"A": "He may direct by public notification that any Act of Parliament or State Legislature shall NOT apply to a Scheduled Area or shall apply with exceptions/modifications", "B": "He can abolish Scheduled Areas unilaterally", "C": "He can convert Scheduled Areas into Union Territories", "D": "He has no special powers under Fifth Schedule"},
+        {"A": "பொது அறிவிப்பு மூலம் நாடாளுமன்ற அல்லது மாநிலச் சட்டம் எதுவும் பழங்குடியினர் பகுதிக்குப் பொருந்தாது என்றோ அல்லது விலக்குகள்/மாற்றங்களுடன் பொருந்தும் என்றோ அவர் உத்தரவிடலாம்", "B": "பழங்குடியினர் பகுதிகளை அவர் தன்னிச்சையாக ஒழிக்கலாம்", "C": "பழங்குடியினர் பகுதிகளை யூனியன் பிரதேசங்களாக மாற்றலாம்", "D": "ஐந்தாவது அட்டவணையின் கீழ் ஆளுநருக்குச் சிறப்பு அதிகாரங்கள் இல்லை"},
+        "A",
+        "Under Paragraph 5 of Fifth Schedule, the Governor may by public notification direct that any particular Act of Parliament or of the Legislature of the State shall not apply to a Scheduled Area or any part thereof, or shall apply subject to such exceptions and modifications as he specifies.",
+        "ஐந்தாவது அட்டவணையின் 5-வது பத்தியின் படி, நாடாளுமன்ற அல்லது மாநில சட்டமன்றத்தின் எந்தவொரு குறிப்பிட்ட சட்டமும் பழங்குடியினர் பகுதிக்குப் பொருந்தாது என்றோ அல்லது மாற்றங்களுடன் பொருந்தும் என்றோ ஆளுநர் பொது அறிவிக்கை மூலம் உத்தரவிடலாம்.",
+        "Governor also submits an annual report to the President regarding the administration of Scheduled Areas.",
+        "ஆளுநர் பழங்குடியினர் பகுதிகளின் நிர்வாகம் குறித்துக் குடியரசுத் தலைவருக்கு ஆண்டறிக்கையையும் சமர்ப்பிக்கிறார்.",
+        "Fifth Schedule deals with Administration of Scheduled Areas and Scheduled Tribes.",
+        "ஐந்தாவது அட்டவணை பழங்குடியினர் பகுதிகள் மற்றும் பழங்குடியினரின் நிர்வாகத்தைக் கையாள்கிறது.",
+        "Governor acts with Tribal Advisory Council in these areas.",
+        "இப்பகுதிகளில் ஆளுநர் பழங்குடியினர் ஆலோசனைக் குழுவுடன் செயல்படுகிறார்."))
+
+    q.append(mk_q(20, "Medium", "Direct",
+        "Under Article 164(1) proviso, which of the following States is NOT constitutionally mandated to have a Minister in charge of Tribal Welfare?",
+        "சரத்து 164(1) விலக்கு விதியின் படி, பின்வரும் எந்த மாநிலத்தில் பழங்குடியினர் நலத்துறை அமைச்சர் (Minister for Tribal Welfare) இருப்பது அரசியலமைப்பு ரீதியாகக் கட்டாயமல்ல?",
+        {"A": "Chhattisgarh", "B": "Jharkhand", "C": "Madhya Pradesh", "D": "Bihar (removed by 94th CAA 2006)"},
+        {"A": "சத்தீஸ்கர்", "B": "ஜார்க்கண்ட்", "C": "மத்தியப் பிரதேசம்", "D": "பீகார் (94வது திருத்தம் 2006 மூலம் நீக்கப்பட்டது)"},
+        "D",
+        "Under Article 164(1) proviso, there shall be a Minister in charge of tribal welfare in Chhattisgarh, Jharkhand, Madhya Pradesh, and Odisha. BIHAR was REMOVED from this list by the 94th Constitutional Amendment Act, 2006 (since Bihar no longer had scheduled areas post Jharkhand creation).",
+        "சரத்து 164(1) விலக்கு விதியின் படி, சத்தீஸ்கர், ஜார்க்கண்ட், மத்தியப் பிரதேசம் மற்றும் ஒடிசா ஆகிய மாநிலங்களில் பழங்குடியினர் நலத்துறை அமைச்சர் கட்டாயம் இருக்க வேண்டும். 2006-ன் 94வது திருத்தச் சட்டம் மூலம் பீகார் இந்தப் பட்டியலிலிருந்து நீக்கப்பட்டது.",
+        "Present 4 States: Chhattisgarh, Jharkhand, Madhya Pradesh, Odisha.",
+        "தற்போதுள்ள 4 மாநிலங்கள்: சத்தீஸ்கர், ஜார்க்கண்ட், மத்தியப் பிரதேசம், ஒடிசா.",
+        "94th CAA 2006 removed Bihar and added Chhattisgarh and Jharkhand.",
+        "94வது திருத்தம் 2006 பீகாரை நீக்கி சத்தீஸ்கர் மற்றும் ஜார்க்கண்டைச் சேர்த்தது.",
+        "High-yield factual amendment question for TNPSC Group 1!",
+        "TNPSC குரூப் 1 தேர்வில் கேட்கப்படும் முக்கியத் திருத்த வினா!"))
+
+    # Q21 to Q50
+    for i in range(21, 51):
+        pass
+
+    # Generating remaining Q21 to Q50
+    q.append(mk_q(21, "Medium", "Direct",
+        "Under Article 164(1A) inserted by the 91st Constitutional Amendment Act, 2003, what is the maximum limit on the total number of Ministers, including the Chief Minister, in a State Council of Ministers?",
+        "91வது அரசியலமைப்புத் திருத்தச் சட்டம் 2003 மூலம் சேர்க்கப்பட்ட சரத்து 164(1A)-ன் படி, முதலமைச்சர் உட்பட மாநில அமைச்சரவையின் மொத்த உறுப்பினர்களின் அதிகபட்ச வரம்பு என்ன?",
+        {"A": "Shall not exceed 10% of the total number of members of the Legislative Assembly", "B": "Shall not exceed 15% of the total number of members of the Legislative Assembly", "C": "Shall not exceed 20% of the total number of members of both Houses", "D": "Shall not exceed 50 ministers regardless of Assembly size"},
+        {"A": "சட்டமன்றப் பேரவையின் மொத்த உறுப்பினர்களில் 10% மிகக் கூடாது", "B": "சட்டமன்றப் பேரவையின் மொத்த உறுப்பினர்களில் 15% மிகக் கூடாது", "C": "இரண்டு அவைகளின் மொத்த உறுப்பினர்களில் 20% மிகக் கூடாது", "D": "பேரவை அளவைப் பொருட்படுத்தாமல் 50 அமைச்சர்களுக்கு மிகக் கூடாது"},
+        "B",
+        "Article 164(1A) (inserted by 91st CAA 2003) mandates that the total number of Ministers, including the Chief Minister, in the Council of Ministers in a State shall not exceed 15 PERCENT of the total number of members of the Legislative Assembly of that State.",
+        "சரத்து 164(1A) (91வது திருத்தம் 2003)-ன் படி, முதலமைச்சர் உட்பட ஒரு மாநில அமைச்சரவையின் மொத்த அமைச்சர்களின் எண்ணிக்கை அம்மாநில சட்டமன்றப் பேரவையின் மொத்த உறுப்பினர்களில் 15 சதவீதத்திற்கு மிகக் கூடாது.",
+        "Minimum number of Ministers (including CM) in a State = 12 (Article 164(1A) proviso).",
+        "ஒரு மாநிலத்தில் (முதலமைச்சர் உட்பட) குறைந்தபட்ச அமைச்சர்களின் எண்ணிக்கை = 12.",
+        "Percentage calculated on LEGISLATIVE ASSEMBLY size, not Legislative Council.",
+        "சதவீதம் சட்டமன்றப் பேரவையின் (Assembly) அளவை வைத்தே கணக்கிடப்படுகிறது.",
+        "91st CAA 2003 checked jumbo ministries in States and Union.",
+        "91வது திருத்தம் 2003 மாநிலங்களில் பெரிய அமைச்சரவைகளைக் கட்டுப்படுத்தியது."))
+
+    q.append(mk_q(22, "Medium", "Direct",
+        "Under Article 164(1A) proviso, what is the MINIMUM number of Ministers, including the Chief Minister, specified for any State?",
+        "சரத்து 164(1A) விலக்கு விதியின் படி, எந்தவொரு மாநிலத்திற்கும் குறிப்பிடப்பட்டுள்ள முதலமைச்சர் உட்பட குறைந்தபட்ச அமைச்சர்களின் எண்ணிக்கை என்ன?",
+        {"A": "8 Ministers", "B": "10 Ministers", "C": "12 Ministers", "D": "15 Ministers"},
+        {"A": "8 அமைச்சர்கள்", "B": "10 அமைச்சர்கள்", "C": "12 அமைச்சர்கள்", "D": "15 அமைச்சர்கள்"},
+        "C",
+        "Article 164(1A) proviso specifies that the number of Ministers, including the Chief Minister, in a State shall NOT BE LESS THAN TWELVE (12).",
+        "சரத்து 164(1A) விலக்கு விதி குறிப்பிடுகிறது: ஒரு மாநிலத்தில் முதலமைச்சர் உட்பட அமைச்சர்களின் எண்ணிக்கை பன்னிரண்டுக்குக் (12) குறையக் கூடாது.",
+        "This minimum limit of 12 ensures small states (like Sikkim, Goa, Mizoram with small assemblies) have adequate ministerial strength.",
+        "சிறிய மாநிலங்களில் (சிக்கிம், கோவா போன்ற) போதுமான அமைச்சர்கள் இருக்க இந்த 12 என்ற குறைந்தபட்ச வரம்பு உதவுகிறது.",
+        "Maximum limit = 15% of Assembly strength; Minimum limit = 12 Ministers.",
+        "அதிகபட்ச வரம்பு = பேரவை எண்ணிக்கையில் 15%; குறைந்தபட்ச வரம்பு = 12 அமைச்சர்கள்.",
+        "Inserted by 91st Constitutional Amendment Act, 2003.",
+        "91வது அரசியலமைப்புத் திருத்தச் சட்டம் 2003 மூலம் சேர்க்கப்பட்டது."))
+
+    q.append(mk_q(23, "Medium", "Direct",
+        "Under Article 164(2) of the Constitution, to whom is the Council of Ministers of a State collectively responsible?",
+        "சரத்து 164(2)-ன் படி, மாநில அமைச்சரவை யாருக்குக் கூட்டாகப் பொறுப்புடையது (Collectively Responsible)?",
+        {"A": "The Governor of the State", "B": "The Legislative Assembly of the State", "C": "The State Legislative Council", "D": "The President of India"},
+        {"A": "மாநில ஆளுநர்", "B": "மாநில சட்டமன்றப் பேரவை (Legislative Assembly)", "C": "மாநில சட்டமன்ற மேலவை", "D": "இந்தியக் குடியரசுத் தலைவர்"},
+        "B",
+        "Article 164(2) explicitly states: 'The Council of Ministers shall be collectively responsible to the Legislative Assembly of the State.'",
+        "சரத்து 164(2) வெளிப்படையாகக் கூறுகிறது: 'அமைச்சரவை மாநில சட்டமன்றப் பேரவைக்குக் (Legislative Assembly) கூட்டாகப் பொறுப்புடையது.'",
+        "Collective responsibility means the ministry stands or falls together before the elected Assembly.",
+        "கூட்டுப் பொறுப்பு என்பது அமைச்சரவை தேர்ந்தெடுக்கப்பட்ட சட்டமன்றப் பேரவையின் முன் ஒன்றாக நிற்கும் அல்லது வீழும் என்பதைக் குறிக்கிறது.",
+        "Ministers are individually responsible to the GOVERNOR (hold office during pleasure of Governor under Art 164(1)).",
+        "அமைச்சர்கள் தனிப்பட்ட முறையில் ஆளுநருக்குப் பொறுப்பானவர்கள் (சரத்து 164(1)-ன் கீழ் ஆளுநர் விருப்பப்படி பதவியில் இருப்பர்).",
+        "Collectively responsible to ASSEMBLY, not Legislative Council.",
+        "பேரவைக்குக் கூட்டாகப் பொறுப்புடையவர்கள், மேலவைக்கு அல்ல."))
+
+    q.append(mk_q(24, "Medium", "Direct",
+        "Under Article 164(4) of the Constitution, for how long can a non-member of the State Legislature continue as a Minister without being elected to either House?",
+        "சரத்து 164(4)-ன் படி, மாநில சட்டமன்றத்தில் உறுப்பினராக இல்லாத ஒருவர் எந்தவொரு அவையிலும் தேர்ந்தெடுக்கப்படாமல் அதிகபட்சமாக எவ்வளவு காலம் அமைச்சராகத் தொடர முடியும்?",
+        {"A": "3 consecutive months", "B": "6 consecutive months", "C": "1 year", "D": "Until the next general election"},
+        {"A": "தொடர்ந்து 3 மாதங்கள்", "B": "தொடர்ந்து 6 மாதங்கள்", "C": "1 ஆண்டு", "D": "அடுத்த பொதுத் தேர்தல் வரை"},
+        "B",
+        "Article 164(4) provides that a Minister who for any period of six consecutive months is not a member of the Legislature of the State shall at the expiration of that period cease to be a Minister.",
+        "சரத்து 164(4)-ன் படி, தொடர்ந்து 6 மாத காலம் மாநில சட்டமன்றத்தில் உறுப்பினராக இல்லாத ஒரு அமைச்சர், அக்காலம் முடிந்தவுடன் அமைச்சர் பதவியிலிருந்து விலகுவார்.",
+        "A non-member (e.g. newly appointed CM/Minister) must get elected to either Assembly or Council within 6 months.",
+        "உறுப்பினரல்லாத ஒருவர் (எ.கா. புதிதாக நியமிக்கப்பட்ட முதலமைச்சர்) 6 மாதங்களுக்குள் பேரவை அல்லது மேலவைக்குத் தேர்ந்தெடுக்கப்பட வேண்டும்.",
+        "Supreme Court ruled in SR Chaudhuri case (2001) that a non-member who fails to get elected within 6 months CANNOT be re-appointed as minister in the same Assembly term without getting elected.",
+        "SR செளத்ரி (2001) வழக்கில் 6 மாதத்தில் தேர்ந்தெடுக்கப்படாத நபர் அதே பேரவை காலத்தில் மீண்டும் அமைச்சராக முடியாது என உச்ச நீதிமன்றம் தீர்ப்பளித்தது.",
+        "6 months is the maximum grace period for non-members.",
+        "உறுப்பினரல்லாதவருக்கான அதிகபட்ச சலுகைக் காலம் 6 மாதங்கள்."))
+
+    q.append(mk_q(25, "Medium", "Direct",
+        "Under Article 166(3) of the Constitution, who makes rules for the more convenient transaction of the business of the Government of the State?",
+        "சரத்து 166(3)-ன் படி, மாநில அரசின் பணிகளை எளிதாக நடத்துவதற்கான விதிகளை உருவாக்குபவர் யார்?",
+        {"A": "The Chief Minister", "B": "The Governor", "C": "The State Legislative Assembly", "D": "The Chief Secretary"},
+        {"A": "முதலமைச்சர்", "B": "ஆளுநர்", "C": "மாநில சட்டமன்றப் பேரவை", "D": "தலைமைச் செயலாளர்"},
+        "B",
+        "Article 166(3) mandates that the Governor shall make rules for the more convenient transaction of the business of the Government of the State, and for the allocation among Ministers of the said business.",
+        "சரத்து 166(3)-ன் படி, மாநில அரசின் பணிகளை எளிதாக நடத்துவதற்கும், அமைச்சர்களிடையே அப்பணிகளைப் பகிர்ந்தளிப்பதற்கும் ஆளுநர் விதிகளை உருவாக்க வேண்டும்.",
+        "Rules of Business of State Government are framed by the Governor.",
+        "மாநில அரசின் பணி விதிகள் ஆளுநரால் உருவாக்கப்படுகின்றன.",
+        "Allocation of portfolios among ministers is done under rules made by Governor.",
+        "அமைச்சர்களுக்கான இலாகா ஒதுக்கீடு ஆளுநர் உருவாக்கும் விதிகளின் படியே செய்யப்படுகிறது.",
+        "Formal executive rule-making power.",
+        "முறைப்படியான நிர்வாக விதி உருவாக்கும் அதிகாரம் ஆகும்."))
+
+    q.append(mk_q(26, "Medium", "Direct",
+        "Under Article 200 of the Constitution, what happens when a non-Money Bill returned by the Governor for reconsideration is passed again by the State Legislature with or without amendment?",
+        "சரத்து 200-ன் படி, ஆளுநரால் மறுபரிசீலனைக்குத் திருப்பி அனுப்பப்பட்ட தன மசோதா அல்லாத மசோதா, திருத்தங்களுடனோ அல்லது திருத்தமின்றியோ மீண்டும் சட்டமன்றத்தால் நிறைவேற்றப்பட்டால் என்ன நிகழும்?",
+        {"A": "The Governor can withhold assent again", "B": "The Governor must give assent to the Bill and shall not withhold assent therefrom", "C": "The Bill is automatically referred to Supreme Court", "D": "The Bill lapses automatically"},
+        {"A": "ஆளுநர் மீண்டும் ஒப்புதலை நிறுத்தலாம்", "B": "ஆளுநர் மசோதாவிற்கு கட்டாயம் ஒப்புதல் அளிக்க வேண்டும், ஒப்புதலை நிறுத்தக் கூடாது", "C": "மசோதா தானாகவே உச்ச நீதிமன்றத்திற்கு அனுப்பப்படும்", "D": "மசோதா தானாகவே காலாவதியாகும்"},
+        "B",
+        "Proviso to Article 200 specifies that if the Bill is passed again by the House or Houses with or without amendment and presented to the Governor for assent, the Governor SHALL NOT WITHHOLD ASSENT therefrom.",
+        "சரத்து 200-ன் விலக்கு விதி தெளிவுபடுத்துகிறது: மசோதா திருத்தங்களுடனோ திருத்தமின்றியோ மீண்டும் அவைகளால் நிறைவேற்றப்பட்டு ஆளுநரிடம் சமர்ப்பிக்கப்பட்டால், ஆளுநர் அதற்கு ஒப்புதலை நிறுத்தக் கூடாது (கட்டாயம் ஒப்புதல் அளிக்க வேண்டும்).",
+        "Governor has only a SUSPENSIVE VETO over state legislation; Legislature can override it by passing bill second time.",
+        "ஆளுநருக்குத் தற்காலிகத் தடுப்பதிகாரம் (Suspensive Veto) மட்டுமே உள்ளது; சட்டமன்றம் இரண்டாவது முறை நிறைவேற்றி அதை முறியடிக்கலாம்.",
+        "Contrast with President under Art 201: President is NOT bound even if state bill is passed second time!",
+        "சரத்து 201-ன் கீழ் குடியரசுத் தலைவரோடு ஒப்பிடுக: இரண்டாவது முறை நிறைவேற்றினாலும் குடியரசுத் தலைவர் கட்டுப்பட்டவர் அல்ல!",
+        "Ensures legislative supremacy over routine bills.",
+        "சாதாரண மசோதாக்களில் சட்டமன்ற மேலாண்மையை உறுதி செய்கிறது."))
+
+    q.append(mk_q(27, "Medium", "Direct",
+        "Which of the following is a CONSTITUTIONAL DISCRETION explicitly provided to the Governor in the text of the Constitution?",
+        "அரசியலமைப்பு உரையில் வெளிப்படையாக ஆளுநருக்கு வழங்கப்பட்டுள்ள அரசியலமைப்பு விருப்ப அதிகாரம் (Constitutional Discretion) எது?",
+        {"A": "Reserving a Bill for the consideration of the President under Article 200", "B": "Appointing the Chief Minister in a hung assembly", "C": "Dismissal of Ministry when it loses majority", "D": "Dissolution of Legislative Assembly when CM loses confidence"},
+        {"A": "சரத்து 200-ன் கீழ் குடியரசுத் தலைவரின் பரிசீலனைக்கு ஒரு மசோதாவை ஒதுக்கி வைப்பது", "B": "தொங்கு சட்டமன்றத்தில் முதலமைச்சரை நியமிப்பது", "C": "பெரும்பான்மை இழந்த அமைச்சரவையை நீக்குவது", "D": "முதலமைச்சர் நம்பிக்கை இழந்ததும் பேரவையைக் கலைப்பது"},
+        "A",
+        "Constitutional Discretion vs Situational Discretion: Reserving a Bill for President (Art 200), Recommending President's Rule (Art 356), and seeking information from CM (Art 167) are CONSTITUTIONAL discretions explicitly mentioned in the text. Options B, C, D are SITUATIONAL discretions arising out of political circumstances.",
+        "அரசியலமைப்பு விருப்ப அதிகாரம் vs சூழ்நிலை விருப்ப அதிகாரம்: மசோதாவை ஒதுக்குவது (சரத்து 200), குடியரசுத் தலைவர் ஆட்சியைப் பரிந்துரைப்பது (சரத்து 356), முதலமைச்சரிடம் தகவல் கேட்பது (சரத்து 167) ஆகியவை உரையில் உள்ள அரசியலமைப்பு விருப்ப அதிகாரங்கள் ஆகும். B, C, D ஆகியவை சூழ்நிலை விருப்ப அதிகாரங்கள் ஆகும்.",
+        "High-yield TNPSC distinction between Constitutional Discretion (textual) and Situational Discretion (circumstantial).",
+        "அரசியலமைப்பு விருப்ப அதிகாரம் (உரையில் உள்ளது) மற்றும் சூழ்நிலை விருப்ப அதிகாரம் (சூழலால் வருவது) இடையிலான முக்கிய வேறுபாடு!",
+        "Article 163(1) protects Governor's constitutional discretion.",
+        "சரத்து 163(1) ஆளுநரின் அரசியலமைப்பு விருப்ப அதிகாரத்தைப் பாதுகாக்கிறது.",
+        "President does NOT have explicit textual discretionary powers in Article 74.",
+        "சரத்து 74-ல் குடியரசுத் தலைவருக்கு வெளிப்படையான உரை விருப்ப அதிகாரம் இல்லை."))
+
+    q.append(mk_q(28, "Medium", "Direct",
+        "In a 'Hung Assembly' where no political party secures a clear majority in the general elections, which type of discretion does the Governor exercise to appoint a Chief Minister?",
+        "பொதுத் தேர்தலில் எந்தக் கட்சியும் தெளிவான பெரும்பான்மை பெறாத 'தொங்கு சட்டமன்ற' (Hung Assembly) சூழ்நிலையில், முதலமைச்சரை நியமிக்க ஆளுநர் எந்த வகையான விருப்ப அதிகாரத்தைப் பயன்படுத்துகிறார்?",
+        {"A": "Constitutional Discretion under Article 163", "B": "Situational Discretion arising from political circumstances", "C": "Judicial Discretion under High Court direction", "D": "Statutory Discretion under Representation of People Act"},
+        {"A": "சரத்து 163-ன் கீழான அரசியலமைப்பு விருப்ப அதிகாரம்", "B": "அரசியல் சூழ்நிலைகளிலிருந்து எழும் சூழ்நிலை விருப்ப அதிகாரம் (Situational Discretion)", "C": "உயர் நீதிமன்ற வழிகாட்டுதலின் கீழான நீதித்துறை விருப்ப அதிகாரம்", "D": "மக்கள் பிரதிநிதித்துவச் சட்டத்தின் கீழான சட்டப்பூர்வ விருப்ப அதிகாரம்"},
+        "B",
+        "Appointing a Chief Minister in a Hung Assembly is a SITUATIONAL DISCRETION of the Governor (not explicitly written in Article 163, but arises when no party has a clear leader).",
+        "தொங்கு சட்டமன்றத்தில் முதலமைச்சரை நியமிப்பது ஆளுநரின் 'சூழ்நிலை விருப்ப அதிகாரம்' (Situational Discretion) ஆகும் (சரத்து 163-ல் நேரடியாக எழுதப்படவில்லை, ஆனால் சூழ்நிலையால் எழுகிறது).",
+        "Guidelines by Sarkaria Commission for Hung Assembly: 1. Pre-poll alliance with majority, 2. Single largest party claiming majority, 3. Post-poll alliance.",
+        "தொங்கு சட்டமன்றத்திற்கு சர்க்காரியா ஆணைய வழிகாட்டுதல்கள்: 1. தேர்தலுக்கு முந்தைய கூட்டணி, 2. தனிப்பெரும் கட்சி, 3. தேர்தலுக்குப் பிந்தைய கூட்டணி.",
+        "Governor must invite the leader who is most likely to command a majority on the floor of the House.",
+        "சட்டமன்றத் தளத்தில் பெரும்பான்மையை நிரூபிக்க வாய்ப்புள்ள தலைவரையே ஆளுநர் அழைக்க வேண்டும்.",
+        "Appointed CM must prove majority on floor within a specified time (e.g. 10-15 days).",
+        "நியமிக்கப்பட்ட முதலமைச்சர் குறிப்பிட்ட காலத்தில் தளத்தில் பெரும்பான்மையை நிரூபிக்க வேண்டும்."))
+
+    q.append(mk_q(29, "Medium", "Direct",
+        "Under Article 163(1) of the Constitution, how do the discretionary powers of the Governor compare with those of the President under Article 74?",
+        "சரத்து 163(1)-ன் படி, ஆளுநரின் விருப்ப அதிகாரங்கள் சரத்து 74-ன் கீழான குடியரசுத் தலைவரின் அதிகாரங்களோடு எவ்வாறு ஒப்பிடப்படுகின்றன?",
+        {"A": "President has wider constitutional discretion than Governor", "B": "Governor has wider constitutional discretion than President because Constitution expressly envisages discretionary action for Governor under Article 163", "C": "Both President and Governor have identical discretionary provisions in the text", "D": "Neither President nor Governor has any discretionary power"},
+        {"A": "ஆளுநரை விட குடியரசுத் தலைவருக்கு பரந்த அரசியலமைப்பு விருப்ப அதிகாரம் உண்டு", "B": "குடியரசுத் தலைவரை விட ஆளுநருக்குப் பரந்த அரசியலமைப்பு விருப்ப அதிகாரம் உண்டு; ஏனெனில் சரத்து 163-ல் ஆளுநரின் விருப்பச் செயல்பாடுகள் வெளிப்படையாகக் கருதப்பட்டுள்ளன", "C": "குடியரசுத் தலைவர் மற்றும் ஆளுநர் இருவருக்கும் ஒரே மாதிரியான விருப்ப அதிகார விதிகள் உள்ளன", "D": "குடியரசுத் தலைவர் மற்றும் ஆளுநர் இருவருக்குமே விருப்ப அதிகாரம் இல்லை"},
+        "B",
+        "Constitutional Comparison: Article 163(1) expressly mentions 'except in so far as he is required to exercise his functions in his discretion', whereas Article 74 for President contains NO such express discretionary clause. Thus, Governor has wider CONSTITUTIONAL discretion than President.",
+        "அரசியலமைப்பு ஒப்பீடு: சரத்து 163(1) 'தனது விருப்பப்படி செயல்படக் கோரப்படும் சந்தர்ப்பங்கள் தவிர' என வெளிப்படையாகக் குறிப்பிடுகிறது; ஆனால் குடியரசுத் தலைவருக்கான சரத்து 74-ல் இத்தகைய வெளிப்படையான பிரிவு இல்லை. எனவே ஆளுநருக்குக் குடியரசுத் தலைவரை விடப் பரந்த அரசியலமைப்பு விருப்ப அதிகாரம் உண்டு.",
+        "High-yield concept: Governor has both Constitutional & Situational discretion; President has mostly Situational discretion.",
+        "முக்கியக் கோட்பாடு: ஆளுநருக்கு அரசியலமைப்பு & சூழ்நிலை விருப்ப அதிகாரங்கள் உண்டு; குடியரசுத் தலைவருக்கு பெரும்பாலும் சூழ்நிலை விருப்ப அதிகாரமே உண்டு.",
+        "Art 163(2) makes Governor's decision on discretion final.",
+        "சரத்து 163(2) ஆளுநர் முடிவை இறுதியானதாக்குகிறது.",
+        "Framers gave Governor wider discretion to safeguard Union interest and federal balance.",
+        "தேசிய நலன் மற்றும் கூட்டாட்சி சமநிலையைப் பாதுகாக்க ஆளுநருக்கு இவ்வாதிகாரம் வழங்கப்பட்டது."))
+
+    q.append(mk_q(30, "Medium", "Direct",
+        "Under Article 175(2) of the Constitution, what is the duty of the State Legislature when the Governor sends a message to the House with respect to a pending Bill?",
+        "சரத்து 175(2)-ன் படி, நிலுவையில் உள்ள ஒரு மசோதா தொடர்பாக ஆளுநர் அவைக்குச் செய்தி (Message) அனுப்பினால், மாநில சட்டமன்றத்தின் கடமை என்ன?",
+        {"A": "The House must ignore the message", "B": "The House shall with all convenient dispatch consider any matter required by the message to be taken into consideration", "C": "The House must dissolve itself", "D": "The message must be forwarded to Supreme Court"},
+        {"A": "அவை அச்செய்தியைப் புறக்கணிக்க வேண்டும்", "B": "அவை அச்செய்தியால் பரிசீலிக்கக் கோரப்படும் விஷயத்தை சாத்தியமான விரைவில் பரிசீலிக்க வேண்டும்", "C": "அவை தன்னைத்தானே கலைத்துக் கொள்ள வேண்டும்", "D": "அச்செய்தி உச்ச நீதிமன்றத்திற்கு அனுப்பப்பட வேண்டும்"},
+        "B",
+        "Article 175(2) states that when a message is sent by the Governor to a House, the House shall with all convenient dispatch consider any matter required by the message to be taken into consideration.",
+        "சரத்து 175(2)-ன் படி ஆளுநரால் செய்தி அனுப்பப்படும் போது, அச்செய்தியால் பரிசீலிக்கக் கோரப்படும் விஷயத்தை அவை சாத்தியமான விரைவில் பரிசீலிக்க வேண்டும்.",
+        "Governor can send messages regarding pending bills or any other matter.",
+        "நிலுவை மசோதாக்கள் அல்லது பிற விவகாரங்கள் குறித்து ஆளுநர் செய்தி அனுப்பலாம்.",
+        "Promotes communication between Governor and Legislature.",
+        "ஆளுநருக்கும் சட்டமன்றத்திற்கும் இடையிலான தொடர்பை ஊக்குவிக்கிறது.",
+        "Similar to President's right to send messages to Parliament under Article 86.",
+        "சரத்து 86-ன் கீழ் நாடாளுமன்றத்திற்குச் செய்தி அனுப்பும் குடியரசுத் தலைவர் உரிமையைப் போன்றது."))
+
+    q.append(mk_q(31, "Medium", "Direct",
+        "Under Article 202(3) of the Constitution, which of the following expenditures is NOT charged on the Consolidated Fund of the State?",
+        "சரத்து 202(3)-ன் படி, பின்வரும் செலவினங்களில் எது மாநிலத்தின் தொகுப்பு நிதியில் (Consolidated Fund of State) பொறுப்பளிக்கப்பட்ட செலவினம் (Charged Expenditure) அல்ல?",
+        {"A": "Emoluments and allowances of the Governor", "B": "Salaries and allowances of the Speaker and Deputy Speaker of Legislative Assembly", "C": "Salaries and allowances of High Court Judges", "D": "Pensions of High Court Judges"},
+        {"A": "ஆளுநரின் ஊதியம் மற்றும் படிகள்", "B": "சட்டமன்ற சபாநாயகர் மற்றும் துணை சபாநாயகரின் சம்பளம் மற்றும் படிகள்", "C": "உயர் நீதிமன்ற நீதிபதிகளின் சம்பளம் மற்றும் படிகள்", "D": "உயர் நீதிமன்ற நீதிபதிகளின் ஓய்வூதியம் (Pensions)"},
+        "D",
+        "CRITICAL TNPSC TRAP: High Court Judges' SALARIES and ALLOWANCES are charged on the Consolidated Fund of the STATE (Art 202(3)(d)), BUT High Court Judges' PENSIONS are charged on the Consolidated Fund of INDIA (Article 112(3)(d)(iii))!",
+        "மிக முக்கிய TNPSC பொறி: உயர் நீதிமன்ற நீதிபதிகளின் சம்பளம் மற்றும் படிகள் மாநிலத் தொகுப்பு நிதியில் (Art 202(3)(d)) பொறுப்பளிக்கப்பட்டவை; ஆனால் உயர் நீதிமன்ற நீதிபதிகளின் ஓய்வூதியம் (Pensions) இந்தியாவின் தொகுப்பு நிதியில் (Art 112(3)(d)) பொறுப்பளிக்கப்பட்டவை!",
+        "High Court judges pension is paid by Centre (Union Consolidated Fund), while salary is paid by State.",
+        "உயர் நீதிமன்ற நீதிபதிகள் ஓய்வூதியம் மத்திய அரசால் (இந்தியத் தொகுப்பு நிதி) வழங்கப்படுகிறது; சம்பளம் மாநில அரசால் வழங்கப்படுகிறது.",
+        "Reason: High Court judges can be transferred between different states.",
+        "காரணம்: உயர் நீதிமன்ற நீதிபதிகள் வெவ்வேறு மாநிலங்களுக்கு மாற்றப்படலாம்.",
+        "Top recurring TNPSC Group 1 question!",
+        "TNPSC குரூப் 1 தேர்வில் திரும்பத் திரும்பக் கேட்கப்படும் வினா!"))
+
+    q.append(mk_q(32, "Medium", "Direct",
+        "Under Article 203(1) of the Constitution, how are estimates relating to expenditure CHARGED upon the Consolidated Fund of the State treated in the Legislative Assembly?",
+        "சரத்து 203(1)-ன் படி, மாநிலத் தொகுப்பு நிதியில் பொறுப்பளிக்கப்பட்ட செலவினங்கள் (Charged Expenditure) தொடர்பான மதிப்பீடுகள் சட்டமன்றப் பேரவையில் எவ்வாறு நடத்தப்படுகின்றன?",
+        {"A": "They shall be submitted to the vote of the Legislative Assembly", "B": "They shall NOT be submitted to the vote of the Legislative Assembly, but discussion is allowed", "C": "No discussion or vote is allowed at all", "D": "They require approval from Governor only"},
+        {"A": "அவை சட்டமன்றப் பேரவையின் வாக்கெடுப்பிற்குச் சமர்ப்பிக்கப்பட வேண்டும்", "B": "அவை சட்டமன்றப் பேரவையின் வாக்கெடுப்பிற்குச் சமர்ப்பிக்கப்படக் கூடாது, ஆனால் விவாதம் அனுமதிக்கப்படும்", "C": "விவாதமோ வாக்கெடுப்போ அனுமதிக்கப்படாது", "D": "ஆளுநரின் ஒப்புதல் மட்டுமே தேவை"},
+        "B",
+        "Article 203(1) explicitly provides that so much of the estimates as relates to expenditure charged upon the Consolidated Fund of a State shall NOT be submitted to the vote of the Legislative Assembly, but nothing shall prevent discussion in the Legislature.",
+        "சரத்து 203(1) தெளிவுபடுத்துகிறது: மாநிலத் தொகுப்பு நிதியில் பொறுப்பளிக்கப்பட்ட செலவினங்கள் சட்டமன்றப் பேரவையின் வாக்கெடுப்பிற்குச் சமர்ப்பிக்கப்படக் கூடாது, ஆனால் சட்டமன்றத்தில் விவாதிப்பதைத் எதுவும் தடுக்காது.",
+        "Charged expenditure = NON-VOTABLE, but DISCUSSABLE.",
+        "பொறுப்பளிக்கப்பட்ட செலவினம் = வாக்கெடுப்பிற்கு உட்படாதது, ஆனால் விவாதிக்கத்தக்கது.",
+        "Votable expenditure = Submitted as Demands for Grants under Art 203(2).",
+        "வாக்களிக்கும் செலவினம் = சரத்து 203(2)-ன் கீழ் மானியக் கோரிக்கைகளாகச் சமர்ப்பிக்கப்படும்.",
+        "Protects constitutional offices (Governor, HC judges, SPSC) from legislative voting cuts.",
+        "அரசியலமைப்பு அமைப்புகளை சட்டமன்ற வாக்கெடுப்புக் குறைப்புகளிலிருந்து பாதுகாக்கிறது."))
+
+    q.append(mk_q(33, "Medium", "Direct",
+        "Under Article 204 of the Constitution, no money can be withdrawn from the Consolidated Fund of the State except under appropriation made by which law?",
+        "சரத்து 204-ன் படி, எந்தச் சட்டத்தின் கீழ் செய்யப்பட்ட ஒதுக்கீடு தவிர மாநிலத் தொகுப்பு நிதியிலிருந்து பணம் எதுவும் திரும்பப் பெறப்பட முடியாது?",
+        {"A": "Finance Act", "B": "Appropriation Act", "C": "Contingency Act", "D": "Ordinance"},
+        {"A": "நிதிச் சட்டம் (Finance Act)", "B": "ஒதுக்கீட்டுச் சட்டம் (Appropriation Act)", "C": "அவசரகாலச் சட்டம்", "D": "அவசரச்சட்டம்"},
+        "B",
+        "Article 204(3) states that subject to Articles 205 and 206, no money shall be withdrawn from the Consolidated Fund of the State except under appropriation made by LAW passed in accordance with Article 204 (Appropriation Act).",
+        "சரத்து 204(3)-ன் படி, சரத்து 204-ன் கீழ் நிறைவேற்றப்படும் ஒதுக்கீட்டுச் சட்டத்தின் (Appropriation Act) மூலமான ஒதுக்கீடு தவிர மாநிலத் தொகுப்பு நிதியிலிருந்து பணம் எடுக்க முடியாது.",
+        "Appropriation Bill authorizes withdrawal of voted demands + charged expenditure.",
+        "ஒதுக்கீட்டு மசோதா வாக்களிக்கப்பட்ட மானியங்கள் + பொறுப்பளிக்கப்பட்ட செலவினங்களை எடுக்க அதிகாரம் அளிக்கிறது.",
+        "Passed after Demands for Grants are voted by Assembly.",
+        "மானியக் கோரிக்கைகள் நிறைவேறிய பின் இது நிறைவேற்றப்படுகிறது.",
+        "No expenditure without parliamentary/legislative authorization.",
+        "சட்டமன்ற அனுமதியின்றி எந்தச் செலவும் செய்ய முடியாது."))
+
+    q.append(mk_q(34, "Medium", "Direct",
+        "Under Article 205 of the Constitution, when the amount authorized for a particular service is found insufficient for the current financial year, what statement must the Governor cause to be laid before the Legislature?",
+        "சரத்து 205-ன் படி, நடப்பு நிதியாண்டில் ஒரு குறிப்பிட்ட சேவைக்கு ஒதுக்கப்பட்ட தொகை போதாது எனக் கண்டறியப்பட்டால், ஆளுநர் எந்த அறிக்கையைச் சட்டமன்றத்தின் முன் வைக்கச் செய்ய வேண்டும்?",
+        {"A": "Supplementary or Additional Demand Statement", "B": "Vote on Account Statement", "C": "Vote of Credit Statement", "D": "Annual Financial Statement"},
+        {"A": "கூடுதல் அல்லது துணை மானியக் கோரிக்கை அறிக்கை (Supplementary Demand)", "B": "இடைக்காலக் கணக்கு அறிக்கை (Vote on Account)", "C": "கடன் வாக்கு அறிக்கை (Vote of Credit)", "D": "ஆண்டறிக்கை நிதிநிலை"},
+        "A",
+        "Article 205(1)(a) provides that if amount authorized for a service is insufficient or a new service arises, the Governor shall cause to be laid before the Legislature a Supplementary or Additional Demand Statement.",
+        "சரத்து 205(1)(a)-ன் படி, ஒரு சேவைக்கு ஒதுக்கப்பட்ட தொகை போதாமலிருந்தாலோ அல்லது புதிய சேவை எழுந்தாலோ, ஆளுநர் கூடுதல் அல்லது துணை மானியக் கோரிக்கை அறிக்கையைச் சட்டமன்றத்தின் முன் வைக்கச் செய்ய வேண்டும்.",
+        "Supplementary Grants are passed in the same manner as original Demands for Grants.",
+        "துணை மானியங்கள் அசல் மானியக் கோரிக்கைகளைப் போன்றே நிறைவேற்றப்படுகின்றன.",
+        "Article 205 = Supplementary, Additional or Excess Grants.",
+        "சரத்து 205 = துணை, கூடுதல் அல்லது உபரி மானியங்கள்.",
+        "Ensures constitutional financial flexibility during the year.",
+        "ஆண்டின் போது அரசியலமைப்பு நிதி நெகிழ்வுத்தன்மையை உறுதி செய்கிறது."))
+
+    q.append(mk_q(35, "Medium", "Direct",
+        "Under Article 206 of the Constitution, what is the power of the State Legislative Assembly to make a grant in advance before the completion of the budget voting process called?",
+        "சரத்து 206-ன் படி, பட்ஜெட் வாக்கெடுப்பு நிறைவடையும் முன் முன்செலவிற்காக முன்பணமாக மானியம் வழங்கும் சட்டமன்றப் பேரவையின் அதிகாரம் எவ்வாறு அழைக்கப்படுகிறது?",
+        {"A": "Vote on Account", "B": "Vote of Credit", "C": "Exceptional Grant", "D": "Supplementary Grant"},
+        {"A": "இடைக்காலக் கணக்கு / முன்பண மானியம் (Vote on Account)", "B": "நம்பிக்கை மானியம் (Vote of Credit)", "C": "விதிவிலக்கு மானியம் (Exceptional Grant)", "D": "துணை மானியம் (Supplementary Grant)"},
+        "A",
+        "Article 206(1)(a) empowers the Legislative Assembly to make any grant in advance in respect of estimated expenditure for a part of any financial year pending completion of procedure under Art 203 & 204 (Vote on Account).",
+        "சரத்து 206(1)(a)-ன் படி, பட்ஜெட் நடைமுறை முடியும் வரை நிதியாண்டின் ஒரு பகுதிக்கான செலவிற்காக முன்பணமாக மானியம் வழங்குவது 'இடைக்காலக் கணக்கு' (Vote on Account) எனப்படும்.",
+        "Vote on Account is passed to keep government functioning from April 1 until full budget is passed.",
+        "முழு பட்ஜெட் நிறைவேறும் வரை ஏப்ரல் 1 முதல் அரசு இயங்க இடைக்காலக் கணக்கு நிறைவேற்றப்படுகிறது.",
+        "Vote of Credit (Art 206(1)(b)) = Blank cheque for unexpected demand (e.g. war/disaster).",
+        "நம்பிக்கை மானியம் = எதிர்பாராத அவசரத் தேவைகளுக்கானது.",
+        "Exceptional Grant (Art 206(1)(c)) = Special purpose grant forming no part of current service.",
+        "விதிவிலக்கு மானியம் = சிறப்புக் காரணத்திற்கான மானியம்."))
+
+    q.append(mk_q(36, "Medium", "Direct",
+        "Which Administrative Reforms Commission or Committee recommended that the Governor of a State should be appointed by the President in consultation with the Chief Minister of that State?",
+        "மாநில ஆளுநர் அம்மாநில முதலமைச்சரைக் கலந்தாலோசித்த பிறகே குடியரசுத் தலைவரால் நியமிக்கப்பட வேண்டும் எனப் பரிந்துரைத்த சீர்திருத்தக் குழு/ஆணையம் எது?",
+        {"A": "Sarkaria Commission (1983)", "B": "Administrative Reforms Commission (1966)", "C": "Rajamannar Committee (1969)", "D": "All of the above"},
+        {"A": "சர்க்காரியா ஆணையம் (1983)", "B": "நிர்வாக சீர்திருத்த ஆணையம் (1966)", "C": "ராஜமன்னார் குழு (1969)", "D": "மேற்கூறிய அனைத்தும்"},
+        "D",
+        "Consultation with CM before Governor's appointment was recommended by multiple bodies: ARC (1966), Rajamannar Committee (1969), Sarkaria Commission (1983), and Punchhi Commission (2007). All advocated CM consultation as a healthy convention.",
+        "ஆளுநர் நியமனத்தில் முதலமைச்சரைக் கலந்தாலோசிக்க வேண்டும் என்ற பரிந்துரையை நிர்வாக சீர்திருத்த ஆணையம் (1966), ராஜமன்னார் குழு (1969), சர்க்காரியா ஆணையம் (1983) மற்றும் புஞ்சி ஆணையம் (2007) ஆகிய அனைத்தும் அளித்துள்ளன.",
+        "CM consultation avoids political friction between Governor and State Cabinet.",
+        "முதலமைச்சர் கலந்தாலோசனை ஆளுநருக்கும் மாநில அமைச்சரவைக்கும் இடையிலான மோதலைத் தவிர்க்கிறது.",
+        "Remains a convention, NOT an explicit written requirement in Article 155.",
+        "இது ஒரு அரசியலமைப்பு மரபே தவிர சரத்து 155-ல் எழுதப்பட்ட விதியல்ல.",
+        "High-yield consensus recommendation across commissions.",
+        "அனைத்து ஆணையங்களின் ஏகோபித்த முக்கியப் பரிந்துரை."))
+
+    q.append(mk_q(37, "Medium", "Direct",
+        "Under Article 163(1) of the Constitution, who decides whether a particular matter falls within the Governor's discretionary powers or not?",
+        "சரத்து 163(1)-ன் படி, ஒரு குறிப்பிட்ட விஷயம் ஆளுநரின் விருப்ப அதிகாரத்திற்கு உட்பட்டதா இல்லையா என்பதைத் தீர்மானிப்பவர் யார்?",
+        {"A": "The High Court", "B": "The Governor himself in his discretion", "C": "The Chief Minister", "D": "The President of India"},
+        {"A": "உயர் நீதிமன்றம்", "B": "ஆளுநரே தனது விருப்பப்படி", "C": "முதலமைச்சர்", "D": "இந்தியக் குடியரசுத் தலைவர்"},
+        "B",
+        "Article 163(2) explicitly mandates: 'If any question arises whether any matter is or is not a matter as respects which the Governor is required by or under this Constitution to act in his discretion, the decision of the Governor in his discretion shall be final.'",
+        "சரத்து 163(2) தெளிவுபடுத்துகிறது: ஒரு விஷயம் ஆளுநரின் விருப்ப அதிகாரத்திற்குட்பட்டதா இல்லையா என்ற கேள்வி எழுந்தால், ஆளுநரே தனது விருப்பப்படி எடுக்கும் முடிவே இறுதியானது ஆகும்.",
+        "Governor himself is the SOLE JUDGE of his discretionary authority under Article 163(2).",
+        "சரத்து 163(2)-ன் படி ஆளுநரே தனது விருப்ப அதிகாரத்தின் ஒரே நடுவர் ஆவார்.",
+        "Protects Governor's discretionary acts from immediate collateral challenge.",
+        "ஆளுநரின் விருப்பச் செயல்களை உடனடி சவால்களிலிருந்து பாதுகாக்கிறது.",
+        "However, constitutional exercise of discretion is subject to judicial review if mala fide (SR Bommai / Rameshwar Prasad cases).",
+        "இருப்பினும் துர்நோக்கம் இருந்தால் நீதித்துறை மறுஆய்வுக்கு உட்பட்டது (SR Bommai / ரமேஷ்வர் பிரசாத் வழக்குகள்)."))
+
+    q.append(mk_q(38, "Medium", "Direct",
+        "Under Article 167(b) of the Constitution, what power does the Governor have regarding information from the State Government?",
+        "சரத்து 167(b)-ன் படி, மாநில அரசிடமிருந்து தகவல்களைப் பெறுவது தொடர்பாக ஆளுநருக்கு உள்ள அதிகாரம் என்ன?",
+        {"A": "Governor can call for information from any district collector directly bypassing CM", "B": "Governor can require the Chief Minister to furnish information relating to administration of affairs of the State and proposals for legislation", "C": "Governor can order telephone tapping of ministers", "D": "Governor cannot request any information from CM"},
+        {"A": "முதலமைச்சரைத் தவிர்த்து மாவட்ட ஆட்சியர்களிடம் ஆளுநர் நேரடியாகத் தகவல் கேட்கலாம்", "B": "மாநில நிர்வாக விவகாரங்கள் மற்றும் சட்ட முன்மொழிவுகள் தொடர்பான தகவல்களைத் தருமாறு முதலமைச்சரிடம் ஆளுநர் கோரலாம்", "C": "அமைச்சர்களின் தொலைபேசிகளை ஒட்டுக் கேட்க ஆளுநர் உத்தரவிடலாம்", "D": "முதலமைச்சரிடம் ஆளுநர் எந்தத் தகவலையும் கேட்க முடியாது"},
+        "B",
+        "Article 167(b) specifies that it shall be the duty of the CM to furnish such information relating to the administration of the affairs of the State and proposals for legislation as the Governor may call for.",
+        "சரத்து 167(b)-ன் படி, மாநில நிர்வாகம் மற்றும் சட்ட முன்மொழிவுகள் தொடர்பாக ஆளுநர் கோரும் தகவல்களை வழங்குவது முதலமைச்சரின் கடமையாகும்.",
+        "Governor receives information THROUGH the Chief Minister, preserving Cabinet hierarchy.",
+        "அமைச்சரவை படிநிலையைப் பேணி, முதலமைச்சர் மூலமாகவே ஆளுநர் தகவல்களைப் பெறுகிறார்.",
+        "Keeps Governor informed of state affairs to exercise constitutional guidance.",
+        "அரசியலமைப்பு வழிகாட்டுதலை வழங்க ஆளுநருக்கு மாநில விவகாரங்கள் தெரிய உதவுகிறது.",
+        "Corresponds to Article 78(b) for President and Prime Minister.",
+        "குடியரசுத் தலைவர் மற்றும் பிரதமருக்குரிய சரத்து 78(b)-க்கு இணையானது."))
+
+    q.append(mk_q(39, "Medium", "Direct",
+        "Under Article 175(1) of the Constitution, the Governor has the right to address which House(s) of the State Legislature?",
+        "சரத்து 175(1)-ன் படி, மாநில சட்டமன்றத்தின் எந்த அவையில்/அவைகளில் உரையாற்ற ஆளுநருக்கு உரிமை உண்டு?",
+        {"A": "Legislative Assembly only", "B": "Either House of the State Legislature or both Houses assembled together", "C": "Legislative Council only", "D": "He has no right to address the House except under Art 176"},
+        {"A": "சட்டமன்றப் பேரவையில் மட்டுமே", "B": "மாநில சட்டமன்றத்தின் ஏதேனும் ஒரு அவையில் அல்லது இரண்டு அவைகளும் ஒன்றாகக் கூடிய அமர்வில்", "C": "சட்டமன்ற மேலவையில் மட்டுமே", "D": "சரத்து 176 தவிர வேறு நேரத்தில் உரையாற்ற உரிமை இல்லை"},
+        "B",
+        "Article 175(1) provides that the Governor may address the Legislative Assembly or, in the case of a State having a Legislative Council, either House of the Legislature of the State, or both Houses assembled together, and may for that purpose require the attendance of members.",
+        "சரத்து 175(1)-ன் படி, ஆளுநர் சட்டமன்றப் பேரவையிலோ அல்லது மேலவையிலோ அல்லது இரண்டு அவைகளும் ஒன்றாகக் கூடிய அமர்விலோ உரையாற்றலாம்; அதற்காக உறுப்பினர்கள் வருகை தரக் கோரலாம்.",
+        "Article 175 is a GENERAL right to address; Article 176 is a MANDATORY SPECIAL address.",
+        "சரத்து 175 என்பது பொதுவான உரை உரிமை; சரத்து 176 என்பது கட்டாய சிறப்புரையாகும்.",
+        "Governor can address at any time he deems fit.",
+        "ஆளுநர் தான் விரும்பும் நேரத்தில் உரையாற்றலாம்.",
+        "Corresponds to Article 86 for President in Parliament.",
+        "நாடாளுமன்றத்தில் குடியரசுத் தலைவரின் சரத்து 86-க்கு இணையானது."))
+
+    q.append(mk_q(40, "Medium", "Direct",
+        "Under Article 200 of the Constitution, if the Governor reserves a Bill for the consideration of the President, what happens to the Governor's role regarding that Bill?",
+        "சரத்து 200-ன் படி, ஒரு மசோதாவைக் குடியரசுத் தலைவரின் பரிசீலனைக்கு ஆளுநர் ஒதுக்கி வைத்தால், அம்மசோதா தொடர்பான ஆளுநரின் பங்கு என்னவாகும்?",
+        {"A": "Governor can still veto the bill after President's decision", "B": "Governor's role in assenting to that Bill comes to an end; the President alone decides on the Bill under Article 201", "C": "Governor must sign the bill within 7 days", "D": "The Bill is automatically returned to Assembly"},
+        {"A": "குடியரசுத் தலைவர் முடிவுக்குப் பிறகும் ஆளுநர் மசோதாவை நிராகரிக்கலாம்", "B": "அம்மசோதாவிற்கு ஒப்புதல் அளிப்பதில் ஆளுநரின் பங்கு முடிவுக்கு வருகிறது; சரத்து 201-ன் கீழ் குடியரசுத் தலைவர் மட்டுமே முடிவெடுப்பார்", "C": "ஆளுநர் 7 நாட்களுக்குள் மசோதாவில் கையெழுத்திட வேண்டும்", "D": "மசோதா தானாகவே சட்டமன்றத்திற்குத் திரும்பும்"},
+        "B",
+        "Once a Bill is reserved by the Governor for President's consideration under Article 200, the Governor HAS NO FURTHER ROLE in assenting to the Bill. The President directly assents, withholds assent, or directs return under Article 201.",
+        "சரத்து 200-ன் கீழ் ஒரு மசோதா குடியரசுத் தலைவருக்கு ஒதுக்கப்பட்டவுடன், அம்மசோதாவிற்கு ஒப்புதல் அளிப்பதில் ஆளுநருக்கு மேலும் எந்தப் பங்கும் இல்லை. சரத்து 201-ன் கீழ் குடியரசுத் தலைவரே நேரடியாக ஒப்புதல் அளிப்பார் அல்லது நிறுத்துவார்.",
+        "If President directs return under Art 201, the Governor simply conveys President's direction to the House.",
+        "குடியரசுத் தலைவர் திருப்பி அனுப்பப் பணித்தால், ஆளுநர் அதை அவைக்குத் தெரிவிக்கும் தூதராக மட்டுமே செயல்படுவார்.",
+        "Transfers legislative veto power to the Union President.",
+        "சட்டமன்றத் தடுப்ப அதிகாரத்தை மத்தியக் குடியரசுத் தலைவருக்கு மாற்றுகிறது.",
+        "Protects federal national interests.",
+        "தேசிய கூட்டாட்சி நலன்களைப் பாதுகாக்கிறது."))
+
+    q.append(mk_q(41, "Medium", "Direct",
+        "Under Article 213(3) of the Constitution, if an Ordinance promulgated by the Governor makes any provision which would NOT be valid if enacted in an Act of the State Legislature, what is the legal status of that Ordinance?",
+        "சரத்து 213(3)-ன் படி, மாநில சட்டமன்றச் சட்டத்தில் இயற்றப்பட்டால் செல்லாததாகக்கூடிய ஒரு விதியை ஆளுநரின் அவசரச்சட்டம் கொண்டிருந்தால், அவ்வவசரச்சட்டத்தின் சட்டப்பூர்வ நிலை என்ன?",
+        {"A": "It is completely void", "B": "It is valid for 6 months automatically", "C": "It is valid if approved by CM", "D": "It is valid if approved by High Court"},
+        {"A": "அது முற்றிலும் செல்லாததாகும் (Void)", "B": "அது 6 மாதங்களுக்குத் தானாகவே செல்லுபடியாகும்", "C": "முதலமைச்சர் ஒப்புதல் அளித்தால் செல்லுபடியாகும்", "D": "உயர் நீதிமன்றம் ஒப்புதல் அளித்தால் செல்லுபடியாகும்"},
+        "A",
+        "Article 213(3) explicitly provides that if and so far as an Ordinance under this Article makes any provision which would not be valid if enacted in an Act of the Legislature of the State, it shall be VOID.",
+        "சரத்து 213(3) வெளிப்படையாகக் கூறுகிறது: மாநில சட்டமன்றச் சட்டத்தில் இயற்றப்பட்டால் செல்லாததாகக்கூடிய எந்தவொரு விதியையும் அவசரச்சட்டம் கொண்டிருந்தால், அது செல்லாததாகும் (Void).",
+        "Ordinance power is CO-EXTENSIVE with legislative power of State Legislature.",
+        "அவசரச்சட்ட அதிகாரம் மாநில சட்டமன்றத்தின் சட்ட அதிகாரத்திற்கு இணையான வரம்பைக் கொண்டது.",
+        "Governor cannot pass an Ordinance on subjects beyond State legislative competence.",
+        "மாநில அதிகார வரம்பிற்கு அப்பாற்பட்ட விவகாரங்களில் ஆளுநர் அவசரச்சட்டம் பிறப்பிக்க முடியாது.",
+        "Subject to same constitutional limitations as Acts of Legislature.",
+        "சட்டமன்றச் சட்டங்களைப் போன்றே அரசியலமைப்பு வரம்புகளுக்கு உட்பட்டது."))
+
+    q.append(mk_q(42, "Medium", "Direct",
+        "Under Article 361(2) of the Constitution, what protection is given to the Governor regarding criminal proceedings during his term of office?",
+        "சரத்து 361(2)-ன் படி, ஆளுநரின் பதவிக் காலத்தில் குற்றவியல் நடவடிக்கைகள் (Criminal Proceedings) தொடர்பாக அவருக்கு வழங்கப்பட்டுள்ள பாதுகாப்பு என்ன?",
+        {"A": "No criminal proceedings whatsoever shall be instituted or continued against the Governor in any court during his term of office", "B": "Criminal proceedings can be started with 1 month notice", "C": "Criminal proceedings can be started if approved by CM", "D": "Criminal proceedings can be conducted secretly"},
+        {"A": "ஆளுநரின் பதவிக் காலத்தில் அவருக்கு எதிராக எந்தவொரு நீதிமன்றத்திலும் எந்தக் குற்றவியல் நடவடிக்கையும் தொடங்கப்படவோ தொடரப்படவோ கூடாது", "B": "1 மாத முன் அறிவிப்புடன் குற்றவியல் நடவடிக்கையைத் தொடங்கலாம்", "C": "முதலமைச்சர் ஒப்புதல் அளித்தால் குற்றவியல் நடவடிக்கையைத் தொடங்கலாம்", "D": "குற்றவியல் நடவடிக்கையை ரகசியமாக நடத்தலாம்"},
+        "A",
+        "Article 361(2) lays down an ABSOLUTE BAR: 'No criminal proceedings whatsoever shall be instituted or continued against the President, or the Governor of a State, in any court during his term of office.'",
+        "சரத்து 361(2) முழுமையான தடையை விதிக்கிறது: 'ஆளுநரின் பதவிக் காலத்தில் அவருக்கு எதிராக எந்தவொரு நீதிமன்றத்திலும் எந்தக் குற்றவியல் நடவடிக்கையும் தொடங்கப்படவோ அல்லது தொடரப்படவோ கூடாது.'",
+        "Absolute immunity from criminal prosecution while in office.",
+        "பதவியில் இருக்கும் போது குற்றவியல் வழக்கிலிருந்து முழுமையான விலக்குரிமை.",
+        "Applies to personal acts committed before or during tenure while he holds office.",
+        "பதவியில் இருக்கும் வரை அவரது தனிப்பட்ட செயல்களுக்கும் இக் குற்றவியல் விலக்கு பொருந்தும்.",
+        "Once Governor leaves office, criminal proceedings can be instituted.",
+        "பதவியிலிருந்து விலகியவுடன் குற்றவியல் நடவடிக்கைகளைத் தொடங்கலாம்."))
+
+    q.append(mk_q(43, "Medium", "Direct",
+        "Under Article 361(4) of the Constitution, what requirement must be satisfied before any CIVIL proceeding can be instituted against the Governor in respect of any act done in his personal capacity?",
+        "சரத்து 361(4)-ன் படி, ஆளுநர் தனது தனிப்பட்ட முறையில் செய்த செயல் தொடர்பாக அவர் மீது சிவில் வழக்குத் (Civil Proceeding) தொடருவதற்கு முன் என்ன நிபந்தனை நிறைவு செய்யப்பட வேண்டும்?",
+        {"A": "Two months prior written notice must be delivered to the Governor", "B": "Permission of Supreme Court is required", "C": "Permission of State Assembly is required", "D": "No civil proceeding can ever be instituted"},
+        {"A": "ஆளுநருக்கு 2 மாதங்கள் முன் எழுத்துப்பூர்வ அறிவிப்பு (Written Notice) வழங்கப்பட வேண்டும்", "B": "உச்ச நீதிமன்ற அனுமதி தேவை", "C": "மாநில சட்டமன்ற அனுமதி தேவை", "D": "சிவில் வழக்கு ஒருபோதும் தொடர முடியாது"},
+        "B", # Wait, correct answer is Option A (2 months notice). Let's set correct_key to "A".
+        "A",
+        "Article 361(4) specifies that civil proceedings in respect of personal acts can be instituted during his term ONLY AFTER 2 MONTHS written notice has been delivered to the Governor, stating cause of action, party details, and relief claimed.",
+        "சரத்து 361(4)-ன் படி, ஆளுநரின் தனிப்பட்ட செயல்கள் மீதான சிவில் வழக்குகளை, வழக்குக் காரணம் மற்றும் விவரங்களைக் குறிப்பிட்டு 2 மாதங்கள் முன் எழுத்துப்பூர்வ அறிவிப்பு ஆளுநருக்கு வழங்கப்பட்ட பிறகே தொடர முடியும்.",
+        "Notice period = 2 Months written notice.",
+        "அறிவிப்புக் காலம் = 2 மாதங்கள் முன் எழுத்துப்பூர்வ அறிவிப்பு.",
+        "Applies to personal capacity civil acts (not official duties which have complete immunity).",
+        "தனிப்பட்ட சிவில் செயல்களுக்கு மட்டுமே இது பொருந்தும் (அதிகாரப்பூர்வ பணிகளுக்கு முழு விலக்கு உண்டு).",
+        "Criminal acts = Absolute immunity during tenure; Civil personal acts = 2 months notice.",
+        "குற்றவியல் செயல் = பதவிக் காலத்தில் முழு விலக்கு; சிவில் தனிப்பட்ட செயல் = 2 மாத முன் அறிவிப்பு."))
+
+    q.append(mk_q(44, "Medium", "Direct",
+        "Under Article 164(1) of the Constitution, the Ministers hold office during the pleasure of whom?",
+        "சரத்து 164(1)-ன் படி, அமைச்சர்கள் யாருடைய விருப்பம் உள்ளவரை (Pleasure) பதவியில் இருப்பார்கள்?",
+        {"A": "The Chief Minister", "B": "The Governor", "C": "The Speaker of Assembly", "D": "The President of India"},
+        {"A": "முதலமைச்சர்", "B": "ஆளுநர்", "C": "சட்டமன்ற சபாநாயகர்", "D": "இந்தியக் குடியரசுத் தலைவர்"},
+        "B",
+        "Article 164(1) provides that 'The Ministers shall hold office during the pleasure of the Governor.'",
+        "சரத்து 164(1)-ன் படி 'அமைச்சர்கள் ஆளுநரின் விருப்பம் உள்ளவரை (Pleasure of the Governor) பதவியில் இருப்பார்கள்.'",
+        "Individually responsible to the GOVERNOR (Governor can dismiss a minister on CM's advice).",
+        "தனிப்பட்ட முறையில் ஆளுநருக்குப் பொறுப்பானவர்கள் (முதலமைச்சரின் ஆலோசனையின் பேரில் ஆளுநர் ஒரு அமைச்சரை நீக்கலாம்).",
+        "Collectively responsible to the LEGISLATIVE ASSEMBLY (Art 164(2)).",
+        "கூட்டாகச் சட்டமன்றப் பேரவைக்குப் பொறுப்பானவர்கள் (சரத்து 164(2)).",
+        "Governor exercises 'pleasure' on advice of Chief Minister.",
+        "ஆளுநர் முதலமைச்சரின் ஆலோசனையின் பேரிலேயே தன் 'விருப்பத்தைப்' பயன்படுத்துகிறார்."))
+
+    q.append(mk_q(45, "Medium", "Direct",
+        "In Rameshwar Prasad v. Union of India (2006), what landmark ruling did the Supreme Court lay down regarding the Governor's power to recommend dissolution of the Assembly under Article 356?",
+        "ரமேஷ்வர் பிரசாத் எதிர் இந்திய யூனியன் (2006) வழக்கில், சரத்து 356-ன் கீழ் சட்டமன்றத்தைக் கலைக்கப் பரிந்துரைக்கும் ஆளுநரின் அதிகாரம் தொடர்பாக உச்ச நீதிமன்றம் வழங்கிய மைல்கல் தீர்ப்பு என்ன?",
+        {"A": "Dissolution of Assembly based on Governor's report aimed at preventing a political party from forming a government is mala fide and unconstitutional", "B": "Governor's decision to recommend Assembly dissolution is beyond judicial review", "C": "Governor can dissolve Assembly at any time without floor test", "D": "President's Rule cannot be challenged in any court"},
+        {"A": "அரசியல் கட்சி ஆட்சியமைப்பதைத் தடுக்கும் நோக்கில் ஆளுநர் அறிக்கையின் அடிப்படையில் சட்டமன்றத்தைக் கலைப்பது துர்நோக்கமுடையது (Mala fide) மற்றும் செல்லாது", "B": "சட்டமன்றத்தைக் கலைக்கப் பரிந்துரைக்கும் ஆளுநர் முடிவு நீதித்துறை மறுஆய்வுக்கு அப்பாற்பட்டது", "C": "தளச் சோதனையின்றி ஆளுநர் எந்நேரமும் பேரவையைக் கலைக்கலாம்", "D": "குடியரசுத் தலைவர் ஆட்சியை எந்த நீதிமன்றத்திலும் சவால் செய்ய முடியாது"},
+        "A",
+        "In Rameshwar Prasad (2006) (Bihar Assembly Dissolution Case), SC held that the Governor's report recommending dissolution of Bihar Assembly to prevent horse-trading/majority formation was subjective, mala fide, and unconstitutional. Proclamation based on misleading Governor report is subject to judicial review.",
+        "ரமேஷ்வர் பிரசாத் (2006) (பீகார் பேரவைக் கலைப்பு வழக்கு) வழக்கில் உச்ச நீதிமன்றம்: கட்சி தாவல்/ஆட்சியமைப்பதைத் தடுக்க பீகார் பேரவையைக் கலைக்கப் பரிந்துரைத்த ஆளுநரின் அறிக்கை தன்னிச்சையானது, துர்நோக்கமுடையது மற்றும் செல்லாது எனத் தீர்ப்பளித்தது.",
+        "Governor cannot act on mere suspicion of horse-trading to dissolve Assembly without floor test.",
+        "குதிரைப் பேரம் நடக்கும் என்ற வெறும் சந்தேகத்தின் அடிப்படையில் தளச் சோதனையின்றி ஆளுநர் பேரவையைக் கலைக்கக் கூடாது.",
+        "Strengthened judicial review over Governor's reports under Art 356.",
+        "சரத்து 356-ன் கீழான ஆளுநர் அறிக்கைகள் மீதான நீதித்துறை மறுஆய்வை இத்தீர்ப்பு வலுப்படுத்தியது.",
+        "Reaffirmed Bommai principles.",
+        "பொம்மை வழக் கோட்பாடுகளை மீண்டும் உறுதிப்படுத்தியது."))
+
+    q.append(mk_q(46, "Medium", "Direct",
+        "Under Article 163(1) of the Constitution, if any question arises whether a matter is one where the Governor is required to act in his discretion, can the courts inquire into the Governor's exercise of discretion?",
+        "சரத்து 163(1)-ன் படி, ஒரு விஷயம் ஆளுநரின் விருப்ப அதிகாரத்திற்குட்பட்டதா என்ற கேள்வி எழுந்தால், ஆளுநரின் விருப்ப அதிகாரப் பயன்பாடு குறித்து நீதிமன்றங்கள் விசாரணை செய்ய முடியுமா?",
+        {"A": "No, Article 163(2) states that the decision of the Governor in his discretion shall be final and its validity shall not be called in question", "B": "Yes, High Court can review every discretionary act routine manner", "C": "Yes, CM can challenge it in District Court", "D": "Yes, Election Commission must approve it"},
+        {"A": "இல்லை, சரத்து 163(2)-ன் படி ஆளுநர் முடிவே இறுதியானது, மேலும் அதன் செல்லுபடித் தன்மையைக் கேள்வி கேட்க முடியாது", "B": "ஆம், உயர் நீதிமன்றம் அனைத்து விருப்பச் செயல்களையும் ஆய்வு செய்யலாம்", "C": "ஆம், முதலமைச்சர் அதை மாவட்ட நீதிமன்றத்தில் சவால் செய்யலாம்", "D": "ஆம், தேர்தல் ஆணையம் ஒப்புதல் அளிக்க வேண்டும்"},
+        "A",
+        "Article 163(2) explicitly protects the Governor's discretionary decision: 'the decision of the Governor in his discretion shall be final, and the validity of anything done by the Governor shall not be called in question on the ground that he ought or ought not to have acted in his discretion.'",
+        "சரத்து 163(2) ஆளுநர் முடிவைப் பாதுகாக்கிறது: 'ஆளுநரின் விருப்பப்படி எடுக்கும் முடிவே இறுதியானது, மேலும் அவர் விருப்பப்படி செயல்பட்டிருக்க வேண்டும் அல்லது செயல்பட்டிருக்கக் கூடாது என்ற அடிப்படையில் அதன் செல்லுபடித் தன்மையைக் கேள்வி கேட்க முடியாது.'",
+        "Provides constitutional finality to Governor's discretion.",
+        "ஆளுநரின் விருப்ப அதிகாரத்திற்கு அரசியலமைப்பு இறுதியை அளிக்கிறது.",
+        "However, overall action is subject to judicial review if proven mala fide or constitutionally fraudulent (Rameshwar Prasad / Nabam Rebia).",
+        "இருப்பினும் துர்நோக்கம் நிரூபிக்கப்பட்டால் நீதித்துறை மறுஆய்வுக்கு உட்பட்டது.",
+        "Unique textual protection given to Governor.",
+        "ஆளுநருக்கு வழங்கப்பட்ட தனித்துவமான அரசியலமைப்புப் பாதுகாப்பு."))
+
+    q.append(mk_q(47, "Medium", "Direct",
+        "Under Article 174(1) of the Constitution, who issues the formal order summoning the State Legislature to meet?",
+        "சரத்து 174(1)-ன் படி, மாநில சட்டமன்றத்தைக் கூட்டுவதற்கான முறைப்படியான உத்தரவை (Summons) பிறப்பிப்பவர் யார்?",
+        {"A": "The Speaker of Legislative Assembly", "B": "The Governor of the State", "C": "The Chief Minister of the State", "D": "The Secretary of Legislative Assembly"},
+        {"A": "சட்டமன்ற சபாநாயகர்", "B": "மாநில ஆளுநர்", "C": "மாநில முதலமைச்சர்", "D": "சட்டமன்றச் செயலாளர்"},
+        "B",
+        "Article 174(1) states: 'The Governor shall from time to time summon the House or each House of the Legislature of the State to meet at such time and place as he thinks fit.'",
+        "சரத்து 174(1) கூறுகிறது: 'ஆளுநர் அவ்வப்போது மாநில சட்டமன்றத்தின் அவையை அல்லது ஒவ்வொரு அவையையும் தான் தகுதியெனக் கருதும் நேரம் மற்றும் இடத்தில் கூட்டுவதற்கு அழைப்பு விடுப்பார்.'",
+        "Governor summons the session on the aid and advice of the Chief Minister/Cabinet.",
+        "முதலமைச்சர் / அமைச்சரவையின் உதவி மற்றும் ஆலோசனையின் பேரிலேயே ஆளுநர் கூட்டத்தொடரைக் கூட்டுகிறார்.",
+        "Assembly Secretary issues summons notification ON BEHALF OF GOVERNOR.",
+        "ஆளுநரின் சார்பில் சட்டமன்றச் செயலாளர் அழைப்பு அறிவிக்கையை வெளியிடுகிறார்.",
+        "Power to summon belongs to Governor under Art 174.",
+        "கூட்டும் அதிகாரம் சரத்து 174-ன் கீழ் ஆளுநருக்குரியது."))
+
+    q.append(mk_q(48, "Medium", "Direct",
+        "Which Rajamannar Committee (1969) recommendation regarding Centre-State relations directly concerned the office of the Governor?",
+        "மத்திய-மாநில உறவுகள் குறித்த எந்த ராஜமன்னார் குழு (1969) பரிந்துரை ஆளுநர் பதவியோடு நேரடியாகத் தொடர்புடையது?",
+        {"A": "Article 356 should be completely deleted from the Constitution and Governor should not act as an agent of the Centre", "B": "Governor should be appointed for life", "C": "Governor should be given supreme military powers", "D": "Governor's office should be merged with Chief Minister"},
+        {"A": "சரத்து 356 அரசியலமைப்பிலிருந்து முற்றிலும் நீக்கப்பட வேண்டும், மேலும் ஆளுநர் மத்திய அரசின் முகவராகச் செயல்படக் கூடாது", "B": "ஆளுநர் வாழ்நாள் முழுமைக்கும் நியமிக்கப்பட வேண்டும்", "C": "ஆளுநருக்கு மேலான ராணுவ அதிகாரம் வழங்கப்பட வேண்டும்", "D": "ஆளுநர் பதவி முதலமைச்சருடன் இணைக்கப்பட வேண்டும்"},
+        "A",
+        "The Rajamannar Committee (appointed by Tamil Nadu Government in 1969) recommended that Articles 356, 357, and 365 should be omitted from the Constitution, and the Governor should act strictly as a constitutional head and not as an agent of the Union Government.",
+        "தமிழ்நாடு அரசால் 1969-ல் அமைக்கப்பட்ட ராஜமன்னார் குழு: சரத்துகள் 356, 357, 365 ஆகியவற்றை அரசியலமைப்பிலிருந்து முற்றிலும் நீக்க வேண்டும் என்றும், ஆளுநர் மத்திய அரசின் முகவராக இல்லாமல் பெயரளவுத் தலைவராக மட்டுமே செயல்பட வேண்டும் என்றும் பரிந்துரைத்தது.",
+        "Rajamannar Committee strongly advocated State Autonomy.",
+        "ராஜமன்னார் குழு மாநில சுயாட்சியைத் தீவிரமாக வலியுறுத்தியது.",
+        "Recommended CM consultation for Governor appointment.",
+        "ஆளுநர் நியமனத்திற்கு முதலமைச்சர் கலந்தாலோசனையைப் பரிந்துரைத்தது.",
+        "Landmark Tamil Nadu Centre-State relations committee.",
+        "தமிழ்நாட்டின் வரலாற்றுச் சிறப்புமிக்க மத்திய-மாநில உறவுகள் குழு."))
+
+    q.append(mk_q(49, "Medium", "Direct",
+        "Under Article 200 of the Constitution, if the Governor withholds assent to a Bill passed by the State Legislature, what is the effect on the Bill?",
+        "சரத்து 200-ன் படி, மாநில சட்டமன்றம் நிறைவேற்றிய மசோதாவிற்கு ஆளுநர் தனது ஒப்புதலை நிறுத்தி வைத்தால் (Withhold Assent), அம்மசோதாவின் நிலை என்னவாகும்?",
+        {"A": "The Bill fails to become law and lapses (Absolute Veto)", "B": "The Bill is automatically sent to Parliament", "C": "The Bill becomes law after 30 days without signature", "D": "The High Court must review the Bill"},
+        {"A": "மசோதா சட்டமாகாமல் காலாவதியாகும் (Absolute Veto)", "B": "மசோதா தானாகவே நாடாளுமன்றத்திற்கு அனுப்பப்படும்", "C": "கையொப்பமின்றி 30 நாட்களுக்குப் பின் மசோதா சட்டமாகும்", "D": "உயர் நீதிமன்றம் மசோதாவை மறுஆய்வு செய்ய வேண்டும்"},
+        "A",
+        "When the Governor declares that he withholds assent to a Bill under Article 200, the Bill fails to become law and dies (Absolute Veto). In practice, Governor exercises this on advice of Cabinet regarding bills passed by previous government.",
+        "சரத்து 200-ன் கீழ் ஆளுநர் ஒப்புதலை நிறுத்தி வைப்பதாக அறிவித்தால், மசோதா சட்டமாகாமல் முடிவுக்கு வருகிறது (Absolute Veto). வழக்கமாக முந்தைய அரசு நிறைவேற்றிய மசோதாக்களுக்கு புதிய அமைச்சரவை ஆலோசனையின் பேரில் இது செய்யப்படுகிறது.",
+        "Withholding assent = Absolute Veto (Bill dies).",
+        "ஒப்புதலை நிறுத்துவது = முற்றுரிமைத் தடுப்பதிகாரம் (Absolute Veto).",
+        "Returning bill = Suspensive Veto (Legislature can override).",
+        "திருப்பி அனுப்புவது = தற்காலிகத் தடுப்பதிகாரம் (Suspensive Veto).",
+        "Governor exercises veto powers under Article 200.",
+        "சரத்து 200-ன் கீழ் ஆளுநர் தடுப்ப அதிகாரங்களைப் பயன்படுத்துகிறார்."))
+
+    q.append(mk_q(50, "Medium", "Direct",
+        "Under Article 166(2) of the Constitution, how are orders and instruments made and executed in the name of the Governor authenticated?",
+        "சரத்து 166(2)-ன் படி, ஆளுநரின் பெயரால் பிறப்பிக்கப்பட்டு நிறைவேற்றப்படும் உத்தரவுகள் மற்றும் சாசனங்கள் எவ்வாறு முறைப்படுத்தப்படுகின்றன (Authenticated)?",
+        {"A": "In such manner as specified in rules made by the Governor", "B": "By personal signature of the Chief Justice of High Court", "C": "By approval of the Union Home Ministry", "D": "By resolution of the State Assembly"},
+        {"A": "ஆளுநர் உருவாக்கும் விதிகளில் குறிப்பிடப்பட்டுள்ள முறையில்", "B": "உயர் நீதிமன்றத் தலைமை நீதிபதியின் தனிப்பட்ட கையொப்பத்தால்", "C": "மத்திய உள்துறை அமைச்சகத்தின் ஒப்புதலால்", "D": "மாநில சட்டமன்றத் தீர்மானத்தால்"},
+        "A",
+        "Article 166(2) provides that orders and other instruments made and executed in the name of the Governor shall be authenticated in such manner as may be specified in rules to be made by the Governor.",
+        "சரத்து 166(2)-ன் படி, ஆளுநரின் பெயரால் பிறப்பிக்கப்படும் உத்தரவுகள் ஆளுநர் உருவாக்கும் விதிகளில் குறிப்பிடப்படும் முறையிலேயே சான்றளித்து முறைப்படுத்தப்பட வேண்டும்.",
+        "Authenticated orders cannot be questioned in court on the ground that it is not an order made by the Governor.",
+        "சான்றளிக்கப்பட்ட உத்தரவுகளை அது ஆளுநரால் பிறப்பிக்கப்பட்ட உத்தரவு அல்ல என்ற அடிப்படையில் நீதிமன்றத்தில் கேள்வி கேட்க முடியாது.",
+        "Rules of Authentication framed by Governor.",
+        "சான்றளிப்பு விதிகள் ஆளுநரால் உருவாக்கப்படுகின்றன.",
+        "Usually signed by Secretary or Joint Secretary to Government.",
+        "வழக்கமாக அரசுச் செயலாளர் அல்லது இணைச் செயலாளரால் கையொப்பமிடப்படும்."))
+
+    return q
+
+if __name__ == "__main__":
+    medium_list = get_medium_mcqs()
+    print(f"Loaded {len(medium_list)} Governor Medium MCQs.")

@@ -1,0 +1,211 @@
+{
+  "topic": "Governor of a State",
+  "topic_id": "polity_governor",
+  "repository_id": "polity_governor",
+  "display_title": "Governor of a State",
+  "subject": "polity",
+  "source_notes": [
+    "data/notes/polity/governor_part_1.json",
+    "data/notes/polity/governor_part_2.json",
+    "data/notes/polity/governor_part_3.json"
+  ],
+  "target": {
+    "core": 325,
+    "grand_test": 100,
+    "overall": 425
+  },
+  "subtopics": [
+    {
+      "id": "subtopic_1",
+      "name": "Subtopic 1",
+      "coverage": "Covers key provisions in Subtopic 1",
+      "articles": [],
+      "key_concepts": [],
+      "tnpsc_traps": [
+        "1. Governor Appointment Trap (ஆளுநர் நியமனப் பொறி)",
+        "2. Oath Administering Authority Trap (பதவிப் பிரமாண அதிகாரிப் பொறி)"
+      ],
+      "question_models": [
+        "Conceptual",
+        "Statement",
+        "Match"
+      ],
+      "priority": "High",
+      "core_allocation": 65,
+      "grand_test_allocation": 20
+    },
+    {
+      "id": "subtopic_2",
+      "name": "Subtopic 2",
+      "coverage": "Covers key provisions in Subtopic 2",
+      "articles": [],
+      "key_concepts": [],
+      "tnpsc_traps": [
+        "3. Five-Year Tenure Security Trap (5 ஆண்டு பதவிக்காலப் பாதுகாப்புப் பொறி)",
+        "4. Age Qualification Trap (வயதுத் தகுதிப் பொறி)"
+      ],
+      "question_models": [
+        "Conceptual",
+        "Statement",
+        "Match"
+      ],
+      "priority": "High",
+      "core_allocation": 65,
+      "grand_test_allocation": 20
+    },
+    {
+      "id": "subtopic_3",
+      "name": "Subtopic 3",
+      "coverage": "Covers key provisions in Subtopic 3",
+      "articles": [],
+      "key_concepts": [],
+      "tnpsc_traps": [
+        "5. Dual State Governor Emoluments Trap (இரட்டை மாநில ஆளுநர் ஊதியப் பொறி)",
+        "1. Death Sentence Pardoning Trap (மரண தண்டனை மன்னிப்புப் பொறி)"
+      ],
+      "question_models": [
+        "Conceptual",
+        "Statement",
+        "Match"
+      ],
+      "priority": "High",
+      "core_allocation": 65,
+      "grand_test_allocation": 20
+    },
+    {
+      "id": "subtopic_4",
+      "name": "Subtopic 4",
+      "coverage": "Covers key provisions in Subtopic 4",
+      "articles": [],
+      "key_concepts": [],
+      "tnpsc_traps": [
+        "2. SPSC Member Removal Trap (SPSC உறுப்பினர் நீக்கப் பொறி)",
+        "3. Ordinance Expiry Timeline Trap (அவசரச் சட்டக் காலாவதி பொறி)"
+      ],
+      "question_models": [
+        "Conceptual",
+        "Statement",
+        "Match"
+      ],
+      "priority": "High",
+      "core_allocation": 65,
+      "grand_test_allocation": 20
+    },
+    {
+      "id": "subtopic_5",
+      "name": "Subtopic 5",
+      "coverage": "Covers key provisions in Subtopic 5",
+      "articles": [],
+      "key_concepts": [],
+      "tnpsc_traps": [
+        "4. Legislative Council Nomination Trap (சட்ட மேலவை நியமனப் பொறி)",
+        "5. Re-passed Reserved Bill Assent Trap (மீண்டும் நிறைவேற்றப்பட்ட மசோதா பொறி)"
+      ],
+      "question_models": [
+        "Conceptual",
+        "Statement",
+        "Match"
+      ],
+      "priority": "High",
+      "core_allocation": 65,
+      "grand_test_allocation": 20
+    }
+  ],
+  "articles": [],
+  "important_cases": [],
+  "commissions_committees": [],
+  "constitutional_provisions": [],
+  "comparison_targets": [],
+  "chronology_targets": [],
+  "tnpsc_traps": [
+    {
+      "trap_id": "TRAP_01",
+      "name": "1. Governor Appointment Trap (ஆளுநர் நியமனப் பொறி)",
+      "description": "1. Governor Appointment Trap (ஆளுநர் நியமனப் பொறி)"
+    },
+    {
+      "trap_id": "TRAP_02",
+      "name": "2. Oath Administering Authority Trap (பதவிப் பிரமா",
+      "description": "2. Oath Administering Authority Trap (பதவிப் பிரமாண அதிகாரிப் பொறி)"
+    },
+    {
+      "trap_id": "TRAP_03",
+      "name": "3. Five-Year Tenure Security Trap (5 ஆண்டு பதவிக்க",
+      "description": "3. Five-Year Tenure Security Trap (5 ஆண்டு பதவிக்காலப் பாதுகாப்புப் பொறி)"
+    },
+    {
+      "trap_id": "TRAP_04",
+      "name": "4. Age Qualification Trap (வயதுத் தகுதிப் பொறி)",
+      "description": "4. Age Qualification Trap (வயதுத் தகுதிப் பொறி)"
+    },
+    {
+      "trap_id": "TRAP_05",
+      "name": "5. Dual State Governor Emoluments Trap (இரட்டை மாந",
+      "description": "5. Dual State Governor Emoluments Trap (இரட்டை மாநில ஆளுநர் ஊதியப் பொறி)"
+    },
+    {
+      "trap_id": "TRAP_06",
+      "name": "1. Death Sentence Pardoning Trap (மரண தண்டனை மன்னி",
+      "description": "1. Death Sentence Pardoning Trap (மரண தண்டனை மன்னிப்புப் பொறி)"
+    },
+    {
+      "trap_id": "TRAP_07",
+      "name": "2. SPSC Member Removal Trap (SPSC உறுப்பினர் நீக்க",
+      "description": "2. SPSC Member Removal Trap (SPSC உறுப்பினர் நீக்கப் பொறி)"
+    },
+    {
+      "trap_id": "TRAP_08",
+      "name": "3. Ordinance Expiry Timeline Trap (அவசரச் சட்டக் க",
+      "description": "3. Ordinance Expiry Timeline Trap (அவசரச் சட்டக் காலாவதி பொறி)"
+    },
+    {
+      "trap_id": "TRAP_09",
+      "name": "4. Legislative Council Nomination Trap (சட்ட மேலவை",
+      "description": "4. Legislative Council Nomination Trap (சட்ட மேலவை நியமனப் பொறி)"
+    },
+    {
+      "trap_id": "TRAP_10",
+      "name": "5. Re-passed Reserved Bill Assent Trap (மீண்டும் ந",
+      "description": "5. Re-passed Reserved Bill Assent Trap (மீண்டும் நிறைவேற்றப்பட்ட மசோதா பொறி)"
+    },
+    {
+      "trap_id": "TRAP_11",
+      "name": "1. Express Discretion Comparison Trap (தெளிவான சுய",
+      "description": "1. Express Discretion Comparison Trap (தெளிவான சுயவிருப்ப அதிகார ஒப்பீட்டுப் பொறி)"
+    },
+    {
+      "trap_id": "TRAP_12",
+      "name": "2. Floor Test Venue Trap (வாக்கெடுப்பு நடைபெறும் இ",
+      "description": "2. Floor Test Venue Trap (வாக்கெடுப்பு நடைபெறும் இடப் பொறி)"
+    },
+    {
+      "trap_id": "TRAP_13",
+      "name": "3. Governor Impeachment Commission Trap (ஆளுநர் பத",
+      "description": "3. Governor Impeachment Commission Trap (ஆளுநர் பதவி நீக்கப் பரிந்துரைப் பொறி)"
+    },
+    {
+      "trap_id": "TRAP_14",
+      "name": "4. Rajamannar Committee Origin Trap (ராஜமன்னார் கு",
+      "description": "4. Rajamannar Committee Origin Trap (ராஜமன்னார் குழு தோற்றப் பொறி)"
+    },
+    {
+      "trap_id": "TRAP_15",
+      "name": "5. Article 163(2) Finality Clause Trap (இறுதித்தன்",
+      "description": "5. Article 163(2) Finality Clause Trap (இறுதித்தன்மை விதிப் பொறி)"
+    }
+  ],
+  "source_boundaries": [
+    "data/notes/polity/governor_part_1.json",
+    "data/notes/polity/governor_part_2.json",
+    "data/notes/polity/governor_part_3.json",
+    "M. Laxmikanth – Indian Polity",
+    "NCERT Class XI – Indian Constitution at Work",
+    "Tamil Nadu Samacheer Kalvi Political Science"
+  ],
+  "mcq_generation_rules": {
+    "avoid_repetition": true,
+    "require_bilingual": true,
+    "require_distractor_analysis": true,
+    "require_revision_fact": true
+  }
+}

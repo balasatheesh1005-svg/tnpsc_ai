@@ -181,9 +181,30 @@ def _render_tips_and_facts(exp: ExplanationDetails):
 def _render_sources_and_notes(q: NormalizedQuestion, prefix: str):
     sources = q.explanation.source_reference
     if sources:
-        st.markdown("#### 📖 Source References")
+        textbooks = []
+        notes = []
         for src in sources:
-            st.markdown(f"• **{html.escape(src)}**")
+            s = str(src).strip()
+            if "citizenship_part_1.json" in s or s == "citizenship_part_1":
+                notes.append("Citizenship of India — Part 1")
+            elif "citizenship_part_2.json" in s or s == "citizenship_part_2":
+                notes.append("Citizenship of India — Part 2")
+            elif "citizenship_part_3.json" in s or s == "citizenship_part_3":
+                notes.append("Citizenship of India — Part 3")
+            elif "Citizenship of India — Part" in s or "Part 1" in s or "Part 2" in s or "Part 3" in s or "Notes" in s:
+                notes.append(s)
+            else:
+                textbooks.append(s)
+
+        st.markdown("#### 📖 Source References")
+        if textbooks:
+            for tb in textbooks:
+                st.markdown(f"• **{html.escape(tb)}**")
+        
+        if notes:
+            st.markdown("##### TNPSC Nova AI Notes")
+            for n in notes:
+                st.markdown(f"• **{html.escape(n)}**")
     else:
         st.info("Standard textbook reference: M. Laxmikanth Indian Polity / NCERT / Samacheer Kalvi.")
 

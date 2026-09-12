@@ -155,10 +155,97 @@ def get_available_topics(subject: str) -> List[Dict[str, any]]:
     return get_topic_metadata_list(subject)
 
 
-def check_repository_availability(subject: str, topic_id_or_title: str) -> Dict[str, bool]:
+def discover_note_parts(subject: str, topic_id_or_base: str) -> Dict[int, str]:
+    """
+    Discovers all available note part files for a given subject and topic identifier.
+    Returns a dict mapping integer part numbers (1, 2, 3...) to file paths.
+    """
+    if not subject or not topic_id_or_base:
+        return {}
+
+    subj = subject.lower().strip()
+    notes_dir = Path(f"data/notes/{subj}")
+    if not notes_dir.exists():
+        return {}
+
+    clean_base = topic_id_or_base.lower().strip()
+    if clean_base.startswith(f"{subj}_"):
+        clean_base = clean_base[len(subj) + 1 :]
+
+    # Strip trailing part suffix if query passed was e.g. "state_election_finance_commissions_part_1"
+    base_no_part = re.sub(r"_part_?\d+$", "", clean_base)
+
+    candidate_bases = [base_no_part]
+    alias_map = {
+        "amendments": ["constitutional_amendments", "amendments"],
+        "constitutional_amendments": ["constitutional_amendments", "amendments"],
+        "schedules": ["constitutional_schedules", "schedules"],
+        "constitutional_schedules": ["constitutional_schedules", "schedules"],
+        "attorney_general_of_india": ["attorney_general", "attorney_general_of_india"],
+        "attorney_general": ["attorney_general", "attorney_general_of_india"],
+        "advocate_general": ["advocate_general"],
+        "cm_state_council_ministers": ["chief_minister_state_council_of_ministers", "cm_state_council_ministers"],
+        "chief_minister_state_council_of_ministers": ["chief_minister_state_council_of_ministers", "cm_state_council_ministers"],
+    }
+    if base_no_part in alias_map:
+        for alias in alias_map[base_no_part]:
+            if alias not in candidate_bases:
+                candidate_bases.append(alias)
+
+    s1 = re.sub(r"_(of|in|the|a|for)_(india|state|states|municipalities|panchayats)$", "", base_no_part)
+    if s1 not in candidate_bases:
+        candidate_bases.append(s1)
+    s2 = re.sub(r"_(of|in|the|a|for)_.*$", "", base_no_part)
+    if s2 not in candidate_bases:
+        candidate_bases.append(s2)
+
+    parts_found = {}
+
+    for c_base in candidate_bases:
+        # 1. Direct check for single-file note: c_base.json
+        single_file = notes_dir / f"{c_base}.json"
+        if single_file.exists():
+            parts_found[1] = str(single_file).replace("\\", "/")
+
+        # 2. Pattern scan for multi-part files
+        for p_file in sorted(notes_dir.glob("*.json")):
+            fname_no_ext = p_file.stem.lower()
+
+            if fname_no_ext == c_base or fname_no_ext.startswith(f"{c_base}_part"):
+                part_num = None
+                match = re.search(r"_part_?(\d+)$", fname_no_ext)
+                if match:
+                    part_num = int(match.group(1))
+                else:
+                    try:
+                        with open(p_file, "r", encoding="utf-8") as f:
+                            data = json.load(f)
+                            meta = data.get("metadata") or data.get("meta") or {}
+                            if isinstance(meta, dict) and "part" in meta:
+                                part_num = int(meta["part"])
+                    except Exception:
+                        pass
+
+                if part_num is None and fname_no_ext == c_base:
+                    part_num = 1
+
+                if part_num is not None:
+                    parts_found[part_num] = str(p_file).replace("\\", "/")
+
+        if parts_found:
+            break
+
+    return dict(sorted(parts_found.items()))
+
+
+
+def check_repository_availability(subject: str, topic_id_or_title: str) -> Dict[str, any]:
     """Checks file existence for notes (via topic_id) and questions (via repository_id)."""
     default_res = {
         "notes": False,
+        "parts_found": 0,
+        "parts_map": {},
+        "total_parts": 1,
         "easy": False,
         "medium": False,
         "hard": False,
@@ -189,26 +276,67 @@ def check_repository_availability(subject: str, topic_id_or_title: str) -> Dict[
         if repo_basename.startswith(f"{subj}_"):
             repo_basename = repo_basename[len(subj) + 1 :]
 
-        base_n = f"data/notes/{subj}"
+        repo_basenames = [repo_basename]
+        alias_map = {
+            "finance_commission": ["finance_commission", "fc"],
+            "fc": ["fc", "finance_commission"],
+            "attorney_general": ["attorney_general", "ag"],
+            "ag": ["ag", "attorney_general"],
+            "advocate_general": ["advocate_general", "advg"],
+            "advg": ["advg", "advocate_general"],
+            "cag": ["cag", "comptroller_and_auditor_general"],
+            "election_commission": ["election_commission", "ec"],
+            "ec": ["ec", "election_commission"],
+            "panchayati_raj": ["panchayati_raj", "pr"],
+            "pr": ["pr", "panchayati_raj"],
+            "municipalities": ["municipalities", "mun"],
+            "mun": ["mun", "municipalities"],
+            "electoral_reforms": ["electoral_reforms", "er"],
+            "er": ["er", "electoral_reforms"],
+            "inter_state_relations": ["inter_state_relations", "isr"],
+            "isr": ["isr", "inter_state_relations"],
+            "constitutional_amendments": ["constitutional_amendments", "amendments", "ca"],
+            "amendments": ["constitutional_amendments", "amendments", "ca"],
+            "constitutional_schedules": ["constitutional_schedules", "schedules", "sch"],
+            "schedules": ["constitutional_schedules", "schedules", "sch"],
+        }
+        if repo_basename in alias_map:
+            for alias in alias_map[repo_basename]:
+                if alias not in repo_basenames:
+                    repo_basenames.append(alias)
+
         base_q = f"data/questions/{subj}"
 
-        note_candidates = [
-            f"{base_n}/{note_basename}.json",
-            f"{base_n}/{note_basename.replace('part', 'part_')}.json" if "part" in note_basename and "part_" not in note_basename else f"{base_n}/{note_basename}.json",
-        ]
-        notes_exist = any(os.path.exists(p) for p in note_candidates)
+        parts_map = discover_note_parts(subj, note_basename)
+        if not parts_map and repo_basename:
+            parts_map = discover_note_parts(subj, repo_basename)
+
+        notes_exist = len(parts_map) > 0
+        total_parts = max(int(meta.get("total_parts", 1)), len(parts_map))
+
+        def _any_exists(suffixes):
+            for rb in repo_basenames:
+                for suf in suffixes:
+                    if os.path.exists(f"{base_q}/{rb}_{suf}.json") or os.path.exists(f"{base_q}/{subj}_{rb}_{suf}.json"):
+                        return True
+            return False
 
         return {
             "notes": notes_exist,
-            "easy": os.path.exists(f"{base_q}/{repo_basename}_easy.json"),
-            "medium": os.path.exists(f"{base_q}/{repo_basename}_medium.json"),
-            "hard": os.path.exists(f"{base_q}/{repo_basename}_hard.json"),
-            "statement_based": os.path.exists(f"{base_q}/{repo_basename}_statement_based.json") or os.path.exists(f"{base_q}/{repo_basename}_statement.json"),
-            "assertion_reason": os.path.exists(f"{base_q}/{repo_basename}_assertion_reason.json") or os.path.exists(f"{base_q}/{repo_basename}_reasoning.json") or os.path.exists(f"{base_q}/{repo_basename}_assertion.json"),
-            "match_the_following": os.path.exists(f"{base_q}/{repo_basename}_match_the_following.json") or os.path.exists(f"{base_q}/{repo_basename}_match.json"),
-            "chronology": os.path.exists(f"{base_q}/{repo_basename}_chronology.json"),
-            "grand_test": os.path.exists(f"{base_q}/{repo_basename}_grand_test.json"),
-            "pyq": os.path.exists(f"{base_q}/{repo_basename}_pyq.json") or os.path.exists(f"{base_q}/{repo_basename}_pyq_practice.json"),
+            "parts_found": len(parts_map),
+            "parts_map": parts_map,
+            "total_parts": total_parts,
+            "easy": _any_exists(["easy"]),
+            "medium": _any_exists(["medium"]),
+            "hard": _any_exists(["hard"]),
+            "statement_based": _any_exists(["statement_based", "statement"]),
+            "assertion_reason": _any_exists(["assertion_reason", "reasoning", "assertion"]),
+            "match_the_following": _any_exists(["match_the_following", "match"]),
+            "chronology": _any_exists(["chronology"]),
+            "grand_test": _any_exists(["grand_test"]),
+            "pyq": _any_exists(["pyq", "pyq_practice"]),
         }
+
     except Exception:
         return default_res
+

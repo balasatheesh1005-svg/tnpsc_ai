@@ -1,0 +1,34 @@
+{
+  "topic": "Union & Its Territory",
+  "topic_id": "polity_union_territory",
+  "state": "PRODUCTION_READY",
+  "auto_chain": true,
+  "parts": {
+    "part1": {
+      "status": "COMPLETE",
+      "count": 150,
+      "validated": true
+    },
+    "part2a": {
+      "status": "COMPLETE",
+      "count": 100,
+      "validated": true
+    },
+    "part2b": {
+      "status": "COMPLETE",
+      "count": 75,
+      "validated": true
+    },
+    "part3": {
+      "status": "COMPLETE",
+      "count": 100,
+      "validated": true
+    }
+  },
+  "core_count": 325,
+  "grand_test_count": 100,
+  "overall_count": 425,
+  "repair_cycles": 0,
+  "notes": "All 425 questions generated, non-periodically randomized (anti-block), chronology repaired (shuffled presentation order, non-1-2-3-4 sequences, explicit date teaching), passed all 16 audit gates and UI smoke test. PRODUCTION READY.",
+  "last_updated": "2026-09-11T21:30:00"
+}

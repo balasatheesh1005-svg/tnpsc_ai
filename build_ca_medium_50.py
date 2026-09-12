@@ -1,0 +1,1210 @@
+# Constitutional Amendments - 50 Medium MCQs Builder Script
+# File: data/questions/polity/constitutional_amendments_medium.json
+# Target Distribution: A: 13, B: 13, C: 12, D: 12 (Total 50)
+
+import json
+import os
+
+def create_medium_questions():
+    questions = []
+
+    def add_q(q_id, q_en, q_ta,
+              opt_a_en, opt_a_ta, opt_b_en, opt_b_ta, opt_c_en, opt_c_ta, opt_d_en, opt_d_ta,
+              correct_ans, exp_en, exp_ta,
+              why_a_en, why_a_ta, why_b_en, why_b_ta, why_c_en, why_c_ta, why_d_en, why_d_ta,
+              tip_en, tip_ta, fact_en, fact_ta, bloom, pyq_sim, tags, notes_ref):
+        questions.append({
+            "id": q_id,
+            "subject": "Polity",
+            "topic": "Constitutional Amendments",
+            "difficulty": "Medium",
+            "question_type": "single_choice",
+            "question": {"en": q_en, "ta": q_ta},
+            "options": [
+                {"id": "A", "en": opt_a_en, "ta": opt_a_ta},
+                {"id": "B", "en": opt_b_en, "ta": opt_b_ta},
+                {"id": "C", "en": opt_c_en, "ta": opt_c_ta},
+                {"id": "D", "en": opt_d_en, "ta": opt_d_ta}
+            ],
+            "correct_answer": correct_ans,
+            "explanation": {"en": exp_en, "ta": exp_ta},
+            "why_not_others": {
+                "A": {"en": why_a_en, "ta": why_a_ta},
+                "B": {"en": why_b_en, "ta": why_b_ta},
+                "C": {"en": why_c_en, "ta": why_c_ta},
+                "D": {"en": why_d_en, "ta": why_d_ta}
+            },
+            "tnpsc_tip": {"en": tip_en, "ta": tip_ta},
+            "revision_fact": {"en": fact_en, "ta": fact_ta},
+            "source_reference": [
+                "M. Laxmikanth — Indian Polity",
+                f"TNPSC Nova AI Notes — Constitutional Amendments {notes_ref}"
+            ],
+            "bloom_level": bloom,
+            "estimated_time_sec": 60,
+            "pyq_similarity": pyq_sim,
+            "tags": tags
+        })
+
+    # Q001 - Correct: A
+    add_q(
+        "CZ_AM_MD_001",
+        "Consider the following statements regarding the special majority required under Article 368 for passing a Constitutional Amendment Bill:\n1. Majority of the total membership of the House.\n2. Majority of not less than two-thirds of the members of the House present and voting.\nWhich of the above conditions must be satisfied in EACH House of Parliament?",
+        "சரத்து 368 இன் கீழ் அரசியலமைப்பு திருத்த மசோதாவை நிறைவேற்றத் தேவையான சிறப்பு பெரும்பான்மை பற்றிய கூற்றுகளை ஆராய்க:\n1. அவையின் மொத்த உறுப்பினர்களின் எண்ணிக்கையில் பெரும்பான்மை.\n2. அவைக்கு வருகை தந்து வாக்களிக்கும் உறுப்பினர்களில் 2/3 பங்கு குறையாத பெரும்பான்மை.\nநாடாளுமன்றத்தின் ஒவ்வொரு அவையிலும் மேல் குறிப்பிடப்பட்ட நிபந்தனைகளில் எது பூர்த்தியாக வேண்டும்?",
+        "Both 1 and 2 concurrently", "1 மற்றும் 2 ஆகிய இரண்டும் ஒரே நேரத்தில்",
+        "Only condition 1", "நிபந்தனை 1 மட்டுமே",
+        "Only condition 2", "நிபந்தனை 2 மட்டுமே",
+        "Either 1 or 2, whichever is higher", "1 அல்லது 2 இதில் எது அதிகமோ அது",
+        "A",
+        "Under Article 368, 'special majority' means a majority of total membership of the House AND a majority of not less than 2/3 of members present and voting. Both conditions must be satisfied concurrently during voting at the third reading stage.",
+        "சரத்து 368 இன் கீழ் 'சிறப்பு பெரும்பான்மை' என்பது அவையின் மொத்த உறுப்பினர்களின் பெரும்பான்மை மற்றும் வருகை தந்து வாக்களிப்பவர்களில் 2/3 பங்கு பெரும்பான்மை ஆகிய இரண்டையும் ஒரே நேரத்தில் குறிக்கிறது.",
+        "Option A is correct because both conditions (majority of total membership + 2/3 present & voting) must be satisfied together in each House.", "விருப்பம் A சரியானது, ஏனெனில் இரு நிபந்தனைகளும் (மொத்த உறுப்பினர் பெரும்பான்மை + 2/3 வருகை தந்து வாக்களிப்பவர்) ஒரே நேரத்தில் பூர்த்தியாக வேண்டும்.",
+        "Option B is incorrect because 2/3 present and voting is also mandatory.", "விருப்பம் B தவறானது, ஏனெனில் 2/3 வருகை தந்து வாக்களிப்பதும் கட்டாயமாகும்.",
+        "Option C is incorrect because total membership majority requirement is equally essential.", "விருப்பம் C தவறானது, ஏனெனில் மொத்த உறுப்பினர் பெரும்பான்மையும் சமமான கட்டாயமாகும்.",
+        "Option D is incorrect because it is not an either/or condition; both are strictly cumulative.", "விருப்பம் D தவறானது, ஏனெனில் இவை ஒன்று அல்லது மற்றொன்று என்ற நிலையில் இல்லை; இரண்டும் இணைந்து மட்டுமே செல்லுபடியாகும்.",
+        "Total membership means total number of members comprising the House, irrespective of vacancies or absentees.",
+        "மொத்த உறுப்பினர்கள் எண்ணிக்கை என்பது காலியிடங்கள் அல்லது வருகை தராதவர்களைப் பொருட்படுத்தாமல் அவையின் மொத்த இடங்களைக் குறிக்கும்.",
+        "Voting by special majority is required at the stage of passing the bill in each House.",
+        "ஒவ்வொரு அவையிலும் மசோதா நிறைவேற்றப்படும் கட்டத்தில் இந்த சிறப்பு பெரும்பான்மை கட்டாயமாகும்.",
+        "Understanding", "High", ["Special Majority", "Article 368", "Procedure"], "Part 1"
+    )
+
+    # Q002 - Correct: B
+    add_q(
+        "CZ_AM_MD_002",
+        "Which of the following provisions of the Constitution can be amended by a Simple Majority of Parliament outside the scope of Article 368?",
+        "பின்வரும் எந்த அரசியலமைப்பு விதியை சரத்து 368 இன் வரம்பிற்கு வெளியே நாடாளுமன்றத்தின் சாதாரண பெரும்பான்மையால் மட்டுமே திருத்த முடியும்?",
+        "Executive power of the Union and States", "மத்திய மற்றும் மாநிலங்களின் நிர்வாக அதிகாரம்",
+        "Use of Official Language in Parliament", "நாடாளுமன்றத்தில் ஆட்சிமொழியின் பயன்பாடு",
+        "Directive Principles of State Policy", "அரசு நெறிமுறைக் கோட்பாடுகள்",
+        "Representation of States in Parliament", "நாடாளுமன்றத்தில் மாநிலங்களின் பிரதிநிதித்துவம்",
+        "B",
+        "Official Language usage in Parliament, Quorum, Rules of Procedure, and 5th/6th Schedules can be amended by simple majority outside Article 368.",
+        "நாடாளுமன்றத்தில் ஆட்சிமொழி பயன்பாடு, Quorum, நடைமுறை விதிகள் ஆகியவை சரத்து 368 க்கு வெளியே சாதாரண பெரும்பான்மையால் திருத்தப்படலாம்.",
+        "Option A is incorrect because Union & State executive power limits require Special Majority + State Ratification under Art 368.", "விருப்பம் A தவறானது; நிர்வாக அதிகாரம் வரம்பு திருத்தத்திற்கு மாநில ஒப்புதல் தேவை.",
+        "Option B is correct because Use of Official Language under Schedule VIII / Parliament rules is amended by simple majority.", "விருப்பம் B சரியானது, ஏனெனில் நாடாளுமன்ற ஆட்சிமொழி பயன்பாடு சாதாரண பெரும்பான்மையால் திருத்தப்படலாம்.",
+        "Option C is incorrect because DPSPs require Special Majority under Article 368.", "விருப்பம் C தவறானது; DPSP திருத்தத்திற்கு சிறப்பு பெரும்பான்மை தேவை.",
+        "Option D is incorrect because Representation of States in Parliament requires Special Majority + State Ratification.", "விருப்பம் D தவறானது; மாநிலங்களின் பிரதிநிதித்துவத்திற்கு மாநில ஒப்புதல் தேவை.",
+        "Amendments made by simple majority are NOT deemed to be amendments of the Constitution under Article 368.",
+        "சாதாரண பெரும்பான்மையால் செய்யப்படும் திருத்தங்கள் சரத்து 368 இன் கீழ் அரசியலமைப்பு திருத்தங்களாகக் கருதப்பட மாட்டா.",
+        "Other simple majority matters: Creation/abolition of State Legislative Councils (Art 169), admission of new states (Art 2).",
+        "பிற சாதாரண பெரும்பான்மை விஷயங்கள்: சட்டமேலவை உருவாக்கம்/நீக்கம் (சரத்து 169), புதிய மாநிலச் சேர்க்கை (சரத்து 2).",
+        "Understanding", "High", ["Simple Majority", "Official Language", "Scope"], "Part 1"
+    )
+
+    # Q003 - Correct: C
+    add_q(
+        "CZ_AM_MD_003",
+        "Regarding state ratification of a Constitutional Amendment Bill under Article 368, which of the following statements is CORRECT?",
+        "சரத்து 368 இன் கீழ் அரசியலமைப்பு திருத்த மசோதாவிற்கு மாநிலங்களின் ஒப்புதல் பெறுவது தொடர்பாக பின்வரும் கூற்றுகளில் எது சரியானது?",
+        "Ratification requires a special majority in each State Assembly", "ஒவ்வொரு மாநில சட்டமன்றத்திலும் சிறப்பு பெரும்பான்மை பெற வேண்டும்",
+        "All States in India must ratify the bill before Presidential assent", "குடியரசுத் தலைவர் ஒப்புதலுக்கு முன் இந்தியாவின் அனைத்து மாநிலங்களும் ஒப்புதல் அளிக்க வேண்டும்",
+        "Ratification requires only a Simple Majority of members present and voting in the State Assembly", "மாநில சட்டமன்றத்தில் வருகை தந்து வாக்களிக்கும் உறுப்பினர்களின் சாதாரண பெரும்பான்மையே போதுமானது",
+        "If a State Legislative Assembly rejects the bill, Parliament cannot pass it", "ஒரு மாநில சட்டமன்றம் மசோதாவை நிராகரித்தால், நாடாளுமன்றம் அதை நிறைவேற்ற முடியாது",
+        "C",
+        "Proviso to Article 368(2) specifies that state ratification requires a resolution passed by the state legislature by a SIMPLE MAJORITY (members present and voting).",
+        "சரத்து 368(2) இன் வரம்புரை மாநில சட்டமன்றங்களில் சாதாரண பெரும்பான்மை (வருகை தந்து வாக்களிப்பவர்கள்) மூலம் தீர்மானம் நிறைவேற்றப்பட்டால் போதுமானது எனக் கூறுகிறது.",
+        "Option A is incorrect because state legislatures do NOT need a special majority; simple majority is sufficient.", "விருப்பம் A தவறானது, ஏனெனில் மாநில சட்டமன்றங்களுக்கு சிறப்பு பெரும்பான்மை தேவையில்லை.",
+        "Option B is incorrect because only NOT LESS THAN HALF of the states are required, not all states.", "விருப்பம் B தவறானது, ஏனெனில் அனைத்து மாநிலங்களும் தேவையில்லை; பாதியைக் காட்டிலும் குறையாத மாநிலங்கள் போதுமானது.",
+        "Option C is correct because Article 368(2) specifies simple majority in state legislatures for ratification.", "விருப்பம் C சரியானது, ஏனெனில் சரத்து 368(2) மாநில ஒப்புதலுக்கு சாதாரண பெரும்பான்மையே போதுமானது எனக் கூறுகிறது.",
+        "Option D is incorrect because rejection by one or more states does not block the bill if half of the total states ratify it.", "விருப்பம் D தவறானது, ஏனெனில் பாதி மாநிலங்கள் ஒப்புதல் அளித்து விட்டால் பிற மாநில நிராகரிப்பு மசோதாவைப் பாதிக்காது.",
+        "Once 50% of the States pass the resolution, the condition for federal ratification under Article 368 is satisfied.",
+        "50% மாநிலங்கள் தீர்மானம் நிறைவேற்றியவுடன் சரத்து 368 இன் கீழான கூட்டாட்சி ஒப்புதல் நிபந்தனை பூர்த்தியாகிறது.",
+        "State Legislative Councils (where present) also vote on the ratification resolution.",
+        "சட்டமேலவை உள்ள மாநிலங்களில் மேலவையும் இந்த ஒப்புதல் தீர்மானத்தின் மீது வாக்களிக்கும்.",
+        "Understanding", "High", ["State Ratification", "Simple Majority", "Article 368"], "Part 1"
+    )
+
+    # Q004 - Correct: D
+    add_q(
+        "CZ_AM_MD_004",
+        "Which of the following constitutional provisions requires ratification by at least half of the State Legislatures under Article 368?",
+        "பின்வரும் எந்த அரசியலமைப்பு விதிக்கு சரத்து 368 இன் கீழ் குறைந்தபட்சம் பாதி மாநில சட்டமன்றங்களின் ஒப்புதல் தேவைப்படுகிறது?",
+        "Salaries and allowances of Members of Parliament", "நாடாளுமன்ற உறுப்பினர்களின் சம்பளம் மற்றும் படிகள்",
+        "Provisions relating to Fundamental Rights", "அடிப்படை உரிமைகள் தொடர்பான விதிகள்",
+        "Provisions relating to Directive Principles of State Policy", "அரசு நெறிமுறைக் கோட்பாடுகள் தொடர்பான விதிகள்",
+        "Article 368 itself (Power of Parliament to amend the Constitution)", "சரத்து 368 (அரசியலமைப்பைத் திருத்துவதற்கான நாடாளுமன்றத்தின் அதிகாரம்)",
+        "D",
+        "Article 368 itself is listed in the proviso to Article 368(2). Any amendment to Article 368 requires Special Majority of Parliament PLUS ratification by at least half of the State Legislatures.",
+        "சரத்து 368 자체가 சரத்து 368(2) இன் கூட்டாட்சிப் பட்டியலில் இடம் பெற்றுள்ளது. எனவே சரத்து 368 ஐத் திருத்த சிறப்பு பெரும்பான்மையுடன் குறைந்தது பாதி மாநிலங்களின் ஒப்புதலும் தேவை.",
+        "Option A is incorrect; MP salaries are amended by simple majority.", "விருப்பம் A தவறானது; எம்பி சம்பளம் சாதாரண பெரும்பான்மை பற்றியது.",
+        "Option B is incorrect; Fundamental Rights require Special Majority ONLY, not state ratification.", "விருப்பம் B தவறானது; அடிப்படை உரிமைகளுக்கு சிறப்பு பெரும்பான்மை மட்டுமே தேவை, மாநில ஒப்புதல் தேவையில்லை.",
+        "Option C is incorrect; DPSPs require Special Majority ONLY, not state ratification.", "விருப்பம் C தவறானது; DPSP க்கு சிறப்பு பெரும்பான்மை மட்டுமே தேவை.",
+        "Option D is correct because Article 368 itself affects federal power equilibrium and requires state ratification under its proviso.", "விருப்பம் D சரியானது, ஏனெனில் சரத்து 368 கூட்டாட்சி அமைப்பைப் பாதிப்பதால் அதற்கு மாநில ஒப்புதல் கட்டாயம்.",
+        "Federal matters requiring state ratification: SC/HCs, 7th Schedule lists, Representation of States in Parliament, Election of President, Art 368 itself.",
+        "மாநில ஒப்புதல் தேவைப்படும் கூட்டாட்சி விஷயங்கள்: உச்ச/உயர் நீதிமன்றங்கள், 7வது அட்டவணை, மாநிலங்களின் நாடாளுமன்றப் பிரதிநிதித்துவம், குடியரசுத் தலைவர் தேர்தல், சரத்து 368.",
+        "This ensures that Parliament cannot unilaterally alter the constitutional amending mechanism itself.",
+        "இது நாடாளுமன்றம் ஒருதலைப்பட்சமாக திருத்தும் நடைமுறையை மாற்ற முடியாது என்பதை உறுதி செய்கிறது.",
+        "Understanding", "High", ["Article 368 Amendment", "State Ratification"], "Part 1"
+    )
+
+    # Q005 - Correct: A
+    add_q(
+        "CZ_AM_MD_005",
+        "The 24th Constitutional Amendment Act, 1971 was passed primarily to overcome the effect of which landmark Supreme Court judgment?",
+        "24வது அரசியலமைப்பு திருத்தச் சட்டம், 1971 முதன்மையாக எந்த வரலாற்றுச் சிறப்புமிக்க உச்ச நீதிமன்றத் தீர்ப்பின் விளைவை ரத்து செய்வதற்காக இயற்றப்பட்டது?",
+        "Golaknath v. State of Punjab (1967)", "கோலக்நாத் எதிர் பஞ்சாப் அரசு (1967)",
+        "Shankari Prasad v. Union of India (1951)", "சங்கரி பிரசாத் எதிர் இந்திய யூனியன் (1951)",
+        "Sajjan Singh v. State of Rajasthan (1965)", "சஜ்ஜன் சிங் எதிர் ராஜஸ்தான் அரசு (1965)",
+        "Berubari Union Case (1960)", "பெருபாரி யூனியன் வழக்கு (1960)",
+        "A",
+        "In Golaknath (1967), Supreme Court held Parliament had no power to amend Fundamental Rights. To nullify this, 24th CA 1971 amended Art 13 and Art 368 affirming Parliament's power to amend any part including FRs.",
+        "கோலக்நாத் வழக்கில் (1967) அடிப்படை உரிமைகளைத் திருத்த நாடாளுமன்றத்திற்கு அதிகாரம் இல்லை என கூறப்பட்டது. இதை ரத்து செய்ய 24வது திருத்தம் 1971 இல் இயற்றப்பட்டது.",
+        "Option A is correct because 24th Amendment specifically nullified Golaknath judgment.", "விருப்பம் A சரியானது, ஏனெனில் 24வது திருத்தம் கோலக்நாத் தீர்ப்பை ரத்து செய்தது.",
+        "Option B is incorrect; Shankari Prasad (1951) was in favour of Parliament power.", "விருப்பம் B தவறானது; சங்கரி பிரசாத் வழக்கு நாடாளுமன்ற அதிகாரத்திற்கு சாதகமானது.",
+        "Option C is incorrect; Sajjan Singh (1965) also upheld Parliament power.", "விருப்பம் C தவறானது; சஜ்ஜன் சிங் வழக்கும் நாடாளுமன்ற அதிகாரத்தை ஆதரித்தது.",
+        "Option D is incorrect; Berubari Union (1960) held territorial cession requires Art 368 amendment.", "விருப்பம் D தவறானது; பெருபாரி வழக்கு நிலப் பரிமாற்றத்திற்கு 368 திருத்தம் தேவை என்றது.",
+        "24th CA inserted Article 13(4) and Article 368(3) stating that nothing in Article 13 shall apply to any amendment made under Article 368.",
+        "24வது திருத்தம் சரத்து 13(4) மற்றும் 368(3) ஐச் சேர்த்து சரத்து 13 இன் விதிகள் 368 திருத்தங்களுக்குப் பொருந்தாது என மாற்றியது.",
+        "It also made President's assent compulsory for constitutional amendment bills.",
+        "இது அரசியலமைப்பு திருத்த மசோதாக்களுக்கு குடியரசு தலைவரின் ஒப்புதலைக் கட்டாயமாக்கியது.",
+        "Understanding", "High", ["24th Amendment", "Golaknath Nullification"], "Part 3"
+    )
+
+    # Q006 - Correct: B
+    add_q(
+        "CZ_AM_MD_006",
+        "Which Constitutional Amendment Act substituted 'armed rebellion' for 'internal disturbance' in Article 352 and made Articles 20 and 21 non-suspendable during Emergency?",
+        "சரத்து 352 இல் 'உள்நாட்டு அமைதியின்மை' என்ற சொல்லுக்குப் பதிலாக 'ஆயுதமேந்திய கிளர்ச்சி' என்றும், அவசரநிலையின் போது சரத்துகள் 20 மற்றும் 21 ஐ இடைநிறுத்தம் செய்ய முடியாது என்றும் மாற்றிய அரசியலமைப்பு திருத்தச் சட்டம் எது?",
+        "42nd Constitutional Amendment Act, 1976", "42வது அரசியலமைப்பு திருத்தச் சட்டம், 1976",
+        "44th Constitutional Amendment Act, 1978", "44வது அரசியலமைப்பு திருத்தச் சட்டம், 1978",
+        "45th Constitutional Amendment Act, 1980", "45வது அரசியலமைப்பு திருத்தச் சட்டம், 1980",
+        "52nd Constitutional Amendment Act, 1985", "52வது அரசியலமைப்பு திருத்தச் சட்டம், 1985",
+        "B",
+        "The 44th Constitutional Amendment Act, 1978 introduced safeguards against Emergency abuse: replacing internal disturbance with armed rebellion, requiring written Cabinet recommendation, and barring suspension of Art 20 & 21.",
+        "44வது அரசியலமைப்பு திருத்தச் சட்டம், 1978 அவசரநிலை தவறாகப் பயன்படுத்தப்படுவதைத் தடுக்க: ஆயுதமேந்திய கிளர்ச்சி என்ற சொல் மாற்றம், அமைச்சரவை எழுத்துப்பூர்வ ஆலோசனை, மற்றும் சரத்து 20 & 21 பாதுகாப்பு ஆகியவற்றைச் செய்தது.",
+        "Option A is incorrect; 42nd Amendment (1976) introduced rigid emergency provisions.", "விருப்பம் A தவறானது; 42வது திருத்தம் அவசரநிலை அதிகாரங்களை விரிவுபடுத்தியது.",
+        "Option B is correct because 44th Amendment Act, 1978 under Morarji Desai Government enacted these civil liberty protections.", "விருப்பம் B சரியானது, ஏனெனில் 44வது திருத்தச் சட்டம் 1978 மொரார்ஜி தேசாய் அரசால் இந்த சிவில் உரிமை பாதுகாப்புகளை இயற்றியது.",
+        "Option C is incorrect; 45th Amendment extended SC/ST reservations.", "விருப்பம் C தவறானது; 45வது திருத்தம் எஸ்சி/எஸ்டி இடஒதுக்கீடு நீட்டிப்பு பற்றியது.",
+        "Option D is incorrect; 52nd Amendment enacted Anti-Defection Law.", "விருப்பம் D தவறானது; 52வது திருத்தம் கட்சித் தாவல் தடைச் சட்டம்.",
+        "44th CA also required Parliamentary approval of National Emergency within ONE MONTH (reduced from two months).",
+        "44வது திருத்தம் தேசிய அவசரநிலைக்கு நாடாளுமன்ற ஒப்புதல் பெறும் காலத்தை 2 மாதங்களிலிருந்து 1 மாதமாகக் குறைத்தது.",
+        "It required periodic parliamentary re-approval by Special Majority every 6 months.",
+        "ஒவ்வொரு 6 மாதங்களுக்கும் சிறப்பு பெரும்பான்மையால் மீண்டும் நாடாளுமன்ற ஒப்புதல் பெறுவதைக் கட்டாயமாக்கியது.",
+        "Understanding", "High", ["44th Amendment", "Emergency Safeguards"], "Part 2"
+    )
+
+    # Q007 - Correct: C
+    add_q(
+        "CZ_AM_MD_007",
+        "Match List-I (Constitutional Amendments) with List-II (Key Subject Matter) and select the correct answer:\nList-I:\nA. 61st Amendment\nB. 69th Amendment\nC. 73rd Amendment\nD. 86th Amendment\nList-II:\n1. National Capital Territory of Delhi\n2. Panchayati Raj Institutions\n3. Right to Education (Art 21A)\n4. Reduction of voting age to 18 years",
+        "பட்டியல்-I (அரசியலமைப்பு திருத்தங்கள்) உடன் பட்டியல்-II (முக்கிய தலைப்புகள்) பொருத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\nA. 61வது திருத்தம்\nB. 69வது திருத்தம்\nC. 73வது திருத்தம்\nD. 86வது திருத்தம்\nபட்டியல்-II:\n1. டெல்லி தேசிய தலைநகர் பிரதேசம்\n2. பஞ்சாயத்து ராஜ் நிறுவனங்கள்\n3. கல்வி உரிமை (சரத்து 21A)\n4. வாக்குரிமை வயது 18 ஆகக் குறைப்பு",
+        "A-1, B-4, C-2, D-3", "A-1, B-4, C-2, D-3",
+        "A-4, B-1, C-3, D-2", "A-4, B-1, C-3, D-2",
+        "A-4, B-1, C-2, D-3", "A-4, B-1, C-2, D-3",
+        "A-2, B-3, C-1, D-4", "A-2, B-3, C-1, D-4",
+        "C",
+        "61st Amendment (1988) = Reduction of voting age to 18 (A-4); 69th Amendment (1991) = Delhi NCT (B-1); 73rd Amendment (1992) = Panchayati Raj (C-2); 86th Amendment (2002) = Right to Education (D-3). Matching: 4-1-2-3.",
+        "61வது திருத்தம் = வாக்குரிமை வயது 18 (A-4); 69வது திருத்தம் = டெல்லி NCT (B-1); 73வது திருத்தம் = பஞ்சாயத்து ராஜ் (C-2); 86வது திருத்தம் = கல்வி உரிமை (D-3). பொருத்தம்: 4-1-2-3.",
+        "Option A is incorrect because 61st CA is voting age (4), not Delhi (1).", "விருப்பம் A தவறானது, ஏனெனில் 61வது திருத்தம் வாக்குரிமை வயது பற்றியது.",
+        "Option B is incorrect because 73rd CA is Panchayati Raj (2), not RTE (3).", "விருப்பம் B தவறானது, ஏனெனில் 73வது திருத்தம் பஞ்சாயத்து ராஜ் பற்றியது.",
+        "Option C is correct because A-4, B-1, C-2, D-3 matches all 4 pairs accurately.", "விருப்பம் C சரியானது, ஏனெனில் A-4, B-1, C-2, D-3 அனைத்து 4 இணைகளையும் சரியாகப் பொருத்துகிறது.",
+        "Option D is incorrect because 61st CA is not Panchayati Raj.", "விருப்பம் D தவறானது, ஏனெனில் 61வது திருத்தம் பஞ்சாயத்து ராஜ் அல்ல.",
+        "61st CA (1988), 69th CA (1991), 73rd CA (1992), and 86th CA (2002) are among the most frequently asked amendments in TNPSC exams.",
+        "61வது, 69வது, 73வது மற்றும் 86வது திருத்தங்கள் டிஎன்பிஎஸ்சி தேர்வுகளில் அடிக்கடி கேட்கப்படும் முக்கியமான திருத்தங்களாகும்.",
+        "Memorising key amendment numbers and years is crucial for matching questions.",
+        "முக்கியமான திருத்த எண்களையும் ஆண்டுகளையும் நினைவில் கொள்வது பொருத்துக வினாக்களுக்கு மிகவும் அவசியம்.",
+        "Understanding", "High", ["Amendment Match", "Key Amendments"], "Part 2"
+    )
+
+    # Q008 - Correct: D
+    add_q(
+        "CZ_AM_MD_008",
+        "Which Constitutional Amendment Act added Part IX-B to the Constitution dealing with Co-operative Societies?",
+        "கூட்டுறவு சங்கங்களைக் கையாளும் பகுதி IX-B ஐ அரசியலமைப்பில் சேர்த்த அரசியலமைப்பு திருத்தச் சட்டம் எது?",
+        "73rd Amendment Act, 1992", "73வது திருத்தச் சட்டம், 1992",
+        "74th Amendment Act, 1992", "74வது திருத்தச் சட்டம், 1992",
+        "91st Amendment Act, 2003", "91வது திருத்தச் சட்டம், 2003",
+        "97th Amendment Act, 2011", "97வது திருத்தச் சட்டம், 2011",
+        "D",
+        "The 97th Constitutional Amendment Act, 2011 added Part IX-B (Articles 243ZH to 243ZT) to give constitutional status and protection to Co-operative Societies.",
+        "97வது அரசியலமைப்பு திருத்தச் சட்டம், 2011 கூட்டுறவு சங்கங்களுக்கு அரசியலமைப்பு அந்தஸ்து வழங்க பகுதி IX-B (சரத்துகள் 243ZH முதல் 243ZT வரை) ஐச் சேர்த்தது.",
+        "Option A is incorrect; 73rd Amendment added Part IX (Panchayats).", "விருப்பம் A தவறானது; 73வது திருத்தம் பகுதி IX (பஞ்சாயத்துகள்) ஐச் சேர்த்தது.",
+        "Option B is incorrect; 74th Amendment added Part IX-A (Municipalities).", "விருப்பம் B தவறானது; 74வது திருத்தம் பகுதி IX-A (நகராட்சிகள்) ஐச் சேர்த்தது.",
+        "Option C is incorrect; 91st Amendment limited council of ministers to 15%.", "விருப்பம் C தவறானது; 91வது திருத்தம் அமைச்சரவை அளவை 15% ஆக்கியது.",
+        "Option D is correct because 97th Amendment Act, 2011 inserted Part IX-B for Co-operative Societies.", "விருப்பம் D சரியானது, ஏனெனில் 97வது திருத்தச் சட்டம் 2011 கூட்டுறவு சங்கங்களுக்காக பகுதி IX-B ஐச் சேர்த்தது.",
+        "Part IX = Panchayats (73rd CA 1992); Part IX-A = Municipalities (74th CA 1992); Part IX-B = Co-operatives (97th CA 2011).",
+        "பகுதி IX = பஞ்சாயத்துகள் (73வது திருத்தம்); பகுதி IX-A = நகராட்சிகள் (74வது திருத்தம்); பகுதி IX-B = கூட்டுறவு சங்கங்கள் (97வது திருத்தம்).",
+        "97th CA also inserted Article 43B in DPSPs and expanded Article 19(1)(c).",
+        "97வது திருத்தம் DPSP இல் சரத்து 43B ஐயும் சேர்த்து, சரத்து 19(1)(c) ஐ விரிவுபடுத்தியது.",
+        "Remembering", "High", ["97th Amendment", "Part IX-B", "Co-operative Societies"], "Part 2"
+    )
+
+    # Q009 - Correct: A
+    add_q(
+        "CZ_AM_MD_009",
+        "Under Article 368, if a Constitutional Amendment Bill is passed by Parliament and sent to the President for assent, what option does the President have?",
+        "சரத்து 368 இன் கீழ், நாடாளுமன்றத்தால் நிறைவேற்றப்பட்ட அரசியலமைப்பு திருத்த மசோதா குடியரசுத் தலைவரின் ஒப்புதலுக்கு அனுப்பப்பட்டால், குடியரசுத் தலைவருக்கு உள்ள அதிகாரம் என்ன?",
+        "The President MUST give assent to the Bill", "குடியரசுத் தலைவர் கட்டாயமாக மசோதாவிற்கு ஒப்புதல் அளிக்க வேண்டும்",
+        "The President can return the Bill once for reconsideration", "குடியரசுத் தலைவர் மசோதாவை ஒரு முறை மறுபரிசீலனைக்குத் திருப்பியனுப்பலாம்",
+        "The President can exercise Pocket Veto indefinitely", "குடியரசுத் தலைவர் பாக்கெட் வீட்டோ அதிகாரத்தைப் பயன்படுத்தலாம்",
+        "The President can refer the Bill to the Supreme Court under Article 143", "குடியரசுத் தலைவர் மசோதாவை சரத்து 143 இன் கீழ் உச்ச நீதிமன்ற ஆலோசனைக்கு அனுப்பலாம்",
+        "A",
+        "Under Article 368(2) as amended by the 24th CA 1971, the President SHALL give his assent to the Bill. The President has neither veto power nor power to return a Constitutional Amendment Bill.",
+        "24வது திருத்தம் 1971 ஆல் திருத்தப்பட்ட சரத்து 368(2) இன் படி, குடியரசுத் தலைவர் கட்டாயமாக மசோதாவிற்கு ஒப்புதல் அளித்தாக வேண்டும். அவருக்கு நிராகரிக்கும் அதிகாரம் இல்லை.",
+        "Option A is correct because the 24th Amendment made Presidential assent mandatory under Article 368.", "விருப்பம் A சரியானது, ஏனெனில் 24வது திருத்தம் குடியரசு தலைவர் ஒப்புதலைக் கட்டாயமாக்கியது.",
+        "Option B is incorrect because power to return bills under Article 111 does NOT apply to Article 368 amendment bills.", "விருப்பம் B தவறானது, ஏனெனில் மசோதாவை திருப்பியனுப்பும் சரத்து 111 அதிகாரம் திருத்த மசோதாக்களுக்குப் பொருந்தாது.",
+        "Option C is incorrect because Pocket Veto cannot be used for Article 368 bills.", "விருப்பம் C தவறானது, ஏனெனில் பாக்கெட் வீட்டோ திருத்த மசோதாக்களுக்குப் பயன்படுத்த முடியாது.",
+        "Option D is incorrect because advisory jurisdiction under Art 143 is not a requirement or option for Art 368 assent.", "விருப்பம் D தவறானது, ஏனெனில் சரத்து 143 ஆலோசனை அதிகாரம் 368 மசோதா ஒப்புதலுக்கு உரிய வழிமுறை அல்ல.",
+        "Unlike Ordinary Bills (Art 111), the President has NO veto powers (Absolute, Suspensive, or Pocket) over Constitutional Amendment Bills.",
+        "சாதாரண மசோதாக்கள் போல் அல்லாமல் (சரத்து 111), அரசியலமைப்பு திருத்த மசோதாக்கள் மீது குடியரசுத் தலைவருக்கு எவ்வித வீட்டோ அதிகாரமும் (முழுமையான, இடைநிறுத்த, பாக்கெட்) கிடையாது.",
+        "This mandatory assent provision was added to prevent executive delays in constitutional reforms.",
+        "அரசியலமைப்பு சீர்திருத்தங்களில் நிர்வாகத் தாமதங்களைத் தவிர்க்க இந்த கட்டாய ஒப்புதல் விதி சேர்க்கப்பட்டது.",
+        "Understanding", "High", ["President Assent", "Article 368 Mandatory Assent"], "Part 1"
+    )
+
+    # Q010 - Correct: B
+    add_q(
+        "CZ_AM_MD_010",
+        "Which landmark Supreme Court judgment ruled that any Act added to the 9th Schedule POST April 24, 1973 is open to judicial review if it violates the Basic Structure of the Constitution?",
+        "1973 ஏப்ரல் 24 ஆம் தேதிக்குப் பிறகு 9வது அட்டவணையில் சேர்க்கப்படும் எந்தவொரு சட்டமும் அரசியலமைப்பின் அடிப்படை அமைப்பை மீறினால் நீதித்துறை மறுாய்விற்கு உட்பட்டது என்று எந்த வரலாற்றுச் சிறப்புமிக்க உச்ச நீதிமன்றத் தீர்ப்பு தெளிவாகக் கூறியது?",
+        "Minerva Mills v. Union of India (1980)", "மினர்வா மில்ஸ் எதிர் இந்திய யூனியன் (1980)",
+        "I.R. Coelho v. State of Tamil Nadu (2007)", "ஐ.ஆர். கொஹெலோ எதிர் தமிழ்நாடு அரசு (2007)",
+        "L. Chandra Kumar v. Union of India (1997)", "எல். சந்திர குமார் எதிர் இந்திய யூனியன் (1997)",
+        "Indira Nehru Gandhi v. Raj Narain (1975)", "இந்திரா நேரு காந்தி எதிர் ராஜ் நாராயண் (1975)",
+        "B",
+        "In I.R. Coelho v. State of Tamil Nadu (2007), a 9-judge bench unanimously held that 9th Schedule laws enacted AFTER April 24, 1973 (Kesavananda verdict date) do not enjoy absolute immunity and are subject to judicial review under the basic structure test.",
+        "ஐ.ஆர். கொஹெலோ எதிர் தமிழ்நாடு அரசு (2007) வழக்கில் 9 நீதிபதிகள் கொண்ட அமர்வு, 1973 ஏப்ரல் 24 க்குப் பின் 9வது அட்டவணையில் சேர்க்கப்பட்ட சட்டங்கள் அடிப்படை அமைப்பு சோதனையின் கீழ் நீதித்துறை மறுாய்விற்கு உட்பட்டவை எனத் தீர்ப்பளித்தது.",
+        "Option A is incorrect; Minerva Mills (1980) invalidated Art 368(4)&(5) clauses.", "விருப்பம் A தவறானது; மினர்வா மில்ஸ் வழக்கு சரத்து 368(4)&(5) ஐ ரத்து செய்தது.",
+        "Option B is correct because I.R. Coelho (9-judge bench 2007) definitively established basic structure review for post-1973 9th Schedule laws.", "விருப்பம் B சரியானது, ஏனெனில் 9 நீதிபதிகள் கொண்ட ஐ.ஆர். கொஹெலோ வழக்கு (2007) இத்தீர்ப்பை வழங்கியது.",
+        "Option C is incorrect; L. Chandra Kumar (1997) held judicial review of High Courts under Art 226 over Tribunals as basic structure.", "விருப்பம் C தவறானது; எல். சந்திர குமார் வழக்கு தீர்ப்பாயங்கள் மீதான உயர் நீதிமன்ற ஆய்வை அடிப்படை அமைப்பு என்றது.",
+        "Option D is incorrect; Indira Gandhi (1975) struck down 39th CA clause 4.", "விருப்பம் D தவறானது; இந்திரா காந்தி வழக்கு 39வது திருத்தப் பிரிவை ரத்து செய்தது.",
+        "April 24, 1973 is the cutoff date because that was the day Kesavananda Bharati judgment was delivered.",
+        "1973 ஏப்ரல் 24 என்பது கேசவாநந்த பாரதி தீர்ப்பு வழங்கப்பட்ட நாள் என்பதால் அது எல்லை நாளாகக் கருதப்படுகிறது.",
+        "TNPSC Relevance: Tamil Nadu 69% Reservation Act 1994 (placed in 9th Schedule by 76th CA 1994) is subject to this I.R. Coelho test.",
+        "டிஎன்பிஎஸ்சி முக்கிய குறிப்பு: தமிழ்நாட்டின் 69% இடஒதுக்கீட்டுச் சட்டம் 1994 (76வது திருத்தத்தால் 9வது அட்டவணையில் சேர்க்கப்பட்டது) இந்த ஐ.ஆர். கொஹெலோ சோதனைக்கு உட்பட்டது.",
+        "Understanding", "High", ["I.R. Coelho", "9th Schedule Review", "April 24 1973"], "Part 3"
+    )
+
+    # Q011 - Correct: C
+    add_q(
+        "CZ_AM_MD_011",
+        "Which Constitutional Amendment Act added 3 new languages — Konkani, Manipuri, and Nepali — to the 8th Schedule of the Constitution?",
+        "கொங்கணி, மணிப்பூரி மற்றும் நேபாளி ஆகிய 3 புதிய மொழிகளை 8வது அட்டவணையில் சேர்த்த அரசியலமைப்பு திருத்தச் சட்டம் எது?",
+        "21st Constitutional Amendment Act, 1967", "21வது அரசியலமைப்பு திருத்தச் சட்டம், 1967",
+        "70th Constitutional Amendment Act, 1992", "70வது அரசியலமைப்பு திருத்தச் சட்டம், 1992",
+        "71st Constitutional Amendment Act, 1992", "71வது அரசியலமைப்பு திருத்தச் சட்டம், 1992",
+        "92nd Constitutional Amendment Act, 2003", "92வது அரசியலமைப்பு திருத்தச் சட்டம், 2003",
+        "C",
+        "The 71st Constitutional Amendment Act, 1992 added Konkani, Manipuri, and Nepali (KMN) to the 8th Schedule, increasing total official languages from 15 to 18.",
+        "71வது அரசியலமைப்பு திருத்தச் சட்டம், 1992 கொங்கணி, மணிப்பூரி, நேபாளி ஆகிய 3 மொழிகளைச் சேர்த்து 8வது அட்டவணை மொழிகளை 15 லிருந்து 18 ஆக உயர்த்தியது.",
+        "Option A is incorrect; 21st Amendment added Sindhi (15th language) in 1967.", "விருப்பம் A தவறானது; 21வது திருத்தம் சிந்தி மொழியைச் சேர்த்தது.",
+        "Option B is incorrect; 70th Amendment included Delhi & Puducherry Assemblies in Presidential election.", "விருப்பம் B தவறானது; 70வது திருத்தம் குடியரசு தலைவர் தேர்தல் மன்றம் பற்றியது.",
+        "Option C is correct because 71st Amendment Act, 1992 added Konkani, Manipuri, and Nepali.", "விருப்பம் C சரியானது, ஏனெனில் 71வது திருத்தச் சட்டம் 1992 கொங்கணி, மணிப்பூரி, நேபாளி மொழிகளைச் சேர்த்தது.",
+        "Option D is incorrect; 92nd Amendment added Bodo, Dogri, Maithili, Santhali in 2003.", "விருப்பம் D தவறானது; 92வது திருத்தம் போடோ, டோக்ரி, மைதிலி, சந்தாலி மொழிகளைச் சேர்த்தது.",
+        "8th Schedule Chronology: 14 original -> 21st CA (Sindhi) = 15 -> 71st CA (Konkani, Manipuri, Nepali) = 18 -> 92nd CA (Bodo, Dogri, Maithili, Santhali) = 22.",
+        "8வது அட்டவணை வளர்ச்சி: 14 மூல மொழிகள் -> 21வது திருத்தம் (சிந்தி) = 15 -> 71வது திருத்தம் (கொங்கணி, மணிப்பூரி, நேபாளி) = 18 -> 92வது திருத்தம் (போடோ, டோக்ரி, மைதிலி, சந்தாலி) = 22.",
+        "96th Amendment in 2011 changed 'Oriya' to 'Odia'.",
+        "2011 இன் 96வது திருத்தம் 'ஒரியா' என்பதை 'ஒடியா' என மாற்றியது.",
+        "Remembering", "High", ["71st Amendment", "8th Schedule Languages"], "Part 2"
+    )
+
+    # Q012 - Correct: D
+    add_q(
+        "CZ_AM_MD_012",
+        "Which Constitutional Amendment Act introduced Article 239AA establishing a Legislative Assembly and Council of Ministers for the National Capital Territory of Delhi?",
+        "டெல்லி தேசிய தலைநகர் பிரதேசத்திற்கு சட்டமன்றம் மற்றும் அமைச்சரவையை நிறுவும் சரத்து 239AA ஐ அறிமுகப்படுத்திய அரசியலமைப்பு திருத்தச் சட்டம் எது?",
+        "61st Amendment Act, 1988", "61வது திருத்தச் சட்டம், 1988",
+        "65th Amendment Act, 1990", "65வது திருத்தச் சட்டம், 1990",
+        "70th Amendment Act, 1992", "70வது திருத்தச் சட்டம், 1992",
+        "69th Amendment Act, 1991", "69வது திருத்தச் சட்டம், 1991",
+        "D",
+        "The 69th Constitutional Amendment Act, 1991 inserted Article 239AA and Article 239AB designating Delhi as National Capital Territory with a 70-member Assembly.",
+        "69வது அரசியலமைப்பு திருத்தச் சட்டம், 1991 சரத்துகள் 239AA மற்றும் 239AB ஐச் சேர்த்து டெல்லியை 70 உறுப்பினர்கள் கொண்ட சட்டமன்றத்துடன் கூடிய தேசிய தலைநகர் பிரதேசமாக மாற்றியது.",
+        "Option A is incorrect; 61st Amendment lowered voting age to 18.", "விருப்பம் A தவறானது; 61வது திருத்தம் வாக்குரிமை வயதைக் குறைத்தது.",
+        "Option B is incorrect; 65th Amendment created NCSC & ST multi-member commission.", "விருப்பம் B தவறானது; 65வது திருத்தம் எஸ்சி/எஸ்டி ஆணையம் பற்றியது.",
+        "Option C is incorrect; 70th Amendment enabled Delhi MLAs to vote in Presidential elections.", "விருப்பம் C தவறானது; 70வது திருத்தம் டெல்லி எம்.எல்.ஏக்கள் குடியரசு தலைவர் தேர்தலில் வாக்களிக்க வழிசெய்தது.",
+        "Option D is correct because 69th Amendment Act, 1991 created Article 239AA for NCT of Delhi.", "விருப்பம் D சரியானது, ஏனெனில் 69வது திருத்தச் சட்டம் 1991 டெல்லிக்காக சரத்து 239AA ஐ உருவாக்கியது.",
+        "Under Article 239AA(3)(a), Delhi Assembly can make laws on State List and Concurrent List EXCEPT 3 subjects: Public Order, Police, and Land.",
+        "சரத்து 239AA(3)(a) இன் படி, டெல்லி சட்டமன்றம் மாநில மற்றும் பொதுப் பட்டியலில் உள்ள பாடங்களில் சட்டம் இயற்றலாம்; 3 பாடங்கள் தவிர்ந்து: பொது அமைதி, காவல்துறை, மற்றும் நிலம்.",
+        "Chief Minister of Delhi is appointed by the President (not Governor/Lieutenant Governor) under Art 239AA(5).",
+        "டெல்லி முதல்வர் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார் (சரத்து 239AA(5)).",
+        "Understanding", "High", ["69th Amendment", "Article 239AA", "Delhi Assembly"], "Part 2"
+    )
+
+    # Q013 - Correct: A
+    add_q(
+        "CZ_AM_MD_013",
+        "Which of the following constitutional amendments is INCORRECTLY matched with its primary objective?",
+        "பின்வரும் அரசியலமைப்பு திருத்தங்களில் எது அதன் முதன்மை நோக்கத்துடன் தவறாகப் பொருந்தியுள்ளது?",
+        "52nd Amendment Act, 1985 — Lowering of voting age to 18 years", "52வது திருத்தச் சட்டம், 1985 — வாக்குரிமை வயதை 18 ஆகக் குறைத்தல்",
+        "86th Amendment Act, 2002 — Right to Education under Article 21A", "86வது திருத்தச் சட்டம், 2002 — சரத்து 21A இன் கீழ் கல்வி உரிமை",
+        "91st Amendment Act, 2003 — 15% ceiling on Council of Ministers size", "91வது திருத்தச் சட்டம், 2003 — அமைச்சரவை அளவில் 15% உச்சவரம்பு",
+        "101st Amendment Act, 2016 — Goods and Services Tax (GST)", "101வது திருத்தச் சட்டம், 2016 — சரக்கு மற்றும் சேவை வரி (GST)",
+        "A",
+        "Option A is incorrectly matched because lowering of voting age to 18 years was done by the 61st Amendment Act, 1988 (NOT the 52nd Amendment, which enacted Anti-Defection Law).",
+        "விருப்பம் A தவறாகப் பொருந்தியுள்ளது, ஏனெனில் வாக்குரிமை வயதை 18 ஆகக் குறைத்தது 61வது திருத்தச் சட்டம் 1988 ஆகும் (52வது திருத்தம் அல்ல; 52வது திருத்தம் கட்சித் தாவல் தடைச் சட்டம்).",
+        "Option A is correct as the question asks for the INCORRECTLY matched pair.", "விருப்பம் A சரியானது, ஏனெனில் கேள்வி தவறாகப் பொருந்திய இணையைக் கேட்கிறது.",
+        "Option B is correctly matched; 86th CA introduced Art 21A Right to Education.", "விருப்பம் B சரியாகப் பொருந்தியுள்ளது; 86வது திருத்தம் கல்வி உரிமையைக் கொண்டு வந்தது.",
+        "Option C is correctly matched; 91st CA imposed 15% cap on Council of Ministers.", "விருப்பம் C சரியாகப் பொருந்தியுள்ளது; 91வது திருத்தம் 15% வரம்பை விதித்தது.",
+        "Option D is correctly matched; 101st CA enacted Goods and Services Tax.", "விருப்பம் D சரியாகப் பொருந்தியுள்ளது; 101வது திருத்தம் ஜிஎஸ்டியை இயற்றியது.",
+        "TNPSC Elimination Tip: Spotting mismatched amendment numbers with famous provisions (52nd Anti-defection vs 61st Voting age) quickly eliminates options.",
+        "டிஎன்பிஎஸ்சி நீக்கல் உத்தி: புகழ்பெற்ற திருத்த எண்களை தவறான விதிகளுடன் பொருத்தியிருப்பதை (52வது கட்சித் தாவல் vs 61வது வாக்குரிமை) விரைவாகக் கண்டறிந்து விடையளிக்கலாம்.",
+        "Always verify both amendment number and year during exam matching questions.",
+        "பொருத்துக வினாக்களில் திருத்த எண் மற்றும் ஆண்டு இரண்டையும் எப்போதும் சரிபார்க்கவும்.",
+        "Understanding", "High", ["Amendment Incorrect Match", "61st vs 52nd"], "Part 2"
+    )
+
+    # Q014 - Correct: B
+    add_q(
+        "CZ_AM_MD_014",
+        "Which Constitutional Amendment Act added 3 new Directives to Part IV (Directive Principles): Equal Justice and Free Legal Aid (Art 39A), Participation of workers in management (Art 43A), and Protection of environment (Art 48A)?",
+        "பகுதி IV (DPSP) இல் சமநீதி மற்றும் இலவச சட்ட உதவி (சரத்து 39A), தொழிற்சாலை நிர்வாகத்தில் தொழிலாளர்களின் பங்கேற்பு (சரத்து 43A), சுற்றுச்சூழல் பாதுகாப்பு (சரத்து 48A) ஆகிய 3 புதிய நெறிமுறைகளைச் சேர்த்த அரசியலமைப்பு திருத்தச் சட்டம் எது?",
+        "25th Amendment Act, 1971", "25வது திருத்தச் சட்டம், 1971",
+        "42nd Amendment Act, 1976", "42வது திருத்தச் சட்டம், 1976",
+        "44th Amendment Act, 1978", "44வது திருத்தச் சட்டம், 1978",
+        "97th Amendment Act, 2011", "97வது திருத்தச் சட்டம், 2011",
+        "B",
+        "The 42nd Constitutional Amendment Act, 1976 added 4 new Directive Principles: Art 39 (healthy development of children), Art 39A (free legal aid), Art 43A (workers participation), and Art 48A (environment protection).",
+        "42வது அரசியலமைப்பு திருத்தச் சட்டம், 1976 நான்கு புதிய அரசு நெறிமுறைக் கோட்பாடுகளைச் சேர்த்தது: சரத்து 39, 39A (இலவச சட்ட உதவி), 43A (தொழிலாளர் பங்கேற்பு) மற்றும் 48A (சுற்றுச்சூழல் பாதுகாப்பு).",
+        "Option A is incorrect; 25th Amendment inserted Article 31C.", "விருப்பம் A தவறானது; 25வது திருத்தம் சரத்து 31C ஐச் சேர்த்தது.",
+        "Option B is correct because 42nd Amendment Act, 1976 introduced Articles 39A, 43A, and 48A into Part IV.", "விருப்பம் B சரியானது, ஏனெனில் 42வது திருத்தச் சட்டம் 1976 சரத்துகள் 39A, 43A, 48A ஐ பகுதி IV இல் சேர்த்தது.",
+        "Option C is incorrect; 44th Amendment added Article 38(2) regarding minimizing inequalities in income.", "விருப்பம் C தவறானது; 44வது திருத்தம் வருமான ஏற்றத்தாழ்வைக் குறைக்க சரத்து 38(2) ஐச் சேர்த்தது.",
+        "Option D is incorrect; 97th Amendment added Article 43B regarding co-operatives.", "விருப்பம் D தவறானது; 97வது திருத்தம் கூட்டுறவு சங்கங்களுக்காக சரத்து 43B ஐச் சேர்த்தது.",
+        "Article 39A formed the constitutional basis for Legal Services Authorities Act, 1987 establishing NALSA and Lok Adalats.",
+        "சரத்து 39A NALSA மற்றும் லோக் அதாலத்களை நிறுவிய சட்டப் பணிகள் ஆணைச் சட்டம் 1987 க்கு அரசியலமைப்பு அடித்தளமாக அமைந்தது.",
+        "Article 48A directed the State to protect and improve the environment and safeguard forests and wildlife.",
+        "சரத்து 48A சுற்றுச்சூழலைப் பாதுகாக்கவும் மேம்படுத்தவும் காடுகள் மற்றும் வனவிலங்குகளைப் பாதுகாக்கவும் அரசைப் பணித்தது.",
+        "Remembering", "High", ["42nd Amendment", "DPSP Addition", "Article 39A 43A 48A"], "Part 2"
+    )
+
+    # Q015 - Correct: C
+    add_q(
+        "CZ_AM_MD_015",
+        "Which Constitutional Amendment Act inserted Article 338A to create a separate National Commission for Scheduled Tribes (NCST)?",
+        "பழங்குடியினருக்கான தனி தேசிய ஆணையத்தை (NCST) உருவாக்க சரத்து 338A ஐச் சேர்த்த அரசியலமைப்பு திருத்தச் சட்டம் எது?",
+        "65th Amendment Act, 1990", "65வது திருத்தச் சட்டம், 1990",
+        "79th Amendment Act, 1999", "79வது திருத்தச் சட்டம், 1999",
+        "89th Amendment Act, 2003", "89வது திருத்தச் சட்டம், 2003",
+        "102nd Amendment Act, 2018", "102வது திருத்தச் சட்டம், 2018",
+        "C",
+        "The 89th Constitutional Amendment Act, 2003 inserted Article 338A, bifurcating the former joint commission into NCSC (Art 338) and NCST (Art 338A).",
+        "89வது அரசியலமைப்பு திருத்தச் சட்டம், 2003 சரத்து 338A ஐச் சேர்த்து, முன்னாள் கூட்டு ஆணையத்தைப் பிரித்து NCSC (சரத்து 338) மற்றும் NCST (சரத்து 338A) என உருவாக்கியது.",
+        "Option A is incorrect; 65th Amendment (1990) created joint multi-member NCSC & ST.", "விருப்பம் A தவறானது; 65வது திருத்தம் கூட்டு ஆணையத்தை உருவாக்கியது.",
+        "Option B is incorrect; 79th Amendment extended SC/ST reservations.", "விருப்பம் B தவறானது; 79வது திருத்தம் எஸ்சி/எஸ்டி இடஒதுக்கீடு நீட்டிப்பு பற்றியது.",
+        "Option C is correct because 89th Amendment Act, 2003 inserted Article 338A creating NCST.", "விருப்பம் C சரியானது, ஏனெனில் 89வது திருத்தச் சட்டம் 2003 சரத்து 338A ஐச் சேர்த்து NCST ஐ உருவாக்கியது.",
+        "Option D is incorrect; 102nd Amendment (2018) inserted Article 338B creating NCBC.", "விருப்பம் D தவறானது; 102வது திருத்தம் சரத்து 338B ஐச் சேர்த்து NCBC ஐ உருவாக்கியது.",
+        "NCST consists of a Chairperson, a Vice-Chairperson, and 3 other members appointed by the President.",
+        "NCST ஒரு தலைவர், ஒரு துணைத் தலைவர் மற்றும் குடியரசுத் தலைவரால் நியமிக்கப்படும் 3 உறுப்பினர்களைக் கொண்டுள்ளது.",
+        "NCST submits its annual report directly to the President of India.",
+        "NCST தனது ஆண்டறிக்கையை நேரடியாக இந்தியக் குடியரசுத் தலைவரிடம் சமர்ப்பிக்கிறது.",
+        "Remembering", "High", ["89th Amendment", "NCST", "Article 338A"], "Part 2"
+    )
+
+    # Q016 - Correct: D
+    add_q(
+        "CZ_AM_MD_016",
+        "In which landmark verdict did the Supreme Court held that the power of Judicial Review under Articles 32 and 226 is part of the Basic Structure and cannot be excluded even for Administrative Tribunals?",
+        "சரத்துகள் 32 மற்றும் 226 இன் கீழான நீதித்துறை மறுாய்வு అధికாரம் அடிப்படை அமைப்பின் ஒரு பகுதி என்றும், நிர்வாகத் தீர்ப்பாயங்களுக்குக் கூட அதை நீக்க முடியாது என்றும் எந்த வரலாற்றுச் சிறப்புமிக்க தீர்ப்பில் உச்ச நீதிமன்றம் கூறியது?",
+        "Kesavananda Bharati Case (1973)", "கேசவாநந்த பாரதி வழக்கு (1973)",
+        "Minerva Mills Case (1980)", "மினர்வா மில்ஸ் வழக்கு (1980)",
+        "Waman Rao Case (1981)", "வாமன் ராவ் வழக்கு (1981)",
+        "L. Chandra Kumar Case (1997)", "எல். சந்திர குமார் வழக்கு (1997)",
+        "D",
+        "In L. Chandra Kumar v. Union of India (1997), a 7-judge bench held that judicial review by High Courts (Art 226) and Supreme Court (Art 32) over Administrative Tribunals is an integral part of basic structure; decisions of Tribunals are subject to High Court writ jurisdiction.",
+        "எல். சந்திர குமார் எதிர் இந்திய யூனியன் (1997) வழக்கில் 7 நீதிபதிகள் கொண்ட அமர்வு, நிர்வாகத் தீர்ப்பாயங்கள் மீதான உயர் நீதிமன்ற (சரத்து 226) மற்றும் உச்ச நீதிமன்ற (சரத்து 32) மறுாய்வு அதிகாரம் அடிப்படை அமைப்பின் ஒருங்கிணைந்த பகுதி எனத் தீர்ப்பளித்தது.",
+        "Option A is incorrect; Kesavananda Bharati (1973) established basic structure doctrine generally.", "விருப்பம் A தவறானது; கேசவாநந்த பாரதி வழக்கு பொதுவான அடிப்படை அமைப்புக் கோட்பாட்டை உருவாக்கியது.",
+        "Option B is incorrect; Minerva Mills (1980) struck down Art 368(4)&(5).", "விருப்பம் B தவறானது; மினர்வா மில்ஸ் வழக்கு சரத்து 368(4)&(5) ஐ ரத்து செய்தது.",
+        "Option C is incorrect; Waman Rao (1981) clarified 9th Schedule cutoff date (April 24, 1973).", "விருப்பம் C தவறானது; வாமன் ராவ் வழக்கு 9வது அட்டவணை எல்லை நாளைத் தெளிவுபடுத்தியது.",
+        "Option D is correct because L. Chandra Kumar (1997) struck down provisions of Art 323A(2)(d) & 323B(3)(d) excluding HC jurisdiction.", "விருப்பம் D சரியானது, ஏனெனில் எல். சந்திர குமார் வழக்கு உயர் நீதிமன்ற அதிகாரத்தை நீக்கிய தீர்ப்பாய விதியை ரத்து செய்தது.",
+        "L. Chandra Kumar judgment made it mandatory that aggrieved parties must first approach the relevant High Court before appealing to the Supreme Court.",
+        "எல். சந்திர குமார் தீர்ப்பு பாதிக்கப்பட்ட தரப்பினர் உச்ச நீதிமன்றத்திற்குச் செல்லும் முன் முதலில் சம்பந்தப்பட்ட உயர் நீதிமன்றத்தை அணுகுவதைக் கட்டாயமாக்கியது.",
+        "This restored supervisory power of High Courts over all tribunals within their territorial jurisdiction.",
+        "இது மாநில உயர் நீதிமன்றங்களுக்கு தீர்ப்பாயங்கள் மீதான மேற்பார்வை அதிகாரத்தை மீட்டெடுத்தது.",
+        "Understanding", "High", ["L. Chandra Kumar", "Judicial Review Basic Structure", "Tribunals"], "Part 3"
+    )
+
+    # Q017 - Correct: A
+    add_q(
+        "CZ_AM_MD_017",
+        "Which Constitutional Amendment Act replaced the 1971 Census with the 2001 Census for internal delimitation of parliamentary and assembly constituencies without altering total seats?",
+        "மொத்த இடங்களின் எண்ணிக்கையை மாற்றாமல் நாடாளுமன்ற மற்றும் சட்டமன்ற உள்கட்டமைப்பு தொகுதி மறுவரையறைக்கு 1971 மக்கள் தொகை கணக்கெடுப்பிற்குப் பதிலாக 2001 மக்கள் தொகை கணக்கெடுப்பைப் பயன்படுத்த அனுமதித்த அரசியலமைப்பு திருத்தச் சட்டம் எது?",
+        "87th Constitutional Amendment Act, 2003", "87வது அரசியலமைப்பு திருத்தச் சட்டம், 2003",
+        "84th Constitutional Amendment Act, 2001", "84வது அரசியலமைப்பு திருத்தச் சட்டம், 2001",
+        "91st Constitutional Amendment Act, 2003", "91வது அரசியலமைப்பு திருத்தச் சட்டம், 2003",
+        "42nd Constitutional Amendment Act, 1976", "42வது அரசியலமைப்பு திருத்தச் சட்டம், 1976",
+        "A",
+        "While the 84th CA 2001 initially permitted internal delimitation based on 1991 Census, the 87th CA 2003 amended it to substitute 2001 Census data for rationalising boundaries without changing state-wise seat allocations.",
+        "84வது திருத்தம் 2001 ஆரம்பத்தில் 1991 கணக்கெடுப்பை உள்கட்டமைப்பு சீரமைப்பிற்கு அனுமதித்த நிலையில், 87வது திருத்தம் 2003 அதை 2001 மக்கள் தொகை கணக்கெடுப்பு என மாற்றியது.",
+        "Option A is correct because 87th Amendment Act, 2003 enabled delimitation based on 2001 Census figures.", "விருப்பம் A சரியானது, ஏனெனில் 87வது திருத்தச் சட்டம் 2003 2001 கணக்கெடுப்பின் அடிப்படையில் தொகுதி சீரமைப்பிற்கு அனுமதித்தது.",
+        "Option B is incorrect; 84th Amendment originally specified 1991 Census for delimitation.", "விருப்பம் B தவறானது; 84வது திருத்தம் ஆரம்பத்தில் 1991 கணக்கெடுப்பைக் குறிப்பிட்டிருந்தது.",
+        "Option C is incorrect; 91st Amendment dealt with cabinet size 15% ceiling.", "விருப்பம் C தவறானது; 91வது திருத்தம் அமைச்சரவை அளவு 15% வரம்பு பற்றியது.",
+        "Option D is incorrect; 42nd Amendment froze seat allocations on 1971 Census till 2000.", "விருப்பம் D தவறானது; 42வது திருத்தம் 1971 கணக்கெடுப்பு அடிப்படையில் 2000 வரை முடக்கியது.",
+        "Justice Kuldip Singh Delimitation Commission (2002-2008) carried out constituency rationalisation based on the 87th CA 2003.",
+        "நீதிபதி குல்தீப் சிங் தொகுதி மறுவரையறை ஆணையம் 87வது திருத்தம் 2003 இன் படி தொகுதிச் சீரமைப்பை மேற்கொண்டது.",
+        "Total seats in Lok Sabha (543) and State Assemblies remained frozen till post-2026 census.",
+        "மக்களவை (543) மற்றும் சட்டமன்றங்களின் மொத்த இடங்கள் 2026 க்குப் பிறகான மக்கள் தொகை கணக்கெடுப்பு வரை முடக்கப்பட்டுள்ளன.",
+        "Remembering", "High", ["87th Amendment", "2001 Census Delimitation"], "Part 2"
+    )
+
+    # Q018 - Correct: B
+    add_q(
+        "CZ_AM_MD_018",
+        "Which of the following bodies CANNOT initiate a Constitutional Amendment Bill under Article 368?",
+        "சரத்து 368 இன் கீழ் பின்வரும் எந்த அமைப்பு அரசியலமைப்பு திருத்த மசோதாவை அறிமுகப்படுத்த முடியாது?",
+        "Rajya Sabha", "மாநிலங்களவை",
+        "State Legislative Assembly", "மாநில சட்டமன்றம்",
+        "Lok Sabha", "மக்களவை",
+        "Both Houses of Parliament", "நாடாளுமன்றத்தின் இரு அவைகளும்",
+        "B",
+        "Under Article 368(2), a bill for constitutional amendment can be initiated ONLY in either House of Parliament. State Legislative Assemblies have NO power to initiate constitutional amendment bills.",
+        "சரத்து 368(2) இன் கீழ், அரசியலமைப்பு திருத்த மசோதாவை நாடாளுமன்றத்தின் இரு அவைகளில் ஒன்றில் மட்டுமே அறிமுகப்படுத்த முடியும். மாநில சட்டமன்றங்களுக்கு அறிமுகப்படுத்தும் அதிகாரம் இல்லை.",
+        "Option A is incorrect because Rajya Sabha can initiate amendment bills.", "விருப்பம் A தவறானது, ஏனெனில் மாநிலங்களவை திருத்த மசோதாக்களை அறிமுகப்படுத்த முடியும்.",
+        "Option B is correct because State Legislative Assemblies are barred from initiating constitutional amendment bills under Article 368.", "விருப்பம் B சரியானது, ஏனெனில் மாநில சட்டமன்றங்கள் அரசியலமைப்பு திருத்த மசோதாவை அறிமுகப்படுத்த முடியாது.",
+        "Option C is incorrect because Lok Sabha can initiate amendment bills.", "விருப்பம் C தவறானது, ஏனெனில் மக்களவை திருத்த மசோதாக்களை அறிமுகப்படுத்த முடியும்.",
+        "Option D is incorrect because Parliament has full power to initiate amendment bills.", "விருப்பம் D தவறானது, ஏனெனில் நாடாளுமன்றத்திற்கு அறிமுகப்படுத்தும் அதிகாரம் உண்டு.",
+        "State Legislatures can only pass resolutions requesting creation/abolition of State Legislative Councils (Art 169), which Parliament then enacts by ordinary law.",
+        "மாநில சட்டமன்றங்கள் மேலவை உருவாக்கம்/நீக்கம் தொடர்பான தீர்மானத்தை மட்டுமே இயற்ற முடியும் (சரத்து 169), அதை நாடாளுமன்றம் சாதாரண சட்டத்தால் நிறைவேற்றும்.",
+        "State Legislatures have no power to propose any constitutional amendments.",
+        "அரசியலமைப்பு திருத்தங்களை முன்மொழியும் அதிகாரம் மாநில சட்டமன்றங்களுக்கு இல்லை.",
+        "Understanding", "High", ["Initiation Power", "State Assembly Limitation"], "Part 1"
+    )
+
+    # Q019 - Correct: C
+    add_q(
+        "CZ_AM_MD_019",
+        "Which Constitutional Amendment Act granted 33% reservation for women in Lok Sabha and State Legislative Assemblies under the name 'Nari Shakti Vandan Adhiniyam'?",
+        "'நாரி சக்தி வந்தன் அதினியம்' என்ற பெயரில் மக்களவை மற்றும் மாநில சட்டமன்றங்களில் பெண்களுக்கு 33% இடஒதுக்கீடு வழங்கிய அரசியலமைப்பு திருத்தச் சட்டம் எது?",
+        "103rd Constitutional Amendment Act, 2019", "103வது அரசியலமைப்பு திருத்தச் சட்டம், 2019",
+        "105th Constitutional Amendment Act, 2021", "105வது அரசியலமைப்பு திருத்தச் சட்டம், 2021",
+        "106th Constitutional Amendment Act, 2023", "106வது அரசியலமைப்பு திருத்தச் சட்டம், 2023",
+        "104th Constitutional Amendment Act, 2020", "104வது அரசியலமைப்பு திருத்தச் சட்டம், 2020",
+        "C",
+        "The 106th Constitutional Amendment Act, 2023 (Nari Shakti Vandan Adhiniyam) inserted Articles 330A, 332A, and 239AA(2)(b) reserving 1/3rd seats for women in Lok Sabha, Assemblies, and Delhi Assembly.",
+        "106வது அரசியலமைப்பு திருத்தச் சட்டம், 2023 (நாரி சக்தி வந்தன் அதினியம்) சரத்துகள் 330A, 332A, 239AA(2)(b) ஐச் சேர்த்து பெண்களுக்கு 33% இடங்களை ஒதுக்கியது.",
+        "Option A is incorrect; 103rd CA (2019) introduced 10% EWS reservation.", "விருப்பம் A தவறானது; 103வது திருத்தம் 10% EWS இடஒதுக்கீடு பற்றியது.",
+        "Option B is incorrect; 105th CA (2021) restored state power to identify SEBCs.", "விருப்பம் B தவறானது; 105வது திருத்தம் மாநில SEBC பட்டியல் அதிகாரம் பற்றியது.",
+        "Option C is correct because 106th CA (2023) enacted the women's reservation bill.", "விருப்பம் C சரியானது, ஏனெனில் 106வது திருத்தம் 2023 பெண்களுக்கான இடஒதுக்கீட்டை இயற்றியது.",
+        "Option D is incorrect; 104th CA (2020) extended SC/ST reservation and discontinued Anglo-Indian nomination.", "விருப்பம் D தவறானது; 104வது திருத்தம் எஸ்சி/எஸ்டி இடஒதுக்கீடு நீட்டிப்பு பற்றியது.",
+        "106th CA includes sub-reservation for SC and ST women within the 33% quota under Articles 330A(2) and 332A(2).",
+        "106வது திருத்தம் 33% இடஒதுக்கீட்டிற்குள் எஸ்சி மற்றும் எஸ்டி பெண்களுக்கு உட்பிரிவு இடஒதுக்கீட்டை வழங்குகிறது.",
+        "It will become operational after the first post-2023 census and subsequent delimitation.",
+        "இது 2023 க்குப் பிறகான முதல் மக்கள் தொகை கணக்கெடுப்பு மற்றும் தொகுதி மறுவரையறைக்கு பின் அமலுக்கு வரும்.",
+        "Remembering", "High", ["106th Amendment", "Women Reservation", "Nari Shakti Vandan"], "Part 2"
+    )
+
+    # Q020 - Correct: D
+    add_q(
+        "CZ_AM_MD_020",
+        "Which of the following pairs of Article and Amendment Act is INCORRECTLY matched?",
+        "சரத்து மற்றும் திருத்தச் சட்டம் தொடர்பான பின்வரும் இணைகளில் எது தவறாகப் பொருந்தியுள்ளது?",
+        "Article 21A — 86th Amendment Act, 2002", "சரத்து 21A — 86வது திருத்தச் சட்டம், 2002",
+        "Article 51A — 42nd Amendment Act, 1976", "சரத்து 51A — 42வது திருத்தச் சட்டம், 1976",
+        "Article 338B — 102nd Amendment Act, 2018", "சரத்து 338B — 102வது திருத்தச் சட்டம், 2018",
+        "Article 300A — 42nd Amendment Act, 1976", "சரத்து 300A — 42வது திருத்தச் சட்டம், 1976",
+        "D",
+        "Option D is incorrectly matched because Article 300A (Right to Property as legal right) was inserted by the 44th Constitutional Amendment Act, 1978 (NOT the 42nd Amendment Act, 1976).",
+        "விருப்பம் D தவறாகப் பொருந்தியுள்ளது, ஏனெனில் சரத்து 300A (சொத்துரிமை சட்ட உரிமை) 44வது அரசியலமைப்பு திருத்தச் சட்டம் 1978 மூலம் சேர்க்கப்பட்டது (42வது திருத்தம் அல்ல).",
+        "Option A is correctly matched; 86th CA added Art 21A Right to Education.", "விருப்பம் A சரியாகப் பொருந்தியுள்ளது; 86வது திருத்தம் சரத்து 21A ஐச் சேர்த்தது.",
+        "Option B is correctly matched; 42nd CA added Art 51A Fundamental Duties.", "விருப்பம் B சரியாகப் பொருந்தியுள்ளது; 42வது திருத்தம் சரத்து 51A ஐச் சேர்த்தது.",
+        "Option C is correctly matched; 102nd CA added Art 338B National Commission for Backward Classes.", "விருப்பம் C சரியாகப் பொருந்தியுள்ளது; 102வது திருத்தம் சரத்து 338B ஐச் சேர்த்தது.",
+        "Option D is correct as the question asks for the INCORRECTLY matched pair.", "விருப்பம் D சரியானது, ஏனெனில் கேள்வி தவறாகப் பொருந்திய இணையைக் கேட்கிறது.",
+        "44th Amendment Act 1978 deleted Right to Property from Part III (Articles 19(1)(f) and 31) and re-inserted it as Article 300A in Part XII.",
+        "44வது திருத்தச் சட்டம் 1978 பகுதி III இலிருந்து சொத்துரிமையை நீக்கி பகுதி XII இல் சரத்து 300A ஆகச் சேர்த்தது.",
+        "Article 300A states: 'No person shall be deprived of his property save by authority of law'.",
+        "சரத்து 300A கூறுகிறது: 'சட்டத்தின் அதிகாரத்தின் மூலமின்றி எவரும் அவரது சொத்திலிருந்து விடுக்கப்படலாகாது'.",
+        "Understanding", "High", ["Article Match Trap", "Article 300A", "44th Amendment"], "Part 2"
+    )
+
+    # Q021 - Correct: A
+    add_q(
+        "CZ_AM_MD_021",
+        "What is the required majority in EACH House of Parliament to pass a Constitutional Amendment Bill under Article 368?",
+        "சரத்து 368 இன் கீழ் அரசியலமைப்பு திருத்த மசோதாவை நிறைவேற்ற நாடாளுமன்றத்தின் ஒவ்வொரு அவையிலும் தேவையான பெரும்பான்மை என்ன?",
+        "Majority of total membership of the House AND 2/3 of members present and voting", "அவையின் மொத்த உறுப்பினர்களின் பெரும்பான்மை மற்றும் வருகை தந்து வாக்களிப்பவர்களில் 2/3 பங்கு",
+        "Simple majority of members present and voting", "வருகை தந்து வாக்களிக்கும் உறுப்பினர்களின் சாதாரண பெரும்பான்மை",
+        "Absolute majority of 2/3 of total strength of the House", "அவையின் மொத்த எண்ணிக்கையில் 2/3 பங்கு தனிப்பெரும்பான்மை",
+        "Majority of 3/4 of members present and voting", "வருகை தந்து வாக்களிப்பவர்களில் 3/4 பங்கு பெரும்பான்மை",
+        "A",
+        "Article 368 requires a Special Majority: (1) Majority of total membership of each House, AND (2) Majority of not less than 2/3 of members present and voting.",
+        "சரத்து 368 இன் படி சிறப்பு பெரும்பான்மை தேவை: (1) ஒவ்வொரு அவையின் மொத்த உறுப்பினர்களின் பெரும்பான்மை, மற்றும் (2) வருகை தந்து வாக்களிப்பவர்களில் 2/3 பங்கிற்குக் குறையாத பெரும்பான்மை.",
+        "Option A is correct because it correctly states both cumulative requirements under Article 368(2).", "விருப்பம் A சரியானது, ஏனெனில் சரத்து 368(2) இன் இரு நிபந்தனைகளையும் சரியாகக் குறிப்பிடுகிறது.",
+        "Option B is incorrect; simple majority applies to non-Art 368 matters like state boundary changes.", "விருப்பம் B தவறானது; சாதாரண பெரும்பான்மை எல்லை மாற்றம் போன்ற 368க்கு அப்பாற்பட்ட விஷயங்களுக்குப் பொருந்தும்.",
+        "Option C is incorrect; 2/3 of total strength is not the constitutional phrasing.", "விருப்பம் C தவறானது; மொத்த எண்ணிக்கையில் 2/3 என்பது அரசியலமைப்பு வடிவம் அல்ல.",
+        "Option D is incorrect; 3/4 majority is not required under Indian Constitution (it is used in US Constitution state ratification).", "விருப்பம் D தவறானது; 3/4 பெரும்பான்மை இந்திய அரசியலமைப்பில் இல்லை.",
+        "Both requirements must be satisfied at the voting stage of the bill in both Lok Sabha and Rajya Sabha.",
+        "மக்களவை மற்றும் மாநிலங்களவை இரண்டிலும் மசோதா வாக்களிப்பு கட்டத்தில் இரு நிபந்தனைகளும் பூர்த்தியாக வேண்டும்.",
+        "Abstentions do not count towards 'present and voting'.", "வாக்களிக்காமல் தவிர்ந்தவர்கள் 'வருகை தந்து வாக்களிப்பவர்கள்' கணக்கில் எடுத்துக்கொள்ளப்பட மாட்டார்கள்.",
+        "Understanding", "High", ["Special Majority Definition", "Article 368"], "Part 1"
+    )
+
+    # Q022 - Correct: B
+    add_q(
+        "CZ_AM_MD_022",
+        "Which Constitutional Amendment Act is known for establishing the National Judicial Appointments Commission (NJAC) to replace the Collegium System, which was later invalidated by the Supreme Court?",
+        "கொலீஜியம் முறைக்கு பதிலாக தேசிய நீதிபதிகள் நியமன ஆணையத்தை (NJAC) நிறுவியதற்காக அறியப்பட்ட, பின்னர் உச்ச நீதிமன்றத்தால் ரத்து செய்யப்பட்ட அரசியலமைப்பு திருத்தச் சட்டம் எது?",
+        "98th Constitutional Amendment Act, 2012", "98வது அரசியலமைப்பு திருத்தச் சட்டம், 2012",
+        "99th Constitutional Amendment Act, 2014", "99வது அரசியலமைப்பு திருத்தச் சட்டம், 2014",
+        "100th Constitutional Amendment Act, 2015", "100வது அரசியலமைப்பு திருத்தச் சட்டம், 2015",
+        "101st Constitutional Amendment Act, 2016", "101வது அரசியலமைப்பு திருத்தச் சட்டம், 2016",
+        "B",
+        "The 99th Constitutional Amendment Act, 2014 inserted Articles 124A, 124B, and 124C establishing NJAC. In October 2015, the Supreme Court declared the 99th CA unconstitutional in the 4th Judges Case.",
+        "99வது அரசியலமைப்பு திருத்தச் சட்டம், 2014 சரத்துகள் 124A, 124B, 124C ஐச் சேர்த்து NJAC ஐ உருவாக்கியது. 2015 அக்டோபரில் உச்ச நீதிமன்றம் 99வது திருத்தத்தை அரசியலமைப்பிற்கு முரண் என ரத்து செய்தது.",
+        "Option A is incorrect; 98th CA added Article 371J for Hyderabad-Karnataka region special provisions.", "விருப்பம் A தவறானது; 98வது திருத்தம் ஐதராபாத்-கர்நாடகா பகுதி சிறப்பு விதி பற்றியது.",
+        "Option B is correct because 99th Amendment Act, 2014 created NJAC.", "விருப்பம் B சரியானது, ஏனெனில் 99வது திருத்தச் சட்டம் 2014 NJAC ஐ உருவாக்கியது.",
+        "Option C is incorrect; 100th CA implemented Land Boundary Agreement with Bangladesh.", "விருப்பம் C தவறானது; 100வது திருத்தம் வங்காளதேச எல்லை ஒப்பந்தம் பற்றியது.",
+        "Option D is incorrect; 101st CA introduced Goods and Services Tax (GST).", "விருப்பம் D தவறானது; 101வது திருத்தம் ஜிஎஸ்டி பற்றியது.",
+        "The 99th CA was struck down by 4-1 majority in Supreme Court Advocates-on-Record Association v. Union of India (2015).",
+        "உச்ச நீதிமன்ற வழக்கறிஞர்கள் சங்க வழக்கு (2015) இல் 99வது திருத்தம் 4-1 பெரும்பான்மையில் ரத்து செய்யப்பட்டது.",
+        "Judicial independence was held to be a core part of the Basic Structure of the Constitution.",
+        "நீதித்துறை சுதந்திரம் அரசியலமைப்பின் அடிப்படை அமைப்பின் முக்கியப் பகுதியாகக் கருதப்பட்டது.",
+        "Remembering", "High", ["99th Amendment", "NJAC", "Collegium System"], "Part 2"
+    )
+
+    # Q023 - Correct: C
+    add_q(
+        "CZ_AM_MD_023",
+        "Which Constitutional Amendment Act extended the reservation of seats for Scheduled Castes and Scheduled Tribes in Lok Sabha and State Assemblies for another 10 years until 2030?",
+        "மக்களவை மற்றும் மாநில சட்டமன்றங்களில் ஆதிதிராவிடர் மற்றும் பழங்குடியினருக்கான இடஒதுக்கீட்டை 2030 வரை மேலும் 10 ஆண்டுகளுக்கு நீட்டித்த அரசியலமைப்பு திருத்தச் சட்டம் எது?",
+        "95th Constitutional Amendment Act, 2009", "95வது அரசியலமைப்பு திருத்தச் சட்டம், 2009",
+        "103rd Constitutional Amendment Act, 2019", "103வது அரசியலமைப்பு திருத்தச் சட்டம், 2019",
+        "104th Constitutional Amendment Act, 2020", "104வது அரசியலமைப்பு திருத்தச் சட்டம், 2020",
+        "105th Constitutional Amendment Act, 2021", "105வது அரசியலமைப்பு திருத்தச் சட்டம், 2021",
+        "C",
+        "The 104th Constitutional Amendment Act, 2020 amended Article 334 to extend SC/ST seat reservation in Lok Sabha and State Legislative Assemblies by 10 years up to January 25, 2030.",
+        "104வது அரசியலமைப்பு திருத்தச் சட்டம், 2020 சரத்து 334 ஐத் திருத்தி மக்களவை மற்றும் சட்டமன்றங்களில் எஸ்சி/எஸ்டி இடஒதுக்கீட்டை 2030 ஜனவரி 25 வரை 10 ஆண்டுகளுக்கு நீட்டித்தது.",
+        "Option A is incorrect; 95th CA (2009) extended SC/ST reservation till 2020.", "விருப்பம் A தவறானது; 95வது திருத்தம் 2020 வரை நீட்டித்தது.",
+        "Option B is incorrect; 103rd CA (2019) introduced 10% EWS quota.", "விருப்பம் B தவறானது; 103வது திருத்தம் 10% EWS இடஒதுக்கீடு பற்றியது.",
+        "Option C is correct because 104th CA 2020 extended SC/ST reservation to 2030.", "விருப்பம் C சரியானது, ஏனெனில் 104வது திருத்தம் 2020 எஸ்சி/எஸ்டி இடஒதுக்கீட்டை 2030 வரை நீட்டித்தது.",
+        "Option D is incorrect; 105th CA (2021) restored state power to identify SEBCs.", "விருப்பம் D தவறானது; 105வது திருத்தம் மாநில SEBC பட்டியல் அதிகாரம் பற்றியது.",
+        "Article 334 originally provided SC/ST reservation for only 10 years from 1950, which has been extended every 10 years by amendments.",
+        "சரத்து 334 ஆரம்பத்தில் 1950 முதல் 10 ஆண்டுகளுக்கு மட்டுமே இடஒதுக்கீடு வழங்கியது, அது ஒவ்வொரு 10 ஆண்டுகளுக்கும் திருத்தங்கள் மூலம் நீட்டிக்கப்பட்டு வருகிறது.",
+        "104th CA discontinued Anglo-Indian nominated seats under Articles 331 and 333.",
+        "104வது திருத்தம் ஆங்கிலோ-இந்தியர் நியமன இடங்களை ரத்து செய்தது.",
+        "Remembering", "High", ["104th Amendment", "SC ST Reservation 2030"], "Part 2"
+    )
+
+    # Q024 - Correct: D
+    add_q(
+        "CZ_AM_MD_024",
+        "The Goods and Services Tax (GST) Council was created under which newly inserted Article of the Indian Constitution?",
+        "சரக்கு மற்றும் சேவை வரி (GST) கவுன்சில் இந்திய அரசியலமைப்பில் புதிதாகச் சேர்க்கப்பட்ட எந்த சரத்தின் கீழ் உருவாக்கப்பட்டது?",
+        "Article 246A", "சரத்து 246A",
+        "Article 269A", "சரத்து 269A",
+        "Article 270A", "சரத்து 270A",
+        "Article 279A", "சரத்து 279A",
+        "D",
+        "The 101st Constitutional Amendment Act, 2016 inserted Article 279A, which empowered the President to constitute the Goods and Services Tax (GST) Council within 60 days of commencement.",
+        "101வது அரசியலமைப்பு திருத்தச் சட்டம், 2016 சரத்து 279A ஐச் சேர்த்தது. இது GST கவுன்சிலை அமைக்க குடியரசுத் தலைவருக்கு அதிகாரமளித்தது.",
+        "Option A is incorrect; Article 246A gives special power to Parliament and State Assemblies to make laws on GST.", "விருப்பம் A தவறானது; சரத்து 246A ஜிஎஸ்டி சட்டம் இயற்றும் சிறப்பு அதிகாரத்தை அளிக்கிறது.",
+        "Option B is incorrect; Article 269A deals with levy and collection of Goods and Services Tax in course of Inter-State trade or commerce.", "விருப்பம் B தவறானது; சரத்து 269A மாநிலங்களுக்கு இடையேயான ஜிஎஸ்டி வசூல் பற்றியது.",
+        "Option C is incorrect; Article 270A does not exist in the Constitution.", "விருப்பம் C தவறானது; சரத்து 270A அரசியலமைப்பில் இல்லை.",
+        "Option D is correct because Article 279A explicitly established the GST Council.", "விருப்பம் D சரியானது, ஏனெனில் சரத்து 279A ஜிஎஸ்டி கவுன்சிலை உருவாக்கியது.",
+        "GST Council is chaired by the Union Finance Minister and includes Union Minister of State for Finance and State Finance Ministers.",
+        "ஜிஎஸ்டி கவுன்சில் மத்திய நிதி அமைச்சர் தலைமையில் இயங்குகிறது.",
+        "Decisions in GST Council are taken by a 3/4th weighted majority (Union 1/3rd weightage, States 2/3rd weightage).",
+        "ஜிஎஸ்டி கவுன்சில் முடிவுகள் 3/4 பங்கு வாக்களிப்பு எடையின் அடிப்படையில் எடுக்கப்படுகின்றன (மத்திய அரசு 1/3, மாநிலங்கள் 2/3 எடை).",
+        "Remembering", "High", ["GST Council", "Article 279A", "101st Amendment"], "Part 2"
+    )
+
+    # Q025 - Correct: A
+    add_q(
+        "CZ_AM_MD_025",
+        "In Shankari Prasad v. Union of India (1951), what was the Supreme Court's stance regarding Parliament's power to amend Fundamental Rights under Article 368?",
+        "சங்கரி பிரசாத் எதிர் இந்திய யூனியன் (1951) வழக்கில் சரத்து 368 இன் கீழ் அடிப்படை உரிமைகளைத் திருத்தும் நாடாளுமன்றத்தின் அதிகாரம் பற்றி உச்ச நீதிமன்றத்தின் நிலைப்பாடு என்ன?",
+        "Parliament CAN amend Fundamental Rights under Article 368", "சரத்து 368 இன் கீழ் அடிப்படை உரிமைகளை நாடாளுமன்றம் திருத்த முடியும்",
+        "Parliament CANNOT amend Fundamental Rights under any circumstances", "எந்தச் சூழ்நிலையிலும் அடிப்படை உரிமைகளை நாடாளுமன்றம் திருத்த முடியாது",
+        "Fundamental Rights can be amended only by a Constituent Assembly", "அரசியலமைப்பு நிர்ணய சபையால் மட்டுமே அடிப்படை உரிமைகளைத் திருத்த முடியும்",
+        "Article 368 is subject to Judicial Review under Article 13(2)", "சரத்து 368 சரத்து 13(2) இன் கீழான நீதித்துறை மறுாய்விற்கு உட்பட்டது",
+        "A",
+        "In Shankari Prasad (1951), a 5-judge Supreme Court bench unanimously held that Parliament's amending power under Art 368 includes the power to amend Fundamental Rights; 'law' in Art 13(2) refers only to ordinary law, not constitutional amendment law.",
+        "சங்கரி பிரசாத் (1951) வழக்கில் 5 நீதிபதிகள் அமர்வு, சரத்து 368 இன் கீழான நாடாளுமன்றத் திருத்த அதிகாரம் அடிப்படை உரிமைகளையும் திருத்துவதை உள்ளடக்கியது என்றும், சரத்து 13(2) இல் உள்ள 'சட்டம்' என்பது சாதாரண சட்டத்தையே குறிக்கும் என்றும் தீர்ப்பளித்தது.",
+        "Option A is correct because Shankari Prasad upheld Parliament's full power to amend Part III.", "விருப்பம் A சரியானது, ஏனெனில் சங்கரி பிரசாத் வழக்கு பகுதி III ஐ திருத்தும் நாடாளுமன்ற அதிகாரத்தை உறுதி செய்தது.",
+        "Option B is incorrect because that was the later ruling in Golaknath (1967), not Shankari Prasad.", "விருப்பம் B தவறானது, ஏனெனில் அது பின்னாளைய கோலக்நாத் வழக்குத் தீர்ப்பு.",
+        "Option C is incorrect because Shankari Prasad rejected the argument that a separate Constituent Assembly is needed.", "விருப்பம் C தவறானது, ஏனெனில் தனியான நிர்ணய சபை தேவை என்ற வாதத்தை சங்கரி பிரசாத் வழக்கு நிராகரித்தது.",
+        "Option D is incorrect because Shankari Prasad held Art 13(2) does not apply to Art 368 amendments.", "விருப்பம் D தவறானது, ஏனெனில் சரத்து 13(2) திருத்தங்களுக்குப் பொருந்தாது என இவ்வழக்குக் கூறியது.",
+        "Shankari Prasad verdict was upheld in Sajjan Singh v. State of Rajasthan (1965) before being reversed in Golaknath (1967).",
+        "சங்கரி பிரசாத் தீர்ப்பு சஜ்ஜன் சிங் (1965) வழக்கில் உறுதி செய்யப்பட்டது; பின்னர் கோலக்நாத் (1967) வழக்கில் மாற்றப்பட்டது.",
+        "This case challenged the constitutionality of the 1st Constitutional Amendment Act, 1951.",
+        "இவ்வழக்கு 1வது அரசியலமைப்பு திருத்தச் சட்டம் 1951 இன் செல்லுபடியாகும் தன்மையை எதிர்த்துத் தொடரப்பட்டது.",
+        "Understanding", "High", ["Shankari Prasad Case", "Parliament Amending Power"], "Part 3"
+    )
+
+    # Q026 - Correct: B
+    add_q(
+        "CZ_AM_MD_026",
+        "Which Constitutional Amendment Act added 10 Fundamental Duties for citizens under Article 51A upon the recommendation of the Swaran Singh Committee?",
+        "ஸ்வரண் சிங் குழுவின் பரிந்துரையின் பேரில் சரத்து 51A இன் கீழ் குடிமக்களுக்கு 10 அடிப்படை கடமைகளைச் சேர்த்த அரசியலமைப்பு திருத்தச் சட்டம் எது?",
+        "24th Constitutional Amendment Act, 1971", "24வது அரசியலமைப்பு திருத்தச் சட்டம், 1971",
+        "42nd Constitutional Amendment Act, 1976", "42வது அரசியலமைப்பு திருத்தச் சட்டம், 1976",
+        "44th Constitutional Amendment Act, 1978", "44வது அரசியலமைப்பு திருத்தச் சட்டம், 1978",
+        "86th Constitutional Amendment Act, 2002", "86வது அரசியலமைப்பு திருத்தச் சட்டம், 2002",
+        "B",
+        "The 42nd Constitutional Amendment Act, 1976 inserted Part IV-A (Article 51A) containing 10 Fundamental Duties based on Swaran Singh Committee recommendations.",
+        "42வது அரசியலமைப்பு திருத்தச் சட்டம், 1976 ஸ்வரண் சிங் குழு பரிந்துரைகளின் படி 10 அடிப்படை கடமைகளைக் கொண்ட பகுதி IV-A (சரத்து 51A) ஐச் சேர்த்தது.",
+        "Option A is incorrect; 24th Amendment affirmed amending power under Art 368.", "விருப்பம் A தவறானது; 24வது திருத்தம் திருத்த அதிகாரம் பற்றியது.",
+        "Option B is correct because 42nd CA 1976 introduced Part IV-A and 10 Fundamental Duties.", "விருப்பம் B சரியானது, ஏனெனில் 42வது திருத்தம் 1976 பகுதி IV-A மற்றும் 10 கடமைகளை அறிமுகப்படுத்தியது.",
+        "Option C is incorrect; 44th CA reversed emergency excesses.", "விருப்பம் C தவறானது; 44வது திருத்தம் அவசரநிலை சீரமைப்பு பற்றியது.",
+        "Option D is incorrect; 86th CA (2002) added the 11th Fundamental Duty (Art 51A(k)).", "விருப்பம் D தவறானது; 86வது திருத்தம் 11வது கடமையைச் சேர்த்தது.",
+        "Swaran Singh Committee recommended 8 Fundamental Duties, but 42nd CA enacted 10 Fundamental Duties.",
+        "ஸ்வரண் சிங் குழு 8 கடமைகளைப் பரிந்துரைத்தது, ஆனால் 42வது திருத்தம் 10 கடமைகளை இயற்றியது.",
+        "Fundamental Duties were inspired by the Constitution of the erstwhile USSR.",
+        "அடிப்படை கடமைகள் முன்னாள் சோவியத் யூனியன் (USSR) அரசியலமைப்பிலிருந்து பெறப்பட்டன.",
+        "Remembering", "High", ["42nd Amendment", "Fundamental Duties", "Swaran Singh Committee"], "Part 2"
+    )
+
+    # Q027 - Correct: C
+    add_q(
+        "CZ_AM_MD_027",
+        "Which Constitutional Amendment Act provided that the total number of Ministers, including the Prime Minister, in the Union Council of Ministers shall NOT exceed 15% of the total strength of the Lok Sabha?",
+        "மத்திய அமைச்சரவையில் பிரதமர் உட்பட மொத்த அமைச்சர்களின் எண்ணிக்கை மக்களவையின் மொத்த உறுப்பினர்களில் 15% க்கு மிகாமல் இருக்க வேண்டும் என எந்த அரசியலமைப்பு திருத்தச் சட்டம் உத்தரவிட்டது?",
+        "84th Constitutional Amendment Act, 2001", "84வது அரசியலமைப்பு திருத்தச் சட்டம், 2001",
+        "86th Constitutional Amendment Act, 2002", "86வது அரசியலமைப்பு திருத்தச் சட்டம், 2002",
+        "91st Constitutional Amendment Act, 2003", "91வது அரசியலமைப்பு திருத்தச் சட்டம், 2003",
+        "93rd Constitutional Amendment Act, 2005", "93வது அரசியலமைப்பு திருத்தச் சட்டம், 2005",
+        "C",
+        "The 91st Constitutional Amendment Act, 2003 inserted Article 75(1A) establishing a 15% ceiling on the size of Union Council of Ministers relative to total Lok Sabha membership.",
+        "91வது அரசியலமைப்பு திருத்தச் சட்டம், 2003 சரத்து 75(1A) ஐச் சேர்த்து மக்களவை மொத்த எண்ணிக்கையில் 15% மட்டுமே மத்திய அமைச்சரவை இருக்க வேண்டும் என உச்சவரம்பு விதித்தது.",
+        "Option A is incorrect; 84th CA froze seat delimitation till 2026.", "விருப்பம் A தவறானது; 84வது திருத்தம் தொகுதி முடக்கம் பற்றியது.",
+        "Option B is incorrect; 86th CA related to Right to Education.", "விருப்பம் B தவறானது; 86வது திருத்தம் கல்வி உரிமை பற்றியது.",
+        "Option C is correct because 91st CA 2003 inserted Articles 75(1A) and 164(1A) capping cabinet size at 15%.", "விருப்பம் C சரியானது, ஏனெனில் 91வது திருத்தம் 2003 15% அமைச்சரவை வரம்பை நிர்ணயித்தது.",
+        "Option D is incorrect; 93rd CA related to OBC reservation in educational institutions.", "விருப்பம் D தவறானது; 93வது திருத்தம் OBC இடஒதுக்கீடு பற்றியது.",
+        "91st CA also added Article 164(1A) for States (15% limit, minimum 12 ministers).",
+        "91வது திருத்தம் மாநிலங்களுக்காக சரத்து 164(1A) ஐயும் சேர்த்தது (15% வரம்பு, குறைந்தபட்சம் 12 அமைச்சர்கள்).",
+        "It also omitted the 1/3 split provision in the 10th Schedule to curb defection misuse.",
+        "கட்சித் தாவல் சட்டத்தில் 1/3 பிளவு விதிவிலக்கையும் இது நீக்கியது.",
+        "Remembering", "High", ["91st Amendment", "Council of Ministers 15% Ceiling"], "Part 2"
+    )
+
+    # Q028 - Correct: D
+    add_q(
+        "CZ_AM_MD_028",
+        "The 73rd Constitutional Amendment Act, 1992 added which Part and Schedule to the Constitution of India?",
+        "73வது அரசியலமைப்பு திருத்தச் சட்டம், 1992 இந்திய அரசியலமைப்பில் எந்த பகுதி மற்றும் அட்டவணையைச் சேர்த்தது?",
+        "Part IX and 10th Schedule", "பகுதி IX மற்றும் 10வது அட்டவணை",
+        "Part IX-A and 11th Schedule", "பகுதி IX-A மற்றும் 11வது அட்டவணை",
+        "Part IX-A and 12th Schedule", "பகுதி IX-A மற்றும் 12வது அட்டவணை",
+        "Part IX and 11th Schedule", "பகுதி IX மற்றும் 11வது அட்டவணை",
+        "D",
+        "The 73rd CA 1992 added Part IX (Articles 243 to 243O) entitled 'The Panchayats' and the 11th Schedule containing 29 functional items.",
+        "73வது திருத்தம் 1992 பகுதி IX ('பஞ்சாயத்துகள்') மற்றும் 29 செயல்பாடுகளைக் கொண்ட 11வது அட்டவணையைச் சேர்த்தது.",
+        "Option A is incorrect; 10th Schedule is Anti-Defection Law (52nd CA).", "விருப்பம் A தவறானது; 10வது அட்டவணை கட்சித் தாவல் சட்டம்.",
+        "Option B is incorrect; Part IX-A is Municipalities.", "விருப்பம் B தவறானது; பகுதி IX-A நகராட்சிகள்.",
+        "Option C is incorrect; Part IX-A and 12th Schedule are for Municipalities (74th CA).", "விருப்பம் C தவறானது; பகுதி IX-A மற்றும் 12வது அட்டவணை நகராட்சிகளுக்கானது (74வது திருத்தம்).",
+        "Option D is correct because 73rd Amendment Act 1992 introduced Part IX and 11th Schedule for Panchayati Raj.", "விருப்பம் D சரியானது, ஏனெனில் 73வது திருத்தச் சட்டம் 1992 பகுதி IX மற்றும் 11வது அட்டவணையை பஞ்சாயத்து ராஜ் அமைப்பிற்காகச் சேர்த்தது.",
+        "73rd CA provides for a three-tier system of Panchayati Raj at village, intermediate, and district levels.",
+        "73வது திருத்தம் கிராமம், இடைநிலை மற்றும் மாவட்ட நிலைகளில் மூன்றடுக்கு பஞ்சாயத்து அமைப்பிற்கு வழிவகுக்கிறது.",
+        "It mandates 1/3rd reservation for women in Panchayats at all levels (Article 243D(3)).",
+        "அனைத்து நிலைகளிலும் பெண்களுக்கு 1/3 பங்கு இடஒதுக்கீட்டை இது கட்டாயமாக்குகிறது (சரத்து 243D(3)).",
+        "Remembering", "High", ["73rd Amendment", "Part IX", "11th Schedule"], "Part 2"
+    )
+
+    # Q029 - Correct: A
+    add_q(
+        "CZ_AM_MD_029",
+        "Which Constitutional Amendment Act added Article 15(6) and Article 16(6) to provide reservation for Economically Weaker Sections (EWS)?",
+        "பொருளாதாரத்தில் பின்தங்கிய பிரிவினருக்கு (EWS) இடஒதுக்கீடு வழங்க சரத்து 15(6) மற்றும் 16(6) ஐச் சேர்த்த அரசியலமைப்பு திருத்தச் சட்டம் எது?",
+        "103rd Constitutional Amendment Act, 2019", "103வது அரசியலமைப்பு திருத்தச் சட்டம், 2019",
+        "101st Constitutional Amendment Act, 2016", "101வது அரசியலமைப்பு திருத்தச் சட்டம், 2016",
+        "102nd Constitutional Amendment Act, 2018", "102வது அரசியலமைப்பு திருத்தச் சட்டம், 2018",
+        "104th Constitutional Amendment Act, 2020", "104வது அரசியலமைப்பு திருத்தச் சட்டம், 2020",
+        "A",
+        "The 103rd Constitutional Amendment Act, 2019 inserted Article 15(6) and Article 16(6) enabling up to 10% reservation for Economically Weaker Sections (EWS) in admissions and public employment.",
+        "103வது அரசியலமைப்பு திருத்தச் சட்டம், 2019 சேர்க்கப்பட்ட சரத்துகள் 15(6) மற்றும் 16(6) மூலம் EWS பிரிவினருக்கு 10% வரை இடஒதுக்கீடு வழங்க வழிசெய்தது.",
+        "Option A is correct because 103rd CA 2019 inserted Article 15(6) and Article 16(6).", "விருப்பம் A சரியானது, ஏனெனில் 103வது திருத்தம் 2019 சரத்துகள் 15(6) மற்றும் 16(6) ஐச் சேர்த்தது.",
+        "Option B is incorrect; 101st CA related to GST.", "விருப்பம் B தவறானது; 101வது திருத்தம் ஜிஎஸ்டி பற்றியது.",
+        "Option C is incorrect; 102nd CA gave constitutional status to NCBC.", "விருப்பம் C தவறானது; 102வது திருத்தம் NCBC அந்தஸ்து பற்றியது.",
+        "Option D is incorrect; 104th CA extended SC/ST reservations.", "விருப்பம் D தவறானது; 104வது திருத்தம் எஸ்சி/எஸ்டி இடஒதுக்கீடு நீட்டிப்பு பற்றியது.",
+        "EWS reservation applies to individuals not covered under existing SC, ST, and OBC reservation categories.",
+        "ஏற்கனவே இடஒதுக்கீடு பெறாத பொதுப் பிரிவைச் சேர்ந்த பொருளாதாரத்தில் பின்தங்கியவர்களுக்கு மட்டுமே EWS இடஒதுக்கீடு பொருந்தும்.",
+        "Family annual income ceiling for EWS eligibility was set at Rs 8 Lakh per annum.",
+        "EWS தகுதிக்கான குடும்ப ஆண்டு வருமான உச்சவரம்பு ரூ. 8 லட்சம் என நிர்ணயிக்கப்பட்டது.",
+        "Remembering", "High", ["103rd Amendment", "Article 15(6) 16(6)", "EWS Quota"], "Part 2"
+    )
+
+    # Q030 - Correct: B
+    add_q(
+        "CZ_AM_MD_030",
+        "In Kesavananda Bharati v. State of Kerala (1973), what was the voting strength and ratio of the Supreme Court bench that delivered the Basic Structure verdict?",
+        "கேசவாநந்த பாரதி எதிர் கேரள அரசு (1973) வழக்கில் அடிப்படை அமைப்புக் கோட்பாட்டுத் தீர்ப்பை வழங்கிய உச்ச நீதிமன்ற அமர்வின் மொத்த நீதிபதிகள் எண்ணிக்கை மற்றும் பெரும்பான்மை விகிதம் என்ன?",
+        "11 judges, 6:5 ratio", "11 நீதிபதிகள், 6:5 விகிதம்",
+        "13 judges, 7:6 ratio", "13 நீதிபதிகள், 7:6 விகிதம்",
+        "9 judges, 5:4 ratio", "9 நீதிபதிகள், 5:4 விகிதம்",
+        "7 judges, 4:3 ratio", "7 நீதிபதிகள், 4:3 விகிதம்",
+        "B",
+        "Kesavananda Bharati (1973) was heard by a 13-judge bench, the largest in Indian judicial history, and the verdict laying down Basic Structure was delivered by a 7:6 majority led by Chief Justice S.M. Sikri.",
+        "கேசவாநந்த பாரதி (1973) வழக்கு இந்திய நீதிமன்ற வரலாற்றிலேயே மிகப்பெரிய 13 நீதிபதிகள் கொண்ட அமர்வால் விசாரிக்கப்பட்டு, தலைமை நீதிபதி எஸ்.எம். சிக்ரி தலைமையில் 7:6 பெரும்பான்மையில் தீர்ப்பளிக்கப்பட்டது.",
+        "Option A is incorrect; 11 judges in 6:5 ratio was the Golaknath bench (1967).", "விருப்பம் A தவறானது; 11 நீதிபதிகள் 6:5 விகிதம் கோலக்நாத் வழக்கு (1967).",
+        "Option B is correct because Kesavananda Bharati was decided by 13 judges in 7:6 ratio on April 24, 1973.", "விருப்பம் B சரியானது, ஏனெனில் கேசவாநந்த பாரதி வழக்கு 13 நீதிபதிகள் அமர்வில் 7:6 விகிதத்தில் தீர்ப்பளிக்கப்பட்டது.",
+        "Option C is incorrect; 9 judges bench was in I.R. Coelho (2007) and Indra Sawhney (1992).", "விருப்பம் C தவறானது; 9 நீதிபதிகள் அமர்வு ஐ.ஆர். கொஹெலோ மற்றும் இந்திரா சாவ்னி வழக்குகள்.",
+        "Option D is incorrect; 7 judges bench was in L. Chandra Kumar (1997).", "விருப்பம் D தவறானது; 7 நீதிபதிகள் அமர்வு எல். சந்திர குமார் வழக்கு.",
+        "Chief Justice S.M. Sikri retired on April 25, 1973, one day after delivering the historic Kesavananda Bharati judgment.",
+        "வரலாற்றுச் சிறப்புமிக்க இத்தீர்ப்பை வழங்கிய மறுநாளே தலைமை நீதிபதி எஸ்.எம். சிக்ரி பணி ஓய்வு பெற்றார்.",
+        "The judgment upheld 24th CA 1971 while establishing the Basic Structure doctrine limitation on Art 368.",
+        "இத்தீர்ப்பு 24வது திருத்தத்தை உறுதி செய்த அதே வேளையில் சரத்து 368 அதிகாரத்திற்கு அடிப்படை அமைப்பு வரம்பை விதித்தது.",
+        "Understanding", "High", ["Kesavananda Bharati Bench", "13 Judges 7-6"], "Part 3"
+    )
+
+    # Q031 - Correct: C
+    add_q(
+        "CZ_AM_MD_031",
+        "Which Constitutional Amendment Act added Sindhi as the 15th official language in the 8th Schedule of the Constitution?",
+        "8வது அட்டவணையில் சிந்தி மொழியை 15வது அதிகாரப்பூர்வ மொழியாகச் சேர்த்த அரசியலமைப்பு திருத்தச் சட்டம் எது?",
+        "14th Constitutional Amendment Act, 1962", "14வது அரசியலமைப்பு திருத்தச் சட்டம், 1962",
+        "18th Constitutional Amendment Act, 1966", "18வது அரசியலமைப்பு திருத்தச் சட்டம், 1966",
+        "21st Constitutional Amendment Act, 1967", "21வது அரசியலமைப்பு திருத்தச் சட்டம், 1967",
+        "71st Constitutional Amendment Act, 1992", "71வது அரசியலமைப்பு திருத்தச் சட்டம், 1992",
+        "C",
+        "The 21st Constitutional Amendment Act, 1967 added Sindhi as the 15th language in the 8th Schedule of the Constitution.",
+        "21வது அரசியலமைப்பு திருத்தச் சட்டம், 1967 சிந்தி மொழியை 8வது அட்டவணையில் 15வது மொழியாகச் சேர்த்தது.",
+        "Option A is incorrect; 14th CA added Puducherry UT.", "விருப்பம் A தவறானது; 14வது திருத்தம் புதுச்சேரியைச் சேர்த்தது.",
+        "Option B is incorrect; 18th CA clarified Article 3 state reorganisation power.", "விருப்பம் B தவறானது; 18வது திருத்தம் சரத்து 3 ஐத் தெளிவுபடுத்தியது.",
+        "Option C is correct because 21st CA 1967 added Sindhi as the 15th language.", "விருப்பம் C சரியானது, ஏனெனில் 21வது திருத்தம் 1967 சிந்தியை 15வது மொழியாகச் சேர்த்தது.",
+        "Option D is incorrect; 71st CA 1992 added Konkani, Manipuri, Nepali.", "விருப்பம் D தவறானது; 71வது திருத்தம் கொங்கணி, மணிப்பூரி, நேபாளியைச் சேர்த்தது.",
+        "Original Constitution adopted in 1950 had 14 languages in the 8th Schedule.",
+        "1950 இல் ஏற்றுக்கொள்ளப்பட்ட மூல அரசியலமைப்பின் 8வது அட்டவணையில் 14 மொழிகள் மட்டுமே இருந்தன.",
+        "Sindhi was the first language added to the 8th Schedule post-independence.",
+        "சுதந்திரத்திற்குப் பின் 8வது அட்டவணையில் சேர்க்கப்பட்ட முதல் மொழி சிந்தி ஆகும்.",
+        "Remembering", "High", ["21st Amendment", "Sindhi Language", "8th Schedule"], "Part 2"
+    )
+
+    # Q032 - Correct: D
+    add_q(
+        "CZ_AM_MD_032",
+        "Which Constitutional Amendment Act introduced Article 31A and Article 31B alongside the 9th Schedule to protect land reform laws from fundamental rights challenge?",
+        "நில சீர்திருத்தச் சட்டங்களை அடிப்படை உரிமைகள் சவாலிலிருந்து பாதுகாக்க 9வது அட்டவணையுடன் சேர்த்து சரத்துகள் 31A மற்றும் 31B ஐ அறிமுகப்படுத்திய அரசியலமைப்பு திருத்தச் சட்டம் எது?",
+        "4th Constitutional Amendment Act, 1955", "4வது அரசியலமைப்பு திருத்தச் சட்டம், 1955",
+        "7th Constitutional Amendment Act, 1956", "7வது அரசியலமைப்பு திருத்தச் சட்டம், 1956",
+        "17th Constitutional Amendment Act, 1964", "17வது அரசியலமைப்பு திருத்தச் சட்டம், 1964",
+        "1st Constitutional Amendment Act, 1951", "1வது அரசியலமைப்பு திருத்தச் சட்டம், 1951",
+        "D",
+        "The 1st Constitutional Amendment Act, 1951 inserted Article 31A (saving of laws providing for acquisition of estates), Article 31B (validation of certain Acts and Regulations), and 9th Schedule.",
+        "1வது அரசியலமைப்பு திருத்தச் சட்டம், 1951 சரத்து 31A, சரத்து 31B மற்றும் 9வது அட்டவணையைச் சேர்த்தது.",
+        "Option A is incorrect; 4th CA (1955) amended Art 31(2) regarding adequacy of compensation.", "விருப்பம் A தவறானது; 4வது திருத்தம் இழப்பீட்டுத் தொகை பற்றியது.",
+        "Option B is incorrect; 7th CA (1956) reorganised states.", "விருப்பம் B தவறானது; 7வது திருத்தம் மாநிலங்கள் மறுசீரமைப்பு பற்றியது.",
+        "Option C is incorrect; 17th CA (1964) expanded 9th Schedule by adding 44 land reform acts.", "விருப்பம் C தவறானது; 17வது திருத்தம் 9வது அட்டவணையை விரிவுபடுத்தியது.",
+        "Option D is correct because 1st CA 1951 inserted Articles 31A, 31B, and 9th Schedule.", "விருப்பம் D சரியானது, ஏனெனில் 1வது திருத்தம் 1951 சரத்துகள் 31A, 31B மற்றும் 9வது அட்டவணையைச் சேர்த்தது.",
+        "Article 31B creates a blanket constitutional immunity for laws listed in the 9th Schedule from Part III challenges.",
+        "சரத்து 31B 9வது அட்டவணையில் உள்ள சட்டங்களுக்குப் பகுதி III சவால்களிலிருந்து அரசியலமைப்புப் பாதுகாப்பு அளிக்கிறது.",
+        "1st CA was enacted by the Provisional Parliament before the first general elections of 1951-52.",
+        "1வது திருத்தம் 1951-52 முதல் பொதுத் தேர்தலுக்கு முன் தற்காலிக நாடாளுமன்றத்தால் இயற்றப்பட்டது.",
+        "Remembering", "High", ["1st Amendment", "Article 31A 31B", "9th Schedule"], "Part 2"
+    )
+
+    # Q033 - Correct: A
+    add_q(
+        "CZ_AM_MD_033",
+        "Which Constitutional Amendment Act conferred full statehood on Nagaland and inserted Article 371A providing special constitutional provisions for Nagaland?",
+        "நாகாலாந்திற்கு முழு மாநில அந்தஸ்து வழங்கி, நாகாலாந்திற்கான சிறப்பு அரசியலமைப்பு விதிகளை வழங்கும் சரத்து 371A ஐச் சேர்த்த அரசியலமைப்பு திருத்தச் சட்டம் எது?",
+        "13th Constitutional Amendment Act, 1962", "13வது அரசியலமைப்பு திருத்தச் சட்டம், 1962",
+        "14th Constitutional Amendment Act, 1962", "14வது அரசியலமைப்பு திருத்தச் சட்டம், 1962",
+        "27th Constitutional Amendment Act, 1971", "27வது அரசியலமைப்பு திருத்தச் சட்டம், 1971",
+        "36th Constitutional Amendment Act, 1975", "36வது அரசியலமைப்பு திருத்தச் சட்டம், 1975",
+        "A",
+        "The 13th Constitutional Amendment Act, 1962 gave full statehood to Nagaland (16th State) and inserted Article 371A protecting Naga customary law and land rights.",
+        "13வது அரசியலமைப்பு திருத்தச் சட்டம், 1962 நாகாலாந்திற்கு (16வது மாநிலம்) முழு மாநில அந்தஸ்து வழங்கி, நாகா மரபுச் சட்டங்களைப் பாதுகாக்கும் சரத்து 371A ஐச் சேர்த்தது.",
+        "Option A is correct because 13th CA 1962 created Article 371A for Nagaland.", "விருப்பம் A சரியானது, ஏனெனில் 13வது திருத்தம் 1962 நாகாலாந்திற்காக சரத்து 371A ஐ உருவாக்கியது.",
+        "Option B is incorrect; 14th CA added Puducherry UT.", "விருப்பம் B தவறானது; 14வது திருத்தம் புதுச்சேரியைச் சேர்த்தது.",
+        "Option C is incorrect; 27th CA provided UT status to Manipur and Mizoram.", "விருப்பம் C தவறானது; 27வது திருத்தம் மணிப்பூர், மிசோரம் யூனியன் பிரதேசங்கள் பற்றியது.",
+        "Option D is incorrect; 36th CA conferred statehood on Sikkim (Article 371F).", "விருப்பம் D தவறானது; 36வது திருத்தம் சிக்கிம் மாநில அந்தஸ்து பற்றியது.",
+        "Article 371A mandates that no Act of Parliament respecting Naga religious practices, customary law, or land ownership shall apply to Nagaland unless the State Assembly so decides.",
+        "சரத்து 371A நாகா மத நடைமுறைகள், மரபுச் சட்டங்கள் மற்றும் நில உரிமை தொடர்பான நாடாளுமன்ற சட்டங்கள் நாகாலாந்து சட்டமன்றம் ஒப்புதல் அளித்தால் ஒழிய அங்கே செல்லாது எனக் கூறுகிறது.",
+        "Nagaland became the 16th state of the Indian Union on December 1, 1963.",
+        "நாகாலாந்து 1963 டிசம்பர் 1 இல் இந்திய யூனியனின் 16வது மாநிலமானது.",
+        "Remembering", "High", ["13th Amendment", "Nagaland", "Article 371A"], "Part 2"
+    )
+
+    # Q034 - Correct: B
+    add_q(
+        "CZ_AM_MD_034",
+        "Which Constitutional Amendment Act deleted the requirement of quorum in Parliament (Article 100) and State Assemblies (Article 189), which was later restored by the 44th Amendment Act?",
+        "நாடாளுமன்றம் (சரத்து 100) மற்றும் சட்டமன்றங்களில் (சரத்து 189) குறைந்தபட்ச உறுப்பினர் எண்ணிக்கை (Quorum) தேவையை நீக்கி, பின்னர் 44வது திருத்தத்தால் மீண்டும் சீரமைக்கப்பட்ட அரசியலமைப்பு திருத்தச் சட்டம் எது?",
+        "38th Constitutional Amendment Act, 1975", "38வது அரசியலமைப்பு திருத்தச் சட்டம், 1975",
+        "42nd Constitutional Amendment Act, 1976", "42வது அரசியலமைப்பு திருத்தச் சட்டம், 1976",
+        "43rd Constitutional Amendment Act, 1977", "43வது அரசியலமைப்பு திருத்தச் சட்டம், 1977",
+        "52nd Constitutional Amendment Act, 1985", "52வது அரசியலமைப்பு திருத்தச் சட்டம், 1985",
+        "B",
+        "The 42nd Constitutional Amendment Act, 1976 omitted the quorum requirement of 1/10th strength in Lok Sabha and Assemblies, which was subsequently restored by the 44th CA 1978.",
+        "42வது அரசியலமைப்பு திருத்தச் சட்டம், 1976 மக்களவை மற்றும் சட்டமன்றங்களில் 1/10 Quorum தேவையை நீக்கியது. இது பின்னர் 44வது திருத்தத்தால் மீண்டும் சீரமைக்கப்பட்டது.",
+        "Option A is incorrect; 38th CA made emergency non-justiciable.", "விருப்பம் A தவறானது; 38வது திருத்தம் அவசரநிலையை நீதிமன்ற ஆய்வுக்கு அப்பாற்பட்டதாக்கியது.",
+        "Option B is correct because 42nd CA 1976 omitted the Quorum clauses in Articles 100(3) and 189(3).", "விருப்பம் B சரியானது, ஏனெனில் 42வது திருத்தம் 1976 Quorum விதியை நீக்கியது.",
+        "Option C is incorrect; 43rd CA restored Supreme Court and High Court jurisdiction over anti-national laws.", "விருப்பம் C தவறானது; 43வது திருத்தம் நீதிமன்ற அதிகாரங்களை மீட்டெடுத்தது.",
+        "Option D is incorrect; 52nd CA introduced Anti-Defection Law.", "விருப்பம் D தவறானது; 52வது திருத்தம் கட்சித் தாவல் தடைச் சட்டம்.",
+        "Quorum under Article 100(3) is 1/10th of the total number of members of the House.",
+        "சரத்து 100(3) இன் படி Quorum என்பது அவையின் மொத்த உறுப்பினர்களில் 1/10 பங்காகும்.",
+        "44th Amendment Act 1978 restored Quorum to preserve parliamentary standards.",
+        "நாடாளுமன்றத் தரங்களைப் பாதுகாக்க 44வது திருத்தச் சட்டம் 1978 Quorum விதியை மீண்டும் கொண்டு வந்தது.",
+        "Remembering", "High", ["42nd Amendment", "Quorum Omission", "Article 100"], "Part 2"
+    )
+
+    # Q035 - Correct: C
+    add_q(
+        "CZ_AM_MD_035",
+        "The 70th Constitutional Amendment Act, 1992 included the elected members of which two Union Territories in the Electoral College for the election of the President of India?",
+        "70வது அரசியலமைப்பு திருத்தச் சட்டம், 1992 எந்த இரு யூனியன் பிரதேசங்களின் தேர்ந்தெடுக்கப்பட்ட சட்டமன்ற உறுப்பினர்களை இந்தியக் குடியரசுத் தலைவர் தேர்தல் மன்றத்தில் சேர்த்தது?",
+        "Chandigarh and Puducherry", "சண்டிகர் மற்றும் புதுச்சேரி",
+        "Delhi and Chandigarh", "டெல்லி மற்றும் சண்டிகர்",
+        "National Capital Territory of Delhi and Puducherry", "டெல்லி தேசிய தலைநகர் பிரதேசம் மற்றும் புதுச்சேரி",
+        "Jammu & Kashmir and Delhi", "ஜம்மு-காஷ்மீர் மற்றும் டெல்லி",
+        "C",
+        "The 70th Constitutional Amendment Act, 1992 amended Explanation to Article 54 to include elected members of Legislative Assemblies of NCT of Delhi and UT of Puducherry in the Presidential Electoral College.",
+        "70வது அரசியலமைப்பு திருத்தச் சட்டம், 1992 சரத்து 54 இன் விளக்கத்தைத் திருத்தி, டெல்லி மற்றும் புதுச்சேரி சட்டமன்றங்களின் தேர்ந்தெடுக்கப்பட்ட உறுப்பினர்களைக் குடியரசுத் தலைவர் தேர்தல் மன்றத்தில் சேர்த்தது.",
+        "Option A is incorrect; Chandigarh has no Legislative Assembly.", "விருப்பம் A தவறானது; சண்டிகருக்கு சட்டமன்றம் இல்லை.",
+        "Option B is incorrect; Chandigarh has no assembly.", "விருப்பம் B தவறானது; சண்டிகருக்கு சட்டமன்றம் இல்லை.",
+        "Option C is correct because 70th CA 1992 explicitly added Delhi and Puducherry Assembly members to Presidential Electoral College under Article 54.", "விருப்பம் C சரியானது, ஏனெனில் 70வது திருத்தம் 1992 டெல்லி மற்றும் புதுச்சேரி உறுப்பினர்களைக் குடியரசு தலைவர் தேர்தல் மன்றத்தில் சேர்த்தது.",
+        "Option D is incorrect; J&K UT assembly inclusion was post-2019 J&K Reorganisation Act.", "விருப்பம் D தவறானது; ஜம்மு-காஷ்மீர் 2019 மறுசீரமைப்புச் சட்டத்திற்கு பிந்தையது.",
+        "Before 70th CA, only elected members of Lok Sabha, Rajya Sabha, and State Assemblies participated in Presidential elections.",
+        "70வது திருத்தத்திற்கு முன் மக்களவை, மாநிலங்களவை மற்றும் மாநில சட்டமன்ற உறுப்பினர்கள் மட்டுமே வாக்களிக்க முடியும்.",
+        "70th CA came into force on June 1, 1995.",
+        "70வது திருத்தம் 1995 ஜூன் 1 முதல் அமலுக்கு வந்தது.",
+        "Remembering", "High", ["70th Amendment", "President Electoral College", "Delhi Puducherry"], "Part 2"
+    )
+
+    # Q036 - Correct: D
+    add_q(
+        "CZ_AM_MD_036",
+        "Which Constitutional Amendment Act substituted 'Odia' for 'Oriya' in the 8th Schedule of the Constitution?",
+        "8வது அட்டவணையில் 'ஒரியா' (Oriya) என்ற சொல்லிற்குப் பதிலாக 'ஒடியா' (Odia) என மாற்றிய அரசியலமைப்பு திருத்தச் சட்டம் எது?",
+        "92nd Constitutional Amendment Act, 2003", "92வது அரசியலமைப்பு திருத்தச் சட்டம், 2003",
+        "94th Constitutional Amendment Act, 2006", "94வது அரசியலமைப்பு திருத்தச் சட்டம், 2006",
+        "95th Constitutional Amendment Act, 2009", "95வது அரசியலமைப்பு திருத்தச் சட்டம், 2009",
+        "96th Constitutional Amendment Act, 2011", "96வது அரசியலமைப்பு திருத்தச் சட்டம், 2011",
+        "D",
+        "The 96th Constitutional Amendment Act, 2011 substituted the spelling 'Odia' for 'Oriya' in the 8th Schedule of the Constitution.",
+        "96வது அரசியலமைப்பு திருத்தச் சட்டம், 2011 8வது அட்டவணையில் 'ஒரியா' என்பதற்குப் பதிலாக 'ஒடியா' என்ற உச்சரிப்பை மாற்றியது.",
+        "Option A is incorrect; 92nd CA added BDMS languages.", "விருப்பம் A தவறானது; 92வது திருத்தம் 4 மொழிகளைச் சேர்த்தது.",
+        "Option B is incorrect; 94th CA exempted Bihar from Tribal Minister requirement.", "விருப்பம் B தவறானது; 94வது திருத்தம் பீகார் பழங்குடியினர் நல அமைச்சர் விலக்கு பற்றியது.",
+        "Option C is incorrect; 95th CA extended SC/ST reservation till 2020.", "விருப்பம் C தவறானது; 95வது திருத்தம் எஸ்சி/எஸ்டி இடஒதுக்கீடு பற்றியது.",
+        "Option D is correct because 96th CA 2011 substituted 'Odia' for 'Oriya' in 8th Schedule.", "விருப்பம் D சரியானது, ஏனெனில் 96வது திருத்தம் 2011 'ஒடியா' என மாற்றியது.",
+        "State of Orissa was also renamed as 'Odisha' by Orissa (Alteration of Name) Act, 2011.",
+        "ஒரிசா மாநிலத்தின் பெயரும் ஒரிசா பெயர்ப்புச் சட்டம் 2011 இன் படி 'ஒடிசா' என மாற்றப்பட்டது.",
+        "This did not add a new language, but corrected the official spelling of an existing language.",
+        "இது புதிய மொழியைச் சேர்க்கவில்லை, மாறாக நடைமுறையில் உள்ள மொழியின் உச்சரிப்பு எழுத்துக்களைத் திருத்தியது.",
+        "Remembering", "High", ["96th Amendment", "Odia Language"], "Part 2"
+    )
+
+    # Q037 - Correct: A
+    add_q(
+        "CZ_AM_MD_037",
+        "Which Constitutional Amendment Act deleted the provisions of Article 31C added by 42nd CA which gave immunity to laws implementing ALL Directive Principles over Articles 14 and 19?",
+        "அனைத்து நெறிமுறைக் கோட்பாடுகளையும் செயல்படுத்தும் சட்டங்களுக்கு சரத்துகள் 14 மற்றும் 19 ஐ விட பாதுகாப்பு அளித்த 42வது திருத்தத்தின் சரத்து 31C விதியை எந்த வழக்கு/திருத்தப் பின்னணியில் நீதிமன்றம் ரத்து செய்தது?",
+        "Minerva Mills Case (1980)", "மினர்வா மில்ஸ் வழக்கு (1980)",
+        "Kesavananda Bharati Case (1973)", "கேசவாநந்த பாரதி வழக்கு (1973)",
+        "44th Amendment Act, 1978", "44வது திருத்தச் சட்டம், 1978",
+        "43rd Amendment Act, 1977", "43வது திருத்தச் சட்டம், 1977",
+        "A",
+        "42nd CA 1976 expanded Art 31C to cover ALL Directive Principles in Part IV. In Minerva Mills v. Union of India (1980), Supreme Court struck down this extension, holding that Fundamental Rights and DPSPs must remain in harmonious balance.",
+        "42வது திருத்தம் 1976 சரத்து 31C ஐ பகுதி IV இன் அனைத்து நெறிமுறைக் கோட்பாடுகளுக்கும் விரிவாக்கியது. மினர்வா மில்ஸ் (1980) வழக்கில் உச்ச நீதிமன்றம் இந்த விரிவாக்கத்தை ரத்து செய்தது.",
+        "Option A is correct because Minerva Mills (1980) invalidated Section 4 of 42nd CA 1976.", "விருப்பம் A சரியானது, ஏனெனில் மினர்வா மில்ஸ் வழக்கு 42வது திருத்தத்தின் பிரிவு 4 ஐ ரத்து செய்தது.",
+        "Option B is incorrect; Kesavananda Bharati (1973) upheld original Art 31C limited to Art 39(b)&(c).", "விருப்பம் B தவறானது; கேசவாநந்த பாரதி வழக்கு சரத்து 39(b)&(c) வரம்பிற்குட்பட்ட 31C ஐ உறுதி செய்தது.",
+        "Option C is incorrect; 44th CA deleted Right to Property, not Art 31C expansion.", "விருப்பம் C தவறானது; 44வது திருத்தம் சொத்துரிமையை நீக்கியது.",
+        "Option D is incorrect; 43rd CA repealed anti-national activity laws.", "விருப்பம் D தவறானது; 43வது திருத்தம் தேசவிரோத நடவடிக்கைகளை ரத்து செய்தது.",
+        "Today, Article 31C protects ONLY laws giving effect to Article 39(b) and Article 39(c), as originally enacted by 25th CA 1971.",
+        "இன்று சரத்து 31C 25வது திருத்தம் 1971 இன் படி சரத்து 39(b) மற்றும் 39(c) ஐச் செயல்படுத்தும் சட்டங்களுக்கு மட்டுமே பாதுகாப்பு அளிக்கிறது.",
+        "Harmonious relation between Part III and Part IV is a Basic Structure feature.",
+        "பகுதி III மற்றும் பகுதி IV இடையிலான இணக்கமான உறவு அடிப்படை அமைப்பின் அம்சமாகும்.",
+        "Understanding", "High", ["Minerva Mills", "Article 31C Expansion", "Harmonious Balance"], "Part 3"
+    )
+
+    # Q038 - Correct: B
+    add_q(
+        "CZ_AM_MD_038",
+        "Which Constitutional Amendment Act exempted the State of Arunachal Pradesh from making reservation for Scheduled Castes in Panchayats under Article 243D?",
+        "சரத்து 243D இன் கீழ் பஞ்சாயத்துகளில் ஆதிதிராவிடருக்கு (SC) இடஒதுக்கீடு வழங்குவதிலிருந்து அருணாச்சலப் பிரதேச மாநிலத்திற்கு விலக்களித்த அரசியலமைப்பு திருத்தச் சட்டம் எது?",
+        "80th Constitutional Amendment Act, 2000", "80வது அரசியலமைப்பு திருத்தச் சட்டம், 2000",
+        "83rd Constitutional Amendment Act, 2000", "83வது அரசியலமைப்பு திருத்தச் சட்டம், 2000",
+        "84th Constitutional Amendment Act, 2001", "84வது அரசியலமைப்பு திருத்தச் சட்டம், 2001",
+        "86th Constitutional Amendment Act, 2002", "86வது அரசியலமைப்பு திருத்தச் சட்டம், 2002",
+        "B",
+        "The 83rd Constitutional Amendment Act, 2000 inserted Article 243M(3A) providing that no reservation for SCs needs to be made in Panchayats in Arunachal Pradesh, as the state is fully tribal and has no SC population.",
+        "83வது அரசியலமைப்பு திருத்தச் சட்டம், 2000 சரத்து 243M(3A) ஐச் சேர்த்து அருணாச்சலப் பிரதேசத்தில் SC மக்கள் தொகை இல்லாததால் பஞ்சாயத்துகளில் SC இடஒதுக்கீடு தேவையில்லை என விலக்களித்தது.",
+        "Option A is incorrect; 80th CA introduced alternative tax devolution scheme.", "விருப்பம் A தவறானது; 80வது திருத்தம் மாற்று வரிப் பகிர்வு பற்றியது.",
+        "Option B is correct because 83rd CA 2000 exempted Arunachal Pradesh Panchayats from SC reservation under Art 243M(3A).", "விருப்பம் B சரியானது, ஏனெனில் 83வது திருத்தம் 2000 அருணாச்சலப் பிரதேசத்திற்கு SC இடஒதுக்கீடு விலக்கு அளித்தது.",
+        "Option C is incorrect; 84th CA froze seat delimitation till 2026.", "விருப்பம் C தவறானது; 84வது திருத்தம் தொகுதி முடக்கம் பற்றியது.",
+        "Option D is incorrect; 86th CA introduced Right to Education.", "விருப்பம் D தவறானது; 86வது திருத்தம் கல்வி உரிமை பற்றியது.",
+        "Arunachal Pradesh is populated almost entirely by Scheduled Tribes, with no indigenous SC population.",
+        "அருணாச்சலப் பிரதேசம் பழங்குடி மக்களைக் கொண்ட மாநிலமாகும்; உள்ளூர் SC மக்கள் தொகை அங்கு இல்லை.",
+        "Article 243M deals with non-application of Part IX to certain areas.",
+        "சரத்து 243M சில பகுதிகளுக்கு பகுதி IX பொருந்தாது என்பதைக் கையாள்கிறது.",
+        "Remembering", "High", ["83rd Amendment", "Arunachal Pradesh SC Exemption"], "Part 2"
+    )
+
+    # Q039 - Correct: C
+    add_q(
+        "CZ_AM_MD_039",
+        "Which Constitutional Amendment Act substituted 'armed rebellion' for 'internal disturbance' in Article 352?",
+        "சரத்து 352 இல் 'உள்நாட்டு அமைதியின்மை' என்ற சொல்லிற்குப் பதிலாக 'ஆயுதமேந்திய கிளர்ச்சி' என மாற்றிய அரசியலமைப்பு திருத்தச் சட்டம் எது?",
+        "42nd Amendment Act, 1976", "42வது திருத்தச் சட்டம், 1976",
+        "43rd Amendment Act, 1977", "43வது திருத்தச் சட்டம், 1977",
+        "44th Amendment Act, 1978", "44வது திருத்தச் சட்டம், 1978",
+        "45th Amendment Act, 1980", "45வது திருத்தச் சட்டம், 1980",
+        "C",
+        "The 44th Constitutional Amendment Act, 1978 substituted 'armed rebellion' for 'internal disturbance' in Article 352 to narrow the scope for declaring National Emergency.",
+        "44வது அரசியலமைப்பு திருத்தச் சட்டம், 1978 சரத்து 352 இல் தேசிய அவசரநிலையைக் கட்டுப்படுத்த 'உள்நாட்டு அமைதியின்மை' என்பதற்குப் பதிலாக 'ஆயுதமேந்திய கிளர்ச்சி' என மாற்றியது.",
+        "Option A is incorrect; 42nd CA expanded Emergency scope.", "விருப்பம் A தவறானது; 42வது திருத்தம் அவசரநிலை நோக்கத்தை விரிவுபடுத்தியது.",
+        "Option B is incorrect; 43rd CA repealed anti-national activity provisions.", "விருப்பம் B தவறானது; 43வது திருத்தம் தேசவிரோத சட்டங்களை நீக்கியது.",
+        "Option C is correct because 44th CA 1978 replaced internal disturbance with armed rebellion.", "விருப்பம் C சரியானது, ஏனெனில் 44வது திருத்தம் 1978 'ஆயுதமேந்திய கிளர்ச்சி' என மாற்றியது.",
+        "Option D is incorrect; 45th CA extended SC/ST reservation.", "விருப்பம் D தவறானது; 45வது திருத்தம் எஸ்சி/எஸ்டி இடஒதுக்கீடு நீட்டிப்பு பற்றியது.",
+        "Before 44th CA, National Emergency could be declared on 3 grounds: War, External Aggression, or Internal Disturbance.",
+        "44வது திருத்தத்திற்கு முன் 3 காரணங்கள் இருந்தன: போர், வெளிநாட்டு ஆக்கிரமிப்பு, உள்நாட்டு அமைதியின்மை.",
+        "44th CA replaced Internal Disturbance with Armed Rebellion.",
+        "44வது திருத்தம் உள்நாட்டு அமைதியின்மை என்பதற்குப் பதிலாக ஆயுதமேந்திய கிளர்ச்சி என மாற்றியது.",
+        "Remembering", "High", ["44th Amendment", "Armed Rebellion", "Article 352"], "Part 2"
+    )
+
+    # Q040 - Correct: D
+    add_q(
+        "CZ_AM_MD_040",
+        "Under Article 368, what is the procedure if a deadlock occurs between Lok Sabha and Rajya Sabha over a Constitutional Amendment Bill?",
+        "சரத்து 368 இன் கீழ், அரசியலமைப்பு திருத்த மசோதாவில் மக்களவை மற்றும் மாநிலங்களவை இடையே முடக்கம் ஏற்பட்டால் என்ன நடைமுறை பின்பற்றப்படும்?",
+        "President summons a Joint Sitting under Article 108", "குடியரசுத் தலைவர் சரத்து 108 இன் கீழ் கூட்டு அமர்வைக் கூட்டுவார்",
+        "The Bill is automatically referred to a Parliamentary Committee", "மசோதா தானாகவே நாடாளுமன்றக் குழுவின் பரிசீலனைக்கு அனுப்பப்படும்",
+        "The Lok Sabha decision prevails by simple majority", "மக்களவையின் முடிவு சாதாரண பெரும்பான்மையால் முடிவாகும்",
+        "The Bill lapses and fails; there is NO joint sitting provision", "மசோதா காலாவதியாகித் தோல்வியடையும்; கூட்டு அமர்விற்கு எவ்வித வழியும் இல்லை",
+        "D",
+        "If there is a disagreement between Lok Sabha and Rajya Sabha over a Constitutional Amendment Bill, the bill FAILS. There is NO provision for a Joint Sitting under Article 108 for amendment bills.",
+        "அரசியலமைப்பு திருத்த மசோதாவில் இரு அவைகளுக்கிடையே கருத்து வேறுபாடு ஏற்பட்டால் மசோதா தோல்வியடையும். கூட்டு அமர்விற்கு சரத்து 108 இல் வழிவகை இல்லை.",
+        "Option A is incorrect because Joint Sitting under Article 108 does NOT apply to Constitutional Amendment Bills.", "விருப்பம் A தவறானது, ஏனெனில் கூட்டு அமர்வு திருத்த மசோதாக்களுக்குப் பொருந்தாது.",
+        "Option B is incorrect because automatic reference to committee does not resolve legislative deadlocks.", "விருப்பம் B தவறானது, ஏனெனில் குழுவிற்கு அனுப்புவது சட்ட முடக்கத்தை நீக்காது.",
+        "Option C is incorrect because Lok Sabha cannot override Rajya Sabha on Constitutional Amendment Bills.", "விருப்பம் C தவறானது, ஏனெனில் திருத்த மசோதாவில் மக்களவை மாநிலங்களவையை விட மேலோங்க முடியாது.",
+        "Option D is correct because each House has equal powers and must pass the amendment bill separately; failure in either House kills the bill.", "விருப்பம் D சரியானது, ஏனெனில் இரு அவைகளுக்கும் சம அதிகாரம் உண்டு; ஒரு அவையில் தோற்றாலும் மசோதா காலாவதியாகும்.",
+        "Rajya Sabha enjoys equal power with Lok Sabha regarding Constitutional Amendment Bills.",
+        "அரசியலமைப்பு திருத்த மசோதாக்களில் மாநிலங்களவை மக்களவைக்கு இணையான அதிகாரத்தைக் கொண்டுள்ளது.",
+        "This reflects the federal principle where Rajya Sabha represents state interests in Parliament.",
+        "இது மாநிலங்களவை மாநிலங்களின் நலன்களைப் பிரதிநிதித்துவப்படுத்தும் கூட்டாட்சிக் கோட்பாட்டைப் பிரதிபலிக்கிறது.",
+        "Understanding", "High", ["Deadlock Procedure", "No Joint Sitting", "Article 368"], "Part 1"
+    )
+
+    # Q041 - Correct: A
+    add_q(
+        "CZ_AM_MD_041",
+        "Which Constitutional Amendment Act introduced Article 371J giving special provisions for the Hyderabad-Karnataka region (Kalyana-Karnataka)?",
+        "ஐதராபாத்-கர்நாடகா பகுதிக்கு (கல்யாண-கர்நாடகா) சிறப்பு விதிகளை வழங்கும் சரத்து 371J ஐ அறிமுகப்படுத்திய அரசியலமைப்பு திருத்தச் சட்டம் எது?",
+        "98th Constitutional Amendment Act, 2012", "98வது அரசியலமைப்பு திருத்தச் சட்டம், 2012",
+        "97th Constitutional Amendment Act, 2011", "97வது அரசியலமைப்பு திருத்தச் சட்டம், 2011",
+        "96th Constitutional Amendment Act, 2011", "96வது அரசியலமைப்பு திருத்தச் சட்டம், 2011",
+        "99th Constitutional Amendment Act, 2014", "99வது அரசியலமைப்பு திருத்தச் சட்டம், 2014",
+        "A",
+        "The 98th Constitutional Amendment Act, 2012 inserted Article 371J empowering Governor of Karnataka to take steps for development of Hyderabad-Karnataka region.",
+        "98வது அரசியலமைப்பு திருத்தச் சட்டம், 2012 சரத்து 371J ஐச் சேர்த்து ஐதராபாத்-கர்நாடகா பகுதி வளர்ச்சிக்கு கர்நாடக ஆளுநருக்கு சிறப்பு அதிகாரம் அளித்தது.",
+        "Option A is correct because 98th CA 2012 inserted Article 371J.", "விருப்பம் A சரியானது, ஏனெனில் 98வது திருத்தம் 2012 சரத்து 371J ஐச் சேர்த்தது.",
+        "Option B is incorrect; 97th CA related to Co-operatives.", "விருப்பம் B தவறானது; 97வது திருத்தம் கூட்டுறவு சங்கங்கள் பற்றியது.",
+        "Option C is incorrect; 96th CA related to Odia spelling.", "விருப்பம் C தவறானது; 96வது திருத்தம் ஒடியா மொழி பற்றியது.",
+        "Option D is incorrect; 99th CA related to NJAC.", "விருப்பம் D தவறானது; 99வது திருத்தம் NJAC பற்றியது.",
+        "Article 371J provides for setting up a development board for the region and reservation in education and state jobs for local residents.",
+        "சரத்து 371J இப்பகுதிக்கு வளர்ச்சி வாரியம் அமைக்கவும், உள்ளூர்வாசிகளுக்குக் கல்வி மற்றும் வேலைவாய்ப்பில் இடஒதுக்கீடு வழங்கவும் வழிசெய்கிறது.",
+        "Hyderabad-Karnataka region includes 6 backward districts of Karnataka: Gulbarga, Bidar, Raichur, Koppal, Yadgir, and Bellary.",
+        "இப்பகுதி கர்நாடகாவின் 6 பின்தங்கிய மாவட்டங்களை உள்ளடக்கியது.",
+        "Remembering", "High", ["98th Amendment", "Article 371J", "Hyderabad-Karnataka"], "Part 2"
+    )
+
+    # Q042 - Correct: B
+    add_q(
+        "CZ_AM_MD_042",
+        "Which Constitutional Amendment Act restored the power of State Governments to identify and maintain their own list of Socially and Educationally Backward Classes (SEBCs)?",
+        "சமூக மற்றும் கல்வியில் பின்தங்கிய வகுப்பினரின் (SEBCs) சொந்தப் பட்டியலை தயாரிக்கும் மாநில அரசுகளின் அதிகாரத்தை மீட்டெடுத்த அரசியலமைப்பு திருத்தச் சட்டம் எது?",
+        "102nd Constitutional Amendment Act, 2018", "102வது அரசியலமைப்பு திருத்தச் சட்டம், 2018",
+        "105th Constitutional Amendment Act, 2021", "105வது அரசியலமைப்பு திருத்தச் சட்டம், 2021",
+        "103rd Constitutional Amendment Act, 2019", "103வது அரசியலமைப்பு திருத்தச் சட்டம், 2019",
+        "104th Constitutional Amendment Act, 2020", "104வது அரசியலமைப்பு திருத்தச் சட்டம், 2020",
+        "B",
+        "The 105th Constitutional Amendment Act, 2021 amended Article 342A to clarify that States/UTs retain power to identify and maintain their own state lists of SEBCs.",
+        "105வது அரசியலமைப்பு திருத்தச் சட்டம், 2021 சரத்து 342A ஐத் திருத்தி, மாநிலங்கள் தங்கள் சொந்த SEBC பட்டியலைப் பராமரிக்க அதிகாரம் கொண்டுள்ளன என்பதைத் தெளிவுபடுத்தியது.",
+        "Option A is incorrect; 102nd CA 2018 inserted Art 338B & 342A which created ambiguity.", "விருப்பம் A தவறானது; 102வது திருத்தம் குழப்பத்தை உருவாக்கியது.",
+        "Option B is correct because 105th CA 2021 explicitly restored state powers over SEBC lists.", "விருப்பம் B சரியானது, ஏனெனில் 105வது திருத்தம் 2021 மாநிலங்களின் SEBC பட்டியல் அதிகாரத்தை மீட்டெடுத்தது.",
+        "Option C is incorrect; 103rd CA related to EWS quota.", "விருப்பம் C தவறானது; 103வது திருத்தம் EWS இடஒதுக்கீடு பற்றியது.",
+        "Option D is incorrect; 104th CA related to SC/ST reservations.", "விருப்பம் D தவறானது; 104வது திருத்தம் எஸ்சி/எஸ்டி இடஒதுக்கீடு பற்றியது.",
+        "105th CA was enacted to override Supreme Court's Maratha reservation verdict (Jaishri Laxmanrao Patil v. Chief Minister Maharashtra 2021).",
+        "மராத்தா இடஒதுக்கீட்டு வழக்கில் உச்ச நீதிமன்றத் தீர்ப்பைத் தொடர்ந்து 105வது திருத்தம் இயற்றப்பட்டது.",
+        "It restored federal flexibility in state-level OBC reservations across India.",
+        "இது இந்தியா முழுவதும் மாநில அளவிலான பிற்படுத்தப்பட்டோர் இடஒதுக்கீட்டில் கூட்டாட்சி நெகிழ்வுத்தன்மையை மீட்டெடுத்தது.",
+        "Remembering", "High", ["105th Amendment", "SEBC State Power Restored"], "Part 2"
+    )
+
+    # Q043 - Correct: C
+    add_q(
+        "CZ_AM_MD_043",
+        "In Sajjan Singh v. State of Rajasthan (1965), which bench of the Supreme Court upheld Parliament's power to amend Fundamental Rights under Article 368?",
+        "சஜ்ஜன் சிங் எதிர் ராஜஸ்தான் அரசு (1965) வழக்கில் உச்ச நீதிமன்றத்தின் எந்த அமர்வு சரத்து 368 இன் கீழ் அடிப்படை உரிமைகளைத் திருத்தும் நாடாளுமன்ற அதிகாரத்தை உறுதி செய்தது?",
+        "3-judge bench", "3 நீதிபதிகள் அமர்வு",
+        "7-judge bench", "7 நீதிபதிகள் அமர்வு",
+        "5-judge bench", "5 நீதிபதிகள் அமர்வு",
+        "9-judge bench", "9 நீதிபதிகள் அமர்வு",
+        "C",
+        "In Sajjan Singh (1965), a 5-judge Supreme Court bench by 3:2 majority upheld Shankari Prasad ruling, stating Parliament can amend any provision including Fundamental Rights.",
+        "சஜ்ஜன் சிங் (1965) வழக்கில் 5 நீதிபதிகள் அமர்வு 3:2 பெரும்பான்மையில் சங்கரி பிரசாத் தீர்ப்பை உறுதி செய்து, நாடாளுமன்றம் அடிப்படை உரிமைகள் உட்பட எதையும் திருத்தலாம் என்றது.",
+        "Option A is incorrect; 3-judge bench is not a full constitutional bench.", "விருப்பம் A தவறானது; 3 நீதிபதிகள் அரசியலமைப்பு அமர்வு அல்ல.",
+        "Option B is incorrect; 7 judges was L. Chandra Kumar bench.", "விருப்பம் B தவறானது; 7 நீதிபதிகள் எல். சந்திர குமார் வழக்கு.",
+        "Option C is correct because Sajjan Singh (1965) was decided by a 5-judge bench led by CJI P.B. Gajendragadkar.", "விருப்பம் C சரியானது, ஏனெனில் தலைமை நீதிபதி கஜேந்திரகட்கர் தலைமையிலான 5 நீதிபதிகள் அமர்வு இத்தீர்ப்பை வழங்கியது.",
+        "Option D is incorrect; 9 judges bench was I.R. Coelho (2007).", "விருப்பம் D தவறானது; 9 நீதிபதிகள் ஐ.ஆர். கொஹெலோ வழக்கு.",
+        "Though Sajjan Singh upheld amending power, Justice Hidayatullah and Justice Mudholkar expressed doubts about unlimited amending power, laying seeds for Basic Structure Doctrine.",
+        "சஜ்ஜன் சிங் வழக்கு திருத்த அதிகாரத்தை உறுதி செய்தாலும், நீதிபதிகள் ஹிதாயத்துல்லா மற்றும் முதோல்கர் ஆகியோர் வரம்பற்ற அதிகாரம் பற்றி ஐயங்களை எழுப்பி அடிப்படை அமைப்புக் கோட்பாட்டிற்கு வித்திட்டனர்.",
+        "Justice Mudholkar first used the phrase 'basic features' of the Constitution in his dissenting opinion.",
+        "நீதிபதி முதோல்கர் முதன்முதலில் தனது மாறுபட்ட தீர்ப்பில் 'அடிப்படை அம்சங்கள்' என்ற சொற்றொடரைப் பயன்படுத்தினார்.",
+        "Understanding", "High", ["Sajjan Singh Case", "5 Judge Bench"], "Part 3"
+    )
+
+    # Q044 - Correct: D
+    add_q(
+        "CZ_AM_MD_044",
+        "Which Constitutional Amendment Act introduced Article 371 directly providing special provisions for the States of Maharashtra and Gujarat?",
+        "மகாராஷ்டிரா மற்றும் குஜராத் மாநிலங்களுக்கு சிறப்பு விதிகளை நேரடியாக வழங்கும் சரத்து 371 ஐ அறிமுகப்படுத்திய அரசியலமைப்பு திருத்தச் சட்டம் எது?",
+        "1st Amendment Act, 1951", "1வது திருத்தச் சட்டம், 1951",
+        "5th Amendment Act, 1955", "5வது திருத்தச் சட்டம், 1955",
+        "14th Amendment Act, 1962", "14வது திருத்தச் சட்டம், 1962",
+        "7th Amendment Act, 1956", "7வது திருத்தச் சட்டம், 1956",
+        "D",
+        "The 7th Constitutional Amendment Act, 1956 inserted Article 371, providing for separate development boards for Vidarbha, Marathwada, Saurashtra, and Kutch in Maharashtra and Gujarat.",
+        "7வது அரசியலமைப்பு திருத்தச் சட்டம், 1956 சரத்து 371 ஐச் சேர்த்து மகாராஷ்டிரா மற்றும் குஜராத்தில் விதர்பா, மராத்வாடா, சௌராஷ்டிரா, கட்ச் பகுதிகளுக்குத் தனி வளர்ச்சி வாரியங்களை அமைக்க வழிசெய்தது.",
+        "Option A is incorrect; 1st CA added 9th Schedule.", "விருப்பம் A தவறானது; 1வது திருத்தம் 9வது அட்டவணையைச் சேர்த்தது.",
+        "Option B is incorrect; 5th CA dealt with state consultation time limit.", "விருப்பம் B தவறானது; 5வது திருத்தம் கருத்து கேட்பு காலக்கெடு பற்றியது.",
+        "Option C is incorrect; 14th CA added Puducherry UT.", "விருப்பம் C தவறானது; 14வது திருத்தம் புதுச்சேரியைச் சேர்த்தது.",
+        "Option D is correct because 7th CA 1956 inserted Article 371 for Maharashtra and Gujarat during states reorganisation.", "விருப்பம் D சரியானது, ஏனெனில் 7வது திருத்தம் 1956 மகாராஷ்டிரா குஜராத்திற்கு சரத்து 371 ஐச் சேர்த்தது.",
+        "Article 371 empowers President to provide for Development Boards for Vidarbha, Marathwada (Maharashtra) and Saurashtra, Kutch (Gujarat).",
+        "சரத்து 371 இப்பகுதிகளுக்கு வளர்ச்சி வாரியங்களை அமைக்க குடியரசுத் தலைவருக்கு அதிகாரமளிக்கிறது.",
+        "Subsequent Articles 371A to 371J were added later for other states (Nagaland, Assam, Manipur, AP, Sikkim, Mizoram, Arunachal, Goa, Karnataka).",
+        "பின்னர் சரத்துகள் 371A முதல் 371J வரை பிற மாநிலங்களுக்கு (நாகாலாந்து, அசாம், மணிப்பூர் போன்றவை) சேர்க்கப்பட்டன.",
+        "Remembering", "High", ["7th Amendment", "Article 371", "Maharashtra Gujarat"], "Part 2"
+    )
+
+    # Q045 - Correct: A
+    add_q(
+        "CZ_AM_MD_045",
+        "In which Constitutional Amendment Act was the term of the Lok Sabha initially increased from 5 years to 6 years during the Emergency?",
+        "நெருக்கடி நிலையின் போது மக்களவையின் பதவிக் காலம் 5 ஆண்டுகளிலிருந்து 6 ஆண்டுகளாக எந்த அரசியலமைப்பு திருத்தச் சட்டத்தின் மூலம் உயர்த்தப்பட்டது?",
+        "42nd Constitutional Amendment Act, 1976", "42வது அரசியலமைப்பு திருத்தச் சட்டம், 1976",
+        "38th Constitutional Amendment Act, 1975", "38வது அரசியலமைப்பு திருத்தச் சட்டம், 1975",
+        "44th Constitutional Amendment Act, 1978", "44வது அரசியலமைப்பு திருத்தச் சட்டம், 1978",
+        "24th Constitutional Amendment Act, 1971", "24வது அரசியலமைப்பு திருத்தச் சட்டம், 1971",
+        "A",
+        "The 42nd Constitutional Amendment Act, 1976 amended Articles 83 and 172 extending the term of Lok Sabha and State Legislative Assemblies from 5 years to 6 years.",
+        "42வது அரசியலமைப்பு திருத்தச் சட்டம், 1976 சரத்துகள் 83 மற்றும் 172 ஐத் திருத்தி மக்களவை மற்றும் சட்டமன்ற பதவிக் காலத்தை 5 லிருந்து 6 ஆண்டுகளாக உயர்த்தியது.",
+        "Option A is correct because 42nd CA 1976 extended Lok Sabha and Assembly terms to 6 years.", "விருப்பம் A சரியானது, ஏனெனில் 42வது திருத்தம் 1976 பதவிக் காலத்தை 6 ஆண்டுகளாக உயர்த்தியது.",
+        "Option B is incorrect; 38th CA made emergency declaration non-justiciable.", "விருப்பம் B தவறானது; 38வது திருத்தம் அவசரநிலை பற்றி நீதிமன்ற ஆய்வு தடை பற்றியது.",
+        "Option C is incorrect; 44th CA (1978) restored the term back to 5 years.", "விருப்பம் C தவறானது; 44வது திருத்தம் மீண்டும் 5 ஆண்டுகளாகக் குறைத்தது.",
+        "Option D is incorrect; 24th CA dealt with Article 368 amending procedures.", "விருப்பம் D தவறானது; 24வது திருத்தம் சரத்து 368 நடைமுறை பற்றியது.",
+        "44th Amendment Act 1978 later restored the 5-year tenure for Lok Sabha and State Assemblies.",
+        "பின்னர் 44வது திருத்தச் சட்டம் 1978 5 ஆண்டு பதவிக் காலத்தை மீண்டும் சீரமைத்தது.",
+        "5th Lok Sabha (1971-1977) was the only Lok Sabha in Indian history that functioned for nearly 6 years.",
+        "இந்திய வரலாற்றிலேயே 5வது மக்களவை (1971-1977) மட்டுமே கிட்டத்தட்ட 6 ஆண்டுகள் செயல்பட்ட ஒரே மக்களவையாகும்.",
+        "Remembering", "High", ["42nd Amendment", "Lok Sabha 6 Year Term"], "Part 2"
+    )
+
+    # Q046 - Correct: B
+    add_q(
+        "CZ_AM_MD_046",
+        "Which Constitutional Amendment Act inserted Article 21A making free and compulsory education for children between 6 and 14 years a Fundamental Right?",
+        "6 முதல் 14 வயதுடைய குழந்தைகளுக்கு இலவச கட்டாயக் கல்வியை அடிப்படை உரிமையாக்கும் சரத்து 21A ஐச் சேர்த்த அரசியலமைப்பு திருத்தச் சட்டம் எது?",
+        "84th Amendment Act, 2001", "84வது திருத்தச் சட்டம், 2001",
+        "86th Amendment Act, 2002", "86வது திருத்தச் சட்டம், 2002",
+        "91st Amendment Act, 2003", "91வது திருத்தச் சட்டம், 2003",
+        "93rd Amendment Act, 2005", "93வது திருத்தச் சட்டம், 2005",
+        "B",
+        "The 86th Constitutional Amendment Act, 2002 inserted Article 21A in Part III, modified Article 45 in Part IV, and added Article 51A(k) in Part IV-A.",
+        "86வது அரசியலமைப்பு திருத்தச் சட்டம், 2002 பகுதி III இல் சரத்து 21A, பகுதி IV இல் சரத்து 45, பகுதி IV-A இல் சரத்து 51A(k) ஆகியவற்றைச் சேர்த்தது.",
+        "Option A is incorrect; 84th CA froze seat delimitation till 2026.", "விருப்பம் A தவறானது; 84வது திருத்தம் தொகுதி முடக்கம் பற்றியது.",
+        "Option B is correct because 86th CA 2002 inserted Article 21A.", "விருப்பம் B சரியானது, ஏனெனில் 86வது திருத்தம் 2002 சரத்து 21A ஐச் சேர்த்தது.",
+        "Option C is incorrect; 91st CA capped cabinet size at 15%.", "விருப்பம் C தவறானது; 91வது திருத்தம் 15% அமைச்சரவை வரம்பு பற்றியது.",
+        "Option D is incorrect; 93rd CA related to OBC reservation in private colleges.", "விருப்பம் D தவறானது; 93வது திருத்தம் தனியார் கல்லூரிகளில் OBC இடஒதுக்கீடு பற்றியது.",
+        "Unni Krishnan v. State of Andhra Pradesh (1993) case verdict inspired the enactment of the 86th CA 2002.",
+        "உன்னிகிருஷ்ணன் எதிர் ஆந்திரப் பிரதேச அரசு (1993) வழக்குத் தீர்ப்பு 86வது திருத்தம் உருவாக்க ஊக்கமளித்தது.",
+        "Right of Children to Free and Compulsory Education (RTE) Act was passed in 2009 to operationalise Article 21A.",
+        "சரத்து 21A ஐ அமல்படுத்த 2009 இல் இலவச கட்டாயக் கல்விச் சட்டம் இயற்றப்பட்டது.",
+        "Remembering", "High", ["86th Amendment", "Article 21A", "Right to Education"], "Part 2"
+    )
+
+    # Q047 - Correct: C
+    add_q(
+        "CZ_AM_MD_047",
+        "Which Constitutional Amendment Act provided that the President MUST act according to the advice tendered by the Council of Ministers?",
+        "அமைச்சரவையின் ஆலோசனையின் படி மட்டுமே குடியரசுத் தலைவர் செயல்பட வேண்டும் என்பதை கட்டாயமாக்கிய அரசியலமைப்பு திருத்தச் சட்டம் எது?",
+        "24th Constitutional Amendment Act, 1971", "24வது அரசியலமைப்பு திருத்தச் சட்டம், 1971",
+        "25th Constitutional Amendment Act, 1971", "25வது அரசியலமைப்பு திருத்தச் சட்டம், 1971",
+        "42nd Constitutional Amendment Act, 1976", "42வது அரசியலமைப்பு திருத்தச் சட்டம், 1976",
+        "44th Constitutional Amendment Act, 1978", "44வது அரசியலமைப்பு திருத்தச் சட்டம், 1978",
+        "C",
+        "The 42nd Constitutional Amendment Act, 1976 amended Article 74(1) stating that the President SHALL act in accordance with the advice tendered by the Council of Ministers.",
+        "42வது அரசியலமைப்பு திருத்தச் சட்டம், 1976 சரத்து 74(1) ஐத் திருத்தி, அமைச்சரவை அளிக்கும் ஆலோசனையின் படியே குடியரசுத் தலைவர் செயல்பட வேண்டும் எனக் கட்டாயமாக்கியது.",
+        "Option A is incorrect; 24th CA made assent mandatory for Art 368 bills.", "விருப்பம் A தவறானது; 24வது திருத்தம் 368 மசோதா ஒப்புதலைக் கட்டாயமாக்கியது.",
+        "Option B is incorrect; 25th CA inserted Article 31C.", "விருப்பம் B தவறானது; 25வது திருத்தம் சரத்து 31C ஐச் சேர்த்தது.",
+        "Option C is correct because 42nd CA 1976 bound the President to Council of Ministers advice under Article 74.", "விருப்பம் C சரியானது, ஏனெனில் 42வது திருத்தம் 1976 குடியரசு தலைவரை அமைச்சரவை ஆலோசனைக்கு உட்படுத்தியது.",
+        "Option D is incorrect; 44th CA (1978) allowed President to return advice ONCE for reconsideration.", "விருப்பம் D தவறானது; 44வது திருத்தம் ஆலோசனையை ஒரு முறை மறுபரிசீலனைக்குத் திருப்பியனுப்ப அனுமதித்தது.",
+        "44th CA 1978 modified Article 74(1) allowing the President to require the Council of Ministers to reconsider such advice ONCE; but bound by reconsidered advice.",
+        "44வது திருத்தம் 1978 சரத்து 74(1) இல் குடியரசு தலைவர் ஆலோசனையை ஒரு முறை மறுபரிசீலனைக்குத் அனுப்பலாம் என்ற விதியைச் சேர்த்தது.",
+        "This balanced executive efficiency with constitutional discretion.",
+        "இது நிர்வாக செயல்திறனை அரசியலமைப்பு விருப்ப அதிகாரத்துடன் சமப்படுத்தியது.",
+        "Understanding", "High", ["42nd Amendment", "Article 74", "President Binding Advice"], "Part 2"
+    )
+
+    # Q048 - Correct: D
+    add_q(
+        "CZ_AM_MD_048",
+        "Which Constitutional Amendment Act substituted 'Socialist, Secular, Integrity' into the Preamble of the Constitution of India?",
+        "இந்திய அரசியலமைப்பின் முகப்புரையில் 'சமதர்ம, மதச்சார்பற்ற, ஒருமைப்பாடு' என்ற சொற்களைச் சேர்த்த அரசியலமைப்பு திருத்தச் சட்டம் எது?",
+        "24th Constitutional Amendment Act, 1971", "24வது அரசியலமைப்பு திருத்தச் சட்டம், 1971",
+        "25th Constitutional Amendment Act, 1971", "25வது அரசியலமைப்பு திருத்தச் சட்டம், 1971",
+        "44th Constitutional Amendment Act, 1978", "44வது அரசியலமைப்பு திருத்தச் சட்டம், 1978",
+        "42nd Constitutional Amendment Act, 1976", "42வது அரசியலமைப்பு திருத்தச் சட்டம், 1976",
+        "D",
+        "The 42nd Constitutional Amendment Act, 1976 amended the Preamble to change 'Sovereign Democratic Republic' to 'Sovereign Socialist Secular Democratic Republic' and 'Unity of the Nation' to 'Unity and Integrity of the Nation'.",
+        "42வது அரசியலமைப்பு திருத்தச் சட்டம், 1976 முகப்புரையைத் திருத்தி 'இ இறையாண்மை கொண்ட ஜனநாயகக் குடியரசு' என்பதை 'இறையாண்மை சமதர்ம மதச்சார்பற்ற ஜனநாயகக் குடியரசு' என்றும் 'நாட்டின் ஒற்றுமை' என்பதை 'நாட்டின் ஒற்றுமை மற்றும் ஒருமைப்பாடு' என்றும் மாற்றியது.",
+        "Option A is incorrect; 24th CA dealt with Art 368 amending power.", "விருப்பம் A தவறானது; 24வது திருத்தம் திருத்த அதிகாரம் பற்றியது.",
+        "Option B is incorrect; 25th CA inserted Art 31C.", "விருப்பம் B தவறானது; 25வது திருத்தம் சரத்து 31C பற்றியது.",
+        "Option C is incorrect; 44th CA reversed 42nd CA excesses.", "விருப்பம் C தவறானது; 44வது திருத்தம் அவசரநிலை சீரமைப்பு பற்றியது.",
+        "Option D is correct because 42nd CA 1976 introduced 'Socialist', 'Secular', and 'Integrity' into the Preamble.", "விருப்பம் D சரியானது, ஏனெனில் 42வது திருத்தம் 1976 இச்சொற்களை முகப்புரையில் சேர்த்தது.",
+        "Preamble has been amended ONLY ONCE in the history of Indian Constitution.",
+        "இந்திய அரசியலமைப்பு வரலாற்றில் முகப்புரை ஒரே ஒரு முறை மட்டுமே திருத்தப்பட்டுள்ளது.",
+        "Swaran Singh Committee recommended 'Socialist' and 'Secular' inclusion.",
+        "ஸ்வரண் சிங் குழு 'சமதர்ம' மற்றும் 'மதச்சார்பற்ற' சொற்களைச் சேர்க்கப் பரிந்துரைத்தது.",
+        "Remembering", "High", ["42nd Amendment", "Preamble Amendment"], "Part 2"
+    )
+
+    # Q049 - Correct: A
+    add_q(
+        "CZ_AM_MD_049",
+        "Which Constitutional Amendment Act established the 10th Schedule containing the Anti-Defection Law to prevent political defections?",
+        "அரசியல் கட்சித் தாவல்களைத் தடுக்க 10வது அட்டவணையில் கட்சித் தாவல் தடைச் சட்டத்தை நிறுவிய அரசியலமைப்பு திருத்தச் சட்டம் எது?",
+        "52nd Constitutional Amendment Act, 1985", "52வது அரசியலமைப்பு திருத்தச் சட்டம், 1985",
+        "61st Constitutional Amendment Act, 1988", "61வது அரசியலமைப்பு திருத்தச் சட்டம், 1988",
+        "91st Constitutional Amendment Act, 2003", "91வது அரசியலமைப்பு திருத்தச் சட்டம், 2003",
+        "42nd Constitutional Amendment Act, 1976", "42வது அரசியலமைப்பு திருத்தச் சட்டம், 1976",
+        "A",
+        "The 52nd Constitutional Amendment Act, 1985 inserted the 10th Schedule and amended Articles 101, 102, 190, and 191 laying down criteria for disqualification of MPs and MLAs on grounds of defection.",
+        "52வது அரசியலமைப்பு திருத்தச் சட்டம், 1985 10வது அட்டவணையைச் சேர்த்து, கட்சித் தாவல் அடிப்படையில் எம்பிக்கள் மற்றும் எம்எல்ஏக்களைத் தகுதிநீக்கம் செய்ய சரத்துகள் 101, 102, 190, 191 ஐத் திருத்தியது.",
+        "Option A is correct because 52nd CA 1985 enacted the Anti-Defection Law.", "விருப்பம் A சரியானது, ஏனெனில் 52வது திருத்தம் 1985 கட்சித் தாவல் தடைச் சட்டத்தை இயற்றியது.",
+        "Option B is incorrect; 61st CA lowered voting age to 18.", "விருப்பம் B தவறானது; 61வது திருத்தம் வாக்குரிமை வயதைக் குறைத்தது.",
+        "Option C is incorrect; 91st CA (2003) strengthened Anti-Defection Law by deleting 1/3 split exception.", "விருப்பம் C தவறானது; 91வது திருத்தம் 1/3 பிளவு விதிவிலக்கை நீக்கி வலுப்படுத்தியது.",
+        "Option D is incorrect; 42nd CA was Mini-Constitution.", "விருப்பம் D தவறானது; 42வது திருத்தம் சிறிய அரசியலமைப்பு.",
+        "Popular slogan 'Aaya Ram, Gaya Ram' in Indian politics led to the enactment of the 52nd CA 1985 under PM Rajiv Gandhi.",
+        "இந்திய அரசியலில் 'ஆயா ராம், காயா ராம்' கலாச்சாரத்தைத் தடுக்க பிரதமர் ராஜீவ் காந்தி காலத்தில் 52வது திருத்தம் இயற்றப்பட்டது.",
+        "Kihoto Hollohan v. Zachillhu (1992) upheld the validity of 10th Schedule but held Speaker's decision is subject to Judicial Review.",
+        "கிஹோட்டோ ஹோலோஹன் (1992) வழக்கு 10வது அட்டவணையை உறுதி செய்தாலும் சபாநாயகர் முடிவு நீதிமன்ற ஆய்விற்கு உட்பட்டது என்றது.",
+        "Remembering", "High", ["52nd Amendment", "Anti-Defection Law", "10th Schedule"], "Part 2"
+    )
+
+    # Q050 - Correct: B
+    add_q(
+        "CZ_AM_MD_050",
+        "Which Constitutional Amendment Act replaced the 10th Schedule (old associate state provisions) with special provisions making Sikkim the full 22nd State of India?",
+        "பழைய 10வது அட்டவணையை நீக்கி சிக்கிமை இந்தியாவின் 22வது முழு மாநிலமாக்கும் சிறப்பு விதிகளுடன் சேர்த்த அரசியலமைப்பு திருத்தச் சட்டம் எது?",
+        "35th Constitutional Amendment Act, 1974", "35வது அரசியலமைப்பு திருத்தச் சட்டம், 1974",
+        "36th Constitutional Amendment Act, 1975", "36வது அரசியலமைப்பு திருத்தச் சட்டம், 1975",
+        "38th Constitutional Amendment Act, 1975", "38வது அரசியலமைப்பு திருத்தச் சட்டம், 1975",
+        "42nd Constitutional Amendment Act, 1976", "42வது அரசியலமைப்பு திருத்தச் சட்டம், 1976",
+        "B",
+        "The 36th Constitutional Amendment Act, 1975 repealed the 10th Schedule (inserted by 35th CA for associate state status) and made Sikkim a full state of the Indian Union under Article 371F.",
+        "36வது அரசியலமைப்பு திருத்தச் சட்டம், 1975 (35வது திருத்தத்தால் சேர்க்கப்பட்ட) 10வது அட்டவணையை நீக்கி, சரத்து 371F இன் கீழ் சிக்கிமை இந்தியாவின் 22வது முழு மாநிலமாக்கியது.",
+        "Option A is incorrect; 35th CA (1974) made Sikkim an 'Associate State'.", "விருப்பம் A தவறானது; 35வது திருத்தம் சிக்கிமை இணை மாநிலமாக்கியது.",
+        "Option B is correct because 36th CA 1975 made Sikkim a full state of India.", "விருப்பம் B சரியானது, ஏனெனில் 36வது திருத்தம் 1975 சிக்கிமை முழு மாநிலமாக்கியது.",
+        "Option C is incorrect; 38th CA made emergency non-justiciable.", "விருப்பம் C தவறானது; 38வது திருத்தம் அவசரநிலை பற்றியது.",
+        "Option D is incorrect; 42nd CA was Mini-Constitution.", "விருப்பம் D தவறானது; 42வது திருத்தம் சிறிய அரசியலமைப்பு.",
+        "35th CA (1974) created Associate State status + 10th Schedule (old). 36th CA (1975) repealed old 10th Schedule + granted Full Statehood.",
+        "35வது திருத்தம் (1974) இணை மாநில அந்தஸ்து வழங்கியது. 36வது திருத்தம் (1975) முழு மாநில அந்தஸ்து வழங்கியது.",
+        "Article 371F contains special provisions for Sikkim Legislative Assembly strength (minimum 30 members).",
+        "சரத்து 371F சிக்கிம் சட்டமன்றத்திற்கான சிறப்பு விதிகளைக் கொண்டுள்ளது (குறைந்தபட்சம் 30 உறுப்பினர்கள்).",
+        "Remembering", "High", ["36th Amendment", "Sikkim Full Statehood", "Article 371F"], "Part 2"
+    )
+
+    return questions
+
+if __name__ == "__main__":
+    md_qs = create_medium_questions()
+    os.makedirs("data/questions/polity", exist_ok=True)
+    out_path = "data/questions/polity/constitutional_amendments_medium.json"
+    with open(out_path, "w", encoding="utf-8") as f:
+        json.dump(md_qs, f, ensure_ascii=False, indent=2)
+    
+    from collections import Counter
+    counts = Counter(q["correct_answer"] for q in md_qs)
+    print(f"Medium set complete. Total: {len(md_qs)}")
+    print(f"Answer balance: {dict(counts)}")

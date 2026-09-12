@@ -35,6 +35,9 @@ def validate_topic_card(topic: dict, availability: dict = None) -> dict:
         total_parts = 1
 
     has_notes = bool(availability.get("notes", False))
+    parts_found = availability.get("parts_found", 1 if has_notes else 0)
+    total_parts = max(total_parts, availability.get("total_parts", 1))
+
     has_gt = bool(availability.get("grand_test", False))
 
     practice_keys = [
@@ -48,7 +51,13 @@ def validate_topic_card(topic: dict, availability: dict = None) -> dict:
     ]
     qs_count = sum(1 for k in practice_keys if availability.get(k))
 
-    notes_status = "📖 Notes Ready" if has_notes else "📖 Notes Pending"
+    if not has_notes or parts_found == 0:
+        notes_status = "📖 Notes Pending"
+    elif parts_found < total_parts:
+        notes_status = f"📖 Notes In Progress ({parts_found}/{total_parts} Parts)"
+    else:
+        notes_status = f"📖 Notes Ready ({total_parts} Parts)" if total_parts > 1 else "📖 Notes Ready"
+
     gt_status = "🏆 Grand Test Ready" if has_gt else "🏆 Grand Test Not Available"
     practice_status = f"{qs_count} Practice Repos" if qs_count > 0 else "0 Practice Repos"
 
@@ -58,6 +67,7 @@ def validate_topic_card(topic: dict, availability: dict = None) -> dict:
         "subject": subject,
         "part": max(1, part),
         "total_parts": max(1, total_parts),
+        "parts_found": parts_found,
         "has_notes": has_notes,
         "has_gt": has_gt,
         "qs_count": qs_count,
@@ -65,6 +75,7 @@ def validate_topic_card(topic: dict, availability: dict = None) -> dict:
         "gt_status": gt_status,
         "practice_status": practice_status,
     }
+
 
 
 def render_topic_selector():
@@ -131,7 +142,7 @@ def render_topic_selector():
             part_badge_html = (
                 f'<span style="display:inline-block; padding:3px 10px; border-radius:12px; '
                 f'background:#F1F5F9; color:#475569; font-weight:700; font-size:0.78rem; '
-                f'border:1px solid #E2E8F0;">Part {card_data["part"]} of {card_data["total_parts"]}</span>'
+                f'border:1px solid #E2E8F0;">📚 {card_data["total_parts"]} Parts</span>'
             )
 
         if card_data["has_notes"]:

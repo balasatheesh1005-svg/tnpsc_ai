@@ -1,0 +1,289 @@
+{
+  "topic": "Constitutional Schedules",
+  "topic_id": "polity_schedules",
+  "repository_id": "polity_constitutional_schedules",
+  "display_title": "Constitutional Schedules",
+  "subject": "polity",
+  "source_notes": [
+    "data/notes/polity/constitutional_schedules_part_1.json",
+    "data/notes/polity/constitutional_schedules_part_2.json",
+    "data/notes/polity/constitutional_schedules_part_3.json"
+  ],
+  "target": {
+    "core": 325,
+    "grand_test": 100,
+    "overall": 425
+  },
+  "subtopics": [
+    {
+      "id": "subtopic_1",
+      "name": "Schedules Overview & First Schedule (States and Union Territories)",
+      "coverage": "Original 8 schedules expanded to 12; First Schedule detailing names and territorial extents of 28 States and 8 Union Territories; relation to Articles 1 to 4; Simple majority amendment under Article 4 exempting from Article 368.",
+      "articles": [
+        "Article 1",
+        "Article 2",
+        "Article 3",
+        "Article 4",
+        "First Schedule"
+      ],
+      "key_concepts": [
+        "Original Constitution adopted on Nov 26, 1949 had 8 Schedules, 395 Articles, 22 Parts",
+        "Currently the Constitution has 12 Schedules after amendments (1st, 52nd, 73rd, 74th CAAs)",
+        "First Schedule lists 28 States and 8 Union Territories with their territorial jurisdictions",
+        "Laws under Articles 2 and 3 that amend the First Schedule require only a simple majority in Parliament",
+        "Article 4(2) states such laws are NOT deemed to be amendments under Article 368"
+      ],
+      "tnpsc_traps": [
+        "Trap: Confusing original schedule count (8) with current count (12)",
+        "Trap: Assuming amending First Schedule requires a special majority under Article 368 (False; Article 4 specifies simple majority)"
+      ],
+      "question_models": ["Conceptual", "Statement", "Match", "PYQ"],
+      "priority": "High",
+      "core_allocation": 35,
+      "grand_test_allocation": 10
+    },
+    {
+      "id": "subtopic_2",
+      "name": "Second Schedule (Salaries and Allowances) & Third Schedule (Oaths and Affirmations)",
+      "coverage": "Second Schedule covering salaries and pensions of 9 constitutional authorities; Third Schedule detailing forms of oaths/affirmations for 9 offices; critical exclusions (President Art 60, VP Art 69, Governor Art 159).",
+      "articles": [
+        "Article 60",
+        "Article 69",
+        "Article 75",
+        "Article 84",
+        "Article 99",
+        "Article 124",
+        "Article 125",
+        "Article 148",
+        "Article 159",
+        "Article 221",
+        "Second Schedule",
+        "Third Schedule"
+      ],
+      "key_concepts": [
+        "Second Schedule covers 9 authorities: President, Governors, Speaker/Dy Speaker LS, Chairman/Dy Chairman RS, Speaker/Dy Speaker State LA, Chairman/Dy Chairman State LC, SC Judges, HC Judges, CAG",
+        "Prime Minister, Union Ministers, Chief Ministers, and Members of Parliament are NOT in the Second Schedule",
+        "Third Schedule provides forms of oaths for: Union Ministers, MP Election Candidates, MPs, SC Judges, CAG, State Ministers, MLA/MLC Candidates, MLAs/MLCs, HC Judges",
+        "CRITICAL TRAP: President's oath is in Article 60, Vice-President's oath in Article 69, and Governor's oath in Article 159 (NONE of these three are in the Third Schedule)",
+        "Oath of Secrecy is taken ONLY by Ministers (Union and State), not by ordinary MPs or Judges"
+      ],
+      "tnpsc_traps": [
+        "Trap 1: Believing the President or Governor oath is in the Third Schedule (False; Arts 60 and 159)",
+        "Trap 2: Believing MPs take an oath of secrecy (False; only Ministers take Oath of Secrecy)"
+      ],
+      "question_models": ["Conceptual", "Statement", "Reasoning", "Match", "PYQ"],
+      "priority": "High",
+      "core_allocation": 35,
+      "grand_test_allocation": 10
+    },
+    {
+      "id": "subtopic_3",
+      "name": "Fourth Schedule (Allocation of Rajya Sabha Seats)",
+      "coverage": "Allocation of Council of States (Rajya Sabha) seats to States and Union Territories under Articles 4(1) and 80(2); population-based principle; state-wise seat breakdown; UT representation.",
+      "articles": [
+        "Article 4(1)",
+        "Article 80(2)",
+        "Fourth Schedule"
+      ],
+      "key_concepts": [
+        "Fourth Schedule specifies the allocation of Rajya Sabha seats based on population (not equal representation like US Senate)",
+        "Total maximum Rajya Sabha strength is 250 (238 elected from States/UTs + 12 nominated by President)",
+        "Current strength is 245",
+        "Uttar Pradesh has the highest allocation (31 seats), followed by Maharashtra (19), Tamil Nadu (18), West Bengal (16), Bihar (16)",
+        "Only 3 Union Territories have Rajya Sabha seats: Delhi (3), Puducherry (1), Jammu & Kashmir (4)",
+        "Other UTs have no Rajya Sabha representation due to small populations"
+      ],
+      "tnpsc_traps": [
+        "Trap 1: Believing all states have equal seats in Rajya Sabha (False; proportionate to population)",
+        "Trap 2: Believing all UTs have representation in Rajya Sabha (False; only Delhi, Puducherry, J&K have seats)"
+      ],
+      "question_models": ["Conceptual", "Statement", "Match", "PYQ"],
+      "priority": "High",
+      "core_allocation": 30,
+      "grand_test_allocation": 10
+    },
+    {
+      "id": "subtopic_4",
+      "name": "Fifth Schedule (Scheduled Areas and Scheduled Tribes)",
+      "coverage": "Provisions relating to administration and control of Scheduled Areas and Scheduled Tribes in states other than AMTM; Article 244(1); Tribes Advisory Council (TAC); Governor's regulatory powers.",
+      "articles": [
+        "Article 244(1)",
+        "Fifth Schedule"
+      ],
+      "key_concepts": [
+        "Fifth Schedule applies to Scheduled Areas in 10 States (Andhra Pradesh, Telangana, Jharkhand, Odisha, Chhattisgarh, MP, Rajasthan, Gujarat, Maharashtra, HP)",
+        "Executive power of the Union extends to giving directions to the State regarding administration of these areas",
+        "Governor is empowered to direct that any Act of Parliament or State Legislature shall NOT apply or apply with modifications",
+        "Tribes Advisory Council (TAC) must be established in each state with Scheduled Areas; maximum 20 members (at least 3/4th representatives of STs in State Legislative Assembly)",
+        "President has the power to declare an area as a Scheduled Area and alter boundaries in consultation with Governor"
+      ],
+      "tnpsc_traps": [
+        "Trap 1: Believing Fifth Schedule applies to Assam, Meghalaya, Tripura, Mizoram (False; that is Sixth Schedule)",
+        "Trap 2: Composition of TAC (max 20 members, 3/4th ST MLAs)"
+      ],
+      "question_models": ["Conceptual", "Statement", "Reasoning", "Match", "PYQ"],
+      "priority": "High",
+      "core_allocation": 35,
+      "grand_test_allocation": 10
+    },
+    {
+      "id": "subtopic_5",
+      "name": "Sixth Schedule (Tribal Areas in Assam, Meghalaya, Tripura, Mizoram)",
+      "coverage": "Administration of Tribal Areas in the 4 Northeastern States (AMTM); Articles 244(2) and 275(1); Autonomous District Councils (ADCs) and Regional Councils; legislative, judicial, and financial powers.",
+      "articles": [
+        "Article 244(2)",
+        "Article 275(1)",
+        "Sixth Schedule"
+      ],
+      "key_concepts": [
+        "Sixth Schedule applies exclusively to 4 States: Assam, Meghalaya, Tripura, Mizoram (mnemonic: AMTM)",
+        "Creates Autonomous District Councils (ADCs) and Regional Councils within districts",
+        "Each Autonomous District Council consists of maximum 30 members: 26 elected by adult franchise, 4 nominated by the Governor",
+        "Term of elected members is 5 years; nominated members hold office at Governor's pleasure",
+        "ADCs have powers to make laws on land, forests, canal water, shifting cultivation, village administration, inheritance, marriage, social customs (assent of Governor required)",
+        "ADCs can establish village councils/courts to try suits between scheduled tribe members"
+      ],
+      "tnpsc_traps": [
+        "Trap 1: Including Manipur or Nagaland in Sixth Schedule (False; only Assam, Meghalaya, Tripura, Mizoram)",
+        "Trap 2: ADC membership breakdown (30 total: 26 elected, 4 nominated by Governor)"
+      ],
+      "question_models": ["Conceptual", "Statement", "Reasoning", "Match", "PYQ"],
+      "priority": "High",
+      "core_allocation": 35,
+      "grand_test_allocation": 10
+    },
+    {
+      "id": "subtopic_6",
+      "name": "Seventh Schedule (Union, State, and Concurrent Lists)",
+      "coverage": "Division of legislative powers under Article 246; List I (Union List), List II (State List), List III (Concurrent List); 42nd Amendment Act 1976 transfers; Residuary powers (Article 248); Article 254 Repugnancy.",
+      "articles": [
+        "Article 246",
+        "Article 248",
+        "Article 254",
+        "Seventh Schedule"
+      ],
+      "key_concepts": [
+        "Union List (List I): Originally 97 items, currently 100 items (Defence, Atomic energy, Foreign affairs, Railways, Banking, Insurance, Census, Income tax)",
+        "State List (List II): Originally 66 items, currently 61 items (Public order, Police, Public health, Local government, Agriculture, Prisons)",
+        "Concurrent List (List III): Originally 47 items, currently 52 items (Criminal law, Civil procedure, Marriage, Contracts, Economic planning)",
+        "42nd Constitutional Amendment Act 1976 transferred 5 subjects from State List to Concurrent List: 1) Education, 2) Forests, 3) Weights and Measures, 4) Protection of wild animals and birds, 5) Administration of justice (constitution of all courts except SC and HCs)",
+        "Residuary powers (Article 248): Vest exclusively in the Parliament of India",
+        "Article 254: In case of conflict on Concurrent List, Union law prevails over State law, unless State law received Presidential assent"
+      ],
+      "tnpsc_traps": [
+        "Trap 1: Confusing which 5 subjects were transferred by 42nd CAA (Education, Forests, Weights/Measures, Wild Animals, Administration of Justice)",
+        "Trap 2: Police and Public Order are in State List, while Criminal Law and Procedure are in Concurrent List",
+        "Trap 3: Residuary powers vest in Parliament in India, unlike USA where they vest in States"
+      ],
+      "question_models": ["Conceptual", "Statement", "Reasoning", "Match", "PYQ"],
+      "priority": "High",
+      "core_allocation": 40,
+      "grand_test_allocation": 12
+    },
+    {
+      "id": "subtopic_7",
+      "name": "Eighth Schedule (Official Languages of India)",
+      "coverage": "Official languages under Articles 344(1) and 351; original 14 languages; 21st, 71st, 92nd, 96th Amendment Acts; Classical language status; exclusion of English.",
+      "articles": [
+        "Article 344(1)",
+        "Article 351",
+        "Eighth Schedule"
+      ],
+      "key_concepts": [
+        "Original Constitution in 1950 had 14 languages in Eighth Schedule: Assamese, Bengali, Gujarati, Hindi, Kannada, Kashmiri, Malayalam, Marathi, Odia, Punjabi, Sanskrit, Tamil, Telugu, Urdu",
+        "21st Amendment Act 1967: Added Sindhi (15th language)",
+        "71st Amendment Act 1992: Added Konkani, Manipuri, Nepali (mnemonic: KMN, 16th, 17th, 18th)",
+        "92nd Amendment Act 2003: Added Bodo, Dogri, Maithili, Santhali (mnemonic: BDMS, 19th, 20th, 21st, 22nd)",
+        "96th Amendment Act 2011: Substituted 'Odia' for 'Oriya'",
+        "Total official languages: 22",
+        "CRITICAL TRAP: English, Rajasthani, and Bhojpuri are NOT in the Eighth Schedule",
+        "Classical Languages: Tamil (first to be declared in 2004), Sanskrit (2005), Telugu (2008), Kannada (2008), Malayalam (2013), Odia (2014), and Marathi, Pali, Prakrit, Assamese, Bengali added in 2024"
+      ],
+      "tnpsc_traps": [
+        "Trap 1: Believing English is in the Eighth Schedule (False; English is NOT listed)",
+        "Trap 2: First classical language of India was Tamil in 2004",
+        "Trap 3: Matching CAAs with languages (21st: Sindhi, 71st: KMN, 92nd: BDMS)"
+      ],
+      "question_models": ["Conceptual", "Statement", "Match", "Chronology", "PYQ"],
+      "priority": "High",
+      "core_allocation": 35,
+      "grand_test_allocation": 12
+    },
+    {
+      "id": "subtopic_8",
+      "name": "Ninth Schedule (Validation of Certain Acts and Judicial Review)",
+      "coverage": "Article 31B and Ninth Schedule; 1st Constitutional Amendment Act 1951; TN 69% Reservation Act (76th CAA 1994); Landmark I.R. Coelho Case 2007 (April 24, 1973 cutoff date).",
+      "articles": [
+        "Article 31B",
+        "Ninth Schedule"
+      ],
+      "key_concepts": [
+        "Ninth Schedule was added by the First Constitutional Amendment Act, 1951 along with Article 31B to protect land reform laws from judicial review",
+        "Originally contained 13 Acts, now contains 284 Acts",
+        "Article 31B provides that none of the Acts in the Ninth Schedule shall be deemed void on the ground of inconsistency with Fundamental Rights",
+        "Tamil Nadu Backward Classes, Scheduled Castes and Scheduled Tribes (Reservation of Seats) Act, 1993 (69% reservation) was placed in Ninth Schedule via 76th CAA 1994",
+        "Landmark I.R. Coelho v. State of Tamil Nadu (2007): 9-judge bench ruled that laws placed in the Ninth Schedule on or after April 24, 1973 (date of Kesavananda Bharati verdict) ARE subject to judicial review if they violate the Basic Structure or Fundamental Rights (Arts 14, 19, 21)"
+      ],
+      "tnpsc_traps": [
+        "Trap 1: Believing Ninth Schedule laws have blanket immunity today (False; post-April 24, 1973 laws are subject to judicial review per I.R. Coelho Case)",
+        "Trap 2: TN 69% reservation act amendment number (76th CAA 1994)"
+      ],
+      "question_models": ["Conceptual", "Statement", "Reasoning", "Match", "PYQ"],
+      "priority": "High",
+      "core_allocation": 25,
+      "grand_test_allocation": 8
+    },
+    {
+      "id": "subtopic_9",
+      "name": "Tenth Schedule (Anti-Defection Law)",
+      "coverage": "Articles 102(2) and 191(2); 52nd Constitutional Amendment Act 1985; Disqualification grounds; 91st CAA 2003 merger 2/3rd requirement; Kihoto Hollohan v. Zachillhu Case 1992.",
+      "articles": [
+        "Article 102(2)",
+        "Article 191(2)",
+        "Tenth Schedule"
+      ],
+      "key_concepts": [
+        "Tenth Schedule added by 52nd Constitutional Amendment Act 1985 (during Rajiv Gandhi government)",
+        "Disqualification grounds: 1) Voluntarily giving up membership of political party, 2) Voting/abstaining contrary to party whip without permission, 3) Independently elected member joining any party, 4) Nominated member joining a party after 6 months",
+        "Originally, split by 1/3rd members was an exception; 91st Amendment Act 2003 deleted the split provision and mandated that merger requires at least 2/3rd of members of legislative party",
+        "Deciding Authority: Chairman of Rajya Sabha / Legislative Council or Speaker of Lok Sabha / Legislative Assembly",
+        "Kihoto Hollohan v. Zachillhu (1992): SC upheld validity of Tenth Schedule and ruled that the Presiding Officer functions as a tribunal, and the decision IS subject to judicial review on grounds of mala fides, perversity, or violation of natural justice"
+      ],
+      "tnpsc_traps": [
+        "Trap 1: Believing Speaker's decision is final and non-justiciable (False; Kihoto Hollohan 1992 ruled it is subject to judicial review)",
+        "Trap 2: Minimum merger threshold under 91st CAA 2003 is 2/3rd (split provision of 1/3rd was repealed)",
+        "Trap 3: Nominated member can join party within 6 months without disqualification; independent member cannot join any party at any time"
+      ],
+      "question_models": ["Conceptual", "Statement", "Reasoning", "Match", "PYQ"],
+      "priority": "High",
+      "core_allocation": 30,
+      "grand_test_allocation": 10
+    },
+    {
+      "id": "subtopic_10",
+      "name": "Eleventh Schedule (Panchayats) & Twelfth Schedule (Municipalities)",
+      "coverage": "Eleventh Schedule (Article 243G, 73rd CAA 1992, 29 functional subjects) and Twelfth Schedule (Article 243W, 74th CAA 1992, 18 functional subjects); comparison of subjects and municipal tiers.",
+      "articles": [
+        "Article 243G",
+        "Article 243W",
+        "Eleventh Schedule",
+        "Twelfth Schedule"
+      ],
+      "key_concepts": [
+        "Eleventh Schedule added by 73rd Constitutional Amendment Act 1992 under Article 243G",
+        "Specifies 29 functional subjects within the purview of Panchayati Raj Institutions (Agriculture, Land improvement, Minor irrigation, Animal husbandry, Fisheries, Social forestry, Small scale industries, Drinking water, Roads, Rural electrification, Poverty alleviation, Education, Libraries, Markets)",
+        "Twelfth Schedule added by 74th Constitutional Amendment Act 1992 under Article 243W",
+        "Specifies 18 functional subjects within the purview of Urban Local Bodies / Municipalities (Urban planning, Regulation of land use, Roads and bridges, Water supply, Public health, Fire services, Urban forestry, Slum improvement, Solid waste management, Burials, Cattle pounds)",
+        "Mnemonic for subject count: 29 subjects in 11th (Panchayats: 2+9=11); 18 subjects in 12th (Municipalities)"
+      ],
+      "tnpsc_traps": [
+        "Trap 1: Confusing the number of functional subjects (11th Schedule has 29 subjects; 12th Schedule has 18 subjects)",
+        "Trap 2: Confusing respective amendment acts (73rd CAA for 11th; 74th CAA for 12th)"
+      ],
+      "question_models": ["Conceptual", "Statement", "Match", "PYQ"],
+      "priority": "High",
+      "core_allocation": 25,
+      "grand_test_allocation": 8
+    }
+  ]
+}

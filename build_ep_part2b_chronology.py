@@ -1,0 +1,565 @@
+# -*- coding: utf-8 -*-
+"""
+Generator for Emergency Provisions Chronology MCQs (25 questions: EP_C_001 to EP_C_025)
+Keys: A: 6, B: 6, C: 7, D: 6 (Total: 25)
+"""
+
+import json
+from ep_mcq_helper import make_ep_q
+
+PREFIX = "EP_C_"
+DIFF = "Medium"
+QTYPE = "Chronology"
+
+def make_c_q(num, subtopic, title_en, title_ta,
+             events_en, events_ta,
+             opt_codes, key,
+             exp_en, exp_ta,
+             why_a_en, why_a_ta,
+             why_b_en, why_b_ta,
+             why_c_en, why_c_ta,
+             why_d_en, why_d_ta,
+             tip_en, tip_ta,
+             fact_en, fact_ta):
+    
+    stem_en = (
+        f"Arrange the following {title_en} in correct chronological order:\n"
+        f"1. {events_en[0]}\n"
+        f"2. {events_en[1]}\n"
+        f"3. {events_en[2]}\n"
+        f"4. {events_en[3]}\n"
+        f"Select the correct chronological sequence:"
+    )
+    
+    stem_ta = (
+        f"பின்வரும் {title_ta} சரியான காலவரிசைப்படி ஒழுங்குபடுத்துக:\n"
+        f"1. {events_ta[0]}\n"
+        f"2. {events_ta[1]}\n"
+        f"3. {events_ta[2]}\n"
+        f"4. {events_ta[3]}\n"
+        f"சரியான காலவரிசையைத் தேர்ந்தெடுக்கவும்:"
+    )
+    
+    return make_ep_q(
+        PREFIX, num, DIFF, QTYPE, subtopic,
+        stem_en, stem_ta,
+        opt_codes[0], opt_codes[0],
+        opt_codes[1], opt_codes[1],
+        opt_codes[2], opt_codes[2],
+        opt_codes[3], opt_codes[3],
+        key,
+        exp_en, exp_ta,
+        why_a_en, why_a_ta,
+        why_b_en, why_b_ta,
+        why_c_en, why_c_ta,
+        why_d_en, why_d_ta,
+        tip_en, tip_ta,
+        fact_en, fact_ta
+    )
+
+def get_chronology_questions():
+    qs = []
+
+    # 001 - Key A: 1 - 2 - 3 - 4
+    qs.append(make_c_q(
+        1, "Emergency-Related Constitutional Amendments",
+        "Constitutional Amendment Acts affecting Emergency Provisions", "அவசரநிலைப் பிரிவுகளைப் பாதித்த அரசியலமைப்பு திருத்தச் சட்டங்கள்",
+        ["38th Constitutional Amendment Act", "42nd Constitutional Amendment Act", "44th Constitutional Amendment Act", "59th Constitutional Amendment Act"],
+        ["38-வது அரசியலமைப்பு திருத்தச் சட்டம்", "42-வது அரசியலமைப்பு திருத்தச் சட்டம்", "44-வது அரசியலமைப்பு திருத்தச் சட்டம்", "59-வது அரசியலமைப்பு திருத்தச் சட்டம்"],
+        ["1 - 2 - 3 - 4", "2 - 1 - 3 - 4", "1 - 3 - 2 - 4", "3 - 1 - 2 - 4"],
+        "A",
+        "The correct chronological order is: 38th CAA (August 1975) -> 42nd CAA (November 1976) -> 44th CAA (April 1978) -> 59th CAA (March 1988).",
+        "சரியான காலவரிசை: 38-வது திருத்தம் (ஆகஸ்ட் 1975) -> 42-வது திருத்தம் (நவம்பர் 1976) -> 44-வது திருத்தம் (ஏப்ரல் 1978) -> 59-வது திருத்தம் (மார்ச் 1988).",
+        "Option A is correct; correctly sequences all 4 landmark amendment acts.", "விருப்பம் A சரியானது; அனைத்து 4 மைல்கல் திருத்தச் சட்டங்களையும் சரியாக வரிசைப்படுத்துகிறது.",
+        "Option B incorrectly places the 42nd before the 38th Amendment.", "விருப்பம் B 42-வது திருத்தத்தை 38-வது திருத்தத்திற்கு முன் தவறாக வைக்கிறது.",
+        "Option C swaps 44th and 42nd Amendments.", "விருப்பம் C 44 மற்றும் 42-வது திருத்தங்களை மாற்றுகிறது.",
+        "Option D places 44th Amendment first.", "விருப்பம் D 44-வது திருத்தத்தை முதலிடத்தில் வைக்கிறது.",
+        "Key Amendment Timeline: 38th (1975) -> 42nd (1976) -> 44th (1978) -> 59th (1988).",
+        "முக்கியத் திருத்த காலவரிசை: 38-வது (1975) -> 42-வது (1976) -> 44-வது (1978) -> 59-வது (1988).",
+        "The 44th Amendment Act 1978 systematically repealed most of the emergency distortions introduced by the 38th and 42nd Amendments.",
+        "1978-ன் 44-வது திருத்தச் சட்டம் 38 மற்றும் 42-வது திருத்தங்களால் கொண்டுவரப்பட்ட அவசரநிலைக் கோளாறுகளை முறைப்படி நீக்கியது."
+    ))
+
+    # 002 - Key B: 2 - 1 - 3 - 4
+    qs.append(make_c_q(
+        2, "Landmark Emergency Jurisprudence",
+        "Landmark Supreme Court decisions on Emergency Provisions", "அவசரநிலைப் பிரிவுகள் தொடர்பான உச்ச நீதிமன்றத்தின் மைல்கல் தீர்ப்புகள்",
+        ["ADM Jabalpur v. Shivkant Shukla", "Makhan Singh v. State of Punjab", "Minerva Mills v. Union of India", "S.R. Bommai v. Union of India"],
+        ["ஏ.டி.எம். ஜபல்பூர் எதிர் சிவகாந்த் சுக்லா", "மக்கன் சிங் எதிர் பஞ்சாப் மாநிலம்", "மினர்வா மில்ஸ் எதிர் மத்திய அரசு", "எஸ்.ஆர். பொம்மை எதிர் மத்திய அரசு"],
+        ["1 - 2 - 3 - 4", "2 - 1 - 3 - 4", "2 - 3 - 1 - 4", "3 - 2 - 1 - 4"],
+        "B",
+        "The correct chronological order is: Makhan Singh (1964) -> ADM Jabalpur (April 1976) -> Minerva Mills (July 1980) -> S.R. Bommai (March 1994).",
+        "சரியான காலவரிசை: மக்கன் சிங் (1964) -> ஏ.டி.எம். ஜபல்பூர் (ஏப்ரல் 1976) -> மினர்வா மில்ஸ் (ஜூலை 1980) -> எஸ்.ஆர். பொம்மை (மார்ச் 1994).",
+        "Option A places ADM Jabalpur before Makhan Singh.", "விருப்பம் A ஏ.டி.எம். ஜபல்பூரை மக்கன் சிங்கிற்கு முன் வைக்கிறது.",
+        "Option B is correct; accurately orders the judicial milestones from 1964 to 1994.", "விருப்பம் B சரியானது; 1964 முதல் 1994 வரையிலான நீதித்துறை மைல்கல்களைத் துல்லியமாக வரிசைப்படுத்துகிறது.",
+        "Option C places Minerva Mills before ADM Jabalpur.", "விருப்பம் C மினர்வா மில்ஸை ஏ.டி.எம். ஜபல்பூருக்கு முன் வைக்கிறது.",
+        "Option D inverts the chronological order.", "விருப்பம் D காலவரிசையைத் தலைகீழாக மாற்றுகிறது.",
+        "Judicial Evolution: Makhan Singh (1964) -> ADM Jabalpur (1976) -> Minerva Mills (1980) -> S.R. Bommai (1994).",
+        "நீதித்துறை பரிணாமம்: மக்கன் சிங் (1964) -> ஏ.டி.எம். ஜபல்பூர் (1976) -> மினர்வா மில்ஸ் (1980) -> எஸ்.ஆர். பொம்மை (1994).",
+        "S.R. Bommai (1994) marked the watershed moment that drastically curtailed the arbitrary misuse of Article 356.",
+        "எஸ்.ஆர். பொம்மை (1994) சரத்து 356-ன் தன்னிச்சையான தவறான பயன்பாட்டை வெகுவாகக் குறைத்த ஒரு திருப்புமுனையாக அமைந்தது."
+    ))
+
+    # 003 - Key C: 1 - 2 - 3 - 4
+    qs.append(make_c_q(
+        3, "National Emergency Declarations and Revocations",
+        "Proclamations of National Emergency in India", "இந்தியாவில் தேசிய அவசரநிலைப் பிரகடனங்கள்",
+        ["First National Emergency (Chinese Aggression)", "Second National Emergency (Indo-Pak War)", "Third National Emergency (Internal Disturbance)", "Revocation of both Second and Third Emergencies"],
+        ["முதல் தேசிய அவசரநிலை (சீன ஆக்கிரமிப்பு)", "இரண்டாவது தேசிய அவசரநிலை (இந்தோ-பாகிஸ்தான் போர்)", "மூன்றாவது தேசிய அவசரநிலை (உள்நாட்டு அமைதியின்மை)", "இரண்டாவது மற்றும் மூன்றாவது அவசரநிலைகள் ரத்து"],
+        ["2 - 1 - 3 - 4", "1 - 3 - 2 - 4", "1 - 2 - 3 - 4", "3 - 1 - 2 - 4"],
+        "C",
+        "The correct chronological sequence is: First Proclamation (October 26, 1962) -> Second Proclamation (December 3, 1971) -> Third Proclamation (June 25, 1975) -> Revocation of both (March 21, 1977).",
+        "சரியான காலவரிசை: முதல் பிரகடனம் (அக்டோபர் 26, 1962) -> இரண்டாவது பிரகடனம் (டிசம்பர் 3, 1971) -> மூன்றாவது பிரகடனம் (ஜூன் 25, 1975) -> இரண்டும் ரத்து (மார்ச் 21, 1977).",
+        "Option A starts with the 1971 emergency.", "விருப்பம் A 1971 அவசரநிலையுடன் தொடங்குகிறது.",
+        "Option B swaps the 1971 and 1975 emergencies.", "விருப்பம் B 1971 மற்றும் 1975 அவசரநிலைகளை மாற்றுகிறது.",
+        "Option C is correct; exact chronological sequence of all 3 proclamations and their revocation.", "விருப்பம் C சரியானது; அனைத்து 3 பிரகடனங்கள் மற்றும் அவற்றின் ரத்து குறித்த துல்லியமான காலவரிசை.",
+        "Option D places 1975 first.", "விருப்பம் D 1975-ஐ முதலிடத்தில் வைக்கிறது.",
+        "Proclamation Timeline: Oct 1962 (NEFA) -> Dec 1971 (Bangladesh) -> June 1975 (Internal) -> March 1977 (Revoked).",
+        "பிரகடன காலவரிசை: அக்டோபர் 1962 (சீனா) -> டிசம்பர் 1971 (வங்காளதேசம்) -> ஜூன் 1975 (உள்நாட்டு) -> மார்ச் 1977 (ரத்து).",
+        "The first emergency lasted over 5 years (October 1962 to January 1968), covering both the 1962 China war and the 1965 Indo-Pak war.",
+        "முதல் அவசரநிலை 5 ஆண்டுகளுக்கு மேல் நீடித்தது (அக்டோபர் 1962 முதல் ஜனவரி 1968 வரை), இது 1962 சீனப் போர் மற்றும் 1965 இந்திய-பாகிஸ்தான் போர் இரண்டையும் உள்ளடக்கியது."
+    ))
+
+    # 004 - Key D: 1 - 2 - 3 - 4
+    qs.append(make_c_q(
+        4, "1975 Emergency Timeline",
+        "Key events leading to and during the 1975 Internal Emergency", "1975 உள்நாட்டு அவசரநிலைக்கு வழிவகுத்த மற்றும் அதன் போதான முக்கிய நிகழ்வுகள்",
+        ["Allahabad High Court judgment unseating PM Indira Gandhi", "Proclamation of Internal Emergency signed by President Fakhruddin Ali Ahmed", "Enactment of 39th Constitutional Amendment Act", "Shah Commission appointed to inquire into Emergency excesses"],
+        ["பிரதமர் இந்திரா காந்தியின் தேர்தலை செல்லாது என அறிவித்த அலகாபாத் உயர் நீதிமன்றத் தீர்ப்பு", "குடியரசுத் தலைவர் பக்ருதீன் அலி அகமது உள்நாட்டு அவசரநிலைப் பிரகடனத்தில் கையெழுத்திட்டது", "39-வது அரசியலமைப்பு திருத்தச் சட்டம் இயற்றப்பட்டது", "அவசரநிலை அத்துமீறல்களை விசாரிக்க ஷா ஆணையம் நியமிக்கப்பட்டது"],
+        ["2 - 1 - 3 - 4", "1 - 3 - 2 - 4", "3 - 1 - 2 - 4", "1 - 2 - 3 - 4"],
+        "D",
+        "The correct chronological sequence is: Allahabad High Court Judgment (June 12, 1975) -> Emergency proclaimed (night of June 25, 1975) -> 39th CAA enacted (August 10, 1975) -> Shah Commission appointed (May 28, 1977).",
+        "சரியான காலவரிசை: அலகாபாத் உயர் நீதிமன்றத் தீர்ப்பு (ஜூன் 12, 1975) -> அவசரநிலைப் பிரகடனம் (ஜூன் 25, 1975 இரவு) -> 39-வது திருத்தச் சட்டம் (ஆகஸ்ட் 10, 1975) -> ஷா ஆணையம் நியமனம் (மே 28, 1977).",
+        "Option A places proclamation before the Allahabad High Court judgment.", "விருப்பம் A அலகாபாத் தீர்ப்பிற்கு முன்பே பிரகடனத்தை வைக்கிறது.",
+        "Option B swaps 39th CAA and Emergency proclamation.", "விருப்பம் B 39-வது திருத்தத்தையும் அவசரநிலைப் பிரகடனத்தையும் மாற்றுகிறது.",
+        "Option C starts with 39th CAA.", "விருப்பம் C 39-வது திருத்தத்துடன் தொடங்குகிறது.",
+        "Option D is correct; perfectly orders the historic chain of events from June 1975 to May 1977.", "விருப்பம் D சரியானது; ஜூன் 1975 முதல் மே 1977 வரையிலான வரலாற்று நிகழ்வுகளைச் சரியாக வரிசைப்படுத்துகிறது.",
+        "1975 Watershed: June 12, 1975 (Justice Sinha judgment) -> June 25, 1975 (Midnight proclamation) -> Aug 1975 (39th CAA) -> May 1977 (Shah Commission).",
+        "1975 திருப்புமுனை: ஜூன் 12, 1975 (நீதிபதி சின்ஹா தீர்ப்பு) -> ஜூன் 25, 1975 (நள்ளிரவு பிரகடனம்) -> ஆகஸ்ட் 1975 (39-வது திருத்தம்) -> மே 1977 (ஷா ஆணையம்).",
+        "Justice J.C. Shah, former Chief Justice of India, headed the commission that documented extensive abuses of power during the emergency.",
+        "முன்னாள் இந்திய தலைமை நீதிபதி ஜே.சி. ஷா தலைமையிலான ஆணையம் அவசரநிலையின் போது நிகழ்ந்த அதிகார அத்துமீறல்களை விரிவாக ஆவணப்படுத்தியது."
+    ))
+
+    # 005 - Key A: 1 - 2 - 3 - 4
+    qs.append(make_c_q(
+        5, "First Application of Article 356 in States",
+        "First imposition of President's Rule in different States", "பல்வேறு மாநிலங்களில் முதன்முறையாகக் குடியரசுத் தலைவர் ஆட்சி விதிக்கப்பட்டது",
+        ["Punjab (East Punjab)", "Kerala", "Tamil Nadu", "Karnataka"],
+        ["பஞ்சாப் (கிழக்கு பஞ்சாப்)", "கேரளா", "தமிழ்நாடு", "கர்நாடகா"],
+        ["1 - 2 - 3 - 4", "2 - 1 - 3 - 4", "1 - 3 - 2 - 4", "3 - 1 - 2 - 4"],
+        "A",
+        "The correct chronological order of first imposition is: Punjab (June 1951) -> Kerala (July 1959) -> Tamil Nadu (January 1976) -> Karnataka (December 1977).",
+        "முதன்முறை விதிக்கப்பட்டதன் சரியான காலவரிசை: பஞ்சாப் (ஜூன் 1951) -> கேரளா (ஜூலை 1959) -> தமிழ்நாடு (ஜனவரி 1976) -> கர்நாடகா (டிசம்பர் 1977).",
+        "Option A is correct; captures the progressive spread of Article 356 across states.", "விருப்பம் A சரியானது; மாநிலங்களில் சரத்து 356 பரவிய காலவரிசையைத் துல்லியமாகப் படம்பிடிக்கிறது.",
+        "Option B places Kerala before Punjab.", "விருப்பம் B கேரளாவை பஞ்சாப்பிற்கு முன் வைக்கிறது.",
+        "Option C swaps Tamil Nadu and Kerala.", "விருப்பம் C தமிழ்நாடு மற்றும் கேரளாவை மாற்றுகிறது.",
+        "Option D places Tamil Nadu first.", "விருப்பம் D தமிழ்நாட்டை முதலிடத்தில் வைக்கிறது.",
+        "First Impositions: Punjab (1951) -> Kerala (1959) -> Tamil Nadu (1976) -> Karnataka (1977).",
+        "முதல் அமலாக்கங்கள்: பஞ்சாப் (1951) -> கேரளா (1959) -> தமிழ்நாடு (1976) -> கர்நாடகா (1977).",
+        "Punjab was the first state where President's Rule was imposed in independent India under Prime Minister Jawaharlal Nehru.",
+        "சுதந்திர இந்தியாவில் பிரதமர் ஜவஹர்லால் நேருவின் ஆட்சியில் குடியரசுத் தலைவர் ஆட்சி விதிக்கப்பட்ட முதல் மாநிலம் பஞ்சாப் ஆகும்."
+    ))
+
+    # 006 - Key B: 2 - 1 - 3 - 4
+    qs.append(make_c_q(
+        6, "Centre-State Relations Inquiries on Article 356",
+        "Committees and Commissions examining Article 356", "சரத்து 356-ஐ ஆய்வு செய்த குழுக்கள் மற்றும் ஆணையங்கள்",
+        ["Rajamannar Committee (Tamil Nadu)", "First Administrative Reforms Commission (ARC)", "Sarkaria Commission", "Punchhi Commission"],
+        ["ராஜமன்னார் குழு (தமிழ்நாடு)", "முதலாவது நிர்வாகச் சீர்திருத்த ஆணையம் (ARC)", "சர்க்காரியா ஆணையம்", "பூஞ்சி ஆணையம்"],
+        ["1 - 2 - 3 - 4", "2 - 1 - 3 - 4", "2 - 3 - 1 - 4", "3 - 2 - 1 - 4"],
+        "B",
+        "The correct chronological order of constitution is: First ARC (1966) -> Rajamannar Committee (September 1969) -> Sarkaria Commission (June 1983) -> Punchhi Commission (April 2007).",
+        "அமைக்கப்பட்டதன் சரியான காலவரிசை: முதலாவது ARC (1966) -> ராஜமன்னார் குழு (செப்டம்பர் 1969) -> சர்க்காரியா ஆணையம் (ஜூன் 1983) -> பூஞ்சி ஆணையம் (ஏப்ரல் 2007).",
+        "Option A places Rajamannar Committee before First ARC.", "விருப்பம் A ராஜமன்னார் குழுவை முதலாவது ARC-க்கு முன் வைக்கிறது.",
+        "Option B is correct; perfectly sequences all four famous Centre-State bodies.", "விருப்பம் B சரியானது; நான்கு புகழ்பெற்ற மத்திய-மாநில அமைப்புகளையும் சரியாக வரிசைப்படுத்துகிறது.",
+        "Option C places Sarkaria before Rajamannar.", "விருப்பம் C சர்க்காரியாவை ராஜமன்னாருக்கு முன் வைக்கிறது.",
+        "Option D inverts the timeline.", "விருப்பம் D காலவரிசையைத் தலைகீழாக மாற்றுகிறது.",
+        "Inquiry Bodies Timeline: 1st ARC (1966) -> Rajamannar (1969) -> Sarkaria (1983) -> Punchhi (2007).",
+        "ஆய்வு அமைப்புகள் காலவரிசை: 1-வது ARC (1966) -> ராஜமன்னார் (1969) -> சர்க்காரியா (1983) -> பூஞ்சி (2007).",
+        "The Rajamannar Committee was appointed by the DMK Government of Tamil Nadu and recommended the total deletion of Articles 356 and 357.",
+        "தமிழக திமுக அரசால் நியமிக்கப்பட்ட ராஜமன்னார் குழு, சரத்துகள் 356 மற்றும் 357-ஐ அரசியலமைப்பிலிருந்து முற்றிலும் நீக்கப் பரிந்துரைத்தது."
+    ))
+
+    # 007 - Key C: 1 - 2 - 3 - 4
+    qs.append(make_c_q(
+        7, "Key Judicial Milestones on Article 356",
+        "Judicial decisions interpreting Article 356", "சரத்து 356-க்கு விளக்கமளித்த நீதித்துறை தீர்ப்புகள்",
+        ["State of Rajasthan v. Union of India", "S.R. Bommai v. Union of India", "Rameshwar Prasad v. Union of India", "Nabam Rebia v. Deputy Speaker"],
+        ["ராஜஸ்தான் மாநிலம் எதிர் மத்திய அரசு", "எஸ்.ஆர். பொம்மை எதிர் மத்திய அரசு", "ராமேஷ்வர் பிரசாத் எதிர் மத்திய அரசு", "நபம் ரெபியா எதிர் துணை சபாநாயகர்"],
+        ["2 - 1 - 3 - 4", "1 - 3 - 2 - 4", "1 - 2 - 3 - 4", "3 - 1 - 2 - 4"],
+        "C",
+        "The correct chronological order is: State of Rajasthan (1977) -> S.R. Bommai (1994) -> Rameshwar Prasad (2006) -> Nabam Rebia (2016).",
+        "சரியான காலவரிசை: ராஜஸ்தான் மாநில வழக்கு (1977) -> எஸ்.ஆர். பொம்மை (1994) -> ராமேஷ்வர் பிரசாத் (2006) -> நபம் ரெபியா (2016).",
+        "Option A places Bommai before Rajasthan case.", "விருப்பம் A பொம்மை வழக்கை ராஜஸ்தான் வழக்கிற்கு முன் வைக்கிறது.",
+        "Option B swaps Bommai and Rameshwar Prasad.", "விருப்பம் B பொம்மை மற்றும் ராமேஷ்வர் பிரசாத் வழக்குகளை மாற்றுகிறது.",
+        "Option C is correct; accurately captures the 40-year evolution of Article 356 jurisprudence.", "விருப்பம் C சரியானது; சரத்து 356 நீதித்துறை வரலாற்றின் 40 ஆண்டு கால பரிணாமத்தைத் துல்லியமாக வரிசைப்படுத்துகிறது.",
+        "Option D places Rameshwar Prasad first.", "விருப்பம் D ராமேஷ்வர் பிரசாத்தை முதலிடத்தில் வைக்கிறது.",
+        "Article 356 Case Milestones: Rajasthan (1977) -> Bommai (1994) -> Rameshwar Prasad (2006) -> Nabam Rebia (2016).",
+        "சரத்து 356 வழக்கு மைல்கல்கள்: ராஜஸ்தான் (1977) -> பொம்மை (1994) -> ராமேஷ்வர் பிரசாத் (2006) -> நபம் ரெபியா (2016).",
+        "In Nabam Rebia (2016), the Supreme Court restored the dismissed Congress government in Arunachal Pradesh.",
+        "நபம் ரெபியா (2016) வழக்கில், அருணாச்சலப் பிரதேசத்தில் கலைக்கப்பட்ட காங்கிரஸ் அரசை உச்ச நீதிமன்றம் மீண்டும் பழைய நிலைக்குக் கொண்டுவந்தது."
+    ))
+
+    # 008 - Key D: 1 - 2 - 3 - 4
+    qs.append(make_c_q(
+        8, "Punjab Special Constitutional Amendments Sequence",
+        "Constitutional Amendments extending President's Rule in Punjab", "பஞ்சாபில் குடியரசுத் தலைவர் ஆட்சியை நீட்டித்த அரசியலமைப்பு திருத்தங்கள்",
+        ["48th Constitutional Amendment Act", "59th Constitutional Amendment Act", "64th Constitutional Amendment Act", "68th Constitutional Amendment Act"],
+        ["48-வது அரசியலமைப்பு திருத்தச் சட்டம்", "59-வது அரசியலமைப்பு திருத்தச் சட்டம்", "64-வது அரசியலமைப்பு திருத்தச் சட்டம்", "68-வது அரசியலமைப்பு திருத்தச் சட்டம்"],
+        ["2 - 1 - 3 - 4", "1 - 3 - 2 - 4", "3 - 1 - 2 - 4", "1 - 2 - 3 - 4"],
+        "D",
+        "The correct chronological order is: 48th CAA (1984) -> 59th CAA (1988) -> 64th CAA (1990) -> 68th CAA (1991).",
+        "சரியான காலவரிசை: 48-வது திருத்தம் (1984) -> 59-வது திருத்தம் (1988) -> 64-வது திருத்தம் (1990) -> 68-வது திருத்தம் (1991).",
+        "Option A places 59th before 48th CAA.", "விருப்பம் A 59-வது திருத்தத்தை 48-வது திருத்தத்திற்கு முன் வைக்கிறது.",
+        "Option B swaps 59th and 64th CAAs.", "விருப்பம் B 59 மற்றும் 64-வது திருத்தங்களை மாற்றுகிறது.",
+        "Option C starts with 64th CAA.", "விருப்பம் C 64-வது திருத்தத்துடன் தொடங்குகிறது.",
+        "Option D is correct; accurately orders the successive amendments enacted specifically for Punjab.", "விருப்பம் D சரியானது; பஞ்சாபிற்காக பிரத்யேகமாக இயற்றப்பட்ட தொடர்ச்சியான திருத்தங்களைச் சரியாக வரிசைப்படுத்துகிறது.",
+        "Punjab Amendment Series: 48th (1984) -> 59th (1988) -> 64th (1990) -> 67th (1990) -> 68th (1991).",
+        "பஞ்சாப் திருத்தத் தொடர்: 48-வது (1984) -> 59-வது (1988) -> 64-வது (1990) -> 67-வது (1990) -> 68-வது (1991).",
+        "By the 68th CAA 1991, President's Rule in Punjab was extended to a total maximum of five years.",
+        "1991-ன் 68-வது திருத்தச் சட்டத்தின் மூலம் பஞ்சாபில் குடியரசுத் தலைவர் ஆட்சி மொத்தம் அதிகபட்சமாக ஐந்து ஆண்டுகள் வரை நீட்டிக்கப்பட்டது."
+    ))
+
+    # 009 - Key A: 1 - 2 - 3 - 4
+    qs.append(make_c_q(
+        9, "Steps in Parliamentary Approval of Article 352",
+        "Sequential stages in the proclamation and parliamentary approval of National Emergency", "தேசிய அவசரநிலைப் பிரகடனம் மற்றும் பாராளுமன்ற ஒப்புதலின் தொடர்ச்சியான நிலைகள்",
+        ["Written advice tendered by the Union Cabinet to the President", "President issues the Proclamation of National Emergency", "Approval by both Houses of Parliament by Special Majority within one month", "Periodic renewal by both Houses by Special Majority every six months"],
+        ["மத்திய அமைச்சரவை குடியரசுத் தலைவருக்கு எழுத்துப்பூர்வப் பரிந்துரை அளித்தல்", "குடியரசுத் தலைவர் தேசிய அவசரநிலைப் பிரகடனத்தை வெளியிடுதல்", "ஒரு மாதத்திற்குள் இரு அவைகளிலும் சிறப்புப் பெரும்பான்மையால் ஒப்புதல் அளித்தல்", "ஒவ்வொரு ஆறு மாதங்களுக்கும் இரு அவைகளிலும் சிறப்புப் பெரும்பான்மையால் காலமுறைப் புதுப்பித்தல்"],
+        ["1 - 2 - 3 - 4", "2 - 1 - 3 - 4", "1 - 3 - 2 - 4", "3 - 1 - 2 - 4"],
+        "A",
+        "The correct operational sequence under Article 352 is: Cabinet written communication -> Presidential proclamation -> Parliamentary approval within 1 month -> Renewal every 6 months.",
+        "சரத்து 352-ன் கீழான சரியான செயல்பாட்டு வரிசை: அமைச்சரவையின் எழுத்துப்பூர்வ தகவல் -> குடியரசுத் தலைவர் பிரகடனம் -> 1 மாதத்திற்குள் பாராளுமன்ற ஒப்புதல் -> ஒவ்வொரு 6 மாதங்களுக்கும் புதுப்பித்தல்.",
+        "Option A is correct; captures the step-by-step constitutional procedure under Article 352.", "விருப்பம் A சரியானது; சரத்து 352-ன் கீழான படிபடியான அரசியலமைப்பு நடைமுறையைத் துல்லியமாகப் படம்பிடிக்கிறது.",
+        "Option B places proclamation before Cabinet advice.", "விருப்பம் B அமைச்சரவைப் பரிந்துரைக்கு முன்பே பிரகடனத்தை வைக்கிறது.",
+        "Option C places parliamentary approval before proclamation.", "விருப்பம் C பிரகடனத்திற்கு முன்பே பாராளுமன்ற ஒப்புதலை வைக்கிறது.",
+        "Option D inverts the procedural steps.", "விருப்பம் D நடைமுறைப் படிகளைத் தலைகீழாக மாற்றுகிறது.",
+        "Article 352 Procedure: Cabinet Written Decision -> President Proclamation -> 30-Day Parliamentary Approval (Special Majority) -> 6-Month Renewal.",
+        "சரத்து 352 நடைமுறை: அமைச்சரவை எழுத்துப்பூர்வ முடிவு -> குடியரசுத் தலைவர் பிரகடனம் -> 30 நாள் பாராளுமன்ற ஒப்புதல் (சிறப்புப் பெரும்பான்மை) -> 6 மாதப் புதுப்பித்தல்.",
+        "If Lok Sabha is dissolved during the one-month period, the proclamation lasts until 30 days from the first sitting of the new Lok Sabha.",
+        "ஒரு மாத காலத்திற்குள் மக்களவை கலைக்கப்பட்டால், புதிய மக்களவையின் முதல் கூட்டத்திலிருந்து 30 நாட்கள் வரை அப்பிரகடனம் நீடிக்கும்."
+    ))
+
+    # 010 - Key B: 2 - 1 - 3 - 4
+    qs.append(make_c_q(
+        10, "Tamil Nadu Article 356 Impositions",
+        "Instances of President's Rule in Tamil Nadu", "தமிழ்நாட்டில் குடியரசுத் தலைவர் ஆட்சி அமல்படுத்தப்பட்ட நிகழ்வுகள்",
+        ["Dismissal of MGR ministry following Indira Gandhi's return to power", "Dismissal of Karunanidhi ministry during the National Emergency", "Dismissal of Janaki Ramachandran ministry after assembly turmoil", "Dismissal of Karunanidhi ministry on Sri Lankan / LTTE issue"],
+        ["இந்திரா காந்தி மீண்டும் ஆட்சிக்கு வந்ததைத் தொடர்ந்து எம்.ஜி.ஆர் அரசு கலைக்கப்பட்டது", "தேசிய அவசரநிலையின் போது கருணாநிதி அரசு கலைக்கப்பட்டது", "சட்டமன்றக் குழப்பத்தைத் தொடர்ந்து ஜானகி ராமச்சந்திரன் அரசு கலைக்கப்பட்டது", "இலங்கை / விடுதலைப் புலிகள் விவகாரத்தில் கருணாநிதி அரசு கலைக்கப்பட்டது"],
+        ["1 - 2 - 3 - 4", "2 - 1 - 3 - 4", "2 - 3 - 1 - 4", "3 - 2 - 1 - 4"],
+        "B",
+        "The correct chronological order of President's Rule in Tamil Nadu is: Jan 1976 (Karunanidhi) -> Feb 1980 (MGR) -> Jan 1988 (Janaki Ramachandran) -> Feb 1991 (Karunanidhi).",
+        "தமிழ்நாட்டில் குடியரசுத் தலைவர் ஆட்சியின் சரியான காலவரிசை: ஜனவரி 1976 (கருணாநிதி) -> பிப்ரவரி 1980 (எம்.ஜி.ஆர்) -> ஜனவரி 1988 (ஜானகி ராமச்சந்திரன்) -> பிப்ரவரி 1991 (கருணாநிதி).",
+        "Option A places 1980 before 1976.", "விருப்பம் A 1980-ஐ 1976-க்கு முன் வைக்கிறது.",
+        "Option B is correct; accurately orders all four historical spells of Article 356 in Tamil Nadu.", "விருப்பம் B சரியானது; தமிழ்நாட்டில் சரத்து 356 அமல்படுத்தப்பட்ட நான்கு வரலாற்று நிகழ்வுகளையும் சரியாக வரிசைப்படுத்துகிறது.",
+        "Option C places Janaki ministry dismissal before MGR dismissal.", "விருப்பம் C ஜானகி அரசு கலைப்பை எம்.ஜி.ஆர் கலைப்பிற்கு முன் வைக்கிறது.",
+        "Option D inverts the timeline.", "விருப்பம் D காலவரிசையைத் தலைகீழாக மாற்றுகிறது.",
+        "Tamil Nadu President's Rule: 1976 (Emergency) -> 1980 (Post-Lok Sabha election) -> 1988 (MGR demise) -> 1991 (LTTE issue).",
+        "தமிழ்நாடு குடியரசுத் தலைவர் ஆட்சி: 1976 (அவசரநிலை) -> 1980 (மக்களவைத் தேர்தலுக்குப் பின்) -> 1988 (எம்.ஜி.ஆர் மறைவு) -> 1991 (விடுதலைப் புலிகள் விவகாரம்).",
+        "In 1980, after being dismissed, M.G. Ramachandran led the AIADMK to a landslide victory in the subsequent state elections.",
+        "1980-ல் பதவி நீக்கம் செய்யப்பட்ட பிறகு, அதைத் தொடர்ந்து நடைபெற்ற மாநிலத் தேர்தலில் எம்.ஜி. ராமச்சந்திரன் தலைமையிலான அதிமுக அமோக வெற்றி பெற்றது."
+    ))
+
+    # 011 - Key C: 1 - 2 - 3 - 4
+    qs.append(make_c_q(
+        11, "Constitutional Protection of Articles 20 and 21 Evolution",
+        "Historical evolution leading to non-derogability of Articles 20 and 21", "சரத்துகள் 20 மற்றும் 21-ன் பறிக்க முடியாத தன்மைக்கு வழிவகுத்த வரலாற்றுப் பரிணாமம்",
+        ["Presidential Order suspending right to move courts for Article 21 enforcement", "Supreme Court majority judgment in ADM Jabalpur v. Shivkant Shukla", "44th Constitutional Amendment Act expressly exempting Articles 20 and 21", "Supreme Court judgment in K.S. Puttaswamy overruling ADM Jabalpur"],
+        ["சரத்து 21-ஐச் செயல்படுத்த நீதிமன்றங்களை நாடும் உரிமையை இடைநிறுத்திய குடியரசுத் தலைவர் ஆணை", "ஏ.டி.எம். ஜபல்பூர் வழக்கில் உச்ச நீதிமன்றப் பெரும்பான்மைத் தீர்ப்பு", "சரத்துகள் 20 மற்றும் 21-க்கு வெளிப்படையாக விலக்களித்த 44-வது அரசியலமைப்பு திருத்தச் சட்டம்", "ஏ.டி.எம். ஜபல்பூர் தீர்ப்பை ரத்து செய்த உச்ச நீதிமன்றத்தின் கே.எஸ். புட்டசுவாமி தீர்ப்பு"],
+        ["2 - 1 - 3 - 4", "1 - 3 - 2 - 4", "1 - 2 - 3 - 4", "3 - 1 - 2 - 4"],
+        "C",
+        "The correct chronological evolution is: Presidential Order under Art 359 (June 27, 1975) -> ADM Jabalpur ruling (April 28, 1976) -> 44th CAA enacted (April 1978) -> Puttaswamy ruling (August 24, 2017).",
+        "சரியான வரலாற்றுப் பரிணாம வரிசை: சரத்து 359 குடியரசுத் தலைவர் ஆணை (ஜூன் 27, 1975) -> ஏ.டி.எம். ஜபல்பூர் தீர்ப்பு (ஏப்ரல் 28, 1976) -> 44-வது திருத்தச் சட்டம் (ஏப்ரல் 1978) -> புட்டசுவாமி தீர்ப்பு (ஆகஸ்ட் 24, 2017).",
+        "Option A places ADM Jabalpur before the Presidential Order.", "விருப்பம் A குடியரசுத் தலைவர் ஆணைக்கு முன்பே ஏ.டி.எம். ஜபல்பூரை வைக்கிறது.",
+        "Option B swaps 44th CAA and ADM Jabalpur.", "விருப்பம் B 44-வது திருத்தத்தையும் ஏ.டி.எம். ஜபல்பூரையும் மாற்றுகிறது.",
+        "Option C is correct; accurately captures the historic trajectory of Article 21 during emergencies.", "விருப்பம் C சரியானது; அவசரநிலையின் போது சரத்து 21-ன் வரலாற்றுப் பாதையைத் துல்லியமாகப் படம்பிடிக்கிறது.",
+        "Option D places 44th CAA first.", "விருப்பம் D 44-வது திருத்தத்தை முதலிடத்தில் வைக்கிறது.",
+        "Article 21 Trajectory: 1975 (Suspended by Order) -> 1976 (ADM Jabalpur upheld) -> 1978 (44th CAA protected) -> 2017 (ADM Jabalpur overruled).",
+        "சரத்து 21 பாதை: 1975 (ஆணையால் இடைநிறுத்தம்) -> 1976 (ஜபல்பூர் உறுதி செய்தது) -> 1978 (44-வது திருத்தம் பாதுகாத்தது) -> 2017 (ஜபல்பூர் ரத்து செய்யப்பட்டது).",
+        "Justice H.R. Khanna was superseded for the post of Chief Justice of India due to his courageous dissent in the ADM Jabalpur case.",
+        "ஏ.டி.எம். ஜபல்பூர் வழக்கில் தைரியமாக மாறுபட்ட தீர்ப்பு வழங்கிய காரணத்தால் நீதிபதி எச்.ஆர். கண்ணா இந்திய தலைமை நீதிபதி பதவியில் புறக்கணிக்கப்பட்டார்."
+    ))
+
+    # 012 - Key D: 1 - 2 - 3 - 4
+    qs.append(make_c_q(
+        12, "Life of the Fifth Lok Sabha during Emergency",
+        "Events in the extension and dissolution of the Fifth Lok Sabha", "ஐந்தாவது மக்களவையின் பதவிக்கால நீட்டிப்பு மற்றும் கலைப்பில் நிகழ்ந்த நிகழ்வுகள்",
+        ["General elections held electing the Fifth Lok Sabha", "House of the People (Extension of Duration) Act extending term by one year", "House of the People (Extension of Duration) Amendment Act extending term by second year", "Dissolution of the Fifth Lok Sabha and conduct of general elections"],
+        ["ஐந்தாவது மக்களவையைத் தேர்ந்தெடுத்த பொதுத்தேர்தல் நடைபெற்றது", "மக்களவையின் ஆயுளை ஓராண்டு நீட்டிக்கும் சட்டம் இயற்றப்பட்டது", "மக்களவையின் ஆயுளை இரண்டாவது ஆண்டாக நீட்டிக்கும் சட்டத்திருத்தம் இயற்றப்பட்டது", "ஐந்தாவது மக்களவை கலைக்கப்பட்டு பொதுத்தேர்தல் நடத்தப்பட்டது"],
+        ["2 - 1 - 3 - 4", "1 - 3 - 2 - 4", "3 - 1 - 2 - 4", "1 - 2 - 3 - 4"],
+        "D",
+        "The correct chronological sequence is: Fifth Lok Sabha elected (March 1971) -> First extension for 1 year (February 1976) -> Second extension for 1 year (November 1976) -> Dissolution and elections (March 1977).",
+        "சரியான காலவரிசை: 5-வது மக்களவை தேர்தல் (மார்ச் 1971) -> 1-வது ஓராண்டு நீட்டிப்பு (பிப்ரவரி 1976) -> 2-வது ஓராண்டு நீட்டிப்பு (நவம்பர் 1976) -> கலைப்பு மற்றும் தேர்தல் (மார்ச் 1977).",
+        "Option A starts with the extension act.", "விருப்பம் A நீட்டிப்புச் சட்டத்துடன் தொடங்குகிறது.",
+        "Option B swaps the two extension acts.", "விருப்பம் B இரண்டு நீட்டிப்புச் சட்டங்களை மாற்றுகிறது.",
+        "Option C places the second extension first.", "விருப்பம் C இரண்டாவது நீட்டிப்பை முதலிடத்தில் வைக்கிறது.",
+        "Option D is correct; perfectly orders the unique history of the only extended Lok Sabha in Indian history.", "விருப்பம் D சரியானது; இந்திய வரலாற்றில் பதவிக்காலம் நீட்டிக்கப்பட்ட ஒரே மக்களவையின் வரலாற்றைச் சரியாக வரிசைப்படுத்துகிறது.",
+        "Fifth Lok Sabha: Elected 1971 -> Extended in Feb 1976 -> Extended in Nov 1976 -> Dissolved March 1977.",
+        "ஐந்தாவது மக்களவை: 1971-ல் தேர்ந்தெடுக்கப்பட்டது -> பிப் 1976-ல் நீட்டிக்கப்பட்டது -> நவ 1976-ல் நீட்டிக்கப்பட்டது -> மார்ச் 1977-ல் கலைக்கப்பட்டது.",
+        "Article 83(2) proviso authorizes Parliament to extend the life of the Lok Sabha by law for up to one year at a time during emergency.",
+        "அவசரநிலையின் போது மக்களவையின் ஆயுளை சட்டத்தின் மூலம் ஒரு நேரத்தில் ஓராண்டு வரை நீட்டிக்க சரத்து 83(2)-ன் வரம்புரை பாராளுமன்றத்திற்கு அதிகாரமளிக்கிறது."
+    ))
+
+    # 013 - Key A: 1 - 2 - 3 - 4
+    qs.append(make_c_q(
+        13, "Constituent Assembly Drafting Stages of Part XVIII",
+        "Stages in the formulation of Emergency Provisions in the Constituent Assembly", "அரசியலமைப்பு நிர்ணய சபையில் அவசரநிலைப் பிரிவுகள் உருவாக்கப்பட்டதன் நிலைகள்",
+        ["Drafting Committee introduces Emergency Provisions based on GoI Act 1935", "Debates in the Constituent Assembly on suspension of Fundamental Rights", "Dr. B.R. Ambedkar delivers defense of emergency powers and 'dead letter' speech", "Adoption of Part XVIII as part of the Constitution of India"],
+        ["1935 இந்திய அரசுச் சட்டத்தின் அடிப்படையில் வரைவுக் குழு அவசரநிலைப் பிரிவுகளை அறிமுகப்படுத்தியது", "அடிப்படை உரிமைகள் இடைநிறுத்தம் குறித்து அரசியலமைப்பு நிர்ணய சபையில் நடைபெற்ற விவாதங்கள்", "டாக்டர் அம்பேத்கர் அவசரநிலை அதிகாரங்களை ஆதரித்துப் பேசி 'செயலற்ற எழுத்து' உரையாற்றியது", "இந்திய அரசியலமைப்பின் ஒரு பகுதியாக பகுதி XVIII ஏற்றுக்கொள்ளப்பட்டது"],
+        ["1 - 2 - 3 - 4", "2 - 1 - 3 - 4", "1 - 3 - 2 - 4", "3 - 1 - 2 - 4"],
+        "A",
+        "The correct historical sequence is: Drafting Committee draft presented (1948) -> Debates on Part III suspension (August 1949) -> Ambedkar's famous 'dead letter' speech (August 4, 1949) -> Final adoption (November 26, 1949).",
+        "சரியான வரலாற்று வரிசை: வரைவுக் குழு வரைவு சமர்ப்பித்தல் (1948) -> பகுதி III இடைநிறுத்த விவாதங்கள் (ஆகஸ்ட் 1949) -> அம்பேத்கரின் புகழ்பெற்ற 'செயலற்ற எழுத்து' உரை (ஆகஸ்ட் 4, 1949) -> இறுதி ஏற்பு (நவம்பர் 26, 1949).",
+        "Option A is correct; captures the drafting history of Part XVIII in the Constituent Assembly.", "விருப்பம் A சரியானது; அரசியலமைப்பு நிர்ணய சபையில் பகுதி XVIII உருவாக்கப்பட்ட வரலாற்றைச் சரியாகப் படம்பிடிக்கிறது.",
+        "Option B places debates before the draft introduction.", "விருப்பம் B வரைவு அறிமுகத்திற்கு முன்பே விவாதங்களை வைக்கிறது.",
+        "Option C swaps Ambedkar's speech and debates.", "விருப்பம் C அம்பேத்கரின் உரையையும் விவாதங்களையும் மாற்றுகிறது.",
+        "Option D inverts the stages of adoption.", "விருப்பம் D ஏற்பின் நிலைகளைத் தலைகீழாக மாற்றுகிறது.",
+        "Drafting Milestones: Draft 1948 -> Debates August 1949 -> Ambedkar's defense Aug 4, 1949 -> Adoption Nov 26, 1949.",
+        "வரைவு மைல்கல்கள்: வரைவு 1948 -> விவாதங்கள் ஆகஸ்ட் 1949 -> அம்பேத்கரின் வாதம் ஆகஸ்ட் 4, 1949 -> ஏற்பு நவம்பர் 26, 1949.",
+        "H.V. Kamath and Shibban Lal Saksena were the most outspoken critics of the emergency provisions during the debates.",
+        "விவாதங்களின் போது எச்.வி. காமத் மற்றும் சிபன் லால் சக்சேனா ஆகியோர் அவசரநிலைப் பிரிவுகளைக் கடுமையாக விமர்சித்தவர்களில் முதன்மையானவர்கள்."
+    ))
+
+    # 014 - Key B: 2 - 1 - 3 - 4
+    qs.append(make_c_q(
+        14, "Judicial Review of Article 356 Proclamations",
+        "Institutional milestones concerning Article 356 scrutiny", "சரத்து 356 ஆய்வுக் குறித்த நிறுவன மைல்கல்கள்",
+        ["38th Constitutional Amendment Act bars judicial review of Article 356", "Rajamannar Committee Report on Centre-State Relations", "44th Constitutional Amendment Act restores judicial review of Article 356", "S.R. Bommai v. Union of India lays down comprehensive objective standards"],
+        ["38-வது அரசியலமைப்பு திருத்தச் சட்டம் சரத்து 356-ன் நீதி மறுஆய்வைத் தடை செய்தது", "மத்திய-மாநில உறவுகள் குறித்த ராஜமன்னார் குழு அறிக்கை", "44-வது அரசியலமைப்பு திருத்தச் சட்டம் சரத்து 356-ன் நீதி மறுஆய்வை மீட்டெடுத்தது", "எஸ்.ஆர். பொம்மை வழக்கு விரிவான புறநிலைத் தரங்களை வகுத்தது"],
+        ["1 - 2 - 3 - 4", "2 - 1 - 3 - 4", "2 - 3 - 1 - 4", "3 - 2 - 1 - 4"],
+        "B",
+        "The correct chronological order is: Rajamannar Committee Report (1971) -> 38th CAA bar on judicial review (1975) -> 44th CAA restoring judicial review (1978) -> S.R. Bommai judgment establishing strict scrutiny (1994).",
+        "சரியான காலவரிசை: ராஜமன்னார் குழு அறிக்கை (1971) -> 38-வது திருத்தத்தின் நீதி மறுஆய்வுத் தடை (1975) -> 44-வது திருத்தம் நீதி மறுஆய்வை மீட்டெடுத்தது (1978) -> எஸ்.ஆர். பொம்மை தீர்ப்பு கடுமையான புறநிலை ஆய்வை நிறுவியது (1994).",
+        "Option A places 38th CAA before Rajamannar Report.", "விருப்பம் A 38-வது திருத்தத்தை ராஜமன்னார் அறிக்கைக்கு முன் வைக்கிறது.",
+        "Option B is correct; perfectly orders the institutional evolution from 1971 to 1994.", "விருப்பம் B சரியானது; 1971 முதல் 1994 வரையிலான நிறுவனப் பரிணாமத்தை சரியாக வரிசைப்படுத்துகிறது.",
+        "Option C swaps 44th CAA and 38th CAA.", "விருப்பம் C 44 மற்றும் 38-வது திருத்தங்களை மாற்றுகிறது.",
+        "Option D inverts the timeline.", "விருப்பம் D காலவரிசையைத் தலைகீழாக மாற்றுகிறது.",
+        "Milestones: Rajamannar Report (1971) -> 38th CAA (1975) -> 44th CAA (1978) -> Bommai (1994).",
+        "மைல்கல்கள்: ராஜமன்னார் அறிக்கை (1971) -> 38-வது திருத்தம் (1975) -> 44-வது திருத்தம் (1978) -> பொம்மை (1994).",
+        "The 44th CAA deleted Article 356(5) which had made the President's satisfaction final and conclusive.",
+        "குடியரசுத் தலைவரின் திருப்தியை இறுதியானது என ஆக்கியிருந்த சரத்து 356(5)-ஐ 44-வது திருத்தச் சட்டம் நீக்கியது."
+    ))
+
+    # 015 - Key C: 1 - 2 - 3 - 4
+    qs.append(make_c_q(
+        15, "Wholesale Dissolutions under Article 356",
+        "Wholesale dissolutions of state assemblies in Indian political history", "இந்திய அரசியல் வரலாற்றில் ஒட்டுமொத்தமாக மாநில சட்டமன்றங்கள் கலைக்கப்பட்ட நிகழ்வுகள்",
+        ["Dissolution of 9 Congress-ruled state assemblies by Janata Party Government", "Dissolution of 9 opposition-ruled state assemblies by Indira Gandhi Government", "Dismissal of 4 BJP-ruled state governments following Babri Masjid demolition", "Supreme Court verdict in S.R. Bommai v. Union of India declaring arbitrary dissolutions illegal"],
+        ["ஜனதா கட்சி அரசால் 9 காங்கிரஸ் ஆளும் மாநில சட்டமன்றங்கள் கலைக்கப்பட்டது", "இந்திரா காந்தி அரசால் 9 எதிர்க்கட்சி ஆளும் மாநில சட்டமன்றங்கள் கலைக்கப்பட்டது", "பாபர் மசூதி இடிப்பைத் தொடர்ந்து 4 பாஜக ஆளும் மாநில அரசுகள் கலைக்கப்பட்டது", "தன்னிச்சையான கலைப்புகள் சட்டவிரோதமானவை என அறிவித்த எஸ்.ஆர். பொம்மை உச்ச நீதிமன்றத் தீர்ப்பு"],
+        ["2 - 1 - 3 - 4", "1 - 3 - 2 - 4", "1 - 2 - 3 - 4", "3 - 1 - 2 - 4"],
+        "C",
+        "The correct chronological sequence is: Janata Govt dissolution of 9 states (April 1977) -> Indira Gandhi Govt dissolution of 9 states (February 1980) -> Dismissal of 4 BJP state govts (December 1992) -> S.R. Bommai judgment (March 1994).",
+        "சரியான காலவரிசை: ஜனதா அரசால் 9 மாநிலங்கள் கலைப்பு (ஏப்ரல் 1977) -> இந்திரா காந்தி அரசால் 9 மாநிலங்கள் கலைப்பு (பிப்ரவரி 1980) -> 4 பாஜக அரசுகள் கலைப்பு (டிசம்பர் 1992) -> எஸ்.ஆர். பொம்மை தீர்ப்பு (மார்ச் 1994).",
+        "Option A places 1980 dissolutions before 1977.", "விருப்பம் A 1980 கலைப்பை 1977-க்கு முன் வைக்கிறது.",
+        "Option B swaps 1980 dissolutions with 1992 dismissals.", "விருப்பம் B 1980 கலைப்பை 1992 கலைப்புகளுடன் மாற்றுகிறது.",
+        "Option C is correct; accurately captures the famous tit-for-tat dissolution episodes and the Bommai climax.", "விருப்பம் C சரியானது; புகழ்பெற்ற பழிவாங்கும் கலைப்புகள் மற்றும் பொம்மை வழக்கின் உச்சக்கட்டத்தை சரியாகப் படம்பிடிக்கிறது.",
+        "Option D inverts the timeline.", "விருப்பம் D காலவரிசையைத் தலைகீழாக மாற்றுகிறது.",
+        "Wholesale Dissolution Milestones: 1977 (Janata dissolves 9) -> 1980 (Congress dissolves 9) -> 1992 (Babri dismissal of 4) -> 1994 (Bommai judgment).",
+        "ஒட்டுமொத்த கலைப்பு மைல்கல்கள்: 1977 (ஜனதா 9-ஐக் கலைத்தது) -> 1980 (காங்கிரஸ் 9-ஐக் கலைத்தது) -> 1992 (பாபர் இடிப்பால் 4 கலைப்பு) -> 1994 (பொம்மை தீர்ப்பு).",
+        "The Bommai judgment put a decisive end to the wholesale dissolution of state assemblies upon change of government at the Centre.",
+        "மத்தியில் ஆட்சி மாறும்போது ஒட்டுமொத்தமாக மாநில சட்டமன்றங்களைக் கலைக்கும் முறைக்கு பொம்மை தீர்ப்பு உறுதியான முற்றுப்புள்ளி வைத்தது."
+    ))
+
+    # 016 - Key D: 1 - 2 - 3 - 4
+    qs.append(make_c_q(
+        16, "Presidents Signing Article 352 Proclamations",
+        "Presidents of India who signed Proclamations of National Emergency", "தேசிய அவசரநிலைப் பிரகடனங்களில் கையெழுத்திட்ட இந்தியக் குடியரசுத் தலைவர்கள்",
+        ["Dr. S. Radhakrishnan (First Emergency)", "V.V. Giri (Second Emergency)", "Fakhruddin Ali Ahmed (Third Emergency)", "B.D. Jatti (Acting President during Revocation)"],
+        ["டாக்டர் எஸ். ராதாகிருஷ்ணன் (முதல் அவசரநிலை)", "வி.வி. கிரி (இரண்டாவது அவசரநிலை)", "பக்ருதீன் அலி அகமது (மூன்றாவது அவசரநிலை)", "பி.டி. ஜாட்டி (ரத்து செய்யப்பட்ட போது தற்காலிகக் குடியரசுத் தலைவர்)"],
+        ["2 - 1 - 3 - 4", "1 - 3 - 2 - 4", "3 - 1 - 2 - 4", "1 - 2 - 3 - 4"],
+        "D",
+        "The correct chronological sequence is: Dr. S. Radhakrishnan (October 1962) -> V.V. Giri (December 1971) -> Fakhruddin Ali Ahmed (June 1975) -> B.D. Jatti (Acting President when emergency was revoked in March 1977).",
+        "சரியான காலவரிசை: டாக்டர் எஸ். ராதாகிருஷ்ணன் (அக்டோபர் 1962) -> வி.வி. கிரி (டிசம்பர் 1971) -> பக்ருதீன் அலி அகமது (ஜூன் 1975) -> பி.டி. ஜாட்டி (மார்ச் 1977-ல் அவசரநிலை ரத்து செய்யப்பட்ட போது தற்காலிகக் குடியரசுத் தலைவர்).",
+        "Option A starts with V.V. Giri.", "விருப்பம் A வி.வி. கிரியுடன் தொடங்குகிறது.",
+        "Option B swaps Giri and Fakhruddin Ali Ahmed.", "விருப்பம் B கிரி மற்றும் பக்ருதீன் அலி அகமதுவை மாற்றுகிறது.",
+        "Option C places Fakhruddin Ali Ahmed first.", "விருப்பம் C பக்ருதீன் அலி அகமதுவை முதலிடத்தில் வைக்கிறது.",
+        "Option D is correct; perfectly orders the Presidents associated with National Emergency declarations and revocations.", "விருப்பம் D சரியானது; அவசரநிலைப் பிரகடனங்கள் மற்றும் ரத்துடன் தொடர்புடைய குடியரசுத் தலைவர்களைச் சரியாக வரிசைப்படுத்துகிறது.",
+        "Presidential Timeline: Radhakrishnan (1962) -> Giri (1971) -> Fakhruddin Ali Ahmed (1975) -> B.D. Jatti (1977).",
+        "குடியரசுத் தலைவர் காலவரிசை: ராதாகிருஷ்ணன் (1962) -> கிரி (1971) -> பக்ருதீன் அலி அகமது (1975) -> பி.டி. ஜாட்டி (1977).",
+        "President Fakhruddin Ali Ahmed passed away in office in February 1977, and Vice-President B.D. Jatti served as Acting President when the emergency was revoked in March 1977.",
+        "குடியரசுத் தலைவர் பக்ருதீன் அலி அகமது பிப்ரவரி 1977-ல் பதவியிலிருக்கும் போதே காலமானார்; மார்ச் 1977-ல் அவசரநிலை ரத்து செய்யப்பட்ட போது துணைத் தலைவர் பி.டி. ஜாட்டி தற்காலிகக் குடியரசுத் தலைவராகச் செயல்பட்டார்."
+    ))
+
+    # 017 - Key A: 1 - 2 - 3 - 4
+    qs.append(make_c_q(
+        17, "Evolution of Safeguards in Article 352",
+        "Constitutional evolution of safeguards in Article 352", "சரத்து 352-ல் பாதுகாப்புகளின் அரசியலமைப்பு பரிணாமம்",
+        ["Original 1950 text with 'Internal Disturbance' and 2-month approval period", "42nd Amendment allows emergency in part of territory", "44th Amendment substitutes 'Armed Rebellion' and mandates 1-month Special Majority approval", "Minerva Mills judgment establishes judicial review for mala fide"],
+        ["'உள்நாட்டு அமைதியின்மை' மற்றும் 2 மாத ஒப்புதல் காலத்துடன் மூல 1950 உரை", "42-வது திருத்தம் நாட்டின் ஒரு பகுதிக்கு மட்டும் அவசரநிலையை அனுமதிக்கிறது", "44-வது திருத்தம் 'ஆயுதமேந்திய கிளர்ச்சி' என மாற்றி 1 மாத சிறப்புப் பெரும்பான்மை ஒப்புதலைக் கட்டாயமாக்குகிறது", "மினர்வா மில்ஸ் தீர்ப்பு தவறான உள்நோக்கத்திற்கான நீதி மறுஆய்வை நிறுவுகிறது"],
+        ["1 - 2 - 3 - 4", "2 - 1 - 3 - 4", "1 - 3 - 2 - 4", "3 - 1 - 2 - 4"],
+        "A",
+        "The correct chronological progression is: Original 1950 text -> 42nd Amendment (1976) -> 44th Amendment (1978) -> Minerva Mills ruling (1980).",
+        "சரியான காலவரிசைப் பரிணாமம்: மூல 1950 அரசியலமைப்பு உரை -> 42-வது திருத்தம் (1976) -> 44-வது திருத்தம் (1978) -> மினர்வா மில்ஸ் தீர்ப்பு (1980).",
+        "Option A is correct; captures the progressive constitutional evolution of Article 352 safeguards.", "விருப்பம் A சரியானது; சரத்து 352 பாதுகாப்புகளின் அரசியலமைப்பு பரிணாம வளர்ச்சியைத் துல்லியமாகப் படம்பிடிக்கிறது.",
+        "Option B places 42nd Amendment before 1950.", "விருப்பம் B 42-வது திருத்தத்தை 1950-க்கு முன் வைக்கிறது.",
+        "Option C swaps 44th Amendment and 42nd Amendment.", "விருப்பம் C 44 மற்றும் 42-வது திருத்தங்களை மாற்றுகிறது.",
+        "Option D places 44th Amendment first.", "விருப்பம் D 44-வது திருத்தத்தை முதலிடத்தில் வைக்கிறது.",
+        "Safeguards Trajectory: 1950 (Loose grounds) -> 1976 (Territorial) -> 1978 (Strict safeguards & Cabinet advice) -> 1980 (Judicial review confirmed).",
+        "பாதுகாப்புகள் பாதை: 1950 (தளர்வான காரணங்கள்) -> 1976 (பிராந்தியம்) -> 1978 (கடுமையான பாதுகாப்புகள் & அமைச்சரவை ஆலோசனை) -> 1980 (நீதி மறுஆய்வு உறுதி).",
+        "The Janata Party government made it virtually impossible to declare an emergency arbitrarily through the historic 44th CAA.",
+        "வரலாற்றுச் சிறப்புமிக்க 44-வது திருத்தச் சட்டத்தின் மூலம் அவசரநிலையைத் தன்னிச்சையாக அறிவிப்பதை ஜனதா அரசு நடைமுறையில் சாத்தியமற்றதாக்கியது."
+    ))
+
+    # 018 - Key B: 2 - 1 - 3 - 4
+    qs.append(make_c_q(
+        18, "Emergency Commissions Sequence",
+        "Commissions appointed to investigate Centre-State relations or Emergency excesses", "மத்திய-மாநில உறவுகள் அல்லது அவசரநிலை அத்துமீறல்களை விசாரிக்க அமைக்கப்பட்ட ஆணையங்கள்",
+        ["Shah Commission of Inquiry", "Administrative Reforms Commission (ARC) Study Team on Centre-State Relations", "Sarkaria Commission on Centre-State Relations", "National Commission to Review the Working of the Constitution (Venkatachaliah Commission)"],
+        ["ஷா விசாரணைக் குழு / ஆணையம்", "மத்திய-மாநில உறவுகள் குறித்த நிர்வாகச் சீர்திருத்த ஆணையத்தின் (ARC) ஆய்வுக் குழு", "மத்திய-மாநில உறவுகளுக்கான சர்க்காரியா ஆணையம்", "அரசியலமைப்பு செயல்பாட்டை மறுஆய்வு செய்வதற்கான தேசிய ஆணையம் (வெங்கடாசலையா ஆணையம்)"],
+        ["1 - 2 - 3 - 4", "2 - 1 - 3 - 4", "2 - 3 - 1 - 4", "3 - 2 - 1 - 4"],
+        "B",
+        "The correct chronological order of appointment is: ARC Study Team (1966) -> Shah Commission (May 1977) -> Sarkaria Commission (June 1983) -> Venkatachaliah Commission (February 2000).",
+        "நியமிக்கப்பட்டதன் சரியான காலவரிசை: ARC ஆய்வுக் குழு (1966) -> ஷா ஆணையம் (மே 1977) -> சர்க்காரியா ஆணையம் (ஜூன் 1983) -> வெங்கடாசலையா ஆணையம் (பிப்ரவரி 2000).",
+        "Option A places Shah Commission before ARC.", "விருப்பம் A ஷா ஆணையத்தை ARC-க்கு முன் வைக்கிறது.",
+        "Option B is correct; accurately orders all four major commissions from 1966 to 2000.", "விருப்பம் B சரியானது; 1966 முதல் 2000 வரையிலான நான்கு முக்கிய ஆணையங்களையும் சரியாக வரிசைப்படுத்துகிறது.",
+        "Option C places Sarkaria before Shah Commission.", "விருப்பம் C சர்க்காரியாவை ஷா ஆணையத்திற்கு முன் வைக்கிறது.",
+        "Option D inverts the timeline.", "விருப்பம் D காலவரிசையைத் தலைகீழாக மாற்றுகிறது.",
+        "Commissions Timeline: ARC Study Team (1966) -> Shah Commission (1977) -> Sarkaria Commission (1983) -> NCRWC (2000).",
+        "ஆணையங்கள் காலவரிசை: ARC ஆய்வுக் குழு (1966) -> ஷா ஆணையம் (1977) -> சர்க்காரியா ஆணையம் (1983) -> NCRWC (2000).",
+        "The Shah Commission submitted three reports detailing the abuse of authority, press censorship, and illegal detentions under MISA.",
+        "மிசா (MISA) சட்டத்தின் கீழான அதிகார அத்துமீறல், பத்திரிகை தணிக்கை மற்றும் சட்டவிரோதக் காவல்களை விரிவாக விளக்கும் மூன்று அறிக்கைகளை ஷா ஆணையம் சமர்ப்பித்தது."
+    ))
+
+    # 019 - Key C: 1 - 2 - 3 - 4
+    qs.append(make_c_q(
+        19, "Constitutional Steps to Revoke Article 352 by Lok Sabha",
+        "Sequential steps for disapproving the continuation of National Emergency by Lok Sabha", "தேசிய அவசரநிலை நீடிப்பதை மக்களவை நிராகரிப்பதற்கான தொடர்ச்சியான படிகள்",
+        ["One-tenth of total Lok Sabha members give written notice of intention to move disapproval resolution", "Notice delivered to the Speaker (or President if House is not in session)", "Special sitting of Lok Sabha convened within 14 days from receipt of notice", "Lok Sabha passes resolution disapproving Emergency by Simple Majority"],
+        ["அவசரநிலை நிராகரிப்புத் தீர்மானத்தைக் கொண்டுவரும் நோக்கத்தை மக்களவையின் மொத்த உறுப்பினர்களில் 1/10 பங்கு உறுப்பினர்கள் எழுத்துப்பூர்வமாக அறிவித்தல்", "அறிவிப்பு சபாநாயகரிடம் (அல்லது அவை கூடாத போது குடியரசுத் தலைவரிடம்) வழங்கப்படுதல்", "அறிவிப்பு பெறப்பட்ட 14 நாட்களுக்குள் மக்களவையின் சிறப்புக் கூட்டம் கூட்டப்படுதல்", "மக்களவை எளிய பெரும்பான்மையால் அவசரநிலையை நிராகரிக்கும் தீர்மானத்தை நிறைவேற்றுதல்"],
+        ["2 - 1 - 3 - 4", "1 - 3 - 2 - 4", "1 - 2 - 3 - 4", "3 - 1 - 2 - 4"],
+        "C",
+        "The correct procedural sequence under Article 352(8) is: 1/10th members notice -> Delivered to Speaker/President -> Special sitting within 14 days -> Simple majority disapproval.",
+        "சரத்து 352(8)-ன் கீழான சரியான நடைமுறை வரிசை: 1/10 உறுப்பினர்கள் அறிவிப்பு -> சபாநாயகர்/குடியரசுத் தலைவரிடம் ஒப்படைப்பு -> 14 நாட்களில் சிறப்புக் கூட்டம் -> எளிய பெரும்பான்மையால் நிராகரிப்பு.",
+        "Option A places notice delivery before the notice creation.", "விருப்பம் A அறிவிப்பு தயாரிப்பதற்கு முன்பே ஒப்படைப்பை வைக்கிறது.",
+        "Option B swaps convening sitting with notice delivery.", "விருப்பம் B சிறப்புக் கூட்டத்தைக் கூட்டுவதையும் அறிவிப்பு ஒப்படைப்பையும் மாற்றுகிறது.",
+        "Option C is correct; exact constitutional procedure introduced by the 44th Amendment Act 1978.", "விருப்பம் C சரியானது; 1978-ன் 44-வது திருத்தச் சட்டம் அறிமுகப்படுத்திய துல்லியமான அரசியலமைப்பு நடைமுறை.",
+        "Option D inverts the procedural stages.", "விருப்பம் D நடைமுறை நிலைகளைத் தலைகீழாக மாற்றுகிறது.",
+        "Disapproval Mechanism Flow: 1/10th notice -> Speaker/President -> 14-day Special Sitting -> Simple Majority pass -> Emergency ceases.",
+        "நிராகரிப்பு வழிமுறை ஓட்டம்: 1/10 அறிவிப்பு -> சபாநாயகர்/குடியரசுத் தலைவர் -> 14 நாள் சிறப்புக் கூட்டம் -> எளிய பெரும்பான்மை நிறைவேற்றம் -> அவசரநிலை முடிவுக்கு வருதல்.",
+        "Notice must be given to the Speaker if the Lok Sabha is in session, and to the President if the House is not in session.",
+        "மக்களவை கூட்டத்தொடரில் இருந்தால் சபாநாயகரிடமும், கூட்டத்தொடரில் இல்லாத போது குடியரசுத் தலைவரிடமும் அறிவிப்பு வழங்கப்பட வேண்டும்."
+    ))
+
+    # 020 - Key D: 1 - 2 - 3 - 4
+    qs.append(make_c_q(
+        20, "Duration Limits in Descending Order of Normal Maximum",
+        "Descending order of constitutional duration limits for various emergency actions", "பல்வேறு அவசரநிலை நடவடிக்கைகளுக்கான அரசியலமைப்பு கால வரம்புகளின் இறங்கு வரிசை",
+        ["Absolute constitutional ceiling for President's Rule under Article 356 (without constitutional amendment)", "Initial validity of parliamentary approval for Article 352 / Article 356", "Initial duration of proclamation of Article 356 / Article 360 without parliamentary approval", "Initial duration of proclamation of Article 352 without parliamentary approval"],
+        ["சரத்து 356-ன் கீழான குடியரசுத் தலைவர் ஆட்சியின் முழுமையான அரசியலமைப்பு உச்சவரம்பு (சட்டத்திருத்தம் இன்றி)", "சரத்து 352 / சரத்து 356-க்கான பாராளுமன்ற ஒப்புதலின் ஆரம்பக்கால செல்லுபடியாகும் கால அளவு", "பாராளுமன்ற ஒப்புதலின்றி சரத்து 356 / சரத்து 360 பிரகடனத்தின் ஆரம்ப கால அளவு", "பாராளுமன்ற ஒப்புதலின்றி சரத்து 352 பிரகடனத்தின் ஆரம்ப கால அளவு"],
+        ["2 - 1 - 3 - 4", "1 - 3 - 2 - 4", "3 - 1 - 2 - 4", "1 - 2 - 3 - 4"],
+        "D",
+        "Descending order of time periods: 3 Years (Art 356 ceiling) -> 6 Months (Parliamentary approval duration) -> 2 Months (Art 356/360 initial life) -> 1 Month (Art 352 initial life). That is: 1 -> 2 -> 3 -> 4.",
+        "கால அளவுகளின் இறங்கு வரிசை: 3 ஆண்டுகள் (சரத்து 356 உச்சவரம்பு) -> 6 மாதங்கள் (பாராளுமன்ற ஒப்புதல் கால அளவு) -> 2 மாதங்கள் (356/360 ஆரம்ப ஆயுள்) -> 1 மாதம் (352 ஆரம்ப ஆயுள்). அதாவது: 1 -> 2 -> 3 -> 4.",
+        "Option A starts with 6 months.", "விருப்பம் A 6 மாதங்களுடன் தொடங்குகிறது.",
+        "Option B swaps 6 months and 2 months.", "விருப்பம் B 6 மாதங்கள் மற்றும் 2 மாதங்களை மாற்றுகிறது.",
+        "Option C starts with 2 months.", "விருப்பம் C 2 மாதங்களுடன் தொடங்குகிறது.",
+        "Option D is correct; perfectly orders the time limits from longest (3 years) to shortest (1 month).", "விருப்பம் D சரியானது; மிக நீண்டதிலிருந்து (3 ஆண்டுகள்) மிகக் குறுகிய கால வரம்பை (1 மாதம்) சரியாக வரிசைப்படுத்துகிறது.",
+        "Duration Hierarchy: 3 Years (Art 356 max) > 6 Months (renewal interval) > 2 Months (Art 356/360 initial) > 1 Month (Art 352 initial).",
+        "கால அளவு படிநிலை: 3 ஆண்டுகள் (356 அதிகபட்சம்) > 6 மாதங்கள் (புதுப்பித்தல் இடைவெளி) > 2 மாதங்கள் (356/360 தொடக்கம்) > 1 மாதம் (352 தொடக்கம்).",
+        "The one-month period for Article 352 was deliberately made shorter than Article 356 to ensure quick legislative scrutiny over national emergency.",
+        "தேசிய அவசரநிலை மீது விரைவான சட்டமன்ற ஆய்வை உறுதி செய்வதற்காகவே சரத்து 352-ன் ஆரம்பக் காலம் சரத்து 356-ஐ விடக் குறைவாக (1 மாதம்) வைக்கப்பட்டது."
+    ))
+
+    # 021 - Key A: 1 - 2 - 3 - 4
+    qs.append(make_c_q(
+        21, "Key Emergency Provisions in Constitutional Numerical Order",
+        "Constitutional articles in Part XVIII in numerical order", "பகுதி XVIII-ல் உள்ள அரசியலமைப்பு சரத்துகளின் எண் வரிசை",
+        ["Article 352 (Proclamation of Emergency)", "Article 355 (Duty of the Union to protect States)", "Article 356 (Provisions in case of failure of constitutional machinery in States)", "Article 360 (Provisions as to financial emergency)"],
+        ["சரத்து 352 (அவசரநிலைப் பிரகடனம்)", "சரத்து 355 (மாநிலங்களைப் பாதுகாக்கும் மத்திய அரசின் கடமை)", "சரத்து 356 (மாநிலங்களில் அரசியலமைப்பு இயந்திரம் தோல்வியடையும் போது விதிகள்)", "சரத்து 360 (நிதி அவசரநிலை தொடர்பான விதிகள்)"],
+        ["1 - 2 - 3 - 4", "2 - 1 - 3 - 4", "1 - 3 - 2 - 4", "3 - 1 - 2 - 4"],
+        "A",
+        "The numerical order of articles in Part XVIII is: Article 352 -> Article 355 -> Article 356 -> Article 360.",
+        "பகுதி XVIII-ல் சரத்துகளின் எண் வரிசை: சரத்து 352 -> சரத்து 355 -> சரத்து 356 -> சரத்து 360.",
+        "Option A is correct; exact sequential order of the core articles in Part XVIII.", "விருப்பம் A சரியானது; பகுதி XVIII-ன் முக்கிய சரத்துகளின் துல்லியமான தொடர் வரிசை.",
+        "Option B places Article 355 before Article 352.", "விருப்பம் B சரத்து 355-ஐ சரத்து 352-க்கு முன் வைக்கிறது.",
+        "Option C swaps Article 355 and Article 356.", "விருப்பம் C சரத்து 355 மற்றும் சரத்து 356-ஐ மாற்றுகிறது.",
+        "Option D inverts the article numbers.", "விருப்பம் D சரத்து எண்களைத் தலைகீழாக மாற்றுகிறது.",
+        "Part XVIII Core Flow: 352 (National) -> 355 (Union Duty) -> 356 (State) -> 360 (Financial).",
+        "பகுதி XVIII முக்கிய ஓட்டம்: 352 (தேசியம்) -> 355 (மத்திய கடமை) -> 356 (மாநிலம்) -> 360 (நிதி).",
+        "Article 355 bridges the gap between external aggression/internal disturbance and the imposition of President's Rule under Article 356.",
+        "சரத்து 355 வெளிப்புற ஆக்கிரமிப்பு/உள்நாட்டு அமைதியின்மைக்கும் சரத்து 356-ன் கீழான குடியரசுத் தலைவர் ஆட்சிக்கும் இடையே பாலமாகச் செயல்படுகிறது."
+    ))
+
+    # 022 - Key B: 2 - 1 - 3 - 4
+    qs.append(make_c_q(
+        22, "Decades of Highest Article 356 Usage",
+        "Decades in independent India according to frequency and key developments of Article 356", "சரத்து 356 பயன்பாட்டின் அதிர்வெண் மற்றும் முக்கிய நிகழ்வுகளின் அடிப்படையிலான பத்தாண்டுகள்",
+        ["1970s: Era of highest misuse (over 40 times, including mass dissolutions of 1977)", "1950s: Initial restraint under Nehru (used only about 6 times including Punjab 1951)", "1980s: Continuous extensive use and Punjab 5-year emergency", "1990s: Watershed deceleration post-S.R. Bommai judgment (1994)"],
+        ["1970-கள்: அதிக தவறான பயன்பாட்டு சகாப்தம் (1977 ஒட்டுமொத்தக் கலைப்பு உட்பட 40 முறைக்கு மேல்)", "1950-கள்: நேருவின் கீழ் ஆரம்பக்கால கட்டுப்பாடு (1951 பஞ்சாப் உட்பட சுமார் 6 முறை மட்டுமே)", "1980-கள்: தொடர்ச்சியான விரிவான பயன்பாடு மற்றும் பஞ்சாப் 5 ஆண்டு அவசரநிலை", "1990-கள்: எஸ்.ஆர். பொம்மை தீர்ப்பிற்குப் (1994) பிந்தைய பயன்பாட்டுக் குறைவு"],
+        ["1 - 2 - 3 - 4", "2 - 1 - 3 - 4", "2 - 3 - 1 - 4", "3 - 2 - 1 - 4"],
+        "B",
+        "The correct chronological decade order is: 1950s (2) -> 1970s (1) -> 1980s (3) -> 1990s (4).",
+        "சரியான பத்தாண்டு காலவரிசை: 1950-கள் (2) -> 1970-கள் (1) -> 1980-கள் (3) -> 1990-கள் (4).",
+        "Option A places the 1970s before the 1950s.", "விருப்பம் A 1970-களை 1950-களுக்கு முன் வைக்கிறது.",
+        "Option B is correct; perfectly orders the four decades representing distinct historical epochs of Article 356.", "விருப்பம் B சரியானது; சரத்து 356-ன் நான்கு வரலாற்று சகாப்தங்களையும் சரியாக வரிசைப்படுத்துகிறது.",
+        "Option C places 1980s before 1970s.", "விருப்பம் C 1980-களை 1970-களுக்கு முன் வைக்கிறது.",
+        "Option D inverts the chronological order.", "விருப்பம் D காலவரிசையைத் தலைகீழாக மாற்றுகிறது.",
+        "Decade Trends: 1950s (Restraint) -> 1970s (Peak weaponization) -> 1980s (Prolonged Punjab) -> 1990s (Bommai restraint).",
+        "பத்தாண்டு போக்குகள்: 1950-கள் (கட்டுப்பாடு) -> 1970-கள் (அரசியல் ஆயுதமாக்கல் உச்சம்) -> 1980-கள் (நீண்ட பஞ்சாப் ஆட்சி) -> 1990-கள் (பொம்மை தீர்ப்பு கட்டுப்பாடு).",
+        "Since the S.R. Bommai judgment in 1994, the average annual invocations of Article 356 dropped by more than 80%.",
+        "1994-ல் வெளியான எஸ்.ஆர். பொம்மை தீர்ப்பிற்குப் பிறகு, சரத்து 356 பயன்படுத்தப்படும் சராசரி ஆண்டு நிகழ்வுகள் 80%-க்கும் அதிகமாகக் குறைந்தன."
+    ))
+
+    # 023 - Key C: 1 - 2 - 3 - 4
+    qs.append(make_c_q(
+        23, "Chronology of External Emergency Events 1962–1971",
+        "Events occurring during India's external emergency periods", "இந்தியாவின் வெளிப்புற அவசரநிலைக் காலங்களில் நிகழ்ந்த நிகழ்வுகள்",
+        ["Chinese invasion of NEFA triggering First National Emergency", "Indo-Pak war of 1965 (fought during First National Emergency)", "Revocation of First National Emergency", "Pakistani air strikes on Indian airfields triggering Second National Emergency"],
+        ["முதல் தேசிய அவசரநிலையைத் தூண்டிய நேபாவில் சீனப் படையெடுப்பு", "1965 இந்திய-பாகிஸ்தான் போர் (முதல் தேசிய அவசரநிலையின் போது நடைபெற்றது)", "முதல் தேசிய அவசரநிலை ரத்து செய்யப்பட்டது", "இரண்டாவது தேசிய அவசரநிலையைத் தூண்டிய இந்திய விமானத் தளங்கள் மீதான பாகிஸ்தான் வான்வழித் தாக்குதல்"],
+        ["2 - 1 - 3 - 4", "1 - 3 - 2 - 4", "1 - 2 - 3 - 4", "3 - 1 - 2 - 4"],
+        "C",
+        "The correct chronological sequence is: NEFA invasion (October 1962) -> 1965 war (September 1965) -> First emergency revoked (January 1968) -> Second emergency proclaimed (December 1971).",
+        "சரியான காலவரிசை: நேபா படையெடுப்பு (அக்டோபர் 1962) -> 1965 போர் (செப்டம்பர் 1965) -> முதல் அவசரநிலை ரத்து (ஜனவரி 1968) -> இரண்டாவது அவசரநிலைப் பிரகடனம் (டிசம்பர் 1971).",
+        "Option A starts with the 1965 war.", "விருப்பம் A 1965 போருடன் தொடங்குகிறது.",
+        "Option B swaps revocation of first emergency and the 1965 war.", "விருப்பம் B முதல் அவசரநிலை ரத்தையும் 1965 போரையும் மாற்றுகிறது.",
+        "Option C is correct; accurately sequences the military and constitutional events between 1962 and 1971.", "விருப்பம் C சரியானது; 1962 முதல் 1971 வரையிலான இராணுவ மற்றும் அரசியலமைப்பு நிகழ்வுகளைச் சரியாக வரிசைப்படுத்துகிறது.",
+        "Option D places 1971 first.", "விருப்பம் D 1971-ஐ முதலிடத்தில் வைக்கிறது.",
+        "External Emergencies Timeline: Oct 1962 (China) -> Sept 1965 (Pakistan War 1) -> Jan 1968 (Revocation) -> Dec 1971 (Pakistan War 2).",
+        "வெளிப்புற அவசரநிலைகள் காலவரிசை: அக்டோபர் 1962 (சீனா) -> செப்டம்பர் 1965 (பாகிஸ்தான் போர் 1) -> ஜனவரி 1968 (ரத்து) -> டிசம்பர் 1971 (பாகிஸ்தான் போர் 2).",
+        "No fresh emergency was declared in 1965 because the 1962 emergency proclamation was already actively in force.",
+        "1962-ன் அவசரநிலைப் பிரகடனம் ஏற்கனவே செயல்பாட்டில் இருந்ததால், 1965-ல் புதிய அவசரநிலை எதுவும் அறிவிக்கப்படவில்லை."
+    ))
+
+    # 024 - Key D: 1 - 2 - 3 - 4
+    qs.append(make_c_q(
+        24, "Steps in Imposing President's Rule under Article 356",
+        "Sequential procedural steps in imposing and ratifying President's Rule", "குடியரசுத் தலைவர் ஆட்சியை விதிப்பதிலும் ஏற்பளிப்பதிலும் உள்ள தொடர்ச்சியான நடைமுறைப் படிகள்",
+        ["Governor of the State submits report to President on breakdown of constitutional machinery (or President is otherwise satisfied)", "Union Cabinet recommends proclamation to the President", "President issues Proclamation under Article 356 keeping Assembly in suspended animation", "Both Houses of Parliament approve the Proclamation by Simple Majority within two months"],
+        ["மாநிலத்தில் அரசியலமைப்பு இயந்திரம் முறிந்துவிட்டதாக ஆளுநர் குடியரசுத் தலைவருக்கு அறிக்கை சமர்ப்பித்தல் (அல்லது குடியரசுத் தலைவர் பிற வழிகளில் திருப்தியடைதல்)", "மத்திய அமைச்சரவை குடியரசுத் தலைவருக்குப் பிரகடனத்தைப் பரிந்துரைத்தல்", "சட்டமன்றத்தை இடைநிறுத்தப்பட்ட நிலையில் வைத்து குடியரசுத் தலைவர் சரத்து 356-ன் கீழ் பிரகடனம் வெளியிடுதல்", "இரண்டு மாதங்களுக்குள் பாராளுமன்றத்தின் இரு அவைகளும் எளிய பெரும்பான்மையால் பிரகடனத்திற்கு ஒப்புதல் அளித்தல்"],
+        ["2 - 1 - 3 - 4", "1 - 3 - 2 - 4", "3 - 1 - 2 - 4", "1 - 2 - 3 - 4"],
+        "D",
+        "The correct procedural order is: Governor's report / satisfaction -> Cabinet advice -> Presidential proclamation (assembly suspended) -> Parliamentary approval within 2 months.",
+        "சரியான நடைமுறை வரிசை: ஆளுநர் அறிக்கை / திருப்தி -> அமைச்சரவை ஆலோசனை -> குடியரசுத் தலைவர் பிரகடனம் (சட்டமன்ற இடைநிறுத்தம்) -> 2 மாதங்களுக்குள் பாராளுமன்ற ஒப்புதல்.",
+        "Option A places Cabinet advice before Governor's report.", "விருப்பம் A ஆளுநர் அறிக்கைக்கு முன்பே அமைச்சரவை ஆலோசனையை வைக்கிறது.",
+        "Option B swaps Parliamentary approval and proclamation.", "விருப்பம் B பாராளுமன்ற ஒப்புதலையும் பிரகடனத்தையும் மாற்றுகிறது.",
+        "Option C places proclamation first.", "விருப்பம் C பிரகடனத்தை முதலிடத்தில் வைக்கிறது.",
+        "Option D is correct; perfectly captures the constitutionally mandated lifecycle of Article 356 initiation.", "விருப்பம் D சரியானது; சரத்து 356 தொடக்கத்தின் அரசியலமைப்பு நடைமுறை சுழற்சியைத் துல்லியமாகப் படம்பிடிக்கிறது.",
+        "Article 356 Flow: Report/Satisfaction -> Cabinet Advice -> Proclamation -> 2-Month Parliamentary Approval.",
+        "சரத்து 356 ஓட்டம்: அறிக்கை/திருப்தி -> அமைச்சரவை ஆலோசனை -> பிரகடனம் -> 2 மாத பாராளுமன்ற ஒப்புதல்.",
+        "Assembly dissolution may take place only after both Houses of Parliament have approved the proclamation (Bommai ruling).",
+        "பாராளுமன்றத்தின் இரு அவைகளும் பிரகடனத்திற்கு ஒப்புதல் அளித்த பிறகே சட்டமன்றத்தைக் கலைக்க முடியும் (பொம்மை தீர்ப்பு)."
+    ))
+
+    # 025 - Key C: 1 - 2 - 3 - 4
+    qs.append(make_c_q(
+        25, "Sequential Order of Emergency Provisions in Constitution",
+        "Articles 352 to 360 in exact constitutional order", "சரத்துகள் 352 முதல் 360 வரையிலான அரசியலமைப்பு வரிசை",
+        ["Article 352: Proclamation of Emergency", "Article 354: Application of provisions relating to distribution of revenues", "Article 358: Suspension of provisions of Article 19 during emergencies", "Article 359: Suspension of the enforcement of the rights conferred by Part III"],
+        ["சரத்து 352: அவசரநிலைப் பிரகடனம்", "சரத்து 354: வருவாய் பகிர்வு தொடர்பான விதிகளைப் பயன்படுத்துதல்", "சரத்து 358: அவசரநிலையின் போது சரத்து 19-ன் விதிகளை இடைநிறுத்துதல்", "சரத்து 359: பகுதி III வழங்கிய உரிமைகளைச் செயல்படுத்துவதை இடைநிறுத்துதல்"],
+        ["2 - 1 - 3 - 4", "1 - 3 - 2 - 4", "1 - 2 - 3 - 4", "3 - 1 - 2 - 4"],
+        "C",
+        "The exact constitutional numerical order is: Article 352 -> Article 354 -> Article 358 -> Article 359.",
+        "துல்லியமான அரசியலமைப்பு எண் வரிசை: சரத்து 352 -> சரத்து 354 -> சரத்து 358 -> சரத்து 359.",
+        "Option A starts with Article 354.", "விருப்பம் A சரத்து 354-உடன் தொடங்குகிறது.",
+        "Option B swaps Article 358 and Article 354.", "விருப்பம் B சரத்து 358 மற்றும் 354-ஐ மாற்றுகிறது.",
+        "Option C is correct; exact sequential order of the listed Part XVIII articles.", "விருப்பம் C சரியானது; பட்டியலிடப்பட்ட பகுதி XVIII சரத்துகளின் சரியான தொடர் வரிசை.",
+        "Option D places Article 358 first.", "விருப்பம் D சரத்து 358-ஐ முதலிடத்தில் வைக்கிறது.",
+        "Part XVIII Number Sequence: 352 -> 354 -> 358 -> 359.",
+        "பகுதி XVIII எண் வரிசை: 352 -> 354 -> 358 -> 359.",
+        "Articles 358 and 359 together regulate the extraordinary impact of emergencies on citizens' Fundamental Rights.",
+        "சரத்துகள் 358 மற்றும் 359 ஆகியவை குடிமக்களின் அடிப்படை உரிமைகள் மீது அவசரநிலைகள் ஏற்படுத்தும் அசாதாரணத் தாக்கத்தை கூட்டாக ஒழுங்குபடுத்துகின்றன."
+    ))
+
+    return qs
+
+print("Chronology questions ready.")
