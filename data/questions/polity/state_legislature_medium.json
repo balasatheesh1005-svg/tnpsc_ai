@@ -14,13 +14,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Simple majority of members present and voting",
-        "ta": "வருகை தந்து வாக்களிக்கும் உறுப்பினர்களில் எளிய பெரும்பான்மை"
+        "en": "Majority of the total membership of the Assembly AND not less than two-thirds of the members present and voting",
+        "ta": "பேரவையின் மொத்த உறுப்பினர் எண்ணிக்கையில் பெரும்பான்மை மற்றும் வருகை தந்து வாக்களிப்பவர்களில் மூன்றில் இரண்டு பங்குக்கு (2/3) குறையாத பெரும்பான்மை"
       },
       {
         "id": "B",
-        "en": "Majority of the total membership of the Assembly AND not less than two-thirds of the members present and voting",
-        "ta": "பேரவையின் மொத்த உறுப்பினர் எண்ணிக்கையில் பெரும்பான்மை மற்றும் வருகை தந்து வாக்களிப்பவர்களில் மூன்றில் இரண்டு பங்குக்கு (2/3) குறையாத பெரும்பான்மை"
+        "en": "Simple majority of members present and voting",
+        "ta": "வருகை தந்து வாக்களிக்கும் உறுப்பினர்களில் எளிய பெரும்பான்மை"
       },
       {
         "id": "C",
@@ -34,19 +34,19 @@
       }
     ],
     "options_en": [
-      "Simple majority of members present and voting",
       "Majority of the total membership of the Assembly AND not less than two-thirds of the members present and voting",
+      "Simple majority of members present and voting",
       "Absolute majority of the total membership of the Assembly only",
       "Three-fourths majority of the total membership of the House"
     ],
     "options_ta": [
-      "வருகை தந்து வாக்களிக்கும் உறுப்பினர்களில் எளிய பெரும்பான்மை",
       "பேரவையின் மொத்த உறுப்பினர் எண்ணிக்கையில் பெரும்பான்மை மற்றும் வருகை தந்து வாக்களிப்பவர்களில் மூன்றில் இரண்டு பங்குக்கு (2/3) குறையாத பெரும்பான்மை",
+      "வருகை தந்து வாக்களிக்கும் உறுப்பினர்களில் எளிய பெரும்பான்மை",
       "பேரவையின் மொத்த உறுப்பினர் எண்ணிக்கையில் அறுதிப் பெரும்பான்மை மட்டுமே",
       "அவையின் மொத்த உறுப்பினர் எண்ணிக்கையில் நான்கில் மூன்று பங்கு (3/4) பெரும்பான்மை"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Article 169(1) explicitly requires that the resolution must be passed by the Legislative Assembly by a majority of the total membership of the Assembly and by a majority of not less than two-thirds of the members of the Assembly present and voting (special majority).",
       "ta": "உறுப்பு 169(1)-ன் படி, சட்டமன்றப் பேரவையின் மொத்த உறுப்பினர் எண்ணிக்கையில் பெரும்பான்மையாலும் (50%-க்கு மேல்), அவைக்கு வருகை தந்து வாக்களிக்கும் உறுப்பினர்களில் மூன்றில் இரண்டு பங்குக்குக் குறையாத (2/3) பெரும்பான்மையாலும் அத்தீர்மானம் நிறைவேற்றப்பட வேண்டும் (சிறப்புப் பெரும்பான்மை)."
@@ -55,12 +55,12 @@
     "explanation_ta": "உறுப்பு 169(1)-ன் படி, சட்டமன்றப் பேரவையின் மொத்த உறுப்பினர் எண்ணிக்கையில் பெரும்பான்மையாலும் (50%-க்கு மேல்), அவைக்கு வருகை தந்து வாக்களிக்கும் உறுப்பினர்களில் மூன்றில் இரண்டு பங்குக்குக் குறையாத (2/3) பெரும்பான்மையாலும் அத்தீர்மானம் நிறைவேற்றப்பட வேண்டும் (சிறப்புப் பெரும்பான்மை).",
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Simple majority is what Parliament needs under Art 169, not the State Assembly.",
-        "ta": "தவறு. எளிய பெரும்பான்மை என்பது நாடாளுமன்றத்திற்குத் தேவையானது, பேரவைக்கு அல்ல."
-      },
-      "B": {
         "en": "Correct. Total membership majority (>50%) PLUS 2/3rd present and voting is the constitutional requirement.",
         "ta": "சரி. மொத்த உறுப்பினர்களில் பெரும்பான்மை மற்றும் வருகை தந்து வாக்களிப்பவர்களில் 2/3 பங்கு என்பது அரசியலமைப்பு விதியாகும்."
+      },
+      "B": {
+        "en": "Incorrect. Simple majority is what Parliament needs under Art 169, not the State Assembly.",
+        "ta": "தவறு. எளிய பெரும்பான்மை என்பது நாடாளுமன்றத்திற்குத் தேவையானது, பேரவைக்கு அல்ல."
       },
       "C": {
         "en": "Incorrect. Absolute majority alone is insufficient; 2/3rd present and voting is also mandatory.",
@@ -114,13 +114,13 @@
       },
       {
         "id": "B",
-        "en": "6 months",
-        "ta": "6 மாதங்கள்"
+        "en": "4 months (3 months in first instance + 1 month in second instance)",
+        "ta": "4 மாதங்கள் (முதல் கட்டத்தில் 3 மாதங்கள் + இரண்டாம் கட்டத்தில் 1 மாதம்)"
       },
       {
         "id": "C",
-        "en": "4 months (3 months in first instance + 1 month in second instance)",
-        "ta": "4 மாதங்கள் (முதல் கட்டத்தில் 3 மாதங்கள் + இரண்டாம் கட்டத்தில் 1 மாதம்)"
+        "en": "6 months",
+        "ta": "6 மாதங்கள்"
       },
       {
         "id": "D",
@@ -130,18 +130,18 @@
     ],
     "options_en": [
       "14 days",
-      "6 months",
       "4 months (3 months in first instance + 1 month in second instance)",
+      "6 months",
       "1 year"
     ],
     "options_ta": [
       "14 நாட்கள்",
-      "6 மாதங்கள்",
       "4 மாதங்கள் (முதல் கட்டத்தில் 3 மாதங்கள் + இரண்டாம் கட்டத்தில் 1 மாதம்)",
+      "6 மாதங்கள்",
       "1 ஆண்டு"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Under Article 197, when an Ordinary Bill is first transmitted to the Council, it can delay it for up to 3 months. If the Assembly passes it a second time and transmits it, the Council can delay it for at most 1 month. Thus, the total maximum delay is 4 months.",
       "ta": "உறுப்பு 197-ன் கீழ், ஒரு சாதாரண மசோதா முதன்முறை மேலவைக்கு அனுப்பப்படும் போது 3 மாதங்கள் தாமதிக்கலாம். பேரவை அதை மீண்டும் நிறைவேற்றி இரண்டாம் முறை அனுப்பும் போது மேலவை அதிகபட்சம் 1 மாதம் மட்டுமே தாமதிக்க முடியும். எனவே மொத்த உச்சவரம்பு 4 மாதங்கள் ஆகும்."
@@ -154,12 +154,12 @@
         "ta": "தவறு. 14 நாட்கள் என்பது பண மசோதாவுக்கான தாமதம், சாதாரண மசோதாவுக்கல்ல."
       },
       "B": {
-        "en": "Incorrect. 6 months is the deadlock period in Parliament (Art 108), not State Legislature.",
-        "ta": "தவறு. 6 மாதங்கள் என்பது நாடாளுமன்றத்திற்கான முட்டுக்கட்டை கால அவகாசம் (உறுப்பு 108)."
-      },
-      "C": {
         "en": "Correct. 4 months total (3 months + 1 month) under Article 197.",
         "ta": "சரி. உறுப்பு 197-ன் கீழ் மொத்தம் 4 மாதங்கள் (3 மாதங்கள் + 1 மாதம்)."
+      },
+      "C": {
+        "en": "Incorrect. 6 months is the deadlock period in Parliament (Art 108), not State Legislature.",
+        "ta": "தவறு. 6 மாதங்கள் என்பது நாடாளுமன்றத்திற்கான முட்டுக்கட்டை கால அவகாசம் (உறுப்பு 108)."
       },
       "D": {
         "en": "Incorrect. 1 year was never adopted.",
@@ -301,8 +301,8 @@
     "options": [
       {
         "id": "A",
-        "en": "The Bill ends and becomes dead immediately",
-        "ta": "மசோதா உடனடியாக முடிவுக்கு வந்து காலாவதியாகிவிடும்"
+        "en": "The Governor summons a joint sitting to resolve the disagreement",
+        "ta": "முரண்பாட்டைத் தீர்க்க ஆளுநர் கூட்டு அமர்வைக் கூட்டுகிறார்"
       },
       {
         "id": "B",
@@ -311,8 +311,8 @@
       },
       {
         "id": "C",
-        "en": "The Governor summons a joint sitting to resolve the disagreement",
-        "ta": "முரண்பாட்டைத் தீர்க்க ஆளுநர் கூட்டு அமர்வைக் கூட்டுகிறார்"
+        "en": "The Bill ends and becomes dead immediately",
+        "ta": "மசோதா உடனடியாக முடிவுக்கு வந்து காலாவதியாகிவிடும்"
       },
       {
         "id": "D",
@@ -321,19 +321,19 @@
       }
     ],
     "options_en": [
-      "The Bill ends and becomes dead immediately",
-      "The Council can pass it again to override the Assembly",
       "The Governor summons a joint sitting to resolve the disagreement",
+      "The Council can pass it again to override the Assembly",
+      "The Bill ends and becomes dead immediately",
       "The Bill is automatically referred to the President for assent"
     ],
     "options_ta": [
-      "மசோதா உடனடியாக முடிவுக்கு வந்து காலாவதியாகிவிடும்",
-      "பேரவையை முறியடிக்க மேலவை அதை மீண்டும் நிறைவேற்றலாம்",
       "முரண்பாட்டைத் தீர்க்க ஆளுநர் கூட்டு அமர்வைக் கூட்டுகிறார்",
+      "பேரவையை முறியடிக்க மேலவை அதை மீண்டும் நிறைவேற்றலாம்",
+      "மசோதா உடனடியாக முடிவுக்கு வந்து காலாவதியாகிவிடும்",
       "மசோதா தானாகவே குடியரசுத் தலைவரின் ஒப்புதலுக்கு அனுப்பப்படுகிறது"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Under the constitutional scheme (Article 196), if an Ordinary Bill originates in the Legislative Council and is transmitted to the Assembly, and the Assembly rejects it, the Bill comes to an end and becomes dead. The Council has no power to override the Assembly or revive the Bill.",
       "ta": "அரசியலமைப்பு திட்டத்தின் கீழ் (உறுப்பு 196), ஒரு சாதாரண மசோதா மேலவையில் தோன்றி பேரவைக்கு அனுப்பப்பட்டு, பேரவை அதை நிராகரித்தால், அந்த மசோதா அத்துடன் முடிவுக்கு வந்து காலாவதியாகிவிடுகிறது. பேரவையை முறியடிக்கும் எந்த அதிகாரமும் மேலவைக்குக் கிடையாது."
@@ -342,16 +342,16 @@
     "explanation_ta": "அரசியலமைப்பு திட்டத்தின் கீழ் (உறுப்பு 196), ஒரு சாதாரண மசோதா மேலவையில் தோன்றி பேரவைக்கு அனுப்பப்பட்டு, பேரவை அதை நிராகரித்தால், அந்த மசோதா அத்துடன் முடிவுக்கு வந்து காலாவதியாகிவிடுகிறது. பேரவையை முறியடிக்கும் எந்த அதிகாரமும் மேலவைக்குக் கிடையாது.",
     "why_not_others": {
       "A": {
-        "en": "Correct. The Bill dies immediately upon rejection by the Assembly.",
-        "ta": "சரி. பேரவையால் நிராகரிக்கப்பட்டவுடன் மசோதா உடனடியாக முடிவுக்கு வருகிறது."
+        "en": "Incorrect. No joint sitting exists in State Legislature.",
+        "ta": "தவறு. மாநில சட்டமன்றத்தில் கூட்டு அமர்வு என்பதே இல்லை."
       },
       "B": {
         "en": "Incorrect. The Council cannot override the Assembly under any circumstances.",
         "ta": "தவறு. எந்த சூழ்நிலையிலும் மேலவை பேரவையை முறியடிக்க முடியாது."
       },
       "C": {
-        "en": "Incorrect. No joint sitting exists in State Legislature.",
-        "ta": "தவறு. மாநில சட்டமன்றத்தில் கூட்டு அமர்வு என்பதே இல்லை."
+        "en": "Correct. The Bill dies immediately upon rejection by the Assembly.",
+        "ta": "சரி. பேரவையால் நிராகரிக்கப்பட்டவுடன் மசோதா உடனடியாக முடிவுக்கு வருகிறது."
       },
       "D": {
         "en": "Incorrect. Rejected bills are never sent to the President.",
@@ -401,13 +401,13 @@
       },
       {
         "id": "B",
-        "en": "The Speaker does NOT vacate office, but continues until immediately before the first meeting of the newly elected Assembly",
-        "ta": "சபாநாயகர் பதவியை இழப்பதில்லை; புதிதாகத் தேர்ந்தெடுக்கப்பட்ட பேரவையின் முதல் கூட்டத்திற்கு சற்று முன்பு வரை பதவியில் தொடர்கிறார்"
+        "en": "The Speaker's functions are transferred to the Governor automatically",
+        "ta": "சபாநாயகரின் பணிகள் தானாகவே ஆளுநருக்கு மாற்றப்படுகின்றன"
       },
       {
         "id": "C",
-        "en": "The Speaker's functions are transferred to the Governor automatically",
-        "ta": "சபாநாயகரின் பணிகள் தானாகவே ஆளுநருக்கு மாற்றப்படுகின்றன"
+        "en": "The Speaker does NOT vacate office, but continues until immediately before the first meeting of the newly elected Assembly",
+        "ta": "சபாநாயகர் பதவியை இழப்பதில்லை; புதிதாகத் தேர்ந்தெடுக்கப்பட்ட பேரவையின் முதல் கூட்டத்திற்கு சற்று முன்பு வரை பதவியில் தொடர்கிறார்"
       },
       {
         "id": "D",
@@ -417,18 +417,18 @@
     ],
     "options_en": [
       "The Speaker vacates office immediately on the date of dissolution",
-      "The Speaker does NOT vacate office, but continues until immediately before the first meeting of the newly elected Assembly",
       "The Speaker's functions are transferred to the Governor automatically",
+      "The Speaker does NOT vacate office, but continues until immediately before the first meeting of the newly elected Assembly",
       "The Chief Justice of High Court takes over as Acting Speaker"
     ],
     "options_ta": [
       "பேரவை கலைக்கப்பட்ட அன்றே சபாநாயகர் உடனடியாகப் பதவியை இழக்கிறார்",
-      "சபாநாயகர் பதவியை இழப்பதில்லை; புதிதாகத் தேர்ந்தெடுக்கப்பட்ட பேரவையின் முதல் கூட்டத்திற்கு சற்று முன்பு வரை பதவியில் தொடர்கிறார்",
       "சபாநாயகரின் பணிகள் தானாகவே ஆளுநருக்கு மாற்றப்படுகின்றன",
+      "சபாநாயகர் பதவியை இழப்பதில்லை; புதிதாகத் தேர்ந்தெடுக்கப்பட்ட பேரவையின் முதல் கூட்டத்திற்கு சற்று முன்பு வரை பதவியில் தொடர்கிறார்",
       "உயர் நீதிமன்றத் தலைமை நீதிபதி தற்காலிக சபாநாயகராகப் பொறுப்பேற்கிறார்"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "The second proviso to Article 179 explicitly states: 'Provided further that, whenever the Assembly is dissolved, the Speaker shall not vacate his office until immediately before the first meeting of the Assembly after the dissolution.'",
       "ta": "உறுப்பு 179-ன் இரண்டாவது வரம்பு நிபந்தனை திட்டவட்டமாகக் கூறுகிறது: 'பேரவை கலைக்கப்படும் போதெல்லாம், கலைக்கப்பட்ட பின்னர் கூடும் பேரவையின் முதல் கூட்டத்திற்கு சற்று முன்பு வரை சபாநாயகர் தனது பதவியைக் காலி செய்யலாகாது.'"
@@ -441,12 +441,12 @@
         "ta": "தவறு. கலைக்கப்படும் போது சபாநாயகர் பதவி விலகுவதில்லை; இது தேர்வுகளில் கேட்கப்படும் வழக்கமான பொறி."
       },
       "B": {
-        "en": "Correct. Continues until immediately before the first meeting of the new Assembly under Art 179.",
-        "ta": "சரி. உறுப்பு 179-ன் படி புதிய பேரவையின் முதல் கூட்டத்திற்கு சற்று முன்பு வரை பதவியில் நீடிக்கிறார்."
-      },
-      "C": {
         "en": "Incorrect. Functions are not transferred to the Governor.",
         "ta": "தவறு. பணிகள் ஆளுநருக்கு மாற்றப்படுவதில்லை."
+      },
+      "C": {
+        "en": "Correct. Continues until immediately before the first meeting of the new Assembly under Art 179.",
+        "ta": "சரி. உறுப்பு 179-ன் படி புதிய பேரவையின் முதல் கூட்டத்திற்கு சற்று முன்பு வரை பதவியில் நீடிக்கிறார்."
       },
       "D": {
         "en": "Incorrect. Judiciary has no role in the office of Speaker.",
@@ -497,13 +497,13 @@
       },
       {
         "id": "B",
-        "en": "The Speaker presides over the House and exercises a casting vote in case of a tie",
-        "ta": "சபாநாயகர் அவைக்குத் தலைமை தாங்கி, சமநிலை ஏற்படும் போது முடிவு வாக்கை செலுத்துகிறார்"
+        "en": "The Speaker has the right to speak, take part, and vote in the first instance, but has NO casting vote in case of an equality of votes",
+        "ta": "சபாநாயகருக்குப் பேசவும், விவாதத்தில் பங்கேற்கவும், முதல் நிகழ்வில் வாக்களிக்கவும் உரிமை உண்டு; ஆனால் வாக்குகள் சமமாகும் போது முடிவு வாக்கு செலுத்தும் உரிமை இல்லை"
       },
       {
         "id": "C",
-        "en": "The Speaker has the right to speak, take part, and vote in the first instance, but has NO casting vote in case of an equality of votes",
-        "ta": "சபாநாயகருக்குப் பேசவும், விவாதத்தில் பங்கேற்கவும், முதல் நிகழ்வில் வாக்களிக்கவும் உரிமை உண்டு; ஆனால் வாக்குகள் சமமாகும் போது முடிவு வாக்கு செலுத்தும் உரிமை இல்லை"
+        "en": "The Speaker presides over the House and exercises a casting vote in case of a tie",
+        "ta": "சபாநாயகர் அவைக்குத் தலைமை தாங்கி, சமநிலை ஏற்படும் போது முடிவு வாக்கை செலுத்துகிறார்"
       },
       {
         "id": "D",
@@ -513,18 +513,18 @@
     ],
     "options_en": [
       "The Speaker has no right to speak, take part, or vote at all",
-      "The Speaker presides over the House and exercises a casting vote in case of a tie",
       "The Speaker has the right to speak, take part, and vote in the first instance, but has NO casting vote in case of an equality of votes",
+      "The Speaker presides over the House and exercises a casting vote in case of a tie",
       "The Speaker can only vote if the Governor grants special permission"
     ],
     "options_ta": [
       "சபாநாயகருக்குப் பேசவோ, பங்கெடுக்கவோ அல்லது வாக்களிக்கவோ எந்த உரிமையும் இல்லை",
-      "சபாநாயகர் அவைக்குத் தலைமை தாங்கி, சமநிலை ஏற்படும் போது முடிவு வாக்கை செலுத்துகிறார்",
       "சபாநாயகருக்குப் பேசவும், விவாதத்தில் பங்கேற்கவும், முதல் நிகழ்வில் வாக்களிக்கவும் உரிமை உண்டு; ஆனால் வாக்குகள் சமமாகும் போது முடிவு வாக்கு செலுத்தும் உரிமை இல்லை",
+      "சபாநாயகர் அவைக்குத் தலைமை தாங்கி, சமநிலை ஏற்படும் போது முடிவு வாக்கை செலுத்துகிறார்",
       "ஆளுநர் சிறப்பு அனுமதி அளித்தால் மட்டுமே சபாநாயகர் வாக்களிக்க முடியும்"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Article 181(2) provides that the Speaker shall have the right to speak in, and otherwise take part in the proceedings of, the Legislative Assembly while any resolution for his removal is under consideration, and shall be entitled to vote in the first instance on such resolution or on any other matter, but NOT in the case of an equality of votes.",
       "ta": "உறுப்பு 181(2)-ன் படி, தன்னை நீக்கும் தீர்மானம் பரிசீலனையில் உள்ள போது, சபாநாயகர் பேரவை நடவடிக்கைகளில் பேசவும் பங்கேற்கவும் உரிமை உண்டு; மேலும் முதல் சுற்றில் வாக்களிக்கவும் உரிமை உண்டு. ஆனால் வாக்குகள் சமமாகும் போது முடிவு வாக்கை (casting vote) செலுத்த முடியாது."
@@ -537,12 +537,12 @@
         "ta": "தவறு. சபாநாயகருக்கு முதல் சுற்றில் பேசவும் வாக்களிக்கவும் முழு உரிமை உண்டு."
       },
       "B": {
-        "en": "Incorrect. Speaker CANNOT preside while removal resolution is under consideration (Art 181(1)).",
-        "ta": "தவறு. நீக்கத் தீர்மானத்தின் போது சபாநாயகர் தலைமை தாங்க முடியாது (உறுப்பு 181(1))."
-      },
-      "C": {
         "en": "Correct. Can speak, take part, and vote in first instance, but NO casting vote under Article 181(2).",
         "ta": "சரி. உறுப்பு 181(2)-ன் படி பேசலாம், பங்கேற்கலாம், முதல் சுற்றில் வாக்களிக்கலாம்; ஆனால் முடிவு வாக்கு கிடையாது."
+      },
+      "C": {
+        "en": "Incorrect. Speaker CANNOT preside while removal resolution is under consideration (Art 181(1)).",
+        "ta": "தவறு. நீக்கத் தீர்மானத்தின் போது சபாநாயகர் தலைமை தாங்க முடியாது (உறுப்பு 181(1))."
       },
       "D": {
         "en": "Incorrect. Governor permission is irrelevant.",
@@ -588,8 +588,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Council Chairman is appointed by the Governor, while RS Chairman is elected by MPs",
-        "ta": "மேலவைத் தலைவர் ஆளுநரால் நியமிக்கப்படுகிறார், மாநிலங்களவைத் தலைவர் எம்.பி-க்களால் தேர்ந்தெடுக்கப்படுகிறார்"
+        "en": "Council Chairman is a member of the Legislative Council, whereas Rajya Sabha Chairman (Vice-President) is NOT a member of Rajya Sabha",
+        "ta": "மேலவைத் தலைவர் சட்ட மேலவையின் ஓர் உறுப்பினராவார், ஆனால் மாநிலங்களவைத் தலைவர் (துணைக் குடியரசுத் தலைவர்) மாநிலங்களவையின் உறுப்பினர் அல்லர்"
       },
       {
         "id": "B",
@@ -603,24 +603,24 @@
       },
       {
         "id": "D",
-        "en": "Council Chairman is a member of the Legislative Council, whereas Rajya Sabha Chairman (Vice-President) is NOT a member of Rajya Sabha",
-        "ta": "மேலவைத் தலைவர் சட்ட மேலவையின் ஓர் உறுப்பினராவார், ஆனால் மாநிலங்களவைத் தலைவர் (துணைக் குடியரசுத் தலைவர்) மாநிலங்களவையின் உறுப்பினர் அல்லர்"
+        "en": "Council Chairman is appointed by the Governor, while RS Chairman is elected by MPs",
+        "ta": "மேலவைத் தலைவர் ஆளுநரால் நியமிக்கப்படுகிறார், மாநிலங்களவைத் தலைவர் எம்.பி-க்களால் தேர்ந்தெடுக்கப்படுகிறார்"
       }
     ],
     "options_en": [
-      "Council Chairman is appointed by the Governor, while RS Chairman is elected by MPs",
+      "Council Chairman is a member of the Legislative Council, whereas Rajya Sabha Chairman (Vice-President) is NOT a member of Rajya Sabha",
       "Council Chairman has no casting vote, while RS Chairman has a casting vote",
       "Council Chairman cannot be removed by the Council, whereas RS Chairman can be",
-      "Council Chairman is a member of the Legislative Council, whereas Rajya Sabha Chairman (Vice-President) is NOT a member of Rajya Sabha"
+      "Council Chairman is appointed by the Governor, while RS Chairman is elected by MPs"
     ],
     "options_ta": [
-      "மேலவைத் தலைவர் ஆளுநரால் நியமிக்கப்படுகிறார், மாநிலங்களவைத் தலைவர் எம்.பி-க்களால் தேர்ந்தெடுக்கப்படுகிறார்",
+      "மேலவைத் தலைவர் சட்ட மேலவையின் ஓர் உறுப்பினராவார், ஆனால் மாநிலங்களவைத் தலைவர் (துணைக் குடியரசுத் தலைவர்) மாநிலங்களவையின் உறுப்பினர் அல்லர்",
       "மேலவைத் தலைவருக்கு முடிவு வாக்கு இல்லை, மாநிலங்களவைத் தலைவருக்கு உண்டு",
       "மேலவைத் தலைவரை மேலவையால் நீக்க முடியாது, ஆனால் மாநிலங்களவைத் தலைவரை நீக்க முடியும்",
-      "மேலவைத் தலைவர் சட்ட மேலவையின் ஓர் உறுப்பினராவார், ஆனால் மாநிலங்களவைத் தலைவர் (துணைக் குடியரசுத் தலைவர்) மாநிலங்களவையின் உறுப்பினர் அல்லர்"
+      "மேலவைத் தலைவர் ஆளுநரால் நியமிக்கப்படுகிறார், மாநிலங்களவைத் தலைவர் எம்.பி-க்களால் தேர்ந்தெடுக்கப்படுகிறார்"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "The Chairman of the Rajya Sabha is the Vice-President of India ex-officio (Article 64/89) and is NOT a member of the Rajya Sabha. In contrast, the Chairman of the State Legislative Council under Article 182 is chosen from amongst the sitting members of the Legislative Council.",
       "ta": "மாநிலங்களவையின் தலைவர் பதவிவழி அடிப்படையில் இந்தியாவின் துணைக் குடியரசுத் தலைவராவார் (உறுப்பு 64/89); அவர் மாநிலங்களவை உறுப்பினர் அல்லர். மாறாக, உறுப்பு 182-ன் கீழ் மாநில சட்ட மேலவைத் தலைவர் மேலவையின் உறுப்பினர்களிலிருந்தே ஒருவராகத் தேர்ந்தெடுக்கப்படுகிறார்."
@@ -629,8 +629,8 @@
     "explanation_ta": "மாநிலங்களவையின் தலைவர் பதவிவழி அடிப்படையில் இந்தியாவின் துணைக் குடியரசுத் தலைவராவார் (உறுப்பு 64/89); அவர் மாநிலங்களவை உறுப்பினர் அல்லர். மாறாக, உறுப்பு 182-ன் கீழ் மாநில சட்ட மேலவைத் தலைவர் மேலவையின் உறுப்பினர்களிலிருந்தே ஒருவராகத் தேர்ந்தெடுக்கப்படுகிறார்.",
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Council Chairman is elected by Council members, not appointed by Governor.",
-        "ta": "தவறு. மேலவைத் தலைவர் மேலவை உறுப்பினர்களால் தேர்ந்தெடுக்கப்படுகிறார், ஆளுநரால் அல்ல."
+        "en": "Correct. Council Chairman IS a member of the House; RS Chairman IS NOT a member of the House.",
+        "ta": "சரி. மேலவைத் தலைவர் அவையின் உறுப்பினர்; மாநிலங்களவைத் தலைவர் அவையின் உறுப்பினர் அல்லர்."
       },
       "B": {
         "en": "Incorrect. Both have casting votes in their respective Houses.",
@@ -641,8 +641,8 @@
         "ta": "தவறு. மேலவைத் தலைவரை மேலவை தீர்மானம் மூலம் நீக்க முடியும் (உறுப்பு 183(c))."
       },
       "D": {
-        "en": "Correct. Council Chairman IS a member of the House; RS Chairman IS NOT a member of the House.",
-        "ta": "சரி. மேலவைத் தலைவர் அவையின் உறுப்பினர்; மாநிலங்களவைத் தலைவர் அவையின் உறுப்பினர் அல்லர்."
+        "en": "Incorrect. Council Chairman is elected by Council members, not appointed by Governor.",
+        "ta": "தவறு. மேலவைத் தலைவர் மேலவை உறுப்பினர்களால் தேர்ந்தெடுக்கப்படுகிறார், ஆளுநரால் அல்ல."
       }
     },
     "tnpsc_tip": {
@@ -886,29 +886,29 @@
       },
       {
         "id": "C",
-        "en": "Within 6 months from the date of receipt of such message",
-        "ta": "அத்தகைய செய்தி கிடைத்த நாளிலிருந்து 6 மாதங்களுக்குள்"
+        "en": "Within 1 year from receipt of the message",
+        "ta": "செய்தி கிடைத்த நாளிலிருந்து 1 ஆண்டுக்குள்"
       },
       {
         "id": "D",
-        "en": "Within 1 year from receipt of the message",
-        "ta": "செய்தி கிடைத்த நாளிலிருந்து 1 ஆண்டுக்குள்"
+        "en": "Within 6 months from the date of receipt of such message",
+        "ta": "அத்தகைய செய்தி கிடைத்த நாளிலிருந்து 6 மாதங்களுக்குள்"
       }
     ],
     "options_en": [
       "Within 14 days from receipt of the message",
       "Within 3 months from receipt of the message",
-      "Within 6 months from the date of receipt of such message",
-      "Within 1 year from receipt of the message"
+      "Within 1 year from receipt of the message",
+      "Within 6 months from the date of receipt of such message"
     ],
     "options_ta": [
       "செய்தி கிடைத்த நாளிலிருந்து 14 நாட்களுக்குள்",
       "செய்தி கிடைத்த நாளிலிருந்து 3 மாதங்களுக்குள்",
-      "அத்தகைய செய்தி கிடைத்த நாளிலிருந்து 6 மாதங்களுக்குள்",
-      "செய்தி கிடைத்த நாளிலிருந்து 1 ஆண்டுக்குள்"
+      "செய்தி கிடைத்த நாளிலிருந்து 1 ஆண்டுக்குள்",
+      "அத்தகைய செய்தி கிடைத்த நாளிலிருந்து 6 மாதங்களுக்குள்"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "The proviso to Article 201 provides that where a Bill is so returned, the House or Houses shall reconsider it accordingly within a period of six months from the date of receipt of such message and, if it is again passed by the House or Houses with or without amendment, it shall be presented again to the President for his consideration.",
       "ta": "உறுப்பு 201-ன் வரம்பு நிபந்தனையின்படி, அவ்வாறு திருப்பி அனுப்பப்படும் போது, சட்டமன்ற அவை(கள்) அச்செய்தி கிடைத்த நாளிலிருந்து ஆறு (6) மாத காலத்திற்குள் அதை மறுபரிசீலனை செய்ய வேண்டும்; மீண்டும் நிறைவேற்றப்பட்டால் மீண்டும் குடியரசுத் தலைவரின் பரிசீலனைக்கு சமர்ப்பிக்கப்பட வேண்டும்."
@@ -925,12 +925,12 @@
         "ta": "தவறு. 3 மாதங்கள் என்பது சாதாரண மசோதாக்களுக்கான முதற்கட்ட அவகாசம்."
       },
       "C": {
-        "en": "Correct. Exactly 6 months under the proviso to Article 201.",
-        "ta": "சரி. உறுப்பு 201 வரம்பு நிபந்தனையின் கீழ் சரியாக 6 மாதங்கள்."
-      },
-      "D": {
         "en": "Incorrect. 1 year is not the period specified in Article 201.",
         "ta": "தவறு. 1 ஆண்டு என்பது உறுப்பு 201-ல் உள்ள கால அளவு அல்ல."
+      },
+      "D": {
+        "en": "Correct. Exactly 6 months under the proviso to Article 201.",
+        "ta": "சரி. உறுப்பு 201 வரம்பு நிபந்தனையின் கீழ் சரியாக 6 மாதங்கள்."
       }
     },
     "tnpsc_tip": {
@@ -971,8 +971,8 @@
     "options": [
       {
         "id": "A",
-        "en": "The President is constitutionally bound to give assent",
-        "ta": "குடியரசுத் தலைவர் கண்டிப்பாக ஒப்புதல் அளிக்கக் கடமைப்பட்டவர்"
+        "en": "The President is NOT bound to give assent and may still withhold assent",
+        "ta": "குடியரசுத் தலைவர் ஒப்புதல் அளிக்கக் கடமைப்பட்டவரல்ல; அவர் இன்னும் ஒப்புதலை நிறுத்தி வைக்கலாம்"
       },
       {
         "id": "B",
@@ -986,24 +986,24 @@
       },
       {
         "id": "D",
-        "en": "The President is NOT bound to give assent and may still withhold assent",
-        "ta": "குடியரசுத் தலைவர் ஒப்புதல் அளிக்கக் கடமைப்பட்டவரல்ல; அவர் இன்னும் ஒப்புதலை நிறுத்தி வைக்கலாம்"
+        "en": "The President is constitutionally bound to give assent",
+        "ta": "குடியரசுத் தலைவர் கண்டிப்பாக ஒப்புதல் அளிக்கக் கடமைப்பட்டவர்"
       }
     ],
     "options_en": [
-      "The President is constitutionally bound to give assent",
+      "The President is NOT bound to give assent and may still withhold assent",
       "The Bill automatically becomes law without the President's signature",
       "The President must refer the Bill to a joint session of Parliament",
-      "The President is NOT bound to give assent and may still withhold assent"
+      "The President is constitutionally bound to give assent"
     ],
     "options_ta": [
-      "குடியரசுத் தலைவர் கண்டிப்பாக ஒப்புதல் அளிக்கக் கடமைப்பட்டவர்",
+      "குடியரசுத் தலைவர் ஒப்புதல் அளிக்கக் கடமைப்பட்டவரல்ல; அவர் இன்னும் ஒப்புதலை நிறுத்தி வைக்கலாம்",
       "குடியரசுத் தலைவரின் கையொப்பமின்றியே மசோதா தானாகச் சட்டமாகிவிடும்",
       "குடியரசுத் தலைவர் மசோதாவை நாடாளுமன்றக் கூட்டுத் தொடருக்கு அனுப்ப வேண்டும்",
-      "குடியரசுத் தலைவர் ஒப்புதல் அளிக்கக் கடமைப்பட்டவரல்ல; அவர் இன்னும் ஒப்புதலை நிறுத்தி வைக்கலாம்"
+      "குடியரசுத் தலைவர் கண்டிப்பாக ஒப்புதல் அளிக்கக் கடமைப்பட்டவர்"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Unlike Article 200 (where the Governor must assent upon re-passage) or Article 111 (where the President must assent to Parliament's re-passed bills), Article 201 contains NO mandatory assent obligation on the President. The President can still withhold assent even if the State Legislature passes the bill a second time.",
       "ta": "உறுப்பு 200 (ஆளுநர் மீண்டும் நிறைவேற்றப்பட்ட மசோதாவுக்கு ஒப்புதல் அளித்தாக வேண்டும்) அல்லது உறுப்பு 111 (நாடாளுமன்ற மசோதாவுக்குக் குடியரசுத் தலைவர் ஒப்புதல் அளித்தாக வேண்டும்) போலன்றி, உறுப்பு 201-ல் குடியரசுத் தலைவர் ஒப்புதல் அளிக்க வேண்டும் என்ற எந்தக் கட்டாயமும் இல்லை. சட்டமன்றம் மீண்டும் நிறைவேற்றினாலும் குடியரசுத் தலைவர் தனது ஒப்புதலை நிறுத்தி வைக்கலாம் (முழுமையான வீட்டோ)."
@@ -1012,8 +1012,8 @@
     "explanation_ta": "உறுப்பு 200 (ஆளுநர் மீண்டும் நிறைவேற்றப்பட்ட மசோதாவுக்கு ஒப்புதல் அளித்தாக வேண்டும்) அல்லது உறுப்பு 111 (நாடாளுமன்ற மசோதாவுக்குக் குடியரசுத் தலைவர் ஒப்புதல் அளித்தாக வேண்டும்) போலன்றி, உறுப்பு 201-ல் குடியரசுத் தலைவர் ஒப்புதல் அளிக்க வேண்டும் என்ற எந்தக் கட்டாயமும் இல்லை. சட்டமன்றம் மீண்டும் நிறைவேற்றினாலும் குடியரசுத் தலைவர் தனது ஒப்புதலை நிறுத்தி வைக்கலாம் (முழுமையான வீட்டோ).",
     "why_not_others": {
       "A": {
-        "en": "Incorrect. This is a very common TNPSC trap; President is NOT bound to assent under Article 201.",
-        "ta": "தவறு. இது பொதுவான தேர்வுப் பொறி; உறுப்பு 201-ன் கீழ் குடியரசுத் தலைவர் ஒப்புதல் அளிக்கக் கடமைப்பட்டவரல்ல."
+        "en": "Correct. President retains absolute veto over State Bills under Article 201.",
+        "ta": "சரி. உறுப்பு 201-ன் கீழ் மாநில மசோதாக்கள் மீது குடியரசுத் தலைவர் முழுமையான வீட்டோ அதிகாரத்தைத் தக்க வைத்துக் கொண்டுள்ளார்."
       },
       "B": {
         "en": "Incorrect. No bill becomes law without assent.",
@@ -1024,8 +1024,8 @@
         "ta": "தவறு. இந்த கட்டத்தில் நாடாளுமன்றத்திற்கு எந்தப் பங்கும் இல்லை."
       },
       "D": {
-        "en": "Correct. President retains absolute veto over State Bills under Article 201.",
-        "ta": "சரி. உறுப்பு 201-ன் கீழ் மாநில மசோதாக்கள் மீது குடியரசுத் தலைவர் முழுமையான வீட்டோ அதிகாரத்தைத் தக்க வைத்துக் கொண்டுள்ளார்."
+        "en": "Incorrect. This is a very common TNPSC trap; President is NOT bound to assent under Article 201.",
+        "ta": "தவறு. இது பொதுவான தேர்வுப் பொறி; உறுப்பு 201-ன் கீழ் குடியரசுத் தலைவர் ஒப்புதல் அளிக்கக் கடமைப்பட்டவரல்ல."
       }
     },
     "tnpsc_tip": {
@@ -1167,13 +1167,13 @@
       },
       {
         "id": "B",
-        "en": "It contains provisions involving expenditure from Consolidated Fund, can be introduced in either House without recommendation, but requires Governor's recommendation for passing/consideration",
-        "ta": "இது தொகுப்பு நிதியத்திலிருந்து செலவினங்களை உள்ளடக்கியது; பரிந்துரையின்றி எந்த அவையிலும் அறிமுகப்படுத்தலாம், ஆனால் பரிசீலிக்க/நிறைவேற்ற ஆளுநரின் பரிந்துரை தேவை"
+        "en": "It can be certified as a Money Bill by the Chairman of Legislative Council",
+        "ta": "இதை சட்ட மேலவைத் தலைவரால் பண மசோதாவாகச் சான்றளிக்க முடியும்"
       },
       {
         "id": "C",
-        "en": "It can be certified as a Money Bill by the Chairman of Legislative Council",
-        "ta": "இதை சட்ட மேலவைத் தலைவரால் பண மசோதாவாகச் சான்றளிக்க முடியும்"
+        "en": "It contains provisions involving expenditure from Consolidated Fund, can be introduced in either House without recommendation, but requires Governor's recommendation for passing/consideration",
+        "ta": "இது தொகுப்பு நிதியத்திலிருந்து செலவினங்களை உள்ளடக்கியது; பரிந்துரையின்றி எந்த அவையிலும் அறிமுகப்படுத்தலாம், ஆனால் பரிசீலிக்க/நிறைவேற்ற ஆளுநரின் பரிந்துரை தேவை"
       },
       {
         "id": "D",
@@ -1183,18 +1183,18 @@
     ],
     "options_en": [
       "It contains Article 199 taxation clauses exclusively",
-      "It contains provisions involving expenditure from Consolidated Fund, can be introduced in either House without recommendation, but requires Governor's recommendation for passing/consideration",
       "It can be certified as a Money Bill by the Chairman of Legislative Council",
+      "It contains provisions involving expenditure from Consolidated Fund, can be introduced in either House without recommendation, but requires Governor's recommendation for passing/consideration",
       "It bypasses the Legislative Assembly completely and is passed by Council"
     ],
     "options_ta": [
       "இது உறுப்பு 199-ன் வரிக் கூறுகளை மட்டுமே பிரத்யேகமாகக் கொண்டுள்ளது",
-      "இது தொகுப்பு நிதியத்திலிருந்து செலவினங்களை உள்ளடக்கியது; பரிந்துரையின்றி எந்த அவையிலும் அறிமுகப்படுத்தலாம், ஆனால் பரிசீலிக்க/நிறைவேற்ற ஆளுநரின் பரிந்துரை தேவை",
       "இதை சட்ட மேலவைத் தலைவரால் பண மசோதாவாகச் சான்றளிக்க முடியும்",
+      "இது தொகுப்பு நிதியத்திலிருந்து செலவினங்களை உள்ளடக்கியது; பரிந்துரையின்றி எந்த அவையிலும் அறிமுகப்படுத்தலாம், ஆனால் பரிசீலிக்க/நிறைவேற்ற ஆளுநரின் பரிந்துரை தேவை",
       "இது சட்டமன்றப் பேரவையைத் தவிர்த்துவிட்டு மேலவையால் நிறைவேற்றப்படுகிறது"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Article 207(3) governs Financial Bills (Category II), which contain provisions involving expenditure from the Consolidated Fund of the State but do not contain any of the matters in Article 199. Such a Bill can be introduced in EITHER House without prior recommendation, but cannot be passed by either House unless the Governor has recommended its consideration.",
       "ta": "உறுப்பு 207(3) நிதி மசோதா (வகை II)-ஐக் கையாள்கிறது. இது மாநிலத் தொகுப்பு நிதியத்திலிருந்து செலவினங்களை உள்ளடக்கியது, ஆனால் உறுப்பு 199-ன் விவகாரங்கள் இதில் இல்லை. இம்மசோதாவை முன் பரிந்துரையின்றி எந்த அவையிலும் அறிமுகப்படுத்தலாம்; ஆனால் ஆளுநரின் பரிசீலனைப் பரிந்துரை இன்றி எந்த அவையும் இதை நிறைவேற்ற முடியாது."
@@ -1207,12 +1207,12 @@
         "ta": "தவறு. உறுப்பு 199 கூறுகள் பண மசோதா அல்லது வகை I நிதி மசோதாவைச் சேர்ந்தவை."
       },
       "B": {
-        "en": "Correct. Introduced in either House without recommendation, but requires recommendation for passing under Art 207(3).",
-        "ta": "சரி. எந்த அவையிலும் பரிந்துரையின்றி அறிமுகப்படுத்தலாம், ஆனால் நிறைவேற்ற உறுப்பு 207(3)-ன் கீழ் ஆளுநர் பரிந்துரை தேவை."
-      },
-      "C": {
         "en": "Incorrect. Chairman cannot certify money bills.",
         "ta": "தவறு. மேலவைத் தலைவர் பண மசோதா சான்றளிக்க முடியாது."
+      },
+      "C": {
+        "en": "Correct. Introduced in either House without recommendation, but requires recommendation for passing under Art 207(3).",
+        "ta": "சரி. எந்த அவையிலும் பரிந்துரையின்றி அறிமுகப்படுத்தலாம், ஆனால் நிறைவேற்ற உறுப்பு 207(3)-ன் கீழ் ஆளுநர் பரிந்துரை தேவை."
       },
       "D": {
         "en": "Incorrect. Assembly cannot be bypassed.",
@@ -1262,13 +1262,13 @@
       },
       {
         "id": "B",
-        "en": "Pensions of High Court Judges (charged on Union, not State)",
-        "ta": "உயர் நீதிமன்ற நீதிபதிகளின் ஓய்வூதியம் (மத்திய அரசு மீது சுமத்தப்பட்டது, மாநிலம் அல்ல)"
+        "en": "Emoluments and allowances of Governor, salaries of Speaker/Deputy Speaker and Council Chairman/Deputy Chairman, and salaries of High Court Judges",
+        "ta": "ஆளுநரின் ஊதியப்படிகள், சபாநாயகர்/துணை சபாநாயகர் மற்றும் மேலவைத் தலைவர்/துணைத் தலைவர் ஊதியங்கள், மற்றும் உயர் நீதிமன்ற நீதிபதிகளின் ஊதியங்கள்"
       },
       {
         "id": "C",
-        "en": "Emoluments and allowances of Governor, salaries of Speaker/Deputy Speaker and Council Chairman/Deputy Chairman, and salaries of High Court Judges",
-        "ta": "ஆளுநரின் ஊதியப்படிகள், சபாநாயகர்/துணை சபாநாயகர் மற்றும் மேலவைத் தலைவர்/துணைத் தலைவர் ஊதியங்கள், மற்றும் உயர் நீதிமன்ற நீதிபதிகளின் ஊதியங்கள்"
+        "en": "Pensions of High Court Judges (charged on Union, not State)",
+        "ta": "உயர் நீதிமன்ற நீதிபதிகளின் ஓய்வூதியம் (மத்திய அரசு மீது சுமத்தப்பட்டது, மாநிலம் அல்ல)"
       },
       {
         "id": "D",
@@ -1278,18 +1278,18 @@
     ],
     "options_en": [
       "Salaries of all Cabinet Ministers and Members of Legislative Assembly",
-      "Pensions of High Court Judges (charged on Union, not State)",
       "Emoluments and allowances of Governor, salaries of Speaker/Deputy Speaker and Council Chairman/Deputy Chairman, and salaries of High Court Judges",
+      "Pensions of High Court Judges (charged on Union, not State)",
       "Welfare expenditure on state government poverty alleviation schemes"
     ],
     "options_ta": [
       "அனைத்து அமைச்சரவை அமைச்சர்கள் மற்றும் சட்டமன்ற உறுப்பினர்களின் ஊதியங்கள்",
-      "உயர் நீதிமன்ற நீதிபதிகளின் ஓய்வூதியம் (மத்திய அரசு மீது சுமத்தப்பட்டது, மாநிலம் அல்ல)",
       "ஆளுநரின் ஊதியப்படிகள், சபாநாயகர்/துணை சபாநாயகர் மற்றும் மேலவைத் தலைவர்/துணைத் தலைவர் ஊதியங்கள், மற்றும் உயர் நீதிமன்ற நீதிபதிகளின் ஊதியங்கள்",
+      "உயர் நீதிமன்ற நீதிபதிகளின் ஓய்வூதியம் (மத்திய அரசு மீது சுமத்தப்பட்டது, மாநிலம் அல்ல)",
       "மாநில அரசின் வறுமை ஒழிப்புத் திட்டங்களுக்கான நலத்திட்டச் செலவுகள்"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Article 202(3) lists expenditures charged on the Consolidated Fund of the State: Governor's emoluments, debt charges, salaries/allowances of Speaker and Deputy Speaker of Assembly, Chairman and Deputy Chairman of Council, salaries and allowances of High Court Judges, and sums required to satisfy court decrees. These can be discussed, but are NOT voted upon.",
       "ta": "உறுப்பு 202(3) மாநிலத் தொகுப்பு நிதியில் சுமத்தப்பட்ட செலவுகளைப் பட்டியலிடுகிறது: ஆளுநர் படிகள், கடன் பொறுப்புகள், பேரவைத் தலைவர்/துணைத் தலைவர் மற்றும் மேலவைத் தலைவர்/துணைத் தலைவர் ஊதியங்கள், உயர் நீதிமன்ற நீதிபதிகளின் ஊதியப்படிகள், நீதிமன்றத் தீர்ப்புகளை நிறைவேற்றத் தேவையான தொகைகள். இவை விவாதிக்கப்படலாம், ஆனால் வாக்கெடுப்பிற்கு விடப்படாது."
@@ -1302,12 +1302,12 @@
         "ta": "தவறு. அமைச்சர்கள் மற்றும் எம்.எல்.ஏ-க்களின் ஊதியங்கள் வாக்கெடுப்பிற்குரியவை, சுமத்தப்பட்டவை அல்ல."
       },
       "B": {
-        "en": "Incorrect. High Court Judges' PENSIONS are charged on the Consolidated Fund of INDIA (Art 112(3)(d)(iii)), while their SALARIES are charged on the State.",
-        "ta": "தவறு. உயர் நீதிமன்ற நீதிபதிகளின் ஓய்வூதியம் இந்தியத் தொகுப்பு நிதியில் சுமத்தப்படுகிறது (உறுப்பு 112); சம்பளம் மட்டுமே மாநிலத் தொகுப்பு நிதியில் சுமத்தப்படுகிறது."
-      },
-      "C": {
         "en": "Correct. Governor, Presiding Officers, and HC Judges' salaries are charged on State Consolidated Fund.",
         "ta": "சரி. ஆளுநர், தலைமை அலுவலர்கள் மற்றும் உயர் நீதிமன்ற நீதிபதிகளின் ஊதியங்கள் மாநிலத் தொகுப்பு நிதியில் சுமத்தப்பட்டவை."
+      },
+      "C": {
+        "en": "Incorrect. High Court Judges' PENSIONS are charged on the Consolidated Fund of INDIA (Art 112(3)(d)(iii)), while their SALARIES are charged on the State.",
+        "ta": "தவறு. உயர் நீதிமன்ற நீதிபதிகளின் ஓய்வூதியம் இந்தியத் தொகுப்பு நிதியில் சுமத்தப்படுகிறது (உறுப்பு 112); சம்பளம் மட்டுமே மாநிலத் தொகுப்பு நிதியில் சுமத்தப்படுகிறது."
       },
       "D": {
         "en": "Incorrect. Welfare schemes are votable demands for grants.",
@@ -1353,8 +1353,8 @@
     "options": [
       {
         "id": "A",
-        "en": "To audit the expenditure incurred in the previous financial year",
-        "ta": "முந்தைய நிதியாண்டில் செய்யப்பட்ட செலவினங்களைத் தணிக்கை செய்ய"
+        "en": "To make an advance grant for estimated expenditure for a part of the financial year pending the passage of the Appropriation Bill",
+        "ta": "நிதி ஒதுக்கீட்டு மசோதா நிறைவேற்றப்படும் வரை நிதியாண்டின் ஒரு பகுதி செலவினங்களுக்காக முன்பண மானியம் வழங்க"
       },
       {
         "id": "B",
@@ -1368,24 +1368,24 @@
       },
       {
         "id": "D",
-        "en": "To make an advance grant for estimated expenditure for a part of the financial year pending the passage of the Appropriation Bill",
-        "ta": "நிதி ஒதுக்கீட்டு மசோதா நிறைவேற்றப்படும் வரை நிதியாண்டின் ஒரு பகுதி செலவினங்களுக்காக முன்பண மானியம் வழங்க"
+        "en": "To audit the expenditure incurred in the previous financial year",
+        "ta": "முந்தைய நிதியாண்டில் செய்யப்பட்ட செலவினங்களைத் தணிக்கை செய்ய"
       }
     ],
     "options_en": [
-      "To audit the expenditure incurred in the previous financial year",
+      "To make an advance grant for estimated expenditure for a part of the financial year pending the passage of the Appropriation Bill",
       "To provide funds for secret intelligence services",
       "To grant emergency funds during a proclamation of President's Rule",
-      "To make an advance grant for estimated expenditure for a part of the financial year pending the passage of the Appropriation Bill"
+      "To audit the expenditure incurred in the previous financial year"
     ],
     "options_ta": [
-      "முந்தைய நிதியாண்டில் செய்யப்பட்ட செலவினங்களைத் தணிக்கை செய்ய",
+      "நிதி ஒதுக்கீட்டு மசோதா நிறைவேற்றப்படும் வரை நிதியாண்டின் ஒரு பகுதி செலவினங்களுக்காக முன்பண மானியம் வழங்க",
       "ரகசிய உளவு அமைப்புகளுக்கான நிதியை வழங்க",
       "குடியரசுத் தலைவர் ஆட்சியின் போது அவசர நிதியை வழங்க",
-      "நிதி ஒதுக்கீட்டு மசோதா நிறைவேற்றப்படும் வரை நிதியாண்டின் ஒரு பகுதி செலவினங்களுக்காக முன்பண மானியம் வழங்க"
+      "முந்தைய நிதியாண்டில் செய்யப்பட்ட செலவினங்களைத் தணிக்கை செய்ய"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Article 206(1)(a) empowers the Legislative Assembly to make any grant in advance in respect of the estimated expenditure for a part of any financial year pending the completion of the procedure prescribed in Article 203 for the voting of such grants and the passing of the law in accordance with the provisions of Article 204. This is known as a 'Vote on Account'.",
       "ta": "உறுப்பு 206(1)(a)-ன் படி, மானியங்கள் மீது வாக்களித்து நிதி ஒதுக்கீட்டுச் சட்டம் (உறுப்பு 204) நிறைவேற்றப்படும் வரை, நிதியாண்டின் ஒரு குறிப்பிட்ட பகுதிக்குத் தேவைப்படும் செலவுகளுக்காக சட்டமன்றப் பேரவை வழங்கும் முன்பண மானியமே 'கணக்கு மீதான வாக்கு' ஆகும்."
@@ -1394,8 +1394,8 @@
     "explanation_ta": "உறுப்பு 206(1)(a)-ன் படி, மானியங்கள் மீது வாக்களித்து நிதி ஒதுக்கீட்டுச் சட்டம் (உறுப்பு 204) நிறைவேற்றப்படும் வரை, நிதியாண்டின் ஒரு குறிப்பிட்ட பகுதிக்குத் தேவைப்படும் செலவுகளுக்காக சட்டமன்றப் பேரவை வழங்கும் முன்பண மானியமே 'கணக்கு மீதான வாக்கு' ஆகும்.",
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Auditing is done by CAG and PAC, not via Vote on Account.",
-        "ta": "தவறு. தணிக்கை செய்வது சிஏஜி மற்றும் பொதுக் கணக்குக் குழுவின் பணியாகும்."
+        "en": "Correct. Vote on Account provides advance funds pending passage of the full budget/Appropriation Act.",
+        "ta": "சரி. முழு பட்ஜெட் மற்றும் ஒதுக்கீட்டுச் சட்டம் நிறைவேறும் வரை முன்பண நிதியை வழங்குவதே கணக்கு மீதான வாக்கு ஆகும்."
       },
       "B": {
         "en": "Incorrect. Secret funds are voted under regular Demands.",
@@ -1406,8 +1406,8 @@
         "ta": "தவறு. குடியரசுத் தலைவர் ஆட்சியின் போது நாடாளுமன்றமே நிதி ஒதுக்குகிறது."
       },
       "D": {
-        "en": "Correct. Vote on Account provides advance funds pending passage of the full budget/Appropriation Act.",
-        "ta": "சரி. முழு பட்ஜெட் மற்றும் ஒதுக்கீட்டுச் சட்டம் நிறைவேறும் வரை முன்பண நிதியை வழங்குவதே கணக்கு மீதான வாக்கு ஆகும்."
+        "en": "Incorrect. Auditing is done by CAG and PAC, not via Vote on Account.",
+        "ta": "தவறு. தணிக்கை செய்வது சிஏஜி மற்றும் பொதுக் கணக்குக் குழுவின் பணியாகும்."
       }
     },
     "tnpsc_tip": {
@@ -1448,13 +1448,13 @@
     "options": [
       {
         "id": "A",
-        "en": "It is granted when money spent on a service exceeds the amount granted for that year, and it must be examined and recommended by the Public Accounts Committee (PAC) before being voted",
-        "ta": "ஒரு சேவைக்காக ஒதுக்கப்பட்ட தொகையை விட அதிகமாகச் செலவு செய்யப்பட்டால் இது வழங்கப்படுகிறது; மேலும் வாக்கெடுப்பிற்கு முன் பொதுக் கணக்குக் குழுவால் (PAC) ஆய்வு செய்யப்பட்டுப் பரிந்துரைக்கப்பட வேண்டும்"
+        "en": "It is an advance grant given before the financial year starts, scrutinized by the Finance Commission",
+        "ta": "நிதியாண்டு தொடங்குவதற்கு முன் வழங்கப்படும் முன்பண மானியம்; நிதி ஆணையத்தால் ஆய்வு செய்யப்படுகிறது"
       },
       {
         "id": "B",
-        "en": "It is an advance grant given before the financial year starts, scrutinized by the Finance Commission",
-        "ta": "நிதியாண்டு தொடங்குவதற்கு முன் வழங்கப்படும் முன்பண மானியம்; நிதி ஆணையத்தால் ஆய்வு செய்யப்படுகிறது"
+        "en": "It is granted when money spent on a service exceeds the amount granted for that year, and it must be examined and recommended by the Public Accounts Committee (PAC) before being voted",
+        "ta": "ஒரு சேவைக்காக ஒதுக்கப்பட்ட தொகையை விட அதிகமாகச் செலவு செய்யப்பட்டால் இது வழங்கப்படுகிறது; மேலும் வாக்கெடுப்பிற்கு முன் பொதுக் கணக்குக் குழுவால் (PAC) ஆய்வு செய்யப்பட்டுப் பரிந்துரைக்கப்பட வேண்டும்"
       },
       {
         "id": "C",
@@ -1468,19 +1468,19 @@
       }
     ],
     "options_en": [
-      "It is granted when money spent on a service exceeds the amount granted for that year, and it must be examined and recommended by the Public Accounts Committee (PAC) before being voted",
       "It is an advance grant given before the financial year starts, scrutinized by the Finance Commission",
+      "It is granted when money spent on a service exceeds the amount granted for that year, and it must be examined and recommended by the Public Accounts Committee (PAC) before being voted",
       "It is an unexpected grant given for national security, approved directly by the Governor",
       "It is an exceptional grant given for non-routine purposes, requiring two-thirds majority in Council"
     ],
     "options_ta": [
-      "ஒரு சேவைக்காக ஒதுக்கப்பட்ட தொகையை விட அதிகமாகச் செலவு செய்யப்பட்டால் இது வழங்கப்படுகிறது; மேலும் வாக்கெடுப்பிற்கு முன் பொதுக் கணக்குக் குழுவால் (PAC) ஆய்வு செய்யப்பட்டுப் பரிந்துரைக்கப்பட வேண்டும்",
       "நிதியாண்டு தொடங்குவதற்கு முன் வழங்கப்படும் முன்பண மானியம்; நிதி ஆணையத்தால் ஆய்வு செய்யப்படுகிறது",
+      "ஒரு சேவைக்காக ஒதுக்கப்பட்ட தொகையை விட அதிகமாகச் செலவு செய்யப்பட்டால் இது வழங்கப்படுகிறது; மேலும் வாக்கெடுப்பிற்கு முன் பொதுக் கணக்குக் குழுவால் (PAC) ஆய்வு செய்யப்பட்டுப் பரிந்துரைக்கப்பட வேண்டும்",
       "தேசிய பாதுகாப்பிற்காக வழங்கப்படும் எதிர்பாராத மானியம்; ஆளுநரால் நேரடியாக அங்கீகரிக்கப்படுகிறது",
       "வழக்கத்திற்கு மாறான நோக்கங்களுக்காக வழங்கப்படும் விதிவிலக்கான மானியம்; மேலவையில் 2/3 பெரும்பான்மை தேவை"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Under Article 205(1)(b), an Excess Grant is made when money has been spent on any service during a financial year in excess of the amount granted for that service and for that year. It is presented after the end of the financial year and must be examined and recommended by the Public Accounts Committee before the Assembly votes on it.",
       "ta": "உறுப்பு 205(1)(b)-ன் படி, ஒரு குறிப்பிட்ட நிதியாண்டில் ஒரு சேவைக்காக ஒதுக்கப்பட்ட தொகையை விட கூடுதல் பணம் செலவழிக்கப்பட்டிருந்தால், அந்தத் தொகையை முறைப்படுத்த 'கூடுதல் மானியம்' கோரப்படுகிறது. இது நிதியாண்டு முடிந்த பிறகே முன்வைக்கப்படுகிறது மற்றும் சட்டமன்றப் பேரவை வாக்களிப்பதற்கு முன் பொதுக் கணக்குக் குழுவால் (PAC) கட்டாயம் ஆய்வு செய்யப்பட்டு பரிந்துரைக்கப்பட வேண்டும்."
@@ -1489,12 +1489,12 @@
     "explanation_ta": "உறுப்பு 205(1)(b)-ன் படி, ஒரு குறிப்பிட்ட நிதியாண்டில் ஒரு சேவைக்காக ஒதுக்கப்பட்ட தொகையை விட கூடுதல் பணம் செலவழிக்கப்பட்டிருந்தால், அந்தத் தொகையை முறைப்படுத்த 'கூடுதல் மானியம்' கோரப்படுகிறது. இது நிதியாண்டு முடிந்த பிறகே முன்வைக்கப்படுகிறது மற்றும் சட்டமன்றப் பேரவை வாக்களிப்பதற்கு முன் பொதுக் கணக்குக் குழுவால் (PAC) கட்டாயம் ஆய்வு செய்யப்பட்டு பரிந்துரைக்கப்பட வேண்டும்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Excess expenditure after financial year, must be approved by PAC before voting under Art 205.",
-        "ta": "சரி. நிதியாண்டுக்குப் பிந்தைய கூடுதல் செலவு, உறுப்பு 205-ன் கீழ் வாக்கெடுப்பிற்கு முன் பிஏசி-யால் பரிந்துரைக்கப்பட வேண்டும்."
-      },
-      "B": {
         "en": "Incorrect. Excess Grant is after the financial year, not before.",
         "ta": "தவறு. கூடுதல் மானியம் நிதியாண்டிற்குப் பின்னரே வருகிறது, முன்னரல்ல."
+      },
+      "B": {
+        "en": "Correct. Excess expenditure after financial year, must be approved by PAC before voting under Art 205.",
+        "ta": "சரி. நிதியாண்டுக்குப் பிந்தைய கூடுதல் செலவு, உறுப்பு 205-ன் கீழ் வாக்கெடுப்பிற்கு முன் பிஏசி-யால் பரிந்துரைக்கப்பட வேண்டும்."
       },
       "C": {
         "en": "Incorrect. That describes Vote of Credit, not Excess Grant.",
@@ -1649,29 +1649,29 @@
       },
       {
         "id": "C",
-        "en": "The Speaker functions as a Tribunal, and Paragraph 7 excluding judicial review is unconstitutional; final decisions are subject to judicial review on limited grounds",
-        "ta": "சபாநாயகர் ஒரு தீர்ப்பாயமாகச் செயல்படுகிறார், மேலும் நீதித்துறை மறுஆய்வைத் தடுத்த பத்தி 7 அரசியலமைப்பிற்கு முரணானது; அவரது இறுதி முடிவுகள் குறிப்பிட்ட வரம்புகளுக்கு உட்பட்டு நீதித்துறை மறுஆய்வுக்கு உட்பட்டவை"
+        "en": "Disqualification petitions must be decided within 7 days failing which members are acquitted",
+        "ta": "தகுதிநீக்க மனுக்கள் 7 நாட்களுக்குள் தீர்மானிக்கப்பட வேண்டும், தவறினால் உறுப்பினர்கள் விடுவிக்கப்படுவர்"
       },
       {
         "id": "D",
-        "en": "Disqualification petitions must be decided within 7 days failing which members are acquitted",
-        "ta": "தகுதிநீக்க மனுக்கள் 7 நாட்களுக்குள் தீர்மானிக்கப்பட வேண்டும், தவறினால் உறுப்பினர்கள் விடுவிக்கப்படுவர்"
+        "en": "The Speaker functions as a Tribunal, and Paragraph 7 excluding judicial review is unconstitutional; final decisions are subject to judicial review on limited grounds",
+        "ta": "சபாநாயகர் ஒரு தீர்ப்பாயமாகச் செயல்படுகிறார், மேலும் நீதித்துறை மறுஆய்வைத் தடுத்த பத்தி 7 அரசியலமைப்பிற்கு முரணானது; அவரது இறுதி முடிவுகள் குறிப்பிட்ட வரம்புகளுக்கு உட்பட்டு நீதித்துறை மறுஆய்வுக்கு உட்பட்டவை"
       }
     ],
     "options_en": [
       "The Speaker's decision is entirely immune from judicial review under Paragraph 7",
       "The Speaker must obtain the prior approval of the Governor before disqualifying a member",
-      "The Speaker functions as a Tribunal, and Paragraph 7 excluding judicial review is unconstitutional; final decisions are subject to judicial review on limited grounds",
-      "Disqualification petitions must be decided within 7 days failing which members are acquitted"
+      "Disqualification petitions must be decided within 7 days failing which members are acquitted",
+      "The Speaker functions as a Tribunal, and Paragraph 7 excluding judicial review is unconstitutional; final decisions are subject to judicial review on limited grounds"
     ],
     "options_ta": [
       "பத்தி 7-ன் கீழ் சபாநாயகரின் முடிவு நீதித்துறை மறுஆய்விலிருந்து முற்றிலும் விலக்களிக்கப்பட்டது",
       "உறுப்பினரைத் தகுதிநீக்கம் செய்வதற்கு முன் சபாநாயகர் ஆளுநரின் முன் அனுமதியைப் பெற வேண்டும்",
-      "சபாநாயகர் ஒரு தீர்ப்பாயமாகச் செயல்படுகிறார், மேலும் நீதித்துறை மறுஆய்வைத் தடுத்த பத்தி 7 அரசியலமைப்பிற்கு முரணானது; அவரது இறுதி முடிவுகள் குறிப்பிட்ட வரம்புகளுக்கு உட்பட்டு நீதித்துறை மறுஆய்வுக்கு உட்பட்டவை",
-      "தகுதிநீக்க மனுக்கள் 7 நாட்களுக்குள் தீர்மானிக்கப்பட வேண்டும், தவறினால் உறுப்பினர்கள் விடுவிக்கப்படுவர்"
+      "தகுதிநீக்க மனுக்கள் 7 நாட்களுக்குள் தீர்மானிக்கப்பட வேண்டும், தவறினால் உறுப்பினர்கள் விடுவிக்கப்படுவர்",
+      "சபாநாயகர் ஒரு தீர்ப்பாயமாகச் செயல்படுகிறார், மேலும் நீதித்துறை மறுஆய்வைத் தடுத்த பத்தி 7 அரசியலமைப்பிற்கு முரணானது; அவரது இறுதி முடிவுகள் குறிப்பிட்ட வரம்புகளுக்கு உட்பட்டு நீதித்துறை மறுஆய்வுக்கு உட்பட்டவை"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "In Kihoto Hollohan v. Zachillhu (1992), a Constitution Bench held that the Speaker/Chairman acts as a Tribunal while adjudicating defection under the Tenth Schedule. Paragraph 7 (which barred court jurisdiction) was held unconstitutional because it was not ratified by States under Article 368 proviso. Final orders are subject to judicial review under Articles 226 and 136.",
       "ta": "கிகோட்டோ ஹோலோஹன் (1992) வழக்கில், பத்தாவது அட்டவணையின் கீழ் முடிவெடுக்கும் போது சபாநாயகர் ஒரு தீர்ப்பாயமாகச் செயல்படுகிறார் என தீர்ப்பளிக்கப்பட்டது. நீதிமன்ற அதிகாரத்தைத் தடுத்த பத்தி 7, மாநிலங்களின் ஒப்புதல் பெறப்படாததால் செல்லாது என அறிவிக்கப்பட்டது. சபாநாயகரின் இறுதி உத்தரவுகள் உறுப்புகள் 226 மற்றும் 136-ன் கீழ் நீதித்துறை மறுஆய்வுக்கு உட்பட்டவை."
@@ -1688,12 +1688,12 @@
         "ta": "தவறு. பத்தாவது அட்டவணை முடிவுகளில் ஆளுநருக்குப் பங்கில்லை."
       },
       "C": {
-        "en": "Correct. Speaker acts as a tribunal; final orders subject to judicial review for mala fides, violation of natural justice, etc.",
-        "ta": "சரி. சபாநாயகர் தீர்ப்பாயமாகச் செயல்படுகிறார்; இறுதி முடிவுகள் நீதித்துறை மறுஆய்வுக்கு உட்பட்டவை."
-      },
-      "D": {
         "en": "Incorrect. Tenth Schedule initially contained no time limit.",
         "ta": "தவறு. பத்தாவது அட்டவணையில் கால வரம்பு குறிப்பிடப்படவில்லை."
+      },
+      "D": {
+        "en": "Correct. Speaker acts as a tribunal; final orders subject to judicial review for mala fides, violation of natural justice, etc.",
+        "ta": "சரி. சபாநாயகர் தீர்ப்பாயமாகச் செயல்படுகிறார்; இறுதி முடிவுகள் நீதித்துறை மறுஆய்வுக்கு உட்பட்டவை."
       }
     },
     "tnpsc_tip": {
@@ -1740,8 +1740,8 @@
       },
       {
         "id": "B",
-        "en": "The Speaker must refer all defection matters to the Election Commission within 24 hours",
-        "ta": "அனைத்து கட்சித்தாவல் விவகாரங்களையும் சபாநாயகர் 24 மணி நேரத்திற்குள் தேர்தல் ஆணையத்திற்கு அனுப்ப வேண்டும்"
+        "en": "The Speaker CANNOT proceed to decide disqualification petitions under the Tenth Schedule when a notice of resolution for his/her own removal is pending under Article 179(c)",
+        "ta": "உறுப்பு 179(c)-ன் கீழ் சபாநாயகரைத் தனது பதவியிலிருந்து நீக்குவதற்கான தீர்மான அறிவிக்கை நிலுவையில் இருக்கும் போது, அவர் பத்தாவது அட்டவணையின் கீழ் தகுதிநீக்க மனுக்கள் மீது முடிவெடுக்க முடியாது"
       },
       {
         "id": "C",
@@ -1750,24 +1750,24 @@
       },
       {
         "id": "D",
-        "en": "The Speaker CANNOT proceed to decide disqualification petitions under the Tenth Schedule when a notice of resolution for his/her own removal is pending under Article 179(c)",
-        "ta": "உறுப்பு 179(c)-ன் கீழ் சபாநாயகரைத் தனது பதவியிலிருந்து நீக்குவதற்கான தீர்மான அறிவிக்கை நிலுவையில் இருக்கும் போது, அவர் பத்தாவது அட்டவணையின் கீழ் தகுதிநீக்க மனுக்கள் மீது முடிவெடுக்க முடியாது"
+        "en": "The Speaker must refer all defection matters to the Election Commission within 24 hours",
+        "ta": "அனைத்து கட்சித்தாவல் விவகாரங்களையும் சபாநாயகர் 24 மணி நேரத்திற்குள் தேர்தல் ஆணையத்திற்கு அனுப்ப வேண்டும்"
       }
     ],
     "options_en": [
       "The Speaker cannot disqualify more than 5 members in a single calendar year",
-      "The Speaker must refer all defection matters to the Election Commission within 24 hours",
+      "The Speaker CANNOT proceed to decide disqualification petitions under the Tenth Schedule when a notice of resolution for his/her own removal is pending under Article 179(c)",
       "The Speaker cannot decide defection if the Governor objects in writing",
-      "The Speaker CANNOT proceed to decide disqualification petitions under the Tenth Schedule when a notice of resolution for his/her own removal is pending under Article 179(c)"
+      "The Speaker must refer all defection matters to the Election Commission within 24 hours"
     ],
     "options_ta": [
       "ஒரு நிதியாண்டில் 5 உறுப்பினர்களுக்கு மேல் சபாநாயகர் தகுதிநீக்கம் செய்ய முடியாது",
-      "அனைத்து கட்சித்தாவல் விவகாரங்களையும் சபாநாயகர் 24 மணி நேரத்திற்குள் தேர்தல் ஆணையத்திற்கு அனுப்ப வேண்டும்",
+      "உறுப்பு 179(c)-ன் கீழ் சபாநாயகரைத் தனது பதவியிலிருந்து நீக்குவதற்கான தீர்மான அறிவிக்கை நிலுவையில் இருக்கும் போது, அவர் பத்தாவது அட்டவணையின் கீழ் தகுதிநீக்க மனுக்கள் மீது முடிவெடுக்க முடியாது",
       "ஆளுநர் எழுத்துப்பூர்வமாக ஆட்சேபித்தால் சபாநாயகர் கட்சித்தாவலைத் தீர்மானிக்க முடியாது",
-      "உறுப்பு 179(c)-ன் கீழ் சபாநாயகரைத் தனது பதவியிலிருந்து நீக்குவதற்கான தீர்மான அறிவிக்கை நிலுவையில் இருக்கும் போது, அவர் பத்தாவது அட்டவணையின் கீழ் தகுதிநீக்க மனுக்கள் மீது முடிவெடுக்க முடியாது"
+      "அனைத்து கட்சித்தாவல் விவகாரங்களையும் சபாநாயகர் 24 மணி நேரத்திற்குள் தேர்தல் ஆணையத்திற்கு அனுப்ப வேண்டும்"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "In Nabam Rebia (2016), the Supreme Court ruled that it is constitutionally impermissible for a Speaker to adjudicate disqualification petitions against MLAs under the Tenth Schedule while a notice of resolution for the Speaker's own removal under Article 179(c) is pending, until the Speaker's majority confidence is demonstrated on the floor.",
       "ta": "நபம் ரேபியா (2016) வழக்கில், உறுப்பு 179(c)-ன் கீழ் சபாநாயகரையே நீக்குவதற்கான தீர்மான அறிவிக்கை நிலுவையில் இருக்கும் போது, அவர் சட்டமன்ற உறுப்பினர்களுக்கு எதிரான பத்தாவது அட்டவணை தகுதிநீக்க மனுக்களை விசாரித்து முடிவெடுப்பது அரசியலமைப்புச் சட்டப்படி செல்லாது என்று உச்ச நீதிமன்றம் தீர்ப்பளித்தது."
@@ -1780,16 +1780,16 @@
         "ta": "தவறு. தகுதிநீக்கங்களுக்கு எண்ணிக்கை வரம்பு எதுவும் இல்லை."
       },
       "B": {
-        "en": "Incorrect. Election Commission is not involved in Tenth Schedule adjudications.",
-        "ta": "தவறு. பத்தாவது அட்டவணையில் தேர்தல் ஆணையம் தலையிடுவதில்லை."
+        "en": "Correct. Pending removal motion disables the Speaker from deciding Tenth Schedule disqualifications (Nabam Rebia).",
+        "ta": "சரி. நீக்கத் தீர்மானம் நிலுவையில் இருக்கும் போது சபாநாயகர் கட்சித்தாவல் தகுதிநீக்கம் செய்ய முடியாது (நபம் ரேபியா வழக்கு)."
       },
       "C": {
         "en": "Incorrect. Governor cannot veto Speaker's adjudicatory proceedings directly.",
         "ta": "தவறு. ஆளுநர் சபாநாயகர் நடவடிக்கைகளுக்கு நேரடியாக வீட்டோ செய்ய முடியாது."
       },
       "D": {
-        "en": "Correct. Pending removal motion disables the Speaker from deciding Tenth Schedule disqualifications (Nabam Rebia).",
-        "ta": "சரி. நீக்கத் தீர்மானம் நிலுவையில் இருக்கும் போது சபாநாயகர் கட்சித்தாவல் தகுதிநீக்கம் செய்ய முடியாது (நபம் ரேபியா வழக்கு)."
+        "en": "Incorrect. Election Commission is not involved in Tenth Schedule adjudications.",
+        "ta": "தவறு. பத்தாவது அட்டவணையில் தேர்தல் ஆணையம் தலையிடுவதில்லை."
       }
     },
     "tnpsc_tip": {
@@ -1831,13 +1831,13 @@
     "options": [
       {
         "id": "A",
-        "en": "The entire Council of Ministers headed by the Chief Minister must resign immediately under Article 164(2)",
-        "ta": "உறுப்பு 164(2)-ன் கீழ் முதலமைச்சர் தலைமையிலான ஒட்டுமொத்த அமைச்சரவையும் உடனடியாக பதவி விலக வேண்டும்"
+        "en": "Only the Minister against whom specific charges are made must resign",
+        "ta": "குறிப்பிட்ட குற்றச்சாட்டுக்கு உள்ளான அந்த அமைச்சர் மட்டுமே பதவி விலக வேண்டும்"
       },
       {
         "id": "B",
-        "en": "Only the Minister against whom specific charges are made must resign",
-        "ta": "குறிப்பிட்ட குற்றச்சாட்டுக்கு உள்ளான அந்த அமைச்சர் மட்டுமே பதவி விலக வேண்டும்"
+        "en": "The entire Council of Ministers headed by the Chief Minister must resign immediately under Article 164(2)",
+        "ta": "உறுப்பு 164(2)-ன் கீழ் முதலமைச்சர் தலைமையிலான ஒட்டுமொத்த அமைச்சரவையும் உடனடியாக பதவி விலக வேண்டும்"
       },
       {
         "id": "C",
@@ -1851,19 +1851,19 @@
       }
     ],
     "options_en": [
-      "The entire Council of Ministers headed by the Chief Minister must resign immediately under Article 164(2)",
       "Only the Minister against whom specific charges are made must resign",
+      "The entire Council of Ministers headed by the Chief Minister must resign immediately under Article 164(2)",
       "The Legislative Assembly is automatically dissolved without Governor's intervention",
       "The motion is referred to the Legislative Council for confirmation"
     ],
     "options_ta": [
-      "உறுப்பு 164(2)-ன் கீழ் முதலமைச்சர் தலைமையிலான ஒட்டுமொத்த அமைச்சரவையும் உடனடியாக பதவி விலக வேண்டும்",
       "குறிப்பிட்ட குற்றச்சாட்டுக்கு உள்ளான அந்த அமைச்சர் மட்டுமே பதவி விலக வேண்டும்",
+      "உறுப்பு 164(2)-ன் கீழ் முதலமைச்சர் தலைமையிலான ஒட்டுமொத்த அமைச்சரவையும் உடனடியாக பதவி விலக வேண்டும்",
       "ஆளுநரின் தலையீடின்றி சட்டமன்றப் பேரவை தானாகவே கலைந்துவிடும்",
       "உறுதிப்படுத்துவதற்காக அத்தீர்மானம் சட்ட மேலவைக்கு அனுப்பப்படுகிறது"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Under Article 164(2), the Council of Ministers is collectively responsible to the Legislative Assembly of the State. If a No-Confidence Motion is passed by the Assembly, the Chief Minister and all Ministers must resign immediately, as they have lost the confidence of the directly elected chamber. The Legislative Council has no power to pass a No-Confidence Motion.",
       "ta": "உறுப்பு 164(2)-ன் படி, அமைச்சரவை சட்டமன்றப் பேரவைக்குக் கூட்டுப் பொறுப்புடையது. பேரவையில் நம்பிக்கையில்லாத் தீர்மானம் நிறைவேற்றப்பட்டால், முதலமைச்சர் மற்றும் அனைத்து அமைச்சர்களும் உடனடியாக பதவி விலக வேண்டும். சட்ட மேலவைக்கு நம்பிக்கையில்லாத் தீர்மானம் கொண்டுவரும் அதிகாரம் கிடையாது."
@@ -1872,12 +1872,12 @@
     "explanation_ta": "உறுப்பு 164(2)-ன் படி, அமைச்சரவை சட்டமன்றப் பேரவைக்குக் கூட்டுப் பொறுப்புடையது. பேரவையில் நம்பிக்கையில்லாத் தீர்மானம் நிறைவேற்றப்பட்டால், முதலமைச்சர் மற்றும் அனைத்து அமைச்சர்களும் உடனடியாக பதவி விலக வேண்டும். சட்ட மேலவைக்கு நம்பிக்கையில்லாத் தீர்மானம் கொண்டுவரும் அதிகாரம் கிடையாது.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Ministry must resign under collective responsibility (Article 164(2)).",
-        "ta": "சரி. கூட்டுப் பொறுப்புடைமையின் கீழ் (உறுப்பு 164(2)) ஒட்டுமொத்த அமைச்சரவையும் பதவி விலக வேண்டும்."
-      },
-      "B": {
         "en": "Incorrect. That describes a Censure Motion on individual ministers, not No-Confidence Motion.",
         "ta": "தவறு. அது தனிப்பட்ட அமைச்சர் மீதான கண்டனத் தீர்மானம், நம்பிக்கையில்லாத் தீர்மானம் அல்ல."
+      },
+      "B": {
+        "en": "Correct. Ministry must resign under collective responsibility (Article 164(2)).",
+        "ta": "சரி. கூட்டுப் பொறுப்புடைமையின் கீழ் (உறுப்பு 164(2)) ஒட்டுமொத்த அமைச்சரவையும் பதவி விலக வேண்டும்."
       },
       "C": {
         "en": "Incorrect. Assembly is not automatically dissolved; Governor may invite another leader to form government.",
@@ -1931,13 +1931,13 @@
       },
       {
         "id": "B",
-        "en": "Subject to the provisions of the Constitution, the rules and standing orders regulating procedure, and the restriction on discussing judicial conduct under Article 211",
-        "ta": "அரசியலமைப்பின் விதிகளுக்கும், நடைமுறையை ஒழுங்குபடுத்தும் விதிகள் மற்றும் நிலையான உத்தரவுகளுக்கும், மற்றும் உறுப்பு 211-ன் கீழ் நீதித்துறை நடத்தை விவாதத் தடைக்கும் உட்பட்டது"
+        "en": "Subject to prior approval of the Leader of the House",
+        "ta": "அவைத் தலைவரின் முன் அனுமதிக்கு உட்பட்டது"
       },
       {
         "id": "C",
-        "en": "Subject to prior approval of the Leader of the House",
-        "ta": "அவைத் தலைவரின் முன் அனுமதிக்கு உட்பட்டது"
+        "en": "Subject to the provisions of the Constitution, the rules and standing orders regulating procedure, and the restriction on discussing judicial conduct under Article 211",
+        "ta": "அரசியலமைப்பின் விதிகளுக்கும், நடைமுறையை ஒழுங்குபடுத்தும் விதிகள் மற்றும் நிலையான உத்தரவுகளுக்கும், மற்றும் உறுப்பு 211-ன் கீழ் நீதித்துறை நடத்தை விவாதத் தடைக்கும் உட்பட்டது"
       },
       {
         "id": "D",
@@ -1947,18 +1947,18 @@
     ],
     "options_en": [
       "Subject to reasonable restrictions under Article 19(2) only",
-      "Subject to the provisions of the Constitution, the rules and standing orders regulating procedure, and the restriction on discussing judicial conduct under Article 211",
       "Subject to prior approval of the Leader of the House",
+      "Subject to the provisions of the Constitution, the rules and standing orders regulating procedure, and the restriction on discussing judicial conduct under Article 211",
       "Subject to the censorship of the Minister for Parliamentary Affairs"
     ],
     "options_ta": [
       "உறுப்பு 19(2)-ன் கீழான நியாயமான கட்டுப்பாடுகளுக்கு மட்டுமே உட்பட்டது",
-      "அரசியலமைப்பின் விதிகளுக்கும், நடைமுறையை ஒழுங்குபடுத்தும் விதிகள் மற்றும் நிலையான உத்தரவுகளுக்கும், மற்றும் உறுப்பு 211-ன் கீழ் நீதித்துறை நடத்தை விவாதத் தடைக்கும் உட்பட்டது",
       "அவைத் தலைவரின் முன் அனுமதிக்கு உட்பட்டது",
+      "அரசியலமைப்பின் விதிகளுக்கும், நடைமுறையை ஒழுங்குபடுத்தும் விதிகள் மற்றும் நிலையான உத்தரவுகளுக்கும், மற்றும் உறுப்பு 211-ன் கீழ் நீதித்துறை நடத்தை விவாதத் தடைக்கும் உட்பட்டது",
       "நாடாளுமன்ற விவகாரங்கள் அமைச்சரின் தணிக்கைக்கு உட்பட்டது"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Article 194(1) provides: 'Subject to the provisions of this Constitution and to the rules and standing orders regulating the procedure of the Legislature, there shall be freedom of speech in the Legislature of every State.' This freedom is wider than Article 19(1)(a) (not subject to Art 19(2)), but is strictly subject to the constitutional restriction in Article 211 against discussing judicial conduct.",
       "ta": "உறுப்பு 194(1)-ன் படி, 'இந்த அரசியலமைப்பின் விதிகளுக்கும் மற்றும் சட்டமன்ற நடைமுறைகளை ஒழுங்குபடுத்தும் விதிகள் மற்றும் நிலையான உத்தரவுகளுக்கும் உட்பட்டு, மாநில சட்டமன்றத்தில் பேச்சு சுதந்திரம் இருக்கும்.' இது சாதாரண குடிமக்களுக்கான உறுப்பு 19(1)(a)-ஐ விட பரந்தது (19(2) வரம்புகள் இதற்குப் பொருந்தாது), ஆனால் உறுப்பு 211-ன் கீழான நீதிபதிகள் நடத்தை விவாதத் தடைக்குக் கண்டிப்பாக உட்பட்டது."
@@ -1971,12 +1971,12 @@
         "ta": "தவறு. அவைக்குள் பேசப்படும் பேச்சுகளுக்கு உறுப்பு 19(2) வரம்புகள் பொருந்தாது."
       },
       "B": {
-        "en": "Correct. Subject to provisions of the Constitution (including Art 211) and legislative rules.",
-        "ta": "சரி. அரசியலமைப்பு விதிகள் (உறுப்பு 211 உட்பட) மற்றும் அவை நடைமுறை விதிகளுக்கு உட்பட்டது."
-      },
-      "C": {
         "en": "Incorrect. Leader of House does not approve member speeches.",
         "ta": "தவறு. அவைத் தலைவர் முன் அனுமதி தேவையில்லை."
+      },
+      "C": {
+        "en": "Correct. Subject to provisions of the Constitution (including Art 211) and legislative rules.",
+        "ta": "சரி. அரசியலமைப்பு விதிகள் (உறுப்பு 211 உட்பட) மற்றும் அவை நடைமுறை விதிகளுக்கு உட்பட்டது."
       },
       "D": {
         "en": "Incorrect. No ministerial censorship exists inside the House.",
@@ -2032,29 +2032,29 @@
       },
       {
         "id": "C",
-        "en": "Immunity from arrest in CIVIL cases only during the continuance of the session and 40 days before and 40 days after the session; does NOT apply to criminal offenses or preventive detention",
-        "ta": "கூட்டத்தொடர் நடைபெறும் போதும், அதற்கு 40 நாட்களுக்கு முன்னும் பின்னும் உரிமையியல் (Civil) வழக்குகளில் மட்டுமே கைதிலிருந்து பாதுகாப்பு; குற்றவியல் குற்றங்கள் அல்லது தடுப்புக் காவலுக்கு இது பொருந்தாது"
+        "en": "Immunity from arrest only when traveling inside the legislative premises",
+        "ta": "சட்டமன்ற வளாகத்திற்குள் பயணிக்கும் போது மட்டுமே கைதிலிருந்து பாதுகாப்பு"
       },
       {
         "id": "D",
-        "en": "Immunity from arrest only when traveling inside the legislative premises",
-        "ta": "சட்டமன்ற வளாகத்திற்குள் பயணிக்கும் போது மட்டுமே கைதிலிருந்து பாதுகாப்பு"
+        "en": "Immunity from arrest in CIVIL cases only during the continuance of the session and 40 days before and 40 days after the session; does NOT apply to criminal offenses or preventive detention",
+        "ta": "கூட்டத்தொடர் நடைபெறும் போதும், அதற்கு 40 நாட்களுக்கு முன்னும் பின்னும் உரிமையியல் (Civil) வழக்குகளில் மட்டுமே கைதிலிருந்து பாதுகாப்பு; குற்றவியல் குற்றங்கள் அல்லது தடுப்புக் காவலுக்கு இது பொருந்தாது"
       }
     ],
     "options_en": [
       "Complete immunity from arrest in all civil, criminal, and preventive detention cases at all times",
       "Immunity from criminal arrest during the session of the House only",
-      "Immunity from arrest in CIVIL cases only during the continuance of the session and 40 days before and 40 days after the session; does NOT apply to criminal offenses or preventive detention",
-      "Immunity from arrest only when traveling inside the legislative premises"
+      "Immunity from arrest only when traveling inside the legislative premises",
+      "Immunity from arrest in CIVIL cases only during the continuance of the session and 40 days before and 40 days after the session; does NOT apply to criminal offenses or preventive detention"
     ],
     "options_ta": [
       "எல்லா நேரங்களிலும் அனைத்து உரிமையியல், குற்றவியல் மற்றும் தடுப்புக் காவல் வழக்குகளில் கைதிலிருந்து முழுமையான பாதுகாப்பு",
       "அவையின் கூட்டத்தொடரின் போது மட்டுமே குற்றவியல் கைதிலிருந்து பாதுகாப்பு",
-      "கூட்டத்தொடர் நடைபெறும் போதும், அதற்கு 40 நாட்களுக்கு முன்னும் பின்னும் உரிமையியல் (Civil) வழக்குகளில் மட்டுமே கைதிலிருந்து பாதுகாப்பு; குற்றவியல் குற்றங்கள் அல்லது தடுப்புக் காவலுக்கு இது பொருந்தாது",
-      "சட்டமன்ற வளாகத்திற்குள் பயணிக்கும் போது மட்டுமே கைதிலிருந்து பாதுகாப்பு"
+      "சட்டமன்ற வளாகத்திற்குள் பயணிக்கும் போது மட்டுமே கைதிலிருந்து பாதுகாப்பு",
+      "கூட்டத்தொடர் நடைபெறும் போதும், அதற்கு 40 நாட்களுக்கு முன்னும் பின்னும் உரிமையியல் (Civil) வழக்குகளில் மட்டுமே கைதிலிருந்து பாதுகாப்பு; குற்றவியல் குற்றங்கள் அல்லது தடுப்புக் காவலுக்கு இது பொருந்தாது"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Members of the State Legislature enjoy freedom from arrest in CIVIL cases during the continuance of any sitting of the House and during forty days before and forty days after such sitting (based on parliamentary privileges inherited under Article 194(3)). This privilege does NOT extend to criminal matters, preventive detention, or contempt of court.",
       "ta": "உறுப்பு 194(3)-ன் கீழ், சட்டமன்ற உறுப்பினர்கள் அவையின் கூட்டத்தொடர் நடைபெறும் போதும், கூட்டத்தொடருக்கு 40 நாட்களுக்கு முன்னரும், 40 நாட்களுக்குப் பின்னரும் உரிமையியல் (Civil) வழக்குகளில் கைது செய்யப்படுவதிலிருந்து விலக்கு பெறுகின்றனர். இச்சலுகை குற்றவியல் வழக்குகள், தடுப்புக் காவல் அல்லது நீதிமன்ற அவமதிப்பு வழக்குகளுக்குப் பொருந்தாது."
@@ -2071,12 +2071,12 @@
         "ta": "தவறு. குற்றவியல் கைதிலிருந்து எந்தப் பாதுகாப்பும் இல்லை."
       },
       "C": {
-        "en": "Correct. Applies strictly to civil cases, 40 days before and after, under Section 135A CPC / conventions.",
-        "ta": "சரி. உரிமையியல் வழக்குகளில் மட்டுமே 40 நாட்களுக்கு முன்னும் பின்னும் பொருந்தும்."
-      },
-      "D": {
         "en": "Incorrect. 40 days before and after applies anywhere in India, not just inside premises.",
         "ta": "தவறு. வளாகத்திற்குள் மட்டுமல்ல, 40 நாட்கள் இந்தியா முழுமைக்கும் பொருந்தும்."
+      },
+      "D": {
+        "en": "Correct. Applies strictly to civil cases, 40 days before and after, under Section 135A CPC / conventions.",
+        "ta": "சரி. உரிமையியல் வழக்குகளில் மட்டுமே 40 நாட்களுக்கு முன்னும் பின்னும் பொருந்தும்."
       }
     },
     "tnpsc_tip": {
@@ -2313,13 +2313,13 @@
       },
       {
         "id": "B",
-        "en": "The Governor, or some person appointed in that behalf by him (such as the Speaker Pro-tem)",
-        "ta": "ஆளுநர், அல்லது அவரால் இதற்கென நியமிக்கப்பட்ட ஒரு நபர் (தற்காலிக சபாநாயகர் போன்றவை) முன்"
+        "en": "Chief Justice of the High Court of the State",
+        "ta": "மாநில உயர் நீதிமன்றத் தலைமை நீதிபதி முன்"
       },
       {
         "id": "C",
-        "en": "Chief Justice of the High Court of the State",
-        "ta": "மாநில உயர் நீதிமன்றத் தலைமை நீதிபதி முன்"
+        "en": "The Governor, or some person appointed in that behalf by him (such as the Speaker Pro-tem)",
+        "ta": "ஆளுநர், அல்லது அவரால் இதற்கென நியமிக்கப்பட்ட ஒரு நபர் (தற்காலிக சபாநாயகர் போன்றவை) முன்"
       },
       {
         "id": "D",
@@ -2329,18 +2329,18 @@
     ],
     "options_en": [
       "Speaker of the Legislative Assembly or Chairman of the Council exclusively",
-      "The Governor, or some person appointed in that behalf by him (such as the Speaker Pro-tem)",
       "Chief Justice of the High Court of the State",
+      "The Governor, or some person appointed in that behalf by him (such as the Speaker Pro-tem)",
       "Chief Minister of the State"
     ],
     "options_ta": [
       "சட்டமன்றப் பேரவைத் தலைவர் அல்லது மேலவைத் தலைவரிடம் மட்டுமே",
-      "ஆளுநர், அல்லது அவரால் இதற்கென நியமிக்கப்பட்ட ஒரு நபர் (தற்காலிக சபாநாயகர் போன்றவை) முன்",
       "மாநில உயர் நீதிமன்றத் தலைமை நீதிபதி முன்",
+      "ஆளுநர், அல்லது அவரால் இதற்கென நியமிக்கப்பட்ட ஒரு நபர் (தற்காலிக சபாநாயகர் போன்றவை) முன்",
       "மாநில முதலமைச்சர் முன்"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Article 188 explicitly provides: 'Every member of the Legislative Assembly or the Legislative Council of a State shall, before taking his seat, make and subscribe before the Governor, or some person appointed in that behalf by him, an oath or affirmation according to the form set out for the purpose in the Third Schedule.'",
       "ta": "உறுப்பு 188-ன் படி, சட்டமன்றப் பேரவை அல்லது மேலவை உறுப்பினர் ஒவ்வொருவரும் தமது இருக்கையை ஏற்பதற்கு முன், ஆளுநர் அல்லது அவரால் இதற்கென நியமிக்கப்பட்ட ஒரு நபரின் முன், மூன்றாவது அட்டவணையில் உள்ள படிவத்தின்படி பதவிப்பிரமாணம் அல்லது உறுதிமொழி எடுத்து கையொப்பமிட வேண்டும்."
@@ -2353,12 +2353,12 @@
         "ta": "தவறு. சபாநாயகருக்கு முதன்மை அரசியலமைப்பு அதிகாரம் இல்லை; ஆளுநரே தற்காலிக சபாநாயகரை நியமிக்கிறார்."
       },
       "B": {
-        "en": "Correct. Governor or some person appointed by him under Article 188.",
-        "ta": "சரி. உறுப்பு 188-ன் கீழ் ஆளுநர் அல்லது அவரால் நியமிக்கப்பட்ட நபர்."
-      },
-      "C": {
         "en": "Incorrect. Chief Justice administers oath to the Governor, not to MLAs/MLCs.",
         "ta": "தவறு. தலைமை நீதிபதி ஆளுநருக்குப் பதவிப்பிரமாணம் செய்து வைக்கிறார், எம்.எல்.ஏ-க்களுக்கு அல்ல."
+      },
+      "C": {
+        "en": "Correct. Governor or some person appointed by him under Article 188.",
+        "ta": "சரி. உறுப்பு 188-ன் கீழ் ஆளுநர் அல்லது அவரால் நியமிக்கப்பட்ட நபர்."
       },
       "D": {
         "en": "Incorrect. Chief Minister has no role in administering oaths.",
@@ -2499,8 +2499,8 @@
     "options": [
       {
         "id": "A",
-        "en": "On Independence Day and Republic Day every year",
-        "ta": "ஒவ்வொரு ஆண்டும் சுதந்திர தினம் மற்றும் குடியரசு தினத்தன்று"
+        "en": "At the commencement of the first session after each general election to the Legislative Assembly AND at the commencement of the first session of each year",
+        "ta": "ஒவ்வொரு பொதுத்தேர்தலுக்குப் பின் கூடும் சட்டமன்றப் பேரவையின் முதல் கூட்டத்தொடரின் தொடக்கத்திலும் மற்றும் ஒவ்வொரு ஆண்டின் முதல் கூட்டத்தொடரின் தொடக்கத்திலும்"
       },
       {
         "id": "B",
@@ -2514,24 +2514,24 @@
       },
       {
         "id": "D",
-        "en": "At the commencement of the first session after each general election to the Legislative Assembly AND at the commencement of the first session of each year",
-        "ta": "ஒவ்வொரு பொதுத்தேர்தலுக்குப் பின் கூடும் சட்டமன்றப் பேரவையின் முதல் கூட்டத்தொடரின் தொடக்கத்திலும் மற்றும் ஒவ்வொரு ஆண்டின் முதல் கூட்டத்தொடரின் தொடக்கத்திலும்"
+        "en": "On Independence Day and Republic Day every year",
+        "ta": "ஒவ்வொரு ஆண்டும் சுதந்திர தினம் மற்றும் குடியரசு தினத்தன்று"
       }
     ],
     "options_en": [
-      "On Independence Day and Republic Day every year",
+      "At the commencement of the first session after each general election to the Legislative Assembly AND at the commencement of the first session of each year",
       "Whenever a new Chief Minister is sworn in and on Constitution Day",
       "At the dissolution of the Assembly and at the end of each financial year",
-      "At the commencement of the first session after each general election to the Legislative Assembly AND at the commencement of the first session of each year"
+      "On Independence Day and Republic Day every year"
     ],
     "options_ta": [
-      "ஒவ்வொரு ஆண்டும் சுதந்திர தினம் மற்றும் குடியரசு தினத்தன்று",
+      "ஒவ்வொரு பொதுத்தேர்தலுக்குப் பின் கூடும் சட்டமன்றப் பேரவையின் முதல் கூட்டத்தொடரின் தொடக்கத்திலும் மற்றும் ஒவ்வொரு ஆண்டின் முதல் கூட்டத்தொடரின் தொடக்கத்திலும்",
       "புதிய முதல்வர் பதவியேற்கும் போதெல்லாம் மற்றும் அரசியலமைப்பு தினத்தன்று",
       "பேரவை கலைக்கப்படும் போதும் மற்றும் ஒவ்வொரு நிதியாண்டின் முடிவிலும்",
-      "ஒவ்வொரு பொதுத்தேர்தலுக்குப் பின் கூடும் சட்டமன்றப் பேரவையின் முதல் கூட்டத்தொடரின் தொடக்கத்திலும் மற்றும் ஒவ்வொரு ஆண்டின் முதல் கூட்டத்தொடரின் தொடக்கத்திலும்"
+      "ஒவ்வொரு ஆண்டும் சுதந்திர தினம் மற்றும் குடியரசு தினத்தன்று"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Article 176(1) provides: 'At the commencement of the first session after each general election to the Legislative Assembly and at the commencement of the first session of each year, the Governor shall address the Legislative Assembly or, in the case of a State having a Legislative Council, both Houses assembled together and inform the Legislature of the causes of its summons.'",
       "ta": "உறுப்பு 176(1)-ன் படி, சட்டமன்றப் பேரவைக்கான பொதுத்தேர்தலுக்குப் பின் கூடும் முதல் கூட்டத்தொடரின் தொடக்கத்திலும், மற்றும் ஒவ்வொரு ஆண்டின் முதல் கூட்டத்தொடரின் (வழக்கமாக பட்ஜெட் தொடர்) தொடக்கத்திலும் ஆளுநர் சட்டமன்றத்தில் உரையாற்றி கூட்டப்பட்டதற்கான காரணங்களை அறிவிக்க வேண்டும்."
@@ -2540,8 +2540,8 @@
     "explanation_ta": "உறுப்பு 176(1)-ன் படி, சட்டமன்றப் பேரவைக்கான பொதுத்தேர்தலுக்குப் பின் கூடும் முதல் கூட்டத்தொடரின் தொடக்கத்திலும், மற்றும் ஒவ்வொரு ஆண்டின் முதல் கூட்டத்தொடரின் (வழக்கமாக பட்ஜெட் தொடர்) தொடக்கத்திலும் ஆளுநர் சட்டமன்றத்தில் உரையாற்றி கூட்டப்பட்டதற்கான காரணங்களை அறிவிக்க வேண்டும்.",
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Governor unfurls flag on Republic Day, but Art 176 address is to the Legislature.",
-        "ta": "தவறு. உறுப்பு 176 உரை சட்டமன்றத்தில் நிகழ்த்தப்படுவது."
+        "en": "Correct. Exactly two occasions: First session after general elections + First session of each calendar year.",
+        "ta": "சரி. சரியாக இரண்டு தருணங்கள்: பொதுத்தேர்தலுக்குப் பிந்தைய முதல் தொடர் + ஆண்டின் முதல் கூட்டத்தொடர்."
       },
       "B": {
         "en": "Incorrect. Swearing in of CM does not trigger a special legislative address.",
@@ -2552,8 +2552,8 @@
         "ta": "தவறு. கலைப்பின் போது உரை நிகழ்த்தப்படுவதில்லை."
       },
       "D": {
-        "en": "Correct. Exactly two occasions: First session after general elections + First session of each calendar year.",
-        "ta": "சரி. சரியாக இரண்டு தருணங்கள்: பொதுத்தேர்தலுக்குப் பிந்தைய முதல் தொடர் + ஆண்டின் முதல் கூட்டத்தொடர்."
+        "en": "Incorrect. Governor unfurls flag on Republic Day, but Art 176 address is to the Legislature.",
+        "ta": "தவறு. உறுப்பு 176 உரை சட்டமன்றத்தில் நிகழ்த்தப்படுவது."
       }
     },
     "tnpsc_tip": {
@@ -2885,8 +2885,8 @@
       },
       {
         "id": "B",
-        "en": "A motion that the demand be reduced by Rs. 100",
-        "ta": "கோரிக்கையின் தொகையை 100 ரூபாயாகக் குறைக்க வேண்டும் என்ற தீர்மானம்"
+        "en": "A motion that the amount of the demand be reduced by a specified amount representing the economy that can be effected",
+        "ta": "செயல்படுத்தக்கூடிய சிக்கனத்தைக் குறிக்கும் வகையில், கோரப்பட்ட தொகையிலிருந்து ஒரு குறிப்பிட்ட தொகையைக் குறைக்க வேண்டும் என்ற தீர்மானம்"
       },
       {
         "id": "C",
@@ -2895,24 +2895,24 @@
       },
       {
         "id": "D",
-        "en": "A motion that the amount of the demand be reduced by a specified amount representing the economy that can be effected",
-        "ta": "செயல்படுத்தக்கூடிய சிக்கனத்தைக் குறிக்கும் வகையில், கோரப்பட்ட தொகையிலிருந்து ஒரு குறிப்பிட்ட தொகையைக் குறைக்க வேண்டும் என்ற தீர்மானம்"
+        "en": "A motion that the demand be reduced by Rs. 100",
+        "ta": "கோரிக்கையின் தொகையை 100 ரூபாயாகக் குறைக்க வேண்டும் என்ற தீர்மானம்"
       }
     ],
     "options_en": [
       "A motion that the demand be reduced to Re. 1",
-      "A motion that the demand be reduced by Rs. 100",
+      "A motion that the amount of the demand be reduced by a specified amount representing the economy that can be effected",
       "A motion to postpone voting on the demand until next session",
-      "A motion that the amount of the demand be reduced by a specified amount representing the economy that can be effected"
+      "A motion that the demand be reduced by Rs. 100"
     ],
     "options_ta": [
       "கோரிக்கையின் தொகையை 1 ரூபாயாகக் குறைக்க வேண்டும் என்ற தீர்மானம்",
-      "கோரிக்கையின் தொகையை 100 ரூபாயாகக் குறைக்க வேண்டும் என்ற தீர்மானம்",
+      "செயல்படுத்தக்கூடிய சிக்கனத்தைக் குறிக்கும் வகையில், கோரப்பட்ட தொகையிலிருந்து ஒரு குறிப்பிட்ட தொகையைக் குறைக்க வேண்டும் என்ற தீர்மானம்",
       "கோரிக்கை மீதான வாக்கெடுப்பை அடுத்த கூட்டத்தொடர் வரை ஒத்திவைக்கக் கோரும் தீர்மானம்",
-      "செயல்படுத்தக்கூடிய சிக்கனத்தைக் குறிக்கும் வகையில், கோரப்பட்ட தொகையிலிருந்து ஒரு குறிப்பிட்ட தொகையைக் குறைக்க வேண்டும் என்ற தீர்மானம்"
+      "கோரிக்கையின் தொகையை 100 ரூபாயாகக் குறைக்க வேண்டும் என்ற தீர்மானம்"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "An Economy Cut Motion demands that the amount of the demand be reduced by a specified amount (which may be either a lump sum reduction or omission or reduction of an item in the demand). It represents the economy that can be effected in the proposed expenditure.",
       "ta": "சிக்கன வெட்டுத் தீர்மானம் என்பது முன்மொழியப்பட்ட செலவினங்களில் செய்யக்கூடிய சிக்கனத்தைக் குறிக்கும் வகையில், கோரப்பட்ட தொகையிலிருந்து ஒரு குறிப்பிட்ட தொகையைக் குறைக்க வேண்டும் (அல்லது ஒரு குறிப்பிட்ட உருப்படியை நீக்க வேண்டும்) என்று கோருவதாகும்."
@@ -2925,16 +2925,16 @@
         "ta": "தவறு. 1 ரூபாயாகக் குறைப்பது கொள்கை வெட்டு."
       },
       "B": {
-        "en": "Incorrect. Reducing by Rs. 100 is Token Cut.",
-        "ta": "தவறு. 100 ரூபாய் குறைப்பது அடையாள வெட்டு."
+        "en": "Correct. Economy Cut reduces the demand by a specified amount representing possible economy.",
+        "ta": "சரி. சிக்கன வெட்டுத் தீர்மானம் சாத்தியமான சிக்கனத்தைக் குறிக்கும் ஒரு குறிப்பிட்ட தொகையைக் குறைக்கிறது."
       },
       "C": {
         "en": "Incorrect. Postponement is an adjournment motion.",
         "ta": "தவறு. ஒத்திவைப்பது ஒத்திவைப்புத் தீர்மானம்."
       },
       "D": {
-        "en": "Correct. Economy Cut reduces the demand by a specified amount representing possible economy.",
-        "ta": "சரி. சிக்கன வெட்டுத் தீர்மானம் சாத்தியமான சிக்கனத்தைக் குறிக்கும் ஒரு குறிப்பிட்ட தொகையைக் குறைக்கிறது."
+        "en": "Incorrect. Reducing by Rs. 100 is Token Cut.",
+        "ta": "தவறு. 100 ரூபாய் குறைப்பது அடையாள வெட்டு."
       }
     },
     "tnpsc_tip": {
@@ -2975,8 +2975,8 @@
     "options": [
       {
         "id": "A",
-        "en": "It states that the amount of the demand be reduced to Re. 1, representing complete disapproval of the policy underlying the demand, and members can advocate an alternative policy",
-        "ta": "கோரப்பட்ட தொகையை 1 ரூபாயாகக் குறைக்க வேண்டும் என்று கோரி, அக்கோரிக்கையின் பின்னணியில் உள்ள கொள்கையை முற்றிலும் நிராகரிப்பதைக் குறிக்கிறது; இதில் உறுப்பினர்கள் மாற்று கொள்கையைப் பரிந்துரைக்கலாம்"
+        "en": "It is an informal debate with no vote taken",
+        "ta": "வாக்கெடுப்பு இல்லாத ஒரு முறைசாரா விவாதம்"
       },
       {
         "id": "B",
@@ -2990,24 +2990,24 @@
       },
       {
         "id": "D",
-        "en": "It is an informal debate with no vote taken",
-        "ta": "வாக்கெடுப்பு இல்லாத ஒரு முறைசாரா விவாதம்"
+        "en": "It states that the amount of the demand be reduced to Re. 1, representing complete disapproval of the policy underlying the demand, and members can advocate an alternative policy",
+        "ta": "கோரப்பட்ட தொகையை 1 ரூபாயாகக் குறைக்க வேண்டும் என்று கோரி, அக்கோரிக்கையின் பின்னணியில் உள்ள கொள்கையை முற்றிலும் நிராகரிப்பதைக் குறிக்கிறது; இதில் உறுப்பினர்கள் மாற்று கொள்கையைப் பரிந்துரைக்கலாம்"
       }
     ],
     "options_en": [
-      "It states that the amount of the demand be reduced to Re. 1, representing complete disapproval of the policy underlying the demand, and members can advocate an alternative policy",
+      "It is an informal debate with no vote taken",
       "It reduces the demand by Rs. 500 to fund opposition research",
       "It requires the immediate dissolution of the Legislative Council",
-      "It is an informal debate with no vote taken"
+      "It states that the amount of the demand be reduced to Re. 1, representing complete disapproval of the policy underlying the demand, and members can advocate an alternative policy"
     ],
     "options_ta": [
-      "கோரப்பட்ட தொகையை 1 ரூபாயாகக் குறைக்க வேண்டும் என்று கோரி, அக்கோரிக்கையின் பின்னணியில் உள்ள கொள்கையை முற்றிலும் நிராகரிப்பதைக் குறிக்கிறது; இதில் உறுப்பினர்கள் மாற்று கொள்கையைப் பரிந்துரைக்கலாம்",
+      "வாக்கெடுப்பு இல்லாத ஒரு முறைசாரா விவாதம்",
       "எதிர்க்கட்சி ஆராய்ச்சிக்கு நிதி திரட்ட கோரிக்கையை ரூ. 500 குறைக்கிறது",
       "சட்ட மேலவையை உடனடியாகக் கலைக்கக் கோருகிறது",
-      "வாக்கெடுப்பு இல்லாத ஒரு முறைசாரா விவாதம்"
+      "கோரப்பட்ட தொகையை 1 ரூபாயாகக் குறைக்க வேண்டும் என்று கோரி, அக்கோரிக்கையின் பின்னணியில் உள்ள கொள்கையை முற்றிலும் நிராகரிப்பதைக் குறிக்கிறது; இதில் உறுப்பினர்கள் மாற்று கொள்கையைப் பரிந்துரைக்கலாம்"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "A 'Disapproval of Policy Cut' (Policy Cut) states that the amount of the demand be reduced to Re. 1. It represents disapproval of the policy underlying the demand. The debate on such a motion is confined to the specific policy, and it is open to members to advocate an alternative policy.",
       "ta": "கொள்கை மறுப்பு வெட்டுத் தீர்மானம் என்பது கோரப்பட்ட தொகையை '1 ரூபாயாகக் குறைக்க வேண்டும்' எனக் கோருவதாகும். இது அந்த மானியக் கோரிக்கையின் பின்னணியில் உள்ள அரசின் கொள்கையை அடியோடு நிராகரிப்பதைக் காட்டுகிறது. இதன் மீதான விவாதத்தில் உறுப்பினர்கள் ஒரு மாற்றுக் கொள்கையை முன்வைக்கலாம்."
@@ -3016,8 +3016,8 @@
     "explanation_ta": "கொள்கை மறுப்பு வெட்டுத் தீர்மானம் என்பது கோரப்பட்ட தொகையை '1 ரூபாயாகக் குறைக்க வேண்டும்' எனக் கோருவதாகும். இது அந்த மானியக் கோரிக்கையின் பின்னணியில் உள்ள அரசின் கொள்கையை அடியோடு நிராகரிப்பதைக் காட்டுகிறது. இதன் மீதான விவாதத்தில் உறுப்பினர்கள் ஒரு மாற்றுக் கொள்கையை முன்வைக்கலாம்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Demand reduced to Re. 1 representing disapproval of policy; alternative policy may be advocated.",
-        "ta": "சரி. கொள்கையை நிராகரிக்கும் வகையில் தொகை 1 ரூபாயாகக் குறைக்கப்படுகிறது; மாற்று கொள்கையைப் பரிந்துரைக்கலாம்."
+        "en": "Incorrect. It is a formal motion voted upon by the House.",
+        "ta": "தவறு. இது முறையாக வாக்கெடுப்பிற்கு விடப்படும் தீர்மானம்."
       },
       "B": {
         "en": "Incorrect. Rs. 500 reduction does not exist.",
@@ -3028,8 +3028,8 @@
         "ta": "தவறு. மேலவை கலைப்புடன் தொடர்பில்லை."
       },
       "D": {
-        "en": "Incorrect. It is a formal motion voted upon by the House.",
-        "ta": "தவறு. இது முறையாக வாக்கெடுப்பிற்கு விடப்படும் தீர்மானம்."
+        "en": "Correct. Demand reduced to Re. 1 representing disapproval of policy; alternative policy may be advocated.",
+        "ta": "சரி. கொள்கையை நிராகரிக்கும் வகையில் தொகை 1 ரூபாயாகக் குறைக்கப்படுகிறது; மாற்று கொள்கையைப் பரிந்துரைக்கலாம்."
       }
     },
     "tnpsc_tip": {
@@ -3075,13 +3075,13 @@
       },
       {
         "id": "B",
-        "en": "Adjournment terminates a sitting and is ordered by the Presiding Officer (Speaker/Chairman), whereas Prorogation terminates a session of the House and is ordered by the Governor",
-        "ta": "ஒத்திவைப்பு என்பது ஒரு நாள் அமர்வை முடிவுக்குக் கொண்டுவருகிறது மற்றும் தலைமை அலுவலரால் (சபாநாயகர்/தலைவர்) செய்யப்படுகிறது; கூட்டத்தொடர் முடித்துவைத்தல் என்பது கூட்டத்தொடரை முடிக்கிறது மற்றும் ஆளுநரால் செய்யப்படுகிறது"
+        "en": "Adjournment dissolves the Legislative Assembly, while Prorogation suspends it temporarily",
+        "ta": "ஒத்திவைப்பு பேரவையைக் கலைக்கிறது, முடக்கிவைத்தல் தற்காலிகமாக நிறுத்தி வைக்கிறது"
       },
       {
         "id": "C",
-        "en": "Adjournment dissolves the Legislative Assembly, while Prorogation suspends it temporarily",
-        "ta": "ஒத்திவைப்பு பேரவையைக் கலைக்கிறது, முடக்கிவைத்தல் தற்காலிகமாக நிறுத்தி வைக்கிறது"
+        "en": "Adjournment terminates a sitting and is ordered by the Presiding Officer (Speaker/Chairman), whereas Prorogation terminates a session of the House and is ordered by the Governor",
+        "ta": "ஒத்திவைப்பு என்பது ஒரு நாள் அமர்வை முடிவுக்குக் கொண்டுவருகிறது மற்றும் தலைமை அலுவலரால் (சபாநாயகர்/தலைவர்) செய்யப்படுகிறது; கூட்டத்தொடர் முடித்துவைத்தல் என்பது கூட்டத்தொடரை முடிக்கிறது மற்றும் ஆளுநரால் செய்யப்படுகிறது"
       },
       {
         "id": "D",
@@ -3091,18 +3091,18 @@
     ],
     "options_en": [
       "Adjournment terminates a session, while Prorogation terminates a sitting",
-      "Adjournment terminates a sitting and is ordered by the Presiding Officer (Speaker/Chairman), whereas Prorogation terminates a session of the House and is ordered by the Governor",
       "Adjournment dissolves the Legislative Assembly, while Prorogation suspends it temporarily",
+      "Adjournment terminates a sitting and is ordered by the Presiding Officer (Speaker/Chairman), whereas Prorogation terminates a session of the House and is ordered by the Governor",
       "Both are ordered exclusively by the Chief Minister"
     ],
     "options_ta": [
       "ஒத்திவைப்பு கூட்டத்தொடரை முடிக்கிறது, முடக்கிவைத்தல் ஒருநாள் அமர்வை முடிக்கிறது",
-      "ஒத்திவைப்பு என்பது ஒரு நாள் அமர்வை முடிவுக்குக் கொண்டுவருகிறது மற்றும் தலைமை அலுவலரால் (சபாநாயகர்/தலைவர்) செய்யப்படுகிறது; கூட்டத்தொடர் முடித்துவைத்தல் என்பது கூட்டத்தொடரை முடிக்கிறது மற்றும் ஆளுநரால் செய்யப்படுகிறது",
       "ஒத்திவைப்பு பேரவையைக் கலைக்கிறது, முடக்கிவைத்தல் தற்காலிகமாக நிறுத்தி வைக்கிறது",
+      "ஒத்திவைப்பு என்பது ஒரு நாள் அமர்வை முடிவுக்குக் கொண்டுவருகிறது மற்றும் தலைமை அலுவலரால் (சபாநாயகர்/தலைவர்) செய்யப்படுகிறது; கூட்டத்தொடர் முடித்துவைத்தல் என்பது கூட்டத்தொடரை முடிக்கிறது மற்றும் ஆளுநரால் செய்யப்படுகிறது",
       "இரண்டுமே முதலமைச்சரால் மட்டுமே செய்யப்படுகின்றன"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "An Adjournment terminates the sitting of the House for a specified time (hours, days, or weeks) or indefinitely (adjournment sine die), and is ordered exclusively by the Presiding Officer (Speaker/Chairman). In contrast, Prorogation terminates an entire session of the House and is issued by the Governor under Article 174(2)(a).",
       "ta": "ஒத்திவைப்பு (Adjournment) என்பது அவையின் ஒருநாள் அமர்வை சில மணி நேரங்கள், நாட்கள் அல்லது காலவரையின்றி (sine die) ஒத்திவைப்பதாகும்; இதை தலைமை அலுவலர் (சபாநாயகர்/தலைவர்) செய்கிறார். ஆனால் கூட்டத்தொடர் முடித்துவைத்தல் (Prorogation) என்பது ஒரு முழு கூட்டத்தொடரையே முடிவுக்குக் கொண்டுவருவதாகும்; இதை உறுப்பு 174(2)(a)-ன் கீழ் ஆளுநர் செய்கிறார்."
@@ -3115,12 +3115,12 @@
         "ta": "தவறு. இந்த விருப்பத்தில் பணிகள் தலைகீழாக மாற்றப்பட்டுள்ளன."
       },
       "B": {
-        "en": "Correct. Adjournment terminates sitting (Presiding Officer); Prorogation terminates session (Governor under Art 174).",
-        "ta": "சரி. ஒத்திவைப்பு அமர்வை முடிக்கிறது (சபாநாயகர்); முடக்கிவைத்தல் கூட்டத்தொடரை முடிக்கிறது (ஆளுநர்)."
-      },
-      "C": {
         "en": "Incorrect. Neither adjournment nor prorogation dissolves the Assembly.",
         "ta": "தவறு. இரண்டுமே பேரவையைக் கலைப்பதில்லை."
+      },
+      "C": {
+        "en": "Correct. Adjournment terminates sitting (Presiding Officer); Prorogation terminates session (Governor under Art 174).",
+        "ta": "சரி. ஒத்திவைப்பு அமர்வை முடிக்கிறது (சபாநாயகர்); முடக்கிவைத்தல் கூட்டத்தொடரை முடிக்கிறது (ஆளுநர்)."
       },
       "D": {
         "en": "Incorrect. Chief Minister has no constitutional power to issue legislative orders directly.",
@@ -3457,13 +3457,13 @@
       },
       {
         "id": "B",
-        "en": "The Bill DOES NOT lapse; it remains valid and can receive assent or be withheld/reserved",
-        "ta": "மசோதா காலாவதியாகாது; அது தொடர்ந்து செல்லுபடியாகும் மற்றும் ஒப்புதல் பெறலாம் அல்லது நிறுத்தி வைக்கப்படலாம்/ஒதுக்கப்படலாம்"
+        "en": "The Bill is automatically returned to the Chief Secretary of the State",
+        "ta": "மசோதா தானாகவே மாநில தலைமைச் செயலாளருக்குத் திருப்பி அனுப்பப்படுகிறது"
       },
       {
         "id": "C",
-        "en": "The Bill is automatically returned to the Chief Secretary of the State",
-        "ta": "மசோதா தானாகவே மாநில தலைமைச் செயலாளருக்குத் திருப்பி அனுப்பப்படுகிறது"
+        "en": "The Bill DOES NOT lapse; it remains valid and can receive assent or be withheld/reserved",
+        "ta": "மசோதா காலாவதியாகாது; அது தொடர்ந்து செல்லுபடியாகும் மற்றும் ஒப்புதல் பெறலாம் அல்லது நிறுத்தி வைக்கப்படலாம்/ஒதுக்கப்படலாம்"
       },
       {
         "id": "D",
@@ -3473,18 +3473,18 @@
     ],
     "options_en": [
       "The Bill lapses because the Assembly that passed it has dissolved",
-      "The Bill DOES NOT lapse; it remains valid and can receive assent or be withheld/reserved",
       "The Bill is automatically returned to the Chief Secretary of the State",
+      "The Bill DOES NOT lapse; it remains valid and can receive assent or be withheld/reserved",
       "The Bill must be re-voted by the new Assembly within 30 days"
     ],
     "options_ta": [
       "மசோதாவை நிறைவேற்றிய பேரவை கலைந்துவிட்டதால் மசோதா காலாவதியாகிவிடும்",
-      "மசோதா காலாவதியாகாது; அது தொடர்ந்து செல்லுபடியாகும் மற்றும் ஒப்புதல் பெறலாம் அல்லது நிறுத்தி வைக்கப்படலாம்/ஒதுக்கப்படலாம்",
       "மசோதா தானாகவே மாநில தலைமைச் செயலாளருக்குத் திருப்பி அனுப்பப்படுகிறது",
+      "மசோதா காலாவதியாகாது; அது தொடர்ந்து செல்லுபடியாகும் மற்றும் ஒப்புதல் பெறலாம் அல்லது நிறுத்தி வைக்கப்படலாம்/ஒதுக்கப்படலாம்",
       "புதிய பேரவை 30 நாட்களுக்குள் அம்மசோதா மீது மீண்டும் வாக்களிக்க வேண்டும்"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "In Purushothaman Nambudiri v. State of Kerala (1962), the Supreme Court ruled that a Bill passed by the Legislative Assembly and pending assent of the Governor or President does NOT lapse on dissolution of the Assembly. Dissolution terminates the life of the House, but does not extinguish a legislative measure already fully enacted by the legislature.",
       "ta": "புருஷோத்தமன் நம்பூதிரி எதிர் கேரள அரசு (1962) வழக்கில், சட்டமன்றத்தால் நிறைவேற்றப்பட்டு ஆளுநர் அல்லது குடியரசுத் தலைவரின் ஒப்புதலுக்காகக் காத்திருக்கும் மசோதா பேரவை கலைக்கப்படுவதால் காலாவதியாகாது என்று உச்ச நீதிமன்றம் தீர்ப்பளித்தது. சட்டமன்றத்தால் முழுமையாக நிறைவேற்றப்பட்ட ஒரு சட்ட நடவடிக்கையை அவைக்கலைப்பு அழிக்க முடியாது."
@@ -3497,12 +3497,12 @@
         "ta": "தவறு. ஒப்புதலுக்குக் காத்திருக்கும் மசோதாக்கள் காலாவதியாகாது என 1962-ல் உச்ச நீதிமன்றம் தீர்ப்பளித்துள்ளது."
       },
       "B": {
-        "en": "Correct. Does NOT lapse; Governor/President can grant assent even after dissolution (Purushothaman case).",
-        "ta": "சரி. காலாவதியாகாது; பேரவை கலைக்கப்பட்ட பிறகும் ஆளுநர்/குடியரசுத் தலைவர் ஒப்புதல் அளிக்கலாம் (புருஷோத்தமன் வழக்கு)."
-      },
-      "C": {
         "en": "Incorrect. Chief Secretary has no constitutional custody of bills.",
         "ta": "தவறு. தலைமைச் செயலாளரிடம் மசோதாக்கள் அனுப்பப்படுவதில்லை."
+      },
+      "C": {
+        "en": "Correct. Does NOT lapse; Governor/President can grant assent even after dissolution (Purushothaman case).",
+        "ta": "சரி. காலாவதியாகாது; பேரவை கலைக்கப்பட்ட பிறகும் ஆளுநர்/குடியரசுத் தலைவர் ஒப்புதல் அளிக்கலாம் (புருஷோத்தமன் வழக்கு)."
       },
       "D": {
         "en": "Incorrect. Re-voting by new Assembly is not required.",
@@ -3558,29 +3558,29 @@
       },
       {
         "id": "C",
-        "en": "The Bill DOES NOT lapse; it can be reconsidered by the newly elected Legislative Assembly",
-        "ta": "மசோதா காலாவதியாகாது; புதிதாகத் தேர்ந்தெடுக்கப்படும் சட்டமன்றப் பேரவை அதனை மறுபரிசீலனை செய்யலாம்"
+        "en": "The Bill is transferred to Parliament for disposal",
+        "ta": "முடிவெடுப்பதற்காக மசோதா நாடாளுமன்றத்திற்கு மாற்றப்படும்"
       },
       {
         "id": "D",
-        "en": "The Bill is transferred to Parliament for disposal",
-        "ta": "முடிவெடுப்பதற்காக மசோதா நாடாளுமன்றத்திற்கு மாற்றப்படும்"
+        "en": "The Bill DOES NOT lapse; it can be reconsidered by the newly elected Legislative Assembly",
+        "ta": "மசோதா காலாவதியாகாது; புதிதாகத் தேர்ந்தெடுக்கப்படும் சட்டமன்றப் பேரவை அதனை மறுபரிசீலனை செய்யலாம்"
       }
     ],
     "options_en": [
       "The Bill lapses permanently and can never be revived",
       "The Bill automatically becomes law by default",
-      "The Bill DOES NOT lapse; it can be reconsidered by the newly elected Legislative Assembly",
-      "The Bill is transferred to Parliament for disposal"
+      "The Bill is transferred to Parliament for disposal",
+      "The Bill DOES NOT lapse; it can be reconsidered by the newly elected Legislative Assembly"
     ],
     "options_ta": [
       "மசோதா நிரந்தரமாகக் காலாவதியாகிவிடும் மற்றும் ஒருபோதும் புதுப்பிக்கப்பட முடியாது",
       "மசோதா தானாகவே சட்டமாகிவிடும்",
-      "மசோதா காலாவதியாகாது; புதிதாகத் தேர்ந்தெடுக்கப்படும் சட்டமன்றப் பேரவை அதனை மறுபரிசீலனை செய்யலாம்",
-      "முடிவெடுப்பதற்காக மசோதா நாடாளுமன்றத்திற்கு மாற்றப்படும்"
+      "முடிவெடுப்பதற்காக மசோதா நாடாளுமன்றத்திற்கு மாற்றப்படும்",
+      "மசோதா காலாவதியாகாது; புதிதாகத் தேர்ந்தெடுக்கப்படும் சட்டமன்றப் பேரவை அதனை மறுபரிசீலனை செய்யலாம்"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "The Supreme Court has held that a Bill returned by the President for reconsideration under Article 201 does NOT lapse on the dissolution of the Legislative Assembly. The newly elected Assembly can reconsider the Bill returned by the President within the six-month period.",
       "ta": "உறுப்பு 201-ன் கீழ் குடியரசுத் தலைவரால் மறுபரிசீலனைக்குத் திருப்பி அனுப்பப்பட்ட மசோதா பேரவை கலைக்கப்படுவதால் காலாவதியாகாது என்று உச்ச நீதிமன்றம் தெளிவுபடுத்தியுள்ளது. புதிதாகத் தேர்ந்தெடுக்கப்படும் பேரவை, ஆறு மாத காலத்திற்குள் குடியரசுத் தலைவர் திருப்பி அனுப்பிய மசோதாவை மறுபரிசீலனை செய்யலாம்."
@@ -3597,12 +3597,12 @@
         "ta": "தவறு. ஒப்புதலின்றி சட்டம் உருவாக முடியாது."
       },
       "C": {
-        "en": "Correct. Does not lapse; the successor Assembly can reconsider the returned Bill.",
-        "ta": "சரி. காலாவதியாகாது; புதிதாக வரும் பேரவை திருப்பி அனுப்பப்பட்ட மசோதாவை மறுபரிசீலனை செய்யலாம்."
-      },
-      "D": {
         "en": "Incorrect. Parliament cannot dispose of state legislation returned under Art 201.",
         "ta": "தவறு. நாடாளுமன்றத்திற்கு இதில் அதிகாரமில்லை."
+      },
+      "D": {
+        "en": "Correct. Does not lapse; the successor Assembly can reconsider the returned Bill.",
+        "ta": "சரி. காலாவதியாகாது; புதிதாக வரும் பேரவை திருப்பி அனுப்பப்பட்ட மசோதாவை மறுபரிசீலனை செய்யலாம்."
       }
     },
     "tnpsc_tip": {
@@ -3644,8 +3644,8 @@
     "options": [
       {
         "id": "A",
-        "en": "6 months exactly",
-        "ta": "சரியாக 6 மாதங்கள்"
+        "en": "6 months and 6 weeks",
+        "ta": "6 மாதங்கள் மற்றும் 6 வாரங்கள்"
       },
       {
         "id": "B",
@@ -3659,24 +3659,24 @@
       },
       {
         "id": "D",
-        "en": "6 months and 6 weeks",
-        "ta": "6 மாதங்கள் மற்றும் 6 வாரங்கள்"
+        "en": "6 months exactly",
+        "ta": "சரியாக 6 மாதங்கள்"
       }
     ],
     "options_en": [
-      "6 months exactly",
+      "6 months and 6 weeks",
       "6 weeks exactly",
       "3 months and 6 weeks",
-      "6 months and 6 weeks"
+      "6 months exactly"
     ],
     "options_ta": [
-      "சரியாக 6 மாதங்கள்",
+      "6 மாதங்கள் மற்றும் 6 வாரங்கள்",
       "சரியாக 6 வாரங்கள்",
       "3 மாதங்கள் மற்றும் 6 வாரங்கள்",
-      "6 மாதங்கள் மற்றும் 6 வாரங்கள்"
+      "சரியாக 6 மாதங்கள்"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Under Article 213(2)(a), an Ordinance ceases to operate at the expiration of six weeks from the reassembly of the Legislature. Since the maximum permissible gap between two sessions of the Legislature under Article 174(1) is six months, the maximum theoretical life of an Ordinance without legislative approval is 6 months + 6 weeks.",
       "ta": "உறுப்பு 213(2)(a)-ன் படி, சட்டமன்றம் மீண்டும் கூடிய நாளிலிருந்து 6 வாரங்கள் முடிந்தவுடன் அவசரச் சட்டம் காலாவதியாகிவிடும். உறுப்பு 174(1)-ன் கீழ் சட்டமன்றக் கூட்டத்தொடர்களுக்கு இடையேயான அதிகபட்ச இடைவெளி 6 மாதங்கள் என்பதால், சட்டமன்றத்தின் ஒப்புதலின்றி ஓர் அவசரச் சட்டம் நீடிக்கக்கூடிய அதிகபட்ச கோட்பாட்டு காலம் 6 மாதங்கள் + 6 வாரங்கள் ஆகும்."
@@ -3685,8 +3685,8 @@
     "explanation_ta": "உறுப்பு 213(2)(a)-ன் படி, சட்டமன்றம் மீண்டும் கூடிய நாளிலிருந்து 6 வாரங்கள் முடிந்தவுடன் அவசரச் சட்டம் காலாவதியாகிவிடும். உறுப்பு 174(1)-ன் கீழ் சட்டமன்றக் கூட்டத்தொடர்களுக்கு இடையேயான அதிகபட்ச இடைவெளி 6 மாதங்கள் என்பதால், சட்டமன்றத்தின் ஒப்புதலின்றி ஓர் அவசரச் சட்டம் நீடிக்கக்கூடிய அதிகபட்ச கோட்பாட்டு காலம் 6 மாதங்கள் + 6 வாரங்கள் ஆகும்.",
     "why_not_others": {
       "A": {
-        "en": "Incorrect. 6 months is the gap between sessions, not the total life.",
-        "ta": "தவறு. 6 மாதங்கள் என்பது கூட்டங்களுக்கு இடையேயான இடைவெளி மட்டுமே."
+        "en": "Correct. Maximum life = 6 months (max gap between sessions) + 6 weeks (from reassembly).",
+        "ta": "சரி. அதிகபட்ச வாழ்நாள் = 6 மாதங்கள் (அதிகபட்ச இடைவெளி) + 6 வாரங்கள் (கூடிய நாளிலிருந்து)."
       },
       "B": {
         "en": "Incorrect. 6 weeks is the life AFTER reassembly, not total maximum.",
@@ -3697,8 +3697,8 @@
         "ta": "தவறு. 3 மாதங்கள் என்பது தவறானது."
       },
       "D": {
-        "en": "Correct. Maximum life = 6 months (max gap between sessions) + 6 weeks (from reassembly).",
-        "ta": "சரி. அதிகபட்ச வாழ்நாள் = 6 மாதங்கள் (அதிகபட்ச இடைவெளி) + 6 வாரங்கள் (கூடிய நாளிலிருந்து)."
+        "en": "Incorrect. 6 months is the gap between sessions, not the total life.",
+        "ta": "தவறு. 6 மாதங்கள் என்பது கூட்டங்களுக்கு இடையேயான இடைவெளி மட்டுமே."
       }
     },
     "tnpsc_tip": {
@@ -3740,8 +3740,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Exclusively the Legislative Assembly of the concerned State; the Council itself has no power to initiate the resolution",
-        "ta": "சம்பந்தப்பட்ட மாநிலத்தின் சட்டமன்றப் பேரவைக்கு மட்டுமே; மேலவைக்கு அத்தகைய தீர்மானத்தைத் தொடங்கும் அதிகாரம் இல்லை"
+        "en": "The Union Home Ministry through an executive order",
+        "ta": "நிர்வாக ஆணை மூலம் மத்திய உள்துறை அமைச்சகம்"
       },
       {
         "id": "B",
@@ -3755,24 +3755,24 @@
       },
       {
         "id": "D",
-        "en": "The Union Home Ministry through an executive order",
-        "ta": "நிர்வாக ஆணை மூலம் மத்திய உள்துறை அமைச்சகம்"
+        "en": "Exclusively the Legislative Assembly of the concerned State; the Council itself has no power to initiate the resolution",
+        "ta": "சம்பந்தப்பட்ட மாநிலத்தின் சட்டமன்றப் பேரவைக்கு மட்டுமே; மேலவைக்கு அத்தகைய தீர்மானத்தைத் தொடங்கும் அதிகாரம் இல்லை"
       }
     ],
     "options_en": [
-      "Exclusively the Legislative Assembly of the concerned State; the Council itself has no power to initiate the resolution",
+      "The Union Home Ministry through an executive order",
       "The Legislative Council of the State through a resolution passed by its members",
       "The Governor of the State acting in discretion",
-      "The Union Home Ministry through an executive order"
+      "Exclusively the Legislative Assembly of the concerned State; the Council itself has no power to initiate the resolution"
     ],
     "options_ta": [
-      "சம்பந்தப்பட்ட மாநிலத்தின் சட்டமன்றப் பேரவைக்கு மட்டுமே; மேலவைக்கு அத்தகைய தீர்மானத்தைத் தொடங்கும் அதிகாரம் இல்லை",
+      "நிர்வாக ஆணை மூலம் மத்திய உள்துறை அமைச்சகம்",
       "மாநில சட்ட மேலவை தன் உறுப்பினர்களால் நிறைவேற்றப்படும் தீர்மானம் மூலம்",
       "விருப்புரிமையின் கீழ் செயல்படும் மாநில ஆளுநர்",
-      "நிர்வாக ஆணை மூலம் மத்திய உள்துறை அமைச்சகம்"
+      "சம்பந்தப்பட்ட மாநிலத்தின் சட்டமன்றப் பேரவைக்கு மட்டுமே; மேலவைக்கு அத்தகைய தீர்மானத்தைத் தொடங்கும் அதிகாரம் இல்லை"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Article 169(1) explicitly vests the initiative solely in the Legislative Assembly of the State ('if the Legislative Assembly of the State passes a resolution to that effect'). The Legislative Council cannot initiate a resolution for its own creation or abolition, nor can Parliament initiate it without the Assembly's resolution.",
       "ta": "உறுப்பு 169(1) முன்முயற்சி அதிகாரத்தை மாநில சட்டமன்றப் பேரவைக்கு மட்டுமே வழங்குகிறது ('மாநில சட்டமன்றப் பேரவை அதற்கான தீர்மானத்தை நிறைவேற்றினால்'). சட்ட மேலவை தன்னைத்தானே உருவாக்கவோ நீக்கவோ தீர்மானம் கொண்டுவர முடியாது; பேரவையின் தீர்மானமின்றி நாடாளுமன்றமும் சுயமாகத் தொடங்க முடியாது."
@@ -3781,8 +3781,8 @@
     "explanation_ta": "உறுப்பு 169(1) முன்முயற்சி அதிகாரத்தை மாநில சட்டமன்றப் பேரவைக்கு மட்டுமே வழங்குகிறது ('மாநில சட்டமன்றப் பேரவை அதற்கான தீர்மானத்தை நிறைவேற்றினால்'). சட்ட மேலவை தன்னைத்தானே உருவாக்கவோ நீக்கவோ தீர்மானம் கொண்டுவர முடியாது; பேரவையின் தீர்மானமின்றி நாடாளுமன்றமும் சுயமாகத் தொடங்க முடியாது.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Initiative lies solely with the Legislative Assembly under Article 169(1).",
-        "ta": "சரி. உறுப்பு 169(1)-ன் கீழ் தொடக்க அதிகாரம் சட்டமன்றப் பேரவைக்கு மட்டுமே உள்ளது."
+        "en": "Incorrect. Executive cannot bypass constitutional legislative procedure.",
+        "ta": "தவறு. நிர்வாகம் அரசியலமைப்பு நடைமுறையைத் தவிர்க்க முடியாது."
       },
       "B": {
         "en": "Incorrect. The Council has no constitutional power to initiate its own creation or abolition.",
@@ -3793,8 +3793,8 @@
         "ta": "தவறு. ஆளுநர் உறுப்பு 169 தீர்மானத்தைத் தொடங்க முடியாது."
       },
       "D": {
-        "en": "Incorrect. Executive cannot bypass constitutional legislative procedure.",
-        "ta": "தவறு. நிர்வாகம் அரசியலமைப்பு நடைமுறையைத் தவிர்க்க முடியாது."
+        "en": "Correct. Initiative lies solely with the Legislative Assembly under Article 169(1).",
+        "ta": "சரி. உறுப்பு 169(1)-ன் கீழ் தொடக்க அதிகாரம் சட்டமன்றப் பேரவைக்கு மட்டுமே உள்ளது."
       }
     },
     "tnpsc_tip": {
@@ -3840,8 +3840,8 @@
       },
       {
         "id": "B",
-        "en": "Abolition or creation of a State Legislative Council under Article 169",
-        "ta": "உறுப்பு 169-ன் கீழ் மாநில சட்ட மேலவையை நீக்குதல் அல்லது உருவாக்குதல்"
+        "en": "Amendment to any of the Lists in the Seventh Schedule",
+        "ta": "ஏழாவது அட்டவணையில் உள்ள ஏதேனும் ஒரு பட்டியல் குறித்த திருத்தம்"
       },
       {
         "id": "C",
@@ -3850,24 +3850,24 @@
       },
       {
         "id": "D",
-        "en": "Amendment to any of the Lists in the Seventh Schedule",
-        "ta": "ஏழாவது அட்டவணையில் உள்ள ஏதேனும் ஒரு பட்டியல் குறித்த திருத்தம்"
+        "en": "Abolition or creation of a State Legislative Council under Article 169",
+        "ta": "உறுப்பு 169-ன் கீழ் மாநில சட்ட மேலவையை நீக்குதல் அல்லது உருவாக்குதல்"
       }
     ],
     "options_en": [
       "Amendment to the election of the President (Articles 54 and 55)",
-      "Abolition or creation of a State Legislative Council under Article 169",
+      "Amendment to any of the Lists in the Seventh Schedule",
       "Amendment to the representation of States in Parliament (Fourth Schedule)",
-      "Amendment to any of the Lists in the Seventh Schedule"
+      "Abolition or creation of a State Legislative Council under Article 169"
     ],
     "options_ta": [
       "குடியரசுத் தலைவர் தேர்தல் தொடர்பான திருத்தம் (உறுப்புகள் 54 மற்றும் 55)",
-      "உறுப்பு 169-ன் கீழ் மாநில சட்ட மேலவையை நீக்குதல் அல்லது உருவாக்குதல்",
+      "ஏழாவது அட்டவணையில் உள்ள ஏதேனும் ஒரு பட்டியல் குறித்த திருத்தம்",
       "நாடாளுமன்றத்தில் மாநிலங்களின் பிரதிநிதித்துவம் குறித்த திருத்தம் (நான்காவது அட்டவணை)",
-      "ஏழாவது அட்டவணையில் உள்ள ஏதேனும் ஒரு பட்டியல் குறித்த திருத்தம்"
+      "உறுப்பு 169-ன் கீழ் மாநில சட்ட மேலவையை நீக்குதல் அல்லது உருவாக்குதல்"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Under the proviso to Article 368(2), federal provisions (Presidential election, extent of executive power of Union/States, High Courts/Supreme Court, Seventh Schedule lists, representation of States in Parliament, and Article 368 itself) require ratification by at least half the State Legislatures. In contrast, abolition or creation of a Legislative Council under Article 169 is explicitly NOT an amendment under Article 368 at all (Article 169(3)) and requires no state ratification.",
       "ta": "உறுப்பு 368(2)-ன் வரம்பின் கீழ், கூட்டாட்சி அம்சங்களுக்கு (குடியரசுத் தலைவர் தேர்தல், மத்திய-மாநில நிர்வாக வரம்பு, உச்ச/உயர் நீதிமன்றங்கள், 7-வது அட்டவணை பட்டியல்கள், நாடாளுமன்றத்தில் மாநில பிரதிநிதித்துவம், உறுப்பு 368) குறைந்தபட்சம் பாதி மாநிலங்களின் ஏற்புறுதி தேவை. ஆனால் உறுப்பு 169-ன் கீழ் மேலவை உருவாக்கம்/நீக்கம் உறுப்பு 368-ன் கீழான திருத்தமே அல்ல (உறுப்பு 169(3)); இதற்கு மாநில ஏற்புறுதி தேவையில்லை."
@@ -3880,16 +3880,16 @@
         "ta": "தவறு. குடியரசுத் தலைவர் தேர்தலுக்கு மாநிலங்களின் ஏற்புறுதி கட்டாயம் தேவை."
       },
       "B": {
-        "en": "Correct. Council abolition/creation is an ordinary parliamentary law, excluded from Article 368.",
-        "ta": "சரி. மேலவை நீக்கம்/உருவாக்கம் சாதாரண நாடாளுமன்றச் சட்டம், உறுப்பு 368-லிருந்து விலக்கப்பட்டது."
+        "en": "Incorrect. Seventh Schedule lists amendment requires state ratification.",
+        "ta": "தவறு. ஏழாவது அட்டவணைக்கு மாநிலங்களின் ஏற்புறுதி தேவை."
       },
       "C": {
         "en": "Incorrect. Fourth Schedule changes require state ratification.",
         "ta": "தவறு. நான்காவது அட்டவணை திருத்தத்திற்கு மாநில ஏற்புறுதி தேவை."
       },
       "D": {
-        "en": "Incorrect. Seventh Schedule lists amendment requires state ratification.",
-        "ta": "தவறு. ஏழாவது அட்டவணைக்கு மாநிலங்களின் ஏற்புறுதி தேவை."
+        "en": "Correct. Council abolition/creation is an ordinary parliamentary law, excluded from Article 368.",
+        "ta": "சரி. மேலவை நீக்கம்/உருவாக்கம் சாதாரண நாடாளுமன்றச் சட்டம், உறுப்பு 368-லிருந்து விலக்கப்பட்டது."
       }
     },
     "tnpsc_tip": {
@@ -4123,13 +4123,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Yes, if from information received and after making such inquiry as he thinks fit, the Speaker/Chairman is satisfied that the resignation is NOT voluntary or genuine",
-        "ta": "ஆம்; பெறப்பட்ட தகவல்களிலிருந்தும், தகுந்த விசாரணை நடத்திய பின்னரும், அந்த ராஜினாமா தன்னிச்சையானது அல்ல அல்லது உண்மையானது அல்ல என்று திருப்தியடைந்தால் நிராகரிக்கலாம்"
+        "en": "No, the Speaker/Chairman is bound to accept any resignation letter immediately without inquiry",
+        "ta": "இல்லை; சபாநாயகர் அல்லது தலைவர் எந்த விசாரணையுமின்றி எந்தவொரு ராஜினாமாக் கடிதத்தையும் உடனடியாக ஏற்கக் கடமைப்பட்டவர்"
       },
       {
         "id": "B",
-        "en": "No, the Speaker/Chairman is bound to accept any resignation letter immediately without inquiry",
-        "ta": "இல்லை; சபாநாயகர் அல்லது தலைவர் எந்த விசாரணையுமின்றி எந்தவொரு ராஜினாமாக் கடிதத்தையும் உடனடியாக ஏற்கக் கடமைப்பட்டவர்"
+        "en": "Yes, if from information received and after making such inquiry as he thinks fit, the Speaker/Chairman is satisfied that the resignation is NOT voluntary or genuine",
+        "ta": "ஆம்; பெறப்பட்ட தகவல்களிலிருந்தும், தகுந்த விசாரணை நடத்திய பின்னரும், அந்த ராஜினாமா தன்னிச்சையானது அல்ல அல்லது உண்மையானது அல்ல என்று திருப்தியடைந்தால் நிராகரிக்கலாம்"
       },
       {
         "id": "C",
@@ -4143,19 +4143,19 @@
       }
     ],
     "options_en": [
-      "Yes, if from information received and after making such inquiry as he thinks fit, the Speaker/Chairman is satisfied that the resignation is NOT voluntary or genuine",
       "No, the Speaker/Chairman is bound to accept any resignation letter immediately without inquiry",
+      "Yes, if from information received and after making such inquiry as he thinks fit, the Speaker/Chairman is satisfied that the resignation is NOT voluntary or genuine",
       "Yes, but only if the Chief Minister advises rejection in writing",
       "No, only the Governor has the constitutional power to reject an MLA's resignation"
     ],
     "options_ta": [
-      "ஆம்; பெறப்பட்ட தகவல்களிலிருந்தும், தகுந்த விசாரணை நடத்திய பின்னரும், அந்த ராஜினாமா தன்னிச்சையானது அல்ல அல்லது உண்மையானது அல்ல என்று திருப்தியடைந்தால் நிராகரிக்கலாம்",
       "இல்லை; சபாநாயகர் அல்லது தலைவர் எந்த விசாரணையுமின்றி எந்தவொரு ராஜினாமாக் கடிதத்தையும் உடனடியாக ஏற்கக் கடமைப்பட்டவர்",
+      "ஆம்; பெறப்பட்ட தகவல்களிலிருந்தும், தகுந்த விசாரணை நடத்திய பின்னரும், அந்த ராஜினாமா தன்னிச்சையானது அல்ல அல்லது உண்மையானது அல்ல என்று திருப்தியடைந்தால் நிராகரிக்கலாம்",
       "ஆம், ஆனால் முதலமைச்சர் எழுத்துப்பூர்வமாக நிராகரிக்க அறிவுறுத்தினால் மட்டுமே",
       "இல்லை, ஆளுநருக்கு மட்டுமே சட்டமன்ற உறுப்பினரின் ராஜினாமாவை நிராகரிக்கும் அதிகாரம் உண்டு"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "The proviso to Article 190(3)(b) (inserted by the 33rd Amendment, 1974) provides that in the case of any resignation, if from information received or otherwise and after making such inquiry as he thinks fit, the Speaker or the Chairman is satisfied that such resignation is not voluntary or genuine, he shall not accept such resignation.",
       "ta": "33-வது திருத்தச் சட்டம் (1974) மூலம் சேர்க்கப்பட்ட உறுப்பு 190(3)(b)-ன் வரம்பு நிபந்தனையின்படி, பெறப்பட்ட தகவல் அல்லது வேறுவகையில் தனக்குத் தகுதியெனத் தோன்றும் விசாரணையைச் செய்த பின்னர், ஒரு ராஜினாமா தன்னிச்சையானது அல்ல அல்லது உண்மையானது அல்ல என்று சபாநாயகர் அல்லது தலைவர் திருப்தியடைந்தால், அவர் அந்த ராஜினாமாவை ஏற்கக் கூடாது (நிராகரிக்க வேண்டும்)."
@@ -4164,12 +4164,12 @@
     "explanation_ta": "33-வது திருத்தச் சட்டம் (1974) மூலம் சேர்க்கப்பட்ட உறுப்பு 190(3)(b)-ன் வரம்பு நிபந்தனையின்படி, பெறப்பட்ட தகவல் அல்லது வேறுவகையில் தனக்குத் தகுதியெனத் தோன்றும் விசாரணையைச் செய்த பின்னர், ஒரு ராஜினாமா தன்னிச்சையானது அல்ல அல்லது உண்மையானது அல்ல என்று சபாநாயகர் அல்லது தலைவர் திருப்தியடைந்தால், அவர் அந்த ராஜினாமாவை ஏற்கக் கூடாது (நிராகரிக்க வேண்டும்).",
     "why_not_others": {
       "A": {
-        "en": "Correct. Speaker/Chairman can reject resignation if satisfied it is not voluntary or genuine.",
-        "ta": "சரி. தன்னிச்சையானது அல்ல அல்லது உண்மையானது அல்ல எனத் திருப்தியடைந்தால் சபாநாயகர்/தலைவர் நிராகரிக்கலாம்."
-      },
-      "B": {
         "en": "Incorrect. Before 1974, acceptance was automatic; 33rd Amendment gave power to inquire and reject.",
         "ta": "தவறு. 1974-க்கு முன் உடனடியாக ஏற்கப்பட்டது; 33-வது திருத்தம் விசாரித்து நிராகரிக்கும் அதிகாரத்தை அளித்தது."
+      },
+      "B": {
+        "en": "Correct. Speaker/Chairman can reject resignation if satisfied it is not voluntary or genuine.",
+        "ta": "சரி. தன்னிச்சையானது அல்ல அல்லது உண்மையானது அல்ல எனத் திருப்தியடைந்தால் சபாநாயகர்/தலைவர் நிராகரிக்கலாம்."
       },
       "C": {
         "en": "Incorrect. Chief Minister has no role in the Speaker's inquiry.",
@@ -4219,13 +4219,13 @@
     "options": [
       {
         "id": "A",
-        "en": "It is purely advisory and the Governor can reject it at discretion",
-        "ta": "இது முற்றிலும் ஆலோசனைக் கூறேயாகும், ஆளுநர் தனது விருப்புரிமையின்படி அதை நிராகரிக்கலாம்"
+        "en": "It is constitutionally BINDING on the Governor, who must act according to such opinion",
+        "ta": "இது ஆளுநரைக் கட்டாயமாகக் கட்டுப்படுத்தும் அரசியலமைப்புத் தன்மையுடையது; ஆளுநர் அக்கருத்தின்படியே செயல்பட வேண்டும்"
       },
       {
         "id": "B",
-        "en": "It is constitutionally BINDING on the Governor, who must act according to such opinion",
-        "ta": "இது ஆளுநரைக் கட்டாயமாகக் கட்டுப்படுத்தும் அரசியலமைப்புத் தன்மையுடையது; ஆளுநர் அக்கருத்தின்படியே செயல்பட வேண்டும்"
+        "en": "It is purely advisory and the Governor can reject it at discretion",
+        "ta": "இது முற்றிலும் ஆலோசனைக் கூறேயாகும், ஆளுநர் தனது விருப்புரிமையின்படி அதை நிராகரிக்கலாம்"
       },
       {
         "id": "C",
@@ -4239,19 +4239,19 @@
       }
     ],
     "options_en": [
-      "It is purely advisory and the Governor can reject it at discretion",
       "It is constitutionally BINDING on the Governor, who must act according to such opinion",
+      "It is purely advisory and the Governor can reject it at discretion",
       "It requires confirmation by the State Cabinet before implementation",
       "It can be overruled by a resolution of the Legislative Assembly"
     ],
     "options_ta": [
-      "இது முற்றிலும் ஆலோசனைக் கூறேயாகும், ஆளுநர் தனது விருப்புரிமையின்படி அதை நிராகரிக்கலாம்",
       "இது ஆளுநரைக் கட்டாயமாகக் கட்டுப்படுத்தும் அரசியலமைப்புத் தன்மையுடையது; ஆளுநர் அக்கருத்தின்படியே செயல்பட வேண்டும்",
+      "இது முற்றிலும் ஆலோசனைக் கூறேயாகும், ஆளுநர் தனது விருப்புரிமையின்படி அதை நிராகரிக்கலாம்",
       "செயல்படுத்துவதற்கு முன் மாநில அமைச்சரவையின் ஒப்புதல் தேவை",
       "சட்டமன்றப் பேரவையின் தீர்மானத்தால் அதை ரத்து செய்ய முடியும்"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Article 192(2) explicitly provides: 'Before giving any decision on any such question, the Governor shall obtain the opinion of the Election Commission and shall act according to such opinion.' The Supreme Court in Brundaban Nayak v. Election Commission (1965) held that the Governor's order is merely a formal conveyance; the substantive decision is that of the Election Commission and is binding on the Governor.",
       "ta": "உறுப்பு 192(2) திட்டவட்டமாகக் கூறுகிறது: 'அத்தகைய எந்தவொரு கேள்வி மீதும் முடிவை அளிப்பதற்கு முன், ஆளுநர் தேர்தல் ஆணையத்தின் கருத்தைப் பெற வேண்டும் மற்றும் அக்கருத்தின்படியே செயல்பட வேண்டும்.' பிருந்தாபன் நாயக் (1965) வழக்கில், ஆளுநர் தேர்தல் ஆணையத்தின் முடிவை முறையாக அறிவிக்கும் கருவியே தவிர, ஆணையத்தின் கருத்து ஆளுநரைக் கண்டிப்பாகக் கட்டுப்படுத்தும் என உச்ச நீதிமன்றம் தீர்ப்பளித்தது."
@@ -4260,12 +4260,12 @@
     "explanation_ta": "உறுப்பு 192(2) திட்டவட்டமாகக் கூறுகிறது: 'அத்தகைய எந்தவொரு கேள்வி மீதும் முடிவை அளிப்பதற்கு முன், ஆளுநர் தேர்தல் ஆணையத்தின் கருத்தைப் பெற வேண்டும் மற்றும் அக்கருத்தின்படியே செயல்பட வேண்டும்.' பிருந்தாபன் நாயக் (1965) வழக்கில், ஆளுநர் தேர்தல் ஆணையத்தின் முடிவை முறையாக அறிவிக்கும் கருவியே தவிர, ஆணையத்தின் கருத்து ஆளுநரைக் கண்டிப்பாகக் கட்டுப்படுத்தும் என உச்ச நீதிமன்றம் தீர்ப்பளித்தது.",
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Governor cannot reject the opinion; the phrase is 'shall act according to such opinion'.",
-        "ta": "தவறு. ஆளுநர் நிராகரிக்க முடியாது; 'அக்கருத்தின்படியே செயல்பட வேண்டும்' என்றே சட்டம் கூறுகிறது."
-      },
-      "B": {
         "en": "Correct. The opinion of the Election Commission is constitutionally binding on the Governor under Article 192(2).",
         "ta": "சரி. உறுப்பு 192(2)-ன் கீழ் தேர்தல் ஆணையத்தின் கருத்து ஆளுநரைக் கண்டிப்பாகக் கட்டுப்படுத்தும்."
+      },
+      "B": {
+        "en": "Incorrect. Governor cannot reject the opinion; the phrase is 'shall act according to such opinion'.",
+        "ta": "தவறு. ஆளுநர் நிராகரிக்க முடியாது; 'அக்கருத்தின்படியே செயல்பட வேண்டும்' என்றே சட்டம் கூறுகிறது."
       },
       "C": {
         "en": "Incorrect. State Cabinet has zero role in Article 192 disqualification.",
@@ -4325,29 +4325,29 @@
       },
       {
         "id": "C",
-        "en": "The legislative privilege of the House to prohibit the publication of its debates (including expunged portions) prevails over the citizen's general freedom of speech under Article 19(1)(a)",
-        "ta": "தனது விவாதங்களை (நீக்கப்பட்ட பகுதிகள் உட்பட) வெளியிடத் தடை செய்யும் அவையின் சட்டமன்ற சிறப்புரிமை, உறுப்பு 19(1)(a)-ன் கீழான குடிமகனின் பொதுவான பேச்சு சுதந்திரத்தை விட மேலோங்கும்"
+        "en": "Newspapers have absolute immunity to publish anything that occurs inside the House",
+        "ta": "அவைக்குள் நடக்கும் எதையும் வெளியிட செய்தித்தாளுக்கு முழுமையான பாதுகாப்புரிமை உண்டு"
       },
       {
         "id": "D",
-        "en": "Newspapers have absolute immunity to publish anything that occurs inside the House",
-        "ta": "அவைக்குள் நடக்கும் எதையும் வெளியிட செய்தித்தாளுக்கு முழுமையான பாதுகாப்புரிமை உண்டு"
+        "en": "The legislative privilege of the House to prohibit the publication of its debates (including expunged portions) prevails over the citizen's general freedom of speech under Article 19(1)(a)",
+        "ta": "தனது விவாதங்களை (நீக்கப்பட்ட பகுதிகள் உட்பட) வெளியிடத் தடை செய்யும் அவையின் சட்டமன்ற சிறப்புரிமை, உறுப்பு 19(1)(a)-ன் கீழான குடிமகனின் பொதுவான பேச்சு சுதந்திரத்தை விட மேலோங்கும்"
       }
     ],
     "options_en": [
       "Fundamental Rights under Article 19(1)(a) always override legislative privileges under Article 194",
       "The Speaker cannot expunge any words spoken in the Assembly",
-      "The legislative privilege of the House to prohibit the publication of its debates (including expunged portions) prevails over the citizen's general freedom of speech under Article 19(1)(a)",
-      "Newspapers have absolute immunity to publish anything that occurs inside the House"
+      "Newspapers have absolute immunity to publish anything that occurs inside the House",
+      "The legislative privilege of the House to prohibit the publication of its debates (including expunged portions) prevails over the citizen's general freedom of speech under Article 19(1)(a)"
     ],
     "options_ta": [
       "உறுப்பு 19(1)(a)-ன் கீழான அடிப்படை உரிமைகள் எப்போதுமே உறுப்பு 194-ன் கீழான சட்டமன்ற சிறப்புரிமைகளை விட மேலானவை",
       "பேரவையில் பேசப்பட்ட எந்த வார்த்தையையும் சபாநாயகர் அவைக் குறிப்பிலிருந்து நீக்க முடியாது",
-      "தனது விவாதங்களை (நீக்கப்பட்ட பகுதிகள் உட்பட) வெளியிடத் தடை செய்யும் அவையின் சட்டமன்ற சிறப்புரிமை, உறுப்பு 19(1)(a)-ன் கீழான குடிமகனின் பொதுவான பேச்சு சுதந்திரத்தை விட மேலோங்கும்",
-      "அவைக்குள் நடக்கும் எதையும் வெளியிட செய்தித்தாளுக்கு முழுமையான பாதுகாப்புரிமை உண்டு"
+      "அவைக்குள் நடக்கும் எதையும் வெளியிட செய்தித்தாளுக்கு முழுமையான பாதுகாப்புரிமை உண்டு",
+      "தனது விவாதங்களை (நீக்கப்பட்ட பகுதிகள் உட்பட) வெளியிடத் தடை செய்யும் அவையின் சட்டமன்ற சிறப்புரிமை, உறுப்பு 19(1)(a)-ன் கீழான குடிமகனின் பொதுவான பேச்சு சுதந்திரத்தை விட மேலோங்கும்"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "In M.S.M. Sharma v. Sri Krishna Sinha (1959), known as the Searchlight Case, the Supreme Court held by a majority that the House of a Legislature has the collective privilege to prohibit the publication of its debates, particularly expunged portions. In the event of a conflict between Article 19(1)(a) and the privileges under Article 194(3), the special provisions of Article 194(3) prevail over the general fundamental right under Article 19(1)(a).",
       "ta": "சர்ச்லைட் வழக்கில் (1959), அவைக் குறிப்பிலிருந்து நீக்கப்பட்ட பகுதிகள் உட்பட தனது விவாதங்களை வெளியிடுவதைத் தடை செய்யும் கூட்டு சிறப்புரிமை சட்டமன்றத்திற்கு உண்டு என்று உச்ச நீதிமன்றம் தீர்ப்பளித்தது. உறுப்பு 19(1)(a) மற்றும் உறுப்பு 194(3)-க்கு இடையே மோதல் ஏற்படும் போது, பொதுவான உரிமையை விட (19(1)(a)) சிறப்பு விதியான உறுப்பு 194(3) மேலோங்கும்."
@@ -4364,12 +4364,12 @@
         "ta": "தவறு. அவைக்குறிப்பிலிருந்து நீக்கும் முழு அதிகாரம் சபாநாயகருக்கு உண்டு."
       },
       "C": {
-        "en": "Correct. Legislative privilege to prohibit publication overrides Article 19(1)(a) (Searchlight Case).",
-        "ta": "சரி. வெளியீட்டைத் தடுக்கும் சட்டமன்ற சிறப்புரிமை உறுப்பு 19(1)(a)-ஐ விட மேலோங்கும் (சர்ச்லைட் வழக்கு)."
-      },
-      "D": {
         "en": "Incorrect. Newspapers have no right to publish expunged proceedings.",
         "ta": "தவறு. நீக்கப்பட்ட பகுதிகளை வெளியிட செய்தித்தாளுக்கு உரிமையில்லை."
+      },
+      "D": {
+        "en": "Correct. Legislative privilege to prohibit publication overrides Article 19(1)(a) (Searchlight Case).",
+        "ta": "சரி. வெளியீட்டைத் தடுக்கும் சட்டமன்ற சிறப்புரிமை உறுப்பு 19(1)(a)-ஐ விட மேலோங்கும் (சர்ச்லைட் வழக்கு)."
       }
     },
     "tnpsc_tip": {
@@ -4421,29 +4421,29 @@
       },
       {
         "id": "C",
-        "en": "Legislative privileges are completely superior to all Articles in Part III and IV",
-        "ta": "சட்டமன்ற சிறப்புரிமைகள் பகுதி III மற்றும் IV-ல் உள்ள அனைத்து உறுப்புகளையும் விட முற்றிலும் மேலானவை"
+        "en": "The High Court has jurisdiction under Article 226 to examine the legality of a detention ordered by the Legislature, and Judges and Advocates cannot be held in contempt of the Legislature for performing their constitutional duties",
+        "ta": "சட்டமன்றத்தால் உத்தரவிடப்பட்ட காவலை உறுப்பு 226-ன் கீழ் ஆய்வு செய்ய உயர் நீதிமன்றத்திற்கு அதிகாரம் உண்டு; மேலும் தமது அரசியலமைப்பு கடமைகளைச் செய்வதற்காக நீதிபதிகளையோ அல்லது வழக்கறிஞர்களையோ சட்டமன்ற அவமதிப்புக்கு உள்ளாக்க முடியாது"
       },
       {
         "id": "D",
-        "en": "The High Court has jurisdiction under Article 226 to examine the legality of a detention ordered by the Legislature, and Judges and Advocates cannot be held in contempt of the Legislature for performing their constitutional duties",
-        "ta": "சட்டமன்றத்தால் உத்தரவிடப்பட்ட காவலை உறுப்பு 226-ன் கீழ் ஆய்வு செய்ய உயர் நீதிமன்றத்திற்கு அதிகாரம் உண்டு; மேலும் தமது அரசியலமைப்பு கடமைகளைச் செய்வதற்காக நீதிபதிகளையோ அல்லது வழக்கறிஞர்களையோ சட்டமன்ற அவமதிப்புக்கு உள்ளாக்க முடியாது"
+        "en": "Legislative privileges are completely superior to all Articles in Part III and IV",
+        "ta": "சட்டமன்ற சிறப்புரிமைகள் பகுதி III மற்றும் IV-ல் உள்ள அனைத்து உறுப்புகளையும் விட முற்றிலும் மேலானவை"
       }
     ],
     "options_en": [
       "The High Court has no power to grant bail to any person committed for contempt by the Legislature",
       "The Legislature can order the arrest of High Court Judges who hear habeas corpus petitions",
-      "Legislative privileges are completely superior to all Articles in Part III and IV",
-      "The High Court has jurisdiction under Article 226 to examine the legality of a detention ordered by the Legislature, and Judges and Advocates cannot be held in contempt of the Legislature for performing their constitutional duties"
+      "The High Court has jurisdiction under Article 226 to examine the legality of a detention ordered by the Legislature, and Judges and Advocates cannot be held in contempt of the Legislature for performing their constitutional duties",
+      "Legislative privileges are completely superior to all Articles in Part III and IV"
     ],
     "options_ta": [
       "சட்டமன்றத்தால் அவமதிப்புக்காக சிறைவைக்கப்பட்ட எந்தவொரு நபருக்கும் ஜாமீன் வழங்க உயர் நீதிமன்றத்திற்கு அதிகாரமில்லை",
       "ஆட்கொணர்வு மனுக்களை விசாரிக்கும் உயர் நீதிமன்ற நீதிபதிகளைக் கைது செய்ய சட்டமன்றம் உத்தரவிடலாம்",
-      "சட்டமன்ற சிறப்புரிமைகள் பகுதி III மற்றும் IV-ல் உள்ள அனைத்து உறுப்புகளையும் விட முற்றிலும் மேலானவை",
-      "சட்டமன்றத்தால் உத்தரவிடப்பட்ட காவலை உறுப்பு 226-ன் கீழ் ஆய்வு செய்ய உயர் நீதிமன்றத்திற்கு அதிகாரம் உண்டு; மேலும் தமது அரசியலமைப்பு கடமைகளைச் செய்வதற்காக நீதிபதிகளையோ அல்லது வழக்கறிஞர்களையோ சட்டமன்ற அவமதிப்புக்கு உள்ளாக்க முடியாது"
+      "சட்டமன்றத்தால் உத்தரவிடப்பட்ட காவலை உறுப்பு 226-ன் கீழ் ஆய்வு செய்ய உயர் நீதிமன்றத்திற்கு அதிகாரம் உண்டு; மேலும் தமது அரசியலமைப்பு கடமைகளைச் செய்வதற்காக நீதிபதிகளையோ அல்லது வழக்கறிஞர்களையோ சட்டமன்ற அவமதிப்புக்கு உள்ளாக்க முடியாது",
+      "சட்டமன்ற சிறப்புரிமைகள் பகுதி III மற்றும் IV-ல் உள்ள அனைத்து உறுப்புகளையும் விட முற்றிலும் மேலானவை"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "In the Presidential Reference in Keshav Singh's Case (1964), the Supreme Court held that citizens detained by the Legislature for contempt have the fundamental right to approach the High Court under Article 226 / Supreme Court under Article 32, and the Court has jurisdiction to determine if the detention is lawful. Judges dealing with such petitions and advocates presenting them are exercising constitutional functions and CANNOT be proceeded against by the Legislature for contempt.",
       "ta": "கேசவ் சிங் வழக்கில் (1964), அவமதிப்பிற்காக சட்டமன்றத்தால் சிறைவைக்கப்பட்ட குடிமகனுக்கு உறுப்பு 226 மற்றும் 32-ன் கீழ் நீதிமன்றத்தை நாடும் அடிப்படை உரிமை உண்டு என்றும், அக்காவல் சட்டப்பூர்வமானதா என ஆய்வு செய்ய உயர் நீதிமன்றத்திற்கு அதிகாரம் உண்டு என்றும் தீர்ப்பளிக்கப்பட்டது. அத்தகைய மனுக்களை விசாரிக்கும் நீதிபதிகளையோ, வாதாடும் வழக்கறிஞர்களையோ சட்டமன்ற அவமதிப்புக்காக விசாரிக்க முடியாது."
@@ -4460,12 +4460,12 @@
         "ta": "தவறு. நீதித்துறை உத்தரவுகளுக்காக நீதிபதிகளை சட்டமன்றம் கைது செய்யவோ ஆஜராக உத்தரவிடவோ முடியாது."
       },
       "C": {
-        "en": "Incorrect. Privileges are subject to Articles 21, 22, and 32/226.",
-        "ta": "தவறு. சிறப்புரிமைகள் உறுப்புகள் 21, 22 மற்றும் 32/226-க்கு உட்பட்டவை."
-      },
-      "D": {
         "en": "Correct. High Court has writ jurisdiction under Art 226; Judges/advocates immune from legislative contempt.",
         "ta": "சரி. உயர் நீதிமன்றத்திற்கு உறுப்பு 226-ன் கீழ் அதிகாரம் உண்டு; நீதிபதிகள் மற்றும் வழக்கறிஞர்களுக்கு சட்டமன்ற அவமதிப்பிலிருந்து பாதுகாப்பு உண்டு."
+      },
+      "D": {
+        "en": "Incorrect. Privileges are subject to Articles 21, 22, and 32/226.",
+        "ta": "தவறு. சிறப்புரிமைகள் உறுப்புகள் 21, 22 மற்றும் 32/226-க்கு உட்பட்டவை."
       }
     },
     "tnpsc_tip": {
@@ -4507,13 +4507,13 @@
     "options": [
       {
         "id": "A",
-        "en": "System of proportional representation by means of the single transferable vote (with secret ballot)",
-        "ta": "ஒற்றை மாற்று வாக்கு மூலம் விகிதாச்சார பிரதிநிதித்துவ முறை (ரகசிய வாக்கெடுப்புடன்)"
+        "en": "First-past-the-post system with open voting",
+        "ta": "வெளிப்படையான வாக்கெடுப்புடன் கூடிய முதலிடம் பெறுபவர் வெற்றி பெறும் முறை (FPTP)"
       },
       {
         "id": "B",
-        "en": "First-past-the-post system with open voting",
-        "ta": "வெளிப்படையான வாக்கெடுப்புடன் கூடிய முதலிடம் பெறுபவர் வெற்றி பெறும் முறை (FPTP)"
+        "en": "System of proportional representation by means of the single transferable vote (with secret ballot)",
+        "ta": "ஒற்றை மாற்று வாக்கு மூலம் விகிதாச்சார பிரதிநிதித்துவ முறை (ரகசிய வாக்கெடுப்புடன்)"
       },
       {
         "id": "C",
@@ -4527,19 +4527,19 @@
       }
     ],
     "options_en": [
-      "System of proportional representation by means of the single transferable vote (with secret ballot)",
       "First-past-the-post system with open voting",
+      "System of proportional representation by means of the single transferable vote (with secret ballot)",
       "List system of proportional representation",
       "Simple majority voting by show of hands"
     ],
     "options_ta": [
-      "ஒற்றை மாற்று வாக்கு மூலம் விகிதாச்சார பிரதிநிதித்துவ முறை (ரகசிய வாக்கெடுப்புடன்)",
       "வெளிப்படையான வாக்கெடுப்புடன் கூடிய முதலிடம் பெறுபவர் வெற்றி பெறும் முறை (FPTP)",
+      "ஒற்றை மாற்று வாக்கு மூலம் விகிதாச்சார பிரதிநிதித்துவ முறை (ரகசிய வாக்கெடுப்புடன்)",
       "விகிதாச்சார பிரதிநிதித்துவத்தின் பட்டியல் முறை (List System)",
       "கை உயர்த்துவதன் மூலம் எளிய பெரும்பான்மை வாக்கெடுப்பு"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Article 171(4) mandates that the members to be elected under sub-clauses (a), (b), and (c) of clause (3) shall be chosen in such territorial constituencies as may be prescribed by or under any law made by Parliament, and the elections under the said sub-clauses and under sub-clause (d) shall be held in accordance with the system of proportional representation by means of the single transferable vote.",
       "ta": "உறுப்பு 171(4)-ன் படி, சட்ட மேலவைக்கான தேர்தல்கள் (உள்ளாட்சி, பட்டதாரி, ஆசிரியர் மற்றும் எம்.எல்.ஏ தொகுதிகள்) அனைத்தும் ஒற்றை மாற்று வாக்கு மூலம் விகிதாச்சார பிரதிநிதித்துவ முறைப்படி (Proportional Representation by means of Single Transferable Vote) நடத்தப்பட வேண்டும்."
@@ -4548,12 +4548,12 @@
     "explanation_ta": "உறுப்பு 171(4)-ன் படி, சட்ட மேலவைக்கான தேர்தல்கள் (உள்ளாட்சி, பட்டதாரி, ஆசிரியர் மற்றும் எம்.எல்.ஏ தொகுதிகள்) அனைத்தும் ஒற்றை மாற்று வாக்கு மூலம் விகிதாச்சார பிரதிநிதித்துவ முறைப்படி (Proportional Representation by means of Single Transferable Vote) நடத்தப்பட வேண்டும்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Proportional representation by single transferable vote under Article 171(4).",
-        "ta": "சரி. உறுப்பு 171(4)-ன் கீழ் ஒற்றை மாற்று வாக்கு விகிதாச்சார பிரதிநிதித்துவ முறை."
-      },
-      "B": {
         "en": "Incorrect. First-past-the-post is used for Legislative Assembly, not Council.",
         "ta": "தவறு. முதலிடம் பெறுபவர் வெற்றி பெறும் முறை பேரவைக்கானது, மேலவைக்கானதல்ல."
+      },
+      "B": {
+        "en": "Correct. Proportional representation by single transferable vote under Article 171(4).",
+        "ta": "சரி. உறுப்பு 171(4)-ன் கீழ் ஒற்றை மாற்று வாக்கு விகிதாச்சார பிரதிநிதித்துவ முறை."
       },
       "C": {
         "en": "Incorrect. List system is not used in Indian legislative elections.",

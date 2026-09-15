@@ -1,0 +1,762 @@
+# -*- coding: utf-8 -*-
+"""
+Special Provisions for States - Part 2B Match the Following MCQs Generator (25 MCQs: SPS_MF_001 to SPS_MF_025)
+Strictly adheres to:
+- 24 required fields schema
+- "Match List-I with List-II" structure
+- Authentic Tamil translations
+- Specific why_not_others for A, B, C, D
+- Balanced answer keys (6-7 per option)
+- ContentValidator & Audit pass
+"""
+import json
+import os
+from special_provisions_states_mcq_helper import make_sps_q
+from tools.nova_content_engine.answer_randomizer import randomize_and_balance_dataset
+from tools.nova_content_engine.validator import ContentValidator
+
+def get_match_questions():
+    raw_data = [
+        # 1
+        {
+            "subtopic": "Articles 371 to 371C Matching",
+            "stem_en": "Match List-I (Constitutional Articles) with List-II (Covered States) and select the correct answer using the codes given below:\nList-I:\na) Article 371\nb) Article 371A\nc) Article 371B\nd) Article 371C\nList-II:\n1. Nagaland\n2. Manipur\n3. Maharashtra and Gujarat\n4. Assam",
+            "stem_ta": "பட்டியல்-I-ஐ (அரசியலமைப்புச் சரத்துகள்) பட்டியல்-II-உடன் (மாநிலங்கள்) பொருத்தி, கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\na) சரத்து 371\nb) சரத்து 371A\nc) சரத்து 371B\nd) சரத்து 371C\nபட்டியல்-II:\n1. நாகாலாந்து\n2. மணிப்பூர்\n3. மகாராஷ்டிரா மற்றும் குஜராத்\n4. அசாம்",
+            "options": [
+                ("a-3, b-1, c-4, d-2", "a-3, b-1, c-4, d-2"),
+                ("a-1, b-3, c-2, d-4", "a-1, b-3, c-2, d-4"),
+                ("a-3, b-4, c-1, d-2", "a-3, b-4, c-1, d-2"),
+                ("a-4, b-1, c-3, d-2", "a-4, b-1, c-3, d-2")
+            ],
+            "correct_key": "A",
+            "exp_en": "Article 371 covers Maharashtra & Gujarat (3). Article 371A covers Nagaland (1). Article 371B covers Assam (4). Article 371C covers Manipur (2). Correct code is a-3, b-1, c-4, d-2.",
+            "exp_ta": "சரத்து 371 மகாராஷ்டிரா & குஜராத்தைக் கையாள்கிறது (3). சரத்து 371A நாகாலாந்தைக் கையாள்கிறது (1). சரத்து 371B அசாமைக் கையாள்கிறது (4). சரத்து 371C மணிப்பூரைக் கையாள்கிறது (2). சரியான குறியீடு: a-3, b-1, c-4, d-2.",
+            "why_a_en": "Matches all four articles accurately: 371->MH/GJ(3), 371A->Nagaland(1), 371B->Assam(4), 371C->Manipur(2).",
+            "why_a_ta": "நான்கு சரத்துகளையும் துல்லியமாகப் பொருத்துகிறது: 371->மகாராஷ்டிரா/குஜராத்(3), 371A->நாகாலாந்து(1), 371B->அசாம்(4), 371C->மணிப்பூர்(2).",
+            "why_b_en": "Swaps Article 371 and Article 371A.",
+            "why_b_ta": "சரத்து 371 மற்றும் சரத்து 371A-ஐ மாற்றுகிறது.",
+            "why_c_en": "Confuses Assam with Nagaland.",
+            "why_c_ta": "அசாமை நாகாலாந்துடன் குழப்புகிறது.",
+            "why_d_en": "Associates Article 371 with Assam.",
+            "why_d_ta": "சரத்து 371-ஐ அசாமுடன் தவறாக இணைக்கிறது.",
+            "tip_en": "Remember alphabetical order: 371 (MH/GJ), A (Nagaland), B (Assam), C (Manipur).",
+            "tip_ta": "அகரவரிசையை நினைவில் கொள்க: 371 (மகாராஷ்டிரா/குஜராத்), A (நாகாலாந்து), B (அசாம்), C (மணிப்பூர்).",
+            "fact_en": "All these four articles were added or modified between 1956 and 1971.",
+            "fact_ta": "இந்த நான்கு சரத்துகளும் 1956 மற்றும் 1971-க்கு இடையே சேர்க்கப்பட்டன அல்லது திருத்தப்பட்டன."
+        },
+        # 2
+        {
+            "subtopic": "Articles 371D to 371H Matching",
+            "stem_en": "Match List-I (Constitutional Articles) with List-II (Covered States) and select the correct answer using the codes given below:\nList-I:\na) Article 371D\nb) Article 371F\nc) Article 371G\nd) Article 371H\nList-II:\n1. Sikkim\n2. Arunachal Pradesh\n3. Andhra Pradesh & Telangana\n4. Mizoram",
+            "stem_ta": "பட்டியல்-I-ஐ (அரசியலமைப்புச் சரத்துகள்) பட்டியல்-II-உடன் (மாநிலங்கள்) பொருத்தி, கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\na) சரத்து 371D\nb) சரத்து 371F\nc) சரத்து 371G\nd) சரத்து 371H\nபட்டியல்-II:\n1. சிக்கிம்\n2. அருணாச்சலப் பிரதேசம்\n3. ஆந்திரப் பிரதேசம் & தெலங்கானா\n4. மிசோரம்",
+            "options": [
+                ("a-3, b-1, c-4, d-2", "a-3, b-1, c-4, d-2"),
+                ("a-1, b-3, c-2, d-4", "a-1, b-3, c-2, d-4"),
+                ("a-3, b-4, c-1, d-2", "a-3, b-4, c-1, d-2"),
+                ("a-2, b-1, c-4, d-3", "a-2, b-1, c-4, d-3")
+            ],
+            "correct_key": "A",
+            "exp_en": "Article 371D covers Andhra Pradesh & Telangana (3). Article 371F covers Sikkim (1). Article 371G covers Mizoram (4). Article 371H covers Arunachal Pradesh (2). Correct code is a-3, b-1, c-4, d-2.",
+            "exp_ta": "சரத்து 371D ஆந்திரப் பிரதேசம் & தெலங்கானாவைக் கையாள்கிறது (3). சரத்து 371F சிக்கிமைக் கையாள்கிறது (1). சரத்து 371G மிசோரமைக் கையாள்கிறது (4). சரத்து 371H அருணாச்சலப் பிரதேசத்தைக் கையாள்கிறது (2). சரியான குறியீடு: a-3, b-1, c-4, d-2.",
+            "why_a_en": "Matches all four correctly: 371D->AP/TS(3), 371F->Sikkim(1), 371G->Mizoram(4), 371H->Arunachal(2).",
+            "why_a_ta": "நான்கையும் சரியாகப் பொருத்துகிறது: 371D->ஆந்திரா/தெலங்கானா(3), 371F->சிக்கிம்(1), 371G->மிசோரம்(4), 371H->அருணாச்சலப் பிரதேசம்(2).",
+            "why_b_en": "Inverts 371D and 371F.",
+            "why_b_ta": "371D மற்றும் 371F-ஐ மாற்றுகிறது.",
+            "why_c_en": "Swaps Mizoram and Sikkim.",
+            "why_c_ta": "மிசோரம் மற்றும் சிக்கிமை மாற்றுகிறது.",
+            "why_d_en": "Assigns Arunachal Pradesh to 371D.",
+            "why_d_ta": "அருணாச்சலப் பிரதேசத்தை 371D-க்கு தவறாக ஒதுக்குகிறது.",
+            "tip_en": "Remember: D = Andhra/Telangana, F = Sikkim, G = Mizoram, H = Arunachal Pradesh.",
+            "tip_ta": "நினைவில் கொள்க: D = ஆந்திரா/தெலங்கானா, F = சிக்கிம், G = மிசோரம், H = அருணாச்சலப் பிரதேசம்.",
+            "fact_en": "Article 371E is between D and F, providing for a Central University in AP.",
+            "fact_ta": "சரத்து 371E என்பது D மற்றும் F-க்கு இடையே உள்ளது, ஆந்திராவில் மத்திய பல்கலைக்கழகத்திற்கு வகை செய்கிறது."
+        },
+        # 3
+        {
+            "subtopic": "Articles 371I to 370 Matching",
+            "stem_en": "Match List-I (Constitutional Articles) with List-II (Subject Matters) and select the correct answer using the codes given below:\nList-I:\na) Article 371I\nb) Article 371J\nc) Article 371E\nd) Article 370\nList-II:\n1. Establishment of Central University in Andhra Pradesh\n2. Special provisions for Hyderabad-Karnataka region\n3. Minimum strength of Goa Legislative Assembly\n4. Temporary provisions regarding Jammu and Kashmir",
+            "stem_ta": "பட்டியல்-I-ஐ (அரசியலமைப்புச் சரத்துகள்) பட்டியல்-II-உடன் (பாடப் பொருள்கள்) பொருத்தி, கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\na) சரத்து 371I\nb) சரத்து 371J\nc) சரத்து 371E\nd) சரத்து 370\nபட்டியல்-II:\n1. ஆந்திரப் பிரதேசத்தில் மத்தியப் பல்கலைக்கழகத்தை நிறுவுதல்\n2. ஹைதராபாத்-கர்நாடகா பகுதிக்கான சிறப்பு ஏற்பாடுகள்\n3. கோவா சட்டமன்றத்தின் குறைந்தபட்ச பலம்\n4. ஜம்மு காஷ்மீர் தொடர்பான தற்காலிக ஏற்பாடுகள்",
+            "options": [
+                ("a-3, b-2, c-1, d-4", "a-3, b-2, c-1, d-4"),
+                ("a-2, b-3, c-1, d-4", "a-2, b-3, c-1, d-4"),
+                ("a-3, b-1, c-2, d-4", "a-3, b-1, c-2, d-4"),
+                ("a-4, b-2, c-1, d-3", "a-4, b-2, c-1, d-3")
+            ],
+            "correct_key": "A",
+            "exp_en": "Article 371I fixes the minimum strength of Goa Assembly at 30 (3). Article 371J provides for Hyderabad-Karnataka (2). Article 371E provides for a Central University in AP (1). Article 370 provided temporary provisions for J&K (4). Correct code is a-3, b-2, c-1, d-4.",
+            "exp_ta": "சரத்து 371I கோவா சட்டமன்றத்தின் குறைந்தபட்ச பலத்தை 30 என நிர்ணயிக்கிறது (3). சரத்து 371J ஹைதராபாத்-கர்நாடகாவிற்கு வகை செய்கிறது (2). சரத்து 371E ஆந்திராவில் மத்திய பல்கலைக்கழகத்திற்கு வகை செய்கிறது (1). சரத்து 370 ஜம்மு காஷ்மீருக்கான தற்காலிக ஏற்பாடுகளை வழங்கியது (4). சரியான குறியீடு: a-3, b-2, c-1, d-4.",
+            "why_a_en": "Matches all four articles accurately.",
+            "why_a_ta": "நான்கு சரத்துகளையும் துல்லியமாகப் பொருத்துகிறது.",
+            "why_b_en": "Swaps 371I and 371J.",
+            "why_b_ta": "371I மற்றும் 371J-ஐ மாற்றுகிறது.",
+            "why_c_en": "Swaps 371J and 371E.",
+            "why_c_ta": "371J மற்றும் 371E-ஐ மாற்றுகிறது.",
+            "why_d_en": "Assigns J&K to 371I.",
+            "why_d_ta": "ஜம்மு காஷ்மீரை 371I-க்கு தவறாக ஒதுக்குகிறது.",
+            "tip_en": "371I = Goa, 371J = Karnataka, 371E = Central Univ AP, 370 = J&K.",
+            "tip_ta": "371I = கோவா, 371J = கர்நாடகா, 371E = மத்திய பல்கலைக்கழகம் ஆந்திரா, 370 = ஜம்மு காஷ்மீர்.",
+            "fact_en": "Article 371J is the most recent special provision added to Part XXI (98th CAA 2012).",
+            "fact_ta": "பகுதி XXI-ல் கடைசியாகச் சேர்க்கப்பட்ட சிறப்பு ஏற்பாடு சரத்து 371J ஆகும் (98வது திருத்தம் 2012)."
+        },
+        # 4
+        {
+            "subtopic": "Constitutional Amendments 13th to 32nd Matching",
+            "stem_en": "Match List-I (Constitutional Amendment Acts) with List-II (Inserted Articles) and select the correct answer using the codes given below:\nList-I:\na) 13th Amendment Act, 1962\nb) 22nd Amendment Act, 1969\nc) 27th Amendment Act, 1971\nd) 32nd Amendment Act, 1973\nList-II:\n1. Article 371C (Manipur)\n2. Article 371D (Andhra Pradesh)\n3. Article 371A (Nagaland)\n4. Article 371B (Assam)",
+            "stem_ta": "பட்டியல்-I-ஐ (அரசியலமைப்புத் திருத்தச் சட்டங்கள்) பட்டியல்-II-உடன் (சேர்க்கப்பட்ட சரத்துகள்) பொருத்தி, கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\na) 13வது திருத்தச் சட்டம், 1962\nb) 22வது திருத்தச் சட்டம், 1969\nc) 27வது திருத்தச் சட்டம், 1971\nd) 32வது திருத்தச் சட்டம், 1973\nபட்டியல்-II:\n1. சரத்து 371C (மணிப்பூர்)\n2. சரத்து 371D (ஆந்திரப் பிரதேசம்)\n3. சரத்து 371A (நாகாலாந்து)\n4. சரத்து 371B (அசாம்)",
+            "options": [
+                ("a-3, b-4, c-1, d-2", "a-3, b-4, c-1, d-2"),
+                ("a-4, b-3, c-1, d-2", "a-4, b-3, c-1, d-2"),
+                ("a-3, b-1, c-4, d-2", "a-3, b-1, c-4, d-2"),
+                ("a-2, b-4, c-1, d-3", "a-2, b-4, c-1, d-3")
+            ],
+            "correct_key": "A",
+            "exp_en": "13th Amendment inserted Article 371A (3). 22nd Amendment inserted Article 371B (4). 27th Amendment inserted Article 371C (1). 32nd Amendment inserted Article 371D (2). Correct code is a-3, b-4, c-1, d-2.",
+            "exp_ta": "13வது திருத்தம் சரத்து 371A-ஐ சேர்த்தது (3). 22வது திருத்தம் சரத்து 371B-ஐ சேர்த்தது (4). 27வது திருத்தம் சரத்து 371C-ஐ சேர்த்தது (1). 32வது திருத்தம் சரத்து 371D-ஐ சேர்த்தது (2). சரியான குறியீடு: a-3, b-4, c-1, d-2.",
+            "why_a_en": "Matches all four constitutional amendments to their exact inserted articles.",
+            "why_a_ta": "நான்கு அரசியலமைப்பு திருத்தங்களையும் சேர்க்கப்பட்ட சரத்துகளோடு துல்லியமாகப் பொருத்துகிறது.",
+            "why_b_en": "Swaps 13th and 22nd Amendments.",
+            "why_b_ta": "13வது மற்றும் 22வது திருத்தங்களை மாற்றுகிறது.",
+            "why_c_en": "Swaps 22nd and 27th Amendments.",
+            "why_c_ta": "22வது மற்றும் 27வது திருத்தங்களை மாற்றுகிறது.",
+            "why_d_en": "Inverts 13th and 32nd Amendments.",
+            "why_d_ta": "13வது மற்றும் 32வது திருத்தங்களை மாற்றுகிறது.",
+            "tip_en": "Sequential order of early amendments: 13th (A), 22nd (B), 27th (C), 32nd (D/E).",
+            "tip_ta": "ஆரம்பகால திருத்தங்களின் காலவரிசை: 13வது (A), 22வது (B), 27வது (C), 32வது (D/E).",
+            "fact_en": "This chronological sequence mirrors the reorganization of north-eastern tribal areas.",
+            "fact_ta": "இந்தக் காலவரிசை வடகிழக்கு பழங்குடியினர் பகுதிகளின் மறுசீரமைப்பைப் பிரதிபலிக்கிறது."
+        },
+        # 5
+        {
+            "subtopic": "Constitutional Amendments 36th to 56th Matching",
+            "stem_en": "Match List-I (Constitutional Amendment Acts) with List-II (Inserted Articles) and select the correct answer using the codes given below:\nList-I:\na) 36th Amendment Act, 1975\nb) 53rd Amendment Act, 1986\nc) 55th Amendment Act, 1986\nd) 56th Amendment Act, 1987\nList-II:\n1. Article 371G (Mizoram)\n2. Article 371I (Goa)\n3. Article 371F (Sikkim)\n4. Article 371H (Arunachal Pradesh)",
+            "stem_ta": "பட்டியல்-I-ஐ (அரசியலமைப்புத் திருத்தச் சட்டங்கள்) பட்டியல்-II-உடன் (சேர்க்கப்பட்ட சரத்துகள்) பொருத்தி, கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\na) 36வது திருத்தச் சட்டம், 1975\nb) 53வது திருத்தச் சட்டம், 1986\nc) 55வது திருத்தச் சட்டம், 1986\nd) 56வது திருத்தச் சட்டம், 1987\nபட்டியல்-II:\n1. சரத்து 371G (மிசோரம்)\n2. சரத்து 371I (கோவா)\n3. சரத்து 371F (சிக்கிம்)\n4. சரத்து 371H (அருணாச்சலப் பிரதேசம்)",
+            "options": [
+                ("a-3, b-1, c-4, d-2", "a-3, b-1, c-4, d-2"),
+                ("a-1, b-3, c-4, d-2", "a-1, b-3, c-4, d-2"),
+                ("a-3, b-4, c-1, d-2", "a-3, b-4, c-1, d-2"),
+                ("a-2, b-1, c-4, d-3", "a-2, b-1, c-4, d-3")
+            ],
+            "correct_key": "A",
+            "exp_en": "36th Amendment inserted Article 371F for Sikkim (3). 53rd Amendment inserted Article 371G for Mizoram (1). 55th Amendment inserted Article 371H for Arunachal Pradesh (4). 56th Amendment inserted Article 371I for Goa (2). Correct code is a-3, b-1, c-4, d-2.",
+            "exp_ta": "36வது திருத்தம் சிக்கிமிற்காக சரத்து 371F-ஐ சேர்த்தது (3). 53வது திருத்தம் மிசோரமிற்காக சரத்து 371G-ஐ சேர்த்தது (1). 55வது திருத்தம் அருணாச்சலப் பிரதேசத்திற்காக சரத்து 371H-ஐ சேர்த்தது (4). 56வது திருத்தம் கோவாவிற்காக சரத்து 371I-ஐ சேர்த்தது (2). சரியான குறியீடு: a-3, b-1, c-4, d-2.",
+            "why_a_en": "Matches all four late 20th-century statehood amendments correctly.",
+            "why_a_ta": "20ஆம் நூற்றாண்டின் பிற்பகுதியில் ஏற்பட்ட நான்கு மாநில அந்தஸ்து திருத்தங்களையும் சரியாகப் பொருத்துகிறது.",
+            "why_b_en": "Swaps 36th and 53rd Amendments.",
+            "why_b_ta": "36வது மற்றும் 53வது திருத்தங்களை மாற்றுகிறது.",
+            "why_c_en": "Swaps 53rd and 55th Amendments.",
+            "why_c_ta": "53வது மற்றும் 55வது திருத்தங்களை மாற்றுகிறது.",
+            "why_d_en": "Assigns Goa to 36th Amendment.",
+            "why_d_ta": "கோவாவை 36வது திருத்தத்திற்கு தவறாக ஒதுக்குகிறது.",
+            "tip_en": "Later series: 36th (F), 53rd (G), 55th (H), 56th (I).",
+            "tip_ta": "பிந்தைய வரிசை: 36வது (F), 53வது (G), 55வது (H), 56வது (I).",
+            "fact_en": "All four amendments granted full statehood to former protectorates or Union Territories.",
+            "fact_ta": "இந்த நான்கு திருத்தங்களுமே பாதுகாக்கப்பட்ட பகுதிகள் அல்லது யூனியன் பிரதேசங்களுக்கு முழு மாநில அந்தஸ்தை வழங்கின."
+        },
+        # 6
+        {
+            "subtopic": "Assembly Minimum Strength Matching",
+            "stem_en": "Match List-I (States with Special Assembly Provisions) with List-II (Constitutional Minimum Strength) and select the correct answer using the codes given below:\nList-I:\na) Sikkim (Article 371F)\nb) Mizoram (Article 371G)\nc) Arunachal Pradesh (Article 371H)\nd) Goa (Article 371I)\nList-II:\n1. 40 members\n2. 30 members\n3. 30 members\n4. 30 members",
+            "stem_ta": "பட்டியல்-I-ஐ (சிறப்பு சட்டமன்ற ஏற்பாடுகள் கொண்ட மாநிலங்கள்) பட்டியல்-II-உடன் (அரசியலமைப்பு குறைந்தபட்ச பலம்) பொருத்தி, கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\na) சிக்கிம் (சரத்து 371F)\nb) மிசோரம் (சரத்து 371G)\nc) அருணாச்சலப் பிரதேசம் (சரத்து 371H)\nd) கோவா (சரத்து 371I)\nபட்டியல்-II:\n1. 40 உறுப்பினர்கள்\n2. 30 உறுப்பினர்கள்\n3. 30 உறுப்பினர்கள்\n4. 30 உறுப்பினர்கள்",
+            "options": [
+                ("a-2, b-1, c-3, d-4", "a-2, b-1, c-3, d-4"),
+                ("a-1, b-2, c-3, d-4", "a-1, b-2, c-3, d-4"),
+                ("a-2, b-3, c-1, d-4", "a-2, b-3, c-1, d-4"),
+                ("a-4, b-1, c-2, d-3", "a-4, b-1, c-2, d-3")
+            ],
+            "correct_key": "A",
+            "exp_en": "Sikkim has a minimum of 30 (2). Mizoram has a minimum of 40 (1). Arunachal Pradesh has a minimum of 30 (3). Goa has a minimum of 30 (4). Mizoram is unique with 40 members, whereas Sikkim, Arunachal, and Goa all have 30. Correct code is a-2, b-1, c-3, d-4.",
+            "exp_ta": "சிக்கிம் குறைந்தபட்சம் 30 உறுப்பினர்களைக் கொண்டுள்ளது (2). மிசோரம் குறைந்தபட்சம் 40 உறுப்பினர்களைக் கொண்டுள்ளது (1). அருணாச்சலப் பிரதேசம் குறைந்தபட்சம் 30 உறுப்பினர்களைக் கொண்டுள்ளது (3). கோவா குறைந்தபட்சம் 30 உறுப்பினர்களைக் கொண்டுள்ளது (4). மிசோரம் 40 உறுப்பினர்களுடன் தனித்துவமானது, சிக்கிம், அருணாச்சல் மற்றும் கோவா அனைத்தும் 30 உறுப்பினர்களைக் கொண்டுள்ளன. சரியான குறியீடு: a-2, b-1, c-3, d-4.",
+            "why_a_en": "Mizoram uniquely pairs with 40 (1); Sikkim, Arunachal, and Goa pair with 30.",
+            "why_a_ta": "மிசோரம் தனித்துவமாக 40-உடன் (1) பொருந்துகிறது; சிக்கிம், அருணாச்சல் மற்றும் கோவா 30-உடன் பொருந்துகின்றன.",
+            "why_b_en": "Assigns 40 members to Sikkim incorrectly.",
+            "why_b_ta": "40 உறுப்பினர்களை சிக்கிமிற்கு தவறாக ஒதுக்குகிறது.",
+            "why_c_en": "Assigns 40 members to Arunachal Pradesh incorrectly.",
+            "why_c_ta": "40 உறுப்பினர்களை அருணாச்சலப் பிரதேசத்திற்கு தவறாக ஒதுக்குகிறது.",
+            "why_d_en": "Scrambles the mappings.",
+            "why_d_ta": "பொருத்தங்களை மாற்றிக் குழப்புகிறது.",
+            "tip_en": "Mizoram = 40; Sikkim, Arunachal, Goa = 30.",
+            "tip_ta": "மிசோரம் = 40; சிக்கிம், அருணாச்சலப் பிரதேசம், கோவா = 30.",
+            "fact_en": "Article 170(1) prescribes 60 as the general constitutional floor for other states.",
+            "fact_ta": "சரத்து 170(1) பிற மாநிலங்களுக்கு பொதுவான அரசியலமைப்பு குறைந்தபட்ச வரம்பாக 60-ஐ நிர்ணயிக்கிறது."
+        },
+        # 7
+        {
+            "subtopic": "Special Responsibilities of Governors Matching",
+            "stem_en": "Match List-I (Special Responsibilities of Governor) with List-II (States) and select the correct answer using the codes given below:\nList-I:\na) Law and order during internal disturbance\nb) Separate development boards and equitable fund allocation\nc) Peace and equitable arrangement for social-economic advancement\nd) Law and order with individual judgment after consulting ministers\nList-II:\n1. Sikkim (Article 371F)\n2. Arunachal Pradesh (Article 371H)\n3. Nagaland (Article 371A)\n4. Maharashtra & Gujarat (Article 371)",
+            "stem_ta": "பட்டியல்-I-ஐ (ஆளுநரின் சிறப்புப் பொறுப்புகள்) பட்டியல்-II-உடன் (மாநிலங்கள்) பொருத்தி, கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\na) உள்நாட்டு அமைதியின்மையின் போது சட்டம் ஒழுங்கு\nb) தனி வளர்ச்சி வாரியங்கள் மற்றும் சமமான நிதி ஒதுக்கீடு\nc) அமைதி மற்றும் சமூக-பொருளாதார முன்னேற்றத்திற்கான சமமான ஏற்பாடு\nd) அமைச்சர்களைக் கலந்தாலோசித்த பிறகு தனிப்பட்ட முடிவின் கீழ் சட்டம் ஒழுங்கு\nபட்டியல்-II:\n1. சிக்கிம் (சரத்து 371F)\n2. அருணாச்சலப் பிரதேசம் (சரத்து 371H)\n3. நாகாலாந்து (சரத்து 371A)\n4. மகாராஷ்டிரா & குஜராத் (சரத்து 371)",
+            "options": [
+                ("a-3, b-4, c-1, d-2", "a-3, b-4, c-1, d-2"),
+                ("a-4, b-3, c-1, d-2", "a-4, b-3, c-1, d-2"),
+                ("a-3, b-1, c-4, d-2", "a-3, b-1, c-4, d-2"),
+                ("a-2, b-4, c-1, d-3", "a-2, b-4, c-1, d-3")
+            ],
+            "correct_key": "A",
+            "exp_en": "Law and order during internal disturbance applies to Nagaland (3). Separate development boards applies to Maharashtra & Gujarat (4). Peace and equitable advancement applies to Sikkim (1). Law and order with individual judgment after consulting ministers applies to Arunachal Pradesh (2). Correct code is a-3, b-4, c-1, d-2.",
+            "exp_ta": "உள்நாட்டு அமைதியின்மையின் போது சட்டம் ஒழுங்கு நாகாலாந்திற்குப் பொருந்தும் (3). தனி வளர்ச்சி வாரியங்கள் மகாராஷ்டிரா & குஜராத்திற்கு பொருந்தும் (4). அமைதி மற்றும் சமமான முன்னேற்றம் சிக்கிமிற்குப் பொருந்தும் (1). அமைச்சர்களைக் கலந்தாலோசித்து சட்டம் ஒழுங்கில் தனிப்பட்ட முடிவு அருணாச்சலப் பிரதேசத்திற்கு பொருந்தும் (2). சரியான குறியீடு: a-3, b-4, c-1, d-2.",
+            "why_a_en": "Matches all four specific gubernatorial special responsibilities correctly.",
+            "why_a_ta": "நான்கு குறிப்பிட்ட ஆளுநர் சிறப்புப் பொறுப்புகளையும் சரியாகப் பொருத்துகிறது.",
+            "why_b_en": "Swaps Nagaland and Maharashtra.",
+            "why_b_ta": "நாகாலாந்து மற்றும் மகாராஷ்டிராவை மாற்றுகிறது.",
+            "why_c_en": "Swaps Maharashtra and Sikkim.",
+            "why_c_ta": "மகாராஷ்டிரா மற்றும் சிக்கிமை மாற்றுகிறது.",
+            "why_d_en": "Swaps Nagaland and Arunachal Pradesh.",
+            "why_d_ta": "நாகாலாந்து மற்றும் அருணாச்சலப் பிரதேசத்தை மாற்றுகிறது.",
+            "tip_en": "Pay close attention: Nagaland (internal disturbance) vs Arunachal (law & order consultation).",
+            "tip_ta": "கவனமாக கவனியுங்கள்: நாகாலாந்து (உள் அமைதியின்மை) vs அருணாச்சல் (சட்டம் ஒழுங்கு ஆலோசனை).",
+            "fact_en": "In all these cases, the Governor acts subject to directions of the President.",
+            "fact_ta": "இந்த அனைத்து நிகழ்வுகளிலும் ஆளுநர் குடியரசுத் தலைவரின் வழிகாட்டுதலுக்கு உட்பட்டே செயல்படுகிறார்."
+        },
+        # 8
+        {
+            "subtopic": "Protected Regions Matching",
+            "stem_en": "Match List-I (Regions) with List-II (States) and select the correct answer using the codes given below:\nList-I:\na) Vidarbha and Marathwada\nb) Saurashtra and Kutch\nc) Tuensang District\nd) Kalyana Karnataka\nList-II:\n1. Gujarat\n2. Karnataka\n3. Maharashtra\n4. Nagaland",
+            "stem_ta": "பட்டியல்-I-ஐ (பிராந்தியங்கள்) பட்டியல்-II-உடன் (மாநிலங்கள்) பொருத்தி, கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\na) விதர்பா மற்றும் மராத்வாடா\nb) சௌராஷ்டிரா மற்றும் கட்ச்\nc) துயேன்சாங் மாவட்டம்\nd) கல்யாண கர்நாடகா\nபட்டியல்-II:\n1. குஜராத்\n2. கர்நாடகா\n3. மகாராஷ்டிரா\n4. நாகாலாந்து",
+            "options": [
+                ("a-3, b-1, c-4, d-2", "a-3, b-1, c-4, d-2"),
+                ("a-1, b-3, c-4, d-2", "a-1, b-3, c-4, d-2"),
+                ("a-3, b-4, c-1, d-2", "a-3, b-4, c-1, d-2"),
+                ("a-2, b-1, c-4, d-3", "a-2, b-1, c-4, d-3")
+            ],
+            "correct_key": "A",
+            "exp_en": "Vidarbha and Marathwada are in Maharashtra (3). Saurashtra and Kutch are in Gujarat (1). Tuensang District is in Nagaland (4). Kalyana Karnataka is in Karnataka (2). Correct code is a-3, b-1, c-4, d-2.",
+            "exp_ta": "விதர்பா மற்றும் மராத்வாடா மகாராஷ்டிராவில் உள்ளன (3). சௌராஷ்டிரா மற்றும் கட்ச் குஜராத்தில் உள்ளன (1). துயேன்சாங் மாவட்டம் நாகாலாந்தில் உள்ளது (4). கல்யாண கர்நாடகா கர்நாடகாவில் உள்ளது (2). சரியான குறியீடு: a-3, b-1, c-4, d-2.",
+            "why_a_en": "Matches all four geographical regions with their constitutional parent states.",
+            "why_a_ta": "நான்கு புவியியல் பகுதிகளையும் அவற்றின் அரசியலமைப்புத் தாய் மாநிலங்களுடன் துல்லியமாகப் பொருத்துகிறது.",
+            "why_b_en": "Swaps Maharashtra and Gujarat.",
+            "why_b_ta": "மகாராஷ்டிரா மற்றும் குஜராத்தை மாற்றுகிறது.",
+            "why_c_en": "Swaps Gujarat and Nagaland.",
+            "why_c_ta": "குஜராத் மற்றும் நாகாலாந்தை மாற்றுகிறது.",
+            "why_d_en": "Assigns Vidarbha to Karnataka.",
+            "why_d_ta": "விதர்பாவை கர்நாடகாவிற்கு தவறாக ஒதுக்குகிறது.",
+            "tip_en": "These regions have explicit regional boards or councils established under Part XXI.",
+            "tip_ta": "இப்பகுதிகள் பகுதி XXI-ன் கீழ் நிறுவப்பட்ட பிரத்யேக பிராந்திய வாரியங்கள் அல்லது குழுக்களைக் கொண்டுள்ளன.",
+            "fact_en": "Tuensang was granted a separate administration for 10 years after 1963.",
+            "fact_ta": "1963-க்குப் பிறகு துயேன்சாங்கிற்கு 10 ஆண்டுகளுக்கு தனி நிர்வாகம் வழங்கப்பட்டது."
+        },
+        # 9
+        {
+            "subtopic": "Landmark Cases Matching",
+            "stem_en": "Match List-I (Landmark Cases) with List-II (Constitutional Focus) and select the correct answer using the codes given below:\nList-I:\na) P. Sambamurthy v. State of AP (1987)\nb) R.C. Poudyal v. Union of India (1994)\nc) In Re: Article 370 (2023)\nd) Shamsher Singh v. State of Punjab (1974)\nList-II:\n1. Sangha seat & Article 371F judicial review\n2. Sovereign integration & temporary nature of Art 370\n3. Invalidation of Article 371D(5) tribunal veto\n4. Governor's special responsibility and discretionary powers",
+            "stem_ta": "பட்டியல்-I-ஐ (மைல்கல் வழக்குகள்) பட்டியல்-II-உடன் (அரசியலமைப்பு முக்கியத்துவம்) பொருத்தி, கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\na) பி. சாம்பமூர்த்தி எதிர் ஆந்திரப் பிரதேச அரசு (1987)\nb) ஆர்.சி. பௌடியால் எதிர் இந்திய ஒன்றியம் (1994)\nc) சரத்து 370 மறுஆய்வு வழக்கு (2023)\nd) ஷம்ஷேர் சிங் எதிர் பஞ்சாப் அரசு (1974)\nபட்டியல்-II:\n1. சங்கா தொகுதி & சரத்து 371F நீதித்துறை மறுஆய்வு\n2. இறையாண்மை ஒருங்கிணைப்பு & சரத்து 370-ன் தற்காலிகத் தன்மை\n3. சரத்து 371D(5) தீர்ப்பாய ரத்து அதிகாரத்தை செல்லாததாக்குதல்\n4. ஆளுநரின் சிறப்புப் பொறுப்பு மற்றும் விருப்புரிமை அதிகாரங்கள்",
+            "options": [
+                ("a-3, b-1, c-2, d-4", "a-3, b-1, c-2, d-4"),
+                ("a-1, b-3, c-2, d-4", "a-1, b-3, c-2, d-4"),
+                ("a-3, b-2, c-1, d-4", "a-3, b-2, c-1, d-4"),
+                ("a-4, b-1, c-2, d-3", "a-4, b-1, c-2, d-3")
+            ],
+            "correct_key": "A",
+            "exp_en": "P. Sambamurthy invalidated Article 371D(5) (3). RC Poudyal upheld Sikkim's Sangha seat under Article 371F (1). In Re: Article 370 affirmed the abrogation and temporary status (2). Shamsher Singh analyzed the Governor's special responsibilities (4). Correct code is a-3, b-1, c-2, d-4.",
+            "exp_ta": "பி. சாம்பமூர்த்தி சரத்து 371D(5)-ஐ ரத்து செய்தது (3). ஆர்.சி. பௌடியால் சரத்து 371F-ன் கீழ் சிக்கிமின் சங்கா தொகுதியை உறுதி செய்தது (1). சரத்து 370 வழக்கு அதன் ரத்து மற்றும் தற்காலிகத் தன்மையை உறுதி செய்தது (2). ஷம்ஷேர் சிங் ஆளுநரின் சிறப்புப் பொறுப்புகளை பகுப்பாய்வு செய்தது (4). சரியான குறியீடு: a-3, b-1, c-2, d-4.",
+            "why_a_en": "Directly matches each landmark judgment to its specific legal subject.",
+            "why_a_ta": "ஒவ்வொரு மைல்கல் தீர்ப்பையும் அதன் குறிப்பிட்ட சட்டப் பாடத்துடன் நேரடியாகப் பொருத்துகிறது.",
+            "why_b_en": "Swaps Sambamurthy and Poudyal.",
+            "why_b_ta": "சாம்பமூர்த்தி மற்றும் பௌடியால் வழக்குகளை மாற்றுகிறது.",
+            "why_c_en": "Swaps Poudyal and Article 370 case.",
+            "why_c_ta": "பௌடியால் மற்றும் சரத்து 370 வழக்குகளை மாற்றுகிறது.",
+            "why_d_en": "Assigns Shamsher Singh to Sambamurthy.",
+            "why_d_ta": "ஷம்ஷேர் சிங் வழக்கை சாம்பமூர்த்திக்கு தவறாக ஒதுக்குகிறது.",
+            "tip_en": "Sambamurthy = 371D; Poudyal = 371F; 2023 Bench = 370; Shamsher Singh = Governor discretion.",
+            "tip_ta": "சாம்பமூர்த்தி = 371D; பௌடியால் = 371F; 2023 அமர்வு = 370; ஷம்ஷேர் சிங் = ஆளுநர் விருப்புரிமை.",
+            "fact_en": "All these cases represent Constitution Bench decisions of 5 or 7 judges.",
+            "fact_ta": "இந்த அனைத்து வழக்குகளும் 5 அல்லது 7 நீதிபதிகள் கொண்ட அரசியலமைப்பு அமர்வுத் தீர்ப்புகளாகும்."
+        },
+        # 10
+        {
+            "subtopic": "Accords and Agreements Matching",
+            "stem_en": "Match List-I (Historic Accords/Formulas) with List-II (Associated States) and select the correct answer using the codes given below:\nList-I:\na) 16-Point Agreement (1960)\nb) Six-Point Formula (1973)\nc) Mizo Peace Accord (1986)\nd) Instrument of Accession (1947)\nList-II:\n1. Andhra Pradesh\n2. Jammu and Kashmir\n3. Nagaland\n4. Mizoram",
+            "stem_ta": "பட்டியல்-I-ஐ (வரலாற்று ஒப்பந்தங்கள்/சூத்திரங்கள்) பட்டியல்-II-உடன் (தொடர்புடைய மாநிலங்கள்) பொருத்தி, கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\na) 16 அம்ச ஒப்பந்தம் (1960)\nb) ஆறு அம்ச சூத்திரம் (1973)\nc) மிசோ அமைதி ஒப்பந்தம் (1986)\nd) இணைப்பு ஆவணம் (1947)\nபட்டியல்-II:\n1. ஆந்திரப் பிரதேசம்\n2. ஜம்மு மற்றும் காஷ்மீர்\n3. நாகாலாந்து\n4. மிசோரம்",
+            "options": [
+                ("a-3, b-1, c-4, d-2", "a-3, b-1, c-4, d-2"),
+                ("a-1, b-3, c-4, d-2", "a-1, b-3, c-4, d-2"),
+                ("a-3, b-4, c-1, d-2", "a-3, b-4, c-1, d-2"),
+                ("a-2, b-1, c-4, d-3", "a-2, b-1, c-4, d-3")
+            ],
+            "correct_key": "A",
+            "exp_en": "16-Point Agreement led to Nagaland statehood (3). Six-Point Formula led to Article 371D in Andhra Pradesh (1). Mizo Peace Accord led to Article 371G in Mizoram (4). Instrument of Accession led to Article 370 in J&K (2). Correct code is a-3, b-1, c-4, d-2.",
+            "exp_ta": "16 அம்ச ஒப்பந்தம் நாகாலாந்து மாநில அந்தஸ்திற்கு வழிவகுத்தது (3). ஆறு அம்ச சூத்திரம் ஆந்திராவில் சரத்து 371D-க்கு வழிவகுத்தது (1). மிசோ அமைதி ஒப்பந்தம் மிசோரமில் சரத்து 371G-க்கு வழிவகுத்தது (4). இணைப்பு ஆவணம் ஜம்மு காஷ்மீரில் சரத்து 370-க்கு வழிவகுத்தது (2). சரியான குறியீடு: a-3, b-1, c-4, d-2.",
+            "why_a_en": "Matches all four foundational accords to their respective states.",
+            "why_a_ta": "நான்கு அடிப்படை ஒப்பந்தங்களையும் அவற்றின் தொடர்புடைய மாநிலங்களுடன் சரியாகப் பொருத்துகிறது.",
+            "why_b_en": "Swaps Nagaland and Andhra Pradesh.",
+            "why_b_ta": "நாகாலாந்து மற்றும் ஆந்திராவை மாற்றுகிறது.",
+            "why_c_en": "Swaps Andhra Pradesh and Mizoram.",
+            "why_c_ta": "ஆந்திரப் பிரதேசம் மற்றும் மிசோரமை மாற்றுகிறது.",
+            "why_d_en": "Assigns J&K to 16-point agreement.",
+            "why_d_ta": "ஜம்மு காஷ்மீரை 16 அம்ச ஒப்பந்தத்திற்கு தவறாக ஒதுக்குகிறது.",
+            "tip_en": "16-Point = Nagaland; Six-Point = Andhra; Mizo Accord = Mizoram; Accession = J&K.",
+            "tip_ta": "16 அம்ச = நாகாலாந்து; ஆறு அம்ச = ஆந்திரா; மிசோ ஒப்பந்தம் = மிசோரம்; இணைப்பு ஆவணம் = ஜம்மு காஷ்மீர்.",
+            "fact_en": "These political accords formed the direct catalyst for constitutional amendments in Part XXI.",
+            "fact_ta": "இந்த அரசியல் ஒப்பந்தங்கள் பகுதி XXI-ல் அரசியலமைப்புத் திருத்தங்களுக்கான நேரடி உந்துசக்தியாக அமைந்தன."
+        },
+        # 11
+        {
+            "subtopic": "Articles and Primary Beneficiaries Matching",
+            "stem_en": "Match List-I (Constitutional Articles) with List-II (Primary Beneficiary Feature) and select the correct answer using the codes given below:\nList-I:\na) Article 371A\nb) Article 371F\nc) Article 371J\nd) Article 371B\nList-II:\n1. Bhutia-Lepcha and Sangha communities\n2. Sixth Schedule tribal MLAs of State Assembly\n3. Naga customary law and land owners\n4. Domiciles of backward Hyderabad-Karnataka districts",
+            "stem_ta": "பட்டியல்-I-ஐ (அரசியலமைப்புச் சரத்துகள்) பட்டியல்-II-உடன் (முதன்மைப் பயனாளிகள் அம்சம்) பொருத்தி, கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\na) சரத்து 371A\nb) சரத்து 371F\nc) சரத்து 371J\nd) சரத்து 371B\nபட்டியல்-II:\n1. பூட்டியா-லெப்சா மற்றும் சங்கா சமூகங்கள்\n2. மாநில சட்டமன்றத்தின் ஆறாவது அட்டவணை பழங்குடியின எம்.எல்.ஏ.க்கள்\n3. நாகா மரபுச் சட்டம் மற்றும் நில உரிமையாளர்கள்\n4. பின்தங்கிய ஹைதராபாத்-கர்நாடகா மாவட்டங்களில் வசிப்பவர்கள்",
+            "options": [
+                ("a-3, b-1, c-4, d-2", "a-3, b-1, c-4, d-2"),
+                ("a-1, b-3, c-4, d-2", "a-1, b-3, c-4, d-2"),
+                ("a-3, b-4, c-1, d-2", "a-3, b-4, c-1, d-2"),
+                ("a-2, b-1, c-4, d-3", "a-2, b-1, c-4, d-3")
+            ],
+            "correct_key": "A",
+            "exp_en": "Article 371A protects Naga customary law & land (3). Article 371F protects Bhutia-Lepchas & Sangha (1). Article 371J benefits Hyderabad-Karnataka residents (4). Article 371B empowers Sixth Schedule tribal MLAs of Assam (2). Correct code is a-3, b-1, c-4, d-2.",
+            "exp_ta": "சரத்து 371A நாகா மரபுச் சட்டம் மற்றும் நிலத்தைப் பாதுகாக்கிறது (3). சரத்து 371F பூட்டியா-லெப்சாக்கள் மற்றும் சங்காவைப் பாதுகாக்கிறது (1). சரத்து 371J ஹைதராபாத்-கர்நாடகாவில் வசிப்பவர்களுக்குப் பயனளிக்கிறது (4). சரத்து 371B அசாமின் ஆறாவது அட்டவணை பழங்குடியின எம்.எல்.ஏ.க்களுக்கு அதிகாரமளிக்கிறது (2). சரியான குறியீடு: a-3, b-1, c-4, d-2.",
+            "why_a_en": "Matches all four articles with their protected target populations.",
+            "why_a_ta": "நான்கு சரத்துகளையும் அவற்றின் பாதுகாக்கப்பட்ட இலக்கு மக்களுடன் துல்லியமாகப் பொருத்துகிறது.",
+            "why_b_en": "Swaps 371A and 371F.",
+            "why_b_ta": "371A மற்றும் 371F-ஐ மாற்றுகிறது.",
+            "why_c_en": "Swaps 371F and 371J.",
+            "why_c_ta": "371F மற்றும் 371J-ஐ மாற்றுகிறது.",
+            "why_d_en": "Swaps 371A and 371B.",
+            "why_d_ta": "371A மற்றும் 371B-ஐ மாற்றுகிறது.",
+            "tip_en": "Identify the distinct community or geographical target for each article in Part XXI.",
+            "tip_ta": "பகுதி XXI-ல் உள்ள ஒவ்வொரு சரத்திற்குமான தனித்துவமான சமூகம் அல்லது புவியியல் இலக்கை அடையாளம் காணவும்.",
+            "fact_en": "Affirmative action under Part XXI includes both cultural autonomy and developmental quotas.",
+            "fact_ta": "பகுதி XXI-ன் கீழான சாதகமான நடவடிக்கை கலாச்சார சுயாட்சி மற்றும் வளர்ச்சி இடஒதுக்கீடு ஆகிய இரண்டையும் உள்ளடக்கியது."
+        },
+        # 12
+        {
+            "subtopic": "Amendments and Years Matching",
+            "stem_en": "Match List-I (Constitutional Amendment Acts) with List-II (Year of Enactment) and select the correct answer using the codes given below:\nList-I:\na) 13th Amendment Act\nb) 36th Amendment Act\nc) 53rd Amendment Act\nd) 98th Amendment Act\nList-II:\n1. 1975\n2. 2012\n3. 1962\n4. 1986",
+            "stem_ta": "பட்டியல்-I-ஐ (அரசியலமைப்புத் திருத்தச் சட்டங்கள்) பட்டியல்-II-உடன் (இயற்றப்பட்ட ஆண்டு) பொருத்தி, கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\na) 13வது திருத்தச் சட்டம்\nb) 36வது திருத்தச் சட்டம்\nc) 53வது திருத்தச் சட்டம்\nd) 98வது திருத்தச் சட்டம்\nபட்டியல்-II:\n1. 1975\n2. 2012\n3. 1962\n4. 1986",
+            "options": [
+                ("a-3, b-1, c-4, d-2", "a-3, b-1, c-4, d-2"),
+                ("a-1, b-3, c-4, d-2", "a-1, b-3, c-4, d-2"),
+                ("a-3, b-4, c-1, d-2", "a-3, b-4, c-1, d-2"),
+                ("a-2, b-1, c-4, d-3", "a-2, b-1, c-4, d-3")
+            ],
+            "correct_key": "A",
+            "exp_en": "13th Amendment was passed in 1962 (3). 36th Amendment was passed in 1975 (1). 53rd Amendment was passed in 1986 (4). 98th Amendment was passed in 2012 (2). Correct code is a-3, b-1, c-4, d-2.",
+            "exp_ta": "13வது திருத்தம் 1962-ல் நிறைவேற்றப்பட்டது (3). 36வது திருத்தம் 1975-ல் நிறைவேற்றப்பட்டது (1). 53வது திருத்தம் 1986-ல் நிறைவேற்றப்பட்டது (4). 98வது திருத்தம் 2012-ல் நிறைவேற்றப்பட்டது (2). சரியான குறியீடு: a-3, b-1, c-4, d-2.",
+            "why_a_en": "Matches all four amendments to their exact calendar enactment years.",
+            "why_a_ta": "நான்கு திருத்தங்களையும் அவற்றின் சரியான இயற்றப்பட்ட ஆண்டுகளோடு பொருத்துகிறது.",
+            "why_b_en": "Swaps 1962 and 1975.",
+            "why_b_ta": "1962 மற்றும் 1975-ஐ மாற்றுகிறது.",
+            "why_c_en": "Swaps 1975 and 1986.",
+            "why_c_ta": "1975 மற்றும் 1986-ஐ மாற்றுகிறது.",
+            "why_d_en": "Assigns 2012 to 13th Amendment.",
+            "why_d_ta": "2012-ஐ 13வது திருத்தத்திற்கு தவறாக ஒதுக்குகிறது.",
+            "tip_en": "Key years: 1962 (Nagaland), 1975 (Sikkim), 1986 (Mizoram), 2012 (Karnataka).",
+            "tip_ta": "முக்கிய ஆண்டுகள்: 1962 (நாகாலாந்து), 1975 (சிக்கிம்), 1986 (மிசோரம்), 2012 (கர்நாடகா).",
+            "fact_en": "The span between 13th and 98th amendments is exactly 50 years (1962 to 2012).",
+            "fact_ta": "13வது மற்றும் 98வது திருத்தங்களுக்கு இடையிலான இடைவெளி சரியாக 50 ஆண்டுகள் (1962 முதல் 2012 வரை)."
+        },
+        # 13
+        {
+            "subtopic": "Kalyana Karnataka Districts Matching",
+            "stem_en": "Match List-I (Districts of Kalyana Karnataka) with List-II (Key Administrative Feature) and select the correct answer using the codes given below:\nList-I:\na) Kalaburagi (Gulbarga)\nb) Bidar\nc) Vijayanagara\nd) Ballari (Bellary)\nList-II:\n1. Northernmost district bordering Maharashtra and Telangana\n2. Newest 7th district carved out in 2021\n3. Regional headquarters of the Development Board\n4. Historic mining and commercial district",
+            "stem_ta": "பட்டியல்-I-ஐ (கல்யாண கர்நாடகாவின் மாவட்டங்கள்) பட்டியல்-II-உடன் (முக்கிய நிர்வாக அம்சம்) பொருத்தி, கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\na) கலபுரகி (குல்பர்கா)\nb) பீதர்\nc) விஜயநகரா\nd) பல்லாரி (பெல்லாரி)\nபட்டியல்-II:\n1. மகாராஷ்டிரா மற்றும் தெலங்கானாவை எல்லையாகக் கொண்ட வடகோடி மாவட்டம்\n2. 2021-ல் உருவாக்கப்பட்ட புதிய 7வது மாவட்டம்\n3. வளர்ச்சி வாரியத்தின் பிராந்திய தலைமை அலுவலகம்\n4. வரலாற்றுச் சிறப்புமிக்க சுரங்க மற்றும் வணிக மாவட்டம்",
+            "options": [
+                ("a-3, b-1, c-2, d-4", "a-3, b-1, c-2, d-4"),
+                ("a-1, b-3, c-2, d-4", "a-1, b-3, c-2, d-4"),
+                ("a-3, b-2, c-1, d-4", "a-3, b-2, c-1, d-4"),
+                ("a-4, b-1, c-2, d-3", "a-4, b-1, c-2, d-3")
+            ],
+            "correct_key": "A",
+            "exp_en": "Kalaburagi is the regional headquarters (3). Bidar is the northernmost border district (1). Vijayanagara is the 7th district created in 2021 (2). Ballari is the mining and commercial district (4). Correct code is a-3, b-1, c-2, d-4.",
+            "exp_ta": "கலபுரகி பிராந்திய தலைமையகம் ஆகும் (3). பீதர் வடகோடி எல்லை மாவட்டம் (1). விஜயநகரா 2021-ல் உருவாக்கப்பட்ட 7வது மாவட்டம் (2). பல்லாரி சுரங்க மற்றும் வணிக மாவட்டம் (4). சரியான குறியீடு: a-3, b-1, c-2, d-4.",
+            "why_a_en": "Matches all four districts to their geographic and administrative traits.",
+            "why_a_ta": "நான்கு மாவட்டங்களையும் அவற்றின் புவியியல் மற்றும் நிர்வாகப் பண்புகளோடு துல்லியமாகப் பொருத்துகிறது.",
+            "why_b_en": "Swaps Kalaburagi and Bidar.",
+            "why_b_ta": "கலபுரகி மற்றும் பீதரை மாற்றுகிறது.",
+            "why_c_en": "Swaps Bidar and Vijayanagara.",
+            "why_c_ta": "பீதர் மற்றும் விஜயநகராவை மாற்றுகிறது.",
+            "why_d_en": "Assigns Ballari to headquarters.",
+            "why_d_ta": "பல்லாரியை தலைமையகத்திற்கு தவறாக ஒதுக்குகிறது.",
+            "tip_en": "Kalaburagi is the administrative nerve center of Kalyana Karnataka.",
+            "tip_ta": "கலபுரகி கல்யாண கர்நாடகாவின் நிர்வாக நரம்பு மையமாகும்.",
+            "fact_en": "Vijayanagara has its district headquarters at Hosapete.",
+            "fact_ta": "விஜயநகரா தனது மாவட்டத் தலைமையகத்தை ஹோஸ்பேட்டேயில் கொண்டுள்ளது."
+        },
+        # 14
+        {
+            "subtopic": "Key Constitutional Terminology Matching",
+            "stem_en": "Match List-I (Constitutional Terms in Part XXI) with List-II (Meaning/Application) and select the correct answer using the codes given below:\nList-I:\na) Non-obstante clause\nb) Individual judgment\nc) Legislative veto\nd) Regional Council\nList-II:\n1. Prior consultation with ministers is required but Governor makes the decision\n2. Power of State Assembly to block application of Parliamentary laws\n3. Overriding phrase ('Notwithstanding anything in this Constitution')\n4. Specialized representative administrative body for Tuensang district",
+            "stem_ta": "பட்டியல்-I-ஐ (பகுதி XXI-ல் உள்ள அரசியலமைப்புச் சொற்கள்) பட்டியல்-II-உடன் (பொருள்/பயன்பாடு) பொருத்தி, கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\na) முரண்பாடற்ற விதி (Non-obstante clause)\nb) தனிப்பட்ட முடிவு (Individual judgment)\nc) சட்டமன்ற வீட்டோ (Legislative veto)\nd) பிராந்தியக் குழு (Regional Council)\nபட்டியல்-II:\n1. அமைச்சர்களுடன் முன்கூட்டிய ஆலோசனை தேவை, ஆனால் ஆளுநரே முடிவெடுக்கிறார்\n2. நாடாளுமன்றச் சட்டங்கள் மாநிலத்திற்குப் பொருந்துவதைத் தடுக்கும் சட்டமன்ற அதிகாரம்\n3. மேலெழுதும் சொற்றொடர் ('இந்த அரசியலமைப்பில் என்ன கூறப்பட்டிருந்தாலும்')\n4. துயேன்சாங் மாவட்டத்திற்கான சிறப்புப் பிரதிநிதித்துவ நிர்வாக அமைப்பு",
+            "options": [
+                ("a-3, b-1, c-2, d-4", "a-3, b-1, c-2, d-4"),
+                ("a-1, b-3, c-2, d-4", "a-1, b-3, c-2, d-4"),
+                ("a-3, b-2, c-1, d-4", "a-3, b-2, c-1, d-4"),
+                ("a-4, b-1, c-2, d-3", "a-4, b-1, c-2, d-3")
+            ],
+            "correct_key": "A",
+            "exp_en": "Non-obstante clause means 'notwithstanding anything' (3). Individual judgment means consultation required but Governor decides (1). Legislative veto means assembly power to block central laws (2). Regional Council was the Tuensang body (4). Correct code is a-3, b-1, c-2, d-4.",
+            "exp_ta": "முரண்பாடற்ற விதி என்பது 'என்ன கூறப்பட்டிருந்தாலும்' என்பதைக் குறிக்கும் (3). தனிப்பட்ட முடிவு என்பது ஆலோசனை தேவை ஆனால் ஆளுநரே முடிவெடுப்பார் என்பதாகும் (1). சட்டமன்ற வீட்டோ என்பது மத்திய சட்டங்களைத் தடுக்கும் சட்டமன்ற அதிகாரம் (2). பிராந்தியக் குழு என்பது துயேன்சாங் அமைப்பு (4). சரியான குறியீடு: a-3, b-1, c-2, d-4.",
+            "why_a_en": "Matches all four technical constitutional terms to their exact legal definitions.",
+            "why_a_ta": "நான்கு தொழில்நுட்ப அரசியலமைப்பு சொற்களையும் அவற்றின் துல்லியமான சட்ட விளக்கங்களோடு பொருத்துகிறது.",
+            "why_b_en": "Swaps non-obstante clause and individual judgment.",
+            "why_b_ta": "முரண்பாடற்ற விதி மற்றும் தனிப்பட்ட முடிவை மாற்றுகிறது.",
+            "why_c_en": "Swaps individual judgment and legislative veto.",
+            "why_c_ta": "தனிப்பட்ட முடிவு மற்றும் சட்டமன்ற வீட்டோவை மாற்றுகிறது.",
+            "why_d_en": "Assigns Regional Council to non-obstante clause.",
+            "why_d_ta": "பிராந்தியக் குழுவை முரண்பாடற்ற விதியோடு தவறாக இணைக்கிறது.",
+            "tip_en": "Mastering these legal terms is vital for high-scoring precision in TNPSC Group 1 Polity.",
+            "tip_ta": "இந்த சட்டச் சொற்களைக் கற்றுக்கொள்வது TNPSC குரூப் 1 பாலிட்டியில் அதிக மதிப்பெண் பெற மிக முக்கியமானது.",
+            "fact_en": "The non-obstante clause in Article 371D(10) is one of the strongest in the Indian Constitution.",
+            "fact_ta": "சரத்து 371D(10)-ல் உள்ள முரண்பாடற்ற விதி இந்திய அரசியலமைப்பிலேயே மிகவும் வலுவான ஒன்றாகும்."
+        },
+        # 15
+        {
+            "subtopic": "Statehood Acts Matching",
+            "stem_en": "Match List-I (Statehood Acts) with List-II (Year of Enactment) and select the correct answer using the codes given below:\nList-I:\na) State of Nagaland Act\nb) North-Eastern Areas (Reorganisation) Act\nc) State of Mizoram Act\nd) State of Arunachal Pradesh Act\nList-II:\n1. 1971\n2. 1986\n3. 1962\n4. 1986",
+            "stem_ta": "பட்டியல்-I-ஐ (மாநில அந்தஸ்துச் சட்டங்கள்) பட்டியல்-II-உடன் (இயற்றப்பட்ட ஆண்டு) பொருத்தி, கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\na) நாகாலாந்து மாநிலச் சட்டம்\nb) வடகிழக்குப் பகுதிகள் (மறுசீரமைப்பு) சட்டம்\nc) மிசோரம் மாநிலச் சட்டம்\nd) அருணாச்சலப் பிரதேச மாநிலச் சட்டம்\nபட்டியல்-II:\n1. 1971\n2. 1986\n3. 1962\n4. 1986",
+            "options": [
+                ("a-3, b-1, c-2, d-4", "a-3, b-1, c-2, d-4"),
+                ("a-1, b-3, c-2, d-4", "a-1, b-3, c-2, d-4"),
+                ("a-3, b-2, c-1, d-4", "a-3, b-2, c-1, d-4"),
+                ("a-4, b-1, c-2, d-3", "a-4, b-1, c-2, d-3")
+            ],
+            "correct_key": "A",
+            "exp_en": "State of Nagaland Act was passed in 1962 (3). North-Eastern Areas (Reorganisation) Act was in 1971 (1). State of Mizoram Act was in 1986 (2). State of Arunachal Pradesh Act was in 1986 (4). Correct code is a-3, b-1, c-2, d-4.",
+            "exp_ta": "நாகாலாந்து மாநிலச் சட்டம் 1962-ல் நிறைவேற்றப்பட்டது (3). வடகிழக்குப் பகுதிகள் (மறுசீரமைப்பு) சட்டம் 1971-ல் (1). மிசோரம் மாநிலச் சட்டம் 1986-ல் (2). அருணாச்சலப் பிரதேச மாநிலச் சட்டம் 1986-ல் (4). சரியான குறியீடு: a-3, b-1, c-2, d-4.",
+            "why_a_en": "Matches all four parliamentary reorganisation acts with their correct years.",
+            "why_a_ta": "நான்கு நாடாளுமன்ற மறுசீரமைப்புச் சட்டங்களையும் அவற்றின் சரியான ஆண்டுகளோடு பொருத்துகிறது.",
+            "why_b_en": "Swaps 1962 and 1971.",
+            "why_b_ta": "1962 மற்றும் 1971-ஐ மாற்றுகிறது.",
+            "why_c_en": "Swaps 1971 and 1986.",
+            "why_c_ta": "1971 மற்றும் 1986-ஐ மாற்றுகிறது.",
+            "why_d_en": "Assigns 1986 to Nagaland.",
+            "why_d_ta": "1986-ஐ நாகாலாந்திற்கு தவறாக ஒதுக்குகிறது.",
+            "tip_en": "Parliament exercises power under Articles 2, 3, and 4 to enact these Statehood Acts.",
+            "tip_ta": "நாடாளுமன்றம் சரத்துகள் 2, 3 மற்றும் 4-ன் கீழ் உள்ள அதிகாரத்தைப் பயன்படுத்தி இந்த மாநில அந்தஸ்துச் சட்டங்களை இயற்றுகிறது.",
+            "fact_en": "Both Mizoram and Arunachal Pradesh statehood bills were passed in late 1986 and took effect in February 1987.",
+            "fact_ta": "மிசோரம் மற்றும் அருணாச்சல் மாநில அந்தஸ்து மசோதாக்கள் 1986 இறுதியில் நிறைவேற்றப்பட்டு 1987 பிப்ரவரியில் நடைமுறைக்கு வந்தன."
+        },
+        # 16
+        {
+            "subtopic": "Specific Clauses of Article 371 Series Matching",
+            "stem_en": "Match List-I (Specific Constitutional Clauses) with List-II (Core Subject) and select the correct answer using the codes given below:\nList-I:\na) Article 371A(1)(a)\nb) Article 371A(2)\nc) Article 371D(3)\nd) Article 371F(k)\nList-II:\n1. Continuance of pre-merger laws of Sikkim\n2. Establishment of Administrative Tribunal for Andhra Pradesh\n3. Regional Council administration for Tuensang district\n4. Immunity for Naga religious practices and customary laws",
+            "stem_ta": "பட்டியல்-I-ஐ (குறிப்பிட்ட அரசியலமைப்புப் பிரிவுகள்) பட்டியல்-II-உடன் (முக்கியப் பொருள்) பொருத்தி, கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\na) சரத்து 371A(1)(a)\nb) சரத்து 371A(2)\nc) சரத்து 371D(3)\nd) சரத்து 371F(k)\nபட்டியல்-II:\n1. சிக்கிமின் இணைப்பிற்கு முந்தைய பழைய சட்டங்களின் தொடர்ச்சி\n2. ஆந்திரப் பிரதேசத்திற்கான நிர்வாகத் தீர்ப்பாயத்தை நிறுவுதல்\n3. துயேன்சாங் மாவட்டத்திற்கான பிராந்தியக் குழு நிர்வாகம்\n4. நாகா மத நடைமுறைகள் மற்றும் மரபுச் சட்டங்களுக்கான சட்ட விலக்கு பாதுகாப்பு",
+            "options": [
+                ("a-4, b-3, c-2, d-1", "a-4, b-3, c-2, d-1"),
+                ("a-3, b-4, c-2, d-1", "a-3, b-4, c-2, d-1"),
+                ("a-4, b-2, c-3, d-1", "a-4, b-2, c-3, d-1"),
+                ("a-1, b-3, c-2, d-4", "a-1, b-3, c-2, d-4")
+            ],
+            "correct_key": "A",
+            "exp_en": "371A(1)(a) provides immunity for Naga customs (4). 371A(2) sets up the Tuensang regional council (3). 371D(3) provides for the Administrative Tribunal (2). 371F(k) provides for continuation of Sikkim pre-merger laws (1). Correct code is a-4, b-3, c-2, d-1.",
+            "exp_ta": "சரத்து 371A(1)(a) நாகா மரபுகளுக்கு சட்ட விலக்கு பாதுகாப்பை வழங்குகிறது (4). 371A(2) துயேன்சாங் பிராந்தியக் குழுவை அமைக்கிறது (3). 371D(3) நிர்வாகத் தீர்ப்பாயத்திற்கு வகை செய்கிறது (2). 371F(k) சிக்கிமின் பழைய சட்டங்களின் தொடர்ச்சிக்கு வகை செய்கிறது (1). சரியான குறியீடு: a-4, b-3, c-2, d-1.",
+            "why_a_en": "Matches all four specific constitutional sub-clauses accurately.",
+            "why_a_ta": "நான்கு குறிப்பிட்ட அரசியலமைப்பு உட்பிரிவுகளையும் துல்லியமாகப் பொருத்துகிறது.",
+            "why_b_en": "Swaps 371A(1)(a) and 371A(2).",
+            "why_b_ta": "371A(1)(a) மற்றும் 371A(2)-ஐ மாற்றுகிறது.",
+            "why_c_en": "Swaps 371A(2) and 371D(3).",
+            "why_c_ta": "371A(2) மற்றும் 371D(3)-ஐ மாற்றுகிறது.",
+            "why_d_en": "Assigns Sikkim law continuation to 371A.",
+            "why_d_ta": "சிக்கிம் சட்டத் தொடர்ச்சியை 371A-க்கு தவறாக ஒதுக்குகிறது.",
+            "tip_en": "Clause-level accuracy is a distinguishing mark of top percentile TNPSC Group 1 aspirants.",
+            "tip_ta": "பிரிவு அளவிலான துல்லியம் TNPSC குரூப் 1 முதல் நிலைத் தேர்வர்களின் தனித்துவமான அடையாளமாகும்.",
+            "fact_en": "Article 371F contains clauses from (a) to (n), making it one of the longest articles in Part XXI.",
+            "fact_ta": "சரத்து 371F (a) முதல் (n) வரையிலான பிரிவுகளைக் கொண்டு பகுதி XXI-ன் மிக நீண்ட சரத்துகளில் ஒன்றாக உள்ளது."
+        },
+        # 17
+        {
+            "subtopic": "Historic Figures Matching",
+            "stem_en": "Match List-I (Historic Figures) with List-II (Associated State/Accord) and select the correct answer using the codes given below:\nList-I:\na) Maharaja Hari Singh\nb) Dr. Imkongliba Ao\nc) Laldenga\nd) Dr. D.M. Nanjundappa\nList-II:\n1. Mizo Peace Accord (Mizoram)\n2. High Power Committee on Regional Imbalance (Karnataka)\n3. Instrument of Accession (Jammu and Kashmir)\n4. 16-Point Agreement (Nagaland)",
+            "stem_ta": "பட்டியல்-I-ஐ (வரலாற்று ஆளுமைகள்) பட்டியல்-II-உடன் (தொடர்புடைய மாநிலம்/ஒப்பந்தம்) பொருத்தி, கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\na) மகாராஜா ஹரி சிங்\nb) டாக்டர் இம்கோங்லிபா ஆவோ\nc) லால்டெங்கா\nd) டாக்டர் டி.எம். நஞ்சுண்டப்பா\nபட்டியல்-II:\n1. மிசோ அமைதி ஒப்பந்தம் (மிசோரம்)\n2. பிராந்திய ஏற்றத்தாழ்வு குறித்த உயர்மட்டக் குழு (கர்நாடகா)\n3. இணைப்பு ஆவணம் (ஜம்மு மற்றும் காஷ்மீர்)\n4. 16 அம்ச ஒப்பந்தம் (நாகாலாந்து)",
+            "options": [
+                ("a-3, b-4, c-1, d-2", "a-3, b-4, c-1, d-2"),
+                ("a-4, b-3, c-1, d-2", "a-4, b-3, c-1, d-2"),
+                ("a-3, b-1, c-4, d-2", "a-3, b-1, c-4, d-2"),
+                ("a-2, b-4, c-1, d-3", "a-2, b-4, c-1, d-3")
+            ],
+            "correct_key": "A",
+            "exp_en": "Maharaja Hari Singh signed the Instrument of Accession for J&K (3). Dr. Imkongliba Ao led the Naga People's Convention for the 16-Point Agreement (4). Laldenga signed the Mizo Peace Accord (1). Dr. D.M. Nanjundappa chaired the committee leading to Article 371J (2). Correct code is a-3, b-4, c-1, d-2.",
+            "exp_ta": "மகாராஜா ஹரி சிங் ஜம்மு காஷ்மீருக்கான இணைப்பு ஆவணத்தில் கையெழுத்திட்டார் (3). டாக்டர் இம்கோங்லிபா ஆவோ 16 அம்ச ஒப்பந்தத்திற்கான நாகா மாநாட்டை வழிநடத்தினார் (4). லால்டெங்கா மிசோ அமைதி ஒப்பந்தத்தில் கையெழுத்திட்டார் (1). டாக்டர் டி.எம். நஞ்சுண்டப்பா சரத்து 371J-க்கு வழிவகுத்த குழுவின் தலைவராக இருந்தார் (2). சரியான குறியீடு: a-3, b-4, c-1, d-2.",
+            "why_a_en": "Matches all four prominent personalities to their respective historic milestones.",
+            "why_a_ta": "நான்கு முக்கிய ஆளுமைகளையும் அவற்றின் வரலாற்று மைல்கற்களோடு துல்லியமாகப் பொருத்துகிறது.",
+            "why_b_en": "Swaps Hari Singh and Imkongliba Ao.",
+            "why_b_ta": "ஹரி சிங் மற்றும் இம்கோங்லிபா ஆவோவை மாற்றுகிறது.",
+            "why_c_en": "Swaps Imkongliba Ao and Laldenga.",
+            "why_c_ta": "இம்கோங்லிபா ஆவோ மற்றும் லால்டெங்காவை மாற்றுகிறது.",
+            "why_d_en": "Assigns Nanjundappa to J&K.",
+            "why_d_ta": "நஞ்சுண்டப்பாவை ஜம்மு காஷ்மீருக்கு தவறாக ஒதுக்குகிறது.",
+            "tip_en": "Dr. Imkongliba Ao was the President of the Naga People's Convention.",
+            "tip_ta": "டாக்டர் இம்கோங்லிபா ஆவோ நாகா மக்கள் மாநாட்டின் தலைவராக இருந்தார்.",
+            "fact_en": "Laldenga served as the first Chief Minister of Mizoram state from 1986 to 1988.",
+            "fact_ta": "லால்டெங்கா 1986 முதல் 1988 வரை மிசோரம் மாநிலத்தின் முதல் முதலமைச்சராகப் பணியாற்றினார்."
+        },
+        # 18
+        {
+            "subtopic": "Special Bodies Matching",
+            "stem_en": "Match List-I (Special Constitutional Bodies) with List-II (Governing Articles) and select the correct answer using the codes given below:\nList-I:\na) Regional Council for Tuensang\nb) Hill Areas Committee\nc) State Administrative Tribunal\nd) Kalyana Karnataka Development Board\nList-II:\n1. Article 371C\n2. Article 371J\n3. Article 371A\n4. Article 371D",
+            "stem_ta": "பட்டியல்-I-ஐ (சிறப்பு அரசியலமைப்பு அமைப்புகள்) பட்டியல்-II-உடன் (நிர்வகிக்கும் சரத்துகள்) பொருத்தி, கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\na) துயேன்சாங் பிராந்தியக் குழு\nb) மலைப்பகுதிகள் குழு\nc) மாநில நிர்வாகத் தீர்ப்பாயம்\nd) கல்யாண கர்நாடகா வளர்ச்சி வாரியம்\nபட்டியல்-II:\n1. சரத்து 371C\n2. சரத்து 371J\n3. சரத்து 371A\n4. சரத்து 371D",
+            "options": [
+                ("a-3, b-1, c-4, d-2", "a-3, b-1, c-4, d-2"),
+                ("a-1, b-3, c-4, d-2", "a-1, b-3, c-4, d-2"),
+                ("a-3, b-4, c-1, d-2", "a-3, b-4, c-1, d-2"),
+                ("a-2, b-1, c-4, d-3", "a-2, b-1, c-4, d-3")
+            ],
+            "correct_key": "A",
+            "exp_en": "Tuensang Regional Council is under Article 371A (3). Hill Areas Committee is under Article 371C (1). State Administrative Tribunal is under Article 371D (4). Kalyana Karnataka Board is under Article 371J (2). Correct code is a-3, b-1, c-4, d-2.",
+            "exp_ta": "துயேன்சாங் பிராந்தியக் குழு சரத்து 371A-ன் கீழ் உள்ளது (3). மலைப்பகுதிகள் குழு சரத்து 371C-ன் கீழ் உள்ளது (1). மாநில நிர்வாகத் தீர்ப்பாயம் சரத்து 371D-ன் கீழ் உள்ளது (4). கல்யாண கர்நாடகா வாரியம் சரத்து 371J-ன் கீழ் உள்ளது (2). சரியான குறியீடு: a-3, b-1, c-4, d-2.",
+            "why_a_en": "Matches all four special administrative bodies to their governing constitutional articles.",
+            "why_a_ta": "நான்கு சிறப்பு நிர்வாக அமைப்புகளையும் அவற்றின் அரசியலமைப்புச் சரத்துகளோடு சரியாகப் பொருத்துகிறது.",
+            "why_b_en": "Swaps 371A and 371C.",
+            "why_b_ta": "371A மற்றும் 371C-ஐ மாற்றுகிறது.",
+            "why_c_en": "Swaps 371C and 371D.",
+            "why_c_ta": "371C மற்றும் 371D-ஐ மாற்றுகிறது.",
+            "why_d_en": "Assigns Tuensang to 371J.",
+            "why_d_ta": "துயேன்சாங்கை 371J-க்கு தவறாக ஒதுக்குகிறது.",
+            "tip_en": "Articles 371A, 371C, 371D, and 371J are the 4 articles that set up specific statutory/administrative bodies.",
+            "tip_ta": "சரத்துகள் 371A, 371C, 371D மற்றும் 371J ஆகியவை குறிப்பிட்ட சட்டப்பூர்வ/நிர்வாக அமைப்புகளை நிறுவும் 4 சரத்துகள் ஆகும்.",
+            "fact_en": "Each body was designed to give local autonomy without requiring a separate state.",
+            "fact_ta": "ஒவ்வொரு அமைப்பும் தனி மாநிலம் கோராமல் உள்ளூர் சுயாட்சியை வழங்கும் வகையில் வடிவமைக்கப்பட்டது."
+        },
+        # 19
+        {
+            "subtopic": "Constitutional Parts Matching",
+            "stem_en": "Match List-I (Parts of Constitution) with List-II (Core Subjects) and select the correct answer using the codes given below:\nList-I:\na) Part XXI\nb) Part XVI\nc) Part X\nd) Part XVIII\nList-II:\n1. Special Provisions Relating to Certain Classes\n2. Emergency Provisions\n3. Temporary, Transitional and Special Provisions\n4. The Scheduled and Tribal Areas",
+            "stem_ta": "பட்டியல்-I-ஐ (அரசியலமைப்பின் பகுதிகள்) பட்டியல்-II-உடன் (முக்கியப் பாடங்கள்) பொருத்தி, கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\na) பகுதி XXI\nb) பகுதி XVI\nc) பகுதி X\nd) பகுதி XVIII\nபட்டியல்-II:\n1. குறிப்பிட்ட வகுப்பினருக்கான சிறப்பு ஏற்பாடுகள்\n2. அவசரகால ஏற்பாடுகள்\n3. தற்காலிக, இடைமாற்ற மற்றும் சிறப்பு ஏற்பாடுகள்\n4. அட்டவணைப்படுத்தப்பட்ட மற்றும் பழங்குடியினர் பகுதிகள்",
+            "options": [
+                ("a-3, b-1, c-4, d-2", "a-3, b-1, c-4, d-2"),
+                ("a-1, b-3, c-4, d-2", "a-1, b-3, c-4, d-2"),
+                ("a-3, b-4, c-1, d-2", "a-3, b-4, c-1, d-2"),
+                ("a-2, b-1, c-4, d-3", "a-2, b-1, c-4, d-3")
+            ],
+            "correct_key": "A",
+            "exp_en": "Part XXI contains Temporary, Transitional and Special Provisions (3). Part XVI contains Special Provisions Relating to Certain Classes (1). Part X contains Scheduled and Tribal Areas (4). Part XVIII contains Emergency Provisions (2). Correct code is a-3, b-1, c-4, d-2.",
+            "exp_ta": "பகுதி XXI தற்காலிக, இடைமாற்ற மற்றும் சிறப்பு ஏற்பாடுகளைக் கொண்டுள்ளது (3). பகுதி XVI குறிப்பிட்ட வகுப்பினருக்கான சிறப்பு ஏற்பாடுகளைக் கொண்டுள்ளது (1). பகுதி X அட்டவணைப்படுத்தப்பட்ட மற்றும் பழங்குடியினர் பகுதிகளைக் கொண்டுள்ளது (4). பகுதி XVIII அவசரகால ஏற்பாடுகளைக் கொண்டுள்ளது (2). சரியான குறியீடு: a-3, b-1, c-4, d-2.",
+            "why_a_en": "Directly matches all four constitutional parts with their correct titles.",
+            "why_a_ta": "நான்கு அரசியலமைப்பு பகுதிகளையும் அவற்றின் சரியான தலைப்புகளோடு நேரடியாகப் பொருத்துகிறது.",
+            "why_b_en": "Swaps Part XXI and Part XVI.",
+            "why_b_ta": "பகுதி XXI மற்றும் பகுதி XVI-ஐ மாற்றுகிறது.",
+            "why_c_en": "Swaps Part XVI and Part X.",
+            "why_c_ta": "பகுதி XVI மற்றும் பகுதி X-ஐ மாற்றுகிறது.",
+            "why_d_en": "Assigns Emergency Provisions to Part XXI.",
+            "why_d_ta": "அவசரகால ஏற்பாடுகளை பகுதி XXI-க்கு தவறாக ஒதுக்குகிறது.",
+            "tip_en": "Don't confuse Part XXI (Special Provisions for States) with Part XVI (Special Provisions for Classes).",
+            "tip_ta": "பகுதி XXI (மாநிலங்களுக்கான சிறப்பு ஏற்பாடுகள்) மற்றும் பகுதி XVI (வகுப்பினருக்கான சிறப்பு ஏற்பாடுகள்) ஆகியவற்றை குழப்ப வேண்டாம்.",
+            "fact_en": "Part XVI spans Articles 330 to 342A.",
+            "fact_ta": "பகுதி XVI சரத்துகள் 330 முதல் 342A வரை பரவியுள்ளது."
+        },
+        # 20
+        {
+            "subtopic": "Schedules Comparison Matching",
+            "stem_en": "Match List-I (Constitutional Schedules) with List-II (Application Scope) and select the correct answer using the codes given below:\nList-I:\na) Fifth Schedule\nb) Sixth Schedule\nc) Seventh Schedule\nd) First Schedule\nList-II:\n1. Division of legislative powers (Union, State, Concurrent Lists)\n2. List of States and Union Territories and their territories\n3. Scheduled Areas across 10 mainland states\n4. Autonomous District Councils in Assam, Meghalaya, Tripura, Mizoram",
+            "stem_ta": "பட்டியல்-I-ஐ (அரசியலமைப்பு அட்டவணைகள்) பட்டியல்-II-உடன் (செயல்பாட்டு வரம்பு) பொருத்தி, கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\na) ஐந்தாவது அட்டவணை\nb) ஆறாவது அட்டவணை\nc) ஏழாவது அட்டவணை\nd) முதலாவது அட்டவணை\nபட்டியல்-II:\n1. சட்டமன்ற அதிகாரப் பகிர்வு (ஒன்றிய, மாநில, பொதுப் பட்டியல்கள்)\n2. மாநிலங்கள் மற்றும் யூனியன் பிரதேசங்களின் பட்டியல் மற்றும் அவற்றின் எல்லைகள்\n3. 10 நிலப்பரப்பு மாநிலங்களில் உள்ள பட்டியல் பகுதிகள்\n4. அசாம், மேகாலயா, திரிபுரா, மிசோரமில் உள்ள தன்னாட்சி மாவட்டக் குழுக்கள்",
+            "options": [
+                ("a-3, b-4, c-1, d-2", "a-3, b-4, c-1, d-2"),
+                ("a-4, b-3, c-1, d-2", "a-4, b-3, c-1, d-2"),
+                ("a-3, b-1, c-4, d-2", "a-3, b-1, c-4, d-2"),
+                ("a-2, b-4, c-1, d-3", "a-2, b-4, c-1, d-3")
+            ],
+            "correct_key": "A",
+            "exp_en": "Fifth Schedule applies to Scheduled Areas in 10 states (3). Sixth Schedule applies to ADCs in AMTM states (4). Seventh Schedule contains the three legislative lists (1). First Schedule lists States and UTs (2). Correct code is a-3, b-4, c-1, d-2.",
+            "exp_ta": "ஐந்தாவது அட்டவணை 10 மாநிலங்களில் உள்ள பட்டியல் பகுதிகளுக்குப் பொருந்தும் (3). ஆறாவது அட்டவணை AMTM மாநிலங்களில் உள்ள ADCs-க்கு பொருந்தும் (4). ஏழாவது அட்டவணை மூன்று சட்டமன்றப் பட்டியல்களைக் கொண்டுள்ளது (1). முதலாவது அட்டவணை மாநிலங்கள் மற்றும் யூனியன் பிரதேசங்களைப் பட்டியலிடுகிறது (2). சரியான குறியீடு: a-3, b-4, c-1, d-2.",
+            "why_a_en": "Matches all four schedules to their exact constitutional domains.",
+            "why_a_ta": "நான்கு அட்டவணைகளையும் அவற்றின் சரியான அரசியலமைப்பு வரம்புகளோடு பொருத்துகிறது.",
+            "why_b_en": "Swaps Fifth and Sixth Schedules.",
+            "why_b_ta": "ஐந்தாவது மற்றும் ஆறாவது அட்டவணைகளை மாற்றுகிறது.",
+            "why_c_en": "Swaps Sixth and Seventh Schedules.",
+            "why_c_ta": "ஆறாவது மற்றும் ஏழாவது அட்டவணைகளை மாற்றுகிறது.",
+            "why_d_en": "Assigns First Schedule to Fifth Schedule.",
+            "why_d_ta": "முதலாவது அட்டவணையை ஐந்தாவது அட்டவணையோடு தவறாக இணைக்கிறது.",
+            "tip_en": "Fifth Schedule = 10 mainland states; Sixth Schedule = 4 North-East states (AMTM).",
+            "tip_ta": "ஐந்தாவது அட்டவணை = 10 நிலப்பரப்பு மாநிலங்கள்; ஆறாவது அட்டவணை = 4 வடகிழக்கு மாநிலங்கள் (AMTM).",
+            "fact_en": "Article 244(1) governs Fifth Schedule; Article 244(2) governs Sixth Schedule.",
+            "fact_ta": "சரத்து 244(1) ஐந்தாவது அட்டவணையை நிர்வகிக்கிறது; சரத்து 244(2) ஆறாவது அட்டவணையை நிர்வகிக்கிறது."
+        },
+        # 21
+        {
+            "subtopic": "Unique Electoral Features Matching",
+            "stem_en": "Match List-I (Unique Electoral Mechanism) with List-II (State) and select the correct answer using the codes given below:\nList-I:\na) Sangha Constituency for Buddhist monks\nb) Minimum 40 members in Legislative Assembly\nc) 10-year indirect elections via Regional Council\nd) Multi-zone local reservation in education and jobs\nList-II:\n1. Mizoram (Article 371G)\n2. Andhra Pradesh & Telangana (Article 371D)\n3. Sikkim (Article 371F)\n4. Nagaland (Tuensang, Article 371A)",
+            "stem_ta": "பட்டியல்-I-ஐ (தனித்துவமான தேர்தல் வழிமுறை) பட்டியல்-II-உடன் (மாநிலம்) பொருத்தி, கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\na) பௌத்த துறவிகளுக்கான சங்கா தொகுதி\nb) சட்டமன்றத்தில் குறைந்தபட்சம் 40 உறுப்பினர்கள்\nc) பிராந்தியக் குழு மூலம் 10 ஆண்டு கால மறைமுகத் தேர்தல்\nd) கல்வி மற்றும் பணிகளில் பல-மண்டல உள்ளூர் இடஒதுக்கீடு\nபட்டியல்-II:\n1. மிசோரம் (சரத்து 371G)\n2. ஆந்திரப் பிரதேசம் & தெலங்கானா (சரத்து 371D)\n3. சிக்கிம் (சரத்து 371F)\n4. நாகாலாந்து (துயேன்சாங், சரத்து 371A)",
+            "options": [
+                ("a-3, b-1, c-4, d-2", "a-3, b-1, c-4, d-2"),
+                ("a-1, b-3, c-4, d-2", "a-1, b-3, c-4, d-2"),
+                ("a-3, b-4, c-1, d-2", "a-3, b-4, c-1, d-2"),
+                ("a-2, b-1, c-4, d-3", "a-2, b-1, c-4, d-3")
+            ],
+            "correct_key": "A",
+            "exp_en": "Sangha constituency is in Sikkim (3). 40-member floor is in Mizoram (1). Tuensang indirect elections were in Nagaland (4). Multi-zone local reservation is in AP & Telangana (2). Correct code is a-3, b-1, c-4, d-2.",
+            "exp_ta": "சங்கா தொகுதி சிக்கிமில் உள்ளது (3). 40 உறுப்பினர் குறைந்தபட்ச பலம் மிசோரமில் உள்ளது (1). துயேன்சாங் மறைமுகத் தேர்தல் நாகாலாந்தில் இருந்தது (4). பல-மண்டல உள்ளூர் இடஒதுக்கீடு ஆந்திரா & தெலங்கானாவில் உள்ளது (2). சரியான குறியீடு: a-3, b-1, c-4, d-2.",
+            "why_a_en": "Matches all four unique electoral design features to their specific state.",
+            "why_a_ta": "நான்கு தனித்துவமான தேர்தல் கட்டமைப்பு அம்சங்களையும் அவற்றின் குறிப்பிட்ட மாநிலத்தோடு பொருத்துகிறது.",
+            "why_b_en": "Swaps Sikkim and Mizoram.",
+            "why_b_ta": "சிக்கிம் மற்றும் மிசோரமை மாற்றுகிறது.",
+            "why_c_en": "Swaps Mizoram and Nagaland.",
+            "why_c_ta": "மிசோரம் மற்றும் நாகாலாந்தை மாற்றுகிறது.",
+            "why_d_en": "Assigns AP to Sangha seat.",
+            "why_d_ta": "ஆந்திராவை சங்கா தொகுதிக்கு தவறாக ஒதுக்குகிறது.",
+            "tip_en": "These four distinct electoral features are high-yield TNPSC factual points.",
+            "tip_ta": "இந்த நான்கு தனித்துவமான தேர்தல் அம்சங்கள் TNPSC-ல் அடிக்கடி கேட்கப்படும் முக்கியக் குறிப்புகள்.",
+            "fact_en": "The Sangha MLA is elected through single transferable vote.",
+            "fact_ta": "சங்கா சட்டமன்ற உறுப்பினர் ஒற்றை மாற்று வாக்கு முறை மூலம் தேர்ந்தெடுக்கப்படுகிறார்."
+        },
+        # 22
+        {
+            "subtopic": "Presidential Orders Matching",
+            "stem_en": "Match List-I (Presidential Orders) with List-II (Year and Subject) and select the correct answer using the codes given below:\nList-I:\na) Constitution Order 48 (C.O. 48)\nb) AP Public Employment Order\nc) Constitution Order 272 (C.O. 272)\nd) Constitution Order 273 (C.O. 273)\nList-II:\n1. 1975 (Local cadres in Andhra Pradesh)\n2. 2019 (Article 370 operative cessation)\n3. 1954 (Comprehensive application of Constitution to J&K)\n4. 2019 (Amendment of Article 367 in J&K)",
+            "stem_ta": "பட்டியல்-I-ஐ (குடியரசுத் தலைவர் உத்தரவுகள்) பட்டியல்-II-உடன் (ஆண்டு மற்றும் பொருள்) பொருத்தி, கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\na) அரசியலமைப்பு உத்தரவு 48 (C.O. 48)\nb) ஆந்திரப் பிரதேச பொது வேலைவாய்ப்பு உத்தரவு\nc) அரசியலமைப்பு உத்தரவு 272 (C.O. 272)\nd) அரசியலமைப்பு உத்தரவு 273 (C.O. 273)\nபட்டியல்-II:\n1. 1975 (ஆந்திரப் பிரதேசத்தில் உள்ளூர் பணிகள்)\n2. 2019 (சரத்து 370 செயல்பாட்டு நிறுத்தம்)\n3. 1954 (ஜம்மு காஷ்மீருக்கு அரசியலமைப்பு விரிவான பயன்பாடு)\n4. 2019 (ஜம்மு காஷ்மீரில் சரத்து 367 திருத்தம்)",
+            "options": [
+                ("a-3, b-1, c-4, d-2", "a-3, b-1, c-4, d-2"),
+                ("a-1, b-3, c-4, d-2", "a-1, b-3, c-4, d-2"),
+                ("a-3, b-4, c-1, d-2", "a-3, b-4, c-1, d-2"),
+                ("a-2, b-1, c-4, d-3", "a-2, b-1, c-4, d-3")
+            ],
+            "correct_key": "A",
+            "exp_en": "C.O. 48 was the 1954 Order applying the Constitution to J&K (3). AP Public Employment Order was in 1975 under 371D (1). C.O. 272 was on 5 August 2019 amending Article 367 (4). C.O. 273 was on 6 August 2019 abrogating Article 370 (2). Correct code is a-3, b-1, c-4, d-2.",
+            "exp_ta": "C.O. 48 என்பது 1954-ல் ஜம்மு காஷ்மீருக்கு அரசியலமைப்பைப் பயன்படுத்திய உத்தரவு (3). ஆந்திர பொது வேலைவாய்ப்பு உத்தரவு 1975-ல் 371D-ன் கீழ் வந்தது (1). C.O. 272 என்பது 5 ஆகஸ்ட் 2019 அன்று சரத்து 367-ஐ திருத்தியது (4). C.O. 273 என்பது 6 ஆகஸ்ட் 2019 அன்று சரத்து 370-ஐ ரத்து செய்தது (2). சரியான குறியீடு: a-3, b-1, c-4, d-2.",
+            "why_a_en": "Matches all four landmark Presidential Orders with their precise years and subject matter.",
+            "why_a_ta": "நான்கு மைல்கல் குடியரசுத் தலைவர் உத்தரவுகளையும் அவற்றின் துல்லியமான ஆண்டுகள் மற்றும் பொருளுடன் பொருத்துகிறது.",
+            "why_b_en": "Swaps C.O. 48 and 1975 AP Order.",
+            "why_b_ta": "C.O. 48 மற்றும் 1975 ஆந்திர உத்தரவை மாற்றுகிறது.",
+            "why_c_en": "Swaps C.O. 272 and 1975 AP Order.",
+            "why_c_ta": "C.O. 272 மற்றும் 1975 ஆந்திர உத்தரவை மாற்றுகிறது.",
+            "why_d_en": "Swaps C.O. 48 and C.O. 273.",
+            "why_d_ta": "C.O. 48 மற்றும் C.O. 273-ஐ மாற்றுகிறது.",
+            "tip_en": "2019 Sequence: C.O. 272 on August 5, followed by C.O. 273 on August 6.",
+            "tip_ta": "2019 வரிசை: ஆகஸ்ட் 5 அன்று C.O. 272, அதைத் தொடர்ந்து ஆகஸ்ட் 6 அன்று C.O. 273.",
+            "fact_en": "Over 54 Presidential Orders were issued for J&K under Article 370 between 1954 and 2019.",
+            "fact_ta": "1954 முதல் 2019 வரை சரத்து 370-ன் கீழ் ஜம்மு காஷ்மீருக்கு 54-க்கும் மேற்பட்ட குடியரசுத் தலைவர் உத்தரவுகள் பிறப்பிக்கப்பட்டன."
+        },
+        # 23
+        {
+            "subtopic": "Articles 371A, C, G, J Matching",
+            "stem_en": "Match List-I (Article Suffix) with List-II (State) and select the correct answer using the codes given below:\nList-I:\na) 371A\nb) 371C\nc) 371G\nd) 371J\nList-II:\n1. Manipur\n2. Karnataka\n3. Nagaland\n4. Mizoram",
+            "stem_ta": "பட்டியல்-I-ஐ (சரத்து பின்னொட்டு) பட்டியல்-II-உடன் (மாநிலம்) பொருத்தி, கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\na) 371A\nb) 371C\nc) 371G\nd) 371J\nபட்டியல்-II:\n1. மணிப்பூர்\n2. கர்நாடகா\n3. நாகாலாந்து\n4. மிசோரம்",
+            "options": [
+                ("a-3, b-1, c-4, d-2", "a-3, b-1, c-4, d-2"),
+                ("a-1, b-3, c-4, d-2", "a-1, b-3, c-4, d-2"),
+                ("a-3, b-4, c-1, d-2", "a-3, b-4, c-1, d-2"),
+                ("a-2, b-1, c-4, d-3", "a-2, b-1, c-4, d-3")
+            ],
+            "correct_key": "A",
+            "exp_en": "371A = Nagaland (3). 371C = Manipur (1). 371G = Mizoram (4). 371J = Karnataka (2). Correct code is a-3, b-1, c-4, d-2.",
+            "exp_ta": "371A = நாகாலாந்து (3). 371C = மணிப்பூர் (1). 371G = மிசோரம் (4). 371J = கர்நாடகா (2). சரியான குறியீடு: a-3, b-1, c-4, d-2.",
+            "why_a_en": "Matches all four suffix articles accurately.",
+            "why_a_ta": "நான்கு பின்னொட்டு சரத்துகளையும் துல்லியமாகப் பொருத்துகிறது.",
+            "why_b_en": "Swaps 371A and 371C.",
+            "why_b_ta": "371A மற்றும் 371C-ஐ மாற்றுகிறது.",
+            "why_c_en": "Swaps 371C and 371G.",
+            "why_c_ta": "371C மற்றும் 371G-ஐ மாற்றுகிறது.",
+            "why_d_en": "Swaps 371A and 371J.",
+            "why_d_ta": "371A மற்றும் 371J-ஐ மாற்றுகிறது.",
+            "tip_en": "A=Nagaland, C=Manipur, G=Mizoram, J=Karnataka.",
+            "tip_ta": "A=நாகாலாந்து, C=மணிப்பூர், G=மிசோரம், J=கர்நாடகா.",
+            "fact_en": "Articles 371A and 371G contain almost identical protective wording on customary laws.",
+            "fact_ta": "சரத்துகள் 371A மற்றும் 371G மரபுச் சட்டங்கள் மீது கிட்டத்தட்ட ஒரே மாதிரியான பாதுகாப்பு வாசகங்களைக் கொண்டுள்ளன."
+        },
+        # 24
+        {
+            "subtopic": "Articles 371B, E, H, I Matching",
+            "stem_en": "Match List-I (Article Suffix) with List-II (State/Institution) and select the correct answer using the codes given below:\nList-I:\na) 371B\nb) 371E\nc) 371H\nd) 371I\nList-II:\n1. Central University in Andhra Pradesh\n2. Goa Legislative Assembly\n3. Assam Legislative Assembly Committee\n4. Arunachal Pradesh Governor's Law & Order Role",
+            "stem_ta": "பட்டியல்-I-ஐ (சரத்து பின்னொட்டு) பட்டியல்-II-உடன் (மாநிலம்/நிறுவனம்) பொருத்தி, கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\na) 371B\nb) 371E\nc) 371H\nd) 371I\nபட்டியல்-II:\n1. ஆந்திரப் பிரதேசத்தில் மத்தியப் பல்கலைக்கழகம்\n2. கோவா சட்டமன்றம்\n3. அசாம் சட்டமன்றக் குழு\n4. அருணாச்சலப் பிரதேச ஆளுநரின் சட்டம் ஒழுங்கு பங்கு",
+            "options": [
+                ("a-3, b-1, c-4, d-2", "a-3, b-1, c-4, d-2"),
+                ("a-1, b-3, c-4, d-2", "a-1, b-3, c-4, d-2"),
+                ("a-3, b-4, c-1, d-2", "a-3, b-4, c-1, d-2"),
+                ("a-2, b-1, c-4, d-3", "a-2, b-1, c-4, d-3")
+            ],
+            "correct_key": "A",
+            "exp_en": "371B = Assam Committee (3). 371E = AP Central University (1). 371H = Arunachal Law & Order (4). 371I = Goa Assembly (2). Correct code is a-3, b-1, c-4, d-2.",
+            "exp_ta": "371B = அசாம் குழு (3). 371E = ஆந்திர மத்திய பல்கலைக்கழகம் (1). 371H = அருணாச்சல் சட்டம் ஒழுங்கு (4). 371I = கோவா சட்டமன்றம் (2). சரியான குறியீடு: a-3, b-1, c-4, d-2.",
+            "why_a_en": "Matches all four suffix articles correctly.",
+            "why_a_ta": "நான்கு பின்னொட்டு சரத்துகளையும் சரியாகப் பொருத்துகிறது.",
+            "why_b_en": "Swaps 371B and 371E.",
+            "why_b_ta": "371B மற்றும் 371E-ஐ மாற்றுகிறது.",
+            "why_c_en": "Swaps 371E and 371H.",
+            "why_c_ta": "371E மற்றும் 371H-ஐ மாற்றுகிறது.",
+            "why_d_en": "Assigns Goa to 371B.",
+            "why_d_ta": "கோவாவை 371B-க்கு தவறாக ஒதுக்குகிறது.",
+            "tip_en": "B=Assam, E=Central Univ AP, H=Arunachal Pradesh, I=Goa.",
+            "tip_ta": "B=அசாம், E=மத்திய பல்கலைக்கழகம் ஆந்திரா, H=அருணாச்சலப் பிரதேசம், I=கோவா.",
+            "fact_en": "Article 371E is the only article in the 371-series that deals with establishing an educational institution.",
+            "fact_ta": "371 தொடரில் ஒரு கல்வி நிறுவனத்தை நிறுவுவதைக் கையாளும் ஒரே சரத்து 371E மட்டுமே."
+        },
+        # 25
+        {
+            "subtopic": "Special Provisions Master Comparative Matching",
+            "stem_en": "Match List-I (Constitutional Feature) with List-II (State(s)) and select the correct answer using the codes given below:\nList-I:\na) No dedicated 371-series article in Part XXI\nb) 30-member constitutional minimum assembly strength\nc) 40-member constitutional minimum assembly strength\nd) Separate regional development boards\nList-II:\n1. Sikkim, Arunachal Pradesh, and Goa\n2. Maharashtra, Gujarat, and Karnataka\n3. Meghalaya and Tripura\n4. Mizoram",
+            "stem_ta": "பட்டியல்-I-ஐ (அரசியலமைப்பு அம்சம்) பட்டியல்-II-உடன் (மாநிலங்கள்) பொருத்தி, கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\na) பகுதி XXI-ல் பிரத்யேக 371-தொடர் சரத்து இல்லாதவை\nb) 30 உறுப்பினர் அரசியலமைப்பு குறைந்தபட்ச சட்டமன்ற பலம்\nc) 40 உறுப்பினர் அரசியலமைப்பு குறைந்தபட்ச சட்டமன்ற பலம்\nd) தனி பிராந்திய வளர்ச்சி வாரியங்கள்\nபட்டியல்-II:\n1. சிக்கிம், அருணாச்சலப் பிரதேசம் மற்றும் கோவா\n2. மகாராஷ்டிரா, குஜராத் மற்றும் கர்நாடகா\n3. மேகாலயா மற்றும் திரிபுரா\n4. மிசோரம்",
+            "options": [
+                ("a-3, b-1, c-4, d-2", "a-3, b-1, c-4, d-2"),
+                ("a-1, b-3, c-4, d-2", "a-1, b-3, c-4, d-2"),
+                ("a-3, b-4, c-1, d-2", "a-3, b-4, c-1, d-2"),
+                ("a-2, b-1, c-4, d-3", "a-2, b-1, c-4, d-3")
+            ],
+            "correct_key": "A",
+            "exp_en": "No dedicated 371 article applies to Meghalaya and Tripura (3). 30-member minimum applies to Sikkim, Arunachal Pradesh, and Goa (1). 40-member minimum applies to Mizoram (4). Development boards exist in Maharashtra, Gujarat, and Karnataka (2). Correct code is a-3, b-1, c-4, d-2.",
+            "exp_ta": "பிரத்யேக 371 சரத்து இல்லாதவை மேகாலயா மற்றும் திரிபுரா (3). 30 உறுப்பினர் குறைந்தபட்ச பலம் சிக்கிம், அருணாச்சலப் பிரதேசம் மற்றும் கோவாவிற்கு பொருந்தும் (1). 40 உறுப்பினர் குறைந்தபட்ச பலம் மிசோரமிற்கு பொருந்தும் (4). வளர்ச்சி வாரியங்கள் மகாராஷ்டிரா, குஜராத் மற்றும் கர்நாடகாவில் உள்ளன (2). சரியான குறியீடு: a-3, b-1, c-4, d-2.",
+            "why_a_en": "Matches all four master comparative categories perfectly.",
+            "why_a_ta": "நான்கு முதன்மை ஒப்பீட்டு பிரிவுகளையும் மிகச் சரியாகப் பொருத்துகிறது.",
+            "why_b_en": "Swaps Meghalaya/Tripura with Sikkim/Arunachal/Goa.",
+            "why_b_ta": "மேகாலயா/திரிபுராவை சிக்கிம்/அருணாச்சல்/கோவாவுடன் மாற்றுகிறது.",
+            "why_c_en": "Swaps 30-member and 40-member assemblies.",
+            "why_c_ta": "30 உறுப்பினர் மற்றும் 40 உறுப்பினர் சட்டமன்றங்களை மாற்றுகிறது.",
+            "why_d_en": "Assigns development boards to Meghalaya.",
+            "why_d_ta": "வளர்ச்சி வாரியங்களை மேகாலயாவிற்கு தவறாக ஒதுக்குகிறது.",
+            "tip_en": "This master question synthesizes the entire comparative architecture of Articles 371 to 371-J.",
+            "tip_ta": "இந்த முதன்மை வினா சரத்துகள் 371 முதல் 371-J வரையிலான முழு ஒப்பீட்டுக் கட்டமைப்பையும் ஒருங்கிணைக்கிறது.",
+            "fact_en": "Part XXI accommodates 12 states across the Indian federation.",
+            "fact_ta": "பகுதி XXI இந்தியக் கூட்டமைப்பில் 12 மாநிலங்களை ஒருங்கிணைக்கிறது."
+        }
+    ]
+
+    questions = []
+    for i, item in enumerate(raw_data, 1):
+        qid = f"SPS_MF_{i:03d}"
+        opts = item["options"]
+        correct_key = item["correct_key"]
+        q = make_sps_q(
+            qid=qid,
+            diff="Hard",
+            qtype="Match the Following",
+            subtopic=item["subtopic"],
+            en_stem=item["stem_en"],
+            ta_stem=item["stem_ta"],
+            en_a=opts[0][0],
+            ta_a=opts[0][1],
+            en_b=opts[1][0],
+            ta_b=opts[1][1],
+            en_c=opts[2][0],
+            ta_c=opts[2][1],
+            en_d=opts[3][0],
+            ta_d=opts[3][1],
+            correct_key=correct_key,
+            exp_en=item["exp_en"],
+            exp_ta=item["exp_ta"],
+            why_a_en=item["why_a_en"],
+            why_a_ta=item["why_a_ta"],
+            why_b_en=item["why_b_en"],
+            why_b_ta=item["why_b_ta"],
+            why_c_en=item["why_c_en"],
+            why_c_ta=item["why_c_ta"],
+            why_d_en=item["why_d_en"],
+            why_d_ta=item["why_d_ta"],
+            tip_en=item["tip_en"],
+            tip_ta=item["tip_ta"],
+            fact_en=item["fact_en"],
+            fact_ta=item["fact_ta"],
+            tags=["polity", "special_provisions_states", "match", item["subtopic"].lower().replace(" ", "_")]
+        )
+        questions.append(q)
+    return questions
+
+def build_match_file():
+    qs = get_match_questions()
+    print(f"Generated {len(qs)} raw Match questions for Special Provisions for States.")
+    balanced = randomize_and_balance_dataset(qs, seed=42)
+    
+    out_dir = os.path.join("data", "questions", "polity")
+    os.makedirs(out_dir, exist_ok=True)
+    out_path = os.path.join(out_dir, "special_provisions_states_match_the_following.json")
+    alias_path = os.path.join(out_dir, "special_provisions_states_match.json")
+    
+    with open(out_path, "w", encoding="utf-8") as f:
+        json.dump(balanced, f, ensure_ascii=False, indent=2)
+    with open(alias_path, "w", encoding="utf-8") as f:
+        json.dump(balanced, f, ensure_ascii=False, indent=2)
+    print(f"Saved balanced Match MCQs to {out_path} and alias {alias_path}")
+    
+    rep = ContentValidator.validate_file(out_path, expected_count=25, expected_prefix="SPS_MF_")
+    print(f"Validation: {'PASS' if rep.is_valid else 'FAIL'} | Total: {rep.total_audited}")
+    print(f"Keys: {rep.key_distribution}")
+    if not rep.is_valid:
+        for iss in rep.issues:
+            print("  Issue:", iss.severity, iss.field_name, iss.message)
+    return rep.is_valid
+
+if __name__ == "__main__":
+    build_match_file()

@@ -14,13 +14,13 @@
     "options": [
       {
         "id": "A",
-        "en": "(Total State Population / Total Elected MLAs) × 1000",
-        "ta": "(மொத்த மாநில மக்கள் தொகை / மொத்த தேர்ந்தெடுக்கப்பட்ட எம்.எல்.ஏ-க்கள்) × 1000"
+        "en": "(Total State Population / Total Elected MLAs) ÷ 1000",
+        "ta": "(மொத்த மாநில மக்கள் தொகை / மொத்த தேர்ந்தெடுக்கப்பட்ட எம்.எல்.ஏ-க்கள்) ÷ 1000"
       },
       {
         "id": "B",
-        "en": "(Total State Population / Total Elected MLAs) ÷ 1000",
-        "ta": "(மொத்த மாநில மக்கள் தொகை / மொத்த தேர்ந்தெடுக்கப்பட்ட எம்.எல்.ஏ-க்கள்) ÷ 1000"
+        "en": "(Total State Population / Total Elected MLAs) × 1000",
+        "ta": "(மொத்த மாநில மக்கள் தொகை / மொத்த தேர்ந்தெடுக்கப்பட்ட எம்.எல்.ஏ-க்கள்) × 1000"
       },
       {
         "id": "C",
@@ -33,7 +33,7 @@
         "ta": "(மொத்த மாநில மக்கள் தொகை / மொத்த எம்பிக்கள்) ÷ 1000"
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "A",
     "explanation": {
       "en": "MLA vote value = (Total State Population (1971 Census) / Total Elected MLAs) ÷ 1000.",
       "ta": "எம்.எல்.ஏ வாக்கு மதிப்பு = (மாநில மக்கள் தொகை (1971) / தேர்ந்தெடுக்கப்பட்ட எம்.எல்.ஏ-க்கள்) ÷ 1000."
@@ -51,12 +51,12 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Option A ((Total State Population / Total Elected MLAs) × 1000) is not supported by the constitutional facts under Article reference or President Notes.",
-        "ta": "தவறு. தெரிவு A ((மொத்த மாநில மக்கள் தொகை / மொத்த தேர்ந்தெடுக்கப்பட்ட எம்.எல்.ஏ-க்கள்) × 1000) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
-      },
-      "B": {
         "en": "Correct. (Total State Population / Total Elected MLAs) ÷ 1000 is the accurate constitutional answer. MLA vote value = (Total State Population (1971 Census) / Total Elected MLAs) ÷ 1000.",
         "ta": "சரி. (மொத்த மாநில மக்கள் தொகை / மொத்த தேர்ந்தெடுக்கப்பட்ட எம்.எல்.ஏ-க்கள்) ÷ 1000 என்பது சரியான அரசியலமைப்பு பதிலாகும். எம்.எல்.ஏ வாக்கு மதிப்பு = (மாநில மக்கள் தொகை (1971) / தேர்ந்தெடுக்கப்பட்ட எம்.எல்.ஏ-க்கள்) ÷ 1000."
+      },
+      "B": {
+        "en": "Incorrect. Option A ((Total State Population / Total Elected MLAs) × 1000) is not supported by the constitutional facts under Article reference or President Notes.",
+        "ta": "தவறு. தெரிவு A ((மொத்த மாநில மக்கள் தொகை / மொத்த தேர்ந்தெடுக்கப்பட்ட எம்.எல்.ஏ-க்கள்) × 1000) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "C": {
         "en": "Incorrect. Option C ((Total Value of MLA Votes / Total Elected MPs) ÷ 100) references a different constitutional provision.",
@@ -72,7 +72,28 @@
       "topic": "President of India",
       "type": "Medium",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "(Total State Population / Total Elected MLAs) ÷ 1000",
+      "(Total State Population / Total Elected MLAs) × 1000",
+      "(Total Value of MLA Votes / Total Elected MPs) ÷ 100",
+      "(Total State Population / Total Elected MPs) ÷ 1000"
+    ],
+    "options_ta": [
+      "(மொத்த மாநில மக்கள் தொகை / மொத்த தேர்ந்தெடுக்கப்பட்ட எம்.எல்.ஏ-க்கள்) ÷ 1000",
+      "(மொத்த மாநில மக்கள் தொகை / மொத்த தேர்ந்தெடுக்கப்பட்ட எம்.எல்.ஏ-க்கள்) × 1000",
+      "(மொத்த எம்.எல்.ஏ வாக்குகள் / மொத்த எம்பிக்கள்) ÷ 100",
+      "(மொத்த மாநில மக்கள் தொகை / மொத்த எம்பிக்கள்) ÷ 1000"
+    ],
+    "answer": "a",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "MLA vote value = (Total State Population (1971 Census) / Total Elected MLAs) ÷ 1000."
   },
   {
     "id": "POLITY_PRESIDENT_MEDIUM_002",
@@ -89,13 +110,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Total value of votes of all elected MLAs / Total number of elected MPs",
-        "ta": "அனைத்து தேர்ந்தெடுக்கப்பட்ட எம்.எல்.ஏ வாக்குகளின் மொத்த மதிப்பு / தேர்ந்தெடுக்கப்பட்ட மொத்த எம்பிக்கள்"
+        "en": "Total Population of India / Total number of elected MPs",
+        "ta": "இந்தியாவின் மொத்த மக்கள் தொகை / தேர்ந்தெடுக்கப்பட்ட மொத்த எம்பிக்கள்"
       },
       {
         "id": "B",
-        "en": "Total Population of India / Total number of elected MPs",
-        "ta": "இந்தியாவின் மொத்த மக்கள் தொகை / தேர்ந்தெடுக்கப்பட்ட மொத்த எம்பிக்கள்"
+        "en": "Total value of votes of all elected MLAs / Total number of elected MPs",
+        "ta": "அனைத்து தேர்ந்தெடுக்கப்பட்ட எம்.எல்.ஏ வாக்குகளின் மொத்த மதிப்பு / தேர்ந்தெடுக்கப்பட்ட மொத்த எம்பிக்கள்"
       },
       {
         "id": "C",
@@ -108,7 +129,7 @@
         "ta": "இந்தியாவின் மொத்த மக்கள் தொகை ÷ 1000"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "B",
     "explanation": {
       "en": "MP vote value = Total value of votes of all elected MLAs of all States / Total elected MPs (LS+RS).",
       "ta": "எம்பி வாக்கு மதிப்பு = அனைத்து மாநில எம்.எல்.ஏ வாக்குகளின் மொத்த மதிப்பு / தேர்ந்தெடுக்கப்பட்ட எம்பிக்கள் (LS+RS)."
@@ -126,12 +147,12 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Correct. Total value of votes of all elected MLAs / Total number of elected MPs is the accurate constitutional answer. MP vote value = Total value of votes of all elected MLAs of all States / Total elected MPs (LS+RS).",
-        "ta": "சரி. அனைத்து தேர்ந்தெடுக்கப்பட்ட எம்.எல்.ஏ வாக்குகளின் மொத்த மதிப்பு / தேர்ந்தெடுக்கப்பட்ட மொத்த எம்பிக்கள் என்பது சரியான அரசியலமைப்பு பதிலாகும். எம்பி வாக்கு மதிப்பு = அனைத்து மாநில எம்.எல்.ஏ வாக்குகளின் மொத்த மதிப்பு / தேர்ந்தெடுக்கப்பட்ட எம்பிக்கள் (LS+RS)."
-      },
-      "B": {
         "en": "Incorrect. Option B (Total Population of India / Total number of elected MPs) is not supported by the constitutional facts under Article reference or President Notes.",
         "ta": "தவறு. தெரிவு B (இந்தியாவின் மொத்த மக்கள் தொகை / தேர்ந்தெடுக்கப்பட்ட மொத்த எம்பிக்கள்) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
+      },
+      "B": {
+        "en": "Correct. Total value of votes of all elected MLAs / Total number of elected MPs is the accurate constitutional answer. MP vote value = Total value of votes of all elected MLAs of all States / Total elected MPs (LS+RS).",
+        "ta": "சரி. அனைத்து தேர்ந்தெடுக்கப்பட்ட எம்.எல்.ஏ வாக்குகளின் மொத்த மதிப்பு / தேர்ந்தெடுக்கப்பட்ட மொத்த எம்பிக்கள் என்பது சரியான அரசியலமைப்பு பதிலாகும். எம்பி வாக்கு மதிப்பு = அனைத்து மாநில எம்.எல்.ஏ வாக்குகளின் மொத்த மதிப்பு / தேர்ந்தெடுக்கப்பட்ட எம்பிக்கள் (LS+RS)."
       },
       "C": {
         "en": "Incorrect. Option C (Total value of votes of all elected MLAs / Total seats in Lok Sabha) is not supported by the constitutional facts under Article reference or President Notes.",
@@ -147,7 +168,28 @@
       "topic": "President of India",
       "type": "Medium",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "Total Population of India / Total number of elected MPs",
+      "Total value of votes of all elected MLAs / Total number of elected MPs",
+      "Total value of votes of all elected MLAs / Total seats in Lok Sabha",
+      "Total Population of India ÷ 1000"
+    ],
+    "options_ta": [
+      "இந்தியாவின் மொத்த மக்கள் தொகை / தேர்ந்தெடுக்கப்பட்ட மொத்த எம்பிக்கள்",
+      "அனைத்து தேர்ந்தெடுக்கப்பட்ட எம்.எல்.ஏ வாக்குகளின் மொத்த மதிப்பு / தேர்ந்தெடுக்கப்பட்ட மொத்த எம்பிக்கள்",
+      "தேர்ந்தெடுக்கப்பட்ட அனைத்து எம்.எல்.ஏ வாக்குகளின் மொத்த மதிப்பு / மக்களவை மொத்த இடங்கள்",
+      "இந்தியாவின் மொத்த மக்கள் தொகை ÷ 1000"
+    ],
+    "answer": "b",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "MP vote value = Total value of votes of all elected MLAs of all States / Total elected MPs (LS+RS)."
   },
   {
     "id": "POLITY_PRESIDENT_MEDIUM_003",
@@ -164,8 +206,8 @@
     "options": [
       {
         "id": "A",
-        "en": "(Total Valid Votes Polled / 2) + 1",
-        "ta": "(பதிவான மொத்த செல்லுபடியாகும் வாக்குகள் / 2) + 1"
+        "en": "Simple majority of voters",
+        "ta": "வந்திருந்து வாக்களிப்பவர்களின் எளிய பெரும்பான்மை"
       },
       {
         "id": "B",
@@ -179,11 +221,11 @@
       },
       {
         "id": "D",
-        "en": "Simple majority of voters",
-        "ta": "வந்திருந்து வாக்களிப்பவர்களின் எளிய பெரும்பான்மை"
+        "en": "(Total Valid Votes Polled / 2) + 1",
+        "ta": "(பதிவான மொத்த செல்லுபடியாகும் வாக்குகள் / 2) + 1"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "D",
     "explanation": {
       "en": "Electoral Quota = (Total Valid Votes Polled / (1 + 1)) + 1 = (Total Valid Votes / 2) + 1.",
       "ta": "தேர்தல் பங்கு = (செல்லுபடியாகும் வாக்குகள் / 2) + 1."
@@ -201,8 +243,8 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Correct. (Total Valid Votes Polled / 2) + 1 is the accurate constitutional answer. Electoral Quota = (Total Valid Votes Polled / (1 + 1)) + 1 = (Total Valid Votes / 2) + 1.",
-        "ta": "சரி. (பதிவான மொத்த செல்லுபடியாகும் வாக்குகள் / 2) + 1 என்பது சரியான அரசியலமைப்பு பதிலாகும். தேர்தல் பங்கு = (செல்லுபடியாகும் வாக்குகள் / 2) + 1."
+        "en": "Incorrect. Option D (Simple majority of voters) is not supported by the constitutional facts under Article reference or President Notes.",
+        "ta": "தவறு. தெரிவு D (வந்திருந்து வாக்களிப்பவர்களின் எளிய பெரும்பான்மை) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "B": {
         "en": "Incorrect. Option B ((Total Valid Votes Polled / 3) + 1) is not supported by the constitutional facts under Article reference or President Notes.",
@@ -213,8 +255,8 @@
         "ta": "தவறு. தெரிவு C ((பதிவான மொத்த செல்லுபடியாகும் வாக்குகள் / 100) + 50) வேறு அரசியலமைப்பு விதியைக் குறிக்கிறது."
       },
       "D": {
-        "en": "Incorrect. Option D (Simple majority of voters) is not supported by the constitutional facts under Article reference or President Notes.",
-        "ta": "தவறு. தெரிவு D (வந்திருந்து வாக்களிப்பவர்களின் எளிய பெரும்பான்மை) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
+        "en": "Correct. (Total Valid Votes Polled / 2) + 1 is the accurate constitutional answer. Electoral Quota = (Total Valid Votes Polled / (1 + 1)) + 1 = (Total Valid Votes / 2) + 1.",
+        "ta": "சரி. (பதிவான மொத்த செல்லுபடியாகும் வாக்குகள் / 2) + 1 என்பது சரியான அரசியலமைப்பு பதிலாகும். தேர்தல் பங்கு = (செல்லுபடியாகும் வாக்குகள் / 2) + 1."
       }
     },
     "metadata": {
@@ -222,7 +264,28 @@
       "topic": "President of India",
       "type": "Medium",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "Simple majority of voters",
+      "(Total Valid Votes Polled / 3) + 1",
+      "(Total Valid Votes Polled / 100) + 50",
+      "(Total Valid Votes Polled / 2) + 1"
+    ],
+    "options_ta": [
+      "வந்திருந்து வாக்களிப்பவர்களின் எளிய பெரும்பான்மை",
+      "(பதிவான மொத்த செல்லுபடியாகும் வாக்குகள் / 3) + 1",
+      "(பதிவான மொத்த செல்லுபடியாகும் வாக்குகள் / 100) + 50",
+      "(பதிவான மொத்த செல்லுபடியாகும் வாக்குகள் / 2) + 1"
+    ],
+    "answer": "d",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Electoral Quota = (Total Valid Votes Polled / (1 + 1)) + 1 = (Total Valid Votes / 2) + 1."
   },
   {
     "id": "POLITY_PRESIDENT_MEDIUM_004",
@@ -239,8 +302,8 @@
     "options": [
       {
         "id": "A",
-        "en": "President MUST give assent",
-        "ta": "குடியரசுத் தலைவர் கண்டிப்பாக ஒப்புதல் அளிக்க வேண்டும்"
+        "en": "President can return it a second time",
+        "ta": "குடியரசுத் தலைவர் 2வது முறையும் திருப்பலாம்"
       },
       {
         "id": "B",
@@ -249,8 +312,8 @@
       },
       {
         "id": "C",
-        "en": "President can return it a second time",
-        "ta": "குடியரசுத் தலைவர் 2வது முறையும் திருப்பலாம்"
+        "en": "President MUST give assent",
+        "ta": "குடியரசுத் தலைவர் கண்டிப்பாக ஒப்புதல் அளிக்க வேண்டும்"
       },
       {
         "id": "D",
@@ -258,7 +321,7 @@
         "ta": "நிராகரிக்க 2/3 பங்கு சிறப்பு பெரும்பான்மை தேவை"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "C",
     "explanation": {
       "en": "Article 111 proviso states if returned Bill is passed again with/without amendment, President SHALL NOT withhold assent (Suspensive Veto).",
       "ta": "உறுப்பு 111-ன் படி மீண்டும் நிறைவேற்றி அனுப்பப்பட்டால் குடியரசுத் தலைவர் ஒப்புதலை நிறுத்த முடியாது (இடைநிறுத்த வீட்டோ)."
@@ -276,16 +339,16 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Correct. President MUST give assent is the accurate constitutional answer. Article 111 proviso states if returned Bill is passed again with/without amendment, President SHALL NOT withhold assent (Suspensive Veto).",
-        "ta": "சரி. குடியரசுத் தலைவர் கண்டிப்பாக ஒப்புதல் அளிக்க வேண்டும் என்பது சரியான அரசியலமைப்பு பதிலாகும். உறுப்பு 111-ன் படி மீண்டும் நிறைவேற்றி அனுப்பப்பட்டால் குடியரசுத் தலைவர் ஒப்புதலை நிறுத்த முடியாது (இடைநிறுத்த வீட்டோ)."
+        "en": "Incorrect. Option C (President can return it a second time) is not supported by the constitutional facts under Article reference or President Notes.",
+        "ta": "தவறு. தெரிவு C (குடியரசுத் தலைவர் 2வது முறையும் திருப்பலாம்) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "B": {
         "en": "Incorrect. Option B (The bill lapses permanently) is not supported by the constitutional facts under Article reference or President Notes.",
         "ta": "தவறு. தெரிவு B (மசோதா நிரந்தரமாக செயலிழந்துவிடும்) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "C": {
-        "en": "Incorrect. Option C (President can return it a second time) is not supported by the constitutional facts under Article reference or President Notes.",
-        "ta": "தவறு. தெரிவு C (குடியரசுத் தலைவர் 2வது முறையும் திருப்பலாம்) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
+        "en": "Correct. President MUST give assent is the accurate constitutional answer. Article 111 proviso states if returned Bill is passed again with/without amendment, President SHALL NOT withhold assent (Suspensive Veto).",
+        "ta": "சரி. குடியரசுத் தலைவர் கண்டிப்பாக ஒப்புதல் அளிக்க வேண்டும் என்பது சரியான அரசியலமைப்பு பதிலாகும். உறுப்பு 111-ன் படி மீண்டும் நிறைவேற்றி அனுப்பப்பட்டால் குடியரசுத் தலைவர் ஒப்புதலை நிறுத்த முடியாது (இடைநிறுத்த வீட்டோ)."
       },
       "D": {
         "en": "Incorrect. Option D (Requires 2/3rd special majority to override) is not supported by the constitutional facts under Article reference or President Notes.",
@@ -297,7 +360,28 @@
       "topic": "President of India",
       "type": "Medium",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "President can return it a second time",
+      "The bill lapses permanently",
+      "President MUST give assent",
+      "Requires 2/3rd special majority to override"
+    ],
+    "options_ta": [
+      "குடியரசுத் தலைவர் 2வது முறையும் திருப்பலாம்",
+      "மசோதா நிரந்தரமாக செயலிழந்துவிடும்",
+      "குடியரசுத் தலைவர் கண்டிப்பாக ஒப்புதல் அளிக்க வேண்டும்",
+      "நிராகரிக்க 2/3 பங்கு சிறப்பு பெரும்பான்மை தேவை"
+    ],
+    "answer": "c",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Article 111 proviso states if returned Bill is passed again with/without amendment, President SHALL NOT withhold assent (Suspensive Veto)."
   },
   {
     "id": "POLITY_PRESIDENT_MEDIUM_005",
@@ -372,7 +456,28 @@
       "topic": "President of India",
       "type": "Medium",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "Absolute Veto",
+      "Suspensive Veto",
+      "Pocket Veto",
+      "Qualified Veto"
+    ],
+    "options_ta": [
+      "முழுமையான வீட்டோ",
+      "இடைநிறுத்த வீட்டோ",
+      "பாக்கெட் வீட்டோ",
+      "தகுதிவாய்ந்த வீட்டோ"
+    ],
+    "answer": "c",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "President Giani Zail Singh exercised Pocket Veto by taking no action on Indian Post Office (Amendment) Bill 1986."
   },
   {
     "id": "POLITY_PRESIDENT_MEDIUM_006",
@@ -394,13 +499,13 @@
       },
       {
         "id": "B",
-        "en": "6 weeks",
-        "ta": "6 வாரங்கள்"
+        "en": "6 months and 6 weeks",
+        "ta": "6 மாதங்கள் மற்றும் 6 வாரங்கள்"
       },
       {
         "id": "C",
-        "en": "6 months and 6 weeks",
-        "ta": "6 மாதங்கள் மற்றும் 6 வாரங்கள்"
+        "en": "6 weeks",
+        "ta": "6 வாரங்கள்"
       },
       {
         "id": "D",
@@ -408,7 +513,7 @@
         "ta": "1 ஆண்டு"
       }
     ],
-    "correct_answer": "C",
+    "correct_answer": "B",
     "explanation": {
       "en": "Max gap between sessions = 6 months; Ordinance lapses 6 weeks after reassembly. Thus max life = 6 months + 6 weeks.",
       "ta": "கூட்டத் தொடர் இடைவெளி = 6 மாதங்கள்; மீண்டும் கூடிய பின் கெடு = 6 வாரங்கள். அதிகபட்ச ஆயுள் = 6 மாதங்கள் + 6 வாரங்கள்."
@@ -430,12 +535,12 @@
         "ta": "தவறு. தெரிவு A (6 மாதங்கள்) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "B": {
-        "en": "Incorrect. Option B (6 weeks) is not supported by the constitutional facts under Article reference or President Notes.",
-        "ta": "தவறு. தெரிவு B (6 வாரங்கள்) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
-      },
-      "C": {
         "en": "Correct. 6 months and 6 weeks is the accurate constitutional answer. Max gap between sessions = 6 months; Ordinance lapses 6 weeks after reassembly. Thus max life = 6 months + 6 weeks.",
         "ta": "சரி. 6 மாதங்கள் மற்றும் 6 வாரங்கள் என்பது சரியான அரசியலமைப்பு பதிலாகும். கூட்டத் தொடர் இடைவெளி = 6 மாதங்கள்; மீண்டும் கூடிய பின் கெடு = 6 வாரங்கள். அதிகபட்ச ஆயுள் = 6 மாதங்கள் + 6 வாரங்கள்."
+      },
+      "C": {
+        "en": "Incorrect. Option B (6 weeks) is not supported by the constitutional facts under Article reference or President Notes.",
+        "ta": "தவறு. தெரிவு B (6 வாரங்கள்) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "D": {
         "en": "Incorrect. Option D (1 year) is not supported by the constitutional facts under Article reference or President Notes.",
@@ -447,7 +552,28 @@
       "topic": "President of India",
       "type": "Medium",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "6 months",
+      "6 months and 6 weeks",
+      "6 weeks",
+      "1 year"
+    ],
+    "options_ta": [
+      "6 மாதங்கள்",
+      "6 மாதங்கள் மற்றும் 6 வாரங்கள்",
+      "6 வாரங்கள்",
+      "1 ஆண்டு"
+    ],
+    "answer": "b",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Max gap between sessions = 6 months; Ordinance lapses 6 weeks after reassembly. Thus max life = 6 months + 6 weeks."
   },
   {
     "id": "POLITY_PRESIDENT_MEDIUM_007",
@@ -522,7 +648,28 @@
       "topic": "President of India",
       "type": "Medium",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "Commutation",
+      "Remission",
+      "Respite",
+      "Reprieve"
+    ],
+    "options_ta": [
+      "தண்டனை மாற்றுதல் (Commutation)",
+      "தண்டனைக் குறைப்பு (Remission)",
+      "தண்டனை நிவாரணம் (Respite)",
+      "தண்டனை இடைநிறுத்தம் (Reprieve)"
+    ],
+    "answer": "a",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Commutation means substitution of one form of punishment for a lighter form (e.g. death to rigorous imprisonment)."
   },
   {
     "id": "POLITY_PRESIDENT_MEDIUM_008",
@@ -539,13 +686,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Reprieve",
-        "ta": "தண்டனை இடைநிறுத்தம் (Reprieve)"
+        "en": "Respite",
+        "ta": "தண்டனை நிவாரணம் (Respite)"
       },
       {
         "id": "B",
-        "en": "Respite",
-        "ta": "தண்டனை நிவாரணம் (Respite)"
+        "en": "Reprieve",
+        "ta": "தண்டனை இடைநிறுத்தம் (Reprieve)"
       },
       {
         "id": "C",
@@ -558,7 +705,7 @@
         "ta": "தண்டனை மாற்றுதல் (Commutation)"
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "A",
     "explanation": {
       "en": "Respite denotes awarding a lesser sentence in place of one originally awarded due to special facts (e.g., pregnancy, disability).",
       "ta": "Respite என்பது கர்ப்பம் அல்லது உடல் ஊனம் போன்ற சிறப்புச் சூழல்களால் குறைந்த தண்டனை வழங்குவதாகும்."
@@ -576,12 +723,12 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Reprieve means a temporary stay of execution of a sentence, especially a death sentence.",
-        "ta": "தவறு. தற்காலிகத் தடை (Reprieve) என்பது தண்டனையை (குறிப்பாக மரண தண்டனையை) தற்காலிகமாக நிறுத்தி வைப்பதாகும்."
-      },
-      "B": {
         "en": "Correct. Respite is the accurate constitutional answer. Respite denotes awarding a lesser sentence in place of one originally awarded due to special facts (e.g., pregnancy, disability).",
         "ta": "சரி. தண்டனை நிவாரணம் (Respite) என்பது சரியான அரசியலமைப்பு பதிலாகும். Respite என்பது கர்ப்பம் அல்லது உடல் ஊனம் போன்ற சிறப்புச் சூழல்களால் குறைந்த தண்டனை வழங்குவதாகும்."
+      },
+      "B": {
+        "en": "Incorrect. Reprieve means a temporary stay of execution of a sentence, especially a death sentence.",
+        "ta": "தவறு. தற்காலிகத் தடை (Reprieve) என்பது தண்டனையை (குறிப்பாக மரண தண்டனையை) தற்காலிகமாக நிறுத்தி வைப்பதாகும்."
       },
       "C": {
         "en": "Incorrect. Remission means reducing the period of sentence without changing its character (e.g. 2 years rigorous to 1 year rigorous).",
@@ -597,7 +744,28 @@
       "topic": "President of India",
       "type": "Medium",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "Respite",
+      "Reprieve",
+      "Remission",
+      "Commutation"
+    ],
+    "options_ta": [
+      "தண்டனை நிவாரணம் (Respite)",
+      "தண்டனை இடைநிறுத்தம் (Reprieve)",
+      "தண்டனைக் குறைப்பு (Remission)",
+      "தண்டனை மாற்றுதல் (Commutation)"
+    ],
+    "answer": "a",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Respite denotes awarding a lesser sentence in place of one originally awarded due to special facts (e.g., pregnancy, disability)."
   },
   {
     "id": "POLITY_PRESIDENT_MEDIUM_009",
@@ -672,7 +840,28 @@
       "topic": "President of India",
       "type": "Medium",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "If State Assembly re-passes bill, President MUST give assent",
+      "President can withhold assent even if State Assembly re-passes bill",
+      "President must decide within 30 days",
+      "President cannot return State bills"
+    ],
+    "options_ta": [
+      "மாநிலப் பேரவை மீண்டும் நிறைவேற்றினால் குடியரசுத் தலைவர் கட்டாயம் ஒப்புதல் அளிக்க வேண்டும்",
+      "மாநிலப் பேரவை மீண்டும் நிறைவேற்றினாலும் குடியரசுத் தலைவர் ஒப்புதலை நிறுத்தலாம்",
+      "குடியரசுத் தலைவர் 30 நாட்களுக்குள் தீர்மானிக்க வேண்டும்",
+      "மாநில மசோதாக்களைக் குடியரசுத் தலைவர் திருப்ப முடியாது"
+    ],
+    "answer": "b",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Under Article 201, second passage by State Legislature does NOT bind the President (Absolute Veto over State Bills)."
   },
   {
     "id": "POLITY_PRESIDENT_MEDIUM_010",
@@ -689,8 +878,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Re-promulgation of Ordinances without placing before Legislature is a fraud on Constitution",
-        "ta": "சட்டமன்றத்தில் சமர்ப்பிக்காமல் அவசரச் சட்டங்களை மீண்டும் பிறப்பிப்பது அரசியலமைப்புக்கு எதிரான மோசடியாகும்"
+        "en": "Ordinances become permanent acts after 6 months",
+        "ta": "அவசரச் சட்டங்கள் 6 மாதத்திற்குப் பின் நிரந்தர சட்டமாகும்"
       },
       {
         "id": "B",
@@ -704,11 +893,11 @@
       },
       {
         "id": "D",
-        "en": "Ordinances become permanent acts after 6 months",
-        "ta": "அவசரச் சட்டங்கள் 6 மாதத்திற்குப் பின் நிரந்தர சட்டமாகும்"
+        "en": "Re-promulgation of Ordinances without placing before Legislature is a fraud on Constitution",
+        "ta": "சட்டமன்றத்தில் சமர்ப்பிக்காமல் அவசரச் சட்டங்களை மீண்டும் பிறப்பிப்பது அரசியலமைப்புக்கு எதிரான மோசடியாகும்"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "D",
     "explanation": {
       "en": "D.C. Wadhwa (1987) held that successive re-promulgation of Ordinances without submitting to Legislature is a fraud on Constitution.",
       "ta": "டி.சி. வாத்வா (1987) வழக்கில் அவசரச் சட்டங்களை மீண்டும் மீண்டும் பிறப்பிப்பது அரசியலமைப்புக்கு எதிரான மோசடி எனத் தீர்ப்பளிக்கப்பட்டது."
@@ -726,8 +915,8 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Correct. Re-promulgation of Ordinances without placing before Legislature is a fraud on Constitution is the accurate constitutional answer. D.C. Wadhwa (1987) held that successive re-promulgation of Ordinances without submitting to Legislature is a fraud on Constitution.",
-        "ta": "சரி. சட்டமன்றத்தில் சமர்ப்பிக்காமல் அவசரச் சட்டங்களை மீண்டும் பிறப்பிப்பது அரசியலமைப்புக்கு எதிரான மோசடியாகும் என்பது சரியான அரசியலமைப்பு பதிலாகும். டி.சி. வாத்வா (1987) வழக்கில் அவசரச் சட்டங்களை மீண்டும் மீண்டும் பிறப்பிப்பது அரசியலமைப்புக்கு எதிரான மோசடி எனத் தீர்ப்பளிக்கப்பட்டது."
+        "en": "Incorrect. Option D (Ordinances become permanent acts after 6 months) is not supported by the constitutional facts under Article reference or President Notes.",
+        "ta": "தவறு. தெரிவு D (அவசரச் சட்டங்கள் 6 மாதத்திற்குப் பின் நிரந்தர சட்டமாகும்) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "B": {
         "en": "Incorrect. Option B (Ordinance satisfaction is immune from judicial review) is not supported by the constitutional facts under Article reference or President Notes.",
@@ -738,8 +927,8 @@
         "ta": "தவறு. தெரிவு C (அவசரச் சட்டங்கள் அடிப்படை உரிமைகளைத் திருத்தலாம்) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "D": {
-        "en": "Incorrect. Option D (Ordinances become permanent acts after 6 months) is not supported by the constitutional facts under Article reference or President Notes.",
-        "ta": "தவறு. தெரிவு D (அவசரச் சட்டங்கள் 6 மாதத்திற்குப் பின் நிரந்தர சட்டமாகும்) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
+        "en": "Correct. Re-promulgation of Ordinances without placing before Legislature is a fraud on Constitution is the accurate constitutional answer. D.C. Wadhwa (1987) held that successive re-promulgation of Ordinances without submitting to Legislature is a fraud on Constitution.",
+        "ta": "சரி. சட்டமன்றத்தில் சமர்ப்பிக்காமல் அவசரச் சட்டங்களை மீண்டும் பிறப்பிப்பது அரசியலமைப்புக்கு எதிரான மோசடியாகும் என்பது சரியான அரசியலமைப்பு பதிலாகும். டி.சி. வாத்வா (1987) வழக்கில் அவசரச் சட்டங்களை மீண்டும் மீண்டும் பிறப்பிப்பது அரசியலமைப்புக்கு எதிரான மோசடி எனத் தீர்ப்பளிக்கப்பட்டது."
       }
     },
     "metadata": {
@@ -747,7 +936,28 @@
       "topic": "President of India",
       "type": "Medium",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "Ordinances become permanent acts after 6 months",
+      "Ordinance satisfaction is immune from judicial review",
+      "Ordinances can amend Fundamental Rights",
+      "Re-promulgation of Ordinances without placing before Legislature is a fraud on Constitution"
+    ],
+    "options_ta": [
+      "அவசரச் சட்டங்கள் 6 மாதத்திற்குப் பின் நிரந்தர சட்டமாகும்",
+      "அவசரச் சட்டத் திருப்தி நீதித்துறை மறுஆய்விலிருந்து தப்பியது",
+      "அவசரச் சட்டங்கள் அடிப்படை உரிமைகளைத் திருத்தலாம்",
+      "சட்டமன்றத்தில் சமர்ப்பிக்காமல் அவசரச் சட்டங்களை மீண்டும் பிறப்பிப்பது அரசியலமைப்புக்கு எதிரான மோசடியாகும்"
+    ],
+    "answer": "d",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "D.C. Wadhwa (1987) held that successive re-promulgation of Ordinances without submitting to Legislature is a fraud on Constitution."
   },
   {
     "id": "POLITY_PRESIDENT_MEDIUM_011",
@@ -764,8 +974,8 @@
     "options": [
       {
         "id": "A",
-        "en": "CAG of India",
-        "ta": "இந்தியக் தலைமைத் தணிக்கையாளர்"
+        "en": "Speaker of Lok Sabha",
+        "ta": "மக்களவை சபாநாயகர்"
       },
       {
         "id": "B",
@@ -779,11 +989,11 @@
       },
       {
         "id": "D",
-        "en": "Speaker of Lok Sabha",
-        "ta": "மக்களவை சபாநாயகர்"
+        "en": "CAG of India",
+        "ta": "இந்தியக் தலைமைத் தணிக்கையாளர்"
       }
     ],
-    "correct_answer": "D",
+    "correct_answer": "A",
     "explanation": {
       "en": "Speaker of Lok Sabha is ELECTED by members of Lok Sabha from amongst themselves under Article 93.",
       "ta": "மக்களவை சபாநாயகர் உறுப்பினர்களால் உறுப்பு 93-ன் கீழ் தேர்ந்தெடுக்கப்படுகிறார்."
@@ -801,8 +1011,8 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Option A (CAG of India) is not supported by the constitutional facts under Article reference or President Notes.",
-        "ta": "தவறு. தெரிவு A (இந்தியக் தலைமைத் தணிக்கையாளர்) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
+        "en": "Correct. Speaker of Lok Sabha is the accurate constitutional answer. Speaker of Lok Sabha is ELECTED by members of Lok Sabha from amongst themselves under Article 93.",
+        "ta": "சரி. மக்களவை சபாநாயகர் என்பது சரியான அரசியலமைப்பு பதிலாகும். மக்களவை சபாநாயகர் உறுப்பினர்களால் உறுப்பு 93-ன் கீழ் தேர்ந்தெடுக்கப்படுகிறார்."
       },
       "B": {
         "en": "Incorrect. Option B (Attorney General for India) is not supported by the constitutional facts under Article reference or President Notes.",
@@ -813,8 +1023,8 @@
         "ta": "தவறு. இது குடியரசுத் தலைவரின் அரசியலமைப்புப் பொறுப்பை மாநில ஆளுநர்-ன் பொறுப்புடன் குழப்புகிறது."
       },
       "D": {
-        "en": "Correct. Speaker of Lok Sabha is the accurate constitutional answer. Speaker of Lok Sabha is ELECTED by members of Lok Sabha from amongst themselves under Article 93.",
-        "ta": "சரி. மக்களவை சபாநாயகர் என்பது சரியான அரசியலமைப்பு பதிலாகும். மக்களவை சபாநாயகர் உறுப்பினர்களால் உறுப்பு 93-ன் கீழ் தேர்ந்தெடுக்கப்படுகிறார்."
+        "en": "Incorrect. Option A (CAG of India) is not supported by the constitutional facts under Article reference or President Notes.",
+        "ta": "தவறு. தெரிவு A (இந்தியக் தலைமைத் தணிக்கையாளர்) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       }
     },
     "metadata": {
@@ -822,7 +1032,28 @@
       "topic": "President of India",
       "type": "Medium",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "Speaker of Lok Sabha",
+      "Attorney General for India",
+      "State Governor",
+      "CAG of India"
+    ],
+    "options_ta": [
+      "மக்களவை சபாநாயகர்",
+      "இந்தியத் தலைமை வழக்கறிஞர்",
+      "மாநில ஆளுநர்",
+      "இந்தியக் தலைமைத் தணிக்கையாளர்"
+    ],
+    "answer": "a",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Speaker of Lok Sabha is ELECTED by members of Lok Sabha from amongst themselves under Article 93."
   },
   {
     "id": "POLITY_PRESIDENT_MEDIUM_012",
@@ -839,13 +1070,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Made Cabinet advice non-binding",
-        "ta": "அமைச்சரவை ஆலோசனையைக் கட்டுப்படுத்தாததாக மாற்றியது"
+        "en": "Empowered President to return advice ONCE for reconsideration, but re-sent advice is binding",
+        "ta": "ஆலோசனையை ஒருமுறை மறுபரிசீலனைக்குத் திருப்ப அதிகாரமளித்தது, ஆனால் மீண்டும் அனுப்பினால் கட்டுப்படுத்தும்"
       },
       {
         "id": "B",
-        "en": "Empowered President to return advice ONCE for reconsideration, but re-sent advice is binding",
-        "ta": "ஆலோசனையை ஒருமுறை மறுபரிசீலனைக்குத் திருப்ப அதிகாரமளித்தது, ஆனால் மீண்டும் அனுப்பினால் கட்டுப்படுத்தும்"
+        "en": "Made Cabinet advice non-binding",
+        "ta": "அமைச்சரவை ஆலோசனையைக் கட்டுப்படுத்தாததாக மாற்றியது"
       },
       {
         "id": "C",
@@ -858,7 +1089,7 @@
         "ta": "அதிகாரத்தை நேரடியாகப் பிரதமருக்கு மாற்றியது"
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "A",
     "explanation": {
       "en": "44th CAA 1978 added proviso allowing President to return Cabinet advice ONCE for reconsideration; re-sent advice is binding.",
       "ta": "44வது திருத்தம் 1978 ஒருமுறை மறுபரிசீலனை விதியைச் சேர்த்தது; மீண்டும் அனுப்பப்படும் ஆலோசனை கட்டுப்படுத்தும்."
@@ -876,12 +1107,12 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Option A (Made Cabinet advice non-binding) is not supported by the constitutional facts under Article reference or President Notes.",
-        "ta": "தவறு. தெரிவு A (அமைச்சரவை ஆலோசனையைக் கட்டுப்படுத்தாததாக மாற்றியது) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
-      },
-      "B": {
         "en": "Correct. Empowered President to return advice ONCE for reconsideration, but re-sent advice is binding is the accurate constitutional answer. 44th CAA 1978 added proviso allowing President to return Cabinet advice ONCE for reconsideration; re-sent advice is binding.",
         "ta": "சரி. ஆலோசனையை ஒருமுறை மறுபரிசீலனைக்குத் திருப்ப அதிகாரமளித்தது, ஆனால் மீண்டும் அனுப்பினால் கட்டுப்படுத்தும் என்பது சரியான அரசியலமைப்பு பதிலாகும். 44வது திருத்தம் 1978 ஒருமுறை மறுபரிசீலனை விதியைச் சேர்த்தது; மீண்டும் அனுப்பப்படும் ஆலோசனை கட்டுப்படுத்தும்."
+      },
+      "B": {
+        "en": "Incorrect. Option A (Made Cabinet advice non-binding) is not supported by the constitutional facts under Article reference or President Notes.",
+        "ta": "தவறு. தெரிவு A (அமைச்சரவை ஆலோசனையைக் கட்டுப்படுத்தாததாக மாற்றியது) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "C": {
         "en": "Incorrect. Option C (Required 2/3rd vote to override President) is not supported by the constitutional facts under Article reference or President Notes.",
@@ -897,7 +1128,28 @@
       "topic": "President of India",
       "type": "Medium",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "Empowered President to return advice ONCE for reconsideration, but re-sent advice is binding",
+      "Made Cabinet advice non-binding",
+      "Required 2/3rd vote to override President",
+      "Transferred power to Prime Minister directly"
+    ],
+    "options_ta": [
+      "ஆலோசனையை ஒருமுறை மறுபரிசீலனைக்குத் திருப்ப அதிகாரமளித்தது, ஆனால் மீண்டும் அனுப்பினால் கட்டுப்படுத்தும்",
+      "அமைச்சரவை ஆலோசனையைக் கட்டுப்படுத்தாததாக மாற்றியது",
+      "குடியரசுத் தலைவரை மீற 2/3 பங்கு வாக்கு தேவை",
+      "அதிகாரத்தை நேரடியாகப் பிரதமருக்கு மாற்றியது"
+    ],
+    "answer": "a",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "44th CAA 1978 added proviso allowing President to return Cabinet advice ONCE for reconsideration; re-sent advice is binding."
   },
   {
     "id": "POLITY_PRESIDENT_MEDIUM_013",
@@ -919,13 +1171,13 @@
       },
       {
         "id": "B",
-        "en": "Article 19",
-        "ta": "உறுப்பு 19"
+        "en": "Article 21",
+        "ta": "உறுப்பு 21"
       },
       {
         "id": "C",
-        "en": "Article 21",
-        "ta": "உறுப்பு 21"
+        "en": "Article 19",
+        "ta": "உறுப்பு 19"
       },
       {
         "id": "D",
@@ -933,7 +1185,7 @@
         "ta": "உறுப்பு 32"
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "C",
     "explanation": {
       "en": "Article 358 automatically suspends Article 19 freedoms during National Emergency declared on War or External Aggression.",
       "ta": "போர் அல்லது வெளிநாட்டு ஆக்கிரமிப்பு தேசிய அவசரநிலையின் போது உறுப்பு 358 உறுப்பு 19-ஐத் தானாகவே இடைநிறுத்துகிறது."
@@ -955,12 +1207,12 @@
         "ta": "தவறு. தெரிவு A (உறுப்பு 14) வேறு அரசியலமைப்பு விதியைக் குறிக்கிறது."
       },
       "B": {
-        "en": "Correct. Article 19 is the accurate constitutional answer. Article 358 automatically suspends Article 19 freedoms during National Emergency declared on War or External Aggression.",
-        "ta": "சரி. உறுப்பு 19 என்பது சரியான அரசியலமைப்பு பதிலாகும். போர் அல்லது வெளிநாட்டு ஆக்கிரமிப்பு தேசிய அவசரநிலையின் போது உறுப்பு 358 உறுப்பு 19-ஐத் தானாகவே இடைநிறுத்துகிறது."
-      },
-      "C": {
         "en": "Incorrect. Option C (Article 21) references a different constitutional provision.",
         "ta": "தவறு. தெரிவு C (உறுப்பு 21) வேறு அரசியலமைப்பு விதியைக் குறிக்கிறது."
+      },
+      "C": {
+        "en": "Correct. Article 19 is the accurate constitutional answer. Article 358 automatically suspends Article 19 freedoms during National Emergency declared on War or External Aggression.",
+        "ta": "சரி. உறுப்பு 19 என்பது சரியான அரசியலமைப்பு பதிலாகும். போர் அல்லது வெளிநாட்டு ஆக்கிரமிப்பு தேசிய அவசரநிலையின் போது உறுப்பு 358 உறுப்பு 19-ஐத் தானாகவே இடைநிறுத்துகிறது."
       },
       "D": {
         "en": "Incorrect. Option D (Article 32) references a different constitutional provision.",
@@ -972,7 +1224,28 @@
       "topic": "President of India",
       "type": "Medium",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "Article 14",
+      "Article 21",
+      "Article 19",
+      "Article 32"
+    ],
+    "options_ta": [
+      "உறுப்பு 14",
+      "உறுப்பு 21",
+      "உறுப்பு 19",
+      "உறுப்பு 32"
+    ],
+    "answer": "c",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Article 358 automatically suspends Article 19 freedoms during National Emergency declared on War or External Aggression."
   },
   {
     "id": "POLITY_PRESIDENT_MEDIUM_014",
@@ -994,13 +1267,13 @@
       },
       {
         "id": "B",
-        "en": "Articles 19 and 21",
-        "ta": "உறுப்புகள் 19 மற்றும் 21"
+        "en": "Articles 20 and 21",
+        "ta": "உறுப்புகள் 20 மற்றும் 21"
       },
       {
         "id": "C",
-        "en": "Articles 20 and 21",
-        "ta": "உறுப்புகள் 20 மற்றும் 21"
+        "en": "Articles 19 and 21",
+        "ta": "உறுப்புகள் 19 மற்றும் 21"
       },
       {
         "id": "D",
@@ -1008,7 +1281,7 @@
         "ta": "உறுப்புகள் 21 மற்றும் 22"
       }
     ],
-    "correct_answer": "C",
+    "correct_answer": "B",
     "explanation": {
       "en": "44th CAA 1978 amended Article 359 ensuring Articles 20 (Conviction protection) and 21 (Life & Liberty) CAN NEVER be suspended.",
       "ta": "44வது திருத்தம் 1978 உறுப்பு 359-ஐத் திருத்தி உறுப்புகள் 20 மற்றும் 21-ஐ ஒருபோதும் இடைநிறுத்த முடியாது என விதியமைத்தது."
@@ -1030,12 +1303,12 @@
         "ta": "தவறு. தெரிவு A (உறுப்புகள் 14 மற்றும் 19) வேறு அரசியலமைப்பு விதியைக் குறிக்கிறது."
       },
       "B": {
-        "en": "Incorrect. Option B (Articles 19 and 21) references a different constitutional provision.",
-        "ta": "தவறு. தெரிவு B (உறுப்புகள் 19 மற்றும் 21) வேறு அரசியலமைப்பு விதியைக் குறிக்கிறது."
-      },
-      "C": {
         "en": "Correct. Articles 20 and 21 is the accurate constitutional answer. 44th CAA 1978 amended Article 359 ensuring Articles 20 (Conviction protection) and 21 (Life & Liberty) CAN NEVER be suspended.",
         "ta": "சரி. உறுப்புகள் 20 மற்றும் 21 என்பது சரியான அரசியலமைப்பு பதிலாகும். 44வது திருத்தம் 1978 உறுப்பு 359-ஐத் திருத்தி உறுப்புகள் 20 மற்றும் 21-ஐ ஒருபோதும் இடைநிறுத்த முடியாது என விதியமைத்தது."
+      },
+      "C": {
+        "en": "Incorrect. Option B (Articles 19 and 21) references a different constitutional provision.",
+        "ta": "தவறு. தெரிவு B (உறுப்புகள் 19 மற்றும் 21) வேறு அரசியலமைப்பு விதியைக் குறிக்கிறது."
       },
       "D": {
         "en": "Incorrect. Option D (Articles 21 and 22) references a different constitutional provision.",
@@ -1047,7 +1320,28 @@
       "topic": "President of India",
       "type": "Medium",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "Articles 14 and 19",
+      "Articles 20 and 21",
+      "Articles 19 and 21",
+      "Articles 21 and 22"
+    ],
+    "options_ta": [
+      "உறுப்புகள் 14 மற்றும் 19",
+      "உறுப்புகள் 20 மற்றும் 21",
+      "உறுப்புகள் 19 மற்றும் 21",
+      "உறுப்புகள் 21 மற்றும் 22"
+    ],
+    "answer": "b",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "44th CAA 1978 amended Article 359 ensuring Articles 20 (Conviction protection) and 21 (Life & Liberty) CAN NEVER be suspended."
   },
   {
     "id": "POLITY_PRESIDENT_MEDIUM_015",
@@ -1064,13 +1358,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Elected MLCs",
-        "ta": "தேர்ந்தெடுக்கப்பட்ட MLC-க்கள்"
+        "en": "Nominated MPs of Lok Sabha and Rajya Sabha",
+        "ta": "மக்களவை மற்றும் மாநிலங்களவை நியமன எம்பிக்கள்"
       },
       {
         "id": "B",
-        "en": "Nominated MPs of Lok Sabha and Rajya Sabha",
-        "ta": "மக்களவை மற்றும் மாநிலங்களவை நியமன எம்பிக்கள்"
+        "en": "Elected MLCs",
+        "ta": "தேர்ந்தெடுக்கப்பட்ட MLC-க்கள்"
       },
       {
         "id": "C",
@@ -1083,7 +1377,7 @@
         "ta": "மாநில ஆளுநர்கள்"
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "A",
     "explanation": {
       "en": "Nominated MPs do NOT vote in Presidential election (Art 54), but THEY DO VOTE in impeachment (Art 61).",
       "ta": "நியமன எம்பிக்கள் தேர்தலில் வாக்களிப்பதில்லை, ஆனால் பதவி நீக்கத்தில் வாக்களிக்கிறார்கள்."
@@ -1101,12 +1395,12 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Members of State Legislative Councils (MLCs) are completely excluded from the Presidential Electoral College.",
-        "ta": "தவறு. மாநில மேலவை உறுப்பினர்கள் (MLCs) குடியரசுத் தலைவர் தேர்தலில் வாக்களிக்கும் உரிமையற்றவர்கள்."
-      },
-      "B": {
         "en": "Correct. Nominated MPs of Lok Sabha and Rajya Sabha is the accurate constitutional answer. Nominated MPs do NOT vote in Presidential election (Art 54), but THEY DO VOTE in impeachment (Art 61).",
         "ta": "சரி. மக்களவை மற்றும் மாநிலங்களவை நியமன எம்பிக்கள் என்பது சரியான அரசியலமைப்பு பதிலாகும். நியமன எம்பிக்கள் தேர்தலில் வாக்களிப்பதில்லை, ஆனால் பதவி நீக்கத்தில் வாக்களிக்கிறார்கள்."
+      },
+      "B": {
+        "en": "Incorrect. Members of State Legislative Councils (MLCs) are completely excluded from the Presidential Electoral College.",
+        "ta": "தவறு. மாநில மேலவை உறுப்பினர்கள் (MLCs) குடியரசுத் தலைவர் தேர்தலில் வாக்களிக்கும் உரிமையற்றவர்கள்."
       },
       "C": {
         "en": "Incorrect. Option C (Elected MLAs of UTs) is not supported by the constitutional facts under Article reference or President Notes.",
@@ -1122,7 +1416,28 @@
       "topic": "President of India",
       "type": "Medium",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "Nominated MPs of Lok Sabha and Rajya Sabha",
+      "Elected MLCs",
+      "Elected MLAs of UTs",
+      "State Governors"
+    ],
+    "options_ta": [
+      "மக்களவை மற்றும் மாநிலங்களவை நியமன எம்பிக்கள்",
+      "தேர்ந்தெடுக்கப்பட்ட MLC-க்கள்",
+      "யூனியன் பிரதேச தேர்ந்தெடுக்கப்பட்ட எம்.எல்.ஏ-க்கள்",
+      "மாநில ஆளுநர்கள்"
+    ],
+    "answer": "a",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Nominated MPs do NOT vote in Presidential election (Art 54), but THEY DO VOTE in impeachment (Art 61)."
   },
   {
     "id": "POLITY_PRESIDENT_MEDIUM_016",
@@ -1144,8 +1459,8 @@
       },
       {
         "id": "B",
-        "en": "Absolute majority of total membership",
-        "ta": "மொத்த உறுப்பினர்களில் தனிப் பெரும்பான்மை"
+        "en": "Majority of not less than 2/3rd of the TOTAL MEMBERSHIP of the House",
+        "ta": "அவையின் மொத்த உறுப்பினர்களில் 2/3 பங்கிற்கு குறையாத பெரும்பான்மை"
       },
       {
         "id": "C",
@@ -1154,11 +1469,11 @@
       },
       {
         "id": "D",
-        "en": "Majority of not less than 2/3rd of the TOTAL MEMBERSHIP of the House",
-        "ta": "அவையின் மொத்த உறுப்பினர்களில் 2/3 பங்கிற்கு குறையாத பெரும்பான்மை"
+        "en": "Absolute majority of total membership",
+        "ta": "மொத்த உறுப்பினர்களில் தனிப் பெரும்பான்மை"
       }
     ],
-    "correct_answer": "D",
+    "correct_answer": "B",
     "explanation": {
       "en": "Article 61(2)(b) & (4) mandate a majority of NOT LESS THAN TWO-THIRDS OF TOTAL MEMBERSHIP of each House for impeachment.",
       "ta": "உறுப்பு 61(2)(b) & (4) பதவி நீக்கத்திற்கு அவையின் மொத்த உறுப்பினர்களில் 2/3 பங்கிற்கு குறையாத பெரும்பான்மையைக் கோருகிறது."
@@ -1180,16 +1495,16 @@
         "ta": "தவறு. தெரிவு A (வந்திருந்து வாக்களிப்பவர்களின் எளிய பெரும்பான்மை) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "B": {
-        "en": "Incorrect. Option B (Absolute majority of total membership) is not supported by the constitutional facts under Article reference or President Notes.",
-        "ta": "தவறு. தெரிவு B (மொத்த உறுப்பினர்களில் தனிப் பெரும்பான்மை) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
+        "en": "Correct. Majority of not less than 2/3rd of the TOTAL MEMBERSHIP of the House is the accurate constitutional answer. Article 61(2)(b) & (4) mandate a majority of NOT LESS THAN TWO-THIRDS OF TOTAL MEMBERSHIP of each House for impeachment.",
+        "ta": "சரி. அவையின் மொத்த உறுப்பினர்களில் 2/3 பங்கிற்கு குறையாத பெரும்பான்மை என்பது சரியான அரசியலமைப்பு பதிலாகும். உறுப்பு 61(2)(b) & (4) பதவி நீக்கத்திற்கு அவையின் மொத்த உறுப்பினர்களில் 2/3 பங்கிற்கு குறையாத பெரும்பான்மையைக் கோருகிறது."
       },
       "C": {
         "en": "Incorrect. Option C (2/3rd majority of members present and voting) is not supported by the constitutional facts under Article reference or President Notes.",
         "ta": "தவறு. தெரிவு C (வந்திருந்து வாக்களிப்பவர்களில் 2/3 பங்கு பெரும்பான்மை) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "D": {
-        "en": "Correct. Majority of not less than 2/3rd of the TOTAL MEMBERSHIP of the House is the accurate constitutional answer. Article 61(2)(b) & (4) mandate a majority of NOT LESS THAN TWO-THIRDS OF TOTAL MEMBERSHIP of each House for impeachment.",
-        "ta": "சரி. அவையின் மொத்த உறுப்பினர்களில் 2/3 பங்கிற்கு குறையாத பெரும்பான்மை என்பது சரியான அரசியலமைப்பு பதிலாகும். உறுப்பு 61(2)(b) & (4) பதவி நீக்கத்திற்கு அவையின் மொத்த உறுப்பினர்களில் 2/3 பங்கிற்கு குறையாத பெரும்பான்மையைக் கோருகிறது."
+        "en": "Incorrect. Option B (Absolute majority of total membership) is not supported by the constitutional facts under Article reference or President Notes.",
+        "ta": "தவறு. தெரிவு B (மொத்த உறுப்பினர்களில் தனிப் பெரும்பான்மை) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       }
     },
     "metadata": {
@@ -1197,7 +1512,28 @@
       "topic": "President of India",
       "type": "Medium",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "Simple majority of members present and voting",
+      "Majority of not less than 2/3rd of the TOTAL MEMBERSHIP of the House",
+      "2/3rd majority of members present and voting",
+      "Absolute majority of total membership"
+    ],
+    "options_ta": [
+      "வந்திருந்து வாக்களிப்பவர்களின் எளிய பெரும்பான்மை",
+      "அவையின் மொத்த உறுப்பினர்களில் 2/3 பங்கிற்கு குறையாத பெரும்பான்மை",
+      "வந்திருந்து வாக்களிப்பவர்களில் 2/3 பங்கு பெரும்பான்மை",
+      "மொத்த உறுப்பினர்களில் தனிப் பெரும்பான்மை"
+    ],
+    "answer": "b",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Article 61(2)(b) & (4) mandate a majority of NOT LESS THAN TWO-THIRDS OF TOTAL MEMBERSHIP of each House for impeachment."
   },
   {
     "id": "POLITY_PRESIDENT_MEDIUM_017",
@@ -1214,13 +1550,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Lawful for President to hold situation under Art 356 has arisen (President's Rule)",
-        "ta": "உறுப்பு 356-ன் கீழ் (குடியரசுத் தலைவர் ஆட்சி) நிலைமை ஏற்பட்டுள்ளதாகக் குடியரசுத் தலைவர் கருதுவது சட்டப்பூர்வமானது"
+        "en": "State Assembly is automatically dissolved",
+        "ta": "மாநிலச் சட்டமன்றம் தானாகக் கலைந்துவிடும்"
       },
       {
         "id": "B",
-        "en": "State Assembly is automatically dissolved",
-        "ta": "மாநிலச் சட்டமன்றம் தானாகக் கலைந்துவிடும்"
+        "en": "Lawful for President to hold situation under Art 356 has arisen (President's Rule)",
+        "ta": "உறுப்பு 356-ன் கீழ் (குடியரசுத் தலைவர் ஆட்சி) நிலைமை ஏற்பட்டுள்ளதாகக் குடியரசுத் தலைவர் கருதுவது சட்டப்பூர்வமானது"
       },
       {
         "id": "C",
@@ -1233,7 +1569,7 @@
         "ta": "நிதி அமைச்சர் மானியங்களை நிரந்தரமாக முடக்குவார்"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "B",
     "explanation": {
       "en": "Article 365 provides that failure to comply with Union directions makes it lawful for President to invoke Article 356 (President's Rule).",
       "ta": "மத்திய வழிகாட்டலை மீறினால் உறுப்பு 356 குடியரசுத் தலைவர் ஆட்சியை அமல்படுத்த உறுப்பு 365 சட்டப்பூர்வ காரணமளிக்கிறது."
@@ -1251,12 +1587,12 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Correct. Lawful for President to hold situation under Art 356 has arisen (President's Rule) is the accurate constitutional answer. Article 365 provides that failure to comply with Union directions makes it lawful for President to invoke Article 356 (President's Rule).",
-        "ta": "சரி. உறுப்பு 356-ன் கீழ் (குடியரசுத் தலைவர் ஆட்சி) நிலைமை ஏற்பட்டுள்ளதாகக் குடியரசுத் தலைவர் கருதுவது சட்டப்பூர்வமானது என்பது சரியான அரசியலமைப்பு பதிலாகும். மத்திய வழிகாட்டலை மீறினால் உறுப்பு 356 குடியரசுத் தலைவர் ஆட்சியை அமல்படுத்த உறுப்பு 365 சட்டப்பூர்வ காரணமளிக்கிறது."
-      },
-      "B": {
         "en": "Incorrect. Option B (State Assembly is automatically dissolved) is not supported by the constitutional facts under Article reference or President Notes.",
         "ta": "தவறு. தெரிவு B (மாநிலச் சட்டமன்றம் தானாகக் கலைந்துவிடும்) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
+      },
+      "B": {
+        "en": "Correct. Lawful for President to hold situation under Art 356 has arisen (President's Rule) is the accurate constitutional answer. Article 365 provides that failure to comply with Union directions makes it lawful for President to invoke Article 356 (President's Rule).",
+        "ta": "சரி. உறுப்பு 356-ன் கீழ் (குடியரசுத் தலைவர் ஆட்சி) நிலைமை ஏற்பட்டுள்ளதாகக் குடியரசுத் தலைவர் கருதுவது சட்டப்பூர்வமானது என்பது சரியான அரசியலமைப்பு பதிலாகும். மத்திய வழிகாட்டலை மீறினால் உறுப்பு 356 குடியரசுத் தலைவர் ஆட்சியை அமல்படுத்த உறுப்பு 365 சட்டப்பூர்வ காரணமளிக்கிறது."
       },
       "C": {
         "en": "Incorrect. Option C (Supreme Court dismisses Chief Minister) is not supported by the constitutional facts under Article reference or President Notes.",
@@ -1272,7 +1608,28 @@
       "topic": "President of India",
       "type": "Medium",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "State Assembly is automatically dissolved",
+      "Lawful for President to hold situation under Art 356 has arisen (President's Rule)",
+      "Supreme Court dismisses Chief Minister",
+      "Union Finance Minister freezes all grants permanently"
+    ],
+    "options_ta": [
+      "மாநிலச் சட்டமன்றம் தானாகக் கலைந்துவிடும்",
+      "உறுப்பு 356-ன் கீழ் (குடியரசுத் தலைவர் ஆட்சி) நிலைமை ஏற்பட்டுள்ளதாகக் குடியரசுத் தலைவர் கருதுவது சட்டப்பூர்வமானது",
+      "உச்ச நீதிமன்றம் முதல்வரை நீக்கும்",
+      "நிதி அமைச்சர் மானியங்களை நிரந்தரமாக முடக்குவார்"
+    ],
+    "answer": "b",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Article 365 provides that failure to comply with Union directions makes it lawful for President to invoke Article 356 (President's Rule)."
   },
   {
     "id": "POLITY_PRESIDENT_MEDIUM_018",
@@ -1299,16 +1656,16 @@
       },
       {
         "id": "C",
-        "en": "All Union/State servants, INCLUDING Judges of Supreme Court and High Courts",
-        "ta": "உச்ச நீதிமன்ற & உயர் நீதிமன்ற நீதிபதிகள் உட்பட அனைத்து ஒன்றியம்/மாநில ஊழியர்கள்"
+        "en": "Only Members of Parliament",
+        "ta": "நாடாளுமன்ற உறுப்பினர்கள் மட்டுமே"
       },
       {
         "id": "D",
-        "en": "Only Members of Parliament",
-        "ta": "நாடாளுமன்ற உறுப்பினர்கள் மட்டுமே"
+        "en": "All Union/State servants, INCLUDING Judges of Supreme Court and High Courts",
+        "ta": "உச்ச நீதிமன்ற & உயர் நீதிமன்ற நீதிபதிகள் உட்பட அனைத்து ஒன்றியம்/மாநில ஊழியர்கள்"
       }
     ],
-    "correct_answer": "C",
+    "correct_answer": "D",
     "explanation": {
       "en": "Article 360(4)(b) empowers President to reduce salaries of all Union/State servants, INCLUDING Supreme Court & High Court Judges.",
       "ta": "உறுப்பு 360(4)(b) உச்ச நீதிமன்ற & உயர் நீதிமன்ற நீதிபதிகள் உட்பட அனைத்து அரசு ஊழியர்களின் ஊதியத்தைக் குறைக்க அதிகாரமளிக்கிறது."
@@ -1334,12 +1691,12 @@
         "ta": "தவறு. தெரிவு B (மாநில அரசு ஊழியர்கள் மட்டுமே) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "C": {
-        "en": "Correct. All Union/State servants, INCLUDING Judges of Supreme Court and High Courts is the accurate constitutional answer. Article 360(4)(b) empowers President to reduce salaries of all Union/State servants, INCLUDING Supreme Court & High Court Judges.",
-        "ta": "சரி. உச்ச நீதிமன்ற & உயர் நீதிமன்ற நீதிபதிகள் உட்பட அனைத்து ஒன்றியம்/மாநில ஊழியர்கள் என்பது சரியான அரசியலமைப்பு பதிலாகும். உறுப்பு 360(4)(b) உச்ச நீதிமன்ற & உயர் நீதிமன்ற நீதிபதிகள் உட்பட அனைத்து அரசு ஊழியர்களின் ஊதியத்தைக் குறைக்க அதிகாரமளிக்கிறது."
-      },
-      "D": {
         "en": "Incorrect. Option D (Only Members of Parliament) is not supported by the constitutional facts under Article reference or President Notes.",
         "ta": "தவறு. தெரிவு D (நாடாளுமன்ற உறுப்பினர்கள் மட்டுமே) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
+      },
+      "D": {
+        "en": "Correct. All Union/State servants, INCLUDING Judges of Supreme Court and High Courts is the accurate constitutional answer. Article 360(4)(b) empowers President to reduce salaries of all Union/State servants, INCLUDING Supreme Court & High Court Judges.",
+        "ta": "சரி. உச்ச நீதிமன்ற & உயர் நீதிமன்ற நீதிபதிகள் உட்பட அனைத்து ஒன்றியம்/மாநில ஊழியர்கள் என்பது சரியான அரசியலமைப்பு பதிலாகும். உறுப்பு 360(4)(b) உச்ச நீதிமன்ற & உயர் நீதிமன்ற நீதிபதிகள் உட்பட அனைத்து அரசு ஊழியர்களின் ஊதியத்தைக் குறைக்க அதிகாரமளிக்கிறது."
       }
     },
     "metadata": {
@@ -1347,7 +1704,28 @@
       "topic": "President of India",
       "type": "Medium",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "Only Group C and D employees",
+      "Only State government employees",
+      "Only Members of Parliament",
+      "All Union/State servants, INCLUDING Judges of Supreme Court and High Courts"
+    ],
+    "options_ta": [
+      "குரூப் சி & டி ஊழியர்கள் மட்டுமே",
+      "மாநில அரசு ஊழியர்கள் மட்டுமே",
+      "நாடாளுமன்ற உறுப்பினர்கள் மட்டுமே",
+      "உச்ச நீதிமன்ற & உயர் நீதிமன்ற நீதிபதிகள் உட்பட அனைத்து ஒன்றியம்/மாநில ஊழியர்கள்"
+    ],
+    "answer": "d",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Article 360(4)(b) empowers President to reduce salaries of all Union/State servants, INCLUDING Supreme Court & High Court Judges."
   },
   {
     "id": "POLITY_PRESIDENT_MEDIUM_019",
@@ -1422,7 +1800,28 @@
       "topic": "President of India",
       "type": "Medium",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "Can directly annul the Minister's decision",
+      "Can require PM to submit the matter for consideration of Council of Ministers",
+      "Can dismiss the Minister unilaterally",
+      "Can refer the decision to Supreme Court"
+    ],
+    "options_ta": [
+      "அமைச்சரின் முடிவை நேரடியாக ரத்து செய்யலாம்",
+      "அவ்விகாரத்தை அமைச்சரவையின் பரிசீலனைக்கு வைக்குமாறு பிரதமரைக் கேட்டுக் கொள்ளலாம்",
+      "அமைச்சரைத் தன்னிச்சையாகப் பதவி நீக்கம் செய்யலாம்",
+      "முடிவை உச்ச நீதிமன்றத்திற்கு அனுப்பலாம்"
+    ],
+    "answer": "b",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Article 78(c) enables President to require PM to submit for Cabinet consideration any decision taken by a Minister but not considered by Cab..."
   },
   {
     "id": "POLITY_PRESIDENT_MEDIUM_020",
@@ -1497,7 +1896,28 @@
       "topic": "President of India",
       "type": "Medium",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "Unconstitutional and invalid",
+      "Carries out routine day-to-day admin under Art 74, but cannot take major policy decisions",
+      "Enjoys full powers to enact major policies and ordinances",
+      "Replaces President as De Jure head of state"
+    ],
+    "options_ta": [
+      "அரசியலமைப்புக்கு எதிரானது மற்றும் செல்லாது",
+      "நிர்வாகக் காலியிடத்தைத் தடுக்க உறுப்பு 74-ன் கீழ் அன்றாட நிர்வாகத்தை கவனிக்கும், ஆனால் முக்கிய கொள்கை முடிவுகளை எடுக்க முடியாது",
+      "முக்கிய கொள்கைகள் மற்றும் அவசரச் சட்டங்களை இயற்ற முழு அதிகாரம் உண்டு",
+      "குடியரசுத் தலைவருக்குப் பதிலாக De Jure தலைவராக மாறுகிறது"
+    ],
+    "answer": "b",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "A Caretaker Ministry carries out routine administration under Art 74 to prevent executive vacuum, but lacks political mandate for major poli..."
   },
   {
     "id": "POLITY_PRESIDENT_MEDIUM_021",
@@ -1519,13 +1939,13 @@
       },
       {
         "id": "B",
-        "en": "Vice-President of India",
-        "ta": "இந்தியத் துணைத் தலைவர்"
+        "en": "Chief Justice of India",
+        "ta": "இந்தியத் தலைமை நீதிபதி"
       },
       {
         "id": "C",
-        "en": "Chief Justice of India",
-        "ta": "இந்தியத் தலைமை நீதிபதி"
+        "en": "Vice-President of India",
+        "ta": "இந்தியத் துணைத் தலைவர்"
       },
       {
         "id": "D",
@@ -1533,7 +1953,7 @@
         "ta": "மக்களவை சபாநாயகர்"
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "C",
     "explanation": {
       "en": "Article 65(2) specifies Vice-President discharges functions of President during temporary absence or illness.",
       "ta": "வருகையின்மை/நோயின் போது துணைத் தலைவர் குடியரசுத் தலைவரின் பணிகளைச் செய்வார் என உறுப்பு 65(2) கூறுகிறது."
@@ -1555,12 +1975,12 @@
         "ta": "தவறு. இது குடியரசுத் தலைவரின் அரசியலமைப்புப் பொறுப்பை பிரதமர்-ன் பொறுப்புடன் குழப்புகிறது."
       },
       "B": {
-        "en": "Correct. Vice-President of India is the accurate constitutional answer. Article 65(2) specifies Vice-President discharges functions of President during temporary absence or illness.",
-        "ta": "சரி. இந்தியத் துணைத் தலைவர் என்பது சரியான அரசியலமைப்பு பதிலாகும். வருகையின்மை/நோயின் போது துணைத் தலைவர் குடியரசுத் தலைவரின் பணிகளைச் செய்வார் என உறுப்பு 65(2) கூறுகிறது."
-      },
-      "C": {
         "en": "Incorrect. Option C (Chief Justice of India) is not supported by the constitutional facts under Article reference or President Notes.",
         "ta": "தவறு. தெரிவு C (இந்தியத் தலைமை நீதிபதி) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
+      },
+      "C": {
+        "en": "Correct. Vice-President of India is the accurate constitutional answer. Article 65(2) specifies Vice-President discharges functions of President during temporary absence or illness.",
+        "ta": "சரி. இந்தியத் துணைத் தலைவர் என்பது சரியான அரசியலமைப்பு பதிலாகும். வருகையின்மை/நோயின் போது துணைத் தலைவர் குடியரசுத் தலைவரின் பணிகளைச் செய்வார் என உறுப்பு 65(2) கூறுகிறது."
       },
       "D": {
         "en": "Incorrect. Option D (Speaker of Lok Sabha) is not supported by the constitutional facts under Article reference or President Notes.",
@@ -1572,7 +1992,28 @@
       "topic": "President of India",
       "type": "Medium",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "Prime Minister",
+      "Chief Justice of India",
+      "Vice-President of India",
+      "Speaker of Lok Sabha"
+    ],
+    "options_ta": [
+      "பிரதமர்",
+      "இந்தியத் தலைமை நீதிபதி",
+      "இந்தியத் துணைத் தலைவர்",
+      "மக்களவை சபாநாயகர்"
+    ],
+    "answer": "c",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Article 65(2) specifies Vice-President discharges functions of President during temporary absence or illness."
   },
   {
     "id": "POLITY_PRESIDENT_MEDIUM_022",
@@ -1589,8 +2030,8 @@
     "options": [
       {
         "id": "A",
-        "en": "President is Head of State (De Jure); PM is Head of Govt (De Facto) exercising real power under Art 74",
-        "ta": "குடியரசுத் தலைவர் நாட்டின் தலைவர் (De Jure); பிரதமர் அரசின் தலைவர் (De Facto) உறுப்பு 74-ன் கீழ் உண்மையான அதிகாரத்தைச் செலுத்துபவர்"
+        "en": "Both enjoy equal executive authority",
+        "ta": "இருவரும் சமமான நிர்வாக அதிகாரத்தைப் பெறுகிறார்கள்"
       },
       {
         "id": "B",
@@ -1604,11 +2045,11 @@
       },
       {
         "id": "D",
-        "en": "Both enjoy equal executive authority",
-        "ta": "இருவரும் சமமான நிர்வாக அதிகாரத்தைப் பெறுகிறார்கள்"
+        "en": "President is Head of State (De Jure); PM is Head of Govt (De Facto) exercising real power under Art 74",
+        "ta": "குடியரசுத் தலைவர் நாட்டின் தலைவர் (De Jure); பிரதமர் அரசின் தலைவர் (De Facto) உறுப்பு 74-ன் கீழ் உண்மையான அதிகாரத்தைச் செலுத்துபவர்"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "D",
     "explanation": {
       "en": "President is Nominal (De Jure) Executive and Head of State; Prime Minister is Real (De Facto) Executive and Head of Govt.",
       "ta": "குடியரசுத் தலைவர் பெயரளவு நிர்வாகி & நாட்டின் தலைவர்; பிரதமர் உண்மை நிர்வாகி & அரசின் தலைவர்."
@@ -1626,8 +2067,8 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Correct. President is Head of State (De Jure); PM is Head of Govt (De Facto) exercising real power under Art 74 is the accurate constitutional answer. President is Nominal (De Jure) Executive and Head of State; Prime Minister is Real (De Facto) Executive and Head of Govt.",
-        "ta": "சரி. குடியரசுத் தலைவர் நாட்டின் தலைவர் (De Jure); பிரதமர் அரசின் தலைவர் (De Facto) உறுப்பு 74-ன் கீழ் உண்மையான அதிகாரத்தைச் செலுத்துபவர் என்பது சரியான அரசியலமைப்பு பதிலாகும். குடியரசுத் தலைவர் பெயரளவு நிர்வாகி & நாட்டின் தலைவர்; பிரதமர் உண்மை நிர்வாகி & அரசின் தலைவர்."
+        "en": "Incorrect. Option D (Both enjoy equal executive authority) is not supported by the constitutional facts under Article reference or President Notes.",
+        "ta": "தவறு. தெரிவு D (இருவரும் சமமான நிர்வாக அதிகாரத்தைப் பெறுகிறார்கள்) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "B": {
         "en": "Incorrect. Option B (President exercises real power in peacetime, PM in emergency) is not supported by the constitutional facts under Article reference or President Notes.",
@@ -1638,8 +2079,8 @@
         "ta": "தவறு. தெரிவு C (பிரதமர் நாட்டின் தலைவர்; குடியரசுத் தலைவர் அரசின் தலைவர்) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "D": {
-        "en": "Incorrect. Option D (Both enjoy equal executive authority) is not supported by the constitutional facts under Article reference or President Notes.",
-        "ta": "தவறு. தெரிவு D (இருவரும் சமமான நிர்வாக அதிகாரத்தைப் பெறுகிறார்கள்) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
+        "en": "Correct. President is Head of State (De Jure); PM is Head of Govt (De Facto) exercising real power under Art 74 is the accurate constitutional answer. President is Nominal (De Jure) Executive and Head of State; Prime Minister is Real (De Facto) Executive and Head of Govt.",
+        "ta": "சரி. குடியரசுத் தலைவர் நாட்டின் தலைவர் (De Jure); பிரதமர் அரசின் தலைவர் (De Facto) உறுப்பு 74-ன் கீழ் உண்மையான அதிகாரத்தைச் செலுத்துபவர் என்பது சரியான அரசியலமைப்பு பதிலாகும். குடியரசுத் தலைவர் பெயரளவு நிர்வாகி & நாட்டின் தலைவர்; பிரதமர் உண்மை நிர்வாகி & அரசின் தலைவர்."
       }
     },
     "metadata": {
@@ -1647,7 +2088,28 @@
       "topic": "President of India",
       "type": "Medium",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "Both enjoy equal executive authority",
+      "President exercises real power in peacetime, PM in emergency",
+      "PM is Head of State; President is Head of Govt",
+      "President is Head of State (De Jure); PM is Head of Govt (De Facto) exercising real power under Art 74"
+    ],
+    "options_ta": [
+      "இருவரும் சமமான நிர்வாக அதிகாரத்தைப் பெறுகிறார்கள்",
+      "சாதாரண காலத்தில் குடியரசுத் தலைவர், அவசரநிலையில் பிரதமர் அதிகாரத்தைச் செலுத்துவார்",
+      "பிரதமர் நாட்டின் தலைவர்; குடியரசுத் தலைவர் அரசின் தலைவர்",
+      "குடியரசுத் தலைவர் நாட்டின் தலைவர் (De Jure); பிரதமர் அரசின் தலைவர் (De Facto) உறுப்பு 74-ன் கீழ் உண்மையான அதிகாரத்தைச் செலுத்துபவர்"
+    ],
+    "answer": "d",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "President is Nominal (De Jure) Executive and Head of State; Prime Minister is Real (De Facto) Executive and Head of Govt."
   },
   {
     "id": "POLITY_PRESIDENT_MEDIUM_023",
@@ -1664,8 +2126,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Can be introduced ONLY on prior recommendation of President",
-        "ta": "குடியரசுத் தலைவரின் முன் பரிந்துரையின் பேரில் மட்டுமே அறிமுகப்படுத்தப்பட முடியும்"
+        "en": "Does not require President's recommendation at any stage",
+        "ta": "எந்த நிலையிலும் குடியரசுத் தலைவரின் பரிந்துரை தேவையில்லை"
       },
       {
         "id": "B",
@@ -1679,11 +2141,11 @@
       },
       {
         "id": "D",
-        "en": "Does not require President's recommendation at any stage",
-        "ta": "எந்த நிலையிலும் குடியரசுத் தலைவரின் பரிந்துரை தேவையில்லை"
+        "en": "Can be introduced ONLY on prior recommendation of President",
+        "ta": "குடியரசுத் தலைவரின் முன் பரிந்துரையின் பேரில் மட்டுமே அறிமுகப்படுத்தப்பட முடியும்"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "D",
     "explanation": {
       "en": "Article 117(1) mandates a Money Bill (Art 110) shall NOT be introduced except on recommendation of President, and ONLY in Lok Sabha.",
       "ta": "பண மசோதா குடியரசுத் தலைவரின் முன் பரிந்துரையுடன் மக்களவையில் மட்டுமே அறிமுகப்படுத்தப்பட முடியும்."
@@ -1701,8 +2163,8 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Correct. Can be introduced ONLY on prior recommendation of President is the accurate constitutional answer. Article 117(1) mandates a Money Bill (Art 110) shall NOT be introduced except on recommendation of President, and ONLY in Lok Sabha.",
-        "ta": "சரி. குடியரசுத் தலைவரின் முன் பரிந்துரையின் பேரில் மட்டுமே அறிமுகப்படுத்தப்பட முடியும் என்பது சரியான அரசியலமைப்பு பதிலாகும். பண மசோதா குடியரசுத் தலைவரின் முன் பரிந்துரையுடன் மக்களவையில் மட்டுமே அறிமுகப்படுத்தப்பட முடியும்."
+        "en": "Incorrect. Option D (Does not require President's recommendation at any stage) is not supported by the constitutional facts under Article reference or President Notes.",
+        "ta": "தவறு. தெரிவு D (எந்த நிலையிலும் குடியரசுத் தலைவரின் பரிந்துரை தேவையில்லை) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "B": {
         "en": "Incorrect. Option B (Can be introduced in either House directly) is not supported by the constitutional facts under Article reference or President Notes.",
@@ -1713,8 +2175,8 @@
         "ta": "தவறு. இது குடியரசுத் தலைவரின் அரசியலமைப்புப் பொறுப்பை மாநில ஆளுநர்களின் 2/3 பங்கு பரிந்துரை தேவை-ன் பொறுப்புடன் குழப்புகிறது."
       },
       "D": {
-        "en": "Incorrect. Option D (Does not require President's recommendation at any stage) is not supported by the constitutional facts under Article reference or President Notes.",
-        "ta": "தவறு. தெரிவு D (எந்த நிலையிலும் குடியரசுத் தலைவரின் பரிந்துரை தேவையில்லை) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
+        "en": "Correct. Can be introduced ONLY on prior recommendation of President is the accurate constitutional answer. Article 117(1) mandates a Money Bill (Art 110) shall NOT be introduced except on recommendation of President, and ONLY in Lok Sabha.",
+        "ta": "சரி. குடியரசுத் தலைவரின் முன் பரிந்துரையின் பேரில் மட்டுமே அறிமுகப்படுத்தப்பட முடியும் என்பது சரியான அரசியலமைப்பு பதிலாகும். பண மசோதா குடியரசுத் தலைவரின் முன் பரிந்துரையுடன் மக்களவையில் மட்டுமே அறிமுகப்படுத்தப்பட முடியும்."
       }
     },
     "metadata": {
@@ -1722,7 +2184,28 @@
       "topic": "President of India",
       "type": "Medium",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "Does not require President's recommendation at any stage",
+      "Can be introduced in either House directly",
+      "Requires 2/3rd majority recommendation of State Governors",
+      "Can be introduced ONLY on prior recommendation of President"
+    ],
+    "options_ta": [
+      "எந்த நிலையிலும் குடியரசுத் தலைவரின் பரிந்துரை தேவையில்லை",
+      "எந்த அவையிலும் நேரடியாக அறிமுகப்படுத்தப்படலாம்",
+      "மாநில ஆளுநர்களின் 2/3 பங்கு பரிந்துரை தேவை",
+      "குடியரசுத் தலைவரின் முன் பரிந்துரையின் பேரில் மட்டுமே அறிமுகப்படுத்தப்பட முடியும்"
+    ],
+    "answer": "d",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Article 117(1) mandates a Money Bill (Art 110) shall NOT be introduced except on recommendation of President, and ONLY in Lok Sabha."
   },
   {
     "id": "POLITY_PRESIDENT_MEDIUM_024",
@@ -1739,13 +2222,13 @@
     "options": [
       {
         "id": "A",
-        "en": "In the name of the Prime Minister",
-        "ta": "பிரதமரின் பெயரால்"
+        "en": "In the name of the President of India",
+        "ta": "இந்தியக் குடியரசுத் தலைவரின் பெயரால்"
       },
       {
         "id": "B",
-        "en": "In the name of the President of India",
-        "ta": "இந்தியக் குடியரசுத் தலைவரின் பெயரால்"
+        "en": "In the name of the Prime Minister",
+        "ta": "பிரதமரின் பெயரால்"
       },
       {
         "id": "C",
@@ -1758,7 +2241,7 @@
         "ta": "கேபினட் செயலாளரின் பெயரால்"
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "A",
     "explanation": {
       "en": "Article 77(1) mandates all executive action of Government of India shall be expressed to be taken in the name of the President.",
       "ta": "இந்திய அரசின் அனைத்து நிர்வாக நடவடிக்கைகளும் குடியரசுத் தலைவர் பெயரால் எடுக்கப்படுவதாகத் தெரிவிக்கப்பட வேண்டும்."
@@ -1776,12 +2259,12 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Incorrect. This confuses the President's constitutional role with that of the In the name of the Prime Minister.",
-        "ta": "தவறு. இது குடியரசுத் தலைவரின் அரசியலமைப்புப் பொறுப்பை பிரதமரின் பெயரால்-ன் பொறுப்புடன் குழப்புகிறது."
-      },
-      "B": {
         "en": "Correct. In the name of the President of India is the accurate constitutional answer. Article 77(1) mandates all executive action of Government of India shall be expressed to be taken in the name of the President.",
         "ta": "சரி. இந்தியக் குடியரசுத் தலைவரின் பெயரால் என்பது சரியான அரசியலமைப்பு பதிலாகும். இந்திய அரசின் அனைத்து நிர்வாக நடவடிக்கைகளும் குடியரசுத் தலைவர் பெயரால் எடுக்கப்படுவதாகத் தெரிவிக்கப்பட வேண்டும்."
+      },
+      "B": {
+        "en": "Incorrect. This confuses the President's constitutional role with that of the In the name of the Prime Minister.",
+        "ta": "தவறு. இது குடியரசுத் தலைவரின் அரசியலமைப்புப் பொறுப்பை பிரதமரின் பெயரால்-ன் பொறுப்புடன் குழப்புகிறது."
       },
       "C": {
         "en": "Incorrect. Option C (In the name of Parliament) is not supported by the constitutional facts under Article reference or President Notes.",
@@ -1797,7 +2280,28 @@
       "topic": "President of India",
       "type": "Medium",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "In the name of the President of India",
+      "In the name of the Prime Minister",
+      "In the name of Parliament",
+      "In the name of Cabinet Secretary"
+    ],
+    "options_ta": [
+      "இந்தியக் குடியரசுத் தலைவரின் பெயரால்",
+      "பிரதமரின் பெயரால்",
+      "நாடாளுமன்றத்தின் பெயரால்",
+      "கேபினட் செயலாளரின் பெயரால்"
+    ],
+    "answer": "a",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Article 77(1) mandates all executive action of Government of India shall be expressed to be taken in the name of the President."
   },
   {
     "id": "POLITY_PRESIDENT_MEDIUM_025",
@@ -1819,13 +2323,13 @@
       },
       {
         "id": "B",
-        "en": "Civil proceedings can be instituted after giving 2 months prior written notice",
-        "ta": "2 மாத முன் எழுத்துப்பூர்வ அறிவிப்பு அளித்த பின் உரிமையியல் நடவடிக்கையைத் தொடங்கலாம்"
+        "en": "Civil proceedings require Supreme Court permission",
+        "ta": "உரிமையியல் நடவடிக்கைக்கு உச்ச நீதிமன்ற அனுமதி தேவை"
       },
       {
         "id": "C",
-        "en": "Civil proceedings require Supreme Court permission",
-        "ta": "உரிமையியல் நடவடிக்கைக்கு உச்ச நீதிமன்ற அனுமதி தேவை"
+        "en": "Civil proceedings can be instituted after giving 2 months prior written notice",
+        "ta": "2 மாத முன் எழுத்துப்பூர்வ அறிவிப்பு அளித்த பின் உரிமையியல் நடவடிக்கையைத் தொடங்கலாம்"
       },
       {
         "id": "D",
@@ -1833,7 +2337,7 @@
         "ta": "அறிவிப்பின்றி உடனடியாகத் தொடங்கலாம்"
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "C",
     "explanation": {
       "en": "Article 361(4) provides civil proceedings for personal acts can be instituted during term after giving 2 months written notice.",
       "ta": "தனிப்பட்ட செயல்களுக்கான உரிமையியல் நடவடிக்கைகளை 2 மாத முன் எழுத்துப்பூர்வ அறிவிப்பிற்குப் பின் தொடங்கலாம்."
@@ -1855,12 +2359,12 @@
         "ta": "தவறு. தெரிவு A (உரிமையியல் நடவடிக்கைகள் முற்றிலும் தடைசெய்யப்பட்டுள்ளன) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "B": {
-        "en": "Correct. Civil proceedings can be instituted after giving 2 months prior written notice is the accurate constitutional answer. Article 361(4) provides civil proceedings for personal acts can be instituted during term after giving 2 months written notice.",
-        "ta": "சரி. 2 மாத முன் எழுத்துப்பூர்வ அறிவிப்பு அளித்த பின் உரிமையியல் நடவடிக்கையைத் தொடங்கலாம் என்பது சரியான அரசியலமைப்பு பதிலாகும். தனிப்பட்ட செயல்களுக்கான உரிமையியல் நடவடிக்கைகளை 2 மாத முன் எழுத்துப்பூர்வ அறிவிப்பிற்குப் பின் தொடங்கலாம்."
-      },
-      "C": {
         "en": "Incorrect. Option C (Civil proceedings require Supreme Court permission) is not supported by the constitutional facts under Article reference or President Notes.",
         "ta": "தவறு. தெரிவு C (உரிமையியல் நடவடிக்கைக்கு உச்ச நீதிமன்ற அனுமதி தேவை) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
+      },
+      "C": {
+        "en": "Correct. Civil proceedings can be instituted after giving 2 months prior written notice is the accurate constitutional answer. Article 361(4) provides civil proceedings for personal acts can be instituted during term after giving 2 months written notice.",
+        "ta": "சரி. 2 மாத முன் எழுத்துப்பூர்வ அறிவிப்பு அளித்த பின் உரிமையியல் நடவடிக்கையைத் தொடங்கலாம் என்பது சரியான அரசியலமைப்பு பதிலாகும். தனிப்பட்ட செயல்களுக்கான உரிமையியல் நடவடிக்கைகளை 2 மாத முன் எழுத்துப்பூர்வ அறிவிப்பிற்குப் பின் தொடங்கலாம்."
       },
       "D": {
         "en": "Incorrect. Option D (Civil proceedings can be started immediately without notice) is not supported by the constitutional facts under Article reference or President Notes.",
@@ -1872,7 +2376,28 @@
       "topic": "President of India",
       "type": "Medium",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "Civil proceedings are totally prohibited",
+      "Civil proceedings require Supreme Court permission",
+      "Civil proceedings can be instituted after giving 2 months prior written notice",
+      "Civil proceedings can be started immediately without notice"
+    ],
+    "options_ta": [
+      "உரிமையியல் நடவடிக்கைகள் முற்றிலும் தடைசெய்யப்பட்டுள்ளன",
+      "உரிமையியல் நடவடிக்கைக்கு உச்ச நீதிமன்ற அனுமதி தேவை",
+      "2 மாத முன் எழுத்துப்பூர்வ அறிவிப்பு அளித்த பின் உரிமையியல் நடவடிக்கையைத் தொடங்கலாம்",
+      "அறிவிப்பின்றி உடனடியாகத் தொடங்கலாம்"
+    ],
+    "answer": "c",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Article 361(4) provides civil proceedings for personal acts can be instituted during term after giving 2 months written notice."
   },
   {
     "id": "POLITY_PRESIDENT_MEDIUM_026",
@@ -1947,7 +2472,28 @@
       "topic": "President of India",
       "type": "Medium",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "Must be a citizen of India",
+      "Must have completed 35 years of age",
+      "Must be qualified for election as a member of Rajya Sabha",
+      "Must not hold any office of profit under Union or State Government"
+    ],
+    "options_ta": [
+      "இந்தியக் குடிமகனாக இருக்க வேண்டும்",
+      "35 வயதைப் பூர்த்தி செய்திருக்க வேண்டும்",
+      "மாநிலங்களவை உறுப்பினராகத் தேர்ந்தெடுக்கப்படத் தகுதி பெற்றிருக்க வேண்டும்",
+      "ஒன்றியம் அல்லது மாநில அரசில் ஆதாயம் தரும் பதவி வகிக்கக் கூடாது"
+    ],
+    "answer": "c",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Article 58(1)(c) requires qualification for LOK SABHA membership, NOT Rajya Sabha."
   },
   {
     "id": "POLITY_PRESIDENT_MEDIUM_027",
@@ -1964,13 +2510,13 @@
     "options": [
       {
         "id": "A",
-        "en": "They can retain both posts simultaneously",
-        "ta": "இரு பதவிகளையும் ஒரே நேரத்தில் வைத்திருக்கலாம்"
+        "en": "They are deemed to have vacated their seat on the date they enter upon office as President",
+        "ta": "குடியரசுத் தலைவராகப் பொறுப்பேற்கும் தேதியில் அவர்களின் இடம் காலியானதாகக் கருதப்படும்"
       },
       {
         "id": "B",
-        "en": "They are deemed to have vacated their seat on the date they enter upon office as President",
-        "ta": "குடியரசுத் தலைவராகப் பொறுப்பேற்கும் தேதியில் அவர்களின் இடம் காலியானதாகக் கருதப்படும்"
+        "en": "They can retain both posts simultaneously",
+        "ta": "இரு பதவிகளையும் ஒரே நேரத்தில் வைத்திருக்கலாம்"
       },
       {
         "id": "C",
@@ -1983,7 +2529,7 @@
         "ta": "சபாநாயகர் தீர்மானிப்பார்"
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "A",
     "explanation": {
       "en": "Article 59(1) states if a member of Parliament or State Legislature is elected President, he shall be deemed to have vacated his seat on date he enters office.",
       "ta": "குடியரசுத் தலைவராகப் பொறுப்பேற்கும் தேதியில் நாடாளுமன்றம்/சட்டமன்றத்தில் அவரது இடம் காலியானதாகக் கருதப்படும்."
@@ -2001,12 +2547,12 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Option A (They can retain both posts simultaneously) is not supported by the constitutional facts under Article reference or President Notes.",
-        "ta": "தவறு. தெரிவு A (இரு பதவிகளையும் ஒரே நேரத்தில் வைத்திருக்கலாம்) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
-      },
-      "B": {
         "en": "Correct. They are deemed to have vacated their seat on the date they enter upon office as President is the accurate constitutional answer. Article 59(1) states if a member of Parliament or State Legislature is elected President, he shall be deemed to have vacated his seat on date he enters office.",
         "ta": "சரி. குடியரசுத் தலைவராகப் பொறுப்பேற்கும் தேதியில் அவர்களின் இடம் காலியானதாகக் கருதப்படும் என்பது சரியான அரசியலமைப்பு பதிலாகும். குடியரசுத் தலைவராகப் பொறுப்பேற்கும் தேதியில் நாடாளுமன்றம்/சட்டமன்றத்தில் அவரது இடம் காலியானதாகக் கருதப்படும்."
+      },
+      "B": {
+        "en": "Incorrect. Option A (They can retain both posts simultaneously) is not supported by the constitutional facts under Article reference or President Notes.",
+        "ta": "தவறு. தெரிவு A (இரு பதவிகளையும் ஒரே நேரத்தில் வைத்திருக்கலாம்) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "C": {
         "en": "Incorrect. Option C (They must resign within 6 months) is not supported by the constitutional facts under Article reference or President Notes.",
@@ -2022,7 +2568,28 @@
       "topic": "President of India",
       "type": "Medium",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "They are deemed to have vacated their seat on the date they enter upon office as President",
+      "They can retain both posts simultaneously",
+      "They must resign within 6 months",
+      "Speaker decides whether they should vacate seat"
+    ],
+    "options_ta": [
+      "குடியரசுத் தலைவராகப் பொறுப்பேற்கும் தேதியில் அவர்களின் இடம் காலியானதாகக் கருதப்படும்",
+      "இரு பதவிகளையும் ஒரே நேரத்தில் வைத்திருக்கலாம்",
+      "6 மாதங்களுக்குள் ராஜினாமா செய்ய வேண்டும்",
+      "சபாநாயகர் தீர்மானிப்பார்"
+    ],
+    "answer": "a",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Article 59(1) states if a member of Parliament or State Legislature is elected President, he shall be deemed to have vacated his seat on dat..."
   },
   {
     "id": "POLITY_PRESIDENT_MEDIUM_028",
@@ -2039,13 +2606,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Rajya Sabha only",
-        "ta": "மாநிலங்களவைக்கு மட்டுமே"
+        "en": "Lok Sabha only (House of the People)",
+        "ta": "மக்களவைக்கு மட்டுமே (House of the People)"
       },
       {
         "id": "B",
-        "en": "Lok Sabha only (House of the People)",
-        "ta": "மக்களவைக்கு மட்டுமே (House of the People)"
+        "en": "Rajya Sabha only",
+        "ta": "மாநிலங்களவைக்கு மட்டுமே"
       },
       {
         "id": "C",
@@ -2058,7 +2625,7 @@
         "ta": "இந்தியக் குடியரசுத் தலைவருக்கு"
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "A",
     "explanation": {
       "en": "Article 75(3) expressly provides that the Council of Ministers shall be collectively responsible to the House of the People (Lok Sabha).",
       "ta": "உறுப்பு 75(3) அமைச்சரவை மக்களவைக்குக் கூட்டாகப் பொறுப்புடையது எனக் கூறுகிறது."
@@ -2076,12 +2643,12 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Option A (Rajya Sabha only) is not supported by the constitutional facts under Article reference or President Notes.",
-        "ta": "தவறு. தெரிவு A (மாநிலங்களவைக்கு மட்டுமே) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
-      },
-      "B": {
         "en": "Correct. Lok Sabha only (House of the People) is the accurate constitutional answer. Article 75(3) expressly provides that the Council of Ministers shall be collectively responsible to the House of the People (Lok Sabha).",
         "ta": "சரி. மக்களவைக்கு மட்டுமே (House of the People) என்பது சரியான அரசியலமைப்பு பதிலாகும். உறுப்பு 75(3) அமைச்சரவை மக்களவைக்குக் கூட்டாகப் பொறுப்புடையது எனக் கூறுகிறது."
+      },
+      "B": {
+        "en": "Incorrect. Option A (Rajya Sabha only) is not supported by the constitutional facts under Article reference or President Notes.",
+        "ta": "தவறு. தெரிவு A (மாநிலங்களவைக்கு மட்டுமே) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "C": {
         "en": "Incorrect. Option C (Both Houses jointly) is not supported by the constitutional facts under Article reference or President Notes.",
@@ -2097,7 +2664,28 @@
       "topic": "President of India",
       "type": "Medium",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "Lok Sabha only (House of the People)",
+      "Rajya Sabha only",
+      "Both Houses jointly",
+      "President of India"
+    ],
+    "options_ta": [
+      "மக்களவைக்கு மட்டுமே (House of the People)",
+      "மாநிலங்களவைக்கு மட்டுமே",
+      "இரு அவைகளுக்கும் கூட்டாக",
+      "இந்தியக் குடியரசுத் தலைவருக்கு"
+    ],
+    "answer": "a",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Article 75(3) expressly provides that the Council of Ministers shall be collectively responsible to the House of the People (Lok Sabha)."
   },
   {
     "id": "POLITY_PRESIDENT_MEDIUM_029",
@@ -2172,7 +2760,28 @@
       "topic": "President of India",
       "type": "Medium",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "42nd Amendment Act 1976",
+      "44th Amendment Act 1978",
+      "52nd Amendment Act 1985",
+      "86th Amendment Act 2002"
+    ],
+    "options_ta": [
+      "42வது திருத்தச் சட்டம் 1976",
+      "44வது திருத்தச் சட்டம் 1978",
+      "52வது திருத்தச் சட்டம் 1985",
+      "86வது திருத்தச் சட்டம் 2002"
+    ],
+    "answer": "b",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "44th CAA 1978 substituted 'Armed Rebellion' for 'Internal Disturbance' in Article 352 to prevent misuse."
   },
   {
     "id": "POLITY_PRESIDENT_MEDIUM_030",
@@ -2194,13 +2803,13 @@
       },
       {
         "id": "B",
-        "en": "Union Cabinet (PM + Ministers of Cabinet rank)",
-        "ta": "மத்திய கேபினட் (பிரதமர் + கேபினட் அமைச்சர்கள்)"
+        "en": "Parliament in joint sitting",
+        "ta": "நாடாளுமன்றக் கூட்டு அமர்வு"
       },
       {
         "id": "C",
-        "en": "Parliament in joint sitting",
-        "ta": "நாடாளுமன்றக் கூட்டு அமர்வு"
+        "en": "Union Cabinet (PM + Ministers of Cabinet rank)",
+        "ta": "மத்திய கேபினட் (பிரதமர் + கேபினட் அமைச்சர்கள்)"
       },
       {
         "id": "D",
@@ -2208,7 +2817,7 @@
         "ta": "தேசிய பாதுகாப்பு கவுன்சில்"
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "C",
     "explanation": {
       "en": "44th CAA 1978 inserted Article 352(3) requiring written communication of Cabinet decision before proclaiming National Emergency.",
       "ta": "44வது திருத்தம் 1978 தேசிய அவசரநிலைக்கு கேபினட்டின் எழுத்துப்பூர்வ தீர்மானம் அவசியம் என உறுப்பு 352(3)-ஐச் சேர்த்தது."
@@ -2230,12 +2839,12 @@
         "ta": "தவறு. இது குடியரசுத் தலைவரின் அரசியலமைப்புப் பொறுப்பை பிரதமர் ஒருவர் மட்டுமே-ன் பொறுப்புடன் குழப்புகிறது."
       },
       "B": {
-        "en": "Correct. Union Cabinet (PM + Ministers of Cabinet rank) is the accurate constitutional answer. 44th CAA 1978 inserted Article 352(3) requiring written communication of Cabinet decision before proclaiming National Emergency.",
-        "ta": "சரி. மத்திய கேபினட் (பிரதமர் + கேபினட் அமைச்சர்கள்) என்பது சரியான அரசியலமைப்பு பதிலாகும். 44வது திருத்தம் 1978 தேசிய அவசரநிலைக்கு கேபினட்டின் எழுத்துப்பூர்வ தீர்மானம் அவசியம் என உறுப்பு 352(3)-ஐச் சேர்த்தது."
-      },
-      "C": {
         "en": "Incorrect. Option C (Parliament in joint sitting) is not supported by the constitutional facts under Article reference or President Notes.",
         "ta": "தவறு. தெரிவு C (நாடாளுமன்றக் கூட்டு அமர்வு) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
+      },
+      "C": {
+        "en": "Correct. Union Cabinet (PM + Ministers of Cabinet rank) is the accurate constitutional answer. 44th CAA 1978 inserted Article 352(3) requiring written communication of Cabinet decision before proclaiming National Emergency.",
+        "ta": "சரி. மத்திய கேபினட் (பிரதமர் + கேபினட் அமைச்சர்கள்) என்பது சரியான அரசியலமைப்பு பதிலாகும். 44வது திருத்தம் 1978 தேசிய அவசரநிலைக்கு கேபினட்டின் எழுத்துப்பூர்வ தீர்மானம் அவசியம் என உறுப்பு 352(3)-ஐச் சேர்த்தது."
       },
       "D": {
         "en": "Incorrect. Option D (National Security Council) is not supported by the constitutional facts under Article reference or President Notes.",
@@ -2247,7 +2856,28 @@
       "topic": "President of India",
       "type": "Medium",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "Prime Minister alone",
+      "Parliament in joint sitting",
+      "Union Cabinet (PM + Ministers of Cabinet rank)",
+      "National Security Council"
+    ],
+    "options_ta": [
+      "பிரதமர் ஒருவர் மட்டுமே",
+      "நாடாளுமன்றக் கூட்டு அமர்வு",
+      "மத்திய கேபினட் (பிரதமர் + கேபினட் அமைச்சர்கள்)",
+      "தேசிய பாதுகாப்பு கவுன்சில்"
+    ],
+    "answer": "c",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "44th CAA 1978 inserted Article 352(3) requiring written communication of Cabinet decision before proclaiming National Emergency."
   },
   {
     "id": "POLITY_PRESIDENT_MEDIUM_031",
@@ -2322,7 +2952,28 @@
       "topic": "President of India",
       "type": "Medium",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "Simple majority in both Houses",
+      "Special majority in each House (Majority of total membership + 2/3rd present and voting)",
+      "Absolute majority of Lok Sabha only",
+      "2/3rd of total membership of Parliament"
+    ],
+    "options_ta": [
+      "இரு அவைகளிலும் எளிய பெரும்பான்மை",
+      "ஒவ்வொரு அவையிலும் சிறப்பு பெரும்பான்மை (மொத்த உறுப்பினர்களில் பெரும்பான்மை + 2/3 வந்திருந்து வாக்களிப்பவர்கள்)",
+      "மக்களவையில் மட்டும் தனிப் பெரும்பான்மை",
+      "நாடாளுமன்ற மொத்த உறுப்பினர்களில் 2/3 பங்கு"
+    ],
+    "answer": "b",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Article 352(6) requires Proclamation of Emergency to be approved by Special Majority in each House of Parliament within 1 month."
   },
   {
     "id": "POLITY_PRESIDENT_MEDIUM_032",
@@ -2344,8 +2995,8 @@
       },
       {
         "id": "B",
-        "en": "1 month",
-        "ta": "1 மாதம்"
+        "en": "6 months",
+        "ta": "6 மாதங்கள்"
       },
       {
         "id": "C",
@@ -2354,11 +3005,11 @@
       },
       {
         "id": "D",
-        "en": "6 months",
-        "ta": "6 மாதங்கள்"
+        "en": "1 month",
+        "ta": "1 மாதம்"
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "D",
     "explanation": {
       "en": "Article 352(4) mandates National Emergency must be approved by both Houses of Parliament within 1 month from date of issue.",
       "ta": "உறுப்பு 352(4) தேசிய அவசரநிலை 1 மாதத்திற்குள் நாடாளுமன்ற இரு அவைகளாலும் ஒப்புதல் பெறப்பட வேண்டும் எனக் கூறுகிறது."
@@ -2380,16 +3031,16 @@
         "ta": "தவறு. தெரிவு A (14 நாட்கள்) வேறு அரசியலமைப்பு விதியைக் குறிக்கிறது."
       },
       "B": {
-        "en": "Correct. 1 month is the accurate constitutional answer. Article 352(4) mandates National Emergency must be approved by both Houses of Parliament within 1 month from date of issue.",
-        "ta": "சரி. 1 மாதம் என்பது சரியான அரசியலமைப்பு பதிலாகும். உறுப்பு 352(4) தேசிய அவசரநிலை 1 மாதத்திற்குள் நாடாளுமன்ற இரு அவைகளாலும் ஒப்புதல் பெறப்பட வேண்டும் எனக் கூறுகிறது."
+        "en": "Incorrect. Option D (6 months) is not supported by the constitutional facts under Article reference or President Notes.",
+        "ta": "தவறு. தெரிவு D (6 மாதங்கள்) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "C": {
         "en": "Incorrect. Option C (2 months) is not supported by the constitutional facts under Article reference or President Notes.",
         "ta": "தவறு. தெரிவு C (2 மாதங்கள்) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "D": {
-        "en": "Incorrect. Option D (6 months) is not supported by the constitutional facts under Article reference or President Notes.",
-        "ta": "தவறு. தெரிவு D (6 மாதங்கள்) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
+        "en": "Correct. 1 month is the accurate constitutional answer. Article 352(4) mandates National Emergency must be approved by both Houses of Parliament within 1 month from date of issue.",
+        "ta": "சரி. 1 மாதம் என்பது சரியான அரசியலமைப்பு பதிலாகும். உறுப்பு 352(4) தேசிய அவசரநிலை 1 மாதத்திற்குள் நாடாளுமன்ற இரு அவைகளாலும் ஒப்புதல் பெறப்பட வேண்டும் எனக் கூறுகிறது."
       }
     },
     "metadata": {
@@ -2397,7 +3048,28 @@
       "topic": "President of India",
       "type": "Medium",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "14 days",
+      "6 months",
+      "2 months",
+      "1 month"
+    ],
+    "options_ta": [
+      "14 நாட்கள்",
+      "6 மாதங்கள்",
+      "2 மாதங்கள்",
+      "1 மாதம்"
+    ],
+    "answer": "d",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Article 352(4) mandates National Emergency must be approved by both Houses of Parliament within 1 month from date of issue."
   },
   {
     "id": "POLITY_PRESIDENT_MEDIUM_033",
@@ -2472,7 +3144,28 @@
       "topic": "President of India",
       "type": "Medium",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "14 days",
+      "1 month",
+      "2 months",
+      "6 months"
+    ],
+    "options_ta": [
+      "14 நாட்கள்",
+      "1 மாதம்",
+      "2 மாதங்கள்",
+      "6 மாதங்கள்"
+    ],
+    "answer": "c",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Article 356(3) mandates Proclamation of President's Rule must be approved by both Houses of Parliament within 2 months."
   },
   {
     "id": "POLITY_PRESIDENT_MEDIUM_034",
@@ -2489,8 +3182,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Simple majority in both Houses",
-        "ta": "இரு அவைகளிலும் எளிய பெரும்பான்மை"
+        "en": "2/3rd majority of total membership",
+        "ta": "மொத்த உறுப்பினர்களில் 2/3 பங்கு பெரும்பான்மை"
       },
       {
         "id": "B",
@@ -2499,8 +3192,8 @@
       },
       {
         "id": "C",
-        "en": "2/3rd majority of total membership",
-        "ta": "மொத்த உறுப்பினர்களில் 2/3 பங்கு பெரும்பான்மை"
+        "en": "Simple majority in both Houses",
+        "ta": "இரு அவைகளிலும் எளிய பெரும்பான்மை"
       },
       {
         "id": "D",
@@ -2508,7 +3201,7 @@
         "ta": "மாநிலங்களவையில் மட்டும் தனிப் பெரும்பான்மை"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "C",
     "explanation": {
       "en": "A resolution approving Proclamation of President's Rule under Article 356 can be passed by either House of Parliament by a SIMPLE MAJORITY.",
       "ta": "உறுப்பு 356 குடியரசுத் தலைவர் ஆட்சிக்கான தீர்மானம் எளிய பெரும்பான்மையால் (Simple Majority) நிறைவேற்றப்படலாம்."
@@ -2526,16 +3219,16 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Correct. Simple majority in both Houses is the accurate constitutional answer. A resolution approving Proclamation of President's Rule under Article 356 can be passed by either House of Parliament by a SIMPLE MAJORITY.",
-        "ta": "சரி. இரு அவைகளிலும் எளிய பெரும்பான்மை என்பது சரியான அரசியலமைப்பு பதிலாகும். உறுப்பு 356 குடியரசுத் தலைவர் ஆட்சிக்கான தீர்மானம் எளிய பெரும்பான்மையால் (Simple Majority) நிறைவேற்றப்படலாம்."
+        "en": "Incorrect. Option C (2/3rd majority of total membership) is not supported by the constitutional facts under Article reference or President Notes.",
+        "ta": "தவறு. தெரிவு C (மொத்த உறுப்பினர்களில் 2/3 பங்கு பெரும்பான்மை) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "B": {
         "en": "Incorrect. Option B (Special majority under Article 368) references a different constitutional provision.",
         "ta": "தவறு. தெரிவு B (உறுப்பு 368-ன் கீழ் சிறப்பு பெரும்பான்மை) வேறு அரசியலமைப்பு விதியைக் குறிக்கிறது."
       },
       "C": {
-        "en": "Incorrect. Option C (2/3rd majority of total membership) is not supported by the constitutional facts under Article reference or President Notes.",
-        "ta": "தவறு. தெரிவு C (மொத்த உறுப்பினர்களில் 2/3 பங்கு பெரும்பான்மை) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
+        "en": "Correct. Simple majority in both Houses is the accurate constitutional answer. A resolution approving Proclamation of President's Rule under Article 356 can be passed by either House of Parliament by a SIMPLE MAJORITY.",
+        "ta": "சரி. இரு அவைகளிலும் எளிய பெரும்பான்மை என்பது சரியான அரசியலமைப்பு பதிலாகும். உறுப்பு 356 குடியரசுத் தலைவர் ஆட்சிக்கான தீர்மானம் எளிய பெரும்பான்மையால் (Simple Majority) நிறைவேற்றப்படலாம்."
       },
       "D": {
         "en": "Incorrect. Option D (Absolute majority of Rajya Sabha only) is not supported by the constitutional facts under Article reference or President Notes.",
@@ -2547,7 +3240,28 @@
       "topic": "President of India",
       "type": "Medium",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "2/3rd majority of total membership",
+      "Special majority under Article 368",
+      "Simple majority in both Houses",
+      "Absolute majority of Rajya Sabha only"
+    ],
+    "options_ta": [
+      "மொத்த உறுப்பினர்களில் 2/3 பங்கு பெரும்பான்மை",
+      "உறுப்பு 368-ன் கீழ் சிறப்பு பெரும்பான்மை",
+      "இரு அவைகளிலும் எளிய பெரும்பான்மை",
+      "மாநிலங்களவையில் மட்டும் தனிப் பெரும்பான்மை"
+    ],
+    "answer": "c",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "A resolution approving Proclamation of President's Rule under Article 356 can be passed by either House of Parliament by a SIMPLE MAJORITY."
   },
   {
     "id": "POLITY_PRESIDENT_MEDIUM_035",
@@ -2569,8 +3283,8 @@
       },
       {
         "id": "B",
-        "en": "Requires National Emergency in operation + Election Commission certification that elections cannot be held",
-        "ta": "தேசிய அவசரநிலை அமலில் இருக்க வேண்டும் + தேர்தல் நடத்த முடியாது எனத் தேர்தல் ஆணைய சான்றிதழ் தேவை"
+        "en": "Requires Supreme Court Bench clearance",
+        "ta": "உச்ச நீதிமன்ற அமர்வின் அனுமதி தேவை"
       },
       {
         "id": "C",
@@ -2579,11 +3293,11 @@
       },
       {
         "id": "D",
-        "en": "Requires Supreme Court Bench clearance",
-        "ta": "உச்ச நீதிமன்ற அமர்வின் அனுமதி தேவை"
+        "en": "Requires National Emergency in operation + Election Commission certification that elections cannot be held",
+        "ta": "தேசிய அவசரநிலை அமலில் இருக்க வேண்டும் + தேர்தல் நடத்த முடியாது எனத் தேர்தல் ஆணைய சான்றிதழ் தேவை"
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "D",
     "explanation": {
       "en": "Article 356(5) inserted by 44th CAA 1978 states President's Rule beyond 1 year requires: 1) National Emergency in force, AND 2) EC certification.",
       "ta": "44வது திருத்தம் 1978-ன் படி 1 ஆண்டுக்கு மேல் நீட்டிக்க தேசிய அவசரநிலை + தேர்தல் ஆணைய சான்றிதழ் கட்டாயமாகும்."
@@ -2605,16 +3319,16 @@
         "ta": "தவறு. இது குடியரசுத் தலைவரின் அரசியலமைப்புப் பொறுப்பை மாநில ஆளுநரின் ஒப்புதல் தேவை-ன் பொறுப்புடன் குழப்புகிறது."
       },
       "B": {
-        "en": "Correct. Requires National Emergency in operation + Election Commission certification that elections cannot be held is the accurate constitutional answer. Article 356(5) inserted by 44th CAA 1978 states President's Rule beyond 1 year requires: 1) National Emergency in force, AND 2) EC certification.",
-        "ta": "சரி. தேசிய அவசரநிலை அமலில் இருக்க வேண்டும் + தேர்தல் நடத்த முடியாது எனத் தேர்தல் ஆணைய சான்றிதழ் தேவை என்பது சரியான அரசியலமைப்பு பதிலாகும். 44வது திருத்தம் 1978-ன் படி 1 ஆண்டுக்கு மேல் நீட்டிக்க தேசிய அவசரநிலை + தேர்தல் ஆணைய சான்றிதழ் கட்டாயமாகும்."
+        "en": "Incorrect. Option D (Requires Supreme Court Bench clearance) is not supported by the constitutional facts under Article reference or President Notes.",
+        "ta": "தவறு. தெரிவு D (உச்ச நீதிமன்ற அமர்வின் அனுமதி தேவை) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "C": {
         "en": "Incorrect. Option C (Requires 3/4th majority in Rajya Sabha) is not supported by the constitutional facts under Article reference or President Notes.",
         "ta": "தவறு. தெரிவு C (மாநிலங்களவையில் 3/4 பங்கு பெரும்பான்மை தேவை) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "D": {
-        "en": "Incorrect. Option D (Requires Supreme Court Bench clearance) is not supported by the constitutional facts under Article reference or President Notes.",
-        "ta": "தவறு. தெரிவு D (உச்ச நீதிமன்ற அமர்வின் அனுமதி தேவை) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
+        "en": "Correct. Requires National Emergency in operation + Election Commission certification that elections cannot be held is the accurate constitutional answer. Article 356(5) inserted by 44th CAA 1978 states President's Rule beyond 1 year requires: 1) National Emergency in force, AND 2) EC certification.",
+        "ta": "சரி. தேசிய அவசரநிலை அமலில் இருக்க வேண்டும் + தேர்தல் நடத்த முடியாது எனத் தேர்தல் ஆணைய சான்றிதழ் தேவை என்பது சரியான அரசியலமைப்பு பதிலாகும். 44வது திருத்தம் 1978-ன் படி 1 ஆண்டுக்கு மேல் நீட்டிக்க தேசிய அவசரநிலை + தேர்தல் ஆணைய சான்றிதழ் கட்டாயமாகும்."
       }
     },
     "metadata": {
@@ -2622,7 +3336,28 @@
       "topic": "President of India",
       "type": "Medium",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "Requires approval of State Governor",
+      "Requires Supreme Court Bench clearance",
+      "Requires 3/4th majority in Rajya Sabha",
+      "Requires National Emergency in operation + Election Commission certification that elections cannot be held"
+    ],
+    "options_ta": [
+      "மாநில ஆளுநரின் ஒப்புதல் தேவை",
+      "உச்ச நீதிமன்ற அமர்வின் அனுமதி தேவை",
+      "மாநிலங்களவையில் 3/4 பங்கு பெரும்பான்மை தேவை",
+      "தேசிய அவசரநிலை அமலில் இருக்க வேண்டும் + தேர்தல் நடத்த முடியாது எனத் தேர்தல் ஆணைய சான்றிதழ் தேவை"
+    ],
+    "answer": "d",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Article 356(5) inserted by 44th CAA 1978 states President's Rule beyond 1 year requires: 1) National Emergency in force, AND 2) EC certifica..."
   },
   {
     "id": "POLITY_PRESIDENT_MEDIUM_036",
@@ -2639,8 +3374,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Golak Nath Case 1967",
-        "ta": "கோலக்நாத் வழக்கு 1967"
+        "en": "S.R. Bommai v. Union of India 1994",
+        "ta": "எஸ்.ஆர். பொம்மை வழக்கு 1994"
       },
       {
         "id": "B",
@@ -2649,8 +3384,8 @@
       },
       {
         "id": "C",
-        "en": "S.R. Bommai v. Union of India 1994",
-        "ta": "எஸ்.ஆர். பொம்மை வழக்கு 1994"
+        "en": "Golak Nath Case 1967",
+        "ta": "கோலக்நாத் வழக்கு 1967"
       },
       {
         "id": "D",
@@ -2658,7 +3393,7 @@
         "ta": "மினர்வா மில்ஸ் வழக்கு 1980"
       }
     ],
-    "correct_answer": "C",
+    "correct_answer": "A",
     "explanation": {
       "en": "In S.R. Bommai v. Union of India (1994), 9-Judge Bench held Article 356 proclamation is subject to judicial review and floor test is mandatory.",
       "ta": "எஸ்.ஆர். பொம்மை (1994) வழக்கில் உறுப்பு 356 பிரகடனம் நீதித்துறை மறுஆய்வுக்கு உட்பட்டது என்றும் சட்டப்பேரவை தரைக்கட்டுப்பாடு (Floor test) கட்டாயம் என்றும் தீர்ப்பளிக்கப்பட்டது."
@@ -2676,16 +3411,16 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Option A (Golak Nath Case 1967) is not supported by the constitutional facts under Article reference or President Notes.",
-        "ta": "தவறு. தெரிவு A (கோலக்நாத் வழக்கு 1967) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
+        "en": "Correct. S.R. Bommai v. Union of India 1994 is the accurate constitutional answer. In S.R. Bommai v. Union of India (1994), 9-Judge Bench held Article 356 proclamation is subject to judicial review and floor test is mandatory.",
+        "ta": "சரி. எஸ்.ஆர். பொம்மை வழக்கு 1994 என்பது சரியான அரசியலமைப்பு பதிலாகும். எஸ்.ஆர். பொம்மை (1994) வழக்கில் உறுப்பு 356 பிரகடனம் நீதித்துறை மறுஆய்வுக்கு உட்பட்டது என்றும் சட்டப்பேரவை தரைக்கட்டுப்பாடு (Floor test) கட்டாயம் என்றும் தீர்ப்பளிக்கப்பட்டது."
       },
       "B": {
         "en": "Incorrect. Option B (Kesavananda Bharati Case 1973) is not supported by the constitutional facts under Article reference or President Notes.",
         "ta": "தவறு. தெரிவு B (கேசவாநந்த பாரதி வழக்கு 1973) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "C": {
-        "en": "Correct. S.R. Bommai v. Union of India 1994 is the accurate constitutional answer. In S.R. Bommai v. Union of India (1994), 9-Judge Bench held Article 356 proclamation is subject to judicial review and floor test is mandatory.",
-        "ta": "சரி. எஸ்.ஆர். பொம்மை வழக்கு 1994 என்பது சரியான அரசியலமைப்பு பதிலாகும். எஸ்.ஆர். பொம்மை (1994) வழக்கில் உறுப்பு 356 பிரகடனம் நீதித்துறை மறுஆய்வுக்கு உட்பட்டது என்றும் சட்டப்பேரவை தரைக்கட்டுப்பாடு (Floor test) கட்டாயம் என்றும் தீர்ப்பளிக்கப்பட்டது."
+        "en": "Incorrect. Option A (Golak Nath Case 1967) is not supported by the constitutional facts under Article reference or President Notes.",
+        "ta": "தவறு. தெரிவு A (கோலக்நாத் வழக்கு 1967) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "D": {
         "en": "Incorrect. Option D (Minerva Mills Case 1980) is not supported by the constitutional facts under Article reference or President Notes.",
@@ -2697,7 +3432,28 @@
       "topic": "President of India",
       "type": "Medium",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "S.R. Bommai v. Union of India 1994",
+      "Kesavananda Bharati Case 1973",
+      "Golak Nath Case 1967",
+      "Minerva Mills Case 1980"
+    ],
+    "options_ta": [
+      "எஸ்.ஆர். பொம்மை வழக்கு 1994",
+      "கேசவாநந்த பாரதி வழக்கு 1973",
+      "கோலக்நாத் வழக்கு 1967",
+      "மினர்வா மில்ஸ் வழக்கு 1980"
+    ],
+    "answer": "a",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "In S.R. Bommai v. Union of India (1994), 9-Judge Bench held Article 356 proclamation is subject to judicial review and floor test is mandato..."
   },
   {
     "id": "POLITY_PRESIDENT_MEDIUM_037",
@@ -2719,13 +3475,13 @@
       },
       {
         "id": "B",
-        "en": "Yes, President has explicit power under Art 72(1)(a) for Court Martial sentences",
-        "ta": "ஆம், உறுப்பு 72(1)(a)-ன் கீழ் ராணுவ நீதிமன்றத் தண்டனைகளுக்கு குடியரசுத் தலைவருக்கு வெளிப்படை அதிகாரம் உண்டு"
+        "en": "Only with written permission of Defence Minister",
+        "ta": "பாதுகாப்பு அமைச்சரின் எழுத்துப்பூர்வ அனுமதியுடன் மட்டுமே"
       },
       {
         "id": "C",
-        "en": "Only with written permission of Defence Minister",
-        "ta": "பாதுகாப்பு அமைச்சரின் எழுத்துப்பூர்வ அனுமதியுடன் மட்டுமே"
+        "en": "Yes, President has explicit power under Art 72(1)(a) for Court Martial sentences",
+        "ta": "ஆம், உறுப்பு 72(1)(a)-ன் கீழ் ராணுவ நீதிமன்றத் தண்டனைகளுக்கு குடியரசுத் தலைவருக்கு வெளிப்படை அதிகாரம் உண்டு"
       },
       {
         "id": "D",
@@ -2733,7 +3489,7 @@
         "ta": "தேசிய அவசரநிலையின் போது மட்டுமே"
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "C",
     "explanation": {
       "en": "Article 72(1)(a) explicitly grants President pardoning power in all cases where punishment is by a Court Martial.",
       "ta": "உறுப்பு 72(1)(a) ராணுவ நீதிமன்றத்தால் தண்டனை வழங்கப்பட்ட வழக்குகளில் குடியரசுத் தலைவருக்கு மன்னிப்பளிக்கும் அதிகாரத்தை வழங்குகிறது."
@@ -2755,12 +3511,12 @@
         "ta": "தவறு. மன்னிப்பு (Pardon) என்பது குற்றவாளியின் அனைத்து தண்டனைகள் மற்றும் தகுதியின்மைகளையும் முழுமையாக நீக்குகிறது."
       },
       "B": {
-        "en": "Correct. Yes, President has explicit power under Art 72(1)(a) for Court Martial sentences is the accurate constitutional answer. Article 72(1)(a) explicitly grants President pardoning power in all cases where punishment is by a Court Martial.",
-        "ta": "சரி. ஆம், உறுப்பு 72(1)(a)-ன் கீழ் ராணுவ நீதிமன்றத் தண்டனைகளுக்கு குடியரசுத் தலைவருக்கு வெளிப்படை அதிகாரம் உண்டு என்பது சரியான அரசியலமைப்பு பதிலாகும். உறுப்பு 72(1)(a) ராணுவ நீதிமன்றத்தால் தண்டனை வழங்கப்பட்ட வழக்குகளில் குடியரசுத் தலைவருக்கு மன்னிப்பளிக்கும் அதிகாரத்தை வழங்குகிறது."
-      },
-      "C": {
         "en": "Incorrect. Option C (Only with written permission of Defence Minister) is not supported by the constitutional facts under Article reference or President Notes.",
         "ta": "தவறு. தெரிவு C (பாதுகாப்பு அமைச்சரின் எழுத்துப்பூர்வ அனுமதியுடன் மட்டுமே) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
+      },
+      "C": {
+        "en": "Correct. Yes, President has explicit power under Art 72(1)(a) for Court Martial sentences is the accurate constitutional answer. Article 72(1)(a) explicitly grants President pardoning power in all cases where punishment is by a Court Martial.",
+        "ta": "சரி. ஆம், உறுப்பு 72(1)(a)-ன் கீழ் ராணுவ நீதிமன்றத் தண்டனைகளுக்கு குடியரசுத் தலைவருக்கு வெளிப்படை அதிகாரம் உண்டு என்பது சரியான அரசியலமைப்பு பதிலாகும். உறுப்பு 72(1)(a) ராணுவ நீதிமன்றத்தால் தண்டனை வழங்கப்பட்ட வழக்குகளில் குடியரசுத் தலைவருக்கு மன்னிப்பளிக்கும் அதிகாரத்தை வழங்குகிறது."
       },
       "D": {
         "en": "Incorrect. Option D (Only during National Emergency) is not supported by the constitutional facts under Article reference or President Notes.",
@@ -2772,7 +3528,28 @@
       "topic": "President of India",
       "type": "Medium",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "No, Court Martial is beyond President's pardoning power",
+      "Only with written permission of Defence Minister",
+      "Yes, President has explicit power under Art 72(1)(a) for Court Martial sentences",
+      "Only during National Emergency"
+    ],
+    "options_ta": [
+      "முடியாது, ராணுவ நீதிமன்றம் குடியரசுத் தலைவர் மன்னிப்பு அதிகாரத்திற்கு அப்பாற்பட்டது",
+      "பாதுகாப்பு அமைச்சரின் எழுத்துப்பூர்வ அனுமதியுடன் மட்டுமே",
+      "ஆம், உறுப்பு 72(1)(a)-ன் கீழ் ராணுவ நீதிமன்றத் தண்டனைகளுக்கு குடியரசுத் தலைவருக்கு வெளிப்படை அதிகாரம் உண்டு",
+      "தேசிய அவசரநிலையின் போது மட்டுமே"
+    ],
+    "answer": "c",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Article 72(1)(a) explicitly grants President pardoning power in all cases where punishment is by a Court Martial."
   },
   {
     "id": "POLITY_PRESIDENT_MEDIUM_038",
@@ -2789,8 +3566,8 @@
     "options": [
       {
         "id": "A",
-        "en": "President can pardon death sentences and Court Martial; Governor cannot pardon death sentence or Court Martial",
-        "ta": "குடியரசுத் தலைவர் மரண தண்டனை & ராணுவ நீதிமன்றத் தண்டனையை மன்னிக்கலாம்; ஆளுநரால் முடியாதது"
+        "en": "Governor can pardon offences against Union laws",
+        "ta": "ஆளுநர் ஒன்றியச் சட்ட மீறல்களை மன்னிக்கலாம்"
       },
       {
         "id": "B",
@@ -2804,11 +3581,11 @@
       },
       {
         "id": "D",
-        "en": "Governor can pardon offences against Union laws",
-        "ta": "ஆளுநர் ஒன்றியச் சட்ட மீறல்களை மன்னிக்கலாம்"
+        "en": "President can pardon death sentences and Court Martial; Governor cannot pardon death sentence or Court Martial",
+        "ta": "குடியரசுத் தலைவர் மரண தண்டனை & ராணுவ நீதிமன்றத் தண்டனையை மன்னிக்கலாம்; ஆளுநரால் முடியாதது"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "D",
     "explanation": {
       "en": "President (Art 72) can pardon death sentences and Court Martial sentences; Governor (Art 161) cannot pardon death sentences or Court Martial.",
       "ta": "குடியரசுத் தலைவர் (72) மரண தண்டனை & ராணுவ நீதிமன்றத் தண்டனையை மன்னிக்கலாம்; ஆளுநர் (161) இரண்டையும் மன்னிக்க முடியாது."
@@ -2826,8 +3603,8 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Correct. President can pardon death sentences and Court Martial; Governor cannot pardon death sentence or Court Martial is the accurate constitutional answer. President (Art 72) can pardon death sentences and Court Martial sentences; Governor (Art 161) cannot pardon death sentences or Court Martial.",
-        "ta": "சரி. குடியரசுத் தலைவர் மரண தண்டனை & ராணுவ நீதிமன்றத் தண்டனையை மன்னிக்கலாம்; ஆளுநரால் முடியாதது என்பது சரியான அரசியலமைப்பு பதிலாகும். குடியரசுத் தலைவர் (72) மரண தண்டனை & ராணுவ நீதிமன்றத் தண்டனையை மன்னிக்கலாம்; ஆளுநர் (161) இரண்டையும் மன்னிக்க முடியாது."
+        "en": "Incorrect. This confuses the President's constitutional role with that of the Governor can pardon offences against Union laws.",
+        "ta": "தவறு. இது குடியரசுத் தலைவரின் அரசியலமைப்புப் பொறுப்பை ஆளுநர் ஒன்றியச் சட்ட மீறல்களை மன்னிக்கலாம்-ன் பொறுப்புடன் குழப்புகிறது."
       },
       "B": {
         "en": "Incorrect. This confuses the President's constitutional role with that of the Governor has wider pardoning powers than President.",
@@ -2838,8 +3615,8 @@
         "ta": "தவறு. தெரிவு C (குடியரசுத் தலைவரால் மரண தண்டனையைக் குறைக்க முடியாது) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "D": {
-        "en": "Incorrect. This confuses the President's constitutional role with that of the Governor can pardon offences against Union laws.",
-        "ta": "தவறு. இது குடியரசுத் தலைவரின் அரசியலமைப்புப் பொறுப்பை ஆளுநர் ஒன்றியச் சட்ட மீறல்களை மன்னிக்கலாம்-ன் பொறுப்புடன் குழப்புகிறது."
+        "en": "Correct. President can pardon death sentences and Court Martial; Governor cannot pardon death sentence or Court Martial is the accurate constitutional answer. President (Art 72) can pardon death sentences and Court Martial sentences; Governor (Art 161) cannot pardon death sentences or Court Martial.",
+        "ta": "சரி. குடியரசுத் தலைவர் மரண தண்டனை & ராணுவ நீதிமன்றத் தண்டனையை மன்னிக்கலாம்; ஆளுநரால் முடியாதது என்பது சரியான அரசியலமைப்பு பதிலாகும். குடியரசுத் தலைவர் (72) மரண தண்டனை & ராணுவ நீதிமன்றத் தண்டனையை மன்னிக்கலாம்; ஆளுநர் (161) இரண்டையும் மன்னிக்க முடியாது."
       }
     },
     "metadata": {
@@ -2847,7 +3624,28 @@
       "topic": "President of India",
       "type": "Medium",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "Governor can pardon offences against Union laws",
+      "Governor has wider pardoning powers than President",
+      "President cannot commute death sentences",
+      "President can pardon death sentences and Court Martial; Governor cannot pardon death sentence or Court Martial"
+    ],
+    "options_ta": [
+      "ஆளுநர் ஒன்றியச் சட்ட மீறல்களை மன்னிக்கலாம்",
+      "ஆளுநருக்குக் குடியரசுத் தலைவரை விட விரிவான அதிகாரம் உண்டு",
+      "குடியரசுத் தலைவரால் மரண தண்டனையைக் குறைக்க முடியாது",
+      "குடியரசுத் தலைவர் மரண தண்டனை & ராணுவ நீதிமன்றத் தண்டனையை மன்னிக்கலாம்; ஆளுநரால் முடியாதது"
+    ],
+    "answer": "d",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "President (Art 72) can pardon death sentences and Court Martial sentences; Governor (Art 161) cannot pardon death sentences or Court Martial..."
   },
   {
     "id": "POLITY_PRESIDENT_MEDIUM_039",
@@ -2864,8 +3662,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Prime Minister",
-        "ta": "பிரதமர்"
+        "en": "President of India",
+        "ta": "இந்தியக் குடியரசுத் தலைவர்"
       },
       {
         "id": "B",
@@ -2874,8 +3672,8 @@
       },
       {
         "id": "C",
-        "en": "President of India",
-        "ta": "இந்தியக் குடியரசுத் தலைவர்"
+        "en": "Prime Minister",
+        "ta": "பிரதமர்"
       },
       {
         "id": "D",
@@ -2883,7 +3681,7 @@
         "ta": "நாடாளுமன்றம்"
       }
     ],
-    "correct_answer": "C",
+    "correct_answer": "A",
     "explanation": {
       "en": "Article 75(2) explicitly states that Ministers shall hold office during the pleasure of the President.",
       "ta": "உறுப்பு 75(2) அமைச்சர்கள் குடியரசுத் தலைவரின் விருப்பம் உள்ளவரை பதவியில் இருப்பார்கள் எனக் கூறுகிறது."
@@ -2901,16 +3699,16 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Incorrect. This confuses the President's constitutional role with that of the Prime Minister.",
-        "ta": "தவறு. இது குடியரசுத் தலைவரின் அரசியலமைப்புப் பொறுப்பை பிரதமர்-ன் பொறுப்புடன் குழப்புகிறது."
+        "en": "Correct. President of India is the accurate constitutional answer. Article 75(2) explicitly states that Ministers shall hold office during the pleasure of the President.",
+        "ta": "சரி. இந்தியக் குடியரசுத் தலைவர் என்பது சரியான அரசியலமைப்பு பதிலாகும். உறுப்பு 75(2) அமைச்சர்கள் குடியரசுத் தலைவரின் விருப்பம் உள்ளவரை பதவியில் இருப்பார்கள் எனக் கூறுகிறது."
       },
       "B": {
         "en": "Incorrect. Option B (Speaker of Lok Sabha) is not supported by the constitutional facts under Article reference or President Notes.",
         "ta": "தவறு. தெரிவு B (மக்களவை சபாநாயகர்) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "C": {
-        "en": "Correct. President of India is the accurate constitutional answer. Article 75(2) explicitly states that Ministers shall hold office during the pleasure of the President.",
-        "ta": "சரி. இந்தியக் குடியரசுத் தலைவர் என்பது சரியான அரசியலமைப்பு பதிலாகும். உறுப்பு 75(2) அமைச்சர்கள் குடியரசுத் தலைவரின் விருப்பம் உள்ளவரை பதவியில் இருப்பார்கள் எனக் கூறுகிறது."
+        "en": "Incorrect. This confuses the President's constitutional role with that of the Prime Minister.",
+        "ta": "தவறு. இது குடியரசுத் தலைவரின் அரசியலமைப்புப் பொறுப்பை பிரதமர்-ன் பொறுப்புடன் குழப்புகிறது."
       },
       "D": {
         "en": "Incorrect. Option D (Parliament) is not supported by the constitutional facts under Article reference or President Notes.",
@@ -2922,7 +3720,28 @@
       "topic": "President of India",
       "type": "Medium",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "President of India",
+      "Speaker of Lok Sabha",
+      "Prime Minister",
+      "Parliament"
+    ],
+    "options_ta": [
+      "இந்தியக் குடியரசுத் தலைவர்",
+      "மக்களவை சபாநாயகர்",
+      "பிரதமர்",
+      "நாடாளுமன்றம்"
+    ],
+    "answer": "a",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Article 75(2) explicitly states that Ministers shall hold office during the pleasure of the President."
   },
   {
     "id": "POLITY_PRESIDENT_MEDIUM_040",
@@ -2944,8 +3763,8 @@
       },
       {
         "id": "B",
-        "en": "Article 75(2)",
-        "ta": "உறுப்பு 75(2)"
+        "en": "Article 78",
+        "ta": "உறுப்பு 78"
       },
       {
         "id": "C",
@@ -2954,11 +3773,11 @@
       },
       {
         "id": "D",
-        "en": "Article 78",
-        "ta": "உறுப்பு 78"
+        "en": "Article 75(2)",
+        "ta": "உறுப்பு 75(2)"
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "D",
     "explanation": {
       "en": "Article 75(2) (Ministers hold office during pleasure of President) embodies Individual Responsibility of Ministers to the President.",
       "ta": "உறுப்பு 75(2) (அமைச்சர்கள் குடியரசுத் தலைவர் விருப்பம் உள்ளவரை பதவி வகித்தல்) அமைச்சர்களின் தனிநபர் பொறுப்பைக் குறிக்கிறது."
@@ -2980,16 +3799,16 @@
         "ta": "தவறு. உறுப்பு 74 குடியரசுத் தலைவருக்கு உதவவும் ஆலோசிக்கவும் பிரதமரைத் தலைவராகக் கொண்ட அமைச்சரவையைக் குறிப்பிடுகிறது."
       },
       "B": {
-        "en": "Correct. Article 75(2) is the accurate constitutional answer. Article 75(2) (Ministers hold office during pleasure of President) embodies Individual Responsibility of Ministers to the President.",
-        "ta": "சரி. உறுப்பு 75(2) என்பது சரியான அரசியலமைப்பு பதிலாகும். உறுப்பு 75(2) (அமைச்சர்கள் குடியரசுத் தலைவர் விருப்பம் உள்ளவரை பதவி வகித்தல்) அமைச்சர்களின் தனிநபர் பொறுப்பைக் குறிக்கிறது."
+        "en": "Incorrect. Option D (Article 78) references a different constitutional provision.",
+        "ta": "தவறு. தெரிவு D (உறுப்பு 78) வேறு அரசியலமைப்பு விதியைக் குறிக்கிறது."
       },
       "C": {
         "en": "Incorrect. Option C (Article 75(3)) references a different constitutional provision.",
         "ta": "தவறு. தெரிவு C (உறுப்பு 75(3)) வேறு அரசியலமைப்பு விதியைக் குறிக்கிறது."
       },
       "D": {
-        "en": "Incorrect. Option D (Article 78) references a different constitutional provision.",
-        "ta": "தவறு. தெரிவு D (உறுப்பு 78) வேறு அரசியலமைப்பு விதியைக் குறிக்கிறது."
+        "en": "Correct. Article 75(2) is the accurate constitutional answer. Article 75(2) (Ministers hold office during pleasure of President) embodies Individual Responsibility of Ministers to the President.",
+        "ta": "சரி. உறுப்பு 75(2) என்பது சரியான அரசியலமைப்பு பதிலாகும். உறுப்பு 75(2) (அமைச்சர்கள் குடியரசுத் தலைவர் விருப்பம் உள்ளவரை பதவி வகித்தல்) அமைச்சர்களின் தனிநபர் பொறுப்பைக் குறிக்கிறது."
       }
     },
     "metadata": {
@@ -2997,7 +3816,28 @@
       "topic": "President of India",
       "type": "Medium",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "Article 74(1)",
+      "Article 78",
+      "Article 75(3)",
+      "Article 75(2)"
+    ],
+    "options_ta": [
+      "உறுப்பு 74(1)",
+      "உறுப்பு 78",
+      "உறுப்பு 75(3)",
+      "உறுப்பு 75(2)"
+    ],
+    "answer": "d",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Article 75(2) (Ministers hold office during pleasure of President) embodies Individual Responsibility of Ministers to the President."
   },
   {
     "id": "POLITY_PRESIDENT_MEDIUM_041",
@@ -3019,8 +3859,8 @@
       },
       {
         "id": "B",
-        "en": "Chief Justice of India acts as President under President (Discharge of Functions) Act 1969",
-        "ta": "குடியரசுத் தலைவர் (பணிகள் நிவர்த்தி) சட்டம் 1969-ன் கீழ் இந்தியத் தலைமை நீதிபதி செயல் குடியரசுத் தலைவராவார்"
+        "en": "Parliament is automatically dissolved",
+        "ta": "நாடாளுமன்றம் தானாகக் கலைந்துவிடும்"
       },
       {
         "id": "C",
@@ -3029,11 +3869,11 @@
       },
       {
         "id": "D",
-        "en": "Parliament is automatically dissolved",
-        "ta": "நாடாளுமன்றம் தானாகக் கலைந்துவிடும்"
+        "en": "Chief Justice of India acts as President under President (Discharge of Functions) Act 1969",
+        "ta": "குடியரசுத் தலைவர் (பணிகள் நிவர்த்தி) சட்டம் 1969-ன் கீழ் இந்தியத் தலைமை நீதிபதி செயல் குடியரசுத் தலைவராவார்"
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "D",
     "explanation": {
       "en": "Under President (Discharge of Functions) Act 1969, if both President and VP posts are vacant, CJI (or senior SC Judge) acts as President.",
       "ta": "குடியரசுத் தலைவர் சட்டம் 1969-ன் கீழ் இரு பதவிகளும் காலியானால் CJI (அல்லது மூத்த உச்ச நீதிமன்ற நீதிபதி) செயல் குடியரசுத் தலைவராவார்."
@@ -3055,16 +3895,16 @@
         "ta": "தவறு. இது குடியரசுத் தலைவரின் அரசியலமைப்புப் பொறுப்பை பிரதமர் செயல் குடியரசுத் தலைவராவார்-ன் பொறுப்புடன் குழப்புகிறது."
       },
       "B": {
-        "en": "Correct. Chief Justice of India acts as President under President (Discharge of Functions) Act 1969 is the accurate constitutional answer. Under President (Discharge of Functions) Act 1969, if both President and VP posts are vacant, CJI (or senior SC Judge) acts as President.",
-        "ta": "சரி. குடியரசுத் தலைவர் (பணிகள் நிவர்த்தி) சட்டம் 1969-ன் கீழ் இந்தியத் தலைமை நீதிபதி செயல் குடியரசுத் தலைவராவார் என்பது சரியான அரசியலமைப்பு பதிலாகும். குடியரசுத் தலைவர் சட்டம் 1969-ன் கீழ் இரு பதவிகளும் காலியானால் CJI (அல்லது மூத்த உச்ச நீதிமன்ற நீதிபதி) செயல் குடியரசுத் தலைவராவார்."
+        "en": "Incorrect. Option D (Parliament is automatically dissolved) is not supported by the constitutional facts under Article reference or President Notes.",
+        "ta": "தவறு. தெரிவு D (நாடாளுமன்றம் தானாகக் கலைந்துவிடும்) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "C": {
         "en": "Incorrect. Option C (Speaker of Lok Sabha automatically becomes President permanently) is not supported by the constitutional facts under Article reference or President Notes.",
         "ta": "தவறு. தெரிவு C (மக்களவை சபாநாயகர் நிரந்தரக் குடியரசுத் தலைவராவார்) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "D": {
-        "en": "Incorrect. Option D (Parliament is automatically dissolved) is not supported by the constitutional facts under Article reference or President Notes.",
-        "ta": "தவறு. தெரிவு D (நாடாளுமன்றம் தானாகக் கலைந்துவிடும்) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
+        "en": "Correct. Chief Justice of India acts as President under President (Discharge of Functions) Act 1969 is the accurate constitutional answer. Under President (Discharge of Functions) Act 1969, if both President and VP posts are vacant, CJI (or senior SC Judge) acts as President.",
+        "ta": "சரி. குடியரசுத் தலைவர் (பணிகள் நிவர்த்தி) சட்டம் 1969-ன் கீழ் இந்தியத் தலைமை நீதிபதி செயல் குடியரசுத் தலைவராவார் என்பது சரியான அரசியலமைப்பு பதிலாகும். குடியரசுத் தலைவர் சட்டம் 1969-ன் கீழ் இரு பதவிகளும் காலியானால் CJI (அல்லது மூத்த உச்ச நீதிமன்ற நீதிபதி) செயல் குடியரசுத் தலைவராவார்."
       }
     },
     "metadata": {
@@ -3072,7 +3912,28 @@
       "topic": "President of India",
       "type": "Medium",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "Prime Minister becomes Acting President",
+      "Parliament is automatically dissolved",
+      "Speaker of Lok Sabha automatically becomes President permanently",
+      "Chief Justice of India acts as President under President (Discharge of Functions) Act 1969"
+    ],
+    "options_ta": [
+      "பிரதமர் செயல் குடியரசுத் தலைவராவார்",
+      "நாடாளுமன்றம் தானாகக் கலைந்துவிடும்",
+      "மக்களவை சபாநாயகர் நிரந்தரக் குடியரசுத் தலைவராவார்",
+      "குடியரசுத் தலைவர் (பணிகள் நிவர்த்தி) சட்டம் 1969-ன் கீழ் இந்தியத் தலைமை நீதிபதி செயல் குடியரசுத் தலைவராவார்"
+    ],
+    "answer": "d",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Under President (Discharge of Functions) Act 1969, if both President and VP posts are vacant, CJI (or senior SC Judge) acts as President."
   },
   {
     "id": "POLITY_PRESIDENT_MEDIUM_042",
@@ -3089,8 +3950,8 @@
     "options": [
       {
         "id": "A",
-        "en": "All acts done prior to declaration remain VALID and effective",
-        "ta": "அறிவிப்பிற்கு முன் செய்த அனைத்து நடவடிக்கைகளும் செல்லுபடியாகும்"
+        "en": "Parliament must re-validate each act individually",
+        "ta": "நாடாளுமன்றம் ஒவ்வொன்றையும் மீண்டும் சான்றளிக்க வேண்டும்"
       },
       {
         "id": "B",
@@ -3099,8 +3960,8 @@
       },
       {
         "id": "C",
-        "en": "Parliament must re-validate each act individually",
-        "ta": "நாடாளுமன்றம் ஒவ்வொன்றையும் மீண்டும் சான்றளிக்க வேண்டும்"
+        "en": "All acts done prior to declaration remain VALID and effective",
+        "ta": "அறிவிப்பிற்கு முன் செய்த அனைத்து நடவடிக்கைகளும் செல்லுபடியாகும்"
       },
       {
         "id": "D",
@@ -3108,7 +3969,7 @@
         "ta": "அடுத்த குடியரசுத் தலைவர் ஒப்புதல் அளித்தால் மட்டுமே செல்லுபடியாகும்"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "C",
     "explanation": {
       "en": "Article 71(2) states if election of President is declared void by SC, acts done by him in exercise of powers prior to declaration SHALL NOT be invalidated.",
       "ta": "உறுப்பு 71(2) தேர்தல் செல்லாது என அறிவிக்கப்படும் முன் குடியரசுத் தலைவர் செய்த நடவடிக்கைகள் செல்லாததாகாது எனக் கூறுகிறது."
@@ -3126,16 +3987,16 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Correct. All acts done prior to declaration remain VALID and effective is the accurate constitutional answer. Article 71(2) states if election of President is declared void by SC, acts done by him in exercise of powers prior to declaration SHALL NOT be invalidated.",
-        "ta": "சரி. அறிவிப்பிற்கு முன் செய்த அனைத்து நடவடிக்கைகளும் செல்லுபடியாகும் என்பது சரியான அரசியலமைப்பு பதிலாகும். உறுப்பு 71(2) தேர்தல் செல்லாது என அறிவிக்கப்படும் முன் குடியரசுத் தலைவர் செய்த நடவடிக்கைகள் செல்லாததாகாது எனக் கூறுகிறது."
+        "en": "Incorrect. Option C (Parliament must re-validate each act individually) is not supported by the constitutional facts under Article reference or President Notes.",
+        "ta": "தவறு. தெரிவு C (நாடாளுமன்றம் ஒவ்வொன்றையும் மீண்டும் சான்றளிக்க வேண்டும்) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "B": {
         "en": "Incorrect. Option B (All acts done prior to declaration become automatically void ab initio) is not supported by the constitutional facts under Article reference or President Notes.",
         "ta": "தவறு. தெரிவு B (முந்தைய அனைத்து நடவடிக்கைகளும் தானாகவே செல்லாததாகிவிடும்) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "C": {
-        "en": "Incorrect. Option C (Parliament must re-validate each act individually) is not supported by the constitutional facts under Article reference or President Notes.",
-        "ta": "தவறு. தெரிவு C (நாடாளுமன்றம் ஒவ்வொன்றையும் மீண்டும் சான்றளிக்க வேண்டும்) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
+        "en": "Correct. All acts done prior to declaration remain VALID and effective is the accurate constitutional answer. Article 71(2) states if election of President is declared void by SC, acts done by him in exercise of powers prior to declaration SHALL NOT be invalidated.",
+        "ta": "சரி. அறிவிப்பிற்கு முன் செய்த அனைத்து நடவடிக்கைகளும் செல்லுபடியாகும் என்பது சரியான அரசியலமைப்பு பதிலாகும். உறுப்பு 71(2) தேர்தல் செல்லாது என அறிவிக்கப்படும் முன் குடியரசுத் தலைவர் செய்த நடவடிக்கைகள் செல்லாததாகாது எனக் கூறுகிறது."
       },
       "D": {
         "en": "Incorrect. Option D (Acts become valid only if ratified by next President) is not supported by the constitutional facts under Article reference or President Notes.",
@@ -3147,7 +4008,28 @@
       "topic": "President of India",
       "type": "Medium",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "Parliament must re-validate each act individually",
+      "All acts done prior to declaration become automatically void ab initio",
+      "All acts done prior to declaration remain VALID and effective",
+      "Acts become valid only if ratified by next President"
+    ],
+    "options_ta": [
+      "நாடாளுமன்றம் ஒவ்வொன்றையும் மீண்டும் சான்றளிக்க வேண்டும்",
+      "முந்தைய அனைத்து நடவடிக்கைகளும் தானாகவே செல்லாததாகிவிடும்",
+      "அறிவிப்பிற்கு முன் செய்த அனைத்து நடவடிக்கைகளும் செல்லுபடியாகும்",
+      "அடுத்த குடியரசுத் தலைவர் ஒப்புதல் அளித்தால் மட்டுமே செல்லுபடியாகும்"
+    ],
+    "answer": "c",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Article 71(2) states if election of President is declared void by SC, acts done by him in exercise of powers prior to declaration SHALL NOT ..."
   },
   {
     "id": "POLITY_PRESIDENT_MEDIUM_043",
@@ -3222,7 +4104,28 @@
       "topic": "President of India",
       "type": "Medium",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "Comptroller and Auditor General (CAG)",
+      "Union Public Service Commission (UPSC)",
+      "Finance Commission",
+      "NITI Aayog"
+    ],
+    "options_ta": [
+      "இந்தியக் தலைமைத் தணிக்கையாளர் (CAG)",
+      "மத்திய அரசுப் பணியாளர் தேர்வாணையம் (UPSC)",
+      "நிதியாணையம்",
+      "நிதி ஆயோக்"
+    ],
+    "answer": "d",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "NITI Aayog is an executive body (non-constitutional) and its reports are not required to be laid before Parliament by President under Consti..."
   },
   {
     "id": "POLITY_PRESIDENT_MEDIUM_044",
@@ -3244,13 +4147,13 @@
       },
       {
         "id": "B",
-        "en": "Chairman of Rajya Sabha",
-        "ta": "மாநிலங்களவைத் தலைவர்"
+        "en": "President of India",
+        "ta": "இந்தியக் குடியரசுத் தலைவர்"
       },
       {
         "id": "C",
-        "en": "President of India",
-        "ta": "இந்தியக் குடியரசுத் தலைவர்"
+        "en": "Chairman of Rajya Sabha",
+        "ta": "மாநிலங்களவைத் தலைவர்"
       },
       {
         "id": "D",
@@ -3258,7 +4161,7 @@
         "ta": "பிரதமர்"
       }
     ],
-    "correct_answer": "C",
+    "correct_answer": "B",
     "explanation": {
       "en": "Article 108 empowers the President to notify intention to summon a Joint Sitting of both Houses to resolve deadlock over Ordinary Bill.",
       "ta": "உறுப்பு 108 சாதாரண மசோதா முடக்கத்திற்கு நாடாளுமன்றக் கூட்டு அமர்வைக் கூட்டக் குடியரசுத் தலைவருக்கு அதிகாரமளிக்கிறது."
@@ -3280,12 +4183,12 @@
         "ta": "தவறு. தெரிவு A (மக்களவை சபாநாயகர்) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "B": {
-        "en": "Incorrect. Option B (Chairman of Rajya Sabha) is not supported by the constitutional facts under Article reference or President Notes.",
-        "ta": "தவறு. தெரிவு B (மாநிலங்களவைத் தலைவர்) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
-      },
-      "C": {
         "en": "Correct. President of India is the accurate constitutional answer. Article 108 empowers the President to notify intention to summon a Joint Sitting of both Houses to resolve deadlock over Ordinary Bill.",
         "ta": "சரி. இந்தியக் குடியரசுத் தலைவர் என்பது சரியான அரசியலமைப்பு பதிலாகும். உறுப்பு 108 சாதாரண மசோதா முடக்கத்திற்கு நாடாளுமன்றக் கூட்டு அமர்வைக் கூட்டக் குடியரசுத் தலைவருக்கு அதிகாரமளிக்கிறது."
+      },
+      "C": {
+        "en": "Incorrect. Option B (Chairman of Rajya Sabha) is not supported by the constitutional facts under Article reference or President Notes.",
+        "ta": "தவறு. தெரிவு B (மாநிலங்களவைத் தலைவர்) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "D": {
         "en": "Incorrect. This confuses the President's constitutional role with that of the Prime Minister.",
@@ -3297,7 +4200,28 @@
       "topic": "President of India",
       "type": "Medium",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "Speaker of Lok Sabha",
+      "President of India",
+      "Chairman of Rajya Sabha",
+      "Prime Minister"
+    ],
+    "options_ta": [
+      "மக்களவை சபாநாயகர்",
+      "இந்தியக் குடியரசுத் தலைவர்",
+      "மாநிலங்களவைத் தலைவர்",
+      "பிரதமர்"
+    ],
+    "answer": "b",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Article 108 empowers the President to notify intention to summon a Joint Sitting of both Houses to resolve deadlock over Ordinary Bill."
   },
   {
     "id": "POLITY_PRESIDENT_MEDIUM_045",
@@ -3314,13 +4238,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Yes, for both Money Bill and Constitutional Amendment Bill",
-        "ta": "ஆம், இரண்டிற்கும் கூட்ட முடியும்"
+        "en": "No, Joint Sitting CANNOT be summoned for Money Bill OR Constitutional Amendment Bill",
+        "ta": "இல்லை, பண மசோதா மற்றும் அரசியலமைப்பு திருத்த மசோதா இரண்டிற்கும் கூட்ட முடியாது"
       },
       {
         "id": "B",
-        "en": "No, Joint Sitting CANNOT be summoned for Money Bill OR Constitutional Amendment Bill",
-        "ta": "இல்லை, பண மசோதா மற்றும் அரசியலமைப்பு திருத்த மசோதா இரண்டிற்கும் கூட்ட முடியாது"
+        "en": "Yes, for both Money Bill and Constitutional Amendment Bill",
+        "ta": "ஆம், இரண்டிற்கும் கூட்ட முடியும்"
       },
       {
         "id": "C",
@@ -3333,7 +4257,7 @@
         "ta": "அரசியலமைப்பு திருத்தத்திற்கு முடியும், பண மசோதாவிற்கு முடியாது"
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "A",
     "explanation": {
       "en": "Joint Sitting under Article 108 applies ONLY to Ordinary Bills and Financial Bills. It CANNOT be summoned for Money Bills or Constitutional Amendment Bills.",
       "ta": "கூட்டு அமர்வு சாதாரண மற்றும் நிதி மசோதாக்களுக்கு மட்டுமே பொருந்தும்; பண மசோதா மற்றும் அரசியலமைப்பு திருத்த மசோதாவிற்குப் பொருந்தாது."
@@ -3351,12 +4275,12 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Option A (Yes, for both Money Bill and Constitutional Amendment Bill) is not supported by the constitutional facts under Article reference or President Notes.",
-        "ta": "தவறு. தெரிவு A (ஆம், இரண்டிற்கும் கூட்ட முடியும்) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
-      },
-      "B": {
         "en": "Correct. No, Joint Sitting CANNOT be summoned for Money Bill OR Constitutional Amendment Bill is the accurate constitutional answer. Joint Sitting under Article 108 applies ONLY to Ordinary Bills and Financial Bills. It CANNOT be summoned for Money Bills or Constitutional Amendment Bills.",
         "ta": "சரி. இல்லை, பண மசோதா மற்றும் அரசியலமைப்பு திருத்த மசோதா இரண்டிற்கும் கூட்ட முடியாது என்பது சரியான அரசியலமைப்பு பதிலாகும். கூட்டு அமர்வு சாதாரண மற்றும் நிதி மசோதாக்களுக்கு மட்டுமே பொருந்தும்; பண மசோதா மற்றும் அரசியலமைப்பு திருத்த மசோதாவிற்குப் பொருந்தாது."
+      },
+      "B": {
+        "en": "Incorrect. Option A (Yes, for both Money Bill and Constitutional Amendment Bill) is not supported by the constitutional facts under Article reference or President Notes.",
+        "ta": "தவறு. தெரிவு A (ஆம், இரண்டிற்கும் கூட்ட முடியும்) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "C": {
         "en": "Incorrect. Option C (For Money Bill yes, for Constitutional Amendment Bill no) is not supported by the constitutional facts under Article reference or President Notes.",
@@ -3372,7 +4296,28 @@
       "topic": "President of India",
       "type": "Medium",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "No, Joint Sitting CANNOT be summoned for Money Bill OR Constitutional Amendment Bill",
+      "Yes, for both Money Bill and Constitutional Amendment Bill",
+      "For Money Bill yes, for Constitutional Amendment Bill no",
+      "For Constitutional Amendment Bill yes, for Money Bill no"
+    ],
+    "options_ta": [
+      "இல்லை, பண மசோதா மற்றும் அரசியலமைப்பு திருத்த மசோதா இரண்டிற்கும் கூட்ட முடியாது",
+      "ஆம், இரண்டிற்கும் கூட்ட முடியும்",
+      "பண மசோதாவிற்கு முடியும், அரசியலமைப்பு திருத்தத்திற்கு முடியாது",
+      "அரசியலமைப்பு திருத்தத்திற்கு முடியும், பண மசோதாவிற்கு முடியாது"
+    ],
+    "answer": "a",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Joint Sitting under Article 108 applies ONLY to Ordinary Bills and Financial Bills. It CANNOT be summoned for Money Bills or Constitutional ..."
   },
   {
     "id": "POLITY_PRESIDENT_MEDIUM_046",
@@ -3394,8 +4339,8 @@
       },
       {
         "id": "B",
-        "en": "President of India according to the opinion of Election Commission",
-        "ta": "தேர்தல் ஆணையத்தின் ஆலோசனையின் படி இந்தியக் குடியரசுத் தலைவர்"
+        "en": "High Court of concerned State",
+        "ta": "சம்பந்தப்பட்ட மாநில உயர் நீதிமன்றம்"
       },
       {
         "id": "C",
@@ -3404,11 +4349,11 @@
       },
       {
         "id": "D",
-        "en": "High Court of concerned State",
-        "ta": "சம்பந்தப்பட்ட மாநில உயர் நீதிமன்றம்"
+        "en": "President of India according to the opinion of Election Commission",
+        "ta": "தேர்தல் ஆணையத்தின் ஆலோசனையின் படி இந்தியக் குடியரசுத் தலைவர்"
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "D",
     "explanation": {
       "en": "Article 103 mandates that President shall decide MP disqualification questions according to the OPINION of the Election Commission (binding).",
       "ta": "உறுப்பு 103 எம்பி தகுதிநீக்கக் கேள்விகளைத் தேர்தல் ஆணையத்தின் ஆலோசனையின் படி குடியரசுத் தலைவர் தீர்மானிப்பார் எனக் கூறுகிறது."
@@ -3430,16 +4375,16 @@
         "ta": "தவறு. தெரிவு A (அவைத் தலைவர் / சபாநாயகர்) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "B": {
-        "en": "Correct. President of India according to the opinion of Election Commission is the accurate constitutional answer. Article 103 mandates that President shall decide MP disqualification questions according to the OPINION of the Election Commission (binding).",
-        "ta": "சரி. தேர்தல் ஆணையத்தின் ஆலோசனையின் படி இந்தியக் குடியரசுத் தலைவர் என்பது சரியான அரசியலமைப்பு பதிலாகும். உறுப்பு 103 எம்பி தகுதிநீக்கக் கேள்விகளைத் தேர்தல் ஆணையத்தின் ஆலோசனையின் படி குடியரசுத் தலைவர் தீர்மானிப்பார் எனக் கூறுகிறது."
+        "en": "Incorrect. Option D (High Court of concerned State) is not supported by the constitutional facts under Article reference or President Notes.",
+        "ta": "தவறு. தெரிவு D (சம்பந்தப்பட்ட மாநில உயர் நீதிமன்றம்) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "C": {
         "en": "Incorrect. Option C (Supreme Court of India) is not supported by the constitutional facts under Article reference or President Notes.",
         "ta": "தவறு. தெரிவு C (இந்திய உச்ச நீதிமன்றம்) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "D": {
-        "en": "Incorrect. Option D (High Court of concerned State) is not supported by the constitutional facts under Article reference or President Notes.",
-        "ta": "தவறு. தெரிவு D (சம்பந்தப்பட்ட மாநில உயர் நீதிமன்றம்) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
+        "en": "Correct. President of India according to the opinion of Election Commission is the accurate constitutional answer. Article 103 mandates that President shall decide MP disqualification questions according to the OPINION of the Election Commission (binding).",
+        "ta": "சரி. தேர்தல் ஆணையத்தின் ஆலோசனையின் படி இந்தியக் குடியரசுத் தலைவர் என்பது சரியான அரசியலமைப்பு பதிலாகும். உறுப்பு 103 எம்பி தகுதிநீக்கக் கேள்விகளைத் தேர்தல் ஆணையத்தின் ஆலோசனையின் படி குடியரசுத் தலைவர் தீர்மானிப்பார் எனக் கூறுகிறது."
       }
     },
     "metadata": {
@@ -3447,7 +4392,28 @@
       "topic": "President of India",
       "type": "Medium",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "Speaker / Chairman of the House",
+      "High Court of concerned State",
+      "Supreme Court of India",
+      "President of India according to the opinion of Election Commission"
+    ],
+    "options_ta": [
+      "அவைத் தலைவர் / சபாநாயகர்",
+      "சம்பந்தப்பட்ட மாநில உயர் நீதிமன்றம்",
+      "இந்திய உச்ச நீதிமன்றம்",
+      "தேர்தல் ஆணையத்தின் ஆலோசனையின் படி இந்தியக் குடியரசுத் தலைவர்"
+    ],
+    "answer": "d",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Article 103 mandates that President shall decide MP disqualification questions according to the OPINION of the Election Commission (binding)..."
   },
   {
     "id": "POLITY_PRESIDENT_MEDIUM_047",
@@ -3469,13 +4435,13 @@
       },
       {
         "id": "B",
-        "en": "Article 240",
-        "ta": "உறுப்பு 240"
+        "en": "Article 241",
+        "ta": "உறுப்பு 241"
       },
       {
         "id": "C",
-        "en": "Article 241",
-        "ta": "உறுப்பு 241"
+        "en": "Article 240",
+        "ta": "உறுப்பு 240"
       },
       {
         "id": "D",
@@ -3483,7 +4449,7 @@
         "ta": "உறுப்பு 242"
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "C",
     "explanation": {
       "en": "Article 240 empowers President to make regulations for peace, progress and good government of UTs (Andaman & Nicobar, Lakshadweep, Dadra & Nagar Haveli, Daman & Diu, Puducherry).",
       "ta": "உறுப்பு 240 யூனியன் பிரதேசங்களின் நல்லாட்சிக்கு ஒழுங்குமுறைகளை உருவாக்கக் குடியரசுத் தலைவருக்கு அதிகாரமளிக்கிறது."
@@ -3505,12 +4471,12 @@
         "ta": "தவறு. தெரிவு A (உறுப்பு 239) வேறு அரசியலமைப்பு விதியைக் குறிக்கிறது."
       },
       "B": {
-        "en": "Correct. Article 240 is the accurate constitutional answer. Article 240 empowers President to make regulations for peace, progress and good government of UTs (Andaman & Nicobar, Lakshadweep, Dadra & Nagar Haveli, Daman & Diu, Puducherry).",
-        "ta": "சரி. உறுப்பு 240 என்பது சரியான அரசியலமைப்பு பதிலாகும். உறுப்பு 240 யூனியன் பிரதேசங்களின் நல்லாட்சிக்கு ஒழுங்குமுறைகளை உருவாக்கக் குடியரசுத் தலைவருக்கு அதிகாரமளிக்கிறது."
-      },
-      "C": {
         "en": "Incorrect. Option C (Article 241) references a different constitutional provision.",
         "ta": "தவறு. தெரிவு C (உறுப்பு 241) வேறு அரசியலமைப்பு விதியைக் குறிக்கிறது."
+      },
+      "C": {
+        "en": "Correct. Article 240 is the accurate constitutional answer. Article 240 empowers President to make regulations for peace, progress and good government of UTs (Andaman & Nicobar, Lakshadweep, Dadra & Nagar Haveli, Daman & Diu, Puducherry).",
+        "ta": "சரி. உறுப்பு 240 என்பது சரியான அரசியலமைப்பு பதிலாகும். உறுப்பு 240 யூனியன் பிரதேசங்களின் நல்லாட்சிக்கு ஒழுங்குமுறைகளை உருவாக்கக் குடியரசுத் தலைவருக்கு அதிகாரமளிக்கிறது."
       },
       "D": {
         "en": "Incorrect. Option D (Article 242) references a different constitutional provision.",
@@ -3522,7 +4488,28 @@
       "topic": "President of India",
       "type": "Medium",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "Article 239",
+      "Article 241",
+      "Article 240",
+      "Article 242"
+    ],
+    "options_ta": [
+      "உறுப்பு 239",
+      "உறுப்பு 241",
+      "உறுப்பு 240",
+      "உறுப்பு 242"
+    ],
+    "answer": "c",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Article 240 empowers President to make regulations for peace, progress and good government of UTs (Andaman & Nicobar, Lakshadweep, Dadra & N..."
   },
   {
     "id": "POLITY_PRESIDENT_MEDIUM_048",
@@ -3597,7 +4584,28 @@
       "topic": "President of India",
       "type": "Medium",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "Yes, Supreme Court can inquire in all cases",
+      "No court shall inquire into whether any, and if so what, advice was tendered by Ministers to President",
+      "High Court can inquire with Governor's permission",
+      "Parliamentary Standing Committee can inquire"
+    ],
+    "options_ta": [
+      "ஆம், அனைத்து வழக்குகளிலும் உச்ச நீதிமன்றம் விசாரிக்கலாம்",
+      "அமைச்சர்கள் குடியரசுத் தலைவருக்கு என்ன ஆலோசனை வழங்கினார்கள் என்பதை எந்த நீதிமன்றமும் விசாரிக்க முடியாது",
+      "ஆளுநர் அனுமதியுடன் உயர் நீதிமன்றம் விசாரிக்கலாம்",
+      "நாடாளுமன்ற நிலைக்குழு விசாரிக்கலாம்"
+    ],
+    "answer": "b",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Article 74(2) explicitly bar courts: 'The question whether any, and if so what, advice was tendered by Ministers to the President shall not ..."
   },
   {
     "id": "POLITY_PRESIDENT_MEDIUM_049",
@@ -3672,7 +4680,28 @@
       "topic": "President of India",
       "type": "Medium",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "Executive Notification",
+      "Act of Parliament",
+      "Supreme Court Decree",
+      "State Assembly Law"
+    ],
+    "options_ta": [
+      "நிர்வாக அறிவிக்கை",
+      "நாடாளுமன்றச் சட்டம் (Act of Parliament)",
+      "உச்ச நீதிமன்றத் தீர்ப்பு",
+      "மாநிலச் சட்டமன்றச் சட்டம்"
+    ],
+    "answer": "b",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Article 123(3) explicitly states that an Ordinance promulgated under Article 123 shall have the same force and effect as an Act of Parliamen..."
   },
   {
     "id": "POLITY_PRESIDENT_MEDIUM_050",
@@ -3694,13 +4723,13 @@
       },
       {
         "id": "B",
-        "en": "Select and appoint Prime Minister using personal discretion to form a stable government",
-        "ta": "நிலையான அரசை அமைக்கத் தனது தனிப்பட்ட விவேகத்தைப் பயன்படுத்திப் பிரதமரைத் தேர்ந்தெடுத்து நியமித்தல்"
+        "en": "Must dissolve Lok Sabha immediately and call fresh elections",
+        "ta": "உடனடியாக மக்களவையைக் கலைத்துப் புதிய தேர்தல் நடத்த வேண்டும்"
       },
       {
         "id": "C",
-        "en": "Must dissolve Lok Sabha immediately and call fresh elections",
-        "ta": "உடனடியாக மக்களவையைக் கலைத்துப் புதிய தேர்தல் நடத்த வேண்டும்"
+        "en": "Select and appoint Prime Minister using personal discretion to form a stable government",
+        "ta": "நிலையான அரசை அமைக்கத் தனது தனிப்பட்ட விவேகத்தைப் பயன்படுத்திப் பிரதமரைத் தேர்ந்தெடுத்து நியமித்தல்"
       },
       {
         "id": "D",
@@ -3708,7 +4737,7 @@
         "ta": "மத்தியில் குடியரசுத் தலைவர் ஆட்சியை அமல்படுத்த வேண்டும்"
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "C",
     "explanation": {
       "en": "In a Hung Lok Sabha, President exercises situational discretion to appoint PM (usually leader of largest party/coalition) and asks them to prove majority on floor within specified time.",
       "ta": "தொங்கு மக்களவையில் நிலையான அரசை அமைக்கக் குடியரசுத் தலைவர் விவேக அதிகாரத்தைப் பயன்படுத்திப் பிரதமரை நியமிப்பார்."
@@ -3730,12 +4759,12 @@
         "ta": "தவறு. தெரிவு A (பெரிய கட்சியின் தலைவரைத் தானாக நியமிக்க வேண்டும்) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "B": {
-        "en": "Correct. Select and appoint Prime Minister using personal discretion to form a stable government is the accurate constitutional answer. In a Hung Lok Sabha, President exercises situational discretion to appoint PM (usually leader of largest party/coalition) and asks them to prove majority on floor within specified time.",
-        "ta": "சரி. நிலையான அரசை அமைக்கத் தனது தனிப்பட்ட விவேகத்தைப் பயன்படுத்திப் பிரதமரைத் தேர்ந்தெடுத்து நியமித்தல் என்பது சரியான அரசியலமைப்பு பதிலாகும். தொங்கு மக்களவையில் நிலையான அரசை அமைக்கக் குடியரசுத் தலைவர் விவேக அதிகாரத்தைப் பயன்படுத்திப் பிரதமரை நியமிப்பார்."
-      },
-      "C": {
         "en": "Incorrect. Option C (Must dissolve Lok Sabha immediately and call fresh elections) is not supported by the constitutional facts under Article reference or President Notes.",
         "ta": "தவறு. தெரிவு C (உடனடியாக மக்களவையைக் கலைத்துப் புதிய தேர்தல் நடத்த வேண்டும்) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
+      },
+      "C": {
+        "en": "Correct. Select and appoint Prime Minister using personal discretion to form a stable government is the accurate constitutional answer. In a Hung Lok Sabha, President exercises situational discretion to appoint PM (usually leader of largest party/coalition) and asks them to prove majority on floor within specified time.",
+        "ta": "சரி. நிலையான அரசை அமைக்கத் தனது தனிப்பட்ட விவேகத்தைப் பயன்படுத்திப் பிரதமரைத் தேர்ந்தெடுத்து நியமித்தல் என்பது சரியான அரசியலமைப்பு பதிலாகும். தொங்கு மக்களவையில் நிலையான அரசை அமைக்கக் குடியரசுத் தலைவர் விவேக அதிகாரத்தைப் பயன்படுத்திப் பிரதமரை நியமிப்பார்."
       },
       "D": {
         "en": "Incorrect. Option D (Must impose President's Rule in the Centre) is not supported by the constitutional facts under Article reference or President Notes.",
@@ -3747,6 +4776,27 @@
       "topic": "President of India",
       "type": "Medium",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "Must appoint leader of largest party automatically",
+      "Must dissolve Lok Sabha immediately and call fresh elections",
+      "Select and appoint Prime Minister using personal discretion to form a stable government",
+      "Must impose President's Rule in the Centre"
+    ],
+    "options_ta": [
+      "பெரிய கட்சியின் தலைவரைத் தானாக நியமிக்க வேண்டும்",
+      "உடனடியாக மக்களவையைக் கலைத்துப் புதிய தேர்தல் நடத்த வேண்டும்",
+      "நிலையான அரசை அமைக்கத் தனது தனிப்பட்ட விவேகத்தைப் பயன்படுத்திப் பிரதமரைத் தேர்ந்தெடுத்து நியமித்தல்",
+      "மத்தியில் குடியரசுத் தலைவர் ஆட்சியை அமல்படுத்த வேண்டும்"
+    ],
+    "answer": "c",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "In a Hung Lok Sabha, President exercises situational discretion to appoint PM (usually leader of largest party/coalition) and asks them to p..."
   }
 ]

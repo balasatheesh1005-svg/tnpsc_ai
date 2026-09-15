@@ -1,0 +1,790 @@
+# -*- coding: utf-8 -*-
+"""
+State Election & Finance Commissions - Part 2B Chronology MCQs Generator (25 MCQs: SEFC_C_001 to SEFC_C_025)
+TNPSC Nova AI Content Engine
+"""
+import json
+import os
+from state_election_finance_commissions_mcq_helper import make_sefc_q
+from tools.nova_content_engine.answer_randomizer import randomize_and_balance_dataset
+from tools.nova_content_engine.validator import ContentValidator
+from tools.nova_content_engine.chronology_validator import ChronologyValidator
+
+
+def get_chronology_questions():
+    raw_data = [
+        # 1. PR Committees 1
+        {
+            "subtopic": "Panchayati Raj Committees Chronology",
+            "stem_en": "Arrange the following landmark committees on Panchayati Raj and local governance in chronological order of their constitution:\n1. Ashok Mehta Committee\n2. Balwant Rai Mehta Committee\n3. L.M. Singhvi Committee\n4. G.V.K. Rao Committee\nSelect the correct answer using the codes given below:",
+            "stem_ta": "பஞ்சாயத்து ராஜ் மற்றும் உள்ளாட்சி நிர்வாகம் தொடர்பான பின்வரும் முக்கியக் குழுக்களை அவை அமைக்கப்பட்ட காலவரிசைப்படி ஒழுங்குபடுத்தவும்:\n1. அசோக் மேத்தா குழு\n2. பல்வந்த் ராய் மேத்தா குழு\n3. எல்.எம். சிங்வி குழு\n4. ஜி.வி.கே. ராவ் குழு\nகீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:",
+            "options": [
+                ("2 - 1 - 4 - 3", "2 - 1 - 4 - 3"),
+                ("1 - 2 - 3 - 4", "1 - 2 - 3 - 4"),
+                ("2 - 4 - 1 - 3", "2 - 4 - 1 - 3"),
+                ("4 - 2 - 1 - 3", "4 - 2 - 1 - 3")
+            ],
+            "correct_key": "A",
+            "exp_en": "The correct chronological order is:\n2. Balwant Rai Mehta Committee (1957)\n→ 1. Ashok Mehta Committee (1977)\n→ 4. G.V.K. Rao Committee (1985)\n→ 3. L.M. Singhvi Committee (1986).\nSequence: 2 → 1 → 4 → 3.",
+            "exp_ta": "சரியான காலவரிசை:\n2. பல்வந்த் ராய் மேத்தா குழு (1957)\n→ 1. அசோக் மேத்தா குழு (1977)\n→ 4. ஜி.வி.கே. ராவ் குழு (1985)\n→ 3. எல்.எம். சிங்வி குழு (1986).\nவரிசை: 2 → 1 → 4 → 3.",
+            "why_a_en": "Correctly follows the chronological sequence: 1957 -> 1977 -> 1985 -> 1986.",
+            "why_a_ta": "1957 -> 1977 -> 1985 -> 1986 என்ற காலவரிசையைச் சரியாகப் பின்பற்றுகிறது.",
+            "why_b_en": "Incorrect presented stem sequence.",
+            "why_b_ta": "வினாவில் கொடுக்கப்பட்ட தவறான வரிசை.",
+            "why_c_en": "Places GVK Rao Committee before Ashok Mehta Committee.",
+            "why_c_ta": "அசோக் மேத்தா குழுவிற்கு முன் ஜி.வி.கே. ராவ் குழுவை வைக்கிறது.",
+            "why_d_en": "Places GVK Rao Committee first.",
+            "why_d_ta": "ஜி.வி.கே. ராவ் குழுவை முதலாவதாக வைக்கிறது.",
+            "tip_en": "Remember: Balwant Rai (1957) -> Ashok Mehta (1977) -> GVK Rao (1985) -> LM Singhvi (1986).",
+            "tip_ta": "நினைவில் கொள்க: பல்வந்த் ராய் (1957) -> அசோக் மேத்தா (1977) -> GVK ராவ் (1985) -> LM சிங்வி (1986).",
+            "fact_en": "L.M. Singhvi Committee explicitly recommended constitutional status for Panchayati Raj.",
+            "fact_ta": "எல்.எம். சிங்வி குழு பஞ்சாயத்து ராஜிற்கு அரசியலமைப்பு அந்தஸ்தை வெளிப்படையாகப் பரிந்துரைத்தது."
+        },
+
+        # 2. Constitutional Enactments on Local Bodies
+        {
+            "subtopic": "Constitutional Amendment Acts on Local Bodies",
+            "stem_en": "Arrange the following constitutional milestones regarding local self-government in chronological order:\n1. Passage of the 74th Constitutional Amendment Act (Nagarpalika Act)\n2. Introduction of 64th Constitutional Amendment Bill by Rajiv Gandhi Government\n3. Passage of the 73rd Constitutional Amendment Act (Panchayati Raj Act)\n4. Insertion of Article 40 in Directive Principles of State Policy\nSelect the correct answer using the codes given below:",
+            "stem_ta": "உள்ளாட்சி அமைப்புகள் தொடர்பான பின்வரும் அரசியலமைப்பு மைல்கற்களை காலவரிசைப்படி ஒழுங்குபடுத்தவும்:\n1. 74வது அரசியலமைப்பு திருத்தச் சட்டம் நிறைவேற்றப்படுதல் (நகர்பாலிகா சட்டம்)\n2. ராஜீவ் காந்தி அரசால் 64வது அரசியலமைப்பு திருத்த மசோதா அறிமுகப்படுத்தப்படுதல்\n3. 73வது அரசியலமைப்பு திருத்தச் சட்டம் நிறைவேற்றப்படுதல் (பஞ்சாயத்து ராஜ் சட்டம்)\n4. அரசு வழிகாட்டு நெறிமுறைகளில் சரத்து 40 சேர்க்கப்படுதல்\nகீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:",
+            "options": [
+                ("4 - 2 - 3 - 1", "4 - 2 - 3 - 1"),
+                ("2 - 4 - 3 - 1", "2 - 4 - 3 - 1"),
+                ("4 - 3 - 2 - 1", "4 - 3 - 2 - 1"),
+                ("1 - 2 - 3 - 4", "1 - 2 - 3 - 4")
+            ],
+            "correct_key": "A",
+            "exp_en": "The correct chronological order is:\n4. Insertion of Article 40 in the Constitution (1950)\n→ 2. 64th Amendment Bill introduced (1989)\n→ 3. 73rd Amendment Act enacted (1992, effective April 1993)\n→ 1. 74th Amendment Act enacted (1992, effective June 1993).\nSequence: 4 → 2 → 3 → 1.",
+            "exp_ta": "சரியான காலவரிசை:\n4. அரசியலமைப்பில் சரத்து 40 சேர்க்கப்படுதல் (1950)\n→ 2. 64வது திருத்த மசோதா அறிமுகம் (1989)\n→ 3. 73வது திருத்தச் சட்டம் நடைமுறைக்கு வருதல் (1992, ஏப்ரல் 1993)\n→ 1. 74வது திருத்தச் சட்டம் நடைமுறைக்கு வருதல் (1992, ஜூன் 1993).\nவரிசை: 4 → 2 → 3 → 1.",
+            "why_a_en": "Correct sequence: 1950 -> 1989 -> April 1993 -> June 1993.",
+            "why_a_ta": "சரியான வரிசை: 1950 -> 1989 -> ஏப்ரல் 1993 -> ஜூன் 1993.",
+            "why_b_en": "Places 64th Amendment Bill before Article 40.",
+            "why_b_ta": "சரத்து 40-க்கு முன் 64வது திருத்த மசோதாவை வைக்கிறது.",
+            "why_c_en": "Places 73rd Amendment before 64th Amendment Bill.",
+            "why_c_ta": "64வது மசோதாவிற்கு முன் 73வது திருத்தத்தை வைக்கிறது.",
+            "why_d_en": "Incorrect presented stem sequence.",
+            "why_d_ta": "வினாவில் கொடுக்கப்பட்ட தவறான வரிசை.",
+            "tip_en": "73rd Act came into force on 24 April 1993; 74th Act on 1 June 1993.",
+            "tip_ta": "73வது சட்டம் 24 ஏப்ரல் 1993-லும், 74வது சட்டம் 1 ஜூன் 1993-லும் நடைமுறைக்கு வந்தன.",
+            "fact_en": "April 24 is celebrated annually as National Panchayati Raj Day in India.",
+            "fact_ta": "ஏப்ரல் 24 இந்தியாவில் ஆண்டுதோறும் தேசிய பஞ்சாயத்து ராஜ் தினமாகக் கொண்டாடப்படுகிறது."
+        },
+
+        # 3. Landmark Judicial Decisions
+        {
+            "subtopic": "Judicial Decisions on Elections & Local Bodies",
+            "stem_en": "Arrange the following landmark Supreme Court judgments regarding election jurisprudence in chronological order:\n1. Kishan Singh Tomar v. Municipal Corporation of Ahmedabad\n2. NP Ponnuswami v. Returning Officer, Namakkal\n3. State of AP v. N. Ramesh Kumar\n4. Mohinder Singh Gill v. Chief Election Commissioner\nSelect the correct answer using the codes given below:",
+            "stem_ta": "தேர்தல் சட்டக் கோட்பாடுகள் தொடர்பான பின்வரும் முக்கிய உச்ச நீதிமன்றத் தீர்ப்புகளை காலவரிசைப்படி ஒழுங்குபடுத்தவும்:\n1. கிஷன் சிங் தோமர் எதிர் அகமதாபாத் மாநகராட்சி\n2. என்.பி. பொன்னுசாமி எதிர் தேர்தல் நடத்தும் அதிகாரி, நாமக்கல்\n3. ஆந்திரப் பிரதேச அரசு எதிர் என். ரமேஷ் குமார்\n4. மொகிந்தர் சிங் கில் எதிர் தலைமை தேர்தல் ஆணையர்\nகீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:",
+            "options": [
+                ("2 - 4 - 1 - 3", "2 - 4 - 1 - 3"),
+                ("4 - 2 - 1 - 3", "4 - 2 - 1 - 3"),
+                ("2 - 1 - 4 - 3", "2 - 1 - 4 - 3"),
+                ("1 - 2 - 3 - 4", "1 - 2 - 3 - 4")
+            ],
+            "correct_key": "A",
+            "exp_en": "The correct chronological order is:\n2. NP Ponnuswami (1952)\n→ 4. Mohinder Singh Gill (1977)\n→ 1. Kishan Singh Tomar (2006)\n→ 3. State of AP v. N. Ramesh Kumar (2020).\nSequence: 2 → 4 → 1 → 3.",
+            "exp_ta": "சரியான காலவரிசை:\n2. என்.பி. பொன்னுசாமி (1952)\n→ 4. மொகிந்தர் சிங் கில் (1977)\n→ 1. கிஷன் சிங் தோமர் (2006)\n→ 3. ஆந்திரா எதிர் என். ரமேஷ் குமார் (2020).\nவரிசை: 2 → 4 → 1 → 3.",
+            "why_a_en": "Chronological progression: 1952 -> 1977 -> 2006 -> 2020.",
+            "why_a_ta": "காலவரிசை முன்னேற்றம்: 1952 -> 1977 -> 2006 -> 2020.",
+            "why_b_en": "Places Mohinder Singh Gill before Ponnuswami.",
+            "why_b_ta": "பொன்னுசாமிக்கு முன் மொகிந்தர் சிங் கில்லை வைக்கிறது.",
+            "why_c_en": "Places Kishan Singh Tomar before Mohinder Singh Gill.",
+            "why_c_ta": "மொகிந்தர் சிங் கில்லுக்கு முன் கிஷன் சிங் தோமரை வைக்கிறது.",
+            "why_d_en": "Incorrect presented stem sequence.",
+            "why_d_ta": "வினாவில் கொடுக்கப்பட்ட தவறான வரிசை.",
+            "tip_en": "Ponnuswami (1952) is the foundational election bar case; Tomar (2006) established SEC parity; Ramesh Kumar (2020) protected SEC tenure.",
+            "tip_ta": "பொன்னுசாமி (1952) தேர்தல் தடை வழக்கு; தோமர் (2006) SEC சமத்துவம்; ரமேஷ் குமார் (2020) SEC பதவிக்கால பாதுகாப்பு.",
+            "fact_en": "NP Ponnuswami originated in Tamil Nadu from the first general elections in 1951-52.",
+            "fact_ta": "என்.பி. பொன்னுசாமி வழக்கு 1951-52 முதல் பொதுத் தேர்தலின் போது தமிழ்நாட்டிலிருந்து உருவானது."
+        },
+
+        # 4. Central Finance Commissions
+        {
+            "subtopic": "Central Finance Commission Local Body Grants",
+            "stem_en": "Arrange the following Central Finance Commissions in chronological order of their constitution:\n1. 14th Finance Commission (Dr. Y.V. Reddy)\n2. 12th Finance Commission (Dr. C. Rangarajan)\n3. 15th Finance Commission (N.K. Singh)\n4. 13th Finance Commission (Dr. Vijay Kelkar)\nSelect the correct answer using the codes given below:",
+            "stem_ta": "பின்வரும் மத்திய நிதி ஆணையங்களை அவை அமைக்கப்பட்ட காலவரிசைப்படி ஒழுங்குபடுத்தவும்:\n1. 14வது நிதி ஆணையம் (டாக்டர் ஒய்.வி. ரெட்டி)\n2. 12வது நிதி ஆணையம் (டாக்டர் சி. ரங்கராஜன்)\n3. 15வது நிதி ஆணையம் (என்.கே. சிங்)\n4. 13வது நிதி ஆணையம் (டாக்டர் விஜய் கேல்கர்)\nகீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:",
+            "options": [
+                ("2 - 4 - 1 - 3", "2 - 4 - 1 - 3"),
+                ("4 - 2 - 1 - 3", "4 - 2 - 1 - 3"),
+                ("2 - 1 - 4 - 3", "2 - 1 - 4 - 3"),
+                ("1 - 2 - 3 - 4", "1 - 2 - 3 - 4")
+            ],
+            "correct_key": "A",
+            "exp_en": "The correct chronological order is:\n2. 12th Finance Commission (2002)\n→ 4. 13th Finance Commission (2007)\n→ 1. 14th Finance Commission (2013)\n→ 3. 15th Finance Commission (2017).\nSequence: 2 → 4 → 1 → 3.",
+            "exp_ta": "சரியான காலவரிசை:\n2. 12வது நிதி ஆணையம் (2002)\n→ 4. 13வது நிதி ஆணையம் (2007)\n→ 1. 14வது நிதி ஆணையம் (2013)\n→ 3. 15வது நிதி ஆணையம் (2017).\nவரிசை: 2 → 4 → 1 → 3.",
+            "why_a_en": "Chronological progression: 2002 -> 2007 -> 2013 -> 2017.",
+            "why_a_ta": "காலவரிசை முன்னேற்றம்: 2002 -> 2007 -> 2013 -> 2017.",
+            "why_b_en": "Places 13th FC before 12th FC.",
+            "why_b_ta": "12வது FC-க்கு முன் 13வது FC-ஐ வைக்கிறது.",
+            "why_c_en": "Places 14th FC before 13th FC.",
+            "why_c_ta": "13வது FC-க்கு முன் 14வது FC-ஐ வைக்கிறது.",
+            "why_d_en": "Incorrect presented stem sequence.",
+            "why_d_ta": "வினாவில் கொடுக்கப்பட்ட தவறான வரிசை.",
+            "tip_en": "Chairs: 12th = Rangarajan (2002); 13th = Kelkar (2007); 14th = Reddy (2013); 15th = N.K. Singh (2017).",
+            "tip_ta": "தலைவர்கள்: 12வது = ரங்கராஜன் (2002); 13வது = கேல்கர் (2007); 14வது = ரெட்டி (2013); 15வது = என்.கே. சிங் (2017).",
+            "fact_en": "15th FC had a unique 6-year period (2020-21 interim + 2021-26 main).",
+            "fact_ta": "15வது FC 6 ஆண்டு காலத்தைக் கொண்டிருந்தது (2020-21 இடைக்காலம் + 2021-26 முதன்மை)."
+        },
+
+        # 5. Tamil Nadu SFC Chronology
+        {
+            "subtopic": "Tamil Nadu State Finance Commissions Award Periods",
+            "stem_en": "Arrange the following State Finance Commissions of Tamil Nadu in chronological order of their constitution:\n1. Third State Finance Commission\n2. First State Finance Commission\n3. Fifth State Finance Commission\n4. Second State Finance Commission\nSelect the correct answer using the codes given below:",
+            "stem_ta": "தமிழ்நாட்டின் பின்வரும் மாநில நிதி ஆணையங்களை அவை அமைக்கப்பட்ட காலவரிசைப்படி ஒழுங்குபடுத்தவும்:\n1. மூன்றாவது மாநில நிதி ஆணையம்\n2. முதல் மாநில நிதி ஆணையம்\n3. ஐந்தாவது மாநில நிதி ஆணையம்\n4. இரண்டாவது மாநில நிதி ஆணையம்\nகீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:",
+            "options": [
+                ("2 - 4 - 1 - 3", "2 - 4 - 1 - 3"),
+                ("4 - 2 - 1 - 3", "4 - 2 - 1 - 3"),
+                ("2 - 1 - 4 - 3", "2 - 1 - 4 - 3"),
+                ("1 - 2 - 3 - 4", "1 - 2 - 3 - 4")
+            ],
+            "correct_key": "A",
+            "exp_en": "The correct chronological order is:\n2. First SFC (1994)\n→ 4. Second SFC (1999)\n→ 1. Third SFC (2004)\n→ 3. Fifth SFC (2014).\nSequence: 2 → 4 → 1 → 3.",
+            "exp_ta": "சரியான காலவரிசை:\n2. முதல் SFC (1994)\n→ 4. இரண்டாவது SFC (1999)\n→ 1. மூன்றாவது SFC (2004)\n→ 3. ஐந்தாவது SFC (2014).\nவரிசை: 2 → 4 → 1 → 3.",
+            "why_a_en": "Chronological progression: 1994 -> 1999 -> 2004 -> 2014.",
+            "why_a_ta": "காலவரிசை முன்னேற்றம்: 1994 -> 1999 -> 2004 -> 2014.",
+            "why_b_en": "Places 2nd SFC before 1st SFC.",
+            "why_b_ta": "முதல் SFC-க்கு முன் 2வது SFC-ஐ வைக்கிறது.",
+            "why_c_en": "Places 3rd SFC before 2nd SFC.",
+            "why_c_ta": "2வது SFC-க்கு முன் 3வது SFC-ஐ வைக்கிறது.",
+            "why_d_en": "Incorrect presented stem sequence.",
+            "why_d_ta": "வினாவில் கொடுக்கப்பட்ட தவறான வரிசை.",
+            "tip_en": "TN SFCs: 1st (1994), 2nd (1999), 3rd (2004), 4th (2009), 5th (2014), 6th (2020).",
+            "tip_ta": "TN SFC-கள்: 1வது (1994), 2வது (1999), 3வது (2004), 4வது (2009), 5வது (2014), 6வது (2020).",
+            "fact_en": "Tamil Nadu has regularly constituted SFCs every five years since 1994.",
+            "fact_ta": "தமிழ்நாடு 1994 முதல் ஒவ்வொரு ஐந்து ஆண்டுகளுக்கும் தவறாமல் SFC-களை அமைத்து வருகிறது."
+        },
+
+        # 6. Tamil Nadu Statutory Milestones
+        {
+            "subtopic": "Tamil Nadu Panchayati Raj Legislation History",
+            "stem_en": "Arrange the following historic local government statutes in Tamil Nadu in chronological order:\n1. Tamil Nadu Panchayats Act (passed following 73rd Amendment)\n2. Madras Village Panchayats Act\n3. Tamil Nadu Delimitation Commission Act\n4. Madras Panchayats Act (post-independence comprehensive enactment)\nSelect the correct answer using the codes given below:",
+            "stem_ta": "தமிழ்நாட்டின் பின்வரும் வரலாற்றுச் சிறப்புமிக்க உள்ளாட்சி சட்டங்களை காலவரிசைப்படி ஒழுங்குபடுத்தவும்:\n1. தமிழ்நாடு பஞ்சாயத்துகள் சட்டம் (73வது திருத்தத்தைத் தொடர்ந்து நிறைவேற்றப்பட்டது)\n2. மெட்ராஸ் கிராம பஞ்சாயத்துகள் சட்டம்\n3. தமிழ்நாடு மறுவரையறை ஆணையச் சட்டம்\n4. மெட்ராஸ் பஞ்சாயத்துகள் சட்டம் (சுதந்திரத்திற்குப் பிந்தைய விரிவான சட்டம்)\nகீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:",
+            "options": [
+                ("2 - 4 - 1 - 3", "2 - 4 - 1 - 3"),
+                ("4 - 2 - 1 - 3", "4 - 2 - 1 - 3"),
+                ("2 - 1 - 4 - 3", "2 - 1 - 4 - 3"),
+                ("1 - 2 - 3 - 4", "1 - 2 - 3 - 4")
+            ],
+            "correct_key": "A",
+            "exp_en": "The correct chronological order is:\n2. Madras Village Panchayats Act (1950)\n→ 4. Madras Panchayats Act (1958)\n→ 1. Tamil Nadu Panchayats Act (1994)\n→ 3. Tamil Nadu Delimitation Commission Act (2017).\nSequence: 2 → 4 → 1 → 3.",
+            "exp_ta": "சரியான காலவரிசை:\n2. மெட்ராஸ் கிராம பஞ்சாயத்துகள் சட்டம் (1950)\n→ 4. மெட்ராஸ் பஞ்சாயத்துகள் சட்டம் (1958)\n→ 1. தமிழ்நாடு பஞ்சாயத்துகள் சட்டம் (1994)\n→ 3. தமிழ்நாடு மறுவரையறை ஆணையச் சட்டம் (2017).\nவரிசை: 2 → 4 → 1 → 3.",
+            "why_a_en": "Chronological progression: 1950 -> 1958 -> 1994 -> 2017.",
+            "why_a_ta": "காலவரிசை முன்னேற்றம்: 1950 -> 1958 -> 1994 -> 2017.",
+            "why_b_en": "Places 1958 Act before 1950 Act.",
+            "why_b_ta": "1950 சட்டத்திற்கு முன் 1958 சட்டத்தை வைக்கிறது.",
+            "why_c_en": "Places 1994 Act before 1958 Act.",
+            "why_c_ta": "1958 சட்டத்திற்கு முன் 1994 சட்டத்தை வைக்கிறது.",
+            "why_d_en": "Incorrect presented stem sequence.",
+            "why_d_ta": "வினாவில் கொடுக்கப்பட்ட தவறான வரிசை.",
+            "tip_en": "Evolution: 1950 (Village Panchayats) -> 1958 (Block Unions introduced) -> 1994 (3-Tier Part IX) -> 2017 (Delimitation Commission).",
+            "tip_ta": "பரிணாமம்: 1950 (கிராம பஞ்சாயத்து) -> 1958 (ஒன்றியங்கள் அறிமுகம்) -> 1994 (3-அடுக்கு பகுதி IX) -> 2017 (மறுவரையறை ஆணையம்).",
+            "fact_en": "The 1958 Act created the Panchayat Union Councils aligned with Community Development Blocks.",
+            "fact_ta": "1958 சட்டம் சமூக மேம்பாட்டு வட்டாரங்களுடன் இணைந்த பஞ்சாயத்து ஒன்றிய மன்றங்களை உருவாக்கியது."
+        },
+
+        # 7. Local Body Quota Jurisprudence
+        {
+            "subtopic": "Reservation Jurisprudence in Local Bodies",
+            "stem_en": "Arrange the following judicial decisions regarding political reservations in local bodies in chronological order:\n1. Vikas Kishanrao Gawali v. State of Maharashtra\n2. Indra Sawhney v. Union of India\n3. Rahul Ramesh Wagh v. State of Maharashtra\n4. K. Krishna Murthy v. Union of India\nSelect the correct answer using the codes given below:",
+            "stem_ta": "உள்ளாட்சி அமைப்புகளில் அரசியல் இடஒதுக்கீடு தொடர்பான பின்வரும் நீதித்துறைத் தீர்ப்புகளை காலவரிசைப்படி ஒழுங்குபடுத்தவும்:\n1. விகாஸ் கிஷன்ராவ் கவாலி எதிர் மகாராஷ்டிரா அரசு\n2. இந்திரா சாஹ்னி எதிர் இந்திய அரசு\n3. ராகுல் ரமேஷ் வாக் எதிர் மகாராஷ்டிரா அரசு\n4. கே. கிருஷ்ண மூர்த்தி எதிர் இந்திய அரசு\nகீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:",
+            "options": [
+                ("2 - 4 - 1 - 3", "2 - 4 - 1 - 3"),
+                ("4 - 2 - 1 - 3", "4 - 2 - 1 - 3"),
+                ("2 - 1 - 4 - 3", "2 - 1 - 4 - 3"),
+                ("1 - 2 - 3 - 4", "1 - 2 - 3 - 4")
+            ],
+            "correct_key": "A",
+            "exp_en": "The correct chronological order is:\n2. Indra Sawhney (1992, establishing 50% ceiling)\n→ 4. K. Krishna Murthy (2010, applying 50% ceiling to local bodies)\n→ 1. Vikas Kishanrao Gawali (March 2021, mandating Triple Test)\n→ 3. Rahul Ramesh Wagh (May 2022, ordering polls without unverified OBC quotas).\nSequence: 2 → 4 → 1 → 3.",
+            "exp_ta": "சரியான காலவரிசை:\n2. இந்திரா சாஹ்னி (1992, 50% உச்சவரம்பு)\n→ 4. கே. கிருஷ்ண மூர்த்தி (2010, உள்ளாட்சிக்கு 50% வரம்பு)\n→ 1. விகாஸ் கிஷன்ராவ் கவாலி (மார்ச் 2021, மூன்று சோதனை கட்டாயம்)\n→ 3. ராகுல் ரமேஷ் வாக் (மே 2022, சரிபார்க்கப்படாத ஒதுக்கீடின்றி தேர்தல்).\nவரிசை: 2 → 4 → 1 → 3.",
+            "why_a_en": "Chronological progression: 1992 -> 2010 -> March 2021 -> May 2022.",
+            "why_a_ta": "காலவரிசை முன்னேற்றம்: 1992 -> 2010 -> மார்ச் 2021 -> மே 2022.",
+            "why_b_en": "Places Krishna Murthy before Indra Sawhney.",
+            "why_b_ta": "இந்திரா சாஹ்னிக்கு முன் கிருஷ்ண மூர்த்தியை வைக்கிறது.",
+            "why_c_en": "Places Vikas Gawali before Krishna Murthy.",
+            "why_c_ta": "கிருஷ்ண மூர்த்திக்கு முன் விகாஸ் கவாலியை வைக்கிறது.",
+            "why_d_en": "Incorrect presented stem sequence.",
+            "why_d_ta": "வினாவில் கொடுக்கப்பட்ட தவறான வரிசை.",
+            "tip_en": "Indra Sawhney (1992) -> Krishna Murthy (2010) -> Vikas Gawali (2021) -> Rahul Wagh (2022).",
+            "tip_ta": "இந்திரா சாஹ்னி (1992) -> கிருஷ்ண மூர்த்தி (2010) -> விகாஸ் கவாலி (2021) -> ராகுல் வாக் (2022).",
+            "fact_en": "The 'Triple Test' for OBC quotas was formulated across these landmark cases.",
+            "fact_ta": "OBC இடஒதுக்கீட்டிற்கான 'மூன்று கட்ட சோதனை' இந்த வரலாற்று சிறப்புமிக்க வழக்குகளில் உருவாக்கப்பட்டது."
+        },
+
+        # 8. Tamil Nadu Local Body General Elections
+        {
+            "subtopic": "Tamil Nadu Local Body Election Cycles",
+            "stem_en": "Arrange the following general election cycles for rural and urban local bodies in Tamil Nadu in chronological order:\n1. Third Local Body General Elections (conducted in October)\n2. First Local Body General Elections under 1994 Act (conducted in October)\n3. Fourth Local Body General Elections (conducted in October)\n4. Second Local Body General Elections (conducted in October)\nSelect the correct answer using the codes given below:",
+            "stem_ta": "தமிழ்நாட்டில் ஊரக மற்றும் நகர்ப்புற உள்ளாட்சி அமைப்புகளுக்கான பின்வரும் பொதுத் தேர்தல் சுழற்சிகளை காலவரிசைப்படி ஒழுங்குபடுத்தவும்:\n1. மூன்றாவது உள்ளாட்சி பொதுத் தேர்தல்கள் (அக்டோபரில் நடத்தப்பட்டது)\n2. 1994 சட்டத்தின் கீழ் முதல் உள்ளாட்சி பொதுத் தேர்தல்கள் (அக்டோபரில் நடத்தப்பட்டது)\n3. நான்காவது உள்ளாட்சி பொதுத் தேர்தல்கள் (அக்டோபரில் நடத்தப்பட்டது)\n4. இரண்டாவது உள்ளாட்சி பொதுத் தேர்தல்கள் (அக்டோபரில் நடத்தப்பட்டது)\nகீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:",
+            "options": [
+                ("2 - 4 - 1 - 3", "2 - 4 - 1 - 3"),
+                ("4 - 2 - 1 - 3", "4 - 2 - 1 - 3"),
+                ("2 - 1 - 4 - 3", "2 - 1 - 4 - 3"),
+                ("1 - 2 - 3 - 4", "1 - 2 - 3 - 4")
+            ],
+            "correct_key": "A",
+            "exp_en": "The correct chronological order is:\n2. First Local Elections (October 1996)\n→ 4. Second Local Elections (October 2001)\n→ 1. Third Local Elections (October 2006)\n→ 3. Fourth Local Elections (October 2011).\nSequence: 2 → 4 → 1 → 3.",
+            "exp_ta": "சரியான காலவரிசை:\n2. முதல் உள்ளாட்சித் தேர்தல் (அக்டோபர் 1996)\n→ 4. இரண்டாவது உள்ளாட்சித் தேர்தல் (அக்டோபர் 2001)\n→ 1. மூன்றாவது உள்ளாட்சித் தேர்தல் (அக்டோபர் 2006)\n→ 3. நான்காவது உள்ளாட்சித் தேர்தல் (அக்டோபர் 2011).\nவரிசை: 2 → 4 → 1 → 3.",
+            "why_a_en": "Chronological progression: 1996 -> 2001 -> 2006 -> 2011.",
+            "why_a_ta": "காலவரிசை முன்னேற்றம்: 1996 -> 2001 -> 2006 -> 2011.",
+            "why_b_en": "Places 2001 elections before 1996 elections.",
+            "why_b_ta": "1996 தேர்தலுக்கு முன் 2001 தேர்தலை வைக்கிறது.",
+            "why_c_en": "Places 2006 elections before 2001 elections.",
+            "why_c_ta": "2001 தேர்தலுக்கு முன் 2006 தேர்தலை வைக்கிறது.",
+            "why_d_en": "Incorrect presented stem sequence.",
+            "why_d_ta": "வினாவில் கொடுக்கப்பட்ட தவறான வரிசை.",
+            "tip_en": "Local elections in TN: 1996 -> 2001 -> 2006 -> 2011 -> 2019/2020 (Rural) / 2022 (Urban).",
+            "tip_ta": "TN உள்ளாட்சித் தேர்தல்கள்: 1996 -> 2001 -> 2006 -> 2011 -> 2019/2020 (ஊரகம்) / 2022 (நகர்ப்புறம்).",
+            "fact_en": "The 2016 local body elections in TN were delayed due to delimitation and litigation, held in 2019-2022.",
+            "fact_ta": "மறுவரையறை மற்றும் வழக்குகள் காரணமாக TN-ல் 2016 தேர்தல் தாமதமாகி 2019-2022-ல் நடைபெற்றது."
+        },
+
+        # 9. Key Legislative Bills Leading to 73rd/74th Amendments
+        {
+            "subtopic": "Drafting of Part IX and IXA",
+            "stem_en": "Arrange the following historical steps in the constitutional drafting of Panchayati Raj in chronological order:\n1. Introduction of the 72nd and 73rd Constitutional Amendment Bills by P.V. Narasimha Rao Government\n2. Defeat of the 64th and 65th Constitutional Amendment Bills in the Rajya Sabha\n3. Enactment of the 73rd Constitutional Amendment Act, 1992\n4. Introduction of the 74th and 75th Amendment Bills by V.P. Singh Government\nSelect the correct answer using the codes given below:",
+            "stem_ta": "பஞ்சாயத்து ராஜின் அரசியலமைப்பு வரைவு வரலாற்றின் பின்வரும் படிகளை காலவரிசைப்படி ஒழுங்குபடுத்தவும்:\n1. பி.வி. நரசிம்ம ராவ் அரசால் 72 மற்றும் 73வது அரசியலமைப்பு திருத்த மசோதாக்கள் அறிமுகப்படுத்தப்படுதல்\n2. மாநிலங்களவையில் 64 மற்றும் 65வது அரசியலமைப்பு திருத்த மசோதாக்கள் தோல்வியடைதல்\n3. 73வது அரசியலமைப்பு திருத்தச் சட்டம், 1992 இயற்றப்படுதல்\n4. வி.பி. சிங் அரசால் 74 மற்றும் 75வது திருத்த மசோதாக்கள் அறிமுகப்படுத்தப்படுதல்\nகீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:",
+            "options": [
+                ("2 - 4 - 1 - 3", "2 - 4 - 1 - 3"),
+                ("4 - 2 - 1 - 3", "4 - 2 - 1 - 3"),
+                ("2 - 1 - 4 - 3", "2 - 1 - 4 - 3"),
+                ("1 - 2 - 3 - 4", "1 - 2 - 3 - 4")
+            ],
+            "correct_key": "A",
+            "exp_en": "The correct chronological order is:\n2. 64th & 65th Bills defeated in Rajya Sabha (October 1989)\n→ 4. V.P. Singh government introduced revised bills (September 1990)\n→ 1. Narasimha Rao government introduced 72nd/73rd bills (September 1991)\n→ 3. Enacted as 73rd Amendment Act (December 1992).\nSequence: 2 → 4 → 1 → 3.",
+            "exp_ta": "சரியான காலவரிசை:\n2. மாநிலங்களவையில் 64 & 65வது மசோதாக்கள் தோல்வி (அக்டோபர் 1989)\n→ 4. வி.பி. சிங் அரசு திருத்தப்பட்ட மசோதாக்களை அறிமுகம் செய்தது (செப்டம்பர் 1990)\n→ 1. நரசிம்ம ராவ் அரசு மசோதாக்களை அறிமுகம் செய்தது (செப்டம்பர் 1991)\n→ 3. 73வது திருத்தச் சட்டமாக இயற்றப்பட்டது (டிசம்பர் 1992).\nவரிசை: 2 → 4 → 1 → 3.",
+            "why_a_en": "Chronological progression: Oct 1989 -> Sept 1990 -> Sept 1991 -> Dec 1992.",
+            "why_a_ta": "காலவரிசை முன்னேற்றம்: அக் 1989 -> செப் 1990 -> செப் 1991 -> டிச 1992.",
+            "why_b_en": "Places VP Singh bills before Rajiv Gandhi bills defeat.",
+            "why_b_ta": "ராஜீவ் காந்தி மசோதாக்கள் தோல்விக்கு முன் வி.பி. சிங் மசோதாக்களை வைக்கிறது.",
+            "why_c_en": "Places Narasimha Rao bills before VP Singh bills.",
+            "why_c_ta": "வி.பி. சிங் மசோதாக்களுக்கு முன் நரசிம்ம ராவ் மசோதாக்களை வைக்கிறது.",
+            "why_d_en": "Incorrect presented stem sequence.",
+            "why_d_ta": "வினாவில் கொடுக்கப்பட்ட தவறான வரிசை.",
+            "tip_en": "Rajiv Gandhi (1989) -> VP Singh (1990) -> PV Narasimha Rao (1991 introduced, 1992 passed).",
+            "tip_ta": "ராஜீவ் காந்தி (1989) -> வி.பி. சிங் (1990) -> நரசிம்ம ராவ் (1991 அறிமுகம், 1992 நிறைவேற்றம்).",
+            "fact_en": "Joint Parliamentary Committee chaired by Nathu Ram Mirdha examined the bills in 1991-92.",
+            "fact_ta": "நாது ராம் மிர்தா தலைமையிலான நாடாளுமன்ற கூட்டுக் குழு 1991-92-ல் மசோதாக்களை ஆய்வு செய்தது."
+        },
+
+        # 10. Central Finance Commissions 11 to 14
+        {
+            "subtopic": "Central Finance Commission Chronology",
+            "stem_en": "Arrange the following Central Finance Commission Chairmen in chronological order of their submission of local body grant reports:\n1. Dr. Y.V. Reddy\n2. Prof. A.M. Khusro\n3. Dr. Vijay Kelkar\n4. Dr. C. Rangarajan\nSelect the correct answer using the codes given below:",
+            "stem_ta": "பின்வரும் மத்திய நிதி ஆணையத் தலைவர்களை அவர்கள் உள்ளாட்சி மானிய அறிக்கைகளை சமர்ப்பித்த காலவரிசைப்படி ஒழுங்குபடுத்தவும்:\n1. டாக்டர் ஒய்.வி. ரெட்டி\n2. பேராசிரியர் ஏ.எம். குஸ்ரோ\n3. டாக்டர் விஜய் கேல்கர்\n4. டாக்டர் சி. ரங்கராஜன்\nகீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:",
+            "options": [
+                ("2 - 4 - 3 - 1", "2 - 4 - 3 - 1"),
+                ("4 - 2 - 3 - 1", "4 - 2 - 3 - 1"),
+                ("2 - 3 - 4 - 1", "2 - 3 - 4 - 1"),
+                ("1 - 2 - 3 - 4", "1 - 2 - 3 - 4")
+            ],
+            "correct_key": "A",
+            "exp_en": "The correct chronological order is:\n2. Prof. A.M. Khusro (11th FC, 2000)\n→ 4. Dr. C. Rangarajan (12th FC, 2004)\n→ 3. Dr. Vijay Kelkar (13th FC, 2009)\n→ 1. Dr. Y.V. Reddy (14th FC, 2014).\nSequence: 2 → 4 → 3 → 1.",
+            "exp_ta": "சரியான காலவரிசை:\n2. பேராசிரியர் ஏ.எம். குஸ்ரோ (11வது FC, 2000)\n→ 4. டாக்டர் சி. ரங்கராஜன் (12வது FC, 2004)\n→ 3. டாக்டர் விஜய் கேல்கர் (13வது FC, 2009)\n→ 1. டாக்டர் ஒய்.வி. ரெட்டி (14வது FC, 2014).\nவரிசை: 2 → 4 → 3 → 1.",
+            "why_a_en": "Chronological progression: 2000 -> 2004 -> 2009 -> 2014.",
+            "why_a_ta": "காலவரிசை முன்னேற்றம்: 2000 -> 2004 -> 2009 -> 2014.",
+            "why_b_en": "Places Rangarajan before Khusro.",
+            "why_b_ta": "குஸ்ரோவுக்கு முன் ரங்கராஜனை வைக்கிறது.",
+            "why_c_en": "Swaps Kelkar and Rangarajan.",
+            "why_c_ta": "கேல்கர் மற்றும் ரங்கராஜனை மாற்றுகிறது.",
+            "why_d_en": "Incorrect presented stem sequence.",
+            "why_d_ta": "வினாவில் கொடுக்கப்பட்ட தவறான வரிசை.",
+            "tip_en": "FC sequence: 11th (Khusro) -> 12th (Rangarajan) -> 13th (Kelkar) -> 14th (Reddy) -> 15th (Singh).",
+            "tip_ta": "FC வரிசை: 11வது (குஸ்ரோ) -> 12வது (ரங்கராஜன்) -> 13வது (கேல்கர்) -> 14வது (ரெட்டி) -> 15வது (சிங்).",
+            "fact_en": "The 11th FC was the first to implement Article 280(3)(bb) and 280(3)(c).",
+            "fact_ta": "11வது FC சரத்து 280(3)(bb) மற்றும் 280(3)(c)-ஐ செயல்படுத்திய முதல் ஆணையமாகும்."
+        },
+
+        # 11. Early Panchayati Raj Committees (Pre-73rd)
+        {
+            "subtopic": "Panchayat Finance and Governance Inquiry Committees",
+            "stem_en": "Arrange the following specialized government inquiry committees on Panchayati Raj in chronological order:\n1. P.K. Thungon Committee\n2. K. Santhanam Committee on Panchayat Finance\n3. V.N. Gadgil Committee on Policy and Programmes\n4. Balwant Rai Mehta Study Team\nSelect the correct answer using the codes given below:",
+            "stem_ta": "பஞ்சாயத்து ராஜ் தொடர்பான பின்வரும் பிரத்யேக அரசு விசாரணைக் குழுக்களை காலவரிசைப்படி ஒழுங்குபடுத்தவும்:\n1. பி.கே. துங்கன் குழு\n2. கே. சந்தானம் குழு (பஞ்சாயத்து நிதி)\n3. வி.என். காட்கில் குழு (கொள்கை மற்றும் திட்டங்கள்)\n4. பல்வந்த் ராய் மேத்தா ஆய்வுக் குழு\nகீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:",
+            "options": [
+                ("4 - 2 - 1 - 3", "4 - 2 - 1 - 3"),
+                ("2 - 4 - 1 - 3", "2 - 4 - 1 - 3"),
+                ("4 - 1 - 2 - 3", "4 - 1 - 2 - 3"),
+                ("1 - 2 - 3 - 4", "1 - 2 - 3 - 4")
+            ],
+            "correct_key": "A",
+            "exp_en": "The correct chronological order is:\n4. Balwant Rai Mehta Team (1957)\n→ 2. K. Santhanam Committee (1963)\n→ 1. P.K. Thungon Committee (1988)\n→ 3. V.N. Gadgil Committee (late 1988).\nSequence: 4 → 2 → 1 → 3.",
+            "exp_ta": "சரியான காலவரிசை:\n4. பல்வந்த் ராய் மேத்தா குழு (1957)\n→ 2. கே. சந்தானம் குழு (1963)\n→ 1. பி.கே. துங்கன் குழு (1988)\n→ 3. வி.என். காட்கில் குழு (1988 பிற்பகுதி).\nவரிசை: 4 → 2 → 1 → 3.",
+            "why_a_en": "Chronological progression: 1957 -> 1963 -> 1988 -> late 1988.",
+            "why_a_ta": "காலவரிசை முன்னேற்றம்: 1957 -> 1963 -> 1988 -> 1988 பிற்பகுதி.",
+            "why_b_en": "Places Santhanam Committee before Balwant Rai Mehta.",
+            "why_b_ta": "பல்வந்த் ராய் மேத்தாவிற்கு முன் சந்தானம் குழுவை வைக்கிறது.",
+            "why_c_en": "Places Thungon Committee before Santhanam Committee.",
+            "why_c_ta": "சந்தானம் குழுவிற்கு முன் துங்கன் குழுவை வைக்கிறது.",
+            "why_d_en": "Incorrect presented stem sequence.",
+            "why_d_ta": "வினாவில் கொடுக்கப்பட்ட தவறான வரிசை.",
+            "tip_en": "Santhanam Committee (1963) specifically examined local government finance and Panchayati Raj institutions' taxing powers.",
+            "tip_ta": "சந்தானம் குழு (1963) உள்ளாட்சி நிதி மற்றும் பஞ்சாயத்து ராஜ் நிறுவனங்களின் வரி அதிகாரங்களை பிரத்யேகமாக ஆய்வு செய்தது.",
+            "fact_en": "Gadgil Committee recommendations formed the direct basis for drafting the 64th Amendment Bill in 1989.",
+            "fact_ta": "காட்கில் குழுவின் பரிந்துரைகளே 1989-ல் 64வது திருத்த மசோதாவை வரைவதற்கான நேரடி அடிப்படையாக அமைந்தது."
+        },
+
+        # 12. Tamil Nadu Mayoral Election Changes
+        {
+            "subtopic": "Tamil Nadu Mayoral Election Mode Evolution",
+            "stem_en": "Arrange the following legislative changes regarding the mode of electing Mayors of Municipal Corporations in Tamil Nadu in chronological order:\n1. Reversion to Indirect Election by councillors in Tamil Nadu\n2. Introduction of Direct Election of Mayors in Tamil Nadu\n3. Switch back to Direct Election of Mayors\n4. Switch to Indirect Election of Mayors\nSelect the correct answer using the codes given below:",
+            "stem_ta": "தமிழ்நாட்டில் மாநகராட்சி மேயர்களைத் தேர்ந்தெடுக்கும் முறை தொடர்பான பின்வரும் சட்ட மாற்றங்களை காலவரிசைப்படி ஒழுங்குபடுத்தவும்:\n1. தமிழ்நாட்டில் கவுன்சிலர்களால் மறைமுகத் தேர்தலுக்கு மீண்டும் திரும்புதல்\n2. தமிழ்நாட்டில் மேயர்களுக்கான நேரடித் தேர்தல் அறிமுகப்படுத்தப்படுதல்\n3. மீண்டும் மேயர்களுக்கான நேரடித் தேர்தலுக்கு மாறுதல்\n4. மேயர்களுக்கான மறைமுகத் தேர்தலுக்கு மாறுதல்\nகீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:",
+            "options": [
+                ("2 - 4 - 3 - 1", "2 - 4 - 3 - 1"),
+                ("4 - 2 - 3 - 1", "4 - 2 - 3 - 1"),
+                ("2 - 3 - 4 - 1", "2 - 3 - 4 - 1"),
+                ("1 - 2 - 3 - 4", "1 - 2 - 3 - 4")
+            ],
+            "correct_key": "A",
+            "exp_en": "The correct chronological order is:\n2. Direct Election introduced for 1996 local polls\n→ 4. Indirect Election introduced for 2001 polls\n→ 3. Direct Election reinstated for 2006 polls\n→ 1. Indirect Election reinstated in 2019/2022.\nSequence: 2 → 4 → 3 → 1.",
+            "exp_ta": "சரியான காலவரிசை:\n2. 1996 உள்ளாட்சித் தேர்தலுக்கு நேரடித் தேர்தல் அறிமுகம்\n→ 4. 2001 தேர்தலுக்கு மறைமுகத் தேர்தல் அறிமுகம்\n→ 3. 2006 தேர்தலுக்கு மீண்டும் நேரடித் தேர்தல் முறை\n→ 1. 2019/2022-ல் மீண்டும் மறைமுகத் தேர்தல் முறைக்கு திரும்புதல்.\nவரிசை: 2 → 4 → 3 → 1.",
+            "why_a_en": "Chronological progression: 1996 -> 2001 -> 2006 -> 2019/2022.",
+            "why_a_ta": "காலவரிசை முன்னேற்றம்: 1996 -> 2001 -> 2006 -> 2019/2022.",
+            "why_b_en": "Places 2001 indirect election before 1996 direct election.",
+            "why_b_ta": "1996 நேரடித் தேர்தலுக்கு முன் 2001 மறைமுகத் தேர்தலை வைக்கிறது.",
+            "why_c_en": "Confuses the alternating sequence.",
+            "why_c_ta": "மாறி மாறி வந்த வரிசையைக் குழப்புகிறது.",
+            "why_d_en": "Incorrect presented stem sequence.",
+            "why_d_ta": "வினாவில் கொடுக்கப்பட்ட தவறான வரிசை.",
+            "tip_en": "Mayors in TN: 1996 (Direct) -> 2001 (Indirect) -> 2006 (Direct) -> 2011 (Direct) -> 2019/22 (Indirect).",
+            "tip_ta": "TN மேயர்கள்: 1996 (நேரடி) -> 2001 (மறைமுக) -> 2006 (நேரடி) -> 2011 (நேரடி) -> 2019/22 (மறைமுக).",
+            "fact_en": "Article 243R(2)(b) permits State Legislatures to choose either direct or indirect election for municipal chairpersons.",
+            "fact_ta": "சரத்து 243R(2)(b) நகராட்சித் தலைவர்களுக்கு நேரடி அல்லது மறைமுகத் தேர்தலைத் தேர்வு செய்ய மாநில சட்டமன்றங்களை அனுமதிக்கிறது."
+        },
+
+        # 13. Evolution of Local Government Digital Tools
+        {
+            "subtopic": "Digital Governance and Auditing Timeline",
+            "stem_en": "Arrange the following digital platforms and accountability initiatives in local governance in chronological order of their national launch:\n1. Launch of AuditOnline portal\n2. Launch of PRIA Soft accounting software\n3. Launch of integrated e-GramSwaraj portal\n4. Introduction of Technical Guidance and Supervision (TG&S) by CAG\nSelect the correct answer using the codes given below:",
+            "stem_ta": "உள்ளாட்சி நிர்வாகத்தில் பின்வரும் டிஜிட்டல் தளங்கள் மற்றும் பொறுப்புடைமை முயற்சிகளை அவை தேசிய அளவில் தொடங்கப்பட்ட காலவரிசைப்படி ஒழுங்குபடுத்தவும்:\n1. AuditOnline இணையதளம் தொடங்கப்படுதல்\n2. PRIA Soft கணக்கு மென்பொருள் தொடங்கப்படுதல்\n3. ஒருங்கிணைந்த e-GramSwaraj இணையதளம் தொடங்கப்படுதல்\n4. CAG-ஆல் தொழில்நுட்ப வழிகாட்டுதல் மற்றும் மேற்பார்வை (TG&S) அறிமுகப்படுத்தப்படுதல்\nகீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:",
+            "options": [
+                ("4 - 2 - 3 - 1", "4 - 2 - 3 - 1"),
+                ("2 - 4 - 3 - 1", "2 - 4 - 3 - 1"),
+                ("4 - 3 - 2 - 1", "4 - 3 - 2 - 1"),
+                ("1 - 2 - 3 - 4", "1 - 2 - 3 - 4")
+            ],
+            "correct_key": "A",
+            "exp_en": "The correct chronological order is:\n4. TG&S by CAG introduced (2002-2003 following 11th FC)\n→ 2. PRIA Soft launched (2009-2010)\n→ 3. e-GramSwaraj portal launched on National Panchayati Raj Day (April 2020)\n→ 1. AuditOnline launched (late 2020).\nSequence: 4 → 2 → 3 → 1.",
+            "exp_ta": "சரியான காலவரிசை:\n4. CAG-ன் TG&S அறிமுகம் (11வது FC-ஐத் தொடர்ந்து 2002-2003)\n→ 2. PRIA Soft அறிமுகம் (2009-2010)\n→ 3. e-GramSwaraj இணையதளம் தேசிய பஞ்சாயத்து ராஜ் தினத்தில் தொடக்கம் (ஏப்ரல் 2020)\n→ 1. AuditOnline தொடக்கம் (2020 பிற்பகுதி).\nவரிசை: 4 → 2 → 3 → 1.",
+            "why_a_en": "Chronological progression: 2003 -> 2010 -> April 2020 -> late 2020.",
+            "why_a_ta": "காலவரிசை முன்னேற்றம்: 2003 -> 2010 -> ஏப்ரல் 2020 -> 2020 பிற்பகுதி.",
+            "why_b_en": "Places PRIA Soft before CAG TG&S framework.",
+            "why_b_ta": "CAG TG&S-க்கு முன் PRIA Soft-ஐ வைக்கிறது.",
+            "why_c_en": "Places e-GramSwaraj before PRIA Soft.",
+            "why_c_ta": "PRIA Soft-க்கு முன் e-GramSwaraj-ஐ வைக்கிறது.",
+            "why_d_en": "Incorrect presented stem sequence.",
+            "why_d_ta": "வினாவில் கொடுக்கப்பட்ட தவறான வரிசை.",
+            "tip_en": "Timeline: CAG TG&S (2003) -> PRIA Soft (2010) -> e-GramSwaraj & AuditOnline (2020).",
+            "tip_ta": "காலக்கோடு: CAG TG&S (2003) -> PRIA Soft (2010) -> e-GramSwaraj & AuditOnline (2020).",
+            "fact_en": "e-GramSwaraj was launched by the Prime Minister on 24 April 2020.",
+            "fact_ta": "e-GramSwaraj பிரதமரால் 24 ஏப்ரல் 2020 அன்று தொடங்கப்பட்டது."
+        },
+
+        # 14. SFC Devolution Progression in Tamil Nadu
+        {
+            "subtopic": "Tamil Nadu SFC Devolution Milestones",
+            "stem_en": "Arrange the following fiscal milestones in Tamil Nadu State Finance Commission devolutions in chronological order:\n1. Devolving 10% of State's Own Tax Revenue (Fourth SFC)\n2. Devolving 8% of State's Own Tax Revenue (First SFC)\n3. Recommending continuing 56:44 Rural to Urban split for 2022-2027 (Sixth SFC)\n4. Raising devolution to 9% of State's Own Tax Revenue (Third SFC)\nSelect the correct answer using the codes given below:",
+            "stem_ta": "தமிழ்நாடு மாநில நிதி ஆணையப் பகிர்வுகளில் பின்வரும் நிதி மைல்கற்களை காலவரிசைப்படி ஒழுங்குபடுத்தவும்:\n1. மாநில சொந்த வரி வருவாயில் 10%-ஐ பகிர்ந்தளித்தல் (நான்காவது SFC)\n2. மாநில சொந்த வரி வருவாயில் 8%-ஐ பகிர்ந்தளித்தல் (முதல் SFC)\n3. 2022-2027 காலத்திற்கு 56:44 ஊரக-நகர்ப்புற பகிர்வைத் தொடர பரிந்துரைத்தல் (ஆறாவது SFC)\n4. பகிர்வை மாநில சொந்த வரி வருவாயில் 9%-ஆக உயர்த்துதல் (மூன்றாவது SFC)\nகீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:",
+            "options": [
+                ("2 - 4 - 1 - 3", "2 - 4 - 1 - 3"),
+                ("4 - 2 - 1 - 3", "4 - 2 - 1 - 3"),
+                ("2 - 1 - 4 - 3", "2 - 1 - 4 - 3"),
+                ("1 - 2 - 3 - 4", "1 - 2 - 3 - 4")
+            ],
+            "correct_key": "A",
+            "exp_en": "The correct chronological order is:\n2. First SFC recommended 8% (1996)\n→ 4. Third SFC raised to 9% (2006)\n→ 1. Fourth SFC raised to 10% (2011)\n→ 3. Sixth SFC for 2022-2027 (2022).\nSequence: 2 → 4 → 1 → 3.",
+            "exp_ta": "சரியான காலவரிசை:\n2. முதல் SFC 8%-ஐ பரிந்துரைத்தது (1996)\n→ 4. மூன்றாவது SFC 9%-ஆக உயர்த்தியது (2006)\n→ 1. நான்காவது SFC 10%-ஆக உயர்த்தியது (2011)\n→ 3. ஆறாவது SFC 2022-2027 காலத்திற்கு (2022).\nவரிசை: 2 → 4 → 1 → 3.",
+            "why_a_en": "Chronological progression: 1996 -> 2006 -> 2011 -> 2022.",
+            "why_a_ta": "காலவரிசை முன்னேற்றம்: 1996 -> 2006 -> 2011 -> 2022.",
+            "why_b_en": "Places 9% devolution before 8% devolution.",
+            "why_b_ta": "8% பகிர்வுக்கு முன் 9% பகிர்வை வைக்கிறது.",
+            "why_c_en": "Places 10% devolution before 9% devolution.",
+            "why_c_ta": "9% பகிர்வுக்கு முன் 10% பகிர்வை வைக்கிறது.",
+            "why_d_en": "Incorrect presented stem sequence.",
+            "why_d_ta": "வினாவில் கொடுக்கப்பட்ட தவறான வரிசை.",
+            "tip_en": "TN SOTR vertical progression: 8% (1996) -> 9% (2006) -> 10% (2011 onwards).",
+            "tip_ta": "TN SOTR செங்குத்து முன்னேற்றம்: 8% (1996) -> 9% (2006) -> 10% (2011 முதல்).",
+            "fact_en": "Tamil Nadu maintains one of the highest vertical devolution percentages to local bodies among major Indian states.",
+            "fact_ta": "முக்கிய இந்திய மாநிலங்களில் உள்ளாட்சிகளுக்கு அதிக செங்குத்துப் பகிர்வு சதவீதத்தை வழங்கும் மாநிலங்களில் ஒன்றாக தமிழ்நாடு உள்ளது."
+        },
+
+        # 15. Disqualification Precedents
+        {
+            "subtopic": "Disqualification Precedents in Elections",
+            "stem_en": "Arrange the following landmark Supreme Court judgments regarding disqualification of elected representatives in chronological order:\n1. Lily Thomas v. Union of India (striking down Section 8(4) of RPA 1951)\n2. K. Venkatachalam v. A. Swamickan (electoral roll impersonation exception)\n3. Lok Prahari v. Union of India (disclosure of assets and criminal antecedents)\n4. B.R. Kapur v. State of Tamil Nadu (convicted non-legislator appointment)\nSelect the correct answer using the codes given below:",
+            "stem_ta": "தேர்ந்தெடுக்கப்பட்ட பிரதிநிதிகளின் தகுதியிழப்பு தொடர்பான பின்வரும் முக்கிய உச்ச நீதிமன்றத் தீர்ப்புகளை காலவரிசைப்படி ஒழுங்குபடுத்தவும்:\n1. லில்லி தாமஸ் எதிர் இந்திய அரசு (RPA 1951 பிரிவு 8(4)-ஐ ரத்து செய்தது)\n2. கே. வெங்கடாசலம் எதிர் ஏ. சுவாமிக்கண் (வாக்காளர் பட்டியல் ஆள்மாறாட்ட விதிவிலக்கு)\n3. லோக் பிரஹாரி எதிர் இந்திய அரசு (சொத்துக்கள் மற்றும் குற்றப் பின்னணி வெளிப்படுத்தல்)\n4. பி.ஆர். கபூர் எதிர் தமிழ்நாடு அரசு (தண்டனை பெற்ற சட்டமன்ற உறுப்பினர் அல்லாதவரின் நியமனம்)\nகீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:",
+            "options": [
+                ("2 - 4 - 1 - 3", "2 - 4 - 1 - 3"),
+                ("4 - 2 - 1 - 3", "4 - 2 - 1 - 3"),
+                ("2 - 1 - 4 - 3", "2 - 1 - 4 - 3"),
+                ("1 - 2 - 3 - 4", "1 - 2 - 3 - 4")
+            ],
+            "correct_key": "A",
+            "exp_en": "The correct chronological order is:\n2. K. Venkatachalam (1999)\n→ 4. B.R. Kapur (2001)\n→ 1. Lily Thomas (2013)\n→ 3. Lok Prahari (2018).\nSequence: 2 → 4 → 1 → 3.",
+            "exp_ta": "சரியான காலவரிசை:\n2. கே. வெங்கடாசலம் (1999)\n→ 4. பி.ஆர். கபூர் (2001)\n→ 1. லில்லி தாமஸ் (2013)\n→ 3. லோக் பிரஹாரி (2018).\nவரிசை: 2 → 4 → 1 → 3.",
+            "why_a_en": "Chronological progression: 1999 -> 2001 -> 2013 -> 2018.",
+            "why_a_ta": "காலவரிசை முன்னேற்றம்: 1999 -> 2001 -> 2013 -> 2018.",
+            "why_b_en": "Places BR Kapur before Venkatachalam.",
+            "why_b_ta": "வெங்கடாசலத்திற்கு முன் பி.ஆர். கபூரை வைக்கிறது.",
+            "why_c_en": "Places Lily Thomas before BR Kapur.",
+            "why_c_ta": "பி.ஆர். கபூருக்கு முன் லில்லி தாமஸை வைக்கிறது.",
+            "why_d_en": "Incorrect presented stem sequence.",
+            "why_d_ta": "வினாவில் கொடுக்கப்பட்ட தவறான வரிசை.",
+            "tip_en": "Venkatachalam (1999) -> BR Kapur (2001) -> Lily Thomas (2013) -> Lok Prahari (2018).",
+            "tip_ta": "வெங்கடாசலம் (1999) -> பி.ஆர். கபூர் (2001) -> லில்லி தாமஸ் (2013) -> லோக் பிரஹாரி (2018).",
+            "fact_en": "These principles apply symmetrically to local body disqualifications under Articles 243F and 243V.",
+            "fact_ta": "இந்தக் கோட்பாடுகள் சரத்துகள் 243F மற்றும் 243V-ன் கீழ் உள்ளாட்சித் தகுதியிழப்புகளுக்கும் சமமாகப் பொருந்தும்."
+        },
+
+        # 16. Local Body Women Reservation Evolution
+        {
+            "subtopic": "Women Reservation Milestones in Local Bodies",
+            "stem_en": "Arrange the following milestones in women's reservation in local self-governments in chronological order:\n1. Tamil Nadu enhances women's quota in local bodies from 33% to 50%\n2. Bihar becomes the first Indian state to implement 50% reservation for women in Panchayats\n3. 73rd Amendment mandates not less than one-third (33%) reservation for women\n4. Union Cabinet approves proposal to amend Article 243D to provide 50% women reservation nationally (110th Amendment Bill)\nSelect the correct answer using the codes given below:",
+            "stem_ta": "உள்ளாட்சி அமைப்புகளில் பெண்கள் இடஒதுக்கீட்டின் பின்வரும் மைல்கற்களை காலவரிசைப்படி ஒழுங்குபடுத்தவும்:\n1. தமிழ்நாடு உள்ளாட்சி அமைப்புகளில் பெண்களுக்கான ஒதுக்கீட்டை 33%-லிருந்து 50%-ஆக உயர்த்துதல்\n2. பஞ்சாயத்துகளில் பெண்களுக்கு 50% இடஒதுக்கீட்டை அமல்படுத்திய முதல் இந்திய மாநிலமாக பீகார் மாறுதல்\n3. 73வது திருத்தம் பெண்களுக்கு மூன்றில் ஒரு பங்கிற்கு குறையாமல் (33%) இடஒதுக்கீட்டைக் கட்டாயமாக்குதல்\n4. தேசிய அளவில் பெண்களுக்கு 50% இடஒதுக்கீடு வழங்க சரத்து 243D-ஐ திருத்தும் திட்டத்திற்கு மத்திய அமைச்சரவை ஒப்புதல் அளித்தல் (110வது திருத்த மசோதா)\nகீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:",
+            "options": [
+                ("3 - 2 - 4 - 1", "3 - 2 - 4 - 1"),
+                ("2 - 3 - 4 - 1", "2 - 3 - 4 - 1"),
+                ("3 - 4 - 2 - 1", "3 - 4 - 2 - 1"),
+                ("1 - 2 - 3 - 4", "1 - 2 - 3 - 4")
+            ],
+            "correct_key": "A",
+            "exp_en": "The correct chronological order is:\n3. 73rd Amendment enacted with 33% quota (1992)\n→ 2. Bihar introduced 50% quota (2006)\n→ 4. Union Cabinet approved 110th Amendment Bill for 50% quota (2009)\n→ 1. Tamil Nadu enacted 50% quota (2016).\nSequence: 3 → 2 → 4 → 1.",
+            "exp_ta": "சரியான காலவரிசை:\n3. 73வது திருத்தம் 33% ஒதுக்கீட்டுடன் இயற்றப்படுதல் (1992)\n→ 2. பீகார் 50% ஒதுக்கீட்டை அறிமுகப்படுத்துதல் (2006)\n→ 4. 50% ஒதுக்கீட்டிற்கான 110வது மசோதாவிற்கு மத்திய அமைச்சரவை ஒப்புதல் (2009)\n→ 1. தமிழ்நாடு 50% ஒதுக்கீட்டை சட்டமாக்குதல் (2016).\nவரிசை: 3 → 2 → 4 → 1.",
+            "why_a_en": "Chronological progression: 1992 -> 2006 -> 2009 -> 2016.",
+            "why_a_ta": "காலவரிசை முன்னேற்றம்: 1992 -> 2006 -> 2009 -> 2016.",
+            "why_b_en": "Places Bihar before 73rd Amendment.",
+            "why_b_ta": "73வது திருத்தத்திற்கு முன் பீகாரை வைக்கிறது.",
+            "why_c_en": "Places 2009 cabinet approval before Bihar 2006 reform.",
+            "why_c_ta": "பீகார் 2006 சீர்திருத்தத்திற்கு முன் 2009 அமைச்சரவை ஒப்புதலை வைக்கிறது.",
+            "why_d_en": "Incorrect presented stem sequence.",
+            "why_d_ta": "வினாவில் கொடுக்கப்பட்ட தவறான வரிசை.",
+            "tip_en": "1992 (33% National floor) -> 2006 (Bihar 50%) -> 2009 (110th Bill) -> 2016 (TN 50%).",
+            "tip_ta": "1992 (33% தேசிய குறைந்தபட்சம்) -> 2006 (பீகார் 50%) -> 2009 (110வது மசோதா) -> 2016 (TN 50%).",
+            "fact_en": "Currently over 20 Indian states have enacted 50% reservation for women in local bodies.",
+            "fact_ta": "தற்போது 20-க்கும் மேற்பட்ட இந்திய மாநிலங்கள் உள்ளாட்சிகளில் பெண்களுக்கு 50% இடஒதுக்கீட்டை இயற்றியுள்ளன."
+        },
+
+        # 17. Election Model Code & Technology Milestones
+        {
+            "subtopic": "Electoral Administration and Technology Timeline",
+            "stem_en": "Arrange the following milestones in election administration and voting technology in chronological order:\n1. State Election Commissions adopt multi-post EVMs for urban civic elections\n2. First introduction of Model Code of Conduct in State Assembly elections in Kerala\n3. Supreme Court affirms plenary power of Election Commission under Article 324 in Mohinder Singh Gill\n4. Introduction of NOTA (None of the Above) following PUCL judgment\nSelect the correct answer using the codes given below:",
+            "stem_ta": "தேர்தல் நிர்வாகம் மற்றும் வாக்குப்பதிவு தொழில்நுட்பத்தின் பின்வரும் மைல்கற்களை காலவரிசைப்படி ஒழுங்குபடுத்தவும்:\n1. நகர்ப்புற உள்ளாட்சித் தேர்தல்களுக்கு மாநில தேர்தல் ஆணையங்கள் பல பதவி EVM-களை ஏற்றுக்கொள்வது\n2. கேரளாவில் சட்டமன்றத் தேர்தல்களில் முதன்முதலில் தேர்தல் நடத்தை விதிகள் (MCC) அறிமுகப்படுத்தப்படுதல்\n3. மொகிந்தர் சிங் கில் வழக்கில் சரத்து 324-ன் கீழ் தேர்தல் ஆணையத்தின் முழு அதிகாரத்தை உச்ச நீதிமன்றம் உறுதி செய்தல்\n4. PUCL தீர்ப்பைத் தொடர்ந்து நோட்டா (NOTA) அறிமுகப்படுத்தப்படுதல்\nகீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:",
+            "options": [
+                ("2 - 3 - 1 - 4", "2 - 3 - 1 - 4"),
+                ("3 - 2 - 1 - 4", "3 - 2 - 1 - 4"),
+                ("2 - 1 - 3 - 4", "2 - 1 - 3 - 4"),
+                ("1 - 2 - 3 - 4", "1 - 2 - 3 - 4")
+            ],
+            "correct_key": "A",
+            "exp_en": "The correct chronological order is:\n2. MCC first introduced in Kerala (1960)\n→ 3. Mohinder Singh Gill judgment on plenary powers (1977)\n→ 1. Multi-post EVMs deployed in urban local elections (early 2000s)\n→ 4. NOTA introduced via PUCL judgment (September 2013).\nSequence: 2 → 3 → 1 → 4.",
+            "exp_ta": "சரியான காலவரிசை:\n2. கேரளாவில் MCC முதன்முதலில் அறிமுகம் (1960)\n→ 3. முழு அதிகாரம் குறித்த மொகிந்தர் சிங் கில் தீர்ப்பு (1977)\n→ 1. நகர்ப்புற உள்ளாட்சித் தேர்தல்களில் பல பதவி EVM-கள் பயன்பாடு (2000-களின் தொடக்கம்)\n→ 4. PUCL தீர்ப்பு மூலம் நோட்டா அறிமுகம் (செப்டம்பர் 2013).\nவரிசை: 2 → 3 → 1 → 4.",
+            "why_a_en": "Chronological progression: 1960 -> 1977 -> early 2000s -> 2013.",
+            "why_a_ta": "காலவரிசை முன்னேற்றம்: 1960 -> 1977 -> 2000-களின் தொடக்கம் -> 2013.",
+            "why_b_en": "Places Mohinder Singh Gill before 1960 MCC introduction.",
+            "why_b_ta": "1960 MCC அறிமுகத்திற்கு முன் மொகிந்தர் சிங் கில்லை வைக்கிறது.",
+            "why_c_en": "Places multi-post EVMs before 1977 judgment.",
+            "why_c_ta": "1977 தீர்ப்பிற்கு முன் EVM பயன்பாட்டை வைக்கிறது.",
+            "why_d_en": "Incorrect presented stem sequence.",
+            "why_d_ta": "வினாவில் கொடுக்கப்பட்ட தவறான வரிசை.",
+            "tip_en": "1960 (MCC in Kerala) -> 1977 (Mohinder Gill) -> 2000s (Local EVMs) -> 2013 (NOTA).",
+            "tip_ta": "1960 (கேரளா MCC) -> 1977 (மொகிந்தர் கில்) -> 2000-கள் (உள்ளாட்சி EVM) -> 2013 (நோட்டா).",
+            "fact_en": "State Election Commissions gradually introduced NOTA in municipal and local elections after 2013.",
+            "fact_ta": "2013-க்குப் பிறகு மாநில தேர்தல் ஆணையங்கள் நகராட்சி மற்றும் உள்ளாட்சித் தேர்தல்களில் நோட்டாவை படிப்படியாக அறிமுகப்படுத்தின."
+        },
+
+        # 18. Local Accounting Standards Timeline
+        {
+            "subtopic": "National Accounting Framework for Local Bodies",
+            "stem_en": "Arrange the following key accounting reform milestones for local self-government in India in chronological order:\n1. Launch of AuditOnline for financial audit of Panchayats\n2. Eleventh Finance Commission recommendation for standard local accounting and CAG oversight\n3. Ministry of Panchayati Raj notifies National Panchayat Accounting Framework\n4. Introduction of PRIA Soft web-based double-entry accounting software\nSelect the correct answer using the codes given below:",
+            "stem_ta": "இந்தியாவில் உள்ளாட்சி அமைப்புகளுக்கான பின்வரும் முக்கிய கணக்கு சீர்திருத்த மைல்கற்களை காலவரிசைப்படி ஒழுங்குபடுத்தவும்:\n1. பஞ்சாயத்துகளின் நிதித் தணிக்கைக்காக AuditOnline தொடங்கப்படுதல்\n2. நிலையான உள்ளாட்சி கணக்கு பராமரிப்பு மற்றும் CAG மேற்பார்வைக்கான 11வது நிதி ஆணையப் பரிந்துரை\n3. பஞ்சாயத்து ராஜ் அமைச்சகம் தேசிய பஞ்சாயத்து கணக்கு கட்டமைப்பை அறிவித்தல்\n4. PRIA Soft இணைய அடிப்படையிலான இரட்டைப் பதிவு கணக்கு மென்பொருள் அறிமுகப்படுத்தப்படுதல்\nகீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:",
+            "options": [
+                ("2 - 3 - 4 - 1", "2 - 3 - 4 - 1"),
+                ("3 - 2 - 4 - 1", "3 - 2 - 4 - 1"),
+                ("2 - 4 - 3 - 1", "2 - 4 - 3 - 1"),
+                ("1 - 2 - 3 - 4", "1 - 2 - 3 - 4")
+            ],
+            "correct_key": "A",
+            "exp_en": "The correct chronological order is:\n2. 11th FC recommendation on accounting & CAG TG&S (2000)\n→ 3. National Panchayat Accounting Framework notified (2009)\n→ 4. PRIA Soft operationalized (2010-2011)\n→ 1. AuditOnline launched (2020).\nSequence: 2 → 3 → 4 → 1.",
+            "exp_ta": "சரியான காலவரிசை:\n2. கணக்கு பராமரிப்பு & CAG TG&S குறித்த 11வது FC பரிந்துரை (2000)\n→ 3. தேசிய பஞ்சாயத்து கணக்கு கட்டமைப்பு அறிவிப்பு (2009)\n→ 4. PRIA Soft செயல்படுத்தப்படுதல் (2010-2011)\n→ 1. AuditOnline தொடங்கப்படுதல் (2020).\nவரிசை: 2 → 3 → 4 → 1.",
+            "why_a_en": "Chronological progression: 2000 -> 2009 -> 2011 -> 2020.",
+            "why_a_ta": "காலவரிசை முன்னேற்றம்: 2000 -> 2009 -> 2011 -> 2020.",
+            "why_b_en": "Places 2009 framework before 2000 11th FC report.",
+            "why_b_ta": "2000 11வது FC அறிக்கைக்கு முன் 2009 கட்டமைப்பை வைக்கிறது.",
+            "why_c_en": "Swaps PRIA Soft and the national framework.",
+            "why_c_ta": "PRIA Soft மற்றும் தேசிய கட்டமைப்பை மாற்றுகிறது.",
+            "why_d_en": "Incorrect presented stem sequence.",
+            "why_d_ta": "வினாவில் கொடுக்கப்பட்ட தவறான வரிசை.",
+            "tip_en": "Evolution: 11th FC (2000) -> Accounting Framework (2009) -> PRIA Soft (2011) -> AuditOnline (2020).",
+            "tip_ta": "பரிணாமம்: 11வது FC (2000) -> கணக்கு கட்டமைப்பு (2009) -> PRIA Soft (2011) -> AuditOnline (2020).",
+            "fact_en": "These reforms transformed single-entry notebook entries into auditable double-entry accounting.",
+            "fact_ta": "இந்த சீர்திருத்தங்கள் ஒற்றைப் பதிவு குறிப்பேடுகளை தணிக்கை செய்யக்கூடிய இரட்டைப் பதிவு கணக்குகளாக மாற்றின."
+        },
+
+        # 19. Anti-Defection Legislation History
+        {
+            "subtopic": "Anti-Defection Legal Timeline",
+            "stem_en": "Arrange the following anti-defection and local disqualification legal milestones in chronological order:\n1. Tamil Nadu Local Authorities Disqualification on Ground of Defection Act\n2. 52nd Constitutional Amendment Act inserting the Tenth Schedule\n3. 91st Constitutional Amendment Act tightening anti-defection provisions\n4. Supreme Court decision in Kihoto Hollohan v. Zachillhu upholding Tenth Schedule\nSelect the correct answer using the codes given below:",
+            "stem_ta": "கட்சித் தாவல் தடை மற்றும் உள்ளாட்சி தகுதியிழப்பு தொடர்பான பின்வரும் சட்ட மைல்கற்களை காலவரிசைப்படி ஒழுங்குபடுத்தவும்:\n1. தமிழ்நாடு உள்ளாட்சி அதிகார அமைப்புகள் கட்சித் தாவல் காரணத்தினால் தகுதியிழப்புச் சட்டம்\n2. பத்தாவது அட்டவணையைச் சேர்த்த 52வது அரசியலமைப்பு திருத்தச் சட்டம்\n3. கட்சித் தாவல் தடை விதிகளை இறுக்கிய 91வது அரசியலமைப்பு திருத்தச் சட்டம்\n4. பத்தாவது அட்டவணையை உறுதி செய்த உச்ச நீதிமன்றத்தின் கிஹோட்டோ ஹோலோஹன் எதிர் ஜாச்சிலு தீர்ப்பு\nகீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:",
+            "options": [
+                ("2 - 4 - 1 - 3", "2 - 4 - 1 - 3"),
+                ("4 - 2 - 1 - 3", "4 - 2 - 1 - 3"),
+                ("2 - 1 - 4 - 3", "2 - 1 - 4 - 3"),
+                ("1 - 2 - 3 - 4", "1 - 2 - 3 - 4")
+            ],
+            "correct_key": "A",
+            "exp_en": "The correct chronological order is:\n2. 52nd Amendment Act (1985)\n→ 4. Kihoto Hollohan judgment (1992)\n→ 1. TN Local Authorities Anti-Defection Act (1999)\n→ 3. 91st Amendment Act (2003).\nSequence: 2 → 4 → 1 → 3.",
+            "exp_ta": "சரியான காலவரிசை:\n2. 52வது திருத்தச் சட்டம் (1985)\n→ 4. கிஹோட்டோ ஹோலோஹன் தீர்ப்பு (1992)\n→ 1. தமிழ்நாடு உள்ளாட்சி கட்சித் தாவல் தடைச் சட்டம் (1999)\n→ 3. 91வது திருத்தச் சட்டம் (2003).\nவரிசை: 2 → 4 → 1 → 3.",
+            "why_a_en": "Chronological progression: 1985 -> 1992 -> 1999 -> 2003.",
+            "why_a_ta": "காலவரிசை முன்னேற்றம்: 1985 -> 1992 -> 1999 -> 2003.",
+            "why_b_en": "Places Kihoto Hollohan before 52nd Amendment.",
+            "why_b_ta": "52வது திருத்தத்திற்கு முன் கிஹோட்டோ ஹோலோஹனை வைக்கிறது.",
+            "why_c_en": "Places TN 1999 Act before Kihoto Hollohan.",
+            "why_c_ta": "கிஹோட்டோ ஹோலோஹனுக்கு முன் TN 1999 சட்டத்தை வைக்கிறது.",
+            "why_d_en": "Incorrect presented stem sequence.",
+            "why_d_ta": "வினாவில் கொடுக்கப்பட்ட தவறான வரிசை.",
+            "tip_en": "52nd Amendment (1985) -> Kihoto (1992) -> TN Local Anti-Defection (1999) -> 91st Amendment (2003).",
+            "tip_ta": "52வது திருத்தம் (1985) -> கிஹோட்டோ (1992) -> TN உள்ளாட்சி கட்சித் தாவல் சட்டம் (1999) -> 91வது திருத்தம் (2003).",
+            "fact_en": "The TN 1999 Act disqualified town panchayat, municipality, corporation councillors and union councillors for defection.",
+            "fact_ta": "TN 1999 சட்டம் பேரூராட்சி, நகராட்சி, மாநகராட்சி மற்றும் ஒன்றிய கவுன்சிலர்களை கட்சித் தாவலுக்காக தகுதி நீக்கம் செய்தது."
+        },
+
+        # 20. Evolution of Local Government In India (Pre-Independence to Post)
+        {
+            "subtopic": "Historical Foundations of Local Self-Government",
+            "stem_en": "Arrange the following historical milestones in the evolution of local self-government in India in chronological order:\n1. Government of India Act, 1935 declares Local Government as a provincial subject\n2. Lord Ripon's Resolution on Local Self-Government (Magna Carta of Local Government)\n3. Royal Commission on Decentralisation chaired by C.E.H. Hobhouse\n4. Government of India Act, 1919 (Montagu-Chelmsford Reforms) makes Local Self-Government a transferred subject\nSelect the correct answer using the codes given below:",
+            "stem_ta": "இந்தியாவில் உள்ளாட்சி அமைப்புகளின் பரிணாம வளர்ச்சியின் பின்வரும் வரலாற்று மைல்கற்களை காலவரிசைப்படி ஒழுங்குபடுத்தவும்:\n1. 1935 இந்திய அரசுச் சட்டம் உள்ளாட்சியை மாகாணப் பாடமாக அறிவித்தல்\n2. ரிப்பன் பிரபுவின் உள்ளாட்சித் தீர்மானம் (உள்ளாட்சியின் மகா சாசனம்)\n3. சி.இ.ஹெச். ஹாப்ஹவுஸ் தலைமையிலான அதிகாரப் பரவலாக்கத்திற்கான அரச ஆணையம்\n4. 1919 இந்திய அரசுச் சட்டம் (மாண்டேகு-செம்ஸ்போர்டு சீர்திருத்தங்கள்) உள்ளாட்சியை மாற்றப்பட்ட பாடமாக மாற்றுதல்\nகீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:",
+            "options": [
+                ("2 - 3 - 4 - 1", "2 - 3 - 4 - 1"),
+                ("3 - 2 - 4 - 1", "3 - 2 - 4 - 1"),
+                ("2 - 4 - 3 - 1", "2 - 4 - 3 - 1"),
+                ("1 - 2 - 3 - 4", "1 - 2 - 3 - 4")
+            ],
+            "correct_key": "A",
+            "exp_en": "The correct chronological order is:\n2. Lord Ripon's Resolution (1882)\n→ 3. Royal Commission on Decentralisation (1907-1909)\n→ 4. Government of India Act (1919)\n→ 1. Government of India Act (1935).\nSequence: 2 → 3 → 4 → 1.",
+            "exp_ta": "சரியான காலவரிசை:\n2. ரிப்பன் பிரபுவின் தீர்மானம் (1882)\n→ 3. அதிகாரப் பரவலாக்க அரச ஆணையம் (1907-1909)\n→ 4. இந்திய அரசுச் சட்டம் (1919)\n→ 1. இந்திய அரசுச் சட்டம் (1935).\nவரிசை: 2 → 3 → 4 → 1.",
+            "why_a_en": "Chronological progression: 1882 -> 1907 -> 1919 -> 1935.",
+            "why_a_ta": "காலவரிசை முன்னேற்றம்: 1882 -> 1907 -> 1919 -> 1935.",
+            "why_b_en": "Places 1907 commission before Lord Ripon's 1882 resolution.",
+            "why_b_ta": "1882 ரிப்பன் தீர்மானத்திற்கு முன் 1907 ஆணையத்தை வைக்கிறது.",
+            "why_c_en": "Places 1919 Act before 1907 commission.",
+            "why_c_ta": "1907 ஆணையத்திற்கு முன் 1919 சட்டத்தை வைக்கிறது.",
+            "why_d_en": "Incorrect presented stem sequence.",
+            "why_d_ta": "வினாவில் கொடுக்கப்பட்ட தவறான வரிசை.",
+            "tip_en": "Evolution: Ripon (1882) -> Hobhouse Commission (1907) -> 1919 Act (Transferred subject) -> 1935 Act (Provincial List).",
+            "tip_ta": "பரிணாமம்: ரிப்பன் (1882) -> ஹாப்ஹவுஸ் (1907) -> 1919 சட்டம் (மாற்றப்பட்ட பாடம்) -> 1935 சட்டம் (மாகாணப் பட்டியல்).",
+            "fact_en": "Lord Ripon is regarded as the 'Father of Local Self-Government in India'.",
+            "fact_ta": "ரிப்பன் பிரபு 'இந்திய உள்ளாட்சி அமைப்புகளின் தந்தை' என்று அழைக்கப்படுகிறார்."
+        },
+
+        # 21. Municipal Corporation Acts in Tamil Nadu
+        {
+            "subtopic": "Tamil Nadu City Municipal Corporations Enactments",
+            "stem_en": "Arrange the following City Municipal Corporations in Tamil Nadu in chronological order of their original statutory establishment:\n1. Coimbatore Municipal Corporation\n2. Madras (Chennai) Municipal Corporation\n3. Tiruchirappalli Municipal Corporation\n4. Madurai Municipal Corporation\nSelect the correct answer using the codes given below:",
+            "stem_ta": "தமிழ்நாட்டில் உள்ள பின்வரும் மாநகராட்சிகளை அவை முதலில் சட்டப்பூர்வமாக நிறுவப்பட்ட காலவரிசைப்படி ஒழுங்குபடுத்தவும்:\n1. கோயம்புத்தூர் மாநகராட்சி\n2. மெட்ராஸ் (சென்னை) மாநகராட்சி\n3. திருச்சிராப்பள்ளி மாநகராட்சி\n4. மதுரை மாநகராட்சி\nகீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:",
+            "options": [
+                ("2 - 4 - 1 - 3", "2 - 4 - 1 - 3"),
+                ("4 - 2 - 1 - 3", "4 - 2 - 1 - 3"),
+                ("2 - 1 - 4 - 3", "2 - 1 - 4 - 3"),
+                ("1 - 2 - 3 - 4", "1 - 2 - 3 - 4")
+            ],
+            "correct_key": "A",
+            "exp_en": "The correct chronological order is:\n2. Madras Municipal Corporation (1688, oldest municipal body in the Commonwealth outside Britain)\n→ 4. Madurai Municipal Corporation (1971)\n→ 1. Coimbatore Municipal Corporation (1981)\n→ 3. Tiruchirappalli Municipal Corporation (1994).\nSequence: 2 → 4 → 1 → 3.",
+            "exp_ta": "சரியான காலவரிசை:\n2. மெட்ராஸ் மாநகராட்சி (1688, பிரிட்டனுக்கு வெளியே பழமையான உள்ளாட்சி அமைப்பு)\n→ 4. மதுரை மாநகராட்சி (1971)\n→ 1. கோயம்புத்தூர் மாநகராட்சி (1981)\n→ 3. திருச்சிராப்பள்ளி மாநகராட்சி (1994).\nவரிசை: 2 → 4 → 1 → 3.",
+            "why_a_en": "Chronological progression: 1688 -> 1971 -> 1981 -> 1994.",
+            "why_a_ta": "காலவரிசை முன்னேற்றம்: 1688 -> 1971 -> 1981 -> 1994.",
+            "why_b_en": "Places Madurai before Madras.",
+            "why_b_ta": "மெட்ராஸுக்கு முன் மதுரையை வைக்கிறது.",
+            "why_c_en": "Places Coimbatore before Madurai.",
+            "why_c_ta": "மதுரைக்கு முன் கோயம்புத்தூரை வைக்கிறது.",
+            "why_d_en": "Incorrect presented stem sequence.",
+            "why_d_ta": "வினாவில் கொடுக்கப்பட்ட தவறான வரிசை.",
+            "tip_en": "Corporation timeline in TN: Chennai (1688) -> Madurai (1971) -> Coimbatore (1981) -> Tiruchirappalli & Salem (1994) -> Tirunelveli (1994).",
+            "tip_ta": "TN மாநகராட்சிகள் காலக்கோடு: சென்னை (1688) -> மதுரை (1971) -> கோவை (1981) -> திருச்சி & சேலம் (1994) -> நெல்லை (1994).",
+            "fact_en": "Madras Corporation was set up via a Royal Charter issued by King James II in 1687.",
+            "fact_ta": "சென்னை மாநகராட்சி 1687-ல் இரண்டாம் ஜேம்ஸ் மன்னரால் வழங்கப்பட்ட அரச சாசனத்தின் மூலம் அமைக்கப்பட்டது."
+        },
+
+        # 22. Central Finance Commission Performance Grant Conditions
+        {
+            "subtopic": "Performance Grants Evolution",
+            "stem_en": "Arrange the following policy conditions attached to local body grants by Central Finance Commissions in chronological order:\n1. Linking 60% grants to open-defecation-free (ODF) sustainability and rainwater harvesting (15th FC)\n2. Linking performance grants to audited annual accounts and electronic database (13th FC)\n3. Providing unconditioned lump-sum ad-hoc grants without state audit verification (10th FC)\n4. Setting aside 20% of urban grants for audited municipal accounts and service standards (14th FC)\nSelect the correct answer using the codes given below:",
+            "stem_ta": "மத்திய நிதி ஆணையங்களால் உள்ளாட்சி மானியங்களுடன் இணைக்கப்பட்ட பின்வரும் கொள்கை நிபந்தனைகளை காலவரிசைப்படி ஒழுங்குபடுத்தவும்:\n1. 60% மானியங்களை திறந்தவெளி மலம் கழித்தல் அற்ற (ODF) பராமரிப்பு மற்றும் மழைநீர் சேகரிப்புடன் இணைத்தல் (15வது FC)\n2. செயல்திறன் மானியங்களை தணிக்கை செய்யப்பட்ட கணக்குகள் மற்றும் மின்னணு தரவுத்தளத்துடன் இணைத்தல் (13வது FC)\n3. தணிக்கைச் சரிபார்ப்பின்றி நிபந்தனையற்ற மொத்த மானியங்களை வழங்குதல் (10வது FC)\n4. தணிக்கை செய்யப்பட்ட நகராட்சி கணக்குகள் மற்றும் சேவைத் தரங்களுக்காக நகர்ப்புற மானியங்களில் 20%-ஐ ஒதுக்குதல் (14வது FC)\nகீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:",
+            "options": [
+                ("3 - 2 - 4 - 1", "3 - 2 - 4 - 1"),
+                ("2 - 3 - 4 - 1", "2 - 3 - 4 - 1"),
+                ("3 - 4 - 2 - 1", "3 - 4 - 2 - 1"),
+                ("1 - 2 - 3 - 4", "1 - 2 - 3 - 4")
+            ],
+            "correct_key": "A",
+            "exp_en": "The correct chronological order is:\n3. 10th FC lump-sum unconditioned grants (1995)\n→ 2. 13th FC performance grants with accounting conditions (2009)\n→ 4. 14th FC 20% urban performance reserve (2014)\n→ 1. 15th FC 60% tied grants for WASH (2020).\nSequence: 3 → 2 → 4 → 1.",
+            "exp_ta": "சரியான காலவரிசை:\n3. 10வது FC நிபந்தனையற்ற மொத்த மானியங்கள் (1995)\n→ 2. 13வது FC கணக்கு நிபந்தனைகளுடன் கூடிய செயல்திறன் மானியங்கள் (2009)\n→ 4. 14வது FC 20% நகர்ப்புற செயல்திறன் ஒதுக்கீடு (2014)\n→ 1. 15வது FC 60% நிபந்தனை மானியங்கள் (2020).\nவரிசை: 3 → 2 → 4 → 1.",
+            "why_a_en": "Chronological progression: 1995 -> 2009 -> 2014 -> 2020.",
+            "why_a_ta": "காலவரிசை முன்னேற்றம்: 1995 -> 2009 -> 2014 -> 2020.",
+            "why_b_en": "Places 13th FC before 10th FC.",
+            "why_b_ta": "10வது FC-க்கு முன் 13வது FC-ஐ வைக்கிறது.",
+            "why_c_en": "Swaps 13th and 14th FC conditions.",
+            "why_c_ta": "13 மற்றும் 14வது FC நிபந்தனைகளை மாற்றுகிறது.",
+            "why_d_en": "Incorrect presented stem sequence.",
+            "why_d_ta": "வினாவில் கொடுக்கப்பட்ட தவறான வரிசை.",
+            "tip_en": "Evolution of conditions: Unconditional (10th) -> Basic reform (13th) -> Service benchmarks (14th) -> 60% Tied WASH (15th).",
+            "tip_ta": "நிபந்தனைகளின் பரிணாமம்: நிபந்தனையற்றது (10வது) -> அடிப்படை சீர்திருத்தம் (13வது) -> சேவைத் தரம் (14வது) -> 60% நிபந்தனை (15வது).",
+            "fact_en": "Conditions reflect the gradual shift toward performance accountability in fiscal federalism.",
+            "fact_ta": "நிபந்தனைகள் நிதி கூட்டாட்சியில் செயல்திறன் பொறுப்புடைமையை நோக்கிய படிப்படியான மாற்றத்தைப் பிரதிபலிக்கின்றன."
+        },
+
+        # 23. Direct Democracy: Gram Sabha Timeline
+        {
+            "subtopic": "Gram Sabha Evolution and Legal Recognition",
+            "stem_en": "Arrange the following statutory and constitutional milestones regarding Gram Sabha in chronological order:\n1. Article 243A gives constitutional status to Gram Sabha\n2. Provisions of the Panchayats (Extension to Scheduled Areas) Act (PESA) empowers Gram Sabha in tribal areas\n3. Tamil Nadu mandates six Gram Sabha meetings per year on designated national and state holidays\n4. Balwant Rai Mehta Committee recommends establishing Village Panchayat assemblies\nSelect the correct answer using the codes given below:",
+            "stem_ta": "கிராம சபை தொடர்பான பின்வரும் சட்டப்பூர்வ மற்றும் அரசியலமைப்பு மைல்கற்களை காலவரிசைப்படி ஒழுங்குபடுத்தவும்:\n1. சரத்து 243A கிராம சபைக்கு அரசியலமைப்பு அந்தஸ்து அளித்தல்\n2. பழங்குடியினர் பகுதிகளில் கிராம சபையை வலுப்படுத்தும் PESA சட்டம் இயற்றப்படுதல்\n3. நியமிக்கப்பட்ட விடுமுறை நாட்களில் ஆண்டுக்கு ஆறு கிராம சபை கூட்டங்களை தமிழ்நாடு கட்டாயமாக்குதல்\n4. கிராம பஞ்சாயத்து சபைகளை நிறுவ பல்வந்த் ராய் மேத்தா குழு பரிந்துரைத்தல்\nகீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:",
+            "options": [
+                ("4 - 1 - 2 - 3", "4 - 1 - 2 - 3"),
+                ("1 - 4 - 2 - 3", "1 - 4 - 2 - 3"),
+                ("4 - 2 - 1 - 3", "4 - 2 - 1 - 3"),
+                ("1 - 2 - 3 - 4", "1 - 2 - 3 - 4")
+            ],
+            "correct_key": "A",
+            "exp_en": "The correct chronological order is:\n4. Balwant Rai Mehta Report (1957)\n→ 1. Article 243A inserted by 73rd Amendment (1992)\n→ 2. PESA Act passed by Parliament (1996)\n→ 3. Tamil Nadu expanded mandatory Gram Sabha meetings to six per year (2022).\nSequence: 4 → 1 → 2 → 3.",
+            "exp_ta": "சரியான காலவரிசை:\n4. பல்வந்த் ராய் மேத்தா அறிக்கை (1957)\n→ 1. 73வது திருத்தம் மூலம் சரத்து 243A சேர்க்கப்படுதல் (1992)\n→ 2. நாடாளுமன்றத்தால் PESA சட்டம் நிறைவேற்றப்படுதல் (1996)\n→ 3. ஆண்டுக்கு ஆறு கிராம சபை கூட்டங்களை தமிழ்நாடு அதிகரித்தல் (2022).\nவரிசை: 4 → 1 → 2 → 3.",
+            "why_a_en": "Chronological progression: 1957 -> 1992 -> 1996 -> 2022.",
+            "why_a_ta": "காலவரிசை முன்னேற்றம்: 1957 -> 1992 -> 1996 -> 2022.",
+            "why_b_en": "Places Article 243A before Balwant Rai Mehta.",
+            "why_b_ta": "பல்வந்த் ராய் மேத்தாவிற்கு முன் சரத்து 243A-வை வைக்கிறது.",
+            "why_c_en": "Places PESA before Article 243A.",
+            "why_c_ta": "சரத்து 243A-க்கு முன் PESA-வை வைக்கிறது.",
+            "why_d_en": "Incorrect presented stem sequence.",
+            "why_d_ta": "வினாவில் கொடுக்கப்பட்ட தவறான வரிசை.",
+            "tip_en": "TN Gram Sabha dates (6 times): Jan 26, Mar 22 (Water Day), May 1, Aug 15, Oct 2, Nov 1 (Local Governance Day).",
+            "tip_ta": "TN கிராம சபை தேதிகள் (6 முறை): ஜன 26, மார்ச் 22 (தண்ணீர் தினம்), மே 1, ஆக 15, அக் 2, நவ 1 (உள்ளாட்சி தினம்).",
+            "fact_en": "Tamil Nadu previously mandated 4 meetings, enhanced to 6 meetings in 2022.",
+            "fact_ta": "தமிழ்நாடு முன்பு 4 கூட்டங்களை கட்டாயமாக்கியிருந்தது, 2022-ல் 6 கூட்டங்களாக உயர்த்தப்பட்டது."
+        },
+
+        # 24. Delimitation Litigation in Tamil Nadu
+        {
+            "subtopic": "Tamil Nadu Local Delimitation Case Law",
+            "stem_en": "Arrange the following judicial interventions regarding local body elections and delimitation in Tamil Nadu in chronological order:\n1. Supreme Court permits rural local elections in 27 districts while directing delimitation in 9 newly formed districts (DMK v. State of TN)\n2. Madras High Court sets aside election notification over delimitation irregularities\n3. State Election Commission conducts urban local body elections following delimitation completion\n4. Tamil Nadu Legislature passes the Tamil Nadu Delimitation Commission Act\nSelect the correct answer using the codes given below:",
+            "stem_ta": "தமிழ்நாட்டில் உள்ளாட்சித் தேர்தல் மற்றும் மறுவரையறை தொடர்பான பின்வரும் நீதித்துறை தலையீடுகளை காலவரிசைப்படி ஒழுங்குபடுத்தவும்:\n1. 9 புதிய மாவட்டங்களில் மறுவரையறைக்கு உத்தரவிட்டு, 27 மாவட்டங்களில் ஊரக உள்ளாட்சித் தேர்தலை நடத்த உச்ச நீதிமன்றம் அனுமதித்தல்\n2. மறுவரையறை முறைகேடுகளுக்காக தேர்தல் அறிவிப்பை மெட்ராஸ் உயர் நீதிமன்றம் ரத்து செய்தல்\n3. மறுவரையறை முடிவடைந்ததைத் தொடர்ந்து நகர்ப்புற உள்ளாட்சித் தேர்தல்களை மாநில தேர்தல் ஆணையம் நடத்துதல்\n4. தமிழ்நாடு சட்டமன்றம் தமிழ்நாடு மறுவரையறை ஆணையச் சட்டத்தை நிறைவேற்றுதல்\nகீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:",
+            "options": [
+                ("2 - 4 - 1 - 3", "2 - 4 - 1 - 3"),
+                ("4 - 2 - 1 - 3", "4 - 2 - 1 - 3"),
+                ("2 - 1 - 4 - 3", "2 - 1 - 4 - 3"),
+                ("1 - 2 - 3 - 4", "1 - 2 - 3 - 4")
+            ],
+            "correct_key": "A",
+            "exp_en": "The correct chronological order is:\n2. High Court sets aside 2016 election notification (October 2016)\n→ 4. Delimitation Commission Act enacted (2017)\n→ 1. Supreme Court order in DMK v. State of TN (December 2019)\n→ 3. Urban local body elections held (February 2022).\nSequence: 2 → 4 → 1 → 3.",
+            "exp_ta": "சரியான காலவரிசை:\n2. 2016 தேர்தல் அறிவிப்பை உயர் நீதிமன்றம் ரத்து செய்தல் (அக்டோபர் 2016)\n→ 4. மறுவரையறை ஆணையச் சட்டம் இயற்றப்படுதல் (2017)\n→ 1. திமுக எதிர் தமிழக அரசு வழக்கில் உச்ச நீதிமன்ற உத்தரவு (டிசம்பர் 2019)\n→ 3. நகர்ப்புற உள்ளாட்சித் தேர்தல் நடத்தப்படுதல் (பிப்ரவரி 2022).\nவரிசை: 2 → 4 → 1 → 3.",
+            "why_a_en": "Chronological progression: Oct 2016 -> 2017 -> Dec 2019 -> Feb 2022.",
+            "why_a_ta": "காலவரிசை முன்னேற்றம்: அக் 2016 -> 2017 -> டிச 2019 -> பிப் 2022.",
+            "why_b_en": "Places 2017 Act before October 2016 High Court stay.",
+            "why_b_ta": "அக்டோபர் 2016 உயர் நீதிமன்ற தடைக்கு முன் 2017 சட்டத்தை வைக்கிறது.",
+            "why_c_en": "Places 2019 SC order before 2017 Act.",
+            "why_c_ta": "2017 சட்டத்திற்கு முன் 2019 உச்ச நீதிமன்ற உத்தரவை வைக்கிறது.",
+            "why_d_en": "Incorrect presented stem sequence.",
+            "why_d_ta": "வினாவில் கொடுக்கப்பட்ட தவறான வரிசை.",
+            "tip_en": "High Court Stay (2016) -> Delimitation Act (2017) -> Rural polls in 27 districts (2019-20) -> Urban polls (2022).",
+            "tip_ta": "உயர் நீதிமன்ற தடை (2016) -> மறுவரையறை சட்டம் (2017) -> 27 மாவட்ட ஊரக தேர்தல் (2019-20) -> நகர்ப்புற தேர்தல் (2022).",
+            "fact_en": "The 9 bifurcated/trifurcated districts were Kanchipuram, Chengalpattu, Vellore, Ranipet, Tirupattur, Villupuram, Kallakurichi, Tirunelveli, and Tenkasi.",
+            "fact_ta": "9 பிரிக்கப்பட்ட மாவட்டங்கள்: காஞ்சிபுரம், செங்கல்பட்டு, வேலூர், ராணிப்பேட்டை, திருப்பத்தூர், விழுப்புரம், கள்ளக்குறிச்சி, திருநெல்வேலி, தென்காசி."
+        },
+
+        # 25. Historical Fiscal Devolution Milestones in TN
+        {
+            "subtopic": "Tamil Nadu Intergovernmental Fiscal Trajectory",
+            "stem_en": "Arrange the following fiscal milestones in Tamil Nadu local body devolution in chronological order:\n1. Introduction of Pool Assigned Revenue (PAR) mechanism for local bodies\n2. Establishment of first State Finance Commission under Section 240\n3. Integration of State Finance Commission grants into automated e-Treasury electronic transfers\n4. Setting aside dedicated Capital Grant Fund (CGF) for rural infrastructure\nSelect the correct answer using the codes given below:",
+            "stem_ta": "தமிழ்நாடு உள்ளாட்சி நிதிப் பகிர்வில் பின்வரும் நிதி மைல்கற்களை காலவரிசைப்படி ஒழுங்குபடுத்தவும்:\n1. உள்ளாட்சி அமைப்புகளுக்காக தொகுக்கப்பட்ட ஒதுக்கப்பட்ட வருவாய் (PAR) வழிமுறையை அறிமுகப்படுத்துதல்\n2. பிரிவு 240-ன் கீழ் முதல் மாநில நிதி ஆணையத்தை நிறுவுதல்\n3. தானியங்கி e-கருவூல மின்னணு பரிமாற்றங்களில் மாநில நிதி ஆணைய மானியங்களை ஒருங்கிணைத்தல்\n4. ஊரக உள்கட்டமைப்பிற்காக பிரத்யேக மூலதன மானிய நிதியை (CGF) ஒதுக்குதல்\nகீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:",
+            "options": [
+                ("2 - 1 - 4 - 3", "2 - 1 - 4 - 3"),
+                ("1 - 2 - 4 - 3", "1 - 2 - 4 - 3"),
+                ("2 - 4 - 1 - 3", "2 - 4 - 1 - 3"),
+                ("4 - 2 - 1 - 3", "4 - 2 - 1 - 3")
+            ],
+            "correct_key": "A",
+            "exp_en": "The correct chronological order is:\n2. First SFC established under Section 240 (1994)\n→ 1. Pooled Assigned Revenue system introduced (early 2000s under 2nd SFC)\n→ 4. Dedicated Capital Grant Fund (CGF) created (3rd/4th SFC 2007-2010)\n→ 3. Automated e-Treasury direct credit to local body accounts (2015-2018).\nSequence: 2 → 1 → 4 → 3.",
+            "exp_ta": "சரியான காலவரிசை:\n2. பிரிவு 240-ன் கீழ் முதல் SFC நிறுவுதல் (1994)\n→ 1. தொகுக்கப்பட்ட ஒதுக்கப்பட்ட வருவாய் (PAR) முறை அறிமுகம் (2வது SFC-ன் கீழ் 2000-களின் தொடக்கம்)\n→ 4. பிரத்யேக மூலதன மானிய நிதி (CGF) உருவாக்கம் (3/4வது SFC 2007-2010)\n→ 3. தானியங்கி e-கருவூல நேரடி பரிமாற்றம் (2015-2018).\nவரிசை: 2 → 1 → 4 → 3.",
+            "why_a_en": "Chronological progression: 1994 -> early 2000s -> 2007-10 -> 2015-18.",
+            "why_a_ta": "காலவரிசை முன்னேற்றம்: 1994 -> 2000-களின் தொடக்கம் -> 2007-10 -> 2015-18.",
+            "why_b_en": "Places PAR mechanism before First SFC.",
+            "why_b_ta": "முதல் SFC-க்கு முன் PAR வழிமுறையை வைக்கிறது.",
+            "why_c_en": "Swaps PAR and CGF creation.",
+            "why_c_ta": "PAR மற்றும் CGF உருவாக்கத்தை மாற்றுகிறது.",
+            "why_d_en": "Places CGF before First SFC.",
+            "why_d_ta": "முதல் SFC-க்கு முன் CGF-ஐ வைக்கிறது.",
+            "tip_en": "Evolution: 1st SFC (1994) -> PAR (2000s) -> CGF (2007) -> e-Treasury (2016).",
+            "tip_ta": "பரிணாமம்: 1வது SFC (1994) -> PAR (2000-கள்) -> CGF (2007) -> e-கருவூலம் (2016).",
+            "fact_en": "Automated e-Treasury transfers eliminate bureaucratic delays in crediting monthly devolution to village panchayats.",
+            "fact_ta": "தானியங்கி e-கருவூல பரிமாற்றங்கள் கிராம பஞ்சாயத்துகளுக்கு மாதாந்திர பகிர்வை வரவு வைப்பதில் நிர்வாகத் தாமதங்களை நீக்குகின்றன."
+        }
+    ]
+
+    questions = []
+    for i, item in enumerate(raw_data, start=1):
+        opts = item["options"]
+        correct_key = item["correct_key"]
+
+        q = make_sefc_q(
+            qid=f"SEFC_C_{i:03d}",
+            diff="medium" if i % 2 == 1 else "hard",
+            qtype="chronology",
+            subtopic=item["subtopic"],
+            en_stem=item["stem_en"],
+            ta_stem=item["stem_ta"],
+            en_a=opts[0][0],
+            ta_a=opts[0][1],
+            en_b=opts[1][0],
+            ta_b=opts[1][1],
+            en_c=opts[2][0],
+            ta_c=opts[2][1],
+            en_d=opts[3][0],
+            ta_d=opts[3][1],
+            correct_key=correct_key,
+            exp_en=item["exp_en"],
+            exp_ta=item["exp_ta"],
+            why_a_en=item["why_a_en"],
+            why_a_ta=item["why_a_ta"],
+            why_b_en=item["why_b_en"],
+            why_b_ta=item["why_b_ta"],
+            why_c_en=item["why_c_en"],
+            why_c_ta=item["why_c_ta"],
+            why_d_en=item["why_d_en"],
+            why_d_ta=item["why_d_ta"],
+            tip_en=item["tip_en"],
+            tip_ta=item["tip_ta"],
+            fact_en=item["fact_en"],
+            fact_ta=item["fact_ta"],
+            tags=["polity", "state_election_finance_commissions", "chronology", item["subtopic"].lower().replace(" ", "_")]
+        )
+        questions.append(q)
+    return questions
+
+
+def build_chronology_file():
+    qs = get_chronology_questions()
+    print(f"Generated {len(qs)} raw Chronology questions for State Election & Finance Commissions.")
+    balanced = randomize_and_balance_dataset(qs, seed=42)
+
+    out_dir = os.path.join("data", "questions", "polity")
+    os.makedirs(out_dir, exist_ok=True)
+    out_path = os.path.join(out_dir, "state_election_finance_commissions_chronology.json")
+
+    with open(out_path, "w", encoding="utf-8") as f:
+        json.dump(balanced, f, ensure_ascii=False, indent=2)
+    print(f"Saved balanced Chronology MCQs to {out_path}")
+
+    rep = ContentValidator.validate_file(out_path, expected_count=25, expected_prefix="SEFC_C_")
+    print(f"Content Validation: {'PASS' if rep.is_valid else 'FAIL'} | Total: {rep.total_audited}")
+    print(f"Keys: {rep.key_distribution}")
+    if not rep.is_valid:
+        for iss in rep.issues:
+            print("  Issue:", iss.severity, iss.field_name, iss.message)
+
+    chrono_rep = ChronologyValidator.validate_file(out_path)
+    print(f"Chronology Validation: {'PASS' if chrono_rep.is_valid else 'FAIL'} | Total: {chrono_rep.total_questions}")
+    if not chrono_rep.is_valid:
+        for iss in chrono_rep.issues:
+            print("  Chrono Issue:", iss)
+
+    return rep.is_valid and chrono_rep.is_valid
+
+
+if __name__ == "__main__":
+    success = build_chronology_file()
+    if not success:
+        exit(1)

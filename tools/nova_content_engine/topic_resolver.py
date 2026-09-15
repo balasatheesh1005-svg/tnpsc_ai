@@ -44,6 +44,17 @@ KNOWN_PREFIXES = {
     "upsc_state_psc": "PSC",
     "constitutional_schedules": "SCH",
     "schedules": "SCH",
+    "niti_aayog": "NA",
+    "tribunals": "TRI",
+    "official_language": "OL",
+    "anti_defection_law": "ADL",
+    "judicial_review_activism_pil": "JRAP",
+    "parliamentary_committees": "PC",
+    "parliamentary_privileges": "PP",
+    "political_parties_pressure_groups": "PPPG",
+    "special_provisions_states": "SPS",
+    "state_election_finance_commissions": "SEFC",
+    "cooperative_societies": "CS",
 }
 
 

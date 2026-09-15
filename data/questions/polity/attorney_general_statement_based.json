@@ -15,13 +15,13 @@
     "options": [
       {
         "id": "A",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "B",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "C",
@@ -35,19 +35,19 @@
       }
     ],
     "options_en": [
-      "2 and 3 only",
       "1 and 2 only",
+      "2 and 3 only",
       "1 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
-      "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 2 மட்டுமே",
+      "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Statements 1 and 2 are correct under Article 76(1). Statement 3 is incorrect because the Constitution prescribes no minimum age limit for appointment as a Supreme Court Judge or Attorney General.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரத்து 76(1)-ன் படி சரியானவை. உச்ச நீதிமன்ற நீதிபதிக்கோ தலைமை வழக்கறிஞருக்கோ அரசியலமைப்பு குறைந்தபட்ச வயது வரம்பை நிர்ணயிக்காததால் கூற்று 3 தவறானது."
@@ -56,12 +56,12 @@
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 2 சரத்து 76(1)-ன் படி சரியானவை. உச்ச நீதிமன்ற நீதிபதிக்கோ தலைமை வழக்கறிஞருக்கோ அரசியலமைப்பு குறைந்தபட்ச வயது வரம்பை நிர்ணயிக்காததால் கூற்று 3 தவறானது.",
     "why_not_others": {
       "A": {
-        "en": "Option B (2 and 3 only) contains incorrect statements or omits correct statements.",
-        "ta": "தெரிவு B (2 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
-      },
-      "B": {
         "en": "Option A is the correct combination based on constitutional provisions and statutory principles.",
         "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு A சரியான கூற்றுக் கலவையாகும்."
+      },
+      "B": {
+        "en": "Option B (2 and 3 only) contains incorrect statements or omits correct statements.",
+        "ta": "தெரிவு B (2 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "C": {
         "en": "Option C (1 and 3 only) contains incorrect statements or omits correct statements.",
@@ -222,8 +222,8 @@
       },
       {
         "id": "B",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "C",
@@ -232,24 +232,24 @@
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       }
     ],
     "options_en": [
       "2 and 3 only",
-      "1 and 2 only",
+      "1, 2 and 3",
       "1 and 3 only",
-      "1, 2 and 3"
+      "1 and 2 only"
     ],
     "options_ta": [
       "2 மற்றும் 3 மட்டுமே",
-      "1 மற்றும் 2 மட்டுமே",
+      "1, 2 மற்றும் 3",
       "1 மற்றும் 3 மட்டுமே",
-      "1, 2 மற்றும் 3"
+      "1 மற்றும் 2 மட்டுமே"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because Article 88 explicitly bars the Attorney General from voting in Parliament.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. தலைமை வழக்கறிஞருக்கு நாடாளுமன்றத்தில் வாக்களிக்கும் உரிமை கிடையாது என சரத்து 88 தெளிவாகத் தடை செய்வதால் கூற்று 3 தவறு."
@@ -262,16 +262,16 @@
         "ta": "தெரிவு B (2 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "B": {
-        "en": "Option A is the correct combination based on constitutional provisions and statutory principles.",
-        "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு A சரியான கூற்றுக் கலவையாகும்."
+        "en": "Option D (1, 2 and 3) contains incorrect statements or omits correct statements.",
+        "ta": "தெரிவு D (1, 2 மற்றும் 3) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "C": {
         "en": "Option C (1 and 3 only) contains incorrect statements or omits correct statements.",
         "ta": "தெரிவு C (1 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "D": {
-        "en": "Option D (1, 2 and 3) contains incorrect statements or omits correct statements.",
-        "ta": "தெரிவு D (1, 2 மற்றும் 3) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
+        "en": "Option A is the correct combination based on constitutional provisions and statutory principles.",
+        "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு A சரியான கூற்றுக் கலவையாகும்."
       }
     },
     "tnpsc_tip": {
@@ -323,13 +323,13 @@
       },
       {
         "id": "B",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "C",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "D",
@@ -339,18 +339,18 @@
     ],
     "options_en": [
       "2 and 3 only",
-      "1 and 2 only",
       "1 and 3 only",
+      "1 and 2 only",
       "1, 2 and 3"
     ],
     "options_ta": [
       "2 மற்றும் 3 மட்டுமே",
-      "1 மற்றும் 2 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
+      "1 மற்றும் 2 மட்டுமே",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Article 76(3) applies to all courts in India, and Sec 23 Advocates Act gives pre-audience. Statement 3 is incorrect as the Constitution gives no right of audience in foreign municipal courts.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. சரத்து 76(3) இந்திய எல்லைக்குள் உள்ள நீதிமன்றங்களுக்கு மட்டுமே பொருந்தும், மேலும் வழக்கறிஞர்கள் சட்டம் பிரிவு 23 முதன்மை வாதாடும் உரிமையை அளிக்கிறது. வெளிநாட்டு நீதிமன்றங்களுக்கு இது பொருந்தாது என்பதால் கூற்று 3 தவறு."
@@ -363,12 +363,12 @@
         "ta": "தெரிவு B (2 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "B": {
-        "en": "Option A is the correct combination based on constitutional provisions and statutory principles.",
-        "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு A சரியான கூற்றுக் கலவையாகும்."
-      },
-      "C": {
         "en": "Option C (1 and 3 only) contains incorrect statements or omits correct statements.",
         "ta": "தெரிவு C (1 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
+      },
+      "C": {
+        "en": "Option A is the correct combination based on constitutional provisions and statutory principles.",
+        "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு A சரியான கூற்றுக் கலவையாகும்."
       },
       "D": {
         "en": "Option D (1, 2 and 3) contains incorrect statements or omits correct statements.",
@@ -525,13 +525,13 @@
       },
       {
         "id": "B",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "C",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "D",
@@ -541,18 +541,18 @@
     ],
     "options_en": [
       "1 and 3 only",
-      "2 and 3 only",
       "1 and 2 only",
+      "2 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
       "1 மற்றும் 3 மட்டுமே",
-      "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 2 மட்டுமே",
+      "2 மற்றும் 3 மட்டுமே",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Statements 1 and 2 are correct restrictions. Statement 3 is incorrect because the AG is NOT a full-time government servant and is NOT debarred from private legal practice.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியான கட்டுப்பாடுகள். தலைமை வழக்கறிஞர் முழுநேர அரசு ஊழியர் அல்ல, எனவே தனியார் சட்டப் பயிற்சி மேற்கொள்வது அவருக்கு முழுமையாகத் தடை செய்யப்படவில்லை என்பதால் கூற்று 3 தவறு."
@@ -565,12 +565,12 @@
         "ta": "தெரிவு C (1 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "B": {
-        "en": "Option B (2 and 3 only) contains incorrect statements or omits correct statements.",
-        "ta": "தெரிவு B (2 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
-      },
-      "C": {
         "en": "Option A is the correct combination based on constitutional provisions and statutory principles.",
         "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு A சரியான கூற்றுக் கலவையாகும்."
+      },
+      "C": {
+        "en": "Option B (2 and 3 only) contains incorrect statements or omits correct statements.",
+        "ta": "தெரிவு B (2 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "D": {
         "en": "Option D (1, 2 and 3) contains incorrect statements or omits correct statements.",
@@ -621,13 +621,13 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "B",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "C",
@@ -641,19 +641,19 @@
       }
     ],
     "options_en": [
-      "1 and 2 only",
       "1 and 3 only",
+      "1 and 2 only",
       "2 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
+      "1 மற்றும் 2 மட்டுமே",
       "2 மற்றும் 3 மட்டுமே",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Statements 1 and 3 are correct. Statement 2 is incorrect because the Constitution mentions only the Attorney General (Article 76). Solicitor General and Additional Solicitors General are non-constitutional, executive posts.",
       "ta": "கூற்றுகள் 1 மற்றும் 3 சரியானவை. அரசியலமைப்பில் சரத்து 76-ல் தலைமை வழக்கறிஞர் மட்டுமே குறிப்பிடப்பட்டுள்ளார். சொலிசிட்டர் ஜெனரல் மற்றும் கூடுதல் சொலிசிட்டர் ஜெனரல்கள் அரசியலமைப்புப் பதவிகள் அல்ல என்பதால் கூற்று 2 தவறு."
@@ -662,12 +662,12 @@
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 3 சரியானவை. அரசியலமைப்பில் சரத்து 76-ல் தலைமை வழக்கறிஞர் மட்டுமே குறிப்பிடப்பட்டுள்ளார். சொலிசிட்டர் ஜெனரல் மற்றும் கூடுதல் சொலிசிட்டர் ஜெனரல்கள் அரசியலமைப்புப் பதவிகள் அல்ல என்பதால் கூற்று 2 தவறு.",
     "why_not_others": {
       "A": {
-        "en": "Option A (1 and 2 only) contains incorrect statements or omits correct statements.",
-        "ta": "தெரிவு A (1 மற்றும் 2 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
-      },
-      "B": {
         "en": "Option B is the correct combination based on constitutional provisions and statutory principles.",
         "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு B சரியான கூற்றுக் கலவையாகும்."
+      },
+      "B": {
+        "en": "Option A (1 and 2 only) contains incorrect statements or omits correct statements.",
+        "ta": "தெரிவு A (1 மற்றும் 2 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "C": {
         "en": "Option C (2 and 3 only) contains incorrect statements or omits correct statements.",
@@ -722,13 +722,13 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "B",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "C",
@@ -742,19 +742,19 @@
       }
     ],
     "options_en": [
-      "1 and 2 only",
       "1 and 3 only",
+      "1 and 2 only",
       "2 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
+      "1 மற்றும் 2 மட்டுமே",
       "2 மற்றும் 3 மட்டுமே",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Statements 1 and 3 are correct under Article 76(4). Statement 2 is incorrect because the AG's remuneration is not specified in the Second Schedule.",
       "ta": "கூற்றுகள் 1 மற்றும் 3 சரத்து 76(4)-ன் கீழ் சரியானவை. தலைமை வழக்கறிஞரின் ஊதியம் அரசியலமைப்பின் 2-வது அட்டவணையில் குறிப்பிடப்படவில்லை என்பதால் கூற்று 2 தவறு."
@@ -763,12 +763,12 @@
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 3 சரத்து 76(4)-ன் கீழ் சரியானவை. தலைமை வழக்கறிஞரின் ஊதியம் அரசியலமைப்பின் 2-வது அட்டவணையில் குறிப்பிடப்படவில்லை என்பதால் கூற்று 2 தவறு.",
     "why_not_others": {
       "A": {
-        "en": "Option A (1 and 2 only) contains incorrect statements or omits correct statements.",
-        "ta": "தெரிவு A (1 மற்றும் 2 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
-      },
-      "B": {
         "en": "Option B is the correct combination based on constitutional provisions and statutory principles.",
         "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு B சரியான கூற்றுக் கலவையாகும்."
+      },
+      "B": {
+        "en": "Option A (1 and 2 only) contains incorrect statements or omits correct statements.",
+        "ta": "தெரிவு A (1 மற்றும் 2 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "C": {
         "en": "Option C (2 and 3 only) contains incorrect statements or omits correct statements.",
@@ -934,29 +934,29 @@
       },
       {
         "id": "C",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       }
     ],
     "options_en": [
       "1 and 3 only",
       "2 and 3 only",
-      "1 and 2 only",
-      "1, 2 and 3"
+      "1, 2 and 3",
+      "1 and 2 only"
     ],
     "options_ta": [
       "1 மற்றும் 3 மட்டுமே",
       "2 மற்றும் 3 மட்டுமே",
-      "1 மற்றும் 2 மட்டுமே",
-      "1, 2 மற்றும் 3"
+      "1, 2 மற்றும் 3",
+      "1 மற்றும் 2 மட்டுமே"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Statements 1 and 2 are correct under Section 15. Statement 3 is incorrect because Section 15(3) permits the Solicitor General to act if the AG has recused or has a conflict.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 பிரிவு 15-ன் கீழ் சரியானவை. தலைமை வழக்கறிஞருக்கு முரண்பாடு இருந்தால் சொலிசிட்டர் ஜெனரல் ஒப்புதல் அளிக்க சட்டத்தில் இடமுண்டு என்பதால் கூற்று 3 தவறு."
@@ -973,12 +973,12 @@
         "ta": "தெரிவு B (2 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "C": {
-        "en": "Option A is the correct combination based on constitutional provisions and statutory principles.",
-        "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு A சரியான கூற்றுக் கலவையாகும்."
-      },
-      "D": {
         "en": "Option D (1, 2 and 3) contains incorrect statements or omits correct statements.",
         "ta": "தெரிவு D (1, 2 மற்றும் 3) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
+      },
+      "D": {
+        "en": "Option A is the correct combination based on constitutional provisions and statutory principles.",
+        "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு A சரியான கூற்றுக் கலவையாகும்."
       }
     },
     "tnpsc_tip": {
@@ -1025,8 +1025,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "B",
@@ -1035,8 +1035,8 @@
       },
       {
         "id": "C",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "D",
@@ -1045,19 +1045,19 @@
       }
     ],
     "options_en": [
-      "1 and 2 only",
-      "2 and 3 only",
       "1, 2 and 3",
+      "2 and 3 only",
+      "1 and 2 only",
       "1 and 3 only"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டுமே",
-      "2 மற்றும் 3 மட்டுமே",
       "1, 2 மற்றும் 3",
+      "2 மற்றும் 3 மட்டுமே",
+      "1 மற்றும் 2 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "All three statements are correct. The AG in India is non-political and not a cabinet member (a separate Law Minister exists). In the UK, the AG is a political minister and cabinet member.",
       "ta": "மூன்று கூற்றுகளும் சரியானவை. இந்தியாவில் AG அமைச்சரவை உறுப்பினர் அல்ல (தனியாக சட்ட அமைச்சர் உள்ளார்). ஆனால் பிரிட்டனில் AG அமைச்சரவையின் ஓர் அரசியல் அமைச்சராக உள்ளார்."
@@ -1066,16 +1066,16 @@
     "explanation_ta": "மூன்று கூற்றுகளும் சரியானவை. இந்தியாவில் AG அமைச்சரவை உறுப்பினர் அல்ல (தனியாக சட்ட அமைச்சர் உள்ளார்). ஆனால் பிரிட்டனில் AG அமைச்சரவையின் ஓர் அரசியல் அமைச்சராக உள்ளார்.",
     "why_not_others": {
       "A": {
-        "en": "Option A (1 and 2 only) contains incorrect statements or omits correct statements.",
-        "ta": "தெரிவு A (1 மற்றும் 2 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
+        "en": "Option D is the correct combination based on constitutional provisions and statutory principles.",
+        "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு D சரியான கூற்றுக் கலவையாகும்."
       },
       "B": {
         "en": "Option B (2 and 3 only) contains incorrect statements or omits correct statements.",
         "ta": "தெரிவு B (2 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "C": {
-        "en": "Option D is the correct combination based on constitutional provisions and statutory principles.",
-        "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு D சரியான கூற்றுக் கலவையாகும்."
+        "en": "Option A (1 and 2 only) contains incorrect statements or omits correct statements.",
+        "ta": "தெரிவு A (1 மற்றும் 2 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "D": {
         "en": "Option C (1 and 3 only) contains incorrect statements or omits correct statements.",
@@ -1126,8 +1126,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "B",
@@ -1136,8 +1136,8 @@
       },
       {
         "id": "C",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "D",
@@ -1146,19 +1146,19 @@
       }
     ],
     "options_en": [
-      "1 and 2 only",
-      "2 and 3 only",
       "1, 2 and 3",
+      "2 and 3 only",
+      "1 and 2 only",
       "1 and 3 only"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டுமே",
-      "2 மற்றும் 3 மட்டுமே",
       "1, 2 மற்றும் 3",
+      "2 மற்றும் 3 மட்டுமே",
+      "1 மற்றும் 2 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "All three statements are direct quotes from Article 76(2) defining the duties of the Attorney General of India.",
       "ta": "மூன்று கூற்றுகளும் சரத்து 76(2)-ல் தலைமை வழக்கறிஞரின் கடமைகளாக நேரடியாகக் குறிப்பிடப்பட்டுள்ளவை."
@@ -1167,16 +1167,16 @@
     "explanation_ta": "மூன்று கூற்றுகளும் சரத்து 76(2)-ல் தலைமை வழக்கறிஞரின் கடமைகளாக நேரடியாகக் குறிப்பிடப்பட்டுள்ளவை.",
     "why_not_others": {
       "A": {
-        "en": "Option A (1 and 2 only) contains incorrect statements or omits correct statements.",
-        "ta": "தெரிவு A (1 மற்றும் 2 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
+        "en": "Option D is the correct combination based on constitutional provisions and statutory principles.",
+        "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு D சரியான கூற்றுக் கலவையாகும்."
       },
       "B": {
         "en": "Option B (2 and 3 only) contains incorrect statements or omits correct statements.",
         "ta": "தெரிவு B (2 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "C": {
-        "en": "Option D is the correct combination based on constitutional provisions and statutory principles.",
-        "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு D சரியான கூற்றுக் கலவையாகும்."
+        "en": "Option A (1 and 2 only) contains incorrect statements or omits correct statements.",
+        "ta": "தெரிவு A (1 மற்றும் 2 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "D": {
         "en": "Option C (1 and 3 only) contains incorrect statements or omits correct statements.",
@@ -1333,13 +1333,13 @@
       },
       {
         "id": "B",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "C",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "D",
@@ -1349,18 +1349,18 @@
     ],
     "options_en": [
       "1 and 3 only",
-      "2 and 3 only",
       "1 and 2 only",
+      "2 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
       "1 மற்றும் 3 மட்டுமே",
-      "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 2 மட்டுமே",
+      "2 மற்றும் 3 மட்டுமே",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Statements 1 and 2 are correct under Article 76(4). Statement 3 is incorrect because Parliamentary impeachment/address is required for SC/HC Judges, CAG, and CEC, but NOT for the Attorney General.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரத்து 76(4)-ன் கீழ் சரியானவை. நாடாளுமன்ற தீர்மானம் உச்ச நீதிமன்ற நீதிபதிகள், CAG, CEC ஆகியோருக்கு மட்டுமே தேவை; தலைமை வழக்கறிஞருக்கு இது தேவையில்லை என்பதால் கூற்று 3 தவறு."
@@ -1373,12 +1373,12 @@
         "ta": "தெரிவு C (1 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "B": {
-        "en": "Option B (2 and 3 only) contains incorrect statements or omits correct statements.",
-        "ta": "தெரிவு B (2 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
-      },
-      "C": {
         "en": "Option A is the correct combination based on constitutional provisions and statutory principles.",
         "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு A சரியான கூற்றுக் கலவையாகும்."
+      },
+      "C": {
+        "en": "Option B (2 and 3 only) contains incorrect statements or omits correct statements.",
+        "ta": "தெரிவு B (2 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "D": {
         "en": "Option D (1, 2 and 3) contains incorrect statements or omits correct statements.",
@@ -1429,8 +1429,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "B",
@@ -1439,8 +1439,8 @@
       },
       {
         "id": "C",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "D",
@@ -1449,19 +1449,19 @@
       }
     ],
     "options_en": [
-      "1 and 2 only",
-      "2 and 3 only",
       "1, 2 and 3",
+      "2 and 3 only",
+      "1 and 2 only",
       "1 and 3 only"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டுமே",
-      "2 மற்றும் 3 மட்டுமே",
       "1, 2 மற்றும் 3",
+      "2 மற்றும் 3 மட்டுமே",
+      "1 மற்றும் 2 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "All three statements are correct. M.C. Setalvad served from 1950 to 1963 (longest tenure), chaired the First Law Commission (1955-58), and argued the Berubari Union reference under Art 143.",
       "ta": "மூன்று கூற்றுகளும் சரியானவை. எம்.சி. செடல்வாட் 1950-1963 வரை நீண்ட காலம் பணியாற்றினார்; முதலாவது சட்ட ஆணையத்தின் தலைவராக இருந்தார்; பெருபாரி யூனியன் வழக்கில் அரசுக்காக வாதாடினார்."
@@ -1470,16 +1470,16 @@
     "explanation_ta": "மூன்று கூற்றுகளும் சரியானவை. எம்.சி. செடல்வாட் 1950-1963 வரை நீண்ட காலம் பணியாற்றினார்; முதலாவது சட்ட ஆணையத்தின் தலைவராக இருந்தார்; பெருபாரி யூனியன் வழக்கில் அரசுக்காக வாதாடினார்.",
     "why_not_others": {
       "A": {
-        "en": "Option A (1 and 2 only) contains incorrect statements or omits correct statements.",
-        "ta": "தெரிவு A (1 மற்றும் 2 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
+        "en": "Option D is the correct combination based on constitutional provisions and statutory principles.",
+        "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு D சரியான கூற்றுக் கலவையாகும்."
       },
       "B": {
         "en": "Option B (2 and 3 only) contains incorrect statements or omits correct statements.",
         "ta": "தெரிவு B (2 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "C": {
-        "en": "Option D is the correct combination based on constitutional provisions and statutory principles.",
-        "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு D சரியான கூற்றுக் கலவையாகும்."
+        "en": "Option A (1 and 2 only) contains incorrect statements or omits correct statements.",
+        "ta": "தெரிவு A (1 மற்றும் 2 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "D": {
         "en": "Option C (1 and 3 only) contains incorrect statements or omits correct statements.",
@@ -1535,13 +1535,13 @@
       },
       {
         "id": "B",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1 only",
+        "ta": "1 மட்டுமே"
       },
       {
         "id": "C",
-        "en": "1 only",
-        "ta": "1 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "D",
@@ -1551,18 +1551,18 @@
     ],
     "options_en": [
       "1 and 3 only",
-      "1 and 2 only",
       "1 only",
+      "1 and 2 only",
       "1, 2 and 3"
     ],
     "options_ta": [
       "1 மற்றும் 3 மட்டுமே",
-      "1 மற்றும் 2 மட்டுமே",
       "1 மட்டுமே",
+      "1 மற்றும் 2 மட்டுமே",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Statement 1 is correct. Statement 2 is incorrect because under Article 143(1), SC 'may' give opinion (discretionary). Statement 3 is incorrect because advisory opinions are not binding on the Government.",
       "ta": "கூற்று 1 மட்டுமே சரியானது. சரத்து 143(1)-ன் கீழ் கருத்து வழங்குவது உச்ச நீதிமன்றத்தின் விருப்ப உரிமை (கட்டாயமில்லை) என்பதால் கூற்று 2 தவறு. ஆலோசனைக் கருத்து அரசுக்குக் கட்டுப்பட்டதல்ல என்பதால் கூற்று 3 தவறு."
@@ -1575,12 +1575,12 @@
         "ta": "தெரிவு C (1 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "B": {
-        "en": "Option B (1 and 2 only) contains incorrect statements or omits correct statements.",
-        "ta": "தெரிவு B (1 மற்றும் 2 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
-      },
-      "C": {
         "en": "Option A is the correct combination based on constitutional provisions and statutory principles.",
         "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு A சரியான கூற்றுக் கலவையாகும்."
+      },
+      "C": {
+        "en": "Option B (1 and 2 only) contains incorrect statements or omits correct statements.",
+        "ta": "தெரிவு B (1 மற்றும் 2 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "D": {
         "en": "Option D (1, 2 and 3) contains incorrect statements or omits correct statements.",
@@ -1742,29 +1742,29 @@
       },
       {
         "id": "C",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       }
     ],
     "options_en": [
       "1 and 3 only",
       "2 and 3 only",
-      "1 and 2 only",
-      "1, 2 and 3"
+      "1, 2 and 3",
+      "1 and 2 only"
     ],
     "options_ta": [
       "1 மற்றும் 3 மட்டுமே",
       "2 மற்றும் 3 மட்டுமே",
-      "1 மற்றும் 2 மட்டுமே",
-      "1, 2 மற்றும் 3"
+      "1, 2 மற்றும் 3",
+      "1 மற்றும் 2 மட்டுமே"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because R. Venkataramani was a Senior Advocate of the Supreme Court, not a former Chief Justice of India.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. ஆர். வெங்கடரமணி உச்ச நீதிமன்றத்தின் மூத்த வழக்கறிஞரே தவிர இந்திய தலைமை நீதிபதியாகப் பணியாற்றவில்லை என்பதால் கூற்று 3 தவறு."
@@ -1781,12 +1781,12 @@
         "ta": "தெரிவு B (2 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "C": {
-        "en": "Option A is the correct combination based on constitutional provisions and statutory principles.",
-        "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு A சரியான கூற்றுக் கலவையாகும்."
-      },
-      "D": {
         "en": "Option D (1, 2 and 3) contains incorrect statements or omits correct statements.",
         "ta": "தெரிவு D (1, 2 மற்றும் 3) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
+      },
+      "D": {
+        "en": "Option A is the correct combination based on constitutional provisions and statutory principles.",
+        "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு A சரியான கூற்றுக் கலவையாகும்."
       }
     },
     "tnpsc_tip": {
@@ -1833,13 +1833,13 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "B",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "C",
@@ -1853,19 +1853,19 @@
       }
     ],
     "options_en": [
-      "1 and 2 only",
       "2 and 3 only",
+      "1 and 2 only",
       "1 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டுமே",
       "2 மற்றும் 3 மட்டுமே",
+      "1 மற்றும் 2 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Statements 1 and 2 are correct. AG Niren De argued for untrammeled amending power. Statement 3 is incorrect because the 13-judge bench rejected unlimited power and established the Basic Structure Doctrine.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. வரம்பற்ற திருத்த அதிகாரம் உண்டு என AG நீரேன் டே வாதிட்டார். ஆனால் 13 நீதிபதிகள் அமர்வு அவரது வாதத்தை நிராகரித்து அடிப்படைக் கட்டமைப்பு கோட்பாட்டை உருவாக்கியதால் கூற்று 3 தவறு."
@@ -1874,12 +1874,12 @@
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. வரம்பற்ற திருத்த அதிகாரம் உண்டு என AG நீரேன் டே வாதிட்டார். ஆனால் 13 நீதிபதிகள் அமர்வு அவரது வாதத்தை நிராகரித்து அடிப்படைக் கட்டமைப்பு கோட்பாட்டை உருவாக்கியதால் கூற்று 3 தவறு.",
     "why_not_others": {
       "A": {
-        "en": "Option A is the correct combination based on constitutional provisions and statutory principles.",
-        "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு A சரியான கூற்றுக் கலவையாகும்."
-      },
-      "B": {
         "en": "Option B (2 and 3 only) contains incorrect statements or omits correct statements.",
         "ta": "தெரிவு B (2 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
+      },
+      "B": {
+        "en": "Option A is the correct combination based on constitutional provisions and statutory principles.",
+        "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு A சரியான கூற்றுக் கலவையாகும்."
       },
       "C": {
         "en": "Option C (1 and 3 only) contains incorrect statements or omits correct statements.",
@@ -1934,13 +1934,13 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "B",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "C",
@@ -1954,19 +1954,19 @@
       }
     ],
     "options_en": [
-      "1 and 2 only",
       "2 and 3 only",
+      "1 and 2 only",
       "1 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டுமே",
       "2 மற்றும் 3 மட்டுமே",
+      "1 மற்றும் 2 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Statements 1 and 2 are correct constitutional conventions. Statement 3 is incorrect because the incoming government may choose to request the incumbent AG to continue in office.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியான அரசியல் மரபுகள். புதிய அரசு விரும்பினால் அதே தலைமை வழக்கறிஞரையே தொடர்ந்து நீடிக்கக் கோரலாம் என்பதால் கூற்று 3 தவறு."
@@ -1975,12 +1975,12 @@
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 2 சரியான அரசியல் மரபுகள். புதிய அரசு விரும்பினால் அதே தலைமை வழக்கறிஞரையே தொடர்ந்து நீடிக்கக் கோரலாம் என்பதால் கூற்று 3 தவறு.",
     "why_not_others": {
       "A": {
-        "en": "Option A is the correct combination based on constitutional provisions and statutory principles.",
-        "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு A சரியான கூற்றுக் கலவையாகும்."
-      },
-      "B": {
         "en": "Option B (2 and 3 only) contains incorrect statements or omits correct statements.",
         "ta": "தெரிவு B (2 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
+      },
+      "B": {
+        "en": "Option A is the correct combination based on constitutional provisions and statutory principles.",
+        "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு A சரியான கூற்றுக் கலவையாகும்."
       },
       "C": {
         "en": "Option C (1 and 3 only) contains incorrect statements or omits correct statements.",
@@ -2035,8 +2035,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "B",
@@ -2045,8 +2045,8 @@
       },
       {
         "id": "C",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "D",
@@ -2055,19 +2055,19 @@
       }
     ],
     "options_en": [
-      "1 and 2 only",
-      "2 and 3 only",
       "1 and 3 only",
+      "2 and 3 only",
+      "1 and 2 only",
       "1, 2 and 3"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டுமே",
-      "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
+      "2 மற்றும் 3 மட்டுமே",
+      "1 மற்றும் 2 மட்டுமே",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Statements 1 and 2 are correct restrictions under the 1987 Rules. Statement 3 is incorrect because under Article 76(3) the AG has right of audience in all courts across India without needing separate presidential sanction for each court.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 விதிகள் 1987-ன் கீழ் சரியான கட்டுப்பாடுகள். சரத்து 76(3)-ன் கீழ் இந்தியா முழுவதும் உள்ள அனைத்து நீதிமன்றங்களிலும் ஆஜராக AG-க்கு உரிமை உண்டு; ஒவ்வொரு முறையும் குடியரசுத் தலைவர் அனுமதி தேவையில்லை என்பதால் கூற்று 3 தவறு."
@@ -2076,16 +2076,16 @@
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 2 விதிகள் 1987-ன் கீழ் சரியான கட்டுப்பாடுகள். சரத்து 76(3)-ன் கீழ் இந்தியா முழுவதும் உள்ள அனைத்து நீதிமன்றங்களிலும் ஆஜராக AG-க்கு உரிமை உண்டு; ஒவ்வொரு முறையும் குடியரசுத் தலைவர் அனுமதி தேவையில்லை என்பதால் கூற்று 3 தவறு.",
     "why_not_others": {
       "A": {
-        "en": "Option A is the correct combination based on constitutional provisions and statutory principles.",
-        "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு A சரியான கூற்றுக் கலவையாகும்."
+        "en": "Option C (1 and 3 only) contains incorrect statements or omits correct statements.",
+        "ta": "தெரிவு C (1 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "B": {
         "en": "Option B (2 and 3 only) contains incorrect statements or omits correct statements.",
         "ta": "தெரிவு B (2 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "C": {
-        "en": "Option C (1 and 3 only) contains incorrect statements or omits correct statements.",
-        "ta": "தெரிவு C (1 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
+        "en": "Option A is the correct combination based on constitutional provisions and statutory principles.",
+        "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு A சரியான கூற்றுக் கலவையாகும்."
       },
       "D": {
         "en": "Option D (1, 2 and 3) contains incorrect statements or omits correct statements.",
@@ -2136,8 +2136,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "B",
@@ -2151,24 +2151,24 @@
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       }
     ],
     "options_en": [
-      "1 and 2 only",
+      "1, 2 and 3",
       "2 and 3 only",
       "1 and 3 only",
-      "1, 2 and 3"
+      "1 and 2 only"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டுமே",
+      "1, 2 மற்றும் 3",
       "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
-      "1, 2 மற்றும் 3"
+      "1 மற்றும் 2 மட்டுமே"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because the AG cannot represent a party or State against his primary client, the Union of India.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. தனது முதன்மை வாடிக்கையாளரான இந்திய ஒன்றிய அரசுக்கு எதிராக எந்தவொரு மாநிலத்திற்காகவும் தலைமை வழக்கறிஞர் ஆஜராக முடியாது என்பதால் கூற்று 3 தவறு."
@@ -2177,8 +2177,8 @@
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. தனது முதன்மை வாடிக்கையாளரான இந்திய ஒன்றிய அரசுக்கு எதிராக எந்தவொரு மாநிலத்திற்காகவும் தலைமை வழக்கறிஞர் ஆஜராக முடியாது என்பதால் கூற்று 3 தவறு.",
     "why_not_others": {
       "A": {
-        "en": "Option A is the correct combination based on constitutional provisions and statutory principles.",
-        "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு A சரியான கூற்றுக் கலவையாகும்."
+        "en": "Option D (1, 2 and 3) contains incorrect statements or omits correct statements.",
+        "ta": "தெரிவு D (1, 2 மற்றும் 3) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "B": {
         "en": "Option B (2 and 3 only) contains incorrect statements or omits correct statements.",
@@ -2189,8 +2189,8 @@
         "ta": "தெரிவு C (1 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "D": {
-        "en": "Option D (1, 2 and 3) contains incorrect statements or omits correct statements.",
-        "ta": "தெரிவு D (1, 2 மற்றும் 3) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
+        "en": "Option A is the correct combination based on constitutional provisions and statutory principles.",
+        "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு A சரியான கூற்றுக் கலவையாகும்."
       }
     },
     "tnpsc_tip": {
@@ -2237,8 +2237,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "B",
@@ -2252,24 +2252,24 @@
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       }
     ],
     "options_en": [
-      "1 and 2 only",
+      "1, 2 and 3",
       "2 and 3 only",
       "1 and 3 only",
-      "1, 2 and 3"
+      "1 and 2 only"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டுமே",
+      "1, 2 மற்றும் 3",
       "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
-      "1, 2 மற்றும் 3"
+      "1 மற்றும் 2 மட்டுமே"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Statements 1 and 2 are correct under Government Allocation of Business Rules. Statement 3 is incorrect because the AG's advice is advisory and not binding on the Cabinet.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியான நிர்வாக நடைமுறைகள். தலைமை வழக்கறிஞரின் ஆலோசனை ஆலோசனை மட்டுமே தவிர அமைச்சரவையை சட்டப்பூர்வமாகக் கட்டுப்படுத்தாது என்பதால் கூற்று 3 தவறு."
@@ -2278,8 +2278,8 @@
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 2 சரியான நிர்வாக நடைமுறைகள். தலைமை வழக்கறிஞரின் ஆலோசனை ஆலோசனை மட்டுமே தவிர அமைச்சரவையை சட்டப்பூர்வமாகக் கட்டுப்படுத்தாது என்பதால் கூற்று 3 தவறு.",
     "why_not_others": {
       "A": {
-        "en": "Option A is the correct combination based on constitutional provisions and statutory principles.",
-        "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு A சரியான கூற்றுக் கலவையாகும்."
+        "en": "Option D (1, 2 and 3) contains incorrect statements or omits correct statements.",
+        "ta": "தெரிவு D (1, 2 மற்றும் 3) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "B": {
         "en": "Option B (2 and 3 only) contains incorrect statements or omits correct statements.",
@@ -2290,8 +2290,8 @@
         "ta": "தெரிவு C (1 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "D": {
-        "en": "Option D (1, 2 and 3) contains incorrect statements or omits correct statements.",
-        "ta": "தெரிவு D (1, 2 மற்றும் 3) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
+        "en": "Option A is the correct combination based on constitutional provisions and statutory principles.",
+        "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு A சரியான கூற்றுக் கலவையாகும்."
       }
     },
     "tnpsc_tip": {
@@ -2545,13 +2545,13 @@
       },
       {
         "id": "B",
-        "en": "3 only",
-        "ta": "3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "C",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "3 only",
+        "ta": "3 மட்டுமே"
       },
       {
         "id": "D",
@@ -2561,18 +2561,18 @@
     ],
     "options_en": [
       "1 only",
-      "3 only",
       "1 and 2 only",
+      "3 only",
       "2 and 3 only"
     ],
     "options_ta": [
       "1 மட்டுமே",
-      "3 மட்டுமே",
       "1 மற்றும் 2 மட்டுமே",
+      "3 மட்டுமே",
       "2 மற்றும் 3 மட்டுமே"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Statement 3 is correct. The Constitution does NOT prescribe any oath for the Attorney General in the Third Schedule or anywhere else. Statements 1 and 2 are incorrect.",
       "ta": "கூற்று 3 மட்டுமே சரியானது. அரசியலமைப்பின் மூன்றாவது அட்டவணையிலோ அல்லது வேறு எங்குமோ தலைமை வழக்கறிஞருக்கான பதவிப் பிரமாணம் எதுவும் குறிப்பிடப்படவில்லை. எனவே 1 மற்றும் 2 தவறானவை."
@@ -2585,12 +2585,12 @@
         "ta": "தெரிவு A (1 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "B": {
-        "en": "Option B is the correct combination based on constitutional provisions and statutory principles.",
-        "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு B சரியான கூற்றுக் கலவையாகும்."
-      },
-      "C": {
         "en": "Option C (1 and 2 only) contains incorrect statements or omits correct statements.",
         "ta": "தெரிவு C (1 மற்றும் 2 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
+      },
+      "C": {
+        "en": "Option B is the correct combination based on constitutional provisions and statutory principles.",
+        "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு B சரியான கூற்றுக் கலவையாகும்."
       },
       "D": {
         "en": "Option D (2 and 3 only) contains incorrect statements or omits correct statements.",
@@ -2641,8 +2641,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "B",
@@ -2651,8 +2651,8 @@
       },
       {
         "id": "C",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "D",
@@ -2661,19 +2661,19 @@
       }
     ],
     "options_en": [
-      "1 and 2 only",
-      "2 and 3 only",
       "1, 2 and 3",
+      "2 and 3 only",
+      "1 and 2 only",
       "1 and 3 only"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டுமே",
-      "2 மற்றும் 3 மட்டுமே",
       "1, 2 மற்றும் 3",
+      "2 மற்றும் 3 மட்டுமே",
+      "1 மற்றும் 2 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "All three statements are correct under Supreme Court Rules and Section 23 of the Advocates Act, 1961.",
       "ta": "மூன்று கூற்றுகளும் உச்ச நீதிமன்ற விதிகள் மற்றும் வழக்கறிஞர்கள் சட்டம் பிரிவு 23-ன் படி சரியானவை."
@@ -2682,16 +2682,16 @@
     "explanation_ta": "மூன்று கூற்றுகளும் உச்ச நீதிமன்ற விதிகள் மற்றும் வழக்கறிஞர்கள் சட்டம் பிரிவு 23-ன் படி சரியானவை.",
     "why_not_others": {
       "A": {
-        "en": "Option A (1 and 2 only) contains incorrect statements or omits correct statements.",
-        "ta": "தெரிவு A (1 மற்றும் 2 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
+        "en": "Option D is the correct combination based on constitutional provisions and statutory principles.",
+        "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு D சரியான கூற்றுக் கலவையாகும்."
       },
       "B": {
         "en": "Option B (2 and 3 only) contains incorrect statements or omits correct statements.",
         "ta": "தெரிவு B (2 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "C": {
-        "en": "Option D is the correct combination based on constitutional provisions and statutory principles.",
-        "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு D சரியான கூற்றுக் கலவையாகும்."
+        "en": "Option A (1 and 2 only) contains incorrect statements or omits correct statements.",
+        "ta": "தெரிவு A (1 மற்றும் 2 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "D": {
         "en": "Option C (1 and 3 only) contains incorrect statements or omits correct statements.",
@@ -2742,8 +2742,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "B",
@@ -2757,24 +2757,24 @@
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       }
     ],
     "options_en": [
-      "1 and 2 only",
+      "1, 2 and 3",
       "2 and 3 only",
       "1 and 3 only",
-      "1, 2 and 3"
+      "1 and 2 only"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டுமே",
+      "1, 2 மற்றும் 3",
       "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
-      "1, 2 மற்றும் 3"
+      "1 மற்றும் 2 மட்டுமே"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "All three statements are correct. K. Parasaran served as Advocate General of Tamil Nadu (1976-77), AG of India (1983-89), and represented India in the Bhopal Gas disaster litigation.",
       "ta": "மூன்று கூற்றுகளும் சரியானவை. கே. பராசரன் தமிழக அட்வகேட் ஜெனரலாகவும் (1976-77), இந்திய தலைமை வழக்கறிஞராகவும் (1983-89) பணியாற்றினார்; போபால் விஷவாயு வழக்கிலும் ஆஜரானார்."
@@ -2783,8 +2783,8 @@
     "explanation_ta": "மூன்று கூற்றுகளும் சரியானவை. கே. பராசரன் தமிழக அட்வகேட் ஜெனரலாகவும் (1976-77), இந்திய தலைமை வழக்கறிஞராகவும் (1983-89) பணியாற்றினார்; போபால் விஷவாயு வழக்கிலும் ஆஜரானார்.",
     "why_not_others": {
       "A": {
-        "en": "Option A (1 and 2 only) contains incorrect statements or omits correct statements.",
-        "ta": "தெரிவு A (1 மற்றும் 2 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
+        "en": "Option D is the correct combination based on constitutional provisions and statutory principles.",
+        "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு D சரியான கூற்றுக் கலவையாகும்."
       },
       "B": {
         "en": "Option B (2 and 3 only) contains incorrect statements or omits correct statements.",
@@ -2795,8 +2795,8 @@
         "ta": "தெரிவு C (1 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "D": {
-        "en": "Option D is the correct combination based on constitutional provisions and statutory principles.",
-        "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு D சரியான கூற்றுக் கலவையாகும்."
+        "en": "Option A (1 and 2 only) contains incorrect statements or omits correct statements.",
+        "ta": "தெரிவு A (1 மற்றும் 2 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       }
     },
     "tnpsc_tip": {
@@ -2944,8 +2944,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "B",
@@ -2954,8 +2954,8 @@
       },
       {
         "id": "C",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "D",
@@ -2964,19 +2964,19 @@
       }
     ],
     "options_en": [
-      "1 and 2 only",
-      "2 and 3 only",
       "1 and 3 only",
+      "2 and 3 only",
+      "1 and 2 only",
       "1, 2 and 3"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டுமே",
-      "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
+      "2 மற்றும் 3 மட்டுமே",
+      "1 மற்றும் 2 மட்டுமே",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because the Supreme Court rejected the defense and struck down the 99th Amendment and NJAC Act by a 4:1 majority.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. உச்ச நீதிமன்றம் 4:1 பெரும்பான்மையில் NJAC சட்டத்தை ரத்து செய்து கொலீஜியம் முறையை மீண்டும் உறுதி செய்ததால் கூற்று 3 தவறு."
@@ -2985,16 +2985,16 @@
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. உச்ச நீதிமன்றம் 4:1 பெரும்பான்மையில் NJAC சட்டத்தை ரத்து செய்து கொலீஜியம் முறையை மீண்டும் உறுதி செய்ததால் கூற்று 3 தவறு.",
     "why_not_others": {
       "A": {
-        "en": "Option A is the correct combination based on constitutional provisions and statutory principles.",
-        "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு A சரியான கூற்றுக் கலவையாகும்."
+        "en": "Option C (1 and 3 only) contains incorrect statements or omits correct statements.",
+        "ta": "தெரிவு C (1 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "B": {
         "en": "Option B (2 and 3 only) contains incorrect statements or omits correct statements.",
         "ta": "தெரிவு B (2 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "C": {
-        "en": "Option C (1 and 3 only) contains incorrect statements or omits correct statements.",
-        "ta": "தெரிவு C (1 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
+        "en": "Option A is the correct combination based on constitutional provisions and statutory principles.",
+        "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு A சரியான கூற்றுக் கலவையாகும்."
       },
       "D": {
         "en": "Option D (1, 2 and 3) contains incorrect statements or omits correct statements.",
@@ -3050,8 +3050,8 @@
       },
       {
         "id": "B",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "C",
@@ -3060,24 +3060,24 @@
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டுமே"
       }
     ],
     "options_en": [
       "1 and 2 only",
-      "2 and 3 only",
+      "1, 2 and 3",
       "1 and 3 only",
-      "1, 2 and 3"
+      "2 and 3 only"
     ],
     "options_ta": [
       "1 மற்றும் 2 மட்டுமே",
-      "2 மற்றும் 3 மட்டுமே",
+      "1, 2 மற்றும் 3",
       "1 மற்றும் 3 மட்டுமே",
-      "1, 2 மற்றும் 3"
+      "2 மற்றும் 3 மட்டுமே"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "All three statements are correct. The 1st Law Commission under AG M.C. Setalvad submitted landmark reports including the 14th Report recommending prosecutorial independence.",
       "ta": "மூன்று கூற்றுகளும் சரியானவை. தலைமை வழக்கறிஞர் எம்.சி. செடல்வாட் தலைமையிலான முதலாவது சட்ட ஆணையம் நீதித்துறை மற்றும் வழக்கறிஞர் துறை சீர்திருத்தங்களை விரிவாகப் பரிந்துரைத்தது."
@@ -3090,16 +3090,16 @@
         "ta": "தெரிவு A (1 மற்றும் 2 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "B": {
-        "en": "Option B (2 and 3 only) contains incorrect statements or omits correct statements.",
-        "ta": "தெரிவு B (2 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
+        "en": "Option D is the correct combination based on constitutional provisions and statutory principles.",
+        "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு D சரியான கூற்றுக் கலவையாகும்."
       },
       "C": {
         "en": "Option C (1 and 3 only) contains incorrect statements or omits correct statements.",
         "ta": "தெரிவு C (1 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "D": {
-        "en": "Option D is the correct combination based on constitutional provisions and statutory principles.",
-        "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு D சரியான கூற்றுக் கலவையாகும்."
+        "en": "Option B (2 and 3 only) contains incorrect statements or omits correct statements.",
+        "ta": "தெரிவு B (2 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       }
     },
     "tnpsc_tip": {
@@ -3257,29 +3257,29 @@
       },
       {
         "id": "C",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டுமே"
       }
     ],
     "options_en": [
       "1 and 2 only",
       "2 and 3 only",
-      "1 and 3 only",
-      "1, 2 and 3"
+      "1, 2 and 3",
+      "1 and 3 only"
     ],
     "options_ta": [
       "1 மற்றும் 2 மட்டுமே",
       "2 மற்றும் 3 மட்டுமே",
-      "1 மற்றும் 3 மட்டுமே",
-      "1, 2 மற்றும் 3"
+      "1, 2 மற்றும் 3",
+      "1 மற்றும் 3 மட்டுமே"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "All three statements are correct. AG M.C. Setalvad argued the Right of Passage over Indian Territory case (1960) before the ICJ after formal executive authorization.",
       "ta": "மூன்று கூற்றுகளும் சரியானவை. அரசின் முறையான அங்கீகாரத்துடன் 1960-ல் சர்வதேச நீதிமன்றத்தில் பாதை உரிமை வழக்கில் எம்.சி. செடல்வாட் ஆஜரானார்."
@@ -3296,12 +3296,12 @@
         "ta": "தெரிவு B (2 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "C": {
-        "en": "Option C (1 and 3 only) contains incorrect statements or omits correct statements.",
-        "ta": "தெரிவு C (1 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
-      },
-      "D": {
         "en": "Option D is the correct combination based on constitutional provisions and statutory principles.",
         "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு D சரியான கூற்றுக் கலவையாகும்."
+      },
+      "D": {
+        "en": "Option C (1 and 3 only) contains incorrect statements or omits correct statements.",
+        "ta": "தெரிவு C (1 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       }
     },
     "tnpsc_tip": {
@@ -3358,29 +3358,29 @@
       },
       {
         "id": "C",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டுமே"
       }
     ],
     "options_en": [
       "1 and 2 only",
       "2 and 3 only",
-      "1 and 3 only",
-      "1, 2 and 3"
+      "1, 2 and 3",
+      "1 and 3 only"
     ],
     "options_ta": [
       "1 மற்றும் 2 மட்டுமே",
       "2 மற்றும் 3 மட்டுமே",
-      "1 மற்றும் 3 மட்டுமே",
-      "1, 2 மற்றும் 3"
+      "1, 2 மற்றும் 3",
+      "1 மற்றும் 3 மட்டுமே"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "All three statements are correct. Unlike England, the Indian AG has no common-law prerogative of nolle prosequi; Sec 321 CrPC empowers the Public Prosecutor to withdraw with court consent.",
       "ta": "மூன்று கூற்றுகளும் சரியானவை. இங்கிலாந்தைப் போலன்றி இந்திய AG-க்கு வழக்கை ரத்து செய்யும் தன்னிச்சை அதிகாரம் இல்லை; பிரிவு 321-ன் படி நீதிமன்ற அனுமதியுடன் அரசு வழக்கறிஞரே வழக்கை திரும்பப் பெற முடியும்."
@@ -3397,12 +3397,12 @@
         "ta": "தெரிவு B (2 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "C": {
-        "en": "Option C (1 and 3 only) contains incorrect statements or omits correct statements.",
-        "ta": "தெரிவு C (1 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
-      },
-      "D": {
         "en": "Option D is the correct combination based on constitutional provisions and statutory principles.",
         "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு D சரியான கூற்றுக் கலவையாகும்."
+      },
+      "D": {
+        "en": "Option C (1 and 3 only) contains incorrect statements or omits correct statements.",
+        "ta": "தெரிவு C (1 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       }
     },
     "tnpsc_tip": {
@@ -3661,29 +3661,29 @@
       },
       {
         "id": "C",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டுமே"
       }
     ],
     "options_en": [
       "1 and 2 only",
       "2 and 3 only",
-      "1 and 3 only",
-      "1, 2 and 3"
+      "1, 2 and 3",
+      "1 and 3 only"
     ],
     "options_ta": [
       "1 மற்றும் 2 மட்டுமே",
       "2 மற்றும் 3 மட்டுமே",
-      "1 மற்றும் 3 மட்டுமே",
-      "1, 2 மற்றும் 3"
+      "1, 2 மற்றும் 3",
+      "1 மற்றும் 3 மட்டுமே"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "All three statements are correct. In ADR v. Union of India (Feb 2024), AG Venkataramani defended the scheme, but a 5-judge Constitution Bench struck it down unanimously under Art 19(1)(a).",
       "ta": "மூன்று கூற்றுகளும் சரியானவை. பிப்ரவரி 2024-ல் தேர்தல் பத்திரங்கள் வழக்கில் AG வாதிட்டார்; ஆனால் உச்ச நீதிமன்றம் சரத்து 19(1)(a)-ன் கீழ் இத்திட்டத்தை ஒருமனதாக ரத்து செய்தது."
@@ -3700,12 +3700,12 @@
         "ta": "தெரிவு B (2 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "C": {
-        "en": "Option C (1 and 3 only) contains incorrect statements or omits correct statements.",
-        "ta": "தெரிவு C (1 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
-      },
-      "D": {
         "en": "Option D is the correct combination based on constitutional provisions and statutory principles.",
         "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு D சரியான கூற்றுக் கலவையாகும்."
+      },
+      "D": {
+        "en": "Option C (1 and 3 only) contains incorrect statements or omits correct statements.",
+        "ta": "தெரிவு C (1 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       }
     },
     "tnpsc_tip": {
@@ -3853,13 +3853,13 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "B",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "C",
@@ -3873,19 +3873,19 @@
       }
     ],
     "options_en": [
-      "1 and 2 only",
       "1 and 3 only",
+      "1 and 2 only",
       "2 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
+      "1 மற்றும் 2 மட்டுமே",
       "2 மற்றும் 3 மட்டுமே",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Statements 1 and 3 are correct. Statement 2 is incorrect because only Members of Parliament (Ministers or private MPs) can introduce bills; the AG is not an MP and cannot introduce bills.",
       "ta": "கூற்றுகள் 1 மற்றும் 3 சரியானவை. நாடாளுமன்ற உறுப்பினர்கள் மட்டுமே மசோதாக்களை அறிமுகப்படுத்த முடியும்; AG உறுப்பினர் அல்லாததால் அவரால் மசோதாவை அறிமுகப்படுத்த முடியாது என்பதால் கூற்று 2 தவறு."
@@ -3894,12 +3894,12 @@
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 3 சரியானவை. நாடாளுமன்ற உறுப்பினர்கள் மட்டுமே மசோதாக்களை அறிமுகப்படுத்த முடியும்; AG உறுப்பினர் அல்லாததால் அவரால் மசோதாவை அறிமுகப்படுத்த முடியாது என்பதால் கூற்று 2 தவறு.",
     "why_not_others": {
       "A": {
-        "en": "Option A (1 and 2 only) contains incorrect statements or omits correct statements.",
-        "ta": "தெரிவு A (1 மற்றும் 2 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
-      },
-      "B": {
         "en": "Option B is the correct combination based on constitutional provisions and statutory principles.",
         "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு B சரியான கூற்றுக் கலவையாகும்."
+      },
+      "B": {
+        "en": "Option A (1 and 2 only) contains incorrect statements or omits correct statements.",
+        "ta": "தெரிவு A (1 மற்றும் 2 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "C": {
         "en": "Option C (2 and 3 only) contains incorrect statements or omits correct statements.",
@@ -3954,8 +3954,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "B",
@@ -3969,24 +3969,24 @@
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       }
     ],
     "options_en": [
-      "1 and 2 only",
+      "1, 2 and 3",
       "2 and 3 only",
       "1 and 3 only",
-      "1, 2 and 3"
+      "1 and 2 only"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டுமே",
+      "1, 2 மற்றும் 3",
       "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
-      "1, 2 மற்றும் 3"
+      "1 மற்றும் 2 மட்டுமே"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because the AG cannot take sides between States in federal water disputes.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. மாநிலங்களுக்கு இடையேயான தகராறில் ஒரு மாநிலத்தின் பக்கம் நின்று மற்றொரு மாநிலத்திற்கு எதிராக AG ஆஜராக முடியாது என்பதால் கூற்று 3 தவறு."
@@ -3995,8 +3995,8 @@
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. மாநிலங்களுக்கு இடையேயான தகராறில் ஒரு மாநிலத்தின் பக்கம் நின்று மற்றொரு மாநிலத்திற்கு எதிராக AG ஆஜராக முடியாது என்பதால் கூற்று 3 தவறு.",
     "why_not_others": {
       "A": {
-        "en": "Option A is the correct combination based on constitutional provisions and statutory principles.",
-        "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு A சரியான கூற்றுக் கலவையாகும்."
+        "en": "Option D (1, 2 and 3) contains incorrect statements or omits correct statements.",
+        "ta": "தெரிவு D (1, 2 மற்றும் 3) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "B": {
         "en": "Option B (2 and 3 only) contains incorrect statements or omits correct statements.",
@@ -4007,8 +4007,8 @@
         "ta": "தெரிவு C (1 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "D": {
-        "en": "Option D (1, 2 and 3) contains incorrect statements or omits correct statements.",
-        "ta": "தெரிவு D (1, 2 மற்றும் 3) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
+        "en": "Option A is the correct combination based on constitutional provisions and statutory principles.",
+        "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு A சரியான கூற்றுக் கலவையாகும்."
       }
     },
     "tnpsc_tip": {
@@ -4060,8 +4060,8 @@
       },
       {
         "id": "B",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "C",
@@ -4070,24 +4070,24 @@
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டுமே"
       }
     ],
     "options_en": [
       "1 and 2 only",
-      "1 and 3 only",
+      "1, 2 and 3",
       "2 and 3 only",
-      "1, 2 and 3"
+      "1 and 3 only"
     ],
     "options_ta": [
       "1 மற்றும் 2 மட்டுமே",
-      "1 மற்றும் 3 மட்டுமே",
+      "1, 2 மற்றும் 3",
       "2 மற்றும் 3 மட்டுமே",
-      "1, 2 மற்றும் 3"
+      "1 மற்றும் 3 மட்டுமே"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Statements 1 and 3 are correct. Statement 2 is incorrect because the AG always represents the Union of India, never Delhi against the Union.",
       "ta": "கூற்றுகள் 1 மற்றும் 3 சரியானவை. தலைமை வழக்கறிஞர் எப்போதும் இந்திய ஒன்றியத்திற்கே வாதாடுவார்; மத்திய அரசுக்கு எதிராக தில்லி அரசுக்காக ஆஜராக மாட்டார் என்பதால் கூற்று 2 தவறு."
@@ -4100,16 +4100,16 @@
         "ta": "தெரிவு A (1 மற்றும் 2 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "B": {
-        "en": "Option B is the correct combination based on constitutional provisions and statutory principles.",
-        "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு B சரியான கூற்றுக் கலவையாகும்."
+        "en": "Option D (1, 2 and 3) contains incorrect statements or omits correct statements.",
+        "ta": "தெரிவு D (1, 2 மற்றும் 3) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "C": {
         "en": "Option C (2 and 3 only) contains incorrect statements or omits correct statements.",
         "ta": "தெரிவு C (2 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "D": {
-        "en": "Option D (1, 2 and 3) contains incorrect statements or omits correct statements.",
-        "ta": "தெரிவு D (1, 2 மற்றும் 3) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
+        "en": "Option B is the correct combination based on constitutional provisions and statutory principles.",
+        "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு B சரியான கூற்றுக் கலவையாகும்."
       }
     },
     "tnpsc_tip": {
@@ -4156,8 +4156,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "B",
@@ -4166,8 +4166,8 @@
       },
       {
         "id": "C",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "D",
@@ -4176,19 +4176,19 @@
       }
     ],
     "options_en": [
-      "1 and 2 only",
-      "2 and 3 only",
       "1 and 3 only",
+      "2 and 3 only",
+      "1 and 2 only",
       "1, 2 and 3"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டுமே",
-      "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
+      "2 மற்றும் 3 மட்டுமே",
+      "1 மற்றும் 2 மட்டுமே",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because there is no Article 76(5), and these are executive rules framed by the Union Government, not a parliamentary statute.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. அரசியலமைப்பில் சரத்து 76(5) என்று எதுவும் இல்லை, மேலும் இவை நிர்வாக விதிகளே தவிர நாடாளுமன்றச் சட்டம் அல்ல என்பதால் கூற்று 3 தவறு."
@@ -4197,16 +4197,16 @@
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. அரசியலமைப்பில் சரத்து 76(5) என்று எதுவும் இல்லை, மேலும் இவை நிர்வாக விதிகளே தவிர நாடாளுமன்றச் சட்டம் அல்ல என்பதால் கூற்று 3 தவறு.",
     "why_not_others": {
       "A": {
-        "en": "Option A is the correct combination based on constitutional provisions and statutory principles.",
-        "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு A சரியான கூற்றுக் கலவையாகும்."
+        "en": "Option C (1 and 3 only) contains incorrect statements or omits correct statements.",
+        "ta": "தெரிவு C (1 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "B": {
         "en": "Option B (2 and 3 only) contains incorrect statements or omits correct statements.",
         "ta": "தெரிவு B (2 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "C": {
-        "en": "Option C (1 and 3 only) contains incorrect statements or omits correct statements.",
-        "ta": "தெரிவு C (1 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
+        "en": "Option A is the correct combination based on constitutional provisions and statutory principles.",
+        "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு A சரியான கூற்றுக் கலவையாகும்."
       },
       "D": {
         "en": "Option D (1, 2 and 3) contains incorrect statements or omits correct statements.",
@@ -4262,8 +4262,8 @@
       },
       {
         "id": "B",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "C",
@@ -4272,24 +4272,24 @@
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டுமே"
       }
     ],
     "options_en": [
       "1 and 2 only",
-      "1 and 3 only",
+      "1, 2 and 3",
       "2 and 3 only",
-      "1, 2 and 3"
+      "1 and 3 only"
     ],
     "options_ta": [
       "1 மற்றும் 2 மட்டுமே",
-      "1 மற்றும் 3 மட்டுமே",
+      "1, 2 மற்றும் 3",
       "2 மற்றும் 3 மட்டுமே",
-      "1, 2 மற்றும் 3"
+      "1 மற்றும் 3 மட்டுமே"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Statements 1 and 3 are correct. Statement 2 is incorrect because the AG is NOT a civil servant under Article 311; he holds a constitutional office at the pleasure of the President.",
       "ta": "கூற்றுகள் 1 மற்றும் 3 சரியானவை. தலைமை வழக்கறிஞர் சரத்து 311-ன் கீழ் வரும் அரசு ஊழியர் அல்ல என்பதால் கூற்று 2 தவறு; எனவே இவரை விசாரணை இன்றியே நீக்கலாம்."
@@ -4302,16 +4302,16 @@
         "ta": "தெரிவு A (1 மற்றும் 2 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "B": {
-        "en": "Option B is the correct combination based on constitutional provisions and statutory principles.",
-        "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு B சரியான கூற்றுக் கலவையாகும்."
+        "en": "Option D (1, 2 and 3) contains incorrect statements or omits correct statements.",
+        "ta": "தெரிவு D (1, 2 மற்றும் 3) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "C": {
         "en": "Option C (2 and 3 only) contains incorrect statements or omits correct statements.",
         "ta": "தெரிவு C (2 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "D": {
-        "en": "Option D (1, 2 and 3) contains incorrect statements or omits correct statements.",
-        "ta": "தெரிவு D (1, 2 மற்றும் 3) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
+        "en": "Option B is the correct combination based on constitutional provisions and statutory principles.",
+        "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு B சரியான கூற்றுக் கலவையாகும்."
       }
     },
     "tnpsc_tip": {
@@ -4363,8 +4363,8 @@
       },
       {
         "id": "B",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "C",
@@ -4373,24 +4373,24 @@
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டுமே"
       }
     ],
     "options_en": [
       "1 and 2 only",
-      "2 and 3 only",
+      "1, 2 and 3",
       "1 and 3 only",
-      "1, 2 and 3"
+      "2 and 3 only"
     ],
     "options_ta": [
       "1 மற்றும் 2 மட்டுமே",
-      "2 மற்றும் 3 மட்டுமே",
+      "1, 2 மற்றும் 3",
       "1 மற்றும் 3 மட்டுமே",
-      "1, 2 மற்றும் 3"
+      "2 மற்றும் 3 மட்டுமே"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "All three statements are historically correct. Section 16 of GoI Act 1935 established the office, appointed by Governor-General, with Sir B.L. Mitter serving from 1937.",
       "ta": "மூன்று கூற்றுகளும் வரலாற்று ரீதியாக சரியானவை. 1935 சட்டத்தின் பிரிவு 16-ன் கீழ் கவர்னர்-ஜெனரலால் சர் பி.எல். மிட்டர் முதல் கூட்டாட்சி அட்வகேட் ஜெனரலாக நியமிக்கப்பட்டார்."
@@ -4403,16 +4403,16 @@
         "ta": "தெரிவு A (1 மற்றும் 2 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "B": {
-        "en": "Option B (2 and 3 only) contains incorrect statements or omits correct statements.",
-        "ta": "தெரிவு B (2 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
+        "en": "Option D is the correct combination based on constitutional provisions and statutory principles.",
+        "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு D சரியான கூற்றுக் கலவையாகும்."
       },
       "C": {
         "en": "Option C (1 and 3 only) contains incorrect statements or omits correct statements.",
         "ta": "தெரிவு C (1 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "D": {
-        "en": "Option D is the correct combination based on constitutional provisions and statutory principles.",
-        "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு D சரியான கூற்றுக் கலவையாகும்."
+        "en": "Option B (2 and 3 only) contains incorrect statements or omits correct statements.",
+        "ta": "தெரிவு B (2 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       }
     },
     "tnpsc_tip": {
@@ -4671,29 +4671,29 @@
       },
       {
         "id": "C",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டுமே"
       }
     ],
     "options_en": [
       "1 and 2 only",
       "2 and 3 only",
-      "1 and 3 only",
-      "1, 2 and 3"
+      "1, 2 and 3",
+      "1 and 3 only"
     ],
     "options_ta": [
       "1 மற்றும் 2 மட்டுமே",
       "2 மற்றும் 3 மட்டுமே",
-      "1 மற்றும் 3 மட்டுமே",
-      "1, 2 மற்றும் 3"
+      "1, 2 மற்றும் 3",
+      "1 மற்றும் 3 மட்டுமே"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "All three statements are correct. In Subhash Chandra Agarwal (2015), Delhi HC held AG is a public authority, which was stayed by the Supreme Court where the Union defended lawyer-client confidentiality.",
       "ta": "மூன்று கூற்றுகளும் சரியானவை. தில்லி உயர் நீதிமன்றம் AG ஒரு பொது அதிகாரம் கொண்ட அமைப்பு எனத் தீர்ப்பளித்தது, உச்ச நீதிமன்றம் அதற்குத் தடை விதித்தது; மத்திய அரசு வழக்கறிஞர்-வாடிக்கையாளர் ரகசியம் என வாதிட்டது."
@@ -4710,12 +4710,12 @@
         "ta": "தெரிவு B (2 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "C": {
-        "en": "Option C (1 and 3 only) contains incorrect statements or omits correct statements.",
-        "ta": "தெரிவு C (1 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
-      },
-      "D": {
         "en": "Option D is the correct combination based on constitutional provisions and statutory principles.",
         "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு D சரியான கூற்றுக் கலவையாகும்."
+      },
+      "D": {
+        "en": "Option C (1 and 3 only) contains incorrect statements or omits correct statements.",
+        "ta": "தெரிவு C (1 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       }
     },
     "tnpsc_tip": {
@@ -4762,13 +4762,13 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "B",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "C",
@@ -4782,19 +4782,19 @@
       }
     ],
     "options_en": [
-      "1 and 2 only",
       "2 and 3 only",
+      "1 and 2 only",
       "1 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டுமே",
       "2 மற்றும் 3 மட்டுமே",
+      "1 மற்றும் 2 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because no parliamentary confirmation is required for appointing the AG.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. தலைமை வழக்கறிஞர் நியமனத்திற்கு நாடாளுமன்ற ஒப்புதல் தேவையில்லை என்பதால் கூற்று 3 தவறு."
@@ -4803,12 +4803,12 @@
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. தலைமை வழக்கறிஞர் நியமனத்திற்கு நாடாளுமன்ற ஒப்புதல் தேவையில்லை என்பதால் கூற்று 3 தவறு.",
     "why_not_others": {
       "A": {
-        "en": "Option A is the correct combination based on constitutional provisions and statutory principles.",
-        "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு A சரியான கூற்றுக் கலவையாகும்."
-      },
-      "B": {
         "en": "Option B (2 and 3 only) contains incorrect statements or omits correct statements.",
         "ta": "தெரிவு B (2 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
+      },
+      "B": {
+        "en": "Option A is the correct combination based on constitutional provisions and statutory principles.",
+        "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு A சரியான கூற்றுக் கலவையாகும்."
       },
       "C": {
         "en": "Option C (1 and 3 only) contains incorrect statements or omits correct statements.",
@@ -4863,13 +4863,13 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "B",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "C",
@@ -4883,19 +4883,19 @@
       }
     ],
     "options_en": [
-      "1 and 2 only",
       "2 and 3 only",
+      "1 and 2 only",
       "1 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டுமே",
       "2 மற்றும் 3 மட்டுமே",
+      "1 மற்றும் 2 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because disciplinary powers over advocates are vested in the Disciplinary Committees of the respective State Bar Councils and Bar Council of India, not the AG.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. வழக்கறிஞர்கள் மீதான ஒழுங்கு நடவடிக்கை அதிகாரம் பார் கவுன்சிலின் ஒழுங்கு நடவடிக்கைக் குழுவிடமே உள்ளது; தலைமை வழக்கறிஞரிடம் அல்ல என்பதால் கூற்று 3 தவறு."
@@ -4904,12 +4904,12 @@
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. வழக்கறிஞர்கள் மீதான ஒழுங்கு நடவடிக்கை அதிகாரம் பார் கவுன்சிலின் ஒழுங்கு நடவடிக்கைக் குழுவிடமே உள்ளது; தலைமை வழக்கறிஞரிடம் அல்ல என்பதால் கூற்று 3 தவறு.",
     "why_not_others": {
       "A": {
-        "en": "Option A is the correct combination based on constitutional provisions and statutory principles.",
-        "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு A சரியான கூற்றுக் கலவையாகும்."
-      },
-      "B": {
         "en": "Option B (2 and 3 only) contains incorrect statements or omits correct statements.",
         "ta": "தெரிவு B (2 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
+      },
+      "B": {
+        "en": "Option A is the correct combination based on constitutional provisions and statutory principles.",
+        "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு A சரியான கூற்றுக் கலவையாகும்."
       },
       "C": {
         "en": "Option C (1 and 3 only) contains incorrect statements or omits correct statements.",
@@ -4974,29 +4974,29 @@
       },
       {
         "id": "C",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டுமே"
       }
     ],
     "options_en": [
       "1 and 2 only",
       "2 and 3 only",
-      "1 and 3 only",
-      "1, 2 and 3"
+      "1, 2 and 3",
+      "1 and 3 only"
     ],
     "options_ta": [
       "1 மற்றும் 2 மட்டுமே",
       "2 மற்றும் 3 மட்டுமே",
-      "1 மற்றும் 3 மட்டுமே",
-      "1, 2 மற்றும் 3"
+      "1, 2 மற்றும் 3",
+      "1 மற்றும் 3 மட்டுமே"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "All three statements are correct. Mukul Rohatgi was the 14th AG (2014-2017), argued against Triple Talaq on gender justice grounds, and returned to private practice in June 2017.",
       "ta": "மூன்று கூற்றுகளும் சரியானவை. முகுல் ரோஹத்கி 14-வது AG (2014-2017); முத்தலாக் வழக்கில் பாலின சமத்துவத்திற்காக வாதிட்டார்; 2017-ல் பணி நிறைவு செய்தார்."
@@ -5013,12 +5013,12 @@
         "ta": "தெரிவு B (2 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       },
       "C": {
-        "en": "Option C (1 and 3 only) contains incorrect statements or omits correct statements.",
-        "ta": "தெரிவு C (1 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
-      },
-      "D": {
         "en": "Option D is the correct combination based on constitutional provisions and statutory principles.",
         "ta": "அரசியலமைப்பு விதிகள் மற்றும் சட்டக் கோட்பாடுகளின்படி தெரிவு D சரியான கூற்றுக் கலவையாகும்."
+      },
+      "D": {
+        "en": "Option C (1 and 3 only) contains incorrect statements or omits correct statements.",
+        "ta": "தெரிவு C (1 மற்றும் 3 மட்டுமே) தவறான கூற்றுகளைக் கொண்டுள்ளது அல்லது சரியான கூற்றுகளை விடுத்துள்ளது."
       }
     },
     "tnpsc_tip": {

@@ -1,0 +1,1437 @@
+# -*- coding: utf-8 -*-
+"""
+Special Provisions for States - Part 2A PYQ Practice MCQs Generator (50 MCQs: SPS_PYQ_001 to SPS_PYQ_050)
+Strictly adheres to:
+- 24 required fields schema
+- TNPSC Past Year Questions & Standard Pattern Simulations
+- Authentic Tamil translations
+- Specific why_not_others for A, B, C, D
+- Balanced answer keys (12-13 per option)
+- ContentValidator pass
+"""
+import json
+import os
+from special_provisions_states_mcq_helper import make_sps_q
+from tools.nova_content_engine.answer_randomizer import randomize_and_balance_dataset
+from tools.nova_content_engine.validator import ContentValidator
+
+def get_pyq_questions():
+    raw_data = [
+        # 1
+        {
+            "subtopic": "Part XXI Constitutional Heading",
+            "stem_en": "[TNPSC Group 1 2014, Group 2 2017]\nUnder which Part of the Indian Constitution are special provisions for certain states (Articles 371 to 371-J) located?",
+            "stem_ta": "[TNPSC குரூப் 1 2014, குரூப் 2 2017]\nகுறிப்பிட்ட மாநிலங்களுக்கான சிறப்பு ஏற்பாடுகள் (சரத்துகள் 371 முதல் 371-J வரை) இந்திய அரசியலமைப்பின் எந்தப் பகுதியில் இடம்பெற்றுள்ளன?",
+            "options": [
+                ("Part XXI", "பகுதி XXI"),
+                ("Part XX", "பகுதி XX"),
+                ("Part XIX", "பகுதி XIX"),
+                ("Part XVIII", "பகுதி XVIII")
+            ],
+            "correct_key": "A",
+            "exp_en": "Articles 371 to 371-J are located in Part XXI of the Indian Constitution, titled 'Temporary, Transitional and Special Provisions'.",
+            "exp_ta": "சரத்துகள் 371 முதல் 371-J வரை 'தற்காலிக, இடைமாற்ற மற்றும் சிறப்பு ஏற்பாடுகள்' என்று தலைப்பிடப்பட்ட இந்திய அரசியலமைப்பின் பகுதி XXI-ல் அமைந்துள்ளன.",
+            "why_a_en": "Part XXI contains Articles 369 to 392, including special provisions for 12 states.",
+            "why_a_ta": "பகுதி XXI சரத்துகள் 369 முதல் 392 வரை உள்ளடக்கியது, இதில் 12 மாநிலங்களுக்கான சிறப்பு ஏற்பாடுகளும் அடங்கும்.",
+            "why_b_en": "Part XX contains Article 368 on Constitutional Amendment.",
+            "why_b_ta": "பகுதி XX அரசியலமைப்பு திருத்தம் தொடர்பான சரத்து 368-ஐக் கொண்டுள்ளது.",
+            "why_c_en": "Part XIX contains Miscellaneous provisions (Articles 361 to 367).",
+            "why_c_ta": "பகுதி XIX இதர விதிகளைக் (சரத்துகள் 361 முதல் 367 வரை) கொண்டுள்ளது.",
+            "why_d_en": "Part XVIII contains Emergency Provisions (Articles 352 to 360).",
+            "why_d_ta": "பகுதி XVIII அவசரகால ஏற்பாடுகளைக் (சரத்துகள் 352 முதல் 360 வரை) கொண்டுள்ளது.",
+            "tip_en": "Part XXI originally had only 'Temporary and Transitional'; 'and Special' was inserted by the 13th Amendment 1962.",
+            "tip_ta": "பகுதி XXI தொடக்கத்தில் 'தற்காலிக மற்றும் இடைமாற்ற' மட்டுமே கொண்டிருந்தது; 13வது திருத்தம் 1962 மூலம் 'மற்றும் சிறப்பு' சேர்க்கப்பட்டது.",
+            "fact_en": "Articles 371 to 371-J grant asymmetric constitutional protections to 12 states.",
+            "fact_ta": "சரத்துகள் 371 முதல் 371-J வரை 12 மாநிலங்களுக்குச் சமச்சீரற்ற அரசியலமைப்புப் பாதுகாப்புகளை வழங்குகின்றன."
+        },
+        # 2
+        {
+            "subtopic": "Article 371 Maharashtra and Gujarat",
+            "stem_en": "[TNPSC Group 2 2015, Group 4 2019]\nArticle 371 of the Constitution of India contains special provisions with respect to which of the following states?",
+            "stem_ta": "[TNPSC குரூப் 2 2015, குரூப் 4 2019]\nஇந்திய அரசியலமைப்பின் சரத்து 371 பின்வரும் எந்த மாநிலங்கள் தொடர்பான சிறப்பு ஏற்பாடுகளைக் கொண்டுள்ளது?",
+            "options": [
+                ("Maharashtra and Gujarat", "மகாராஷ்டிரா மற்றும் குஜராத்"),
+                ("Assam and Meghalaya", "அசாம் மற்றும் மேகாலயா"),
+                ("Nagaland and Manipur", "நாகாலாந்து மற்றும் மணிப்பூர்"),
+                ("Andhra Pradesh and Telangana", "ஆந்திரப் பிரதேசம் மற்றும் தெலங்கானா")
+            ],
+            "correct_key": "A",
+            "exp_en": "Article 371 provides special provisions for Maharashtra (Vidarbha, Marathwada, and the rest of Maharashtra) and Gujarat (Saurashtra, Kutch, and the rest of Gujarat) regarding separate development boards.",
+            "exp_ta": "சரத்து 371 மகாராஷ்டிரா (விதர்பா, மராத்வாடா, எஞ்சிய மகாராஷ்டிரா) மற்றும் குஜராத் (சௌராஷ்டிரா, கட்ச், எஞ்சிய குஜராத்) ஆகிய மாநிலங்களுக்கு தனி வளர்ச்சி வாரியங்கள் அமைப்பதற்கான சிறப்பு ஏற்பாடுகளை வழங்குகிறது.",
+            "why_a_en": "Article 371 directly mentions the States of Maharashtra and Gujarat.",
+            "why_a_ta": "சரத்து 371 நேரடியாக மகாராஷ்டிரா மற்றும் குஜராத் மாநிலங்களைக் குறிப்பிடுகிறது.",
+            "why_b_en": "Assam is under Article 371B and Meghalaya has no separate 371 article.",
+            "why_b_ta": "அசாம் சரத்து 371B-ன் கீழ் உள்ளது மற்றும் மேகாலயாவிற்கு தனி 371 சரத்து இல்லை.",
+            "why_c_en": "Nagaland is under Article 371A and Manipur is under Article 371C.",
+            "why_c_ta": "நாகாலாந்து சரத்து 371A-ன் கீழும் மணிப்பூர் சரத்து 371C-ன் கீழும் உள்ளன.",
+            "why_d_en": "Andhra Pradesh and Telangana are under Article 371D.",
+            "why_d_ta": "ஆந்திரப் பிரதேசம் மற்றும் தெலங்கானா சரத்து 371D-ன் கீழ் உள்ளன.",
+            "tip_en": "Article 371 (no alphabet suffix) = Maharashtra & Gujarat.",
+            "tip_ta": "சரத்து 371 (எழுத்துப் பின்னொட்டு இல்லாதது) = மகாராஷ்டிரா & குஜராத்.",
+            "fact_en": "Article 371 was substituted by the 7th Constitutional Amendment Act, 1956.",
+            "fact_ta": "சரத்து 371 என்பது 7வது அரசியலமைப்பு திருத்தச் சட்டம் 1956 மூலம் மாற்றி அமைக்கப்பட்டது."
+        },
+        # 3
+        {
+            "subtopic": "Article 371A Nagaland",
+            "stem_en": "[TNPSC Group 1 2017, Group 2 2018]\nWhich Article of the Constitution of India provides special provisions for the State of Nagaland?",
+            "stem_ta": "[TNPSC குரூப் 1 2017, குரூப் 2 2018]\nஇந்திய அரசியலமைப்பின் எந்த சரத்து நாகாலாந்து மாநிலத்திற்கான சிறப்பு ஏற்பாடுகளை வழங்குகிறது?",
+            "options": [
+                ("Article 371A", "சரத்து 371A"),
+                ("Article 371B", "சரத்து 371B"),
+                ("Article 371C", "சரத்து 371C"),
+                ("Article 371D", "சரத்து 371D")
+            ],
+            "correct_key": "A",
+            "exp_en": "Article 371A was inserted by the 13th Constitutional Amendment Act, 1962 to provide special provisions for Nagaland regarding customary laws, land ownership, and administration.",
+            "exp_ta": "நாகா மரபுச் சட்டங்கள், நில உரிமை மற்றும் நிர்வாகம் தொடர்பான சிறப்பு ஏற்பாடுகளை நாகாலாந்திற்கு வழங்க 13வது அரசியலமைப்பு திருத்தச் சட்டம் 1962 மூலம் சரத்து 371A சேர்க்கப்பட்டது.",
+            "why_a_en": "Article 371A exclusively provides special provisions for Nagaland.",
+            "why_a_ta": "சரத்து 371A பிரத்யேகமாக நாகாலாந்திற்கான சிறப்பு ஏற்பாடுகளை வழங்குகிறது.",
+            "why_b_en": "Article 371B deals with Assam.",
+            "why_b_ta": "சரத்து 371B அசாம் மாநிலத்தைக் கையாள்கிறது.",
+            "why_c_en": "Article 371C deals with Manipur.",
+            "why_c_ta": "சரத்து 371C மணிப்பூர் மாநிலத்தைக் கையாள்கிறது.",
+            "why_d_en": "Article 371D deals with Andhra Pradesh and Telangana.",
+            "why_d_ta": "சரத்து 371D ஆந்திரப் பிரதேசம் மற்றும் தெலங்கானாவைக் கையாள்கிறது.",
+            "tip_en": "Remember the sequence: A = Nagaland, B = Assam, C = Manipur.",
+            "tip_ta": "வரிசையை நினைவில் கொள்க: A = நாகாலாந்து, B = அசாம், C = மணிப்பூர்.",
+            "fact_en": "Nagaland was the 16th state of the Indian Union, inaugurated on 1 December 1963.",
+            "fact_ta": "நாகாலாந்து இந்திய ஒன்றியத்தின் 16வது மாநிலமாகும், இது 1963 டிசம்பர் 1 அன்று தொடங்கப்பட்டது."
+        },
+        # 4
+        {
+            "subtopic": "13th Amendment Act 1962",
+            "stem_en": "[TNPSC Group 1 2015, VAO 2016]\nWhich Constitutional Amendment Act inserted Article 371A into the Indian Constitution?",
+            "stem_ta": "[TNPSC குரூப் 1 2015, VAO 2016]\nஇந்திய அரசியலமைப்பில் சரத்து 371A-ஐ சேர்த்த அரசியலமைப்பு திருத்தச் சட்டம் எது?",
+            "options": [
+                ("13th Constitutional Amendment Act, 1962", "13வது அரசியலமைப்பு திருத்தச் சட்டம், 1962"),
+                ("22nd Constitutional Amendment Act, 1969", "22வது அரசியலமைப்பு திருத்தச் சட்டம், 1969"),
+                ("27th Constitutional Amendment Act, 1971", "27வது அரசியலமைப்பு திருத்தச் சட்டம், 1971"),
+                ("36th Constitutional Amendment Act, 1975", "36வது அரசியலமைப்பு திருத்தச் சட்டம், 1975")
+            ],
+            "correct_key": "A",
+            "exp_en": "The 13th Constitutional Amendment Act, 1962 inserted Article 371A following the 16-Point Agreement between the Government of India and the Naga People's Convention.",
+            "exp_ta": "இந்திய அரசுக்கும் நாகா மக்கள் மாநாட்டிற்கும் இடையே ஏற்பட்ட 16 அம்ச ஒப்பந்தத்தைத் தொடர்ந்து, 13வது அரசியலமைப்பு திருத்தச் சட்டம் 1962 சரத்து 371A-ஐச் சேர்த்தது.",
+            "why_a_en": "13th CAA 1962 created Article 371A for Nagaland.",
+            "why_a_ta": "13வது திருத்தம் 1962 நாகாலாந்திற்காக சரத்து 371A-ஐ உருவாக்கியது.",
+            "why_b_en": "22nd CAA 1969 created Article 371B for Assam.",
+            "why_b_ta": "22வது திருத்தம் 1969 அசாமிற்காக சரத்து 371B-ஐ உருவாக்கியது.",
+            "why_c_en": "27th CAA 1971 created Article 371C for Manipur.",
+            "why_c_ta": "27வது திருத்தம் 1971 மணிப்பூருக்காக சரத்து 371C-ஐ உருவாக்கியது.",
+            "why_d_en": "36th CAA 1975 created Article 371F for Sikkim.",
+            "why_d_ta": "36வது திருத்தம் 1975 சிக்கிமிற்காக சரத்து 371F-ஐ உருவாக்கியது.",
+            "tip_en": "13th Amendment = Nagaland (371A); 22nd = Assam (371B); 27th = Manipur (371C).",
+            "tip_ta": "13வது திருத்தம் = நாகாலாந்து (371A); 22வது = அசாம் (371B); 27வது = மணிப்பூர் (371C).",
+            "fact_en": "The 13th Amendment also added 'and Special' to the title of Part XXI.",
+            "fact_ta": "13வது திருத்தம் பகுதி XXI-ன் தலைப்பில் 'மற்றும் சிறப்பு' என்பதையும் சேர்த்தது."
+        },
+        # 5
+        {
+            "subtopic": "Article 371B Assam Legislative Assembly",
+            "stem_en": "[TNPSC Group 2 2016, Group 4 2018]\nArticle 371B of the Constitution of India provides for the constitution of a committee of the Legislative Assembly of which state?",
+            "stem_ta": "[TNPSC குரூப் 2 2016, குரூப் 4 2018]\nஇந்திய அரசியலமைப்பின் சரத்து 371B எந்த மாநிலத்தின் சட்டமன்றக் குழுவை அமைப்பதற்கு வகை செய்கிறது?",
+            "options": [
+                ("Assam", "அசாம்"),
+                ("Nagaland", "நாகாலாந்து"),
+                ("Manipur", "மணிப்பூர்"),
+                ("Sikkim", "சிக்கிம்")
+            ],
+            "correct_key": "A",
+            "exp_en": "Article 371B provides that the President may make an order for the constitution and functions of a committee of the Legislative Assembly of the State of Assam consisting of members elected from tribal areas specified in the Sixth Schedule.",
+            "exp_ta": "சரத்து 371B, ஆறாவது அட்டவணையில் குறிப்பிடப்பட்டுள்ள பழங்குடியினர் பகுதிகளிலிருந்து தேர்ந்தெடுக்கப்பட்ட உறுப்பினர்களைக் கொண்ட அசாம் மாநில சட்டமன்றக் குழுவை அமைப்பதற்கும் அதன் பணிகளுக்கும் குடியரசுத் தலைவர் உத்தரவிட வகை செய்கிறது.",
+            "why_a_en": "Article 371B explicitly applies to the State of Assam.",
+            "why_a_ta": "சரத்து 371B வெளிப்படையாக அசாம் மாநிலத்திற்குப் பொருந்தும்.",
+            "why_b_en": "Nagaland is covered under Article 371A.",
+            "why_b_ta": "நாகாலாந்து சரத்து 371A-ன் கீழ் உள்ளடக்கப்பட்டுள்ளது.",
+            "why_c_en": "Manipur is covered under Article 371C.",
+            "why_c_ta": "மணிப்பூர் சரத்து 371C-ன் கீழ் உள்ளடக்கப்பட்டுள்ளது.",
+            "why_d_en": "Sikkim is covered under Article 371F.",
+            "why_d_ta": "சிக்கிம் சரத்து 371F-ன் கீழ் உள்ளடக்கப்பட்டுள்ளது.",
+            "tip_en": "371B = Assam (inserted by 22nd Constitutional Amendment Act, 1969).",
+            "tip_ta": "371B = அசாம் (22வது அரசியலமைப்பு திருத்தச் சட்டம் 1969 மூலம் சேர்க்கப்பட்டது).",
+            "fact_en": "Article 371B facilitated tribal representation during the reorganisation of North-Eastern territories.",
+            "fact_ta": "வடகிழக்குப் பகுதிகளின் மறுசீரமைப்பின் போது பழங்குடியினர் பிரதிநிதித்துவத்தை சரத்து 371B எளிதாக்கியது."
+        },
+        # 6
+        {
+            "subtopic": "Article 371C Manipur Hill Areas",
+            "stem_en": "[TNPSC Group 1 2019, Group 2 2021]\nUnder Article 371C of the Constitution, the Governor of Manipur is required to submit an annual report to whom regarding the administration of the Hill Areas?",
+            "stem_ta": "[TNPSC குரூப் 1 2019, குரூப் 2 2021]\nஅரசியலமைப்பின் சரத்து 371C-ன் கீழ், மணிப்பூர் ஆளுநர் மலைப்பகுதிகளின் நிர்வாகம் தொடர்பான ஆண்டு அறிக்கையை யாரிடம் சமர்ப்பிக்க வேண்டும்?",
+            "options": [
+                ("The President of India", "இந்தியக் குடியரசுத் தலைவர்"),
+                ("The Prime Minister of India", "இந்தியப் பிரதமர்"),
+                ("The Union Home Minister", "மத்திய உள்துறை அமைச்சர்"),
+                ("The Chief Minister of Manipur", "மணிப்பூர் முதலமைச்சர்")
+            ],
+            "correct_key": "A",
+            "exp_en": "Under Article 371C(2), the Governor of Manipur must make an annual report to the President regarding the administration of the Hill Areas of the State.",
+            "exp_ta": "சரத்து 371C(2)-ன் கீழ், மணிப்பூர் ஆளுநர் மாநிலத்தின் மலைப்பகுதிகளின் நிர்வாகம் குறித்த ஆண்டு அறிக்கையை இந்தியக் குடியரசுத் தலைவரிடம் சமர்ப்பிக்க வேண்டும்.",
+            "why_a_en": "Article 371C(2) explicitly directs the report to the President.",
+            "why_a_ta": "சரத்து 371C(2) வெளிப்படையாக அறிக்கையைக் குடியரசுத் தலைவரிடம் சமர்ப்பிக்க வழிகாட்டுகிறது.",
+            "why_b_en": "The Prime Minister is head of government; constitutional reports go to the head of State (President).",
+            "why_b_ta": "பிரதமர் அரசாங்கத்தின் தலைவர்; அரசியலமைப்பு அறிக்கைகள் நாட்டின் தலைவரிடம் (குடியரசுத் தலைவர்) செல்கின்றன.",
+            "why_c_en": "Union Home Minister is a cabinet minister, not the constitutional reporting authority in Art 371C.",
+            "why_c_ta": "மத்திய உள்துறை அமைச்சர் ஒரு அமைச்சரவை அமைச்சர், சரத்து 371C-ல் அரசியலமைப்பு அறிக்கை பெறும் அதிகாரி அல்ல.",
+            "why_d_en": "The report evaluates the state administration, so it does not go to the Chief Minister.",
+            "why_d_ta": "அறிக்கை மாநில நிர்வாகத்தை மதிப்பீடு செய்வதால் முதலமைச்சரிடம் சமர்ப்பிக்கப்படுவதில்லை.",
+            "tip_en": "Article 371C also empowers the Union executive to give directions to the State Government on Hill Areas.",
+            "tip_ta": "சரத்து 371C மலைப்பகுதிகள் தொடர்பாக மாநில அரசுக்கு வழிகாட்டுதல்களை வழங்க ஒன்றிய நிர்வாகத்திற்கு அதிகாரமளிக்கிறது.",
+            "fact_en": "Article 371C was inserted by the 27th Amendment Act, 1971.",
+            "fact_ta": "சரத்து 371C 27வது திருத்தச் சட்டம் 1971 மூலம் சேர்க்கப்பட்டது."
+        },
+        # 7
+        {
+            "subtopic": "Article 371D Andhra Pradesh",
+            "stem_en": "[TNPSC Group 2 2015, Group 1 2017]\nWhich Constitutional Amendment Act inserted Article 371D and 371E into the Constitution for Andhra Pradesh?",
+            "stem_ta": "[TNPSC குரூப் 2 2015, குரூப் 1 2017]\nஆந்திரப் பிரதேசத்திற்காக சரத்துகள் 371D மற்றும் 371E-ஐ அரசியலமைப்பில் சேர்த்த அரசியலமைப்பு திருத்தச் சட்டம் எது?",
+            "options": [
+                ("32nd Constitutional Amendment Act, 1973", "32வது அரசியலமைப்பு திருத்தச் சட்டம், 1973"),
+                ("36th Constitutional Amendment Act, 1975", "36வது அரசியலமைப்பு திருத்தச் சட்டம், 1975"),
+                ("42nd Constitutional Amendment Act, 1976", "42வது அரசியலமைப்பு திருத்தச் சட்டம், 1976"),
+                ("44th Constitutional Amendment Act, 1978", "44வது அரசியலமைப்பு திருத்தச் சட்டம், 1978")
+            ],
+            "correct_key": "A",
+            "exp_en": "The 32nd Constitutional Amendment Act, 1973 inserted Articles 371D and 371E to give constitutional backing to the Six-Point Formula in Andhra Pradesh.",
+            "exp_ta": "ஆந்திரப் பிரதேசத்தில் ஆறு அம்ச சூத்திரத்திற்கு அரசியலமைப்பு அங்கீகாரம் வழங்க 32வது அரசியலமைப்பு திருத்தச் சட்டம் 1973 சரத்துகள் 371D மற்றும் 371E-ஐ சேர்த்தது.",
+            "why_a_en": "32nd Amendment 1973 inserted both Articles 371D and 371E.",
+            "why_a_ta": "32வது திருத்தம் 1973 சரத்துகள் 371D மற்றும் 371E இரண்டையும் சேர்த்தது.",
+            "why_b_en": "36th Amendment 1975 related to Sikkim (Article 371F).",
+            "why_b_ta": "36வது திருத்தம் 1975 சிக்கிம் தொடர்பானது (சரத்து 371F).",
+            "why_c_en": "42nd Amendment 1976 made extensive omnibus amendments.",
+            "why_c_ta": "42வது திருத்தம் 1976 விரிவான பொதுத் திருத்தங்களைச் செய்தது.",
+            "why_d_en": "44th Amendment 1978 restored constitutional balances post-emergency.",
+            "why_d_ta": "44வது திருத்தம் 1978 அவசரநிலைக்குப் பிந்தைய அரசியலமைப்பு சமநிலையை மீட்டெடுத்தது.",
+            "tip_en": "371D provides local reservation in public employment and education in AP and Telangana.",
+            "tip_ta": "சரத்து 371D ஆந்திரா மற்றும் தெலங்கானாவில் பொது வேலைவாய்ப்பு மற்றும் கல்வியில் உள்ளூர் இடஒதுக்கீட்டை வழங்குகிறது.",
+            "fact_en": "Article 371E provides for the establishment of a Central University in Andhra Pradesh.",
+            "fact_ta": "சரத்து 371E ஆந்திரப் பிரதேசத்தில் ஒரு மத்தியப் பல்கலைக்கழகத்தை நிறுவ வகை செய்கிறது."
+        },
+        # 8
+        {
+            "subtopic": "P. Sambamurthy Case Article 371D",
+            "stem_en": "[TNPSC Group 1 2016, Assistant Section Officer 2018]\nIn P. Sambamurthy v. State of Andhra Pradesh (1987), which specific clause of Article 371D was declared unconstitutional by the Supreme Court?",
+            "stem_ta": "[TNPSC குரூப் 1 2016, உதவிப் பிரிவு அலுவலர் 2018]\nபி. சாம்பமூர்த்தி எதிர் ஆந்திரப் பிரதேச அரசு (1987) வழக்கில், சரத்து 371D-ன் எந்த குறிப்பிட்ட பிரிவு உச்ச நீதிமன்றத்தால் அரசியலமைப்பிற்கு முரணானது என அறிவிக்கப்பட்டது?",
+            "options": [
+                ("Clause (5)", "பிரிவு (5)"),
+                ("Clause (1)", "பிரிவு (1)"),
+                ("Clause (3)", "பிரிவு (3)"),
+                ("Clause (10)", "பிரிவு (10)")
+            ],
+            "correct_key": "A",
+            "exp_en": "In P. Sambamurthy (1987), a Constitution Bench struck down Article 371D(5) and its proviso because it gave the State Government power to modify or annul an order of the Administrative Tribunal, violating the rule of law and judicial review.",
+            "exp_ta": "பி. சாம்பமூர்த்தி (1987) வழக்கில், நிர்வாகத் தீர்ப்பாயத்தின் உத்தரவை மாற்றியமைக்க அல்லது ரத்து செய்ய மாநில அரசுக்கு அதிகாரம் அளித்த சரத்து 371D(5) மற்றும் அதன் விதிவிலக்கு சட்டத்தின் ஆட்சி மற்றும் நீதித்துறை மறுஆய்வை மீறுவதாகக் கூறி உச்ச நீதிமன்றம் ரத்து செய்தது.",
+            "why_a_en": "Article 371D(5) was invalidated for violating the basic structure (judicial review and rule of law).",
+            "why_a_ta": "அடிப்படை கட்டமைப்பை மீறியதற்காக சரத்து 371D(5) செல்லாது என அறிவிக்கப்பட்டது.",
+            "why_b_en": "Clause (1) relates to equitable opportunities and remains fully valid.",
+            "why_b_ta": "பிரிவு (1) சம வாய்ப்புகள் தொடர்பானது மற்றும் முற்றிலும் செல்லுபடியாகும்.",
+            "why_c_en": "Clause (3) empowers setting up the Tribunal and remains valid.",
+            "why_c_ta": "பிரிவு (3) தீர்ப்பாயத்தை அமைக்கும் அதிகாரம் தொடர்பானது மற்றும் செல்லுபடியாகும்.",
+            "why_d_en": "Clause (10) is the non-obstante clause and remains valid.",
+            "why_d_ta": "பிரிவு (10) முரண்பாடற்ற விதி மற்றும் செல்லுபடியாகும்.",
+            "tip_en": "P. Sambamurthy is the most frequently tested landmark case under Article 371D.",
+            "tip_ta": "பி. சாம்பமூர்த்தி வழக்கு சரத்து 371D-ன் கீழ் அடிக்கடி கேட்கப்படும் மைல்கல் வழக்காகும்.",
+            "fact_en": "The judgment was delivered by Chief Justice P.N. Bhagwati.",
+            "fact_ta": "இத்தீர்ப்பு தலைமை நீதிபதி பி.என். பகவதியால் வழங்கப்பட்டது."
+        },
+        # 9
+        {
+            "subtopic": "Article 371F Sikkim 36th Amendment",
+            "stem_en": "[TNPSC Group 1 2015, Group 2 2017, Group 4 2019]\nBy which Constitutional Amendment Act did Sikkim become a full-fledged 22nd state of the Indian Union and Article 371F was inserted?",
+            "stem_ta": "[TNPSC குரூப் 1 2015, குரூப் 2 2017, குரூப் 4 2019]\nஎந்த அரசியலமைப்பு திருத்தச் சட்டம் மூலம் சிக்கிம் இந்திய ஒன்றியத்தின் 22வது முழு மாநிலமாக இணைந்தது மற்றும் சரத்து 371F சேர்க்கப்பட்டது?",
+            "options": [
+                ("36th Constitutional Amendment Act, 1975", "36வது அரசியலமைப்பு திருத்தச் சட்டம், 1975"),
+                ("35th Constitutional Amendment Act, 1974", "35வது அரசியலமைப்பு திருத்தச் சட்டம், 1974"),
+                ("38th Constitutional Amendment Act, 1975", "38வது அரசியலமைப்பு திருத்தச் சட்டம், 1975"),
+                ("42nd Constitutional Amendment Act, 1976", "42வது அரசியலமைப்பு திருத்தச் சட்டம், 1976")
+            ],
+            "correct_key": "A",
+            "exp_en": "The 36th Constitutional Amendment Act, 1975 made Sikkim a full state of the Indian Union and inserted Article 371F containing special provisions for Sikkim.",
+            "exp_ta": "36வது அரசியலமைப்பு திருத்தச் சட்டம் 1975 சிக்கிமை இந்திய ஒன்றியத்தின் முழு மாநிலமாக மாற்றியது மற்றும் சிக்கிமிற்கான சிறப்பு ஏற்பாடுகளைக் கொண்ட சரத்து 371F-ஐச் சேர்த்தது.",
+            "why_a_en": "36th Amendment 1975 conferred full statehood on Sikkim and added Article 371F.",
+            "why_a_ta": "36வது திருத்தம் 1975 சிக்கிமிற்கு முழு மாநில அந்தஸ்தை வழங்கியது மற்றும் சரத்து 371F-ஐ சேர்த்தது.",
+            "why_b_en": "35th Amendment 1974 made Sikkim an 'Associate State' (Article 2A), not a full state.",
+            "why_b_ta": "35வது திருத்தம் 1974 சிக்கிமை ஒரு 'இணைப்பு மாநிலமாக' (சரத்து 2A) மட்டுமே ஆக்கியது, முழு மாநிலமாக அல்ல.",
+            "why_c_en": "38th Amendment 1975 made declaration of emergency non-justiciable.",
+            "why_c_ta": "38வது திருத்தம் 1975 அவசரநிலைப் பிரகடனத்தை நீதிமன்ற ஆய்வுக்கு அப்பாற்பட்டதாக ஆக்கியது.",
+            "why_d_en": "42nd Amendment 1976 was the mini-constitution enacted during emergency.",
+            "why_d_ta": "42வது திருத்தம் 1976 அவசரநிலையின் போது இயற்றப்பட்ட குறு அரசியலமைப்பாகும்.",
+            "tip_en": "Trap Alert: 35th CAA = Associate State; 36th CAA = Full State + Article 371F.",
+            "tip_ta": "கவனிக்க: 35வது திருத்தம் = இணைப்பு மாநிலம்; 36வது திருத்தம் = முழு மாநிலம் + சரத்து 371F.",
+            "fact_en": "Sikkim was admitted into the Union under Article 2 of the Constitution.",
+            "fact_ta": "அரசியலமைப்பின் சரத்து 2-ன் கீழ் சிக்கிம் ஒன்றியத்தில் சேர்க்கப்பட்டது."
+        },
+        # 10
+        {
+            "subtopic": "Sikkim Assembly Minimum Strength",
+            "stem_en": "[TNPSC Group 4 2016, Group 2 2018]\nUnder Article 371F(a), the Legislative Assembly of the State of Sikkim shall consist of not less than how many members?",
+            "stem_ta": "[TNPSC குரூப் 4 2016, குரூப் 2 2018]\nசரத்து 371F(a)-ன் கீழ், சிக்கிம் மாநிலத்தின் சட்டமன்றம் எத்தனை உறுப்பினர்களுக்குக் குறையாமல் இருக்க வேண்டும்?",
+            "options": [
+                ("30 members", "30 உறுப்பினர்கள்"),
+                ("32 members", "32 உறுப்பினர்கள்"),
+                ("40 members", "40 உறுப்பினர்கள்"),
+                ("60 members", "60 உறுப்பினர்கள்")
+            ],
+            "correct_key": "A",
+            "exp_en": "Article 371F(a) specifies that the Legislative Assembly of Sikkim shall consist of not less than 30 members. (The actual current strength determined by Parliament is 32).",
+            "exp_ta": "சரத்து 371F(a) சிக்கிம் சட்டமன்றம் 30 உறுப்பினர்களுக்குக் குறையாமல் இருக்க வேண்டும் என்று குறிப்பிடுகிறது. (தற்போது நாடாளுமன்றத்தால் நிர்ணயிக்கப்பட்ட உண்மையான பலம் 32 ஆகும்).",
+            "why_a_en": "Article 371F(a) sets 30 as the constitutional minimum threshold.",
+            "why_a_ta": "சரத்து 371F(a) 30 உறுப்பினர்களை அரசியலமைப்பு குறைந்தபட்ச வரம்பாக நிர்ணயிக்கிறது.",
+            "why_b_en": "32 is the actual present strength of the Sikkim Assembly, but the constitutional minimum is 30.",
+            "why_b_ta": "32 என்பது சிக்கிம் சட்டமன்றத்தின் தற்போதைய உண்மையான எண்ணிக்கை, ஆனால் அரசியலமைப்பு குறைந்தபட்ச வரம்பு 30 ஆகும்.",
+            "why_c_en": "40 is the minimum strength for Mizoram under Article 371G.",
+            "why_c_ta": "40 என்பது சரத்து 371G-ன் கீழ் மிசோரமிற்கான குறைந்தபட்ச பலமாகும்.",
+            "why_d_en": "60 is the general constitutional minimum under Article 170(1).",
+            "why_d_ta": "60 என்பது சரத்து 170(1)-ன் கீழ் உள்ள பொதுவான அரசியலமைப்பு குறைந்தபட்ச வரம்பாகும்.",
+            "tip_en": "Constitutional floor under 371F is 30; actual seats allocated = 32.",
+            "tip_ta": "சரத்து 371F-ன் கீழான அரசியலமைப்பு குறைந்தபட்ச வரம்பு 30; உண்மையான இடங்கள் = 32.",
+            "fact_en": "Out of 32 seats in Sikkim, 1 seat is reserved for Sangha (Buddhist Monasteries).",
+            "fact_ta": "சிக்கிமின் 32 இடங்களில், 1 இடம் சங்காவிற்கு (புத்த மடாலயங்கள்) ஒதுக்கப்பட்டுள்ளது."
+        },
+        # 11
+        {
+            "subtopic": "Article 371G Mizoram Assembly Strength",
+            "stem_en": "[TNPSC Group 2 2019, Group 1 2021]\nUnder Article 371G of the Constitution, what is the minimum prescribed strength of the Legislative Assembly of Mizoram?",
+            "stem_ta": "[TNPSC குரூப் 2 2019, குரூப் 1 2021]\nஅரசியலமைப்பின் சரத்து 371G-ன் கீழ், மிசோரம் சட்டமன்றத்திற்கு பரிந்துரைக்கப்பட்ட குறைந்தபட்ச பலம் என்ன?",
+            "options": [
+                ("40 members", "40 உறுப்பினர்கள்"),
+                ("30 members", "30 உறுப்பினர்கள்"),
+                ("32 members", "32 உறுப்பினர்கள்"),
+                ("60 members", "60 உறுப்பினர்கள்")
+            ],
+            "correct_key": "A",
+            "exp_en": "Under Article 371G(b), the Legislative Assembly of Mizoram shall consist of not less than 40 members.",
+            "exp_ta": "சரத்து 371G(b)-ன் படி, மிசோரம் சட்டமன்றம் 40 உறுப்பினர்களுக்குக் குறையாமல் இருக்க வேண்டும்.",
+            "why_a_en": "Article 371G(b) explicitly fixes 40 members as the minimum size for Mizoram.",
+            "why_a_ta": "சரத்து 371G(b) மிசோரமிற்கு குறைந்தபட்ச உறுப்பினர்கள் எண்ணிக்கையை 40 என வெளிப்படையாக நிர்ணயிக்கிறது.",
+            "why_b_en": "30 is the minimum for Sikkim (371F), Arunachal Pradesh (371H), and Goa (371I).",
+            "why_b_ta": "30 என்பது சிக்கிம் (371F), அருணாச்சலப் பிரதேசம் (371H) மற்றும் கோவாவிற்கான (371I) குறைந்தபட்சமாகும்.",
+            "why_c_en": "32 is the present strength of Sikkim assembly.",
+            "why_c_ta": "32 என்பது சிக்கிம் சட்டமன்றத்தின் தற்போதைய பலமாகும்.",
+            "why_d_en": "60 is the standard minimum under Article 170.",
+            "why_d_ta": "60 என்பது சரத்து 170-ன் கீழான நிலையான குறைந்தபட்சமாகும்.",
+            "tip_en": "Mizoram is the ONLY special provision state with a minimum of 40 members (not 30).",
+            "tip_ta": "சிறப்பு ஏற்பாடுகள் கொண்ட மாநிலங்களில் 40 உறுப்பினர்களைக் குறைந்தபட்சமாகக் கொண்ட ஒரே மாநிலம் மிசோரம் மட்டுமே (30 அல்ல).",
+            "fact_en": "Article 371G was added by the 53rd Constitutional Amendment Act, 1986.",
+            "fact_ta": "சரத்து 371G 53வது அரசியலமைப்பு திருத்தச் சட்டம் 1986 மூலம் சேர்க்கப்பட்டது."
+        },
+        # 12
+        {
+            "subtopic": "Article 371H Arunachal Pradesh Law and Order",
+            "stem_en": "[TNPSC Group 1 2017, Group 2 2018]\nUnder Article 371H of the Constitution of India, the Governor of which State has special responsibility with respect to law and order?",
+            "stem_ta": "[TNPSC குரூப் 1 2017, குரூப் 2 2018]\nஇந்திய அரசியலமைப்பின் சரத்து 371H-ன் கீழ், எந்த மாநிலத்தின் ஆளுநருக்கு சட்டம் ஒழுங்கு தொடர்பாக சிறப்புப் பொறுப்பு உள்ளது?",
+            "options": [
+                ("Arunachal Pradesh", "அருணாச்சலப் பிரதேசம்"),
+                ("Mizoram", "மிசோரம்"),
+                ("Goa", "கோவா"),
+                ("Sikkim", "சிக்கிம்")
+            ],
+            "correct_key": "A",
+            "exp_en": "Article 371H vests the Governor of Arunachal Pradesh with special responsibility with respect to law and order, requiring him to exercise individual judgment after consulting the council of ministers.",
+            "exp_ta": "சரத்து 371H அருணாச்சலப் பிரதேச ஆளுநருக்கு சட்டம் ஒழுங்கு தொடர்பான சிறப்புப் பொறுப்பை வழங்குகிறது, மேலும் அமைச்சரவையைக் கலந்தாலோசித்த பிறகு தனது தனிப்பட்ட முடிவைப் பயன்படுத்த அவரைப் பணிக்கிறது.",
+            "why_a_en": "Article 371H specifically applies to Arunachal Pradesh.",
+            "why_a_ta": "சரத்து 371H குறிப்பாக அருணாச்சலப் பிரதேசத்திற்குப் பொருந்தும்.",
+            "why_b_en": "Mizoram is under Article 371G without this specific law and order clause.",
+            "why_b_ta": "மிசோரம் சரத்து 371G-ன் கீழ் உள்ளது, ஆனால் இந்த சட்டம் ஒழுங்கு விதி அதில் இல்லை.",
+            "why_c_en": "Goa is under Article 371I which only deals with assembly size.",
+            "why_c_ta": "கோவா சரத்து 371I-ன் கீழ் உள்ளது, இது சட்டமன்ற பலத்தை மட்டுமே கையாள்கிறது.",
+            "why_d_en": "Sikkim is under Article 371F with special responsibility for peace and equity.",
+            "why_d_ta": "சிக்கிம் சரத்து 371F-ன் கீழ் அமைதி மற்றும் சமத்துவத்திற்கான சிறப்புப் பொறுப்பைக் கொண்டுள்ளது.",
+            "tip_en": "Remember: Law & Order special responsibility exists in 371A (Nagaland) and 371H (Arunachal Pradesh).",
+            "tip_ta": "நினைவில் கொள்க: சட்டம் ஒழுங்கு சிறப்புப் பொறுப்பு 371A (நாகாலாந்து) மற்றும் 371H (அருணாச்சலப் பிரதேசம்) ஆகியவற்றில் உள்ளது.",
+            "fact_en": "Article 371H was inserted by the 55th Constitutional Amendment Act, 1986.",
+            "fact_ta": "சரத்து 371H 55வது அரசியலமைப்பு திருத்தச் சட்டம் 1986 மூலம் சேர்க்கப்பட்டது."
+        },
+        # 13
+        {
+            "subtopic": "Article 371I Goa Minimum Assembly Seats",
+            "stem_en": "[TNPSC Group 4 2018, Group 2 2020]\nArticle 371I of the Indian Constitution provides that the Legislative Assembly of Goa shall consist of not less than how many members?",
+            "stem_ta": "[TNPSC குரூப் 4 2018, குரூப் 2 2020]\nஇந்திய அரசியலமைப்பின் சரத்து 371I, கோவா சட்டமன்றம் எத்தனை உறுப்பினர்களுக்குக் குறையாமல் இருக்க வேண்டும் என்று வகை செய்கிறது?",
+            "options": [
+                ("30 members", "30 உறுப்பினர்கள்"),
+                ("40 members", "40 உறுப்பினர்கள்"),
+                ("32 members", "32 உறுப்பினர்கள்"),
+                ("60 members", "60 உறுப்பினர்கள்")
+            ],
+            "correct_key": "A",
+            "exp_en": "Article 371I states: 'Notwithstanding anything in this Constitution, the Legislative Assembly of the State of Goa shall consist of not less than thirty members.'",
+            "exp_ta": "சரத்து 371I குறிப்பிடுகிறது: 'இந்த அரசியலமைப்பில் என்ன கூறப்பட்டிருந்தாலும், கோவா மாநில சட்டமன்றம் முப்பது உறுப்பினர்களுக்குக் குறையாமல் இருக்க வேண்டும்.'",
+            "why_a_en": "Article 371I explicitly fixes 30 members.",
+            "why_a_ta": "சரத்து 371I வெளிப்படையாக 30 உறுப்பினர்களை நிர்ணயிக்கிறது.",
+            "why_b_en": "40 is the actual present strength of Goa assembly, but the constitutional minimum under 371I is 30.",
+            "why_b_ta": "40 என்பது கோவா சட்டமன்றத்தின் தற்போதைய உண்மையான பலம், ஆனால் 371I-ன் கீழ் அரசியலமைப்பு குறைந்தபட்சம் 30 ஆகும்.",
+            "why_c_en": "32 relates to Sikkim.",
+            "why_c_ta": "32 சிக்கிம் தொடர்பானது.",
+            "why_d_en": "60 is Article 170 standard minimum.",
+            "why_d_ta": "60 என்பது சரத்து 170-ன் நிலையான குறைந்தபட்சமாகும்.",
+            "tip_en": "Goa assembly has 40 seats in practice, easily meeting the minimum of 30.",
+            "tip_ta": "கோவா சட்டமன்றத்தில் நடைமுறையில் 40 இடங்கள் உள்ளன, இது குறைந்தபட்ச வரம்பான 30-ஐ எளிதாகப் பூர்த்தி செய்கிறது.",
+            "fact_en": "Article 371I was inserted by the 56th Constitutional Amendment Act, 1987.",
+            "fact_ta": "சரத்து 371I 56வது அரசியலமைப்பு திருத்தச் சட்டம் 1987 மூலம் சேர்க்கப்பட்டது."
+        },
+        # 14
+        {
+            "subtopic": "Article 371J 98th Amendment Act 2012",
+            "stem_en": "[TNPSC Group 1 2015, Group 2 2019, Group 4 2022]\nWhich Constitutional Amendment Act inserted Article 371J providing special provisions for the Hyderabad-Karnataka region of Karnataka?",
+            "stem_ta": "[TNPSC குரூப் 1 2015, குரூப் 2 2019, குரூப் 4 2022]\nகர்நாடகாவின் ஹைதராபாத்-கர்நாடகா பகுதிக்கு சிறப்பு ஏற்பாடுகளை வழங்கும் சரத்து 371J-ஐச் சேர்த்த அரசியலமைப்பு திருத்தச் சட்டம் எது?",
+            "options": [
+                ("98th Constitutional Amendment Act, 2012", "98வது அரசியலமைப்பு திருத்தச் சட்டம், 2012"),
+                ("96th Constitutional Amendment Act, 2011", "96வது அரசியலமைப்பு திருத்தச் சட்டம், 2011"),
+                ("97th Constitutional Amendment Act, 2011", "97வது அரசியலமைப்பு திருத்தச் சட்டம், 2011"),
+                ("99th Constitutional Amendment Act, 2014", "99வது அரசியலமைப்பு திருத்தச் சட்டம், 2014")
+            ],
+            "correct_key": "A",
+            "exp_en": "The 98th Constitutional Amendment Act, 2012 inserted Article 371J to provide for a separate development board and reservations in education and state government jobs for the Hyderabad-Karnataka region.",
+            "exp_ta": "ஹைதராபாத்-கர்நாடகா பகுதிக்கு தனி வளர்ச்சி வாரியம் மற்றும் கல்வி மற்றும் மாநில அரசுப் பணிகளில் இடஒதுக்கீடு வழங்க 98வது அரசியலமைப்பு திருத்தச் சட்டம் 2012 சரத்து 371J-ஐ சேர்த்தது.",
+            "why_a_en": "98th Amendment 2012 introduced Article 371J.",
+            "why_a_ta": "98வது திருத்தம் 2012 சரத்து 371J-ஐ அறிமுகப்படுத்தியது.",
+            "why_b_en": "96th Amendment 2011 substituted 'Odia' for 'Oriya' in the Eighth Schedule.",
+            "why_b_ta": "96வது திருத்தம் 2011 எட்டாவது அட்டவணையில் 'ஒரியா' என்பதற்கு பதிலாக 'ஒடியா' என மாற்றியது.",
+            "why_c_en": "97th Amendment 2011 gave constitutional status to Co-operative Societies.",
+            "why_c_ta": "97வது திருத்தம் 2011 கூட்டுறவுச் சங்கங்களுக்கு அரசியலமைப்பு அந்தஸ்தை வழங்கியது.",
+            "why_d_en": "99th Amendment 2014 established the NJAC (later struck down).",
+            "why_d_ta": "99வது திருத்தம் 2014 NJAC-ஐ நிறுவியது (பின்னர் ரத்து செய்யப்பட்டது).",
+            "tip_en": "Article 371J is the latest addition to the 371 series (Articles 371 to 371-J).",
+            "tip_ta": "சரத்து 371J என்பது 371 தொடரில் (சரத்துகள் 371 முதல் 371-J) கடைசியாகச் சேர்க்கப்பட்டதாகும்.",
+            "fact_en": "The 6 districts originally covered were Gulbarga, Bidar, Raichur, Koppal, Yadgir, and Bellary.",
+            "fact_ta": "முதலில் உள்ளடக்கப்பட்ட 6 மாவட்டங்கள் குல்பர்கா, பீதர், ராய்ச்சூர், கொப்பல், யாத்கிர் மற்றும் பெல்லாரி ஆகும்."
+        },
+        # 15
+        {
+            "subtopic": "Article 370 Temporary Status",
+            "stem_en": "[TNPSC Group 1 2014, Group 2 2017]\nUnder which Part of the Indian Constitution was Article 370 placed, indicating its constitutional nature?",
+            "stem_ta": "[TNPSC குரூப் 1 2014, குரூப் 2 2017]\nசரத்து 370 இந்திய அரசியலமைப்பின் எந்தப் பகுதியில் வைக்கப்பட்டது, இது அதன் அரசியலமைப்புத் தன்மையைக் குறிக்கிறது?",
+            "options": [
+                ("Part XXI (Temporary, Transitional and Special Provisions)", "பகுதி XXI (தற்காலிக, இடைமாற்ற மற்றும் சிறப்பு ஏற்பாடுகள்)"),
+                ("Part XX (Amendment of the Constitution)", "பகுதி XX (அரசியலமைப்பு திருத்தம்)"),
+                ("Part XVIII (Emergency Provisions)", "பகுதி XVIII (அவசரகால ஏற்பாடுகள்)"),
+                ("Part XIX (Miscellaneous)", "பகுதி XIX (இதர ஏற்பாடுகள்)")
+            ],
+            "correct_key": "A",
+            "exp_en": "Article 370 was placed in Part XXI under the marginal heading 'Temporary provisions with respect to the State of Jammu and Kashmir', establishing its temporary and transitional nature.",
+            "exp_ta": "சரத்து 370 'ஜம்மு மற்றும் காஷ்மீர் மாநிலம் தொடர்பான தற்காலிக ஏற்பாடுகள்' என்ற தலைப்பின் கீழ் பகுதி XXI-ல் வைக்கப்பட்டது, இது அதன் தற்காலிக மற்றும் இடைமாற்றத் தன்மையை நிறுவியது.",
+            "why_a_en": "Part XXI housed Article 370 from the commencement of the Constitution.",
+            "why_a_ta": "அரசியலமைப்பு நடைமுறைக்கு வந்தது முதல் பகுதி XXI சரத்து 370-ஐக் கொண்டிருந்தது.",
+            "why_b_en": "Part XX contains Article 368 only.",
+            "why_b_ta": "பகுதி XX சரத்து 368-ஐ மட்டுமே கொண்டுள்ளது.",
+            "why_c_en": "Part XVIII contains Articles 352-360.",
+            "why_c_ta": "பகுதி XVIII சரத்துகள் 352-360-ஐக் கொண்டுள்ளது.",
+            "why_d_en": "Part XIX contains Articles 361-367.",
+            "why_d_ta": "பகுதி XIX சரத்துகள் 361-367-ஐக் கொண்டுள்ளது.",
+            "tip_en": "The Supreme Court in 2023 Constitution Bench verdict affirmed that Article 370 was indeed a temporary provision.",
+            "tip_ta": "2023 அரசியலமைப்பு அமர்வுத் தீர்ப்பில் உச்ச நீதிமன்றம் சரத்து 370 உண்மையில் ஒரு தற்காலிக ஏற்பாடே என்பதை உறுதி செய்தது.",
+            "fact_en": "N. Gopalaswami Ayyangar drafted Article 370 (originally Article 306A in the draft Constitution).",
+            "fact_ta": "என். கோபாலசுவாமி அய்யங்கார் சரத்து 370-ஐ வரைந்தார் (வரைவு அரசியலமைப்பில் முதலில் சரத்து 306A)."
+        },
+        # 16
+        {
+            "subtopic": "Tuensang Regional Council",
+            "stem_en": "[TNPSC Group 1 2018, Group 2 2021]\nUnder Article 371A, for which district of Nagaland was a special Regional Council of 35 members provided?",
+            "stem_ta": "[TNPSC குரூப் 1 2018, குரூப் 2 2021]\nசரத்து 371A-ன் கீழ், நாகாலாந்தின் எந்த மாவட்டத்திற்காக 35 உறுப்பினர்களைக் கொண்ட சிறப்புப் பிராந்தியக் குழு வகை செய்யப்பட்டது?",
+            "options": [
+                ("Tuensang", "துயேன்சாங்"),
+                ("Kohima", "கோஹிமா"),
+                ("Mokokchung", "மொகோக்சுங்"),
+                ("Dimapur", "திமாபூர்")
+            ],
+            "correct_key": "A",
+            "exp_en": "Article 371A(1)(d) and Article 371A(2) provided special administration for the Tuensang district for 10 years, creating a 35-member regional council headed by the Deputy Commissioner.",
+            "exp_ta": "சரத்து 371A(1)(d) மற்றும் சரத்து 371A(2) துயேன்சாங் மாவட்டத்திற்கு 10 ஆண்டுகளுக்கு சிறப்பு நிர்வாகத்தை வழங்கின, மேலும் துணை ஆணையர் தலைமையிலான 35 உறுப்பினர்களைக் கொண்ட பிராந்தியக் குழுவை உருவாக்கின.",
+            "why_a_en": "Tuensang is explicitly named in Article 371A(2).",
+            "why_a_ta": "துயேன்சாங் சரத்து 371A(2)-ல் வெளிப்படையாகக் குறிப்பிடப்பட்டுள்ளது.",
+            "why_b_en": "Kohima is the state capital, not governed by the regional council clause.",
+            "why_b_ta": "கோஹிமா மாநிலத் தலைநகரம், பிராந்தியக் குழு விதியால் நிர்வகிக்கப்படவில்லை.",
+            "why_c_en": "Mokokchung is one of the original districts, but had no separate regional council.",
+            "why_c_ta": "மொகோக்சுங் அசல் மாவட்டங்களில் ஒன்றாகும், ஆனால் தனி பிராந்தியக் குழுவைக் கொண்டிருக்கவில்லை.",
+            "why_d_en": "Dimapur was formed later from Kohima district.",
+            "why_d_ta": "திமாபூர் பின்னர் கோஹிமா மாவட்டத்திலிருந்து உருவாக்கப்பட்டது.",
+            "tip_en": "Tuensang had indirect elections to the assembly via this regional council for the first 10 years.",
+            "tip_ta": "துயேன்சாங் முதல் 10 ஆண்டுகளுக்கு இந்தப் பிராந்தியக் குழுவின் மூலம் சட்டமன்றத்திற்கு மறைமுகத் தேர்தல்களைக் கொண்டிருந்தது.",
+            "fact_en": "Tuensang was previously part of NEFA and was relatively more undeveloped than Kohima or Mokokchung in 1963.",
+            "fact_ta": "துயேன்சாங் முன்பு நெஃபாவின் ஒரு பகுதியாக இருந்தது மற்றும் 1963-ல் கோஹிமா அல்லது மொகோக்சுங்கை விட ஒப்பீட்டளவில் பின்தங்கியிருந்தது."
+        },
+        # 17
+        {
+            "subtopic": "Sangha Assembly Seat Sikkim",
+            "stem_en": "[TNPSC Group 1 2016, Group 2 2018]\nIn which State is one legislative assembly seat uniquely reserved for the 'Sangha' (Buddhist monasteries) under Article 371F?",
+            "stem_ta": "[TNPSC குரூப் 1 2016, குரூப் 2 2018]\nசரத்து 371F-ன் கீழ் எந்த மாநிலத்தில் ஒரு சட்டமன்றத் தொகுதி தனித்துவமாக 'சங்காவிற்கு' (புத்த மடாலயங்கள்) ஒதுக்கப்பட்டுள்ளது?",
+            "options": [
+                ("Sikkim", "சிக்கிம்"),
+                ("Arunachal Pradesh", "அருணாச்சலப் பிரதேசம்"),
+                ("Ladakh", "லடாக்"),
+                ("Himachal Pradesh", "இமாச்சலப் பிரதேசம்")
+            ],
+            "correct_key": "A",
+            "exp_en": "Under Article 371F(f) and the Representation of the People Act, 1950, Sikkim has 1 seat exclusively reserved for Buddhist monasteries and monks (the Sangha constituency).",
+            "exp_ta": "சரத்து 371F(f) மற்றும் மக்கள் பிரதிநிதித்துவச் சட்டம் 1950-ன் கீழ், சிக்கிமில் புத்த மடாலயங்கள் மற்றும் துறவிகளுக்காக 1 இடம் பிரத்யேகமாக ஒதுக்கப்பட்டுள்ளது (சங்கா தொகுதி).",
+            "why_a_en": "Sikkim is the only state in India with a Sangha constituency.",
+            "why_a_ta": "இந்தியாவில் சங்கா தொகுதியைக் கொண்ட ஒரே மாநிலம் சிக்கிம் மட்டுமே.",
+            "why_b_en": "Arunachal Pradesh has Buddhist populations (e.g. Tawang) but no Sangha seat.",
+            "why_b_ta": "அருணாச்சலப் பிரதேசத்தில் புத்த மதத்தினர் உள்ளனர் (தவாங்), ஆனால் சங்கா தொகுதி இல்லை.",
+            "why_c_en": "Ladakh is a Union Territory without a legislative assembly.",
+            "why_c_ta": "லடாக் சட்டமன்றம் இல்லாத ஒரு யூனியன் பிரதேசமாகும்.",
+            "why_d_en": "Himachal Pradesh (e.g. Spiti) has no monastic reservation.",
+            "why_d_ta": "இமாச்சலப் பிரதேசத்தில் மடாலய இடஒதுக்கீடு எதுவும் இல்லை.",
+            "tip_en": "The Sangha seat was upheld by the Supreme Court in RC Poudyal v. Union of India (1994).",
+            "tip_ta": "ஆர்.சி. பௌடியால் எதிர் இந்திய ஒன்றியம் (1994) வழக்கில் சங்கா தொகுதி உச்ச நீதிமன்றத்தால் உறுதி செய்யப்பட்டது.",
+            "fact_en": "Monks from 111 recognised monasteries cast votes to elect the Sangha MLA.",
+            "fact_ta": "111 அங்கீகரிக்கப்பட்ட மடாலயங்களைச் சேர்ந்த துறவிகள் சங்கா சட்டமன்ற உறுப்பினரைத் தேர்ந்தெடுக்க வாக்களிக்கின்றனர்."
+        },
+        # 18
+        {
+            "subtopic": "Central University Andhra Pradesh Article 371E",
+            "stem_en": "[TNPSC Group 2 2017, Group 4 2021]\nWhich Article of the Constitution empowers Parliament to provide by law for the establishment of a Central University in Andhra Pradesh?",
+            "stem_ta": "[TNPSC குரூப் 2 2017, குரூப் 4 2021]\nஆந்திரப் பிரதேசத்தில் ஒரு மத்தியப் பல்கலைக்கழகத்தை நிறுவுவதற்கு சட்டத்தின் மூலம் வகை செய்ய நாடாளுமன்றத்திற்கு அதிகாரமளிக்கும் அரசியலமைப்பு சரத்து எது?",
+            "options": [
+                ("Article 371E", "சரத்து 371E"),
+                ("Article 371D", "சரத்து 371D"),
+                ("Article 371C", "சரத்து 371C"),
+                ("Article 371F", "சரத்து 371F")
+            ],
+            "correct_key": "A",
+            "exp_en": "Article 371E states: 'Parliament may by law provide for the establishment of a University in the State of Andhra Pradesh.'",
+            "exp_ta": "சரத்து 371E குறிப்பிடுகிறது: 'நாடாளுமன்றம் சட்டத்தின் மூலம் ஆந்திரப் பிரதேச மாநிலத்தில் ஒரு பல்கலைக்கழகத்தை நிறுவ வகை செய்யலாம்.'",
+            "why_a_en": "Article 371E is explicitly dedicated to the university provision for Andhra Pradesh.",
+            "why_a_ta": "சரத்து 371E வெளிப்படையாக ஆந்திரப் பிரதேசத்திற்கான பல்கலைக்கழக ஏற்பாட்டிற்கு அர்ப்பணிக்கப்பட்டுள்ளது.",
+            "why_b_en": "Article 371D deals with equitable opportunities in employment and education in AP.",
+            "why_b_ta": "சரத்து 371D ஆந்திராவில் வேலைவாய்ப்பு மற்றும் கல்வியில் சம வாய்ப்புகளைக் கையாள்கிறது.",
+            "why_c_en": "Article 371C deals with Manipur Hill Areas.",
+            "why_c_ta": "சரத்து 371C மணிப்பூர் மலைப்பகுதிகளைக் கையாள்கிறது.",
+            "why_d_en": "Article 371F deals with Sikkim.",
+            "why_d_ta": "சரத்து 371F சிக்கிம் மாநிலத்தைக் கையாள்கிறது.",
+            "tip_en": "371D = Development/Employment in AP; 371E = Educational (Central University) in AP.",
+            "tip_ta": "371D = ஆந்திராவில் வளர்ச்சி/வேலைவாய்ப்பு; 371E = ஆந்திராவில் கல்வி (மத்திய பல்கலைக்கழகம்).",
+            "fact_en": "Central University of Andhra Pradesh is located at Anantapuramu.",
+            "fact_ta": "ஆந்திர மத்திய பல்கலைக்கழகம் அனந்தபூரில் அமைந்துள்ளது."
+        },
+        # 19
+        {
+            "subtopic": "Article 371 Gujarat Regions",
+            "stem_en": "[TNPSC Group 1 2013, Group 2 2015]\nUnder Article 371(2), development boards may be established in Gujarat for which specified regions?",
+            "stem_ta": "[TNPSC குரூப் 1 2013, குரூப் 2 2015]\nசரத்து 371(2)-ன் கீழ், குஜராத்தில் எந்தக் குறிப்பிட்ட பகுதிகளுக்கு வளர்ச்சி வாரியங்கள் நிறுவப்படலாம்?",
+            "options": [
+                ("Saurashtra, Kutch and the rest of Gujarat", "சௌராஷ்டிரா, கட்ச் மற்றும் குஜராத்தின் எஞ்சிய பகுதிகள்"),
+                ("Vidarbha and Marathwada", "விதர்பா மற்றும் மராத்வாடா"),
+                ("Konkan and Malabar", "கொங்கண் மற்றும் மலபார்"),
+                ("Telangana and Rayalaseema", "தெலங்கானா மற்றும் இராயலசீமா")
+            ],
+            "correct_key": "A",
+            "exp_en": "Article 371(2) specifically mentions Saurashtra, Kutch and the rest of Gujarat for establishing separate development boards.",
+            "exp_ta": "சரத்து 371(2) சௌராஷ்டிரா, கட்ச் மற்றும் குஜராத்தின் எஞ்சிய பகுதிகளுக்கு தனி வளர்ச்சி வாரியங்களை நிறுவுவதை வெளிப்படையாகக் குறிப்பிடுகிறது.",
+            "why_a_en": "Article 371(2) enumerates Saurashtra and Kutch for Gujarat.",
+            "why_a_ta": "சரத்து 371(2) குஜராத்திற்காக சௌராஷ்டிரா மற்றும் கட்ச் பகுதிகளைப் பட்டியலிடுகிறது.",
+            "why_b_en": "Vidarbha and Marathwada belong to Maharashtra under Article 371(2).",
+            "why_b_ta": "விதர்பா மற்றும் மராத்வாடா சரத்து 371(2)-ன் கீழ் மகாராஷ்டிராவிற்கு உரியவை.",
+            "why_c_en": "Malabar is in Kerala.",
+            "why_c_ta": "மலபார் கேரளாவில் உள்ளது.",
+            "why_d_en": "Telangana and Rayalaseema belong to the Telugu-speaking region.",
+            "why_d_ta": "தெலங்கானா மற்றும் ராயலசீமா தெலுங்கு பேசும் பகுதிக்குரியவை.",
+            "tip_en": "Article 371 pairs: MH -> Vidarbha & Marathwada; GJ -> Saurashtra & Kutch.",
+            "tip_ta": "சரத்து 371 இணைகள்: மகாராஷ்டிரா -> விதர்பா & மராத்வாடா; குஜராத் -> சௌராஷ்டிரா & கட்ச்.",
+            "fact_en": "Saurashtra was originally a Part B state and Kutch a Part C state before the 1956 reorganisation.",
+            "fact_ta": "1956 மறுசீரமைப்புக்கு முன்பு சௌராஷ்டிரா பகுதி B மாநிலமாகவும், கட்ச் பகுதி C மாநிலமாகவும் இருந்தன."
+        },
+        # 20
+        {
+            "subtopic": "North-Eastern Areas Reorganisation Act 1971",
+            "stem_en": "[TNPSC Group 1 2015, Group 2 2017]\nWhich landmark legislation reorganised the North-Eastern region leading to statehood for Manipur, Meghalaya, and Tripura?",
+            "stem_ta": "[TNPSC குரூப் 1 2015, குரூப் 2 2017]\nமணிப்பூர், மேகாலயா மற்றும் திரிபுரா ஆகிய மாநிலங்களுக்கு மாநில அந்தஸ்து வழங்க வழிவகுத்த வடகிழக்குப் பகுதிகளை மறுசீரமைத்த மைல்கல் சட்டம் எது?",
+            "options": [
+                ("North-Eastern Areas (Reorganisation) Act, 1971", "வடகிழக்குப் பகுதிகள் (மறுசீரமைப்பு) சட்டம், 1971"),
+                ("States Reorganisation Act, 1956", "மாநிலங்கள் மறுசீரமைப்பு சட்டம், 1956"),
+                ("State of Nagaland Act, 1962", "நாகாலாந்து மாநிலச் சட்டம், 1962"),
+                ("Assam Reorganisation Act, 1969", "அசாம் மறுசீரமைப்பு சட்டம், 1969")
+            ],
+            "correct_key": "A",
+            "exp_en": "The North-Eastern Areas (Reorganisation) Act, 1971 granted full statehood to Manipur, Meghalaya, and Tripura, and created the Union Territories of Mizoram and Arunachal Pradesh, alongside the 27th Constitutional Amendment inserting Article 371C.",
+            "exp_ta": "வடகிழக்குப் பகுதிகள் (மறுசீரமைப்பு) சட்டம் 1971 மணிப்பூர், மேகாலயா மற்றும் திரிபுராவிற்கு முழு மாநில அந்தஸ்தை வழங்கியது, மேலும் மிசோரம் மற்றும் அருணாச்சலப் பிரதேச யூனியன் பிரதேசங்களை உருவாக்கியது; இதனுடன் 27வது திருத்தம் சரத்து 371C-ஐ சேர்த்தது.",
+            "why_a_en": "The North-Eastern Areas (Reorganisation) Act, 1971 restructured the entire region.",
+            "why_a_ta": "வடகிழக்குப் பகுதிகள் (மறுசீரமைப்பு) சட்டம் 1971 முழுப் பகுதியையும் மறுசீரமைத்தது.",
+            "why_b_en": "1956 Act dealt with linguistic reorganisation of mainland states.",
+            "why_b_ta": "1956 சட்டம் முக்கிய நிலப்பரப்பு மாநிலங்களின் மொழிவாரி மறுசீரமைப்பைக் கையாண்டது.",
+            "why_c_en": "1962 Act applied only to Nagaland.",
+            "why_c_ta": "1962 சட்டம் நாகாலாந்திற்கு மட்டுமே பொருந்தியது.",
+            "why_d_en": "1969 Act created Meghalaya as an autonomous sub-state inside Assam.",
+            "why_d_ta": "1969 சட்டம் மேகாலயாவை அசாமிற்குள் ஒரு தன்னாட்சி துணை மாநிலமாக உருவாக்கியது.",
+            "tip_en": "Statehood dates: Manipur, Meghalaya, Tripura all became states on 21 January 1972.",
+            "tip_ta": "மாநில அந்தஸ்து தேதிகள்: மணிப்பூர், மேகாலயா, திரிபுரா ஆகிய அனைத்தும் 1972 ஜனவரி 21 அன்று மாநிலங்களாயின.",
+            "fact_en": "Manipur and Tripura were Part C states before becoming Union Territories in 1956.",
+            "fact_ta": "மணிப்பூரும் திரிபுராவும் 1956-ல் யூனியன் பிரதேசங்களாவதற்கு முன்பு பகுதி C மாநிலங்களாக இருந்தன."
+        },
+        # 21
+        {
+            "subtopic": "Mizoram Peace Accord 1986",
+            "stem_en": "[TNPSC Group 2 2018, Group 1 2020]\nThe 53rd Constitutional Amendment Act, 1986, which inserted Article 371G for Mizoram, was enacted following which historic agreement?",
+            "stem_ta": "[TNPSC குரூப் 2 2018, குரூப் 1 2020]\nமிசோரமுக்காக சரத்து 371G-ஐச் சேர்த்த 53வது அரசியலமைப்பு திருத்தச் சட்டம் 1986, எந்த வரலாற்றுச் சிறப்புமிக்க ஒப்பந்தத்தைத் தொடர்ந்து இயற்றப்பட்டது?",
+            "options": [
+                ("Mizo Peace Accord (1986)", "மிசோ அமைதி ஒப்பந்தம் (1986)"),
+                ("Shillong Accord (1975)", "ஷில்லாங் ஒப்பந்தம் (1975)"),
+                ("Assam Accord (1985)", "அசாம் ஒப்பந்தம் (1985)"),
+                ("16-Point Agreement (1960)", "16 அம்ச ஒப்பந்தம் (1960)")
+            ],
+            "correct_key": "A",
+            "exp_en": "The Mizo Peace Accord was signed on 30 June 1986 between the Government of India and the Mizo National Front (MNF), ending two decades of insurgency and leading to the 53rd Amendment (Article 371G) and statehood.",
+            "exp_ta": "இந்திய அரசுக்கும் மிசோ தேசிய முன்னணிக்கும் (MNF) இடையே 1986 ஜூன் 30 அன்று மிசோ அமைதி ஒப்பந்தம் கையெழுத்தானது; இது இருபது ஆண்டுகால கிளர்ச்சியை முடிவுக்குக் கொண்டுவந்து 53வது திருத்தம் (சரத்து 371G) மற்றும் மாநில அந்தஸ்திற்கு வழிவகுத்தது.",
+            "why_a_en": "Mizo Peace Accord led directly to Article 371G and Mizoram statehood in 1987.",
+            "why_a_ta": "மிசோ அமைதி ஒப்பந்தம் நேரடியாக சரத்து 371G மற்றும் 1987-ல் மிசோரம் மாநில அந்தஸ்திற்கு வழிவகுத்தது.",
+            "why_b_en": "Shillong Accord 1975 was signed with the Naga underground leaders (NNC).",
+            "why_b_ta": "ஷில்லாங் ஒப்பந்தம் 1975 நாகா தலைவர்களுடன் கையெழுத்தானது.",
+            "why_c_en": "Assam Accord 1985 dealt with illegal immigration in Assam.",
+            "why_c_ta": "அசாம் ஒப்பந்தம் 1985 அசாமில் சட்டவிரோத குடியேற்றம் தொடர்பானது.",
+            "why_d_en": "16-Point Agreement 1960 led to Nagaland statehood and Article 371A.",
+            "why_d_ta": "16 அம்ச ஒப்பந்தம் 1960 நாகாலாந்து மாநில அந்தஸ்து மற்றும் சரத்து 371A-க்கு வழிவகுத்தது.",
+            "tip_en": "The Mizo Accord is widely regarded as one of India's most successful peace accords.",
+            "tip_ta": "மிசோ அமைதி ஒப்பந்தம் இந்தியாவின் மிகவும் வெற்றிகரமான அமைதி ஒப்பந்தங்களில் ஒன்றாகக் கருதப்படுகிறது.",
+            "fact_en": "Laldenga became the first Chief Minister of the State of Mizoram.",
+            "fact_ta": "லால்டெங்கா மிசோரம் மாநிலத்தின் முதல் முதலமைச்சரானார்."
+        },
+        # 22
+        {
+            "subtopic": "Article 371J Kalyana Karnataka Renaming",
+            "stem_en": "[TNPSC Group 2 2021, Group 4 2022]\nIn 2019, the Hyderabad-Karnataka region covered under Article 371J was officially renamed as what by the Karnataka State Government?",
+            "stem_ta": "[TNPSC குரூப் 2 2021, குரூப் 4 2022]\n2019-ல், சரத்து 371J-ன் கீழ் உள்ளடக்கப்பட்ட ஹைதராபாத்-கர்நாடகா பகுதி கர்நாடக மாநில அரசால் அதிகாரப்பூர்வமாக என்னவென்று பெயர் மாற்றப்பட்டது?",
+            "options": [
+                ("Kalyana Karnataka", "கல்யாண கர்நாடகா"),
+                ("Uttara Karnataka", "உத்தர கர்நாடகா"),
+                ("Karavali Karnataka", "காரவளி கர்நாடகா"),
+                ("Bayaluseeme", "பயலுசீமே")
+            ],
+            "correct_key": "A",
+            "exp_en": "In September 2019, the Karnataka Cabinet officially renamed the Hyderabad-Karnataka region as 'Kalyana Karnataka' to discard the colonial/feudal reference to the Nizam of Hyderabad and honour the 12th-century Sharana movement.",
+            "exp_ta": "செப்டம்பர் 2019-ல், கர்நாடக அமைச்சரவை ஹைதராபாத் நிஜாமின் காலனித்துவ குறிப்பை நீக்கி, 12ஆம் நூற்றாண்டின் சரணா இயக்கத்தை கௌரவிக்கும் வகையில் ஹைதராபாத்-கர்நாடகா பகுதியை 'கல்யாண கர்நாடகா' என அதிகாரப்பூர்வமாகப் பெயர் மாற்றியது.",
+            "why_a_en": "Kalyana Karnataka is the official current designation of the region under Art 371J.",
+            "why_a_ta": "கல்யாண கர்நாடகா என்பது சரத்து 371J-ன் கீழான பகுதியின் அதிகாரப்பூர்வ தற்போதைய பெயராகும்.",
+            "why_b_en": "Uttara Karnataka refers broadly to Northern Karnataka.",
+            "why_b_ta": "உத்தர கர்நாடகா என்பது பரந்த அளவில் வட கர்நாடகாவைக் குறிக்கிறது.",
+            "why_c_en": "Karavali refers to Coastal Karnataka.",
+            "why_c_ta": "காரவளி என்பது கடலோர கர்நாடகாவைக் குறிக்கிறது.",
+            "why_d_en": "Bayaluseeme refers to the plains region of Karnataka.",
+            "why_d_ta": "பயலுசீமே என்பது கர்நாடகாவின் சமவெளிப் பகுதியைக் குறிக்கிறது.",
+            "tip_en": "Kalyana references Basaveshwara's Anubhava Mantapa at Basavakalyan in Bidar district.",
+            "tip_ta": "கல்யாணா என்பது பீதர் மாவட்டத்தில் உள்ள பசவகல்யாணத்தில் பசவேஸ்வரரின் அனுபவ மண்டபத்தைக் குறிக்கிறது.",
+            "fact_en": "Kalyana Karnataka Liberation Day is celebrated on September 17.",
+            "fact_ta": "கல்யாண கர்நாடகா விடுதலை நாள் செப்டம்பர் 17 அன்று கொண்டாடப்படுகிறது."
+        },
+        # 23
+        {
+            "subtopic": "RC Poudyal Case 1994",
+            "stem_en": "[TNPSC Group 1 2016, Group 2 2019]\nIn which landmark judgment did the Supreme Court uphold the constitutional validity of Article 371F and the reservation of seats in the Sikkim Assembly for Bhutia-Lepchas and Sangha?",
+            "stem_ta": "[TNPSC குரூப் 1 2016, குரூப் 2 2019]\nஎந்த மைல்கல் தீர்ப்பில் உச்ச நீதிமன்றம் சரத்து 371F-ன் அரசியலமைப்பு செல்லுபடியாகும் தன்மையையும், பூட்டியா-லெப்சாக்கள் மற்றும் சங்காவிற்கு சிக்கிம் சட்டமன்றத்தில் இடஒதுக்கீடு செய்வதையும் உறுதி செய்தது?",
+            "options": [
+                ("R.C. Poudyal v. Union of India (1994)", "ஆர்.சி. பௌடியால் எதிர் இந்திய ஒன்றியம் (1994)"),
+                ("S.R. Bommai v. Union of India (1994)", "எஸ்.ஆர். பொம்மை எதிர் இந்திய ஒன்றியம் (1994)"),
+                ("Indra Sawhney v. Union of India (1992)", "இந்திரா சஹானி எதிர் இந்திய ஒன்றியம் (1992)"),
+                ("Kishori Lal v. State of MP (1995)", "கிஷோரி லால் எதிர் மத்தியப் பிரதேச அரசு (1995)")
+            ],
+            "correct_key": "A",
+            "exp_en": "In R.C. Poudyal v. Union of India (1994), a 5-judge Constitution Bench held that the admission of Sikkim into India under Article 2 read with Article 371F is subject to judicial review, but upheld the special reservations considering Sikkim's historical context.",
+            "exp_ta": "ஆர்.சி. பௌடியால் எதிர் இந்திய ஒன்றியம் (1994) வழக்கில், 5 நீதிபதிகள் கொண்ட அரசியலமைப்பு அமர்வு, சரத்து 371F மற்றும் சரத்து 2-ன் கீழ் சிக்கிம் இணைக்கப்பட்டது நீதித்துறை மறுஆய்வுக்கு உட்பட்டது என்று கூறியதுடன், சிக்கிமின் வரலாற்றுப் பின்னணியைக் கருத்தில் கொண்டு சிறப்பு இடஒதுக்கீடுகளை உறுதி செய்தது.",
+            "why_a_en": "RC Poudyal is the definitive Supreme Court decision on Article 371F.",
+            "why_a_ta": "ஆர்.சி. பௌடியால் என்பது சரத்து 371F மீதான உச்ச நீதிமன்றத்தின் தீர்க்கமான தீர்ப்பாகும்.",
+            "why_b_en": "SR Bommai (1994) dealt with Article 356 (President's Rule) and federalism.",
+            "why_b_ta": "எஸ்.ஆர். பொம்மை (1994) சரத்து 356 (குடியரசுத் தலைவர் ஆட்சி) மற்றும் கூட்டாட்சி தொடர்பானது.",
+            "why_c_en": "Indra Sawhney (1992) dealt with OBC reservations and the 50% ceiling.",
+            "why_c_ta": "இந்திரா சஹானி (1992) இதர பிற்படுத்தப்பட்டோர் இடஒதுக்கீடு மற்றும் 50% உச்சவரம்பு தொடர்பானது.",
+            "why_d_en": "Kishori Lal dealt with service law matters.",
+            "why_d_ta": "கிஷோரி லால் பணிச் சட்டம் விவகாரங்களைக் கையாண்டது.",
+            "tip_en": "RC Poudyal affirmed that special historical accommodations under Part XXI do not violate democracy or secularism.",
+            "tip_ta": "பகுதி XXI-ன் கீழான சிறப்பு வரலாற்று ஏற்பாடுகள் ஜனநாயகம் அல்லது மதச்சார்பின்மையை மீறாது என்பதை ஆர்.சி. பௌடியால் உறுதிப்படுத்தியது.",
+            "fact_en": "Justice M.N. Venkatachaliah authored the majority opinion in RC Poudyal.",
+            "fact_ta": "ஆர்.சி. பௌடியால் வழக்கில் நீதிபதி எம்.என். வெங்கடாசலையா பெரும்பான்மை தீர்ப்பை எழுதினார்."
+        },
+        # 24
+        {
+            "subtopic": "Article 370 Accession Year",
+            "stem_en": "[TNPSC Group 4 2014, Group 2 2016]\nIn which year was the Instrument of Accession signed by Maharaja Hari Singh of Jammu and Kashmir, paving the way for Article 370?",
+            "stem_ta": "[TNPSC குரூப் 4 2014, குரூப் 2 2016]\nஜம்மு காஷ்மீர் மகாராஜா ஹரி சிங் எந்த ஆண்டு இணைப்பு ஆவணத்தில் (Instrument of Accession) கையெழுத்திட்டார், இது சரத்து 370-க்கு வழிவகுத்தது?",
+            "options": [
+                ("1947", "1947"),
+                ("1948", "1948"),
+                ("1950", "1950"),
+                ("1954", "1954")
+            ],
+            "correct_key": "A",
+            "exp_en": "Maharaja Hari Singh signed the Instrument of Accession on 26 October 1947, acceding to India in respect of Defence, External Affairs, and Communications.",
+            "exp_ta": "மகாராஜா ஹரி சிங் 1947 அக்டோபர் 26 அன்று இணைப்பு ஆவணத்தில் கையெழுத்திட்டு, பாதுகாப்பு, வெளியுறவு மற்றும் தகவல் தொடர்பு ஆகிய துறைகளில் இந்தியாவுடன் இணைந்தார்.",
+            "why_a_en": "The Instrument of Accession was executed in October 1947.",
+            "why_a_ta": "இணைப்பு ஆவணம் 1947 அக்டோபரில் கையெழுத்தானது.",
+            "why_b_en": "1948 was when the issue was taken to the UN Security Council.",
+            "why_b_ta": "1948-ல் இப்பிரச்சினை ஐ.நா பாதுகாப்பு அவைக்கு கொண்டு செல்லப்பட்டது.",
+            "why_c_en": "1950 was when the Constitution of India commenced with Article 370.",
+            "why_c_ta": "1950-ல் சரத்து 370 உடன் இந்திய அரசியலமைப்பு நடைமுறைக்கு வந்தது.",
+            "why_d_en": "1954 was when the landmark Presidential Order (C.O. 48) was issued.",
+            "why_d_ta": "1954-ல் மைல்கல் குடியரசுத் தலைவர் உத்தரவு (C.O. 48) பிறப்பிக்கப்பட்டது.",
+            "tip_en": "Three surrendered subjects: Defence, External Affairs, and Communications.",
+            "tip_ta": "ஒப்படைக்கப்பட்ட மூன்று துறைகள்: பாதுகாப்பு, வெளியுறவு மற்றும் தகவல் தொடர்பு.",
+            "fact_en": "Lord Mountbatten accepted the accession on 27 October 1947.",
+            "fact_ta": "மவுண்ட்பேட்டன் பிரபு 1947 அக்டோபர் 27 அன்று இணைப்பை ஏற்றுக்கொண்டார்."
+        },
+        # 25
+        {
+            "subtopic": "States without Part XXI Articles",
+            "stem_en": "[TNPSC Group 1 2019, Group 2 2022]\nWhich of the following North-Eastern States does NOT have a dedicated Article in the 371 series (371 to 371J)?",
+            "stem_ta": "[TNPSC குரூப் 1 2019, குரூப் 2 2022]\nபின்வரும் வடகிழக்கு மாநிலங்களில் எது 371 தொடரில் (371 முதல் 371J வரை) பிரத்யேக சரத்தைக் கொண்டிருக்கவில்லை?",
+            "options": [
+                ("Meghalaya", "மேகாலயா"),
+                ("Nagaland", "நாகாலாந்து"),
+                ("Manipur", "மணிப்பூர்"),
+                ("Mizoram", "மிசோரம்")
+            ],
+            "correct_key": "A",
+            "exp_en": "Meghalaya (and Tripura) do not have dedicated Articles in the 371 series. Nagaland has 371A, Manipur has 371C, Mizoram has 371G, Assam has 371B, Sikkim has 371F, and Arunachal Pradesh has 371H.",
+            "exp_ta": "மேகாலயா (மற்றும் திரிபுரா) 371 தொடரில் பிரத்யேக சரத்துகளைக் கொண்டிருக்கவில்லை. நாகாலாந்து 371A, மணிப்பூர் 371C, மிசோரம் 371G, அசாம் 371B, சிக்கிம் 371F மற்றும் அருணாச்சலப் பிரதேசம் 371H ஆகியவற்றைக் கொண்டுள்ளன.",
+            "why_a_en": "Meghalaya relies primarily on the Sixth Schedule, having no separate 371 article.",
+            "why_a_ta": "மேகாலயா முக்கியமாக ஆறாவது அட்டவணையை நம்பியுள்ளது, தனி 371 சரத்தைக் கொண்டிருக்கவில்லை.",
+            "why_b_en": "Nagaland has Article 371A.",
+            "why_b_ta": "நாகாலாந்திற்கு சரத்து 371A உள்ளது.",
+            "why_c_en": "Manipur has Article 371C.",
+            "why_c_ta": "மணிப்பூருக்கு சரத்து 371C உள்ளது.",
+            "why_d_en": "Mizoram has Article 371G.",
+            "why_d_ta": "மிசோரமிற்கு சரத்து 371G உள்ளது.",
+            "tip_en": "Two NE states without 371 articles: Meghalaya and Tripura.",
+            "tip_ta": "371 சரத்துகள் இல்லாத இரண்டு வடகிழக்கு மாநிலங்கள்: மேகாலயா மற்றும் திரிபுரா.",
+            "fact_en": "Meghalaya was carved out of Assam in 1972.",
+            "fact_ta": "மேகாலயா 1972-ல் அசாமிலிருந்து பிரிக்கப்பட்டது."
+        },
+        # 26
+        {
+            "subtopic": "Article 371A Assembly Veto Subject",
+            "stem_en": "[TNPSC Group 1 2017, Group 4 2019]\nUnder Article 371A(1)(a), which of the following matters is NOT protected from Acts of Parliament without a Nagaland Assembly resolution?",
+            "stem_ta": "[TNPSC குரூப் 1 2017, குரூப் 4 2019]\nசரத்து 371A(1)(a)-ன் கீழ், நாகாலாந்து சட்டமன்றத் தீர்மானமின்றி நாடாளுமன்றச் சட்டங்களிலிருந்து பின்வருவனவற்றில் எது பாதுகாக்கப்படவில்லை?",
+            "options": [
+                ("National Defence and Security", "தேசியப் பாதுகாப்பு மற்றும் இறையாண்மை"),
+                ("Religious or social practices of the Nagas", "நாகர்களின் மத அல்லது சமூக நடைமுறைகள்"),
+                ("Naga customary law and procedure", "நாகா மரபுச் சட்டம் மற்றும் நடைமுறை"),
+                ("Ownership and transfer of land and its resources", "நிலம் மற்றும் அதன் வளங்களின் உரிமை மற்றும் பரிமாற்றம்")
+            ],
+            "correct_key": "A",
+            "exp_en": "National Defence is an exclusive Union subject (Union List Entry 1) and is NOT subject to any state assembly resolution under Article 371A. Article 371A protects only: (i) religious/social practices, (ii) customary law/procedure, (iii) administration of civil/criminal justice involving customary law, and (iv) ownership and transfer of land and resources.",
+            "exp_ta": "தேசிய பாதுகாப்பு என்பது ஒன்றியத்தின் பிரத்யேகப் பாடமாகும் (மத்தியப் பட்டியல் பதிவு 1) மற்றும் சரத்து 371A-ன் கீழ் சட்டமன்றத் தீர்மானத்திற்கு உட்பட்டதல்ல. சரத்து 371A பாதுகாப்பது: (i) மத/சமூக நடைமுறைகள், (ii) மரபுச் சட்டம்/நடைமுறை, (iii) மரபுச் சட்டம் தொடர்பான உரிமையியல்/குற்றவியல் நீதி நிர்வாகம், மற்றும் (iv) நிலம் மற்றும் அதன் வளங்களின் உரிமை மற்றும் பரிமாற்றம்.",
+            "why_a_en": "National Defence is never subject to state assembly veto.",
+            "why_a_ta": "தேசியப் பாதுகாப்பு ஒருபோதும் மாநில சட்டமன்ற வீட்டோவிற்கு உட்பட்டதல்ல.",
+            "why_b_en": "Protected under Article 371A(1)(a)(i).",
+            "why_b_ta": "சரத்து 371A(1)(a)(i)-ன் கீழ் பாதுகாக்கப்படுகிறது.",
+            "why_c_en": "Protected under Article 371A(1)(a)(ii).",
+            "why_c_ta": "சரத்து 371A(1)(a)(ii)-ன் கீழ் பாதுகாக்கப்படுகிறது.",
+            "why_d_en": "Protected under Article 371A(1)(a)(iv).",
+            "why_d_ta": "சரத்து 371A(1)(a)(iv)-ன் கீழ் பாதுகாக்கப்படுகிறது.",
+            "tip_en": "Article 371A shields 4 specific internal cultural and land matters, not sovereign union subjects.",
+            "tip_ta": "சரத்து 371A 4 குறிப்பிட்ட உள்நாட்டு கலாச்சார மற்றும் நில விவகாரங்களைப் பாதுகாக்கிறது, ஒன்றிய இறையாண்மைப் பாடங்களை அல்ல.",
+            "fact_en": "Armed Forces (Special Powers) Act, 1958 applies to Nagaland as a law relating to defence/security.",
+            "fact_ta": "பாதுகாப்பு தொடர்பான சட்டமாக ஆயுதப்படை (சிறப்பு அதிகாரங்கள்) சட்டம் 1958 நாகாலாந்திற்குப் பொருந்துகிறது."
+        },
+        # 27
+        {
+            "subtopic": "Article 371D Presidential Order 1975",
+            "stem_en": "[TNPSC Group 2 2016, Group 1 2018]\nThe Presidential Order issued in 1975 under Article 371D for public employment in Andhra Pradesh is commonly known as what?",
+            "stem_ta": "[TNPSC குரூப் 2 2016, குரூப் 1 2018]\nஆந்திரப் பிரதேசத்தில் பொது வேலைவாய்ப்பிற்காக சரத்து 371D-ன் கீழ் 1975-ல் பிறப்பிக்கப்பட்ட குடியரசுத் தலைவர் உத்தரவு பொதுவாக எவ்வாறு அழைக்கப்படுகிறது?",
+            "options": [
+                ("Andhra Pradesh Public Employment (Organisation of Local Cadres and Regulation of Direct Recruitment) Order", "ஆந்திரப் பிரதேச பொது வேலைவாய்ப்பு (உள்ளூர் பணிகளை ஒழுங்கமைத்தல் மற்றும் நேரடி ஆட்சேர்ப்பு முறைப்படுத்துதல்) உத்தரவு"),
+                ("Mulki Public Services Order", "முல்கி பொதுப் பணிகள் உத்தரவு"),
+                ("Six-Point Formula Enforcement Order", "ஆறு அம்ச சூத்திர அமலாக்க உத்தரவு"),
+                ("Andhra Regional Committee Order", "ஆந்திர பிராந்தியக் குழு உத்தரவு")
+            ],
+            "correct_key": "A",
+            "exp_en": "The landmark Presidential Order issued under Article 371D(1) and (2) is the Andhra Pradesh Public Employment (Organisation of Local Cadres and Regulation of Direct Recruitment) Order, 1975.",
+            "exp_ta": "சரத்து 371D(1) மற்றும் (2)-ன் கீழ் பிறப்பிக்கப்பட்ட மைல்கல் குடியரசுத் தலைவர் உத்தரவு 'ஆந்திரப் பிரதேச பொது வேலைவாய்ப்பு (உள்ளூர் பணிகளை ஒழுங்கமைத்தல் மற்றும் நேரடி ஆட்சேர்ப்பு முறைப்படுத்துதல்) உத்தரவு, 1975' ஆகும்.",
+            "why_a_en": "This is the exact statutory title of the 1975 Presidential Order.",
+            "why_a_ta": "இது 1975 குடியரசுத் தலைவர் உத்தரவின் சரியான சட்டப்பூர்வ தலைப்பாகும்.",
+            "why_b_en": "Mulki rules were the pre-existing 1919 Hyderabad rules, not the 1975 Order.",
+            "why_b_ta": "முல்கி விதிகள் முந்தைய 1919 ஹைதராபாத் விதிகள், 1975 உத்தரவு அல்ல.",
+            "why_c_en": "Six-Point Formula was the political accord behind the order, not its formal title.",
+            "why_c_ta": "ஆறு அம்ச சூத்திரம் என்பது உத்தரவின் பின்னணியில் உள்ள அரசியல் உடன்படிக்கை, அதன் முறையான தலைப்பு அல்ல.",
+            "why_d_en": "Andhra Regional Committee existed under the unamended Article 371.",
+            "why_d_ta": "ஆந்திர பிராந்தியக் குழு திருத்தப்படாத சரத்து 371-ன் கீழ் இருந்தது.",
+            "tip_en": "This order organized the state into 6 zones (later 7 zones in Telangana).",
+            "tip_ta": "இந்த உத்தரவு மாநிலத்தை 6 மண்டலங்களாக ஒழுங்கமைத்தது (பின்னர் தெலங்கானாவில் 7 மண்டலங்கள்).",
+            "fact_en": "President Fakhruddin Ali Ahmed signed the 1975 Order.",
+            "fact_ta": "குடியரசுத் தலைவர் பக்ருதீன் அலி அகமது 1975 உத்தரவில் கையெழுத்திட்டார்."
+        },
+        # 28
+        {
+            "subtopic": "Article 371F Clause (k) Pre-Merger Laws",
+            "stem_en": "[TNPSC Group 1 2020, Group 2 2022]\nUnder Article 371F(k) of the Indian Constitution, how long do pre-merger laws in force in Sikkim continue to operate?",
+            "stem_ta": "[TNPSC குரூப் 1 2020, குரூப் 2 2022]\nஇந்திய அரசியலமைப்பின் சரத்து 371F(k)-ன் கீழ், சிக்கிமில் நடைமுறையில் இருந்த இணைப்பிற்கு முந்தைய பழைய சட்டங்கள் எவ்வளவு காலம் தொடர்ந்து செயல்படும்?",
+            "options": [
+                ("Until altered, repealed, or amended by a competent Legislature or authority", "தகுந்த சட்டமன்றம் அல்லது அதிகார அமைப்பால் மாற்றப்படும், ரத்து செய்யப்படும் அல்லது திருத்தப்படும் வரை"),
+                ("For a fixed period of 10 years only", "10 ஆண்டுகள் என்ற குறிப்பிட்ட காலத்திற்கு மட்டுமே"),
+                ("For a fixed period of 5 years only", "5 ஆண்டுகள் என்ற குறிப்பிட்ட காலத்திற்கு மட்டுமே"),
+                ("Until the dissolution of the First Legislative Assembly", "முதலாவது சட்டமன்றம் கலைக்கப்படும் வரை மட்டுமே")
+            ],
+            "correct_key": "A",
+            "exp_en": "Article 371F(k) provides that all laws in force immediately before the appointed day in Sikkim shall continue in force until altered or repealed or amended by a competent Legislature or other competent authority.",
+            "exp_ta": "சரத்து 371F(k), சிக்கிமில் நியமிக்கப்பட்ட நாளுக்கு முன்னர் நடைமுறையில் இருந்த அனைத்து சட்டங்களும் தகுந்த சட்டமன்றம் அல்லது வேறு தகுந்த அதிகார அமைப்பால் மாற்றப்படும், ரத்து செய்யப்படும் அல்லது திருத்தப்படும் வரை தொடர்ந்து நடைமுறையில் இருக்கும் என்று வகை செய்கிறது.",
+            "why_a_en": "Article 371F(k) prescribes continuation until legislative alteration/repeal without an automatic expiry date.",
+            "why_a_ta": "சரத்து 371F(k) காலாவதி தேதி இல்லாமல் சட்டமன்ற மாற்றம்/ரத்து செய்யப்படும் வரை நீடிப்பதை பரிந்துரைக்கிறது.",
+            "why_b_en": "There is no 10-year sunset clause in Article 371F(k).",
+            "why_b_ta": "சரத்து 371F(k)-ல் 10 ஆண்டு காலக்கெடு எதுவும் இல்லை.",
+            "why_c_en": "There is no 5-year sunset clause.",
+            "why_c_ta": "5 ஆண்டு காலக்கெடு எதுவும் இல்லை.",
+            "why_d_en": "Assembly dissolution does not affect the validity of laws.",
+            "why_d_ta": "சட்டமன்றக் கலைப்பு சட்டங்களின் செல்லுபடியாகும் தன்மையைப் பாதிக்காது.",
+            "tip_en": "Similar continuation provisions exist generally in Article 372 for all pre-constitutional Indian laws.",
+            "tip_ta": "அரசியலமைப்புக்கு முந்தைய அனைத்து இந்தியச் சட்டங்களுக்கும் பொதுவாக சரத்து 372-ல் இதே போன்ற தொடர்ச்சி விதிகள் உள்ளன.",
+            "fact_en": "Sikkim Income Tax Manual 1948 continued to govern income tax in Sikkim until 2008.",
+            "fact_ta": "சிக்கிம் வருமான வரி கையேடு 1948 சிக்கிமில் 2008 வரை வருமான வரியை நிர்வகித்து வந்தது."
+        },
+        # 29
+        {
+            "subtopic": "Article 371J Districts Count",
+            "stem_en": "[TNPSC Group 4 2019, Group 2 2021]\nHow many backward districts of Karnataka were originally identified to benefit from the special provisions under Article 371J?",
+            "stem_ta": "[TNPSC குரூப் 4 2019, குரூப் 2 2021]\nசரத்து 371J-ன் கீழான சிறப்பு ஏற்பாடுகளிலிருந்து பயனடைவதற்காக கர்நாடகாவின் எத்தனை பின்தங்கிய மாவட்டங்கள் முதலில் அடையாளம் காணப்பட்டன?",
+            "options": [
+                ("6 districts", "6 மாவட்டங்கள்"),
+                ("4 districts", "4 மாவட்டங்கள்"),
+                ("8 districts", "8 மாவட்டங்கள்"),
+                ("10 districts", "10 மாவட்டங்கள்")
+            ],
+            "correct_key": "A",
+            "exp_en": "Six backward districts were originally covered under Article 371J: Gulbarga, Bidar, Raichur, Koppal, Yadgir, and Bellary (a 7th district, Vijayanagara, was carved out of Bellary in 2021).",
+            "exp_ta": "சரத்து 371J-ன் கீழ் முதலில் 6 பின்தங்கிய மாவட்டங்கள் உள்ளடக்கப் பட்டன: குல்பர்கா, பீதர், ராய்ச்சூர், கொப்பல், யாத்கிர் மற்றும் பெல்லாரி (2021-ல் பெல்லாரியிலிருந்து 7வது மாவட்டமாக விஜயநகரா உருவாக்கப்பட்டது).",
+            "why_a_en": "6 districts were originally specified in the constitutional order.",
+            "why_a_ta": "அரசியலமைப்பு உத்தரவில் முதலில் 6 மாவட்டங்கள் குறிப்பிடப்பட்டன.",
+            "why_b_en": "4 districts is undercounting.",
+            "why_b_ta": "4 மாவட்டங்கள் என்பது தவறான குறைவான எண்ணிக்கை.",
+            "why_c_en": "8 districts is incorrect.",
+            "why_c_ta": "8 மாவட்டங்கள் என்பது தவறானது.",
+            "why_d_en": "10 districts refers to Fifth Schedule states, not 371J districts.",
+            "why_d_ta": "10 மாவட்டங்கள் என்பது 5வது அட்டவணை மாநிலங்களைக் குறிக்கிறது, 371J மாவட்டங்களை அல்ல.",
+            "tip_en": "Vijayanagara was added as the 7th district to Kalyana Karnataka in October 2021.",
+            "tip_ta": "2021 அக்டோபரில் கல்யாண கர்நாடகாவின் 7வது மாவட்டமாக விஜயநகரா சேர்க்கப்பட்டது.",
+            "fact_en": "The region covers over 44,000 sq km and represents about 18% of Karnataka's population.",
+            "fact_ta": "இப்பகுதி 44,000 சதுர கி.மீ-க்கும் மேல் பரப்பளவைக் கொண்டுள்ளது மற்றும் கர்நாடகாவின் மக்கள் தொகையில் சுமார் 18%-ஐ பிரதிபலிக்கிறது."
+        },
+        # 30
+        {
+            "subtopic": "Article 370 Supreme Court Verdict Date",
+            "stem_en": "[TNPSC Group 1 2024 Model, Group 2 2024]\nOn which date did the Supreme Court Constitution Bench deliver its unanimous judgment upholding the abrogation of Article 370?",
+            "stem_ta": "[TNPSC குரூப் 1 2024 மாதிரி, குரூப் 2 2024]\nசரத்து 370 ரத்து செய்யப்பட்டதை உறுதி செய்து உச்ச நீதிமன்ற அரசியலமைப்பு அமர்வு தனது ஒருமனதான தீர்ப்பை எந்தத் தேதியில் வழங்கியது?",
+            "options": [
+                ("11 December 2023", "11 டிசம்பர் 2023"),
+                ("5 August 2019", "5 ஆகஸ்ட் 2019"),
+                ("31 October 2019", "31 அக்டோபர் 2019"),
+                ("26 January 2020", "26 ஜனவரி 2020")
+            ],
+            "correct_key": "A",
+            "exp_en": "On 11 December 2023, a five-judge Constitution Bench headed by CJI D.Y. Chandrachud unanimously upheld the constitutional validity of the Union Government's actions abrogating Article 370.",
+            "exp_ta": "11 டிசம்பர் 2023 அன்று, தலைமை நீதிபதி டி.ஒய். சந்திரசூட் தலைமையிலான ஐந்து நீதிபதிகள் கொண்ட அரசியலமைப்பு அமர்வு சரத்து 370-ஐ ரத்து செய்த மத்திய அரசின் நடவடிக்கைகளின் அரசியலமைப்புச் செல்லுபடியாகும் தன்மையை ஒருமனதாக உறுதி செய்தது.",
+            "why_a_en": "The judgment was delivered on 11 December 2023.",
+            "why_a_ta": "தீர்ப்பு 11 டிசம்பர் 2023 அன்று வழங்கப்பட்டது.",
+            "why_b_en": "5 August 2019 was when C.O. 272 and statutory resolutions were moved in Parliament.",
+            "why_b_ta": "5 ஆகஸ்ட் 2019 அன்று C.O. 272 மற்றும் தீர்மானங்கள் நாடாளுமன்றத்தில் கொண்டு வரப்பட்டன.",
+            "why_c_en": "31 October 2019 was when the J&K Reorganisation Act 2019 came into effect.",
+            "why_c_ta": "31 அக்டோபர் 2019 அன்று ஜம்மு காஷ்மீர் மறுசீரமைப்பு சட்டம் 2019 நடைமுறைக்கு வந்தது.",
+            "why_d_en": "26 January 2020 is Republic Day, unrelated to this judgment.",
+            "why_d_ta": "26 ஜனவரி 2020 குடியரசு நாள், இத்தீர்ப்போடு தொடர்பில்லை.",
+            "tip_en": "Supreme Court directed restoration of statehood to J&K at the earliest and elections by Sept 30, 2024.",
+            "tip_ta": "ஜம்மு காஷ்மீருக்கு விரைவில் மாநில அந்தஸ்தை மீட்டெடுக்கவும், 2024 செப்டம்பர் 30-க்குள் தேர்தல் நடத்தவும் உச்ச நீதிமன்றம் உத்தரவிட்டது.",
+            "fact_en": "The case was titled 'In Re: Article 370 of the Constitution'.",
+            "fact_ta": "இவ்வழக்கு 'அரசியலமைப்பின் சரத்து 370 மறுஆய்வு வழக்கு' என்று அழைக்கப்பட்டது."
+        },
+        # 31
+        {
+            "subtopic": "Article 371 Maharashtra Vidarbha Marathwada",
+            "stem_en": "[TNPSC Group 2 2017, Group 4 2019]\nUnder Article 371(2), what is the key constitutional mechanism provided to address regional development in Maharashtra?",
+            "stem_ta": "[TNPSC குரூப் 2 2017, குரூப் 4 2019]\nசரத்து 371(2)-ன் கீழ், மகாராஷ்டிராவில் பிராந்திய வளர்ச்சியை நிவர்த்தி செய்வதற்காக வழங்கப்பட்ட முக்கிய அரசியலமைப்பு வழிமுறை எது?",
+            "options": [
+                ("Separate development boards for Vidarbha, Marathwada, and the rest of Maharashtra", "விதர்பா, மராத்வாடா மற்றும் எஞ்சிய மகாராஷ்டிராவிற்கு தனி வளர்ச்சி வாரியங்கள்"),
+                ("Creation of an Autonomous Hill Council", "தன்னாட்சி மலைக் குழுவை உருவாக்குதல்"),
+                ("Bifurcation of the State into two administrative territories", "மாநிலத்தை இரண்டு நிர்வாகப் பகுதிகளாகப் பிரித்தல்"),
+                ("Establishment of a Special Administrative Tribunal", "ஒரு சிறப்பு நிர்வாகத் தீர்ப்பாயத்தை நிறுவுதல்")
+            ],
+            "correct_key": "A",
+            "exp_en": "Article 371(2) specifically provides for the establishment of separate development boards for Vidarbha, Marathwada and the rest of Maharashtra.",
+            "exp_ta": "சரத்து 371(2) விதர்பா, மராத்வாடா மற்றும் எஞ்சிய மகாராஷ்டிராவிற்கு தனி வளர்ச்சி வாரியங்களை நிறுவுவதை வெளிப்படையாக வகை செய்கிறது.",
+            "why_a_en": "Article 371(2) establishes separate development boards.",
+            "why_a_ta": "சரத்து 371(2) தனி வளர்ச்சி வாரியங்களை நிறுவுகிறது.",
+            "why_b_en": "Hill Councils exist in Ladakh/Darjeeling, not under Article 371(2).",
+            "why_b_ta": "மலைக் குழுக்கள் லடாக்/டார்ஜிலிங்கில் உள்ளன, சரத்து 371(2)-ன் கீழ் இல்லை.",
+            "why_c_en": "State bifurcation is governed by Article 3, not Article 371.",
+            "why_c_ta": "மாநிலப் பிரிப்பு சரத்து 3-ஆல் நிர்வகிக்கப்படுகிறது, சரத்து 371-ஆல் அல்ல.",
+            "why_d_en": "Tribunal was created under Article 371D in Andhra Pradesh, not 371 in Maharashtra.",
+            "why_d_ta": "தீர்ப்பாயம் ஆந்திராவில் சரத்து 371D-ன் கீழ் உருவாக்கப்பட்டது, மகாராஷ்டிராவில் 371-ன் கீழ் அல்ல.",
+            "tip_en": "The boards table annual performance reports in the Maharashtra Assembly.",
+            "tip_ta": "இவ்வாரியங்கள் மகாராஷ்டிர சட்டமன்றத்தில் ஆண்டு செயல்பாட்டு அறிக்கைகளை சமர்ப்பிக்கின்றன.",
+            "fact_en": "The development boards in Maharashtra were first constituted by Presidential Order in 1994.",
+            "fact_ta": "மகாராஷ்டிராவில் வளர்ச்சி வாரியங்கள் முதன்முதலில் 1994-ல் குடியரசுத் தலைவர் உத்தரவால் அமைக்கப்பட்டன."
+        },
+        # 32
+        {
+            "subtopic": "Sixth Schedule Comparison States",
+            "stem_en": "[TNPSC Group 1 2018, Group 4 2021]\nWhich four North-Eastern states are covered under the Sixth Schedule of the Indian Constitution, distinguishing them from Article 371A/371C states?",
+            "stem_ta": "[TNPSC குரூப் 1 2018, குரூப் 4 2021]\nஇந்திய அரசியலமைப்பின் ஆறாவது அட்டவணையின் கீழ் உள்ளடக்கப்பட்டுள்ள நான்கு வடகிழக்கு மாநிலங்கள் எவை (சரத்து 371A/371C மாநிலங்களிலிருந்து இவற்றை வேறுபடுத்துகிறது)?",
+            "options": [
+                ("Assam, Meghalaya, Tripura, and Mizoram", "அசாம், மேகாலயா, திரிபுரா மற்றும் மிசோரம்"),
+                ("Assam, Nagaland, Manipur, and Mizoram", "அசாம், நாகாலாந்து, மணிப்பூர் மற்றும் மிசோரம்"),
+                ("Arunachal Pradesh, Nagaland, Manipur, and Sikkim", "அருணாச்சலப் பிரதேசம், நாகாலாந்து, மணிப்பூர் மற்றும் சிக்கிம்"),
+                ("Meghalaya, Tripura, Nagaland, and Arunachal Pradesh", "மேகாலயா, திரிபுரா, நாகாலாந்து மற்றும் அருணாச்சலப் பிரதேசம்")
+            ],
+            "correct_key": "A",
+            "exp_en": "The Sixth Schedule applies exclusively to four tribal states: Assam, Meghalaya, Tripura, and Mizoram (acronym AMTM). Nagaland, Manipur, and Arunachal Pradesh are NOT Sixth Schedule states.",
+            "exp_ta": "ஆறாவது அட்டவணை நான்கு பழங்குடியினர் மாநிலங்களுக்கு மட்டுமே பொருந்தும்: அசாம், மேகாலயா, திரிபுரா மற்றும் மிசோரம் (AMTM). நாகாலாந்து, மணிப்பூர் மற்றும் அருணாச்சலப் பிரதேசம் ஆறாவது அட்டவணை மாநிலங்கள் அல்ல.",
+            "why_a_en": "AMTM (Assam, Meghalaya, Tripura, Mizoram) is the constitutionally defined set under Article 244(2).",
+            "why_a_ta": "AMTM (அசாம், மேகாலயா, திரிபுரா, மிசோரம்) என்பது சரத்து 244(2)-ன் கீழ் அரசியலமைப்பு ரீதியாக வரையறுக்கப்பட்ட தொகுப்பாகும்.",
+            "why_b_en": "Nagaland and Manipur are not in the Sixth Schedule.",
+            "why_b_ta": "நாகாலாந்து மற்றும் மணிப்பூர் ஆறாவது அட்டவணையில் இல்லை.",
+            "why_c_en": "None of these four are in the Sixth Schedule except parts of early Assam.",
+            "why_c_ta": "இவற்றில் எதுவும் ஆறாவது அட்டவணையில் இல்லை.",
+            "why_d_en": "Nagaland and Arunachal Pradesh are excluded.",
+            "why_d_ta": "நாகாலாந்து மற்றும் அருணாச்சலப் பிரதேசம் விலக்கப்பட்டுள்ளன.",
+            "tip_en": "Standard Mnemonic: AMTM (Assam, Meghalaya, Tripura, Mizoram).",
+            "tip_ta": "நிலையான நினைவுக்குறிப்பு: AMTM (அசாம், மேகாலயா, திரிபுரா, மிசோரம்).",
+            "fact_en": "Mizoram features in BOTH the Sixth Schedule (for Chakma, Mara, and Lai ADCs) and Article 371G.",
+            "fact_ta": "மிசோரம் ஆறாவது அட்டவணை (சக்மா, மரா, லாய் ADCs) மற்றும் சரத்து 371G ஆகிய இரண்டிலும் இடம்பெற்றுள்ளது."
+        },
+        # 33
+        {
+            "subtopic": "Article 371H Arunachal Pradesh Assembly",
+            "stem_en": "[TNPSC Group 2 2019, Group 4 2022]\nUnder Article 371H(b), the Legislative Assembly of Arunachal Pradesh shall consist of not less than how many members?",
+            "stem_ta": "[TNPSC குரூப் 2 2019, குரூப் 4 2022]\nசரத்து 371H(b)-ன் கீழ், அருணாச்சலப் பிரதேச சட்டமன்றம் எத்தனை உறுப்பினர்களுக்குக் குறையாமல் இருக்க வேண்டும்?",
+            "options": [
+                ("30 members", "30 உறுப்பினர்கள்"),
+                ("40 members", "40 உறுப்பினர்கள்"),
+                ("32 members", "32 உறுப்பினர்கள்"),
+                ("60 members", "60 உறுப்பினர்கள்")
+            ],
+            "correct_key": "A",
+            "exp_en": "Article 371H(b) specifies that the Legislative Assembly of the State of Arunachal Pradesh shall consist of not less than 30 members.",
+            "exp_ta": "சரத்து 371H(b) அருணாச்சலப் பிரதேச மாநில சட்டமன்றம் 30 உறுப்பினர்களுக்குக் குறையாமல் இருக்க வேண்டும் என்று குறிப்பிடுகிறது.",
+            "why_a_en": "Article 371H(b) explicitly fixes 30 members.",
+            "why_a_ta": "சரத்து 371H(b) வெளிப்படையாக 30 உறுப்பினர்களை நிர்ணயிக்கிறது.",
+            "why_b_en": "40 is the minimum for Mizoram under Article 371G.",
+            "why_b_ta": "40 என்பது சரத்து 371G-ன் கீழ் மிசோரமிற்கான குறைந்தபட்ச பலமாகும்.",
+            "why_c_en": "32 relates to Sikkim's actual size.",
+            "why_c_ta": "32 சிக்கிமின் உண்மையான பலம் தொடர்பானது.",
+            "why_d_en": "60 is the general constitutional floor under Article 170.",
+            "why_d_ta": "60 என்பது சரத்து 170-ன் பொதுவான அரசியலமைப்பு குறைந்தபட்ச பலமாகும்.",
+            "tip_en": "Arunachal Pradesh currently has 60 assembly members, well above the 30-member constitutional minimum.",
+            "tip_ta": "அருணாச்சலப் பிரதேசத்தில் தற்போது 60 சட்டமன்ற உறுப்பினர்கள் உள்ளனர், இது 30 உறுப்பினர் அரசியலமைப்பு குறைந்தபட்சத்தை விட அதிகம்.",
+            "fact_en": "Arunachal Pradesh was granted full statehood on 20 February 1987.",
+            "fact_ta": "அருணாச்சலப் பிரதேசத்திற்கு 1987 பிப்ரவரி 20 அன்று முழு மாநில அந்தஸ்து வழங்கப்பட்டது."
+        },
+        # 34
+        {
+            "subtopic": "Article 371B Insertion Amendment",
+            "stem_en": "[TNPSC Group 1 2014, Group 2 2016]\nArticle 371B was inserted into the Indian Constitution by which Amendment Act?",
+            "stem_ta": "[TNPSC குரூப் 1 2014, குரூப் 2 2016]\nஎந்தத் திருத்தச் சட்டம் மூலம் இந்திய அரசியலமைப்பில் சரத்து 371B சேர்க்கப்பட்டது?",
+            "options": [
+                ("22nd Constitutional Amendment Act, 1969", "22வது அரசியலமைப்பு திருத்தச் சட்டம், 1969"),
+                ("13th Constitutional Amendment Act, 1962", "13வது அரசியலமைப்பு திருத்தச் சட்டம், 1962"),
+                ("27th Constitutional Amendment Act, 1971", "27வது அரசியலமைப்பு திருத்தச் சட்டம், 1971"),
+                ("32nd Constitutional Amendment Act, 1973", "32வது அரசியலமைப்பு திருத்தச் சட்டம், 1973")
+            ],
+            "correct_key": "A",
+            "exp_en": "Article 371B (Assam) was inserted by the 22nd Constitutional Amendment Act, 1969.",
+            "exp_ta": "சரத்து 371B (அசாம்) 22வது அரசியலமைப்பு திருத்தச் சட்டம் 1969 மூலம் சேர்க்கப்பட்டது.",
+            "why_a_en": "22nd Amendment 1969 inserted Article 371B.",
+            "why_a_ta": "22வது திருத்தம் 1969 சரத்து 371B-ஐ சேர்த்தது.",
+            "why_b_en": "13th Amendment inserted Article 371A.",
+            "why_b_ta": "13வது திருத்தம் சரத்து 371A-ஐ சேர்த்தது.",
+            "why_c_en": "27th Amendment inserted Article 371C.",
+            "why_c_ta": "27வது திருத்தம் சரத்து 371C-ஐ சேர்த்தது.",
+            "why_d_en": "32nd Amendment inserted Articles 371D and 371E.",
+            "why_d_ta": "32வது திருத்தம் சரத்துகள் 371D மற்றும் 371E-ஐ சேர்த்தது.",
+            "tip_en": "Chronology: 13th (Nagaland) -> 22nd (Assam) -> 27th (Manipur) -> 32nd (Andhra Pradesh).",
+            "tip_ta": "காலவரிசை: 13வது (நாகாலாந்து) -> 22வது (அசாம்) -> 27வது (மணிப்பூர்) -> 32வது (ஆந்திரா).",
+            "fact_en": "The 22nd Amendment also enabled the creation of autonomous Meghalaya within Assam under Article 244A.",
+            "fact_ta": "22வது திருத்தம் சரத்து 244A-ன் கீழ் அசாமிற்குள் தன்னாட்சி மேகாலயாவை உருவாக்கவும் உதவியது."
+        },
+        # 35
+        {
+            "subtopic": "Article 371C Insertion Amendment",
+            "stem_en": "[TNPSC Group 1 2017, Group 2 2018]\nArticle 371C of the Constitution of India dealing with Manipur was inserted by which Constitutional Amendment Act?",
+            "stem_ta": "[TNPSC குரூப் 1 2017, குரூப் 2 2018]\nமணிப்பூர் தொடர்பான இந்திய அரசியலமைப்பின் சரத்து 371C எந்த அரசியலமைப்பு திருத்தச் சட்டம் மூலம் சேர்க்கப்பட்டது?",
+            "options": [
+                ("27th Constitutional Amendment Act, 1971", "27வது அரசியலமைப்பு திருத்தச் சட்டம், 1971"),
+                ("22nd Constitutional Amendment Act, 1969", "22வது அரசியலமைப்பு திருத்தச் சட்டம், 1969"),
+                ("36th Constitutional Amendment Act, 1975", "36வது அரசியலமைப்பு திருத்தச் சட்டம், 1975"),
+                ("53rd Constitutional Amendment Act, 1986", "53வது அரசியலமைப்பு திருத்தச் சட்டம், 1986")
+            ],
+            "correct_key": "A",
+            "exp_en": "Article 371C was inserted by the 27th Constitutional Amendment Act, 1971 to provide for a Hill Areas Committee of the Manipur Legislative Assembly.",
+            "exp_ta": "மணிப்பூர் சட்டமன்றத்தின் மலைப்பகுதிகள் குழுவிற்கு வகை செய்ய 27வது அரசியலமைப்பு திருத்தச் சட்டம் 1971 மூலம் சரத்து 371C சேர்க்கப்பட்டது.",
+            "why_a_en": "27th Amendment 1971 inserted Article 371C.",
+            "why_a_ta": "27வது திருத்தம் 1971 சரத்து 371C-ஐ சேர்த்தது.",
+            "why_b_en": "22nd Amendment inserted Article 371B.",
+            "why_b_ta": "22வது திருத்தம் சரத்து 371B-ஐ சேர்த்தது.",
+            "why_c_en": "36th Amendment inserted Article 371F.",
+            "why_c_ta": "36வது திருத்தம் சரத்து 371F-ஐ சேர்த்தது.",
+            "why_d_en": "53rd Amendment inserted Article 371G.",
+            "why_d_ta": "53வது திருத்தம் சரத்து 371G-ஐ சேர்த்தது.",
+            "tip_en": "27th Amendment = Manipur (371C) enacted in December 1971.",
+            "tip_ta": "27வது திருத்தம் = மணிப்பூர் (371C) டிசம்பர் 1971-ல் இயற்றப்பட்டது.",
+            "fact_en": "The Hill Areas Committee oversees the administration and development of Manipur's tribal hill districts.",
+            "fact_ta": "மலைப்பகுதிகள் குழு மணிப்பூரின் பழங்குடியினர் மலை மாவட்டங்களின் நிர்வாகம் மற்றும் வளர்ச்சியை மேற்பார்வையிடுகிறது."
+        },
+        # 36
+        {
+            "subtopic": "Article 371G Insertion Amendment",
+            "stem_en": "[TNPSC Group 1 2018, Group 4 2020]\nWhich Constitutional Amendment Act inserted Article 371G relating to Mizoram into the Indian Constitution?",
+            "stem_ta": "[TNPSC குரூப் 1 2018, குரூப் 4 2020]\nமிசோரம் தொடர்பான சரத்து 371G-ஐ இந்திய அரசியலமைப்பில் சேர்த்த அரசியலமைப்பு திருத்தச் சட்டம் எது?",
+            "options": [
+                ("53rd Constitutional Amendment Act, 1986", "53வது அரசியலமைப்பு திருத்தச் சட்டம், 1986"),
+                ("55th Constitutional Amendment Act, 1986", "55வது அரசியலமைப்பு திருத்தச் சட்டம், 1986"),
+                ("56th Constitutional Amendment Act, 1987", "56வது அரசியலமைப்பு திருத்தச் சட்டம், 1987"),
+                ("52nd Constitutional Amendment Act, 1985", "52வது அரசியலமைப்பு திருத்தச் சட்டம், 1985")
+            ],
+            "correct_key": "A",
+            "exp_en": "The 53rd Constitutional Amendment Act, 1986 inserted Article 371G to implement the Mizo Peace Accord.",
+            "exp_ta": "மிசோ அமைதி ஒப்பந்தத்தை செயல்படுத்த 53வது அரசியலமைப்பு திருத்தச் சட்டம் 1986 சரத்து 371G-ஐ சேர்த்தது.",
+            "why_a_en": "53rd Amendment 1986 created Article 371G.",
+            "why_a_ta": "53வது திருத்தம் 1986 சரத்து 371G-ஐ உருவாக்கியது.",
+            "why_b_en": "55th Amendment 1986 created Article 371H for Arunachal Pradesh.",
+            "why_b_ta": "55வது திருத்தம் 1986 அருணாச்சலப் பிரதேசத்திற்காக சரத்து 371H-ஐ உருவாக்கியது.",
+            "why_c_en": "56th Amendment 1987 created Article 371I for Goa.",
+            "why_c_ta": "56வது திருத்தம் 1987 கோவாவிற்காக சரத்து 371I-ஐ உருவாக்கியது.",
+            "why_d_en": "52nd Amendment 1985 added the Tenth Schedule (Anti-Defection Law).",
+            "why_d_ta": "52வது திருத்தம் 1985 பத்தாவது அட்டவணையைச் (கட்சித் தாவல் தடைச் சட்டம்) சேர்த்தது.",
+            "tip_en": "Cluster of 1986-87 amendments: 53rd (Mizoram) -> 55th (Arunachal) -> 56th (Goa).",
+            "tip_ta": "1986-87 திருத்தங்களின் தொகுப்பு: 53வது (மிசோரம்) -> 55வது (அருணாச்சலப் பிரதேசம்) -> 56வது (கோவா).",
+            "fact_en": "Mizoram was upgraded from a Union Territory to a State by the State of Mizoram Act, 1986.",
+            "fact_ta": "மிசோரம் மாநிலச் சட்டம் 1986 மூலம் மிசோரம் யூனியன் பிரதேசத்திலிருந்து மாநிலமாக தரம் உயர்த்தப்பட்டது."
+        },
+        # 37
+        {
+            "subtopic": "Article 371H Insertion Amendment",
+            "stem_en": "[TNPSC Group 2 2017, Group 1 2019]\nArticle 371H relating to Arunachal Pradesh was inserted into the Constitution by which Amendment Act?",
+            "stem_ta": "[TNPSC குரூப் 2 2017, குரூப் 1 2019]\nஅருணாச்சலப் பிரதேசம் தொடர்பான சரத்து 371H எந்தத் திருத்தச் சட்டம் மூலம் அரசியலமைப்பில் சேர்க்கப்பட்டது?",
+            "options": [
+                ("55th Constitutional Amendment Act, 1986", "55வது அரசியலமைப்பு திருத்தச் சட்டம், 1986"),
+                ("53rd Constitutional Amendment Act, 1986", "53வது அரசியலமைப்பு திருத்தச் சட்டம், 1986"),
+                ("56th Constitutional Amendment Act, 1987", "56வது அரசியலமைப்பு திருத்தச் சட்டம், 1987"),
+                ("61st Constitutional Amendment Act, 1988", "61வது அரசியலமைப்பு திருத்தச் சட்டம், 1988")
+            ],
+            "correct_key": "A",
+            "exp_en": "The 55th Constitutional Amendment Act, 1986 inserted Article 371H conferring special responsibility for law and order on the Governor of Arunachal Pradesh.",
+            "exp_ta": "அருணாச்சலப் பிரதேச ஆளுநருக்கு சட்டம் ஒழுங்கு தொடர்பான சிறப்புப் பொறுப்பை வழங்கும் சரத்து 371H-ஐ 55வது அரசியலமைப்பு திருத்தச் சட்டம் 1986 சேர்த்தது.",
+            "why_a_en": "55th Amendment 1986 inserted Article 371H.",
+            "why_a_ta": "55வது திருத்தம் 1986 சரத்து 371H-ஐ சேர்த்தது.",
+            "why_b_en": "53rd Amendment inserted Article 371G for Mizoram.",
+            "why_b_ta": "53வது திருத்தம் மிசோரமிற்காக சரத்து 371G-ஐ சேர்த்தது.",
+            "why_c_en": "56th Amendment inserted Article 371I for Goa.",
+            "why_c_ta": "56வது திருத்தம் கோவாவிற்காக சரத்து 371I-ஐ சேர்த்தது.",
+            "why_d_en": "61st Amendment lowered voting age from 21 to 18.",
+            "why_d_ta": "61வது திருத்தம் வாக்குரிமை வயதை 21-லிருந்து 18 ஆகக் குறைத்தது.",
+            "tip_en": "Sequential pair: 53rd = Mizoram (371G); 55th = Arunachal Pradesh (371H).",
+            "tip_ta": "தொடர் ஜோடி: 53வது = மிசோரம் (371G); 55வது = அருணாச்சலப் பிரதேசம் (371H).",
+            "fact_en": "The State of Arunachal Pradesh Act, 1986 gave it full statehood.",
+            "fact_ta": "அருணாச்சலப் பிரதேச மாநிலச் சட்டம் 1986 அதற்கு முழு மாநில அந்தஸ்தை வழங்கியது."
+        },
+        # 38
+        {
+            "subtopic": "Article 371I Insertion Amendment",
+            "stem_en": "[TNPSC Group 4 2016, Group 2 2018]\nWhich Constitutional Amendment Act inserted Article 371I providing for the Legislative Assembly of Goa?",
+            "stem_ta": "[TNPSC குரூப் 4 2016, குரூப் 2 2018]\nகோவா சட்டமன்றத்திற்கான ஏற்பாடுகளை வழங்கும் சரத்து 371I-ஐ சேர்த்த அரசியலமைப்பு திருத்தச் சட்டம் எது?",
+            "options": [
+                ("56th Constitutional Amendment Act, 1987", "56வது அரசியலமைப்பு திருத்தச் சட்டம், 1987"),
+                ("55th Constitutional Amendment Act, 1986", "55வது அரசியலமைப்பு திருத்தச் சட்டம், 1986"),
+                ("57th Constitutional Amendment Act, 1987", "57வது அரசியலமைப்பு திருத்தச் சட்டம், 1987"),
+                ("58th Constitutional Amendment Act, 1987", "58வது அரசியலமைப்பு திருத்தச் சட்டம், 1987")
+            ],
+            "correct_key": "A",
+            "exp_en": "The 56th Constitutional Amendment Act, 1987 inserted Article 371I providing that the Legislative Assembly of Goa shall consist of not less than 30 members.",
+            "exp_ta": "கோவா சட்டமன்றம் 30 உறுப்பினர்களுக்குக் குறையாமல் இருக்க வேண்டும் என்று வகை செய்யும் சரத்து 371I-ஐ 56வது அரசியலமைப்பு திருத்தச் சட்டம் 1987 சேர்த்தது.",
+            "why_a_en": "56th Amendment 1987 inserted Article 371I.",
+            "why_a_ta": "56வது திருத்தம் 1987 சரத்து 371I-ஐ சேர்த்தது.",
+            "why_b_en": "55th Amendment inserted Article 371H.",
+            "why_b_ta": "55வது திருத்தம் சரத்து 371H-ஐ சேர்த்தது.",
+            "why_c_en": "57th Amendment provided ST seat reservations in NE states assemblies.",
+            "why_c_ta": "57வது திருத்தம் வடகிழக்கு மாநில சட்டமன்றங்களில் பழங்குடியினருக்கு இடஒதுக்கீடு வழங்கியது.",
+            "why_d_en": "58th Amendment provided authoritative Hindi text of the Constitution.",
+            "why_d_ta": "58வது திருத்தம் அரசியலமைப்பின் அதிகாரப்பூர்வ இந்தி உரையை வழங்கியது.",
+            "tip_en": "Goa statehood date: 30 May 1987 (25th State).",
+            "tip_ta": "கோவா மாநில அந்தஸ்து தேதி: 30 மே 1987 (25வது மாநிலம்).",
+            "fact_en": "Daman and Diu were separated from Goa to remain a Union Territory.",
+            "fact_ta": "டாமன் மற்றும் டையூ கோவாவிலிருந்து பிரிக்கப்பட்டு யூனியன் பிரதேசமாக நீடித்தன."
+        },
+        # 39
+        {
+            "subtopic": "Article 371J Insertion Year and Effective Date",
+            "stem_en": "[TNPSC Group 1 2017, Group 2 2020]\nArticle 371J, inserted by the 98th Constitutional Amendment Act, came into effect from which year?",
+            "stem_ta": "[TNPSC குரூப் 1 2017, குரூப் 2 2020]\n98வது அரசியலமைப்பு திருத்தச் சட்டம் மூலம் சேர்க்கப்பட்ட சரத்து 371J எந்த ஆண்டிலிருந்து நடைமுறைக்கு வந்தது?",
+            "options": [
+                ("2013", "2013"),
+                ("2012", "2012"),
+                ("2014", "2014"),
+                ("2015", "2015")
+            ],
+            "correct_key": "A",
+            "exp_en": "Although enacted as the 98th Amendment Act 2012, it received presidential assent on 1 January 2013 and was officially notified to come into force on 1 January 2013.",
+            "exp_ta": "98வது திருத்தச் சட்டம் 2012 என இயற்றப்பட்ட போதிலும், இது 1 ஜனவரி 2013 அன்று குடியரசுத் தலைவரின் ஒப்புதலைப் பெற்று, 1 ஜனவரி 2013 முதல் அதிகாரப்பூர்வமாக நடைமுறைக்கு வந்தது.",
+            "why_a_en": "Came into force on 1 January 2013.",
+            "why_a_ta": "1 ஜனவரி 2013 அன்று நடைமுறைக்கு வந்தது.",
+            "why_b_en": "2012 was the year of parliamentary passing, not commencement.",
+            "why_b_ta": "2012 நாடாளுமன்றத்தில் நிறைவேற்றப்பட்ட ஆண்டு, நடைமுறைக்கு வந்த ஆண்டு அல்ல.",
+            "why_c_en": "2014 was when Telangana was formed.",
+            "why_c_ta": "2014 தெலங்கானா உருவாக்கப்பட்ட ஆண்டாகும்.",
+            "why_d_en": "2015 is incorrect.",
+            "why_d_ta": "2015 தவறானது.",
+            "tip_en": "Presidential assent on 1 Jan 2013 by President Pranab Mukherjee.",
+            "tip_ta": "குடியரசுத் தலைவர் பிரணாப் முகர்ஜியால் 1 ஜனவரி 2013 அன்று ஒப்புதல் அளிக்கப்பட்டது.",
+            "fact_en": "The Karnataka government issued the reservation orders under 371J in November 2013.",
+            "fact_ta": "கர்நாடக அரசு 371J-ன் கீழ் இடஒதுக்கீட்டு உத்தரவுகளை 2013 நவம்பரில் வெளியிட்டது."
+        },
+        # 40
+        {
+            "subtopic": "Article 370 Ceased Operative Order",
+            "stem_en": "[TNPSC Group 1 2021, Group 2 2022]\nUnder Article 370(3), which Constitutional Order declared that all provisions of Article 370 shall cease to be operative?",
+            "stem_ta": "[TNPSC குரூப் 1 2021, குரூப் 2 2022]\nசரத்து 370(3)-ன் கீழ், சரத்து 370-ன் அனைத்து விதிகளும் செயலிழந்துவிடும் என்று அறிவித்த அரசியலமைப்பு உத்தரவு எது?",
+            "options": [
+                ("Constitution Order 273 (C.O. 273)", "அரசியலமைப்பு உத்தரவு 273 (C.O. 273)"),
+                ("Constitution Order 272 (C.O. 272)", "அரசியலமைப்பு உத்தரவு 272 (C.O. 272)"),
+                ("Constitution Order 48 (C.O. 48)", "அரசியலமைப்பு உத்தரவு 48 (C.O. 48)"),
+                ("Constitution Order 44 (C.O. 44)", "அரசியலமைப்பு உத்தரவு 44 (C.O. 44)")
+            ],
+            "correct_key": "A",
+            "exp_en": "Constitution Order 273 (issued on 6 August 2019 under Article 370(3)) declared that all clauses of Article 370 shall cease to be operative.",
+            "exp_ta": "அரசியலமைப்பு உத்தரவு 273 (6 ஆகஸ்ட் 2019 அன்று சரத்து 370(3)-ன் கீழ் வெளியிடப்பட்டது) சரத்து 370-ன் அனைத்து விதிகளும் செயலிழந்துவிடும் என்று அறிவித்தது.",
+            "why_a_en": "C.O. 273 was the operative notification under Article 370(3).",
+            "why_a_ta": "C.O. 273 என்பது சரத்து 370(3)-ன் கீழான செயல்பாட்டு அறிவிக்கையாகும்.",
+            "why_b_en": "C.O. 272 was issued on 5 August 2019 under Article 370(1) to amend Article 367.",
+            "why_b_ta": "C.O. 272 5 ஆகஸ்ட் 2019 அன்று சரத்து 367-ஐ திருத்த சரத்து 370(1)-ன் கீழ் வெளியிடப்பட்டது.",
+            "why_c_en": "C.O. 48 was the landmark 1954 Presidential Order.",
+            "why_c_ta": "C.O. 48 என்பது 1954-ன் மைல்கல் குடியரசுத் தலைவர் உத்தரவாகும்.",
+            "why_d_en": "C.O. 44 was an earlier 1952 order.",
+            "why_d_ta": "C.O. 44 என்பது முந்தைய 1952 உத்தரவாகும்.",
+            "tip_en": "Remember the 2019 two-step sequence: C.O. 272 (Aug 5) -> C.O. 273 (Aug 6).",
+            "tip_ta": "2019-ன் இரண்டு படிநிலை வரிசையை நினைவில் கொள்க: C.O. 272 (ஆகஸ்ட் 5) -> C.O. 273 (ஆகஸ்ட் 6).",
+            "fact_en": "Both orders were signed by President Ram Nath Kovind.",
+            "fact_ta": "இரு உத்தரவுகளிலும் குடியரசுத் தலைவர் ராம் நாத் கோவிந்த் கையெழுத்திட்டார்."
+        },
+        # 41
+        {
+            "subtopic": "Article 371D Six-Point Formula Year",
+            "stem_en": "[TNPSC Group 4 2015, Group 2 2017]\nIn which year was the historic Six-Point Formula formulated by the Central Government to settle the regional disputes in Andhra Pradesh?",
+            "stem_ta": "[TNPSC குரூப் 4 2015, குரூப் 2 2017]\nஆந்திரப் பிரதேசத்தில் பிராந்திய தகராறுகளைத் தீர்ப்பதற்காக மத்திய அரசால் வரலாற்றுச் சிறப்புமிக்க ஆறு அம்ச சூத்திரம் எந்த ஆண்டு உருவாக்கப்பட்டது?",
+            "options": [
+                ("1973", "1973"),
+                ("1969", "1969"),
+                ("1971", "1971"),
+                ("1975", "1975")
+            ],
+            "correct_key": "A",
+            "exp_en": "The Six-Point Formula was announced on 21 September 1973, leading immediately to the 32nd Constitutional Amendment Act, 1973 inserting Article 371D.",
+            "exp_ta": "ஆறு அம்ச சூத்திரம் 1973 செப்டம்பர் 21 அன்று அறிவிக்கப்பட்டது, இது உடனடியாக சரத்து 371D-ஐச் சேர்த்த 32வது அரசியலமைப்பு திருத்தச் சட்டம் 1973-க்கு வழிவகுத்தது.",
+            "why_a_en": "1973 was the year of the Six-Point Formula and 32nd Amendment.",
+            "why_a_ta": "1973 என்பது ஆறு அம்ச சூத்திரம் மற்றும் 32வது திருத்தத்தின் ஆண்டாகும்.",
+            "why_b_en": "1969 was the year of the Telangana agitation and the Eight-Point Formula.",
+            "why_b_ta": "1969 தெலங்கானா போராட்டம் மற்றும் எட்டு அம்ச சூத்திரத்தின் ஆண்டாகும்.",
+            "why_c_en": "1971 was the year of the Five-Point Formula.",
+            "why_c_ta": "1971 ஐந்து அம்ச சூத்திரத்தின் ஆண்டாகும்.",
+            "why_d_en": "1975 was the year the Presidential Order was notified.",
+            "why_d_ta": "1975 குடியரசுத் தலைவர் உத்தரவு வெளியிடப்பட்ட ஆண்டாகும்.",
+            "tip_en": "Formula sequence in AP: 1969 (8-point) -> 1971 (5-point) -> 1973 (6-point final).",
+            "tip_ta": "ஆந்திராவில் சூத்திரங்களின் வரிசை: 1969 (8 அம்ச) -> 1971 (5 அம்ச) -> 1973 (6 அம்ச இறுதி).",
+            "fact_en": "Prime Minister Indira Gandhi played the key role in negotiating the Six-Point Formula.",
+            "fact_ta": "ஆறு அம்ச சூத்திரத்தை பேச்சுவார்த்தை நடத்துவதில் பிரதமர் இந்திரா காந்தி முக்கியப் பங்கு வகித்தார்."
+        },
+        # 42
+        {
+            "subtopic": "Article 371F Lok Sabha Representation",
+            "stem_en": "[TNPSC Group 4 2018, Group 2 2021]\nHow many seats are allocated to the State of Sikkim in the Lok Sabha under Article 371F(e)?",
+            "stem_ta": "[TNPSC குரூப் 4 2018, குரூப் 2 2021]\nசரத்து 371F(e)-ன் கீழ் மக்களவையில் சிக்கிம் மாநிலத்திற்கு எத்தனை இடங்கள் ஒதுக்கப்பட்டுள்ளன?",
+            "options": [
+                ("1 seat", "1 இடம்"),
+                ("2 seats", "2 இடங்கள்"),
+                ("3 seats", "3 இடங்கள்"),
+                ("4 seats", "4 இடங்கள்")
+            ],
+            "correct_key": "A",
+            "exp_en": "Under Article 371F(e), Sikkim is allocated 1 seat in the House of the People (Lok Sabha), forming a single parliamentary constituency.",
+            "exp_ta": "சரத்து 371F(e)-ன் கீழ், மக்களவையில் சிக்கிமிற்கு 1 இடம் ஒதுக்கப்பட்டு, அது ஒரு ஒற்றை நாடாளுமன்றத் தொகுதியாக அமைகிறது.",
+            "why_a_en": "Article 371F(e) expressly allocates one seat in the Lok Sabha.",
+            "why_a_ta": "சரத்து 371F(e) வெளிப்படையாக மக்களவையில் ஒரு இடத்தை ஒதுக்குகிறது.",
+            "why_b_en": "2 seats is allocated to states like Tripura, Meghalaya, Manipur, and Goa.",
+            "why_b_ta": "திரிபுரா, மேகாலயா, மணிப்பூர் மற்றும் கோவா போன்ற மாநிலங்களுக்கு 2 இடங்கள் ஒதுக்கப்பட்டுள்ளன.",
+            "why_c_en": "3 seats is incorrect.",
+            "why_c_ta": "3 இடங்கள் தவறானது.",
+            "why_d_en": "4 seats is allocated to Himachal Pradesh.",
+            "why_d_ta": "4 இடங்கள் இமாச்சலப் பிரதேசத்திற்கு ஒதுக்கப்பட்டுள்ளன.",
+            "tip_en": "Three states with just 1 Lok Sabha seat: Sikkim, Nagaland, and Mizoram.",
+            "tip_ta": "மக்களவையில் 1 இடத்தை மட்டுமே கொண்டுள்ள மூன்று மாநிலங்கள்: சிக்கிம், நாகாலாந்து மற்றும் மிசோரம்.",
+            "fact_en": "Sikkim also has 1 seat in the Rajya Sabha.",
+            "fact_ta": "மாநிலங்களவையிலும் சிக்கிமிற்கு 1 இடம் உள்ளது."
+        },
+        # 43
+        {
+            "subtopic": "Article 371A Naga People Convention Year",
+            "stem_en": "[TNPSC Group 1 2015, Group 2 2017]\nThe 16-Point Agreement between the Government of India and the Naga People's Convention, which formed the basis of Article 371A, was signed in which year?",
+            "stem_ta": "[TNPSC குரூப் 1 2015, குரூப் 2 2017]\nசரத்து 371A-ன் அடிப்படையாக அமைந்த இந்திய அரசுக்கும் நாகா மக்கள் மாநாட்டிற்கும் இடையிலான 16 அம்ச ஒப்பந்தம் எந்த ஆண்டு கையெழுத்தானது?",
+            "options": [
+                ("1960", "1960"),
+                ("1958", "1958"),
+                ("1962", "1962"),
+                ("1963", "1963")
+            ],
+            "correct_key": "A",
+            "exp_en": "The 16-Point Agreement was signed in July 1960 between Prime Minister Jawaharlal Nehru and the leaders of the Naga People's Convention headed by Dr. Imkongliba Ao.",
+            "exp_ta": "16 அம்ச ஒப்பந்தம் ஜூலை 1960-ல் பிரதமர் ஜவஹர்லால் நேருவிற்கும் டாக்டர் இம்கோங்லிபா ஆவோ தலைமையிலான நாகா மக்கள் மாநாட்டுத் தலைவர்களுக்கும் இடையே கையெழுத்தானது.",
+            "why_a_en": "The 16-Point Agreement was concluded in 1960.",
+            "why_a_ta": "16 அம்ச ஒப்பந்தம் 1960-ல் செய்து கொள்ளப்பட்டது.",
+            "why_b_en": "1958 was when AFSPA was enacted.",
+            "why_b_ta": "1958 AFSPA இயற்றப்பட்ட ஆண்டாகும்.",
+            "why_c_en": "1962 was when the 13th Amendment was passed.",
+            "why_c_ta": "1962 13வது திருத்தம் நிறைவேற்றப்பட்ட ஆண்டாகும்.",
+            "why_d_en": "1963 was when the state of Nagaland was formally inaugurated.",
+            "why_d_ta": "1963 நாகாலாந்து மாநிலம் முறைப்படி தொடங்கப்பட்ட ஆண்டாகும்.",
+            "tip_en": "Sequence: 1960 (16-Point Accord) -> 1962 (13th CAA / State of Nagaland Act) -> 1963 (Statehood).",
+            "tip_ta": "வரிசை: 1960 (16 அம்ச ஒப்பந்தம்) -> 1962 (13வது திருத்தம் / நாகாலாந்து சட்டம்) -> 1963 (மாநில அந்தஸ்து).",
+            "fact_en": "Point 7 of the 16-Point Agreement was translated into Article 371A(1)(a).",
+            "fact_ta": "16 அம்ச ஒப்பந்தத்தின் 7வது அம்சம் சரத்து 371A(1)(a) ஆக மாற்றப்பட்டது."
+        },
+        # 44
+        {
+            "subtopic": "Article 371F Chogyal Referendum Year",
+            "stem_en": "[TNPSC Group 1 2018, Group 2 2021]\nIn which year was the referendum held in Sikkim where over 97% voted to abolish the monarchy (Chogyal) and join India, leading to Article 371F?",
+            "stem_ta": "[TNPSC குரூப் 1 2018, குரூப் 2 2021]\nமன்னராட்சியை (சோக்யால்) ஒழித்து இந்தியாவுடன் இணைய 97% க்கும் அதிகமானோர் வாக்களித்த பொது வாக்கெடுப்பு சிக்கிமில் எந்த ஆண்டு நடைபெற்றது, இது சரத்து 371F-க்கு வழிவகுத்தது?",
+            "options": [
+                ("1975", "1975"),
+                ("1974", "1974"),
+                ("1973", "1973"),
+                ("1976", "1976")
+            ],
+            "correct_key": "A",
+            "exp_en": "The historic referendum was held on 14 April 1975 in Sikkim, resulting in a landslide vote to abolish the Chogyal's monarchy and merge with India, followed immediately by the 36th Amendment.",
+            "exp_ta": "வரலாற்றுச் சிறப்புமிக்க பொது வாக்கெடுப்பு 1975 ஏப்ரல் 14 அன்று சிக்கிமில் நடைபெற்றது, இதில் சோக்யால் மன்னராட்சியை ஒழித்து இந்தியாவுடன் இணைய பெருவாரியான வாக்குகள் பதிவாகின; இதைத் தொடர்ந்து உடனடியாக 36வது திருத்தம் கொண்டுவரப்பட்டது.",
+            "why_a_en": "The referendum took place in April 1975.",
+            "why_a_ta": "பொது வாக்கெடுப்பு ஏப்ரல் 1975-ல் நடைபெற்றது.",
+            "why_b_en": "1974 was the year of the 35th Amendment making Sikkim an associate state.",
+            "why_b_ta": "1974 சிக்கிமை இணைப்பு மாநிலமாக்கிய 35வது திருத்தத்தின் ஆண்டாகும்.",
+            "why_c_en": "1973 was the year of the tripartite agreement between India, Chogyal, and Sikkim parties.",
+            "why_c_ta": "1973 இந்தியா, சோக்யால் மற்றும் சிக்கிம் கட்சிகளுக்கிடையிலான முத்தரப்பு ஒப்பந்தத்தின் ஆண்டாகும்.",
+            "why_d_en": "1976 was the post-merger year.",
+            "why_d_ta": "1976 இணைப்பிற்குப் பிந்தைய ஆண்டாகும்.",
+            "tip_en": "The Chogyal dynasty had ruled Sikkim since 1642 before the 1975 merger.",
+            "tip_ta": "1975 இணைப்பிற்கு முன்பு 1642 முதல் சோக்யால் வம்சம் சிக்கிமை ஆட்சி செய்து வந்தது.",
+            "fact_en": "Palden Thondup Namgyal was the 12th and last Chogyal of Sikkim.",
+            "fact_ta": "பால்டன் தொண்டுப் நம்கியால் சிக்கிமின் 12வது மற்றும் கடைசி சோக்யால் ஆவார்."
+        },
+        # 45
+        {
+            "subtopic": "Article 371J Regional Reservation Ceiling",
+            "stem_en": "[TNPSC Group 1 2022, Group 2 2023]\nUnder the Karnataka Government orders implementing Article 371J, what percentage of local cadre posts in Kalyana Karnataka are reserved for local candidates?",
+            "stem_ta": "[TNPSC குரூப் 1 2022, குரூப் 2 2023]\nசரத்து 371J-ஐ செயல்படுத்தும் கர்நாடக அரசு உத்தரவுகளின் கீழ், கல்யாண கர்நாடகாவில் உள்ள உள்ளூர் பணிகளில் எத்தனை சதவீத இடங்கள் உள்ளூர் விண்ணப்பதாரர்களுக்கு ஒதுக்கப்பட்டுள்ளன?",
+            "options": [
+                ("Up to 75% - 85%", "75% - 85% வரை"),
+                ("Up to 50%", "50% வரை"),
+                ("Up to 33%", "33% வரை"),
+                ("Up to 25%", "25% வரை")
+            ],
+            "correct_key": "A",
+            "exp_en": "Under the 2013 Presidential Order and state regulations under Article 371J, local candidates enjoy 75% to 85% reservation in regional/local cadre government posts and 8% in state-level posts.",
+            "exp_ta": "2013 குடியரசுத் தலைவர் உத்தரவு மற்றும் சரத்து 371J-ன் கீழான மாநில ஒழுங்குமுறைகளின் கீழ், உள்ளூர் விண்ணப்பதாரர்கள் பிராந்திய/உள்ளூர் அரசுப் பணிகளில் 75% முதல் 85% வரையிலும், மாநில அளவிலான பணிகளில் 8% வரையிலும் இடஒதுக்கீட்டைப் பெறுகின்றனர்.",
+            "why_a_en": "75% to 85% is the prescribed regional cadre reservation percentage.",
+            "why_a_ta": "75% முதல் 85% என்பது பரிந்துரைக்கப்பட்ட பிராந்தியப் பணி இடஒதுக்கீட்டு சதவீதமாகும்.",
+            "why_b_en": "50% is the general ceiling under Indra Sawhney for social reservation.",
+            "why_b_ta": "50% என்பது இந்திரா சஹானி வழக்கில் சமூக இடஒதுக்கீட்டிற்கான பொதுவான உச்சவரம்பு.",
+            "why_c_en": "33% is women reservation quota.",
+            "why_c_ta": "33% என்பது பெண்கள் இடஒதுக்கீட்டுப் பங்காகும்.",
+            "why_d_en": "25% is incorrect.",
+            "why_d_ta": "25% தவறானது.",
+            "tip_en": "Remember the dual quota: 8% state-level; 75-85% local/regional level.",
+            "tip_ta": "இரட்டை ஒதுக்கீட்டை நினைவில் கொள்க: மாநில அளவில் 8%; உள்ளூர்/பிராந்திய அளவில் 75-85%.",
+            "fact_en": "Similar reservations exist in Andhra Pradesh under Article 371D Presidential Order.",
+            "fact_ta": "சரத்து 371D குடியரசுத் தலைவர் உத்தரவின் கீழ் ஆந்திராவிலும் இதே போன்ற இடஒதுக்கீடுகள் உள்ளன."
+        },
+        # 46
+        {
+            "subtopic": "Article 371B Paragraph 20 Sixth Schedule",
+            "stem_en": "[TNPSC Group 1 2016, Group 2 2019]\nArticle 371B specifies tribal areas with reference to Part I of the table appended to which paragraph of the Sixth Schedule?",
+            "stem_ta": "[TNPSC குரூப் 1 2016, குரூப் 2 2019]\nசரத்து 371B ஆறாவது அட்டவணையின் எந்த பத்தியில் இணைக்கப்பட்ட அட்டவணையின் பகுதி I-ஐக் குறிப்பிட்டு பழங்குடியினர் பகுதிகளைக் குறிப்பிடுகிறது?",
+            "options": [
+                ("Paragraph 20", "பத்தி 20"),
+                ("Paragraph 10", "பத்தி 10"),
+                ("Paragraph 15", "பத்தி 15"),
+                ("Paragraph 25", "பத்தி 25")
+            ],
+            "correct_key": "A",
+            "exp_en": "Article 371B explicitly cites 'the tribal areas specified in Part I of the table appended to paragraph 20 of the Sixth Schedule'.",
+            "exp_ta": "சரத்து 371B வெளிப்படையாக 'ஆறாவது அட்டவணையின் பத்தி 20-ல் இணைக்கப்பட்ட அட்டவணையின் பகுதி I-ல் குறிப்பிடப்பட்டுள்ள பழங்குடியினர் பகுதிகளை' குறிப்பிடுகிறது.",
+            "why_a_en": "Paragraph 20 of the Sixth Schedule contains the table of Autonomous Tribal Districts.",
+            "why_a_ta": "ஆறாவது அட்டவணையின் பத்தி 20 தன்னாட்சி பழங்குடியினர் மாவட்டங்களின் அட்டவணையைக் கொண்டுள்ளது.",
+            "why_b_en": "Paragraph 10 deals with licenses or leases for extraction of minerals.",
+            "why_b_ta": "பத்தி 10 கனிமங்களை எடுப்பதற்கான உரிமங்கள் அல்லது குத்தகைகளைக் கையாள்கிறது.",
+            "why_c_en": "Paragraph 15 deals with annulment or suspension of acts of District Councils.",
+            "why_c_ta": "பத்தி 15 மாவட்டக் குழுக்களின் சட்டங்களை ரத்து செய்தல் அல்லது நிறுத்தி வைத்தலைக் கையாள்கிறது.",
+            "why_d_en": "There is no paragraph 25 in the Sixth Schedule (it has 21 paragraphs).",
+            "why_d_ta": "ஆறாவது அட்டவணையில் பத்தி 25 இல்லை (இது 21 பத்திகளைக் கொண்டுள்ளது).",
+            "tip_en": "Paragraph 20 of the Sixth Schedule is the definitive constitutional gazetteer of tribal areas in NE India.",
+            "tip_ta": "ஆறாவது அட்டவணையின் பத்தி 20 வடகிழக்கு இந்தியாவின் பழங்குடியினர் பகுதிகளின் தீர்க்கமான அரசியலமைப்பு வர்த்தமானியாகும்.",
+            "fact_en": "Part I of the table in paragraph 20 specifically lists the tribal areas of Assam.",
+            "fact_ta": "பத்தி 20-ன் அட்டவணையில் உள்ள பகுதி I குறிப்பாக அசாமின் பழங்குடியினர் பகுதிகளைப் பட்டியலிடுகிறது."
+        },
+        # 47
+        {
+            "subtopic": "Article 371D Presidential Directives Non-Obstante",
+            "stem_en": "[TNPSC Group 1 2015, Group 2 2018]\nWhich clause of Article 371D contains the non-obstante declaration that its provisions shall have effect notwithstanding anything in the Constitution?",
+            "stem_ta": "[TNPSC குரூப் 1 2015, குரூப் 2 2018]\nசரத்து 371D-ன் எந்தப் பிரிவு, அரசியலமைப்பின் பிற விதிகளில் என்ன கூறப்பட்டிருந்தாலும் அதன் விதிகள் நடைமுறையில் இருக்கும் என்ற முரண்பாடற்ற பிரகடனத்தைக் கொண்டுள்ளது?",
+            "options": [
+                ("Clause (10)", "பிரிவு (10)"),
+                ("Clause (1)", "பிரிவு (1)"),
+                ("Clause (5)", "பிரிவு (5)"),
+                ("Clause (8)", "பிரிவு (8)")
+            ],
+            "correct_key": "A",
+            "exp_en": "Article 371D(10) declares: 'The provisions of this article and of any order made by the President thereunder shall have effect notwithstanding anything in any other provision of this Constitution or in any other law for the time being in force.'",
+            "exp_ta": "சரத்து 371D(10) பிரகடனம் செய்கிறது: 'இந்த அரசியலமைப்பின் வேறு எந்த விதியிலும் அல்லது தற்போது நடைமுறையில் உள்ள வேறு எந்தச் சட்டத்திலும் என்ன கூறப்பட்டிருந்தாலும், இந்த சரத்தின் விதிகளும் அதன் கீழ் குடியரசுத் தலைவரால் பிறப்பிக்கப்பட்ட எந்தவொரு உத்தரவும் நடைமுறையில் இருக்கும்.'",
+            "why_a_en": "Clause (10) is the overarching non-obstante clause.",
+            "why_a_ta": "பிரிவு (10) என்பது மேலெழுதும் முரண்பாடற்ற விதியாகும்.",
+            "why_b_en": "Clause (1) provides for equitable opportunities.",
+            "why_b_ta": "பிரிவு (1) சம வாய்ப்புகளுக்கு வகை செய்கிறது.",
+            "why_c_en": "Clause (5) was the tribunal overriding power struck down in Sambamurthy.",
+            "why_c_ta": "பிரிவு (5) சாம்பமூர்த்தி வழக்கில் ரத்து செய்யப்பட்ட தீர்ப்பாய மேலதிகாரமாகும்.",
+            "why_d_en": "Clause (8) deals with High Court superintendence.",
+            "why_d_ta": "பிரிவு (8) உயர் நீதிமன்றக் கண்காணிப்பைக் கையாள்கிறது.",
+            "tip_en": "Non-obstante clauses protect special affirmative action policies from equal protection challenges under Article 16.",
+            "tip_ta": "முரண்பாடற்ற விதிகள் சரத்து 16-ன் கீழான சவால்களிலிருந்து சிறப்பு சாதகமான நடவடிக்கைக் கொள்கைகளைப் பாதுகாக்கின்றன.",
+            "fact_en": "Article 371F(n) contains a similar non-obstante clause for Sikkim.",
+            "fact_ta": "சரத்து 371F(n) சிக்கிமிற்கு இதே போன்ற முரண்பாடற்ற விதியைக் கொண்டுள்ளது."
+        },
+        # 48
+        {
+            "subtopic": "States Reorganisation Act 1956 Bombay Split",
+            "stem_en": "[TNPSC Group 4 2014, Group 2 2017]\nIn which year was the bilingual Bombay state bifurcated into Maharashtra and Gujarat, following which Article 371 was modified to cover both states?",
+            "stem_ta": "[TNPSC குரூப் 4 2014, குரூப் 2 2017]\nஇருமொழி பம்பாய் மாநிலம் எந்த ஆண்டு மகாராஷ்டிரா மற்றும் குஜராத் எனப் பிரிக்கப்பட்டது, அதைத் தொடர்ந்து சரத்து 371 இரு மாநிலங்களையும் உள்ளடக்கும் வகையில் மாற்றியமைக்கப்பட்டது?",
+            "options": [
+                ("1960", "1960"),
+                ("1956", "1956"),
+                ("1962", "1962"),
+                ("1966", "1966")
+            ],
+            "correct_key": "A",
+            "exp_en": "The Bombay Reorganisation Act, 1960 bifurcated the state of Bombay into Maharashtra (Marathi-speaking) and Gujarat (Gujarati-speaking) on 1 May 1960.",
+            "exp_ta": "பம்பாய் மறுசீரமைப்பு சட்டம் 1960, பம்பாய் மாநிலத்தை 1960 மே 1 அன்று மகாராஷ்டிரா (மராத்தி மொழி) மற்றும் குஜராத் (குஜராத்தி மொழி) என இரண்டு மாநிலங்களாகப் பிரித்தது.",
+            "why_a_en": "1 May 1960 is Maharashtra and Gujarat Foundation Day.",
+            "why_a_ta": "1 மே 1960 என்பது மகாராஷ்டிரா மற்றும் குஜராத் நிறுவன நாளாகும்.",
+            "why_b_en": "1956 created the large bilingual Bombay State under States Reorganisation Act.",
+            "why_b_ta": "1956 மாநிலங்கள் மறுசீரமைப்பு சட்டத்தின் கீழ் பெரிய இருமொழி பம்பாய் மாநிலத்தை உருவாக்கியது.",
+            "why_c_en": "1962 was the year of the 13th Amendment for Nagaland.",
+            "why_c_ta": "1962 நாகாலாந்திற்கான 13வது திருத்தத்தின் ஆண்டாகும்.",
+            "why_d_en": "1966 was the year Punjab was bifurcated into Punjab and Haryana.",
+            "why_d_ta": "1966 பஞ்சாப் மற்றும் ஹரியானா என பஞ்சாப் பிரிக்கப்பட்ட ஆண்டாகும்.",
+            "tip_en": "Samyukta Maharashtra Samiti and Mahagujarat Andolan were the two movements behind the 1960 split.",
+            "tip_ta": "சம்யுக்த மகாராஷ்டிரா சமிதி மற்றும் மdomainஹாகுஜராத் அந்தோலன் ஆகியவை 1960 பிரிவின் பின்னணியில் இருந்த இரண்டு இயக்கங்கள்.",
+            "fact_en": "Article 371 originally covered Andhra Pradesh and Punjab before the 1956/1960 reconfigurations.",
+            "fact_ta": "1956/1960 மறுசீரமைப்புகளுக்கு முன்பு சரத்து 371 ஆந்திரப் பிரதேசம் மற்றும் பஞ்சாபை உள்ளடக்கியிருந்தது."
+        },
+        # 49
+        {
+            "subtopic": "Article 371E Law by Parliament",
+            "stem_en": "[TNPSC Group 1 2019, Group 2 2022]\nUnder Article 371E of the Constitution of India, who is empowered to provide for the establishment of a Central University in Andhra Pradesh?",
+            "stem_ta": "[TNPSC குரூப் 1 2019, குரூப் 2 2022]\nஇந்திய அரசியலமைப்பின் சரத்து 371E-ன் கீழ், ஆந்திரப் பிரதேசத்தில் ஒரு மத்தியப் பல்கலைக்கழகத்தை நிறுவுவதற்கு வகை செய்ய யாருக்கு அதிகாரமளிக்கப்பட்டுள்ளது?",
+            "options": [
+                ("Parliament by law", "நாடாளுமன்றம் சட்டத்தின் மூலம்"),
+                ("The President of India by executive order", "இந்தியக் குடியரசுத் தலைவர் நிர்வாக உத்தரவின் மூலம்"),
+                ("The Governor of Andhra Pradesh in his discretion", "ஆந்திரப் பிரதேச ஆளுநர் தனது விருப்புரிமையின் மூலம்"),
+                ("The University Grants Commission (UGC)", "பல்கலைக்கழக மானியக் குழு (UGC)")
+            ],
+            "correct_key": "A",
+            "exp_en": "Article 371E specifically provides: 'Parliament may by law provide for the establishment of a University in the State of Andhra Pradesh.'",
+            "exp_ta": "சரத்து 371E வெளிப்படையாக வகை செய்கிறது: 'நாடாளுமன்றம் சட்டத்தின் மூலம் ஆந்திரப் பிரதேச மாநிலத்தில் ஒரு பல்கலைக்கழகத்தை நிறுவ வகை செய்யலாம்.'",
+            "why_a_en": "Article 371E expressly assigns the authority to 'Parliament by law'.",
+            "why_a_ta": "சரத்து 371E வெளிப்படையாக 'நாடாளுமன்றத்திற்குச் சட்டத்தின் மூலம்' அதிகாரத்தை வழங்குகிறது.",
+            "why_b_en": "Presidential orders apply to Article 371D, but 371E requires Parliamentary legislation.",
+            "why_b_ta": "குடியரசுத் தலைவர் உத்தரவுகள் சரத்து 371D-க்கு பொருந்தும், ஆனால் 371E-க்கு நாடாளுமன்றச் சட்டம் தேவைப்படுகிறது.",
+            "why_c_en": "Governor has no unilateral power to create Central Universities.",
+            "why_c_ta": "மத்தியப் பல்கலைக்கழகங்களை உருவாக்க ஆளுநருக்கு ஒருதலைப்பட்ச அதிகாரம் இல்லை.",
+            "why_d_en": "UGC regulates universities but cannot enact constitutional central university laws.",
+            "why_d_ta": "UGC பல்கலைக்கழகங்களை ஒழுங்குபடுத்துகிறது, ஆனால் அரசியலமைப்பு மத்திய பல்கலைக்கழகச் சட்டங்களை இயற்ற முடியாது.",
+            "tip_en": "Key Distinction: 371D is executed via 'Order of the President'; 371E is executed via 'Parliament by law'.",
+            "tip_ta": "முக்கிய வேறுபாடு: 371D 'குடியரசுத் தலைவரின் உத்தரவு' மூலம் செயல்படுத்தப்படுகிறது; 371E 'நாடாளுமன்றச் சட்டம்' மூலம் செயல்படுத்தப்படுகிறது.",
+            "fact_en": "Central Universities Act, 2009 was amended in 2019 to establish this university.",
+            "fact_ta": "இப்பல்கலைக்கழகத்தை நிறுவ மத்தியப் பல்கலைக்கழகங்கள் சட்டம் 2009, 2019-ல் திருத்தப்பட்டது."
+        },
+        # 50
+        {
+            "subtopic": "Special Provisions Comprehensive Master Question",
+            "stem_en": "[TNPSC Group 1 2023, Group 2 2024]\nMatch the following Articles in Part XXI with their corresponding States:\nI. Article 371A — 1. Nagaland\nII. Article 371C — 2. Manipur\nIII. Article 371F — 3. Sikkim\nIV. Article 371J — 4. Karnataka\nWhich of the following is the correct matching code?",
+            "stem_ta": "[TNPSC குரூப் 1 2023, குரூப் 2 2024]\nபகுதி XXI-ல் உள்ள பின்வரும் சரத்துகளை அவற்றின் தொடர்புடைய மாநிலங்களுடன் பொருத்துக:\nI. சரத்து 371A — 1. நாகாலாந்து\nII. சரத்து 371C — 2. மணிப்பூர்\nIII. சரத்து 371F — 3. சிக்கிம்\nIV. சரத்து 371J — 4. கர்நாடகா\nபின்வருவனவற்றில் சரியான பொருத்தக் குறியீடு எது?",
+            "options": [
+                ("I-1, II-2, III-3, IV-4", "I-1, II-2, III-3, IV-4"),
+                ("I-2, II-1, III-4, IV-3", "I-2, II-1, III-4, IV-3"),
+                ("I-3, II-4, III-1, IV-2", "I-3, II-4, III-1, IV-2"),
+                ("I-4, II-3, III-2, IV-1", "I-4, II-3, III-2, IV-1")
+            ],
+            "correct_key": "A",
+            "exp_en": "All four pairs are directly and correctly matched: 371A = Nagaland, 371C = Manipur, 371F = Sikkim, and 371J = Karnataka.",
+            "exp_ta": "நான்கு இணைகளும் நேரடியாகவும் சரியாகவும் பொருத்தப்பட்டுள்ளன: 371A = நாகாலாந்து, 371C = மணிப்பூர், 371F = சிக்கிம் மற்றும் 371J = கர்நாடகா.",
+            "why_a_en": "Each article matches its corresponding state perfectly.",
+            "why_a_ta": "ஒவ்வொரு சரத்தும் அதன் தொடர்புடைய மாநிலத்துடன் சரியாகப் பொருந்துகிறது.",
+            "why_b_en": "Mismatch: 371A is Nagaland, not Manipur.",
+            "why_b_ta": "பொருந்தவில்லை: 371A என்பது நாகாலாந்து, மணிப்பூர் அல்ல.",
+            "why_c_en": "Mismatch: 371A is Nagaland, not Sikkim.",
+            "why_c_ta": "பொருந்தவில்லை: 371A என்பது நாகாலாந்து, சிக்கிம் அல்ல.",
+            "why_d_en": "Mismatch: 371A is Nagaland, not Karnataka.",
+            "why_d_ta": "பொருந்தவில்லை: 371A என்பது நாகாலாந்து, கர்நாடகா அல்ல.",
+            "tip_en": "Quick Revision Code: 371 (MH, GJ), A (Nagaland), B (Assam), C (Manipur), D (AP/TS), E (AP Univ), F (Sikkim), G (Mizoram), H (Arunachal), I (Goa), J (Karnataka).",
+            "tip_ta": "விரைவு மீள்பார்வைக் குறியீடு: 371 (மகாராஷ்டிரா, குஜராத்), A (நாகாலாந்து), B (அசாம்), C (மணிப்பூர்), D (ஆந்திரா/தெலங்கானா), E (ஆந்திரப் பல்கலைக்கழகம்), F (சிக்கிம்), G (மிசோரம்), H (அருணாச்சலப் பிரதேசம்), I (கோவா), J (கர்நாடகா).",
+            "fact_en": "This is one of the most frequently asked match-type questions in TNPSC Group 1 and 2 exams.",
+            "fact_ta": "இது TNPSC குரூப் 1 மற்றும் 2 தேர்வுகளில் அடிக்கடி கேட்கப்படும் பொருத்துக வகை வினாக்களில் ஒன்றாகும்."
+        }
+    ]
+
+    questions = []
+    for i, item in enumerate(raw_data, 1):
+        qid = f"SPS_PYQ_{i:03d}"
+        opts = item["options"]
+        correct_key = item["correct_key"]
+        q = make_sps_q(
+            qid=qid,
+            diff="Medium",
+            qtype="PYQ Practice",
+            subtopic=item["subtopic"],
+            en_stem=item["stem_en"],
+            ta_stem=item["stem_ta"],
+            en_a=opts[0][0],
+            ta_a=opts[0][1],
+            en_b=opts[1][0],
+            ta_b=opts[1][1],
+            en_c=opts[2][0],
+            ta_c=opts[2][1],
+            en_d=opts[3][0],
+            ta_d=opts[3][1],
+            correct_key=correct_key,
+            exp_en=item["exp_en"],
+            exp_ta=item["exp_ta"],
+            why_a_en=item["why_a_en"],
+            why_a_ta=item["why_a_ta"],
+            why_b_en=item["why_b_en"],
+            why_b_ta=item["why_b_ta"],
+            why_c_en=item["why_c_en"],
+            why_c_ta=item["why_c_ta"],
+            why_d_en=item["why_d_en"],
+            why_d_ta=item["why_d_ta"],
+            tip_en=item["tip_en"],
+            tip_ta=item["tip_ta"],
+            fact_en=item["fact_en"],
+            fact_ta=item["fact_ta"],
+            tags=["polity", "special_provisions_states", "pyq", item["subtopic"].lower().replace(" ", "_")]
+        )
+        questions.append(q)
+    return questions
+
+def build_pyq_file():
+    qs = get_pyq_questions()
+    print(f"Generated {len(qs)} raw PYQ questions for Special Provisions for States.")
+    balanced = randomize_and_balance_dataset(qs, seed=42)
+    
+    out_dir = os.path.join("data", "questions", "polity")
+    os.makedirs(out_dir, exist_ok=True)
+    out_path = os.path.join(out_dir, "special_provisions_states_pyq.json")
+    alias_path = os.path.join(out_dir, "special_provisions_states_pyq_practice.json")
+    
+    with open(out_path, "w", encoding="utf-8") as f:
+        json.dump(balanced, f, ensure_ascii=False, indent=2)
+    with open(alias_path, "w", encoding="utf-8") as f:
+        json.dump(balanced, f, ensure_ascii=False, indent=2)
+    print(f"Saved balanced PYQ MCQs to {out_path} and alias {alias_path}")
+    
+    rep = ContentValidator.validate_file(out_path, expected_count=50, expected_prefix="SPS_PYQ_")
+    print(f"Validation: {'PASS' if rep.is_valid else 'FAIL'} | Total: {rep.total_audited}")
+    print(f"Keys: {rep.key_distribution}")
+    if not rep.is_valid:
+        for iss in rep.issues:
+            print("  Issue:", iss.severity, iss.field_name, iss.message)
+    return rep.is_valid
+
+if __name__ == "__main__":
+    build_pyq_file()

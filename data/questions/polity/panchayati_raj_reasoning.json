@@ -15,13 +15,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
       },
       {
         "id": "B",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
+        "en": "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல"
       },
       {
         "id": "C",
@@ -35,19 +35,19 @@
       }
     ],
     "options_en": [
-      "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
       "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
       "(A) is true but (R) is false",
       "(A) is false but (R) is true"
     ],
     "options_ta": [
-      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல",
       "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்",
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல",
       "(A) சரி, ஆனால் (R) தவறு",
       "(A) தவறு, ஆனால் (R) சரி"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Both (A) and (R) are true and (R) is the correct explanation of (A).",
       "ta": "Both (A) and (R) are true and (R) is the correct explanation of (A)."
@@ -56,12 +56,12 @@
     "explanation_ta": "Both (A) and (R) are true and (R) is the correct explanation of (A).",
     "why_not_others": {
       "A": {
-        "en": "Option B evaluation: Statements are true but not causally independent.",
-        "ta": "விருப்பம் B: கூற்றுகள் உண்மை ஆனால் தனித்தன்மை கொண்டவை அல்ல."
-      },
-      "B": {
         "en": "Correct. Both (A) and (R) are true and (R) is the correct explanation of (A).",
         "ta": "சரியானது. Both (A) and (R) are true and (R) is the correct explanation of (A)."
+      },
+      "B": {
+        "en": "Option B evaluation: Statements are true but not causally independent.",
+        "ta": "விருப்பம் B: கூற்றுகள் உண்மை ஆனால் தனித்தன்மை கொண்டவை அல்ல."
       },
       "C": {
         "en": "Option C evaluation: Assertion is true.",
@@ -111,13 +111,13 @@
       },
       {
         "id": "B",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
+        "en": "(A) is true but (R) is false",
+        "ta": "(A) சரி, ஆனால் (R) தவறு"
       },
       {
         "id": "C",
-        "en": "(A) is true but (R) is false",
-        "ta": "(A) சரி, ஆனால் (R) தவறு"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
       },
       {
         "id": "D",
@@ -127,18 +127,18 @@
     ],
     "options_en": [
       "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
       "(A) is true but (R) is false",
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
       "(A) is false but (R) is true"
     ],
     "options_ta": [
       "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல",
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்",
       "(A) சரி, ஆனால் (R) தவறு",
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்",
       "(A) தவறு, ஆனால் (R) சரி"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Both (A) and (R) are true and (R) correctly explains the tenure security guaranteed by Article 243K(2).",
       "ta": "Both (A) and (R) are true and (R) correctly explains the tenure security guaranteed by Article 243K(2)."
@@ -151,12 +151,12 @@
         "ta": "விருப்பம் B: கூற்றுகள் உண்மை ஆனால் தனித்தன்மை கொண்டவை அல்ல."
       },
       "B": {
-        "en": "Correct. Both (A) and (R) are true and (R) correctly explains the tenure security guaranteed by Article 243K(2).",
-        "ta": "சரியானது. Both (A) and (R) are true and (R) correctly explains the tenure security guaranteed by Article 243K(2)."
-      },
-      "C": {
         "en": "Option C evaluation: Assertion is true.",
         "ta": "விருப்பம் C: உறுதிமொழி சரியானது."
+      },
+      "C": {
+        "en": "Correct. Both (A) and (R) are true and (R) correctly explains the tenure security guaranteed by Article 243K(2).",
+        "ta": "சரியானது. Both (A) and (R) are true and (R) correctly explains the tenure security guaranteed by Article 243K(2)."
       },
       "D": {
         "en": "Option D evaluation: Reason is true.",
@@ -384,8 +384,8 @@
       },
       {
         "id": "B",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
+        "en": "(A) is false but (R) is true",
+        "ta": "(A) தவறு, ஆனால் (R) சரி"
       },
       {
         "id": "C",
@@ -394,24 +394,24 @@
       },
       {
         "id": "D",
-        "en": "(A) is false but (R) is true",
-        "ta": "(A) தவறு, ஆனால் (R) சரி"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
       }
     ],
     "options_en": [
       "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "(A) is false but (R) is true",
       "(A) is true but (R) is false",
-      "(A) is false but (R) is true"
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)"
     ],
     "options_ta": [
       "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல",
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்",
+      "(A) தவறு, ஆனால் (R) சரி",
       "(A) சரி, ஆனால் (R) தவறு",
-      "(A) தவறு, ஆனால் (R) சரி"
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Both (A) and (R) are true and (R) explains why functional devolution varies vastly across states.",
       "ta": "Both (A) and (R) are true and (R) explains why functional devolution varies vastly across states."
@@ -424,16 +424,16 @@
         "ta": "விருப்பம் B: கூற்றுகள் உண்மை ஆனால் தனித்தன்மை கொண்டவை அல்ல."
       },
       "B": {
-        "en": "Correct. Both (A) and (R) are true and (R) explains why functional devolution varies vastly across states.",
-        "ta": "சரியானது. Both (A) and (R) are true and (R) explains why functional devolution varies vastly across states."
+        "en": "Option D evaluation: Reason is true.",
+        "ta": "விருப்பம் D: காரணம் சரியானது."
       },
       "C": {
         "en": "Option C evaluation: Assertion is true.",
         "ta": "விருப்பம் C: உறுதிமொழி சரியானது."
       },
       "D": {
-        "en": "Option D evaluation: Reason is true.",
-        "ta": "விருப்பம் D: காரணம் சரியானது."
+        "en": "Correct. Both (A) and (R) are true and (R) explains why functional devolution varies vastly across states.",
+        "ta": "சரியானது. Both (A) and (R) are true and (R) explains why functional devolution varies vastly across states."
       }
     },
     "tnpsc_tip": {
@@ -470,13 +470,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
       },
       {
         "id": "B",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
+        "en": "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல"
       },
       {
         "id": "C",
@@ -490,19 +490,19 @@
       }
     ],
     "options_en": [
-      "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
       "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
       "(A) is true but (R) is false",
       "(A) is false but (R) is true"
     ],
     "options_ta": [
-      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல",
       "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்",
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல",
       "(A) சரி, ஆனால் (R) தவறு",
       "(A) தவறு, ஆனால் (R) சரி"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Both (A) and (R) are true and (R) is the correct constitutional explanation under Article 243O.",
       "ta": "Both (A) and (R) are true and (R) is the correct constitutional explanation under Article 243O."
@@ -511,12 +511,12 @@
     "explanation_ta": "Both (A) and (R) are true and (R) is the correct constitutional explanation under Article 243O.",
     "why_not_others": {
       "A": {
-        "en": "Option B evaluation: Statements are true but not causally independent.",
-        "ta": "விருப்பம் B: கூற்றுகள் உண்மை ஆனால் தனித்தன்மை கொண்டவை அல்ல."
-      },
-      "B": {
         "en": "Correct. Both (A) and (R) are true and (R) is the correct constitutional explanation under Article 243O.",
         "ta": "சரியானது. Both (A) and (R) are true and (R) is the correct constitutional explanation under Article 243O."
+      },
+      "B": {
+        "en": "Option B evaluation: Statements are true but not causally independent.",
+        "ta": "விருப்பம் B: கூற்றுகள் உண்மை ஆனால் தனித்தன்மை கொண்டவை அல்ல."
       },
       "C": {
         "en": "Option C evaluation: Assertion is true.",
@@ -652,8 +652,8 @@
     "options": [
       {
         "id": "A",
-        "en": "(A) is true but (R) is false",
-        "ta": "(A) சரி, ஆனால் (R) தவறு"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
       },
       {
         "id": "B",
@@ -662,8 +662,8 @@
       },
       {
         "id": "C",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
+        "en": "(A) is true but (R) is false",
+        "ta": "(A) சரி, ஆனால் (R) தவறு"
       },
       {
         "id": "D",
@@ -672,19 +672,19 @@
       }
     ],
     "options_en": [
-      "(A) is true but (R) is false",
-      "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
       "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+      "(A) is true but (R) is false",
       "(A) is false but (R) is true"
     ],
     "options_ta": [
-      "(A) சரி, ஆனால் (R) தவறு",
-      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல",
       "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்",
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல",
+      "(A) சரி, ஆனால் (R) தவறு",
       "(A) தவறு, ஆனால் (R) சரி"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Both (A) and (R) are true and (R) correctly explains the revolutionary significance of PESA.",
       "ta": "Both (A) and (R) are true and (R) correctly explains the revolutionary significance of PESA."
@@ -693,16 +693,16 @@
     "explanation_ta": "Both (A) and (R) are true and (R) correctly explains the revolutionary significance of PESA.",
     "why_not_others": {
       "A": {
-        "en": "Option C evaluation: Assertion is true.",
-        "ta": "விருப்பம் C: உறுதிமொழி சரியானது."
+        "en": "Correct. Both (A) and (R) are true and (R) correctly explains the revolutionary significance of PESA.",
+        "ta": "சரியானது. Both (A) and (R) are true and (R) correctly explains the revolutionary significance of PESA."
       },
       "B": {
         "en": "Option B evaluation: Statements are true but not causally independent.",
         "ta": "விருப்பம் B: கூற்றுகள் உண்மை ஆனால் தனித்தன்மை கொண்டவை அல்ல."
       },
       "C": {
-        "en": "Correct. Both (A) and (R) are true and (R) correctly explains the revolutionary significance of PESA.",
-        "ta": "சரியானது. Both (A) and (R) are true and (R) correctly explains the revolutionary significance of PESA."
+        "en": "Option C evaluation: Assertion is true.",
+        "ta": "விருப்பம் C: உறுதிமொழி சரியானது."
       },
       "D": {
         "en": "Option D evaluation: Reason is true.",
@@ -748,13 +748,13 @@
       },
       {
         "id": "B",
-        "en": "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
       },
       {
         "id": "C",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
+        "en": "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல"
       },
       {
         "id": "D",
@@ -764,18 +764,18 @@
     ],
     "options_en": [
       "(A) is true but (R) is false",
-      "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
       "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
       "(A) is false but (R) is true"
     ],
     "options_ta": [
       "(A) சரி, ஆனால் (R) தவறு",
-      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல",
       "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்",
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல",
       "(A) தவறு, ஆனால் (R) சரி"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Both (A) and (R) are true and (R) is the direct constitutional provision supporting (A).",
       "ta": "Both (A) and (R) are true and (R) is the direct constitutional provision supporting (A)."
@@ -788,12 +788,12 @@
         "ta": "விருப்பம் C: உறுதிமொழி சரியானது."
       },
       "B": {
-        "en": "Option B evaluation: Statements are true but not causally independent.",
-        "ta": "விருப்பம் B: கூற்றுகள் உண்மை ஆனால் தனித்தன்மை கொண்டவை அல்ல."
-      },
-      "C": {
         "en": "Correct. Both (A) and (R) are true and (R) is the direct constitutional provision supporting (A).",
         "ta": "சரியானது. Both (A) and (R) are true and (R) is the direct constitutional provision supporting (A)."
+      },
+      "C": {
+        "en": "Option B evaluation: Statements are true but not causally independent.",
+        "ta": "விருப்பம் B: கூற்றுகள் உண்மை ஆனால் தனித்தன்மை கொண்டவை அல்ல."
       },
       "D": {
         "en": "Option D evaluation: Reason is true.",
@@ -935,29 +935,29 @@
       },
       {
         "id": "C",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
+        "en": "(A) is false but (R) is true",
+        "ta": "(A) தவறு, ஆனால் (R) சரி"
       },
       {
         "id": "D",
-        "en": "(A) is false but (R) is true",
-        "ta": "(A) தவறு, ஆனால் (R) சரி"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
       }
     ],
     "options_en": [
       "(A) is true but (R) is false",
       "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-      "(A) is false but (R) is true"
+      "(A) is false but (R) is true",
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)"
     ],
     "options_ta": [
       "(A) சரி, ஆனால் (R) தவறு",
       "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல",
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்",
-      "(A) தவறு, ஆனால் (R) சரி"
+      "(A) தவறு, ஆனால் (R) சரி",
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Constitutional logic confirms that Assertion (A) and Reason (R) are both true, with (R) establishing the exact constitutional basis for (A).",
       "ta": "Constitutional logic confirms that Assertion (A) and Reason (R) are both true, with (R) establishing the exact constitutional basis for (A)."
@@ -974,12 +974,12 @@
         "ta": "தவறானது. கூற்றுகள் ஒன்றுக்கொன்று தொடர்புடையவை."
       },
       "C": {
-        "en": "Correct. Both statements are accurate and causally connected.",
-        "ta": "சரியானது. இரு கூற்றுகளும் சரியானவை மற்றும் காரணத் தொடர்பு கொண்டவை."
-      },
-      "D": {
         "en": "Incorrect. Assertion is also true.",
         "ta": "தவறானது. உறுதிமொழியும் சரியானது."
+      },
+      "D": {
+        "en": "Correct. Both statements are accurate and causally connected.",
+        "ta": "சரியானது. இரு கூற்றுகளும் சரியானவை மற்றும் காரணத் தொடர்பு கொண்டவை."
       }
     },
     "tnpsc_tip": {
@@ -1026,29 +1026,29 @@
       },
       {
         "id": "C",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
+        "en": "(A) is false but (R) is true",
+        "ta": "(A) தவறு, ஆனால் (R) சரி"
       },
       {
         "id": "D",
-        "en": "(A) is false but (R) is true",
-        "ta": "(A) தவறு, ஆனால் (R) சரி"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
       }
     ],
     "options_en": [
       "(A) is true but (R) is false",
       "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-      "(A) is false but (R) is true"
+      "(A) is false but (R) is true",
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)"
     ],
     "options_ta": [
       "(A) சரி, ஆனால் (R) தவறு",
       "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல",
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்",
-      "(A) தவறு, ஆனால் (R) சரி"
+      "(A) தவறு, ஆனால் (R) சரி",
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Constitutional logic confirms that Assertion (A) and Reason (R) are both true, with (R) establishing the exact constitutional basis for (A).",
       "ta": "Constitutional logic confirms that Assertion (A) and Reason (R) are both true, with (R) establishing the exact constitutional basis for (A)."
@@ -1065,12 +1065,12 @@
         "ta": "தவறானது. கூற்றுகள் ஒன்றுக்கொன்று தொடர்புடையவை."
       },
       "C": {
-        "en": "Correct. Both statements are accurate and causally connected.",
-        "ta": "சரியானது. இரு கூற்றுகளும் சரியானவை மற்றும் காரணத் தொடர்பு கொண்டவை."
-      },
-      "D": {
         "en": "Incorrect. Assertion is also true.",
         "ta": "தவறானது. உறுதிமொழியும் சரியானது."
+      },
+      "D": {
+        "en": "Correct. Both statements are accurate and causally connected.",
+        "ta": "சரியானது. இரு கூற்றுகளும் சரியானவை மற்றும் காரணத் தொடர்பு கொண்டவை."
       }
     },
     "tnpsc_tip": {
@@ -1112,8 +1112,8 @@
       },
       {
         "id": "B",
-        "en": "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
       },
       {
         "id": "C",
@@ -1122,24 +1122,24 @@
       },
       {
         "id": "D",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
+        "en": "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல"
       }
     ],
     "options_en": [
       "(A) is false but (R) is true",
-      "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
       "(A) is true but (R) is false",
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)"
+      "Both (A) and (R) are true but (R) is not the correct explanation of (A)"
     ],
     "options_ta": [
       "(A) தவறு, ஆனால் (R) சரி",
-      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல",
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்",
       "(A) சரி, ஆனால் (R) தவறு",
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Constitutional logic confirms that Assertion (A) and Reason (R) are both true, with (R) establishing the exact constitutional basis for (A).",
       "ta": "Constitutional logic confirms that Assertion (A) and Reason (R) are both true, with (R) establishing the exact constitutional basis for (A)."
@@ -1152,16 +1152,16 @@
         "ta": "தவறானது. உறுதிமொழியும் சரியானது."
       },
       "B": {
-        "en": "Incorrect. Statements are causally linked.",
-        "ta": "தவறானது. கூற்றுகள் ஒன்றுக்கொன்று தொடர்புடையவை."
+        "en": "Correct. Both statements are accurate and causally connected.",
+        "ta": "சரியானது. இரு கூற்றுகளும் சரியானவை மற்றும் காரணத் தொடர்பு கொண்டவை."
       },
       "C": {
         "en": "Incorrect. Reason is also true.",
         "ta": "தவறானது. காரணமும் சரியானது."
       },
       "D": {
-        "en": "Correct. Both statements are accurate and causally connected.",
-        "ta": "சரியானது. இரு கூற்றுகளும் சரியானவை மற்றும் காரணத் தொடர்பு கொண்டவை."
+        "en": "Incorrect. Statements are causally linked.",
+        "ta": "தவறானது. கூற்றுகள் ஒன்றுக்கொன்று தொடர்புடையவை."
       }
     },
     "tnpsc_tip": {
@@ -1294,8 +1294,8 @@
       },
       {
         "id": "B",
-        "en": "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
       },
       {
         "id": "C",
@@ -1304,24 +1304,24 @@
       },
       {
         "id": "D",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
+        "en": "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல"
       }
     ],
     "options_en": [
       "(A) is false but (R) is true",
-      "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
       "(A) is true but (R) is false",
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)"
+      "Both (A) and (R) are true but (R) is not the correct explanation of (A)"
     ],
     "options_ta": [
       "(A) தவறு, ஆனால் (R) சரி",
-      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல",
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்",
       "(A) சரி, ஆனால் (R) தவறு",
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Constitutional logic confirms that Assertion (A) and Reason (R) are both true, with (R) establishing the exact constitutional basis for (A).",
       "ta": "Constitutional logic confirms that Assertion (A) and Reason (R) are both true, with (R) establishing the exact constitutional basis for (A)."
@@ -1334,16 +1334,16 @@
         "ta": "தவறானது. உறுதிமொழியும் சரியானது."
       },
       "B": {
-        "en": "Incorrect. Statements are causally linked.",
-        "ta": "தவறானது. கூற்றுகள் ஒன்றுக்கொன்று தொடர்புடையவை."
+        "en": "Correct. Both statements are accurate and causally connected.",
+        "ta": "சரியானது. இரு கூற்றுகளும் சரியானவை மற்றும் காரணத் தொடர்பு கொண்டவை."
       },
       "C": {
         "en": "Incorrect. Reason is also true.",
         "ta": "தவறானது. காரணமும் சரியானது."
       },
       "D": {
-        "en": "Correct. Both statements are accurate and causally connected.",
-        "ta": "சரியானது. இரு கூற்றுகளும் சரியானவை மற்றும் காரணத் தொடர்பு கொண்டவை."
+        "en": "Incorrect. Statements are causally linked.",
+        "ta": "தவறானது. கூற்றுகள் ஒன்றுக்கொன்று தொடர்புடையவை."
       }
     },
     "tnpsc_tip": {
@@ -1390,29 +1390,29 @@
       },
       {
         "id": "C",
-        "en": "(A) is true but (R) is false",
-        "ta": "(A) சரி, ஆனால் (R) தவறு"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
       },
       {
         "id": "D",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
+        "en": "(A) is true but (R) is false",
+        "ta": "(A) சரி, ஆனால் (R) தவறு"
       }
     ],
     "options_en": [
       "(A) is false but (R) is true",
       "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
-      "(A) is true but (R) is false",
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)"
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "(A) is true but (R) is false"
     ],
     "options_ta": [
       "(A) தவறு, ஆனால் (R) சரி",
       "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல",
-      "(A) சரி, ஆனால் (R) தவறு",
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்",
+      "(A) சரி, ஆனால் (R) தவறு"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Constitutional logic confirms that Assertion (A) and Reason (R) are both true, with (R) establishing the exact constitutional basis for (A).",
       "ta": "Constitutional logic confirms that Assertion (A) and Reason (R) are both true, with (R) establishing the exact constitutional basis for (A)."
@@ -1429,12 +1429,12 @@
         "ta": "தவறானது. கூற்றுகள் ஒன்றுக்கொன்று தொடர்புடையவை."
       },
       "C": {
-        "en": "Incorrect. Reason is also true.",
-        "ta": "தவறானது. காரணமும் சரியானது."
-      },
-      "D": {
         "en": "Correct. Both statements are accurate and causally connected.",
         "ta": "சரியானது. இரு கூற்றுகளும் சரியானவை மற்றும் காரணத் தொடர்பு கொண்டவை."
+      },
+      "D": {
+        "en": "Incorrect. Reason is also true.",
+        "ta": "தவறானது. காரணமும் சரியானது."
       }
     },
     "tnpsc_tip": {
@@ -1471,8 +1471,8 @@
     "options": [
       {
         "id": "A",
-        "en": "(A) is false but (R) is true",
-        "ta": "(A) தவறு, ஆனால் (R) சரி"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
       },
       {
         "id": "B",
@@ -1486,24 +1486,24 @@
       },
       {
         "id": "D",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
+        "en": "(A) is false but (R) is true",
+        "ta": "(A) தவறு, ஆனால் (R) சரி"
       }
     ],
     "options_en": [
-      "(A) is false but (R) is true",
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
       "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
       "(A) is true but (R) is false",
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)"
+      "(A) is false but (R) is true"
     ],
     "options_ta": [
-      "(A) தவறு, ஆனால் (R) சரி",
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்",
       "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல",
       "(A) சரி, ஆனால் (R) தவறு",
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
+      "(A) தவறு, ஆனால் (R) சரி"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Constitutional logic confirms that Assertion (A) and Reason (R) are both true, with (R) establishing the exact constitutional basis for (A).",
       "ta": "Constitutional logic confirms that Assertion (A) and Reason (R) are both true, with (R) establishing the exact constitutional basis for (A)."
@@ -1512,8 +1512,8 @@
     "explanation_ta": "Constitutional logic confirms that Assertion (A) and Reason (R) are both true, with (R) establishing the exact constitutional basis for (A).",
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Assertion is also true.",
-        "ta": "தவறானது. உறுதிமொழியும் சரியானது."
+        "en": "Correct. Both statements are accurate and causally connected.",
+        "ta": "சரியானது. இரு கூற்றுகளும் சரியானவை மற்றும் காரணத் தொடர்பு கொண்டவை."
       },
       "B": {
         "en": "Incorrect. Statements are causally linked.",
@@ -1524,8 +1524,8 @@
         "ta": "தவறானது. காரணமும் சரியானது."
       },
       "D": {
-        "en": "Correct. Both statements are accurate and causally connected.",
-        "ta": "சரியானது. இரு கூற்றுகளும் சரியானவை மற்றும் காரணத் தொடர்பு கொண்டவை."
+        "en": "Incorrect. Assertion is also true.",
+        "ta": "தவறானது. உறுதிமொழியும் சரியானது."
       }
     },
     "tnpsc_tip": {
@@ -1572,6 +1572,97 @@
       },
       {
         "id": "C",
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
+      },
+      {
+        "id": "D",
+        "en": "(A) is true but (R) is false",
+        "ta": "(A) சரி, ஆனால் (R) தவறு"
+      }
+    ],
+    "options_en": [
+      "(A) is false but (R) is true",
+      "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "(A) is true but (R) is false"
+    ],
+    "options_ta": [
+      "(A) தவறு, ஆனால் (R) சரி",
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல",
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்",
+      "(A) சரி, ஆனால் (R) தவறு"
+    ],
+    "correct_answer": "C",
+    "answer": "c",
+    "explanation": {
+      "en": "Constitutional logic confirms that Assertion (A) and Reason (R) are both true, with (R) establishing the exact constitutional basis for (A).",
+      "ta": "Constitutional logic confirms that Assertion (A) and Reason (R) are both true, with (R) establishing the exact constitutional basis for (A)."
+    },
+    "explanation_en": "Constitutional logic confirms that Assertion (A) and Reason (R) are both true, with (R) establishing the exact constitutional basis for (A).",
+    "explanation_ta": "Constitutional logic confirms that Assertion (A) and Reason (R) are both true, with (R) establishing the exact constitutional basis for (A).",
+    "why_not_others": {
+      "A": {
+        "en": "Incorrect. Assertion is also true.",
+        "ta": "தவறானது. உறுதிமொழியும் சரியானது."
+      },
+      "B": {
+        "en": "Incorrect. Statements are causally linked.",
+        "ta": "தவறானது. கூற்றுகள் ஒன்றுக்கொன்று தொடர்புடையவை."
+      },
+      "C": {
+        "en": "Correct. Both statements are accurate and causally connected.",
+        "ta": "சரியானது. இரு கூற்றுகளும் சரியானவை மற்றும் காரணத் தொடர்பு கொண்டவை."
+      },
+      "D": {
+        "en": "Incorrect. Reason is also true.",
+        "ta": "தவறானது. காரணமும் சரியானது."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "Examine if Reason provides the constitutional provision directly backing Assertion.",
+      "ta": "காரணம் (R) என்பது உறுதிமொழி (A)-விற்கு நேரடி அரசியலமைப்பு ஆதாரத்தை வழங்குகிறதா என ஆராயவும்."
+    },
+    "revision_fact": {
+      "en": "Constitutional logic confirms that Assertion (A) and Reason (R) are both true, with (R) establishing the exact constitutional basis for (A).",
+      "ta": "Constitutional logic confirms that Assertion (A) and Reason (R) are both true, with (R) establishing the exact constitutional basis for (A)."
+    },
+    "source_reference": "M. Laxmikanth Indian Polity, Supreme Court Reports",
+    "bloom_level": "Analyze",
+    "estimated_time_sec": 75,
+    "pyq_similarity": "High",
+    "tags": [
+      "polity",
+      "panchayati_raj",
+      "assertion_reasoning"
+    ]
+  },
+  {
+    "id": "PR_R_019",
+    "subject": "polity",
+    "topic": "Local Government – Panchayati Raj",
+    "subtopic": "Article 243H Taxation Authority",
+    "difficulty": "Hard",
+    "question_type": "Assertion and Reasoning",
+    "question": {
+      "en": "Given below are two statements, one is labelled as Assertion (A) and the other as Reason (R):\nAssertion (A): Panchayats cannot unilaterally invent or levy new taxes on their own accord.\nReason (R): Under Article 243H, Panchayats derive all taxing and revenue powers solely from authorizations made by State law.\nSelect the correct answer from the codes given below:",
+      "ta": "கீழே கொடுக்கப்பட்டுள்ள இரண்டு கூற்றுகளில் ஒன்று உறுதிமொழி (A) என்றும், மற்றொன்று காரணம் (R) என்றும் குறிப்பிடப்பட்டுள்ளது:\nஉறுதிமொழி (A): Panchayats cannot unilaterally invent or levy new taxes on their own accord.\nகாரணம் (R): Under Article 243H, Panchayats derive all taxing and revenue powers solely from authorizations made by State law.\nகீழே கொடுக்கப்பட்டுள்ள குறியீடுகளிலிருந்து சரியான விடையைத் தேர்ந்தெடுக்கவும்:"
+    },
+    "question_en": "Given below are two statements, one is labelled as Assertion (A) and the other as Reason (R):\nAssertion (A): Panchayats cannot unilaterally invent or levy new taxes on their own accord.\nReason (R): Under Article 243H, Panchayats derive all taxing and revenue powers solely from authorizations made by State law.\nSelect the correct answer from the codes given below:",
+    "question_ta": "கீழே கொடுக்கப்பட்டுள்ள இரண்டு கூற்றுகளில் ஒன்று உறுதிமொழி (A) என்றும், மற்றொன்று காரணம் (R) என்றும் குறிப்பிடப்பட்டுள்ளது:\nஉறுதிமொழி (A): Panchayats cannot unilaterally invent or levy new taxes on their own accord.\nகாரணம் (R): Under Article 243H, Panchayats derive all taxing and revenue powers solely from authorizations made by State law.\nகீழே கொடுக்கப்பட்டுள்ள குறியீடுகளிலிருந்து சரியான விடையைத் தேர்ந்தெடுக்கவும்:",
+    "options": [
+      {
+        "id": "A",
+        "en": "(A) is false but (R) is true",
+        "ta": "(A) தவறு, ஆனால் (R) சரி"
+      },
+      {
+        "id": "B",
+        "en": "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல"
+      },
+      {
+        "id": "C",
         "en": "(A) is true but (R) is false",
         "ta": "(A) சரி, ஆனால் (R) தவறு"
       },
@@ -1638,97 +1729,6 @@
     ]
   },
   {
-    "id": "PR_R_019",
-    "subject": "polity",
-    "topic": "Local Government – Panchayati Raj",
-    "subtopic": "Article 243H Taxation Authority",
-    "difficulty": "Hard",
-    "question_type": "Assertion and Reasoning",
-    "question": {
-      "en": "Given below are two statements, one is labelled as Assertion (A) and the other as Reason (R):\nAssertion (A): Panchayats cannot unilaterally invent or levy new taxes on their own accord.\nReason (R): Under Article 243H, Panchayats derive all taxing and revenue powers solely from authorizations made by State law.\nSelect the correct answer from the codes given below:",
-      "ta": "கீழே கொடுக்கப்பட்டுள்ள இரண்டு கூற்றுகளில் ஒன்று உறுதிமொழி (A) என்றும், மற்றொன்று காரணம் (R) என்றும் குறிப்பிடப்பட்டுள்ளது:\nஉறுதிமொழி (A): Panchayats cannot unilaterally invent or levy new taxes on their own accord.\nகாரணம் (R): Under Article 243H, Panchayats derive all taxing and revenue powers solely from authorizations made by State law.\nகீழே கொடுக்கப்பட்டுள்ள குறியீடுகளிலிருந்து சரியான விடையைத் தேர்ந்தெடுக்கவும்:"
-    },
-    "question_en": "Given below are two statements, one is labelled as Assertion (A) and the other as Reason (R):\nAssertion (A): Panchayats cannot unilaterally invent or levy new taxes on their own accord.\nReason (R): Under Article 243H, Panchayats derive all taxing and revenue powers solely from authorizations made by State law.\nSelect the correct answer from the codes given below:",
-    "question_ta": "கீழே கொடுக்கப்பட்டுள்ள இரண்டு கூற்றுகளில் ஒன்று உறுதிமொழி (A) என்றும், மற்றொன்று காரணம் (R) என்றும் குறிப்பிடப்பட்டுள்ளது:\nஉறுதிமொழி (A): Panchayats cannot unilaterally invent or levy new taxes on their own accord.\nகாரணம் (R): Under Article 243H, Panchayats derive all taxing and revenue powers solely from authorizations made by State law.\nகீழே கொடுக்கப்பட்டுள்ள குறியீடுகளிலிருந்து சரியான விடையைத் தேர்ந்தெடுக்கவும்:",
-    "options": [
-      {
-        "id": "A",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
-      },
-      {
-        "id": "B",
-        "en": "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல"
-      },
-      {
-        "id": "C",
-        "en": "(A) is true but (R) is false",
-        "ta": "(A) சரி, ஆனால் (R) தவறு"
-      },
-      {
-        "id": "D",
-        "en": "(A) is false but (R) is true",
-        "ta": "(A) தவறு, ஆனால் (R) சரி"
-      }
-    ],
-    "options_en": [
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-      "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
-      "(A) is true but (R) is false",
-      "(A) is false but (R) is true"
-    ],
-    "options_ta": [
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்",
-      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல",
-      "(A) சரி, ஆனால் (R) தவறு",
-      "(A) தவறு, ஆனால் (R) சரி"
-    ],
-    "correct_answer": "A",
-    "answer": "a",
-    "explanation": {
-      "en": "Constitutional logic confirms that Assertion (A) and Reason (R) are both true, with (R) establishing the exact constitutional basis for (A).",
-      "ta": "Constitutional logic confirms that Assertion (A) and Reason (R) are both true, with (R) establishing the exact constitutional basis for (A)."
-    },
-    "explanation_en": "Constitutional logic confirms that Assertion (A) and Reason (R) are both true, with (R) establishing the exact constitutional basis for (A).",
-    "explanation_ta": "Constitutional logic confirms that Assertion (A) and Reason (R) are both true, with (R) establishing the exact constitutional basis for (A).",
-    "why_not_others": {
-      "A": {
-        "en": "Correct. Both statements are accurate and causally connected.",
-        "ta": "சரியானது. இரு கூற்றுகளும் சரியானவை மற்றும் காரணத் தொடர்பு கொண்டவை."
-      },
-      "B": {
-        "en": "Incorrect. Statements are causally linked.",
-        "ta": "தவறானது. கூற்றுகள் ஒன்றுக்கொன்று தொடர்புடையவை."
-      },
-      "C": {
-        "en": "Incorrect. Reason is also true.",
-        "ta": "தவறானது. காரணமும் சரியானது."
-      },
-      "D": {
-        "en": "Incorrect. Assertion is also true.",
-        "ta": "தவறானது. உறுதிமொழியும் சரியானது."
-      }
-    },
-    "tnpsc_tip": {
-      "en": "Examine if Reason provides the constitutional provision directly backing Assertion.",
-      "ta": "காரணம் (R) என்பது உறுதிமொழி (A)-விற்கு நேரடி அரசியலமைப்பு ஆதாரத்தை வழங்குகிறதா என ஆராயவும்."
-    },
-    "revision_fact": {
-      "en": "Constitutional logic confirms that Assertion (A) and Reason (R) are both true, with (R) establishing the exact constitutional basis for (A).",
-      "ta": "Constitutional logic confirms that Assertion (A) and Reason (R) are both true, with (R) establishing the exact constitutional basis for (A)."
-    },
-    "source_reference": "M. Laxmikanth Indian Polity, Supreme Court Reports",
-    "bloom_level": "Analyze",
-    "estimated_time_sec": 75,
-    "pyq_similarity": "High",
-    "tags": [
-      "polity",
-      "panchayati_raj",
-      "assertion_reasoning"
-    ]
-  },
-  {
     "id": "PR_R_020",
     "subject": "polity",
     "topic": "Local Government – Panchayati Raj",
@@ -1744,8 +1744,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
+        "en": "(A) is true but (R) is false",
+        "ta": "(A) சரி, ஆனால் (R) தவறு"
       },
       {
         "id": "B",
@@ -1754,8 +1754,8 @@
       },
       {
         "id": "C",
-        "en": "(A) is true but (R) is false",
-        "ta": "(A) சரி, ஆனால் (R) தவறு"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
       },
       {
         "id": "D",
@@ -1764,19 +1764,19 @@
       }
     ],
     "options_en": [
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-      "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
       "(A) is true but (R) is false",
+      "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
       "(A) is false but (R) is true"
     ],
     "options_ta": [
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்",
-      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல",
       "(A) சரி, ஆனால் (R) தவறு",
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல",
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்",
       "(A) தவறு, ஆனால் (R) சரி"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Constitutional logic confirms that Assertion (A) and Reason (R) are both true, with (R) establishing the exact constitutional basis for (A).",
       "ta": "Constitutional logic confirms that Assertion (A) and Reason (R) are both true, with (R) establishing the exact constitutional basis for (A)."
@@ -1785,16 +1785,16 @@
     "explanation_ta": "Constitutional logic confirms that Assertion (A) and Reason (R) are both true, with (R) establishing the exact constitutional basis for (A).",
     "why_not_others": {
       "A": {
-        "en": "Correct. Both statements are accurate and causally connected.",
-        "ta": "சரியானது. இரு கூற்றுகளும் சரியானவை மற்றும் காரணத் தொடர்பு கொண்டவை."
+        "en": "Incorrect. Reason is also true.",
+        "ta": "தவறானது. காரணமும் சரியானது."
       },
       "B": {
         "en": "Incorrect. Statements are causally linked.",
         "ta": "தவறானது. கூற்றுகள் ஒன்றுக்கொன்று தொடர்புடையவை."
       },
       "C": {
-        "en": "Incorrect. Reason is also true.",
-        "ta": "தவறானது. காரணமும் சரியானது."
+        "en": "Correct. Both statements are accurate and causally connected.",
+        "ta": "சரியானது. இரு கூற்றுகளும் சரியானவை மற்றும் காரணத் தொடர்பு கொண்டவை."
       },
       "D": {
         "en": "Incorrect. Assertion is also true.",
@@ -1835,8 +1835,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
+        "en": "(A) is false but (R) is true",
+        "ta": "(A) தவறு, ஆனால் (R) சரி"
       },
       {
         "id": "B",
@@ -1850,24 +1850,24 @@
       },
       {
         "id": "D",
-        "en": "(A) is false but (R) is true",
-        "ta": "(A) தவறு, ஆனால் (R) சரி"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
       }
     ],
     "options_en": [
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "(A) is false but (R) is true",
       "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
       "(A) is true but (R) is false",
-      "(A) is false but (R) is true"
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)"
     ],
     "options_ta": [
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்",
+      "(A) தவறு, ஆனால் (R) சரி",
       "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல",
       "(A) சரி, ஆனால் (R) தவறு",
-      "(A) தவறு, ஆனால் (R) சரி"
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Constitutional logic confirms that Assertion (A) and Reason (R) are both true, with (R) establishing the exact constitutional basis for (A).",
       "ta": "Constitutional logic confirms that Assertion (A) and Reason (R) are both true, with (R) establishing the exact constitutional basis for (A)."
@@ -1876,8 +1876,8 @@
     "explanation_ta": "Constitutional logic confirms that Assertion (A) and Reason (R) are both true, with (R) establishing the exact constitutional basis for (A).",
     "why_not_others": {
       "A": {
-        "en": "Correct. Both statements are accurate and causally connected.",
-        "ta": "சரியானது. இரு கூற்றுகளும் சரியானவை மற்றும் காரணத் தொடர்பு கொண்டவை."
+        "en": "Incorrect. Assertion is also true.",
+        "ta": "தவறானது. உறுதிமொழியும் சரியானது."
       },
       "B": {
         "en": "Incorrect. Statements are causally linked.",
@@ -1888,8 +1888,8 @@
         "ta": "தவறானது. காரணமும் சரியானது."
       },
       "D": {
-        "en": "Incorrect. Assertion is also true.",
-        "ta": "தவறானது. உறுதிமொழியும் சரியானது."
+        "en": "Correct. Both statements are accurate and causally connected.",
+        "ta": "சரியானது. இரு கூற்றுகளும் சரியானவை மற்றும் காரணத் தொடர்பு கொண்டவை."
       }
     },
     "tnpsc_tip": {
@@ -2017,8 +2017,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
+        "en": "(A) is true but (R) is false",
+        "ta": "(A) சரி, ஆனால் (R) தவறு"
       },
       {
         "id": "B",
@@ -2027,8 +2027,8 @@
       },
       {
         "id": "C",
-        "en": "(A) is true but (R) is false",
-        "ta": "(A) சரி, ஆனால் (R) தவறு"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
       },
       {
         "id": "D",
@@ -2037,19 +2037,19 @@
       }
     ],
     "options_en": [
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-      "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
       "(A) is true but (R) is false",
+      "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
       "(A) is false but (R) is true"
     ],
     "options_ta": [
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்",
-      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல",
       "(A) சரி, ஆனால் (R) தவறு",
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல",
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்",
       "(A) தவறு, ஆனால் (R) சரி"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Constitutional logic confirms that Assertion (A) and Reason (R) are both true, with (R) establishing the exact constitutional basis for (A).",
       "ta": "Constitutional logic confirms that Assertion (A) and Reason (R) are both true, with (R) establishing the exact constitutional basis for (A)."
@@ -2058,16 +2058,16 @@
     "explanation_ta": "Constitutional logic confirms that Assertion (A) and Reason (R) are both true, with (R) establishing the exact constitutional basis for (A).",
     "why_not_others": {
       "A": {
-        "en": "Correct. Both statements are accurate and causally connected.",
-        "ta": "சரியானது. இரு கூற்றுகளும் சரியானவை மற்றும் காரணத் தொடர்பு கொண்டவை."
+        "en": "Incorrect. Reason is also true.",
+        "ta": "தவறானது. காரணமும் சரியானது."
       },
       "B": {
         "en": "Incorrect. Statements are causally linked.",
         "ta": "தவறானது. கூற்றுகள் ஒன்றுக்கொன்று தொடர்புடையவை."
       },
       "C": {
-        "en": "Incorrect. Reason is also true.",
-        "ta": "தவறானது. காரணமும் சரியானது."
+        "en": "Correct. Both statements are accurate and causally connected.",
+        "ta": "சரியானது. இரு கூற்றுகளும் சரியானவை மற்றும் காரணத் தொடர்பு கொண்டவை."
       },
       "D": {
         "en": "Incorrect. Assertion is also true.",
@@ -2108,13 +2108,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
+        "en": "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல"
       },
       {
         "id": "B",
-        "en": "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
       },
       {
         "id": "C",
@@ -2128,19 +2128,19 @@
       }
     ],
     "options_en": [
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
       "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
       "(A) is true but (R) is false",
       "(A) is false but (R) is true"
     ],
     "options_ta": [
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்",
       "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல",
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்",
       "(A) சரி, ஆனால் (R) தவறு",
       "(A) தவறு, ஆனால் (R) சரி"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Constitutional logic confirms that Assertion (A) and Reason (R) are both true, with (R) establishing the exact constitutional basis for (A).",
       "ta": "Constitutional logic confirms that Assertion (A) and Reason (R) are both true, with (R) establishing the exact constitutional basis for (A)."
@@ -2149,12 +2149,12 @@
     "explanation_ta": "Constitutional logic confirms that Assertion (A) and Reason (R) are both true, with (R) establishing the exact constitutional basis for (A).",
     "why_not_others": {
       "A": {
-        "en": "Correct. Both statements are accurate and causally connected.",
-        "ta": "சரியானது. இரு கூற்றுகளும் சரியானவை மற்றும் காரணத் தொடர்பு கொண்டவை."
-      },
-      "B": {
         "en": "Incorrect. Statements are causally linked.",
         "ta": "தவறானது. கூற்றுகள் ஒன்றுக்கொன்று தொடர்புடையவை."
+      },
+      "B": {
+        "en": "Correct. Both statements are accurate and causally connected.",
+        "ta": "சரியானது. இரு கூற்றுகளும் சரியானவை மற்றும் காரணத் தொடர்பு கொண்டவை."
       },
       "C": {
         "en": "Incorrect. Reason is also true.",

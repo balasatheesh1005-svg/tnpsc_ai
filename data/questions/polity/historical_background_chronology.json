@@ -112,13 +112,13 @@
       },
       {
         "id": "B",
-        "en": "2 -> 1 -> 4 -> 3",
-        "ta": "2 -> 1 -> 4 -> 3"
+        "en": "2 -> 4 -> 1 -> 3",
+        "ta": "2 -> 4 -> 1 -> 3"
       },
       {
         "id": "C",
-        "en": "2 -> 4 -> 1 -> 3",
-        "ta": "2 -> 4 -> 1 -> 3"
+        "en": "2 -> 1 -> 4 -> 3",
+        "ta": "2 -> 1 -> 4 -> 3"
       },
       {
         "id": "D",
@@ -126,7 +126,7 @@
         "ta": "4 -> 2 -> 1 -> 3"
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "C",
     "explanation": {
       "en": "Sequence: 2 (1813 Act) -> 1 (1833 Act) -> 4 (1853 Act) -> 3 (1858 Act). Demonstrates gradual stripping of EIC privileges.",
       "ta": "வரிசை: 2 (1813 சட்டம்) -> 1 (1833 சட்டம்) -> 4 (1853 சட்டம்) -> 3 (1858 சட்டம்). கிழக்கிந்திய கம்பெனி உரிமைகள் பறிக்கப்பட்டதை இது காட்டுகிறது."
@@ -137,12 +137,12 @@
         "ta": "தவறு. முழுமையான வர்த்தக ஒழிப்பு (1833) பகுதியளவு ஒழிப்புக்கு (1813) பிறகே நடந்தது."
       },
       "B": {
-        "en": "Correct. 2 (1813) -> 1 (1833) -> 4 (1853) -> 3 (1858) follows exact legislative timeline.",
-        "ta": "சரி. 2 (1813) -> 1 (1833) -> 4 (1853) -> 3 (1858) சரியான சட்ட காலவரிசையைப் பின்பற்றுகிறது."
-      },
-      "C": {
         "en": "Incorrect. Charter Act 1853 (4) came after Charter Act 1833 (1).",
         "ta": "தவறு. 1853 சாசனச் சட்டம் (4) 1833 சாசனச் சட்டத்திற்குப் (1) பின்னரே வந்தது."
+      },
+      "C": {
+        "en": "Correct. 2 (1813) -> 1 (1833) -> 4 (1853) -> 3 (1858) follows exact legislative timeline.",
+        "ta": "சரி. 2 (1813) -> 1 (1833) -> 4 (1853) -> 3 (1858) சரியான சட்ட காலவரிசையைப் பின்பற்றுகிறது."
       },
       "D": {
         "en": "Incorrect. 1853 Act (4) was the last of the four Charter Acts.",
@@ -175,17 +175,17 @@
     "question_ta": "கிழக்கிந்திய கம்பெனியின் சலுகைகள் படிப்படியாகக் குறைக்கப்பட்டதன் அடிப்படையில் பின்வரும் சாசனச் சட்டங்கள் மற்றும் நாடாளுமன்றச் சட்டங்களை சரியான காலவரிசையில் அமைக்கவும்:\n1. தேயிலை மற்றும் சீனாவுடனான வர்த்தகம் உட்பட கம்பெனியின் வர்த்தக முற்றுரிமை முழுமையாக ஒழிக்கப்படல்\n2. தேயிலை மற்றும் சீனா வர்த்தகம் தவிர்த்து இந்தியாவில் கம்பெனியின் வர்த்தக முற்றுரிமை பகுதியளவாக ஒழிக்கப்படல்\n3. இந்திய நிர்வாகம் கிழக்கிந்திய கம்பெனியிடமிருந்து பிரிட்டிஷ் முடிக்கு முழுமையாக மாற்றப்படல்\n4. எந்தவொரு குறிப்பிட்ட காலவரையறையுமின்றி கம்பெனியின் சாசனம் முதன்முறையாக நீட்டிக்கப்படல்",
     "options_en": [
       "1 -> 2 -> 4 -> 3",
-      "2 -> 1 -> 4 -> 3",
       "2 -> 4 -> 1 -> 3",
+      "2 -> 1 -> 4 -> 3",
       "4 -> 2 -> 1 -> 3"
     ],
     "options_ta": [
       "1 -> 2 -> 4 -> 3",
-      "2 -> 1 -> 4 -> 3",
       "2 -> 4 -> 1 -> 3",
+      "2 -> 1 -> 4 -> 3",
       "4 -> 2 -> 1 -> 3"
     ],
-    "answer": "b",
+    "answer": "c",
     "explanation_en": "Sequence: 2 (1813 Act) -> 1 (1833 Act) -> 4 (1853 Act) -> 3 (1858 Act). Demonstrates gradual stripping of EIC privileges.",
     "explanation_ta": "வரிசை: 2 (1813 சட்டம்) -> 1 (1833 சட்டம்) -> 4 (1853 சட்டம்) -> 3 (1858 சட்டம்). கிழக்கிந்திய கம்பெனி உரிமைகள் பறிக்கப்பட்டதை இது காட்டுகிறது."
   },
@@ -207,13 +207,13 @@
       },
       {
         "id": "B",
-        "en": "4 -> 2 -> 3 -> 1",
-        "ta": "4 -> 2 -> 3 -> 1"
+        "en": "2 -> 4 -> 3 -> 1",
+        "ta": "2 -> 4 -> 3 -> 1"
       },
       {
         "id": "C",
-        "en": "2 -> 4 -> 3 -> 1",
-        "ta": "2 -> 4 -> 3 -> 1"
+        "en": "4 -> 2 -> 3 -> 1",
+        "ta": "4 -> 2 -> 3 -> 1"
       },
       {
         "id": "D",
@@ -221,7 +221,7 @@
         "ta": "2 -> 4 -> 1 -> 3"
       }
     ],
-    "correct_answer": "C",
+    "correct_answer": "B",
     "explanation": {
       "en": "Sequence: 2 (1861 Act) -> 4 (1892 Act) -> 3 (1909 Act) -> 1 (1919 Act). Highlights representative progress in India.",
       "ta": "வரிசை: 2 (1861 சட்டம்) -> 4 (1892 சட்டம்) -> 3 (1909 சட்டம்) -> 1 (1919 சட்டம்). இந்தியாவில் பிரதிநிதித்துவ வளர்ச்சியை இது சுட்டிக்காட்டுகிறது."
@@ -232,12 +232,12 @@
         "ta": "தவறு. மறைமுகத் தேர்தல் (1892) தனித் தொகுதிக்கு (1909) முந்தியது."
       },
       "B": {
-        "en": "Incorrect. Portfolio system recognition (1861) came before 1892 Act.",
-        "ta": "தவறு. இலாகா முறை அங்கீகாரம் (1861) 1892 சட்டத்திற்கு முந்தியது."
-      },
-      "C": {
         "en": "Correct. 2 (1861) -> 4 (1892) -> 3 (1909) -> 1 (1919) matches Crown Rule reform progression.",
         "ta": "சரி. 2 (1861) -> 4 (1892) -> 3 (1909) -> 1 (1919) முடி ஆட்சியின் சீர்திருத்த காலவரிசையைப் பின்பற்றுகிறது."
+      },
+      "C": {
+        "en": "Incorrect. Portfolio system recognition (1861) came before 1892 Act.",
+        "ta": "தவறு. இலாகா முறை அங்கீகாரம் (1861) 1892 சட்டத்திற்கு முந்தியது."
       },
       "D": {
         "en": "Incorrect. Dyarchy in provinces (1919) was after Separate Electorates (1909).",
@@ -270,17 +270,17 @@
     "question_ta": "பிரிட்டிஷ் முடி ஆட்சியின் கீழ் கொண்டுவரப்பட்ட பின்வரும் சட்டப்பூர்வ சீர்திருத்தங்களை சரியான காலவரிசையில் அமைக்கவும்:\n1. மாகாணங்களின் நிர்வாக அரசில் இரட்டை ஆட்சி முறையை அறிமுகப்படுத்துதல்\n2. வைஸ்ராயின் இலாகா முறைக்கு சட்டப்பூர்வ அங்கீகாரம் அளித்தல் மற்றும் மாகாணங்களுக்கு சட்டமியற்றும் அதிகாரத்தை மீட்டளித்தல்\n3. முஸ்லிம்களுக்கு தனித் தொகுதிகளை அறிமுகப்படுத்துதல்\n4. சட்ட மேலவைகளில் அதிகாரப்பூர்வமற்ற இடங்களுக்கு முதன்முறையாக (மறைமுக) தேர்தல் முறையைப் பயன்படுத்துதல்",
     "options_en": [
       "2 -> 3 -> 4 -> 1",
-      "4 -> 2 -> 3 -> 1",
       "2 -> 4 -> 3 -> 1",
+      "4 -> 2 -> 3 -> 1",
       "2 -> 4 -> 1 -> 3"
     ],
     "options_ta": [
       "2 -> 3 -> 4 -> 1",
-      "4 -> 2 -> 3 -> 1",
       "2 -> 4 -> 3 -> 1",
+      "4 -> 2 -> 3 -> 1",
       "2 -> 4 -> 1 -> 3"
     ],
-    "answer": "c",
+    "answer": "b",
     "explanation_en": "Sequence: 2 (1861 Act) -> 4 (1892 Act) -> 3 (1909 Act) -> 1 (1919 Act). Highlights representative progress in India.",
     "explanation_ta": "வரிசை: 2 (1861 சட்டம்) -> 4 (1892 சட்டம்) -> 3 (1909 சட்டம்) -> 1 (1919 சட்டம்). இந்தியாவில் பிரதிநிதித்துவ வளர்ச்சியை இது சுட்டிக்காட்டுகிறது."
   },
@@ -302,8 +302,8 @@
       },
       {
         "id": "B",
-        "en": "2 -> 4 -> 3 -> 1",
-        "ta": "2 -> 4 -> 3 -> 1"
+        "en": "4 -> 2 -> 3 -> 1",
+        "ta": "4 -> 2 -> 3 -> 1"
       },
       {
         "id": "C",
@@ -312,11 +312,11 @@
       },
       {
         "id": "D",
-        "en": "4 -> 2 -> 3 -> 1",
-        "ta": "4 -> 2 -> 3 -> 1"
+        "en": "2 -> 4 -> 3 -> 1",
+        "ta": "2 -> 4 -> 3 -> 1"
       }
     ],
-    "correct_answer": "D",
+    "correct_answer": "B",
     "explanation": {
       "en": "Sequence: 4 (1784 Pitt's India Act) -> 2 (1833 Charter Act) -> 3 (1853 Charter Act) -> 1 (1858 GOI Act). Shows institutional evolution.",
       "ta": "வரிசை: 4 (1784 பிட் இந்தியச் சட்டம்) -> 2 (1833 சாசனச் சட்டம்) -> 3 (1853 சாசனச் சட்டம்) -> 1 (1858 இந்திய அரசுச் சட்டம்). நிறுவன வளர்ச்சியை இது விளக்குகிறது."
@@ -327,16 +327,16 @@
         "ta": "தவறு. சட்ட உறுப்பினர் 1833-ல் சேர்க்கப்பட்டார் (2), இது 1853 போட்டித் தேர்வுக்கு (3) முந்தியது."
       },
       "B": {
-        "en": "Incorrect. Dual Control was introduced in 1784 (4), before 1833 Act.",
-        "ta": "தவறு. இரட்டைக் கட்டுப்பாடு 1784-ல் அறிமுகமானது (4), இது 1833 சட்டத்திற்கு முந்தியது."
+        "en": "Correct. 4 (1784) -> 2 (1833) -> 3 (1853) -> 1 (1858) accurately reflects executive evolution.",
+        "ta": "சரி. 4 (1784) -> 2 (1833) -> 3 (1853) -> 1 (1858) சரியான நிர்வாக மாற்றங்களை வரிசைப்படுத்துகிறது."
       },
       "C": {
         "en": "Incorrect. Open competition was 1853 (3), while Secretary of State was created in 1858 (1).",
         "ta": "தவறு. போட்டித் தேர்வு 1853 (3), ஆனால் அரசுச் செயலர் உருவாக்கப்பட்டது 1858 (1)."
       },
       "D": {
-        "en": "Correct. 4 (1784) -> 2 (1833) -> 3 (1853) -> 1 (1858) accurately reflects executive evolution.",
-        "ta": "சரி. 4 (1784) -> 2 (1833) -> 3 (1853) -> 1 (1858) சரியான நிர்வாக மாற்றங்களை வரிசைப்படுத்துகிறது."
+        "en": "Incorrect. Dual Control was introduced in 1784 (4), before 1833 Act.",
+        "ta": "தவறு. இரட்டைக் கட்டுப்பாடு 1784-ல் அறிமுகமானது (4), இது 1833 சட்டத்திற்கு முந்தியது."
       }
     },
     "tnpsc_tip": {
@@ -365,17 +365,17 @@
     "question_ta": "பின்வரும் நிர்வாக மற்றும் தலைமை அதிகார மைல்கற்களை அவற்றின் வளர்ச்சிக்கு ஏற்ப சரியான காலவரிசையில் அமைக்கவும்:\n1. கட்டுப்பாட்டு வாரியம் மற்றும் இயக்குநர்கள் அவைக்குப் பதிலாக இந்திய அரசுச் செயலர் அலுவலகத்தை உருவாக்குதல்\n2. கவர்னர்-ஜெனரலின் நிர்வாகக் குழுவில் நான்காவது உறுப்பினராக (சட்ட உறுப்பினர்) ஒருவரைச் சேர்த்தல்\n3. இந்திய சிவில் சர்வீஸ் தேர்வுக்கு திறந்தவெளி போட்டித் தேர்வு முறையை அறிமுகப்படுத்துதல்\n4. இயக்குநர்கள் அவை (வணிகம்) மற்றும் கட்டுப்பாட்டு வாரியம் (அரசியல்) என அதிகாரத்தை முறைப்படி இரட்டையாகப் பிரித்தல்",
     "options_en": [
       "4 -> 3 -> 2 -> 1",
-      "2 -> 4 -> 3 -> 1",
+      "4 -> 2 -> 3 -> 1",
       "4 -> 2 -> 1 -> 3",
-      "4 -> 2 -> 3 -> 1"
+      "2 -> 4 -> 3 -> 1"
     ],
     "options_ta": [
       "4 -> 3 -> 2 -> 1",
-      "2 -> 4 -> 3 -> 1",
+      "4 -> 2 -> 3 -> 1",
       "4 -> 2 -> 1 -> 3",
-      "4 -> 2 -> 3 -> 1"
+      "2 -> 4 -> 3 -> 1"
     ],
-    "answer": "d",
+    "answer": "b",
     "explanation_en": "Sequence: 4 (1784 Pitt's India Act) -> 2 (1833 Charter Act) -> 3 (1853 Charter Act) -> 1 (1858 GOI Act). Shows institutional evolution.",
     "explanation_ta": "வரிசை: 4 (1784 பிட் இந்தியச் சட்டம்) -> 2 (1833 சாசனச் சட்டம்) -> 3 (1853 சாசனச் சட்டம்) -> 1 (1858 இந்திய அரசுச் சட்டம்). நிறுவன வளர்ச்சியை இது விளக்குகிறது."
   },
@@ -392,8 +392,8 @@
     "options": [
       {
         "id": "A",
-        "en": "2 -> 4 -> 3 -> 1",
-        "ta": "2 -> 4 -> 3 -> 1"
+        "en": "2 -> 4 -> 1 -> 3",
+        "ta": "2 -> 4 -> 1 -> 3"
       },
       {
         "id": "B",
@@ -407,19 +407,19 @@
       },
       {
         "id": "D",
-        "en": "2 -> 4 -> 1 -> 3",
-        "ta": "2 -> 4 -> 1 -> 3"
+        "en": "2 -> 4 -> 3 -> 1",
+        "ta": "2 -> 4 -> 3 -> 1"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "D",
     "explanation": {
       "en": "Sequence: 2 (1892 Act) -> 4 (1909 Act) -> 3 (1919 Act) -> 1 (1935 Act). Demonstrates legislative empowerment.",
       "ta": "வரிசை: 2 (1892 சட்டம்) -> 4 (1909 சட்டம்) -> 3 (1919 சட்டம்) -> 1 (1935 சட்டம்). சட்டமன்ற அதிகாரங்களின் வளர்ச்சியை இது காட்டுகிறது."
     },
     "why_not_others": {
       "A": {
-        "en": "Correct. 2 (1892) -> 4 (1909) -> 3 (1919) -> 1 (1935) follows exact legislative privilege growth.",
-        "ta": "சரி. 2 (1892) -> 4 (1909) -> 3 (1919) -> 1 (1935) சட்டமன்ற உரிமைகளின் வளர்ச்சியைத் துல்லியமாகப் பின்பற்றுகிறது."
+        "en": "Incorrect. Provincial Autonomy (1935) came after 1919 central bicameralism.",
+        "ta": "தவறு. மாகாண தன்னாட்சி (1935) 1919 மத்திய இரு அவை முறைக்குப் பின்னரே வந்தது."
       },
       "B": {
         "en": "Incorrect. Budget discussion (1892) preceded supplementary questions (1909).",
@@ -430,8 +430,8 @@
         "ta": "தவறு. மத்திய இரு அவை முறை (1919) துணைக் கேள்விகளுக்குப் (1909) பின்னரே வந்தது."
       },
       "D": {
-        "en": "Incorrect. Provincial Autonomy (1935) came after 1919 central bicameralism.",
-        "ta": "தவறு. மாகாண தன்னாட்சி (1935) 1919 மத்திய இரு அவை முறைக்குப் பின்னரே வந்தது."
+        "en": "Correct. 2 (1892) -> 4 (1909) -> 3 (1919) -> 1 (1935) follows exact legislative privilege growth.",
+        "ta": "சரி. 2 (1892) -> 4 (1909) -> 3 (1919) -> 1 (1935) சட்டமன்ற உரிமைகளின் வளர்ச்சியைத் துல்லியமாகப் பின்பற்றுகிறது."
       }
     },
     "tnpsc_tip": {
@@ -459,18 +459,18 @@
     "question_en": "Arrange the following legislative council financial and structural privileges in order of their constitutional grant:\n1. Grant of Provincial Autonomy and establishment of a tri-partite legislative distribution (Federal, Provincial, Concurrent lists)\n2. Right of legislative members to discuss the budget without power to vote or move resolutions\n3. Establishment of a bicameral legislature at the Centre with Council of State and Legislative Assembly\n4. Right of legislative members to ask supplementary questions and move resolutions on the budget",
     "question_ta": "சட்ட மேலவைகளின் நிதி மற்றும் கட்டமைப்பு சலுகைகள் வழங்கப்பட்டதன் அடிப்படையில் அவற்றை சரியான காலவரிசையில் அமைக்கவும்:\n1. மாகாண தன்னாட்சி வழங்குதல் மற்றும் மூன்று அடுக்கு சட்டப் பட்டியல்கள் (கூட்டாட்சி, மாகாண, பொதுப் பட்டியல்கள்) உருவாக்குதல்\n2. வாக்களிக்கும் அல்லது தீர்மானம் கொண்டுவரும் அதிகாரமின்றி வரவு செலவுத் திட்டத்தை (பட்ஜெட்) விவாதிக்க உறுப்பினர்களுக்கு உரிமை அளித்தல்\n3. மத்திய சட்டமன்றத்தில் மாநிலங்கள் அவை மற்றும் சட்டப் பேரவை கொண்ட இரு அவை முறையை உருவாக்குதல்\n4. பட்ஜெட் மீது துணைக் கேள்விகள் கேட்கவும் தீர்மானங்கள் கொண்டுவரவும் உறுப்பினர்களுக்கு உரிமை அளித்தல்",
     "options_en": [
-      "2 -> 4 -> 3 -> 1",
+      "2 -> 4 -> 1 -> 3",
       "4 -> 2 -> 3 -> 1",
       "2 -> 3 -> 4 -> 1",
-      "2 -> 4 -> 1 -> 3"
+      "2 -> 4 -> 3 -> 1"
     ],
     "options_ta": [
-      "2 -> 4 -> 3 -> 1",
+      "2 -> 4 -> 1 -> 3",
       "4 -> 2 -> 3 -> 1",
       "2 -> 3 -> 4 -> 1",
-      "2 -> 4 -> 1 -> 3"
+      "2 -> 4 -> 3 -> 1"
     ],
-    "answer": "a",
+    "answer": "d",
     "explanation_en": "Sequence: 2 (1892 Act) -> 4 (1909 Act) -> 3 (1919 Act) -> 1 (1935 Act). Demonstrates legislative empowerment.",
     "explanation_ta": "வரிசை: 2 (1892 சட்டம்) -> 4 (1909 சட்டம்) -> 3 (1919 சட்டம்) -> 1 (1935 சட்டம்). சட்டமன்ற அதிகாரங்களின் வளர்ச்சியை இது காட்டுகிறது."
   },
@@ -487,13 +487,13 @@
     "options": [
       {
         "id": "A",
-        "en": "4 -> 2 -> 3 -> 1",
-        "ta": "4 -> 2 -> 3 -> 1"
+        "en": "4 -> 3 -> 2 -> 1",
+        "ta": "4 -> 3 -> 2 -> 1"
       },
       {
         "id": "B",
-        "en": "4 -> 3 -> 2 -> 1",
-        "ta": "4 -> 3 -> 2 -> 1"
+        "en": "4 -> 2 -> 3 -> 1",
+        "ta": "4 -> 2 -> 3 -> 1"
       },
       {
         "id": "C",
@@ -506,19 +506,19 @@
         "ta": "4 -> 3 -> 1 -> 2"
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "A",
     "explanation": {
       "en": "Sequence: 4 (1774 Fort William SC) -> 3 (1862 High Courts) -> 2 (1937 Federal Court) -> 1 (1950 Supreme Court of India). Shows judicial integration trajectory.",
       "ta": "வரிசை: 4 (1774 வில்லியம் கோட்டை உச்ச நீதிமன்றம்) -> 3 (1862 உயர் நீதிமன்றங்கள்) -> 2 (1937 கூட்டாட்சி நீதிமன்றம்) -> 1 (1950 இந்திய உச்ச நீதிமன்றம்). நீதித்துறை ஒருங்கிணைப்பை இது விளக்குகிறது."
     },
     "why_not_others": {
       "A": {
-        "en": "Incorrect. High Courts (1862) were established before Federal Court (1937).",
-        "ta": "தவறு. உயர் நீதிமன்றங்கள் (1862) கூட்டாட்சி நீதிமன்றத்திற்கு (1937) முன்பே அமைக்கப்பட்டன."
-      },
-      "B": {
         "en": "Correct. 4 (1774) -> 3 (1862) -> 2 (1937) -> 1 (1950) perfectly matches judicial history.",
         "ta": "சரி. 4 (1774) -> 3 (1862) -> 2 (1937) -> 1 (1950) நீதித்துறை வரலாற்றைத் துல்லியமாகப் பிரதிபலிக்கிறது."
+      },
+      "B": {
+        "en": "Incorrect. High Courts (1862) were established before Federal Court (1937).",
+        "ta": "தவறு. உயர் நீதிமன்றங்கள் (1862) கூட்டாட்சி நீதிமன்றத்திற்கு (1937) முன்பே அமைக்கப்பட்டன."
       },
       "C": {
         "en": "Incorrect. Fort William Supreme Court (1774) was long before High Courts (1862).",
@@ -554,18 +554,18 @@
     "question_en": "Arrange the establishment of the following judicial bodies in British India and Independent India in correct chronological order:\n1. Inauguration of the Supreme Court of India under the Constitution of India\n2. Establishment of the Federal Court of India at Delhi\n3. Establishment of High Courts at Calcutta, Bombay, and Madras\n4. Establishment of the Supreme Court of Judicature at Fort William, Calcutta",
     "question_ta": "பிரிட்டிஷ் இந்தியா மற்றும் சுதந்திர இந்தியாவில் பின்வரும் நீதித்துறை அமைப்புகள் நிறுவப்பட்டதை சரியான காலவரிசையில் அமைக்கவும்:\n1. இந்திய அரசியலமைப்பின் கீழ் இந்திய உச்ச நீதிமன்றத்தை முறைப்படி தொடங்குதல்\n2. டெல்லியில் இந்தியாவின் கூட்டாட்சி நீதிமன்றத்தை (Federal Court) அமைத்தல்\n3. கொல்கத்தா, பம்பாய் மற்றும் மதராஸில் உயர் நீதிமன்றங்களை அமைத்தல்\n4. கொல்கத்தா வில்லியம் கோட்டையில் உச்ச நீதிமன்றத்தை அமைத்தல்",
     "options_en": [
-      "4 -> 2 -> 3 -> 1",
       "4 -> 3 -> 2 -> 1",
+      "4 -> 2 -> 3 -> 1",
       "3 -> 4 -> 2 -> 1",
       "4 -> 3 -> 1 -> 2"
     ],
     "options_ta": [
-      "4 -> 2 -> 3 -> 1",
       "4 -> 3 -> 2 -> 1",
+      "4 -> 2 -> 3 -> 1",
       "3 -> 4 -> 2 -> 1",
       "4 -> 3 -> 1 -> 2"
     ],
-    "answer": "b",
+    "answer": "a",
     "explanation_en": "Sequence: 4 (1774 Fort William SC) -> 3 (1862 High Courts) -> 2 (1937 Federal Court) -> 1 (1950 Supreme Court of India). Shows judicial integration trajectory.",
     "explanation_ta": "வரிசை: 4 (1774 வில்லியம் கோட்டை உச்ச நீதிமன்றம்) -> 3 (1862 உயர் நீதிமன்றங்கள்) -> 2 (1937 கூட்டாட்சி நீதிமன்றம்) -> 1 (1950 இந்திய உச்ச நீதிமன்றம்). நீதித்துறை ஒருங்கிணைப்பை இது விளக்குகிறது."
   },
@@ -677,8 +677,8 @@
     "options": [
       {
         "id": "A",
-        "en": "4 -> 3 -> 2 -> 1",
-        "ta": "4 -> 3 -> 2 -> 1"
+        "en": "4 -> 2 -> 3 -> 1",
+        "ta": "4 -> 2 -> 3 -> 1"
       },
       {
         "id": "B",
@@ -692,19 +692,19 @@
       },
       {
         "id": "D",
-        "en": "4 -> 2 -> 3 -> 1",
-        "ta": "4 -> 2 -> 3 -> 1"
+        "en": "4 -> 3 -> 2 -> 1",
+        "ta": "4 -> 3 -> 2 -> 1"
       }
     ],
-    "correct_answer": "D",
+    "correct_answer": "A",
     "explanation": {
       "en": "Sequence: 4 (1870 Mayo Resolution) -> 2 (1882 Ripon Resolution) -> 3 (1907 Hobhouse Commission) -> 1 (1919 Dyarchy Transfer). Local government evolution.",
       "ta": "வரிசை: 4 (1870 மேயோ தீர்மானம்) -> 2 (1882 ரிப்பன் தீர்மானம்) -> 3 (1907 ஹாப்ஹவுஸ் ஆணையம்) -> 1 (1919 இரட்டை ஆட்சி மாற்றம்). உள்ளாட்சி வளர்ச்சி."
     },
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Ripon Resolution (1882) was before Hobhouse Commission (1907).",
-        "ta": "தவறு. ரிப்பன் தீர்மானம் (1882) ஹாப்ஹவுஸ் ஆணையத்திற்கு (1907) முந்தியது."
+        "en": "Correct. 4 (1870) -> 2 (1882) -> 3 (1907) -> 1 (1919) matches local self-government progress.",
+        "ta": "சரி. 4 (1870) -> 2 (1882) -> 3 (1907) -> 1 (1919) உள்ளாட்சி வளர்ச்சியைக் காட்டுகிறது."
       },
       "B": {
         "en": "Incorrect. Mayo Resolution (1870) was before Ripon Resolution (1882).",
@@ -715,8 +715,8 @@
         "ta": "தவறு. ஹாப்ஹவுஸ் ஆணையம் (1907) 1919 சட்டத்திற்கு முன்பே வந்தது."
       },
       "D": {
-        "en": "Correct. 4 (1870) -> 2 (1882) -> 3 (1907) -> 1 (1919) matches local self-government progress.",
-        "ta": "சரி. 4 (1870) -> 2 (1882) -> 3 (1907) -> 1 (1919) உள்ளாட்சி வளர்ச்சியைக் காட்டுகிறது."
+        "en": "Incorrect. Ripon Resolution (1882) was before Hobhouse Commission (1907).",
+        "ta": "தவறு. ரிப்பன் தீர்மானம் (1882) ஹாப்ஹவுஸ் ஆணையத்திற்கு (1907) முந்தியது."
       }
     },
     "tnpsc_tip": {
@@ -744,18 +744,18 @@
     "question_en": "Arrange the following administrative decentralization and local self-government milestones in chronological order:\n1. Transfer of Local Self-Government to the administrative control of elected Indian Ministers (Transferred Subject)\n2. Lord Ripon's Resolution on Local Self-Government (Magna Carta of Local Self-Government)\n3. Appointment of the Royal Commission on Decentralization (Hobhouse Commission)\n4. Lord Mayo's Resolution on Financial Decentralization granting fixed grants to provinces",
     "question_ta": "பின்வரும் நிர்வாகப் பரவலாக்கம் மற்றும் உள்ளாட்சி சுயஅரசு மைல்கற்களை காலவரிசையில் அமைக்கவும்:\n1. உள்ளாட்சி சுயஅரசை தேர்ந்தெடுக்கப்பட்ட இந்திய அமைச்சர்களின் நிர்வாகக் கட்டுப்பாட்டிற்கு மாற்றுதல் (மாற்றப்பட்ட துறை)\n2. லார்டு ரிப்பனின் உள்ளாட்சி சுயஅரசு தீர்மானம் (உள்ளாட்சி சுயஅரசின் மகாசாசனம்)\n3. பரவலாக்கத்திற்கான அரச ஆணையம் அமைத்தல் (ஹாப்ஹவுஸ் ஆணையம்)\n4. மாகாணங்களுக்கு நிலையான மானியங்களை வழங்கி நிதிப் பரவலாக்கம் செய்த லார்டு மேயோவின் தீர்மானம்",
     "options_en": [
-      "4 -> 3 -> 2 -> 1",
+      "4 -> 2 -> 3 -> 1",
       "2 -> 4 -> 3 -> 1",
       "4 -> 2 -> 1 -> 3",
-      "4 -> 2 -> 3 -> 1"
+      "4 -> 3 -> 2 -> 1"
     ],
     "options_ta": [
-      "4 -> 3 -> 2 -> 1",
+      "4 -> 2 -> 3 -> 1",
       "2 -> 4 -> 3 -> 1",
       "4 -> 2 -> 1 -> 3",
-      "4 -> 2 -> 3 -> 1"
+      "4 -> 3 -> 2 -> 1"
     ],
-    "answer": "d",
+    "answer": "a",
     "explanation_en": "Sequence: 4 (1870 Mayo Resolution) -> 2 (1882 Ripon Resolution) -> 3 (1907 Hobhouse Commission) -> 1 (1919 Dyarchy Transfer). Local government evolution.",
     "explanation_ta": "வரிசை: 4 (1870 மேயோ தீர்மானம்) -> 2 (1882 ரிப்பன் தீர்மானம்) -> 3 (1907 ஹாப்ஹவுஸ் ஆணையம்) -> 1 (1919 இரட்டை ஆட்சி மாற்றம்). உள்ளாட்சி வளர்ச்சி."
   },
@@ -772,13 +772,13 @@
     "options": [
       {
         "id": "A",
-        "en": "3 -> 1 -> 2 -> 4",
-        "ta": "3 -> 1 -> 2 -> 4"
+        "en": "1 -> 3 -> 2 -> 4",
+        "ta": "1 -> 3 -> 2 -> 4"
       },
       {
         "id": "B",
-        "en": "1 -> 3 -> 2 -> 4",
-        "ta": "1 -> 3 -> 2 -> 4"
+        "en": "3 -> 1 -> 2 -> 4",
+        "ta": "3 -> 1 -> 2 -> 4"
       },
       {
         "id": "C",
@@ -791,19 +791,19 @@
         "ta": "3 -> 1 -> 4 -> 2"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "B",
     "explanation": {
       "en": "Sequence: 3 (1773 Regulating Act) -> 1 (1833 Charter Act) -> 2 (1861 Indian Councils Act) -> 4 (1935 GOI Act). Centralization to decentralization pendulum.",
       "ta": "வரிசை: 3 (1773 ஒழுங்குமுறைச் சட்டம்) -> 1 (1833 சாசனச் சட்டம்) -> 2 (1861 இந்தியக் கவுன்சில்கள் சட்டம்) -> 4 (1935 இந்திய அரசுச் சட்டம்)."
     },
     "why_not_others": {
       "A": {
-        "en": "Correct. 3 (1773) -> 1 (1833) -> 2 (1861) -> 4 (1935) tracks central vs provincial power shifts.",
-        "ta": "சரி. 3 (1773) -> 1 (1833) -> 2 (1861) -> 4 (1935) மத்திய-மாகாண அதிகார மாற்றங்களைத் துல்லியமாகக் காட்டுகிறது."
-      },
-      "B": {
         "en": "Incorrect. Subordination of presidencies (1773) was prior to 1833 Act.",
         "ta": "தவறு. மாகாணங்கள் கீழ்ப்படுத்தப்படுதல் (1773) 1833 சட்டத்திற்கு முந்தியது."
+      },
+      "B": {
+        "en": "Correct. 3 (1773) -> 1 (1833) -> 2 (1861) -> 4 (1935) tracks central vs provincial power shifts.",
+        "ta": "சரி. 3 (1773) -> 1 (1833) -> 2 (1861) -> 4 (1935) மத்திய-மாகாண அதிகார மாற்றங்களைத் துல்லியமாகக் காட்டுகிறது."
       },
       "C": {
         "en": "Incorrect. Restoration of powers (1861) was after total centralization in 1833.",
@@ -839,18 +839,18 @@
     "question_en": "Arrange the following phases of legislative centralization and decentralization in India in correct chronological sequence:\n1. Total centralized legislative authority vested in Governor-General of India, depriving Bombay and Madras of legislative powers\n2. Reversal of centralization policy by restoring legislative powers to Bombay and Madras Presidencies\n3. Initial subordination of Bombay and Madras Presidencies to Governor-General of Bengal in matters of war and peace\n4. Complete grant of Provincial Autonomy with full executive responsibility to provincial ministers",
     "question_ta": "இந்தியாவில் சட்டமியற்றும் அதிகார மையமாக்கல் மற்றும் அதிகாரப் பரவலாக்கத்தின் பின்வரும் கட்டங்களை சரியான காலவரிசையில் அமைக்கவும்:\n1. பம்பாய் மற்றும் மதராஸின் சட்ட அதிகாரங்களைப் பறித்து, இந்தியாவின் கவர்னர்-ஜெனரலிடம் சட்ட அதிகாரத்தை முழுமையாக மையப்படுத்துதல்\n2. பம்பாய் மற்றும் மதராஸ் மாகாணங்களுக்கு சட்ட அதிகாரங்களை மீட்டளித்து அதிகார மையமாக்கலைத் திரும்பப் பெறுதல்\n3. போர் மற்றும் அமைதி விவகாரங்களில் பம்பாய் மற்றும் மதராஸ் மாகாணங்களை வங்காள கவர்னர்-ஜெனரலுக்குத் தொடக்கத்தில் கீழ்ப்படுத்துதல்\n4. மாகாண அமைச்சர்களுக்கு முழு நிர்வாகப் பொறுப்புடன் கூடிய முழுமையான மாகாண தன்னாட்சி வழங்குதல்",
     "options_en": [
-      "3 -> 1 -> 2 -> 4",
       "1 -> 3 -> 2 -> 4",
+      "3 -> 1 -> 2 -> 4",
       "3 -> 2 -> 1 -> 4",
       "3 -> 1 -> 4 -> 2"
     ],
     "options_ta": [
-      "3 -> 1 -> 2 -> 4",
       "1 -> 3 -> 2 -> 4",
+      "3 -> 1 -> 2 -> 4",
       "3 -> 2 -> 1 -> 4",
       "3 -> 1 -> 4 -> 2"
     ],
-    "answer": "a",
+    "answer": "b",
     "explanation_en": "Sequence: 3 (1773 Regulating Act) -> 1 (1833 Charter Act) -> 2 (1861 Indian Councils Act) -> 4 (1935 GOI Act). Centralization to decentralization pendulum.",
     "explanation_ta": "வரிசை: 3 (1773 ஒழுங்குமுறைச் சட்டம்) -> 1 (1833 சாசனச் சட்டம்) -> 2 (1861 இந்தியக் கவுன்சில்கள் சட்டம்) -> 4 (1935 இந்திய அரசுச் சட்டம்)."
   },
@@ -872,13 +872,13 @@
       },
       {
         "id": "B",
-        "en": "1 -> 2 -> 4 -> 3",
-        "ta": "1 -> 2 -> 4 -> 3"
+        "en": "2 -> 1 -> 4 -> 3",
+        "ta": "2 -> 1 -> 4 -> 3"
       },
       {
         "id": "C",
-        "en": "2 -> 1 -> 4 -> 3",
-        "ta": "2 -> 1 -> 4 -> 3"
+        "en": "1 -> 2 -> 4 -> 3",
+        "ta": "1 -> 2 -> 4 -> 3"
       },
       {
         "id": "D",
@@ -886,7 +886,7 @@
         "ta": "1 -> 2 -> 3 -> 4"
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "C",
     "explanation": {
       "en": "Sequence: 1 (Nehru Report Aug 1928) -> 2 (Simon Report May 1930) -> 4 (1st RTC Nov 1930) -> 3 (White Paper Mar 1933). Road to 1935 Act.",
       "ta": "வரிசை: 1 (நேரு அறிக்கை ஆக 1928) -> 2 (சைமன் அறிக்கை மே 1930) -> 4 (1வது RTC நவ 1930) -> 3 (வெள்ளை அறிக்கை மார்ச் 1933)."
@@ -897,12 +897,12 @@
         "ta": "தவறு. சைமன் குழு அறிக்கை (மே 1930) 1வது வட்டமேஜை மாநாட்டிற்கு (நவ 1930) முந்தியது."
       },
       "B": {
-        "en": "Correct. 1 (Aug 1928) -> 2 (May 1930) -> 4 (Nov 1930) -> 3 (Mar 1933) accurately matches history.",
-        "ta": "சரி. 1 (ஆக 1928) -> 2 (மே 1930) -> 4 (நவ 1930) -> 3 (மார்ச் 1933) வரலாற்று நாட்காட்டியைப் பின்பற்றுகிறது."
-      },
-      "C": {
         "en": "Incorrect. Nehru Report was published in 1928, before Simon Report in 1930.",
         "ta": "தவறு. நேரு அறிக்கை 1928-ல் வெளியிடப்பட்டது, இது சைமன் அறிக்கைக்கு (1930) முந்தியது."
+      },
+      "C": {
+        "en": "Correct. 1 (Aug 1928) -> 2 (May 1930) -> 4 (Nov 1930) -> 3 (Mar 1933) accurately matches history.",
+        "ta": "சரி. 1 (ஆக 1928) -> 2 (மே 1930) -> 4 (நவ 1930) -> 3 (மார்ச் 1933) வரலாற்று நாட்காட்டியைப் பின்பற்றுகிறது."
       },
       "D": {
         "en": "Incorrect. White Paper (1933) was published after Round Table Conferences.",
@@ -935,17 +935,17 @@
     "question_ta": "1935 இந்திய அரசுச் சட்டத்திற்கு வழிகோலிய பின்வரும் முக்கிய அரசியல் நிகழ்வுகள் மற்றும் குழு பரிந்துரைகளை சரியான காலவரிசையில் அமைக்கவும்:\n1. இந்தியாவுக்கு டொமினியன் அந்தஸ்து அரசியலமைப்பை முன்மொழிந்த நேரு அறிக்கை வெளியிடப்படல்\n2. இரட்டை ஆட்சியை நீக்கப் பரிந்துரைத்து சைமன் குழு அறிக்கை சமர்ப்பிக்கப்படல்\n3. பிரிட்டிஷ் அரசாங்கத்தின் 'அரசியலமைப்பு சீர்திருத்தங்கள் பற்றிய வெள்ளை அறிக்கை' வெளியிடப்படல்\n4. லண்டனில் முதலாவது வட்டமேஜை மாநாடு கூட்டப்படல்",
     "options_en": [
       "1 -> 4 -> 2 -> 3",
-      "1 -> 2 -> 4 -> 3",
       "2 -> 1 -> 4 -> 3",
+      "1 -> 2 -> 4 -> 3",
       "1 -> 2 -> 3 -> 4"
     ],
     "options_ta": [
       "1 -> 4 -> 2 -> 3",
-      "1 -> 2 -> 4 -> 3",
       "2 -> 1 -> 4 -> 3",
+      "1 -> 2 -> 4 -> 3",
       "1 -> 2 -> 3 -> 4"
     ],
-    "answer": "b",
+    "answer": "c",
     "explanation_en": "Sequence: 1 (Nehru Report Aug 1928) -> 2 (Simon Report May 1930) -> 4 (1st RTC Nov 1930) -> 3 (White Paper Mar 1933). Road to 1935 Act.",
     "explanation_ta": "வரிசை: 1 (நேரு அறிக்கை ஆக 1928) -> 2 (சைமன் அறிக்கை மே 1930) -> 4 (1வது RTC நவ 1930) -> 3 (வெள்ளை அறிக்கை மார்ச் 1933)."
   },
@@ -972,16 +972,16 @@
       },
       {
         "id": "C",
-        "en": "2 -> 4 -> 1 -> 3",
-        "ta": "2 -> 4 -> 1 -> 3"
+        "en": "2 -> 4 -> 3 -> 1",
+        "ta": "2 -> 4 -> 3 -> 1"
       },
       {
         "id": "D",
-        "en": "2 -> 4 -> 3 -> 1",
-        "ta": "2 -> 4 -> 3 -> 1"
+        "en": "2 -> 4 -> 1 -> 3",
+        "ta": "2 -> 4 -> 1 -> 3"
       }
     ],
-    "correct_answer": "C",
+    "correct_answer": "D",
     "explanation": {
       "en": "Sequence: 2 (Montagu-Chelmsford Report 1918) -> 4 (GOI Act 1919) -> 1 (Muddiman Committee 1924) -> 3 (Simon Commission 1927). Traces review mechanisms.",
       "ta": "வரிசை: 2 (மாண்டேகு அறிக்கை 1918) -> 4 (1919 சட்டம்) -> 1 (முடிமேன் குழு 1924) -> 3 (சைமன் குழு 1927)."
@@ -996,12 +996,12 @@
         "ta": "தவறு. மாண்டேகு-செம்ஸ்ஃபோர்டு அறிக்கை (1918) 1919 சட்டம் இயற்றப்படுவதற்கு முந்தியது."
       },
       "C": {
-        "en": "Correct. 2 (1918) -> 4 (1919) -> 1 (1924) -> 3 (1927) perfectly follows Dyarchy evaluation history.",
-        "ta": "சரி. 2 (1918) -> 4 (1919) -> 1 (1924) -> 3 (1927) இரட்டை ஆட்சி மதிப்பீட்டு வரலாற்றைப் பின்பற்றுகிறது."
-      },
-      "D": {
         "en": "Incorrect. Simon Commission (1927) was appointed after Muddiman Committee (1924).",
         "ta": "தவறு. சைமன் குழு (1927) முடிமேன் குழுவிற்கு (1924) பின்னரே அமைந்தது."
+      },
+      "D": {
+        "en": "Correct. 2 (1918) -> 4 (1919) -> 1 (1924) -> 3 (1927) perfectly follows Dyarchy evaluation history.",
+        "ta": "சரி. 2 (1918) -> 4 (1919) -> 1 (1924) -> 3 (1927) இரட்டை ஆட்சி மதிப்பீட்டு வரலாற்றைப் பின்பற்றுகிறது."
       }
     },
     "tnpsc_tip": {
@@ -1032,16 +1032,16 @@
     "options_en": [
       "2 -> 1 -> 4 -> 3",
       "4 -> 2 -> 1 -> 3",
-      "2 -> 4 -> 1 -> 3",
-      "2 -> 4 -> 3 -> 1"
+      "2 -> 4 -> 3 -> 1",
+      "2 -> 4 -> 1 -> 3"
     ],
     "options_ta": [
       "2 -> 1 -> 4 -> 3",
       "4 -> 2 -> 1 -> 3",
-      "2 -> 4 -> 1 -> 3",
-      "2 -> 4 -> 3 -> 1"
+      "2 -> 4 -> 3 -> 1",
+      "2 -> 4 -> 1 -> 3"
     ],
-    "answer": "c",
+    "answer": "d",
     "explanation_en": "Sequence: 2 (Montagu-Chelmsford Report 1918) -> 4 (GOI Act 1919) -> 1 (Muddiman Committee 1924) -> 3 (Simon Commission 1927). Traces review mechanisms.",
     "explanation_ta": "வரிசை: 2 (மாண்டேகு அறிக்கை 1918) -> 4 (1919 சட்டம்) -> 1 (முடிமேன் குழு 1924) -> 3 (சைமன் குழு 1927)."
   },
@@ -1148,8 +1148,8 @@
     "difficulty": "Hard",
     "question_type": "Chronology",
     "question": {
-      "en": "Arrange the creation/designation of the following top executive heads in India in chronological order:\n1. First Governor-General of Bengal under Regulating Act (Warren Hastings)\n2. First Governor-General of India under Charter Act (Lord William Bentinck)\n3. First Viceroy of India under Government of India Act (Lord Canning)\n4. First Governor-General of Independent India (Lord Mountbatten)",
-      "ta": "இந்தியாவின் உயர்மட்ட நிர்வாகப் பொறுப்புகள் மற்றும் பதவிகள் உருவாக்கப்பட்டதை சரியான காலவரிசையில் அமைக்கவும்:\n1. ஒழுங்குமுறைச் சட்டத்தின் கீழ் வங்காளத்தின் முதல் கவர்னர்-ஜெனரல் (வாரன் ஹேஸ்டிங்ஸ்)\n2. சாசனச் சட்டத்தின் கீழ் இந்தியாவின் முதல் கவர்னர்-ஜெனரல் (லார்டு வில்லியம் பென்டிங்க்)\n3. இந்திய அரசுச் சட்டத்தின் கீழ் இந்தியாவின் முதல் வைஸ்ராய் (லார்டு கேனிங்)\n4. சுதந்திர இந்தியாவின் முதல் கவர்னர்-ஜெனரல் (லார்டு மவுண்ட்பேட்டன்)"
+      "en": "Arrange the creation/designation of the following top executive heads in India in chronological order:\n1. First Viceroy of India under Government of India Act (Lord Canning)\n2. First Governor-General of Bengal under Regulating Act (Warren Hastings)\n3. First Governor-General of Independent India (Lord Mountbatten)\n4. First Governor-General of India under Charter Act (Lord William Bentinck)",
+      "ta": "இந்தியாவின் உயர்மட்ட நிர்வாகப் பொறுப்புகள் மற்றும் பதவிகள் உருவாக்கப்பட்டதை சரியான காலவரிசையில் அமைக்கவும்:\n1. இந்திய அரசுச் சட்டத்தின் கீழ் இந்தியாவின் முதல் வைஸ்ராய் (லார்டு கேனிங்)\n2. ஒழுங்குமுறைச் சட்டத்தின் கீழ் வங்காளத்தின் முதல் கவர்னர்-ஜெனரல் (வாரன் ஹேஸ்டிங்ஸ்)\n3. சுதந்திர இந்தியாவின் முதல் கவர்னர்-ஜெனரல் (லார்டு மவுண்ட்பேட்டன்)\n4. சாசனச் சட்டத்தின் கீழ் இந்தியாவின் முதல் கவர்னர்-ஜெனரல் (லார்டு வில்லியம் பென்டிங்க்)"
     },
     "options": [
       {
@@ -1159,41 +1159,41 @@
       },
       {
         "id": "B",
-        "en": "2 -> 1 -> 3 -> 4",
-        "ta": "2 -> 1 -> 3 -> 4"
+        "en": "2 -> 4 -> 1 -> 3",
+        "ta": "2 -> 4 -> 1 -> 3"
       },
       {
         "id": "C",
-        "en": "1 -> 3 -> 2 -> 4",
-        "ta": "1 -> 3 -> 2 -> 4"
+        "en": "1 -> 2 -> 4 -> 3",
+        "ta": "1 -> 2 -> 4 -> 3"
       },
       {
         "id": "D",
-        "en": "1 -> 2 -> 4 -> 3",
-        "ta": "1 -> 2 -> 4 -> 3"
+        "en": "1 -> 3 -> 2 -> 4",
+        "ta": "1 -> 3 -> 2 -> 4"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "B",
     "explanation": {
       "en": "Sequence: 1 (1773 GG of Bengal) -> 2 (1833 GG of India) -> 3 (1858 Viceroy of India) -> 4 (1947 GG of Independent India). Executive designation evolution.",
       "ta": "வரிசை: 1 (1773 வங்காள கவர்னர்-ஜெனரல்) -> 2 (1833 இந்திய கவர்னர்-ஜெனரல்) -> 3 (1858 இந்திய வைஸ்ராய்) -> 4 (1947 சுதந்திர இந்திய கவர்னர்-ஜெனரல்)."
     },
     "why_not_others": {
       "A": {
-        "en": "Correct. 1 (1773) -> 2 (1833) -> 3 (1858) -> 4 (1947) perfectly matches top executive office transitions.",
-        "ta": "சரி. 1 (1773) -> 2 (1833) -> 3 (1858) -> 4 (1947) உயர்மட்ட நிர்வாகப் பதவி மாற்றங்களைத் துல்லியமாகப் பின்பற்றுகிறது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 3 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 3 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "B": {
-        "en": "Incorrect. Governor-General of Bengal (1773) was created before Governor-General of India (1833).",
-        "ta": "தவறு. வங்காள கவர்னர்-ஜெனரல் (1773) இந்திய கவர்னர்-ஜெனரலுக்கு (1833) முந்தியவர்."
+        "en": "✅ Correct.\nThe correct chronological sequence is '2 -> 4 -> 1 -> 3'.",
+        "ta": "✅ சரி.\nசரியான காலவரிசை '2 -> 4 -> 1 -> 3' ஆகும்."
       },
       "C": {
-        "en": "Incorrect. Governor-General of India designation (1833) preceded Viceroy designation (1858).",
-        "ta": "தவறு. இந்திய கவர்னர்-ஜெனரல் பதவி (1833) வைஸ்ராய் பதவிக்கு (1858) முந்தியது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 4 -> 3' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 4 -> 3' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "D": {
-        "en": "Incorrect. Viceroy designation (1858) was long before 1947 independence.",
-        "ta": "தவறு. வைஸ்ராய் பதவி (1858) 1947 சுதந்திரத்திற்குப் பல ஆண்டுகள் முந்தியது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 3 -> 2 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 3 -> 2 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       }
     },
     "tnpsc_tip": {
@@ -1219,21 +1219,21 @@
       "Governor General",
       "Viceroy"
     ],
-    "question_en": "Arrange the creation/designation of the following top executive heads in India in chronological order:\n1. First Governor-General of Bengal under Regulating Act (Warren Hastings)\n2. First Governor-General of India under Charter Act (Lord William Bentinck)\n3. First Viceroy of India under Government of India Act (Lord Canning)\n4. First Governor-General of Independent India (Lord Mountbatten)",
-    "question_ta": "இந்தியாவின் உயர்மட்ட நிர்வாகப் பொறுப்புகள் மற்றும் பதவிகள் உருவாக்கப்பட்டதை சரியான காலவரிசையில் அமைக்கவும்:\n1. ஒழுங்குமுறைச் சட்டத்தின் கீழ் வங்காளத்தின் முதல் கவர்னர்-ஜெனரல் (வாரன் ஹேஸ்டிங்ஸ்)\n2. சாசனச் சட்டத்தின் கீழ் இந்தியாவின் முதல் கவர்னர்-ஜெனரல் (லார்டு வில்லியம் பென்டிங்க்)\n3. இந்திய அரசுச் சட்டத்தின் கீழ் இந்தியாவின் முதல் வைஸ்ராய் (லார்டு கேனிங்)\n4. சுதந்திர இந்தியாவின் முதல் கவர்னர்-ஜெனரல் (லார்டு மவுண்ட்பேட்டன்)",
+    "question_en": "Arrange the creation/designation of the following top executive heads in India in chronological order:\n1. First Viceroy of India under Government of India Act (Lord Canning)\n2. First Governor-General of Bengal under Regulating Act (Warren Hastings)\n3. First Governor-General of Independent India (Lord Mountbatten)\n4. First Governor-General of India under Charter Act (Lord William Bentinck)",
+    "question_ta": "இந்தியாவின் உயர்மட்ட நிர்வாகப் பொறுப்புகள் மற்றும் பதவிகள் உருவாக்கப்பட்டதை சரியான காலவரிசையில் அமைக்கவும்:\n1. இந்திய அரசுச் சட்டத்தின் கீழ் இந்தியாவின் முதல் வைஸ்ராய் (லார்டு கேனிங்)\n2. ஒழுங்குமுறைச் சட்டத்தின் கீழ் வங்காளத்தின் முதல் கவர்னர்-ஜெனரல் (வாரன் ஹேஸ்டிங்ஸ்)\n3. சுதந்திர இந்தியாவின் முதல் கவர்னர்-ஜெனரல் (லார்டு மவுண்ட்பேட்டன்)\n4. சாசனச் சட்டத்தின் கீழ் இந்தியாவின் முதல் கவர்னர்-ஜெனரல் (லார்டு வில்லியம் பென்டிங்க்)",
     "options_en": [
       "1 -> 2 -> 3 -> 4",
-      "2 -> 1 -> 3 -> 4",
-      "1 -> 3 -> 2 -> 4",
-      "1 -> 2 -> 4 -> 3"
+      "2 -> 4 -> 1 -> 3",
+      "1 -> 2 -> 4 -> 3",
+      "1 -> 3 -> 2 -> 4"
     ],
     "options_ta": [
       "1 -> 2 -> 3 -> 4",
-      "2 -> 1 -> 3 -> 4",
-      "1 -> 3 -> 2 -> 4",
-      "1 -> 2 -> 4 -> 3"
+      "2 -> 4 -> 1 -> 3",
+      "1 -> 2 -> 4 -> 3",
+      "1 -> 3 -> 2 -> 4"
     ],
-    "answer": "a",
+    "answer": "b",
     "explanation_en": "Sequence: 1 (1773 GG of Bengal) -> 2 (1833 GG of India) -> 3 (1858 Viceroy of India) -> 4 (1947 GG of Independent India). Executive designation evolution.",
     "explanation_ta": "வரிசை: 1 (1773 வங்காள கவர்னர்-ஜெனரல்) -> 2 (1833 இந்திய கவர்னர்-ஜெனரல்) -> 3 (1858 இந்திய வைஸ்ராய்) -> 4 (1947 சுதந்திர இந்திய கவர்னர்-ஜெனரல்)."
   },
@@ -1244,8 +1244,8 @@
     "difficulty": "Hard",
     "question_type": "Chronology",
     "question": {
-      "en": "Arrange the following executive council reform provisions associated with Viceroys/Governors-General in chronological order:\n1. Empowering Lord Cornwallis with overriding powers over Council in special cases\n2. Informal introduction of Portfolio System by Lord Dalhousie\n3. Grant of statutory recognition to Portfolio System under Lord Canning\n4. Association of Satyendra Prasanna Sinha with Viceroy's Executive Council as Law Member under Lord Minto",
-      "ta": "கவர்னர்-ஜெனரல்கள் / வைஸ்ராய்களுடன் தொடர்புடைய பின்வரும் நிர்வாகக் குழு சீர்திருத்த விதிகளை காலவரிசையில் அமைக்கவும்:\n1. சிறப்பு நிகழ்வுகளில் கவுன்சிலின் முடிவை நிராகரிக்கும் அதிகாரத்தை லார்டு கார்ன்வாலிஸுக்கு வழங்குதல்\n2. லார்டு டல்ஹௌசியால் இலாகா முறை முறைசாரா முறையில் அறிமுகப்படுத்தப்படல்\n3. லார்டு கேனிங்கின் கீழ் இலாகா முறைக்கு சட்டப்பூர்வ அங்கீகாரம் வழங்கப்படல்\n4. லார்டு மிண்டோவின் கீழ் சத்யேந்திர பிரசன்னா சின்கா வைஸ்ராயின் நிர்வாகக் குழுவில் சட்ட உறுப்பினராகச் சேர்க்கப்படல்"
+      "en": "Arrange the following executive council reform provisions associated with Viceroys/Governors-General in chronological order:\n1. Informal introduction of Portfolio System by Lord Dalhousie\n2. Association of Satyendra Prasanna Sinha with Viceroy's Executive Council as Law Member under Lord Minto\n3. Empowering Lord Cornwallis with overriding powers over Council in special cases\n4. Grant of statutory recognition to Portfolio System under Lord Canning",
+      "ta": "கவர்னர்-ஜெனரல்கள் / வைஸ்ராய்களுடன் தொடர்புடைய பின்வரும் நிர்வாகக் குழு சீர்திருத்த விதிகளை காலவரிசையில் அமைக்கவும்:\n1. லார்டு டல்ஹௌசியால் இலாகா முறை முறைசாரா முறையில் அறிமுகப்படுத்தப்படல்\n2. லார்டு மிண்டோவின் கீழ் சத்யேந்திர பிரசன்னா சின்கா வைஸ்ராயின் நிர்வாகக் குழுவில் சட்ட உறுப்பினராகச் சேர்க்கப்படல்\n3. சிறப்பு நிகழ்வுகளில் கவுன்சிலின் முடிவை நிராகரிக்கும் அதிகாரத்தை லார்டு கார்ன்வாலிஸுக்கு வழங்குதல்\n4. லார்டு கேனிங்கின் கீழ் இலாகா முறைக்கு சட்டப்பூர்வ அங்கீகாரம் வழங்கப்படல்"
     },
     "options": [
       {
@@ -1260,36 +1260,36 @@
       },
       {
         "id": "C",
-        "en": "2 -> 1 -> 3 -> 4",
-        "ta": "2 -> 1 -> 3 -> 4"
+        "en": "1 -> 2 -> 4 -> 3",
+        "ta": "1 -> 2 -> 4 -> 3"
       },
       {
         "id": "D",
-        "en": "1 -> 2 -> 4 -> 3",
-        "ta": "1 -> 2 -> 4 -> 3"
+        "en": "3 -> 1 -> 4 -> 2",
+        "ta": "3 -> 1 -> 4 -> 2"
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "D",
     "explanation": {
       "en": "Sequence: 1 (1786 Act for Cornwallis) -> 2 (1859 Dalhousie informal portfolio) -> 3 (1861 Canning statutory portfolio) -> 4 (1909 S.P. Sinha appointed).",
       "ta": "வரிசை: 1 (1786 கார்ன்வாலிஸ் சட்டம்) -> 2 (1859 டல்ஹௌசி முறைசாரா இலாகா) -> 3 (1861 கேனிங் சட்டப்பூர்வ இலாகா) -> 4 (1909 எஸ்.பி. சின்கா நியமனம்)."
     },
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Dalhousie's informal introduction (1859) came before Canning's statutory Act (1861).",
-        "ta": "தவறு. டல்ஹௌசியின் முறைசாரா அறிமுகம் (1859) கேனிங்கின் சட்டத்திற்கு (1861) முந்தியது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 3 -> 2 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 3 -> 2 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "B": {
-        "en": "Correct. 1 (1786) -> 2 (1859) -> 3 (1861) -> 4 (1909) matches executive portfolio evolution.",
-        "ta": "சரி. 1 (1786) -> 2 (1859) -> 3 (1861) -> 4 (1909) நிர்வாக இலாகா முறையின் வளர்ச்சியைப் பின்பற்றுகிறது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 3 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 3 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "C": {
-        "en": "Incorrect. Cornwallis overriding powers Act (1786) preceded Dalhousie (1859).",
-        "ta": "தவறு. கார்ன்வாலிஸ் நிராகரிப்பு அதிகாரச் சட்டம் (1786) டல்ஹௌசிக்கு (1859) முந்தியது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 4 -> 3' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 4 -> 3' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "D": {
-        "en": "Incorrect. S.P. Sinha was appointed in 1909 (4), after 1861 statutory portfolio recognition (3).",
-        "ta": "தவறு. எஸ்.பி. சின்கா 1909-ல் நியமிக்கப்பட்டார் (4), இது 1861 சட்டத்திற்குப் பின்னராகும்."
+        "en": "✅ Correct.\nThe correct chronological sequence is '3 -> 1 -> 4 -> 2'.",
+        "ta": "✅ சரி.\nசரியான காலவரிசை '3 -> 1 -> 4 -> 2' ஆகும்."
       }
     },
     "tnpsc_tip": {
@@ -1315,21 +1315,21 @@
       "Portfolio System",
       "Viceroy Council"
     ],
-    "question_en": "Arrange the following executive council reform provisions associated with Viceroys/Governors-General in chronological order:\n1. Empowering Lord Cornwallis with overriding powers over Council in special cases\n2. Informal introduction of Portfolio System by Lord Dalhousie\n3. Grant of statutory recognition to Portfolio System under Lord Canning\n4. Association of Satyendra Prasanna Sinha with Viceroy's Executive Council as Law Member under Lord Minto",
-    "question_ta": "கவர்னர்-ஜெனரல்கள் / வைஸ்ராய்களுடன் தொடர்புடைய பின்வரும் நிர்வாகக் குழு சீர்திருத்த விதிகளை காலவரிசையில் அமைக்கவும்:\n1. சிறப்பு நிகழ்வுகளில் கவுன்சிலின் முடிவை நிராகரிக்கும் அதிகாரத்தை லார்டு கார்ன்வாலிஸுக்கு வழங்குதல்\n2. லார்டு டல்ஹௌசியால் இலாகா முறை முறைசாரா முறையில் அறிமுகப்படுத்தப்படல்\n3. லார்டு கேனிங்கின் கீழ் இலாகா முறைக்கு சட்டப்பூர்வ அங்கீகாரம் வழங்கப்படல்\n4. லார்டு மிண்டோவின் கீழ் சத்யேந்திர பிரசன்னா சின்கா வைஸ்ராயின் நிர்வாகக் குழுவில் சட்ட உறுப்பினராகச் சேர்க்கப்படல்",
+    "question_en": "Arrange the following executive council reform provisions associated with Viceroys/Governors-General in chronological order:\n1. Informal introduction of Portfolio System by Lord Dalhousie\n2. Association of Satyendra Prasanna Sinha with Viceroy's Executive Council as Law Member under Lord Minto\n3. Empowering Lord Cornwallis with overriding powers over Council in special cases\n4. Grant of statutory recognition to Portfolio System under Lord Canning",
+    "question_ta": "கவர்னர்-ஜெனரல்கள் / வைஸ்ராய்களுடன் தொடர்புடைய பின்வரும் நிர்வாகக் குழு சீர்திருத்த விதிகளை காலவரிசையில் அமைக்கவும்:\n1. லார்டு டல்ஹௌசியால் இலாகா முறை முறைசாரா முறையில் அறிமுகப்படுத்தப்படல்\n2. லார்டு மிண்டோவின் கீழ் சத்யேந்திர பிரசன்னா சின்கா வைஸ்ராயின் நிர்வாகக் குழுவில் சட்ட உறுப்பினராகச் சேர்க்கப்படல்\n3. சிறப்பு நிகழ்வுகளில் கவுன்சிலின் முடிவை நிராகரிக்கும் அதிகாரத்தை லார்டு கார்ன்வாலிஸுக்கு வழங்குதல்\n4. லார்டு கேனிங்கின் கீழ் இலாகா முறைக்கு சட்டப்பூர்வ அங்கீகாரம் வழங்கப்படல்",
     "options_en": [
       "1 -> 3 -> 2 -> 4",
       "1 -> 2 -> 3 -> 4",
-      "2 -> 1 -> 3 -> 4",
-      "1 -> 2 -> 4 -> 3"
+      "1 -> 2 -> 4 -> 3",
+      "3 -> 1 -> 4 -> 2"
     ],
     "options_ta": [
       "1 -> 3 -> 2 -> 4",
       "1 -> 2 -> 3 -> 4",
-      "2 -> 1 -> 3 -> 4",
-      "1 -> 2 -> 4 -> 3"
+      "1 -> 2 -> 4 -> 3",
+      "3 -> 1 -> 4 -> 2"
     ],
-    "answer": "b",
+    "answer": "d",
     "explanation_en": "Sequence: 1 (1786 Act for Cornwallis) -> 2 (1859 Dalhousie informal portfolio) -> 3 (1861 Canning statutory portfolio) -> 4 (1909 S.P. Sinha appointed).",
     "explanation_ta": "வரிசை: 1 (1786 கார்ன்வாலிஸ் சட்டம்) -> 2 (1859 டல்ஹௌசி முறைசாரா இலாகா) -> 3 (1861 கேனிங் சட்டப்பூர்வ இலாகா) -> 4 (1909 எஸ்.பி. சின்கா நியமனம்)."
   },
@@ -1340,52 +1340,52 @@
     "difficulty": "Hard",
     "question_type": "Chronology",
     "question": {
-      "en": "Arrange the progressive Indianization of imperial executive governance in correct chronological sequence:\n1. Appointment of K.G. Gupta and Syed Hussain Bilgrami to the Council of Secretary of State in London\n2. Appointment of Satyendra Prasanna Sinha as first Indian member in Viceroy's Executive Council\n3. Statutory provision for 3 out of 6 members in Viceroy's Executive Council to be Indians\n4. Swearing-in of the Interim Government composed entirely of Indian members (except Viceroy)",
-      "ta": "அரசு தலைமை நிர்வாக அமைப்பில் இந்தியர்கள் சேர்க்கப்பட்டதை (இந்தியமயமாக்கல்) சரியான காலவரிசையில் அமைக்கவும்:\n1. லண்டனில் உள்ள இந்திய அரசுச் செயலர் குழுவிற்கு கே.ஜி. குப்தா மற்றும் சையத் உசேன் பில்கிராமி நியமிக்கப்படல்\n2. வைஸ்ராயின் நிர்வாகக் குழுவின் முதல் இந்திய உறுப்பினராக சத்யேந்திர பிரசன்னா சின்கா நியமிக்கப்படல்\n3. வைஸ்ராயின் நிர்வாகக் குழுவில் 6 உறுப்பினர்களில் 3 பேர் இந்தியர்களாக இருக்க வேண்டும் என்ற சட்டப்பூர்வ விதி\n4. வைஸ்ராய் தவிர அனைத்து இந்திய உறுப்பினர்களையும் கொண்ட இடைக்கால அரசு பதவியேற்றல்"
+      "en": "Arrange the progressive Indianization of imperial executive governance in correct chronological sequence:\n1. Swearing-in of the Interim Government composed entirely of Indian members (except Viceroy)\n2. Appointment of Satyendra Prasanna Sinha as first Indian member in Viceroy's Executive Council\n3. Appointment of K.G. Gupta and Syed Hussain Bilgrami to the Council of Secretary of State in London\n4. Statutory provision for 3 out of 6 members in Viceroy's Executive Council to be Indians",
+      "ta": "அரசு தலைமை நிர்வாக அமைப்பில் இந்தியர்கள் சேர்க்கப்பட்டதை (இந்தியமயமாக்கல்) சரியான காலவரிசையில் அமைக்கவும்:\n1. வைஸ்ராய் தவிர அனைத்து இந்திய உறுப்பினர்களையும் கொண்ட இடைக்கால அரசு பதவியேற்றல்\n2. வைஸ்ராயின் நிர்வாகக் குழுவின் முதல் இந்திய உறுப்பினராக சத்யேந்திர பிரசன்னா சின்கா நியமிக்கப்படல்\n3. லண்டனில் உள்ள இந்திய அரசுச் செயலர் குழுவிற்கு கே.ஜி. குப்தா மற்றும் சையத் உசேன் பில்கிராமி நியமிக்கப்படல்\n4. வைஸ்ராயின் நிர்வாகக் குழுவில் 6 உறுப்பினர்களில் 3 பேர் இந்தியர்களாக இருக்க வேண்டும் என்ற சட்டப்பூர்வ விதி"
     },
     "options": [
       {
         "id": "A",
-        "en": "2 -> 1 -> 3 -> 4",
-        "ta": "2 -> 1 -> 3 -> 4"
-      },
-      {
-        "id": "B",
-        "en": "1 -> 2 -> 4 -> 3",
-        "ta": "1 -> 2 -> 4 -> 3"
-      },
-      {
-        "id": "C",
         "en": "1 -> 2 -> 3 -> 4",
         "ta": "1 -> 2 -> 3 -> 4"
       },
       {
+        "id": "B",
+        "en": "3 -> 2 -> 4 -> 1",
+        "ta": "3 -> 2 -> 4 -> 1"
+      },
+      {
+        "id": "C",
+        "en": "1 -> 3 -> 2 -> 4",
+        "ta": "1 -> 3 -> 2 -> 4"
+      },
+      {
         "id": "D",
-        "en": "2 -> 3 -> 1 -> 4",
-        "ta": "2 -> 3 -> 1 -> 4"
+        "en": "1 -> 2 -> 4 -> 3",
+        "ta": "1 -> 2 -> 4 -> 3"
       }
     ],
-    "correct_answer": "C",
+    "correct_answer": "B",
     "explanation": {
       "en": "Sequence: 1 (1907 London appointments) -> 2 (1909 Viceroy Council Sinha) -> 3 (1919 GOI Act 3/6 Indians) -> 4 (Sept 1946 Interim Govt).",
       "ta": "வரிசை: 1 (1907 லண்டன் நியமனங்கள்) -> 2 (1909 வைஸ்ராய் குழு சின்கா) -> 3 (1919 சட்டம் 3/6 இந்தியர்கள்) -> 4 (செப் 1946 இடைக்கால அரசு)."
     },
     "why_not_others": {
       "A": {
-        "en": "Incorrect. London Council appointments (1907) preceded Sinha's appointment in India (1909).",
-        "ta": "தவறு. லண்டன் குழு நியமனங்கள் (1907) சின்காவின் இந்திய நியமனத்திற்கு (1909) முந்தியவை."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 3 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 3 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "B": {
-        "en": "Incorrect. Provision for 3/6 Indians (1919) was before Interim Government (1946).",
-        "ta": "தவறு. 3/6 இந்தியர்கள் விதி (1919) இடைக்கால அரசுக்கு (1946) முந்தியது."
+        "en": "✅ Correct.\nThe correct chronological sequence is '3 -> 2 -> 4 -> 1'.",
+        "ta": "✅ சரி.\nசரியான காலவரிசை '3 -> 2 -> 4 -> 1' ஆகும்."
       },
       "C": {
-        "en": "Correct. 1 (1907) -> 2 (1909) -> 3 (1919) -> 4 (1946) tracks step-by-step executive Indianization.",
-        "ta": "சரி. 1 (1907) -> 2 (1909) -> 3 (1919) -> 4 (1946) இந்தியமயமாக்கலின் படிகளைத் துல்லியமாகக் காட்டுகிறது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 3 -> 2 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 3 -> 2 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "D": {
-        "en": "Incorrect. Sinha (1909) was after London council appointments (1907).",
-        "ta": "தவறு. சின்கா (1909) லண்டன் குழு நியமனங்களுக்குப் (1907) பின்னரே வந்தவர்."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 4 -> 3' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 4 -> 3' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       }
     },
     "tnpsc_tip": {
@@ -1411,21 +1411,21 @@
       "Indianization",
       "Interim Government"
     ],
-    "question_en": "Arrange the progressive Indianization of imperial executive governance in correct chronological sequence:\n1. Appointment of K.G. Gupta and Syed Hussain Bilgrami to the Council of Secretary of State in London\n2. Appointment of Satyendra Prasanna Sinha as first Indian member in Viceroy's Executive Council\n3. Statutory provision for 3 out of 6 members in Viceroy's Executive Council to be Indians\n4. Swearing-in of the Interim Government composed entirely of Indian members (except Viceroy)",
-    "question_ta": "அரசு தலைமை நிர்வாக அமைப்பில் இந்தியர்கள் சேர்க்கப்பட்டதை (இந்தியமயமாக்கல்) சரியான காலவரிசையில் அமைக்கவும்:\n1. லண்டனில் உள்ள இந்திய அரசுச் செயலர் குழுவிற்கு கே.ஜி. குப்தா மற்றும் சையத் உசேன் பில்கிராமி நியமிக்கப்படல்\n2. வைஸ்ராயின் நிர்வாகக் குழுவின் முதல் இந்திய உறுப்பினராக சத்யேந்திர பிரசன்னா சின்கா நியமிக்கப்படல்\n3. வைஸ்ராயின் நிர்வாகக் குழுவில் 6 உறுப்பினர்களில் 3 பேர் இந்தியர்களாக இருக்க வேண்டும் என்ற சட்டப்பூர்வ விதி\n4. வைஸ்ராய் தவிர அனைத்து இந்திய உறுப்பினர்களையும் கொண்ட இடைக்கால அரசு பதவியேற்றல்",
+    "question_en": "Arrange the progressive Indianization of imperial executive governance in correct chronological sequence:\n1. Swearing-in of the Interim Government composed entirely of Indian members (except Viceroy)\n2. Appointment of Satyendra Prasanna Sinha as first Indian member in Viceroy's Executive Council\n3. Appointment of K.G. Gupta and Syed Hussain Bilgrami to the Council of Secretary of State in London\n4. Statutory provision for 3 out of 6 members in Viceroy's Executive Council to be Indians",
+    "question_ta": "அரசு தலைமை நிர்வாக அமைப்பில் இந்தியர்கள் சேர்க்கப்பட்டதை (இந்தியமயமாக்கல்) சரியான காலவரிசையில் அமைக்கவும்:\n1. வைஸ்ராய் தவிர அனைத்து இந்திய உறுப்பினர்களையும் கொண்ட இடைக்கால அரசு பதவியேற்றல்\n2. வைஸ்ராயின் நிர்வாகக் குழுவின் முதல் இந்திய உறுப்பினராக சத்யேந்திர பிரசன்னா சின்கா நியமிக்கப்படல்\n3. லண்டனில் உள்ள இந்திய அரசுச் செயலர் குழுவிற்கு கே.ஜி. குப்தா மற்றும் சையத் உசேன் பில்கிராமி நியமிக்கப்படல்\n4. வைஸ்ராயின் நிர்வாகக் குழுவில் 6 உறுப்பினர்களில் 3 பேர் இந்தியர்களாக இருக்க வேண்டும் என்ற சட்டப்பூர்வ விதி",
     "options_en": [
-      "2 -> 1 -> 3 -> 4",
-      "1 -> 2 -> 4 -> 3",
       "1 -> 2 -> 3 -> 4",
-      "2 -> 3 -> 1 -> 4"
+      "3 -> 2 -> 4 -> 1",
+      "1 -> 3 -> 2 -> 4",
+      "1 -> 2 -> 4 -> 3"
     ],
     "options_ta": [
-      "2 -> 1 -> 3 -> 4",
-      "1 -> 2 -> 4 -> 3",
       "1 -> 2 -> 3 -> 4",
-      "2 -> 3 -> 1 -> 4"
+      "3 -> 2 -> 4 -> 1",
+      "1 -> 3 -> 2 -> 4",
+      "1 -> 2 -> 4 -> 3"
     ],
-    "answer": "c",
+    "answer": "b",
     "explanation_en": "Sequence: 1 (1907 London appointments) -> 2 (1909 Viceroy Council Sinha) -> 3 (1919 GOI Act 3/6 Indians) -> 4 (Sept 1946 Interim Govt).",
     "explanation_ta": "வரிசை: 1 (1907 லண்டன் நியமனங்கள்) -> 2 (1909 வைஸ்ராய் குழு சின்கா) -> 3 (1919 சட்டம் 3/6 இந்தியர்கள்) -> 4 (செப் 1946 இடைக்கால அரசு)."
   },
@@ -1436,52 +1436,52 @@
     "difficulty": "Hard",
     "question_type": "Chronology",
     "question": {
-      "en": "Arrange the establishment of the following central administrative and legal bodies in chronological sequence:\n1. Establishment of the Supreme Court at Fort William, Calcutta\n2. Appointment of the First Law Commission under Lord Macaulay\n3. Creation of the Indian (Central) Legislative Council (mini-Parliament)\n4. Establishment of Presidency High Courts under Indian High Courts Act",
-      "ta": "பின்வரும் மத்திய நிர்வாக மற்றும் சட்ட அமைப்புகள் நிறுவப்பட்டதை சரியான காலவரிசையில் அமைக்கவும்:\n1. கொல்கத்தா வில்லியம் கோட்டையில் உச்ச நீதிமன்றம் அமைத்தல்\n2. லார்டு மெக்காலே தலைமையில் முதல் சட்ட ஆணையம் அமைத்தல்\n3. இந்திய (மத்திய) சட்ட மேலவையை (சிறிய நாடாளுமன்றம்) உருவாக்குதல்\n4. இந்திய உயர் நீதிமன்றங்கள் சட்டத்தின் கீழ் மாகாண உயர் நீதிமன்றங்களை அமைத்தல்"
+      "en": "Arrange the establishment of the following central administrative and legal bodies in chronological sequence:\n1. Creation of the Indian (Central) Legislative Council (mini-Parliament)\n2. Establishment of Presidency High Courts under Indian High Courts Act\n3. Establishment of the Supreme Court at Fort William, Calcutta\n4. Appointment of the First Law Commission under Lord Macaulay",
+      "ta": "பின்வரும் மத்திய நிர்வாக மற்றும் சட்ட அமைப்புகள் நிறுவப்பட்டதை சரியான காலவரிசையில் அமைக்கவும்:\n1. இந்திய (மத்திய) சட்ட மேலவையை (சிறிய நாடாளுமன்றம்) உருவாக்குதல்\n2. இந்திய உயர் நீதிமன்றங்கள் சட்டத்தின் கீழ் மாகாண உயர் நீதிமன்றங்களை அமைத்தல்\n3. கொல்கத்தா வில்லியம் கோட்டையில் உச்ச நீதிமன்றம் அமைத்தல்\n4. லார்டு மெக்காலே தலைமையில் முதல் சட்ட ஆணையம் அமைத்தல்"
     },
     "options": [
       {
         "id": "A",
-        "en": "1 -> 3 -> 2 -> 4",
-        "ta": "1 -> 3 -> 2 -> 4"
+        "en": "1 -> 2 -> 3 -> 4",
+        "ta": "1 -> 2 -> 3 -> 4"
       },
       {
         "id": "B",
-        "en": "2 -> 1 -> 3 -> 4",
-        "ta": "2 -> 1 -> 3 -> 4"
-      },
-      {
-        "id": "C",
         "en": "1 -> 2 -> 4 -> 3",
         "ta": "1 -> 2 -> 4 -> 3"
       },
       {
+        "id": "C",
+        "en": "3 -> 4 -> 1 -> 2",
+        "ta": "3 -> 4 -> 1 -> 2"
+      },
+      {
         "id": "D",
-        "en": "1 -> 2 -> 3 -> 4",
-        "ta": "1 -> 2 -> 3 -> 4"
+        "en": "1 -> 3 -> 2 -> 4",
+        "ta": "1 -> 3 -> 2 -> 4"
       }
     ],
-    "correct_answer": "D",
+    "correct_answer": "C",
     "explanation": {
       "en": "Sequence: 1 (1774 Supreme Court) -> 2 (1835 1st Law Commission under 1833 Act) -> 3 (1853 Central Legislative Council) -> 4 (1862 High Courts).",
       "ta": "வரிசை: 1 (1774 உச்ச நீதிமன்றம்) -> 2 (1835 முதல் சட்ட ஆணையம்) -> 3 (1853 மத்திய சட்ட மேலவை) -> 4 (1862 உயர் நீதிமன்றங்கள்)."
     },
     "why_not_others": {
       "A": {
-        "en": "Incorrect. First Law Commission (1835) was appointed before Central Legislative Council (1853).",
-        "ta": "தவறு. முதல் சட்ட ஆணையம் (1835) மத்திய சட்ட மேலவைக்கு (1853) முன்பே அமைந்தது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 3 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 3 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "B": {
-        "en": "Incorrect. Fort William Supreme Court (1774) was before First Law Commission (1835).",
-        "ta": "தவறு. வில்லியம் கோட்டை உச்ச நீதிமன்றம் (1774) முதல் சட்ட ஆணையத்திற்கு (1835) முந்தியது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 4 -> 3' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 4 -> 3' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "C": {
-        "en": "Incorrect. Central Legislative Council (1853) came before Presidency High Courts (1862).",
-        "ta": "தவறு. மத்திய சட்ட மேலவை (1853) உயர் நீதிமன்றங்களுக்கு (1862) முந்தியது."
+        "en": "✅ Correct.\nThe correct chronological sequence is '3 -> 4 -> 1 -> 2'.",
+        "ta": "✅ சரி.\nசரியான காலவரிசை '3 -> 4 -> 1 -> 2' ஆகும்."
       },
       "D": {
-        "en": "Correct. 1 (1774) -> 2 (1835) -> 3 (1853) -> 4 (1862) matches institutional creation chronology.",
-        "ta": "சரி. 1 (1774) -> 2 (1835) -> 3 (1853) -> 4 (1862) நிறுவன உருவாக்க காலவரிசையைத் துல்லியமாகப் பின்பற்றுகிறது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 3 -> 2 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 3 -> 2 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       }
     },
     "tnpsc_tip": {
@@ -1507,21 +1507,21 @@
       "Law Commission",
       "Legislative Council"
     ],
-    "question_en": "Arrange the establishment of the following central administrative and legal bodies in chronological sequence:\n1. Establishment of the Supreme Court at Fort William, Calcutta\n2. Appointment of the First Law Commission under Lord Macaulay\n3. Creation of the Indian (Central) Legislative Council (mini-Parliament)\n4. Establishment of Presidency High Courts under Indian High Courts Act",
-    "question_ta": "பின்வரும் மத்திய நிர்வாக மற்றும் சட்ட அமைப்புகள் நிறுவப்பட்டதை சரியான காலவரிசையில் அமைக்கவும்:\n1. கொல்கத்தா வில்லியம் கோட்டையில் உச்ச நீதிமன்றம் அமைத்தல்\n2. லார்டு மெக்காலே தலைமையில் முதல் சட்ட ஆணையம் அமைத்தல்\n3. இந்திய (மத்திய) சட்ட மேலவையை (சிறிய நாடாளுமன்றம்) உருவாக்குதல்\n4. இந்திய உயர் நீதிமன்றங்கள் சட்டத்தின் கீழ் மாகாண உயர் நீதிமன்றங்களை அமைத்தல்",
+    "question_en": "Arrange the establishment of the following central administrative and legal bodies in chronological sequence:\n1. Creation of the Indian (Central) Legislative Council (mini-Parliament)\n2. Establishment of Presidency High Courts under Indian High Courts Act\n3. Establishment of the Supreme Court at Fort William, Calcutta\n4. Appointment of the First Law Commission under Lord Macaulay",
+    "question_ta": "பின்வரும் மத்திய நிர்வாக மற்றும் சட்ட அமைப்புகள் நிறுவப்பட்டதை சரியான காலவரிசையில் அமைக்கவும்:\n1. இந்திய (மத்திய) சட்ட மேலவையை (சிறிய நாடாளுமன்றம்) உருவாக்குதல்\n2. இந்திய உயர் நீதிமன்றங்கள் சட்டத்தின் கீழ் மாகாண உயர் நீதிமன்றங்களை அமைத்தல்\n3. கொல்கத்தா வில்லியம் கோட்டையில் உச்ச நீதிமன்றம் அமைத்தல்\n4. லார்டு மெக்காலே தலைமையில் முதல் சட்ட ஆணையம் அமைத்தல்",
     "options_en": [
-      "1 -> 3 -> 2 -> 4",
-      "2 -> 1 -> 3 -> 4",
+      "1 -> 2 -> 3 -> 4",
       "1 -> 2 -> 4 -> 3",
-      "1 -> 2 -> 3 -> 4"
+      "3 -> 4 -> 1 -> 2",
+      "1 -> 3 -> 2 -> 4"
     ],
     "options_ta": [
-      "1 -> 3 -> 2 -> 4",
-      "2 -> 1 -> 3 -> 4",
+      "1 -> 2 -> 3 -> 4",
       "1 -> 2 -> 4 -> 3",
-      "1 -> 2 -> 3 -> 4"
+      "3 -> 4 -> 1 -> 2",
+      "1 -> 3 -> 2 -> 4"
     ],
-    "answer": "d",
+    "answer": "c",
     "explanation_en": "Sequence: 1 (1774 Supreme Court) -> 2 (1835 1st Law Commission under 1833 Act) -> 3 (1853 Central Legislative Council) -> 4 (1862 High Courts).",
     "explanation_ta": "வரிசை: 1 (1774 உச்ச நீதிமன்றம்) -> 2 (1835 முதல் சட்ட ஆணையம்) -> 3 (1853 மத்திய சட்ட மேலவை) -> 4 (1862 உயர் நீதிமன்றங்கள்)."
   },
@@ -1532,29 +1532,29 @@
     "difficulty": "Hard",
     "question_type": "Chronology",
     "question": {
-      "en": "Arrange the establishment of the following constitutional and statutory institutions in 20th Century British India in correct chronological order:\n1. Amalgamation of Presidency Banks into Imperial Bank of India\n2. Establishment of Central Public Service Commission\n3. Establishment of Reserve Bank of India\n4. Inauguration of the Federal Court of India",
-      "ta": "20 ஆம் நூற்றாண்டு பிரிட்டிஷ் இந்தியாவில் பின்வரும் அரசியலமைப்பு மற்றும் சட்டப்பூர்வ அமைப்புகள் தொடங்கப்பட்டதை காலவரிசையில் அமைக்கவும்:\n1. மாகாண வங்கிகளை இணைத்து இந்தியாவின் இம்பீரியல் வங்கியை உருவாக்குதல்\n2. மத்திய பொதுச் சேவை ஆணையம் அமைத்தல்\n3. இந்திய ரிசர்வ் வங்கி அமைத்தல்\n4. இந்தியாவின் கூட்டாட்சி நீதிமன்றத்தைத் தொடங்குதல்"
+      "en": "Arrange the establishment of the following constitutional and statutory institutions in 20th Century British India in correct chronological order:\n1. Establishment of Central Public Service Commission\n2. Establishment of Reserve Bank of India\n3. Inauguration of the Federal Court of India\n4. Amalgamation of Presidency Banks into Imperial Bank of India",
+      "ta": "20 ஆம் நூற்றாண்டு பிரிட்டிஷ் இந்தியாவில் பின்வரும் அரசியலமைப்பு மற்றும் சட்டப்பூர்வ அமைப்புகள் தொடங்கப்பட்டதை காலவரிசையில் அமைக்கவும்:\n1. மத்திய பொதுச் சேவை ஆணையம் அமைத்தல்\n2. இந்திய ரிசர்வ் வங்கி அமைத்தல்\n3. இந்தியாவின் கூட்டாட்சி நீதிமன்றத்தைத் தொடங்குதல்\n4. மாகாண வங்கிகளை இணைத்து இந்தியாவின் இம்பீரியல் வங்கியை உருவாக்குதல்"
     },
     "options": [
       {
         "id": "A",
+        "en": "4 -> 1 -> 2 -> 3",
+        "ta": "4 -> 1 -> 2 -> 3"
+      },
+      {
+        "id": "B",
         "en": "1 -> 2 -> 3 -> 4",
         "ta": "1 -> 2 -> 3 -> 4"
       },
       {
-        "id": "B",
-        "en": "2 -> 1 -> 3 -> 4",
-        "ta": "2 -> 1 -> 3 -> 4"
-      },
-      {
         "id": "C",
-        "en": "1 -> 3 -> 2 -> 4",
-        "ta": "1 -> 3 -> 2 -> 4"
+        "en": "1 -> 2 -> 4 -> 3",
+        "ta": "1 -> 2 -> 4 -> 3"
       },
       {
         "id": "D",
-        "en": "1 -> 2 -> 4 -> 3",
-        "ta": "1 -> 2 -> 4 -> 3"
+        "en": "1 -> 3 -> 2 -> 4",
+        "ta": "1 -> 3 -> 2 -> 4"
       }
     ],
     "correct_answer": "A",
@@ -1564,20 +1564,20 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Correct. 1 (1921) -> 2 (1926) -> 3 (1935) -> 4 (1937) follows exact institutional creation timeline.",
-        "ta": "சரி. 1 (1921) -> 2 (1926) -> 3 (1935) -> 4 (1937) நிறுவன உருவாக்க ஆண்டைத் துல்லியமாகப் பின்பற்றுகிறது."
+        "en": "✅ Correct.\nThe correct chronological sequence is '4 -> 1 -> 2 -> 3'.",
+        "ta": "✅ சரி.\nசரியான காலவரிசை '4 -> 1 -> 2 -> 3' ஆகும்."
       },
       "B": {
-        "en": "Incorrect. Imperial Bank (1921) was established before CPSC (1926).",
-        "ta": "தவறு. இம்பீரியல் வங்கி (1921) மத்திய பொதுச் சேவை ஆணையத்திற்கு (1926) முன்பே அமைந்தது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 3 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 3 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "C": {
-        "en": "Incorrect. CPSC (1926) was established before RBI (1935).",
-        "ta": "தவறு. மத்திய பொதுச் சேவை ஆணையம் (1926) ரிசர்வ் வங்கிக்கு (1935) முந்தியது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 4 -> 3' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 4 -> 3' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "D": {
-        "en": "Incorrect. RBI (April 1935) was established before Federal Court (Oct 1937).",
-        "ta": "தவறு. ரிசர்வ் வங்கி (ஏப்ரல் 1935) கூட்டாட்சி நீதிமன்றத்திற்கு (அக்டோபர் 1937) முந்தியது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 3 -> 2 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 3 -> 2 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       }
     },
     "tnpsc_tip": {
@@ -1603,19 +1603,19 @@
       "RBI",
       "Federal Court"
     ],
-    "question_en": "Arrange the establishment of the following constitutional and statutory institutions in 20th Century British India in correct chronological order:\n1. Amalgamation of Presidency Banks into Imperial Bank of India\n2. Establishment of Central Public Service Commission\n3. Establishment of Reserve Bank of India\n4. Inauguration of the Federal Court of India",
-    "question_ta": "20 ஆம் நூற்றாண்டு பிரிட்டிஷ் இந்தியாவில் பின்வரும் அரசியலமைப்பு மற்றும் சட்டப்பூர்வ அமைப்புகள் தொடங்கப்பட்டதை காலவரிசையில் அமைக்கவும்:\n1. மாகாண வங்கிகளை இணைத்து இந்தியாவின் இம்பீரியல் வங்கியை உருவாக்குதல்\n2. மத்திய பொதுச் சேவை ஆணையம் அமைத்தல்\n3. இந்திய ரிசர்வ் வங்கி அமைத்தல்\n4. இந்தியாவின் கூட்டாட்சி நீதிமன்றத்தைத் தொடங்குதல்",
+    "question_en": "Arrange the establishment of the following constitutional and statutory institutions in 20th Century British India in correct chronological order:\n1. Establishment of Central Public Service Commission\n2. Establishment of Reserve Bank of India\n3. Inauguration of the Federal Court of India\n4. Amalgamation of Presidency Banks into Imperial Bank of India",
+    "question_ta": "20 ஆம் நூற்றாண்டு பிரிட்டிஷ் இந்தியாவில் பின்வரும் அரசியலமைப்பு மற்றும் சட்டப்பூர்வ அமைப்புகள் தொடங்கப்பட்டதை காலவரிசையில் அமைக்கவும்:\n1. மத்திய பொதுச் சேவை ஆணையம் அமைத்தல்\n2. இந்திய ரிசர்வ் வங்கி அமைத்தல்\n3. இந்தியாவின் கூட்டாட்சி நீதிமன்றத்தைத் தொடங்குதல்\n4. மாகாண வங்கிகளை இணைத்து இந்தியாவின் இம்பீரியல் வங்கியை உருவாக்குதல்",
     "options_en": [
+      "4 -> 1 -> 2 -> 3",
       "1 -> 2 -> 3 -> 4",
-      "2 -> 1 -> 3 -> 4",
-      "1 -> 3 -> 2 -> 4",
-      "1 -> 2 -> 4 -> 3"
+      "1 -> 2 -> 4 -> 3",
+      "1 -> 3 -> 2 -> 4"
     ],
     "options_ta": [
+      "4 -> 1 -> 2 -> 3",
       "1 -> 2 -> 3 -> 4",
-      "2 -> 1 -> 3 -> 4",
-      "1 -> 3 -> 2 -> 4",
-      "1 -> 2 -> 4 -> 3"
+      "1 -> 2 -> 4 -> 3",
+      "1 -> 3 -> 2 -> 4"
     ],
     "answer": "a",
     "explanation_en": "Sequence: 1 (Imperial Bank 1921) -> 2 (CPSC Oct 1926) -> 3 (RBI April 1935 under 1934 Act) -> 4 (Federal Court Oct 1937 under 1935 Act).",
@@ -1628,14 +1628,14 @@
     "difficulty": "Hard",
     "question_type": "Chronology",
     "question": {
-      "en": "Arrange the creation of the following supervisory offices in Great Britain for Indian administration in chronological order:\n1. Creation of the Office of Governor-General of Bengal with a Council of Four\n2. Creation of the Office of Board of Control consisting of six Privy Councillors\n3. Creation of the Office of Secretary of State for India assisted by Council of India\n4. Creation of the Office of High Commissioner for India in London",
-      "ta": "இந்திய நிர்வாகத்திற்காக பிரித்தானியாவில் உருவாக்கப்பட்ட பின்வரும் கண்காணிப்பு அலுவலகங்களை காலவரிசையில் அமைக்கவும்:\n1. நான்கு உறுப்பினர்களைக் கொண்ட கவுன்சிலுடன் வங்காள கவர்னர்-ஜெனரல் அலுவலகத்தை உருவாக்குதல்\n2. ஆறு ப்ரிவி கவுன்சிலர்களைக் கொண்ட கட்டுப்பாட்டு வாரிய அலுவலகத்தை உருவாக்குதல்\n3. இந்தியக் குழுவின் உதவியுடன் இந்திய அரசுச் செயலர் அலுவலகத்தை உருவாக்குதல்\n4. லண்டனில் இந்திய உயர் ஆணையர் (High Commissioner) அலுவலகத்தை உருவாக்குதல்"
+      "en": "Arrange the creation of the following supervisory offices in Great Britain for Indian administration in chronological order:\n1. Creation of the Office of High Commissioner for India in London\n2. Creation of the Office of Governor-General of Bengal with a Council of Four\n3. Creation of the Office of Board of Control consisting of six Privy Councillors\n4. Creation of the Office of Secretary of State for India assisted by Council of India",
+      "ta": "இந்திய நிர்வாகத்திற்காக பிரித்தானியாவில் உருவாக்கப்பட்ட பின்வரும் கண்காணிப்பு அலுவலகங்களை காலவரிசையில் அமைக்கவும்:\n1. லண்டனில் இந்திய உயர் ஆணையர் (High Commissioner) அலுவலகத்தை உருவாக்குதல்\n2. நான்கு உறுப்பினர்களைக் கொண்ட கவுன்சிலுடன் வங்காள கவர்னர்-ஜெனரல் அலுவலகத்தை உருவாக்குதல்\n3. ஆறு ப்ரிவி கவுன்சிலர்களைக் கொண்ட கட்டுப்பாட்டு வாரிய அலுவலகத்தை உருவாக்குதல்\n4. இந்தியக் குழுவின் உதவியுடன் இந்திய அரசுச் செயலர் அலுவலகத்தை உருவாக்குதல்"
     },
     "options": [
       {
         "id": "A",
-        "en": "1 -> 3 -> 2 -> 4",
-        "ta": "1 -> 3 -> 2 -> 4"
+        "en": "1 -> 2 -> 4 -> 3",
+        "ta": "1 -> 2 -> 4 -> 3"
       },
       {
         "id": "B",
@@ -1644,36 +1644,36 @@
       },
       {
         "id": "C",
-        "en": "2 -> 1 -> 3 -> 4",
-        "ta": "2 -> 1 -> 3 -> 4"
+        "en": "2 -> 3 -> 4 -> 1",
+        "ta": "2 -> 3 -> 4 -> 1"
       },
       {
         "id": "D",
-        "en": "1 -> 2 -> 4 -> 3",
-        "ta": "1 -> 2 -> 4 -> 3"
+        "en": "1 -> 3 -> 2 -> 4",
+        "ta": "1 -> 3 -> 2 -> 4"
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "C",
     "explanation": {
       "en": "Sequence: 1 (1773 Regulating Act) -> 2 (1784 Pitt's India Act) -> 3 (1858 GOI Act) -> 4 (1919 GOI Act). London institutional mechanisms.",
       "ta": "வரிசை: 1 (1773 ஒழுங்குமுறைச் சட்டம்) -> 2 (1784 பிட் இந்தியச் சட்டம்) -> 3 (1858 இந்திய அரசுச் சட்டம்) -> 4 (1919 இந்திய அரசுச் சட்டம்)."
     },
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Board of Control (1784) was created before Secretary of State (1858).",
-        "ta": "தவறு. கட்டுப்பாட்டு வாரியம் (1784) அரசுச் செயலருக்கு (1858) முந்தியது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 4 -> 3' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 4 -> 3' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "B": {
-        "en": "Correct. 1 (1773) -> 2 (1784) -> 3 (1858) -> 4 (1919) matches imperial oversight office timeline.",
-        "ta": "சரி. 1 (1773) -> 2 (1784) -> 3 (1858) -> 4 (1919) கண்காணிப்பு அலுவலக உருவாக்க ஆண்டைப் பின்பற்றுகிறது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 3 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 3 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "C": {
-        "en": "Incorrect. Governor-General of Bengal (1773) was created before Board of Control (1784).",
-        "ta": "தவறு. வங்காள கவர்னர்-ஜெனரல் (1773) கட்டுப்பாட்டு வாரியத்திற்கு (1784) முந்தியவர்."
+        "en": "✅ Correct.\nThe correct chronological sequence is '2 -> 3 -> 4 -> 1'.",
+        "ta": "✅ சரி.\nசரியான காலவரிசை '2 -> 3 -> 4 -> 1' ஆகும்."
       },
       "D": {
-        "en": "Incorrect. High Commissioner for India in London was created by GOI Act 1919 (4).",
-        "ta": "தவறு. லண்டன் இந்திய உயர் ஆணையர் பதவி 1919 இந்திய அரசுச் சட்டத்தால் உருவாக்கப்பட்டது (4)."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 3 -> 2 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 3 -> 2 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       }
     },
     "tnpsc_tip": {
@@ -1699,21 +1699,21 @@
       "High Commissioner",
       "Secretary of State"
     ],
-    "question_en": "Arrange the creation of the following supervisory offices in Great Britain for Indian administration in chronological order:\n1. Creation of the Office of Governor-General of Bengal with a Council of Four\n2. Creation of the Office of Board of Control consisting of six Privy Councillors\n3. Creation of the Office of Secretary of State for India assisted by Council of India\n4. Creation of the Office of High Commissioner for India in London",
-    "question_ta": "இந்திய நிர்வாகத்திற்காக பிரித்தானியாவில் உருவாக்கப்பட்ட பின்வரும் கண்காணிப்பு அலுவலகங்களை காலவரிசையில் அமைக்கவும்:\n1. நான்கு உறுப்பினர்களைக் கொண்ட கவுன்சிலுடன் வங்காள கவர்னர்-ஜெனரல் அலுவலகத்தை உருவாக்குதல்\n2. ஆறு ப்ரிவி கவுன்சிலர்களைக் கொண்ட கட்டுப்பாட்டு வாரிய அலுவலகத்தை உருவாக்குதல்\n3. இந்தியக் குழுவின் உதவியுடன் இந்திய அரசுச் செயலர் அலுவலகத்தை உருவாக்குதல்\n4. லண்டனில் இந்திய உயர் ஆணையர் (High Commissioner) அலுவலகத்தை உருவாக்குதல்",
+    "question_en": "Arrange the creation of the following supervisory offices in Great Britain for Indian administration in chronological order:\n1. Creation of the Office of High Commissioner for India in London\n2. Creation of the Office of Governor-General of Bengal with a Council of Four\n3. Creation of the Office of Board of Control consisting of six Privy Councillors\n4. Creation of the Office of Secretary of State for India assisted by Council of India",
+    "question_ta": "இந்திய நிர்வாகத்திற்காக பிரித்தானியாவில் உருவாக்கப்பட்ட பின்வரும் கண்காணிப்பு அலுவலகங்களை காலவரிசையில் அமைக்கவும்:\n1. லண்டனில் இந்திய உயர் ஆணையர் (High Commissioner) அலுவலகத்தை உருவாக்குதல்\n2. நான்கு உறுப்பினர்களைக் கொண்ட கவுன்சிலுடன் வங்காள கவர்னர்-ஜெனரல் அலுவலகத்தை உருவாக்குதல்\n3. ஆறு ப்ரிவி கவுன்சிலர்களைக் கொண்ட கட்டுப்பாட்டு வாரிய அலுவலகத்தை உருவாக்குதல்\n4. இந்தியக் குழுவின் உதவியுடன் இந்திய அரசுச் செயலர் அலுவலகத்தை உருவாக்குதல்",
     "options_en": [
-      "1 -> 3 -> 2 -> 4",
+      "1 -> 2 -> 4 -> 3",
       "1 -> 2 -> 3 -> 4",
-      "2 -> 1 -> 3 -> 4",
-      "1 -> 2 -> 4 -> 3"
+      "2 -> 3 -> 4 -> 1",
+      "1 -> 3 -> 2 -> 4"
     ],
     "options_ta": [
-      "1 -> 3 -> 2 -> 4",
+      "1 -> 2 -> 4 -> 3",
       "1 -> 2 -> 3 -> 4",
-      "2 -> 1 -> 3 -> 4",
-      "1 -> 2 -> 4 -> 3"
+      "2 -> 3 -> 4 -> 1",
+      "1 -> 3 -> 2 -> 4"
     ],
-    "answer": "b",
+    "answer": "c",
     "explanation_en": "Sequence: 1 (1773 Regulating Act) -> 2 (1784 Pitt's India Act) -> 3 (1858 GOI Act) -> 4 (1919 GOI Act). London institutional mechanisms.",
     "explanation_ta": "வரிசை: 1 (1773 ஒழுங்குமுறைச் சட்டம்) -> 2 (1784 பிட் இந்தியச் சட்டம்) -> 3 (1858 இந்திய அரசுச் சட்டம்) -> 4 (1919 இந்திய அரசுச் சட்டம்)."
   },
@@ -1724,52 +1724,52 @@
     "difficulty": "Hard",
     "question_type": "Chronology",
     "question": {
-      "en": "Arrange the following constitutional milestones in the evolution of Indian legislative representation in correct chronological order:\n1. First statutory distinction made between legislative and executive functions of Governor-General's Council\n2. Inclusion of non-official Indians (Raja of Benaras, Maharaja of Patiala, Sir Dinkar Rao) as nominated members\n3. Introduction of direct elections for the central and provincial legislative bodies\n4. Establishment of complete provincial executive accountability to an elected legislature",
-      "ta": "இந்தியச் சட்ட பிரதிநிதித்துவ வளர்ச்சியின் பின்வரும் அரசியலமைப்பு மைல்கற்களை சரியான காலவரிசையில் அமைக்கவும்:\n1. கவர்னர்-ஜெனரல் கவுன்சிலின் சட்ட மற்றும் நிர்வாகப் பணிகளுக்கு இடையே முதன்முறையாக சட்டப்பூர்வ வேறுபாடு ஏற்படுத்தப்படல்\n2. பரிந்துரைக்கப்பட்ட உறுப்பினர்களாக அதிகாரப்பூர்வமற்ற இந்தியர்கள் (பெனாரஸ் ராஜா, பட்டியாலா மகாராஜா, சர் தினகர் ராவ்) சேர்க்கப்படல்\n3. மத்திய மற்றும் மாகாண சட்டமன்றங்களுக்கு நேரடித் தேர்தல் முறையை அறிமுகப்படுத்துதல்\n4. தேர்ந்தெடுக்கப்பட்ட சட்டமன்றத்திற்கு மாகாண நிர்வாகத்தின் முழுமையான பொறுப்புடைமையை நிறுவுதல்"
+      "en": "Arrange the following constitutional milestones in the evolution of Indian legislative representation in correct chronological order:\n1. Introduction of direct elections for the central and provincial legislative bodies\n2. Inclusion of non-official Indians (Raja of Benaras, Maharaja of Patiala, Sir Dinkar Rao) as nominated members\n3. Establishment of complete provincial executive accountability to an elected legislature\n4. First statutory distinction made between legislative and executive functions of Governor-General's Council",
+      "ta": "இந்தியச் சட்ட பிரதிநிதித்துவ வளர்ச்சியின் பின்வரும் அரசியலமைப்பு மைல்கற்களை சரியான காலவரிசையில் அமைக்கவும்:\n1. மத்திய மற்றும் மாகாண சட்டமன்றங்களுக்கு நேரடித் தேர்தல் முறையை அறிமுகப்படுத்துதல்\n2. பரிந்துரைக்கப்பட்ட உறுப்பினர்களாக அதிகாரப்பூர்வமற்ற இந்தியர்கள் (பெனாரஸ் ராஜா, பட்டியாலா மகாராஜா, சர் தினகர் ராவ்) சேர்க்கப்படல்\n3. தேர்ந்தெடுக்கப்பட்ட சட்டமன்றத்திற்கு மாகாண நிர்வாகத்தின் முழுமையான பொறுப்புடைமையை நிறுவுதல்\n4. கவர்னர்-ஜெனரல் கவுன்சிலின் சட்ட மற்றும் நிர்வாகப் பணிகளுக்கு இடையே முதன்முறையாக சட்டப்பூர்வ வேறுபாடு ஏற்படுத்தப்படல்"
     },
     "options": [
       {
         "id": "A",
-        "en": "1 -> 3 -> 2 -> 4",
-        "ta": "1 -> 3 -> 2 -> 4"
-      },
-      {
-        "id": "B",
-        "en": "2 -> 1 -> 3 -> 4",
-        "ta": "2 -> 1 -> 3 -> 4"
-      },
-      {
-        "id": "C",
         "en": "1 -> 2 -> 3 -> 4",
         "ta": "1 -> 2 -> 3 -> 4"
       },
       {
-        "id": "D",
+        "id": "B",
         "en": "1 -> 2 -> 4 -> 3",
         "ta": "1 -> 2 -> 4 -> 3"
+      },
+      {
+        "id": "C",
+        "en": "1 -> 3 -> 2 -> 4",
+        "ta": "1 -> 3 -> 2 -> 4"
+      },
+      {
+        "id": "D",
+        "en": "4 -> 2 -> 1 -> 3",
+        "ta": "4 -> 2 -> 1 -> 3"
       }
     ],
-    "correct_answer": "C",
+    "correct_answer": "D",
     "explanation": {
       "en": "Sequence: 1 (1853 Charter Act) -> 2 (1861 Indian Councils Act) -> 3 (1919 GOI Act) -> 4 (1935 GOI Act). Legislative representation trajectory.",
       "ta": "வரிசை: 1 (1853 சாசனச் சட்டம்) -> 2 (1861 இந்தியக் கவுன்சில்கள் சட்டம்) -> 3 (1919 இந்திய அரசுச் சட்டம்) -> 4 (1935 இந்திய அரசுச் சட்டம்)."
     },
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Nominated Indians inclusion (1861) was before direct elections (1919).",
-        "ta": "தவறு. இந்தியர்கள் நியமனம் (1861) நேரடித் தேர்தலுக்கு (1919) முந்தியது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 3 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 3 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "B": {
-        "en": "Incorrect. Separation of functions (1853) came before nomination of Indians (1861).",
-        "ta": "தவறு. பணிகளின் வேறுபாடு (1853) இந்தியர்கள் நியமனத்திற்கு (1861) முந்தியது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 4 -> 3' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 4 -> 3' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "C": {
-        "en": "Correct. 1 (1853) -> 2 (1861) -> 3 (1919) -> 4 (1935) accurately tracks representative evolution.",
-        "ta": "சரி. 1 (1853) -> 2 (1861) -> 3 (1919) -> 4 (1935) பிரதிநிதித்துவ வளர்ச்சியைத் துல்லியமாகக் காட்டுகிறது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 3 -> 2 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 3 -> 2 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "D": {
-        "en": "Incorrect. Direct elections (1919) preceded provincial responsible government (1935).",
-        "ta": "தவறு. நேரடித் தேர்தல் (1919) மாகாணப் பொறுப்பு ஆட்சிக்கு (1935) முந்தியது."
+        "en": "✅ Correct.\nThe correct chronological sequence is '4 -> 2 -> 1 -> 3'.",
+        "ta": "✅ சரி.\nசரியான காலவரிசை '4 -> 2 -> 1 -> 3' ஆகும்."
       }
     },
     "tnpsc_tip": {
@@ -1795,21 +1795,21 @@
       "Legislative Evolution",
       "Direct Elections"
     ],
-    "question_en": "Arrange the following constitutional milestones in the evolution of Indian legislative representation in correct chronological order:\n1. First statutory distinction made between legislative and executive functions of Governor-General's Council\n2. Inclusion of non-official Indians (Raja of Benaras, Maharaja of Patiala, Sir Dinkar Rao) as nominated members\n3. Introduction of direct elections for the central and provincial legislative bodies\n4. Establishment of complete provincial executive accountability to an elected legislature",
-    "question_ta": "இந்தியச் சட்ட பிரதிநிதித்துவ வளர்ச்சியின் பின்வரும் அரசியலமைப்பு மைல்கற்களை சரியான காலவரிசையில் அமைக்கவும்:\n1. கவர்னர்-ஜெனரல் கவுன்சிலின் சட்ட மற்றும் நிர்வாகப் பணிகளுக்கு இடையே முதன்முறையாக சட்டப்பூர்வ வேறுபாடு ஏற்படுத்தப்படல்\n2. பரிந்துரைக்கப்பட்ட உறுப்பினர்களாக அதிகாரப்பூர்வமற்ற இந்தியர்கள் (பெனாரஸ் ராஜா, பட்டியாலா மகாராஜா, சர் தினகர் ராவ்) சேர்க்கப்படல்\n3. மத்திய மற்றும் மாகாண சட்டமன்றங்களுக்கு நேரடித் தேர்தல் முறையை அறிமுகப்படுத்துதல்\n4. தேர்ந்தெடுக்கப்பட்ட சட்டமன்றத்திற்கு மாகாண நிர்வாகத்தின் முழுமையான பொறுப்புடைமையை நிறுவுதல்",
+    "question_en": "Arrange the following constitutional milestones in the evolution of Indian legislative representation in correct chronological order:\n1. Introduction of direct elections for the central and provincial legislative bodies\n2. Inclusion of non-official Indians (Raja of Benaras, Maharaja of Patiala, Sir Dinkar Rao) as nominated members\n3. Establishment of complete provincial executive accountability to an elected legislature\n4. First statutory distinction made between legislative and executive functions of Governor-General's Council",
+    "question_ta": "இந்தியச் சட்ட பிரதிநிதித்துவ வளர்ச்சியின் பின்வரும் அரசியலமைப்பு மைல்கற்களை சரியான காலவரிசையில் அமைக்கவும்:\n1. மத்திய மற்றும் மாகாண சட்டமன்றங்களுக்கு நேரடித் தேர்தல் முறையை அறிமுகப்படுத்துதல்\n2. பரிந்துரைக்கப்பட்ட உறுப்பினர்களாக அதிகாரப்பூர்வமற்ற இந்தியர்கள் (பெனாரஸ் ராஜா, பட்டியாலா மகாராஜா, சர் தினகர் ராவ்) சேர்க்கப்படல்\n3. தேர்ந்தெடுக்கப்பட்ட சட்டமன்றத்திற்கு மாகாண நிர்வாகத்தின் முழுமையான பொறுப்புடைமையை நிறுவுதல்\n4. கவர்னர்-ஜெனரல் கவுன்சிலின் சட்ட மற்றும் நிர்வாகப் பணிகளுக்கு இடையே முதன்முறையாக சட்டப்பூர்வ வேறுபாடு ஏற்படுத்தப்படல்",
     "options_en": [
-      "1 -> 3 -> 2 -> 4",
-      "2 -> 1 -> 3 -> 4",
       "1 -> 2 -> 3 -> 4",
-      "1 -> 2 -> 4 -> 3"
+      "1 -> 2 -> 4 -> 3",
+      "1 -> 3 -> 2 -> 4",
+      "4 -> 2 -> 1 -> 3"
     ],
     "options_ta": [
-      "1 -> 3 -> 2 -> 4",
-      "2 -> 1 -> 3 -> 4",
       "1 -> 2 -> 3 -> 4",
-      "1 -> 2 -> 4 -> 3"
+      "1 -> 2 -> 4 -> 3",
+      "1 -> 3 -> 2 -> 4",
+      "4 -> 2 -> 1 -> 3"
     ],
-    "answer": "c",
+    "answer": "d",
     "explanation_en": "Sequence: 1 (1853 Charter Act) -> 2 (1861 Indian Councils Act) -> 3 (1919 GOI Act) -> 4 (1935 GOI Act). Legislative representation trajectory.",
     "explanation_ta": "வரிசை: 1 (1853 சாசனச் சட்டம்) -> 2 (1861 இந்தியக் கவுன்சில்கள் சட்டம்) -> 3 (1919 இந்திய அரசுச் சட்டம்) -> 4 (1935 இந்திய அரசுச் சட்டம்)."
   },
@@ -1820,52 +1820,52 @@
     "difficulty": "Hard",
     "question_type": "Chronology",
     "question": {
-      "en": "Arrange the following developments concerning communal electorates and seat reservations in chronological sequence:\n1. Introduction of separate electorates exclusively for Muslims\n2. Extension of separate electorates to Sikhs, Indian Christians, Anglo-Indians, and Europeans\n3. Announcement of Communal Award by Ramsay MacDonald extending separate electorates to Depressed Classes\n4. Signing of Poona Pact retaining joint electorate for Depressed Classes with reserved seats",
-      "ta": "வகுப்புவாதத் தொகுதிகள் மற்றும் இடஒதுக்கீடு தொடர்பான பின்வரும் நிகழ்வுகளை காலவரிசையில் அமைக்கவும்:\n1. முஸ்லிம்களுக்கு மட்டும் பிரத்யேகமாக தனித் தொகுதிகளை அறிமுகப்படுத்துதல்\n2. சீக்கியர்கள், இந்தியக் கிறிஸ்தவர்கள், ஆங்லோ-இந்தியர்கள் மற்றும் ஐரோப்பியர்களுக்கும் தனித் தொகுதிகளை நீட்டித்தல்\n3. ஒடுக்கப்பட்ட வகுப்பினருக்கும் தனித் தொகுதிகளை நீட்டித்து ராம்சே மெக்டொனால்டு வகுப்புவாத அறிக்கையை அறிவித்தல்\n4. ஒடுக்கப்பட்ட வகுப்பினருக்கு இடஒதுக்கீட்டுடன் கூட்டுத் தொகுதியை உறுதிசெய்து பூனா ஒப்பந்தம் கையெழுத்தாதல்"
+      "en": "Arrange the following developments concerning communal electorates and seat reservations in chronological sequence:\n1. Extension of separate electorates to Sikhs, Indian Christians, Anglo-Indians, and Europeans\n2. Introduction of separate electorates exclusively for Muslims\n3. Signing of Poona Pact retaining joint electorate for Depressed Classes with reserved seats\n4. Announcement of Communal Award by Ramsay MacDonald extending separate electorates to Depressed Classes",
+      "ta": "வகுப்புவாதத் தொகுதிகள் மற்றும் இடஒதுக்கீடு தொடர்பான பின்வரும் நிகழ்வுகளை காலவரிசையில் அமைக்கவும்:\n1. சீக்கியர்கள், இந்தியக் கிறிஸ்தவர்கள், ஆங்லோ-இந்தியர்கள் மற்றும் ஐரோப்பியர்களுக்கும் தனித் தொகுதிகளை நீட்டித்தல்\n2. முஸ்லிம்களுக்கு மட்டும் பிரத்யேகமாக தனித் தொகுதிகளை அறிமுகப்படுத்துதல்\n3. ஒடுக்கப்பட்ட வகுப்பினருக்கு இடஒதுக்கீட்டுடன் கூட்டுத் தொகுதியை உறுதிசெய்து பூனா ஒப்பந்தம் கையெழுத்தாதல்\n4. ஒடுக்கப்பட்ட வகுப்பினருக்கும் தனித் தொகுதிகளை நீட்டித்து ராம்சே மெக்டொனால்டு வகுப்புவாத அறிக்கையை அறிவித்தல்"
     },
     "options": [
       {
         "id": "A",
-        "en": "1 -> 3 -> 2 -> 4",
-        "ta": "1 -> 3 -> 2 -> 4"
+        "en": "1 -> 2 -> 3 -> 4",
+        "ta": "1 -> 2 -> 3 -> 4"
       },
       {
         "id": "B",
-        "en": "2 -> 1 -> 3 -> 4",
-        "ta": "2 -> 1 -> 3 -> 4"
-      },
-      {
-        "id": "C",
         "en": "1 -> 2 -> 4 -> 3",
         "ta": "1 -> 2 -> 4 -> 3"
       },
       {
+        "id": "C",
+        "en": "2 -> 1 -> 4 -> 3",
+        "ta": "2 -> 1 -> 4 -> 3"
+      },
+      {
         "id": "D",
-        "en": "1 -> 2 -> 3 -> 4",
-        "ta": "1 -> 2 -> 3 -> 4"
+        "en": "1 -> 3 -> 2 -> 4",
+        "ta": "1 -> 3 -> 2 -> 4"
       }
     ],
-    "correct_answer": "D",
+    "correct_answer": "C",
     "explanation": {
       "en": "Sequence: 1 (1909 Morley-Minto) -> 2 (1919 Montagu-Chelmsford) -> 3 (Aug 1932 Communal Award) -> 4 (Sept 1932 Poona Pact).",
       "ta": "வரிசை: 1 (1909 மார்லி-மிண்டோ) -> 2 (1919 மாண்டேகு-செம்ஸ்ஃபோர்டு) -> 3 (ஆக 1932 வகுப்புவாத அறிக்கை) -> 4 (செப் 1932 பூனா ஒப்பந்தம்)."
     },
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Extension to Sikhs/Christians (1919) was before Communal Award (1932).",
-        "ta": "தவறு. சீக்கியர்கள்/கிறிஸ்தவர்கள் நீட்டிப்பு (1919) வகுப்புவாத அறிக்கைக்கு (1932) முந்தியது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 3 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 3 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "B": {
-        "en": "Incorrect. Muslim separate electorate (1909) preceded 1919 extensions.",
-        "ta": "தவறு. முஸ்லிம் தனித் தொகுதி (1909) 1919 நீட்டிப்புகளுக்கு முந்தியது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 4 -> 3' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 4 -> 3' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "C": {
-        "en": "Incorrect. Poona Pact (Sept 1932) was signed after Communal Award (Aug 1932).",
-        "ta": "தவறு. பூனா ஒப்பந்தம் (செப் 1932) வகுப்புவாத அறிக்கைக்கு (ஆக 1932) பிறகே கையெழுத்தானது."
+        "en": "✅ Correct.\nThe correct chronological sequence is '2 -> 1 -> 4 -> 3'.",
+        "ta": "✅ சரி.\nசரியான காலவரிசை '2 -> 1 -> 4 -> 3' ஆகும்."
       },
       "D": {
-        "en": "Correct. 1 (1909) -> 2 (1919) -> 3 (Aug 1932) -> 4 (Sept 1932) accurately follows communal electoral history.",
-        "ta": "சரி. 1 (1909) -> 2 (1919) -> 3 (ஆக 1932) -> 4 (செப் 1932) வகுப்புவாத தேர்தல் வரலாற்றைத் துல்லியமாகப் பின்பற்றுகிறது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 3 -> 2 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 3 -> 2 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       }
     },
     "tnpsc_tip": {
@@ -1891,21 +1891,21 @@
       "Communal Award",
       "Poona Pact"
     ],
-    "question_en": "Arrange the following developments concerning communal electorates and seat reservations in chronological sequence:\n1. Introduction of separate electorates exclusively for Muslims\n2. Extension of separate electorates to Sikhs, Indian Christians, Anglo-Indians, and Europeans\n3. Announcement of Communal Award by Ramsay MacDonald extending separate electorates to Depressed Classes\n4. Signing of Poona Pact retaining joint electorate for Depressed Classes with reserved seats",
-    "question_ta": "வகுப்புவாதத் தொகுதிகள் மற்றும் இடஒதுக்கீடு தொடர்பான பின்வரும் நிகழ்வுகளை காலவரிசையில் அமைக்கவும்:\n1. முஸ்லிம்களுக்கு மட்டும் பிரத்யேகமாக தனித் தொகுதிகளை அறிமுகப்படுத்துதல்\n2. சீக்கியர்கள், இந்தியக் கிறிஸ்தவர்கள், ஆங்லோ-இந்தியர்கள் மற்றும் ஐரோப்பியர்களுக்கும் தனித் தொகுதிகளை நீட்டித்தல்\n3. ஒடுக்கப்பட்ட வகுப்பினருக்கும் தனித் தொகுதிகளை நீட்டித்து ராம்சே மெக்டொனால்டு வகுப்புவாத அறிக்கையை அறிவித்தல்\n4. ஒடுக்கப்பட்ட வகுப்பினருக்கு இடஒதுக்கீட்டுடன் கூட்டுத் தொகுதியை உறுதிசெய்து பூனா ஒப்பந்தம் கையெழுத்தாதல்",
+    "question_en": "Arrange the following developments concerning communal electorates and seat reservations in chronological sequence:\n1. Extension of separate electorates to Sikhs, Indian Christians, Anglo-Indians, and Europeans\n2. Introduction of separate electorates exclusively for Muslims\n3. Signing of Poona Pact retaining joint electorate for Depressed Classes with reserved seats\n4. Announcement of Communal Award by Ramsay MacDonald extending separate electorates to Depressed Classes",
+    "question_ta": "வகுப்புவாதத் தொகுதிகள் மற்றும் இடஒதுக்கீடு தொடர்பான பின்வரும் நிகழ்வுகளை காலவரிசையில் அமைக்கவும்:\n1. சீக்கியர்கள், இந்தியக் கிறிஸ்தவர்கள், ஆங்லோ-இந்தியர்கள் மற்றும் ஐரோப்பியர்களுக்கும் தனித் தொகுதிகளை நீட்டித்தல்\n2. முஸ்லிம்களுக்கு மட்டும் பிரத்யேகமாக தனித் தொகுதிகளை அறிமுகப்படுத்துதல்\n3. ஒடுக்கப்பட்ட வகுப்பினருக்கு இடஒதுக்கீட்டுடன் கூட்டுத் தொகுதியை உறுதிசெய்து பூனா ஒப்பந்தம் கையெழுத்தாதல்\n4. ஒடுக்கப்பட்ட வகுப்பினருக்கும் தனித் தொகுதிகளை நீட்டித்து ராம்சே மெக்டொனால்டு வகுப்புவாத அறிக்கையை அறிவித்தல்",
     "options_en": [
-      "1 -> 3 -> 2 -> 4",
-      "2 -> 1 -> 3 -> 4",
+      "1 -> 2 -> 3 -> 4",
       "1 -> 2 -> 4 -> 3",
-      "1 -> 2 -> 3 -> 4"
+      "2 -> 1 -> 4 -> 3",
+      "1 -> 3 -> 2 -> 4"
     ],
     "options_ta": [
-      "1 -> 3 -> 2 -> 4",
-      "2 -> 1 -> 3 -> 4",
+      "1 -> 2 -> 3 -> 4",
       "1 -> 2 -> 4 -> 3",
-      "1 -> 2 -> 3 -> 4"
+      "2 -> 1 -> 4 -> 3",
+      "1 -> 3 -> 2 -> 4"
     ],
-    "answer": "d",
+    "answer": "c",
     "explanation_en": "Sequence: 1 (1909 Morley-Minto) -> 2 (1919 Montagu-Chelmsford) -> 3 (Aug 1932 Communal Award) -> 4 (Sept 1932 Poona Pact).",
     "explanation_ta": "வரிசை: 1 (1909 மார்லி-மிண்டோ) -> 2 (1919 மாண்டேகு-செம்ஸ்ஃபோர்டு) -> 3 (ஆக 1932 வகுப்புவாத அறிக்கை) -> 4 (செப் 1932 பூனா ஒப்பந்தம்)."
   },
@@ -1916,8 +1916,8 @@
     "difficulty": "Hard",
     "question_type": "Chronology",
     "question": {
-      "en": "Arrange the following legislative control stages over financial budgets in British India in chronological order:\n1. Non-official members allowed to discuss budget without power to vote or move resolutions\n2. Right to ask supplementary questions and move resolutions on specific budget items granted\n3. Separation of Central and Provincial budgets with independent provincial tax-raising authority\n4. Enactment of statutory federal, provincial, and concurrent legislative heads controlling budget items",
-      "ta": "பிரிட்டிஷ் இந்தியாவில் நிதி வரவு செலவுத் திட்டத்தின் மீதான சட்டமன்றக் கட்டுப்பாட்டு கட்டங்களை காலவரிசையில் அமைக்கவும்:\n1. வாக்களிக்கும் அல்லது தீர்மானம் கொண்டுவரும் அதிகாரமின்றி பட்ஜெட்டை விவாதிக்க உறுப்பினர்களுக்கு அனுமதித்தல்\n2. பட்ஜெட் தலைப்புகளில் துணைக் கேள்விகள் கேட்கவும் தீர்மானங்கள் கொண்டுவரவும் உரிமை வழங்கப்படல்\n3. மத்திய மற்றும் மாகாண வரவு செலவுத் திட்டங்களை தனியாகப் பிரித்து மாகாணங்களுக்கு வரி விதிக்கும் அதிகாரம் அளித்தல்\n4. கூட்டாட்சி, மாகாண மற்றும் பொதுப் பட்டியல்களின் மூலம் பட்ஜெட் செலவினங்களைச் சட்டப்பூர்வமாகப் பிரித்தல்"
+      "en": "Arrange the following legislative control stages over financial budgets in British India in chronological order:\n1. Enactment of statutory federal, provincial, and concurrent legislative heads controlling budget items\n2. Separation of Central and Provincial budgets with independent provincial tax-raising authority\n3. Right to ask supplementary questions and move resolutions on specific budget items granted\n4. Non-official members allowed to discuss budget without power to vote or move resolutions",
+      "ta": "பிரிட்டிஷ் இந்தியாவில் நிதி வரவு செலவுத் திட்டத்தின் மீதான சட்டமன்றக் கட்டுப்பாட்டு கட்டங்களை காலவரிசையில் அமைக்கவும்:\n1. கூட்டாட்சி, மாகாண மற்றும் பொதுப் பட்டியல்களின் மூலம் பட்ஜெட் செலவினங்களைச் சட்டப்பூர்வமாகப் பிரித்தல்\n2. மத்திய மற்றும் மாகாண வரவு செலவுத் திட்டங்களை தனியாகப் பிரித்து மாகாணங்களுக்கு வரி விதிக்கும் அதிகாரம் அளித்தல்\n3. பட்ஜெட் தலைப்புகளில் துணைக் கேள்விகள் கேட்கவும் தீர்மானங்கள் கொண்டுவரவும் உரிமை வழங்கப்படல்\n4. வாக்களிக்கும் அல்லது தீர்மானம் கொண்டுவரும் அதிகாரமின்றி பட்ஜெட்டை விவாதிக்க உறுப்பினர்களுக்கு அனுமதித்தல்"
     },
     "options": [
       {
@@ -1927,41 +1927,41 @@
       },
       {
         "id": "B",
-        "en": "2 -> 1 -> 3 -> 4",
-        "ta": "2 -> 1 -> 3 -> 4"
-      },
-      {
-        "id": "C",
         "en": "1 -> 3 -> 2 -> 4",
         "ta": "1 -> 3 -> 2 -> 4"
       },
       {
-        "id": "D",
+        "id": "C",
         "en": "1 -> 2 -> 4 -> 3",
         "ta": "1 -> 2 -> 4 -> 3"
+      },
+      {
+        "id": "D",
+        "en": "4 -> 3 -> 2 -> 1",
+        "ta": "4 -> 3 -> 2 -> 1"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "D",
     "explanation": {
       "en": "Sequence: 1 (1892 Indian Councils Act) -> 2 (1909 Indian Councils Act) -> 3 (1919 GOI Act) -> 4 (1935 GOI Act). Budget control evolution.",
       "ta": "வரிசை: 1 (1892 இந்தியக் கவுன்சில்கள் சட்டம்) -> 2 (1909 இந்தியக் கவுன்சில்கள் சட்டம்) -> 3 (1919 இந்திய அரசுச் சட்டம்) -> 4 (1935 இந்திய அரசுச் சட்டம்)."
     },
     "why_not_others": {
       "A": {
-        "en": "Correct. 1 (1892) -> 2 (1909) -> 3 (1919) -> 4 (1935) tracks progressively expanding budget powers.",
-        "ta": "சரி. 1 (1892) -> 2 (1909) -> 3 (1919) -> 4 (1935) பட்ஜெட் அதிகாரங்களின் வளர்ச்சியைத் துல்லியமாகக் காட்டுகிறது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 3 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 3 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "B": {
-        "en": "Incorrect. Discussion of budget (1892) was allowed before supplementary questions (1909).",
-        "ta": "தவறு. பட்ஜெட் விவாதம் (1892) துணைக் கேள்விகளுக்கு (1909) முந்தியது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 3 -> 2 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 3 -> 2 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "C": {
-        "en": "Incorrect. Supplementary questions (1909) came before budget separation (1919).",
-        "ta": "தவறு. துணைக் கேள்விகள் (1909) பட்ஜெட் பிரிப்பிற்கு (1919) முந்தியது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 4 -> 3' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 4 -> 3' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "D": {
-        "en": "Incorrect. 3-tier list division (1935) was enacted after 1919 budget separation.",
-        "ta": "தவறு. 3 அடுக்கு பட்டியல் பிரிப்பு (1935) 1919 பட்ஜெட் பிரிப்பிற்குப் பின்னரே இயற்றப்பட்டது."
+        "en": "✅ Correct.\nThe correct chronological sequence is '4 -> 3 -> 2 -> 1'.",
+        "ta": "✅ சரி.\nசரியான காலவரிசை '4 -> 3 -> 2 -> 1' ஆகும்."
       }
     },
     "tnpsc_tip": {
@@ -1987,21 +1987,21 @@
       "Budget Powers",
       "Financial Devolution"
     ],
-    "question_en": "Arrange the following legislative control stages over financial budgets in British India in chronological order:\n1. Non-official members allowed to discuss budget without power to vote or move resolutions\n2. Right to ask supplementary questions and move resolutions on specific budget items granted\n3. Separation of Central and Provincial budgets with independent provincial tax-raising authority\n4. Enactment of statutory federal, provincial, and concurrent legislative heads controlling budget items",
-    "question_ta": "பிரிட்டிஷ் இந்தியாவில் நிதி வரவு செலவுத் திட்டத்தின் மீதான சட்டமன்றக் கட்டுப்பாட்டு கட்டங்களை காலவரிசையில் அமைக்கவும்:\n1. வாக்களிக்கும் அல்லது தீர்மானம் கொண்டுவரும் அதிகாரமின்றி பட்ஜெட்டை விவாதிக்க உறுப்பினர்களுக்கு அனுமதித்தல்\n2. பட்ஜெட் தலைப்புகளில் துணைக் கேள்விகள் கேட்கவும் தீர்மானங்கள் கொண்டுவரவும் உரிமை வழங்கப்படல்\n3. மத்திய மற்றும் மாகாண வரவு செலவுத் திட்டங்களை தனியாகப் பிரித்து மாகாணங்களுக்கு வரி விதிக்கும் அதிகாரம் அளித்தல்\n4. கூட்டாட்சி, மாகாண மற்றும் பொதுப் பட்டியல்களின் மூலம் பட்ஜெட் செலவினங்களைச் சட்டப்பூர்வமாகப் பிரித்தல்",
+    "question_en": "Arrange the following legislative control stages over financial budgets in British India in chronological order:\n1. Enactment of statutory federal, provincial, and concurrent legislative heads controlling budget items\n2. Separation of Central and Provincial budgets with independent provincial tax-raising authority\n3. Right to ask supplementary questions and move resolutions on specific budget items granted\n4. Non-official members allowed to discuss budget without power to vote or move resolutions",
+    "question_ta": "பிரிட்டிஷ் இந்தியாவில் நிதி வரவு செலவுத் திட்டத்தின் மீதான சட்டமன்றக் கட்டுப்பாட்டு கட்டங்களை காலவரிசையில் அமைக்கவும்:\n1. கூட்டாட்சி, மாகாண மற்றும் பொதுப் பட்டியல்களின் மூலம் பட்ஜெட் செலவினங்களைச் சட்டப்பூர்வமாகப் பிரித்தல்\n2. மத்திய மற்றும் மாகாண வரவு செலவுத் திட்டங்களை தனியாகப் பிரித்து மாகாணங்களுக்கு வரி விதிக்கும் அதிகாரம் அளித்தல்\n3. பட்ஜெட் தலைப்புகளில் துணைக் கேள்விகள் கேட்கவும் தீர்மானங்கள் கொண்டுவரவும் உரிமை வழங்கப்படல்\n4. வாக்களிக்கும் அல்லது தீர்மானம் கொண்டுவரும் அதிகாரமின்றி பட்ஜெட்டை விவாதிக்க உறுப்பினர்களுக்கு அனுமதித்தல்",
     "options_en": [
       "1 -> 2 -> 3 -> 4",
-      "2 -> 1 -> 3 -> 4",
       "1 -> 3 -> 2 -> 4",
-      "1 -> 2 -> 4 -> 3"
+      "1 -> 2 -> 4 -> 3",
+      "4 -> 3 -> 2 -> 1"
     ],
     "options_ta": [
       "1 -> 2 -> 3 -> 4",
-      "2 -> 1 -> 3 -> 4",
       "1 -> 3 -> 2 -> 4",
-      "1 -> 2 -> 4 -> 3"
+      "1 -> 2 -> 4 -> 3",
+      "4 -> 3 -> 2 -> 1"
     ],
-    "answer": "a",
+    "answer": "d",
     "explanation_en": "Sequence: 1 (1892 Indian Councils Act) -> 2 (1909 Indian Councils Act) -> 3 (1919 GOI Act) -> 4 (1935 GOI Act). Budget control evolution.",
     "explanation_ta": "வரிசை: 1 (1892 இந்தியக் கவுன்சில்கள் சட்டம்) -> 2 (1909 இந்தியக் கவுன்சில்கள் சட்டம்) -> 3 (1919 இந்திய அரசுச் சட்டம்) -> 4 (1935 இந்திய அரசுச் சட்டம்)."
   },
@@ -2012,14 +2012,14 @@
     "difficulty": "Hard",
     "question_type": "Chronology",
     "question": {
-      "en": "Arrange the following provisions strengthening Governor-General's extraordinary legislative powers in chronological order:\n1. Governor-General in Council empowered to make rules, regulations, and ordinances for Bengal presidency\n2. Governor-General vested with exclusive law-making authority for all British territories in India\n3. Power to issue Ordinances during emergencies without concurrence of Legislative Council granted\n4. Power of Certification and absolute Veto over Central Legislative bills enacted",
-      "ta": "கவர்னர்-ஜெனரலின் அவசரகால மற்றும் பிரத்யேக சட்ட அதிகாரங்கள் வலுப்படுத்தப்பட்டதை காலவரிசையில் அமைக்கவும்:\n1. வங்காள மாகாணத்திற்கு விதிகள், ஒழுங்குமுறைகள் மற்றும் அவசரச் சட்டங்களை பிறப்பிக்க கவர்னர்-ஜெனரலுக்கு அதிகாரம் அளித்தல்\n2. பிரிட்டிஷ் இந்தியாவின் அனைத்துப் பகுதிகளுக்கும் பிரத்யேக சட்டமியற்றும் அதிகாரத்தை கவர்னர்-ஜெனரலிடம் ஒப்படைத்தல்\n3. அவசர காலத்தில் சட்ட மேலவையின் ஒப்புதலின்றி அவசரச் சட்டங்களை (Ordinances) பிறப்பிக்கும் அதிகாரம் அளித்தல்\n4. மத்திய சட்டமன்ற மசோதாக்கள் மீது நிராகரிப்பு (Veto) மற்றும் சான்றளிப்பு (Certification) அதிகாரங்களை வழங்குதல்"
+      "en": "Arrange the following provisions strengthening Governor-General's extraordinary legislative powers in chronological order:\n1. Power to issue Ordinances during emergencies without concurrence of Legislative Council granted\n2. Governor-General in Council empowered to make rules, regulations, and ordinances for Bengal presidency\n3. Governor-General vested with exclusive law-making authority for all British territories in India\n4. Power of Certification and absolute Veto over Central Legislative bills enacted",
+      "ta": "கவர்னர்-ஜெனரலின் அவசரகால மற்றும் பிரத்யேக சட்ட அதிகாரங்கள் வலுப்படுத்தப்பட்டதை காலவரிசையில் அமைக்கவும்:\n1. அவசர காலத்தில் சட்ட மேலவையின் ஒப்புதலின்றி அவசரச் சட்டங்களை (Ordinances) பிறப்பிக்கும் அதிகாரம் அளித்தல்\n2. வங்காள மாகாணத்திற்கு விதிகள், ஒழுங்குமுறைகள் மற்றும் அவசரச் சட்டங்களை பிறப்பிக்க கவர்னர்-ஜெனரலுக்கு அதிகாரம் அளித்தல்\n3. பிரிட்டிஷ் இந்தியாவின் அனைத்துப் பகுதிகளுக்கும் பிரத்யேக சட்டமியற்றும் அதிகாரத்தை கவர்னர்-ஜெனரலிடம் ஒப்படைத்தல்\n4. மத்திய சட்டமன்ற மசோதாக்கள் மீது நிராகரிப்பு (Veto) மற்றும் சான்றளிப்பு (Certification) அதிகாரங்களை வழங்குதல்"
     },
     "options": [
       {
         "id": "A",
-        "en": "2 -> 1 -> 3 -> 4",
-        "ta": "2 -> 1 -> 3 -> 4"
+        "en": "2 -> 3 -> 1 -> 4",
+        "ta": "2 -> 3 -> 1 -> 4"
       },
       {
         "id": "B",
@@ -2028,36 +2028,36 @@
       },
       {
         "id": "C",
-        "en": "1 -> 3 -> 2 -> 4",
-        "ta": "1 -> 3 -> 2 -> 4"
+        "en": "1 -> 2 -> 4 -> 3",
+        "ta": "1 -> 2 -> 4 -> 3"
       },
       {
         "id": "D",
-        "en": "1 -> 2 -> 4 -> 3",
-        "ta": "1 -> 2 -> 4 -> 3"
+        "en": "1 -> 3 -> 2 -> 4",
+        "ta": "1 -> 3 -> 2 -> 4"
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "A",
     "explanation": {
       "en": "Sequence: 1 (1773 Regulating Act) -> 2 (1833 Charter Act) -> 3 (1861 Indian Councils Act) -> 4 (1919 GOI Act). Evolution of executive ordinance & veto powers.",
       "ta": "வரிசை: 1 (1773 ஒழுங்குமுறைச் சட்டம்) -> 2 (1833 சாசனச் சட்டம்) -> 3 (1861 இந்தியக் கவுன்சில்கள் சட்டம்) -> 4 (1919 இந்திய அரசுச் சட்டம்)."
     },
     "why_not_others": {
       "A": {
-        "en": "Incorrect. 1773 Bengal regulation power (1) preceded 1833 all-India power (2).",
-        "ta": "தவறு. 1773 வங்காள ஒழுங்குமுறை அதிகாரம் (1) 1833 அகில இந்திய அதிகாரத்திற்கு (2) முந்தியது."
+        "en": "✅ Correct.\nThe correct chronological sequence is '2 -> 3 -> 1 -> 4'.",
+        "ta": "✅ சரி.\nசரியான காலவரிசை '2 -> 3 -> 1 -> 4' ஆகும்."
       },
       "B": {
-        "en": "Correct. 1 (1773) -> 2 (1833) -> 3 (1861) -> 4 (1919) accurately traces Governor-General's ordinance & veto powers.",
-        "ta": "சரி. 1 (1773) -> 2 (1833) -> 3 (1861) -> 4 (1919) கவர்னர்-ஜெனரலின் அவசரச் சட்ட அதிகாரங்களின் வளர்ச்சியைத் துல்லியமாகக் காட்டுகிறது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 3 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 3 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "C": {
-        "en": "Incorrect. Ordinance power (1861) came after exclusive law-making authority (1833).",
-        "ta": "தவறு. அவசரச் சட்ட அதிகாரம் (1861) பிரத்யேக சட்டமியற்றும் அதிகாரத்திற்குப் (1833) பின்னரே வந்தது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 4 -> 3' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 4 -> 3' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "D": {
-        "en": "Incorrect. Certification power (1919) was enacted after Ordinance power of 1861.",
-        "ta": "தவறு. சான்றளிப்பு அதிகாரம் (1919) 1861 அவசரச் சட்ட அதிகாரத்திற்குப் பின்னரே வந்தது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 3 -> 2 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 3 -> 2 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       }
     },
     "tnpsc_tip": {
@@ -2083,21 +2083,21 @@
       "Ordinance Power",
       "Veto Power"
     ],
-    "question_en": "Arrange the following provisions strengthening Governor-General's extraordinary legislative powers in chronological order:\n1. Governor-General in Council empowered to make rules, regulations, and ordinances for Bengal presidency\n2. Governor-General vested with exclusive law-making authority for all British territories in India\n3. Power to issue Ordinances during emergencies without concurrence of Legislative Council granted\n4. Power of Certification and absolute Veto over Central Legislative bills enacted",
-    "question_ta": "கவர்னர்-ஜெனரலின் அவசரகால மற்றும் பிரத்யேக சட்ட அதிகாரங்கள் வலுப்படுத்தப்பட்டதை காலவரிசையில் அமைக்கவும்:\n1. வங்காள மாகாணத்திற்கு விதிகள், ஒழுங்குமுறைகள் மற்றும் அவசரச் சட்டங்களை பிறப்பிக்க கவர்னர்-ஜெனரலுக்கு அதிகாரம் அளித்தல்\n2. பிரிட்டிஷ் இந்தியாவின் அனைத்துப் பகுதிகளுக்கும் பிரத்யேக சட்டமியற்றும் அதிகாரத்தை கவர்னர்-ஜெனரலிடம் ஒப்படைத்தல்\n3. அவசர காலத்தில் சட்ட மேலவையின் ஒப்புதலின்றி அவசரச் சட்டங்களை (Ordinances) பிறப்பிக்கும் அதிகாரம் அளித்தல்\n4. மத்திய சட்டமன்ற மசோதாக்கள் மீது நிராகரிப்பு (Veto) மற்றும் சான்றளிப்பு (Certification) அதிகாரங்களை வழங்குதல்",
+    "question_en": "Arrange the following provisions strengthening Governor-General's extraordinary legislative powers in chronological order:\n1. Power to issue Ordinances during emergencies without concurrence of Legislative Council granted\n2. Governor-General in Council empowered to make rules, regulations, and ordinances for Bengal presidency\n3. Governor-General vested with exclusive law-making authority for all British territories in India\n4. Power of Certification and absolute Veto over Central Legislative bills enacted",
+    "question_ta": "கவர்னர்-ஜெனரலின் அவசரகால மற்றும் பிரத்யேக சட்ட அதிகாரங்கள் வலுப்படுத்தப்பட்டதை காலவரிசையில் அமைக்கவும்:\n1. அவசர காலத்தில் சட்ட மேலவையின் ஒப்புதலின்றி அவசரச் சட்டங்களை (Ordinances) பிறப்பிக்கும் அதிகாரம் அளித்தல்\n2. வங்காள மாகாணத்திற்கு விதிகள், ஒழுங்குமுறைகள் மற்றும் அவசரச் சட்டங்களை பிறப்பிக்க கவர்னர்-ஜெனரலுக்கு அதிகாரம் அளித்தல்\n3. பிரிட்டிஷ் இந்தியாவின் அனைத்துப் பகுதிகளுக்கும் பிரத்யேக சட்டமியற்றும் அதிகாரத்தை கவர்னர்-ஜெனரலிடம் ஒப்படைத்தல்\n4. மத்திய சட்டமன்ற மசோதாக்கள் மீது நிராகரிப்பு (Veto) மற்றும் சான்றளிப்பு (Certification) அதிகாரங்களை வழங்குதல்",
     "options_en": [
-      "2 -> 1 -> 3 -> 4",
+      "2 -> 3 -> 1 -> 4",
       "1 -> 2 -> 3 -> 4",
-      "1 -> 3 -> 2 -> 4",
-      "1 -> 2 -> 4 -> 3"
+      "1 -> 2 -> 4 -> 3",
+      "1 -> 3 -> 2 -> 4"
     ],
     "options_ta": [
-      "2 -> 1 -> 3 -> 4",
+      "2 -> 3 -> 1 -> 4",
       "1 -> 2 -> 3 -> 4",
-      "1 -> 3 -> 2 -> 4",
-      "1 -> 2 -> 4 -> 3"
+      "1 -> 2 -> 4 -> 3",
+      "1 -> 3 -> 2 -> 4"
     ],
-    "answer": "b",
+    "answer": "a",
     "explanation_en": "Sequence: 1 (1773 Regulating Act) -> 2 (1833 Charter Act) -> 3 (1861 Indian Councils Act) -> 4 (1919 GOI Act). Evolution of executive ordinance & veto powers.",
     "explanation_ta": "வரிசை: 1 (1773 ஒழுங்குமுறைச் சட்டம்) -> 2 (1833 சாசனச் சட்டம்) -> 3 (1861 இந்தியக் கவுன்சில்கள் சட்டம்) -> 4 (1919 இந்திய அரசுச் சட்டம்)."
   },
@@ -2108,29 +2108,29 @@
     "difficulty": "Hard",
     "question_type": "Chronology",
     "question": {
-      "en": "Arrange the following constitutional milestones altering the status of East India Company in chronological order:\n1. Extension of EIC charter for 20 years with commercial monopoly intact\n2. Termination of EIC trade monopoly in India except for tea trade and trade with China\n3. Complete termination of EIC commercial activities, converting it into a purely administrative body\n4. Extension of EIC charter on trust for the Crown without specifying any fixed time period",
-      "ta": "கிழக்கிந்திய கம்பெனியின் அந்தஸ்தை மாற்றிய பின்வரும் அரசியலமைப்பு மைல்கற்களை காலவரிசையில் அமைக்கவும்:\n1. வர்த்தக முற்றுரிமையுடன் கம்பெனி சாசனத்தை 20 ஆண்டுகளுக்கு நீட்டித்தல்\n2. தேயிலை மற்றும் சீனா வர்த்தகம் தவிர்த்து கம்பெனியின் வர்த்தக முற்றுரிமையை முடிவுக்குக் கொண்டுவருதல்\n3. கம்பெனியின் வணிக நடவடிக்கைகளை முழுமையாக முடிவுக்குக் கொண்டுவந்து அதை நிர்வாக அமைப்பாக மட்டும் மாற்றுதல்\n4. எந்தவொரு குறிப்பிட்ட காலவரையறையுமின்றி பிரிட்டிஷ் முடி ஆட்சிக்காக கம்பெனி சாசனத்தை நீட்டித்தல்"
+      "en": "Arrange the following constitutional milestones altering the status of East India Company in chronological order:\n1. Termination of EIC trade monopoly in India except for tea trade and trade with China\n2. Extension of EIC charter on trust for the Crown without specifying any fixed time period\n3. Complete termination of EIC commercial activities, converting it into a purely administrative body\n4. Extension of EIC charter for 20 years with commercial monopoly intact",
+      "ta": "கிழக்கிந்திய கம்பெனியின் அந்தஸ்தை மாற்றிய பின்வரும் அரசியலமைப்பு மைல்கற்களை காலவரிசையில் அமைக்கவும்:\n1. தேயிலை மற்றும் சீனா வர்த்தகம் தவிர்த்து கம்பெனியின் வர்த்தக முற்றுரிமையை முடிவுக்குக் கொண்டுவருதல்\n2. எந்தவொரு குறிப்பிட்ட காலவரையறையுமின்றி பிரிட்டிஷ் முடி ஆட்சிக்காக கம்பெனி சாசனத்தை நீட்டித்தல்\n3. கம்பெனியின் வணிக நடவடிக்கைகளை முழுமையாக முடிவுக்குக் கொண்டுவந்து அதை நிர்வாக அமைப்பாக மட்டும் மாற்றுதல்\n4. வர்த்தக முற்றுரிமையுடன் கம்பெனி சாசனத்தை 20 ஆண்டுகளுக்கு நீட்டித்தல்"
     },
     "options": [
       {
         "id": "A",
-        "en": "1 -> 3 -> 2 -> 4",
-        "ta": "1 -> 3 -> 2 -> 4"
-      },
-      {
-        "id": "B",
-        "en": "2 -> 1 -> 3 -> 4",
-        "ta": "2 -> 1 -> 3 -> 4"
-      },
-      {
-        "id": "C",
         "en": "1 -> 2 -> 3 -> 4",
         "ta": "1 -> 2 -> 3 -> 4"
       },
       {
-        "id": "D",
+        "id": "B",
         "en": "1 -> 2 -> 4 -> 3",
         "ta": "1 -> 2 -> 4 -> 3"
+      },
+      {
+        "id": "C",
+        "en": "4 -> 1 -> 3 -> 2",
+        "ta": "4 -> 1 -> 3 -> 2"
+      },
+      {
+        "id": "D",
+        "en": "1 -> 3 -> 2 -> 4",
+        "ta": "1 -> 3 -> 2 -> 4"
       }
     ],
     "correct_answer": "C",
@@ -2140,20 +2140,20 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Partial abolition of monopoly (1813) came before complete commercial termination (1833).",
-        "ta": "தவறு. பகுதியளவு வர்த்தக ஒழிப்பு (1813) முழு வணிக ஒழிப்புக்கு (1833) முந்தியது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 3 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 3 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "B": {
-        "en": "Incorrect. Charter extension in 1793 (1) was before 1813 Act (2).",
-        "ta": "தவறு. 1793 சாசன நீட்டிப்பு (1) 1813 சட்டத்திற்கு (2) முந்தியது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 4 -> 3' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 4 -> 3' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "C": {
-        "en": "Correct. 1 (1793) -> 2 (1813) -> 3 (1833) -> 4 (1853) perfectly matches the 4 sequential Charter Acts.",
-        "ta": "சரி. 1 (1793) -> 2 (1813) -> 3 (1833) -> 4 (1853) நான்கு சாசனச் சட்டங்களையும் வரிசையாகப் பின்பற்றுகிறது."
+        "en": "✅ Correct.\nThe correct chronological sequence is '4 -> 1 -> 3 -> 2'.",
+        "ta": "✅ சரி.\nசரியான காலவரிசை '4 -> 1 -> 3 -> 2' ஆகும்."
       },
       "D": {
-        "en": "Incorrect. Charter Act 1853 (4) was after Charter Act 1833 (3).",
-        "ta": "தவறு. 1853 சாசனச் சட்டம் (4) 1833 சாசனச் சட்டத்திற்குப் (3) பின்னரே வந்தது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 3 -> 2 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 3 -> 2 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       }
     },
     "tnpsc_tip": {
@@ -2179,19 +2179,19 @@
       "Charter Acts",
       "East India Company"
     ],
-    "question_en": "Arrange the following constitutional milestones altering the status of East India Company in chronological order:\n1. Extension of EIC charter for 20 years with commercial monopoly intact\n2. Termination of EIC trade monopoly in India except for tea trade and trade with China\n3. Complete termination of EIC commercial activities, converting it into a purely administrative body\n4. Extension of EIC charter on trust for the Crown without specifying any fixed time period",
-    "question_ta": "கிழக்கிந்திய கம்பெனியின் அந்தஸ்தை மாற்றிய பின்வரும் அரசியலமைப்பு மைல்கற்களை காலவரிசையில் அமைக்கவும்:\n1. வர்த்தக முற்றுரிமையுடன் கம்பெனி சாசனத்தை 20 ஆண்டுகளுக்கு நீட்டித்தல்\n2. தேயிலை மற்றும் சீனா வர்த்தகம் தவிர்த்து கம்பெனியின் வர்த்தக முற்றுரிமையை முடிவுக்குக் கொண்டுவருதல்\n3. கம்பெனியின் வணிக நடவடிக்கைகளை முழுமையாக முடிவுக்குக் கொண்டுவந்து அதை நிர்வாக அமைப்பாக மட்டும் மாற்றுதல்\n4. எந்தவொரு குறிப்பிட்ட காலவரையறையுமின்றி பிரிட்டிஷ் முடி ஆட்சிக்காக கம்பெனி சாசனத்தை நீட்டித்தல்",
+    "question_en": "Arrange the following constitutional milestones altering the status of East India Company in chronological order:\n1. Termination of EIC trade monopoly in India except for tea trade and trade with China\n2. Extension of EIC charter on trust for the Crown without specifying any fixed time period\n3. Complete termination of EIC commercial activities, converting it into a purely administrative body\n4. Extension of EIC charter for 20 years with commercial monopoly intact",
+    "question_ta": "கிழக்கிந்திய கம்பெனியின் அந்தஸ்தை மாற்றிய பின்வரும் அரசியலமைப்பு மைல்கற்களை காலவரிசையில் அமைக்கவும்:\n1. தேயிலை மற்றும் சீனா வர்த்தகம் தவிர்த்து கம்பெனியின் வர்த்தக முற்றுரிமையை முடிவுக்குக் கொண்டுவருதல்\n2. எந்தவொரு குறிப்பிட்ட காலவரையறையுமின்றி பிரிட்டிஷ் முடி ஆட்சிக்காக கம்பெனி சாசனத்தை நீட்டித்தல்\n3. கம்பெனியின் வணிக நடவடிக்கைகளை முழுமையாக முடிவுக்குக் கொண்டுவந்து அதை நிர்வாக அமைப்பாக மட்டும் மாற்றுதல்\n4. வர்த்தக முற்றுரிமையுடன் கம்பெனி சாசனத்தை 20 ஆண்டுகளுக்கு நீட்டித்தல்",
     "options_en": [
-      "1 -> 3 -> 2 -> 4",
-      "2 -> 1 -> 3 -> 4",
       "1 -> 2 -> 3 -> 4",
-      "1 -> 2 -> 4 -> 3"
+      "1 -> 2 -> 4 -> 3",
+      "4 -> 1 -> 3 -> 2",
+      "1 -> 3 -> 2 -> 4"
     ],
     "options_ta": [
-      "1 -> 3 -> 2 -> 4",
-      "2 -> 1 -> 3 -> 4",
       "1 -> 2 -> 3 -> 4",
-      "1 -> 2 -> 4 -> 3"
+      "1 -> 2 -> 4 -> 3",
+      "4 -> 1 -> 3 -> 2",
+      "1 -> 3 -> 2 -> 4"
     ],
     "answer": "c",
     "explanation_en": "Sequence: 1 (1793 Charter Act) -> 2 (1813 Charter Act) -> 3 (1833 Charter Act) -> 4 (1853 Charter Act). Gradual dismantling of EIC.",
@@ -2204,19 +2204,19 @@
     "difficulty": "Hard",
     "question_type": "Chronology",
     "question": {
-      "en": "Arrange the structural transformation of Indian legislative bodies in correct chronological order:\n1. Maintenance of official majority in Central Legislative Council while allowing non-official majority in Provincial Councils\n2. Creation of a Bicameral Central Legislature comprising Council of State and Central Legislative Assembly\n3. Extension of Bicameralism to 6 out of 11 British Indian provinces\n4. Complete termination of British Parliament's legislative authority over India and Bengal",
-      "ta": "இந்திய சட்டமன்ற அமைப்புகளின் கட்டமைப்பு மாற்றங்களை சரியான காலவரிசையில் அமைக்கவும்:\n1. மத்திய சட்ட மேலவையில் அதிகாரப்பூர்வ பெரும்பான்மையைத் தக்கவைத்து மாகாண மேலவைகளில் அதிகாரப்பூர்வமற்ற பெரும்பான்மையை அனுமதித்தல்\n2. மாநிலங்கள் அவை மற்றும் மத்திய சட்டப் பேரவையைக் கொண்ட இரு அவை மத்திய சட்டமன்றத்தை உருவாக்குதல்\n3. 11 பிரிட்டிஷ் இந்திய மாகாணங்களில் 6 மாகாணங்களுக்கு இரு அவை முறையை நீட்டித்தல்\n4. இந்தியா மற்றும் வங்காளத்தின் மீதான பிரிட்டிஷ் நாடாளுமன்றத்தின் சட்ட அதிகாரத்தை முழுமையாக முடிவுக்குக் கொண்டுவருதல்"
+      "en": "Arrange the structural transformation of Indian legislative bodies in correct chronological order:\n1. Complete termination of British Parliament's legislative authority over India and Bengal\n2. Maintenance of official majority in Central Legislative Council while allowing non-official majority in Provincial Councils\n3. Extension of Bicameralism to 6 out of 11 British Indian provinces\n4. Creation of a Bicameral Central Legislature comprising Council of State and Central Legislative Assembly",
+      "ta": "இந்திய சட்டமன்ற அமைப்புகளின் கட்டமைப்பு மாற்றங்களை சரியான காலவரிசையில் அமைக்கவும்:\n1. இந்தியா மற்றும் வங்காளத்தின் மீதான பிரிட்டிஷ் நாடாளுமன்றத்தின் சட்ட அதிகாரத்தை முழுமையாக முடிவுக்குக் கொண்டுவருதல்\n2. மத்திய சட்ட மேலவையில் அதிகாரப்பூர்வ பெரும்பான்மையைத் தக்கவைத்து மாகாண மேலவைகளில் அதிகாரப்பூர்வமற்ற பெரும்பான்மையை அனுமதித்தல்\n3. 11 பிரிட்டிஷ் இந்திய மாகாணங்களில் 6 மாகாணங்களுக்கு இரு அவை முறையை நீட்டித்தல்\n4. மாநிலங்கள் அவை மற்றும் மத்திய சட்டப் பேரவையைக் கொண்ட இரு அவை மத்திய சட்டமன்றத்தை உருவாக்குதல்"
     },
     "options": [
       {
         "id": "A",
-        "en": "1 -> 3 -> 2 -> 4",
-        "ta": "1 -> 3 -> 2 -> 4"
+        "en": "1 -> 2 -> 3 -> 4",
+        "ta": "1 -> 2 -> 3 -> 4"
       },
       {
         "id": "B",
-        "en": "2 -> 1 -> 3 -> 4",
-        "ta": "2 -> 1 -> 3 -> 4"
+        "en": "2 -> 4 -> 3 -> 1",
+        "ta": "2 -> 4 -> 3 -> 1"
       },
       {
         "id": "C",
@@ -2225,31 +2225,31 @@
       },
       {
         "id": "D",
-        "en": "1 -> 2 -> 3 -> 4",
-        "ta": "1 -> 2 -> 3 -> 4"
+        "en": "1 -> 3 -> 2 -> 4",
+        "ta": "1 -> 3 -> 2 -> 4"
       }
     ],
-    "correct_answer": "D",
+    "correct_answer": "B",
     "explanation": {
       "en": "Sequence: 1 (1909 Indian Councils Act) -> 2 (1919 GOI Act) -> 3 (1935 GOI Act) -> 4 (1947 Indian Independence Act). Parliamentary architecture trajectory.",
       "ta": "வரிசை: 1 (1909 இந்தியக் கவுன்சில்கள் சட்டம்) -> 2 (1919 இந்திய அரசுச் சட்டம்) -> 3 (1935 இந்திய அரசுச் சட்டம்) -> 4 (1947 இந்திய சுதந்திரச் சட்டம்)."
     },
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Central bicameralism (1919) was created before provincial bicameralism in 6 provinces (1935).",
-        "ta": "தவறு. மத்திய இரு அவை முறை (1919) 6 மாகாண இரு அவை முறைக்கு (1935) முன்பே உருவாக்கப்பட்டது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 3 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 3 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "B": {
-        "en": "Incorrect. 1909 majority rule (1) preceded 1919 Central Bicameralism (2).",
-        "ta": "தவறு. 1909 பெரும்பான்மை விதி (1) 1919 மத்திய இரு அவை முறைக்கு (2) முந்தியது."
+        "en": "✅ Correct.\nThe correct chronological sequence is '2 -> 4 -> 3 -> 1'.",
+        "ta": "✅ சரி.\nசரியான காலவரிசை '2 -> 4 -> 3 -> 1' ஆகும்."
       },
       "C": {
-        "en": "Incorrect. Termination of British authority (1947) was the final step.",
-        "ta": "தவறு. பிரிட்டிஷ் அதிகார முடிவு (1947) இறுதிப் படியாகும்."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 4 -> 3' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 4 -> 3' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "D": {
-        "en": "Correct. 1 (1909) -> 2 (1919) -> 3 (1935) -> 4 (1947) accurately traces legislative body transformation.",
-        "ta": "சரி. 1 (1909) -> 2 (1919) -> 3 (1935) -> 4 (1947) சட்டமன்றக் கட்டமைப்பு மாற்றத்தை துல்லியமாகக் காட்டுகிறது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 3 -> 2 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 3 -> 2 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       }
     },
     "tnpsc_tip": {
@@ -2275,21 +2275,21 @@
       "Bicameralism",
       "Independence Act"
     ],
-    "question_en": "Arrange the structural transformation of Indian legislative bodies in correct chronological order:\n1. Maintenance of official majority in Central Legislative Council while allowing non-official majority in Provincial Councils\n2. Creation of a Bicameral Central Legislature comprising Council of State and Central Legislative Assembly\n3. Extension of Bicameralism to 6 out of 11 British Indian provinces\n4. Complete termination of British Parliament's legislative authority over India and Bengal",
-    "question_ta": "இந்திய சட்டமன்ற அமைப்புகளின் கட்டமைப்பு மாற்றங்களை சரியான காலவரிசையில் அமைக்கவும்:\n1. மத்திய சட்ட மேலவையில் அதிகாரப்பூர்வ பெரும்பான்மையைத் தக்கவைத்து மாகாண மேலவைகளில் அதிகாரப்பூர்வமற்ற பெரும்பான்மையை அனுமதித்தல்\n2. மாநிலங்கள் அவை மற்றும் மத்திய சட்டப் பேரவையைக் கொண்ட இரு அவை மத்திய சட்டமன்றத்தை உருவாக்குதல்\n3. 11 பிரிட்டிஷ் இந்திய மாகாணங்களில் 6 மாகாணங்களுக்கு இரு அவை முறையை நீட்டித்தல்\n4. இந்தியா மற்றும் வங்காளத்தின் மீதான பிரிட்டிஷ் நாடாளுமன்றத்தின் சட்ட அதிகாரத்தை முழுமையாக முடிவுக்குக் கொண்டுவருதல்",
+    "question_en": "Arrange the structural transformation of Indian legislative bodies in correct chronological order:\n1. Complete termination of British Parliament's legislative authority over India and Bengal\n2. Maintenance of official majority in Central Legislative Council while allowing non-official majority in Provincial Councils\n3. Extension of Bicameralism to 6 out of 11 British Indian provinces\n4. Creation of a Bicameral Central Legislature comprising Council of State and Central Legislative Assembly",
+    "question_ta": "இந்திய சட்டமன்ற அமைப்புகளின் கட்டமைப்பு மாற்றங்களை சரியான காலவரிசையில் அமைக்கவும்:\n1. இந்தியா மற்றும் வங்காளத்தின் மீதான பிரிட்டிஷ் நாடாளுமன்றத்தின் சட்ட அதிகாரத்தை முழுமையாக முடிவுக்குக் கொண்டுவருதல்\n2. மத்திய சட்ட மேலவையில் அதிகாரப்பூர்வ பெரும்பான்மையைத் தக்கவைத்து மாகாண மேலவைகளில் அதிகாரப்பூர்வமற்ற பெரும்பான்மையை அனுமதித்தல்\n3. 11 பிரிட்டிஷ் இந்திய மாகாணங்களில் 6 மாகாணங்களுக்கு இரு அவை முறையை நீட்டித்தல்\n4. மாநிலங்கள் அவை மற்றும் மத்திய சட்டப் பேரவையைக் கொண்ட இரு அவை மத்திய சட்டமன்றத்தை உருவாக்குதல்",
     "options_en": [
-      "1 -> 3 -> 2 -> 4",
-      "2 -> 1 -> 3 -> 4",
+      "1 -> 2 -> 3 -> 4",
+      "2 -> 4 -> 3 -> 1",
       "1 -> 2 -> 4 -> 3",
-      "1 -> 2 -> 3 -> 4"
+      "1 -> 3 -> 2 -> 4"
     ],
     "options_ta": [
-      "1 -> 3 -> 2 -> 4",
-      "2 -> 1 -> 3 -> 4",
+      "1 -> 2 -> 3 -> 4",
+      "2 -> 4 -> 3 -> 1",
       "1 -> 2 -> 4 -> 3",
-      "1 -> 2 -> 3 -> 4"
+      "1 -> 3 -> 2 -> 4"
     ],
-    "answer": "d",
+    "answer": "b",
     "explanation_en": "Sequence: 1 (1909 Indian Councils Act) -> 2 (1919 GOI Act) -> 3 (1935 GOI Act) -> 4 (1947 Indian Independence Act). Parliamentary architecture trajectory.",
     "explanation_ta": "வரிசை: 1 (1909 இந்தியக் கவுன்சில்கள் சட்டம்) -> 2 (1919 இந்திய அரசுச் சட்டம்) -> 3 (1935 இந்திய அரசுச் சட்டம்) -> 4 (1947 இந்திய சுதந்திரச் சட்டம்)."
   },
@@ -2300,29 +2300,29 @@
     "difficulty": "Hard",
     "question_type": "Chronology",
     "question": {
-      "en": "Arrange the following shifts in provincial legislative independence in chronological order:\n1. Subordination of Governors of Bombay and Madras to Governor-General of Bengal in making laws\n2. Complete deprivation of legislative powers of Bombay and Madras Presidencies\n3. Restoration of legislative powers to Bombay and Madras Presidencies initiating decentralization\n4. Bifurcation of provincial executive into Reserved and Transferred subjects under Dyarchy",
-      "ta": "மாகாண சட்ட சுதந்திரத்தில் ஏற்பட்ட பின்வரும் மாற்றங்களை காலவரிசையில் அமைக்கவும்:\n1. சட்டங்கள் இயற்றுவதில் பம்பாய் மற்றும் மதராஸ் கவர்னர்களை வங்காள கவர்னர்-ஜெனரலுக்குக் கீழ்ப்படுத்துதல்\n2. பம்பாய் மற்றும் மதராஸ் மாகாணங்களின் சட்ட அதிகாரங்களை முழுமையாகப் பறித்தல்\n3. பம்பாய் மற்றும் மதராஸ் மாகாணங்களுக்கு சட்ட அதிகாரங்களை மீட்டளித்து அதிகாரப் பரவலாக்கத்தைத் தொடங்குதல்\n4. இரட்டை ஆட்சியின் கீழ் மாகாண நிர்வாகத்தை ஒதுக்கப்பட்ட மற்றும் மாற்றப்பட்ட துறைகளாகப் பிரித்தல்"
+      "en": "Arrange the following shifts in provincial legislative independence in chronological order:\n1. Restoration of legislative powers to Bombay and Madras Presidencies initiating decentralization\n2. Subordination of Governors of Bombay and Madras to Governor-General of Bengal in making laws\n3. Bifurcation of provincial executive into Reserved and Transferred subjects under Dyarchy\n4. Complete deprivation of legislative powers of Bombay and Madras Presidencies",
+      "ta": "மாகாண சட்ட சுதந்திரத்தில் ஏற்பட்ட பின்வரும் மாற்றங்களை காலவரிசையில் அமைக்கவும்:\n1. பம்பாய் மற்றும் மதராஸ் மாகாணங்களுக்கு சட்ட அதிகாரங்களை மீட்டளித்து அதிகாரப் பரவலாக்கத்தைத் தொடங்குதல்\n2. சட்டங்கள் இயற்றுவதில் பம்பாய் மற்றும் மதராஸ் கவர்னர்களை வங்காள கவர்னர்-ஜெனரலுக்குக் கீழ்ப்படுத்துதல்\n3. இரட்டை ஆட்சியின் கீழ் மாகாண நிர்வாகத்தை ஒதுக்கப்பட்ட மற்றும் மாற்றப்பட்ட துறைகளாகப் பிரித்தல்\n4. பம்பாய் மற்றும் மதராஸ் மாகாணங்களின் சட்ட அதிகாரங்களை முழுமையாகப் பறித்தல்"
     },
     "options": [
       {
         "id": "A",
+        "en": "2 -> 4 -> 1 -> 3",
+        "ta": "2 -> 4 -> 1 -> 3"
+      },
+      {
+        "id": "B",
         "en": "1 -> 2 -> 3 -> 4",
         "ta": "1 -> 2 -> 3 -> 4"
       },
       {
-        "id": "B",
-        "en": "2 -> 1 -> 3 -> 4",
-        "ta": "2 -> 1 -> 3 -> 4"
-      },
-      {
         "id": "C",
-        "en": "1 -> 3 -> 2 -> 4",
-        "ta": "1 -> 3 -> 2 -> 4"
+        "en": "1 -> 2 -> 4 -> 3",
+        "ta": "1 -> 2 -> 4 -> 3"
       },
       {
         "id": "D",
-        "en": "1 -> 2 -> 4 -> 3",
-        "ta": "1 -> 2 -> 4 -> 3"
+        "en": "1 -> 3 -> 2 -> 4",
+        "ta": "1 -> 3 -> 2 -> 4"
       }
     ],
     "correct_answer": "A",
@@ -2332,20 +2332,20 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Correct. 1 (1773) -> 2 (1833) -> 3 (1861) -> 4 (1919) tracks provincial legislative powers shift.",
-        "ta": "சரி. 1 (1773) -> 2 (1833) -> 3 (1861) -> 4 (1919) மாகாண சட்ட அதிகார மாற்றங்களைத் துல்லியமாகக் காட்டுகிறது."
+        "en": "✅ Correct.\nThe correct chronological sequence is '2 -> 4 -> 1 -> 3'.",
+        "ta": "✅ சரி.\nசரியான காலவரிசை '2 -> 4 -> 1 -> 3' ஆகும்."
       },
       "B": {
-        "en": "Incorrect. Subordination of Presidencies (1773) occurred before total legislative deprivation (1833).",
-        "ta": "தவறு. மாகாணங்கள் கீழ்ப்படுத்தப்படுதல் (1773) முழு அதிகாரப் பறிப்புக்கு (1833) முந்தியது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 3 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 3 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "C": {
-        "en": "Incorrect. Restoration of legislative powers (1861) was after 1833 Act.",
-        "ta": "தவறு. சட்ட அதிகார மீட்பு (1861) 1833 சட்டத்திற்குப் பின்னராகும்."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 4 -> 3' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 4 -> 3' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "D": {
-        "en": "Incorrect. Dyarchy in provinces (1919) came after legislative restoration of 1861.",
-        "ta": "தவறு. மாகாண இரட்டை ஆட்சி (1919) 1861 அதிகார மீட்புக்குப் பின்னரே வந்தது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 3 -> 2 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 3 -> 2 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       }
     },
     "tnpsc_tip": {
@@ -2371,19 +2371,19 @@
       "Provincial Devolution",
       "Dyarchy"
     ],
-    "question_en": "Arrange the following shifts in provincial legislative independence in chronological order:\n1. Subordination of Governors of Bombay and Madras to Governor-General of Bengal in making laws\n2. Complete deprivation of legislative powers of Bombay and Madras Presidencies\n3. Restoration of legislative powers to Bombay and Madras Presidencies initiating decentralization\n4. Bifurcation of provincial executive into Reserved and Transferred subjects under Dyarchy",
-    "question_ta": "மாகாண சட்ட சுதந்திரத்தில் ஏற்பட்ட பின்வரும் மாற்றங்களை காலவரிசையில் அமைக்கவும்:\n1. சட்டங்கள் இயற்றுவதில் பம்பாய் மற்றும் மதராஸ் கவர்னர்களை வங்காள கவர்னர்-ஜெனரலுக்குக் கீழ்ப்படுத்துதல்\n2. பம்பாய் மற்றும் மதராஸ் மாகாணங்களின் சட்ட அதிகாரங்களை முழுமையாகப் பறித்தல்\n3. பம்பாய் மற்றும் மதராஸ் மாகாணங்களுக்கு சட்ட அதிகாரங்களை மீட்டளித்து அதிகாரப் பரவலாக்கத்தைத் தொடங்குதல்\n4. இரட்டை ஆட்சியின் கீழ் மாகாண நிர்வாகத்தை ஒதுக்கப்பட்ட மற்றும் மாற்றப்பட்ட துறைகளாகப் பிரித்தல்",
+    "question_en": "Arrange the following shifts in provincial legislative independence in chronological order:\n1. Restoration of legislative powers to Bombay and Madras Presidencies initiating decentralization\n2. Subordination of Governors of Bombay and Madras to Governor-General of Bengal in making laws\n3. Bifurcation of provincial executive into Reserved and Transferred subjects under Dyarchy\n4. Complete deprivation of legislative powers of Bombay and Madras Presidencies",
+    "question_ta": "மாகாண சட்ட சுதந்திரத்தில் ஏற்பட்ட பின்வரும் மாற்றங்களை காலவரிசையில் அமைக்கவும்:\n1. பம்பாய் மற்றும் மதராஸ் மாகாணங்களுக்கு சட்ட அதிகாரங்களை மீட்டளித்து அதிகாரப் பரவலாக்கத்தைத் தொடங்குதல்\n2. சட்டங்கள் இயற்றுவதில் பம்பாய் மற்றும் மதராஸ் கவர்னர்களை வங்காள கவர்னர்-ஜெனரலுக்குக் கீழ்ப்படுத்துதல்\n3. இரட்டை ஆட்சியின் கீழ் மாகாண நிர்வாகத்தை ஒதுக்கப்பட்ட மற்றும் மாற்றப்பட்ட துறைகளாகப் பிரித்தல்\n4. பம்பாய் மற்றும் மதராஸ் மாகாணங்களின் சட்ட அதிகாரங்களை முழுமையாகப் பறித்தல்",
     "options_en": [
+      "2 -> 4 -> 1 -> 3",
       "1 -> 2 -> 3 -> 4",
-      "2 -> 1 -> 3 -> 4",
-      "1 -> 3 -> 2 -> 4",
-      "1 -> 2 -> 4 -> 3"
+      "1 -> 2 -> 4 -> 3",
+      "1 -> 3 -> 2 -> 4"
     ],
     "options_ta": [
+      "2 -> 4 -> 1 -> 3",
       "1 -> 2 -> 3 -> 4",
-      "2 -> 1 -> 3 -> 4",
-      "1 -> 3 -> 2 -> 4",
-      "1 -> 2 -> 4 -> 3"
+      "1 -> 2 -> 4 -> 3",
+      "1 -> 3 -> 2 -> 4"
     ],
     "answer": "a",
     "explanation_en": "Sequence: 1 (1773 Regulating Act) -> 2 (1833 Charter Act) -> 3 (1861 Indian Councils Act) -> 4 (1919 GOI Act). Provincial status evolution.",

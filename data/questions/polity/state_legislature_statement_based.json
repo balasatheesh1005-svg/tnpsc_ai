@@ -108,13 +108,13 @@
     "options": [
       {
         "id": "A",
-        "en": "1 only",
-        "ta": "1 மட்டும்"
+        "en": "2 only",
+        "ta": "2 மட்டும்"
       },
       {
         "id": "B",
-        "en": "2 only",
-        "ta": "2 மட்டும்"
+        "en": "1 only",
+        "ta": "1 மட்டும்"
       },
       {
         "id": "C",
@@ -128,19 +128,19 @@
       }
     ],
     "options_en": [
-      "1 only",
       "2 only",
+      "1 only",
       "Both 1 and 2",
       "Neither 1 nor 2"
     ],
     "options_ta": [
-      "1 மட்டும்",
       "2 மட்டும்",
+      "1 மட்டும்",
       "1 மற்றும் 2 இரண்டும்",
       "1-ம் இல்லை 2-ம் இல்லை"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Statement 1 is correct: Under Article 169(1) and (3), Parliament can pass a law by simple majority to create or abolish a Council, and it is not an amendment under Article 368. Statement 2 is incorrect: The Legislative Assembly must pass the resolution by a SPECIAL MAJORITY (majority of total membership and not less than two-thirds of members present and voting), not a simple majority.",
       "ta": "கூற்று 1 சரி: உறுப்பு 169(1) மற்றும் (3)-ன் படி, நாடாளுமன்றம் சாதாரண பெரும்பான்மையால் இயற்றும் சட்டம் மூலம் மேலவையை உருவாக்கலாம் அல்லது ஒழிக்கலாம். கூற்று 2 தவறு: சட்டப்பேரவை சாதாரண பெரும்பான்மையால் அல்ல, 'சிறப்புப் பெரும்பான்மையால்' (மொத்த உறுப்பினர்களில் பெரும்பான்மை மற்றும் வருகை தந்து வாக்களிப்போரில் 2/3 பங்கு) தீர்மானத்தை நிறைவேற்ற வேண்டும்."
@@ -149,12 +149,12 @@
     "explanation_ta": "கூற்று 1 சரி: உறுப்பு 169(1) மற்றும் (3)-ன் படி, நாடாளுமன்றம் சாதாரண பெரும்பான்மையால் இயற்றும் சட்டம் மூலம் மேலவையை உருவாக்கலாம் அல்லது ஒழிக்கலாம். கூற்று 2 தவறு: சட்டப்பேரவை சாதாரண பெரும்பான்மையால் அல்ல, 'சிறப்புப் பெரும்பான்மையால்' (மொத்த உறுப்பினர்களில் பெரும்பான்மை மற்றும் வருகை தந்து வாக்களிப்போரில் 2/3 பங்கு) தீர்மானத்தை நிறைவேற்ற வேண்டும்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Statement 1 is constitutionally true, while statement 2 is false because Assembly requires a special majority.",
-        "ta": "சரி. கூற்று 1 சரியானது, ஆனால் பேரவைக்கு சிறப்பு பெரும்பான்மை தேவை என்பதால் கூற்று 2 தவறானது."
-      },
-      "B": {
         "en": "Incorrect because statement 1 is true and statement 2 is false.",
         "ta": "தவறு, ஏனெனில் கூற்று 1 சரியானது மற்றும் கூற்று 2 தவறானது."
+      },
+      "B": {
+        "en": "Correct. Statement 1 is constitutionally true, while statement 2 is false because Assembly requires a special majority.",
+        "ta": "சரி. கூற்று 1 சரியானது, ஆனால் பேரவைக்கு சிறப்பு பெரும்பான்மை தேவை என்பதால் கூற்று 2 தவறானது."
       },
       "C": {
         "en": "Incorrect because statement 2 requires a special majority, not a simple majority.",
@@ -212,29 +212,29 @@
       },
       {
         "id": "C",
-        "en": "Both 1 and 2",
-        "ta": "1 மற்றும் 2 இரண்டும்"
+        "en": "Neither 1 nor 2",
+        "ta": "1-ம் இல்லை 2-ம் இல்லை"
       },
       {
         "id": "D",
-        "en": "Neither 1 nor 2",
-        "ta": "1-ம் இல்லை 2-ம் இல்லை"
+        "en": "Both 1 and 2",
+        "ta": "1 மற்றும் 2 இரண்டும்"
       }
     ],
     "options_en": [
       "1 only",
       "2 only",
-      "Both 1 and 2",
-      "Neither 1 nor 2"
+      "Neither 1 nor 2",
+      "Both 1 and 2"
     ],
     "options_ta": [
       "1 மட்டும்",
       "2 மட்டும்",
-      "1 மற்றும் 2 இரண்டும்",
-      "1-ம் இல்லை 2-ம் இல்லை"
+      "1-ம் இல்லை 2-ம் இல்லை",
+      "1 மற்றும் 2 இரண்டும்"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Both statements are correct: Under Article 170(2), the ratio of population to seats must be uniform as far as practicable across the state. Under the 42nd Amendment (1976) and extended by the 84th Amendment (2001), the total number of seats in each state assembly is frozen based on the 1971 census until the first census taken after 2026 (internal readjustment of constituencies was done based on the 2001 census via the 87th Amendment).",
       "ta": "இரு கூற்றுகளும் சரியானவை: உறுப்பு 170(2)-ன் படி தொகுதி மக்கட்தொகைக்கும் இடங்களுக்கும் இடையேயான விகிதம் மாநிலம் முழுவதும் சீராக இருக்க வேண்டும். 42-வது சட்டத்திருத்தம் (1976) மற்றும் 84-வது சட்டத்திருத்தத்தின்படி (2001), மாநில சட்டப்பேரவைகளின் மொத்த இடங்கள் 1971 மக்கள் தொகையின் அடிப்படையில் 2026-க்குப் பிந்தைய முதல் மக்கள் தொகை கணக்கெடுப்பு வரை முடக்கப்பட்டுள்ளன (தொகுதி மறுசீரமைப்பு 2001 கணக்கெடுப்பின்படி 87-வது திருத்தத்தால் செய்யப்பட்டது)."
@@ -251,12 +251,12 @@
         "ta": "தவறு, ஏனெனில் கூற்று 1-ம் உறுப்பு 170(2)-ன் நேரடி விதியாகும்."
       },
       "C": {
-        "en": "Correct. Both statements accurately describe territorial delimitation principles.",
-        "ta": "சரி. இரு கூற்றுகளும் பிராந்தியத் தொகுதி எல்லை நிர்ணயக் கொள்கைகளைத் துல்லியமாக விவரிக்கின்றன."
-      },
-      "D": {
         "en": "Incorrect because both statements are true.",
         "ta": "தவறு, ஏனெனில் இரு கூற்றுகளும் சரியானவை."
+      },
+      "D": {
+        "en": "Correct. Both statements accurately describe territorial delimitation principles.",
+        "ta": "சரி. இரு கூற்றுகளும் பிராந்தியத் தொகுதி எல்லை நிர்ணயக் கொள்கைகளைத் துல்லியமாக விவரிக்கின்றன."
       }
     },
     "tnpsc_tip": {
@@ -301,13 +301,13 @@
       },
       {
         "id": "B",
-        "en": "2 only",
-        "ta": "2 மட்டும்"
+        "en": "Both 1 and 2",
+        "ta": "1 மற்றும் 2 இரண்டும்"
       },
       {
         "id": "C",
-        "en": "Both 1 and 2",
-        "ta": "1 மற்றும் 2 இரண்டும்"
+        "en": "2 only",
+        "ta": "2 மட்டும்"
       },
       {
         "id": "D",
@@ -317,18 +317,18 @@
     ],
     "options_en": [
       "1 only",
-      "2 only",
       "Both 1 and 2",
+      "2 only",
       "Neither 1 nor 2"
     ],
     "options_ta": [
       "1 மட்டும்",
-      "2 மட்டும்",
       "1 மற்றும் 2 இரண்டும்",
+      "2 மட்டும்",
       "1-ம் இல்லை 2-ம் இல்லை"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Statement 1 is incorrect: Under Article 333 (before cessation), the Governor could nominate only ONE member (not two) if the community was not adequately represented. (The President nominated two to Lok Sabha under Article 331). Statement 2 is correct: The 104th Constitutional Amendment Act, 2019 discontinued the nomination of Anglo-Indians to Lok Sabha and State Legislative Assemblies from January 2020.",
       "ta": "கூற்று 1 தவறு: உறுப்பு 333-ன் கீழ் ஆளுநர் ஒரு உறுப்பினரை மட்டுமே நியமிக்க முடிந்தது (இரண்டு அல்ல; மக்களவைக்கு குடியரசுத் தலைவர் 2 பேரை உறுப்பு 331-ன் கீழ் நியமித்தார்). கூற்று 2 சரி: 104-வது அரசியலமைப்பு திருத்தச் சட்டம், 2019-ன் மூலம் மக்களவை மற்றும் மாநில சட்டப்பேரவைகளுக்கான ஆங்கிலோ-இந்தியர் நியமன முறை ஜனவரி 2020 முதல் நிறுத்தப்பட்டது."
@@ -341,12 +341,12 @@
         "ta": "தவறு, ஏனெனில் கூற்று 1 தவறானது (ஆளுநர் 1 நபரை மட்டுமே நியமிக்க முடிந்தது, 2 அல்ல)."
       },
       "B": {
-        "en": "Correct. Statement 2 is historically and legally accurate while statement 1 is false.",
-        "ta": "சரி. கூற்று 2 சட்டப்பூர்வமாக சரியானது, கூற்று 1 தவறானது."
-      },
-      "C": {
         "en": "Incorrect because Governor nominated only 1 member under Article 333.",
         "ta": "தவறு, ஏனெனில் உறுப்பு 333-ன் கீழ் ஆளுநர் 1 உறுப்பினரை மட்டுமே நியமிக்க முடிந்தது."
+      },
+      "C": {
+        "en": "Correct. Statement 2 is historically and legally accurate while statement 1 is false.",
+        "ta": "சரி. கூற்று 2 சட்டப்பூர்வமாக சரியானது, கூற்று 1 தவறானது."
       },
       "D": {
         "en": "Incorrect because statement 2 is completely true.",
@@ -395,13 +395,13 @@
       },
       {
         "id": "B",
-        "en": "2 only",
-        "ta": "2 மட்டும்"
+        "en": "Both 1 and 2",
+        "ta": "1 மற்றும் 2 இரண்டும்"
       },
       {
         "id": "C",
-        "en": "Both 1 and 2",
-        "ta": "1 மற்றும் 2 இரண்டும்"
+        "en": "2 only",
+        "ta": "2 மட்டும்"
       },
       {
         "id": "D",
@@ -411,18 +411,18 @@
     ],
     "options_en": [
       "1 only",
-      "2 only",
       "Both 1 and 2",
+      "2 only",
       "Neither 1 nor 2"
     ],
     "options_ta": [
       "1 மட்டும்",
-      "2 மட்டும்",
       "1 மற்றும் 2 இரண்டும்",
+      "2 மட்டும்",
       "1-ம் இல்லை 2-ம் இல்லை"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Statement 1 is incorrect: Under Article 171(3)(b), graduates must be of at least THREE years' standing (not five years). Statement 2 is correct: Under Article 171(3)(c), teachers must have been engaged for at least three years in teaching within educational institutions not lower than secondary school.",
       "ta": "கூற்று 1 தவறு: உறுப்பு 171(3)(b)-ன் படி பட்டதாரிகள் குறைந்தது 3 ஆண்டுகள் பட்டம் பெற்றவர்களாக இருக்க வேண்டும் (5 ஆண்டுகள் அல்ல). கூற்று 2 சரி: உறுப்பு 171(3)(c)-ன் படி ஆசிரியர்கள் இடைநிலைப் பள்ளிக்குக் குறையாத கல்வி நிறுவனங்களில் குறைந்தது 3 ஆண்டுகள் கற்பித்தல் பணியில் ஈடுபட்டிருக்க வேண்டும்."
@@ -435,12 +435,12 @@
         "ta": "தவறு, ஏனெனில் கூற்று 1 தவறானது (அது 5 ஆண்டுகள் அல்ல, 3 ஆண்டுகள்)."
       },
       "B": {
-        "en": "Correct. Statement 2 is accurate while statement 1 contains an incorrect time requirement.",
-        "ta": "சரி. கூற்று 2 சரியானது, கூற்று 1 தவறான கால அளவைக் கொண்டுள்ளது."
-      },
-      "C": {
         "en": "Incorrect because graduates require 3 years standing, not 5.",
         "ta": "தவறு, ஏனெனில் பட்டதாரிகளுக்கு 3 ஆண்டுகள் அனுபவமே தேவை."
+      },
+      "C": {
+        "en": "Correct. Statement 2 is accurate while statement 1 contains an incorrect time requirement.",
+        "ta": "சரி. கூற்று 2 சரியானது, கூற்று 1 தவறான கால அளவைக் கொண்டுள்ளது."
       },
       "D": {
         "en": "Incorrect because statement 2 is completely true.",
@@ -489,13 +489,13 @@
       },
       {
         "id": "B",
-        "en": "2 only",
-        "ta": "2 மட்டும்"
+        "en": "Both 1 and 2",
+        "ta": "1 மற்றும் 2 இரண்டும்"
       },
       {
         "id": "C",
-        "en": "Both 1 and 2",
-        "ta": "1 மற்றும் 2 இரண்டும்"
+        "en": "2 only",
+        "ta": "2 மட்டும்"
       },
       {
         "id": "D",
@@ -505,18 +505,18 @@
     ],
     "options_en": [
       "1 only",
-      "2 only",
       "Both 1 and 2",
+      "2 only",
       "Neither 1 nor 2"
     ],
     "options_ta": [
       "1 மட்டும்",
-      "2 மட்டும்",
       "1 மற்றும் 2 இரண்டும்",
+      "2 மட்டும்",
       "1-ம் இல்லை 2-ம் இல்லை"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Both statements are correct: Under Article 171(3)(d), one-third of the members of the Legislative Council are elected by the members of the Legislative Assembly 'from amongst persons who are not members of the Assembly'. This ensures outside talent can enter the Council without dual membership of the Assembly.",
       "ta": "இரு கூற்றுகளும் சரியானவை: உறுப்பு 171(3)(d)-ன் படி, சட்ட மேலவையின் மூன்றில் ஒரு பங்கு உறுப்பினர்கள் 'சட்டப்பேரவை உறுப்பினர்களாக இல்லாத நபர்களிலிருந்து' சட்டப்பேரவை உறுப்பினர்களால் தேர்ந்தெடுக்கப்படுகின்றனர். இது சட்டப்பேரவை உறுப்பினராக இல்லாத திறமையாளர்கள் மேலவைக்கு வர வழிவகை செய்கிறது."
@@ -529,12 +529,12 @@
         "ta": "தவறு, ஏனெனில் கூற்று 2 என்பது உறுப்பு 171(3)(d)-ல் உள்ள நேரடி அரசியலமைப்பு கட்டுப்பாடாகும்."
       },
       "B": {
-        "en": "Incorrect because statement 1 is also completely true.",
-        "ta": "தவறு, ஏனெனில் கூற்று 1-ம் முற்றிலும் சரியானது."
-      },
-      "C": {
         "en": "Correct. Both the 1/3rd fraction and the exclusion of sitting MLAs are constitutionally mandated.",
         "ta": "சரி. 1/3 பங்கு விகிதம் மற்றும் சட்டமன்ற உறுப்பினர்களாக இல்லாதிருத்தல் ஆகிய இரண்டும் அரசியலமைப்பு கட்டாயங்களாகும்."
+      },
+      "C": {
+        "en": "Incorrect because statement 1 is also completely true.",
+        "ta": "தவறு, ஏனெனில் கூற்று 1-ம் முற்றிலும் சரியானது."
       },
       "D": {
         "en": "Incorrect because both statements are true.",
@@ -578,8 +578,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 only",
-        "ta": "1 மட்டும்"
+        "en": "Neither 1 nor 2",
+        "ta": "1-ம் இல்லை 2-ம் இல்லை"
       },
       {
         "id": "B",
@@ -593,24 +593,24 @@
       },
       {
         "id": "D",
-        "en": "Neither 1 nor 2",
-        "ta": "1-ம் இல்லை 2-ம் இல்லை"
+        "en": "1 only",
+        "ta": "1 மட்டும்"
       }
     ],
     "options_en": [
-      "1 only",
+      "Neither 1 nor 2",
       "2 only",
       "Both 1 and 2",
-      "Neither 1 nor 2"
+      "1 only"
     ],
     "options_ta": [
-      "1 மட்டும்",
+      "1-ம் இல்லை 2-ம் இல்லை",
       "2 மட்டும்",
       "1 மற்றும் 2 இரண்டும்",
-      "1-ம் இல்லை 2-ம் இல்லை"
+      "1 மட்டும்"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Neither statement is correct: Statement 1 is incorrect because Article 171(5) lists FIVE fields: Literature, Science, Art, Co-operative Movement, and Social Service (not just three). Statement 2 is incorrect because Social Service is common to BOTH Rajya Sabha (Article 80) and Legislative Council (Article 171(5)). It is 'Co-operative Movement' that is unique to the Legislative Council.",
       "ta": "இரு கூற்றுகளும் தவறானவை: கூற்று 1 தவறு, ஏனெனில் உறுப்பு 171(5) ஐந்து துறைகளைக் குறிப்பிடுகிறது: இலக்கியம், அறிவியல், கலை, கூட்டுறவு இயக்கம் மற்றும் சமூக சேவை. கூற்று 2 தவறு, ஏனெனில் சமூக சேவை என்பது மாநிலங்களவை மற்றும் சட்ட மேலவை ஆகிய இரண்டிற்கும் பொதுவானது. 'கூட்டுறவு இயக்கம்' மட்டுமே சட்ட மேலவைக்கு தனித்துவமானது."
@@ -619,8 +619,8 @@
     "explanation_ta": "இரு கூற்றுகளும் தவறானவை: கூற்று 1 தவறு, ஏனெனில் உறுப்பு 171(5) ஐந்து துறைகளைக் குறிப்பிடுகிறது: இலக்கியம், அறிவியல், கலை, கூட்டுறவு இயக்கம் மற்றும் சமூக சேவை. கூற்று 2 தவறு, ஏனெனில் சமூக சேவை என்பது மாநிலங்களவை மற்றும் சட்ட மேலவை ஆகிய இரண்டிற்கும் பொதுவானது. 'கூட்டுறவு இயக்கம்' மட்டுமே சட்ட மேலவைக்கு தனித்துவமானது.",
     "why_not_others": {
       "A": {
-        "en": "Incorrect because statement 1 omits co-operative movement and social service.",
-        "ta": "தவறு, ஏனெனில் கூற்று 1 கூட்டுறவு இயக்கம் மற்றும் சமூக சேவையை விட்டுவிட்டது."
+        "en": "Correct. Both statements are incorrect regarding Article 171(5).",
+        "ta": "சரி. உறுப்பு 171(5) தொடர்பாக இரு கூற்றுகளுமே தவறானவை."
       },
       "B": {
         "en": "Incorrect because statement 2 is false; social service applies to state councils as well.",
@@ -631,8 +631,8 @@
         "ta": "தவறு, ஏனெனில் இரு கூற்றுகளுமே உண்மைப் பிழைகளைக் கொண்டுள்ளன."
       },
       "D": {
-        "en": "Correct. Both statements are incorrect regarding Article 171(5).",
-        "ta": "சரி. உறுப்பு 171(5) தொடர்பாக இரு கூற்றுகளுமே தவறானவை."
+        "en": "Incorrect because statement 1 omits co-operative movement and social service.",
+        "ta": "தவறு, ஏனெனில் கூற்று 1 கூட்டுறவு இயக்கம் மற்றும் சமூக சேவையை விட்டுவிட்டது."
       }
     },
     "tnpsc_tip": {
@@ -672,8 +672,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 only",
-        "ta": "1 மட்டும்"
+        "en": "Neither 1 nor 2",
+        "ta": "1-ம் இல்லை 2-ம் இல்லை"
       },
       {
         "id": "B",
@@ -687,24 +687,24 @@
       },
       {
         "id": "D",
-        "en": "Neither 1 nor 2",
-        "ta": "1-ம் இல்லை 2-ம் இல்லை"
+        "en": "1 only",
+        "ta": "1 மட்டும்"
       }
     ],
     "options_en": [
-      "1 only",
+      "Neither 1 nor 2",
       "2 only",
       "Both 1 and 2",
-      "Neither 1 nor 2"
+      "1 only"
     ],
     "options_ta": [
-      "1 மட்டும்",
+      "1-ம் இல்லை 2-ம் இல்லை",
       "2 மட்டும்",
       "1 மற்றும் 2 இரண்டும்",
-      "1-ம் இல்லை 2-ம் இல்லை"
+      "1 மட்டும்"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Neither statement is correct: Statement 1 is incorrect because only PARLIAMENT by law (not the Assembly itself) can extend the term, and it can only do so for ONE year at a time (not two years). Statement 2 is incorrect because the extension cannot continue beyond SIX MONTHS (not one year) after the Proclamation has ceased to operate, as per the proviso to Article 172(1).",
       "ta": "இரு கூற்றுகளும் தவறானவை: கூற்று 1 தவறு, ஏனெனில் சட்டப்பேரவை தானாக நீட்டிக்க முடியாது, நாடாளுமன்றமே சட்டத்தின் மூலம் ஒரு நேரத்தில் ஒரு ஆண்டு மட்டுமே நீட்டிக்க முடியும். கூற்று 2 தவறு, ஏனெனில் நெருக்கடி நிலை திரும்பப் பெறப்பட்ட பிறகு 6 மாதங்களுக்கு மேல் (ஒரு ஆண்டு அல்ல) இந்த நீட்டிப்பு தொடர முடியாது என்று உறுப்பு 172(1)-ன் நிபந்தனை கூறுகிறது."
@@ -713,8 +713,8 @@
     "explanation_ta": "இரு கூற்றுகளும் தவறானவை: கூற்று 1 தவறு, ஏனெனில் சட்டப்பேரவை தானாக நீட்டிக்க முடியாது, நாடாளுமன்றமே சட்டத்தின் மூலம் ஒரு நேரத்தில் ஒரு ஆண்டு மட்டுமே நீட்டிக்க முடியும். கூற்று 2 தவறு, ஏனெனில் நெருக்கடி நிலை திரும்பப் பெறப்பட்ட பிறகு 6 மாதங்களுக்கு மேல் (ஒரு ஆண்டு அல்ல) இந்த நீட்டிப்பு தொடர முடியாது என்று உறுப்பு 172(1)-ன் நிபந்தனை கூறுகிறது.",
     "why_not_others": {
       "A": {
-        "en": "Incorrect because Parliament extends the term for one year at a time, not the Assembly for two years.",
-        "ta": "தவறு, ஏனெனில் நாடாளுமன்றமே ஒரு நேரத்தில் ஒரு ஆண்டு நீட்டிக்கிறது, பேரவை இரண்டு ஆண்டுகள் அல்ல."
+        "en": "Correct. Both statements 1 and 2 are factually and constitutionally incorrect.",
+        "ta": "சரி. கூற்றுகள் 1 மற்றும் 2 ஆகிய இரண்டும் அரசியலமைப்பு ரீதியாக தவறானவை."
       },
       "B": {
         "en": "Incorrect because post-emergency limit is 6 months, not 1 year.",
@@ -725,8 +725,8 @@
         "ta": "தவறு, ஏனெனில் இரு கூற்றுகளிலுமே குறிப்பிடத்தக்க அரசியலமைப்பு பிழைகள் உள்ளன."
       },
       "D": {
-        "en": "Correct. Both statements 1 and 2 are factually and constitutionally incorrect.",
-        "ta": "சரி. கூற்றுகள் 1 மற்றும் 2 ஆகிய இரண்டும் அரசியலமைப்பு ரீதியாக தவறானவை."
+        "en": "Incorrect because Parliament extends the term for one year at a time, not the Assembly for two years.",
+        "ta": "தவறு, ஏனெனில் நாடாளுமன்றமே ஒரு நேரத்தில் ஒரு ஆண்டு நீட்டிக்கிறது, பேரவை இரண்டு ஆண்டுகள் அல்ல."
       }
     },
     "tnpsc_tip": {
@@ -766,13 +766,13 @@
     "options": [
       {
         "id": "A",
-        "en": "1 only",
-        "ta": "1 மட்டும்"
+        "en": "2 only",
+        "ta": "2 மட்டும்"
       },
       {
         "id": "B",
-        "en": "2 only",
-        "ta": "2 மட்டும்"
+        "en": "1 only",
+        "ta": "1 மட்டும்"
       },
       {
         "id": "C",
@@ -786,19 +786,19 @@
       }
     ],
     "options_en": [
-      "1 only",
       "2 only",
+      "1 only",
       "Both 1 and 2",
       "Neither 1 nor 2"
     ],
     "options_ta": [
-      "1 மட்டும்",
       "2 மட்டும்",
+      "1 மட்டும்",
       "1 மற்றும் 2 இரண்டும்",
       "1-ம் இல்லை 2-ம் இல்லை"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Statement 1 is correct: Article 172(2) explicitly states that the Legislative Council of a State shall not be subject to dissolution. Statement 2 is incorrect: Under Article 172(2), as nearly as possible ONE-THIRD of the members retire every TWO years (not one-half every three years).",
       "ta": "கூற்று 1 சரி: உறுப்பு 172(2) சட்ட மேலவை கலைக்கப்பட முடியாத நிரந்தர அவை என்று வெளிப்படையாகக் கூறுகிறது. கூற்று 2 தவறு: உறுப்பு 172(2)-ன் படி, மூன்றில் ஒரு பங்கு (1/3) உறுப்பினர்கள் இரண்டு ஆண்டுகளுக்கு ஒருமுறை ஓய்வு பெறுகின்றனர் (மூன்று ஆண்டுகளுக்கு ஒருமுறை பாதியளவு அல்ல)."
@@ -807,12 +807,12 @@
     "explanation_ta": "கூற்று 1 சரி: உறுப்பு 172(2) சட்ட மேலவை கலைக்கப்பட முடியாத நிரந்தர அவை என்று வெளிப்படையாகக் கூறுகிறது. கூற்று 2 தவறு: உறுப்பு 172(2)-ன் படி, மூன்றில் ஒரு பங்கு (1/3) உறுப்பினர்கள் இரண்டு ஆண்டுகளுக்கு ஒருமுறை ஓய்வு பெறுகின்றனர் (மூன்று ஆண்டுகளுக்கு ஒருமுறை பாதியளவு அல்ல).",
     "why_not_others": {
       "A": {
-        "en": "Correct. Statement 1 is constitutionally true while statement 2 contains incorrect fractions and years.",
-        "ta": "சரி. கூற்று 1 உண்மையானது, ஆனால் கூற்று 2 தவறான பின்னங்களையும் ஆண்டுகளையும் கொண்டுள்ளது."
-      },
-      "B": {
         "en": "Incorrect because statement 1 is true and statement 2 is false.",
         "ta": "தவறு, ஏனெனில் கூற்று 1 சரியானது மற்றும் கூற்று 2 தவறானது."
+      },
+      "B": {
+        "en": "Correct. Statement 1 is constitutionally true while statement 2 contains incorrect fractions and years.",
+        "ta": "சரி. கூற்று 1 உண்மையானது, ஆனால் கூற்று 2 தவறான பின்னங்களையும் ஆண்டுகளையும் கொண்டுள்ளது."
       },
       "C": {
         "en": "Incorrect because 1/3rd retire every 2 years, not 1/2 every 3 years.",
@@ -865,8 +865,8 @@
       },
       {
         "id": "B",
-        "en": "2 only",
-        "ta": "2 மட்டும்"
+        "en": "Neither 1 nor 2",
+        "ta": "1-ம் இல்லை 2-ம் இல்லை"
       },
       {
         "id": "C",
@@ -875,24 +875,24 @@
       },
       {
         "id": "D",
-        "en": "Neither 1 nor 2",
-        "ta": "1-ம் இல்லை 2-ம் இல்லை"
+        "en": "2 only",
+        "ta": "2 மட்டும்"
       }
     ],
     "options_en": [
       "1 only",
-      "2 only",
+      "Neither 1 nor 2",
       "Both 1 and 2",
-      "Neither 1 nor 2"
+      "2 only"
     ],
     "options_ta": [
       "1 மட்டும்",
-      "2 மட்டும்",
+      "1-ம் இல்லை 2-ம் இல்லை",
       "1 மற்றும் 2 இரண்டும்",
-      "1-ம் இல்லை 2-ம் இல்லை"
+      "2 மட்டும்"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Statement 1 is incorrect: A disqualification under the RPA 1951 operates by law and can only be removed or reduced by the Election Commission of India (under Section 11 of RPA 1951), not by the Governor. Statement 2 is correct: Under Article 188, every member of the Legislative Assembly or Council must make and subscribe an oath or affirmation before the Governor or someone appointed by him according to the Third Schedule.",
       "ta": "கூற்று 1 தவறு: மக்கள் பிரதிநிதித்துவச் சட்டம் 1951-ன் படியான தகுதிநீக்கத்தை நீக்கவோ குறைக்கவோ இந்திய தேர்தல் ஆணையத்திற்கு மட்டுமே அதிகாரம் உண்டு (பிரிவு 11); ஆளுநருக்கு அந்த அதிகாரம் இல்லை. கூற்று 2 சரி: உறுப்பு 188-ன் படி, சட்டமன்ற உறுப்பினர் தனது பதவியை ஏற்கும் முன் ஆளுநர் அல்லது அவரால் நியமிக்கப்பட்ட நபர் முன்னிலையில் மூன்றாவது அட்டவணையின்படி உறுதிமொழி எடுக்க வேண்டும்."
@@ -905,16 +905,16 @@
         "ta": "தவறு, ஏனெனில் கூற்று 1 தவறானது (ஆளுநர் அல்ல, தேர்தல் ஆணையமே தகுதிநீக்கத்தை நீக்க முடியும்)."
       },
       "B": {
-        "en": "Correct. Statement 2 is a constitutional requirement under Article 188 while statement 1 is legally false.",
-        "ta": "சரி. கூற்று 2 உறுப்பு 188-ன் கீழ் உள்ள தேவையாகும், கூற்று 1 சட்டப்படி தவறானது."
+        "en": "Incorrect because statement 2 is completely true.",
+        "ta": "தவறு, ஏனெனில் கூற்று 2 முற்றிலும் சரியானது."
       },
       "C": {
         "en": "Incorrect because Governor has no power to waive statutory disqualifications under RPA 1951.",
         "ta": "தவறு, ஏனெனில் RPA 1951-ன் கீழ் உள்ள தகுதிநீக்கத்தை தள்ளுபடி செய்ய ஆளுநருக்கு அதிகாரம் இல்லை."
       },
       "D": {
-        "en": "Incorrect because statement 2 is completely true.",
-        "ta": "தவறு, ஏனெனில் கூற்று 2 முற்றிலும் சரியானது."
+        "en": "Correct. Statement 2 is a constitutional requirement under Article 188 while statement 1 is legally false.",
+        "ta": "சரி. கூற்று 2 உறுப்பு 188-ன் கீழ் உள்ள தேவையாகும், கூற்று 1 சட்டப்படி தவறானது."
       }
     },
     "tnpsc_tip": {
@@ -954,8 +954,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 only",
-        "ta": "1 மட்டும்"
+        "en": "Both 1 and 2",
+        "ta": "1 மற்றும் 2 இரண்டும்"
       },
       {
         "id": "B",
@@ -964,8 +964,8 @@
       },
       {
         "id": "C",
-        "en": "Both 1 and 2",
-        "ta": "1 மற்றும் 2 இரண்டும்"
+        "en": "1 only",
+        "ta": "1 மட்டும்"
       },
       {
         "id": "D",
@@ -974,19 +974,19 @@
       }
     ],
     "options_en": [
-      "1 only",
-      "2 only",
       "Both 1 and 2",
+      "2 only",
+      "1 only",
       "Neither 1 nor 2"
     ],
     "options_ta": [
-      "1 மட்டும்",
-      "2 மட்டும்",
       "1 மற்றும் 2 இரண்டும்",
+      "2 மட்டும்",
+      "1 மட்டும்",
       "1-ம் இல்லை 2-ம் இல்லை"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Both statements are correct: Prorogation (done by Governor under Art 174(2)(a)) ends a session; pending notices lapse, but pending bills do not lapse. Dissolution (done by Governor under Art 174(2)(b)) brings the life of the existing Assembly to an end, necessitating general elections, and causes pending bills in the Assembly to lapse subject to Article 196.",
       "ta": "இரு கூற்றுகளும் சரியானவை: கூட்டத்தொடர் முடித்துவைப்பு (உறுப்பு 174(2)(a)) அமர்வை முடிக்கிறது; நிலுவையில் உள்ள அறிவிப்புகள் காலாவதியானாலும் மசோதாக்கள் காலாவதியாகாது. கலைப்பு (உறுப்பு 174(2)(b)) பேரவையின் ஆயுளை முடிக்கிறது, தேர்தல் தேவைப்படுகிறது, மற்றும் உறுப்பு 196-க்கு உட்பட்டு மசோதாக்கள் காலாவதியாக காரணமாகிறது."
@@ -995,16 +995,16 @@
     "explanation_ta": "இரு கூற்றுகளும் சரியானவை: கூட்டத்தொடர் முடித்துவைப்பு (உறுப்பு 174(2)(a)) அமர்வை முடிக்கிறது; நிலுவையில் உள்ள அறிவிப்புகள் காலாவதியானாலும் மசோதாக்கள் காலாவதியாகாது. கலைப்பு (உறுப்பு 174(2)(b)) பேரவையின் ஆயுளை முடிக்கிறது, தேர்தல் தேவைப்படுகிறது, மற்றும் உறுப்பு 196-க்கு உட்பட்டு மசோதாக்கள் காலாவதியாக காரணமாகிறது.",
     "why_not_others": {
       "A": {
-        "en": "Incorrect because statement 2 is also completely true.",
-        "ta": "தவறு, ஏனெனில் கூற்று 2-ம் முற்றிலும் சரியானது."
+        "en": "Correct. Both statements accurately contrast prorogation and dissolution.",
+        "ta": "சரி. இரு கூற்றுகளும் கூட்டத்தொடர் முடித்துவைப்பு மற்றும் கலைப்பைத் துல்லியமாக வேறுபடுத்துகின்றன."
       },
       "B": {
         "en": "Incorrect because statement 1 is also completely true.",
         "ta": "தவறு, ஏனெனில் கூற்று 1-ம் முற்றிலும் சரியானது."
       },
       "C": {
-        "en": "Correct. Both statements accurately contrast prorogation and dissolution.",
-        "ta": "சரி. இரு கூற்றுகளும் கூட்டத்தொடர் முடித்துவைப்பு மற்றும் கலைப்பைத் துல்லியமாக வேறுபடுத்துகின்றன."
+        "en": "Incorrect because statement 2 is also completely true.",
+        "ta": "தவறு, ஏனெனில் கூற்று 2-ம் முற்றிலும் சரியானது."
       },
       "D": {
         "en": "Incorrect because both statements are true.",
@@ -1142,8 +1142,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 only",
-        "ta": "1 மட்டும்"
+        "en": "Both 1 and 2",
+        "ta": "1 மற்றும் 2 இரண்டும்"
       },
       {
         "id": "B",
@@ -1152,8 +1152,8 @@
       },
       {
         "id": "C",
-        "en": "Both 1 and 2",
-        "ta": "1 மற்றும் 2 இரண்டும்"
+        "en": "1 only",
+        "ta": "1 மட்டும்"
       },
       {
         "id": "D",
@@ -1162,19 +1162,19 @@
       }
     ],
     "options_en": [
-      "1 only",
-      "2 only",
       "Both 1 and 2",
+      "2 only",
+      "1 only",
       "Neither 1 nor 2"
     ],
     "options_ta": [
-      "1 மட்டும்",
-      "2 மட்டும்",
       "1 மற்றும் 2 இரண்டும்",
+      "2 மட்டும்",
+      "1 மட்டும்",
       "1-ம் இல்லை 2-ம் இல்லை"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Statement 1 is correct: Article 177 gives every Minister and the Advocate-General the right to speak in and take part in proceedings of both Houses and committees where named a member. Statement 2 is incorrect: Article 177 explicitly clarifies that a person shall NOT by virtue of this article be entitled to vote (Advocate-General has no right to vote, and a Minister can vote only in the House of which he is a member).",
       "ta": "கூற்று 1 சரி: உறுப்பு 177 ஒவ்வொரு அமைச்சருக்கும் தலைமை வழக்கறிஞருக்கும் இரு அவைகளிலும் மற்றும் தாங்கள் உறுப்பினராக உள்ள குழுக்களிலும் பேசவும் பங்குபெறவும் உரிமை அளிக்கிறது. கூற்று 2 தவறு: உறுப்பு 177-ன் படி அவர் வாக்களிக்கும் உரிமையைப் பெறமாட்டார் (தலைமை வழக்கறிஞருக்கு வாக்குரிமை கிடையாது; அமைச்சர்கள் தாங்கள் உறுப்பினராக இருக்கும் அவையில் மட்டுமே வாக்களிக்க முடியும்)."
@@ -1183,16 +1183,16 @@
     "explanation_ta": "கூற்று 1 சரி: உறுப்பு 177 ஒவ்வொரு அமைச்சருக்கும் தலைமை வழக்கறிஞருக்கும் இரு அவைகளிலும் மற்றும் தாங்கள் உறுப்பினராக உள்ள குழுக்களிலும் பேசவும் பங்குபெறவும் உரிமை அளிக்கிறது. கூற்று 2 தவறு: உறுப்பு 177-ன் படி அவர் வாக்களிக்கும் உரிமையைப் பெறமாட்டார் (தலைமை வழக்கறிஞருக்கு வாக்குரிமை கிடையாது; அமைச்சர்கள் தாங்கள் உறுப்பினராக இருக்கும் அவையில் மட்டுமே வாக்களிக்க முடியும்).",
     "why_not_others": {
       "A": {
-        "en": "Correct. Statement 1 is true and statement 2 is false as the Advocate-General has NO voting rights.",
-        "ta": "சரி. கூற்று 1 உண்மை, தலைமை வழக்கறிஞருக்கு வாக்களிக்கும் உரிமை இல்லை என்பதால் கூற்று 2 தவறானது."
+        "en": "Incorrect because the Advocate-General can never vote in the legislature.",
+        "ta": "தவறு, ஏனெனில் தலைமை வழக்கறிஞர் சட்டமன்றத்தில் ஒருபோதும் வாக்களிக்க முடியாது."
       },
       "B": {
         "en": "Incorrect because statement 1 is true.",
         "ta": "தவறு, ஏனெனில் கூற்று 1 சரியானது."
       },
       "C": {
-        "en": "Incorrect because the Advocate-General can never vote in the legislature.",
-        "ta": "தவறு, ஏனெனில் தலைமை வழக்கறிஞர் சட்டமன்றத்தில் ஒருபோதும் வாக்களிக்க முடியாது."
+        "en": "Correct. Statement 1 is true and statement 2 is false as the Advocate-General has NO voting rights.",
+        "ta": "சரி. கூற்று 1 உண்மை, தலைமை வழக்கறிஞருக்கு வாக்களிக்கும் உரிமை இல்லை என்பதால் கூற்று 2 தவறானது."
       },
       "D": {
         "en": "Incorrect because statement 1 is an explicit provision of Article 177.",
@@ -1241,13 +1241,13 @@
       },
       {
         "id": "B",
-        "en": "2 only",
-        "ta": "2 மட்டும்"
+        "en": "Both 1 and 2",
+        "ta": "1 மற்றும் 2 இரண்டும்"
       },
       {
         "id": "C",
-        "en": "Both 1 and 2",
-        "ta": "1 மற்றும் 2 இரண்டும்"
+        "en": "2 only",
+        "ta": "2 மட்டும்"
       },
       {
         "id": "D",
@@ -1257,18 +1257,18 @@
     ],
     "options_en": [
       "1 only",
-      "2 only",
       "Both 1 and 2",
+      "2 only",
       "Neither 1 nor 2"
     ],
     "options_ta": [
       "1 மட்டும்",
-      "2 மட்டும்",
       "1 மற்றும் 2 இரண்டும்",
+      "2 மட்டும்",
       "1-ம் இல்லை 2-ம் இல்லை"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Both statements are correct: Under Article 178, the Assembly chooses two members to be Speaker and Deputy Speaker. Under Article 179(b), the Speaker resigns by writing under his hand addressed to the Deputy Speaker (and conversely, the Deputy Speaker resigns to the Speaker).",
       "ta": "இரு கூற்றுகளும் சரியானவை: உறுப்பு 178-ன் படி, பேரவை தனது உறுப்பினர்களிலிருந்து சபாநாயகர் மற்றும் துணை சபாநாயகரைத் தேர்ந்தெடுக்கிறது. உறுப்பு 179(b)-ன் படி, சபாநாயகர் தனது கையொப்பமிட்ட ராஜினாமாக் கடிதத்தை துணை சபாநாயகருக்கு அளிப்பதன் மூலம் பதவி விலகலாம் (அதேபோன்று துணை சபாநாயகர் சபாநாயகரிடம் அளிக்கிறார்)."
@@ -1281,12 +1281,12 @@
         "ta": "தவறு, ஏனெனில் கூற்று 2-ம் உறுப்பு 179(b)-ன் நேரடி அரசியலமைப்பு விதியாகும்."
       },
       "B": {
-        "en": "Incorrect because statement 1 is also an explicit constitutional provision of Article 178.",
-        "ta": "தவறு, ஏனெனில் கூற்று 1-ம் உறுப்பு 178-ன் நேரடி அரசியலமைப்பு விதியாகும்."
-      },
-      "C": {
         "en": "Correct. Both statements accurately describe Speaker's election and resignation procedure.",
         "ta": "சரி. இரு கூற்றுகளும் சபாநாயகரின் தேர்தல் மற்றும் ராஜினாமா நடைமுறையைத் துல்லியமாக விவரிக்கின்றன."
+      },
+      "C": {
+        "en": "Incorrect because statement 1 is also an explicit constitutional provision of Article 178.",
+        "ta": "தவறு, ஏனெனில் கூற்று 1-ம் உறுப்பு 178-ன் நேரடி அரசியலமைப்பு விதியாகும்."
       },
       "D": {
         "en": "Incorrect because both statements are true.",
@@ -1330,8 +1330,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 only",
-        "ta": "1 மட்டும்"
+        "en": "Neither 1 nor 2",
+        "ta": "1-ம் இல்லை 2-ம் இல்லை"
       },
       {
         "id": "B",
@@ -1345,24 +1345,24 @@
       },
       {
         "id": "D",
-        "en": "Neither 1 nor 2",
-        "ta": "1-ம் இல்லை 2-ம் இல்லை"
+        "en": "1 only",
+        "ta": "1 மட்டும்"
       }
     ],
     "options_en": [
-      "1 only",
+      "Neither 1 nor 2",
       "2 only",
       "Both 1 and 2",
-      "Neither 1 nor 2"
+      "1 only"
     ],
     "options_ta": [
-      "1 மட்டும்",
+      "1-ம் இல்லை 2-ம் இல்லை",
       "2 மட்டும்",
       "1 மற்றும் 2 இரண்டும்",
-      "1-ம் இல்லை 2-ம் இல்லை"
+      "1 மட்டும்"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Neither statement is correct: Statement 1 is incorrect because the second proviso to Article 179 explicitly states that whenever the Assembly is dissolved, the Speaker shall NOT vacate his office until immediately before the first meeting of the Assembly after dissolution. Statement 2 is incorrect because the first proviso to Article 179 requires at least FOURTEEN DAYS' notice (not seven days) before moving a removal resolution.",
       "ta": "இரு கூற்றுகளும் தவறானவை: கூற்று 1 தவறு, ஏனெனில் உறுப்பு 179-ன் இரண்டாவது நிபந்தனையின்படி, பேரவை கலைக்கப்படும் போது சபாநாயகர் உடனே பதவியை விடுவதில்லை; கலைப்புக்குப் பிந்தைய புதிய பேரவையின் முதல் கூட்டத்திற்கு சற்று முன்பு வரை அவர் பதவியில் நீடிப்பார். கூற்று 2 தவறு, ஏனெனில் சபாநாயகரை நீக்கும் தீர்மானத்திற்கு 14 நாட்கள் முன்னறிவிப்பு தேவை (7 நாட்கள் அல்ல)."
@@ -1371,8 +1371,8 @@
     "explanation_ta": "இரு கூற்றுகளும் தவறானவை: கூற்று 1 தவறு, ஏனெனில் உறுப்பு 179-ன் இரண்டாவது நிபந்தனையின்படி, பேரவை கலைக்கப்படும் போது சபாநாயகர் உடனே பதவியை விடுவதில்லை; கலைப்புக்குப் பிந்தைய புதிய பேரவையின் முதல் கூட்டத்திற்கு சற்று முன்பு வரை அவர் பதவியில் நீடிப்பார். கூற்று 2 தவறு, ஏனெனில் சபாநாயகரை நீக்கும் தீர்மானத்திற்கு 14 நாட்கள் முன்னறிவிப்பு தேவை (7 நாட்கள் அல்ல).",
     "why_not_others": {
       "A": {
-        "en": "Incorrect because Speaker continues in office until the new Assembly's first meeting.",
-        "ta": "தவறு, ஏனெனில் புதிய பேரவையின் முதல் கூட்டம் வரை சபாநாயகர் பதவியில் தொடர்கிறார்."
+        "en": "Correct. Both statements 1 and 2 are false under Article 179.",
+        "ta": "சரி. உறுப்பு 179-ன் படி கூற்றுகள் 1 மற்றும் 2 ஆகிய இரண்டும் தவறானவை."
       },
       "B": {
         "en": "Incorrect because 14 days' notice is constitutionally mandated, not 7 days.",
@@ -1383,8 +1383,8 @@
         "ta": "தவறு, ஏனெனில் இரு கூற்றுகளுமே பாரம்பரிய அரசியலமைப்பு பொறிகளைக் கொண்டுள்ளன."
       },
       "D": {
-        "en": "Correct. Both statements 1 and 2 are false under Article 179.",
-        "ta": "சரி. உறுப்பு 179-ன் படி கூற்றுகள் 1 மற்றும் 2 ஆகிய இரண்டும் தவறானவை."
+        "en": "Incorrect because Speaker continues in office until the new Assembly's first meeting.",
+        "ta": "தவறு, ஏனெனில் புதிய பேரவையின் முதல் கூட்டம் வரை சபாநாயகர் பதவியில் தொடர்கிறார்."
       }
     },
     "tnpsc_tip": {
@@ -1424,13 +1424,13 @@
     "options": [
       {
         "id": "A",
-        "en": "1 only",
-        "ta": "1 மட்டும்"
+        "en": "2 only",
+        "ta": "2 மட்டும்"
       },
       {
         "id": "B",
-        "en": "2 only",
-        "ta": "2 மட்டும்"
+        "en": "1 only",
+        "ta": "1 மட்டும்"
       },
       {
         "id": "C",
@@ -1444,19 +1444,19 @@
       }
     ],
     "options_en": [
-      "1 only",
       "2 only",
+      "1 only",
       "Both 1 and 2",
       "Neither 1 nor 2"
     ],
     "options_ta": [
-      "1 மட்டும்",
       "2 மட்டும்",
+      "1 மட்டும்",
       "1 மற்றும் 2 இரண்டும்",
       "1-ம் இல்லை 2-ம் இல்லை"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Statement 1 is correct: Under Article 181(1), the Speaker cannot preside while a resolution for his removal is under consideration. Statement 2 is incorrect: Under Article 181(2), the Speaker HAS the right to speak and take part in the proceedings, and is entitled to vote in the first instance on such resolution, though he does not have a casting vote.",
       "ta": "கூற்று 1 சரி: உறுப்பு 181(1)-ன் படி சபாநாயகரை நீக்கும் தீர்மானம் பரிசீலனையில் இருக்கும் போது அவர் தலைமை தாங்க முடியாது. கூற்று 2 தவறு: உறுப்பு 181(2)-ன் படி சபாநாயகருக்கு அவையில் பேசவும், நடவடிக்கைகளில் பங்குபெறவும், முதல் நிலையிலேயே வாக்களிக்கவும் உரிமை உண்டு; ஆனால் சமநிலை ஏற்படும் போது முடிவெடுக்கும் வாக்கு (casting vote) அவருக்குக் கிடையாது."
@@ -1465,12 +1465,12 @@
     "explanation_ta": "கூற்று 1 சரி: உறுப்பு 181(1)-ன் படி சபாநாயகரை நீக்கும் தீர்மானம் பரிசீலனையில் இருக்கும் போது அவர் தலைமை தாங்க முடியாது. கூற்று 2 தவறு: உறுப்பு 181(2)-ன் படி சபாநாயகருக்கு அவையில் பேசவும், நடவடிக்கைகளில் பங்குபெறவும், முதல் நிலையிலேயே வாக்களிக்கவும் உரிமை உண்டு; ஆனால் சமநிலை ஏற்படும் போது முடிவெடுக்கும் வாக்கு (casting vote) அவருக்குக் கிடையாது.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Statement 1 is true and statement 2 is false as the Speaker retains the right to defend himself.",
-        "ta": "சரி. கூற்று 1 உண்மை, மற்றும் சபாநாயகருக்கு தன்னை தற்காத்துக் கொள்ளும் உரிமை உண்டு என்பதால் கூற்று 2 தவறானது."
-      },
-      "B": {
         "en": "Incorrect because statement 1 is an explicit constitutional mandate.",
         "ta": "தவறு, ஏனெனில் கூற்று 1 நேரடியான அரசியலமைப்பு விதியாகும்."
+      },
+      "B": {
+        "en": "Correct. Statement 1 is true and statement 2 is false as the Speaker retains the right to defend himself.",
+        "ta": "சரி. கூற்று 1 உண்மை, மற்றும் சபாநாயகருக்கு தன்னை தற்காத்துக் கொள்ளும் உரிமை உண்டு என்பதால் கூற்று 2 தவறானது."
       },
       "C": {
         "en": "Incorrect because the Speaker has the right to speak and participate.",
@@ -1518,13 +1518,13 @@
     "options": [
       {
         "id": "A",
-        "en": "1 only",
-        "ta": "1 மட்டும்"
+        "en": "2 only",
+        "ta": "2 மட்டும்"
       },
       {
         "id": "B",
-        "en": "2 only",
-        "ta": "2 மட்டும்"
+        "en": "1 only",
+        "ta": "1 மட்டும்"
       },
       {
         "id": "C",
@@ -1538,19 +1538,19 @@
       }
     ],
     "options_en": [
-      "1 only",
       "2 only",
+      "1 only",
       "Both 1 and 2",
       "Neither 1 nor 2"
     ],
     "options_ta": [
-      "1 மட்டும்",
       "2 மட்டும்",
+      "1 மட்டும்",
       "1 மற்றும் 2 இரண்டும்",
       "1-ம் இல்லை 2-ம் இல்லை"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Statement 1 is correct: Under Article 182, the Legislative Council chooses two members of the Council to be Chairman and Deputy Chairman. There is no ex-officio Chairman (unlike Rajya Sabha). Statement 2 is incorrect: Under Article 183(b), the Chairman resigns by addressing his resignation letter to the DEPUTY CHAIRMAN (not the Governor).",
       "ta": "கூற்று 1 சரி: உறுப்பு 182-ன் படி, சட்ட மேலவை தனது உறுப்பினர்களிலிருந்தே தலைவர் மற்றும் துணைத் தலைவரைத் தேர்ந்தெடுக்கிறது (மாநிலங்களவை போல பதவிவழி தலைவர் கிடையாது). கூற்று 2 தவறு: உறுப்பு 183(b)-ன் படி, மேலவைத் தலைவர் தனது ராஜினாமாக் கடிதத்தை துணைத் தலைவரிடம் அளிக்க வேண்டும் (ஆளுநரிடம் அல்ல)."
@@ -1559,12 +1559,12 @@
     "explanation_ta": "கூற்று 1 சரி: உறுப்பு 182-ன் படி, சட்ட மேலவை தனது உறுப்பினர்களிலிருந்தே தலைவர் மற்றும் துணைத் தலைவரைத் தேர்ந்தெடுக்கிறது (மாநிலங்களவை போல பதவிவழி தலைவர் கிடையாது). கூற்று 2 தவறு: உறுப்பு 183(b)-ன் படி, மேலவைத் தலைவர் தனது ராஜினாமாக் கடிதத்தை துணைத் தலைவரிடம் அளிக்க வேண்டும் (ஆளுநரிடம் அல்ல).",
     "why_not_others": {
       "A": {
-        "en": "Correct. Statement 1 is constitutionally accurate, while statement 2 is false because resignation is to the Deputy Chairman.",
-        "ta": "சரி. கூற்று 1 சரியானது, ஆனால் ராஜினாமா துணைத் தலைவரிடம் அளிக்கப்படுவதால் கூற்று 2 தவறானது."
-      },
-      "B": {
         "en": "Incorrect because statement 1 is true.",
         "ta": "தவறு, ஏனெனில் கூற்று 1 சரியானது."
+      },
+      "B": {
+        "en": "Correct. Statement 1 is constitutionally accurate, while statement 2 is false because resignation is to the Deputy Chairman.",
+        "ta": "சரி. கூற்று 1 சரியானது, ஆனால் ராஜினாமா துணைத் தலைவரிடம் அளிக்கப்படுவதால் கூற்று 2 தவறானது."
       },
       "C": {
         "en": "Incorrect because Chairman resigns to Deputy Chairman, not Governor.",
@@ -1622,29 +1622,29 @@
       },
       {
         "id": "C",
-        "en": "Both 1 and 2",
-        "ta": "1 மற்றும் 2 இரண்டும்"
+        "en": "Neither 1 nor 2",
+        "ta": "1-ம் இல்லை 2-ம் இல்லை"
       },
       {
         "id": "D",
-        "en": "Neither 1 nor 2",
-        "ta": "1-ம் இல்லை 2-ம் இல்லை"
+        "en": "Both 1 and 2",
+        "ta": "1 மற்றும் 2 இரண்டும்"
       }
     ],
     "options_en": [
       "1 only",
       "2 only",
-      "Both 1 and 2",
-      "Neither 1 nor 2"
+      "Neither 1 nor 2",
+      "Both 1 and 2"
     ],
     "options_ta": [
       "1 மட்டும்",
       "2 மட்டும்",
-      "1 மற்றும் 2 இரண்டும்",
-      "1-ம் இல்லை 2-ம் இல்லை"
+      "1-ம் இல்லை 2-ம் இல்லை",
+      "1 மற்றும் 2 இரண்டும்"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Both statements are correct: Under Article 202(3)(b), the salaries and allowances of the Speaker, Deputy Speaker, Chairman, and Deputy Chairman are charged upon the Consolidated Fund of the State (non-votable). Under Article 187(2), the State Legislature may by law regulate the recruitment and conditions of service of the secretarial staff of the House or Houses.",
       "ta": "இரு கூற்றுகளும் சரியானவை: உறுப்பு 202(3)(b)-ன் படி, சபாநாயகர், துணை சபாநாயகர், மேலவைத் தலைவர் மற்றும் துணைத் தலைவரின் ஊதியங்கள் மற்றும் படிகள் மாநில தொகுப்பு நிதியிலிருந்து சார்ஜ் செய்யப்படுகின்றன (வாக்கெடுப்புக்கு உட்பட்டவை அல்ல). உறுப்பு 187(2)-ன் படி சட்டமன்ற அவைகளின் செயலக ஊழியர்களின் நியமனம் மற்றும் பணி நிபந்தனைகளை மாநில சட்டமன்றம் சட்டம் இயற்றி முறைப்படுத்தலாம்."
@@ -1661,12 +1661,12 @@
         "ta": "தவறு, ஏனெனில் கூற்று 1-ம் உறுப்பு 202(3)(b)-ன் படி முற்றிலும் சரியானது."
       },
       "C": {
-        "en": "Correct. Both statements accurately reflect the constitutional provisions securing legislative autonomy.",
-        "ta": "சரி. சட்டமன்ற சுயாட்சியை உறுதி செய்யும் அரசியலமைப்பு விதிகளை இரு கூற்றுகளும் துல்லியமாக பிரதிபலிக்கின்றன."
-      },
-      "D": {
         "en": "Incorrect because both statements are true.",
         "ta": "தவறு, ஏனெனில் இரு கூற்றுகளும் சரியானவை."
+      },
+      "D": {
+        "en": "Correct. Both statements accurately reflect the constitutional provisions securing legislative autonomy.",
+        "ta": "சரி. சட்டமன்ற சுயாட்சியை உறுதி செய்யும் அரசியலமைப்பு விதிகளை இரு கூற்றுகளும் துல்லியமாக பிரதிபலிக்கின்றன."
       }
     },
     "tnpsc_tip": {
@@ -1712,8 +1712,8 @@
       },
       {
         "id": "B",
-        "en": "2 only",
-        "ta": "2 மட்டும்"
+        "en": "Neither 1 nor 2",
+        "ta": "1-ம் இல்லை 2-ம் இல்லை"
       },
       {
         "id": "C",
@@ -1722,24 +1722,24 @@
       },
       {
         "id": "D",
-        "en": "Neither 1 nor 2",
-        "ta": "1-ம் இல்லை 2-ம் இல்லை"
+        "en": "2 only",
+        "ta": "2 மட்டும்"
       }
     ],
     "options_en": [
       "1 only",
-      "2 only",
+      "Neither 1 nor 2",
       "Both 1 and 2",
-      "Neither 1 nor 2"
+      "2 only"
     ],
     "options_ta": [
       "1 மட்டும்",
-      "2 மட்டும்",
+      "1-ம் இல்லை 2-ம் இல்லை",
       "1 மற்றும் 2 இரண்டும்",
-      "1-ம் இல்லை 2-ம் இல்லை"
+      "2 மட்டும்"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Neither statement is correct: Statement 1 is incorrect because Article 189(1) specifies that the Speaker or Chairman shall NOT vote in the first instance, but shall exercise a casting vote in the case of an equality of votes. Statement 2 is incorrect because Article 189(3) defines quorum as TEN members or ONE-TENTH of the total number of members of the House, whichever is greater (not a flat 20 members).",
       "ta": "இரு கூற்றுகளும் தவறானவை: கூற்று 1 தவறு, ஏனெனில் உறுப்பு 189(1)-ன் படி சபாநாயகர் அல்லது தலைவர் முதல் நிலையில் வாக்களிக்க மாட்டார்; வாக்குகள் சமமாக இருக்கும் போது மட்டுமே முடிவாக்கு (casting vote) செலுத்துவார். கூற்று 2 தவறு, ஏனெனில் உறுப்பு 189(3)-ன் படி கோரம் என்பது பத்து உறுப்பினர்கள் அல்லது அவையின் மொத்த உறுப்பினர்களில் பத்தில் ஒரு பங்கு (1/10), இவற்றில் எது அதிகமோ அதுவாகும் (வெறும் 20 உறுப்பினர்கள் அல்ல)."
@@ -1752,16 +1752,16 @@
         "ta": "தவறு, ஏனெனில் சபாநாயகருக்கு சமநிலை வாக்கு மட்டுமே உண்டு, முதல் நிலை வாக்கு அல்ல."
       },
       "B": {
-        "en": "Incorrect because quorum is 10 members or 1/10th of total strength, whichever is greater.",
-        "ta": "தவறு, ஏனெனில் கோரம் என்பது 10 அல்லது மொத்த பலத்தில் 1/10 பங்கு, எது அதிகமோ அதுவாகும்."
+        "en": "Correct. Both statements 1 and 2 are incorrect under Article 189.",
+        "ta": "சரி. உறுப்பு 189-ன் கீழ் கூற்றுகள் 1 மற்றும் 2 ஆகிய இரண்டும் தவறானவை."
       },
       "C": {
         "en": "Incorrect because both statements contain fundamental errors.",
         "ta": "தவறு, ஏனெனில் இரு கூற்றுகளிலுமே அடிப்படைக் குறைபாடுகள் உள்ளன."
       },
       "D": {
-        "en": "Correct. Both statements 1 and 2 are incorrect under Article 189.",
-        "ta": "சரி. உறுப்பு 189-ன் கீழ் கூற்றுகள் 1 மற்றும் 2 ஆகிய இரண்டும் தவறானவை."
+        "en": "Incorrect because quorum is 10 members or 1/10th of total strength, whichever is greater.",
+        "ta": "தவறு, ஏனெனில் கோரம் என்பது 10 அல்லது மொத்த பலத்தில் 1/10 பங்கு, எது அதிகமோ அதுவாகும்."
       }
     },
     "tnpsc_tip": {
@@ -1801,13 +1801,13 @@
     "options": [
       {
         "id": "A",
-        "en": "1 only",
-        "ta": "1 மட்டும்"
+        "en": "2 only",
+        "ta": "2 மட்டும்"
       },
       {
         "id": "B",
-        "en": "2 only",
-        "ta": "2 மட்டும்"
+        "en": "1 only",
+        "ta": "1 மட்டும்"
       },
       {
         "id": "C",
@@ -1821,19 +1821,19 @@
       }
     ],
     "options_en": [
-      "1 only",
       "2 only",
+      "1 only",
       "Both 1 and 2",
       "Neither 1 nor 2"
     ],
     "options_ta": [
-      "1 மட்டும்",
       "2 மட்டும்",
+      "1 மட்டும்",
       "1 மற்றும் 2 இரண்டும்",
       "1-ம் இல்லை 2-ம் இல்லை"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Statement 1 is correct: Article 190(1) categorically states that no person shall be a member of both Houses of the Legislature of a State. Statement 2 is incorrect: Under Article 190(2) read with the Prohibition of Simultaneous Membership Rules, 1950, if a person is chosen a member of the Legislatures of two or more States, at the expiration of 10 days, that person's seat in the Legislatures of all such States shall become vacant, unless he has previously resigned his seat in the Legislatures of all but one of the States.",
       "ta": "கூற்று 1 சரி: உறுப்பு 190(1) எந்தவொரு நபரும் ஒரே நேரத்தில் ஒரு மாநிலத்தின் இரு அவைகளிலும் உறுப்பினராக இருக்க முடியாது எனத் திட்டவட்டமாகக் கூறுகிறது. கூற்று 2 தவறு: உறுப்பு 190(2) மற்றும் ஒரே நேரத்தில் உறுப்பினர் வகித்தலைத் தடை செய்யும் விதிகளின்படி, ஒருவர் ஒன்றுக்கு மேற்பட்ட மாநில சட்டமன்றங்களுக்குத் தேர்ந்தெடுக்கப்பட்டால், 10 நாட்களுக்குள் ஏதேனும் ஒரு மாநிலத்தைத் தவிர மற்றவற்றை ராஜினாமா செய்யாவிடில், அனைத்து மாநிலங்களிலும் அவரது பதவி காலியாகிவிடும் (2 ஆண்டுகள் அல்ல)."
@@ -1842,12 +1842,12 @@
     "explanation_ta": "கூற்று 1 சரி: உறுப்பு 190(1) எந்தவொரு நபரும் ஒரே நேரத்தில் ஒரு மாநிலத்தின் இரு அவைகளிலும் உறுப்பினராக இருக்க முடியாது எனத் திட்டவட்டமாகக் கூறுகிறது. கூற்று 2 தவறு: உறுப்பு 190(2) மற்றும் ஒரே நேரத்தில் உறுப்பினர் வகித்தலைத் தடை செய்யும் விதிகளின்படி, ஒருவர் ஒன்றுக்கு மேற்பட்ட மாநில சட்டமன்றங்களுக்குத் தேர்ந்தெடுக்கப்பட்டால், 10 நாட்களுக்குள் ஏதேனும் ஒரு மாநிலத்தைத் தவிர மற்றவற்றை ராஜினாமா செய்யாவிடில், அனைத்து மாநிலங்களிலும் அவரது பதவி காலியாகிவிடும் (2 ஆண்டுகள் அல்ல).",
     "why_not_others": {
       "A": {
-        "en": "Correct. Statement 1 is true while statement 2 is false as the time limit is only 10 days, not 2 years.",
-        "ta": "சரி. கூற்று 1 உண்மை, கால வரம்பு 10 நாட்கள் மட்டுமே (2 ஆண்டுகள் அல்ல) என்பதால் கூற்று 2 தவறானது."
-      },
-      "B": {
         "en": "Incorrect because statement 1 is factually and constitutionally true.",
         "ta": "தவறு, ஏனெனில் கூற்று 1 உண்மையானது."
+      },
+      "B": {
+        "en": "Correct. Statement 1 is true while statement 2 is false as the time limit is only 10 days, not 2 years.",
+        "ta": "சரி. கூற்று 1 உண்மை, கால வரம்பு 10 நாட்கள் மட்டுமே (2 ஆண்டுகள் அல்ல) என்பதால் கூற்று 2 தவறானது."
       },
       "C": {
         "en": "Incorrect because holding seats in two states for two years is completely prohibited.",
@@ -1900,13 +1900,13 @@
       },
       {
         "id": "B",
-        "en": "2 only",
-        "ta": "2 மட்டும்"
+        "en": "Both 1 and 2",
+        "ta": "1 மற்றும் 2 இரண்டும்"
       },
       {
         "id": "C",
-        "en": "Both 1 and 2",
-        "ta": "1 மற்றும் 2 இரண்டும்"
+        "en": "2 only",
+        "ta": "2 மட்டும்"
       },
       {
         "id": "D",
@@ -1916,18 +1916,18 @@
     ],
     "options_en": [
       "1 only",
-      "2 only",
       "Both 1 and 2",
+      "2 only",
       "Neither 1 nor 2"
     ],
     "options_ta": [
       "1 மட்டும்",
-      "2 மட்டும்",
       "1 மற்றும் 2 இரண்டும்",
+      "2 மட்டும்",
       "1-ம் இல்லை 2-ம் இல்லை"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Statement 1 is incorrect: Following the 33rd Constitutional Amendment Act, 1974, the Speaker/Chairman is NOT bound to accept resignations automatically. Statement 2 is correct: Under the proviso to Article 190(3)(b), if from information received or otherwise and after making such inquiry as he thinks fit, the Speaker or Chairman is satisfied that the resignation is not voluntary or genuine, he shall not accept such resignation.",
       "ta": "கூற்று 1 தவறு: 33-வது அரசியலமைப்பு திருத்தச் சட்டம், 1974-க்குப் பிறகு, சபாநாயகர் அல்லது தலைவர் ராஜினாமாவை தானாகவே ஏற்க வேண்டிய கட்டாயம் இல்லை. கூற்று 2 சரி: உறுப்பு 190(3)(b)-ன் நிபந்தனையின்படி, பெறப்பட்ட தகவல் அல்லது விசாரணைக்குப் பின் அந்த ராஜினாமா தானாக முன்வந்து அளிக்கப்பட்டது அல்ல அல்லது உண்மையானது அல்ல என்று சபாநாயகர் திருப்தியடைந்தால், அவர் அதை ஏற்கக்கூடாது."
@@ -1940,12 +1940,12 @@
         "ta": "தவறு, ஏனெனில் கூற்று 1 என்பது 33-வது திருத்தச் சட்டம் 1974-ன் மூலம் மாற்றப்பட்டுவிட்டது."
       },
       "B": {
-        "en": "Correct. Statement 2 accurately reflects the proviso to Article 190(3)(b).",
-        "ta": "சரி. கூற்று 2 உறுப்பு 190(3)(b)-ன் நிபந்தனையைத் துல்லியமாக பிரதிபலிக்கிறது."
-      },
-      "C": {
         "en": "Incorrect because the presiding officer can inquire and reject coerced resignations.",
         "ta": "தவறு, ஏனெனில் அச்சுறுத்தலால் பெறப்பட்ட ராஜினாமாவை விசாரித்து நிராகரிக்கும் அதிகாரம் அவைத் தலைவருக்கு உண்டு."
+      },
+      "C": {
+        "en": "Correct. Statement 2 accurately reflects the proviso to Article 190(3)(b).",
+        "ta": "சரி. கூற்று 2 உறுப்பு 190(3)(b)-ன் நிபந்தனையைத் துல்லியமாக பிரதிபலிக்கிறது."
       },
       "D": {
         "en": "Incorrect because statement 2 is an active constitutional provision.",
@@ -1999,29 +1999,29 @@
       },
       {
         "id": "C",
-        "en": "Both 1 and 2",
-        "ta": "1 மற்றும் 2 இரண்டும்"
+        "en": "Neither 1 nor 2",
+        "ta": "1-ம் இல்லை 2-ம் இல்லை"
       },
       {
         "id": "D",
-        "en": "Neither 1 nor 2",
-        "ta": "1-ம் இல்லை 2-ம் இல்லை"
+        "en": "Both 1 and 2",
+        "ta": "1 மற்றும் 2 இரண்டும்"
       }
     ],
     "options_en": [
       "1 only",
       "2 only",
-      "Both 1 and 2",
-      "Neither 1 nor 2"
+      "Neither 1 nor 2",
+      "Both 1 and 2"
     ],
     "options_ta": [
       "1 மட்டும்",
       "2 மட்டும்",
-      "1 மற்றும் 2 இரண்டும்",
-      "1-ம் இல்லை 2-ம் இல்லை"
+      "1-ம் இல்லை 2-ம் இல்லை",
+      "1 மற்றும் 2 இரண்டும்"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Both statements are correct: Under Article 190(4), if for a period of 60 days a member is without permission of the House absent from all meetings, the House may declare his seat vacant. The proviso to Article 190(4) explicitly provides that in computing the 60 days, no account shall be taken of any period during which the House is prorogued or adjourned for more than four consecutive days.",
       "ta": "இரு கூற்றுகளும் சரியானவை: உறுப்பு 190(4)-ன் படி அவையின் அனுமதியின்றி 60 நாட்கள் தொடர்ந்து கூட்டங்களுக்கு வராமல் இருக்கும் உறுப்பினரின் பதவியை காலியானதாக அவை அறிவிக்கலாம். மேலும் இந்த 60 நாட்களைக் கணக்கிடும் போது கூட்டத்தொடர் முடித்துவைக்கப்பட்ட காலம் அல்லது தொடர்ந்து 4 நாட்களுக்கு மேல் அவை ஒத்திவைக்கப்பட்ட காலம் கணக்கில் கொள்ளப்படாது."
@@ -2038,12 +2038,12 @@
         "ta": "தவறு, ஏனெனில் கூற்று 1-ம் முற்றிலும் சரியானது."
       },
       "C": {
-        "en": "Correct. Both 60 days rule and the 4 consecutive days exception are accurate.",
-        "ta": "சரி. 60 நாட்கள் விதி மற்றும் 4 தொடர் நாட்கள் விதிவிலக்கு ஆகிய இரண்டுமே சரியானவை."
-      },
-      "D": {
         "en": "Incorrect because both statements are true.",
         "ta": "தவறு, ஏனெனில் இரு கூற்றுகளும் சரியானவை."
+      },
+      "D": {
+        "en": "Correct. Both 60 days rule and the 4 consecutive days exception are accurate.",
+        "ta": "சரி. 60 நாட்கள் விதி மற்றும் 4 தொடர் நாட்கள் விதிவிலக்கு ஆகிய இரண்டுமே சரியானவை."
       }
     },
     "tnpsc_tip": {
@@ -2271,8 +2271,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 only",
-        "ta": "1 மட்டும்"
+        "en": "Both 1 and 2",
+        "ta": "1 மற்றும் 2 இரண்டும்"
       },
       {
         "id": "B",
@@ -2281,8 +2281,8 @@
       },
       {
         "id": "C",
-        "en": "Both 1 and 2",
-        "ta": "1 மற்றும் 2 இரண்டும்"
+        "en": "1 only",
+        "ta": "1 மட்டும்"
       },
       {
         "id": "D",
@@ -2291,19 +2291,19 @@
       }
     ],
     "options_en": [
-      "1 only",
-      "2 only",
       "Both 1 and 2",
+      "2 only",
+      "1 only",
       "Neither 1 nor 2"
     ],
     "options_ta": [
-      "1 மட்டும்",
-      "2 மட்டும்",
       "1 மற்றும் 2 இரண்டும்",
+      "2 மட்டும்",
+      "1 மட்டும்",
       "1-ம் இல்லை 2-ம் இல்லை"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Statement 1 is correct: Under Paragraph 2(2) of the Tenth Schedule, an independently elected member incurs disqualification if he joins ANY political party after election. Statement 2 is incorrect: Under Paragraph 2(3) of the Tenth Schedule, a nominated member is disqualified only if he joins a political party AFTER the expiry of six months (he CAN join any political party WITHIN six months without disqualification).",
       "ta": "கூற்று 1 சரி: பத்தாவது அட்டவணை பத்தி 2(2)-ன் படி, சுயேச்சையாகத் தேர்ந்தெடுக்கப்பட்ட உறுப்பினர் தேர்தலுக்குப் பின் எந்தவொரு அரசியல் கட்சியில் சேர்ந்தாலும் தகுதிநீக்கம் செய்யப்படுவார். கூற்று 2 தவறு: பத்தி 2(3)-ன் படி, நியமன உறுப்பினர் பதவியேற்ற 6 மாதங்களுக்குப் பிறகு (after six months) கட்சியில் சேர்ந்தால் மட்டுமே தகுதிநீக்கம் செய்யப்படுவார்; 6 மாதங்களுக்குள் சேர்ந்தால் தகுதிநீக்கம் செய்யப்பட மாட்டார்."
@@ -2312,16 +2312,16 @@
     "explanation_ta": "கூற்று 1 சரி: பத்தாவது அட்டவணை பத்தி 2(2)-ன் படி, சுயேச்சையாகத் தேர்ந்தெடுக்கப்பட்ட உறுப்பினர் தேர்தலுக்குப் பின் எந்தவொரு அரசியல் கட்சியில் சேர்ந்தாலும் தகுதிநீக்கம் செய்யப்படுவார். கூற்று 2 தவறு: பத்தி 2(3)-ன் படி, நியமன உறுப்பினர் பதவியேற்ற 6 மாதங்களுக்குப் பிறகு (after six months) கட்சியில் சேர்ந்தால் மட்டுமே தகுதிநீக்கம் செய்யப்படுவார்; 6 மாதங்களுக்குள் சேர்ந்தால் தகுதிநீக்கம் செய்யப்பட மாட்டார்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Statement 1 is true and statement 2 is false because nominated members have 6 months grace period.",
-        "ta": "சரி. கூற்று 1 உண்மை, மற்றும் நியமன உறுப்பினர்களுக்கு 6 மாத அவகாசம் உள்ளதால் கூற்று 2 தவறானது."
+        "en": "Incorrect because nominated member can join within 6 months without being disqualified.",
+        "ta": "தவறு, ஏனெனில் நியமன உறுப்பினர் 6 மாதங்களுக்குள் தகுதிநீக்கமின்றி கட்சியில் சேரலாம்."
       },
       "B": {
         "en": "Incorrect because statement 1 is an explicit rule under the Tenth Schedule.",
         "ta": "தவறு, ஏனெனில் கூற்று 1 என்பது பத்தாவது அட்டவணையின் நேரடி விதியாகும்."
       },
       "C": {
-        "en": "Incorrect because nominated member can join within 6 months without being disqualified.",
-        "ta": "தவறு, ஏனெனில் நியமன உறுப்பினர் 6 மாதங்களுக்குள் தகுதிநீக்கமின்றி கட்சியில் சேரலாம்."
+        "en": "Correct. Statement 1 is true and statement 2 is false because nominated members have 6 months grace period.",
+        "ta": "சரி. கூற்று 1 உண்மை, மற்றும் நியமன உறுப்பினர்களுக்கு 6 மாத அவகாசம் உள்ளதால் கூற்று 2 தவறானது."
       },
       "D": {
         "en": "Incorrect because statement 1 is factually accurate.",
@@ -2459,8 +2459,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 only",
-        "ta": "1 மட்டும்"
+        "en": "Neither 1 nor 2",
+        "ta": "1-ம் இல்லை 2-ம் இல்லை"
       },
       {
         "id": "B",
@@ -2474,24 +2474,24 @@
       },
       {
         "id": "D",
-        "en": "Neither 1 nor 2",
-        "ta": "1-ம் இல்லை 2-ம் இல்லை"
+        "en": "1 only",
+        "ta": "1 மட்டும்"
       }
     ],
     "options_en": [
-      "1 only",
+      "Neither 1 nor 2",
       "2 only",
       "Both 1 and 2",
-      "Neither 1 nor 2"
+      "1 only"
     ],
     "options_ta": [
-      "1 மட்டும்",
+      "1-ம் இல்லை 2-ம் இல்லை",
       "2 மட்டும்",
       "1 மற்றும் 2 இரண்டும்",
-      "1-ம் இல்லை 2-ம் இல்லை"
+      "1 மட்டும்"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Neither statement is correct: Statement 1 is incorrect because members enjoy complete freedom from arrest in CIVIL cases during the session of the legislature and 40 days before and 40 days after the session. Statement 2 is incorrect because under Article 194(2), no member of the Legislature of a State shall be liable to any proceedings in any court in respect of anything said or any vote given by him in the Legislature or any committee thereof.",
       "ta": "இரு கூற்றுகளும் தவறானவை: கூற்று 1 தவறு, ஏனெனில் கூட்டத்தொடர் நடக்கும் போதும், கூட்டத்தொடருக்கு 40 நாட்களுக்கு முன்பும் பின்பும் சிவில் வழக்குகளில் கைது செய்யப்படாமல் இருக்கும் பாதுகாப்பு உறுப்பினர்களுக்கு உண்டு. கூற்று 2 தவறு, ஏனெனில் உறுப்பு 194(2)-ன் படி அவைக்குள் பேசிய எதற்காகவும் அல்லது அளித்த வாக்கிற்காகவும் எந்த நீதிமன்றத்திலும் அவர் மீது நடவடிக்கை எடுக்க முடியாது (முழுமையான சட்டப் பாதுகாப்பு உண்டு)."
@@ -2500,8 +2500,8 @@
     "explanation_ta": "இரு கூற்றுகளும் தவறானவை: கூற்று 1 தவறு, ஏனெனில் கூட்டத்தொடர் நடக்கும் போதும், கூட்டத்தொடருக்கு 40 நாட்களுக்கு முன்பும் பின்பும் சிவில் வழக்குகளில் கைது செய்யப்படாமல் இருக்கும் பாதுகாப்பு உறுப்பினர்களுக்கு உண்டு. கூற்று 2 தவறு, ஏனெனில் உறுப்பு 194(2)-ன் படி அவைக்குள் பேசிய எதற்காகவும் அல்லது அளித்த வாக்கிற்காகவும் எந்த நீதிமன்றத்திலும் அவர் மீது நடவடிக்கை எடுக்க முடியாது (முழுமையான சட்டப் பாதுகாப்பு உண்டு).",
     "why_not_others": {
       "A": {
-        "en": "Incorrect because members cannot be arrested in civil cases during the session (and 40 days before/after).",
-        "ta": "தவறு, ஏனெனில் அமர்வின் போது (மற்றும் 40 நாட்கள் முன்/பின்) சிவில் வழக்குகளில் கைது செய்ய முடியாது."
+        "en": "Correct. Both statements 1 and 2 are false under Article 194.",
+        "ta": "சரி. உறுப்பு 194-ன் கீழ் கூற்றுகள் 1 மற்றும் 2 ஆகிய இரண்டும் தவறானவை."
       },
       "B": {
         "en": "Incorrect because Article 194(2) provides complete immunity in courts for speeches made inside the House.",
@@ -2512,8 +2512,8 @@
         "ta": "தவறு, ஏனெனில் இரு கூற்றுகளுமே சட்டமன்ற சிறப்புரிமைகளின் விதிகளுக்கு முரணானவை."
       },
       "D": {
-        "en": "Correct. Both statements 1 and 2 are false under Article 194.",
-        "ta": "சரி. உறுப்பு 194-ன் கீழ் கூற்றுகள் 1 மற்றும் 2 ஆகிய இரண்டும் தவறானவை."
+        "en": "Incorrect because members cannot be arrested in civil cases during the session (and 40 days before/after).",
+        "ta": "தவறு, ஏனெனில் அமர்வின் போது (மற்றும் 40 நாட்கள் முன்/பின்) சிவில் வழக்குகளில் கைது செய்ய முடியாது."
       }
     },
     "tnpsc_tip": {
@@ -2934,8 +2934,8 @@
       },
       {
         "id": "B",
-        "en": "2 only",
-        "ta": "2 மட்டும்"
+        "en": "Neither 1 nor 2",
+        "ta": "1-ம் இல்லை 2-ம் இல்லை"
       },
       {
         "id": "C",
@@ -2944,24 +2944,24 @@
       },
       {
         "id": "D",
-        "en": "Neither 1 nor 2",
-        "ta": "1-ம் இல்லை 2-ம் இல்லை"
+        "en": "2 only",
+        "ta": "2 மட்டும்"
       }
     ],
     "options_en": [
       "1 only",
-      "2 only",
+      "Neither 1 nor 2",
       "Both 1 and 2",
-      "Neither 1 nor 2"
+      "2 only"
     ],
     "options_ta": [
       "1 மட்டும்",
-      "2 மட்டும்",
+      "1-ம் இல்லை 2-ம் இல்லை",
       "1 மற்றும் 2 இரண்டும்",
-      "1-ம் இல்லை 2-ம் இல்லை"
+      "2 மட்டும்"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Statement 1 is incorrect: Under Article 198(2), the Legislative Council must return the Money Bill within FOURTEEN DAYS (not thirty days). If not returned within 14 days, it is deemed passed by both Houses. Statement 2 is correct: Under Article 198(2) and (3), the Legislative Assembly may either accept or reject all or any of the recommendations of the Legislative Council.",
       "ta": "கூற்று 1 தவறு: உறுப்பு 198(2)-ன் படி, சட்ட மேலவை பண மசோதாவை 14 நாட்களுக்குள் (30 நாட்கள் அல்ல) திருப்பி அனுப்ப வேண்டும். 14 நாட்களுக்குள் திருப்பி அனுப்பாவிடில் இரு அவைகளிலும் நிறைவேறியதாகக் கருதப்படும். கூற்று 2 சரி: உறுப்பு 198(2) மற்றும் (3)-ன் படி மேலவையின் பரிந்துரைகளை ஏற்பதும் நிராகரிப்பதும் முற்றிலும் பேரவையின் விருப்பமாகும்."
@@ -2974,16 +2974,16 @@
         "ta": "தவறு, ஏனெனில் கால வரம்பு 14 நாட்கள் ஆகும், 30 நாட்கள் அல்ல."
       },
       "B": {
-        "en": "Correct. Statement 2 is true while statement 1 contains an incorrect number of days.",
-        "ta": "சரி. கூற்று 2 சரியானது மற்றும் கூற்று 1 தவறான நாட்களைக் கொண்டுள்ளது."
+        "en": "Incorrect because statement 2 is an explicit constitutional rule.",
+        "ta": "தவறு, ஏனெனில் கூற்று 2 ஒரு நேரடி அரசியலமைப்பு விதியாகும்."
       },
       "C": {
         "en": "Incorrect because Council has only 14 days to return Money Bills.",
         "ta": "தவறு, ஏனெனில் பண மசோதாவைத் திருப்பி அனுப்ப மேலவைக்கு 14 நாட்கள் மட்டுமே உள்ளன."
       },
       "D": {
-        "en": "Incorrect because statement 2 is an explicit constitutional rule.",
-        "ta": "தவறு, ஏனெனில் கூற்று 2 ஒரு நேரடி அரசியலமைப்பு விதியாகும்."
+        "en": "Correct. Statement 2 is true while statement 1 contains an incorrect number of days.",
+        "ta": "சரி. கூற்று 2 சரியானது மற்றும் கூற்று 1 தவறான நாட்களைக் கொண்டுள்ளது."
       }
     },
     "tnpsc_tip": {
@@ -3028,13 +3028,13 @@
       },
       {
         "id": "B",
-        "en": "2 only",
-        "ta": "2 மட்டும்"
+        "en": "Both 1 and 2",
+        "ta": "1 மற்றும் 2 இரண்டும்"
       },
       {
         "id": "C",
-        "en": "Both 1 and 2",
-        "ta": "1 மற்றும் 2 இரண்டும்"
+        "en": "2 only",
+        "ta": "2 மட்டும்"
       },
       {
         "id": "D",
@@ -3044,18 +3044,18 @@
     ],
     "options_en": [
       "1 only",
-      "2 only",
       "Both 1 and 2",
+      "2 only",
       "Neither 1 nor 2"
     ],
     "options_ta": [
       "1 மட்டும்",
-      "2 மட்டும்",
       "1 மற்றும் 2 இரண்டும்",
+      "2 மட்டும்",
       "1-ம் இல்லை 2-ம் இல்லை"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Statement 1 is incorrect: Article 199(2) explicitly provides that a bill shall NOT be deemed to be a Money Bill by reason only that it provides for the imposition of fines or pecuniary penalties, or local taxes by local authorities for local purposes. Statement 2 is correct: Under Article 199(3) and (4), the decision of the Speaker on whether a bill is a Money Bill is final, and his certificate is endorsed when transmitting it to the Council and Governor.",
       "ta": "கூற்று 1 தவறு: உறுப்பு 199(2) உள்ளூர் நோக்கங்களுக்காக உள்ளாட்சி அமைப்புகள் விதிக்கும் வரிகள், அபராதங்கள் அல்லது கட்டணங்கள் பண மசோதாவாகக் கருதப்படாது என வெளிப்படையாகக் கூறுகிறது. கூற்று 2 சரி: உறுப்பு 199(3) மற்றும் (4)-ன் படி மசோதா பண மசோதாவா என்பதைத் தீர்மானிப்பதில் சபாநாயகரின் முடிவே இறுதியானது மற்றும் அவரது சான்றிதழ் மசோதாவில் இணைக்கப்பட வேண்டும்."
@@ -3068,12 +3068,12 @@
         "ta": "தவறு, ஏனெனில் உள்ளூர் வரிகள்/அபராதங்கள் பண மசோதா வரையறையிலிருந்து வெளிப்படையாக விலக்கப்பட்டுள்ளன."
       },
       "B": {
-        "en": "Correct. Statement 2 is factually and constitutionally accurate under Article 199.",
-        "ta": "சரி. உறுப்பு 199-ன் கீழ் கூற்று 2 உண்மையானது மற்றும் அரசியலமைப்பு ரீதியாக சரியானது."
-      },
-      "C": {
         "en": "Incorrect because statement 1 violates Article 199(2).",
         "ta": "தவறு, ஏனெனில் கூற்று 1 உறுப்பு 199(2)-க்கு முரணானது."
+      },
+      "C": {
+        "en": "Correct. Statement 2 is factually and constitutionally accurate under Article 199.",
+        "ta": "சரி. உறுப்பு 199-ன் கீழ் கூற்று 2 உண்மையானது மற்றும் அரசியலமைப்பு ரீதியாக சரியானது."
       },
       "D": {
         "en": "Incorrect because statement 2 is an explicit constitutional provision.",
@@ -3404,13 +3404,13 @@
       },
       {
         "id": "B",
-        "en": "2 only",
-        "ta": "2 மட்டும்"
+        "en": "Both 1 and 2",
+        "ta": "1 மற்றும் 2 இரண்டும்"
       },
       {
         "id": "C",
-        "en": "Both 1 and 2",
-        "ta": "1 மற்றும் 2 இரண்டும்"
+        "en": "2 only",
+        "ta": "2 மட்டும்"
       },
       {
         "id": "D",
@@ -3420,18 +3420,18 @@
     ],
     "options_en": [
       "1 only",
-      "2 only",
       "Both 1 and 2",
+      "2 only",
       "Neither 1 nor 2"
     ],
     "options_ta": [
       "1 மட்டும்",
-      "2 மட்டும்",
       "1 மற்றும் 2 இரண்டும்",
+      "2 மட்டும்",
       "1-ம் இல்லை 2-ம் இல்லை"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Statement 1 is incorrect: The Governor IS constitutionally compelled to reserve a specific category of bills under the second proviso to Article 200. Statement 2 is correct: Under the second proviso to Article 200, the Governor SHALL NOT assent to, but SHALL RESERVE for the consideration of the President, any Bill which in his opinion would, if it became law, so derogate from the powers of the High Court as to endanger the position which that Court is by this Constitution designed to fill.",
       "ta": "கூற்று 1 தவறு: உறுப்பு 200-ன் இரண்டாவது நிபந்தனையின் கீழ் ஒரு குறிப்பிட்ட வகை மசோதாவை கட்டாயமாக குடியரசுத் தலைவருக்கு ஒதுக்கும் கடமை ஆளுநருக்கு உண்டு. கூற்று 2 சரி: உயர் நீதிமன்றத்தின் அரசியலமைப்பு அதிகாரங்களைக் குறைக்கும் வகையிலான எந்தவொரு மசோதாவிற்கும் ஆளுநர் ஒப்புதல் அளிக்கக்கூடாது, கட்டாயமாக குடியரசுத் தலைவரின் பரிசீலனைக்கு ஒதுக்க வேண்டும் என்று உறுப்பு 200 தெளிவாக கூறுகிறது."
@@ -3444,12 +3444,12 @@
         "ta": "தவறு, ஏனெனில் இரண்டாவது நிபந்தனையின் கீழான கட்டாய ஒதுக்கீட்டை கூற்று 1 புறக்கணிக்கிறது."
       },
       "B": {
-        "en": "Correct. Statement 2 is an explicit constitutional obligation on the Governor.",
-        "ta": "சரி. கூற்று 2 ஆளுநரின் மீதான நேரடி அரசியலமைப்பு கடமையாகும்."
-      },
-      "C": {
         "en": "Incorrect because statement 1 falsely claims there is never mandatory reservation.",
         "ta": "தவறு, ஏனெனில் கட்டாய ஒதுக்கீடே இல்லை என்ற கூற்று 1 தவறானது."
+      },
+      "C": {
+        "en": "Correct. Statement 2 is an explicit constitutional obligation on the Governor.",
+        "ta": "சரி. கூற்று 2 ஆளுநரின் மீதான நேரடி அரசியலமைப்பு கடமையாகும்."
       },
       "D": {
         "en": "Incorrect because statement 2 is completely true.",
@@ -3503,29 +3503,29 @@
       },
       {
         "id": "C",
-        "en": "Both 1 and 2",
-        "ta": "1 மற்றும் 2 இரண்டும்"
+        "en": "Neither 1 nor 2",
+        "ta": "1-ம் இல்லை 2-ம் இல்லை"
       },
       {
         "id": "D",
-        "en": "Neither 1 nor 2",
-        "ta": "1-ம் இல்லை 2-ம் இல்லை"
+        "en": "Both 1 and 2",
+        "ta": "1 மற்றும் 2 இரண்டும்"
       }
     ],
     "options_en": [
       "1 only",
       "2 only",
-      "Both 1 and 2",
-      "Neither 1 nor 2"
+      "Neither 1 nor 2",
+      "Both 1 and 2"
     ],
     "options_ta": [
       "1 மட்டும்",
       "2 மட்டும்",
-      "1 மற்றும் 2 இரண்டும்",
-      "1-ம் இல்லை 2-ம் இல்லை"
+      "1-ம் இல்லை 2-ம் இல்லை",
+      "1 மற்றும் 2 இரண்டும்"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Both statements are correct: Under Article 201 proviso, the State Legislature must reconsider the returned bill within six months. Unlike the Governor under Article 200, the President under Article 201 is NOT bound to give assent even if the bill is passed again by the State Legislature with or without amendment (the President still retains absolute veto).",
       "ta": "இரு கூற்றுகளும் சரியானவை: உறுப்பு 201-ன் படி திருப்பி அனுப்பப்பட்ட மசோதாவை மாநில சட்டமன்றம் 6 மாதங்களுக்குள் மறுபரிசீலனை செய்ய வேண்டும். உறுப்பு 200-ன் கீழான ஆளுநரைப் போலல்லாமல், மாநில சட்டமன்றம் ஒரு மசோதாவை மீண்டும் நிறைவேற்றினாலும் குடியரசுத் தலைவர் அதற்கு ஒப்புதல் அளிக்க வேண்டிய கட்டாயம் இல்லை (குடியரசுத் தலைவருக்கு முழு வீட்டோ அதிகாரம் உண்டு)."
@@ -3542,12 +3542,12 @@
         "ta": "தவறு, ஏனெனில் கூற்று 1-ம் உறுப்பு 201-ல் வெளிப்படையாகக் குறிப்பிடப்பட்டுள்ளது."
       },
       "C": {
-        "en": "Correct. Both statements accurately formulate the President's overarching veto power over state legislation.",
-        "ta": "சரி. மாநில சட்டமன்றங்கள் மீது குடியரசுத் தலைவரின் மேலான வீட்டோ அதிகாரத்தை இரு கூற்றுகளும் துல்லியமாக விவரிக்கின்றன."
-      },
-      "D": {
         "en": "Incorrect because both statements are constitutionally sound.",
         "ta": "தவறு, ஏனெனில் இரு கூற்றுகளுமே அரசியலமைப்பு ரீதியாக சரியானவை."
+      },
+      "D": {
+        "en": "Correct. Both statements accurately formulate the President's overarching veto power over state legislation.",
+        "ta": "சரி. மாநில சட்டமன்றங்கள் மீது குடியரசுத் தலைவரின் மேலான வீட்டோ அதிகாரத்தை இரு கூற்றுகளும் துல்லியமாக விவரிக்கின்றன."
       }
     },
     "tnpsc_tip": {
@@ -3587,8 +3587,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 only",
-        "ta": "1 மட்டும்"
+        "en": "Neither 1 nor 2",
+        "ta": "1-ம் இல்லை 2-ம் இல்லை"
       },
       {
         "id": "B",
@@ -3602,24 +3602,24 @@
       },
       {
         "id": "D",
-        "en": "Neither 1 nor 2",
-        "ta": "1-ம் இல்லை 2-ம் இல்லை"
+        "en": "1 only",
+        "ta": "1 மட்டும்"
       }
     ],
     "options_en": [
-      "1 only",
+      "Neither 1 nor 2",
       "2 only",
       "Both 1 and 2",
-      "Neither 1 nor 2"
+      "1 only"
     ],
     "options_ta": [
-      "1 மட்டும்",
+      "1-ம் இல்லை 2-ம் இல்லை",
       "2 மட்டும்",
       "1 மற்றும் 2 இரண்டும்",
-      "1-ம் இல்லை 2-ம் இல்லை"
+      "1 மட்டும்"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Neither statement is correct: Statement 1 is incorrect because under Article 202(1), the GOVERNOR (not the Speaker) causes to be laid before the House or Houses the Annual Financial Statement. Statement 2 is incorrect because under Article 203(1), expenditure charged upon the Consolidated Fund shall NOT be submitted to the vote of the Legislative Assembly (though it can be discussed).",
       "ta": "இரு கூற்றுகளும் தவறானவை: கூற்று 1 தவறு, ஏனெனில் உறுப்பு 202(1)-ன் படி ஆளுநரே (சபாநாயகர் அல்ல) பட்ஜெட்டை அவையின் முன் வைக்கச் செய்கிறார். கூற்று 2 தவறு, ஏனெனில் உறுப்பு 203(1)-ன் படி தொகுப்பு நிதியில் சார்ஜ் செய்யப்பட்ட செலவினங்கள் வாக்கெடுப்பிற்கு விடப்பட மாட்டாது (விவாதிக்க மட்டுமே முடியும்)."
@@ -3628,8 +3628,8 @@
     "explanation_ta": "இரு கூற்றுகளும் தவறானவை: கூற்று 1 தவறு, ஏனெனில் உறுப்பு 202(1)-ன் படி ஆளுநரே (சபாநாயகர் அல்ல) பட்ஜெட்டை அவையின் முன் வைக்கச் செய்கிறார். கூற்று 2 தவறு, ஏனெனில் உறுப்பு 203(1)-ன் படி தொகுப்பு நிதியில் சார்ஜ் செய்யப்பட்ட செலவினங்கள் வாக்கெடுப்பிற்கு விடப்பட மாட்டாது (விவாதிக்க மட்டுமே முடியும்).",
     "why_not_others": {
       "A": {
-        "en": "Incorrect because the Governor causes the budget to be laid, not the Speaker.",
-        "ta": "தவறு, ஏனெனில் பட்ஜெட்டை சமர்ப்பிக்கச் செய்பவர் ஆளுநரே தவிர சபாநாயகர் அல்ல."
+        "en": "Correct. Both statements 1 and 2 are false under Articles 202 and 203.",
+        "ta": "சரி. உறுப்புகள் 202 மற்றும் 203-ன் கீழ் கூற்றுகள் 1 மற்றும் 2 ஆகிய இரண்டும் தவறானவை."
       },
       "B": {
         "en": "Incorrect because charged expenditure is completely non-votable under Article 203(1).",
@@ -3640,8 +3640,8 @@
         "ta": "தவறு, ஏனெனில் இரு கூற்றுகளுமே நிதி நடைமுறை பிழைகளைக் கொண்டுள்ளன."
       },
       "D": {
-        "en": "Correct. Both statements 1 and 2 are false under Articles 202 and 203.",
-        "ta": "சரி. உறுப்புகள் 202 மற்றும் 203-ன் கீழ் கூற்றுகள் 1 மற்றும் 2 ஆகிய இரண்டும் தவறானவை."
+        "en": "Incorrect because the Governor causes the budget to be laid, not the Speaker.",
+        "ta": "தவறு, ஏனெனில் பட்ஜெட்டை சமர்ப்பிக்கச் செய்பவர் ஆளுநரே தவிர சபாநாயகர் அல்ல."
       }
     },
     "tnpsc_tip": {
@@ -3686,8 +3686,8 @@
       },
       {
         "id": "B",
-        "en": "2 only",
-        "ta": "2 மட்டும்"
+        "en": "Neither 1 nor 2",
+        "ta": "1-ம் இல்லை 2-ம் இல்லை"
       },
       {
         "id": "C",
@@ -3696,24 +3696,24 @@
       },
       {
         "id": "D",
-        "en": "Neither 1 nor 2",
-        "ta": "1-ம் இல்லை 2-ம் இல்லை"
+        "en": "2 only",
+        "ta": "2 மட்டும்"
       }
     ],
     "options_en": [
       "1 only",
-      "2 only",
+      "Neither 1 nor 2",
       "Both 1 and 2",
-      "Neither 1 nor 2"
+      "2 only"
     ],
     "options_ta": [
       "1 மட்டும்",
-      "2 மட்டும்",
+      "1-ம் இல்லை 2-ம் இல்லை",
       "1 மற்றும் 2 இரண்டும்",
-      "1-ம் இல்லை 2-ம் இல்லை"
+      "2 மட்டும்"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Statement 1 is incorrect: Under Article 203(2), Demands for Grants are submitted to the vote of the LEGISLATIVE ASSEMBLY ALONE; the Legislative Council has no power to vote on demands for grants (it can only discuss the budget). Statement 2 is correct: Under Article 203(3), no demand for a grant shall be made except on the recommendation of the Governor.",
       "ta": "கூற்று 1 தவறு: உறுப்பு 203(2)-ன் படி மானியக் கோரிக்கைகள் சட்டப்பேரவையின் வாக்கெடுப்பிற்கு மட்டுமே விடப்படும்; சட்ட மேலவைக்கு மானியக் கோரிக்கைகள் மீது வாக்களிக்கும் அதிகாரம் கிடையாது (விவாதிக்க மட்டுமே முடியும்). கூற்று 2 சரி: உறுப்பு 203(3)-ன் படி ஆளுநரின் பரிந்துரையின்றி எந்தவொரு மானியக் கோரிக்கையும் கோரப்பட முடியாது."
@@ -3726,16 +3726,16 @@
         "ta": "தவறு, ஏனெனில் சட்ட மேலவை மானியக் கோரிக்கைகள் மீது வாக்களிக்க முடியாது."
       },
       "B": {
-        "en": "Correct. Statement 2 is an explicit constitutional rule under Article 203(3).",
-        "ta": "சரி. உறுப்பு 203(3)-ன் கீழ் கூற்று 2 நேரடியான அரசியலமைப்பு விதியாகும்."
+        "en": "Incorrect because statement 2 is completely true.",
+        "ta": "தவறு, ஏனெனில் கூற்று 2 முற்றிலும் சரியானது."
       },
       "C": {
         "en": "Incorrect because voting on grants is the exclusive privilege of the Assembly.",
         "ta": "தவறு, ஏனெனில் மானியங்கள் மீது வாக்களிப்பது பேரவையின் பிரத்யேக உரிமையாகும்."
       },
       "D": {
-        "en": "Incorrect because statement 2 is completely true.",
-        "ta": "தவறு, ஏனெனில் கூற்று 2 முற்றிலும் சரியானது."
+        "en": "Correct. Statement 2 is an explicit constitutional rule under Article 203(3).",
+        "ta": "சரி. உறுப்பு 203(3)-ன் கீழ் கூற்று 2 நேரடியான அரசியலமைப்பு விதியாகும்."
       }
     },
     "tnpsc_tip": {
@@ -3780,8 +3780,8 @@
       },
       {
         "id": "B",
-        "en": "2 only",
-        "ta": "2 மட்டும்"
+        "en": "Neither 1 nor 2",
+        "ta": "1-ம் இல்லை 2-ம் இல்லை"
       },
       {
         "id": "C",
@@ -3790,24 +3790,24 @@
       },
       {
         "id": "D",
-        "en": "Neither 1 nor 2",
-        "ta": "1-ம் இல்லை 2-ம் இல்லை"
+        "en": "2 only",
+        "ta": "2 மட்டும்"
       }
     ],
     "options_en": [
       "1 only",
-      "2 only",
+      "Neither 1 nor 2",
       "Both 1 and 2",
-      "Neither 1 nor 2"
+      "2 only"
     ],
     "options_ta": [
       "1 மட்டும்",
-      "2 மட்டும்",
+      "1-ம் இல்லை 2-ம் இல்லை",
       "1 மற்றும் 2 இரண்டும்",
-      "1-ம் இல்லை 2-ம் இல்லை"
+      "2 மட்டும்"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Statement 1 is incorrect: A 'Policy Cut Motion' seeks to reduce the amount of the demand to ₹1 (disapproving the underlying policy), whereas reducing the demand by ₹100 is a 'Token Cut Motion'. Statement 2 is correct: Passage of a cut motion on financial grants reflects loss of majority control on money matters in the Assembly, amounting to a vote of no-confidence.",
       "ta": "கூற்று 1 தவறு: 'கொள்கை வெட்டுத் தீர்மானம்' என்பது தொகையை ₹1 ஆக குறைக்கக் கோருகிறது (அரசாங்கக் கொள்கையை நிராகரிப்பது); ₹100 குறைக்கக் கோருவது 'அடையாள வெட்டுத் தீர்மானம்' (Token Cut) ஆகும். கூற்று 2 சரி: வெட்டுத் தீர்மானம் பேரவையில் நிறைவேறினால், அரசு நிதி விவகாரங்களில் பெரும்பான்மையை இழந்துவிட்டது என்று பொருள்; எனவே அமைச்சரவை பதவி விலக வேண்டும்."
@@ -3820,16 +3820,16 @@
         "ta": "தவறு, ஏனெனில் ₹1 ஆகக் குறைப்பது கொள்கை வெட்டு; ₹100 குறைப்பது அடையாள வெட்டு."
       },
       "B": {
-        "en": "Correct. Statement 2 correctly explains the constitutional significance of cut motions.",
-        "ta": "சரி. வெட்டுத் தீர்மானத்தின் அரசியலமைப்பு முக்கியத்துவத்தை கூற்று 2 சரியாக விளக்குகிறது."
+        "en": "Incorrect because statement 2 is completely true.",
+        "ta": "தவறு, ஏனெனில் கூற்று 2 முற்றிலும் சரியானது."
       },
       "C": {
         "en": "Incorrect because statement 1 confuses Policy Cut with Token Cut.",
         "ta": "தவறு, ஏனெனில் கூற்று 1 கொள்கை வெட்டை அடையாள வெட்டுடன் குழப்புகிறது."
       },
       "D": {
-        "en": "Incorrect because statement 2 is completely true.",
-        "ta": "தவறு, ஏனெனில் கூற்று 2 முற்றிலும் சரியானது."
+        "en": "Correct. Statement 2 correctly explains the constitutional significance of cut motions.",
+        "ta": "சரி. வெட்டுத் தீர்மானத்தின் அரசியலமைப்பு முக்கியத்துவத்தை கூற்று 2 சரியாக விளக்குகிறது."
       }
     },
     "tnpsc_tip": {
@@ -4057,13 +4057,13 @@
     "options": [
       {
         "id": "A",
-        "en": "1 only",
-        "ta": "1 மட்டும்"
+        "en": "2 only",
+        "ta": "2 மட்டும்"
       },
       {
         "id": "B",
-        "en": "2 only",
-        "ta": "2 மட்டும்"
+        "en": "1 only",
+        "ta": "1 மட்டும்"
       },
       {
         "id": "C",
@@ -4077,19 +4077,19 @@
       }
     ],
     "options_en": [
-      "1 only",
       "2 only",
+      "1 only",
       "Both 1 and 2",
       "Neither 1 nor 2"
     ],
     "options_ta": [
-      "1 மட்டும்",
       "2 மட்டும்",
+      "1 மட்டும்",
       "1 மற்றும் 2 இரண்டும்",
       "1-ம் இல்லை 2-ம் இல்லை"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Statement 1 is correct: Under Article 206(1)(a), a Vote on Account is an advance grant in respect of the estimated expenditure for a part of any financial year pending the passing of the Appropriation Act. Statement 2 is incorrect: An unexpected demand that cannot be stated with details is a 'Vote of Credit' (Article 206(1)(b)), likened to a blank cheque. An 'Exceptional Grant' (Article 206(1)(c)) is granted for a special purpose that forms no part of the current service of any financial year.",
       "ta": "கூற்று 1 சரி: உறுப்பு 206(1)(a)-ன் படி ஒதுக்கீட்டுச் சட்டம் நிறைவேறும் வரை நிதியாண்டின் ஒரு குறிப்பிட்ட காலத்திற்கு செலவு செய்ய சட்டப்பேரவை அளிக்கும் முன்பண ஒப்புதலே 'இடைக்கால கணக்கு வாக்கெடுப்பு' ஆகும். கூற்று 2 தவறு: விவரங்களைக் குறிப்பிட முடியாத எதிர்பாராத செலவை ஈடுசெய்வது 'நம்பிக்கை வாக்கு மானியம்' (Vote of Credit) ஆகும் (வெற்று காசோலை போன்றது); 'விதிவிலக்கான மானியம்' என்பது வழக்கமான சேவைகளில் சேராத பிரத்யேக நோக்கங்களுக்காக வழங்கப்படுவதாகும்."
@@ -4098,12 +4098,12 @@
     "explanation_ta": "கூற்று 1 சரி: உறுப்பு 206(1)(a)-ன் படி ஒதுக்கீட்டுச் சட்டம் நிறைவேறும் வரை நிதியாண்டின் ஒரு குறிப்பிட்ட காலத்திற்கு செலவு செய்ய சட்டப்பேரவை அளிக்கும் முன்பண ஒப்புதலே 'இடைக்கால கணக்கு வாக்கெடுப்பு' ஆகும். கூற்று 2 தவறு: விவரங்களைக் குறிப்பிட முடியாத எதிர்பாராத செலவை ஈடுசெய்வது 'நம்பிக்கை வாக்கு மானியம்' (Vote of Credit) ஆகும் (வெற்று காசோலை போன்றது); 'விதிவிலக்கான மானியம்' என்பது வழக்கமான சேவைகளில் சேராத பிரத்யேக நோக்கங்களுக்காக வழங்கப்படுவதாகும்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Statement 1 is true, but statement 2 describes a Vote of Credit, not an Exceptional Grant.",
-        "ta": "சரி. கூற்று 1 உண்மை, ஆனால் கூற்று 2 விதிவிலக்கான மானியத்தை அல்ல, நம்பிக்கை வாக்கு மானியத்தை விவரிக்கிறது."
-      },
-      "B": {
         "en": "Incorrect because statement 1 is factually and constitutionally accurate.",
         "ta": "தவறு, ஏனெனில் கூற்று 1 உண்மையிலேயே சரியானது."
+      },
+      "B": {
+        "en": "Correct. Statement 1 is true, but statement 2 describes a Vote of Credit, not an Exceptional Grant.",
+        "ta": "சரி. கூற்று 1 உண்மை, ஆனால் கூற்று 2 விதிவிலக்கான மானியத்தை அல்ல, நம்பிக்கை வாக்கு மானியத்தை விவரிக்கிறது."
       },
       "C": {
         "en": "Incorrect because statement 2 confuses Vote of Credit with Exceptional Grant.",
@@ -4151,13 +4151,13 @@
     "options": [
       {
         "id": "A",
-        "en": "1 only",
-        "ta": "1 மட்டும்"
+        "en": "2 only",
+        "ta": "2 மட்டும்"
       },
       {
         "id": "B",
-        "en": "2 only",
-        "ta": "2 மட்டும்"
+        "en": "1 only",
+        "ta": "1 மட்டும்"
       },
       {
         "id": "C",
@@ -4171,19 +4171,19 @@
       }
     ],
     "options_en": [
-      "1 only",
       "2 only",
+      "1 only",
       "Both 1 and 2",
       "Neither 1 nor 2"
     ],
     "options_ta": [
-      "1 மட்டும்",
       "2 மட்டும்",
+      "1 மட்டும்",
       "1 மற்றும் 2 இரண்டும்",
       "1-ம் இல்லை 2-ம் இல்லை"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Statement 1 is incorrect: A Minister CANNOT be elected as a member of the Public Accounts Committee; if a member is appointed as a Minister, he ceases to be a member of the committee. Statement 2 is correct: The primary function of the PAC is to examine the Appropriation Accounts, Finance Accounts, and the audit reports submitted by the CAG under Article 151(2).",
       "ta": "கூற்று 1 தவறு: ஓர் அமைச்சர் பொதுக் கணக்குக் குழுவின் உறுப்பினராகத் தேர்ந்தெடுக்கப்பட முடியாது; உறுப்பினர் அமைச்சரானால் உடனடியாக குழு உறுப்பினர் பதவியை இழப்பார். கூற்று 2 சரி: மாநில ஒதுக்கீட்டுக் கணக்குகள், நிதிக் கணக்குகள் மற்றும் உறுப்பு 151(2)-ன் கீழ் CAG சமர்ப்பிக்கும் தணிக்கை அறிக்கைகளை ஆய்வு செய்வதே இக்குழுவின் முக்கியப் பணியாகும்."
@@ -4192,12 +4192,12 @@
     "explanation_ta": "கூற்று 1 தவறு: ஓர் அமைச்சர் பொதுக் கணக்குக் குழுவின் உறுப்பினராகத் தேர்ந்தெடுக்கப்பட முடியாது; உறுப்பினர் அமைச்சரானால் உடனடியாக குழு உறுப்பினர் பதவியை இழப்பார். கூற்று 2 சரி: மாநில ஒதுக்கீட்டுக் கணக்குகள், நிதிக் கணக்குகள் மற்றும் உறுப்பு 151(2)-ன் கீழ் CAG சமர்ப்பிக்கும் தணிக்கை அறிக்கைகளை ஆய்வு செய்வதே இக்குழுவின் முக்கியப் பணியாகும்.",
     "why_not_others": {
       "A": {
-        "en": "Incorrect because Ministers are strictly prohibited from serving on the PAC.",
-        "ta": "தவறு, ஏனெனில் அமைச்சர்கள் PAC-ல் உறுப்பினராக இருக்க கடுமையான தடை உள்ளது."
-      },
-      "B": {
         "en": "Correct. Statement 2 is true while statement 1 is false.",
         "ta": "சரி. கூற்று 2 சரியானது மற்றும் கூற்று 1 தவறானது."
+      },
+      "B": {
+        "en": "Incorrect because Ministers are strictly prohibited from serving on the PAC.",
+        "ta": "தவறு, ஏனெனில் அமைச்சர்கள் PAC-ல் உறுப்பினராக இருக்க கடுமையான தடை உள்ளது."
       },
       "C": {
         "en": "Incorrect because statement 1 is completely contrary to parliamentary convention and rules.",
@@ -4255,29 +4255,29 @@
       },
       {
         "id": "C",
-        "en": "Both 1 and 2",
-        "ta": "1 மற்றும் 2 இரண்டும்"
+        "en": "Neither 1 nor 2",
+        "ta": "1-ம் இல்லை 2-ம் இல்லை"
       },
       {
         "id": "D",
-        "en": "Neither 1 nor 2",
-        "ta": "1-ம் இல்லை 2-ம் இல்லை"
+        "en": "Both 1 and 2",
+        "ta": "1 மற்றும் 2 இரண்டும்"
       }
     ],
     "options_en": [
       "1 only",
       "2 only",
-      "Both 1 and 2",
-      "Neither 1 nor 2"
+      "Neither 1 nor 2",
+      "Both 1 and 2"
     ],
     "options_ta": [
       "1 மட்டும்",
       "2 மட்டும்",
-      "1 மற்றும் 2 இரண்டும்",
-      "1-ம் இல்லை 2-ம் இல்லை"
+      "1-ம் இல்லை 2-ம் இல்லை",
+      "1 மற்றும் 2 இரண்டும்"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Both statements are correct: Just like in Parliament (where all 30 members are from Lok Sabha), in bicameral state legislatures, the Estimates Committee consists entirely of members elected from the Legislative Assembly. Its primary duty is to examine estimates, suggest economies, and propose alternative policies to bring efficiency in administration (often called 'continuous economy committee').",
       "ta": "இரு கூற்றுகளும் சரியானவை: நாடாளுமன்றத்தைப் போலவே (30 பேரும் மக்களவை உறுப்பினர்கள்), மாநில சட்டமன்றத்திலும் மதிப்பீட்டுக் குழுவின் உறுப்பினர்கள் சட்டப்பேரவையிலிருந்து மட்டுமே தேர்ந்தெடுக்கப்படுகின்றனர். நிர்வாகத்தில் சிக்கனத்தையும் செயல்திறனையும் ஏற்படுத்த மாற்று வழிகளை பரிந்துரைப்பதே இதன் பிரதான பணியாகும் ('தொடர் சிக்கனக் குழு' என அழைக்கப்படுகிறது)."
@@ -4294,12 +4294,12 @@
         "ta": "தவறு, ஏனெனில் கூற்று 1-ம் நன்கு நிலைநிறுத்தப்பட்ட விதியாகும்."
       },
       "C": {
-        "en": "Correct. Both statements accurately describe the composition and role of the Estimates Committee.",
-        "ta": "சரி. மதிப்பீட்டுக் குழுவின் கட்டமைப்பு மற்றும் பணியை இரு கூற்றுகளும் துல்லியமாக விவரிக்கின்றன."
-      },
-      "D": {
         "en": "Incorrect because both statements are true.",
         "ta": "தவறு, ஏனெனில் இரு கூற்றுகளும் சரியானவை."
+      },
+      "D": {
+        "en": "Correct. Both statements accurately describe the composition and role of the Estimates Committee.",
+        "ta": "சரி. மதிப்பீட்டுக் குழுவின் கட்டமைப்பு மற்றும் பணியை இரு கூற்றுகளும் துல்லியமாக விவரிக்கின்றன."
       }
     },
     "tnpsc_tip": {
@@ -4349,29 +4349,29 @@
       },
       {
         "id": "C",
-        "en": "Both 1 and 2",
-        "ta": "1 மற்றும் 2 இரண்டும்"
+        "en": "Neither 1 nor 2",
+        "ta": "1-ம் இல்லை 2-ம் இல்லை"
       },
       {
         "id": "D",
-        "en": "Neither 1 nor 2",
-        "ta": "1-ம் இல்லை 2-ம் இல்லை"
+        "en": "Both 1 and 2",
+        "ta": "1 மற்றும் 2 இரண்டும்"
       }
     ],
     "options_en": [
       "1 only",
       "2 only",
-      "Both 1 and 2",
-      "Neither 1 nor 2"
+      "Neither 1 nor 2",
+      "Both 1 and 2"
     ],
     "options_ta": [
       "1 மட்டும்",
       "2 மட்டும்",
-      "1 மற்றும் 2 இரண்டும்",
-      "1-ம் இல்லை 2-ம் இல்லை"
+      "1-ம் இல்லை 2-ம் இல்லை",
+      "1 மற்றும் 2 இரண்டும்"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Neither statement is correct: Statement 1 is incorrect because Article 210(1) explicitly provides that business in the Legislature of a State shall be transacted in the OFFICIAL LANGUAGE OR LANGUAGES OF THE STATE or in Hindi or in English. Statement 2 is incorrect because under the proviso to Article 210(1), the Speaker or Chairman may permit any member who cannot adequately express himself in any of the languages aforesaid to address the House in his MOTHER TONGUE.",
       "ta": "இரு கூற்றுகளும் தவறானவை: கூற்று 1 தவறு, ஏனெனில் உறுப்பு 210(1)-ன் படி மாநில சட்டமன்ற நடவடிக்கைகள் மாநிலத்தின் அதிகாரப்பூர்வ மொழி அல்லது மொழிகள், அல்லது இந்தி அல்லது ஆங்கிலத்தில் நடத்தப்படலாம். கூற்று 2 தவறு, ஏனெனில் மேற்கண்ட மொழிகளில் பேச இயலாத ஒரு உறுப்பினரை அவரது தாய்மொழியில் பேசுவதற்கு அனுமதிக்கும் அதிகாரம் சபாநாயகர் அல்லது தலைவருக்கு உறுப்பு 210(1)-ன் நிபந்தனையின் கீழ் உண்டு."
@@ -4388,12 +4388,12 @@
         "ta": "தவறு, ஏனெனில் உறுப்பினர் தாய்மொழியில் பேச அனுமதிக்கும் அதிகாரம் அவைத் தலைவருக்கு உண்டு."
       },
       "C": {
-        "en": "Incorrect because both statements violate Article 210.",
-        "ta": "தவறு, ஏனெனில் இரு கூற்றுகளுமே உறுப்பு 210-க்கு எதிரானவை."
-      },
-      "D": {
         "en": "Correct. Both statements 1 and 2 are false under Article 210.",
         "ta": "சரி. உறுப்பு 210-ன் படி கூற்றுகள் 1 மற்றும் 2 ஆகிய இரண்டும் தவறானவை."
+      },
+      "D": {
+        "en": "Incorrect because both statements violate Article 210.",
+        "ta": "தவறு, ஏனெனில் இரு கூற்றுகளுமே உறுப்பு 210-க்கு எதிரானவை."
       }
     },
     "tnpsc_tip": {
@@ -4532,8 +4532,8 @@
       },
       {
         "id": "B",
-        "en": "2 only",
-        "ta": "2 மட்டும்"
+        "en": "Neither 1 nor 2",
+        "ta": "1-ம் இல்லை 2-ம் இல்லை"
       },
       {
         "id": "C",
@@ -4542,24 +4542,24 @@
       },
       {
         "id": "D",
-        "en": "Neither 1 nor 2",
-        "ta": "1-ம் இல்லை 2-ம் இல்லை"
+        "en": "2 only",
+        "ta": "2 மட்டும்"
       }
     ],
     "options_en": [
       "1 only",
-      "2 only",
+      "Neither 1 nor 2",
       "Both 1 and 2",
-      "Neither 1 nor 2"
+      "2 only"
     ],
     "options_ta": [
       "1 மட்டும்",
-      "2 மட்டும்",
+      "1-ம் இல்லை 2-ம் இல்லை",
       "1 மற்றும் 2 இரண்டும்",
-      "1-ம் இல்லை 2-ம் இல்லை"
+      "2 மட்டும்"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Neither statement is correct: Statement 1 is incorrect because Article 212(1) explicitly states: 'The validity of any proceedings in the Legislature of a State shall NOT be called in question on the ground of any alleged irregularity of procedure.' Statement 2 is incorrect because Article 212(2) provides that no officer or member empowered to regulate procedure or conduct business shall be subject to the jurisdiction of any court in respect of the exercise of those powers.",
       "ta": "இரு கூற்றுகளும் தவறானவை: கூற்று 1 தவறு, ஏனெனில் உறுப்பு 212(1) நடைமுறை ஒழுங்கின்மை என்ற அடிப்படையில் சட்டமன்ற நடவடிக்கைகளை எந்த நீதிமன்றத்திலும் கேள்வி கேட்க முடியாது எனத் தெளிவாகக் கூறுகிறது. கூற்று 2 தவறு, ஏனெனில் உறுப்பு 212(2)-ன் படி நடைமுறைகளை முறைப்படுத்தும் அதிகாரம் கொண்ட சட்டமன்ற அதிகாரி அல்லது உறுப்பினர் நீதிமன்றங்களின் அதிகார வரம்பிற்கு உட்பட மாட்டார்."
@@ -4572,16 +4572,16 @@
         "ta": "தவறு, ஏனெனில் உறுப்பு 212(1)-ன் படி வெறும் நடைமுறை பிழைகளை நீதிமன்றங்கள் விசாரிக்க முடியாது."
       },
       "B": {
-        "en": "Incorrect because legislative officers are immune from court jurisdiction in exercising procedural powers under Article 212(2).",
-        "ta": "தவறு, ஏனெனில் உறுப்பு 212(2)-ன் படி சட்டமன்ற அதிகாரிகள் நீதிமன்ற அதிகார வரம்பிலிருந்து பாதுகாப்பு பெற்றுள்ளனர்."
+        "en": "Correct. Both statements 1 and 2 are false under Article 212.",
+        "ta": "சரி. உறுப்பு 212-ன் படி கூற்றுகள் 1 மற்றும் 2 ஆகிய இரண்டும் தவறானவை."
       },
       "C": {
         "en": "Incorrect because both statements directly contradict Article 212.",
         "ta": "தவறு, ஏனெனில் இரு கூற்றுகளுமே உறுப்பு 212-க்கு நேரெதிரானவை."
       },
       "D": {
-        "en": "Correct. Both statements 1 and 2 are false under Article 212.",
-        "ta": "சரி. உறுப்பு 212-ன் படி கூற்றுகள் 1 மற்றும் 2 ஆகிய இரண்டும் தவறானவை."
+        "en": "Incorrect because legislative officers are immune from court jurisdiction in exercising procedural powers under Article 212(2).",
+        "ta": "தவறு, ஏனெனில் உறுப்பு 212(2)-ன் படி சட்டமன்ற அதிகாரிகள் நீதிமன்ற அதிகார வரம்பிலிருந்து பாதுகாப்பு பெற்றுள்ளனர்."
       }
     },
     "tnpsc_tip": {
@@ -4631,29 +4631,29 @@
       },
       {
         "id": "C",
-        "en": "Both 1 and 2",
-        "ta": "1 மற்றும் 2 இரண்டும்"
+        "en": "Neither 1 nor 2",
+        "ta": "1-ம் இல்லை 2-ம் இல்லை"
       },
       {
         "id": "D",
-        "en": "Neither 1 nor 2",
-        "ta": "1-ம் இல்லை 2-ம் இல்லை"
+        "en": "Both 1 and 2",
+        "ta": "1 மற்றும் 2 இரண்டும்"
       }
     ],
     "options_en": [
       "1 only",
       "2 only",
-      "Both 1 and 2",
-      "Neither 1 nor 2"
+      "Neither 1 nor 2",
+      "Both 1 and 2"
     ],
     "options_ta": [
       "1 மட்டும்",
       "2 மட்டும்",
-      "1 மற்றும் 2 இரண்டும்",
-      "1-ம் இல்லை 2-ம் இல்லை"
+      "1-ம் இல்லை 2-ம் இல்லை",
+      "1 மற்றும் 2 இரண்டும்"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Neither statement is correct: Statement 1 is incorrect because a No-Confidence Motion can ONLY be moved against the ENTIRE Council of Ministers (collective responsibility under Article 164(2)), never against an individual Minister. Statement 2 is incorrect because a Censure Motion expresses strong disapproval of specific policies/actions, but its passage does NOT obligate the Ministry to resign immediately (unlike a No-Confidence Motion, which forces immediate resignation).",
       "ta": "இரு கூற்றுகளும் தவறானவை: கூற்று 1 தவறு, ஏனெனில் கூட்டுப் பொறுப்பு தத்துவத்தின்படி (உறுப்பு 164(2)) நம்பிக்கையில்லாத் தீர்மானம் ஒட்டுமொத்த அமைச்சரவைக்கு எதிராக மட்டுமே கொண்டுவர முடியும், தனிப்பட்ட அமைச்சருக்கு எதிராக கொண்டுவர முடியாது. கூற்று 2 தவறு, ஏனெனில் கண்டனத் தீர்மானம் குறிப்பிட்ட செயல்களைக் கண்டிப்பதற்காக மட்டுமே; அது நிறைவேற்றப்பட்டால் அமைச்சரவை உடனடியாக பதவி விலக வேண்டிய கட்டாயம் இல்லை (நம்பிக்கையில்லாத் தீர்மானம் நிறைவேறினால் மட்டுமே பதவி விலக வேண்டும்)."
@@ -4670,12 +4670,12 @@
         "ta": "தவறு, ஏனெனில் கண்டனத் தீர்மானம் கட்டாயப் பதவி விலகலை ஏற்படுத்தாது."
       },
       "C": {
-        "en": "Incorrect because both statements confuse the rules of No-Confidence and Censure motions.",
-        "ta": "தவறு, ஏனெனில் இரு கூற்றுகளுமே நம்பிக்கையில்லாத் தீர்மானம் மற்றும் கண்டனத் தீர்மான விதிகளைத் தவறாகப் புரிந்துகொண்டுள்ளன."
-      },
-      "D": {
         "en": "Correct. Both statements 1 and 2 are false under legislative procedure rules.",
         "ta": "சரி. சட்டமன்ற நடைமுறை விதிகளின்படி கூற்றுகள் 1 மற்றும் 2 ஆகிய இரண்டும் தவறானவை."
+      },
+      "D": {
+        "en": "Incorrect because both statements confuse the rules of No-Confidence and Censure motions.",
+        "ta": "தவறு, ஏனெனில் இரு கூற்றுகளுமே நம்பிக்கையில்லாத் தீர்மானம் மற்றும் கண்டனத் தீர்மான விதிகளைத் தவறாகப் புரிந்துகொண்டுள்ளன."
       }
     },
     "tnpsc_tip": {

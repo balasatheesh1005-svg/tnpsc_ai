@@ -15,13 +15,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Directly casts a deciding vote when PAC members are equally divided",
-        "ta": "PAC உறுப்பினர்களிடையே சமநிலை ஏற்படும் போது நேரடியாகத் தீர்க்கும் வாக்கைச் செலுத்துகிறார்"
+        "en": "Attends PAC meetings, explains complex accounting nuances, and assists in questioning departmental witnesses",
+        "ta": "PAC கூட்டங்களில் கலந்துகொண்டு, சிக்கலான கணக்கு நுணுக்கங்களை விளக்கி, துறைசார் சாட்சிகளை விசாரிப்பதில் உதவுகிறார்"
       },
       {
         "id": "B",
-        "en": "Attends PAC meetings, explains complex accounting nuances, and assists in questioning departmental witnesses",
-        "ta": "PAC கூட்டங்களில் கலந்துகொண்டு, சிக்கலான கணக்கு நுணுக்கங்களை விளக்கி, துறைசார் சாட்சிகளை விசாரிப்பதில் உதவுகிறார்"
+        "en": "Directly casts a deciding vote when PAC members are equally divided",
+        "ta": "PAC உறுப்பினர்களிடையே சமநிலை ஏற்படும் போது நேரடியாகத் தீர்க்கும் வாக்கைச் செலுத்துகிறார்"
       },
       {
         "id": "C",
@@ -35,19 +35,19 @@
       }
     ],
     "options_en": [
-      "Directly casts a deciding vote when PAC members are equally divided",
       "Attends PAC meetings, explains complex accounting nuances, and assists in questioning departmental witnesses",
+      "Directly casts a deciding vote when PAC members are equally divided",
       "Replaces the Chairman of the PAC whenever a financial crisis occurs",
       "Directs police to arrest any witness refusing to answer PAC queries"
     ],
     "options_ta": [
-      "PAC உறுப்பினர்களிடையே சமநிலை ஏற்படும் போது நேரடியாகத் தீர்க்கும் வாக்கைச் செலுத்துகிறார்",
       "PAC கூட்டங்களில் கலந்துகொண்டு, சிக்கலான கணக்கு நுணுக்கங்களை விளக்கி, துறைசார் சாட்சிகளை விசாரிப்பதில் உதவுகிறார்",
+      "PAC உறுப்பினர்களிடையே சமநிலை ஏற்படும் போது நேரடியாகத் தீர்க்கும் வாக்கைச் செலுத்துகிறார்",
       "நிதி நெருக்கடி ஏற்படும் போதெல்லாம் PAC தலைவரின் இடத்தைப் பிடிக்கிறார்",
       "PAC கேள்விகளுக்குப் பதிலளிக்க மறுக்கும் சாட்சிகளைக் கைது செய்ய காவல்துறைக்கு உத்தரவிடுகிறார்"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "The CAG attends all meetings of the PAC, prepares a list of important points for examination, and assists the Committee in cross-examining witnesses from executive ministries.",
       "ta": "பொதுக் கணக்குக் குழுவின் அனைத்து கூட்டங்களிலும் CAG பங்கேற்று, முக்கிய ஆய்வுப் புள்ளிகளைத் தயாரித்து, அமைச்சக சாட்சிகளை குறுக்கு விசாரணை செய்வதில் குழுவுக்கு உதவுகிறார்."
@@ -56,12 +56,12 @@
     "explanation_ta": "பொதுக் கணக்குக் குழுவின் அனைத்து கூட்டங்களிலும் CAG பங்கேற்று, முக்கிய ஆய்வுப் புள்ளிகளைத் தயாரித்து, அமைச்சக சாட்சிகளை குறுக்கு விசாரணை செய்வதில் குழுவுக்கு உதவுகிறார்.",
     "why_not_others": {
       "A": {
-        "en": "Option B (Directly casts a deciding vote when PAC members are equally divided) is incorrect in this constitutional context.",
-        "ta": "தெரிவு B (PAC உறுப்பினர்களிடையே சமநிலை ஏற்படும் போது நேரடியாகத் தீர்க்கும் வாக்கைச் செலுத்துகிறார்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
-      },
-      "B": {
         "en": "Option A is correct: The CAG attends all meetings of the PAC, prepares a list of important points for examination, and assists the Committee in cross-examining witnesses from executive ministries.",
         "ta": "தெரிவு A சரி: பொதுக் கணக்குக் குழுவின் அனைத்து கூட்டங்களிலும் CAG பங்கேற்று, முக்கிய ஆய்வுப் புள்ளிகளைத் தயாரித்து, அமைச்சக சாட்சிகளை குறுக்கு விசாரணை செய்வதில் குழுவுக்கு உதவுகிறார்."
+      },
+      "B": {
+        "en": "Option B (Directly casts a deciding vote when PAC members are equally divided) is incorrect in this constitutional context.",
+        "ta": "தெரிவு B (PAC உறுப்பினர்களிடையே சமநிலை ஏற்படும் போது நேரடியாகத் தீர்க்கும் வாக்கைச் செலுத்துகிறார்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "C": {
         "en": "Option C (Replaces the Chairman of the PAC whenever a financial crisis occurs) is incorrect in this constitutional context.",
@@ -222,8 +222,8 @@
       },
       {
         "id": "B",
-        "en": "CAG has the authority to audit the revenue records of private telecom operators to verify government revenue share",
-        "ta": "அரசுக்கான வருவாய்ப் பங்கைச் சரிபார்க்க தனியார் தொலைத்தொடர்பு நிறுவனங்களின் வருவாய் ஆவணங்களைத் தணிக்கை செய்ய CAG-க்கு அதிகாரம் உண்டு"
+        "en": "Private companies are exempt from all constitutional oversight permanently",
+        "ta": "தனியார் நிறுவனங்களுக்கு அனைத்து அரசியலமைப்பு மேற்பார்வையிலிருந்தும் நிரந்தர விலக்கு உண்டு"
       },
       {
         "id": "C",
@@ -232,24 +232,24 @@
       },
       {
         "id": "D",
-        "en": "Private companies are exempt from all constitutional oversight permanently",
-        "ta": "தனியார் நிறுவனங்களுக்கு அனைத்து அரசியலமைப்பு மேற்பார்வையிலிருந்தும் நிரந்தர விலக்கு உண்டு"
+        "en": "CAG has the authority to audit the revenue records of private telecom operators to verify government revenue share",
+        "ta": "அரசுக்கான வருவாய்ப் பங்கைச் சரிபார்க்க தனியார் தொலைத்தொடர்பு நிறுவனங்களின் வருவாய் ஆவணங்களைத் தணிக்கை செய்ய CAG-க்கு அதிகாரம் உண்டு"
       }
     ],
     "options_en": [
       "CAG has no jurisdiction over private telecom operators under any circumstances",
-      "CAG has the authority to audit the revenue records of private telecom operators to verify government revenue share",
+      "Private companies are exempt from all constitutional oversight permanently",
       "CAG can determine mobile phone call rates directly",
-      "Private companies are exempt from all constitutional oversight permanently"
+      "CAG has the authority to audit the revenue records of private telecom operators to verify government revenue share"
     ],
     "options_ta": [
       "எந்த சூழ்நிலையிலும் தனியார் தொலைத்தொடர்பு நிறுவனங்கள் மீது CAG-க்கு அதிகார வரம்பு இல்லை",
-      "அரசுக்கான வருவாய்ப் பங்கைச் சரிபார்க்க தனியார் தொலைத்தொடர்பு நிறுவனங்களின் வருவாய் ஆவணங்களைத் தணிக்கை செய்ய CAG-க்கு அதிகாரம் உண்டு",
+      "தனியார் நிறுவனங்களுக்கு அனைத்து அரசியலமைப்பு மேற்பார்வையிலிருந்தும் நிரந்தர விலக்கு உண்டு",
       "மொபைல் போன் அழைப்பு கட்டணங்களை CAG நேரடியாகத் தீர்மானிக்க முடியும்",
-      "தனியார் நிறுவனங்களுக்கு அனைத்து அரசியலமைப்பு மேற்பார்வையிலிருந்தும் நிரந்தர விலக்கு உண்டு"
+      "அரசுக்கான வருவாய்ப் பங்கைச் சரிபார்க்க தனியார் தொலைத்தொடர்பு நிறுவனங்களின் வருவாய் ஆவணங்களைத் தணிக்கை செய்ய CAG-க்கு அதிகாரம் உண்டு"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "The Supreme Court held that since natural resources like spectrum belong to the people, the CAG under Section 16 of the 1971 Act is entitled to examine the accounts of private telecom licensees to verify gross revenue and license fee shares.",
       "ta": "அலைக்கற்றை போன்ற இயற்கை வளங்கள் மக்களுக்குச் சொந்தமானது என்பதால், அரசின் வருவாய்ப் பங்கைச் சரிபார்க்க தனியார் நிறுவனங்களின் கணக்குகளை ஆய்வு செய்ய 1971 சட்டத்தின் பிரிவு 16-ன் கீழ் CAG-க்கு உரிமை உண்டு என்று உச்ச நீதிமன்றம் தீர்ப்பளித்தது."
@@ -262,16 +262,16 @@
         "ta": "தெரிவு B (எந்த சூழ்நிலையிலும் தனியார் தொலைத்தொடர்பு நிறுவனங்கள் மீது CAG-க்கு அதிகார வரம்பு இல்லை) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "B": {
-        "en": "Option A is correct: The Supreme Court held that since natural resources like spectrum belong to the people, the CAG under Section 16 of the 1971 Act is entitled to examine the accounts of private telecom licensees to verify gross revenue and license fee shares.",
-        "ta": "தெரிவு A சரி: அலைக்கற்றை போன்ற இயற்கை வளங்கள் மக்களுக்குச் சொந்தமானது என்பதால், அரசின் வருவாய்ப் பங்கைச் சரிபார்க்க தனியார் நிறுவனங்களின் கணக்குகளை ஆய்வு செய்ய 1971 சட்டத்தின் பிரிவு 16-ன் கீழ் CAG-க்கு உரிமை உண்டு என்று உச்ச நீதிமன்றம் தீர்ப்பளித்தது."
+        "en": "Option D (Private companies are exempt from all constitutional oversight permanently) is incorrect in this constitutional context.",
+        "ta": "தெரிவு D (தனியார் நிறுவனங்களுக்கு அனைத்து அரசியலமைப்பு மேற்பார்வையிலிருந்தும் நிரந்தர விலக்கு உண்டு) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "C": {
         "en": "Option C (CAG can determine mobile phone call rates directly) is incorrect in this constitutional context.",
         "ta": "தெரிவு C (மொபைல் போன் அழைப்பு கட்டணங்களை CAG நேரடியாகத் தீர்மானிக்க முடியும்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "D": {
-        "en": "Option D (Private companies are exempt from all constitutional oversight permanently) is incorrect in this constitutional context.",
-        "ta": "தெரிவு D (தனியார் நிறுவனங்களுக்கு அனைத்து அரசியலமைப்பு மேற்பார்வையிலிருந்தும் நிரந்தர விலக்கு உண்டு) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
+        "en": "Option A is correct: The Supreme Court held that since natural resources like spectrum belong to the people, the CAG under Section 16 of the 1971 Act is entitled to examine the accounts of private telecom licensees to verify gross revenue and license fee shares.",
+        "ta": "தெரிவு A சரி: அலைக்கற்றை போன்ற இயற்கை வளங்கள் மக்களுக்குச் சொந்தமானது என்பதால், அரசின் வருவாய்ப் பங்கைச் சரிபார்க்க தனியார் நிறுவனங்களின் கணக்குகளை ஆய்வு செய்ய 1971 சட்டத்தின் பிரிவு 16-ன் கீழ் CAG-க்கு உரிமை உண்டு என்று உச்ச நீதிமன்றம் தீர்ப்பளித்தது."
       }
     },
     "tnpsc_tip": {
@@ -323,13 +323,13 @@
       },
       {
         "id": "B",
-        "en": "By the President or Governor in public interest, after consultation with the CAG and giving reasonable opportunity to the body",
-        "ta": "பொது நலன் கருதி, CAG-ஐக் கலந்தாலோசித்து, அந்த அமைப்பிற்கு நியாயமான வாய்ப்பளித்த பின்னர் குடியரசுத் தலைவர் அல்லது ஆளுநரால் ஒப்படைக்கப்படலாம்"
+        "en": "By the local municipal councillor passing an oral resolution",
+        "ta": "உள்ளூர் நகர்மன்ற உறுப்பினர் வாய்மொழித் தீர்மானம் நிறைவேற்றுவதன் மூலம்"
       },
       {
         "id": "C",
-        "en": "By the local municipal councillor passing an oral resolution",
-        "ta": "உள்ளூர் நகர்மன்ற உறுப்பினர் வாய்மொழித் தீர்மானம் நிறைவேற்றுவதன் மூலம்"
+        "en": "By the President or Governor in public interest, after consultation with the CAG and giving reasonable opportunity to the body",
+        "ta": "பொது நலன் கருதி, CAG-ஐக் கலந்தாலோசித்து, அந்த அமைப்பிற்கு நியாயமான வாய்ப்பளித்த பின்னர் குடியரசுத் தலைவர் அல்லது ஆளுநரால் ஒப்படைக்கப்படலாம்"
       },
       {
         "id": "D",
@@ -339,18 +339,18 @@
     ],
     "options_en": [
       "By the Supreme Court issuing an ex-parte judicial warrant",
-      "By the President or Governor in public interest, after consultation with the CAG and giving reasonable opportunity to the body",
       "By the local municipal councillor passing an oral resolution",
+      "By the President or Governor in public interest, after consultation with the CAG and giving reasonable opportunity to the body",
       "By the private external auditor surrendering his license"
     ],
     "options_ta": [
       "உச்ச நீதிமன்றம் ஒருதலைப்பட்சமாக நீதித்துறை ஆணை பிறப்பிப்பதன் மூலம்",
-      "பொது நலன் கருதி, CAG-ஐக் கலந்தாலோசித்து, அந்த அமைப்பிற்கு நியாயமான வாய்ப்பளித்த பின்னர் குடியரசுத் தலைவர் அல்லது ஆளுநரால் ஒப்படைக்கப்படலாம்",
       "உள்ளூர் நகர்மன்ற உறுப்பினர் வாய்மொழித் தீர்மானம் நிறைவேற்றுவதன் மூலம்",
+      "பொது நலன் கருதி, CAG-ஐக் கலந்தாலோசித்து, அந்த அமைப்பிற்கு நியாயமான வாய்ப்பளித்த பின்னர் குடியரசுத் தலைவர் அல்லது ஆளுநரால் ஒப்படைக்கப்படலாம்",
       "தனியார் வெளித் தணிக்கையாளர் தனது உரிமத்தை ஒப்படைப்பதன் மூலம்"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Section 20 allows the President or Governor to request the CAG to undertake the audit of accounts of any authority or body in the public interest, provided the CAG is consulted and the body is given reasonable opportunity to represent.",
       "ta": "பிரிவு 20 பொது நலன் கருதி, சி.ஏ.ஜி-யுடன் கலந்தாலோசித்து, சம்பந்தப்பட்ட அமைப்புக்கு உரிய வாய்ப்பளித்த பிறகு, எந்தவொரு அமைப்பின் தணிக்கையையும் சி.ஏ.ஜி-யிடம் ஒப்படைக்க குடியரசுத் தலைவர் அல்லது ஆளுநருக்கு அதிகாரம் அளிக்கிறது."
@@ -363,12 +363,12 @@
         "ta": "தெரிவு B (உச்ச நீதிமன்றம் ஒருதலைப்பட்சமாக நீதித்துறை ஆணை பிறப்பிப்பதன் மூலம்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "B": {
-        "en": "Option A is correct: Section 20 allows the President or Governor to request the CAG to undertake the audit of accounts of any authority or body in the public interest, provided the CAG is consulted and the body is given reasonable opportunity to represent.",
-        "ta": "தெரிவு A சரி: பிரிவு 20 பொது நலன் கருதி, சி.ஏ.ஜி-யுடன் கலந்தாலோசித்து, சம்பந்தப்பட்ட அமைப்புக்கு உரிய வாய்ப்பளித்த பிறகு, எந்தவொரு அமைப்பின் தணிக்கையையும் சி.ஏ.ஜி-யிடம் ஒப்படைக்க குடியரசுத் தலைவர் அல்லது ஆளுநருக்கு அதிகாரம் அளிக்கிறது."
-      },
-      "C": {
         "en": "Option C (By the local municipal councillor passing an oral resolution) is incorrect in this constitutional context.",
         "ta": "தெரிவு C (உள்ளூர் நகர்மன்ற உறுப்பினர் வாய்மொழித் தீர்மானம் நிறைவேற்றுவதன் மூலம்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
+      },
+      "C": {
+        "en": "Option A is correct: Section 20 allows the President or Governor to request the CAG to undertake the audit of accounts of any authority or body in the public interest, provided the CAG is consulted and the body is given reasonable opportunity to represent.",
+        "ta": "தெரிவு A சரி: பிரிவு 20 பொது நலன் கருதி, சி.ஏ.ஜி-யுடன் கலந்தாலோசித்து, சம்பந்தப்பட்ட அமைப்புக்கு உரிய வாய்ப்பளித்த பிறகு, எந்தவொரு அமைப்பின் தணிக்கையையும் சி.ஏ.ஜி-யிடம் ஒப்படைக்க குடியரசுத் தலைவர் அல்லது ஆளுநருக்கு அதிகாரம் அளிக்கிறது."
       },
       "D": {
         "en": "Option D (By the private external auditor surrendering his license) is incorrect in this constitutional context.",
@@ -424,13 +424,13 @@
       },
       {
         "id": "B",
-        "en": "CAG can examine whether policy execution is wasteful or inefficient, but cannot question the policy itself",
-        "ta": "கொள்கை செயல்படுத்தல் வீணானதா அல்லது திறமையற்றதா என்பதை CAG ஆராயலாமே தவிர, கொள்கையையே கேள்வி கேட்க முடியாது"
+        "en": "CAG must ratify all political party election manifestos before elections",
+        "ta": "தேர்தலுக்கு முன் அனைத்து அரசியல் கட்சிகளின் தேர்தல் அறிக்கைகளையும் CAG அங்கீகரிக்க வேண்டும்"
       },
       {
         "id": "C",
-        "en": "CAG must ratify all political party election manifestos before elections",
-        "ta": "தேர்தலுக்கு முன் அனைத்து அரசியல் கட்சிகளின் தேர்தல் அறிக்கைகளையும் CAG அங்கீகரிக்க வேண்டும்"
+        "en": "CAG can examine whether policy execution is wasteful or inefficient, but cannot question the policy itself",
+        "ta": "கொள்கை செயல்படுத்தல் வீணானதா அல்லது திறமையற்றதா என்பதை CAG ஆராயலாமே தவிர, கொள்கையையே கேள்வி கேட்க முடியாது"
       },
       {
         "id": "D",
@@ -440,18 +440,18 @@
     ],
     "options_en": [
       "CAG has the absolute constitutional authority to repeal any economic policy bill",
-      "CAG can examine whether policy execution is wasteful or inefficient, but cannot question the policy itself",
       "CAG must ratify all political party election manifestos before elections",
+      "CAG can examine whether policy execution is wasteful or inefficient, but cannot question the policy itself",
       "CAG can dismiss cabinet ministers whose policies result in fiscal deficits"
     ],
     "options_ta": [
       "எந்தவொரு பொருளாதாரக் கொள்கை மசோதாவையும் ரத்து செய்ய CAG-க்கு முழுமையான அரசியலமைப்பு அதிகாரம் உண்டு",
-      "கொள்கை செயல்படுத்தல் வீணானதா அல்லது திறமையற்றதா என்பதை CAG ஆராயலாமே தவிர, கொள்கையையே கேள்வி கேட்க முடியாது",
       "தேர்தலுக்கு முன் அனைத்து அரசியல் கட்சிகளின் தேர்தல் அறிக்கைகளையும் CAG அங்கீகரிக்க வேண்டும்",
+      "கொள்கை செயல்படுத்தல் வீணானதா அல்லது திறமையற்றதா என்பதை CAG ஆராயலாமே தவிர, கொள்கையையே கேள்வி கேட்க முடியாது",
       "கொள்கைகள் நிதிப் பற்றாக்குறையை ஏற்படுத்தும் அமைச்சர்களை CAG பதவிநீக்கம் செய்யலாம்"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "The CAG has no constitutional competence to question the wisdom of policies sanctioned by Parliament; his audit is confined to evaluating the execution, legality, economy, and financial outcome of those policies.",
       "ta": "நாடாளுமன்றத்தால் அங்கீகரிக்கப்பட்ட கொள்கைகளின் விவேகத்தை கேள்வி கேட்க சி.ஏ.ஜி-க்கு அதிகாரம் இல்லை; அக்கொள்கைகளை செயல்படுத்துவதில் உள்ள சட்ட ஒழுங்கு, சிக்கனம் மற்றும் நிதி விளைவுகளை மட்டுமே அவரால் ஆராய முடியும்."
@@ -464,12 +464,12 @@
         "ta": "தெரிவு B (எந்தவொரு பொருளாதாரக் கொள்கை மசோதாவையும் ரத்து செய்ய CAG-க்கு முழுமையான அரசியலமைப்பு அதிகாரம் உண்டு) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "B": {
-        "en": "Option A is correct: The CAG has no constitutional competence to question the wisdom of policies sanctioned by Parliament; his audit is confined to evaluating the execution, legality, economy, and financial outcome of those policies.",
-        "ta": "தெரிவு A சரி: நாடாளுமன்றத்தால் அங்கீகரிக்கப்பட்ட கொள்கைகளின் விவேகத்தை கேள்வி கேட்க சி.ஏ.ஜி-க்கு அதிகாரம் இல்லை; அக்கொள்கைகளை செயல்படுத்துவதில் உள்ள சட்ட ஒழுங்கு, சிக்கனம் மற்றும் நிதி விளைவுகளை மட்டுமே அவரால் ஆராய முடியும்."
-      },
-      "C": {
         "en": "Option C (CAG must ratify all political party election manifestos before elections) is incorrect in this constitutional context.",
         "ta": "தெரிவு C (தேர்தலுக்கு முன் அனைத்து அரசியல் கட்சிகளின் தேர்தல் அறிக்கைகளையும் CAG அங்கீகரிக்க வேண்டும்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
+      },
+      "C": {
+        "en": "Option A is correct: The CAG has no constitutional competence to question the wisdom of policies sanctioned by Parliament; his audit is confined to evaluating the execution, legality, economy, and financial outcome of those policies.",
+        "ta": "தெரிவு A சரி: நாடாளுமன்றத்தால் அங்கீகரிக்கப்பட்ட கொள்கைகளின் விவேகத்தை கேள்வி கேட்க சி.ஏ.ஜி-க்கு அதிகாரம் இல்லை; அக்கொள்கைகளை செயல்படுத்துவதில் உள்ள சட்ட ஒழுங்கு, சிக்கனம் மற்றும் நிதி விளைவுகளை மட்டுமே அவரால் ஆராய முடியும்."
       },
       "D": {
         "en": "Option D (CAG can dismiss cabinet ministers whose policies result in fiscal deficits) is incorrect in this constitutional context.",
@@ -621,13 +621,13 @@
     "options": [
       {
         "id": "A",
-        "en": "The Constitution strictly prohibits any State from maintaining its own treasury",
-        "ta": "எந்தவொரு மாநிலமும் தனது சொந்த கருவூலத்தைப் பராமரிக்க அரசியலமைப்பு கண்டிப்பாகத் தடை செய்துள்ளது"
+        "en": "Most States have not separated accounting from audit due to high financial costs and administrative unwillingness",
+        "ta": "அதிக நிதிச் செலவு மற்றும் நிர்வாகத் தயக்கம் காரணமாக பெரும்பாலான மாநிலங்கள் கணக்கைத் தணிக்கையிலிருந்து பிரிக்கவில்லை"
       },
       {
         "id": "B",
-        "en": "Most States have not separated accounting from audit due to high financial costs and administrative unwillingness",
-        "ta": "அதிக நிதிச் செலவு மற்றும் நிர்வாகத் தயக்கம் காரணமாக பெரும்பாலான மாநிலங்கள் கணக்கைத் தணிக்கையிலிருந்து பிரிக்கவில்லை"
+        "en": "The Constitution strictly prohibits any State from maintaining its own treasury",
+        "ta": "எந்தவொரு மாநிலமும் தனது சொந்த கருவூலத்தைப் பராமரிக்க அரசியலமைப்பு கண்டிப்பாகத் தடை செய்துள்ளது"
       },
       {
         "id": "C",
@@ -641,19 +641,19 @@
       }
     ],
     "options_en": [
-      "The Constitution strictly prohibits any State from maintaining its own treasury",
       "Most States have not separated accounting from audit due to high financial costs and administrative unwillingness",
+      "The Constitution strictly prohibits any State from maintaining its own treasury",
       "State Assemblies passed constitutional amendments abolishing State Finance Departments",
       "State Chief Ministers are legally barred from signing financial cheques"
     ],
     "options_ta": [
-      "எந்தவொரு மாநிலமும் தனது சொந்த கருவூலத்தைப் பராமரிக்க அரசியலமைப்பு கண்டிப்பாகத் தடை செய்துள்ளது",
       "அதிக நிதிச் செலவு மற்றும் நிர்வாகத் தயக்கம் காரணமாக பெரும்பாலான மாநிலங்கள் கணக்கைத் தணிக்கையிலிருந்து பிரிக்கவில்லை",
+      "எந்தவொரு மாநிலமும் தனது சொந்த கருவூலத்தைப் பராமரிக்க அரசியலமைப்பு கண்டிப்பாகத் தடை செய்துள்ளது",
       "மாநில நிதித் துறைகளை ஒழித்து மாநில சட்டமன்றங்கள் அரசியலமைப்புத் திருத்தங்களை நிறைவேற்றின",
       "மாநில முதலமைச்சர்கள் நிதிக் காசோலைகளில் கையொப்பமிட சட்டப்பூர்வமாகத் தடை செய்யப்பட்டுள்ளனர்"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "In 1976, accounting was separated from audit only at the Union level. Most States could not afford separate accounting departments and requested the CAG to continue compiling state accounts.",
       "ta": "1976-ல் மத்திய அளவில் மட்டுமே கணக்குகள் தணிக்கையிலிருந்து பிரிக்கப்பட்டன. பெரும்பாலான மாநிலங்களால் தனி கணக்குத் துறைகளை அமைக்க நிதி வசதி இல்லாததால், சி.ஏ.ஜி-யையே மாநில கணக்குகளைத் தொடரக் கேட்டுக்கொண்டன."
@@ -662,12 +662,12 @@
     "explanation_ta": "1976-ல் மத்திய அளவில் மட்டுமே கணக்குகள் தணிக்கையிலிருந்து பிரிக்கப்பட்டன. பெரும்பாலான மாநிலங்களால் தனி கணக்குத் துறைகளை அமைக்க நிதி வசதி இல்லாததால், சி.ஏ.ஜி-யையே மாநில கணக்குகளைத் தொடரக் கேட்டுக்கொண்டன.",
     "why_not_others": {
       "A": {
-        "en": "Option B (The Constitution strictly prohibits any State from maintaining its own treasury) is incorrect in this constitutional context.",
-        "ta": "தெரிவு B (எந்தவொரு மாநிலமும் தனது சொந்த கருவூலத்தைப் பராமரிக்க அரசியலமைப்பு கண்டிப்பாகத் தடை செய்துள்ளது) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
-      },
-      "B": {
         "en": "Option A is correct: In 1976, accounting was separated from audit only at the Union level. Most States could not afford separate accounting departments and requested the CAG to continue compiling state accounts.",
         "ta": "தெரிவு A சரி: 1976-ல் மத்திய அளவில் மட்டுமே கணக்குகள் தணிக்கையிலிருந்து பிரிக்கப்பட்டன. பெரும்பாலான மாநிலங்களால் தனி கணக்குத் துறைகளை அமைக்க நிதி வசதி இல்லாததால், சி.ஏ.ஜி-யையே மாநில கணக்குகளைத் தொடரக் கேட்டுக்கொண்டன."
+      },
+      "B": {
+        "en": "Option B (The Constitution strictly prohibits any State from maintaining its own treasury) is incorrect in this constitutional context.",
+        "ta": "தெரிவு B (எந்தவொரு மாநிலமும் தனது சொந்த கருவூலத்தைப் பராமரிக்க அரசியலமைப்பு கண்டிப்பாகத் தடை செய்துள்ளது) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "C": {
         "en": "Option C (State Assemblies passed constitutional amendments abolishing State Finance Departments) is incorrect in this constitutional context.",
@@ -722,13 +722,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Yes, the CAG can attach personal bank accounts of defaulting bureaucrats directly",
-        "ta": "ஆம், விதிமீறும் அதிகாரிகளின் தனிப்பட்ட வங்கிக் கணக்குகளை நேரடியாக முடக்கலாம்"
+        "en": "No, the CAG is an audit and reporting authority without executive power to disallow or surcharge",
+        "ta": "இல்லை, CAG தணிக்கை செய்து அறிக்கை அளிக்கும் அதிகாரம் மட்டுமே கொண்டவர்; செலவை நிராகரிக்கவோ பணத்தை வசூலிக்கவோ நிர்வாக அதிகாரம் இல்லை"
       },
       {
         "id": "B",
-        "en": "No, the CAG is an audit and reporting authority without executive power to disallow or surcharge",
-        "ta": "இல்லை, CAG தணிக்கை செய்து அறிக்கை அளிக்கும் அதிகாரம் மட்டுமே கொண்டவர்; செலவை நிராகரிக்கவோ பணத்தை வசூலிக்கவோ நிர்வாக அதிகாரம் இல்லை"
+        "en": "Yes, the CAG can attach personal bank accounts of defaulting bureaucrats directly",
+        "ta": "ஆம், விதிமீறும் அதிகாரிகளின் தனிப்பட்ட வங்கிக் கணக்குகளை நேரடியாக முடக்கலாம்"
       },
       {
         "id": "C",
@@ -742,19 +742,19 @@
       }
     ],
     "options_en": [
-      "Yes, the CAG can attach personal bank accounts of defaulting bureaucrats directly",
       "No, the CAG is an audit and reporting authority without executive power to disallow or surcharge",
+      "Yes, the CAG can attach personal bank accounts of defaulting bureaucrats directly",
       "Yes, but only for expenditures below one thousand rupees",
       "Yes, with the prior oral permission of the Speaker of Lok Sabha"
     ],
     "options_ta": [
-      "ஆம், விதிமீறும் அதிகாரிகளின் தனிப்பட்ட வங்கிக் கணக்குகளை நேரடியாக முடக்கலாம்",
       "இல்லை, CAG தணிக்கை செய்து அறிக்கை அளிக்கும் அதிகாரம் மட்டுமே கொண்டவர்; செலவை நிராகரிக்கவோ பணத்தை வசூலிக்கவோ நிர்வாக அதிகாரம் இல்லை",
+      "ஆம், விதிமீறும் அதிகாரிகளின் தனிப்பட்ட வங்கிக் கணக்குகளை நேரடியாக முடக்கலாம்",
       "ஆம், ஆனால் ஆயிரம் ரூபாய்க்குக் குறைவான செலவினங்களுக்கு மட்டுமே",
       "ஆம், மக்களவை சபாநாயகரின் வாய்மொழி அனுமதியுடன் செய்யலாம்"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "The CAG is only an auditing and reporting body. He does not have quasi-judicial powers of surcharge or disallowance (unlike local fund audit in some States); enforcement is left to the executive and legislature.",
       "ta": "சி.ஏ.ஜி தணிக்கை செய்து அறிக்கை அளிக்கும் அமைப்பே தவிர, செலவை நிராகரிக்கும் அல்லது தண்டித்து வசூலிக்கும் (surcharge) அதிகாரம் அவருக்குக் கிடையாது; அமலாக்கம் நிர்வாகத்திடமே விடப்பட்டுள்ளது."
@@ -763,12 +763,12 @@
     "explanation_ta": "சி.ஏ.ஜி தணிக்கை செய்து அறிக்கை அளிக்கும் அமைப்பே தவிர, செலவை நிராகரிக்கும் அல்லது தண்டித்து வசூலிக்கும் (surcharge) அதிகாரம் அவருக்குக் கிடையாது; அமலாக்கம் நிர்வாகத்திடமே விடப்பட்டுள்ளது.",
     "why_not_others": {
       "A": {
-        "en": "Option B (Yes, the CAG can attach personal bank accounts of defaulting bureaucrats directly) is incorrect in this constitutional context.",
-        "ta": "தெரிவு B (ஆம், விதிமீறும் அதிகாரிகளின் தனிப்பட்ட வங்கிக் கணக்குகளை நேரடியாக முடக்கலாம்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
-      },
-      "B": {
         "en": "Option A is correct: The CAG is only an auditing and reporting body. He does not have quasi-judicial powers of surcharge or disallowance (unlike local fund audit in some States); enforcement is left to the executive and legislature.",
         "ta": "தெரிவு A சரி: சி.ஏ.ஜி தணிக்கை செய்து அறிக்கை அளிக்கும் அமைப்பே தவிர, செலவை நிராகரிக்கும் அல்லது தண்டித்து வசூலிக்கும் (surcharge) அதிகாரம் அவருக்குக் கிடையாது; அமலாக்கம் நிர்வாகத்திடமே விடப்பட்டுள்ளது."
+      },
+      "B": {
+        "en": "Option B (Yes, the CAG can attach personal bank accounts of defaulting bureaucrats directly) is incorrect in this constitutional context.",
+        "ta": "தெரிவு B (ஆம், விதிமீறும் அதிகாரிகளின் தனிப்பட்ட வங்கிக் கணக்குகளை நேரடியாக முடக்கலாம்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "C": {
         "en": "Option C (Yes, but only for expenditures below one thousand rupees) is incorrect in this constitutional context.",
@@ -929,8 +929,8 @@
       },
       {
         "id": "B",
-        "en": "Auditor-General",
-        "ta": "தணிக்கை ஜெனரல் (Auditor-General)"
+        "en": "Accountant General of Bharat",
+        "ta": "பாரதக் கணக்காயர்"
       },
       {
         "id": "C",
@@ -939,24 +939,24 @@
       },
       {
         "id": "D",
-        "en": "Accountant General of Bharat",
-        "ta": "பாரதக் கணக்காயர்"
+        "en": "Auditor-General",
+        "ta": "தணிக்கை ஜெனரல் (Auditor-General)"
       }
     ],
     "options_en": [
       "Chancellor of the Exchequer",
-      "Auditor-General",
+      "Accountant General of Bharat",
       "Governor of Public Finance",
-      "Accountant General of Bharat"
+      "Auditor-General"
     ],
     "options_ta": [
       "கருவூலத் தலைவர்",
-      "தணிக்கை ஜெனரல் (Auditor-General)",
+      "பாரதக் கணக்காயர்",
       "பொது நிதி ஆளுநர்",
-      "பாரதக் கணக்காயர்"
+      "தணிக்கை ஜெனரல் (Auditor-General)"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "The Draft Constitution initially used the term 'Auditor-General'. The Drafting Committee under Dr. Ambedkar added the word 'Comptroller' to emulate the British nomenclature, though actual comptroller powers were not provided.",
       "ta": "வரைவு அரசியலமைப்பு ஆரம்பத்தில் 'Auditor-General' என்ற சொல்லையே பயன்படுத்தியது. பின்னர் பிரிட்டிஷ் முறையைப் பிரதிபலிக்க டாக்டர் அம்பேத்கர் தலைமையிலான வரைவுக் குழு 'Comptroller' என்ற சொல்லைச் சேர்த்தது."
@@ -969,16 +969,16 @@
         "ta": "தெரிவு B (கருவூலத் தலைவர்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "B": {
-        "en": "Option A is correct: The Draft Constitution initially used the term 'Auditor-General'. The Drafting Committee under Dr. Ambedkar added the word 'Comptroller' to emulate the British nomenclature, though actual comptroller powers were not provided.",
-        "ta": "தெரிவு A சரி: வரைவு அரசியலமைப்பு ஆரம்பத்தில் 'Auditor-General' என்ற சொல்லையே பயன்படுத்தியது. பின்னர் பிரிட்டிஷ் முறையைப் பிரதிபலிக்க டாக்டர் அம்பேத்கர் தலைமையிலான வரைவுக் குழு 'Comptroller' என்ற சொல்லைச் சேர்த்தது."
+        "en": "Option D (Accountant General of Bharat) is incorrect in this constitutional context.",
+        "ta": "தெரிவு D (பாரதக் கணக்காயர்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "C": {
         "en": "Option C (Governor of Public Finance) is incorrect in this constitutional context.",
         "ta": "தெரிவு C (பொது நிதி ஆளுநர்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "D": {
-        "en": "Option D (Accountant General of Bharat) is incorrect in this constitutional context.",
-        "ta": "தெரிவு D (பாரதக் கணக்காயர்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
+        "en": "Option A is correct: The Draft Constitution initially used the term 'Auditor-General'. The Drafting Committee under Dr. Ambedkar added the word 'Comptroller' to emulate the British nomenclature, though actual comptroller powers were not provided.",
+        "ta": "தெரிவு A சரி: வரைவு அரசியலமைப்பு ஆரம்பத்தில் 'Auditor-General' என்ற சொல்லையே பயன்படுத்தியது. பின்னர் பிரிட்டிஷ் முறையைப் பிரதிபலிக்க டாக்டர் அம்பேத்கர் தலைமையிலான வரைவுக் குழு 'Comptroller' என்ற சொல்லைச் சேர்த்தது."
       }
     },
     "tnpsc_tip": {
@@ -1025,13 +1025,13 @@
     "options": [
       {
         "id": "A",
-        "en": "CAG has banned all social audits by village citizens as unconstitutional",
-        "ta": "கிராம மக்களால் நடத்தப்படும் அனைத்து சமூகத் தணிக்கைகளையும் அரசியலமைப்பிற்கு முரணானது என CAG தடை செய்துள்ளார்"
+        "en": "CAG formulated the Social Audit Standards (SAS) to institutionalize grassroots community audits",
+        "ta": "அடிமட்ட சமூகத் தணிக்கைகளை முறைப்படுத்துவதற்காக சமூகத் தணிக்கைத் தரங்களை (SAS) CAG உருவாக்கியுள்ளார்"
       },
       {
         "id": "B",
-        "en": "CAG formulated the Social Audit Standards (SAS) to institutionalize grassroots community audits",
-        "ta": "அடிமட்ட சமூகத் தணிக்கைகளை முறைப்படுத்துவதற்காக சமூகத் தணிக்கைத் தரங்களை (SAS) CAG உருவாக்கியுள்ளார்"
+        "en": "CAG has banned all social audits by village citizens as unconstitutional",
+        "ta": "கிராம மக்களால் நடத்தப்படும் அனைத்து சமூகத் தணிக்கைகளையும் அரசியலமைப்பிற்கு முரணானது என CAG தடை செய்துள்ளார்"
       },
       {
         "id": "C",
@@ -1045,19 +1045,19 @@
       }
     ],
     "options_en": [
-      "CAG has banned all social audits by village citizens as unconstitutional",
       "CAG formulated the Social Audit Standards (SAS) to institutionalize grassroots community audits",
+      "CAG has banned all social audits by village citizens as unconstitutional",
       "CAG personally conducts every village panchayat social audit meeting in person",
       "Social audits have completely replaced the CAG's constitutional office"
     ],
     "options_ta": [
-      "கிராம மக்களால் நடத்தப்படும் அனைத்து சமூகத் தணிக்கைகளையும் அரசியலமைப்பிற்கு முரணானது என CAG தடை செய்துள்ளார்",
       "அடிமட்ட சமூகத் தணிக்கைகளை முறைப்படுத்துவதற்காக சமூகத் தணிக்கைத் தரங்களை (SAS) CAG உருவாக்கியுள்ளார்",
+      "கிராம மக்களால் நடத்தப்படும் அனைத்து சமூகத் தணிக்கைகளையும் அரசியலமைப்பிற்கு முரணானது என CAG தடை செய்துள்ளார்",
       "ஒவ்வொரு கிராம ஊராட்சியின் சமூகத் தணிக்கைக் கூட்டத்தையும் சி.ஏ.ஜி நேரில் நடத்துகிறார்",
       "சமூகத் தணிக்கைகள் சி.ஏ.ஜி-யின் அரசியலமைப்பு அலுவலகத்தை முழுமையாக மாற்றியமைத்துவிட்டன"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "The CAG partnered with the Ministry of Rural Development to formulate the first-ever 'Social Audit Standards' (SAS) in the world to ensure rigorous, evidence-based social auditing of welfare schemes.",
       "ta": "கிராமப்புற நலத்திட்டங்களின் சமூகத் தணிக்கையை ஆதாரபூர்வமாக உறுதி செய்வதற்காக, உலகிலேயே முதன்முறையாக 'சமூகத் தணிக்கைத் தரங்களை' (SAS) ஊரக வளர்ச்சி அமைச்சகத்துடன் இணைந்து CAG உருவாக்கியுள்ளார்."
@@ -1066,12 +1066,12 @@
     "explanation_ta": "கிராமப்புற நலத்திட்டங்களின் சமூகத் தணிக்கையை ஆதாரபூர்வமாக உறுதி செய்வதற்காக, உலகிலேயே முதன்முறையாக 'சமூகத் தணிக்கைத் தரங்களை' (SAS) ஊரக வளர்ச்சி அமைச்சகத்துடன் இணைந்து CAG உருவாக்கியுள்ளார்.",
     "why_not_others": {
       "A": {
-        "en": "Option B (CAG has banned all social audits by village citizens as unconstitutional) is incorrect in this constitutional context.",
-        "ta": "தெரிவு B (கிராம மக்களால் நடத்தப்படும் அனைத்து சமூகத் தணிக்கைகளையும் அரசியலமைப்பிற்கு முரணானது என CAG தடை செய்துள்ளார்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
-      },
-      "B": {
         "en": "Option A is correct: The CAG partnered with the Ministry of Rural Development to formulate the first-ever 'Social Audit Standards' (SAS) in the world to ensure rigorous, evidence-based social auditing of welfare schemes.",
         "ta": "தெரிவு A சரி: கிராமப்புற நலத்திட்டங்களின் சமூகத் தணிக்கையை ஆதாரபூர்வமாக உறுதி செய்வதற்காக, உலகிலேயே முதன்முறையாக 'சமூகத் தணிக்கைத் தரங்களை' (SAS) ஊரக வளர்ச்சி அமைச்சகத்துடன் இணைந்து CAG உருவாக்கியுள்ளார்."
+      },
+      "B": {
+        "en": "Option B (CAG has banned all social audits by village citizens as unconstitutional) is incorrect in this constitutional context.",
+        "ta": "தெரிவு B (கிராம மக்களால் நடத்தப்படும் அனைத்து சமூகத் தணிக்கைகளையும் அரசியலமைப்பிற்கு முரணானது என CAG தடை செய்துள்ளார்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "C": {
         "en": "Option C (CAG personally conducts every village panchayat social audit meeting in person) is incorrect in this constitutional context.",
@@ -1126,13 +1126,13 @@
     "options": [
       {
         "id": "A",
-        "en": "National Green Tribunal Audit Bench",
-        "ta": "தேசிய பசுமைத் தீர்ப்பாய தணிக்கை அமர்வு"
+        "en": "International Centre for Environment Audit and Sustainable Development (iCED)",
+        "ta": "சுற்றுச்சூழல் தணிக்கை மற்றும் நிலையான வளர்ச்சிக்கான சர்வதேச மையம் (iCED)"
       },
       {
         "id": "B",
-        "en": "International Centre for Environment Audit and Sustainable Development (iCED)",
-        "ta": "சுற்றுச்சூழல் தணிக்கை மற்றும் நிலையான வளர்ச்சிக்கான சர்வதேச மையம் (iCED)"
+        "en": "National Green Tribunal Audit Bench",
+        "ta": "தேசிய பசுமைத் தீர்ப்பாய தணிக்கை அமர்வு"
       },
       {
         "id": "C",
@@ -1146,19 +1146,19 @@
       }
     ],
     "options_en": [
-      "National Green Tribunal Audit Bench",
       "International Centre for Environment Audit and Sustainable Development (iCED)",
+      "National Green Tribunal Audit Bench",
       "Pollution Control Board Accounting Wing",
       "Ministry of Environment Vigilance Cell"
     ],
     "options_ta": [
-      "தேசிய பசுமைத் தீர்ப்பாய தணிக்கை அமர்வு",
       "சுற்றுச்சூழல் தணிக்கை மற்றும் நிலையான வளர்ச்சிக்கான சர்வதேச மையம் (iCED)",
+      "தேசிய பசுமைத் தீர்ப்பாய தணிக்கை அமர்வு",
       "மாசுக் கட்டுப்பாட்டு வாரிய கணக்குப் பிரிவு",
       "சுற்றுச்சூழல் அமைச்சக ஊழல் தடுப்புப் பிரிவு"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "The CAG established the International Centre for Environment Audit and Sustainable Development (iCED) at Jaipur, Rajasthan, as a global centre of excellence for environmental audit.",
       "ta": "ராஜஸ்தான் மாநிலம் ஜெய்ப்பூரில் சுற்றுச்சூழல் தணிக்கை மற்றும் நிலையான வளர்ச்சிக்கான சர்வதேச மையத்தை (iCED) உலகளாவிய சிறந்த மையமாக CAG நிறுவியுள்ளார்."
@@ -1167,12 +1167,12 @@
     "explanation_ta": "ராஜஸ்தான் மாநிலம் ஜெய்ப்பூரில் சுற்றுச்சூழல் தணிக்கை மற்றும் நிலையான வளர்ச்சிக்கான சர்வதேச மையத்தை (iCED) உலகளாவிய சிறந்த மையமாக CAG நிறுவியுள்ளார்.",
     "why_not_others": {
       "A": {
-        "en": "Option B (National Green Tribunal Audit Bench) is incorrect in this constitutional context.",
-        "ta": "தெரிவு B (தேசிய பசுமைத் தீர்ப்பாய தணிக்கை அமர்வு) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
-      },
-      "B": {
         "en": "Option A is correct: The CAG established the International Centre for Environment Audit and Sustainable Development (iCED) at Jaipur, Rajasthan, as a global centre of excellence for environmental audit.",
         "ta": "தெரிவு A சரி: ராஜஸ்தான் மாநிலம் ஜெய்ப்பூரில் சுற்றுச்சூழல் தணிக்கை மற்றும் நிலையான வளர்ச்சிக்கான சர்வதேச மையத்தை (iCED) உலகளாவிய சிறந்த மையமாக CAG நிறுவியுள்ளார்."
+      },
+      "B": {
+        "en": "Option B (National Green Tribunal Audit Bench) is incorrect in this constitutional context.",
+        "ta": "தெரிவு B (தேசிய பசுமைத் தீர்ப்பாய தணிக்கை அமர்வு) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "C": {
         "en": "Option C (Pollution Control Board Accounting Wing) is incorrect in this constitutional context.",
@@ -1232,13 +1232,13 @@
       },
       {
         "id": "B",
-        "en": "Whether valuation methodology was transparent, competitive bidding followed, and maximum realization secured",
-        "ta": "மதிப்பீட்டு முறை வெளிப்படையானதா, போட்டி ஏலம் பின்பற்றப்பட்டதா மற்றும் அதிகபட்ச நிதி ஈட்டப்பட்டதா என்பதை ஆராய்கிறது"
+        "en": "Distributes the disinvestment revenue directly to political parties",
+        "ta": "பங்கு விலக்கல் வருவாயை நேரடியாக அரசியல் கட்சிகளுக்குப் பகிர்ந்தளிக்கிறது"
       },
       {
         "id": "C",
-        "en": "Distributes the disinvestment revenue directly to political parties",
-        "ta": "பங்கு விலக்கல் வருவாயை நேரடியாக அரசியல் கட்சிகளுக்குப் பகிர்ந்தளிக்கிறது"
+        "en": "Whether valuation methodology was transparent, competitive bidding followed, and maximum realization secured",
+        "ta": "மதிப்பீட்டு முறை வெளிப்படையானதா, போட்டி ஏலம் பின்பற்றப்பட்டதா மற்றும் அதிகபட்ச நிதி ஈட்டப்பட்டதா என்பதை ஆராய்கிறது"
       },
       {
         "id": "D",
@@ -1248,18 +1248,18 @@
     ],
     "options_en": [
       "Decides the political timing of the disinvestment announcement",
-      "Whether valuation methodology was transparent, competitive bidding followed, and maximum realization secured",
       "Distributes the disinvestment revenue directly to political parties",
+      "Whether valuation methodology was transparent, competitive bidding followed, and maximum realization secured",
       "Orders the re-nationalization of all private buyers automatically"
     ],
     "options_ta": [
       "பங்கு விலக்கல் அறிவிப்பின் அரசியல் நேரத்தை முடிவு செய்கிறது",
-      "மதிப்பீட்டு முறை வெளிப்படையானதா, போட்டி ஏலம் பின்பற்றப்பட்டதா மற்றும் அதிகபட்ச நிதி ஈட்டப்பட்டதா என்பதை ஆராய்கிறது",
       "பங்கு விலக்கல் வருவாயை நேரடியாக அரசியல் கட்சிகளுக்குப் பகிர்ந்தளிக்கிறது",
+      "மதிப்பீட்டு முறை வெளிப்படையானதா, போட்டி ஏலம் பின்பற்றப்பட்டதா மற்றும் அதிகபட்ச நிதி ஈட்டப்பட்டதா என்பதை ஆராய்கிறது",
       "தனியார் வாங்குபவர்களை மீண்டும் தானாக தேசியமயமாக்க உத்தரவிடுகிறது"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "The CAG examines disinvestment transactions to ensure that asset valuation was fair and robust, competitive bidding procedures were maintained, and public assets were not sold below intrinsic value.",
       "ta": "சொத்துக்களின் மதிப்பீடு நியாயமானதாக இருந்ததா, போட்டி ஏல நடைமுறைகள் பின்பற்றப்பட்டனவா மற்றும் பொதுச் சொத்துக்கள் குறைந்த விலைக்கு விற்கப்படவில்லையா என்பதை உறுதி செய்ய CAG தணிக்கை செய்கிறது."
@@ -1272,12 +1272,12 @@
         "ta": "தெரிவு B (பங்கு விலக்கல் அறிவிப்பின் அரசியல் நேரத்தை முடிவு செய்கிறது) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "B": {
-        "en": "Option A is correct: The CAG examines disinvestment transactions to ensure that asset valuation was fair and robust, competitive bidding procedures were maintained, and public assets were not sold below intrinsic value.",
-        "ta": "தெரிவு A சரி: சொத்துக்களின் மதிப்பீடு நியாயமானதாக இருந்ததா, போட்டி ஏல நடைமுறைகள் பின்பற்றப்பட்டனவா மற்றும் பொதுச் சொத்துக்கள் குறைந்த விலைக்கு விற்கப்படவில்லையா என்பதை உறுதி செய்ய CAG தணிக்கை செய்கிறது."
-      },
-      "C": {
         "en": "Option C (Distributes the disinvestment revenue directly to political parties) is incorrect in this constitutional context.",
         "ta": "தெரிவு C (பங்கு விலக்கல் வருவாயை நேரடியாக அரசியல் கட்சிகளுக்குப் பகிர்ந்தளிக்கிறது) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
+      },
+      "C": {
+        "en": "Option A is correct: The CAG examines disinvestment transactions to ensure that asset valuation was fair and robust, competitive bidding procedures were maintained, and public assets were not sold below intrinsic value.",
+        "ta": "தெரிவு A சரி: சொத்துக்களின் மதிப்பீடு நியாயமானதாக இருந்ததா, போட்டி ஏல நடைமுறைகள் பின்பற்றப்பட்டனவா மற்றும் பொதுச் சொத்துக்கள் குறைந்த விலைக்கு விற்கப்படவில்லையா என்பதை உறுதி செய்ய CAG தணிக்கை செய்கிறது."
       },
       "D": {
         "en": "Option D (Orders the re-nationalization of all private buyers automatically) is incorrect in this constitutional context.",
@@ -1333,13 +1333,13 @@
       },
       {
         "id": "B",
-        "en": "General postal manual guidelines from 1885",
-        "ta": "1885-ம் ஆண்டின் பொது அஞ்சல் கையேடு வழிகாட்டுதல்கள்"
+        "en": "Information Systems Audit Guidelines benchmarked against COBIT and international IT standards",
+        "ta": "COBIT மற்றும் சர்வதேச IT தரநிலைகளுக்கு ஏற்ப வரையறுக்கப்பட்ட தகவல் அமைப்புகள் தணிக்கை வழிகாட்டுதல்கள்"
       },
       {
         "id": "C",
-        "en": "Information Systems Audit Guidelines benchmarked against COBIT and international IT standards",
-        "ta": "COBIT மற்றும் சர்வதேச IT தரநிலைகளுக்கு ஏற்ப வரையறுக்கப்பட்ட தகவல் அமைப்புகள் தணிக்கை வழிகாட்டுதல்கள்"
+        "en": "General postal manual guidelines from 1885",
+        "ta": "1885-ம் ஆண்டின் பொது அஞ்சல் கையேடு வழிகாட்டுதல்கள்"
       },
       {
         "id": "D",
@@ -1349,18 +1349,18 @@
     ],
     "options_en": [
       "Telecommunications telegraph code rules",
-      "General postal manual guidelines from 1885",
       "Information Systems Audit Guidelines benchmarked against COBIT and international IT standards",
+      "General postal manual guidelines from 1885",
       "Railway passenger luggage ticket rules"
     ],
     "options_ta": [
       "தொலைத்தொடர்பு தந்தி குறியீட்டு விதிகள்",
-      "1885-ம் ஆண்டின் பொது அஞ்சல் கையேடு வழிகாட்டுதல்கள்",
       "COBIT மற்றும் சர்வதேச IT தரநிலைகளுக்கு ஏற்ப வரையறுக்கப்பட்ட தகவல் அமைப்புகள் தணிக்கை வழிகாட்டுதல்கள்",
+      "1885-ம் ஆண்டின் பொது அஞ்சல் கையேடு வழிகாட்டுதல்கள்",
       "ரயில்வே பயணிகள் லக்கேஜ் பயணச்சீட்டு விதிகள்"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "The CAG has institutionalized Information Systems (IS) Audit Guidelines benchmarked against global standards like COBIT to evaluate IT security, data integrity, and system efficiency.",
       "ta": "தகவல் தொழில்நுட்பப் பாதுகாப்பு, தரவு ஒருமைப்பாடு மற்றும் அமைப்பின் செயல்திறனை மதிப்பீடு செய்ய COBIT போன்ற சர்வதேசத் தரநிலைகளுடன் கூடிய தகவல் அமைப்புகள் (IS) தணிக்கை வழிகாட்டுதல்களை CAG முறைப்படுத்தியுள்ளார்."
@@ -1373,12 +1373,12 @@
         "ta": "தெரிவு C (தொலைத்தொடர்பு தந்தி குறியீட்டு விதிகள்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "B": {
-        "en": "Option B (General postal manual guidelines from 1885) is incorrect in this constitutional context.",
-        "ta": "தெரிவு B (1885-ம் ஆண்டின் பொது அஞ்சல் கையேடு வழிகாட்டுதல்கள்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
-      },
-      "C": {
         "en": "Option A is correct: The CAG has institutionalized Information Systems (IS) Audit Guidelines benchmarked against global standards like COBIT to evaluate IT security, data integrity, and system efficiency.",
         "ta": "தெரிவு A சரி: தகவல் தொழில்நுட்பப் பாதுகாப்பு, தரவு ஒருமைப்பாடு மற்றும் அமைப்பின் செயல்திறனை மதிப்பீடு செய்ய COBIT போன்ற சர்வதேசத் தரநிலைகளுடன் கூடிய தகவல் அமைப்புகள் (IS) தணிக்கை வழிகாட்டுதல்களை CAG முறைப்படுத்தியுள்ளார்."
+      },
+      "C": {
+        "en": "Option B (General postal manual guidelines from 1885) is incorrect in this constitutional context.",
+        "ta": "தெரிவு B (1885-ம் ஆண்டின் பொது அஞ்சல் கையேடு வழிகாட்டுதல்கள்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "D": {
         "en": "Option D (Railway passenger luggage ticket rules) is incorrect in this constitutional context.",
@@ -1429,8 +1429,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Directs states to leave the GST Council unilaterally",
-        "ta": "ஜிஎஸ்டி கவுன்சிலிலிருந்து தன்னிச்சையாக வெளியேறுமாறு மாநிலங்களுக்கு உத்தரவிடுகிறார்"
+        "en": "Audits the monthly IGST settlement accounts, verifying that apportionment formulas conform to the IGST Act",
+        "ta": "மாதாந்திர IGST தீர்வு கணக்குகளைத் தணிக்கை செய்து, பகிர்வு சூத்திரங்கள் IGST சட்டத்திற்கு உட்பட்டுள்ளதா என்பதைச் சரிபார்க்கிறார்"
       },
       {
         "id": "B",
@@ -1439,8 +1439,8 @@
       },
       {
         "id": "C",
-        "en": "Audits the monthly IGST settlement accounts, verifying that apportionment formulas conform to the IGST Act",
-        "ta": "மாதாந்திர IGST தீர்வு கணக்குகளைத் தணிக்கை செய்து, பகிர்வு சூத்திரங்கள் IGST சட்டத்திற்கு உட்பட்டுள்ளதா என்பதைச் சரிபார்க்கிறார்"
+        "en": "Directs states to leave the GST Council unilaterally",
+        "ta": "ஜிஎஸ்டி கவுன்சிலிலிருந்து தன்னிச்சையாக வெளியேறுமாறு மாநிலங்களுக்கு உத்தரவிடுகிறார்"
       },
       {
         "id": "D",
@@ -1449,19 +1449,19 @@
       }
     ],
     "options_en": [
-      "Directs states to leave the GST Council unilaterally",
-      "Cancels tax collections whenever state revenue falls",
       "Audits the monthly IGST settlement accounts, verifying that apportionment formulas conform to the IGST Act",
+      "Cancels tax collections whenever state revenue falls",
+      "Directs states to leave the GST Council unilaterally",
       "Has no jurisdiction to examine any indirect tax accounts"
     ],
     "options_ta": [
-      "ஜிஎஸ்டி கவுன்சிலிலிருந்து தன்னிச்சையாக வெளியேறுமாறு மாநிலங்களுக்கு உத்தரவிடுகிறார்",
-      "மாநில வருவாய் குறையும் போதெல்லாம் வரி வசூலை ரத்து செய்கிறார்",
       "மாதாந்திர IGST தீர்வு கணக்குகளைத் தணிக்கை செய்து, பகிர்வு சூத்திரங்கள் IGST சட்டத்திற்கு உட்பட்டுள்ளதா என்பதைச் சரிபார்க்கிறார்",
+      "மாநில வருவாய் குறையும் போதெல்லாம் வரி வசூலை ரத்து செய்கிறார்",
+      "ஜிஎஸ்டி கவுன்சிலிலிருந்து தன்னிச்சையாக வெளியேறுமாறு மாநிலங்களுக்கு உத்தரவிடுகிறார்",
       "எந்தவொரு மறைமுக வரிக் கணக்குகளையும் ஆய்வு செய்ய அதிகார வரம்பு இல்லை"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Under Section 16 of the 1971 Act, the CAG audits the accounts of IGST settlement and compensation cess collections, highlighting unapportioned balances in audit reports to Parliament.",
       "ta": "1971 சட்டத்தின் பிரிவு 16-ன் கீழ், IGST தீர்வு மற்றும் இழப்பீட்டு செஸ் கணக்குகளை CAG தணிக்கை செய்து, பகிர்ந்தளிக்கப்படாத இருப்புக்களை நாடாளுமன்ற அறிக்கைகளில் சுட்டிக்காட்டுகிறார்."
@@ -1470,16 +1470,16 @@
     "explanation_ta": "1971 சட்டத்தின் பிரிவு 16-ன் கீழ், IGST தீர்வு மற்றும் இழப்பீட்டு செஸ் கணக்குகளை CAG தணிக்கை செய்து, பகிர்ந்தளிக்கப்படாத இருப்புக்களை நாடாளுமன்ற அறிக்கைகளில் சுட்டிக்காட்டுகிறார்.",
     "why_not_others": {
       "A": {
-        "en": "Option C (Directs states to leave the GST Council unilaterally) is incorrect in this constitutional context.",
-        "ta": "தெரிவு C (ஜிஎஸ்டி கவுன்சிலிலிருந்து தன்னிச்சையாக வெளியேறுமாறு மாநிலங்களுக்கு உத்தரவிடுகிறார்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
+        "en": "Option A is correct: Under Section 16 of the 1971 Act, the CAG audits the accounts of IGST settlement and compensation cess collections, highlighting unapportioned balances in audit reports to Parliament.",
+        "ta": "தெரிவு A சரி: 1971 சட்டத்தின் பிரிவு 16-ன் கீழ், IGST தீர்வு மற்றும் இழப்பீட்டு செஸ் கணக்குகளை CAG தணிக்கை செய்து, பகிர்ந்தளிக்கப்படாத இருப்புக்களை நாடாளுமன்ற அறிக்கைகளில் சுட்டிக்காட்டுகிறார்."
       },
       "B": {
         "en": "Option B (Cancels tax collections whenever state revenue falls) is incorrect in this constitutional context.",
         "ta": "தெரிவு B (மாநில வருவாய் குறையும் போதெல்லாம் வரி வசூலை ரத்து செய்கிறார்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "C": {
-        "en": "Option A is correct: Under Section 16 of the 1971 Act, the CAG audits the accounts of IGST settlement and compensation cess collections, highlighting unapportioned balances in audit reports to Parliament.",
-        "ta": "தெரிவு A சரி: 1971 சட்டத்தின் பிரிவு 16-ன் கீழ், IGST தீர்வு மற்றும் இழப்பீட்டு செஸ் கணக்குகளை CAG தணிக்கை செய்து, பகிர்ந்தளிக்கப்படாத இருப்புக்களை நாடாளுமன்ற அறிக்கைகளில் சுட்டிக்காட்டுகிறார்."
+        "en": "Option C (Directs states to leave the GST Council unilaterally) is incorrect in this constitutional context.",
+        "ta": "தெரிவு C (ஜிஎஸ்டி கவுன்சிலிலிருந்து தன்னிச்சையாக வெளியேறுமாறு மாநிலங்களுக்கு உத்தரவிடுகிறார்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "D": {
         "en": "Option D (Has no jurisdiction to examine any indirect tax accounts) is incorrect in this constitutional context.",
@@ -1535,13 +1535,13 @@
       },
       {
         "id": "B",
-        "en": "Only private international charitable calamity foundations",
-        "ta": "தனியார் சர்வதேச தொண்டு அமைப்புகளின் பேரிடர் நிதிகள் மட்டுமே"
+        "en": "National Disaster Response Fund (NDRF) and State Disaster Response Funds (SDRF)",
+        "ta": "தேசிய பேரிடர் மீட்பு நிதி (NDRF) மற்றும் மாநில பேரிடர் மீட்பு நிதிகள் (SDRF)"
       },
       {
         "id": "C",
-        "en": "National Disaster Response Fund (NDRF) and State Disaster Response Funds (SDRF)",
-        "ta": "தேசிய பேரிடர் மீட்பு நிதி (NDRF) மற்றும் மாநில பேரிடர் மீட்பு நிதிகள் (SDRF)"
+        "en": "Only private international charitable calamity foundations",
+        "ta": "தனியார் சர்வதேச தொண்டு அமைப்புகளின் பேரிடர் நிதிகள் மட்டுமே"
       },
       {
         "id": "D",
@@ -1551,18 +1551,18 @@
     ],
     "options_en": [
       "Personal life insurance policies of relief workers",
-      "Only private international charitable calamity foundations",
       "National Disaster Response Fund (NDRF) and State Disaster Response Funds (SDRF)",
+      "Only private international charitable calamity foundations",
       "Foreign disaster relief aid given to neighboring nations"
     ],
     "options_ta": [
       "நிவாரணப் பணியாளர்களின் தனிப்பட்ட ஆயுள் காப்பீட்டுக் கொள்கைகள்",
-      "தனியார் சர்வதேச தொண்டு அமைப்புகளின் பேரிடர் நிதிகள் மட்டுமே",
       "தேசிய பேரிடர் மீட்பு நிதி (NDRF) மற்றும் மாநில பேரிடர் மீட்பு நிதிகள் (SDRF)",
+      "தனியார் சர்வதேச தொண்டு அமைப்புகளின் பேரிடர் நிதிகள் மட்டுமே",
       "அண்டை நாடுகளுக்கு வழங்கப்படும் வெளிநாட்டு பேரிடர் நிவாரண உதவிகள்"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "The accounts of the National Disaster Response Fund (NDRF) and State Disaster Response Funds (SDRF) are audited annually by the CAG in accordance with the Disaster Management Act, 2005.",
       "ta": "2005-ம் ஆண்டின் பேரிடர் மேலாண்மைச் சட்டத்தின்படி தேசிய பேரிடர் மீட்பு நிதி (NDRF) மற்றும் மாநில பேரிடர் மீட்பு நிதிகளின் (SDRF) கணக்குகள் ஆண்டுதோறும் சி.ஏ.ஜி-யால் தணிக்கை செய்யப்படுகின்றன."
@@ -1575,12 +1575,12 @@
         "ta": "தெரிவு C (நிவாரணப் பணியாளர்களின் தனிப்பட்ட ஆயுள் காப்பீட்டுக் கொள்கைகள்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "B": {
-        "en": "Option B (Only private international charitable calamity foundations) is incorrect in this constitutional context.",
-        "ta": "தெரிவு B (தனியார் சர்வதேச தொண்டு அமைப்புகளின் பேரிடர் நிதிகள் மட்டுமே) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
-      },
-      "C": {
         "en": "Option A is correct: The accounts of the National Disaster Response Fund (NDRF) and State Disaster Response Funds (SDRF) are audited annually by the CAG in accordance with the Disaster Management Act, 2005.",
         "ta": "தெரிவு A சரி: 2005-ம் ஆண்டின் பேரிடர் மேலாண்மைச் சட்டத்தின்படி தேசிய பேரிடர் மீட்பு நிதி (NDRF) மற்றும் மாநில பேரிடர் மீட்பு நிதிகளின் (SDRF) கணக்குகள் ஆண்டுதோறும் சி.ஏ.ஜி-யால் தணிக்கை செய்யப்படுகின்றன."
+      },
+      "C": {
+        "en": "Option B (Only private international charitable calamity foundations) is incorrect in this constitutional context.",
+        "ta": "தெரிவு B (தனியார் சர்வதேச தொண்டு அமைப்புகளின் பேரிடர் நிதிகள் மட்டுமே) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "D": {
         "en": "Option D (Foreign disaster relief aid given to neighboring nations) is incorrect in this constitutional context.",
@@ -1636,13 +1636,13 @@
       },
       {
         "id": "B",
-        "en": "Permanent Ambassador of India to the UN General Assembly",
-        "ta": "ஐ.நா பொதுச் சபைக்கான இந்தியாவின் நிரந்தரத் தூதர்"
+        "en": "External Auditor of United Nations specialized agencies, including WHO, ILO, and IAEA",
+        "ta": "உலக சுகாதார நிறுவனம் (WHO), சர்வதேச தொழிலாளர் அமைப்பு (ILO), சர்வதேச அணுசக்தி முகமை (IAEA) உள்ளிட்ட ஐ.நா அமைப்புகளின் வெளித் தணிக்கையாளர்"
       },
       {
         "id": "C",
-        "en": "External Auditor of United Nations specialized agencies, including WHO, ILO, and IAEA",
-        "ta": "உலக சுகாதார நிறுவனம் (WHO), சர்வதேச தொழிலாளர் அமைப்பு (ILO), சர்வதேச அணுசக்தி முகமை (IAEA) உள்ளிட்ட ஐ.நா அமைப்புகளின் வெளித் தணிக்கையாளர்"
+        "en": "Permanent Ambassador of India to the UN General Assembly",
+        "ta": "ஐ.நா பொதுச் சபைக்கான இந்தியாவின் நிரந்தரத் தூதர்"
       },
       {
         "id": "D",
@@ -1652,18 +1652,18 @@
     ],
     "options_en": [
       "Judge of the International Court of Justice at The Hague",
-      "Permanent Ambassador of India to the UN General Assembly",
       "External Auditor of United Nations specialized agencies, including WHO, ILO, and IAEA",
+      "Permanent Ambassador of India to the UN General Assembly",
       "Director General of the World Bank"
     ],
     "options_ta": [
       "ஹேக்கில் உள்ள சர்வதேச நீதிமன்றத்தின் நீதிபதி",
-      "ஐ.நா பொதுச் சபைக்கான இந்தியாவின் நிரந்தரத் தூதர்",
       "உலக சுகாதார நிறுவனம் (WHO), சர்வதேச தொழிலாளர் அமைப்பு (ILO), சர்வதேச அணுசக்தி முகமை (IAEA) உள்ளிட்ட ஐ.நா அமைப்புகளின் வெளித் தணிக்கையாளர்",
+      "ஐ.நா பொதுச் சபைக்கான இந்தியாவின் நிரந்தரத் தூதர்",
       "உலக வங்கியின் தலைமை இயக்குநர்"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Due to its impeccable professional reputation, the CAG of India is repeatedly elected as the External Auditor for UN agencies, including WHO, Food and Agriculture Organization (FAO), and IAEA.",
       "ta": "தனது சிறந்த தொழில்முறை நம்பகத்தன்மையின் காரணமாக, உலக சுகாதார நிறுவனம் (WHO), FAO மற்றும் IAEA உள்ளிட்ட ஐ.நா அமைப்புகளின் வெளித் தணிக்கையாளராக இந்திய CAG தொடர்ந்து தேர்ந்தெடுக்கப்படுகிறார்."
@@ -1676,12 +1676,12 @@
         "ta": "தெரிவு C (ஹேக்கில் உள்ள சர்வதேச நீதிமன்றத்தின் நீதிபதி) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "B": {
-        "en": "Option B (Permanent Ambassador of India to the UN General Assembly) is incorrect in this constitutional context.",
-        "ta": "தெரிவு B (ஐ.நா பொதுச் சபைக்கான இந்தியாவின் நிரந்தரத் தூதர்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
-      },
-      "C": {
         "en": "Option A is correct: Due to its impeccable professional reputation, the CAG of India is repeatedly elected as the External Auditor for UN agencies, including WHO, Food and Agriculture Organization (FAO), and IAEA.",
         "ta": "தெரிவு A சரி: தனது சிறந்த தொழில்முறை நம்பகத்தன்மையின் காரணமாக, உலக சுகாதார நிறுவனம் (WHO), FAO மற்றும் IAEA உள்ளிட்ட ஐ.நா அமைப்புகளின் வெளித் தணிக்கையாளராக இந்திய CAG தொடர்ந்து தேர்ந்தெடுக்கப்படுகிறார்."
+      },
+      "C": {
+        "en": "Option B (Permanent Ambassador of India to the UN General Assembly) is incorrect in this constitutional context.",
+        "ta": "தெரிவு B (ஐ.நா பொதுச் சபைக்கான இந்தியாவின் நிரந்தரத் தூதர்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "D": {
         "en": "Option D (Director General of the World Bank) is incorrect in this constitutional context.",
@@ -1742,29 +1742,29 @@
       },
       {
         "id": "C",
-        "en": "Formal explanatory responses submitted by ministries detailing remedial action taken on CAG audit paras",
-        "ta": "CAG தணிக்கைப் பத்திகள் மீது எடுக்கப்பட்ட தீர்வு நடவடிக்கைகளை விளக்கி அமைச்சகங்களால் சமர்ப்பிக்கப்படும் முறையான பதில்கள்"
+        "en": "Political leaflets distributed to voters during general elections",
+        "ta": "பொதுத் தேர்தலின் போது வாக்காளர்களுக்கு விநியோகிக்கப்படும் அரசியல் துண்டுப் பிரசுரங்கள்"
       },
       {
         "id": "D",
-        "en": "Political leaflets distributed to voters during general elections",
-        "ta": "பொதுத் தேர்தலின் போது வாக்காளர்களுக்கு விநியோகிக்கப்படும் அரசியல் துண்டுப் பிரசுரங்கள்"
+        "en": "Formal explanatory responses submitted by ministries detailing remedial action taken on CAG audit paras",
+        "ta": "CAG தணிக்கைப் பத்திகள் மீது எடுக்கப்பட்ட தீர்வு நடவடிக்கைகளை விளக்கி அமைச்சகங்களால் சமர்ப்பிக்கப்படும் முறையான பதில்கள்"
       }
     ],
     "options_en": [
       "Judicial judgments passed by the Supreme Court in contempt cases",
       "Secret police reports filed against government auditors",
-      "Formal explanatory responses submitted by ministries detailing remedial action taken on CAG audit paras",
-      "Political leaflets distributed to voters during general elections"
+      "Political leaflets distributed to voters during general elections",
+      "Formal explanatory responses submitted by ministries detailing remedial action taken on CAG audit paras"
     ],
     "options_ta": [
       "நீதிமன்ற அவமதிப்பு வழக்குகளில் உச்ச நீதிமன்றம் பிறப்பிக்கும் தீர்ப்புகள்",
       "அரசு தணிக்கையாளர்களுக்கு எதிராகத் தாக்கல் செய்யப்படும் ரகசியக் காவல் அறிக்கைகள்",
-      "CAG தணிக்கைப் பத்திகள் மீது எடுக்கப்பட்ட தீர்வு நடவடிக்கைகளை விளக்கி அமைச்சகங்களால் சமர்ப்பிக்கப்படும் முறையான பதில்கள்",
-      "பொதுத் தேர்தலின் போது வாக்காளர்களுக்கு விநியோகிக்கப்படும் அரசியல் துண்டுப் பிரசுரங்கள்"
+      "பொதுத் தேர்தலின் போது வாக்காளர்களுக்கு விநியோகிக்கப்படும் அரசியல் துண்டுப் பிரசுரங்கள்",
+      "CAG தணிக்கைப் பத்திகள் மீது எடுக்கப்பட்ட தீர்வு நடவடிக்கைகளை விளக்கி அமைச்சகங்களால் சமர்ப்பிக்கப்படும் முறையான பதில்கள்"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Ministries must submit Action Taken Notes (ATNs) within a prescribed timeframe (usually 4 to 6 months) explaining corrective steps taken on CAG audit findings, which are vetted by CAG before PAC review.",
       "ta": "CAG தணிக்கைக் கண்டுபிடிப்புகள் மீது எடுக்கப்பட்ட திருத்த நடவடிக்கைகளை விளக்கி அமைச்சகங்கள் குறிப்பிட்ட காலத்திற்குள் (4 முதல் 6 மாதங்கள்) நடவடிக்கை குறிப்புகளை (ATNs) சமர்ப்பிக்க வேண்டும்; இதை PAC ஆய்வுக்கு முன் CAG சரிபார்க்கிறார்."
@@ -1781,12 +1781,12 @@
         "ta": "தெரிவு B (அரசு தணிக்கையாளர்களுக்கு எதிராகத் தாக்கல் செய்யப்படும் ரகசியக் காவல் அறிக்கைகள்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "C": {
-        "en": "Option A is correct: Ministries must submit Action Taken Notes (ATNs) within a prescribed timeframe (usually 4 to 6 months) explaining corrective steps taken on CAG audit findings, which are vetted by CAG before PAC review.",
-        "ta": "தெரிவு A சரி: CAG தணிக்கைக் கண்டுபிடிப்புகள் மீது எடுக்கப்பட்ட திருத்த நடவடிக்கைகளை விளக்கி அமைச்சகங்கள் குறிப்பிட்ட காலத்திற்குள் (4 முதல் 6 மாதங்கள்) நடவடிக்கை குறிப்புகளை (ATNs) சமர்ப்பிக்க வேண்டும்; இதை PAC ஆய்வுக்கு முன் CAG சரிபார்க்கிறார்."
-      },
-      "D": {
         "en": "Option D (Political leaflets distributed to voters during general elections) is incorrect in this constitutional context.",
         "ta": "தெரிவு D (பொதுத் தேர்தலின் போது வாக்காளர்களுக்கு விநியோகிக்கப்படும் அரசியல் துண்டுப் பிரசுரங்கள்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
+      },
+      "D": {
+        "en": "Option A is correct: Ministries must submit Action Taken Notes (ATNs) within a prescribed timeframe (usually 4 to 6 months) explaining corrective steps taken on CAG audit findings, which are vetted by CAG before PAC review.",
+        "ta": "தெரிவு A சரி: CAG தணிக்கைக் கண்டுபிடிப்புகள் மீது எடுக்கப்பட்ட திருத்த நடவடிக்கைகளை விளக்கி அமைச்சகங்கள் குறிப்பிட்ட காலத்திற்குள் (4 முதல் 6 மாதங்கள்) நடவடிக்கை குறிப்புகளை (ATNs) சமர்ப்பிக்க வேண்டும்; இதை PAC ஆய்வுக்கு முன் CAG சரிபார்க்கிறார்."
       }
     },
     "tnpsc_tip": {
@@ -1838,13 +1838,13 @@
       },
       {
         "id": "B",
-        "en": "Issuing sovereign bonds directly to foreign stock markets",
-        "ta": "வெளிநாட்டு பங்குச் சந்தைகளுக்கு இறையாண்மைப் பத்திரங்களை நேரடியாக வெளியிடுதல்"
+        "en": "Verifying that borrowings comply with limits set by law, debt servicing is accounted for, and funds utilized productively",
+        "ta": "கடன்கள் சட்டத்தால் நிர்ணயிக்கப்பட்ட வரம்புகளுக்குள் உள்ளதா, கடன் திருப்பிச் செலுத்துதல் சரியாகக் கணக்கிடப்படுகிறதா மற்றும் நிதி ஆக்கப்பூர்வமாகப் பயன்படுத்தப்படுகிறதா என்பதைச் சரிபார்த்தல்"
       },
       {
         "id": "C",
-        "en": "Verifying that borrowings comply with limits set by law, debt servicing is accounted for, and funds utilized productively",
-        "ta": "கடன்கள் சட்டத்தால் நிர்ணயிக்கப்பட்ட வரம்புகளுக்குள் உள்ளதா, கடன் திருப்பிச் செலுத்துதல் சரியாகக் கணக்கிடப்படுகிறதா மற்றும் நிதி ஆக்கப்பூர்வமாகப் பயன்படுத்தப்படுகிறதா என்பதைச் சரிபார்த்தல்"
+        "en": "Issuing sovereign bonds directly to foreign stock markets",
+        "ta": "வெளிநாட்டு பங்குச் சந்தைகளுக்கு இறையாண்மைப் பத்திரங்களை நேரடியாக வெளியிடுதல்"
       },
       {
         "id": "D",
@@ -1854,18 +1854,18 @@
     ],
     "options_en": [
       "Cancelling the national debt unilaterally by executive proclamation",
-      "Issuing sovereign bonds directly to foreign stock markets",
       "Verifying that borrowings comply with limits set by law, debt servicing is accounted for, and funds utilized productively",
+      "Issuing sovereign bonds directly to foreign stock markets",
       "Prohibiting State Governments from preparing any budget"
     ],
     "options_ta": [
       "நிர்வாகப் பிரகடனம் மூலம் தேசியக் கடனைத் தன்னிச்சையாக ரத்து செய்தல்",
-      "வெளிநாட்டு பங்குச் சந்தைகளுக்கு இறையாண்மைப் பத்திரங்களை நேரடியாக வெளியிடுதல்",
       "கடன்கள் சட்டத்தால் நிர்ணயிக்கப்பட்ட வரம்புகளுக்குள் உள்ளதா, கடன் திருப்பிச் செலுத்துதல் சரியாகக் கணக்கிடப்படுகிறதா மற்றும் நிதி ஆக்கப்பூர்வமாகப் பயன்படுத்தப்படுகிறதா என்பதைச் சரிபார்த்தல்",
+      "வெளிநாட்டு பங்குச் சந்தைகளுக்கு இறையாண்மைப் பத்திரங்களை நேரடியாக வெளியிடுதல்",
       "மாநில அரசாங்கங்கள் எந்தவொரு பட்ஜெட்டையும் தயாரிப்பதைத் தடை செய்தல்"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "The CAG audits public debt transactions to ensure borrowings conform to constitutional limits under Articles 292 (Union) and 293 (States), interest payments are accurate, and debt sustainability norms observed.",
       "ta": "கடன்கள் சரத்து 292 (மத்திய அரசு) மற்றும் 293 (மாநிலங்கள்) ஆகியவற்றின் அரசியலமைப்பு வரம்புகளுக்கு உட்பட்டுள்ளதா, வட்டி செலுத்தல்கள் சரியாக உள்ளதா மற்றும் கடன் நிலைத்தன்மை விதிகள் பின்பற்றப்படுகின்றனவா என்பதை CAG தணிக்கை செய்கிறார்."
@@ -1878,12 +1878,12 @@
         "ta": "தெரிவு C (நிர்வாகப் பிரகடனம் மூலம் தேசியக் கடனைத் தன்னிச்சையாக ரத்து செய்தல்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "B": {
-        "en": "Option B (Issuing sovereign bonds directly to foreign stock markets) is incorrect in this constitutional context.",
-        "ta": "தெரிவு B (வெளிநாட்டு பங்குச் சந்தைகளுக்கு இறையாண்மைப் பத்திரங்களை நேரடியாக வெளியிடுதல்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
-      },
-      "C": {
         "en": "Option A is correct: The CAG audits public debt transactions to ensure borrowings conform to constitutional limits under Articles 292 (Union) and 293 (States), interest payments are accurate, and debt sustainability norms observed.",
         "ta": "தெரிவு A சரி: கடன்கள் சரத்து 292 (மத்திய அரசு) மற்றும் 293 (மாநிலங்கள்) ஆகியவற்றின் அரசியலமைப்பு வரம்புகளுக்கு உட்பட்டுள்ளதா, வட்டி செலுத்தல்கள் சரியாக உள்ளதா மற்றும் கடன் நிலைத்தன்மை விதிகள் பின்பற்றப்படுகின்றனவா என்பதை CAG தணிக்கை செய்கிறார்."
+      },
+      "C": {
+        "en": "Option B (Issuing sovereign bonds directly to foreign stock markets) is incorrect in this constitutional context.",
+        "ta": "தெரிவு B (வெளிநாட்டு பங்குச் சந்தைகளுக்கு இறையாண்மைப் பத்திரங்களை நேரடியாக வெளியிடுதல்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "D": {
         "en": "Option D (Prohibiting State Governments from preparing any budget) is incorrect in this constitutional context.",
@@ -1939,13 +1939,13 @@
       },
       {
         "id": "B",
-        "en": "T.N. Chaturvedi",
-        "ta": "டி.என். சதுர்வேதி"
+        "en": "C.G. Somiah",
+        "ta": "சி.ஜி. சோமையா"
       },
       {
         "id": "C",
-        "en": "C.G. Somiah",
-        "ta": "சி.ஜி. சோமையா"
+        "en": "T.N. Chaturvedi",
+        "ta": "டி.என். சதுர்வேதி"
       },
       {
         "id": "D",
@@ -1955,18 +1955,18 @@
     ],
     "options_en": [
       "V.K. Shunglu",
-      "T.N. Chaturvedi",
       "C.G. Somiah",
+      "T.N. Chaturvedi",
       "A.K. Roy"
     ],
     "options_ta": [
       "வி.கே. சுங்லு",
-      "டி.என். சதுர்வேதி",
       "சி.ஜி. சோமையா",
+      "டி.என். சதுர்வேதி",
       "ஏ.கே. ராய்"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "C.G. Somiah was the 8th CAG of India (1990-1996). He was an IAS officer from the Odisha cadre who authored 'The Honest Always Stand Alone' documenting his tenure in high constitutional offices.",
       "ta": "சி.ஜி. சோமையா இந்தியாவின் 8-வது CAG (1990-1996) ஆவார். ஒடிசா கேடரைச் சேர்ந்த இவர், உயர் அரசியலமைப்புப் பதவிகளில் பணியாற்றிய தனது அனுபவங்களை 'The Honest Always Stand Alone' என்ற நூலாக எழுதினார்."
@@ -1979,12 +1979,12 @@
         "ta": "தெரிவு C (வி.கே. சுங்லு) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "B": {
-        "en": "Option B (T.N. Chaturvedi) is incorrect in this constitutional context.",
-        "ta": "தெரிவு B (டி.என். சதுர்வேதி) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
-      },
-      "C": {
         "en": "Option A is correct: C.G. Somiah was the 8th CAG of India (1990-1996). He was an IAS officer from the Odisha cadre who authored 'The Honest Always Stand Alone' documenting his tenure in high constitutional offices.",
         "ta": "தெரிவு A சரி: சி.ஜி. சோமையா இந்தியாவின் 8-வது CAG (1990-1996) ஆவார். ஒடிசா கேடரைச் சேர்ந்த இவர், உயர் அரசியலமைப்புப் பதவிகளில் பணியாற்றிய தனது அனுபவங்களை 'The Honest Always Stand Alone' என்ற நூலாக எழுதினார்."
+      },
+      "C": {
+        "en": "Option B (T.N. Chaturvedi) is incorrect in this constitutional context.",
+        "ta": "தெரிவு B (டி.என். சதுர்வேதி) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "D": {
         "en": "Option D (A.K. Roy) is incorrect in this constitutional context.",
@@ -2146,29 +2146,29 @@
       },
       {
         "id": "C",
-        "en": "Substantial unutilized funds, delays in sewage treatment plant (STP) construction, and lack of long-term ecological planning",
-        "ta": "பயன்படுத்தப்படாத பெருமளவிலான நிதி, கழிவுநீர் சுத்திகரிப்பு நிலையங்கள் (STP) அமைப்பதில் தாமதம் மற்றும் நீண்டகால சூழலியல் திட்டமிடல் இல்லாமை"
+        "en": "Recommended the immediate closure of all municipal corporations along the river",
+        "ta": "நதிக்கரையோர அனைத்து மாநகராட்சிகளையும் உடனடியாக மூடப் பரிந்துரைத்தது"
       },
       {
         "id": "D",
-        "en": "Recommended the immediate closure of all municipal corporations along the river",
-        "ta": "நதிக்கரையோர அனைத்து மாநகராட்சிகளையும் உடனடியாக மூடப் பரிந்துரைத்தது"
+        "en": "Substantial unutilized funds, delays in sewage treatment plant (STP) construction, and lack of long-term ecological planning",
+        "ta": "பயன்படுத்தப்படாத பெருமளவிலான நிதி, கழிவுநீர் சுத்திகரிப்பு நிலையங்கள் (STP) அமைப்பதில் தாமதம் மற்றும் நீண்டகால சூழலியல் திட்டமிடல் இல்லாமை"
       }
     ],
     "options_en": [
       "Ordered the complete diversion of the river into the Arabian Sea",
       "Certified that the river Ganga was 100% clean and free of all bacteria",
-      "Substantial unutilized funds, delays in sewage treatment plant (STP) construction, and lack of long-term ecological planning",
-      "Recommended the immediate closure of all municipal corporations along the river"
+      "Recommended the immediate closure of all municipal corporations along the river",
+      "Substantial unutilized funds, delays in sewage treatment plant (STP) construction, and lack of long-term ecological planning"
     ],
     "options_ta": [
       "கங்கை நதியை முழுமையாக அரபிக்கடலுக்குத் திருப்பிவிட உத்தரவிட்டது",
       "கங்கை நதி 100% தூய்மையடைந்து அனைத்து பாக்டீரியாக்களும் இன்றி உள்ளது என சான்றளித்தது",
-      "பயன்படுத்தப்படாத பெருமளவிலான நிதி, கழிவுநீர் சுத்திகரிப்பு நிலையங்கள் (STP) அமைப்பதில் தாமதம் மற்றும் நீண்டகால சூழலியல் திட்டமிடல் இல்லாமை",
-      "நதிக்கரையோர அனைத்து மாநகராட்சிகளையும் உடனடியாக மூடப் பரிந்துரைத்தது"
+      "நதிக்கரையோர அனைத்து மாநகராட்சிகளையும் உடனடியாக மூடப் பரிந்துரைத்தது",
+      "பயன்படுத்தப்படாத பெருமளவிலான நிதி, கழிவுநீர் சுத்திகரிப்பு நிலையங்கள் (STP) அமைப்பதில் தாமதம் மற்றும் நீண்டகால சூழலியல் திட்டமிடல் இல்லாமை"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "The CAG's 2017 performance audit on the Rejuvenation of River Ganga highlighted slow utilization of funds, deficiencies in sewage treatment infrastructure, and shortfalls in water quality monitoring.",
       "ta": "கங்கை நதியை புனரமைத்தல் மீதான சி.ஏ.ஜி-யின் 2017 செயல்திறன் தணிக்கை, நிதிப் பயன்பாட்டில் உள்ள மந்தநிலை, கழிவுநீர் சுத்திகரிப்பு உள்கட்டமைப்பு குறைபாடுகள் மற்றும் நீர் தரக் கண்காணிப்பு பற்றாக்குறைகளை சுட்டிக்காட்டியது."
@@ -2185,12 +2185,12 @@
         "ta": "தெரிவு B (கங்கை நதி 100% தூய்மையடைந்து அனைத்து பாக்டீரியாக்களும் இன்றி உள்ளது என சான்றளித்தது) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "C": {
-        "en": "Option A is correct: The CAG's 2017 performance audit on the Rejuvenation of River Ganga highlighted slow utilization of funds, deficiencies in sewage treatment infrastructure, and shortfalls in water quality monitoring.",
-        "ta": "தெரிவு A சரி: கங்கை நதியை புனரமைத்தல் மீதான சி.ஏ.ஜி-யின் 2017 செயல்திறன் தணிக்கை, நிதிப் பயன்பாட்டில் உள்ள மந்தநிலை, கழிவுநீர் சுத்திகரிப்பு உள்கட்டமைப்பு குறைபாடுகள் மற்றும் நீர் தரக் கண்காணிப்பு பற்றாக்குறைகளை சுட்டிக்காட்டியது."
-      },
-      "D": {
         "en": "Option D (Recommended the immediate closure of all municipal corporations along the river) is incorrect in this constitutional context.",
         "ta": "தெரிவு D (நதிக்கரையோர அனைத்து மாநகராட்சிகளையும் உடனடியாக மூடப் பரிந்துரைத்தது) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
+      },
+      "D": {
+        "en": "Option A is correct: The CAG's 2017 performance audit on the Rejuvenation of River Ganga highlighted slow utilization of funds, deficiencies in sewage treatment infrastructure, and shortfalls in water quality monitoring.",
+        "ta": "தெரிவு A சரி: கங்கை நதியை புனரமைத்தல் மீதான சி.ஏ.ஜி-யின் 2017 செயல்திறன் தணிக்கை, நிதிப் பயன்பாட்டில் உள்ள மந்தநிலை, கழிவுநீர் சுத்திகரிப்பு உள்கட்டமைப்பு குறைபாடுகள் மற்றும் நீர் தரக் கண்காணிப்பு பற்றாக்குறைகளை சுட்டிக்காட்டியது."
       }
     },
     "tnpsc_tip": {
@@ -2247,29 +2247,29 @@
       },
       {
         "id": "C",
-        "en": "Conducts an all-India coordinated audit covering both Central ministries and state implementing departments",
-        "ta": "மத்திய அமைச்சகங்கள் மற்றும் மாநில செயலாக்கத் துறைகள் ஆகிய இரண்டையுமே உள்ளடக்கிய அகில இந்திய ஒருங்கிணைந்த தணிக்கையை நடத்துகிறார்"
+        "en": "Appoints foreign private auditors to inspect village beneficiaries",
+        "ta": "கிராமப்புறப் பயனாளிகளை ஆய்வு செய்ய வெளிநாட்டுத் தனியார் தணிக்கையாளர்களை நியமிக்கிறார்"
       },
       {
         "id": "D",
-        "en": "Appoints foreign private auditors to inspect village beneficiaries",
-        "ta": "கிராமப்புறப் பயனாளிகளை ஆய்வு செய்ய வெளிநாட்டுத் தனியார் தணிக்கையாளர்களை நியமிக்கிறார்"
+        "en": "Conducts an all-India coordinated audit covering both Central ministries and state implementing departments",
+        "ta": "மத்திய அமைச்சகங்கள் மற்றும் மாநில செயலாக்கத் துறைகள் ஆகிய இரண்டையுமே உள்ளடக்கிய அகில இந்திய ஒருங்கிணைந்த தணிக்கையை நடத்துகிறார்"
       }
     ],
     "options_en": [
       "Directs states to stop funding centrally sponsored schemes immediately",
       "Audits only the central government ministry and completely ignores state field offices",
-      "Conducts an all-India coordinated audit covering both Central ministries and state implementing departments",
-      "Appoints foreign private auditors to inspect village beneficiaries"
+      "Appoints foreign private auditors to inspect village beneficiaries",
+      "Conducts an all-India coordinated audit covering both Central ministries and state implementing departments"
     ],
     "options_ta": [
       "மத்திய நிதியுதவித் திட்டங்களுக்கு நிதி வழங்குவதை உடனடியாக நிறுத்துமாறு மாநிலங்களுக்கு உத்தரவிடுகிறார்",
       "மத்திய அமைச்சகத்தை மட்டுமே தணிக்கை செய்து, மாநில கள அலுவலகங்களை முற்றிலும் புறக்கணிக்கிறார்",
-      "மத்திய அமைச்சகங்கள் மற்றும் மாநில செயலாக்கத் துறைகள் ஆகிய இரண்டையுமே உள்ளடக்கிய அகில இந்திய ஒருங்கிணைந்த தணிக்கையை நடத்துகிறார்",
-      "கிராமப்புறப் பயனாளிகளை ஆய்வு செய்ய வெளிநாட்டுத் தனியார் தணிக்கையாளர்களை நியமிக்கிறார்"
+      "கிராமப்புறப் பயனாளிகளை ஆய்வு செய்ய வெளிநாட்டுத் தனியார் தணிக்கையாளர்களை நியமிக்கிறார்",
+      "மத்திய அமைச்சகங்கள் மற்றும் மாநில செயலாக்கத் துறைகள் ஆகிய இரண்டையுமே உள்ளடக்கிய அகில இந்திய ஒருங்கிணைந்த தணிக்கையை நடத்துகிறார்"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "For major Centrally Sponsored Schemes (like Samagra Shiksha, PM Awas Yojana, Ayushman Bharat), the CAG designs a pan-India audit guidelines framework executed simultaneously across all States by local Accountants General.",
       "ta": "சமக்ர சிக்ஷா, பி.எம் ஆவாஸ் யோஜனா போன்ற திட்டங்களுக்கு, நாடு தழுவிய தணிக்கை வழிகாட்டுதலை CAG உருவாக்கி, அனைத்து மாநிலங்களிலும் உள்ள உள்ளூர் கணக்காயர்கள் மூலம் ஒரே நேரத்தில் தணிக்கை செய்கிறார்."
@@ -2286,12 +2286,12 @@
         "ta": "தெரிவு B (மத்திய அமைச்சகத்தை மட்டுமே தணிக்கை செய்து, மாநில கள அலுவலகங்களை முற்றிலும் புறக்கணிக்கிறார்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "C": {
-        "en": "Option A is correct: For major Centrally Sponsored Schemes (like Samagra Shiksha, PM Awas Yojana, Ayushman Bharat), the CAG designs a pan-India audit guidelines framework executed simultaneously across all States by local Accountants General.",
-        "ta": "தெரிவு A சரி: சமக்ர சிக்ஷா, பி.எம் ஆவாஸ் யோஜனா போன்ற திட்டங்களுக்கு, நாடு தழுவிய தணிக்கை வழிகாட்டுதலை CAG உருவாக்கி, அனைத்து மாநிலங்களிலும் உள்ள உள்ளூர் கணக்காயர்கள் மூலம் ஒரே நேரத்தில் தணிக்கை செய்கிறார்."
-      },
-      "D": {
         "en": "Option D (Appoints foreign private auditors to inspect village beneficiaries) is incorrect in this constitutional context.",
         "ta": "தெரிவு D (கிராமப்புறப் பயனாளிகளை ஆய்வு செய்ய வெளிநாட்டுத் தனியார் தணிக்கையாளர்களை நியமிக்கிறார்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
+      },
+      "D": {
+        "en": "Option A is correct: For major Centrally Sponsored Schemes (like Samagra Shiksha, PM Awas Yojana, Ayushman Bharat), the CAG designs a pan-India audit guidelines framework executed simultaneously across all States by local Accountants General.",
+        "ta": "தெரிவு A சரி: சமக்ர சிக்ஷா, பி.எம் ஆவாஸ் யோஜனா போன்ற திட்டங்களுக்கு, நாடு தழுவிய தணிக்கை வழிகாட்டுதலை CAG உருவாக்கி, அனைத்து மாநிலங்களிலும் உள்ள உள்ளூர் கணக்காயர்கள் மூலம் ஒரே நேரத்தில் தணிக்கை செய்கிறார்."
       }
     },
     "tnpsc_tip": {
@@ -2338,8 +2338,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Institute of Chartered Accountants of India Final Exam",
-        "ta": "இந்தியப் பட்டயக் கணக்காளர்கள் நிறுவன இறுதித் தேர்வு"
+        "en": "UPSC Civil Services Examination",
+        "ta": "UPSC குடிமைப் பணிகள் தேர்வு (Civil Services Examination)"
       },
       {
         "id": "B",
@@ -2348,8 +2348,8 @@
       },
       {
         "id": "C",
-        "en": "UPSC Civil Services Examination",
-        "ta": "UPSC குடிமைப் பணிகள் தேர்வு (Civil Services Examination)"
+        "en": "Institute of Chartered Accountants of India Final Exam",
+        "ta": "இந்தியப் பட்டயக் கணக்காளர்கள் நிறுவன இறுதித் தேர்வு"
       },
       {
         "id": "D",
@@ -2358,19 +2358,19 @@
       }
     ],
     "options_en": [
-      "Institute of Chartered Accountants of India Final Exam",
-      "Staff Selection Commission Combined Graduate Level Exam",
       "UPSC Civil Services Examination",
+      "Staff Selection Commission Combined Graduate Level Exam",
+      "Institute of Chartered Accountants of India Final Exam",
       "Reserve Bank of India Grade B Officer Exam"
     ],
     "options_ta": [
-      "இந்தியப் பட்டயக் கணக்காளர்கள் நிறுவன இறுதித் தேர்வு",
-      "Staff Selection Commission ஒருங்கிணைந்த பட்டதாரி நிலைத் தேர்வு",
       "UPSC குடிமைப் பணிகள் தேர்வு (Civil Services Examination)",
+      "Staff Selection Commission ஒருங்கிணைந்த பட்டதாரி நிலைத் தேர்வு",
+      "இந்தியப் பட்டயக் கணக்காளர்கள் நிறுவன இறுதித் தேர்வு",
       "இந்திய ரிசர்வ் வங்கி கிரேடு பி அதிகாரி தேர்வு"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Officers of the IA&AS are Group 'A' central civil servants recruited through the annual Civil Services Examination conducted by the Union Public Service Commission (UPSC).",
       "ta": "IA&AS அதிகாரிகள், மத்திய அரசுப் பணியாளர் தேர்வாணையம் (UPSC) நடத்தும் வருடாந்திர குடிமைப் பணிகள் தேர்வு மூலம் தேர்ந்தெடுக்கப்படும் குரூப் 'A' மத்திய சிவில் சேவை அதிகாரிகள் ஆவர்."
@@ -2379,16 +2379,16 @@
     "explanation_ta": "IA&AS அதிகாரிகள், மத்திய அரசுப் பணியாளர் தேர்வாணையம் (UPSC) நடத்தும் வருடாந்திர குடிமைப் பணிகள் தேர்வு மூலம் தேர்ந்தெடுக்கப்படும் குரூப் 'A' மத்திய சிவில் சேவை அதிகாரிகள் ஆவர்.",
     "why_not_others": {
       "A": {
-        "en": "Option C (Institute of Chartered Accountants of India Final Exam) is incorrect in this constitutional context.",
-        "ta": "தெரிவு C (இந்தியப் பட்டயக் கணக்காளர்கள் நிறுவன இறுதித் தேர்வு) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
+        "en": "Option A is correct: Officers of the IA&AS are Group 'A' central civil servants recruited through the annual Civil Services Examination conducted by the Union Public Service Commission (UPSC).",
+        "ta": "தெரிவு A சரி: IA&AS அதிகாரிகள், மத்திய அரசுப் பணியாளர் தேர்வாணையம் (UPSC) நடத்தும் வருடாந்திர குடிமைப் பணிகள் தேர்வு மூலம் தேர்ந்தெடுக்கப்படும் குரூப் 'A' மத்திய சிவில் சேவை அதிகாரிகள் ஆவர்."
       },
       "B": {
         "en": "Option B (Staff Selection Commission Combined Graduate Level Exam) is incorrect in this constitutional context.",
         "ta": "தெரிவு B (Staff Selection Commission ஒருங்கிணைந்த பட்டதாரி நிலைத் தேர்வு) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "C": {
-        "en": "Option A is correct: Officers of the IA&AS are Group 'A' central civil servants recruited through the annual Civil Services Examination conducted by the Union Public Service Commission (UPSC).",
-        "ta": "தெரிவு A சரி: IA&AS அதிகாரிகள், மத்திய அரசுப் பணியாளர் தேர்வாணையம் (UPSC) நடத்தும் வருடாந்திர குடிமைப் பணிகள் தேர்வு மூலம் தேர்ந்தெடுக்கப்படும் குரூப் 'A' மத்திய சிவில் சேவை அதிகாரிகள் ஆவர்."
+        "en": "Option C (Institute of Chartered Accountants of India Final Exam) is incorrect in this constitutional context.",
+        "ta": "தெரிவு C (இந்தியப் பட்டயக் கணக்காளர்கள் நிறுவன இறுதித் தேர்வு) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "D": {
         "en": "Option D (Reserve Bank of India Grade B Officer Exam) is incorrect in this constitutional context.",
@@ -2550,29 +2550,29 @@
       },
       {
         "id": "C",
-        "en": "Director of Local Fund Audit",
-        "ta": "உள்ளாட்சி நிதித் தணிக்கை இயக்குநர்"
+        "en": "Principal Accountant General (PAG) / Accountant General (AG)",
+        "ta": "முதன்மைக் கணக்காயர் (PAG) / கணக்காயர் (AG)"
       },
       {
         "id": "D",
-        "en": "Principal Accountant General (PAG) / Accountant General (AG)",
-        "ta": "முதன்மைக் கணக்காயர் (PAG) / கணக்காயர் (AG)"
+        "en": "Director of Local Fund Audit",
+        "ta": "உள்ளாட்சி நிதித் தணிக்கை இயக்குநர்"
       }
     ],
     "options_en": [
       "Advocate General of the State",
       "State Finance Secretary",
-      "Director of Local Fund Audit",
-      "Principal Accountant General (PAG) / Accountant General (AG)"
+      "Principal Accountant General (PAG) / Accountant General (AG)",
+      "Director of Local Fund Audit"
     ],
     "options_ta": [
       "மாநில அட்வகேட் ஜெனரல்",
       "மாநில நிதிச் செயலாளர்",
-      "உள்ளாட்சி நிதித் தணிக்கை இயக்குநர்",
-      "முதன்மைக் கணக்காயர் (PAG) / கணக்காயர் (AG)"
+      "முதன்மைக் கணக்காயர் (PAG) / கணக்காயர் (AG)",
+      "உள்ளாட்சி நிதித் தணிக்கை இயக்குநர்"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "The Principal Accountant General (PAG) or Accountant General (AG), an officer of the IA&AS, heads the state audit and accounts directorates on behalf of the CAG.",
       "ta": "IA&AS அதிகாரியான முதன்மைக் கணக்காயர் (PAG) அல்லது கணக்காயர் (AG), சி.ஏ.ஜி சார்பாக மாநிலத் தணிக்கை மற்றும் கணக்கு இயக்குநரகங்களுக்குத் தலைமை தாங்குகிறார்."
@@ -2589,12 +2589,12 @@
         "ta": "தெரிவு B (மாநில நிதிச் செயலாளர்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "C": {
-        "en": "Option C (Director of Local Fund Audit) is incorrect in this constitutional context.",
-        "ta": "தெரிவு C (உள்ளாட்சி நிதித் தணிக்கை இயக்குநர்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
-      },
-      "D": {
         "en": "Option A is correct: The Principal Accountant General (PAG) or Accountant General (AG), an officer of the IA&AS, heads the state audit and accounts directorates on behalf of the CAG.",
         "ta": "தெரிவு A சரி: IA&AS அதிகாரியான முதன்மைக் கணக்காயர் (PAG) அல்லது கணக்காயர் (AG), சி.ஏ.ஜி சார்பாக மாநிலத் தணிக்கை மற்றும் கணக்கு இயக்குநரகங்களுக்குத் தலைமை தாங்குகிறார்."
+      },
+      "D": {
+        "en": "Option C (Director of Local Fund Audit) is incorrect in this constitutional context.",
+        "ta": "தெரிவு C (உள்ளாட்சி நிதித் தணிக்கை இயக்குநர்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       }
     },
     "tnpsc_tip": {
@@ -2641,8 +2641,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Audited by the United Nations World Food Programme directly",
-        "ta": "ஐ.நா உலக உணவுத் திட்டத்தால் நேரடியாகத் தணிக்கை செய்யப்படுகிறது"
+        "en": "Audited by qualified auditors appointed by the Central Government on the advice of the CAG, with CAG conducting supplementary audits",
+        "ta": "சி.ஏ.ஜி-யின் ஆலோசனையின் பேரில் மத்திய அரசால் நியமிக்கப்படும் தணிக்கையாளர்களால் தணிக்கை செய்யப்படுகிறது, மேலும் CAG துணைத் தணிக்கைகளையும் நடத்துகிறார்"
       },
       {
         "id": "B",
@@ -2656,24 +2656,24 @@
       },
       {
         "id": "D",
-        "en": "Audited by qualified auditors appointed by the Central Government on the advice of the CAG, with CAG conducting supplementary audits",
-        "ta": "சி.ஏ.ஜி-யின் ஆலோசனையின் பேரில் மத்திய அரசால் நியமிக்கப்படும் தணிக்கையாளர்களால் தணிக்கை செய்யப்படுகிறது, மேலும் CAG துணைத் தணிக்கைகளையும் நடத்துகிறார்"
+        "en": "Audited by the United Nations World Food Programme directly",
+        "ta": "ஐ.நா உலக உணவுத் திட்டத்தால் நேரடியாகத் தணிக்கை செய்யப்படுகிறது"
       }
     ],
     "options_en": [
-      "Audited by the United Nations World Food Programme directly",
+      "Audited by qualified auditors appointed by the Central Government on the advice of the CAG, with CAG conducting supplementary audits",
       "Audited exclusively by local private flour mills",
       "Completely exempt from all accounting scrutiny",
-      "Audited by qualified auditors appointed by the Central Government on the advice of the CAG, with CAG conducting supplementary audits"
+      "Audited by the United Nations World Food Programme directly"
     ],
     "options_ta": [
-      "ஐ.நா உலக உணவுத் திட்டத்தால் நேரடியாகத் தணிக்கை செய்யப்படுகிறது",
+      "சி.ஏ.ஜி-யின் ஆலோசனையின் பேரில் மத்திய அரசால் நியமிக்கப்படும் தணிக்கையாளர்களால் தணிக்கை செய்யப்படுகிறது, மேலும் CAG துணைத் தணிக்கைகளையும் நடத்துகிறார்",
       "உள்ளூர் தனியார் மாவு ஆலைகளால் மட்டுமே தணிக்கை செய்யப்படுகிறது",
       "அனைத்து கணக்கியல் ஆய்விலிருந்தும் முழு விலக்கு பெற்றது",
-      "சி.ஏ.ஜி-யின் ஆலோசனையின் பேரில் மத்திய அரசால் நியமிக்கப்படும் தணிக்கையாளர்களால் தணிக்கை செய்யப்படுகிறது, மேலும் CAG துணைத் தணிக்கைகளையும் நடத்துகிறார்"
+      "ஐ.நா உலக உணவுத் திட்டத்தால் நேரடியாகத் தணிக்கை செய்யப்படுகிறது"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Under the Food Corporations Act 1964, the accounts of FCI are audited by auditors appointed by the Government on the advice of the CAG, and the CAG has the right to conduct supplementary or test audits.",
       "ta": "1964 சட்டத்தின்படி, CAG ஆலோசனையின் பேரில் அரசால் நியமிக்கப்படும் தணிக்கையாளர்கள் FCI கணக்குகளைத் தணிக்கை செய்கின்றனர், மேலும் துணை அல்லது மாதிரித் தணிக்கை நடத்த CAG-க்கு உரிமை உண்டு."
@@ -2682,8 +2682,8 @@
     "explanation_ta": "1964 சட்டத்தின்படி, CAG ஆலோசனையின் பேரில் அரசால் நியமிக்கப்படும் தணிக்கையாளர்கள் FCI கணக்குகளைத் தணிக்கை செய்கின்றனர், மேலும் துணை அல்லது மாதிரித் தணிக்கை நடத்த CAG-க்கு உரிமை உண்டு.",
     "why_not_others": {
       "A": {
-        "en": "Option D (Audited by the United Nations World Food Programme directly) is incorrect in this constitutional context.",
-        "ta": "தெரிவு D (ஐ.நா உலக உணவுத் திட்டத்தால் நேரடியாகத் தணிக்கை செய்யப்படுகிறது) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
+        "en": "Option A is correct: Under the Food Corporations Act 1964, the accounts of FCI are audited by auditors appointed by the Government on the advice of the CAG, and the CAG has the right to conduct supplementary or test audits.",
+        "ta": "தெரிவு A சரி: 1964 சட்டத்தின்படி, CAG ஆலோசனையின் பேரில் அரசால் நியமிக்கப்படும் தணிக்கையாளர்கள் FCI கணக்குகளைத் தணிக்கை செய்கின்றனர், மேலும் துணை அல்லது மாதிரித் தணிக்கை நடத்த CAG-க்கு உரிமை உண்டு."
       },
       "B": {
         "en": "Option B (Audited exclusively by local private flour mills) is incorrect in this constitutional context.",
@@ -2694,8 +2694,8 @@
         "ta": "தெரிவு C (அனைத்து கணக்கியல் ஆய்விலிருந்தும் முழு விலக்கு பெற்றது) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "D": {
-        "en": "Option A is correct: Under the Food Corporations Act 1964, the accounts of FCI are audited by auditors appointed by the Government on the advice of the CAG, and the CAG has the right to conduct supplementary or test audits.",
-        "ta": "தெரிவு A சரி: 1964 சட்டத்தின்படி, CAG ஆலோசனையின் பேரில் அரசால் நியமிக்கப்படும் தணிக்கையாளர்கள் FCI கணக்குகளைத் தணிக்கை செய்கின்றனர், மேலும் துணை அல்லது மாதிரித் தணிக்கை நடத்த CAG-க்கு உரிமை உண்டு."
+        "en": "Option D (Audited by the United Nations World Food Programme directly) is incorrect in this constitutional context.",
+        "ta": "தெரிவு D (ஐ.நா உலக உணவுத் திட்டத்தால் நேரடியாகத் தணிக்கை செய்யப்படுகிறது) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       }
     },
     "tnpsc_tip": {
@@ -2742,8 +2742,8 @@
     "options": [
       {
         "id": "A",
-        "en": "T.N. Chaturvedi",
-        "ta": "டி.என். சதுர்வேதி"
+        "en": "V.K. Shunglu",
+        "ta": "வி.கே. சுங்லு"
       },
       {
         "id": "B",
@@ -2757,24 +2757,24 @@
       },
       {
         "id": "D",
-        "en": "V.K. Shunglu",
-        "ta": "வி.கே. சுங்லு"
+        "en": "T.N. Chaturvedi",
+        "ta": "டி.என். சதுர்வேதி"
       }
     ],
     "options_en": [
-      "T.N. Chaturvedi",
+      "V.K. Shunglu",
       "Vinod Rai",
       "C.G. Somiah",
-      "V.K. Shunglu"
+      "T.N. Chaturvedi"
     ],
     "options_ta": [
-      "டி.என். சதுர்வேதி",
+      "வி.கே. சுங்லு",
       "வினோத் ராய்",
       "சி.ஜி. சோமையா",
-      "வி.கே. சுங்லு"
+      "டி.என். சதுர்வேதி"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Former CAG V.K. Shunglu was appointed to head the High-Level Committee (Shunglu Committee) in October 2010 to investigate financial mismanagement in the Delhi Commonwealth Games.",
       "ta": "தில்லி காமன்வெல்த் போட்டிகளில் நடந்த நிதி முறைகேடுகளை விசாரிக்க அக்டோபர் 2010-ல் அமைக்கப்பட்ட உயர்மட்டக் குழுவிற்கு (சுங்லு குழு) முன்னாள் CAG வி.கே. சுங்லு தலைமை தாங்கினார்."
@@ -2783,8 +2783,8 @@
     "explanation_ta": "தில்லி காமன்வெல்த் போட்டிகளில் நடந்த நிதி முறைகேடுகளை விசாரிக்க அக்டோபர் 2010-ல் அமைக்கப்பட்ட உயர்மட்டக் குழுவிற்கு (சுங்லு குழு) முன்னாள் CAG வி.கே. சுங்லு தலைமை தாங்கினார்.",
     "why_not_others": {
       "A": {
-        "en": "Option D (T.N. Chaturvedi) is incorrect in this constitutional context.",
-        "ta": "தெரிவு D (டி.என். சதுர்வேதி) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
+        "en": "Option A is correct: Former CAG V.K. Shunglu was appointed to head the High-Level Committee (Shunglu Committee) in October 2010 to investigate financial mismanagement in the Delhi Commonwealth Games.",
+        "ta": "தெரிவு A சரி: தில்லி காமன்வெல்த் போட்டிகளில் நடந்த நிதி முறைகேடுகளை விசாரிக்க அக்டோபர் 2010-ல் அமைக்கப்பட்ட உயர்மட்டக் குழுவிற்கு (சுங்லு குழு) முன்னாள் CAG வி.கே. சுங்லு தலைமை தாங்கினார்."
       },
       "B": {
         "en": "Option B (Vinod Rai) is incorrect in this constitutional context.",
@@ -2795,8 +2795,8 @@
         "ta": "தெரிவு C (சி.ஜி. சோமையா) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "D": {
-        "en": "Option A is correct: Former CAG V.K. Shunglu was appointed to head the High-Level Committee (Shunglu Committee) in October 2010 to investigate financial mismanagement in the Delhi Commonwealth Games.",
-        "ta": "தெரிவு A சரி: தில்லி காமன்வெல்த் போட்டிகளில் நடந்த நிதி முறைகேடுகளை விசாரிக்க அக்டோபர் 2010-ல் அமைக்கப்பட்ட உயர்மட்டக் குழுவிற்கு (சுங்லு குழு) முன்னாள் CAG வி.கே. சுங்லு தலைமை தாங்கினார்."
+        "en": "Option D (T.N. Chaturvedi) is incorrect in this constitutional context.",
+        "ta": "தெரிவு D (டி.என். சதுர்வேதி) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       }
     },
     "tnpsc_tip": {
@@ -2848,8 +2848,8 @@
       },
       {
         "id": "B",
-        "en": "Shashi Kant Sharma",
-        "ta": "சசி காந்த் சர்மா"
+        "en": "Rajiv Mehrishi",
+        "ta": "ராஜீவ் மெஹ்ரிஷி"
       },
       {
         "id": "C",
@@ -2858,24 +2858,24 @@
       },
       {
         "id": "D",
-        "en": "Rajiv Mehrishi",
-        "ta": "ராஜீவ் மெஹ்ரிஷி"
+        "en": "Shashi Kant Sharma",
+        "ta": "சசி காந்த் சர்மா"
       }
     ],
     "options_en": [
       "G.C. Murmu",
-      "Shashi Kant Sharma",
+      "Rajiv Mehrishi",
       "Vinod Rai",
-      "Rajiv Mehrishi"
+      "Shashi Kant Sharma"
     ],
     "options_ta": [
       "ஜி.சி. முர்மு",
-      "சசி காந்த் சர்மா",
+      "ராஜீவ் மெஹ்ரிஷி",
       "வினோத் ராய்",
-      "ராஜீவ் மெஹ்ரிஷி"
+      "சசி காந்த் சர்மா"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Rajiv Mehrishi, a 1978-batch IAS officer, served as the 13th CAG of India from September 2017 to August 2020.",
       "ta": "1978-ம் ஆண்டு பேட்ச் ஐ.ஏ.எஸ் அதிகாரியான ராஜீவ் மெஹ்ரிஷி, செப்டம்பர் 2017 முதல் ஆகஸ்ட் 2020 வரை இந்தியாவின் 13-வது சி.ஏ.ஜி-யாகப் பணியாற்றினார்."
@@ -2888,16 +2888,16 @@
         "ta": "தெரிவு D (ஜி.சி. முர்மு) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "B": {
-        "en": "Option B (Shashi Kant Sharma) is incorrect in this constitutional context.",
-        "ta": "தெரிவு B (சசி காந்த் சர்மா) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
+        "en": "Option A is correct: Rajiv Mehrishi, a 1978-batch IAS officer, served as the 13th CAG of India from September 2017 to August 2020.",
+        "ta": "தெரிவு A சரி: 1978-ம் ஆண்டு பேட்ச் ஐ.ஏ.எஸ் அதிகாரியான ராஜீவ் மெஹ்ரிஷி, செப்டம்பர் 2017 முதல் ஆகஸ்ட் 2020 வரை இந்தியாவின் 13-வது சி.ஏ.ஜி-யாகப் பணியாற்றினார்."
       },
       "C": {
         "en": "Option C (Vinod Rai) is incorrect in this constitutional context.",
         "ta": "தெரிவு C (வினோத் ராய்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "D": {
-        "en": "Option A is correct: Rajiv Mehrishi, a 1978-batch IAS officer, served as the 13th CAG of India from September 2017 to August 2020.",
-        "ta": "தெரிவு A சரி: 1978-ம் ஆண்டு பேட்ச் ஐ.ஏ.எஸ் அதிகாரியான ராஜீவ் மெஹ்ரிஷி, செப்டம்பர் 2017 முதல் ஆகஸ்ட் 2020 வரை இந்தியாவின் 13-வது சி.ஏ.ஜி-யாகப் பணியாற்றினார்."
+        "en": "Option B (Shashi Kant Sharma) is incorrect in this constitutional context.",
+        "ta": "தெரிவு B (சசி காந்த் சர்மா) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       }
     },
     "tnpsc_tip": {
@@ -2954,29 +2954,29 @@
       },
       {
         "id": "C",
-        "en": "Because municipal commissioners are all appointed as Supreme Court judges",
-        "ta": "ஏனெனில் நகராட்சி ஆணையர்கள் அனைவரும் உச்ச நீதிமன்ற நீதிபதிகளாக நியமிக்கப்படுகிறார்கள்"
+        "en": "Because these missions are substantially funded by grants from the Consolidated Fund of India under Section 14/15",
+        "ta": "ஏனெனில் இத்திட்டங்கள் பிரிவு 14/15-ன் கீழ் இந்தியத் திரட்டப்பட்ட நிதியிலிருந்து கணிசமான மானியங்களைப் பெறுகின்றன"
       },
       {
         "id": "D",
-        "en": "Because these missions are substantially funded by grants from the Consolidated Fund of India under Section 14/15",
-        "ta": "ஏனெனில் இத்திட்டங்கள் பிரிவு 14/15-ன் கீழ் இந்தியத் திரட்டப்பட்ட நிதியிலிருந்து கணிசமான மானியங்களைப் பெறுகின்றன"
+        "en": "Because municipal commissioners are all appointed as Supreme Court judges",
+        "ta": "ஏனெனில் நகராட்சி ஆணையர்கள் அனைவரும் உச்ச நீதிமன்ற நீதிபதிகளாக நியமிக்கப்படுகிறார்கள்"
       }
     ],
     "options_en": [
       "Because the CAG directly collects property tax from all urban households",
       "Because the Constitution abolished local self-government autonomy in 1992",
-      "Because municipal commissioners are all appointed as Supreme Court judges",
-      "Because these missions are substantially funded by grants from the Consolidated Fund of India under Section 14/15"
+      "Because these missions are substantially funded by grants from the Consolidated Fund of India under Section 14/15",
+      "Because municipal commissioners are all appointed as Supreme Court judges"
     ],
     "options_ta": [
       "ஏனெனில் அனைத்து நகர்ப்புற வீடுகளிலிருந்தும் சொத்து வரியை CAG நேரடியாக வசூலிக்கிறார்",
       "ஏனெனில் 1992-ல் அரசியலமைப்பு உள்ளாட்சி சுயாட்சியை ஒழித்துவிட்டது",
-      "ஏனெனில் நகராட்சி ஆணையர்கள் அனைவரும் உச்ச நீதிமன்ற நீதிபதிகளாக நியமிக்கப்படுகிறார்கள்",
-      "ஏனெனில் இத்திட்டங்கள் பிரிவு 14/15-ன் கீழ் இந்தியத் திரட்டப்பட்ட நிதியிலிருந்து கணிசமான மானியங்களைப் பெறுகின்றன"
+      "ஏனெனில் இத்திட்டங்கள் பிரிவு 14/15-ன் கீழ் இந்தியத் திரட்டப்பட்ட நிதியிலிருந்து கணிசமான மானியங்களைப் பெறுகின்றன",
+      "ஏனெனில் நகராட்சி ஆணையர்கள் அனைவரும் உச்ச நீதிமன்ற நீதிபதிகளாக நியமிக்கப்படுகிறார்கள்"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Under Sections 14 and 15 of the 1971 Act, when Central and State governments finance urban missions through grants, the CAG audits the utilization of these funds and achievement of project milestones.",
       "ta": "1971 சட்டத்தின் பிரிவுகள் 14 மற்றும் 15-ன் கீழ், நகர்ப்புற திட்டங்களுக்கு மத்திய மற்றும் மாநில அரசுகள் மானியங்கள் வழங்கும் போது, நிதியின் பயன்பாடு மற்றும் திட்ட மைல்கற்களை CAG தணிக்கை செய்கிறார்."
@@ -2993,12 +2993,12 @@
         "ta": "தெரிவு B (ஏனெனில் 1992-ல் அரசியலமைப்பு உள்ளாட்சி சுயாட்சியை ஒழித்துவிட்டது) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "C": {
-        "en": "Option C (Because municipal commissioners are all appointed as Supreme Court judges) is incorrect in this constitutional context.",
-        "ta": "தெரிவு C (ஏனெனில் நகராட்சி ஆணையர்கள் அனைவரும் உச்ச நீதிமன்ற நீதிபதிகளாக நியமிக்கப்படுகிறார்கள்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
-      },
-      "D": {
         "en": "Option A is correct: Under Sections 14 and 15 of the 1971 Act, when Central and State governments finance urban missions through grants, the CAG audits the utilization of these funds and achievement of project milestones.",
         "ta": "தெரிவு A சரி: 1971 சட்டத்தின் பிரிவுகள் 14 மற்றும் 15-ன் கீழ், நகர்ப்புற திட்டங்களுக்கு மத்திய மற்றும் மாநில அரசுகள் மானியங்கள் வழங்கும் போது, நிதியின் பயன்பாடு மற்றும் திட்ட மைல்கற்களை CAG தணிக்கை செய்கிறார்."
+      },
+      "D": {
+        "en": "Option C (Because municipal commissioners are all appointed as Supreme Court judges) is incorrect in this constitutional context.",
+        "ta": "தெரிவு C (ஏனெனில் நகராட்சி ஆணையர்கள் அனைவரும் உச்ச நீதிமன்ற நீதிபதிகளாக நியமிக்கப்படுகிறார்கள்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       }
     },
     "tnpsc_tip": {
@@ -3050,8 +3050,8 @@
       },
       {
         "id": "B",
-        "en": "Stopped all railway auditing permanently following the merger",
-        "ta": "பட்ஜெட் இணைப்பிற்குப் பிறகு அனைத்து ரயில்வே தணிக்கையையும் நிரந்தரமாக நிறுத்திவிட்டார்"
+        "en": "Presents a dedicated Railway Audit Report to Parliament covering operating ratio, capital investments, and passenger amenities",
+        "ta": "செயல்பாட்டு விகிதம் (Operating Ratio), மூலதன முதலீடுகள் மற்றும் பயணிகள் வசதிகளை உள்ளடக்கிய பிரத்யேக ரயில்வே தணிக்கை அறிக்கையை நாடாளுமன்றத்தில் சமர்ப்பிக்கிறார்"
       },
       {
         "id": "C",
@@ -3060,24 +3060,24 @@
       },
       {
         "id": "D",
-        "en": "Presents a dedicated Railway Audit Report to Parliament covering operating ratio, capital investments, and passenger amenities",
-        "ta": "செயல்பாட்டு விகிதம் (Operating Ratio), மூலதன முதலீடுகள் மற்றும் பயணிகள் வசதிகளை உள்ளடக்கிய பிரத்யேக ரயில்வே தணிக்கை அறிக்கையை நாடாளுமன்றத்தில் சமர்ப்பிக்கிறார்"
+        "en": "Stopped all railway auditing permanently following the merger",
+        "ta": "பட்ஜெட் இணைப்பிற்குப் பிறகு அனைத்து ரயில்வே தணிக்கையையும் நிரந்தரமாக நிறுத்திவிட்டார்"
       }
     ],
     "options_en": [
       "Abolished all railway accounting departments across all zones",
-      "Stopped all railway auditing permanently following the merger",
+      "Presents a dedicated Railway Audit Report to Parliament covering operating ratio, capital investments, and passenger amenities",
       "Allows private travel agents to conduct railway safety inspections",
-      "Presents a dedicated Railway Audit Report to Parliament covering operating ratio, capital investments, and passenger amenities"
+      "Stopped all railway auditing permanently following the merger"
     ],
     "options_ta": [
       "அனைத்து மண்டலங்களிலும் உள்ள ரயில்வே கணக்குத் துறைகளை ஒழித்துவிட்டார்",
-      "பட்ஜெட் இணைப்பிற்குப் பிறகு அனைத்து ரயில்வே தணிக்கையையும் நிரந்தரமாக நிறுத்திவிட்டார்",
+      "செயல்பாட்டு விகிதம் (Operating Ratio), மூலதன முதலீடுகள் மற்றும் பயணிகள் வசதிகளை உள்ளடக்கிய பிரத்யேக ரயில்வே தணிக்கை அறிக்கையை நாடாளுமன்றத்தில் சமர்ப்பிக்கிறார்",
       "தனியார் பயண முகவர்களை ரயில்வே பாதுகாப்பு ஆய்வுகளை நடத்த அனுமதிக்கிறார்",
-      "செயல்பாட்டு விகிதம் (Operating Ratio), மூலதன முதலீடுகள் மற்றும் பயணிகள் வசதிகளை உள்ளடக்கிய பிரத்யேக ரயில்வே தணிக்கை அறிக்கையை நாடாளுமன்றத்தில் சமர்ப்பிக்கிறார்"
+      "பட்ஜெட் இணைப்பிற்குப் பிறகு அனைத்து ரயில்வே தணிக்கையையும் நிரந்தரமாக நிறுத்திவிட்டார்"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "The CAG continues to audit Indian Railways thoroughly, presenting an annual dedicated audit report analyzing the Operating Ratio, safety fund expenditures, freight operations, and project execution.",
       "ta": "CAG தொடர்ந்து இந்திய ரயில்வேயை விரிவாகத் தணிக்கை செய்து, செயல்பாட்டு விகிதம், பாதுகாப்பு நிதிச் செலவுகள், சரக்குப் போக்குவரத்து மற்றும் திட்டப் பணிகளை ஆராயும் வருடாந்திர பிரத்யேக அறிக்கையைச் சமர்ப்பிக்கிறார்."
@@ -3090,16 +3090,16 @@
         "ta": "தெரிவு D (அனைத்து மண்டலங்களிலும் உள்ள ரயில்வே கணக்குத் துறைகளை ஒழித்துவிட்டார்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "B": {
-        "en": "Option B (Stopped all railway auditing permanently following the merger) is incorrect in this constitutional context.",
-        "ta": "தெரிவு B (பட்ஜெட் இணைப்பிற்குப் பிறகு அனைத்து ரயில்வே தணிக்கையையும் நிரந்தரமாக நிறுத்திவிட்டார்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
+        "en": "Option A is correct: The CAG continues to audit Indian Railways thoroughly, presenting an annual dedicated audit report analyzing the Operating Ratio, safety fund expenditures, freight operations, and project execution.",
+        "ta": "தெரிவு A சரி: CAG தொடர்ந்து இந்திய ரயில்வேயை விரிவாகத் தணிக்கை செய்து, செயல்பாட்டு விகிதம், பாதுகாப்பு நிதிச் செலவுகள், சரக்குப் போக்குவரத்து மற்றும் திட்டப் பணிகளை ஆராயும் வருடாந்திர பிரத்யேக அறிக்கையைச் சமர்ப்பிக்கிறார்."
       },
       "C": {
         "en": "Option C (Allows private travel agents to conduct railway safety inspections) is incorrect in this constitutional context.",
         "ta": "தெரிவு C (தனியார் பயண முகவர்களை ரயில்வே பாதுகாப்பு ஆய்வுகளை நடத்த அனுமதிக்கிறார்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "D": {
-        "en": "Option A is correct: The CAG continues to audit Indian Railways thoroughly, presenting an annual dedicated audit report analyzing the Operating Ratio, safety fund expenditures, freight operations, and project execution.",
-        "ta": "தெரிவு A சரி: CAG தொடர்ந்து இந்திய ரயில்வேயை விரிவாகத் தணிக்கை செய்து, செயல்பாட்டு விகிதம், பாதுகாப்பு நிதிச் செலவுகள், சரக்குப் போக்குவரத்து மற்றும் திட்டப் பணிகளை ஆராயும் வருடாந்திர பிரத்யேக அறிக்கையைச் சமர்ப்பிக்கிறார்."
+        "en": "Option B (Stopped all railway auditing permanently following the merger) is incorrect in this constitutional context.",
+        "ta": "தெரிவு B (பட்ஜெட் இணைப்பிற்குப் பிறகு அனைத்து ரயில்வே தணிக்கையையும் நிரந்தரமாக நிறுத்திவிட்டார்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       }
     },
     "tnpsc_tip": {
@@ -3257,29 +3257,29 @@
       },
       {
         "id": "C",
-        "en": "By selling the corporate shares on the foreign stock exchange",
-        "ta": "வெளிநாட்டு பங்குச் சந்தையில் நிறுவனப் பங்குகளை விற்பதன் மூலம்"
+        "en": "In accordance with the provisions of the respective parliamentary statute establishing the corporation",
+        "ta": "அந்தக் கழகத்தை நிறுவிய நாடாளுமன்றச் சட்டத்தின் விதிகளுக்கு இணங்க தணிக்கை செய்யப்படுகின்றன"
       },
       {
         "id": "D",
-        "en": "In accordance with the provisions of the respective parliamentary statute establishing the corporation",
-        "ta": "அந்தக் கழகத்தை நிறுவிய நாடாளுமன்றச் சட்டத்தின் விதிகளுக்கு இணங்க தணிக்கை செய்யப்படுகின்றன"
+        "en": "By selling the corporate shares on the foreign stock exchange",
+        "ta": "வெளிநாட்டு பங்குச் சந்தையில் நிறுவனப் பங்குகளை விற்பதன் மூலம்"
       }
     ],
     "options_en": [
       "CAG has no power to enter any statutory corporation",
       "By conducting a secret ballot of all corporate shareholders",
-      "By selling the corporate shares on the foreign stock exchange",
-      "In accordance with the provisions of the respective parliamentary statute establishing the corporation"
+      "In accordance with the provisions of the respective parliamentary statute establishing the corporation",
+      "By selling the corporate shares on the foreign stock exchange"
     ],
     "options_ta": [
       "எந்தவொரு சட்டப்பூர்வ நிறுவனத்திலும் நுழைய CAG-க்கு அதிகாரம் இல்லை",
       "அனைத்து கார்ப்பரேட் பங்குதாரர்களின் இரகசிய வாக்கெடுப்பு நடத்துவதன் மூலம்",
-      "வெளிநாட்டு பங்குச் சந்தையில் நிறுவனப் பங்குகளை விற்பதன் மூலம்",
-      "அந்தக் கழகத்தை நிறுவிய நாடாளுமன்றச் சட்டத்தின் விதிகளுக்கு இணங்க தணிக்கை செய்யப்படுகின்றன"
+      "அந்தக் கழகத்தை நிறுவிய நாடாளுமன்றச் சட்டத்தின் விதிகளுக்கு இணங்க தணிக்கை செய்யப்படுகின்றன",
+      "வெளிநாட்டு பங்குச் சந்தையில் நிறுவனப் பங்குகளை விற்பதன் மூலம்"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Section 19(2) provides that the duties and powers of the CAG in relation to the audit of accounts of corporations established by law made by Parliament shall be performed and exercised in accordance with the provisions of the respective legislations.",
       "ta": "பிரிவு 19(2) நாடாளுமன்றச் சட்டத்தால் உருவாக்கப்பட்ட நிறுவனங்களின் கணக்குகளைத் தணிக்கை செய்வதில் CAG-யின் அதிகாரங்கள் அந்தந்த சட்டங்களின் விதிகளின்படி பயன்படுத்தப்பட வேண்டும் என்று கூறுகிறது."
@@ -3296,12 +3296,12 @@
         "ta": "தெரிவு B (அனைத்து கார்ப்பரேட் பங்குதாரர்களின் இரகசிய வாக்கெடுப்பு நடத்துவதன் மூலம்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "C": {
-        "en": "Option C (By selling the corporate shares on the foreign stock exchange) is incorrect in this constitutional context.",
-        "ta": "தெரிவு C (வெளிநாட்டு பங்குச் சந்தையில் நிறுவனப் பங்குகளை விற்பதன் மூலம்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
-      },
-      "D": {
         "en": "Option A is correct: Section 19(2) provides that the duties and powers of the CAG in relation to the audit of accounts of corporations established by law made by Parliament shall be performed and exercised in accordance with the provisions of the respective legislations.",
         "ta": "தெரிவு A சரி: பிரிவு 19(2) நாடாளுமன்றச் சட்டத்தால் உருவாக்கப்பட்ட நிறுவனங்களின் கணக்குகளைத் தணிக்கை செய்வதில் CAG-யின் அதிகாரங்கள் அந்தந்த சட்டங்களின் விதிகளின்படி பயன்படுத்தப்பட வேண்டும் என்று கூறுகிறது."
+      },
+      "D": {
+        "en": "Option C (By selling the corporate shares on the foreign stock exchange) is incorrect in this constitutional context.",
+        "ta": "தெரிவு C (வெளிநாட்டு பங்குச் சந்தையில் நிறுவனப் பங்குகளை விற்பதன் மூலம்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       }
     },
     "tnpsc_tip": {
@@ -3358,29 +3358,29 @@
       },
       {
         "id": "C",
-        "en": "Personally manufacturing chemical fertilizers in audit laboratories",
-        "ta": "தணிக்கை ஆய்வகங்களில் ரசாயன உரங்களை நேரடியாக உற்பத்தி செய்தல்"
+        "en": "Verifying that subsidies reach intended genuine beneficiaries, claims are properly verified, and fiscal leakages are checked",
+        "ta": "மானியங்கள் தகுதியான உண்மையான பயனாளிகளைச் சென்றடைவதை உறுதி செய்தல், கோரிக்கைகள் சரிபார்க்கப்படுதல் மற்றும் நிதி கசிவுகள் தடுக்கப்படுதல்"
       },
       {
         "id": "D",
-        "en": "Verifying that subsidies reach intended genuine beneficiaries, claims are properly verified, and fiscal leakages are checked",
-        "ta": "மானியங்கள் தகுதியான உண்மையான பயனாளிகளைச் சென்றடைவதை உறுதி செய்தல், கோரிக்கைகள் சரிபார்க்கப்படுதல் மற்றும் நிதி கசிவுகள் தடுக்கப்படுதல்"
+        "en": "Personally manufacturing chemical fertilizers in audit laboratories",
+        "ta": "தணிக்கை ஆய்வகங்களில் ரசாயன உரங்களை நேரடியாக உற்பத்தி செய்தல்"
       }
     ],
     "options_en": [
       "Determining international crude oil prices on world exchanges",
       "Ordering the immediate abolition of all welfare subsidies",
-      "Personally manufacturing chemical fertilizers in audit laboratories",
-      "Verifying that subsidies reach intended genuine beneficiaries, claims are properly verified, and fiscal leakages are checked"
+      "Verifying that subsidies reach intended genuine beneficiaries, claims are properly verified, and fiscal leakages are checked",
+      "Personally manufacturing chemical fertilizers in audit laboratories"
     ],
     "options_ta": [
       "உலகச் சந்தைகளில் சர்வதேச கச்சா எண்ணெய் விலைகளைத் தீர்மானித்தல்",
       "அனைத்து நலத்திட்ட மானியங்களையும் உடனடியாக ரத்து செய்ய உத்தரவிடுதல்",
-      "தணிக்கை ஆய்வகங்களில் ரசாயன உரங்களை நேரடியாக உற்பத்தி செய்தல்",
-      "மானியங்கள் தகுதியான உண்மையான பயனாளிகளைச் சென்றடைவதை உறுதி செய்தல், கோரிக்கைகள் சரிபார்க்கப்படுதல் மற்றும் நிதி கசிவுகள் தடுக்கப்படுதல்"
+      "மானியங்கள் தகுதியான உண்மையான பயனாளிகளைச் சென்றடைவதை உறுதி செய்தல், கோரிக்கைகள் சரிபார்க்கப்படுதல் மற்றும் நிதி கசிவுகள் தடுக்கப்படுதல்",
+      "தணிக்கை ஆய்வகங்களில் ரசாயன உரங்களை நேரடியாக உற்பத்தி செய்தல்"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "CAG audits of subsidies evaluate whether budget allocations were disbursed according to statutory guidelines, subsidy calculations by manufacturing companies were accurate, and unintended benefits or ghost claims were minimized.",
       "ta": "மானியங்கள் மீதான CAG தணிக்கை, நிதி ஒதுக்கீடுகள் உரிய விதிகளின்படி வழங்கப்பட்டதா, நிறுவனங்களின் மானியக் கணக்கீடுகள் சரியானவையா மற்றும் போலி கோரிக்கைகள் தடுக்கப்பட்டனவா என்பதை மதிப்பீடு செய்கிறது."
@@ -3397,12 +3397,12 @@
         "ta": "தெரிவு B (அனைத்து நலத்திட்ட மானியங்களையும் உடனடியாக ரத்து செய்ய உத்தரவிடுதல்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "C": {
-        "en": "Option C (Personally manufacturing chemical fertilizers in audit laboratories) is incorrect in this constitutional context.",
-        "ta": "தெரிவு C (தணிக்கை ஆய்வகங்களில் ரசாயன உரங்களை நேரடியாக உற்பத்தி செய்தல்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
-      },
-      "D": {
         "en": "Option A is correct: CAG audits of subsidies evaluate whether budget allocations were disbursed according to statutory guidelines, subsidy calculations by manufacturing companies were accurate, and unintended benefits or ghost claims were minimized.",
         "ta": "தெரிவு A சரி: மானியங்கள் மீதான CAG தணிக்கை, நிதி ஒதுக்கீடுகள் உரிய விதிகளின்படி வழங்கப்பட்டதா, நிறுவனங்களின் மானியக் கணக்கீடுகள் சரியானவையா மற்றும் போலி கோரிக்கைகள் தடுக்கப்பட்டனவா என்பதை மதிப்பீடு செய்கிறது."
+      },
+      "D": {
+        "en": "Option C (Personally manufacturing chemical fertilizers in audit laboratories) is incorrect in this constitutional context.",
+        "ta": "தெரிவு C (தணிக்கை ஆய்வகங்களில் ரசாயன உரங்களை நேரடியாக உற்பத்தி செய்தல்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       }
     },
     "tnpsc_tip": {
@@ -3550,8 +3550,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Directs the printing of unlimited paper currency by private commercial firms",
-        "ta": "தனியார் வணிக நிறுவனங்கள் மூலம் வரம்பற்ற காகிதப் பணத்தை அச்சிட உத்தரவிடுகிறார்"
+        "en": "Verifies whether borrowed funds were used for productive capital creation rather than consumption, and assesses off-budget borrowings",
+        "ta": "கடன் வாங்கப்பட்ட நிதி நுகர்வுக்குப் பதிலாக ஆக்கப்பூர்வ மூலதன உருவாக்கத்திற்குப் பயன்பட்டதா என்பதைச் சரிபார்க்கிறார் மற்றும் பட்ஜெட்டுக்கு புறம்பான கடன்களைக் கணக்கிடுகிறார்"
       },
       {
         "id": "B",
@@ -3565,24 +3565,24 @@
       },
       {
         "id": "D",
-        "en": "Verifies whether borrowed funds were used for productive capital creation rather than consumption, and assesses off-budget borrowings",
-        "ta": "கடன் வாங்கப்பட்ட நிதி நுகர்வுக்குப் பதிலாக ஆக்கப்பூர்வ மூலதன உருவாக்கத்திற்குப் பயன்பட்டதா என்பதைச் சரிபார்க்கிறார் மற்றும் பட்ஜெட்டுக்கு புறம்பான கடன்களைக் கணக்கிடுகிறார்"
+        "en": "Directs the printing of unlimited paper currency by private commercial firms",
+        "ta": "தனியார் வணிக நிறுவனங்கள் மூலம் வரம்பற்ற காகிதப் பணத்தை அச்சிட உத்தரவிடுகிறார்"
       }
     ],
     "options_en": [
-      "Directs the printing of unlimited paper currency by private commercial firms",
+      "Verifies whether borrowed funds were used for productive capital creation rather than consumption, and assesses off-budget borrowings",
       "Declares the country bankrupt whenever fiscal deficit exceeds 3%",
       "Mandates that the Government cannot borrow money under any circumstances",
-      "Verifies whether borrowed funds were used for productive capital creation rather than consumption, and assesses off-budget borrowings"
+      "Directs the printing of unlimited paper currency by private commercial firms"
     ],
     "options_ta": [
-      "தனியார் வணிக நிறுவனங்கள் மூலம் வரம்பற்ற காகிதப் பணத்தை அச்சிட உத்தரவிடுகிறார்",
+      "கடன் வாங்கப்பட்ட நிதி நுகர்வுக்குப் பதிலாக ஆக்கப்பூர்வ மூலதன உருவாக்கத்திற்குப் பயன்பட்டதா என்பதைச் சரிபார்க்கிறார் மற்றும் பட்ஜெட்டுக்கு புறம்பான கடன்களைக் கணக்கிடுகிறார்",
       "நிதிப் பற்றாக்குறை 3%-ஐத் தாண்டும் போதெல்லாம் நாட்டை திவாலானதாக அறிவிக்கிறார்",
       "எந்த சூழ்நிலையிலும் அரசாங்கம் கடன் வாங்க முடியாது என்று கட்டளையிடுகிறார்",
-      "கடன் வாங்கப்பட்ட நிதி நுகர்வுக்குப் பதிலாக ஆக்கப்பூர்வ மூலதன உருவாக்கத்திற்குப் பயன்பட்டதா என்பதைச் சரிபார்க்கிறார் மற்றும் பட்ஜெட்டுக்கு புறம்பான கடன்களைக் கணக்கிடுகிறார்"
+      "தனியார் வணிக நிறுவனங்கள் மூலம் வரம்பற்ற காகிதப் பணத்தை அச்சிட உத்தரவிடுகிறார்"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "The CAG examines whether fiscal deficits meet statutory FRBM targets, highlights 'off-budget borrowings' (borrowings through public sector entities not shown in the budget deficit), and checks debt sustainability.",
       "ta": "நிதிப் பற்றாக்குறை FRBM சட்ட இலக்குகளுக்கு உட்பட்டுள்ளதா என்பதை CAG ஆராய்கிறார், பட்ஜெட்டில் காட்டப்படாத 'பட்ஜெட்டுக்கு புறம்பான கடன்களை' (Off-budget borrowings) வெளிச்சமிட்டுக் காட்டுகிறார்."
@@ -3591,8 +3591,8 @@
     "explanation_ta": "நிதிப் பற்றாக்குறை FRBM சட்ட இலக்குகளுக்கு உட்பட்டுள்ளதா என்பதை CAG ஆராய்கிறார், பட்ஜெட்டில் காட்டப்படாத 'பட்ஜெட்டுக்கு புறம்பான கடன்களை' (Off-budget borrowings) வெளிச்சமிட்டுக் காட்டுகிறார்.",
     "why_not_others": {
       "A": {
-        "en": "Option D (Directs the printing of unlimited paper currency by private commercial firms) is incorrect in this constitutional context.",
-        "ta": "தெரிவு D (தனியார் வணிக நிறுவனங்கள் மூலம் வரம்பற்ற காகிதப் பணத்தை அச்சிட உத்தரவிடுகிறார்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
+        "en": "Option A is correct: The CAG examines whether fiscal deficits meet statutory FRBM targets, highlights 'off-budget borrowings' (borrowings through public sector entities not shown in the budget deficit), and checks debt sustainability.",
+        "ta": "தெரிவு A சரி: நிதிப் பற்றாக்குறை FRBM சட்ட இலக்குகளுக்கு உட்பட்டுள்ளதா என்பதை CAG ஆராய்கிறார், பட்ஜெட்டில் காட்டப்படாத 'பட்ஜெட்டுக்கு புறம்பான கடன்களை' (Off-budget borrowings) வெளிச்சமிட்டுக் காட்டுகிறார்."
       },
       "B": {
         "en": "Option B (Declares the country bankrupt whenever fiscal deficit exceeds 3%) is incorrect in this constitutional context.",
@@ -3603,8 +3603,8 @@
         "ta": "தெரிவு C (எந்த சூழ்நிலையிலும் அரசாங்கம் கடன் வாங்க முடியாது என்று கட்டளையிடுகிறார்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "D": {
-        "en": "Option A is correct: The CAG examines whether fiscal deficits meet statutory FRBM targets, highlights 'off-budget borrowings' (borrowings through public sector entities not shown in the budget deficit), and checks debt sustainability.",
-        "ta": "தெரிவு A சரி: நிதிப் பற்றாக்குறை FRBM சட்ட இலக்குகளுக்கு உட்பட்டுள்ளதா என்பதை CAG ஆராய்கிறார், பட்ஜெட்டில் காட்டப்படாத 'பட்ஜெட்டுக்கு புறம்பான கடன்களை' (Off-budget borrowings) வெளிச்சமிட்டுக் காட்டுகிறார்."
+        "en": "Option D (Directs the printing of unlimited paper currency by private commercial firms) is incorrect in this constitutional context.",
+        "ta": "தெரிவு D (தனியார் வணிக நிறுவனங்கள் மூலம் வரம்பற்ற காகிதப் பணத்தை அச்சிட உத்தரவிடுகிறார்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       }
     },
     "tnpsc_tip": {
@@ -3661,29 +3661,29 @@
       },
       {
         "id": "C",
-        "en": "Abolishing income tax for all government employees",
-        "ta": "அனைத்து அரசு ஊழியர்களுக்கும் வருமான வரியை ரத்து செய்தல்"
+        "en": "Checking whether tax assessments comply with the Income Tax Act, exemptions correctly granted, and arithmetic calculations accurate",
+        "ta": "வரி மதிப்பீடுகள் வருமான வரிச் சட்டத்திற்கு உட்பட்டுள்ளதா, விலக்குகள் சரியாக அளிக்கப்பட்டுள்ளனவா மற்றும் கணக்கீடுகள் துல்லியமாக உள்ளதா என்பதைச் சரிபார்த்தல்"
       },
       {
         "id": "D",
-        "en": "Checking whether tax assessments comply with the Income Tax Act, exemptions correctly granted, and arithmetic calculations accurate",
-        "ta": "வரி மதிப்பீடுகள் வருமான வரிச் சட்டத்திற்கு உட்பட்டுள்ளதா, விலக்குகள் சரியாக அளிக்கப்பட்டுள்ளனவா மற்றும் கணக்கீடுகள் துல்லியமாக உள்ளதா என்பதைச் சரிபார்த்தல்"
+        "en": "Abolishing income tax for all government employees",
+        "ta": "அனைத்து அரசு ஊழியர்களுக்கும் வருமான வரியை ரத்து செய்தல்"
       }
     ],
     "options_en": [
       "Setting the monthly gold price for wealth tax calculations",
       "Directly interrogating individual citizens inside their homes",
-      "Abolishing income tax for all government employees",
-      "Checking whether tax assessments comply with the Income Tax Act, exemptions correctly granted, and arithmetic calculations accurate"
+      "Checking whether tax assessments comply with the Income Tax Act, exemptions correctly granted, and arithmetic calculations accurate",
+      "Abolishing income tax for all government employees"
     ],
     "options_ta": [
       "செல்வ வரி கணக்கீட்டிற்கான மாதாந்திர தங்க விலையை நிர்ணயித்தல்",
       "தனிநபர் குடிமக்களை அவர்களின் வீடுகளில் நேரடியாக விசாரித்தல்",
-      "அனைத்து அரசு ஊழியர்களுக்கும் வருமான வரியை ரத்து செய்தல்",
-      "வரி மதிப்பீடுகள் வருமான வரிச் சட்டத்திற்கு உட்பட்டுள்ளதா, விலக்குகள் சரியாக அளிக்கப்பட்டுள்ளனவா மற்றும் கணக்கீடுகள் துல்லியமாக உள்ளதா என்பதைச் சரிபார்த்தல்"
+      "வரி மதிப்பீடுகள் வருமான வரிச் சட்டத்திற்கு உட்பட்டுள்ளதா, விலக்குகள் சரியாக அளிக்கப்பட்டுள்ளனவா மற்றும் கணக்கீடுகள் துல்லியமாக உள்ளதா என்பதைச் சரிபார்த்தல்",
+      "அனைத்து அரசு ஊழியர்களுக்கும் வருமான வரியை ரத்து செய்தல்"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "The CAG examines assessment files to detect tax under-assessments, incorrect deductions, irregular allowances, or mathematical errors by assessing officers, recovering thousands of crores for the public purse.",
       "ta": "வரி மதிப்பீட்டு அதிகாரிகளின் தவறான வரி மதிப்பீடுகள், முறையற்ற கழிவுகள் மற்றும் கணிதப் பிழைகளைக் கண்டறிந்து, அரசு கருவூலத்திற்கு ஆயிரக்கணக்கான கோடிகளை மீட்க சி.ஏ.ஜி தணிக்கை உதவுகிறது."
@@ -3700,12 +3700,12 @@
         "ta": "தெரிவு B (தனிநபர் குடிமக்களை அவர்களின் வீடுகளில் நேரடியாக விசாரித்தல்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "C": {
-        "en": "Option C (Abolishing income tax for all government employees) is incorrect in this constitutional context.",
-        "ta": "தெரிவு C (அனைத்து அரசு ஊழியர்களுக்கும் வருமான வரியை ரத்து செய்தல்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
-      },
-      "D": {
         "en": "Option A is correct: The CAG examines assessment files to detect tax under-assessments, incorrect deductions, irregular allowances, or mathematical errors by assessing officers, recovering thousands of crores for the public purse.",
         "ta": "தெரிவு A சரி: வரி மதிப்பீட்டு அதிகாரிகளின் தவறான வரி மதிப்பீடுகள், முறையற்ற கழிவுகள் மற்றும் கணிதப் பிழைகளைக் கண்டறிந்து, அரசு கருவூலத்திற்கு ஆயிரக்கணக்கான கோடிகளை மீட்க சி.ஏ.ஜி தணிக்கை உதவுகிறது."
+      },
+      "D": {
+        "en": "Option C (Abolishing income tax for all government employees) is incorrect in this constitutional context.",
+        "ta": "தெரிவு C (அனைத்து அரசு ஊழியர்களுக்கும் வருமான வரியை ரத்து செய்தல்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       }
     },
     "tnpsc_tip": {
@@ -3752,8 +3752,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Actual physical existence, usability, water connectivity, and sustainability of constructed household toilets",
-        "ta": "கட்டப்பட்ட கழிப்பறைகளின் உண்மையான இருப்பு, பயன்பாடு, தண்ணீர் இணைப்பு மற்றும் அவற்றின் தொடர் பயன்பாட்டுத் தன்மை"
+        "en": "Banning all private soap manufacturing corporations",
+        "ta": "அனைத்து தனியார் சோப்பு உற்பத்தி நிறுவனங்களையும் தடை செய்தல்"
       },
       {
         "id": "B",
@@ -3767,24 +3767,24 @@
       },
       {
         "id": "D",
-        "en": "Banning all private soap manufacturing corporations",
-        "ta": "அனைத்து தனியார் சோப்பு உற்பத்தி நிறுவனங்களையும் தடை செய்தல்"
+        "en": "Actual physical existence, usability, water connectivity, and sustainability of constructed household toilets",
+        "ta": "கட்டப்பட்ட கழிப்பறைகளின் உண்மையான இருப்பு, பயன்பாடு, தண்ணீர் இணைப்பு மற்றும் அவற்றின் தொடர் பயன்பாட்டுத் தன்மை"
       }
     ],
     "options_en": [
-      "Actual physical existence, usability, water connectivity, and sustainability of constructed household toilets",
+      "Banning all private soap manufacturing corporations",
       "Solely counting the number of billboards erected along highways",
       "Directly manufacturing ceramic sanitary tiles in audit offices",
-      "Banning all private soap manufacturing corporations"
+      "Actual physical existence, usability, water connectivity, and sustainability of constructed household toilets"
     ],
     "options_ta": [
-      "கட்டப்பட்ட கழிப்பறைகளின் உண்மையான இருப்பு, பயன்பாடு, தண்ணீர் இணைப்பு மற்றும் அவற்றின் தொடர் பயன்பாட்டுத் தன்மை",
+      "அனைத்து தனியார் சோப்பு உற்பத்தி நிறுவனங்களையும் தடை செய்தல்",
       "நெடுஞ்சாலைகளில் வைக்கப்பட்ட விளம்பரப் பலகைகளின் எண்ணிக்கையை மட்டும் எண்ணுதல்",
       "தணிக்கை அலுவலகங்களில் பீங்கான் ஓடுகளை நேரடியாக உற்பத்தி செய்தல்",
-      "அனைத்து தனியார் சோப்பு உற்பத்தி நிறுவனங்களையும் தடை செய்தல்"
+      "கட்டப்பட்ட கழிப்பறைகளின் உண்மையான இருப்பு, பயன்பாடு, தண்ணீர் இணைப்பு மற்றும் அவற்றின் தொடர் பயன்பாட்டுத் தன்மை"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "CAG performance audits cross-verify administrative Open Defecation Free (ODF) claims with physical field samples to check whether toilets actually exist, have water supply, and are actively used by beneficiaries.",
       "ta": "திறந்தவெளிக் கழிப்பிடமற்ற (ODF) நிர்வாகக் கூற்றுக்களை கள ஆய்வுகள் மூலம் சி.ஏ.ஜி தணிக்கை சரிபார்த்து, கழிப்பறைகள் உண்மையில் உள்ளதா, தண்ணீர் வசதி உள்ளதா மற்றும் பயன்படுத்தப்படுகிறதா என்பதை ஆராய்கிறது."
@@ -3793,8 +3793,8 @@
     "explanation_ta": "திறந்தவெளிக் கழிப்பிடமற்ற (ODF) நிர்வாகக் கூற்றுக்களை கள ஆய்வுகள் மூலம் சி.ஏ.ஜி தணிக்கை சரிபார்த்து, கழிப்பறைகள் உண்மையில் உள்ளதா, தண்ணீர் வசதி உள்ளதா மற்றும் பயன்படுத்தப்படுகிறதா என்பதை ஆராய்கிறது.",
     "why_not_others": {
       "A": {
-        "en": "Option A is correct: CAG performance audits cross-verify administrative Open Defecation Free (ODF) claims with physical field samples to check whether toilets actually exist, have water supply, and are actively used by beneficiaries.",
-        "ta": "தெரிவு A சரி: திறந்தவெளிக் கழிப்பிடமற்ற (ODF) நிர்வாகக் கூற்றுக்களை கள ஆய்வுகள் மூலம் சி.ஏ.ஜி தணிக்கை சரிபார்த்து, கழிப்பறைகள் உண்மையில் உள்ளதா, தண்ணீர் வசதி உள்ளதா மற்றும் பயன்படுத்தப்படுகிறதா என்பதை ஆராய்கிறது."
+        "en": "Option D (Banning all private soap manufacturing corporations) is incorrect in this constitutional context.",
+        "ta": "தெரிவு D (அனைத்து தனியார் சோப்பு உற்பத்தி நிறுவனங்களையும் தடை செய்தல்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "B": {
         "en": "Option B (Solely counting the number of billboards erected along highways) is incorrect in this constitutional context.",
@@ -3805,8 +3805,8 @@
         "ta": "தெரிவு C (தணிக்கை அலுவலகங்களில் பீங்கான் ஓடுகளை நேரடியாக உற்பத்தி செய்தல்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "D": {
-        "en": "Option D (Banning all private soap manufacturing corporations) is incorrect in this constitutional context.",
-        "ta": "தெரிவு D (அனைத்து தனியார் சோப்பு உற்பத்தி நிறுவனங்களையும் தடை செய்தல்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
+        "en": "Option A is correct: CAG performance audits cross-verify administrative Open Defecation Free (ODF) claims with physical field samples to check whether toilets actually exist, have water supply, and are actively used by beneficiaries.",
+        "ta": "தெரிவு A சரி: திறந்தவெளிக் கழிப்பிடமற்ற (ODF) நிர்வாகக் கூற்றுக்களை கள ஆய்வுகள் மூலம் சி.ஏ.ஜி தணிக்கை சரிபார்த்து, கழிப்பறைகள் உண்மையில் உள்ளதா, தண்ணீர் வசதி உள்ளதா மற்றும் பயன்படுத்தப்படுகிறதா என்பதை ஆராய்கிறது."
       }
     },
     "tnpsc_tip": {
@@ -3954,8 +3954,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Power to make regulations for conducting audit, specifying standards, and governing audit methodology",
-        "ta": "தணிக்கை நடத்துதல், தரநிலைகளைக் குறிப்பிடுதல் மற்றும் தணிக்கை முறைகளை நிர்வகிப்பதற்கான ஒழுங்குமுறைகளை உருவாக்கும் அதிகாரம்"
+        "en": "Power to dissolve the State Legislative Assemblies at will",
+        "ta": "தனது விருப்பப்படி மாநில சட்டமன்றப் பேரவைகளைக் கலைக்கும் அதிகாரம்"
       },
       {
         "id": "B",
@@ -3969,24 +3969,24 @@
       },
       {
         "id": "D",
-        "en": "Power to dissolve the State Legislative Assemblies at will",
-        "ta": "தனது விருப்பப்படி மாநில சட்டமன்றப் பேரவைகளைக் கலைக்கும் அதிகாரம்"
+        "en": "Power to make regulations for conducting audit, specifying standards, and governing audit methodology",
+        "ta": "தணிக்கை நடத்துதல், தரநிலைகளைக் குறிப்பிடுதல் மற்றும் தணிக்கை முறைகளை நிர்வகிப்பதற்கான ஒழுங்குமுறைகளை உருவாக்கும் அதிகாரம்"
       }
     ],
     "options_en": [
-      "Power to make regulations for conducting audit, specifying standards, and governing audit methodology",
+      "Power to dissolve the State Legislative Assemblies at will",
       "Power to declare war against foreign nations violating financial treaties",
       "Authority to amend the fundamental rights in Part III of the Constitution",
-      "Power to dissolve the State Legislative Assemblies at will"
+      "Power to make regulations for conducting audit, specifying standards, and governing audit methodology"
     ],
     "options_ta": [
-      "தணிக்கை நடத்துதல், தரநிலைகளைக் குறிப்பிடுதல் மற்றும் தணிக்கை முறைகளை நிர்வகிப்பதற்கான ஒழுங்குமுறைகளை உருவாக்கும் அதிகாரம்",
+      "தனது விருப்பப்படி மாநில சட்டமன்றப் பேரவைகளைக் கலைக்கும் அதிகாரம்",
       "நிதி ஒப்பந்தங்களை மீறும் வெளிநாடுகளுக்கு எதிராகப் போர் பிரகடனம் செய்யும் அதிகாரம்",
       "அரசியலமைப்பின் பகுதி III-ல் உள்ள அடிப்படை உரிமைகளைத் திருத்தும் அதிகாரம்",
-      "தனது விருப்பப்படி மாநில சட்டமன்றப் பேரவைகளைக் கலைக்கும் அதிகாரம்"
+      "தணிக்கை நடத்துதல், தரநிலைகளைக் குறிப்பிடுதல் மற்றும் தணிக்கை முறைகளை நிர்வகிப்பதற்கான ஒழுங்குமுறைகளை உருவாக்கும் அதிகாரம்"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Section 23 of the 1971 Act empowers the CAG to make regulations for carrying into effect the provisions of the Act regarding the scope, extent, and methodology of audits.",
       "ta": "1971 சட்டத்தின் பிரிவு 23, தணிக்கையின் நோக்கம், வரம்பு மற்றும் முறைகள் தொடர்பான சட்டத்தின் விதிகளைச் செயல்படுத்த ஒழுங்குமுறைகளை உருவாக்க CAG-க்கு அதிகாரம் அளிக்கிறது."
@@ -3995,8 +3995,8 @@
     "explanation_ta": "1971 சட்டத்தின் பிரிவு 23, தணிக்கையின் நோக்கம், வரம்பு மற்றும் முறைகள் தொடர்பான சட்டத்தின் விதிகளைச் செயல்படுத்த ஒழுங்குமுறைகளை உருவாக்க CAG-க்கு அதிகாரம் அளிக்கிறது.",
     "why_not_others": {
       "A": {
-        "en": "Option A is correct: Section 23 of the 1971 Act empowers the CAG to make regulations for carrying into effect the provisions of the Act regarding the scope, extent, and methodology of audits.",
-        "ta": "தெரிவு A சரி: 1971 சட்டத்தின் பிரிவு 23, தணிக்கையின் நோக்கம், வரம்பு மற்றும் முறைகள் தொடர்பான சட்டத்தின் விதிகளைச் செயல்படுத்த ஒழுங்குமுறைகளை உருவாக்க CAG-க்கு அதிகாரம் அளிக்கிறது."
+        "en": "Option D (Power to dissolve the State Legislative Assemblies at will) is incorrect in this constitutional context.",
+        "ta": "தெரிவு D (தனது விருப்பப்படி மாநில சட்டமன்றப் பேரவைகளைக் கலைக்கும் அதிகாரம்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "B": {
         "en": "Option B (Power to declare war against foreign nations violating financial treaties) is incorrect in this constitutional context.",
@@ -4007,8 +4007,8 @@
         "ta": "தெரிவு C (அரசியலமைப்பின் பகுதி III-ல் உள்ள அடிப்படை உரிமைகளைத் திருத்தும் அதிகாரம்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "D": {
-        "en": "Option D (Power to dissolve the State Legislative Assemblies at will) is incorrect in this constitutional context.",
-        "ta": "தெரிவு D (தனது விருப்பப்படி மாநில சட்டமன்றப் பேரவைகளைக் கலைக்கும் அதிகாரம்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
+        "en": "Option A is correct: Section 23 of the 1971 Act empowers the CAG to make regulations for carrying into effect the provisions of the Act regarding the scope, extent, and methodology of audits.",
+        "ta": "தெரிவு A சரி: 1971 சட்டத்தின் பிரிவு 23, தணிக்கையின் நோக்கம், வரம்பு மற்றும் முறைகள் தொடர்பான சட்டத்தின் விதிகளைச் செயல்படுத்த ஒழுங்குமுறைகளை உருவாக்க CAG-க்கு அதிகாரம் அளிக்கிறது."
       }
     },
     "tnpsc_tip": {
@@ -4055,8 +4055,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Section 19(2) as a statutory corporation, with dedicated audit of toll revenue, concession agreements, and highway quality",
-        "ta": "பிரிவு 19(2)-ன் கீழ் சட்டப்பூர்வ கழகமாக, சுங்கக் கட்டண வருவாய், சலுகை ஒப்பந்தங்கள் மற்றும் சாலைத் தரம் ஆகியவற்றின் பிரத்யேகத் தணிக்கையுடன்"
+        "en": "Audited only by international tourist associations",
+        "ta": "சர்வதேச சுற்றுலாப் பயணிகள் சங்கங்களால் மட்டுமே தணிக்கை செய்யப்படுகிறது"
       },
       {
         "id": "B",
@@ -4070,24 +4070,24 @@
       },
       {
         "id": "D",
-        "en": "Audited only by international tourist associations",
-        "ta": "சர்வதேச சுற்றுலாப் பயணிகள் சங்கங்களால் மட்டுமே தணிக்கை செய்யப்படுகிறது"
+        "en": "Section 19(2) as a statutory corporation, with dedicated audit of toll revenue, concession agreements, and highway quality",
+        "ta": "பிரிவு 19(2)-ன் கீழ் சட்டப்பூர்வ கழகமாக, சுங்கக் கட்டண வருவாய், சலுகை ஒப்பந்தங்கள் மற்றும் சாலைத் தரம் ஆகியவற்றின் பிரத்யேகத் தணிக்கையுடன்"
       }
     ],
     "options_en": [
-      "Section 19(2) as a statutory corporation, with dedicated audit of toll revenue, concession agreements, and highway quality",
+      "Audited only by international tourist associations",
       "As a private automobile driving school under state motor vehicle rules",
       "NHAI is completely exempt from all audit scrutiny forever",
-      "Audited only by international tourist associations"
+      "Section 19(2) as a statutory corporation, with dedicated audit of toll revenue, concession agreements, and highway quality"
     ],
     "options_ta": [
-      "பிரிவு 19(2)-ன் கீழ் சட்டப்பூர்வ கழகமாக, சுங்கக் கட்டண வருவாய், சலுகை ஒப்பந்தங்கள் மற்றும் சாலைத் தரம் ஆகியவற்றின் பிரத்யேகத் தணிக்கையுடன்",
+      "சர்வதேச சுற்றுலாப் பயணிகள் சங்கங்களால் மட்டுமே தணிக்கை செய்யப்படுகிறது",
       "மோட்டார் வாகன விதிகளின் கீழ் இயங்கும் தனியார் ஓட்டுநர் பள்ளியாக",
       "NHAI அனைத்து தணிக்கை ஆய்விலிருந்தும் எப்போதும் முழு விலக்கு பெற்றது",
-      "சர்வதேச சுற்றுலாப் பயணிகள் சங்கங்களால் மட்டுமே தணிக்கை செய்யப்படுகிறது"
+      "பிரிவு 19(2)-ன் கீழ் சட்டப்பூர்வ கழகமாக, சுங்கக் கட்டண வருவாய், சலுகை ஒப்பந்தங்கள் மற்றும் சாலைத் தரம் ஆகியவற்றின் பிரத்யேகத் தணிக்கையுடன்"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "NHAI is a statutory corporation established under the NHAI Act 1988. The CAG audits its annual accounts, highway construction contracts, toll fee collections, and debt servicing.",
       "ta": "NHAI என்பது 1988-ம் ஆண்டின் NHAI சட்டத்தின் கீழ் நிறுவப்பட்ட ஒரு சட்டப்பூர்வ அமைப்பாகும். இதன் வருடாந்திரக் கணக்குகள், சாலை ஒப்பந்தங்கள், சுங்கக் கட்டண வசூல் ஆகியவற்றை CAG தணிக்கை செய்கிறார்."
@@ -4096,8 +4096,8 @@
     "explanation_ta": "NHAI என்பது 1988-ம் ஆண்டின் NHAI சட்டத்தின் கீழ் நிறுவப்பட்ட ஒரு சட்டப்பூர்வ அமைப்பாகும். இதன் வருடாந்திரக் கணக்குகள், சாலை ஒப்பந்தங்கள், சுங்கக் கட்டண வசூல் ஆகியவற்றை CAG தணிக்கை செய்கிறார்.",
     "why_not_others": {
       "A": {
-        "en": "Option A is correct: NHAI is a statutory corporation established under the NHAI Act 1988. The CAG audits its annual accounts, highway construction contracts, toll fee collections, and debt servicing.",
-        "ta": "தெரிவு A சரி: NHAI என்பது 1988-ம் ஆண்டின் NHAI சட்டத்தின் கீழ் நிறுவப்பட்ட ஒரு சட்டப்பூர்வ அமைப்பாகும். இதன் வருடாந்திரக் கணக்குகள், சாலை ஒப்பந்தங்கள், சுங்கக் கட்டண வசூல் ஆகியவற்றை CAG தணிக்கை செய்கிறார்."
+        "en": "Option D (Audited only by international tourist associations) is incorrect in this constitutional context.",
+        "ta": "தெரிவு D (சர்வதேச சுற்றுலாப் பயணிகள் சங்கங்களால் மட்டுமே தணிக்கை செய்யப்படுகிறது) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "B": {
         "en": "Option B (As a private automobile driving school under state motor vehicle rules) is incorrect in this constitutional context.",
@@ -4108,8 +4108,8 @@
         "ta": "தெரிவு C (NHAI அனைத்து தணிக்கை ஆய்விலிருந்தும் எப்போதும் முழு விலக்கு பெற்றது) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "D": {
-        "en": "Option D (Audited only by international tourist associations) is incorrect in this constitutional context.",
-        "ta": "தெரிவு D (சர்வதேச சுற்றுலாப் பயணிகள் சங்கங்களால் மட்டுமே தணிக்கை செய்யப்படுகிறது) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
+        "en": "Option A is correct: NHAI is a statutory corporation established under the NHAI Act 1988. The CAG audits its annual accounts, highway construction contracts, toll fee collections, and debt servicing.",
+        "ta": "தெரிவு A சரி: NHAI என்பது 1988-ம் ஆண்டின் NHAI சட்டத்தின் கீழ் நிறுவப்பட்ட ஒரு சட்டப்பூர்வ அமைப்பாகும். இதன் வருடாந்திரக் கணக்குகள், சாலை ஒப்பந்தங்கள், சுங்கக் கட்டண வசூல் ஆகியவற்றை CAG தணிக்கை செய்கிறார்."
       }
     },
     "tnpsc_tip": {
@@ -4156,8 +4156,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Government shareholding exceeding 51% (Sec 19) or substantial financial assistance through grants/loans (Sec 14)",
-        "ta": "51%-க்கு அதிகமான அரசுப் பங்குகள் (பிரிவு 19) அல்லது மானியங்கள்/கடன்கள் மூலம் கணிசமான நிதி உதவி (பிரிவு 14)"
+        "en": "The presence of foreign advertising posters on metro pillars",
+        "ta": "மெட்ரோ தூண்களில் வெளிநாட்டு விளம்பர சுவரொட்டிகள் இருப்பது"
       },
       {
         "id": "B",
@@ -4166,8 +4166,8 @@
       },
       {
         "id": "C",
-        "en": "The presence of foreign advertising posters on metro pillars",
-        "ta": "மெட்ரோ தூண்களில் வெளிநாட்டு விளம்பர சுவரொட்டிகள் இருப்பது"
+        "en": "Government shareholding exceeding 51% (Sec 19) or substantial financial assistance through grants/loans (Sec 14)",
+        "ta": "51%-க்கு அதிகமான அரசுப் பங்குகள் (பிரிவு 19) அல்லது மானியங்கள்/கடன்கள் மூலம் கணிசமான நிதி உதவி (பிரிவு 14)"
       },
       {
         "id": "D",
@@ -4176,19 +4176,19 @@
       }
     ],
     "options_en": [
-      "Government shareholding exceeding 51% (Sec 19) or substantial financial assistance through grants/loans (Sec 14)",
-      "An oral invitation from the local traffic police inspector",
       "The presence of foreign advertising posters on metro pillars",
+      "An oral invitation from the local traffic police inspector",
+      "Government shareholding exceeding 51% (Sec 19) or substantial financial assistance through grants/loans (Sec 14)",
       "SPVs are completely immune from all public audit under all laws"
     ],
     "options_ta": [
-      "51%-க்கு அதிகமான அரசுப் பங்குகள் (பிரிவு 19) அல்லது மானியங்கள்/கடன்கள் மூலம் கணிசமான நிதி உதவி (பிரிவு 14)",
-      "உள்ளூர் போக்குவரத்து காவல் ஆய்வாளரின் வாய்மொழி அழைப்பு",
       "மெட்ரோ தூண்களில் வெளிநாட்டு விளம்பர சுவரொட்டிகள் இருப்பது",
+      "உள்ளூர் போக்குவரத்து காவல் ஆய்வாளரின் வாய்மொழி அழைப்பு",
+      "51%-க்கு அதிகமான அரசுப் பங்குகள் (பிரிவு 19) அல்லது மானியங்கள்/கடன்கள் மூலம் கணிசமான நிதி உதவி (பிரிவு 14)",
       "அனைத்து சட்டங்களின் கீழும் SPV நிறுவனங்கள் அனைத்து பொதுத் தணிக்கையிலிருந்தும் முழு விலக்கு பெற்றவை"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "If an SPV is incorporated as a government company (where Union/State holds >= 51% shares), it is audited under Section 19 of the CAG Act. If established as a society/trust, substantial funding triggers Section 14.",
       "ta": "ஒரு SPV அரசு நிறுவனமாகப் பதிவு செய்யப்பட்டால் (51% அல்லது அதற்கு மேற்பட்ட பங்குகள்) பிரிவு 19-ன் கீழும், சங்கம் அல்லது அறக்கட்டளையாக இருந்தால் கணிசமான நிதி உதவி மூலம் பிரிவு 14-ன் கீழும் CAG தணிக்கைக்கு உட்படுகிறது."
@@ -4197,16 +4197,16 @@
     "explanation_ta": "ஒரு SPV அரசு நிறுவனமாகப் பதிவு செய்யப்பட்டால் (51% அல்லது அதற்கு மேற்பட்ட பங்குகள்) பிரிவு 19-ன் கீழும், சங்கம் அல்லது அறக்கட்டளையாக இருந்தால் கணிசமான நிதி உதவி மூலம் பிரிவு 14-ன் கீழும் CAG தணிக்கைக்கு உட்படுகிறது.",
     "why_not_others": {
       "A": {
-        "en": "Option A is correct: If an SPV is incorporated as a government company (where Union/State holds >= 51% shares), it is audited under Section 19 of the CAG Act. If established as a society/trust, substantial funding triggers Section 14.",
-        "ta": "தெரிவு A சரி: ஒரு SPV அரசு நிறுவனமாகப் பதிவு செய்யப்பட்டால் (51% அல்லது அதற்கு மேற்பட்ட பங்குகள்) பிரிவு 19-ன் கீழும், சங்கம் அல்லது அறக்கட்டளையாக இருந்தால் கணிசமான நிதி உதவி மூலம் பிரிவு 14-ன் கீழும் CAG தணிக்கைக்கு உட்படுகிறது."
+        "en": "Option C (The presence of foreign advertising posters on metro pillars) is incorrect in this constitutional context.",
+        "ta": "தெரிவு C (மெட்ரோ தூண்களில் வெளிநாட்டு விளம்பர சுவரொட்டிகள் இருப்பது) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "B": {
         "en": "Option B (An oral invitation from the local traffic police inspector) is incorrect in this constitutional context.",
         "ta": "தெரிவு B (உள்ளூர் போக்குவரத்து காவல் ஆய்வாளரின் வாய்மொழி அழைப்பு) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "C": {
-        "en": "Option C (The presence of foreign advertising posters on metro pillars) is incorrect in this constitutional context.",
-        "ta": "தெரிவு C (மெட்ரோ தூண்களில் வெளிநாட்டு விளம்பர சுவரொட்டிகள் இருப்பது) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
+        "en": "Option A is correct: If an SPV is incorporated as a government company (where Union/State holds >= 51% shares), it is audited under Section 19 of the CAG Act. If established as a society/trust, substantial funding triggers Section 14.",
+        "ta": "தெரிவு A சரி: ஒரு SPV அரசு நிறுவனமாகப் பதிவு செய்யப்பட்டால் (51% அல்லது அதற்கு மேற்பட்ட பங்குகள்) பிரிவு 19-ன் கீழும், சங்கம் அல்லது அறக்கட்டளையாக இருந்தால் கணிசமான நிதி உதவி மூலம் பிரிவு 14-ன் கீழும் CAG தணிக்கைக்கு உட்படுகிறது."
       },
       "D": {
         "en": "Option D (SPVs are completely immune from all public audit under all laws) is incorrect in this constitutional context.",
@@ -4257,8 +4257,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Director General of Audit (Defence Services)",
-        "ta": "பாதுகாப்புப் பணிகள் தணிக்கைத் தலைமை இயக்குநர் (DGADS)"
+        "en": "Supreme Court Military Appeal Registry",
+        "ta": "உச்ச நீதிமன்ற ராணுவ மேல்முறையீட்டுப் பதிவகம்"
       },
       {
         "id": "B",
@@ -4272,24 +4272,24 @@
       },
       {
         "id": "D",
-        "en": "Supreme Court Military Appeal Registry",
-        "ta": "உச்ச நீதிமன்ற ராணுவ மேல்முறையீட்டுப் பதிவகம்"
+        "en": "Director General of Audit (Defence Services)",
+        "ta": "பாதுகாப்புப் பணிகள் தணிக்கைத் தலைமை இயக்குநர் (DGADS)"
       }
     ],
     "options_en": [
-      "Director General of Audit (Defence Services)",
+      "Supreme Court Military Appeal Registry",
       "Reserve Bank Currency Vault Directorate",
       "Central Vigilance Commission Anti-Terror Cell",
-      "Supreme Court Military Appeal Registry"
+      "Director General of Audit (Defence Services)"
     ],
     "options_ta": [
-      "பாதுகாப்புப் பணிகள் தணிக்கைத் தலைமை இயக்குநர் (DGADS)",
+      "உச்ச நீதிமன்ற ராணுவ மேல்முறையீட்டுப் பதிவகம்",
       "ரிசர்வ் வங்கி நாணயப் பெட்டக இயக்குநரகம்",
       "மத்திய ஊழல் கண்காணிப்பு ஆணைய பயங்கரவாத எதிர்ப்புப் பிரிவு",
-      "உச்ச நீதிமன்ற ராணுவ மேல்முறையீட்டுப் பதிவகம்"
+      "பாதுகாப்புப் பணிகள் தணிக்கைத் தலைமை இயக்குநர் (DGADS)"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "The Director General of Audit, Defence Services (DGADS), an officer of the IA&AS operating under the CAG, oversees the specialized audit of defence services, pensions, and equipment.",
       "ta": "சி.ஏ.ஜி-யின் கீழ் செயல்படும் IA&AS அதிகாரியான பாதுகாப்புப் பணிகள் தணிக்கைத் தலைமை இயக்குநர் (DGADS), பாதுகாப்புப் படைகள், ஓய்வூதியங்கள் மற்றும் தளவாடங்களின் சிறப்புத் தணிக்கையை மேற்பார்வையிடுகிறார்."
@@ -4298,8 +4298,8 @@
     "explanation_ta": "சி.ஏ.ஜி-யின் கீழ் செயல்படும் IA&AS அதிகாரியான பாதுகாப்புப் பணிகள் தணிக்கைத் தலைமை இயக்குநர் (DGADS), பாதுகாப்புப் படைகள், ஓய்வூதியங்கள் மற்றும் தளவாடங்களின் சிறப்புத் தணிக்கையை மேற்பார்வையிடுகிறார்.",
     "why_not_others": {
       "A": {
-        "en": "Option A is correct: The Director General of Audit, Defence Services (DGADS), an officer of the IA&AS operating under the CAG, oversees the specialized audit of defence services, pensions, and equipment.",
-        "ta": "தெரிவு A சரி: சி.ஏ.ஜி-யின் கீழ் செயல்படும் IA&AS அதிகாரியான பாதுகாப்புப் பணிகள் தணிக்கைத் தலைமை இயக்குநர் (DGADS), பாதுகாப்புப் படைகள், ஓய்வூதியங்கள் மற்றும் தளவாடங்களின் சிறப்புத் தணிக்கையை மேற்பார்வையிடுகிறார்."
+        "en": "Option D (Supreme Court Military Appeal Registry) is incorrect in this constitutional context.",
+        "ta": "தெரிவு D (உச்ச நீதிமன்ற ராணுவ மேல்முறையீட்டுப் பதிவகம்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "B": {
         "en": "Option B (Reserve Bank Currency Vault Directorate) is incorrect in this constitutional context.",
@@ -4310,8 +4310,8 @@
         "ta": "தெரிவு C (மத்திய ஊழல் கண்காணிப்பு ஆணைய பயங்கரவாத எதிர்ப்புப் பிரிவு) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "D": {
-        "en": "Option D (Supreme Court Military Appeal Registry) is incorrect in this constitutional context.",
-        "ta": "தெரிவு D (உச்ச நீதிமன்ற ராணுவ மேல்முறையீட்டுப் பதிவகம்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
+        "en": "Option A is correct: The Director General of Audit, Defence Services (DGADS), an officer of the IA&AS operating under the CAG, oversees the specialized audit of defence services, pensions, and equipment.",
+        "ta": "தெரிவு A சரி: சி.ஏ.ஜி-யின் கீழ் செயல்படும் IA&AS அதிகாரியான பாதுகாப்புப் பணிகள் தணிக்கைத் தலைமை இயக்குநர் (DGADS), பாதுகாப்புப் படைகள், ஓய்வூதியங்கள் மற்றும் தளவாடங்களின் சிறப்புத் தணிக்கையை மேற்பார்வையிடுகிறார்."
       }
     },
     "tnpsc_tip": {
@@ -4358,13 +4358,13 @@
     "options": [
       {
         "id": "A",
-        "en": "No, purely private cooperatives without government funding or statutory request under Section 20 are outside the CAG's scope",
-        "ta": "இல்லை, அரசு நிதி அல்லது பிரிவு 20-ன் கீழான கோரிக்கை இல்லாத தூய தனியார் கூட்டுறவுச் சங்கங்கள் CAG-ன் தணிக்கை வரம்பிற்கு அப்பாற்பட்டவை"
+        "en": "Yes, the CAG audits every private shop, club, and cooperative society in India",
+        "ta": "ஆம், இந்தியாவில் உள்ள ஒவ்வொரு தனியார் கடை, சங்கம் மற்றும் கூட்டுறவுச் சங்கத்தை CAG தணிக்கை செய்கிறார்"
       },
       {
         "id": "B",
-        "en": "Yes, the CAG audits every private shop, club, and cooperative society in India",
-        "ta": "ஆம், இந்தியாவில் உள்ள ஒவ்வொரு தனியார் கடை, சங்கம் மற்றும் கூட்டுறவுச் சங்கத்தை CAG தணிக்கை செய்கிறார்"
+        "en": "No, purely private cooperatives without government funding or statutory request under Section 20 are outside the CAG's scope",
+        "ta": "இல்லை, அரசு நிதி அல்லது பிரிவு 20-ன் கீழான கோரிக்கை இல்லாத தூய தனியார் கூட்டுறவுச் சங்கங்கள் CAG-ன் தணிக்கை வரம்பிற்கு அப்பாற்பட்டவை"
       },
       {
         "id": "C",
@@ -4378,19 +4378,19 @@
       }
     ],
     "options_en": [
-      "No, purely private cooperatives without government funding or statutory request under Section 20 are outside the CAG's scope",
       "Yes, the CAG audits every private shop, club, and cooperative society in India",
+      "No, purely private cooperatives without government funding or statutory request under Section 20 are outside the CAG's scope",
       "Yes, under Article 19(1)(c) of the Constitution directly",
       "Yes, if ordered by the local police sub-inspector"
     ],
     "options_ta": [
-      "இல்லை, அரசு நிதி அல்லது பிரிவு 20-ன் கீழான கோரிக்கை இல்லாத தூய தனியார் கூட்டுறவுச் சங்கங்கள் CAG-ன் தணிக்கை வரம்பிற்கு அப்பாற்பட்டவை",
       "ஆம், இந்தியாவில் உள்ள ஒவ்வொரு தனியார் கடை, சங்கம் மற்றும் கூட்டுறவுச் சங்கத்தை CAG தணிக்கை செய்கிறார்",
+      "இல்லை, அரசு நிதி அல்லது பிரிவு 20-ன் கீழான கோரிக்கை இல்லாத தூய தனியார் கூட்டுறவுச் சங்கங்கள் CAG-ன் தணிக்கை வரம்பிற்கு அப்பாற்பட்டவை",
       "ஆம், அரசியலமைப்பின் சரத்து 19(1)(c)-ன் கீழ் நேரடியாக",
       "ஆம், உள்ளூர் காவல் சார்பு ஆய்வாளர் உத்தரவிட்டால் செய்யலாம்"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Purely private cooperatives without state equity, grants, or government guarantees fall under the State Registrar of Cooperative Societies, not the CAG, unless Section 20 is invoked.",
       "ta": "அரசுப் பங்கு, மானியம் அல்லது அரசு உத்தரவாதம் இல்லாத தனியார் கூட்டுறவுச் சங்கங்கள் மாநிலக் கூட்டுறவுச் சங்கப் பதிவாளரின் கீழ் வருகின்றனவே தவிர, பிரிவு 20 பயன்படுத்தப்படாவிட்டால் CAG வரம்பில் வராது."
@@ -4399,12 +4399,12 @@
     "explanation_ta": "அரசுப் பங்கு, மானியம் அல்லது அரசு உத்தரவாதம் இல்லாத தனியார் கூட்டுறவுச் சங்கங்கள் மாநிலக் கூட்டுறவுச் சங்கப் பதிவாளரின் கீழ் வருகின்றனவே தவிர, பிரிவு 20 பயன்படுத்தப்படாவிட்டால் CAG வரம்பில் வராது.",
     "why_not_others": {
       "A": {
-        "en": "Option A is correct: Purely private cooperatives without state equity, grants, or government guarantees fall under the State Registrar of Cooperative Societies, not the CAG, unless Section 20 is invoked.",
-        "ta": "தெரிவு A சரி: அரசுப் பங்கு, மானியம் அல்லது அரசு உத்தரவாதம் இல்லாத தனியார் கூட்டுறவுச் சங்கங்கள் மாநிலக் கூட்டுறவுச் சங்கப் பதிவாளரின் கீழ் வருகின்றனவே தவிர, பிரிவு 20 பயன்படுத்தப்படாவிட்டால் CAG வரம்பில் வராது."
-      },
-      "B": {
         "en": "Option B (Yes, the CAG audits every private shop, club, and cooperative society in India) is incorrect in this constitutional context.",
         "ta": "தெரிவு B (ஆம், இந்தியாவில் உள்ள ஒவ்வொரு தனியார் கடை, சங்கம் மற்றும் கூட்டுறவுச் சங்கத்தை CAG தணிக்கை செய்கிறார்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
+      },
+      "B": {
+        "en": "Option A is correct: Purely private cooperatives without state equity, grants, or government guarantees fall under the State Registrar of Cooperative Societies, not the CAG, unless Section 20 is invoked.",
+        "ta": "தெரிவு A சரி: அரசுப் பங்கு, மானியம் அல்லது அரசு உத்தரவாதம் இல்லாத தனியார் கூட்டுறவுச் சங்கங்கள் மாநிலக் கூட்டுறவுச் சங்கப் பதிவாளரின் கீழ் வருகின்றனவே தவிர, பிரிவு 20 பயன்படுத்தப்படாவிட்டால் CAG வரம்பில் வராது."
       },
       "C": {
         "en": "Option C (Yes, under Article 19(1)(c) of the Constitution directly) is incorrect in this constitutional context.",
@@ -4560,8 +4560,8 @@
     "options": [
       {
         "id": "A",
-        "en": "It established the principle that non-government SPVs managing core sovereign financial infrastructure are subject to CAG audit scrutiny",
-        "ta": "இறையாண்மை நிதி உள்கட்டமைப்பை நிர்வகிக்கும் அரசு சாரா சிறப்பு நோக்க நிறுவனங்களும் (SPV) CAG தணிக்கைக்கு உட்பட்டவை என்ற கொள்கையை நிறுவியதால்"
+        "en": "It replaced all indirect taxes with an ancient bartering system",
+        "ta": "அனைத்து மறைமுக வரிகளையும் ஒழித்து பழங்கால பண்டமாற்று முறைக்கு மாற்றியதால்"
       },
       {
         "id": "B",
@@ -4575,24 +4575,24 @@
       },
       {
         "id": "D",
-        "en": "It replaced all indirect taxes with an ancient bartering system",
-        "ta": "அனைத்து மறைமுக வரிகளையும் ஒழித்து பழங்கால பண்டமாற்று முறைக்கு மாற்றியதால்"
+        "en": "It established the principle that non-government SPVs managing core sovereign financial infrastructure are subject to CAG audit scrutiny",
+        "ta": "இறையாண்மை நிதி உள்கட்டமைப்பை நிர்வகிக்கும் அரசு சாரா சிறப்பு நோக்க நிறுவனங்களும் (SPV) CAG தணிக்கைக்கு உட்பட்டவை என்ற கொள்கையை நிறுவியதால்"
       }
     ],
     "options_en": [
-      "It established the principle that non-government SPVs managing core sovereign financial infrastructure are subject to CAG audit scrutiny",
+      "It replaced all indirect taxes with an ancient bartering system",
       "It resulted in the immediate physical closure of all computerized servers in India",
       "It made the CAG the permanent Chairman of the GST Council",
-      "It replaced all indirect taxes with an ancient bartering system"
+      "It established the principle that non-government SPVs managing core sovereign financial infrastructure are subject to CAG audit scrutiny"
     ],
     "options_ta": [
-      "இறையாண்மை நிதி உள்கட்டமைப்பை நிர்வகிக்கும் அரசு சாரா சிறப்பு நோக்க நிறுவனங்களும் (SPV) CAG தணிக்கைக்கு உட்பட்டவை என்ற கொள்கையை நிறுவியதால்",
+      "அனைத்து மறைமுக வரிகளையும் ஒழித்து பழங்கால பண்டமாற்று முறைக்கு மாற்றியதால்",
       "இந்தியாவில் உள்ள அனைத்து கணினி சேவையகங்களையும் உடனடியாக மூட வழிவகுத்ததால்",
       "CAG-ஐ ஜிஎஸ்டி கவுன்சிலின் நிரந்தரத் தலைவராக மாற்றியதால்",
-      "அனைத்து மறைமுக வரிகளையும் ஒழித்து பழங்கால பண்டமாற்று முறைக்கு மாற்றியதால்"
+      "இறையாண்மை நிதி உள்கட்டமைப்பை நிர்வகிக்கும் அரசு சாரா சிறப்பு நோக்க நிறுவனங்களும் (SPV) CAG தணிக்கைக்கு உட்பட்டவை என்ற கொள்கையை நிறுவியதால்"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Although GSTN was originally set up as a non-government private company (51% private equity initially, later converted to 100% government), the CAG established jurisdiction to audit its IT architecture, data security, and settlement systems.",
       "ta": "GSTN ஆரம்பத்தில் ஒரு தனியார் நிறுவனமாகத் தொடங்கப்பட்டாலும், அதன் தகவல் தொழில்நுட்பக் கட்டமைப்பு, தரவுப் பாதுகாப்பு மற்றும் வரித் தீர்வு அமைப்புகளைத் தணிக்கை செய்யும் அதிகாரத்தை CAG நிலைநாட்டினார்."
@@ -4601,8 +4601,8 @@
     "explanation_ta": "GSTN ஆரம்பத்தில் ஒரு தனியார் நிறுவனமாகத் தொடங்கப்பட்டாலும், அதன் தகவல் தொழில்நுட்பக் கட்டமைப்பு, தரவுப் பாதுகாப்பு மற்றும் வரித் தீர்வு அமைப்புகளைத் தணிக்கை செய்யும் அதிகாரத்தை CAG நிலைநாட்டினார்.",
     "why_not_others": {
       "A": {
-        "en": "Option A is correct: Although GSTN was originally set up as a non-government private company (51% private equity initially, later converted to 100% government), the CAG established jurisdiction to audit its IT architecture, data security, and settlement systems.",
-        "ta": "தெரிவு A சரி: GSTN ஆரம்பத்தில் ஒரு தனியார் நிறுவனமாகத் தொடங்கப்பட்டாலும், அதன் தகவல் தொழில்நுட்பக் கட்டமைப்பு, தரவுப் பாதுகாப்பு மற்றும் வரித் தீர்வு அமைப்புகளைத் தணிக்கை செய்யும் அதிகாரத்தை CAG நிலைநாட்டினார்."
+        "en": "Option D (It replaced all indirect taxes with an ancient bartering system) is incorrect in this constitutional context.",
+        "ta": "தெரிவு D (அனைத்து மறைமுக வரிகளையும் ஒழித்து பழங்கால பண்டமாற்று முறைக்கு மாற்றியதால்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "B": {
         "en": "Option B (It resulted in the immediate physical closure of all computerized servers in India) is incorrect in this constitutional context.",
@@ -4613,8 +4613,8 @@
         "ta": "தெரிவு C (CAG-ஐ ஜிஎஸ்டி கவுன்சிலின் நிரந்தரத் தலைவராக மாற்றியதால்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "D": {
-        "en": "Option D (It replaced all indirect taxes with an ancient bartering system) is incorrect in this constitutional context.",
-        "ta": "தெரிவு D (அனைத்து மறைமுக வரிகளையும் ஒழித்து பழங்கால பண்டமாற்று முறைக்கு மாற்றியதால்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
+        "en": "Option A is correct: Although GSTN was originally set up as a non-government private company (51% private equity initially, later converted to 100% government), the CAG established jurisdiction to audit its IT architecture, data security, and settlement systems.",
+        "ta": "தெரிவு A சரி: GSTN ஆரம்பத்தில் ஒரு தனியார் நிறுவனமாகத் தொடங்கப்பட்டாலும், அதன் தகவல் தொழில்நுட்பக் கட்டமைப்பு, தரவுப் பாதுகாப்பு மற்றும் வரித் தீர்வு அமைப்புகளைத் தணிக்கை செய்யும் அதிகாரத்தை CAG நிலைநாட்டினார்."
       }
     },
     "tnpsc_tip": {
@@ -4661,8 +4661,8 @@
     "options": [
       {
         "id": "A",
-        "en": "No, monetary policy decisions are macroeconomic policy functions outside the audit scope of the CAG",
-        "ta": "இல்லை, நாணயக் கொள்கை முடிவுகள் மேக்ரோ பொருளாதாரக் கொள்கைப் பணிகள் என்பதால் CAG தணிக்கை வரம்பிற்கு அப்பாற்பட்டவை"
+        "en": "Yes, the CAG can veto any monetary policy resolution passed by the RBI Governor",
+        "ta": "ஆம், ரிசர்வ் வங்கி ஆளுநர் நிறைவேற்றும் எந்தவொரு நாணயக் கொள்கைத் தீர்மானத்தையும் CAG ரத்து செய்யலாம்"
       },
       {
         "id": "B",
@@ -4671,8 +4671,8 @@
       },
       {
         "id": "C",
-        "en": "Yes, the CAG can veto any monetary policy resolution passed by the RBI Governor",
-        "ta": "ஆம், ரிசர்வ் வங்கி ஆளுநர் நிறைவேற்றும் எந்தவொரு நாணயக் கொள்கைத் தீர்மானத்தையும் CAG ரத்து செய்யலாம்"
+        "en": "No, monetary policy decisions are macroeconomic policy functions outside the audit scope of the CAG",
+        "ta": "இல்லை, நாணயக் கொள்கை முடிவுகள் மேக்ரோ பொருளாதாரக் கொள்கைப் பணிகள் என்பதால் CAG தணிக்கை வரம்பிற்கு அப்பாற்பட்டவை"
       },
       {
         "id": "D",
@@ -4681,19 +4681,19 @@
       }
     ],
     "options_en": [
-      "No, monetary policy decisions are macroeconomic policy functions outside the audit scope of the CAG",
-      "Yes, the CAG personally fixes the repo rate and reverse repo rate every two months",
       "Yes, the CAG can veto any monetary policy resolution passed by the RBI Governor",
+      "Yes, the CAG personally fixes the repo rate and reverse repo rate every two months",
+      "No, monetary policy decisions are macroeconomic policy functions outside the audit scope of the CAG",
       "Only during leap years under Article 360"
     ],
     "options_ta": [
-      "இல்லை, நாணயக் கொள்கை முடிவுகள் மேக்ரோ பொருளாதாரக் கொள்கைப் பணிகள் என்பதால் CAG தணிக்கை வரம்பிற்கு அப்பாற்பட்டவை",
-      "ஆம், இரண்டு மாதங்களுக்கு ஒருமுறை ரெப்போ மற்றும் ரிவர்ஸ் ரெப்போ விகிதங்களை CAG தனிப்பட்ட முறையில் நிர்ணயிக்கிறார்",
       "ஆம், ரிசர்வ் வங்கி ஆளுநர் நிறைவேற்றும் எந்தவொரு நாணயக் கொள்கைத் தீர்மானத்தையும் CAG ரத்து செய்யலாம்",
+      "ஆம், இரண்டு மாதங்களுக்கு ஒருமுறை ரெப்போ மற்றும் ரிவர்ஸ் ரெப்போ விகிதங்களை CAG தனிப்பட்ட முறையில் நிர்ணயிக்கிறார்",
+      "இல்லை, நாணயக் கொள்கை முடிவுகள் மேக்ரோ பொருளாதாரக் கொள்கைப் பணிகள் என்பதால் CAG தணிக்கை வரம்பிற்கு அப்பாற்பட்டவை",
       "சரத்து 360-ன் கீழ் லீப் ஆண்டுகளில் மட்டுமே"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "The setting of the repo rate and monetary policy under the RBI Act is an independent central banking function. The CAG does not audit monetary policy or macroeconomic rate determinations.",
       "ta": "ரிசர்வ் வங்கிச் சட்டத்தின் கீழ் நாணயக் கொள்கை மற்றும் ரெப்போ விகிதங்களை நிர்ணயிப்பது மத்திய வங்கியின் சுதந்திரமான பணியாகும். நாணயக் கொள்கை முடிவுகளை CAG தணிக்கை செய்வதில்லை."
@@ -4702,16 +4702,16 @@
     "explanation_ta": "ரிசர்வ் வங்கிச் சட்டத்தின் கீழ் நாணயக் கொள்கை மற்றும் ரெப்போ விகிதங்களை நிர்ணயிப்பது மத்திய வங்கியின் சுதந்திரமான பணியாகும். நாணயக் கொள்கை முடிவுகளை CAG தணிக்கை செய்வதில்லை.",
     "why_not_others": {
       "A": {
-        "en": "Option A is correct: The setting of the repo rate and monetary policy under the RBI Act is an independent central banking function. The CAG does not audit monetary policy or macroeconomic rate determinations.",
-        "ta": "தெரிவு A சரி: ரிசர்வ் வங்கிச் சட்டத்தின் கீழ் நாணயக் கொள்கை மற்றும் ரெப்போ விகிதங்களை நிர்ணயிப்பது மத்திய வங்கியின் சுதந்திரமான பணியாகும். நாணயக் கொள்கை முடிவுகளை CAG தணிக்கை செய்வதில்லை."
+        "en": "Option C (Yes, the CAG can veto any monetary policy resolution passed by the RBI Governor) is incorrect in this constitutional context.",
+        "ta": "தெரிவு C (ஆம், ரிசர்வ் வங்கி ஆளுநர் நிறைவேற்றும் எந்தவொரு நாணயக் கொள்கைத் தீர்மானத்தையும் CAG ரத்து செய்யலாம்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "B": {
         "en": "Option B (Yes, the CAG personally fixes the repo rate and reverse repo rate every two months) is incorrect in this constitutional context.",
         "ta": "தெரிவு B (ஆம், இரண்டு மாதங்களுக்கு ஒருமுறை ரெப்போ மற்றும் ரிவர்ஸ் ரெப்போ விகிதங்களை CAG தனிப்பட்ட முறையில் நிர்ணயிக்கிறார்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "C": {
-        "en": "Option C (Yes, the CAG can veto any monetary policy resolution passed by the RBI Governor) is incorrect in this constitutional context.",
-        "ta": "தெரிவு C (ஆம், ரிசர்வ் வங்கி ஆளுநர் நிறைவேற்றும் எந்தவொரு நாணயக் கொள்கைத் தீர்மானத்தையும் CAG ரத்து செய்யலாம்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
+        "en": "Option A is correct: The setting of the repo rate and monetary policy under the RBI Act is an independent central banking function. The CAG does not audit monetary policy or macroeconomic rate determinations.",
+        "ta": "தெரிவு A சரி: ரிசர்வ் வங்கிச் சட்டத்தின் கீழ் நாணயக் கொள்கை மற்றும் ரெப்போ விகிதங்களை நிர்ணயிப்பது மத்திய வங்கியின் சுதந்திரமான பணியாகும். நாணயக் கொள்கை முடிவுகளை CAG தணிக்கை செய்வதில்லை."
       },
       "D": {
         "en": "Option D (Only during leap years under Article 360) is incorrect in this constitutional context.",
@@ -4762,13 +4762,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Individual audit reports on autonomous bodies, authorities, and statutory corporations presented separately to Parliament or State Legislatures",
-        "ta": "நாடாளுமன்றம் அல்லது மாநில சட்டமன்றங்களில் தனித்தனியாக வைக்கப்படும் தன்னாட்சி அமைப்புகள் மற்றும் கழகங்கள் மீதான தனித் தணிக்கை அறிக்கைகள்"
+        "en": "Secret personal diaries written by the CAG for his family",
+        "ta": "சி.ஏ.ஜி தனது குடும்பத்திற்காக எழுதும் ரகசிய தனிப்பட்ட குறிப்புகள்"
       },
       {
         "id": "B",
-        "en": "Secret personal diaries written by the CAG for his family",
-        "ta": "சி.ஏ.ஜி தனது குடும்பத்திற்காக எழுதும் ரகசிய தனிப்பட்ட குறிப்புகள்"
+        "en": "Individual audit reports on autonomous bodies, authorities, and statutory corporations presented separately to Parliament or State Legislatures",
+        "ta": "நாடாளுமன்றம் அல்லது மாநில சட்டமன்றங்களில் தனித்தனியாக வைக்கப்படும் தன்னாட்சி அமைப்புகள் மற்றும் கழகங்கள் மீதான தனித் தணிக்கை அறிக்கைகள்"
       },
       {
         "id": "C",
@@ -4782,19 +4782,19 @@
       }
     ],
     "options_en": [
-      "Individual audit reports on autonomous bodies, authorities, and statutory corporations presented separately to Parliament or State Legislatures",
       "Secret personal diaries written by the CAG for his family",
+      "Individual audit reports on autonomous bodies, authorities, and statutory corporations presented separately to Parliament or State Legislatures",
       "Judicial bail orders issued to government accountants",
       "Commercial advertising brochures of public sector banks"
     ],
     "options_ta": [
-      "நாடாளுமன்றம் அல்லது மாநில சட்டமன்றங்களில் தனித்தனியாக வைக்கப்படும் தன்னாட்சி அமைப்புகள் மற்றும் கழகங்கள் மீதான தனித் தணிக்கை அறிக்கைகள்",
       "சி.ஏ.ஜி தனது குடும்பத்திற்காக எழுதும் ரகசிய தனிப்பட்ட குறிப்புகள்",
+      "நாடாளுமன்றம் அல்லது மாநில சட்டமன்றங்களில் தனித்தனியாக வைக்கப்படும் தன்னாட்சி அமைப்புகள் மற்றும் கழகங்கள் மீதான தனித் தணிக்கை அறிக்கைகள்",
       "அரசு கணக்காளர்களுக்கு வழங்கப்படும் நீதித்துறை பிணை உத்தரவுகள்",
       "பொதுத்துறை வங்கிகளின் வணிக விளம்பர கையேடுகள்"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Separate Audit Reports (SARs) are comprehensive audit reports containing the audited annual statement of accounts along with the CAG's audit observations for individual statutory bodies and autonomous institutions.",
       "ta": "தனித் தணிக்கை அறிக்கைகள் (SARs) என்பவை தனிப்பட்ட சட்டப்பூர்வ அமைப்புகள் மற்றும் தன்னாட்சி நிறுவனங்களின் தணிக்கை செய்யப்பட்ட கணக்குகள் மற்றும் CAG-யின் தணிக்கைக் கருத்துக்களைக் கொண்ட தனித்தனி அறிக்கைகளாகும்."
@@ -4803,12 +4803,12 @@
     "explanation_ta": "தனித் தணிக்கை அறிக்கைகள் (SARs) என்பவை தனிப்பட்ட சட்டப்பூர்வ அமைப்புகள் மற்றும் தன்னாட்சி நிறுவனங்களின் தணிக்கை செய்யப்பட்ட கணக்குகள் மற்றும் CAG-யின் தணிக்கைக் கருத்துக்களைக் கொண்ட தனித்தனி அறிக்கைகளாகும்.",
     "why_not_others": {
       "A": {
-        "en": "Option A is correct: Separate Audit Reports (SARs) are comprehensive audit reports containing the audited annual statement of accounts along with the CAG's audit observations for individual statutory bodies and autonomous institutions.",
-        "ta": "தெரிவு A சரி: தனித் தணிக்கை அறிக்கைகள் (SARs) என்பவை தனிப்பட்ட சட்டப்பூர்வ அமைப்புகள் மற்றும் தன்னாட்சி நிறுவனங்களின் தணிக்கை செய்யப்பட்ட கணக்குகள் மற்றும் CAG-யின் தணிக்கைக் கருத்துக்களைக் கொண்ட தனித்தனி அறிக்கைகளாகும்."
-      },
-      "B": {
         "en": "Option B (Secret personal diaries written by the CAG for his family) is incorrect in this constitutional context.",
         "ta": "தெரிவு B (சி.ஏ.ஜி தனது குடும்பத்திற்காக எழுதும் ரகசிய தனிப்பட்ட குறிப்புகள்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
+      },
+      "B": {
+        "en": "Option A is correct: Separate Audit Reports (SARs) are comprehensive audit reports containing the audited annual statement of accounts along with the CAG's audit observations for individual statutory bodies and autonomous institutions.",
+        "ta": "தெரிவு A சரி: தனித் தணிக்கை அறிக்கைகள் (SARs) என்பவை தனிப்பட்ட சட்டப்பூர்வ அமைப்புகள் மற்றும் தன்னாட்சி நிறுவனங்களின் தணிக்கை செய்யப்பட்ட கணக்குகள் மற்றும் CAG-யின் தணிக்கைக் கருத்துக்களைக் கொண்ட தனித்தனி அறிக்கைகளாகும்."
       },
       "C": {
         "en": "Option C (Judicial bail orders issued to government accountants) is incorrect in this constitutional context.",
@@ -4863,13 +4863,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Restored the mandatory role of the CAG by specifying that the President prescribes the form 'on the advice of' the CAG",
-        "ta": "குடியரசுத் தலைவர் CAG-ன் 'ஆலோசனையின் பேரில்' படிவத்தைப் பரிந்துரைப்பார் எனக் கூறி CAG-யின் கட்டாயப் பங்கை மீட்டெடுத்தன"
+        "en": "Abolished the CAG's advisory role completely and gave it to the Law Minister",
+        "ta": "CAG-ன் ஆலோசனைப் பங்கை முற்றிலும் ஒழித்து சட்ட அமைச்சரிடம் ஒப்படைத்தன"
       },
       {
         "id": "B",
-        "en": "Abolished the CAG's advisory role completely and gave it to the Law Minister",
-        "ta": "CAG-ன் ஆலோசனைப் பங்கை முற்றிலும் ஒழித்து சட்ட அமைச்சரிடம் ஒப்படைத்தன"
+        "en": "Restored the mandatory role of the CAG by specifying that the President prescribes the form 'on the advice of' the CAG",
+        "ta": "குடியரசுத் தலைவர் CAG-ன் 'ஆலோசனையின் பேரில்' படிவத்தைப் பரிந்துரைப்பார் எனக் கூறி CAG-யின் கட்டாயப் பங்கை மீட்டெடுத்தன"
       },
       {
         "id": "C",
@@ -4883,19 +4883,19 @@
       }
     ],
     "options_en": [
-      "Restored the mandatory role of the CAG by specifying that the President prescribes the form 'on the advice of' the CAG",
       "Abolished the CAG's advisory role completely and gave it to the Law Minister",
+      "Restored the mandatory role of the CAG by specifying that the President prescribes the form 'on the advice of' the CAG",
       "Ordered that all accounts must be written only in ancient Sanskrit",
       "Transferred Article 150 to the Ninth Schedule permanently"
     ],
     "options_ta": [
-      "குடியரசுத் தலைவர் CAG-ன் 'ஆலோசனையின் பேரில்' படிவத்தைப் பரிந்துரைப்பார் எனக் கூறி CAG-யின் கட்டாயப் பங்கை மீட்டெடுத்தன",
       "CAG-ன் ஆலோசனைப் பங்கை முற்றிலும் ஒழித்து சட்ட அமைச்சரிடம் ஒப்படைத்தன",
+      "குடியரசுத் தலைவர் CAG-ன் 'ஆலோசனையின் பேரில்' படிவத்தைப் பரிந்துரைப்பார் எனக் கூறி CAG-யின் கட்டாயப் பங்கை மீட்டெடுத்தன",
       "அனைத்து கணக்குகளும் சமஸ்கிருதத்தில் மட்டுமே எழுதப்பட வேண்டும் என உத்தரவிட்டன",
       "சரத்து 150-ஐ ஒன்பதாவது அட்டவணைக்கு நிரந்தரமாக மாற்றின"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "The 42nd Amendment had diluted Article 150 by substituting 'in consultation with' the CAG. The 44th Amendment in 1978 restored the phrasing 'on the advice of the Comptroller and Auditor-General of India', strengthening the CAG's authority.",
       "ta": "42-வது திருத்தம் 'CAG-ன் கலந்தாலோசனையுடன்' என மாற்றி அதிகாரத்தைக் குறைத்தது. 1978-ல் 44-வது திருத்தம் மீண்டும் 'CAG-ன் ஆலோசனையின் பேரில்' என்று மாற்றி சி.ஏ.ஜி-யின் அதிகாரத்தை மீட்டெடுத்தது."
@@ -4904,12 +4904,12 @@
     "explanation_ta": "42-வது திருத்தம் 'CAG-ன் கலந்தாலோசனையுடன்' என மாற்றி அதிகாரத்தைக் குறைத்தது. 1978-ல் 44-வது திருத்தம் மீண்டும் 'CAG-ன் ஆலோசனையின் பேரில்' என்று மாற்றி சி.ஏ.ஜி-யின் அதிகாரத்தை மீட்டெடுத்தது.",
     "why_not_others": {
       "A": {
-        "en": "Option A is correct: The 42nd Amendment had diluted Article 150 by substituting 'in consultation with' the CAG. The 44th Amendment in 1978 restored the phrasing 'on the advice of the Comptroller and Auditor-General of India', strengthening the CAG's authority.",
-        "ta": "தெரிவு A சரி: 42-வது திருத்தம் 'CAG-ன் கலந்தாலோசனையுடன்' என மாற்றி அதிகாரத்தைக் குறைத்தது. 1978-ல் 44-வது திருத்தம் மீண்டும் 'CAG-ன் ஆலோசனையின் பேரில்' என்று மாற்றி சி.ஏ.ஜி-யின் அதிகாரத்தை மீட்டெடுத்தது."
-      },
-      "B": {
         "en": "Option B (Abolished the CAG's advisory role completely and gave it to the Law Minister) is incorrect in this constitutional context.",
         "ta": "தெரிவு B (CAG-ன் ஆலோசனைப் பங்கை முற்றிலும் ஒழித்து சட்ட அமைச்சரிடம் ஒப்படைத்தன) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
+      },
+      "B": {
+        "en": "Option A is correct: The 42nd Amendment had diluted Article 150 by substituting 'in consultation with' the CAG. The 44th Amendment in 1978 restored the phrasing 'on the advice of the Comptroller and Auditor-General of India', strengthening the CAG's authority.",
+        "ta": "தெரிவு A சரி: 42-வது திருத்தம் 'CAG-ன் கலந்தாலோசனையுடன்' என மாற்றி அதிகாரத்தைக் குறைத்தது. 1978-ல் 44-வது திருத்தம் மீண்டும் 'CAG-ன் ஆலோசனையின் பேரில்' என்று மாற்றி சி.ஏ.ஜி-யின் அதிகாரத்தை மீட்டெடுத்தது."
       },
       "C": {
         "en": "Option C (Ordered that all accounts must be written only in ancient Sanskrit) is incorrect in this constitutional context.",
@@ -4964,8 +4964,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Security of tenure identical to an SC Judge, expenses charged on Consolidated Fund, and complete post-retirement government employment ban",
-        "ta": "உச்ச நீதிமன்ற நீதிபதிக்கு இணையான பதவிப் பாதுகாப்பு, திரட்டப்பட்ட நிதியில் சார்ஜ் செய்யப்பட்ட செலவுகள் மற்றும் ஓய்வுக்குப் பிந்தைய அரசு வேலைவாய்ப்பிற்கான முழுத் தடை"
+        "en": "Power to dissolve the Parliament in consultation with the Chief of Defence Staff",
+        "ta": "முப்படைகளின் தலைமைத் தளபதியுடன் கலந்தாலோசித்து நாடாளுமன்றத்தைக் கலைக்கும் அதிகாரம்"
       },
       {
         "id": "B",
@@ -4974,8 +4974,8 @@
       },
       {
         "id": "C",
-        "en": "Power to dissolve the Parliament in consultation with the Chief of Defence Staff",
-        "ta": "முப்படைகளின் தலைமைத் தளபதியுடன் கலந்தாலோசித்து நாடாளுமன்றத்தைக் கலைக்கும் அதிகாரம்"
+        "en": "Security of tenure identical to an SC Judge, expenses charged on Consolidated Fund, and complete post-retirement government employment ban",
+        "ta": "உச்ச நீதிமன்ற நீதிபதிக்கு இணையான பதவிப் பாதுகாப்பு, திரட்டப்பட்ட நிதியில் சார்ஜ் செய்யப்பட்ட செலவுகள் மற்றும் ஓய்வுக்குப் பிந்தைய அரசு வேலைவாய்ப்பிற்கான முழுத் தடை"
       },
       {
         "id": "D",
@@ -4984,19 +4984,19 @@
       }
     ],
     "options_en": [
-      "Security of tenure identical to an SC Judge, expenses charged on Consolidated Fund, and complete post-retirement government employment ban",
-      "Right to participate as a cabinet minister in foreign treaty discussions",
       "Power to dissolve the Parliament in consultation with the Chief of Defence Staff",
+      "Right to participate as a cabinet minister in foreign treaty discussions",
+      "Security of tenure identical to an SC Judge, expenses charged on Consolidated Fund, and complete post-retirement government employment ban",
       "Authority to declare emergency under Article 352 in financial crisis"
     ],
     "options_ta": [
-      "உச்ச நீதிமன்ற நீதிபதிக்கு இணையான பதவிப் பாதுகாப்பு, திரட்டப்பட்ட நிதியில் சார்ஜ் செய்யப்பட்ட செலவுகள் மற்றும் ஓய்வுக்குப் பிந்தைய அரசு வேலைவாய்ப்பிற்கான முழுத் தடை",
-      "வெளிநாட்டு ஒப்பந்த விவாதங்களில் அமைச்சரவை அமைச்சராகப் பங்கேற்கும் உரிமை",
       "முப்படைகளின் தலைமைத் தளபதியுடன் கலந்தாலோசித்து நாடாளுமன்றத்தைக் கலைக்கும் அதிகாரம்",
+      "வெளிநாட்டு ஒப்பந்த விவாதங்களில் அமைச்சரவை அமைச்சராகப் பங்கேற்கும் உரிமை",
+      "உச்ச நீதிமன்ற நீதிபதிக்கு இணையான பதவிப் பாதுகாப்பு, திரட்டப்பட்ட நிதியில் சார்ஜ் செய்யப்பட்ட செலவுகள் மற்றும் ஓய்வுக்குப் பிந்தைய அரசு வேலைவாய்ப்பிற்கான முழுத் தடை",
       "நிதி நெருக்கடியில் சரத்து 352-ன் கீழ் அவசரநிலையைப் பிரகடனம் செய்யும் அதிகாரம்"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "The triad of independence guarantees in Article 148: (1) Removal only like a Supreme Court judge, (2) Administrative expenses and salary charged on the Consolidated Fund (non-votable), and (3) Total ineligibility for future office under Union or State governments.",
       "ta": "சரத்து 148-ல் உள்ள மூன்று முக்கிய சுதந்திர உத்தரவாதங்கள்: (1) உச்ச நீதிமன்ற நீதிபதி போல மட்டுமே நீக்கப்படுதல், (2) செலவுகள் திரட்டப்பட்ட நிதியில் சார்ஜ் செய்யப்படுதல் (வாக்கெடுப்பற்றது), (3) ஓய்வுக்குப் பிறகு மத்திய/மாநில அரசுகளில் மேலும் எந்தப் பதவியும் வகிக்க முழுத் தடை."
@@ -5005,16 +5005,16 @@
     "explanation_ta": "சரத்து 148-ல் உள்ள மூன்று முக்கிய சுதந்திர உத்தரவாதங்கள்: (1) உச்ச நீதிமன்ற நீதிபதி போல மட்டுமே நீக்கப்படுதல், (2) செலவுகள் திரட்டப்பட்ட நிதியில் சார்ஜ் செய்யப்படுதல் (வாக்கெடுப்பற்றது), (3) ஓய்வுக்குப் பிறகு மத்திய/மாநில அரசுகளில் மேலும் எந்தப் பதவியும் வகிக்க முழுத் தடை.",
     "why_not_others": {
       "A": {
-        "en": "Option A is correct: The triad of independence guarantees in Article 148: (1) Removal only like a Supreme Court judge, (2) Administrative expenses and salary charged on the Consolidated Fund (non-votable), and (3) Total ineligibility for future office under Union or State governments.",
-        "ta": "தெரிவு A சரி: சரத்து 148-ல் உள்ள மூன்று முக்கிய சுதந்திர உத்தரவாதங்கள்: (1) உச்ச நீதிமன்ற நீதிபதி போல மட்டுமே நீக்கப்படுதல், (2) செலவுகள் திரட்டப்பட்ட நிதியில் சார்ஜ் செய்யப்படுதல் (வாக்கெடுப்பற்றது), (3) ஓய்வுக்குப் பிறகு மத்திய/மாநில அரசுகளில் மேலும் எந்தப் பதவியும் வகிக்க முழுத் தடை."
+        "en": "Option C (Power to dissolve the Parliament in consultation with the Chief of Defence Staff) is incorrect in this constitutional context.",
+        "ta": "தெரிவு C (முப்படைகளின் தலைமைத் தளபதியுடன் கலந்தாலோசித்து நாடாளுமன்றத்தைக் கலைக்கும் அதிகாரம்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "B": {
         "en": "Option B (Right to participate as a cabinet minister in foreign treaty discussions) is incorrect in this constitutional context.",
         "ta": "தெரிவு B (வெளிநாட்டு ஒப்பந்த விவாதங்களில் அமைச்சரவை அமைச்சராகப் பங்கேற்கும் உரிமை) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
       },
       "C": {
-        "en": "Option C (Power to dissolve the Parliament in consultation with the Chief of Defence Staff) is incorrect in this constitutional context.",
-        "ta": "தெரிவு C (முப்படைகளின் தலைமைத் தளபதியுடன் கலந்தாலோசித்து நாடாளுமன்றத்தைக் கலைக்கும் அதிகாரம்) இந்த அரசியலமைப்புச் சூழலில் தவறானதாகும்."
+        "en": "Option A is correct: The triad of independence guarantees in Article 148: (1) Removal only like a Supreme Court judge, (2) Administrative expenses and salary charged on the Consolidated Fund (non-votable), and (3) Total ineligibility for future office under Union or State governments.",
+        "ta": "தெரிவு A சரி: சரத்து 148-ல் உள்ள மூன்று முக்கிய சுதந்திர உத்தரவாதங்கள்: (1) உச்ச நீதிமன்ற நீதிபதி போல மட்டுமே நீக்கப்படுதல், (2) செலவுகள் திரட்டப்பட்ட நிதியில் சார்ஜ் செய்யப்படுதல் (வாக்கெடுப்பற்றது), (3) ஓய்வுக்குப் பிறகு மத்திய/மாநில அரசுகளில் மேலும் எந்தப் பதவியும் வகிக்க முழுத் தடை."
       },
       "D": {
         "en": "Option D (Authority to declare emergency under Article 352 in financial crisis) is incorrect in this constitutional context.",

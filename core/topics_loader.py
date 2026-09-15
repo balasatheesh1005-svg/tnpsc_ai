@@ -76,6 +76,10 @@ def normalize_base_topic_id(subject: str, raw_id_or_filename: str) -> str:
         "polity_attorney_general": "polity_attorney_general_of_india",
         "polity_constitutional_amendments": "polity_amendments",
         "polity_constitutional_schedules": "polity_schedules",
+        "polity_directive_principles_of_state_policy": "polity_directive_principles",
+        "directive_principles_of_state_policy": "polity_directive_principles",
+        "polity_dpsp": "polity_directive_principles",
+        "dpsp": "polity_directive_principles",
     }
 
     return aliases.get(base_id, base_id)

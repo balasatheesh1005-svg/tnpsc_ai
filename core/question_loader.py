@@ -49,8 +49,9 @@ def load_questions(
     alias_map = {
         "finance_commission": ["finance_commission", "fc"],
         "fc": ["fc", "finance_commission"],
-        "attorney_general": ["attorney_general", "ag"],
-        "ag": ["ag", "attorney_general"],
+        "attorney_general_of_india": ["attorney_general_of_india", "attorney_general", "ag"],
+        "attorney_general": ["attorney_general", "attorney_general_of_india", "ag"],
+        "ag": ["ag", "attorney_general", "attorney_general_of_india"],
         "advocate_general": ["advocate_general", "advg"],
         "advg": ["advg", "advocate_general"],
         "cag": ["cag", "comptroller_and_auditor_general"],
@@ -72,6 +73,9 @@ def load_questions(
         "upsc": ["upsc", "upsc_state_psc", "upsc_psc"],
         "constitutional_statutory_bodies": ["constitutional_statutory_bodies", "csb"],
         "csb": ["csb", "constitutional_statutory_bodies"],
+        "directive_principles": ["directive_principles", "dpsp", "directive_principles_of_state_policy"],
+        "directive_principles_of_state_policy": ["directive_principles", "dpsp", "directive_principles_of_state_policy"],
+        "dpsp": ["directive_principles", "dpsp", "directive_principles_of_state_policy"],
     }
     if repo_basename in alias_map:
         for alias in alias_map[repo_basename]:
@@ -87,6 +91,8 @@ def load_questions(
         type_candidates = ["reasoning", "assertion_reason", "assertion"]
     elif repo_type in ["pyq", "pyq_practice"]:
         type_candidates = ["pyq", "pyq_practice"]
+    elif repo_type in ["grand", "grand_test"]:
+        type_candidates = ["grand_test", "grand"]
 
     file_paths = []
     for cand in type_candidates:
@@ -106,4 +112,13 @@ def load_questions(
 
     print(f"[MISSING] Missing question repository file for repo_id='{repo_id}', type='{repo_type}'")
     return []
+
+
+def clear_questions_cache():
+    """Clears the Streamlit cache for load_questions."""
+    try:
+        load_questions.clear()
+    except Exception:
+        pass
+
 

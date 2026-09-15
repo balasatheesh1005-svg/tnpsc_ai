@@ -75,7 +75,24 @@
       "Article 108 Exclusion",
       "Article 368 Deadlock",
       "No Joint Sitting"
-    ]
+    ],
+    "question_en": "Suppose a Bill seeking to amend the Constitution under Article 368 passes Lok Sabha but is rejected by Rajya Sabha. Can the President notify a Joint Sitting under Article 108 to resolve this deadlock?",
+    "question_ta": "சரத்து 368 இன் கீழ் அரசியலமைப்பைத் திருத்தக் கோரும் ஒரு மசோதா மக்களவையில் நிறைவேறி மாநிலங்களவையால் நிராகரிக்கப்படுகிறது எனக் கொள்வோம். இம்முட்டுக்கட்டையைத் தீர்க்க குடியரசுத் தலைவர் சரத்து 108 இன் கீழ் கூட்டுக் கூட்டத்தை அறிவிக்க முடியுமா?",
+    "options_en": [
+      "No, Joint Sitting under Article 108 does NOT apply to Constitutional Amendment Bills; the Bill lapses immediately",
+      "Yes, the President must summon a Joint Sitting within 6 months of rejection",
+      "Yes, provided Lok Sabha passes a resolution by 2/3rd majority requesting a Joint Sitting",
+      "No, because only the Prime Minister can summon a Joint Sitting for Constitutional Amendments"
+    ],
+    "options_ta": [
+      "இல்லை, சரத்து 108 இன் கீழான கூட்டுக் கூட்டம் அரசியலமைப்பு திருத்த மசோதாக்களுக்குப் பொருந்தாது; மசோதா உடனடியாக செயலிழக்கும்",
+      "ஆம், நிராகரிக்கப்பட்ட 6 மாதங்களுக்குள் குடியரசுத் தலைவர் கூட்டுக் கூட்டத்தைக் கூட்ட வேண்டும்",
+      "ஆம், மக்களவை 2/3 பெரும்பான்மையுடன் தீர்மானம் இயற்றி கோரினால் கூட்டலாம்",
+      "இல்லை, ஏனெனில் பிரதமர் மட்டுமே அரசியலமைப்பு திருத்தங்களுக்குக் கூட்டுக் கூட்டத்தைக் கூட்ட முடியும்"
+    ],
+    "answer": "a",
+    "explanation_en": "Article 108 joint sitting mechanics apply ONLY to Ordinary Bills and Financial Bills. Constitutional Amendment Bills under Article 368 MUST be passed by each House individually by a special majority. There is NO provision for Joint Sitting for Constitutional Amendment Bills or Money Bills.",
+    "explanation_ta": "சரத்து 108 கூட்டுக் கூட்டம் சாதாரண மசோதாக்கள் மற்றும் நிதி மசோதாக்களுக்கு மட்டுமே பொருந்தும். சரத்து 368 இன் கீழான திருத்த மசோதாக்கள் ஒவ்வொரு அவையிலும் தனித்தனியாக சிறப்புப் பெரும்பான்மையால் நிறைவேற்றப்பட வேண்டும்."
   },
   {
     "id": "CZ_PL_RS_002",
@@ -95,13 +112,13 @@
       },
       {
         "id": "B",
-        "en": "For a maximum period of 1 year at a time, but can be renewed indefinitely for 1 year at a time",
-        "ta": "ஒரே நேரத்தில் அதிகபட்சம் 1 ஆண்டு காலம் வரை அமலில் இருக்கும், ஆனால் ஒரு நேரத்தில் 1 ஆண்டு என எத்தனை முறை வேண்டுமானாலும் புதுப்பிக்கலாம்"
+        "en": "For 6 months only, with no provision for extension",
+        "ta": "6 மாதங்கள் மட்டுமே, நீட்டிப்புக்கான விதி இல்லை"
       },
       {
         "id": "C",
-        "en": "For 6 months only, with no provision for extension",
-        "ta": "6 மாதங்கள் மட்டுமே, நீட்டிப்புக்கான விதி இல்லை"
+        "en": "For a maximum period of 1 year at a time, but can be renewed indefinitely for 1 year at a time",
+        "ta": "ஒரே நேரத்தில் அதிகபட்சம் 1 ஆண்டு காலம் வரை அமலில் இருக்கும், ஆனால் ஒரு நேரத்தில் 1 ஆண்டு என எத்தனை முறை வேண்டுமானாலும் புதுப்பிக்கலாம்"
       },
       {
         "id": "D",
@@ -109,7 +126,7 @@
         "ta": "மக்களவையின் 5 ஆண்டு பதவிக் காலத்திற்கு இணையாக"
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "C",
     "explanation": {
       "en": "Under Article 249(2), a resolution passed by Rajya Sabha authorizing Parliament to legislate on a State List subject remains in force for a period specified therein, NOT exceeding 1 year. However, Rajya Sabha can pass subsequent resolutions extending it for 1 year at a time indefinitely.",
       "ta": "சரத்து 249(2) இன் கீழ் மாநிலங்களவை இயற்றும் தீர்மானம் 1 ஆண்டுக்கு மிகாத காலத்திற்கு மட்டுமே அமலில் இருக்கும். ஆனால் மாநிலங்களவை மீண்டும் மீண்டும் தீர்மானம் நிறைவேற்றி ஒரு நேரத்தில் 1 ஆண்டு வீதம் எத்தனை முறை வேண்டுமானாலும் நீட்டிக்கலாம்."
@@ -120,12 +137,12 @@
         "ta": "விருப்பம் A தவறானது; இது காலவரையற்றது அல்ல, ஆண்டுதோறும் புதுப்பிக்கப்பட வேண்டும்."
       },
       "B": {
-        "en": "Option B is correct because Article 249(2) specifies maximum 1 year duration per resolution.",
-        "ta": "விருப்பம் B சரியானது, ஏனெனில் சரத்து 249(2) ஒரு தீர்மானத்திற்கு 1 ஆண்டு வரம்பை நிர்ணயிக்கிறது."
-      },
-      "C": {
         "en": "Option C is incorrect; laws made under Art 249 cease to have effect 6 months after resolution expires, but resolution itself lasts 1 year.",
         "ta": "விருப்பம் C தவறானது; சட்டம் தீர்மானம் முடிந்த பின் 6 மாதங்களில் காலாவதியாகும், ஆனால் தீர்மானம் 1 ஆண்டு நீடிக்கும்."
+      },
+      "C": {
+        "en": "Option B is correct because Article 249(2) specifies maximum 1 year duration per resolution.",
+        "ta": "விருப்பம் B சரியானது, ஏனெனில் சரத்து 249(2) ஒரு தீர்மானத்திற்கு 1 ஆண்டு வரம்பை நிர்ணயிக்கிறது."
       },
       "D": {
         "en": "Option D is incorrect; resolution duration is independent of Lok Sabha term.",
@@ -153,7 +170,24 @@
       "Article 249",
       "State List Legislation",
       "1 Year Duration Limit"
-    ]
+    ],
+    "question_en": "If Rajya Sabha passes a resolution by 2/3rd majority under Article 249 empowering Parliament to legislate on a matter in the State List in national interest, for how long does such authorization remain in force?",
+    "question_ta": "தேசிய நலன் கருதி மாநிலப் பட்டியலில் உள்ள ஒரு விவகாரத்தில் சட்டம் இயற்ற நாடாளுமன்றத்திற்கு அதிகாரமளிக்கும் தீர்மானத்தை சரத்து 249 இன் கீழ் மாநிலங்களவை 2/3 பெரும்பான்மையால் நிறைவேற்றினால், அந்த அதிகாரம் எவ்வளவு காலம் அமலில் இருக்கும்?",
+    "options_en": [
+      "Indefinitely until repealed by Parliament",
+      "For 6 months only, with no provision for extension",
+      "For a maximum period of 1 year at a time, but can be renewed indefinitely for 1 year at a time",
+      "For 5 years matching the term of Lok Sabha"
+    ],
+    "options_ta": [
+      "நாடாளுமன்றத்தால் திரும்பப் பெறப்படும் வரை காலவரையின்றி",
+      "6 மாதங்கள் மட்டுமே, நீட்டிப்புக்கான விதி இல்லை",
+      "ஒரே நேரத்தில் அதிகபட்சம் 1 ஆண்டு காலம் வரை அமலில் இருக்கும், ஆனால் ஒரு நேரத்தில் 1 ஆண்டு என எத்தனை முறை வேண்டுமானாலும் புதுப்பிக்கலாம்",
+      "மக்களவையின் 5 ஆண்டு பதவிக் காலத்திற்கு இணையாக"
+    ],
+    "answer": "c",
+    "explanation_en": "Under Article 249(2), a resolution passed by Rajya Sabha authorizing Parliament to legislate on a State List subject remains in force for a period specified therein, NOT exceeding 1 year. However, Rajya Sabha can pass subsequent resolutions extending it for 1 year at a time indefinitely.",
+    "explanation_ta": "சரத்து 249(2) இன் கீழ் மாநிலங்களவை இயற்றும் தீர்மானம் 1 ஆண்டுக்கு மிகாத காலத்திற்கு மட்டுமே அமலில் இருக்கும். ஆனால் மாநிலங்களவை மீண்டும் மீண்டும் தீர்மானம் நிறைவேற்றி ஒரு நேரத்தில் 1 ஆண்டு வீதம் எத்தனை முறை வேண்டுமானாலும் நீட்டிக்கலாம்."
   },
   {
     "id": "CZ_PL_RS_003",
@@ -173,13 +207,13 @@
       },
       {
         "id": "B",
-        "en": "The Bill is carried forward to the new Lok Sabha after general elections",
-        "ta": "பொதுத்தேர்தலுக்குப் பின் புதிய மக்களவைக்கு மசோதா கொண்டு செல்லப்படும்"
+        "en": "The Bill lapses completely upon the dissolution of Lok Sabha",
+        "ta": "மக்களவை கலைக்கப்பட்டவுடன் மசோதா முற்றிலும் செயலிழந்துவிடும்"
       },
       {
         "id": "C",
-        "en": "The Bill lapses completely upon the dissolution of Lok Sabha",
-        "ta": "மக்களவை கலைக்கப்பட்டவுடன் மசோதா முற்றிலும் செயலிழந்துவிடும்"
+        "en": "The Bill is carried forward to the new Lok Sabha after general elections",
+        "ta": "பொதுத்தேர்தலுக்குப் பின் புதிய மக்களவைக்கு மசோதா கொண்டு செல்லப்படும்"
       },
       {
         "id": "D",
@@ -187,7 +221,7 @@
         "ta": "இறுதி நிறைவேற்றத்திற்கு மாநிலங்களவையின் நிலைக்குழுவுக்கு அனுப்பப்படும்"
       }
     ],
-    "correct_answer": "C",
+    "correct_answer": "B",
     "explanation": {
       "en": "Under Article 107(5), a Bill which is pending in the Council of States (Rajya Sabha) having been passed by the House of the People (Lok Sabha) lapses on the dissolution of the House of the People.",
       "ta": "சரத்து 107(5) இன் கீழ் மக்களவையால் நிறைவேற்றப்பட்டு மாநிலங்களவையில் நிலுவையிலுள்ள மசோதா, மக்களவை கலைக்கப்படும் போது தானாகவே செயலிழந்துவிடும்."
@@ -198,12 +232,12 @@
         "ta": "விருப்பம் A தவறானது; மாநிலங்களவை நிறைவேற்றாததால் சட்டமாக முடியாது."
       },
       "B": {
-        "en": "Option B is incorrect; pending bills passed by LS do not carry forward to next LS.",
-        "ta": "விருப்பம் B தவறானது; புதிய மக்களவைக்கு மசோதா கொண்டு செல்லப்படாது."
-      },
-      "C": {
         "en": "Option C is correct because Article 107(5) explicitly states that bills passed by LS and pending in RS lapse upon dissolution.",
         "ta": "விருப்பம் C சரியானது, ஏனெனில் சரத்து 107(5) மக்களவை நிறைவேற்றி RS இல் நிலுவையிலுள்ள மசோதா செயலிழக்கும் எனக் கூறுகிறது."
+      },
+      "C": {
+        "en": "Option B is incorrect; pending bills passed by LS do not carry forward to next LS.",
+        "ta": "விருப்பம் B தவறானது; புதிய மக்களவைக்கு மசோதா கொண்டு செல்லப்படாது."
       },
       "D": {
         "en": "Option D is incorrect; RS Standing Committee cannot override dissolution lapsing rules.",
@@ -231,7 +265,24 @@
       "Article 107(5)",
       "Lapsing of Bills",
       "Lok Sabha Dissolution"
-    ]
+    ],
+    "question_en": "Suppose Lok Sabha is dissolved while a Bill passed by Lok Sabha is pending in Rajya Sabha. What is the constitutional fate of the Bill under Article 107?",
+    "question_ta": "மக்களவையால் நிறைவேற்றப்பட்ட ஒரு மசோதா மாநிலங்களவையில் நிலுவையில் உள்ள நிலையில் மக்களவை கலைக்கப்பட்டால், சரத்து 107 இன் கீழ் அம்மசோதாவின் நிலை என்னவாகும்?",
+    "options_en": [
+      "The Bill does not lapse and automatically becomes law upon Presidential assent",
+      "The Bill lapses completely upon the dissolution of Lok Sabha",
+      "The Bill is carried forward to the new Lok Sabha after general elections",
+      "The Bill is referred to a Standing Committee of Rajya Sabha for final passage"
+    ],
+    "options_ta": [
+      "மசோதா செயலிழக்காது, குடியரசு தலைவர் ஒப்புதல் அளித்தவுடன் சட்டமாகும்",
+      "மக்களவை கலைக்கப்பட்டவுடன் மசோதா முற்றிலும் செயலிழந்துவிடும்",
+      "பொதுத்தேர்தலுக்குப் பின் புதிய மக்களவைக்கு மசோதா கொண்டு செல்லப்படும்",
+      "இறுதி நிறைவேற்றத்திற்கு மாநிலங்களவையின் நிலைக்குழுவுக்கு அனுப்பப்படும்"
+    ],
+    "answer": "b",
+    "explanation_en": "Under Article 107(5), a Bill which is pending in the Council of States (Rajya Sabha) having been passed by the House of the People (Lok Sabha) lapses on the dissolution of the House of the People.",
+    "explanation_ta": "சரத்து 107(5) இன் கீழ் மக்களவையால் நிறைவேற்றப்பட்டு மாநிலங்களவையில் நிலுவையிலுள்ள மசோதா, மக்களவை கலைக்கப்படும் போது தானாகவே செயலிழந்துவிடும்."
   },
   {
     "id": "CZ_PL_RS_004",
@@ -251,8 +302,8 @@
       },
       {
         "id": "B",
-        "en": "The demand amount is reduced by Rs 100 as a token disapproval",
-        "ta": "அடையாள நிராகரிப்பாக மானியத் தொகை 100 ரூபாய் குறைக்கப்படும்"
+        "en": "It signifies defeat of government policy amounting to loss of parliamentary majority, forcing Council of Ministers to resign",
+        "ta": "இது அரசின் கொள்கை தோல்வியைக் குறிப்பதுடன் நாடாளுமன்றப் பெரும்பான்மை இழப்பைக் காட்டுவதால் அமைச்சரவை பதவி விலக நேரிடும்"
       },
       {
         "id": "C",
@@ -261,11 +312,11 @@
       },
       {
         "id": "D",
-        "en": "It signifies defeat of government policy amounting to loss of parliamentary majority, forcing Council of Ministers to resign",
-        "ta": "இது அரசின் கொள்கை தோல்வியைக் குறிப்பதுடன் நாடாளுமன்றப் பெரும்பான்மை இழப்பைக் காட்டுவதால் அமைச்சரவை பதவி விலக நேரிடும்"
+        "en": "The demand amount is reduced by Rs 100 as a token disapproval",
+        "ta": "அடையாள நிராகரிப்பாக மானியத் தொகை 100 ரூபாய் குறைக்கப்படும்"
       }
     ],
-    "correct_answer": "D",
+    "correct_answer": "B",
     "explanation": {
       "en": "A Policy Cut Motion states that the amount of the demand be reduced to Re 1, representing complete disapproval of the policy underlying the demand. Since budget demands are financial policy matters, passage of any Cut Motion in Lok Sabha signifies loss of parliamentary confidence, forcing the Council of Ministers to resign.",
       "ta": "கொள்கை வெட்டுத் தீர்மானம் மானியத் தொகையை 1 ரூபாயாகக் குறைக்கக் கோருவதாகும்; இது கொள்கையை முற்றிலும் நிராகரிப்பதாகும். மக்களவையில் வெட்டுத் தீர்மானம் நிறைவேறுவது அரசின் நம்பிக்கையின்மையைக் காட்டுவதால் அமைச்சரவை பதவி விலக வேண்டும்."
@@ -276,16 +327,16 @@
         "ta": "விருப்பம் A தவறானது; கொள்கை வாக்கெடுப்பில் தோற்ற பின் மீண்டும் பட்ஜெட்டைச் சமர்ப்பிக்க முடியாது."
       },
       "B": {
-        "en": "Option B is incorrect; Rs 100 reduction applies to Token Cut Motion, not Policy Cut Motion.",
-        "ta": "விருப்பம் B தவறானது; 100 ரூபாய் குறைப்பு அடையாள வெட்டுத் தீர்மானத்திற்கு உரியது."
+        "en": "Option D is correct because passage of a Cut Motion in Lok Sabha leads to defeat and resignation of the government.",
+        "ta": "விருப்பம் D சரியானது, ஏனெனில் வெட்டுத் தீர்மானம் நிறைவேறினால் அரசு பதவி விலக வேண்டும்."
       },
       "C": {
         "en": "Option C is incorrect; Estimates Committee does not re-assess defeated budget demands.",
         "ta": "விருப்பம் C தவறானது; மதிப்பீட்டுக் குழு தோற்கடிக்கப்பட்ட மானியத்தை ஆராய்வதில்லை."
       },
       "D": {
-        "en": "Option D is correct because passage of a Cut Motion in Lok Sabha leads to defeat and resignation of the government.",
-        "ta": "விருப்பம் D சரியானது, ஏனெனில் வெட்டுத் தீர்மானம் நிறைவேறினால் அரசு பதவி விலக வேண்டும்."
+        "en": "Option B is incorrect; Rs 100 reduction applies to Token Cut Motion, not Policy Cut Motion.",
+        "ta": "விருப்பம் B தவறானது; 100 ரூபாய் குறைப்பு அடையாள வெட்டுத் தீர்மானத்திற்கு உரியது."
       }
     },
     "tnpsc_tip": {
@@ -309,7 +360,24 @@
       "Policy Cut Motion",
       "Demands for Grants",
       "Cabinet Resignation"
-    ]
+    ],
+    "question_en": "If a Policy Cut Motion is passed during the voting on Demands for Grants in Lok Sabha, what is its direct political and constitutional consequence?",
+    "question_ta": "மக்களவையில் மானியக் கோரிக்கைகள் மீதான வாக்கெடுப்பின் போது ஒரு 'கொள்கை வெட்டுத் தீர்மானம்' (Policy Cut Motion) நிறைவேற்றப்பட்டால், அதன் நேரடி அரசியல் மற்றும் அரசியலமைப்பு விளைவு என்ன?",
+    "options_en": [
+      "The Minister of Finance must modify the Budget and re-present it within 7 days",
+      "It signifies defeat of government policy amounting to loss of parliamentary majority, forcing Council of Ministers to resign",
+      "The Speaker refers the matter to the Estimates Committee for re-assessment",
+      "The demand amount is reduced by Rs 100 as a token disapproval"
+    ],
+    "options_ta": [
+      "நிதி அமைச்சர் பட்ஜெட்டை மாற்றி அமைத்து 7 நாட்களுக்குள் மீண்டும் சமர்ப்பிக்க வேண்டும்",
+      "இது அரசின் கொள்கை தோல்வியைக் குறிப்பதுடன் நாடாளுமன்றப் பெரும்பான்மை இழப்பைக் காட்டுவதால் அமைச்சரவை பதவி விலக நேரிடும்",
+      "சபாநாயகர் இவ்விவகாரத்தை மறுமதிப்பீட்டிற்கு மதிப்பீட்டுக் குழுவிற்கு அனுப்புவார்",
+      "அடையாள நிராகரிப்பாக மானியத் தொகை 100 ரூபாய் குறைக்கப்படும்"
+    ],
+    "answer": "b",
+    "explanation_en": "A Policy Cut Motion states that the amount of the demand be reduced to Re 1, representing complete disapproval of the policy underlying the demand. Since budget demands are financial policy matters, passage of any Cut Motion in Lok Sabha signifies loss of parliamentary confidence, forcing the Council of Ministers to resign.",
+    "explanation_ta": "கொள்கை வெட்டுத் தீர்மானம் மானியத் தொகையை 1 ரூபாயாகக் குறைக்கக் கோருவதாகும்; இது கொள்கையை முற்றிலும் நிராகரிப்பதாகும். மக்களவையில் வெட்டுத் தீர்மானம் நிறைவேறுவது அரசின் நம்பிக்கையின்மையைக் காட்டுவதால் அமைச்சரவை பதவி விலக வேண்டும்."
   },
   {
     "id": "CZ_PL_RS_005",
@@ -324,8 +392,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Reasoning analysis confirms that Article 100 Quorum Enforcement Scenario applies strictly under constitutional provisions.",
-        "ta": "காரணப் பகுப்பாய்வு Article 100 Quorum Enforcement Scenario அரசியலமைப்பு விதிகளின் கீழ் சரியாகப் பொருந்துகிறது என்பதை உறுதிப்படுத்துகிறது."
+        "en": "Rajya Sabha holds exclusive veto over Lok Sabha regarding Article 100 Quorum Enforcement Scenario.",
+        "ta": "மாநிலங்களவை Article 100 Quorum Enforcement Scenario தொடர்பாக மக்களவையை விட பிரத்தியேக வீட்டோ அதிகாரம் கொண்டுள்ளது."
       },
       {
         "id": "B",
@@ -339,19 +407,19 @@
       },
       {
         "id": "D",
-        "en": "Rajya Sabha holds exclusive veto over Lok Sabha regarding Article 100 Quorum Enforcement Scenario.",
-        "ta": "மாநிலங்களவை Article 100 Quorum Enforcement Scenario தொடர்பாக மக்களவையை விட பிரத்தியேக வீட்டோ அதிகாரம் கொண்டுள்ளது."
+        "en": "Reasoning analysis confirms that Article 100 Quorum Enforcement Scenario applies strictly under constitutional provisions.",
+        "ta": "காரணப் பகுப்பாய்வு Article 100 Quorum Enforcement Scenario அரசியலமைப்பு விதிகளின் கீழ் சரியாகப் பொருந்துகிறது என்பதை உறுதிப்படுத்துகிறது."
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "D",
     "explanation": {
-      "en": "Reasoning analysis for Article 100 Quorum Enforcement Scenario: Option A accurately applies parliamentary law.",
-      "ta": "Article 100 Quorum Enforcement Scenario க்கான காரணப் பகுப்பாய்வு: விருப்பம் A நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
+      "en": "Reasoning analysis for Article 100 Quorum Enforcement Scenario: Option D accurately applies parliamentary law.",
+      "ta": "Article 100 Quorum Enforcement Scenario க்கான காரணப் பகுப்பாய்வு: விருப்பம் D நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
     },
     "why_not_others": {
       "A": {
-        "en": "Option A correctly applies constitutional reasoning for Article 100 Quorum Enforcement Scenario.",
-        "ta": "விருப்பம் A Article 100 Quorum Enforcement Scenario க்கான அரசியலமைப்புக் காரணங்களைச் சரியாகப் பயன்படுத்துகிறது."
+        "en": "Option D is incorrect; Rajya Sabha does not hold exclusive veto in this context.",
+        "ta": "விருப்பம் D தவறானது; மாநிலங்களவைக்கு பிரத்தியேக வீட்டோ இல்லை."
       },
       "B": {
         "en": "Option B is incorrect; ordinary procedure cannot override constitutional rules.",
@@ -362,8 +430,8 @@
         "ta": "விருப்பம் C தவறானது; நிர்வாக ஆணை நாடாளுமன்ற அனுமதியைத் தவிர்க்க முடியாது."
       },
       "D": {
-        "en": "Option D is incorrect; Rajya Sabha does not hold exclusive veto in this context.",
-        "ta": "விருப்பம் D தவறானது; மாநிலங்களவைக்கு பிரத்தியேக வீட்டோ இல்லை."
+        "en": "Option A correctly applies constitutional reasoning for Article 100 Quorum Enforcement Scenario.",
+        "ta": "விருப்பம் A Article 100 Quorum Enforcement Scenario க்கான அரசியலமைப்புக் காரணங்களைச் சரியாகப் பயன்படுத்துகிறது."
       }
     },
     "tnpsc_tip": {
@@ -386,7 +454,24 @@
     "tags": [
       "Article 100 Quorum Enforcement Scenario",
       "Reasoning Application"
-    ]
+    ],
+    "question_en": "Which of the following best explains the parliamentary application regarding 'Article 100 Quorum Enforcement Scenario'?",
+    "question_ta": "நாடாளுமன்ற பயன்பாட்டில் 'Article 100 Quorum Enforcement Scenario' என்பதனைப் பின்வருவனவற்றில் எது மிகச்சரியாக விளக்குகிறது?",
+    "options_en": [
+      "Rajya Sabha holds exclusive veto over Lok Sabha regarding Article 100 Quorum Enforcement Scenario.",
+      "Ordinary legislative procedure overrides constitutional provisions regarding Article 100 Quorum Enforcement Scenario.",
+      "Executive order can bypass parliamentary authorization for Article 100 Quorum Enforcement Scenario.",
+      "Reasoning analysis confirms that Article 100 Quorum Enforcement Scenario applies strictly under constitutional provisions."
+    ],
+    "options_ta": [
+      "மாநிலங்களவை Article 100 Quorum Enforcement Scenario தொடர்பாக மக்களவையை விட பிரத்தியேக வீட்டோ அதிகாரம் கொண்டுள்ளது.",
+      "சாதாரண சட்டமன்ற நடைமுறை Article 100 Quorum Enforcement Scenario தொடர்பான அரசியலமைப்பு விதிகளை மேலோங்குகிறது.",
+      "நிர்வாக ஆணை Article 100 Quorum Enforcement Scenario க்கான நாடாளுமன்ற அனுமதியைத் தவிர்க்கலாம்.",
+      "காரணப் பகுப்பாய்வு Article 100 Quorum Enforcement Scenario அரசியலமைப்பு விதிகளின் கீழ் சரியாகப் பொருந்துகிறது என்பதை உறுதிப்படுத்துகிறது."
+    ],
+    "answer": "d",
+    "explanation_en": "Reasoning analysis for Article 100 Quorum Enforcement Scenario: Option D accurately applies parliamentary law.",
+    "explanation_ta": "Article 100 Quorum Enforcement Scenario க்கான காரணப் பகுப்பாய்வு: விருப்பம் D நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
   },
   {
     "id": "CZ_PL_RS_006",
@@ -401,13 +486,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Executive sanction is mandatory prior to initiating Article 102 Disqualification on Office of Profit Election Commission Role.",
-        "ta": "Article 102 Disqualification on Office of Profit Election Commission Role ஐத் தொடங்குவதற்கு முன் நிர்வாக அனுமதி கட்டாயம்."
+        "en": "Reasoning analysis affirms that Article 102 Disqualification on Office of Profit Election Commission Role operates in strict compliance with parliamentary law.",
+        "ta": "காரணப் பகுப்பாய்வு Article 102 Disqualification on Office of Profit Election Commission Role நாடாளுமன்றச் சட்டத்திற்கு இணங்கச் செயல்படுகிறது என்பதை உறுதிப்படுத்துகிறது."
       },
       {
         "id": "B",
-        "en": "Reasoning analysis affirms that Article 102 Disqualification on Office of Profit Election Commission Role operates in strict compliance with parliamentary law.",
-        "ta": "காரணப் பகுப்பாய்வு Article 102 Disqualification on Office of Profit Election Commission Role நாடாளுமன்றச் சட்டத்திற்கு இணங்கச் செயல்படுகிறது என்பதை உறுதிப்படுத்துகிறது."
+        "en": "Executive sanction is mandatory prior to initiating Article 102 Disqualification on Office of Profit Election Commission Role.",
+        "ta": "Article 102 Disqualification on Office of Profit Election Commission Role ஐத் தொடங்குவதற்கு முன் நிர்வாக அனுமதி கட்டாயம்."
       },
       {
         "id": "C",
@@ -420,19 +505,19 @@
         "ta": "Article 102 Disqualification on Office of Profit Election Commission Role பற்றி விவாதிப்பதற்கு முன் உச்ச நீதிமன்ற முன்-ஒப்புதல் தேவை."
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "A",
     "explanation": {
-      "en": "Reasoning analysis for Article 102 Disqualification on Office of Profit Election Commission Role: Option B accurately applies parliamentary law.",
-      "ta": "Article 102 Disqualification on Office of Profit Election Commission Role க்கான காரணப் பகுப்பாய்வு: விருப்பம் B நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
+      "en": "Reasoning analysis for Article 102 Disqualification on Office of Profit Election Commission Role: Option A accurately applies parliamentary law.",
+      "ta": "Article 102 Disqualification on Office of Profit Election Commission Role க்கான காரணப் பகுப்பாய்வு: விருப்பம் A நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
     },
     "why_not_others": {
       "A": {
-        "en": "Option A is incorrect; executive sanction is not required in this form.",
-        "ta": "விருப்பம் A தவறானது; நிர்வாக அனுமதி தேவையில்லை."
-      },
-      "B": {
         "en": "Option B correctly applies the parliamentary principle governing Article 102 Disqualification on Office of Profit Election Commission Role.",
         "ta": "விருப்பம் B Article 102 Disqualification on Office of Profit Election Commission Role ஐ ஆளும் நாடாளுமன்ற விதியைச் சரியாகப் பயன்படுத்துகிறது."
+      },
+      "B": {
+        "en": "Option A is incorrect; executive sanction is not required in this form.",
+        "ta": "விருப்பம் A தவறானது; நிர்வாக அனுமதி தேவையில்லை."
       },
       "C": {
         "en": "Option C is incorrect; quorum is mandatory for proceedings.",
@@ -463,7 +548,24 @@
     "tags": [
       "Article 102 Disqualification on Office of Profit Election Commission Role",
       "Reasoning Application"
-    ]
+    ],
+    "question_en": "Which of the following best explains the parliamentary application regarding 'Article 102 Disqualification on Office of Profit Election Commission Role'?",
+    "question_ta": "நாடாளுமன்ற பயன்பாட்டில் 'Article 102 Disqualification on Office of Profit Election Commission Role' என்பதனைப் பின்வருவனவற்றில் எது மிகச்சரியாக விளக்குகிறது?",
+    "options_en": [
+      "Reasoning analysis affirms that Article 102 Disqualification on Office of Profit Election Commission Role operates in strict compliance with parliamentary law.",
+      "Executive sanction is mandatory prior to initiating Article 102 Disqualification on Office of Profit Election Commission Role.",
+      "Simple majority without quorum is valid for Article 102 Disqualification on Office of Profit Election Commission Role.",
+      "Supreme Court prior approval is required before debating Article 102 Disqualification on Office of Profit Election Commission Role."
+    ],
+    "options_ta": [
+      "காரணப் பகுப்பாய்வு Article 102 Disqualification on Office of Profit Election Commission Role நாடாளுமன்றச் சட்டத்திற்கு இணங்கச் செயல்படுகிறது என்பதை உறுதிப்படுத்துகிறது.",
+      "Article 102 Disqualification on Office of Profit Election Commission Role ஐத் தொடங்குவதற்கு முன் நிர்வாக அனுமதி கட்டாயம்.",
+      "குறைவெண் இன்றி எளிய பெரும்பான்மை Article 102 Disqualification on Office of Profit Election Commission Role க்கு செல்லுபடியாகும்.",
+      "Article 102 Disqualification on Office of Profit Election Commission Role பற்றி விவாதிப்பதற்கு முன் உச்ச நீதிமன்ற முன்-ஒப்புதல் தேவை."
+    ],
+    "answer": "a",
+    "explanation_en": "Reasoning analysis for Article 102 Disqualification on Office of Profit Election Commission Role: Option A accurately applies parliamentary law.",
+    "explanation_ta": "Article 102 Disqualification on Office of Profit Election Commission Role க்கான காரணப் பகுப்பாய்வு: விருப்பம் A நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
   },
   {
     "id": "CZ_PL_RS_007",
@@ -540,7 +642,24 @@
     "tags": [
       "Article 105 Freedom of Speech Immunity Boundaries",
       "Reasoning Application"
-    ]
+    ],
+    "question_en": "Which of the following best explains the parliamentary application regarding 'Article 105 Freedom of Speech Immunity Boundaries'?",
+    "question_ta": "நாடாளுமன்ற பயன்பாட்டில் 'Article 105 Freedom of Speech Immunity Boundaries' என்பதனைப் பின்வருவனவற்றில் எது மிகச்சரியாக விளக்குகிறது?",
+    "options_en": [
+      "Executive decrees can supersede parliamentary authority on Article 105 Freedom of Speech Immunity Boundaries.",
+      "Rajya Sabha approval is sufficient without Lok Sabha vote for Article 105 Freedom of Speech Immunity Boundaries.",
+      "Reasoning analysis confirms that Article 105 Freedom of Speech Immunity Boundaries adheres strictly to constitutional limits and judicial scrutiny.",
+      "Article 108 permits automatic Joint Sitting for Article 105 Freedom of Speech Immunity Boundaries in all circumstances."
+    ],
+    "options_ta": [
+      "நிர்வாக ஆணைகள் Article 105 Freedom of Speech Immunity Boundaries தொடர்பான நாடாளுமன்ற அதிகாரத்தை மேலோங்கலாம்.",
+      "மக்களவை வாக்கெடுப்பு இன்றி மாநிலங்களவை ஒப்புதலே Article 105 Freedom of Speech Immunity Boundaries க்கு போதுமானது.",
+      "காரணப் பகுப்பாய்வு Article 105 Freedom of Speech Immunity Boundaries அரசியலமைப்பு வரம்புகள் மற்றும் நீதிமன்ற ஆய்விற்குட்பட்டது என்பதை உறுதிப்படுத்துகிறது.",
+      "சரத்து 108 அனைத்துச் சூழல்களிலும் Article 105 Freedom of Speech Immunity Boundaries க்கு தானியங்கி கூட்டுக் கூட்டத்தை அனுமதிக்கிறது."
+    ],
+    "answer": "c",
+    "explanation_en": "Reasoning analysis for Article 105 Freedom of Speech Immunity Boundaries: Option C accurately applies parliamentary law.",
+    "explanation_ta": "Article 105 Freedom of Speech Immunity Boundaries க்கான காரணப் பகுப்பாய்வு: விருப்பம் C நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
   },
   {
     "id": "CZ_PL_RS_008",
@@ -555,8 +674,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Simple majority in Lok Sabha alone can permanently override Article 109 Money Bill 14-Day Expiry Mechanics.",
-        "ta": "மக்களவையில் எளிய பெரும்பான்மை மட்டுமே Article 109 Money Bill 14-Day Expiry Mechanics ஐ நிரந்தரமாக மேலோங்கலாம்."
+        "en": "Reasoning analysis demonstrates that Article 109 Money Bill 14-Day Expiry Mechanics mandates full compliance with parliamentary procedural checks.",
+        "ta": "காரணப் பகுப்பாய்வு Article 109 Money Bill 14-Day Expiry Mechanics நாடாளுமன்ற நடைமுறைச் சோதனைகளுக்கு முழுமையாக இணங்குவதைக் காட்டுகிறது."
       },
       {
         "id": "B",
@@ -570,19 +689,19 @@
       },
       {
         "id": "D",
-        "en": "Reasoning analysis demonstrates that Article 109 Money Bill 14-Day Expiry Mechanics mandates full compliance with parliamentary procedural checks.",
-        "ta": "காரணப் பகுப்பாய்வு Article 109 Money Bill 14-Day Expiry Mechanics நாடாளுமன்ற நடைமுறைச் சோதனைகளுக்கு முழுமையாக இணங்குவதைக் காட்டுகிறது."
+        "en": "Simple majority in Lok Sabha alone can permanently override Article 109 Money Bill 14-Day Expiry Mechanics.",
+        "ta": "மக்களவையில் எளிய பெரும்பான்மை மட்டுமே Article 109 Money Bill 14-Day Expiry Mechanics ஐ நிரந்தரமாக மேலோங்கலாம்."
       }
     ],
-    "correct_answer": "D",
+    "correct_answer": "A",
     "explanation": {
-      "en": "Reasoning analysis for Article 109 Money Bill 14-Day Expiry Mechanics: Option D accurately applies parliamentary law.",
-      "ta": "Article 109 Money Bill 14-Day Expiry Mechanics க்கான காரணப் பகுப்பாய்வு: விருப்பம் D நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
+      "en": "Reasoning analysis for Article 109 Money Bill 14-Day Expiry Mechanics: Option A accurately applies parliamentary law.",
+      "ta": "Article 109 Money Bill 14-Day Expiry Mechanics க்கான காரணப் பகுப்பாய்வு: விருப்பம் A நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
     },
     "why_not_others": {
       "A": {
-        "en": "Option A is incorrect; simple majority in LS alone cannot override constitutional rules.",
-        "ta": "விருப்பம் A தவறானது; மக்களவை எளிய பெரும்பான்மை மேலோங்க முடியாது."
+        "en": "Option D correctly highlights procedural compliance for Article 109 Money Bill 14-Day Expiry Mechanics.",
+        "ta": "விருப்பம் D Article 109 Money Bill 14-Day Expiry Mechanics க்கான நடைமுறை இணக்கத்தைச் சரியாகச் சுட்டிக்காட்டுகிறது."
       },
       "B": {
         "en": "Option B is incorrect; Rajya Sabha possesses defined voting rights.",
@@ -593,8 +712,8 @@
         "ta": "விருப்பம் C தவறானது; வீட்டோ அதிகாரம் அரசியலமைப்பு வரம்புகளுக்கு உட்பட்டது."
       },
       "D": {
-        "en": "Option D correctly highlights procedural compliance for Article 109 Money Bill 14-Day Expiry Mechanics.",
-        "ta": "விருப்பம் D Article 109 Money Bill 14-Day Expiry Mechanics க்கான நடைமுறை இணக்கத்தைச் சரியாகச் சுட்டிக்காட்டுகிறது."
+        "en": "Option A is incorrect; simple majority in LS alone cannot override constitutional rules.",
+        "ta": "விருப்பம் A தவறானது; மக்களவை எளிய பெரும்பான்மை மேலோங்க முடியாது."
       }
     },
     "tnpsc_tip": {
@@ -617,7 +736,24 @@
     "tags": [
       "Article 109 Money Bill 14-Day Expiry Mechanics",
       "Reasoning Application"
-    ]
+    ],
+    "question_en": "Which of the following best explains the parliamentary application regarding 'Article 109 Money Bill 14-Day Expiry Mechanics'?",
+    "question_ta": "நாடாளுமன்ற பயன்பாட்டில் 'Article 109 Money Bill 14-Day Expiry Mechanics' என்பதனைப் பின்வருவனவற்றில் எது மிகச்சரியாக விளக்குகிறது?",
+    "options_en": [
+      "Reasoning analysis demonstrates that Article 109 Money Bill 14-Day Expiry Mechanics mandates full compliance with parliamentary procedural checks.",
+      "Rajya Sabha has no voting power whatsoever regarding Article 109 Money Bill 14-Day Expiry Mechanics.",
+      "Presidential veto can unconditionally nullify Article 109 Money Bill 14-Day Expiry Mechanics.",
+      "Simple majority in Lok Sabha alone can permanently override Article 109 Money Bill 14-Day Expiry Mechanics."
+    ],
+    "options_ta": [
+      "காரணப் பகுப்பாய்வு Article 109 Money Bill 14-Day Expiry Mechanics நாடாளுமன்ற நடைமுறைச் சோதனைகளுக்கு முழுமையாக இணங்குவதைக் காட்டுகிறது.",
+      "Article 109 Money Bill 14-Day Expiry Mechanics தொடர்பாக மாநிலங்களவைக்கு எவ்வித வாக்குகளிக்கும் அதிகாரமும் இல்லை.",
+      "குடியரசுத் தலைவரின் வீட்டோ அதிகாரம் Article 109 Money Bill 14-Day Expiry Mechanics ஐ நிபந்தனையின்றி ரத்து செய்யலாம்.",
+      "மக்களவையில் எளிய பெரும்பான்மை மட்டுமே Article 109 Money Bill 14-Day Expiry Mechanics ஐ நிரந்தரமாக மேலோங்கலாம்."
+    ],
+    "answer": "a",
+    "explanation_en": "Reasoning analysis for Article 109 Money Bill 14-Day Expiry Mechanics: Option A accurately applies parliamentary law.",
+    "explanation_ta": "Article 109 Money Bill 14-Day Expiry Mechanics க்கான காரணப் பகுப்பாய்வு: விருப்பம் A நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
   },
   {
     "id": "CZ_PL_RS_009",
@@ -632,13 +768,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Reasoning analysis confirms that Article 110 Speaker Certification Finality and Judicial Challenge applies strictly under constitutional provisions.",
-        "ta": "காரணப் பகுப்பாய்வு Article 110 Speaker Certification Finality and Judicial Challenge அரசியலமைப்பு விதிகளின் கீழ் சரியாகப் பொருந்துகிறது என்பதை உறுதிப்படுத்துகிறது."
+        "en": "Ordinary legislative procedure overrides constitutional provisions regarding Article 110 Speaker Certification Finality and Judicial Challenge.",
+        "ta": "சாதாரண சட்டமன்ற நடைமுறை Article 110 Speaker Certification Finality and Judicial Challenge தொடர்பான அரசியலமைப்பு விதிகளை மேலோங்குகிறது."
       },
       {
         "id": "B",
-        "en": "Ordinary legislative procedure overrides constitutional provisions regarding Article 110 Speaker Certification Finality and Judicial Challenge.",
-        "ta": "சாதாரண சட்டமன்ற நடைமுறை Article 110 Speaker Certification Finality and Judicial Challenge தொடர்பான அரசியலமைப்பு விதிகளை மேலோங்குகிறது."
+        "en": "Reasoning analysis confirms that Article 110 Speaker Certification Finality and Judicial Challenge applies strictly under constitutional provisions.",
+        "ta": "காரணப் பகுப்பாய்வு Article 110 Speaker Certification Finality and Judicial Challenge அரசியலமைப்பு விதிகளின் கீழ் சரியாகப் பொருந்துகிறது என்பதை உறுதிப்படுத்துகிறது."
       },
       {
         "id": "C",
@@ -651,19 +787,19 @@
         "ta": "மாநிலங்களவை Article 110 Speaker Certification Finality and Judicial Challenge தொடர்பாக மக்களவையை விட பிரத்தியேக வீட்டோ அதிகாரம் கொண்டுள்ளது."
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "B",
     "explanation": {
-      "en": "Reasoning analysis for Article 110 Speaker Certification Finality and Judicial Challenge: Option A accurately applies parliamentary law.",
-      "ta": "Article 110 Speaker Certification Finality and Judicial Challenge க்கான காரணப் பகுப்பாய்வு: விருப்பம் A நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
+      "en": "Reasoning analysis for Article 110 Speaker Certification Finality and Judicial Challenge: Option B accurately applies parliamentary law.",
+      "ta": "Article 110 Speaker Certification Finality and Judicial Challenge க்கான காரணப் பகுப்பாய்வு: விருப்பம் B நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
     },
     "why_not_others": {
       "A": {
-        "en": "Option A correctly applies constitutional reasoning for Article 110 Speaker Certification Finality and Judicial Challenge.",
-        "ta": "விருப்பம் A Article 110 Speaker Certification Finality and Judicial Challenge க்கான அரசியலமைப்புக் காரணங்களைச் சரியாகப் பயன்படுத்துகிறது."
-      },
-      "B": {
         "en": "Option B is incorrect; ordinary procedure cannot override constitutional rules.",
         "ta": "விருப்பம் B தவறானது; சாதாரண நடைமுறை அரசியலமைப்பு விதிகளை மீற முடியாது."
+      },
+      "B": {
+        "en": "Option A correctly applies constitutional reasoning for Article 110 Speaker Certification Finality and Judicial Challenge.",
+        "ta": "விருப்பம் A Article 110 Speaker Certification Finality and Judicial Challenge க்கான அரசியலமைப்புக் காரணங்களைச் சரியாகப் பயன்படுத்துகிறது."
       },
       "C": {
         "en": "Option C is incorrect; executive order cannot bypass parliamentary sanction.",
@@ -694,7 +830,24 @@
     "tags": [
       "Article 110 Speaker Certification Finality and Judicial Challenge",
       "Reasoning Application"
-    ]
+    ],
+    "question_en": "Which of the following best explains the parliamentary application regarding 'Article 110 Speaker Certification Finality and Judicial Challenge'?",
+    "question_ta": "நாடாளுமன்ற பயன்பாட்டில் 'Article 110 Speaker Certification Finality and Judicial Challenge' என்பதனைப் பின்வருவனவற்றில் எது மிகச்சரியாக விளக்குகிறது?",
+    "options_en": [
+      "Ordinary legislative procedure overrides constitutional provisions regarding Article 110 Speaker Certification Finality and Judicial Challenge.",
+      "Reasoning analysis confirms that Article 110 Speaker Certification Finality and Judicial Challenge applies strictly under constitutional provisions.",
+      "Executive order can bypass parliamentary authorization for Article 110 Speaker Certification Finality and Judicial Challenge.",
+      "Rajya Sabha holds exclusive veto over Lok Sabha regarding Article 110 Speaker Certification Finality and Judicial Challenge."
+    ],
+    "options_ta": [
+      "சாதாரண சட்டமன்ற நடைமுறை Article 110 Speaker Certification Finality and Judicial Challenge தொடர்பான அரசியலமைப்பு விதிகளை மேலோங்குகிறது.",
+      "காரணப் பகுப்பாய்வு Article 110 Speaker Certification Finality and Judicial Challenge அரசியலமைப்பு விதிகளின் கீழ் சரியாகப் பொருந்துகிறது என்பதை உறுதிப்படுத்துகிறது.",
+      "நிர்வாக ஆணை Article 110 Speaker Certification Finality and Judicial Challenge க்கான நாடாளுமன்ற அனுமதியைத் தவிர்க்கலாம்.",
+      "மாநிலங்களவை Article 110 Speaker Certification Finality and Judicial Challenge தொடர்பாக மக்களவையை விட பிரத்தியேக வீட்டோ அதிகாரம் கொண்டுள்ளது."
+    ],
+    "answer": "b",
+    "explanation_en": "Reasoning analysis for Article 110 Speaker Certification Finality and Judicial Challenge: Option B accurately applies parliamentary law.",
+    "explanation_ta": "Article 110 Speaker Certification Finality and Judicial Challenge க்கான காரணப் பகுப்பாய்வு: விருப்பம் B நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
   },
   {
     "id": "CZ_PL_RS_010",
@@ -714,13 +867,13 @@
       },
       {
         "id": "B",
-        "en": "Reasoning analysis affirms that Article 111 Presidential Veto Options on Ordinary vs Money Bills operates in strict compliance with parliamentary law.",
-        "ta": "காரணப் பகுப்பாய்வு Article 111 Presidential Veto Options on Ordinary vs Money Bills நாடாளுமன்றச் சட்டத்திற்கு இணங்கச் செயல்படுகிறது என்பதை உறுதிப்படுத்துகிறது."
+        "en": "Simple majority without quorum is valid for Article 111 Presidential Veto Options on Ordinary vs Money Bills.",
+        "ta": "குறைவெண் இன்றி எளிய பெரும்பான்மை Article 111 Presidential Veto Options on Ordinary vs Money Bills க்கு செல்லுபடியாகும்."
       },
       {
         "id": "C",
-        "en": "Simple majority without quorum is valid for Article 111 Presidential Veto Options on Ordinary vs Money Bills.",
-        "ta": "குறைவெண் இன்றி எளிய பெரும்பான்மை Article 111 Presidential Veto Options on Ordinary vs Money Bills க்கு செல்லுபடியாகும்."
+        "en": "Reasoning analysis affirms that Article 111 Presidential Veto Options on Ordinary vs Money Bills operates in strict compliance with parliamentary law.",
+        "ta": "காரணப் பகுப்பாய்வு Article 111 Presidential Veto Options on Ordinary vs Money Bills நாடாளுமன்றச் சட்டத்திற்கு இணங்கச் செயல்படுகிறது என்பதை உறுதிப்படுத்துகிறது."
       },
       {
         "id": "D",
@@ -728,10 +881,10 @@
         "ta": "Article 111 Presidential Veto Options on Ordinary vs Money Bills பற்றி விவாதிப்பதற்கு முன் உச்ச நீதிமன்ற முன்-ஒப்புதல் தேவை."
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "C",
     "explanation": {
-      "en": "Reasoning analysis for Article 111 Presidential Veto Options on Ordinary vs Money Bills: Option B accurately applies parliamentary law.",
-      "ta": "Article 111 Presidential Veto Options on Ordinary vs Money Bills க்கான காரணப் பகுப்பாய்வு: விருப்பம் B நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
+      "en": "Reasoning analysis for Article 111 Presidential Veto Options on Ordinary vs Money Bills: Option C accurately applies parliamentary law.",
+      "ta": "Article 111 Presidential Veto Options on Ordinary vs Money Bills க்கான காரணப் பகுப்பாய்வு: விருப்பம் C நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
     },
     "why_not_others": {
       "A": {
@@ -739,12 +892,12 @@
         "ta": "விருப்பம் A தவறானது; நிர்வாக அனுமதி தேவையில்லை."
       },
       "B": {
-        "en": "Option B correctly applies the parliamentary principle governing Article 111 Presidential Veto Options on Ordinary vs Money Bills.",
-        "ta": "விருப்பம் B Article 111 Presidential Veto Options on Ordinary vs Money Bills ஐ ஆளும் நாடாளுமன்ற விதியைச் சரியாகப் பயன்படுத்துகிறது."
-      },
-      "C": {
         "en": "Option C is incorrect; quorum is mandatory for proceedings.",
         "ta": "விருப்பம் C தவறானது; நடவடிக்கைகளுக்கு குறைவெண் கட்டாயம்."
+      },
+      "C": {
+        "en": "Option B correctly applies the parliamentary principle governing Article 111 Presidential Veto Options on Ordinary vs Money Bills.",
+        "ta": "விருப்பம் B Article 111 Presidential Veto Options on Ordinary vs Money Bills ஐ ஆளும் நாடாளுமன்ற விதியைச் சரியாகப் பயன்படுத்துகிறது."
       },
       "D": {
         "en": "Option D is incorrect; prior judicial approval is not required.",
@@ -771,7 +924,24 @@
     "tags": [
       "Article 111 Presidential Veto Options on Ordinary vs Money Bills",
       "Reasoning Application"
-    ]
+    ],
+    "question_en": "Which of the following best explains the parliamentary application regarding 'Article 111 Presidential Veto Options on Ordinary vs Money Bills'?",
+    "question_ta": "நாடாளுமன்ற பயன்பாட்டில் 'Article 111 Presidential Veto Options on Ordinary vs Money Bills' என்பதனைப் பின்வருவனவற்றில் எது மிகச்சரியாக விளக்குகிறது?",
+    "options_en": [
+      "Executive sanction is mandatory prior to initiating Article 111 Presidential Veto Options on Ordinary vs Money Bills.",
+      "Simple majority without quorum is valid for Article 111 Presidential Veto Options on Ordinary vs Money Bills.",
+      "Reasoning analysis affirms that Article 111 Presidential Veto Options on Ordinary vs Money Bills operates in strict compliance with parliamentary law.",
+      "Supreme Court prior approval is required before debating Article 111 Presidential Veto Options on Ordinary vs Money Bills."
+    ],
+    "options_ta": [
+      "Article 111 Presidential Veto Options on Ordinary vs Money Bills ஐத் தொடங்குவதற்கு முன் நிர்வாக அனுமதி கட்டாயம்.",
+      "குறைவெண் இன்றி எளிய பெரும்பான்மை Article 111 Presidential Veto Options on Ordinary vs Money Bills க்கு செல்லுபடியாகும்.",
+      "காரணப் பகுப்பாய்வு Article 111 Presidential Veto Options on Ordinary vs Money Bills நாடாளுமன்றச் சட்டத்திற்கு இணங்கச் செயல்படுகிறது என்பதை உறுதிப்படுத்துகிறது.",
+      "Article 111 Presidential Veto Options on Ordinary vs Money Bills பற்றி விவாதிப்பதற்கு முன் உச்ச நீதிமன்ற முன்-ஒப்புதல் தேவை."
+    ],
+    "answer": "c",
+    "explanation_en": "Reasoning analysis for Article 111 Presidential Veto Options on Ordinary vs Money Bills: Option C accurately applies parliamentary law.",
+    "explanation_ta": "Article 111 Presidential Veto Options on Ordinary vs Money Bills க்கான காரணப் பகுப்பாய்வு: விருப்பம் C நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
   },
   {
     "id": "CZ_PL_RS_011",
@@ -796,19 +966,19 @@
       },
       {
         "id": "C",
-        "en": "Reasoning analysis confirms that Article 112 Charged Expenditure Non-Votable Nature adheres strictly to constitutional limits and judicial scrutiny.",
-        "ta": "காரணப் பகுப்பாய்வு Article 112 Charged Expenditure Non-Votable Nature அரசியலமைப்பு வரம்புகள் மற்றும் நீதிமன்ற ஆய்விற்குட்பட்டது என்பதை உறுதிப்படுத்துகிறது."
+        "en": "Article 108 permits automatic Joint Sitting for Article 112 Charged Expenditure Non-Votable Nature in all circumstances.",
+        "ta": "சரத்து 108 அனைத்துச் சூழல்களிலும் Article 112 Charged Expenditure Non-Votable Nature க்கு தானியங்கி கூட்டுக் கூட்டத்தை அனுமதிக்கிறது."
       },
       {
         "id": "D",
-        "en": "Article 108 permits automatic Joint Sitting for Article 112 Charged Expenditure Non-Votable Nature in all circumstances.",
-        "ta": "சரத்து 108 அனைத்துச் சூழல்களிலும் Article 112 Charged Expenditure Non-Votable Nature க்கு தானியங்கி கூட்டுக் கூட்டத்தை அனுமதிக்கிறது."
+        "en": "Reasoning analysis confirms that Article 112 Charged Expenditure Non-Votable Nature adheres strictly to constitutional limits and judicial scrutiny.",
+        "ta": "காரணப் பகுப்பாய்வு Article 112 Charged Expenditure Non-Votable Nature அரசியலமைப்பு வரம்புகள் மற்றும் நீதிமன்ற ஆய்விற்குட்பட்டது என்பதை உறுதிப்படுத்துகிறது."
       }
     ],
-    "correct_answer": "C",
+    "correct_answer": "D",
     "explanation": {
-      "en": "Reasoning analysis for Article 112 Charged Expenditure Non-Votable Nature: Option C accurately applies parliamentary law.",
-      "ta": "Article 112 Charged Expenditure Non-Votable Nature க்கான காரணப் பகுப்பாய்வு: விருப்பம் C நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
+      "en": "Reasoning analysis for Article 112 Charged Expenditure Non-Votable Nature: Option D accurately applies parliamentary law.",
+      "ta": "Article 112 Charged Expenditure Non-Votable Nature க்கான காரணப் பகுப்பாய்வு: விருப்பம் D நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
     },
     "why_not_others": {
       "A": {
@@ -820,12 +990,12 @@
         "ta": "விருப்பம் B தவறானது; மக்களவை வாக்கெடுப்பு அத்தியாவசியமானது."
       },
       "C": {
-        "en": "Option C correctly captures the constitutional application regarding Article 112 Charged Expenditure Non-Votable Nature.",
-        "ta": "விருப்பம் C Article 112 Charged Expenditure Non-Votable Nature சுற்றியுள்ள அரசியலமைப்பு பயன்பாட்டைச் சரியாகப் பிரதிபலிக்கிறது."
-      },
-      "D": {
         "en": "Option D is incorrect; automatic joint sitting is not applicable in all circumstances.",
         "ta": "விருப்பம் D தவறானது; தானியங்கி கூட்டுக் கூட்டம் பொருந்தாது."
+      },
+      "D": {
+        "en": "Option C correctly captures the constitutional application regarding Article 112 Charged Expenditure Non-Votable Nature.",
+        "ta": "விருப்பம் C Article 112 Charged Expenditure Non-Votable Nature சுற்றியுள்ள அரசியலமைப்பு பயன்பாட்டைச் சரியாகப் பிரதிபலிக்கிறது."
       }
     },
     "tnpsc_tip": {
@@ -848,7 +1018,24 @@
     "tags": [
       "Article 112 Charged Expenditure Non-Votable Nature",
       "Reasoning Application"
-    ]
+    ],
+    "question_en": "Which of the following best explains the parliamentary application regarding 'Article 112 Charged Expenditure Non-Votable Nature'?",
+    "question_ta": "நாடாளுமன்ற பயன்பாட்டில் 'Article 112 Charged Expenditure Non-Votable Nature' என்பதனைப் பின்வருவனவற்றில் எது மிகச்சரியாக விளக்குகிறது?",
+    "options_en": [
+      "Executive decrees can supersede parliamentary authority on Article 112 Charged Expenditure Non-Votable Nature.",
+      "Rajya Sabha approval is sufficient without Lok Sabha vote for Article 112 Charged Expenditure Non-Votable Nature.",
+      "Article 108 permits automatic Joint Sitting for Article 112 Charged Expenditure Non-Votable Nature in all circumstances.",
+      "Reasoning analysis confirms that Article 112 Charged Expenditure Non-Votable Nature adheres strictly to constitutional limits and judicial scrutiny."
+    ],
+    "options_ta": [
+      "நிர்வாக ஆணைகள் Article 112 Charged Expenditure Non-Votable Nature தொடர்பான நாடாளுமன்ற அதிகாரத்தை மேலோங்கலாம்.",
+      "மக்களவை வாக்கெடுப்பு இன்றி மாநிலங்களவை ஒப்புதலே Article 112 Charged Expenditure Non-Votable Nature க்கு போதுமானது.",
+      "சரத்து 108 அனைத்துச் சூழல்களிலும் Article 112 Charged Expenditure Non-Votable Nature க்கு தானியங்கி கூட்டுக் கூட்டத்தை அனுமதிக்கிறது.",
+      "காரணப் பகுப்பாய்வு Article 112 Charged Expenditure Non-Votable Nature அரசியலமைப்பு வரம்புகள் மற்றும் நீதிமன்ற ஆய்விற்குட்பட்டது என்பதை உறுதிப்படுத்துகிறது."
+    ],
+    "answer": "d",
+    "explanation_en": "Reasoning analysis for Article 112 Charged Expenditure Non-Votable Nature: Option D accurately applies parliamentary law.",
+    "explanation_ta": "Article 112 Charged Expenditure Non-Votable Nature க்கான காரணப் பகுப்பாய்வு: விருப்பம் D நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
   },
   {
     "id": "CZ_PL_RS_012",
@@ -925,7 +1112,24 @@
     "tags": [
       "Article 115 Excess Grant PAC Approval Condition",
       "Reasoning Application"
-    ]
+    ],
+    "question_en": "Which of the following best explains the parliamentary application regarding 'Article 115 Excess Grant PAC Approval Condition'?",
+    "question_ta": "நாடாளுமன்ற பயன்பாட்டில் 'Article 115 Excess Grant PAC Approval Condition' என்பதனைப் பின்வருவனவற்றில் எது மிகச்சரியாக விளக்குகிறது?",
+    "options_en": [
+      "Simple majority in Lok Sabha alone can permanently override Article 115 Excess Grant PAC Approval Condition.",
+      "Rajya Sabha has no voting power whatsoever regarding Article 115 Excess Grant PAC Approval Condition.",
+      "Presidential veto can unconditionally nullify Article 115 Excess Grant PAC Approval Condition.",
+      "Reasoning analysis demonstrates that Article 115 Excess Grant PAC Approval Condition mandates full compliance with parliamentary procedural checks."
+    ],
+    "options_ta": [
+      "மக்களவையில் எளிய பெரும்பான்மை மட்டுமே Article 115 Excess Grant PAC Approval Condition ஐ நிரந்தரமாக மேலோங்கலாம்.",
+      "Article 115 Excess Grant PAC Approval Condition தொடர்பாக மாநிலங்களவைக்கு எவ்வித வாக்குகளிக்கும் அதிகாரமும் இல்லை.",
+      "குடியரசுத் தலைவரின் வீட்டோ அதிகாரம் Article 115 Excess Grant PAC Approval Condition ஐ நிபந்தனையின்றி ரத்து செய்யலாம்.",
+      "காரணப் பகுப்பாய்வு Article 115 Excess Grant PAC Approval Condition நாடாளுமன்ற நடைமுறைச் சோதனைகளுக்கு முழுமையாக இணங்குவதைக் காட்டுகிறது."
+    ],
+    "answer": "d",
+    "explanation_en": "Reasoning analysis for Article 115 Excess Grant PAC Approval Condition: Option D accurately applies parliamentary law.",
+    "explanation_ta": "Article 115 Excess Grant PAC Approval Condition க்கான காரணப் பகுப்பாய்வு: விருப்பம் D நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
   },
   {
     "id": "CZ_PL_RS_013",
@@ -940,13 +1144,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Reasoning analysis confirms that Article 116 Vote on Account Duration and Purpose applies strictly under constitutional provisions.",
-        "ta": "காரணப் பகுப்பாய்வு Article 116 Vote on Account Duration and Purpose அரசியலமைப்பு விதிகளின் கீழ் சரியாகப் பொருந்துகிறது என்பதை உறுதிப்படுத்துகிறது."
+        "en": "Ordinary legislative procedure overrides constitutional provisions regarding Article 116 Vote on Account Duration and Purpose.",
+        "ta": "சாதாரண சட்டமன்ற நடைமுறை Article 116 Vote on Account Duration and Purpose தொடர்பான அரசியலமைப்பு விதிகளை மேலோங்குகிறது."
       },
       {
         "id": "B",
-        "en": "Ordinary legislative procedure overrides constitutional provisions regarding Article 116 Vote on Account Duration and Purpose.",
-        "ta": "சாதாரண சட்டமன்ற நடைமுறை Article 116 Vote on Account Duration and Purpose தொடர்பான அரசியலமைப்பு விதிகளை மேலோங்குகிறது."
+        "en": "Reasoning analysis confirms that Article 116 Vote on Account Duration and Purpose applies strictly under constitutional provisions.",
+        "ta": "காரணப் பகுப்பாய்வு Article 116 Vote on Account Duration and Purpose அரசியலமைப்பு விதிகளின் கீழ் சரியாகப் பொருந்துகிறது என்பதை உறுதிப்படுத்துகிறது."
       },
       {
         "id": "C",
@@ -959,19 +1163,19 @@
         "ta": "மாநிலங்களவை Article 116 Vote on Account Duration and Purpose தொடர்பாக மக்களவையை விட பிரத்தியேக வீட்டோ அதிகாரம் கொண்டுள்ளது."
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "B",
     "explanation": {
-      "en": "Reasoning analysis for Article 116 Vote on Account Duration and Purpose: Option A accurately applies parliamentary law.",
-      "ta": "Article 116 Vote on Account Duration and Purpose க்கான காரணப் பகுப்பாய்வு: விருப்பம் A நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
+      "en": "Reasoning analysis for Article 116 Vote on Account Duration and Purpose: Option B accurately applies parliamentary law.",
+      "ta": "Article 116 Vote on Account Duration and Purpose க்கான காரணப் பகுப்பாய்வு: விருப்பம் B நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
     },
     "why_not_others": {
       "A": {
-        "en": "Option A correctly applies constitutional reasoning for Article 116 Vote on Account Duration and Purpose.",
-        "ta": "விருப்பம் A Article 116 Vote on Account Duration and Purpose க்கான அரசியலமைப்புக் காரணங்களைச் சரியாகப் பயன்படுத்துகிறது."
-      },
-      "B": {
         "en": "Option B is incorrect; ordinary procedure cannot override constitutional rules.",
         "ta": "விருப்பம் B தவறானது; சாதாரண நடைமுறை அரசியலமைப்பு விதிகளை மீற முடியாது."
+      },
+      "B": {
+        "en": "Option A correctly applies constitutional reasoning for Article 116 Vote on Account Duration and Purpose.",
+        "ta": "விருப்பம் A Article 116 Vote on Account Duration and Purpose க்கான அரசியலமைப்புக் காரணங்களைச் சரியாகப் பயன்படுத்துகிறது."
       },
       "C": {
         "en": "Option C is incorrect; executive order cannot bypass parliamentary sanction.",
@@ -1002,7 +1206,24 @@
     "tags": [
       "Article 116 Vote on Account Duration and Purpose",
       "Reasoning Application"
-    ]
+    ],
+    "question_en": "Which of the following best explains the parliamentary application regarding 'Article 116 Vote on Account Duration and Purpose'?",
+    "question_ta": "நாடாளுமன்ற பயன்பாட்டில் 'Article 116 Vote on Account Duration and Purpose' என்பதனைப் பின்வருவனவற்றில் எது மிகச்சரியாக விளக்குகிறது?",
+    "options_en": [
+      "Ordinary legislative procedure overrides constitutional provisions regarding Article 116 Vote on Account Duration and Purpose.",
+      "Reasoning analysis confirms that Article 116 Vote on Account Duration and Purpose applies strictly under constitutional provisions.",
+      "Executive order can bypass parliamentary authorization for Article 116 Vote on Account Duration and Purpose.",
+      "Rajya Sabha holds exclusive veto over Lok Sabha regarding Article 116 Vote on Account Duration and Purpose."
+    ],
+    "options_ta": [
+      "சாதாரண சட்டமன்ற நடைமுறை Article 116 Vote on Account Duration and Purpose தொடர்பான அரசியலமைப்பு விதிகளை மேலோங்குகிறது.",
+      "காரணப் பகுப்பாய்வு Article 116 Vote on Account Duration and Purpose அரசியலமைப்பு விதிகளின் கீழ் சரியாகப் பொருந்துகிறது என்பதை உறுதிப்படுத்துகிறது.",
+      "நிர்வாக ஆணை Article 116 Vote on Account Duration and Purpose க்கான நாடாளுமன்ற அனுமதியைத் தவிர்க்கலாம்.",
+      "மாநிலங்களவை Article 116 Vote on Account Duration and Purpose தொடர்பாக மக்களவையை விட பிரத்தியேக வீட்டோ அதிகாரம் கொண்டுள்ளது."
+    ],
+    "answer": "b",
+    "explanation_en": "Reasoning analysis for Article 116 Vote on Account Duration and Purpose: Option B accurately applies parliamentary law.",
+    "explanation_ta": "Article 116 Vote on Account Duration and Purpose க்கான காரணப் பகுப்பாய்வு: விருப்பம் B நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
   },
   {
     "id": "CZ_PL_RS_014",
@@ -1022,8 +1243,8 @@
       },
       {
         "id": "B",
-        "en": "Reasoning analysis affirms that Article 117 Financial Bill Type I vs Type II Comparison operates in strict compliance with parliamentary law.",
-        "ta": "காரணப் பகுப்பாய்வு Article 117 Financial Bill Type I vs Type II Comparison நாடாளுமன்றச் சட்டத்திற்கு இணங்கச் செயல்படுகிறது என்பதை உறுதிப்படுத்துகிறது."
+        "en": "Supreme Court prior approval is required before debating Article 117 Financial Bill Type I vs Type II Comparison.",
+        "ta": "Article 117 Financial Bill Type I vs Type II Comparison பற்றி விவாதிப்பதற்கு முன் உச்ச நீதிமன்ற முன்-ஒப்புதல் தேவை."
       },
       {
         "id": "C",
@@ -1032,14 +1253,14 @@
       },
       {
         "id": "D",
-        "en": "Supreme Court prior approval is required before debating Article 117 Financial Bill Type I vs Type II Comparison.",
-        "ta": "Article 117 Financial Bill Type I vs Type II Comparison பற்றி விவாதிப்பதற்கு முன் உச்ச நீதிமன்ற முன்-ஒப்புதல் தேவை."
+        "en": "Reasoning analysis affirms that Article 117 Financial Bill Type I vs Type II Comparison operates in strict compliance with parliamentary law.",
+        "ta": "காரணப் பகுப்பாய்வு Article 117 Financial Bill Type I vs Type II Comparison நாடாளுமன்றச் சட்டத்திற்கு இணங்கச் செயல்படுகிறது என்பதை உறுதிப்படுத்துகிறது."
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "D",
     "explanation": {
-      "en": "Reasoning analysis for Article 117 Financial Bill Type I vs Type II Comparison: Option B accurately applies parliamentary law.",
-      "ta": "Article 117 Financial Bill Type I vs Type II Comparison க்கான காரணப் பகுப்பாய்வு: விருப்பம் B நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
+      "en": "Reasoning analysis for Article 117 Financial Bill Type I vs Type II Comparison: Option D accurately applies parliamentary law.",
+      "ta": "Article 117 Financial Bill Type I vs Type II Comparison க்கான காரணப் பகுப்பாய்வு: விருப்பம் D நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
     },
     "why_not_others": {
       "A": {
@@ -1047,16 +1268,16 @@
         "ta": "விருப்பம் A தவறானது; நிர்வாக அனுமதி தேவையில்லை."
       },
       "B": {
-        "en": "Option B correctly applies the parliamentary principle governing Article 117 Financial Bill Type I vs Type II Comparison.",
-        "ta": "விருப்பம் B Article 117 Financial Bill Type I vs Type II Comparison ஐ ஆளும் நாடாளுமன்ற விதியைச் சரியாகப் பயன்படுத்துகிறது."
+        "en": "Option D is incorrect; prior judicial approval is not required.",
+        "ta": "விருப்பம் D தவறானது; முன் நீதிமன்ற ஒப்புதல் தேவையில்லை."
       },
       "C": {
         "en": "Option C is incorrect; quorum is mandatory for proceedings.",
         "ta": "விருப்பம் C தவறானது; நடவடிக்கைகளுக்கு குறைவெண் கட்டாயம்."
       },
       "D": {
-        "en": "Option D is incorrect; prior judicial approval is not required.",
-        "ta": "விருப்பம் D தவறானது; முன் நீதிமன்ற ஒப்புதல் தேவையில்லை."
+        "en": "Option B correctly applies the parliamentary principle governing Article 117 Financial Bill Type I vs Type II Comparison.",
+        "ta": "விருப்பம் B Article 117 Financial Bill Type I vs Type II Comparison ஐ ஆளும் நாடாளுமன்ற விதியைச் சரியாகப் பயன்படுத்துகிறது."
       }
     },
     "tnpsc_tip": {
@@ -1079,7 +1300,24 @@
     "tags": [
       "Article 117 Financial Bill Type I vs Type II Comparison",
       "Reasoning Application"
-    ]
+    ],
+    "question_en": "Which of the following best explains the parliamentary application regarding 'Article 117 Financial Bill Type I vs Type II Comparison'?",
+    "question_ta": "நாடாளுமன்ற பயன்பாட்டில் 'Article 117 Financial Bill Type I vs Type II Comparison' என்பதனைப் பின்வருவனவற்றில் எது மிகச்சரியாக விளக்குகிறது?",
+    "options_en": [
+      "Executive sanction is mandatory prior to initiating Article 117 Financial Bill Type I vs Type II Comparison.",
+      "Supreme Court prior approval is required before debating Article 117 Financial Bill Type I vs Type II Comparison.",
+      "Simple majority without quorum is valid for Article 117 Financial Bill Type I vs Type II Comparison.",
+      "Reasoning analysis affirms that Article 117 Financial Bill Type I vs Type II Comparison operates in strict compliance with parliamentary law."
+    ],
+    "options_ta": [
+      "Article 117 Financial Bill Type I vs Type II Comparison ஐத் தொடங்குவதற்கு முன் நிர்வாக அனுமதி கட்டாயம்.",
+      "Article 117 Financial Bill Type I vs Type II Comparison பற்றி விவாதிப்பதற்கு முன் உச்ச நீதிமன்ற முன்-ஒப்புதல் தேவை.",
+      "குறைவெண் இன்றி எளிய பெரும்பான்மை Article 117 Financial Bill Type I vs Type II Comparison க்கு செல்லுபடியாகும்.",
+      "காரணப் பகுப்பாய்வு Article 117 Financial Bill Type I vs Type II Comparison நாடாளுமன்றச் சட்டத்திற்கு இணங்கச் செயல்படுகிறது என்பதை உறுதிப்படுத்துகிறது."
+    ],
+    "answer": "d",
+    "explanation_en": "Reasoning analysis for Article 117 Financial Bill Type I vs Type II Comparison: Option D accurately applies parliamentary law.",
+    "explanation_ta": "Article 117 Financial Bill Type I vs Type II Comparison க்கான காரணப் பகுப்பாய்வு: விருப்பம் D நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
   },
   {
     "id": "CZ_PL_RS_015",
@@ -1099,13 +1337,13 @@
       },
       {
         "id": "B",
-        "en": "Rajya Sabha approval is sufficient without Lok Sabha vote for Article 123 Ordinance Expiry and Reassembly Rules.",
-        "ta": "மக்களவை வாக்கெடுப்பு இன்றி மாநிலங்களவை ஒப்புதலே Article 123 Ordinance Expiry and Reassembly Rules க்கு போதுமானது."
+        "en": "Reasoning analysis confirms that Article 123 Ordinance Expiry and Reassembly Rules adheres strictly to constitutional limits and judicial scrutiny.",
+        "ta": "காரணப் பகுப்பாய்வு Article 123 Ordinance Expiry and Reassembly Rules அரசியலமைப்பு வரம்புகள் மற்றும் நீதிமன்ற ஆய்விற்குட்பட்டது என்பதை உறுதிப்படுத்துகிறது."
       },
       {
         "id": "C",
-        "en": "Reasoning analysis confirms that Article 123 Ordinance Expiry and Reassembly Rules adheres strictly to constitutional limits and judicial scrutiny.",
-        "ta": "காரணப் பகுப்பாய்வு Article 123 Ordinance Expiry and Reassembly Rules அரசியலமைப்பு வரம்புகள் மற்றும் நீதிமன்ற ஆய்விற்குட்பட்டது என்பதை உறுதிப்படுத்துகிறது."
+        "en": "Rajya Sabha approval is sufficient without Lok Sabha vote for Article 123 Ordinance Expiry and Reassembly Rules.",
+        "ta": "மக்களவை வாக்கெடுப்பு இன்றி மாநிலங்களவை ஒப்புதலே Article 123 Ordinance Expiry and Reassembly Rules க்கு போதுமானது."
       },
       {
         "id": "D",
@@ -1113,10 +1351,10 @@
         "ta": "சரத்து 108 அனைத்துச் சூழல்களிலும் Article 123 Ordinance Expiry and Reassembly Rules க்கு தானியங்கி கூட்டுக் கூட்டத்தை அனுமதிக்கிறது."
       }
     ],
-    "correct_answer": "C",
+    "correct_answer": "B",
     "explanation": {
-      "en": "Reasoning analysis for Article 123 Ordinance Expiry and Reassembly Rules: Option C accurately applies parliamentary law.",
-      "ta": "Article 123 Ordinance Expiry and Reassembly Rules க்கான காரணப் பகுப்பாய்வு: விருப்பம் C நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
+      "en": "Reasoning analysis for Article 123 Ordinance Expiry and Reassembly Rules: Option B accurately applies parliamentary law.",
+      "ta": "Article 123 Ordinance Expiry and Reassembly Rules க்கான காரணப் பகுப்பாய்வு: விருப்பம் B நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
     },
     "why_not_others": {
       "A": {
@@ -1124,12 +1362,12 @@
         "ta": "விருப்பம் A தவறானது; நிர்வாக ஆணைகள் அதிகாரத்தை மேலோங்க முடியாது."
       },
       "B": {
-        "en": "Option B is incorrect; Lok Sabha vote is essential.",
-        "ta": "விருப்பம் B தவறானது; மக்களவை வாக்கெடுப்பு அத்தியாவசியமானது."
-      },
-      "C": {
         "en": "Option C correctly captures the constitutional application regarding Article 123 Ordinance Expiry and Reassembly Rules.",
         "ta": "விருப்பம் C Article 123 Ordinance Expiry and Reassembly Rules சுற்றியுள்ள அரசியலமைப்பு பயன்பாட்டைச் சரியாகப் பிரதிபலிக்கிறது."
+      },
+      "C": {
+        "en": "Option B is incorrect; Lok Sabha vote is essential.",
+        "ta": "விருப்பம் B தவறானது; மக்களவை வாக்கெடுப்பு அத்தியாவசியமானது."
       },
       "D": {
         "en": "Option D is incorrect; automatic joint sitting is not applicable in all circumstances.",
@@ -1156,7 +1394,24 @@
     "tags": [
       "Article 123 Ordinance Expiry and Reassembly Rules",
       "Reasoning Application"
-    ]
+    ],
+    "question_en": "Which of the following best explains the parliamentary application regarding 'Article 123 Ordinance Expiry and Reassembly Rules'?",
+    "question_ta": "நாடாளுமன்ற பயன்பாட்டில் 'Article 123 Ordinance Expiry and Reassembly Rules' என்பதனைப் பின்வருவனவற்றில் எது மிகச்சரியாக விளக்குகிறது?",
+    "options_en": [
+      "Executive decrees can supersede parliamentary authority on Article 123 Ordinance Expiry and Reassembly Rules.",
+      "Reasoning analysis confirms that Article 123 Ordinance Expiry and Reassembly Rules adheres strictly to constitutional limits and judicial scrutiny.",
+      "Rajya Sabha approval is sufficient without Lok Sabha vote for Article 123 Ordinance Expiry and Reassembly Rules.",
+      "Article 108 permits automatic Joint Sitting for Article 123 Ordinance Expiry and Reassembly Rules in all circumstances."
+    ],
+    "options_ta": [
+      "நிர்வாக ஆணைகள் Article 123 Ordinance Expiry and Reassembly Rules தொடர்பான நாடாளுமன்ற அதிகாரத்தை மேலோங்கலாம்.",
+      "காரணப் பகுப்பாய்வு Article 123 Ordinance Expiry and Reassembly Rules அரசியலமைப்பு வரம்புகள் மற்றும் நீதிமன்ற ஆய்விற்குட்பட்டது என்பதை உறுதிப்படுத்துகிறது.",
+      "மக்களவை வாக்கெடுப்பு இன்றி மாநிலங்களவை ஒப்புதலே Article 123 Ordinance Expiry and Reassembly Rules க்கு போதுமானது.",
+      "சரத்து 108 அனைத்துச் சூழல்களிலும் Article 123 Ordinance Expiry and Reassembly Rules க்கு தானியங்கி கூட்டுக் கூட்டத்தை அனுமதிக்கிறது."
+    ],
+    "answer": "b",
+    "explanation_en": "Reasoning analysis for Article 123 Ordinance Expiry and Reassembly Rules: Option B accurately applies parliamentary law.",
+    "explanation_ta": "Article 123 Ordinance Expiry and Reassembly Rules க்கான காரணப் பகுப்பாய்வு: விருப்பம் B நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
   },
   {
     "id": "CZ_PL_RS_016",
@@ -1181,19 +1436,19 @@
       },
       {
         "id": "C",
-        "en": "Presidential veto can unconditionally nullify Tenth Schedule 2/3 Merger Exception Immunity.",
-        "ta": "குடியரசுத் தலைவரின் வீட்டோ அதிகாரம் Tenth Schedule 2/3 Merger Exception Immunity ஐ நிபந்தனையின்றி ரத்து செய்யலாம்."
+        "en": "Reasoning analysis demonstrates that Tenth Schedule 2/3 Merger Exception Immunity mandates full compliance with parliamentary procedural checks.",
+        "ta": "காரணப் பகுப்பாய்வு Tenth Schedule 2/3 Merger Exception Immunity நாடாளுமன்ற நடைமுறைச் சோதனைகளுக்கு முழுமையாக இணங்குவதைக் காட்டுகிறது."
       },
       {
         "id": "D",
-        "en": "Reasoning analysis demonstrates that Tenth Schedule 2/3 Merger Exception Immunity mandates full compliance with parliamentary procedural checks.",
-        "ta": "காரணப் பகுப்பாய்வு Tenth Schedule 2/3 Merger Exception Immunity நாடாளுமன்ற நடைமுறைச் சோதனைகளுக்கு முழுமையாக இணங்குவதைக் காட்டுகிறது."
+        "en": "Presidential veto can unconditionally nullify Tenth Schedule 2/3 Merger Exception Immunity.",
+        "ta": "குடியரசுத் தலைவரின் வீட்டோ அதிகாரம் Tenth Schedule 2/3 Merger Exception Immunity ஐ நிபந்தனையின்றி ரத்து செய்யலாம்."
       }
     ],
-    "correct_answer": "D",
+    "correct_answer": "C",
     "explanation": {
-      "en": "Reasoning analysis for Tenth Schedule 2/3 Merger Exception Immunity: Option D accurately applies parliamentary law.",
-      "ta": "Tenth Schedule 2/3 Merger Exception Immunity க்கான காரணப் பகுப்பாய்வு: விருப்பம் D நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
+      "en": "Reasoning analysis for Tenth Schedule 2/3 Merger Exception Immunity: Option C accurately applies parliamentary law.",
+      "ta": "Tenth Schedule 2/3 Merger Exception Immunity க்கான காரணப் பகுப்பாய்வு: விருப்பம் C நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
     },
     "why_not_others": {
       "A": {
@@ -1205,12 +1460,12 @@
         "ta": "விருப்பம் B தவறானது; மாநிலங்களவைக்கு வரையறுக்கப்பட்ட வாக்கு உரிமை உண்டு."
       },
       "C": {
-        "en": "Option C is incorrect; presidential veto power is bounded by constitutional limits.",
-        "ta": "விருப்பம் C தவறானது; வீட்டோ அதிகாரம் அரசியலமைப்பு வரம்புகளுக்கு உட்பட்டது."
-      },
-      "D": {
         "en": "Option D correctly highlights procedural compliance for Tenth Schedule 2/3 Merger Exception Immunity.",
         "ta": "விருப்பம் D Tenth Schedule 2/3 Merger Exception Immunity க்கான நடைமுறை இணக்கத்தைச் சரியாகச் சுட்டிக்காட்டுகிறது."
+      },
+      "D": {
+        "en": "Option C is incorrect; presidential veto power is bounded by constitutional limits.",
+        "ta": "விருப்பம் C தவறானது; வீட்டோ அதிகாரம் அரசியலமைப்பு வரம்புகளுக்கு உட்பட்டது."
       }
     },
     "tnpsc_tip": {
@@ -1233,7 +1488,24 @@
     "tags": [
       "Tenth Schedule 2/3 Merger Exception Immunity",
       "Reasoning Application"
-    ]
+    ],
+    "question_en": "Which of the following best explains the parliamentary application regarding 'Tenth Schedule 2/3 Merger Exception Immunity'?",
+    "question_ta": "நாடாளுமன்ற பயன்பாட்டில் 'Tenth Schedule 2/3 Merger Exception Immunity' என்பதனைப் பின்வருவனவற்றில் எது மிகச்சரியாக விளக்குகிறது?",
+    "options_en": [
+      "Simple majority in Lok Sabha alone can permanently override Tenth Schedule 2/3 Merger Exception Immunity.",
+      "Rajya Sabha has no voting power whatsoever regarding Tenth Schedule 2/3 Merger Exception Immunity.",
+      "Reasoning analysis demonstrates that Tenth Schedule 2/3 Merger Exception Immunity mandates full compliance with parliamentary procedural checks.",
+      "Presidential veto can unconditionally nullify Tenth Schedule 2/3 Merger Exception Immunity."
+    ],
+    "options_ta": [
+      "மக்களவையில் எளிய பெரும்பான்மை மட்டுமே Tenth Schedule 2/3 Merger Exception Immunity ஐ நிரந்தரமாக மேலோங்கலாம்.",
+      "Tenth Schedule 2/3 Merger Exception Immunity தொடர்பாக மாநிலங்களவைக்கு எவ்வித வாக்குகளிக்கும் அதிகாரமும் இல்லை.",
+      "காரணப் பகுப்பாய்வு Tenth Schedule 2/3 Merger Exception Immunity நாடாளுமன்ற நடைமுறைச் சோதனைகளுக்கு முழுமையாக இணங்குவதைக் காட்டுகிறது.",
+      "குடியரசுத் தலைவரின் வீட்டோ அதிகாரம் Tenth Schedule 2/3 Merger Exception Immunity ஐ நிபந்தனையின்றி ரத்து செய்யலாம்."
+    ],
+    "answer": "c",
+    "explanation_en": "Reasoning analysis for Tenth Schedule 2/3 Merger Exception Immunity: Option C accurately applies parliamentary law.",
+    "explanation_ta": "Tenth Schedule 2/3 Merger Exception Immunity க்கான காரணப் பகுப்பாய்வு: விருப்பம் C நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
   },
   {
     "id": "CZ_PL_RS_017",
@@ -1310,7 +1582,24 @@
     "tags": [
       "Tenth Schedule Kihoto Hollohan Speaker Judicial Review",
       "Reasoning Application"
-    ]
+    ],
+    "question_en": "Which of the following best explains the parliamentary application regarding 'Tenth Schedule Kihoto Hollohan Speaker Judicial Review'?",
+    "question_ta": "நாடாளுமன்ற பயன்பாட்டில் 'Tenth Schedule Kihoto Hollohan Speaker Judicial Review' என்பதனைப் பின்வருவனவற்றில் எது மிகச்சரியாக விளக்குகிறது?",
+    "options_en": [
+      "Reasoning analysis confirms that Tenth Schedule Kihoto Hollohan Speaker Judicial Review applies strictly under constitutional provisions.",
+      "Ordinary legislative procedure overrides constitutional provisions regarding Tenth Schedule Kihoto Hollohan Speaker Judicial Review.",
+      "Executive order can bypass parliamentary authorization for Tenth Schedule Kihoto Hollohan Speaker Judicial Review.",
+      "Rajya Sabha holds exclusive veto over Lok Sabha regarding Tenth Schedule Kihoto Hollohan Speaker Judicial Review."
+    ],
+    "options_ta": [
+      "காரணப் பகுப்பாய்வு Tenth Schedule Kihoto Hollohan Speaker Judicial Review அரசியலமைப்பு விதிகளின் கீழ் சரியாகப் பொருந்துகிறது என்பதை உறுதிப்படுத்துகிறது.",
+      "சாதாரண சட்டமன்ற நடைமுறை Tenth Schedule Kihoto Hollohan Speaker Judicial Review தொடர்பான அரசியலமைப்பு விதிகளை மேலோங்குகிறது.",
+      "நிர்வாக ஆணை Tenth Schedule Kihoto Hollohan Speaker Judicial Review க்கான நாடாளுமன்ற அனுமதியைத் தவிர்க்கலாம்.",
+      "மாநிலங்களவை Tenth Schedule Kihoto Hollohan Speaker Judicial Review தொடர்பாக மக்களவையை விட பிரத்தியேக வீட்டோ அதிகாரம் கொண்டுள்ளது."
+    ],
+    "answer": "a",
+    "explanation_en": "Reasoning analysis for Tenth Schedule Kihoto Hollohan Speaker Judicial Review: Option A accurately applies parliamentary law.",
+    "explanation_ta": "Tenth Schedule Kihoto Hollohan Speaker Judicial Review க்கான காரணப் பகுப்பாய்வு: விருப்பம் A நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
   },
   {
     "id": "CZ_PL_RS_018",
@@ -1330,13 +1619,13 @@
       },
       {
         "id": "B",
-        "en": "Reasoning analysis affirms that Question Hour Starred vs Unstarred Question Supplementary Rights operates in strict compliance with parliamentary law.",
-        "ta": "காரணப் பகுப்பாய்வு Question Hour Starred vs Unstarred Question Supplementary Rights நாடாளுமன்றச் சட்டத்திற்கு இணங்கச் செயல்படுகிறது என்பதை உறுதிப்படுத்துகிறது."
+        "en": "Simple majority without quorum is valid for Question Hour Starred vs Unstarred Question Supplementary Rights.",
+        "ta": "குறைவெண் இன்றி எளிய பெரும்பான்மை Question Hour Starred vs Unstarred Question Supplementary Rights க்கு செல்லுபடியாகும்."
       },
       {
         "id": "C",
-        "en": "Simple majority without quorum is valid for Question Hour Starred vs Unstarred Question Supplementary Rights.",
-        "ta": "குறைவெண் இன்றி எளிய பெரும்பான்மை Question Hour Starred vs Unstarred Question Supplementary Rights க்கு செல்லுபடியாகும்."
+        "en": "Reasoning analysis affirms that Question Hour Starred vs Unstarred Question Supplementary Rights operates in strict compliance with parliamentary law.",
+        "ta": "காரணப் பகுப்பாய்வு Question Hour Starred vs Unstarred Question Supplementary Rights நாடாளுமன்றச் சட்டத்திற்கு இணங்கச் செயல்படுகிறது என்பதை உறுதிப்படுத்துகிறது."
       },
       {
         "id": "D",
@@ -1344,10 +1633,10 @@
         "ta": "Question Hour Starred vs Unstarred Question Supplementary Rights பற்றி விவாதிப்பதற்கு முன் உச்ச நீதிமன்ற முன்-ஒப்புதல் தேவை."
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "C",
     "explanation": {
-      "en": "Reasoning analysis for Question Hour Starred vs Unstarred Question Supplementary Rights: Option B accurately applies parliamentary law.",
-      "ta": "Question Hour Starred vs Unstarred Question Supplementary Rights க்கான காரணப் பகுப்பாய்வு: விருப்பம் B நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
+      "en": "Reasoning analysis for Question Hour Starred vs Unstarred Question Supplementary Rights: Option C accurately applies parliamentary law.",
+      "ta": "Question Hour Starred vs Unstarred Question Supplementary Rights க்கான காரணப் பகுப்பாய்வு: விருப்பம் C நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
     },
     "why_not_others": {
       "A": {
@@ -1355,12 +1644,12 @@
         "ta": "விருப்பம் A தவறானது; நிர்வாக அனுமதி தேவையில்லை."
       },
       "B": {
-        "en": "Option B correctly applies the parliamentary principle governing Question Hour Starred vs Unstarred Question Supplementary Rights.",
-        "ta": "விருப்பம் B Question Hour Starred vs Unstarred Question Supplementary Rights ஐ ஆளும் நாடாளுமன்ற விதியைச் சரியாகப் பயன்படுத்துகிறது."
-      },
-      "C": {
         "en": "Option C is incorrect; quorum is mandatory for proceedings.",
         "ta": "விருப்பம் C தவறானது; நடவடிக்கைகளுக்கு குறைவெண் கட்டாயம்."
+      },
+      "C": {
+        "en": "Option B correctly applies the parliamentary principle governing Question Hour Starred vs Unstarred Question Supplementary Rights.",
+        "ta": "விருப்பம் B Question Hour Starred vs Unstarred Question Supplementary Rights ஐ ஆளும் நாடாளுமன்ற விதியைச் சரியாகப் பயன்படுத்துகிறது."
       },
       "D": {
         "en": "Option D is incorrect; prior judicial approval is not required.",
@@ -1387,7 +1676,24 @@
     "tags": [
       "Question Hour Starred vs Unstarred Question Supplementary Rights",
       "Reasoning Application"
-    ]
+    ],
+    "question_en": "Which of the following best explains the parliamentary application regarding 'Question Hour Starred vs Unstarred Question Supplementary Rights'?",
+    "question_ta": "நாடாளுமன்ற பயன்பாட்டில் 'Question Hour Starred vs Unstarred Question Supplementary Rights' என்பதனைப் பின்வருவனவற்றில் எது மிகச்சரியாக விளக்குகிறது?",
+    "options_en": [
+      "Executive sanction is mandatory prior to initiating Question Hour Starred vs Unstarred Question Supplementary Rights.",
+      "Simple majority without quorum is valid for Question Hour Starred vs Unstarred Question Supplementary Rights.",
+      "Reasoning analysis affirms that Question Hour Starred vs Unstarred Question Supplementary Rights operates in strict compliance with parliamentary law.",
+      "Supreme Court prior approval is required before debating Question Hour Starred vs Unstarred Question Supplementary Rights."
+    ],
+    "options_ta": [
+      "Question Hour Starred vs Unstarred Question Supplementary Rights ஐத் தொடங்குவதற்கு முன் நிர்வாக அனுமதி கட்டாயம்.",
+      "குறைவெண் இன்றி எளிய பெரும்பான்மை Question Hour Starred vs Unstarred Question Supplementary Rights க்கு செல்லுபடியாகும்.",
+      "காரணப் பகுப்பாய்வு Question Hour Starred vs Unstarred Question Supplementary Rights நாடாளுமன்றச் சட்டத்திற்கு இணங்கச் செயல்படுகிறது என்பதை உறுதிப்படுத்துகிறது.",
+      "Question Hour Starred vs Unstarred Question Supplementary Rights பற்றி விவாதிப்பதற்கு முன் உச்ச நீதிமன்ற முன்-ஒப்புதல் தேவை."
+    ],
+    "answer": "c",
+    "explanation_en": "Reasoning analysis for Question Hour Starred vs Unstarred Question Supplementary Rights: Option C accurately applies parliamentary law.",
+    "explanation_ta": "Question Hour Starred vs Unstarred Question Supplementary Rights க்கான காரணப் பகுப்பாய்வு: விருப்பம் C நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
   },
   {
     "id": "CZ_PL_RS_019",
@@ -1412,19 +1718,19 @@
       },
       {
         "id": "C",
-        "en": "Reasoning analysis confirms that Zero Hour Notice Exemption Mechanics adheres strictly to constitutional limits and judicial scrutiny.",
-        "ta": "காரணப் பகுப்பாய்வு Zero Hour Notice Exemption Mechanics அரசியலமைப்பு வரம்புகள் மற்றும் நீதிமன்ற ஆய்விற்குட்பட்டது என்பதை உறுதிப்படுத்துகிறது."
+        "en": "Article 108 permits automatic Joint Sitting for Zero Hour Notice Exemption Mechanics in all circumstances.",
+        "ta": "சரத்து 108 அனைத்துச் சூழல்களிலும் Zero Hour Notice Exemption Mechanics க்கு தானியங்கி கூட்டுக் கூட்டத்தை அனுமதிக்கிறது."
       },
       {
         "id": "D",
-        "en": "Article 108 permits automatic Joint Sitting for Zero Hour Notice Exemption Mechanics in all circumstances.",
-        "ta": "சரத்து 108 அனைத்துச் சூழல்களிலும் Zero Hour Notice Exemption Mechanics க்கு தானியங்கி கூட்டுக் கூட்டத்தை அனுமதிக்கிறது."
+        "en": "Reasoning analysis confirms that Zero Hour Notice Exemption Mechanics adheres strictly to constitutional limits and judicial scrutiny.",
+        "ta": "காரணப் பகுப்பாய்வு Zero Hour Notice Exemption Mechanics அரசியலமைப்பு வரம்புகள் மற்றும் நீதிமன்ற ஆய்விற்குட்பட்டது என்பதை உறுதிப்படுத்துகிறது."
       }
     ],
-    "correct_answer": "C",
+    "correct_answer": "D",
     "explanation": {
-      "en": "Reasoning analysis for Zero Hour Notice Exemption Mechanics: Option C accurately applies parliamentary law.",
-      "ta": "Zero Hour Notice Exemption Mechanics க்கான காரணப் பகுப்பாய்வு: விருப்பம் C நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
+      "en": "Reasoning analysis for Zero Hour Notice Exemption Mechanics: Option D accurately applies parliamentary law.",
+      "ta": "Zero Hour Notice Exemption Mechanics க்கான காரணப் பகுப்பாய்வு: விருப்பம் D நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
     },
     "why_not_others": {
       "A": {
@@ -1436,12 +1742,12 @@
         "ta": "விருப்பம் B தவறானது; மக்களவை வாக்கெடுப்பு அத்தியாவசியமானது."
       },
       "C": {
-        "en": "Option C correctly captures the constitutional application regarding Zero Hour Notice Exemption Mechanics.",
-        "ta": "விருப்பம் C Zero Hour Notice Exemption Mechanics சுற்றியுள்ள அரசியலமைப்பு பயன்பாட்டைச் சரியாகப் பிரதிபலிக்கிறது."
-      },
-      "D": {
         "en": "Option D is incorrect; automatic joint sitting is not applicable in all circumstances.",
         "ta": "விருப்பம் D தவறானது; தானியங்கி கூட்டுக் கூட்டம் பொருந்தாது."
+      },
+      "D": {
+        "en": "Option C correctly captures the constitutional application regarding Zero Hour Notice Exemption Mechanics.",
+        "ta": "விருப்பம் C Zero Hour Notice Exemption Mechanics சுற்றியுள்ள அரசியலமைப்பு பயன்பாட்டைச் சரியாகப் பிரதிபலிக்கிறது."
       }
     },
     "tnpsc_tip": {
@@ -1464,7 +1770,24 @@
     "tags": [
       "Zero Hour Notice Exemption Mechanics",
       "Reasoning Application"
-    ]
+    ],
+    "question_en": "Which of the following best explains the parliamentary application regarding 'Zero Hour Notice Exemption Mechanics'?",
+    "question_ta": "நாடாளுமன்ற பயன்பாட்டில் 'Zero Hour Notice Exemption Mechanics' என்பதனைப் பின்வருவனவற்றில் எது மிகச்சரியாக விளக்குகிறது?",
+    "options_en": [
+      "Executive decrees can supersede parliamentary authority on Zero Hour Notice Exemption Mechanics.",
+      "Rajya Sabha approval is sufficient without Lok Sabha vote for Zero Hour Notice Exemption Mechanics.",
+      "Article 108 permits automatic Joint Sitting for Zero Hour Notice Exemption Mechanics in all circumstances.",
+      "Reasoning analysis confirms that Zero Hour Notice Exemption Mechanics adheres strictly to constitutional limits and judicial scrutiny."
+    ],
+    "options_ta": [
+      "நிர்வாக ஆணைகள் Zero Hour Notice Exemption Mechanics தொடர்பான நாடாளுமன்ற அதிகாரத்தை மேலோங்கலாம்.",
+      "மக்களவை வாக்கெடுப்பு இன்றி மாநிலங்களவை ஒப்புதலே Zero Hour Notice Exemption Mechanics க்கு போதுமானது.",
+      "சரத்து 108 அனைத்துச் சூழல்களிலும் Zero Hour Notice Exemption Mechanics க்கு தானியங்கி கூட்டுக் கூட்டத்தை அனுமதிக்கிறது.",
+      "காரணப் பகுப்பாய்வு Zero Hour Notice Exemption Mechanics அரசியலமைப்பு வரம்புகள் மற்றும் நீதிமன்ற ஆய்விற்குட்பட்டது என்பதை உறுதிப்படுத்துகிறது."
+    ],
+    "answer": "d",
+    "explanation_en": "Reasoning analysis for Zero Hour Notice Exemption Mechanics: Option D accurately applies parliamentary law.",
+    "explanation_ta": "Zero Hour Notice Exemption Mechanics க்கான காரணப் பகுப்பாய்வு: விருப்பம் D நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
   },
   {
     "id": "CZ_PL_RS_020",
@@ -1489,19 +1812,19 @@
       },
       {
         "id": "C",
-        "en": "Presidential veto can unconditionally nullify Adjournment Motion 50 Member Support Admissibility.",
-        "ta": "குடியரசுத் தலைவரின் வீட்டோ அதிகாரம் Adjournment Motion 50 Member Support Admissibility ஐ நிபந்தனையின்றி ரத்து செய்யலாம்."
+        "en": "Reasoning analysis demonstrates that Adjournment Motion 50 Member Support Admissibility mandates full compliance with parliamentary procedural checks.",
+        "ta": "காரணப் பகுப்பாய்வு Adjournment Motion 50 Member Support Admissibility நாடாளுமன்ற நடைமுறைச் சோதனைகளுக்கு முழுமையாக இணங்குவதைக் காட்டுகிறது."
       },
       {
         "id": "D",
-        "en": "Reasoning analysis demonstrates that Adjournment Motion 50 Member Support Admissibility mandates full compliance with parliamentary procedural checks.",
-        "ta": "காரணப் பகுப்பாய்வு Adjournment Motion 50 Member Support Admissibility நாடாளுமன்ற நடைமுறைச் சோதனைகளுக்கு முழுமையாக இணங்குவதைக் காட்டுகிறது."
+        "en": "Presidential veto can unconditionally nullify Adjournment Motion 50 Member Support Admissibility.",
+        "ta": "குடியரசுத் தலைவரின் வீட்டோ அதிகாரம் Adjournment Motion 50 Member Support Admissibility ஐ நிபந்தனையின்றி ரத்து செய்யலாம்."
       }
     ],
-    "correct_answer": "D",
+    "correct_answer": "C",
     "explanation": {
-      "en": "Reasoning analysis for Adjournment Motion 50 Member Support Admissibility: Option D accurately applies parliamentary law.",
-      "ta": "Adjournment Motion 50 Member Support Admissibility க்கான காரணப் பகுப்பாய்வு: விருப்பம் D நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
+      "en": "Reasoning analysis for Adjournment Motion 50 Member Support Admissibility: Option C accurately applies parliamentary law.",
+      "ta": "Adjournment Motion 50 Member Support Admissibility க்கான காரணப் பகுப்பாய்வு: விருப்பம் C நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
     },
     "why_not_others": {
       "A": {
@@ -1513,12 +1836,12 @@
         "ta": "விருப்பம் B தவறானது; மாநிலங்களவைக்கு வரையறுக்கப்பட்ட வாக்கு உரிமை உண்டு."
       },
       "C": {
-        "en": "Option C is incorrect; presidential veto power is bounded by constitutional limits.",
-        "ta": "விருப்பம் C தவறானது; வீட்டோ அதிகாரம் அரசியலமைப்பு வரம்புகளுக்கு உட்பட்டது."
-      },
-      "D": {
         "en": "Option D correctly highlights procedural compliance for Adjournment Motion 50 Member Support Admissibility.",
         "ta": "விருப்பம் D Adjournment Motion 50 Member Support Admissibility க்கான நடைமுறை இணக்கத்தைச் சரியாகச் சுட்டிக்காட்டுகிறது."
+      },
+      "D": {
+        "en": "Option C is incorrect; presidential veto power is bounded by constitutional limits.",
+        "ta": "விருப்பம் C தவறானது; வீட்டோ அதிகாரம் அரசியலமைப்பு வரம்புகளுக்கு உட்பட்டது."
       }
     },
     "tnpsc_tip": {
@@ -1541,7 +1864,24 @@
     "tags": [
       "Adjournment Motion 50 Member Support Admissibility",
       "Reasoning Application"
-    ]
+    ],
+    "question_en": "Which of the following best explains the parliamentary application regarding 'Adjournment Motion 50 Member Support Admissibility'?",
+    "question_ta": "நாடாளுமன்ற பயன்பாட்டில் 'Adjournment Motion 50 Member Support Admissibility' என்பதனைப் பின்வருவனவற்றில் எது மிகச்சரியாக விளக்குகிறது?",
+    "options_en": [
+      "Simple majority in Lok Sabha alone can permanently override Adjournment Motion 50 Member Support Admissibility.",
+      "Rajya Sabha has no voting power whatsoever regarding Adjournment Motion 50 Member Support Admissibility.",
+      "Reasoning analysis demonstrates that Adjournment Motion 50 Member Support Admissibility mandates full compliance with parliamentary procedural checks.",
+      "Presidential veto can unconditionally nullify Adjournment Motion 50 Member Support Admissibility."
+    ],
+    "options_ta": [
+      "மக்களவையில் எளிய பெரும்பான்மை மட்டுமே Adjournment Motion 50 Member Support Admissibility ஐ நிரந்தரமாக மேலோங்கலாம்.",
+      "Adjournment Motion 50 Member Support Admissibility தொடர்பாக மாநிலங்களவைக்கு எவ்வித வாக்குகளிக்கும் அதிகாரமும் இல்லை.",
+      "காரணப் பகுப்பாய்வு Adjournment Motion 50 Member Support Admissibility நாடாளுமன்ற நடைமுறைச் சோதனைகளுக்கு முழுமையாக இணங்குவதைக் காட்டுகிறது.",
+      "குடியரசுத் தலைவரின் வீட்டோ அதிகாரம் Adjournment Motion 50 Member Support Admissibility ஐ நிபந்தனையின்றி ரத்து செய்யலாம்."
+    ],
+    "answer": "c",
+    "explanation_en": "Reasoning analysis for Adjournment Motion 50 Member Support Admissibility: Option C accurately applies parliamentary law.",
+    "explanation_ta": "Adjournment Motion 50 Member Support Admissibility க்கான காரணப் பகுப்பாய்வு: விருப்பம் C நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
   },
   {
     "id": "CZ_PL_RS_021",
@@ -1556,8 +1896,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Reasoning analysis confirms that Estimates Committee 30 LS Member Exclusive Composition applies strictly under constitutional provisions.",
-        "ta": "காரணப் பகுப்பாய்வு Estimates Committee 30 LS Member Exclusive Composition அரசியலமைப்பு விதிகளின் கீழ் சரியாகப் பொருந்துகிறது என்பதை உறுதிப்படுத்துகிறது."
+        "en": "Rajya Sabha holds exclusive veto over Lok Sabha regarding Estimates Committee 30 LS Member Exclusive Composition.",
+        "ta": "மாநிலங்களவை Estimates Committee 30 LS Member Exclusive Composition தொடர்பாக மக்களவையை விட பிரத்தியேக வீட்டோ அதிகாரம் கொண்டுள்ளது."
       },
       {
         "id": "B",
@@ -1571,19 +1911,19 @@
       },
       {
         "id": "D",
-        "en": "Rajya Sabha holds exclusive veto over Lok Sabha regarding Estimates Committee 30 LS Member Exclusive Composition.",
-        "ta": "மாநிலங்களவை Estimates Committee 30 LS Member Exclusive Composition தொடர்பாக மக்களவையை விட பிரத்தியேக வீட்டோ அதிகாரம் கொண்டுள்ளது."
+        "en": "Reasoning analysis confirms that Estimates Committee 30 LS Member Exclusive Composition applies strictly under constitutional provisions.",
+        "ta": "காரணப் பகுப்பாய்வு Estimates Committee 30 LS Member Exclusive Composition அரசியலமைப்பு விதிகளின் கீழ் சரியாகப் பொருந்துகிறது என்பதை உறுதிப்படுத்துகிறது."
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "D",
     "explanation": {
-      "en": "Reasoning analysis for Estimates Committee 30 LS Member Exclusive Composition: Option A accurately applies parliamentary law.",
-      "ta": "Estimates Committee 30 LS Member Exclusive Composition க்கான காரணப் பகுப்பாய்வு: விருப்பம் A நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
+      "en": "Reasoning analysis for Estimates Committee 30 LS Member Exclusive Composition: Option D accurately applies parliamentary law.",
+      "ta": "Estimates Committee 30 LS Member Exclusive Composition க்கான காரணப் பகுப்பாய்வு: விருப்பம் D நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
     },
     "why_not_others": {
       "A": {
-        "en": "Option A correctly applies constitutional reasoning for Estimates Committee 30 LS Member Exclusive Composition.",
-        "ta": "விருப்பம் A Estimates Committee 30 LS Member Exclusive Composition க்கான அரசியலமைப்புக் காரணங்களைச் சரியாகப் பயன்படுத்துகிறது."
+        "en": "Option D is incorrect; Rajya Sabha does not hold exclusive veto in this context.",
+        "ta": "விருப்பம் D தவறானது; மாநிலங்களவைக்கு பிரத்தியேக வீட்டோ இல்லை."
       },
       "B": {
         "en": "Option B is incorrect; ordinary procedure cannot override constitutional rules.",
@@ -1594,8 +1934,8 @@
         "ta": "விருப்பம் C தவறானது; நிர்வாக ஆணை நாடாளுமன்ற அனுமதியைத் தவிர்க்க முடியாது."
       },
       "D": {
-        "en": "Option D is incorrect; Rajya Sabha does not hold exclusive veto in this context.",
-        "ta": "விருப்பம் D தவறானது; மாநிலங்களவைக்கு பிரத்தியேக வீட்டோ இல்லை."
+        "en": "Option A correctly applies constitutional reasoning for Estimates Committee 30 LS Member Exclusive Composition.",
+        "ta": "விருப்பம் A Estimates Committee 30 LS Member Exclusive Composition க்கான அரசியலமைப்புக் காரணங்களைச் சரியாகப் பயன்படுத்துகிறது."
       }
     },
     "tnpsc_tip": {
@@ -1618,7 +1958,24 @@
     "tags": [
       "Estimates Committee 30 LS Member Exclusive Composition",
       "Reasoning Application"
-    ]
+    ],
+    "question_en": "Which of the following best explains the parliamentary application regarding 'Estimates Committee 30 LS Member Exclusive Composition'?",
+    "question_ta": "நாடாளுமன்ற பயன்பாட்டில் 'Estimates Committee 30 LS Member Exclusive Composition' என்பதனைப் பின்வருவனவற்றில் எது மிகச்சரியாக விளக்குகிறது?",
+    "options_en": [
+      "Rajya Sabha holds exclusive veto over Lok Sabha regarding Estimates Committee 30 LS Member Exclusive Composition.",
+      "Ordinary legislative procedure overrides constitutional provisions regarding Estimates Committee 30 LS Member Exclusive Composition.",
+      "Executive order can bypass parliamentary authorization for Estimates Committee 30 LS Member Exclusive Composition.",
+      "Reasoning analysis confirms that Estimates Committee 30 LS Member Exclusive Composition applies strictly under constitutional provisions."
+    ],
+    "options_ta": [
+      "மாநிலங்களவை Estimates Committee 30 LS Member Exclusive Composition தொடர்பாக மக்களவையை விட பிரத்தியேக வீட்டோ அதிகாரம் கொண்டுள்ளது.",
+      "சாதாரண சட்டமன்ற நடைமுறை Estimates Committee 30 LS Member Exclusive Composition தொடர்பான அரசியலமைப்பு விதிகளை மேலோங்குகிறது.",
+      "நிர்வாக ஆணை Estimates Committee 30 LS Member Exclusive Composition க்கான நாடாளுமன்ற அனுமதியைத் தவிர்க்கலாம்.",
+      "காரணப் பகுப்பாய்வு Estimates Committee 30 LS Member Exclusive Composition அரசியலமைப்பு விதிகளின் கீழ் சரியாகப் பொருந்துகிறது என்பதை உறுதிப்படுத்துகிறது."
+    ],
+    "answer": "d",
+    "explanation_en": "Reasoning analysis for Estimates Committee 30 LS Member Exclusive Composition: Option D accurately applies parliamentary law.",
+    "explanation_ta": "Estimates Committee 30 LS Member Exclusive Composition க்கான காரணப் பகுப்பாய்வு: விருப்பம் D நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
   },
   {
     "id": "CZ_PL_RS_022",
@@ -1633,13 +1990,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Executive sanction is mandatory prior to initiating Public Accounts Committee PAC Opposition Chairman Tradition.",
-        "ta": "Public Accounts Committee PAC Opposition Chairman Tradition ஐத் தொடங்குவதற்கு முன் நிர்வாக அனுமதி கட்டாயம்."
+        "en": "Reasoning analysis affirms that Public Accounts Committee PAC Opposition Chairman Tradition operates in strict compliance with parliamentary law.",
+        "ta": "காரணப் பகுப்பாய்வு Public Accounts Committee PAC Opposition Chairman Tradition நாடாளுமன்றச் சட்டத்திற்கு இணங்கச் செயல்படுகிறது என்பதை உறுதிப்படுத்துகிறது."
       },
       {
         "id": "B",
-        "en": "Reasoning analysis affirms that Public Accounts Committee PAC Opposition Chairman Tradition operates in strict compliance with parliamentary law.",
-        "ta": "காரணப் பகுப்பாய்வு Public Accounts Committee PAC Opposition Chairman Tradition நாடாளுமன்றச் சட்டத்திற்கு இணங்கச் செயல்படுகிறது என்பதை உறுதிப்படுத்துகிறது."
+        "en": "Executive sanction is mandatory prior to initiating Public Accounts Committee PAC Opposition Chairman Tradition.",
+        "ta": "Public Accounts Committee PAC Opposition Chairman Tradition ஐத் தொடங்குவதற்கு முன் நிர்வாக அனுமதி கட்டாயம்."
       },
       {
         "id": "C",
@@ -1652,19 +2009,19 @@
         "ta": "Public Accounts Committee PAC Opposition Chairman Tradition பற்றி விவாதிப்பதற்கு முன் உச்ச நீதிமன்ற முன்-ஒப்புதல் தேவை."
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "A",
     "explanation": {
-      "en": "Reasoning analysis for Public Accounts Committee PAC Opposition Chairman Tradition: Option B accurately applies parliamentary law.",
-      "ta": "Public Accounts Committee PAC Opposition Chairman Tradition க்கான காரணப் பகுப்பாய்வு: விருப்பம் B நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
+      "en": "Reasoning analysis for Public Accounts Committee PAC Opposition Chairman Tradition: Option A accurately applies parliamentary law.",
+      "ta": "Public Accounts Committee PAC Opposition Chairman Tradition க்கான காரணப் பகுப்பாய்வு: விருப்பம் A நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
     },
     "why_not_others": {
       "A": {
-        "en": "Option A is incorrect; executive sanction is not required in this form.",
-        "ta": "விருப்பம் A தவறானது; நிர்வாக அனுமதி தேவையில்லை."
-      },
-      "B": {
         "en": "Option B correctly applies the parliamentary principle governing Public Accounts Committee PAC Opposition Chairman Tradition.",
         "ta": "விருப்பம் B Public Accounts Committee PAC Opposition Chairman Tradition ஐ ஆளும் நாடாளுமன்ற விதியைச் சரியாகப் பயன்படுத்துகிறது."
+      },
+      "B": {
+        "en": "Option A is incorrect; executive sanction is not required in this form.",
+        "ta": "விருப்பம் A தவறானது; நிர்வாக அனுமதி தேவையில்லை."
       },
       "C": {
         "en": "Option C is incorrect; quorum is mandatory for proceedings.",
@@ -1695,7 +2052,24 @@
     "tags": [
       "Public Accounts Committee PAC Opposition Chairman Tradition",
       "Reasoning Application"
-    ]
+    ],
+    "question_en": "Which of the following best explains the parliamentary application regarding 'Public Accounts Committee PAC Opposition Chairman Tradition'?",
+    "question_ta": "நாடாளுமன்ற பயன்பாட்டில் 'Public Accounts Committee PAC Opposition Chairman Tradition' என்பதனைப் பின்வருவனவற்றில் எது மிகச்சரியாக விளக்குகிறது?",
+    "options_en": [
+      "Reasoning analysis affirms that Public Accounts Committee PAC Opposition Chairman Tradition operates in strict compliance with parliamentary law.",
+      "Executive sanction is mandatory prior to initiating Public Accounts Committee PAC Opposition Chairman Tradition.",
+      "Simple majority without quorum is valid for Public Accounts Committee PAC Opposition Chairman Tradition.",
+      "Supreme Court prior approval is required before debating Public Accounts Committee PAC Opposition Chairman Tradition."
+    ],
+    "options_ta": [
+      "காரணப் பகுப்பாய்வு Public Accounts Committee PAC Opposition Chairman Tradition நாடாளுமன்றச் சட்டத்திற்கு இணங்கச் செயல்படுகிறது என்பதை உறுதிப்படுத்துகிறது.",
+      "Public Accounts Committee PAC Opposition Chairman Tradition ஐத் தொடங்குவதற்கு முன் நிர்வாக அனுமதி கட்டாயம்.",
+      "குறைவெண் இன்றி எளிய பெரும்பான்மை Public Accounts Committee PAC Opposition Chairman Tradition க்கு செல்லுபடியாகும்.",
+      "Public Accounts Committee PAC Opposition Chairman Tradition பற்றி விவாதிப்பதற்கு முன் உச்ச நீதிமன்ற முன்-ஒப்புதல் தேவை."
+    ],
+    "answer": "a",
+    "explanation_en": "Reasoning analysis for Public Accounts Committee PAC Opposition Chairman Tradition: Option A accurately applies parliamentary law.",
+    "explanation_ta": "Public Accounts Committee PAC Opposition Chairman Tradition க்கான காரணப் பகுப்பாய்வு: விருப்பம் A நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
   },
   {
     "id": "CZ_PL_RS_023",
@@ -1772,7 +2146,24 @@
     "tags": [
       "COPU Committee Membership Restrictions for Ministers",
       "Reasoning Application"
-    ]
+    ],
+    "question_en": "Which of the following best explains the parliamentary application regarding 'COPU Committee Membership Restrictions for Ministers'?",
+    "question_ta": "நாடாளுமன்ற பயன்பாட்டில் 'COPU Committee Membership Restrictions for Ministers' என்பதனைப் பின்வருவனவற்றில் எது மிகச்சரியாக விளக்குகிறது?",
+    "options_en": [
+      "Executive decrees can supersede parliamentary authority on COPU Committee Membership Restrictions for Ministers.",
+      "Rajya Sabha approval is sufficient without Lok Sabha vote for COPU Committee Membership Restrictions for Ministers.",
+      "Reasoning analysis confirms that COPU Committee Membership Restrictions for Ministers adheres strictly to constitutional limits and judicial scrutiny.",
+      "Article 108 permits automatic Joint Sitting for COPU Committee Membership Restrictions for Ministers in all circumstances."
+    ],
+    "options_ta": [
+      "நிர்வாக ஆணைகள் COPU Committee Membership Restrictions for Ministers தொடர்பான நாடாளுமன்ற அதிகாரத்தை மேலோங்கலாம்.",
+      "மக்களவை வாக்கெடுப்பு இன்றி மாநிலங்களவை ஒப்புதலே COPU Committee Membership Restrictions for Ministers க்கு போதுமானது.",
+      "காரணப் பகுப்பாய்வு COPU Committee Membership Restrictions for Ministers அரசியலமைப்பு வரம்புகள் மற்றும் நீதிமன்ற ஆய்விற்குட்பட்டது என்பதை உறுதிப்படுத்துகிறது.",
+      "சரத்து 108 அனைத்துச் சூழல்களிலும் COPU Committee Membership Restrictions for Ministers க்கு தானியங்கி கூட்டுக் கூட்டத்தை அனுமதிக்கிறது."
+    ],
+    "answer": "c",
+    "explanation_en": "Reasoning analysis for COPU Committee Membership Restrictions for Ministers: Option C accurately applies parliamentary law.",
+    "explanation_ta": "COPU Committee Membership Restrictions for Ministers க்கான காரணப் பகுப்பாய்வு: விருப்பம் C நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
   },
   {
     "id": "CZ_PL_RS_024",
@@ -1792,8 +2183,8 @@
       },
       {
         "id": "B",
-        "en": "Rajya Sabha has no voting power whatsoever regarding Rajya Sabha Special Power Article 312 AIJS Creation.",
-        "ta": "Rajya Sabha Special Power Article 312 AIJS Creation தொடர்பாக மாநிலங்களவைக்கு எவ்வித வாக்குகளிக்கும் அதிகாரமும் இல்லை."
+        "en": "Reasoning analysis demonstrates that Rajya Sabha Special Power Article 312 AIJS Creation mandates full compliance with parliamentary procedural checks.",
+        "ta": "காரணப் பகுப்பாய்வு Rajya Sabha Special Power Article 312 AIJS Creation நாடாளுமன்ற நடைமுறைச் சோதனைகளுக்கு முழுமையாக இணங்குவதைக் காட்டுகிறது."
       },
       {
         "id": "C",
@@ -1802,14 +2193,14 @@
       },
       {
         "id": "D",
-        "en": "Reasoning analysis demonstrates that Rajya Sabha Special Power Article 312 AIJS Creation mandates full compliance with parliamentary procedural checks.",
-        "ta": "காரணப் பகுப்பாய்வு Rajya Sabha Special Power Article 312 AIJS Creation நாடாளுமன்ற நடைமுறைச் சோதனைகளுக்கு முழுமையாக இணங்குவதைக் காட்டுகிறது."
+        "en": "Rajya Sabha has no voting power whatsoever regarding Rajya Sabha Special Power Article 312 AIJS Creation.",
+        "ta": "Rajya Sabha Special Power Article 312 AIJS Creation தொடர்பாக மாநிலங்களவைக்கு எவ்வித வாக்குகளிக்கும் அதிகாரமும் இல்லை."
       }
     ],
-    "correct_answer": "D",
+    "correct_answer": "B",
     "explanation": {
-      "en": "Reasoning analysis for Rajya Sabha Special Power Article 312 AIJS Creation: Option D accurately applies parliamentary law.",
-      "ta": "Rajya Sabha Special Power Article 312 AIJS Creation க்கான காரணப் பகுப்பாய்வு: விருப்பம் D நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
+      "en": "Reasoning analysis for Rajya Sabha Special Power Article 312 AIJS Creation: Option B accurately applies parliamentary law.",
+      "ta": "Rajya Sabha Special Power Article 312 AIJS Creation க்கான காரணப் பகுப்பாய்வு: விருப்பம் B நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
     },
     "why_not_others": {
       "A": {
@@ -1817,16 +2208,16 @@
         "ta": "விருப்பம் A தவறானது; மக்களவை எளிய பெரும்பான்மை மேலோங்க முடியாது."
       },
       "B": {
-        "en": "Option B is incorrect; Rajya Sabha possesses defined voting rights.",
-        "ta": "விருப்பம் B தவறானது; மாநிலங்களவைக்கு வரையறுக்கப்பட்ட வாக்கு உரிமை உண்டு."
+        "en": "Option D correctly highlights procedural compliance for Rajya Sabha Special Power Article 312 AIJS Creation.",
+        "ta": "விருப்பம் D Rajya Sabha Special Power Article 312 AIJS Creation க்கான நடைமுறை இணக்கத்தைச் சரியாகச் சுட்டிக்காட்டுகிறது."
       },
       "C": {
         "en": "Option C is incorrect; presidential veto power is bounded by constitutional limits.",
         "ta": "விருப்பம் C தவறானது; வீட்டோ அதிகாரம் அரசியலமைப்பு வரம்புகளுக்கு உட்பட்டது."
       },
       "D": {
-        "en": "Option D correctly highlights procedural compliance for Rajya Sabha Special Power Article 312 AIJS Creation.",
-        "ta": "விருப்பம் D Rajya Sabha Special Power Article 312 AIJS Creation க்கான நடைமுறை இணக்கத்தைச் சரியாகச் சுட்டிக்காட்டுகிறது."
+        "en": "Option B is incorrect; Rajya Sabha possesses defined voting rights.",
+        "ta": "விருப்பம் B தவறானது; மாநிலங்களவைக்கு வரையறுக்கப்பட்ட வாக்கு உரிமை உண்டு."
       }
     },
     "tnpsc_tip": {
@@ -1849,7 +2240,24 @@
     "tags": [
       "Rajya Sabha Special Power Article 312 AIJS Creation",
       "Reasoning Application"
-    ]
+    ],
+    "question_en": "Which of the following best explains the parliamentary application regarding 'Rajya Sabha Special Power Article 312 AIJS Creation'?",
+    "question_ta": "நாடாளுமன்ற பயன்பாட்டில் 'Rajya Sabha Special Power Article 312 AIJS Creation' என்பதனைப் பின்வருவனவற்றில் எது மிகச்சரியாக விளக்குகிறது?",
+    "options_en": [
+      "Simple majority in Lok Sabha alone can permanently override Rajya Sabha Special Power Article 312 AIJS Creation.",
+      "Reasoning analysis demonstrates that Rajya Sabha Special Power Article 312 AIJS Creation mandates full compliance with parliamentary procedural checks.",
+      "Presidential veto can unconditionally nullify Rajya Sabha Special Power Article 312 AIJS Creation.",
+      "Rajya Sabha has no voting power whatsoever regarding Rajya Sabha Special Power Article 312 AIJS Creation."
+    ],
+    "options_ta": [
+      "மக்களவையில் எளிய பெரும்பான்மை மட்டுமே Rajya Sabha Special Power Article 312 AIJS Creation ஐ நிரந்தரமாக மேலோங்கலாம்.",
+      "காரணப் பகுப்பாய்வு Rajya Sabha Special Power Article 312 AIJS Creation நாடாளுமன்ற நடைமுறைச் சோதனைகளுக்கு முழுமையாக இணங்குவதைக் காட்டுகிறது.",
+      "குடியரசுத் தலைவரின் வீட்டோ அதிகாரம் Rajya Sabha Special Power Article 312 AIJS Creation ஐ நிபந்தனையின்றி ரத்து செய்யலாம்.",
+      "Rajya Sabha Special Power Article 312 AIJS Creation தொடர்பாக மாநிலங்களவைக்கு எவ்வித வாக்குகளிக்கும் அதிகாரமும் இல்லை."
+    ],
+    "answer": "b",
+    "explanation_en": "Reasoning analysis for Rajya Sabha Special Power Article 312 AIJS Creation: Option B accurately applies parliamentary law.",
+    "explanation_ta": "Rajya Sabha Special Power Article 312 AIJS Creation க்கான காரணப் பகுப்பாய்வு: விருப்பம் B நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
   },
   {
     "id": "CZ_PL_RS_025",
@@ -1864,8 +2272,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Executive decrees can supersede parliamentary authority on Constitutional Amendment Bill Exclusion from Joint Sitting.",
-        "ta": "நிர்வாக ஆணைகள் Constitutional Amendment Bill Exclusion from Joint Sitting தொடர்பான நாடாளுமன்ற அதிகாரத்தை மேலோங்கலாம்."
+        "en": "Reasoning analysis confirms that Constitutional Amendment Bill Exclusion from Joint Sitting adheres strictly to constitutional limits and judicial scrutiny.",
+        "ta": "காரணப் பகுப்பாய்வு Constitutional Amendment Bill Exclusion from Joint Sitting அரசியலமைப்பு வரம்புகள் மற்றும் நீதிமன்ற ஆய்விற்குட்பட்டது என்பதை உறுதிப்படுத்துகிறது."
       },
       {
         "id": "B",
@@ -1874,8 +2282,8 @@
       },
       {
         "id": "C",
-        "en": "Reasoning analysis confirms that Constitutional Amendment Bill Exclusion from Joint Sitting adheres strictly to constitutional limits and judicial scrutiny.",
-        "ta": "காரணப் பகுப்பாய்வு Constitutional Amendment Bill Exclusion from Joint Sitting அரசியலமைப்பு வரம்புகள் மற்றும் நீதிமன்ற ஆய்விற்குட்பட்டது என்பதை உறுதிப்படுத்துகிறது."
+        "en": "Executive decrees can supersede parliamentary authority on Constitutional Amendment Bill Exclusion from Joint Sitting.",
+        "ta": "நிர்வாக ஆணைகள் Constitutional Amendment Bill Exclusion from Joint Sitting தொடர்பான நாடாளுமன்ற அதிகாரத்தை மேலோங்கலாம்."
       },
       {
         "id": "D",
@@ -1883,23 +2291,23 @@
         "ta": "சரத்து 108 அனைத்துச் சூழல்களிலும் Constitutional Amendment Bill Exclusion from Joint Sitting க்கு தானியங்கி கூட்டுக் கூட்டத்தை அனுமதிக்கிறது."
       }
     ],
-    "correct_answer": "C",
+    "correct_answer": "A",
     "explanation": {
-      "en": "Reasoning analysis for Constitutional Amendment Bill Exclusion from Joint Sitting: Option C accurately applies parliamentary law.",
-      "ta": "Constitutional Amendment Bill Exclusion from Joint Sitting க்கான காரணப் பகுப்பாய்வு: விருப்பம் C நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
+      "en": "Reasoning analysis for Constitutional Amendment Bill Exclusion from Joint Sitting: Option A accurately applies parliamentary law.",
+      "ta": "Constitutional Amendment Bill Exclusion from Joint Sitting க்கான காரணப் பகுப்பாய்வு: விருப்பம் A நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
     },
     "why_not_others": {
       "A": {
-        "en": "Option A is incorrect; executive decrees cannot supersede parliamentary authority.",
-        "ta": "விருப்பம் A தவறானது; நிர்வாக ஆணைகள் அதிகாரத்தை மேலோங்க முடியாது."
+        "en": "Option C correctly captures the constitutional application regarding Constitutional Amendment Bill Exclusion from Joint Sitting.",
+        "ta": "விருப்பம் C Constitutional Amendment Bill Exclusion from Joint Sitting சுற்றியுள்ள அரசியலமைப்பு பயன்பாட்டைச் சரியாகப் பிரதிபலிக்கிறது."
       },
       "B": {
         "en": "Option B is incorrect; Lok Sabha vote is essential.",
         "ta": "விருப்பம் B தவறானது; மக்களவை வாக்கெடுப்பு அத்தியாவசியமானது."
       },
       "C": {
-        "en": "Option C correctly captures the constitutional application regarding Constitutional Amendment Bill Exclusion from Joint Sitting.",
-        "ta": "விருப்பம் C Constitutional Amendment Bill Exclusion from Joint Sitting சுற்றியுள்ள அரசியலமைப்பு பயன்பாட்டைச் சரியாகப் பிரதிபலிக்கிறது."
+        "en": "Option A is incorrect; executive decrees cannot supersede parliamentary authority.",
+        "ta": "விருப்பம் A தவறானது; நிர்வாக ஆணைகள் அதிகாரத்தை மேலோங்க முடியாது."
       },
       "D": {
         "en": "Option D is incorrect; automatic joint sitting is not applicable in all circumstances.",
@@ -1926,6 +2334,23 @@
     "tags": [
       "Constitutional Amendment Bill Exclusion from Joint Sitting",
       "Reasoning Application"
-    ]
+    ],
+    "question_en": "Which of the following best explains the parliamentary application regarding 'Constitutional Amendment Bill Exclusion from Joint Sitting'?",
+    "question_ta": "நாடாளுமன்ற பயன்பாட்டில் 'Constitutional Amendment Bill Exclusion from Joint Sitting' என்பதனைப் பின்வருவனவற்றில் எது மிகச்சரியாக விளக்குகிறது?",
+    "options_en": [
+      "Reasoning analysis confirms that Constitutional Amendment Bill Exclusion from Joint Sitting adheres strictly to constitutional limits and judicial scrutiny.",
+      "Rajya Sabha approval is sufficient without Lok Sabha vote for Constitutional Amendment Bill Exclusion from Joint Sitting.",
+      "Executive decrees can supersede parliamentary authority on Constitutional Amendment Bill Exclusion from Joint Sitting.",
+      "Article 108 permits automatic Joint Sitting for Constitutional Amendment Bill Exclusion from Joint Sitting in all circumstances."
+    ],
+    "options_ta": [
+      "காரணப் பகுப்பாய்வு Constitutional Amendment Bill Exclusion from Joint Sitting அரசியலமைப்பு வரம்புகள் மற்றும் நீதிமன்ற ஆய்விற்குட்பட்டது என்பதை உறுதிப்படுத்துகிறது.",
+      "மக்களவை வாக்கெடுப்பு இன்றி மாநிலங்களவை ஒப்புதலே Constitutional Amendment Bill Exclusion from Joint Sitting க்கு போதுமானது.",
+      "நிர்வாக ஆணைகள் Constitutional Amendment Bill Exclusion from Joint Sitting தொடர்பான நாடாளுமன்ற அதிகாரத்தை மேலோங்கலாம்.",
+      "சரத்து 108 அனைத்துச் சூழல்களிலும் Constitutional Amendment Bill Exclusion from Joint Sitting க்கு தானியங்கி கூட்டுக் கூட்டத்தை அனுமதிக்கிறது."
+    ],
+    "answer": "a",
+    "explanation_en": "Reasoning analysis for Constitutional Amendment Bill Exclusion from Joint Sitting: Option A accurately applies parliamentary law.",
+    "explanation_ta": "Constitutional Amendment Bill Exclusion from Joint Sitting க்கான காரணப் பகுப்பாய்வு: விருப்பம் A நாடாளுமன்றச் சட்டத்தைச் சரியாகப் பயன்படுத்துகிறது."
   }
 ]

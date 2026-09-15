@@ -15,13 +15,13 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "B",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "C",
@@ -35,19 +35,19 @@
       }
     ],
     "options_en": [
-      "1 and 2 only",
       "1 and 3 only",
+      "1 and 2 only",
       "2 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
+      "1 மற்றும் 2 மட்டுமே",
       "2 மற்றும் 3 மட்டுமே",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Statements 1 and 3 are correct. Statement 2 is incorrect because the court struck down the amendment to Section 182 of the Companies Act that had removed the 7.5% profit cap on corporate donations, holding it to be manifestly arbitrary and violative of Article 14.",
       "ta": "கூற்றுகள் 1 மற்றும் 3 சரியானவை. கூற்று 2 தவறானது; ஏனெனில் கம்பெனிகள் சட்டம் பிரிவு 182-ல் கார்ப்பரேட் நன்கொடைகளுக்கான 7.5% லாப வரம்பை நீக்கிய திருத்தத்தை தன்னிச்சையானது மற்றும் சரத்து 14-க்கு எதிரானது எனக் கூறி உச்ச நீதிமன்றம் ரத்து செய்தது."
@@ -56,12 +56,12 @@
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 3 சரியானவை. கூற்று 2 தவறானது; ஏனெனில் கம்பெனிகள் சட்டம் பிரிவு 182-ல் கார்ப்பரேட் நன்கொடைகளுக்கான 7.5% லாப வரம்பை நீக்கிய திருத்தத்தை தன்னிச்சையானது மற்றும் சரத்து 14-க்கு எதிரானது எனக் கூறி உச்ச நீதிமன்றம் ரத்து செய்தது.",
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Statement 2 is false as the corporate amendment was struck down.",
-        "ta": "தவறானது. கூற்று 2 தவறானது."
-      },
-      "B": {
         "en": "Correct. Statements 1 and 3 accurately describe the February 2024 verdict.",
         "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 3 பிப்ரவரி 2024 தீர்ப்பை சரியாக விவரிக்கின்றன."
+      },
+      "B": {
+        "en": "Incorrect. Statement 2 is false as the corporate amendment was struck down.",
+        "ta": "தவறானது. கூற்று 2 தவறானது."
       },
       "C": {
         "en": "Incorrect. Statement 2 is false.",
@@ -220,8 +220,8 @@
       },
       {
         "id": "B",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "C",
@@ -230,24 +230,24 @@
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       }
     ],
     "options_en": [
       "2 and 3 only",
-      "1 and 2 only",
+      "1, 2 and 3",
       "1 and 3 only",
-      "1, 2 and 3"
+      "1 and 2 only"
     ],
     "options_ta": [
       "2 மற்றும் 3 மட்டுமே",
-      "1 மற்றும் 2 மட்டுமே",
+      "1, 2 மற்றும் 3",
       "1 மற்றும் 3 மட்டுமே",
-      "1, 2 மற்றும் 3"
+      "1 மற்றும் 2 மட்டுமே"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because in Lok Prahari v. ECI (2018), the Supreme Court clarified that a stay of CONVICTION by an appellate court removes the disqualification under Section 8 of RPA 1951, restoring their legislative seat.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது; ஏனெனில் லோக் பிரஹாரி (2018) வழக்கில், குற்றத்தீர்ப்பிற்கு (Stay of conviction) தடை விதிக்கப்பட்டால் தகுதிநீக்கம் நீக்கப்பட்டு அவரது பதவி மீண்டும் மீட்டெடுக்கப்படும் என தெளிவுபடுத்தப்பட்டது."
@@ -260,16 +260,16 @@
         "ta": "தவறானது. கூற்று 3 தவறு."
       },
       "B": {
-        "en": "Correct. Statements 1 and 2 are true; statement 3 is incorrect.",
-        "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 2 சரி; கூற்று 3 தவறு."
+        "en": "Incorrect. Statement 3 is incorrect.",
+        "ta": "தவறானது. கூற்று 3 தவறு."
       },
       "C": {
         "en": "Incorrect. Statement 3 is incorrect.",
         "ta": "தவறானது. கூற்று 3 தவறு."
       },
       "D": {
-        "en": "Incorrect. Statement 3 is incorrect.",
-        "ta": "தவறானது. கூற்று 3 தவறு."
+        "en": "Correct. Statements 1 and 2 are true; statement 3 is incorrect.",
+        "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 2 சரி; கூற்று 3 தவறு."
       }
     },
     "tnpsc_tip": {
@@ -320,13 +320,13 @@
       },
       {
         "id": "B",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டுமே"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "C",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டுமே"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "D",
@@ -336,18 +336,18 @@
     ],
     "options_en": [
       "1 and 2 only",
-      "1 and 3 only",
       "2 and 3 only",
+      "1 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
       "1 மற்றும் 2 மட்டுமே",
-      "1 மற்றும் 3 மட்டுமே",
       "2 மற்றும் 3 மட்டுமே",
+      "1 மற்றும் 3 மட்டுமே",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Pairs 1 and 3 are correctly matched. Pair 2 is incorrectly matched because the Indrajit Gupta Committee strictly rejected cash funding and explicitly excluded independent candidates, recommending state funding ONLY in kind and ONLY to recognized political parties.",
       "ta": "இணைகள் 1 மற்றும் 3 சரியாகப் பொருந்தியுள்ளன. இணை 2 தவறானது; ஏனெனில் இந்திரஜித் குப்தா குழு ரொக்க நிதியுதவியையும், சுயேச்சை வேட்பாளர்களையும் திட்டவட்டமாக நிராகரித்து, அங்கீகரிக்கப்பட்ட கட்சிகளுக்கு மட்டும் பொருளுதவி வடிவில் நிதியளிக்க பரிந்துரைத்தது."
@@ -360,12 +360,12 @@
         "ta": "தவறானது. இணை 2 தவறு."
       },
       "B": {
-        "en": "Correct. Pairs 1 and 3 are historically accurate; Pair 2 is false.",
-        "ta": "சரியானது. இணைகள் 1 மற்றும் 3 சரி; இணை 2 தவறு."
-      },
-      "C": {
         "en": "Incorrect. Pair 2 is incorrect.",
         "ta": "தவறானது. இணை 2 தவறு."
+      },
+      "C": {
+        "en": "Correct. Pairs 1 and 3 are historically accurate; Pair 2 is false.",
+        "ta": "சரியானது. இணைகள் 1 மற்றும் 3 சரி; இணை 2 தவறு."
       },
       "D": {
         "en": "Incorrect. Pair 2 is incorrect.",
@@ -421,13 +421,13 @@
       },
       {
         "id": "B",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "C",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "D",
@@ -437,18 +437,18 @@
     ],
     "options_en": [
       "2 and 3 only",
-      "1 and 2 only",
       "1 and 3 only",
+      "1 and 2 only",
       "1, 2 and 3"
     ],
     "options_ta": [
       "2 மற்றும் 3 மட்டுமே",
-      "1 மற்றும் 2 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
+      "1 மற்றும் 2 மட்டுமே",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because under Article 334A, the reservation will take effect only after a delimitation exercise is conducted based on the first population census published after the commencement of the Act. Hence, it was not operational in the 2024 elections.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது; ஏனெனில் சரத்து 334A-ன் படி, இச்சட்டம் நடைமுறைக்கு வந்த பின் எடுக்கப்படும் முதல் மக்கள் தொகை கணக்கெடுப்பின் அடிப்படையில் தொகுதி மறுவரையறை செய்யப்பட்ட பிறகே இது நடைமுறைக்கு வரும். எனவே 2024 தேர்தலில் இது அமலாகவில்லை."
@@ -461,12 +461,12 @@
         "ta": "தவறானது. கூற்று 3 தவறு."
       },
       "B": {
-        "en": "Correct. Statements 1 and 2 are true; statement 3 is false.",
-        "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 2 உண்மை; கூற்று 3 தவறு."
-      },
-      "C": {
         "en": "Incorrect. Statement 3 is false.",
         "ta": "தவறானது. கூற்று 3 தவறு."
+      },
+      "C": {
+        "en": "Correct. Statements 1 and 2 are true; statement 3 is false.",
+        "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 2 உண்மை; கூற்று 3 தவறு."
       },
       "D": {
         "en": "Incorrect. Statement 3 is false.",
@@ -618,13 +618,13 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "B",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "C",
@@ -638,19 +638,19 @@
       }
     ],
     "options_en": [
-      "1 and 2 only",
       "1 and 3 only",
+      "1 and 2 only",
       "2 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
+      "1 மற்றும் 2 மட்டுமே",
       "2 மற்றும் 3 மட்டுமே",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Statements 1 and 3 are correct. Statement 2 is incorrect because the linking of Aadhaar with electoral rolls (Form 6B) is purely VOLUNTARY. The law explicitly provides that no person's name shall be deleted or omitted from the electoral roll for failure to submit an Aadhaar number.",
       "ta": "கூற்றுகள் 1 மற்றும் 3 சரியானவை. கூற்று 2 தவறானது; ஏனெனில் ஆதார் எண்ணை வாக்காளர் பட்டியலுடன் இணைப்பது (படிவம் 6B) முற்றிலும் தன்னார்வமானது (Voluntary). ஆதார் எண் தராத காரணத்திற்காக வாக்காளர் பட்டியலில் இருந்து பெயர் நீக்கப்படக் கூடாது என சட்டம் தெளிவாகக் கூறுகிறது."
@@ -659,12 +659,12 @@
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 3 சரியானவை. கூற்று 2 தவறானது; ஏனெனில் ஆதார் எண்ணை வாக்காளர் பட்டியலுடன் இணைப்பது (படிவம் 6B) முற்றிலும் தன்னார்வமானது (Voluntary). ஆதார் எண் தராத காரணத்திற்காக வாக்காளர் பட்டியலில் இருந்து பெயர் நீக்கப்படக் கூடாது என சட்டம் தெளிவாகக் கூறுகிறது.",
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Statement 2 is false as Aadhaar linking is voluntary.",
-        "ta": "தவறானது. ஆதார் இணைப்பு கட்டாயமல்ல."
-      },
-      "B": {
         "en": "Correct. Statements 1 and 3 are true; statement 2 is false.",
         "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 3 உண்மை; கூற்று 2 தவறு."
+      },
+      "B": {
+        "en": "Incorrect. Statement 2 is false as Aadhaar linking is voluntary.",
+        "ta": "தவறானது. ஆதார் இணைப்பு கட்டாயமல்ல."
       },
       "C": {
         "en": "Incorrect. Statement 2 is false.",
@@ -719,13 +719,13 @@
     "options": [
       {
         "id": "A",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "B",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "C",
@@ -739,19 +739,19 @@
       }
     ],
     "options_en": [
-      "2 and 3 only",
       "1 and 2 only",
+      "2 and 3 only",
       "1 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
-      "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 2 மட்டுமே",
+      "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because although the original draft Bill sought to equate their salary with the Cabinet Secretary, Parliament amended it during passage to maintain their salary, perks, and conditions of service equal to a Judge of the Supreme Court under Section 8 of the enacted Act.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது; ஏனெனில் மசோதாவின் ஆரம்ப வரைவில் கேபினட் செயலாளருக்கு சமமாக ஊதியம் குறைக்க முன்மொழியப்பட்ட போதிலும், நாடாளுமன்றத்தில் நிறைவேற்றப்பட்ட இறுதிச் சட்டத்தில் உச்ச நீதிமன்ற நீதிபதிக்கு இணையான ஊதியம் மற்றும் அந்தஸ்தே நீட்டிக்கப்பட்டது."
@@ -760,12 +760,12 @@
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது; ஏனெனில் மசோதாவின் ஆரம்ப வரைவில் கேபினட் செயலாளருக்கு சமமாக ஊதியம் குறைக்க முன்மொழியப்பட்ட போதிலும், நாடாளுமன்றத்தில் நிறைவேற்றப்பட்ட இறுதிச் சட்டத்தில் உச்ச நீதிமன்ற நீதிபதிக்கு இணையான ஊதியம் மற்றும் அந்தஸ்தே நீட்டிக்கப்பட்டது.",
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Statement 3 is false.",
-        "ta": "தவறானது. கூற்று 3 தவறு."
-      },
-      "B": {
         "en": "Correct. Statements 1 and 2 are true; statement 3 is false.",
         "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 2 உண்மை; கூற்று 3 தவறு."
+      },
+      "B": {
+        "en": "Incorrect. Statement 3 is false.",
+        "ta": "தவறானது. கூற்று 3 தவறு."
       },
       "C": {
         "en": "Incorrect. Statement 3 is false.",
@@ -926,8 +926,8 @@
       },
       {
         "id": "B",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "C",
@@ -936,24 +936,24 @@
       },
       {
         "id": "D",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       }
     ],
     "options_en": [
       "1 and 2 only",
-      "1, 2 and 3",
+      "1 and 3 only",
       "2 and 3 only",
-      "1 and 3 only"
+      "1, 2 and 3"
     ],
     "options_ta": [
       "1 மற்றும் 2 மட்டுமே",
-      "1, 2 மற்றும் 3",
+      "1 மற்றும் 3 மட்டுமே",
       "2 மற்றும் 3 மட்டுமே",
-      "1 மற்றும் 3 மட்டுமே"
+      "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "All three statements are correct. Paragraph 2(3) disqualifies nominated members who join a party after 6 months; Paragraph 2(2) disqualifies independent members who join ANY party after election; and Kihoto Hollohan (1992) struck down Paragraph 7 to establish judicial review over the Speaker.",
       "ta": "மூன்று கூற்றுகளும் சரியானவை. பத்தி 2(3)-ன் படி நியமன உறுப்பினர் 6 மாதத்திற்குப் பின் கட்சியில் சேர்ந்தால் தகுதிநீக்கம் செய்யப்படுவார்; பத்தி 2(2)-ன் படி சுயேச்சை உறுப்பினர் கட்சியில் சேர்ந்தால் தகுதிநீக்கம் செய்யப்படுவார்; கிகோட்டோ வழக்கில் பத்தி 7 ரத்து செய்யப்பட்டு நீதிப் புனராய்வு நிலைநாட்டப்பட்டது."
@@ -966,16 +966,16 @@
         "ta": "தவறானது. கூற்று 3-ம் சரியானது."
       },
       "B": {
-        "en": "Correct. All three statements are accurate legal provisions of the 10th Schedule.",
-        "ta": "சரியானது. மூன்று கூற்றுகளும் பத்தாவது அட்டவணையின் துல்லியமான சட்ட விதிகள்."
+        "en": "Incorrect. Statement 2 is also correct.",
+        "ta": "தவறானது. கூற்று 2-ம் சரியானது."
       },
       "C": {
         "en": "Incorrect. Statement 1 is also correct.",
         "ta": "தவறானது. கூற்று 1-ம் சரியானது."
       },
       "D": {
-        "en": "Incorrect. Statement 2 is also correct.",
-        "ta": "தவறானது. கூற்று 2-ம் சரியானது."
+        "en": "Correct. All three statements are accurate legal provisions of the 10th Schedule.",
+        "ta": "சரியானது. மூன்று கூற்றுகளும் பத்தாவது அட்டவணையின் துல்லியமான சட்ட விதிகள்."
       }
     },
     "tnpsc_tip": {
@@ -1022,13 +1022,13 @@
     "options": [
       {
         "id": "A",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "B",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "C",
@@ -1042,19 +1042,19 @@
       }
     ],
     "options_en": [
-      "2 and 3 only",
       "1 and 2 only",
+      "2 and 3 only",
       "1 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
-      "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 2 மட்டுமே",
+      "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because proviso (b) to Section 123(2) explicitly protects declarations of public policy and promises of public action from being treated as undue influence.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது; ஏனெனில் பிரிவு 123(2) வரம்புரை (b), பொதுக் கொள்கை அறிவிப்புகள் அல்லது மக்கள் நல திட்ட வாக்குறுதிகள் தவறான செல்வாக்காகக் கருதப்படாது என விலக்களிக்கிறது."
@@ -1063,12 +1063,12 @@
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது; ஏனெனில் பிரிவு 123(2) வரம்புரை (b), பொதுக் கொள்கை அறிவிப்புகள் அல்லது மக்கள் நல திட்ட வாக்குறுதிகள் தவறான செல்வாக்காகக் கருதப்படாது என விலக்களிக்கிறது.",
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Statement 3 is false.",
-        "ta": "தவறானது. கூற்று 3 தவறு."
-      },
-      "B": {
         "en": "Correct. Statements 1 and 2 are true; statement 3 is explicitly exempted by statute.",
         "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 2 உண்மை; கூற்று 3 சட்டப்படி விலக்கு பெற்றது."
+      },
+      "B": {
+        "en": "Incorrect. Statement 3 is false.",
+        "ta": "தவறானது. கூற்று 3 தவறு."
       },
       "C": {
         "en": "Incorrect. Statement 3 is false.",
@@ -1123,13 +1123,13 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "B",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "C",
@@ -1143,19 +1143,19 @@
       }
     ],
     "options_en": [
-      "1 and 2 only",
       "1 and 3 only",
+      "1 and 2 only",
       "2 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
+      "1 மற்றும் 2 மட்டுமே",
       "2 மற்றும் 3 மட்டுமே",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Statements 1 and 3 are correct. Statement 2 is incorrect because the MCC has NO statutory backing; it is not an Act of Parliament, but a voluntary code enforced through ECI's constitutional powers under Article 324.",
       "ta": "கூற்றுகள் 1 மற்றும் 3 சரியானவை. கூற்று 2 தவறானது; ஏனெனில் MCC-க்கு சட்டப்பூர்வ அந்தஸ்து இல்லை. இது நாடாளுமன்ற சட்டம் அல்ல; சரத்து 324-ன் கீழ் ECI-ன் அதிகாரத்தால் அமல்படுத்தப்படும் நிர்வாக நடத்தை நெறியாகும்."
@@ -1164,12 +1164,12 @@
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 3 சரியானவை. கூற்று 2 தவறானது; ஏனெனில் MCC-க்கு சட்டப்பூர்வ அந்தஸ்து இல்லை. இது நாடாளுமன்ற சட்டம் அல்ல; சரத்து 324-ன் கீழ் ECI-ன் அதிகாரத்தால் அமல்படுத்தப்படும் நிர்வாக நடத்தை நெறியாகும்.",
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Statement 2 is false as MCC is non-statutory.",
-        "ta": "தவறானது. MCC சட்டப்பூர்வமானது அல்ல."
-      },
-      "B": {
         "en": "Correct. Statements 1 and 3 are true; statement 2 is false.",
         "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 3 உண்மை; கூற்று 2 தவறு."
+      },
+      "B": {
+        "en": "Incorrect. Statement 2 is false as MCC is non-statutory.",
+        "ta": "தவறானது. MCC சட்டப்பூர்வமானது அல்ல."
       },
       "C": {
         "en": "Incorrect. Statement 2 is false.",
@@ -1229,13 +1229,13 @@
       },
       {
         "id": "B",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "C",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "D",
@@ -1245,18 +1245,18 @@
     ],
     "options_en": [
       "2 and 3 only",
-      "1 and 2 only",
       "1 and 3 only",
+      "1 and 2 only",
       "1, 2 and 3"
     ],
     "options_ta": [
       "2 மற்றும் 3 மட்டுமே",
-      "1 மற்றும் 2 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
+      "1 மற்றும் 2 மட்டுமே",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because under Section 62(5) of RPA 1951, all persons confined in prison (whether convicted or undertrials) or in lawful police custody are completely barred from voting; only persons under PREVENTIVE detention can vote via postal ballot.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது; ஏனெனில் பிரிவு 62(5)-ன் படி, சிறையிலுள்ள விசாரணைக் கைதிகளுக்கும் வாக்களிக்க முழு தடை உள்ளது. தடுப்புக் காவலில் (Preventive detention) உள்ளவர்களுக்கு மட்டுமே தபால் வாக்கு வசதி உண்டு."
@@ -1269,12 +1269,12 @@
         "ta": "தவறானது. கூற்று 3 தவறு."
       },
       "B": {
-        "en": "Correct. Statements 1 and 2 are true; statement 3 is legally false.",
-        "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 2 உண்மை; கூற்று 3 சட்டப்படி தவறு."
-      },
-      "C": {
         "en": "Incorrect. Statement 3 is false.",
         "ta": "தவறானது. கூற்று 3 தவறு."
+      },
+      "C": {
+        "en": "Correct. Statements 1 and 2 are true; statement 3 is legally false.",
+        "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 2 உண்மை; கூற்று 3 சட்டப்படி தவறு."
       },
       "D": {
         "en": "Incorrect. Statement 3 is false.",
@@ -1330,13 +1330,13 @@
       },
       {
         "id": "B",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "C",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "D",
@@ -1346,18 +1346,18 @@
     ],
     "options_en": [
       "1 and 3 only",
-      "2 and 3 only",
       "1 and 2 only",
+      "2 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
       "1 மற்றும் 3 மட்டுமே",
-      "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 2 மட்டுமே",
+      "2 மற்றும் 3 மட்டுமே",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because under Section 11 of RPA 1951, the power to remove or reduce any disqualification under Section 10A is vested directly in the ELECTION COMMISSION, not the President.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது; ஏனெனில் பிரிவு 11-ன் கீழ் தகுதிநீக்கத்தை நீக்க அல்லது அதன் காலத்தைக் குறைக்க தேர்தல் ஆணையத்திற்கே (ECI) முழு அதிகாரம் உண்டு, குடியரசுத் தலைவருக்கு அல்ல."
@@ -1370,12 +1370,12 @@
         "ta": "தவறானது. கூற்று 3 தவறு."
       },
       "B": {
-        "en": "Incorrect. Statement 3 is false.",
-        "ta": "தவறானது. கூற்று 3 தவறு."
-      },
-      "C": {
         "en": "Correct. Statements 1 and 2 are true; statement 3 is false.",
         "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 2 உண்மை; கூற்று 3 தவறு."
+      },
+      "C": {
+        "en": "Incorrect. Statement 3 is false.",
+        "ta": "தவறானது. கூற்று 3 தவறு."
       },
       "D": {
         "en": "Incorrect. Statement 3 is false.",
@@ -1426,8 +1426,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "B",
@@ -1436,8 +1436,8 @@
       },
       {
         "id": "C",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "D",
@@ -1446,19 +1446,19 @@
       }
     ],
     "options_en": [
-      "1 and 3 only",
-      "2 and 3 only",
       "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
-      "1 மற்றும் 3 மட்டுமே",
-      "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 2 மட்டுமே",
+      "2 மற்றும் 3 மட்டுமே",
+      "1 மற்றும் 3 மட்டுமே",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because the Supreme Court in that very judgment held that ECI has NO general statutory power to deregister a political party once registered, except in 3 narrow exceptions (fraud, self-dissolution, or disloyalty to Constitution).",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது; ஏனெனில் 2002 காங்கிரஸ் வழக்கில், 3 அரிய விதிவிலக்குகள் தவிர கட்சிகளின் பதிவை ரத்து செய்ய தேர்தல் ஆணையத்திற்கு பொதுவான சட்ட அதிகாரம் இல்லை என்றே உச்ச நீதிமன்றம் தீர்ப்பளித்தது."
@@ -1467,16 +1467,16 @@
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது; ஏனெனில் 2002 காங்கிரஸ் வழக்கில், 3 அரிய விதிவிலக்குகள் தவிர கட்சிகளின் பதிவை ரத்து செய்ய தேர்தல் ஆணையத்திற்கு பொதுவான சட்ட அதிகாரம் இல்லை என்றே உச்ச நீதிமன்றம் தீர்ப்பளித்தது.",
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Statement 3 is false.",
-        "ta": "தவறானது. கூற்று 3 தவறு."
+        "en": "Correct. Statements 1 and 2 are true; statement 3 is the opposite of the court ruling.",
+        "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 2 உண்மை; கூற்று 3 நீதிமன்ற தீர்ப்பிற்கு எதிரானது."
       },
       "B": {
         "en": "Incorrect. Statement 3 is false.",
         "ta": "தவறானது. கூற்று 3 தவறு."
       },
       "C": {
-        "en": "Correct. Statements 1 and 2 are true; statement 3 is the opposite of the court ruling.",
-        "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 2 உண்மை; கூற்று 3 நீதிமன்ற தீர்ப்பிற்கு எதிரானது."
+        "en": "Incorrect. Statement 3 is false.",
+        "ta": "தவறானது. கூற்று 3 தவறு."
       },
       "D": {
         "en": "Incorrect. Statement 3 is false.",
@@ -1532,13 +1532,13 @@
       },
       {
         "id": "B",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "C",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "D",
@@ -1548,18 +1548,18 @@
     ],
     "options_en": [
       "1 and 3 only",
-      "2 and 3 only",
       "1 and 2 only",
+      "2 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
       "1 மற்றும் 3 மட்டுமே",
-      "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 2 மட்டுமே",
+      "2 மற்றும் 3 மட்டுமே",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because the Second ARC (4th Report, Ethics in Governance) actually RECOMMENDED partial state funding of elections to reduce the illegitimate use of black money, rather than opposing state funding.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது; ஏனெனில் இரண்டாவது நிர்வாக சீர்திருத்த ஆணையம் (4-வது அறிக்கை) கறுப்புப் பணப் பயன்பாட்டைக் குறைக்க தேர்தல்களுக்கு பகுதி அரசு நிதியுதவி வழங்க வேண்டும் என்றே பரிந்துரைத்தது."
@@ -1572,12 +1572,12 @@
         "ta": "தவறானது. கூற்று 3 தவறு."
       },
       "B": {
-        "en": "Incorrect. Statement 3 is false.",
-        "ta": "தவறானது. கூற்று 3 தவறு."
-      },
-      "C": {
         "en": "Correct. Statements 1 and 2 are true; statement 3 misstates 2nd ARC recommendation.",
         "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 2 சரி; கூற்று 3 தவறு."
+      },
+      "C": {
+        "en": "Incorrect. Statement 3 is false.",
+        "ta": "தவறானது. கூற்று 3 தவறு."
       },
       "D": {
         "en": "Incorrect. Statement 3 is false.",
@@ -1633,13 +1633,13 @@
       },
       {
         "id": "B",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "C",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "D",
@@ -1649,18 +1649,18 @@
     ],
     "options_en": [
       "1 and 3 only",
-      "2 and 3 only",
       "1 and 2 only",
+      "2 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
       "1 மற்றும் 3 மட்டுமே",
-      "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 2 மட்டுமே",
+      "2 மற்றும் 3 மட்டுமே",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because Section 126 prohibits PUBLIC meetings, rallies, loudspeakers, and broadcast media, but does NOT bar quiet door-to-door canvassing by a candidate accompanied by a few persons (maximum 5 as per ECI guidelines).",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது; ஏனெனில் பிரிவு 126 பொதுக்கூட்டங்கள், ஊர்வலங்கள் மற்றும் ஊடக பிரச்சாரங்களை மட்டுமே தடை செய்கிறது; ஆனால் வேட்பாளர் 5 பேருக்கு மிகாமல் சென்று அமைதியாக வீடு வீடாக வாக்கு சேகரிப்பதற்கு தடையில்லை."
@@ -1673,12 +1673,12 @@
         "ta": "தவறானது. கூற்று 3 தவறு."
       },
       "B": {
-        "en": "Incorrect. Statement 3 is false.",
-        "ta": "தவறானது. கூற்று 3 தவறு."
-      },
-      "C": {
         "en": "Correct. Statements 1 and 2 are true; quiet door-to-door canvassing is permitted.",
         "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 2 சரி; அமைதியான வீடு வீடான பிரச்சாரம் அனுமதிக்கப்படுகிறது."
+      },
+      "C": {
+        "en": "Incorrect. Statement 3 is false.",
+        "ta": "தவறானது. கூற்று 3 தவறு."
       },
       "D": {
         "en": "Incorrect. Statement 3 is false.",
@@ -1738,29 +1738,29 @@
       },
       {
         "id": "C",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       }
     ],
     "options_en": [
       "1 and 3 only",
       "2 and 3 only",
-      "1 and 2 only",
-      "1, 2 and 3"
+      "1, 2 and 3",
+      "1 and 2 only"
     ],
     "options_ta": [
       "1 மற்றும் 3 மட்டுமே",
       "2 மற்றும் 3 மட்டுமே",
-      "1 மற்றும் 2 மட்டுமே",
-      "1, 2 மற்றும் 3"
+      "1, 2 மற்றும் 3",
+      "1 மற்றும் 2 மட்டுமே"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because under the Supreme Court's ruling in Resurgence India v. ECI (2013), leaving any column blank in Form 26 despite notice by the Returning Officer renders the nomination paper liable to be REJECTED.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது; ஏனெனில் ரீசர்ஜன்ஸ் இந்தியா (2013) தீர்ப்பின்படி படிவம் 26-ல் பத்திகளை காலியாக விட்டால் அந்த வேட்புமனு நிராகரிக்கப்பட வேண்டும்."
@@ -1777,12 +1777,12 @@
         "ta": "தவறானது. கூற்று 3 தவறு."
       },
       "C": {
-        "en": "Correct. Statements 1 and 2 are true; statement 3 is false.",
-        "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 2 உண்மை; கூற்று 3 தவறு."
-      },
-      "D": {
         "en": "Incorrect. Statement 3 is false.",
         "ta": "தவறானது. கூற்று 3 தவறு."
+      },
+      "D": {
+        "en": "Correct. Statements 1 and 2 are true; statement 3 is false.",
+        "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 2 உண்மை; கூற்று 3 தவறு."
       }
     },
     "tnpsc_tip": {
@@ -1834,13 +1834,13 @@
       },
       {
         "id": "B",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "C",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "D",
@@ -1850,18 +1850,18 @@
     ],
     "options_en": [
       "1 and 3 only",
-      "2 and 3 only",
       "1 and 2 only",
+      "2 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
       "1 மற்றும் 3 மட்டுமே",
-      "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 2 மட்டுமே",
+      "2 மற்றும் 3 மட்டுமே",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because Section 116A of RPA 1951 explicitly provides for a statutory appeal to the Supreme Court on any question of law or fact from every order made by a High Court on an election petition.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது; ஏனெனில் மக்கள் பிரதிநிதித்துவச் சட்டம் பிரிவு 116A, உயர் நீதிமன்றத்தின் தேர்தல் மனு தீர்ப்பை எதிர்த்து உச்ச நீதிமன்றத்தில் மேல்முறையீடு செய்ய நேரடி சட்டப்பூர்வ உரிமையை வழங்குகிறது."
@@ -1874,12 +1874,12 @@
         "ta": "தவறானது. கூற்று 3 தவறு."
       },
       "B": {
-        "en": "Incorrect. Statement 3 is false.",
-        "ta": "தவறானது. கூற்று 3 தவறு."
-      },
-      "C": {
         "en": "Correct. Statements 1 and 2 are true; statement 3 is legally incorrect.",
         "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 2 சரி; கூற்று 3 சட்டப்படி தவறு."
+      },
+      "C": {
+        "en": "Incorrect. Statement 3 is false.",
+        "ta": "தவறானது. கூற்று 3 தவறு."
       },
       "D": {
         "en": "Incorrect. Statement 3 is false.",
@@ -1935,13 +1935,13 @@
       },
       {
         "id": "B",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "C",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "D",
@@ -1951,18 +1951,18 @@
     ],
     "options_en": [
       "2 and 3 only",
-      "1 and 2 only",
       "1, 2 and 3",
+      "1 and 2 only",
       "1 and 3 only"
     ],
     "options_ta": [
       "2 மற்றும் 3 மட்டுமே",
-      "1 மற்றும் 2 மட்டுமே",
       "1, 2 மற்றும் 3",
+      "1 மற்றும் 2 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "All three statements are correct. Under Section 158(4), a deposit is forfeited unless the candidate receives more than 1/6th of total valid votes. Lok Sabha deposit for SC/ST is half of ₹25,000, i.e., ₹12,500 under Section 34. And under Section 158(1), the deposit of the elected candidate is always returned.",
       "ta": "மூன்று கூற்றுகளும் சரியானவை. பிரிவு 158(4)-ன் படி 1/6 பங்குக்கு மேல் பெறாவிட்டால் வைப்புத்தொகை பறிபோகும். பிரிவு 34-ன் படி மக்களவைக்கு SC/ST வேட்பாளரின் வைப்புத்தொகை ₹12,500. மேலும் வெற்றி பெற்ற வேட்பாளருக்கு பிரிவு 158(1)-ன் படி வைப்புத்தொகை எப்போதும் திருப்பியளிக்கப்படும்."
@@ -1975,12 +1975,12 @@
         "ta": "தவறானது. கூற்று 1-ம் சரியானது."
       },
       "B": {
-        "en": "Incorrect. Statement 3 is also correct.",
-        "ta": "தவறானது. கூற்று 3-ம் சரியானது."
-      },
-      "C": {
         "en": "Correct. All three statements accurately state the statutory rules.",
         "ta": "சரியானது. மூன்று கூற்றுகளும் சட்ட விதிகளை துல்லியமாகக் கூறுகின்றன."
+      },
+      "C": {
+        "en": "Incorrect. Statement 3 is also correct.",
+        "ta": "தவறானது. கூற்று 3-ம் சரியானது."
       },
       "D": {
         "en": "Incorrect. Statement 2 is also correct.",
@@ -2142,29 +2142,29 @@
       },
       {
         "id": "C",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       }
     ],
     "options_en": [
       "1 and 3 only",
       "2 and 3 only",
-      "1 and 2 only",
-      "1, 2 and 3"
+      "1, 2 and 3",
+      "1 and 2 only"
     ],
     "options_ta": [
       "1 மற்றும் 3 மட்டுமே",
       "2 மற்றும் 3 மட்டுமே",
-      "1 மற்றும் 2 மட்டுமே",
-      "1, 2 மற்றும் 3"
+      "1, 2 மற்றும் 3",
+      "1 மற்றும் 2 மட்டுமே"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because the Supreme Court in Jaya Bachchan held that actual receipt of profit is irrelevant; what matters is whether the office is CAPABLE of yielding profit or pecuniary gain.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது; ஏனெனில் ஜெயா பச்சன் வழக்கில், உண்மையில் பணத்தைப் பெற்றாரா என்பது முக்கியமல்ல, அப்பதவி நிதி ஆதாயம் தரும் சாத்தியக்கூறைக் கொண்டிருந்தாலே அது ஆதாயப் பதவி எனத் தீர்ப்பளிக்கப்பட்டது."
@@ -2181,12 +2181,12 @@
         "ta": "தவறானது. கூற்று 3 தவறு."
       },
       "C": {
-        "en": "Correct. Statements 1 and 2 are true; statement 3 misstates the ratio of Jaya Bachchan.",
-        "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 2 சரி; கூற்று 3 தீர்ப்பின் பொருளை தவறாகக் கூறுகிறது."
-      },
-      "D": {
         "en": "Incorrect. Statement 3 is false.",
         "ta": "தவறானது. கூற்று 3 தவறு."
+      },
+      "D": {
+        "en": "Correct. Statements 1 and 2 are true; statement 3 misstates the ratio of Jaya Bachchan.",
+        "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 2 சரி; கூற்று 3 தீர்ப்பின் பொருளை தவறாகக் கூறுகிறது."
       }
     },
     "tnpsc_tip": {
@@ -2243,29 +2243,29 @@
       },
       {
         "id": "C",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       }
     ],
     "options_en": [
       "1 and 3 only",
       "2 and 3 only",
-      "1 and 2 only",
-      "1, 2 and 3"
+      "1, 2 and 3",
+      "1 and 2 only"
     ],
     "options_ta": [
       "1 மற்றும் 3 மட்டுமே",
       "2 மற்றும் 3 மட்டுமே",
-      "1 மற்றும் 2 மட்டுமே",
-      "1, 2 மற்றும் 3"
+      "1, 2 மற்றும் 3",
+      "1 மற்றும் 2 மட்டுமே"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because under Indian electoral law, there is currently NO statutory ceiling on expenditure by political parties.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது; ஏனெனில் இந்திய தேர்தல் சட்டத்தில் அரசியல் கட்சிகள் செய்யும் செலவுக்கு எவ்வித சட்டப்பூர்வ உச்சவரம்பும் கிடையாது."
@@ -2282,12 +2282,12 @@
         "ta": "தவறானது. கூற்று 3 தவறு."
       },
       "C": {
-        "en": "Correct. Statements 1 and 2 are true; statement 3 is false as party expenditure is uncapped.",
-        "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 2 சரி; கூற்று 3 தவறு (கட்சிகளுக்கு செலவு வரம்பு இல்லை)."
-      },
-      "D": {
         "en": "Incorrect. Statement 3 is false.",
         "ta": "தவறானது. கூற்று 3 தவறு."
+      },
+      "D": {
+        "en": "Correct. Statements 1 and 2 are true; statement 3 is false as party expenditure is uncapped.",
+        "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 2 சரி; கூற்று 3 தவறு (கட்சிகளுக்கு செலவு வரம்பு இல்லை)."
       }
     },
     "tnpsc_tip": {
@@ -2333,8 +2333,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "B",
@@ -2343,8 +2343,8 @@
       },
       {
         "id": "C",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "D",
@@ -2353,19 +2353,19 @@
       }
     ],
     "options_en": [
-      "1 and 3 only",
-      "2 and 3 only",
       "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
-      "1 மற்றும் 3 மட்டுமே",
-      "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 2 மட்டுமே",
+      "2 மற்றும் 3 மட்டுமே",
+      "1 மற்றும் 3 மட்டுமே",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because the RVM is a completely STANDALONE, non-networked device with no connection to the internet, cellular networks, 5G, or any external wireless interface.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது; ஏனெனில் RVM இணையம், செல்லுலார் நெட்வொர்க் அல்லது 5G போன்ற எவ்வித தொடர்பும் இல்லாத ஒரு தனித்துவமான இயந்திரமாகும் (Standalone)."
@@ -2374,16 +2374,16 @@
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது; ஏனெனில் RVM இணையம், செல்லுலார் நெட்வொர்க் அல்லது 5G போன்ற எவ்வித தொடர்பும் இல்லாத ஒரு தனித்துவமான இயந்திரமாகும் (Standalone).",
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Statement 3 is false.",
-        "ta": "தவறானது. கூற்று 3 தவறு."
+        "en": "Correct. Statements 1 and 2 are true; statement 3 is technically false.",
+        "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 2 சரி; கூற்று 3 தொழில்நுட்ப ரீதியாக தவறு."
       },
       "B": {
         "en": "Incorrect. Statement 3 is false.",
         "ta": "தவறானது. கூற்று 3 தவறு."
       },
       "C": {
-        "en": "Correct. Statements 1 and 2 are true; statement 3 is technically false.",
-        "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 2 சரி; கூற்று 3 தொழில்நுட்ப ரீதியாக தவறு."
+        "en": "Incorrect. Statement 3 is false.",
+        "ta": "தவறானது. கூற்று 3 தவறு."
       },
       "D": {
         "en": "Incorrect. Statement 3 is false.",
@@ -2544,29 +2544,29 @@
       },
       {
         "id": "C",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "D",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டுமே"
       }
     ],
     "options_en": [
       "1, 2 and 3",
       "2 and 3 only",
-      "1 and 3 only",
-      "1 and 2 only"
+      "1 and 2 only",
+      "1 and 3 only"
     ],
     "options_ta": [
       "1, 2 மற்றும் 3",
       "2 மற்றும் 3 மட்டுமே",
-      "1 மற்றும் 3 மட்டுமே",
-      "1 மற்றும் 2 மட்டுமே"
+      "1 மற்றும் 2 மட்டுமே",
+      "1 மற்றும் 3 மட்டுமே"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because India abolished property, tax, and educational qualifications for voting in 1950. The only grounds of disqualification under Article 326 are non-residence, unsoundness of mind, crime, or corrupt or illegal practice.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது; ஏனெனில் சொத்து அல்லது கல்வித்தகுதி நிபந்தனைகளை 1950-லேயே இந்தியா ஒழித்துவிட்டது. குடியுரிமையின்மை, மனநலக்குறைவு, குற்றவியல் தண்டனை அல்லது ஊழல் நடைமுறைகள் மட்டுமே சரத்து 326-ன் கீழான தகுதியின்மைகள் ஆகும்."
@@ -2583,12 +2583,12 @@
         "ta": "தவறானது. கூற்று 3 தவறு."
       },
       "C": {
-        "en": "Incorrect. Statement 3 is false.",
-        "ta": "தவறானது. கூற்று 3 தவறு."
-      },
-      "D": {
         "en": "Correct. Statements 1 and 2 are true; statement 3 is unconstitutional.",
         "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 2 சரி; கூற்று 3 அரசியலமைப்புக்கு எதிரானது."
+      },
+      "D": {
+        "en": "Incorrect. Statement 3 is false.",
+        "ta": "தவறானது. கூற்று 3 தவறு."
       }
     },
     "tnpsc_tip": {
@@ -2635,8 +2635,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "B",
@@ -2650,24 +2650,24 @@
       },
       {
         "id": "D",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       }
     ],
     "options_en": [
-      "1, 2 and 3",
+      "1 and 2 only",
       "2 and 3 only",
       "1 and 3 only",
-      "1 and 2 only"
+      "1, 2 and 3"
     ],
     "options_ta": [
-      "1, 2 மற்றும் 3",
+      "1 மற்றும் 2 மட்டுமே",
       "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
-      "1 மற்றும் 2 மட்டுமே"
+      "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because government school teachers and primary doctors are not classified as revenue officers or gazetted magistrates under Section 123(7), though they are public servants.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது; ஏனெனில் அரசு பள்ளி ஆசிரியர்கள் மற்றும் மருத்துவர்கள் பிரிவு 123(7)-ன் கீழ் வருவாய் அல்லது நடுவர் அதிகாரிகளாகக் கருதப்படுவதில்லை."
@@ -2676,8 +2676,8 @@
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது; ஏனெனில் அரசு பள்ளி ஆசிரியர்கள் மற்றும் மருத்துவர்கள் பிரிவு 123(7)-ன் கீழ் வருவாய் அல்லது நடுவர் அதிகாரிகளாகக் கருதப்படுவதில்லை.",
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Statement 3 is false.",
-        "ta": "தவறானது. கூற்று 3 தவறு."
+        "en": "Correct. Statements 1 and 2 are historically and legally accurate.",
+        "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 2 வரலாற்று மற்றும் சட்ட ரீதியாக சரியானவை."
       },
       "B": {
         "en": "Incorrect. Statement 3 is false.",
@@ -2688,8 +2688,8 @@
         "ta": "தவறானது. கூற்று 3 தவறு."
       },
       "D": {
-        "en": "Correct. Statements 1 and 2 are historically and legally accurate.",
-        "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 2 வரலாற்று மற்றும் சட்ட ரீதியாக சரியானவை."
+        "en": "Incorrect. Statement 3 is false.",
+        "ta": "தவறானது. கூற்று 3 தவறு."
       }
     },
     "tnpsc_tip": {
@@ -2735,8 +2735,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "B",
@@ -2750,24 +2750,24 @@
       },
       {
         "id": "D",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       }
     ],
     "options_en": [
-      "1, 2 and 3",
+      "1 and 2 only",
       "2 and 3 only",
       "1 and 3 only",
-      "1 and 2 only"
+      "1, 2 and 3"
     ],
     "options_ta": [
-      "1, 2 மற்றும் 3",
+      "1 மற்றும் 2 மட்டுமே",
       "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
-      "1 மற்றும் 2 மட்டுமே"
+      "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because under Explanation 1 to Section 77(1), the travel expenditure incurred by star campaigners is EXEMPTED and not deemed to be expenditure incurred by the candidate.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது; ஏனெனில் பிரிவு 77(1) விளக்கம் 1-ன் படி, நட்சத்திரப் பிரச்சாரகர்களின் பயணச் செலவு வேட்பாளரின் தேர்தல் கணக்கில் சேர்க்கப்படாமல் சட்டப்பூர்வ விலக்கு பெறுகிறது."
@@ -2776,8 +2776,8 @@
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது; ஏனெனில் பிரிவு 77(1) விளக்கம் 1-ன் படி, நட்சத்திரப் பிரச்சாரகர்களின் பயணச் செலவு வேட்பாளரின் தேர்தல் கணக்கில் சேர்க்கப்படாமல் சட்டப்பூர்வ விலக்கு பெறுகிறது.",
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Statement 3 is false.",
-        "ta": "தவறானது. கூற்று 3 தவறு."
+        "en": "Correct. Statements 1 and 2 are true; statement 3 is the opposite of the statutory exemption.",
+        "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 2 சரி; பயணச் செலவு வேட்பாளர் கணக்கில் சேராது என்பதால் கூற்று 3 தவறு."
       },
       "B": {
         "en": "Incorrect. Statement 3 is false.",
@@ -2788,8 +2788,8 @@
         "ta": "தவறானது. கூற்று 3 தவறு."
       },
       "D": {
-        "en": "Correct. Statements 1 and 2 are true; statement 3 is the opposite of the statutory exemption.",
-        "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 2 சரி; பயணச் செலவு வேட்பாளர் கணக்கில் சேராது என்பதால் கூற்று 3 தவறு."
+        "en": "Incorrect. Statement 3 is false.",
+        "ta": "தவறானது. கூற்று 3 தவறு."
       }
     },
     "tnpsc_tip": {
@@ -2841,8 +2841,8 @@
       },
       {
         "id": "B",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "C",
@@ -2851,24 +2851,24 @@
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       }
     ],
     "options_en": [
       "1 and 3 only",
-      "1 and 2 only",
+      "1, 2 and 3",
       "2 and 3 only",
-      "1, 2 and 3"
+      "1 and 2 only"
     ],
     "options_ta": [
       "1 மற்றும் 3 மட்டுமே",
-      "1 மற்றும் 2 மட்டுமே",
+      "1, 2 மற்றும் 3",
       "2 மற்றும் 3 மட்டுமே",
-      "1, 2 மற்றும் 3"
+      "1 மற்றும் 2 மட்டுமே"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "All three statements are correct. Section 135A was inserted in 1989; Section 135A(1) prescribes 1 to 3 years prison for general offenders and 3 to 5 years for persons in government service; and the Explanation defines booth capturing broadly to include physical seizure and voter suppression.",
       "ta": "மூன்று கூற்றுகளும் சரியானவை. பிரிவு 135A 1989-ல் இணைக்கப்பட்டது; அரசு ஊழியர்களுக்கு 3 முதல் 5 ஆண்டுகள் வரை சிறைத்தண்டனை விதிக்கப்படுகிறது; வாக்குச்சாவடி ஆக்கிரமிப்பு மற்றும் குறிப்பிட்ட வாக்காளர்களை மட்டும் அனுமதிப்பது இதன் கீழ் குற்றமாகும்."
@@ -2881,16 +2881,16 @@
         "ta": "தவறானது. கூற்று 2-ம் சரியானது."
       },
       "B": {
-        "en": "Incorrect. Statement 3 is also correct.",
-        "ta": "தவறானது. கூற்று 3-ம் சரியானது."
+        "en": "Correct. All three statements accurately state the law under Section 135A.",
+        "ta": "சரியானது. மூன்று கூற்றுகளும் பிரிவு 135A-ன் சட்ட விதிகளை துல்லியமாகக் கூறுகின்றன."
       },
       "C": {
         "en": "Incorrect. Statement 1 is also correct.",
         "ta": "தவறானது. கூற்று 1-ம் சரியானது."
       },
       "D": {
-        "en": "Correct. All three statements accurately state the law under Section 135A.",
-        "ta": "சரியானது. மூன்று கூற்றுகளும் பிரிவு 135A-ன் சட்ட விதிகளை துல்லியமாகக் கூறுகின்றன."
+        "en": "Incorrect. Statement 3 is also correct.",
+        "ta": "தவறானது. கூற்று 3-ம் சரியானது."
       }
     },
     "tnpsc_tip": {
@@ -2947,29 +2947,29 @@
       },
       {
         "id": "C",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "D",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டுமே"
       }
     ],
     "options_en": [
       "1, 2 and 3",
       "2 and 3 only",
-      "1 and 3 only",
-      "1 and 2 only"
+      "1 and 2 only",
+      "1 and 3 only"
     ],
     "options_ta": [
       "1, 2 மற்றும் 3",
       "2 மற்றும் 3 மட்டுமே",
-      "1 மற்றும் 3 மட்டுமே",
-      "1 மற்றும் 2 மட்டுமே"
+      "1 மற்றும் 2 மட்டுமே",
+      "1 மற்றும் 3 மட்டுமே"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because Section 11 remains fully operational and valid; it was exercised in 2019 to reduce the disqualification of Sikkim Chief Minister Prem Singh Tamang, and its constitutional validity was upheld.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது; ஏனெனில் பிரிவு 11 ரத்து செய்யப்படவில்லை; இது இன்றும் முழுமையாக செல்லுபடியாகும் பிரிவாகும். 2019-ல் சிக்கிம் முதல்வர் பிரேம் சிங் தமாங்கின் தகுதிநீக்கக் காலத்தை குறைக்க ECI இதை வெற்றிகரமாகப் பயன்படுத்தியது."
@@ -2986,12 +2986,12 @@
         "ta": "தவறானது. கூற்று 3 தவறு."
       },
       "C": {
-        "en": "Incorrect. Statement 3 is false.",
-        "ta": "தவறானது. கூற்று 3 தவறு."
-      },
-      "D": {
         "en": "Correct. Statements 1 and 2 are true; Section 11 remains valid law.",
         "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 2 சரி; பிரிவு 11 செல்லுபடியாகும் சட்டம்."
+      },
+      "D": {
+        "en": "Incorrect. Statement 3 is false.",
+        "ta": "தவறானது. கூற்று 3 தவறு."
       }
     },
     "tnpsc_tip": {
@@ -3042,8 +3042,8 @@
       },
       {
         "id": "B",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "C",
@@ -3052,24 +3052,24 @@
       },
       {
         "id": "D",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டுமே"
       }
     ],
     "options_en": [
       "1, 2 and 3",
-      "2 and 3 only",
+      "1 and 2 only",
       "1 and 3 only",
-      "1 and 2 only"
+      "2 and 3 only"
     ],
     "options_ta": [
       "1, 2 மற்றும் 3",
-      "2 மற்றும் 3 மட்டுமே",
+      "1 மற்றும் 2 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
-      "1 மற்றும் 2 மட்டுமே"
+      "2 மற்றும் 3 மட்டுமே"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because ordinary domestic citizens traveling abroad for tourism or private work CANNOT vote by postal ballot or online; they must be physically present in their polling booth in India.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது; ஏனெனில் வெளிநாடு செல்லும் சாதாரண குடிமக்களுக்கு தபால் வாக்கோ அல்லது ஆன்லைன் வாக்கோ கிடையாது; அவர்கள் நேரில் வந்து மட்டுமே வாக்களிக்க முடியும்."
@@ -3082,16 +3082,16 @@
         "ta": "தவறானது. கூற்று 3 தவறு."
       },
       "B": {
-        "en": "Incorrect. Statement 3 is false.",
-        "ta": "தவறானது. கூற்று 3 தவறு."
+        "en": "Correct. Statements 1 and 2 are true; statement 3 is completely false.",
+        "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 2 சரி; கூற்று 3 முற்றிலும் தவறு."
       },
       "C": {
         "en": "Incorrect. Statement 3 is false.",
         "ta": "தவறானது. கூற்று 3 தவறு."
       },
       "D": {
-        "en": "Correct. Statements 1 and 2 are true; statement 3 is completely false.",
-        "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 2 சரி; கூற்று 3 முற்றிலும் தவறு."
+        "en": "Incorrect. Statement 3 is false.",
+        "ta": "தவறானது. கூற்று 3 தவறு."
       }
     },
     "tnpsc_tip": {
@@ -3249,29 +3249,29 @@
       },
       {
         "id": "C",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "D",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டுமே"
       }
     ],
     "options_en": [
       "1, 2 and 3",
       "2 and 3 only",
-      "1 and 3 only",
-      "1 and 2 only"
+      "1 and 2 only",
+      "1 and 3 only"
     ],
     "options_ta": [
       "1, 2 மற்றும் 3",
       "2 மற்றும் 3 மட்டுமே",
-      "1 மற்றும் 3 மட்டுமே",
-      "1 மற்றும் 2 மட்டுமே"
+      "1 மற்றும் 2 மட்டுமே",
+      "1 மற்றும் 3 மட்டுமே"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because Section 135B(4) explicitly provides an exception: this section does NOT apply to any elector whose absence would cause danger or substantial loss in respect of the employment in which he is engaged (e.g. critical continuous-process plant engineers, intensive care doctors).",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது; ஏனெனில் பிரிவு 135B(4) தெளிவான விதிவிலக்கை அளிக்கிறது: பணியாளர் வராவிட்டால் உயிருக்கோ அல்லது பணிக்கு பெரும் ஆபத்தோ நஷ்டமோ ஏற்படும் சூழ்நிலைகளில் உள்ள பணியாளர்களுக்கு (எ.கா. தீவிர சிகிச்சைப் பிரிவு மருத்துவர்கள்) இது பொருந்தாது."
@@ -3288,12 +3288,12 @@
         "ta": "தவறானது. கூற்று 3 தவறு."
       },
       "C": {
-        "en": "Incorrect. Statement 3 is false.",
-        "ta": "தவறானது. கூற்று 3 தவறு."
-      },
-      "D": {
         "en": "Correct. Statements 1 and 2 are true; statement 3 ignores the explicit statutory exception under Section 135B(4).",
         "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 2 சரி; பிரிவு 135B(4)-ல் விதிவிலக்கு உள்ளதால் கூற்று 3 தவறு."
+      },
+      "D": {
+        "en": "Incorrect. Statement 3 is false.",
+        "ta": "தவறானது. கூற்று 3 தவறு."
       }
     },
     "tnpsc_tip": {
@@ -3349,29 +3349,29 @@
       },
       {
         "id": "C",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "D",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டுமே"
       }
     ],
     "options_en": [
       "1, 2 and 3",
       "2 and 3 only",
-      "1 and 3 only",
-      "1 and 2 only"
+      "1 and 2 only",
+      "1 and 3 only"
     ],
     "options_ta": [
       "1, 2 மற்றும் 3",
       "2 மற்றும் 3 மட்டுமே",
-      "1 மற்றும் 3 மட்டுமே",
-      "1 மற்றும் 2 மட்டுமே"
+      "1 மற்றும் 2 மட்டுமே",
+      "1 மற்றும் 3 மட்டுமே"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because Section 135C prohibits the SALE, GIVING, and DISTRIBUTION of liquor; it does not prescribe a 5-year prison sentence for lawful private home consumption.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது; ஏனெனில் பிரிவு 135C மது விற்பனை மற்றும் பொது விநியோகத்தை மட்டுமே தடை செய்கிறது; தனிப்பட்ட நபருக்கு 5 ஆண்டு சிறைத் தண்டனை விதிக்கும் விதி இதில் இல்லை."
@@ -3388,12 +3388,12 @@
         "ta": "தவறானது. கூற்று 3 தவறு."
       },
       "C": {
-        "en": "Incorrect. Statement 3 is false.",
-        "ta": "தவறானது. கூற்று 3 தவறு."
-      },
-      "D": {
         "en": "Correct. Statements 1 and 2 are true; statement 3 is incorrect.",
         "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 2 சரி; கூற்று 3 தவறு."
+      },
+      "D": {
+        "en": "Incorrect. Statement 3 is false.",
+        "ta": "தவறானது. கூற்று 3 தவறு."
       }
     },
     "tnpsc_tip": {
@@ -3540,8 +3540,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "B",
@@ -3555,24 +3555,24 @@
       },
       {
         "id": "D",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       }
     ],
     "options_en": [
-      "1, 2 and 3",
+      "1 and 2 only",
       "2 and 3 only",
       "1 and 3 only",
-      "1 and 2 only"
+      "1, 2 and 3"
     ],
     "options_ta": [
-      "1, 2 மற்றும் 3",
+      "1 மற்றும் 2 மட்டுமே",
       "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
-      "1 மற்றும் 2 மட்டுமே"
+      "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because Rajya Sabha elections are indirect elections and are not criteria for statutory party recognition under the Symbols Order.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது; ஏனெனில் மாநிலங்களவைத் தேர்தல் மறைமுகத் தேர்தல் என்பதால் அது கட்சி அங்கீகாரத்திற்கான அளவுகோலாகக் கருதப்படுவதில்லை."
@@ -3581,8 +3581,8 @@
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது; ஏனெனில் மாநிலங்களவைத் தேர்தல் மறைமுகத் தேர்தல் என்பதால் அது கட்சி அங்கீகாரத்திற்கான அளவுகோலாகக் கருதப்படுவதில்லை.",
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Statement 3 is false.",
-        "ta": "தவறானது. கூற்று 3 தவறு."
+        "en": "Correct. Statements 1 and 2 are statutory criteria; statement 3 is irrelevant.",
+        "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 2 சட்டப்பூர்வ தகுதிகள்; கூற்று 3 பொருத்தமற்றது."
       },
       "B": {
         "en": "Incorrect. Statement 3 is false.",
@@ -3593,8 +3593,8 @@
         "ta": "தவறானது. கூற்று 3 தவறு."
       },
       "D": {
-        "en": "Correct. Statements 1 and 2 are statutory criteria; statement 3 is irrelevant.",
-        "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 2 சட்டப்பூர்வ தகுதிகள்; கூற்று 3 பொருத்தமற்றது."
+        "en": "Incorrect. Statement 3 is false.",
+        "ta": "தவறானது. கூற்று 3 தவறு."
       }
     },
     "tnpsc_tip": {
@@ -3650,29 +3650,29 @@
       },
       {
         "id": "C",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டுமே"
       }
     ],
     "options_en": [
       "1 and 3 only",
       "1 and 2 only",
-      "2 and 3 only",
-      "1, 2 and 3"
+      "1, 2 and 3",
+      "2 and 3 only"
     ],
     "options_ta": [
       "1 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 2 மட்டுமே",
-      "2 மற்றும் 3 மட்டுமே",
-      "1, 2 மற்றும் 3"
+      "1, 2 மற்றும் 3",
+      "2 மற்றும் 3 மட்டுமே"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "All three statements are correct. Paragraph 6B of the Symbols Order lays down these three alternative routes to becoming a recognized National Party: (1) 4-state recognition, (2) 2% Lok Sabha seats across 3 states, or (3) 6% votes in 4 states + 4 Lok Sabha seats.",
       "ta": "மூன்று கூற்றுகளும் சரியானவை. பத்தி 6B தேசியக் கட்சியாக அங்கீகாரம் பெற இந்த 3 மாற்று வழிகளை வழங்குகிறது: (1) 4 மாநிலங்களில் அங்கீகாரம், (2) 3 மாநிலங்களிலிருந்து 2% மக்களவை இடங்கள் வெற்றி, (3) 4 மாநிலங்களில் 6% வாக்குகள் + 4 மக்களவை இடங்கள் வெற்றி."
@@ -3689,12 +3689,12 @@
         "ta": "தவறானது. கூற்று 3-ம் சரியானது."
       },
       "C": {
-        "en": "Incorrect. Statement 1 is also correct.",
-        "ta": "தவறானது. கூற்று 1-ம் சரியானது."
-      },
-      "D": {
         "en": "Correct. All three statements accurately state the alternative National Party criteria.",
         "ta": "சரியானது. மூன்று கூற்றுகளும் தேசியக் கட்சிக்கான 3 மாற்று வழிகளைச் சரியாகக் கூறுகின்றன."
+      },
+      "D": {
+        "en": "Incorrect. Statement 1 is also correct.",
+        "ta": "தவறானது. கூற்று 1-ம் சரியானது."
       }
     },
     "tnpsc_tip": {
@@ -3740,8 +3740,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "B",
@@ -3755,24 +3755,24 @@
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       }
     ],
     "options_en": [
-      "1 and 2 only",
+      "1, 2 and 3",
       "2 and 3 only",
       "1 and 3 only",
-      "1, 2 and 3"
+      "1 and 2 only"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டுமே",
+      "1, 2 மற்றும் 3",
       "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
-      "1, 2 மற்றும் 3"
+      "1 மற்றும் 2 மட்டுமே"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because Section 161 explicitly mandates that whenever any vehicle, vessel, or animal is requisitioned, there SHALL be paid to the owner compensation determined on the basis of prevailing commercial fares or rates.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது; ஏனெனில் பிரிவு 161 கையகப்படுத்தப்பட்ட வாகனங்கள், படகுகள் மற்றும் விலங்குகளின் உரிமையாளர்களுக்கு சந்தை விகிதத்தின் அடிப்படையில் இழப்பீடு வழங்குவதைக் கட்டாயமாக்குகிறது."
@@ -3781,8 +3781,8 @@
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது; ஏனெனில் பிரிவு 161 கையகப்படுத்தப்பட்ட வாகனங்கள், படகுகள் மற்றும் விலங்குகளின் உரிமையாளர்களுக்கு சந்தை விகிதத்தின் அடிப்படையில் இழப்பீடு வழங்குவதைக் கட்டாயமாக்குகிறது.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Statements 1 and 2 are true; statement 3 violates Section 161.",
-        "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 2 சரி; இழப்பீடு கட்டாயம் என்பதால் கூற்று 3 தவறு."
+        "en": "Incorrect. Statement 3 is false.",
+        "ta": "தவறானது. கூற்று 3 தவறு."
       },
       "B": {
         "en": "Incorrect. Statement 3 is false.",
@@ -3793,8 +3793,8 @@
         "ta": "தவறானது. கூற்று 3 தவறு."
       },
       "D": {
-        "en": "Incorrect. Statement 3 is false.",
-        "ta": "தவறானது. கூற்று 3 தவறு."
+        "en": "Correct. Statements 1 and 2 are true; statement 3 violates Section 161.",
+        "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 2 சரி; இழப்பீடு கட்டாயம் என்பதால் கூற்று 3 தவறு."
       }
     },
     "tnpsc_tip": {
@@ -3941,8 +3941,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "B",
@@ -3956,24 +3956,24 @@
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       }
     ],
     "options_en": [
-      "1 and 2 only",
+      "1, 2 and 3",
       "2 and 3 only",
       "1 and 3 only",
-      "1, 2 and 3"
+      "1 and 2 only"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டுமே",
+      "1, 2 மற்றும் 3",
       "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
-      "1, 2 மற்றும் 3"
+      "1 மற்றும் 2 மட்டுமே"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because Section 14(b) of RPA 1950 applies directly to Parliamentary and Assembly constituencies across India.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது; ஏனெனில் மக்கள் பிரதிநிதித்துவச் சட்டம் 1950 பிரிவு 14(b) நாடாளுமன்ற மற்றும் சட்டமன்ற தொகுதிகளுக்கான வாக்காளர் பட்டியலுக்கே முதன்மையாகப் பொருந்தும்."
@@ -3982,8 +3982,8 @@
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது; ஏனெனில் மக்கள் பிரதிநிதித்துவச் சட்டம் 1950 பிரிவு 14(b) நாடாளுமன்ற மற்றும் சட்டமன்ற தொகுதிகளுக்கான வாக்காளர் பட்டியலுக்கே முதன்மையாகப் பொருந்தும்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Statements 1 and 2 are true; statement 3 is legally incorrect.",
-        "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 2 சரி; கூற்று 3 சட்டப்படி தவறு."
+        "en": "Incorrect. Statement 3 is false.",
+        "ta": "தவறானது. கூற்று 3 தவறு."
       },
       "B": {
         "en": "Incorrect. Statement 3 is false.",
@@ -3994,8 +3994,8 @@
         "ta": "தவறானது. கூற்று 3 தவறு."
       },
       "D": {
-        "en": "Incorrect. Statement 3 is false.",
-        "ta": "தவறானது. கூற்று 3 தவறு."
+        "en": "Correct. Statements 1 and 2 are true; statement 3 is legally incorrect.",
+        "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 2 சரி; கூற்று 3 சட்டப்படி தவறு."
       }
     },
     "tnpsc_tip": {
@@ -4042,8 +4042,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "B",
@@ -4057,24 +4057,24 @@
       },
       {
         "id": "D",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       }
     ],
     "options_en": [
-      "1, 2 and 3",
+      "1 and 3 only",
       "1 and 2 only",
       "2 and 3 only",
-      "1 and 3 only"
+      "1, 2 and 3"
     ],
     "options_ta": [
-      "1, 2 மற்றும் 3",
+      "1 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 2 மட்டுமே",
       "2 மற்றும் 3 மட்டுமே",
-      "1 மற்றும் 3 மட்டுமே"
+      "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "All three statements are correct. Section 125A punishes false affidavits with up to 6 months prison; and both the Law Commission (244th Report) and ECI have recommended increasing it to 2+ years prison so that a conviction triggers immediate disqualification under Section 8(3).",
       "ta": "மூன்று கூற்றுகளும் சரியானவை. பிரிவு 125A தவறான உறுதிமொழிப் பத்திரத்திற்கு 6 மாதம் வரை சிறை தண்டனை விதிக்கிறது; பிரிவு 8(3)-ன் கீழ் தானியங்கி தகுதிநீக்கம் அமலுக்கு வர இதன் தண்டனையை 2 ஆண்டுகளாக உயர்த்த சட்ட ஆணையம் பரிந்துரைத்தது."
@@ -4083,8 +4083,8 @@
     "explanation_ta": "மூன்று கூற்றுகளும் சரியானவை. பிரிவு 125A தவறான உறுதிமொழிப் பத்திரத்திற்கு 6 மாதம் வரை சிறை தண்டனை விதிக்கிறது; பிரிவு 8(3)-ன் கீழ் தானியங்கி தகுதிநீக்கம் அமலுக்கு வர இதன் தண்டனையை 2 ஆண்டுகளாக உயர்த்த சட்ட ஆணையம் பரிந்துரைத்தது.",
     "why_not_others": {
       "A": {
-        "en": "Correct. All three statements accurately state the law and reform recommendations.",
-        "ta": "சரியானது. மூன்று கூற்றுகளும் சட்டம் மற்றும் சீர்திருத்த பரிந்துரைகளை சரியாகக் கூறுகின்றன."
+        "en": "Incorrect. Statement 2 is also correct.",
+        "ta": "தவறானது. கூற்று 2-ம் சரியானது."
       },
       "B": {
         "en": "Incorrect. Statement 3 is also correct.",
@@ -4095,8 +4095,8 @@
         "ta": "தவறானது. கூற்று 1-ம் சரியானது."
       },
       "D": {
-        "en": "Incorrect. Statement 2 is also correct.",
-        "ta": "தவறானது. கூற்று 2-ம் சரியானது."
+        "en": "Correct. All three statements accurately state the law and reform recommendations.",
+        "ta": "சரியானது. மூன்று கூற்றுகளும் சட்டம் மற்றும் சீர்திருத்த பரிந்துரைகளை சரியாகக் கூறுகின்றன."
       }
     },
     "tnpsc_tip": {
@@ -4143,8 +4143,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "B",
@@ -4153,8 +4153,8 @@
       },
       {
         "id": "C",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "D",
@@ -4163,19 +4163,19 @@
       }
     ],
     "options_en": [
-      "1, 2 and 3",
-      "1 and 2 only",
       "2 and 3 only",
+      "1 and 2 only",
+      "1, 2 and 3",
       "1 and 3 only"
     ],
     "options_ta": [
-      "1, 2 மற்றும் 3",
-      "1 மற்றும் 2 மட்டுமே",
       "2 மற்றும் 3 மட்டுமே",
+      "1 மற்றும் 2 மட்டுமே",
+      "1, 2 மற்றும் 3",
       "1 மற்றும் 3 மட்டுமே"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "All three pairs are correctly matched. cVIGIL is citizen vigilance for MCC violations (100-min turnaround); Suvidha is for candidate campaign permissions; and Saksham is the accessibility portal for PwD voters.",
       "ta": "மூன்று இணைகளும் சரியாகப் பொருந்தியுள்ளன. cVIGIL 100 நிமிட தேர்தல் விதிமீறல் தீர்வுக்கானது; சுவிதா வேட்பாளர் பிரச்சார அனுமதிக்கானது; சக்ஷம் மாற்றுத்திறனாளிகளுக்கான சேவைகளுக்கானது."
@@ -4184,16 +4184,16 @@
     "explanation_ta": "மூன்று இணைகளும் சரியாகப் பொருந்தியுள்ளன. cVIGIL 100 நிமிட தேர்தல் விதிமீறல் தீர்வுக்கானது; சுவிதா வேட்பாளர் பிரச்சார அனுமதிக்கானது; சக்ஷம் மாற்றுத்திறனாளிகளுக்கான சேவைகளுக்கானது.",
     "why_not_others": {
       "A": {
-        "en": "Correct. All three pairs are accurate ECI technical applications.",
-        "ta": "சரியானது. மூன்று இணைகளும் துல்லியமான ECI டிஜிட்டல் பயன்பாடுகள்."
+        "en": "Incorrect. Pair 1 is also correct.",
+        "ta": "தவறானது. இணை 1-ம் சரியானது."
       },
       "B": {
         "en": "Incorrect. Pair 3 is also correct.",
         "ta": "தவறானது. இணை 3-ம் சரியானது."
       },
       "C": {
-        "en": "Incorrect. Pair 1 is also correct.",
-        "ta": "தவறானது. இணை 1-ம் சரியானது."
+        "en": "Correct. All three pairs are accurate ECI technical applications.",
+        "ta": "சரியானது. மூன்று இணைகளும் துல்லியமான ECI டிஜிட்டல் பயன்பாடுகள்."
       },
       "D": {
         "en": "Incorrect. Pair 2 is also correct.",
@@ -4245,8 +4245,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "B",
@@ -4260,24 +4260,24 @@
       },
       {
         "id": "D",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       }
     ],
     "options_en": [
-      "1, 2 and 3",
+      "1 and 3 only",
       "1 and 2 only",
       "2 and 3 only",
-      "1 and 3 only"
+      "1, 2 and 3"
     ],
     "options_ta": [
-      "1, 2 மற்றும் 3",
+      "1 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 2 மட்டுமே",
       "2 மற்றும் 3 மட்டுமே",
-      "1 மற்றும் 3 மட்டுமே"
+      "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "All three statements are correct. Section 169(1) empowers Central Government to make rules after consulting ECI; Section 169(3) mandates laying rules before Parliament for 30 days; and Section 169(3) proviso provides that parliamentary modifications or annulments govern the rule thereafter.",
       "ta": "மூன்று கூற்றுகளும் சரியானவை. பிரிவு 169(1) ECI-யைக் கலந்தாலோசித்து மத்திய அரசு விதி இயற்ற அதிகாரம் அளிக்கிறது; பிரிவு 169(3) 30 நாட்கள் நாடாளுமன்ற பார்வைக்கு வைக்க கட்டாயமாக்குகிறது; நாடாளுமன்றம் செய்யும் மாற்றங்கள் விதியில் செல்லும்."
@@ -4286,8 +4286,8 @@
     "explanation_ta": "மூன்று கூற்றுகளும் சரியானவை. பிரிவு 169(1) ECI-யைக் கலந்தாலோசித்து மத்திய அரசு விதி இயற்ற அதிகாரம் அளிக்கிறது; பிரிவு 169(3) 30 நாட்கள் நாடாளுமன்ற பார்வைக்கு வைக்க கட்டாயமாக்குகிறது; நாடாளுமன்றம் செய்யும் மாற்றங்கள் விதியில் செல்லும்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. All three statements accurately state the delegated legislation procedure under Section 169.",
-        "ta": "சரியானது. மூன்று கூற்றுகளும் பிரிவு 169-ன் ஒப்படைக்கப்பட்ட சட்டமியற்றும் அதிகாரத்தை சரியாகக் கூறுகின்றன."
+        "en": "Incorrect. Statement 2 is also correct.",
+        "ta": "தவறானது. கூற்று 2-ம் சரியானது."
       },
       "B": {
         "en": "Incorrect. Statement 3 is also correct.",
@@ -4298,8 +4298,8 @@
         "ta": "தவறானது. கூற்று 1-ம் சரியானது."
       },
       "D": {
-        "en": "Incorrect. Statement 2 is also correct.",
-        "ta": "தவறானது. கூற்று 2-ம் சரியானது."
+        "en": "Correct. All three statements accurately state the delegated legislation procedure under Section 169.",
+        "ta": "சரியானது. மூன்று கூற்றுகளும் பிரிவு 169-ன் ஒப்படைக்கப்பட்ட சட்டமியற்றும் அதிகாரத்தை சரியாகக் கூறுகின்றன."
       }
     },
     "tnpsc_tip": {
@@ -4346,13 +4346,13 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "B",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "C",
@@ -4366,19 +4366,19 @@
       }
     ],
     "options_en": [
-      "1 and 2 only",
       "2 and 3 only",
+      "1 and 2 only",
       "1 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டுமே",
       "2 மற்றும் 3 மட்டுமே",
+      "1 மற்றும் 2 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because Section 28A explicitly defines the period of deemed deputation as commencing on the date of election notification and ENDING with the declaration of the election results, not for 5 years.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது; ஏனெனில் பிரிவு 28A-ன் படி அயல்பணி காலம் என்பது தேர்தல் அறிவிக்கை வெளியான நாள் முதல் தேர்தல் முடிவுகள் அறிவிக்கப்படும் நாள் வரை மட்டுமே நீடிக்கும், 5 ஆண்டுகள் அல்ல."
@@ -4387,12 +4387,12 @@
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது; ஏனெனில் பிரிவு 28A-ன் படி அயல்பணி காலம் என்பது தேர்தல் அறிவிக்கை வெளியான நாள் முதல் தேர்தல் முடிவுகள் அறிவிக்கப்படும் நாள் வரை மட்டுமே நீடிக்கும், 5 ஆண்டுகள் அல்ல.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Statements 1 and 2 are true; statement 3 misstates the duration.",
-        "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 2 சரி; கூற்று 3 கால அளவை தவறாகக் கூறுகிறது."
-      },
-      "B": {
         "en": "Incorrect. Statement 3 is false.",
         "ta": "தவறானது. கூற்று 3 தவறு."
+      },
+      "B": {
+        "en": "Correct. Statements 1 and 2 are true; statement 3 misstates the duration.",
+        "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 2 சரி; கூற்று 3 கால அளவை தவறாகக் கூறுகிறது."
       },
       "C": {
         "en": "Incorrect. Statement 3 is false.",
@@ -4548,8 +4548,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "B",
@@ -4563,24 +4563,24 @@
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       }
     ],
     "options_en": [
-      "1 and 2 only",
+      "1, 2 and 3",
       "2 and 3 only",
       "1 and 3 only",
-      "1, 2 and 3"
+      "1 and 2 only"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டுமே",
+      "1, 2 மற்றும் 3",
       "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
-      "1, 2 மற்றும் 3"
+      "1 மற்றும் 2 மட்டுமே"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because Section 78 explicitly mandates that EVERY contesting candidate (winners, runners-up, and those who lost deposits) must lodge their account of election expenses.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது; ஏனெனில் பிரிவு 78 வெற்றி பெற்றவர், தோற்றவர், வைப்புத்தொகை இழந்தவர் என தேர்தலில் போட்டியிட்ட 'ஒவ்வொரு வேட்பாளரும்' செலவுக் கணக்கு தாக்கல் செய்வதை கட்டாயமாக்குகிறது."
@@ -4589,8 +4589,8 @@
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது; ஏனெனில் பிரிவு 78 வெற்றி பெற்றவர், தோற்றவர், வைப்புத்தொகை இழந்தவர் என தேர்தலில் போட்டியிட்ட 'ஒவ்வொரு வேட்பாளரும்' செலவுக் கணக்கு தாக்கல் செய்வதை கட்டாயமாக்குகிறது.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Statements 1 and 2 are true; statement 3 is false as ALL candidates must file.",
-        "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 2 சரி; போட்டியிட்ட அனைத்து வேட்பாளர்களும் தாக்கல் செய்ய வேண்டும் என்பதால் கூற்று 3 தவறு."
+        "en": "Incorrect. Statement 3 is false.",
+        "ta": "தவறானது. கூற்று 3 தவறு."
       },
       "B": {
         "en": "Incorrect. Statement 3 is false.",
@@ -4601,8 +4601,8 @@
         "ta": "தவறானது. கூற்று 3 தவறு."
       },
       "D": {
-        "en": "Incorrect. Statement 3 is false.",
-        "ta": "தவறானது. கூற்று 3 தவறு."
+        "en": "Correct. Statements 1 and 2 are true; statement 3 is false as ALL candidates must file.",
+        "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 2 சரி; போட்டியிட்ட அனைத்து வேட்பாளர்களும் தாக்கல் செய்ய வேண்டும் என்பதால் கூற்று 3 தவறு."
       }
     },
     "tnpsc_tip": {
@@ -4649,8 +4649,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "B",
@@ -4659,8 +4659,8 @@
       },
       {
         "id": "C",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "D",
@@ -4669,19 +4669,19 @@
       }
     ],
     "options_en": [
-      "1 and 2 only",
-      "2 and 3 only",
       "1 and 3 only",
+      "2 and 3 only",
+      "1 and 2 only",
       "1, 2 and 3"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டுமே",
-      "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
+      "2 மற்றும் 3 மட்டுமே",
+      "1 மற்றும் 2 மட்டுமே",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because unlike the struck-down Electoral Bonds, Electoral Trusts are legally MANDATED to submit an annual report to the ECI disclosing all donor names, PAN details, and recipient parties.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது; ஏனெனில் தேர்தல் பத்திரங்களைப் போலன்றி, தேர்தல் அறக்கட்டளைகள் நன்கொடையாளரின் பெயர், பான் எண் மற்றும் பெற்ற கட்சிகளின் விவரங்களை ECI-யிடம் வெளிப்படையாக சமர்ப்பிப்பது கட்டாயமாகும்."
@@ -4690,16 +4690,16 @@
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது; ஏனெனில் தேர்தல் பத்திரங்களைப் போலன்றி, தேர்தல் அறக்கட்டளைகள் நன்கொடையாளரின் பெயர், பான் எண் மற்றும் பெற்ற கட்சிகளின் விவரங்களை ECI-யிடம் வெளிப்படையாக சமர்ப்பிப்பது கட்டாயமாகும்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Statements 1 and 2 are true; statement 3 is false as transparency is mandatory.",
-        "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 2 சரி; வெளிப்படைத்தன்மை கட்டாயம் என்பதால் கூற்று 3 தவறு."
+        "en": "Incorrect. Statement 3 is false.",
+        "ta": "தவறானது. கூற்று 3 தவறு."
       },
       "B": {
         "en": "Incorrect. Statement 3 is false.",
         "ta": "தவறானது. கூற்று 3 தவறு."
       },
       "C": {
-        "en": "Incorrect. Statement 3 is false.",
-        "ta": "தவறானது. கூற்று 3 தவறு."
+        "en": "Correct. Statements 1 and 2 are true; statement 3 is false as transparency is mandatory.",
+        "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 2 சரி; வெளிப்படைத்தன்மை கட்டாயம் என்பதால் கூற்று 3 தவறு."
       },
       "D": {
         "en": "Incorrect. Statement 3 is false.",
@@ -4750,13 +4750,13 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "B",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "C",
@@ -4770,19 +4770,19 @@
       }
     ],
     "options_en": [
-      "1 and 2 only",
       "2 and 3 only",
+      "1 and 2 only",
       "1 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டுமே",
       "2 மற்றும் 3 மட்டுமே",
+      "1 மற்றும் 2 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because an election petition questioning parliamentary or assembly elections can ONLY be presented to the HIGH COURT under Section 80A, never to the President.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது; ஏனெனில் பிரிவு 80A-ன் கீழ் தேர்தல் மனு உயர் நீதிமன்றத்தில் மட்டுமே தாக்கல் செய்யப்பட முடியும், குடியரசுத் தலைவரிடம் அல்ல."
@@ -4791,12 +4791,12 @@
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது; ஏனெனில் பிரிவு 80A-ன் கீழ் தேர்தல் மனு உயர் நீதிமன்றத்தில் மட்டுமே தாக்கல் செய்யப்பட முடியும், குடியரசுத் தலைவரிடம் அல்ல.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Statements 1 and 2 are true; statement 3 is legally baseless.",
-        "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 2 சரி; கூற்று 3 தவறு."
-      },
-      "B": {
         "en": "Incorrect. Statement 3 is false.",
         "ta": "தவறானது. கூற்று 3 தவறு."
+      },
+      "B": {
+        "en": "Correct. Statements 1 and 2 are true; statement 3 is legally baseless.",
+        "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 2 சரி; கூற்று 3 தவறு."
       },
       "C": {
         "en": "Incorrect. Statement 3 is false.",
@@ -4851,13 +4851,13 @@
     "options": [
       {
         "id": "A",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "B",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "C",
@@ -4871,19 +4871,19 @@
       }
     ],
     "options_en": [
-      "1, 2 and 3",
       "1 and 2 only",
+      "1, 2 and 3",
       "2 and 3 only",
       "1 and 3 only"
     ],
     "options_ta": [
-      "1, 2 மற்றும் 3",
       "1 மற்றும் 2 மட்டுமே",
+      "1, 2 மற்றும் 3",
       "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "All three statements are correct. Under Section 100(1)(c), improper rejection of nomination is fatal per se; under Section 100(1)(d)(i), improper acceptance requires proving material effect; and under Section 100(1)(b), a corrupt practice by candidate/agent voids the election automatically.",
       "ta": "மூன்று கூற்றுகளும் சரியானவை. பிரிவு 100(1)(c)-ன் கீழ் மனு தவறாக நிராகரிக்கப்பட்டால் தேர்தல் தானாக ரத்தாகும்; பிரிவு 100(1)(d)(i)-ன் கீழ் மனு ஏற்கப்பட்டால் முடிவு பாதிக்கப்பட்டது நிரூபிக்கப்பட வேண்டும்; பிரிவு 100(1)(b)-ன் கீழ் ஊழல் நடைமுறை தேர்தலை ரத்து செய்யும்."
@@ -4892,12 +4892,12 @@
     "explanation_ta": "மூன்று கூற்றுகளும் சரியானவை. பிரிவு 100(1)(c)-ன் கீழ் மனு தவறாக நிராகரிக்கப்பட்டால் தேர்தல் தானாக ரத்தாகும்; பிரிவு 100(1)(d)(i)-ன் கீழ் மனு ஏற்கப்பட்டால் முடிவு பாதிக்கப்பட்டது நிரூபிக்கப்பட வேண்டும்; பிரிவு 100(1)(b)-ன் கீழ் ஊழல் நடைமுறை தேர்தலை ரத்து செய்யும்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. All three statements accurately state Section 100 jurisprudence.",
-        "ta": "சரியானது. மூன்று கூற்றுகளும் பிரிவு 100-ன் சட்ட விதிகளை துல்லியமாகக் கூறுகின்றன."
-      },
-      "B": {
         "en": "Incorrect. Statement 3 is also correct.",
         "ta": "தவறானது. கூற்று 3-ம் சரியானது."
+      },
+      "B": {
+        "en": "Correct. All three statements accurately state Section 100 jurisprudence.",
+        "ta": "சரியானது. மூன்று கூற்றுகளும் பிரிவு 100-ன் சட்ட விதிகளை துல்லியமாகக் கூறுகின்றன."
       },
       "C": {
         "en": "Incorrect. Statement 1 is also correct.",
@@ -4951,8 +4951,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "B",
@@ -4961,8 +4961,8 @@
       },
       {
         "id": "C",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "D",
@@ -4971,19 +4971,19 @@
       }
     ],
     "options_en": [
-      "1, 2 and 3",
-      "1 and 2 only",
       "2 and 3 only",
+      "1 and 2 only",
+      "1, 2 and 3",
       "1 and 3 only"
     ],
     "options_ta": [
-      "1, 2 மற்றும் 3",
-      "1 மற்றும் 2 மட்டுமே",
       "2 மற்றும் 3 மட்டுமே",
+      "1 மற்றும் 2 மட்டுமே",
+      "1, 2 மற்றும் 3",
       "1 மற்றும் 3 மட்டுமே"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "All three statements are correct. In A.C. Jose (1984), the Supreme Court struck down EVM use in Paravur for lack of statutory law; Parliament remedied this by inserting Section 61A with effect from 15 March 1989; and the Madras High Court and Supreme Court (2001) fully upheld Section 61A and EVMs.",
       "ta": "மூன்று கூற்றுகளும் சரியானவை. 1984 ஏ.சி. ஜோஸ் தீர்ப்பைத் தொடர்ந்து சட்டப்பூர்வ அதிகாரம் அளிக்க 1989-ல் பிரிவு 61A சேர்க்கப்பட்டது; இது ECI-க்கு EVM தொகுதிகளைக் குறிப்பிட அதிகாரம் அளிக்கிறது; 2001-ல் உச்ச நீதிமன்றம் இதன் செல்லுபடியை உறுதி செய்தது."
@@ -4992,16 +4992,16 @@
     "explanation_ta": "மூன்று கூற்றுகளும் சரியானவை. 1984 ஏ.சி. ஜோஸ் தீர்ப்பைத் தொடர்ந்து சட்டப்பூர்வ அதிகாரம் அளிக்க 1989-ல் பிரிவு 61A சேர்க்கப்பட்டது; இது ECI-க்கு EVM தொகுதிகளைக் குறிப்பிட அதிகாரம் அளிக்கிறது; 2001-ல் உச்ச நீதிமன்றம் இதன் செல்லுபடியை உறுதி செய்தது.",
     "why_not_others": {
       "A": {
-        "en": "Correct. All three statements accurately describe the statutory evolution of EVMs in India.",
-        "ta": "சரியானது. மூன்று கூற்றுகளும் இந்தியாவில் EVM-ன் சட்டப்பூர்வ பரிணாமத்தை சரியாகக் கூறுகின்றன."
+        "en": "Incorrect. Statement 1 is also correct.",
+        "ta": "தவறானது. கூற்று 1-ம் சரியானது."
       },
       "B": {
         "en": "Incorrect. Statement 3 is also correct.",
         "ta": "தவறானது. கூற்று 3-ம் சரியானது."
       },
       "C": {
-        "en": "Incorrect. Statement 1 is also correct.",
-        "ta": "தவறானது. கூற்று 1-ம் சரியானது."
+        "en": "Correct. All three statements accurately describe the statutory evolution of EVMs in India.",
+        "ta": "சரியானது. மூன்று கூற்றுகளும் இந்தியாவில் EVM-ன் சட்டப்பூர்வ பரிணாமத்தை சரியாகக் கூறுகின்றன."
       },
       "D": {
         "en": "Incorrect. Statement 2 is also correct.",

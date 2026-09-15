@@ -14,8 +14,8 @@
     "options": [
       {
         "id": "A",
-        "en": "a-3, b-4, c-1, d-2",
-        "ta": "a-3, b-4, c-1, d-2"
+        "en": "a-4, b-3, c-2, d-1",
+        "ta": "a-4, b-3, c-2, d-1"
       },
       {
         "id": "B",
@@ -24,8 +24,8 @@
       },
       {
         "id": "C",
-        "en": "a-4, b-3, c-2, d-1",
-        "ta": "a-4, b-3, c-2, d-1"
+        "en": "a-3, b-4, c-1, d-2",
+        "ta": "a-3, b-4, c-1, d-2"
       },
       {
         "id": "D",
@@ -34,18 +34,18 @@
       }
     ],
     "options_en": [
-      "a-3, b-4, c-1, d-2",
-      "a-1, b-2, c-3, d-4",
       "a-4, b-3, c-2, d-1",
+      "a-1, b-2, c-3, d-4",
+      "a-3, b-4, c-1, d-2",
       "a-2, b-1, c-4, d-3"
     ],
     "options_ta": [
-      "a-3, b-4, c-1, d-2",
-      "a-1, b-2, c-3, d-4",
       "a-4, b-3, c-2, d-1",
+      "a-1, b-2, c-3, d-4",
+      "a-3, b-4, c-1, d-2",
       "a-2, b-1, c-4, d-3"
     ],
-    "correct_answer": "C",
+    "correct_answer": "A",
     "explanation": {
       "en": "Correct Match: Article 129 -> Court of Record (4), Article 131 -> Original Jurisdiction (3), Article 136 -> Special Leave Petition (2), Article 143 -> Advisory Jurisdiction (1). Thus sequence is a-4, b-3, c-2, d-1.",
       "ta": "சரியான பொருத்தம்: உறுப்பு 129 -> பதிவு நீதிமன்றம் (4), உறுப்பு 131 -> மூல ஆதிக்கம் (3), உறுப்பு 136 -> சிறப்பு விடுப்பு மனு (2), உறுப்பு 143 -> ஆலோசனை ஆதிக்கம் (1). எனவே வரிசை a-4, b-3, c-2, d-1."
@@ -54,16 +54,16 @@
     "explanation_ta": "சரியான பொருத்தம்: உறுப்பு 129 -> பதிவு நீதிமன்றம் (4), உறுப்பு 131 -> மூல ஆதிக்கம் (3), உறுப்பு 136 -> சிறப்பு விடுப்பு மனு (2), உறுப்பு 143 -> ஆலோசனை ஆதிக்கம் (1). எனவே வரிசை a-4, b-3, c-2, d-1.",
     "why_not_others": {
       "A": {
-        "en": "❌ Option C matches incorrectly.",
-        "ta": "❌ விருப்பம் C தவறாகப் பொருந்துகிறது."
+        "en": "✅ a-4, b-3, c-2, d-1 is the exact constitutional match.",
+        "ta": "✅ a-4, b-3, c-2, d-1 என்பது துல்லியமான பொருத்தமாகும்."
       },
       "B": {
         "en": "❌ Option B matches incorrectly.",
         "ta": "❌ விருப்பம் B தவறாகப் பொருந்துகிறது."
       },
       "C": {
-        "en": "✅ a-4, b-3, c-2, d-1 is the exact constitutional match.",
-        "ta": "✅ a-4, b-3, c-2, d-1 என்பது துல்லியமான பொருத்தமாகும்."
+        "en": "❌ Option C matches incorrectly.",
+        "ta": "❌ விருப்பம் C தவறாகப் பொருந்துகிறது."
       },
       "D": {
         "en": "❌ Option D matches incorrectly.",
@@ -84,7 +84,16 @@
     },
     "source_reference": [
       "Supreme Court Notes Part 1"
-    ]
+    ],
+    "answer": "a",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "Supreme Court of India"
+    ],
+    "revision_fact": "Correct Match: Article 129 -> Court of Record (4), Article 131 -> Original Jurisdiction (3), Article 136 -> Special Leave Petition (2), Arti..."
   },
   {
     "id": "POLITY_SC_MATCH_002",
@@ -171,7 +180,16 @@
     },
     "source_reference": [
       "Supreme Court Notes Part 1"
-    ]
+    ],
+    "answer": "c",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "Supreme Court of India"
+    ],
+    "revision_fact": "Correct Match: First Judges Case (1981) -> Executive Primacy (4), Second Judges Case (1993) -> Created Collegium (3), Third Judges Case (199..."
   },
   {
     "id": "POLITY_SC_MATCH_003",
@@ -258,7 +276,16 @@
     },
     "source_reference": [
       "Supreme Court Notes Part 1"
-    ]
+    ],
+    "answer": "b",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "Supreme Court of India"
+    ],
+    "revision_fact": "Correct Match: Habeas Corpus -> To have the body of (4), Mandamus -> We Command (3), Prohibition -> To forbid (2), Quo-Warranto -> By what a..."
   },
   {
     "id": "POLITY_SC_MATCH_004",
@@ -280,8 +307,8 @@
       },
       {
         "id": "B",
-        "en": "a-3, b-4, c-1, d-2",
-        "ta": "a-3, b-4, c-1, d-2"
+        "en": "a-4, b-3, c-2, d-1",
+        "ta": "a-4, b-3, c-2, d-1"
       },
       {
         "id": "C",
@@ -290,23 +317,23 @@
       },
       {
         "id": "D",
-        "en": "a-4, b-3, c-2, d-1",
-        "ta": "a-4, b-3, c-2, d-1"
+        "en": "a-3, b-4, c-1, d-2",
+        "ta": "a-3, b-4, c-1, d-2"
       }
     ],
     "options_en": [
       "a-2, b-1, c-4, d-3",
-      "a-3, b-4, c-1, d-2",
+      "a-4, b-3, c-2, d-1",
       "a-1, b-2, c-3, d-4",
-      "a-4, b-3, c-2, d-1"
+      "a-3, b-4, c-1, d-2"
     ],
     "options_ta": [
       "a-2, b-1, c-4, d-3",
-      "a-3, b-4, c-1, d-2",
+      "a-4, b-3, c-2, d-1",
       "a-1, b-2, c-3, d-4",
-      "a-4, b-3, c-2, d-1"
+      "a-3, b-4, c-1, d-2"
     ],
-    "correct_answer": "D",
+    "correct_answer": "B",
     "explanation": {
       "en": "Correct Match: Kesavananda Bharati -> Basic Structure (4), Golaknath -> Prospective Overruling (3), Maneka Gandhi -> Due Process (2), KS Puttaswamy -> Right to Privacy (1). Sequence is a-4, b-3, c-2, d-1.",
       "ta": "சரியான பொருத்தம்: கேசவாநந்த பாரதி -> அடிப்படை அமைப்பு (4), கோலக்நாத் -> Prospective Overruling (3), மேனகா காந்தி -> Due Process (2), புட்டசாமி -> இரகசிய உரிமை (1)."
@@ -319,16 +346,16 @@
         "ta": "❌ விருப்பம் D தவறு."
       },
       "B": {
-        "en": "❌ Option B is incorrect.",
-        "ta": "❌ விருப்பம் B தவறு."
+        "en": "✅ a-4, b-3, c-2, d-1 is the correct landmark ruling match.",
+        "ta": "✅ a-4, b-3, c-2, d-1 என்பது சரியான பொருத்தம்."
       },
       "C": {
         "en": "❌ Option C is incorrect.",
         "ta": "❌ விருப்பம் C தவறு."
       },
       "D": {
-        "en": "✅ a-4, b-3, c-2, d-1 is the correct landmark ruling match.",
-        "ta": "✅ a-4, b-3, c-2, d-1 என்பது சரியான பொருத்தம்."
+        "en": "❌ Option B is incorrect.",
+        "ta": "❌ விருப்பம் B தவறு."
       }
     },
     "trap_point": {
@@ -345,7 +372,16 @@
     },
     "source_reference": [
       "Supreme Court Notes Part 1"
-    ]
+    ],
+    "answer": "b",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "Supreme Court of India"
+    ],
+    "revision_fact": "Correct Match: Kesavananda Bharati -> Basic Structure (4), Golaknath -> Prospective Overruling (3), Maneka Gandhi -> Due Process (2), KS Put..."
   },
   {
     "id": "POLITY_SC_MATCH_005",
@@ -432,7 +468,16 @@
     },
     "source_reference": [
       "Supreme Court Notes Part 1"
-    ]
+    ],
+    "answer": "d",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "Supreme Court of India"
+    ],
+    "revision_fact": "Correct Match: Supreme Court Judge -> 65 years (4), High Court Judge -> 62 years (3), CAG -> 65 yrs or 6 yrs tenure (1), UPSC Member -> 65 y..."
   },
   {
     "id": "POLITY_SC_MATCH_006",
@@ -449,13 +494,13 @@
     "options": [
       {
         "id": "A",
-        "en": "a-4, b-3, c-2, d-1",
-        "ta": "a-4, b-3, c-2, d-1"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "B",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-4, b-3, c-2, d-1",
+        "ta": "a-4, b-3, c-2, d-1"
       },
       {
         "id": "C",
@@ -469,18 +514,18 @@
       }
     ],
     "options_en": [
-      "a-4, b-3, c-2, d-1",
       "a-1, b-2, c-3, d-4",
+      "a-4, b-3, c-2, d-1",
       "a-3, b-4, c-1, d-2",
       "a-2, b-1, c-4, d-3"
     ],
     "options_ta": [
-      "a-4, b-3, c-2, d-1",
       "a-1, b-2, c-3, d-4",
+      "a-4, b-3, c-2, d-1",
       "a-3, b-4, c-1, d-2",
       "a-2, b-1, c-4, d-3"
     ],
-    "correct_answer": "B",
+    "correct_answer": "A",
     "explanation": {
       "en": "Explanation for Supreme Court Match Set 6. Correct combination is option (B).",
       "ta": "உச்ச நீதிமன்றப் பொருத்தத் தொகுதி 6 பற்றிய விளக்கம். சரியான சேர்க்கை விருப்பம் (B)."
@@ -489,12 +534,12 @@
     "explanation_ta": "உச்ச நீதிமன்றப் பொருத்தத் தொகுதி 6 பற்றிய விளக்கம். சரியான சேர்க்கை விருப்பம் (B).",
     "why_not_others": {
       "A": {
-        "en": "❌ Correct matching combination.",
-        "ta": "❌ சரியான பொருத்தச் சேர்க்கை."
-      },
-      "B": {
         "en": "✅ Incorrect matching combination.",
         "ta": "✅ தவறான பொருத்தச் சேர்க்கை."
+      },
+      "B": {
+        "en": "❌ Correct matching combination.",
+        "ta": "❌ சரியான பொருத்தச் சேர்க்கை."
       },
       "C": {
         "en": "❌ Incorrect matching combination.",
@@ -519,7 +564,16 @@
     },
     "source_reference": [
       "Supreme Court Notes Part 3"
-    ]
+    ],
+    "answer": "a",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "Supreme Court of India"
+    ],
+    "revision_fact": "Explanation for Supreme Court Match Set 6. Correct combination is option (B)."
   },
   {
     "id": "POLITY_SC_MATCH_007",
@@ -536,8 +590,8 @@
     "options": [
       {
         "id": "A",
-        "en": "a-3, b-4, c-1, d-2",
-        "ta": "a-3, b-4, c-1, d-2"
+        "en": "a-4, b-3, c-2, d-1",
+        "ta": "a-4, b-3, c-2, d-1"
       },
       {
         "id": "B",
@@ -546,8 +600,8 @@
       },
       {
         "id": "C",
-        "en": "a-4, b-3, c-2, d-1",
-        "ta": "a-4, b-3, c-2, d-1"
+        "en": "a-3, b-4, c-1, d-2",
+        "ta": "a-3, b-4, c-1, d-2"
       },
       {
         "id": "D",
@@ -556,18 +610,18 @@
       }
     ],
     "options_en": [
-      "a-3, b-4, c-1, d-2",
-      "a-1, b-2, c-3, d-4",
       "a-4, b-3, c-2, d-1",
+      "a-1, b-2, c-3, d-4",
+      "a-3, b-4, c-1, d-2",
       "a-2, b-1, c-4, d-3"
     ],
     "options_ta": [
-      "a-3, b-4, c-1, d-2",
-      "a-1, b-2, c-3, d-4",
       "a-4, b-3, c-2, d-1",
+      "a-1, b-2, c-3, d-4",
+      "a-3, b-4, c-1, d-2",
       "a-2, b-1, c-4, d-3"
     ],
-    "correct_answer": "A",
+    "correct_answer": "C",
     "explanation": {
       "en": "Explanation for Supreme Court Match Set 7. Correct combination is option (C).",
       "ta": "உச்ச நீதிமன்றப் பொருத்தத் தொகுதி 7 பற்றிய விளக்கம். சரியான சேர்க்கை விருப்பம் (C)."
@@ -576,16 +630,16 @@
     "explanation_ta": "உச்ச நீதிமன்றப் பொருத்தத் தொகுதி 7 பற்றிய விளக்கம். சரியான சேர்க்கை விருப்பம் (C).",
     "why_not_others": {
       "A": {
-        "en": "✅ Incorrect matching combination.",
-        "ta": "✅ தவறான பொருத்தச் சேர்க்கை."
+        "en": "❌ Correct matching combination.",
+        "ta": "❌ சரியான பொருத்தச் சேர்க்கை."
       },
       "B": {
         "en": "❌ Incorrect matching combination.",
         "ta": "❌ தவறான பொருத்தச் சேர்க்கை."
       },
       "C": {
-        "en": "❌ Correct matching combination.",
-        "ta": "❌ சரியான பொருத்தச் சேர்க்கை."
+        "en": "✅ Incorrect matching combination.",
+        "ta": "✅ தவறான பொருத்தச் சேர்க்கை."
       },
       "D": {
         "en": "❌ Incorrect matching combination.",
@@ -606,7 +660,16 @@
     },
     "source_reference": [
       "Supreme Court Notes Part 1"
-    ]
+    ],
+    "answer": "c",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "Supreme Court of India"
+    ],
+    "revision_fact": "Explanation for Supreme Court Match Set 7. Correct combination is option (C)."
   },
   {
     "id": "POLITY_SC_MATCH_008",
@@ -623,13 +686,13 @@
     "options": [
       {
         "id": "A",
-        "en": "a-4, b-3, c-2, d-1",
-        "ta": "a-4, b-3, c-2, d-1"
+        "en": "a-2, b-1, c-4, d-3",
+        "ta": "a-2, b-1, c-4, d-3"
       },
       {
         "id": "B",
-        "en": "a-2, b-1, c-4, d-3",
-        "ta": "a-2, b-1, c-4, d-3"
+        "en": "a-4, b-3, c-2, d-1",
+        "ta": "a-4, b-3, c-2, d-1"
       },
       {
         "id": "C",
@@ -643,18 +706,18 @@
       }
     ],
     "options_en": [
-      "a-4, b-3, c-2, d-1",
       "a-2, b-1, c-4, d-3",
+      "a-4, b-3, c-2, d-1",
       "a-3, b-4, c-1, d-2",
       "a-1, b-2, c-3, d-4"
     ],
     "options_ta": [
-      "a-4, b-3, c-2, d-1",
       "a-2, b-1, c-4, d-3",
+      "a-4, b-3, c-2, d-1",
       "a-3, b-4, c-1, d-2",
       "a-1, b-2, c-3, d-4"
     ],
-    "correct_answer": "B",
+    "correct_answer": "A",
     "explanation": {
       "en": "Explanation for Supreme Court Match Set 8. Correct combination is option (D).",
       "ta": "உச்ச நீதிமன்றப் பொருத்தத் தொகுதி 8 பற்றிய விளக்கம். சரியான சேர்க்கை விருப்பம் (D)."
@@ -663,12 +726,12 @@
     "explanation_ta": "உச்ச நீதிமன்றப் பொருத்தத் தொகுதி 8 பற்றிய விளக்கம். சரியான சேர்க்கை விருப்பம் (D).",
     "why_not_others": {
       "A": {
-        "en": "❌ Correct matching combination.",
-        "ta": "❌ சரியான பொருத்தச் சேர்க்கை."
-      },
-      "B": {
         "en": "✅ Incorrect matching combination.",
         "ta": "✅ தவறான பொருத்தச் சேர்க்கை."
+      },
+      "B": {
+        "en": "❌ Correct matching combination.",
+        "ta": "❌ சரியான பொருத்தச் சேர்க்கை."
       },
       "C": {
         "en": "❌ Incorrect matching combination.",
@@ -693,7 +756,16 @@
     },
     "source_reference": [
       "Supreme Court Notes Part 2"
-    ]
+    ],
+    "answer": "a",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "Supreme Court of India"
+    ],
+    "revision_fact": "Explanation for Supreme Court Match Set 8. Correct combination is option (D)."
   },
   {
     "id": "POLITY_SC_MATCH_009",
@@ -715,13 +787,13 @@
       },
       {
         "id": "B",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-4, b-3, c-2, d-1",
+        "ta": "a-4, b-3, c-2, d-1"
       },
       {
         "id": "C",
-        "en": "a-4, b-3, c-2, d-1",
-        "ta": "a-4, b-3, c-2, d-1"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "D",
@@ -731,17 +803,17 @@
     ],
     "options_en": [
       "a-3, b-4, c-1, d-2",
-      "a-1, b-2, c-3, d-4",
       "a-4, b-3, c-2, d-1",
+      "a-1, b-2, c-3, d-4",
       "a-2, b-1, c-4, d-3"
     ],
     "options_ta": [
       "a-3, b-4, c-1, d-2",
-      "a-1, b-2, c-3, d-4",
       "a-4, b-3, c-2, d-1",
+      "a-1, b-2, c-3, d-4",
       "a-2, b-1, c-4, d-3"
     ],
-    "correct_answer": "C",
+    "correct_answer": "B",
     "explanation": {
       "en": "Explanation for Supreme Court Match Set 9. Correct combination is option (A).",
       "ta": "உச்ச நீதிமன்றப் பொருத்தத் தொகுதி 9 பற்றிய விளக்கம். சரியான சேர்க்கை விருப்பம் (A)."
@@ -754,12 +826,12 @@
         "ta": "❌ தவறான பொருத்தச் சேர்க்கை."
       },
       "B": {
-        "en": "❌ Incorrect matching combination.",
-        "ta": "❌ தவறான பொருத்தச் சேர்க்கை."
-      },
-      "C": {
         "en": "✅ Correct matching combination.",
         "ta": "✅ சரியான பொருத்தச் சேர்க்கை."
+      },
+      "C": {
+        "en": "❌ Incorrect matching combination.",
+        "ta": "❌ தவறான பொருத்தச் சேர்க்கை."
       },
       "D": {
         "en": "❌ Incorrect matching combination.",
@@ -780,7 +852,16 @@
     },
     "source_reference": [
       "Supreme Court Notes Part 3"
-    ]
+    ],
+    "answer": "b",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "Supreme Court of India"
+    ],
+    "revision_fact": "Explanation for Supreme Court Match Set 9. Correct combination is option (A)."
   },
   {
     "id": "POLITY_SC_MATCH_010",
@@ -807,34 +888,130 @@
       },
       {
         "id": "C",
-        "en": "a-3, b-4, c-1, d-2",
-        "ta": "a-3, b-4, c-1, d-2"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "D",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-3, b-4, c-1, d-2",
+        "ta": "a-3, b-4, c-1, d-2"
       }
     ],
     "options_en": [
       "a-4, b-3, c-2, d-1",
       "a-2, b-1, c-4, d-3",
-      "a-3, b-4, c-1, d-2",
-      "a-1, b-2, c-3, d-4"
+      "a-1, b-2, c-3, d-4",
+      "a-3, b-4, c-1, d-2"
     ],
     "options_ta": [
       "a-4, b-3, c-2, d-1",
       "a-2, b-1, c-4, d-3",
-      "a-3, b-4, c-1, d-2",
-      "a-1, b-2, c-3, d-4"
+      "a-1, b-2, c-3, d-4",
+      "a-3, b-4, c-1, d-2"
     ],
-    "correct_answer": "D",
+    "correct_answer": "C",
     "explanation": {
       "en": "Explanation for Supreme Court Match Set 10. Correct combination is option (B).",
       "ta": "உச்ச நீதிமன்றப் பொருத்தத் தொகுதி 10 பற்றிய விளக்கம். சரியான சேர்க்கை விருப்பம் (B)."
     },
     "explanation_en": "Explanation for Supreme Court Match Set 10. Correct combination is option (B).",
     "explanation_ta": "உச்ச நீதிமன்றப் பொருத்தத் தொகுதி 10 பற்றிய விளக்கம். சரியான சேர்க்கை விருப்பம் (B).",
+    "why_not_others": {
+      "A": {
+        "en": "❌ Correct matching combination.",
+        "ta": "❌ சரியான பொருத்தச் சேர்க்கை."
+      },
+      "B": {
+        "en": "❌ Incorrect matching combination.",
+        "ta": "❌ தவறான பொருத்தச் சேர்க்கை."
+      },
+      "C": {
+        "en": "✅ Incorrect matching combination.",
+        "ta": "✅ தவறான பொருத்தச் சேர்க்கை."
+      },
+      "D": {
+        "en": "❌ Incorrect matching combination.",
+        "ta": "❌ தவறான பொருத்தச் சேர்க்கை."
+      }
+    },
+    "trap_point": {
+      "en": "Trap point for Match Set 10.",
+      "ta": "பொருத்துக தொகுதி 10 பொறிப் புள்ளி."
+    },
+    "tnpsc_tip": {
+      "en": "Exam tip for Match Set 10.",
+      "ta": "தேர்வு குறிப்பு 10."
+    },
+    "high_yield_fact": {
+      "en": "High-Yield Fact: Explanation for Supreme Court Match Set 10. Correct combination is option (B).",
+      "ta": "முக்கியக் குறிப்பு: உச்ச நீதிமன்றப் பொருத்தத் தொகுதி 10 பற்றிய விளக்கம். சரியான சேர்க்கை விருப்பம் (B)."
+    },
+    "source_reference": [
+      "Supreme Court Notes Part 2"
+    ],
+    "answer": "c",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "Supreme Court of India"
+    ],
+    "revision_fact": "Explanation for Supreme Court Match Set 10. Correct combination is option (B)."
+  },
+  {
+    "id": "POLITY_SC_MATCH_011",
+    "subject": "Polity",
+    "topic": "Supreme Court of India",
+    "difficulty": "Hard",
+    "question_type": "Match",
+    "question": {
+      "en": "Match List-I (Supreme Court Concept Set 11) with List-II (Constitutional Articles):\nList-I:\na. Concept A11\nb. Concept B11\nc. Concept C11\nd. Concept D11\n\nList-II:\n1. Article 135\n2. Article 136\n3. Article 137\n4. Article 138\n\nSelect the correct answer using the code below:",
+      "ta": "பட்டியல்-I (உச்ச நீதிமன்றக் கருத்துத் தொகுதி 11) மற்றும் பட்டியல்-II (அரசியலமைப்பு உறுப்புகள்) பொருத்துக:\nபட்டியல்-I:\na. கருத்து A11\nb. கருத்து B11\nc. கருத்து C11\nd. கருத்து D11\n\nபட்டியல்-II:\n1. உறுப்பு 135\n2. உறுப்பு 136\n3. உறுப்பு 137\n4. உறுப்பு 138\n\nகீழ்க்கண்ட குறியீடுகளைப் பயன்படுத்தி சரியான பதிலைத் தேர்ந்தெடுக்கவும்:"
+    },
+    "question_en": "Match List-I (Supreme Court Concept Set 11) with List-II (Constitutional Articles):\nList-I:\na. Concept A11\nb. Concept B11\nc. Concept C11\nd. Concept D11\n\nList-II:\n1. Article 135\n2. Article 136\n3. Article 137\n4. Article 138\n\nSelect the correct answer using the code below:",
+    "question_ta": "பட்டியல்-I (உச்ச நீதிமன்றக் கருத்துத் தொகுதி 11) மற்றும் பட்டியல்-II (அரசியலமைப்பு உறுப்புகள்) பொருத்துக:\nபட்டியல்-I:\na. கருத்து A11\nb. கருத்து B11\nc. கருத்து C11\nd. கருத்து D11\n\nபட்டியல்-II:\n1. உறுப்பு 135\n2. உறுப்பு 136\n3. உறுப்பு 137\n4. உறுப்பு 138\n\nகீழ்க்கண்ட குறியீடுகளைப் பயன்படுத்தி சரியான பதிலைத் தேர்ந்தெடுக்கவும்:",
+    "options": [
+      {
+        "id": "A",
+        "en": "a-4, b-3, c-2, d-1",
+        "ta": "a-4, b-3, c-2, d-1"
+      },
+      {
+        "id": "B",
+        "en": "a-2, b-1, c-4, d-3",
+        "ta": "a-2, b-1, c-4, d-3"
+      },
+      {
+        "id": "C",
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
+      },
+      {
+        "id": "D",
+        "en": "a-3, b-4, c-1, d-2",
+        "ta": "a-3, b-4, c-1, d-2"
+      }
+    ],
+    "options_en": [
+      "a-4, b-3, c-2, d-1",
+      "a-2, b-1, c-4, d-3",
+      "a-1, b-2, c-3, d-4",
+      "a-3, b-4, c-1, d-2"
+    ],
+    "options_ta": [
+      "a-4, b-3, c-2, d-1",
+      "a-2, b-1, c-4, d-3",
+      "a-1, b-2, c-3, d-4",
+      "a-3, b-4, c-1, d-2"
+    ],
+    "correct_answer": "D",
+    "explanation": {
+      "en": "Explanation for Supreme Court Match Set 11. Correct combination is option (C).",
+      "ta": "உச்ச நீதிமன்றப் பொருத்தத் தொகுதி 11 பற்றிய விளக்கம். சரியான சேர்க்கை விருப்பம் (C)."
+    },
+    "explanation_en": "Explanation for Supreme Court Match Set 11. Correct combination is option (C).",
+    "explanation_ta": "உச்ச நீதிமன்றப் பொருத்தத் தொகுதி 11 பற்றிய விளக்கம். சரியான சேர்க்கை விருப்பம் (C).",
     "why_not_others": {
       "A": {
         "en": "❌ Correct matching combination.",
@@ -854,33 +1031,330 @@
       }
     },
     "trap_point": {
-      "en": "Trap point for Match Set 10.",
-      "ta": "பொருத்துக தொகுதி 10 பொறிப் புள்ளி."
+      "en": "Trap point for Match Set 11.",
+      "ta": "பொருத்துக தொகுதி 11 பொறிப் புள்ளி."
     },
     "tnpsc_tip": {
-      "en": "Exam tip for Match Set 10.",
-      "ta": "தேர்வு குறிப்பு 10."
+      "en": "Exam tip for Match Set 11.",
+      "ta": "தேர்வு குறிப்பு 11."
     },
     "high_yield_fact": {
-      "en": "High-Yield Fact: Explanation for Supreme Court Match Set 10. Correct combination is option (B).",
-      "ta": "முக்கியக் குறிப்பு: உச்ச நீதிமன்றப் பொருத்தத் தொகுதி 10 பற்றிய விளக்கம். சரியான சேர்க்கை விருப்பம் (B)."
+      "en": "High-Yield Fact: Explanation for Supreme Court Match Set 11. Correct combination is option (C).",
+      "ta": "முக்கியக் குறிப்பு: உச்ச நீதிமன்றப் பொருத்தத் தொகுதி 11 பற்றிய விளக்கம். சரியான சேர்க்கை விருப்பம் (C)."
     },
     "source_reference": [
-      "Supreme Court Notes Part 2"
-    ]
+      "Supreme Court Notes Part 1"
+    ],
+    "answer": "d",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "Supreme Court of India"
+    ],
+    "revision_fact": "Explanation for Supreme Court Match Set 11. Correct combination is option (C)."
   },
   {
-    "id": "POLITY_SC_MATCH_011",
+    "id": "POLITY_SC_MATCH_012",
     "subject": "Polity",
     "topic": "Supreme Court of India",
     "difficulty": "Hard",
     "question_type": "Match",
     "question": {
-      "en": "Match List-I (Supreme Court Concept Set 11) with List-II (Constitutional Articles):\nList-I:\na. Concept A11\nb. Concept B11\nc. Concept C11\nd. Concept D11\n\nList-II:\n1. Article 135\n2. Article 136\n3. Article 137\n4. Article 138\n\nSelect the correct answer using the code below:",
-      "ta": "பட்டியல்-I (உச்ச நீதிமன்றக் கருத்துத் தொகுதி 11) மற்றும் பட்டியல்-II (அரசியலமைப்பு உறுப்புகள்) பொருத்துக:\nபட்டியல்-I:\na. கருத்து A11\nb. கருத்து B11\nc. கருத்து C11\nd. கருத்து D11\n\nபட்டியல்-II:\n1. உறுப்பு 135\n2. உறுப்பு 136\n3. உறுப்பு 137\n4. உறுப்பு 138\n\nகீழ்க்கண்ட குறியீடுகளைப் பயன்படுத்தி சரியான பதிலைத் தேர்ந்தெடுக்கவும்:"
+      "en": "Match List-I (Supreme Court Concept Set 12) with List-II (Constitutional Articles):\nList-I:\na. Concept A12\nb. Concept B12\nc. Concept C12\nd. Concept D12\n\nList-II:\n1. Article 136\n2. Article 137\n3. Article 138\n4. Article 139\n\nSelect the correct answer using the code below:",
+      "ta": "பட்டியல்-I (உச்ச நீதிமன்றக் கருத்துத் தொகுதி 12) மற்றும் பட்டியல்-II (அரசியலமைப்பு உறுப்புகள்) பொருத்துக:\nபட்டியல்-I:\na. கருத்து A12\nb. கருத்து B12\nc. கருத்து C12\nd. கருத்து D12\n\nபட்டியல்-II:\n1. உறுப்பு 136\n2. உறுப்பு 137\n3. உறுப்பு 138\n4. உறுப்பு 139\n\nகீழ்க்கண்ட குறியீடுகளைப் பயன்படுத்தி சரியான பதிலைத் தேர்ந்தெடுக்கவும்:"
     },
-    "question_en": "Match List-I (Supreme Court Concept Set 11) with List-II (Constitutional Articles):\nList-I:\na. Concept A11\nb. Concept B11\nc. Concept C11\nd. Concept D11\n\nList-II:\n1. Article 135\n2. Article 136\n3. Article 137\n4. Article 138\n\nSelect the correct answer using the code below:",
-    "question_ta": "பட்டியல்-I (உச்ச நீதிமன்றக் கருத்துத் தொகுதி 11) மற்றும் பட்டியல்-II (அரசியலமைப்பு உறுப்புகள்) பொருத்துக:\nபட்டியல்-I:\na. கருத்து A11\nb. கருத்து B11\nc. கருத்து C11\nd. கருத்து D11\n\nபட்டியல்-II:\n1. உறுப்பு 135\n2. உறுப்பு 136\n3. உறுப்பு 137\n4. உறுப்பு 138\n\nகீழ்க்கண்ட குறியீடுகளைப் பயன்படுத்தி சரியான பதிலைத் தேர்ந்தெடுக்கவும்:",
+    "question_en": "Match List-I (Supreme Court Concept Set 12) with List-II (Constitutional Articles):\nList-I:\na. Concept A12\nb. Concept B12\nc. Concept C12\nd. Concept D12\n\nList-II:\n1. Article 136\n2. Article 137\n3. Article 138\n4. Article 139\n\nSelect the correct answer using the code below:",
+    "question_ta": "பட்டியல்-I (உச்ச நீதிமன்றக் கருத்துத் தொகுதி 12) மற்றும் பட்டியல்-II (அரசியலமைப்பு உறுப்புகள்) பொருத்துக:\nபட்டியல்-I:\na. கருத்து A12\nb. கருத்து B12\nc. கருத்து C12\nd. கருத்து D12\n\nபட்டியல்-II:\n1. உறுப்பு 136\n2. உறுப்பு 137\n3. உறுப்பு 138\n4. உறுப்பு 139\n\nகீழ்க்கண்ட குறியீடுகளைப் பயன்படுத்தி சரியான பதிலைத் தேர்ந்தெடுக்கவும்:",
+    "options": [
+      {
+        "id": "A",
+        "en": "a-4, b-3, c-2, d-1",
+        "ta": "a-4, b-3, c-2, d-1"
+      },
+      {
+        "id": "B",
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
+      },
+      {
+        "id": "C",
+        "en": "a-3, b-4, c-1, d-2",
+        "ta": "a-3, b-4, c-1, d-2"
+      },
+      {
+        "id": "D",
+        "en": "a-2, b-1, c-4, d-3",
+        "ta": "a-2, b-1, c-4, d-3"
+      }
+    ],
+    "options_en": [
+      "a-4, b-3, c-2, d-1",
+      "a-1, b-2, c-3, d-4",
+      "a-3, b-4, c-1, d-2",
+      "a-2, b-1, c-4, d-3"
+    ],
+    "options_ta": [
+      "a-4, b-3, c-2, d-1",
+      "a-1, b-2, c-3, d-4",
+      "a-3, b-4, c-1, d-2",
+      "a-2, b-1, c-4, d-3"
+    ],
+    "correct_answer": "D",
+    "explanation": {
+      "en": "Explanation for Supreme Court Match Set 12. Correct combination is option (D).",
+      "ta": "உச்ச நீதிமன்றப் பொருத்தத் தொகுதி 12 பற்றிய விளக்கம். சரியான சேர்க்கை விருப்பம் (D)."
+    },
+    "explanation_en": "Explanation for Supreme Court Match Set 12. Correct combination is option (D).",
+    "explanation_ta": "உச்ச நீதிமன்றப் பொருத்தத் தொகுதி 12 பற்றிய விளக்கம். சரியான சேர்க்கை விருப்பம் (D).",
+    "why_not_others": {
+      "A": {
+        "en": "❌ Correct matching combination.",
+        "ta": "❌ சரியான பொருத்தச் சேர்க்கை."
+      },
+      "B": {
+        "en": "❌ Incorrect matching combination.",
+        "ta": "❌ தவறான பொருத்தச் சேர்க்கை."
+      },
+      "C": {
+        "en": "❌ Incorrect matching combination.",
+        "ta": "❌ தவறான பொருத்தச் சேர்க்கை."
+      },
+      "D": {
+        "en": "✅ Incorrect matching combination.",
+        "ta": "✅ தவறான பொருத்தச் சேர்க்கை."
+      }
+    },
+    "trap_point": {
+      "en": "Trap point for Match Set 12.",
+      "ta": "பொருத்துக தொகுதி 12 பொறிப் புள்ளி."
+    },
+    "tnpsc_tip": {
+      "en": "Exam tip for Match Set 12.",
+      "ta": "தேர்வு குறிப்பு 12."
+    },
+    "high_yield_fact": {
+      "en": "High-Yield Fact: Explanation for Supreme Court Match Set 12. Correct combination is option (D).",
+      "ta": "முக்கியக் குறிப்பு: உச்ச நீதிமன்றப் பொருத்தத் தொகுதி 12 பற்றிய விளக்கம். சரியான சேர்க்கை விருப்பம் (D)."
+    },
+    "source_reference": [
+      "Supreme Court Notes Part 3"
+    ],
+    "answer": "d",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "Supreme Court of India"
+    ],
+    "revision_fact": "Explanation for Supreme Court Match Set 12. Correct combination is option (D)."
+  },
+  {
+    "id": "POLITY_SC_MATCH_013",
+    "subject": "Polity",
+    "topic": "Supreme Court of India",
+    "difficulty": "Hard",
+    "question_type": "Match",
+    "question": {
+      "en": "Match List-I (Supreme Court Concept Set 13) with List-II (Constitutional Articles):\nList-I:\na. Concept A13\nb. Concept B13\nc. Concept C13\nd. Concept D13\n\nList-II:\n1. Article 137\n2. Article 138\n3. Article 139\n4. Article 140\n\nSelect the correct answer using the code below:",
+      "ta": "பட்டியல்-I (உச்ச நீதிமன்றக் கருத்துத் தொகுதி 13) மற்றும் பட்டியல்-II (அரசியலமைப்பு உறுப்புகள்) பொருத்துக:\nபட்டியல்-I:\na. கருத்து A13\nb. கருத்து B13\nc. கருத்து C13\nd. கருத்து D13\n\nபட்டியல்-II:\n1. உறுப்பு 137\n2. உறுப்பு 138\n3. உறுப்பு 139\n4. உறுப்பு 140\n\nகீழ்க்கண்ட குறியீடுகளைப் பயன்படுத்தி சரியான பதிலைத் தேர்ந்தெடுக்கவும்:"
+    },
+    "question_en": "Match List-I (Supreme Court Concept Set 13) with List-II (Constitutional Articles):\nList-I:\na. Concept A13\nb. Concept B13\nc. Concept C13\nd. Concept D13\n\nList-II:\n1. Article 137\n2. Article 138\n3. Article 139\n4. Article 140\n\nSelect the correct answer using the code below:",
+    "question_ta": "பட்டியல்-I (உச்ச நீதிமன்றக் கருத்துத் தொகுதி 13) மற்றும் பட்டியல்-II (அரசியலமைப்பு உறுப்புகள்) பொருத்துக:\nபட்டியல்-I:\na. கருத்து A13\nb. கருத்து B13\nc. கருத்து C13\nd. கருத்து D13\n\nபட்டியல்-II:\n1. உறுப்பு 137\n2. உறுப்பு 138\n3. உறுப்பு 139\n4. உறுப்பு 140\n\nகீழ்க்கண்ட குறியீடுகளைப் பயன்படுத்தி சரியான பதிலைத் தேர்ந்தெடுக்கவும்:",
+    "options": [
+      {
+        "id": "A",
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
+      },
+      {
+        "id": "B",
+        "en": "a-4, b-3, c-2, d-1",
+        "ta": "a-4, b-3, c-2, d-1"
+      },
+      {
+        "id": "C",
+        "en": "a-3, b-4, c-1, d-2",
+        "ta": "a-3, b-4, c-1, d-2"
+      },
+      {
+        "id": "D",
+        "en": "a-2, b-1, c-4, d-3",
+        "ta": "a-2, b-1, c-4, d-3"
+      }
+    ],
+    "options_en": [
+      "a-1, b-2, c-3, d-4",
+      "a-4, b-3, c-2, d-1",
+      "a-3, b-4, c-1, d-2",
+      "a-2, b-1, c-4, d-3"
+    ],
+    "options_ta": [
+      "a-1, b-2, c-3, d-4",
+      "a-4, b-3, c-2, d-1",
+      "a-3, b-4, c-1, d-2",
+      "a-2, b-1, c-4, d-3"
+    ],
+    "correct_answer": "B",
+    "explanation": {
+      "en": "Explanation for Supreme Court Match Set 13. Correct combination is option (A).",
+      "ta": "உச்ச நீதிமன்றப் பொருத்தத் தொகுதி 13 பற்றிய விளக்கம். சரியான சேர்க்கை விருப்பம் (A)."
+    },
+    "explanation_en": "Explanation for Supreme Court Match Set 13. Correct combination is option (A).",
+    "explanation_ta": "உச்ச நீதிமன்றப் பொருத்தத் தொகுதி 13 பற்றிய விளக்கம். சரியான சேர்க்கை விருப்பம் (A).",
+    "why_not_others": {
+      "A": {
+        "en": "❌ Incorrect matching combination.",
+        "ta": "❌ தவறான பொருத்தச் சேர்க்கை."
+      },
+      "B": {
+        "en": "✅ Correct matching combination.",
+        "ta": "✅ சரியான பொருத்தச் சேர்க்கை."
+      },
+      "C": {
+        "en": "❌ Incorrect matching combination.",
+        "ta": "❌ தவறான பொருத்தச் சேர்க்கை."
+      },
+      "D": {
+        "en": "❌ Incorrect matching combination.",
+        "ta": "❌ தவறான பொருத்தச் சேர்க்கை."
+      }
+    },
+    "trap_point": {
+      "en": "Trap point for Match Set 13.",
+      "ta": "பொருத்துக தொகுதி 13 பொறிப் புள்ளி."
+    },
+    "tnpsc_tip": {
+      "en": "Exam tip for Match Set 13.",
+      "ta": "தேர்வு குறிப்பு 13."
+    },
+    "high_yield_fact": {
+      "en": "High-Yield Fact: Explanation for Supreme Court Match Set 13. Correct combination is option (A).",
+      "ta": "முக்கியக் குறிப்பு: உச்ச நீதிமன்றப் பொருத்தத் தொகுதி 13 பற்றிய விளக்கம். சரியான சேர்க்கை விருப்பம் (A)."
+    },
+    "source_reference": [
+      "Supreme Court Notes Part 1"
+    ],
+    "answer": "b",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "Supreme Court of India"
+    ],
+    "revision_fact": "Explanation for Supreme Court Match Set 13. Correct combination is option (A)."
+  },
+  {
+    "id": "POLITY_SC_MATCH_014",
+    "subject": "Polity",
+    "topic": "Supreme Court of India",
+    "difficulty": "Hard",
+    "question_type": "Match",
+    "question": {
+      "en": "Match List-I (Supreme Court Concept Set 14) with List-II (Constitutional Articles):\nList-I:\na. Concept A14\nb. Concept B14\nc. Concept C14\nd. Concept D14\n\nList-II:\n1. Article 138\n2. Article 139\n3. Article 140\n4. Article 141\n\nSelect the correct answer using the code below:",
+      "ta": "பட்டியல்-I (உச்ச நீதிமன்றக் கருத்துத் தொகுதி 14) மற்றும் பட்டியல்-II (அரசியலமைப்பு உறுப்புகள்) பொருத்துக:\nபட்டியல்-I:\na. கருத்து A14\nb. கருத்து B14\nc. கருத்து C14\nd. கருத்து D14\n\nபட்டியல்-II:\n1. உறுப்பு 138\n2. உறுப்பு 139\n3. உறுப்பு 140\n4. உறுப்பு 141\n\nகீழ்க்கண்ட குறியீடுகளைப் பயன்படுத்தி சரியான பதிலைத் தேர்ந்தெடுக்கவும்:"
+    },
+    "question_en": "Match List-I (Supreme Court Concept Set 14) with List-II (Constitutional Articles):\nList-I:\na. Concept A14\nb. Concept B14\nc. Concept C14\nd. Concept D14\n\nList-II:\n1. Article 138\n2. Article 139\n3. Article 140\n4. Article 141\n\nSelect the correct answer using the code below:",
+    "question_ta": "பட்டியல்-I (உச்ச நீதிமன்றக் கருத்துத் தொகுதி 14) மற்றும் பட்டியல்-II (அரசியலமைப்பு உறுப்புகள்) பொருத்துக:\nபட்டியல்-I:\na. கருத்து A14\nb. கருத்து B14\nc. கருத்து C14\nd. கருத்து D14\n\nபட்டியல்-II:\n1. உறுப்பு 138\n2. உறுப்பு 139\n3. உறுப்பு 140\n4. உறுப்பு 141\n\nகீழ்க்கண்ட குறியீடுகளைப் பயன்படுத்தி சரியான பதிலைத் தேர்ந்தெடுக்கவும்:",
+    "options": [
+      {
+        "id": "A",
+        "en": "a-3, b-4, c-1, d-2",
+        "ta": "a-3, b-4, c-1, d-2"
+      },
+      {
+        "id": "B",
+        "en": "a-4, b-3, c-2, d-1",
+        "ta": "a-4, b-3, c-2, d-1"
+      },
+      {
+        "id": "C",
+        "en": "a-2, b-1, c-4, d-3",
+        "ta": "a-2, b-1, c-4, d-3"
+      },
+      {
+        "id": "D",
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
+      }
+    ],
+    "options_en": [
+      "a-3, b-4, c-1, d-2",
+      "a-4, b-3, c-2, d-1",
+      "a-2, b-1, c-4, d-3",
+      "a-1, b-2, c-3, d-4"
+    ],
+    "options_ta": [
+      "a-3, b-4, c-1, d-2",
+      "a-4, b-3, c-2, d-1",
+      "a-2, b-1, c-4, d-3",
+      "a-1, b-2, c-3, d-4"
+    ],
+    "correct_answer": "D",
+    "explanation": {
+      "en": "Explanation for Supreme Court Match Set 14. Correct combination is option (B).",
+      "ta": "உச்ச நீதிமன்றப் பொருத்தத் தொகுதி 14 பற்றிய விளக்கம். சரியான சேர்க்கை விருப்பம் (B)."
+    },
+    "explanation_en": "Explanation for Supreme Court Match Set 14. Correct combination is option (B).",
+    "explanation_ta": "உச்ச நீதிமன்றப் பொருத்தத் தொகுதி 14 பற்றிய விளக்கம். சரியான சேர்க்கை விருப்பம் (B).",
+    "why_not_others": {
+      "A": {
+        "en": "❌ Incorrect matching combination.",
+        "ta": "❌ தவறான பொருத்தச் சேர்க்கை."
+      },
+      "B": {
+        "en": "❌ Correct matching combination.",
+        "ta": "❌ சரியான பொருத்தச் சேர்க்கை."
+      },
+      "C": {
+        "en": "❌ Incorrect matching combination.",
+        "ta": "❌ தவறான பொருத்தச் சேர்க்கை."
+      },
+      "D": {
+        "en": "✅ Incorrect matching combination.",
+        "ta": "✅ தவறான பொருத்தச் சேர்க்கை."
+      }
+    },
+    "trap_point": {
+      "en": "Trap point for Match Set 14.",
+      "ta": "பொருத்துக தொகுதி 14 பொறிப் புள்ளி."
+    },
+    "tnpsc_tip": {
+      "en": "Exam tip for Match Set 14.",
+      "ta": "தேர்வு குறிப்பு 14."
+    },
+    "high_yield_fact": {
+      "en": "High-Yield Fact: Explanation for Supreme Court Match Set 14. Correct combination is option (B).",
+      "ta": "முக்கியக் குறிப்பு: உச்ச நீதிமன்றப் பொருத்தத் தொகுதி 14 பற்றிய விளக்கம். சரியான சேர்க்கை விருப்பம் (B)."
+    },
+    "source_reference": [
+      "Supreme Court Notes Part 2"
+    ],
+    "answer": "d",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "Supreme Court of India"
+    ],
+    "revision_fact": "Explanation for Supreme Court Match Set 14. Correct combination is option (B)."
+  },
+  {
+    "id": "POLITY_SC_MATCH_015",
+    "subject": "Polity",
+    "topic": "Supreme Court of India",
+    "difficulty": "Hard",
+    "question_type": "Match",
+    "question": {
+      "en": "Match List-I (Supreme Court Concept Set 15) with List-II (Constitutional Articles):\nList-I:\na. Concept A15\nb. Concept B15\nc. Concept C15\nd. Concept D15\n\nList-II:\n1. Article 139\n2. Article 140\n3. Article 141\n4. Article 142\n\nSelect the correct answer using the code below:",
+      "ta": "பட்டியல்-I (உச்ச நீதிமன்றக் கருத்துத் தொகுதி 15) மற்றும் பட்டியல்-II (அரசியலமைப்பு உறுப்புகள்) பொருத்துக:\nபட்டியல்-I:\na. கருத்து A15\nb. கருத்து B15\nc. கருத்து C15\nd. கருத்து D15\n\nபட்டியல்-II:\n1. உறுப்பு 139\n2. உறுப்பு 140\n3. உறுப்பு 141\n4. உறுப்பு 142\n\nகீழ்க்கண்ட குறியீடுகளைப் பயன்படுத்தி சரியான பதிலைத் தேர்ந்தெடுக்கவும்:"
+    },
+    "question_en": "Match List-I (Supreme Court Concept Set 15) with List-II (Constitutional Articles):\nList-I:\na. Concept A15\nb. Concept B15\nc. Concept C15\nd. Concept D15\n\nList-II:\n1. Article 139\n2. Article 140\n3. Article 141\n4. Article 142\n\nSelect the correct answer using the code below:",
+    "question_ta": "பட்டியல்-I (உச்ச நீதிமன்றக் கருத்துத் தொகுதி 15) மற்றும் பட்டியல்-II (அரசியலமைப்பு உறுப்புகள்) பொருத்துக:\nபட்டியல்-I:\na. கருத்து A15\nb. கருத்து B15\nc. கருத்து C15\nd. கருத்து D15\n\nபட்டியல்-II:\n1. உறுப்பு 139\n2. உறுப்பு 140\n3. உறுப்பு 141\n4. உறுப்பு 142\n\nகீழ்க்கண்ட குறியீடுகளைப் பயன்படுத்தி சரியான பதிலைத் தேர்ந்தெடுக்கவும்:",
     "options": [
       {
         "id": "A",
@@ -917,354 +1391,6 @@
     ],
     "correct_answer": "B",
     "explanation": {
-      "en": "Explanation for Supreme Court Match Set 11. Correct combination is option (C).",
-      "ta": "உச்ச நீதிமன்றப் பொருத்தத் தொகுதி 11 பற்றிய விளக்கம். சரியான சேர்க்கை விருப்பம் (C)."
-    },
-    "explanation_en": "Explanation for Supreme Court Match Set 11. Correct combination is option (C).",
-    "explanation_ta": "உச்ச நீதிமன்றப் பொருத்தத் தொகுதி 11 பற்றிய விளக்கம். சரியான சேர்க்கை விருப்பம் (C).",
-    "why_not_others": {
-      "A": {
-        "en": "❌ Correct matching combination.",
-        "ta": "❌ சரியான பொருத்தச் சேர்க்கை."
-      },
-      "B": {
-        "en": "✅ Incorrect matching combination.",
-        "ta": "✅ தவறான பொருத்தச் சேர்க்கை."
-      },
-      "C": {
-        "en": "❌ Incorrect matching combination.",
-        "ta": "❌ தவறான பொருத்தச் சேர்க்கை."
-      },
-      "D": {
-        "en": "❌ Incorrect matching combination.",
-        "ta": "❌ தவறான பொருத்தச் சேர்க்கை."
-      }
-    },
-    "trap_point": {
-      "en": "Trap point for Match Set 11.",
-      "ta": "பொருத்துக தொகுதி 11 பொறிப் புள்ளி."
-    },
-    "tnpsc_tip": {
-      "en": "Exam tip for Match Set 11.",
-      "ta": "தேர்வு குறிப்பு 11."
-    },
-    "high_yield_fact": {
-      "en": "High-Yield Fact: Explanation for Supreme Court Match Set 11. Correct combination is option (C).",
-      "ta": "முக்கியக் குறிப்பு: உச்ச நீதிமன்றப் பொருத்தத் தொகுதி 11 பற்றிய விளக்கம். சரியான சேர்க்கை விருப்பம் (C)."
-    },
-    "source_reference": [
-      "Supreme Court Notes Part 1"
-    ]
-  },
-  {
-    "id": "POLITY_SC_MATCH_012",
-    "subject": "Polity",
-    "topic": "Supreme Court of India",
-    "difficulty": "Hard",
-    "question_type": "Match",
-    "question": {
-      "en": "Match List-I (Supreme Court Concept Set 12) with List-II (Constitutional Articles):\nList-I:\na. Concept A12\nb. Concept B12\nc. Concept C12\nd. Concept D12\n\nList-II:\n1. Article 136\n2. Article 137\n3. Article 138\n4. Article 139\n\nSelect the correct answer using the code below:",
-      "ta": "பட்டியல்-I (உச்ச நீதிமன்றக் கருத்துத் தொகுதி 12) மற்றும் பட்டியல்-II (அரசியலமைப்பு உறுப்புகள்) பொருத்துக:\nபட்டியல்-I:\na. கருத்து A12\nb. கருத்து B12\nc. கருத்து C12\nd. கருத்து D12\n\nபட்டியல்-II:\n1. உறுப்பு 136\n2. உறுப்பு 137\n3. உறுப்பு 138\n4. உறுப்பு 139\n\nகீழ்க்கண்ட குறியீடுகளைப் பயன்படுத்தி சரியான பதிலைத் தேர்ந்தெடுக்கவும்:"
-    },
-    "question_en": "Match List-I (Supreme Court Concept Set 12) with List-II (Constitutional Articles):\nList-I:\na. Concept A12\nb. Concept B12\nc. Concept C12\nd. Concept D12\n\nList-II:\n1. Article 136\n2. Article 137\n3. Article 138\n4. Article 139\n\nSelect the correct answer using the code below:",
-    "question_ta": "பட்டியல்-I (உச்ச நீதிமன்றக் கருத்துத் தொகுதி 12) மற்றும் பட்டியல்-II (அரசியலமைப்பு உறுப்புகள்) பொருத்துக:\nபட்டியல்-I:\na. கருத்து A12\nb. கருத்து B12\nc. கருத்து C12\nd. கருத்து D12\n\nபட்டியல்-II:\n1. உறுப்பு 136\n2. உறுப்பு 137\n3. உறுப்பு 138\n4. உறுப்பு 139\n\nகீழ்க்கண்ட குறியீடுகளைப் பயன்படுத்தி சரியான பதிலைத் தேர்ந்தெடுக்கவும்:",
-    "options": [
-      {
-        "id": "A",
-        "en": "a-4, b-3, c-2, d-1",
-        "ta": "a-4, b-3, c-2, d-1"
-      },
-      {
-        "id": "B",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
-      },
-      {
-        "id": "C",
-        "en": "a-2, b-1, c-4, d-3",
-        "ta": "a-2, b-1, c-4, d-3"
-      },
-      {
-        "id": "D",
-        "en": "a-3, b-4, c-1, d-2",
-        "ta": "a-3, b-4, c-1, d-2"
-      }
-    ],
-    "options_en": [
-      "a-4, b-3, c-2, d-1",
-      "a-1, b-2, c-3, d-4",
-      "a-2, b-1, c-4, d-3",
-      "a-3, b-4, c-1, d-2"
-    ],
-    "options_ta": [
-      "a-4, b-3, c-2, d-1",
-      "a-1, b-2, c-3, d-4",
-      "a-2, b-1, c-4, d-3",
-      "a-3, b-4, c-1, d-2"
-    ],
-    "correct_answer": "C",
-    "explanation": {
-      "en": "Explanation for Supreme Court Match Set 12. Correct combination is option (D).",
-      "ta": "உச்ச நீதிமன்றப் பொருத்தத் தொகுதி 12 பற்றிய விளக்கம். சரியான சேர்க்கை விருப்பம் (D)."
-    },
-    "explanation_en": "Explanation for Supreme Court Match Set 12. Correct combination is option (D).",
-    "explanation_ta": "உச்ச நீதிமன்றப் பொருத்தத் தொகுதி 12 பற்றிய விளக்கம். சரியான சேர்க்கை விருப்பம் (D).",
-    "why_not_others": {
-      "A": {
-        "en": "❌ Correct matching combination.",
-        "ta": "❌ சரியான பொருத்தச் சேர்க்கை."
-      },
-      "B": {
-        "en": "❌ Incorrect matching combination.",
-        "ta": "❌ தவறான பொருத்தச் சேர்க்கை."
-      },
-      "C": {
-        "en": "✅ Incorrect matching combination.",
-        "ta": "✅ தவறான பொருத்தச் சேர்க்கை."
-      },
-      "D": {
-        "en": "❌ Incorrect matching combination.",
-        "ta": "❌ தவறான பொருத்தச் சேர்க்கை."
-      }
-    },
-    "trap_point": {
-      "en": "Trap point for Match Set 12.",
-      "ta": "பொருத்துக தொகுதி 12 பொறிப் புள்ளி."
-    },
-    "tnpsc_tip": {
-      "en": "Exam tip for Match Set 12.",
-      "ta": "தேர்வு குறிப்பு 12."
-    },
-    "high_yield_fact": {
-      "en": "High-Yield Fact: Explanation for Supreme Court Match Set 12. Correct combination is option (D).",
-      "ta": "முக்கியக் குறிப்பு: உச்ச நீதிமன்றப் பொருத்தத் தொகுதி 12 பற்றிய விளக்கம். சரியான சேர்க்கை விருப்பம் (D)."
-    },
-    "source_reference": [
-      "Supreme Court Notes Part 3"
-    ]
-  },
-  {
-    "id": "POLITY_SC_MATCH_013",
-    "subject": "Polity",
-    "topic": "Supreme Court of India",
-    "difficulty": "Hard",
-    "question_type": "Match",
-    "question": {
-      "en": "Match List-I (Supreme Court Concept Set 13) with List-II (Constitutional Articles):\nList-I:\na. Concept A13\nb. Concept B13\nc. Concept C13\nd. Concept D13\n\nList-II:\n1. Article 137\n2. Article 138\n3. Article 139\n4. Article 140\n\nSelect the correct answer using the code below:",
-      "ta": "பட்டியல்-I (உச்ச நீதிமன்றக் கருத்துத் தொகுதி 13) மற்றும் பட்டியல்-II (அரசியலமைப்பு உறுப்புகள்) பொருத்துக:\nபட்டியல்-I:\na. கருத்து A13\nb. கருத்து B13\nc. கருத்து C13\nd. கருத்து D13\n\nபட்டியல்-II:\n1. உறுப்பு 137\n2. உறுப்பு 138\n3. உறுப்பு 139\n4. உறுப்பு 140\n\nகீழ்க்கண்ட குறியீடுகளைப் பயன்படுத்தி சரியான பதிலைத் தேர்ந்தெடுக்கவும்:"
-    },
-    "question_en": "Match List-I (Supreme Court Concept Set 13) with List-II (Constitutional Articles):\nList-I:\na. Concept A13\nb. Concept B13\nc. Concept C13\nd. Concept D13\n\nList-II:\n1. Article 137\n2. Article 138\n3. Article 139\n4. Article 140\n\nSelect the correct answer using the code below:",
-    "question_ta": "பட்டியல்-I (உச்ச நீதிமன்றக் கருத்துத் தொகுதி 13) மற்றும் பட்டியல்-II (அரசியலமைப்பு உறுப்புகள்) பொருத்துக:\nபட்டியல்-I:\na. கருத்து A13\nb. கருத்து B13\nc. கருத்து C13\nd. கருத்து D13\n\nபட்டியல்-II:\n1. உறுப்பு 137\n2. உறுப்பு 138\n3. உறுப்பு 139\n4. உறுப்பு 140\n\nகீழ்க்கண்ட குறியீடுகளைப் பயன்படுத்தி சரியான பதிலைத் தேர்ந்தெடுக்கவும்:",
-    "options": [
-      {
-        "id": "A",
-        "en": "a-4, b-3, c-2, d-1",
-        "ta": "a-4, b-3, c-2, d-1"
-      },
-      {
-        "id": "B",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
-      },
-      {
-        "id": "C",
-        "en": "a-3, b-4, c-1, d-2",
-        "ta": "a-3, b-4, c-1, d-2"
-      },
-      {
-        "id": "D",
-        "en": "a-2, b-1, c-4, d-3",
-        "ta": "a-2, b-1, c-4, d-3"
-      }
-    ],
-    "options_en": [
-      "a-4, b-3, c-2, d-1",
-      "a-1, b-2, c-3, d-4",
-      "a-3, b-4, c-1, d-2",
-      "a-2, b-1, c-4, d-3"
-    ],
-    "options_ta": [
-      "a-4, b-3, c-2, d-1",
-      "a-1, b-2, c-3, d-4",
-      "a-3, b-4, c-1, d-2",
-      "a-2, b-1, c-4, d-3"
-    ],
-    "correct_answer": "A",
-    "explanation": {
-      "en": "Explanation for Supreme Court Match Set 13. Correct combination is option (A).",
-      "ta": "உச்ச நீதிமன்றப் பொருத்தத் தொகுதி 13 பற்றிய விளக்கம். சரியான சேர்க்கை விருப்பம் (A)."
-    },
-    "explanation_en": "Explanation for Supreme Court Match Set 13. Correct combination is option (A).",
-    "explanation_ta": "உச்ச நீதிமன்றப் பொருத்தத் தொகுதி 13 பற்றிய விளக்கம். சரியான சேர்க்கை விருப்பம் (A).",
-    "why_not_others": {
-      "A": {
-        "en": "✅ Correct matching combination.",
-        "ta": "✅ சரியான பொருத்தச் சேர்க்கை."
-      },
-      "B": {
-        "en": "❌ Incorrect matching combination.",
-        "ta": "❌ தவறான பொருத்தச் சேர்க்கை."
-      },
-      "C": {
-        "en": "❌ Incorrect matching combination.",
-        "ta": "❌ தவறான பொருத்தச் சேர்க்கை."
-      },
-      "D": {
-        "en": "❌ Incorrect matching combination.",
-        "ta": "❌ தவறான பொருத்தச் சேர்க்கை."
-      }
-    },
-    "trap_point": {
-      "en": "Trap point for Match Set 13.",
-      "ta": "பொருத்துக தொகுதி 13 பொறிப் புள்ளி."
-    },
-    "tnpsc_tip": {
-      "en": "Exam tip for Match Set 13.",
-      "ta": "தேர்வு குறிப்பு 13."
-    },
-    "high_yield_fact": {
-      "en": "High-Yield Fact: Explanation for Supreme Court Match Set 13. Correct combination is option (A).",
-      "ta": "முக்கியக் குறிப்பு: உச்ச நீதிமன்றப் பொருத்தத் தொகுதி 13 பற்றிய விளக்கம். சரியான சேர்க்கை விருப்பம் (A)."
-    },
-    "source_reference": [
-      "Supreme Court Notes Part 1"
-    ]
-  },
-  {
-    "id": "POLITY_SC_MATCH_014",
-    "subject": "Polity",
-    "topic": "Supreme Court of India",
-    "difficulty": "Hard",
-    "question_type": "Match",
-    "question": {
-      "en": "Match List-I (Supreme Court Concept Set 14) with List-II (Constitutional Articles):\nList-I:\na. Concept A14\nb. Concept B14\nc. Concept C14\nd. Concept D14\n\nList-II:\n1. Article 138\n2. Article 139\n3. Article 140\n4. Article 141\n\nSelect the correct answer using the code below:",
-      "ta": "பட்டியல்-I (உச்ச நீதிமன்றக் கருத்துத் தொகுதி 14) மற்றும் பட்டியல்-II (அரசியலமைப்பு உறுப்புகள்) பொருத்துக:\nபட்டியல்-I:\na. கருத்து A14\nb. கருத்து B14\nc. கருத்து C14\nd. கருத்து D14\n\nபட்டியல்-II:\n1. உறுப்பு 138\n2. உறுப்பு 139\n3. உறுப்பு 140\n4. உறுப்பு 141\n\nகீழ்க்கண்ட குறியீடுகளைப் பயன்படுத்தி சரியான பதிலைத் தேர்ந்தெடுக்கவும்:"
-    },
-    "question_en": "Match List-I (Supreme Court Concept Set 14) with List-II (Constitutional Articles):\nList-I:\na. Concept A14\nb. Concept B14\nc. Concept C14\nd. Concept D14\n\nList-II:\n1. Article 138\n2. Article 139\n3. Article 140\n4. Article 141\n\nSelect the correct answer using the code below:",
-    "question_ta": "பட்டியல்-I (உச்ச நீதிமன்றக் கருத்துத் தொகுதி 14) மற்றும் பட்டியல்-II (அரசியலமைப்பு உறுப்புகள்) பொருத்துக:\nபட்டியல்-I:\na. கருத்து A14\nb. கருத்து B14\nc. கருத்து C14\nd. கருத்து D14\n\nபட்டியல்-II:\n1. உறுப்பு 138\n2. உறுப்பு 139\n3. உறுப்பு 140\n4. உறுப்பு 141\n\nகீழ்க்கண்ட குறியீடுகளைப் பயன்படுத்தி சரியான பதிலைத் தேர்ந்தெடுக்கவும்:",
-    "options": [
-      {
-        "id": "A",
-        "en": "a-3, b-4, c-1, d-2",
-        "ta": "a-3, b-4, c-1, d-2"
-      },
-      {
-        "id": "B",
-        "en": "a-4, b-3, c-2, d-1",
-        "ta": "a-4, b-3, c-2, d-1"
-      },
-      {
-        "id": "C",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
-      },
-      {
-        "id": "D",
-        "en": "a-2, b-1, c-4, d-3",
-        "ta": "a-2, b-1, c-4, d-3"
-      }
-    ],
-    "options_en": [
-      "a-3, b-4, c-1, d-2",
-      "a-4, b-3, c-2, d-1",
-      "a-1, b-2, c-3, d-4",
-      "a-2, b-1, c-4, d-3"
-    ],
-    "options_ta": [
-      "a-3, b-4, c-1, d-2",
-      "a-4, b-3, c-2, d-1",
-      "a-1, b-2, c-3, d-4",
-      "a-2, b-1, c-4, d-3"
-    ],
-    "correct_answer": "C",
-    "explanation": {
-      "en": "Explanation for Supreme Court Match Set 14. Correct combination is option (B).",
-      "ta": "உச்ச நீதிமன்றப் பொருத்தத் தொகுதி 14 பற்றிய விளக்கம். சரியான சேர்க்கை விருப்பம் (B)."
-    },
-    "explanation_en": "Explanation for Supreme Court Match Set 14. Correct combination is option (B).",
-    "explanation_ta": "உச்ச நீதிமன்றப் பொருத்தத் தொகுதி 14 பற்றிய விளக்கம். சரியான சேர்க்கை விருப்பம் (B).",
-    "why_not_others": {
-      "A": {
-        "en": "❌ Incorrect matching combination.",
-        "ta": "❌ தவறான பொருத்தச் சேர்க்கை."
-      },
-      "B": {
-        "en": "❌ Correct matching combination.",
-        "ta": "❌ சரியான பொருத்தச் சேர்க்கை."
-      },
-      "C": {
-        "en": "✅ Incorrect matching combination.",
-        "ta": "✅ தவறான பொருத்தச் சேர்க்கை."
-      },
-      "D": {
-        "en": "❌ Incorrect matching combination.",
-        "ta": "❌ தவறான பொருத்தச் சேர்க்கை."
-      }
-    },
-    "trap_point": {
-      "en": "Trap point for Match Set 14.",
-      "ta": "பொருத்துக தொகுதி 14 பொறிப் புள்ளி."
-    },
-    "tnpsc_tip": {
-      "en": "Exam tip for Match Set 14.",
-      "ta": "தேர்வு குறிப்பு 14."
-    },
-    "high_yield_fact": {
-      "en": "High-Yield Fact: Explanation for Supreme Court Match Set 14. Correct combination is option (B).",
-      "ta": "முக்கியக் குறிப்பு: உச்ச நீதிமன்றப் பொருத்தத் தொகுதி 14 பற்றிய விளக்கம். சரியான சேர்க்கை விருப்பம் (B)."
-    },
-    "source_reference": [
-      "Supreme Court Notes Part 2"
-    ]
-  },
-  {
-    "id": "POLITY_SC_MATCH_015",
-    "subject": "Polity",
-    "topic": "Supreme Court of India",
-    "difficulty": "Hard",
-    "question_type": "Match",
-    "question": {
-      "en": "Match List-I (Supreme Court Concept Set 15) with List-II (Constitutional Articles):\nList-I:\na. Concept A15\nb. Concept B15\nc. Concept C15\nd. Concept D15\n\nList-II:\n1. Article 139\n2. Article 140\n3. Article 141\n4. Article 142\n\nSelect the correct answer using the code below:",
-      "ta": "பட்டியல்-I (உச்ச நீதிமன்றக் கருத்துத் தொகுதி 15) மற்றும் பட்டியல்-II (அரசியலமைப்பு உறுப்புகள்) பொருத்துக:\nபட்டியல்-I:\na. கருத்து A15\nb. கருத்து B15\nc. கருத்து C15\nd. கருத்து D15\n\nபட்டியல்-II:\n1. உறுப்பு 139\n2. உறுப்பு 140\n3. உறுப்பு 141\n4. உறுப்பு 142\n\nகீழ்க்கண்ட குறியீடுகளைப் பயன்படுத்தி சரியான பதிலைத் தேர்ந்தெடுக்கவும்:"
-    },
-    "question_en": "Match List-I (Supreme Court Concept Set 15) with List-II (Constitutional Articles):\nList-I:\na. Concept A15\nb. Concept B15\nc. Concept C15\nd. Concept D15\n\nList-II:\n1. Article 139\n2. Article 140\n3. Article 141\n4. Article 142\n\nSelect the correct answer using the code below:",
-    "question_ta": "பட்டியல்-I (உச்ச நீதிமன்றக் கருத்துத் தொகுதி 15) மற்றும் பட்டியல்-II (அரசியலமைப்பு உறுப்புகள்) பொருத்துக:\nபட்டியல்-I:\na. கருத்து A15\nb. கருத்து B15\nc. கருத்து C15\nd. கருத்து D15\n\nபட்டியல்-II:\n1. உறுப்பு 139\n2. உறுப்பு 140\n3. உறுப்பு 141\n4. உறுப்பு 142\n\nகீழ்க்கண்ட குறியீடுகளைப் பயன்படுத்தி சரியான பதிலைத் தேர்ந்தெடுக்கவும்:",
-    "options": [
-      {
-        "id": "A",
-        "en": "a-4, b-3, c-2, d-1",
-        "ta": "a-4, b-3, c-2, d-1"
-      },
-      {
-        "id": "B",
-        "en": "a-2, b-1, c-4, d-3",
-        "ta": "a-2, b-1, c-4, d-3"
-      },
-      {
-        "id": "C",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
-      },
-      {
-        "id": "D",
-        "en": "a-3, b-4, c-1, d-2",
-        "ta": "a-3, b-4, c-1, d-2"
-      }
-    ],
-    "options_en": [
-      "a-4, b-3, c-2, d-1",
-      "a-2, b-1, c-4, d-3",
-      "a-1, b-2, c-3, d-4",
-      "a-3, b-4, c-1, d-2"
-    ],
-    "options_ta": [
-      "a-4, b-3, c-2, d-1",
-      "a-2, b-1, c-4, d-3",
-      "a-1, b-2, c-3, d-4",
-      "a-3, b-4, c-1, d-2"
-    ],
-    "correct_answer": "D",
-    "explanation": {
       "en": "Explanation for Supreme Court Match Set 15. Correct combination is option (C).",
       "ta": "உச்ச நீதிமன்றப் பொருத்தத் தொகுதி 15 பற்றிய விளக்கம். சரியான சேர்க்கை விருப்பம் (C)."
     },
@@ -1276,16 +1402,16 @@
         "ta": "❌ சரியான பொருத்தச் சேர்க்கை."
       },
       "B": {
-        "en": "❌ Incorrect matching combination.",
-        "ta": "❌ தவறான பொருத்தச் சேர்க்கை."
+        "en": "✅ Incorrect matching combination.",
+        "ta": "✅ தவறான பொருத்தச் சேர்க்கை."
       },
       "C": {
         "en": "❌ Incorrect matching combination.",
         "ta": "❌ தவறான பொருத்தச் சேர்க்கை."
       },
       "D": {
-        "en": "✅ Incorrect matching combination.",
-        "ta": "✅ தவறான பொருத்தச் சேர்க்கை."
+        "en": "❌ Incorrect matching combination.",
+        "ta": "❌ தவறான பொருத்தச் சேர்க்கை."
       }
     },
     "trap_point": {
@@ -1302,7 +1428,16 @@
     },
     "source_reference": [
       "Supreme Court Notes Part 3"
-    ]
+    ],
+    "answer": "b",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "Supreme Court of India"
+    ],
+    "revision_fact": "Explanation for Supreme Court Match Set 15. Correct combination is option (C)."
   },
   {
     "id": "POLITY_SC_MATCH_016",
@@ -1389,7 +1524,16 @@
     },
     "source_reference": [
       "Supreme Court Notes Part 2"
-    ]
+    ],
+    "answer": "c",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "Supreme Court of India"
+    ],
+    "revision_fact": "Explanation for Supreme Court Match Set 16. Correct combination is option (D)."
   },
   {
     "id": "POLITY_SC_MATCH_017",
@@ -1476,7 +1620,16 @@
     },
     "source_reference": [
       "Supreme Court Notes Part 1"
-    ]
+    ],
+    "answer": "a",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "Supreme Court of India"
+    ],
+    "revision_fact": "Explanation for Supreme Court Match Set 17. Correct combination is option (A)."
   },
   {
     "id": "POLITY_SC_MATCH_018",
@@ -1503,28 +1656,28 @@
       },
       {
         "id": "C",
-        "en": "a-3, b-4, c-1, d-2",
-        "ta": "a-3, b-4, c-1, d-2"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "D",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-3, b-4, c-1, d-2",
+        "ta": "a-3, b-4, c-1, d-2"
       }
     ],
     "options_en": [
       "a-2, b-1, c-4, d-3",
       "a-4, b-3, c-2, d-1",
-      "a-3, b-4, c-1, d-2",
-      "a-1, b-2, c-3, d-4"
+      "a-1, b-2, c-3, d-4",
+      "a-3, b-4, c-1, d-2"
     ],
     "options_ta": [
       "a-2, b-1, c-4, d-3",
       "a-4, b-3, c-2, d-1",
-      "a-3, b-4, c-1, d-2",
-      "a-1, b-2, c-3, d-4"
+      "a-1, b-2, c-3, d-4",
+      "a-3, b-4, c-1, d-2"
     ],
-    "correct_answer": "D",
+    "correct_answer": "C",
     "explanation": {
       "en": "Explanation for Supreme Court Match Set 18. Correct combination is option (B).",
       "ta": "உச்ச நீதிமன்றப் பொருத்தத் தொகுதி 18 பற்றிய விளக்கம். சரியான சேர்க்கை விருப்பம் (B)."
@@ -1541,12 +1694,12 @@
         "ta": "❌ சரியான பொருத்தச் சேர்க்கை."
       },
       "C": {
-        "en": "❌ Incorrect matching combination.",
-        "ta": "❌ தவறான பொருத்தச் சேர்க்கை."
-      },
-      "D": {
         "en": "✅ Incorrect matching combination.",
         "ta": "✅ தவறான பொருத்தச் சேர்க்கை."
+      },
+      "D": {
+        "en": "❌ Incorrect matching combination.",
+        "ta": "❌ தவறான பொருத்தச் சேர்க்கை."
       }
     },
     "trap_point": {
@@ -1563,7 +1716,16 @@
     },
     "source_reference": [
       "Supreme Court Notes Part 3"
-    ]
+    ],
+    "answer": "c",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "Supreme Court of India"
+    ],
+    "revision_fact": "Explanation for Supreme Court Match Set 18. Correct combination is option (B)."
   },
   {
     "id": "POLITY_SC_MATCH_019",
@@ -1580,8 +1742,8 @@
     "options": [
       {
         "id": "A",
-        "en": "a-3, b-4, c-1, d-2",
-        "ta": "a-3, b-4, c-1, d-2"
+        "en": "a-2, b-1, c-4, d-3",
+        "ta": "a-2, b-1, c-4, d-3"
       },
       {
         "id": "B",
@@ -1595,23 +1757,23 @@
       },
       {
         "id": "D",
-        "en": "a-2, b-1, c-4, d-3",
-        "ta": "a-2, b-1, c-4, d-3"
+        "en": "a-3, b-4, c-1, d-2",
+        "ta": "a-3, b-4, c-1, d-2"
       }
     ],
     "options_en": [
-      "a-3, b-4, c-1, d-2",
+      "a-2, b-1, c-4, d-3",
       "a-4, b-3, c-2, d-1",
       "a-1, b-2, c-3, d-4",
-      "a-2, b-1, c-4, d-3"
+      "a-3, b-4, c-1, d-2"
     ],
     "options_ta": [
-      "a-3, b-4, c-1, d-2",
+      "a-2, b-1, c-4, d-3",
       "a-4, b-3, c-2, d-1",
       "a-1, b-2, c-3, d-4",
-      "a-2, b-1, c-4, d-3"
+      "a-3, b-4, c-1, d-2"
     ],
-    "correct_answer": "A",
+    "correct_answer": "D",
     "explanation": {
       "en": "Explanation for Supreme Court Match Set 19. Correct combination is option (C).",
       "ta": "உச்ச நீதிமன்றப் பொருத்தத் தொகுதி 19 பற்றிய விளக்கம். சரியான சேர்க்கை விருப்பம் (C)."
@@ -1620,8 +1782,8 @@
     "explanation_ta": "உச்ச நீதிமன்றப் பொருத்தத் தொகுதி 19 பற்றிய விளக்கம். சரியான சேர்க்கை விருப்பம் (C).",
     "why_not_others": {
       "A": {
-        "en": "✅ Incorrect matching combination.",
-        "ta": "✅ தவறான பொருத்தச் சேர்க்கை."
+        "en": "❌ Incorrect matching combination.",
+        "ta": "❌ தவறான பொருத்தச் சேர்க்கை."
       },
       "B": {
         "en": "❌ Correct matching combination.",
@@ -1632,8 +1794,8 @@
         "ta": "❌ தவறான பொருத்தச் சேர்க்கை."
       },
       "D": {
-        "en": "❌ Incorrect matching combination.",
-        "ta": "❌ தவறான பொருத்தச் சேர்க்கை."
+        "en": "✅ Incorrect matching combination.",
+        "ta": "✅ தவறான பொருத்தச் சேர்க்கை."
       }
     },
     "trap_point": {
@@ -1650,7 +1812,16 @@
     },
     "source_reference": [
       "Supreme Court Notes Part 1"
-    ]
+    ],
+    "answer": "d",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "Supreme Court of India"
+    ],
+    "revision_fact": "Explanation for Supreme Court Match Set 19. Correct combination is option (C)."
   },
   {
     "id": "POLITY_SC_MATCH_020",
@@ -1677,28 +1848,28 @@
       },
       {
         "id": "C",
-        "en": "a-3, b-4, c-1, d-2",
-        "ta": "a-3, b-4, c-1, d-2"
+        "en": "a-2, b-1, c-4, d-3",
+        "ta": "a-2, b-1, c-4, d-3"
       },
       {
         "id": "D",
-        "en": "a-2, b-1, c-4, d-3",
-        "ta": "a-2, b-1, c-4, d-3"
+        "en": "a-3, b-4, c-1, d-2",
+        "ta": "a-3, b-4, c-1, d-2"
       }
     ],
     "options_en": [
       "a-4, b-3, c-2, d-1",
       "a-1, b-2, c-3, d-4",
-      "a-3, b-4, c-1, d-2",
-      "a-2, b-1, c-4, d-3"
+      "a-2, b-1, c-4, d-3",
+      "a-3, b-4, c-1, d-2"
     ],
     "options_ta": [
       "a-4, b-3, c-2, d-1",
       "a-1, b-2, c-3, d-4",
-      "a-3, b-4, c-1, d-2",
-      "a-2, b-1, c-4, d-3"
+      "a-2, b-1, c-4, d-3",
+      "a-3, b-4, c-1, d-2"
     ],
-    "correct_answer": "D",
+    "correct_answer": "C",
     "explanation": {
       "en": "Explanation for Supreme Court Match Set 20. Correct combination is option (D).",
       "ta": "உச்ச நீதிமன்றப் பொருத்தத் தொகுதி 20 பற்றிய விளக்கம். சரியான சேர்க்கை விருப்பம் (D)."
@@ -1715,12 +1886,12 @@
         "ta": "❌ தவறான பொருத்தச் சேர்க்கை."
       },
       "C": {
-        "en": "❌ Incorrect matching combination.",
-        "ta": "❌ தவறான பொருத்தச் சேர்க்கை."
-      },
-      "D": {
         "en": "✅ Incorrect matching combination.",
         "ta": "✅ தவறான பொருத்தச் சேர்க்கை."
+      },
+      "D": {
+        "en": "❌ Incorrect matching combination.",
+        "ta": "❌ தவறான பொருத்தச் சேர்க்கை."
       }
     },
     "trap_point": {
@@ -1737,7 +1908,16 @@
     },
     "source_reference": [
       "Supreme Court Notes Part 2"
-    ]
+    ],
+    "answer": "c",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "Supreme Court of India"
+    ],
+    "revision_fact": "Explanation for Supreme Court Match Set 20. Correct combination is option (D)."
   },
   {
     "id": "POLITY_SC_MATCH_021",
@@ -1759,8 +1939,8 @@
       },
       {
         "id": "B",
-        "en": "a-4, b-3, c-2, d-1",
-        "ta": "a-4, b-3, c-2, d-1"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "C",
@@ -1769,23 +1949,23 @@
       },
       {
         "id": "D",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-4, b-3, c-2, d-1",
+        "ta": "a-4, b-3, c-2, d-1"
       }
     ],
     "options_en": [
       "a-2, b-1, c-4, d-3",
-      "a-4, b-3, c-2, d-1",
+      "a-1, b-2, c-3, d-4",
       "a-3, b-4, c-1, d-2",
-      "a-1, b-2, c-3, d-4"
+      "a-4, b-3, c-2, d-1"
     ],
     "options_ta": [
       "a-2, b-1, c-4, d-3",
-      "a-4, b-3, c-2, d-1",
+      "a-1, b-2, c-3, d-4",
       "a-3, b-4, c-1, d-2",
-      "a-1, b-2, c-3, d-4"
+      "a-4, b-3, c-2, d-1"
     ],
-    "correct_answer": "B",
+    "correct_answer": "D",
     "explanation": {
       "en": "Explanation for Supreme Court Match Set 21. Correct combination is option (A).",
       "ta": "உச்ச நீதிமன்றப் பொருத்தத் தொகுதி 21 பற்றிய விளக்கம். சரியான சேர்க்கை விருப்பம் (A)."
@@ -1798,16 +1978,16 @@
         "ta": "❌ தவறான பொருத்தச் சேர்க்கை."
       },
       "B": {
-        "en": "✅ Correct matching combination.",
-        "ta": "✅ சரியான பொருத்தச் சேர்க்கை."
+        "en": "❌ Incorrect matching combination.",
+        "ta": "❌ தவறான பொருத்தச் சேர்க்கை."
       },
       "C": {
         "en": "❌ Incorrect matching combination.",
         "ta": "❌ தவறான பொருத்தச் சேர்க்கை."
       },
       "D": {
-        "en": "❌ Incorrect matching combination.",
-        "ta": "❌ தவறான பொருத்தச் சேர்க்கை."
+        "en": "✅ Correct matching combination.",
+        "ta": "✅ சரியான பொருத்தச் சேர்க்கை."
       }
     },
     "trap_point": {
@@ -1824,7 +2004,16 @@
     },
     "source_reference": [
       "Supreme Court Notes Part 3"
-    ]
+    ],
+    "answer": "d",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "Supreme Court of India"
+    ],
+    "revision_fact": "Explanation for Supreme Court Match Set 21. Correct combination is option (A)."
   },
   {
     "id": "POLITY_SC_MATCH_022",
@@ -1841,13 +2030,13 @@
     "options": [
       {
         "id": "A",
-        "en": "a-4, b-3, c-2, d-1",
-        "ta": "a-4, b-3, c-2, d-1"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "B",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-4, b-3, c-2, d-1",
+        "ta": "a-4, b-3, c-2, d-1"
       },
       {
         "id": "C",
@@ -1861,18 +2050,18 @@
       }
     ],
     "options_en": [
-      "a-4, b-3, c-2, d-1",
       "a-1, b-2, c-3, d-4",
+      "a-4, b-3, c-2, d-1",
       "a-3, b-4, c-1, d-2",
       "a-2, b-1, c-4, d-3"
     ],
     "options_ta": [
-      "a-4, b-3, c-2, d-1",
       "a-1, b-2, c-3, d-4",
+      "a-4, b-3, c-2, d-1",
       "a-3, b-4, c-1, d-2",
       "a-2, b-1, c-4, d-3"
     ],
-    "correct_answer": "B",
+    "correct_answer": "A",
     "explanation": {
       "en": "Explanation for Supreme Court Match Set 22. Correct combination is option (B).",
       "ta": "உச்ச நீதிமன்றப் பொருத்தத் தொகுதி 22 பற்றிய விளக்கம். சரியான சேர்க்கை விருப்பம் (B)."
@@ -1881,12 +2070,12 @@
     "explanation_ta": "உச்ச நீதிமன்றப் பொருத்தத் தொகுதி 22 பற்றிய விளக்கம். சரியான சேர்க்கை விருப்பம் (B).",
     "why_not_others": {
       "A": {
-        "en": "❌ Correct matching combination.",
-        "ta": "❌ சரியான பொருத்தச் சேர்க்கை."
-      },
-      "B": {
         "en": "✅ Incorrect matching combination.",
         "ta": "✅ தவறான பொருத்தச் சேர்க்கை."
+      },
+      "B": {
+        "en": "❌ Correct matching combination.",
+        "ta": "❌ சரியான பொருத்தச் சேர்க்கை."
       },
       "C": {
         "en": "❌ Incorrect matching combination.",
@@ -1911,7 +2100,16 @@
     },
     "source_reference": [
       "Supreme Court Notes Part 2"
-    ]
+    ],
+    "answer": "a",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "Supreme Court of India"
+    ],
+    "revision_fact": "Explanation for Supreme Court Match Set 22. Correct combination is option (B)."
   },
   {
     "id": "POLITY_SC_MATCH_023",
@@ -1928,8 +2126,8 @@
     "options": [
       {
         "id": "A",
-        "en": "a-3, b-4, c-1, d-2",
-        "ta": "a-3, b-4, c-1, d-2"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "B",
@@ -1938,8 +2136,8 @@
       },
       {
         "id": "C",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-3, b-4, c-1, d-2",
+        "ta": "a-3, b-4, c-1, d-2"
       },
       {
         "id": "D",
@@ -1948,18 +2146,18 @@
       }
     ],
     "options_en": [
-      "a-3, b-4, c-1, d-2",
-      "a-4, b-3, c-2, d-1",
       "a-1, b-2, c-3, d-4",
+      "a-4, b-3, c-2, d-1",
+      "a-3, b-4, c-1, d-2",
       "a-2, b-1, c-4, d-3"
     ],
     "options_ta": [
-      "a-3, b-4, c-1, d-2",
-      "a-4, b-3, c-2, d-1",
       "a-1, b-2, c-3, d-4",
+      "a-4, b-3, c-2, d-1",
+      "a-3, b-4, c-1, d-2",
       "a-2, b-1, c-4, d-3"
     ],
-    "correct_answer": "A",
+    "correct_answer": "C",
     "explanation": {
       "en": "Explanation for Supreme Court Match Set 23. Correct combination is option (C).",
       "ta": "உச்ச நீதிமன்றப் பொருத்தத் தொகுதி 23 பற்றிய விளக்கம். சரியான சேர்க்கை விருப்பம் (C)."
@@ -1968,16 +2166,16 @@
     "explanation_ta": "உச்ச நீதிமன்றப் பொருத்தத் தொகுதி 23 பற்றிய விளக்கம். சரியான சேர்க்கை விருப்பம் (C).",
     "why_not_others": {
       "A": {
-        "en": "✅ Incorrect matching combination.",
-        "ta": "✅ தவறான பொருத்தச் சேர்க்கை."
+        "en": "❌ Incorrect matching combination.",
+        "ta": "❌ தவறான பொருத்தச் சேர்க்கை."
       },
       "B": {
         "en": "❌ Correct matching combination.",
         "ta": "❌ சரியான பொருத்தச் சேர்க்கை."
       },
       "C": {
-        "en": "❌ Incorrect matching combination.",
-        "ta": "❌ தவறான பொருத்தச் சேர்க்கை."
+        "en": "✅ Incorrect matching combination.",
+        "ta": "✅ தவறான பொருத்தச் சேர்க்கை."
       },
       "D": {
         "en": "❌ Incorrect matching combination.",
@@ -1998,7 +2196,16 @@
     },
     "source_reference": [
       "Supreme Court Notes Part 1"
-    ]
+    ],
+    "answer": "c",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "Supreme Court of India"
+    ],
+    "revision_fact": "Explanation for Supreme Court Match Set 23. Correct combination is option (C)."
   },
   {
     "id": "POLITY_SC_MATCH_024",
@@ -2015,13 +2222,13 @@
     "options": [
       {
         "id": "A",
-        "en": "a-2, b-1, c-4, d-3",
-        "ta": "a-2, b-1, c-4, d-3"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "B",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-2, b-1, c-4, d-3",
+        "ta": "a-2, b-1, c-4, d-3"
       },
       {
         "id": "C",
@@ -2035,18 +2242,18 @@
       }
     ],
     "options_en": [
-      "a-2, b-1, c-4, d-3",
       "a-1, b-2, c-3, d-4",
+      "a-2, b-1, c-4, d-3",
       "a-4, b-3, c-2, d-1",
       "a-3, b-4, c-1, d-2"
     ],
     "options_ta": [
-      "a-2, b-1, c-4, d-3",
       "a-1, b-2, c-3, d-4",
+      "a-2, b-1, c-4, d-3",
       "a-4, b-3, c-2, d-1",
       "a-3, b-4, c-1, d-2"
     ],
-    "correct_answer": "A",
+    "correct_answer": "B",
     "explanation": {
       "en": "Explanation for Supreme Court Match Set 24. Correct combination is option (D).",
       "ta": "உச்ச நீதிமன்றப் பொருத்தத் தொகுதி 24 பற்றிய விளக்கம். சரியான சேர்க்கை விருப்பம் (D)."
@@ -2055,12 +2262,12 @@
     "explanation_ta": "உச்ச நீதிமன்றப் பொருத்தத் தொகுதி 24 பற்றிய விளக்கம். சரியான சேர்க்கை விருப்பம் (D).",
     "why_not_others": {
       "A": {
-        "en": "✅ Incorrect matching combination.",
-        "ta": "✅ தவறான பொருத்தச் சேர்க்கை."
-      },
-      "B": {
         "en": "❌ Incorrect matching combination.",
         "ta": "❌ தவறான பொருத்தச் சேர்க்கை."
+      },
+      "B": {
+        "en": "✅ Incorrect matching combination.",
+        "ta": "✅ தவறான பொருத்தச் சேர்க்கை."
       },
       "C": {
         "en": "❌ Correct matching combination.",
@@ -2085,7 +2292,16 @@
     },
     "source_reference": [
       "Supreme Court Notes Part 3"
-    ]
+    ],
+    "answer": "b",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "Supreme Court of India"
+    ],
+    "revision_fact": "Explanation for Supreme Court Match Set 24. Correct combination is option (D)."
   },
   {
     "id": "POLITY_SC_MATCH_025",
@@ -2102,8 +2318,8 @@
     "options": [
       {
         "id": "A",
-        "en": "a-2, b-1, c-4, d-3",
-        "ta": "a-2, b-1, c-4, d-3"
+        "en": "a-4, b-3, c-2, d-1",
+        "ta": "a-4, b-3, c-2, d-1"
       },
       {
         "id": "B",
@@ -2117,23 +2333,23 @@
       },
       {
         "id": "D",
-        "en": "a-4, b-3, c-2, d-1",
-        "ta": "a-4, b-3, c-2, d-1"
+        "en": "a-2, b-1, c-4, d-3",
+        "ta": "a-2, b-1, c-4, d-3"
       }
     ],
     "options_en": [
-      "a-2, b-1, c-4, d-3",
+      "a-4, b-3, c-2, d-1",
       "a-1, b-2, c-3, d-4",
       "a-3, b-4, c-1, d-2",
-      "a-4, b-3, c-2, d-1"
+      "a-2, b-1, c-4, d-3"
     ],
     "options_ta": [
-      "a-2, b-1, c-4, d-3",
+      "a-4, b-3, c-2, d-1",
       "a-1, b-2, c-3, d-4",
       "a-3, b-4, c-1, d-2",
-      "a-4, b-3, c-2, d-1"
+      "a-2, b-1, c-4, d-3"
     ],
-    "correct_answer": "D",
+    "correct_answer": "A",
     "explanation": {
       "en": "Explanation for Supreme Court Match Set 25. Correct combination is option (A).",
       "ta": "உச்ச நீதிமன்றப் பொருத்தத் தொகுதி 25 பற்றிய விளக்கம். சரியான சேர்க்கை விருப்பம் (A)."
@@ -2142,8 +2358,8 @@
     "explanation_ta": "உச்ச நீதிமன்றப் பொருத்தத் தொகுதி 25 பற்றிய விளக்கம். சரியான சேர்க்கை விருப்பம் (A).",
     "why_not_others": {
       "A": {
-        "en": "❌ Incorrect matching combination.",
-        "ta": "❌ தவறான பொருத்தச் சேர்க்கை."
+        "en": "✅ Correct matching combination.",
+        "ta": "✅ சரியான பொருத்தச் சேர்க்கை."
       },
       "B": {
         "en": "❌ Incorrect matching combination.",
@@ -2154,8 +2370,8 @@
         "ta": "❌ தவறான பொருத்தச் சேர்க்கை."
       },
       "D": {
-        "en": "✅ Correct matching combination.",
-        "ta": "✅ சரியான பொருத்தச் சேர்க்கை."
+        "en": "❌ Incorrect matching combination.",
+        "ta": "❌ தவறான பொருத்தச் சேர்க்கை."
       }
     },
     "trap_point": {
@@ -2172,6 +2388,15 @@
     },
     "source_reference": [
       "Supreme Court Notes Part 1"
-    ]
+    ],
+    "answer": "a",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "Supreme Court of India"
+    ],
+    "revision_fact": "Explanation for Supreme Court Match Set 25. Correct combination is option (A)."
   }
 ]

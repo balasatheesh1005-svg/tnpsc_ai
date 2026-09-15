@@ -108,8 +108,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Both Assertion and Reason are true and Reason is the correct explanation of Assertion.",
-        "ta": "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்."
+        "en": "Assertion is true but Reason is false.",
+        "ta": "A சரி, ஆனால் R தவறு."
       },
       {
         "id": "B",
@@ -118,8 +118,8 @@
       },
       {
         "id": "C",
-        "en": "Assertion is true but Reason is false.",
-        "ta": "A சரி, ஆனால் R தவறு."
+        "en": "Both Assertion and Reason are true and Reason is the correct explanation of Assertion.",
+        "ta": "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்."
       },
       {
         "id": "D",
@@ -127,23 +127,23 @@
         "ta": "A தவறு, ஆனால் R சரி."
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "C",
     "explanation": {
       "en": "Both Assertion and Reason are true. Dual citizenship (like USA) can breed provincialism; single citizenship was adopted to foster national unity.",
       "ta": "கூற்று A மற்றும் காரணம் R இரண்டும் சரி. அமெரிக்காவில் உள்ள இரட்டைக் குடியுரிமை மாநில வெறியைத் தூண்டக்கூடும் என்பதால் தேசிய ஒற்றுமையை வளர்க்க ஒற்றைக் குடியுரிமை ஏற்கப்பட்டது."
     },
     "why_not_others": {
       "A": {
-        "en": "Correct. Single citizenship was purposefully designed to prevent state discrimination and promote fraternity.",
-        "ta": "சரி. மாநில பாகுபாட்டைத் தடுத்து சகோதரத்துவத்தை வளர்க்கவே ஒற்றைக் குடியுரிமை உருவாக்கப்பட்டது."
+        "en": "Incorrect. Reason is true.",
+        "ta": "தவறு. காரணம் சரியானது."
       },
       "B": {
         "en": "Incorrect. Reason is the direct justification for Assertion.",
         "ta": "தவறு. காரணம் கூற்றிற்கான நேரடி விளக்கமாகும்."
       },
       "C": {
-        "en": "Incorrect. Reason is true.",
-        "ta": "தவறு. காரணம் சரியானது."
+        "en": "Correct. Single citizenship was purposefully designed to prevent state discrimination and promote fraternity.",
+        "ta": "சரி. மாநில பாகுபாட்டைத் தடுத்து சகோதரத்துவத்தை வளர்க்கவே ஒற்றைக் குடியுரிமை உருவாக்கப்பட்டது."
       },
       "D": {
         "en": "Incorrect. Assertion is true.",
@@ -176,18 +176,18 @@
     "question_en": "Assertion (A): Unlike the US federal system, the Indian Constitution provides for single citizenship for the entire country.\nReason (R): Single citizenship ensures equal civil and political rights to all citizens regardless of their state of birth or residence, promoting national integration.",
     "question_ta": "கூற்று (A): அமெரிக்கக் கூட்டாட்சி முறை போலல்லாமல், இந்திய அரசியலமைப்பு நாடு முழுவதற்கும் ஒற்றைக் குடியுரிமையை வழங்குகிறது.\nகாரணம் (R): ஒற்றைக் குடியுரிமையானது குடிமக்கள் பிறந்த அல்லது வசிக்கும் மாநிலத்தைப் பொருட்படுத்தாமல் அனைவருக்கும் சமமான குடிமையியல் மற்றும் அரசியல் உரிமைகளை உறுதி செய்து தேசிய ஒருமைப்பாட்டை வளர்க்கிறது.",
     "options_en": [
-      "Both Assertion and Reason are true and Reason is the correct explanation of Assertion.",
-      "Both Assertion and Reason are true but Reason is NOT the correct explanation.",
       "Assertion is true but Reason is false.",
+      "Both Assertion and Reason are true but Reason is NOT the correct explanation.",
+      "Both Assertion and Reason are true and Reason is the correct explanation of Assertion.",
       "Assertion is false but Reason is true."
     ],
     "options_ta": [
-      "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்.",
-      "A மற்றும் R இரண்டும் சரி, ஆனால் R என்பது A விற்கு சரியான விளக்கம் அல்ல.",
       "A சரி, ஆனால் R தவறு.",
+      "A மற்றும் R இரண்டும் சரி, ஆனால் R என்பது A விற்கு சரியான விளக்கம் அல்ல.",
+      "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்.",
       "A தவறு, ஆனால் R சரி."
     ],
-    "answer": "a",
+    "answer": "c",
     "explanation_en": "Both Assertion and Reason are true. Dual citizenship (like USA) can breed provincialism; single citizenship was adopted to foster national unity.",
     "explanation_ta": "கூற்று A மற்றும் காரணம் R இரண்டும் சரி. அமெரிக்காவில் உள்ள இரட்டைக் குடியுரிமை மாநில வெறியைத் தூண்டக்கூடும் என்பதால் தேசிய ஒற்றுமையை வளர்க்க ஒற்றைக் குடியுரிமை ஏற்கப்பட்டது."
   },
@@ -209,13 +209,13 @@
       },
       {
         "id": "B",
-        "en": "Both Assertion and Reason are true but Reason is NOT the correct explanation.",
-        "ta": "A மற்றும் R இரண்டும் சரி, ஆனால் R என்பது A விற்கு சரியான விளக்கம் அல்ல."
+        "en": "Assertion is true but Reason is false.",
+        "ta": "A சரி, ஆனால் R தவறு."
       },
       {
         "id": "C",
-        "en": "Assertion is true but Reason is false.",
-        "ta": "A சரி, ஆனால் R தவறு."
+        "en": "Both Assertion and Reason are true but Reason is NOT the correct explanation.",
+        "ta": "A மற்றும் R இரண்டும் சரி, ஆனால் R என்பது A விற்கு சரியான விளக்கம் அல்ல."
       },
       {
         "id": "D",
@@ -223,7 +223,7 @@
         "ta": "A தவறு, ஆனால் R சரி."
       }
     ],
-    "correct_answer": "C",
+    "correct_answer": "B",
     "explanation": {
       "en": "Assertion is true (integrated single judicial hierarchy). Reason is FALSE because High Courts are independent constitutional courts, NOT administrative departments of the Union Law Ministry.",
       "ta": "கூற்று A சரி (ஒருங்கிணைந்த ஒற்றை நீதித்துறை படிநிலை). காரணம் R தவறு, ஏனெனில் உயர் நீதிமன்றங்கள் சுதந்திரமான அரசியலமைப்பு நீதிமன்றங்கள், மத்திய அமைச்சகத்தின் நிர்வாகத் துறைகள் அல்ல."
@@ -234,12 +234,12 @@
         "ta": "தவறு. காரணம் தவறானது."
       },
       "B": {
-        "en": "Incorrect. Reason is false.",
-        "ta": "தவறு. காரணம் தவறானது."
-      },
-      "C": {
         "en": "Correct. Assertion is true; Reason is false.",
         "ta": "சரி. கூற்று A சரி; காரணம் R தவறு."
+      },
+      "C": {
+        "en": "Incorrect. Reason is false.",
+        "ta": "தவறு. காரணம் தவறானது."
       },
       "D": {
         "en": "Incorrect. Assertion is true.",
@@ -273,17 +273,17 @@
     "question_ta": "கூற்று (A): இந்தியா உச்ச நீதிமன்றத்தை உச்சியில் கொண்டு மத்திய மற்றும் மாநில சட்டங்கள் இரண்டையும் அமல்படுத்தும் ஒரு ஒருங்கிணைந்த நீதித்துறை முறையைக் கொண்டுள்ளது.\nகாரணம் (R): மாநில உயர் நீதிமன்றங்கள் ஒன்றிய சட்ட மற்றும் நீதித்துறை அமைச்சகத்தின் முழுமையான கீழ்நிலை நிர்வாகத் துறைகளாகும்.",
     "options_en": [
       "Both Assertion and Reason are true and Reason is the correct explanation of Assertion.",
-      "Both Assertion and Reason are true but Reason is NOT the correct explanation.",
       "Assertion is true but Reason is false.",
+      "Both Assertion and Reason are true but Reason is NOT the correct explanation.",
       "Assertion is false but Reason is true."
     ],
     "options_ta": [
       "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்.",
-      "A மற்றும் R இரண்டும் சரி, ஆனால் R என்பது A விற்கு சரியான விளக்கம் அல்ல.",
       "A சரி, ஆனால் R தவறு.",
+      "A மற்றும் R இரண்டும் சரி, ஆனால் R என்பது A விற்கு சரியான விளக்கம் அல்ல.",
       "A தவறு, ஆனால் R சரி."
     ],
-    "answer": "c",
+    "answer": "b",
     "explanation_en": "Assertion is true (integrated single judicial hierarchy). Reason is FALSE because High Courts are independent constitutional courts, NOT administrative departments of the Union Law Ministry.",
     "explanation_ta": "கூற்று A சரி (ஒருங்கிணைந்த ஒற்றை நீதித்துறை படிநிலை). காரணம் R தவறு, ஏனெனில் உயர் நீதிமன்றங்கள் சுதந்திரமான அரசியலமைப்பு நீதிமன்றங்கள், மத்திய அமைச்சகத்தின் நிர்வாகத் துறைகள் அல்ல."
   },
@@ -300,13 +300,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Both Assertion and Reason are true and Reason is the correct explanation of Assertion.",
-        "ta": "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்."
+        "en": "Both Assertion and Reason are true but Reason is NOT the correct explanation.",
+        "ta": "A மற்றும் R இரண்டும் சரி, ஆனால் R என்பது A விற்கு சரியான விளக்கம் அல்ல."
       },
       {
         "id": "B",
-        "en": "Both Assertion and Reason are true but Reason is NOT the correct explanation.",
-        "ta": "A மற்றும் R இரண்டும் சரி, ஆனால் R என்பது A விற்கு சரியான விளக்கம் அல்ல."
+        "en": "Both Assertion and Reason are true and Reason is the correct explanation of Assertion.",
+        "ta": "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்."
       },
       {
         "id": "C",
@@ -319,19 +319,19 @@
         "ta": "A தவறு, ஆனால் R சரி."
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "B",
     "explanation": {
       "en": "Both Assertion and Reason are true. The requirement of state ratification for federal provisions gives the Constitution its rigidity, while simple/special majority provisions provide flexibility.",
       "ta": "கூற்று A மற்றும் காரணம் R இரண்டும் சரி. கூட்டாட்சி விதிகளுக்கு மாநில ஒப்புதல் தேவைப்படுவது நெகிழ்வற்ற தன்மையையும், சாதாரண பெரும்பான்மை விதிகள் நெகிழ்வுத்தன்மையையும் தருகின்றன."
     },
     "why_not_others": {
       "A": {
-        "en": "Correct. State ratification mechanism explains the rigid component of the Amendment process.",
-        "ta": "சரி. மாநிலங்களின் ஒப்புதல் முறையே திருத்தச் செயல்பாட்டின் நெகிழ்வற்ற கூறினை விளக்குகிறது."
-      },
-      "B": {
         "en": "Incorrect. Reason directly explains why the Constitution is rigid in its federal aspects.",
         "ta": "தவறு. காரணம் கூற்றின் நெகிழ்வற்ற தன்மைக்கு நேரடி விளக்கமாக அமைகிறது."
+      },
+      "B": {
+        "en": "Correct. State ratification mechanism explains the rigid component of the Amendment process.",
+        "ta": "சரி. மாநிலங்களின் ஒப்புதல் முறையே திருத்தச் செயல்பாட்டின் நெகிழ்வற்ற கூறினை விளக்குகிறது."
       },
       "C": {
         "en": "Incorrect. Reason is true.",
@@ -368,18 +368,18 @@
     "question_en": "Assertion (A): Article 368 provides a blend of rigidity and flexibility by prescribing distinct procedures for constitutional amendments.\nReason (R): Provisions affecting the federal character require ratification by at least half of the State Legislatures to safeguard state interests against unilateral central amendments.",
     "question_ta": "கூற்று (A): சரத்து 368 அரசியலமைப்புத் திருத்தங்களுக்கு வெவ்வேறான நடைமுறைகளை வகுப்பதன் மூலம் நெகிழ்வுத்தன்மை மற்றும் நெகிழ்வற்ற தன்மையின் கலவையை வழங்குகிறது.\nகாரணம் (R): கூட்டாட்சித் தன்மையைப் பாதிக்கும் விதிகள், ஒருதலைப்பட்சமான மத்தியத் திருத்தங்களிலிருந்து மாநில நலன்களைப் பாதுகாக்க குறைந்தபட்சம் பாதி மாநில சட்டமன்றங்களின் ஒப்புதலைக் கோருகின்றன.",
     "options_en": [
-      "Both Assertion and Reason are true and Reason is the correct explanation of Assertion.",
       "Both Assertion and Reason are true but Reason is NOT the correct explanation.",
+      "Both Assertion and Reason are true and Reason is the correct explanation of Assertion.",
       "Assertion is true but Reason is false.",
       "Assertion is false but Reason is true."
     ],
     "options_ta": [
-      "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்.",
       "A மற்றும் R இரண்டும் சரி, ஆனால் R என்பது A விற்கு சரியான விளக்கம் அல்ல.",
+      "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்.",
       "A சரி, ஆனால் R தவறு.",
       "A தவறு, ஆனால் R சரி."
     ],
-    "answer": "a",
+    "answer": "b",
     "explanation_en": "Both Assertion and Reason are true. The requirement of state ratification for federal provisions gives the Constitution its rigidity, while simple/special majority provisions provide flexibility.",
     "explanation_ta": "கூற்று A மற்றும் காரணம் R இரண்டும் சரி. கூட்டாட்சி விதிகளுக்கு மாநில ஒப்புதல் தேவைப்படுவது நெகிழ்வற்ற தன்மையையும், சாதாரண பெரும்பான்மை விதிகள் நெகிழ்வுத்தன்மையையும் தருகின்றன."
   },
@@ -396,8 +396,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Both Assertion and Reason are true and Reason is the correct explanation of Assertion.",
-        "ta": "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்."
+        "en": "Assertion is false but Reason is true.",
+        "ta": "A தவறு, ஆனால் R சரி."
       },
       {
         "id": "B",
@@ -411,19 +411,19 @@
       },
       {
         "id": "D",
-        "en": "Assertion is false but Reason is true.",
-        "ta": "A தவறு, ஆனால் R சரி."
+        "en": "Both Assertion and Reason are true and Reason is the correct explanation of Assertion.",
+        "ta": "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்."
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "D",
     "explanation": {
       "en": "Both Assertion and Reason are true. Despite high illiteracy in 1950 (~85%), framers placed faith in the common citizen, promoting political equality (one person, one vote, one value).",
       "ta": "கூற்று A மற்றும் காரணம் R இரண்டும் சரி. 1950-ல் அதிக இல்லாமை (~85%) இருந்தபோதிலும் அரசியல் சமத்துவத்தை உருவாக்க வயதுவந்தோர் வாக்குரிமை வழங்கப்பட்டது."
     },
     "why_not_others": {
       "A": {
-        "en": "Correct. Reason directly clarifies why adult franchise was considered a landmark democratic achievement.",
-        "ta": "சரி. வயதுவந்தோர் வாக்குரிமை ஏன் வரலாற்றுச் சாதனை என்பதை காரணம் நேரடியாக விளக்குகிறது."
+        "en": "Incorrect. Assertion is true.",
+        "ta": "தவறு. கூற்று சரியானது."
       },
       "B": {
         "en": "Incorrect. Reason provides the underlying democratic rationale.",
@@ -434,8 +434,8 @@
         "ta": "தவறு. காரணம் சரியானது."
       },
       "D": {
-        "en": "Incorrect. Assertion is true.",
-        "ta": "தவறு. கூற்று சரியானது."
+        "en": "Correct. Reason directly clarifies why adult franchise was considered a landmark democratic achievement.",
+        "ta": "சரி. வயதுவந்தோர் வாக்குரிமை ஏன் வரலாற்றுச் சாதனை என்பதை காரணம் நேரடியாக விளக்குகிறது."
       }
     },
     "tnpsc_tip": {
@@ -464,18 +464,18 @@
     "question_en": "Assertion (A): The adoption of Universal Adult Franchise without literacy qualifications in 1950 was a bold democratic leap in Indian constitutional history.\nReason (R): Universal Adult Franchise established political equality and enhanced democratic legitimacy by entrusting power directly to the masses.",
     "question_ta": "கூற்று (A): 1950-ல் எழுத்தறிவுத் தகுதியின்றி உலகளாவிய வயதுவந்தோர் வாக்குரிமையை ஏற்ற்றுக் கொண்டது இந்திய அரசியலமைப்பு வரலாற்றில் ஒரு தைரியமான ஜனநாயகப் பாய்ச்சலாகும்.\nகாரணம் (R): உலகளாவிய வயதுவந்தோர் வாக்குரிமையானது அரசியல் சமத்துவத்தை நிறுவியதோடு, அதிகாரத்தை நேரடியாக மக்களிடம் ஒப்படைத்ததன் மூலம் ஜனநாயக நியாயத்தன்மையை உயர்த்தியது.",
     "options_en": [
-      "Both Assertion and Reason are true and Reason is the correct explanation of Assertion.",
+      "Assertion is false but Reason is true.",
       "Both Assertion and Reason are true but Reason is NOT the correct explanation.",
       "Assertion is true but Reason is false.",
-      "Assertion is false but Reason is true."
+      "Both Assertion and Reason are true and Reason is the correct explanation of Assertion."
     ],
     "options_ta": [
-      "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்.",
+      "A தவறு, ஆனால் R சரி.",
       "A மற்றும் R இரண்டும் சரி, ஆனால் R என்பது A விற்கு சரியான விளக்கம் அல்ல.",
       "A சரி, ஆனால் R தவறு.",
-      "A தவறு, ஆனால் R சரி."
+      "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்."
     ],
-    "answer": "a",
+    "answer": "d",
     "explanation_en": "Both Assertion and Reason are true. Despite high illiteracy in 1950 (~85%), framers placed faith in the common citizen, promoting political equality (one person, one vote, one value).",
     "explanation_ta": "கூற்று A மற்றும் காரணம் R இரண்டும் சரி. 1950-ல் அதிக இல்லாமை (~85%) இருந்தபோதிலும் அரசியல் சமத்துவத்தை உருவாக்க வயதுவந்தோர் வாக்குரிமை வழங்கப்பட்டது."
   },
@@ -787,13 +787,13 @@
       },
       {
         "id": "B",
-        "en": "Both Assertion and Reason are true but Reason is NOT the correct explanation.",
-        "ta": "A மற்றும் R இரண்டும் சரி, ஆனால் R என்பது A விற்கு சரியான விளக்கம் அல்ல."
+        "en": "Assertion is true but Reason is false.",
+        "ta": "A சரி, ஆனால் R தவறு."
       },
       {
         "id": "C",
-        "en": "Assertion is true but Reason is false.",
-        "ta": "A சரி, ஆனால் R தவறு."
+        "en": "Both Assertion and Reason are true but Reason is NOT the correct explanation.",
+        "ta": "A மற்றும் R இரண்டும் சரி, ஆனால் R என்பது A விற்கு சரியான விளக்கம் அல்ல."
       },
       {
         "id": "D",
@@ -801,7 +801,7 @@
         "ta": "A தவறு, ஆனால் R சரி."
       }
     ],
-    "correct_answer": "C",
+    "correct_answer": "B",
     "explanation": {
       "en": "Assertion is true (Dicey's Rule of Law principle). Reason is FALSE because Article 361 provides constitutional immunities to the President and State Governors during their term.",
       "ta": "கூற்று A சரி (டைசியின் சட்டத்தின் ஆட்சி கோட்பாடு). காரணம் R தவறு, ஏனெனில் சரத்து 361 குடியரசுத் தலைவர் மற்றும் ஆளுநர்களுக்குப் பதவி காலத்தில் விலக்களிப்புகளை வழங்குகிறது."
@@ -812,12 +812,12 @@
         "ta": "தவறு. காரணம் தவறானது, 361 குடியரசுத் தலைவர்/ஆளுநருக்கு விலக்களிக்கிறது."
       },
       "B": {
-        "en": "Incorrect. Reason is false.",
-        "ta": "தவறு. காரணம் தவறானது."
-      },
-      "C": {
         "en": "Correct. Assertion is true; Reason is false.",
         "ta": "சரி. கூற்று A சரி; காரணம் R தவறு."
+      },
+      "C": {
+        "en": "Incorrect. Reason is false.",
+        "ta": "தவறு. காரணம் தவறானது."
       },
       "D": {
         "en": "Incorrect. Assertion is true.",
@@ -852,17 +852,17 @@
     "question_ta": "கூற்று (A): சரத்து 14-ன் கீழ் உள்ள 'சட்டத்தின் ஆட்சி' கோட்பாடு எந்த நபரும் சட்டத்திற்கு மேலானவர் அல்ல, அனைவரும் சாதாரண நீதிமன்ற அதிகார வரம்பிற்குட்பட்டவர்கள் என்பதைக் குறிக்கிறது.\nகாரணம் (R): இந்திய அரசியலமைப்பு எந்தவொரு பொதுப் பதவியாளருக்கும் எந்தவித அரசியலமைப்பு விதிவிலக்குகளும் இன்றி முழுமையான சமத்துவத்தை வழங்குகிறது.",
     "options_en": [
       "Both Assertion and Reason are true and Reason is the correct explanation of Assertion.",
-      "Both Assertion and Reason are true but Reason is NOT the correct explanation.",
       "Assertion is true but Reason is false.",
+      "Both Assertion and Reason are true but Reason is NOT the correct explanation.",
       "Assertion is false but Reason is true."
     ],
     "options_ta": [
       "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்.",
-      "A மற்றும் R இரண்டும் சரி, ஆனால் R என்பது A விற்கு சரியான விளக்கம் அல்ல.",
       "A சரி, ஆனால் R தவறு.",
+      "A மற்றும் R இரண்டும் சரி, ஆனால் R என்பது A விற்கு சரியான விளக்கம் அல்ல.",
       "A தவறு, ஆனால் R சரி."
     ],
-    "answer": "c",
+    "answer": "b",
     "explanation_en": "Assertion is true (Dicey's Rule of Law principle). Reason is FALSE because Article 361 provides constitutional immunities to the President and State Governors during their term.",
     "explanation_ta": "கூற்று A சரி (டைசியின் சட்டத்தின் ஆட்சி கோட்பாடு). காரணம் R தவறு, ஏனெனில் சரத்து 361 குடியரசுத் தலைவர் மற்றும் ஆளுநர்களுக்குப் பதவி காலத்தில் விலக்களிப்புகளை வழங்குகிறது."
   },
@@ -879,8 +879,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Both Assertion and Reason are true and Reason is the correct explanation of Assertion.",
-        "ta": "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்."
+        "en": "Assertion is true but Reason is false.",
+        "ta": "A சரி, ஆனால் R தவறு."
       },
       {
         "id": "B",
@@ -889,8 +889,8 @@
       },
       {
         "id": "C",
-        "en": "Assertion is true but Reason is false.",
-        "ta": "A சரி, ஆனால் R தவறு."
+        "en": "Both Assertion and Reason are true and Reason is the correct explanation of Assertion.",
+        "ta": "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்."
       },
       {
         "id": "D",
@@ -898,23 +898,23 @@
         "ta": "A தவறு, ஆனால் R சரி."
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "C",
     "explanation": {
       "en": "Both Assertion and Reason are true. Rights without duties breed license and chaos; duties without rights lead to authoritarianism. They complement each other.",
       "ta": "கூற்று A மற்றும் காரணம் R இரண்டும் சரி. கடமையற்ற உரிமைகள் குழப்பத்திற்கும், உரிமையற்ற கடமைகள் சர்வாதிகாரத்திற்கும் வழிவகுக்கும்."
     },
     "why_not_others": {
       "A": {
-        "en": "Correct. Correlative nature of rights and duties is logically explained by Reason.",
-        "ta": "சரி. உரிமைகள் மற்றும் கடமைகளின் பரஸ்பரத் தொடர்பை காரணம் சரியாக விளக்குகிறது."
+        "en": "Incorrect. Reason is true.",
+        "ta": "தவறு. காரணம் சரியானது."
       },
       "B": {
         "en": "Incorrect. Reason directly provides the analytical justification for Assertion.",
         "ta": "தவறு. காரணம் கூற்றிற்கான நேரடி பகுப்பாய்வு விளக்கமாகும்."
       },
       "C": {
-        "en": "Incorrect. Reason is true.",
-        "ta": "தவறு. காரணம் சரியானது."
+        "en": "Correct. Correlative nature of rights and duties is logically explained by Reason.",
+        "ta": "சரி. உரிமைகள் மற்றும் கடமைகளின் பரஸ்பரத் தொடர்பை காரணம் சரியாக விளக்குகிறது."
       },
       "D": {
         "en": "Incorrect. Assertion is true.",
@@ -948,18 +948,18 @@
     "question_en": "Assertion (A): Fundamental Rights and Fundamental Duties are correlative and logically inseparable in a constitutional democracy.\nReason (R): The enjoyment of rights by one citizen imposes a corresponding constitutional obligation to respect the equal rights of others and protect national integrity.",
     "question_ta": "கூற்று (A): அரசியலமைப்பு ஜனநாயகத்தில் அடிப்படை உரிமைகளும் அடிப்படை கடமைகளும் ஒன்றுக்கொன்று தொடர்புடையவை மற்றும் பிரிக்க முடியாதவை.\nகாரணம் (R): ஒரு குடிமகன் உரிமைகளை அனுபவிப்பது மற்றவர்களின் சம உரிமைகளை மதிப்பதற்கும் தேசிய ஒருமைப்பாட்டைப் பாதுகாப்பதற்குமான பொறுப்பை விதிக்கிறது.",
     "options_en": [
-      "Both Assertion and Reason are true and Reason is the correct explanation of Assertion.",
-      "Both Assertion and Reason are true but Reason is NOT the correct explanation.",
       "Assertion is true but Reason is false.",
+      "Both Assertion and Reason are true but Reason is NOT the correct explanation.",
+      "Both Assertion and Reason are true and Reason is the correct explanation of Assertion.",
       "Assertion is false but Reason is true."
     ],
     "options_ta": [
-      "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்.",
-      "A மற்றும் R இரண்டும் சரி, ஆனால் R என்பது A விற்கு சரியான விளக்கம் அல்ல.",
       "A சரி, ஆனால் R தவறு.",
+      "A மற்றும் R இரண்டும் சரி, ஆனால் R என்பது A விற்கு சரியான விளக்கம் அல்ல.",
+      "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்.",
       "A தவறு, ஆனால் R சரி."
     ],
-    "answer": "a",
+    "answer": "c",
     "explanation_en": "Both Assertion and Reason are true. Rights without duties breed license and chaos; duties without rights lead to authoritarianism. They complement each other.",
     "explanation_ta": "கூற்று A மற்றும் காரணம் R இரண்டும் சரி. கடமையற்ற உரிமைகள் குழப்பத்திற்கும், உரிமையற்ற கடமைகள் சர்வாதிகாரத்திற்கும் வழிவகுக்கும்."
   },
@@ -976,8 +976,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Both Assertion and Reason are true and Reason is the correct explanation of Assertion.",
-        "ta": "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்."
+        "en": "Assertion is false but Reason is true.",
+        "ta": "A தவறு, ஆனால் R சரி."
       },
       {
         "id": "B",
@@ -991,19 +991,19 @@
       },
       {
         "id": "D",
-        "en": "Assertion is false but Reason is true.",
-        "ta": "A தவறு, ஆனால் R சரி."
+        "en": "Both Assertion and Reason are true and Reason is the correct explanation of Assertion.",
+        "ta": "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்."
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "D",
     "explanation": {
       "en": "Both Assertion and Reason are true. The 61st Amendment (effective March 28, 1989) brought millions of young citizens into the voting process to strengthen democracy.",
       "ta": "கூற்று A மற்றும் காரணம் R இரண்டும் சரி. 61வது திருத்தம் (மார்ச் 28, 1989 முதல் அமல்) லட்சக்கணக்கான இளைஞர்களை வாக்காளர்களாக்கி ஜனநாயகத்தை வலுப்படுத்தியது."
     },
     "why_not_others": {
       "A": {
-        "en": "Correct. Youth empowerment rationale explains why Article 326 was amended.",
-        "ta": "சரி. இளைஞர்கள் அதிகாரம் அளித்தல் விளக்கமே 326வது சரத்து திருத்தப்பட்டதற்கான காரணமாகும்."
+        "en": "Incorrect. Assertion is true.",
+        "ta": "தவறு. கூற்று சரியானது."
       },
       "B": {
         "en": "Incorrect. Reason directly provides the socio-political objective.",
@@ -1014,8 +1014,8 @@
         "ta": "தவறு. காரணம் சரியானது."
       },
       "D": {
-        "en": "Incorrect. Assertion is true.",
-        "ta": "தவறு. கூற்று சரியானது."
+        "en": "Correct. Youth empowerment rationale explains why Article 326 was amended.",
+        "ta": "சரி. இளைஞர்கள் அதிகாரம் அளித்தல் விளக்கமே 326வது சரத்து திருத்தப்பட்டதற்கான காரணமாகும்."
       }
     },
     "tnpsc_tip": {
@@ -1045,18 +1045,18 @@
     "question_en": "Assertion (A): The Sixty-First Constitutional Amendment Act 1988 reduced the voting age from 21 years to 18 years for Lok Sabha and State Legislative Assembly elections.\nReason (R): The reduction was aimed at enlarging the electorate and deepening democratic political participation among the country's youth.",
     "question_ta": "கூற்று (A): 61வது அரசியலமைப்புத் திருத்தச் சட்டம் 1988 மக்களவை மற்றும் மாநில சட்டமன்றத் தேர்தல்களுக்கான வாக்குரிமை வயதை 21 லிருந்து 18 ஆகக் குறைத்தது.\nகாரணம் (R): வாக்காளர் எண்ணிக்கையை விரிவுபடுத்தி, நாட்டின் இளைஞர்களிடையே ஜனநாயக அரசியல் பங்கேற்பை ஆழப்படுத்துவதையே இந்தக் குறைப்பு நோக்கமாகக் கொண்டிருந்தது.",
     "options_en": [
-      "Both Assertion and Reason are true and Reason is the correct explanation of Assertion.",
+      "Assertion is false but Reason is true.",
       "Both Assertion and Reason are true but Reason is NOT the correct explanation.",
       "Assertion is true but Reason is false.",
-      "Assertion is false but Reason is true."
+      "Both Assertion and Reason are true and Reason is the correct explanation of Assertion."
     ],
     "options_ta": [
-      "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்.",
+      "A தவறு, ஆனால் R சரி.",
       "A மற்றும் R இரண்டும் சரி, ஆனால் R என்பது A விற்கு சரியான விளக்கம் அல்ல.",
       "A சரி, ஆனால் R தவறு.",
-      "A தவறு, ஆனால் R சரி."
+      "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்."
     ],
-    "answer": "a",
+    "answer": "d",
     "explanation_en": "Both Assertion and Reason are true. The 61st Amendment (effective March 28, 1989) brought millions of young citizens into the voting process to strengthen democracy.",
     "explanation_ta": "கூற்று A மற்றும் காரணம் R இரண்டும் சரி. 61வது திருத்தம் (மார்ச் 28, 1989 முதல் அமல்) லட்சக்கணக்கான இளைஞர்களை வாக்காளர்களாக்கி ஜனநாயகத்தை வலுப்படுத்தியது."
   },
@@ -1073,8 +1073,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Both Assertion and Reason are true and Reason is the correct explanation of Assertion.",
-        "ta": "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்."
+        "en": "Assertion is false but Reason is true.",
+        "ta": "A தவறு, ஆனால் R சரி."
       },
       {
         "id": "B",
@@ -1088,19 +1088,19 @@
       },
       {
         "id": "D",
-        "en": "Assertion is false but Reason is true.",
-        "ta": "A தவறு, ஆனால் R சரி."
+        "en": "Both Assertion and Reason are true and Reason is the correct explanation of Assertion.",
+        "ta": "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்."
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "D",
     "explanation": {
       "en": "Both Assertion and Reason are true. Article 40 (Gandhian Principle) was given statutory muscle, uniform 5-year terms, mandatory elections, and reservation by 73rd/74th Amendments.",
       "ta": "கூற்று A மற்றும் காரணம் R இரண்டும் சரி. சரத்து 40 (காந்திய தத்துவம்) 73/74வது திருத்தங்கள் மூலம் கட்டாய 5 ஆண்டு பதவிக் காலம், சீரான தேர்தல்களுடன் அரசியலமைப்பு வடிவம் பெற்றது."
     },
     "why_not_others": {
       "A": {
-        "en": "Correct. Conversion of Art 40 DPSP into mandatory Parts IX/IXA explains creation of 3rd tier.",
-        "ta": "சரி. சரத்து 40 DPSP பகுதி IX/IXA ஆக மாறியதே 3வது அடுக்கு உருவானதை விளக்குகிறது."
+        "en": "Incorrect. Assertion is true.",
+        "ta": "தவறு. கூற்று சரியானது."
       },
       "B": {
         "en": "Incorrect. Reason directly explains the constitutional transformation.",
@@ -1111,8 +1111,8 @@
         "ta": "தவறு. காரணம் சரியானது."
       },
       "D": {
-        "en": "Incorrect. Assertion is true.",
-        "ta": "தவறு. கூற்று சரியானது."
+        "en": "Correct. Conversion of Art 40 DPSP into mandatory Parts IX/IXA explains creation of 3rd tier.",
+        "ta": "சரி. சரத்து 40 DPSP பகுதி IX/IXA ஆக மாறியதே 3வது அடுக்கு உருவானதை விளக்குகிறது."
       }
     },
     "tnpsc_tip": {
@@ -1142,18 +1142,18 @@
     "question_en": "Assertion (A): The 73rd and 74th Constitutional Amendment Acts of 1992 created a vibrant third tier of local self-government in India.\nReason (R): These amendments converted the non-justiciable directive principle of Article 40 into a mandatory constitutional framework for grassroots democracy.",
     "question_ta": "கூற்று (A): 1992-ன் 73 மற்றும் 74வது அரசியலமைப்புத் திருத்தச் சட்டங்கள் இந்தியாவில் உள்ளாட்சி அமைப்புகளின் துடிப்பான மூன்றாவது அடுக்கை உருவாக்கின.\nகாரணம் (R): இத்திருத்தங்கள் சரத்து 40-ன் நீதிமன்றத்தால் அமல்படுத்த முடியாத வழிகாட்டு தலைப்பை அடிமட்ட ஜனநாயகத்திற்கான கட்டாய அரசியலமைப்பு அமைப்பாக மாற்றின.",
     "options_en": [
-      "Both Assertion and Reason are true and Reason is the correct explanation of Assertion.",
+      "Assertion is false but Reason is true.",
       "Both Assertion and Reason are true but Reason is NOT the correct explanation.",
       "Assertion is true but Reason is false.",
-      "Assertion is false but Reason is true."
+      "Both Assertion and Reason are true and Reason is the correct explanation of Assertion."
     ],
     "options_ta": [
-      "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்.",
+      "A தவறு, ஆனால் R சரி.",
       "A மற்றும் R இரண்டும் சரி, ஆனால் R என்பது A விற்கு சரியான விளக்கம் அல்ல.",
       "A சரி, ஆனால் R தவறு.",
-      "A தவறு, ஆனால் R சரி."
+      "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்."
     ],
-    "answer": "a",
+    "answer": "d",
     "explanation_en": "Both Assertion and Reason are true. Article 40 (Gandhian Principle) was given statutory muscle, uniform 5-year terms, mandatory elections, and reservation by 73rd/74th Amendments.",
     "explanation_ta": "கூற்று A மற்றும் காரணம் R இரண்டும் சரி. சரத்து 40 (காந்திய தத்துவம்) 73/74வது திருத்தங்கள் மூலம் கட்டாய 5 ஆண்டு பதவிக் காலம், சீரான தேர்தல்களுடன் அரசியலமைப்பு வடிவம் பெற்றது."
   },
@@ -1170,13 +1170,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Both Assertion and Reason are true and Reason is the correct explanation of Assertion.",
-        "ta": "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்."
+        "en": "Both Assertion and Reason are true but Reason is NOT the correct explanation.",
+        "ta": "A மற்றும் R இரண்டும் சரி, ஆனால் R என்பது A விற்கு சரியான விளக்கம் அல்ல."
       },
       {
         "id": "B",
-        "en": "Both Assertion and Reason are true but Reason is NOT the correct explanation.",
-        "ta": "A மற்றும் R இரண்டும் சரி, ஆனால் R என்பது A விற்கு சரியான விளக்கம் அல்ல."
+        "en": "Both Assertion and Reason are true and Reason is the correct explanation of Assertion.",
+        "ta": "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்."
       },
       {
         "id": "C",
@@ -1189,19 +1189,19 @@
         "ta": "A தவறு, ஆனால் R சரி."
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "B",
     "explanation": {
       "en": "Both Assertion and Reason are true. Article 352 temporarily alters the division of legislative and executive powers, demonstrating Dr. Ambedkar's observation that the Constitution can be federal or unitary according to times and requirements.",
       "ta": "கூற்று A மற்றும் காரணம் R இரண்டும் சரி. சரத்து 352 சட்டமியற்றும் மற்றும் நிர்வாக அதிகாரப் பகிர்வை தற்காலிகமாக மாற்றி அமைக்கின்றது."
     },
     "why_not_others": {
       "A": {
-        "en": "Correct. Union executive/legislative overrides during emergency explain the federal-to-unitary shift.",
-        "ta": "சரி. அவசரநிலையின் போது மத்திய அதிகார மேலாதிக்கமே ஒற்றையாட்சி மாற்றத்தை விளக்குகிறது."
-      },
-      "B": {
         "en": "Incorrect. Reason provides the mechanism for Assertion.",
         "ta": "தவறு. காரணம் கூற்றிற்கான நடைமுறை விளக்கத்தை அளிக்கிறது."
+      },
+      "B": {
+        "en": "Correct. Union executive/legislative overrides during emergency explain the federal-to-unitary shift.",
+        "ta": "சரி. அவசரநிலையின் போது மத்திய அதிகார மேலாதிக்கமே ஒற்றையாட்சி மாற்றத்தை விளக்குகிறது."
       },
       "C": {
         "en": "Incorrect. Reason is true.",
@@ -1239,18 +1239,18 @@
     "question_en": "Assertion (A): During the proclamation of a National Emergency under Article 352, the federal structure of India is transformed into a unitary one without a formal constitutional amendment.\nReason (R): The Union Executive can issue administrative directions to States on any matter, and Parliament gains power to legislate on State List subjects under Article 250.",
     "question_ta": "கூற்று (A): சரத்து 352-ன் கீழ் தேசிய அவசரநிலை பிரகடனப்படுத்தப்படும் போது, இந்தியாவின் கூட்டாட்சி அமைப்பு முறையான அரசியலமைப்புத் திருத்தமின்றி ஒற்றையாட்சியாக மாறுகிறது.\nகாரணம் (R): ஒன்றிய நிர்வாகம் எந்தவொரு விவகாரத்திலும் மாநிலங்களுக்கு உத்தரவிடலாம், மேலும் சரத்து 250-ன் கீழ் மாநிலப் பட்டியல் தலைப்புகளில் சட்டமியற்றும் அதிகாரத்தை நாடாளுமன்றம் பெறுகிறது.",
     "options_en": [
-      "Both Assertion and Reason are true and Reason is the correct explanation of Assertion.",
       "Both Assertion and Reason are true but Reason is NOT the correct explanation.",
+      "Both Assertion and Reason are true and Reason is the correct explanation of Assertion.",
       "Assertion is true but Reason is false.",
       "Assertion is false but Reason is true."
     ],
     "options_ta": [
-      "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்.",
       "A மற்றும் R இரண்டும் சரி, ஆனால் R என்பது A விற்கு சரியான விளக்கம் அல்ல.",
+      "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்.",
       "A சரி, ஆனால் R தவறு.",
       "A தவறு, ஆனால் R சரி."
     ],
-    "answer": "a",
+    "answer": "b",
     "explanation_en": "Both Assertion and Reason are true. Article 352 temporarily alters the division of legislative and executive powers, demonstrating Dr. Ambedkar's observation that the Constitution can be federal or unitary according to times and requirements.",
     "explanation_ta": "கூற்று A மற்றும் காரணம் R இரண்டும் சரி. சரத்து 352 சட்டமியற்றும் மற்றும் நிர்வாக அதிகாரப் பகிர்வை தற்காலிகமாக மாற்றி அமைக்கின்றது."
   },
@@ -1267,8 +1267,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Both Assertion and Reason are true and Reason is the correct explanation of Assertion.",
-        "ta": "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்."
+        "en": "Assertion is false but Reason is true.",
+        "ta": "A தவறு, ஆனால் R சரி."
       },
       {
         "id": "B",
@@ -1282,19 +1282,19 @@
       },
       {
         "id": "D",
-        "en": "Assertion is false but Reason is true.",
-        "ta": "A தவறு, ஆனால் R சரி."
+        "en": "Both Assertion and Reason are true and Reason is the correct explanation of Assertion.",
+        "ta": "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்."
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "D",
     "explanation": {
       "en": "Both Assertion and Reason are true. The 7-6 landmark ruling held that while Parliament can amend any part of the Constitution under Art 368, it cannot damage or emasculate its 'Basic Structure'.",
       "ta": "கூற்று A மற்றும் காரணம் R இரண்டும் சரி. நாடாளுமன்றம் அரசியலமைப்பின் எந்தப் பகுதியையும் திருத்தலாம், ஆனால் அதன் 'அடிப்படை அமைப்பை' மாற்றவோ அழிக்கவோ முடியாது."
     },
     "why_not_others": {
       "A": {
-        "en": "Correct. Protecting core constitutional identity explains why Basic Structure was created.",
-        "ta": "சரி. அடிப்படை அரசியலமைப்பு அடையாளத்தைப் பாதுகாப்பதே இக்கோட்பாட்டின் உருவாக்கக் காரணமாகும்."
+        "en": "Incorrect. Assertion is true.",
+        "ta": "தவறு. கூற்று சரியானது."
       },
       "B": {
         "en": "Incorrect. Reason directly provides the constitutional goal of the doctrine.",
@@ -1305,8 +1305,8 @@
         "ta": "தவறு. காரணம் சரியானது."
       },
       "D": {
-        "en": "Incorrect. Assertion is true.",
-        "ta": "தவறு. கூற்று சரியானது."
+        "en": "Correct. Protecting core constitutional identity explains why Basic Structure was created.",
+        "ta": "சரி. அடிப்படை அரசியலமைப்பு அடையாளத்தைப் பாதுகாப்பதே இக்கோட்பாட்டின் உருவாக்கக் காரணமாகும்."
       }
     },
     "tnpsc_tip": {
@@ -1336,18 +1336,18 @@
     "question_en": "Assertion (A): The Supreme Court formulated the Basic Structure Doctrine in Kesavananda Bharati case (1973).\nReason (R): The doctrine was established to prevent Parliament from using its Article 368 constituent power to alter or destroy the essential identity and core values of the Constitution.",
     "question_ta": "கூற்று (A): கேசவாநந்த பாரதி வழக்கில் (1973) உச்ச நீதிமன்றம் அடிப்படை அமைப்புக் கோட்பாட்டை உருவாக்கியது.\nகாரணம் (R): அரசியலமைப்பின் அத்தியாவசிய அடையாளத்தையும் முதன்மை விழுமியங்களையும் அழிக்க நாடாளுமன்றம் தனது சரத்து 368 திருத்தும் அதிகாரத்தைப் பயன்படுத்துவதைத் தடுப்பதே இக்கோட்பாட்டின் நோக்கமாகும்.",
     "options_en": [
-      "Both Assertion and Reason are true and Reason is the correct explanation of Assertion.",
+      "Assertion is false but Reason is true.",
       "Both Assertion and Reason are true but Reason is NOT the correct explanation.",
       "Assertion is true but Reason is false.",
-      "Assertion is false but Reason is true."
+      "Both Assertion and Reason are true and Reason is the correct explanation of Assertion."
     ],
     "options_ta": [
-      "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்.",
+      "A தவறு, ஆனால் R சரி.",
       "A மற்றும் R இரண்டும் சரி, ஆனால் R என்பது A விற்கு சரியான விளக்கம் அல்ல.",
       "A சரி, ஆனால் R தவறு.",
-      "A தவறு, ஆனால் R சரி."
+      "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்."
     ],
-    "answer": "a",
+    "answer": "d",
     "explanation_en": "Both Assertion and Reason are true. The 7-6 landmark ruling held that while Parliament can amend any part of the Constitution under Art 368, it cannot damage or emasculate its 'Basic Structure'.",
     "explanation_ta": "கூற்று A மற்றும் காரணம் R இரண்டும் சரி. நாடாளுமன்றம் அரசியலமைப்பின் எந்தப் பகுதியையும் திருத்தலாம், ஆனால் அதன் 'அடிப்படை அமைப்பை' மாற்றவோ அழிக்கவோ முடியாது."
   },
@@ -1466,13 +1466,13 @@
       },
       {
         "id": "B",
-        "en": "Union Parliament gains power to make laws on that State List subject for a period not exceeding one year at a time.",
-        "ta": "ஒன்றிய நாடாளுமன்றம் அந்த மாநிலப் பட்டியல் தலைப்பில் ஒரு நேரத்தில் அதிகபட்சம் 1 ஆண்டிற்கு சட்டமியற்றும் அதிகாரத்தைப் பெறுகிறது."
+        "en": "The subject is automatically shifted from the State List to the Union List in the Seventh Schedule.",
+        "ta": "அந்தத் தலைப்பு 7வது அட்டவணையில் மாநிலப் பட்டியலிலிருந்து ஒன்றியப் பட்டியலுக்குத் தானாக மாற்றப்படுகிறது."
       },
       {
         "id": "C",
-        "en": "The subject is automatically shifted from the State List to the Union List in the Seventh Schedule.",
-        "ta": "அந்தத் தலைப்பு 7வது அட்டவணையில் மாநிலப் பட்டியலிலிருந்து ஒன்றியப் பட்டியலுக்குத் தானாக மாற்றப்படுகிறது."
+        "en": "Union Parliament gains power to make laws on that State List subject for a period not exceeding one year at a time.",
+        "ta": "ஒன்றிய நாடாளுமன்றம் அந்த மாநிலப் பட்டியல் தலைப்பில் ஒரு நேரத்தில் அதிகபட்சம் 1 ஆண்டிற்கு சட்டமியற்றும் அதிகாரத்தைப் பெறுகிறது."
       },
       {
         "id": "D",
@@ -1480,7 +1480,7 @@
         "ta": "அனைத்து மாநிலங்களிலும் சரத்து 356-ன் கீழ் குடியரசுத் தலைவர் ஆட்சி தானாக அறிவிக்கப்படுகிறது."
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "C",
     "explanation": {
       "en": "Under Article 249, Rajya Sabha's resolution authorizes Parliament to make laws on a State subject in the national interest for up to 1 year (renewable indefinitely for 1 year at a time). State Legislature does NOT lose its lawmaking power concurrently.",
       "ta": "சரத்து 249-ன் கீழ் மாநிலங்களவைத் தீர்மானம் நாடாளுமன்றத்திற்கு 1 ஆண்டிற்கு மாநிலப் பட்டியலில் சட்டமியற்ற அதிகாரமளிக்கும். மாநில சட்டமன்றம் தனது அதிகாரத்தை இழக்காது."
@@ -1491,12 +1491,12 @@
         "ta": "தவறு. மாநில சட்டமன்றம் அதிகாரத்தை இழக்காது, முரண்பாடு ஏற்பட்டால் நாடாளுமன்றச் சட்டமே மேலோங்கும்."
       },
       "B": {
-        "en": "Correct. Article 249 resolution grants temporary 1-year legislative competency to Parliament.",
-        "ta": "சரி. சரத்து 249 தீர்மானம் நாடாளுமன்றத்திற்கு 1 ஆண்டு தற்காலிக சட்ட அதிகாரத்தை அளிக்கிறது."
-      },
-      "C": {
         "en": "Incorrect. 7th Schedule list entries are not modified by Art 249 resolution.",
         "ta": "தவறு. 7வது அட்டவணை மாற்றப்படுவதில்லை."
+      },
+      "C": {
+        "en": "Correct. Article 249 resolution grants temporary 1-year legislative competency to Parliament.",
+        "ta": "சரி. சரத்து 249 தீர்மானம் நாடாளுமன்றத்திற்கு 1 ஆண்டு தற்காலிக சட்ட அதிகாரத்தை அளிக்கிறது."
       },
       "D": {
         "en": "Incorrect. Art 249 has no connection with President's Rule.",
@@ -1530,17 +1530,17 @@
     "question_ta": "மாநிலப் பட்டியலில் உள்ள ஒரு தலைப்பு தேசிய முக்கியத்துவம் வாய்ந்தது என மாநிலங்களவை வந்திருந்து வாக்களிக்கும் உறுப்பினர்களில் 2/3 பங்கு பெரும்பான்மையுடன் தீர்மானம் நிறைவேற்றினால், சரத்து 249-ன் கீழ் உடனடியாக ஏற்படும் அரசியலமைப்பு விளைவு என்ன?",
     "options_en": [
       "The State Legislature permanently loses all legislative jurisdiction over that subject.",
-      "Union Parliament gains power to make laws on that State List subject for a period not exceeding one year at a time.",
       "The subject is automatically shifted from the State List to the Union List in the Seventh Schedule.",
+      "Union Parliament gains power to make laws on that State List subject for a period not exceeding one year at a time.",
       "President's Rule under Article 356 is automatically declared across all States."
     ],
     "options_ta": [
       "மாநில சட்டமன்றம் அந்தத் தலைப்பின் மீதான அனைத்து சட்ட அதிகாரத்தையும் நிரந்தரமாக இழக்கிறது.",
-      "ஒன்றிய நாடாளுமன்றம் அந்த மாநிலப் பட்டியல் தலைப்பில் ஒரு நேரத்தில் அதிகபட்சம் 1 ஆண்டிற்கு சட்டமியற்றும் அதிகாரத்தைப் பெறுகிறது.",
       "அந்தத் தலைப்பு 7வது அட்டவணையில் மாநிலப் பட்டியலிலிருந்து ஒன்றியப் பட்டியலுக்குத் தானாக மாற்றப்படுகிறது.",
+      "ஒன்றிய நாடாளுமன்றம் அந்த மாநிலப் பட்டியல் தலைப்பில் ஒரு நேரத்தில் அதிகபட்சம் 1 ஆண்டிற்கு சட்டமியற்றும் அதிகாரத்தைப் பெறுகிறது.",
       "அனைத்து மாநிலங்களிலும் சரத்து 356-ன் கீழ் குடியரசுத் தலைவர் ஆட்சி தானாக அறிவிக்கப்படுகிறது."
     ],
-    "answer": "b",
+    "answer": "c",
     "explanation_en": "Under Article 249, Rajya Sabha's resolution authorizes Parliament to make laws on a State subject in the national interest for up to 1 year (renewable indefinitely for 1 year at a time). State Legislature does NOT lose its lawmaking power concurrently.",
     "explanation_ta": "சரத்து 249-ன் கீழ் மாநிலங்களவைத் தீர்மானம் நாடாளுமன்றத்திற்கு 1 ஆண்டிற்கு மாநிலப் பட்டியலில் சட்டமியற்ற அதிகாரமளிக்கும். மாநில சட்டமன்றம் தனது அதிகாரத்தை இழக்காது."
   },
@@ -1557,13 +1557,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Only the Prime Minister must resign, while individual cabinet ministers continue in office.",
-        "ta": "பிரதமர் மட்டுமே ராஜினாமா செய்ய வேண்டும், மற்ற அமைச்சர்கள் பதவியில் நீடிப்பர்."
+        "en": "The entire Council of Ministers including the Prime Minister must tender resignation due to Collective Responsibility.",
+        "ta": "கூட்டுப் பொறுப்புடைமை காரணமாக பிரதமர் உட்பட முழு அமைச்சரவையும் கட்டாயம் ராஜினாமா செய்ய வேண்டும்."
       },
       {
         "id": "B",
-        "en": "The entire Council of Ministers including the Prime Minister must tender resignation due to Collective Responsibility.",
-        "ta": "கூட்டுப் பொறுப்புடைமை காரணமாக பிரதமர் உட்பட முழு அமைச்சரவையும் கட்டாயம் ராஜினாமா செய்ய வேண்டும்."
+        "en": "Only the Prime Minister must resign, while individual cabinet ministers continue in office.",
+        "ta": "பிரதமர் மட்டுமே ராஜினாமா செய்ய வேண்டும், மற்ற அமைச்சர்கள் பதவியில் நீடிப்பர்."
       },
       {
         "id": "C",
@@ -1576,19 +1576,19 @@
         "ta": "அமைச்சரவை நிர்வாகப் பொறுப்பை நேரடியாக மாநிலங்களவைத் தலைவரிடம் ஒப்படைக்கும்."
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "A",
     "explanation": {
       "en": "Under Article 75(3), the Council of Ministers is collectively responsible to the House of the People (Lok Sabha). Passage of No-Confidence motion forces the whole ministry to resign together ('sink or swim together').",
       "ta": "சரத்து 75(3)-ன் கீழ் அமைச்சரவை மக்களவைக்குக் கூட்டுப் பொறுப்புடையது. நம்பிக்கையில்லாத் தீர்மானம் வென்றால் முழு அமைச்சரவையும் ஒன்றாகவே ராஜினாமா செய்ய வேண்டும்."
     },
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Prime Minister's resignation automatically causes the collapse of the entire Council of Ministers.",
-        "ta": "தவறு. பிரதமரின் ராஜினாமா முழு அமைச்சரவையின் வீழ்ச்சிக்கு வழிவகுக்கும்."
-      },
-      "B": {
         "en": "Correct. Collective Responsibility dictates that all ministers share responsibility and resign together.",
         "ta": "சரி. கூட்டுப் பொறுப்புடைமையால் அனைத்து அமைச்சர்களும் ஒன்றாகவே ராஜினாமா செய்வர்."
+      },
+      "B": {
+        "en": "Incorrect. Prime Minister's resignation automatically causes the collapse of the entire Council of Ministers.",
+        "ta": "தவறு. பிரதமரின் ராஜினாமா முழு அமைச்சரவையின் வீழ்ச்சிக்கு வழிவகுக்கும்."
       },
       "C": {
         "en": "Incorrect. Dissolution of Lok Sabha is executed by President on ministerial advice under Art 85.",
@@ -1626,18 +1626,18 @@
     "question_en": "When a Motion of No-Confidence is passed against the Union Council of Ministers in the Lok Sabha, what is the mandatory constitutional outcome governed by Article 75(3)?",
     "question_ta": "மக்களவையில் மத்திய அமைச்சரவைக்கு எதிராக நம்பிக்கையில்லாத் தீர்மானம் நிறைவேற்றப்பட்டால், சரத்து 75(3)-ன் கீழ் உருவாகும் கட்டாய அரசியலமைப்பு விளைவு என்ன?",
     "options_en": [
-      "Only the Prime Minister must resign, while individual cabinet ministers continue in office.",
       "The entire Council of Ministers including the Prime Minister must tender resignation due to Collective Responsibility.",
+      "Only the Prime Minister must resign, while individual cabinet ministers continue in office.",
       "The Speaker of Lok Sabha immediately dissolves the House without consulting the President.",
       "The Cabinet transfers executive responsibility directly to the Chairman of Rajya Sabha."
     ],
     "options_ta": [
-      "பிரதமர் மட்டுமே ராஜினாமா செய்ய வேண்டும், மற்ற அமைச்சர்கள் பதவியில் நீடிப்பர்.",
       "கூட்டுப் பொறுப்புடைமை காரணமாக பிரதமர் உட்பட முழு அமைச்சரவையும் கட்டாயம் ராஜினாமா செய்ய வேண்டும்.",
+      "பிரதமர் மட்டுமே ராஜினாமா செய்ய வேண்டும், மற்ற அமைச்சர்கள் பதவியில் நீடிப்பர்.",
       "மக்களவை சபாநாயகர் குடியரசுத் தலைவரைக் கலந்தாலோசிக்காமல் அவையை உடனே கலைப்பார்.",
       "அமைச்சரவை நிர்வாகப் பொறுப்பை நேரடியாக மாநிலங்களவைத் தலைவரிடம் ஒப்படைக்கும்."
     ],
-    "answer": "b",
+    "answer": "a",
     "explanation_en": "Under Article 75(3), the Council of Ministers is collectively responsible to the House of the People (Lok Sabha). Passage of No-Confidence motion forces the whole ministry to resign together ('sink or swim together').",
     "explanation_ta": "சரத்து 75(3)-ன் கீழ் அமைச்சரவை மக்களவைக்குக் கூட்டுப் பொறுப்புடையது. நம்பிக்கையில்லாத் தீர்மானம் வென்றால் முழு அமைச்சரவையும் ஒன்றாகவே ராஜினாமா செய்ய வேண்டும்."
   },
@@ -1659,13 +1659,13 @@
       },
       {
         "id": "B",
-        "en": "Article 20 (Protection in respect of conviction for offenses) and Article 21 (Protection of life and personal liberty)",
-        "ta": "சரத்து 20 (குற்றங்களுக்கான தண்டனையிலிருந்து பாதுகாப்பு) மற்றும் சரத்து 21 (வாழ்க்கை & தனிநபர் சுதந்திரப் பாதுகாப்பு)"
+        "en": "Article 14 equality before law",
+        "ta": "சரத்து 14 சட்டத்தின் முன் சமநிலை"
       },
       {
         "id": "C",
-        "en": "Article 14 equality before law",
-        "ta": "சரத்து 14 சட்டத்தின் முன் சமநிலை"
+        "en": "Article 20 (Protection in respect of conviction for offenses) and Article 21 (Protection of life and personal liberty)",
+        "ta": "சரத்து 20 (குற்றங்களுக்கான தண்டனையிலிருந்து பாதுகாப்பு) மற்றும் சரத்து 21 (வாழ்க்கை & தனிநபர் சுதந்திரப் பாதுகாப்பு)"
       },
       {
         "id": "D",
@@ -1673,7 +1673,7 @@
         "ta": "சரத்து 32 உச்ச நீதிமன்றத்தை அணுகும் உரிமை"
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "C",
     "explanation": {
       "en": "The 44th Constitutional Amendment Act 1978 restricted Article 359 by providing that the President CANNOT suspend the right to move courts for enforcement of Article 20 and Article 21 under any emergency.",
       "ta": "44வது திருத்தச் சட்டம் 1978 சரத்து 359-ல் மாற்றம் செய்து, எந்த அவசரநிலையிலும் சரத்துகள் 20 மற்றும் 21-ன் அமலாக்க உரிமையைக் குடியரசுத் தலைவர் இடைநீக்கம் செய்ய முடியாது எனக் கூறியது."
@@ -1684,12 +1684,12 @@
         "ta": "தவறு. வெளிநாட்டு அவசரநிலையின் போது சரத்து 19 தானாகவே 358-ன் கீழ் இடைநீக்கம் செய்யப்படும்."
       },
       "B": {
-        "en": "Correct. Articles 20 and 21 are constitutionally protected from suspension under Art 359.",
-        "ta": "சரி. சரத்துகள் 20 மற்றும் 21 எந்த அவசரநிலையிலும் இடைநீக்கம் செய்யப்பட முடியாதவை."
-      },
-      "C": {
         "en": "Incorrect. Article 14 enforcement can be suspended by Presidential order under Art 359.",
         "ta": "தவறு. சரத்து 14-ஐ 359 ஆணை மூலம் இடைநீக்கம் செய்ய முடியும்."
+      },
+      "C": {
+        "en": "Correct. Articles 20 and 21 are constitutionally protected from suspension under Art 359.",
+        "ta": "சரி. சரத்துகள் 20 மற்றும் 21 எந்த அவசரநிலையிலும் இடைநீக்கம் செய்யப்பட முடியாதவை."
       },
       "D": {
         "en": "Incorrect. Article 32 enforcement for other FRs can be suspended by Presidential order under Art 359.",
@@ -1724,17 +1724,17 @@
     "question_ta": "'வெளிநாட்டு ஆக்கிரமிப்பு' அடிப்படையில் தேசிய அவசரநிலை அமலில் உள்ள போது, சரத்து 359-ன் கீழ் குடியரசுத் தலைவர் ஆணை மூலம் எந்த அடிப்படை உரிமைகளை இடைநீக்கம் செய்ய முடியாது?",
     "options_en": [
       "Article 19 freedoms of speech and expression",
-      "Article 20 (Protection in respect of conviction for offenses) and Article 21 (Protection of life and personal liberty)",
       "Article 14 equality before law",
+      "Article 20 (Protection in respect of conviction for offenses) and Article 21 (Protection of life and personal liberty)",
       "Article 32 right to move Supreme Court"
     ],
     "options_ta": [
       "சரத்து 19 பேச்சு மற்றும் கருத்துச் சுதந்திரம்",
-      "சரத்து 20 (குற்றங்களுக்கான தண்டனையிலிருந்து பாதுகாப்பு) மற்றும் சரத்து 21 (வாழ்க்கை & தனிநபர் சுதந்திரப் பாதுகாப்பு)",
       "சரத்து 14 சட்டத்தின் முன் சமநிலை",
+      "சரத்து 20 (குற்றங்களுக்கான தண்டனையிலிருந்து பாதுகாப்பு) மற்றும் சரத்து 21 (வாழ்க்கை & தனிநபர் சுதந்திரப் பாதுகாப்பு)",
       "சரத்து 32 உச்ச நீதிமன்றத்தை அணுகும் உரிமை"
     ],
-    "answer": "b",
+    "answer": "c",
     "explanation_en": "The 44th Constitutional Amendment Act 1978 restricted Article 359 by providing that the President CANNOT suspend the right to move courts for enforcement of Article 20 and Article 21 under any emergency.",
     "explanation_ta": "44வது திருத்தச் சட்டம் 1978 சரத்து 359-ல் மாற்றம் செய்து, எந்த அவசரநிலையிலும் சரத்துகள் 20 மற்றும் 21-ன் அமலாக்க உரிமையைக் குடியரசுத் தலைவர் இடைநீக்கம் செய்ய முடியாது எனக் கூறியது."
   },
@@ -1756,8 +1756,8 @@
       },
       {
         "id": "B",
-        "en": "Directive Principles of State Policy (Part IV) mandating economic and social justice",
-        "ta": "பொருளாதார மற்றும் சமூக நீதியை வலியுறுத்தும் அரசு நெறிமுறைக் கோட்பாடுகள் (பகுதி IV)"
+        "en": "Rigidity of Article 368 amendment procedures for constitutional stability",
+        "ta": "அரசியலமைப்பு ஸ்திரத்தன்மைக்கான சரத்து 368 திருத்த நடைமுறையின் நெகிழ்வற்ற தன்மை"
       },
       {
         "id": "C",
@@ -1766,11 +1766,11 @@
       },
       {
         "id": "D",
-        "en": "Rigidity of Article 368 amendment procedures for constitutional stability",
-        "ta": "அரசியலமைப்பு ஸ்திரத்தன்மைக்கான சரத்து 368 திருத்த நடைமுறையின் நெகிழ்வற்ற தன்மை"
+        "en": "Directive Principles of State Policy (Part IV) mandating economic and social justice",
+        "ta": "பொருளாதார மற்றும் சமூக நீதியை வலியுறுத்தும் அரசு நெறிமுறைக் கோட்பாடுகள் (பகுதி IV)"
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "D",
     "explanation": {
       "en": "Directive Principles of State Policy (Part IV, Articles 36–51) aim at establishing a Welfare State by securing social, economic, and political justice, as well as minimizing inequalities in income and opportunities (Art 38).",
       "ta": "அரசு நெறிமுறைக் கோட்பாடுகள் (பகுதி IV) சமூக, பொருளாதார நீதியை உறுதி செய்து, வருமான ஏற்றத்தாழ்வுகளைக் குறைத்து (சரத்து 38) ஒரு நல அரசை நிறுவுவதை நோக்கமாகக் கொண்டுள்ளன."
@@ -1781,16 +1781,16 @@
         "ta": "தவறு. ஒருங்கிணைந்த நீதித்துறை சட்ட சீர்மையையே உறுதி செய்கிறது."
       },
       "B": {
-        "en": "Correct. DPSP (Part IV) is the explicit constitutional instrument for creating a Welfare State.",
-        "ta": "சரி. நல அரசை உருவாக்குவதற்கான நேரடி அரசியலமைப்பு கருவியே பகுதி IV DPSP ஆகும்."
+        "en": "Incorrect. Amendment procedure relates to constitutional adaptability.",
+        "ta": "தவறு. திருத்த நடைமுறை அரசியலமைப்பு மாற்றத்தோடு தொடர்புடையது."
       },
       "C": {
         "en": "Incorrect. Emergency provisions relate to national security, not social welfare.",
         "ta": "தவறு. அவசரநிலை விதிகள் தேசிய பாதுகாப்போடு தொடர்புடையவை."
       },
       "D": {
-        "en": "Incorrect. Amendment procedure relates to constitutional adaptability.",
-        "ta": "தவறு. திருத்த நடைமுறை அரசியலமைப்பு மாற்றத்தோடு தொடர்புடையது."
+        "en": "Correct. DPSP (Part IV) is the explicit constitutional instrument for creating a Welfare State.",
+        "ta": "சரி. நல அரசை உருவாக்குவதற்கான நேரடி அரசியலமைப்பு கருவியே பகுதி IV DPSP ஆகும்."
       }
     },
     "tnpsc_tip": {
@@ -1821,17 +1821,17 @@
     "question_ta": "இந்திய அரசை 'நல அரசு' (Welfare State) என இந்திய அரசியலமைப்பு ஏன் வரையறுக்கிறது என்பதை எந்த அரசியலமைப்பு அம்சம் சிறப்பாக விளக்குகிறது?",
     "options_en": [
       "Single integrated judicial hierarchy enforcing central and state laws",
-      "Directive Principles of State Policy (Part IV) mandating economic and social justice",
+      "Rigidity of Article 368 amendment procedures for constitutional stability",
       "Emergency provisions empowering the Union Executive during crisis",
-      "Rigidity of Article 368 amendment procedures for constitutional stability"
+      "Directive Principles of State Policy (Part IV) mandating economic and social justice"
     ],
     "options_ta": [
       "மத்திய மாநில சட்டங்களை அமல்படுத்தும் ஒற்றை ஒருங்கிணைந்த நீதித் துறை படிநிலை",
-      "பொருளாதார மற்றும் சமூக நீதியை வலியுறுத்தும் அரசு நெறிமுறைக் கோட்பாடுகள் (பகுதி IV)",
+      "அரசியலமைப்பு ஸ்திரத்தன்மைக்கான சரத்து 368 திருத்த நடைமுறையின் நெகிழ்வற்ற தன்மை",
       "அவசர காலத்தில் ஒன்றிய நிர்வாகத்திற்கு அதிகாரமளிக்கும் அவசரநிலை విధிகள்",
-      "அரசியலமைப்பு ஸ்திரத்தன்மைக்கான சரத்து 368 திருத்த நடைமுறையின் நெகிழ்வற்ற தன்மை"
+      "பொருளாதார மற்றும் சமூக நீதியை வலியுறுத்தும் அரசு நெறிமுறைக் கோட்பாடுகள் (பகுதி IV)"
     ],
-    "answer": "b",
+    "answer": "d",
     "explanation_en": "Directive Principles of State Policy (Part IV, Articles 36–51) aim at establishing a Welfare State by securing social, economic, and political justice, as well as minimizing inequalities in income and opportunities (Art 38).",
     "explanation_ta": "அரசு நெறிமுறைக் கோட்பாடுகள் (பகுதி IV) சமூக, பொருளாதார நீதியை உறுதி செய்து, வருமான ஏற்றத்தாழ்வுகளைக் குறைத்து (சரத்து 38) ஒரு நல அரசை நிறுவுவதை நோக்கமாகக் கொண்டுள்ளன."
   },
@@ -1853,13 +1853,13 @@
       },
       {
         "id": "B",
-        "en": "To ensure fearless and independent auditing of public accounts without executive control or threat of removal.",
-        "ta": "நிர்வாகக் கட்டுப்பாடோ அல்லது பதவி நீக்க அச்சுறுத்தலோ இன்றி பொதுக் கணக்குகளை பயமின்றி சுதந்திரமாகத் தணிக்கை செய்வதை உறுதி செய்ய."
+        "en": "To grant the CAG power to veto executive expenditure before Parliament approves it.",
+        "ta": "நாடாளுமன்றம் ஒப்புதலளிக்கும் முன் நிர்வாகச் செலவினங்களை நிராகரிக்கும் அதிகாரத்தை CAG-க்கு வழங்க."
       },
       {
         "id": "C",
-        "en": "To grant the CAG power to veto executive expenditure before Parliament approves it.",
-        "ta": "நாடாளுமன்றம் ஒப்புதலளிக்கும் முன் நிர்வாகச் செலவினங்களை நிராகரிக்கும் அதிகாரத்தை CAG-க்கு வழங்க."
+        "en": "To ensure fearless and independent auditing of public accounts without executive control or threat of removal.",
+        "ta": "நிர்வாகக் கட்டுப்பாடோ அல்லது பதவி நீக்க அச்சுறுத்தலோ இன்றி பொதுக் கணக்குகளை பயமின்றி சுதந்திரமாகத் தணிக்கை செய்வதை உறுதி செய்ய."
       },
       {
         "id": "D",
@@ -1867,7 +1867,7 @@
         "ta": "CAG-ஐ நிதி அமைச்சகத்தின் கீழ்நிலை அதிகாரியாக்க."
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "C",
     "explanation": {
       "en": "CAG is the 'Guardian of the Public Purse'. Security of tenure (removed only like SC judge) and charged salaries guarantee independence from executive pressure during audit of government expenses.",
       "ta": "CAG 'பொது நிதியின் பாதுகாவலர்'. உச்ச நீதிமன்ற நீதிபதி போன்ற பதவிப் பாதுகாப்பும் தொகுப்பு நிதிச் சம்பளமும் மத்திய அரசின் அழுத்தங்களின்றிச் சுதந்திரமாகத் தணிக்கை செய்ய உதவுகின்றன."
@@ -1878,12 +1878,12 @@
         "ta": "தவறு. CAG நாடாளுமன்ற விவாதங்களில் பங்கேற்பதில்லை."
       },
       "B": {
-        "en": "Correct. Independence from executive influence is the primary rationale for constitutional safeguards.",
-        "ta": "சரி. நிர்வாகச் செல்வாக்கிலிருந்து சுதந்திரமாகச் செயல்படுவதே அரசியலமைப்புப் பாதுகாப்புகளின் அடிப்படை."
-      },
-      "C": {
         "en": "Incorrect. CAG conducts post-event audit, does not hold ex-ante veto power over expenditure.",
         "ta": "தவறு. CAG நிகழ்வுக்குப் பின் தணிக்கை செய்பவர், முன்-நிராகரிப்பு அதிகாரம் கொண்டவர் அல்ல."
+      },
+      "C": {
+        "en": "Correct. Independence from executive influence is the primary rationale for constitutional safeguards.",
+        "ta": "சரி. நிர்வாகச் செல்வாக்கிலிருந்து சுதந்திரமாகச் செயல்படுவதே அரசியலமைப்புப் பாதுகாப்புகளின் அடிப்படை."
       },
       "D": {
         "en": "Incorrect. CAG is an independent constitutional authority, not subordinate to Finance Ministry.",
@@ -1918,17 +1918,17 @@
     "question_ta": "சரத்து 148-ன் கீழ் தலைமைத் தணிக்கைக் கட்டுப்பாட்டாளருக்கு (CAG) பதவிப் பாதுகாப்பையும், இந்தியத் தொகுப்பு நிதியிலிருந்து செலவிடப்படும் ஊதியத்தையும் அரசியலமைப்பு ஏன் வழங்குகிறது?",
     "options_en": [
       "To enable the CAG to participate actively in parliamentary debates on budget allocation.",
-      "To ensure fearless and independent auditing of public accounts without executive control or threat of removal.",
       "To grant the CAG power to veto executive expenditure before Parliament approves it.",
+      "To ensure fearless and independent auditing of public accounts without executive control or threat of removal.",
       "To make the CAG administratively subordinate to the Finance Ministry."
     ],
     "options_ta": [
       "பட்ஜெட் ஒதுக்கீடு குறித்த நாடாளுமன்ற விவாதங்களில் CAG தீவிரமாக பங்கேற்க வழிவகுக்க.",
-      "நிர்வாகக் கட்டுப்பாடோ அல்லது பதவி நீக்க அச்சுறுத்தலோ இன்றி பொதுக் கணக்குகளை பயமின்றி சுதந்திரமாகத் தணிக்கை செய்வதை உறுதி செய்ய.",
       "நாடாளுமன்றம் ஒப்புதலளிக்கும் முன் நிர்வாகச் செலவினங்களை நிராகரிக்கும் அதிகாரத்தை CAG-க்கு வழங்க.",
+      "நிர்வாகக் கட்டுப்பாடோ அல்லது பதவி நீக்க அச்சுறுத்தலோ இன்றி பொதுக் கணக்குகளை பயமின்றி சுதந்திரமாகத் தணிக்கை செய்வதை உறுதி செய்ய.",
       "CAG-ஐ நிதி அமைச்சகத்தின் கீழ்நிலை அதிகாரியாக்க."
     ],
-    "answer": "b",
+    "answer": "c",
     "explanation_en": "CAG is the 'Guardian of the Public Purse'. Security of tenure (removed only like SC judge) and charged salaries guarantee independence from executive pressure during audit of government expenses.",
     "explanation_ta": "CAG 'பொது நிதியின் பாதுகாவலர்'. உச்ச நீதிமன்ற நீதிபதி போன்ற பதவிப் பாதுகாப்பும் தொகுப்பு நிதிச் சம்பளமும் மத்திய அரசின் அழுத்தங்களின்றிச் சுதந்திரமாகத் தணிக்கை செய்ய உதவுகின்றன."
   },
@@ -1950,8 +1950,8 @@
       },
       {
         "id": "B",
-        "en": "Its provisions are not directly enforceable in a court of law, though it serves as a key guide to interpreting ambiguous statutes.",
-        "ta": "இதன் விதிகளை நீதிமன்றத்தில் நேரடியாக அமல்படுத்த முடியாது, இருப்பினும் தெளிவற்ற சட்டங்களை விளக்க இது ஒரு வழிகாட்டியாகச் செயல்படுகிறது."
+        "en": "It automatically overrides express provisions of Fundamental Rights in case of conflict.",
+        "ta": "முரண்பாடு ஏற்படும் போது அடிப்படை உரிமைகளின் வெளிப்படையான விதிகளை இது தானாகவே மேலெழுகிறது."
       },
       {
         "id": "C",
@@ -1960,11 +1960,11 @@
       },
       {
         "id": "D",
-        "en": "It automatically overrides express provisions of Fundamental Rights in case of conflict.",
-        "ta": "முரண்பாடு ஏற்படும் போது அடிப்படை உரிமைகளின் வெளிப்படையான விதிகளை இது தானாகவே மேலெழுகிறது."
+        "en": "Its provisions are not directly enforceable in a court of law, though it serves as a key guide to interpreting ambiguous statutes.",
+        "ta": "இதன் விதிகளை நீதிமன்றத்தில் நேரடியாக அமல்படுத்த முடியாது, இருப்பினும் தெளிவற்ற சட்டங்களை விளக்க இது ஒரு வழிகாட்டியாகச் செயல்படுகிறது."
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "D",
     "explanation": {
       "en": "In Kesavananda Bharati case (1973), SC held Preamble is a part of the Constitution and can be amended, but its provisions are non-justiciable (cannot be enforced directly in courts). However, it aids in clarifying constitutional intent.",
       "ta": "கேசவாநந்த பாரதி வழக்கில் (1973) முகப்புரை அரசியலமைப்பின் பகுதி, அதைத் திருத்தலாம், ஆனால் நேரடியாக நீதிமன்றத்தில் அமல்படுத்த முடியாது (Non-justiciable) எனப்பட்டது."
@@ -1975,16 +1975,16 @@
         "ta": "தவறு. அடிப்படை அமைப்பை மாற்றாமல் முகப்புரையைத் திருத்தலாம் (1976-ல் திருத்தப்பட்டது)."
       },
       "B": {
-        "en": "Correct. Non-justiciability means unenforceable directly, but valuable for judicial interpretation.",
-        "ta": "சரி. நேரடியாக அமல்படுத்த முடியாது, ஆனால் நீதித்துறை விளக்கத்திற்குப் பயன்படும் என்பதே இதன் பொருளாகும்."
+        "en": "Incorrect. Preamble cannot override clear provisions of the main text.",
+        "ta": "தவறு. முகப்புரை முதன்மை விதியை மேலெழுத முடியாது."
       },
       "C": {
         "en": "Incorrect. Preamble is the key to open the mind of the constitution makers.",
         "ta": "தவறு. முகப்புரை அரசியலமைப்புச் சிற்பிகளின் மனதைத் திறக்கும் சாவியாகும்."
       },
       "D": {
-        "en": "Incorrect. Preamble cannot override clear provisions of the main text.",
-        "ta": "தவறு. முகப்புரை முதன்மை விதியை மேலெழுத முடியாது."
+        "en": "Correct. Non-justiciability means unenforceable directly, but valuable for judicial interpretation.",
+        "ta": "சரி. நேரடியாக அமல்படுத்த முடியாது, ஆனால் நீதித்துறை விளக்கத்திற்குப் பயன்படும் என்பதே இதன் பொருளாகும்."
       }
     },
     "tnpsc_tip": {
@@ -2015,17 +2015,17 @@
     "question_ta": "முகப்புரை நீதிமன்றங்களால் நேரடியாக அமல்படுத்த முடியாதது (non-justiciable) என உச்ச நீதிமன்றம் கூறியதன் முதன்மை அரசியலமைப்பு விளைவு என்ன?",
     "options_en": [
       "The Preamble cannot be amended by Parliament under Article 368.",
-      "Its provisions are not directly enforceable in a court of law, though it serves as a key guide to interpreting ambiguous statutes.",
+      "It automatically overrides express provisions of Fundamental Rights in case of conflict.",
       "It holds no legal or interpretative value whatsoever in constitutional law.",
-      "It automatically overrides express provisions of Fundamental Rights in case of conflict."
+      "Its provisions are not directly enforceable in a court of law, though it serves as a key guide to interpreting ambiguous statutes."
     ],
     "options_ta": [
       "சரத்து 368-ன் கீழ் நாடாளுமன்றத்தால் முகப்புரையைத் திருத்த முடியாது.",
-      "இதன் விதிகளை நீதிமன்றத்தில் நேரடியாக அமல்படுத்த முடியாது, இருப்பினும் தெளிவற்ற சட்டங்களை விளக்க இது ஒரு வழிகாட்டியாகச் செயல்படுகிறது.",
+      "முரண்பாடு ஏற்படும் போது அடிப்படை உரிமைகளின் வெளிப்படையான விதிகளை இது தானாகவே மேலெழுகிறது.",
       "அரசியலமைப்புச் சட்டத்தில் இதற்கு எந்தவொரு சட்ட அல்லது விளக்க மதிப்பும் இல்லை.",
-      "முரண்பாடு ஏற்படும் போது அடிப்படை உரிமைகளின் வெளிப்படையான விதிகளை இது தானாகவே மேலெழுகிறது."
+      "இதன் விதிகளை நீதிமன்றத்தில் நேரடியாக அமல்படுத்த முடியாது, இருப்பினும் தெளிவற்ற சட்டங்களை விளக்க இது ஒரு வழிகாட்டியாகச் செயல்படுகிறது."
     ],
-    "answer": "b",
+    "answer": "d",
     "explanation_en": "In Kesavananda Bharati case (1973), SC held Preamble is a part of the Constitution and can be amended, but its provisions are non-justiciable (cannot be enforced directly in courts). However, it aids in clarifying constitutional intent.",
     "explanation_ta": "கேசவாநந்த பாரதி வழக்கில் (1973) முகப்புரை அரசியலமைப்பின் பகுதி, அதைத் திருத்தலாம், ஆனால் நேரடியாக நீதிமன்றத்தில் அமல்படுத்த முடியாது (Non-justiciable) எனப்பட்டது."
   },
@@ -2139,8 +2139,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Both Assertion and Reason are true and Reason is the correct explanation of Assertion.",
-        "ta": "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்."
+        "en": "Assertion is true but Reason is false.",
+        "ta": "A சரி, ஆனால் R தவறு."
       },
       {
         "id": "B",
@@ -2149,8 +2149,8 @@
       },
       {
         "id": "C",
-        "en": "Assertion is true but Reason is false.",
-        "ta": "A சரி, ஆனால் R தவறு."
+        "en": "Both Assertion and Reason are true and Reason is the correct explanation of Assertion.",
+        "ta": "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்."
       },
       {
         "id": "D",
@@ -2158,23 +2158,23 @@
         "ta": "A தவறு, ஆனால் R சரி."
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "C",
     "explanation": {
       "en": "Both Assertion and Reason are true. The Constitution is not a static legal code; through over 100 amendments and creative judicial interpretations (e.g. Right to Privacy, Education), it evolves with time.",
       "ta": "கூற்று A மற்றும் காரணம் R இரண்டும் சரி. அரசியலமைப்பு ஒரு நிலையான சட்ட புத்தகம் அல்ல; 100-க்கும் மேற்பட்ட திருத்தங்கள் மற்றும் நீதித்துறை விளக்கங்கள் மூலம் அது காலத்திற்கு ஏற்ப வளர்கிறது."
     },
     "why_not_others": {
       "A": {
-        "en": "Correct. Constitutional adaptability through amendments and judicial review defines a 'Living Document'.",
-        "ta": "சரி. திருத்தங்கள் மற்றும் நீதிப் புனராய்வு மூலம் தகவமைத்துக் கொள்வதே 'வாழும் ஆவணம்' என்பதன் விளக்கமாகும்."
+        "en": "Incorrect. Reason is true.",
+        "ta": "தவறு. காரணம் சரியானது."
       },
       "B": {
         "en": "Incorrect. Reason directly explains Assertion.",
         "ta": "தவறு. காரணம் கூற்றை நேரடியாக விளக்குகிறது."
       },
       "C": {
-        "en": "Incorrect. Reason is true.",
-        "ta": "தவறு. காரணம் சரியானது."
+        "en": "Correct. Constitutional adaptability through amendments and judicial review defines a 'Living Document'.",
+        "ta": "சரி. திருத்தங்கள் மற்றும் நீதிப் புனராய்வு மூலம் தகவமைத்துக் கொள்வதே 'வாழும் ஆவணம்' என்பதன் விளக்கமாகும்."
       },
       "D": {
         "en": "Incorrect. Assertion is true.",
@@ -2207,18 +2207,18 @@
     "question_en": "Assertion (A): The Indian Constitution is often characterized as a 'Living Document'.\nReason (R): Its combination of amendment provisions (Article 368) and progressive judicial interpretation allows it to adapt to changing societal needs while preserving foundational values.",
     "question_ta": "கூற்று (A): இந்திய அரசியலமைப்பு பெரும்பாலும் ஒரு 'வாழும் ஆவணம்' (Living Document) என விவரிக்கப்படுகிறது.\nகாரணம் (R): இதன் திருத்த விதிகள் (சரத்து 368) மற்றும் முற்போக்கான நீதித்துறை விளக்கங்கள் அடிப்படை விழுமியங்களைப் பாதுகாத்துக் கொண்டே மாறுகின்ற சமூகத் தேவைகளுக்கு ஏற்ப தகவமைத்துக் கொள்ள அனுமதிக்கின்றன.",
     "options_en": [
-      "Both Assertion and Reason are true and Reason is the correct explanation of Assertion.",
-      "Both Assertion and Reason are true but Reason is NOT the correct explanation.",
       "Assertion is true but Reason is false.",
+      "Both Assertion and Reason are true but Reason is NOT the correct explanation.",
+      "Both Assertion and Reason are true and Reason is the correct explanation of Assertion.",
       "Assertion is false but Reason is true."
     ],
     "options_ta": [
-      "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்.",
-      "A மற்றும் R இரண்டும் சரி, ஆனால் R என்பது A விற்கு சரியான விளக்கம் அல்ல.",
       "A சரி, ஆனால் R தவறு.",
+      "A மற்றும் R இரண்டும் சரி, ஆனால் R என்பது A விற்கு சரியான விளக்கம் அல்ல.",
+      "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்.",
       "A தவறு, ஆனால் R சரி."
     ],
-    "answer": "a",
+    "answer": "c",
     "explanation_en": "Both Assertion and Reason are true. The Constitution is not a static legal code; through over 100 amendments and creative judicial interpretations (e.g. Right to Privacy, Education), it evolves with time.",
     "explanation_ta": "கூற்று A மற்றும் காரணம் R இரண்டும் சரி. அரசியலமைப்பு ஒரு நிலையான சட்ட புத்தகம் அல்ல; 100-க்கும் மேற்பட்ட திருத்தங்கள் மற்றும் நீதித்துறை விளக்கங்கள் மூலம் அது காலத்திற்கு ஏற்ப வளர்கிறது."
   },
@@ -2332,13 +2332,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Article 312 provision for All-India Services to maintain administrative efficiency",
-        "ta": "நிர்வாகத் திறனைப் பராமரிக்க அகில இந்திய பணிகளுக்கான சரத்து 312 விதி"
+        "en": "Article 32 and Article 226 providing Right to Constitutional Remedies and Judicial Review through writs",
+        "ta": "பேராணைகள் மூலம் அரசியலமைப்புப் பரிகார உரிமை மற்றும் நீதிப் புனராய்வை வழங்கும் சரத்து 32 மற்றும் சரத்து 226"
       },
       {
         "id": "B",
-        "en": "Article 32 and Article 226 providing Right to Constitutional Remedies and Judicial Review through writs",
-        "ta": "பேராணைகள் மூலம் அரசியலமைப்புப் பரிகார உரிமை மற்றும் நீதிப் புனராய்வை வழங்கும் சரத்து 32 மற்றும் சரத்து 226"
+        "en": "Article 312 provision for All-India Services to maintain administrative efficiency",
+        "ta": "நிர்வாகத் திறனைப் பராமரிக்க அகில இந்திய பணிகளுக்கான சரத்து 312 விதி"
       },
       {
         "id": "C",
@@ -2351,19 +2351,19 @@
         "ta": "தேவநாகரி எழுத்துவடிவ இந்தியை அதிகாரபூர்வ மொழியாக அறிவிக்கும் சரத்து 343"
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "A",
     "explanation": {
       "en": "Articles 32 (Supreme Court) and 226 (High Courts) empower citizens to seek enforcement of Fundamental Rights via writs (Habeas Corpus, Mandamus, Prohibition, Quo-Warranto, Certiorari), serving as the protector and guarantor of fundamental rights.",
       "ta": "சரத்துகள் 32 (உச்ச நீதிமன்றம்) மற்றும் 226 (உயர் நீதிமன்றம்) பேராணைகள் (ஆட்கொணர்வு, கட்டளையுறுத்தல் போன்றவை) மூலம் அடிப்படை உரிமைகளைப் பாதுகாக்கும் இறுதி அரணாகச் செயல்படுகின்றன."
     },
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Article 312 deals with All-India civil services, not fundamental rights protection.",
-        "ta": "தவறு. சரத்து 312 அகில இந்திய பணிகளோடு தொடர்புடையது."
-      },
-      "B": {
         "en": "Correct. Articles 32 & 226 provide the legal mechanism for writ remedies against arbitrary state action.",
         "ta": "சரி. சரத்துகள் 32 & 226 தன்னிச்சையான அரசு நடவடிக்கைக்கு எதிரான பேராணை பரிகாரங்களை வழங்குகின்றன."
+      },
+      "B": {
+        "en": "Incorrect. Article 312 deals with All-India civil services, not fundamental rights protection.",
+        "ta": "தவறு. சரத்து 312 அகில இந்திய பணிகளோடு தொடர்புடையது."
       },
       "C": {
         "en": "Incorrect. Article 280 deals with financial devolution.",
@@ -2402,18 +2402,18 @@
     "question_en": "Which constitutional provision acts as the ultimate guarantor and safeguard against arbitrary executive or legislative action violating fundamental human freedoms?",
     "question_ta": "அடிப்படை மனித சுதந்திரங்களை மீறும் தன்னிச்சையான நிர்வாக அல்லது சட்டமன்ற நடவடிக்கைக்கு எதிரான இறுதி உத்திரவாதமாகவும் பாதுகாப்பாகவும் செயல்படும் அரசியலமைப்பு விதி எது?",
     "options_en": [
-      "Article 312 provision for All-India Services to maintain administrative efficiency",
       "Article 32 and Article 226 providing Right to Constitutional Remedies and Judicial Review through writs",
+      "Article 312 provision for All-India Services to maintain administrative efficiency",
       "Article 280 Finance Commission recommendations on tax devolution",
       "Article 343 declaration of Hindi in Devanagari script as Official Language"
     ],
     "options_ta": [
-      "நிர்வாகத் திறனைப் பராமரிக்க அகில இந்திய பணிகளுக்கான சரத்து 312 விதி",
       "பேராணைகள் மூலம் அரசியலமைப்புப் பரிகார உரிமை மற்றும் நீதிப் புனராய்வை வழங்கும் சரத்து 32 மற்றும் சரத்து 226",
+      "நிர்வாகத் திறனைப் பராமரிக்க அகில இந்திய பணிகளுக்கான சரத்து 312 விதி",
       "வரிப் பகிர்வு குறித்த சரத்து 280 நிதி ஆணையப் பரிந்துரைகள்",
       "தேவநாகரி எழுத்துவடிவ இந்தியை அதிகாரபூர்வ மொழியாக அறிவிக்கும் சரத்து 343"
     ],
-    "answer": "b",
+    "answer": "a",
     "explanation_en": "Articles 32 (Supreme Court) and 226 (High Courts) empower citizens to seek enforcement of Fundamental Rights via writs (Habeas Corpus, Mandamus, Prohibition, Quo-Warranto, Certiorari), serving as the protector and guarantor of fundamental rights.",
     "explanation_ta": "சரத்துகள் 32 (உச்ச நீதிமன்றம்) மற்றும் 226 (உயர் நீதிமன்றம்) பேராணைகள் (ஆட்கொணர்வு, கட்டளையுறுத்தல் போன்றவை) மூலம் அடிப்படை உரிமைகளைப் பாதுகாக்கும் இறுதி அரணாகச் செயல்படுகின்றன."
   }

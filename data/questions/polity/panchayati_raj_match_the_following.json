@@ -15,13 +15,13 @@
     "options": [
       {
         "id": "A",
-        "en": "a-2, b-1, c-4, d-3",
-        "ta": "a-2, b-1, c-4, d-3"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "B",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-2, b-1, c-4, d-3",
+        "ta": "a-2, b-1, c-4, d-3"
       },
       {
         "id": "C",
@@ -35,19 +35,19 @@
       }
     ],
     "options_en": [
-      "a-2, b-1, c-4, d-3",
       "a-1, b-2, c-3, d-4",
+      "a-2, b-1, c-4, d-3",
       "a-3, b-4, c-1, d-2",
       "a-4, b-3, c-2, d-1"
     ],
     "options_ta": [
-      "a-2, b-1, c-4, d-3",
       "a-1, b-2, c-3, d-4",
+      "a-2, b-1, c-4, d-3",
       "a-3, b-4, c-1, d-2",
       "a-4, b-3, c-2, d-1"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Accurate Matching: a-Gram Sabha, b-Constitution of Panchayats, c-Composition of Panchayats, d-Reservation of seats. Hence correct code is a-1, b-2, c-3, d-4.",
       "ta": "துல்லியமான பொருத்தம்: a-கிராம சபை, b-ஊராட்சிகள் அமைத்தல், c-ஊராட்சிகளின் கட்டமைப்பு, d-இடஒதுக்கீடு. எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்."
@@ -56,12 +56,12 @@
     "explanation_ta": "துல்லியமான பொருத்தம்: a-கிராம சபை, b-ஊராட்சிகள் அமைத்தல், c-ஊராட்சிகளின் கட்டமைப்பு, d-இடஒதுக்கீடு. எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்.",
     "why_not_others": {
       "A": {
-        "en": "Option B matching evaluation.",
-        "ta": "விருப்பம் B பொருத்த மதிப்பீடு."
-      },
-      "B": {
         "en": "Correct. Accurate Matching: a-Gram Sabha, b-Constitution of Panchayats, c-Composition of Panchayats, d-Reservation of seats. Hence correct code is a-1, b-2, c-3, d-4.",
         "ta": "சரியானது. துல்லியமான பொருத்தம்: a-கிராம சபை, b-ஊராட்சிகள் அமைத்தல், c-ஊராட்சிகளின் கட்டமைப்பு, d-இடஒதுக்கீடு. எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்."
+      },
+      "B": {
+        "en": "Option B matching evaluation.",
+        "ta": "விருப்பம் B பொருத்த மதிப்பீடு."
       },
       "C": {
         "en": "Option C matching evaluation.",
@@ -111,13 +111,13 @@
       },
       {
         "id": "B",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-3, b-4, c-1, d-2",
+        "ta": "a-3, b-4, c-1, d-2"
       },
       {
         "id": "C",
-        "en": "a-3, b-4, c-1, d-2",
-        "ta": "a-3, b-4, c-1, d-2"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "D",
@@ -127,18 +127,18 @@
     ],
     "options_en": [
       "a-2, b-1, c-4, d-3",
-      "a-1, b-2, c-3, d-4",
       "a-3, b-4, c-1, d-2",
+      "a-1, b-2, c-3, d-4",
       "a-4, b-3, c-2, d-1"
     ],
     "options_ta": [
       "a-2, b-1, c-4, d-3",
-      "a-1, b-2, c-3, d-4",
       "a-3, b-4, c-1, d-2",
+      "a-1, b-2, c-3, d-4",
       "a-4, b-3, c-2, d-1"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Accurate Matching: a-Duration of Panchayats, b-Disqualifications for membership, c-Powers, authority and responsibilities, d-Powers to impose taxes and funds. Hence correct code is a-1, b-2, c-3, d-4.",
       "ta": "துல்லியமான பொருத்தம்: a-ஊராட்சிகளின் ஆயுட்காலம், b-உறுப்பினர் தகுதியிழப்புகள், c-அதிகாரங்கள் மற்றும் பொறுப்புகள், d-வரி விதிக்கும் அதிகாரங்கள் மற்றும் நிதிகள். எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்."
@@ -151,12 +151,12 @@
         "ta": "விருப்பம் B பொருத்த மதிப்பீடு."
       },
       "B": {
-        "en": "Correct. Accurate Matching: a-Duration of Panchayats, b-Disqualifications for membership, c-Powers, authority and responsibilities, d-Powers to impose taxes and funds. Hence correct code is a-1, b-2, c-3, d-4.",
-        "ta": "சரியானது. துல்லியமான பொருத்தம்: a-ஊராட்சிகளின் ஆயுட்காலம், b-உறுப்பினர் தகுதியிழப்புகள், c-அதிகாரங்கள் மற்றும் பொறுப்புகள், d-வரி விதிக்கும் அதிகாரங்கள் மற்றும் நிதிகள். எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்."
-      },
-      "C": {
         "en": "Option C matching evaluation.",
         "ta": "விருப்பம் C பொருத்த மதிப்பீடு."
+      },
+      "C": {
+        "en": "Correct. Accurate Matching: a-Duration of Panchayats, b-Disqualifications for membership, c-Powers, authority and responsibilities, d-Powers to impose taxes and funds. Hence correct code is a-1, b-2, c-3, d-4.",
+        "ta": "சரியானது. துல்லியமான பொருத்தம்: a-ஊராட்சிகளின் ஆயுட்காலம், b-உறுப்பினர் தகுதியிழப்புகள், c-அதிகாரங்கள் மற்றும் பொறுப்புகள், d-வரி விதிக்கும் அதிகாரங்கள் மற்றும் நிதிகள். எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்."
       },
       "D": {
         "en": "Option D matching evaluation.",
@@ -384,8 +384,8 @@
       },
       {
         "id": "B",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-4, b-3, c-2, d-1",
+        "ta": "a-4, b-3, c-2, d-1"
       },
       {
         "id": "C",
@@ -394,24 +394,24 @@
       },
       {
         "id": "D",
-        "en": "a-4, b-3, c-2, d-1",
-        "ta": "a-4, b-3, c-2, d-1"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       }
     ],
     "options_en": [
       "a-2, b-1, c-4, d-3",
-      "a-1, b-2, c-3, d-4",
+      "a-4, b-3, c-2, d-1",
       "a-3, b-4, c-1, d-2",
-      "a-4, b-3, c-2, d-1"
+      "a-1, b-2, c-3, d-4"
     ],
     "options_ta": [
       "a-2, b-1, c-4, d-3",
-      "a-1, b-2, c-3, d-4",
+      "a-4, b-3, c-2, d-1",
       "a-3, b-4, c-1, d-2",
-      "a-4, b-3, c-2, d-1"
+      "a-1, b-2, c-3, d-4"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Accurate Matching: a-3-tier Panchayati Raj model, b-2-tier Mandal Panchayat model, c-District Development Commissioner (DDC), d-Constitutional status for PRIs. Hence correct code is a-1, b-2, c-3, d-4.",
       "ta": "துல்லியமான பொருத்தம்: a-3 அடுக்கு பஞ்சாயத்து முறை, b-2 அடுக்கு மண்டல் பஞ்சாயத்து முறை, c-மாவட்ட வளர்ச்சி ஆணையர் (DDC), d-அரசியலமைப்பு அந்தஸ்து. எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்."
@@ -424,16 +424,16 @@
         "ta": "விருப்பம் B பொருத்த மதிப்பீடு."
       },
       "B": {
-        "en": "Correct. Accurate Matching: a-3-tier Panchayati Raj model, b-2-tier Mandal Panchayat model, c-District Development Commissioner (DDC), d-Constitutional status for PRIs. Hence correct code is a-1, b-2, c-3, d-4.",
-        "ta": "சரியானது. துல்லியமான பொருத்தம்: a-3 அடுக்கு பஞ்சாயத்து முறை, b-2 அடுக்கு மண்டல் பஞ்சாயத்து முறை, c-மாவட்ட வளர்ச்சி ஆணையர் (DDC), d-அரசியலமைப்பு அந்தஸ்து. எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்."
+        "en": "Option D matching evaluation.",
+        "ta": "விருப்பம் D பொருத்த மதிப்பீடு."
       },
       "C": {
         "en": "Option C matching evaluation.",
         "ta": "விருப்பம் C பொருத்த மதிப்பீடு."
       },
       "D": {
-        "en": "Option D matching evaluation.",
-        "ta": "விருப்பம் D பொருத்த மதிப்பீடு."
+        "en": "Correct. Accurate Matching: a-3-tier Panchayati Raj model, b-2-tier Mandal Panchayat model, c-District Development Commissioner (DDC), d-Constitutional status for PRIs. Hence correct code is a-1, b-2, c-3, d-4.",
+        "ta": "சரியானது. துல்லியமான பொருத்தம்: a-3 அடுக்கு பஞ்சாயத்து முறை, b-2 அடுக்கு மண்டல் பஞ்சாயத்து முறை, c-மாவட்ட வளர்ச்சி ஆணையர் (DDC), d-அரசியலமைப்பு அந்தஸ்து. எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்."
       }
     },
     "tnpsc_tip": {
@@ -470,13 +470,13 @@
     "options": [
       {
         "id": "A",
-        "en": "a-2, b-1, c-4, d-3",
-        "ta": "a-2, b-1, c-4, d-3"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "B",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-2, b-1, c-4, d-3",
+        "ta": "a-2, b-1, c-4, d-3"
       },
       {
         "id": "C",
@@ -490,19 +490,19 @@
       }
     ],
     "options_en": [
-      "a-2, b-1, c-4, d-3",
       "a-1, b-2, c-3, d-4",
+      "a-2, b-1, c-4, d-3",
       "a-3, b-4, c-1, d-2",
       "a-4, b-3, c-2, d-1"
     ],
     "options_ta": [
-      "a-2, b-1, c-4, d-3",
       "a-1, b-2, c-3, d-4",
+      "a-2, b-1, c-4, d-3",
       "a-3, b-4, c-1, d-2",
       "a-4, b-3, c-2, d-1"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Accurate Matching: a-Gram Sabha, b-Constitution of Panchayats, c-Composition of Panchayats, d-Reservation of seats. Hence correct code is a-1, b-2, c-3, d-4.",
       "ta": "துல்லியமான பொருத்தம்: a-கிராம சபை, b-ஊராட்சிகள் அமைத்தல், c-ஊராட்சிகளின் கட்டமைப்பு, d-இடஒதுக்கீடு. எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்."
@@ -511,12 +511,12 @@
     "explanation_ta": "துல்லியமான பொருத்தம்: a-கிராம சபை, b-ஊராட்சிகள் அமைத்தல், c-ஊராட்சிகளின் கட்டமைப்பு, d-இடஒதுக்கீடு. எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்.",
     "why_not_others": {
       "A": {
-        "en": "Option B matching evaluation.",
-        "ta": "விருப்பம் B பொருத்த மதிப்பீடு."
-      },
-      "B": {
         "en": "Correct. Accurate Matching: a-Gram Sabha, b-Constitution of Panchayats, c-Composition of Panchayats, d-Reservation of seats. Hence correct code is a-1, b-2, c-3, d-4.",
         "ta": "சரியானது. துல்லியமான பொருத்தம்: a-கிராம சபை, b-ஊராட்சிகள் அமைத்தல், c-ஊராட்சிகளின் கட்டமைப்பு, d-இடஒதுக்கீடு. எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்."
+      },
+      "B": {
+        "en": "Option B matching evaluation.",
+        "ta": "விருப்பம் B பொருத்த மதிப்பீடு."
       },
       "C": {
         "en": "Option C matching evaluation.",
@@ -652,8 +652,8 @@
     "options": [
       {
         "id": "A",
-        "en": "a-3, b-4, c-1, d-2",
-        "ta": "a-3, b-4, c-1, d-2"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "B",
@@ -662,8 +662,8 @@
       },
       {
         "id": "C",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-3, b-4, c-1, d-2",
+        "ta": "a-3, b-4, c-1, d-2"
       },
       {
         "id": "D",
@@ -672,19 +672,19 @@
       }
     ],
     "options_en": [
-      "a-3, b-4, c-1, d-2",
-      "a-2, b-1, c-4, d-3",
       "a-1, b-2, c-3, d-4",
+      "a-2, b-1, c-4, d-3",
+      "a-3, b-4, c-1, d-2",
       "a-4, b-3, c-2, d-1"
     ],
     "options_ta": [
-      "a-3, b-4, c-1, d-2",
-      "a-2, b-1, c-4, d-3",
       "a-1, b-2, c-3, d-4",
+      "a-2, b-1, c-4, d-3",
+      "a-3, b-4, c-1, d-2",
       "a-4, b-3, c-2, d-1"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Accurate Matching: a-State Finance Commission, b-Audit of accounts of Panchayats, c-State Election Commission, d-Bar to interference by courts. Hence correct code is a-1, b-2, c-3, d-4.",
       "ta": "துல்லியமான பொருத்தம்: a-மாநில நிதி ஆணையம், b-கணக்குத் தணிக்கை, c-மாநில தேர்தல் ஆணையம், d-நீதிமன்றத் தலையீட்டிற்குத் தடை. எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்."
@@ -693,16 +693,16 @@
     "explanation_ta": "துல்லியமான பொருத்தம்: a-மாநில நிதி ஆணையம், b-கணக்குத் தணிக்கை, c-மாநில தேர்தல் ஆணையம், d-நீதிமன்றத் தலையீட்டிற்குத் தடை. எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்.",
     "why_not_others": {
       "A": {
-        "en": "Option C matching evaluation.",
-        "ta": "விருப்பம் C பொருத்த மதிப்பீடு."
+        "en": "Correct. Accurate Matching: a-State Finance Commission, b-Audit of accounts of Panchayats, c-State Election Commission, d-Bar to interference by courts. Hence correct code is a-1, b-2, c-3, d-4.",
+        "ta": "சரியானது. துல்லியமான பொருத்தம்: a-மாநில நிதி ஆணையம், b-கணக்குத் தணிக்கை, c-மாநில தேர்தல் ஆணையம், d-நீதிமன்றத் தலையீட்டிற்குத் தடை. எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்."
       },
       "B": {
         "en": "Option B matching evaluation.",
         "ta": "விருப்பம் B பொருத்த மதிப்பீடு."
       },
       "C": {
-        "en": "Correct. Accurate Matching: a-State Finance Commission, b-Audit of accounts of Panchayats, c-State Election Commission, d-Bar to interference by courts. Hence correct code is a-1, b-2, c-3, d-4.",
-        "ta": "சரியானது. துல்லியமான பொருத்தம்: a-மாநில நிதி ஆணையம், b-கணக்குத் தணிக்கை, c-மாநில தேர்தல் ஆணையம், d-நீதிமன்றத் தலையீட்டிற்குத் தடை. எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்."
+        "en": "Option C matching evaluation.",
+        "ta": "விருப்பம் C பொருத்த மதிப்பீடு."
       },
       "D": {
         "en": "Option D matching evaluation.",
@@ -748,13 +748,13 @@
       },
       {
         "id": "B",
-        "en": "a-2, b-1, c-4, d-3",
-        "ta": "a-2, b-1, c-4, d-3"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "C",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-2, b-1, c-4, d-3",
+        "ta": "a-2, b-1, c-4, d-3"
       },
       {
         "id": "D",
@@ -764,18 +764,18 @@
     ],
     "options_en": [
       "a-3, b-4, c-1, d-2",
-      "a-2, b-1, c-4, d-3",
       "a-1, b-2, c-3, d-4",
+      "a-2, b-1, c-4, d-3",
       "a-4, b-3, c-2, d-1"
     ],
     "options_ta": [
       "a-3, b-4, c-1, d-2",
-      "a-2, b-1, c-4, d-3",
       "a-1, b-2, c-3, d-4",
+      "a-2, b-1, c-4, d-3",
       "a-4, b-3, c-2, d-1"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Accurate Matching: a-1957, b-1977, c-1985, d-1986. Hence correct code is a-1, b-2, c-3, d-4.",
       "ta": "துல்லியமான பொருத்தம்: a-1957, b-1977, c-1985, d-1986. எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்."
@@ -788,12 +788,12 @@
         "ta": "விருப்பம் C பொருத்த மதிப்பீடு."
       },
       "B": {
-        "en": "Option B matching evaluation.",
-        "ta": "விருப்பம் B பொருத்த மதிப்பீடு."
-      },
-      "C": {
         "en": "Correct. Accurate Matching: a-1957, b-1977, c-1985, d-1986. Hence correct code is a-1, b-2, c-3, d-4.",
         "ta": "சரியானது. துல்லியமான பொருத்தம்: a-1957, b-1977, c-1985, d-1986. எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்."
+      },
+      "C": {
+        "en": "Option B matching evaluation.",
+        "ta": "விருப்பம் B பொருத்த மதிப்பீடு."
       },
       "D": {
         "en": "Option D matching evaluation.",
@@ -935,29 +935,29 @@
       },
       {
         "id": "C",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-4, b-3, c-2, d-1",
+        "ta": "a-4, b-3, c-2, d-1"
       },
       {
         "id": "D",
-        "en": "a-4, b-3, c-2, d-1",
-        "ta": "a-4, b-3, c-2, d-1"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       }
     ],
     "options_en": [
       "a-3, b-4, c-1, d-2",
       "a-2, b-1, c-4, d-3",
-      "a-1, b-2, c-3, d-4",
-      "a-4, b-3, c-2, d-1"
+      "a-4, b-3, c-2, d-1",
+      "a-1, b-2, c-3, d-4"
     ],
     "options_ta": [
       "a-3, b-4, c-1, d-2",
       "a-2, b-1, c-4, d-3",
-      "a-1, b-2, c-3, d-4",
-      "a-4, b-3, c-2, d-1"
+      "a-4, b-3, c-2, d-1",
+      "a-1, b-2, c-3, d-4"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Accurate Matching: a-Gram Sabha, b-Constitution of Panchayats, c-Composition of Panchayats, d-Reservation of seats. Hence correct code is a-1, b-2, c-3, d-4.",
       "ta": "துல்லியமான பொருத்தம்: a-கிராம சபை, b-ஊராட்சிகள் அமைத்தல், c-ஊராட்சிகளின் கட்டமைப்பு, d-இடஒதுக்கீடு. எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்."
@@ -974,12 +974,12 @@
         "ta": "விருப்பம் B பொருத்த மதிப்பீடு."
       },
       "C": {
-        "en": "Correct. Accurate Matching: a-Gram Sabha, b-Constitution of Panchayats, c-Composition of Panchayats, d-Reservation of seats. Hence correct code is a-1, b-2, c-3, d-4.",
-        "ta": "சரியானது. துல்லியமான பொருத்தம்: a-கிராம சபை, b-ஊராட்சிகள் அமைத்தல், c-ஊராட்சிகளின் கட்டமைப்பு, d-இடஒதுக்கீடு. எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்."
-      },
-      "D": {
         "en": "Option D matching evaluation.",
         "ta": "விருப்பம் D பொருத்த மதிப்பீடு."
+      },
+      "D": {
+        "en": "Correct. Accurate Matching: a-Gram Sabha, b-Constitution of Panchayats, c-Composition of Panchayats, d-Reservation of seats. Hence correct code is a-1, b-2, c-3, d-4.",
+        "ta": "சரியானது. துல்லியமான பொருத்தம்: a-கிராம சபை, b-ஊராட்சிகள் அமைத்தல், c-ஊராட்சிகளின் கட்டமைப்பு, d-இடஒதுக்கீடு. எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்."
       }
     },
     "tnpsc_tip": {
@@ -1026,29 +1026,29 @@
       },
       {
         "id": "C",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-4, b-3, c-2, d-1",
+        "ta": "a-4, b-3, c-2, d-1"
       },
       {
         "id": "D",
-        "en": "a-4, b-3, c-2, d-1",
-        "ta": "a-4, b-3, c-2, d-1"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       }
     ],
     "options_en": [
       "a-3, b-4, c-1, d-2",
       "a-2, b-1, c-4, d-3",
-      "a-1, b-2, c-3, d-4",
-      "a-4, b-3, c-2, d-1"
+      "a-4, b-3, c-2, d-1",
+      "a-1, b-2, c-3, d-4"
     ],
     "options_ta": [
       "a-3, b-4, c-1, d-2",
       "a-2, b-1, c-4, d-3",
-      "a-1, b-2, c-3, d-4",
-      "a-4, b-3, c-2, d-1"
+      "a-4, b-3, c-2, d-1",
+      "a-1, b-2, c-3, d-4"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Accurate Matching: a-Duration of Panchayats, b-Disqualifications for membership, c-Powers, authority and responsibilities, d-Powers to impose taxes and funds. Hence correct code is a-1, b-2, c-3, d-4.",
       "ta": "துல்லியமான பொருத்தம்: a-ஊராட்சிகளின் ஆயுட்காலம், b-உறுப்பினர் தகுதியிழப்புகள், c-அதிகாரங்கள் மற்றும் பொறுப்புகள், d-வரி விதிக்கும் அதிகாரங்கள் மற்றும் நிதிகள். எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்."
@@ -1065,12 +1065,12 @@
         "ta": "விருப்பம் B பொருத்த மதிப்பீடு."
       },
       "C": {
-        "en": "Correct. Accurate Matching: a-Duration of Panchayats, b-Disqualifications for membership, c-Powers, authority and responsibilities, d-Powers to impose taxes and funds. Hence correct code is a-1, b-2, c-3, d-4.",
-        "ta": "சரியானது. துல்லியமான பொருத்தம்: a-ஊராட்சிகளின் ஆயுட்காலம், b-உறுப்பினர் தகுதியிழப்புகள், c-அதிகாரங்கள் மற்றும் பொறுப்புகள், d-வரி விதிக்கும் அதிகாரங்கள் மற்றும் நிதிகள். எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்."
-      },
-      "D": {
         "en": "Option D matching evaluation.",
         "ta": "விருப்பம் D பொருத்த மதிப்பீடு."
+      },
+      "D": {
+        "en": "Correct. Accurate Matching: a-Duration of Panchayats, b-Disqualifications for membership, c-Powers, authority and responsibilities, d-Powers to impose taxes and funds. Hence correct code is a-1, b-2, c-3, d-4.",
+        "ta": "சரியானது. துல்லியமான பொருத்தம்: a-ஊராட்சிகளின் ஆயுட்காலம், b-உறுப்பினர் தகுதியிழப்புகள், c-அதிகாரங்கள் மற்றும் பொறுப்புகள், d-வரி விதிக்கும் அதிகாரங்கள் மற்றும் நிதிகள். எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்."
       }
     },
     "tnpsc_tip": {
@@ -1112,8 +1112,8 @@
       },
       {
         "id": "B",
-        "en": "a-2, b-1, c-4, d-3",
-        "ta": "a-2, b-1, c-4, d-3"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "C",
@@ -1122,24 +1122,24 @@
       },
       {
         "id": "D",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-2, b-1, c-4, d-3",
+        "ta": "a-2, b-1, c-4, d-3"
       }
     ],
     "options_en": [
       "a-4, b-3, c-2, d-1",
-      "a-2, b-1, c-4, d-3",
+      "a-1, b-2, c-3, d-4",
       "a-3, b-4, c-1, d-2",
-      "a-1, b-2, c-3, d-4"
+      "a-2, b-1, c-4, d-3"
     ],
     "options_ta": [
       "a-4, b-3, c-2, d-1",
-      "a-2, b-1, c-4, d-3",
+      "a-1, b-2, c-3, d-4",
       "a-3, b-4, c-1, d-2",
-      "a-1, b-2, c-3, d-4"
+      "a-2, b-1, c-4, d-3"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Accurate Matching: a-State Finance Commission, b-Audit of accounts of Panchayats, c-State Election Commission, d-Bar to interference by courts. Hence correct code is a-1, b-2, c-3, d-4.",
       "ta": "துல்லியமான பொருத்தம்: a-மாநில நிதி ஆணையம், b-கணக்குத் தணிக்கை, c-மாநில தேர்தல் ஆணையம், d-நீதிமன்றத் தலையீட்டிற்குத் தடை. எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்."
@@ -1152,16 +1152,16 @@
         "ta": "விருப்பம் D பொருத்த மதிப்பீடு."
       },
       "B": {
-        "en": "Option B matching evaluation.",
-        "ta": "விருப்பம் B பொருத்த மதிப்பீடு."
+        "en": "Correct. Accurate Matching: a-State Finance Commission, b-Audit of accounts of Panchayats, c-State Election Commission, d-Bar to interference by courts. Hence correct code is a-1, b-2, c-3, d-4.",
+        "ta": "சரியானது. துல்லியமான பொருத்தம்: a-மாநில நிதி ஆணையம், b-கணக்குத் தணிக்கை, c-மாநில தேர்தல் ஆணையம், d-நீதிமன்றத் தலையீட்டிற்குத் தடை. எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்."
       },
       "C": {
         "en": "Option C matching evaluation.",
         "ta": "விருப்பம் C பொருத்த மதிப்பீடு."
       },
       "D": {
-        "en": "Correct. Accurate Matching: a-State Finance Commission, b-Audit of accounts of Panchayats, c-State Election Commission, d-Bar to interference by courts. Hence correct code is a-1, b-2, c-3, d-4.",
-        "ta": "சரியானது. துல்லியமான பொருத்தம்: a-மாநில நிதி ஆணையம், b-கணக்குத் தணிக்கை, c-மாநில தேர்தல் ஆணையம், d-நீதிமன்றத் தலையீட்டிற்குத் தடை. எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்."
+        "en": "Option B matching evaluation.",
+        "ta": "விருப்பம் B பொருத்த மதிப்பீடு."
       }
     },
     "tnpsc_tip": {
@@ -1294,8 +1294,8 @@
       },
       {
         "id": "B",
-        "en": "a-2, b-1, c-4, d-3",
-        "ta": "a-2, b-1, c-4, d-3"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "C",
@@ -1304,24 +1304,24 @@
       },
       {
         "id": "D",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-2, b-1, c-4, d-3",
+        "ta": "a-2, b-1, c-4, d-3"
       }
     ],
     "options_en": [
       "a-4, b-3, c-2, d-1",
-      "a-2, b-1, c-4, d-3",
+      "a-1, b-2, c-3, d-4",
       "a-3, b-4, c-1, d-2",
-      "a-1, b-2, c-3, d-4"
+      "a-2, b-1, c-4, d-3"
     ],
     "options_ta": [
       "a-4, b-3, c-2, d-1",
-      "a-2, b-1, c-4, d-3",
+      "a-1, b-2, c-3, d-4",
       "a-3, b-4, c-1, d-2",
-      "a-1, b-2, c-3, d-4"
+      "a-2, b-1, c-4, d-3"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Accurate Matching: a-3-tier Panchayati Raj model, b-2-tier Mandal Panchayat model, c-District Development Commissioner (DDC), d-Constitutional status for PRIs. Hence correct code is a-1, b-2, c-3, d-4.",
       "ta": "துல்லியமான பொருத்தம்: a-3 அடுக்கு பஞ்சாயத்து முறை, b-2 அடுக்கு மண்டல் பஞ்சாயத்து முறை, c-மாவட்ட வளர்ச்சி ஆணையர் (DDC), d-அரசியலமைப்பு அந்தஸ்து. எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்."
@@ -1334,16 +1334,16 @@
         "ta": "விருப்பம் D பொருத்த மதிப்பீடு."
       },
       "B": {
-        "en": "Option B matching evaluation.",
-        "ta": "விருப்பம் B பொருத்த மதிப்பீடு."
+        "en": "Correct. Accurate Matching: a-3-tier Panchayati Raj model, b-2-tier Mandal Panchayat model, c-District Development Commissioner (DDC), d-Constitutional status for PRIs. Hence correct code is a-1, b-2, c-3, d-4.",
+        "ta": "சரியானது. துல்லியமான பொருத்தம்: a-3 அடுக்கு பஞ்சாயத்து முறை, b-2 அடுக்கு மண்டல் பஞ்சாயத்து முறை, c-மாவட்ட வளர்ச்சி ஆணையர் (DDC), d-அரசியலமைப்பு அந்தஸ்து. எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்."
       },
       "C": {
         "en": "Option C matching evaluation.",
         "ta": "விருப்பம் C பொருத்த மதிப்பீடு."
       },
       "D": {
-        "en": "Correct. Accurate Matching: a-3-tier Panchayati Raj model, b-2-tier Mandal Panchayat model, c-District Development Commissioner (DDC), d-Constitutional status for PRIs. Hence correct code is a-1, b-2, c-3, d-4.",
-        "ta": "சரியானது. துல்லியமான பொருத்தம்: a-3 அடுக்கு பஞ்சாயத்து முறை, b-2 அடுக்கு மண்டல் பஞ்சாயத்து முறை, c-மாவட்ட வளர்ச்சி ஆணையர் (DDC), d-அரசியலமைப்பு அந்தஸ்து. எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்."
+        "en": "Option B matching evaluation.",
+        "ta": "விருப்பம் B பொருத்த மதிப்பீடு."
       }
     },
     "tnpsc_tip": {
@@ -1390,29 +1390,29 @@
       },
       {
         "id": "C",
-        "en": "a-3, b-4, c-1, d-2",
-        "ta": "a-3, b-4, c-1, d-2"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "D",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-3, b-4, c-1, d-2",
+        "ta": "a-3, b-4, c-1, d-2"
       }
     ],
     "options_en": [
       "a-4, b-3, c-2, d-1",
       "a-2, b-1, c-4, d-3",
-      "a-3, b-4, c-1, d-2",
-      "a-1, b-2, c-3, d-4"
+      "a-1, b-2, c-3, d-4",
+      "a-3, b-4, c-1, d-2"
     ],
     "options_ta": [
       "a-4, b-3, c-2, d-1",
       "a-2, b-1, c-4, d-3",
-      "a-3, b-4, c-1, d-2",
-      "a-1, b-2, c-3, d-4"
+      "a-1, b-2, c-3, d-4",
+      "a-3, b-4, c-1, d-2"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Accurate Matching: a-Gram Sabha, b-Constitution of Panchayats, c-Composition of Panchayats, d-Reservation of seats. Hence correct code is a-1, b-2, c-3, d-4.",
       "ta": "துல்லியமான பொருத்தம்: a-கிராம சபை, b-ஊராட்சிகள் அமைத்தல், c-ஊராட்சிகளின் கட்டமைப்பு, d-இடஒதுக்கீடு. எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்."
@@ -1429,12 +1429,12 @@
         "ta": "விருப்பம் B பொருத்த மதிப்பீடு."
       },
       "C": {
-        "en": "Option C matching evaluation.",
-        "ta": "விருப்பம் C பொருத்த மதிப்பீடு."
-      },
-      "D": {
         "en": "Correct. Accurate Matching: a-Gram Sabha, b-Constitution of Panchayats, c-Composition of Panchayats, d-Reservation of seats. Hence correct code is a-1, b-2, c-3, d-4.",
         "ta": "சரியானது. துல்லியமான பொருத்தம்: a-கிராம சபை, b-ஊராட்சிகள் அமைத்தல், c-ஊராட்சிகளின் கட்டமைப்பு, d-இடஒதுக்கீடு. எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்."
+      },
+      "D": {
+        "en": "Option C matching evaluation.",
+        "ta": "விருப்பம் C பொருத்த மதிப்பீடு."
       }
     },
     "tnpsc_tip": {
@@ -1471,8 +1471,8 @@
     "options": [
       {
         "id": "A",
-        "en": "a-4, b-3, c-2, d-1",
-        "ta": "a-4, b-3, c-2, d-1"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "B",
@@ -1486,24 +1486,24 @@
       },
       {
         "id": "D",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-4, b-3, c-2, d-1",
+        "ta": "a-4, b-3, c-2, d-1"
       }
     ],
     "options_en": [
-      "a-4, b-3, c-2, d-1",
+      "a-1, b-2, c-3, d-4",
       "a-2, b-1, c-4, d-3",
       "a-3, b-4, c-1, d-2",
-      "a-1, b-2, c-3, d-4"
+      "a-4, b-3, c-2, d-1"
     ],
     "options_ta": [
-      "a-4, b-3, c-2, d-1",
+      "a-1, b-2, c-3, d-4",
       "a-2, b-1, c-4, d-3",
       "a-3, b-4, c-1, d-2",
-      "a-1, b-2, c-3, d-4"
+      "a-4, b-3, c-2, d-1"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Accurate Matching: a-Duration of Panchayats, b-Disqualifications for membership, c-Powers, authority and responsibilities, d-Powers to impose taxes and funds. Hence correct code is a-1, b-2, c-3, d-4.",
       "ta": "துல்லியமான பொருத்தம்: a-ஊராட்சிகளின் ஆயுட்காலம், b-உறுப்பினர் தகுதியிழப்புகள், c-அதிகாரங்கள் மற்றும் பொறுப்புகள், d-வரி விதிக்கும் அதிகாரங்கள் மற்றும் நிதிகள். எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்."
@@ -1512,8 +1512,8 @@
     "explanation_ta": "துல்லியமான பொருத்தம்: a-ஊராட்சிகளின் ஆயுட்காலம், b-உறுப்பினர் தகுதியிழப்புகள், c-அதிகாரங்கள் மற்றும் பொறுப்புகள், d-வரி விதிக்கும் அதிகாரங்கள் மற்றும் நிதிகள். எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்.",
     "why_not_others": {
       "A": {
-        "en": "Option D matching evaluation.",
-        "ta": "விருப்பம் D பொருத்த மதிப்பீடு."
+        "en": "Correct. Accurate Matching: a-Duration of Panchayats, b-Disqualifications for membership, c-Powers, authority and responsibilities, d-Powers to impose taxes and funds. Hence correct code is a-1, b-2, c-3, d-4.",
+        "ta": "சரியானது. துல்லியமான பொருத்தம்: a-ஊராட்சிகளின் ஆயுட்காலம், b-உறுப்பினர் தகுதியிழப்புகள், c-அதிகாரங்கள் மற்றும் பொறுப்புகள், d-வரி விதிக்கும் அதிகாரங்கள் மற்றும் நிதிகள். எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்."
       },
       "B": {
         "en": "Option B matching evaluation.",
@@ -1524,8 +1524,8 @@
         "ta": "விருப்பம் C பொருத்த மதிப்பீடு."
       },
       "D": {
-        "en": "Correct. Accurate Matching: a-Duration of Panchayats, b-Disqualifications for membership, c-Powers, authority and responsibilities, d-Powers to impose taxes and funds. Hence correct code is a-1, b-2, c-3, d-4.",
-        "ta": "சரியானது. துல்லியமான பொருத்தம்: a-ஊராட்சிகளின் ஆயுட்காலம், b-உறுப்பினர் தகுதியிழப்புகள், c-அதிகாரங்கள் மற்றும் பொறுப்புகள், d-வரி விதிக்கும் அதிகாரங்கள் மற்றும் நிதிகள். எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்."
+        "en": "Option D matching evaluation.",
+        "ta": "விருப்பம் D பொருத்த மதிப்பீடு."
       }
     },
     "tnpsc_tip": {
@@ -1572,29 +1572,29 @@
       },
       {
         "id": "C",
-        "en": "a-3, b-4, c-1, d-2",
-        "ta": "a-3, b-4, c-1, d-2"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "D",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-3, b-4, c-1, d-2",
+        "ta": "a-3, b-4, c-1, d-2"
       }
     ],
     "options_en": [
       "a-4, b-3, c-2, d-1",
       "a-2, b-1, c-4, d-3",
-      "a-3, b-4, c-1, d-2",
-      "a-1, b-2, c-3, d-4"
+      "a-1, b-2, c-3, d-4",
+      "a-3, b-4, c-1, d-2"
     ],
     "options_ta": [
       "a-4, b-3, c-2, d-1",
       "a-2, b-1, c-4, d-3",
-      "a-3, b-4, c-1, d-2",
-      "a-1, b-2, c-3, d-4"
+      "a-1, b-2, c-3, d-4",
+      "a-3, b-4, c-1, d-2"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Accurate Matching: a-State Finance Commission, b-Audit of accounts of Panchayats, c-State Election Commission, d-Bar to interference by courts. Hence correct code is a-1, b-2, c-3, d-4.",
       "ta": "துல்லியமான பொருத்தம்: a-மாநில நிதி ஆணையம், b-கணக்குத் தணிக்கை, c-மாநில தேர்தல் ஆணையம், d-நீதிமன்றத் தலையீட்டிற்குத் தடை. எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்."
@@ -1611,12 +1611,12 @@
         "ta": "விருப்பம் B பொருத்த மதிப்பீடு."
       },
       "C": {
-        "en": "Option C matching evaluation.",
-        "ta": "விருப்பம் C பொருத்த மதிப்பீடு."
-      },
-      "D": {
         "en": "Correct. Accurate Matching: a-State Finance Commission, b-Audit of accounts of Panchayats, c-State Election Commission, d-Bar to interference by courts. Hence correct code is a-1, b-2, c-3, d-4.",
         "ta": "சரியானது. துல்லியமான பொருத்தம்: a-மாநில நிதி ஆணையம், b-கணக்குத் தணிக்கை, c-மாநில தேர்தல் ஆணையம், d-நீதிமன்றத் தலையீட்டிற்குத் தடை. எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்."
+      },
+      "D": {
+        "en": "Option C matching evaluation.",
+        "ta": "விருப்பம் C பொருத்த மதிப்பீடு."
       }
     },
     "tnpsc_tip": {
@@ -1653,8 +1653,8 @@
     "options": [
       {
         "id": "A",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-4, b-3, c-2, d-1",
+        "ta": "a-4, b-3, c-2, d-1"
       },
       {
         "id": "B",
@@ -1668,24 +1668,24 @@
       },
       {
         "id": "D",
-        "en": "a-4, b-3, c-2, d-1",
-        "ta": "a-4, b-3, c-2, d-1"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       }
     ],
     "options_en": [
-      "a-1, b-2, c-3, d-4",
+      "a-4, b-3, c-2, d-1",
       "a-2, b-1, c-4, d-3",
       "a-3, b-4, c-1, d-2",
-      "a-4, b-3, c-2, d-1"
+      "a-1, b-2, c-3, d-4"
     ],
     "options_ta": [
-      "a-1, b-2, c-3, d-4",
+      "a-4, b-3, c-2, d-1",
       "a-2, b-1, c-4, d-3",
       "a-3, b-4, c-1, d-2",
-      "a-4, b-3, c-2, d-1"
+      "a-1, b-2, c-3, d-4"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Accurate Matching: a-1957, b-1977, c-1985, d-1986. Hence correct code is a-1, b-2, c-3, d-4.",
       "ta": "துல்லியமான பொருத்தம்: a-1957, b-1977, c-1985, d-1986. எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்."
@@ -1694,8 +1694,8 @@
     "explanation_ta": "துல்லியமான பொருத்தம்: a-1957, b-1977, c-1985, d-1986. எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Accurate Matching: a-1957, b-1977, c-1985, d-1986. Hence correct code is a-1, b-2, c-3, d-4.",
-        "ta": "சரியானது. துல்லியமான பொருத்தம்: a-1957, b-1977, c-1985, d-1986. எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்."
+        "en": "Option D matching evaluation.",
+        "ta": "விருப்பம் D பொருத்த மதிப்பீடு."
       },
       "B": {
         "en": "Option B matching evaluation.",
@@ -1706,8 +1706,8 @@
         "ta": "விருப்பம் C பொருத்த மதிப்பீடு."
       },
       "D": {
-        "en": "Option D matching evaluation.",
-        "ta": "விருப்பம் D பொருத்த மதிப்பீடு."
+        "en": "Correct. Accurate Matching: a-1957, b-1977, c-1985, d-1986. Hence correct code is a-1, b-2, c-3, d-4.",
+        "ta": "சரியானது. துல்லியமான பொருத்தம்: a-1957, b-1977, c-1985, d-1986. எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்."
       }
     },
     "tnpsc_tip": {
@@ -1744,8 +1744,8 @@
     "options": [
       {
         "id": "A",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-3, b-4, c-1, d-2",
+        "ta": "a-3, b-4, c-1, d-2"
       },
       {
         "id": "B",
@@ -1754,8 +1754,8 @@
       },
       {
         "id": "C",
-        "en": "a-3, b-4, c-1, d-2",
-        "ta": "a-3, b-4, c-1, d-2"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "D",
@@ -1764,19 +1764,19 @@
       }
     ],
     "options_en": [
-      "a-1, b-2, c-3, d-4",
-      "a-2, b-1, c-4, d-3",
       "a-3, b-4, c-1, d-2",
+      "a-2, b-1, c-4, d-3",
+      "a-1, b-2, c-3, d-4",
       "a-4, b-3, c-2, d-1"
     ],
     "options_ta": [
-      "a-1, b-2, c-3, d-4",
-      "a-2, b-1, c-4, d-3",
       "a-3, b-4, c-1, d-2",
+      "a-2, b-1, c-4, d-3",
+      "a-1, b-2, c-3, d-4",
       "a-4, b-3, c-2, d-1"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Accurate Matching: a-3-tier Panchayati Raj model, b-2-tier Mandal Panchayat model, c-District Development Commissioner (DDC), d-Constitutional status for PRIs. Hence correct code is a-1, b-2, c-3, d-4.",
       "ta": "துல்லியமான பொருத்தம்: a-3 அடுக்கு பஞ்சாயத்து முறை, b-2 அடுக்கு மண்டல் பஞ்சாயத்து முறை, c-மாவட்ட வளர்ச்சி ஆணையர் (DDC), d-அரசியலமைப்பு அந்தஸ்து. எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்."
@@ -1785,16 +1785,16 @@
     "explanation_ta": "துல்லியமான பொருத்தம்: a-3 அடுக்கு பஞ்சாயத்து முறை, b-2 அடுக்கு மண்டல் பஞ்சாயத்து முறை, c-மாவட்ட வளர்ச்சி ஆணையர் (DDC), d-அரசியலமைப்பு அந்தஸ்து. எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Accurate Matching: a-3-tier Panchayati Raj model, b-2-tier Mandal Panchayat model, c-District Development Commissioner (DDC), d-Constitutional status for PRIs. Hence correct code is a-1, b-2, c-3, d-4.",
-        "ta": "சரியானது. துல்லியமான பொருத்தம்: a-3 அடுக்கு பஞ்சாயத்து முறை, b-2 அடுக்கு மண்டல் பஞ்சாயத்து முறை, c-மாவட்ட வளர்ச்சி ஆணையர் (DDC), d-அரசியலமைப்பு அந்தஸ்து. எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்."
+        "en": "Option C matching evaluation.",
+        "ta": "விருப்பம் C பொருத்த மதிப்பீடு."
       },
       "B": {
         "en": "Option B matching evaluation.",
         "ta": "விருப்பம் B பொருத்த மதிப்பீடு."
       },
       "C": {
-        "en": "Option C matching evaluation.",
-        "ta": "விருப்பம் C பொருத்த மதிப்பீடு."
+        "en": "Correct. Accurate Matching: a-3-tier Panchayati Raj model, b-2-tier Mandal Panchayat model, c-District Development Commissioner (DDC), d-Constitutional status for PRIs. Hence correct code is a-1, b-2, c-3, d-4.",
+        "ta": "சரியானது. துல்லியமான பொருத்தம்: a-3 அடுக்கு பஞ்சாயத்து முறை, b-2 அடுக்கு மண்டல் பஞ்சாயத்து முறை, c-மாவட்ட வளர்ச்சி ஆணையர் (DDC), d-அரசியலமைப்பு அந்தஸ்து. எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்."
       },
       "D": {
         "en": "Option D matching evaluation.",
@@ -1835,8 +1835,8 @@
     "options": [
       {
         "id": "A",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-4, b-3, c-2, d-1",
+        "ta": "a-4, b-3, c-2, d-1"
       },
       {
         "id": "B",
@@ -1850,24 +1850,24 @@
       },
       {
         "id": "D",
-        "en": "a-4, b-3, c-2, d-1",
-        "ta": "a-4, b-3, c-2, d-1"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       }
     ],
     "options_en": [
-      "a-1, b-2, c-3, d-4",
+      "a-4, b-3, c-2, d-1",
       "a-2, b-1, c-4, d-3",
       "a-3, b-4, c-1, d-2",
-      "a-4, b-3, c-2, d-1"
+      "a-1, b-2, c-3, d-4"
     ],
     "options_ta": [
-      "a-1, b-2, c-3, d-4",
+      "a-4, b-3, c-2, d-1",
       "a-2, b-1, c-4, d-3",
       "a-3, b-4, c-1, d-2",
-      "a-4, b-3, c-2, d-1"
+      "a-1, b-2, c-3, d-4"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Accurate Matching: a-Gram Sabha, b-Constitution of Panchayats, c-Composition of Panchayats, d-Reservation of seats. Hence correct code is a-1, b-2, c-3, d-4.",
       "ta": "துல்லியமான பொருத்தம்: a-கிராம சபை, b-ஊராட்சிகள் அமைத்தல், c-ஊராட்சிகளின் கட்டமைப்பு, d-இடஒதுக்கீடு. எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்."
@@ -1876,8 +1876,8 @@
     "explanation_ta": "துல்லியமான பொருத்தம்: a-கிராம சபை, b-ஊராட்சிகள் அமைத்தல், c-ஊராட்சிகளின் கட்டமைப்பு, d-இடஒதுக்கீடு. எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Accurate Matching: a-Gram Sabha, b-Constitution of Panchayats, c-Composition of Panchayats, d-Reservation of seats. Hence correct code is a-1, b-2, c-3, d-4.",
-        "ta": "சரியானது. துல்லியமான பொருத்தம்: a-கிராம சபை, b-ஊராட்சிகள் அமைத்தல், c-ஊராட்சிகளின் கட்டமைப்பு, d-இடஒதுக்கீடு. எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்."
+        "en": "Option D matching evaluation.",
+        "ta": "விருப்பம் D பொருத்த மதிப்பீடு."
       },
       "B": {
         "en": "Option B matching evaluation.",
@@ -1888,8 +1888,8 @@
         "ta": "விருப்பம் C பொருத்த மதிப்பீடு."
       },
       "D": {
-        "en": "Option D matching evaluation.",
-        "ta": "விருப்பம் D பொருத்த மதிப்பீடு."
+        "en": "Correct. Accurate Matching: a-Gram Sabha, b-Constitution of Panchayats, c-Composition of Panchayats, d-Reservation of seats. Hence correct code is a-1, b-2, c-3, d-4.",
+        "ta": "சரியானது. துல்லியமான பொருத்தம்: a-கிராம சபை, b-ஊராட்சிகள் அமைத்தல், c-ஊராட்சிகளின் கட்டமைப்பு, d-இடஒதுக்கீடு. எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்."
       }
     },
     "tnpsc_tip": {
@@ -2017,8 +2017,8 @@
     "options": [
       {
         "id": "A",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-3, b-4, c-1, d-2",
+        "ta": "a-3, b-4, c-1, d-2"
       },
       {
         "id": "B",
@@ -2027,8 +2027,8 @@
       },
       {
         "id": "C",
-        "en": "a-3, b-4, c-1, d-2",
-        "ta": "a-3, b-4, c-1, d-2"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "D",
@@ -2037,19 +2037,19 @@
       }
     ],
     "options_en": [
-      "a-1, b-2, c-3, d-4",
-      "a-2, b-1, c-4, d-3",
       "a-3, b-4, c-1, d-2",
+      "a-2, b-1, c-4, d-3",
+      "a-1, b-2, c-3, d-4",
       "a-4, b-3, c-2, d-1"
     ],
     "options_ta": [
-      "a-1, b-2, c-3, d-4",
-      "a-2, b-1, c-4, d-3",
       "a-3, b-4, c-1, d-2",
+      "a-2, b-1, c-4, d-3",
+      "a-1, b-2, c-3, d-4",
       "a-4, b-3, c-2, d-1"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Accurate Matching: a-State Finance Commission, b-Audit of accounts of Panchayats, c-State Election Commission, d-Bar to interference by courts. Hence correct code is a-1, b-2, c-3, d-4.",
       "ta": "துல்லியமான பொருத்தம்: a-மாநில நிதி ஆணையம், b-கணக்குத் தணிக்கை, c-மாநில தேர்தல் ஆணையம், d-நீதிமன்றத் தலையீட்டிற்குத் தடை. எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்."
@@ -2058,16 +2058,16 @@
     "explanation_ta": "துல்லியமான பொருத்தம்: a-மாநில நிதி ஆணையம், b-கணக்குத் தணிக்கை, c-மாநில தேர்தல் ஆணையம், d-நீதிமன்றத் தலையீட்டிற்குத் தடை. எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Accurate Matching: a-State Finance Commission, b-Audit of accounts of Panchayats, c-State Election Commission, d-Bar to interference by courts. Hence correct code is a-1, b-2, c-3, d-4.",
-        "ta": "சரியானது. துல்லியமான பொருத்தம்: a-மாநில நிதி ஆணையம், b-கணக்குத் தணிக்கை, c-மாநில தேர்தல் ஆணையம், d-நீதிமன்றத் தலையீட்டிற்குத் தடை. எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்."
+        "en": "Option C matching evaluation.",
+        "ta": "விருப்பம் C பொருத்த மதிப்பீடு."
       },
       "B": {
         "en": "Option B matching evaluation.",
         "ta": "விருப்பம் B பொருத்த மதிப்பீடு."
       },
       "C": {
-        "en": "Option C matching evaluation.",
-        "ta": "விருப்பம் C பொருத்த மதிப்பீடு."
+        "en": "Correct. Accurate Matching: a-State Finance Commission, b-Audit of accounts of Panchayats, c-State Election Commission, d-Bar to interference by courts. Hence correct code is a-1, b-2, c-3, d-4.",
+        "ta": "சரியானது. துல்லியமான பொருத்தம்: a-மாநில நிதி ஆணையம், b-கணக்குத் தணிக்கை, c-மாநில தேர்தல் ஆணையம், d-நீதிமன்றத் தலையீட்டிற்குத் தடை. எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்."
       },
       "D": {
         "en": "Option D matching evaluation.",
@@ -2108,13 +2108,13 @@
     "options": [
       {
         "id": "A",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-2, b-1, c-4, d-3",
+        "ta": "a-2, b-1, c-4, d-3"
       },
       {
         "id": "B",
-        "en": "a-2, b-1, c-4, d-3",
-        "ta": "a-2, b-1, c-4, d-3"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "C",
@@ -2128,19 +2128,19 @@
       }
     ],
     "options_en": [
-      "a-1, b-2, c-3, d-4",
       "a-2, b-1, c-4, d-3",
+      "a-1, b-2, c-3, d-4",
       "a-3, b-4, c-1, d-2",
       "a-4, b-3, c-2, d-1"
     ],
     "options_ta": [
-      "a-1, b-2, c-3, d-4",
       "a-2, b-1, c-4, d-3",
+      "a-1, b-2, c-3, d-4",
       "a-3, b-4, c-1, d-2",
       "a-4, b-3, c-2, d-1"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Accurate Matching: a-1957, b-1977, c-1985, d-1986. Hence correct code is a-1, b-2, c-3, d-4.",
       "ta": "துல்லியமான பொருத்தம்: a-1957, b-1977, c-1985, d-1986. எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்."
@@ -2149,12 +2149,12 @@
     "explanation_ta": "துல்லியமான பொருத்தம்: a-1957, b-1977, c-1985, d-1986. எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Accurate Matching: a-1957, b-1977, c-1985, d-1986. Hence correct code is a-1, b-2, c-3, d-4.",
-        "ta": "சரியானது. துல்லியமான பொருத்தம்: a-1957, b-1977, c-1985, d-1986. எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்."
-      },
-      "B": {
         "en": "Option B matching evaluation.",
         "ta": "விருப்பம் B பொருத்த மதிப்பீடு."
+      },
+      "B": {
+        "en": "Correct. Accurate Matching: a-1957, b-1977, c-1985, d-1986. Hence correct code is a-1, b-2, c-3, d-4.",
+        "ta": "சரியானது. துல்லியமான பொருத்தம்: a-1957, b-1977, c-1985, d-1986. எனவே சரியான குறியீடு a-1, b-2, c-3, d-4 ஆகும்."
       },
       "C": {
         "en": "Option C matching evaluation.",

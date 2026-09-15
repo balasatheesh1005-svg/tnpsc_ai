@@ -6,8 +6,8 @@
     "difficulty": "Hard",
     "question_type": "Chronology",
     "question": {
-      "en": "Arrange the following historic events relating to the drafting and adoption of the Preamble in correct chronological order:\n1. Jawaharlal Nehru introduces the historic 'Objectives Resolution' in the Constituent Assembly\n2. Constituent Assembly unanimously adopts the Objectives Resolution\n3. Constituent Assembly debates and votes that the Preamble stands part of the Constitution\n4. People of India adopt, enact, and give to themselves the Constitution and Preamble",
-      "ta": "முகவுரையை வரைதல் மற்றும் ஏற்றுக்கொள்வது தொடர்பான பின்வரும் வரலாற்று நிகழ்வுகளை சரியான காலவரிசையில் அமைக்கவும்:\n1. ஜவஹர்லால் நேரு வரலாற்றுச் சிறப்புமிக்க 'குறிக்கோள் தீர்மானத்தை' அரசியலமைப்பு நிர்ணய அவையில் அறிமுகப்படுத்துகிறார்\n2. அரசியலமைப்பு நிர்ணய அவை குறிக்கோள் தீர்மானத்தை ஏகமனதாக ஏற்றுக்கொள்கிறது\n3. முகவுரை அரசியலமைப்பின் ஒரு பகுதியாக அமைகிறது என்ற தீர்மானத்தின் மீது அரசியலமைப்பு நிர்ணய அவை விவாதித்து வாக்களிக்கிறது\n4. இந்திய மக்கள் அரசியலமைப்பு மற்றும் முகவுரையை ஏற்றுக்கொண்டு, இயற்றி, தங்களுக்குத் தாங்களே வழங்குகின்றனர்"
+      "en": "Arrange the following historic events relating to the drafting and adoption of the Preamble in correct chronological order:\n1. Constituent Assembly debates and votes that the Preamble stands part of the Constitution\n2. Jawaharlal Nehru introduces the historic 'Objectives Resolution' in the Constituent Assembly\n3. People of India adopt, enact, and give to themselves the Constitution and Preamble\n4. Constituent Assembly unanimously adopts the Objectives Resolution",
+      "ta": "முகவுரையை வரைதல் மற்றும் ஏற்றுக்கொள்வது தொடர்பான பின்வரும் வரலாற்று நிகழ்வுகளை சரியான காலவரிசையில் அமைக்கவும்:\n1. முகவுரை அரசியலமைப்பின் ஒரு பகுதியாக அமைகிறது என்ற தீர்மானத்தின் மீது அரசியலமைப்பு நிர்ணய அவை விவாதித்து வாக்களிக்கிறது\n2. ஜவஹர்லால் நேரு வரலாற்றுச் சிறப்புமிக்க 'குறிக்கோள் தீர்மானத்தை' அரசியலமைப்பு நிர்ணய அவையில் அறிமுகப்படுத்துகிறார்\n3. இந்திய மக்கள் அரசியலமைப்பு மற்றும் முகவுரையை ஏற்றுக்கொண்டு, இயற்றி, தங்களுக்குத் தாங்களே வழங்குகின்றனர்\n4. அரசியலமைப்பு நிர்ணய அவை குறிக்கோள் தீர்மானத்தை ஏகமனதாக ஏற்றுக்கொள்கிறது"
     },
     "events": [
       {
@@ -34,23 +34,23 @@
     "options": [
       {
         "id": "A",
+        "en": "2 -> 4 -> 1 -> 3",
+        "ta": "2 -> 4 -> 1 -> 3"
+      },
+      {
+        "id": "B",
         "en": "1 -> 2 -> 3 -> 4",
         "ta": "1 -> 2 -> 3 -> 4"
       },
       {
-        "id": "B",
-        "en": "2 -> 1 -> 3 -> 4",
-        "ta": "2 -> 1 -> 3 -> 4"
-      },
-      {
         "id": "C",
-        "en": "1 -> 3 -> 2 -> 4",
-        "ta": "1 -> 3 -> 2 -> 4"
+        "en": "1 -> 2 -> 4 -> 3",
+        "ta": "1 -> 2 -> 4 -> 3"
       },
       {
         "id": "D",
-        "en": "2 -> 3 -> 1 -> 4",
-        "ta": "2 -> 3 -> 1 -> 4"
+        "en": "1 -> 3 -> 2 -> 4",
+        "ta": "1 -> 3 -> 2 -> 4"
       }
     ],
     "correct_answer": "A",
@@ -60,20 +60,20 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Correct. Dec 13, 1946 -> Jan 22, 1947 -> Oct 17, 1949 -> Nov 26, 1949 follows the exact Constituent Assembly chronology.",
-        "ta": "சரி. டிசம்பர் 13, 1946 -> ஜனவரி 22, 1947 -> அக்டோபர் 17, 1949 -> நவம்பர் 26, 1949 சரியான காலவரிசையாகும்."
+        "en": "✅ Correct.\nThe correct chronological sequence is '2 -> 4 -> 1 -> 3'.",
+        "ta": "✅ சரி.\nசரியான காலவரிசை '2 -> 4 -> 1 -> 3' ஆகும்."
       },
       "B": {
-        "en": "Incorrect. Objectives Resolution was moved by Nehru on Dec 13, 1946 (1) before it was adopted on Jan 22, 1947 (2).",
-        "ta": "தவறு. குறிக்கோள் தீர்மானம் டிசம்பர் 13, 1946-ல் முன்மொழியப்பட்டது (1), பின்னரே ஜனவரி 22, 1947-ல் ஏற்கப்பட்டது (2)."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 3 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 3 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "C": {
-        "en": "Incorrect. Resolution adoption (Jan 1947) preceded the final Preamble voting in the Assembly (Oct 1949).",
-        "ta": "தவறு. தீர்மானம் ஏற்கப்பட்டது (ஜனவரி 1947) முகவுரை மீதான இறுதி வாக்கெடுப்பிற்கு (அக்டோபர் 1949) முந்தையது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 4 -> 3' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 4 -> 3' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "D": {
-        "en": "Incorrect. Moving the resolution (1) was the very first step in Dec 1946.",
-        "ta": "தவறு. தீர்மானத்தை முன்மொழிவதே (1) டிசம்பர் 1946-ன் முதல் படியாகும்."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 3 -> 2 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 3 -> 2 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       }
     },
     "tnpsc_tip": {
@@ -99,19 +99,19 @@
       "Objectives Resolution",
       "Constituent Assembly"
     ],
-    "question_en": "Arrange the following historic events relating to the drafting and adoption of the Preamble in correct chronological order:\n1. Jawaharlal Nehru introduces the historic 'Objectives Resolution' in the Constituent Assembly\n2. Constituent Assembly unanimously adopts the Objectives Resolution\n3. Constituent Assembly debates and votes that the Preamble stands part of the Constitution\n4. People of India adopt, enact, and give to themselves the Constitution and Preamble",
-    "question_ta": "முகவுரையை வரைதல் மற்றும் ஏற்றுக்கொள்வது தொடர்பான பின்வரும் வரலாற்று நிகழ்வுகளை சரியான காலவரிசையில் அமைக்கவும்:\n1. ஜவஹர்லால் நேரு வரலாற்றுச் சிறப்புமிக்க 'குறிக்கோள் தீர்மானத்தை' அரசியலமைப்பு நிர்ணய அவையில் அறிமுகப்படுத்துகிறார்\n2. அரசியலமைப்பு நிர்ணய அவை குறிக்கோள் தீர்மானத்தை ஏகமனதாக ஏற்றுக்கொள்கிறது\n3. முகவுரை அரசியலமைப்பின் ஒரு பகுதியாக அமைகிறது என்ற தீர்மானத்தின் மீது அரசியலமைப்பு நிர்ணய அவை விவாதித்து வாக்களிக்கிறது\n4. இந்திய மக்கள் அரசியலமைப்பு மற்றும் முகவுரையை ஏற்றுக்கொண்டு, இயற்றி, தங்களுக்குத் தாங்களே வழங்குகின்றனர்",
+    "question_en": "Arrange the following historic events relating to the drafting and adoption of the Preamble in correct chronological order:\n1. Constituent Assembly debates and votes that the Preamble stands part of the Constitution\n2. Jawaharlal Nehru introduces the historic 'Objectives Resolution' in the Constituent Assembly\n3. People of India adopt, enact, and give to themselves the Constitution and Preamble\n4. Constituent Assembly unanimously adopts the Objectives Resolution",
+    "question_ta": "முகவுரையை வரைதல் மற்றும் ஏற்றுக்கொள்வது தொடர்பான பின்வரும் வரலாற்று நிகழ்வுகளை சரியான காலவரிசையில் அமைக்கவும்:\n1. முகவுரை அரசியலமைப்பின் ஒரு பகுதியாக அமைகிறது என்ற தீர்மானத்தின் மீது அரசியலமைப்பு நிர்ணய அவை விவாதித்து வாக்களிக்கிறது\n2. ஜவஹர்லால் நேரு வரலாற்றுச் சிறப்புமிக்க 'குறிக்கோள் தீர்மானத்தை' அரசியலமைப்பு நிர்ணய அவையில் அறிமுகப்படுத்துகிறார்\n3. இந்திய மக்கள் அரசியலமைப்பு மற்றும் முகவுரையை ஏற்றுக்கொண்டு, இயற்றி, தங்களுக்குத் தாங்களே வழங்குகின்றனர்\n4. அரசியலமைப்பு நிர்ணய அவை குறிக்கோள் தீர்மானத்தை ஏகமனதாக ஏற்றுக்கொள்கிறது",
     "options_en": [
+      "2 -> 4 -> 1 -> 3",
       "1 -> 2 -> 3 -> 4",
-      "2 -> 1 -> 3 -> 4",
-      "1 -> 3 -> 2 -> 4",
-      "2 -> 3 -> 1 -> 4"
+      "1 -> 2 -> 4 -> 3",
+      "1 -> 3 -> 2 -> 4"
     ],
     "options_ta": [
+      "2 -> 4 -> 1 -> 3",
       "1 -> 2 -> 3 -> 4",
-      "2 -> 1 -> 3 -> 4",
-      "1 -> 3 -> 2 -> 4",
-      "2 -> 3 -> 1 -> 4"
+      "1 -> 2 -> 4 -> 3",
+      "1 -> 3 -> 2 -> 4"
     ],
     "answer": "a",
     "explanation_en": "Correct Chronological Sequence: 1 (Objectives Resolution moved: Dec 13, 1946) -> 2 (Objectives Resolution adopted: Jan 22, 1947) -> 3 (Preamble voted into Constitution: Oct 17, 1949) -> 4 (Constitution & Preamble adopted: Nov 26, 1949).",
@@ -124,8 +124,8 @@
     "difficulty": "Hard",
     "question_type": "Chronology",
     "question": {
-      "en": "Arrange the following landmark Supreme Court judgments regarding the constitutional status and interpretation of the Preamble in correct chronological order:\n1. Supreme Court rules in Berubari Union Reference that the Preamble is NOT a part of the Constitution\n2. 13-Judge Bench in Kesavananda Bharati Case declares the Preamble IS a part of the Constitution\n3. Supreme Court in S.R. Bommai Case holds Secularism in the Preamble to be an essential feature of Basic Structure\n4. Supreme Court in LIC of India Case explicitly reaffirms that the Preamble is an 'integral part' of the Constitution",
-      "ta": "முகவுரையின் அரசியலமைப்பு அந்தஸ்து மற்றும் விளக்கம் தொடர்பான உச்ச நீதிமன்றத்தின் வரலாற்றுச் சிறப்புமிக்க தீர்ப்புகளை சரியான காலவரிசையில் அமைக்கவும்:\n1. பெருபாரி யூனியன் வழக்கில் முகவுரை அரசியலமைப்பின் ஒரு பகுதி அல்ல என்று உச்ச நீதிமன்றம் தீர்ப்பளிக்கிறது\n2. கேசவானந்த பாரதி வழக்கில் 13 நீதிபதிகள் கொண்ட அமர்வு முகவுரை அரசியலமைப்பின் ஒரு பகுதி என்று அறிவிக்கிறது\n3. எஸ்.ஆர். பொம்மை வழக்கில் முகவுரையில் உள்ள மதச்சார்பின்மை அடிப்படை கட்டமைப்பின் இன்றியமையாத அம்சம் என உச்ச நீதிமன்றம் தீர்ப்பளிக்கிறது\n4. எல்.ஐ.சி வழக்கில் முகவுரை அரசியலமைப்பின் 'ஒருங்கிணைந்த பகுதி' என்பதை உச்ச நீதிமன்றம் மீண்டும் உறுதிப்படுத்துகிறது"
+      "en": "Arrange the following landmark Supreme Court judgments regarding the constitutional status and interpretation of the Preamble in correct chronological order:\n1. 13-Judge Bench in Kesavananda Bharati Case declares the Preamble IS a part of the Constitution\n2. Supreme Court in LIC of India Case explicitly reaffirms that the Preamble is an 'integral part' of the Constitution\n3. Supreme Court rules in Berubari Union Reference that the Preamble is NOT a part of the Constitution\n4. Supreme Court in S.R. Bommai Case holds Secularism in the Preamble to be an essential feature of Basic Structure",
+      "ta": "முகவுரையின் அரசியலமைப்பு அந்தஸ்து மற்றும் விளக்கம் தொடர்பான உச்ச நீதிமன்றத்தின் வரலாற்றுச் சிறப்புமிக்க தீர்ப்புகளை சரியான காலவரிசையில் அமைக்கவும்:\n1. கேசவானந்த பாரதி வழக்கில் 13 நீதிபதிகள் கொண்ட அமர்வு முகவுரை அரசியலமைப்பின் ஒரு பகுதி என்று அறிவிக்கிறது\n2. எல்.ஐ.சி வழக்கில் முகவுரை அரசியலமைப்பின் 'ஒருங்கிணைந்த பகுதி' என்பதை உச்ச நீதிமன்றம் மீண்டும் உறுதிப்படுத்துகிறது\n3. பெருபாரி யூனியன் வழக்கில் முகவுரை அரசியலமைப்பின் ஒரு பகுதி அல்ல என்று உச்ச நீதிமன்றம் தீர்ப்பளிக்கிறது\n4. எஸ்.ஆர். பொம்மை வழக்கில் முகவுரையில் உள்ள மதச்சார்பின்மை அடிப்படை கட்டமைப்பின் இன்றியமையாத அம்சம் என உச்ச நீதிமன்றம் தீர்ப்பளிக்கிறது"
     },
     "events": [
       {
@@ -152,8 +152,8 @@
     "options": [
       {
         "id": "A",
-        "en": "2 -> 1 -> 3 -> 4",
-        "ta": "2 -> 1 -> 3 -> 4"
+        "en": "1 -> 2 -> 4 -> 3",
+        "ta": "1 -> 2 -> 4 -> 3"
       },
       {
         "id": "B",
@@ -162,36 +162,36 @@
       },
       {
         "id": "C",
-        "en": "1 -> 3 -> 2 -> 4",
-        "ta": "1 -> 3 -> 2 -> 4"
+        "en": "3 -> 1 -> 4 -> 2",
+        "ta": "3 -> 1 -> 4 -> 2"
       },
       {
         "id": "D",
-        "en": "1 -> 2 -> 4 -> 3",
-        "ta": "1 -> 2 -> 4 -> 3"
+        "en": "1 -> 3 -> 2 -> 4",
+        "ta": "1 -> 3 -> 2 -> 4"
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "C",
     "explanation": {
       "en": "Chronological Sequence: 1 (Berubari Union Reference: 1960) -> 2 (Kesavananda Bharati Case: April 24, 1973) -> 3 (S.R. Bommai Case: 1994) -> 4 (LIC of India Case: 1995).",
       "ta": "சரியான காலவரிசை: 1 (பெருபாரி யூனியன் வழக்கு: 1960) -> 2 (கேசவானந்த பாரதி வழக்கு: ஏப்ரல் 24, 1973) -> 3 (எஸ்.ஆர். பொம்மை வழக்கு: 1994) -> 4 (எல்.ஐ.சி வழக்கு: 1995)."
     },
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Berubari Union (1960) came before Kesavananda Bharati (1973).",
-        "ta": "தவறு. பெருபாரி யூனியன் (1960) கேசவானந்த பாரதிக்கு (1973) முந்தையது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 4 -> 3' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 4 -> 3' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "B": {
-        "en": "Correct. 1960 (Berubari) -> 1973 (Kesavananda) -> 1994 (Bommai) -> 1995 (LIC of India) is the accurate judicial timeline.",
-        "ta": "சரி. 1960 (பெருபாரி) -> 1973 (கேசவானந்தா) -> 1994 (பொம்மை) -> 1995 (எல்ஐசி) துல்லியமான நீதித்துறை காலவரிசை."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 3 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 3 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "C": {
-        "en": "Incorrect. S.R. Bommai case was decided in 1994, long after Kesavananda Bharati in 1973.",
-        "ta": "தவறு. எஸ்.ஆர். பொம்மை வழக்கு 1994-ல் தீர்ப்பளிக்கப்பட்டது, இது 1973 கேசவானந்த பாரதிக்கு பல ஆண்டுகள் பிந்தையது."
+        "en": "✅ Correct.\nThe correct chronological sequence is '3 -> 1 -> 4 -> 2'.",
+        "ta": "✅ சரி.\nசரியான காலவரிசை '3 -> 1 -> 4 -> 2' ஆகும்."
       },
       "D": {
-        "en": "Incorrect. S.R. Bommai (1994) preceded LIC of India (1995).",
-        "ta": "தவறு. எஸ்.ஆர். பொம்மை (1994) எல்ஐசி வழக்குக்கு (1995) முந்தையது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 3 -> 2 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 3 -> 2 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       }
     },
     "tnpsc_tip": {
@@ -218,21 +218,21 @@
       "SR Bommai",
       "LIC Case"
     ],
-    "question_en": "Arrange the following landmark Supreme Court judgments regarding the constitutional status and interpretation of the Preamble in correct chronological order:\n1. Supreme Court rules in Berubari Union Reference that the Preamble is NOT a part of the Constitution\n2. 13-Judge Bench in Kesavananda Bharati Case declares the Preamble IS a part of the Constitution\n3. Supreme Court in S.R. Bommai Case holds Secularism in the Preamble to be an essential feature of Basic Structure\n4. Supreme Court in LIC of India Case explicitly reaffirms that the Preamble is an 'integral part' of the Constitution",
-    "question_ta": "முகவுரையின் அரசியலமைப்பு அந்தஸ்து மற்றும் விளக்கம் தொடர்பான உச்ச நீதிமன்றத்தின் வரலாற்றுச் சிறப்புமிக்க தீர்ப்புகளை சரியான காலவரிசையில் அமைக்கவும்:\n1. பெருபாரி யூனியன் வழக்கில் முகவுரை அரசியலமைப்பின் ஒரு பகுதி அல்ல என்று உச்ச நீதிமன்றம் தீர்ப்பளிக்கிறது\n2. கேசவானந்த பாரதி வழக்கில் 13 நீதிபதிகள் கொண்ட அமர்வு முகவுரை அரசியலமைப்பின் ஒரு பகுதி என்று அறிவிக்கிறது\n3. எஸ்.ஆர். பொம்மை வழக்கில் முகவுரையில் உள்ள மதச்சார்பின்மை அடிப்படை கட்டமைப்பின் இன்றியமையாத அம்சம் என உச்ச நீதிமன்றம் தீர்ப்பளிக்கிறது\n4. எல்.ஐ.சி வழக்கில் முகவுரை அரசியலமைப்பின் 'ஒருங்கிணைந்த பகுதி' என்பதை உச்ச நீதிமன்றம் மீண்டும் உறுதிப்படுத்துகிறது",
+    "question_en": "Arrange the following landmark Supreme Court judgments regarding the constitutional status and interpretation of the Preamble in correct chronological order:\n1. 13-Judge Bench in Kesavananda Bharati Case declares the Preamble IS a part of the Constitution\n2. Supreme Court in LIC of India Case explicitly reaffirms that the Preamble is an 'integral part' of the Constitution\n3. Supreme Court rules in Berubari Union Reference that the Preamble is NOT a part of the Constitution\n4. Supreme Court in S.R. Bommai Case holds Secularism in the Preamble to be an essential feature of Basic Structure",
+    "question_ta": "முகவுரையின் அரசியலமைப்பு அந்தஸ்து மற்றும் விளக்கம் தொடர்பான உச்ச நீதிமன்றத்தின் வரலாற்றுச் சிறப்புமிக்க தீர்ப்புகளை சரியான காலவரிசையில் அமைக்கவும்:\n1. கேசவானந்த பாரதி வழக்கில் 13 நீதிபதிகள் கொண்ட அமர்வு முகவுரை அரசியலமைப்பின் ஒரு பகுதி என்று அறிவிக்கிறது\n2. எல்.ஐ.சி வழக்கில் முகவுரை அரசியலமைப்பின் 'ஒருங்கிணைந்த பகுதி' என்பதை உச்ச நீதிமன்றம் மீண்டும் உறுதிப்படுத்துகிறது\n3. பெருபாரி யூனியன் வழக்கில் முகவுரை அரசியலமைப்பின் ஒரு பகுதி அல்ல என்று உச்ச நீதிமன்றம் தீர்ப்பளிக்கிறது\n4. எஸ்.ஆர். பொம்மை வழக்கில் முகவுரையில் உள்ள மதச்சார்பின்மை அடிப்படை கட்டமைப்பின் இன்றியமையாத அம்சம் என உச்ச நீதிமன்றம் தீர்ப்பளிக்கிறது",
     "options_en": [
-      "2 -> 1 -> 3 -> 4",
+      "1 -> 2 -> 4 -> 3",
       "1 -> 2 -> 3 -> 4",
-      "1 -> 3 -> 2 -> 4",
-      "1 -> 2 -> 4 -> 3"
+      "3 -> 1 -> 4 -> 2",
+      "1 -> 3 -> 2 -> 4"
     ],
     "options_ta": [
-      "2 -> 1 -> 3 -> 4",
+      "1 -> 2 -> 4 -> 3",
       "1 -> 2 -> 3 -> 4",
-      "1 -> 3 -> 2 -> 4",
-      "1 -> 2 -> 4 -> 3"
+      "3 -> 1 -> 4 -> 2",
+      "1 -> 3 -> 2 -> 4"
     ],
-    "answer": "b",
+    "answer": "c",
     "explanation_en": "Chronological Sequence: 1 (Berubari Union Reference: 1960) -> 2 (Kesavananda Bharati Case: April 24, 1973) -> 3 (S.R. Bommai Case: 1994) -> 4 (LIC of India Case: 1995).",
     "explanation_ta": "சரியான காலவரிசை: 1 (பெருபாரி யூனியன் வழக்கு: 1960) -> 2 (கேசவானந்த பாரதி வழக்கு: ஏப்ரல் 24, 1973) -> 3 (எஸ்.ஆர். பொம்மை வழக்கு: 1994) -> 4 (எல்.ஐ.சி வழக்கு: 1995)."
   },
@@ -243,8 +243,8 @@
     "difficulty": "Hard",
     "question_type": "Chronology",
     "question": {
-      "en": "Arrange the following constitutional developments concerning the amendability and text of the Preamble in correct chronological sequence:\n1. Supreme Court holds Preamble cannot be amended as it is not part of Constitution (Berubari Opinion)\n2. Supreme Court rules Preamble can be amended under Article 368 subject to Basic Structure (Kesavananda Bharati)\n3. Enactment of the 42nd Constitutional Amendment Act inserting Socialist, Secular, and Integrity into Preamble\n4. Formal enforcement date of the 42nd Constitutional Amendment Act provisions amending the Preamble",
-      "ta": "முகவுரையின் திருத்தப்படும் தன்மை மற்றும் உரை தொடர்பான பின்வரும் அரசியலமைப்பு முன்னேற்றங்களை சரியான காலவரிசையில் அமைக்கவும்:\n1. முகவுரை அரசியலமைப்பின் பகுதி அல்ல என்பதால் அதைத் திருத்த முடியாது என உச்ச நீதிமன்றம் கருதுகிறது (பெருபாரி கருத்து)\n2. அடிப்படை கட்டமைப்பிற்கு உட்பட்டு உறுப்பு 368-ன் கீழ் முகவுரையைத் திருத்த முடியும் என உச்ச நீதிமன்றம் தீர்ப்பளிக்கிறது (கேசவானந்த பாரதி)\n3. முகவுரையில் சமதர்ம, மதச்சார்பற்ற மற்றும் ஒருமைப்பாடு ஆகிய சொற்களைச் சேர்க்கும் 42வது அரசியலமைப்புத் திருத்தச் சட்டம் இயற்றப்படுதல்\n4. முகவுரையைத் திருத்திய 42வது அரசியலமைப்புத் திருத்தச் சட்ட விதிகள் முறையாக நடைமுறைக்கு வந்த நாள்"
+      "en": "Arrange the following constitutional developments concerning the amendability and text of the Preamble in correct chronological sequence:\n1. Formal enforcement date of the 42nd Constitutional Amendment Act provisions amending the Preamble\n2. Supreme Court rules Preamble can be amended under Article 368 subject to Basic Structure (Kesavananda Bharati)\n3. Supreme Court holds Preamble cannot be amended as it is not part of Constitution (Berubari Opinion)\n4. Enactment of the 42nd Constitutional Amendment Act inserting Socialist, Secular, and Integrity into Preamble",
+      "ta": "முகவுரையின் திருத்தப்படும் தன்மை மற்றும் உரை தொடர்பான பின்வரும் அரசியலமைப்பு முன்னேற்றங்களை சரியான காலவரிசையில் அமைக்கவும்:\n1. முகவுரையைத் திருத்திய 42வது அரசியலமைப்புத் திருத்தச் சட்ட விதிகள் முறையாக நடைமுறைக்கு வந்த நாள்\n2. அடிப்படை கட்டமைப்பிற்கு உட்பட்டு உறுப்பு 368-ன் கீழ் முகவுரையைத் திருத்த முடியும் என உச்ச நீதிமன்றம் தீர்ப்பளிக்கிறது (கேசவானந்த பாரதி)\n3. முகவுரை அரசியலமைப்பின் பகுதி அல்ல என்பதால் அதைத் திருத்த முடியாது என உச்ச நீதிமன்றம் கருதுகிறது (பெருபாரி கருத்து)\n4. முகவுரையில் சமதர்ம, மதச்சார்பற்ற மற்றும் ஒருமைப்பாடு ஆகிய சொற்களைச் சேர்க்கும் 42வது அரசியலமைப்புத் திருத்தச் சட்டம் இயற்றப்படுதல்"
     },
     "events": [
       {
@@ -271,18 +271,18 @@
     "options": [
       {
         "id": "A",
-        "en": "2 -> 1 -> 3 -> 4",
-        "ta": "2 -> 1 -> 3 -> 4"
+        "en": "1 -> 2 -> 3 -> 4",
+        "ta": "1 -> 2 -> 3 -> 4"
       },
       {
         "id": "B",
-        "en": "1 -> 3 -> 2 -> 4",
-        "ta": "1 -> 3 -> 2 -> 4"
+        "en": "3 -> 2 -> 4 -> 1",
+        "ta": "3 -> 2 -> 4 -> 1"
       },
       {
         "id": "C",
-        "en": "1 -> 2 -> 3 -> 4",
-        "ta": "1 -> 2 -> 3 -> 4"
+        "en": "1 -> 3 -> 2 -> 4",
+        "ta": "1 -> 3 -> 2 -> 4"
       },
       {
         "id": "D",
@@ -290,27 +290,27 @@
         "ta": "1 -> 2 -> 4 -> 3"
       }
     ],
-    "correct_answer": "C",
+    "correct_answer": "B",
     "explanation": {
       "en": "Correct Sequence: 1 (Berubari view: 1960) -> 2 (Kesavananda Bharati verdict on Art 368: 1973) -> 3 (42nd Amendment passed: 1976) -> 4 (42nd Amendment enforced: January 3, 1977).",
       "ta": "சரியான வரிசை: 1 (பெருபாரி பார்வை: 1960) -> 2 (உறுப்பு 368 மீதான கேசவானந்த பாரதி தீர்ப்பு: 1973) -> 3 (42வது திருத்தம் இயற்றப்பட்டது: 1976) -> 4 (42வது திருத்தம் அமலானது: ஜனவரி 3, 1977)."
     },
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Berubari opinion (1960) preceded Kesavananda Bharati (1973).",
-        "ta": "தவறு. பெருபாரி கருத்து (1960) கேசவானந்த பாரதிக்கு (1973) முந்தையது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 3 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 3 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "B": {
-        "en": "Incorrect. Kesavananda Bharati (1973) provided the legal basis for amending the Preamble in 1976 (3).",
-        "ta": "தவறு. கேசவானந்த பாரதி (1973) தீர்ப்பே 1976-ல் முகவுரையைத் திருத்துவதற்கான சட்ட அடிப்படையை வழங்கியது."
+        "en": "✅ Correct.\nThe correct chronological sequence is '3 -> 2 -> 4 -> 1'.",
+        "ta": "✅ சரி.\nசரியான காலவரிசை '3 -> 2 -> 4 -> 1' ஆகும்."
       },
       "C": {
-        "en": "Correct. 1 (1960) -> 2 (1973) -> 3 (Enacted 1976) -> 4 (Enforced Jan 3, 1977) follows the exact sequence.",
-        "ta": "சரி. 1 (1960) -> 2 (1973) -> 3 (இயற்றப்பட்டது 1976) -> 4 (அமலானது ஜனவரி 3, 1977) துல்லியமான வரிசையாகும்."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 3 -> 2 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 3 -> 2 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "D": {
-        "en": "Incorrect. The 42nd Amendment was passed in 1976 (3) before its enforcement on Jan 3, 1977 (4).",
-        "ta": "தவறு. 42வது திருத்தம் 1976-ல் இயற்றப்பட்டது (3), பின்னரே ஜனவரி 3, 1977-ல் அமலானது (4)."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 4 -> 3' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 4 -> 3' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       }
     },
     "tnpsc_tip": {
@@ -336,21 +336,21 @@
       "Article 368",
       "Kesavananda Bharati"
     ],
-    "question_en": "Arrange the following constitutional developments concerning the amendability and text of the Preamble in correct chronological sequence:\n1. Supreme Court holds Preamble cannot be amended as it is not part of Constitution (Berubari Opinion)\n2. Supreme Court rules Preamble can be amended under Article 368 subject to Basic Structure (Kesavananda Bharati)\n3. Enactment of the 42nd Constitutional Amendment Act inserting Socialist, Secular, and Integrity into Preamble\n4. Formal enforcement date of the 42nd Constitutional Amendment Act provisions amending the Preamble",
-    "question_ta": "முகவுரையின் திருத்தப்படும் தன்மை மற்றும் உரை தொடர்பான பின்வரும் அரசியலமைப்பு முன்னேற்றங்களை சரியான காலவரிசையில் அமைக்கவும்:\n1. முகவுரை அரசியலமைப்பின் பகுதி அல்ல என்பதால் அதைத் திருத்த முடியாது என உச்ச நீதிமன்றம் கருதுகிறது (பெருபாரி கருத்து)\n2. அடிப்படை கட்டமைப்பிற்கு உட்பட்டு உறுப்பு 368-ன் கீழ் முகவுரையைத் திருத்த முடியும் என உச்ச நீதிமன்றம் தீர்ப்பளிக்கிறது (கேசவானந்த பாரதி)\n3. முகவுரையில் சமதர்ம, மதச்சார்பற்ற மற்றும் ஒருமைப்பாடு ஆகிய சொற்களைச் சேர்க்கும் 42வது அரசியலமைப்புத் திருத்தச் சட்டம் இயற்றப்படுதல்\n4. முகவுரையைத் திருத்திய 42வது அரசியலமைப்புத் திருத்தச் சட்ட விதிகள் முறையாக நடைமுறைக்கு வந்த நாள்",
+    "question_en": "Arrange the following constitutional developments concerning the amendability and text of the Preamble in correct chronological sequence:\n1. Formal enforcement date of the 42nd Constitutional Amendment Act provisions amending the Preamble\n2. Supreme Court rules Preamble can be amended under Article 368 subject to Basic Structure (Kesavananda Bharati)\n3. Supreme Court holds Preamble cannot be amended as it is not part of Constitution (Berubari Opinion)\n4. Enactment of the 42nd Constitutional Amendment Act inserting Socialist, Secular, and Integrity into Preamble",
+    "question_ta": "முகவுரையின் திருத்தப்படும் தன்மை மற்றும் உரை தொடர்பான பின்வரும் அரசியலமைப்பு முன்னேற்றங்களை சரியான காலவரிசையில் அமைக்கவும்:\n1. முகவுரையைத் திருத்திய 42வது அரசியலமைப்புத் திருத்தச் சட்ட விதிகள் முறையாக நடைமுறைக்கு வந்த நாள்\n2. அடிப்படை கட்டமைப்பிற்கு உட்பட்டு உறுப்பு 368-ன் கீழ் முகவுரையைத் திருத்த முடியும் என உச்ச நீதிமன்றம் தீர்ப்பளிக்கிறது (கேசவானந்த பாரதி)\n3. முகவுரை அரசியலமைப்பின் பகுதி அல்ல என்பதால் அதைத் திருத்த முடியாது என உச்ச நீதிமன்றம் கருதுகிறது (பெருபாரி கருத்து)\n4. முகவுரையில் சமதர்ம, மதச்சார்பற்ற மற்றும் ஒருமைப்பாடு ஆகிய சொற்களைச் சேர்க்கும் 42வது அரசியலமைப்புத் திருத்தச் சட்டம் இயற்றப்படுதல்",
     "options_en": [
-      "2 -> 1 -> 3 -> 4",
-      "1 -> 3 -> 2 -> 4",
       "1 -> 2 -> 3 -> 4",
+      "3 -> 2 -> 4 -> 1",
+      "1 -> 3 -> 2 -> 4",
       "1 -> 2 -> 4 -> 3"
     ],
     "options_ta": [
-      "2 -> 1 -> 3 -> 4",
-      "1 -> 3 -> 2 -> 4",
       "1 -> 2 -> 3 -> 4",
+      "3 -> 2 -> 4 -> 1",
+      "1 -> 3 -> 2 -> 4",
       "1 -> 2 -> 4 -> 3"
     ],
-    "answer": "c",
+    "answer": "b",
     "explanation_en": "Correct Sequence: 1 (Berubari view: 1960) -> 2 (Kesavananda Bharati verdict on Art 368: 1973) -> 3 (42nd Amendment passed: 1976) -> 4 (42nd Amendment enforced: January 3, 1977).",
     "explanation_ta": "சரியான வரிசை: 1 (பெருபாரி பார்வை: 1960) -> 2 (உறுப்பு 368 மீதான கேசவானந்த பாரதி தீர்ப்பு: 1973) -> 3 (42வது திருத்தம் இயற்றப்பட்டது: 1976) -> 4 (42வது திருத்தம் அமலானது: ஜனவரி 3, 1977)."
   },
@@ -361,8 +361,8 @@
     "difficulty": "Hard",
     "question_type": "Chronology",
     "question": {
-      "en": "Arrange the following key terms defining the 'Nature of the Indian State' in the exact textual sequence as they appear in the Preamble:\n1. Sovereign\n2. Socialist\n3. Secular\n4. Democratic",
-      "ta": "முகவுரையில் இடம்பெற்றுள்ளவாறு 'இந்திய அரசின் தன்மையை' வரையறுக்கும் பின்வரும் முக்கிய சொற்களை சரியான உரை வரிசையில் அமைக்கவும்:\n1. இறையாண்மை (Sovereign)\n2. சமதர்ம (Socialist)\n3. மதச்சார்பற்ற (Secular)\n4. ஜனநாயக (Democratic)"
+      "en": "Arrange the following key terms defining the 'Nature of the Indian State' in the exact textual sequence as they appear in the Preamble:\n1. Secular\n2. Democratic\n3. Sovereign\n4. Socialist",
+      "ta": "முகவுரையில் இடம்பெற்றுள்ளவாறு 'இந்திய அரசின் தன்மையை' வரையறுக்கும் பின்வரும் முக்கிய சொற்களை சரியான உரை வரிசையில் அமைக்கவும்:\n1. மதச்சார்பற்ற (Secular)\n2. ஜனநாயக (Democratic)\n3. இறையாண்மை (Sovereign)\n4. சமதர்ம (Socialist)"
     },
     "events": [
       {
@@ -389,46 +389,46 @@
     "options": [
       {
         "id": "A",
-        "en": "1 -> 3 -> 2 -> 4",
-        "ta": "1 -> 3 -> 2 -> 4"
+        "en": "1 -> 2 -> 3 -> 4",
+        "ta": "1 -> 2 -> 3 -> 4"
       },
       {
         "id": "B",
-        "en": "2 -> 3 -> 1 -> 4",
-        "ta": "2 -> 3 -> 1 -> 4"
+        "en": "3 -> 4 -> 1 -> 2",
+        "ta": "3 -> 4 -> 1 -> 2"
       },
       {
         "id": "C",
-        "en": "1 -> 4 -> 2 -> 3",
-        "ta": "1 -> 4 -> 2 -> 3"
+        "en": "1 -> 2 -> 4 -> 3",
+        "ta": "1 -> 2 -> 4 -> 3"
       },
       {
         "id": "D",
-        "en": "1 -> 2 -> 3 -> 4",
-        "ta": "1 -> 2 -> 3 -> 4"
+        "en": "1 -> 3 -> 2 -> 4",
+        "ta": "1 -> 3 -> 2 -> 4"
       }
     ],
-    "correct_answer": "D",
+    "correct_answer": "B",
     "explanation": {
       "en": "Textual Sequence in Preamble: 'SOVEREIGN SOCIALIST SECULAR DEMOCRATIC REPUBLIC' (S-S-S-D-R). Hence, 1 (Sovereign) -> 2 (Socialist) -> 3 (Secular) -> 4 (Democratic).",
       "ta": "முகவுரையின் உரை வரிசை: 'இறையாண்மை சமதர்ம மதச்சார்பற்ற ஜனநாயக குடியரசு' (S-S-S-D-R). எனவே, 1 (இறையாண்மை) -> 2 (சமதர்ம) -> 3 (மதச்சார்பற்ற) -> 4 (ஜனநாயக)."
     },
     "why_not_others": {
       "A": {
-        "en": "Incorrect. 'Socialist' appears before 'Secular' in the Preamble text.",
-        "ta": "தவறு. முகவுரையில் 'சமதர்ம' என்பது 'மதச்சார்பற்ற' என்பதற்கு முன்பாக வருகிறது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 3 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 3 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "B": {
-        "en": "Incorrect. 'Sovereign' is the very first adjective declaring India's status.",
-        "ta": "தவறு. 'இறையாண்மை' என்பதே இந்தியாவின் நிலையை அறிவிக்கும் முதல் சொல்லாகும்."
+        "en": "✅ Correct.\nThe correct chronological sequence is '3 -> 4 -> 1 -> 2'.",
+        "ta": "✅ சரி.\nசரியான காலவரிசை '3 -> 4 -> 1 -> 2' ஆகும்."
       },
       "C": {
-        "en": "Incorrect. 'Democratic' appears after Socialist and Secular in the amended text.",
-        "ta": "தவறு. திருத்தப்பட்ட உரையில் 'ஜனநாயக' என்பது சமதர்ம மற்றும் மதச்சார்பற்ற சொற்களுக்குப் பின்னரே வருகிறது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 4 -> 3' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 4 -> 3' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "D": {
-        "en": "Correct. 1 (Sovereign) -> 2 (Socialist) -> 3 (Secular) -> 4 (Democratic) -> followed by Republic represents the exact textual sequence.",
-        "ta": "சரி. 1 (இறையாண்மை) -> 2 (சமதர்ம) -> 3 (மதச்சார்பற்ற) -> 4 (ஜனநாயக) -> குடியரசு என்பது துல்லியமான உரை வரிசையாகும்."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 3 -> 2 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 3 -> 2 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       }
     },
     "tnpsc_tip": {
@@ -454,21 +454,21 @@
       "Sequence",
       "Textual Order"
     ],
-    "question_en": "Arrange the following key terms defining the 'Nature of the Indian State' in the exact textual sequence as they appear in the Preamble:\n1. Sovereign\n2. Socialist\n3. Secular\n4. Democratic",
-    "question_ta": "முகவுரையில் இடம்பெற்றுள்ளவாறு 'இந்திய அரசின் தன்மையை' வரையறுக்கும் பின்வரும் முக்கிய சொற்களை சரியான உரை வரிசையில் அமைக்கவும்:\n1. இறையாண்மை (Sovereign)\n2. சமதர்ம (Socialist)\n3. மதச்சார்பற்ற (Secular)\n4. ஜனநாயக (Democratic)",
+    "question_en": "Arrange the following key terms defining the 'Nature of the Indian State' in the exact textual sequence as they appear in the Preamble:\n1. Secular\n2. Democratic\n3. Sovereign\n4. Socialist",
+    "question_ta": "முகவுரையில் இடம்பெற்றுள்ளவாறு 'இந்திய அரசின் தன்மையை' வரையறுக்கும் பின்வரும் முக்கிய சொற்களை சரியான உரை வரிசையில் அமைக்கவும்:\n1. மதச்சார்பற்ற (Secular)\n2. ஜனநாயக (Democratic)\n3. இறையாண்மை (Sovereign)\n4. சமதர்ம (Socialist)",
     "options_en": [
-      "1 -> 3 -> 2 -> 4",
-      "2 -> 3 -> 1 -> 4",
-      "1 -> 4 -> 2 -> 3",
-      "1 -> 2 -> 3 -> 4"
+      "1 -> 2 -> 3 -> 4",
+      "3 -> 4 -> 1 -> 2",
+      "1 -> 2 -> 4 -> 3",
+      "1 -> 3 -> 2 -> 4"
     ],
     "options_ta": [
-      "1 -> 3 -> 2 -> 4",
-      "2 -> 3 -> 1 -> 4",
-      "1 -> 4 -> 2 -> 3",
-      "1 -> 2 -> 3 -> 4"
+      "1 -> 2 -> 3 -> 4",
+      "3 -> 4 -> 1 -> 2",
+      "1 -> 2 -> 4 -> 3",
+      "1 -> 3 -> 2 -> 4"
     ],
-    "answer": "d",
+    "answer": "b",
     "explanation_en": "Textual Sequence in Preamble: 'SOVEREIGN SOCIALIST SECULAR DEMOCRATIC REPUBLIC' (S-S-S-D-R). Hence, 1 (Sovereign) -> 2 (Socialist) -> 3 (Secular) -> 4 (Democratic).",
     "explanation_ta": "முகவுரையின் உரை வரிசை: 'இறையாண்மை சமதர்ம மதச்சார்பற்ற ஜனநாயக குடியரசு' (S-S-S-D-R). எனவே, 1 (இறையாண்மை) -> 2 (சமதர்ம) -> 3 (மதச்சார்பற்ற) -> 4 (ஜனநாயக)."
   },
@@ -479,8 +479,8 @@
     "difficulty": "Hard",
     "question_type": "Chronology",
     "question": {
-      "en": "Arrange the following four fundamental 'Objectives of the Constitution' in the exact sequential order as stated in the Preamble:\n1. JUSTICE (Social, Economic, and Political)\n2. LIBERTY (of thought, expression, belief, faith, and worship)\n3. EQUALITY (of status and of opportunity)\n4. FRATERNITY (assuring the dignity of the individual and unity & integrity of the Nation)",
-      "ta": "முகவுரையில் குறிப்பிடப்பட்டுள்ள 'அரசியலமைப்பின் நான்கு அடிப்படை இலக்குகளை' சரியான உரை வரிசையில் அமைக்கவும்:\n1. நீதி (சமூக, பொருளாதார மற்றும் அரசியல்)\n2. சுதந்திரம் (சிந்தனை, வெளிப்பாடு, நம்பிக்கை, சமயம் மற்றும் வழிபாடு)\n3. சமத்துவம் (தகுதி மற்றும் வாய்ப்பு)\n4. சகோதரத்துவம் (தனிமனித கண்ணியம் மற்றும் தேசத்தின் ஒற்றுமை, ஒருமைப்பாடு)"
+      "en": "Arrange the following four fundamental 'Objectives of the Constitution' in the exact sequential order as stated in the Preamble:\n1. LIBERTY (of thought, expression, belief, faith, and worship)\n2. EQUALITY (of status and of opportunity)\n3. FRATERNITY (assuring the dignity of the individual and unity & integrity of the Nation)\n4. JUSTICE (Social, Economic, and Political)",
+      "ta": "முகவுரையில் குறிப்பிடப்பட்டுள்ள 'அரசியலமைப்பின் நான்கு அடிப்படை இலக்குகளை' சரியான உரை வரிசையில் அமைக்கவும்:\n1. சுதந்திரம் (சிந்தனை, வெளிப்பாடு, நம்பிக்கை, சமயம் மற்றும் வழிபாடு)\n2. சமத்துவம் (தகுதி மற்றும் வாய்ப்பு)\n3. சகோதரத்துவம் (தனிமனித கண்ணியம் மற்றும் தேசத்தின் ஒற்றுமை, ஒருமைப்பாடு)\n4. நீதி (சமூக, பொருளாதார மற்றும் அரசியல்)"
     },
     "events": [
       {
@@ -512,41 +512,41 @@
       },
       {
         "id": "B",
-        "en": "2 -> 1 -> 3 -> 4",
-        "ta": "2 -> 1 -> 3 -> 4"
-      },
-      {
-        "id": "C",
         "en": "1 -> 3 -> 2 -> 4",
         "ta": "1 -> 3 -> 2 -> 4"
       },
       {
+        "id": "C",
+        "en": "1 -> 2 -> 4 -> 3",
+        "ta": "1 -> 2 -> 4 -> 3"
+      },
+      {
         "id": "D",
-        "en": "3 -> 1 -> 2 -> 4",
-        "ta": "3 -> 1 -> 2 -> 4"
+        "en": "4 -> 1 -> 2 -> 3",
+        "ta": "4 -> 1 -> 2 -> 3"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "D",
     "explanation": {
-      "en": "Textual Sequence of Objectives: JUSTICE -> LIBERTY -> EQUALITY -> FRATERNITY (J-L-E-F). Hence, 1 -> 2 -> 3 -> 4 is the exact sequence.",
-      "ta": "இலக்குகளின் உரை வரிசை: நீதி -> சுதந்திரம் -> சமத்துவம் -> சகோதரத்துவம் (J-L-E-F). எனவே, 1 -> 2 -> 3 -> 4 என்பது சரியான வரிசையாகும்."
+      "en": "Textual Sequence of Objectives: JUSTICE -> LIBERTY -> EQUALITY -> FRATERNITY (J-L-E-F). Hence, 4 -> 4 -> 1 -> 2 -> 3 is the exact sequence.",
+      "ta": "இலக்குகளின் உரை வரிசை: நீதி -> சுதந்திரம் -> சமத்துவம் -> சகோதரத்துவம் (J-L-E-F). எனவே, 4 -> 4 -> 1 -> 2 -> 3 என்பது சரியான வரிசையாகும்."
     },
     "why_not_others": {
       "A": {
-        "en": "Correct. J-L-E-F (Justice -> Liberty -> Equality -> Fraternity) exactly mirrors the constitutional text.",
-        "ta": "சரி. J-L-E-F (நீதி -> சுதந்திரம் -> சமத்துவம் -> சகோதரத்துவம்) அரசியலமைப்பு உரையைத் துல்லியமாகப் பிரதிபலிக்கிறது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 3 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 3 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "B": {
-        "en": "Incorrect. Justice precedes Liberty in the Preamble.",
-        "ta": "தவறு. முகவுரையில் சுதந்திரத்திற்கு முன்பாக நீதி வருகிறது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 3 -> 2 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 3 -> 2 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "C": {
-        "en": "Incorrect. Liberty precedes Equality in the Preamble.",
-        "ta": "தவறு. முகவுரையில் சமத்துவத்திற்கு முன்பாக சுதந்திரம் வருகிறது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 4 -> 3' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 4 -> 3' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "D": {
-        "en": "Incorrect. Equality is not the first objective; Justice is the first.",
-        "ta": "தவறு. சமத்துவம் முதல் இலக்கல்ல; நீதியே முதல் இலக்காகும்."
+        "en": "✅ Correct.\nThe correct chronological sequence is '4 -> 1 -> 2 -> 3'.",
+        "ta": "✅ சரி.\nசரியான காலவரிசை '4 -> 1 -> 2 -> 3' ஆகும்."
       }
     },
     "tnpsc_tip": {
@@ -572,23 +572,23 @@
       "Sequence",
       "Justice Liberty Equality Fraternity"
     ],
-    "question_en": "Arrange the following four fundamental 'Objectives of the Constitution' in the exact sequential order as stated in the Preamble:\n1. JUSTICE (Social, Economic, and Political)\n2. LIBERTY (of thought, expression, belief, faith, and worship)\n3. EQUALITY (of status and of opportunity)\n4. FRATERNITY (assuring the dignity of the individual and unity & integrity of the Nation)",
-    "question_ta": "முகவுரையில் குறிப்பிடப்பட்டுள்ள 'அரசியலமைப்பின் நான்கு அடிப்படை இலக்குகளை' சரியான உரை வரிசையில் அமைக்கவும்:\n1. நீதி (சமூக, பொருளாதார மற்றும் அரசியல்)\n2. சுதந்திரம் (சிந்தனை, வெளிப்பாடு, நம்பிக்கை, சமயம் மற்றும் வழிபாடு)\n3. சமத்துவம் (தகுதி மற்றும் வாய்ப்பு)\n4. சகோதரத்துவம் (தனிமனித கண்ணியம் மற்றும் தேசத்தின் ஒற்றுமை, ஒருமைப்பாடு)",
+    "question_en": "Arrange the following four fundamental 'Objectives of the Constitution' in the exact sequential order as stated in the Preamble:\n1. LIBERTY (of thought, expression, belief, faith, and worship)\n2. EQUALITY (of status and of opportunity)\n3. FRATERNITY (assuring the dignity of the individual and unity & integrity of the Nation)\n4. JUSTICE (Social, Economic, and Political)",
+    "question_ta": "முகவுரையில் குறிப்பிடப்பட்டுள்ள 'அரசியலமைப்பின் நான்கு அடிப்படை இலக்குகளை' சரியான உரை வரிசையில் அமைக்கவும்:\n1. சுதந்திரம் (சிந்தனை, வெளிப்பாடு, நம்பிக்கை, சமயம் மற்றும் வழிபாடு)\n2. சமத்துவம் (தகுதி மற்றும் வாய்ப்பு)\n3. சகோதரத்துவம் (தனிமனித கண்ணியம் மற்றும் தேசத்தின் ஒற்றுமை, ஒருமைப்பாடு)\n4. நீதி (சமூக, பொருளாதார மற்றும் அரசியல்)",
     "options_en": [
       "1 -> 2 -> 3 -> 4",
-      "2 -> 1 -> 3 -> 4",
       "1 -> 3 -> 2 -> 4",
-      "3 -> 1 -> 2 -> 4"
+      "1 -> 2 -> 4 -> 3",
+      "4 -> 1 -> 2 -> 3"
     ],
     "options_ta": [
       "1 -> 2 -> 3 -> 4",
-      "2 -> 1 -> 3 -> 4",
       "1 -> 3 -> 2 -> 4",
-      "3 -> 1 -> 2 -> 4"
+      "1 -> 2 -> 4 -> 3",
+      "4 -> 1 -> 2 -> 3"
     ],
-    "answer": "a",
-    "explanation_en": "Textual Sequence of Objectives: JUSTICE -> LIBERTY -> EQUALITY -> FRATERNITY (J-L-E-F). Hence, 1 -> 2 -> 3 -> 4 is the exact sequence.",
-    "explanation_ta": "இலக்குகளின் உரை வரிசை: நீதி -> சுதந்திரம் -> சமத்துவம் -> சகோதரத்துவம் (J-L-E-F). எனவே, 1 -> 2 -> 3 -> 4 என்பது சரியான வரிசையாகும்."
+    "answer": "d",
+    "explanation_en": "Textual Sequence of Objectives: JUSTICE -> LIBERTY -> EQUALITY -> FRATERNITY (J-L-E-F). Hence, 4 -> 4 -> 1 -> 2 -> 3 is the exact sequence.",
+    "explanation_ta": "இலக்குகளின் உரை வரிசை: நீதி -> சுதந்திரம் -> சமத்துவம் -> சகோதரத்துவம் (J-L-E-F). எனவே, 4 -> 4 -> 1 -> 2 -> 3 என்பது சரியான வரிசையாகும்."
   },
   {
     "id": "PRE_CHRONO_006",
@@ -597,8 +597,8 @@
     "difficulty": "Hard",
     "question_type": "Chronology",
     "question": {
-      "en": "Arrange the following landmark Supreme Court judgments that shaped the judicial interpretation of Preamble ideals in correct chronological order:\n1. Kesavananda Bharati Case (Derives Basic Structure Doctrine using Preamble philosophy)\n2. Maneka Gandhi Case (Uses Preamble ideals of Liberty and Justice to expand Article 21)\n3. Minerva Mills Case (Affirms harmony between Fundamental Rights and DPSP as Basic Structure to achieve Preamble goals)\n4. S.R. Bommai Case (Declares Secularism in the Preamble as part of the Basic Structure)",
-      "ta": "முகவுரைக் கோட்பாடுகளின் நீதித்துறை விளக்கத்தை வடிவமைத்த உச்ச நீதிமன்றத்தின் வரலாற்றுச் சிறப்புமிக்க தீர்ப்புகளை சரியான காலவரிசையில் அமைக்கவும்:\n1. கேசவானந்த பாரதி வழக்கு (முகவுரை தத்துவத்தைப் பயன்படுத்தி அடிப்படை கட்டமைப்புக் கோட்பாட்டை உருவாக்குகிறது)\n2. மேனகா காந்தி வழக்கு (சுதந்திரம் மற்றும் நீதி என்ற முகவுரை இலக்குகளைப் பயன்படுத்தி உறுப்பு 21-ஐ விரிவுபடுத்துகிறது)\n3. மினர்வா மில்ஸ் வழக்கு (முகவுரை இலக்குகளை அடைய அடிப்படை உரிமைகள் மற்றும் DPSP இடையேயான சமநிலையே அடிப்படை கட்டமைப்பு என உறுதிப்படுத்துகிறது)\n4. எஸ்.ஆர். பொம்மை வழக்கு (முகவுரையில் உள்ள மதச்சார்பின்மை அடிப்படை கட்டமைப்பின் ஒரு பகுதி என அறிவிக்கிறது)"
+      "en": "Arrange the following landmark Supreme Court judgments that shaped the judicial interpretation of Preamble ideals in correct chronological order:\n1. S.R. Bommai Case (Declares Secularism in the Preamble as part of the Basic Structure)\n2. Kesavananda Bharati Case (Derives Basic Structure Doctrine using Preamble philosophy)\n3. Maneka Gandhi Case (Uses Preamble ideals of Liberty and Justice to expand Article 21)\n4. Minerva Mills Case (Affirms harmony between Fundamental Rights and DPSP as Basic Structure to achieve Preamble goals)",
+      "ta": "முகவுரைக் கோட்பாடுகளின் நீதித்துறை விளக்கத்தை வடிவமைத்த உச்ச நீதிமன்றத்தின் வரலாற்றுச் சிறப்புமிக்க தீர்ப்புகளை சரியான காலவரிசையில் அமைக்கவும்:\n1. எஸ்.ஆர். பொம்மை வழக்கு (முகவுரையில் உள்ள மதச்சார்பின்மை அடிப்படை கட்டமைப்பின் ஒரு பகுதி என அறிவிக்கிறது)\n2. கேசவானந்த பாரதி வழக்கு (முகவுரை தத்துவத்தைப் பயன்படுத்தி அடிப்படை கட்டமைப்புக் கோட்பாட்டை உருவாக்குகிறது)\n3. மேனகா காந்தி வழக்கு (சுதந்திரம் மற்றும் நீதி என்ற முகவுரை இலக்குகளைப் பயன்படுத்தி உறுப்பு 21-ஐ விரிவுபடுத்துகிறது)\n4. மினர்வா மில்ஸ் வழக்கு (முகவுரை இலக்குகளை அடைய அடிப்படை உரிமைகள் மற்றும் DPSP இடையேயான சமநிலையே அடிப்படை கட்டமைப்பு என உறுதிப்படுத்துகிறது)"
     },
     "events": [
       {
@@ -625,8 +625,8 @@
     "options": [
       {
         "id": "A",
-        "en": "2 -> 1 -> 3 -> 4",
-        "ta": "2 -> 1 -> 3 -> 4"
+        "en": "2 -> 3 -> 4 -> 1",
+        "ta": "2 -> 3 -> 4 -> 1"
       },
       {
         "id": "B",
@@ -635,36 +635,36 @@
       },
       {
         "id": "C",
-        "en": "1 -> 3 -> 2 -> 4",
-        "ta": "1 -> 3 -> 2 -> 4"
+        "en": "1 -> 2 -> 4 -> 3",
+        "ta": "1 -> 2 -> 4 -> 3"
       },
       {
         "id": "D",
-        "en": "1 -> 2 -> 4 -> 3",
-        "ta": "1 -> 2 -> 4 -> 3"
+        "en": "1 -> 3 -> 2 -> 4",
+        "ta": "1 -> 3 -> 2 -> 4"
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "A",
     "explanation": {
       "en": "Correct Chronological Order: 1 (Kesavananda Bharati: 1973) -> 2 (Maneka Gandhi: 1978) -> 3 (Minerva Mills: 1980) -> 4 (S.R. Bommai: 1994).",
       "ta": "சரியான காலவரிசை: 1 (கேசவானந்த பாரதி: 1973) -> 2 (மேனகா காந்தி: 1978) -> 3 (மினர்வா மில்ஸ்: 1980) -> 4 (எஸ்.ஆர். பொம்மை: 1994)."
     },
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Kesavananda Bharati (1973) preceded Maneka Gandhi (1978).",
-        "ta": "தவறு. கேசவானந்த பாரதி (1973) மேனகா காந்திக்கு (1978) முந்தையது."
+        "en": "✅ Correct.\nThe correct chronological sequence is '2 -> 3 -> 4 -> 1'.",
+        "ta": "✅ சரி.\nசரியான காலவரிசை '2 -> 3 -> 4 -> 1' ஆகும்."
       },
       "B": {
-        "en": "Correct. 1973 -> 1978 -> 1980 -> 1994 accurately traces the jurisprudence.",
-        "ta": "சரி. 1973 -> 1978 -> 1980 -> 1994 வழக்கியல் காலவரிசையைத் துல்லியமாகப் பின்பற்றுகிறது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 3 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 3 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "C": {
-        "en": "Incorrect. Maneka Gandhi (1978) was decided before Minerva Mills (1980).",
-        "ta": "தவறு. மேனகா காந்தி (1978) மினர்வா மில்ஸுக்கு (1980) முன்பாகத் தீர்ப்பளிக்கப்பட்டது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 4 -> 3' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 4 -> 3' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "D": {
-        "en": "Incorrect. Minerva Mills was decided in 1980, before S.R. Bommai in 1994.",
-        "ta": "தவறு. மினர்வா மில்ஸ் 1980-ல் தீர்ப்பளிக்கப்பட்டது, இது 1994 எஸ்.ஆர். பொம்மைக்கு முந்தையது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 3 -> 2 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 3 -> 2 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       }
     },
     "tnpsc_tip": {
@@ -690,21 +690,21 @@
       "Basic Structure",
       "Case Chronology"
     ],
-    "question_en": "Arrange the following landmark Supreme Court judgments that shaped the judicial interpretation of Preamble ideals in correct chronological order:\n1. Kesavananda Bharati Case (Derives Basic Structure Doctrine using Preamble philosophy)\n2. Maneka Gandhi Case (Uses Preamble ideals of Liberty and Justice to expand Article 21)\n3. Minerva Mills Case (Affirms harmony between Fundamental Rights and DPSP as Basic Structure to achieve Preamble goals)\n4. S.R. Bommai Case (Declares Secularism in the Preamble as part of the Basic Structure)",
-    "question_ta": "முகவுரைக் கோட்பாடுகளின் நீதித்துறை விளக்கத்தை வடிவமைத்த உச்ச நீதிமன்றத்தின் வரலாற்றுச் சிறப்புமிக்க தீர்ப்புகளை சரியான காலவரிசையில் அமைக்கவும்:\n1. கேசவானந்த பாரதி வழக்கு (முகவுரை தத்துவத்தைப் பயன்படுத்தி அடிப்படை கட்டமைப்புக் கோட்பாட்டை உருவாக்குகிறது)\n2. மேனகா காந்தி வழக்கு (சுதந்திரம் மற்றும் நீதி என்ற முகவுரை இலக்குகளைப் பயன்படுத்தி உறுப்பு 21-ஐ விரிவுபடுத்துகிறது)\n3. மினர்வா மில்ஸ் வழக்கு (முகவுரை இலக்குகளை அடைய அடிப்படை உரிமைகள் மற்றும் DPSP இடையேயான சமநிலையே அடிப்படை கட்டமைப்பு என உறுதிப்படுத்துகிறது)\n4. எஸ்.ஆர். பொம்மை வழக்கு (முகவுரையில் உள்ள மதச்சார்பின்மை அடிப்படை கட்டமைப்பின் ஒரு பகுதி என அறிவிக்கிறது)",
+    "question_en": "Arrange the following landmark Supreme Court judgments that shaped the judicial interpretation of Preamble ideals in correct chronological order:\n1. S.R. Bommai Case (Declares Secularism in the Preamble as part of the Basic Structure)\n2. Kesavananda Bharati Case (Derives Basic Structure Doctrine using Preamble philosophy)\n3. Maneka Gandhi Case (Uses Preamble ideals of Liberty and Justice to expand Article 21)\n4. Minerva Mills Case (Affirms harmony between Fundamental Rights and DPSP as Basic Structure to achieve Preamble goals)",
+    "question_ta": "முகவுரைக் கோட்பாடுகளின் நீதித்துறை விளக்கத்தை வடிவமைத்த உச்ச நீதிமன்றத்தின் வரலாற்றுச் சிறப்புமிக்க தீர்ப்புகளை சரியான காலவரிசையில் அமைக்கவும்:\n1. எஸ்.ஆர். பொம்மை வழக்கு (முகவுரையில் உள்ள மதச்சார்பின்மை அடிப்படை கட்டமைப்பின் ஒரு பகுதி என அறிவிக்கிறது)\n2. கேசவானந்த பாரதி வழக்கு (முகவுரை தத்துவத்தைப் பயன்படுத்தி அடிப்படை கட்டமைப்புக் கோட்பாட்டை உருவாக்குகிறது)\n3. மேனகா காந்தி வழக்கு (சுதந்திரம் மற்றும் நீதி என்ற முகவுரை இலக்குகளைப் பயன்படுத்தி உறுப்பு 21-ஐ விரிவுபடுத்துகிறது)\n4. மினர்வா மில்ஸ் வழக்கு (முகவுரை இலக்குகளை அடைய அடிப்படை உரிமைகள் மற்றும் DPSP இடையேயான சமநிலையே அடிப்படை கட்டமைப்பு என உறுதிப்படுத்துகிறது)",
     "options_en": [
-      "2 -> 1 -> 3 -> 4",
+      "2 -> 3 -> 4 -> 1",
       "1 -> 2 -> 3 -> 4",
-      "1 -> 3 -> 2 -> 4",
-      "1 -> 2 -> 4 -> 3"
+      "1 -> 2 -> 4 -> 3",
+      "1 -> 3 -> 2 -> 4"
     ],
     "options_ta": [
-      "2 -> 1 -> 3 -> 4",
+      "2 -> 3 -> 4 -> 1",
       "1 -> 2 -> 3 -> 4",
-      "1 -> 3 -> 2 -> 4",
-      "1 -> 2 -> 4 -> 3"
+      "1 -> 2 -> 4 -> 3",
+      "1 -> 3 -> 2 -> 4"
     ],
-    "answer": "b",
+    "answer": "a",
     "explanation_en": "Correct Chronological Order: 1 (Kesavananda Bharati: 1973) -> 2 (Maneka Gandhi: 1978) -> 3 (Minerva Mills: 1980) -> 4 (S.R. Bommai: 1994).",
     "explanation_ta": "சரியான காலவரிசை: 1 (கேசவானந்த பாரதி: 1973) -> 2 (மேனகா காந்தி: 1978) -> 3 (மினர்வா மில்ஸ்: 1980) -> 4 (எஸ்.ஆர். பொம்மை: 1994)."
   },
@@ -715,8 +715,8 @@
     "difficulty": "Hard",
     "question_type": "Chronology",
     "question": {
-      "en": "Arrange the following Preamble-related judicial and constitutional milestones in reverse chronological order (from LATEST to EARLIEST):\n1. LIC of India Case reaffirming Preamble as an integral part of the Constitution\n2. S.R. Bommai Case establishing Secularism in Preamble as Basic Structure\n3. Enactment of 42nd Constitutional Amendment Act inserting Socialist, Secular, Integrity\n4. Berubari Union Case holding Preamble is NOT part of the Constitution",
-      "ta": "முகவுரை தொடர்பான பின்வரும் நீதித்துறை மற்றும் அரசியலமைப்பு மைல்கற்களை தலைகீழ் காலவரிசையில் (மிகப் பிந்தையதிலிருந்து மிக முந்தையது வரை) அமைக்கவும்:\n1. எல்.ஐ.சி வழக்கில் முகவுரை அரசியலமைப்பின் ஒரு ஒருங்கிணைந்த பகுதி என மீண்டும் உறுதிப்படுத்தப்படுதல்\n2. எஸ்.ஆர். பொம்மை வழக்கில் முகவுரையில் உள்ள மதச்சார்பின்மை அடிப்படை கட்டமைப்பு என நிறுவப்படுதல்\n3. சமதர்ம, மதச்சார்பற்ற, ஒருமைப்பாடு ஆகியவற்றைச் சேர்க்கும் 42வது அரசியலமைப்புத் திருத்தச் சட்டம் இயற்றப்படுதல்\n4. பெருபாரி யூனியன் வழக்கில் முகவுரை அரசியலமைப்பின் பகுதி அல்ல எனத் தீர்ப்பளிக்கப்படுதல்"
+      "en": "Arrange the following Preamble-related judicial and constitutional milestones in reverse chronological order (from LATEST to EARLIEST):\n1. Enactment of 42nd Constitutional Amendment Act inserting Socialist, Secular, Integrity\n2. S.R. Bommai Case establishing Secularism in Preamble as Basic Structure\n3. Berubari Union Case holding Preamble is NOT part of the Constitution\n4. LIC of India Case reaffirming Preamble as an integral part of the Constitution",
+      "ta": "முகவுரை தொடர்பான பின்வரும் நீதித்துறை மற்றும் அரசியலமைப்பு மைல்கற்களை தலைகீழ் காலவரிசையில் (மிகப் பிந்தையதிலிருந்து மிக முந்தையது வரை) அமைக்கவும்:\n1. சமதர்ம, மதச்சார்பற்ற, ஒருமைப்பாடு ஆகியவற்றைச் சேர்க்கும் 42வது அரசியலமைப்புத் திருத்தச் சட்டம் இயற்றப்படுதல்\n2. எஸ்.ஆர். பொம்மை வழக்கில் முகவுரையில் உள்ள மதச்சார்பின்மை அடிப்படை கட்டமைப்பு என நிறுவப்படுதல்\n3. பெருபாரி யூனியன் வழக்கில் முகவுரை அரசியலமைப்பின் பகுதி அல்ல எனத் தீர்ப்பளிக்கப்படுதல்\n4. எல்.ஐ.சி வழக்கில் முகவுரை அரசியலமைப்பின் ஒரு ஒருங்கிணைந்த பகுதி என மீண்டும் உறுதிப்படுத்தப்படுதல்"
     },
     "events": [
       {
@@ -743,23 +743,23 @@
     "options": [
       {
         "id": "A",
-        "en": "4 -> 3 -> 2 -> 1",
-        "ta": "4 -> 3 -> 2 -> 1"
-      },
-      {
-        "id": "B",
-        "en": "1 -> 3 -> 2 -> 4",
-        "ta": "1 -> 3 -> 2 -> 4"
-      },
-      {
-        "id": "C",
         "en": "1 -> 2 -> 3 -> 4",
         "ta": "1 -> 2 -> 3 -> 4"
       },
       {
+        "id": "B",
+        "en": "1 -> 2 -> 4 -> 3",
+        "ta": "1 -> 2 -> 4 -> 3"
+      },
+      {
+        "id": "C",
+        "en": "4 -> 2 -> 1 -> 3",
+        "ta": "4 -> 2 -> 1 -> 3"
+      },
+      {
         "id": "D",
-        "en": "2 -> 1 -> 3 -> 4",
-        "ta": "2 -> 1 -> 3 -> 4"
+        "en": "1 -> 3 -> 2 -> 4",
+        "ta": "1 -> 3 -> 2 -> 4"
       }
     ],
     "correct_answer": "C",
@@ -769,20 +769,20 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Incorrect. 4 -> 3 -> 2 -> 1 is earliest to latest, but the question specifically asks for latest to earliest.",
-        "ta": "தவறு. 4 -> 3 -> 2 -> 1 என்பது முந்தையதிலிருந்து பிந்தையது; ஆனால் வினா பிந்தையதிலிருந்து முந்தையதைக் கேட்கிறது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 3 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 3 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "B": {
-        "en": "Incorrect. S.R. Bommai (1994) occurred after the 42nd Amendment (1976).",
-        "ta": "தவறு. எஸ்.ஆர். பொம்மை (1994) 42வது திருத்தத்திற்கு (1976) பின்னரே நடந்தது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 4 -> 3' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 4 -> 3' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "C": {
-        "en": "Correct. 1 (1995) -> 2 (1994) -> 3 (1976) -> 4 (1960) accurately arranges events from latest to earliest.",
-        "ta": "சரி. 1 (1995) -> 2 (1994) -> 3 (1976) -> 4 (1960) நிகழ்வுகளைப் பிந்தையதிலிருந்து முந்தையதாகத் துல்லியமாக அமைக்கிறது."
+        "en": "✅ Correct.\nThe correct chronological sequence is '4 -> 2 -> 1 -> 3'.",
+        "ta": "✅ சரி.\nசரியான காலவரிசை '4 -> 2 -> 1 -> 3' ஆகும்."
       },
       "D": {
-        "en": "Incorrect. LIC of India (1995) is more recent than S.R. Bommai (1994).",
-        "ta": "தவறு. எல்ஐசி வழக்கு (1995) எஸ்.ஆர். பொம்மையை (1994) விட பிந்தையது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 3 -> 2 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 3 -> 2 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       }
     },
     "tnpsc_tip": {
@@ -807,19 +807,19 @@
       "Latest to Earliest",
       "Milestones"
     ],
-    "question_en": "Arrange the following Preamble-related judicial and constitutional milestones in reverse chronological order (from LATEST to EARLIEST):\n1. LIC of India Case reaffirming Preamble as an integral part of the Constitution\n2. S.R. Bommai Case establishing Secularism in Preamble as Basic Structure\n3. Enactment of 42nd Constitutional Amendment Act inserting Socialist, Secular, Integrity\n4. Berubari Union Case holding Preamble is NOT part of the Constitution",
-    "question_ta": "முகவுரை தொடர்பான பின்வரும் நீதித்துறை மற்றும் அரசியலமைப்பு மைல்கற்களை தலைகீழ் காலவரிசையில் (மிகப் பிந்தையதிலிருந்து மிக முந்தையது வரை) அமைக்கவும்:\n1. எல்.ஐ.சி வழக்கில் முகவுரை அரசியலமைப்பின் ஒரு ஒருங்கிணைந்த பகுதி என மீண்டும் உறுதிப்படுத்தப்படுதல்\n2. எஸ்.ஆர். பொம்மை வழக்கில் முகவுரையில் உள்ள மதச்சார்பின்மை அடிப்படை கட்டமைப்பு என நிறுவப்படுதல்\n3. சமதர்ம, மதச்சார்பற்ற, ஒருமைப்பாடு ஆகியவற்றைச் சேர்க்கும் 42வது அரசியலமைப்புத் திருத்தச் சட்டம் இயற்றப்படுதல்\n4. பெருபாரி யூனியன் வழக்கில் முகவுரை அரசியலமைப்பின் பகுதி அல்ல எனத் தீர்ப்பளிக்கப்படுதல்",
+    "question_en": "Arrange the following Preamble-related judicial and constitutional milestones in reverse chronological order (from LATEST to EARLIEST):\n1. Enactment of 42nd Constitutional Amendment Act inserting Socialist, Secular, Integrity\n2. S.R. Bommai Case establishing Secularism in Preamble as Basic Structure\n3. Berubari Union Case holding Preamble is NOT part of the Constitution\n4. LIC of India Case reaffirming Preamble as an integral part of the Constitution",
+    "question_ta": "முகவுரை தொடர்பான பின்வரும் நீதித்துறை மற்றும் அரசியலமைப்பு மைல்கற்களை தலைகீழ் காலவரிசையில் (மிகப் பிந்தையதிலிருந்து மிக முந்தையது வரை) அமைக்கவும்:\n1. சமதர்ம, மதச்சார்பற்ற, ஒருமைப்பாடு ஆகியவற்றைச் சேர்க்கும் 42வது அரசியலமைப்புத் திருத்தச் சட்டம் இயற்றப்படுதல்\n2. எஸ்.ஆர். பொம்மை வழக்கில் முகவுரையில் உள்ள மதச்சார்பின்மை அடிப்படை கட்டமைப்பு என நிறுவப்படுதல்\n3. பெருபாரி யூனியன் வழக்கில் முகவுரை அரசியலமைப்பின் பகுதி அல்ல எனத் தீர்ப்பளிக்கப்படுதல்\n4. எல்.ஐ.சி வழக்கில் முகவுரை அரசியலமைப்பின் ஒரு ஒருங்கிணைந்த பகுதி என மீண்டும் உறுதிப்படுத்தப்படுதல்",
     "options_en": [
-      "4 -> 3 -> 2 -> 1",
-      "1 -> 3 -> 2 -> 4",
       "1 -> 2 -> 3 -> 4",
-      "2 -> 1 -> 3 -> 4"
+      "1 -> 2 -> 4 -> 3",
+      "4 -> 2 -> 1 -> 3",
+      "1 -> 3 -> 2 -> 4"
     ],
     "options_ta": [
-      "4 -> 3 -> 2 -> 1",
-      "1 -> 3 -> 2 -> 4",
       "1 -> 2 -> 3 -> 4",
-      "2 -> 1 -> 3 -> 4"
+      "1 -> 2 -> 4 -> 3",
+      "4 -> 2 -> 1 -> 3",
+      "1 -> 3 -> 2 -> 4"
     ],
     "answer": "c",
     "explanation_en": "Reverse Chronology (Latest to Earliest): 1 (LIC of India: 1995) -> 2 (S.R. Bommai: 1994) -> 3 (42nd Amendment: 1976) -> 4 (Berubari Union: 1960).",
@@ -832,8 +832,8 @@
     "difficulty": "Hard",
     "question_type": "Chronology",
     "question": {
-      "en": "Arrange the following historic constitutional events between 1946 and 1950 in correct chronological order:\n1. Moving of the historic Objectives Resolution by Pandit Jawaharlal Nehru\n2. Constituent Assembly ratifies India's full membership in the Commonwealth of Nations\n3. Adoption and enactment of the Constitution and Preamble by the Constituent Assembly\n4. Commencement of the Constitution and establishment of India as a Sovereign Democratic Republic",
-      "ta": "1946 மற்றும் 1950-க்கு இடைப்பட்ட பின்வரும் வரலாற்றுச் சிறப்புமிக்க அரசியலமைப்பு நிகழ்வுகளை சரியான காலவரிசையில் அமைக்கவும்:\n1. பண்டிட் ஜவஹர்லால் நேருவால் வரலாற்றுச் சிறப்புமிக்க குறிக்கோள் தீர்மானம் முன்மொழியப்படுதல்\n2. காமன்வெல்த் நாடுகளில் இந்தியாவின் முழு உறுப்பினர் தகுதியை அரசியலமைப்பு நிர்ணய அவை அங்கீகரித்தல்\n3. அரசியலமைப்பு மற்றும் முகவுரை அரசியலமைப்பு நிர்ணய அவையால் ஏற்றுக்கொள்ளப்பட்டு இயற்றப்படுதல்\n4. அரசியலமைப்பு நடைமுறைக்கு வந்து இந்தியா இறையாண்மை ஜனநாயகக் குடியரசாக மலருதல்"
+      "en": "Arrange the following historic constitutional events between 1946 and 1950 in correct chronological order:\n1. Constituent Assembly ratifies India's full membership in the Commonwealth of Nations\n2. Moving of the historic Objectives Resolution by Pandit Jawaharlal Nehru\n3. Commencement of the Constitution and establishment of India as a Sovereign Democratic Republic\n4. Adoption and enactment of the Constitution and Preamble by the Constituent Assembly",
+      "ta": "1946 மற்றும் 1950-க்கு இடைப்பட்ட பின்வரும் வரலாற்றுச் சிறப்புமிக்க அரசியலமைப்பு நிகழ்வுகளை சரியான காலவரிசையில் அமைக்கவும்:\n1. காமன்வெல்த் நாடுகளில் இந்தியாவின் முழு உறுப்பினர் தகுதியை அரசியலமைப்பு நிர்ணய அவை அங்கீகரித்தல்\n2. பண்டிட் ஜவஹர்லால் நேருவால் வரலாற்றுச் சிறப்புமிக்க குறிக்கோள் தீர்மானம் முன்மொழியப்படுதல்\n3. அரசியலமைப்பு நடைமுறைக்கு வந்து இந்தியா இறையாண்மை ஜனநாயகக் குடியரசாக மலருதல்\n4. அரசியலமைப்பு மற்றும் முகவுரை அரசியலமைப்பு நிர்ணய அவையால் ஏற்றுக்கொள்ளப்பட்டு இயற்றப்படுதல்"
     },
     "events": [
       {
@@ -860,46 +860,46 @@
     "options": [
       {
         "id": "A",
-        "en": "1 -> 3 -> 2 -> 4",
-        "ta": "1 -> 3 -> 2 -> 4"
+        "en": "2 -> 1 -> 4 -> 3",
+        "ta": "2 -> 1 -> 4 -> 3"
       },
       {
         "id": "B",
-        "en": "2 -> 1 -> 3 -> 4",
-        "ta": "2 -> 1 -> 3 -> 4"
-      },
-      {
-        "id": "C",
         "en": "1 -> 2 -> 4 -> 3",
         "ta": "1 -> 2 -> 4 -> 3"
       },
       {
-        "id": "D",
+        "id": "C",
         "en": "1 -> 2 -> 3 -> 4",
         "ta": "1 -> 2 -> 3 -> 4"
+      },
+      {
+        "id": "D",
+        "en": "1 -> 3 -> 2 -> 4",
+        "ta": "1 -> 3 -> 2 -> 4"
       }
     ],
-    "correct_answer": "D",
+    "correct_answer": "A",
     "explanation": {
       "en": "Chronological Sequence: 1 (Objectives Resolution moved: Dec 13, 1946) -> 2 (Commonwealth membership ratified: May 1949) -> 3 (Constitution adopted: Nov 26, 1949) -> 4 (Constitution commenced: Jan 26, 1950).",
       "ta": "சரியான காலவரிசை: 1 (குறிக்கோள் தீர்மானம்: டிசம்பர் 13, 1946) -> 2 (காமன்வெல்த் ஏற்பு: மே 1949) -> 3 (அரசியலமைப்பு ஏற்பு: நவம்பர் 26, 1949) -> 4 (அரசியலமைப்பு அமல்: ஜனவரி 26, 1950)."
     },
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Commonwealth membership ratification was in May 1949 (2), before Constitution adoption in Nov 1949 (3).",
-        "ta": "தவறு. காமன்வெல்த் உறுப்பினர் ஏற்பு மே 1949-ல் (2) நடந்தது, இது நவம்பர் 1949 அரசியலமைப்பு ஏற்பிற்கு (3) முந்தையது."
+        "en": "✅ Correct.\nThe correct chronological sequence is '2 -> 1 -> 4 -> 3'.",
+        "ta": "✅ சரி.\nசரியான காலவரிசை '2 -> 1 -> 4 -> 3' ஆகும்."
       },
       "B": {
-        "en": "Incorrect. Objectives Resolution was moved in Dec 1946 (1), long before 1949.",
-        "ta": "தவறு. குறிக்கோள் தீர்மானம் டிசம்பர் 1946-ல் (1) முன்மொழியப்பட்டது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 4 -> 3' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 4 -> 3' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "C": {
-        "en": "Incorrect. Constitution adoption (Nov 26, 1949) preceded its commencement (Jan 26, 1950).",
-        "ta": "தவறு. அரசியலமைப்பு ஏற்பு (நவம்பர் 26, 1949) நடைமுறைக்கு வந்த நாளுக்கு (ஜனவரி 26, 1950) முந்தையது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 3 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 3 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "D": {
-        "en": "Correct. 1 (Dec 1946) -> 2 (May 1949) -> 3 (Nov 1949) -> 4 (Jan 1950) represents the accurate historical timeline.",
-        "ta": "சரி. 1 (டிசம்பர் 1946) -> 2 (மே 1949) -> 3 (நவம்பர் 1949) -> 4 (ஜனவரி 1950) துல்லியமான வரலாற்று காலவரிசை."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 3 -> 2 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 3 -> 2 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       }
     },
     "tnpsc_tip": {
@@ -924,21 +924,21 @@
       "Commonwealth",
       "Republic Day"
     ],
-    "question_en": "Arrange the following historic constitutional events between 1946 and 1950 in correct chronological order:\n1. Moving of the historic Objectives Resolution by Pandit Jawaharlal Nehru\n2. Constituent Assembly ratifies India's full membership in the Commonwealth of Nations\n3. Adoption and enactment of the Constitution and Preamble by the Constituent Assembly\n4. Commencement of the Constitution and establishment of India as a Sovereign Democratic Republic",
-    "question_ta": "1946 மற்றும் 1950-க்கு இடைப்பட்ட பின்வரும் வரலாற்றுச் சிறப்புமிக்க அரசியலமைப்பு நிகழ்வுகளை சரியான காலவரிசையில் அமைக்கவும்:\n1. பண்டிட் ஜவஹர்லால் நேருவால் வரலாற்றுச் சிறப்புமிக்க குறிக்கோள் தீர்மானம் முன்மொழியப்படுதல்\n2. காமன்வெல்த் நாடுகளில் இந்தியாவின் முழு உறுப்பினர் தகுதியை அரசியலமைப்பு நிர்ணய அவை அங்கீகரித்தல்\n3. அரசியலமைப்பு மற்றும் முகவுரை அரசியலமைப்பு நிர்ணய அவையால் ஏற்றுக்கொள்ளப்பட்டு இயற்றப்படுதல்\n4. அரசியலமைப்பு நடைமுறைக்கு வந்து இந்தியா இறையாண்மை ஜனநாயகக் குடியரசாக மலருதல்",
+    "question_en": "Arrange the following historic constitutional events between 1946 and 1950 in correct chronological order:\n1. Constituent Assembly ratifies India's full membership in the Commonwealth of Nations\n2. Moving of the historic Objectives Resolution by Pandit Jawaharlal Nehru\n3. Commencement of the Constitution and establishment of India as a Sovereign Democratic Republic\n4. Adoption and enactment of the Constitution and Preamble by the Constituent Assembly",
+    "question_ta": "1946 மற்றும் 1950-க்கு இடைப்பட்ட பின்வரும் வரலாற்றுச் சிறப்புமிக்க அரசியலமைப்பு நிகழ்வுகளை சரியான காலவரிசையில் அமைக்கவும்:\n1. காமன்வெல்த் நாடுகளில் இந்தியாவின் முழு உறுப்பினர் தகுதியை அரசியலமைப்பு நிர்ணய அவை அங்கீகரித்தல்\n2. பண்டிட் ஜவஹர்லால் நேருவால் வரலாற்றுச் சிறப்புமிக்க குறிக்கோள் தீர்மானம் முன்மொழியப்படுதல்\n3. அரசியலமைப்பு நடைமுறைக்கு வந்து இந்தியா இறையாண்மை ஜனநாயகக் குடியரசாக மலருதல்\n4. அரசியலமைப்பு மற்றும் முகவுரை அரசியலமைப்பு நிர்ணய அவையால் ஏற்றுக்கொள்ளப்பட்டு இயற்றப்படுதல்",
     "options_en": [
-      "1 -> 3 -> 2 -> 4",
-      "2 -> 1 -> 3 -> 4",
+      "2 -> 1 -> 4 -> 3",
       "1 -> 2 -> 4 -> 3",
-      "1 -> 2 -> 3 -> 4"
+      "1 -> 2 -> 3 -> 4",
+      "1 -> 3 -> 2 -> 4"
     ],
     "options_ta": [
-      "1 -> 3 -> 2 -> 4",
-      "2 -> 1 -> 3 -> 4",
+      "2 -> 1 -> 4 -> 3",
       "1 -> 2 -> 4 -> 3",
-      "1 -> 2 -> 3 -> 4"
+      "1 -> 2 -> 3 -> 4",
+      "1 -> 3 -> 2 -> 4"
     ],
-    "answer": "d",
+    "answer": "a",
     "explanation_en": "Chronological Sequence: 1 (Objectives Resolution moved: Dec 13, 1946) -> 2 (Commonwealth membership ratified: May 1949) -> 3 (Constitution adopted: Nov 26, 1949) -> 4 (Constitution commenced: Jan 26, 1950).",
     "explanation_ta": "சரியான காலவரிசை: 1 (குறிக்கோள் தீர்மானம்: டிசம்பர் 13, 1946) -> 2 (காமன்வெல்த் ஏற்பு: மே 1949) -> 3 (அரசியலமைப்பு ஏற்பு: நவம்பர் 26, 1949) -> 4 (அரசியலமைப்பு அமல்: ஜனவரி 26, 1950)."
   },
@@ -949,8 +949,8 @@
     "difficulty": "Hard",
     "question_type": "Chronology",
     "question": {
-      "en": "Arrange the following developments regarding constitutional amendments affecting the Preamble in correct chronological order:\n1. Kesavananda Bharati verdict establishing that Preamble is amendable under Article 368 subject to Basic Structure\n2. Swaran Singh Committee appointed to recommend constitutional changes including Preamble amendments\n3. 42nd Constitutional Amendment Act passed by Parliament amending the Preamble\n4. 44th Constitutional Amendment Act enacted retaining the 42nd Amendment changes made to the Preamble",
-      "ta": "முகவுரையைப் பாதித்த அரசியலமைப்புத் திருத்தங்கள் தொடர்பான பின்வரும் முன்னேற்றங்களை சரியான காலவரிசையில் அமைக்கவும்:\n1. அடிப்படை கட்டமைப்புக்கு உட்பட்டு உறுப்பு 368-ன் கீழ் முகவுரையைத் திருத்தலாம் என கேசவானந்த பாரதி தீர்ப்பளித்தல்\n2. முகவுரைத் திருத்தங்கள் உட்பட அரசியலமைப்பு மாற்றங்களைப் பரிந்துரைக்க ஸ்வரன் சிங் குழு அமைக்கப்படுதல்\n3. முகவுரையைத் திருத்தி நாடாளுமன்றத்தால் 42வது அரசியலமைப்புத் திருத்தச் சட்டம் நிறைவேற்றப்படுதல்\n4. முகவுரையில் செய்யப்பட்ட 42வது திருத்த மாற்றங்களைத் தக்கவைத்து 44வது அரசியலமைப்புத் திருத்தச் சட்டம் இயற்றப்படுதல்"
+      "en": "Arrange the following developments regarding constitutional amendments affecting the Preamble in correct chronological order:\n1. 44th Constitutional Amendment Act enacted retaining the 42nd Amendment changes made to the Preamble\n2. 42nd Constitutional Amendment Act passed by Parliament amending the Preamble\n3. Swaran Singh Committee appointed to recommend constitutional changes including Preamble amendments\n4. Kesavananda Bharati verdict establishing that Preamble is amendable under Article 368 subject to Basic Structure",
+      "ta": "முகவுரையைப் பாதித்த அரசியலமைப்புத் திருத்தங்கள் தொடர்பான பின்வரும் முன்னேற்றங்களை சரியான காலவரிசையில் அமைக்கவும்:\n1. முகவுரையில் செய்யப்பட்ட 42வது திருத்த மாற்றங்களைத் தக்கவைத்து 44வது அரசியலமைப்புத் திருத்தச் சட்டம் இயற்றப்படுதல்\n2. முகவுரையைத் திருத்தி நாடாளுமன்றத்தால் 42வது அரசியலமைப்புத் திருத்தச் சட்டம் நிறைவேற்றப்படுதல்\n3. முகவுரைத் திருத்தங்கள் உட்பட அரசியலமைப்பு மாற்றங்களைப் பரிந்துரைக்க ஸ்வரன் சிங் குழு அமைக்கப்படுதல்\n4. அடிப்படை கட்டமைப்புக்கு உட்பட்டு உறுப்பு 368-ன் கீழ் முகவுரையைத் திருத்தலாம் என கேசவானந்த பாரதி தீர்ப்பளித்தல்"
     },
     "events": [
       {
@@ -982,41 +982,41 @@
       },
       {
         "id": "B",
-        "en": "2 -> 1 -> 3 -> 4",
-        "ta": "2 -> 1 -> 3 -> 4"
+        "en": "4 -> 3 -> 2 -> 1",
+        "ta": "4 -> 3 -> 2 -> 1"
       },
       {
         "id": "C",
-        "en": "1 -> 3 -> 2 -> 4",
-        "ta": "1 -> 3 -> 2 -> 4"
+        "en": "1 -> 2 -> 4 -> 3",
+        "ta": "1 -> 2 -> 4 -> 3"
       },
       {
         "id": "D",
-        "en": "1 -> 2 -> 4 -> 3",
-        "ta": "1 -> 2 -> 4 -> 3"
+        "en": "1 -> 3 -> 2 -> 4",
+        "ta": "1 -> 3 -> 2 -> 4"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "B",
     "explanation": {
       "en": "Chronological Sequence: 1 (Kesavananda Bharati: 1973) -> 2 (Swaran Singh Committee: Early 1976) -> 3 (42nd Amendment Act: Late 1976) -> 4 (44th Amendment Act: 1978).",
       "ta": "சரியான காலவரிசை: 1 (கேசவானந்த பாரதி: 1973) -> 2 (ஸ்வரன் சிங் குழு: தொடக்க 1976) -> 3 (42வது திருத்தச் சட்டம்: பிற்பகுதி 1976) -> 4 (44வது திருத்தச் சட்டம்: 1978)."
     },
     "why_not_others": {
       "A": {
-        "en": "Correct. 1 (1973) -> 2 (1976) -> 3 (1976) -> 4 (1978) precisely tracks the amendment trajectory.",
-        "ta": "சரி. 1 (1973) -> 2 (1976) -> 3 (1976) -> 4 (1978) திருத்தப் பாதையைத் துல்லியமாகப் பின்பற்றுகிறது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 3 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 3 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "B": {
-        "en": "Incorrect. Kesavananda Bharati (1973) came before the Swaran Singh Committee (1976).",
-        "ta": "தவறு. கேசவானந்த பாரதி (1973) ஸ்வரன் சிங் குழுவிற்கு (1976) முந்தையது."
+        "en": "✅ Correct.\nThe correct chronological sequence is '4 -> 3 -> 2 -> 1'.",
+        "ta": "✅ சரி.\nசரியான காலவரிசை '4 -> 3 -> 2 -> 1' ஆகும்."
       },
       "C": {
-        "en": "Incorrect. Swaran Singh Committee (2) recommendations led directly to the 42nd Amendment (3).",
-        "ta": "தவறு. ஸ்வரன் சிங் குழுவின் (2) பரிந்துரைகளே 42வது திருத்தத்திற்கு (3) வழிவகுத்தன."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 4 -> 3' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 4 -> 3' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "D": {
-        "en": "Incorrect. 44th Amendment was enacted in 1978 (4), after the 42nd Amendment in 1976 (3).",
-        "ta": "தவறு. 44வது திருத்தம் 1978-ல் (4) இயற்றப்பட்டது, இது 1976 42வது திருத்தத்திற்குப் (3) பின்னராகும்."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 3 -> 2 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 3 -> 2 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       }
     },
     "tnpsc_tip": {
@@ -1041,21 +1041,21 @@
       "44th Amendment",
       "Swaran Singh Committee"
     ],
-    "question_en": "Arrange the following developments regarding constitutional amendments affecting the Preamble in correct chronological order:\n1. Kesavananda Bharati verdict establishing that Preamble is amendable under Article 368 subject to Basic Structure\n2. Swaran Singh Committee appointed to recommend constitutional changes including Preamble amendments\n3. 42nd Constitutional Amendment Act passed by Parliament amending the Preamble\n4. 44th Constitutional Amendment Act enacted retaining the 42nd Amendment changes made to the Preamble",
-    "question_ta": "முகவுரையைப் பாதித்த அரசியலமைப்புத் திருத்தங்கள் தொடர்பான பின்வரும் முன்னேற்றங்களை சரியான காலவரிசையில் அமைக்கவும்:\n1. அடிப்படை கட்டமைப்புக்கு உட்பட்டு உறுப்பு 368-ன் கீழ் முகவுரையைத் திருத்தலாம் என கேசவானந்த பாரதி தீர்ப்பளித்தல்\n2. முகவுரைத் திருத்தங்கள் உட்பட அரசியலமைப்பு மாற்றங்களைப் பரிந்துரைக்க ஸ்வரன் சிங் குழு அமைக்கப்படுதல்\n3. முகவுரையைத் திருத்தி நாடாளுமன்றத்தால் 42வது அரசியலமைப்புத் திருத்தச் சட்டம் நிறைவேற்றப்படுதல்\n4. முகவுரையில் செய்யப்பட்ட 42வது திருத்த மாற்றங்களைத் தக்கவைத்து 44வது அரசியலமைப்புத் திருத்தச் சட்டம் இயற்றப்படுதல்",
+    "question_en": "Arrange the following developments regarding constitutional amendments affecting the Preamble in correct chronological order:\n1. 44th Constitutional Amendment Act enacted retaining the 42nd Amendment changes made to the Preamble\n2. 42nd Constitutional Amendment Act passed by Parliament amending the Preamble\n3. Swaran Singh Committee appointed to recommend constitutional changes including Preamble amendments\n4. Kesavananda Bharati verdict establishing that Preamble is amendable under Article 368 subject to Basic Structure",
+    "question_ta": "முகவுரையைப் பாதித்த அரசியலமைப்புத் திருத்தங்கள் தொடர்பான பின்வரும் முன்னேற்றங்களை சரியான காலவரிசையில் அமைக்கவும்:\n1. முகவுரையில் செய்யப்பட்ட 42வது திருத்த மாற்றங்களைத் தக்கவைத்து 44வது அரசியலமைப்புத் திருத்தச் சட்டம் இயற்றப்படுதல்\n2. முகவுரையைத் திருத்தி நாடாளுமன்றத்தால் 42வது அரசியலமைப்புத் திருத்தச் சட்டம் நிறைவேற்றப்படுதல்\n3. முகவுரைத் திருத்தங்கள் உட்பட அரசியலமைப்பு மாற்றங்களைப் பரிந்துரைக்க ஸ்வரன் சிங் குழு அமைக்கப்படுதல்\n4. அடிப்படை கட்டமைப்புக்கு உட்பட்டு உறுப்பு 368-ன் கீழ் முகவுரையைத் திருத்தலாம் என கேசவானந்த பாரதி தீர்ப்பளித்தல்",
     "options_en": [
       "1 -> 2 -> 3 -> 4",
-      "2 -> 1 -> 3 -> 4",
-      "1 -> 3 -> 2 -> 4",
-      "1 -> 2 -> 4 -> 3"
+      "4 -> 3 -> 2 -> 1",
+      "1 -> 2 -> 4 -> 3",
+      "1 -> 3 -> 2 -> 4"
     ],
     "options_ta": [
       "1 -> 2 -> 3 -> 4",
-      "2 -> 1 -> 3 -> 4",
-      "1 -> 3 -> 2 -> 4",
-      "1 -> 2 -> 4 -> 3"
+      "4 -> 3 -> 2 -> 1",
+      "1 -> 2 -> 4 -> 3",
+      "1 -> 3 -> 2 -> 4"
     ],
-    "answer": "a",
+    "answer": "b",
     "explanation_en": "Chronological Sequence: 1 (Kesavananda Bharati: 1973) -> 2 (Swaran Singh Committee: Early 1976) -> 3 (42nd Amendment Act: Late 1976) -> 4 (44th Amendment Act: 1978).",
     "explanation_ta": "சரியான காலவரிசை: 1 (கேசவானந்த பாரதி: 1973) -> 2 (ஸ்வரன் சிங் குழு: தொடக்க 1976) -> 3 (42வது திருத்தச் சட்டம்: பிற்பகுதி 1976) -> 4 (44வது திருத்தச் சட்டம்: 1978)."
   },
@@ -1066,8 +1066,8 @@
     "difficulty": "Hard",
     "question_type": "Chronology",
     "question": {
-      "en": "Arrange the three dimensions of 'JUSTICE' in the exact sequential order as they are enumerated in the Preamble of India:\n1. Social Justice\n2. Economic Justice\n3. Political Justice\n4. Liberty of Thought, Expression, Belief, Faith, and Worship (Subsequent Objective)",
-      "ta": "இந்திய முகவுரையில் குறிப்பிடப்பட்டுள்ள 'நீதியின்' மூன்று பரிமாணங்களை சரியான உரை வரிசையில் அமைக்கவும்:\n1. சமூக நீதி (Social Justice)\n2. பொருளாதார நீதி (Economic Justice)\n3. அரசியல் நீதி (Political Justice)\n4. சிந்தனை, வெளிப்பாடு, நம்பிக்கை, சமயம் மற்றும் வழிபாட்டுச் சுதந்திரம் (அடுத்த இலக்கு)"
+      "en": "Arrange the three dimensions of 'JUSTICE' in the exact sequential order as they are enumerated in the Preamble of India:\n1. Political Justice\n2. Social Justice\n3. Economic Justice\n4. Liberty of Thought, Expression, Belief, Faith, and Worship (Subsequent Objective)",
+      "ta": "இந்திய முகவுரையில் குறிப்பிடப்பட்டுள்ள 'நீதியின்' மூன்று பரிமாணங்களை சரியான உரை வரிசையில் அமைக்கவும்:\n1. அரசியல் நீதி (Political Justice)\n2. சமூக நீதி (Social Justice)\n3. பொருளாதார நீதி (Economic Justice)\n4. சிந்தனை, வெளிப்பாடு, நம்பிக்கை, சமயம் மற்றும் வழிபாட்டுச் சுதந்திரம் (அடுத்த இலக்கு)"
     },
     "events": [
       {
@@ -1094,8 +1094,8 @@
     "options": [
       {
         "id": "A",
-        "en": "2 -> 1 -> 3 -> 4",
-        "ta": "2 -> 1 -> 3 -> 4"
+        "en": "1 -> 2 -> 4 -> 3",
+        "ta": "1 -> 2 -> 4 -> 3"
       },
       {
         "id": "B",
@@ -1104,36 +1104,36 @@
       },
       {
         "id": "C",
-        "en": "1 -> 3 -> 2 -> 4",
-        "ta": "1 -> 3 -> 2 -> 4"
+        "en": "2 -> 3 -> 1 -> 4",
+        "ta": "2 -> 3 -> 1 -> 4"
       },
       {
         "id": "D",
-        "en": "3 -> 1 -> 2 -> 4",
-        "ta": "3 -> 1 -> 2 -> 4"
+        "en": "1 -> 3 -> 2 -> 4",
+        "ta": "1 -> 3 -> 2 -> 4"
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "C",
     "explanation": {
       "en": "Textual Sequence of Justice in Preamble: 'JUSTICE, social, economic and political;'. Hence, 1 (Social) -> 2 (Economic) -> 3 (Political) -> followed by Liberty (4).",
       "ta": "முகவுரையில் நீதியின் உரை வரிசை: 'நீதி, சமூக, பொருளாதார மற்றும் அரசியல்;'. எனவே, 1 (சமூக) -> 2 (பொருளாதார) -> 3 (அரசியல்) -> சுதந்திரம் (4)."
     },
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Social Justice comes before Economic Justice.",
-        "ta": "தவறு. பொருளாதார நீதிக்கு முன்பாக சமூக நீதி வருகிறது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 4 -> 3' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 4 -> 3' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "B": {
-        "en": "Correct. 1 (Social) -> 2 (Economic) -> 3 (Political) -> 4 (Liberty) matches the exact phrasing.",
-        "ta": "சரி. 1 (சமூக) -> 2 (பொருளாதார) -> 3 (அரசியல்) -> 4 (சுதந்திரம்) துல்லியமான உரை வரிசையாகும்."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 3 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 3 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "C": {
-        "en": "Incorrect. Economic Justice precedes Political Justice in the text.",
-        "ta": "தவறு. உரையில் அரசியல் நீதிக்கு முன்பாக பொருளாதார நீதி வருகிறது."
+        "en": "✅ Correct.\nThe correct chronological sequence is '2 -> 3 -> 1 -> 4'.",
+        "ta": "✅ சரி.\nசரியான காலவரிசை '2 -> 3 -> 1 -> 4' ஆகும்."
       },
       "D": {
-        "en": "Incorrect. Political Justice is the third dimension, not the first.",
-        "ta": "தவறு. அரசியல் நீதி மூன்றாவது பரிமாணமாகும், முதலாவது அல்ல."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 3 -> 2 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 3 -> 2 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       }
     },
     "tnpsc_tip": {
@@ -1158,21 +1158,21 @@
       "Sequence",
       "Social Economic Political"
     ],
-    "question_en": "Arrange the three dimensions of 'JUSTICE' in the exact sequential order as they are enumerated in the Preamble of India:\n1. Social Justice\n2. Economic Justice\n3. Political Justice\n4. Liberty of Thought, Expression, Belief, Faith, and Worship (Subsequent Objective)",
-    "question_ta": "இந்திய முகவுரையில் குறிப்பிடப்பட்டுள்ள 'நீதியின்' மூன்று பரிமாணங்களை சரியான உரை வரிசையில் அமைக்கவும்:\n1. சமூக நீதி (Social Justice)\n2. பொருளாதார நீதி (Economic Justice)\n3. அரசியல் நீதி (Political Justice)\n4. சிந்தனை, வெளிப்பாடு, நம்பிக்கை, சமயம் மற்றும் வழிபாட்டுச் சுதந்திரம் (அடுத்த இலக்கு)",
+    "question_en": "Arrange the three dimensions of 'JUSTICE' in the exact sequential order as they are enumerated in the Preamble of India:\n1. Political Justice\n2. Social Justice\n3. Economic Justice\n4. Liberty of Thought, Expression, Belief, Faith, and Worship (Subsequent Objective)",
+    "question_ta": "இந்திய முகவுரையில் குறிப்பிடப்பட்டுள்ள 'நீதியின்' மூன்று பரிமாணங்களை சரியான உரை வரிசையில் அமைக்கவும்:\n1. அரசியல் நீதி (Political Justice)\n2. சமூக நீதி (Social Justice)\n3. பொருளாதார நீதி (Economic Justice)\n4. சிந்தனை, வெளிப்பாடு, நம்பிக்கை, சமயம் மற்றும் வழிபாட்டுச் சுதந்திரம் (அடுத்த இலக்கு)",
     "options_en": [
-      "2 -> 1 -> 3 -> 4",
+      "1 -> 2 -> 4 -> 3",
       "1 -> 2 -> 3 -> 4",
-      "1 -> 3 -> 2 -> 4",
-      "3 -> 1 -> 2 -> 4"
+      "2 -> 3 -> 1 -> 4",
+      "1 -> 3 -> 2 -> 4"
     ],
     "options_ta": [
-      "2 -> 1 -> 3 -> 4",
+      "1 -> 2 -> 4 -> 3",
       "1 -> 2 -> 3 -> 4",
-      "1 -> 3 -> 2 -> 4",
-      "3 -> 1 -> 2 -> 4"
+      "2 -> 3 -> 1 -> 4",
+      "1 -> 3 -> 2 -> 4"
     ],
-    "answer": "b",
+    "answer": "c",
     "explanation_en": "Textual Sequence of Justice in Preamble: 'JUSTICE, social, economic and political;'. Hence, 1 (Social) -> 2 (Economic) -> 3 (Political) -> followed by Liberty (4).",
     "explanation_ta": "முகவுரையில் நீதியின் உரை வரிசை: 'நீதி, சமூக, பொருளாதார மற்றும் அரசியல்;'. எனவே, 1 (சமூக) -> 2 (பொருளாதார) -> 3 (அரசியல்) -> சுதந்திரம் (4)."
   },
@@ -1183,8 +1183,8 @@
     "difficulty": "Hard",
     "question_type": "Chronology",
     "question": {
-      "en": "Arrange the five aspects of 'LIBERTY' in the exact sequential order as they appear in the Preamble:\n1. Liberty of Thought\n2. Liberty of Expression\n3. Liberty of Belief\n4. Liberty of Faith and Worship",
-      "ta": "முகவுரையில் இடம்பெற்றுள்ளவாறு 'சுதந்திரத்தின்' ஐந்து அம்சங்களை சரியான உரை வரிசையில் அமைக்கவும்:\n1. சிந்தனை சுதந்திரம் (Thought)\n2. கருத்து வெளிப்பாட்டுச் சுதந்திரம் (Expression)\n3. நம்பிக்கை சுதந்திரம் (Belief)\n4. சமயம் மற்றும் வழிபாட்டுச் சுதந்திரம் (Faith and Worship)"
+      "en": "Arrange the five aspects of 'LIBERTY' in the exact sequential order as they appear in the Preamble:\n1. Liberty of Expression\n2. Liberty of Faith and Worship\n3. Liberty of Belief\n4. Liberty of Thought",
+      "ta": "முகவுரையில் இடம்பெற்றுள்ளவாறு 'சுதந்திரத்தின்' ஐந்து அம்சங்களை சரியான உரை வரிசையில் அமைக்கவும்:\n1. கருத்து வெளிப்பாட்டுச் சுதந்திரம் (Expression)\n2. சமயம் மற்றும் வழிபாட்டுச் சுதந்திரம் (Faith and Worship)\n3. நம்பிக்கை சுதந்திரம் (Belief)\n4. சிந்தனை சுதந்திரம் (Thought)"
     },
     "events": [
       {
@@ -1211,46 +1211,46 @@
     "options": [
       {
         "id": "A",
-        "en": "2 -> 1 -> 3 -> 4",
-        "ta": "2 -> 1 -> 3 -> 4"
-      },
-      {
-        "id": "B",
-        "en": "1 -> 3 -> 2 -> 4",
-        "ta": "1 -> 3 -> 2 -> 4"
-      },
-      {
-        "id": "C",
         "en": "1 -> 2 -> 3 -> 4",
         "ta": "1 -> 2 -> 3 -> 4"
       },
       {
-        "id": "D",
+        "id": "B",
         "en": "1 -> 2 -> 4 -> 3",
         "ta": "1 -> 2 -> 4 -> 3"
+      },
+      {
+        "id": "C",
+        "en": "1 -> 3 -> 2 -> 4",
+        "ta": "1 -> 3 -> 2 -> 4"
+      },
+      {
+        "id": "D",
+        "en": "4 -> 1 -> 3 -> 2",
+        "ta": "4 -> 1 -> 3 -> 2"
       }
     ],
-    "correct_answer": "C",
+    "correct_answer": "D",
     "explanation": {
-      "en": "Textual Sequence of Liberty in Preamble: 'LIBERTY of thought, expression, belief, faith and worship;'. Hence, 1 -> 2 -> 3 -> 4.",
-      "ta": "முகவுரையில் சுதந்திரத்தின் உரை வரிசை: 'சிந்தனை, வெளிப்பாடு, நம்பிக்கை, சமயம் மற்றும் வழிபாட்டுச் சுதந்திரம்;'. எனவே, 1 -> 2 -> 3 -> 4."
+      "en": "Textual Sequence of Liberty in Preamble: 'LIBERTY of thought, expression, belief, faith and worship;'. Hence, 4 -> 1 -> 3 -> 2.",
+      "ta": "முகவுரையில் சுதந்திரத்தின் உரை வரிசை: 'சிந்தனை, வெளிப்பாடு, நம்பிக்கை, சமயம் மற்றும் வழிபாட்டுச் சுதந்திரம்;'. எனவே, 4 -> 1 -> 3 -> 2."
     },
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Thought comes before Expression.",
-        "ta": "தவறு. வெளிப்பாட்டிற்கு முன்பாக சிந்தனை வருகிறது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 3 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 3 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "B": {
-        "en": "Incorrect. Expression precedes Belief in the text.",
-        "ta": "தவறு. உரையில் நம்பிக்கைக்கு முன்பாக கருத்து வெளிப்பாடு வருகிறது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 4 -> 3' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 4 -> 3' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "C": {
-        "en": "Correct. 1 (Thought) -> 2 (Expression) -> 3 (Belief) -> 4 (Faith and Worship) accurately represents the constitutional text.",
-        "ta": "சரி. 1 (சிந்தனை) -> 2 (வெளிப்பாடு) -> 3 (நம்பிக்கை) -> 4 (சமயம் மற்றும் வழிபாடு) அரசியலமைப்பு உரையைத் துல்லியமாகக் காட்டுகிறது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 3 -> 2 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 3 -> 2 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "D": {
-        "en": "Incorrect. Belief precedes Faith and Worship.",
-        "ta": "தவறு. சமயம் மற்றும் வழிபாட்டிற்கு முன்பாக நம்பிக்கை வருகிறது."
+        "en": "✅ Correct.\nThe correct chronological sequence is '4 -> 1 -> 3 -> 2'.",
+        "ta": "✅ சரி.\nசரியான காலவரிசை '4 -> 1 -> 3 -> 2' ஆகும்."
       }
     },
     "tnpsc_tip": {
@@ -1275,23 +1275,23 @@
       "Sequence",
       "Thought Expression Belief Faith Worship"
     ],
-    "question_en": "Arrange the five aspects of 'LIBERTY' in the exact sequential order as they appear in the Preamble:\n1. Liberty of Thought\n2. Liberty of Expression\n3. Liberty of Belief\n4. Liberty of Faith and Worship",
-    "question_ta": "முகவுரையில் இடம்பெற்றுள்ளவாறு 'சுதந்திரத்தின்' ஐந்து அம்சங்களை சரியான உரை வரிசையில் அமைக்கவும்:\n1. சிந்தனை சுதந்திரம் (Thought)\n2. கருத்து வெளிப்பாட்டுச் சுதந்திரம் (Expression)\n3. நம்பிக்கை சுதந்திரம் (Belief)\n4. சமயம் மற்றும் வழிபாட்டுச் சுதந்திரம் (Faith and Worship)",
+    "question_en": "Arrange the five aspects of 'LIBERTY' in the exact sequential order as they appear in the Preamble:\n1. Liberty of Expression\n2. Liberty of Faith and Worship\n3. Liberty of Belief\n4. Liberty of Thought",
+    "question_ta": "முகவுரையில் இடம்பெற்றுள்ளவாறு 'சுதந்திரத்தின்' ஐந்து அம்சங்களை சரியான உரை வரிசையில் அமைக்கவும்:\n1. கருத்து வெளிப்பாட்டுச் சுதந்திரம் (Expression)\n2. சமயம் மற்றும் வழிபாட்டுச் சுதந்திரம் (Faith and Worship)\n3. நம்பிக்கை சுதந்திரம் (Belief)\n4. சிந்தனை சுதந்திரம் (Thought)",
     "options_en": [
-      "2 -> 1 -> 3 -> 4",
-      "1 -> 3 -> 2 -> 4",
       "1 -> 2 -> 3 -> 4",
-      "1 -> 2 -> 4 -> 3"
+      "1 -> 2 -> 4 -> 3",
+      "1 -> 3 -> 2 -> 4",
+      "4 -> 1 -> 3 -> 2"
     ],
     "options_ta": [
-      "2 -> 1 -> 3 -> 4",
-      "1 -> 3 -> 2 -> 4",
       "1 -> 2 -> 3 -> 4",
-      "1 -> 2 -> 4 -> 3"
+      "1 -> 2 -> 4 -> 3",
+      "1 -> 3 -> 2 -> 4",
+      "4 -> 1 -> 3 -> 2"
     ],
-    "answer": "c",
-    "explanation_en": "Textual Sequence of Liberty in Preamble: 'LIBERTY of thought, expression, belief, faith and worship;'. Hence, 1 -> 2 -> 3 -> 4.",
-    "explanation_ta": "முகவுரையில் சுதந்திரத்தின் உரை வரிசை: 'சிந்தனை, வெளிப்பாடு, நம்பிக்கை, சமயம் மற்றும் வழிபாட்டுச் சுதந்திரம்;'. எனவே, 1 -> 2 -> 3 -> 4."
+    "answer": "d",
+    "explanation_en": "Textual Sequence of Liberty in Preamble: 'LIBERTY of thought, expression, belief, faith and worship;'. Hence, 4 -> 1 -> 3 -> 2.",
+    "explanation_ta": "முகவுரையில் சுதந்திரத்தின் உரை வரிசை: 'சிந்தனை, வெளிப்பாடு, நம்பிக்கை, சமயம் மற்றும் வழிபாட்டுச் சுதந்திரம்;'. எனவே, 4 -> 1 -> 3 -> 2."
   },
   {
     "id": "PRE_CHRONO_012",
@@ -1300,8 +1300,8 @@
     "difficulty": "Hard",
     "question_type": "Chronology",
     "question": {
-      "en": "Arrange the following judicial and legislative milestones regarding the concept of 'Secularism' in India's constitutional history in correct chronological order:\n1. Supreme Court holds Preamble is not part of Constitution, though general spirit guides ambiguity (Berubari)\n2. Supreme Court rules that secular character of Constitution is part of Basic Structure (Kesavananda Bharati)\n3. Word 'SECULAR' is explicitly inserted into the Preamble by 42nd Constitutional Amendment Act\n4. Supreme Court rules that state governments pursuing anti-secular policies can be dismissed under Article 356 (S.R. Bommai)",
-      "ta": "இந்திய அரசியலமைப்பு வரலாற்றில் 'மதச்சார்பின்மை' என்ற கருத்து தொடர்பான பின்வரும் நீதித்துறை மற்றும் சட்டமியற்றல் மைல்கற்களை சரியான காலவரிசையில் அமைக்கவும்:\n1. தெளிவற்ற நிலையில் பொது உணர்வு வழிகாட்டினாலும், முகவுரை அரசியலமைப்பின் பகுதி அல்ல என உச்ச நீதிமன்றம் கூறுதல் (பெருபாரி)\n2. அரசியலமைப்பின் மதச்சார்பற்ற தன்மை அடிப்படை கட்டமைப்பின் ஒரு பகுதி என உச்ச நீதிமன்றம் தீர்ப்பளித்தல் (கேசவானந்த பாரதி)\n3. 42வது அரசியலமைப்புத் திருத்தச் சட்டத்தின் மூலம் 'மதச்சார்பற்ற' என்ற சொல் முகவுரையில் வெளிப்படையாகச் சேர்க்கப்படுதல்\n4. மதச்சார்பற்ற கொள்கைகளுக்கு எதிராகச் செயல்படும் மாநில அரசுகளை உறுப்பு 356-ன் கீழ் கலைக்கலாம் என உச்ச நீதிமன்றம் தீர்ப்பளித்தல் (எஸ்.ஆர். பொம்மை)"
+      "en": "Arrange the following judicial and legislative milestones regarding the concept of 'Secularism' in India's constitutional history in correct chronological order:\n1. Supreme Court rules that state governments pursuing anti-secular policies can be dismissed under Article 356 (S.R. Bommai)\n2. Supreme Court holds Preamble is not part of Constitution, though general spirit guides ambiguity (Berubari)\n3. Word 'SECULAR' is explicitly inserted into the Preamble by 42nd Constitutional Amendment Act\n4. Supreme Court rules that secular character of Constitution is part of Basic Structure (Kesavananda Bharati)",
+      "ta": "இந்திய அரசியலமைப்பு வரலாற்றில் 'மதச்சார்பின்மை' என்ற கருத்து தொடர்பான பின்வரும் நீதித்துறை மற்றும் சட்டமியற்றல் மைல்கற்களை சரியான காலவரிசையில் அமைக்கவும்:\n1. மதச்சார்பற்ற கொள்கைகளுக்கு எதிராகச் செயல்படும் மாநில அரசுகளை உறுப்பு 356-ன் கீழ் கலைக்கலாம் என உச்ச நீதிமன்றம் தீர்ப்பளித்தல் (எஸ்.ஆர். பொம்மை)\n2. தெளிவற்ற நிலையில் பொது உணர்வு வழிகாட்டினாலும், முகவுரை அரசியலமைப்பின் பகுதி அல்ல என உச்ச நீதிமன்றம் கூறுதல் (பெருபாரி)\n3. 42வது அரசியலமைப்புத் திருத்தச் சட்டத்தின் மூலம் 'மதச்சார்பற்ற' என்ற சொல் முகவுரையில் வெளிப்படையாகச் சேர்க்கப்படுதல்\n4. அரசியலமைப்பின் மதச்சார்பற்ற தன்மை அடிப்படை கட்டமைப்பின் ஒரு பகுதி என உச்ச நீதிமன்றம் தீர்ப்பளித்தல் (கேசவானந்த பாரதி)"
     },
     "events": [
       {
@@ -1328,23 +1328,23 @@
     "options": [
       {
         "id": "A",
-        "en": "2 -> 1 -> 3 -> 4",
-        "ta": "2 -> 1 -> 3 -> 4"
+        "en": "1 -> 2 -> 3 -> 4",
+        "ta": "1 -> 2 -> 3 -> 4"
       },
       {
         "id": "B",
-        "en": "1 -> 3 -> 2 -> 4",
-        "ta": "1 -> 3 -> 2 -> 4"
-      },
-      {
-        "id": "C",
         "en": "1 -> 2 -> 4 -> 3",
         "ta": "1 -> 2 -> 4 -> 3"
       },
       {
+        "id": "C",
+        "en": "1 -> 3 -> 2 -> 4",
+        "ta": "1 -> 3 -> 2 -> 4"
+      },
+      {
         "id": "D",
-        "en": "1 -> 2 -> 3 -> 4",
-        "ta": "1 -> 2 -> 3 -> 4"
+        "en": "2 -> 4 -> 3 -> 1",
+        "ta": "2 -> 4 -> 3 -> 1"
       }
     ],
     "correct_answer": "D",
@@ -1354,20 +1354,20 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Berubari (1960) was decided before Kesavananda Bharati (1973).",
-        "ta": "தவறு. பெருபாரி (1960) கேசவானந்த பாரதிக்கு (1973) முந்தையது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 3 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 3 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "B": {
-        "en": "Incorrect. Kesavananda Bharati (1973) recognized secularism as Basic Structure before the word was added to the Preamble in 1976 (3).",
-        "ta": "தவறு. 1976-ல் முகவுரையில் சொல் சேர்க்கப்படுவதற்கு முன்பே கேசவானந்த பாரதி (1973) மதச்சார்பின்மையை அடிப்படை அமைப்பாக அங்கீகரித்தது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 4 -> 3' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 4 -> 3' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "C": {
-        "en": "Incorrect. 42nd Amendment occurred in 1976 (3), long before S.R. Bommai in 1994 (4).",
-        "ta": "தவறு. 42வது திருத்தம் 1976-ல் (3) நடந்தது, இது 1994 எஸ்.ஆர். பொம்மைக்கு (4) முந்தையது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 3 -> 2 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 3 -> 2 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "D": {
-        "en": "Correct. 1 (1960) -> 2 (1973) -> 3 (1976) -> 4 (1994) follows the complete legal development of Indian Secularism.",
-        "ta": "சரி. 1 (1960) -> 2 (1973) -> 3 (1976) -> 4 (1994) இந்திய மதச்சார்பின்மையின் முழு சட்ட வளர்ச்சியைப் பின்பற்றுகிறது."
+        "en": "✅ Correct.\nThe correct chronological sequence is '2 -> 4 -> 3 -> 1'.",
+        "ta": "✅ சரி.\nசரியான காலவரிசை '2 -> 4 -> 3 -> 1' ஆகும்."
       }
     },
     "tnpsc_tip": {
@@ -1393,19 +1393,19 @@
       "SR Bommai",
       "42nd Amendment"
     ],
-    "question_en": "Arrange the following judicial and legislative milestones regarding the concept of 'Secularism' in India's constitutional history in correct chronological order:\n1. Supreme Court holds Preamble is not part of Constitution, though general spirit guides ambiguity (Berubari)\n2. Supreme Court rules that secular character of Constitution is part of Basic Structure (Kesavananda Bharati)\n3. Word 'SECULAR' is explicitly inserted into the Preamble by 42nd Constitutional Amendment Act\n4. Supreme Court rules that state governments pursuing anti-secular policies can be dismissed under Article 356 (S.R. Bommai)",
-    "question_ta": "இந்திய அரசியலமைப்பு வரலாற்றில் 'மதச்சார்பின்மை' என்ற கருத்து தொடர்பான பின்வரும் நீதித்துறை மற்றும் சட்டமியற்றல் மைல்கற்களை சரியான காலவரிசையில் அமைக்கவும்:\n1. தெளிவற்ற நிலையில் பொது உணர்வு வழிகாட்டினாலும், முகவுரை அரசியலமைப்பின் பகுதி அல்ல என உச்ச நீதிமன்றம் கூறுதல் (பெருபாரி)\n2. அரசியலமைப்பின் மதச்சார்பற்ற தன்மை அடிப்படை கட்டமைப்பின் ஒரு பகுதி என உச்ச நீதிமன்றம் தீர்ப்பளித்தல் (கேசவானந்த பாரதி)\n3. 42வது அரசியலமைப்புத் திருத்தச் சட்டத்தின் மூலம் 'மதச்சார்பற்ற' என்ற சொல் முகவுரையில் வெளிப்படையாகச் சேர்க்கப்படுதல்\n4. மதச்சார்பற்ற கொள்கைகளுக்கு எதிராகச் செயல்படும் மாநில அரசுகளை உறுப்பு 356-ன் கீழ் கலைக்கலாம் என உச்ச நீதிமன்றம் தீர்ப்பளித்தல் (எஸ்.ஆர். பொம்மை)",
+    "question_en": "Arrange the following judicial and legislative milestones regarding the concept of 'Secularism' in India's constitutional history in correct chronological order:\n1. Supreme Court rules that state governments pursuing anti-secular policies can be dismissed under Article 356 (S.R. Bommai)\n2. Supreme Court holds Preamble is not part of Constitution, though general spirit guides ambiguity (Berubari)\n3. Word 'SECULAR' is explicitly inserted into the Preamble by 42nd Constitutional Amendment Act\n4. Supreme Court rules that secular character of Constitution is part of Basic Structure (Kesavananda Bharati)",
+    "question_ta": "இந்திய அரசியலமைப்பு வரலாற்றில் 'மதச்சார்பின்மை' என்ற கருத்து தொடர்பான பின்வரும் நீதித்துறை மற்றும் சட்டமியற்றல் மைல்கற்களை சரியான காலவரிசையில் அமைக்கவும்:\n1. மதச்சார்பற்ற கொள்கைகளுக்கு எதிராகச் செயல்படும் மாநில அரசுகளை உறுப்பு 356-ன் கீழ் கலைக்கலாம் என உச்ச நீதிமன்றம் தீர்ப்பளித்தல் (எஸ்.ஆர். பொம்மை)\n2. தெளிவற்ற நிலையில் பொது உணர்வு வழிகாட்டினாலும், முகவுரை அரசியலமைப்பின் பகுதி அல்ல என உச்ச நீதிமன்றம் கூறுதல் (பெருபாரி)\n3. 42வது அரசியலமைப்புத் திருத்தச் சட்டத்தின் மூலம் 'மதச்சார்பற்ற' என்ற சொல் முகவுரையில் வெளிப்படையாகச் சேர்க்கப்படுதல்\n4. அரசியலமைப்பின் மதச்சார்பற்ற தன்மை அடிப்படை கட்டமைப்பின் ஒரு பகுதி என உச்ச நீதிமன்றம் தீர்ப்பளித்தல் (கேசவானந்த பாரதி)",
     "options_en": [
-      "2 -> 1 -> 3 -> 4",
-      "1 -> 3 -> 2 -> 4",
+      "1 -> 2 -> 3 -> 4",
       "1 -> 2 -> 4 -> 3",
-      "1 -> 2 -> 3 -> 4"
+      "1 -> 3 -> 2 -> 4",
+      "2 -> 4 -> 3 -> 1"
     ],
     "options_ta": [
-      "2 -> 1 -> 3 -> 4",
-      "1 -> 3 -> 2 -> 4",
+      "1 -> 2 -> 3 -> 4",
       "1 -> 2 -> 4 -> 3",
-      "1 -> 2 -> 3 -> 4"
+      "1 -> 3 -> 2 -> 4",
+      "2 -> 4 -> 3 -> 1"
     ],
     "answer": "d",
     "explanation_en": "Chronological Sequence: 1 (Berubari Union: 1960) -> 2 (Kesavananda Bharati secularism ruling: 1973) -> 3 (42nd Amendment insertion: 1976) -> 4 (S.R. Bommai secularism ruling: 1994).",
@@ -1418,8 +1418,8 @@
     "difficulty": "Hard",
     "question_type": "Chronology",
     "question": {
-      "en": "Arrange the following four major historical developments relating to the origin, interpretation, and amendment of the Preamble in correct chronological order:\n1. Drafting and unanimous adoption of the Objectives Resolution by the Constituent Assembly\n2. Supreme Court advisory opinion in Berubari Union Case declaring Preamble is NOT part of the Constitution\n3. 13-Judge Constitutional Bench in Kesavananda Bharati Case declaring Preamble IS part of the Constitution\n4. Parliament enacts the 42nd Constitutional Amendment Act inserting Socialist, Secular, and Integrity",
-      "ta": "முகவுரையின் தோற்றம், விளக்கம் மற்றும் திருத்தம் தொடர்பான பின்வரும் நான்கு முக்கிய வரலாற்று நிகழ்வுகளை சரியான காலவரிசையில் அமைக்கவும்:\n1. அரசியலமைப்பு நிர்ணய அவையால் குறிக்கோள் தீர்மானம் வரைவு செய்யப்பட்டு ஏகமனதாக ஏற்றுக்கொள்ளப்படுதல்\n2. பெருபாரி யூனியன் வழக்கில் முகவுரை அரசியலமைப்பின் பகுதி அல்ல என உச்ச நீதிமன்றம் ஆலோசனைக் கருத்து தெரிவித்தல்\n3. கேசவானந்த பாரதி வழக்கில் 13 நீதிபதிகள் அமர்வு முகவுரை அரசியலமைப்பின் ஒரு பகுதி எனத் தீர்ப்பளித்தல்\n4. நாடாளுமன்றம் 42வது அரசியலமைப்புத் திருத்தச் சட்டத்தை இயற்றி சமதர்ம, மதச்சார்பற்ற, ஒருமைப்பாடு சொற்களைச் சேர்த்தல்"
+      "en": "Arrange the following four major historical developments relating to the origin, interpretation, and amendment of the Preamble in correct chronological order:\n1. 13-Judge Constitutional Bench in Kesavananda Bharati Case declaring Preamble IS part of the Constitution\n2. Drafting and unanimous adoption of the Objectives Resolution by the Constituent Assembly\n3. Parliament enacts the 42nd Constitutional Amendment Act inserting Socialist, Secular, and Integrity\n4. Supreme Court advisory opinion in Berubari Union Case declaring Preamble is NOT part of the Constitution",
+      "ta": "முகவுரையின் தோற்றம், விளக்கம் மற்றும் திருத்தம் தொடர்பான பின்வரும் நான்கு முக்கிய வரலாற்று நிகழ்வுகளை சரியான காலவரிசையில் அமைக்கவும்:\n1. கேசவானந்த பாரதி வழக்கில் 13 நீதிபதிகள் அமர்வு முகவுரை அரசியலமைப்பின் ஒரு பகுதி எனத் தீர்ப்பளித்தல்\n2. அரசியலமைப்பு நிர்ணய அவையால் குறிக்கோள் தீர்மானம் வரைவு செய்யப்பட்டு ஏகமனதாக ஏற்றுக்கொள்ளப்படுதல்\n3. நாடாளுமன்றம் 42வது அரசியலமைப்புத் திருத்தச் சட்டத்தை இயற்றி சமதர்ம, மதச்சார்பற்ற, ஒருமைப்பாடு சொற்களைச் சேர்த்தல்\n4. பெருபாரி யூனியன் வழக்கில் முகவுரை அரசியலமைப்பின் பகுதி அல்ல என உச்ச நீதிமன்றம் ஆலோசனைக் கருத்து தெரிவித்தல்"
     },
     "events": [
       {
@@ -1446,46 +1446,46 @@
     "options": [
       {
         "id": "A",
-        "en": "2 -> 1 -> 3 -> 4",
-        "ta": "2 -> 1 -> 3 -> 4"
-      },
-      {
-        "id": "B",
-        "en": "1 -> 3 -> 2 -> 4",
-        "ta": "1 -> 3 -> 2 -> 4"
-      },
-      {
-        "id": "C",
         "en": "1 -> 2 -> 3 -> 4",
         "ta": "1 -> 2 -> 3 -> 4"
       },
       {
-        "id": "D",
+        "id": "B",
+        "en": "2 -> 4 -> 1 -> 3",
+        "ta": "2 -> 4 -> 1 -> 3"
+      },
+      {
+        "id": "C",
         "en": "1 -> 2 -> 4 -> 3",
         "ta": "1 -> 2 -> 4 -> 3"
+      },
+      {
+        "id": "D",
+        "en": "1 -> 3 -> 2 -> 4",
+        "ta": "1 -> 3 -> 2 -> 4"
       }
     ],
-    "correct_answer": "C",
+    "correct_answer": "B",
     "explanation": {
       "en": "Chronological Sequence: 1 (Objectives Resolution: 1946-1947) -> 2 (Berubari Union: 1960) -> 3 (Kesavananda Bharati: 1973) -> 4 (42nd Amendment Act: 1976).",
       "ta": "சரியான காலவரிசை: 1 (குறிக்கோள் தீர்மானம்: 1946-1947) -> 2 (பெருபாரி யூனியன்: 1960) -> 3 (கேசவானந்த பாரதி: 1973) -> 4 (42வது திருத்தச் சட்டம்: 1976)."
     },
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Objectives Resolution (1946-1947) preceded the Berubari Union case (1960).",
-        "ta": "தவறு. குறிக்கோள் தீர்மானம் (1946-1947) பெருபாரி யூனியன் வழக்குக்கு (1960) முந்தையது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 3 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 3 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "B": {
-        "en": "Incorrect. Berubari (1960) was decided before Kesavananda Bharati (1973).",
-        "ta": "தவறு. பெருபாரி (1960) கேசவானந்த பாரதிக்கு (1973) முந்தையது."
+        "en": "✅ Correct.\nThe correct chronological sequence is '2 -> 4 -> 1 -> 3'.",
+        "ta": "✅ சரி.\nசரியான காலவரிசை '2 -> 4 -> 1 -> 3' ஆகும்."
       },
       "C": {
-        "en": "Correct. 1 (1946-47) -> 2 (1960) -> 3 (1973) -> 4 (1976) accurately reflects the sequence from origin to amendment.",
-        "ta": "சரி. 1 (1946-47) -> 2 (1960) -> 3 (1973) -> 4 (1976) தோற்றத்திலிருந்து திருத்தம் வரையிலான வரிசையைத் துல்லியமாகப் பிரதிபலிக்கிறது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 4 -> 3' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 4 -> 3' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "D": {
-        "en": "Incorrect. Kesavananda Bharati in 1973 (3) paved the way for the 42nd Amendment in 1976 (4).",
-        "ta": "தவறு. 1973-ன் கேசவானந்த பாரதி தீர்ப்பே (3) 1976-ன் 42வது திருத்தத்திற்கு (4) வழிவகுத்தது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 3 -> 2 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 3 -> 2 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       }
     },
     "tnpsc_tip": {
@@ -1512,21 +1512,21 @@
       "Kesavananda Bharati",
       "42nd Amendment"
     ],
-    "question_en": "Arrange the following four major historical developments relating to the origin, interpretation, and amendment of the Preamble in correct chronological order:\n1. Drafting and unanimous adoption of the Objectives Resolution by the Constituent Assembly\n2. Supreme Court advisory opinion in Berubari Union Case declaring Preamble is NOT part of the Constitution\n3. 13-Judge Constitutional Bench in Kesavananda Bharati Case declaring Preamble IS part of the Constitution\n4. Parliament enacts the 42nd Constitutional Amendment Act inserting Socialist, Secular, and Integrity",
-    "question_ta": "முகவுரையின் தோற்றம், விளக்கம் மற்றும் திருத்தம் தொடர்பான பின்வரும் நான்கு முக்கிய வரலாற்று நிகழ்வுகளை சரியான காலவரிசையில் அமைக்கவும்:\n1. அரசியலமைப்பு நிர்ணய அவையால் குறிக்கோள் தீர்மானம் வரைவு செய்யப்பட்டு ஏகமனதாக ஏற்றுக்கொள்ளப்படுதல்\n2. பெருபாரி யூனியன் வழக்கில் முகவுரை அரசியலமைப்பின் பகுதி அல்ல என உச்ச நீதிமன்றம் ஆலோசனைக் கருத்து தெரிவித்தல்\n3. கேசவானந்த பாரதி வழக்கில் 13 நீதிபதிகள் அமர்வு முகவுரை அரசியலமைப்பின் ஒரு பகுதி எனத் தீர்ப்பளித்தல்\n4. நாடாளுமன்றம் 42வது அரசியலமைப்புத் திருத்தச் சட்டத்தை இயற்றி சமதர்ம, மதச்சார்பற்ற, ஒருமைப்பாடு சொற்களைச் சேர்த்தல்",
+    "question_en": "Arrange the following four major historical developments relating to the origin, interpretation, and amendment of the Preamble in correct chronological order:\n1. 13-Judge Constitutional Bench in Kesavananda Bharati Case declaring Preamble IS part of the Constitution\n2. Drafting and unanimous adoption of the Objectives Resolution by the Constituent Assembly\n3. Parliament enacts the 42nd Constitutional Amendment Act inserting Socialist, Secular, and Integrity\n4. Supreme Court advisory opinion in Berubari Union Case declaring Preamble is NOT part of the Constitution",
+    "question_ta": "முகவுரையின் தோற்றம், விளக்கம் மற்றும் திருத்தம் தொடர்பான பின்வரும் நான்கு முக்கிய வரலாற்று நிகழ்வுகளை சரியான காலவரிசையில் அமைக்கவும்:\n1. கேசவானந்த பாரதி வழக்கில் 13 நீதிபதிகள் அமர்வு முகவுரை அரசியலமைப்பின் ஒரு பகுதி எனத் தீர்ப்பளித்தல்\n2. அரசியலமைப்பு நிர்ணய அவையால் குறிக்கோள் தீர்மானம் வரைவு செய்யப்பட்டு ஏகமனதாக ஏற்றுக்கொள்ளப்படுதல்\n3. நாடாளுமன்றம் 42வது அரசியலமைப்புத் திருத்தச் சட்டத்தை இயற்றி சமதர்ம, மதச்சார்பற்ற, ஒருமைப்பாடு சொற்களைச் சேர்த்தல்\n4. பெருபாரி யூனியன் வழக்கில் முகவுரை அரசியலமைப்பின் பகுதி அல்ல என உச்ச நீதிமன்றம் ஆலோசனைக் கருத்து தெரிவித்தல்",
     "options_en": [
-      "2 -> 1 -> 3 -> 4",
-      "1 -> 3 -> 2 -> 4",
       "1 -> 2 -> 3 -> 4",
-      "1 -> 2 -> 4 -> 3"
+      "2 -> 4 -> 1 -> 3",
+      "1 -> 2 -> 4 -> 3",
+      "1 -> 3 -> 2 -> 4"
     ],
     "options_ta": [
-      "2 -> 1 -> 3 -> 4",
-      "1 -> 3 -> 2 -> 4",
       "1 -> 2 -> 3 -> 4",
-      "1 -> 2 -> 4 -> 3"
+      "2 -> 4 -> 1 -> 3",
+      "1 -> 2 -> 4 -> 3",
+      "1 -> 3 -> 2 -> 4"
     ],
-    "answer": "c",
+    "answer": "b",
     "explanation_en": "Chronological Sequence: 1 (Objectives Resolution: 1946-1947) -> 2 (Berubari Union: 1960) -> 3 (Kesavananda Bharati: 1973) -> 4 (42nd Amendment Act: 1976).",
     "explanation_ta": "சரியான காலவரிசை: 1 (குறிக்கோள் தீர்மானம்: 1946-1947) -> 2 (பெருபாரி யூனியன்: 1960) -> 3 (கேசவானந்த பாரதி: 1973) -> 4 (42வது திருத்தச் சட்டம்: 1976)."
   },
@@ -1537,8 +1537,8 @@
     "difficulty": "Hard",
     "question_type": "Chronology",
     "question": {
-      "en": "Arrange the following stages in the evolution of the Preamble's textual description of the Indian Republic in correct chronological order:\n1. Original Preamble declaring India as a 'SOVEREIGN DEMOCRATIC REPUBLIC'\n2. Original Fraternity clause containing 'unity of the Nation'\n3. 42nd Amendment substituting 'SOVEREIGN SOCIALIST SECULAR DEMOCRATIC REPUBLIC'\n4. 42nd Amendment substituting 'unity and integrity of the Nation'",
-      "ta": "இந்தியக் குடியரசின் முகவுரை உரையின் பரிணாம வளர்ச்சியில் பின்வரும் நிலைகளை சரியான காலவரிசையில் அமைக்கவும்:\n1. இந்தியாவை 'இறையாண்மை ஜனநாயகக் குடியரசு' என அறிவித்த அசல் முகவுரை\n2. 'தேசத்தின் ஒற்றுமை' என்பதைக் கொண்டிருந்த அசல் சகோதரத்துவ வாசகம்\n3. 'இறையாண்மை சமதர்ம மதச்சார்பற்ற ஜனநாயகக் குடியரசு' என மாற்றிய 42வது திருத்தம்\n4. 'தேசத்தின் ஒற்றுமையும் ஒருமைப்பாடும்' என மாற்றிய 42வது திருத்தம்"
+      "en": "Arrange the following stages in the evolution of the Preamble's textual description of the Indian Republic in correct chronological order:\n1. Original Fraternity clause containing 'unity of the Nation'\n2. 42nd Amendment substituting 'unity and integrity of the Nation'\n3. Original Preamble declaring India as a 'SOVEREIGN DEMOCRATIC REPUBLIC'\n4. 42nd Amendment substituting 'SOVEREIGN SOCIALIST SECULAR DEMOCRATIC REPUBLIC'",
+      "ta": "இந்தியக் குடியரசின் முகவுரை உரையின் பரிணாம வளர்ச்சியில் பின்வரும் நிலைகளை சரியான காலவரிசையில் அமைக்கவும்:\n1. 'தேசத்தின் ஒற்றுமை' என்பதைக் கொண்டிருந்த அசல் சகோதரத்துவ வாசகம்\n2. 'தேசத்தின் ஒற்றுமையும் ஒருமைப்பாடும்' என மாற்றிய 42வது திருத்தம்\n3. இந்தியாவை 'இறையாண்மை ஜனநாயகக் குடியரசு' என அறிவித்த அசல் முகவுரை\n4. 'இறையாண்மை சமதர்ம மதச்சார்பற்ற ஜனநாயகக் குடியரசு' என மாற்றிய 42வது திருத்தம்"
     },
     "events": [
       {
@@ -1565,46 +1565,46 @@
     "options": [
       {
         "id": "A",
-        "en": "1 -> 2 -> 3 -> 4",
-        "ta": "1 -> 2 -> 3 -> 4"
-      },
-      {
-        "id": "B",
-        "en": "3 -> 4 -> 1 -> 2",
-        "ta": "3 -> 4 -> 1 -> 2"
-      },
-      {
-        "id": "C",
         "en": "1 -> 3 -> 2 -> 4",
         "ta": "1 -> 3 -> 2 -> 4"
       },
       {
+        "id": "B",
+        "en": "1 -> 2 -> 3 -> 4",
+        "ta": "1 -> 2 -> 3 -> 4"
+      },
+      {
+        "id": "C",
+        "en": "1 -> 2 -> 4 -> 3",
+        "ta": "1 -> 2 -> 4 -> 3"
+      },
+      {
         "id": "D",
-        "en": "2 -> 1 -> 4 -> 3",
-        "ta": "2 -> 1 -> 4 -> 3"
+        "en": "3 -> 1 -> 4 -> 2",
+        "ta": "3 -> 1 -> 4 -> 2"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "D",
     "explanation": {
       "en": "Chronological Evolution: 1 & 2 (Original 1950 text: Sovereign Democratic Republic & unity of the Nation) -> 3 & 4 (1976 42nd Amendment: Socialist, Secular added to nature; Integrity added to Fraternity).",
       "ta": "காலவரிசை வளர்ச்சி: 1 & 2 (அசல் 1950 உரை: இறையாண்மை ஜனநாயகக் குடியரசு & தேசத்தின் ஒற்றுமை) -> 3 & 4 (1976 42வது திருத்தம்: சமதர்ம, மதச்சார்பற்ற சேர்க்கை & ஒருமைப்பாடு சேர்க்கை)."
     },
     "why_not_others": {
       "A": {
-        "en": "Correct. 1 & 2 represent the 1950 original text, while 3 & 4 represent the 1976 amended text.",
-        "ta": "சரி. 1 & 2 அசல் 1950 உரையையும், 3 & 4 1976 திருத்தப்பட்ட உரையையும் குறிக்கின்றன."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 3 -> 2 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 3 -> 2 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "B": {
-        "en": "Incorrect. The 1976 amendments (3, 4) cannot precede the 1950 original provisions (1, 2).",
-        "ta": "தவறு. 1976 திருத்தங்கள் (3, 4) 1950 அசல் விதிகளுக்கு (1, 2) முந்தையதாக இருக்க முடியாது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 3 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 3 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "C": {
-        "en": "Incorrect. Original provisions existed simultaneously in 1950 before 1976 amendments.",
-        "ta": "தவறு. அசல் விதிகள் 1976 திருத்தங்களுக்கு முன்பே 1950-ல் ஒன்றாக இருந்தன."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 4 -> 3' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 4 -> 3' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "D": {
-        "en": "Incorrect. Sovereign Democratic Republic (1) was in paragraph 1 of the original 1950 text, while unity of the Nation (2) was in paragraph 4.",
-        "ta": "தவறு. இறையாண்மை ஜனநாயகக் குடியரசு (1) அசல் உரையின் முதல் பத்தியிலும், தேசத்தின் ஒற்றுமை (2) 4வது பத்தியிலும் அமைந்திருந்தது."
+        "en": "✅ Correct.\nThe correct chronological sequence is '3 -> 1 -> 4 -> 2'.",
+        "ta": "✅ சரி.\nசரியான காலவரிசை '3 -> 1 -> 4 -> 2' ஆகும்."
       }
     },
     "tnpsc_tip": {
@@ -1630,21 +1630,21 @@
       "42nd Amendment",
       "Integrity"
     ],
-    "question_en": "Arrange the following stages in the evolution of the Preamble's textual description of the Indian Republic in correct chronological order:\n1. Original Preamble declaring India as a 'SOVEREIGN DEMOCRATIC REPUBLIC'\n2. Original Fraternity clause containing 'unity of the Nation'\n3. 42nd Amendment substituting 'SOVEREIGN SOCIALIST SECULAR DEMOCRATIC REPUBLIC'\n4. 42nd Amendment substituting 'unity and integrity of the Nation'",
-    "question_ta": "இந்தியக் குடியரசின் முகவுரை உரையின் பரிணாம வளர்ச்சியில் பின்வரும் நிலைகளை சரியான காலவரிசையில் அமைக்கவும்:\n1. இந்தியாவை 'இறையாண்மை ஜனநாயகக் குடியரசு' என அறிவித்த அசல் முகவுரை\n2. 'தேசத்தின் ஒற்றுமை' என்பதைக் கொண்டிருந்த அசல் சகோதரத்துவ வாசகம்\n3. 'இறையாண்மை சமதர்ம மதச்சார்பற்ற ஜனநாயகக் குடியரசு' என மாற்றிய 42வது திருத்தம்\n4. 'தேசத்தின் ஒற்றுமையும் ஒருமைப்பாடும்' என மாற்றிய 42வது திருத்தம்",
+    "question_en": "Arrange the following stages in the evolution of the Preamble's textual description of the Indian Republic in correct chronological order:\n1. Original Fraternity clause containing 'unity of the Nation'\n2. 42nd Amendment substituting 'unity and integrity of the Nation'\n3. Original Preamble declaring India as a 'SOVEREIGN DEMOCRATIC REPUBLIC'\n4. 42nd Amendment substituting 'SOVEREIGN SOCIALIST SECULAR DEMOCRATIC REPUBLIC'",
+    "question_ta": "இந்தியக் குடியரசின் முகவுரை உரையின் பரிணாம வளர்ச்சியில் பின்வரும் நிலைகளை சரியான காலவரிசையில் அமைக்கவும்:\n1. 'தேசத்தின் ஒற்றுமை' என்பதைக் கொண்டிருந்த அசல் சகோதரத்துவ வாசகம்\n2. 'தேசத்தின் ஒற்றுமையும் ஒருமைப்பாடும்' என மாற்றிய 42வது திருத்தம்\n3. இந்தியாவை 'இறையாண்மை ஜனநாயகக் குடியரசு' என அறிவித்த அசல் முகவுரை\n4. 'இறையாண்மை சமதர்ம மதச்சார்பற்ற ஜனநாயகக் குடியரசு' என மாற்றிய 42வது திருத்தம்",
     "options_en": [
-      "1 -> 2 -> 3 -> 4",
-      "3 -> 4 -> 1 -> 2",
       "1 -> 3 -> 2 -> 4",
-      "2 -> 1 -> 4 -> 3"
+      "1 -> 2 -> 3 -> 4",
+      "1 -> 2 -> 4 -> 3",
+      "3 -> 1 -> 4 -> 2"
     ],
     "options_ta": [
-      "1 -> 2 -> 3 -> 4",
-      "3 -> 4 -> 1 -> 2",
       "1 -> 3 -> 2 -> 4",
-      "2 -> 1 -> 4 -> 3"
+      "1 -> 2 -> 3 -> 4",
+      "1 -> 2 -> 4 -> 3",
+      "3 -> 1 -> 4 -> 2"
     ],
-    "answer": "a",
+    "answer": "d",
     "explanation_en": "Chronological Evolution: 1 & 2 (Original 1950 text: Sovereign Democratic Republic & unity of the Nation) -> 3 & 4 (1976 42nd Amendment: Socialist, Secular added to nature; Integrity added to Fraternity).",
     "explanation_ta": "காலவரிசை வளர்ச்சி: 1 & 2 (அசல் 1950 உரை: இறையாண்மை ஜனநாயகக் குடியரசு & தேசத்தின் ஒற்றுமை) -> 3 & 4 (1976 42வது திருத்தம்: சமதர்ம, மதச்சார்பற்ற சேர்க்கை & ஒருமைப்பாடு சேர்க்கை)."
   },
@@ -1655,8 +1655,8 @@
     "difficulty": "Hard",
     "question_type": "Chronology",
     "question": {
-      "en": "Arrange the following milestones in the historical debate over whether the Preamble is a part of the Constitution in correct chronological order:\n1. Constituent Assembly formally adopts the motion that 'the Preamble stands part of the Constitution'\n2. Supreme Court in Berubari Union Reference holds that the Preamble is NOT a part of the Constitution\n3. Supreme Court in Kesavananda Bharati Case overrules Berubari and holds that the Preamble IS a part of the Constitution\n4. Supreme Court in LIC of India Case reaffirms that the Preamble is an 'integral part' of the Constitution",
-      "ta": "முகவுரை அரசியலமைப்பின் ஒரு பகுதியா என்ற வரலாற்று விவாதத்தின் பின்வரும் மைல்கற்களை சரியான காலவரிசையில் அமைக்கவும்:\n1. 'முகவுரை அரசியலமைப்பின் ஒரு பகுதியாக அமைகிறது' என்ற தீர்மானத்தை அரசியலமைப்பு நிர்ணய அவை முறையாக ஏற்றுக்கொள்கிறது\n2. பெருபாரி யூனியன் வழக்கில் முகவுரை அரசியலமைப்பின் ஒரு பகுதி அல்ல என்று உச்ச நீதிமன்றம் தீர்ப்பளிக்கிறது\n3. கேசவானந்த பாரதி வழக்கில் உச்ச நீதிமன்றம் பெருபாரி தீர்ப்பை ரத்து செய்து முகவுரை அரசியலமைப்பின் ஒரு பகுதியே எனத் தீர்ப்பளிக்கிறது\n4. எல்.ஐ.சி வழக்கில் முகவுரை அரசியலமைப்பின் 'ஒருங்கிணைந்த பகுதி' என்பதை உச்ச நீதிமன்றம் மீண்டும் உறுதிப்படுத்துகிறது"
+      "en": "Arrange the following milestones in the historical debate over whether the Preamble is a part of the Constitution in correct chronological order:\n1. Supreme Court in LIC of India Case reaffirms that the Preamble is an 'integral part' of the Constitution\n2. Supreme Court in Berubari Union Reference holds that the Preamble is NOT a part of the Constitution\n3. Constituent Assembly formally adopts the motion that 'the Preamble stands part of the Constitution'\n4. Supreme Court in Kesavananda Bharati Case overrules Berubari and holds that the Preamble IS a part of the Constitution",
+      "ta": "முகவுரை அரசியலமைப்பின் ஒரு பகுதியா என்ற வரலாற்று விவாதத்தின் பின்வரும் மைல்கற்களை சரியான காலவரிசையில் அமைக்கவும்:\n1. எல்.ஐ.சி வழக்கில் முகவுரை அரசியலமைப்பின் 'ஒருங்கிணைந்த பகுதி' என்பதை உச்ச நீதிமன்றம் மீண்டும் உறுதிப்படுத்துகிறது\n2. பெருபாரி யூனியன் வழக்கில் முகவுரை அரசியலமைப்பின் ஒரு பகுதி அல்ல என்று உச்ச நீதிமன்றம் தீர்ப்பளிக்கிறது\n3. 'முகவுரை அரசியலமைப்பின் ஒரு பகுதியாக அமைகிறது' என்ற தீர்மானத்தை அரசியலமைப்பு நிர்ணய அவை முறையாக ஏற்றுக்கொள்கிறது\n4. கேசவானந்த பாரதி வழக்கில் உச்ச நீதிமன்றம் பெருபாரி தீர்ப்பை ரத்து செய்து முகவுரை அரசியலமைப்பின் ஒரு பகுதியே எனத் தீர்ப்பளிக்கிறது"
     },
     "events": [
       {
@@ -1683,13 +1683,13 @@
     "options": [
       {
         "id": "A",
-        "en": "2 -> 1 -> 3 -> 4",
-        "ta": "2 -> 1 -> 3 -> 4"
+        "en": "1 -> 2 -> 3 -> 4",
+        "ta": "1 -> 2 -> 3 -> 4"
       },
       {
         "id": "B",
-        "en": "1 -> 2 -> 3 -> 4",
-        "ta": "1 -> 2 -> 3 -> 4"
+        "en": "3 -> 2 -> 4 -> 1",
+        "ta": "3 -> 2 -> 4 -> 1"
       },
       {
         "id": "C",
@@ -1698,8 +1698,8 @@
       },
       {
         "id": "D",
-        "en": "2 -> 3 -> 1 -> 4",
-        "ta": "2 -> 3 -> 1 -> 4"
+        "en": "1 -> 2 -> 4 -> 3",
+        "ta": "1 -> 2 -> 4 -> 3"
       }
     ],
     "correct_answer": "B",
@@ -1709,20 +1709,20 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Incorrect. The Constituent Assembly vote in 1949 (1) happened before the Berubari Case in 1960 (2).",
-        "ta": "தவறு. 1949 அரசியலமைப்பு சபை வாக்கெடுப்பு (1) 1960 பெருபாரி வழக்குக்கு (2) முந்தையது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 3 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 3 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "B": {
-        "en": "Correct. 1 (1949) -> 2 (1960) -> 3 (1973) -> 4 (1995) accurately captures the complete 46-year debate.",
-        "ta": "சரி. 1 (1949) -> 2 (1960) -> 3 (1973) -> 4 (1995) 46 ஆண்டுகால விவாதத்தை முழுமையாகப் பிரதிபலிக்கிறது."
+        "en": "✅ Correct.\nThe correct chronological sequence is '3 -> 2 -> 4 -> 1'.",
+        "ta": "✅ சரி.\nசரியான காலவரிசை '3 -> 2 -> 4 -> 1' ஆகும்."
       },
       "C": {
-        "en": "Incorrect. Berubari (1960) came before Kesavananda Bharati (1973).",
-        "ta": "தவறு. பெருபாரி (1960) கேசவானந்த பாரதிக்கு (1973) முந்தையது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 3 -> 2 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 3 -> 2 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "D": {
-        "en": "Incorrect. Constituent Assembly adoption occurred at the inception in 1949.",
-        "ta": "தவறு. அரசியலமைப்பு சபை ஏற்பு தொடக்கத்திலேயே 1949-ல் நடந்தது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 4 -> 3' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 4 -> 3' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       }
     },
     "tnpsc_tip": {
@@ -1748,19 +1748,19 @@
       "Part of Constitution",
       "Debate"
     ],
-    "question_en": "Arrange the following milestones in the historical debate over whether the Preamble is a part of the Constitution in correct chronological order:\n1. Constituent Assembly formally adopts the motion that 'the Preamble stands part of the Constitution'\n2. Supreme Court in Berubari Union Reference holds that the Preamble is NOT a part of the Constitution\n3. Supreme Court in Kesavananda Bharati Case overrules Berubari and holds that the Preamble IS a part of the Constitution\n4. Supreme Court in LIC of India Case reaffirms that the Preamble is an 'integral part' of the Constitution",
-    "question_ta": "முகவுரை அரசியலமைப்பின் ஒரு பகுதியா என்ற வரலாற்று விவாதத்தின் பின்வரும் மைல்கற்களை சரியான காலவரிசையில் அமைக்கவும்:\n1. 'முகவுரை அரசியலமைப்பின் ஒரு பகுதியாக அமைகிறது' என்ற தீர்மானத்தை அரசியலமைப்பு நிர்ணய அவை முறையாக ஏற்றுக்கொள்கிறது\n2. பெருபாரி யூனியன் வழக்கில் முகவுரை அரசியலமைப்பின் ஒரு பகுதி அல்ல என்று உச்ச நீதிமன்றம் தீர்ப்பளிக்கிறது\n3. கேசவானந்த பாரதி வழக்கில் உச்ச நீதிமன்றம் பெருபாரி தீர்ப்பை ரத்து செய்து முகவுரை அரசியலமைப்பின் ஒரு பகுதியே எனத் தீர்ப்பளிக்கிறது\n4. எல்.ஐ.சி வழக்கில் முகவுரை அரசியலமைப்பின் 'ஒருங்கிணைந்த பகுதி' என்பதை உச்ச நீதிமன்றம் மீண்டும் உறுதிப்படுத்துகிறது",
+    "question_en": "Arrange the following milestones in the historical debate over whether the Preamble is a part of the Constitution in correct chronological order:\n1. Supreme Court in LIC of India Case reaffirms that the Preamble is an 'integral part' of the Constitution\n2. Supreme Court in Berubari Union Reference holds that the Preamble is NOT a part of the Constitution\n3. Constituent Assembly formally adopts the motion that 'the Preamble stands part of the Constitution'\n4. Supreme Court in Kesavananda Bharati Case overrules Berubari and holds that the Preamble IS a part of the Constitution",
+    "question_ta": "முகவுரை அரசியலமைப்பின் ஒரு பகுதியா என்ற வரலாற்று விவாதத்தின் பின்வரும் மைல்கற்களை சரியான காலவரிசையில் அமைக்கவும்:\n1. எல்.ஐ.சி வழக்கில் முகவுரை அரசியலமைப்பின் 'ஒருங்கிணைந்த பகுதி' என்பதை உச்ச நீதிமன்றம் மீண்டும் உறுதிப்படுத்துகிறது\n2. பெருபாரி யூனியன் வழக்கில் முகவுரை அரசியலமைப்பின் ஒரு பகுதி அல்ல என்று உச்ச நீதிமன்றம் தீர்ப்பளிக்கிறது\n3. 'முகவுரை அரசியலமைப்பின் ஒரு பகுதியாக அமைகிறது' என்ற தீர்மானத்தை அரசியலமைப்பு நிர்ணய அவை முறையாக ஏற்றுக்கொள்கிறது\n4. கேசவானந்த பாரதி வழக்கில் உச்ச நீதிமன்றம் பெருபாரி தீர்ப்பை ரத்து செய்து முகவுரை அரசியலமைப்பின் ஒரு பகுதியே எனத் தீர்ப்பளிக்கிறது",
     "options_en": [
-      "2 -> 1 -> 3 -> 4",
       "1 -> 2 -> 3 -> 4",
+      "3 -> 2 -> 4 -> 1",
       "1 -> 3 -> 2 -> 4",
-      "2 -> 3 -> 1 -> 4"
+      "1 -> 2 -> 4 -> 3"
     ],
     "options_ta": [
-      "2 -> 1 -> 3 -> 4",
       "1 -> 2 -> 3 -> 4",
+      "3 -> 2 -> 4 -> 1",
       "1 -> 3 -> 2 -> 4",
-      "2 -> 3 -> 1 -> 4"
+      "1 -> 2 -> 4 -> 3"
     ],
     "answer": "b",
     "explanation_en": "Historical Progression: 1 (Constituent Assembly vote: Oct 17, 1949) -> 2 (Berubari Reference: 1960) -> 3 (Kesavananda Bharati: 1973) -> 4 (LIC of India: 1995).",
@@ -1773,8 +1773,8 @@
     "difficulty": "Hard",
     "question_type": "Chronology",
     "question": {
-      "en": "Arrange the following historic events related to the Preamble in reverse chronological order (from LATEST to EARLIEST):\n1. 42nd Constitutional Amendment Act inserts 'Socialist', 'Secular', and 'Integrity'\n2. Kesavananda Bharati Case judgment establishes Basic Structure Doctrine and Preamble amendability\n3. Berubari Union Case advisory opinion rules Preamble is not a part of the Constitution\n4. Constituent Assembly unanimously adopts the Objectives Resolution moved by Nehru",
-      "ta": "முகவுரை தொடர்பான பின்வரும் வரலாற்று நிகழ்வுகளை தலைகீழ் காலவரிசையில் (மிகப் பிந்தையதிலிருந்து மிக முந்தையது வரை) அமைக்கவும்:\n1. 42வது அரசியலமைப்புத் திருத்தச் சட்டம் 'சமதர்ம', 'மதச்சார்பற்ற' மற்றும் 'ஒருமைப்பாடு' ஆகிய சொற்களைச் சேர்த்தல்\n2. கேசவானந்த பாரதி தீர்ப்பு அடிப்படை கட்டமைப்புக் கோட்பாடு மற்றும் முகவுரையின் திருத்தப்படும் தன்மையை நிறுவுதல்\n3. பெருபாரி யூனியன் ஆலோசனைக் கருத்து முகவுரை அரசியலமைப்பின் பகுதி அல்ல எனத் தீர்ப்பளித்தல்\n4. நேருவால் முன்மொழியப்பட்ட குறிக்கோள் தீர்மானத்தை அரசியலமைப்பு நிர்ணய அவை ஏகமனதாக ஏற்றுக்கொள்வது"
+      "en": "Arrange the following historic events related to the Preamble in reverse chronological order (from LATEST to EARLIEST):\n1. Berubari Union Case advisory opinion rules Preamble is not a part of the Constitution\n2. Constituent Assembly unanimously adopts the Objectives Resolution moved by Nehru\n3. 42nd Constitutional Amendment Act inserts 'Socialist', 'Secular', and 'Integrity'\n4. Kesavananda Bharati Case judgment establishes Basic Structure Doctrine and Preamble amendability",
+      "ta": "முகவுரை தொடர்பான பின்வரும் வரலாற்று நிகழ்வுகளை தலைகீழ் காலவரிசையில் (மிகப் பிந்தையதிலிருந்து மிக முந்தையது வரை) அமைக்கவும்:\n1. பெருபாரி யூனியன் ஆலோசனைக் கருத்து முகவுரை அரசியலமைப்பின் பகுதி அல்ல எனத் தீர்ப்பளித்தல்\n2. நேருவால் முன்மொழியப்பட்ட குறிக்கோள் தீர்மானத்தை அரசியலமைப்பு நிர்ணய அவை ஏகமனதாக ஏற்றுக்கொள்வது\n3. 42வது அரசியலமைப்புத் திருத்தச் சட்டம் 'சமதர்ம', 'மதச்சார்பற்ற' மற்றும் 'ஒருமைப்பாடு' ஆகிய சொற்களைச் சேர்த்தல்\n4. கேசவானந்த பாரதி தீர்ப்பு அடிப்படை கட்டமைப்புக் கோட்பாடு மற்றும் முகவுரையின் திருத்தப்படும் தன்மையை நிறுவுதல்"
     },
     "events": [
       {
@@ -1801,46 +1801,46 @@
     "options": [
       {
         "id": "A",
-        "en": "4 -> 3 -> 2 -> 1",
-        "ta": "4 -> 3 -> 2 -> 1"
+        "en": "1 -> 2 -> 3 -> 4",
+        "ta": "1 -> 2 -> 3 -> 4"
       },
       {
         "id": "B",
-        "en": "1 -> 3 -> 2 -> 4",
-        "ta": "1 -> 3 -> 2 -> 4"
+        "en": "1 -> 2 -> 4 -> 3",
+        "ta": "1 -> 2 -> 4 -> 3"
       },
       {
         "id": "C",
-        "en": "2 -> 1 -> 3 -> 4",
-        "ta": "2 -> 1 -> 3 -> 4"
+        "en": "3 -> 4 -> 1 -> 2",
+        "ta": "3 -> 4 -> 1 -> 2"
       },
       {
         "id": "D",
-        "en": "1 -> 2 -> 3 -> 4",
-        "ta": "1 -> 2 -> 3 -> 4"
+        "en": "1 -> 3 -> 2 -> 4",
+        "ta": "1 -> 3 -> 2 -> 4"
       }
     ],
-    "correct_answer": "D",
+    "correct_answer": "C",
     "explanation": {
       "en": "Reverse Chronological Order (Latest to Earliest): 1 (42nd Amendment: 1976) -> 2 (Kesavananda Bharati: 1973) -> 3 (Berubari Union: 1960) -> 4 (Objectives Resolution adopted: 1947).",
       "ta": "தலைகீழ் காலவரிசை (பிந்தையதிலிருந்து முந்தையது): 1 (42வது திருத்தம்: 1976) -> 2 (கேசவானந்த பாரதி: 1973) -> 3 (பெருபாரி யூனியன்: 1960) -> 4 (குறிக்கோள் தீர்மானம் ஏற்பு: 1947)."
     },
     "why_not_others": {
       "A": {
-        "en": "Incorrect. 4 -> 3 -> 2 -> 1 is earliest to latest, not latest to earliest.",
-        "ta": "தவறு. 4 -> 3 -> 2 -> 1 என்பது முந்தையதிலிருந்து பிந்தையது; பிந்தையதிலிருந்து முந்தையது அல்ல."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 3 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 3 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "B": {
-        "en": "Incorrect. Kesavananda Bharati (1973) is more recent than Berubari Union (1960).",
-        "ta": "தவறு. கேசவானந்த பாரதி (1973) பெருபாரி யூனியனை (1960) விட பிந்தையது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 4 -> 3' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 4 -> 3' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "C": {
-        "en": "Incorrect. 42nd Amendment (1976) is more recent than Kesavananda Bharati (1973).",
-        "ta": "தவறு. 42வது திருத்தம் (1976) கேசவானந்த பாரதியை (1973) விட பிந்தையது."
+        "en": "✅ Correct.\nThe correct chronological sequence is '3 -> 4 -> 1 -> 2'.",
+        "ta": "✅ சரி.\nசரியான காலவரிசை '3 -> 4 -> 1 -> 2' ஆகும்."
       },
       "D": {
-        "en": "Correct. 1 (1976) -> 2 (1973) -> 3 (1960) -> 4 (1947) follows the exact reverse chronological order.",
-        "ta": "சரி. 1 (1976) -> 2 (1973) -> 3 (1960) -> 4 (1947) துல்லியமான தலைகீழ் காலவரிசையாகும்."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 3 -> 2 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 3 -> 2 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       }
     },
     "tnpsc_tip": {
@@ -1865,21 +1865,21 @@
       "Latest to Earliest",
       "Core Timeline"
     ],
-    "question_en": "Arrange the following historic events related to the Preamble in reverse chronological order (from LATEST to EARLIEST):\n1. 42nd Constitutional Amendment Act inserts 'Socialist', 'Secular', and 'Integrity'\n2. Kesavananda Bharati Case judgment establishes Basic Structure Doctrine and Preamble amendability\n3. Berubari Union Case advisory opinion rules Preamble is not a part of the Constitution\n4. Constituent Assembly unanimously adopts the Objectives Resolution moved by Nehru",
-    "question_ta": "முகவுரை தொடர்பான பின்வரும் வரலாற்று நிகழ்வுகளை தலைகீழ் காலவரிசையில் (மிகப் பிந்தையதிலிருந்து மிக முந்தையது வரை) அமைக்கவும்:\n1. 42வது அரசியலமைப்புத் திருத்தச் சட்டம் 'சமதர்ம', 'மதச்சார்பற்ற' மற்றும் 'ஒருமைப்பாடு' ஆகிய சொற்களைச் சேர்த்தல்\n2. கேசவானந்த பாரதி தீர்ப்பு அடிப்படை கட்டமைப்புக் கோட்பாடு மற்றும் முகவுரையின் திருத்தப்படும் தன்மையை நிறுவுதல்\n3. பெருபாரி யூனியன் ஆலோசனைக் கருத்து முகவுரை அரசியலமைப்பின் பகுதி அல்ல எனத் தீர்ப்பளித்தல்\n4. நேருவால் முன்மொழியப்பட்ட குறிக்கோள் தீர்மானத்தை அரசியலமைப்பு நிர்ணய அவை ஏகமனதாக ஏற்றுக்கொள்வது",
+    "question_en": "Arrange the following historic events related to the Preamble in reverse chronological order (from LATEST to EARLIEST):\n1. Berubari Union Case advisory opinion rules Preamble is not a part of the Constitution\n2. Constituent Assembly unanimously adopts the Objectives Resolution moved by Nehru\n3. 42nd Constitutional Amendment Act inserts 'Socialist', 'Secular', and 'Integrity'\n4. Kesavananda Bharati Case judgment establishes Basic Structure Doctrine and Preamble amendability",
+    "question_ta": "முகவுரை தொடர்பான பின்வரும் வரலாற்று நிகழ்வுகளை தலைகீழ் காலவரிசையில் (மிகப் பிந்தையதிலிருந்து மிக முந்தையது வரை) அமைக்கவும்:\n1. பெருபாரி யூனியன் ஆலோசனைக் கருத்து முகவுரை அரசியலமைப்பின் பகுதி அல்ல எனத் தீர்ப்பளித்தல்\n2. நேருவால் முன்மொழியப்பட்ட குறிக்கோள் தீர்மானத்தை அரசியலமைப்பு நிர்ணய அவை ஏகமனதாக ஏற்றுக்கொள்வது\n3. 42வது அரசியலமைப்புத் திருத்தச் சட்டம் 'சமதர்ம', 'மதச்சார்பற்ற' மற்றும் 'ஒருமைப்பாடு' ஆகிய சொற்களைச் சேர்த்தல்\n4. கேசவானந்த பாரதி தீர்ப்பு அடிப்படை கட்டமைப்புக் கோட்பாடு மற்றும் முகவுரையின் திருத்தப்படும் தன்மையை நிறுவுதல்",
     "options_en": [
-      "4 -> 3 -> 2 -> 1",
-      "1 -> 3 -> 2 -> 4",
-      "2 -> 1 -> 3 -> 4",
-      "1 -> 2 -> 3 -> 4"
+      "1 -> 2 -> 3 -> 4",
+      "1 -> 2 -> 4 -> 3",
+      "3 -> 4 -> 1 -> 2",
+      "1 -> 3 -> 2 -> 4"
     ],
     "options_ta": [
-      "4 -> 3 -> 2 -> 1",
-      "1 -> 3 -> 2 -> 4",
-      "2 -> 1 -> 3 -> 4",
-      "1 -> 2 -> 3 -> 4"
+      "1 -> 2 -> 3 -> 4",
+      "1 -> 2 -> 4 -> 3",
+      "3 -> 4 -> 1 -> 2",
+      "1 -> 3 -> 2 -> 4"
     ],
-    "answer": "d",
+    "answer": "c",
     "explanation_en": "Reverse Chronological Order (Latest to Earliest): 1 (42nd Amendment: 1976) -> 2 (Kesavananda Bharati: 1973) -> 3 (Berubari Union: 1960) -> 4 (Objectives Resolution adopted: 1947).",
     "explanation_ta": "தலைகீழ் காலவரிசை (பிந்தையதிலிருந்து முந்தையது): 1 (42வது திருத்தம்: 1976) -> 2 (கேசவானந்த பாரதி: 1973) -> 3 (பெருபாரி யூனியன்: 1960) -> 4 (குறிக்கோள் தீர்மானம் ஏற்பு: 1947)."
   },
@@ -1890,8 +1890,8 @@
     "difficulty": "Hard",
     "question_type": "Chronology",
     "question": {
-      "en": "Arrange the four core ingredients of the Preamble in the exact sequential order as they appear from beginning to end in the constitutional text:\n1. Source of Authority of the Constitution ('WE, THE PEOPLE OF INDIA')\n2. Nature of the Indian State ('SOVEREIGN SOCIALIST SECULAR DEMOCRATIC REPUBLIC')\n3. Statement of Constitutional Objectives ('JUSTICE, LIBERTY, EQUALITY, FRATERNITY')\n4. Date of Adoption and Enactment ('twenty-sixth day of November, 1949')",
-      "ta": "அரசியலமைப்பு உரையில் தொடக்கத்திலிருந்து இறுதி வரை காணப்படும் நான்கு முக்கிய கூறுகளை சரியான வரிசையில் அமைக்கவும்:\n1. அரசியலமைப்பு அதிகாரத்தின் மூலம் ('இந்திய மக்களாகிய நாம்')\n2. இந்திய அரசின் தன்மை ('இறையாண்மை சமதர்ம மதச்சார்பற்ற ஜனநாயக குடியரசு')\n3. அரசியலமைப்பு இலக்குகளின் பிரகடனம் ('நீதி, சுதந்திரம், சமத்துவம், சகோதரத்துவம்')\n4. ஏற்றுக்கொள்ளப்பட்டு இயற்றப்பட்ட நாள் ('நவம்பர் இருபத்தாறாம் நாள், 1949')"
+      "en": "Arrange the four core ingredients of the Preamble in the exact sequential order as they appear from beginning to end in the constitutional text:\n1. Nature of the Indian State ('SOVEREIGN SOCIALIST SECULAR DEMOCRATIC REPUBLIC')\n2. Statement of Constitutional Objectives ('JUSTICE, LIBERTY, EQUALITY, FRATERNITY')\n3. Date of Adoption and Enactment ('twenty-sixth day of November, 1949')\n4. Source of Authority of the Constitution ('WE, THE PEOPLE OF INDIA')",
+      "ta": "அரசியலமைப்பு உரையில் தொடக்கத்திலிருந்து இறுதி வரை காணப்படும் நான்கு முக்கிய கூறுகளை சரியான வரிசையில் அமைக்கவும்:\n1. இந்திய அரசின் தன்மை ('இறையாண்மை சமதர்ம மதச்சார்பற்ற ஜனநாயக குடியரசு')\n2. அரசியலமைப்பு இலக்குகளின் பிரகடனம் ('நீதி, சுதந்திரம், சமத்துவம், சகோதரத்துவம்')\n3. ஏற்றுக்கொள்ளப்பட்டு இயற்றப்பட்ட நாள் ('நவம்பர் இருபத்தாறாம் நாள், 1949')\n4. அரசியலமைப்பு அதிகாரத்தின் மூலம் ('இந்திய மக்களாகிய நாம்')"
     },
     "events": [
       {
@@ -1918,23 +1918,23 @@
     "options": [
       {
         "id": "A",
+        "en": "4 -> 1 -> 2 -> 3",
+        "ta": "4 -> 1 -> 2 -> 3"
+      },
+      {
+        "id": "B",
         "en": "1 -> 2 -> 3 -> 4",
         "ta": "1 -> 2 -> 3 -> 4"
       },
       {
-        "id": "B",
-        "en": "2 -> 1 -> 3 -> 4",
-        "ta": "2 -> 1 -> 3 -> 4"
-      },
-      {
         "id": "C",
-        "en": "1 -> 3 -> 2 -> 4",
-        "ta": "1 -> 3 -> 2 -> 4"
+        "en": "1 -> 2 -> 4 -> 3",
+        "ta": "1 -> 2 -> 4 -> 3"
       },
       {
         "id": "D",
-        "en": "1 -> 2 -> 4 -> 3",
-        "ta": "1 -> 2 -> 4 -> 3"
+        "en": "1 -> 3 -> 2 -> 4",
+        "ta": "1 -> 3 -> 2 -> 4"
       }
     ],
     "correct_answer": "A",
@@ -1944,20 +1944,20 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Correct. 1 -> 2 -> 3 -> 4 matches the vertical reading order of the Preamble text from top to bottom.",
-        "ta": "சரி. 1 -> 2 -> 3 -> 4 முகவுரை உரையை மேலிருந்து கீழாகப் படிக்கும் சரியான வரிசையாகும்."
+        "en": "✅ Correct.\nThe correct chronological sequence is '4 -> 1 -> 2 -> 3'.",
+        "ta": "✅ சரி.\nசரியான காலவரிசை '4 -> 1 -> 2 -> 3' ஆகும்."
       },
       "B": {
-        "en": "Incorrect. The Source of Authority ('We, the People') is the opening phrase before Nature of State.",
-        "ta": "தவறு. அதிகாரத்தின் மூலம் ('மக்களாகிய நாம்') அரசின் தன்மைக்கு முந்தைய தொடக்க வாசகமாகும்."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 3 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 3 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "C": {
-        "en": "Incorrect. Nature of State precedes Objectives in the text.",
-        "ta": "தவறு. உரையில் இலக்குகளுக்கு முன்பாக அரசின் தன்மை வருகிறது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 4 -> 3' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 4 -> 3' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "D": {
-        "en": "Incorrect. Date of adoption is the closing sentence, not placed before Objectives.",
-        "ta": "தவறு. ஏற்றுக்கொள்ளப்பட்ட நாள் இறுதி வாக்கியமாகும், இலக்குகளுக்கு முன்பாக அல்ல."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 3 -> 2 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 3 -> 2 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       }
     },
     "tnpsc_tip": {
@@ -1982,19 +1982,19 @@
       "Structural Sequence",
       "Constitution Day"
     ],
-    "question_en": "Arrange the four core ingredients of the Preamble in the exact sequential order as they appear from beginning to end in the constitutional text:\n1. Source of Authority of the Constitution ('WE, THE PEOPLE OF INDIA')\n2. Nature of the Indian State ('SOVEREIGN SOCIALIST SECULAR DEMOCRATIC REPUBLIC')\n3. Statement of Constitutional Objectives ('JUSTICE, LIBERTY, EQUALITY, FRATERNITY')\n4. Date of Adoption and Enactment ('twenty-sixth day of November, 1949')",
-    "question_ta": "அரசியலமைப்பு உரையில் தொடக்கத்திலிருந்து இறுதி வரை காணப்படும் நான்கு முக்கிய கூறுகளை சரியான வரிசையில் அமைக்கவும்:\n1. அரசியலமைப்பு அதிகாரத்தின் மூலம் ('இந்திய மக்களாகிய நாம்')\n2. இந்திய அரசின் தன்மை ('இறையாண்மை சமதர்ம மதச்சார்பற்ற ஜனநாயக குடியரசு')\n3. அரசியலமைப்பு இலக்குகளின் பிரகடனம் ('நீதி, சுதந்திரம், சமத்துவம், சகோதரத்துவம்')\n4. ஏற்றுக்கொள்ளப்பட்டு இயற்றப்பட்ட நாள் ('நவம்பர் இருபத்தாறாம் நாள், 1949')",
+    "question_en": "Arrange the four core ingredients of the Preamble in the exact sequential order as they appear from beginning to end in the constitutional text:\n1. Nature of the Indian State ('SOVEREIGN SOCIALIST SECULAR DEMOCRATIC REPUBLIC')\n2. Statement of Constitutional Objectives ('JUSTICE, LIBERTY, EQUALITY, FRATERNITY')\n3. Date of Adoption and Enactment ('twenty-sixth day of November, 1949')\n4. Source of Authority of the Constitution ('WE, THE PEOPLE OF INDIA')",
+    "question_ta": "அரசியலமைப்பு உரையில் தொடக்கத்திலிருந்து இறுதி வரை காணப்படும் நான்கு முக்கிய கூறுகளை சரியான வரிசையில் அமைக்கவும்:\n1. இந்திய அரசின் தன்மை ('இறையாண்மை சமதர்ம மதச்சார்பற்ற ஜனநாயக குடியரசு')\n2. அரசியலமைப்பு இலக்குகளின் பிரகடனம் ('நீதி, சுதந்திரம், சமத்துவம், சகோதரத்துவம்')\n3. ஏற்றுக்கொள்ளப்பட்டு இயற்றப்பட்ட நாள் ('நவம்பர் இருபத்தாறாம் நாள், 1949')\n4. அரசியலமைப்பு அதிகாரத்தின் மூலம் ('இந்திய மக்களாகிய நாம்')",
     "options_en": [
+      "4 -> 1 -> 2 -> 3",
       "1 -> 2 -> 3 -> 4",
-      "2 -> 1 -> 3 -> 4",
-      "1 -> 3 -> 2 -> 4",
-      "1 -> 2 -> 4 -> 3"
+      "1 -> 2 -> 4 -> 3",
+      "1 -> 3 -> 2 -> 4"
     ],
     "options_ta": [
+      "4 -> 1 -> 2 -> 3",
       "1 -> 2 -> 3 -> 4",
-      "2 -> 1 -> 3 -> 4",
-      "1 -> 3 -> 2 -> 4",
-      "1 -> 2 -> 4 -> 3"
+      "1 -> 2 -> 4 -> 3",
+      "1 -> 3 -> 2 -> 4"
     ],
     "answer": "a",
     "explanation_en": "Structural Sequence of Preamble: 1 (Source of Authority: 'We, the People...') -> 2 (Nature of State: 'Sovereign Socialist...') -> 3 (Objectives: 'Justice, Liberty...') -> 4 (Date of Adoption: '26th November 1949').",
@@ -2007,8 +2007,8 @@
     "difficulty": "Hard",
     "question_type": "Chronology",
     "question": {
-      "en": "Arrange the following developments regarding the power of Parliament to amend the Constitution (Article 368) vis-a-vis the Preamble in correct chronological order:\n1. Supreme Court holds that Preamble is neither a source of power nor a limitation on legislative powers (Berubari)\n2. Parliament enacts the 24th Constitutional Amendment Act clarifying its constituent power under Article 368\n3. Supreme Court upholds Article 368 power to amend Preamble subject to Basic Structure (Kesavananda Bharati)\n4. Parliament amends the Preamble for the first and only time by passing the 42nd Amendment Act",
-      "ta": "முகவுரை மற்றும் அரசியலமைப்பைத் திருத்துவதற்கான நாடாளுமன்றத்தின் அதிகாரம் (உறுப்பு 368) தொடர்பான பின்வரும் முன்னேற்றங்களை சரியான காலவரிசையில் அமைக்கவும்:\n1. முகவுரை சட்டமன்றத்திற்கு அதிகார மூலமும் அல்ல, அதிகாரத்தின் மீதான வரம்பும் அல்ல என உச்ச நீதிமன்றம் தீர்ப்பளித்தல் (பெருபாரி)\n2. உறுப்பு 368-ன் கீழ் தனது அரசியலமைப்பு அதிகாரத்தை தெளிவுபடுத்தி நாடாளுமன்றம் 24வது அரசியலமைப்புத் திருத்தச் சட்டத்தை இயற்றுதல்\n3. அடிப்படை கட்டமைப்புக்கு உட்பட்டு முகவுரையைத் திருத்த உறுப்பு 368 அதிகாரம் அளிக்கிறது என உச்ச நீதிமன்றம் உறுதி செய்தல் (கேசவானந்த பாரதி)\n4. 42வது திருத்தச் சட்டத்தை நிறைவேற்றி நாடாளுமன்றம் முதன்முறையாகவும் ஒரே முறையாகவும் முகவுரையைத் திருத்துதல்"
+      "en": "Arrange the following developments regarding the power of Parliament to amend the Constitution (Article 368) vis-a-vis the Preamble in correct chronological order:\n1. Parliament amends the Preamble for the first and only time by passing the 42nd Amendment Act\n2. Supreme Court holds that Preamble is neither a source of power nor a limitation on legislative powers (Berubari)\n3. Parliament enacts the 24th Constitutional Amendment Act clarifying its constituent power under Article 368\n4. Supreme Court upholds Article 368 power to amend Preamble subject to Basic Structure (Kesavananda Bharati)",
+      "ta": "முகவுரை மற்றும் அரசியலமைப்பைத் திருத்துவதற்கான நாடாளுமன்றத்தின் அதிகாரம் (உறுப்பு 368) தொடர்பான பின்வரும் முன்னேற்றங்களை சரியான காலவரிசையில் அமைக்கவும்:\n1. 42வது திருத்தச் சட்டத்தை நிறைவேற்றி நாடாளுமன்றம் முதன்முறையாகவும் ஒரே முறையாகவும் முகவுரையைத் திருத்துதல்\n2. முகவுரை சட்டமன்றத்திற்கு அதிகார மூலமும் அல்ல, அதிகாரத்தின் மீதான வரம்பும் அல்ல என உச்ச நீதிமன்றம் தீர்ப்பளித்தல் (பெருபாரி)\n3. உறுப்பு 368-ன் கீழ் தனது அரசியலமைப்பு அதிகாரத்தை தெளிவுபடுத்தி நாடாளுமன்றம் 24வது அரசியலமைப்புத் திருத்தச் சட்டத்தை இயற்றுதல்\n4. அடிப்படை கட்டமைப்புக்கு உட்பட்டு முகவுரையைத் திருத்த உறுப்பு 368 அதிகாரம் அளிக்கிறது என உச்ச நீதிமன்றம் உறுதி செய்தல் (கேசவானந்த பாரதி)"
     },
     "events": [
       {
@@ -2035,8 +2035,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 -> 3 -> 2 -> 4",
-        "ta": "1 -> 3 -> 2 -> 4"
+        "en": "1 -> 2 -> 4 -> 3",
+        "ta": "1 -> 2 -> 4 -> 3"
       },
       {
         "id": "B",
@@ -2045,36 +2045,36 @@
       },
       {
         "id": "C",
-        "en": "2 -> 1 -> 3 -> 4",
-        "ta": "2 -> 1 -> 3 -> 4"
+        "en": "2 -> 3 -> 4 -> 1",
+        "ta": "2 -> 3 -> 4 -> 1"
       },
       {
         "id": "D",
-        "en": "1 -> 2 -> 4 -> 3",
-        "ta": "1 -> 2 -> 4 -> 3"
+        "en": "1 -> 3 -> 2 -> 4",
+        "ta": "1 -> 3 -> 2 -> 4"
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "C",
     "explanation": {
       "en": "Chronological Sequence: 1 (Berubari: 1960) -> 2 (24th Amendment: 1971) -> 3 (Kesavananda Bharati: 1973) -> 4 (42nd Amendment: 1976).",
       "ta": "சரியான காலவரிசை: 1 (பெருபாரி: 1960) -> 2 (24வது திருத்தம்: 1971) -> 3 (கேசவானந்த பாரதி: 1973) -> 4 (42வது திருத்தம்: 1976)."
     },
     "why_not_others": {
       "A": {
-        "en": "Incorrect. 24th Amendment (1971) was enacted before Kesavananda Bharati was decided in 1973.",
-        "ta": "தவறு. 24வது திருத்தம் (1971) கேசவானந்த பாரதி தீர்ப்பிற்கு (1973) முன்பாக இயற்றப்பட்டது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 4 -> 3' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 4 -> 3' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "B": {
-        "en": "Correct. 1 (1960) -> 2 (1971) -> 3 (1973) -> 4 (1976) reflects the exact constitutional and legislative timeline.",
-        "ta": "சரி. 1 (1960) -> 2 (1971) -> 3 (1973) -> 4 (1976) துல்லியமான அரசியலமைப்பு மற்றும் சட்ட காலவரிசையைப் பிரதிபலிக்கிறது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 3 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 3 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "C": {
-        "en": "Incorrect. Berubari (1960) came before the 24th Amendment (1971).",
-        "ta": "தவறு. பெருபாரி (1960) 24வது திருத்தத்திற்கு (1971) முந்தையது."
+        "en": "✅ Correct.\nThe correct chronological sequence is '2 -> 3 -> 4 -> 1'.",
+        "ta": "✅ சரி.\nசரியான காலவரிசை '2 -> 3 -> 4 -> 1' ஆகும்."
       },
       "D": {
-        "en": "Incorrect. 42nd Amendment in 1976 (4) followed Kesavananda Bharati in 1973 (3).",
-        "ta": "தவறு. 1976-ன் 42வது திருத்தம் (4) 1973-ன் கேசவானந்த பாரதிக்கு (3) பின்னரே வந்தது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 3 -> 2 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 3 -> 2 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       }
     },
     "tnpsc_tip": {
@@ -2100,21 +2100,21 @@
       "42nd Amendment",
       "Amendability"
     ],
-    "question_en": "Arrange the following developments regarding the power of Parliament to amend the Constitution (Article 368) vis-a-vis the Preamble in correct chronological order:\n1. Supreme Court holds that Preamble is neither a source of power nor a limitation on legislative powers (Berubari)\n2. Parliament enacts the 24th Constitutional Amendment Act clarifying its constituent power under Article 368\n3. Supreme Court upholds Article 368 power to amend Preamble subject to Basic Structure (Kesavananda Bharati)\n4. Parliament amends the Preamble for the first and only time by passing the 42nd Amendment Act",
-    "question_ta": "முகவுரை மற்றும் அரசியலமைப்பைத் திருத்துவதற்கான நாடாளுமன்றத்தின் அதிகாரம் (உறுப்பு 368) தொடர்பான பின்வரும் முன்னேற்றங்களை சரியான காலவரிசையில் அமைக்கவும்:\n1. முகவுரை சட்டமன்றத்திற்கு அதிகார மூலமும் அல்ல, அதிகாரத்தின் மீதான வரம்பும் அல்ல என உச்ச நீதிமன்றம் தீர்ப்பளித்தல் (பெருபாரி)\n2. உறுப்பு 368-ன் கீழ் தனது அரசியலமைப்பு அதிகாரத்தை தெளிவுபடுத்தி நாடாளுமன்றம் 24வது அரசியலமைப்புத் திருத்தச் சட்டத்தை இயற்றுதல்\n3. அடிப்படை கட்டமைப்புக்கு உட்பட்டு முகவுரையைத் திருத்த உறுப்பு 368 அதிகாரம் அளிக்கிறது என உச்ச நீதிமன்றம் உறுதி செய்தல் (கேசவானந்த பாரதி)\n4. 42வது திருத்தச் சட்டத்தை நிறைவேற்றி நாடாளுமன்றம் முதன்முறையாகவும் ஒரே முறையாகவும் முகவுரையைத் திருத்துதல்",
+    "question_en": "Arrange the following developments regarding the power of Parliament to amend the Constitution (Article 368) vis-a-vis the Preamble in correct chronological order:\n1. Parliament amends the Preamble for the first and only time by passing the 42nd Amendment Act\n2. Supreme Court holds that Preamble is neither a source of power nor a limitation on legislative powers (Berubari)\n3. Parliament enacts the 24th Constitutional Amendment Act clarifying its constituent power under Article 368\n4. Supreme Court upholds Article 368 power to amend Preamble subject to Basic Structure (Kesavananda Bharati)",
+    "question_ta": "முகவுரை மற்றும் அரசியலமைப்பைத் திருத்துவதற்கான நாடாளுமன்றத்தின் அதிகாரம் (உறுப்பு 368) தொடர்பான பின்வரும் முன்னேற்றங்களை சரியான காலவரிசையில் அமைக்கவும்:\n1. 42வது திருத்தச் சட்டத்தை நிறைவேற்றி நாடாளுமன்றம் முதன்முறையாகவும் ஒரே முறையாகவும் முகவுரையைத் திருத்துதல்\n2. முகவுரை சட்டமன்றத்திற்கு அதிகார மூலமும் அல்ல, அதிகாரத்தின் மீதான வரம்பும் அல்ல என உச்ச நீதிமன்றம் தீர்ப்பளித்தல் (பெருபாரி)\n3. உறுப்பு 368-ன் கீழ் தனது அரசியலமைப்பு அதிகாரத்தை தெளிவுபடுத்தி நாடாளுமன்றம் 24வது அரசியலமைப்புத் திருத்தச் சட்டத்தை இயற்றுதல்\n4. அடிப்படை கட்டமைப்புக்கு உட்பட்டு முகவுரையைத் திருத்த உறுப்பு 368 அதிகாரம் அளிக்கிறது என உச்ச நீதிமன்றம் உறுதி செய்தல் (கேசவானந்த பாரதி)",
     "options_en": [
-      "1 -> 3 -> 2 -> 4",
+      "1 -> 2 -> 4 -> 3",
       "1 -> 2 -> 3 -> 4",
-      "2 -> 1 -> 3 -> 4",
-      "1 -> 2 -> 4 -> 3"
+      "2 -> 3 -> 4 -> 1",
+      "1 -> 3 -> 2 -> 4"
     ],
     "options_ta": [
-      "1 -> 3 -> 2 -> 4",
+      "1 -> 2 -> 4 -> 3",
       "1 -> 2 -> 3 -> 4",
-      "2 -> 1 -> 3 -> 4",
-      "1 -> 2 -> 4 -> 3"
+      "2 -> 3 -> 4 -> 1",
+      "1 -> 3 -> 2 -> 4"
     ],
-    "answer": "b",
+    "answer": "c",
     "explanation_en": "Chronological Sequence: 1 (Berubari: 1960) -> 2 (24th Amendment: 1971) -> 3 (Kesavananda Bharati: 1973) -> 4 (42nd Amendment: 1976).",
     "explanation_ta": "சரியான காலவரிசை: 1 (பெருபாரி: 1960) -> 2 (24வது திருத்தம்: 1971) -> 3 (கேசவானந்த பாரதி: 1973) -> 4 (42வது திருத்தம்: 1976)."
   },
@@ -2125,8 +2125,8 @@
     "difficulty": "Hard",
     "question_type": "Chronology",
     "question": {
-      "en": "Arrange the following four specific calendar dates related to the evolution and enactment of the Preamble and Constitution in exact chronological order:\n1. December 13, 1946: Jawaharlal Nehru moves the Objectives Resolution\n2. January 22, 1947: Constituent Assembly adopts the Objectives Resolution\n3. November 26, 1949: Constitution and Preamble are adopted and enacted\n4. January 26, 1950: Constitution and Preamble come into full commencement",
-      "ta": "முகவுரை மற்றும் அரசியலமைப்பின் உருவாக்கம் தொடர்பான பின்வரும் நான்கு குறிப்பிட்ட தேதிகளை சரியான காலவரிசையில் அமைக்கவும்:\n1. டிசம்பர் 13, 1946: ஜவஹர்லால் நேரு குறிக்கோள் தீர்மானத்தை முன்மொழிகிறார்\n2. ஜனவரி 22, 1947: அரசியலமைப்பு நிர்ணய அவை குறிக்கோள் தீர்மானத்தை ஏற்றுக்கொள்கிறது\n3. நவம்பர் 26, 1949: அரசியலமைப்பு மற்றும் முகவுரை ஏற்றுக்கொள்ளப்பட்டு இயற்றப்படுகிறது\n4. ஜனவரி 26, 1950: அரசியலமைப்பு மற்றும் முகவுரை முழுமையாக நடைமுறைக்கு வருகிறது"
+      "en": "Arrange the following four specific calendar dates related to the evolution and enactment of the Preamble and Constitution in exact chronological order:\n1. November 26, 1949: Constitution and Preamble are adopted and enacted\n2. January 22, 1947: Constituent Assembly adopts the Objectives Resolution\n3. January 26, 1950: Constitution and Preamble come into full commencement\n4. December 13, 1946: Jawaharlal Nehru moves the Objectives Resolution",
+      "ta": "முகவுரை மற்றும் அரசியலமைப்பின் உருவாக்கம் தொடர்பான பின்வரும் நான்கு குறிப்பிட்ட தேதிகளை சரியான காலவரிசையில் அமைக்கவும்:\n1. நவம்பர் 26, 1949: அரசியலமைப்பு மற்றும் முகவுரை ஏற்றுக்கொள்ளப்பட்டு இயற்றப்படுகிறது\n2. ஜனவரி 22, 1947: அரசியலமைப்பு நிர்ணய அவை குறிக்கோள் தீர்மானத்தை ஏற்றுக்கொள்கிறது\n3. ஜனவரி 26, 1950: அரசியலமைப்பு மற்றும் முகவுரை முழுமையாக நடைமுறைக்கு வருகிறது\n4. டிசம்பர் 13, 1946: ஜவஹர்லால் நேரு குறிக்கோள் தீர்மானத்தை முன்மொழிகிறார்"
     },
     "events": [
       {
@@ -2153,46 +2153,46 @@
     "options": [
       {
         "id": "A",
-        "en": "2 -> 1 -> 3 -> 4",
-        "ta": "2 -> 1 -> 3 -> 4"
-      },
-      {
-        "id": "B",
-        "en": "1 -> 3 -> 2 -> 4",
-        "ta": "1 -> 3 -> 2 -> 4"
-      },
-      {
-        "id": "C",
         "en": "1 -> 2 -> 3 -> 4",
         "ta": "1 -> 2 -> 3 -> 4"
       },
       {
-        "id": "D",
+        "id": "B",
         "en": "1 -> 2 -> 4 -> 3",
         "ta": "1 -> 2 -> 4 -> 3"
+      },
+      {
+        "id": "C",
+        "en": "1 -> 3 -> 2 -> 4",
+        "ta": "1 -> 3 -> 2 -> 4"
+      },
+      {
+        "id": "D",
+        "en": "4 -> 2 -> 1 -> 3",
+        "ta": "4 -> 2 -> 1 -> 3"
       }
     ],
-    "correct_answer": "C",
+    "correct_answer": "D",
     "explanation": {
       "en": "Exact Date Sequence: 1 (Dec 13, 1946) -> 2 (Jan 22, 1947) -> 3 (Nov 26, 1949) -> 4 (Jan 26, 1950).",
       "ta": "துல்லியமான தேதி வரிசை: 1 (டிசம்பர் 13, 1946) -> 2 (ஜனவரி 22, 1947) -> 3 (நவம்பர் 26, 1949) -> 4 (ஜனவரி 26, 1950)."
     },
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Moving the resolution (Dec 13, 1946) came before its adoption (Jan 22, 1947).",
-        "ta": "தவறு. தீர்மானத்தை முன்மொழிந்தது (டிசம்பர் 13, 1946) அது ஏற்றுக்கொள்ளப்பட்டதற்கு (ஜனவரி 22, 1947) முந்தையது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 3 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 3 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "B": {
-        "en": "Incorrect. Jan 22, 1947 (2) preceded Nov 26, 1949 (3).",
-        "ta": "தவறு. ஜனவரி 22, 1947 (2) நவம்பர் 26, 1949-க்கு (3) முந்தையது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 4 -> 3' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 4 -> 3' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "C": {
-        "en": "Correct. Dec 13, 1946 -> Jan 22, 1947 -> Nov 26, 1949 -> Jan 26, 1950 is the exact chronological date sequence.",
-        "ta": "சரி. டிசம்பர் 13, 1946 -> ஜனவரி 22, 1947 -> நவம்பர் 26, 1949 -> ஜனவரி 26, 1950 துல்லியமான காலவரிசைத் தேதிகள்."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 3 -> 2 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 3 -> 2 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "D": {
-        "en": "Incorrect. Adoption date (Nov 26, 1949) preceded commencement date (Jan 26, 1950).",
-        "ta": "தவறு. ஏற்றுக்கொள்ளப்பட்ட நாள் (நவம்பர் 26, 1949) நடைமுறைக்கு வந்த நாளுக்கு (ஜனவரி 26, 1950) முந்தையது."
+        "en": "✅ Correct.\nThe correct chronological sequence is '4 -> 2 -> 1 -> 3'.",
+        "ta": "✅ சரி.\nசரியான காலவரிசை '4 -> 2 -> 1 -> 3' ஆகும்."
       }
     },
     "tnpsc_tip": {
@@ -2218,21 +2218,21 @@
       "Objectives Resolution",
       "Adoption vs Commencement"
     ],
-    "question_en": "Arrange the following four specific calendar dates related to the evolution and enactment of the Preamble and Constitution in exact chronological order:\n1. December 13, 1946: Jawaharlal Nehru moves the Objectives Resolution\n2. January 22, 1947: Constituent Assembly adopts the Objectives Resolution\n3. November 26, 1949: Constitution and Preamble are adopted and enacted\n4. January 26, 1950: Constitution and Preamble come into full commencement",
-    "question_ta": "முகவுரை மற்றும் அரசியலமைப்பின் உருவாக்கம் தொடர்பான பின்வரும் நான்கு குறிப்பிட்ட தேதிகளை சரியான காலவரிசையில் அமைக்கவும்:\n1. டிசம்பர் 13, 1946: ஜவஹர்லால் நேரு குறிக்கோள் தீர்மானத்தை முன்மொழிகிறார்\n2. ஜனவரி 22, 1947: அரசியலமைப்பு நிர்ணய அவை குறிக்கோள் தீர்மானத்தை ஏற்றுக்கொள்கிறது\n3. நவம்பர் 26, 1949: அரசியலமைப்பு மற்றும் முகவுரை ஏற்றுக்கொள்ளப்பட்டு இயற்றப்படுகிறது\n4. ஜனவரி 26, 1950: அரசியலமைப்பு மற்றும் முகவுரை முழுமையாக நடைமுறைக்கு வருகிறது",
+    "question_en": "Arrange the following four specific calendar dates related to the evolution and enactment of the Preamble and Constitution in exact chronological order:\n1. November 26, 1949: Constitution and Preamble are adopted and enacted\n2. January 22, 1947: Constituent Assembly adopts the Objectives Resolution\n3. January 26, 1950: Constitution and Preamble come into full commencement\n4. December 13, 1946: Jawaharlal Nehru moves the Objectives Resolution",
+    "question_ta": "முகவுரை மற்றும் அரசியலமைப்பின் உருவாக்கம் தொடர்பான பின்வரும் நான்கு குறிப்பிட்ட தேதிகளை சரியான காலவரிசையில் அமைக்கவும்:\n1. நவம்பர் 26, 1949: அரசியலமைப்பு மற்றும் முகவுரை ஏற்றுக்கொள்ளப்பட்டு இயற்றப்படுகிறது\n2. ஜனவரி 22, 1947: அரசியலமைப்பு நிர்ணய அவை குறிக்கோள் தீர்மானத்தை ஏற்றுக்கொள்கிறது\n3. ஜனவரி 26, 1950: அரசியலமைப்பு மற்றும் முகவுரை முழுமையாக நடைமுறைக்கு வருகிறது\n4. டிசம்பர் 13, 1946: ஜவஹர்லால் நேரு குறிக்கோள் தீர்மானத்தை முன்மொழிகிறார்",
     "options_en": [
-      "2 -> 1 -> 3 -> 4",
-      "1 -> 3 -> 2 -> 4",
       "1 -> 2 -> 3 -> 4",
-      "1 -> 2 -> 4 -> 3"
+      "1 -> 2 -> 4 -> 3",
+      "1 -> 3 -> 2 -> 4",
+      "4 -> 2 -> 1 -> 3"
     ],
     "options_ta": [
-      "2 -> 1 -> 3 -> 4",
-      "1 -> 3 -> 2 -> 4",
       "1 -> 2 -> 3 -> 4",
-      "1 -> 2 -> 4 -> 3"
+      "1 -> 2 -> 4 -> 3",
+      "1 -> 3 -> 2 -> 4",
+      "4 -> 2 -> 1 -> 3"
     ],
-    "answer": "c",
+    "answer": "d",
     "explanation_en": "Exact Date Sequence: 1 (Dec 13, 1946) -> 2 (Jan 22, 1947) -> 3 (Nov 26, 1949) -> 4 (Jan 26, 1950).",
     "explanation_ta": "துல்லியமான தேதி வரிசை: 1 (டிசம்பர் 13, 1946) -> 2 (ஜனவரி 22, 1947) -> 3 (நவம்பர் 26, 1949) -> 4 (ஜனவரி 26, 1950)."
   },
@@ -2243,8 +2243,8 @@
     "difficulty": "Hard",
     "question_type": "Chronology",
     "question": {
-      "en": "Arrange the following landmark Supreme Court cases citing and interpreting the Preamble in correct chronological order:\n1. In re Berubari Union Case\n2. Kesavananda Bharati v. State of Kerala\n3. Maneka Gandhi v. Union of India\n4. LIC of India v. Consumer Education and Research Centre",
-      "ta": "முகவுரையை மேற்கோள் காட்டி விளக்கிய உச்ச நீதிமன்றத்தின் பின்வரும் முக்கிய வழக்குகளை சரியான காலவரிசையில் அமைக்கவும்:\n1. பெருபாரி யூனியன் வழக்கு (In re Berubari Union)\n2. கேசவானந்த பாரதி எதிர் கேரள அரசு (Kesavananda Bharati v. State of Kerala)\n3. மேனகா காந்தி எதிர் இந்திய யூனியன் (Maneka Gandhi v. Union of India)\n4. எல்.ஐ.சி எதிர் நுகர்வோர் கல்வி மற்றும் ஆராய்ச்சி மையம் (LIC of India v. CERC)"
+      "en": "Arrange the following landmark Supreme Court cases citing and interpreting the Preamble in correct chronological order:\n1. Kesavananda Bharati v. State of Kerala\n2. In re Berubari Union Case\n3. LIC of India v. Consumer Education and Research Centre\n4. Maneka Gandhi v. Union of India",
+      "ta": "முகவுரையை மேற்கோள் காட்டி விளக்கிய உச்ச நீதிமன்றத்தின் பின்வரும் முக்கிய வழக்குகளை சரியான காலவரிசையில் அமைக்கவும்:\n1. கேசவானந்த பாரதி எதிர் கேரள அரசு (Kesavananda Bharati v. State of Kerala)\n2. பெருபாரி யூனியன் வழக்கு (In re Berubari Union)\n3. எல்.ஐ.சி எதிர் நுகர்வோர் கல்வி மற்றும் ஆராய்ச்சி மையம் (LIC of India v. CERC)\n4. மேனகா காந்தி எதிர் இந்திய யூனியன் (Maneka Gandhi v. Union of India)"
     },
     "events": [
       {
@@ -2271,46 +2271,46 @@
     "options": [
       {
         "id": "A",
-        "en": "2 -> 1 -> 3 -> 4",
-        "ta": "2 -> 1 -> 3 -> 4"
+        "en": "1 -> 2 -> 3 -> 4",
+        "ta": "1 -> 2 -> 3 -> 4"
       },
       {
         "id": "B",
-        "en": "1 -> 3 -> 2 -> 4",
-        "ta": "1 -> 3 -> 2 -> 4"
-      },
-      {
-        "id": "C",
         "en": "1 -> 2 -> 4 -> 3",
         "ta": "1 -> 2 -> 4 -> 3"
       },
       {
+        "id": "C",
+        "en": "2 -> 1 -> 4 -> 3",
+        "ta": "2 -> 1 -> 4 -> 3"
+      },
+      {
         "id": "D",
-        "en": "1 -> 2 -> 3 -> 4",
-        "ta": "1 -> 2 -> 3 -> 4"
+        "en": "1 -> 3 -> 2 -> 4",
+        "ta": "1 -> 3 -> 2 -> 4"
       }
     ],
-    "correct_answer": "D",
+    "correct_answer": "C",
     "explanation": {
       "en": "Chronological Sequence: 1 (Berubari Union: 1960) -> 2 (Kesavananda Bharati: 1973) -> 3 (Maneka Gandhi: 1978) -> 4 (LIC of India: 1995).",
       "ta": "சரியான காலவரிசை: 1 (பெருபாரி யூனியன்: 1960) -> 2 (கேசவானந்த பாரதி: 1973) -> 3 (மேனகா காந்தி: 1978) -> 4 (எல்ஐசி வழக்கு: 1995)."
     },
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Berubari (1960) preceded Kesavananda Bharati (1973).",
-        "ta": "தவறு. பெருபாரி (1960) கேசவானந்த பாரதிக்கு (1973) முந்தையது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 3 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 3 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "B": {
-        "en": "Incorrect. Kesavananda Bharati (1973) preceded Maneka Gandhi (1978).",
-        "ta": "தவறு. கேசவானந்த பாரதி (1973) மேனகா காந்திக்கு (1978) முந்தையது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 4 -> 3' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 4 -> 3' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "C": {
-        "en": "Incorrect. Maneka Gandhi (1978) came before LIC of India (1995).",
-        "ta": "தவறு. மேனகா காந்தி (1978) எல்ஐசி வழக்குக்கு (1995) முந்தையது."
+        "en": "✅ Correct.\nThe correct chronological sequence is '2 -> 1 -> 4 -> 3'.",
+        "ta": "✅ சரி.\nசரியான காலவரிசை '2 -> 1 -> 4 -> 3' ஆகும்."
       },
       "D": {
-        "en": "Correct. 1 (1960) -> 2 (1973) -> 3 (1978) -> 4 (1995) is the accurate chronological order.",
-        "ta": "சரி. 1 (1960) -> 2 (1973) -> 3 (1978) -> 4 (1995) துல்லியமான காலவரிசையாகும்."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 3 -> 2 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 3 -> 2 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       }
     },
     "tnpsc_tip": {
@@ -2334,21 +2334,21 @@
       "Case Chronology",
       "Judicial Precedents"
     ],
-    "question_en": "Arrange the following landmark Supreme Court cases citing and interpreting the Preamble in correct chronological order:\n1. In re Berubari Union Case\n2. Kesavananda Bharati v. State of Kerala\n3. Maneka Gandhi v. Union of India\n4. LIC of India v. Consumer Education and Research Centre",
-    "question_ta": "முகவுரையை மேற்கோள் காட்டி விளக்கிய உச்ச நீதிமன்றத்தின் பின்வரும் முக்கிய வழக்குகளை சரியான காலவரிசையில் அமைக்கவும்:\n1. பெருபாரி யூனியன் வழக்கு (In re Berubari Union)\n2. கேசவானந்த பாரதி எதிர் கேரள அரசு (Kesavananda Bharati v. State of Kerala)\n3. மேனகா காந்தி எதிர் இந்திய யூனியன் (Maneka Gandhi v. Union of India)\n4. எல்.ஐ.சி எதிர் நுகர்வோர் கல்வி மற்றும் ஆராய்ச்சி மையம் (LIC of India v. CERC)",
+    "question_en": "Arrange the following landmark Supreme Court cases citing and interpreting the Preamble in correct chronological order:\n1. Kesavananda Bharati v. State of Kerala\n2. In re Berubari Union Case\n3. LIC of India v. Consumer Education and Research Centre\n4. Maneka Gandhi v. Union of India",
+    "question_ta": "முகவுரையை மேற்கோள் காட்டி விளக்கிய உச்ச நீதிமன்றத்தின் பின்வரும் முக்கிய வழக்குகளை சரியான காலவரிசையில் அமைக்கவும்:\n1. கேசவானந்த பாரதி எதிர் கேரள அரசு (Kesavananda Bharati v. State of Kerala)\n2. பெருபாரி யூனியன் வழக்கு (In re Berubari Union)\n3. எல்.ஐ.சி எதிர் நுகர்வோர் கல்வி மற்றும் ஆராய்ச்சி மையம் (LIC of India v. CERC)\n4. மேனகா காந்தி எதிர் இந்திய யூனியன் (Maneka Gandhi v. Union of India)",
     "options_en": [
-      "2 -> 1 -> 3 -> 4",
-      "1 -> 3 -> 2 -> 4",
+      "1 -> 2 -> 3 -> 4",
       "1 -> 2 -> 4 -> 3",
-      "1 -> 2 -> 3 -> 4"
+      "2 -> 1 -> 4 -> 3",
+      "1 -> 3 -> 2 -> 4"
     ],
     "options_ta": [
-      "2 -> 1 -> 3 -> 4",
-      "1 -> 3 -> 2 -> 4",
+      "1 -> 2 -> 3 -> 4",
       "1 -> 2 -> 4 -> 3",
-      "1 -> 2 -> 3 -> 4"
+      "2 -> 1 -> 4 -> 3",
+      "1 -> 3 -> 2 -> 4"
     ],
-    "answer": "d",
+    "answer": "c",
     "explanation_en": "Chronological Sequence: 1 (Berubari Union: 1960) -> 2 (Kesavananda Bharati: 1973) -> 3 (Maneka Gandhi: 1978) -> 4 (LIC of India: 1995).",
     "explanation_ta": "சரியான காலவரிசை: 1 (பெருபாரி யூனியன்: 1960) -> 2 (கேசவானந்த பாரதி: 1973) -> 3 (மேனகா காந்தி: 1978) -> 4 (எல்ஐசி வழக்கு: 1995)."
   },
@@ -2359,8 +2359,8 @@
     "difficulty": "Hard",
     "question_type": "Chronology",
     "question": {
-      "en": "Arrange the following sub-clauses of 'EQUALITY' and 'FRATERNITY' in the exact textual sequence as they appear in the Preamble:\n1. Equality of status\n2. Equality of opportunity\n3. Fraternity assuring the dignity of the individual\n4. Fraternity assuring the unity and integrity of the Nation",
-      "ta": "முகவுரையில் இடம்பெற்றுள்ளவாறு 'சமத்துவம்' மற்றும் 'சகோதரத்துவம்' ஆகியவற்றின் பின்வரும் உட்பிரிவுகளை சரியான உரை வரிசையில் அமைக்கவும்:\n1. தகுதி சமத்துவம் (Status)\n2. வாய்ப்பு சமத்துவம் (Opportunity)\n3. தனிமனித கண்ணியத்தை உறுதிப்படுத்தும் சகோதரத்துவம் (Dignity of the individual)\n4. தேசத்தின் ஒற்றுமையையும் ஒருமைப்பாட்டையும் உறுதிப்படுத்தும் சகோதரத்துவம் (Unity and integrity of the Nation)"
+      "en": "Arrange the following sub-clauses of 'EQUALITY' and 'FRATERNITY' in the exact textual sequence as they appear in the Preamble:\n1. Fraternity assuring the unity and integrity of the Nation\n2. Fraternity assuring the dignity of the individual\n3. Equality of opportunity\n4. Equality of status",
+      "ta": "முகவுரையில் இடம்பெற்றுள்ளவாறு 'சமத்துவம்' மற்றும் 'சகோதரத்துவம்' ஆகியவற்றின் பின்வரும் உட்பிரிவுகளை சரியான உரை வரிசையில் அமைக்கவும்:\n1. தேசத்தின் ஒற்றுமையையும் ஒருமைப்பாட்டையும் உறுதிப்படுத்தும் சகோதரத்துவம் (Unity and integrity of the Nation)\n2. தனிமனித கண்ணியத்தை உறுதிப்படுத்தும் சகோதரத்துவம் (Dignity of the individual)\n3. வாய்ப்பு சமத்துவம் (Opportunity)\n4. தகுதி சமத்துவம் (Status)"
     },
     "events": [
       {
@@ -2392,8 +2392,8 @@
       },
       {
         "id": "B",
-        "en": "2 -> 1 -> 3 -> 4",
-        "ta": "2 -> 1 -> 3 -> 4"
+        "en": "1 -> 3 -> 2 -> 4",
+        "ta": "1 -> 3 -> 2 -> 4"
       },
       {
         "id": "C",
@@ -2402,31 +2402,31 @@
       },
       {
         "id": "D",
-        "en": "3 -> 4 -> 1 -> 2",
-        "ta": "3 -> 4 -> 1 -> 2"
+        "en": "4 -> 3 -> 2 -> 1",
+        "ta": "4 -> 3 -> 2 -> 1"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "D",
     "explanation": {
-      "en": "Textual Sequence in Preamble: 'EQUALITY of status and of opportunity; and to promote among them all FRATERNITY assuring the dignity of the individual and the unity and integrity of the Nation;'. Hence, 1 -> 2 -> 3 -> 4.",
-      "ta": "முகவுரையின் உரை வரிசை: 'தகுதி மற்றும் வாய்ப்பு சமத்துவம்; மற்றும் அவர்கள் அனைவரிடையேயும் தனிமனித கண்ணியத்தையும், தேசத்தின் ஒற்றுமையையும் ஒருமைப்பாட்டையும் உறுதிப்படுத்தும் சகோதரத்துவம்;'. எனவே, 1 -> 2 -> 3 -> 4."
+      "en": "Textual Sequence in Preamble: 'EQUALITY of status and of opportunity; and to promote among them all FRATERNITY assuring the dignity of the individual and the unity and integrity of the Nation;'. Hence, 4 -> 3 -> 2 -> 1.",
+      "ta": "முகவுரையின் உரை வரிசை: 'தகுதி மற்றும் வாய்ப்பு சமத்துவம்; மற்றும் அவர்கள் அனைவரிடையேயும் தனிமனித கண்ணியத்தையும், தேசத்தின் ஒற்றுமையையும் ஒருமைப்பாட்டையும் உறுதிப்படுத்தும் சகோதரத்துவம்;'. எனவே, 4 -> 3 -> 2 -> 1."
     },
     "why_not_others": {
       "A": {
-        "en": "Correct. 1 (Status) -> 2 (Opportunity) -> 3 (Dignity of individual) -> 4 (Unity and integrity) exactly follows the text.",
-        "ta": "சரி. 1 (தகுதி) -> 2 (வாய்ப்பு) -> 3 (தனிமனித கண்ணியம்) -> 4 (ஒற்றுமை மற்றும் ஒருமைப்பாடு) உரையைத் துல்லியமாகப் பின்பற்றுகிறது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 3 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 3 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "B": {
-        "en": "Incorrect. Equality of status precedes Equality of opportunity.",
-        "ta": "தவறு. வாய்ப்பு சமத்துவத்திற்கு முன்பாக தகுதி சமத்துவம் வருகிறது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 3 -> 2 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 3 -> 2 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "C": {
-        "en": "Incorrect. Dignity of the individual precedes unity and integrity of the Nation.",
-        "ta": "தவறு. தேசத்தின் ஒற்றுமைக்கு முன்பாக தனிமனித கண்ணியம் வருகிறது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 4 -> 3' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 4 -> 3' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "D": {
-        "en": "Incorrect. Equality clauses precede Fraternity clauses in the Preamble.",
-        "ta": "தவறு. முகவுரையில் சகோதரத்துவத்திற்கு முன்பாக சமத்துவ வாசகங்கள் வருகின்றன."
+        "en": "✅ Correct.\nThe correct chronological sequence is '4 -> 3 -> 2 -> 1'.",
+        "ta": "✅ சரி.\nசரியான காலவரிசை '4 -> 3 -> 2 -> 1' ஆகும்."
       }
     },
     "tnpsc_tip": {
@@ -2451,23 +2451,23 @@
       "Fraternity",
       "Textual Sequence"
     ],
-    "question_en": "Arrange the following sub-clauses of 'EQUALITY' and 'FRATERNITY' in the exact textual sequence as they appear in the Preamble:\n1. Equality of status\n2. Equality of opportunity\n3. Fraternity assuring the dignity of the individual\n4. Fraternity assuring the unity and integrity of the Nation",
-    "question_ta": "முகவுரையில் இடம்பெற்றுள்ளவாறு 'சமத்துவம்' மற்றும் 'சகோதரத்துவம்' ஆகியவற்றின் பின்வரும் உட்பிரிவுகளை சரியான உரை வரிசையில் அமைக்கவும்:\n1. தகுதி சமத்துவம் (Status)\n2. வாய்ப்பு சமத்துவம் (Opportunity)\n3. தனிமனித கண்ணியத்தை உறுதிப்படுத்தும் சகோதரத்துவம் (Dignity of the individual)\n4. தேசத்தின் ஒற்றுமையையும் ஒருமைப்பாட்டையும் உறுதிப்படுத்தும் சகோதரத்துவம் (Unity and integrity of the Nation)",
+    "question_en": "Arrange the following sub-clauses of 'EQUALITY' and 'FRATERNITY' in the exact textual sequence as they appear in the Preamble:\n1. Fraternity assuring the unity and integrity of the Nation\n2. Fraternity assuring the dignity of the individual\n3. Equality of opportunity\n4. Equality of status",
+    "question_ta": "முகவுரையில் இடம்பெற்றுள்ளவாறு 'சமத்துவம்' மற்றும் 'சகோதரத்துவம்' ஆகியவற்றின் பின்வரும் உட்பிரிவுகளை சரியான உரை வரிசையில் அமைக்கவும்:\n1. தேசத்தின் ஒற்றுமையையும் ஒருமைப்பாட்டையும் உறுதிப்படுத்தும் சகோதரத்துவம் (Unity and integrity of the Nation)\n2. தனிமனித கண்ணியத்தை உறுதிப்படுத்தும் சகோதரத்துவம் (Dignity of the individual)\n3. வாய்ப்பு சமத்துவம் (Opportunity)\n4. தகுதி சமத்துவம் (Status)",
     "options_en": [
       "1 -> 2 -> 3 -> 4",
-      "2 -> 1 -> 3 -> 4",
+      "1 -> 3 -> 2 -> 4",
       "1 -> 2 -> 4 -> 3",
-      "3 -> 4 -> 1 -> 2"
+      "4 -> 3 -> 2 -> 1"
     ],
     "options_ta": [
       "1 -> 2 -> 3 -> 4",
-      "2 -> 1 -> 3 -> 4",
+      "1 -> 3 -> 2 -> 4",
       "1 -> 2 -> 4 -> 3",
-      "3 -> 4 -> 1 -> 2"
+      "4 -> 3 -> 2 -> 1"
     ],
-    "answer": "a",
-    "explanation_en": "Textual Sequence in Preamble: 'EQUALITY of status and of opportunity; and to promote among them all FRATERNITY assuring the dignity of the individual and the unity and integrity of the Nation;'. Hence, 1 -> 2 -> 3 -> 4.",
-    "explanation_ta": "முகவுரையின் உரை வரிசை: 'தகுதி மற்றும் வாய்ப்பு சமத்துவம்; மற்றும் அவர்கள் அனைவரிடையேயும் தனிமனித கண்ணியத்தையும், தேசத்தின் ஒற்றுமையையும் ஒருமைப்பாட்டையும் உறுதிப்படுத்தும் சகோதரத்துவம்;'. எனவே, 1 -> 2 -> 3 -> 4."
+    "answer": "d",
+    "explanation_en": "Textual Sequence in Preamble: 'EQUALITY of status and of opportunity; and to promote among them all FRATERNITY assuring the dignity of the individual and the unity and integrity of the Nation;'. Hence, 4 -> 3 -> 2 -> 1.",
+    "explanation_ta": "முகவுரையின் உரை வரிசை: 'தகுதி மற்றும் வாய்ப்பு சமத்துவம்; மற்றும் அவர்கள் அனைவரிடையேயும் தனிமனித கண்ணியத்தையும், தேசத்தின் ஒற்றுமையையும் ஒருமைப்பாட்டையும் உறுதிப்படுத்தும் சகோதரத்துவம்;'. எனவே, 4 -> 3 -> 2 -> 1."
   },
   {
     "id": "PRE_CHRONO_022",
@@ -2476,8 +2476,8 @@
     "difficulty": "Hard",
     "question_type": "Chronology",
     "question": {
-      "en": "Arrange the following chronological stages in the legislative enactment and implementation of the 42nd Constitutional Amendment Act affecting the Preamble:\n1. Swaran Singh Committee submits its recommendations on constitutional amendments\n2. 42nd Constitutional Amendment Bill is passed by both Houses of Parliament\n3. President of India gives assent to the 42nd Constitutional Amendment Act\n4. Provisions of the 42nd Amendment amending the Preamble are brought into force",
-      "ta": "முகவுரையைத் திருத்திய 42வது அரசியலமைப்புத் திருத்தச் சட்டத்தின் சட்டமியற்றல் மற்றும் நடைமுறைப்படுத்தலின் பின்வரும் காலவரிசை நிலைகளை அமைக்கவும்:\n1. ஸ்வரன் சிங் குழு அரசியலமைப்பு திருத்தங்கள் குறித்த தனது பரிந்துரைகளைச் சமர்ப்பித்தல்\n2. 42வது அரசியலமைப்புத் திருத்த மசோதா நாடாளுமன்றத்தின் இரு அவைகளாலும் நிறைவேற்றப்படுதல்\n3. இந்தியக் குடியரசுத் தலைவர் 42வது அரசியலமைப்புத் திருத்தச் சட்டத்திற்கு ஒப்புதல் அளித்தல்\n4. முகவுரையைத் திருத்திய 42வது திருத்தத்தின் விதிகள் அதிகாரப்பூர்வமாக நடைமுறைக்குக் கொண்டுவரப்படுதல்"
+      "en": "Arrange the following chronological stages in the legislative enactment and implementation of the 42nd Constitutional Amendment Act affecting the Preamble:\n1. President of India gives assent to the 42nd Constitutional Amendment Act\n2. Swaran Singh Committee submits its recommendations on constitutional amendments\n3. 42nd Constitutional Amendment Bill is passed by both Houses of Parliament\n4. Provisions of the 42nd Amendment amending the Preamble are brought into force",
+      "ta": "முகவுரையைத் திருத்திய 42வது அரசியலமைப்புத் திருத்தச் சட்டத்தின் சட்டமியற்றல் மற்றும் நடைமுறைப்படுத்தலின் பின்வரும் காலவரிசை நிலைகளை அமைக்கவும்:\n1. இந்தியக் குடியரசுத் தலைவர் 42வது அரசியலமைப்புத் திருத்தச் சட்டத்திற்கு ஒப்புதல் அளித்தல்\n2. ஸ்வரன் சிங் குழு அரசியலமைப்பு திருத்தங்கள் குறித்த தனது பரிந்துரைகளைச் சமர்ப்பித்தல்\n3. 42வது அரசியலமைப்புத் திருத்த மசோதா நாடாளுமன்றத்தின் இரு அவைகளாலும் நிறைவேற்றப்படுதல்\n4. முகவுரையைத் திருத்திய 42வது திருத்தத்தின் விதிகள் அதிகாரப்பூர்வமாக நடைமுறைக்குக் கொண்டுவரப்படுதல்"
     },
     "events": [
       {
@@ -2504,8 +2504,8 @@
     "options": [
       {
         "id": "A",
-        "en": "2 -> 1 -> 3 -> 4",
-        "ta": "2 -> 1 -> 3 -> 4"
+        "en": "2 -> 3 -> 1 -> 4",
+        "ta": "2 -> 3 -> 1 -> 4"
       },
       {
         "id": "B",
@@ -2514,36 +2514,36 @@
       },
       {
         "id": "C",
-        "en": "1 -> 3 -> 2 -> 4",
-        "ta": "1 -> 3 -> 2 -> 4"
+        "en": "1 -> 2 -> 4 -> 3",
+        "ta": "1 -> 2 -> 4 -> 3"
       },
       {
         "id": "D",
-        "en": "1 -> 2 -> 4 -> 3",
-        "ta": "1 -> 2 -> 4 -> 3"
+        "en": "1 -> 3 -> 2 -> 4",
+        "ta": "1 -> 3 -> 2 -> 4"
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "A",
     "explanation": {
       "en": "Chronological Sequence: 1 (Swaran Singh Report: May 1976) -> 2 (Parliament passage: Nov 1976) -> 3 (Presidential assent: Dec 18, 1976) -> 4 (Enforcement: Jan 3, 1977).",
       "ta": "சரியான காலவரிசை: 1 (ஸ்வரன் சிங் அறிக்கை: மே 1976) -> 2 (நாடாளுமன்ற நிறைவேற்றம்: நவம்பர் 1976) -> 3 (குடியரசுத் தலைவர் ஒப்புதல்: டிசம்பர் 18, 1976) -> 4 (அமலாக்கம்: ஜனவரி 3, 1977)."
     },
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Swaran Singh Committee report (1) came before the bill was introduced and passed in Parliament (2).",
-        "ta": "தவறு. ஸ்வரன் சிங் குழு அறிக்கை (1) மசோதா நிறைவேற்றப்படுவதற்கு (2) முந்தையது."
+        "en": "✅ Correct.\nThe correct chronological sequence is '2 -> 3 -> 1 -> 4'.",
+        "ta": "✅ சரி.\nசரியான காலவரிசை '2 -> 3 -> 1 -> 4' ஆகும்."
       },
       "B": {
-        "en": "Correct. 1 (Report) -> 2 (Passage) -> 3 (Assent) -> 4 (Enforcement on Jan 3, 1977) represents the exact legislative timeline.",
-        "ta": "சரி. 1 (அறிக்கை) -> 2 (நிறைவேற்றம்) -> 3 (ஒப்புதல்) -> 4 (அமலாக்கம் ஜனவரி 3, 1977) துல்லியமான சட்டமியற்றல் காலவரிசையாகும்."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 3 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 3 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "C": {
-        "en": "Incorrect. Presidential assent (3) occurs after bill passage in Parliament (2).",
-        "ta": "தவறு. நாடாளுமன்றத்தில் மசோதா நிறைவேற்றப்பட்ட பின்னரே (2) குடியரசுத் தலைவர் ஒப்புதல் (3) அளிக்கப்படும்."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 4 -> 3' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 4 -> 3' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "D": {
-        "en": "Incorrect. Presidential assent (Dec 1976) occurred before enforcement (Jan 3, 1977).",
-        "ta": "தவறு. குடியரசுத் தலைவர் ஒப்புதல் (டிசம்பர் 1976) நடைமுறைக்கு வந்ததற்கு (ஜனவரி 3, 1977) முந்தையது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 3 -> 2 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 3 -> 2 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       }
     },
     "tnpsc_tip": {
@@ -2569,21 +2569,21 @@
       "Legislative Sequence",
       "Enforcement Date"
     ],
-    "question_en": "Arrange the following chronological stages in the legislative enactment and implementation of the 42nd Constitutional Amendment Act affecting the Preamble:\n1. Swaran Singh Committee submits its recommendations on constitutional amendments\n2. 42nd Constitutional Amendment Bill is passed by both Houses of Parliament\n3. President of India gives assent to the 42nd Constitutional Amendment Act\n4. Provisions of the 42nd Amendment amending the Preamble are brought into force",
-    "question_ta": "முகவுரையைத் திருத்திய 42வது அரசியலமைப்புத் திருத்தச் சட்டத்தின் சட்டமியற்றல் மற்றும் நடைமுறைப்படுத்தலின் பின்வரும் காலவரிசை நிலைகளை அமைக்கவும்:\n1. ஸ்வரன் சிங் குழு அரசியலமைப்பு திருத்தங்கள் குறித்த தனது பரிந்துரைகளைச் சமர்ப்பித்தல்\n2. 42வது அரசியலமைப்புத் திருத்த மசோதா நாடாளுமன்றத்தின் இரு அவைகளாலும் நிறைவேற்றப்படுதல்\n3. இந்தியக் குடியரசுத் தலைவர் 42வது அரசியலமைப்புத் திருத்தச் சட்டத்திற்கு ஒப்புதல் அளித்தல்\n4. முகவுரையைத் திருத்திய 42வது திருத்தத்தின் விதிகள் அதிகாரப்பூர்வமாக நடைமுறைக்குக் கொண்டுவரப்படுதல்",
+    "question_en": "Arrange the following chronological stages in the legislative enactment and implementation of the 42nd Constitutional Amendment Act affecting the Preamble:\n1. President of India gives assent to the 42nd Constitutional Amendment Act\n2. Swaran Singh Committee submits its recommendations on constitutional amendments\n3. 42nd Constitutional Amendment Bill is passed by both Houses of Parliament\n4. Provisions of the 42nd Amendment amending the Preamble are brought into force",
+    "question_ta": "முகவுரையைத் திருத்திய 42வது அரசியலமைப்புத் திருத்தச் சட்டத்தின் சட்டமியற்றல் மற்றும் நடைமுறைப்படுத்தலின் பின்வரும் காலவரிசை நிலைகளை அமைக்கவும்:\n1. இந்தியக் குடியரசுத் தலைவர் 42வது அரசியலமைப்புத் திருத்தச் சட்டத்திற்கு ஒப்புதல் அளித்தல்\n2. ஸ்வரன் சிங் குழு அரசியலமைப்பு திருத்தங்கள் குறித்த தனது பரிந்துரைகளைச் சமர்ப்பித்தல்\n3. 42வது அரசியலமைப்புத் திருத்த மசோதா நாடாளுமன்றத்தின் இரு அவைகளாலும் நிறைவேற்றப்படுதல்\n4. முகவுரையைத் திருத்திய 42வது திருத்தத்தின் விதிகள் அதிகாரப்பூர்வமாக நடைமுறைக்குக் கொண்டுவரப்படுதல்",
     "options_en": [
-      "2 -> 1 -> 3 -> 4",
+      "2 -> 3 -> 1 -> 4",
       "1 -> 2 -> 3 -> 4",
-      "1 -> 3 -> 2 -> 4",
-      "1 -> 2 -> 4 -> 3"
+      "1 -> 2 -> 4 -> 3",
+      "1 -> 3 -> 2 -> 4"
     ],
     "options_ta": [
-      "2 -> 1 -> 3 -> 4",
+      "2 -> 3 -> 1 -> 4",
       "1 -> 2 -> 3 -> 4",
-      "1 -> 3 -> 2 -> 4",
-      "1 -> 2 -> 4 -> 3"
+      "1 -> 2 -> 4 -> 3",
+      "1 -> 3 -> 2 -> 4"
     ],
-    "answer": "b",
+    "answer": "a",
     "explanation_en": "Chronological Sequence: 1 (Swaran Singh Report: May 1976) -> 2 (Parliament passage: Nov 1976) -> 3 (Presidential assent: Dec 18, 1976) -> 4 (Enforcement: Jan 3, 1977).",
     "explanation_ta": "சரியான காலவரிசை: 1 (ஸ்வரன் சிங் அறிக்கை: மே 1976) -> 2 (நாடாளுமன்ற நிறைவேற்றம்: நவம்பர் 1976) -> 3 (குடியரசுத் தலைவர் ஒப்புதல்: டிசம்பர் 18, 1976) -> 4 (அமலாக்கம்: ஜனவரி 3, 1977)."
   },
@@ -2594,8 +2594,8 @@
     "difficulty": "Hard",
     "question_type": "Chronology",
     "question": {
-      "en": "Arrange the following historical milestones representing the international sources of inspiration for the Indian Preamble in correct chronological order:\n1. American Constitution becomes the first written constitution to begin with a Preamble\n2. French Revolution proclaims the ideals of Liberty, Equality, and Fraternity\n3. Russian Revolution introduces the ideal of Social, Economic, and Political Justice\n4. Indian Constituent Assembly incorporates these ideals into the Preamble of India",
-      "ta": "இந்திய முகவுரையின் சர்வதேச உத்வேக மூலங்களைக் குறிக்கும் பின்வரும் வரலாற்று மைல்கற்களை சரியான காலவரிசையில் அமைக்கவும்:\n1. அமெரிக்க அரசியலமைப்பு முகவுரையுடன் தொடங்கிய உலகின் முதல் எழுதப்பட்ட அரசியலமைப்பாக அமைதல்\n2. பிரெஞ்சுப் புரட்சி சுதந்திரம், சமத்துவம் மற்றும் சகோதரத்துவம் ஆகிய உன்னத இலக்குகளைப் பிரகடனப்படுத்துதல்\n3. ரஷ்யப் புரட்சி சமூக, பொருளாதார மற்றும் அரசியல் நீதி என்ற கருத்தை அறிமுகப்படுத்துதல்\n4. இந்திய அரசியலமைப்பு நிர்ணய அவை இந்த சர்வதேச இலக்குகளை இந்திய முகவுரையில் இணைத்தல்"
+      "en": "Arrange the following historical milestones representing the international sources of inspiration for the Indian Preamble in correct chronological order:\n1. French Revolution proclaims the ideals of Liberty, Equality, and Fraternity\n2. Indian Constituent Assembly incorporates these ideals into the Preamble of India\n3. Russian Revolution introduces the ideal of Social, Economic, and Political Justice\n4. American Constitution becomes the first written constitution to begin with a Preamble",
+      "ta": "இந்திய முகவுரையின் சர்வதேச உத்வேக மூலங்களைக் குறிக்கும் பின்வரும் வரலாற்று மைல்கற்களை சரியான காலவரிசையில் அமைக்கவும்:\n1. பிரெஞ்சுப் புரட்சி சுதந்திரம், சமத்துவம் மற்றும் சகோதரத்துவம் ஆகிய உன்னத இலக்குகளைப் பிரகடனப்படுத்துதல்\n2. இந்திய அரசியலமைப்பு நிர்ணய அவை இந்த சர்வதேச இலக்குகளை இந்திய முகவுரையில் இணைத்தல்\n3. ரஷ்யப் புரட்சி சமூக, பொருளாதார மற்றும் அரசியல் நீதி என்ற கருத்தை அறிமுகப்படுத்துதல்\n4. அமெரிக்க அரசியலமைப்பு முகவுரையுடன் தொடங்கிய உலகின் முதல் எழுதப்பட்ட அரசியலமைப்பாக அமைதல்"
     },
     "events": [
       {
@@ -2622,23 +2622,23 @@
     "options": [
       {
         "id": "A",
-        "en": "2 -> 1 -> 3 -> 4",
-        "ta": "2 -> 1 -> 3 -> 4"
-      },
-      {
-        "id": "B",
-        "en": "1 -> 3 -> 2 -> 4",
-        "ta": "1 -> 3 -> 2 -> 4"
-      },
-      {
-        "id": "C",
         "en": "1 -> 2 -> 3 -> 4",
         "ta": "1 -> 2 -> 3 -> 4"
       },
       {
+        "id": "B",
+        "en": "1 -> 2 -> 4 -> 3",
+        "ta": "1 -> 2 -> 4 -> 3"
+      },
+      {
+        "id": "C",
+        "en": "4 -> 1 -> 3 -> 2",
+        "ta": "4 -> 1 -> 3 -> 2"
+      },
+      {
         "id": "D",
-        "en": "3 -> 1 -> 2 -> 4",
-        "ta": "3 -> 1 -> 2 -> 4"
+        "en": "1 -> 3 -> 2 -> 4",
+        "ta": "1 -> 3 -> 2 -> 4"
       }
     ],
     "correct_answer": "C",
@@ -2648,20 +2648,20 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Incorrect. American Constitution (1787) preceded the outbreak of the French Revolution (1789).",
-        "ta": "தவறு. அமெரிக்க அரசியலமைப்பு (1787) பிரெஞ்சுப் புரட்சிக்கு (1789) முந்தையது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 3 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 3 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "B": {
-        "en": "Incorrect. French Revolution (1789) took place before the Russian Revolution (1917).",
-        "ta": "தவறு. பிரெஞ்சுப் புரட்சி (1789) ரஷ்யப் புரட்சிக்கு (1917) முந்தையது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 4 -> 3' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 4 -> 3' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "C": {
-        "en": "Correct. 1 (1787) -> 2 (1789) -> 3 (1917) -> 4 (1946-1949) accurately represents the global historical timeline.",
-        "ta": "சரி. 1 (1787) -> 2 (1789) -> 3 (1917) -> 4 (1946-1949) உலக வரலாற்று காலவரிசையைத் துல்லியமாகக் காட்டுகிறது."
+        "en": "✅ Correct.\nThe correct chronological sequence is '4 -> 1 -> 3 -> 2'.",
+        "ta": "✅ சரி.\nசரியான காலவரிசை '4 -> 1 -> 3 -> 2' ஆகும்."
       },
       "D": {
-        "en": "Incorrect. Russian Revolution occurred in the 20th century (1917), after 18th century American and French events.",
-        "ta": "தவறு. ரஷ்யப் புரட்சி 20ஆம் நூற்றாண்டில் (1917) நடந்தது, இது 18ஆம் நூற்றாண்டு அமெரிக்க, பிரெஞ்சு நிகழ்வுகளுக்குப் பின்னராகும்."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 3 -> 2 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 3 -> 2 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       }
     },
     "tnpsc_tip": {
@@ -2688,19 +2688,19 @@
       "French Revolution",
       "Russian Revolution"
     ],
-    "question_en": "Arrange the following historical milestones representing the international sources of inspiration for the Indian Preamble in correct chronological order:\n1. American Constitution becomes the first written constitution to begin with a Preamble\n2. French Revolution proclaims the ideals of Liberty, Equality, and Fraternity\n3. Russian Revolution introduces the ideal of Social, Economic, and Political Justice\n4. Indian Constituent Assembly incorporates these ideals into the Preamble of India",
-    "question_ta": "இந்திய முகவுரையின் சர்வதேச உத்வேக மூலங்களைக் குறிக்கும் பின்வரும் வரலாற்று மைல்கற்களை சரியான காலவரிசையில் அமைக்கவும்:\n1. அமெரிக்க அரசியலமைப்பு முகவுரையுடன் தொடங்கிய உலகின் முதல் எழுதப்பட்ட அரசியலமைப்பாக அமைதல்\n2. பிரெஞ்சுப் புரட்சி சுதந்திரம், சமத்துவம் மற்றும் சகோதரத்துவம் ஆகிய உன்னத இலக்குகளைப் பிரகடனப்படுத்துதல்\n3. ரஷ்யப் புரட்சி சமூக, பொருளாதார மற்றும் அரசியல் நீதி என்ற கருத்தை அறிமுகப்படுத்துதல்\n4. இந்திய அரசியலமைப்பு நிர்ணய அவை இந்த சர்வதேச இலக்குகளை இந்திய முகவுரையில் இணைத்தல்",
+    "question_en": "Arrange the following historical milestones representing the international sources of inspiration for the Indian Preamble in correct chronological order:\n1. French Revolution proclaims the ideals of Liberty, Equality, and Fraternity\n2. Indian Constituent Assembly incorporates these ideals into the Preamble of India\n3. Russian Revolution introduces the ideal of Social, Economic, and Political Justice\n4. American Constitution becomes the first written constitution to begin with a Preamble",
+    "question_ta": "இந்திய முகவுரையின் சர்வதேச உத்வேக மூலங்களைக் குறிக்கும் பின்வரும் வரலாற்று மைல்கற்களை சரியான காலவரிசையில் அமைக்கவும்:\n1. பிரெஞ்சுப் புரட்சி சுதந்திரம், சமத்துவம் மற்றும் சகோதரத்துவம் ஆகிய உன்னத இலக்குகளைப் பிரகடனப்படுத்துதல்\n2. இந்திய அரசியலமைப்பு நிர்ணய அவை இந்த சர்வதேச இலக்குகளை இந்திய முகவுரையில் இணைத்தல்\n3. ரஷ்யப் புரட்சி சமூக, பொருளாதார மற்றும் அரசியல் நீதி என்ற கருத்தை அறிமுகப்படுத்துதல்\n4. அமெரிக்க அரசியலமைப்பு முகவுரையுடன் தொடங்கிய உலகின் முதல் எழுதப்பட்ட அரசியலமைப்பாக அமைதல்",
     "options_en": [
-      "2 -> 1 -> 3 -> 4",
-      "1 -> 3 -> 2 -> 4",
       "1 -> 2 -> 3 -> 4",
-      "3 -> 1 -> 2 -> 4"
+      "1 -> 2 -> 4 -> 3",
+      "4 -> 1 -> 3 -> 2",
+      "1 -> 3 -> 2 -> 4"
     ],
     "options_ta": [
-      "2 -> 1 -> 3 -> 4",
-      "1 -> 3 -> 2 -> 4",
       "1 -> 2 -> 3 -> 4",
-      "3 -> 1 -> 2 -> 4"
+      "1 -> 2 -> 4 -> 3",
+      "4 -> 1 -> 3 -> 2",
+      "1 -> 3 -> 2 -> 4"
     ],
     "answer": "c",
     "explanation_en": "Chronological Sequence: 1 (American Constitution Preamble: 1787) -> 2 (French Revolution ideals: 1789) -> 3 (Russian Revolution Justice: 1917) -> 4 (Indian Preamble: 1946-1949).",
@@ -2713,8 +2713,8 @@
     "difficulty": "Hard",
     "question_type": "Chronology",
     "question": {
-      "en": "Arrange the following four landmark constitutional benches of the Supreme Court of India dealing with Preamble interpretation in correct chronological order:\n1. 8-Judge Bench in In re Berubari Union Case\n2. 13-Judge Bench in Kesavananda Bharati v. State of Kerala\n3. 5-Judge Bench in Minerva Mills v. Union of India\n4. 9-Judge Bench in S.R. Bommai v. Union of India",
-      "ta": "முகவுரை விளக்கத்தைக் கையாண்ட இந்திய உச்ச நீதிமன்றத்தின் பின்வரும் நான்கு முக்கிய அரசியலமைப்பு அமர்வுகளை சரியான காலவரிசையில் அமைக்கவும்:\n1. பெருபாரி யூனியன் வழக்கில் 8 நீதிபதிகள் கொண்ட அமர்வு\n2. கேசவானந்த பாரதி வழக்கில் 13 நீதிபதிகள் கொண்ட அமர்வு\n3. மினர்வா மில்ஸ் வழக்கில் 5 நீதிபதிகள் கொண்ட அமர்வு\n4. எஸ்.ஆர். பொம்மை வழக்கில் 9 நீதிபதிகள் கொண்ட அமர்வு"
+      "en": "Arrange the following four landmark constitutional benches of the Supreme Court of India dealing with Preamble interpretation in correct chronological order:\n1. 9-Judge Bench in S.R. Bommai v. Union of India\n2. 8-Judge Bench in In re Berubari Union Case\n3. 5-Judge Bench in Minerva Mills v. Union of India\n4. 13-Judge Bench in Kesavananda Bharati v. State of Kerala",
+      "ta": "முகவுரை விளக்கத்தைக் கையாண்ட இந்திய உச்ச நீதிமன்றத்தின் பின்வரும் நான்கு முக்கிய அரசியலமைப்பு அமர்வுகளை சரியான காலவரிசையில் அமைக்கவும்:\n1. எஸ்.ஆர். பொம்மை வழக்கில் 9 நீதிபதிகள் கொண்ட அமர்வு\n2. பெருபாரி யூனியன் வழக்கில் 8 நீதிபதிகள் கொண்ட அமர்வு\n3. மினர்வா மில்ஸ் வழக்கில் 5 நீதிபதிகள் கொண்ட அமர்வு\n4. கேசவானந்த பாரதி வழக்கில் 13 நீதிபதிகள் கொண்ட அமர்வு"
     },
     "events": [
       {
@@ -2741,13 +2741,13 @@
     "options": [
       {
         "id": "A",
-        "en": "2 -> 1 -> 3 -> 4",
-        "ta": "2 -> 1 -> 3 -> 4"
+        "en": "1 -> 2 -> 3 -> 4",
+        "ta": "1 -> 2 -> 3 -> 4"
       },
       {
         "id": "B",
-        "en": "1 -> 3 -> 2 -> 4",
-        "ta": "1 -> 3 -> 2 -> 4"
+        "en": "2 -> 4 -> 3 -> 1",
+        "ta": "2 -> 4 -> 3 -> 1"
       },
       {
         "id": "C",
@@ -2756,31 +2756,31 @@
       },
       {
         "id": "D",
-        "en": "1 -> 2 -> 3 -> 4",
-        "ta": "1 -> 2 -> 3 -> 4"
+        "en": "1 -> 3 -> 2 -> 4",
+        "ta": "1 -> 3 -> 2 -> 4"
       }
     ],
-    "correct_answer": "D",
+    "correct_answer": "B",
     "explanation": {
       "en": "Chronological Sequence: 1 (Berubari 8-judge bench: 1960) -> 2 (Kesavananda 13-judge bench: 1973) -> 3 (Minerva Mills 5-judge bench: 1980) -> 4 (S.R. Bommai 9-judge bench: 1994).",
       "ta": "சரியான காலவரிசை: 1 (பெருபாரி 8 நீதிபதிகள் அமர்வு: 1960) -> 2 (கேசவானந்தா 13 நீதிபதிகள் அமர்வு: 1973) -> 3 (மினர்வா மில்ஸ் 5 நீதிபதிகள் அமர்வு: 1980) -> 4 (எஸ்.ஆர். பொம்மை 9 நீதிபதிகள் அமர்வு: 1994)."
     },
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Berubari (1960) preceded Kesavananda Bharati (1973).",
-        "ta": "தவறு. பெருபாரி (1960) கேசவானந்த பாரதிக்கு (1973) முந்தையது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 3 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 3 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "B": {
-        "en": "Incorrect. Kesavananda Bharati (1973) preceded Minerva Mills (1980).",
-        "ta": "தவறு. கேசவானந்த பாரதி (1973) மினர்வா மில்ஸுக்கு (1980) முந்தையது."
+        "en": "✅ Correct.\nThe correct chronological sequence is '2 -> 4 -> 3 -> 1'.",
+        "ta": "✅ சரி.\nசரியான காலவரிசை '2 -> 4 -> 3 -> 1' ஆகும்."
       },
       "C": {
-        "en": "Incorrect. Minerva Mills (1980) was decided before S.R. Bommai (1994).",
-        "ta": "தவறு. மினர்வா மில்ஸ் (1980) எஸ்.ஆர். பொம்மைக்கு (1994) முன்பாகத் தீர்ப்பளிக்கப்பட்டது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 4 -> 3' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 4 -> 3' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "D": {
-        "en": "Correct. 1 (1960) -> 2 (1973) -> 3 (1980) -> 4 (1994) reflects the exact progression of landmark constitutional benches.",
-        "ta": "சரி. 1 (1960) -> 2 (1973) -> 3 (1980) -> 4 (1994) வரலாற்றுச் சிறப்புமிக்க அரசியலமைப்பு அமர்வுகளின் சரியான காலவரிசையாகும்."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 3 -> 2 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 3 -> 2 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       }
     },
     "tnpsc_tip": {
@@ -2805,21 +2805,21 @@
       "Judicial Chronology",
       "Bench Size"
     ],
-    "question_en": "Arrange the following four landmark constitutional benches of the Supreme Court of India dealing with Preamble interpretation in correct chronological order:\n1. 8-Judge Bench in In re Berubari Union Case\n2. 13-Judge Bench in Kesavananda Bharati v. State of Kerala\n3. 5-Judge Bench in Minerva Mills v. Union of India\n4. 9-Judge Bench in S.R. Bommai v. Union of India",
-    "question_ta": "முகவுரை விளக்கத்தைக் கையாண்ட இந்திய உச்ச நீதிமன்றத்தின் பின்வரும் நான்கு முக்கிய அரசியலமைப்பு அமர்வுகளை சரியான காலவரிசையில் அமைக்கவும்:\n1. பெருபாரி யூனியன் வழக்கில் 8 நீதிபதிகள் கொண்ட அமர்வு\n2. கேசவானந்த பாரதி வழக்கில் 13 நீதிபதிகள் கொண்ட அமர்வு\n3. மினர்வா மில்ஸ் வழக்கில் 5 நீதிபதிகள் கொண்ட அமர்வு\n4. எஸ்.ஆர். பொம்மை வழக்கில் 9 நீதிபதிகள் கொண்ட அமர்வு",
+    "question_en": "Arrange the following four landmark constitutional benches of the Supreme Court of India dealing with Preamble interpretation in correct chronological order:\n1. 9-Judge Bench in S.R. Bommai v. Union of India\n2. 8-Judge Bench in In re Berubari Union Case\n3. 5-Judge Bench in Minerva Mills v. Union of India\n4. 13-Judge Bench in Kesavananda Bharati v. State of Kerala",
+    "question_ta": "முகவுரை விளக்கத்தைக் கையாண்ட இந்திய உச்ச நீதிமன்றத்தின் பின்வரும் நான்கு முக்கிய அரசியலமைப்பு அமர்வுகளை சரியான காலவரிசையில் அமைக்கவும்:\n1. எஸ்.ஆர். பொம்மை வழக்கில் 9 நீதிபதிகள் கொண்ட அமர்வு\n2. பெருபாரி யூனியன் வழக்கில் 8 நீதிபதிகள் கொண்ட அமர்வு\n3. மினர்வா மில்ஸ் வழக்கில் 5 நீதிபதிகள் கொண்ட அமர்வு\n4. கேசவானந்த பாரதி வழக்கில் 13 நீதிபதிகள் கொண்ட அமர்வு",
     "options_en": [
-      "2 -> 1 -> 3 -> 4",
-      "1 -> 3 -> 2 -> 4",
+      "1 -> 2 -> 3 -> 4",
+      "2 -> 4 -> 3 -> 1",
       "1 -> 2 -> 4 -> 3",
-      "1 -> 2 -> 3 -> 4"
+      "1 -> 3 -> 2 -> 4"
     ],
     "options_ta": [
-      "2 -> 1 -> 3 -> 4",
-      "1 -> 3 -> 2 -> 4",
+      "1 -> 2 -> 3 -> 4",
+      "2 -> 4 -> 3 -> 1",
       "1 -> 2 -> 4 -> 3",
-      "1 -> 2 -> 3 -> 4"
+      "1 -> 3 -> 2 -> 4"
     ],
-    "answer": "d",
+    "answer": "b",
     "explanation_en": "Chronological Sequence: 1 (Berubari 8-judge bench: 1960) -> 2 (Kesavananda 13-judge bench: 1973) -> 3 (Minerva Mills 5-judge bench: 1980) -> 4 (S.R. Bommai 9-judge bench: 1994).",
     "explanation_ta": "சரியான காலவரிசை: 1 (பெருபாரி 8 நீதிபதிகள் அமர்வு: 1960) -> 2 (கேசவானந்தா 13 நீதிபதிகள் அமர்வு: 1973) -> 3 (மினர்வா மில்ஸ் 5 நீதிபதிகள் அமர்வு: 1980) -> 4 (எஸ்.ஆர். பொம்மை 9 நீதிபதிகள் அமர்வு: 1994)."
   },
@@ -2830,8 +2830,8 @@
     "difficulty": "Hard",
     "question_type": "Chronology",
     "question": {
-      "en": "Arrange the following comprehensive 50-year master milestones in Preamble jurisprudence from 1946 to 1995 in correct chronological order:\n1. Jawaharlal Nehru introduces the Objectives Resolution laying the philosophical foundation of the Preamble\n2. Berubari Union Case advisory opinion declaring the Preamble is NOT a part of the Constitution\n3. 42nd Constitutional Amendment Act inserting 'Socialist', 'Secular', and 'Integrity'\n4. LIC of India Case explicitly reaffirming that the Preamble is an 'integral part' of the Constitution",
-      "ta": "1946 முதல் 1995 வரையிலான முகவுரை வழக்கியலின் 50 ஆண்டுகால வரலாற்று மைல்கற்களை சரியான காலவரிசையில் அமைக்கவும்:\n1. ஜவஹர்லால் நேரு முகவுரையின் தத்துவ அடித்தளத்தை அமைக்கும் குறிக்கோள் தீர்மானத்தை அறிமுகப்படுத்துதல்\n2. பெருபாரி யூனியன் ஆலோசனைக் கருத்து முகவுரை அரசியலமைப்பின் ஒரு பகுதி அல்ல என அறிவித்தல்\n3. 42வது அரசியலமைப்புத் திருத்தச் சட்டம் 'சமதர்ம', 'மதச்சார்பற்ற' மற்றும் 'ஒருமைப்பாடு' ஆகிய சொற்களைச் சேர்த்தல்\n4. எல்.ஐ.சி வழக்கில் முகவுரை அரசியலமைப்பின் 'ஒருங்கிணைந்த பகுதி' என்பதை உச்ச நீதிமன்றம் திட்டவட்டமாக மீண்டும் உறுதிப்படுத்துதல்"
+      "en": "Arrange the following comprehensive 50-year master milestones in Preamble jurisprudence from 1946 to 1995 in correct chronological order:\n1. 42nd Constitutional Amendment Act inserting 'Socialist', 'Secular', and 'Integrity'\n2. Jawaharlal Nehru introduces the Objectives Resolution laying the philosophical foundation of the Preamble\n3. LIC of India Case explicitly reaffirming that the Preamble is an 'integral part' of the Constitution\n4. Berubari Union Case advisory opinion declaring the Preamble is NOT a part of the Constitution",
+      "ta": "1946 முதல் 1995 வரையிலான முகவுரை வழக்கியலின் 50 ஆண்டுகால வரலாற்று மைல்கற்களை சரியான காலவரிசையில் அமைக்கவும்:\n1. 42வது அரசியலமைப்புத் திருத்தச் சட்டம் 'சமதர்ம', 'மதச்சார்பற்ற' மற்றும் 'ஒருமைப்பாடு' ஆகிய சொற்களைச் சேர்த்தல்\n2. ஜவஹர்லால் நேரு முகவுரையின் தத்துவ அடித்தளத்தை அமைக்கும் குறிக்கோள் தீர்மானத்தை அறிமுகப்படுத்துதல்\n3. எல்.ஐ.சி வழக்கில் முகவுரை அரசியலமைப்பின் 'ஒருங்கிணைந்த பகுதி' என்பதை உச்ச நீதிமன்றம் திட்டவட்டமாக மீண்டும் உறுதிப்படுத்துதல்\n4. பெருபாரி யூனியன் ஆலோசனைக் கருத்து முகவுரை அரசியலமைப்பின் ஒரு பகுதி அல்ல என அறிவித்தல்"
     },
     "events": [
       {
@@ -2858,23 +2858,23 @@
     "options": [
       {
         "id": "A",
+        "en": "2 -> 4 -> 1 -> 3",
+        "ta": "2 -> 4 -> 1 -> 3"
+      },
+      {
+        "id": "B",
         "en": "1 -> 2 -> 3 -> 4",
         "ta": "1 -> 2 -> 3 -> 4"
       },
       {
-        "id": "B",
-        "en": "2 -> 1 -> 3 -> 4",
-        "ta": "2 -> 1 -> 3 -> 4"
-      },
-      {
         "id": "C",
-        "en": "1 -> 3 -> 2 -> 4",
-        "ta": "1 -> 3 -> 2 -> 4"
+        "en": "1 -> 2 -> 4 -> 3",
+        "ta": "1 -> 2 -> 4 -> 3"
       },
       {
         "id": "D",
-        "en": "1 -> 2 -> 4 -> 3",
-        "ta": "1 -> 2 -> 4 -> 3"
+        "en": "1 -> 3 -> 2 -> 4",
+        "ta": "1 -> 3 -> 2 -> 4"
       }
     ],
     "correct_answer": "A",
@@ -2884,20 +2884,20 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Correct. 1 (1946) -> 2 (1960) -> 3 (1976) -> 4 (1995) covers the entire 50-year journey of the Indian Preamble accurately.",
-        "ta": "சரி. 1 (1946) -> 2 (1960) -> 3 (1976) -> 4 (1995) இந்திய முகவுரையின் 50 ஆண்டுகால முழுப் பயணத்தையும் துல்லியமாக உள்ளடக்கியுள்ளது."
+        "en": "✅ Correct.\nThe correct chronological sequence is '2 -> 4 -> 1 -> 3'.",
+        "ta": "✅ சரி.\nசரியான காலவரிசை '2 -> 4 -> 1 -> 3' ஆகும்."
       },
       "B": {
-        "en": "Incorrect. Objectives Resolution (1946) was moved before the Berubari Case (1960).",
-        "ta": "தவறு. குறிக்கோள் தீர்மானம் (1946) பெருபாரி வழக்குக்கு (1960) பல ஆண்டுகளுக்கு முந்தையது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 3 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 3 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "C": {
-        "en": "Incorrect. Berubari Case (1960) occurred before the 42nd Amendment (1976).",
-        "ta": "தவறு. பெருபாரி வழக்கு (1960) 42வது திருத்தத்திற்கு (1976) முந்தையது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 2 -> 4 -> 3' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 2 -> 4 -> 3' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       },
       "D": {
-        "en": "Incorrect. 42nd Amendment (1976) occurred before the LIC of India Case (1995).",
-        "ta": "தவறு. 42வது திருத்தம் (1976) எல்ஐசி வழக்குக்கு (1995) முந்தையது."
+        "en": "❌ Incorrect.\nThe sequence '1 -> 3 -> 2 -> 4' does not reflect the true chronological order.",
+        "ta": "❌ தவறு.\nவரிசை '1 -> 3 -> 2 -> 4' சரியான காலவரிசையைப் பிரதிபலிக்கவில்லை."
       }
     },
     "tnpsc_tip": {
@@ -2923,19 +2923,19 @@
       "50-Year Jurisprudence",
       "TNPSC Group 1"
     ],
-    "question_en": "Arrange the following comprehensive 50-year master milestones in Preamble jurisprudence from 1946 to 1995 in correct chronological order:\n1. Jawaharlal Nehru introduces the Objectives Resolution laying the philosophical foundation of the Preamble\n2. Berubari Union Case advisory opinion declaring the Preamble is NOT a part of the Constitution\n3. 42nd Constitutional Amendment Act inserting 'Socialist', 'Secular', and 'Integrity'\n4. LIC of India Case explicitly reaffirming that the Preamble is an 'integral part' of the Constitution",
-    "question_ta": "1946 முதல் 1995 வரையிலான முகவுரை வழக்கியலின் 50 ஆண்டுகால வரலாற்று மைல்கற்களை சரியான காலவரிசையில் அமைக்கவும்:\n1. ஜவஹர்லால் நேரு முகவுரையின் தத்துவ அடித்தளத்தை அமைக்கும் குறிக்கோள் தீர்மானத்தை அறிமுகப்படுத்துதல்\n2. பெருபாரி யூனியன் ஆலோசனைக் கருத்து முகவுரை அரசியலமைப்பின் ஒரு பகுதி அல்ல என அறிவித்தல்\n3. 42வது அரசியலமைப்புத் திருத்தச் சட்டம் 'சமதர்ம', 'மதச்சார்பற்ற' மற்றும் 'ஒருமைப்பாடு' ஆகிய சொற்களைச் சேர்த்தல்\n4. எல்.ஐ.சி வழக்கில் முகவுரை அரசியலமைப்பின் 'ஒருங்கிணைந்த பகுதி' என்பதை உச்ச நீதிமன்றம் திட்டவட்டமாக மீண்டும் உறுதிப்படுத்துதல்",
+    "question_en": "Arrange the following comprehensive 50-year master milestones in Preamble jurisprudence from 1946 to 1995 in correct chronological order:\n1. 42nd Constitutional Amendment Act inserting 'Socialist', 'Secular', and 'Integrity'\n2. Jawaharlal Nehru introduces the Objectives Resolution laying the philosophical foundation of the Preamble\n3. LIC of India Case explicitly reaffirming that the Preamble is an 'integral part' of the Constitution\n4. Berubari Union Case advisory opinion declaring the Preamble is NOT a part of the Constitution",
+    "question_ta": "1946 முதல் 1995 வரையிலான முகவுரை வழக்கியலின் 50 ஆண்டுகால வரலாற்று மைல்கற்களை சரியான காலவரிசையில் அமைக்கவும்:\n1. 42வது அரசியலமைப்புத் திருத்தச் சட்டம் 'சமதர்ம', 'மதச்சார்பற்ற' மற்றும் 'ஒருமைப்பாடு' ஆகிய சொற்களைச் சேர்த்தல்\n2. ஜவஹர்லால் நேரு முகவுரையின் தத்துவ அடித்தளத்தை அமைக்கும் குறிக்கோள் தீர்மானத்தை அறிமுகப்படுத்துதல்\n3. எல்.ஐ.சி வழக்கில் முகவுரை அரசியலமைப்பின் 'ஒருங்கிணைந்த பகுதி' என்பதை உச்ச நீதிமன்றம் திட்டவட்டமாக மீண்டும் உறுதிப்படுத்துதல்\n4. பெருபாரி யூனியன் ஆலோசனைக் கருத்து முகவுரை அரசியலமைப்பின் ஒரு பகுதி அல்ல என அறிவித்தல்",
     "options_en": [
+      "2 -> 4 -> 1 -> 3",
       "1 -> 2 -> 3 -> 4",
-      "2 -> 1 -> 3 -> 4",
-      "1 -> 3 -> 2 -> 4",
-      "1 -> 2 -> 4 -> 3"
+      "1 -> 2 -> 4 -> 3",
+      "1 -> 3 -> 2 -> 4"
     ],
     "options_ta": [
+      "2 -> 4 -> 1 -> 3",
       "1 -> 2 -> 3 -> 4",
-      "2 -> 1 -> 3 -> 4",
-      "1 -> 3 -> 2 -> 4",
-      "1 -> 2 -> 4 -> 3"
+      "1 -> 2 -> 4 -> 3",
+      "1 -> 3 -> 2 -> 4"
     ],
     "answer": "a",
     "explanation_en": "Master Chronology: 1 (Objectives Resolution: Dec 13, 1946) -> 2 (Berubari Case: 1960) -> 3 (42nd Amendment: 1976) -> 4 (LIC of India Case: 1995).",

@@ -121,13 +121,13 @@
       },
       {
         "id": "B",
-        "en": "Both A and R are correct and R is the correct explanation of A",
-        "ta": "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்."
+        "en": "A is correct but R is incorrect",
+        "ta": "A சரி, ஆனால் R தவறு."
       },
       {
         "id": "C",
-        "en": "A is correct but R is incorrect",
-        "ta": "A சரி, ஆனால் R தவறு."
+        "en": "Both A and R are correct and R is the correct explanation of A",
+        "ta": "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்."
       },
       {
         "id": "D",
@@ -135,7 +135,7 @@
         "ta": "A தவறு, ஆனால் R சரி."
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "C",
     "explanation": {
       "en": "Both Assertion and Reason are true, and R explains A. Non-justiciability does not mean legal irrelevance; SC uses FD to interpret the 'reasonableness' of restrictions on Fundamental Rights under Article 19.",
       "ta": "கூற்று A மற்றும் காரணம் R இரண்டும் சரி, மேலும் R என்பது A-விற்கு சரியான விளக்கம். அமல்படுத்த முடியாதது என்பது சட்ட முக்கியத்துவம் இல்லாதது அல்ல; உறுப்பு 19-ன் கீழ் உரிமைகள் மீதான கட்டுப்பாடுகளின் நியாயத் தன்மையைச் சோதிக்க உச்சநீதிமன்றம் கடமைகளைப் பயன்படுத்துகிறது."
@@ -146,12 +146,12 @@
         "ta": "தவறு. அமல்படுத்த முடியாத கடமைகள் அரசியலமைப்பு ஆய்வில் ஏன் சட்ட முக்கியத்துவம் பெறுகின்றன என்பதை காரணம் நேரடியாக விளக்குகிறது."
       },
       "B": {
-        "en": "Correct. Article 19 restrictions evaluated in light of Fundamental Duties make those restrictions constitutionally reasonable.",
-        "ta": "சரி. அடிப்படை கடமைகளின் அடிப்படையில் உறுப்பு 19 கட்டுப்பாடுகள் மதிப்பிடப்படும் போது அவை நியாயமானவையாகக் கருதப்படுகின்றன."
-      },
-      "C": {
         "en": "Incorrect. Reason is factually correct as per Supreme Court precedents (e.g. Mirzapur Moti Koreshi case).",
         "ta": "தவறு. உச்சநீதிமன்ற முன்மாதிரிகளின்படி (எ.கா. மிர்சாபூர் மோதி கொரேஷி வழக்கு) காரணம் சரியானது."
+      },
+      "C": {
+        "en": "Correct. Article 19 restrictions evaluated in light of Fundamental Duties make those restrictions constitutionally reasonable.",
+        "ta": "சரி. அடிப்படை கடமைகளின் அடிப்படையில் உறுப்பு 19 கட்டுப்பாடுகள் மதிப்பிடப்படும் போது அவை நியாயமானவையாகக் கருதப்படுகின்றன."
       },
       "D": {
         "en": "Incorrect. Assertion is factually true; duties are non-justiciable yet legally relevant.",
@@ -183,17 +183,17 @@
     "question_ta": "கூற்று (A): உறுப்பு 51A-ன் கீழ் உள்ள அடிப்படை கடமைகள் நீதிமன்றத்தால் நேரடியாக அமல்படுத்தப்பட முடியாதவை என்றாலும், சட்டங்களின் அரசியலமைப்பு செல்லுபடியாகும் தன்மையை தீர்மானிக்க நீதிமன்றங்கள் அவற்றை நம்பியுள்ளன.\nகாரணம் (R): ஒரு அடிப்படை கடமையை அமல்படுத்த உறுப்பு 19-ன் கீழ் அடிப்படை உரிமைகள் மீது விதிக்கப்படும் கட்டுப்பாடுகள் 'நியாயமான கட்டுப்பாடுகளாகக்' கருதப்படும் என்று உச்சநீதிமன்றம் தீர்ப்பளித்துள்ளது.",
     "options_en": [
       "Both A and R are correct but R is NOT the correct explanation of A",
-      "Both A and R are correct and R is the correct explanation of A",
       "A is correct but R is incorrect",
+      "Both A and R are correct and R is the correct explanation of A",
       "A is incorrect but R is correct"
     ],
     "options_ta": [
       "A மற்றும் R இரண்டும் சரி, ஆனால் R என்பது A விற்கு சரியான விளக்கம் அல்ல.",
-      "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்.",
       "A சரி, ஆனால் R தவறு.",
+      "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்.",
       "A தவறு, ஆனால் R சரி."
     ],
-    "answer": "b",
+    "answer": "c",
     "explanation_en": "Both Assertion and Reason are true, and R explains A. Non-justiciability does not mean legal irrelevance; SC uses FD to interpret the 'reasonableness' of restrictions on Fundamental Rights under Article 19.",
     "explanation_ta": "கூற்று A மற்றும் காரணம் R இரண்டும் சரி, மேலும் R என்பது A-விற்கு சரியான விளக்கம். அமல்படுத்த முடியாதது என்பது சட்ட முக்கியத்துவம் இல்லாதது அல்ல; உறுப்பு 19-ன் கீழ் உரிமைகள் மீதான கட்டுப்பாடுகளின் நியாயத் தன்மையைச் சோதிக்க உச்சநீதிமன்றம் கடமைகளைப் பயன்படுத்துகிறது."
   },
@@ -217,13 +217,13 @@
       },
       {
         "id": "B",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டும்"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "C",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டும்"
       },
       {
         "id": "D",
@@ -231,7 +231,7 @@
         "ta": "1 மற்றும் 3 மட்டும்"
       }
     ],
-    "correct_answer": "C",
+    "correct_answer": "B",
     "explanation": {
       "en": "All three statements are correct. The 86th Amendment Act, 2002 restructured education into a tripartite constitutional system: Art 21A (FR - State duty), Art 45 (DPSP - early childhood 0-6 yrs), Art 51A(k) (FD - parent duty for 6-14 yrs).",
       "ta": "மூன்று கூற்றுகளும் சரியானவை. 2002-ன் 86வது திருத்தச் சட்டம் கல்வியை முத்தரப்பு அரசியலமைப்பு அமைப்பாக மறுசீரமைத்தது: உறுப்பு 21A (FR - அரசு கடமை), உறுப்பு 45 (DPSP - 0-6 வயது பராமரிப்பு), உறுப்பு 51A(k) (FD - 6-14 வயது வரை பெற்றோர் கடமை)."
@@ -242,12 +242,12 @@
         "ta": "தவறு. கூற்று 1 உறுப்பு 21A-ஐச் சரியாக வரையறுக்கிறது."
       },
       "B": {
-        "en": "Incorrect. Statement 2 correctly defines modified Article 45 (DPSP).",
-        "ta": "தவறு. கூற்று 2 திருத்தப்பட்ட உறுப்பு 45-ஐச் சரியாக வரையறுக்கிறது."
-      },
-      "C": {
         "en": "Correct. All three statements (1, 2, and 3) are true.",
         "ta": "சரி. மூன்று கூற்றுகளும் (1, 2, மற்றும் 3) சரியானவை."
+      },
+      "C": {
+        "en": "Incorrect. Statement 2 correctly defines modified Article 45 (DPSP).",
+        "ta": "தவறு. கூற்று 2 திருத்தப்பட்ட உறுப்பு 45-ஐச் சரியாக வரையறுக்கிறது."
       },
       "D": {
         "en": "Incorrect. Statement 3 correctly defines Article 51A(k) (FD).",
@@ -279,17 +279,17 @@
     "question_ta": "2002-ன் 86வது திருத்தச் சட்டத்திற்குப் பிறகு அரசியலமைப்பின் கீழ் கல்விக் கட்டமைப்பு பற்றிய பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n\n1. உறுப்பு 21A 6 முதல் 14 வயது வரையிலான குழந்தைகளுக்குக் கல்வியை அடிப்படை உரிமையாக்கி, அரசின் மீது முதன்மைப் பொறுப்பைச் சுமத்துகிறது.\n2. உறுப்பு 45 ஆறு வயது வரையிலான அனைத்துக் குழந்தைகளுக்கும் ஆரம்பகால குழந்தை பராமரிப்பு மற்றும் கல்வியை வழங்க அரசை வழிகாட்டுகிறது.\n3. உறுப்பு 51A(k) 6 முதல் 14 வயது வரையிலான குழந்தைகளுக்குக் கல்விக்கான வாய்ப்புகளை வழங்கப் பெற்றோர்/பாதுகாவலர்கள் மீது அடிப்படை கடமையை விதிக்கிறது.\n\nமேற்கூறிய கூற்றுகளில் எவை சரியானவை?",
     "options_en": [
       "1 and 2 only",
-      "2 and 3 only",
       "1, 2 and 3",
+      "2 and 3 only",
       "1 and 3 only"
     ],
     "options_ta": [
       "1 மற்றும் 2 மட்டும்",
-      "2 மற்றும் 3 மட்டும்",
       "1, 2 மற்றும் 3",
+      "2 மற்றும் 3 மட்டும்",
       "1 மற்றும் 3 மட்டும்"
     ],
-    "answer": "c",
+    "answer": "b",
     "explanation_en": "All three statements are correct. The 86th Amendment Act, 2002 restructured education into a tripartite constitutional system: Art 21A (FR - State duty), Art 45 (DPSP - early childhood 0-6 yrs), Art 51A(k) (FD - parent duty for 6-14 yrs).",
     "explanation_ta": "மூன்று கூற்றுகளும் சரியானவை. 2002-ன் 86வது திருத்தச் சட்டம் கல்வியை முத்தரப்பு அரசியலமைப்பு அமைப்பாக மறுசீரமைத்தது: உறுப்பு 21A (FR - அரசு கடமை), உறுப்பு 45 (DPSP - 0-6 வயது பராமரிப்பு), உறுப்பு 51A(k) (FD - 6-14 வயது வரை பெற்றோர் கடமை)."
   },
@@ -313,8 +313,8 @@
       },
       {
         "id": "B",
-        "en": "The argument is invalid because Article 48A applies only to municipal corporations.",
-        "ta": "உறுப்பு 48A நகராட்சிகளுக்கு மட்டுமே பொருந்தும் என்பதால் இந்த வாதம் தவறானது."
+        "en": "The argument is valid because Article 48A places environmental duty solely on the State.",
+        "ta": "உறுப்பு 48A சுற்றுச்சூழல் கடமையை அரசு மீது மட்டுமே சுமத்துவதால் இந்த வாதம் சரியானது."
       },
       {
         "id": "C",
@@ -323,11 +323,11 @@
       },
       {
         "id": "D",
-        "en": "The argument is valid because Article 48A places environmental duty solely on the State.",
-        "ta": "உறுப்பு 48A சுற்றுச்சூழல் கடமையை அரசு மீது மட்டுமே சுமத்துவதால் இந்த வாதம் சரியானது."
+        "en": "The argument is invalid because Article 48A applies only to municipal corporations.",
+        "ta": "உறுப்பு 48A நகராட்சிகளுக்கு மட்டுமே பொருந்தும் என்பதால் இந்த வாதம் தவறானது."
       }
     ],
-    "correct_answer": "D",
+    "correct_answer": "B",
     "explanation": {
       "en": "The argument is invalid. While Article 48A places a duty on the State, Article 51A(g) explicitly imposes a Fundamental Duty on every citizen to protect and improve the natural environment, including forests, lakes, rivers, and wildlife.",
       "ta": "இந்த வாதம் தவறானது. உறுப்பு 48A அரசுக்குக் கடமை விதிக்கும் அதே வேளையில், உறுப்பு 51A(g) காடுகள், ஏரிகள், ஆறுகள் மற்றும் வனவிலங்குகள் உட்பட இயற்கைச் சூழலைப் பாதுகாக்கவும் மேம்படுத்தவும் ஒவ்வொரு குடிமகனுக்கும் அடிப்படை கடமையை விதிக்கிறது."
@@ -338,16 +338,16 @@
         "ta": "தவறு. உறுப்பு 48A அரசுக்குப் பொருந்தும், ஆனால் குடிமகனின் கடமை உறுப்பு 51A(g)-ன் கீழ் தெளிவாக உருவாக்கப்பட்டுள்ளது."
       },
       "B": {
-        "en": "Incorrect. Fundamental Duties exist in Part IVA of the Constitution.",
-        "ta": "தவறு. அரசியலமைப்பின் பகுதி IVA-ல் அடிப்படை கடமைகள் நிலவுகின்றன."
+        "en": "Correct. Article 51A(g) directly refutes the claim that citizens have no duty towards environment.",
+        "ta": "சரி. குடிமக்களுக்குச் சுற்றுச்சூழல் கடமை இல்லை என்ற வாதத்தை உறுப்பு 51A(g) நேரடியாக மறுக்கிறது."
       },
       "C": {
         "en": "Incorrect. Article 48A applies to the State as a whole, including Union and State governments.",
         "ta": "தவறு. உறுப்பு 48A ஒன்றியம் மற்றும் மாநில அரசுகள் உட்பட ஒட்டுமொத்த அரசுக்கும் பொருந்தும்."
       },
       "D": {
-        "en": "Correct. Article 51A(g) directly refutes the claim that citizens have no duty towards environment.",
-        "ta": "சரி. குடிமக்களுக்குச் சுற்றுச்சூழல் கடமை இல்லை என்ற வாதத்தை உறுப்பு 51A(g) நேரடியாக மறுக்கிறது."
+        "en": "Incorrect. Fundamental Duties exist in Part IVA of the Constitution.",
+        "ta": "தவறு. அரசியலமைப்பின் பகுதி IVA-ல் அடிப்படை கடமைகள் நிலவுகின்றன."
       }
     },
     "tnpsc_tip": {
@@ -375,17 +375,17 @@
     "question_ta": "சூழல்: தொழில்அதிபர் ஒருவர் இரசாயனக் கழிவுகளைப் பொது ஏரியில் கொட்டிவிட்டு, சுற்றுச்சூழல் பாதுகாப்பு என்பது அரசு நெறிமுறைக் கோட்பாடுகளின் (உறுப்பு 48A) கீழ் அரசின் பொறுப்பு மட்டுமே தவிரத் தனிப்பட்ட குடிமகனின் கடமையல்ல என்று நீதிமன்றத்தில் வாதாடுகிறார்.\n\nகேள்வி: அரசியலமைப்பு பகுப்பாய்வு இந்த வாதத்தை எவ்வாறு மதிப்பிடுகிறது?",
     "options_en": [
       "The argument is valid because Fundamental Duties have no legal existence.",
-      "The argument is invalid because Article 48A applies only to municipal corporations.",
+      "The argument is valid because Article 48A places environmental duty solely on the State.",
       "The argument is invalid because Article 51A(g) places a Fundamental Duty on every citizen to protect and improve the natural environment, including lakes.",
-      "The argument is valid because Article 48A places environmental duty solely on the State."
+      "The argument is invalid because Article 48A applies only to municipal corporations."
     ],
     "options_ta": [
       "அடிப்படை கடமைகளுக்குச் சட்டப்பூர்வ இருப்பு இல்லாததால் இந்த வாதம் சரியானது.",
-      "உறுப்பு 48A நகராட்சிகளுக்கு மட்டுமே பொருந்தும் என்பதால் இந்த வாதம் தவறானது.",
+      "உறுப்பு 48A சுற்றுச்சூழல் கடமையை அரசு மீது மட்டுமே சுமத்துவதால் இந்த வாதம் சரியானது.",
       "உறுப்பு 51A(g) ஏரிகள் உட்பட இயற்கைச் சூழலைப் பாதுகாக்கவும் மேம்படுத்தவும் ஒவ்வொரு குடிமகனுக்கும் அடிப்படை கடமையை விதிப்பதால் இந்த வாதம் தவறானது.",
-      "உறுப்பு 48A சுற்றுச்சூழல் கடமையை அரசு மீது மட்டுமே சுமத்துவதால் இந்த வாதம் சரியானது."
+      "உறுப்பு 48A நகராட்சிகளுக்கு மட்டுமே பொருந்தும் என்பதால் இந்த வாதம் தவறானது."
     ],
-    "answer": "d",
+    "answer": "b",
     "explanation_en": "The argument is invalid. While Article 48A places a duty on the State, Article 51A(g) explicitly imposes a Fundamental Duty on every citizen to protect and improve the natural environment, including forests, lakes, rivers, and wildlife.",
     "explanation_ta": "இந்த வாதம் தவறானது. உறுப்பு 48A அரசுக்குக் கடமை விதிக்கும் அதே வேளையில், உறுப்பு 51A(g) காடுகள், ஏரிகள், ஆறுகள் மற்றும் வனவிலங்குகள் உட்பட இயற்கைச் சூழலைப் பாதுகாக்கவும் மேம்படுத்தவும் ஒவ்வொரு குடிமகனுக்கும் அடிப்படை கடமையை விதிக்கிறது."
   },
@@ -404,8 +404,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 only",
-        "ta": "1 மட்டும்"
+        "en": "Neither 1 nor 2",
+        "ta": "எதுவும் இல்லை"
       },
       {
         "id": "B",
@@ -419,19 +419,19 @@
       },
       {
         "id": "D",
-        "en": "Neither 1 nor 2",
-        "ta": "எதுவும் இல்லை"
+        "en": "1 only",
+        "ta": "1 மட்டும்"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "D",
     "explanation": {
       "en": "Statement 1 is correct. The Swaran Singh Committee recommended penal provisions for non-compliance, but Parliament REJECTED this recommendation and did NOT include penalty clauses in Article 51A. Thus statement 2 is incorrect.",
       "ta": "கூற்று 1 சரி. கடமைகளைப் பின்பற்றாதவருக்குத் தண்டனை விதிக்க ஸ்வரன் சிங் குழு பரிந்துரைத்தது, ஆனால் நாடாளுமன்றம் இப்பரிந்துரையை நிராகரித்தது மற்றும் உறுப்பு 51A-ல் தண்டனை விதிகளைச் சேர்க்கவில்லை. எனவே கூற்று 2 தவறானது."
     },
     "why_not_others": {
       "A": {
-        "en": "Correct. Swaran Singh Committee recommended penalty provisions, which were rejected by Parliament.",
-        "ta": "சரி. ஸ்வரன் சிங் குழு தண்டனை விதிகளைப் பரிந்துரைத்தது, ஆனால் அது நாடாளுமன்றத்தால் நிராகரிக்கப்பட்டது."
+        "en": "Incorrect. Statement 1 is factually true under Swaran Singh recommendations.",
+        "ta": "தவறு. ஸ்வரன் சிங் பரிந்துரைகளின் படி கூற்று 1 உண்மையானது."
       },
       "B": {
         "en": "Incorrect. Statement 2 is false because 42nd CAA did NOT incorporate penalty provisions into Article 51A.",
@@ -442,8 +442,8 @@
         "ta": "தவறு. கூற்று 2 தவறானது என்பதால் இரண்டும் சரி என்பது தவறாகும்."
       },
       "D": {
-        "en": "Incorrect. Statement 1 is factually true under Swaran Singh recommendations.",
-        "ta": "தவறு. ஸ்வரன் சிங் பரிந்துரைகளின் படி கூற்று 1 உண்மையானது."
+        "en": "Correct. Swaran Singh Committee recommended penalty provisions, which were rejected by Parliament.",
+        "ta": "சரி. ஸ்வரன் சிங் குழு தண்டனை விதிகளைப் பரிந்துரைத்தது, ஆனால் அது நாடாளுமன்றத்தால் நிராகரிக்கப்பட்டது."
       }
     },
     "tnpsc_tip": {
@@ -470,18 +470,18 @@
     "question_en": "Consider the following statements regarding the Swaran Singh Committee recommendations vs actual 42nd Amendment provisions:\n\n1. The Swaran Singh Committee recommended that Parliament should provide for penalties or punishments for non-compliance with Fundamental Duties.\n2. The 42nd Constitutional Amendment Act, 1976 incorporated explicit penalty provisions into Article 51A for citizens who fail to perform duties.\n\nWhich of the statement(s) given above is/are correct?",
     "question_ta": "ஸ்வரன் சிங் குழுவின் பரிந்துரைகள் vs அசல் 42வது திருத்த விதிகள் பற்றிய பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n\n1. அடிப்படை கடமைகளைப் பின்பற்றாதவர்களுக்கு நாடாளுமன்றம் தண்டனை அல்லது அபராதம் விதிக்க வகை செய்ய வேண்டும் என்று ஸ்வரன் சிங் குழு பரிந்துரைத்தது.\n2. 1976-ன் 42வது அரசியலமைப்பு திருத்தச் சட்டம் கடமைகளைச் செய்யத் தவறும் குடிமக்களுக்கு உறுப்பு 51A-ல் நேரடித் தண்டனை விதிகளை இணைத்தது.\n\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
     "options_en": [
-      "1 only",
+      "Neither 1 nor 2",
       "2 only",
       "Both 1 and 2",
-      "Neither 1 nor 2"
+      "1 only"
     ],
     "options_ta": [
-      "1 மட்டும்",
+      "எதுவும் இல்லை",
       "2 மட்டும்",
       "1 மற்றும் 2 இரண்டும்",
-      "எதுவும் இல்லை"
+      "1 மட்டும்"
     ],
-    "answer": "a",
+    "answer": "d",
     "explanation_en": "Statement 1 is correct. The Swaran Singh Committee recommended penal provisions for non-compliance, but Parliament REJECTED this recommendation and did NOT include penalty clauses in Article 51A. Thus statement 2 is incorrect.",
     "explanation_ta": "கூற்று 1 சரி. கடமைகளைப் பின்பற்றாதவருக்குத் தண்டனை விதிக்க ஸ்வரன் சிங் குழு பரிந்துரைத்தது, ஆனால் நாடாளுமன்றம் இப்பரிந்துரையை நிராகரித்தது மற்றும் உறுப்பு 51A-ல் தண்டனை விதிகளைச் சேர்க்கவில்லை. எனவே கூற்று 2 தவறானது."
   },
@@ -500,13 +500,13 @@
     "options": [
       {
         "id": "A",
-        "en": "The expulsion is invalid because standing respectfully satisfies Article 51A(a), and non-singing on genuine religious grounds is protected under Article 25.",
-        "ta": "மரியாதையுடன் எழுந்து நின்றாலே உறுப்பு 51A(a) நிறைவேறுகிறது, மேலும் உண்மையான மத நம்பிக்கையின் அடிப்படையில் பாடாமல் இருப்பது உறுப்பு 25-ன் கீழ் பாதுகாக்கப்படுகிறது என்பதால் பள்ளி நீக்கம் செல்லாது."
+        "en": "The expulsion is valid because Article 51A(a) mandates both standing and vocal singing.",
+        "ta": "உறுப்பு 51A(a) எழுந்து நிற்பது மற்றும் பாடுவது இரண்டையும் கட்டாயமாக்குவதால் பள்ளி நீக்கம் செல்லுபடியாகும்."
       },
       {
         "id": "B",
-        "en": "The expulsion is valid because Article 51A(a) mandates both standing and vocal singing.",
-        "ta": "உறுப்பு 51A(a) எழுந்து நிற்பது மற்றும் பாடுவது இரண்டையும் கட்டாயமாக்குவதால் பள்ளி நீக்கம் செல்லுபடியாகும்."
+        "en": "The expulsion is invalid because standing respectfully satisfies Article 51A(a), and non-singing on genuine religious grounds is protected under Article 25.",
+        "ta": "மரியாதையுடன் எழுந்து நின்றாலே உறுப்பு 51A(a) நிறைவேறுகிறது, மேலும் உண்மையான மத நம்பிக்கையின் அடிப்படையில் பாடாமல் இருப்பது உறுப்பு 25-ன் கீழ் பாதுகாக்கப்படுகிறது என்பதால் பள்ளி நீக்கம் செல்லாது."
       },
       {
         "id": "C",
@@ -519,19 +519,19 @@
         "ta": "உறுப்பு 51A(a) அரசு ஊழியர்களுக்கு மட்டுமே பொருந்தும், பள்ளி குழந்தைகளுக்கு அல்ல என்பதால் பள்ளி நீக்கம் செல்லாது."
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "A",
     "explanation": {
       "en": "The expulsion is invalid. In Bijoe Emmanuel v. State of Kerala (1986), the Supreme Court held that standing up respectfully during the National Anthem shows proper respect under Article 51A(a). Compelling a person to sing against genuine religious conscience violates Article 25(1).",
       "ta": "பள்ளி நீக்கம் செல்லாது. பிஜோய் இம்மானுவேல் எதிராக கேரள மாநில வழக்கில் (1986), தேசிய கீதத்தின் போது மரியாதையுடன் எழுந்து நிற்பதே உறுப்பு 51A(a)-ன் கீழ் தகுந்த மரியாதையைக் காட்டுகிறது என்று உச்சநீதிமன்றம் தீர்ப்பளித்தது. மத நம்பிக்கைக்கு எதிராகப் பாடக் வற்புறுத்துவது உறுப்பு 25(1)-ஐ மீறுவதாகும்."
     },
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Vocal singing is not mandatory if it conflicts with genuine religious conscience under Article 25.",
-        "ta": "தவறு. உண்மையான மத நம்பிக்கைக்கு முரணாக இருந்தால் வாய்விட்டுப் பாடுவது கட்டாயமில்லை."
-      },
-      "B": {
         "en": "Correct. Standing respectfully satisfies Art 51A(a) duty without violating Art 25(1) religious freedom.",
         "ta": "சரி. மரியாதையுடன் எழுந்து நிற்பது உறுப்பு 25(1) மத சுதந்திரத்தை மீறாமல் 51A(a) கடமையை நிறைவேற்றுகிறது."
+      },
+      "B": {
+        "en": "Incorrect. Vocal singing is not mandatory if it conflicts with genuine religious conscience under Article 25.",
+        "ta": "தவறு. உண்மையான மத நம்பிக்கைக்கு முரணாக இருந்தால் வாய்விட்டுப் பாடுவது கட்டாயமில்லை."
       },
       "C": {
         "en": "Incorrect. Fundamental Duties do not automatically destroy Article 25 fundamental freedom.",
@@ -566,18 +566,18 @@
     "question_en": "SCENARIO: Three students belonging to Jehovah's Witnesses stand up reverently when the National Anthem is played in their school assembly, but refrain from singing because their religious faith forbids singing anthems to any entity other than God. They are expelled under Article 51A(a).\n\nQUESTION: Applying the Supreme Court ruling in Bijoe Emmanuel v. State of Kerala (1986), what is the correct constitutional verdict?",
     "question_ta": "சூழல்: யெகோவாவின் சாட்சிகள் பிரிவைச் சேர்ந்த மூன்று மாணவர்கள் பள்ளி வழிபாட்டுக் கூட்டத்தில் தேசிய கீதம் இசைக்கப்படும் போது மரியாதையுடன் எழுந்து நிற்கிறார்கள், ஆனால் கடவுளைத் தவிர வேறு எவருக்கும் கீதம் பாடுவதை அவர்களின் மத நம்பிக்கை தடை செய்வதால் பாட மறுக்கிறார்கள். உறுப்பு 51A(a)-ன் கீழ் அவர்கள் பள்ளியிலிருந்து நீக்கப்படுகிறார்கள்.\n\nகேள்வி: பிஜோய் இம்மானுவேல் எதிராக கேரள மாநிலம் (1986) வழக்கின் உச்சநீதிமன்றத் தீர்ப்பைப் பயன்படுத்தினால், சரியான அரசியலமைப்புத் தீர்ப்பு எது?",
     "options_en": [
-      "The expulsion is invalid because standing respectfully satisfies Article 51A(a), and non-singing on genuine religious grounds is protected under Article 25.",
       "The expulsion is valid because Article 51A(a) mandates both standing and vocal singing.",
+      "The expulsion is invalid because standing respectfully satisfies Article 51A(a), and non-singing on genuine religious grounds is protected under Article 25.",
       "The expulsion is valid because Fundamental Duties override Article 25 Fundamental Rights in all educational institutions.",
       "The expulsion is invalid because Article 51A(a) applies only to government servants, not to school children."
     ],
     "options_ta": [
-      "மரியாதையுடன் எழுந்து நின்றாலே உறுப்பு 51A(a) நிறைவேறுகிறது, மேலும் உண்மையான மத நம்பிக்கையின் அடிப்படையில் பாடாமல் இருப்பது உறுப்பு 25-ன் கீழ் பாதுகாக்கப்படுகிறது என்பதால் பள்ளி நீக்கம் செல்லாது.",
       "உறுப்பு 51A(a) எழுந்து நிற்பது மற்றும் பாடுவது இரண்டையும் கட்டாயமாக்குவதால் பள்ளி நீக்கம் செல்லுபடியாகும்.",
+      "மரியாதையுடன் எழுந்து நின்றாலே உறுப்பு 51A(a) நிறைவேறுகிறது, மேலும் உண்மையான மத நம்பிக்கையின் அடிப்படையில் பாடாமல் இருப்பது உறுப்பு 25-ன் கீழ் பாதுகாக்கப்படுகிறது என்பதால் பள்ளி நீக்கம் செல்லாது.",
       "அனைத்துக் கல்வி நிறுவனங்களிலும் அடிப்படை கடமைகள் உறுப்பு 25 அடிப்படை உரிமைகளை விட மேலோங்குவதால் பள்ளி நீக்கம் செல்லுபடியாகும்.",
       "உறுப்பு 51A(a) அரசு ஊழியர்களுக்கு மட்டுமே பொருந்தும், பள்ளி குழந்தைகளுக்கு அல்ல என்பதால் பள்ளி நீக்கம் செல்லாது."
     ],
-    "answer": "b",
+    "answer": "a",
     "explanation_en": "The expulsion is invalid. In Bijoe Emmanuel v. State of Kerala (1986), the Supreme Court held that standing up respectfully during the National Anthem shows proper respect under Article 51A(a). Compelling a person to sing against genuine religious conscience violates Article 25(1).",
     "explanation_ta": "பள்ளி நீக்கம் செல்லாது. பிஜோய் இம்மானுவேல் எதிராக கேரள மாநில வழக்கில் (1986), தேசிய கீதத்தின் போது மரியாதையுடன் எழுந்து நிற்பதே உறுப்பு 51A(a)-ன் கீழ் தகுந்த மரியாதையைக் காட்டுகிறது என்று உச்சநீதிமன்றம் தீர்ப்பளித்தது. மத நம்பிக்கைக்கு எதிராகப் பாடக் வற்புறுத்துவது உறுப்பு 25(1)-ஐ மீறுவதாகும்."
   },
@@ -692,8 +692,8 @@
     "options": [
       {
         "id": "A",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டும்"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "B",
@@ -707,19 +707,19 @@
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டும்"
       }
     ],
-    "correct_answer": "D",
+    "correct_answer": "A",
     "explanation": {
       "en": "Statements 1 and 2 are correct. The Verma Committee (1999) identified existing legal provisions enforcing duties (e.g. Wildlife Act, IPC, RPA). Statement 3 is incorrect as the committee did NOT recommend creating a separate criminal writ jurisdiction against citizens.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. வர்மா குழு (1999) கடமைகளை அமல்படுத்தும் நிலவும் சட்ட விநிகளைச் சுட்டிக்காட்டியது. குடிமக்களுக்கு எதிராகத் தனி குற்றவியல் நீதிப்பேராணை அதிகார வரம்பை உருவாக்க பரிந்துரைக்காததால் கூற்று 3 தவறானது."
     },
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Statement 3 is false; no such penal writ jurisdiction was proposed.",
-        "ta": "தவறு. அத்தகைய குற்றவியல் நீதிப்பேராணை பரிந்துரைக்கப்படாததால் கூற்று 3 தவறானது."
+        "en": "Correct. Statements 1 and 2 accurately capture the mandate and findings of the Justice Verma Committee.",
+        "ta": "சரி. கூற்றுகள் 1 மற்றும் 2 வர்மா குழுவின் நோக்கம் மற்றும் கண்டுபிடிப்புகளைச் சரியாகப் படம் பிடிக்கின்றன."
       },
       "B": {
         "en": "Incorrect. Statement 3 is incorrect.",
@@ -730,8 +730,8 @@
         "ta": "தவறு. கூற்றுகள் 1 மற்றும் 2 சரியானவை."
       },
       "D": {
-        "en": "Correct. Statements 1 and 2 accurately capture the mandate and findings of the Justice Verma Committee.",
-        "ta": "சரி. கூற்றுகள் 1 மற்றும் 2 வர்மா குழுவின் நோக்கம் மற்றும் கண்டுபிடிப்புகளைச் சரியாகப் படம் பிடிக்கின்றன."
+        "en": "Incorrect. Statement 3 is false; no such penal writ jurisdiction was proposed.",
+        "ta": "தவறு. அத்தகைய குற்றவியல் நீதிப்பேராணை பரிந்துரைக்கப்படாததால் கூற்று 3 தவறானது."
       }
     },
     "tnpsc_tip": {
@@ -758,18 +758,18 @@
     "question_en": "Consider the following statements regarding the Justice Verma Committee (1999) on Fundamental Duties:\n\n1. The Verma Committee was set up in 1998 to operationalize the strategy for teaching Fundamental Duties in educational institutions.\n2. The Verma Committee identified that non-justiciable Fundamental Duties are actually legal obligations backed by sanctions in various existing statutory Acts.\n3. The Verma Committee recommended creating a separate Writ Jurisdiction in High Courts solely to punish citizens who breach Article 51A.\n\nWhich of the statements given above are correct?",
     "question_ta": "அடிப்படை கடமைகள் பற்றிய நீதியரசர் வர்மா குழு (1999) பற்றிய பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n\n1. கல்வி நிறுவனங்களில் அடிப்படை கடமைகளைக் கற்பிப்பதற்கான உத்தியை நடைமுறைப்படுத்த 1998-ல் வர்மா குழு அமைக்கப்பட்டது.\n2. நீதிமன்றத்தால் நேரடியாக அமல்படுத்த முடியாத அடிப்படை கடமைகள் உண்மையில் பல்வேறு நாடாளுமன்றச் சட்டங்களில் உள்ள சட்ட விதிகளால் ஆதரிக்கப்படுகின்றன என்பதை வர்மா குழு சுட்டிக்காட்டியது.\n3. உறுப்பு 51A-ஐ மீறும் குடிமக்களைத் தண்டிப்பதற்காக மட்டுமே உயர்நீதிமன்றங்களில் தனி நீதிப்பேராணை அதிகார வரம்பை உருவாக்க வர்மா குழு பரிந்துரைத்தது.\n\nமேற்கூறிய கூற்றுகளில் எவை சரியானவை?",
     "options_en": [
-      "2 and 3 only",
+      "1, 2 and 3",
       "1 and 3 only",
       "1 and 2 only",
-      "1, 2 and 3"
+      "2 and 3 only"
     ],
     "options_ta": [
-      "2 மற்றும் 3 மட்டும்",
+      "1, 2 மற்றும் 3",
       "1 மற்றும் 3 மட்டும்",
       "1 மற்றும் 2 மட்டும்",
-      "1, 2 மற்றும் 3"
+      "2 மற்றும் 3 மட்டும்"
     ],
-    "answer": "d",
+    "answer": "a",
     "explanation_en": "Statements 1 and 2 are correct. The Verma Committee (1999) identified existing legal provisions enforcing duties (e.g. Wildlife Act, IPC, RPA). Statement 3 is incorrect as the committee did NOT recommend creating a separate criminal writ jurisdiction against citizens.",
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. வர்மா குழு (1999) கடமைகளை அமல்படுத்தும் நிலவும் சட்ட விநிகளைச் சுட்டிக்காட்டியது. குடிமக்களுக்கு எதிராகத் தனி குற்றவியல் நீதிப்பேராணை அதிகார வரம்பை உருவாக்க பரிந்துரைக்காததால் கூற்று 3 தவறானது."
   },
@@ -788,13 +788,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Article 51A(e) — Duty to renounce practices derogatory to the dignity of women",
-        "ta": "உறுப்பு 51A(e) — பெண்களின் கண்ணியத்தைக் குறைக்கும் வழக்கங்களைக் கைவிடும் கடமை"
+        "en": "Article 51A(b) — Duty to follow noble ideals of freedom struggle",
+        "ta": "உறுப்பு 51A(b) — சுதந்திரப் போராட்ட லட்சியங்களைப் பின்பற்றும் கடமை"
       },
       {
         "id": "B",
-        "en": "Article 51A(b) — Duty to follow noble ideals of freedom struggle",
-        "ta": "உறுப்பு 51A(b) — சுதந்திரப் போராட்ட லட்சியங்களைப் பின்பற்றும் கடமை"
+        "en": "Article 51A(e) — Duty to renounce practices derogatory to the dignity of women",
+        "ta": "உறுப்பு 51A(e) — பெண்களின் கண்ணியத்தைக் குறைக்கும் வழக்கங்களைக் கைவிடும் கடமை"
       },
       {
         "id": "C",
@@ -807,19 +807,19 @@
         "ta": "உறுப்பு 51A(j) — தனிநபர் சிறப்பை நோக்கி முயலும் கடமை"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "B",
     "explanation": {
       "en": "Article 51A(e) explicitly commands every citizen to promote harmony and common brotherhood and to 'renounce practices derogatory to the dignity of women'. Customary practices targeting or humiliating women violate this duty.",
       "ta": "உறுப்பு 51A(e) நல்லிணக்கத்தை வளர்க்கவும் 'பெண்களின் கண்ணியத்தைக் குறைக்கும் வழக்கங்களைக் கைவிடவும்' ஒவ்வொரு குடிமகனுக்கும் கட்டாயமாக்குகிறது. பெண்களை இலக்கு வைக்கும் வழக்கங்கள் இக்கடமையை மீறுகின்றன."
     },
     "why_not_others": {
       "A": {
-        "en": "Correct. Article 51A(e) contains the explicit constitutional command regarding women's dignity.",
-        "ta": "சரி. உறுப்பு 51A(e) பெண்களின் கண்ணியம் பற்றிய அரசியலமைப்பு கட்டளையைக் கொண்டுள்ளது."
-      },
-      "B": {
         "en": "Incorrect. Article 51A(b) concerns ideals of freedom struggle.",
         "ta": "தவறு. உறுப்பு 51A(b) சுதந்திரப் போராட்ட லட்சியங்கள் பற்றியது."
+      },
+      "B": {
+        "en": "Correct. Article 51A(e) contains the explicit constitutional command regarding women's dignity.",
+        "ta": "சரி. உறுப்பு 51A(e) பெண்களின் கண்ணியம் பற்றிய அரசியலமைப்பு கட்டளையைக் கொண்டுள்ளது."
       },
       "C": {
         "en": "Incorrect. Article 51A(f) concerns composite culture, which cannot be used to justify degrading women.",
@@ -854,18 +854,18 @@
     "question_en": "SITUATION: A local customary council orders the ostracization of women who choose to seek higher education or employment, claiming to protect traditional male authority.\n\nQUESTION: Which Fundamental Duty under Article 51A directly refutes this council's order?",
     "question_ta": "சூழல்: உள்ளூர் பாரம்பரிய சபை ஒன்று, உயர்கல்வி அல்லது வேலைவாய்ப்பைத் தேடும் பெண்களை ஊரை விட்டு ஒதுக்கி வைக்க உத்தரவிட்டு, பாரம்பரிய ஆண் அதிகாரத்தைப் பாதுகாப்பதாக உரிமை கோருகிறது.\n\nகேள்வி: இந்தச் சபையின் உத்தரவை உறுப்பு 51A-ன் கீழ் எந்த அடிப்படை கடமை நேரடியாக மறுக்கிறது?",
     "options_en": [
-      "Article 51A(e) — Duty to renounce practices derogatory to the dignity of women",
       "Article 51A(b) — Duty to follow noble ideals of freedom struggle",
+      "Article 51A(e) — Duty to renounce practices derogatory to the dignity of women",
       "Article 51A(f) — Duty to value composite culture",
       "Article 51A(j) — Duty to strive towards individual excellence"
     ],
     "options_ta": [
-      "உறுப்பு 51A(e) — பெண்களின் கண்ணியத்தைக் குறைக்கும் வழக்கங்களைக் கைவிடும் கடமை",
       "உறுப்பு 51A(b) — சுதந்திரப் போராட்ட லட்சியங்களைப் பின்பற்றும் கடமை",
+      "உறுப்பு 51A(e) — பெண்களின் கண்ணியத்தைக் குறைக்கும் வழக்கங்களைக் கைவிடும் கடமை",
       "உறுப்பு 51A(f) — கூட்டுப் பண்பாட்டை மதிக்கும் கடமை",
       "உறுப்பு 51A(j) — தனிநபர் சிறப்பை நோக்கி முயலும் கடமை"
     ],
-    "answer": "a",
+    "answer": "b",
     "explanation_en": "Article 51A(e) explicitly commands every citizen to promote harmony and common brotherhood and to 'renounce practices derogatory to the dignity of women'. Customary practices targeting or humiliating women violate this duty.",
     "explanation_ta": "உறுப்பு 51A(e) நல்லிணக்கத்தை வளர்க்கவும் 'பெண்களின் கண்ணியத்தைக் குறைக்கும் வழக்கங்களைக் கைவிடவும்' ஒவ்வொரு குடிமகனுக்கும் கட்டாயமாக்குகிறது. பெண்களை இலக்கு வைக்கும் வழக்கங்கள் இக்கடமையை மீறுகின்றன."
   },
@@ -895,13 +895,13 @@
       },
       {
         "id": "B",
-        "en": "Both A and R are correct but R is NOT the correct explanation of A",
-        "ta": "A மற்றும் R இரண்டும் சரி, ஆனால் R என்பது A விற்கு சரியான விளக்கம் அல்ல."
+        "en": "A is correct but R is incorrect",
+        "ta": "A சரி, ஆனால் R தவறு."
       },
       {
         "id": "C",
-        "en": "A is correct but R is incorrect",
-        "ta": "A சரி, ஆனால் R தவறு."
+        "en": "Both A and R are correct but R is NOT the correct explanation of A",
+        "ta": "A மற்றும் R இரண்டும் சரி, ஆனால் R என்பது A விற்கு சரியான விளக்கம் அல்ல."
       },
       {
         "id": "D",
@@ -909,7 +909,7 @@
         "ta": "A தவறு, ஆனால் R சரி."
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "C",
     "explanation": {
       "en": "Both Assertion and Reason are true, and R explains A. In Nagaraja (2014), SC relied heavily on Article 51A(g) ('compassion for living creatures') to read animal rights into PCA Act 1960.",
       "ta": "கூற்று A மற்றும் காரணம் R இரண்டும் சரி, மேலும் R என்பது A-விற்கு சரியான விளக்கம். நாகராஜா வழக்கில் (2014) உறுப்பு 51A(g)-ன் 'உயிரினங்களிடம் கருணை' என்ற விதியையே உச்சநீதிமன்றம் முதன்மையாக நம்பியது."
@@ -920,12 +920,12 @@
         "ta": "தவறு. காரணம் கூற்றின் அரசியலமைப்பு அடிப்படையை நேரடியாக விளக்குகிறது."
       },
       "B": {
-        "en": "Correct. Article 51A(g) compassion clause is the exact constitutional foundation of Nagaraja (2014) ruling.",
-        "ta": "சரி. உறுப்பு 51A(g) கருணை விதியே நாகராஜா (2014) தீர்ப்பின் அரசியலமைப்பு அடித்தளமாகும்."
-      },
-      "C": {
         "en": "Incorrect. Reason is factually correct as per Article 51A(g).",
         "ta": "தவறு. காரணம் உறுப்பு 51A(g)-ன் படி சரியானது."
+      },
+      "C": {
+        "en": "Correct. Article 51A(g) compassion clause is the exact constitutional foundation of Nagaraja (2014) ruling.",
+        "ta": "சரி. உறுப்பு 51A(g) கருணை விதியே நாகராஜா (2014) தீர்ப்பின் அரசியலமைப்பு அடித்தளமாகும்."
       },
       "D": {
         "en": "Incorrect. Assertion is factually true as per 2014 SC judgment.",
@@ -957,17 +957,17 @@
     "question_ta": "கூற்று (A): இந்திய விலங்கு நல வாரியம் எதிராக ஏ. நாகராஜா (2014) வழக்கில், ஜல்லிக்கட்டின் போது காளைகளைத் தேவையில்லாத வலி மற்றும் துன்பத்திற்கு ஆளாக்க முடியாது என உச்சநீதிமன்றம் தீர்ப்பளித்தது.\nகாரணம் (R): உறுப்பு 51A(g) உயிரினங்களிடம் கருணை காட்டுவதை ஒவ்வொரு குடிமகனின் அடிப்படை கடமையாக விதித்து, விலங்கு நலனை அரசியலமைப்பு கவலையாக உயர்த்துகிறது.",
     "options_en": [
       "Both A and R are correct and R is the correct explanation of A",
-      "Both A and R are correct but R is NOT the correct explanation of A",
       "A is correct but R is incorrect",
+      "Both A and R are correct but R is NOT the correct explanation of A",
       "A is incorrect but R is correct"
     ],
     "options_ta": [
       "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்.",
-      "A மற்றும் R இரண்டும் சரி, ஆனால் R என்பது A விற்கு சரியான விளக்கம் அல்ல.",
       "A சரி, ஆனால் R தவறு.",
+      "A மற்றும் R இரண்டும் சரி, ஆனால் R என்பது A விற்கு சரியான விளக்கம் அல்ல.",
       "A தவறு, ஆனால் R சரி."
     ],
-    "answer": "b",
+    "answer": "c",
     "explanation_en": "Both Assertion and Reason are true, and R explains A. In Nagaraja (2014), SC relied heavily on Article 51A(g) ('compassion for living creatures') to read animal rights into PCA Act 1960.",
     "explanation_ta": "கூற்று A மற்றும் காரணம் R இரண்டும் சரி, மேலும் R என்பது A-விற்கு சரியான விளக்கம். நாகராஜா வழக்கில் (2014) உறுப்பு 51A(g)-ன் 'உயிரினங்களிடம் கருணை' என்ற விதியையே உச்சநீதிமன்றம் முதன்மையாக நம்பியது."
   },
@@ -996,16 +996,16 @@
       },
       {
         "id": "C",
-        "en": "1 only",
-        "ta": "1 மட்டும்"
+        "en": "Neither 1 nor 2",
+        "ta": "எதுவும் இல்லை"
       },
       {
         "id": "D",
-        "en": "Neither 1 nor 2",
-        "ta": "எதுவும் இல்லை"
+        "en": "1 only",
+        "ta": "1 மட்டும்"
       }
     ],
-    "correct_answer": "C",
+    "correct_answer": "D",
     "explanation": {
       "en": "Both statements are correct. Article 51A(c) is unique in combining political sovereignty with territorial and emotional integrity of the nation.",
       "ta": "இரண்டு கூற்றுகளும் சரியானவை. உறுப்பு 51A(c) அரசியல் இறையாண்மையை நாட்டின் பிராந்திய மற்றும் உணர்வுப்பூர்வ ஒருமைப்பாட்டுடன் இணைப்பதில் தனித்துவமானது."
@@ -1020,12 +1020,12 @@
         "ta": "தவறு. 1 மற்றும் 2 இரண்டும் சரியானவை."
       },
       "C": {
-        "en": "Correct. Statement 1 is factually correct as per Article 51A(c).",
-        "ta": "சரி. கூற்று 1 உறுப்பு 51A(c)-ன் படி சரியானது."
-      },
-      "D": {
         "en": "Incorrect. Neither is false.",
         "ta": "தவறு. எதுவும் தவறல்ல."
+      },
+      "D": {
+        "en": "Correct. Statement 1 is factually correct as per Article 51A(c).",
+        "ta": "சரி. கூற்று 1 உறுப்பு 51A(c)-ன் படி சரியானது."
       }
     },
     "tnpsc_tip": {
@@ -1054,16 +1054,16 @@
     "options_en": [
       "2 only",
       "Both 1 and 2",
-      "1 only",
-      "Neither 1 nor 2"
+      "Neither 1 nor 2",
+      "1 only"
     ],
     "options_ta": [
       "2 மட்டும்",
       "1 மற்றும் 2 இரண்டும்",
-      "1 மட்டும்",
-      "எதுவும் இல்லை"
+      "எதுவும் இல்லை",
+      "1 மட்டும்"
     ],
-    "answer": "c",
+    "answer": "d",
     "explanation_en": "Both statements are correct. Article 51A(c) is unique in combining political sovereignty with territorial and emotional integrity of the nation.",
     "explanation_ta": "இரண்டு கூற்றுகளும் சரியானவை. உறுப்பு 51A(c) அரசியல் இறையாண்மையை நாட்டின் பிராந்திய மற்றும் உணர்வுப்பூர்வ ஒருமைப்பாட்டுடன் இணைப்பதில் தனித்துவமானது."
   },
@@ -1178,13 +1178,13 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டும்"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டும்"
       },
       {
         "id": "B",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டும்"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டும்"
       },
       {
         "id": "C",
@@ -1197,19 +1197,19 @@
         "ta": "1, 2 மற்றும் 3"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "B",
     "explanation": {
       "en": "Statements 1 and 3 are correct. 'Composite culture' (Ganga-Jamuni tehzeeb) reflects the synthesis of diverse regional, linguistic, and religious streams. Restricting it exclusively to ancient Vedic literature (statement 2) is incorrect.",
       "ta": "கூற்றுகள் 1 மற்றும் 3 சரியானவை. 'கூட்டுப் பண்பாடு' என்பது பல்வேறு பிராந்திய, மொழி மற்றும் மதச் சேர்க்கையின் கலவையாகும். அதை வைதீக இலக்கியங்களுக்கு மட்டுமே எல்லைப்படுத்துவது (கூற்று 2) தவறானது."
     },
     "why_not_others": {
       "A": {
-        "en": "Correct. Statements 1 and 3 correctly describe composite culture and its constitutional link with Art 29/30.",
-        "ta": "சரி. கூற்றுகள் 1 மற்றும் 3 கூட்டுப் பண்பாட்டையும் உறுப்புகள் 29/30 உடனான அதன் தொடர்பையும் சரியாக விவரிக்கின்றன."
-      },
-      "B": {
         "en": "Incorrect. Statement 2 is false because composite culture includes all historical streams (Buddhist, Jain, Islamic, Bhakti, Sufi, Western, etc.).",
         "ta": "தவறு. கூட்டுப் பண்பாடு அனைத்து வரலாற்று நீரோட்டங்களையும் உள்ளடக்கியது என்பதால் கூற்று 2 தவறானது."
+      },
+      "B": {
+        "en": "Correct. Statements 1 and 3 correctly describe composite culture and its constitutional link with Art 29/30.",
+        "ta": "சரி. கூற்றுகள் 1 மற்றும் 3 கூட்டுப் பண்பாட்டையும் உறுப்புகள் 29/30 உடனான அதன் தொடர்பையும் சரியாக விவரிக்கின்றன."
       },
       "C": {
         "en": "Incorrect. Statement 2 is incorrect.",
@@ -1244,18 +1244,18 @@
     "question_en": "Consider the following statements regarding Article 51A(f) ('Composite Culture'):\n\n1. Article 51A(f) obligates citizens to value and preserve the rich heritage of India's 'composite culture'.\n2. 'Composite culture' refers exclusively to ancient Vedic literature, excluding medieval and modern syncretic traditions.\n3. Article 51A(f) complements minority cultural rights under Articles 29 and 30 by encouraging national cross-cultural respect.\n\nWhich of the statements given above are correct?",
     "question_ta": "உறுப்பு 51A(f) ('கூட்டுப் பண்பாடு') பற்றிய பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n\n1. உறுப்பு 51A(f) இந்தியாவின் 'கூட்டுப் பண்பாட்டின்' வளமான பாரம்பரியத்தைப் போற்றிப் பேணக் குடிமக்களுக்குக் கடமையாக்குகிறது.\n2. 'கூட்டுப் பண்பாடு' என்பது இடைக்கால மற்றும் நவீன கூட்டுப் பாரம்பரியங்களைத் தவிர்த்து, பண்டைய வைதீக இலக்கியங்களை மட்டுமே குறிக்கிறது.\n3. உறுப்பு 51A(f) கலாச்சார மரியாதையை ஊக்குவிப்பதன் மூலம் உறுப்புகள் 29 மற்றும் 30-ன் கீழ் உள்ள சிறுபான்மையினர் பண்பாட்டு உரிமைகளுக்கு நிரப்பியாக அமைகிறது.\n\nமேற்கூறிய கூற்றுகளில் எவை சரியானவை?",
     "options_en": [
-      "1 and 3 only",
       "1 and 2 only",
+      "1 and 3 only",
       "2 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
-      "1 மற்றும் 3 மட்டும்",
       "1 மற்றும் 2 மட்டும்",
+      "1 மற்றும் 3 மட்டும்",
       "2 மற்றும் 3 மட்டும்",
       "1, 2 மற்றும் 3"
     ],
-    "answer": "a",
+    "answer": "b",
     "explanation_en": "Statements 1 and 3 are correct. 'Composite culture' (Ganga-Jamuni tehzeeb) reflects the synthesis of diverse regional, linguistic, and religious streams. Restricting it exclusively to ancient Vedic literature (statement 2) is incorrect.",
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 3 சரியானவை. 'கூட்டுப் பண்பாடு' என்பது பல்வேறு பிராந்திய, மொழி மற்றும் மதச் சேர்க்கையின் கலவையாகும். அதை வைதீக இலக்கியங்களுக்கு மட்டுமே எல்லைப்படுத்துவது (கூற்று 2) தவறானது."
   },
@@ -1285,8 +1285,8 @@
       },
       {
         "id": "B",
-        "en": "Both A and R are correct but R is NOT the correct explanation of A",
-        "ta": "A மற்றும் R இரண்டும் சரி, ஆனால் R என்பது A விற்கு சரியான விளக்கம் அல்ல."
+        "en": "A is incorrect but R is correct",
+        "ta": "A தவறு, ஆனால் R சரி."
       },
       {
         "id": "C",
@@ -1295,11 +1295,11 @@
       },
       {
         "id": "D",
-        "en": "A is incorrect but R is correct",
-        "ta": "A தவறு, ஆனால் R சரி."
+        "en": "Both A and R are correct but R is NOT the correct explanation of A",
+        "ta": "A மற்றும் R இரண்டும் சரி, ஆனால் R என்பது A விற்கு சரியான விளக்கம் அல்ல."
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "D",
     "explanation": {
       "en": "Both Assertion and Reason are true, and R explains A. While the 44th CAA reversed Emergency era anti-democratic changes, it retained Part IVA because Fundamental Duties were universally acknowledged as vital civic responsibilities.",
       "ta": "கூற்று A மற்றும் காரணம் R இரண்டும் சரி, மேலும் R என்பது A-விற்கு சரியான விளக்கம். 44வது திருத்தம் அவசரநிலை கால மாற்றங்களை ரத்து செய்தபோதிலும், அடிப்படை கடமைகள் முக்கியமான குடிமைப் பொறுப்புகளாக ஏற்றுக்கொள்ளப்பட்டதால் பகுதி IVA தக்கவைக்கப்பட்டது."
@@ -1310,16 +1310,16 @@
         "ta": "தவறு. 1977-78 அரசியல் மாற்றத்திலும் பகுதி IVA ஏன் தப்பித்தது என்பதை காரணம் நேரடியாக விளக்குகிறது."
       },
       "B": {
-        "en": "Correct. 44th CAA retained Part IVA intact, and R correctly explains the bipartisan acceptance of civic duties.",
-        "ta": "சரி. 44வது திருத்தம் பகுதி IVA-வை தக்கவைத்தது, மேலும் R குடிமைப் பொறுப்புகளின் ஏற்பை சரியாக விளக்குகிறது."
+        "en": "Incorrect. Assertion is factually true under 44th CAA 1978.",
+        "ta": "தவறு. 44வது திருத்தம் 1978-ன் படி கூற்று சரியானது."
       },
       "C": {
         "en": "Incorrect. Reason is historically accurate.",
         "ta": "தவறு. காரணம் வரலாற்று ரீதியாக சரியானது."
       },
       "D": {
-        "en": "Incorrect. Assertion is factually true under 44th CAA 1978.",
-        "ta": "தவறு. 44வது திருத்தம் 1978-ன் படி கூற்று சரியானது."
+        "en": "Correct. 44th CAA retained Part IVA intact, and R correctly explains the bipartisan acceptance of civic duties.",
+        "ta": "சரி. 44வது திருத்தம் பகுதி IVA-வை தக்கவைத்தது, மேலும் R குடிமைப் பொறுப்புகளின் ஏற்பை சரியாக விளக்குகிறது."
       }
     },
     "tnpsc_tip": {
@@ -1347,17 +1347,17 @@
     "question_ta": "கூற்று (A): 44வது அரசியலமைப்பு திருத்தச் சட்டம் (1978) 42வது திருத்தத்தின் பல மாற்றங்களை ரத்து செய்தபோதிலும் பகுதி IVA-வை (அடிப்படை கடமைகள்) முழுமையாகத் தக்கவைத்துக் கொண்டது.\nகாரணம் (R): தேசிய ஒருமைப்பாடு மற்றும் அரசியலமைப்பு ஒழுங்கை ஊக்குவிக்கும் குடிமைப் பொறுப்புகள் கட்சி அரசியல் கடந்த தேசிய மதிப்புகள் என்பதை ஜனதா கட்சி அரசு அங்கீகரித்தது.",
     "options_en": [
       "Both A and R are correct and R is the correct explanation of A",
-      "Both A and R are correct but R is NOT the correct explanation of A",
+      "A is incorrect but R is correct",
       "A is correct but R is incorrect",
-      "A is incorrect but R is correct"
+      "Both A and R are correct but R is NOT the correct explanation of A"
     ],
     "options_ta": [
       "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்.",
-      "A மற்றும் R இரண்டும் சரி, ஆனால் R என்பது A விற்கு சரியான விளக்கம் அல்ல.",
+      "A தவறு, ஆனால் R சரி.",
       "A சரி, ஆனால் R தவறு.",
-      "A தவறு, ஆனால் R சரி."
+      "A மற்றும் R இரண்டும் சரி, ஆனால் R என்பது A விற்கு சரியான விளக்கம் அல்ல."
     ],
-    "answer": "b",
+    "answer": "d",
     "explanation_en": "Both Assertion and Reason are true, and R explains A. While the 44th CAA reversed Emergency era anti-democratic changes, it retained Part IVA because Fundamental Duties were universally acknowledged as vital civic responsibilities.",
     "explanation_ta": "கூற்று A மற்றும் காரணம் R இரண்டும் சரி, மேலும் R என்பது A-விற்கு சரியான விளக்கம். 44வது திருத்தம் அவசரநிலை கால மாற்றங்களை ரத்து செய்தபோதிலும், அடிப்படை கடமைகள் முக்கியமான குடிமைப் பொறுப்புகளாக ஏற்றுக்கொள்ளப்பட்டதால் பகுதி IVA தக்கவைக்கப்பட்டது."
   },
@@ -1381,13 +1381,13 @@
       },
       {
         "id": "B",
-        "en": "Article 51A(j) obligates citizens and State to strive towards excellence in all spheres, meaning institutional merit and super-speciality excellence cannot be completely sacrificed.",
-        "ta": "உறுப்பு 51A(j) அனைத்துத் துறைகளிலும் சிறப்பினை நோக்கி முயலக் குடிமக்களுக்கும் அரசுக்கும் கடமையாக்குகிறது, எனவே நிறுவனத் தகுதி மற்றும் மேல்-சிறப்பு தகுதியை முழுமையாகத் தியாகம் செய்ய முடியாது."
+        "en": "Article 51A(j) commands the State to abolish entrance examinations in higher education.",
+        "ta": "உறுப்பு 51A(j) உயர்கல்வியில் நுழைவுத் தேர்வுகளை ரத்து செய்ய அரசைப் பணிக்கிறது."
       },
       {
         "id": "C",
-        "en": "Article 51A(j) commands the State to abolish entrance examinations in higher education.",
-        "ta": "உறுப்பு 51A(j) உயர்கல்வியில் நுழைவுத் தேர்வுகளை ரத்து செய்ய அரசைப் பணிக்கிறது."
+        "en": "Article 51A(j) obligates citizens and State to strive towards excellence in all spheres, meaning institutional merit and super-speciality excellence cannot be completely sacrificed.",
+        "ta": "உறுப்பு 51A(j) அனைத்துத் துறைகளிலும் சிறப்பினை நோக்கி முயலக் குடிமக்களுக்கும் அரசுக்கும் கடமையாக்குகிறது, எனவே நிறுவனத் தகுதி மற்றும் மேல்-சிறப்பு தகுதியை முழுமையாகத் தியாகம் செய்ய முடியாது."
       },
       {
         "id": "D",
@@ -1395,7 +1395,7 @@
         "ta": "உறுப்பு 51A(j) குறைந்த செயல்திறன் கொண்ட மாணவர்களின் பல்கலைக்கழகப் பட்டங்களை ரத்து செய்ய நீதிமன்றங்களுக்கு அதிகாரமளிக்கிறது."
       }
     ],
-    "correct_answer": "C",
+    "correct_answer": "B",
     "explanation": {
       "en": "In AIIMS Students Union (2002), Supreme Court held that Fundamental Duties under Article 51A(j) ('strive towards excellence') are as important as Fundamental Rights; excellence in super-specialities cannot be completely overlooked.",
       "ta": "AIIMS மாணவர் சங்க வழக்கில் (2002), உறுப்பு 51A(j)-ன் கீழ் உள்ள அடிப்படை கடமை ('சிறப்பினை நோக்கி முயலுதல்') அடிப்படை உரிமைகளைப் போலவே முக்கியமானது என்றும் மேல்-சிறப்பு படிப்புகளில் தகுதியைப் புறக்கணிக்க முடியாது என்றும் உச்சநீதிமன்றம் கூறியது."
@@ -1406,12 +1406,12 @@
         "ta": "தவறு. உறுப்பு 51A(j) சிறப்பினை ஊக்குவிக்கிறது, தகுதியை ரத்து செய்யாது."
       },
       "B": {
-        "en": "Incorrect. Art 51A(j) applies to ALL spheres of individual and collective activity.",
-        "ta": "தவறு. உறுப்பு 51A(j) தனிநபர் மற்றும் கூட்டுச் செயல்பாடுகளின் அனைத்துத் துறைகளுக்கும் பொருந்தும்."
-      },
-      "C": {
         "en": "Correct. Art 51A(j) excellence clause mandates preserving standards in super-specialities.",
         "ta": "சரி. உறுப்பு 51A(j) சிறப்பினை நோக்கிய விதி மேல்-சிறப்பு படிப்புகளில் தரத்தைப் பேணுவதைக் கட்டாயமாக்குகிறது."
+      },
+      "C": {
+        "en": "Incorrect. Art 51A(j) applies to ALL spheres of individual and collective activity.",
+        "ta": "தவறு. உறுப்பு 51A(j) தனிநபர் மற்றும் கூட்டுச் செயல்பாடுகளின் அனைத்துத் துறைகளுக்கும் பொருந்தும்."
       },
       "D": {
         "en": "Incorrect. Art 51A(j) is a constitutional duty, not an administrative degree cancellation authorization.",
@@ -1443,17 +1443,17 @@
     "question_ta": "சூழல்: மருத்துவ மேல்-சிறப்பு படிப்புகளில் கல்வித் தகுதி நிலைகள் மற்றும் நுழைவு மதிப்பெண்களை மாணவர் சங்கம் ஒன்று எதிர்த்து, தகுதி நிலைகள் சமூக நலக் கோட்பாடுகளுக்கு முரணானவை என்று வாதாடுகிறது.\n\nகேள்வி: AIIMS மாணவர் சங்கம் எதிராக AIIMS (2002) வழக்கின் உச்சநீதிமன்றத் தீர்ப்பைப் பயன்படுத்தினால், உறுப்பு 51A(j) இச்சிக்கலை எவ்வாறு நிர்வகிக்கிறது?",
     "options_en": [
       "Article 51A(j) applies exclusively to international sports events, not academic admissions.",
-      "Article 51A(j) obligates citizens and State to strive towards excellence in all spheres, meaning institutional merit and super-speciality excellence cannot be completely sacrificed.",
       "Article 51A(j) commands the State to abolish entrance examinations in higher education.",
+      "Article 51A(j) obligates citizens and State to strive towards excellence in all spheres, meaning institutional merit and super-speciality excellence cannot be completely sacrificed.",
       "Article 51A(j) grants courts power to automatically cancel university degrees of low-performing students."
     ],
     "options_ta": [
       "உறுப்பு 51A(j) சர்வதேச விளையாட்டு நிகழ்வுகளுக்கு மட்டுமே பொருந்தும், கல்விச் சேர்க்கைகளுக்கு அல்ல.",
-      "உறுப்பு 51A(j) அனைத்துத் துறைகளிலும் சிறப்பினை நோக்கி முயலக் குடிமக்களுக்கும் அரசுக்கும் கடமையாக்குகிறது, எனவே நிறுவனத் தகுதி மற்றும் மேல்-சிறப்பு தகுதியை முழுமையாகத் தியாகம் செய்ய முடியாது.",
       "உறுப்பு 51A(j) உயர்கல்வியில் நுழைவுத் தேர்வுகளை ரத்து செய்ய அரசைப் பணிக்கிறது.",
+      "உறுப்பு 51A(j) அனைத்துத் துறைகளிலும் சிறப்பினை நோக்கி முயலக் குடிமக்களுக்கும் அரசுக்கும் கடமையாக்குகிறது, எனவே நிறுவனத் தகுதி மற்றும் மேல்-சிறப்பு தகுதியை முழுமையாகத் தியாகம் செய்ய முடியாது.",
       "உறுப்பு 51A(j) குறைந்த செயல்திறன் கொண்ட மாணவர்களின் பல்கலைக்கழகப் பட்டங்களை ரத்து செய்ய நீதிமன்றங்களுக்கு அதிகாரமளிக்கிறது."
     ],
-    "answer": "c",
+    "answer": "b",
     "explanation_en": "In AIIMS Students Union (2002), Supreme Court held that Fundamental Duties under Article 51A(j) ('strive towards excellence') are as important as Fundamental Rights; excellence in super-specialities cannot be completely overlooked.",
     "explanation_ta": "AIIMS மாணவர் சங்க வழக்கில் (2002), உறுப்பு 51A(j)-ன் கீழ் உள்ள அடிப்படை கடமை ('சிறப்பினை நோக்கி முயலுதல்') அடிப்படை உரிமைகளைப் போலவே முக்கியமானது என்றும் மேல்-சிறப்பு படிப்புகளில் தகுதியைப் புறக்கணிக்க முடியாது என்றும் உச்சநீதிமன்றம் கூறியது."
   },
@@ -1482,16 +1482,16 @@
       },
       {
         "id": "C",
-        "en": "1 only",
-        "ta": "1 மட்டும்"
+        "en": "2 only",
+        "ta": "2 மட்டும்"
       },
       {
         "id": "D",
-        "en": "2 only",
-        "ta": "2 மட்டும்"
+        "en": "1 only",
+        "ta": "1 மட்டும்"
       }
     ],
-    "correct_answer": "D",
+    "correct_answer": "C",
     "explanation": {
       "en": "Statement 1 is correct. Article 51A(b) inspires moral adherence to freedom struggle values. Statement 2 is false; there is no constitutional mandate requiring political party membership.",
       "ta": "கூற்று 1 சரி. உறுப்பு 51A(b) சுதந்திரப் போராட்ட மதிப்புகளைப் பின்பற்ற ஊக்கமளிக்கிறது. அரசியல் கட்சி உறுப்பினராவதை அரசியலமைப்பு கட்டாயமாக்காததால் கூற்று 2 தவறானது."
@@ -1506,12 +1506,12 @@
         "ta": "தவறு. கூற்று 2 தவறானது என்பதால் இரண்டும் சரி என்பது தவறாகும்."
       },
       "C": {
-        "en": "Incorrect. Statement 1 is true.",
-        "ta": "தவறு. கூற்று 1 சரியானது."
-      },
-      "D": {
         "en": "Correct. Statement 1 correctly describes the moral scope of Article 51A(b).",
         "ta": "சரி. கூற்று 1 உறுப்பு 51A(b)-ன் தத்துவார்த்த எல்லையைச் சரியாக விவரிக்கிறது."
+      },
+      "D": {
+        "en": "Incorrect. Statement 1 is true.",
+        "ta": "தவறு. கூற்று 1 சரியானது."
       }
     },
     "tnpsc_tip": {
@@ -1540,16 +1540,16 @@
     "options_en": [
       "Both 1 and 2",
       "Neither 1 nor 2",
-      "1 only",
-      "2 only"
+      "2 only",
+      "1 only"
     ],
     "options_ta": [
       "1 மற்றும் 2 இரண்டும்",
       "எதுவும் இல்லை",
-      "1 மட்டும்",
-      "2 மட்டும்"
+      "2 மட்டும்",
+      "1 மட்டும்"
     ],
-    "answer": "d",
+    "answer": "c",
     "explanation_en": "Statement 1 is correct. Article 51A(b) inspires moral adherence to freedom struggle values. Statement 2 is false; there is no constitutional mandate requiring political party membership.",
     "explanation_ta": "கூற்று 1 சரி. உறுப்பு 51A(b) சுதந்திரப் போராட்ட மதிப்புகளைப் பின்பற்ற ஊக்கமளிக்கிறது. அரசியல் கட்சி உறுப்பினராவதை அரசியலமைப்பு கட்டாயமாக்காததால் கூற்று 2 தவறானது."
   },
@@ -1669,13 +1669,13 @@
       },
       {
         "id": "B",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டும்"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டும்"
       },
       {
         "id": "C",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டும்"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டும்"
       },
       {
         "id": "D",
@@ -1683,7 +1683,7 @@
         "ta": "1, 2 மற்றும் 3"
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "C",
     "explanation": {
       "en": "Statements 1 and 2 are correct. NCRWC (2002) recommended adding duty to vote, pay taxes, and foster family values. However, statement 3 is false because Parliament did NOT enact NCRWC's recommended new duties; 86th CAA added ONLY the 11th duty [Art 51A(k)] regarding education.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. வாக்களிக்கும் கடமை, வரி செலுத்தும் கடமை ஆகியவற்றைச் சேர்க்க NCRWC பரிந்துரைத்தது. ஆனால் 86வது திருத்தம் கல்வியைப் பற்றிய 11வது கடமையை [51A(k)] மட்டுமே சேர்த்தது, NCRWC பரிந்துரைகளைச் சேர்க்கவில்லை என்பதால் கூற்று 3 தவறானது."
@@ -1694,12 +1694,12 @@
         "ta": "தவறு. NCRWC பரிந்துரைகள் உறுப்பு 51A-ல் சேர்க்கப்படாததால் கூற்று 3 தவறானது."
       },
       "B": {
-        "en": "Correct. Statements 1 and 2 accurately state NCRWC proposals.",
-        "ta": "சரி. கூற்றுகள் 1 மற்றும் 2 NCRWC பரிந்துரைகளைச் சரியாகக் குறிப்பிடுகின்றன."
-      },
-      "C": {
         "en": "Incorrect. Statement 3 is incorrect.",
         "ta": "தவறு. கூற்று 3 தவறானது."
+      },
+      "C": {
+        "en": "Correct. Statements 1 and 2 accurately state NCRWC proposals.",
+        "ta": "சரி. கூற்றுகள் 1 மற்றும் 2 NCRWC பரிந்துரைகளைச் சரியாகக் குறிப்பிடுகின்றன."
       },
       "D": {
         "en": "Incorrect. Statements 1 and 2 are true.",
@@ -1731,17 +1731,17 @@
     "question_ta": "அடிப்படை கடமைகள் பற்றிய அரசியலமைப்பு செயல்பாட்டை மறுஆய்வு செய்வதற்கான தேசிய ஆணையத்தின் (NCRWC / வெங்கடாசலய்யா ஆணையம், 2002) பரிந்துரைகள் பற்றிய பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n\n1. தேர்தலில் வாக்களிக்கவும் ஜனநாயகச் செயல்பாட்டில் பங்கேற்கவும் ஒரு புதிய கடமையைச் சேர்க்க NCRWC பரிந்துரைத்தது.\n2. நேர்மையாகவும் உடனுக்குடனும் வரி செலுத்தும் கடமையைச் சேர்க்க NCRWC பரிந்துரைத்தது.\n3. புதிய அடிப்படை கடமைகள் பற்றிய NCRWC-ன் அனைத்துப் பரிந்துரைகளும் 2002-ன் 86வது திருத்தச் சட்டம் மூலம் நாடாளுமன்றத்தால் இயற்றப்பட்டன.\n\nமேற்கூறிய கூற்றுகளில் எவை சரியானவை?",
     "options_en": [
       "1 and 2 only",
-      "2 and 3 only",
       "1 and 3 only",
+      "2 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
       "1 மற்றும் 2 மட்டும்",
-      "2 மற்றும் 3 மட்டும்",
       "1 மற்றும் 3 மட்டும்",
+      "2 மற்றும் 3 மட்டும்",
       "1, 2 மற்றும் 3"
     ],
-    "answer": "b",
+    "answer": "c",
     "explanation_en": "Statements 1 and 2 are correct. NCRWC (2002) recommended adding duty to vote, pay taxes, and foster family values. However, statement 3 is false because Parliament did NOT enact NCRWC's recommended new duties; 86th CAA added ONLY the 11th duty [Art 51A(k)] regarding education.",
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. வாக்களிக்கும் கடமை, வரி செலுத்தும் கடமை ஆகியவற்றைச் சேர்க்க NCRWC பரிந்துரைத்தது. ஆனால் 86வது திருத்தம் கல்வியைப் பற்றிய 11வது கடமையை [51A(k)] மட்டுமே சேர்த்தது, NCRWC பரிந்துரைகளைச் சேர்க்கவில்லை என்பதால் கூற்று 3 தவறானது."
   },
@@ -1776,16 +1776,16 @@
       },
       {
         "id": "C",
-        "en": "Both A and R are correct but R is NOT the correct explanation of A",
-        "ta": "A மற்றும் R இரண்டும் சரி, ஆனால் R என்பது A விற்கு சரியான விளக்கம் அல்ல."
+        "en": "A is incorrect but R is correct",
+        "ta": "A தவறு, ஆனால் R சரி."
       },
       {
         "id": "D",
-        "en": "A is incorrect but R is correct",
-        "ta": "A தவறு, ஆனால் R சரி."
+        "en": "Both A and R are correct but R is NOT the correct explanation of A",
+        "ta": "A மற்றும் R இரண்டும் சரி, ஆனால் R என்பது A விற்கு சரியான விளக்கம் அல்ல."
       }
     ],
-    "correct_answer": "C",
+    "correct_answer": "D",
     "explanation": {
       "en": "Both Assertion and Reason are true, and R explains A. In Aruna Roy (2002), SC held that 'value education' based on comparative philosophy is distinct from 'religious instruction' prohibited under Article 28(1), and fulfills Article 51A(e) and (f).",
       "ta": "கூற்று A மற்றும் காரணம் R இரண்டும் சரி, மேலும் R என்பது A-விற்கு சரியான விளக்கம். அருணா ராய் வழக்கில் (2002), ஒப்பிட்டு மதங்களின் அடிப்படையிலான 'மதிப்புக் கல்வி' என்பது உறுப்பு 28(1)-ல் தடைசெய்யப்பட்ட 'மதப் போதனையிலிருந்து' வேறுபட்டது என்றும், அது உறுப்புகள் 51A(e) மற்றும் (f)-ஐ நிறைவேற்றுகிறது என்றும் கூறப்பட்டது."
@@ -1800,12 +1800,12 @@
         "ta": "தவறு. காரணம் சரியானது."
       },
       "C": {
-        "en": "Correct. Aruna Roy ruling explicitly linked value education to Article 51A(e) and (f).",
-        "ta": "சரி. அருணா ராய் தீர்ப்பு மதிப்புக் கல்வியை உறுப்புகள் 51A(e) மற்றும் (f) உடன் நேரடியாக இணைத்தது."
-      },
-      "D": {
         "en": "Incorrect. Assertion is factually true.",
         "ta": "தவறு. கூற்று சரியானது."
+      },
+      "D": {
+        "en": "Correct. Aruna Roy ruling explicitly linked value education to Article 51A(e) and (f).",
+        "ta": "சரி. அருணா ராய் தீர்ப்பு மதிப்புக் கல்வியை உறுப்புகள் 51A(e) மற்றும் (f) உடன் நேரடியாக இணைத்தது."
       }
     },
     "tnpsc_tip": {
@@ -1834,16 +1834,16 @@
     "options_en": [
       "A is correct but R is incorrect",
       "Both A and R are correct and R is the correct explanation of A",
-      "Both A and R are correct but R is NOT the correct explanation of A",
-      "A is incorrect but R is correct"
+      "A is incorrect but R is correct",
+      "Both A and R are correct but R is NOT the correct explanation of A"
     ],
     "options_ta": [
       "A சரி, ஆனால் R தவறு.",
       "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்.",
-      "A மற்றும் R இரண்டும் சரி, ஆனால் R என்பது A விற்கு சரியான விளக்கம் அல்ல.",
-      "A தவறு, ஆனால் R சரி."
+      "A தவறு, ஆனால் R சரி.",
+      "A மற்றும் R இரண்டும் சரி, ஆனால் R என்பது A விற்கு சரியான விளக்கம் அல்ல."
     ],
-    "answer": "c",
+    "answer": "d",
     "explanation_en": "Both Assertion and Reason are true, and R explains A. In Aruna Roy (2002), SC held that 'value education' based on comparative philosophy is distinct from 'religious instruction' prohibited under Article 28(1), and fulfills Article 51A(e) and (f).",
     "explanation_ta": "கூற்று A மற்றும் காரணம் R இரண்டும் சரி, மேலும் R என்பது A-விற்கு சரியான விளக்கம். அருணா ராய் வழக்கில் (2002), ஒப்பிட்டு மதங்களின் அடிப்படையிலான 'மதிப்புக் கல்வி' என்பது உறுப்பு 28(1)-ல் தடைசெய்யப்பட்ட 'மதப் போதனையிலிருந்து' வேறுபட்டது என்றும், அது உறுப்புகள் 51A(e) மற்றும் (f)-ஐ நிறைவேற்றுகிறது என்றும் கூறப்பட்டது."
   },
@@ -1872,16 +1872,16 @@
       },
       {
         "id": "C",
-        "en": "Article 51A(e) — Duty to promote harmony and common brotherhood transcending religious, linguistic, regional or sectional diversities",
-        "ta": "உறுப்பு 51A(e) — மத, மொழி, பிராந்திய அல்லது பிரிவு வேறுபாடுகளைக் கடந்து நல்லிணக்கம் மற்றும் பொதுச் சகோதரத்துவத்தை வளர்க்கும் கடமை"
+        "en": "Article 51A(h) — Duty to develop scientific temper",
+        "ta": "உறுப்பு 51A(h) — அறிவியல் மனப்பான்மையை வளர்க்கும் கடமை"
       },
       {
         "id": "D",
-        "en": "Article 51A(h) — Duty to develop scientific temper",
-        "ta": "உறுப்பு 51A(h) — அறிவியல் மனப்பான்மையை வளர்க்கும் கடமை"
+        "en": "Article 51A(e) — Duty to promote harmony and common brotherhood transcending religious, linguistic, regional or sectional diversities",
+        "ta": "உறுப்பு 51A(e) — மத, மொழி, பிராந்திய அல்லது பிரிவு வேறுபாடுகளைக் கடந்து நல்லிணக்கம் மற்றும் பொதுச் சகோதரத்துவத்தை வளர்க்கும் கடமை"
       }
     ],
-    "correct_answer": "D",
+    "correct_answer": "C",
     "explanation": {
       "en": "Article 51A(e) explicitly mandates promoting harmony and common brotherhood among all people of India 'transcending religious, linguistic and regional or sectional diversities'. Attacking migrants or linguistic minorities violates this fundamental duty.",
       "ta": "உறுப்பு 51A(e) 'மத, மொழி, பிராந்திய அல்லது பிரிவு வேறுபாடுகளைக் கடந்து' நல்லிணக்கம் மற்றும் பொதுச் சகோதரத்துவத்தை வளர்க்கக் கட்டளையிடுகிறது. புலம்பெயர்ந்தோரையும் மொழிச் சிறுபான்மையினரையும் தாக்குவது இக்கடமையை மீறுகிறது."
@@ -1896,12 +1896,12 @@
         "ta": "தவறு. உறுப்பு 51A(k) குழந்தைகள் கல்வி பற்றியது."
       },
       "C": {
-        "en": "Incorrect. Article 51A(b) deals with freedom struggle ideals.",
-        "ta": "தவறு. உறுப்பு 51A(b) சுதந்திரப் போராட்ட லட்சியங்கள் பற்றியது."
-      },
-      "D": {
         "en": "Correct. Article 51A(e) specifically targets linguistic and regional diversity harmony.",
         "ta": "சரி. உறுப்பு 51A(e) மொழி மற்றும் பிராந்திய நல்லிணக்கத்தைக் குறிப்பாக இலக்கு வைக்கிறது."
+      },
+      "D": {
+        "en": "Incorrect. Article 51A(b) deals with freedom struggle ideals.",
+        "ta": "தவறு. உறுப்பு 51A(b) சுதந்திரப் போராட்ட லட்சியங்கள் பற்றியது."
       }
     },
     "tnpsc_tip": {
@@ -1930,16 +1930,16 @@
     "options_en": [
       "Article 51A(k) — Duty to provide education opportunities",
       "Article 51A(b) — Duty to follow freedom struggle ideals",
-      "Article 51A(e) — Duty to promote harmony and common brotherhood transcending religious, linguistic, regional or sectional diversities",
-      "Article 51A(h) — Duty to develop scientific temper"
+      "Article 51A(h) — Duty to develop scientific temper",
+      "Article 51A(e) — Duty to promote harmony and common brotherhood transcending religious, linguistic, regional or sectional diversities"
     ],
     "options_ta": [
       "உறுப்பு 51A(k) — கல்விக்கான வாய்ப்புகளை வழங்கும் கடமை",
       "உறுப்பு 51A(b) — சுதந்திரப் போராட்ட லட்சியங்களைப் பின்பற்றும் கடமை",
-      "உறுப்பு 51A(e) — மத, மொழி, பிராந்திய அல்லது பிரிவு வேறுபாடுகளைக் கடந்து நல்லிணக்கம் மற்றும் பொதுச் சகோதரத்துவத்தை வளர்க்கும் கடமை",
-      "உறுப்பு 51A(h) — அறிவியல் மனப்பான்மையை வளர்க்கும் கடமை"
+      "உறுப்பு 51A(h) — அறிவியல் மனப்பான்மையை வளர்க்கும் கடமை",
+      "உறுப்பு 51A(e) — மத, மொழி, பிராந்திய அல்லது பிரிவு வேறுபாடுகளைக் கடந்து நல்லிணக்கம் மற்றும் பொதுச் சகோதரத்துவத்தை வளர்க்கும் கடமை"
     ],
-    "answer": "d",
+    "answer": "c",
     "explanation_en": "Article 51A(e) explicitly mandates promoting harmony and common brotherhood among all people of India 'transcending religious, linguistic and regional or sectional diversities'. Attacking migrants or linguistic minorities violates this fundamental duty.",
     "explanation_ta": "உறுப்பு 51A(e) 'மத, மொழி, பிராந்திய அல்லது பிரிவு வேறுபாடுகளைக் கடந்து' நல்லிணக்கம் மற்றும் பொதுச் சகோதரத்துவத்தை வளர்க்கக் கட்டளையிடுகிறது. புலம்பெயர்ந்தோரையும் மொழிச் சிறுபான்மையினரையும் தாக்குவது இக்கடமையை மீறுகிறது."
   },
@@ -1958,8 +1958,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 only",
-        "ta": "1 மட்டும்"
+        "en": "Neither 1 nor 2",
+        "ta": "எதுவும் இல்லை"
       },
       {
         "id": "B",
@@ -1973,19 +1973,19 @@
       },
       {
         "id": "D",
-        "en": "Neither 1 nor 2",
-        "ta": "எதுவும் இல்லை"
+        "en": "1 only",
+        "ta": "1 மட்டும்"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "D",
     "explanation": {
       "en": "Statement 1 is correct. Modern democratic Constitutions generally do not specify duties (except Japan). Major Western democracies (USA, France, Canada, Australia) do NOT contain constitutional chapters on duties. Duties are traditionally featured in socialist Constitutions (like erstwhile USSR).",
       "ta": "கூற்று 1 சரி. நவீன ஜனநாயக அரசியலமைப்புகள் பொதுவாகக் கடமைகளைக் குறிப்பிடுவதில்லை (ஜப்பான் தவிர). அமெரிக்கா, பிரான்ஸ், கனடா போன்ற மேற்கத்திய அரசியலமைப்புகளில் கடமைகள் பற்றிய அத்தியாயங்கள் இல்லை என்பதால் கூற்று 2 தவறானது."
     },
     "why_not_others": {
       "A": {
-        "en": "Correct. Statement 1 is factually accurate regarding India and Japan.",
-        "ta": "சரி. இந்தியா மற்றும் ஜப்பான் பற்றிய கூற்று 1 வரலாற்று ரீதியாக சரியானது."
+        "en": "Incorrect. Statement 1 is true.",
+        "ta": "தவறு. கூற்று 1 சரியானது."
       },
       "B": {
         "en": "Incorrect. Statement 2 is false because Western democracies rely on common law/statutes rather than constitutional duty chapters.",
@@ -1996,8 +1996,8 @@
         "ta": "தவறு. கூற்று 2 தவறானது."
       },
       "D": {
-        "en": "Incorrect. Statement 1 is true.",
-        "ta": "தவறு. கூற்று 1 சரியானது."
+        "en": "Correct. Statement 1 is factually accurate regarding India and Japan.",
+        "ta": "சரி. இந்தியா மற்றும் ஜப்பான் பற்றிய கூற்று 1 வரலாற்று ரீதியாக சரியானது."
       }
     },
     "tnpsc_tip": {
@@ -2024,18 +2024,18 @@
     "question_en": "Consider the following statements regarding comparative constitutional law on Fundamental Duties:\n\n1. India is one of the few democratic Constitutions (along with Japan) that explicitly contains a comprehensive chapter on Fundamental Duties of citizens.\n2. Major Western democratic Constitutions such as the USA, Canada, France, and Australia included elaborate explicit chapters on Fundamental Duties in their original texts.\n\nWhich of the statement(s) given above is/are correct?",
     "question_ta": "அடிப்படை கடமைகள் பற்றிய ஒப்பீட்டு அரசியலமைப்புச் சட்டம் பற்றிய பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n\n1. ஜப்பானுடன் சேர்த்து குடிமக்களின் அடிப்படை கடமைகள் பற்றிய விரிவான அத்தியாயத்தை வெளிப்படையாகக் கொண்டுள்ள சில ஜனநாயக அரசியலமைப்புகளில் இந்தியாவும் ஒன்றாகும்.\n2. அமெரிக்கா, கனடா, பிரான்ஸ் மற்றும் ஆஸ்திரேலியா போன்ற முக்கிய மேற்கத்திய ஜனநாயக அரசியலமைப்புகள் தங்கள் அசல் உரையில் அடிப்படை கடமைகள் பற்றிய விரிவான அத்தியாயங்களைச் சேர்த்திருந்தன.\n\nமேற்கூறிய கூற்றுகளில் எது/எவை சரியானவை?",
     "options_en": [
-      "1 only",
+      "Neither 1 nor 2",
       "2 only",
       "Both 1 and 2",
-      "Neither 1 nor 2"
+      "1 only"
     ],
     "options_ta": [
-      "1 மட்டும்",
+      "எதுவும் இல்லை",
       "2 மட்டும்",
       "1 மற்றும் 2 இரண்டும்",
-      "எதுவும் இல்லை"
+      "1 மட்டும்"
     ],
-    "answer": "a",
+    "answer": "d",
     "explanation_en": "Statement 1 is correct. Modern democratic Constitutions generally do not specify duties (except Japan). Major Western democracies (USA, France, Canada, Australia) do NOT contain constitutional chapters on duties. Duties are traditionally featured in socialist Constitutions (like erstwhile USSR).",
     "explanation_ta": "கூற்று 1 சரி. நவீன ஜனநாயக அரசியலமைப்புகள் பொதுவாகக் கடமைகளைக் குறிப்பிடுவதில்லை (ஜப்பான் தவிர). அமெரிக்கா, பிரான்ஸ், கனடா போன்ற மேற்கத்திய அரசியலமைப்புகளில் கடமைகள் பற்றிய அத்தியாயங்கள் இல்லை என்பதால் கூற்று 2 தவறானது."
   },
@@ -2054,13 +2054,13 @@
     "options": [
       {
         "id": "A",
-        "en": "The Court upheld the ban, holding that restrictions placed on Fundamental Rights to give effect to DPSP (Art 48) and Fundamental Duty (Art 51A(g)) are 'reasonable restrictions' under Article 19.",
-        "ta": "DPSP (உறுப்பு 48) மற்றும் அடிப்படை கடமையை (உறுப்பு 51A(g)) நிறைவேற்ற அடிப்படை உரிமைகள் மீது விதிக்கப்படும் கட்டுப்பாடுகள் உறுப்பு 19-ன் கீழ் 'நியாயமான கட்டுப்பாடுகள்' எனக் கூறி நீதிமன்றம் தடையை உறுதி செய்தது."
+        "en": "The Court struck down the ban because Fundamental Rights completely override non-justiciable DPSP and Fundamental Duties.",
+        "ta": "அடிப்படை உரிமைகள் அமல்படுத்த முடியாத DPSP மற்றும் கடமைகளை விட மேலோங்குவதால் நீதிமன்றம் தடையை ரத்து செய்தது."
       },
       {
         "id": "B",
-        "en": "The Court struck down the ban because Fundamental Rights completely override non-justiciable DPSP and Fundamental Duties.",
-        "ta": "அடிப்படை உரிமைகள் அமல்படுத்த முடியாத DPSP மற்றும் கடமைகளை விட மேலோங்குவதால் நீதிமன்றம் தடையை ரத்து செய்தது."
+        "en": "The Court upheld the ban, holding that restrictions placed on Fundamental Rights to give effect to DPSP (Art 48) and Fundamental Duty (Art 51A(g)) are 'reasonable restrictions' under Article 19.",
+        "ta": "DPSP (உறுப்பு 48) மற்றும் அடிப்படை கடமையை (உறுப்பு 51A(g)) நிறைவேற்ற அடிப்படை உரிமைகள் மீது விதிக்கப்படும் கட்டுப்பாடுகள் உறுப்பு 19-ன் கீழ் 'நியாயமான கட்டுப்பாடுகள்' எனக் கூறி நீதிமன்றம் தடையை உறுதி செய்தது."
       },
       {
         "id": "C",
@@ -2073,19 +2073,19 @@
         "ta": "அவசரநிலையில் மட்டுமே அடிப்படை கடமைகள் பொருந்தும் என நீதிமன்றம் தீர்ப்பளித்தது."
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "A",
     "explanation": {
       "en": "In Mirzapur Moti Koreshi (2005), a 7-judge Bench of SC upheld the total ban on cow slaughter, ruling that restrictions on Article 19(1)(g) to enforce DPSP (Art 48) and Fundamental Duty under Article 51A(g) are constitutionally reasonable restrictions.",
       "ta": "மிர்சாபூர் மோதி கொரேஷி வழக்கில் (2005), DPSP (உறுப்பு 48) மற்றும் உறுப்பு 51A(g) கடமையை நிறைவேற்ற உறுப்பு 19(1)(g) மீது விதிக்கப்படும் கட்டுப்பாடுகள் அரசியலமைப்பு ரீதியாக நியாயமானவை எனக் கூறி 7 நீதிபதிகள் அமர்வு பசு வதைத் தடையை உறுதி செய்தது."
     },
     "why_not_others": {
       "A": {
-        "en": "Incorrect. The Court upheld the ban instead of striking it down.",
-        "ta": "தவறு. நீதிமன்றம் தடையை ரத்து செய்யாமல் உறுதி செய்தது."
-      },
-      "B": {
         "en": "Correct. Mirzapur Moti Koreshi judgment is a landmark precedent using Art 51A(g) to validate restrictions on Art 19(1)(g).",
         "ta": "சரி. மிர்சாபூர் மோதி கொரேஷி தீர்ப்பு உறுப்பு 19(1)(g) மீதான கட்டுப்பாடுகளை உறுதிப்படுத்த உறுப்பு 51A(g)-ஐப் பயன்படுத்திய முக்கிய முன்மாதிரியாகும்."
+      },
+      "B": {
+        "en": "Incorrect. The Court upheld the ban instead of striking it down.",
+        "ta": "தவறு. நீதிமன்றம் தடையை ரத்து செய்யாமல் உறுதி செய்தது."
       },
       "C": {
         "en": "Incorrect. Art 51A(g) includes domestic animals and living creatures, not just wildlife sanctuaries.",
@@ -2120,18 +2120,18 @@
     "question_en": "SCENARIO: A state legislature passes a law banning the slaughter of cows and draft cattle to promote agriculture and animal welfare. Cattle traders challenge the ban as an infringement on their fundamental right to trade under Article 19(1)(g).\n\nQUESTION: How did the 7-judge Constitution Bench of the Supreme Court rule in State of Gujarat v. Mirzapur Moti Koreshi Kassab Jamat (2005)?",
     "question_ta": "சூழல்: வேளாண்மை மற்றும் விலங்கு நலனை ஊக்குவிக்க மாநில சட்டமன்றம் பசுக்கள் மற்றும் காளைகளை வதை செய்வதைத் தடை செய்யும் சட்டத்தை இயற்றுகிறது. கால்நடை வியாபாரிகள் இத்தடையை உறுப்பு 19(1)(g)-ன் கீழ் தங்களின் தொழில் சுதந்திரத்தை மீறுவதாக எதிர்த்து வழக்கு தொடர்கின்றனர்.\n\nகேள்வி: குஜராத் மாநிலம் எதிராக மிர்சாபூர் மோதி கொரேஷி கசாப் ஜமாத் (2005) வழக்கில் உச்சநீதிமன்றத்தின் 7 நீதிபதிகள் கொண்ட அரசியலமைப்பு அமர்வு எவ்வாறு தீர்ப்பளித்தது?",
     "options_en": [
-      "The Court upheld the ban, holding that restrictions placed on Fundamental Rights to give effect to DPSP (Art 48) and Fundamental Duty (Art 51A(g)) are 'reasonable restrictions' under Article 19.",
       "The Court struck down the ban because Fundamental Rights completely override non-justiciable DPSP and Fundamental Duties.",
+      "The Court upheld the ban, holding that restrictions placed on Fundamental Rights to give effect to DPSP (Art 48) and Fundamental Duty (Art 51A(g)) are 'reasonable restrictions' under Article 19.",
       "The Court held that Article 51A(g) applies only to national parks and wildlife sanctuaries, not to agricultural animals.",
       "The Court held that Fundamental Duties apply only during Emergency."
     ],
     "options_ta": [
-      "DPSP (உறுப்பு 48) மற்றும் அடிப்படை கடமையை (உறுப்பு 51A(g)) நிறைவேற்ற அடிப்படை உரிமைகள் மீது விதிக்கப்படும் கட்டுப்பாடுகள் உறுப்பு 19-ன் கீழ் 'நியாயமான கட்டுப்பாடுகள்' எனக் கூறி நீதிமன்றம் தடையை உறுதி செய்தது.",
       "அடிப்படை உரிமைகள் அமல்படுத்த முடியாத DPSP மற்றும் கடமைகளை விட மேலோங்குவதால் நீதிமன்றம் தடையை ரத்து செய்தது.",
+      "DPSP (உறுப்பு 48) மற்றும் அடிப்படை கடமையை (உறுப்பு 51A(g)) நிறைவேற்ற அடிப்படை உரிமைகள் மீது விதிக்கப்படும் கட்டுப்பாடுகள் உறுப்பு 19-ன் கீழ் 'நியாயமான கட்டுப்பாடுகள்' எனக் கூறி நீதிமன்றம் தடையை உறுதி செய்தது.",
       "உறுப்பு 51A(g) தேசிய பூங்காக்களுக்கு மட்டுமே பொருந்தும் எனக் கூறி நீதிமன்றம் தடையை ரத்து செய்தது.",
       "அவசரநிலையில் மட்டுமே அடிப்படை கடமைகள் பொருந்தும் என நீதிமன்றம் தீர்ப்பளித்தது."
     ],
-    "answer": "b",
+    "answer": "a",
     "explanation_en": "In Mirzapur Moti Koreshi (2005), a 7-judge Bench of SC upheld the total ban on cow slaughter, ruling that restrictions on Article 19(1)(g) to enforce DPSP (Art 48) and Fundamental Duty under Article 51A(g) are constitutionally reasonable restrictions.",
     "explanation_ta": "மிர்சாபூர் மோதி கொரேஷி வழக்கில் (2005), DPSP (உறுப்பு 48) மற்றும் உறுப்பு 51A(g) கடமையை நிறைவேற்ற உறுப்பு 19(1)(g) மீது விதிக்கப்படும் கட்டுப்பாடுகள் அரசியலமைப்பு ரீதியாக நியாயமானவை எனக் கூறி 7 நீதிபதிகள் அமர்வு பசு வதைத் தடையை உறுதி செய்தது."
   },
@@ -2251,8 +2251,8 @@
       },
       {
         "id": "B",
-        "en": "Article 51A(k) permits child labor if the child is paid full adult minimum wages.",
-        "ta": "குழந்தைக்கு முழு குறைந்தபட்ச ஊதியம் வழங்கப்பட்டால் உறுப்பு 51A(k) குழந்தை தொழிலாளரை அனுமதிக்கிறது."
+        "en": "Article 51A(k) applies to factory owners, but requires theoretical classroom teaching.",
+        "ta": "உறுப்பு 51A(k) தொழிற்சாலை உரிமையாளர்களுக்குப் பொருந்தும், ஆனால் தத்துவார்த்த வகுப்பறைக் கல்வியைக் கோருகிறது."
       },
       {
         "id": "C",
@@ -2261,11 +2261,11 @@
       },
       {
         "id": "D",
-        "en": "Article 51A(k) applies to factory owners, but requires theoretical classroom teaching.",
-        "ta": "உறுப்பு 51A(k) தொழிற்சாலை உரிமையாளர்களுக்குப் பொருந்தும், ஆனால் தத்துவார்த்த வகுப்பறைக் கல்வியைக் கோருகிறது."
+        "en": "Article 51A(k) permits child labor if the child is paid full adult minimum wages.",
+        "ta": "குழந்தைக்கு முழு குறைந்தபட்ச ஊதியம் வழங்கப்பட்டால் உறுப்பு 51A(k) குழந்தை தொழிலாளரை அனுமதிக்கிறது."
       }
     ],
-    "correct_answer": "D",
+    "correct_answer": "B",
     "explanation": {
       "en": "Article 51A(k) explicitly places the duty on the 'parent or guardian' to provide educational opportunities to their child aged 6-14 years. A factory owner cannot misappropriate this duty. Furthermore, Article 24 (FR) prohibits employment of children below 14 in factories/hazardous work.",
       "ta": "உறுப்பு 51A(k) 6-14 வயதுடைய குழந்தைகளுக்குக் கல்விக்கான வாய்ப்புகளை வழங்கக் 'பெற்றோர் அல்லது பாதுகாவலர்' மீது மட்டுமே கடமையை விதிக்கிறது. தொழிற்சாலை உரிமையாளர் இக்கடமையைத் தவறாகப் பயன்படுத்த முடியாது. மேலும் உறுப்பு 24 (FR) 14 வயதிற்குட்பட்ட குழந்தைகளைத் தொழிற்சாலைகளில் வேலைக்கு அமர்த்துவதைத் தடை செய்கிறது."
@@ -2276,16 +2276,16 @@
         "ta": "தவறு. உறுப்பு 51A(k) முதலாளிகளுக்குப் பொருந்தாது."
       },
       "B": {
-        "en": "Incorrect. Article 51A(k) applies to citizens who are parents/guardians.",
-        "ta": "தவறு. உறுப்பு 51A(k) பெற்றோராக இருக்கும் குடிமக்களுக்குப் பொருந்தும்."
+        "en": "Correct. Article 51A(k) specifies parents/guardians, while Article 24 prohibits factory child labor.",
+        "ta": "சரி. உறுப்பு 51A(k) பெற்றோர்/பாதுகாவலர்களைக் குறிப்பிடுகிறது, உறுப்பு 24 குழந்தை தொழிலாளரைத் தடை செய்கிறது."
       },
       "C": {
         "en": "Incorrect. Child labor in hazardous work is strictly unconstitutional under Article 24 regardless of wages.",
         "ta": "தவறு. ஊதியம் பொருட்படுத்தாமல் ஆபத்தான வேலையில் குழந்தை தொழிலாளர் உறுப்பு 24-ன் கீழ் அரசியலமைப்புக்கு முரணானது."
       },
       "D": {
-        "en": "Correct. Article 51A(k) specifies parents/guardians, while Article 24 prohibits factory child labor.",
-        "ta": "சரி. உறுப்பு 51A(k) பெற்றோர்/பாதுகாவலர்களைக் குறிப்பிடுகிறது, உறுப்பு 24 குழந்தை தொழிலாளரைத் தடை செய்கிறது."
+        "en": "Incorrect. Article 51A(k) applies to citizens who are parents/guardians.",
+        "ta": "தவறு. உறுப்பு 51A(k) பெற்றோராக இருக்கும் குடிமக்களுக்குப் பொருந்தும்."
       }
     },
     "tnpsc_tip": {
@@ -2313,17 +2313,17 @@
     "question_ta": "சூழல்: தொழிற்சாலை உரிமையாளர் ஒருவர் 10 வயதுக் குழந்தைகளை ஆபத்தான உற்பத்தியில் ஈடுபடுத்தி, அவர்களுக்கு நடைமுறைத் தொழிற்கல்வி அனுபவத்தை வழங்குவதன் மூலம் தான் உறுப்பு 51A(k)-ஐ நிறைவேற்றுவதாக வாதிடுகிறார்.\n\nகேள்வி: எந்த அரசியலமைப்பு பகுப்பாய்வு தொழிற்சாலை உரிமையாளரின் வாதத்தைச் சரியாக நிராகரிக்கிறது?",
     "options_en": [
       "Article 51A(k) applies only to State government officers, not to private individuals.",
-      "Article 51A(k) permits child labor if the child is paid full adult minimum wages.",
+      "Article 51A(k) applies to factory owners, but requires theoretical classroom teaching.",
       "Article 51A(k) imposes a duty specifically on PARENTS or GUARDIANS for education (6-14 yrs), while Article 24 strictly prohibits child labor in factories; a factory owner cannot exploit children under the guise of duty.",
-      "Article 51A(k) applies to factory owners, but requires theoretical classroom teaching."
+      "Article 51A(k) permits child labor if the child is paid full adult minimum wages."
     ],
     "options_ta": [
       "உறுப்பு 51A(k) அரசு அதிகாரிகளுக்கு மட்டுமே பொருந்தும், தனிநபர்களுக்கு அல்ல.",
-      "குழந்தைக்கு முழு குறைந்தபட்ச ஊதியம் வழங்கப்பட்டால் உறுப்பு 51A(k) குழந்தை தொழிலாளரை அனுமதிக்கிறது.",
+      "உறுப்பு 51A(k) தொழிற்சாலை உரிமையாளர்களுக்குப் பொருந்தும், ஆனால் தத்துவார்த்த வகுப்பறைக் கல்வியைக் கோருகிறது.",
       "உறுப்பு 51A(k) பெற்றோர் அல்லது பாதுகாவலர்கள் மீது மட்டுமே கல்விக் கடமையை (6-14 வயது) விதிக்கிறது, அதே வேளையில் உறுப்பு 24 தொழிற்சாலைகளில் குழந்தைகள் தொழிலாளரைத் தடை செய்கிறது; உரிமையாளர் கடமையின் போர்வையில் குழந்தைகளைச் சுரண்ட முடியாது.",
-      "உறுப்பு 51A(k) தொழிற்சாலை உரிமையாளர்களுக்குப் பொருந்தும், ஆனால் தத்துவார்த்த வகுப்பறைக் கல்வியைக் கோருகிறது."
+      "குழந்தைக்கு முழு குறைந்தபட்ச ஊதியம் வழங்கப்பட்டால் உறுப்பு 51A(k) குழந்தை தொழிலாளரை அனுமதிக்கிறது."
     ],
-    "answer": "d",
+    "answer": "b",
     "explanation_en": "Article 51A(k) explicitly places the duty on the 'parent or guardian' to provide educational opportunities to their child aged 6-14 years. A factory owner cannot misappropriate this duty. Furthermore, Article 24 (FR) prohibits employment of children below 14 in factories/hazardous work.",
     "explanation_ta": "உறுப்பு 51A(k) 6-14 வயதுடைய குழந்தைகளுக்குக் கல்விக்கான வாய்ப்புகளை வழங்கக் 'பெற்றோர் அல்லது பாதுகாவலர்' மீது மட்டுமே கடமையை விதிக்கிறது. தொழிற்சாலை உரிமையாளர் இக்கடமையைத் தவறாகப் பயன்படுத்த முடியாது. மேலும் உறுப்பு 24 (FR) 14 வயதிற்குட்பட்ட குழந்தைகளைத் தொழிற்சாலைகளில் வேலைக்கு அமர்த்துவதைத் தடை செய்கிறது."
   },
@@ -2348,8 +2348,8 @@
     "options": [
       {
         "id": "A",
-        "en": "A is correct but R is incorrect",
-        "ta": "A சரி, ஆனால் R தவறு."
+        "en": "Both A and R are correct but R is NOT the correct explanation of A",
+        "ta": "A மற்றும் R இரண்டும் சரி, ஆனால் R என்பது A விற்கு சரியான விளக்கம் அல்ல."
       },
       {
         "id": "B",
@@ -2363,19 +2363,19 @@
       },
       {
         "id": "D",
-        "en": "Both A and R are correct but R is NOT the correct explanation of A",
-        "ta": "A மற்றும் R இரண்டும் சரி, ஆனால் R என்பது A விற்கு சரியான விளக்கம் அல்ல."
+        "en": "A is correct but R is incorrect",
+        "ta": "A சரி, ஆனால் R தவறு."
       }
     ],
-    "correct_answer": "D",
+    "correct_answer": "A",
     "explanation": {
       "en": "Both Assertion and Reason are true, and R explains A. Part III (FR), Part IV (DPSP), and Part IVA (FD) represent the three pillars of Indian constitutionalism: Individual Rights, State Obligations, and Citizen Responsibilities.",
       "ta": "கூற்று A மற்றும் காரணம் R இரண்டும் சரி, மேலும் R என்பது A-விற்கு சரியான விளக்கம். பகுதி III (FR), பகுதி IV (DPSP) மற்றும் பகுதி IVA (FD) ஆகியவை இந்திய அரசியலமைப்பின் மூன்று தூண்களாகும்: தனிநபர் உரிமைகள், அரசின் கடமைகள் மற்றும் குடிமக்களின் பொறுப்புகள்."
     },
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Reason directly explains the distinct roles of FR, DPSP, and FD in this triad.",
-        "ta": "தவறு. இந்த முக்கோணத்தில் FR, DPSP மற்றும் FD ஆகியவற்றின் குறிப்பிட்ட பங்குகளை காரணம் நேரடியாக விளக்குகிறது."
+        "en": "Correct. Part III, IV, and IVA form the fundamental triad of Indian constitutional philosophy.",
+        "ta": "சரி. பகுதிகள் III, IV மற்றும் IVA ஆகியவை இந்திய அரசியலமைப்புத் தத்துவத்தின் அடிப்படை முக்கோணத்தை உருவாக்குகின்றன."
       },
       "B": {
         "en": "Incorrect. Reason is factually and conceptually accurate.",
@@ -2386,8 +2386,8 @@
         "ta": "தவறு. கூற்று சரியானது."
       },
       "D": {
-        "en": "Correct. Part III, IV, and IVA form the fundamental triad of Indian constitutional philosophy.",
-        "ta": "சரி. பகுதிகள் III, IV மற்றும் IVA ஆகியவை இந்திய அரசியலமைப்புத் தத்துவத்தின் அடிப்படை முக்கோணத்தை உருவாக்குகின்றன."
+        "en": "Incorrect. Reason directly explains the distinct roles of FR, DPSP, and FD in this triad.",
+        "ta": "தவறு. இந்த முக்கோணத்தில் FR, DPSP மற்றும் FD ஆகியவற்றின் குறிப்பிட்ட பங்குகளை காரணம் நேரடியாக விளக்குகிறது."
       }
     },
     "tnpsc_tip": {
@@ -2414,18 +2414,18 @@
     "question_en": "Assertion (A): Part III (Fundamental Rights), Part IV (Directive Principles), and Part IVA (Fundamental Duties) form an organic constitutional triad for holistic nation-building.\nReason (R): Fundamental Rights guarantee individual liberties against State encroachment, Directive Principles guide the State toward welfare goals, and Fundamental Duties remind citizens of their responsibility to sustain both liberty and welfare.",
     "question_ta": "கூற்று (A): பகுதி III (அடிப்படை உரிமைகள்), பகுதி IV (DPSP) மற்றும் பகுதி IVA (அடிப்படை கடமைகள்) ஆகியவை ஒட்டுமொத்த தேசக் கட்டமைப்பிற்கான ஒருங்கிணைந்த அரசியலமைப்பு முக்கோணத்தை உருவாக்குகின்றன.\nகாரணம் (R): அடிப்படை உரிமைகள் அரசு ஆக்கிரமிப்பிற்கு எதிராகத் தனிநபர் சுதந்திரத்திற்கு உத்தரவாதம் அளிக்கின்றன, அரசு நெறிமுறைகள் அரசை நலன்புரி இலக்குகளை நோக்கி வழிகாட்டுகின்றன, மேலும் அடிப்படை கடமைகள் சுதந்திரம் மற்றும் நலன் இரண்டையும் பேணுவதற்கான தங்கள் பொறுப்பைக் குடிமக்களுக்கு நினைவூட்டுகின்றன.",
     "options_en": [
-      "A is correct but R is incorrect",
+      "Both A and R are correct but R is NOT the correct explanation of A",
       "A is incorrect but R is correct",
       "Both A and R are correct and R is the correct explanation of A",
-      "Both A and R are correct but R is NOT the correct explanation of A"
+      "A is correct but R is incorrect"
     ],
     "options_ta": [
-      "A சரி, ஆனால் R தவறு.",
+      "A மற்றும் R இரண்டும் சரி, ஆனால் R என்பது A விற்கு சரியான விளக்கம் அல்ல.",
       "A தவறு, ஆனால் R சரி.",
       "A மற்றும் R இரண்டும் சரி, மேலும் R என்பது A விற்கு சரியான விளக்கமாகும்.",
-      "A மற்றும் R இரண்டும் சரி, ஆனால் R என்பது A விற்கு சரியான விளக்கம் அல்ல."
+      "A சரி, ஆனால் R தவறு."
     ],
-    "answer": "d",
+    "answer": "a",
     "explanation_en": "Both Assertion and Reason are true, and R explains A. Part III (FR), Part IV (DPSP), and Part IVA (FD) represent the three pillars of Indian constitutionalism: Individual Rights, State Obligations, and Citizen Responsibilities.",
     "explanation_ta": "கூற்று A மற்றும் காரணம் R இரண்டும் சரி, மேலும் R என்பது A-விற்கு சரியான விளக்கம். பகுதி III (FR), பகுதி IV (DPSP) மற்றும் பகுதி IVA (FD) ஆகியவை இந்திய அரசியலமைப்பின் மூன்று தூண்களாகும்: தனிநபர் உரிமைகள், அரசின் கடமைகள் மற்றும் குடிமக்களின் பொறுப்புகள்."
   }

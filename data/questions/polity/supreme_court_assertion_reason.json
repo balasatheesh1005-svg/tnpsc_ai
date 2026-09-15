@@ -14,8 +14,8 @@
     "options": [
       {
         "id": "A",
-        "en": "(A) is true but (R) is false",
-        "ta": "(A) சரி, ஆனால் (R) தவறு"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
       },
       {
         "id": "B",
@@ -24,8 +24,8 @@
       },
       {
         "id": "C",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
+        "en": "(A) is true but (R) is false",
+        "ta": "(A) சரி, ஆனால் (R) தவறு"
       },
       {
         "id": "D",
@@ -34,18 +34,18 @@
       }
     ],
     "options_en": [
-      "(A) is true but (R) is false",
-      "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
       "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
+      "(A) is true but (R) is false",
       "(A) is false but (R) is true"
     ],
     "options_ta": [
-      "(A) சரி, ஆனால் (R) தவறு",
-      "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
       "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
+      "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
+      "(A) சரி, ஆனால் (R) தவறு",
       "(A) தவறு, ஆனால் (R) சரி"
     ],
-    "correct_answer": "C",
+    "correct_answer": "A",
     "explanation": {
       "en": "Both (A) and (R) are true and (R) is the correct explanation of (A). Because Article 32 is a Fundamental Right itself, accessing SC for FR enforcement is mandatory, making SC the defender and guarantor of FRs.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) சரியான விளக்கமாகும். உறுப்பு 32 என்பதே அடிப்படை உரிமை என்பதால், SC அடிப்படை உரிமைகளுக்கான நிவாரணம் வழங்க மறுக்க முடியாது."
@@ -54,16 +54,16 @@
     "explanation_ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) சரியான விளக்கமாகும். உறுப்பு 32 என்பதே அடிப்படை உரிமை என்பதால், SC அடிப்படை உரிமைகளுக்கான நிவாரணம் வழங்க மறுக்க முடியாது.",
     "why_not_others": {
       "A": {
-        "en": "❌ R is true, not false.",
-        "ta": "❌ R சரி, தவறல்ல."
+        "en": "✅ Both A and R are true and R correctly explains A.",
+        "ta": "✅ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கமாகும்."
       },
       "B": {
         "en": "❌ R IS the correct explanation of A.",
         "ta": "❌ R சரியான விளக்கமாகும்."
       },
       "C": {
-        "en": "✅ Both A and R are true and R correctly explains A.",
-        "ta": "✅ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கமாகும்."
+        "en": "❌ R is true, not false.",
+        "ta": "❌ R சரி, தவறல்ல."
       },
       "D": {
         "en": "❌ A is true, not false.",
@@ -84,7 +84,16 @@
     },
     "source_reference": [
       "Supreme Court Notes Part 1"
-    ]
+    ],
+    "answer": "a",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "Supreme Court of India"
+    ],
+    "revision_fact": "Both (A) and (R) are true and (R) is the correct explanation of (A). Because Article 32 is a Fundamental Right itself, accessing SC for FR e..."
   },
   {
     "id": "POLITY_SC_REAS_002",
@@ -171,7 +180,16 @@
     },
     "source_reference": [
       "Supreme Court Notes Part 1"
-    ]
+    ],
+    "answer": "c",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "Supreme Court of India"
+    ],
+    "revision_fact": "Both (A) and (R) are true and (R) is the correct explanation of (A). Under Art 262(2), Parliament enacted Inter-State Water Disputes Act 195..."
   },
   {
     "id": "POLITY_SC_REAS_003",
@@ -258,7 +276,16 @@
     },
     "source_reference": [
       "Supreme Court Notes Part 1"
-    ]
+    ],
+    "answer": "b",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "Supreme Court of India"
+    ],
+    "revision_fact": "(A) is false because SLP under Art 136 is NOT a statutory right of appeal for litigants, but a discretionary power of the Court. (R) is true..."
   },
   {
     "id": "POLITY_SC_REAS_004",
@@ -280,8 +307,8 @@
       },
       {
         "id": "B",
-        "en": "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல"
+        "en": "(A) is true but (R) is false",
+        "ta": "(A) சரி, ஆனால் (R) தவறு"
       },
       {
         "id": "C",
@@ -290,23 +317,23 @@
       },
       {
         "id": "D",
-        "en": "(A) is true but (R) is false",
-        "ta": "(A) சரி, ஆனால் (R) தவறு"
+        "en": "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல"
       }
     ],
     "options_en": [
       "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-      "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
+      "(A) is true but (R) is false",
       "(A) is false but (R) is true",
-      "(A) is true but (R) is false"
+      "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)"
     ],
     "options_ta": [
       "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
-      "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
+      "(A) சரி, ஆனால் (R) தவறு",
       "(A) தவறு, ஆனால் (R) சரி",
-      "(A) சரி, ஆனால் (R) தவறு"
+      "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல"
     ],
-    "correct_answer": "D",
+    "correct_answer": "B",
     "explanation": {
       "en": "(A) is true (Stare Decisis doctrine in Art 141). (R) is false because the Supreme Court is NOT bound by its own previous decisions and can overrule them (*Bengal Immunity Case 1955*).",
       "ta": "(A) சரி (உறுப்பு 141 கட்டாயச் சட்டம்). (R) தவறு, ஏனெனில் உச்ச நீதிமன்றம் தன் சொந்த முந்தைய தீர்ப்புகளுக்குக் கட்டுப்பட்டதல்ல, அவற்றை மாற்றியமைக்கலாம் (1955 வழக்கு)."
@@ -319,16 +346,16 @@
         "ta": "❌ A சரி; SC தன் பழைய தீர்ப்புகளை மாற்றலாம் என்பதால் R தவறு."
       },
       "B": {
-        "en": "❌ R is false.",
-        "ta": "❌ R தவறு."
+        "en": "✅ (A) is true but (R) is false.",
+        "ta": "✅ (A) சரி, ஆனால் (R) தவறு."
       },
       "C": {
         "en": "❌ A is true.",
         "ta": "❌ A சரி."
       },
       "D": {
-        "en": "✅ (A) is true but (R) is false.",
-        "ta": "✅ (A) சரி, ஆனால் (R) தவறு."
+        "en": "❌ R is false.",
+        "ta": "❌ R தவறு."
       }
     },
     "trap_point": {
@@ -345,7 +372,16 @@
     },
     "source_reference": [
       "Supreme Court Notes Part 1"
-    ]
+    ],
+    "answer": "b",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "Supreme Court of India"
+    ],
+    "revision_fact": "(A) is true (Stare Decisis doctrine in Art 141). (R) is false because the Supreme Court is NOT bound by its own previous decisions and can o..."
   },
   {
     "id": "POLITY_SC_REAS_005",
@@ -372,28 +408,28 @@
       },
       {
         "id": "C",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
+        "en": "(A) is false but (R) is true",
+        "ta": "(A) தவறு, ஆனால் (R) சரி"
       },
       {
         "id": "D",
-        "en": "(A) is false but (R) is true",
-        "ta": "(A) தவறு, ஆனால் (R) சரி"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
       }
     ],
     "options_en": [
       "(A) is true but (R) is false",
       "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-      "(A) is false but (R) is true"
+      "(A) is false but (R) is true",
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)"
     ],
     "options_ta": [
       "(A) சரி, ஆனால் (R) தவறு",
       "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
-      "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
-      "(A) தவறு, ஆனால் (R) சரி"
+      "(A) தவறு, ஆனால் (R) சரி",
+      "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
     ],
-    "correct_answer": "C",
+    "correct_answer": "D",
     "explanation": {
       "en": "Both (A) and (R) are true and (R) is the correct explanation of (A). Article 138 explicitly authorizes Parliament to enlarge SC jurisdiction regarding Union List matters or by agreement with States.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, (R) சரியான விளக்கமாகும். உறுப்பு 138 ஒன்றியப் பட்டியல் விவகாரங்களில் SC அதிகார வரம்பை விரிவாக்கம் செய்ய நாடாளுமன்றத்திற்கு அதிகாரமளிக்கிறது."
@@ -410,12 +446,12 @@
         "ta": "❌ R சரியான விளக்கம்."
       },
       "C": {
-        "en": "✅ Both A and R are true and R explains A under Art 138.",
-        "ta": "✅ A மற்றும் R இரண்டும் சரி, உறுப்பு 138-ன் கீழ் R விளக்கமாகும்."
-      },
-      "D": {
         "en": "❌ A is true.",
         "ta": "❌ A சரி."
+      },
+      "D": {
+        "en": "✅ Both A and R are true and R explains A under Art 138.",
+        "ta": "✅ A மற்றும் R இரண்டும் சரி, உறுப்பு 138-ன் கீழ் R விளக்கமாகும்."
       }
     },
     "trap_point": {
@@ -432,7 +468,16 @@
     },
     "source_reference": [
       "Supreme Court Notes Part 1"
-    ]
+    ],
+    "answer": "d",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "Supreme Court of India"
+    ],
+    "revision_fact": "Both (A) and (R) are true and (R) is the correct explanation of (A). Article 138 explicitly authorizes Parliament to enlarge SC jurisdiction..."
   },
   {
     "id": "POLITY_SC_REAS_006",
@@ -449,13 +494,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
+        "en": "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல"
       },
       {
         "id": "B",
-        "en": "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
       },
       {
         "id": "C",
@@ -469,18 +514,18 @@
       }
     ],
     "options_en": [
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
       "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
       "(A) is true but (R) is false",
       "(A) is false but (R) is true"
     ],
     "options_ta": [
-      "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
       "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
+      "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
       "(A) சரி, ஆனால் (R) தவறு",
       "(A) தவறு, ஆனால் (R) சரி"
     ],
-    "correct_answer": "B",
+    "correct_answer": "A",
     "explanation": {
       "en": "Explanation for Assertion and Reason regarding Supreme Court Concept 6. Correct Option is (B).",
       "ta": "உச்ச நீதிமன்றக் கருத்து 6 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (B)."
@@ -489,12 +534,12 @@
     "explanation_ta": "உச்ச நீதிமன்றக் கருத்து 6 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (B).",
     "why_not_others": {
       "A": {
-        "en": "❌ Both A and R are true and R is correct explanation.",
-        "ta": "❌ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கம்."
-      },
-      "B": {
         "en": "✅ Both A and R are true but R is not correct explanation.",
         "ta": "✅ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கம் அல்ல."
+      },
+      "B": {
+        "en": "❌ Both A and R are true and R is correct explanation.",
+        "ta": "❌ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கம்."
       },
       "C": {
         "en": "❌ A is true but R is false.",
@@ -519,7 +564,16 @@
     },
     "source_reference": [
       "Supreme Court Notes Part 3"
-    ]
+    ],
+    "answer": "a",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "Supreme Court of India"
+    ],
+    "revision_fact": "Explanation for Assertion and Reason regarding Supreme Court Concept 6. Correct Option is (B)."
   },
   {
     "id": "POLITY_SC_REAS_007",
@@ -536,8 +590,8 @@
     "options": [
       {
         "id": "A",
-        "en": "(A) is true but (R) is false",
-        "ta": "(A) சரி, ஆனால் (R) தவறு"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
       },
       {
         "id": "B",
@@ -546,8 +600,8 @@
       },
       {
         "id": "C",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
+        "en": "(A) is true but (R) is false",
+        "ta": "(A) சரி, ஆனால் (R) தவறு"
       },
       {
         "id": "D",
@@ -556,18 +610,18 @@
       }
     ],
     "options_en": [
-      "(A) is true but (R) is false",
-      "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
       "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
+      "(A) is true but (R) is false",
       "(A) is false but (R) is true"
     ],
     "options_ta": [
-      "(A) சரி, ஆனால் (R) தவறு",
-      "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
       "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
+      "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
+      "(A) சரி, ஆனால் (R) தவறு",
       "(A) தவறு, ஆனால் (R) சரி"
     ],
-    "correct_answer": "A",
+    "correct_answer": "C",
     "explanation": {
       "en": "Explanation for Assertion and Reason regarding Supreme Court Concept 7. Correct Option is (C).",
       "ta": "உச்ச நீதிமன்றக் கருத்து 7 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (C)."
@@ -576,16 +630,16 @@
     "explanation_ta": "உச்ச நீதிமன்றக் கருத்து 7 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (C).",
     "why_not_others": {
       "A": {
-        "en": "✅ A is true but R is false.",
-        "ta": "✅ A சரி, ஆனால் R தவறு."
+        "en": "❌ Both A and R are true and R is correct explanation.",
+        "ta": "❌ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கம்."
       },
       "B": {
         "en": "❌ Both A and R are true but R is not correct explanation.",
         "ta": "❌ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கம் அல்ல."
       },
       "C": {
-        "en": "❌ Both A and R are true and R is correct explanation.",
-        "ta": "❌ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கம்."
+        "en": "✅ A is true but R is false.",
+        "ta": "✅ A சரி, ஆனால் R தவறு."
       },
       "D": {
         "en": "❌ A is false but R is true.",
@@ -606,7 +660,16 @@
     },
     "source_reference": [
       "Supreme Court Notes Part 1"
-    ]
+    ],
+    "answer": "c",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "Supreme Court of India"
+    ],
+    "revision_fact": "Explanation for Assertion and Reason regarding Supreme Court Concept 7. Correct Option is (C)."
   },
   {
     "id": "POLITY_SC_REAS_008",
@@ -623,13 +686,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
+        "en": "(A) is false but (R) is true",
+        "ta": "(A) தவறு, ஆனால் (R) சரி"
       },
       {
         "id": "B",
-        "en": "(A) is false but (R) is true",
-        "ta": "(A) தவறு, ஆனால் (R) சரி"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
       },
       {
         "id": "C",
@@ -643,18 +706,18 @@
       }
     ],
     "options_en": [
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
       "(A) is false but (R) is true",
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
       "(A) is true but (R) is false",
       "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)"
     ],
     "options_ta": [
-      "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
       "(A) தவறு, ஆனால் (R) சரி",
+      "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
       "(A) சரி, ஆனால் (R) தவறு",
       "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல"
     ],
-    "correct_answer": "B",
+    "correct_answer": "A",
     "explanation": {
       "en": "Explanation for Assertion and Reason regarding Supreme Court Concept 8. Correct Option is (D).",
       "ta": "உச்ச நீதிமன்றக் கருத்து 8 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (D)."
@@ -663,12 +726,12 @@
     "explanation_ta": "உச்ச நீதிமன்றக் கருத்து 8 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (D).",
     "why_not_others": {
       "A": {
-        "en": "❌ Both A and R are true and R is correct explanation.",
-        "ta": "❌ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கம்."
-      },
-      "B": {
         "en": "✅ A is false but R is true.",
         "ta": "✅ A தவறு, ஆனால் R சரி."
+      },
+      "B": {
+        "en": "❌ Both A and R are true and R is correct explanation.",
+        "ta": "❌ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கம்."
       },
       "C": {
         "en": "❌ A is true but R is false.",
@@ -693,7 +756,16 @@
     },
     "source_reference": [
       "Supreme Court Notes Part 2"
-    ]
+    ],
+    "answer": "a",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "Supreme Court of India"
+    ],
+    "revision_fact": "Explanation for Assertion and Reason regarding Supreme Court Concept 8. Correct Option is (D)."
   },
   {
     "id": "POLITY_SC_REAS_009",
@@ -715,13 +787,13 @@
       },
       {
         "id": "B",
-        "en": "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
       },
       {
         "id": "C",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
+        "en": "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல"
       },
       {
         "id": "D",
@@ -731,17 +803,17 @@
     ],
     "options_en": [
       "(A) is true but (R) is false",
-      "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
       "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
       "(A) is false but (R) is true"
     ],
     "options_ta": [
       "(A) சரி, ஆனால் (R) தவறு",
-      "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
       "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
+      "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
       "(A) தவறு, ஆனால் (R) சரி"
     ],
-    "correct_answer": "C",
+    "correct_answer": "B",
     "explanation": {
       "en": "Explanation for Assertion and Reason regarding Supreme Court Concept 9. Correct Option is (A).",
       "ta": "உச்ச நீதிமன்றக் கருத்து 9 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (A)."
@@ -754,12 +826,12 @@
         "ta": "❌ A சரி, ஆனால் R தவறு."
       },
       "B": {
-        "en": "❌ Both A and R are true but R is not correct explanation.",
-        "ta": "❌ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கம் அல்ல."
-      },
-      "C": {
         "en": "✅ Both A and R are true and R is correct explanation.",
         "ta": "✅ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கம்."
+      },
+      "C": {
+        "en": "❌ Both A and R are true but R is not correct explanation.",
+        "ta": "❌ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கம் அல்ல."
       },
       "D": {
         "en": "❌ A is false but R is true.",
@@ -780,7 +852,16 @@
     },
     "source_reference": [
       "Supreme Court Notes Part 3"
-    ]
+    ],
+    "answer": "b",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "Supreme Court of India"
+    ],
+    "revision_fact": "Explanation for Assertion and Reason regarding Supreme Court Concept 9. Correct Option is (A)."
   },
   {
     "id": "POLITY_SC_REAS_010",
@@ -807,28 +888,28 @@
       },
       {
         "id": "C",
-        "en": "(A) is true but (R) is false",
-        "ta": "(A) சரி, ஆனால் (R) தவறு"
+        "en": "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல"
       },
       {
         "id": "D",
-        "en": "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல"
+        "en": "(A) is true but (R) is false",
+        "ta": "(A) சரி, ஆனால் (R) தவறு"
       }
     ],
     "options_en": [
       "Both (A) and (R) are true and (R) is the correct explanation of (A)",
       "(A) is false but (R) is true",
-      "(A) is true but (R) is false",
-      "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)"
+      "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
+      "(A) is true but (R) is false"
     ],
     "options_ta": [
       "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
       "(A) தவறு, ஆனால் (R) சரி",
-      "(A) சரி, ஆனால் (R) தவறு",
-      "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல"
+      "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
+      "(A) சரி, ஆனால் (R) தவறு"
     ],
-    "correct_answer": "D",
+    "correct_answer": "C",
     "explanation": {
       "en": "Explanation for Assertion and Reason regarding Supreme Court Concept 10. Correct Option is (B).",
       "ta": "உச்ச நீதிமன்றக் கருத்து 10 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (B)."
@@ -845,12 +926,12 @@
         "ta": "❌ A தவறு, ஆனால் R சரி."
       },
       "C": {
-        "en": "❌ A is true but R is false.",
-        "ta": "❌ A சரி, ஆனால் R தவறு."
-      },
-      "D": {
         "en": "✅ Both A and R are true but R is not correct explanation.",
         "ta": "✅ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கம் அல்ல."
+      },
+      "D": {
+        "en": "❌ A is true but R is false.",
+        "ta": "❌ A சரி, ஆனால் R தவறு."
       }
     },
     "trap_point": {
@@ -867,7 +948,16 @@
     },
     "source_reference": [
       "Supreme Court Notes Part 2"
-    ]
+    ],
+    "answer": "c",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "Supreme Court of India"
+    ],
+    "revision_fact": "Explanation for Assertion and Reason regarding Supreme Court Concept 10. Correct Option is (B)."
   },
   {
     "id": "POLITY_SC_REAS_011",
@@ -881,6 +971,390 @@
     },
     "question_en": "Assertion (A): The Supreme Court exercises pivotal constitutional authority regarding Core Concept 11.\nReason (R): Article 135 provides the specific constitutional framework governing judicial functioning and powers.",
     "question_ta": "கூற்று (A): முக்கியக் கருத்து 11 தொடர்பாக உச்ச நீதிமன்றம் முக்கிய அரசியலமைப்பு அதிகாரத்தைப் பயன்படுத்துகிறது.\nகாரணம் (R): உறுப்பு 135 நீதித்துறை செயல்பாடு மற்றும் அதிகாரங்களை நிர்வகிக்கும் குறிப்பிட்ட அரசியலமைப்பு அமைப்பை வழங்குகிறது.",
+    "options": [
+      {
+        "id": "A",
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
+      },
+      {
+        "id": "B",
+        "en": "(A) is false but (R) is true",
+        "ta": "(A) தவறு, ஆனால் (R) சரி"
+      },
+      {
+        "id": "C",
+        "en": "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல"
+      },
+      {
+        "id": "D",
+        "en": "(A) is true but (R) is false",
+        "ta": "(A) சரி, ஆனால் (R) தவறு"
+      }
+    ],
+    "options_en": [
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "(A) is false but (R) is true",
+      "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
+      "(A) is true but (R) is false"
+    ],
+    "options_ta": [
+      "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
+      "(A) தவறு, ஆனால் (R) சரி",
+      "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
+      "(A) சரி, ஆனால் (R) தவறு"
+    ],
+    "correct_answer": "D",
+    "explanation": {
+      "en": "Explanation for Assertion and Reason regarding Supreme Court Concept 11. Correct Option is (C).",
+      "ta": "உச்ச நீதிமன்றக் கருத்து 11 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (C)."
+    },
+    "explanation_en": "Explanation for Assertion and Reason regarding Supreme Court Concept 11. Correct Option is (C).",
+    "explanation_ta": "உச்ச நீதிமன்றக் கருத்து 11 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (C).",
+    "why_not_others": {
+      "A": {
+        "en": "❌ Both A and R are true and R is correct explanation.",
+        "ta": "❌ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கம்."
+      },
+      "B": {
+        "en": "❌ A is false but R is true.",
+        "ta": "❌ A தவறு, ஆனால் R சரி."
+      },
+      "C": {
+        "en": "❌ Both A and R are true but R is not correct explanation.",
+        "ta": "❌ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கம் அல்ல."
+      },
+      "D": {
+        "en": "✅ A is true but R is false.",
+        "ta": "✅ A சரி, ஆனால் R தவறு."
+      }
+    },
+    "trap_point": {
+      "en": "Trap point regarding Assertion and Reason for SC Concept 11.",
+      "ta": "கருத்து 11 பற்றிய கூற்று மற்றும் காரண பொறிப் புள்ளி."
+    },
+    "tnpsc_tip": {
+      "en": "Exam tip for SC Concept 11.",
+      "ta": "தேர்வு குறிப்பு 11."
+    },
+    "high_yield_fact": {
+      "en": "High-Yield Fact: Explanation for Assertion and Reason regarding Supreme Court Concept 11. Correct Option is (C).",
+      "ta": "முக்கியக் குறிப்பு: உச்ச நீதிமன்றக் கருத்து 11 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (C)."
+    },
+    "source_reference": [
+      "Supreme Court Notes Part 1"
+    ],
+    "answer": "d",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "Supreme Court of India"
+    ],
+    "revision_fact": "Explanation for Assertion and Reason regarding Supreme Court Concept 11. Correct Option is (C)."
+  },
+  {
+    "id": "POLITY_SC_REAS_012",
+    "subject": "Polity",
+    "topic": "Supreme Court of India",
+    "difficulty": "Hard",
+    "question_type": "Reasoning",
+    "question": {
+      "en": "Assertion (A): The Supreme Court exercises pivotal constitutional authority regarding Core Concept 12.\nReason (R): Article 136 provides the specific constitutional framework governing judicial functioning and powers.",
+      "ta": "கூற்று (A): முக்கியக் கருத்து 12 தொடர்பாக உச்ச நீதிமன்றம் முக்கிய அரசியலமைப்பு அதிகாரத்தைப் பயன்படுத்துகிறது.\nகாரணம் (R): உறுப்பு 136 நீதித்துறை செயல்பாடு மற்றும் அதிகாரங்களை நிர்வகிக்கும் குறிப்பிட்ட அரசியலமைப்பு அமைப்பை வழங்குகிறது."
+    },
+    "question_en": "Assertion (A): The Supreme Court exercises pivotal constitutional authority regarding Core Concept 12.\nReason (R): Article 136 provides the specific constitutional framework governing judicial functioning and powers.",
+    "question_ta": "கூற்று (A): முக்கியக் கருத்து 12 தொடர்பாக உச்ச நீதிமன்றம் முக்கிய அரசியலமைப்பு அதிகாரத்தைப் பயன்படுத்துகிறது.\nகாரணம் (R): உறுப்பு 136 நீதித்துறை செயல்பாடு மற்றும் அதிகாரங்களை நிர்வகிக்கும் குறிப்பிட்ட அரசியலமைப்பு அமைப்பை வழங்குகிறது.",
+    "options": [
+      {
+        "id": "A",
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
+      },
+      {
+        "id": "B",
+        "en": "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல"
+      },
+      {
+        "id": "C",
+        "en": "(A) is true but (R) is false",
+        "ta": "(A) சரி, ஆனால் (R) தவறு"
+      },
+      {
+        "id": "D",
+        "en": "(A) is false but (R) is true",
+        "ta": "(A) தவறு, ஆனால் (R) சரி"
+      }
+    ],
+    "options_en": [
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
+      "(A) is true but (R) is false",
+      "(A) is false but (R) is true"
+    ],
+    "options_ta": [
+      "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
+      "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
+      "(A) சரி, ஆனால் (R) தவறு",
+      "(A) தவறு, ஆனால் (R) சரி"
+    ],
+    "correct_answer": "D",
+    "explanation": {
+      "en": "Explanation for Assertion and Reason regarding Supreme Court Concept 12. Correct Option is (D).",
+      "ta": "உச்ச நீதிமன்றக் கருத்து 12 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (D)."
+    },
+    "explanation_en": "Explanation for Assertion and Reason regarding Supreme Court Concept 12. Correct Option is (D).",
+    "explanation_ta": "உச்ச நீதிமன்றக் கருத்து 12 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (D).",
+    "why_not_others": {
+      "A": {
+        "en": "❌ Both A and R are true and R is correct explanation.",
+        "ta": "❌ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கம்."
+      },
+      "B": {
+        "en": "❌ Both A and R are true but R is not correct explanation.",
+        "ta": "❌ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கம் அல்ல."
+      },
+      "C": {
+        "en": "❌ A is true but R is false.",
+        "ta": "❌ A சரி, ஆனால் R தவறு."
+      },
+      "D": {
+        "en": "✅ A is false but R is true.",
+        "ta": "✅ A தவறு, ஆனால் R சரி."
+      }
+    },
+    "trap_point": {
+      "en": "Trap point regarding Assertion and Reason for SC Concept 12.",
+      "ta": "கருத்து 12 பற்றிய கூற்று மற்றும் காரண பொறிப் புள்ளி."
+    },
+    "tnpsc_tip": {
+      "en": "Exam tip for SC Concept 12.",
+      "ta": "தேர்வு குறிப்பு 12."
+    },
+    "high_yield_fact": {
+      "en": "High-Yield Fact: Explanation for Assertion and Reason regarding Supreme Court Concept 12. Correct Option is (D).",
+      "ta": "முக்கியக் குறிப்பு: உச்ச நீதிமன்றக் கருத்து 12 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (D)."
+    },
+    "source_reference": [
+      "Supreme Court Notes Part 3"
+    ],
+    "answer": "d",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "Supreme Court of India"
+    ],
+    "revision_fact": "Explanation for Assertion and Reason regarding Supreme Court Concept 12. Correct Option is (D)."
+  },
+  {
+    "id": "POLITY_SC_REAS_013",
+    "subject": "Polity",
+    "topic": "Supreme Court of India",
+    "difficulty": "Hard",
+    "question_type": "Reasoning",
+    "question": {
+      "en": "Assertion (A): The Supreme Court exercises pivotal constitutional authority regarding Core Concept 13.\nReason (R): Article 137 provides the specific constitutional framework governing judicial functioning and powers.",
+      "ta": "கூற்று (A): முக்கியக் கருத்து 13 தொடர்பாக உச்ச நீதிமன்றம் முக்கிய அரசியலமைப்பு அதிகாரத்தைப் பயன்படுத்துகிறது.\nகாரணம் (R): உறுப்பு 137 நீதித்துறை செயல்பாடு மற்றும் அதிகாரங்களை நிர்வகிக்கும் குறிப்பிட்ட அரசியலமைப்பு அமைப்பை வழங்குகிறது."
+    },
+    "question_en": "Assertion (A): The Supreme Court exercises pivotal constitutional authority regarding Core Concept 13.\nReason (R): Article 137 provides the specific constitutional framework governing judicial functioning and powers.",
+    "question_ta": "கூற்று (A): முக்கியக் கருத்து 13 தொடர்பாக உச்ச நீதிமன்றம் முக்கிய அரசியலமைப்பு அதிகாரத்தைப் பயன்படுத்துகிறது.\nகாரணம் (R): உறுப்பு 137 நீதித்துறை செயல்பாடு மற்றும் அதிகாரங்களை நிர்வகிக்கும் குறிப்பிட்ட அரசியலமைப்பு அமைப்பை வழங்குகிறது.",
+    "options": [
+      {
+        "id": "A",
+        "en": "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல"
+      },
+      {
+        "id": "B",
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
+      },
+      {
+        "id": "C",
+        "en": "(A) is true but (R) is false",
+        "ta": "(A) சரி, ஆனால் (R) தவறு"
+      },
+      {
+        "id": "D",
+        "en": "(A) is false but (R) is true",
+        "ta": "(A) தவறு, ஆனால் (R) சரி"
+      }
+    ],
+    "options_en": [
+      "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "(A) is true but (R) is false",
+      "(A) is false but (R) is true"
+    ],
+    "options_ta": [
+      "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
+      "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
+      "(A) சரி, ஆனால் (R) தவறு",
+      "(A) தவறு, ஆனால் (R) சரி"
+    ],
+    "correct_answer": "B",
+    "explanation": {
+      "en": "Explanation for Assertion and Reason regarding Supreme Court Concept 13. Correct Option is (A).",
+      "ta": "உச்ச நீதிமன்றக் கருத்து 13 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (A)."
+    },
+    "explanation_en": "Explanation for Assertion and Reason regarding Supreme Court Concept 13. Correct Option is (A).",
+    "explanation_ta": "உச்ச நீதிமன்றக் கருத்து 13 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (A).",
+    "why_not_others": {
+      "A": {
+        "en": "❌ Both A and R are true but R is not correct explanation.",
+        "ta": "❌ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கம் அல்ல."
+      },
+      "B": {
+        "en": "✅ Both A and R are true and R is correct explanation.",
+        "ta": "✅ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கம்."
+      },
+      "C": {
+        "en": "❌ A is true but R is false.",
+        "ta": "❌ A சரி, ஆனால் R தவறு."
+      },
+      "D": {
+        "en": "❌ A is false but R is true.",
+        "ta": "❌ A தவறு, ஆனால் R சரி."
+      }
+    },
+    "trap_point": {
+      "en": "Trap point regarding Assertion and Reason for SC Concept 13.",
+      "ta": "கருத்து 13 பற்றிய கூற்று மற்றும் காரண பொறிப் புள்ளி."
+    },
+    "tnpsc_tip": {
+      "en": "Exam tip for SC Concept 13.",
+      "ta": "தேர்வு குறிப்பு 13."
+    },
+    "high_yield_fact": {
+      "en": "High-Yield Fact: Explanation for Assertion and Reason regarding Supreme Court Concept 13. Correct Option is (A).",
+      "ta": "முக்கியக் குறிப்பு: உச்ச நீதிமன்றக் கருத்து 13 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (A)."
+    },
+    "source_reference": [
+      "Supreme Court Notes Part 1"
+    ],
+    "answer": "b",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "Supreme Court of India"
+    ],
+    "revision_fact": "Explanation for Assertion and Reason regarding Supreme Court Concept 13. Correct Option is (A)."
+  },
+  {
+    "id": "POLITY_SC_REAS_014",
+    "subject": "Polity",
+    "topic": "Supreme Court of India",
+    "difficulty": "Hard",
+    "question_type": "Reasoning",
+    "question": {
+      "en": "Assertion (A): The Supreme Court exercises pivotal constitutional authority regarding Core Concept 14.\nReason (R): Article 138 provides the specific constitutional framework governing judicial functioning and powers.",
+      "ta": "கூற்று (A): முக்கியக் கருத்து 14 தொடர்பாக உச்ச நீதிமன்றம் முக்கிய அரசியலமைப்பு அதிகாரத்தைப் பயன்படுத்துகிறது.\nகாரணம் (R): உறுப்பு 138 நீதித்துறை செயல்பாடு மற்றும் அதிகாரங்களை நிர்வகிக்கும் குறிப்பிட்ட அரசியலமைப்பு அமைப்பை வழங்குகிறது."
+    },
+    "question_en": "Assertion (A): The Supreme Court exercises pivotal constitutional authority regarding Core Concept 14.\nReason (R): Article 138 provides the specific constitutional framework governing judicial functioning and powers.",
+    "question_ta": "கூற்று (A): முக்கியக் கருத்து 14 தொடர்பாக உச்ச நீதிமன்றம் முக்கிய அரசியலமைப்பு அதிகாரத்தைப் பயன்படுத்துகிறது.\nகாரணம் (R): உறுப்பு 138 நீதித்துறை செயல்பாடு மற்றும் அதிகாரங்களை நிர்வகிக்கும் குறிப்பிட்ட அரசியலமைப்பு அமைப்பை வழங்குகிறது.",
+    "options": [
+      {
+        "id": "A",
+        "en": "(A) is true but (R) is false",
+        "ta": "(A) சரி, ஆனால் (R) தவறு"
+      },
+      {
+        "id": "B",
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
+      },
+      {
+        "id": "C",
+        "en": "(A) is false but (R) is true",
+        "ta": "(A) தவறு, ஆனால் (R) சரி"
+      },
+      {
+        "id": "D",
+        "en": "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல"
+      }
+    ],
+    "options_en": [
+      "(A) is true but (R) is false",
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "(A) is false but (R) is true",
+      "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)"
+    ],
+    "options_ta": [
+      "(A) சரி, ஆனால் (R) தவறு",
+      "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
+      "(A) தவறு, ஆனால் (R) சரி",
+      "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல"
+    ],
+    "correct_answer": "D",
+    "explanation": {
+      "en": "Explanation for Assertion and Reason regarding Supreme Court Concept 14. Correct Option is (B).",
+      "ta": "உச்ச நீதிமன்றக் கருத்து 14 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (B)."
+    },
+    "explanation_en": "Explanation for Assertion and Reason regarding Supreme Court Concept 14. Correct Option is (B).",
+    "explanation_ta": "உச்ச நீதிமன்றக் கருத்து 14 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (B).",
+    "why_not_others": {
+      "A": {
+        "en": "❌ A is true but R is false.",
+        "ta": "❌ A சரி, ஆனால் R தவறு."
+      },
+      "B": {
+        "en": "❌ Both A and R are true and R is correct explanation.",
+        "ta": "❌ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கம்."
+      },
+      "C": {
+        "en": "❌ A is false but R is true.",
+        "ta": "❌ A தவறு, ஆனால் R சரி."
+      },
+      "D": {
+        "en": "✅ Both A and R are true but R is not correct explanation.",
+        "ta": "✅ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கம் அல்ல."
+      }
+    },
+    "trap_point": {
+      "en": "Trap point regarding Assertion and Reason for SC Concept 14.",
+      "ta": "கருத்து 14 பற்றிய கூற்று மற்றும் காரண பொறிப் புள்ளி."
+    },
+    "tnpsc_tip": {
+      "en": "Exam tip for SC Concept 14.",
+      "ta": "தேர்வு குறிப்பு 14."
+    },
+    "high_yield_fact": {
+      "en": "High-Yield Fact: Explanation for Assertion and Reason regarding Supreme Court Concept 14. Correct Option is (B).",
+      "ta": "முக்கியக் குறிப்பு: உச்ச நீதிமன்றக் கருத்து 14 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (B)."
+    },
+    "source_reference": [
+      "Supreme Court Notes Part 2"
+    ],
+    "answer": "d",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "Supreme Court of India"
+    ],
+    "revision_fact": "Explanation for Assertion and Reason regarding Supreme Court Concept 14. Correct Option is (B)."
+  },
+  {
+    "id": "POLITY_SC_REAS_015",
+    "subject": "Polity",
+    "topic": "Supreme Court of India",
+    "difficulty": "Hard",
+    "question_type": "Reasoning",
+    "question": {
+      "en": "Assertion (A): The Supreme Court exercises pivotal constitutional authority regarding Core Concept 15.\nReason (R): Article 139 provides the specific constitutional framework governing judicial functioning and powers.",
+      "ta": "கூற்று (A): முக்கியக் கருத்து 15 தொடர்பாக உச்ச நீதிமன்றம் முக்கிய அரசியலமைப்பு அதிகாரத்தைப் பயன்படுத்துகிறது.\nகாரணம் (R): உறுப்பு 139 நீதித்துறை செயல்பாடு மற்றும் அதிகாரங்களை நிர்வகிக்கும் குறிப்பிட்ட அரசியலமைப்பு அமைப்பை வழங்குகிறது."
+    },
+    "question_en": "Assertion (A): The Supreme Court exercises pivotal constitutional authority regarding Core Concept 15.\nReason (R): Article 139 provides the specific constitutional framework governing judicial functioning and powers.",
+    "question_ta": "கூற்று (A): முக்கியக் கருத்து 15 தொடர்பாக உச்ச நீதிமன்றம் முக்கிய அரசியலமைப்பு அதிகாரத்தைப் பயன்படுத்துகிறது.\nகாரணம் (R): உறுப்பு 139 நீதித்துறை செயல்பாடு மற்றும் அதிகாரங்களை நிர்வகிக்கும் குறிப்பிட்ட அரசியலமைப்பு அமைப்பை வழங்குகிறது.",
     "options": [
       {
         "id": "A",
@@ -917,354 +1391,6 @@
     ],
     "correct_answer": "B",
     "explanation": {
-      "en": "Explanation for Assertion and Reason regarding Supreme Court Concept 11. Correct Option is (C).",
-      "ta": "உச்ச நீதிமன்றக் கருத்து 11 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (C)."
-    },
-    "explanation_en": "Explanation for Assertion and Reason regarding Supreme Court Concept 11. Correct Option is (C).",
-    "explanation_ta": "உச்ச நீதிமன்றக் கருத்து 11 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (C).",
-    "why_not_others": {
-      "A": {
-        "en": "❌ Both A and R are true and R is correct explanation.",
-        "ta": "❌ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கம்."
-      },
-      "B": {
-        "en": "✅ A is true but R is false.",
-        "ta": "✅ A சரி, ஆனால் R தவறு."
-      },
-      "C": {
-        "en": "❌ Both A and R are true but R is not correct explanation.",
-        "ta": "❌ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கம் அல்ல."
-      },
-      "D": {
-        "en": "❌ A is false but R is true.",
-        "ta": "❌ A தவறு, ஆனால் R சரி."
-      }
-    },
-    "trap_point": {
-      "en": "Trap point regarding Assertion and Reason for SC Concept 11.",
-      "ta": "கருத்து 11 பற்றிய கூற்று மற்றும் காரண பொறிப் புள்ளி."
-    },
-    "tnpsc_tip": {
-      "en": "Exam tip for SC Concept 11.",
-      "ta": "தேர்வு குறிப்பு 11."
-    },
-    "high_yield_fact": {
-      "en": "High-Yield Fact: Explanation for Assertion and Reason regarding Supreme Court Concept 11. Correct Option is (C).",
-      "ta": "முக்கியக் குறிப்பு: உச்ச நீதிமன்றக் கருத்து 11 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (C)."
-    },
-    "source_reference": [
-      "Supreme Court Notes Part 1"
-    ]
-  },
-  {
-    "id": "POLITY_SC_REAS_012",
-    "subject": "Polity",
-    "topic": "Supreme Court of India",
-    "difficulty": "Hard",
-    "question_type": "Reasoning",
-    "question": {
-      "en": "Assertion (A): The Supreme Court exercises pivotal constitutional authority regarding Core Concept 12.\nReason (R): Article 136 provides the specific constitutional framework governing judicial functioning and powers.",
-      "ta": "கூற்று (A): முக்கியக் கருத்து 12 தொடர்பாக உச்ச நீதிமன்றம் முக்கிய அரசியலமைப்பு அதிகாரத்தைப் பயன்படுத்துகிறது.\nகாரணம் (R): உறுப்பு 136 நீதித்துறை செயல்பாடு மற்றும் அதிகாரங்களை நிர்வகிக்கும் குறிப்பிட்ட அரசியலமைப்பு அமைப்பை வழங்குகிறது."
-    },
-    "question_en": "Assertion (A): The Supreme Court exercises pivotal constitutional authority regarding Core Concept 12.\nReason (R): Article 136 provides the specific constitutional framework governing judicial functioning and powers.",
-    "question_ta": "கூற்று (A): முக்கியக் கருத்து 12 தொடர்பாக உச்ச நீதிமன்றம் முக்கிய அரசியலமைப்பு அதிகாரத்தைப் பயன்படுத்துகிறது.\nகாரணம் (R): உறுப்பு 136 நீதித்துறை செயல்பாடு மற்றும் அதிகாரங்களை நிர்வகிக்கும் குறிப்பிட்ட அரசியலமைப்பு அமைப்பை வழங்குகிறது.",
-    "options": [
-      {
-        "id": "A",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
-      },
-      {
-        "id": "B",
-        "en": "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல"
-      },
-      {
-        "id": "C",
-        "en": "(A) is false but (R) is true",
-        "ta": "(A) தவறு, ஆனால் (R) சரி"
-      },
-      {
-        "id": "D",
-        "en": "(A) is true but (R) is false",
-        "ta": "(A) சரி, ஆனால் (R) தவறு"
-      }
-    ],
-    "options_en": [
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-      "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
-      "(A) is false but (R) is true",
-      "(A) is true but (R) is false"
-    ],
-    "options_ta": [
-      "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
-      "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
-      "(A) தவறு, ஆனால் (R) சரி",
-      "(A) சரி, ஆனால் (R) தவறு"
-    ],
-    "correct_answer": "C",
-    "explanation": {
-      "en": "Explanation for Assertion and Reason regarding Supreme Court Concept 12. Correct Option is (D).",
-      "ta": "உச்ச நீதிமன்றக் கருத்து 12 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (D)."
-    },
-    "explanation_en": "Explanation for Assertion and Reason regarding Supreme Court Concept 12. Correct Option is (D).",
-    "explanation_ta": "உச்ச நீதிமன்றக் கருத்து 12 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (D).",
-    "why_not_others": {
-      "A": {
-        "en": "❌ Both A and R are true and R is correct explanation.",
-        "ta": "❌ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கம்."
-      },
-      "B": {
-        "en": "❌ Both A and R are true but R is not correct explanation.",
-        "ta": "❌ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கம் அல்ல."
-      },
-      "C": {
-        "en": "✅ A is false but R is true.",
-        "ta": "✅ A தவறு, ஆனால் R சரி."
-      },
-      "D": {
-        "en": "❌ A is true but R is false.",
-        "ta": "❌ A சரி, ஆனால் R தவறு."
-      }
-    },
-    "trap_point": {
-      "en": "Trap point regarding Assertion and Reason for SC Concept 12.",
-      "ta": "கருத்து 12 பற்றிய கூற்று மற்றும் காரண பொறிப் புள்ளி."
-    },
-    "tnpsc_tip": {
-      "en": "Exam tip for SC Concept 12.",
-      "ta": "தேர்வு குறிப்பு 12."
-    },
-    "high_yield_fact": {
-      "en": "High-Yield Fact: Explanation for Assertion and Reason regarding Supreme Court Concept 12. Correct Option is (D).",
-      "ta": "முக்கியக் குறிப்பு: உச்ச நீதிமன்றக் கருத்து 12 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (D)."
-    },
-    "source_reference": [
-      "Supreme Court Notes Part 3"
-    ]
-  },
-  {
-    "id": "POLITY_SC_REAS_013",
-    "subject": "Polity",
-    "topic": "Supreme Court of India",
-    "difficulty": "Hard",
-    "question_type": "Reasoning",
-    "question": {
-      "en": "Assertion (A): The Supreme Court exercises pivotal constitutional authority regarding Core Concept 13.\nReason (R): Article 137 provides the specific constitutional framework governing judicial functioning and powers.",
-      "ta": "கூற்று (A): முக்கியக் கருத்து 13 தொடர்பாக உச்ச நீதிமன்றம் முக்கிய அரசியலமைப்பு அதிகாரத்தைப் பயன்படுத்துகிறது.\nகாரணம் (R): உறுப்பு 137 நீதித்துறை செயல்பாடு மற்றும் அதிகாரங்களை நிர்வகிக்கும் குறிப்பிட்ட அரசியலமைப்பு அமைப்பை வழங்குகிறது."
-    },
-    "question_en": "Assertion (A): The Supreme Court exercises pivotal constitutional authority regarding Core Concept 13.\nReason (R): Article 137 provides the specific constitutional framework governing judicial functioning and powers.",
-    "question_ta": "கூற்று (A): முக்கியக் கருத்து 13 தொடர்பாக உச்ச நீதிமன்றம் முக்கிய அரசியலமைப்பு அதிகாரத்தைப் பயன்படுத்துகிறது.\nகாரணம் (R): உறுப்பு 137 நீதித்துறை செயல்பாடு மற்றும் அதிகாரங்களை நிர்வகிக்கும் குறிப்பிட்ட அரசியலமைப்பு அமைப்பை வழங்குகிறது.",
-    "options": [
-      {
-        "id": "A",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
-      },
-      {
-        "id": "B",
-        "en": "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல"
-      },
-      {
-        "id": "C",
-        "en": "(A) is true but (R) is false",
-        "ta": "(A) சரி, ஆனால் (R) தவறு"
-      },
-      {
-        "id": "D",
-        "en": "(A) is false but (R) is true",
-        "ta": "(A) தவறு, ஆனால் (R) சரி"
-      }
-    ],
-    "options_en": [
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-      "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
-      "(A) is true but (R) is false",
-      "(A) is false but (R) is true"
-    ],
-    "options_ta": [
-      "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
-      "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
-      "(A) சரி, ஆனால் (R) தவறு",
-      "(A) தவறு, ஆனால் (R) சரி"
-    ],
-    "correct_answer": "A",
-    "explanation": {
-      "en": "Explanation for Assertion and Reason regarding Supreme Court Concept 13. Correct Option is (A).",
-      "ta": "உச்ச நீதிமன்றக் கருத்து 13 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (A)."
-    },
-    "explanation_en": "Explanation for Assertion and Reason regarding Supreme Court Concept 13. Correct Option is (A).",
-    "explanation_ta": "உச்ச நீதிமன்றக் கருத்து 13 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (A).",
-    "why_not_others": {
-      "A": {
-        "en": "✅ Both A and R are true and R is correct explanation.",
-        "ta": "✅ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கம்."
-      },
-      "B": {
-        "en": "❌ Both A and R are true but R is not correct explanation.",
-        "ta": "❌ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கம் அல்ல."
-      },
-      "C": {
-        "en": "❌ A is true but R is false.",
-        "ta": "❌ A சரி, ஆனால் R தவறு."
-      },
-      "D": {
-        "en": "❌ A is false but R is true.",
-        "ta": "❌ A தவறு, ஆனால் R சரி."
-      }
-    },
-    "trap_point": {
-      "en": "Trap point regarding Assertion and Reason for SC Concept 13.",
-      "ta": "கருத்து 13 பற்றிய கூற்று மற்றும் காரண பொறிப் புள்ளி."
-    },
-    "tnpsc_tip": {
-      "en": "Exam tip for SC Concept 13.",
-      "ta": "தேர்வு குறிப்பு 13."
-    },
-    "high_yield_fact": {
-      "en": "High-Yield Fact: Explanation for Assertion and Reason regarding Supreme Court Concept 13. Correct Option is (A).",
-      "ta": "முக்கியக் குறிப்பு: உச்ச நீதிமன்றக் கருத்து 13 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (A)."
-    },
-    "source_reference": [
-      "Supreme Court Notes Part 1"
-    ]
-  },
-  {
-    "id": "POLITY_SC_REAS_014",
-    "subject": "Polity",
-    "topic": "Supreme Court of India",
-    "difficulty": "Hard",
-    "question_type": "Reasoning",
-    "question": {
-      "en": "Assertion (A): The Supreme Court exercises pivotal constitutional authority regarding Core Concept 14.\nReason (R): Article 138 provides the specific constitutional framework governing judicial functioning and powers.",
-      "ta": "கூற்று (A): முக்கியக் கருத்து 14 தொடர்பாக உச்ச நீதிமன்றம் முக்கிய அரசியலமைப்பு அதிகாரத்தைப் பயன்படுத்துகிறது.\nகாரணம் (R): உறுப்பு 138 நீதித்துறை செயல்பாடு மற்றும் அதிகாரங்களை நிர்வகிக்கும் குறிப்பிட்ட அரசியலமைப்பு அமைப்பை வழங்குகிறது."
-    },
-    "question_en": "Assertion (A): The Supreme Court exercises pivotal constitutional authority regarding Core Concept 14.\nReason (R): Article 138 provides the specific constitutional framework governing judicial functioning and powers.",
-    "question_ta": "கூற்று (A): முக்கியக் கருத்து 14 தொடர்பாக உச்ச நீதிமன்றம் முக்கிய அரசியலமைப்பு அதிகாரத்தைப் பயன்படுத்துகிறது.\nகாரணம் (R): உறுப்பு 138 நீதித்துறை செயல்பாடு மற்றும் அதிகாரங்களை நிர்வகிக்கும் குறிப்பிட்ட அரசியலமைப்பு அமைப்பை வழங்குகிறது.",
-    "options": [
-      {
-        "id": "A",
-        "en": "(A) is true but (R) is false",
-        "ta": "(A) சரி, ஆனால் (R) தவறு"
-      },
-      {
-        "id": "B",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
-      },
-      {
-        "id": "C",
-        "en": "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல"
-      },
-      {
-        "id": "D",
-        "en": "(A) is false but (R) is true",
-        "ta": "(A) தவறு, ஆனால் (R) சரி"
-      }
-    ],
-    "options_en": [
-      "(A) is true but (R) is false",
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-      "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
-      "(A) is false but (R) is true"
-    ],
-    "options_ta": [
-      "(A) சரி, ஆனால் (R) தவறு",
-      "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
-      "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
-      "(A) தவறு, ஆனால் (R) சரி"
-    ],
-    "correct_answer": "C",
-    "explanation": {
-      "en": "Explanation for Assertion and Reason regarding Supreme Court Concept 14. Correct Option is (B).",
-      "ta": "உச்ச நீதிமன்றக் கருத்து 14 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (B)."
-    },
-    "explanation_en": "Explanation for Assertion and Reason regarding Supreme Court Concept 14. Correct Option is (B).",
-    "explanation_ta": "உச்ச நீதிமன்றக் கருத்து 14 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (B).",
-    "why_not_others": {
-      "A": {
-        "en": "❌ A is true but R is false.",
-        "ta": "❌ A சரி, ஆனால் R தவறு."
-      },
-      "B": {
-        "en": "❌ Both A and R are true and R is correct explanation.",
-        "ta": "❌ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கம்."
-      },
-      "C": {
-        "en": "✅ Both A and R are true but R is not correct explanation.",
-        "ta": "✅ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கம் அல்ல."
-      },
-      "D": {
-        "en": "❌ A is false but R is true.",
-        "ta": "❌ A தவறு, ஆனால் R சரி."
-      }
-    },
-    "trap_point": {
-      "en": "Trap point regarding Assertion and Reason for SC Concept 14.",
-      "ta": "கருத்து 14 பற்றிய கூற்று மற்றும் காரண பொறிப் புள்ளி."
-    },
-    "tnpsc_tip": {
-      "en": "Exam tip for SC Concept 14.",
-      "ta": "தேர்வு குறிப்பு 14."
-    },
-    "high_yield_fact": {
-      "en": "High-Yield Fact: Explanation for Assertion and Reason regarding Supreme Court Concept 14. Correct Option is (B).",
-      "ta": "முக்கியக் குறிப்பு: உச்ச நீதிமன்றக் கருத்து 14 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (B)."
-    },
-    "source_reference": [
-      "Supreme Court Notes Part 2"
-    ]
-  },
-  {
-    "id": "POLITY_SC_REAS_015",
-    "subject": "Polity",
-    "topic": "Supreme Court of India",
-    "difficulty": "Hard",
-    "question_type": "Reasoning",
-    "question": {
-      "en": "Assertion (A): The Supreme Court exercises pivotal constitutional authority regarding Core Concept 15.\nReason (R): Article 139 provides the specific constitutional framework governing judicial functioning and powers.",
-      "ta": "கூற்று (A): முக்கியக் கருத்து 15 தொடர்பாக உச்ச நீதிமன்றம் முக்கிய அரசியலமைப்பு அதிகாரத்தைப் பயன்படுத்துகிறது.\nகாரணம் (R): உறுப்பு 139 நீதித்துறை செயல்பாடு மற்றும் அதிகாரங்களை நிர்வகிக்கும் குறிப்பிட்ட அரசியலமைப்பு அமைப்பை வழங்குகிறது."
-    },
-    "question_en": "Assertion (A): The Supreme Court exercises pivotal constitutional authority regarding Core Concept 15.\nReason (R): Article 139 provides the specific constitutional framework governing judicial functioning and powers.",
-    "question_ta": "கூற்று (A): முக்கியக் கருத்து 15 தொடர்பாக உச்ச நீதிமன்றம் முக்கிய அரசியலமைப்பு அதிகாரத்தைப் பயன்படுத்துகிறது.\nகாரணம் (R): உறுப்பு 139 நீதித்துறை செயல்பாடு மற்றும் அதிகாரங்களை நிர்வகிக்கும் குறிப்பிட்ட அரசியலமைப்பு அமைப்பை வழங்குகிறது.",
-    "options": [
-      {
-        "id": "A",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
-      },
-      {
-        "id": "B",
-        "en": "(A) is false but (R) is true",
-        "ta": "(A) தவறு, ஆனால் (R) சரி"
-      },
-      {
-        "id": "C",
-        "en": "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல"
-      },
-      {
-        "id": "D",
-        "en": "(A) is true but (R) is false",
-        "ta": "(A) சரி, ஆனால் (R) தவறு"
-      }
-    ],
-    "options_en": [
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-      "(A) is false but (R) is true",
-      "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
-      "(A) is true but (R) is false"
-    ],
-    "options_ta": [
-      "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
-      "(A) தவறு, ஆனால் (R) சரி",
-      "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
-      "(A) சரி, ஆனால் (R) தவறு"
-    ],
-    "correct_answer": "D",
-    "explanation": {
       "en": "Explanation for Assertion and Reason regarding Supreme Court Concept 15. Correct Option is (C).",
       "ta": "உச்ச நீதிமன்றக் கருத்து 15 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (C)."
     },
@@ -1276,16 +1402,16 @@
         "ta": "❌ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கம்."
       },
       "B": {
-        "en": "❌ A is false but R is true.",
-        "ta": "❌ A தவறு, ஆனால் R சரி."
+        "en": "✅ A is true but R is false.",
+        "ta": "✅ A சரி, ஆனால் R தவறு."
       },
       "C": {
         "en": "❌ Both A and R are true but R is not correct explanation.",
         "ta": "❌ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கம் அல்ல."
       },
       "D": {
-        "en": "✅ A is true but R is false.",
-        "ta": "✅ A சரி, ஆனால் R தவறு."
+        "en": "❌ A is false but R is true.",
+        "ta": "❌ A தவறு, ஆனால் R சரி."
       }
     },
     "trap_point": {
@@ -1302,7 +1428,16 @@
     },
     "source_reference": [
       "Supreme Court Notes Part 3"
-    ]
+    ],
+    "answer": "b",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "Supreme Court of India"
+    ],
+    "revision_fact": "Explanation for Assertion and Reason regarding Supreme Court Concept 15. Correct Option is (C)."
   },
   {
     "id": "POLITY_SC_REAS_016",
@@ -1389,7 +1524,16 @@
     },
     "source_reference": [
       "Supreme Court Notes Part 2"
-    ]
+    ],
+    "answer": "c",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "Supreme Court of India"
+    ],
+    "revision_fact": "Explanation for Assertion and Reason regarding Supreme Court Concept 16. Correct Option is (D)."
   },
   {
     "id": "POLITY_SC_REAS_017",
@@ -1476,7 +1620,16 @@
     },
     "source_reference": [
       "Supreme Court Notes Part 1"
-    ]
+    ],
+    "answer": "a",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "Supreme Court of India"
+    ],
+    "revision_fact": "Explanation for Assertion and Reason regarding Supreme Court Concept 17. Correct Option is (A)."
   },
   {
     "id": "POLITY_SC_REAS_018",
@@ -1503,28 +1656,28 @@
       },
       {
         "id": "C",
-        "en": "(A) is true but (R) is false",
-        "ta": "(A) சரி, ஆனால் (R) தவறு"
+        "en": "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல"
       },
       {
         "id": "D",
-        "en": "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல"
+        "en": "(A) is true but (R) is false",
+        "ta": "(A) சரி, ஆனால் (R) தவறு"
       }
     ],
     "options_en": [
       "(A) is false but (R) is true",
       "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-      "(A) is true but (R) is false",
-      "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)"
+      "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
+      "(A) is true but (R) is false"
     ],
     "options_ta": [
       "(A) தவறு, ஆனால் (R) சரி",
       "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
-      "(A) சரி, ஆனால் (R) தவறு",
-      "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல"
+      "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
+      "(A) சரி, ஆனால் (R) தவறு"
     ],
-    "correct_answer": "D",
+    "correct_answer": "C",
     "explanation": {
       "en": "Explanation for Assertion and Reason regarding Supreme Court Concept 18. Correct Option is (B).",
       "ta": "உச்ச நீதிமன்றக் கருத்து 18 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (B)."
@@ -1541,12 +1694,12 @@
         "ta": "❌ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கம்."
       },
       "C": {
-        "en": "❌ A is true but R is false.",
-        "ta": "❌ A சரி, ஆனால் R தவறு."
-      },
-      "D": {
         "en": "✅ Both A and R are true but R is not correct explanation.",
         "ta": "✅ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கம் அல்ல."
+      },
+      "D": {
+        "en": "❌ A is true but R is false.",
+        "ta": "❌ A சரி, ஆனால் R தவறு."
       }
     },
     "trap_point": {
@@ -1563,7 +1716,16 @@
     },
     "source_reference": [
       "Supreme Court Notes Part 3"
-    ]
+    ],
+    "answer": "c",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "Supreme Court of India"
+    ],
+    "revision_fact": "Explanation for Assertion and Reason regarding Supreme Court Concept 18. Correct Option is (B)."
   },
   {
     "id": "POLITY_SC_REAS_019",
@@ -1580,8 +1742,8 @@
     "options": [
       {
         "id": "A",
-        "en": "(A) is true but (R) is false",
-        "ta": "(A) சரி, ஆனால் (R) தவறு"
+        "en": "(A) is false but (R) is true",
+        "ta": "(A) தவறு, ஆனால் (R) சரி"
       },
       {
         "id": "B",
@@ -1595,23 +1757,23 @@
       },
       {
         "id": "D",
-        "en": "(A) is false but (R) is true",
-        "ta": "(A) தவறு, ஆனால் (R) சரி"
+        "en": "(A) is true but (R) is false",
+        "ta": "(A) சரி, ஆனால் (R) தவறு"
       }
     ],
     "options_en": [
-      "(A) is true but (R) is false",
+      "(A) is false but (R) is true",
       "Both (A) and (R) are true and (R) is the correct explanation of (A)",
       "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
-      "(A) is false but (R) is true"
+      "(A) is true but (R) is false"
     ],
     "options_ta": [
-      "(A) சரி, ஆனால் (R) தவறு",
+      "(A) தவறு, ஆனால் (R) சரி",
       "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
       "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
-      "(A) தவறு, ஆனால் (R) சரி"
+      "(A) சரி, ஆனால் (R) தவறு"
     ],
-    "correct_answer": "A",
+    "correct_answer": "D",
     "explanation": {
       "en": "Explanation for Assertion and Reason regarding Supreme Court Concept 19. Correct Option is (C).",
       "ta": "உச்ச நீதிமன்றக் கருத்து 19 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (C)."
@@ -1620,8 +1782,8 @@
     "explanation_ta": "உச்ச நீதிமன்றக் கருத்து 19 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (C).",
     "why_not_others": {
       "A": {
-        "en": "✅ A is true but R is false.",
-        "ta": "✅ A சரி, ஆனால் R தவறு."
+        "en": "❌ A is false but R is true.",
+        "ta": "❌ A தவறு, ஆனால் R சரி."
       },
       "B": {
         "en": "❌ Both A and R are true and R is correct explanation.",
@@ -1632,8 +1794,8 @@
         "ta": "❌ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கம் அல்ல."
       },
       "D": {
-        "en": "❌ A is false but R is true.",
-        "ta": "❌ A தவறு, ஆனால் R சரி."
+        "en": "✅ A is true but R is false.",
+        "ta": "✅ A சரி, ஆனால் R தவறு."
       }
     },
     "trap_point": {
@@ -1650,7 +1812,16 @@
     },
     "source_reference": [
       "Supreme Court Notes Part 1"
-    ]
+    ],
+    "answer": "d",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "Supreme Court of India"
+    ],
+    "revision_fact": "Explanation for Assertion and Reason regarding Supreme Court Concept 19. Correct Option is (C)."
   },
   {
     "id": "POLITY_SC_REAS_020",
@@ -1677,28 +1848,28 @@
       },
       {
         "id": "C",
-        "en": "(A) is true but (R) is false",
-        "ta": "(A) சரி, ஆனால் (R) தவறு"
+        "en": "(A) is false but (R) is true",
+        "ta": "(A) தவறு, ஆனால் (R) சரி"
       },
       {
         "id": "D",
-        "en": "(A) is false but (R) is true",
-        "ta": "(A) தவறு, ஆனால் (R) சரி"
+        "en": "(A) is true but (R) is false",
+        "ta": "(A) சரி, ஆனால் (R) தவறு"
       }
     ],
     "options_en": [
       "Both (A) and (R) are true and (R) is the correct explanation of (A)",
       "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
-      "(A) is true but (R) is false",
-      "(A) is false but (R) is true"
+      "(A) is false but (R) is true",
+      "(A) is true but (R) is false"
     ],
     "options_ta": [
       "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
       "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
-      "(A) சரி, ஆனால் (R) தவறு",
-      "(A) தவறு, ஆனால் (R) சரி"
+      "(A) தவறு, ஆனால் (R) சரி",
+      "(A) சரி, ஆனால் (R) தவறு"
     ],
-    "correct_answer": "D",
+    "correct_answer": "C",
     "explanation": {
       "en": "Explanation for Assertion and Reason regarding Supreme Court Concept 20. Correct Option is (D).",
       "ta": "உச்ச நீதிமன்றக் கருத்து 20 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (D)."
@@ -1715,12 +1886,12 @@
         "ta": "❌ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கம் அல்ல."
       },
       "C": {
-        "en": "❌ A is true but R is false.",
-        "ta": "❌ A சரி, ஆனால் R தவறு."
-      },
-      "D": {
         "en": "✅ A is false but R is true.",
         "ta": "✅ A தவறு, ஆனால் R சரி."
+      },
+      "D": {
+        "en": "❌ A is true but R is false.",
+        "ta": "❌ A சரி, ஆனால் R தவறு."
       }
     },
     "trap_point": {
@@ -1737,7 +1908,16 @@
     },
     "source_reference": [
       "Supreme Court Notes Part 2"
-    ]
+    ],
+    "answer": "c",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "Supreme Court of India"
+    ],
+    "revision_fact": "Explanation for Assertion and Reason regarding Supreme Court Concept 20. Correct Option is (D)."
   },
   {
     "id": "POLITY_SC_REAS_021",
@@ -1751,354 +1931,6 @@
     },
     "question_en": "Assertion (A): The Supreme Court exercises pivotal constitutional authority regarding Core Concept 21.\nReason (R): Article 125 provides the specific constitutional framework governing judicial functioning and powers.",
     "question_ta": "கூற்று (A): முக்கியக் கருத்து 21 தொடர்பாக உச்ச நீதிமன்றம் முக்கிய அரசியலமைப்பு அதிகாரத்தைப் பயன்படுத்துகிறது.\nகாரணம் (R): உறுப்பு 125 நீதித்துறை செயல்பாடு மற்றும் அதிகாரங்களை நிர்வகிக்கும் குறிப்பிட்ட அரசியலமைப்பு அமைப்பை வழங்குகிறது.",
-    "options": [
-      {
-        "id": "A",
-        "en": "(A) is false but (R) is true",
-        "ta": "(A) தவறு, ஆனால் (R) சரி"
-      },
-      {
-        "id": "B",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
-      },
-      {
-        "id": "C",
-        "en": "(A) is true but (R) is false",
-        "ta": "(A) சரி, ஆனால் (R) தவறு"
-      },
-      {
-        "id": "D",
-        "en": "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல"
-      }
-    ],
-    "options_en": [
-      "(A) is false but (R) is true",
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-      "(A) is true but (R) is false",
-      "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)"
-    ],
-    "options_ta": [
-      "(A) தவறு, ஆனால் (R) சரி",
-      "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
-      "(A) சரி, ஆனால் (R) தவறு",
-      "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல"
-    ],
-    "correct_answer": "B",
-    "explanation": {
-      "en": "Explanation for Assertion and Reason regarding Supreme Court Concept 21. Correct Option is (A).",
-      "ta": "உச்ச நீதிமன்றக் கருத்து 21 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (A)."
-    },
-    "explanation_en": "Explanation for Assertion and Reason regarding Supreme Court Concept 21. Correct Option is (A).",
-    "explanation_ta": "உச்ச நீதிமன்றக் கருத்து 21 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (A).",
-    "why_not_others": {
-      "A": {
-        "en": "❌ A is false but R is true.",
-        "ta": "❌ A தவறு, ஆனால் R சரி."
-      },
-      "B": {
-        "en": "✅ Both A and R are true and R is correct explanation.",
-        "ta": "✅ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கம்."
-      },
-      "C": {
-        "en": "❌ A is true but R is false.",
-        "ta": "❌ A சரி, ஆனால் R தவறு."
-      },
-      "D": {
-        "en": "❌ Both A and R are true but R is not correct explanation.",
-        "ta": "❌ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கம் அல்ல."
-      }
-    },
-    "trap_point": {
-      "en": "Trap point regarding Assertion and Reason for SC Concept 21.",
-      "ta": "கருத்து 21 பற்றிய கூற்று மற்றும் காரண பொறிப் புள்ளி."
-    },
-    "tnpsc_tip": {
-      "en": "Exam tip for SC Concept 21.",
-      "ta": "தேர்வு குறிப்பு 21."
-    },
-    "high_yield_fact": {
-      "en": "High-Yield Fact: Explanation for Assertion and Reason regarding Supreme Court Concept 21. Correct Option is (A).",
-      "ta": "முக்கியக் குறிப்பு: உச்ச நீதிமன்றக் கருத்து 21 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (A)."
-    },
-    "source_reference": [
-      "Supreme Court Notes Part 3"
-    ]
-  },
-  {
-    "id": "POLITY_SC_REAS_022",
-    "subject": "Polity",
-    "topic": "Supreme Court of India",
-    "difficulty": "Hard",
-    "question_type": "Reasoning",
-    "question": {
-      "en": "Assertion (A): The Supreme Court exercises pivotal constitutional authority regarding Core Concept 22.\nReason (R): Article 126 provides the specific constitutional framework governing judicial functioning and powers.",
-      "ta": "கூற்று (A): முக்கியக் கருத்து 22 தொடர்பாக உச்ச நீதிமன்றம் முக்கிய அரசியலமைப்பு அதிகாரத்தைப் பயன்படுத்துகிறது.\nகாரணம் (R): உறுப்பு 126 நீதித்துறை செயல்பாடு மற்றும் அதிகாரங்களை நிர்வகிக்கும் குறிப்பிட்ட அரசியலமைப்பு அமைப்பை வழங்குகிறது."
-    },
-    "question_en": "Assertion (A): The Supreme Court exercises pivotal constitutional authority regarding Core Concept 22.\nReason (R): Article 126 provides the specific constitutional framework governing judicial functioning and powers.",
-    "question_ta": "கூற்று (A): முக்கியக் கருத்து 22 தொடர்பாக உச்ச நீதிமன்றம் முக்கிய அரசியலமைப்பு அதிகாரத்தைப் பயன்படுத்துகிறது.\nகாரணம் (R): உறுப்பு 126 நீதித்துறை செயல்பாடு மற்றும் அதிகாரங்களை நிர்வகிக்கும் குறிப்பிட்ட அரசியலமைப்பு அமைப்பை வழங்குகிறது.",
-    "options": [
-      {
-        "id": "A",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
-      },
-      {
-        "id": "B",
-        "en": "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல"
-      },
-      {
-        "id": "C",
-        "en": "(A) is true but (R) is false",
-        "ta": "(A) சரி, ஆனால் (R) தவறு"
-      },
-      {
-        "id": "D",
-        "en": "(A) is false but (R) is true",
-        "ta": "(A) தவறு, ஆனால் (R) சரி"
-      }
-    ],
-    "options_en": [
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-      "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
-      "(A) is true but (R) is false",
-      "(A) is false but (R) is true"
-    ],
-    "options_ta": [
-      "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
-      "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
-      "(A) சரி, ஆனால் (R) தவறு",
-      "(A) தவறு, ஆனால் (R) சரி"
-    ],
-    "correct_answer": "B",
-    "explanation": {
-      "en": "Explanation for Assertion and Reason regarding Supreme Court Concept 22. Correct Option is (B).",
-      "ta": "உச்ச நீதிமன்றக் கருத்து 22 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (B)."
-    },
-    "explanation_en": "Explanation for Assertion and Reason regarding Supreme Court Concept 22. Correct Option is (B).",
-    "explanation_ta": "உச்ச நீதிமன்றக் கருத்து 22 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (B).",
-    "why_not_others": {
-      "A": {
-        "en": "❌ Both A and R are true and R is correct explanation.",
-        "ta": "❌ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கம்."
-      },
-      "B": {
-        "en": "✅ Both A and R are true but R is not correct explanation.",
-        "ta": "✅ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கம் அல்ல."
-      },
-      "C": {
-        "en": "❌ A is true but R is false.",
-        "ta": "❌ A சரி, ஆனால் R தவறு."
-      },
-      "D": {
-        "en": "❌ A is false but R is true.",
-        "ta": "❌ A தவறு, ஆனால் R சரி."
-      }
-    },
-    "trap_point": {
-      "en": "Trap point regarding Assertion and Reason for SC Concept 22.",
-      "ta": "கருத்து 22 பற்றிய கூற்று மற்றும் காரண பொறிப் புள்ளி."
-    },
-    "tnpsc_tip": {
-      "en": "Exam tip for SC Concept 22.",
-      "ta": "தேர்வு குறிப்பு 22."
-    },
-    "high_yield_fact": {
-      "en": "High-Yield Fact: Explanation for Assertion and Reason regarding Supreme Court Concept 22. Correct Option is (B).",
-      "ta": "முக்கியக் குறிப்பு: உச்ச நீதிமன்றக் கருத்து 22 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (B)."
-    },
-    "source_reference": [
-      "Supreme Court Notes Part 2"
-    ]
-  },
-  {
-    "id": "POLITY_SC_REAS_023",
-    "subject": "Polity",
-    "topic": "Supreme Court of India",
-    "difficulty": "Hard",
-    "question_type": "Reasoning",
-    "question": {
-      "en": "Assertion (A): The Supreme Court exercises pivotal constitutional authority regarding Core Concept 23.\nReason (R): Article 127 provides the specific constitutional framework governing judicial functioning and powers.",
-      "ta": "கூற்று (A): முக்கியக் கருத்து 23 தொடர்பாக உச்ச நீதிமன்றம் முக்கிய அரசியலமைப்பு அதிகாரத்தைப் பயன்படுத்துகிறது.\nகாரணம் (R): உறுப்பு 127 நீதித்துறை செயல்பாடு மற்றும் அதிகாரங்களை நிர்வகிக்கும் குறிப்பிட்ட அரசியலமைப்பு அமைப்பை வழங்குகிறது."
-    },
-    "question_en": "Assertion (A): The Supreme Court exercises pivotal constitutional authority regarding Core Concept 23.\nReason (R): Article 127 provides the specific constitutional framework governing judicial functioning and powers.",
-    "question_ta": "கூற்று (A): முக்கியக் கருத்து 23 தொடர்பாக உச்ச நீதிமன்றம் முக்கிய அரசியலமைப்பு அதிகாரத்தைப் பயன்படுத்துகிறது.\nகாரணம் (R): உறுப்பு 127 நீதித்துறை செயல்பாடு மற்றும் அதிகாரங்களை நிர்வகிக்கும் குறிப்பிட்ட அரசியலமைப்பு அமைப்பை வழங்குகிறது.",
-    "options": [
-      {
-        "id": "A",
-        "en": "(A) is true but (R) is false",
-        "ta": "(A) சரி, ஆனால் (R) தவறு"
-      },
-      {
-        "id": "B",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
-      },
-      {
-        "id": "C",
-        "en": "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல"
-      },
-      {
-        "id": "D",
-        "en": "(A) is false but (R) is true",
-        "ta": "(A) தவறு, ஆனால் (R) சரி"
-      }
-    ],
-    "options_en": [
-      "(A) is true but (R) is false",
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-      "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
-      "(A) is false but (R) is true"
-    ],
-    "options_ta": [
-      "(A) சரி, ஆனால் (R) தவறு",
-      "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
-      "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
-      "(A) தவறு, ஆனால் (R) சரி"
-    ],
-    "correct_answer": "A",
-    "explanation": {
-      "en": "Explanation for Assertion and Reason regarding Supreme Court Concept 23. Correct Option is (C).",
-      "ta": "உச்ச நீதிமன்றக் கருத்து 23 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (C)."
-    },
-    "explanation_en": "Explanation for Assertion and Reason regarding Supreme Court Concept 23. Correct Option is (C).",
-    "explanation_ta": "உச்ச நீதிமன்றக் கருத்து 23 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (C).",
-    "why_not_others": {
-      "A": {
-        "en": "✅ A is true but R is false.",
-        "ta": "✅ A சரி, ஆனால் R தவறு."
-      },
-      "B": {
-        "en": "❌ Both A and R are true and R is correct explanation.",
-        "ta": "❌ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கம்."
-      },
-      "C": {
-        "en": "❌ Both A and R are true but R is not correct explanation.",
-        "ta": "❌ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கம் அல்ல."
-      },
-      "D": {
-        "en": "❌ A is false but R is true.",
-        "ta": "❌ A தவறு, ஆனால் R சரி."
-      }
-    },
-    "trap_point": {
-      "en": "Trap point regarding Assertion and Reason for SC Concept 23.",
-      "ta": "கருத்து 23 பற்றிய கூற்று மற்றும் காரண பொறிப் புள்ளி."
-    },
-    "tnpsc_tip": {
-      "en": "Exam tip for SC Concept 23.",
-      "ta": "தேர்வு குறிப்பு 23."
-    },
-    "high_yield_fact": {
-      "en": "High-Yield Fact: Explanation for Assertion and Reason regarding Supreme Court Concept 23. Correct Option is (C).",
-      "ta": "முக்கியக் குறிப்பு: உச்ச நீதிமன்றக் கருத்து 23 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (C)."
-    },
-    "source_reference": [
-      "Supreme Court Notes Part 1"
-    ]
-  },
-  {
-    "id": "POLITY_SC_REAS_024",
-    "subject": "Polity",
-    "topic": "Supreme Court of India",
-    "difficulty": "Hard",
-    "question_type": "Reasoning",
-    "question": {
-      "en": "Assertion (A): The Supreme Court exercises pivotal constitutional authority regarding Core Concept 24.\nReason (R): Article 128 provides the specific constitutional framework governing judicial functioning and powers.",
-      "ta": "கூற்று (A): முக்கியக் கருத்து 24 தொடர்பாக உச்ச நீதிமன்றம் முக்கிய அரசியலமைப்பு அதிகாரத்தைப் பயன்படுத்துகிறது.\nகாரணம் (R): உறுப்பு 128 நீதித்துறை செயல்பாடு மற்றும் அதிகாரங்களை நிர்வகிக்கும் குறிப்பிட்ட அரசியலமைப்பு அமைப்பை வழங்குகிறது."
-    },
-    "question_en": "Assertion (A): The Supreme Court exercises pivotal constitutional authority regarding Core Concept 24.\nReason (R): Article 128 provides the specific constitutional framework governing judicial functioning and powers.",
-    "question_ta": "கூற்று (A): முக்கியக் கருத்து 24 தொடர்பாக உச்ச நீதிமன்றம் முக்கிய அரசியலமைப்பு அதிகாரத்தைப் பயன்படுத்துகிறது.\nகாரணம் (R): உறுப்பு 128 நீதித்துறை செயல்பாடு மற்றும் அதிகாரங்களை நிர்வகிக்கும் குறிப்பிட்ட அரசியலமைப்பு அமைப்பை வழங்குகிறது.",
-    "options": [
-      {
-        "id": "A",
-        "en": "(A) is false but (R) is true",
-        "ta": "(A) தவறு, ஆனால் (R) சரி"
-      },
-      {
-        "id": "B",
-        "en": "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல"
-      },
-      {
-        "id": "C",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
-      },
-      {
-        "id": "D",
-        "en": "(A) is true but (R) is false",
-        "ta": "(A) சரி, ஆனால் (R) தவறு"
-      }
-    ],
-    "options_en": [
-      "(A) is false but (R) is true",
-      "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-      "(A) is true but (R) is false"
-    ],
-    "options_ta": [
-      "(A) தவறு, ஆனால் (R) சரி",
-      "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
-      "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
-      "(A) சரி, ஆனால் (R) தவறு"
-    ],
-    "correct_answer": "A",
-    "explanation": {
-      "en": "Explanation for Assertion and Reason regarding Supreme Court Concept 24. Correct Option is (D).",
-      "ta": "உச்ச நீதிமன்றக் கருத்து 24 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (D)."
-    },
-    "explanation_en": "Explanation for Assertion and Reason regarding Supreme Court Concept 24. Correct Option is (D).",
-    "explanation_ta": "உச்ச நீதிமன்றக் கருத்து 24 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (D).",
-    "why_not_others": {
-      "A": {
-        "en": "✅ A is false but R is true.",
-        "ta": "✅ A தவறு, ஆனால் R சரி."
-      },
-      "B": {
-        "en": "❌ Both A and R are true but R is not correct explanation.",
-        "ta": "❌ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கம் அல்ல."
-      },
-      "C": {
-        "en": "❌ Both A and R are true and R is correct explanation.",
-        "ta": "❌ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கம்."
-      },
-      "D": {
-        "en": "❌ A is true but R is false.",
-        "ta": "❌ A சரி, ஆனால் R தவறு."
-      }
-    },
-    "trap_point": {
-      "en": "Trap point regarding Assertion and Reason for SC Concept 24.",
-      "ta": "கருத்து 24 பற்றிய கூற்று மற்றும் காரண பொறிப் புள்ளி."
-    },
-    "tnpsc_tip": {
-      "en": "Exam tip for SC Concept 24.",
-      "ta": "தேர்வு குறிப்பு 24."
-    },
-    "high_yield_fact": {
-      "en": "High-Yield Fact: Explanation for Assertion and Reason regarding Supreme Court Concept 24. Correct Option is (D).",
-      "ta": "முக்கியக் குறிப்பு: உச்ச நீதிமன்றக் கருத்து 24 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (D)."
-    },
-    "source_reference": [
-      "Supreme Court Notes Part 3"
-    ]
-  },
-  {
-    "id": "POLITY_SC_REAS_025",
-    "subject": "Polity",
-    "topic": "Supreme Court of India",
-    "difficulty": "Hard",
-    "question_type": "Reasoning",
-    "question": {
-      "en": "Assertion (A): The Supreme Court exercises pivotal constitutional authority regarding Core Concept 25.\nReason (R): Article 129 provides the specific constitutional framework governing judicial functioning and powers.",
-      "ta": "கூற்று (A): முக்கியக் கருத்து 25 தொடர்பாக உச்ச நீதிமன்றம் முக்கிய அரசியலமைப்பு அதிகாரத்தைப் பயன்படுத்துகிறது.\nகாரணம் (R): உறுப்பு 129 நீதித்துறை செயல்பாடு மற்றும் அதிகாரங்களை நிர்வகிக்கும் குறிப்பிட்ட அரசியலமைப்பு அமைப்பை வழங்குகிறது."
-    },
-    "question_en": "Assertion (A): The Supreme Court exercises pivotal constitutional authority regarding Core Concept 25.\nReason (R): Article 129 provides the specific constitutional framework governing judicial functioning and powers.",
-    "question_ta": "கூற்று (A): முக்கியக் கருத்து 25 தொடர்பாக உச்ச நீதிமன்றம் முக்கிய அரசியலமைப்பு அதிகாரத்தைப் பயன்படுத்துகிறது.\nகாரணம் (R): உறுப்பு 129 நீதித்துறை செயல்பாடு மற்றும் அதிகாரங்களை நிர்வகிக்கும் குறிப்பிட்ட அரசியலமைப்பு அமைப்பை வழங்குகிறது.",
     "options": [
       {
         "id": "A",
@@ -2135,11 +1967,11 @@
     ],
     "correct_answer": "D",
     "explanation": {
-      "en": "Explanation for Assertion and Reason regarding Supreme Court Concept 25. Correct Option is (A).",
-      "ta": "உச்ச நீதிமன்றக் கருத்து 25 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (A)."
+      "en": "Explanation for Assertion and Reason regarding Supreme Court Concept 21. Correct Option is (A).",
+      "ta": "உச்ச நீதிமன்றக் கருத்து 21 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (A)."
     },
-    "explanation_en": "Explanation for Assertion and Reason regarding Supreme Court Concept 25. Correct Option is (A).",
-    "explanation_ta": "உச்ச நீதிமன்றக் கருத்து 25 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (A).",
+    "explanation_en": "Explanation for Assertion and Reason regarding Supreme Court Concept 21. Correct Option is (A).",
+    "explanation_ta": "உச்ச நீதிமன்றக் கருத்து 21 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (A).",
     "why_not_others": {
       "A": {
         "en": "❌ A is false but R is true.",
@@ -2159,6 +1991,390 @@
       }
     },
     "trap_point": {
+      "en": "Trap point regarding Assertion and Reason for SC Concept 21.",
+      "ta": "கருத்து 21 பற்றிய கூற்று மற்றும் காரண பொறிப் புள்ளி."
+    },
+    "tnpsc_tip": {
+      "en": "Exam tip for SC Concept 21.",
+      "ta": "தேர்வு குறிப்பு 21."
+    },
+    "high_yield_fact": {
+      "en": "High-Yield Fact: Explanation for Assertion and Reason regarding Supreme Court Concept 21. Correct Option is (A).",
+      "ta": "முக்கியக் குறிப்பு: உச்ச நீதிமன்றக் கருத்து 21 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (A)."
+    },
+    "source_reference": [
+      "Supreme Court Notes Part 3"
+    ],
+    "answer": "d",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "Supreme Court of India"
+    ],
+    "revision_fact": "Explanation for Assertion and Reason regarding Supreme Court Concept 21. Correct Option is (A)."
+  },
+  {
+    "id": "POLITY_SC_REAS_022",
+    "subject": "Polity",
+    "topic": "Supreme Court of India",
+    "difficulty": "Hard",
+    "question_type": "Reasoning",
+    "question": {
+      "en": "Assertion (A): The Supreme Court exercises pivotal constitutional authority regarding Core Concept 22.\nReason (R): Article 126 provides the specific constitutional framework governing judicial functioning and powers.",
+      "ta": "கூற்று (A): முக்கியக் கருத்து 22 தொடர்பாக உச்ச நீதிமன்றம் முக்கிய அரசியலமைப்பு அதிகாரத்தைப் பயன்படுத்துகிறது.\nகாரணம் (R): உறுப்பு 126 நீதித்துறை செயல்பாடு மற்றும் அதிகாரங்களை நிர்வகிக்கும் குறிப்பிட்ட அரசியலமைப்பு அமைப்பை வழங்குகிறது."
+    },
+    "question_en": "Assertion (A): The Supreme Court exercises pivotal constitutional authority regarding Core Concept 22.\nReason (R): Article 126 provides the specific constitutional framework governing judicial functioning and powers.",
+    "question_ta": "கூற்று (A): முக்கியக் கருத்து 22 தொடர்பாக உச்ச நீதிமன்றம் முக்கிய அரசியலமைப்பு அதிகாரத்தைப் பயன்படுத்துகிறது.\nகாரணம் (R): உறுப்பு 126 நீதித்துறை செயல்பாடு மற்றும் அதிகாரங்களை நிர்வகிக்கும் குறிப்பிட்ட அரசியலமைப்பு அமைப்பை வழங்குகிறது.",
+    "options": [
+      {
+        "id": "A",
+        "en": "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல"
+      },
+      {
+        "id": "B",
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
+      },
+      {
+        "id": "C",
+        "en": "(A) is true but (R) is false",
+        "ta": "(A) சரி, ஆனால் (R) தவறு"
+      },
+      {
+        "id": "D",
+        "en": "(A) is false but (R) is true",
+        "ta": "(A) தவறு, ஆனால் (R) சரி"
+      }
+    ],
+    "options_en": [
+      "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "(A) is true but (R) is false",
+      "(A) is false but (R) is true"
+    ],
+    "options_ta": [
+      "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
+      "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
+      "(A) சரி, ஆனால் (R) தவறு",
+      "(A) தவறு, ஆனால் (R) சரி"
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "Explanation for Assertion and Reason regarding Supreme Court Concept 22. Correct Option is (B).",
+      "ta": "உச்ச நீதிமன்றக் கருத்து 22 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (B)."
+    },
+    "explanation_en": "Explanation for Assertion and Reason regarding Supreme Court Concept 22. Correct Option is (B).",
+    "explanation_ta": "உச்ச நீதிமன்றக் கருத்து 22 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (B).",
+    "why_not_others": {
+      "A": {
+        "en": "✅ Both A and R are true but R is not correct explanation.",
+        "ta": "✅ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கம் அல்ல."
+      },
+      "B": {
+        "en": "❌ Both A and R are true and R is correct explanation.",
+        "ta": "❌ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கம்."
+      },
+      "C": {
+        "en": "❌ A is true but R is false.",
+        "ta": "❌ A சரி, ஆனால் R தவறு."
+      },
+      "D": {
+        "en": "❌ A is false but R is true.",
+        "ta": "❌ A தவறு, ஆனால் R சரி."
+      }
+    },
+    "trap_point": {
+      "en": "Trap point regarding Assertion and Reason for SC Concept 22.",
+      "ta": "கருத்து 22 பற்றிய கூற்று மற்றும் காரண பொறிப் புள்ளி."
+    },
+    "tnpsc_tip": {
+      "en": "Exam tip for SC Concept 22.",
+      "ta": "தேர்வு குறிப்பு 22."
+    },
+    "high_yield_fact": {
+      "en": "High-Yield Fact: Explanation for Assertion and Reason regarding Supreme Court Concept 22. Correct Option is (B).",
+      "ta": "முக்கியக் குறிப்பு: உச்ச நீதிமன்றக் கருத்து 22 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (B)."
+    },
+    "source_reference": [
+      "Supreme Court Notes Part 2"
+    ],
+    "answer": "a",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "Supreme Court of India"
+    ],
+    "revision_fact": "Explanation for Assertion and Reason regarding Supreme Court Concept 22. Correct Option is (B)."
+  },
+  {
+    "id": "POLITY_SC_REAS_023",
+    "subject": "Polity",
+    "topic": "Supreme Court of India",
+    "difficulty": "Hard",
+    "question_type": "Reasoning",
+    "question": {
+      "en": "Assertion (A): The Supreme Court exercises pivotal constitutional authority regarding Core Concept 23.\nReason (R): Article 127 provides the specific constitutional framework governing judicial functioning and powers.",
+      "ta": "கூற்று (A): முக்கியக் கருத்து 23 தொடர்பாக உச்ச நீதிமன்றம் முக்கிய அரசியலமைப்பு அதிகாரத்தைப் பயன்படுத்துகிறது.\nகாரணம் (R): உறுப்பு 127 நீதித்துறை செயல்பாடு மற்றும் அதிகாரங்களை நிர்வகிக்கும் குறிப்பிட்ட அரசியலமைப்பு அமைப்பை வழங்குகிறது."
+    },
+    "question_en": "Assertion (A): The Supreme Court exercises pivotal constitutional authority regarding Core Concept 23.\nReason (R): Article 127 provides the specific constitutional framework governing judicial functioning and powers.",
+    "question_ta": "கூற்று (A): முக்கியக் கருத்து 23 தொடர்பாக உச்ச நீதிமன்றம் முக்கிய அரசியலமைப்பு அதிகாரத்தைப் பயன்படுத்துகிறது.\nகாரணம் (R): உறுப்பு 127 நீதித்துறை செயல்பாடு மற்றும் அதிகாரங்களை நிர்வகிக்கும் குறிப்பிட்ட அரசியலமைப்பு அமைப்பை வழங்குகிறது.",
+    "options": [
+      {
+        "id": "A",
+        "en": "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல"
+      },
+      {
+        "id": "B",
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
+      },
+      {
+        "id": "C",
+        "en": "(A) is true but (R) is false",
+        "ta": "(A) சரி, ஆனால் (R) தவறு"
+      },
+      {
+        "id": "D",
+        "en": "(A) is false but (R) is true",
+        "ta": "(A) தவறு, ஆனால் (R) சரி"
+      }
+    ],
+    "options_en": [
+      "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "(A) is true but (R) is false",
+      "(A) is false but (R) is true"
+    ],
+    "options_ta": [
+      "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
+      "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
+      "(A) சரி, ஆனால் (R) தவறு",
+      "(A) தவறு, ஆனால் (R) சரி"
+    ],
+    "correct_answer": "C",
+    "explanation": {
+      "en": "Explanation for Assertion and Reason regarding Supreme Court Concept 23. Correct Option is (C).",
+      "ta": "உச்ச நீதிமன்றக் கருத்து 23 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (C)."
+    },
+    "explanation_en": "Explanation for Assertion and Reason regarding Supreme Court Concept 23. Correct Option is (C).",
+    "explanation_ta": "உச்ச நீதிமன்றக் கருத்து 23 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (C).",
+    "why_not_others": {
+      "A": {
+        "en": "❌ Both A and R are true but R is not correct explanation.",
+        "ta": "❌ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கம் அல்ல."
+      },
+      "B": {
+        "en": "❌ Both A and R are true and R is correct explanation.",
+        "ta": "❌ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கம்."
+      },
+      "C": {
+        "en": "✅ A is true but R is false.",
+        "ta": "✅ A சரி, ஆனால் R தவறு."
+      },
+      "D": {
+        "en": "❌ A is false but R is true.",
+        "ta": "❌ A தவறு, ஆனால் R சரி."
+      }
+    },
+    "trap_point": {
+      "en": "Trap point regarding Assertion and Reason for SC Concept 23.",
+      "ta": "கருத்து 23 பற்றிய கூற்று மற்றும் காரண பொறிப் புள்ளி."
+    },
+    "tnpsc_tip": {
+      "en": "Exam tip for SC Concept 23.",
+      "ta": "தேர்வு குறிப்பு 23."
+    },
+    "high_yield_fact": {
+      "en": "High-Yield Fact: Explanation for Assertion and Reason regarding Supreme Court Concept 23. Correct Option is (C).",
+      "ta": "முக்கியக் குறிப்பு: உச்ச நீதிமன்றக் கருத்து 23 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (C)."
+    },
+    "source_reference": [
+      "Supreme Court Notes Part 1"
+    ],
+    "answer": "c",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "Supreme Court of India"
+    ],
+    "revision_fact": "Explanation for Assertion and Reason regarding Supreme Court Concept 23. Correct Option is (C)."
+  },
+  {
+    "id": "POLITY_SC_REAS_024",
+    "subject": "Polity",
+    "topic": "Supreme Court of India",
+    "difficulty": "Hard",
+    "question_type": "Reasoning",
+    "question": {
+      "en": "Assertion (A): The Supreme Court exercises pivotal constitutional authority regarding Core Concept 24.\nReason (R): Article 128 provides the specific constitutional framework governing judicial functioning and powers.",
+      "ta": "கூற்று (A): முக்கியக் கருத்து 24 தொடர்பாக உச்ச நீதிமன்றம் முக்கிய அரசியலமைப்பு அதிகாரத்தைப் பயன்படுத்துகிறது.\nகாரணம் (R): உறுப்பு 128 நீதித்துறை செயல்பாடு மற்றும் அதிகாரங்களை நிர்வகிக்கும் குறிப்பிட்ட அரசியலமைப்பு அமைப்பை வழங்குகிறது."
+    },
+    "question_en": "Assertion (A): The Supreme Court exercises pivotal constitutional authority regarding Core Concept 24.\nReason (R): Article 128 provides the specific constitutional framework governing judicial functioning and powers.",
+    "question_ta": "கூற்று (A): முக்கியக் கருத்து 24 தொடர்பாக உச்ச நீதிமன்றம் முக்கிய அரசியலமைப்பு அதிகாரத்தைப் பயன்படுத்துகிறது.\nகாரணம் (R): உறுப்பு 128 நீதித்துறை செயல்பாடு மற்றும் அதிகாரங்களை நிர்வகிக்கும் குறிப்பிட்ட அரசியலமைப்பு அமைப்பை வழங்குகிறது.",
+    "options": [
+      {
+        "id": "A",
+        "en": "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல"
+      },
+      {
+        "id": "B",
+        "en": "(A) is false but (R) is true",
+        "ta": "(A) தவறு, ஆனால் (R) சரி"
+      },
+      {
+        "id": "C",
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
+      },
+      {
+        "id": "D",
+        "en": "(A) is true but (R) is false",
+        "ta": "(A) சரி, ஆனால் (R) தவறு"
+      }
+    ],
+    "options_en": [
+      "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
+      "(A) is false but (R) is true",
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "(A) is true but (R) is false"
+    ],
+    "options_ta": [
+      "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
+      "(A) தவறு, ஆனால் (R) சரி",
+      "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
+      "(A) சரி, ஆனால் (R) தவறு"
+    ],
+    "correct_answer": "B",
+    "explanation": {
+      "en": "Explanation for Assertion and Reason regarding Supreme Court Concept 24. Correct Option is (D).",
+      "ta": "உச்ச நீதிமன்றக் கருத்து 24 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (D)."
+    },
+    "explanation_en": "Explanation for Assertion and Reason regarding Supreme Court Concept 24. Correct Option is (D).",
+    "explanation_ta": "உச்ச நீதிமன்றக் கருத்து 24 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (D).",
+    "why_not_others": {
+      "A": {
+        "en": "❌ Both A and R are true but R is not correct explanation.",
+        "ta": "❌ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கம் அல்ல."
+      },
+      "B": {
+        "en": "✅ A is false but R is true.",
+        "ta": "✅ A தவறு, ஆனால் R சரி."
+      },
+      "C": {
+        "en": "❌ Both A and R are true and R is correct explanation.",
+        "ta": "❌ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கம்."
+      },
+      "D": {
+        "en": "❌ A is true but R is false.",
+        "ta": "❌ A சரி, ஆனால் R தவறு."
+      }
+    },
+    "trap_point": {
+      "en": "Trap point regarding Assertion and Reason for SC Concept 24.",
+      "ta": "கருத்து 24 பற்றிய கூற்று மற்றும் காரண பொறிப் புள்ளி."
+    },
+    "tnpsc_tip": {
+      "en": "Exam tip for SC Concept 24.",
+      "ta": "தேர்வு குறிப்பு 24."
+    },
+    "high_yield_fact": {
+      "en": "High-Yield Fact: Explanation for Assertion and Reason regarding Supreme Court Concept 24. Correct Option is (D).",
+      "ta": "முக்கியக் குறிப்பு: உச்ச நீதிமன்றக் கருத்து 24 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (D)."
+    },
+    "source_reference": [
+      "Supreme Court Notes Part 3"
+    ],
+    "answer": "b",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "Supreme Court of India"
+    ],
+    "revision_fact": "Explanation for Assertion and Reason regarding Supreme Court Concept 24. Correct Option is (D)."
+  },
+  {
+    "id": "POLITY_SC_REAS_025",
+    "subject": "Polity",
+    "topic": "Supreme Court of India",
+    "difficulty": "Hard",
+    "question_type": "Reasoning",
+    "question": {
+      "en": "Assertion (A): The Supreme Court exercises pivotal constitutional authority regarding Core Concept 25.\nReason (R): Article 129 provides the specific constitutional framework governing judicial functioning and powers.",
+      "ta": "கூற்று (A): முக்கியக் கருத்து 25 தொடர்பாக உச்ச நீதிமன்றம் முக்கிய அரசியலமைப்பு அதிகாரத்தைப் பயன்படுத்துகிறது.\nகாரணம் (R): உறுப்பு 129 நீதித்துறை செயல்பாடு மற்றும் அதிகாரங்களை நிர்வகிக்கும் குறிப்பிட்ட அரசியலமைப்பு அமைப்பை வழங்குகிறது."
+    },
+    "question_en": "Assertion (A): The Supreme Court exercises pivotal constitutional authority regarding Core Concept 25.\nReason (R): Article 129 provides the specific constitutional framework governing judicial functioning and powers.",
+    "question_ta": "கூற்று (A): முக்கியக் கருத்து 25 தொடர்பாக உச்ச நீதிமன்றம் முக்கிய அரசியலமைப்பு அதிகாரத்தைப் பயன்படுத்துகிறது.\nகாரணம் (R): உறுப்பு 129 நீதித்துறை செயல்பாடு மற்றும் அதிகாரங்களை நிர்வகிக்கும் குறிப்பிட்ட அரசியலமைப்பு அமைப்பை வழங்குகிறது.",
+    "options": [
+      {
+        "id": "A",
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
+      },
+      {
+        "id": "B",
+        "en": "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல"
+      },
+      {
+        "id": "C",
+        "en": "(A) is true but (R) is false",
+        "ta": "(A) சரி, ஆனால் (R) தவறு"
+      },
+      {
+        "id": "D",
+        "en": "(A) is false but (R) is true",
+        "ta": "(A) தவறு, ஆனால் (R) சரி"
+      }
+    ],
+    "options_en": [
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
+      "(A) is true but (R) is false",
+      "(A) is false but (R) is true"
+    ],
+    "options_ta": [
+      "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
+      "(A) மற்றும் (R) ஆகிய இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
+      "(A) சரி, ஆனால் (R) தவறு",
+      "(A) தவறு, ஆனால் (R) சரி"
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "en": "Explanation for Assertion and Reason regarding Supreme Court Concept 25. Correct Option is (A).",
+      "ta": "உச்ச நீதிமன்றக் கருத்து 25 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (A)."
+    },
+    "explanation_en": "Explanation for Assertion and Reason regarding Supreme Court Concept 25. Correct Option is (A).",
+    "explanation_ta": "உச்ச நீதிமன்றக் கருத்து 25 பற்றிய கூற்று மற்றும் காரணத்திற்கான விளக்கம். சரியான விருப்பம் (A).",
+    "why_not_others": {
+      "A": {
+        "en": "✅ Both A and R are true and R is correct explanation.",
+        "ta": "✅ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கம்."
+      },
+      "B": {
+        "en": "❌ Both A and R are true but R is not correct explanation.",
+        "ta": "❌ A மற்றும் R இரண்டும் சரி, R சரியான விளக்கம் அல்ல."
+      },
+      "C": {
+        "en": "❌ A is true but R is false.",
+        "ta": "❌ A சரி, ஆனால் R தவறு."
+      },
+      "D": {
+        "en": "❌ A is false but R is true.",
+        "ta": "❌ A தவறு, ஆனால் R சரி."
+      }
+    },
+    "trap_point": {
       "en": "Trap point regarding Assertion and Reason for SC Concept 25.",
       "ta": "கருத்து 25 பற்றிய கூற்று மற்றும் காரண பொறிப் புள்ளி."
     },
@@ -2172,6 +2388,15 @@
     },
     "source_reference": [
       "Supreme Court Notes Part 1"
-    ]
+    ],
+    "answer": "a",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "Supreme Court of India"
+    ],
+    "revision_fact": "Explanation for Assertion and Reason regarding Supreme Court Concept 25. Correct Option is (A)."
   }
 ]

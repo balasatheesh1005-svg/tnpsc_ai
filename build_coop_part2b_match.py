@@ -1,0 +1,811 @@
+# -*- coding: utf-8 -*-
+"""
+Co-operative Societies - Part 2B: Match the Following MCQs (25 Questions: CS_MF_001 to CS_MF_025)
+TNPSC Nova AI Content Engine
+"""
+import os
+import json
+from collections import Counter
+from tools.nova_content_engine.answer_randomizer import randomize_and_balance_dataset
+from tools.nova_content_engine.validator import ContentValidator
+from cooperative_societies_mcq_helper import make_coop_q
+
+
+def get_match_raw_questions():
+    return [
+        # CS_MF_001: Constitutional Articles Part IX-B (First half)
+        {
+            "subtopic": "Constitutional Provisions - Part IX-B",
+            "stem_en": "Match List-I (Article of the Constitution) with List-II (Subject Matter) and select the correct answer using the codes given below:\nList-I:\nA. Article 243ZH\nB. Article 243ZJ\nC. Article 243ZK\nD. Article 243ZL\n\nList-II:\n1. Number and term of members of board and its office bearers\n2. Definitions regarding co-operative societies\n3. Supersession and suspension of board and interim management\n4. Election of members of board",
+            "stem_ta": "பட்டியல்-I (அரசியலமைப்பு உறுப்பு)-ஐ பட்டியல்-II (பொருள்)-உடன் பொருத்தி, கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\nA. உறுப்பு 243ZH\nB. உறுப்பு 243ZJ\nC. உறுப்பு 243ZK\nD. உறுப்பு 243ZL\n\nபட்டியல்-II:\n1. வாரிய உறுப்பினர்களின் எண்ணிக்கை மற்றும் பதவிக்காலம்\n2. கூட்டுறவு சங்கங்கள் தொடர்பான வரையறைகள்\n3. வாரியத்தைக் கலைத்தல், இடைநீக்கம் செய்தல் மற்றும் இடைக்கால மேலாண்மை\n4. வாரிய உறுப்பினர்களுக்கான தேர்தல்",
+            "options": [
+                ("A-2, B-1, C-4, D-3", "A-2, B-1, C-4, D-3"),
+                ("A-1, B-2, C-3, D-4", "A-1, B-2, C-3, D-4"),
+                ("A-2, B-4, C-1, D-3", "A-2, B-4, C-1, D-3"),
+                ("A-3, B-1, C-4, D-2", "A-3, B-1, C-4, D-2")
+            ],
+            "correct_key": "A",
+            "exp_en": "Correct matching is A-2, B-1, C-4, D-3:\n- Article 243ZH: Definitions\n- Article 243ZJ: Number and term of board members (Max 21 directors, 5-year term)\n- Article 243ZK: Election of board members\n- Article 243ZL: Supersession and suspension of board (Max 6 months/1 year).",
+            "exp_ta": "சரியான பொருத்தம் A-2, B-1, C-4, D-3:\n- உறுப்பு 243ZH: வரையறைகள்\n- உறுப்பு 243ZJ: வாரிய உறுப்பினர்களின் எண்ணிக்கை (அதிகபட்சம் 21) மற்றும் பதவிக்காலம் (5 ஆண்டுகள்)\n- உறுப்பு 243ZK: வாரிய உறுப்பினர்களுக்கான தேர்தல்\n- உறுப்பு 243ZL: வாரியக் கலைப்பு மற்றும் இடைநீக்கம் (6 மாதங்கள்/1 வருடம்).",
+            "why_a_en": "Correct matching: A-2, B-1, C-4, D-3 accurately reflects Articles 243ZH to 243ZL.",
+            "why_a_ta": "சரி. A-2, B-1, C-4, D-3 உறுப்புகள் 243ZH முதல் 243ZL வரையிலான தலைப்புகளைச் சரியாக இணைக்கிறது.",
+            "why_b_en": "Incorrect pair matching.",
+            "why_b_ta": "தவறான பொருத்தம்.",
+            "why_c_en": "Incorrect pair matching.",
+            "why_c_ta": "தவறான பொருத்தம்.",
+            "why_d_en": "Incorrect pair matching.",
+            "why_d_ta": "தவறான பொருத்தம்.",
+            "tip_en": "Remember the alphabetical sequence: ZH = Head (Definitions); ZJ = Joint Board (Number & Term); ZK = Kontest (Elections); ZL = Lockout (Supersession).",
+            "tip_ta": "நினைவுக்குறிப்பு: ZH = வரையறைகள்; ZJ = வாரிய அமைப்பு; ZK = தேர்தல்; ZL = வாரியக் கலைப்பு.",
+            "fact_en": "Part IX-B consists of 13 Articles (243ZH to 243ZT).",
+            "fact_ta": "பகுதி IX-B மொத்தம் 13 உறுப்புகளைக் (243ZH முதல் 243ZT வரை) கொண்டுள்ளது."
+        },
+
+        # CS_MF_002: Constitutional Articles Part IX-B (Second half)
+        {
+            "subtopic": "Constitutional Provisions - Part IX-B",
+            "stem_en": "Match List-I (Article of the Constitution) with List-II (Subject Matter) and select the correct answer using the codes given below:\nList-I:\nA. Article 243ZM\nB. Article 243ZN\nC. Article 243ZO\nD. Article 243ZP\n\nList-II:\n1. Convening of general body meetings\n2. Audit of accounts of co-operative societies\n3. Filing of returns\n4. Right of a member to get information",
+            "stem_ta": "பட்டியல்-I (அரசியலமைப்பு உறுப்பு)-ஐ பட்டியல்-II (பொருள்)-உடன் பொருத்தி, கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\nA. உறுப்பு 243ZM\nB. உறுப்பு 243ZN\nC. உறுப்பு 243ZO\nD. உறுப்பு 243ZP\n\nபட்டியல்-II:\n1. பொதுக்குழு கூட்டங்களைக் கூட்டுதல்\n2. கூட்டுறவு சங்கங்களின் கணக்குகளைத் தணிக்கை செய்தல்\n3. வருடாந்திர அறிக்கைகளைத் தாக்கல் செய்தல்\n4. தகவல் பெறும் உறுப்பினரின் உரிமை",
+            "options": [
+                ("A-2, B-1, C-4, D-3", "A-2, B-1, C-4, D-3"),
+                ("A-1, B-2, C-3, D-4", "A-1, B-2, C-3, D-4"),
+                ("A-2, B-3, C-4, D-1", "A-2, B-3, C-4, D-1"),
+                ("A-4, B-1, C-2, D-3", "A-4, B-1, C-2, D-3")
+            ],
+            "correct_key": "A",
+            "exp_en": "Correct matching is A-2, B-1, C-4, D-3:\n- Article 243ZM: Audit of accounts\n- Article 243ZN: Convening of general body meetings\n- Article 243ZO: Right of a member to get information\n- Article 243ZP: Filing of returns.",
+            "exp_ta": "சரியான பொருத்தம் A-2, B-1, C-4, D-3:\n- உறுப்பு 243ZM: கணக்குத் தணிக்கை\n- உறுப்பு 243ZN: பொதுக்குழுக் கூட்டம் கூட்டுதல்\n- உறுப்பு 243ZO: தகவல் பெறும் உறுப்பினரின் உரிமை\n- உறுப்பு 243ZP: வருடாந்திர அறிக்கை தாக்கல் செய்தல்.",
+            "why_a_en": "Correct. A-2, B-1, C-4, D-3 matches all four Articles correctly.",
+            "why_a_ta": "சரி. A-2, B-1, C-4, D-3 நான்கு உறுப்புகளையும் சரியாகப் பொருத்துகிறது.",
+            "why_b_en": "Incorrect matching.",
+            "why_b_ta": "தவறான பொருத்தம்.",
+            "why_c_en": "Incorrect matching.",
+            "why_c_ta": "தவறான பொருத்தம்.",
+            "why_d_en": "Incorrect matching.",
+            "why_d_ta": "தவறான பொருத்தம்.",
+            "tip_en": "M = Money check (Audit); N = National AGM (Meeting); O = Open books (Information); P = Paper returns (Filing).",
+            "tip_ta": "நினைவுக்குறிப்பு: ZM = தணிக்கை; ZN = பொதுக்குழு கூட்டம்; ZO = தகவல் உரிமை; ZP = அறிக்கை தாக்கல்.",
+            "fact_en": "Articles 243ZM, 243ZN, and 243ZP all specify a six-month timeline from the close of the financial year.",
+            "fact_ta": "உறுப்புகள் 243ZM, 243ZN மற்றும் 243ZP ஆகிய மூன்றும் நிதியாண்டு முடிந்த 6 மாத காலக்கெடுவைக் குறிப்பிடுகின்றன."
+        },
+
+        # CS_MF_003: Constitutional Articles Part IX-B (Final four)
+        {
+            "subtopic": "Constitutional Provisions - Part IX-B",
+            "stem_en": "Match List-I (Article of the Constitution) with List-II (Subject Matter) and select the correct answer using the codes given below:\nList-I:\nA. Article 243ZQ\nB. Article 243ZR\nC. Article 243ZS\nD. Article 243ZT\n\nList-II:\n1. Application to multi-state co-operative societies\n2. Offences and penalties\n3. Continuance of existing laws\n4. Application to Union territories",
+            "stem_ta": "பட்டியல்-I (அரசியலமைப்பு உறுப்பு)-ஐ பட்டியல்-II (பொருள்)-உடன் பொருத்தி, கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\nA. உறுப்பு 243ZQ\nB. உறுப்பு 243ZR\nC. உறுப்பு 243ZS\nD. உறுப்பு 243ZT\n\nபட்டியல்-II:\n1. பல மாநில கூட்டுறவு சங்கங்களுக்குப் பொருந்துதல்\n2. குற்றங்கள் மற்றும் தண்டனைகள்\n3. தற்போதுள்ள சட்டங்கள் தொடர்ந்து நீடித்தல்\n4. யூனியன் பிரதேசங்களுக்குப் பொருந்துதல்",
+            "options": [
+                ("A-2, B-1, C-4, D-3", "A-2, B-1, C-4, D-3"),
+                ("A-1, B-2, C-3, D-4", "A-1, B-2, C-3, D-4"),
+                ("A-2, B-4, C-1, D-3", "A-2, B-4, C-1, D-3"),
+                ("A-3, B-1, C-4, D-2", "A-3, B-1, C-4, D-2")
+            ],
+            "correct_key": "A",
+            "exp_en": "Correct matching is A-2, B-1, C-4, D-3:\n- Article 243ZQ: Offences and penalties\n- Article 243ZR: Application to multi-state co-operative societies\n- Article 243ZS: Application to Union territories\n- Article 243ZT: Continuance of existing laws (1-year transitional clause).",
+            "exp_ta": "சரியான பொருத்தம் A-2, B-1, C-4, D-3:\n- உறுப்பு 243ZQ: குற்றங்கள் மற்றும் தண்டனைகள்\n- உறுப்பு 243ZR: பல மாநில கூட்டுறவு சங்கங்களுக்குப் பொருந்துதல்\n- உறுப்பு 243ZS: யூனியன் பிரதேசங்களுக்குப் பொருந்துதல்\n- உறுப்பு 243ZT: தற்போதைய சட்டங்கள் நீடித்தல் (1 ஆண்டு இடைக்கால விதி).",
+            "why_a_en": "Correct. A-2, B-1, C-4, D-3 matches Articles 243ZQ to 243ZT accurately.",
+            "why_a_ta": "சரி. A-2, B-1, C-4, D-3 உறுப்புகள் 243ZQ முதல் 243ZT வரையிலானவற்றைச் சரியாகப் பொருத்துகிறது.",
+            "why_b_en": "Incorrect matching.",
+            "why_b_ta": "தவறான பொருத்தம்.",
+            "why_c_en": "Incorrect matching.",
+            "why_c_ta": "தவறான பொருத்தம்.",
+            "why_d_en": "Incorrect matching.",
+            "why_d_ta": "தவறான பொருத்தம்.",
+            "tip_en": "ZQ = Penalties; ZR = Republic/Multi-State; ZS = Small territories (UTs); ZT = Transitional laws.",
+            "tip_ta": "நினைவுக்குறிப்பு: ZQ = குற்றங்கள்; ZR = பல மாநிலம்; ZS = யூனியன் பிரதேசங்கள்; ZT = இடைக்காலச் சட்டங்கள்.",
+            "fact_en": "Article 243ZT gave a 1-year transitional period which expired on 15 February 2013.",
+            "fact_ta": "உறுப்பு 243ZT வழங்கிய ஓராண்டு இடைக்கால அவகாசம் 2013 பிப்ரவரி 15 அன்று முடிவடைந்தது."
+        },
+
+        # CS_MF_004: Committees on Cooperatives
+        {
+            "subtopic": "Committees on Cooperatives",
+            "stem_en": "Match List-I (Cooperative Committee) with List-II (Key Recommendation / Focus Area) and select the correct answer using the codes given below:\nList-I:\nA. All India Rural Credit Survey Committee (1954)\nB. Ram Niwas Mirdha Committee (1965)\nC. Choudhary Brahm Perkash Committee (1991)\nD. Prof. A. Vaidyanathan Committee (2004)\n\nList-II:\n1. Model Co-operatives Act to ensure member autonomy\n2. State partnership at all levels and establishment of SBI\n3. Financial revival package for Short-Term Rural Cooperative Credit\n4. Elimination of bogus societies and vested interests",
+            "stem_ta": "பட்டியல்-I (கூட்டுறவுக் குழு)-ஐ பட்டியல்-II (முக்கியப் பரிந்துரை/கவனம்)-உடன் பொருத்தி, கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\nA. அகில இந்திய கிராமப்புற கடன் ஆய்வுக் குழு (1954)\nB. ராம் நிவாஸ் மிர்தா குழு (1965)\nC. சவுத்ரி பிரம்ம பிரகாஷ் குழு (1991)\nD. பேராசிரியர் ஏ. வைத்தியநாதன் குழு (2004)\n\nபட்டியல்-II:\n1. தன்னாட்சியை உறுதி செய்வதற்கான மாதிரி கூட்டுறவு சங்கங்கள் சட்டம்\n2. அனைத்து மட்டங்களிலும் அரசுப் பங்களிப்பு மற்றும் SBI உருவாக்கம்\n3. குறுகிய கால கிராமப்புற கூட்டுறவு கடன் அமைப்பிற்கான மறுமலர்ச்சி நிதித் தொகுப்பு\n4. போலி சங்கங்கள் மற்றும் சுயநல சக்திகளை ஒழித்தல்",
+            "options": [
+                ("A-2, B-4, C-1, D-3", "A-2, B-4, C-1, D-3"),
+                ("A-1, B-2, C-3, D-4", "A-1, B-2, C-3, D-4"),
+                ("A-2, B-1, C-4, D-3", "A-2, B-1, C-4, D-3"),
+                ("A-3, B-4, C-1, D-2", "A-3, B-4, C-1, D-2")
+            ],
+            "correct_key": "A",
+            "exp_en": "Correct matching is A-2, B-4, C-1, D-3:\n- Gorwala Committee (1954): State partnership at all levels and creation of State Bank of India\n- Mirdha Committee (1965): Eliminating bogus societies and vested interests\n- Brahm Perkash Committee (1991): Drafting the Model Co-operatives Act\n- Vaidyanathan Committee (2004): Financial revival package for STCCS.",
+            "exp_ta": "சரியான பொருத்தம் A-2, B-4, C-1, D-3:\n- கோர்வாலா குழு (1954): அரசுப் பங்களிப்பு மற்றும் SBI உருவாக்கம்\n- மிர்தா குழு (1965): போலி சங்கங்களை ஒழித்தல்\n- பிரம்ம பிரகாஷ் குழு (1991): மாதிரி கூட்டுறவு சட்டம் வரைதல்\n- வைத்தியநாதன் குழு (2004): STCCS மறுமலர்ச்சி நிதி தொகுப்பு.",
+            "why_a_en": "Correct. A-2, B-4, C-1, D-3 matches each committee with its definitive historical contribution.",
+            "why_a_ta": "சரி. A-2, B-4, C-1, D-3 ஒவ்வொரு குழுவையும் அதன் வரலாற்றுப் பங்களிப்புடன் சரியாக இணைக்கிறது.",
+            "why_b_en": "Incorrect matching.",
+            "why_b_ta": "தவறான பொருத்தம்.",
+            "why_c_en": "Incorrect matching.",
+            "why_c_ta": "தவறான பொருத்தம்.",
+            "why_d_en": "Incorrect matching.",
+            "why_d_ta": "தவறான பொருத்தம்.",
+            "tip_en": "Memorize: Gorwala = SBI & State Partnership; Mirdha = Bogus Societies; Brahm Perkash = Model Act; Vaidyanathan = STCCS Revival.",
+            "tip_ta": "நினைவில் கொள்க: கோர்வாலா = SBI & அரசுப் பங்கு; மிர்தா = போலி சங்கங்கள்; பிரம்ம பிரகாஷ் = மாதிரி சட்டம்; வைத்தியநாதன் = கடன் மறுமலர்ச்சி.",
+            "fact_en": "The Vaidyanathan Committee revival package exceeded ₹13,500 crore.",
+            "fact_ta": "வைத்தியநாதன் குழுவின் மறுமலர்ச்சி நிதித் தொகுப்பு ₹13,500 கோடிக்கும் அதிகமாகும்."
+        },
+
+        # CS_MF_005: Historic Legislation in Indian Cooperation
+        {
+            "subtopic": "Historical Legislation",
+            "stem_en": "Match List-I (Legislation) with List-II (Salient Feature / Historical Milestone) and select the correct answer using the codes given below:\nList-I:\nA. Co-operative Credit Societies Act, 1904\nB. Co-operative Societies Act, 1912\nC. Government of India Act, 1919\nD. Bombay Co-operative Societies Act, 1925\n\nList-II:\n1. First independent provincial legislation passed after devolution\n2. Allowed non-credit societies and central financing agencies\n3. First formal cooperative statute; covered credit societies only\n4. Made cooperation a provincial 'Transferred Subject' under Dyarchy",
+            "stem_ta": "பட்டியல்-I (சட்டம்)-ஐ பட்டியல்-II (முக்கிய அம்சம்/மைல்கல்)-உடன் பொருத்தி, கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\nA. கூட்டுறவு கடன் சங்கங்கள் சட்டம், 1904\nB. கூட்டுறவு சங்கங்கள் சட்டம், 1912\nC. இந்திய அரசுச் சட்டம், 1919\nD. பம்பாய் கூட்டுறவு சங்கங்கள் சட்டம், 1925\n\nபட்டியல்-II:\n1. அதிகாரப் பகிர்விற்குப் பின் இயற்றப்பட்ட முதல் மாகாண கூட்டுறவு சட்டம்\n2. கடன் அல்லாத சங்கங்கள் மற்றும் மத்திய நிதி நிறுவனங்களை அனுமதித்தது\n3. முதல் கூட்டுறவு சட்டம்; கடன் சங்கங்களை மட்டுமே அனுமதித்தது\n4. இரட்டை ஆட்சியில் கூட்டுறவை மாகாண 'மாற்றப்பட்ட துறையாக' மாற்றியது",
+            "options": [
+                ("A-3, B-2, C-4, D-1", "A-3, B-2, C-4, D-1"),
+                ("A-2, B-3, C-4, D-1", "A-2, B-3, C-4, D-1"),
+                ("A-3, B-2, C-1, D-4", "A-3, B-2, C-1, D-4"),
+                ("A-1, B-4, C-2, D-3", "A-1, B-4, C-2, D-3")
+            ],
+            "correct_key": "A",
+            "exp_en": "Correct matching is A-3, B-2, C-4, D-1:\n- 1904 Act: First statute, covered credit societies only\n- 1912 Act: Permitted non-credit societies and central banks/unions\n- 1919 Act: Transferred subject under provincial dyarchy\n- 1925 Bombay Act: First independent provincial Act.",
+            "exp_ta": "சரியான பொருத்தம் A-3, B-2, C-4, D-1:\n- 1904 சட்டம்: முதல் சட்டம், கடன் சங்கங்களை மட்டுமே அனுமதித்தது\n- 1912 சட்டம்: கடன் அல்லாத சங்கங்கள் மற்றும் மத்திய வங்கிகளை அனுமதித்தது\n- 1919 சட்டம்: இரட்டை ஆட்சியில் மாகாண மாற்றப்பட்ட துறை\n- 1925 பம்பாய் சட்டம்: முதல் மாகாண கூட்டுறவு சட்டம்.",
+            "why_a_en": "Correct. A-3, B-2, C-4, D-1 accurately connects the historical legal sequence.",
+            "why_a_ta": "சரி. A-3, B-2, C-4, D-1 சட்ட வரலாற்று வரிசையைத் துல்லியமாக இணைக்கிறது.",
+            "why_b_en": "Incorrect matching.",
+            "why_b_ta": "தவறான பொருத்தம்.",
+            "why_c_en": "Incorrect matching.",
+            "why_c_ta": "தவறான பொருத்தம்.",
+            "why_d_en": "Incorrect matching.",
+            "why_d_ta": "தவறான பொருத்தம்.",
+            "tip_en": "Evolution: 1904 (Credit only) → 1912 (Non-credit + Central banks) → 1919 (Provincial Transferred) → 1925 (Bombay Act).",
+            "tip_ta": "பரிணாமம்: 1904 (கடன் மட்டும்) → 1912 (கடன் அல்லாதவை) → 1919 (மாற்றப்பட்ட துறை) → 1925 (பம்பாய் சட்டம்).",
+            "fact_en": "Madras Presidency followed Bombay by passing its own Act in 1932.",
+            "fact_ta": "பம்பாயைத் தொடர்ந்து மெட்ராஸ் மாகாணம் 1932-ல் சொந்த சட்டத்தை இயற்றியது."
+        }
+    ]
+
+
+def get_match_questions_batch2():
+    return [
+        # CS_MF_006: Pioneering Cooperative Personalities
+        {
+            "subtopic": "Pioneering Personalities",
+            "stem_en": "Match List-I (Pioneering Leader) with List-II (Role / Title in Cooperative Movement) and select the correct answer using the codes given below:\nList-I:\nA. Sir Frederick Nicholson\nB. Vaikunth Lallubhai Mehta\nC. Dr. Verghese Kurien\nD. Vitthalrao Vikhe Patil\n\nList-II:\n1. Father of the White Revolution (Operation Flood / Amul)\n2. Pioneer of Asian cooperative sugar factories (Pravaranagar, 1950)\n3. Father of the Indian Co-operative Movement ('Find Raiffeisen')\n4. Doyen of Indian Cooperation and First Chairman of KVIC",
+            "stem_ta": "பட்டியல்-I (முன்னோடித் தலைவர்)-ஐ பட்டியல்-II (கூட்டுறவு இயக்கத்தில் பங்கு/பட்டம்)-உடன் பொருத்தி, கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\nA. சர் பிரடெரிக் நிக்கல்சன்\nB. வைகுந்த் லல்லுபாய் மேத்தா\nC. டாக்டர் வர்கீஸ் குரியன்\nD. வித்தலராவ் விகே பாட்டீல்\n\nபட்டியல்-II:\n1. வெண்மைப் புரட்சியின் தந்தை (ஆபரேஷன் பிளட் / அமுல்)\n2. ஆசியாவின் முதல் கூட்டுறவு சர்க்கரை ஆலை முன்னோடி (பிரவரநகர், 1950)\n3. இந்திய கூட்டுறவு இயக்கத்தின் தந்தை ('ரைஃபெய்சனைக் கண்டறியுங்கள்')\n4. இந்திய கூட்டுறவின் முதன்மை வழிகாட்டி மற்றும் KVIC-ன் முதல் தலைவர்",
+            "options": [
+                ("A-3, B-4, C-1, D-2", "A-3, B-4, C-1, D-2"),
+                ("A-4, B-3, C-1, D-2", "A-4, B-3, C-1, D-2"),
+                ("A-3, B-1, C-4, D-2", "A-3, B-1, C-4, D-2"),
+                ("A-2, B-4, C-1, D-3", "A-2, B-4, C-1, D-3")
+            ],
+            "correct_key": "A",
+            "exp_en": "Correct matching is A-3, B-4, C-1, D-2:\n- Nicholson: Father of Indian Co-operative Movement ('Find Raiffeisen', 1895)\n- Vaikunth Mehta: Doyen of Indian Cooperation and first KVIC Chairman\n- Verghese Kurien: Father of White Revolution (Amul / Operation Flood)\n- Vitthalrao Vikhe Patil: Pioneer of Asian cooperative sugar factory at Pravaranagar (1950).",
+            "exp_ta": "சரியான பொருத்தம் A-3, B-4, C-1, D-2:\n- நிக்கல்சன்: இந்திய கூட்டுறவு இயக்கத்தின் தந்தை (1895 அறிக்கை)\n- வைகுந்த் மேத்தா: இந்திய கூட்டுறவின் முதன்மை வழிகாட்டி & KVIC முதல் தலைவர்\n- வர்கீஸ் குரியன்: வெண்மைப் புரட்சியின் தந்தை (அமுல் / ஆபரேஷன் பிளட்)\n- வித்தலராவ் விகே பாட்டீல்: பிரவரநகர் கூட்டுறவு சர்க்கரை ஆலை முன்னோடி (1950).",
+            "why_a_en": "Correct. A-3, B-4, C-1, D-2 matches each pioneer with their renowned title/achievement.",
+            "why_a_ta": "சரி. A-3, B-4, C-1, D-2 ஒவ்வொரு தலைவரையும் அவரது சாதனைகளுடன் சரியாக இணைக்கிறது.",
+            "why_b_en": "Incorrect matching.",
+            "why_b_ta": "தவறான பொருத்தம்.",
+            "why_c_en": "Incorrect matching.",
+            "why_c_ta": "தவறான பொருத்தம்.",
+            "why_d_en": "Incorrect matching.",
+            "why_d_ta": "தவறான பொருத்தம்.",
+            "tip_en": "Nicholson = 1904 Father; Mehta = Cooperative Philosophy; Kurien = Milk; Vikhe Patil = Sugar.",
+            "tip_ta": "நினைவில் கொள்க: நிக்கல்சன் = தந்தை; மேத்தா = கூட்டுறவு தத்துவம்; குரியன் = பால்; விகே பாட்டீல் = சர்க்கரை.",
+            "fact_en": "Tribhuvandas Patel was the founding Chairman of Kaira Union (Amul) who recruited Dr. Kurien.",
+            "fact_ta": "அமுலின் நிறுவனத் தலைவரான திருபுவன்தாஸ் படேலே டாக்டர் குரியனைப் பணிக்கு அமர்த்தினார்."
+        },
+
+        # CS_MF_007: International Co-operative Alliance (ICA) Principles
+        {
+            "subtopic": "ICA Cooperative Principles",
+            "stem_en": "Match List-I (ICA Principle Number) with List-II (Statement of Principle) and select the correct answer using the codes given below:\nList-I:\nA. Principle 1\nB. Principle 2\nC. Principle 5\nD. Principle 7\n\nList-II:\n1. Education, Training, and Information\n2. Voluntary and Open Membership\n3. Concern for Community\n4. Democratic Member Control ('One Member, One Vote')",
+            "stem_ta": "பட்டியல்-I (ICA கோட்பாடு எண்)-ஐ பட்டியல்-II (கோட்பாட்டு விவரம்)-உடன் பொருத்தி, கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\nA. கோட்பாடு 1\nB. கோட்பாடு 2\nC. கோட்பாடு 5\nD. கோட்பாடு 7\n\nபட்டியல்-II:\n1. கல்வி, பயிற்சி மற்றும் தகவல்\n2. தன்னார்வ மற்றும் வெளிப்படையான உறுப்பினர் சேர்க்கை\n3. சமுதாயத்திற்கான அக்கறை\n4. உறுப்பினர்களின் ஜனநாயகக் கட்டுப்பாடு ('ஒரு உறுப்பினர், ஒரு வாக்கு')",
+            "options": [
+                ("A-2, B-4, C-1, D-3", "A-2, B-4, C-1, D-3"),
+                ("A-1, B-2, C-3, D-4", "A-1, B-2, C-3, D-4"),
+                ("A-2, B-1, C-4, D-3", "A-2, B-1, C-4, D-3"),
+                ("A-4, B-2, C-1, D-3", "A-4, B-2, C-1, D-3")
+            ],
+            "correct_key": "A",
+            "exp_en": "Correct matching is A-2, B-4, C-1, D-3:\n- Principle 1: Voluntary and Open Membership\n- Principle 2: Democratic Member Control\n- Principle 5: Education, Training, and Information\n- Principle 7: Concern for Community.",
+            "exp_ta": "சரியான பொருத்தம் A-2, B-4, C-1, D-3:\n- கோட்பாடு 1: தன்னார்வ மற்றும் வெளிப்படையான உறுப்பினர் சேர்க்கை\n- கோட்பாடு 2: உறுப்பினர்களின் ஜனநாயகக் கட்டுப்பாடு\n- கோட்பாடு 5: கல்வி, பயிற்சி மற்றும் தகவல்\n- கோட்பாடு 7: சமுதாயத்திற்கான அக்கறை.",
+            "why_a_en": "Correct. A-2, B-4, C-1, D-3 accurately pairs ICA principles as adopted at Manchester in 1995.",
+            "why_a_ta": "சரி. A-2, B-4, C-1, D-3 1995 மான்செஸ்டர் ICA கோட்பாடுகளின் வரிசையைத் துல்லியமாக இணைக்கிறது.",
+            "why_b_en": "Incorrect matching.",
+            "why_b_ta": "தவறான பொருத்தம்.",
+            "why_c_en": "Incorrect matching.",
+            "why_c_ta": "தவறான பொருத்தம்.",
+            "why_d_en": "Incorrect matching.",
+            "why_d_ta": "தவறான பொருத்தம்.",
+            "tip_en": "7 ICA Principles: 1. Voluntary Membership; 2. Democratic Control; 3. Economic Participation; 4. Autonomy; 5. Education; 6. Cooperation among Cooperatives; 7. Concern for Community.",
+            "tip_ta": "7 கோட்பாடுகள்: 1. தன்னார்வ சேர்க்கை; 2. ஜனநாயக கட்டுப்பாடு; 3. பொருளாதார பங்களிப்பு; 4. தன்னாட்சி; 5. கல்வி; 6. கூட்டுறவுகளுக்கு இடையே கூட்டுறவு; 7. சமுதாய அக்கறை.",
+            "fact_en": "These principles were formally adopted by the ICA General Assembly in Manchester in September 1995.",
+            "fact_ta": "செப்டம்பர் 1995-ல் மான்செஸ்டரில் நடைபெற்ற பொதுக்குழுவில் இக்கோட்பாடுகள் ஏற்றுக்கொள்ளப்பட்டன."
+        },
+
+        # CS_MF_008: Tamil Nadu Cooperative Institutions
+        {
+            "subtopic": "Tamil Nadu Cooperative Institutions",
+            "stem_en": "Match List-I (Tamil Nadu Cooperative Organization) with List-II (Specialized Sector / Domain) and select the correct answer using the codes given below:\nList-I:\nA. TNSCSEC\nB. Co-optex\nC. TCMPF (Aavin)\nD. TUCS\n\nList-II:\n1. Dairy farming, milk procurement and processing\n2. Handloom weaving, textile procurement and marketing\n3. Consumer stores, urban retail and pioneering fair price shops\n4. Conducting and superintending elections to cooperative societies",
+            "stem_ta": "பட்டியல்-I (தமிழ்நாடு கூட்டுறவு அமைப்பு)-ஐ பட்டியல்-II (துறை/பணி)-உடன் பொருத்தி, கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\nA. TNSCSEC\nB. கோ-ஆப்லெக்ஸ்\nC. TCMPF (ஆவின்)\nD. TUCS\n\nபட்டியல்-II:\n1. பால்வளம், பால் கொள்முதல் மற்றும் பதப்படுத்துதல்\n2. கைத்தறி நெசவு, துணிகள் கொள்முதல் மற்றும் விற்பனை\n3. நுகர்வோர் பண்டகசாலை மற்றும் முன்னோடி நியாயவிலைக் கடைகள்\n4. கூட்டுறவு சங்கங்களுக்கான தேர்தலை நடத்துதல் மற்றும் மேற்பார்வையிடுதல்",
+            "options": [
+                ("A-4, B-2, C-1, D-3", "A-4, B-2, C-1, D-3"),
+                ("A-2, B-4, C-1, D-3", "A-2, B-4, C-1, D-3"),
+                ("A-4, B-1, C-2, D-3", "A-4, B-1, C-2, D-3"),
+                ("A-3, B-2, C-1, D-4", "A-3, B-2, C-1, D-4")
+            ],
+            "correct_key": "A",
+            "exp_en": "Correct matching is A-4, B-2, C-1, D-3:\n- TNSCSEC: Elections to cooperative societies in Tamil Nadu\n- Co-optex: Handloom weaving apex federation (1935)\n- Aavin (TCMPF): Apex dairy federation (1972)\n- TUCS: Oldest consumer cooperative society in India (1904).",
+            "exp_ta": "சரியான பொருத்தம் A-4, B-2, C-1, D-3:\n- TNSCSEC: தமிழக கூட்டுறவு சங்கங்களின் தேர்தல் ஆணையம்\n- கோ-ஆப்லெக்ஸ்: கைத்தறி நெசவாளர் உச்ச கூட்டமைப்பு (1935)\n- ஆவின்: பால் உற்பத்தியாளர் உச்ச கூட்டமைப்பு (1972)\n- TUCS: இந்தியாவின் முதல் நுகர்வோர் கூட்டுறவு பண்டகசாலை (1904).",
+            "why_a_en": "Correct. A-4, B-2, C-1, D-3 matches each Tamil Nadu cooperative institution accurately.",
+            "why_a_ta": "சரி. A-4, B-2, C-1, D-3 தமிழக கூட்டுறவு நிறுவனங்களை அவற்றின் பணிகளுடன் சரியாக இணைக்கிறது.",
+            "why_b_en": "Incorrect matching.",
+            "why_b_ta": "தவறான பொருத்தம்.",
+            "why_c_en": "Incorrect matching.",
+            "why_c_ta": "தவறான பொருத்தம்.",
+            "why_d_en": "Incorrect matching.",
+            "why_d_ta": "தவறான பொருத்தம்.",
+            "tip_en": "Key TN Apex Bodies: TNSCSEC (Elections), Co-optex (Handlooms), Aavin (Dairy), TUCS (Consumer).",
+            "tip_ta": "முக்கிய தமிழக அமைப்புகள்: TNSCSEC (தேர்தல்), கோ-ஆப்லெக்ஸ் (கைத்தறி), ஆவின் (பால்), TUCS (நுகர்வோர்).",
+            "fact_en": "All these apex institutions are headquartered in Chennai, Tamil Nadu.",
+            "fact_ta": "இனைத்து முதன்மை அமைப்புகளின் தலைமையகங்களும் சென்னையில் அமைந்துள்ளன."
+        },
+
+        # CS_MF_009: Tamil Nadu Co-operative Societies Act 1983 Sections
+        {
+            "subtopic": "Tamil Nadu Act 1983 Statutory Sections",
+            "stem_en": "Match List-I (Section of Tamil Nadu Co-operative Societies Act, 1983) with List-II (Statutory Power) and select the correct answer using the codes given below:\nList-I:\nA. Section 81\nB. Section 87\nC. Section 88\nD. Section 90\n\nList-II:\n1. Supersession of board for default or mismanagement\n2. Statutory Inquiry into affairs of a registered society\n3. Settlement of disputes by arbitration\n4. Surcharge proceedings for recovery of misappropriated funds",
+            "stem_ta": "பட்டியல்-I (தமிழ்நாடு கூட்டுறவு சங்கங்கள் சட்டம் 1983-ன் பிரிவு)-ஐ பட்டியல்-II (சட்டப்பூர்வ அதிகாரம்)-உடன் பொருத்தி, கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\nA. பிரிவு 81\nB. பிரிவு 87\nC. பிரிவு 88\nD. பிரிவு 90\n\nபட்டியல்-II:\n1. தவறுகள் அல்லது முறைகேடுகளுக்காக வாரியத்தைக் கலைத்தல்\n2. பதிவு செய்யப்பட்ட சங்கத்தின் விவகாரங்கள் மீது சட்டப்பூர்வ விசாரணை\n3. நடுவர் தீர்ப்பாயம் (Arbitration) மூலம் தகராறுகளைத் தீர்த்தல்\n4. நிதி இழப்புகளை வசூலிப்பதற்கான இழப்பீட்டு (Surcharge) நடவடிக்கைகள்",
+            "options": [
+                ("A-2, B-4, C-1, D-3", "A-2, B-4, C-1, D-3"),
+                ("A-1, B-4, C-2, D-3", "A-1, B-4, C-2, D-3"),
+                ("A-2, B-1, C-4, D-3", "A-2, B-1, C-4, D-3"),
+                ("A-4, B-2, C-1, D-3", "A-4, B-2, C-1, D-3")
+            ],
+            "correct_key": "A",
+            "exp_en": "Correct matching is A-2, B-4, C-1, D-3:\n- Section 81: Statutory Inquiry ordered by Registrar\n- Section 87: Surcharge proceedings to recover losses caused to the society\n- Section 88: Supersession of the board\n- Section 90: Arbitration of disputes touching the business of the society.",
+            "exp_ta": "சரியான பொருத்தம் A-2, B-4, C-1, D-3:\n- பிரிவு 81: பதிவாளர் உத்தரவிடும் சட்டப்பூர்வ விசாரணை\n- பிரிவு 87: சங்கத்திற்கு ஏற்பட்ட நிதி இழப்பை வசூலிக்கும் இழப்பீட்டு நடவடிக்கை\n- பிரிவு 88: வாரியத்தைக் கலைத்தல்\n- பிரிவு 90: நடுவர் தீர்ப்பு மூலம் தகராறுகளைத் தீர்த்தல்.",
+            "why_a_en": "Correct. A-2, B-4, C-1, D-3 accurately matches the key regulatory sections of the 1983 Act.",
+            "why_a_ta": "சரி. A-2, B-4, C-1, D-3 1983-ஆம் ஆண்டு சட்டத்தின் முக்கிய ஒழுங்குமுறைப் பிரிவுகளைச் சரியாக இணைக்கிறது.",
+            "why_b_en": "Incorrect matching.",
+            "why_b_ta": "தவறான பொருத்தம்.",
+            "why_c_en": "Incorrect matching.",
+            "why_c_ta": "தவறான பொருத்தம்.",
+            "why_d_en": "Incorrect matching.",
+            "why_d_ta": "தவறான பொருத்தம்.",
+            "tip_en": "Section 81 (Inquiry) → Section 87 (Surcharge) → Section 88 (Supersession) → Section 90 (Arbitration).",
+            "tip_ta": "பிரிவு 81 (விசாரணை) → பிரிவு 87 (இழப்பீடு) → பிரிவு 88 (கலைப்பு) → பிரிவு 90 (நடுவர் தீர்ப்பு).",
+            "fact_en": "Orders under Sections 87 and 90 are appealable before the Co-operative Tribunal under Section 152.",
+            "fact_ta": "பிரிவுகள் 87 மற்றும் 90-ன் கீழ் பிறப்பிக்கப்படும் உத்தரவுகளுக்கு எதிராகப் பிரிவு 152-ன் கீழ் மேல்முறையீடு செய்யலாம்."
+        },
+
+        # CS_MF_010: National Cooperative Federations
+        {
+            "subtopic": "National Cooperative Federations",
+            "stem_en": "Match List-I (National Federation) with List-II (Core Domain / Activity) and select the correct answer using the codes given below:\nList-I:\nA. IFFCO\nB. NAFED\nC. KRIBHCO\nD. NCDC\n\nList-II:\n1. Procurement of pulses and oilseeds under Price Support Scheme\n2. Manufacture of urea, bio-fertilizers and heavy chemical nutrients\n3. World's largest fertilizer cooperative; introduced Nano Urea\n4. Statutory financing institution for cooperative infrastructure",
+            "stem_ta": "பட்டியல்-I (தேசிய கூட்டமைப்பு)-ஐ பட்டியல்-II (முக்கியத் துறை/பணி)-உடன் பொருத்தி, கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\nA. IFFCO\nB. NAFED\nC. KRIBHCO\nD. NCDC\n\nபட்டியல்-II:\n1. விலை ஆதரவுத் திட்டத்தின் கீழ் பருப்பு மற்றும் எண்ணெய் வித்துக்களைக் கொள்முதல் செய்தல்\n2. யூரியா, உயிர் உரங்கள் மற்றும் உர ஊட்டச்சத்துக்கள் உற்பத்தி\n3. உலகின் மிகப்பெரிய உரக் கூட்டுறவு; நானோ யூரியாவை அறிமுகப்படுத்தியது\n4. கூட்டுறவு கட்டமைப்புக்கு நிதி வழங்கும் சட்டப்பூர்வ நிறுவனம்",
+            "options": [
+                ("A-3, B-1, C-2, D-4", "A-3, B-1, C-2, D-4"),
+                ("A-1, B-3, C-2, D-4", "A-1, B-3, C-2, D-4"),
+                ("A-3, B-2, C-1, D-4", "A-3, B-2, C-1, D-4"),
+                ("A-2, B-1, C-3, D-4", "A-2, B-1, C-3, D-4")
+            ],
+            "correct_key": "A",
+            "exp_en": "Correct matching is A-3, B-1, C-2, D-4:\n- IFFCO: Largest fertilizer cooperative, developer of Nano Urea\n- NAFED: Agricultural marketing and Price Support Scheme nodal agency\n- KRIBHCO: Major cooperative producer of urea and bio-fertilizers\n- NCDC: Statutory developmental financing corporation set up in 1963.",
+            "exp_ta": "சரியான பொருத்தம் A-3, B-1, C-2, D-4:\n- IFFCO: மிகப்பெரிய உரக் கூட்டுறவு, நானோ யூரியாவை உருவாக்கியது\n- NAFED: விவசாய விளைபொருள் சந்தைப்படுத்தல் மற்றும் விலை ஆதரவு முகமை\n- KRIBHCO: யூரியா மற்றும் உயிர் உர உற்பத்தியில் முன்னணி அமைப்பு\n- NCDC: கூட்டுறவு கட்டமைப்புக்கு நிதி வழங்கும் சட்டப்பூர்வ கழகம் (1963).",
+            "why_a_en": "Correct. A-3, B-1, C-2, D-4 connects each national federation with its primary mandate.",
+            "why_a_ta": "சரி. A-3, B-1, C-2, D-4 ஒவ்வொரு தேசிய கூட்டமைப்பையும் அதன் பணிகளுடன் சரியாக இணைக்கிறது.",
+            "why_b_en": "Incorrect matching.",
+            "why_b_ta": "தவறான பொருத்தம்.",
+            "why_c_en": "Incorrect matching.",
+            "why_c_ta": "தவறான பொருத்தம்.",
+            "why_d_en": "Incorrect matching.",
+            "why_d_ta": "தவறான பொருத்தம்.",
+            "tip_en": "IFFCO/KRIBHCO = Fertilizers; NAFED = Marketing & Price Support; NCDC = Cooperative Loans/Finance.",
+            "tip_ta": "இஃப்கோ/கிரிப்கோ = உரங்கள்; NAFED = விளைபொருள் சந்தை & விலை ஆதரவு; NCDC = கூட்டுறவுக் கடன் நிதி.",
+            "fact_en": "All four operate under the aegis of the Ministry of Cooperation.",
+            "fact_ta": "இந்நான்கு அமைப்புகளும் மத்திய கூட்டுறவு அமைச்சகத்தின் வழிகாட்டுதலில் இயங்குகின்றன."
+        }
+    ]
+
+
+def get_match_questions_batch3():
+    return [
+        # CS_MF_011: Three-Tier Short-Term Rural Credit Structure
+        {
+            "subtopic": "Cooperative Credit Hierarchy",
+            "stem_en": "Match List-I (Tier Level in Rural Credit) with List-II (Institution Name) and select the correct answer using the codes given below:\nList-I:\nA. Village / Grass-root tier\nB. Intermediate / District tier\nC. State Apex tier\nD. National Refinance institution\n\nList-II:\n1. NABARD\n2. District Central Co-operative Bank (DCCB)\n3. State Co-operative Bank (StCB)\n4. Primary Agricultural Credit Society (PACS)",
+            "stem_ta": "பட்டியல்-I (கிராமப்புற கடன் அடுக்கு)-ஐ பட்டியல்-II (நிறுவனத்தின் பெயர்)-உடன் பொருத்தி, கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\nA. கிராம / அடிமட்ட அடுக்கு\nB. இடைநிலை / மாவட்ட அடுக்கு\nC. மாநில உச்ச அடுக்கு\nD. தேசிய மறுநிதியளிப்பு நிறுவனம்\n\nபட்டியல்-II:\n1. நபார்டு (NABARD)\n2. மாவட்ட மத்தியக் கூட்டுறவு வங்கி (DCCB)\n3. மாநிலக் கூட்டுறவு வங்கி (StCB)\n4. தொடக்க வேளாண்மைக் கூட்டுறவுக் கடன் சங்கம் (PACS)",
+            "options": [
+                ("A-4, B-2, C-3, D-1", "A-4, B-2, C-3, D-1"),
+                ("A-2, B-4, C-3, D-1", "A-2, B-4, C-3, D-1"),
+                ("A-4, B-3, C-2, D-1", "A-4, B-3, C-2, D-1"),
+                ("A-1, B-2, C-3, D-4", "A-1, B-2, C-3, D-4")
+            ],
+            "correct_key": "A",
+            "exp_en": "Correct matching is A-4, B-2, C-3, D-1:\n- Village level: Primary Agricultural Credit Society (PACS)\n- District level: District Central Co-operative Bank (DCCB)\n- State level: State Co-operative Bank (StCB)\n- National refinance apex: NABARD.",
+            "exp_ta": "சரியான பொருத்தம் A-4, B-2, C-3, D-1:\n- கிராம அளவு: தொடக்க வேளாண் கடன் சங்கம் (PACS)\n- மாவட்ட அளவு: மாவட்ட மத்தியக் கூட்டுறவு வங்கி (DCCB)\n- மாநில அளவு: மாநிலக் கூட்டுறவு வங்கி (StCB)\n- தேசிய மறுநிதி அமைப்பு: நபார்டு வங்கி (NABARD).",
+            "why_a_en": "Correct. A-4, B-2, C-3, D-1 accurately maps the short-term cooperative credit structure.",
+            "why_a_ta": "சரி. A-4, B-2, C-3, D-1 குறுகிய கால கூட்டுறவு கடன் கட்டமைப்பைத் துல்லியமாக இணைக்கிறது.",
+            "why_b_en": "Incorrect matching.",
+            "why_b_ta": "தவறான பொருத்தம்.",
+            "why_c_en": "Incorrect matching.",
+            "why_c_ta": "தவறான பொருத்தம்.",
+            "why_d_en": "Incorrect matching.",
+            "why_d_ta": "தவறான பொருத்தம்.",
+            "tip_en": "Short-term pyramid: PACS (Village) → DCCB (District) → StCB (State) → NABARD (Apex Refinance).",
+            "tip_ta": "குறுகிய கால பிரமிடு: PACS (கிராமம்) → DCCB (மாவட்டம்) → StCB (மாநிலம்) → நபார்டு (தேசிய மறுநிதி).",
+            "fact_en": "Tamil Nadu State Apex Co-operative Bank (TNSAC Bank) is the apex cooperative bank in Tamil Nadu.",
+            "fact_ta": "தமிழ்நாடு மாநிலத் தலைமைக் கூட்டுறவு வங்கி (TNSAC Bank) தமிழ்நாட்டின் உச்ச கூட்டுறவு வங்கியாகும்."
+        },
+
+        # CS_MF_012: Three New National Cooperatives (2023)
+        {
+            "subtopic": "New Multi-State Cooperatives 2023",
+            "stem_en": "Match List-I (New National Multi-State Cooperative) with List-II (Mandated Objective) and select the correct answer using the codes given below:\nList-I:\nA. National Cooperative Exports Limited (NCEL)\nB. National Cooperative Organics Limited (NCOL)\nC. Bharatiya Beej Sahakari Samiti Limited (BBSSL)\nD. NDDB\n\nList-II:\n1. Production, testing, certification and distribution of quality certified seeds\n2. Global marketing and export promotion of surplus cooperative products\n3. Certification, laboratory testing, aggregation and marketing of organic farm produce\n4. Statutory body promoting dairy development and Anand pattern nationwide",
+            "stem_ta": "பட்டியல்-I (புதிய தேசிய பல மாநில கூட்டுறவு)-ஐ பட்டியல்-II (நோக்கம்)-உடன் பொருத்தி, கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\nA. தேசிய கூட்டுறவு ஏற்றுமதி நிறுவனம் (NCEL)\nB. தேசிய கூட்டுறவு இயற்கை நிறுவனம் (NCOL)\nC. பாரதிய பீஜ் சககாரி சமிதி (BBSSL)\nD. NDDB\n\nபட்டியல்-II:\n1. சான்றளிக்கப்பட்ட தரமான விதைகளை உற்பத்தி செய்தல், பரிசோதித்தல் மற்றும் விநியோகித்தல்\n2. கூட்டுறவு விளைபொருட்களை உலகளவில் சந்தைப்படுத்துதல் மற்றும் ஏற்றுமதி செய்தல்\n3. இயற்கை விளைபொருட்களை சான்றளித்தல், பரிசோதித்தல் மற்றும் சந்தைப்படுத்துதல்\n4. நாடு தழுவிய அளவில் பால்வள மேம்பாடு மற்றும் ஆனந்த் மாதிரியை ஊக்குவிக்கும் சட்டப்பூர்வ அமைப்பு",
+            "options": [
+                ("A-2, B-3, C-1, D-4", "A-2, B-3, C-1, D-4"),
+                ("A-3, B-2, C-1, D-4", "A-3, B-2, C-1, D-4"),
+                ("A-2, B-1, C-3, D-4", "A-2, B-1, C-3, D-4"),
+                ("A-1, B-3, C-2, D-4", "A-1, B-3, C-2, D-4")
+            ],
+            "correct_key": "A",
+            "exp_en": "Correct matching is A-2, B-3, C-1, D-4:\n- NCEL: Exports of cooperative agricultural produce\n- NCOL: Marketing of organic produce under 'Bharat Organics'\n- BBSSL: High-yielding certified seeds for farmers\n- NDDB: National Dairy Development Board set up in 1965.",
+            "exp_ta": "சரியான பொருத்தம் A-2, B-3, C-1, D-4:\n- NCEL: கூட்டுறவு ஏற்றுமதிகள்\n- NCOL: பாரத் ஆர்கானிக்ஸ் பிராண்டில் இயற்கை விவசாய சந்தைப்படுத்துதல்\n- BBSSL: சான்றளிக்கப்பட்ட தரமான விதை உற்பத்தி\n- NDDB: 1965-ல் அமைக்கப்பட்ட தேசிய பால்வள மேம்பாட்டு வாரியம்.",
+            "why_a_en": "Correct. A-2, B-3, C-1, D-4 accurately pairs the new 2023 national cooperatives.",
+            "why_a_ta": "சரி. A-2, B-3, C-1, D-4 2023-ல் அமைக்கப்பட்ட புதிய தேசிய கூட்டுறவுகளைச் சரியாகப் பொருத்துகிறது.",
+            "why_b_en": "Incorrect matching.",
+            "why_b_ta": "தவறான பொருத்தம்.",
+            "why_c_en": "Incorrect matching.",
+            "why_c_ta": "தவறான பொருத்தம்.",
+            "why_d_en": "Incorrect matching.",
+            "why_d_ta": "தவறான பொருத்தம்.",
+            "tip_en": "Trio of 2023 Cooperatives: NCEL = Exports; NCOL = Organics; BBSSL = Seeds.",
+            "tip_ta": "2023 மும்மூர்த்திகள்: NCEL = ஏற்றுமதி; NCOL = இயற்கை வேளாண்மை; BBSSL = விதைகள்.",
+            "fact_en": "All three societies were approved by the Union Cabinet on 11 January 2023.",
+            "fact_ta": "இம்மூன்று அமைப்புகளுக்கும் மத்திய அமைச்சரவை 2023 ஜனவரி 11 அன்று ஒப்புதல் அளித்தது."
+        },
+
+        # CS_MF_013: Landmark Years in Cooperative History
+        {
+            "subtopic": "Key Historical Years",
+            "stem_en": "Match List-I (Year) with List-II (Historic Event in Indian Cooperation) and select the correct answer using the codes given below:\nList-I:\nA. 1904\nB. 1946\nC. 1970\nD. 2011\n\nList-II:\n1. Launch of Operation Flood (White Revolution) by NDDB\n2. Passing of the 97th Constitutional Amendment Act by Parliament\n3. Founding of Kaira District Co-operative Milk Producers' Union (Amul)\n4. Enactment of the first Co-operative Credit Societies Act",
+            "stem_ta": "பட்டியல்-I (ஆண்டு)-ஐ பட்டியல்-II (கூட்டுறவு வரலாற்று நிகழ்வு)-உடன் பொருத்தி, கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\nA. 1904\nB. 1946\nC. 1970\nD. 2011\n\nபட்டியல்-II:\n1. NDDB-ஆல் ஆபரேஷன் பிளட் (வெண்மைப் புரட்சி) தொடங்கப்பட்டது\n2. நாடாளுமன்றத்தால் 97-வது அரசியலமைப்புத் திருத்தச் சட்டம் நிறைவேற்றப்பட்டது\n3. கைரா மாவட்ட கூட்டுறவு பால் உற்பத்தியாளர்கள் ஒன்றியம் (அமுல்) நிறுவப்பட்டது\n4. முதல் கூட்டுறவு கடன் சங்கங்கள் சட்டம் இயற்றப்பட்டது",
+            "options": [
+                ("A-4, B-3, C-1, D-2", "A-4, B-3, C-1, D-2"),
+                ("A-3, B-4, C-1, D-2", "A-3, B-4, C-1, D-2"),
+                ("A-4, B-1, C-3, D-2", "A-4, B-1, C-3, D-2"),
+                ("A-2, B-3, C-1, D-4", "A-2, B-3, C-1, D-4")
+            ],
+            "correct_key": "A",
+            "exp_en": "Correct matching is A-4, B-3, C-1, D-2:\n- 1904: First Co-operative Credit Societies Act\n- 1946: Founding of Kaira Union (Amul) in Anand\n- 1970: Launch of Operation Flood\n- 2011: 97th Constitutional Amendment Act enacted.",
+            "exp_ta": "சரியான பொருத்தம் A-4, B-3, C-1, D-2:\n- 1904: முதல் கூட்டுறவு கடன் சங்கங்கள் சட்டம்\n- 1946: ஆனந்த் நகரில் கைரா ஒன்றியம் (அமுல்) தொடக்கம்\n- 1970: வெண்மைப் புரட்சி (ஆபரேஷன் பிளட்) தொடக்கம்\n- 2011: 97வது அரசியலமைப்புத் திருத்தச் சட்டம் நிறைவேற்றம்.",
+            "why_a_en": "Correct. A-4, B-3, C-1, D-2 connects each landmark year to its defining milestone.",
+            "why_a_ta": "சரி. A-4, B-3, C-1, D-2 வரலாற்று ஆண்டுகளை முக்கிய நிகழ்வுகளுடன் சரியாகப் பொருத்துகிறது.",
+            "why_b_en": "Incorrect matching.",
+            "why_b_ta": "தவறான பொருத்தம்.",
+            "why_c_en": "Incorrect matching.",
+            "why_c_ta": "தவறான பொருத்தம்.",
+            "why_d_en": "Incorrect matching.",
+            "why_d_ta": "தவறான பொருத்தம்.",
+            "tip_en": "Timeline Milestones: 1904 (Birth of Indian credit coops) → 1946 (Amul) → 1970 (Operation Flood) → 2011 (Part IX-B).",
+            "tip_ta": "மைல்கற்கள்: 1904 (முதல் சட்டம்) → 1946 (அமுல்) → 1970 (வெண்மைப் புரட்சி) → 2011 (பகுதி IX-B).",
+            "fact_en": "The United Nations declared 2012 and 2025 as International Years of Cooperatives.",
+            "fact_ta": "ஐக்கிய நாடுகள் சபை 2012 மற்றும் 2025 ஆண்டுகளை சர்வதேசக் கூட்டுறவு ஆண்டுகளாக அறிவித்தது."
+        },
+
+        # CS_MF_014: Constitutional Parts and Subject Matter
+        {
+            "subtopic": "Constitutional Parts Comparison",
+            "stem_en": "Match List-I (Part of the Constitution) with List-II (Democratic / Local Governance Subject) and select the correct answer using the codes given below:\nList-I:\nA. Part IX\nB. Part IX-A\nC. Part IX-B\nD. Part IV (Article 43B)\n\nList-II:\n1. Promotion of voluntary formation and autonomous functioning of co-operative societies\n2. The Co-operative Societies (Articles 243ZH to 243ZT)\n3. The Panchayats (Articles 243 to 243O)\n4. The Municipalities (Articles 243P to 243ZG)",
+            "stem_ta": "பட்டியல்-I (அரசியலமைப்பு பகுதி)-ஐ பட்டியல்-II (ஜனநாயக உள்ளாட்சித் துறை)-உடன் பொருத்தி, கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\nA. பகுதி IX\nB. பகுதி IX-A\nC. பகுதி IX-B\nD. பகுதி IV (உறுப்பு 43B)\n\nபட்டியல்-II:\n1. கூட்டுறவு சங்கங்களின் தன்னார்வ உருவாக்கம் மற்றும் தன்னாட்சியை ஊக்குவித்தல்\n2. கூட்டுறவு சங்கங்கள் (உறுப்புகள் 243ZH முதல் 243ZT வரை)\n3. பஞ்சாயத்துகள் (உறுப்புகள் 243 முதல் 243O வரை)\n4. நகராட்சிகள் (உறுப்புகள் 243P முதல் 243ZG வரை)",
+            "options": [
+                ("A-3, B-4, C-2, D-1", "A-3, B-4, C-2, D-1"),
+                ("A-4, B-3, C-2, D-1", "A-4, B-3, C-2, D-1"),
+                ("A-3, B-2, C-4, D-1", "A-3, B-2, C-4, D-1"),
+                ("A-1, B-4, C-2, D-3", "A-1, B-4, C-2, D-3")
+            ],
+            "correct_key": "A",
+            "exp_en": "Correct matching is A-3, B-4, C-2, D-1:\n- Part IX: Panchayats (Arts 243-243O)\n- Part IX-A: Municipalities (Arts 243P-243ZG)\n- Part IX-B: Co-operative Societies (Arts 243ZH-243ZT)\n- Part IV (Art 43B): Directive Principle on Co-operative Societies.",
+            "exp_ta": "சரியான பொருத்தம் A-3, B-4, C-2, D-1:\n- பகுதி IX: பஞ்சாயத்துகள் (உறுப்புகள் 243-243O)\n- பகுதி IX-A: நகராட்சிகள் (உறுப்புகள் 243P-243ZG)\n- பகுதி IX-B: கூட்டுறவு சங்கங்கள் (உறுப்புகள் 243ZH-243ZT)\n- பகுதி IV (உறுப்பு 43B): கூட்டுறவுக்கான அரசு வழிகாட்டு நெறிமுறை.",
+            "why_a_en": "Correct. A-3, B-4, C-2, D-1 correctly aligns the democratic governance parts of the Constitution.",
+            "why_a_ta": "சரி. A-3, B-4, C-2, D-1 அரசியலமைப்பின் உள்ளாட்சி மற்றும் கூட்டுறவுப் பகுதிகளைச் சரியாகப் பொருத்துகிறது.",
+            "why_b_en": "Incorrect matching.",
+            "why_b_ta": "தவறான பொருத்தம்.",
+            "why_c_en": "Incorrect matching.",
+            "why_c_ta": "தவறான பொருத்தம்.",
+            "why_d_en": "Incorrect matching.",
+            "why_d_ta": "தவறான பொருத்தம்.",
+            "tip_en": "Remember the sequence: IX (Panchayats) → IX-A (Municipalities) → IX-B (Cooperatives).",
+            "tip_ta": "வரிசையை நினைவில் கொள்க: IX (பஞ்சாயத்து) → IX-A (நகராட்சி) → IX-B (கூட்டுறவு).",
+            "fact_en": "73rd CAA added Part IX (1992); 74th CAA added Part IX-A (1992); 97th CAA added Part IX-B (2011).",
+            "fact_ta": "73வது திருத்தம் பகுதி IX (1992); 74வது திருத்தம் பகுதி IX-A (1992); 97வது திருத்தம் பகுதி IX-B (2011). சேர்க்கப்பட்டது."
+        },
+
+        # CS_MF_015: Statutory Time Limits under Part IX-B
+        {
+            "subtopic": "Statutory Time Limits",
+            "stem_en": "Match List-I (Event / Requirement under Part IX-B) with List-II (Mandatory Time Limit) and select the correct answer using the codes given below:\nList-I:\nA. Audit of accounts of co-operative societies (Art 243ZM)\nB. Maximum period of supersession for ordinary cooperatives (Art 243ZL)\nC. Maximum period of supersession for cooperative banks (Art 243ZL)\nD. Term of office of elected board members (Art 243ZJ)\n\nList-II:\n1. Five years from date of election\n2. Within six months of close of financial year\n3. Not exceeding six months\n4. Not exceeding one year",
+            "stem_ta": "பட்டியல்-I (பகுதி IX-B-ன் கீழ் நிகழ்வு/தேவை)-ஐ பட்டியல்-II (கட்டாயக் காலக்கெடு)-உடன் பொருத்தி, கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\nA. கணக்குத் தணிக்கை முடித்தல் (உறுப்பு 243ZM)\nB. சாதாரண கூட்டுறவு வாரியக் கலைப்பின் அதிகபட்ச காலம் (உறுப்பு 243ZL)\nC. கூட்டுறவு வங்கி வாரியக் கலைப்பின் அதிகபட்ச காலம் (உறுப்பு 243ZL)\nD. தேர்ந்தெடுக்கப்பட்ட வாரிய உறுப்பினர்களின் பதவிக்காலம் (உறுப்பு 243ZJ)\n\nபட்டியல்-II:\n1. தேர்தல் தேதியிலிருந்து 5 ஆண்டுகள்\n2. நிதியாண்டு முடிவடைந்த ஆறு மாதங்களுக்குள்\n3. ஆறு மாதங்களுக்கு மிகாமல்\n4. ஒரு வருடத்திற்கு மிகாமல்",
+            "options": [
+                ("A-2, B-3, C-4, D-1", "A-2, B-3, C-4, D-1"),
+                ("A-3, B-2, C-4, D-1", "A-3, B-2, C-4, D-1"),
+                ("A-2, B-4, C-3, D-1", "A-2, B-4, C-3, D-1"),
+                ("A-1, B-3, C-4, D-2", "A-1, B-3, C-4, D-2")
+            ],
+            "correct_key": "A",
+            "exp_en": "Correct matching is A-2, B-3, C-4, D-1:\n- Audit: Within 6 months of close of financial year (Art 243ZM)\n- Normal supersession: Max 6 months (Art 243ZL)\n- Banking supersession: Max 1 year (Art 243ZL)\n- Term of office: 5 years from date of election (Art 243ZJ).",
+            "exp_ta": "சரியான பொருத்தம் A-2, B-3, C-4, D-1:\n- தணிக்கை: நிதியாண்டு முடிந்த 6 மாதங்களுக்குள் (உறுப்பு 243ZM)\n- சாதாரண வாரியக் கலைப்பு: அதிகபட்சம் 6 மாதங்கள் (உறுப்பு 243ZL)\n- வங்கி வாரியக் கலைப்பு: அதிகபட்சம் 1 வருடம் (உறுப்பு 243ZL)\n- பதவிக்காலம்: தேர்தல் தேதியிலிருந்து 5 ஆண்டுகள் (உறுப்பு 243ZJ).",
+            "why_a_en": "Correct. A-2, B-3, C-4, D-1 correctly matches constitutional timelines under Part IX-B.",
+            "why_a_ta": "சரி. A-2, B-3, C-4, D-1 பகுதி IX-B-ன் அரசியலமைப்பு காலக்கெடுவைச் சரியாகப் பொருத்துகிறது.",
+            "why_b_en": "Incorrect matching.",
+            "why_b_ta": "தவறான பொருத்தம்.",
+            "why_c_en": "Incorrect matching.",
+            "why_c_ta": "தவறான பொருத்தம்.",
+            "why_d_en": "Incorrect matching.",
+            "why_d_ta": "தவறான பொருத்தம்.",
+            "tip_en": "High-Yield Memory Table: Audit = 6m; AGM = 6m; Filing = 6m; Supersession = 6m (1y for Banks); Board Term = 5y.",
+            "tip_ta": "நினைவு அட்டவணை: தணிக்கை = 6 மாதம்; பொதுக்குழு = 6 மாதம்; கலைப்பு = 6 மாதம் (வங்கிக்கு 1 ஆண்டு); பதவிக்காலம் = 5 ஆண்டுகள்.",
+            "fact_en": "These uniform timelines brought predictability to cooperative governance across India.",
+            "fact_ta": "இந்த சீரான காலக்கெடு இந்தியா முழுவதும் கூட்டுறவு நிர்வாகத்தில் ஒருமுகத்தன்மையை ஏற்படுத்தியது."
+        }
+    ]
+
+
+def get_match_questions_batch4():
+    return [
+        # CS_MF_016: Cooperative Headquarters and Institutes
+        {
+            "subtopic": "Institutions and Headquarters",
+            "stem_en": "Match List-I (Cooperative Institution) with List-II (Headquarters / City) and select the correct answer using the codes given below:\nList-I:\nA. VAMNICOM\nB. NAFED\nC. NDDB\nD. Co-optex\n\nList-II:\n1. New Delhi\n2. Pune\n3. Chennai\n4. Anand (Gujarat)",
+            "stem_ta": "பட்டியல்-I (கூட்டுறவு நிறுவனம்)-ஐ பட்டியல்-II (தலைமையகம்/நகரம்)-உடன் பொருத்தி, கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\nA. VAMNICOM\nB. NAFED\nC. NDDB\nD. கோ-ஆப்லெக்ஸ்\n\nபட்டியல்-II:\n1. புது தில்லி\n2. புனே\n3. சென்னை\n4. ஆனந்த் (குஜராத்)",
+            "options": [
+                ("A-2, B-1, C-4, D-3", "A-2, B-1, C-4, D-3"),
+                ("A-1, B-2, C-4, D-3", "A-1, B-2, C-4, D-3"),
+                ("A-2, B-4, C-1, D-3", "A-2, B-4, C-1, D-3"),
+                ("A-4, B-1, C-2, D-3", "A-4, B-1, C-2, D-3")
+            ],
+            "correct_key": "A",
+            "exp_en": "Correct matching is A-2, B-1, C-4, D-3:\n- VAMNICOM (Vaikunth Mehta Institute): Pune\n- NAFED: New Delhi\n- NDDB: Anand (Gujarat)\n- Co-optex: Chennai (Tamil Nadu).",
+            "exp_ta": "சரியான பொருத்தம் A-2, B-1, C-4, D-3:\n- VAMNICOM (வைகுந்த் மேத்தா மேலாண்மை நிறுவனம்): புனே\n- NAFED: புது தில்லி\n- NDDB (தேசிய பால்வள வாரியம்): ஆனந்த் (குஜராத்)\n- கோ-ஆப்லெக்ஸ்: சென்னை (தமிழ்நாடு).",
+            "why_a_en": "Correct. A-2, B-1, C-4, D-3 accurately links each organization to its headquarters city.",
+            "why_a_ta": "சரி. A-2, B-1, C-4, D-3 ஒவ்வொரு அமைப்பையும் அதன் தலைமையக நகரத்துடன் சரியாக இணைக்கிறது.",
+            "why_b_en": "Incorrect matching.",
+            "why_b_ta": "தவறான பொருத்தம்.",
+            "why_c_en": "Incorrect matching.",
+            "why_c_ta": "தவறான பொருத்தம்.",
+            "why_d_en": "Incorrect matching.",
+            "why_d_ta": "தவறான பொருத்தம்.",
+            "tip_en": "Key HQ Locations: VAMNICOM = Pune; NDDB = Anand; NAFED/IFFCO/NCDC = New Delhi; Co-optex/Aavin = Chennai.",
+            "tip_ta": "தலைமையகங்கள்: VAMNICOM = புனே; NDDB = ஆனந்த்; NAFED/IFFCO = புது தில்லி; கோ-ஆப்லெக்ஸ்/ஆவின் = சென்னை.",
+            "fact_en": "VAMNICOM is an autonomous institution under the National Council for Cooperative Training (NCCT).",
+            "fact_ta": "VAMNICOM என்பது தேசிய கூட்டுறவு பயிற்சி கவுன்சிலின் (NCCT) கீழ் செயல்படும் ஒரு தன்னாட்சி நிறுவனமாகும்."
+        },
+
+        # CS_MF_017: State Dairy Brands
+        {
+            "subtopic": "State Cooperative Dairy Brands",
+            "stem_en": "Match List-I (State Cooperative Dairy Brand) with List-II (State) and select the correct answer using the codes given below:\nList-I:\nA. Aavin\nB. Amul\nC. Nandini\nD. Milma\n\nList-II:\n1. Gujarat\n2. Tamil Nadu\n3. Kerala\n4. Karnataka",
+            "stem_ta": "பட்டியல்-I (மாநிலக் கூட்டுறவு பால் பிராண்ட்)-ஐ பட்டியல்-II (மாநிலம்)-உடன் பொருத்தி, கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\nA. ஆவின்\nB. அமுல்\nC. நந்தினி\nD. மில்மா\n\nபட்டியல்-II:\n1. குஜராத்\n2. தமிழ்நாடு\n3. கேரளா\n4. கர்நாடகா",
+            "options": [
+                ("A-2, B-1, C-4, D-3", "A-2, B-1, C-4, D-3"),
+                ("A-1, B-2, C-4, D-3", "A-1, B-2, C-4, D-3"),
+                ("A-2, B-4, C-1, D-3", "A-2, B-4, C-1, D-3"),
+                ("A-3, B-1, C-4, D-2", "A-3, B-1, C-4, D-2")
+            ],
+            "correct_key": "A",
+            "exp_en": "Correct matching is A-2, B-1, C-4, D-3:\n- Aavin: Tamil Nadu (TCMPF)\n- Amul: Gujarat (GCMMF)\n- Nandini: Karnataka (KMF)\n- Milma: Kerala (KCMMF).",
+            "exp_ta": "சரியான பொருத்தம் A-2, B-1, C-4, D-3:\n- ஆவின்: தமிழ்நாடு (TCMPF)\n- அமுல்: குஜராத் (GCMMF)\n- நந்தினி: கர்நாடகா (KMF)\n- மில்மா: கேரளா (KCMMF).",
+            "why_a_en": "Correct. A-2, B-1, C-4, D-3 pairs each famous cooperative dairy federation with its home state.",
+            "why_a_ta": "சரி. A-2, B-1, C-4, D-3 மாநில பால் கூட்டுறவு கூட்டமைப்புகளை அவற்றின் மாநிலங்களுடன் சரியாக இணைக்கிறது.",
+            "why_b_en": "Incorrect matching.",
+            "why_b_ta": "தவறான பொருத்தம்.",
+            "why_c_en": "Incorrect matching.",
+            "why_c_ta": "தவறான பொருத்தம்.",
+            "why_d_en": "Incorrect matching.",
+            "why_d_ta": "தவறான பொருத்தம்.",
+            "tip_en": "Dairy Brands: Aavin = TN; Amul = Gujarat; Nandini = Karnataka; Milma = Kerala; Verka = Punjab; Sudha = Bihar.",
+            "tip_ta": "பால் பிராண்டுகள்: ஆவின் = தமிழ்நாடு; அமுல் = குஜராத்; நந்தினி = கர்நாடகா; மில்மா = கேரளா; வெர்கா = பஞ்சாப்.",
+            "fact_en": "All these federations operate on the 3-tier Anand pattern.",
+            "fact_ta": "இக்கூட்டமைப்புகள் அனைத்தும் ஆனந்த் மாதிரியிலான மூன்றடுக்கு அமைப்பில் செயல்படுகின்றன."
+        },
+
+        # CS_MF_018: Seventh Schedule Entries
+        {
+            "subtopic": "Seventh Schedule Legislative Competence",
+            "stem_en": "Match List-I (Seventh Schedule Entry) with List-II (Constitutional Subject Matter) and select the correct answer using the codes given below:\nList-I:\nA. List II (State List), Entry 32\nB. List I (Union List), Entry 44\nC. List III (Concurrent List), Entry 33\nD. List II (State List), Entry 5\n\nList-II:\n1. Local government (Panchayats and Municipalities)\n2. Corporations/Cooperatives with objects not confined to one State\n3. Co-operative societies operating within a single State\n4. Trade and commerce in, and production of, essential foodstuffs and industrial inputs",
+            "stem_ta": "பட்டியல்-I (ஏழாவது அட்டவணைப் பதிவு)-ஐ பட்டியல்-II (அரசியலமைப்பு பொருள்)-உடன் பொருத்தி, கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\nA. பட்டியல் II (மாநிலப் பட்டியல்), பதிவு 32\nB. பட்டியல் I (மத்திய பட்டியல்), பதிவு 44\nC. பட்டியல் III (பொதுப் பட்டியல்), பதிவு 33\nD. பட்டியல் II (மாநிலப் பட்டியல்), பதிவு 5\n\nபட்டியல்-II:\n1. உள்ளாட்சி அமைப்புகள் (பஞ்சாயத்துகள் மற்றும் நகராட்சிகள்)\n2. ஒன்றுக்கு மேற்பட்ட மாநிலங்களில் செயல்படும் நிறுவனங்கள் மற்றும் பல மாநில கூட்டுறவுகள்\n3. ஒரு மாநிலத்திற்குள் செயல்படும் கூட்டுறவு சங்கங்கள்\n4. அத்தியாவசிய உணவு மற்றும் தொழில் விளைபொருட்களின் உற்பத்தி மற்றும் வர்த்தகம்",
+            "options": [
+                ("A-3, B-2, C-4, D-1", "A-3, B-2, C-4, D-1"),
+                ("A-2, B-3, C-4, D-1", "A-2, B-3, C-4, D-1"),
+                ("A-3, B-1, C-4, D-2", "A-3, B-1, C-4, D-2"),
+                ("A-4, B-2, C-3, D-1", "A-4, B-2, C-3, D-1")
+            ],
+            "correct_key": "A",
+            "exp_en": "Correct matching is A-3, B-2, C-4, D-1:\n- List II Entry 32: Co-operative societies within a State\n- List I Entry 44: Multi-State corporations and cooperatives\n- List III Entry 33: Essential commodities, foodstuffs trade and commerce\n- List II Entry 5: Local government (Panchayats and Municipalities).",
+            "exp_ta": "சரியான பொருத்தம் A-3, B-2, C-4, D-1:\n- பட்டியல் II பதிவு 32: மாநிலக் கூட்டுறவு சங்கங்கள்\n- பட்டியல் I பதிவு 44: பல மாநில கூட்டுறவு நிறுவனங்கள்\n- பட்டியல் III பதிவு 33: அத்தியாவசியப் பண்டங்களின் உற்பத்தி மற்றும் வர்த்தகம்\n- பட்டியல் II பதிவு 5: உள்ளாட்சி அமைப்புகள்.",
+            "why_a_en": "Correct. A-3, B-2, C-4, D-1 correctly maps Seventh Schedule legislative competence entries.",
+            "why_a_ta": "சரி. A-3, B-2, C-4, D-1 ஏழாவது அட்டவணையின் சட்டமியற்றும் அதிகாரப் பதிவுகளைச் சரியாகப் பொருத்துகிறது.",
+            "why_b_en": "Incorrect matching.",
+            "why_b_ta": "தவறான பொருத்தம்.",
+            "why_c_en": "Incorrect matching.",
+            "why_c_ta": "தவறான பொருத்தம்.",
+            "why_d_en": "Incorrect matching.",
+            "why_d_ta": "தவறான பொருத்தம்.",
+            "tip_en": "Federal competence: State Coops = List II Entry 32; Multi-State Coops = List I Entry 44.",
+            "tip_ta": "கூட்டாட்சி அதிகாரம்: மாநிலக் கூட்டுறவு = பட்டியல் II பதிவு 32; பல மாநிலக் கூட்டுறவு = பட்டியல் I பதிவு 44.",
+            "fact_en": "Because Entry 32 is in List II, amending its scope attracted the proviso to Article 368(2).",
+            "fact_ta": "பதிவு 32 மாநிலப் பட்டியலில் உள்ளதால், அதன் வரம்பைத் திருத்துவது உறுப்பு 368(2) வரம்புரையை ஈர்த்தது."
+        },
+
+        # CS_MF_019: Modern Policy and Reform Committees
+        {
+            "subtopic": "Modern Policy Committees",
+            "stem_en": "Match List-I (Modern Committee) with List-II (Policy Output) and select the correct answer using the codes given below:\nList-I:\nA. Y.K. Alagh Committee (2000)\nB. Shivaji Rao Patil Committee (2009)\nC. Suresh Prabhu Committee (2022)\nD. Townsend Committee (1927)\n\nList-II:\n1. Draft National Cooperation Policy Document\n2. Report on Co-operation in Madras leading to the 1932 Madras Act\n3. Conceptualized Producer Companies under Companies Act\n4. High-Powered Committee recommending Constitutional Status for Co-operatives",
+            "stem_ta": "பட்டியல்-I (நவீனக் குழு)-ஐ பட்டியல்-II (கொள்கை வெளியீடு)-உடன் பொருத்தி, கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\nA. ஓய்.கே. அலாக் குழு (2000)\nB. சிவாஜிராவ் பாட்டீல் குழு (2009)\nC. சுரேஷ் பிரபு குழு (2022)\nD. டவுன்சென்ட் குழு (1927)\n\nபட்டியல்-II:\n1. வரைவு தேசிய கூட்டுறவுக் கொள்கை ஆவணம் தயாரித்தல்\n2. 1932 மெட்ராஸ் சட்டத்திற்கு வழிகோலிய மெட்ராஸ் கூட்டுறவு அறிக்கை\n3. நிறுவனங்கள் சட்டத்தின் கீழ் உழவர் உற்பத்தியாளர் நிறுவனங்களை வடிவமைத்தல்\n4. கூட்டுறவுகளுக்கு அரசியலமைப்பு அந்தஸ்து வழங்கப் பரிந்துரைத்த உயர்மட்டக் குழு",
+            "options": [
+                ("A-3, B-4, C-1, D-2", "A-3, B-4, C-1, D-2"),
+                ("A-4, B-3, C-1, D-2", "A-4, B-3, C-1, D-2"),
+                ("A-3, B-1, C-4, D-2", "A-3, B-1, C-4, D-2"),
+                ("A-2, B-4, C-1, D-3", "A-2, B-4, C-1, D-3")
+            ],
+            "correct_key": "A",
+            "exp_en": "Correct matching is A-3, B-4, C-1, D-2:\n- Y.K. Alagh (2000): Producer Companies framework\n- Shivaji Rao Patil (2009): Constitutional status recommendations (97th CAA)\n- Suresh Prabhu (2022): New National Cooperation Policy\n- Townsend Committee (1927): Madras Co-operative Societies Act, 1932.",
+            "exp_ta": "சரியான பொருத்தம் A-3, B-4, C-1, D-2:\n- ஓய்.கே. அலாக் (2000): உழவர் உற்பத்தியாளர் நிறுவனங்கள்\n- சிவாஜிராவ் பாட்டீல் (2009): கூட்டுறவுகளுக்கு அரசியலமைப்பு அந்தஸ்து (97வது திருத்தம்)\n- சுரேஷ் பிரபு (2022): புதிய தேசிய கூட்டுறவுக் கொள்கை\n- டவுன்சென்ட் குழு (1927): மெட்ராஸ் கூட்டுறவு சட்டம் 1932.",
+            "why_a_en": "Correct. A-3, B-4, C-1, D-2 matches modern policy committees with their specific deliverables.",
+            "why_a_ta": "சரி. A-3, B-4, C-1, D-2 நவீன கொள்கைக் குழுக்களை அவற்றின் அறிக்கைகளுடன் சரியாக இணைக்கிறது.",
+            "why_b_en": "Incorrect matching.",
+            "why_b_ta": "தவறான பொருத்தம்.",
+            "why_c_en": "Incorrect matching.",
+            "why_c_ta": "தவறான பொருத்தம்.",
+            "why_d_en": "Incorrect matching.",
+            "why_d_ta": "தவறான பொருத்தம்.",
+            "tip_en": "Timeline of Reports: Townsend (1927) → Alagh (2000) → Patil (2009) → Prabhu (2022).",
+            "tip_ta": "அறிக்கைகளின் காலக்கோடு: டவுன்சென்ட் (1927) → அலாக் (2000) → பாட்டீல் (2009) → பிரபு (2022).",
+            "fact_en": "The Suresh Prabhu Committee comprised 47 eminent experts representing all cooperative sub-sectors.",
+            "fact_ta": "சுரேஷ் பிரபு குழு அனைத்து கூட்டுறவு துறைகளையும் பிரதிநிதித்துவப்படுத்தும் 47 நிபுணர்களைக் கொண்டிருந்தது."
+        },
+
+        # CS_MF_020: Acronyms in Indian Co-operation
+        {
+            "subtopic": "Key Cooperative Institutions and Acronyms",
+            "stem_en": "Match List-I (Acronym) with List-II (Full Expansion / Description) and select the correct answer using the codes given below:\nList-I:\nA. PACS\nB. DCCB\nC. SCARDB\nD. CRCS\n\nList-II:\n1. State Cooperative Agriculture and Rural Development Bank\n2. Central Registrar of Co-operative Societies\n3. District Central Cooperative Bank\n4. Primary Agricultural Credit Society",
+            "stem_ta": "பட்டியல்-I (சுருக்கப் பெயர்)-ஐ பட்டியல்-II (முழு விரிவாக்கம்)-உடன் பொருத்தி, கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\nA. PACS\nB. DCCB\nC. SCARDB\nD. CRCS\n\nபட்டியல்-II:\n1. மாநிலக் கூட்டுறவு விவசாயம் மற்றும் ஊரக வளர்ச்சி வங்கி\n2. மத்திய கூட்டுறவு சங்கங்களின் பதிவாளர்\n3. மாவட்ட மத்தியக் கூட்டுறவு வங்கி\n4. தொடக்க வேளாண்மைக் கூட்டுறவுக் கடன் சங்கம்",
+            "options": [
+                ("A-4, B-3, C-1, D-2", "A-4, B-3, C-1, D-2"),
+                ("A-3, B-4, C-1, D-2", "A-3, B-4, C-1, D-2"),
+                ("A-4, B-1, C-3, D-2", "A-4, B-1, C-3, D-2"),
+                ("A-2, B-3, C-1, D-4", "A-2, B-3, C-1, D-4")
+            ],
+            "correct_key": "A",
+            "exp_en": "Correct matching is A-4, B-3, C-1, D-2:\n- PACS: Primary Agricultural Credit Society\n- DCCB: District Central Cooperative Bank\n- SCARDB: State Cooperative Agriculture and Rural Development Bank\n- CRCS: Central Registrar of Co-operative Societies.",
+            "exp_ta": "சரியான பொருத்தம் A-4, B-3, C-1, D-2:\n- PACS: தொடக்க வேளாண்மைக் கூட்டுறவுக் கடன் சங்கம்\n- DCCB: மாவட்ட மத்தியக் கூட்டுறவு வங்கி\n- SCARDB: மாநிலக் கூட்டுறவு விவசாய மற்றும் ஊரக வளர்ச்சி வங்கி\n- CRCS: மத்திய கூட்டுறவு சங்கங்களின் பதிவாளர்.",
+            "why_a_en": "Correct. A-4, B-3, C-1, D-2 maps each acronym accurately.",
+            "why_a_ta": "சரி. A-4, B-3, C-1, D-2 சுருக்கப் பெயர்களை அவற்றின் விரிவாக்கத்துடன் சரியாகப் பொருத்துகிறது.",
+            "why_b_en": "Incorrect matching.",
+            "why_b_ta": "தவறான பொருத்தம்.",
+            "why_c_en": "Incorrect matching.",
+            "why_c_ta": "தவறான பொருத்தம்.",
+            "why_d_en": "Incorrect matching.",
+            "why_d_ta": "தவறான பொருத்தம்.",
+            "tip_en": "Short-term: PACS & DCCB; Long-term: PCARDB & SCARDB; Multi-State regulator: CRCS.",
+            "tip_ta": "குறுகிய காலம்: PACS & DCCB; நீண்ட காலம்: PCARDB & SCARDB; மத்திய பதிவாளர்: CRCS.",
+            "fact_en": "SCARDBs are also historically referred to as State Land Development Banks (SLDBs).",
+            "fact_ta": "SCARDB வங்கிகள் வரலாற்று ரீதியாக மாநில நிலவள வங்கிகள் (SLDB) என்றும் அழைக்கப்படுகின்றன."
+        }
+    ]
+
+
+def get_match_questions_batch5():
+    return [
+        # CS_MF_021: Landmark Constitutional Court Cases
+        {
+            "subtopic": "Constitutional Jurisprudence",
+            "stem_en": "Match List-I (Landmark Case) with List-II (Core Doctrinal Principle / Holding) and select the correct answer using the codes given below:\nList-I:\nA. Union of India v. Rajendra N. Shah (2021)\nB. Kesavananda Bharati v. State of Kerala (1973)\nC. S.R. Bommai v. Union of India (1994)\nD. Minerva Mills v. Union of India (1980)\n\nList-II:\n1. Part IX-B severed; state cooperatives held beyond Parliament's constituent power without ratification\n2. Basic Structure doctrine limiting Parliament's amending power under Article 368\n3. Federalism declared an indestructible part of Basic Structure\n4. Harmonious balance between Fundamental Rights and Directive Principles",
+            "stem_ta": "பட்டியல்-I (முக்கிய வழக்கு)-ஐ பட்டியல்-II (முக்கியக் கோட்பாடு/தீர்ப்பு)-உடன் பொருத்தி, கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\nA. இந்திய ஒன்றியம் எதிர் ராஜேந்திர என். ஷா (2021)\nB. கேசவானந்த பாரதி எதிர் கேரள அரசு (1973)\nC. எஸ்.ஆர். பொம்மை எதிர் இந்திய ஒன்றியம் (1994)\nD. மினர்வா மில்ஸ் எதிர் இந்திய ஒன்றியம் (1980)\n\nபட்டியல்-II:\n1. பகுதி IX-B பிரிக்கப்பட்டது; மாநில ஒப்புதல் இன்றி மாநிலக் கூட்டுறவுகள் மீது நாடாளுமன்ற அதிகாரம் செல்லாது\n2. உறுப்பு 368-ன் கீழ் நாடாளுமன்றத்தின் திருத்தும் அதிகாரத்தைக் கட்டுப்படுத்தும் அடிப்படைக் கட்டமைப்புத் தத்துவம்\n3. கூட்டாட்சி என்பது அடிப்படைக் கட்டமைப்பின் பிரிக்க முடியாத பகுதி எனப் பிரகடனம்\n4. அடிப்படை உரிமைகள் மற்றும் வழிகாட்டு நெறிமுறைகளுக்கு இடையேயான இணக்கமான சமநிலை",
+            "options": [
+                ("A-1, B-2, C-3, D-4", "A-1, B-2, C-3, D-4"),
+                ("A-2, B-1, C-3, D-4", "A-2, B-1, C-3, D-4"),
+                ("A-1, B-3, C-2, D-4", "A-1, B-3, C-2, D-4"),
+                ("A-4, B-2, C-3, D-1", "A-4, B-2, C-3, D-1")
+            ],
+            "correct_key": "A",
+            "exp_en": "Correct matching is A-1, B-2, C-3, D-4:\n- Rajendra N. Shah (2021): Invalidated Part IX-B for state cooperatives under Art 368(2) proviso\n- Kesavananda Bharati (1973): Established Basic Structure Doctrine\n- S.R. Bommai (1994): Affirmed federalism as Basic Structure\n- Minerva Mills (1980): Balance between Part III and Part IV.",
+            "exp_ta": "சரியான பொருத்தம் A-1, B-2, C-3, D-4:\n- ராஜேந்திர ஷா (2021): உறுப்பு 368(2) ஒப்புதல் இன்மையால் பகுதி IX-B மாநிலக் கூட்டுறவுகளுக்கு ரத்து செய்யப்பட்டது\n- கேசவானந்த பாரதி (1973): அடிப்படைக் கட்டமைப்புத் தத்துவம்\n- எஸ்.ஆர். பொம்மை (1994): கூட்டாட்சி அடிப்படைக் கட்டமைப்பு என உறுதி\n- மினர்வா மில்ஸ் (1980): பகுதி III மற்றும் IV இடையே சமநிலை.",
+            "why_a_en": "Correct. A-1, B-2, C-3, D-4 accurately matches each constitutional landmark case with its ratio.",
+            "why_a_ta": "சரி. A-1, B-2, C-3, D-4 அரசியலமைப்பு வழக்குகளை அவற்றின் முக்கியத் தீர்ப்புகளுடன் சரியாக இணைக்கிறது.",
+            "why_b_en": "Incorrect matching.",
+            "why_b_ta": "தவறான பொருத்தம்.",
+            "why_c_en": "Incorrect matching.",
+            "why_c_ta": "தவறான பொருத்தம்.",
+            "why_d_en": "Incorrect matching.",
+            "why_d_ta": "தவறான பொருத்தம்.",
+            "tip_en": "Constitutional Linchpins: Kesavananda = Basic Structure; Bommai = Federalism; Rajendra Shah = Cooperative Federalism & Art 368(2) Proviso.",
+            "tip_ta": "அரசமைப்புத் தூண்கள்: கேசவானந்தா = அடிப்படைக் கட்டமைப்பு; பொம்மை = கூட்டாட்சி; ராஜேந்திர ஷா = கூட்டுறவுக் கூட்டாட்சி.",
+            "fact_en": "The Supreme Court in Rajendra N. Shah quoted Bommai extensively to emphasize federal supremacy in List II Entry 32.",
+            "fact_ta": "ராஜேந்திர ஷா வழக்கில் உச்சநீதிமன்றம் பொம்மை வழக்கின் கூட்டாட்சி கருத்துகளை விரிவாக மேற்கோள் காட்டியது."
+        },
+
+        # CS_MF_022: Multi-State Cooperatives 2023 Amendment Features
+        {
+            "subtopic": "MSCS Amendment Act 2023 Key Features",
+            "stem_en": "Match List-I (MSCS 2023 Reform Mechanism) with List-II (Statutory Purpose / Composition) and select the correct answer using the codes given below:\nList-I:\nA. Co-operative Election Authority\nB. Co-operative Ombudsman\nC. Co-operative Rehabilitation Fund\nD. Board Reservations\n\nList-II:\n1. Financed by 1% net profit contribution from profitable multi-state societies\n2. Mandatory reservation of one SC/ST and two women directors\n3. Redressal of member complaints and grievances\n4. Independent superintendence and conduct of elections",
+            "stem_ta": "பட்டியல்-I (2023 பல மாநில கூட்டுறவு சீர்திருத்த அமைப்பு)-ஐ பட்டியல்-II (சட்டப்பூர்வ நோக்கம்/அமைப்பு)-உடன் பொருத்தி, கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\nA. கூட்டுறவு தேர்தல் ஆணையம்\nB. கூட்டுறவு குறைதீர்ப்பாளர் (Ombudsman)\nC. கூட்டுறவு மறுவாழ்வு நிதி\nD. வாரிய இடஒதுக்கீடு\n\nபட்டியல்-II:\n1. லாபகரமாக இயங்கும் சங்கங்களின் 1% நிகர லாபப் பங்களிப்புடன் நிதியளிக்கப்படுகிறது\n2. ஒரு SC/ST மற்றும் இரண்டு பெண் இயக்குநர்கள் கட்டாய இடஒதுக்கீடு\n3. உறுப்பினர் புகார்கள் மற்றும் குறைகளைத் தீர்த்தல்\n4. தேர்தல்களைச் சுதந்திரமாக நடத்துதல் மற்றும் மேற்பார்வையிடுதல்",
+            "options": [
+                ("A-4, B-3, C-1, D-2", "A-4, B-3, C-1, D-2"),
+                ("A-3, B-4, C-1, D-2", "A-3, B-4, C-1, D-2"),
+                ("A-4, B-1, C-3, D-2", "A-4, B-1, C-3, D-2"),
+                ("A-2, B-3, C-1, D-4", "A-2, B-3, C-1, D-4")
+            ],
+            "correct_key": "A",
+            "exp_en": "Correct matching is A-4, B-3, C-1, D-2:\n- Election Authority: Independent conduct of elections\n- Ombudsman: Member grievance redressal\n- Rehabilitation Fund: 1% net profit contribution to revive sick cooperatives\n- Board Reservations: 1 SC/ST + 2 women seats.",
+            "exp_ta": "சரியான பொருத்தம் A-4, B-3, C-1, D-2:\n- தேர்தல் ஆணையம்: தேர்தல்களை சுதந்திரமாக நடத்துதல்\n- குறைதீர்ப்பாளர்: உறுப்பினர்களின் குறைதீர்த்தல்\n- மறுவாழ்வு நிதி: நலிவடைந்த சங்கங்களை மீட்க 1% நிகர லாபப் பங்களிப்பு\n- வாரிய இடஒதுக்கீடு: 1 SC/ST + 2 பெண்கள் இடங்கள்.",
+            "why_a_en": "Correct. A-4, B-3, C-1, D-2 connects each 2023 MSCS reform with its statutory design.",
+            "why_a_ta": "சரி. A-4, B-3, C-1, D-2 2023 சீர்திருத்தங்களை அவற்றின் சட்ட நோக்கங்களுடன் சரியாக இணைக்கிறது.",
+            "why_b_en": "Incorrect matching.",
+            "why_b_ta": "தவறான பொருத்தம்.",
+            "why_c_en": "Incorrect matching.",
+            "why_c_ta": "தவறான பொருத்தம்.",
+            "why_d_en": "Incorrect matching.",
+            "why_d_ta": "தவறான பொருத்தம்.",
+            "tip_en": "2023 Amendment Pillars: Election Authority (Free elections) + Ombudsman (Grievance) + Rehab Fund (Sick units) + Reservations (Inclusion).",
+            "tip_ta": "2023 திருத்தத்தின் தூண்கள்: தேர்தல் ஆணையம் + குறைதீர்ப்பாளர் + மறுவாழ்வு நிதி + இடஒதுக்கீடு.",
+            "fact_en": "The Multi-State Co-operative Societies (Amendment) Bill was passed by Parliament in August 2023.",
+            "fact_ta": "பல மாநில கூட்டுறவு சங்கங்கள் (திருத்த) மசோதா ஆகஸ்ட் 2023-ல் நாடாளுமன்றத்தால் நிறைவேற்றப்பட்டது."
+        },
+
+        # CS_MF_023: Tamil Nadu Apex Cooperative Federations
+        {
+            "subtopic": "Tamil Nadu Apex Federations",
+            "stem_en": "Match List-I (Tamil Nadu Apex Cooperative Federation) with List-II (Associated Sector) and select the correct answer using the codes given below:\nList-I:\nA. TNSAC Bank\nB. TNCHF\nC. TANCOFED\nD. TNSC Bank\n\nList-II:\n1. State apex cooperative housing finance federation\n2. Apex consumer cooperative federation\n3. Apex agricultural credit bank in Tamil Nadu\n4. Apex state cooperative bank federating DCCBs",
+            "stem_ta": "பட்டியல்-I (தமிழ்நாடு உச்ச கூட்டுறவு கூட்டமைப்பு)-ஐ பட்டியல்-II (தொடர்புடைய துறை)-உடன் பொருத்தி, கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\nA. TNSAC வங்கி\nB. TNCHF\nC. TANCOFED\nD. TNSC வங்கி\n\nபட்டியல்-II:\n1. மாநில உச்ச கூட்டுறவு வீட்டுவசதி நிதி கூட்டமைப்பு\n2. உச்ச நுகர்வோர் கூட்டுறவு கூட்டமைப்பு\n3. தமிழ்நாட்டின் விவசாயக் கடனுக்கான உச்ச அமைப்பு\n4. மாவட்ட மத்திய கூட்டுறவு வங்கிகளை இணைக்கும் உச்ச மாநிலக் கூட்டுறவு வங்கி",
+            "options": [
+                ("A-4, B-1, C-2, D-3", "A-4, B-1, C-2, D-3"),
+                ("A-1, B-4, C-2, D-3", "A-1, B-4, C-2, D-3"),
+                ("A-4, B-2, C-1, D-3", "A-4, B-2, C-1, D-3"),
+                ("A-3, B-1, C-2, D-4", "A-3, B-1, C-2, D-4")
+            ],
+            "correct_key": "A",
+            "exp_en": "Correct matching is A-4, B-1, C-2, D-3 (or standard institutional mapping):\n- TNSC Bank: Apex state cooperative bank federating 23 DCCBs in Tamil Nadu\n- TNCHF: Tamil Nadu Co-operative Housing Federation\n- TANCOFED: Tamil Nadu Consumer Co-operative Federation\n- TNSAC Bank / SCARDB: Apex agricultural rural development bank.",
+            "exp_ta": "சரியான பொருத்தம் A-4, B-1, C-2, D-3:\n- TNSC வங்கி: தமிழ்நாட்டின் 23 DCCB-களை இணைக்கும் மாநிலத் தலைமைக் கூட்டுறவு வங்கி\n- TNCHF: தமிழ்நாடு கூட்டுறவு வீட்டுவசதி கூட்டமைப்பு\n- TANCOFED: தமிழ்நாடு நுகர்வோர் கூட்டுறவு கூட்டமைப்பு\n- விவசாயக் கடன் உச்ச வங்கி அமைப்பு.",
+            "why_a_en": "Correct. A-4, B-1, C-2, D-3 aligns Tamil Nadu apex federations with their functional mandates.",
+            "why_a_ta": "சரி. A-4, B-1, C-2, D-3 தமிழக உச்ச கூட்டுறவு அமைப்புகளை அவற்றின் பணிகளுடன் சரியாக இணைக்கிறது.",
+            "why_b_en": "Incorrect matching.",
+            "why_b_ta": "தவறான பொருத்தம்.",
+            "why_c_en": "Incorrect matching.",
+            "why_c_ta": "தவறான பொருத்தம்.",
+            "why_d_en": "Incorrect matching.",
+            "why_d_ta": "தவறான பொருத்தம்.",
+            "tip_en": "TNSC Bank is one of the oldest State Cooperative Banks in India, established in 1905.",
+            "tip_ta": "TNSC வங்கி 1905-ல் நிறுவப்பட்ட இந்தியாவின் மிகப் பழமையான மாநிலக் கூட்டுறவு வங்கிகளில் ஒன்றாகும்.",
+            "fact_en": "TNSC Bank serves as the central clearing house for all DCCBs in Tamil Nadu.",
+            "fact_ta": "தமிழ்நாட்டின் அனைத்து மாவட்ட மத்திய கூட்டுறவு வங்கிகளுக்கும் TNSC வங்கி மத்திய பரிவர்த்தனை மையமாகச் செயல்படுகிறது."
+        },
+
+        # CS_MF_024: Digital Initiatives in Cooperation
+        {
+            "subtopic": "Digital Initiatives in Cooperation",
+            "stem_en": "Match List-I (Digital Initiative) with List-II (Technological Role / Feature) and select the correct answer using the codes given below:\nList-I:\nA. PACS ERP Software\nB. National Cooperative Database\nC. GeM Portal Onboarding\nD. Common Service Centres (CSCs)\n\nList-II:\n1. Single national digital repository mapping 8+ lakh cooperative societies\n2. Enables cooperatives to sell goods directly to government departments and PSUs\n3. Cloud-based common accounting and transaction platform implemented by NABARD\n4. Delivers citizen-centric digital public services through PACS at village level",
+            "stem_ta": "பட்டியல்-I (டிஜிட்டல் முயற்சி)-ஐ பட்டியல்-II (தொழில்நுட்பப் பங்கு/அம்சம்)-உடன் பொருத்தி, கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\nA. PACS ஈஆர்பி (ERP) மென்பொருள்\nB. தேசிய கூட்டுறவு தரவுத்தளம்\nC. அரசு மின்-சந்தை (GeM) இணைப்பு\nD. பொது சேவை மையங்கள் (CSCs)\n\nபட்டியல்-II:\n1. 8 லட்சத்திற்கும் மேற்பட்ட கூட்டுறவு சங்கங்களை வரைபடமாக்கும் தேசிய டிஜிட்டல் களஞ்சியம்\n2. கூட்டுறவு அமைப்புகள் தங்கள் பொருட்களை அரசுத் துறைகளுக்கு நேரடியாக விற்க அனுமதிக்கிறது\n3. நபார்டு மூலம் செயல்படுத்தப்படும் கிளவுட் அடிப்படையிலான பொது கணக்கியல் மற்றும் பரிவர்த்தனை தளம்\n4. கிராம அளவில் PACS மூலம் குடிமக்களுக்கான டிஜிட்டல் பொது சேவைகளை வழங்குகிறது",
+            "options": [
+                ("A-3, B-1, C-2, D-4", "A-3, B-1, C-2, D-4"),
+                ("A-1, B-3, C-2, D-4", "A-1, B-3, C-2, D-4"),
+                ("A-3, B-2, C-1, D-4", "A-3, B-2, C-1, D-4"),
+                ("A-4, B-1, C-2, D-3", "A-4, B-1, C-2, D-3")
+            ],
+            "correct_key": "A",
+            "exp_en": "Correct matching is A-3, B-1, C-2, D-4:\n- PACS ERP: Cloud-based software developed for ~63,000 PACS by NABARD\n- National Database: Web portal mapping over 8 lakh cooperatives in India\n- GeM Onboarding: Cooperatives registered as buyers and sellers on Government e-Marketplace\n- CSC Integration: Enabling PACS to deliver 300+ government digital services.",
+            "exp_ta": "சரியான பொருத்தம் A-3, B-1, C-2, D-4:\n- PACS ERP: நபார்டு உருவாக்கிய கிளவுட் அடிப்படையிலான பொது மென்பொருள்\n- தேசிய தரவுத்தளம்: 8 லட்சத்திற்கும் மேற்பட்ட சங்கங்களின் வலைத்தள களஞ்சியம்\n- GeM சந்தை: கூட்டுறவுகள் அரசுக்கு நேரடியாகப் பொருட்களை விற்க அனுமதித்தல்\n- பொது சேவை மையம் (CSC): PACS மூலம் கிராம மக்களுக்கு டிஜிட்டல் அரசு சேவைகள்.",
+            "why_a_en": "Correct. A-3, B-1, C-2, D-4 connects each flagship digital initiative with its transformation impact.",
+            "why_a_ta": "சரி. A-3, B-1, C-2, D-4 கூட்டுறவு டிஜிட்டல் முயற்சிகளை அவற்றின் தாக்கத்துடன் சரியாக இணைக்கிறது.",
+            "why_b_en": "Incorrect matching.",
+            "why_b_ta": "தவறான பொருத்தம்.",
+            "why_c_en": "Incorrect matching.",
+            "why_c_ta": "தவறான பொருத்தம்.",
+            "why_d_en": "Incorrect matching.",
+            "why_d_ta": "தவறான பொருத்தம்.",
+            "tip_en": "Tech in Cooperatives: PACS ERP = Accounting; Database = Census; GeM = Market access; CSC = Service delivery.",
+            "tip_ta": "கூட்டுறவில் தொழில்நுட்பம்: PACS ERP = கணக்கு; தரவுத்தளம் = புள்ளிவிவரம்; GeM = அரசு கொள்முதல்; CSC = மக்கள் சேவை.",
+            "fact_en": "Over 20,000 PACS have already commenced functioning as Common Service Centres.",
+            "fact_ta": "ஏற்கனவே 20,000-க்கும் மேற்பட்ட தொடக்க வேளாண் கடன் சங்கங்கள் பொது சேவை மையங்களாகச் செயல்படத் தொடங்கியுள்ளன."
+        },
+
+        # CS_MF_025: Corporate Entity Comparison
+        {
+            "subtopic": "Enterprise Models Comparison",
+            "stem_en": "Match List-I (Enterprise Type) with List-II (Core Governing Characteristic) and select the correct answer using the codes given below:\nList-I:\nA. Traditional Co-operative Society\nB. Producer Company\nC. Joint Stock Commercial Company\nD. Section 8 Not-for-Profit Company\n\nList-II:\n1. 'One Share, One Vote'; profit maximization for capital shareholders\n2. 'One Member, One Vote'; registered under State Act; subject to Registrar audit\n3. Combines cooperative ethos with corporate flexibility under Companies Act; ROC regulated\n4. Formed for promoting commerce, art, science, sports; dividend distribution prohibited",
+            "stem_ta": "பட்டியல்-I (நிறுவன வகை)-ஐ பட்டியல்-II (முக்கிய நிர்வாகப் பண்பு)-உடன் பொருத்தி, கீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:\nபட்டியல்-I:\nA. பாரம்பரிய கூட்டுறவு சங்கம்\nB. உழவர் உற்பத்தியாளர் நிறுவனம் (FPO)\nC. வணிக பங்கு நிறுவனம் (Joint Stock Company)\nD. பிரிவு 8 தொண்டு நிறுவனம் (Section 8 Company)\n\nபட்டியல்-II:\n1. 'ஒரு பங்கு, ஒரு வாக்கு'; மூலதனப் பங்குதாரர்களுக்கு அதிகபட்ச லாபம் ஈட்டுதல்\n2. 'ஒரு உறுப்பினர், ஒரு வாக்கு'; மாநில சட்டத்தின் கீழ் பதிவு; பதிவாளர் தணிக்கைக்கு உட்பட்டது\n3. கூட்டுறவு தத்துவத்தை நிறுவன நெகிழ்வுத்தன்மையுடன் இணைக்கிறது; ROC மூலம் நிர்வகிக்கப்படுகிறது\n4. வணிகம், கலை, கல்வி, விளையாட்டை ஊக்குவிக்க தொடங்கப்படுகிறது; ஈவுத்தொகை விநியோகம் தடைசெய்யப்பட்டுள்ளது",
+            "options": [
+                ("A-2, B-3, C-1, D-4", "A-2, B-3, C-1, D-4"),
+                ("A-3, B-2, C-1, D-4", "A-3, B-2, C-1, D-4"),
+                ("A-2, B-1, C-3, D-4", "A-2, B-1, C-3, D-4"),
+                ("A-4, B-3, C-1, D-2", "A-4, B-3, C-1, D-2")
+            ],
+            "correct_key": "A",
+            "exp_en": "Correct matching is A-2, B-3, C-1, D-4:\n- Traditional Cooperative: Member democracy under State Act/RCS\n- Producer Company: Cooperative principles under Companies Act (ROC)\n- Commercial Company: Capitalist model, voting proportional to shares\n- Section 8 Company: Non-profit company prohibited from paying dividends.",
+            "exp_ta": "சரியான பொருத்தம் A-2, B-3, C-1, D-4:\n- பாரம்பரிய கூட்டுறவு: மாநில சட்டத்தின் கீழ் உறுப்பினர் ஜனநாயகம் (பதிவாளர் தணிக்கை)\n- உற்பத்தியாளர் நிறுவனம்: நிறுவனங்கள் சட்டத்தின் கீழ் கூட்டுறவுக் கோட்பாடுகள் (ROC)\n- வணிக நிறுவனம்: மூலதனத்திற்கு ஏற்ப வாக்குரிமை மற்றும் அதிகபட்ச லாபம்\n- பிரிவு 8 நிறுவனம்: லாப நோக்கற்ற அமைப்பு; ஈவுத்தொகை வழங்கத் தடை.",
+            "why_a_en": "Correct. A-2, B-3, C-1, D-4 accurately contrasts the four major enterprise governance models in Indian law.",
+            "why_a_ta": "சரி. A-2, B-3, C-1, D-4 இந்திய சட்டத்தின் நான்கு முக்கிய நிறுவன நிர்வாக மாதிரிகளைத் துல்லியமாக ஒப்பிடுகிறது.",
+            "why_b_en": "Incorrect matching.",
+            "why_b_ta": "தவறான பொருத்தம்.",
+            "why_c_en": "Incorrect matching.",
+            "why_c_ta": "தவறான பொருத்தம்.",
+            "why_d_en": "Incorrect matching.",
+            "why_d_ta": "தவறான பொருத்தம்.",
+            "tip_en": "Cooperative = Member-centric; Producer Company = Hybrid; Commercial Company = Capital-centric; Section 8 = Cause-centric.",
+            "tip_ta": "கூட்டுறவு = உறுப்பினர் மையம்; உற்பத்தியாளர் நிறுவனம் = கலப்பின அமைப்பு; வணிக நிறுவனம் = மூலதன மையம்; பிரிவு 8 = சேவை மையம்.",
+            "fact_en": "Producer Companies were retained in the Companies Act 2013 under Chapter XXI-A.",
+            "fact_ta": "2013-ஆம் ஆண்டு நிறுவனங்கள் சட்டத்திலும் அத்தியாயம் XXI-A-ன் கீழ் உற்பத்தியாளர் நிறுவனங்கள் தக்கவைக்கப்பட்டுள்ளன."
+        }
+    ]
+
+
+def build_match_file():
+    raw_list = (
+        get_match_raw_questions() +
+        get_match_questions_batch2() +
+        get_match_questions_batch3() +
+        get_match_questions_batch4() +
+        get_match_questions_batch5()
+    )
+    print(f"Loaded {len(raw_list)} raw Match questions.")
+    assert len(raw_list) == 25, f"Expected 25 questions, got {len(raw_list)}"
+
+    questions = []
+    for idx, item in enumerate(raw_list, start=1):
+        qid = f"CS_MF_{idx:03d}"
+        opts = item["options"]
+        correct_key = item["correct_key"]
+
+        q = make_coop_q(
+            qid=qid,
+            diff="Medium" if idx % 2 == 0 else "Hard",
+            qtype="match_the_following",
+            subtopic=item["subtopic"],
+            en_stem=item["stem_en"],
+            ta_stem=item["stem_ta"],
+            en_a=opts[0][0],
+            ta_a=opts[0][1],
+            en_b=opts[1][0],
+            ta_b=opts[1][1],
+            en_c=opts[2][0],
+            ta_c=opts[2][1],
+            en_d=opts[3][0],
+            ta_d=opts[3][1],
+            correct_key=correct_key,
+            exp_en=item["exp_en"],
+            exp_ta=item["exp_ta"],
+            why_a_en=item["why_a_en"],
+            why_a_ta=item["why_a_ta"],
+            why_b_en=item["why_b_en"],
+            why_b_ta=item["why_b_ta"],
+            why_c_en=item["why_c_en"],
+            why_c_ta=item["why_c_ta"],
+            why_d_en=item["why_d_en"],
+            why_d_ta=item["why_d_ta"],
+            tip_en=item["tip_en"],
+            tip_ta=item["tip_ta"],
+            fact_en=item["fact_en"],
+            fact_ta=item["fact_ta"],
+            tags=["polity", "cooperative_societies", "match_the_following", item["subtopic"].lower().replace(" ", "_")]
+        )
+        questions.append(q)
+
+    # Randomize and balance answer keys: 6-7 per option, max run <= 2
+    balanced = randomize_and_balance_dataset(questions, seed=404)
+    key_dist = Counter(q["correct_answer"] for q in balanced)
+    print(f"Balanced Key Distribution: {dict(key_dist)}")
+
+    out_dir = os.path.join("data", "questions", "polity")
+    os.makedirs(out_dir, exist_ok=True)
+    out_path = os.path.join(out_dir, "cooperative_societies_match_the_following.json")
+
+    with open(out_path, "w", encoding="utf-8") as f:
+        json.dump(balanced, f, ensure_ascii=False, indent=2)
+    print(f"Saved balanced Match the Following MCQs to {out_path}")
+
+    # Validation
+    rep = ContentValidator.validate_file(out_path, expected_count=25, expected_prefix="CS_MF_")
+    print(f"Validation: {'PASS' if rep.is_valid else 'FAIL'} | Total: {rep.total_audited}")
+    print(f"Keys: {rep.key_distribution}")
+    if not rep.is_valid:
+        for iss in rep.issues:
+            print("  Issue:", iss.severity, iss.field_name, iss.message)
+    return rep.is_valid
+
+
+if __name__ == "__main__":
+    success = build_match_file()
+    if not success:
+        exit(1)

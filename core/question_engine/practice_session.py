@@ -24,6 +24,7 @@ PRACTICE_REPO_ORDER = [
     "match_the_following",
     "chronology",
     "pyq",
+    "grand_test",
 ]
 
 

@@ -15,13 +15,13 @@
     "options": [
       {
         "id": "A",
-        "en": "a-4, b-2, c-1, d-3",
-        "ta": "a-4, b-2, c-1, d-3"
+        "en": "a-2, b-4, c-3, d-1",
+        "ta": "a-2, b-4, c-3, d-1"
       },
       {
         "id": "B",
-        "en": "a-2, b-4, c-3, d-1",
-        "ta": "a-2, b-4, c-3, d-1"
+        "en": "a-4, b-2, c-1, d-3",
+        "ta": "a-4, b-2, c-1, d-3"
       },
       {
         "id": "C",
@@ -35,19 +35,19 @@
       }
     ],
     "options_en": [
-      "a-4, b-2, c-1, d-3",
       "a-2, b-4, c-3, d-1",
+      "a-4, b-2, c-1, d-3",
       "a-2, b-1, c-3, d-4",
       "a-3, b-4, c-2, d-1"
     ],
     "options_ta": [
-      "a-4, b-2, c-1, d-3",
       "a-2, b-4, c-3, d-1",
+      "a-4, b-2, c-1, d-3",
       "a-2, b-1, c-3, d-4",
       "a-3, b-4, c-2, d-1"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "The correct matches are: a. Tarkunde Committee (1974) - appointed by Jayaprakash Narayan; b. Dinesh Goswami Committee (1990) - set up by National Front government; c. Indrajit Gupta Committee (1998) - state funding of elections; d. Vohra Committee (1993) - criminal-political nexus.",
       "ta": "சரியான பொருத்தங்கள்: a. தர்குண்டே குழு (1974); b. தினேஷ் கோஸ்வாமி குழு (1990); c. இந்திரஜித் குப்தா குழு (1998); d. வோரா குழு (1993 - அரசியல்-குற்றவாளிகள் தொடர்பு)."
@@ -56,12 +56,12 @@
     "explanation_ta": "சரியான பொருத்தங்கள்: a. தர்குண்டே குழு (1974); b. தினேஷ் கோஸ்வாமி குழு (1990); c. இந்திரஜித் குப்தா குழு (1998); d. வோரா குழு (1993 - அரசியல்-குற்றவாளிகள் தொடர்பு).",
     "why_not_others": {
       "A": {
-        "en": "Option A (a-4, b-2, c-1, d-3) is incorrect because one or more pairs are mismatched.",
-        "ta": "தெரிவு A (a-4, b-2, c-1, d-3) தவறானது, ஏனெனில் ஒன்று அல்லது அதற்கு மேற்பட்ட இணைகள் தவறாகப் பொருத்தப்பட்டுள்ளன."
-      },
-      "B": {
         "en": "Option B correctly pairs all elements: a-2, b-4, c-3, d-1.",
         "ta": "தெரிவு B அனைத்து கூறுகளையும் சரியாக பொருத்துகிறது: a-2, b-4, c-3, d-1."
+      },
+      "B": {
+        "en": "Option A (a-4, b-2, c-1, d-3) is incorrect because one or more pairs are mismatched.",
+        "ta": "தெரிவு A (a-4, b-2, c-1, d-3) தவறானது, ஏனெனில் ஒன்று அல்லது அதற்கு மேற்பட்ட இணைகள் தவறாகப் பொருத்தப்பட்டுள்ளன."
       },
       "C": {
         "en": "Option C (a-2, b-1, c-3, d-4) is incorrect because one or more pairs are mismatched.",
@@ -220,8 +220,8 @@
       },
       {
         "id": "B",
-        "en": "a-1, b-3, c-2, d-4",
-        "ta": "a-1, b-3, c-2, d-4"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "C",
@@ -230,24 +230,24 @@
       },
       {
         "id": "D",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-1, b-3, c-2, d-4",
+        "ta": "a-1, b-3, c-2, d-4"
       }
     ],
     "options_en": [
       "a-2, b-1, c-4, d-3",
-      "a-1, b-3, c-2, d-4",
+      "a-1, b-2, c-3, d-4",
       "a-3, b-4, c-1, d-2",
-      "a-1, b-2, c-3, d-4"
+      "a-1, b-3, c-2, d-4"
     ],
     "options_ta": [
       "a-2, b-1, c-4, d-3",
-      "a-1, b-3, c-2, d-4",
+      "a-1, b-2, c-3, d-4",
       "a-3, b-4, c-1, d-2",
-      "a-1, b-2, c-3, d-4"
+      "a-1, b-3, c-2, d-4"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "The correct matches are: a. ADR (2002) - mandatory disclosure under Article 19(1)(a); b. Lily Thomas (2013) - struck down 3-month protection under Sec 8(4); c. PUCL (2013) - directed inclusion of NOTA; d. Public Interest Foundation (2018) - directed publishing criminal history in media thrice.",
       "ta": "சரியான பொருத்தங்கள்: a. ஏடிஆர் (2002) - வேட்பாளர் சொத்து மற்றும் குற்ற விவரங்கள் பிரகடனம்; b. லில்லி தாமஸ் (2013) - பிரிவு 8(4) ரத்து; c. பியுசிஎல் (2013) - நோட்டா அறிமுகம்; d. பப்ளிக் இன்ட்ரஸ்ட் ஃபவுண்டேஷன் (2018) - குற்ற விவரங்களை ஊடகங்களில் வெளியிடல்."
@@ -260,16 +260,16 @@
         "ta": "தெரிவு A (a-2, b-1, c-4, d-3) தவறானது, ஏனெனில் ஒன்று அல்லது அதற்கு மேற்பட்ட இணைகள் தவறாகப் பொருத்தப்பட்டுள்ளன."
       },
       "B": {
-        "en": "Option B (a-1, b-3, c-2, d-4) is incorrect because one or more pairs are mismatched.",
-        "ta": "தெரிவு B (a-1, b-3, c-2, d-4) தவறானது, ஏனெனில் ஒன்று அல்லது அதற்கு மேற்பட்ட இணைகள் தவறாகப் பொருத்தப்பட்டுள்ளன."
+        "en": "Option D correctly pairs all elements: a-1, b-2, c-3, d-4.",
+        "ta": "தெரிவு D அனைத்து கூறுகளையும் சரியாக பொருத்துகிறது: a-1, b-2, c-3, d-4."
       },
       "C": {
         "en": "Option C (a-3, b-4, c-1, d-2) is incorrect because one or more pairs are mismatched.",
         "ta": "தெரிவு C (a-3, b-4, c-1, d-2) தவறானது, ஏனெனில் ஒன்று அல்லது அதற்கு மேற்பட்ட இணைகள் தவறாகப் பொருத்தப்பட்டுள்ளன."
       },
       "D": {
-        "en": "Option D correctly pairs all elements: a-1, b-2, c-3, d-4.",
-        "ta": "தெரிவு D அனைத்து கூறுகளையும் சரியாக பொருத்துகிறது: a-1, b-2, c-3, d-4."
+        "en": "Option B (a-1, b-3, c-2, d-4) is incorrect because one or more pairs are mismatched.",
+        "ta": "தெரிவு B (a-1, b-3, c-2, d-4) தவறானது, ஏனெனில் ஒன்று அல்லது அதற்கு மேற்பட்ட இணைகள் தவறாகப் பொருத்தப்பட்டுள்ளன."
       }
     },
     "tnpsc_tip": {
@@ -315,13 +315,13 @@
     "options": [
       {
         "id": "A",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-2, b-1, c-4, d-3",
+        "ta": "a-2, b-1, c-4, d-3"
       },
       {
         "id": "B",
-        "en": "a-2, b-1, c-4, d-3",
-        "ta": "a-2, b-1, c-4, d-3"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "C",
@@ -335,19 +335,19 @@
       }
     ],
     "options_en": [
-      "a-1, b-2, c-3, d-4",
       "a-2, b-1, c-4, d-3",
+      "a-1, b-2, c-3, d-4",
       "a-3, b-4, c-1, d-2",
       "a-1, b-3, c-2, d-4"
     ],
     "options_ta": [
-      "a-1, b-2, c-3, d-4",
       "a-2, b-1, c-4, d-3",
+      "a-1, b-2, c-3, d-4",
       "a-3, b-4, c-1, d-2",
       "a-1, b-3, c-2, d-4"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "The correct matches under RPA 1950 are: a. Section 15 - electoral roll for each constituency; b. Section 20 - definition of ordinarily resident; c. Section 20A - enrolment of overseas electors; d. Section 32 - penalty for breach of official duty.",
       "ta": "1950 சட்டத்தின் கீழ் சரியான பொருத்தங்கள்: a. பிரிவு 15 - தொகுதி வாக்காளர் பட்டியல்; b. பிரிவு 20 - வழக்கமாக வசிப்பவர்; c. பிரிவு 20A - வெளிநாடு வாழ் இந்தியர் வாக்காளர் பதிவு; d. பிரிவு 32 - அதிகாரிகளின் கடமை தவறுதலுக்கான தண்டனை."
@@ -356,12 +356,12 @@
     "explanation_ta": "1950 சட்டத்தின் கீழ் சரியான பொருத்தங்கள்: a. பிரிவு 15 - தொகுதி வாக்காளர் பட்டியல்; b. பிரிவு 20 - வழக்கமாக வசிப்பவர்; c. பிரிவு 20A - வெளிநாடு வாழ் இந்தியர் வாக்காளர் பதிவு; d. பிரிவு 32 - அதிகாரிகளின் கடமை தவறுதலுக்கான தண்டனை.",
     "why_not_others": {
       "A": {
-        "en": "Option A correctly pairs all elements: a-1, b-2, c-3, d-4.",
-        "ta": "தெரிவு A அனைத்து கூறுகளையும் சரியாக பொருத்துகிறது: a-1, b-2, c-3, d-4."
-      },
-      "B": {
         "en": "Option B (a-2, b-1, c-4, d-3) is incorrect because one or more pairs are mismatched.",
         "ta": "தெரிவு B (a-2, b-1, c-4, d-3) தவறானது, ஏனெனில் ஒன்று அல்லது அதற்கு மேற்பட்ட இணைகள் தவறாகப் பொருத்தப்பட்டுள்ளன."
+      },
+      "B": {
+        "en": "Option A correctly pairs all elements: a-1, b-2, c-3, d-4.",
+        "ta": "தெரிவு A அனைத்து கூறுகளையும் சரியாக பொருத்துகிறது: a-1, b-2, c-3, d-4."
       },
       "C": {
         "en": "Option C (a-3, b-4, c-1, d-2) is incorrect because one or more pairs are mismatched.",
@@ -420,8 +420,8 @@
       },
       {
         "id": "B",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-1, b-3, c-2, d-4",
+        "ta": "a-1, b-3, c-2, d-4"
       },
       {
         "id": "C",
@@ -430,24 +430,24 @@
       },
       {
         "id": "D",
-        "en": "a-1, b-3, c-2, d-4",
-        "ta": "a-1, b-3, c-2, d-4"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       }
     ],
     "options_en": [
       "a-2, b-1, c-4, d-3",
-      "a-1, b-2, c-3, d-4",
+      "a-1, b-3, c-2, d-4",
       "a-4, b-3, c-2, d-1",
-      "a-1, b-3, c-2, d-4"
+      "a-1, b-2, c-3, d-4"
     ],
     "options_ta": [
       "a-2, b-1, c-4, d-3",
-      "a-1, b-2, c-3, d-4",
+      "a-1, b-3, c-2, d-4",
       "a-4, b-3, c-2, d-1",
-      "a-1, b-3, c-2, d-4"
+      "a-1, b-2, c-3, d-4"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "The correct matches under RPA 1951 are: a. Section 8 - disqualification on criminal conviction; b. Section 29A - registration of political parties; c. Section 33(7) - maximum two constituencies per candidate; d. Section 58A - countermanding/adjournment for booth capturing.",
       "ta": "1951 சட்டத்தின் கீழ் சரியான பொருத்தங்கள்: a. பிரிவு 8 - குற்றத் தண்டனைக்கான தகுதிநீக்கம்; b. பிரிவு 29A - அரசியல் கட்சிகள் பதிவு; c. பிரிவு 33(7) - அதிகபட்சம் இரண்டு தொகுதிகள்; d. பிரிவு 58A - பூத் கைப்பற்றல் நடவடிக்கை."
@@ -460,16 +460,16 @@
         "ta": "தெரிவு A (a-2, b-1, c-4, d-3) தவறானது, ஏனெனில் ஒன்று அல்லது அதற்கு மேற்பட்ட இணைகள் தவறாகப் பொருத்தப்பட்டுள்ளன."
       },
       "B": {
-        "en": "Option B correctly pairs all elements: a-1, b-2, c-3, d-4.",
-        "ta": "தெரிவு B அனைத்து கூறுகளையும் சரியாக பொருத்துகிறது: a-1, b-2, c-3, d-4."
+        "en": "Option D (a-1, b-3, c-2, d-4) is incorrect because one or more pairs are mismatched.",
+        "ta": "தெரிவு D (a-1, b-3, c-2, d-4) தவறானது, ஏனெனில் ஒன்று அல்லது அதற்கு மேற்பட்ட இணைகள் தவறாகப் பொருத்தப்பட்டுள்ளன."
       },
       "C": {
         "en": "Option C (a-4, b-3, c-2, d-1) is incorrect because one or more pairs are mismatched.",
         "ta": "தெரிவு C (a-4, b-3, c-2, d-1) தவறானது, ஏனெனில் ஒன்று அல்லது அதற்கு மேற்பட்ட இணைகள் தவறாகப் பொருத்தப்பட்டுள்ளன."
       },
       "D": {
-        "en": "Option D (a-1, b-3, c-2, d-4) is incorrect because one or more pairs are mismatched.",
-        "ta": "தெரிவு D (a-1, b-3, c-2, d-4) தவறானது, ஏனெனில் ஒன்று அல்லது அதற்கு மேற்பட்ட இணைகள் தவறாகப் பொருத்தப்பட்டுள்ளன."
+        "en": "Option B correctly pairs all elements: a-1, b-2, c-3, d-4.",
+        "ta": "தெரிவு B அனைத்து கூறுகளையும் சரியாக பொருத்துகிறது: a-1, b-2, c-3, d-4."
       }
     },
     "tnpsc_tip": {
@@ -515,8 +515,8 @@
     "options": [
       {
         "id": "A",
-        "en": "a-2, b-1, c-4, d-3",
-        "ta": "a-2, b-1, c-4, d-3"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "B",
@@ -525,8 +525,8 @@
       },
       {
         "id": "C",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-2, b-1, c-4, d-3",
+        "ta": "a-2, b-1, c-4, d-3"
       },
       {
         "id": "D",
@@ -535,19 +535,19 @@
       }
     ],
     "options_en": [
-      "a-2, b-1, c-4, d-3",
-      "a-3, b-4, c-1, d-2",
       "a-1, b-2, c-3, d-4",
+      "a-3, b-4, c-1, d-2",
+      "a-2, b-1, c-4, d-3",
       "a-1, b-4, c-2, d-3"
     ],
     "options_ta": [
-      "a-2, b-1, c-4, d-3",
-      "a-3, b-4, c-1, d-2",
       "a-1, b-2, c-3, d-4",
+      "a-3, b-4, c-1, d-2",
+      "a-2, b-1, c-4, d-3",
       "a-1, b-4, c-2, d-3"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "The correct matches under RPA 1951 are: a. Section 126 - 48-hour silence period prohibition; b. Section 126A - ban on exit polls; c. Section 130 - ban on canvassing within 100 metres of polling station; d. Section 134A - ban on government servants acting as candidate agents.",
       "ta": "சரியான பொருத்தங்கள்: a. பிரிவு 126 - 48 மணி நேர அமைதிக்கால தடை; b. பிரிவு 126A - எக்சிட் போல் தடை; c. பிரிவு 130 - 100 மீட்டருக்குள் வாக்கு சேகரிப்பு தடை; d. பிரிவு 134A - அரசு ஊழியர் தேர்தல் முகவராக செயல்பட தடை."
@@ -556,16 +556,16 @@
     "explanation_ta": "சரியான பொருத்தங்கள்: a. பிரிவு 126 - 48 மணி நேர அமைதிக்கால தடை; b. பிரிவு 126A - எக்சிட் போல் தடை; c. பிரிவு 130 - 100 மீட்டருக்குள் வாக்கு சேகரிப்பு தடை; d. பிரிவு 134A - அரசு ஊழியர் தேர்தல் முகவராக செயல்பட தடை.",
     "why_not_others": {
       "A": {
-        "en": "Option A (a-2, b-1, c-4, d-3) is incorrect because one or more pairs are mismatched.",
-        "ta": "தெரிவு A (a-2, b-1, c-4, d-3) தவறானது, ஏனெனில் ஒன்று அல்லது அதற்கு மேற்பட்ட இணைகள் தவறாகப் பொருத்தப்பட்டுள்ளன."
+        "en": "Option C correctly pairs all elements: a-1, b-2, c-3, d-4.",
+        "ta": "தெரிவு C அனைத்து கூறுகளையும் சரியாக பொருத்துகிறது: a-1, b-2, c-3, d-4."
       },
       "B": {
         "en": "Option B (a-3, b-4, c-1, d-2) is incorrect because one or more pairs are mismatched.",
         "ta": "தெரிவு B (a-3, b-4, c-1, d-2) தவறானது, ஏனெனில் ஒன்று அல்லது அதற்கு மேற்பட்ட இணைகள் தவறாகப் பொருத்தப்பட்டுள்ளன."
       },
       "C": {
-        "en": "Option C correctly pairs all elements: a-1, b-2, c-3, d-4.",
-        "ta": "தெரிவு C அனைத்து கூறுகளையும் சரியாக பொருத்துகிறது: a-1, b-2, c-3, d-4."
+        "en": "Option A (a-2, b-1, c-4, d-3) is incorrect because one or more pairs are mismatched.",
+        "ta": "தெரிவு A (a-2, b-1, c-4, d-3) தவறானது, ஏனெனில் ஒன்று அல்லது அதற்கு மேற்பட்ட இணைகள் தவறாகப் பொருத்தப்பட்டுள்ளன."
       },
       "D": {
         "en": "Option D (a-1, b-4, c-2, d-3) is incorrect because one or more pairs are mismatched.",
@@ -625,29 +625,29 @@
       },
       {
         "id": "C",
-        "en": "a-4, b-3, c-2, d-1",
-        "ta": "a-4, b-3, c-2, d-1"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "D",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-4, b-3, c-2, d-1",
+        "ta": "a-4, b-3, c-2, d-1"
       }
     ],
     "options_en": [
       "a-2, b-1, c-4, d-3",
       "a-3, b-4, c-1, d-2",
-      "a-4, b-3, c-2, d-1",
-      "a-1, b-2, c-3, d-4"
+      "a-1, b-2, c-3, d-4",
+      "a-4, b-3, c-2, d-1"
     ],
     "options_ta": [
       "a-2, b-1, c-4, d-3",
       "a-3, b-4, c-1, d-2",
-      "a-4, b-3, c-2, d-1",
-      "a-1, b-2, c-3, d-4"
+      "a-1, b-2, c-3, d-4",
+      "a-4, b-3, c-2, d-1"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "The correct constitutional matches are: a. Article 324 - powers of Election Commission; b. Article 325 - single non-discriminatory electoral roll; c. Article 326 - adult suffrage; d. Article 329 - judicial bar on questioning delimitation and elections except via election petition.",
       "ta": "அரசியலமைப்பு சரத்துகளின் சரியான பொருத்தங்கள்: a. சரத்து 324 - தேர்தல் ஆணையத்தின் அதிகாரங்கள்; b. சரத்து 325 - பாகுபாடற்ற பொது வாக்காளர் பட்டியல்; c. சரத்து 326 - வயதுவந்தோர் வாக்குரிமை; d. சரத்து 329 - தேர்தல் விவகாரங்களில் நீதிமன்ற தலையீட்டிற்கு தடை."
@@ -664,12 +664,12 @@
         "ta": "தெரிவு B (a-3, b-4, c-1, d-2) தவறானது, ஏனெனில் ஒன்று அல்லது அதற்கு மேற்பட்ட இணைகள் தவறாகப் பொருத்தப்பட்டுள்ளன."
       },
       "C": {
-        "en": "Option C (a-4, b-3, c-2, d-1) is incorrect because one or more pairs are mismatched.",
-        "ta": "தெரிவு C (a-4, b-3, c-2, d-1) தவறானது, ஏனெனில் ஒன்று அல்லது அதற்கு மேற்பட்ட இணைகள் தவறாகப் பொருத்தப்பட்டுள்ளன."
-      },
-      "D": {
         "en": "Option D correctly pairs all elements: a-1, b-2, c-3, d-4.",
         "ta": "தெரிவு D அனைத்து கூறுகளையும் சரியாக பொருத்துகிறது: a-1, b-2, c-3, d-4."
+      },
+      "D": {
+        "en": "Option C (a-4, b-3, c-2, d-1) is incorrect because one or more pairs are mismatched.",
+        "ta": "தெரிவு C (a-4, b-3, c-2, d-1) தவறானது, ஏனெனில் ஒன்று அல்லது அதற்கு மேற்பட்ட இணைகள் தவறாகப் பொருத்தப்பட்டுள்ளன."
       }
     },
     "tnpsc_tip": {
@@ -1115,8 +1115,8 @@
     "options": [
       {
         "id": "A",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-1, b-3, c-2, d-4",
+        "ta": "a-1, b-3, c-2, d-4"
       },
       {
         "id": "B",
@@ -1130,24 +1130,24 @@
       },
       {
         "id": "D",
-        "en": "a-1, b-3, c-2, d-4",
-        "ta": "a-1, b-3, c-2, d-4"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       }
     ],
     "options_en": [
-      "a-1, b-2, c-3, d-4",
+      "a-1, b-3, c-2, d-4",
       "a-2, b-1, c-4, d-3",
       "a-3, b-4, c-1, d-2",
-      "a-1, b-3, c-2, d-4"
+      "a-1, b-2, c-3, d-4"
     ],
     "options_ta": [
-      "a-1, b-2, c-3, d-4",
+      "a-1, b-3, c-2, d-4",
       "a-2, b-1, c-4, d-3",
       "a-3, b-4, c-1, d-2",
-      "a-1, b-3, c-2, d-4"
+      "a-1, b-2, c-3, d-4"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "The correct matches are: a. NCRWC (2002) - suggested constructive vote of no-confidence; b. Second ARC (2007) - disqualification upon framing of charges for heinous crimes; c. Law Commission 244th Report (2014) - focused on disqualification reforms; d. Law Commission 255th Report (2015) - comprehensive electoral reforms.",
       "ta": "சரியான பொருத்தங்கள்: a. வெங்கடாசலையா ஆணையம் - ஆக்கப்பூர்வ நம்பிக்கையில்லா தீர்மானம்; b. இரண்டாவது ARC - குற்றப்பத்திரிகை தாக்கல் அடிப்படையில் தகுதிநீக்கம்; c. 244-வது சட்ட ஆணையம் - தேர்தல் தகுதிநீக்கம்; d. 255-வது சட்ட ஆணையம் - விரிவான தேர்தல் சீர்திருத்தங்கள்."
@@ -1156,8 +1156,8 @@
     "explanation_ta": "சரியான பொருத்தங்கள்: a. வெங்கடாசலையா ஆணையம் - ஆக்கப்பூர்வ நம்பிக்கையில்லா தீர்மானம்; b. இரண்டாவது ARC - குற்றப்பத்திரிகை தாக்கல் அடிப்படையில் தகுதிநீக்கம்; c. 244-வது சட்ட ஆணையம் - தேர்தல் தகுதிநீக்கம்; d. 255-வது சட்ட ஆணையம் - விரிவான தேர்தல் சீர்திருத்தங்கள்.",
     "why_not_others": {
       "A": {
-        "en": "Option A correctly pairs all elements: a-1, b-2, c-3, d-4.",
-        "ta": "தெரிவு A அனைத்து கூறுகளையும் சரியாக பொருத்துகிறது: a-1, b-2, c-3, d-4."
+        "en": "Option D (a-1, b-3, c-2, d-4) is incorrect because one or more pairs are mismatched.",
+        "ta": "தெரிவு D (a-1, b-3, c-2, d-4) தவறானது, ஏனெனில் ஒன்று அல்லது அதற்கு மேற்பட்ட இணைகள் தவறாகப் பொருத்தப்பட்டுள்ளன."
       },
       "B": {
         "en": "Option B (a-2, b-1, c-4, d-3) is incorrect because one or more pairs are mismatched.",
@@ -1168,8 +1168,8 @@
         "ta": "தெரிவு C (a-3, b-4, c-1, d-2) தவறானது, ஏனெனில் ஒன்று அல்லது அதற்கு மேற்பட்ட இணைகள் தவறாகப் பொருத்தப்பட்டுள்ளன."
       },
       "D": {
-        "en": "Option D (a-1, b-3, c-2, d-4) is incorrect because one or more pairs are mismatched.",
-        "ta": "தெரிவு D (a-1, b-3, c-2, d-4) தவறானது, ஏனெனில் ஒன்று அல்லது அதற்கு மேற்பட்ட இணைகள் தவறாகப் பொருத்தப்பட்டுள்ளன."
+        "en": "Option A correctly pairs all elements: a-1, b-2, c-3, d-4.",
+        "ta": "தெரிவு A அனைத்து கூறுகளையும் சரியாக பொருத்துகிறது: a-1, b-2, c-3, d-4."
       }
     },
     "tnpsc_tip": {
@@ -1325,29 +1325,29 @@
       },
       {
         "id": "C",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-1, b-3, c-2, d-4",
+        "ta": "a-1, b-3, c-2, d-4"
       },
       {
         "id": "D",
-        "en": "a-1, b-3, c-2, d-4",
-        "ta": "a-1, b-3, c-2, d-4"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       }
     ],
     "options_en": [
       "a-2, b-1, c-4, d-3",
       "a-3, b-4, c-1, d-2",
-      "a-1, b-2, c-3, d-4",
-      "a-1, b-3, c-2, d-4"
+      "a-1, b-3, c-2, d-4",
+      "a-1, b-2, c-3, d-4"
     ],
     "options_ta": [
       "a-2, b-1, c-4, d-3",
       "a-3, b-4, c-1, d-2",
-      "a-1, b-2, c-3, d-4",
-      "a-1, b-3, c-2, d-4"
+      "a-1, b-3, c-2, d-4",
+      "a-1, b-2, c-3, d-4"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "The correct matches of disqualification durations are: a. Sec 8(1) - 6 years from conviction date; b. Sec 8(3) - term of imprisonment plus 6 years post-release; c. Sec 9 - 5 years from dismissal for corruption/disloyalty; d. Sec 10A - 3 years for non-filing of expense accounts.",
       "ta": "தகுதிநீக்க காலங்களின் சரியான பொருத்தங்கள்: a. பிரிவு 8(1) - தண்டனை நாளிலிருந்து 6 ஆண்டுகள்; b. பிரிவு 8(3) - சிறை காலம் முடிந்து மேலும் 6 ஆண்டுகள்; c. பிரிவு 9 - பணிநீக்கத்திலிருந்து 5 ஆண்டுகள்; d. பிரிவு 10A - செலவு கணக்கு தாக்கல் செய்யாததற்கு 3 ஆண்டுகள்."
@@ -1364,12 +1364,12 @@
         "ta": "தெரிவு B (a-3, b-4, c-1, d-2) தவறானது, ஏனெனில் ஒன்று அல்லது அதற்கு மேற்பட்ட இணைகள் தவறாகப் பொருத்தப்பட்டுள்ளன."
       },
       "C": {
-        "en": "Option C correctly pairs all elements: a-1, b-2, c-3, d-4.",
-        "ta": "தெரிவு C அனைத்து கூறுகளையும் சரியாக பொருத்துகிறது: a-1, b-2, c-3, d-4."
-      },
-      "D": {
         "en": "Option D (a-1, b-3, c-2, d-4) is incorrect because one or more pairs are mismatched.",
         "ta": "தெரிவு D (a-1, b-3, c-2, d-4) தவறானது, ஏனெனில் ஒன்று அல்லது அதற்கு மேற்பட்ட இணைகள் தவறாகப் பொருத்தப்பட்டுள்ளன."
+      },
+      "D": {
+        "en": "Option C correctly pairs all elements: a-1, b-2, c-3, d-4.",
+        "ta": "தெரிவு C அனைத்து கூறுகளையும் சரியாக பொருத்துகிறது: a-1, b-2, c-3, d-4."
       }
     },
     "tnpsc_tip": {
@@ -1420,8 +1420,8 @@
       },
       {
         "id": "B",
-        "en": "a-1, b-3, c-2, d-4",
-        "ta": "a-1, b-3, c-2, d-4"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "C",
@@ -1430,24 +1430,24 @@
       },
       {
         "id": "D",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-1, b-3, c-2, d-4",
+        "ta": "a-1, b-3, c-2, d-4"
       }
     ],
     "options_en": [
       "a-2, b-1, c-4, d-3",
-      "a-1, b-3, c-2, d-4",
+      "a-1, b-2, c-3, d-4",
       "a-3, b-4, c-1, d-2",
-      "a-1, b-2, c-3, d-4"
+      "a-1, b-3, c-2, d-4"
     ],
     "options_ta": [
       "a-2, b-1, c-4, d-3",
-      "a-1, b-3, c-2, d-4",
+      "a-1, b-2, c-3, d-4",
       "a-3, b-4, c-1, d-2",
-      "a-1, b-2, c-3, d-4"
+      "a-1, b-3, c-2, d-4"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "The correct matches of political finance reforms are: a. 100% tax deduction for corporate/individual donations under Sec 80GGB/80GGC - 2003; b. Electoral Trusts Scheme notified - 2013; c. Cash donation limit slashed to Rs 2,000 in Union Budget - 2017; d. Electoral Bonds struck down - 2024.",
       "ta": "சரியான பொருத்தங்கள்: a. நன்கொடை வரி விலக்கு பிரிவு 80GGB - 2003; b. தேர்தல் அறக்கட்டளை திட்டம் - 2013; c. ரொக்க நன்கொடை வரம்பு ரூ.2,000 ஆக குறைப்பு - 2017; d. தேர்தல் பத்திரங்கள் உச்ச நீதிமன்றத்தால் ரத்து - 2024."
@@ -1460,16 +1460,16 @@
         "ta": "தெரிவு A (a-2, b-1, c-4, d-3) தவறானது, ஏனெனில் ஒன்று அல்லது அதற்கு மேற்பட்ட இணைகள் தவறாகப் பொருத்தப்பட்டுள்ளன."
       },
       "B": {
-        "en": "Option B (a-1, b-3, c-2, d-4) is incorrect because one or more pairs are mismatched.",
-        "ta": "தெரிவு B (a-1, b-3, c-2, d-4) தவறானது, ஏனெனில் ஒன்று அல்லது அதற்கு மேற்பட்ட இணைகள் தவறாகப் பொருத்தப்பட்டுள்ளன."
+        "en": "Option D correctly pairs all elements: a-1, b-2, c-3, d-4.",
+        "ta": "தெரிவு D அனைத்து கூறுகளையும் சரியாக பொருத்துகிறது: a-1, b-2, c-3, d-4."
       },
       "C": {
         "en": "Option C (a-3, b-4, c-1, d-2) is incorrect because one or more pairs are mismatched.",
         "ta": "தெரிவு C (a-3, b-4, c-1, d-2) தவறானது, ஏனெனில் ஒன்று அல்லது அதற்கு மேற்பட்ட இணைகள் தவறாகப் பொருத்தப்பட்டுள்ளன."
       },
       "D": {
-        "en": "Option D correctly pairs all elements: a-1, b-2, c-3, d-4.",
-        "ta": "தெரிவு D அனைத்து கூறுகளையும் சரியாக பொருத்துகிறது: a-1, b-2, c-3, d-4."
+        "en": "Option B (a-1, b-3, c-2, d-4) is incorrect because one or more pairs are mismatched.",
+        "ta": "தெரிவு B (a-1, b-3, c-2, d-4) தவறானது, ஏனெனில் ஒன்று அல்லது அதற்கு மேற்பட்ட இணைகள் தவறாகப் பொருத்தப்பட்டுள்ளன."
       }
     },
     "tnpsc_tip": {
@@ -1515,8 +1515,8 @@
     "options": [
       {
         "id": "A",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-1, b-3, c-2, d-4",
+        "ta": "a-1, b-3, c-2, d-4"
       },
       {
         "id": "B",
@@ -1525,8 +1525,8 @@
       },
       {
         "id": "C",
-        "en": "a-1, b-3, c-2, d-4",
-        "ta": "a-1, b-3, c-2, d-4"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "D",
@@ -1535,19 +1535,19 @@
       }
     ],
     "options_en": [
-      "a-1, b-2, c-3, d-4",
-      "a-2, b-1, c-4, d-3",
       "a-1, b-3, c-2, d-4",
+      "a-2, b-1, c-4, d-3",
+      "a-1, b-2, c-3, d-4",
       "a-4, b-2, c-3, d-1"
     ],
     "options_ta": [
-      "a-1, b-2, c-3, d-4",
-      "a-2, b-1, c-4, d-3",
       "a-1, b-3, c-2, d-4",
+      "a-2, b-1, c-4, d-3",
+      "a-1, b-2, c-3, d-4",
       "a-4, b-2, c-3, d-1"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "The correct chronological matches are: a. Paravur EVM pilot - 1982; b. Section 61A amendment - 1989; c. 100% EVM deployment nationwide - 2004; d. Noksen VVPAT pilot - 2013.",
       "ta": "சரியான பொருத்தங்கள்: a. பரவூர் EVM பயன்பாடு - 1982; b. பிரிவு 61A சட்டம் - 1989; c. நாடு முழுவதும் 100% EVM - 2004; d. நோக்சென் VVPAT முன்னோடி திட்டம் - 2013."
@@ -1556,16 +1556,16 @@
     "explanation_ta": "சரியான பொருத்தங்கள்: a. பரவூர் EVM பயன்பாடு - 1982; b. பிரிவு 61A சட்டம் - 1989; c. நாடு முழுவதும் 100% EVM - 2004; d. நோக்சென் VVPAT முன்னோடி திட்டம் - 2013.",
     "why_not_others": {
       "A": {
-        "en": "Option A correctly pairs all elements: a-1, b-2, c-3, d-4.",
-        "ta": "தெரிவு A அனைத்து கூறுகளையும் சரியாக பொருத்துகிறது: a-1, b-2, c-3, d-4."
+        "en": "Option C (a-1, b-3, c-2, d-4) is incorrect because one or more pairs are mismatched.",
+        "ta": "தெரிவு C (a-1, b-3, c-2, d-4) தவறானது, ஏனெனில் ஒன்று அல்லது அதற்கு மேற்பட்ட இணைகள் தவறாகப் பொருத்தப்பட்டுள்ளன."
       },
       "B": {
         "en": "Option B (a-2, b-1, c-4, d-3) is incorrect because one or more pairs are mismatched.",
         "ta": "தெரிவு B (a-2, b-1, c-4, d-3) தவறானது, ஏனெனில் ஒன்று அல்லது அதற்கு மேற்பட்ட இணைகள் தவறாகப் பொருத்தப்பட்டுள்ளன."
       },
       "C": {
-        "en": "Option C (a-1, b-3, c-2, d-4) is incorrect because one or more pairs are mismatched.",
-        "ta": "தெரிவு C (a-1, b-3, c-2, d-4) தவறானது, ஏனெனில் ஒன்று அல்லது அதற்கு மேற்பட்ட இணைகள் தவறாகப் பொருத்தப்பட்டுள்ளன."
+        "en": "Option A correctly pairs all elements: a-1, b-2, c-3, d-4.",
+        "ta": "தெரிவு A அனைத்து கூறுகளையும் சரியாக பொருத்துகிறது: a-1, b-2, c-3, d-4."
       },
       "D": {
         "en": "Option D (a-4, b-2, c-3, d-1) is incorrect because one or more pairs are mismatched.",
@@ -1615,13 +1615,13 @@
     "options": [
       {
         "id": "A",
-        "en": "a-2, b-1, c-4, d-3",
-        "ta": "a-2, b-1, c-4, d-3"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "B",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-2, b-1, c-4, d-3",
+        "ta": "a-2, b-1, c-4, d-3"
       },
       {
         "id": "C",
@@ -1635,19 +1635,19 @@
       }
     ],
     "options_en": [
-      "a-2, b-1, c-4, d-3",
       "a-1, b-2, c-3, d-4",
+      "a-2, b-1, c-4, d-3",
       "a-4, b-3, c-2, d-1",
       "a-1, b-3, c-2, d-4"
     ],
     "options_ta": [
-      "a-2, b-1, c-4, d-3",
       "a-1, b-2, c-3, d-4",
+      "a-2, b-1, c-4, d-3",
       "a-4, b-3, c-2, d-1",
       "a-1, b-3, c-2, d-4"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "The correct matches of Delimitation Commissions are: a. 1st Commission under 1952 Act; b. 2nd Commission under 1962 Act; c. 3rd Commission under 1972 Act; d. 4th Commission under 2002 Act.",
       "ta": "தொகுதி மறுவரையறை ஆணையங்களின் சரியான பொருத்தங்கள்: a. முதலாவது ஆணையம் - 1952 சட்டம்; b. இரண்டாவது ஆணையம் - 1962 சட்டம்; c. மூன்றாவது ஆணையம் - 1972 சட்டம்; d. நான்காவது ஆணையம் - 2002 சட்டம்."
@@ -1656,12 +1656,12 @@
     "explanation_ta": "தொகுதி மறுவரையறை ஆணையங்களின் சரியான பொருத்தங்கள்: a. முதலாவது ஆணையம் - 1952 சட்டம்; b. இரண்டாவது ஆணையம் - 1962 சட்டம்; c. மூன்றாவது ஆணையம் - 1972 சட்டம்; d. நான்காவது ஆணையம் - 2002 சட்டம்.",
     "why_not_others": {
       "A": {
-        "en": "Option A (a-2, b-1, c-4, d-3) is incorrect because one or more pairs are mismatched.",
-        "ta": "தெரிவு A (a-2, b-1, c-4, d-3) தவறானது, ஏனெனில் ஒன்று அல்லது அதற்கு மேற்பட்ட இணைகள் தவறாகப் பொருத்தப்பட்டுள்ளன."
-      },
-      "B": {
         "en": "Option B correctly pairs all elements: a-1, b-2, c-3, d-4.",
         "ta": "தெரிவு B அனைத்து கூறுகளையும் சரியாக பொருத்துகிறது: a-1, b-2, c-3, d-4."
+      },
+      "B": {
+        "en": "Option A (a-2, b-1, c-4, d-3) is incorrect because one or more pairs are mismatched.",
+        "ta": "தெரிவு A (a-2, b-1, c-4, d-3) தவறானது, ஏனெனில் ஒன்று அல்லது அதற்கு மேற்பட்ட இணைகள் தவறாகப் பொருத்தப்பட்டுள்ளன."
       },
       "C": {
         "en": "Option C (a-4, b-3, c-2, d-1) is incorrect because one or more pairs are mismatched.",
@@ -1915,8 +1915,8 @@
     "options": [
       {
         "id": "A",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-3, b-4, c-1, d-2",
+        "ta": "a-3, b-4, c-1, d-2"
       },
       {
         "id": "B",
@@ -1925,8 +1925,8 @@
       },
       {
         "id": "C",
-        "en": "a-3, b-4, c-1, d-2",
-        "ta": "a-3, b-4, c-1, d-2"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "D",
@@ -1935,19 +1935,19 @@
       }
     ],
     "options_en": [
-      "a-1, b-2, c-3, d-4",
-      "a-2, b-1, c-4, d-3",
       "a-3, b-4, c-1, d-2",
+      "a-2, b-1, c-4, d-3",
+      "a-1, b-2, c-3, d-4",
       "a-1, b-4, c-2, d-3"
     ],
     "options_ta": [
-      "a-1, b-2, c-3, d-4",
-      "a-2, b-1, c-4, d-3",
       "a-3, b-4, c-1, d-2",
+      "a-2, b-1, c-4, d-3",
+      "a-1, b-2, c-3, d-4",
       "a-1, b-4, c-2, d-3"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "The correct matches under Election Symbols Order 1968 are: a. State party - 6% votes + 2 MLAs; b. State party - 3% of total seats or 3 seats; c. National party - 6% votes in 4 states + 4 MPs; d. National party - recognized as state party in at least 4 states.",
       "ta": "சரியான பொருத்தங்கள்: a. மாநில கட்சி - 6% வாக்கு + 2 இடங்கள்; b. மாநில கட்சி - 3% இடங்கள் அல்லது 3 இடங்கள்; c. தேசிய கட்சி - 4 மாநிலங்களில் 6% வாக்கு + 4 மக்களவை இடங்கள்; d. தேசிய கட்சி - 4 மாநிலங்களில் மாநிலக் கட்சி அந்தஸ்து."
@@ -1956,16 +1956,16 @@
     "explanation_ta": "சரியான பொருத்தங்கள்: a. மாநில கட்சி - 6% வாக்கு + 2 இடங்கள்; b. மாநில கட்சி - 3% இடங்கள் அல்லது 3 இடங்கள்; c. தேசிய கட்சி - 4 மாநிலங்களில் 6% வாக்கு + 4 மக்களவை இடங்கள்; d. தேசிய கட்சி - 4 மாநிலங்களில் மாநிலக் கட்சி அந்தஸ்து.",
     "why_not_others": {
       "A": {
-        "en": "Option A correctly pairs all elements: a-1, b-2, c-3, d-4.",
-        "ta": "தெரிவு A அனைத்து கூறுகளையும் சரியாக பொருத்துகிறது: a-1, b-2, c-3, d-4."
+        "en": "Option C (a-3, b-4, c-1, d-2) is incorrect because one or more pairs are mismatched.",
+        "ta": "தெரிவு C (a-3, b-4, c-1, d-2) தவறானது, ஏனெனில் ஒன்று அல்லது அதற்கு மேற்பட்ட இணைகள் தவறாகப் பொருத்தப்பட்டுள்ளன."
       },
       "B": {
         "en": "Option B (a-2, b-1, c-4, d-3) is incorrect because one or more pairs are mismatched.",
         "ta": "தெரிவு B (a-2, b-1, c-4, d-3) தவறானது, ஏனெனில் ஒன்று அல்லது அதற்கு மேற்பட்ட இணைகள் தவறாகப் பொருத்தப்பட்டுள்ளன."
       },
       "C": {
-        "en": "Option C (a-3, b-4, c-1, d-2) is incorrect because one or more pairs are mismatched.",
-        "ta": "தெரிவு C (a-3, b-4, c-1, d-2) தவறானது, ஏனெனில் ஒன்று அல்லது அதற்கு மேற்பட்ட இணைகள் தவறாகப் பொருத்தப்பட்டுள்ளன."
+        "en": "Option A correctly pairs all elements: a-1, b-2, c-3, d-4.",
+        "ta": "தெரிவு A அனைத்து கூறுகளையும் சரியாக பொருத்துகிறது: a-1, b-2, c-3, d-4."
       },
       "D": {
         "en": "Option D (a-1, b-4, c-2, d-3) is incorrect because one or more pairs are mismatched.",
@@ -2020,8 +2020,8 @@
       },
       {
         "id": "B",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-3, b-4, c-1, d-2",
+        "ta": "a-3, b-4, c-1, d-2"
       },
       {
         "id": "C",
@@ -2030,24 +2030,24 @@
       },
       {
         "id": "D",
-        "en": "a-3, b-4, c-1, d-2",
-        "ta": "a-3, b-4, c-1, d-2"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       }
     ],
     "options_en": [
       "a-2, b-1, c-4, d-3",
-      "a-1, b-2, c-3, d-4",
+      "a-3, b-4, c-1, d-2",
       "a-1, b-3, c-2, d-4",
-      "a-3, b-4, c-1, d-2"
+      "a-1, b-2, c-3, d-4"
     ],
     "options_ta": [
       "a-2, b-1, c-4, d-3",
-      "a-1, b-2, c-3, d-4",
+      "a-3, b-4, c-1, d-2",
       "a-1, b-3, c-2, d-4",
-      "a-3, b-4, c-1, d-2"
+      "a-1, b-2, c-3, d-4"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "The correct matches of election observers are: a. General Observer - IAS officer overseeing overall process; b. Expenditure Observer - IRS officer inspecting shadow registers; c. Police Observer - IPS officer monitoring security; d. Micro Observer - deployed inside critical booths reporting directly to General Observer.",
       "ta": "பார்வையாளர்களின் சரியான பொருத்தங்கள்: a. பொதுப் பார்வையாளர் - IAS அதிகாரி; b. செலவுப் பார்வையாளர் - IRS அதிகாரி; c. காவல் பார்வையாளர் - IPS அதிகாரி; d. மைக்ரோ பார்வையாளர் - பதற்றமான சாவடிகளில் மத்திய அரசு ஊழியர்."
@@ -2060,16 +2060,16 @@
         "ta": "தெரிவு A (a-2, b-1, c-4, d-3) தவறானது, ஏனெனில் ஒன்று அல்லது அதற்கு மேற்பட்ட இணைகள் தவறாகப் பொருத்தப்பட்டுள்ளன."
       },
       "B": {
-        "en": "Option B correctly pairs all elements: a-1, b-2, c-3, d-4.",
-        "ta": "தெரிவு B அனைத்து கூறுகளையும் சரியாக பொருத்துகிறது: a-1, b-2, c-3, d-4."
+        "en": "Option D (a-3, b-4, c-1, d-2) is incorrect because one or more pairs are mismatched.",
+        "ta": "தெரிவு D (a-3, b-4, c-1, d-2) தவறானது, ஏனெனில் ஒன்று அல்லது அதற்கு மேற்பட்ட இணைகள் தவறாகப் பொருத்தப்பட்டுள்ளன."
       },
       "C": {
         "en": "Option C (a-1, b-3, c-2, d-4) is incorrect because one or more pairs are mismatched.",
         "ta": "தெரிவு C (a-1, b-3, c-2, d-4) தவறானது, ஏனெனில் ஒன்று அல்லது அதற்கு மேற்பட்ட இணைகள் தவறாகப் பொருத்தப்பட்டுள்ளன."
       },
       "D": {
-        "en": "Option D (a-3, b-4, c-1, d-2) is incorrect because one or more pairs are mismatched.",
-        "ta": "தெரிவு D (a-3, b-4, c-1, d-2) தவறானது, ஏனெனில் ஒன்று அல்லது அதற்கு மேற்பட்ட இணைகள் தவறாகப் பொருத்தப்பட்டுள்ளன."
+        "en": "Option B correctly pairs all elements: a-1, b-2, c-3, d-4.",
+        "ta": "தெரிவு B அனைத்து கூறுகளையும் சரியாக பொருத்துகிறது: a-1, b-2, c-3, d-4."
       }
     },
     "tnpsc_tip": {
@@ -2115,8 +2115,8 @@
     "options": [
       {
         "id": "A",
-        "en": "a-2, b-1, c-4, d-3",
-        "ta": "a-2, b-1, c-4, d-3"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "B",
@@ -2125,8 +2125,8 @@
       },
       {
         "id": "C",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-2, b-1, c-4, d-3",
+        "ta": "a-2, b-1, c-4, d-3"
       },
       {
         "id": "D",
@@ -2135,19 +2135,19 @@
       }
     ],
     "options_en": [
-      "a-2, b-1, c-4, d-3",
-      "a-3, b-4, c-1, d-2",
       "a-1, b-2, c-3, d-4",
+      "a-3, b-4, c-1, d-2",
+      "a-2, b-1, c-4, d-3",
       "a-1, b-3, c-2, d-4"
     ],
     "options_ta": [
-      "a-2, b-1, c-4, d-3",
-      "a-3, b-4, c-1, d-2",
       "a-1, b-2, c-3, d-4",
+      "a-3, b-4, c-1, d-2",
+      "a-2, b-1, c-4, d-3",
       "a-1, b-3, c-2, d-4"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "The correct matches under the 2023 Act are: a. Search Committee - headed by Law Minister; b. Selection Committee - PM, LoP, Union Cabinet Minister; c. Tenure - 6 years or 65 years of age; d. Section 15 - indemnifies CEC/ECs against civil and criminal proceedings for official actions.",
       "ta": "2023 சட்டத்தின் கீழ் சரியான பொருத்தங்கள்: a. தேடல் குழு - சட்ட அமைச்சர் தலைமையில்; b. தேர்வு குழு - பிரதமர், எதிர்க்கட்சித் தலைவர், கேபினட் அமைச்சர்; c. பதவிக்காலம் - 6 ஆண்டுகள் அல்லது 65 வயது; d. பிரிவு 15 - சட்ட நடவடிக்கைகளிலிருந்து பாதுகாப்பு."
@@ -2156,16 +2156,16 @@
     "explanation_ta": "2023 சட்டத்தின் கீழ் சரியான பொருத்தங்கள்: a. தேடல் குழு - சட்ட அமைச்சர் தலைமையில்; b. தேர்வு குழு - பிரதமர், எதிர்க்கட்சித் தலைவர், கேபினட் அமைச்சர்; c. பதவிக்காலம் - 6 ஆண்டுகள் அல்லது 65 வயது; d. பிரிவு 15 - சட்ட நடவடிக்கைகளிலிருந்து பாதுகாப்பு.",
     "why_not_others": {
       "A": {
-        "en": "Option A (a-2, b-1, c-4, d-3) is incorrect because one or more pairs are mismatched.",
-        "ta": "தெரிவு A (a-2, b-1, c-4, d-3) தவறானது, ஏனெனில் ஒன்று அல்லது அதற்கு மேற்பட்ட இணைகள் தவறாகப் பொருத்தப்பட்டுள்ளன."
+        "en": "Option C correctly pairs all elements: a-1, b-2, c-3, d-4.",
+        "ta": "தெரிவு C அனைத்து கூறுகளையும் சரியாக பொருத்துகிறது: a-1, b-2, c-3, d-4."
       },
       "B": {
         "en": "Option B (a-3, b-4, c-1, d-2) is incorrect because one or more pairs are mismatched.",
         "ta": "தெரிவு B (a-3, b-4, c-1, d-2) தவறானது, ஏனெனில் ஒன்று அல்லது அதற்கு மேற்பட்ட இணைகள் தவறாகப் பொருத்தப்பட்டுள்ளன."
       },
       "C": {
-        "en": "Option C correctly pairs all elements: a-1, b-2, c-3, d-4.",
-        "ta": "தெரிவு C அனைத்து கூறுகளையும் சரியாக பொருத்துகிறது: a-1, b-2, c-3, d-4."
+        "en": "Option A (a-2, b-1, c-4, d-3) is incorrect because one or more pairs are mismatched.",
+        "ta": "தெரிவு A (a-2, b-1, c-4, d-3) தவறானது, ஏனெனில் ஒன்று அல்லது அதற்கு மேற்பட்ட இணைகள் தவறாகப் பொருத்தப்பட்டுள்ளன."
       },
       "D": {
         "en": "Option D (a-1, b-3, c-2, d-4) is incorrect because one or more pairs are mismatched.",
@@ -2225,29 +2225,29 @@
       },
       {
         "id": "C",
-        "en": "a-3, b-4, c-1, d-2",
-        "ta": "a-3, b-4, c-1, d-2"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "D",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-3, b-4, c-1, d-2",
+        "ta": "a-3, b-4, c-1, d-2"
       }
     ],
     "options_en": [
       "a-2, b-1, c-4, d-3",
       "a-1, b-3, c-2, d-4",
-      "a-3, b-4, c-1, d-2",
-      "a-1, b-2, c-3, d-4"
+      "a-1, b-2, c-3, d-4",
+      "a-3, b-4, c-1, d-2"
     ],
     "options_ta": [
       "a-2, b-1, c-4, d-3",
       "a-1, b-3, c-2, d-4",
-      "a-3, b-4, c-1, d-2",
-      "a-1, b-2, c-3, d-4"
+      "a-1, b-2, c-3, d-4",
+      "a-3, b-4, c-1, d-2"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "The correct matches of security deposits are: a. Lok Sabha General - Rs 25,000; b. Lok Sabha SC/ST - Rs 12,500 (half); c. Assembly General - Rs 10,000 (SC/ST is Rs 5,000); d. Forfeiture threshold - more than 1/6th of total valid votes polled.",
       "ta": "காப்புத்தொகை சரியான பொருத்தங்கள்: a. மக்களவை பொது - ரூ. 25,000; b. மக்களவை SC/ST - ரூ. 12,500; c. சட்டமன்ற பொது - ரூ. 10,000; d. காப்புத்தொகை மீட்பு வரம்பு - பதிவான செல்லுபடியாகும் வாக்குகளில் 1/6 பங்குக்கு மேல்."
@@ -2264,12 +2264,12 @@
         "ta": "தெரிவு B (a-1, b-3, c-2, d-4) தவறானது, ஏனெனில் ஒன்று அல்லது அதற்கு மேற்பட்ட இணைகள் தவறாகப் பொருத்தப்பட்டுள்ளன."
       },
       "C": {
-        "en": "Option C (a-3, b-4, c-1, d-2) is incorrect because one or more pairs are mismatched.",
-        "ta": "தெரிவு C (a-3, b-4, c-1, d-2) தவறானது, ஏனெனில் ஒன்று அல்லது அதற்கு மேற்பட்ட இணைகள் தவறாகப் பொருத்தப்பட்டுள்ளன."
-      },
-      "D": {
         "en": "Option D correctly pairs all elements: a-1, b-2, c-3, d-4.",
         "ta": "தெரிவு D அனைத்து கூறுகளையும் சரியாக பொருத்துகிறது: a-1, b-2, c-3, d-4."
+      },
+      "D": {
+        "en": "Option C (a-3, b-4, c-1, d-2) is incorrect because one or more pairs are mismatched.",
+        "ta": "தெரிவு C (a-3, b-4, c-1, d-2) தவறானது, ஏனெனில் ஒன்று அல்லது அதற்கு மேற்பட்ட இணைகள் தவறாகப் பொருத்தப்பட்டுள்ளன."
       }
     },
     "tnpsc_tip": {
@@ -2315,13 +2315,13 @@
     "options": [
       {
         "id": "A",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-2, b-1, c-4, d-3",
+        "ta": "a-2, b-1, c-4, d-3"
       },
       {
         "id": "B",
-        "en": "a-2, b-1, c-4, d-3",
-        "ta": "a-2, b-1, c-4, d-3"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "C",
@@ -2335,19 +2335,19 @@
       }
     ],
     "options_en": [
-      "a-1, b-2, c-3, d-4",
       "a-2, b-1, c-4, d-3",
+      "a-1, b-2, c-3, d-4",
       "a-3, b-4, c-1, d-2",
       "a-1, b-3, c-2, d-4"
     ],
     "options_ta": [
-      "a-1, b-2, c-3, d-4",
       "a-2, b-1, c-4, d-3",
+      "a-1, b-2, c-3, d-4",
       "a-3, b-4, c-1, d-2",
       "a-1, b-3, c-2, d-4"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "The correct matches of electoral concepts are: a. FPTP - United Kingdom Westminster model; b. PR-STV - Ireland (used for President/Rajya Sabha); c. Indigenous EVM/VVPAT - India (ECIL & BEL); d. MCC - evolved indigenously from Kerala (1960).",
       "ta": "சரியான பொருத்தங்கள்: a. FPTP முறை - பிரிட்டன் மாதிரி; b. PR-STV முறை - அயர்லாந்து மாதிரி; c. உள்நாட்டு EVM/VVPAT - இந்தியா (BEL & ECIL); d. நடத்தை விதிகள் - கேரளா (1960)."
@@ -2356,12 +2356,12 @@
     "explanation_ta": "சரியான பொருத்தங்கள்: a. FPTP முறை - பிரிட்டன் மாதிரி; b. PR-STV முறை - அயர்லாந்து மாதிரி; c. உள்நாட்டு EVM/VVPAT - இந்தியா (BEL & ECIL); d. நடத்தை விதிகள் - கேரளா (1960).",
     "why_not_others": {
       "A": {
-        "en": "Option A correctly pairs all elements: a-1, b-2, c-3, d-4.",
-        "ta": "தெரிவு A அனைத்து கூறுகளையும் சரியாக பொருத்துகிறது: a-1, b-2, c-3, d-4."
-      },
-      "B": {
         "en": "Option B (a-2, b-1, c-4, d-3) is incorrect because one or more pairs are mismatched.",
         "ta": "தெரிவு B (a-2, b-1, c-4, d-3) தவறானது, ஏனெனில் ஒன்று அல்லது அதற்கு மேற்பட்ட இணைகள் தவறாகப் பொருத்தப்பட்டுள்ளன."
+      },
+      "B": {
+        "en": "Option A correctly pairs all elements: a-1, b-2, c-3, d-4.",
+        "ta": "தெரிவு A அனைத்து கூறுகளையும் சரியாக பொருத்துகிறது: a-1, b-2, c-3, d-4."
       },
       "C": {
         "en": "Option C (a-3, b-4, c-1, d-2) is incorrect because one or more pairs are mismatched.",
@@ -2415,13 +2415,13 @@
     "options": [
       {
         "id": "A",
-        "en": "a-2, b-1, c-4, d-3",
-        "ta": "a-2, b-1, c-4, d-3"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "B",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-2, b-1, c-4, d-3",
+        "ta": "a-2, b-1, c-4, d-3"
       },
       {
         "id": "C",
@@ -2435,19 +2435,19 @@
       }
     ],
     "options_en": [
-      "a-2, b-1, c-4, d-3",
       "a-1, b-2, c-3, d-4",
+      "a-2, b-1, c-4, d-3",
       "a-4, b-3, c-2, d-1",
       "a-1, b-3, c-2, d-4"
     ],
     "options_ta": [
-      "a-2, b-1, c-4, d-3",
       "a-1, b-2, c-3, d-4",
+      "a-2, b-1, c-4, d-3",
       "a-4, b-3, c-2, d-1",
       "a-1, b-3, c-2, d-4"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "The correct matches under Chapter IXA of IPC are: a. Sec 171B - Bribery; b. Sec 171C - Undue influence; c. Sec 171D - Personation; d. Sec 171G - False statement in connection with election.",
       "ta": "IPC அத்தியாயம் IXA கீழ் சரியான பொருத்தங்கள்: a. பிரிவு 171B - கையூட்டு; b. பிரிவு 171C - தேவையற்ற செல்வாக்கு; c. பிரிவு 171D - ஆள்மாறாட்டம்; d. பிரிவு 171G - தவறான அறிக்கை வெளியிடுதல்."
@@ -2456,12 +2456,12 @@
     "explanation_ta": "IPC அத்தியாயம் IXA கீழ் சரியான பொருத்தங்கள்: a. பிரிவு 171B - கையூட்டு; b. பிரிவு 171C - தேவையற்ற செல்வாக்கு; c. பிரிவு 171D - ஆள்மாறாட்டம்; d. பிரிவு 171G - தவறான அறிக்கை வெளியிடுதல்.",
     "why_not_others": {
       "A": {
-        "en": "Option A (a-2, b-1, c-4, d-3) is incorrect because one or more pairs are mismatched.",
-        "ta": "தெரிவு A (a-2, b-1, c-4, d-3) தவறானது, ஏனெனில் ஒன்று அல்லது அதற்கு மேற்பட்ட இணைகள் தவறாகப் பொருத்தப்பட்டுள்ளன."
-      },
-      "B": {
         "en": "Option B correctly pairs all elements: a-1, b-2, c-3, d-4.",
         "ta": "தெரிவு B அனைத்து கூறுகளையும் சரியாக பொருத்துகிறது: a-1, b-2, c-3, d-4."
+      },
+      "B": {
+        "en": "Option A (a-2, b-1, c-4, d-3) is incorrect because one or more pairs are mismatched.",
+        "ta": "தெரிவு A (a-2, b-1, c-4, d-3) தவறானது, ஏனெனில் ஒன்று அல்லது அதற்கு மேற்பட்ட இணைகள் தவறாகப் பொருத்தப்பட்டுள்ளன."
       },
       "C": {
         "en": "Option C (a-4, b-3, c-2, d-1) is incorrect because one or more pairs are mismatched.",

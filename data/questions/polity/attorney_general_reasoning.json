@@ -15,13 +15,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
       },
       {
         "id": "B",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
+        "en": "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல"
       },
       {
         "id": "C",
@@ -35,19 +35,19 @@
       }
     ],
     "options_en": [
-      "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
       "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
       "(A) is true but (R) is false",
       "(A) is false but (R) is true"
     ],
     "options_ta": [
-      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
       "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
       "(A) சரி ஆனால் (R) தவறு",
       "(A) தவறு ஆனால் (R) சரி"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Both (A) and (R) are true, and (R) is the correct explanation of (A). By constitutional convention, the AG resigns when the ministry changes because he is appointed on the advice of that specific Council of Ministers and the incoming government is entitled to appoint a law officer of its confidence.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும். அமைச்சரவையின் ஆலோசனையின் பேரிலேயே AG நியமிக்கப்படுவதால், ஆட்சி மாறும்போது புதிய அரசு தன் நம்பிக்கைக்குரிய வழக்கறிஞரை நியமிக்கும் வகையில் AG பதவி விலகுவது அரசியல் மரபாக உள்ளது."
@@ -56,12 +56,12 @@
     "explanation_ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும். அமைச்சரவையின் ஆலோசனையின் பேரிலேயே AG நியமிக்கப்படுவதால், ஆட்சி மாறும்போது புதிய அரசு தன் நம்பிக்கைக்குரிய வழக்கறிஞரை நியமிக்கும் வகையில் AG பதவி விலகுவது அரசியல் மரபாக உள்ளது.",
     "why_not_others": {
       "A": {
-        "en": "Option B is incorrect because the statement truth values or causal connection do not match this option.",
-        "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு B தவறானது."
-      },
-      "B": {
         "en": "Option A correctly evaluates the truth value and explanatory relationship between Assertion (A) and Reason (R).",
         "ta": "கூற்று (A) மற்றும் காரணம் (R) ஆகியவற்றின் உண்மைத் தன்மை மற்றும் விளக்கத் தொடர்பை தெரிவு A சரியாக மதிப்பிடுகிறது."
+      },
+      "B": {
+        "en": "Option B is incorrect because the statement truth values or causal connection do not match this option.",
+        "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு B தவறானது."
       },
       "C": {
         "en": "Option C is incorrect because the statement truth values or causal connection do not match this option.",
@@ -121,13 +121,13 @@
       },
       {
         "id": "B",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
+        "en": "(A) is true but (R) is false",
+        "ta": "(A) சரி ஆனால் (R) தவறு"
       },
       {
         "id": "C",
-        "en": "(A) is true but (R) is false",
-        "ta": "(A) சரி ஆனால் (R) தவறு"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
       },
       {
         "id": "D",
@@ -137,18 +137,18 @@
     ],
     "options_en": [
       "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
       "(A) is true but (R) is false",
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
       "(A) is false but (R) is true"
     ],
     "options_ta": [
       "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
       "(A) சரி ஆனால் (R) தவறு",
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
       "(A) தவறு ஆனால் (R) சரி"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Both (A) and (R) are true, and (R) is the correct explanation of (A). Under Article 88, the AG can participate to provide legal counsel to the legislature, but voting is a sovereign democratic prerogative reserved exclusively for Members of Parliament.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும். சட்ட ஆலோசனைகளை வழங்க நாடாளுமன்றத்தில் பேச உரிமை உண்டு; ஆனால் வாக்குரிமை என்பது நாடாளுமன்ற உறுப்பினர்களுக்கு மட்டுமே உரிய மக்களாட்சி உரிமை என்பதால் AG-க்கு வாக்குரிமை இல்லை."
@@ -161,12 +161,12 @@
         "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு B தவறானது."
       },
       "B": {
-        "en": "Option A correctly evaluates the truth value and explanatory relationship between Assertion (A) and Reason (R).",
-        "ta": "கூற்று (A) மற்றும் காரணம் (R) ஆகியவற்றின் உண்மைத் தன்மை மற்றும் விளக்கத் தொடர்பை தெரிவு A சரியாக மதிப்பிடுகிறது."
-      },
-      "C": {
         "en": "Option C is incorrect because the statement truth values or causal connection do not match this option.",
         "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு C தவறானது."
+      },
+      "C": {
+        "en": "Option A correctly evaluates the truth value and explanatory relationship between Assertion (A) and Reason (R).",
+        "ta": "கூற்று (A) மற்றும் காரணம் (R) ஆகியவற்றின் உண்மைத் தன்மை மற்றும் விளக்கத் தொடர்பை தெரிவு A சரியாக மதிப்பிடுகிறது."
       },
       "D": {
         "en": "Option D is incorrect because the statement truth values or causal connection do not match this option.",
@@ -429,29 +429,29 @@
       },
       {
         "id": "C",
-        "en": "(A) is true but (R) is false",
-        "ta": "(A) சரி ஆனால் (R) தவறு"
+        "en": "(A) is false but (R) is true",
+        "ta": "(A) தவறு ஆனால் (R) சரி"
       },
       {
         "id": "D",
-        "en": "(A) is false but (R) is true",
-        "ta": "(A) தவறு ஆனால் (R) சரி"
+        "en": "(A) is true but (R) is false",
+        "ta": "(A) சரி ஆனால் (R) தவறு"
       }
     ],
     "options_en": [
       "Both (A) and (R) are true and (R) is the correct explanation of (A)",
       "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
-      "(A) is true but (R) is false",
-      "(A) is false but (R) is true"
+      "(A) is false but (R) is true",
+      "(A) is true but (R) is false"
     ],
     "options_ta": [
       "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
       "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
-      "(A) சரி ஆனால் (R) தவறு",
-      "(A) தவறு ஆனால் (R) சரி"
+      "(A) தவறு ஆனால் (R) சரி",
+      "(A) சரி ஆனால் (R) தவறு"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "(A) is true, but (R) is false. In India, the AG is NOT a Cabinet member; instead, there is a separate Law Minister. (R) is false because India departed from British convention by deliberately keeping the AG non-political and outside the Cabinet.",
       "ta": "(A) சரி, ஆனால் (R) தவறு. இந்தியாவில் AG அமைச்சரவை உறுப்பினர் அல்ல; தனியாக சட்ட அமைச்சர் உள்ளார். பிரிட்டனில் AG அமைச்சரவையில் இருப்பார்; ஆனால் இந்திய அரசியலமைப்பு அந்த நடைமுறையைப் பின்பற்றாமல் AG-யை அரசியலற்றவராக அமைச்சரவைக்கு வெளியே வைத்துள்ளது."
@@ -468,12 +468,12 @@
         "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு B தவறானது."
       },
       "C": {
-        "en": "Option C correctly evaluates the truth value and explanatory relationship between Assertion (A) and Reason (R).",
-        "ta": "கூற்று (A) மற்றும் காரணம் (R) ஆகியவற்றின் உண்மைத் தன்மை மற்றும் விளக்கத் தொடர்பை தெரிவு C சரியாக மதிப்பிடுகிறது."
-      },
-      "D": {
         "en": "Option D is incorrect because the statement truth values or causal connection do not match this option.",
         "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு D தவறானது."
+      },
+      "D": {
+        "en": "Option C correctly evaluates the truth value and explanatory relationship between Assertion (A) and Reason (R).",
+        "ta": "கூற்று (A) மற்றும் காரணம் (R) ஆகியவற்றின் உண்மைத் தன்மை மற்றும் விளக்கத் தொடர்பை தெரிவு C சரியாக மதிப்பிடுகிறது."
       }
     },
     "tnpsc_tip": {
@@ -520,13 +520,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
       },
       {
         "id": "B",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
+        "en": "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல"
       },
       {
         "id": "C",
@@ -540,19 +540,19 @@
       }
     ],
     "options_en": [
-      "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
       "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
       "(A) is true but (R) is false",
       "(A) is false but (R) is true"
     ],
     "options_ta": [
-      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
       "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
       "(A) சரி ஆனால் (R) தவறு",
       "(A) தவறு ஆனால் (R) சரி"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Both (A) and (R) are true, and (R) is the correct explanation of (A). The Supreme Court has repeatedly affirmed that the AG's consent under Section 15 is intended to safeguard the judiciary's time against frivolous and harassing litigation.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும். நீதிமன்றத்தின் நேரத்தை வீணடிக்கும் அற்ப வழக்குகளை வடிகட்டுவதற்காகவே தலைமை வழக்கறிஞரின் முன் ஒப்புதல் கட்டாயமாக்கப்பட்டுள்ளது என உச்ச நீதிமன்றம் பல தீர்ப்புகளில் கூறியுள்ளது."
@@ -561,12 +561,12 @@
     "explanation_ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும். நீதிமன்றத்தின் நேரத்தை வீணடிக்கும் அற்ப வழக்குகளை வடிகட்டுவதற்காகவே தலைமை வழக்கறிஞரின் முன் ஒப்புதல் கட்டாயமாக்கப்பட்டுள்ளது என உச்ச நீதிமன்றம் பல தீர்ப்புகளில் கூறியுள்ளது.",
     "why_not_others": {
       "A": {
-        "en": "Option B is incorrect because the statement truth values or causal connection do not match this option.",
-        "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு B தவறானது."
-      },
-      "B": {
         "en": "Option A correctly evaluates the truth value and explanatory relationship between Assertion (A) and Reason (R).",
         "ta": "கூற்று (A) மற்றும் காரணம் (R) ஆகியவற்றின் உண்மைத் தன்மை மற்றும் விளக்கத் தொடர்பை தெரிவு A சரியாக மதிப்பிடுகிறது."
+      },
+      "B": {
+        "en": "Option B is incorrect because the statement truth values or causal connection do not match this option.",
+        "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு B தவறானது."
       },
       "C": {
         "en": "Option C is incorrect because the statement truth values or causal connection do not match this option.",
@@ -626,13 +626,13 @@
       },
       {
         "id": "B",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
+        "en": "(A) is true but (R) is false",
+        "ta": "(A) சரி ஆனால் (R) தவறு"
       },
       {
         "id": "C",
-        "en": "(A) is true but (R) is false",
-        "ta": "(A) சரி ஆனால் (R) தவறு"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
       },
       {
         "id": "D",
@@ -642,18 +642,18 @@
     ],
     "options_en": [
       "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
       "(A) is true but (R) is false",
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
       "(A) is false but (R) is true"
     ],
     "options_ta": [
       "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
       "(A) சரி ஆனால் (R) தவறு",
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
       "(A) தவறு ஆனால் (R) சரி"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Both (A) and (R) are true, and (R) is the correct explanation of (A). Section 23(1) of the Advocates Act explicitly accords the Attorney General the right of pre-audience over all other advocates in India.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும். வழக்கறிஞர்கள் சட்டம் பிரிவு 23(1) மற்ற அனைத்து வழக்கறிஞர்களையும் விட தலைமை வழக்கறிஞருக்கே முதன்மை வழக்காடும் உரிமையை வெளிப்படையாக வழங்குகிறது."
@@ -666,12 +666,12 @@
         "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு B தவறானது."
       },
       "B": {
-        "en": "Option A correctly evaluates the truth value and explanatory relationship between Assertion (A) and Reason (R).",
-        "ta": "கூற்று (A) மற்றும் காரணம் (R) ஆகியவற்றின் உண்மைத் தன்மை மற்றும் விளக்கத் தொடர்பை தெரிவு A சரியாக மதிப்பிடுகிறது."
-      },
-      "C": {
         "en": "Option C is incorrect because the statement truth values or causal connection do not match this option.",
         "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு C தவறானது."
+      },
+      "C": {
+        "en": "Option A correctly evaluates the truth value and explanatory relationship between Assertion (A) and Reason (R).",
+        "ta": "கூற்று (A) மற்றும் காரணம் (R) ஆகியவற்றின் உண்மைத் தன்மை மற்றும் விளக்கத் தொடர்பை தெரிவு A சரியாக மதிப்பிடுகிறது."
       },
       "D": {
         "en": "Option D is incorrect because the statement truth values or causal connection do not match this option.",
@@ -722,8 +722,8 @@
     "options": [
       {
         "id": "A",
-        "en": "(A) is true but (R) is false",
-        "ta": "(A) சரி ஆனால் (R) தவறு"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
       },
       {
         "id": "B",
@@ -732,8 +732,8 @@
       },
       {
         "id": "C",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
+        "en": "(A) is true but (R) is false",
+        "ta": "(A) சரி ஆனால் (R) தவறு"
       },
       {
         "id": "D",
@@ -742,19 +742,19 @@
       }
     ],
     "options_en": [
-      "(A) is true but (R) is false",
-      "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
       "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+      "(A) is true but (R) is false",
       "(A) is false but (R) is true"
     ],
     "options_ta": [
-      "(A) சரி ஆனால் (R) தவறு",
-      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
       "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
+      "(A) சரி ஆனால் (R) தவறு",
       "(A) தவறு ஆனால் (R) சரி"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Both (A) and (R) are true, and (R) correctly explains (A). Article 76(4) vests the determination of the AG's remuneration exclusively in the President (executive), not in Parliament, and it is not determined under the Second Schedule.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும். சரத்து 76(4)-ன் படி AG ஊதியத்தை குடியரசுத் தலைவரே நிர்ணயிக்கிறார்; நாடாளுமன்றச் சட்டத்தின் மூலமோ அல்லது 2-வது அட்டவணை மூலமோ இது நிர்ணயிக்கப்படுவதில்லை."
@@ -763,16 +763,16 @@
     "explanation_ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும். சரத்து 76(4)-ன் படி AG ஊதியத்தை குடியரசுத் தலைவரே நிர்ணயிக்கிறார்; நாடாளுமன்றச் சட்டத்தின் மூலமோ அல்லது 2-வது அட்டவணை மூலமோ இது நிர்ணயிக்கப்படுவதில்லை.",
     "why_not_others": {
       "A": {
-        "en": "Option C is incorrect because the statement truth values or causal connection do not match this option.",
-        "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு C தவறானது."
+        "en": "Option A correctly evaluates the truth value and explanatory relationship between Assertion (A) and Reason (R).",
+        "ta": "கூற்று (A) மற்றும் காரணம் (R) ஆகியவற்றின் உண்மைத் தன்மை மற்றும் விளக்கத் தொடர்பை தெரிவு A சரியாக மதிப்பிடுகிறது."
       },
       "B": {
         "en": "Option B is incorrect because the statement truth values or causal connection do not match this option.",
         "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு B தவறானது."
       },
       "C": {
-        "en": "Option A correctly evaluates the truth value and explanatory relationship between Assertion (A) and Reason (R).",
-        "ta": "கூற்று (A) மற்றும் காரணம் (R) ஆகியவற்றின் உண்மைத் தன்மை மற்றும் விளக்கத் தொடர்பை தெரிவு A சரியாக மதிப்பிடுகிறது."
+        "en": "Option C is incorrect because the statement truth values or causal connection do not match this option.",
+        "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு C தவறானது."
       },
       "D": {
         "en": "Option D is incorrect because the statement truth values or causal connection do not match this option.",
@@ -828,8 +828,8 @@
       },
       {
         "id": "B",
-        "en": "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல"
+        "en": "(A) is false but (R) is true",
+        "ta": "(A) தவறு ஆனால் (R) சரி"
       },
       {
         "id": "C",
@@ -838,24 +838,24 @@
       },
       {
         "id": "D",
-        "en": "(A) is false but (R) is true",
-        "ta": "(A) தவறு ஆனால் (R) சரி"
+        "en": "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல"
       }
     ],
     "options_en": [
       "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-      "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+      "(A) is false but (R) is true",
       "(A) is true but (R) is false",
-      "(A) is false but (R) is true"
+      "Both (A) and (R) are true but (R) is not the correct explanation of (A)"
     ],
     "options_ta": [
       "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
-      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
+      "(A) தவறு ஆனால் (R) சரி",
       "(A) சரி ஆனால் (R) தவறு",
-      "(A) தவறு ஆனால் (R) சரி"
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "(A) is false, but (R) is true. The AG's advice is advisory in nature and NOT binding on the Government; the Government is free to accept or reject it. (R) is true because the AG is indeed the highest law officer under Article 76.",
       "ta": "(A) தவறு, ஆனால் (R) சரி. தலைமை வழக்கறிஞரின் ஆலோசனை அரசுக்கு ஆலோசனை மட்டுமே தவிர அதைக் கட்டாயம் பின்பற்ற வேண்டும் என்ற சட்டக் கட்டுப்பாடு இல்லை; எனவே (A) தவறு. ஆனால் சரத்து 76-ன் கீழ் AG நாட்டின் தலைமை சட்ட அதிகாரி என்பது சரியானது."
@@ -868,16 +868,16 @@
         "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு A தவறானது."
       },
       "B": {
-        "en": "Option B is incorrect because the statement truth values or causal connection do not match this option.",
-        "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு B தவறானது."
+        "en": "Option D correctly evaluates the truth value and explanatory relationship between Assertion (A) and Reason (R).",
+        "ta": "கூற்று (A) மற்றும் காரணம் (R) ஆகியவற்றின் உண்மைத் தன்மை மற்றும் விளக்கத் தொடர்பை தெரிவு D சரியாக மதிப்பிடுகிறது."
       },
       "C": {
         "en": "Option C is incorrect because the statement truth values or causal connection do not match this option.",
         "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு C தவறானது."
       },
       "D": {
-        "en": "Option D correctly evaluates the truth value and explanatory relationship between Assertion (A) and Reason (R).",
-        "ta": "கூற்று (A) மற்றும் காரணம் (R) ஆகியவற்றின் உண்மைத் தன்மை மற்றும் விளக்கத் தொடர்பை தெரிவு D சரியாக மதிப்பிடுகிறது."
+        "en": "Option B is incorrect because the statement truth values or causal connection do not match this option.",
+        "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு B தவறானது."
       }
     },
     "tnpsc_tip": {
@@ -1035,29 +1035,29 @@
       },
       {
         "id": "C",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
+        "en": "(A) is false but (R) is true",
+        "ta": "(A) தவறு ஆனால் (R) சரி"
       },
       {
         "id": "D",
-        "en": "(A) is false but (R) is true",
-        "ta": "(A) தவறு ஆனால் (R) சரி"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
       }
     ],
     "options_en": [
       "(A) is true but (R) is false",
       "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-      "(A) is false but (R) is true"
+      "(A) is false but (R) is true",
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)"
     ],
     "options_ta": [
       "(A) சரி ஆனால் (R) தவறு",
       "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
-      "(A) தவறு ஆனால் (R) சரி"
+      "(A) தவறு ஆனால் (R) சரி",
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Both (A) and (R) are true, and (R) correctly explains (A). The Constitution mentions only the Attorney General under Article 76. The Solicitor General and Additional Solicitors General are non-constitutional, executive posts created by the Government.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும். சரத்து 76 தலைமை வழக்கறிஞரை மட்டுமே உருவாக்குகிறது. சொலிசிட்டர் ஜெனரல் மற்றும் ASG பதவிகள் நிர்வாக விதிகளால் அமைக்கப்பட்ட அரசியலமைப்பு சாரா பதவிகளாகும்."
@@ -1074,12 +1074,12 @@
         "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு B தவறானது."
       },
       "C": {
-        "en": "Option A correctly evaluates the truth value and explanatory relationship between Assertion (A) and Reason (R).",
-        "ta": "கூற்று (A) மற்றும் காரணம் (R) ஆகியவற்றின் உண்மைத் தன்மை மற்றும் விளக்கத் தொடர்பை தெரிவு A சரியாக மதிப்பிடுகிறது."
-      },
-      "D": {
         "en": "Option D is incorrect because the statement truth values or causal connection do not match this option.",
         "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு D தவறானது."
+      },
+      "D": {
+        "en": "Option A correctly evaluates the truth value and explanatory relationship between Assertion (A) and Reason (R).",
+        "ta": "கூற்று (A) மற்றும் காரணம் (R) ஆகியவற்றின் உண்மைத் தன்மை மற்றும் விளக்கத் தொடர்பை தெரிவு A சரியாக மதிப்பிடுகிறது."
       }
     },
     "tnpsc_tip": {
@@ -1126,8 +1126,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
+        "en": "(A) is false but (R) is true",
+        "ta": "(A) தவறு ஆனால் (R) சரி"
       },
       {
         "id": "B",
@@ -1141,24 +1141,24 @@
       },
       {
         "id": "D",
-        "en": "(A) is false but (R) is true",
-        "ta": "(A) தவறு ஆனால் (R) சரி"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
       }
     ],
     "options_en": [
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "(A) is false but (R) is true",
       "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
       "(A) is true but (R) is false",
-      "(A) is false but (R) is true"
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)"
     ],
     "options_ta": [
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
+      "(A) தவறு ஆனால் (R) சரி",
       "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
       "(A) சரி ஆனால் (R) தவறு",
-      "(A) தவறு ஆனால் (R) சரி"
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Both (A) and (R) are true, and (R) correctly explains (A). Under Rule 8 of the Law Officers Rules, the AG cannot advise or appear against the Government because of the paramount fiduciary duty owed to his client, the Union of India.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும். தனது முதன்மை வாடிக்கையாளரான இந்திய ஒன்றிய அரசுக்கு உண்மையுடன் இருக்க வேண்டிய கடமை உள்ளதால், அரசுக்கு எதிராக வாதாடுவது நலன் முரண்பாட்டை ஏற்படுத்தும்."
@@ -1167,8 +1167,8 @@
     "explanation_ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும். தனது முதன்மை வாடிக்கையாளரான இந்திய ஒன்றிய அரசுக்கு உண்மையுடன் இருக்க வேண்டிய கடமை உள்ளதால், அரசுக்கு எதிராக வாதாடுவது நலன் முரண்பாட்டை ஏற்படுத்தும்.",
     "why_not_others": {
       "A": {
-        "en": "Option A correctly evaluates the truth value and explanatory relationship between Assertion (A) and Reason (R).",
-        "ta": "கூற்று (A) மற்றும் காரணம் (R) ஆகியவற்றின் உண்மைத் தன்மை மற்றும் விளக்கத் தொடர்பை தெரிவு A சரியாக மதிப்பிடுகிறது."
+        "en": "Option D is incorrect because the statement truth values or causal connection do not match this option.",
+        "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு D தவறானது."
       },
       "B": {
         "en": "Option B is incorrect because the statement truth values or causal connection do not match this option.",
@@ -1179,8 +1179,8 @@
         "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு C தவறானது."
       },
       "D": {
-        "en": "Option D is incorrect because the statement truth values or causal connection do not match this option.",
-        "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு D தவறானது."
+        "en": "Option A correctly evaluates the truth value and explanatory relationship between Assertion (A) and Reason (R).",
+        "ta": "கூற்று (A) மற்றும் காரணம் (R) ஆகியவற்றின் உண்மைத் தன்மை மற்றும் விளக்கத் தொடர்பை தெரிவு A சரியாக மதிப்பிடுகிறது."
       }
     },
     "tnpsc_tip": {
@@ -1232,13 +1232,13 @@
       },
       {
         "id": "B",
-        "en": "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல"
+        "en": "(A) is true but (R) is false",
+        "ta": "(A) சரி ஆனால் (R) தவறு"
       },
       {
         "id": "C",
-        "en": "(A) is true but (R) is false",
-        "ta": "(A) சரி ஆனால் (R) தவறு"
+        "en": "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல"
       },
       {
         "id": "D",
@@ -1248,18 +1248,18 @@
     ],
     "options_en": [
       "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-      "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
       "(A) is true but (R) is false",
+      "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
       "(A) is false but (R) is true"
     ],
     "options_ta": [
       "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
-      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
       "(A) சரி ஆனால் (R) தவறு",
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
       "(A) தவறு ஆனால் (R) சரி"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "(A) is true, but (R) is false. The Constitution does NOT prescribe any oath for the AG in the Third Schedule (making (A) true). However, (R) is false because the AG is undeniably a high constitutional authority created by Article 76.",
       "ta": "(A) சரி, ஆனால் (R) தவறு. மூன்றாவது அட்டவணையில் தலைமை வழக்கறிஞருக்கான பதவிப் பிரமாணம் எதுவும் இல்லை என்பது உண்மை; எனவே (A) சரி. ஆனால் AG சரத்து 76-ன் கீழ் உருவாக்கப்பட்ட ஒரு மிக உயர்ந்த அரசியலமைப்புப் பதவி என்பதால் (R) தவறானது."
@@ -1272,12 +1272,12 @@
         "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு A தவறானது."
       },
       "B": {
-        "en": "Option B is incorrect because the statement truth values or causal connection do not match this option.",
-        "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு B தவறானது."
-      },
-      "C": {
         "en": "Option C correctly evaluates the truth value and explanatory relationship between Assertion (A) and Reason (R).",
         "ta": "கூற்று (A) மற்றும் காரணம் (R) ஆகியவற்றின் உண்மைத் தன்மை மற்றும் விளக்கத் தொடர்பை தெரிவு C சரியாக மதிப்பிடுகிறது."
+      },
+      "C": {
+        "en": "Option B is incorrect because the statement truth values or causal connection do not match this option.",
+        "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு B தவறானது."
       },
       "D": {
         "en": "Option D is incorrect because the statement truth values or causal connection do not match this option.",
@@ -1328,8 +1328,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
+        "en": "(A) is false but (R) is true",
+        "ta": "(A) தவறு ஆனால் (R) சரி"
       },
       {
         "id": "B",
@@ -1343,24 +1343,24 @@
       },
       {
         "id": "D",
-        "en": "(A) is false but (R) is true",
-        "ta": "(A) தவறு ஆனால் (R) சரி"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
       }
     ],
     "options_en": [
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "(A) is false but (R) is true",
       "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
       "(A) is true but (R) is false",
-      "(A) is false but (R) is true"
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)"
     ],
     "options_ta": [
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
+      "(A) தவறு ஆனால் (R) சரி",
       "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
       "(A) சரி ஆனால் (R) தவறு",
-      "(A) தவறு ஆனால் (R) சரி"
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Both (A) and (R) are true, and (R) correctly explains (A). Article 139A was inserted by the 42nd Amendment to avoid conflicting interpretations by different High Courts on substantial questions of law, and the AG is specifically empowered to apply for transfer.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும். பல்வேறு உயர் நீதிமன்றங்கள் முரண்பட்ட தீர்ப்புகளை வழங்குவதைத் தவிர்த்து நாடு முழுவதும் சட்ட ஒற்றுமையை நிலைநாட்டவே 42-வது திருத்தத்தில் சரத்து 139A கொண்டுவரப்பட்டு AG-க்கு விண்ணப்பிக்கும் அதிகாரம் வழங்கப்பட்டது."
@@ -1369,8 +1369,8 @@
     "explanation_ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும். பல்வேறு உயர் நீதிமன்றங்கள் முரண்பட்ட தீர்ப்புகளை வழங்குவதைத் தவிர்த்து நாடு முழுவதும் சட்ட ஒற்றுமையை நிலைநாட்டவே 42-வது திருத்தத்தில் சரத்து 139A கொண்டுவரப்பட்டு AG-க்கு விண்ணப்பிக்கும் அதிகாரம் வழங்கப்பட்டது.",
     "why_not_others": {
       "A": {
-        "en": "Option A correctly evaluates the truth value and explanatory relationship between Assertion (A) and Reason (R).",
-        "ta": "கூற்று (A) மற்றும் காரணம் (R) ஆகியவற்றின் உண்மைத் தன்மை மற்றும் விளக்கத் தொடர்பை தெரிவு A சரியாக மதிப்பிடுகிறது."
+        "en": "Option D is incorrect because the statement truth values or causal connection do not match this option.",
+        "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு D தவறானது."
       },
       "B": {
         "en": "Option B is incorrect because the statement truth values or causal connection do not match this option.",
@@ -1381,8 +1381,8 @@
         "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு C தவறானது."
       },
       "D": {
-        "en": "Option D is incorrect because the statement truth values or causal connection do not match this option.",
-        "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு D தவறானது."
+        "en": "Option A correctly evaluates the truth value and explanatory relationship between Assertion (A) and Reason (R).",
+        "ta": "கூற்று (A) மற்றும் காரணம் (R) ஆகியவற்றின் உண்மைத் தன்மை மற்றும் விளக்கத் தொடர்பை தெரிவு A சரியாக மதிப்பிடுகிறது."
       }
     },
     "tnpsc_tip": {
@@ -1434,8 +1434,8 @@
       },
       {
         "id": "B",
-        "en": "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல"
+        "en": "(A) is false but (R) is true",
+        "ta": "(A) தவறு ஆனால் (R) சரி"
       },
       {
         "id": "C",
@@ -1444,24 +1444,24 @@
       },
       {
         "id": "D",
-        "en": "(A) is false but (R) is true",
-        "ta": "(A) தவறு ஆனால் (R) சரி"
+        "en": "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல"
       }
     ],
     "options_en": [
       "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-      "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+      "(A) is false but (R) is true",
       "(A) is true but (R) is false",
-      "(A) is false but (R) is true"
+      "Both (A) and (R) are true but (R) is not the correct explanation of (A)"
     ],
     "options_ta": [
       "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
-      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
+      "(A) தவறு ஆனால் (R) சரி",
       "(A) சரி ஆனால் (R) தவறு",
-      "(A) தவறு ஆனால் (R) சரி"
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "(A) is false, but (R) is true. Under Article 143(1), the Supreme Court 'may' give its opinion; it is discretionary, not mandatory (as seen in Ayodhya reference 1993). (R) is true because the AG represents the Union Government in all Art 143 hearings.",
       "ta": "(A) தவறு, ஆனால் (R) சரி. சரத்து 143(1)-ன் கீழ் கருத்து வழங்குவது உச்ச நீதிமன்றத்தின் விருப்ப உரிமை (கட்டாயமில்லை); எனவே (A) தவறு. ஆனால் சரத்து 143 விசாரணைகளில் குடியரசுத் தலைவர் மற்றும் ஒன்றிய அரசை AG பிரதிநிதித்துவப்படுத்துகிறார் என்பது சரியானது."
@@ -1474,16 +1474,16 @@
         "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு A தவறானது."
       },
       "B": {
-        "en": "Option B is incorrect because the statement truth values or causal connection do not match this option.",
-        "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு B தவறானது."
+        "en": "Option D correctly evaluates the truth value and explanatory relationship between Assertion (A) and Reason (R).",
+        "ta": "கூற்று (A) மற்றும் காரணம் (R) ஆகியவற்றின் உண்மைத் தன்மை மற்றும் விளக்கத் தொடர்பை தெரிவு D சரியாக மதிப்பிடுகிறது."
       },
       "C": {
         "en": "Option C is incorrect because the statement truth values or causal connection do not match this option.",
         "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு C தவறானது."
       },
       "D": {
-        "en": "Option D correctly evaluates the truth value and explanatory relationship between Assertion (A) and Reason (R).",
-        "ta": "கூற்று (A) மற்றும் காரணம் (R) ஆகியவற்றின் உண்மைத் தன்மை மற்றும் விளக்கத் தொடர்பை தெரிவு D சரியாக மதிப்பிடுகிறது."
+        "en": "Option B is incorrect because the statement truth values or causal connection do not match this option.",
+        "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு B தவறானது."
       }
     },
     "tnpsc_tip": {
@@ -1530,8 +1530,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
+        "en": "(A) is true but (R) is false",
+        "ta": "(A) சரி ஆனால் (R) தவறு"
       },
       {
         "id": "B",
@@ -1540,8 +1540,8 @@
       },
       {
         "id": "C",
-        "en": "(A) is true but (R) is false",
-        "ta": "(A) சரி ஆனால் (R) தவறு"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
       },
       {
         "id": "D",
@@ -1550,19 +1550,19 @@
       }
     ],
     "options_en": [
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-      "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
       "(A) is true but (R) is false",
+      "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
       "(A) is false but (R) is true"
     ],
     "options_ta": [
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
-      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
       "(A) சரி ஆனால் (R) தவறு",
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
       "(A) தவறு ஆனால் (R) சரி"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Both (A) and (R) are true, and (R) correctly explains (A). Unlike the English Attorney General who holds the common law prerogative of nolle prosequi, the Indian AG has no such power; prosecutorial withdrawal is governed by statute (Section 321 CrPC).",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும். இங்கிலாந்தைப் போலன்றி, இந்தியாவில் குற்றவியல் வழக்குகளைத் திரும்பப் பெற CrPC பிரிவு 321-ன் படி அரசு வழக்கறிஞரும் நீதிமன்றத்தின் ஒப்புதலும் கட்டாயமாகும்."
@@ -1571,16 +1571,16 @@
     "explanation_ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும். இங்கிலாந்தைப் போலன்றி, இந்தியாவில் குற்றவியல் வழக்குகளைத் திரும்பப் பெற CrPC பிரிவு 321-ன் படி அரசு வழக்கறிஞரும் நீதிமன்றத்தின் ஒப்புதலும் கட்டாயமாகும்.",
     "why_not_others": {
       "A": {
-        "en": "Option A correctly evaluates the truth value and explanatory relationship between Assertion (A) and Reason (R).",
-        "ta": "கூற்று (A) மற்றும் காரணம் (R) ஆகியவற்றின் உண்மைத் தன்மை மற்றும் விளக்கத் தொடர்பை தெரிவு A சரியாக மதிப்பிடுகிறது."
+        "en": "Option C is incorrect because the statement truth values or causal connection do not match this option.",
+        "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு C தவறானது."
       },
       "B": {
         "en": "Option B is incorrect because the statement truth values or causal connection do not match this option.",
         "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு B தவறானது."
       },
       "C": {
-        "en": "Option C is incorrect because the statement truth values or causal connection do not match this option.",
-        "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு C தவறானது."
+        "en": "Option A correctly evaluates the truth value and explanatory relationship between Assertion (A) and Reason (R).",
+        "ta": "கூற்று (A) மற்றும் காரணம் (R) ஆகியவற்றின் உண்மைத் தன்மை மற்றும் விளக்கத் தொடர்பை தெரிவு A சரியாக மதிப்பிடுகிறது."
       },
       "D": {
         "en": "Option D is incorrect because the statement truth values or causal connection do not match this option.",
@@ -1631,8 +1631,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
+        "en": "(A) is true but (R) is false",
+        "ta": "(A) சரி ஆனால் (R) தவறு"
       },
       {
         "id": "B",
@@ -1641,8 +1641,8 @@
       },
       {
         "id": "C",
-        "en": "(A) is true but (R) is false",
-        "ta": "(A) சரி ஆனால் (R) தவறு"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
       },
       {
         "id": "D",
@@ -1651,19 +1651,19 @@
       }
     ],
     "options_en": [
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-      "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
       "(A) is true but (R) is false",
+      "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
       "(A) is false but (R) is true"
     ],
     "options_ta": [
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
-      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
       "(A) சரி ஆனால் (R) தவறு",
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
       "(A) தவறு ஆனால் (R) சரி"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "(A) is true, but (R) is false. Article 76(3) explicitly limits the constitutional right of audience to 'all courts in the territory of India'. There is no constitutional or automatic right of audience in Commonwealth courts.",
       "ta": "(A) சரி, ஆனால் (R) தவறு. சரத்து 76(3) 'இந்திய எல்லைக்குள் உள்ள அனைத்து நீதிமன்றங்களிலும்' வழக்காடும் உரிமையையே வழங்குகிறது; எனவே (A) சரி. வெளிநாட்டு அல்லது காமன்வெல்த் நீதிமன்றங்களில் அத்தகைய தானியங்கி உரிமை எதுவும் அரசியலமைப்பில் இல்லாததால் (R) தவறானது."
@@ -1672,16 +1672,16 @@
     "explanation_ta": "(A) சரி, ஆனால் (R) தவறு. சரத்து 76(3) 'இந்திய எல்லைக்குள் உள்ள அனைத்து நீதிமன்றங்களிலும்' வழக்காடும் உரிமையையே வழங்குகிறது; எனவே (A) சரி. வெளிநாட்டு அல்லது காமன்வெல்த் நீதிமன்றங்களில் அத்தகைய தானியங்கி உரிமை எதுவும் அரசியலமைப்பில் இல்லாததால் (R) தவறானது.",
     "why_not_others": {
       "A": {
-        "en": "Option A is incorrect because the statement truth values or causal connection do not match this option.",
-        "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு A தவறானது."
+        "en": "Option C correctly evaluates the truth value and explanatory relationship between Assertion (A) and Reason (R).",
+        "ta": "கூற்று (A) மற்றும் காரணம் (R) ஆகியவற்றின் உண்மைத் தன்மை மற்றும் விளக்கத் தொடர்பை தெரிவு C சரியாக மதிப்பிடுகிறது."
       },
       "B": {
         "en": "Option B is incorrect because the statement truth values or causal connection do not match this option.",
         "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு B தவறானது."
       },
       "C": {
-        "en": "Option C correctly evaluates the truth value and explanatory relationship between Assertion (A) and Reason (R).",
-        "ta": "கூற்று (A) மற்றும் காரணம் (R) ஆகியவற்றின் உண்மைத் தன்மை மற்றும் விளக்கத் தொடர்பை தெரிவு C சரியாக மதிப்பிடுகிறது."
+        "en": "Option A is incorrect because the statement truth values or causal connection do not match this option.",
+        "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு A தவறானது."
       },
       "D": {
         "en": "Option D is incorrect because the statement truth values or causal connection do not match this option.",
@@ -1732,8 +1732,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
+        "en": "(A) is true but (R) is false",
+        "ta": "(A) சரி ஆனால் (R) தவறு"
       },
       {
         "id": "B",
@@ -1742,8 +1742,8 @@
       },
       {
         "id": "C",
-        "en": "(A) is true but (R) is false",
-        "ta": "(A) சரி ஆனால் (R) தவறு"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
       },
       {
         "id": "D",
@@ -1752,19 +1752,19 @@
       }
     ],
     "options_en": [
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-      "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
       "(A) is true but (R) is false",
+      "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
       "(A) is false but (R) is true"
     ],
     "options_ta": [
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
-      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
       "(A) சரி ஆனால் (R) தவறு",
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
       "(A) தவறு ஆனால் (R) சரி"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Both (A) and (R) are true, and (R) correctly explains (A). Section 126 of the Evidence Act protects confidential communications between an advocate and client; since the AG acts as counsel for the Union Government, this legal privilege applies.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும். சாட்சியச் சட்டத்தின் பிரிவு 126 வழக்கறிஞர்-வாடிக்கையாளர் இடையேயான ரகசியங்களைப் பாதுகாக்கிறது; AG மத்திய அரசின் வழக்கறிஞராகச் செயல்படுவதால் இந்த சிறப்புரிமை பொருந்தும்."
@@ -1773,16 +1773,16 @@
     "explanation_ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும். சாட்சியச் சட்டத்தின் பிரிவு 126 வழக்கறிஞர்-வாடிக்கையாளர் இடையேயான ரகசியங்களைப் பாதுகாக்கிறது; AG மத்திய அரசின் வழக்கறிஞராகச் செயல்படுவதால் இந்த சிறப்புரிமை பொருந்தும்.",
     "why_not_others": {
       "A": {
-        "en": "Option A correctly evaluates the truth value and explanatory relationship between Assertion (A) and Reason (R).",
-        "ta": "கூற்று (A) மற்றும் காரணம் (R) ஆகியவற்றின் உண்மைத் தன்மை மற்றும் விளக்கத் தொடர்பை தெரிவு A சரியாக மதிப்பிடுகிறது."
+        "en": "Option C is incorrect because the statement truth values or causal connection do not match this option.",
+        "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு C தவறானது."
       },
       "B": {
         "en": "Option B is incorrect because the statement truth values or causal connection do not match this option.",
         "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு B தவறானது."
       },
       "C": {
-        "en": "Option C is incorrect because the statement truth values or causal connection do not match this option.",
-        "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு C தவறானது."
+        "en": "Option A correctly evaluates the truth value and explanatory relationship between Assertion (A) and Reason (R).",
+        "ta": "கூற்று (A) மற்றும் காரணம் (R) ஆகியவற்றின் உண்மைத் தன்மை மற்றும் விளக்கத் தொடர்பை தெரிவு A சரியாக மதிப்பிடுகிறது."
       },
       "D": {
         "en": "Option D is incorrect because the statement truth values or causal connection do not match this option.",
@@ -1833,8 +1833,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
+        "en": "(A) is false but (R) is true",
+        "ta": "(A) தவறு ஆனால் (R) சரி"
       },
       {
         "id": "B",
@@ -1848,24 +1848,24 @@
       },
       {
         "id": "D",
-        "en": "(A) is false but (R) is true",
-        "ta": "(A) தவறு ஆனால் (R) சரி"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
       }
     ],
     "options_en": [
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "(A) is false but (R) is true",
       "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
       "(A) is true but (R) is false",
-      "(A) is false but (R) is true"
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)"
     ],
     "options_ta": [
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
+      "(A) தவறு ஆனால் (R) சரி",
       "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
       "(A) சரி ஆனால் (R) தவறு",
-      "(A) தவறு ஆனால் (R) சரி"
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Both (A) and (R) are true, and (R) correctly explains (A). Rule 8(1)(d) of the Law Officers Rules prohibits accepting directorships without GoI sanction to preserve ethical impartiality and avoid conflicts of interest.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும். நிறுவனங்களின் இயக்குநர் பதவியை ஏற்பது அரசின் பொது நலன்களோடு முரண்பட வாய்ப்புள்ளதால், அரசின் முன் அனுமதி கட்டாயமாக்கப்பட்டுள்ளது."
@@ -1874,8 +1874,8 @@
     "explanation_ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும். நிறுவனங்களின் இயக்குநர் பதவியை ஏற்பது அரசின் பொது நலன்களோடு முரண்பட வாய்ப்புள்ளதால், அரசின் முன் அனுமதி கட்டாயமாக்கப்பட்டுள்ளது.",
     "why_not_others": {
       "A": {
-        "en": "Option A correctly evaluates the truth value and explanatory relationship between Assertion (A) and Reason (R).",
-        "ta": "கூற்று (A) மற்றும் காரணம் (R) ஆகியவற்றின் உண்மைத் தன்மை மற்றும் விளக்கத் தொடர்பை தெரிவு A சரியாக மதிப்பிடுகிறது."
+        "en": "Option D is incorrect because the statement truth values or causal connection do not match this option.",
+        "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு D தவறானது."
       },
       "B": {
         "en": "Option B is incorrect because the statement truth values or causal connection do not match this option.",
@@ -1886,8 +1886,8 @@
         "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு C தவறானது."
       },
       "D": {
-        "en": "Option D is incorrect because the statement truth values or causal connection do not match this option.",
-        "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு D தவறானது."
+        "en": "Option A correctly evaluates the truth value and explanatory relationship between Assertion (A) and Reason (R).",
+        "ta": "கூற்று (A) மற்றும் காரணம் (R) ஆகியவற்றின் உண்மைத் தன்மை மற்றும் விளக்கத் தொடர்பை தெரிவு A சரியாக மதிப்பிடுகிறது."
       }
     },
     "tnpsc_tip": {
@@ -1944,29 +1944,29 @@
       },
       {
         "id": "C",
-        "en": "(A) is true but (R) is false",
-        "ta": "(A) சரி ஆனால் (R) தவறு"
+        "en": "(A) is false but (R) is true",
+        "ta": "(A) தவறு ஆனால் (R) சரி"
       },
       {
         "id": "D",
-        "en": "(A) is false but (R) is true",
-        "ta": "(A) தவறு ஆனால் (R) சரி"
+        "en": "(A) is true but (R) is false",
+        "ta": "(A) சரி ஆனால் (R) தவறு"
       }
     ],
     "options_en": [
       "Both (A) and (R) are true and (R) is the correct explanation of (A)",
       "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
-      "(A) is true but (R) is false",
-      "(A) is false but (R) is true"
+      "(A) is false but (R) is true",
+      "(A) is true but (R) is false"
     ],
     "options_ta": [
       "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
       "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
-      "(A) சரி ஆனால் (R) தவறு",
-      "(A) தவறு ஆனால் (R) சரி"
+      "(A) தவறு ஆனால் (R) சரி",
+      "(A) சரி ஆனால் (R) தவறு"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "(A) is false, but (R) is true. The Advocate General of a State is an independent constitutional authority under Article 165 appointed by the Governor and is NOT administratively subordinate to the AG. (R) is true as the AG is indeed the highest law officer in India.",
       "ta": "(A) தவறு, ஆனால் (R) சரி. மாநில அட்வகேட் ஜெனரல் சரத்து 165-ன் கீழ் இயங்கும் சுதந்திரமான அரசியலமைப்பு அலுவலர்; அவர் AG-க்குக் கீழ்நிலை அதிகாரி அல்ல என்பதால் (A) தவறு. ஆனால் சரத்து 76-ன் படி AG நாட்டின் தலைமை சட்ட அதிகாரி என்பது சரியானது."
@@ -1983,12 +1983,12 @@
         "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு B தவறானது."
       },
       "C": {
-        "en": "Option C is incorrect because the statement truth values or causal connection do not match this option.",
-        "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு C தவறானது."
-      },
-      "D": {
         "en": "Option D correctly evaluates the truth value and explanatory relationship between Assertion (A) and Reason (R).",
         "ta": "கூற்று (A) மற்றும் காரணம் (R) ஆகியவற்றின் உண்மைத் தன்மை மற்றும் விளக்கத் தொடர்பை தெரிவு D சரியாக மதிப்பிடுகிறது."
+      },
+      "D": {
+        "en": "Option C is incorrect because the statement truth values or causal connection do not match this option.",
+        "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு C தவறானது."
       }
     },
     "tnpsc_tip": {
@@ -2035,8 +2035,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
+        "en": "(A) is false but (R) is true",
+        "ta": "(A) தவறு ஆனால் (R) சரி"
       },
       {
         "id": "B",
@@ -2050,24 +2050,24 @@
       },
       {
         "id": "D",
-        "en": "(A) is false but (R) is true",
-        "ta": "(A) தவறு ஆனால் (R) சரி"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
       }
     ],
     "options_en": [
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "(A) is false but (R) is true",
       "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
       "(A) is true but (R) is false",
-      "(A) is false but (R) is true"
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)"
     ],
     "options_ta": [
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
+      "(A) தவறு ஆனால் (R) சரி",
       "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
       "(A) சரி ஆனால் (R) தவறு",
-      "(A) தவறு ஆனால் (R) சரி"
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Both (A) and (R) are true, and (R) correctly explains (A). Under Article 76(1), the AG must be qualified to be an SC Judge. Article 124(3)(c) specifies that a 'distinguished jurist in the opinion of the President' qualifies to be an SC Judge; hence such a person qualifies to be AG.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும். சரத்து 76(1)-ன் படி உச்ச நீதிமன்ற நீதிபதி தகுதி தேவை. சரத்து 124(3)(c)-ன் படி 'புகழ்பெற்ற சட்ட வல்லுநர்' உச்ச நீதிமன்ற நீதிபதியாக முடியும் என்பதால், அவரும் தலைமை வழக்கறிஞராக நியமிக்கப்படத் தகுதியுடையவர் ஆவார்."
@@ -2076,8 +2076,8 @@
     "explanation_ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும். சரத்து 76(1)-ன் படி உச்ச நீதிமன்ற நீதிபதி தகுதி தேவை. சரத்து 124(3)(c)-ன் படி 'புகழ்பெற்ற சட்ட வல்லுநர்' உச்ச நீதிமன்ற நீதிபதியாக முடியும் என்பதால், அவரும் தலைமை வழக்கறிஞராக நியமிக்கப்படத் தகுதியுடையவர் ஆவார்.",
     "why_not_others": {
       "A": {
-        "en": "Option A correctly evaluates the truth value and explanatory relationship between Assertion (A) and Reason (R).",
-        "ta": "கூற்று (A) மற்றும் காரணம் (R) ஆகியவற்றின் உண்மைத் தன்மை மற்றும் விளக்கத் தொடர்பை தெரிவு A சரியாக மதிப்பிடுகிறது."
+        "en": "Option D is incorrect because the statement truth values or causal connection do not match this option.",
+        "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு D தவறானது."
       },
       "B": {
         "en": "Option B is incorrect because the statement truth values or causal connection do not match this option.",
@@ -2088,8 +2088,8 @@
         "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு C தவறானது."
       },
       "D": {
-        "en": "Option D is incorrect because the statement truth values or causal connection do not match this option.",
-        "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு D தவறானது."
+        "en": "Option A correctly evaluates the truth value and explanatory relationship between Assertion (A) and Reason (R).",
+        "ta": "கூற்று (A) மற்றும் காரணம் (R) ஆகியவற்றின் உண்மைத் தன்மை மற்றும் விளக்கத் தொடர்பை தெரிவு A சரியாக மதிப்பிடுகிறது."
       }
     },
     "tnpsc_tip": {
@@ -2136,8 +2136,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
+        "en": "(A) is false but (R) is true",
+        "ta": "(A) தவறு ஆனால் (R) சரி"
       },
       {
         "id": "B",
@@ -2151,24 +2151,24 @@
       },
       {
         "id": "D",
-        "en": "(A) is false but (R) is true",
-        "ta": "(A) தவறு ஆனால் (R) சரி"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
       }
     ],
     "options_en": [
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "(A) is false but (R) is true",
       "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
       "(A) is true but (R) is false",
-      "(A) is false but (R) is true"
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)"
     ],
     "options_ta": [
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
+      "(A) தவறு ஆனால் (R) சரி",
       "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
       "(A) சரி ஆனால் (R) தவறு",
-      "(A) தவறு ஆனால் (R) சரி"
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "(A) is false, but (R) is true. The AG requires qualification to be a SUPREME Court Judge (Article 76(1)), not a High Court Judge; hence (A) is false. (R) is true because Article 165(1) requires qualification to be an HC Judge for the Advocate General.",
       "ta": "(A) தவறு, ஆனால் (R) சரி. தலைமை வழக்கறிஞராக உச்ச நீதிமன்ற நீதிபதிக்கான தகுதி தேவை (சரத்து 76(1)), உயர் நீதிமன்ற நீதிபதி தகுதி போதாது; எனவே (A) தவறு. ஆனால் மாநில அட்வகேட் ஜெனரலுக்கு உயர் நீதிமன்ற நீதிபதி தகுதி தேவை என்பது சரியானது (சரத்து 165(1))."
@@ -2177,8 +2177,8 @@
     "explanation_ta": "(A) தவறு, ஆனால் (R) சரி. தலைமை வழக்கறிஞராக உச்ச நீதிமன்ற நீதிபதிக்கான தகுதி தேவை (சரத்து 76(1)), உயர் நீதிமன்ற நீதிபதி தகுதி போதாது; எனவே (A) தவறு. ஆனால் மாநில அட்வகேட் ஜெனரலுக்கு உயர் நீதிமன்ற நீதிபதி தகுதி தேவை என்பது சரியானது (சரத்து 165(1)).",
     "why_not_others": {
       "A": {
-        "en": "Option A is incorrect because the statement truth values or causal connection do not match this option.",
-        "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு A தவறானது."
+        "en": "Option D correctly evaluates the truth value and explanatory relationship between Assertion (A) and Reason (R).",
+        "ta": "கூற்று (A) மற்றும் காரணம் (R) ஆகியவற்றின் உண்மைத் தன்மை மற்றும் விளக்கத் தொடர்பை தெரிவு D சரியாக மதிப்பிடுகிறது."
       },
       "B": {
         "en": "Option B is incorrect because the statement truth values or causal connection do not match this option.",
@@ -2189,8 +2189,8 @@
         "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு C தவறானது."
       },
       "D": {
-        "en": "Option D correctly evaluates the truth value and explanatory relationship between Assertion (A) and Reason (R).",
-        "ta": "கூற்று (A) மற்றும் காரணம் (R) ஆகியவற்றின் உண்மைத் தன்மை மற்றும் விளக்கத் தொடர்பை தெரிவு D சரியாக மதிப்பிடுகிறது."
+        "en": "Option A is incorrect because the statement truth values or causal connection do not match this option.",
+        "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு A தவறானது."
       }
     },
     "tnpsc_tip": {
@@ -2247,29 +2247,29 @@
       },
       {
         "id": "C",
-        "en": "(A) is true but (R) is false",
-        "ta": "(A) சரி ஆனால் (R) தவறு"
+        "en": "(A) is false but (R) is true",
+        "ta": "(A) தவறு ஆனால் (R) சரி"
       },
       {
         "id": "D",
-        "en": "(A) is false but (R) is true",
-        "ta": "(A) தவறு ஆனால் (R) சரி"
+        "en": "(A) is true but (R) is false",
+        "ta": "(A) சரி ஆனால் (R) தவறு"
       }
     ],
     "options_en": [
       "Both (A) and (R) are true and (R) is the correct explanation of (A)",
       "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
-      "(A) is true but (R) is false",
-      "(A) is false but (R) is true"
+      "(A) is false but (R) is true",
+      "(A) is true but (R) is false"
     ],
     "options_ta": [
       "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
       "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
-      "(A) சரி ஆனால் (R) தவறு",
-      "(A) தவறு ஆனால் (R) சரி"
+      "(A) தவறு ஆனால் (R) சரி",
+      "(A) சரி ஆனால் (R) தவறு"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "(A) is false, but (R) is true. Under Article 88, the AG CAN be named a member of any committee of Parliament (making (A) false). (R) is true because Article 88 explicitly denies the AG the right to vote.",
       "ta": "(A) தவறு, ஆனால் (R) சரி. சரத்து 88-ன் கீழ் நாடாளுமன்றக் குழுவில் AG உறுப்பினராகப் பெயரிடப்பட முடியும் என்பதால் (A) தவறு. ஆனால் அவருக்கு வாக்குரிமை கிடையாது என்பது சரத்து 88-ன் படி உண்மையாகும்."
@@ -2286,12 +2286,12 @@
         "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு B தவறானது."
       },
       "C": {
-        "en": "Option C is incorrect because the statement truth values or causal connection do not match this option.",
-        "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு C தவறானது."
-      },
-      "D": {
         "en": "Option D correctly evaluates the truth value and explanatory relationship between Assertion (A) and Reason (R).",
         "ta": "கூற்று (A) மற்றும் காரணம் (R) ஆகியவற்றின் உண்மைத் தன்மை மற்றும் விளக்கத் தொடர்பை தெரிவு D சரியாக மதிப்பிடுகிறது."
+      },
+      "D": {
+        "en": "Option C is incorrect because the statement truth values or causal connection do not match this option.",
+        "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு C தவறானது."
       }
     },
     "tnpsc_tip": {
@@ -2338,13 +2338,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
+        "en": "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல"
       },
       {
         "id": "B",
-        "en": "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
       },
       {
         "id": "C",
@@ -2358,19 +2358,19 @@
       }
     ],
     "options_en": [
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
       "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
       "(A) is true but (R) is false",
       "(A) is false but (R) is true"
     ],
     "options_ta": [
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
       "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
       "(A) சரி ஆனால் (R) தவறு",
       "(A) தவறு ஆனால் (R) சரி"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Both (A) and (R) are true, and (R) correctly explains (A). As the Union's principal advocate, the AG appears in Article 131 original suits because these directly concern the constitutional and legal powers of the Union of India.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும். சரத்து 131 அசல் அதிகார வரம்பில் கூட்டாட்சி தகராறுகள் விசாரிக்கப்படுவதால், ஒன்றிய அரசின் உரிமைகளைப் பாதுகாக்க AG ஆஜராகிறார்."
@@ -2379,12 +2379,12 @@
     "explanation_ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும். சரத்து 131 அசல் அதிகார வரம்பில் கூட்டாட்சி தகராறுகள் விசாரிக்கப்படுவதால், ஒன்றிய அரசின் உரிமைகளைப் பாதுகாக்க AG ஆஜராகிறார்.",
     "why_not_others": {
       "A": {
-        "en": "Option A correctly evaluates the truth value and explanatory relationship between Assertion (A) and Reason (R).",
-        "ta": "கூற்று (A) மற்றும் காரணம் (R) ஆகியவற்றின் உண்மைத் தன்மை மற்றும் விளக்கத் தொடர்பை தெரிவு A சரியாக மதிப்பிடுகிறது."
-      },
-      "B": {
         "en": "Option B is incorrect because the statement truth values or causal connection do not match this option.",
         "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு B தவறானது."
+      },
+      "B": {
+        "en": "Option A correctly evaluates the truth value and explanatory relationship between Assertion (A) and Reason (R).",
+        "ta": "கூற்று (A) மற்றும் காரணம் (R) ஆகியவற்றின் உண்மைத் தன்மை மற்றும் விளக்கத் தொடர்பை தெரிவு A சரியாக மதிப்பிடுகிறது."
       },
       "C": {
         "en": "Option C is incorrect because the statement truth values or causal connection do not match this option.",
@@ -2439,8 +2439,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
+        "en": "(A) is false but (R) is true",
+        "ta": "(A) தவறு ஆனால் (R) சரி"
       },
       {
         "id": "B",
@@ -2454,24 +2454,24 @@
       },
       {
         "id": "D",
-        "en": "(A) is false but (R) is true",
-        "ta": "(A) தவறு ஆனால் (R) சரி"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
       }
     ],
     "options_en": [
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "(A) is false but (R) is true",
       "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
       "(A) is true but (R) is false",
-      "(A) is false but (R) is true"
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)"
     ],
     "options_ta": [
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்",
+      "(A) தவறு ஆனால் (R) சரி",
       "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-வின் சரியான விளக்கம் அல்ல",
       "(A) சரி ஆனால் (R) தவறு",
-      "(A) தவறு ஆனால் (R) சரி"
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-வின் சரியான விளக்கமாகும்"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "(A) is false, but (R) is true. Under Rule 8(1)(b) of the Law Officers Rules, the AG cannot defend an accused person in criminal prosecutions without the permission of the Government of India; hence (A) is false. (R) is true because the Constitution does not debar him from private practice.",
       "ta": "(A) தவறு, ஆனால் (R) சரி. 1987 சட்ட அதிகாரிகள் விதிகளின்படி அரசின் அனுமதியின்றி குற்ற வழக்குகளில் குற்றவாளிக்காக AG ஆஜராக முடியாது என்பதால் (A) தவறு. ஆனால் அரசியலமைப்பு அவரை தனியார் பயிற்சியிலிருந்து வெளிப்படையாகத் தடை செய்யவில்லை என்பது சரியானது."
@@ -2480,8 +2480,8 @@
     "explanation_ta": "(A) தவறு, ஆனால் (R) சரி. 1987 சட்ட அதிகாரிகள் விதிகளின்படி அரசின் அனுமதியின்றி குற்ற வழக்குகளில் குற்றவாளிக்காக AG ஆஜராக முடியாது என்பதால் (A) தவறு. ஆனால் அரசியலமைப்பு அவரை தனியார் பயிற்சியிலிருந்து வெளிப்படையாகத் தடை செய்யவில்லை என்பது சரியானது.",
     "why_not_others": {
       "A": {
-        "en": "Option A is incorrect because the statement truth values or causal connection do not match this option.",
-        "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு A தவறானது."
+        "en": "Option D correctly evaluates the truth value and explanatory relationship between Assertion (A) and Reason (R).",
+        "ta": "கூற்று (A) மற்றும் காரணம் (R) ஆகியவற்றின் உண்மைத் தன்மை மற்றும் விளக்கத் தொடர்பை தெரிவு D சரியாக மதிப்பிடுகிறது."
       },
       "B": {
         "en": "Option B is incorrect because the statement truth values or causal connection do not match this option.",
@@ -2492,8 +2492,8 @@
         "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு C தவறானது."
       },
       "D": {
-        "en": "Option D correctly evaluates the truth value and explanatory relationship between Assertion (A) and Reason (R).",
-        "ta": "கூற்று (A) மற்றும் காரணம் (R) ஆகியவற்றின் உண்மைத் தன்மை மற்றும் விளக்கத் தொடர்பை தெரிவு D சரியாக மதிப்பிடுகிறது."
+        "en": "Option A is incorrect because the statement truth values or causal connection do not match this option.",
+        "ta": "கூற்றுகளின் உண்மை நிலை அல்லது காரணத் தொடர்பு இந்த தெரிவுடன் பொருந்தாததால் தெரிவு A தவறானது."
       }
     },
     "tnpsc_tip": {

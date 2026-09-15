@@ -1011,6 +1011,47 @@
     "mind_map_p1": {
       "title": "JUDICIAL REVIEW & BASIC STRUCTURE (PART 1)",
       "mermaid_code": "graph TD\n    A[JUDICIAL REVIEW & BASIC STRUCTURE] --> B[Constitutional Basis]\n    A --> C[Jurisdiction & Scope]\n    A --> D[Evolution of Amending Power]\n    A --> E[Basic Structure Doctrine]\n    B --> B1[Art. 13: Void Laws]\n    B --> B2[Art. 32: SC Writs]\n    B --> B3[Art. 226: HC Broader Writs]\n    B --> B4[Art. 227: HC Superintendence]\n    C --> C1[Legislative Review: Competence & FRs]\n    C --> C2[Executive Review: Arbitrariness & Malafide]\n    D --> D1[1951 Shankari Prasad: Amending FRs Allowed]\n    D --> D2[1967 Golaknath: FRs Cannot Be Amended]\n    D --> D3[1973 Kesavananda: Basic Structure Formulated]\n    E --> E1[Kesavananda 1973: Core Identity Inviolable]\n    E --> E2[Minerva Mills 1980: Judicial Review is Basic Structure]\n    E --> E3[Coelho 2007: 9th Sched Post-1973 Reviewable]"
-    }
+    },
+    "mind_map": {
+      "title": "JUDICIAL REVIEW & BASIC STRUCTURE (PART 1)",
+      "mermaid_code": "graph TD\n    A[JUDICIAL REVIEW & BASIC STRUCTURE] --> B[Constitutional Basis]\n    A --> C[Jurisdiction & Scope]\n    A --> D[Evolution of Amending Power]\n    A --> E[Basic Structure Doctrine]\n    B --> B1[Art. 13: Void Laws]\n    B --> B2[Art. 32: SC Writs]\n    B --> B3[Art. 226: HC Broader Writs]\n    B --> B4[Art. 227: HC Superintendence]\n    C --> C1[Legislative Review: Competence & FRs]\n    C --> C2[Executive Review: Arbitrariness & Malafide]\n    D --> D1[1951 Shankari Prasad: Amending FRs Allowed]\n    D --> D2[1967 Golaknath: FRs Cannot Be Amended]\n    D --> D3[1973 Kesavananda: Basic Structure Formulated]\n    E --> E1[Kesavananda 1973: Core Identity Inviolable]\n    E --> E2[Minerva Mills 1980: Judicial Review is Basic Structure]\n    E --> E3[Coelho 2007: 9th Sched Post-1973 Reviewable]"
+    },
+    "revision_cards": [
+      {
+        "id": "jrap_p1_c1",
+        "front_en": "What is the constitutional meaning and scope of Judicial Review in India?",
+        "front_ta": "இந்தியாவில் நீதித்துறை மறுஆய்வின் அரசியலமைப்புப் பொருள் மற்றும் வரம்பு யாது?",
+        "back_en": "The power of Supreme Court and High Courts to examine the constitutional validity of legislative acts and executive orders, and strike them down if they violate the Constitution or Basic Structure.",
+        "back_ta": "சட்டமன்றச் சட்டங்கள் மற்றும் நிர்வாக உத்தரவுகளின் அரசியலமைப்புச் செல்லுபடியாகும் தன்மையை ஆராய்ந்து, அரசியலமைப்பு அல்லது அடிப்படைக் கட்டமைப்பை மீறினால் அவற்றைச் செல்லாததாக்கும் உச்ச மற்றும் உயர் நீதிமன்றங்களின் அதிகாரம்."
+      },
+      {
+        "id": "jrap_p1_c2",
+        "front_en": "How does Article 13 act as the constitutional bedrock of Judicial Review?",
+        "front_ta": "உறுப்பு 13 எவ்வாறு நீதித்துறை மறுஆய்வின் அரசியலமைப்பு அடித்தளமாகச் செயல்படுகிறது?",
+        "back_en": "Article 13(2) expressly bars the State from making any law taking away or abridging Fundamental Rights; any law made in contravention is void ab initio.",
+        "back_ta": "உறுப்பு 13(2) அடிப்படை உரிமைகளைப் பறிக்கும் அல்லது குறைக்கும் எந்தவொரு சட்டத்தையும் அரசு இயற்றக்கூடாது என வெளிப்படையாகத் தடுக்கிறது; மீறி இயற்றப்படும் சட்டம் தொடக்கத்திலிருந்தே செல்லாது."
+      },
+      {
+        "id": "jrap_p1_c3",
+        "front_en": "Compare the writ jurisdiction of Article 32 (SC) and Article 226 (HC).",
+        "front_ta": "உறுப்பு 32 (SC) மற்றும் உறுப்பு 226 (HC) ஆகியவற்றின் நீதிப்பேராணை வரம்பை ஒப்பிடுக.",
+        "back_en": "Article 32 is limited ONLY to enforcement of Fundamental Rights and is itself a FR; Article 226 covers Fundamental Rights AND \"for any other purpose\" (wider jurisdiction).",
+        "back_ta": "உறுப்பு 32 அடிப்படை உரிமைகளை அமல்படுத்துவதற்கு மட்டுமே பொருந்தும் மற்றும் தானே ஓர் அடிப்படை உரிமை; உறுப்பு 226 அடிப்படை உரிமைகள் மற்றும் \"வேறு எந்த நோக்கத்திற்கும்\" பொருந்தும் (பரந்த அதிகார வரம்பு)."
+      },
+      {
+        "id": "jrap_p1_c4",
+        "front_en": "Which landmark case propounded the Basic Structure Doctrine?",
+        "front_ta": "அடிப்படைக் கட்டமைப்புக் கோட்பாட்டை முன்வைத்த வரலாற்றுச் சிறப்புமிக்க வழக்கு எது?",
+        "back_en": "Kesavananda Bharati v. State of Kerala (1973) held that Parliament can amend any part of the Constitution under Art. 368 but cannot alter or destroy its Basic Structure.",
+        "back_ta": "கேசவாநந்த பாரதி v. கேரள மாநிலம் (1973) வழக்கில் நாடாளுமன்றம் உறுப்பு 368 கீழ் எதனையும் திருத்தலாம், ஆனால் அரசியலமைப்பின் அடிப்படைக் கட்டமைப்பை மாற்றவோ அழிக்கவோ முடியாது எனத் தீர்ப்பளிக்கப்பட்டது."
+      },
+      {
+        "id": "jrap_p1_c5",
+        "front_en": "What did the Supreme Court hold regarding the Ninth Schedule in the I.R. Coelho Case (2007)?",
+        "front_ta": "I.R. கோயல்ஹோ வழக்கில் (2007) ஒன்பதாவது அட்டவணை குறித்து உச்ச நீதிமன்றம் என்ன தீர்ப்பளித்தது?",
+        "back_en": "Laws placed in the Ninth Schedule on or after 24 April 1973 are open to challenge and judicial review if they damage or destroy the Basic Structure (Articles 14, 19, 21).",
+        "back_ta": "24 ஏப்ரல் 1973 அன்றோ அல்லது அதற்குப் பின்னரோ 9வது அட்டவணையில் சேர்க்கப்பட்ட சட்டங்கள் அடிப்படைக் கட்டமைப்பை (உறுப்புகள் 14, 19, 21) மீறினால் நீதித்துறை மறுஆய்வுக்கு உட்பட்டவை."
+      }
+    ]
   }
 }

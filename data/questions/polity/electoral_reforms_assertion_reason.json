@@ -15,13 +15,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல"
+        "en": "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
       },
       {
         "id": "B",
-        "en": "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
+        "en": "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல"
       },
       {
         "id": "C",
@@ -35,19 +35,19 @@
       }
     ],
     "options_en": [
-      "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
       "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+      "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
       "(A) is true, but (R) is false",
       "(A) is false, but (R) is true"
     ],
     "options_ta": [
-      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல",
       "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்",
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல",
       "(A) சரி, ஆனால் (R) தவறு",
       "(A) தவறு, ஆனால் (R) சரி"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Both (A) and (R) are true, and (R) correctly explains (A). In ADR v. Union of India (2024), the 5-judge Constitution Bench held that the voter's Right to Information under Article 19(1)(a) is essential for exercising an informed franchise, and anonymous corporate donations subvert this right.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும். 2024 ADR தீர்ப்பில், வாக்காளர்களின் சரத்து 19(1)(a)-ன் கீழான தகவல் அறியும் உரிமை ஜனநாயகத்தின் அடித்தளம் என்றும், பெயரற்ற தேர்தல் பத்திரங்கள் அதை மீறுகின்றன என்றும் உச்ச நீதிமன்றம் கூறியது."
@@ -56,12 +56,12 @@
     "explanation_ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும். 2024 ADR தீர்ப்பில், வாக்காளர்களின் சரத்து 19(1)(a)-ன் கீழான தகவல் அறியும் உரிமை ஜனநாயகத்தின் அடித்தளம் என்றும், பெயரற்ற தேர்தல் பத்திரங்கள் அதை மீறுகின்றன என்றும் உச்ச நீதிமன்றம் கூறியது.",
     "why_not_others": {
       "A": {
-        "en": "Incorrect. (R) is indeed the direct explanation.",
-        "ta": "தவறானது. (R) நேரடி விளக்கமாகும்."
-      },
-      "B": {
         "en": "Correct. Reason directly provides the legal grounding of the Assertion.",
         "ta": "சரியானது. காரணம் கூற்றின் சட்ட அடிப்படையை துல்லியமாக விளக்குகிறது."
+      },
+      "B": {
+        "en": "Incorrect. (R) is indeed the direct explanation.",
+        "ta": "தவறானது. (R) நேரடி விளக்கமாகும்."
       },
       "C": {
         "en": "Incorrect. Both statements are true.",
@@ -120,13 +120,13 @@
       },
       {
         "id": "B",
-        "en": "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
+        "en": "(A) is true, but (R) is false",
+        "ta": "(A) சரி, ஆனால் (R) தவறு"
       },
       {
         "id": "C",
-        "en": "(A) is true, but (R) is false",
-        "ta": "(A) சரி, ஆனால் (R) தவறு"
+        "en": "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
       },
       {
         "id": "D",
@@ -136,18 +136,18 @@
     ],
     "options_en": [
       "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
-      "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
       "(A) is true, but (R) is false",
+      "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
       "(A) is false, but (R) is true"
     ],
     "options_ta": [
       "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல",
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்",
       "(A) சரி, ஆனால் (R) தவறு",
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்",
       "(A) தவறு, ஆனால் (R) சரி"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Both (A) and (R) are true, and (R) correctly explains (A). The immediate disqualification of convicted lawmakers happens precisely because Section 8(4), which had previously delayed disqualification by 3 months pending appeal, was struck down as unconstitutional in Lily Thomas.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும். மேல்முறையீடு முடியும் வரை 3 மாத அவகாசம் அளித்த பிரிவு 8(4) ரத்து செய்யப்பட்டதன் காரணமாகவே தற்போது தண்டனை விதிக்கப்பட்ட உடனேயே தகுதிநீக்கம் அமலாகிறது."
@@ -160,12 +160,12 @@
         "ta": "தவறானது. (R) நேரடி விளக்கமாகும்."
       },
       "B": {
-        "en": "Correct. The striking down of Section 8(4) is the direct legal cause of immediate disqualification.",
-        "ta": "சரியானது. பிரிவு 8(4) ரத்து செய்யப்பட்டதே உடனடி தகுதிநீக்கத்திற்கு நேரடி காரணமாகும்."
-      },
-      "C": {
         "en": "Incorrect. Both statements are true.",
         "ta": "தவறானது. இரண்டும் சரி."
+      },
+      "C": {
+        "en": "Correct. The striking down of Section 8(4) is the direct legal cause of immediate disqualification.",
+        "ta": "சரியானது. பிரிவு 8(4) ரத்து செய்யப்பட்டதே உடனடி தகுதிநீக்கத்திற்கு நேரடி காரணமாகும்."
       },
       "D": {
         "en": "Incorrect. (A) is true.",
@@ -421,8 +421,8 @@
       },
       {
         "id": "B",
-        "en": "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
+        "en": "(A) is false, but (R) is true",
+        "ta": "(A) தவறு, ஆனால் (R) சரி"
       },
       {
         "id": "C",
@@ -431,24 +431,24 @@
       },
       {
         "id": "D",
-        "en": "(A) is false, but (R) is true",
-        "ta": "(A) தவறு, ஆனால் (R) சரி"
+        "en": "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
       }
     ],
     "options_en": [
       "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
-      "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+      "(A) is false, but (R) is true",
       "(A) is true, but (R) is false",
-      "(A) is false, but (R) is true"
+      "Both (A) and (R) are true, and (R) is the correct explanation of (A)"
     ],
     "options_ta": [
       "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல",
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்",
+      "(A) தவறு, ஆனால் (R) சரி",
       "(A) சரி, ஆனால் (R) தவறு",
-      "(A) தவறு, ஆனால் (R) சரி"
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Both (A) and (R) are true, and (R) correctly explains (A). The Supreme Court held that the open ballot in Rajya Sabha was a valid statutory measure enacted by Parliament in 2003 to stamp out the rampant corruption and horse-trading that previously plagued secret ballot Rajya Sabha elections.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும். மாநிலங்களவை தேர்தல்களில் பணபலம் மற்றும் குதிரை பேரத்தைத் தடுப்பதற்காகவே 2003-ல் திறந்த வாக்குச்சீட்டு கொண்டுவரப்பட்டதால் அது செல்லும் என உச்ச நீதிமன்றம் தீர்ப்பளித்தது."
@@ -461,16 +461,16 @@
         "ta": "தவறானது. (R) நேரடி விளக்கம்."
       },
       "B": {
-        "en": "Correct. Reason explains why Parliament introduced open ballot and why the court upheld it.",
-        "ta": "சரியானது. திறந்த வாக்குச்சீட்டு முறை ஏன் உறுதி செய்யப்பட்டது என்பதை காரணம் சரியாக விளக்குகிறது."
+        "en": "Incorrect. (A) is true.",
+        "ta": "தவறானது. (A) சரி."
       },
       "C": {
         "en": "Incorrect. Both statements are true.",
         "ta": "தவறானது. இரண்டும் சரி."
       },
       "D": {
-        "en": "Incorrect. (A) is true.",
-        "ta": "தவறானது. (A) சரி."
+        "en": "Correct. Reason explains why Parliament introduced open ballot and why the court upheld it.",
+        "ta": "சரியானது. திறந்த வாக்குச்சீட்டு முறை ஏன் உறுதி செய்யப்பட்டது என்பதை காரணம் சரியாக விளக்குகிறது."
       }
     },
     "tnpsc_tip": {
@@ -516,13 +516,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல"
+        "en": "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
       },
       {
         "id": "B",
-        "en": "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
+        "en": "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல"
       },
       {
         "id": "C",
@@ -536,19 +536,19 @@
       }
     ],
     "options_en": [
-      "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
       "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+      "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
       "(A) is true, but (R) is false",
       "(A) is false, but (R) is true"
     ],
     "options_ta": [
-      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல",
       "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்",
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல",
       "(A) சரி, ஆனால் (R) தவறு",
       "(A) தவறு, ஆனால் (R) சரி"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Both (A) and (R) are true, and (R) correctly explains (A). Under Article 329(a), once the Delimitation Commission's orders are published in the Gazette, they acquire the force of law and cannot be questioned in any court, as affirmed in Meghraj Kothari (1967).",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும். சரத்து 329(a) மறுவரையறை விவகாரங்களில் நீதிமன்ற தலையீட்டை முழுமையாக தடை செய்துள்ளதால், மேக்ராஜ் கோத்தாரி தீர்ப்பின்படி அரசிதழில் வெளியான பின் இதை எதிர்த்து வழக்கு தொடர முடியாது."
@@ -557,12 +557,12 @@
     "explanation_ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும். சரத்து 329(a) மறுவரையறை விவகாரங்களில் நீதிமன்ற தலையீட்டை முழுமையாக தடை செய்துள்ளதால், மேக்ராஜ் கோத்தாரி தீர்ப்பின்படி அரசிதழில் வெளியான பின் இதை எதிர்த்து வழக்கு தொடர முடியாது.",
     "why_not_others": {
       "A": {
-        "en": "Incorrect. (R) is the constitutional basis of (A).",
-        "ta": "தவறானது. (R) அரசியலமைப்பு அடிப்படையாகும்."
-      },
-      "B": {
         "en": "Correct. Article 329(a) provides the constitutional justification for the bar on judicial challenge.",
         "ta": "சரியானது. சரத்து 329(a) நீதிமன்ற தலையீட்டிற்கு முழுமையான தடையை விதிக்கிறது."
+      },
+      "B": {
+        "en": "Incorrect. (R) is the constitutional basis of (A).",
+        "ta": "தவறானது. (R) அரசியலமைப்பு அடிப்படையாகும்."
       },
       "C": {
         "en": "Incorrect. Both statements are true.",
@@ -717,8 +717,8 @@
     "options": [
       {
         "id": "A",
-        "en": "(A) is true, but (R) is false",
-        "ta": "(A) சரி, ஆனால் (R) தவறு"
+        "en": "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
       },
       {
         "id": "B",
@@ -727,8 +727,8 @@
       },
       {
         "id": "C",
-        "en": "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
+        "en": "(A) is true, but (R) is false",
+        "ta": "(A) சரி, ஆனால் (R) தவறு"
       },
       {
         "id": "D",
@@ -737,19 +737,19 @@
       }
     ],
     "options_en": [
-      "(A) is true, but (R) is false",
-      "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
       "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+      "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
+      "(A) is true, but (R) is false",
       "(A) is false, but (R) is true"
     ],
     "options_ta": [
-      "(A) சரி, ஆனால் (R) தவறு",
-      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல",
       "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்",
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல",
+      "(A) சரி, ஆனால் (R) தவறு",
       "(A) தவறு, ஆனால் (R) சரி"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Both (A) and (R) are true, and (R) correctly explains (A). Section 70 mandates resignation from one seat, which causes an inevitable, costly by-election. This specific wastage of administrative resources is why ECI and the Law Commission proposed 'one candidate, one constituency'.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும். இரு இடங்களில் வென்றால் பிரிவு 70-ன் படி ஒரு இடத்தை துறக்க வேண்டும் என்பதும், அதனால் ஏற்படும் தேவையற்ற இடைத்தேர்தல் செலவுமே தேர்தல் ஆணையத்தின் 'ஒரு வேட்பாளர், ஒரு தொகுதி' பரிந்துரைக்கு முதன்மைக் காரணமாகும்."
@@ -758,16 +758,16 @@
     "explanation_ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும். இரு இடங்களில் வென்றால் பிரிவு 70-ன் படி ஒரு இடத்தை துறக்க வேண்டும் என்பதும், அதனால் ஏற்படும் தேவையற்ற இடைத்தேர்தல் செலவுமே தேர்தல் ஆணையத்தின் 'ஒரு வேட்பாளர், ஒரு தொகுதி' பரிந்துரைக்கு முதன்மைக் காரணமாகும்.",
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Both statements are true.",
-        "ta": "தவறானது. இரண்டும் சரி."
+        "en": "Correct. Reason gives the exact justification for ECI's proposed amendment to Section 33(7).",
+        "ta": "சரியானது. தேர்தல் ஆணையத்தின் பரிந்துரைக்கான காரணத்தை (R) துல்லியமாக விளக்குகிறது."
       },
       "B": {
         "en": "Incorrect. (R) directly explains (A).",
         "ta": "தவறானது. (R) நேரடி விளக்கம்."
       },
       "C": {
-        "en": "Correct. Reason gives the exact justification for ECI's proposed amendment to Section 33(7).",
-        "ta": "சரியானது. தேர்தல் ஆணையத்தின் பரிந்துரைக்கான காரணத்தை (R) துல்லியமாக விளக்குகிறது."
+        "en": "Incorrect. Both statements are true.",
+        "ta": "தவறானது. இரண்டும் சரி."
       },
       "D": {
         "en": "Incorrect. (A) is true.",
@@ -823,13 +823,13 @@
       },
       {
         "id": "B",
-        "en": "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல"
+        "en": "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
       },
       {
         "id": "C",
-        "en": "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
+        "en": "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல"
       },
       {
         "id": "D",
@@ -839,18 +839,18 @@
     ],
     "options_en": [
       "(A) is true, but (R) is false",
-      "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
       "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+      "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
       "(A) is false, but (R) is true"
     ],
     "options_ta": [
       "(A) சரி, ஆனால் (R) தவறு",
-      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல",
       "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்",
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல",
       "(A) தவறு, ஆனால் (R) சரி"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Both (A) and (R) are true, and (R) correctly explains (A). Paragraph 3 of the 10th Schedule allowed defection if one-third of the legislature party broke away. Because this legitimized bulk defections and destabilized elected governments, Parliament deleted it in 2003 via the 91st Amendment.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும். மூன்றில் ஒரு பங்கு உறுப்பினர்கள் கூட்டாக கட்சித் தாவினால் தகுதிநீக்கத்திலிருந்து தப்பிக்க முடியும் என்ற விதி ஆட்சிகளை கவிழ்க்க தவறாகப் பயன்படுத்தப்பட்டதால், 91-வது திருத்தத்தின் மூலம் நாடாளுமன்றம் அதை நீக்கியது."
@@ -863,12 +863,12 @@
         "ta": "தவறானது. இரண்டும் சரி."
       },
       "B": {
-        "en": "Incorrect. (R) is the exact rationale.",
-        "ta": "தவறானது. (R) துல்லியமான காரணம்."
-      },
-      "C": {
         "en": "Correct. Reason explains why Parliament omitted Paragraph 3 in 2003.",
         "ta": "சரியானது. நாடாளுமன்றம் ஏன் பத்தி 3-ஐ நீக்கியது என்பதை காரணம் சரியாக விளக்குகிறது."
+      },
+      "C": {
+        "en": "Incorrect. (R) is the exact rationale.",
+        "ta": "தவறானது. (R) துல்லியமான காரணம்."
       },
       "D": {
         "en": "Incorrect. (A) is true.",
@@ -1029,29 +1029,29 @@
       },
       {
         "id": "C",
-        "en": "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
+        "en": "(A) is false, but (R) is true",
+        "ta": "(A) தவறு, ஆனால் (R) சரி"
       },
       {
         "id": "D",
-        "en": "(A) is false, but (R) is true",
-        "ta": "(A) தவறு, ஆனால் (R) சரி"
+        "en": "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
       }
     ],
     "options_en": [
       "(A) is true, but (R) is false",
       "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
-      "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
-      "(A) is false, but (R) is true"
+      "(A) is false, but (R) is true",
+      "Both (A) and (R) are true, and (R) is the correct explanation of (A)"
     ],
     "options_ta": [
       "(A) சரி, ஆனால் (R) தவறு",
       "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல",
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்",
-      "(A) தவறு, ஆனால் (R) சரி"
+      "(A) தவறு, ஆனால் (R) சரி",
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Both (A) and (R) are true, and (R) correctly explains (A). In Resurgence India v. ECI (2013), the Supreme Court ruled that leaving blanks in Form 26 defeats the voter's Right to Know under Article 19(1)(a), rendering the nomination invalid.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும். ரீசர்ஜன்ஸ் இந்தியா (2013) வழக்கில், பத்திகளை காலியாக விடுவது வாக்காளரின் அறியும் உரிமையைப் பறிப்பதால் வேட்புமனு நிராகரிக்கப்பட வேண்டும் என தீர்ப்பளிக்கப்பட்டது."
@@ -1068,12 +1068,12 @@
         "ta": "தவறானது. (R) நேரடி விளக்கம்."
       },
       "C": {
-        "en": "Correct. Reason gives the constitutional foundation of the nomination rejection rule.",
-        "ta": "சரியானது. மனு நிராகரிப்பிற்கான அரசியலமைப்பு காரணத்தை (R) துல்லியமாக விளக்குகிறது."
-      },
-      "D": {
         "en": "Incorrect. (A) is true.",
         "ta": "தவறானது. (A) சரி."
+      },
+      "D": {
+        "en": "Correct. Reason gives the constitutional foundation of the nomination rejection rule.",
+        "ta": "சரியானது. மனு நிராகரிப்பிற்கான அரசியலமைப்பு காரணத்தை (R) துல்லியமாக விளக்குகிறது."
       }
     },
     "tnpsc_tip": {
@@ -1130,29 +1130,29 @@
       },
       {
         "id": "C",
-        "en": "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
+        "en": "(A) is false, but (R) is true",
+        "ta": "(A) தவறு, ஆனால் (R) சரி"
       },
       {
         "id": "D",
-        "en": "(A) is false, but (R) is true",
-        "ta": "(A) தவறு, ஆனால் (R) சரி"
+        "en": "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
       }
     ],
     "options_en": [
       "(A) is true, but (R) is false",
       "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
-      "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
-      "(A) is false, but (R) is true"
+      "(A) is false, but (R) is true",
+      "Both (A) and (R) are true, and (R) is the correct explanation of (A)"
     ],
     "options_ta": [
       "(A) சரி, ஆனால் (R) தவறு",
       "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல",
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்",
-      "(A) தவறு, ஆனால் (R) சரி"
+      "(A) தவறு, ஆனால் (R) சரி",
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Both (A) and (R) are true, and (R) correctly explains (A). In Umlesh Yadav (2011) and Ashok Shankarrao Chavan (2014), the courts affirmed that lodging an untrue or manipulated account (e.g. concealing paid news) is not lodging an account 'in the manner required', attracting 3-year disqualification under Section 10A.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும். அசோக் சவான் மற்றும் உம்லேஷ் யாதவ் வழக்குகளில், பொய்யான கணக்கை சமர்ப்பிப்பது சட்டப்படி முறையான கணக்காகாது என்பதால் பிரிவு 10A-ன் கீழ் 3 ஆண்டு தகுதிநீக்கம் செல்லும் என உறுதி செய்யப்பட்டது."
@@ -1169,12 +1169,12 @@
         "ta": "தவறானது. (R) நேரடி விளக்கம்."
       },
       "C": {
-        "en": "Correct. Statutory wording 'in the manner required' encompasses accuracy and truthfulness.",
-        "ta": "சரியானது. 'தேவைப்படும் முறையின்படி' என்பது உண்மையான கணக்கையே குறிக்கும் என்பதால் தகுதிநீக்கம் செல்லும்."
-      },
-      "D": {
         "en": "Incorrect. (A) is true.",
         "ta": "தவறானது. (A) சரி."
+      },
+      "D": {
+        "en": "Correct. Statutory wording 'in the manner required' encompasses accuracy and truthfulness.",
+        "ta": "சரியானது. 'தேவைப்படும் முறையின்படி' என்பது உண்மையான கணக்கையே குறிக்கும் என்பதால் தகுதிநீக்கம் செல்லும்."
       }
     },
     "tnpsc_tip": {
@@ -1225,8 +1225,8 @@
       },
       {
         "id": "B",
-        "en": "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல"
+        "en": "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
       },
       {
         "id": "C",
@@ -1235,24 +1235,24 @@
       },
       {
         "id": "D",
-        "en": "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
+        "en": "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல"
       }
     ],
     "options_en": [
       "(A) is false, but (R) is true",
-      "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
+      "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
       "(A) is true, but (R) is false",
-      "Both (A) and (R) are true, and (R) is the correct explanation of (A)"
+      "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)"
     ],
     "options_ta": [
       "(A) தவறு, ஆனால் (R) சரி",
-      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல",
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்",
       "(A) சரி, ஆனால் (R) தவறு",
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Both (A) and (R) are true, and (R) correctly explains (A). The objective of Section 126A of RPA 1951 is to prevent the bandwagon effect and cognitive distortion where early exit poll projections influence voters in subsequent phases.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும். ஆரம்பகட்ட வாக்குக்கணிப்பு முடிவுகள் வெளியாகி, அடுத்தடுத்த கட்டங்களில் வாக்களிக்கும் மக்களின் மனநிலையை பாதிக்கக் கூடாது (Bandwagon effect) என்பதற்காகவே பிரிவு 126A தடை விதிக்கிறது."
@@ -1265,16 +1265,16 @@
         "ta": "தவறானது. (A) சரி."
       },
       "B": {
-        "en": "Incorrect. (R) explains (A).",
-        "ta": "தவறானது. (R) நேரடி விளக்கம்."
+        "en": "Correct. Reason gives the exact legislative intent behind the multi-phase exit poll ban.",
+        "ta": "சரியானது. பல கட்ட தேர்தல் வாக்குக்கணிப்பு தடைக்கான காரணத்தை (R) துல்லியமாக விளக்குகிறது."
       },
       "C": {
         "en": "Incorrect. Both statements are true.",
         "ta": "தவறானது. இரண்டும் சரி."
       },
       "D": {
-        "en": "Correct. Reason gives the exact legislative intent behind the multi-phase exit poll ban.",
-        "ta": "சரியானது. பல கட்ட தேர்தல் வாக்குக்கணிப்பு தடைக்கான காரணத்தை (R) துல்லியமாக விளக்குகிறது."
+        "en": "Incorrect. (R) explains (A).",
+        "ta": "தவறானது. (R) நேரடி விளக்கம்."
       }
     },
     "tnpsc_tip": {
@@ -1425,8 +1425,8 @@
       },
       {
         "id": "B",
-        "en": "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல"
+        "en": "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
       },
       {
         "id": "C",
@@ -1435,24 +1435,24 @@
       },
       {
         "id": "D",
-        "en": "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
+        "en": "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல"
       }
     ],
     "options_en": [
       "(A) is false, but (R) is true",
-      "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
+      "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
       "(A) is true, but (R) is false",
-      "Both (A) and (R) are true, and (R) is the correct explanation of (A)"
+      "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)"
     ],
     "options_ta": [
       "(A) தவறு, ஆனால் (R) சரி",
-      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல",
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்",
       "(A) சரி, ஆனால் (R) தவறு",
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Both (A) and (R) are true, and (R) correctly explains (A). The legislative intent of the 84th Amendment was to provide a level-playing field and avoid penalizing progressive southern and western states that curtailed fertility rates in line with national demographic goals.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும். குடும்பக் கட்டுப்பாட்டை அமல்படுத்திய மாநிலங்களின் பிரதிநிதித்துவம் குறையாமல் பாதுகாப்பதே 84-வது திருத்தத்தின் முதன்மை நோக்கமாகும்."
@@ -1465,16 +1465,16 @@
         "ta": "தவறானது. (A) சரி."
       },
       "B": {
-        "en": "Incorrect. (R) directly explains (A).",
-        "ta": "தவறானது. (R) நேரடி விளக்கம்."
+        "en": "Correct. Reason gives the explicit policy justification behind freezing seats till 2026.",
+        "ta": "சரியானது. 2026 வரை முடக்கியதற்கான உண்மையான கொள்கைக் காரணத்தை (R) துல்லியமாக விளக்குகிறது."
       },
       "C": {
         "en": "Incorrect. Both statements are true.",
         "ta": "தவறானது. இரண்டும் சரி."
       },
       "D": {
-        "en": "Correct. Reason gives the explicit policy justification behind freezing seats till 2026.",
-        "ta": "சரியானது. 2026 வரை முடக்கியதற்கான உண்மையான கொள்கைக் காரணத்தை (R) துல்லியமாக விளக்குகிறது."
+        "en": "Incorrect. (R) directly explains (A).",
+        "ta": "தவறானது. (R) நேரடி விளக்கம்."
       }
     },
     "tnpsc_tip": {
@@ -1531,29 +1531,29 @@
       },
       {
         "id": "C",
-        "en": "(A) is true, but (R) is false",
-        "ta": "(A) சரி, ஆனால் (R) தவறு"
+        "en": "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
       },
       {
         "id": "D",
-        "en": "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
+        "en": "(A) is true, but (R) is false",
+        "ta": "(A) சரி, ஆனால் (R) தவறு"
       }
     ],
     "options_en": [
       "(A) is false, but (R) is true",
       "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
-      "(A) is true, but (R) is false",
-      "Both (A) and (R) are true, and (R) is the correct explanation of (A)"
+      "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+      "(A) is true, but (R) is false"
     ],
     "options_ta": [
       "(A) தவறு, ஆனால் (R) சரி",
       "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல",
-      "(A) சரி, ஆனால் (R) தவறு",
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்",
+      "(A) சரி, ஆனால் (R) தவறு"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Both (A) and (R) are true, and (R) correctly explains (A). In A.C. Jose (1984), the Supreme Court ruled that Article 324 cannot override the explicit statutory requirements of RPA 1951 which contemplated only paper ballot papers. To cure this defect, Parliament inserted Section 61A in 1989.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும். சட்டம் காகித வாக்குச்சீட்டை மட்டுமே அங்கீகரித்திருந்த போது ECI தன்னிச்சையாக EVM-ஐப் பயன்படுத்த முடியாது என உச்ச நீதிமன்றம் தீர்ப்பளித்தது; இதனாலேயே 1989-ல் பிரிவு 61A சேர்க்கப்பட்டது."
@@ -1570,12 +1570,12 @@
         "ta": "தவறானது. (R) நேரடி விளக்கம்."
       },
       "C": {
-        "en": "Incorrect. Both statements are true.",
-        "ta": "தவறானது. இரண்டும் சரி."
-      },
-      "D": {
         "en": "Correct. Reason gives the precise legal basis on which the 1984 court struck down the election.",
         "ta": "சரியானது. 1984 தீர்ப்பின் சட்ட அடிப்படையை காரணம் துல்லியமாக விளக்குகிறது."
+      },
+      "D": {
+        "en": "Incorrect. Both statements are true.",
+        "ta": "தவறானது. இரண்டும் சரி."
       }
     },
     "tnpsc_tip": {
@@ -1621,8 +1621,8 @@
     "options": [
       {
         "id": "A",
-        "en": "(A) is false, but (R) is true",
-        "ta": "(A) தவறு, ஆனால் (R) சரி"
+        "en": "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
       },
       {
         "id": "B",
@@ -1636,24 +1636,24 @@
       },
       {
         "id": "D",
-        "en": "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
+        "en": "(A) is false, but (R) is true",
+        "ta": "(A) தவறு, ஆனால் (R) சரி"
       }
     ],
     "options_en": [
-      "(A) is false, but (R) is true",
+      "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
       "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
       "(A) is true, but (R) is false",
-      "Both (A) and (R) are true, and (R) is the correct explanation of (A)"
+      "(A) is false, but (R) is true"
     ],
     "options_ta": [
-      "(A) தவறு, ஆனால் (R) சரி",
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்",
       "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல",
       "(A) சரி, ஆனால் (R) தவறு",
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
+      "(A) தவறு, ஆனால் (R) சரி"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Both (A) and (R) are true, and (R) correctly explains (A). Section 128 punishes breach of secrecy with up to 3 months prison specifically to protect voters from being coerced or targeted based on how they cast their vote.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும். வாக்காளர்கள் யாருக்கு வாக்களித்தார்கள் என்பதை அறிந்து அவர்களை அச்சுறுத்துவதைத் தடுத்து சுதந்திரமான வாக்கை உறுதி செய்யவே பிரிவு 128 ரகசியத்தன்மையை கட்டாயமாக்குகிறது."
@@ -1662,8 +1662,8 @@
     "explanation_ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும். வாக்காளர்கள் யாருக்கு வாக்களித்தார்கள் என்பதை அறிந்து அவர்களை அச்சுறுத்துவதைத் தடுத்து சுதந்திரமான வாக்கை உறுதி செய்யவே பிரிவு 128 ரகசியத்தன்மையை கட்டாயமாக்குகிறது.",
     "why_not_others": {
       "A": {
-        "en": "Incorrect. (A) is true.",
-        "ta": "தவறானது. (A) சரி."
+        "en": "Correct. Reason gives the democratic rationale for penalizing breaches of ballot secrecy.",
+        "ta": "சரியானது. ரகசியத்தன்மையை மீறுபவர்களை தண்டிப்பதற்கான ஜனநாயகக் காரணத்தை (R) விளக்குகிறது."
       },
       "B": {
         "en": "Incorrect. (R) explains (A).",
@@ -1674,8 +1674,8 @@
         "ta": "தவறானது. இரண்டும் சரி."
       },
       "D": {
-        "en": "Correct. Reason gives the democratic rationale for penalizing breaches of ballot secrecy.",
-        "ta": "சரியானது. ரகசியத்தன்மையை மீறுபவர்களை தண்டிப்பதற்கான ஜனநாயகக் காரணத்தை (R) விளக்குகிறது."
+        "en": "Incorrect. (A) is true.",
+        "ta": "தவறானது. (A) சரி."
       }
     },
     "tnpsc_tip": {
@@ -1731,29 +1731,29 @@
       },
       {
         "id": "C",
-        "en": "(A) is true, but (R) is false",
-        "ta": "(A) சரி, ஆனால் (R) தவறு"
+        "en": "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
       },
       {
         "id": "D",
-        "en": "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
+        "en": "(A) is true, but (R) is false",
+        "ta": "(A) சரி, ஆனால் (R) தவறு"
       }
     ],
     "options_en": [
       "(A) is false, but (R) is true",
       "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
-      "(A) is true, but (R) is false",
-      "Both (A) and (R) are true, and (R) is the correct explanation of (A)"
+      "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+      "(A) is true, but (R) is false"
     ],
     "options_ta": [
       "(A) தவறு, ஆனால் (R) சரி",
       "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல",
-      "(A) சரி, ஆனால் (R) தவறு",
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்",
+      "(A) சரி, ஆனால் (R) தவறு"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Both (A) and (R) are true, and (R) correctly explains (A). Under Section 100(1)(c) of RPA 1951, improper rejection of a nomination is fatal per se. In contrast to improper acceptance (Sec 100(1)(d)(i)), where votes can be mathematically analyzed, improper rejection creates an irrebuttable presumption that the election result was tainted.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும். பிரிவு 100(1)(c)-ன் கீழ் வேட்புமனு தவறாக நிராகரிக்கப்பட்டால் அது தேர்தலை தானாக ரத்து செய்யும்; ஏனெனில் அந்த வேட்பாளர் களத்தில் இருந்திருந்தால் தேர்தல் முடிவே மாறியிருக்கக்கூடும் என்பதால் முடிவு பாதிக்கப்பட்டது என சட்டம் தானாக அனுமானிக்கிறது."
@@ -1770,12 +1770,12 @@
         "ta": "தவறானது. (R) நேரடி விளக்கம்."
       },
       "C": {
-        "en": "Incorrect. Both statements are true.",
-        "ta": "தவறானது. இரண்டும் சரி."
-      },
-      "D": {
         "en": "Correct. Reason gives the precise legal philosophy why Section 100(1)(c) does not require proving material effect.",
         "ta": "சரியானது. பிரிவு 100(1)(c)-க்கு முடிவு பாதிக்கப்பட்டது என்பதை ஏன் நிரூபிக்க தேவையில்லை என்பதற்கான சட்ட நியாயத்தை (R) துல்லியமாக விளக்குகிறது."
+      },
+      "D": {
+        "en": "Incorrect. Both statements are true.",
+        "ta": "தவறானது. இரண்டும் சரி."
       }
     },
     "tnpsc_tip": {
@@ -1822,8 +1822,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
+        "en": "(A) is false, but (R) is true",
+        "ta": "(A) தவறு, ஆனால் (R) சரி"
       },
       {
         "id": "B",
@@ -1837,24 +1837,24 @@
       },
       {
         "id": "D",
-        "en": "(A) is false, but (R) is true",
-        "ta": "(A) தவறு, ஆனால் (R) சரி"
+        "en": "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
       }
     ],
     "options_en": [
-      "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+      "(A) is false, but (R) is true",
       "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
       "(A) is true, but (R) is false",
-      "(A) is false, but (R) is true"
+      "Both (A) and (R) are true, and (R) is the correct explanation of (A)"
     ],
     "options_ta": [
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்",
+      "(A) தவறு, ஆனால் (R) சரி",
       "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல",
       "(A) சரி, ஆனால் (R) தவறு",
-      "(A) தவறு, ஆனால் (R) சரி"
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Both (A) and (R) are true, and (R) correctly explains (A). The Supreme Court held that treating profit-making and loss-making companies identically for unlimited donations was manifestly arbitrary under Article 14 because loss-making companies had no commercial justification for donations other than acting as conduits for illicit political funding.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும். நஷ்டமடையும் நிறுவனங்கள் நன்கொடை அளிக்க அனுமதிப்பது போலி நிறுவனங்கள் மூலம் கறுப்புப் பணத்தை அரசியலில் நுழைக்க மட்டுமே பயன்படும் என்பதால், இத்திருத்தம் தன்னிச்சையானது மற்றும் சரத்து 14-க்கு எதிரானது என உச்ச நீதிமன்றம் ரத்து செய்தது."
@@ -1863,8 +1863,8 @@
     "explanation_ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும். நஷ்டமடையும் நிறுவனங்கள் நன்கொடை அளிக்க அனுமதிப்பது போலி நிறுவனங்கள் மூலம் கறுப்புப் பணத்தை அரசியலில் நுழைக்க மட்டுமே பயன்படும் என்பதால், இத்திருத்தம் தன்னிச்சையானது மற்றும் சரத்து 14-க்கு எதிரானது என உச்ச நீதிமன்றம் ரத்து செய்தது.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Reason gives the constitutional justification for striking down the amendment to Section 182.",
-        "ta": "சரியானது. பிரிவு 182 திருத்தம் ஏன் ரத்து செய்யப்பட்டது என்பதற்கான காரணத்தை (R) விளக்குகிறது."
+        "en": "Incorrect. (A) is true.",
+        "ta": "தவறானது. (A) சரி."
       },
       "B": {
         "en": "Incorrect. (R) explains (A).",
@@ -1875,8 +1875,8 @@
         "ta": "தவறானது. இரண்டும் சரி."
       },
       "D": {
-        "en": "Incorrect. (A) is true.",
-        "ta": "தவறானது. (A) சரி."
+        "en": "Correct. Reason gives the constitutional justification for striking down the amendment to Section 182.",
+        "ta": "சரியானது. பிரிவு 182 திருத்தம் ஏன் ரத்து செய்யப்பட்டது என்பதற்கான காரணத்தை (R) விளக்குகிறது."
       }
     },
     "tnpsc_tip": {
@@ -1923,8 +1923,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
+        "en": "(A) is true, but (R) is false",
+        "ta": "(A) சரி, ஆனால் (R) தவறு"
       },
       {
         "id": "B",
@@ -1933,8 +1933,8 @@
       },
       {
         "id": "C",
-        "en": "(A) is true, but (R) is false",
-        "ta": "(A) சரி, ஆனால் (R) தவறு"
+        "en": "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
       },
       {
         "id": "D",
@@ -1943,19 +1943,19 @@
       }
     ],
     "options_en": [
-      "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
-      "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
       "(A) is true, but (R) is false",
+      "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
+      "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
       "(A) is false, but (R) is true"
     ],
     "options_ta": [
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்",
-      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல",
       "(A) சரி, ஆனால் (R) தவறு",
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல",
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்",
       "(A) தவறு, ஆனால் (R) சரி"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Both (A) and (R) are true, and (R) correctly explains (A). The restriction on exit polls during the polling period is a reasonable, proportionate restriction under Article 19(2) designed to prevent voter manipulation and preserve the level playing field of elections, which is part of the basic structure.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும். சுதந்திரமான மற்றும் நியாயமான தேர்தல் என்பது அரசியலமைப்பின் அடிப்படை கட்டமைப்பு என்பதால், தேர்தல் காலத்தில் வாக்குக்கணிப்புக்கு தடை விதிப்பது சரத்து 19(2)-ன் கீழான நியாயமான கட்டுப்பாடாகும்."
@@ -1964,16 +1964,16 @@
     "explanation_ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும். சுதந்திரமான மற்றும் நியாயமான தேர்தல் என்பது அரசியலமைப்பின் அடிப்படை கட்டமைப்பு என்பதால், தேர்தல் காலத்தில் வாக்குக்கணிப்புக்கு தடை விதிப்பது சரத்து 19(2)-ன் கீழான நியாயமான கட்டுப்பாடாகும்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Article 19(2) provides the constitutional justification for the statutory restriction in Section 126A.",
-        "ta": "சரியானது. சரத்து 19(2) பிரிவு 126A-ன் கீழான சட்டப்பூர்வ கட்டுப்பாட்டிற்கு அரசியலமைப்பு அங்கீகாரம் அளிக்கிறது."
+        "en": "Incorrect. Both statements are true.",
+        "ta": "தவறானது. இரண்டும் சரி."
       },
       "B": {
         "en": "Incorrect. (R) explains (A).",
         "ta": "தவறானது. (R) நேரடி விளக்கம்."
       },
       "C": {
-        "en": "Incorrect. Both statements are true.",
-        "ta": "தவறானது. இரண்டும் சரி."
+        "en": "Correct. Article 19(2) provides the constitutional justification for the statutory restriction in Section 126A.",
+        "ta": "சரியானது. சரத்து 19(2) பிரிவு 126A-ன் கீழான சட்டப்பூர்வ கட்டுப்பாட்டிற்கு அரசியலமைப்பு அங்கீகாரம் அளிக்கிறது."
       },
       "D": {
         "en": "Incorrect. (A) is true.",
@@ -2024,8 +2024,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
+        "en": "(A) is false, but (R) is true",
+        "ta": "(A) தவறு, ஆனால் (R) சரி"
       },
       {
         "id": "B",
@@ -2039,24 +2039,24 @@
       },
       {
         "id": "D",
-        "en": "(A) is false, but (R) is true",
-        "ta": "(A) தவறு, ஆனால் (R) சரி"
+        "en": "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
       }
     ],
     "options_en": [
-      "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+      "(A) is false, but (R) is true",
       "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
       "(A) is true, but (R) is false",
-      "(A) is false, but (R) is true"
+      "Both (A) and (R) are true, and (R) is the correct explanation of (A)"
     ],
     "options_ta": [
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்",
+      "(A) தவறு, ஆனால் (R) சரி",
       "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல",
       "(A) சரி, ஆனால் (R) தவறு",
-      "(A) தவறு, ஆனால் (R) சரி"
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Both (A) and (R) are true, and (R) correctly explains (A). Section 23(6) of RPA 1950 explicitly provides that no person's name shall be deleted from the electoral roll for non-submission of an Aadhaar number, confirming that the linkage is entirely optional.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும். மக்கள் பிரதிநிதித்துவச் சட்டம் பிரிவு 23(6), ஆதார் எண் வழங்காத காரணத்திற்காக யாரையும் வாக்காளர் பட்டியலிலிருந்து நீக்கக் கூடாது என்று தெளிவாகக் கூறி இணைப்பை தன்னார்வமாக்கியுள்ளது."
@@ -2065,8 +2065,8 @@
     "explanation_ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும். மக்கள் பிரதிநிதித்துவச் சட்டம் பிரிவு 23(6), ஆதார் எண் வழங்காத காரணத்திற்காக யாரையும் வாக்காளர் பட்டியலிலிருந்து நீக்கக் கூடாது என்று தெளிவாகக் கூறி இணைப்பை தன்னார்வமாக்கியுள்ளது.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Reason gives the statutory basis why non-submission does not cause deletion.",
-        "ta": "சரியானது. ஆதார் எண் தராததால் ஏன் பெயர் நீக்கப்படக் கூடாது என்பதற்கான சட்ட விதியை காரணம் விளக்குகிறது."
+        "en": "Incorrect. (A) is true.",
+        "ta": "தவறானது. (A) சரி."
       },
       "B": {
         "en": "Incorrect. (R) explains (A).",
@@ -2077,8 +2077,8 @@
         "ta": "தவறானது. இரண்டும் சரி."
       },
       "D": {
-        "en": "Incorrect. (A) is true.",
-        "ta": "தவறானது. (A) சரி."
+        "en": "Correct. Reason gives the statutory basis why non-submission does not cause deletion.",
+        "ta": "சரியானது. ஆதார் எண் தராததால் ஏன் பெயர் நீக்கப்படக் கூடாது என்பதற்கான சட்ட விதியை காரணம் விளக்குகிறது."
       }
     },
     "tnpsc_tip": {
@@ -2224,8 +2224,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
+        "en": "(A) is true, but (R) is false",
+        "ta": "(A) சரி, ஆனால் (R) தவறு"
       },
       {
         "id": "B",
@@ -2234,8 +2234,8 @@
       },
       {
         "id": "C",
-        "en": "(A) is true, but (R) is false",
-        "ta": "(A) சரி, ஆனால் (R) தவறு"
+        "en": "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
       },
       {
         "id": "D",
@@ -2244,19 +2244,19 @@
       }
     ],
     "options_en": [
-      "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
-      "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
       "(A) is true, but (R) is false",
+      "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
+      "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
       "(A) is false, but (R) is true"
     ],
     "options_ta": [
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்",
-      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல",
       "(A) சரி, ஆனால் (R) தவறு",
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல",
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்",
       "(A) தவறு, ஆனால் (R) சரி"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Both (A) and (R) are true, and (R) correctly explains (A). Proviso (a)(ii) to Section 123(2) explicitly provides that inducing belief that an elector will become an object of divine displeasure or spiritual censure is deemed to interfere with the free exercise of electoral rights.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும். பிரிவு 123(2) வரம்புரை (a)(ii), தெய்வ குற்றம் அல்லது மத சாபத்திற்கு ஆளாவாய் என அச்சுறுத்துவது வாக்காளரின் சுதந்திரமான வாக்குரிமையில் குறுக்கிடுவதாகக் கருதுகிறது."
@@ -2265,16 +2265,16 @@
     "explanation_ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும். பிரிவு 123(2) வரம்புரை (a)(ii), தெய்வ குற்றம் அல்லது மத சாபத்திற்கு ஆளாவாய் என அச்சுறுத்துவது வாக்காளரின் சுதந்திரமான வாக்குரிமையில் குறுக்கிடுவதாகக் கருதுகிறது.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Reason directly quotes the statutory objective of Section 123(2).",
-        "ta": "சரியானது. பிரிவு 123(2)-ன் சட்ட நோக்கத்தை காரணம் துல்லியமாக விவரிக்கிறது."
+        "en": "Incorrect. Both statements are true.",
+        "ta": "தவறானது. இரண்டும் சரி."
       },
       "B": {
         "en": "Incorrect. (R) explains (A).",
         "ta": "தவறானது. (R) நேரடி விளக்கம்."
       },
       "C": {
-        "en": "Incorrect. Both statements are true.",
-        "ta": "தவறானது. இரண்டும் சரி."
+        "en": "Correct. Reason directly quotes the statutory objective of Section 123(2).",
+        "ta": "சரியானது. பிரிவு 123(2)-ன் சட்ட நோக்கத்தை காரணம் துல்லியமாக விவரிக்கிறது."
       },
       "D": {
         "en": "Incorrect. (A) is true.",
@@ -2325,13 +2325,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல"
+        "en": "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
       },
       {
         "id": "B",
-        "en": "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
+        "en": "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல"
       },
       {
         "id": "C",
@@ -2345,19 +2345,19 @@
       }
     ],
     "options_en": [
-      "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
       "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+      "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
       "(A) is true, but (R) is false",
       "(A) is false, but (R) is true"
     ],
     "options_ta": [
-      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல",
       "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்",
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல",
       "(A) சரி, ஆனால் (R) தவறு",
       "(A) தவறு, ஆனால் (R) சரி"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Both (A) and (R) are true, but (R) is a statutory condition, not the causative explanation of why ECI possesses this power. The power was granted by Parliament to handle mitigating circumstances and administrative equity, while recording reasons in writing is a procedural safeguard against arbitrary exercise.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல. பிரிவு 11 தகுதிநீக்கத்தைக் குறைக்க ECI-க்கு அதிகாரம் அளிக்கிறது என்பதும், அதற்கு எழுத்துப்பூர்வ காரணங்களை பதிவு செய்ய வேண்டும் என்பதும் தனித்தனி சட்ட உண்மைகள்; எழுத்துப்பூர்வ காரணம் என்பது நடைமுறை பாதுகாப்பே தவிர அதிகாரத்திற்கான மூலகாரணம் அல்ல."
@@ -2366,12 +2366,12 @@
     "explanation_ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல. பிரிவு 11 தகுதிநீக்கத்தைக் குறைக்க ECI-க்கு அதிகாரம் அளிக்கிறது என்பதும், அதற்கு எழுத்துப்பூர்வ காரணங்களை பதிவு செய்ய வேண்டும் என்பதும் தனித்தனி சட்ட உண்மைகள்; எழுத்துப்பூர்வ காரணம் என்பது நடைமுறை பாதுகாப்பே தவிர அதிகாரத்திற்கான மூலகாரணம் அல்ல.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Both are true, but procedural condition is not the causal explanation of the power.",
-        "ta": "சரியானது. இரண்டும் சரி, ஆனால் நடைமுறை விதி என்பது அதிகாரத்திற்கான நேரடி விளக்கமல்ல."
-      },
-      "B": {
         "en": "Incorrect. (R) is a procedural safeguard, not causal rationale.",
         "ta": "தவறானது. (R) நடைமுறைப் பாதுகாப்பு மட்டுமே."
+      },
+      "B": {
+        "en": "Correct. Both are true, but procedural condition is not the causal explanation of the power.",
+        "ta": "சரியானது. இரண்டும் சரி, ஆனால் நடைமுறை விதி என்பது அதிகாரத்திற்கான நேரடி விளக்கமல்ல."
       },
       "C": {
         "en": "Incorrect. Both statements are true.",

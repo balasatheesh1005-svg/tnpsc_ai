@@ -15,13 +15,13 @@
     "options": [
       {
         "id": "A",
-        "en": "a-2, b-1, c-4, d-3",
-        "ta": "a-2, b-1, c-4, d-3"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "B",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-2, b-1, c-4, d-3",
+        "ta": "a-2, b-1, c-4, d-3"
       },
       {
         "id": "C",
@@ -35,19 +35,19 @@
       }
     ],
     "options_en": [
-      "a-2, b-1, c-4, d-3",
       "a-1, b-2, c-3, d-4",
+      "a-2, b-1, c-4, d-3",
       "a-3, b-4, c-1, d-2",
       "a-4, b-3, c-2, d-1"
     ],
     "options_ta": [
-      "a-2, b-1, c-4, d-3",
       "a-1, b-2, c-3, d-4",
+      "a-2, b-1, c-4, d-3",
       "a-3, b-4, c-1, d-2",
       "a-4, b-3, c-2, d-1"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Accurate matching:\nArticle 243P - Definitions [1]\nArticle 243Q - Constitution of Municipalities [2]\nArticle 243R - Composition of Municipalities [3]\nArticle 243S - Wards Committees [4].",
       "ta": "சரியான பொருத்தம்:\nஉறுப்பு 243P - வரைவிலக்கணங்கள் [1]\nஉறுப்பு 243Q - நகராட்சிகள் அமைத்தல் [2]\nஉறுப்பு 243R - நகராட்சிகளின் கட்டமைப்பு [3]\nஉறுப்பு 243S - வார்டு குழுக்கள் [4]."
@@ -56,12 +56,12 @@
     "explanation_ta": "சரியான பொருத்தம்:\nஉறுப்பு 243P - வரைவிலக்கணங்கள் [1]\nஉறுப்பு 243Q - நகராட்சிகள் அமைத்தல் [2]\nஉறுப்பு 243R - நகராட்சிகளின் கட்டமைப்பு [3]\nஉறுப்பு 243S - வார்டு குழுக்கள் [4].",
     "why_not_others": {
       "A": {
-        "en": "Option B (a-2, b-1, c-4, d-3) is incorrect due to mismatched pairings.",
-        "ta": "விருப்பம் B (a-2, b-1, c-4, d-3) தவறானது, தவறான இணைப்பைக் கொண்டுள்ளது."
-      },
-      "B": {
         "en": "Option A (a-1, b-2, c-3, d-4) is correct. It accurately matches each item of List-I with its counterpart in List-II.",
         "ta": "விருப்பம் A (a-1, b-2, c-3, d-4) சரியானது. இது பட்டியல்-I-ன் அனைத்து கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
+      },
+      "B": {
+        "en": "Option B (a-2, b-1, c-4, d-3) is incorrect due to mismatched pairings.",
+        "ta": "விருப்பம் B (a-2, b-1, c-4, d-3) தவறானது, தவறான இணைப்பைக் கொண்டுள்ளது."
       },
       "C": {
         "en": "Option C (a-3, b-4, c-1, d-2) is incorrect due to mismatched pairings.",
@@ -111,13 +111,13 @@
       },
       {
         "id": "B",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-4, b-3, c-2, d-1",
+        "ta": "a-4, b-3, c-2, d-1"
       },
       {
         "id": "C",
-        "en": "a-4, b-3, c-2, d-1",
-        "ta": "a-4, b-3, c-2, d-1"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "D",
@@ -127,18 +127,18 @@
     ],
     "options_en": [
       "a-2, b-1, c-4, d-3",
-      "a-1, b-2, c-3, d-4",
       "a-4, b-3, c-2, d-1",
+      "a-1, b-2, c-3, d-4",
       "a-3, b-4, c-1, d-2"
     ],
     "options_ta": [
       "a-2, b-1, c-4, d-3",
-      "a-1, b-2, c-3, d-4",
       "a-4, b-3, c-2, d-1",
+      "a-1, b-2, c-3, d-4",
       "a-3, b-4, c-1, d-2"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Accurate matching:\nArticle 243T - Reservation of seats [1]\nArticle 243U - Duration (5 years) [2]\nArticle 243V - Disqualifications [3]\nArticle 243W - Powers & 12th Schedule [4].",
       "ta": "சரியான பொருத்தம்:\nஉறுப்பு 243T - இடஒதுக்கீடு [1]\nஉறுப்பு 243U - பதவிக்காலம் (5 ஆண்டுகள்) [2]\nஉறுப்பு 243V - தகுதிநீக்கங்கள் [3]\nஉறுப்பு 243W - அதிகாரங்கள் மற்றும் 12-வது அட்டவணை [4]."
@@ -151,12 +151,12 @@
         "ta": "விருப்பம் B (a-2, b-1, c-4, d-3) தவறானது, தவறான இணைப்பைக் கொண்டுள்ளது."
       },
       "B": {
-        "en": "Option A (a-1, b-2, c-3, d-4) is correct. It accurately matches each item of List-I with its counterpart in List-II.",
-        "ta": "விருப்பம் A (a-1, b-2, c-3, d-4) சரியானது. இது பட்டியல்-I-ன் அனைத்து கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
-      },
-      "C": {
         "en": "Option C (a-4, b-3, c-2, d-1) is incorrect due to mismatched pairings.",
         "ta": "விருப்பம் C (a-4, b-3, c-2, d-1) தவறானது, தவறான இணைப்பைக் கொண்டுள்ளது."
+      },
+      "C": {
+        "en": "Option A (a-1, b-2, c-3, d-4) is correct. It accurately matches each item of List-I with its counterpart in List-II.",
+        "ta": "விருப்பம் A (a-1, b-2, c-3, d-4) சரியானது. இது பட்டியல்-I-ன் அனைத்து கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
       },
       "D": {
         "en": "Option D (a-3, b-4, c-1, d-2) is incorrect due to mismatched pairings.",
@@ -384,8 +384,8 @@
       },
       {
         "id": "B",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-4, b-3, c-2, d-1",
+        "ta": "a-4, b-3, c-2, d-1"
       },
       {
         "id": "C",
@@ -394,24 +394,24 @@
       },
       {
         "id": "D",
-        "en": "a-4, b-3, c-2, d-1",
-        "ta": "a-4, b-3, c-2, d-1"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       }
     ],
     "options_en": [
       "a-2, b-1, c-4, d-3",
-      "a-1, b-2, c-3, d-4",
+      "a-4, b-3, c-2, d-1",
       "a-3, b-4, c-1, d-2",
-      "a-4, b-3, c-2, d-1"
+      "a-1, b-2, c-3, d-4"
     ],
     "options_ta": [
       "a-2, b-1, c-4, d-3",
-      "a-1, b-2, c-3, d-4",
+      "a-4, b-3, c-2, d-1",
       "a-3, b-4, c-1, d-2",
-      "a-4, b-3, c-2, d-1"
+      "a-1, b-2, c-3, d-4"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "The first 4 items of the Twelfth Schedule are:\nItem 1: Urban planning including town planning\nItem 2: Regulation of land use and construction of buildings\nItem 3: Planning for economic and social development\nItem 4: Roads and bridges.",
       "ta": "12-வது அட்டவணையின் முதல் 4 பணிகள்:\nஇனம் 1: நகர்ப்புற திட்டமிடல்\nஇனம் 2: நிலப் பயன்பாடு ஒழுங்குமுறை\nஇனம் 3: பொருளாதார மற்றும் சமூக வளர்ச்சி திட்டமிடல்\nஇனம் 4: சாலைகள் மற்றும் பாலங்கள்."
@@ -424,16 +424,16 @@
         "ta": "விருப்பம் B (a-2, b-1, c-4, d-3) தவறானது, தவறான இணைப்பைக் கொண்டுள்ளது."
       },
       "B": {
-        "en": "Option A (a-1, b-2, c-3, d-4) is correct. It accurately matches each item of List-I with its counterpart in List-II.",
-        "ta": "விருப்பம் A (a-1, b-2, c-3, d-4) சரியானது. இது பட்டியல்-I-ன் அனைத்து கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
+        "en": "Option D (a-4, b-3, c-2, d-1) is incorrect due to mismatched pairings.",
+        "ta": "விருப்பம் D (a-4, b-3, c-2, d-1) தவறானது, தவறான இணைப்பைக் கொண்டுள்ளது."
       },
       "C": {
         "en": "Option C (a-3, b-4, c-1, d-2) is incorrect due to mismatched pairings.",
         "ta": "விருப்பம் C (a-3, b-4, c-1, d-2) தவறானது, தவறான இணைப்பைக் கொண்டுள்ளது."
       },
       "D": {
-        "en": "Option D (a-4, b-3, c-2, d-1) is incorrect due to mismatched pairings.",
-        "ta": "விருப்பம் D (a-4, b-3, c-2, d-1) தவறானது, தவறான இணைப்பைக் கொண்டுள்ளது."
+        "en": "Option A (a-1, b-2, c-3, d-4) is correct. It accurately matches each item of List-I with its counterpart in List-II.",
+        "ta": "விருப்பம் A (a-1, b-2, c-3, d-4) சரியானது. இது பட்டியல்-I-ன் அனைத்து கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
       }
     },
     "tnpsc_tip": {
@@ -470,13 +470,13 @@
     "options": [
       {
         "id": "A",
-        "en": "a-4, b-3, c-2, d-1",
-        "ta": "a-4, b-3, c-2, d-1"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "B",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-4, b-3, c-2, d-1",
+        "ta": "a-4, b-3, c-2, d-1"
       },
       {
         "id": "C",
@@ -490,19 +490,19 @@
       }
     ],
     "options_en": [
-      "a-4, b-3, c-2, d-1",
       "a-1, b-2, c-3, d-4",
+      "a-4, b-3, c-2, d-1",
       "a-2, b-1, c-4, d-3",
       "a-3, b-4, c-1, d-2"
     ],
     "options_ta": [
-      "a-4, b-3, c-2, d-1",
       "a-1, b-2, c-3, d-4",
+      "a-4, b-3, c-2, d-1",
       "a-2, b-1, c-4, d-3",
       "a-3, b-4, c-1, d-2"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Accurate matching in the Twelfth Schedule:\nItem 6: Public health, sanitation, conservancy, and solid waste management\nItem 7: Fire services\nItem 8: Urban forestry, protection of the environment\nItem 9: Safeguarding interests of weaker sections including the handicapped and mentally retarded.",
       "ta": "12-வது அட்டவணையில் சரியான பொருத்தம்:\nஇனம் 6: பொது சுகாதாரம் மற்றும் திடக்கழிவு மேலாண்மை\nஇனம் 7: தீயணைப்பு சேவைகள்\nஇனம் 8: நகர்ப்புற வனவியல் மற்றும் சுற்றுச்சூழல்\nஇனம் 9: மாற்றுத்திறனாளிகள் உட்பட நலிந்த பிரிவினரின் பாதுகாப்பு."
@@ -511,12 +511,12 @@
     "explanation_ta": "12-வது அட்டவணையில் சரியான பொருத்தம்:\nஇனம் 6: பொது சுகாதாரம் மற்றும் திடக்கழிவு மேலாண்மை\nஇனம் 7: தீயணைப்பு சேவைகள்\nஇனம் 8: நகர்ப்புற வனவியல் மற்றும் சுற்றுச்சூழல்\nஇனம் 9: மாற்றுத்திறனாளிகள் உட்பட நலிந்த பிரிவினரின் பாதுகாப்பு.",
     "why_not_others": {
       "A": {
-        "en": "Option B (a-4, b-3, c-2, d-1) is incorrect due to mismatched pairings.",
-        "ta": "விருப்பம் B (a-4, b-3, c-2, d-1) தவறானது, தவறான இணைப்பைக் கொண்டுள்ளது."
-      },
-      "B": {
         "en": "Option A (a-1, b-2, c-3, d-4) is correct. It accurately matches each item of List-I with its counterpart in List-II.",
         "ta": "விருப்பம் A (a-1, b-2, c-3, d-4) சரியானது. இது பட்டியல்-I-ன் அனைத்து கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
+      },
+      "B": {
+        "en": "Option B (a-4, b-3, c-2, d-1) is incorrect due to mismatched pairings.",
+        "ta": "விருப்பம் B (a-4, b-3, c-2, d-1) தவறானது, தவறான இணைப்பைக் கொண்டுள்ளது."
       },
       "C": {
         "en": "Option C (a-2, b-1, c-4, d-3) is incorrect due to mismatched pairings.",
@@ -652,8 +652,8 @@
     "options": [
       {
         "id": "A",
-        "en": "a-3, b-1, c-4, d-2",
-        "ta": "a-3, b-1, c-4, d-2"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "B",
@@ -662,8 +662,8 @@
       },
       {
         "id": "C",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-3, b-1, c-4, d-2",
+        "ta": "a-3, b-1, c-4, d-2"
       },
       {
         "id": "D",
@@ -672,19 +672,19 @@
       }
     ],
     "options_en": [
-      "a-3, b-1, c-4, d-2",
-      "a-4, b-3, c-2, d-1",
       "a-1, b-2, c-3, d-4",
+      "a-4, b-3, c-2, d-1",
+      "a-3, b-1, c-4, d-2",
       "a-2, b-4, c-1, d-3"
     ],
     "options_ta": [
-      "a-3, b-1, c-4, d-2",
-      "a-4, b-3, c-2, d-1",
       "a-1, b-2, c-3, d-4",
+      "a-4, b-3, c-2, d-1",
+      "a-3, b-1, c-4, d-2",
       "a-2, b-4, c-1, d-3"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "The concluding 4 items of the Twelfth Schedule are:\nItem 15: Cattle pounds; prevention of cruelty to animals\nItem 16: Vital statistics including registration of births and deaths\nItem 17: Public amenities including street lighting, parking lots, bus stops and public conveniences\nItem 18: Regulation of slaughter houses and tanneries.",
       "ta": "12-வது அட்டவணையின் இறுதி 4 பணிகள்:\nஇனம் 15: கால்நடை தொழுவங்கள்\nஇனம் 16: பிறப்பு மற்றும் இறப்பு பதிவு\nஇனம் 17: தெருவிளக்குகள் மற்றும் பொது வசதிகள்\nஇனம் 18: கசாப்புக் கடைகள் ஒழுங்குமுறை."
@@ -693,16 +693,16 @@
     "explanation_ta": "12-வது அட்டவணையின் இறுதி 4 பணிகள்:\nஇனம் 15: கால்நடை தொழுவங்கள்\nஇனம் 16: பிறப்பு மற்றும் இறப்பு பதிவு\nஇனம் 17: தெருவிளக்குகள் மற்றும் பொது வசதிகள்\nஇனம் 18: கசாப்புக் கடைகள் ஒழுங்குமுறை.",
     "why_not_others": {
       "A": {
-        "en": "Option C (a-3, b-1, c-4, d-2) is incorrect due to mismatched pairings.",
-        "ta": "விருப்பம் C (a-3, b-1, c-4, d-2) தவறானது, தவறான இணைப்பைக் கொண்டுள்ளது."
+        "en": "Option A (a-1, b-2, c-3, d-4) is correct. It accurately matches each item of List-I with its counterpart in List-II.",
+        "ta": "விருப்பம் A (a-1, b-2, c-3, d-4) சரியானது. இது பட்டியல்-I-ன் அனைத்து கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
       },
       "B": {
         "en": "Option B (a-4, b-3, c-2, d-1) is incorrect due to mismatched pairings.",
         "ta": "விருப்பம் B (a-4, b-3, c-2, d-1) தவறானது, தவறான இணைப்பைக் கொண்டுள்ளது."
       },
       "C": {
-        "en": "Option A (a-1, b-2, c-3, d-4) is correct. It accurately matches each item of List-I with its counterpart in List-II.",
-        "ta": "விருப்பம் A (a-1, b-2, c-3, d-4) சரியானது. இது பட்டியல்-I-ன் அனைத்து கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
+        "en": "Option C (a-3, b-1, c-4, d-2) is incorrect due to mismatched pairings.",
+        "ta": "விருப்பம் C (a-3, b-1, c-4, d-2) தவறானது, தவறான இணைப்பைக் கொண்டுள்ளது."
       },
       "D": {
         "en": "Option D (a-2, b-4, c-1, d-3) is incorrect due to mismatched pairings.",
@@ -748,13 +748,13 @@
       },
       {
         "id": "B",
-        "en": "a-2, b-1, c-4, d-3",
-        "ta": "a-2, b-1, c-4, d-3"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "C",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-2, b-1, c-4, d-3",
+        "ta": "a-2, b-1, c-4, d-3"
       },
       {
         "id": "D",
@@ -764,18 +764,18 @@
     ],
     "options_en": [
       "a-3, b-4, c-1, d-2",
-      "a-2, b-1, c-4, d-3",
       "a-1, b-2, c-3, d-4",
+      "a-2, b-1, c-4, d-3",
       "a-4, b-3, c-2, d-1"
     ],
     "options_ta": [
       "a-3, b-4, c-1, d-2",
-      "a-2, b-1, c-4, d-3",
       "a-1, b-2, c-3, d-4",
+      "a-2, b-1, c-4, d-3",
       "a-4, b-3, c-2, d-1"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Accurate chronological pairing:\nWattal Committee - 1949-51 [1]\nJohn Matthai Commission - 1953-54 [2]\nNur-ud-din Ahmed Committee - 1963 [3]\nDr. Rafiq Zakaria Committee - 1963 [4].",
       "ta": "சரியான பொருத்தம்:\nவாட்டல் குழு - 1949-51 [1]\nஜான் மத்தாய் குழு - 1953-54 [2]\nநூர்-உத்-தின் அகமது குழு - 1963 [3]\nடாக்டர் ரபீக் ஜகாரியா குழு - 1963 [4]."
@@ -788,12 +788,12 @@
         "ta": "விருப்பம் C (a-3, b-4, c-1, d-2) தவறானது, தவறான இணைப்பைக் கொண்டுள்ளது."
       },
       "B": {
-        "en": "Option B (a-2, b-1, c-4, d-3) is incorrect due to mismatched pairings.",
-        "ta": "விருப்பம் B (a-2, b-1, c-4, d-3) தவறானது, தவறான இணைப்பைக் கொண்டுள்ளது."
-      },
-      "C": {
         "en": "Option A (a-1, b-2, c-3, d-4) is correct. It accurately matches each item of List-I with its counterpart in List-II.",
         "ta": "விருப்பம் A (a-1, b-2, c-3, d-4) சரியானது. இது பட்டியல்-I-ன் அனைத்து கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
+      },
+      "C": {
+        "en": "Option B (a-2, b-1, c-4, d-3) is incorrect due to mismatched pairings.",
+        "ta": "விருப்பம் B (a-2, b-1, c-4, d-3) தவறானது, தவறான இணைப்பைக் கொண்டுள்ளது."
       },
       "D": {
         "en": "Option D (a-4, b-3, c-2, d-1) is incorrect due to mismatched pairings.",
@@ -935,29 +935,29 @@
       },
       {
         "id": "C",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-4, b-3, c-2, d-1",
+        "ta": "a-4, b-3, c-2, d-1"
       },
       {
         "id": "D",
-        "en": "a-4, b-3, c-2, d-1",
-        "ta": "a-4, b-3, c-2, d-1"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       }
     ],
     "options_en": [
       "a-3, b-4, c-1, d-2",
       "a-2, b-1, c-4, d-3",
-      "a-1, b-2, c-3, d-4",
-      "a-4, b-3, c-2, d-1"
+      "a-4, b-3, c-2, d-1",
+      "a-1, b-2, c-3, d-4"
     ],
     "options_ta": [
       "a-3, b-4, c-1, d-2",
       "a-2, b-1, c-4, d-3",
-      "a-1, b-2, c-3, d-4",
-      "a-4, b-3, c-2, d-1"
+      "a-4, b-3, c-2, d-1",
+      "a-1, b-2, c-3, d-4"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Accurate matching:\nMunicipal Corporation - Large cities under special statutes [1]\nMunicipality - Smaller urban areas [2]\nNotified Area Committee - Fast industrializing towns via gazette [3]\nTown Area Committee - Small towns with limited functions [4].",
       "ta": "சரியான பொருத்தம்:\nமாநகராட்சி - பெரிய நகரங்கள் [1]\nநகராட்சி - சிறிய நகரங்கள் [2]\nஅறிவிக்கப்பட்ட பகுதி - தொழில்மய நகரங்கள் [3]\nநகரப் பகுதி குழு - சிறிய நகரங்கள் [4]."
@@ -974,12 +974,12 @@
         "ta": "விருப்பம் B (a-2, b-1, c-4, d-3) தவறானது, தவறான இணைப்பைக் கொண்டுள்ளது."
       },
       "C": {
-        "en": "Option A (a-1, b-2, c-3, d-4) is correct. It accurately matches each item of List-I with its counterpart in List-II.",
-        "ta": "விருப்பம் A (a-1, b-2, c-3, d-4) சரியானது. இது பட்டியல்-I-ன் அனைத்து கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
-      },
-      "D": {
         "en": "Option D (a-4, b-3, c-2, d-1) is incorrect due to mismatched pairings.",
         "ta": "விருப்பம் D (a-4, b-3, c-2, d-1) தவறானது, தவறான இணைப்பைக் கொண்டுள்ளது."
+      },
+      "D": {
+        "en": "Option A (a-1, b-2, c-3, d-4) is correct. It accurately matches each item of List-I with its counterpart in List-II.",
+        "ta": "விருப்பம் A (a-1, b-2, c-3, d-4) சரியானது. இது பட்டியல்-I-ன் அனைத்து கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
       }
     },
     "tnpsc_tip": {
@@ -1026,29 +1026,29 @@
       },
       {
         "id": "C",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-3, b-4, c-1, d-2",
+        "ta": "a-3, b-4, c-1, d-2"
       },
       {
         "id": "D",
-        "en": "a-3, b-4, c-1, d-2",
-        "ta": "a-3, b-4, c-1, d-2"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       }
     ],
     "options_en": [
       "a-2, b-1, c-4, d-3",
       "a-4, b-3, c-2, d-1",
-      "a-1, b-2, c-3, d-4",
-      "a-3, b-4, c-1, d-2"
+      "a-3, b-4, c-1, d-2",
+      "a-1, b-2, c-3, d-4"
     ],
     "options_ta": [
       "a-2, b-1, c-4, d-3",
       "a-4, b-3, c-2, d-1",
-      "a-1, b-2, c-3, d-4",
-      "a-3, b-4, c-1, d-2"
+      "a-3, b-4, c-1, d-2",
+      "a-1, b-2, c-3, d-4"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Accurate matching:\nCantonment Board - Ministry of Defence [1]\nTownship - PSU / Industrial enterprise [2]\nPort Trust - Major ports under Parliamentary Act [3]\nSpecial Purpose Agency - Functional parastatals [4].",
       "ta": "சரியான பொருத்தம்:\nபாசறை வாரியம் - பாதுகாப்பு அமைச்சகம் [1]\nநகரியம் - பொதுத்துறை நிறுவனம் [2]\nதுறைமுக அறக்கட்டளை - நாடாளுமன்ற சட்டம் [3]\nதனி நோக்க முகமை - சட்டப்பூர்வ வாரியங்கள் [4]."
@@ -1065,12 +1065,12 @@
         "ta": "விருப்பம் B (a-4, b-3, c-2, d-1) தவறானது, தவறான இணைப்பைக் கொண்டுள்ளது."
       },
       "C": {
-        "en": "Option A (a-1, b-2, c-3, d-4) is correct. It accurately matches each item of List-I with its counterpart in List-II.",
-        "ta": "விருப்பம் A (a-1, b-2, c-3, d-4) சரியானது. இது பட்டியல்-I-ன் அனைத்து கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
-      },
-      "D": {
         "en": "Option D (a-3, b-4, c-1, d-2) is incorrect due to mismatched pairings.",
         "ta": "விருப்பம் D (a-3, b-4, c-1, d-2) தவறானது, தவறான இணைப்பைக் கொண்டுள்ளது."
+      },
+      "D": {
+        "en": "Option A (a-1, b-2, c-3, d-4) is correct. It accurately matches each item of List-I with its counterpart in List-II.",
+        "ta": "விருப்பம் A (a-1, b-2, c-3, d-4) சரியானது. இது பட்டியல்-I-ன் அனைத்து கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
       }
     },
     "tnpsc_tip": {
@@ -1112,8 +1112,8 @@
       },
       {
         "id": "B",
-        "en": "a-2, b-1, c-4, d-3",
-        "ta": "a-2, b-1, c-4, d-3"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "C",
@@ -1122,24 +1122,24 @@
       },
       {
         "id": "D",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-2, b-1, c-4, d-3",
+        "ta": "a-2, b-1, c-4, d-3"
       }
     ],
     "options_en": [
       "a-3, b-4, c-1, d-2",
-      "a-2, b-1, c-4, d-3",
+      "a-1, b-2, c-3, d-4",
       "a-4, b-3, c-2, d-1",
-      "a-1, b-2, c-3, d-4"
+      "a-2, b-1, c-4, d-3"
     ],
     "options_ta": [
       "a-3, b-4, c-1, d-2",
-      "a-2, b-1, c-4, d-3",
+      "a-1, b-2, c-3, d-4",
       "a-4, b-3, c-2, d-1",
-      "a-1, b-2, c-3, d-4"
+      "a-2, b-1, c-4, d-3"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Accurate historical matching:\n1687 - Madras Corporation chartered [1]\n1726 - Mayor's Courts in Bombay, Calcutta, Madras [2]\n1870 - Financial decentralization under Mayo [3]\n1882 - Magna Carta of Local Self-Government under Ripon [4].",
       "ta": "சரியான வரலாற்றுப் பொருத்தம்:\n1687 - மெட்ராஸ் மாநகராட்சி பட்டயம் [1]\n1726 - மூன்று மாகாணங்களிலும் மேயர் நீதிமன்றங்கள் [2]\n1870 - மேயோவின் நிதிப் பரவலாக்கம் [3]\n1882 - ரிப்பனின் உள்ளாட்சி மகா சாசனம் [4]."
@@ -1152,16 +1152,16 @@
         "ta": "விருப்பம் D (a-3, b-4, c-1, d-2) தவறானது, தவறான இணைப்பைக் கொண்டுள்ளது."
       },
       "B": {
-        "en": "Option B (a-2, b-1, c-4, d-3) is incorrect due to mismatched pairings.",
-        "ta": "விருப்பம் B (a-2, b-1, c-4, d-3) தவறானது, தவறான இணைப்பைக் கொண்டுள்ளது."
+        "en": "Option A (a-1, b-2, c-3, d-4) is correct. It accurately matches each item of List-I with its counterpart in List-II.",
+        "ta": "விருப்பம் A (a-1, b-2, c-3, d-4) சரியானது. இது பட்டியல்-I-ன் அனைத்து கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
       },
       "C": {
         "en": "Option C (a-4, b-3, c-2, d-1) is incorrect due to mismatched pairings.",
         "ta": "விருப்பம் C (a-4, b-3, c-2, d-1) தவறானது, தவறான இணைப்பைக் கொண்டுள்ளது."
       },
       "D": {
-        "en": "Option A (a-1, b-2, c-3, d-4) is correct. It accurately matches each item of List-I with its counterpart in List-II.",
-        "ta": "விருப்பம் A (a-1, b-2, c-3, d-4) சரியானது. இது பட்டியல்-I-ன் அனைத்து கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
+        "en": "Option B (a-2, b-1, c-4, d-3) is incorrect due to mismatched pairings.",
+        "ta": "விருப்பம் B (a-2, b-1, c-4, d-3) தவறானது, தவறான இணைப்பைக் கொண்டுள்ளது."
       }
     },
     "tnpsc_tip": {
@@ -1294,8 +1294,8 @@
       },
       {
         "id": "B",
-        "en": "a-2, b-1, c-4, d-3",
-        "ta": "a-2, b-1, c-4, d-3"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "C",
@@ -1304,24 +1304,24 @@
       },
       {
         "id": "D",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-2, b-1, c-4, d-3",
+        "ta": "a-2, b-1, c-4, d-3"
       }
     ],
     "options_en": [
       "a-4, b-3, c-2, d-1",
-      "a-2, b-1, c-4, d-3",
+      "a-1, b-2, c-3, d-4",
       "a-3, b-4, c-1, d-2",
-      "a-1, b-2, c-3, d-4"
+      "a-2, b-1, c-4, d-3"
     ],
     "options_ta": [
       "a-4, b-3, c-2, d-1",
-      "a-2, b-1, c-4, d-3",
+      "a-1, b-2, c-3, d-4",
       "a-3, b-4, c-1, d-2",
-      "a-1, b-2, c-3, d-4"
+      "a-2, b-1, c-4, d-3"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Accurate revenue matching:\nProperty tax - Tax on lands and buildings [1]\nProfession tax - Article 276 tax capped at Rs 2,500 [2]\nNon-tax revenue - Fees, fines, water charges, leases [3]\nFiscal transfer - State tax devolution via SFC [4].",
       "ta": "சரியான வருவாய் பொருத்தம்:\nசொத்துவரி - நிலம் மற்றும் கட்டிடங்கள் மீதான வரி [1]\nதொழில் வரி - அதிகபட்சம் ரூ 2,500 வரம்பிற்குட்பட்ட வரி [2]\nவரி அல்லாத வருவாய் - கட்டணங்கள், குடிநீர் கட்டணம் [3]\nநிதிப் பகிர்வு - SFC பரிந்துரைத்த வரிப் பகிர்வு [4]."
@@ -1334,16 +1334,16 @@
         "ta": "விருப்பம் D (a-4, b-3, c-2, d-1) தவறானது, தவறான இணைப்பைக் கொண்டுள்ளது."
       },
       "B": {
-        "en": "Option B (a-2, b-1, c-4, d-3) is incorrect due to mismatched pairings.",
-        "ta": "விருப்பம் B (a-2, b-1, c-4, d-3) தவறானது, தவறான இணைப்பைக் கொண்டுள்ளது."
+        "en": "Option A (a-1, b-2, c-3, d-4) is correct. It accurately matches each item of List-I with its counterpart in List-II.",
+        "ta": "விருப்பம் A (a-1, b-2, c-3, d-4) சரியானது. இது பட்டியல்-I-ன் அனைத்து கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
       },
       "C": {
         "en": "Option C (a-3, b-4, c-1, d-2) is incorrect due to mismatched pairings.",
         "ta": "விருப்பம் C (a-3, b-4, c-1, d-2) தவறானது, தவறான இணைப்பைக் கொண்டுள்ளது."
       },
       "D": {
-        "en": "Option A (a-1, b-2, c-3, d-4) is correct. It accurately matches each item of List-I with its counterpart in List-II.",
-        "ta": "விருப்பம் A (a-1, b-2, c-3, d-4) சரியானது. இது பட்டியல்-I-ன் அனைத்து கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
+        "en": "Option B (a-2, b-1, c-4, d-3) is incorrect due to mismatched pairings.",
+        "ta": "விருப்பம் B (a-2, b-1, c-4, d-3) தவறானது, தவறான இணைப்பைக் கொண்டுள்ளது."
       }
     },
     "tnpsc_tip": {
@@ -1391,29 +1391,29 @@
       },
       {
         "id": "C",
-        "en": "a-4, b-3, c-2, d-1",
-        "ta": "a-4, b-3, c-2, d-1"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "D",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-4, b-3, c-2, d-1",
+        "ta": "a-4, b-3, c-2, d-1"
       }
     ],
     "options_en": [
       "a-3, b-4, c-1, d-2",
       "a-2, b-1, c-4, d-3",
-      "a-4, b-3, c-2, d-1",
-      "a-1, b-2, c-3, d-4"
+      "a-1, b-2, c-3, d-4",
+      "a-4, b-3, c-2, d-1"
     ],
     "options_ta": [
       "a-3, b-4, c-1, d-2",
       "a-2, b-1, c-4, d-3",
-      "a-4, b-3, c-2, d-1",
-      "a-1, b-2, c-3, d-4"
+      "a-1, b-2, c-3, d-4",
+      "a-4, b-3, c-2, d-1"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Accurate matching of municipal authorities:\nCouncil - Deliberative body [1]\nMayor - First Citizen & Presiding Officer [2]\nStanding Committees - Functional working committees [3]\nCommissioner - Chief Executive Officer [4].",
       "ta": "சரியான பொருத்தம்:\nமன்றம் - விவாத மற்றும் கொள்கை அமைப்பு [1]\nமேயர் - முதல் குடிமகன் & கூட்டத் தலைவர் [2]\nநிலைக்குழுக்கள் - குறிப்பிட்ட பணிக் குழுக்கள் [3]\nஆணையர் - முதன்மை நிர்வாக அதிகாரி [4]."
@@ -1430,12 +1430,12 @@
         "ta": "விருப்பம் B (a-2, b-1, c-4, d-3) தவறானது, தவறான இணைப்பைக் கொண்டுள்ளது."
       },
       "C": {
-        "en": "Option C (a-4, b-3, c-2, d-1) is incorrect due to mismatched pairings.",
-        "ta": "விருப்பம் C (a-4, b-3, c-2, d-1) தவறானது, தவறான இணைப்பைக் கொண்டுள்ளது."
-      },
-      "D": {
         "en": "Option A (a-1, b-2, c-3, d-4) is correct. It accurately matches each item of List-I with its counterpart in List-II.",
         "ta": "விருப்பம் A (a-1, b-2, c-3, d-4) சரியானது. இது பட்டியல்-I-ன் அனைத்து கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
+      },
+      "D": {
+        "en": "Option C (a-4, b-3, c-2, d-1) is incorrect due to mismatched pairings.",
+        "ta": "விருப்பம் C (a-4, b-3, c-2, d-1) தவறானது, தவறான இணைப்பைக் கொண்டுள்ளது."
       }
     },
     "tnpsc_tip": {
@@ -1472,8 +1472,8 @@
     "options": [
       {
         "id": "A",
-        "en": "a-4, b-3, c-2, d-1",
-        "ta": "a-4, b-3, c-2, d-1"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "B",
@@ -1487,24 +1487,24 @@
       },
       {
         "id": "D",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-4, b-3, c-2, d-1",
+        "ta": "a-4, b-3, c-2, d-1"
       }
     ],
     "options_en": [
-      "a-4, b-3, c-2, d-1",
+      "a-1, b-2, c-3, d-4",
       "a-2, b-1, c-4, d-3",
       "a-3, b-4, c-1, d-2",
-      "a-1, b-2, c-3, d-4"
+      "a-4, b-3, c-2, d-1"
     ],
     "options_ta": [
-      "a-4, b-3, c-2, d-1",
+      "a-1, b-2, c-3, d-4",
       "a-2, b-1, c-4, d-3",
       "a-3, b-4, c-1, d-2",
-      "a-1, b-2, c-3, d-4"
+      "a-4, b-3, c-2, d-1"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Accurate chronological pairing of early Tamil Nadu Corporations:\nChennai - 1688 (first)\nMadurai - 1971 (second)\nCoimbatore - 1981 (third)\nTiruchirappalli - 1994 (fourth, along with Salem).",
       "ta": "தமிழ்நாட்டின் முதல் 4 மாநகராட்சிகள்:\nசென்னை - 1688 (முதல்)\nமதுரை - 1971 (இரண்டாவது)\nகோயம்புத்தூர் - 1981 (மூன்றாவது)\nதிருச்சிராப்பள்ளி - 1994 (நான்காவது, சேலத்துடன் இணைந்து)."
@@ -1513,8 +1513,8 @@
     "explanation_ta": "தமிழ்நாட்டின் முதல் 4 மாநகராட்சிகள்:\nசென்னை - 1688 (முதல்)\nமதுரை - 1971 (இரண்டாவது)\nகோயம்புத்தூர் - 1981 (மூன்றாவது)\nதிருச்சிராப்பள்ளி - 1994 (நான்காவது, சேலத்துடன் இணைந்து).",
     "why_not_others": {
       "A": {
-        "en": "Option D (a-4, b-3, c-2, d-1) is incorrect due to mismatched pairings.",
-        "ta": "விருப்பம் D (a-4, b-3, c-2, d-1) தவறானது, தவறான இணைப்பைக் கொண்டுள்ளது."
+        "en": "Option A (a-1, b-2, c-3, d-4) is correct. It accurately matches each item of List-I with its counterpart in List-II.",
+        "ta": "விருப்பம் A (a-1, b-2, c-3, d-4) சரியானது. இது பட்டியல்-I-ன் அனைத்து கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
       },
       "B": {
         "en": "Option B (a-2, b-1, c-4, d-3) is incorrect due to mismatched pairings.",
@@ -1525,8 +1525,8 @@
         "ta": "விருப்பம் C (a-3, b-4, c-1, d-2) தவறானது, தவறான இணைப்பைக் கொண்டுள்ளது."
       },
       "D": {
-        "en": "Option A (a-1, b-2, c-3, d-4) is correct. It accurately matches each item of List-I with its counterpart in List-II.",
-        "ta": "விருப்பம் A (a-1, b-2, c-3, d-4) சரியானது. இது பட்டியல்-I-ன் அனைத்து கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
+        "en": "Option D (a-4, b-3, c-2, d-1) is incorrect due to mismatched pairings.",
+        "ta": "விருப்பம் D (a-4, b-3, c-2, d-1) தவறானது, தவறான இணைப்பைக் கொண்டுள்ளது."
       }
     },
     "tnpsc_tip": {
@@ -1573,29 +1573,29 @@
       },
       {
         "id": "C",
-        "en": "a-2, b-1, c-4, d-3",
-        "ta": "a-2, b-1, c-4, d-3"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "D",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-2, b-1, c-4, d-3",
+        "ta": "a-2, b-1, c-4, d-3"
       }
     ],
     "options_en": [
       "a-3, b-4, c-1, d-2",
       "a-4, b-3, c-2, d-1",
-      "a-2, b-1, c-4, d-3",
-      "a-1, b-2, c-3, d-4"
+      "a-1, b-2, c-3, d-4",
+      "a-2, b-1, c-4, d-3"
     ],
     "options_ta": [
       "a-3, b-4, c-1, d-2",
       "a-4, b-3, c-2, d-1",
-      "a-2, b-1, c-4, d-3",
-      "a-1, b-2, c-3, d-4"
+      "a-1, b-2, c-3, d-4",
+      "a-2, b-1, c-4, d-3"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Accurate matching of newer Tamil Nadu Corporations:\nTiruppur & Erode - 2008 [1]\nDindigul & Thanjavur - 2014 [2]\nHosur & Nagercoil - 2019 (along with Avadi) [3]\nTambaram, Kanchipuram, Karur, Cuddalore, Sivakasi - 2021 [4].",
       "ta": "சரியான பொருத்தம்:\nதிருப்பூர் & ஈரோடு - 2008 [1]\nதிண்டுக்கல் & தஞ்சாவூர் - 2014 [2]\nஓசூர் & நாகர்கோவில் - 2019 [3]\nதாம்பரம், காஞ்சிபுரம், கரூர், கடலூர், சிவகாசி - 2021 [4]."
@@ -1612,12 +1612,12 @@
         "ta": "விருப்பம் B (a-4, b-3, c-2, d-1) தவறானது, தவறான இணைப்பைக் கொண்டுள்ளது."
       },
       "C": {
-        "en": "Option C (a-2, b-1, c-4, d-3) is incorrect due to mismatched pairings.",
-        "ta": "விருப்பம் C (a-2, b-1, c-4, d-3) தவறானது, தவறான இணைப்பைக் கொண்டுள்ளது."
-      },
-      "D": {
         "en": "Option A (a-1, b-2, c-3, d-4) is correct. It accurately matches each item of List-I with its counterpart in List-II.",
         "ta": "விருப்பம் A (a-1, b-2, c-3, d-4) சரியானது. இது பட்டியல்-I-ன் அனைத்து கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
+      },
+      "D": {
+        "en": "Option C (a-2, b-1, c-4, d-3) is incorrect due to mismatched pairings.",
+        "ta": "விருப்பம் C (a-2, b-1, c-4, d-3) தவறானது, தவறான இணைப்பைக் கொண்டுள்ளது."
       }
     },
     "tnpsc_tip": {
@@ -1654,8 +1654,8 @@
     "options": [
       {
         "id": "A",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-4, b-3, c-2, d-1",
+        "ta": "a-4, b-3, c-2, d-1"
       },
       {
         "id": "B",
@@ -1669,24 +1669,24 @@
       },
       {
         "id": "D",
-        "en": "a-4, b-3, c-2, d-1",
-        "ta": "a-4, b-3, c-2, d-1"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       }
     ],
     "options_en": [
-      "a-1, b-2, c-3, d-4",
+      "a-4, b-3, c-2, d-1",
       "a-2, b-1, c-4, d-3",
       "a-3, b-4, c-1, d-2",
-      "a-4, b-3, c-2, d-1"
+      "a-1, b-2, c-3, d-4"
     ],
     "options_ta": [
-      "a-1, b-2, c-3, d-4",
+      "a-4, b-3, c-2, d-1",
       "a-2, b-1, c-4, d-3",
       "a-3, b-4, c-1, d-2",
-      "a-4, b-3, c-2, d-1"
+      "a-1, b-2, c-3, d-4"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Accurate matching of flagship urban missions:\nAMRUT - Water supply and sewerage in 500 cities [1]\nSmart Cities - 100 lighthouse cities with smart technology [2]\nPMAY-U - Pucca housing for urban poor [3]\nSBM-U - ODF status and solid waste processing [4].",
       "ta": "முக்கிய நகர்ப்புற திட்டங்கள் பொருத்தம்:\nஅம்ருத் - 500 நகரங்களில் குடிநீர் மற்றும் கழிவுநீர் [1]\nஸ்மார்ட் சிட்டீஸ் - 100 நகரங்களில் டிஜிட்டல் தீர்வுகள் [2]\nPMAY-U - நகர்ப்புற ஏழைகளுக்கு வீடுகள் [3]\nSBM-U - திறந்தவெளிக் கழிப்பிடமற்ற நகரங்கள் [4]."
@@ -1695,8 +1695,8 @@
     "explanation_ta": "முக்கிய நகர்ப்புற திட்டங்கள் பொருத்தம்:\nஅம்ருத் - 500 நகரங்களில் குடிநீர் மற்றும் கழிவுநீர் [1]\nஸ்மார்ட் சிட்டீஸ் - 100 நகரங்களில் டிஜிட்டல் தீர்வுகள் [2]\nPMAY-U - நகர்ப்புற ஏழைகளுக்கு வீடுகள் [3]\nSBM-U - திறந்தவெளிக் கழிப்பிடமற்ற நகரங்கள் [4].",
     "why_not_others": {
       "A": {
-        "en": "Option A (a-1, b-2, c-3, d-4) is correct. It accurately matches each item of List-I with its counterpart in List-II.",
-        "ta": "விருப்பம் A (a-1, b-2, c-3, d-4) சரியானது. இது பட்டியல்-I-ன் அனைத்து கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
+        "en": "Option D (a-4, b-3, c-2, d-1) is incorrect due to mismatched pairings.",
+        "ta": "விருப்பம் D (a-4, b-3, c-2, d-1) தவறானது, தவறான இணைப்பைக் கொண்டுள்ளது."
       },
       "B": {
         "en": "Option B (a-2, b-1, c-4, d-3) is incorrect due to mismatched pairings.",
@@ -1707,8 +1707,8 @@
         "ta": "விருப்பம் C (a-3, b-4, c-1, d-2) தவறானது, தவறான இணைப்பைக் கொண்டுள்ளது."
       },
       "D": {
-        "en": "Option D (a-4, b-3, c-2, d-1) is incorrect due to mismatched pairings.",
-        "ta": "விருப்பம் D (a-4, b-3, c-2, d-1) தவறானது, தவறான இணைப்பைக் கொண்டுள்ளது."
+        "en": "Option A (a-1, b-2, c-3, d-4) is correct. It accurately matches each item of List-I with its counterpart in List-II.",
+        "ta": "விருப்பம் A (a-1, b-2, c-3, d-4) சரியானது. இது பட்டியல்-I-ன் அனைத்து கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
       }
     },
     "tnpsc_tip": {
@@ -1745,8 +1745,8 @@
     "options": [
       {
         "id": "A",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-3, b-4, c-1, d-2",
+        "ta": "a-3, b-4, c-1, d-2"
       },
       {
         "id": "B",
@@ -1755,8 +1755,8 @@
       },
       {
         "id": "C",
-        "en": "a-3, b-4, c-1, d-2",
-        "ta": "a-3, b-4, c-1, d-2"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "D",
@@ -1765,19 +1765,19 @@
       }
     ],
     "options_en": [
-      "a-1, b-2, c-3, d-4",
-      "a-2, b-1, c-4, d-3",
       "a-3, b-4, c-1, d-2",
+      "a-2, b-1, c-4, d-3",
+      "a-1, b-2, c-3, d-4",
       "a-4, b-3, c-2, d-1"
     ],
     "options_ta": [
-      "a-1, b-2, c-3, d-4",
-      "a-2, b-1, c-4, d-3",
       "a-3, b-4, c-1, d-2",
+      "a-2, b-1, c-4, d-3",
+      "a-1, b-2, c-3, d-4",
       "a-4, b-3, c-2, d-1"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Accurate article matching:\nSFC for Municipalities - Article 243Y [1]\nSEC for Municipalities - Article 243ZA [2]\nUnion Finance Commission - Article 280 [3]\nElection Commission of India - Article 324 [4].",
       "ta": "சரியான உறுப்புகள் பொருத்தம்:\nநகராட்சி மாநில நிதி ஆணையம் - உறுப்பு 243Y [1]\nநகராட்சி மாநில தேர்தல் ஆணையம் - உறுப்பு 243ZA [2]\nமத்திய நிதி ஆணையம் - உறுப்பு 280 [3]\nஇந்திய தேர்தல் ஆணையம் - உறுப்பு 324 [4]."
@@ -1786,16 +1786,16 @@
     "explanation_ta": "சரியான உறுப்புகள் பொருத்தம்:\nநகராட்சி மாநில நிதி ஆணையம் - உறுப்பு 243Y [1]\nநகராட்சி மாநில தேர்தல் ஆணையம் - உறுப்பு 243ZA [2]\nமத்திய நிதி ஆணையம் - உறுப்பு 280 [3]\nஇந்திய தேர்தல் ஆணையம் - உறுப்பு 324 [4].",
     "why_not_others": {
       "A": {
-        "en": "Option A (a-1, b-2, c-3, d-4) is correct. It accurately matches each item of List-I with its counterpart in List-II.",
-        "ta": "விருப்பம் A (a-1, b-2, c-3, d-4) சரியானது. இது பட்டியல்-I-ன் அனைத்து கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
+        "en": "Option C (a-3, b-4, c-1, d-2) is incorrect due to mismatched pairings.",
+        "ta": "விருப்பம் C (a-3, b-4, c-1, d-2) தவறானது, தவறான இணைப்பைக் கொண்டுள்ளது."
       },
       "B": {
         "en": "Option B (a-2, b-1, c-4, d-3) is incorrect due to mismatched pairings.",
         "ta": "விருப்பம் B (a-2, b-1, c-4, d-3) தவறானது, தவறான இணைப்பைக் கொண்டுள்ளது."
       },
       "C": {
-        "en": "Option C (a-3, b-4, c-1, d-2) is incorrect due to mismatched pairings.",
-        "ta": "விருப்பம் C (a-3, b-4, c-1, d-2) தவறானது, தவறான இணைப்பைக் கொண்டுள்ளது."
+        "en": "Option A (a-1, b-2, c-3, d-4) is correct. It accurately matches each item of List-I with its counterpart in List-II.",
+        "ta": "விருப்பம் A (a-1, b-2, c-3, d-4) சரியானது. இது பட்டியல்-I-ன் அனைத்து கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
       },
       "D": {
         "en": "Option D (a-4, b-3, c-2, d-1) is incorrect due to mismatched pairings.",
@@ -1836,8 +1836,8 @@
     "options": [
       {
         "id": "A",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-3, b-4, c-1, d-2",
+        "ta": "a-3, b-4, c-1, d-2"
       },
       {
         "id": "B",
@@ -1851,24 +1851,24 @@
       },
       {
         "id": "D",
-        "en": "a-3, b-4, c-1, d-2",
-        "ta": "a-3, b-4, c-1, d-2"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       }
     ],
     "options_en": [
-      "a-1, b-2, c-3, d-4",
+      "a-3, b-4, c-1, d-2",
       "a-4, b-3, c-2, d-1",
       "a-2, b-1, c-4, d-3",
-      "a-3, b-4, c-1, d-2"
+      "a-1, b-2, c-3, d-4"
     ],
     "options_ta": [
-      "a-1, b-2, c-3, d-4",
+      "a-3, b-4, c-1, d-2",
       "a-4, b-3, c-2, d-1",
       "a-2, b-1, c-4, d-3",
-      "a-3, b-4, c-1, d-2"
+      "a-1, b-2, c-3, d-4"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Accurate matching of historical colonial statutes:\nAct XXVI of 1850 - Permissive all-India municipal act [1]\nTowns Improvement Act 1865 - Madras Presidency mofussil municipalities [2]\nMadras Local Boards Act 1884 - Followed Ripon's resolution in Madras [3]\nGoI Act 1935 - Provincial Autonomy and Provincial List for local gov [4].",
       "ta": "சரியான பொருத்தம்:\n1850 சட்டம் - அனுமதித்த முதல் அகில இந்திய சட்டம் [1]\n1865 நகர மேம்பாட்டுச் சட்டம் - மெட்ராஸ் புறநகர் நகராட்சிகள் [2]\n1884 உள்ளாட்சி வாரியங்கள் சட்டம் - ரிப்பனின் தீர்மானத்தை செயல்படுத்தியது [3]\n1935 இந்திய அரசுச் சட்டம் - உள்ளாட்சி மாகாணப் பட்டியலில் சேர்க்கப்பட்டது [4]."
@@ -1877,8 +1877,8 @@
     "explanation_ta": "சரியான பொருத்தம்:\n1850 சட்டம் - அனுமதித்த முதல் அகில இந்திய சட்டம் [1]\n1865 நகர மேம்பாட்டுச் சட்டம் - மெட்ராஸ் புறநகர் நகராட்சிகள் [2]\n1884 உள்ளாட்சி வாரியங்கள் சட்டம் - ரிப்பனின் தீர்மானத்தை செயல்படுத்தியது [3]\n1935 இந்திய அரசுச் சட்டம் - உள்ளாட்சி மாகாணப் பட்டியலில் சேர்க்கப்பட்டது [4].",
     "why_not_others": {
       "A": {
-        "en": "Option A (a-1, b-2, c-3, d-4) is correct. It accurately matches each item of List-I with its counterpart in List-II.",
-        "ta": "விருப்பம் A (a-1, b-2, c-3, d-4) சரியானது. இது பட்டியல்-I-ன் அனைத்து கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
+        "en": "Option D (a-3, b-4, c-1, d-2) is incorrect due to mismatched pairings.",
+        "ta": "விருப்பம் D (a-3, b-4, c-1, d-2) தவறானது, தவறான இணைப்பைக் கொண்டுள்ளது."
       },
       "B": {
         "en": "Option B (a-4, b-3, c-2, d-1) is incorrect due to mismatched pairings.",
@@ -1889,8 +1889,8 @@
         "ta": "விருப்பம் C (a-2, b-1, c-4, d-3) தவறானது, தவறான இணைப்பைக் கொண்டுள்ளது."
       },
       "D": {
-        "en": "Option D (a-3, b-4, c-1, d-2) is incorrect due to mismatched pairings.",
-        "ta": "விருப்பம் D (a-3, b-4, c-1, d-2) தவறானது, தவறான இணைப்பைக் கொண்டுள்ளது."
+        "en": "Option A (a-1, b-2, c-3, d-4) is correct. It accurately matches each item of List-I with its counterpart in List-II.",
+        "ta": "விருப்பம் A (a-1, b-2, c-3, d-4) சரியானது. இது பட்டியல்-I-ன் அனைத்து கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
       }
     },
     "tnpsc_tip": {
@@ -2018,8 +2018,8 @@
     "options": [
       {
         "id": "A",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-3, b-4, c-1, d-2",
+        "ta": "a-3, b-4, c-1, d-2"
       },
       {
         "id": "B",
@@ -2028,8 +2028,8 @@
       },
       {
         "id": "C",
-        "en": "a-3, b-4, c-1, d-2",
-        "ta": "a-3, b-4, c-1, d-2"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "D",
@@ -2038,19 +2038,19 @@
       }
     ],
     "options_en": [
-      "a-1, b-2, c-3, d-4",
-      "a-2, b-1, c-4, d-3",
       "a-3, b-4, c-1, d-2",
+      "a-2, b-1, c-4, d-3",
+      "a-1, b-2, c-3, d-4",
       "a-4, b-3, c-2, d-1"
     ],
     "options_ta": [
-      "a-1, b-2, c-3, d-4",
-      "a-2, b-1, c-4, d-3",
       "a-3, b-4, c-1, d-2",
+      "a-2, b-1, c-4, d-3",
+      "a-1, b-2, c-3, d-4",
       "a-4, b-3, c-2, d-1"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Classification under the Cantonments Act, 2006:\nCategory I: Civilian population > 50,000\nCategory II: Civilian population 10,000 to 50,000\nCategory III: Civilian population 2,500 to 10,000\nCategory IV: Civilian population < 2,500.",
       "ta": "2006 பாசறை சட்டத்தின் கீழ் வகைப்பாடு:\nவகை I: மக்கள் தொகை 50,000-க்கு மேல்\nவகை II: 10,000 முதல் 50,000 வரை\nவகை III: 2,500 முதல் 10,000 வரை\nவகை IV: 2,500-க்கு கீழ்."
@@ -2059,16 +2059,16 @@
     "explanation_ta": "2006 பாசறை சட்டத்தின் கீழ் வகைப்பாடு:\nவகை I: மக்கள் தொகை 50,000-க்கு மேல்\nவகை II: 10,000 முதல் 50,000 வரை\nவகை III: 2,500 முதல் 10,000 வரை\nவகை IV: 2,500-க்கு கீழ்.",
     "why_not_others": {
       "A": {
-        "en": "Option A (a-1, b-2, c-3, d-4) is correct. It accurately matches each item of List-I with its counterpart in List-II.",
-        "ta": "விருப்பம் A (a-1, b-2, c-3, d-4) சரியானது. இது பட்டியல்-I-ன் அனைத்து கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
+        "en": "Option C (a-3, b-4, c-1, d-2) is incorrect due to mismatched pairings.",
+        "ta": "விருப்பம் C (a-3, b-4, c-1, d-2) தவறானது, தவறான இணைப்பைக் கொண்டுள்ளது."
       },
       "B": {
         "en": "Option B (a-2, b-1, c-4, d-3) is incorrect due to mismatched pairings.",
         "ta": "விருப்பம் B (a-2, b-1, c-4, d-3) தவறானது, தவறான இணைப்பைக் கொண்டுள்ளது."
       },
       "C": {
-        "en": "Option C (a-3, b-4, c-1, d-2) is incorrect due to mismatched pairings.",
-        "ta": "விருப்பம் C (a-3, b-4, c-1, d-2) தவறானது, தவறான இணைப்பைக் கொண்டுள்ளது."
+        "en": "Option A (a-1, b-2, c-3, d-4) is correct. It accurately matches each item of List-I with its counterpart in List-II.",
+        "ta": "விருப்பம் A (a-1, b-2, c-3, d-4) சரியானது. இது பட்டியல்-I-ன் அனைத்து கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
       },
       "D": {
         "en": "Option D (a-4, b-3, c-2, d-1) is incorrect due to mismatched pairings.",
@@ -2109,13 +2109,13 @@
     "options": [
       {
         "id": "A",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-2, b-1, c-4, d-3",
+        "ta": "a-2, b-1, c-4, d-3"
       },
       {
         "id": "B",
-        "en": "a-2, b-1, c-4, d-3",
-        "ta": "a-2, b-1, c-4, d-3"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "C",
@@ -2129,19 +2129,19 @@
       }
     ],
     "options_en": [
-      "a-1, b-2, c-3, d-4",
       "a-2, b-1, c-4, d-3",
+      "a-1, b-2, c-3, d-4",
       "a-4, b-3, c-2, d-1",
       "a-3, b-4, c-1, d-2"
     ],
     "options_ta": [
-      "a-1, b-2, c-3, d-4",
       "a-2, b-1, c-4, d-3",
+      "a-1, b-2, c-3, d-4",
       "a-4, b-3, c-2, d-1",
       "a-3, b-4, c-1, d-2"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Accurate matching of Tamil Nadu planning bodies:\nCMDA - Chennai Metropolitan Area planning [1]\nDTCP - Rest of Tamil Nadu planning [2]\nTNUHDB - Slum housing and rehabilitation [3]\nTNSCB - Historic 1970 body renamed TNUHDB in 2021 [4].",
       "ta": "சரியான பொருத்தம்:\nCMDA - சென்னை பெருநகர திட்டமிடல் [1]\nDTCP - தமிழகத்தின் பிற பகுதி திட்டமிடல் [2]\nTNUHDB - சேரி மறுவாழ்வு வீட்டுவசதி [3]\nTNSCB - 1970-ல் உருவாக்கப்பட்ட முன்னோடி அமைப்பு [4]."
@@ -2150,12 +2150,12 @@
     "explanation_ta": "சரியான பொருத்தம்:\nCMDA - சென்னை பெருநகர திட்டமிடல் [1]\nDTCP - தமிழகத்தின் பிற பகுதி திட்டமிடல் [2]\nTNUHDB - சேரி மறுவாழ்வு வீட்டுவசதி [3]\nTNSCB - 1970-ல் உருவாக்கப்பட்ட முன்னோடி அமைப்பு [4].",
     "why_not_others": {
       "A": {
-        "en": "Option A (a-1, b-2, c-3, d-4) is correct. It accurately matches each item of List-I with its counterpart in List-II.",
-        "ta": "விருப்பம் A (a-1, b-2, c-3, d-4) சரியானது. இது பட்டியல்-I-ன் அனைத்து கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
-      },
-      "B": {
         "en": "Option B (a-2, b-1, c-4, d-3) is incorrect due to mismatched pairings.",
         "ta": "விருப்பம் B (a-2, b-1, c-4, d-3) தவறானது, தவறான இணைப்பைக் கொண்டுள்ளது."
+      },
+      "B": {
+        "en": "Option A (a-1, b-2, c-3, d-4) is correct. It accurately matches each item of List-I with its counterpart in List-II.",
+        "ta": "விருப்பம் A (a-1, b-2, c-3, d-4) சரியானது. இது பட்டியல்-I-ன் அனைத்து கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
       },
       "C": {
         "en": "Option C (a-4, b-3, c-2, d-1) is incorrect due to mismatched pairings.",

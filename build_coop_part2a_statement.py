@@ -1,0 +1,1506 @@
+# -*- coding: utf-8 -*-
+"""
+Co-operative Societies - Part 2A: Statement-based MCQs (50 Questions: CS_S_001 to CS_S_050)
+TNPSC Nova AI Content Engine
+"""
+import os
+import json
+from collections import Counter
+from tools.nova_content_engine.answer_randomizer import randomize_and_balance_dataset
+from tools.nova_content_engine.validator import ContentValidator
+from cooperative_societies_mcq_helper import make_coop_q
+
+
+def get_statement_raw_questions():
+    return [
+        # CS_S_001: 97th CAA 2011 Additions
+        {
+            "subtopic": "97th Constitutional Amendment Act 2011",
+            "stem_en": "Consider the following statements regarding the 97th Constitutional Amendment Act, 2011:\n1. It amended Article 19(1)(c) to include the right to form co-operative societies.\n2. It inserted Article 43B in Part IV of the Constitution promoting voluntary formation of co-operative societies.\n3. It inserted Part IX-B comprising Articles 243ZH to 243ZT into the Constitution.\nWhich of the statements given above are correct?",
+            "stem_ta": "2011-ஆம் ஆண்டின் 97-வது அரசியலமைப்புத் திருத்தச் சட்டம் தொடர்பான பின்வரும் கூற்றுகளை ஆராய்க:\n1. இது கூட்டுறவு சங்கங்களை அமைக்கும் உரிமையைச் சேர்க்க உறுப்பு 19(1)(c)-ஐத் திருத்தியது.\n2. இது கூட்டுறவு சங்கங்களின் தன்னார்வ உருவாக்கத்தை ஊக்குவிக்க பகுதி IV-ல் உறுப்பு 43B-ஐச் சேர்த்தது.\n3. இது அரசியலமைப்பில் உறுப்புகள் 243ZH முதல் 243ZT வரை கொண்ட பகுதி IX-B-ஐச் சேர்த்தது.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+            "options": [
+                ("1, 2 and 3", "1, 2 மற்றும் 3"),
+                ("1 and 2 only", "1 மற்றும் 2 மட்டும்"),
+                ("1 and 3 only", "1 மற்றும் 3 மட்டும்"),
+                ("2 and 3 only", "2 மற்றும் 3 மட்டும்")
+            ],
+            "correct_key": "A",
+            "exp_en": "All three statements are correct. The 97th Constitutional Amendment Act, 2011 introduced a tripartite change: (1) Added 'co-operative societies' to Article 19(1)(c) under Fundamental Rights; (2) Inserted Article 43B under Directive Principles of State Policy; and (3) Added Part IX-B (Articles 243ZH to 243ZT) establishing constitutional norms for cooperative societies.",
+            "exp_ta": "மூன்று கூற்றுகளும் சரியானவை. 97-வது அரசியலமைப்புத் திருத்தச் சட்டம், 2011 மூன்று முக்கிய மாற்றங்களைக் கொண்டுவந்தது: (1) அடிப்படை உரிமைகளில் உறுப்பு 19(1)(c)-ல் 'கூட்டுறவு சங்கங்கள்' என்பதைச் சேர்த்தது; (2) அரசு வழிகாட்டு நெறிமுறைகளில் உறுப்பு 43B-ஐச் சேர்த்தது; (3) பகுதி IX-B (உறுப்புகள் 243ZH முதல் 243ZT வரை)-ஐ அரசியலமைப்பில் சேர்த்தது.",
+            "why_a_en": "Correct. All three statements correctly represent the changes made by the 97th Amendment Act, 2011.",
+            "why_a_ta": "சரி. மூன்று கூற்றுகளும் 97-வது திருத்தச் சட்டம், 2011 கொண்டுவந்த மாற்றங்களைச் சரியாகக் குறிப்பிடுகின்றன.",
+            "why_b_en": "Incorrect. Statement 3 is also correct as Part IX-B was introduced by this amendment.",
+            "why_b_ta": "தவறு. பகுதி IX-B இத்திருத்தத்தால் சேர்க்கப்பட்டதால் கூற்று 3-ம் சரியானது.",
+            "why_c_en": "Incorrect. Statement 2 is also correct as Article 43B was added to Part IV.",
+            "why_c_ta": "தவறு. உறுப்பு 43B பகுதி IV-ல் சேர்க்கப்பட்டதால் கூற்று 2-ம் சரியானது.",
+            "why_d_en": "Incorrect. Statement 1 is also correct as Article 19(1)(c) was amended.",
+            "why_d_ta": "தவறு. உறுப்பு 19(1)(c) திருத்தப்பட்டதால் கூற்று 1-ம் சரியானது.",
+            "tip_en": "Memorize the 3-pillar structure of 97th CAA: Art 19(1)(c) [Part III] + Art 43B [Part IV] + Part IX-B [Arts 243ZH-243ZT].",
+            "tip_ta": "97-வது திருத்தத்தின் 3 தூண்களை நினைவில் கொள்க: உறுப்பு 19(1)(c) [பகுதி III] + உறுப்பு 43B [பகுதி IV] + பகுதி IX-B [உறுப்புகள் 243ZH-243ZT].",
+            "fact_en": "The 97th Constitutional Amendment was passed by Parliament in December 2011 and came into force on 15 February 2012.",
+            "fact_ta": "97-வது அரசியலமைப்புத் திருத்தச் சட்டம் டிசம்பர் 2011-ல் நாடாளுமன்றத்தால் நிறைவேற்றப்பட்டு 2012 பிப்ரவரி 15 முதல் நடைமுறைக்கு வந்தது."
+        },
+
+        # CS_S_002: Maximum Directors and Reservations (Art 243ZJ)
+        {
+            "subtopic": "Composition of Board - Article 243ZJ",
+            "stem_en": "With reference to Article 243ZJ of the Constitution, consider the following statements:\n1. The maximum number of directors of a co-operative society shall not exceed twenty-one.\n2. The State Legislature shall provide for reservation of one seat for Scheduled Castes or Scheduled Tribes.\n3. The State Legislature shall provide for reservation of two seats for women on the board of every co-operative society consisting of individuals as members.\nWhich of the statements given above are correct?",
+            "stem_ta": "அரசியலமைப்பு உறுப்பு 243ZJ தொடர்பாகப் பின்வரும் கூற்றுகளை ஆராய்க:\n1. ஒரு கூட்டுறவு சங்கத்தின் இயக்குநர்களின் அதிகபட்ச எண்ணிக்கை இருபத்தியொன்றைத் தாண்டக்கூடாது.\n2. மாநிலச் சட்டமன்றம் பட்டியல் சாதியினர் அல்லது பழங்குடியினருக்கு ஒரு இடஒதுக்கீடு வழங்க வேண்டும்.\n3. தனிநபர்களை உறுப்பினர்களாகக் கொண்ட ஒவ்வொரு கூட்டுறவு சங்கத்தின் வாரியத்திலும் பெண்களுக்கு இரண்டு இடங்களை மாநிலச் சட்டமன்றம் ஒதுக்கீடு செய்ய வேண்டும்.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+            "options": [
+                ("1, 2 and 3", "1, 2 மற்றும் 3"),
+                ("1 and 2 only", "1 மற்றும் 2 மட்டும்"),
+                ("2 and 3 only", "2 மற்றும் 3 மட்டும்"),
+                ("1 and 3 only", "1 மற்றும் 3 மட்டும்")
+            ],
+            "correct_key": "A",
+            "exp_en": "All three statements are correct under Article 243ZJ(1). The board shall consist of such number of directors not exceeding 21. It mandates reservation of one seat for SC/ST and two seats for women in every cooperative society having individuals as members and where such category of persons are members.",
+            "exp_ta": "உறுப்பு 243ZJ(1)-ன் படி மூன்று கூற்றுகளும் சரியானவை. நிர்வாக வாரியம் அதிகபட்சம் 21 இயக்குநர்களுக்கு மிகாமல் இருக்க வேண்டும். தனிநபர்களை உறுப்பினர்களாகக் கொண்ட கூட்டுறவு சங்கங்களில் SC/ST பிரிவினருக்கு ஒரு இடமும், பெண்களுக்கு இரண்டு இடங்களும் கட்டாயம் ஒதுக்கப்பட வேண்டும்.",
+            "why_a_en": "Correct. All three statements accurately state the constitutional limits and reservation quotas in Art 243ZJ.",
+            "why_a_ta": "சரி. மூன்று கூற்றுகளும் உறுப்பு 243ZJ-ல் உள்ள உச்சவரம்பு மற்றும் இடஒதுக்கீட்டு விதிகளைத் துல்லியமாகக் குறிப்பிடுகின்றன.",
+            "why_b_en": "Incorrect. Statement 3 is also correct (2 seats for women).",
+            "why_b_ta": "தவறு. பெண்களுக்கு 2 இடங்கள் என்பது சரியானதால் கூற்று 3-ம் சரி.",
+            "why_c_en": "Incorrect. Statement 1 is also correct (maximum 21 directors).",
+            "why_c_ta": "தவறு. அதிகபட்சம் 21 இயக்குநர்கள் என்பது சரியானதால் கூற்று 1-ம் சரி.",
+            "why_d_en": "Incorrect. Statement 2 is also correct (1 seat for SC/ST).",
+            "why_d_ta": "தவறு. SC/ST பிரிவினருக்கு 1 இடம் என்பது சரியானதால் கூற்று 2-ம் சரி.",
+            "tip_en": "Article 243ZJ Key Numbers: Max 21 directors, 1 SC/ST seat, 2 Women seats, 5-year term.",
+            "tip_ta": "உறுப்பு 243ZJ முக்கிய எண்கள்: அதிகபட்சம் 21 இயக்குநர்கள், 1 SC/ST இடம், 2 பெண்கள் இடங்கள், 5 ஆண்டுகள் பதவிக்காலம்.",
+            "fact_en": "The reservation for SC/ST and women applies to cooperative societies having individual members belonging to these categories.",
+            "fact_ta": "இப்பிரிவினரை உறுப்பினர்களாகக் கொண்ட தனிநபர் கூட்டுறவு சங்கங்களுக்கு மட்டுமே SC/ST மற்றும் பெண்கள் இடஒதுக்கீடு பொருந்தும்."
+        },
+
+        # CS_S_003: Co-opted Members under Article 243ZJ
+        {
+            "subtopic": "Co-opted Members - Article 243ZJ",
+            "stem_en": "Consider the following statements regarding co-opted members under Article 243ZJ:\n1. The State Legislature may provide for co-opting persons having experience in banking, management, finance or specialization in any related field.\n2. The number of such co-opted members shall not exceed two in addition to the maximum twenty-one directors.\n3. Co-opted members have the right to vote in any election of the co-operative society in their capacity as such members.\nWhich of the statements given above is/are correct?",
+            "stem_ta": "உறுப்பு 243ZJ-ன் கீழ் இணைத்துக் கொள்ளப்படும் (Co-opted) உறுப்பினர்கள் பற்றிய பின்வரும் கூற்றுகளை ஆராய்க:\n1. வங்கி, மேலாண்மை, நிதி அல்லது தொடர்புடைய துறைகளில் நிபுணத்துவம் பெற்ற நபர்களை இணைத்துக் கொள்ள மாநில சட்டமன்றம் வழிவகை செய்யலாம்.\n2. இத்தகைய இணை உறுப்பினர்களின் எண்ணிக்கை 21 இயக்குநர்களுக்குக் கூடுதலாக இரண்டுக்கு மிகாமல் இருக்க வேண்டும்.\n3. இத்தகைய இணை உறுப்பினர்கள் அந்த சங்கத்தின் எந்தவொரு தேர்தலிலும் வாக்களிக்கும் உரிமை பெற்றுள்ளனர்.\nமேற்கண்ட கூற்றுகளில் சரியானது/சரியானவை எது/எவை?",
+            "options": [
+                ("1 and 2 only", "1 மற்றும் 2 மட்டும்"),
+                ("1 only", "1 மட்டும்"),
+                ("2 and 3 only", "2 மற்றும் 3 மட்டும்"),
+                ("1, 2 and 3", "1, 2 மற்றும் 3")
+            ],
+            "correct_key": "A",
+            "exp_en": "Statements 1 and 2 are correct under the second proviso to Article 243ZJ(1). Statement 3 is INCORRECT because the third proviso explicitly provides that co-opted members shall NOT have the right to vote in any election of the co-operative society in their capacity as such member or be eligible to be elected as office bearers.",
+            "exp_ta": "கூற்றுகள் 1 மற்றும் 2 உறுப்பு 243ZJ(1)-ன் படி சரியானவை. கூற்று 3 தவறானது, ஏனெனில் இணைத்துக் கொள்ளப்படும் உறுப்பினர்களுக்கு சங்கத்தின் தேர்தல்களில் வாக்களிக்கவோ அல்லது நிர்வாகப் பதவிகளுக்குப் போட்டியிடவோ உரிமை கிடையாது என்று மூன்றாவது வரம்புரை திட்டவட்டமாகக் கூறுகிறது.",
+            "why_a_en": "Correct. Statements 1 and 2 are true, while statement 3 is explicitly barred by the proviso to Art 243ZJ(1).",
+            "why_a_ta": "சரி. கூற்றுகள் 1 மற்றும் 2 சரியானவை, ஆனால் கூற்று 3 உறுப்பு 243ZJ(1)-ன் வரம்புரையால் வெளிப்படையாகத் தடை செய்யப்பட்டுள்ளது.",
+            "why_b_en": "Incorrect. Statement 2 is also correct as max co-opted members is two.",
+            "why_b_ta": "தவறு. அதிகபட்ச இணை உறுப்பினர்கள் இரண்டு என்பது சரியானதால் கூற்று 2-ம் சரியானது.",
+            "why_c_en": "Incorrect. Statement 3 is false as co-opted members cannot vote.",
+            "why_c_ta": "தவறு. இணை உறுப்பினர்களுக்கு வாக்குரிமை இல்லை என்பதால் கூற்று 3 தவறானது.",
+            "why_d_en": "Incorrect. Statement 3 is false.",
+            "why_d_ta": "தவறு. கூற்று 3 தவறானது.",
+            "tip_en": "Co-opted members = Max 2, can participate in board meetings, but NO voting in elections and CANNOT become office bearers.",
+            "tip_ta": "இணை உறுப்பினர்கள் = அதிகபட்சம் 2 பேர், கூட்டங்களில் பங்கேற்கலாம், ஆனால் தேர்தலில் வாக்களிக்கவோ நிர்வாகியாகவோ முடியாது.",
+            "fact_en": "Co-opted members are excluded from the maximum ceiling of 21 directors under Article 243ZJ.",
+            "fact_ta": "உறுப்பு 243ZJ-ன் கீழ் அதிகபட்ச 21 இயக்குநர்கள் வரம்பில் இணை உறுப்பினர்கள் கணக்கிடப்படுவதில்லை."
+        },
+
+        # CS_S_004: Term of Office of Board Members (Art 243ZJ(2))
+        {
+            "subtopic": "Term of Office - Article 243ZJ(2)",
+            "stem_en": "Consider the following statements regarding the term of office of elected members of the board under Article 243ZJ(2):\n1. The term of office of elected members of the board and its office bearers shall be five years from the date of election.\n2. The term of office can be extended up to seven years during an emergency declared under Article 352.\n3. The term of office of office bearers can be altered by an ordinary resolution of the general body without statutory amendment.\nWhich of the statements given above is/are correct?",
+            "stem_ta": "உறுப்பு 243ZJ(2)-ன் கீழ் வாரியத்தின் தேர்ந்தெடுக்கப்பட்ட உறுப்பினர்களின் பதவிக்காலம் பற்றிய பின்வரும் கூற்றுகளை ஆராய்க:\n1. வாரியத்தின் தேர்ந்தெடுக்கப்பட்ட உறுப்பினர்கள் மற்றும் அதன் நிர்வாகிகளின் பதவிக்காலம் தேர்தல் தேதியிலிருந்து ஐந்து ஆண்டுகள் ஆகும்.\n2. உறுப்பு 352-ன் கீழ் நெருக்கடி நிலை பிரகடனத்தின் போது பதவிக்காலத்தை ஏழு ஆண்டுகள் வரை நீட்டிக்க முடியும்.\n3. சட்டத் திருத்தமின்றி பொதுக்குழுவின் சாதாரணத் தீர்மானத்தின் மூலம் நிர்வாகிகளின் பதவிக்காலத்தை மாற்றியமைக்கலாம்.\nமேற்கண்ட கூற்றுகளில் சரியானது/சரியானவை எது/எவை?",
+            "options": [
+                ("1 only", "1 மட்டும்"),
+                ("1 and 2 only", "1 மற்றும் 2 மட்டும்"),
+                ("2 and 3 only", "2 மற்றும் 3 மட்டும்"),
+                ("1, 2 and 3", "1, 2 மற்றும் 3")
+            ],
+            "correct_key": "A",
+            "exp_en": "Statement 1 is correct. Article 243ZJ(2) provides that the term of office of elected members of the board and its office bearers shall be five years from the date of election. Statements 2 and 3 are INCORRECT as there is no constitutional provision for extending the term to seven years during an emergency or by ordinary resolution.",
+            "exp_ta": "கூற்று 1 மட்டுமே சரியானது. உறுப்பு 243ZJ(2)-ன் படி தேர்ந்தெடுக்கப்பட்ட வாரிய உறுப்பினர்கள் மற்றும் நிர்வாகிகளின் பதவிக்காலம் தேர்தல் தேதியிலிருந்து 5 ஆண்டுகள் ஆகும். நெருக்கடி நிலையின் போது 7 ஆண்டுகளாக நீட்டிக்கவோ அல்லது சாதாரணத் தீர்மானம் மூலம் மாற்றவோ அரசியலமைப்பில் இடமில்லை என்பதால் கூற்றுகள் 2 மற்றும் 3 தவறானவை.",
+            "why_a_en": "Correct. Only statement 1 accurately reflects Article 243ZJ(2).",
+            "why_a_ta": "சரி. கூற்று 1 மட்டுமே உறுப்பு 243ZJ(2)-ஐத் துல்லியமாகப் பிரதிபலிக்கிறது.",
+            "why_b_en": "Incorrect. Statement 2 is completely baseless under Part IX-B.",
+            "why_b_ta": "தவறு. பகுதி IX-B-ல் 7 ஆண்டுகள் நீட்டிப்பு என்ற விதி கிடையாது.",
+            "why_c_en": "Incorrect. Statements 2 and 3 are false.",
+            "why_c_ta": "தவறு. கூற்றுகள் 2 மற்றும் 3 தவறானவை.",
+            "why_d_en": "Incorrect. Only statement 1 is true.",
+            "why_d_ta": "தவறு. கூற்று 1 மட்டுமே சரியானது.",
+            "tip_en": "Term of office is fixed at exactly 5 years from date of election under Article 243ZJ(2).",
+            "tip_ta": "உறுப்பு 243ZJ(2)-ன் படி தேர்ந்தெடுக்கப்பட்ட உறுப்பினர்களின் பதவிக்காலம் சரியாக 5 ஆண்டுகள்.",
+            "fact_en": "The 5-year fixed term aligns cooperative governance with Panchayats (Part IX) and Municipalities (Part IX-A).",
+            "fact_ta": "இந்த 5 ஆண்டு நிலையான பதவிக்காலம் பஞ்சாயத்துகள் மற்றும் நகராட்சிகளின் பதவிக்கால விதியுடன் ஒத்துப்போகிறது."
+        },
+
+        # CS_S_005: Election of Board Members (Art 243ZK)
+        {
+            "subtopic": "Elections - Article 243ZK",
+            "stem_en": "Consider the following statements regarding the conduct of elections under Article 243ZK:\n1. The superintendence, direction and control of the preparation of electoral rolls and the conduct of elections shall vest in the State Election Commission.\n2. The State Legislature may provide by law for the procedure and the manner of conduct of elections by such authority as specified by law.\n3. The election of a board must be completed before the expiry of the term of the existing board.\nWhich of the statements given above are correct?",
+            "stem_ta": "உறுப்பு 243ZK-ன் கீழ் தேர்தல் நடத்துவது தொடர்பான பின்வரும் கூற்றுகளை ஆராய்க:\n1. வாக்காளர் பட்டியல் தயாரித்தல் மற்றும் தேர்தல் நடத்துவதைக் கண்காணித்தல், வழிநடத்துதல் மற்றும் கட்டுப்படுத்துதல் ஆகியவை மாநிலத் தேர்தல் ஆணையத்திடம் ஒப்படைக்கப்படும்.\n2. சட்டத்தால் குறிப்பிடப்படும் அதிகார அமைப்பால் தேர்தல் நடத்தப்படும் நடைமுறை மற்றும் முறையை மாநிலச் சட்டமன்றம் சட்டத்தின் மூலம் ஏற்படுத்தலாம்.\n3. தற்போதுள்ள வாரியத்தின் பதவிக்காலம் முடிவடைவதற்கு முன்னரே புதிய வாரியத்திற்கான தேர்தல் நடத்தி முடிக்கப்பட வேண்டும்.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+            "options": [
+                ("2 and 3 only", "2 மற்றும் 3 மட்டும்"),
+                ("1 and 2 only", "1 மற்றும் 2 மட்டும்"),
+                ("1 and 3 only", "1 மற்றும் 3 மட்டும்"),
+                ("1, 2 and 3", "1, 2 மற்றும் 3")
+            ],
+            "correct_key": "A",
+            "exp_en": "Statements 2 and 3 are correct. Statement 1 is INCORRECT because Article 243ZK does NOT vest cooperative elections in the State Election Commission (which handles Panchayats/Municipalities under Arts 243K/243ZA). Instead, Article 243ZK(1) provides that superintendence vests in 'such authority or body, as may be provided by the Legislature of a State, by law' (e.g., Tamil Nadu created the TNSCSEC). Statement 3 is correct under Article 243ZK(2).",
+            "exp_ta": "கூற்றுகள் 2 மற்றும் 3 சரியானவை. கூற்று 1 தவறானது, ஏனெனில் உறுப்பு 243ZK தேர்தலை மாநிலத் தேர்தல் ஆணையத்திடம் (SEC) ஒப்படைக்கவில்லை. மாறாக, 'மாநில சட்டமன்றம் சட்டத்தால் உருவாக்கும் ஒரு தனி அதிகார அமைப்பு அல்லது ஆணையத்திடம்' ஒப்படைக்க வேண்டும் என்கிறது (எ.கா. தமிழ்நாட்டின் TNSCSEC). கூற்று 3 உறுப்பு 243ZK(2)-ன் படி சரியானது.",
+            "why_a_en": "Correct. Statement 1 is false (it is NOT SEC, but a State-created election authority); statements 2 and 3 are correct.",
+            "why_a_ta": "சரி. கூற்று 1 தவறு (இது SEC அல்ல, மாநிலம் உருவாக்கும் தனி தேர்தல் அமைப்பு); கூற்றுகள் 2 மற்றும் 3 சரியானவை.",
+            "why_b_en": "Incorrect. Statement 1 is false.",
+            "why_b_ta": "தவறு. கூற்று 1 தவறானது.",
+            "why_c_en": "Incorrect. Statement 1 is false.",
+            "why_c_ta": "தவறு. கூற்று 1 தவறானது.",
+            "why_d_en": "Incorrect. Statement 1 is incorrect.",
+            "why_d_ta": "தவறு. கூற்று 1 தவறானது.",
+            "tip_en": "Trap Alert: Cooperative elections are NOT conducted by State Election Commission (SEC), but by a separate authority created under State law.",
+            "tip_ta": "கவனிக்க: கூட்டுறவு தேர்தல்கள் மாநிலத் தேர்தல் ஆணையத்தால் (SEC) நடத்தப்படுவதில்லை; மாநில சட்டத்தால் உருவாக்கப்படும் தனி தேர்தல் அமைப்பால் நடத்தப்படுகின்றன.",
+            "fact_en": "In Tamil Nadu, the Tamil Nadu State Co-operative Societies Election Commission (TNSCSEC) was established under Section 33-A of the 1983 Act.",
+            "fact_ta": "தமிழ்நாட்டில் 1983-ஆம் ஆண்டு சட்டத்தின் பிரிவு 33-A-ன் கீழ் தமிழ்நாடு மாநிலக் கூட்டுறவு சங்கங்களின் தேர்தல் ஆணையம் (TNSCSEC) அமைக்கப்பட்டது."
+        },
+
+        # CS_S_006: Supersession and Suspension of Board (Art 243ZL)
+        {
+            "subtopic": "Supersession of Board - Article 243ZL",
+            "stem_en": "Consider the following statements regarding supersession and suspension of a co-operative society board under Article 243ZL:\n1. No board shall be superseded or kept under suspension for a period exceeding six months.\n2. In case of a co-operative society carrying on the business of banking, the maximum period of supersession is one year.\n3. The board of any co-operative society where there is no government shareholding, loan, or financial assistance cannot be superseded under any circumstances.\nWhich of the statements given above are correct?",
+            "stem_ta": "உறுப்பு 243ZL-ன் கீழ் ஒரு கூட்டுறவு சங்க வாரியத்தை நீக்குதல் மற்றும் இடைநீக்கம் செய்தல் தொடர்பான பின்வரும் கூற்றுகளை ஆராய்க:\n1. எந்தவொரு வாரியமும் ஆறு மாதங்களுக்கு மேற்பட்ட காலத்திற்கு கலைக்கப்படவோ அல்லது இடைநீக்கத்தில் வைக்கப்படவோ கூடாது.\n2. வங்கித் தொழில் புரியும் ஒரு கூட்டுறவு சங்கத்தின் விஷயத்தில், கலைப்பின் அதிகபட்ச காலம் ஒரு வருடம் ஆகும்.\n3. அரசுப் பங்குகள், கடன் அல்லது நிதி உதவி இல்லாத எந்தவொரு கூட்டுறவு சங்கத்தின் வாரியத்தையும் எக்காரணம் கொண்டும் கலைக்க முடியாது.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+            "options": [
+                ("1 and 2 only", "1 மற்றும் 2 மட்டும்"),
+                ("1 and 3 only", "1 மற்றும் 3 மட்டும்"),
+                ("2 and 3 only", "2 மற்றும் 3 மட்டும்"),
+                ("1, 2 and 3", "1, 2 மற்றும் 3")
+            ],
+            "correct_key": "A",
+            "exp_en": "Statements 1 and 2 are correct. Under Article 243ZL(1), the maximum supersession period is 6 months, but in the case of a cooperative society doing banking business, it is 1 year (as amended by Banking Regulation Act provisions). Statement 3 is INCORRECT because the first proviso states that the board of a society with no government aid cannot be superseded 'where there is no government shareholding or loan or financial assistance or any guarantee by the Government', EXCEPT where there is persistent default, negligence, or deadlock in elections.",
+            "exp_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. உறுப்பு 243ZL(1)-ன் படி வாரியக் கலைப்பின் உச்ச வரம்பு 6 மாதங்கள்; ஆனால் கூட்டுறவு வங்கிகளுக்கு இது 1 ஆண்டு வரை இருக்கலாம். அரசு உதவி பெறாத கூட்டுறவு சங்கங்களைக் கலைக்க முடியாது என்ற பொது விதி இருந்தாலும், தொடர் தவறுகள் அல்லது தேர்தல் முடக்கம் ஏற்பட்டால் கலைக்கலாம் என்பதால் கூற்று 3 முழுமையான உண்மையல்ல (தவறானது).",
+            "why_a_en": "Correct. Statements 1 and 2 accurately state the 6-month and 1-year limits.",
+            "why_a_ta": "சரி. கூற்றுகள் 1 மற்றும் 2 முறையே 6 மாதங்கள் மற்றும் 1 ஆண்டு வரம்புகளைச் சரியாகக் குறிப்பிடுகின்றன.",
+            "why_b_en": "Incorrect. Statement 3 is false due to exceptions for deadlock and gross negligence.",
+            "why_b_ta": "தவறு. தேர்தல் முடக்கம் மற்றும் நிர்வாக சீர்கேடு போன்ற விதிவிலக்குகள் உள்ளதால் கூற்று 3 தவறு.",
+            "why_c_en": "Incorrect. Statement 1 is correct.",
+            "why_c_ta": "தவறு. கூற்று 1 சரியானது.",
+            "why_d_en": "Incorrect. Statement 3 is false.",
+            "why_d_ta": "தவறு. கூற்று 3 தவறானது.",
+            "tip_en": "Supersession limit: Normal societies = 6 months; Co-operative Banks = 1 year.",
+            "tip_ta": "வாரியக் கலைப்பு வரம்பு: சாதாரண கூட்டுறவு சங்கங்கள் = 6 மாதங்கள்; கூட்டுறவு வங்கிகள் = 1 வருடம்.",
+            "fact_en": "Before supersession, a reasonable opportunity of being heard must be given to the board under Article 243ZL(1).",
+            "fact_ta": "உறுப்பு 243ZL(1)-ன் கீழ் வாரியத்தைக் கலைப்பதற்கு முன் நியாயமான விசாரணை வாய்ப்பு அளிக்கப்பட வேண்டும்."
+        },
+
+        # CS_S_007: Audit of Accounts (Art 243ZM)
+        {
+            "subtopic": "Audit of Accounts - Article 243ZM",
+            "stem_en": "Consider the following statements regarding audit of accounts under Article 243ZM:\n1. The Legislature of a State may make provisions for the maintenance and annual auditing of accounts.\n2. The audit must be conducted within six months of the close of the financial year.\n3. The auditor or auditing firm shall be appointed from a panel approved by the State Government or an authority authorized by the State Government.\nWhich of the statements given above are correct?",
+            "stem_ta": "உறுப்பு 243ZM-ன் கீழ் கணக்குத் தணிக்கை தொடர்பான பின்வரும் கூற்றுகளை ஆராய்க:\n1. கணக்குகளைப் பராமரித்தல் மற்றும் ஆண்டுக் கணக்குத் தணிக்கைக்கான விதிகளை மாநிலச் சட்டமன்றம் உருவாக்கலாம்.\n2. நிதியாண்டு முடிவடைந்த ஆறு மாதங்களுக்குள் தணிக்கை நடத்தி முடிக்கப்பட வேண்டும்.\n3. மாநில அரசு அல்லது அதனால் அங்கீகரிக்கப்பட்ட அதிகார அமைப்பால் அங்கீகரிக்கப்பட்ட குழுவிலிருந்து தணிக்கையாளர் நியமிக்கப்பட வேண்டும்.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+            "options": [
+                ("1, 2 and 3", "1, 2 மற்றும் 3"),
+                ("1 and 2 only", "1 மற்றும் 2 மட்டும்"),
+                ("2 and 3 only", "2 மற்றும் 3 மட்டும்"),
+                ("1 and 3 only", "1 மற்றும் 3 மட்டும்")
+            ],
+            "correct_key": "A",
+            "exp_en": "All three statements are correct under Article 243ZM. Accounts must be audited at least once in each financial year within 6 months of close of financial year by an auditor/firm appointed from an approved panel.",
+            "exp_ta": "உறுப்பு 243ZM-ன் படி மூன்று கூற்றுகளும் சரியானவை. ஒவ்வொரு நிதியாண்டிலும் நிதியாண்டு முடிந்த 6 மாதங்களுக்குள் அரசு அங்கீகரித்த பட்டியலிலிருந்து தணிக்கையாளர் நியமிக்கப்பட்டு கணக்குத் தணிக்கை செய்யப்பட வேண்டும்.",
+            "why_a_en": "Correct. All statements accurately reflect Article 243ZM provisions.",
+            "why_a_ta": "சரி. அனைத்து கூற்றுகளும் உறுப்பு 243ZM விதிகளைச் சரியாகப் பிரதிபலிக்கின்றன.",
+            "why_b_en": "Incorrect. Statement 3 is also correct.",
+            "why_b_ta": "தவறு. கூற்று 3-ம் சரியானது.",
+            "why_c_en": "Incorrect. Statement 1 is also correct.",
+            "why_c_ta": "தவறு. கூற்று 1-ம் சரியானது.",
+            "why_d_en": "Incorrect. Statement 2 is also correct.",
+            "why_d_ta": "தவறு. கூற்று 2-ம் சரியானது.",
+            "tip_en": "Cooperative audit timeline: Must be completed within 6 months of the end of the financial year.",
+            "tip_ta": "கூட்டுறவு தணிக்கைக் காலக்கெடு: நிதியாண்டு முடிவடைந்த 6 மாதங்களுக்குள் தணிக்கை முடிக்கப்பட வேண்டும்.",
+            "fact_en": "The audit report of an apex co-operative society must be laid before the State Legislature under Article 243ZM(2).",
+            "fact_ta": "உறுப்பு 243ZM(2)-ன் கீழ் தலைமை கூட்டுறவு சங்கத்தின் தணிக்கை அறிக்கை மாநில சட்டமன்றத்தின் முன் வைக்கப்பட வேண்டும்."
+        },
+
+        # CS_S_008: Convening of General Body Meeting (Art 243ZN)
+        {
+            "subtopic": "General Body Meetings - Article 243ZN",
+            "stem_en": "Consider the following statements regarding General Body meetings under Article 243ZN:\n1. The annual general body meeting of every co-operative society must be convened within a period of six months of close of the financial year.\n2. The meeting can be postponed indefinitely by the Registrar of Co-operative Societies in public interest.\n3. The general body provides for the democratic participation of members in the management of the society.\nWhich of the statements given above are correct?",
+            "stem_ta": "உறுப்பு 243ZN-ன் கீழ் பொதுக்குழு கூட்டங்கள் தொடர்பான பின்வரும் கூற்றுகளை ஆராய்க:\n1. ஒவ்வொரு கூட்டுறவு சங்கத்தின் வருடாந்திரப் பொதுக்குழுக் கூட்டம் நிதியாண்டு முடிவடைந்த ஆறு மாதங்களுக்குள் கூட்டப்பட வேண்டும்.\n2. பொது நலன் கருதி கூட்டுறவு சங்கங்களின் பதிவாளரால் இக்கூட்டத்தை காலவரையின்றி ஒத்திவைக்க முடியும்.\n3. பொதுக்குழுவானது சங்கத்தின் நிர்வாகத்தில் உறுப்பினர்களின் ஜனநாயகப் பங்களிப்பை வழங்குகிறது.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+            "options": [
+                ("1 and 3 only", "1 மற்றும் 3 மட்டும்"),
+                ("1 and 2 only", "1 மற்றும் 2 மட்டும்"),
+                ("2 and 3 only", "2 மற்றும் 3 மட்டும்"),
+                ("1, 2 and 3", "1, 2 மற்றும் 3")
+            ],
+            "correct_key": "A",
+            "exp_en": "Statements 1 and 3 are correct. Article 243ZN mandates that the annual general body meeting must be convened within 6 months of the close of the financial year. Statement 2 is INCORRECT as there is no constitutional authority granted to postpone the mandatory AGM indefinitely.",
+            "exp_ta": "கூற்றுகள் 1 மற்றும் 3 சரியானவை. உறுப்பு 243ZN-ன் படி நிதியாண்டு முடிந்த 6 மாதங்களுக்குள் பொதுக்குழு கூட்டப்பட வேண்டும். பொதுக்குழுவை பதிவாளர் காலவரையின்றி ஒத்திவைக்கலாம் என்பது தவறானது, அரசியலமைப்பு அத்தகைய அதிகாரத்தை வழங்கவில்லை.",
+            "why_a_en": "Correct. Statements 1 and 3 are correct; statement 2 is false.",
+            "why_a_ta": "சரி. கூற்றுகள் 1 மற்றும் 3 சரியானவை; கூற்று 2 தவறானது.",
+            "why_b_en": "Incorrect. Statement 2 is false.",
+            "why_b_ta": "தவறு. கூற்று 2 தவறானது.",
+            "why_c_en": "Incorrect. Statement 1 is correct.",
+            "why_c_ta": "தவறு. கூற்று 1 சரியானது.",
+            "why_d_en": "Incorrect. Statement 2 is false.",
+            "why_d_ta": "தவறு. கூற்று 2 தவறானது.",
+            "tip_en": "Both Audit (243ZM) and AGM (243ZN) share the same 6-month statutory deadline from the close of the financial year.",
+            "tip_ta": "தணிக்கை (243ZM) மற்றும் பொதுக்குழு (243ZN) ஆகிய இரண்டுமே நிதியாண்டு முடிந்த 6 மாதங்களுக்குள் நடத்தப்பட வேண்டும்.",
+            "fact_en": "Failure to call the AGM within the specified period constitutes an offence under Article 243ZQ.",
+            "fact_ta": "குறிப்பிட்ட காலத்திற்குள் பொதுக்குழுவைக் கூட்டத் தவறுவது உறுப்பு 243ZQ-ன் கீழ் குற்றமாகக் கருதப்படுகிறது."
+        },
+
+        # CS_S_009: Right to Information and Returns (Arts 243ZO & 243ZP)
+        {
+            "subtopic": "Information and Returns - Articles 243ZO & 243ZP",
+            "stem_en": "Consider the following statements regarding member information and filing of returns:\n1. Under Article 243ZO, every member has access to the books, information and accounts of the co-operative society.\n2. Under Article 243ZP, every co-operative society must file returns within six months of the close of every financial year.\n3. The returns filed under Article 243ZP include an annual report of its activities, audited statement of accounts, and plan for disposal of surplus.\nWhich of the statements given above are correct?",
+            "stem_ta": "உறுப்பினர்களுக்கான தகவல் மற்றும் வருடாந்திர அறிக்கை சமர்ப்பித்தல் தொடர்பான பின்வரும் கூற்றுகளை ஆராய்க:\n1. உறுப்பு 243ZO-ன் கீழ் ஒவ்வொரு உறுப்பினரும் கூட்டுறவு சங்கத்தின் புத்தகங்கள், தகவல்கள் மற்றும் கணக்குகளைப் பெற உரிமை உண்டு.\n2. உறுப்பு 243ZP-ன் கீழ் ஒவ்வொரு கூட்டுறவு சங்கமும் ஒவ்வொரு நிதியாண்டும் முடிந்த ஆறு மாதங்களுக்குள் வருடாந்திர அறிக்கைகளை சமர்ப்பிக்க வேண்டும்.\n3. உறுப்பு 243ZP-ன் கீழ் தாக்கல் செய்யப்படும் அறிக்கைகளில் சங்கத்தின் செயல்பாடுகள், தணிக்கை செய்யப்பட்ட கணக்கு அறிக்கை மற்றும் உபரி தொகையை பகிர்ந்தளிக்கும் திட்டம் ஆகியவை அடங்கும்.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+            "options": [
+                ("1, 2 and 3", "1, 2 மற்றும் 3"),
+                ("1 and 2 only", "1 மற்றும் 2 மட்டும்"),
+                ("2 and 3 only", "2 மற்றும் 3 மட்டும்"),
+                ("1 and 3 only", "1 மற்றும் 3 மட்டும்")
+            ],
+            "correct_key": "A",
+            "exp_en": "All three statements are correct. Article 243ZO guarantees member access to society books and accounts. Article 243ZP requires societies to file returns within 6 months of close of financial year covering annual reports, audited accounts, surplus disposal, list of amendments, declaration of elections, etc.",
+            "exp_ta": "மூன்று கூற்றுகளும் சரியானவை. உறுப்பு 243ZO உறுப்பினர்கள் சங்கக் கணக்குகளைப் பார்வையிடும் உரிமையை உறுதி செய்கிறது. உறுப்பு 243ZP நிதியாண்டு முடிந்த 6 மாதங்களுக்குள் தணிக்கை அறிக்கை, செயல்பாட்டு அறிக்கை மற்றும் உபரி பகிர்வு திட்டம் ஆகியவற்றை பதிவாளரிடம் தாக்கல் செய்ய உத்தரவிடுகிறது.",
+            "why_a_en": "Correct. All three statements accurately state provisions of Arts 243ZO and 243ZP.",
+            "why_a_ta": "சரி. மூன்று கூற்றுகளும் உறுப்புகள் 243ZO மற்றும் 243ZP-ன் விதிகளைத் துல்லியமாகக் குறிப்பிடுகின்றன.",
+            "why_b_en": "Incorrect. Statement 3 is also correct.",
+            "why_b_ta": "தவறு. கூற்று 3-ம் சரியானது.",
+            "why_c_en": "Incorrect. Statement 1 is also correct.",
+            "why_c_ta": "தவறு. கூற்று 1-ம் சரியானது.",
+            "why_d_en": "Incorrect. Statement 2 is also correct.",
+            "why_d_ta": "தவறு. கூற்று 2-ம் சரியானது.",
+            "tip_en": "Returns under 243ZP must be filed within 6 months to the authority designated by State law.",
+            "tip_ta": "உறுப்பு 243ZP-ன் கீழ் 6 மாதங்களுக்குள் மாநில சட்டம் குறிப்பிடும் அதிகாரியிடம் வருடாந்திர அறிக்கை தாக்கல் செய்யப்பட வேண்டும்.",
+            "fact_en": "Willful failure to furnish returns constitutes an offence punishable under Article 243ZQ.",
+            "fact_ta": "வருடாந்திர அறிக்கையை வேண்டுமென்றே தாக்கல் செய்யத் தவறுவது உறுப்பு 243ZQ-ன் கீழ் தண்டனைக்குரிய குற்றமாகும்."
+        },
+
+        # CS_S_010: Offences and Penalties (Art 243ZQ)
+        {
+            "subtopic": "Offences and Penalties - Article 243ZQ",
+            "stem_en": "Consider the following statements regarding offences under Article 243ZQ:\n1. A co-operative society wilfully making a false return or furnishing false information commits an offence.\n2. Any person wilfully disobeying any summons or lawful order issued under the State Act commits an offence.\n3. Any employer who fails to pay to a co-operative society amounts deducted from employee salaries commits an offence.\nWhich of the statements given above are correct?",
+            "stem_ta": "உறுப்பு 243ZQ-ன் கீழ் குற்றங்கள் தொடர்பான பின்வரும் கூற்றுகளை ஆராய்க:\n1. ஒரு கூட்டுறவு சங்கம் வேண்டுமென்றே தவறான அறிக்கையை தாக்கல் செய்தல் அல்லது தவறான தகவல்களை வழங்குவது குற்றமாகும்.\n2. மாநிலச் சட்டத்தின் கீழ் பிறப்பிக்கப்பட்ட அழைப்பாணை அல்லது சட்டப்பூர்வ உத்தரவை வேண்டுமென்றே மீறும் எந்தவொரு நபரும் குற்றம் புரிகிறார்.\n3. ஊழியர்களின் ஊதியத்திலிருந்து பிடித்தம் செய்த தொகையைக் கூட்டுறவு சங்கத்திற்குச் செலுத்தத் தவறும் முதலாளி குற்றம் புரிகிறார்.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+            "options": [
+                ("1, 2 and 3", "1, 2 மற்றும் 3"),
+                ("1 and 2 only", "1 மற்றும் 2 மட்டும்"),
+                ("2 and 3 only", "2 மற்றும் 3 மட்டும்"),
+                ("1 and 3 only", "1 மற்றும் 3 மட்டும்")
+            ],
+            "correct_key": "A",
+            "exp_en": "All three statements are correct. Article 243ZQ(1) categorises wilful false returns, wilful disobedience of summons/lawful orders, employer failure to remit salary deductions to cooperative societies, and corrupt practices during elections as statutory offences.",
+            "exp_ta": "மூன்று கூற்றுகளும் சரியானவை. உறுப்பு 243ZQ(1)-ன் கீழ் தவறான தகவல் அளித்தல், சட்டப்பூர்வ அழைப்பாணையை மீறுதல், ஊழியர் சம்பளத்தில் பிடித்தம் செய்த தொகையைச் சங்கத்தில் செலுத்தத் தவறுதல் மற்றும் தேர்தல் முறைகேடுகள் ஆகியவை குற்றங்களாக வகைப்படுத்தப்பட்டுள்ளன.",
+            "why_a_en": "Correct. All statements accurately reflect Article 243ZQ offences.",
+            "why_a_ta": "சரி. அனைத்து கூற்றுகளும் உறுப்பு 243ZQ-ல் குறிப்பிடப்பட்டுள்ள குற்றங்களைச் சரியாக விவரிக்கின்றன.",
+            "why_b_en": "Incorrect. Statement 3 is also an explicit offence under Art 243ZQ(1)(d).",
+            "why_b_ta": "தவறு. உறுப்பு 243ZQ(1)(d)-ன் படி கூற்று 3-ம் குற்றமாகும்.",
+            "why_c_en": "Incorrect. Statement 1 is also an explicit offence under Art 243ZQ(1)(a).",
+            "why_c_ta": "தவறு. உறுப்பு 243ZQ(1)(a)-ன் படி கூற்று 1-ம் குற்றமாகும்.",
+            "why_d_en": "Incorrect. Statement 2 is also an offence under Art 243ZQ(1)(b).",
+            "why_d_ta": "தவறு. உறுப்பு 243ZQ(1)(b)-ன் படி கூற்று 2-ம் குற்றமாகும்.",
+            "tip_en": "Article 243ZQ mandates penal consequences for corrupt electoral practices and employer default in remitting deductions.",
+            "tip_ta": "தேர்தல் முறைகேடுகள் மற்றும் பிடித்தம் செய்த தொகையைச் செலுத்தத் தவறும் முதலாளிகளுக்கு உறுப்பு 243ZQ தண்டனை விதிக்கிறது.",
+            "fact_en": "Penalties for offences under Article 243ZQ are determined by State legislation.",
+            "fact_ta": "உறுப்பு 243ZQ-ன் கீழ் குற்றங்களுக்கான தண்டனைகளை மாநில சட்டமன்ற சட்டங்கள் தீர்மானிக்கின்றன."
+        },
+
+        # CS_S_011: Multi-State Co-operative Societies (Art 243ZR)
+        {
+            "subtopic": "Multi-State Cooperatives - Article 243ZR",
+            "stem_en": "Consider the following statements regarding Multi-State Co-operative Societies under Article 243ZR:\n1. The provisions of Part IX-B apply to Multi-State Co-operative Societies subject to modifications replacing 'State Legislature' with 'Parliament'.\n2. The regulation of Multi-State Co-operative Societies falls under List I (Union List) Entry 44 of the Seventh Schedule.\n3. Multi-State Co-operative Societies are governed by the Multi-State Co-operative Societies Act, 2002 enacted by Parliament.\nWhich of the statements given above are correct?",
+            "stem_ta": "உறுப்பு 243ZR-ன் கீழ் பல மாநில கூட்டுறவு சங்கங்கள் தொடர்பான பின்வரும் கூற்றுகளை ஆராய்க:\n1. பகுதி IX-B-ன் விதிகள் பல மாநில கூட்டுறவு சங்கங்களுக்குப் பொருந்தும் போது, 'மாநில சட்டமன்றம்' என்பதற்குப் பதிலாக 'நாடாளுமன்றம்' எனப் பொருள் கொள்ளப்படும்.\n2. பல மாநில கூட்டுறவு சங்கங்களை ஒழுங்குபடுத்துவது ஏழாவது அட்டவணையின் பட்டியல் I (மத்திய பட்டியல்) பதிவு 44-ன் கீழ் வருகிறது.\n3. பல மாநில கூட்டுறவு சங்கங்கள் நாடாளுமன்றத்தால் இயற்றப்பட்ட பல மாநில கூட்டுறவு சங்கங்கள் சட்டம், 2002-ன் கீழ் நிர்வகிக்கப்படுகின்றன.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+            "options": [
+                ("1, 2 and 3", "1, 2 மற்றும் 3"),
+                ("1 and 2 only", "1 மற்றும் 2 மட்டும்"),
+                ("2 and 3 only", "2 மற்றும் 3 மட்டும்"),
+                ("1 and 3 only", "1 மற்றும் 3 மட்டும்")
+            ],
+            "correct_key": "A",
+            "exp_en": "All three statements are correct. Article 243ZR explicitly provides that references to State Act or State Legislature shall be construed as Parliament for Multi-State Co-operatives. Parliament derives legislative competence from List I Entry 44, under which it enacted the Multi-State Co-operative Societies Act, 2002.",
+            "exp_ta": "மூன்று கூற்றுகளும் சரியானவை. பல மாநில கூட்டுறவு சங்கங்களுக்கு பகுதி IX-B பொருந்தும் போது மாநில சட்டமன்றம் என்பதற்குப் பதிலாக நாடாளுமன்றம் என்று மாற்றிக் கொள்ளப்படும் (உறுப்பு 243ZR). இதற்கு மத்திய பட்டியல் பதிவு 44 நாடாளுமன்றத்திற்கு அதிகாரம் அளிக்கிறது, இதன் கீழ் 2002 சட்டம் இயற்றப்பட்டது.",
+            "why_a_en": "Correct. All three statements accurately state constitutional and legislative provisions.",
+            "why_a_ta": "சரி. மூன்று கூற்றுகளும் அரசமைப்பு மற்றும் சட்ட விதிகளைத் துல்லியமாகக் குறிப்பிடுகின்றன.",
+            "why_b_en": "Incorrect. Statement 3 is also correct.",
+            "why_b_ta": "தவறு. கூற்று 3-ம் சரியானது.",
+            "why_c_en": "Incorrect. Statement 1 is also correct.",
+            "why_c_ta": "தவறு. கூற்று 1-ம் சரியானது.",
+            "why_d_en": "Incorrect. Statement 2 is also correct.",
+            "why_d_ta": "தவறு. கூற்று 2-ம் சரியானது.",
+            "tip_en": "Remember the distinction: State Cooperatives = List II Entry 32; Multi-State Cooperatives = List I Entry 44.",
+            "tip_ta": "வேறுபாட்டை நினைவில் கொள்க: மாநிலக் கூட்டுறவு = பட்டியல் II பதிவு 32; பல மாநிலக் கூட்டுறவு = பட்டியல் I பதிவு 44.",
+            "fact_en": "The Multi-State Co-operative Societies (Amendment) Act, 2023 introduced a Co-operative Election Authority and Co-operative Ombudsman.",
+            "fact_ta": "2023-ஆம் ஆண்டின் பல மாநில கூட்டுறவு சங்கங்கள் திருத்தச் சட்டம் கூட்டுறவு தேர்தல் ஆணையம் மற்றும் குறைதீர்ப்பாளரை அறிமுகப்படுத்தியது."
+        },
+
+        # CS_S_012: Application to Union Territories (Art 243ZS)
+        {
+            "subtopic": "Union Territories - Article 243ZS",
+            "stem_en": "Consider the following statements regarding the application of Part IX-B to Union Territories under Article 243ZS:\n1. The provisions of Part IX-B apply to Union Territories.\n2. The President may, by notification, direct that Part IX-B shall apply to any Union Territory subject to specified exceptions or modifications.\n3. Parliament has exclusive legislative competence over co-operative societies in Union Territories under Article 246(4).\nWhich of the statements given above are correct?",
+            "stem_ta": "உறுப்பு 243ZS-ன் கீழ் யூனியன் பிரதேசங்களுக்கு பகுதி IX-B பயன்பாடு தொடர்பான பின்வரும் கூற்றுகளை ஆராய்க:\n1. பகுதி IX-B-ன் விதிகள் யூனியன் பிரதேசங்களுக்கும் பொருந்தும்.\n2. குடியரசுத் தலைவர் ஓர் அறிவிக்கையின் மூலம், குறிப்பிட்ட விதிவிலக்குகள் அல்லது மாற்றங்களுடன் எந்தவொரு யூனியன் பிரதேசத்திற்கும் பகுதி IX-B பொருந்தும் என உத்தரவிடலாம்.\n3. உறுப்பு 246(4)-ன் கீழ் யூனியன் பிரதேசங்களில் உள்ள கூட்டுறவு சங்கங்கள் மீது நாடாளுமன்றத்திற்கு முழுமையான சட்டமியற்றும் அதிகாரம் உண்டு.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+            "options": [
+                ("1, 2 and 3", "1, 2 மற்றும் 3"),
+                ("1 and 2 only", "1 மற்றும் 2 மட்டும்"),
+                ("2 and 3 only", "2 மற்றும் 3 மட்டும்"),
+                ("1 and 3 only", "1 மற்றும் 3 மட்டும்")
+            ],
+            "correct_key": "A",
+            "exp_en": "All three statements are correct. Under Article 243ZS, Part IX-B applies to Union Territories, and the President can direct modifications by notification. Furthermore, under Article 246(4), Parliament has plenary legislative power over all subjects (including List II subjects) for Union Territories.",
+            "exp_ta": "மூன்று கூற்றுகளும் சரியானவை. உறுப்பு 243ZS-ன் படி பகுதி IX-B யூனியன் பிரதேசங்களுக்கும் பொருந்தும், குடியரசுத் தலைவர் தேவைப்படும் மாற்றங்களை அறிவிக்கலாம். மேலும் உறுப்பு 246(4)-ன் கீழ் யூனியன் பிரதேசங்களுக்கு அனைத்துப் பட்டியல்கள் மீதும் சட்டம் இயற்ற நாடாளுமன்றத்திற்கே அதிகாரம் உண்டு.",
+            "why_a_en": "Correct. All statements are constitutionally accurate.",
+            "why_a_ta": "சரி. அனைத்துக் கூற்றுகளும் அரசியலமைப்பு ரீதியாகச் சரியானவை.",
+            "why_b_en": "Incorrect. Statement 3 is also correct under Art 246(4).",
+            "why_b_ta": "தவறு. உறுப்பு 246(4)-ன் படி கூற்று 3-ம் சரியானது.",
+            "why_c_en": "Incorrect. Statement 1 is also correct.",
+            "why_c_ta": "தவறு. கூற்று 1-ம் சரியானது.",
+            "why_d_en": "Incorrect. Statement 2 is also correct.",
+            "why_d_ta": "தவறு. கூற்று 2-ம் சரியானது.",
+            "tip_en": "In Union of India v. Rajendra N. Shah (2021), the Supreme Court upheld Part IX-B for Union Territories because Parliament has plenary power under Article 246(4).",
+            "tip_ta": "ராஜேந்திர ஷா (2021) வழக்கில், உறுப்பு 246(4)-ன் கீழ் நாடாளுமன்றத்திற்கு முழு அதிகாரம் உள்ளதால் யூனியன் பிரதேசங்களுக்கு பகுதி IX-B செல்லும் என உச்சநீதிமன்றம் தீர்ப்பளித்தது.",
+            "fact_en": "This is why Part IX-B was severed rather than struck down entirely in 2021.",
+            "fact_ta": "இதன் காரணமாகவே 2021-ல் பகுதி IX-B முழுமையாக ரத்து செய்யப்படாமல் பிரிக்கப்பட்டு காப்பாற்றப்பட்டது."
+        },
+
+        # CS_S_013: Continuance of Existing Laws (Art 243ZT)
+        {
+            "subtopic": "Continuance of Existing Laws - Article 243ZT",
+            "stem_en": "Consider the following statements regarding Article 243ZT of the Constitution:\n1. It provided a transitional period for existing State co-operative laws that were inconsistent with Part IX-B.\n2. Inconsistent provisions in State laws were allowed to continue until amended or repealed, but not beyond one year from commencement of the 97th Amendment.\n3. The one-year transitional period expired on 15th February 2013.\nWhich of the statements given above are correct?",
+            "stem_ta": "அரசியலமைப்பு உறுப்பு 243ZT தொடர்பான பின்வரும் கூற்றுகளை ஆராய்க:\n1. இது பகுதி IX-B-க்கு முரணாக இருந்த அப்போதைய மாநிலக் கூட்டுறவு சட்டங்களுக்கு ஒரு இடைக்கால அவகாசத்தை வழங்கியது.\n2. முரண்பட்ட மாநிலச் சட்ட விதிகள் திருத்தப்படும் வரை அல்லது 97-வது திருத்தம் நடைமுறைக்கு வந்த தேதியிலிருந்து அதிகபட்சம் ஒரு வருடம் வரை தொடர அனுமதிக்கப்பட்டன.\n3. இந்த ஓராண்டு இடைக்கால அவகாசம் 2013 பிப்ரவரி 15 அன்று முடிவடைந்தது.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+            "options": [
+                ("1, 2 and 3", "1, 2 மற்றும் 3"),
+                ("1 and 2 only", "1 மற்றும் 2 மட்டும்"),
+                ("2 and 3 only", "2 மற்றும் 3 மட்டும்"),
+                ("1 and 3 only", "1 மற்றும் 3 மட்டும்")
+            ],
+            "correct_key": "A",
+            "exp_en": "All three statements are correct. Article 243ZT provided a sunset clause of one year from the commencement of the 97th Constitutional Amendment Act, 2011 (15 Feb 2012) for States to bring their cooperative laws into conformity. This one-year window expired on 15 Feb 2013.",
+            "exp_ta": "மூன்று கூற்றுகளும் சரியானவை. உறுப்பு 243ZT மாநிலங்கள் தங்களின் கூட்டுறவு சட்டங்களை பகுதி IX-B-க்கு இணங்க மாற்றிக்கொள்ள 97வது திருத்தம் அமலுக்கு வந்த 2012 பிப்ரவரி 15 முதல் 1 ஆண்டு அவகாசம் அளித்தது. இது 2013 பிப்ரவரி 15 அன்று முடிவடைந்தது.",
+            "why_a_en": "Correct. All statements correctly describe the transitional provisions of Art 243ZT.",
+            "why_a_ta": "சரி. அனைத்துக் கூற்றுகளும் உறுப்பு 243ZT-ன் இடைக்கால விதிகளைச் சரியாக விவரிக்கின்றன.",
+            "why_b_en": "Incorrect. Statement 3 is also correct (15 Feb 2012 + 1 year = 15 Feb 2013).",
+            "why_b_ta": "தவறு. 2013 பிப்ரவரி 15 என்பது சரியானதால் கூற்று 3-ம் சரி.",
+            "why_c_en": "Incorrect. Statement 1 is also correct.",
+            "why_c_ta": "தவறு. கூற்று 1-ம் சரியானது.",
+            "why_d_en": "Incorrect. Statement 2 is also correct.",
+            "why_d_ta": "தவறு. கூற்று 2-ம் சரியானது.",
+            "tip_en": "Article 243ZT is identical in function to Article 243N (Panchayats) and Article 243ZF (Municipalities).",
+            "tip_ta": "உறுப்பு 243ZT என்பது பஞ்சாயத்துகளின் 243N மற்றும் நகராட்சிகளின் 243ZF போன்று இடைக்கால சட்டத் தொடர்ச்சியை வழங்குகிறது.",
+            "fact_en": "Tamil Nadu amended its Co-operative Societies Act 1983 in 2013 to align with the 97th Amendment requirements.",
+            "fact_ta": "97-வது திருத்தத்திற்கு இணங்க தமிழ்நாடு தனது 1983-ஆம் ஆண்டு கூட்டுறவு சங்கங்கள் சட்டத்தை 2013-ல் திருத்தியது."
+        },
+
+        # CS_S_014: Supreme Court Ruling in Rajendra N. Shah (2021)
+        {
+            "subtopic": "Supreme Court Judgment - 2021",
+            "stem_en": "Consider the following statements regarding the Supreme Court judgment in Union of India v. Rajendra N. Shah (2021):\n1. The Supreme Court declared Part IX-B unconstitutional in so far as it relates to co-operative societies operating within a single State.\n2. The court struck it down because the 97th Amendment lacked ratification by at least half of the State Legislatures under Article 368(2) proviso.\n3. The Supreme Court also struck down Article 19(1)(c) and Article 43B as unconstitutional.\nWhich of the statements given above are correct?",
+            "stem_ta": "இந்திய ஒன்றியம் எதிர் ராஜேந்திர என். ஷா (2021) வழக்கில் உச்சநீதிமன்றத் தீர்ப்பு தொடர்பான பின்வரும் கூற்றுகளை ஆராய்க:\n1. ஒரு மாநிலத்திற்குள் செயல்படும் கூட்டுறவு சங்கங்கள் தொடர்பான பகுதி IX-B-ன் பகுதிகளை உச்சநீதிமன்றம் அரசியலமைப்பிற்கு முரணானது என அறிவித்தது.\n2. 97-வது திருத்தம் உறுப்பு 368(2)-ன் கீழ் குறைந்தபட்சம் பாதி மாநில சட்டமன்றங்களின் ஒப்புதலைப் பெறாததால் உச்சநீதிமன்றம் இதை ரத்து செய்தது.\n3. உச்சநீதிமன்றம் உறுப்பு 19(1)(c) மற்றும் உறுப்பு 43B ஆகியவற்றையும் அரசியலமைப்பிற்கு முரணானது என ரத்து செய்தது.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+            "options": [
+                ("1 and 2 only", "1 மற்றும் 2 மட்டும்"),
+                ("1 only", "1 மட்டும்"),
+                ("2 and 3 only", "2 மற்றும் 3 மட்டும்"),
+                ("1, 2 and 3", "1, 2 மற்றும் 3")
+            ],
+            "correct_key": "A",
+            "exp_en": "Statements 1 and 2 are correct. Statement 3 is INCORRECT because the Supreme Court explicitly UPHELD the validity of Article 19(1)(c) and Article 43B. Only Part IX-B in relation to State cooperative societies was held unconstitutional for lack of state ratification under Article 368(2) proviso.",
+            "exp_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உச்சநீதிமன்றம் உறுப்பு 19(1)(c) மற்றும் உறுப்பு 43B ஆகியவற்றை உறுதி செய்து செல்லுபடியாகும் என்று தீர்ப்பளித்தது. உறுப்பு 368(2)-ன் கீழ் மாநிலங்களின் ஒப்புதல் பெறப்படாததால் மாநிலக் கூட்டுறவு சங்கங்கள் தொடர்பான பகுதி IX-B மட்டுமே ரத்து செய்யப்பட்டது.",
+            "why_a_en": "Correct. Statements 1 and 2 are true; statement 3 is false as Arts 19(1)(c) and 43B were preserved.",
+            "why_a_ta": "சரி. கூற்றுகள் 1 மற்றும் 2 சரியானவை; உறுப்புகள் 19(1)(c) மற்றும் 43B பாதுகாக்கப்பட்டு செல்லும் என அறிவிக்கப்பட்டதால் கூற்று 3 தவறு.",
+            "why_b_en": "Incorrect. Statement 2 is also correct.",
+            "why_b_ta": "தவறு. கூற்று 2-ம் சரியானது.",
+            "why_c_en": "Incorrect. Statement 3 is false.",
+            "why_c_ta": "தவறு. கூற்று 3 தவறானது.",
+            "why_d_en": "Incorrect. Statement 3 is false.",
+            "why_d_ta": "தவறு. கூற்று 3 தவறானது.",
+            "tip_en": "High-Yield Point: 2021 SC verdict did NOT strike down Art 19(1)(c) or Art 43B! They remain 100% operative.",
+            "tip_ta": "முக்கியக் குறிப்பு: 2021 தீர்ப்பு உறுப்பு 19(1)(c) அல்லது உறுப்பு 43B-ஐ ரத்து செய்யவில்லை! அவை இப்போதும் முழுமையாகச் செயல்படுகின்றன.",
+            "fact_en": "The judgment was delivered by a 3-judge bench comprising Justices R.F. Nariman, B.R. Gavai, and K.M. Joseph.",
+            "fact_ta": "நீதிபதிகள் ஆர்.எஃப். நாரிமன், பி.ஆர். கவாய் மற்றும் கே.எம். ஜோசப் அடங்கிய 3 நீதிபதிகள் கொண்ட அமர்வு இத்தீர்ப்பை வழங்கியது."
+        },
+
+        # CS_S_015: Doctrine of Severability in 2021 Ruling
+        {
+            "subtopic": "Doctrine of Severability - 2021 Case",
+            "stem_en": "Consider the following statements regarding the application of the Doctrine of Severability in the 2021 Co-operative Societies case:\n1. The Supreme Court severed the unconstitutional part (State co-operatives) while upholding the constitutional part (Multi-State co-operatives and UTs).\n2. Justice K.M. Joseph dissented on the issue of severability, holding that Part IX-B should be struck down in its entirety.\n3. The majority held that Part IX-B remains valid for Multi-State Co-operative Societies and Union Territories.\nWhich of the statements given above are correct?",
+            "stem_ta": "2021 கூட்டுறவு சங்கங்கள் வழக்கில் பிரித்தெடுக்கும் கோட்பாடு (Doctrine of Severability) பயன்படுத்தப்பட்டது தொடர்பான பின்வரும் கூற்றுகளை ஆராய்க:\n1. உச்சநீதிமன்றம் அரசியலமைப்பிற்கு முரணான பகுதியை (மாநிலக் கூட்டுறவு) நீக்கிவிட்டு, செல்லுபடியாகும் பகுதியை (பல மாநிலக் கூட்டுறவு மற்றும் யூனியன் பிரதேசங்கள்) உறுதி செய்தது.\n2. நீதிபதி கே.எம். ஜோசப் பிரித்தெடுக்கும் விவகாரத்தில் மாறுபட்டு, பகுதி IX-B முழுவதையும் ரத்து செய்ய வேண்டும் என்று தீர்ப்பளித்தார்.\n3. பல மாநில கூட்டுறவு சங்கங்கள் மற்றும் யூனியன் பிரதேசங்களுக்கு பகுதி IX-B தொடர்ந்து செல்லும் என்று பெரும்பான்மை அமர்வு தீர்ப்பளித்தது.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+            "options": [
+                ("1, 2 and 3", "1, 2 மற்றும் 3"),
+                ("1 and 2 only", "1 மற்றும் 2 மட்டும்"),
+                ("2 and 3 only", "2 மற்றும் 3 மட்டும்"),
+                ("1 and 3 only", "1 மற்றும் 3 மட்டும்")
+            ],
+            "correct_key": "A",
+            "exp_en": "All three statements are correct. Justices Nariman and Gavai (majority) applied the Doctrine of Severability, upholding Part IX-B for Multi-State Co-operatives and Union Territories. Justice K.M. Joseph delivered a partial dissent, holding that Part IX-B was an integral whole and could not be severed, hence should be struck down entirely.",
+            "exp_ta": "மூன்று கூற்றுகளும் சரியானவை. நீதிபதிகள் நாரிமன் மற்றும் கவாய் (பெரும்பான்மை) பிரித்தெடுக்கும் கோட்பாட்டைப் பயன்படுத்தி பல மாநில கூட்டுறவு மற்றும் யூனியன் பிரதேசங்களுக்கு பகுதி IX-B செல்லும் எனத் தீர்ப்பளித்தனர். ஆனால் நீதிபதி கே.எம். ஜோசப் பகுதி IX-B-ஐப் பிரிக்க முடியாது என்பதால் முழுமையாக ரத்து செய்யப்பட வேண்டும் என மாறுபட்ட தீர்ப்பை வழங்கினார்.",
+            "why_a_en": "Correct. All statements accurately capture the majority and minority opinions in the 2021 judgment.",
+            "why_a_ta": "சரி. அனைத்து கூற்றுகளும் 2021 தீர்ப்பின் பெரும்பான்மை மற்றும் சிறுபான்மை கருத்துகளைத் துல்லியமாக விளக்குகின்றன.",
+            "why_b_en": "Incorrect. Statement 3 is also correct.",
+            "why_b_ta": "தவறு. கூற்று 3-ம் சரியானது.",
+            "why_c_en": "Incorrect. Statement 1 is also correct.",
+            "why_c_ta": "தவறு. கூற்று 1-ம் சரியானது.",
+            "why_d_en": "Incorrect. Statement 2 is also correct.",
+            "why_d_ta": "தவறு. கூற்று 2-ம் சரியானது.",
+            "tip_en": "Remember: 2:1 majority applied Doctrine of Severability (Nariman + Gavai vs Joseph).",
+            "tip_ta": "நினைவில் கொள்க: 2:1 பெரும்பான்மையில் பிரித்தெடுக்கும் கோட்பாடு ஏற்கப்பட்டது (நாரிமன் + கவாய் ஆதரவு, ஜோசப் எதிர்ப்பு).",
+            "fact_en": "The doctrine of severability is derived from Article 13(1) and 13(2) of the Constitution.",
+            "fact_ta": "பிரித்தெடுக்கும் கோட்பாடு இந்திய அரசியலமைப்பின் உறுப்பு 13(1) மற்றும் 13(2)-லிருந்து பெறப்படுகிறது."
+        },
+
+        # CS_S_016: Seventh Schedule Competence
+        {
+            "subtopic": "Seventh Schedule Distribution",
+            "stem_en": "Consider the following statements regarding legislative competence over co-operatives in the Seventh Schedule:\n1. 'Co-operative societies' is an exclusive State subject under Entry 32 of List II (State List).\n2. 'Corporations, whether trading or not, with objects not confined to one State' is an exclusive Union subject under Entry 44 of List I (Union List).\n3. Parliament can legislate on state co-operative societies during normal times without a resolution from State Legislatures under Article 252.\nWhich of the statements given above is/are correct?",
+            "stem_ta": "ஏழாவது அட்டவணையில் கூட்டுறவு சங்கங்கள் மீதான சட்டமியற்றும் அதிகாரம் தொடர்பான பின்வரும் கூற்றுகளை ஆராய்க:\n1. 'கூட்டுறவு சங்கங்கள்' என்பது பட்டியல் II (மாநிலப் பட்டியல்) பதிவு 32-ன் கீழ் பிரத்யேக மாநில அதிகாரமாகும்.\n2. 'ஒன்றுக்கு மேற்பட்ட மாநிலங்களில் செயல்படும் நிறுவனங்கள் அல்லது அமைப்புகள்' என்பது பட்டியல் I (மத்திய பட்டியல்) பதிவு 44-ன் கீழ் பிரத்யேக ஒன்றிய அதிகாரமாகும்.\n3. உறுப்பு 252-ன் கீழ் மாநில சட்டமன்றங்களின் தீர்மானம் இல்லாமலேயே சாதாரண காலங்களில் மாநிலக் கூட்டுறவு சங்கங்கள் மீது நாடாளுமன்றம் சட்டம் இயற்ற முடியும்.\nமேற்கண்ட கூற்றுகளில் சரியானது/சரியானவை எது/எவை?",
+            "options": [
+                ("1 and 2 only", "1 மற்றும் 2 மட்டும்"),
+                ("1 only", "1 மட்டும்"),
+                ("2 and 3 only", "2 மற்றும் 3 மட்டும்"),
+                ("1, 2 and 3", "1, 2 மற்றும் 3")
+            ],
+            "correct_key": "A",
+            "exp_en": "Statements 1 and 2 are correct. Co-operative societies within a state are under List II Entry 32. Multi-state corporations and cooperatives fall under List I Entry 44. Statement 3 is INCORRECT because Parliament CANNOT legislate on List II subjects in normal times without state authorization under Article 252 or a Rajya Sabha resolution under Article 249.",
+            "exp_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. மாநிலத்திற்குட்பட்ட கூட்டுறவு சங்கங்கள் பட்டியல் II பதிவு 32-ன் கீழும், பல மாநில அமைப்புகள் பட்டியல் I பதிவு 44-ன் கீழும் வருகின்றன. மாநிலங்களின் உறுப்பு 252 தீர்மானம் அல்லது மாநிலங்களவையின் உறுப்பு 249 தீர்மானம் இல்லாமல் நாடாளுமன்றம் சாதாரண காலங்களில் மாநிலப் பட்டியல் மீது சட்டம் இயற்ற முடியாது என்பதால் கூற்று 3 தவறு.",
+            "why_a_en": "Correct. Statements 1 and 2 are true, while statement 3 violates federal legislative distribution.",
+            "why_a_ta": "சரி. கூற்றுகள் 1 மற்றும் 2 சரியானவை, ஆனால் கூற்று 3 கூட்டாட்சி சட்டமியற்றும் அதிகாரப் பகிர்வை மீறுகிறது.",
+            "why_b_en": "Incorrect. Statement 2 is also correct.",
+            "why_b_ta": "தவறு. கூற்று 2-ம் சரியானது.",
+            "why_c_en": "Incorrect. Statement 3 is false.",
+            "why_c_ta": "தவறு. கூற்று 3 தவறானது.",
+            "why_d_en": "Incorrect. Statement 3 is false.",
+            "why_d_ta": "தவறு. கூற்று 3 தவறானது.",
+            "tip_en": "Entry 32 of State List covers: 'Incorporation, regulation and winding up of corporations, other than those specified in List I, and universities; unincorporated trading, literary, scientific, religious and other societies and associations; co-operative societies.'",
+            "tip_ta": "மாநிலப் பட்டியல் பதிவு 32: பட்டியல் I-ல் குறிப்பிடப்படாத கூட்டுறவு சங்கங்கள், பல்கலைக்கழகங்கள் மற்றும் சங்கங்களின் பதிவு, ஒழுங்குமுறை மற்றும் கலைப்பு.",
+            "fact_en": "Because List II Entry 32 was affected, Article 368(2) proviso ratification was held mandatory by the Supreme Court.",
+            "fact_ta": "மாநிலப் பட்டியல் பதிவு 32 பாதிக்கப்பட்டதால், உறுப்பு 368(2) வரம்புரையின்படி மாநிலங்களின் ஒப்புதல் கட்டாயம் என உச்சநீதிமன்றம் தீர்ப்பளித்தது."
+        },
+
+        # CS_S_017: Article 43B Directive Principle
+        {
+            "subtopic": "Directive Principles - Article 43B",
+            "stem_en": "Consider the following statements regarding Article 43B of the Constitution:\n1. It directs the State to promote voluntary formation, autonomous functioning, democratic control and professional management of co-operative societies.\n2. It was inserted in Part IV by the 97th Constitutional Amendment Act, 2011.\n3. Like all Directive Principles, Article 43B is non-justiciable and cannot be enforced directly by courts.\nWhich of the statements given above are correct?",
+            "stem_ta": "அரசியலமைப்பு உறுப்பு 43B தொடர்பான பின்வரும் கூற்றுகளை ஆராய்க:\n1. கூட்டுறவு சங்கங்களின் தன்னார்வ உருவாக்கம், தன்னாட்சி செயல்பாடு, ஜனநாயகக் கட்டுப்பாடு மற்றும் தொழில்முறை மேலாண்மை ஆகியவற்றை ஊக்குவிக்க இது அரசுக்கு வழிகாட்டுகிறது.\n2. இது 2011-ஆம் ஆண்டின் 97-வது அரசியலமைப்புத் திருத்தச் சட்டத்தின் மூலம் பகுதி IV-ல் சேர்க்கப்பட்டது.\n3. அனைத்து வழிகாட்டு நெறிமுறைகளைப் போலவே, உறுப்பு 43B நீதிமன்றங்களால் நேரடியாக செயல்படுத்தப்பட முடியாதது (Non-justiciable).\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+            "options": [
+                ("1, 2 and 3", "1, 2 மற்றும் 3"),
+                ("1 and 2 only", "1 மற்றும் 2 மட்டும்"),
+                ("2 and 3 only", "2 மற்றும் 3 மட்டும்"),
+                ("1 and 3 only", "1 மற்றும் 3 மட்டும்")
+            ],
+            "correct_key": "A",
+            "exp_en": "All three statements are correct. Article 43B provides that 'The State shall endeavour to promote voluntary formation, autonomous functioning, democratic control and professional management of co-operative societies.' It was added to Part IV by the 97th Amendment in 2011 and, like all DPSPs under Article 37, is non-justiciable.",
+            "exp_ta": "மூன்று கூற்றுகளும் சரியானவை. உறுப்பு 43B கூட்டுறவு சங்கங்களின் தன்னார்வ உருவாக்கம், தன்னாட்சி, ஜனநாயகக் கட்டுப்பாடு மற்றும் தொழில்முறை மேலாண்மையை அரசு ஊக்குவிக்க வேண்டும் என்கிறது. இது 2011-ல் 97வது திருத்தத்தால் பகுதி IV-ல் சேர்க்கப்பட்டது; உறுப்பு 37-ன் படி நீதிமன்றங்களால் நேரடியாகச் செயல்படுத்த முடியாதது.",
+            "why_a_en": "Correct. All statements accurately describe Article 43B.",
+            "why_a_ta": "சரி. அனைத்து கூற்றுகளும் உறுப்பு 43B-ஐத் துல்லியமாக விவரிக்கின்றன.",
+            "why_b_en": "Incorrect. Statement 3 is also correct.",
+            "why_b_ta": "தவறு. கூற்று 3-ம் சரியானது.",
+            "why_c_en": "Incorrect. Statement 1 is also correct.",
+            "why_c_ta": "தவறு. கூற்று 1-ம் சரியானது.",
+            "why_d_en": "Incorrect. Statement 2 is also correct.",
+            "why_d_ta": "தவறு. கூற்று 2-ம் சரியானது.",
+            "tip_en": "Remember the 4 keywords in Article 43B: Voluntary formation, Autonomous functioning, Democratic control, Professional management.",
+            "tip_ta": "உறுப்பு 43B-ன் 4 முக்கிய வார்த்தைகள்: தன்னார்வ உருவாக்கம், தன்னாட்சி செயல்பாடு, ஜனநாயகக் கட்டுப்பாடு, தொழில்முறை மேலாண்மை.",
+            "fact_en": "Article 43B is classified as a Liberal-Intellectual and Gandhian Directive Principle.",
+            "fact_ta": "உறுப்பு 43B தாராளவாத-அறிவுசார் மற்றும் காந்திய வழிகாட்டு நெறிமுறையாக வகைப்படுத்தப்படுகிறது."
+        },
+
+        # CS_S_018: Article 19(1)(c) Scope and Reasonable Restrictions
+        {
+            "subtopic": "Fundamental Rights - Article 19(1)(c)",
+            "stem_en": "Consider the following statements regarding the right to form co-operative societies under Article 19(1)(c):\n1. It is a fundamental right guaranteed to all citizens of India.\n2. The right to form co-operatives is subject to reasonable restrictions under Article 19(4) in the interests of sovereignty and integrity of India, public order or morality.\n3. The fundamental right under Article 19(1)(c) includes the right to compel the State to grant registration or financial subsidies to every co-operative society formed.\nWhich of the statements given above are correct?",
+            "stem_ta": "உறுப்பு 19(1)(c)-ன் கீழ் கூட்டுறவு சங்கங்களை அமைக்கும் உரிமை தொடர்பான பின்வரும் கூற்றுகளை ஆராய்க:\n1. இது இந்திய குடிமக்கள் அனைவருக்கும் உத்தரவாதம் அளிக்கப்பட்ட ஓர் அடிப்படை உரிமையாகும்.\n2. கூட்டுறவு சங்கங்களை அமைக்கும் உரிமை உறுப்பு 19(4)-ன் கீழ் இந்தியாவின் இறையாண்மை, ஒருமைப்பாடு, பொது ஒழுங்கு அல்லது ஒழுக்கநெறி ஆகியவற்றின் அடிப்படையில் நியாயமான கட்டுப்பாடுகளுக்கு உட்பட்டது.\n3. உறுப்பு 19(1)(c)-ன் கீழ் உள்ள அடிப்படை உரிமையானது, உருவாக்கப்படும் ஒவ்வொரு கூட்டுறவு சங்கத்திற்கும் பதிவு அல்லது நிதி மானியம் வழங்குமாறு அரசை கட்டாயப்படுத்தும் உரிமையை உள்ளடக்கியுள்ளது.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+            "options": [
+                ("1 and 2 only", "1 மற்றும் 2 மட்டும்"),
+                ("1 only", "1 மட்டும்"),
+                ("2 and 3 only", "2 மற்றும் 3 மட்டும்"),
+                ("1, 2 and 3", "1, 2 மற்றும் 3")
+            ],
+            "correct_key": "A",
+            "exp_en": "Statements 1 and 2 are correct. Statement 3 is INCORRECT because the fundamental right to form associations/co-operatives does NOT include the right to obtain automatic registration without complying with statutory conditions, nor does it include a right to state subsidies, recognition, or achieve the objectives for which it was formed (as held in All India Bank Employees Association v. National Industrial Tribunal).",
+            "exp_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் கூட்டுறவு சங்கங்களை அமைக்கும் அடிப்படை உரிமை என்பது சட்ட விதிகளுக்கு இணங்காமல் தானாகவே பதிவு பெறும் உரிமையையோ அல்லது அரசிடமிருந்து மானியம் பெறும் உரிமையையோ வழங்காது (அகில இந்திய வங்கி ஊழியர் சங்கம் வழக்கு).",
+            "why_a_en": "Correct. Statements 1 and 2 are true, while statement 3 is legally incorrect.",
+            "why_a_ta": "சரி. கூற்றுகள் 1 மற்றும் 2 சரியானவை, ஆனால் கூற்று 3 சட்டரீதியாகத் தவறானது.",
+            "why_b_en": "Incorrect. Statement 2 is also correct as reasonable restrictions apply under Art 19(4).",
+            "why_b_ta": "தவறு. உறுப்பு 19(4)-ன் கீழ் நியாயமான கட்டுப்பாடுகள் உள்ளதால் கூற்று 2-ம் சரியானது.",
+            "why_c_en": "Incorrect. Statement 3 is false.",
+            "why_c_ta": "தவறு. கூற்று 3 தவறானது.",
+            "why_d_en": "Incorrect. Statement 3 is false.",
+            "why_d_ta": "தவறு. கூற்று 3 தவறானது.",
+            "tip_en": "Right to form a cooperative is a fundamental right, but right to registration, recognition or state aid is governed by ordinary statute.",
+            "tip_ta": "சங்கம் அமைப்பது அடிப்படை உரிமை, ஆனால் பதிவு மற்றும் அரசு மானியம் பெறுவது சாதாரண சட்ட விதிகளுக்கு உட்பட்டது.",
+            "fact_en": "Article 19(4) empowers the State to impose reasonable restrictions on the exercise of the right conferred by Article 19(1)(c).",
+            "fact_ta": "உறுப்பு 19(4) அரசுக்கு உறுப்பு 19(1)(c) உரிமையின் மீது நியாயமான கட்டுப்பாடுகளை விதிக்கும் அதிகாரத்தை அளிக்கிறது."
+        },
+
+        # CS_S_019: Historical Evolution - 1904 and 1912 Acts
+        {
+            "subtopic": "Historical Evolution - Pre-Independence",
+            "stem_en": "Consider the following statements regarding early cooperative legislation in British India:\n1. The Co-operative Credit Societies Act, 1904 was enacted during the viceroyalty of Lord Curzon based on the recommendations of Sir Frederick Nicholson.\n2. The 1904 Act permitted the formation of both credit and non-credit co-operative societies.\n3. The Co-operative Societies Act, 1912 remedied defects of the 1904 Act by recognizing non-credit societies and central financing agencies.\nWhich of the statements given above are correct?",
+            "stem_ta": "பிரிட்டிஷ் இந்தியாவின் ஆரம்பகால கூட்டுறவு சட்டங்கள் தொடர்பான பின்வரும் கூற்றுகளை ஆராய்க:\n1. சர் பிரடெரிக் நிக்கல்சனின் பரிந்துரைகளின் அடிப்படையில் கர்சன் பிரபுவின் ஆட்சிக் காலத்தில் கூட்டுறவு கடன் சங்கங்கள் சட்டம், 1904 இயற்றப்பட்டது.\n2. 1904-ஆம் ஆண்டு சட்டம் கடன் மற்றும் கடன் அல்லாத பிற கூட்டுறவு சங்கங்கள் இரண்டையும் தொடங்க அனுமதித்தது.\n3. கூட்டுறவு சங்கங்கள் சட்டம், 1912 கடன் அல்லாத சங்கங்கள் மற்றும் மத்திய நிதி நிறுவனங்களை அங்கீகரித்து 1904 சட்டத்தின் குறைபாடுகளை நீக்கியது.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+            "options": [
+                ("1 and 3 only", "1 மற்றும் 3 மட்டும்"),
+                ("1 and 2 only", "1 மற்றும் 2 மட்டும்"),
+                ("2 and 3 only", "2 மற்றும் 3 மட்டும்"),
+                ("1, 2 and 3", "1, 2 மற்றும் 3")
+            ],
+            "correct_key": "A",
+            "exp_en": "Statements 1 and 3 are correct. Statement 2 is INCORRECT because the 1904 Act restricted registration ONLY to credit societies (urban and rural credit). It did not allow non-credit societies or central cooperative banks. To rectify this major limitation, the 1912 Act was passed, permitting non-credit societies (marketing, consumer) and central cooperative banks/unions.",
+            "exp_ta": "கூற்றுகள் 1 மற்றும் 3 சரியானவை. கூற்று 2 தவறானது, ஏனெனில் 1904 சட்டம் 'கடன் வழங்கும் கூட்டுறவு சங்கங்களை' மட்டுமே தொடங்க அனுமதித்தது; கடன் அல்லாத பிற சங்கங்களை அனுமதிக்கவில்லை. இந்த குறைபாட்டை நீக்கவே 1912 சட்டம் கொண்டுவரப்பட்டு கடன் அல்லாத சங்கங்கள் மற்றும் மத்திய வங்கிகள் தொடங்க அனுமதிக்கப்பட்டன.",
+            "why_a_en": "Correct. Statements 1 and 3 are true; statement 2 is false as 1904 Act covered only credit societies.",
+            "why_a_ta": "சரி. கூற்றுகள் 1 மற்றும் 3 சரியானவை; 1904 சட்டம் கடன் சங்கங்களை மட்டுமே அனுமதித்ததால் கூற்று 2 தவறு.",
+            "why_b_en": "Incorrect. Statement 2 is false.",
+            "why_b_ta": "தவறு. கூற்று 2 தவறானது.",
+            "why_c_en": "Incorrect. Statement 1 is correct.",
+            "why_c_ta": "தவறு. கூற்று 1 சரியானது.",
+            "why_d_en": "Incorrect. Statement 2 is false.",
+            "why_d_ta": "தவறு. கூற்று 2 தவறானது.",
+            "tip_en": "Evolution: 1904 = Credit societies only; 1912 = Non-credit societies + Central banks/Unions enabled.",
+            "tip_ta": "பரிணாமம்: 1904 = கடன் சங்கங்கள் மட்டும்; 1912 = கடன் அல்லாத சங்கங்கள் + மத்திய வங்கிகள்/ஒன்றியங்கள்.",
+            "fact_en": "Sir Frederick Nicholson is acclaimed as the 'Father of Co-operative Movement in India' for his 1895/1897 report advising 'Find Raiffeisen'.",
+            "fact_ta": "'ரைஃபெய்சனைக் கண்டறியுங்கள்' என்று அறிக்கை அளித்த சர் பிரடெரிக் நிக்கல்சன் 'இந்திய கூட்டுறவு இயக்கத்தின் தந்தை' எனப் போற்றப்படுகிறார்."
+        },
+
+        # CS_S_020: Government of India Act 1919 and 1935
+        {
+            "subtopic": "Historical Evolution - Constitutional Devolution",
+            "stem_en": "Consider the following statements regarding the transfer of co-operatives to Provinces:\n1. Under the Government of India Act, 1919 (Montagu-Chelmsford Reforms), co-operation became a 'Transferred Subject' administered by Indian ministers in the Provinces.\n2. Bombay was the first province to pass its own Co-operative Societies Act in 1925 after the 1919 devolution.\n3. Under the Government of India Act, 1935, co-operation was placed in the Federal List (List I).\nWhich of the statements given above are correct?",
+            "stem_ta": "மாகாணங்களுக்குக் கூட்டுறவு அதிகாரம் மாற்றப்பட்டது தொடர்பான பின்வரும் கூற்றுகளை ஆராய்க:\n1. இந்திய அரசுச் சட்டம், 1919 (மாண்டேகு-செம்ஸ்போர்டு சீர்திருத்தங்கள்) மூலம் கூட்டுறவு என்பது மாகாணங்களில் இந்திய அமைச்சர்களால் நிர்வகிக்கப்படும் 'மாற்றப்பட்ட துறையாக' (Transferred Subject) மாறியது.\n2. 1919 அதிகாரப் பகிர்விற்குப் பிறகு 1925-ல் தனது சொந்த கூட்டுறவு சங்கங்கள் சட்டத்தை இயற்றிய முதல் மாகாணம் பம்பாய் ஆகும்.\n3. இந்திய அரசுச் சட்டம், 1935-ன் கீழ் கூட்டுறவு கூட்டாட்சி பட்டியலில் (பட்டியல் I) வைக்கப்பட்டது.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+            "options": [
+                ("1 and 2 only", "1 மற்றும் 2 மட்டும்"),
+                ("1 only", "1 மட்டும்"),
+                ("2 and 3 only", "2 மற்றும் 3 மட்டும்"),
+                ("1, 2 and 3", "1, 2 மற்றும் 3")
+            ],
+            "correct_key": "A",
+            "exp_en": "Statements 1 and 2 are correct. Statement 3 is INCORRECT because under the Government of India Act, 1935, co-operation was placed in the Provincial Legislative List (List II), cementing its position as a provincial/state subject, which was later continued in the 1950 Constitution.",
+            "exp_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் 1935 இந்திய அரசுச் சட்டம் கூட்டுறவை மாகாணப் பட்டியலில் (பட்டியல் II) வைத்தது, மத்திய பட்டியலில் அல்ல. இந்த நடைமுறையே 1950 அரசியலமைப்பிலும் தொடர்ந்தது.",
+            "why_a_en": "Correct. Statements 1 and 2 are true; statement 3 is false as 1935 Act kept cooperation in the Provincial List.",
+            "why_a_ta": "சரி. கூற்றுகள் 1 மற்றும் 2 சரியானவை; 1935 சட்டம் கூட்டுறவை மாகாணப் பட்டியலில் வைத்ததால் கூற்று 3 தவறு.",
+            "why_b_en": "Incorrect. Statement 2 is also correct (Bombay Act 1925).",
+            "why_b_ta": "தவறு. 1925 பம்பாய் சட்டம் என்பதால் கூற்று 2-ம் சரியானது.",
+            "why_c_en": "Incorrect. Statement 3 is false.",
+            "why_c_ta": "தவறு. கூற்று 3 தவறானது.",
+            "why_d_en": "Incorrect. Statement 3 is false.",
+            "why_d_ta": "தவறு. கூற்று 3 தவறானது.",
+            "tip_en": "Key Timeline: 1919 = Transferred subject (Dyarchy); 1925 = Bombay passes first provincial Act; 1935 = Provincial List Item.",
+            "tip_ta": "முக்கிய காலக்கோடு: 1919 = மாற்றப்பட்ட துறை (இரட்டை ஆட்சி); 1925 = முதல் மாகாண சட்டம் (பம்பாய்); 1935 = மாகாணப் பட்டியல் துறை.",
+            "fact_en": "Madras Province enacted the Madras Co-operative Societies Act in 1932.",
+            "fact_ta": "சென்னை மாகாணம் 1932-ல் மெட்ராஸ் கூட்டுறவு சங்கங்கள் சட்டத்தை இயற்றியது."
+        }
+    ]
+
+
+def get_statement_questions_batch2():
+    return [
+        # CS_S_021: Ministry of Cooperation
+        {
+            "subtopic": "Ministry of Cooperation",
+            "stem_en": "Consider the following statements regarding the Ministry of Cooperation:\n1. A separate Ministry of Cooperation was created by the Government of India in July 2021.\n2. Prior to July 2021, cooperation was a department under the Ministry of Agriculture and Farmers Welfare.\n3. The stated mandate of the Ministry is to realize the vision of 'Sahakar se Samriddhi' (Prosperity through Cooperation).\nWhich of the statements given above are correct?",
+            "stem_ta": "கூட்டுறவு அமைச்சகம் தொடர்பான பின்வரும் கூற்றுகளை ஆராய்க:\n1. ஜூலை 2021-ல் இந்திய அரசால் ஒரு தனி கூட்டுறவு அமைச்சகம் உருவாக்கப்பட்டது.\n2. ஜூலை 2021-க்கு முன்பு கூட்டுறவு என்பது வேளாண்மை மற்றும் விவசாயிகள் நல அமைச்சகத்தின் கீழ் ஒரு துறையாக இருந்தது.\n3. 'கூட்டுறவு மூலம் செழிப்பு' (சககார் சே சம்ரித்தி) என்ற தொலைநோக்குப் பார்வையை நனவாக்குவதே இந்த அமைச்சகத்தின் முக்கிய நோக்கமாகும்.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+            "options": [
+                ("1, 2 and 3", "1, 2 மற்றும் 3"),
+                ("1 and 2 only", "1 மற்றும் 2 மட்டும்"),
+                ("2 and 3 only", "2 மற்றும் 3 மட்டும்"),
+                ("1 and 3 only", "1 மற்றும் 3 மட்டும்")
+            ],
+            "correct_key": "A",
+            "exp_en": "All three statements are correct. In July 2021, the Government of India created an independent Ministry of Cooperation, carving it out of the Ministry of Agriculture and Farmers Welfare, to strengthen the cooperative movement under the national vision of 'Sahakar se Samriddhi'.",
+            "exp_ta": "மூன்று கூற்றுகளும் சரியானவை. ஜூலை 2021-ல் மத்திய அரசு வேளாண்மை அமைச்சகத்திலிருந்து பிரித்து தனி கூட்டுறவு அமைச்சகத்தை உருவாக்கியது. 'சககார் சே சம்ரித்தி' (கூட்டுறவு மூலம் செழிப்பு) என்பதே இதன் தாரக மந்திரமாகும்.",
+            "why_a_en": "Correct. All three statements accurately state the origin and mandate of the Ministry of Cooperation.",
+            "why_a_ta": "சரி. மூன்று கூற்றுகளும் கூட்டுறவு அமைச்சகத்தின் தோற்றம் மற்றும் நோக்கத்தைத் துல்லியமாகக் குறிப்பிடுகின்றன.",
+            "why_b_en": "Incorrect. Statement 3 is also correct.",
+            "why_b_ta": "தவறு. கூற்று 3-ம் சரியானது.",
+            "why_c_en": "Incorrect. Statement 1 is also correct.",
+            "why_c_ta": "தவறு. கூற்று 1-ம் சரியானது.",
+            "why_d_en": "Incorrect. Statement 2 is also correct.",
+            "why_d_ta": "தவறு. கூற்று 2-ம் சரியானது.",
+            "tip_en": "Ministry of Cooperation: Created on 6 July 2021; First Union Minister = Amit Shah; Motto = 'Sahakar se Samriddhi'.",
+            "tip_ta": "கூட்டுறவு அமைச்சகம்: உருவான நாள் 6 ஜூலை 2021; முதல் மத்திய அமைச்சர் = அமித் ஷா; குறிக்கோள் = 'சககார் சே சம்ரித்தி'.",
+            "fact_en": "The creation of the Ministry coincided with the announcement of comprehensive PACS computerization.",
+            "fact_ta": "இவ்வமைச்சகம் உருவாக்கப்பட்ட அதே காலகட்டத்தில் நாடு தழுவிய அளவில் தொடக்க வேளாண் கடன் சங்கங்கள் (PACS) கணினிமயமாக்கல் தொடங்கப்பட்டது."
+        },
+
+        # CS_S_022: Short-Term Rural Cooperative Credit Structure
+        {
+            "subtopic": "Cooperative Credit Structure",
+            "stem_en": "Consider the following statements regarding the three-tier short-term rural cooperative credit structure in India:\n1. Primary Agricultural Credit Societies (PACS) operate at the village / grass-root level.\n2. District Central Cooperative Banks (DCCBs) operate at the district level.\n3. State Cooperative Banks (StCBs) operate at the state / apex level.\nWhich of the statements given above are correct?",
+            "stem_ta": "இந்தியாவில் உள்ள மூன்றடுக்கு குறுகிய கால கிராமப்புற கூட்டுறவு கடன் கட்டமைப்பு தொடர்பான பின்வரும் கூற்றுகளை ஆராய்க:\n1. தொடக்க வேளாண்மைக் கூட்டுறவுக் கடன் சங்கங்கள் (PACS) கிராம / அடிமட்ட அளவில் செயல்படுகின்றன.\n2. மாவட்ட மத்தியக் கூட்டுறவு வங்கிகள் (DCCB) மாவட்ட அளவில் செயல்படுகின்றன.\n3. மாநிலக் கூட்டுறவு வங்கிகள் (StCB) மாநில / தலைமை அளவில் செயல்படுகின்றன.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+            "options": [
+                ("1, 2 and 3", "1, 2 மற்றும் 3"),
+                ("1 and 2 only", "1 மற்றும் 2 மட்டும்"),
+                ("2 and 3 only", "2 மற்றும் 3 மட்டும்"),
+                ("1 and 3 only", "1 மற்றும் 3 மட்டும்")
+            ],
+            "correct_key": "A",
+            "exp_en": "All three statements are correct. The short-term rural cooperative credit structure is federated into three tiers: PACS at the village level, DCCBs at the intermediate district level, and StCBs at the state apex level, refinanced by NABARD.",
+            "exp_ta": "மூன்று கூற்றுகளும் சரியானவை. குறுகிய கால கிராமப்புற கூட்டுறவு கடன் கட்டமைப்பு மூன்றடுக்காக உள்ளது: கிராம அளவில் PACS, மாவட்ட அளவில் DCCB மற்றும் மாநில அளவில் உச்ச அமைப்பாக StCB செயல்படுகின்றன. இவை நபார்டு (NABARD) வங்கியால் மறுநிதியளிக்கப்படுகின்றன.",
+            "why_a_en": "Correct. All three statements accurately define the 3-tier structure.",
+            "why_a_ta": "சரி. மூன்று கூற்றுகளும் மூன்றடுக்குக் கட்டமைப்பைத் துல்லியமாக வரையறுக்கின்றன.",
+            "why_b_en": "Incorrect. Statement 3 is also correct.",
+            "why_b_ta": "தவறு. கூற்று 3-ம் சரியானது.",
+            "why_c_en": "Incorrect. Statement 1 is also correct.",
+            "why_c_ta": "தவறு. கூற்று 1-ம் சரியானது.",
+            "why_d_en": "Incorrect. Statement 2 is also correct.",
+            "why_d_ta": "தவறு. கூற்று 2-ம் சரியானது.",
+            "tip_en": "Short-Term Structure: PACS (Village) → DCCB (District) → StCB (State). Long-Term Structure: PCARDB (Taluk/District) → SCARDB (State).",
+            "tip_ta": "குறுகிய கால அமைப்பு: PACS (கிராமம்) → DCCB (மாவட்டம்) → StCB (மாநிலம்). நீண்ட கால அமைப்பு: PCARDB → SCARDB.",
+            "fact_en": "PACS are directly affiliated to DCCBs, which in turn are federated into the State Cooperative Bank.",
+            "fact_ta": "தொடக்க வேளாண் கடன் சங்கங்கள் மாவட்ட மத்திய வங்கிகளுடனும், அவை மாநிலக் கூட்டுறவு வங்கியுடனும் இணைக்கப்பட்டுள்ளன."
+        },
+
+        # CS_S_023: Urban Co-operative Banks (UCBs) and Dual Regulation
+        {
+            "subtopic": "Urban Co-operative Banks",
+            "stem_en": "Consider the following statements regarding the regulation of Urban Co-operative Banks (UCBs):\n1. Prior to 2020, UCBs were under dual regulation of the Reserve Bank of India (RBI) and the Registrar of Co-operative Societies (RCS).\n2. Banking functions such as licensing, prudential norms and capital adequacy are regulated by the RBI under the Banking Regulation Act, 1949.\n3. Incorporation, registration, management, election and audit of State UCBs are administered by the Registrar of Co-operative Societies under State Acts.\nWhich of the statements given above are correct?",
+            "stem_ta": "நகர்ப்புறக் கூட்டுறவு வங்கிகள் (UCBs) ஒழுங்குமுறை தொடர்பான பின்வரும் கூற்றுகளை ஆராய்க:\n1. 2020-க்கு முன்பு நகர்ப்புற கூட்டுறவு வங்கிகள் இந்திய ரிசர்வ் வங்கி (RBI) மற்றும் கூட்டுறவு சங்கங்களின் பதிவாளர் (RCS) ஆகிய இரு அமைப்புகளின் இரட்டைக் கட்டுப்பாட்டில் இருந்தன.\n2. உரிமம் வழங்குதல், மூலதனப் பாதுகாப்பு மற்றும் வங்கி விதிமுறைகள் போன்ற வங்கிப் பணிகள் 1949-ஆம் ஆண்டின் வங்கி ஒழுங்குமுறைச் சட்டத்தின் கீழ் ரிசர்வ் வங்கியால் கட்டுப்படுத்தப்படுகின்றன.\n3. மாநில கூட்டுறவு வங்கிகளின் பதிவு, மேலாண்மை, தேர்தல் மற்றும் தணிக்கை ஆகியவை மாநிலச் சட்டங்களின் கீழ் கூட்டுறவு சங்கங்களின் பதிவாளரால் நிர்வகிக்கப்படுகின்றன.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+            "options": [
+                ("1, 2 and 3", "1, 2 மற்றும் 3"),
+                ("1 and 2 only", "1 மற்றும் 2 மட்டும்"),
+                ("2 and 3 only", "2 மற்றும் 3 மட்டும்"),
+                ("1 and 3 only", "1 மற்றும் 3 மட்டும்")
+            ],
+            "correct_key": "A",
+            "exp_en": "All three statements are correct. UCBs have historically been subject to duality of control: banking functions governed by RBI under the Banking Regulation Act, 1949 (as applicable to cooperative societies since 1966), and administrative/management matters governed by the State RCS under State Cooperative Acts.",
+            "exp_ta": "மூன்று கூற்றுகளும் சரியானவை. நகர்ப்புற கூட்டுறவு வங்கிகள் வரலாற்று ரீதியாக இரட்டைக் கட்டுப்பாட்டைக் கொண்டிருந்தன: வங்கி ஒழுங்குமுறைச் சட்டம் 1949-ன் கீழ் வங்கிப் பணிகளை ரிசர்வ் வங்கியும், நிர்வாகப் பணிகளை மாநில பதிவாளரும் கவனித்து வந்தனர்.",
+            "why_a_en": "Correct. All statements accurately reflect the dual regulatory architecture.",
+            "why_a_ta": "சரி. அனைத்து கூற்றுகளும் இரட்டை ஒழுங்குமுறைக் கட்டமைப்பைச் சரியாக விவரிக்கின்றன.",
+            "why_b_en": "Incorrect. Statement 3 is also correct.",
+            "why_b_ta": "தவறு. கூற்று 3-ம் சரியானது.",
+            "why_c_en": "Incorrect. Statement 1 is also correct.",
+            "why_c_ta": "தவறு. கூற்று 1-ம் சரியானது.",
+            "why_d_en": "Incorrect. Statement 2 is also correct.",
+            "why_d_ta": "தவறு. கூற்று 2-ம் சரியானது.",
+            "tip_en": "Dual control: Banking operations = RBI; Registration and Elections = State Registrar (RCS).",
+            "tip_ta": "இரட்டைக் கட்டுப்பாடு: வங்கிச் செயல்பாடுகள் = ரிசர்வ் வங்கி; பதிவு மற்றும் தேர்தல் = மாநில பதிவாளர்.",
+            "fact_en": "The Banking Regulation Act was extended to cooperative banks with effect from 1 March 1966 by adding Section 56.",
+            "fact_ta": "பிரிவு 56-ஐச் சேர்த்ததன் மூலம் 1966 மார்ச் 1 முதல் வங்கி ஒழுங்குமுறைச் சட்டம் கூட்டுறவு வங்கிகளுக்கு நீட்டிக்கப்பட்டது."
+        },
+
+        # CS_S_024: Banking Regulation (Amendment) Act 2020
+        {
+            "subtopic": "Banking Regulation Amendment 2020",
+            "stem_en": "Consider the following statements regarding the Banking Regulation (Amendment) Act, 2020:\n1. It brought all Urban Co-operative Banks and Multi-State Co-operative Banks under direct regulatory supervision of the RBI.\n2. It empowered the RBI to supersede the board of directors of a multi-state cooperative bank and sanction schemes of reconstruction or amalgamation.\n3. It applies to Primary Agricultural Credit Societies (PACS) and long-term cooperative societies for agricultural development.\nWhich of the statements given above are correct?",
+            "stem_ta": "2020-ஆம் ஆண்டின் வங்கி ஒழுங்குமுறை (திருத்தச்) சட்டம் தொடர்பான பின்வரும் கூற்றுகளை ஆராய்க:\n1. இது அனைத்து நகர்ப்புற கூட்டுறவு வங்கிகள் மற்றும் பல மாநில கூட்டுறவு வங்கிகளை ரிசர்வ் வங்கியின் நேரடி ஒழுங்குமுறைக் கண்காணிப்பின் கீழ் கொண்டுவந்தது.\n2. கூட்டுறவு வங்கிகளின் வாரியத்தைக் கலைக்கவும், மறுசீரமைப்பு அல்லது இணைப்பிற்கான திட்டங்களை அங்கீகரிக்கவும் இது ரிசர்வ் வங்கிக்கு அதிகாரம் அளித்தது.\n3. இச்சட்டம் தொடக்க வேளாண் கடன் சங்கங்கள் (PACS) மற்றும் விவசாய வளர்ச்சிக்கான நீண்ட கால கடன் சங்கங்களுக்கும் முழுமையாகப் பொருந்தும்.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+            "options": [
+                ("1 and 2 only", "1 மற்றும் 2 மட்டும்"),
+                ("1 only", "1 மட்டும்"),
+                ("2 and 3 only", "2 மற்றும் 3 மட்டும்"),
+                ("1, 2 and 3", "1, 2 மற்றும் 3")
+            ],
+            "correct_key": "A",
+            "exp_en": "Statements 1 and 2 are correct. Statement 3 is INCORRECT because Section 3 of the Banking Regulation Act explicitly EXEMPTS Primary Agricultural Credit Societies (PACS) and cooperative land development banks from the provisions of the Banking Regulation Act.",
+            "exp_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் வங்கி ஒழுங்குமுறைச் சட்டத்தின் பிரிவு 3, தொடக்க வேளாண் கடன் சங்கங்கள் (PACS) மற்றும் நிலவள வங்கிகளுக்கு இச்சட்டம் பொருந்தாது என்று வெளிப்படையாக விலக்கு அளித்துள்ளது.",
+            "why_a_en": "Correct. Statements 1 and 2 are true; statement 3 is false because PACS are specifically exempt from BR Act.",
+            "why_a_ta": "சரி. கூற்றுகள் 1 மற்றும் 2 சரியானவை; PACS-க்கு வங்கி ஒழுங்குமுறைச் சட்டம் பொருந்தாது என்பதால் கூற்று 3 தவறு.",
+            "why_b_en": "Incorrect. Statement 2 is also correct.",
+            "why_b_ta": "தவறு. கூற்று 2-ம் சரியானது.",
+            "why_c_en": "Incorrect. Statement 3 is false.",
+            "why_c_ta": "தவறு. கூற்று 3 தவறானது.",
+            "why_d_en": "Incorrect. Statement 3 is false.",
+            "why_d_ta": "தவறு. கூற்று 3 தவறானது.",
+            "tip_en": "Important Exemption: BR Act 1949 does NOT apply to PACS or cooperative land development banks.",
+            "tip_ta": "முக்கிய விலக்கு: வங்கி ஒழுங்குமுறைச் சட்டம் 1949 தொடக்க வேளாண் கடன் சங்கங்களுக்கு (PACS) பொருந்தாது.",
+            "fact_en": "The 2020 Amendment was triggered by the PMC Bank crisis to protect depositors' money.",
+            "fact_ta": "வைப்புத்தொகையாளர்களின் நிதியைப் பாதுகாப்பதற்காக PMC வங்கி வீழ்ச்சிக்குப் பிறகு 2020 திருத்தம் கொண்டுவரப்பட்டது."
+        },
+
+        # CS_S_025: Committees on Cooperatives (Gorwala & Mirdha)
+        {
+            "subtopic": "Committees on Cooperatives",
+            "stem_en": "Consider the following statements regarding committees on cooperative societies:\n1. The All India Rural Credit Survey Committee (Gorwala Committee, 1954) recommended the integrated scheme of rural credit with State partnership in cooperatives.\n2. The Ram Niwas Mirdha Committee (1965) recommended measures to eliminate bogus societies and vested interests from the cooperative movement.\n3. The Gorwala Committee recommended complete privatization and withdrawal of the State from the cooperative sector.\nWhich of the statements given above are correct?",
+            "stem_ta": "கூட்டுறவு சங்கங்கள் தொடர்பான குழுக்கள் பற்றிய பின்வரும் கூற்றுகளை ஆராய்க:\n1. அகில இந்திய கிராமப்புற கடன் ஆய்வுக் குழு (கோவாலா குழு, 1954) கூட்டுறவுகளில் அரசுப் பங்களிப்புடன் கூடிய ஒருங்கிணைந்த கிராமப்புற கடன் திட்டத்தைப் பரிந்துரைத்தது.\n2. ராம் நிவாஸ் மிர்தா குழு (1965) கூட்டுறவு இயக்கத்திலிருந்து போலி சங்கங்கள் மற்றும் சுயநல சக்திகளை அகற்றுவதற்கான நடவடிக்கைகளைப் பரிந்துரைத்தது.\n3. கோர்வாலா குழு கூட்டுறவுத் துறையை முழுமையாகத் தனியார்மயமாக்கி, அரசு அதிலிருந்து முற்றிலும் வெளியேற வேண்டும் என்று பரிந்துரைத்தது.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+            "options": [
+                ("1 and 2 only", "1 மற்றும் 2 மட்டும்"),
+                ("1 only", "1 மட்டும்"),
+                ("2 and 3 only", "2 மற்றும் 3 மட்டும்"),
+                ("1, 2 and 3", "1, 2 மற்றும் 3")
+            ],
+            "correct_key": "A",
+            "exp_en": "Statements 1 and 2 are correct. Statement 3 is INCORRECT because the Gorwala Committee famously recommended 'State partnership at all levels' (share capital contribution, financial assistance, and administrative support) to make cooperatives strong against money-lenders. Its famous motto was 'Cooperation has failed, but Cooperation must succeed'.",
+            "exp_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் கோர்வாலா குழு 'அனைத்து மட்டங்களிலும் அரசின் பங்களிப்பை' (பங்கு மூலதனம், நிதி உதவி) வலுவாகப் பரிந்துரைத்தது. 'கூட்டுறவு தோல்வியடைந்தது, ஆனால் கூட்டுறவு வெற்றி பெற்றே தீர வேண்டும்' என்ற வரலாற்றுப் புகழ்பெற்ற வாசகம் இக்குழுவினுடையதே.",
+            "why_a_en": "Correct. Statements 1 and 2 are true; statement 3 contradicts Gorwala committee's core recommendation of State partnership.",
+            "why_a_ta": "சரி. கூற்றுகள் 1 மற்றும் 2 சரியானவை; அரசுப் பங்களிப்பை வலியுறுத்தியதால் கூற்று 3 தவறானது.",
+            "why_b_en": "Incorrect. Statement 2 is also correct.",
+            "why_b_ta": "தவறு. கூற்று 2-ம் சரியானது.",
+            "why_c_en": "Incorrect. Statement 3 is false.",
+            "why_c_ta": "தவறு. கூற்று 3 தவறானது.",
+            "why_d_en": "Incorrect. Statement 3 is false.",
+            "why_d_ta": "தவறு. கூற்று 3 தவறானது.",
+            "tip_en": "Famous Quote: 'Cooperation has failed, but Cooperation must succeed' — All India Rural Credit Survey Committee (A.D. Gorwala, 1954).",
+            "tip_ta": "புகழ்பெற்ற வாசகம்: 'கூட்டுறவு தோல்வியடைந்தது, ஆனால் கூட்டுறவு வெற்றி பெற்றே தீர வேண்டும்' — கோர்வாலா குழு (1954).",
+            "fact_en": "The creation of the State Bank of India in 1955 was a direct outcome of the Gorwala Committee report.",
+            "fact_ta": "1955-ல் பாரத ஸ்டேட் வங்கி (SBI) உருவாக்கப்பட்டது கோர்வாலா குழுவின் பரிந்துரையின் நேரடி விளைவாகும்."
+        },
+
+        # CS_S_026: Brahm Perkash and Vaidyanathan Committees
+        {
+            "subtopic": "Committees on Cooperatives",
+            "stem_en": "Consider the following statements regarding modern cooperative reform committees:\n1. The Choudhary Brahm Perkash Committee (1991) drafted a Model Co-operatives Act to free cooperatives from government control.\n2. The Prof. A. Vaidyanathan Committee (2004) recommended a financial revival package and institutional reforms for the Short-Term Rural Cooperative Credit Structure.\n3. The High-Powered Committee on Cooperatives (2009) headed by Shivaji Rao Patil recommended constitutional amendments to protect cooperative autonomy.\nWhich of the statements given above are correct?",
+            "stem_ta": "நவீன கூட்டுறவு சீர்திருத்தக் குழுக்கள் பற்றிய பின்வரும் கூற்றுகளை ஆராய்க:\n1. சவுத்ரி பிரம்ம பிரகாஷ் குழு (1991) கூட்டுறவுகளை அரசாங்கக் கட்டுப்பாட்டிலிருந்து விடுவிக்க ஒரு மாதிரி கூட்டுறவு சங்கங்கள் சட்டத்தை வரைந்தது.\n2. பேராசிரியர் ஏ. வைத்தியநாதன் குழு (2004) குறுகிய கால கிராமப்புற கூட்டுறவு கடன் கட்டமைப்பிற்கான நிதி மறுமலர்ச்சி தொகுப்பு மற்றும் நிறுவன சீர்திருத்தங்களைப் பரிந்துரைத்தது.\n3. சிவாஜிராவ் பாட்டீல் தலைமையிலான உயர்நிலைக் குழு (2009) கூட்டுறவு தன்னாட்சியைப் பாதுகாக்க அரசியலமைப்புத் திருத்தங்களைப் பரிந்துரைத்தது.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+            "options": [
+                ("1, 2 and 3", "1, 2 மற்றும் 3"),
+                ("1 and 2 only", "1 மற்றும் 2 மட்டும்"),
+                ("2 and 3 only", "2 மற்றும் 3 மட்டும்"),
+                ("1 and 3 only", "1 மற்றும் 3 மட்டும்")
+            ],
+            "correct_key": "A",
+            "exp_en": "All three statements are correct. Brahm Perkash Committee (1991) drafted the Model Act; Vaidyanathan Committee (2004) designed the revival package for STCCS with conditional recapitalization; and the Shivaji Rao Patil Committee (2009) laid the groundwork for the 97th Constitutional Amendment Act, 2011.",
+            "exp_ta": "மூன்று கூற்றுகளும் சரியானவை. பிரம்ம பிரகாஷ் குழு (1991) மாதிரி சட்டத்தை வரைந்தது; வைத்தியநாதன் குழு (2004) குறுகிய கால கடன் அமைப்பிற்கு மறுமலர்ச்சி நிதி தொகுப்பை வழங்கியது; சிவாஜிராவ் பாட்டீல் குழு (2009) 97-வது அரசியலமைப்புத் திருத்தத்திற்கு அடித்தளமிட்டது.",
+            "why_a_en": "Correct. All three statements accurately state committee contributions.",
+            "why_a_ta": "சரி. மூன்று கூற்றுகளும் இக்குழுக்களின் பங்களிப்புகளைத் துல்லியமாக விவரிக்கின்றன.",
+            "why_b_en": "Incorrect. Statement 3 is also correct.",
+            "why_b_ta": "தவறு. கூற்று 3-ம் சரியானது.",
+            "why_c_en": "Incorrect. Statement 1 is also correct.",
+            "why_c_ta": "தவறு. கூற்று 1-ம் சரியானது.",
+            "why_d_en": "Incorrect. Statement 2 is also correct.",
+            "why_d_ta": "தவறு. கூற்று 2-ம் சரியானது.",
+            "tip_en": "Pairings: Brahm Perkash = Model Act (1991); Vaidyanathan = STCCS Revival (2004); Shivaji Rao Patil = Constitutional Status (2009).",
+            "tip_ta": "இணைப்புகள்: பிரம்ம பிரகாஷ் = மாதிரி சட்டம் (1991); வைத்தியநாதன் = மறுமலர்ச்சி நிதி (2004); சிவாஜிராவ் பாட்டீல் = அரசியலமைப்பு அந்தஸ்து (2009).",
+            "fact_en": "The recommendations of the Shivaji Rao Patil Committee culminated in the introduction of the 111th Constitution Amendment Bill, enacted as the 97th CAA 2011.",
+            "fact_ta": "சிவாஜிராவ் பாட்டீல் குழுவின் பரிந்துரைகளே 111-வது அரசியலமைப்பு திருத்த மசோதாவாக அறிமுகப்படுத்தப்பட்டு 97-வது திருத்தச் சட்டமாக நிறைவேறியது."
+        },
+
+        # CS_S_027: Principles of Cooperation (ICA Principles)
+        {
+            "subtopic": "Cooperative Principles",
+            "stem_en": "Consider the following statements regarding the International Co-operative Alliance (ICA) Statement on the Co-operative Identity (1995):\n1. 'Voluntary and Open Membership' is the first principle of cooperation.\n2. 'Democratic Member Control' operates on the principle of 'One Member, One Vote' in primary cooperative societies.\n3. 'Concern for Community' and 'Cooperation among Cooperatives' are recognized ICA principles.\nWhich of the statements given above are correct?",
+            "stem_ta": "சர்வதேச கூட்டுறவு கூட்டணி (ICA) வெளியிட்ட கூட்டுறவு அடையாள அறிக்கை (1995) தொடர்பான பின்வரும் கூற்றுகளை ஆராய்க:\n1. 'தன்னார்வ மற்றும் வெளிப்படையான உறுப்பினர் சேர்க்கை' என்பது கூட்டுறவின் முதல் கோட்பாடாகும்.\n2. 'உறுப்பினர்களின் ஜனநாயகக் கட்டுப்பாடு' என்பது தொடக்கக் கூட்டுறவு சங்கங்களில் 'ஒரு உறுப்பினர், ஒரு வாக்கு' என்ற அடிப்படையில் செயல்படுகிறது.\n3. 'சமுதாயத்திற்கான அக்கறை' மற்றும் 'கூட்டுறவுகளுக்கு இடையேயான கூட்டுறவு' ஆகியவை அங்கீகரிக்கப்பட்ட சர்வதேசக் கூட்டுறவுக் கோட்பாடுகளாகும்.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+            "options": [
+                ("1, 2 and 3", "1, 2 மற்றும் 3"),
+                ("1 and 2 only", "1 மற்றும் 2 மட்டும்"),
+                ("2 and 3 only", "2 மற்றும் 3 மட்டும்"),
+                ("1 and 3 only", "1 மற்றும் 3 மட்டும்")
+            ],
+            "correct_key": "A",
+            "exp_en": "All three statements are correct. The 7 ICA Principles (Manchester, 1995) are: 1. Voluntary and Open Membership; 2. Democratic Member Control (One member, one vote); 3. Member Economic Participation; 4. Autonomy and Independence; 5. Education, Training and Information; 6. Cooperation among Cooperatives; 7. Concern for Community.",
+            "exp_ta": "மூன்று கூற்றுகளும் சரியானவை. சர்வதேச கூட்டுறவு கூட்டணி (ICA) மான்செஸ்டரில் 1995-ல் ஏற்றுக்கொண்ட 7 கோட்பாடுகள்: 1. தன்னார்வ சேர்க்கை; 2. ஜனநாயகக் கட்டுப்பாடு (ஒரு உறுப்பினர், ஒரு வாக்கு); 3. பொருளாதாரப் பங்களிப்பு; 4. தன்னாட்சி; 5. கல்வி மற்றும் பயிற்சி; 6. கூட்டுறவுகளுக்கு இடையே கூட்டுறவு; 7. சமுதாய அக்கறை.",
+            "why_a_en": "Correct. All statements accurately reflect the 1995 ICA cooperative principles.",
+            "why_a_ta": "சரி. அனைத்து கூற்றுகளும் 1995 ICA கூட்டுறவுக் கோட்பாடுகளைச் சரியாக விவரிக்கின்றன.",
+            "why_b_en": "Incorrect. Statement 3 is also correct.",
+            "why_b_ta": "தவறு. கூற்று 3-ம் சரியானது.",
+            "why_c_en": "Incorrect. Statement 1 is also correct.",
+            "why_c_ta": "தவறு. கூற்று 1-ம் சரியானது.",
+            "why_d_en": "Incorrect. Statement 2 is also correct.",
+            "why_d_ta": "தவறு. கூற்று 2-ம் சரியானது.",
+            "tip_en": "Contrast: Joint Stock Company = One Share, One Vote (Capital-based). Co-operative Society = One Member, One Vote (Democracy-based).",
+            "tip_ta": "வேறுபாடு: பங்கு நிறுவனம் = ஒரு பங்கு, ஒரு வாக்கு (மூலதனம்). கூட்டுறவு சங்கம் = ஒரு உறுப்பினர், ஒரு வாக்கு (ஜனநாயகம்).",
+            "fact_en": "The original Rochdale Pioneers formulated the first cooperative principles in 1844 in England.",
+            "fact_ta": "1844-ல் இங்கிலாந்தின் ரோச்டேல் முன்னோடிகள் முதல் கூட்டுறவுக் கோட்பாடுகளை உருவாக்கினர்."
+        },
+
+        # CS_S_028: Multi-State Co-operative Societies (Amendment) Act 2023
+        {
+            "subtopic": "MSCS Amendment Act 2023",
+            "stem_en": "Consider the following statements regarding the Multi-State Co-operative Societies (Amendment) Act, 2023:\n1. It establishes the Co-operative Election Authority to conduct and supervise elections to multi-state co-operative societies.\n2. It provides for the establishment of a Co-operative Ombudsman by the Central Government for redressing member grievances.\n3. It establishes the Co-operative Rehabilitation, Reconstruction and Development Fund financed by contributions from profitable multi-state co-operatives.\nWhich of the statements given above are correct?",
+            "stem_ta": "பல மாநில கூட்டுறவு சங்கங்கள் (திருத்தச்) சட்டம், 2023 தொடர்பான பின்வரும் கூற்றுகளை ஆராய்க:\n1. பல மாநில கூட்டுறவு சங்கங்களின் தேர்தல்களை நடத்தவும் மேற்பார்வையிடவும் கூட்டுறவு தேர்தல் ஆணையத்தை இது நிறுவுகிறது.\n2. உறுப்பினர்களின் குறைகளைத் தீர்ப்பதற்காக மத்திய அரசால் கூட்டுறவு குறைதீர்ப்பாளர் (Ombudsman) நியமிக்கப்பட இது வழிவகை செய்கிறது.\n3. லாபகரமாக இயங்கும் பல மாநில கூட்டுறவு சங்கங்களின் பங்களிப்புடன் கூட்டுறவு மறுவாழ்வு, மறுசீரமைப்பு மற்றும் மேம்பாட்டு நிதியை இது உருவாக்குகிறது.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+            "options": [
+                ("1, 2 and 3", "1, 2 மற்றும் 3"),
+                ("1 and 2 only", "1 மற்றும் 2 மட்டும்"),
+                ("2 and 3 only", "2 மற்றும் 3 மட்டும்"),
+                ("1 and 3 only", "1 மற்றும் 3 மட்டும்")
+            ],
+            "correct_key": "A",
+            "exp_en": "All three statements are correct. The 2023 Amendment to the MSCS Act introduced major governance reforms including: (1) An independent Co-operative Election Authority, (2) Co-operative Ombudsman for grievance redressal, (3) Co-operative Rehabilitation, Reconstruction and Development Fund, and (4) Mandated board reservations for women and SC/ST.",
+            "exp_ta": "மூன்று கூற்றுகளும் சரியானவை. 2023 பல மாநில கூட்டுறவு திருத்தச் சட்டம் (1) சுதந்திரமான கூட்டுறவு தேர்தல் ஆணையம், (2) குறைதீர்ப்பாளர் அமைப்பு, (3) கூட்டுறவு மறுவாழ்வு நிதி மற்றும் (4) பெண்கள் மற்றும் SC/ST இடஒதுக்கீடு ஆகிய முக்கிய சீர்திருத்தங்களை அறிமுகப்படுத்தியது.",
+            "why_a_en": "Correct. All statements accurately reflect key provisions of the 2023 Amendment Act.",
+            "why_a_ta": "சரி. அனைத்து கூற்றுகளும் 2023 திருத்தச் சட்டத்தின் முக்கிய விதிகளைத் துல்லியமாக விவரிக்கின்றன.",
+            "why_b_en": "Incorrect. Statement 3 is also correct.",
+            "why_b_ta": "தவறு. கூற்று 3-ம் சரியானது.",
+            "why_c_en": "Incorrect. Statement 1 is also correct.",
+            "why_c_ta": "தவறு. கூற்று 1-ம் சரியானது.",
+            "why_d_en": "Incorrect. Statement 2 is also correct.",
+            "why_d_ta": "தவறு. கூற்று 2-ம் சரியானது.",
+            "tip_en": "2023 MSCS Act Key Features: Cooperative Election Authority + Cooperative Ombudsman + Rehabilitation Fund + SC/ST & Women Reservation.",
+            "tip_ta": "2023 பல மாநில கூட்டுறவு சட்டம்: தேர்தல் ஆணையம் + குறைதீர்ப்பாளர் + மறுவாழ்வு நிதி + SC/ST & பெண்கள் இடஒதுக்கீடு.",
+            "fact_en": "Profitable multi-state cooperatives must contribute 1% of their net profits to the Cooperative Rehabilitation Fund.",
+            "fact_ta": "லாபம் ஈட்டும் பல மாநில கூட்டுறவு சங்கங்கள் தங்களது நிகர லாபத்தில் 1%-ஐ மறுவாழ்வு நிதிக்கு வழங்க வேண்டும்."
+        },
+
+        # CS_S_029: Tamil Nadu Co-operative Societies Act 1983
+        {
+            "subtopic": "Tamil Nadu Cooperative Governance",
+            "stem_en": "Consider the following statements regarding cooperative governance in Tamil Nadu:\n1. Co-operative societies in Tamil Nadu are primarily governed by the Tamil Nadu Co-operative Societies Act, 1983.\n2. The Act came into force throughout Tamil Nadu on 13th April 1988.\n3. The Tamil Nadu State Co-operative Societies Election Commission is an independent body constituted under Section 33-A of the 1983 Act.\nWhich of the statements given above are correct?",
+            "stem_ta": "தமிழ்நாட்டில் கூட்டுறவு நிர்வாகம் தொடர்பான பின்வரும் கூற்றுகளை ஆராய்க:\n1. தமிழ்நாட்டில் உள்ள கூட்டுறவு சங்கங்கள் முக்கியமாக தமிழ்நாடு கூட்டுறவு சங்கங்கள் சட்டம், 1983-ன் கீழ் நிர்வகிக்கப்படுகின்றன.\n2. இச்சட்டம் தமிழ்நாடு முழுவதும் 1988 ஏப்ரல் 13 அன்று நடைமுறைக்கு வந்தது.\n3. தமிழ்நாடு மாநிலக் கூட்டுறவு சங்கங்களின் தேர்தல் ஆணையம் என்பது 1983-ஆம் ஆண்டு சட்டத்தின் பிரிவு 33-A-ன் கீழ் அமைக்கப்பட்ட ஒரு சுதந்திரமான அமைப்பாகும்.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+            "options": [
+                ("1, 2 and 3", "1, 2 மற்றும் 3"),
+                ("1 and 2 only", "1 மற்றும் 2 மட்டும்"),
+                ("2 and 3 only", "2 மற்றும் 3 மட்டும்"),
+                ("1 and 3 only", "1 மற்றும் 3 மட்டும்")
+            ],
+            "correct_key": "A",
+            "exp_en": "All three statements are correct. The Tamil Nadu Co-operative Societies Act, 1983 received the President's assent in 1987 and came into force on 13 April 1988. Section 33-A was inserted following the 97th Constitutional Amendment to create the Tamil Nadu State Co-operative Societies Election Commission (TNSCSEC).",
+            "exp_ta": "மூன்று கூற்றுகளும் சரியானவை. தமிழ்நாடு கூட்டுறவு சங்கங்கள் சட்டம் 1983-ல் இயற்றப்பட்டு, குடியரசுத் தலைவர் ஒப்புதலுக்குப் பின் 1988 ஏப்ரல் 13 அன்று நடைமுறைக்கு வந்தது. 97-வது திருத்தத்திற்குப் பிறகு சேர்க்கப்பட்ட பிரிவு 33-A-ன் கீழ் மாநில கூட்டுறவு தேர்தல் ஆணையம் அமைக்கப்பட்டது.",
+            "why_a_en": "Correct. All three statements accurately state TN cooperative statutory provisions.",
+            "why_a_ta": "சரி. மூன்று கூற்றுகளும் தமிழ்நாடு கூட்டுறவு சட்ட விதிகளைத் துல்லியமாகக் குறிப்பிடுகின்றன.",
+            "why_b_en": "Incorrect. Statement 3 is also correct.",
+            "why_b_ta": "தவறு. கூற்று 3-ம் சரியானது.",
+            "why_c_en": "Incorrect. Statement 1 is also correct.",
+            "why_c_ta": "தவறு. கூற்று 1-ம் சரியானது.",
+            "why_d_en": "Incorrect. Statement 2 is also correct.",
+            "why_d_ta": "தவறு. கூற்று 2-ம் சரியானது.",
+            "tip_en": "Key Dates for TN: Act passed in 1983; Came into force on 13 April 1988; Election Commission constituted under Section 33-A.",
+            "tip_ta": "தமிழ்நாட்டின் முக்கிய தேதிகள்: சட்டம் இயற்றப்பட்ட ஆண்டு 1983; அமலுக்கு வந்த நாள் 13 ஏப்ரல் 1988; பிரிவு 33-A தேர்தல் ஆணையம்.",
+            "fact_en": "The Commissioner of TNSCSEC is an officer not below the rank of Principal Secretary to Government.",
+            "fact_ta": "தமிழ்நாடு கூட்டுறவு தேர்தல் ஆணையத்தின் ஆணையராக முதன்மைச் செயலாளர் அந்தஸ்துக்குக் குறையாத அதிகாரி நியமிக்கப்படுகிறார்."
+        },
+
+        # CS_S_030: Primary Agricultural Credit Societies (PACS) Computerization
+        {
+            "subtopic": "PACS Reforms and Computerization",
+            "stem_en": "Consider the following statements regarding the national project for PACS computerization:\n1. It aims to computerize approximately 63,000 functional Primary Agricultural Credit Societies across India.\n2. NABARD is the implementing agency for the project at the national level.\n3. Model Bye-laws for PACS have been adopted enabling them to undertake over 25 diverse business activities including Common Service Centres (CSCs).\nWhich of the statements given above are correct?",
+            "stem_ta": "தொடக்க வேளாண்மைக் கூட்டுறவுக் கடன் சங்கங்கள் (PACS) கணினிமயமாக்கல் தேசியத் திட்டம் தொடர்பான பின்வரும் கூற்றுகளை ஆராய்க:\n1. இந்தியா முழுவதும் சுமார் 63,000 செயல்படும் தொடக்க வேளாண் கடன் சங்கங்களைக் கணினிமயமாக்குவதை இது நோக்கமாகக் கொண்டுள்ளது.\n2. தேசிய அளவில் இத்திட்டத்தை செயல்படுத்தும் முகமையாக நபார்டு (NABARD) வங்கி செயல்படுகிறது.\n3. பொது சேவை மையங்கள் (CSC) உட்பட 25-க்கும் மேற்பட்ட வணிக நடவடிக்கைகளை மேற்கொள்ள ஏதுவாக மாதிரி துணை விதிகள் ஏற்றுக்கொள்ளப்பட்டுள்ளன.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+            "options": [
+                ("1, 2 and 3", "1, 2 மற்றும் 3"),
+                ("1 and 2 only", "1 மற்றும் 2 மட்டும்"),
+                ("2 and 3 only", "2 மற்றும் 3 மட்டும்"),
+                ("1 and 3 only", "1 மற்றும் 3 மட்டும்")
+            ],
+            "correct_key": "A",
+            "exp_en": "All three statements are correct. The Centrally Sponsored Project for PACS computerization covers ~63,000 functional PACS with an ERP software implemented through NABARD. Model Bye-laws allow PACS to function as multi-purpose entities delivering CSC services, fertilizer distribution, grain storage, etc.",
+            "exp_ta": "மூன்று கூற்றுகளும் சரியானவை. மத்திய நிதியுதவித் திட்டம் மூலம் சுமார் 63,000 செயல்படும் PACS சங்கங்கள் நபார்டு மூலம் கணினிமயமாக்கப்படுகின்றன. மாதிரி துணை விதிகள் மூலம் PACS அமைப்புகள் பொது சேவை மையங்கள் மற்றும் பலநோக்கு வணிக நிறுவனங்களாக மாற்றப்படுகின்றன.",
+            "why_a_en": "Correct. All statements accurately reflect the ongoing PACS modernization initiative.",
+            "why_a_ta": "சரி. அனைத்து கூற்றுகளும் தொடக்க வேளாண் கடன் சங்க நவீனமயமாக்கல் திட்டத்தை சரியாக விவரிக்கின்றன.",
+            "why_b_en": "Incorrect. Statement 3 is also correct.",
+            "why_b_ta": "தவறு. கூற்று 3-ம் சரியானது.",
+            "why_c_en": "Incorrect. Statement 1 is also correct.",
+            "why_c_ta": "தவறு. கூற்று 1-ம் சரியானது.",
+            "why_d_en": "Incorrect. Statement 2 is also correct.",
+            "why_d_ta": "தவறு. கூற்று 2-ம் சரியானது.",
+            "tip_en": "PACS transformation: Single-purpose credit agency → Multi-purpose Rural Service Entity (Common Service Centres, fertilizer, warehousing).",
+            "tip_ta": "PACS மாற்றம்: கடன் வழங்கும் அமைப்பு மட்டும் அல்லாமல் பல்நோக்கு கிராம சேவை மையமாக மாற்றம்.",
+            "fact_en": "Under the new Model Bye-laws, PACS can also establish petrol pumps, LPG distribution agencies, and fair price shops.",
+            "fact_ta": "புதிய மாதிரி துணை விதிகளின்படி பெட்ரோல் பங்க், எரிவாயு விநியோகம் மற்றும் நியாயவிலைக் கடைகளையும் PACS நடத்த முடியும்."
+        }
+    ]
+
+
+def get_statement_questions_batch3():
+    return [
+        # CS_S_031: National Cooperative Development Corporation (NCDC)
+        {
+            "subtopic": "National Cooperative Bodies",
+            "stem_en": "Consider the following statements regarding the National Cooperative Development Corporation (NCDC):\n1. NCDC was established as a statutory corporation under an Act of Parliament in 1963.\n2. It functions under the administrative control of the Ministry of Cooperation.\n3. NCDC's mandate is planning and promoting programmes for production, processing, marketing, storage and export of agricultural produce and certain other notified commodities through cooperatives.\nWhich of the statements given above are correct?",
+            "stem_ta": "தேசிய கூட்டுறவு மேம்பாட்டுக் கழகம் (NCDC) தொடர்பான பின்வரும் கூற்றுகளை ஆராய்க:\n1. NCDC 1963-ல் நாடாளுமன்றச் சட்டத்தின் கீழ் ஒரு சட்டப்பூர்வக் கழகமாக நிறுவப்பட்டது.\n2. இது கூட்டுறவு அமைச்சகத்தின் நிர்வாகக் கட்டுப்பாட்டின் கீழ் செயல்படுகிறது.\n3. கூட்டுறவுகள் மூலம் வேளாண் விளைபொருட்கள் மற்றும் அறிவிக்கப்பட்ட பிற பொருட்களின் உற்பத்தி, பதப்படுத்துதல், சந்தைப்படுத்துதல், சேமிப்பு மற்றும் ஏற்றுமதிக்கான திட்டங்களைத் திட்டமிட்டு ஊக்குவிப்பதே NCDC-ன் பணியாகும்.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+            "options": [
+                ("1, 2 and 3", "1, 2 மற்றும் 3"),
+                ("1 and 2 only", "1 மற்றும் 2 மட்டும்"),
+                ("2 and 3 only", "2 மற்றும் 3 மட்டும்"),
+                ("1 and 3 only", "1 மற்றும் 3 மட்டும்")
+            ],
+            "correct_key": "A",
+            "exp_en": "All three statements are correct. The National Cooperative Development Corporation was set up in March 1963 under the NCDC Act, 1962. Formerly under the Ministry of Agriculture, it now functions under the Ministry of Cooperation as the apex promotional financial institution for cooperative infrastructure.",
+            "exp_ta": "மூன்று கூற்றுகளும் சரியானவை. 1962-ஆம் ஆண்டு NCDC சட்டத்தின் கீழ் 1963 மார்ச்சில் தேசிய கூட்டுறவு மேம்பாட்டுக் கழகம் ஒரு சட்டப்பூர்வ அமைப்பாக நிறுவப்பட்டது. தற்போது இது கூட்டுறவு அமைச்சகத்தின் கீழ் கிராமப்புற கூட்டுறவு கட்டமைப்புக்கு நிதி வழங்கும் முதன்மை அமைப்பாகச் செயல்படுகிறது.",
+            "why_a_en": "Correct. All statements accurately describe the constitution and mandate of NCDC.",
+            "why_a_ta": "சரி. அனைத்து கூற்றுகளும் NCDC-ன் அமைப்பு மற்றும் பணிகளைத் துல்லியமாக விவரிக்கின்றன.",
+            "why_b_en": "Incorrect. Statement 3 is also correct.",
+            "why_b_ta": "தவறு. கூற்று 3-ம் சரியானது.",
+            "why_c_en": "Incorrect. Statement 1 is also correct.",
+            "why_c_ta": "தவறு. கூற்று 1-ம் சரியானது.",
+            "why_d_en": "Incorrect. Statement 2 is also correct.",
+            "why_d_ta": "தவறு. கூற்று 2-ம் சரியானது.",
+            "tip_en": "NCDC: Established in 1963 under NCDC Act 1962; Headquarters = New Delhi; Operates schemes like SAHAKAR-22 and YUVA SAHAKAR.",
+            "tip_ta": "NCDC: 1962 சட்டத்தின் கீழ் 1963-ல் நிறுவப்பட்டது; தலைமையகம் = புது தில்லி; சககார்-22 மற்றும் யுவ சககார் திட்டங்களை செயல்படுத்துகிறது.",
+            "fact_en": "NCDC financing is non-subsidized and extends loan assistance directly to cooperative societies.",
+            "fact_ta": "NCDC நேரடியாக கூட்டுறவு சங்கங்களுக்குக் கடன் உதவிகளை வழங்கி ஊக்குவிக்கிறது."
+        },
+
+        # CS_S_032: Cooperative Societies vs Joint Stock Companies
+        {
+            "subtopic": "Cooperative Principles vs Corporate Structure",
+            "stem_en": "Consider the following statements comparing Co-operative Societies and Joint Stock Companies:\n1. In a co-operative society, voting power is based on the democratic principle of 'one member, one vote' irrespective of shareholding.\n2. In a joint stock company, voting power is proportional to the number of shares held by a shareholder.\n3. In a co-operative society, distribution of surplus is primarily based on the volume of business transacted (patronage dividend), whereas in a company it is purely based on share capital (dividend).\nWhich of the statements given above are correct?",
+            "stem_ta": "கூட்டுறவு சங்கங்கள் மற்றும் பங்கு நிறுவனங்களை (Joint Stock Companies) ஒப்பிடும் பின்வரும் கூற்றுகளை ஆராய்க:\n1. கூட்டுறவு சங்கத்தில், பங்கு மூலதனத்தைப் பொருட்படுத்தாமல் 'ஒரு உறுப்பினர், ஒரு வாக்கு' என்ற ஜனநாயகக் கோட்பாட்டின் அடிப்படையில் வாக்குரிமை அமைகிறது.\n2. பங்கு நிறுவனத்தில், ஒரு பங்குதாரர் வைத்திருக்கும் பங்குகளின் எண்ணிக்கைக்கு ஏற்ப வாக்குரிமை விகிதாசாரமாக அமைகிறது.\n3. கூட்டுறவு சங்கத்தில், உபரி பங்கீடு என்பது சங்கத்துடன் மேற்கொண்ட வணிகத்தின் அளவுக்கு (ஆதரவு ஈவுத்தொகை) ஏற்ப வழங்கப்படுகிறது, ஆனால் நிறுவனத்தில் பங்கு மூலதனத்தின் அடிப்படையில் மட்டுமே ஈவுத்தொகை வழங்கப்படுகிறது.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+            "options": [
+                ("1, 2 and 3", "1, 2 மற்றும் 3"),
+                ("1 and 2 only", "1 மற்றும் 2 மட்டும்"),
+                ("2 and 3 only", "2 மற்றும் 3 மட்டும்"),
+                ("1 and 3 only", "1 மற்றும் 3 மட்டும்")
+            ],
+            "correct_key": "A",
+            "exp_en": "All three statements are correct. These represent core structural distinctions between capitalist companies (capital-centric, voting proportional to shares, profit maximization) and cooperative societies (human-centric, democratic voting 'one member one vote', service-oriented, patronage dividend).",
+            "exp_ta": "மூன்று கூற்றுகளும் சரியானவை. கூட்டுறவு சங்கம் என்பது மனிதனை மையமாகக் கொண்டது (ஒருவருக்கு ஒரு வாக்கு, சேவை நோக்கம், ஆதரவு ஈவுத்தொகை). ஆனால் பங்கு நிறுவனம் மூலதனத்தை மையமாகக் கொண்டது (பங்குகளுக்கு ஏற்ப வாக்கு, லாப நோக்கம், மூலதன ஈவுத்தொகை).",
+            "why_a_en": "Correct. All three statements accurately state fundamental economic distinctions.",
+            "why_a_ta": "சரி. மூன்று கூற்றுகளும் அடிப்படைப் பொருளாதார வேறுபாடுகளைத் துல்லியமாகக் குறிப்பிடுகின்றன.",
+            "why_b_en": "Incorrect. Statement 3 is also correct.",
+            "why_b_ta": "தவறு. கூற்று 3-ம் சரியானது.",
+            "why_c_en": "Incorrect. Statement 1 is also correct.",
+            "why_c_ta": "தவறு. கூற்று 1-ம் சரியானது.",
+            "why_d_en": "Incorrect. Statement 2 is also correct.",
+            "why_d_ta": "தவறு. கூற்று 2-ம் சரியானது.",
+            "tip_en": "Core Principle: Cooperation is based on self-help and mutual aid ('Each for all and all for each'). Companies are based on return on investment.",
+            "tip_ta": "முக்கியக் கோட்பாடு: 'ஒருவர் அனைவருக்கும், அனைவரும் ஒருவருக்கு' என்ற சுய உதவி மற்றும் பரஸ்பர உதவி தத்துவமே கூட்டுறவு.",
+            "fact_en": "The maximum dividend payable on shares in a cooperative society is usually capped by State legislation (e.g., 14% in Tamil Nadu).",
+            "fact_ta": "கூட்டுறவு சங்கங்களில் வழங்கப்படும் அதிகபட்ச ஈவுத்தொகை மாநில சட்டங்களால் வரம்பிடப்படுகிறது (எ.கா. தமிழ்நாட்டில் 14%)."
+        },
+
+        # CS_S_033: Section 8 Companies vs Producer Companies
+        {
+            "subtopic": "Producer Companies and Companies Act",
+            "stem_en": "Consider the following statements regarding Producer Companies under the Companies Act:\n1. Producer Companies were introduced into the Companies Act, 1956 based on the recommendations of the Y.K. Alagh Committee.\n2. A Producer Company combines the mutual assistance principles of a co-operative with the regulatory flexibility of a private limited company.\n3. A Producer Company can be formed by ten or more individual primary producers or by two or more producer institutions.\nWhich of the statements given above are correct?",
+            "stem_ta": "நிறுவனங்கள் சட்டத்தின் கீழ் உழவர் உற்பத்தியாளர் நிறுவனங்கள் (Producer Companies) தொடர்பான பின்வரும் கூற்றுகளை ஆராய்க:\n1. ஓய்.கே. அலாக் குழுவின் பரிந்துரைகளின் அடிப்படையில் உழவர் உற்பத்தியாளர் நிறுவனங்கள் 1956 நிறுவனங்கள் சட்டத்தில் அறிமுகப்படுத்தப்பட்டன.\n2. ஒரு உற்பத்தியாளர் நிறுவனம் கூட்டுறவின் பரஸ்பர உதவித் தத்துவத்தையும், ஒரு தனியார் நிறுவனத்தின் செயல்பாட்டு நெகிழ்வுத்தன்மையையும் ஒருங்கிணைக்கிறது.\n3. பத்து அல்லது அதற்கு மேற்பட்ட தனிநபர் உற்பத்தியாளர்கள் அல்லது இரண்டு அல்லது அதற்கு மேற்பட்ட உற்பத்தியாளர் அமைப்புகளால் ஒரு உற்பத்தியாளர் நிறுவனத்தை உருவாக்க முடியும்.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+            "options": [
+                ("1, 2 and 3", "1, 2 மற்றும் 3"),
+                ("1 and 2 only", "1 மற்றும் 2 மட்டும்"),
+                ("2 and 3 only", "2 மற்றும் 3 மட்டும்"),
+                ("1 and 3 only", "1 மற்றும் 3 மட்டும்")
+            ],
+            "correct_key": "A",
+            "exp_en": "All three statements are correct. Following the Y.K. Alagh Committee recommendations in 2000, Part IX-A was added to the Companies Act, 1956 (retained in Chapter XXI-A of Companies Act, 2013). Ten or more primary producers or two producer institutions can form a Producer Company operating on cooperative principles.",
+            "exp_ta": "மூன்று கூற்றுகளும் சரியானவை. 2000-ல் ஓய்.கே. அலாக் குழுவின் பரிந்துரைப்படி நிறுவனங்கள் சட்டத்தில் உற்பத்தியாளர் நிறுவனங்கள் சேர்க்கப்பட்டன. 10 தனிநபர்கள் அல்லது 2 நிறுவனங்கள் இணைந்து கூட்டுறவுக் கொள்கைகளுடன் இயங்கும் நிறுவனமாக இதைத் தொடங்கலாம்.",
+            "why_a_en": "Correct. All statements accurately reflect statutory provisions governing Producer Companies.",
+            "why_a_ta": "சரி. அனைத்து கூற்றுகளும் உழவர் உற்பத்தியாளர் நிறுவனங்கள் குறித்த சட்ட விதிகளைத் துல்லியமாக விவரிக்கின்றன.",
+            "why_b_en": "Incorrect. Statement 3 is also correct.",
+            "why_b_ta": "தவறு. கூற்று 3-ம் சரியானது.",
+            "why_c_en": "Incorrect. Statement 1 is also correct.",
+            "why_c_ta": "தவறு. கூற்று 1-ம் சரியானது.",
+            "why_d_en": "Incorrect. Statement 2 is also correct.",
+            "why_d_ta": "தவறு. கூற்று 2-ம் சரியானது.",
+            "tip_en": "FPO / Producer Company combines: Co-operative ethos ('one member one vote') + Corporate efficiency (ROC registration, pan-India business).",
+            "tip_ta": "உற்பத்தியாளர் நிறுவனம்: கூட்டுறவு தத்துவம் ('ஒருவருக்கு ஒரு வாக்கு') + கார்ப்பரேட் திறன் (இந்தியா முழுவதும் தடையற்ற வணிகம்).",
+            "fact_en": "Unlike normal companies, a Producer Company cannot become a public limited company under any circumstances.",
+            "fact_ta": "சாதாரண நிறுவனங்களைப் போலன்றி, ஓர் உற்பத்தியாளர் நிறுவனம் எக்காலத்திலும் பொது நிறுவனமாக (Public Limited) மாற முடியாது."
+        },
+
+        # CS_S_034: Long-Term Cooperative Credit Structure
+        {
+            "subtopic": "Long-Term Cooperative Credit",
+            "stem_en": "Consider the following statements regarding the Long-Term Cooperative Credit Structure in India:\n1. It caters primarily to long-term investment credit needs of farmers such as land development, tractor purchase and minor irrigation.\n2. In a federal structure, it consists of Primary Cooperative Agriculture and Rural Development Banks (PCARDBs) at the base and State Cooperative Agriculture and Rural Development Banks (SCARDBs) at the state level.\n3. Long-term cooperative credit institutions mobilize funds primarily through public deposits rather than debentures and refinance.\nWhich of the statements given above are correct?",
+            "stem_ta": "இந்தியாவில் நீண்ட கால கூட்டுறவு கடன் கட்டமைப்பு தொடர்பான பின்வரும் கூற்றுகளை ஆராய்க:\n1. இது நில மேம்பாடு, டிராக்டர் வாங்குதல் மற்றும் சிறு பாசனம் போன்ற விவசாயிகளின் நீண்ட கால முதலீட்டுக் கடன் தேவைகளை முக்கியமாகப் பூர்த்தி செய்கிறது.\n2. கூட்டாட்சி அமைப்பில், இது அடிமட்டத்தில் தொடக்கக் கூட்டுறவு விவசாய மற்றும் ஊரக வளர்ச்சி வங்கிகளையும் (PCARDB), மாநில அளவில் உச்ச அமைப்பாக SCARDB-ஐயும் கொண்டுள்ளது.\n3. நீண்ட கால கூட்டுறவு கடன் அமைப்புகள் கடன் பத்திரங்கள் மற்றும் மறுநிதியளிப்பிற்குப் பதிலாக பொதுமக்களின் வைப்புத்தொகை மூலமே நிதியைத் திரட்டுகின்றன.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+            "options": [
+                ("1 and 2 only", "1 மற்றும் 2 மட்டும்"),
+                ("1 only", "1 மட்டும்"),
+                ("2 and 3 only", "2 மற்றும் 3 மட்டும்"),
+                ("1, 2 and 3", "1, 2 மற்றும் 3")
+            ],
+            "correct_key": "A",
+            "exp_en": "Statements 1 and 2 are correct. Statement 3 is INCORRECT because Land Development Banks / SCARDBs historically mobilize long-term funds primarily by floating government-guaranteed debentures and through refinance from NABARD, NOT through public savings deposits (which are mobilized by short-term banks).",
+            "exp_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் நிலவள வங்கிகள் / SCARDB-கள் வைப்புத்தொகைகளைத் திரட்டுவதில்லை; மாறாக அரசு உத்தரவாதம் பெற்ற நீண்ட காலக் கடன் பத்திரங்களை (Debentures) வெளியிட்டும், நபார்டு மறுநிதியுதவி மூலமுமே நிதியைத் திரட்டுகின்றன.",
+            "why_a_en": "Correct. Statements 1 and 2 are true; statement 3 is false because SCARDBs float debentures and do not rely on public deposits.",
+            "why_a_ta": "சரி. கூற்றுகள் 1 மற்றும் 2 சரியானவை; நிலவள வங்கிகள் கடன் பத்திரங்கள் மூலமே நிதி திரட்டுவதால் கூற்று 3 தவறானது.",
+            "why_b_en": "Incorrect. Statement 2 is also correct.",
+            "why_b_ta": "தவறு. கூற்று 2-ம் சரியானது.",
+            "why_c_en": "Incorrect. Statement 3 is false.",
+            "why_c_ta": "தவறு. கூற்று 3 தவறானது.",
+            "why_d_en": "Incorrect. Statement 3 is false.",
+            "why_d_ta": "தவறு. கூற்று 3 தவறானது.",
+            "tip_en": "Distinguish: Short-term credit = Deposits from public + NABARD refinance. Long-term credit = Debentures + NABARD refinance.",
+            "tip_ta": "வேறுபாடு: குறுகிய கால கடன் = பொது வைப்புத்தொகை + நபார்டு. நீண்ட கால கடன் = கடன் பத்திரங்கள் (Debentures) + நபார்டு.",
+            "fact_en": "The first Land Mortgage Bank in India was established at Jhang in Punjab in 1920.",
+            "fact_ta": "இந்தியாவின் முதல் நில அடமான வங்கி 1920-ல் பஞ்சாபின் ஜாங் என்ற இடத்தில் தொடங்கப்பட்டது."
+        },
+
+        # CS_S_035: Role of Registrar of Co-operative Societies (RCS)
+        {
+            "subtopic": "Registrar of Co-operative Societies",
+            "stem_en": "Consider the following statements regarding the Registrar of Co-operative Societies (RCS):\n1. The RCS is the statutory authority appointed under the State Co-operative Societies Act.\n2. The RCS exercises administrative, supervisory, regulatory and quasi-judicial powers including arbitration of cooperative disputes.\n3. Decisions of the RCS in arbitration and surcharge proceedings cannot be challenged in any court or tribunal.\nWhich of the statements given above are correct?",
+            "stem_ta": "கூட்டுறவு சங்கங்களின் பதிவாளர் (RCS) தொடர்பான பின்வரும் கூற்றுகளை ஆராய்க:\n1. பதிவாளர் என்பவர் மாநில கூட்டுறவு சங்கங்கள் சட்டத்தின் கீழ் நியமிக்கப்படும் சட்டப்பூர்வ அதிகாரி ஆவார்.\n2. கூட்டுறவு தகராறுகளை விசாரித்துத் தீர்ப்பளிக்கும் அரை-நீதித்துறை (Quasi-judicial) அதிகாரம் உட்பட நிர்வாக, மேற்பார்வை மற்றும் ஒழுங்குமுறை அதிகாரங்களை பதிவாளர் கொண்டுள்ளார்.\n3. தீர்ப்பாயம் மற்றும் இழப்பீட்டு நடவடிக்கைகளில் பதிவாளர் எடுக்கும் முடிவுகளை எந்தவொரு நீதிமன்றத்திலோ அல்லது தீர்ப்பாயத்திலோ எதிர்த்து முறையிட முடியாது.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+            "options": [
+                ("1 and 2 only", "1 மற்றும் 2 மட்டும்"),
+                ("1 only", "1 மட்டும்"),
+                ("2 and 3 only", "2 மற்றும் 3 மட்டும்"),
+                ("1, 2 and 3", "1, 2 மற்றும் 3")
+            ],
+            "correct_key": "A",
+            "exp_en": "Statements 1 and 2 are correct. Statement 3 is INCORRECT because the orders of the RCS are appealable before the Co-operative Tribunal (usually headed by a District Judge), and are further subject to judicial review under Articles 226 and 227 of the Constitution before the High Court.",
+            "exp_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் பதிவாளரின் உத்தரவுகளுக்கு எதிராக கூட்டுறவு தீர்ப்பாயத்தில் மேல்முறையீடு செய்யலாம்; மேலும் உறுப்பு 226 மற்றும் 227-ன் கீழ் உயர்நீதிமன்றத்தின் நீதிப் பேராணை அதிகாரத்திற்கும் அவை உட்பட்டவை.",
+            "why_a_en": "Correct. Statements 1 and 2 are true; statement 3 is false as RCS orders are subject to appeal and judicial review.",
+            "why_a_ta": "சரி. கூற்றுகள் 1 மற்றும் 2 சரியானவை; பதிவாளரின் முடிவுகள் மேல்முறையீட்டிற்கு உட்பட்டவை என்பதால் கூற்று 3 தவறு.",
+            "why_b_en": "Incorrect. Statement 2 is also correct.",
+            "why_b_ta": "தவறு. கூற்று 2-ம் சரியானது.",
+            "why_c_en": "Incorrect. Statement 3 is false.",
+            "why_c_ta": "தவறு. கூற்று 3 தவறானது.",
+            "why_d_en": "Incorrect. Statement 3 is false.",
+            "why_d_ta": "தவறு. கூற்று 3 தவறானது.",
+            "tip_en": "Quasi-judicial powers of RCS: Dispute settlement, surcharge proceedings for misappropriation, supersession inquiries — all subject to appeal before Cooperative Tribunal and High Court.",
+            "tip_ta": "பதிவாளரின் அரை-நீதித்துறை அதிகாரங்கள்: தகராறுகள் தீர்த்தல், இழப்பீடு வசூலித்தல் ஆகியவை கூட்டுறவு தீர்ப்பாயம் மற்றும் உயர் நீதிமன்றத்திற்கு உட்பட்டவை.",
+            "fact_en": "In Tamil Nadu, Co-operative Tribunals are constituted at the District level with the Principal District Judge presiding.",
+            "fact_ta": "தமிழ்நாட்டில் மாவட்ட முதன்மை நீதிபதிகள் தலைமையில் கூட்டுறவு தீர்ப்பாயங்கள் செயல்படுகின்றன."
+        },
+
+        # CS_S_036: Cooperative Federalism and Legislative Competence
+        {
+            "subtopic": "Cooperative Federalism",
+            "stem_en": "Consider the following statements regarding the constitutional federal scheme governing cooperatives:\n1. The Supreme Court in 2021 reiterated that federalism is part of the Basic Structure of the Indian Constitution.\n2. Any constitutional amendment affecting the legislative competence of States requires ratification under Article 368(2) proviso.\n3. The 97th Constitutional Amendment was held to diminish State legislative power over Entry 32 of List II without complying with Article 368(2).\nWhich of the statements given above are correct?",
+            "stem_ta": "கூட்டுறவுகளை நிர்வகிக்கும் அரசியலமைப்பு கூட்டாட்சி முறை தொடர்பான பின்வரும் கூற்றுகளை ஆராய்க:\n1. கூட்டாட்சி தத்துவம் என்பது இந்திய அரசியலமைப்பின் அடிப்படைக் கட்டமைப்பின் (Basic Structure) ஒரு பகுதி என்பதை 2021-ல் உச்சநீதிமன்றம் மீண்டும் உறுதிப்படுத்தியது.\n2. மாநிலங்களின் சட்டமியற்றும் அதிகாரத்தைப் பாதிக்கும் எந்தவொரு அரசியலமைப்புத் திருத்தத்திற்கும் உறுப்பு 368(2)-ன் வரம்புரையின் கீழ் ஒப்புதல் தேவைப்படுகிறது.\n3. 97-வது அரசியலமைப்புத் திருத்தம் உறுப்பு 368(2)-ஐப் பின்பற்றாமல் பட்டியல் II பதிவு 32-ன் மீதான மாநிலங்களின் சட்டமியற்றும் அதிகாரத்தைக் குறைத்ததாகக் கருதப்பட்டது.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+            "options": [
+                ("1, 2 and 3", "1, 2 மற்றும் 3"),
+                ("1 and 2 only", "1 மற்றும் 2 மட்டும்"),
+                ("2 and 3 only", "2 மற்றும் 3 மட்டும்"),
+                ("1 and 3 only", "1 மற்றும் 3 மட்டும்")
+            ],
+            "correct_key": "A",
+            "exp_en": "All three statements are correct. In Union of India v. Rajendra N. Shah (2021), the Supreme Court emphasized that federalism is part of the basic structure. By prescribing microscopic rules for state cooperatives under Part IX-B, Parliament encroached on List II Entry 32, requiring ratification by at least half the states under Article 368(2).",
+            "exp_ta": "மூன்று கூற்றுகளும் சரியானவை. 2021 ராஜேந்திர ஷா வழக்கில், கூட்டாட்சி என்பது அடிப்படைக் கட்டமைப்பு என உச்சநீதிமன்றம் உறுதி செய்தது. பகுதி IX-B-ன் மூலம் மாநிலக் கூட்டுறவுகள் மீது விரிவான விதிகளை உருவாக்கியதன் மூலம் பதிவு 32 பாதிக்கப்பட்டதால், உறுப்பு 368(2)-ன் கீழ் மாநிலங்களின் ஒப்புதல் பெறாதது செல்லாது எனத் தீர்ப்பளிக்கப்பட்டது.",
+            "why_a_en": "Correct. All three statements accurately state the constitutional reasoning of the Supreme Court.",
+            "why_a_ta": "சரி. மூன்று கூற்றுகளும் உச்சநீதிமன்றத்தின் அரசியலமைப்புத் தீர்ப்பின் காரணங்களைச் சரியாகக் குறிப்பிடுகின்றன.",
+            "why_b_en": "Incorrect. Statement 3 is also correct.",
+            "why_b_ta": "தவறு. கூற்று 3-ம் சரியானது.",
+            "why_c_en": "Incorrect. Statement 1 is also correct.",
+            "why_c_ta": "தவறு. கூற்று 1-ம் சரியானது.",
+            "why_d_en": "Incorrect. Statement 2 is also correct.",
+            "why_d_ta": "தவறு. கூற்று 2-ம் சரியானது.",
+            "tip_en": "Article 368(2) Proviso items: Election of President, executive power of Union/States, Supreme Court & High Courts, Lists in Seventh Schedule, Representation of States in Parliament.",
+            "tip_ta": "உறுப்பு 368(2) வரம்புரை: குடியரசுத் தலைவர் தேர்தல், ஏழாவது அட்டவணைப் பட்டியல்கள், உச்ச/உயர் நீதிமன்றங்கள், நாடாளுமன்றத்தில் மாநில பிரதிநிதித்துவம்.",
+            "fact_en": "Because Entry 32 of List II was curtailed, ratification by 50% of state legislatures was mandatory.",
+            "fact_ta": "பட்டியல் II-ன் பதிவு 32 கட்டுப்படுத்தப்பட்டதால், 50% மாநில சட்டமன்றங்களின் ஒப்புதல் கட்டாயமானது."
+        },
+
+        # CS_S_037: Co-operative Marketing Societies
+        {
+            "subtopic": "Cooperative Marketing Structure",
+            "stem_en": "Consider the following statements regarding Co-operative Marketing Societies in India:\n1. They protect farmers from exploitation by middlemen and ensure fair remuneration for agricultural produce.\n2. The National Agricultural Cooperative Marketing Federation of India (NAFED) is the apex organization of marketing cooperatives at the national level.\n3. NAFED acts as the central nodal agency for procurement of oilseeds and pulses under the Price Support Scheme (PSS).\nWhich of the statements given above are correct?",
+            "stem_ta": "இந்தியாவில் கூட்டுறவு விற்பனைச் சங்கங்கள் தொடர்பான பின்வரும் கூற்றுகளை ஆராய்க:\n1. அவை விவசாயிகளை இடைத்தரகர்களின் சுரண்டலிலிருந்து பாதுகாத்து, விவசாய விளைபொருட்களுக்கு நியாயமான விலை கிடைப்பதை உறுதி செய்கின்றன.\n2. இந்திய தேசிய வேளாண்மை கூட்டுறவு சந்தைப்படுத்தல் கூட்டமைப்பு (NAFED) என்பது தேசிய அளவில் சந்தைப்படுத்தல் கூட்டுறவுகளின் உச்ச அமைப்பாகும்.\n3. விலை ஆதரவுத் திட்டத்தின் (PSS) கீழ் எண்ணெய் வித்துக்கள் மற்றும் பருப்பு வகைகளைக் கொள்முதல் செய்வதற்கான மத்திய ஒருங்கிணைப்பு முகமையாக NAFED செயல்படுகிறது.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+            "options": [
+                ("1, 2 and 3", "1, 2 மற்றும் 3"),
+                ("1 and 2 only", "1 மற்றும் 2 மட்டும்"),
+                ("2 and 3 only", "2 மற்றும் 3 மட்டும்"),
+                ("1 and 3 only", "1 மற்றும் 3 மட்டும்")
+            ],
+            "correct_key": "A",
+            "exp_en": "All three statements are correct. Cooperative marketing societies eliminate intermediary margins. NAFED, established on Gandhi Jayanti in 1958, is the apex body and serves as the nodal central agency for Price Support Scheme procurement for oilseeds, pulses and copra.",
+            "exp_ta": "மூன்று கூற்றுகளும் சரியானவை. கூட்டுறவு விற்பனைச் சங்கங்கள் இடைத்தரகர்களை நீக்குகின்றன. 1958-ல் நிறுவப்பட்ட NAFED தேசிய அளவில் உச்ச அமைப்பாகவும், விலை ஆதரவுத் திட்டத்தின் கீழ் பருப்பு மற்றும் எண்ணெய் வித்துக்களைக் கொள்முதல் செய்யும் மத்திய முகமையாகவும் செயல்படுகிறது.",
+            "why_a_en": "Correct. All statements accurately describe NAFED and marketing cooperatives.",
+            "why_a_ta": "சரி. அனைத்து கூற்றுகளும் NAFED மற்றும் விற்பனை கூட்டுறவுகளைத் துல்லியமாக விவரிக்கின்றன.",
+            "why_b_en": "Incorrect. Statement 3 is also correct.",
+            "why_b_ta": "தவறு. கூற்று 3-ம் சரியானது.",
+            "why_c_en": "Incorrect. Statement 1 is also correct.",
+            "why_c_ta": "தவறு. கூற்று 1-ம் சரியானது.",
+            "why_d_en": "Incorrect. Statement 2 is also correct.",
+            "why_d_ta": "தவறு. கூற்று 2-ம் சரியானது.",
+            "tip_en": "NAFED: Established 2 Oct 1958; Registered under MSCS Act; Primary procurement arm for Government of India PSS operations.",
+            "tip_ta": "NAFED: 1958 அக்டோபர் 2-ல் நிறுவப்பட்டது; இந்திய அரசின் விலை ஆதரவுத் திட்டக் கொள்முதல் முகமை.",
+            "fact_en": "TRIFED (Tribal Cooperative Marketing Development Federation of India) plays a similar role for minor forest produce of tribal communities.",
+            "fact_ta": "பழங்குடியினரின் வன விளைபொருட்களைச் சந்தைப்படுத்த டிரைஃபெட் (TRIFED) அமைப்பு 1987-ல் உருவாக்கப்பட்டது."
+        },
+
+        # CS_S_038: Dairy Co-operatives and Operation Flood
+        {
+            "subtopic": "Dairy Cooperatives and Amul Model",
+            "stem_en": "Consider the following statements regarding Dairy Co-operatives in India:\n1. The 'Anand Pattern' (Amul model) is a three-tier structure: Village Dairy Cooperative Society → District Cooperative Milk Producers' Union → State Cooperative Milk Federation.\n2. Operation Flood (White Revolution) was launched in 1970 by the National Dairy Development Board (NDDB) led by Dr. Verghese Kurien.\n3. In Tamil Nadu, the apex dairy cooperative federation is Aavin (Tamil Nadu Co-operative Milk Producers' Federation Limited).\nWhich of the statements given above are correct?",
+            "stem_ta": "இந்தியாவில் பால்வளக் கூட்டுறவுச் சங்கங்கள் தொடர்பான பின்வரும் கூற்றுகளை ஆராய்க:\n1. 'ஆனந்த் மாதிரி' (அமுல் மாதிரி) என்பது மூன்றடுக்குக் கட்டமைப்பாகும்: கிராமப் பால் கூட்டுறவு சங்கம் → மாவட்ட பால் உற்பத்தியாளர்கள் ஒன்றியம் → மாநிலப் பால் கூட்டுறவு இணையம்.\n2. வெண்மைப் புரட்சி (ஆபரேஷன் பிளட்) 1970-ல் டாக்டர் வர்கீஸ் குரியன் தலைமையில் தேசிய பால்வள மேம்பாட்டு வாரியத்தால் (NDDB) தொடங்கப்பட்டது.\n3. தமிழ்நாட்டில் பால்வளக் கூட்டுறவுகளின் உச்ச அமைப்பாக ஆவின் (தமிழ்நாடு கூட்டுறவு பால் உற்பத்தியாளர்கள் கூட்டமைப்பு) செயல்படுகிறது.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+            "options": [
+                ("1, 2 and 3", "1, 2 மற்றும் 3"),
+                ("1 and 2 only", "1 மற்றும் 2 மட்டும்"),
+                ("2 and 3 only", "2 மற்றும் 3 மட்டும்"),
+                ("1 and 3 only", "1 மற்றும் 3 மட்டும்")
+            ],
+            "correct_key": "A",
+            "exp_en": "All three statements are correct. The Anand Pattern three-tier model formed the bedrock of Operation Flood launched by NDDB in 1970, transforming India into the world's largest milk producer. In Tamil Nadu, Aavin represents the state-level federation of this model.",
+            "exp_ta": "மூன்று கூற்றுகளும் சரியானவை. ஆனந்த் மாதிரி மூன்றடுக்கு அமைப்பைக் கொண்டு 1970-ல் தொடங்கப்பட்ட வெண்மைப் புரட்சி இந்தியாவை உலகின் முன்னணி பால் உற்பத்தி நாடாக்கியது. தமிழ்நாட்டில் ஆவின் நிறுவனம் இந்த உச்ச கூட்டமைப்பாகச் செயல்படுகிறது.",
+            "why_a_en": "Correct. All statements accurately reflect dairy cooperative history and structure.",
+            "why_a_ta": "சரி. அனைத்து கூற்றுகளும் பால்வளக் கூட்டுறவு வரலாறு மற்றும் கட்டமைப்பைச் சரியாக விவரிக்கின்றன.",
+            "why_b_en": "Incorrect. Statement 3 is also correct.",
+            "why_b_ta": "தவறு. கூற்று 3-ம் சரியானது.",
+            "why_c_en": "Incorrect. Statement 1 is also correct.",
+            "why_c_ta": "தவறு. கூற்று 1-ம் சரியானது.",
+            "why_d_en": "Incorrect. Statement 2 is also correct.",
+            "why_d_ta": "தவறு. கூற்று 2-ம் சரியானது.",
+            "tip_en": "Anand Pattern = Village Society → District Union → State Federation. Architect = Dr. Verghese Kurien (Father of White Revolution).",
+            "tip_ta": "ஆனந்த் மாதிரி = கிராம சங்கம் → மாவட்ட ஒன்றியம் → மாநிலக் கூட்டமைப்பு. சிற்பி = டாக்டர் வர்கீஸ் குரியன்.",
+            "fact_en": "Kaira District Cooperative Milk Producers' Union was founded in 1946 under the guidance of Sardar Vallabhbhai Patel.",
+            "fact_ta": "1946-ல் சர்தார் வல்லபாய் படேலின் வழிகாட்டுதலில் கைரா மாவட்ட கூட்டுறவு பால் உற்பத்தியாளர் ஒன்றியம் நிறுவப்பட்டது."
+        },
+
+        # CS_S_039: Handloom and Weavers' Cooperatives in Tamil Nadu
+        {
+            "subtopic": "Handloom Cooperatives in Tamil Nadu",
+            "stem_en": "Consider the following statements regarding handloom cooperatives in Tamil Nadu:\n1. Co-optex (Tamil Nadu Handloom Weavers' Co-operative Society Limited) is the apex handloom society in Tamil Nadu.\n2. Co-optex was established in 1935 to organize weavers and provide marketing support.\n3. Tamil Nadu has the highest number of handlooms under the cooperative fold in India.\nWhich of the statements given above are correct?",
+            "stem_ta": "தமிழ்நாட்டில் கைத்தறிக் கூட்டுறவு சங்கங்கள் தொடர்பான பின்வரும் கூற்றுகளை ஆராய்க:\n1. கோ-ஆப்லெக்ஸ் (தமிழ்நாடு கைத்தறி நெசவாளர் கூட்டுறவு சங்கம்) என்பது தமிழ்நாட்டின் கைத்தறி கூட்டுறவுகளின் உச்ச அமைப்பாகும்.\n2. நெசவாளர்களை ஒருங்கிணைத்து சந்தை ஆதரவை வழங்குவதற்காக கோ-ஆப்லெக்ஸ் 1935-ல் நிறுவப்பட்டது.\n3. இந்தியாவில் கூட்டுறவு அமைப்பின் கீழ் அதிக எண்ணிக்கையிலான கைத்தறிகளைக் கொண்ட மாநிலமாக தமிழ்நாடு திகழ்கிறது.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+            "options": [
+                ("1, 2 and 3", "1, 2 மற்றும் 3"),
+                ("1 and 2 only", "1 மற்றும் 2 மட்டும்"),
+                ("2 and 3 only", "2 மற்றும் 3 மட்டும்"),
+                ("1 and 3 only", "1 மற்றும் 3 மட்டும்")
+            ],
+            "correct_key": "A",
+            "exp_en": "All three statements are correct. Co-optex was founded in 1935 as the Madras Handloom Weavers' Provincial Co-operative Society. Tamil Nadu dominates handloom cooperation in India, with the largest proportion of weavers organized into primary weaver cooperative societies.",
+            "exp_ta": "மூன்று கூற்றுகளும் சரியானவை. கோ-ஆப்லெக்ஸ் 1935-ல் மெட்ராஸ் மாகாண கைத்தறி நெசவாளர் கூட்டுறவு சங்கமாக நிறுவப்பட்டது. இந்தியாவிலேயே அதிக அளவிலான கைத்தறி நெசவாளர்களை கூட்டுறவு அமைப்பின் கீழ் கொண்டுவந்துள்ள மாநிலம் தமிழ்நாடு ஆகும்.",
+            "why_a_en": "Correct. All statements accurately reflect TN handloom cooperative achievements.",
+            "why_a_ta": "சரி. அனைத்து கூற்றுகளும் தமிழக கைத்தறிக் கூட்டுறவு சாதனைகளைத் துல்லியமாக விவரிக்கின்றன.",
+            "why_b_en": "Incorrect. Statement 3 is also correct.",
+            "why_b_ta": "தவறு. கூற்று 3-ம் சரியானது.",
+            "why_c_en": "Incorrect. Statement 1 is also correct.",
+            "why_c_ta": "தவறு. கூற்று 1-ம் சரியானது.",
+            "why_d_en": "Incorrect. Statement 2 is also correct.",
+            "why_d_ta": "தவறு. கூற்று 2-ம் சரியானது.",
+            "tip_en": "Co-optex: Established in 1935; Operates over 150 showrooms across India; Represents Tamil Nadu's leading industrial cooperative movement.",
+            "tip_ta": "கோ-ஆப்லெக்ஸ்: 1935-ல் நிறுவப்பட்டது; நாடு முழுவதும் 150-க்கும் மேற்பட்ட விற்பனையகங்களைக் கொண்டுள்ளது.",
+            "fact_en": "Tamil Nadu was among the first states to introduce free electricity schemes for weaver cooperative societies.",
+            "fact_ta": "நெசவாளர் கூட்டுறவு சங்கங்களுக்கு இலவச மின்சாரம் வழங்கிய முதல் மாநிலங்களில் தமிழ்நாடு ஒன்றாகும்."
+        },
+
+        # CS_S_040: Consumer Co-operatives and Public Distribution System
+        {
+            "subtopic": "Consumer Cooperatives and PDS",
+            "stem_en": "Consider the following statements regarding consumer cooperatives and PDS in Tamil Nadu:\n1. Tamil Nadu is unique in implementing a Universal Public Distribution System (PDS) primarily through cooperative societies.\n2. Fair price shops in Tamil Nadu are predominantly run by Primary Agricultural Credit Societies and Consumer Cooperative Stores.\n3. TuCS (Triplicane Urban Cooperative Society) established in 1904 is the oldest consumer cooperative society in India.\nWhich of the statements given above are correct?",
+            "stem_ta": "தமிழ்நாட்டில் நுகர்வோர் கூட்டுறவு மற்றும் பொது விநியோகத் திட்டம் (PDS) தொடர்பான பின்வரும் கூற்றுகளை ஆராய்க:\n1. தமிழ்நாடு தனது அனைத்து மக்களுக்கான பொது விநியோகத் திட்டத்தை (Universal PDS) முக்கியமாகக் கூட்டுறவு சங்கங்கள் மூலமாகவே செயல்படுத்துகிறது.\n2. தமிழ்நாட்டில் உள்ள பெரும்பாலான நியாயவிலைக் கடைகள் தொடக்க வேளாண் கடன் சங்கங்கள் மற்றும் நுகர்வோர் கூட்டுறவு பண்டகசாலைகளால் நடத்தப்படுகின்றன.\n3. 1904-ல் நிறுவப்பட்ட திருவல்லிக்கேணி நகர்ப்புற கூட்டுறவு சங்கம் (TuCS) இந்தியாவின் மிகப்பழமையான நுகர்வோர் கூட்டுறவு சங்கமாகும்.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+            "options": [
+                ("1, 2 and 3", "1, 2 மற்றும் 3"),
+                ("1 and 2 only", "1 மற்றும் 2 மட்டும்"),
+                ("2 and 3 only", "2 மற்றும் 3 மட்டும்"),
+                ("1 and 3 only", "1 மற்றும் 3 மட்டும்")
+            ],
+            "correct_key": "A",
+            "exp_en": "All three statements are correct. Over 90% of PDS fair price shops in Tamil Nadu are operated by cooperatives. The Triplicane Urban Cooperative Society (TUCS), founded on 9 April 1904 in Madras by pioneers like Ambika Charan Mazumdar and T.K. Hanumantha Rao, is the first consumer cooperative in India.",
+            "exp_ta": "மூன்று கூற்றுகளும் சரியானவை. தமிழ்நாட்டில் உள்ள நியாயவிலைக் கடைகளில் 90%-க்கும் அதிகமானவை கூட்டுறவு சங்கங்களால் நடத்தப்படுகின்றன. 1904 ஏப்ரல் 9 அன்று சென்னையில் தொடங்கப்பட்ட திருவல்லிக்கேணி நகர்ப்புற கூட்டுறவு சங்கம் (TUCS) இந்தியாவின் முதல் நுகர்வோர் கூட்டுறவு ஆகும்.",
+            "why_a_en": "Correct. All statements accurately describe the pioneering consumer cooperative network in TN.",
+            "why_a_ta": "சரி. அனைத்து கூற்றுகளும் தமிழகத்தின் முன்னோடி நுகர்வோர் கூட்டுறவு நெட்வொர்க்கைச் சரியாக விவரிக்கின்றன.",
+            "why_b_en": "Incorrect. Statement 3 is also correct.",
+            "why_b_ta": "தவறு. கூற்று 3-ம் சரியானது.",
+            "why_c_en": "Incorrect. Statement 1 is also correct.",
+            "why_c_ta": "தவறு. கூற்று 1-ம் சரியானது.",
+            "why_d_en": "Incorrect. Statement 2 is also correct.",
+            "why_d_ta": "தவறு. கூற்று 2-ம் சரியானது.",
+            "tip_en": "Milestone: TUCS (Triplicane Urban Cooperative Society) founded in April 1904 — Father of consumer cooperatives in India.",
+            "tip_ta": "முக்கிய மைல்கல்: TUCS (திருவல்லிக்கேணி நகர்ப்புற கூட்டுறவு சங்கம்) 1904 ஏப்ரலில் தொடங்கப்பட்டது — இந்தியாவின் முதல் நுகர்வோர் கூட்டுறவு.",
+            "fact_en": "TUCS was registered even before the formal enactment of the Co-operative Credit Societies Act, 1904.",
+            "fact_ta": "1904 கூட்டுறவு கடன் சங்கங்கள் சட்டம் இயற்றப்படுவதற்கு முன்பே TUCS சங்கம் பதிவு செய்யப்பட்டது."
+        }
+    ]
+
+
+def get_statement_questions_batch4():
+    return [
+        # CS_S_041: Cooperative Housing Societies
+        {
+            "subtopic": "Housing Cooperatives",
+            "stem_en": "Consider the following statements regarding Co-operative Housing Societies in India:\n1. They provide affordable housing and long-term housing loans to their members on a no-profit-no-loss basis.\n2. The National Cooperative Housing Federation of India (NCHF) was established in 1969 as the national apex organization.\n3. Cooperative housing societies are legally exempt from building bylaws and municipal planning regulations.\nWhich of the statements given above is/are correct?",
+            "stem_ta": "இந்தியாவில் கூட்டுறவு வீட்டுவசதிச் சங்கங்கள் தொடர்பான பின்வரும் கூற்றுகளை ஆராய்க:\n1. அவை தங்களின் உறுப்பினர்களுக்கு லாப-நஷ்டமற்ற அடிப்படையில் மலிவு விலை வீடுகள் மற்றும் நீண்ட கால வீட்டுக் கடன்களை வழங்குகின்றன.\n2. தேசிய கூட்டுறவு வீட்டுவசதி கூட்டமைப்பு (NCHF) 1969-ல் தேசிய உச்ச அமைப்பாக நிறுவப்பட்டது.\n3. கூட்டுறவு வீட்டுவசதிச் சங்கங்களுக்குக் கட்டட விதிமுறைகள் மற்றும் நகராட்சி திட்டமிடல் விதிகளிலிருந்து சட்டப்பூர்வ விலக்கு அளிக்கப்பட்டுள்ளது.\nமேற்கண்ட கூற்றுகளில் சரியானது/சரியானவை எது/எவை?",
+            "options": [
+                ("1 and 2 only", "1 மற்றும் 2 மட்டும்"),
+                ("1 only", "1 மட்டும்"),
+                ("2 and 3 only", "2 மற்றும் 3 மட்டும்"),
+                ("1, 2 and 3", "1, 2 மற்றும் 3")
+            ],
+            "correct_key": "A",
+            "exp_en": "Statements 1 and 2 are correct. Statement 3 is INCORRECT because cooperative housing societies must strictly adhere to municipal planning laws, development control regulations, and building bylaws. They enjoy no exemption from planning and municipal laws.",
+            "exp_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் கூட்டுறவு வீட்டுவசதிச் சங்கங்கள் உள்ளாட்சி அமைப்புகளின் கட்டட விதிகள் மற்றும் நகரமைப்பு திட்டமிடல் சட்டங்களுக்கு முழுமையாகக் கட்டுப்பட்டவையாகும்; அவற்றுக்கு எந்த விலக்கும் கிடையாது.",
+            "why_a_en": "Correct. Statements 1 and 2 are true; statement 3 is false as planning laws apply equally.",
+            "why_a_ta": "சரி. கூற்றுகள் 1 மற்றும் 2 சரியானவை; கட்டட விதிகள் அனைத்துக்கும் பொதுவானது என்பதால் கூற்று 3 தவறு.",
+            "why_b_en": "Incorrect. Statement 2 is also correct.",
+            "why_b_ta": "தவறு. கூற்று 2-ம் சரியானது.",
+            "why_c_en": "Incorrect. Statement 3 is false.",
+            "why_c_ta": "தவறு. கூற்று 3 தவறானது.",
+            "why_d_en": "Incorrect. Statement 3 is false.",
+            "why_d_ta": "தவறு. கூற்று 3 தவறானது.",
+            "tip_en": "Housing Cooperatives: Apex body = NCHF (1969); In TN = Tamil Nadu Co-operative Housing Federation (TNCHF).",
+            "tip_ta": "வீட்டுவசதி கூட்டுறவு: தேசிய உச்ச அமைப்பு = NCHF (1969); தமிழ்நாடு உச்ச அமைப்பு = TNCHF.",
+            "fact_en": "The first cooperative housing society in India was the Bangalore Cooperative Housing Society, founded in 1909.",
+            "fact_ta": "இந்தியாவின் முதல் கூட்டுறவு வீட்டுவசதி சங்கம் 1909-ல் பெங்களூரில் தொடங்கப்பட்டது."
+        },
+
+        # CS_S_042: Sugar Co-operatives in India
+        {
+            "subtopic": "Industrial and Agro-Processing Cooperatives",
+            "stem_en": "Consider the following statements regarding Sugar Co-operatives in India:\n1. Maharashtra pioneered the cooperative sugar factory movement under the leadership of Vitthalrao Vikhe Patil and Dr. D.R. Gadgil at Pravaranagar in 1950.\n2. Sugar co-operatives are producer-owned agro-industrial cooperatives where sugarcane farmers are the equity shareholders.\n3. The Pravara model eliminated intermediaries and integrated agricultural production with industrial processing.\nWhich of the statements given above are correct?",
+            "stem_ta": "இந்தியாவில் சர்க்கரை ஆலைக் கூட்டுறவுகள் தொடர்பான பின்வரும் கூற்றுகளை ஆராய்க:\n1. 1950-ல் பிரவரநகரில் வித்தலராவ் விகே பாட்டீல் மற்றும் டாக்டர் டி.ஆர். காட்கில் தலைமையில் மகாராஷ்டிரா கூட்டுறவு சர்க்கரை ஆலை இயக்கத்திற்கு வித்திட்டது.\n2. சர்க்கரை ஆலைக் கூட்டுறவுகள் என்பவை கரும்பு விவசாயிகளையே பங்குதாரர்களாகக் கொண்ட உற்பத்தியாளர் கூட்டுறவு அமைப்புகளாகும்.\n3. பிரவரா மாதிரி இடைத்தரகர்களை நீக்கி, விவசாய உற்பத்தியை தொழில்துறை பதப்படுத்துதலுடன் ஒருங்கிணைத்தது.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+            "options": [
+                ("1, 2 and 3", "1, 2 மற்றும் 3"),
+                ("1 and 2 only", "1 மற்றும் 2 மட்டும்"),
+                ("2 and 3 only", "2 மற்றும் 3 மட்டும்"),
+                ("1 and 3 only", "1 மற்றும் 3 மட்டும்")
+            ],
+            "correct_key": "A",
+            "exp_en": "All three statements are correct. Pravara Cooperative Sugar Factory established in 1950 in Ahmednagar district of Maharashtra was the first successful cooperative sugar factory in Asia. It proved that small farmers could successfully own and manage large capital-intensive agro-industrial processing units.",
+            "exp_ta": "மூன்று கூற்றுகளும் சரியானவை. 1950-ல் மகாராஷ்டிராவின் அகமதுநகர் பிரவரநகரில் தொடங்கப்பட்ட கூட்டுறவு சர்க்கரை ஆலை ஆசியாவின் முதல் வெற்றிகரமான கூட்டுறவு ஆலையாகும். இது சிறு விவசாயிகள் தொழிற்சாலைகளை சொந்தமாக நடத்த முடியும் என்பதை நிரூபித்தது.",
+            "why_a_en": "Correct. All statements accurately chronicle the cooperative sugar revolution.",
+            "why_a_ta": "சரி. அனைத்து கூற்றுகளும் கூட்டுறவு சர்க்கரை ஆலை இயக்க வரலாற்றைச் சரியாக விளக்குகின்றன.",
+            "why_b_en": "Incorrect. Statement 3 is also correct.",
+            "why_b_ta": "தவறு. கூற்று 3-ம் சரியானது.",
+            "why_c_en": "Incorrect. Statement 1 is also correct.",
+            "why_c_ta": "தவறு. கூற்று 1-ம் சரியானது.",
+            "why_d_en": "Incorrect. Statement 2 is also correct.",
+            "why_d_ta": "தவறு. கூற்று 2-ம் சரியானது.",
+            "tip_en": "Sugar Cooperatives Pioneer: Vitthalrao Vikhe Patil + Dr. D.R. Gadgil (Pravaranagar, 1950).",
+            "tip_ta": "சர்க்கரை கூட்டுறவு முன்னோடிகள்: வித்தலராவ் விகே பாட்டீல் + டாக்டர் டி.ஆர். காட்கில் (1950).",
+            "fact_en": "National Federation of Cooperative Sugar Factories (NFCSF) was established in 1960 as the national apex body.",
+            "fact_ta": "கூட்டுறவு சர்க்கரை ஆலைகளின் தேசிய கூட்டமைப்பு (NFCSF) 1960-ல் நிறுவப்பட்டது."
+        },
+
+        # CS_S_043: Fertilizer Cooperatives - IFFCO and KRIBHCO
+        {
+            "subtopic": "Fertilizer Cooperatives",
+            "stem_en": "Consider the following statements regarding major national cooperative federations:\n1. Indian Farmers Fertiliser Cooperative Limited (IFFCO) was registered in 1967 as a Multi-Unit Co-operative Society.\n2. Krishak Bharati Cooperative Limited (KRIBHCO) was established in 1980 primarily to produce urea and bio-fertilisers.\n3. IFFCO is recognized as one of the largest cooperative enterprises in the world in terms of turnover and member reach.\nWhich of the statements given above are correct?",
+            "stem_ta": "முக்கிய தேசிய கூட்டுறவு கூட்டமைப்புகள் தொடர்பான பின்வரும் கூற்றுகளை ஆராய்க:\n1. இந்திய விவசாயிகள் உரக் கூட்டுறவு நிறுவனம் (IFFCO) 1967-ல் பல மாநில கூட்டுறவு சங்கமாகப் பதிவு செய்யப்பட்டது.\n2. கிரிஷக் பாரதி கூட்டுறவு நிறுவனம் (KRIBHCO) 1980-ல் யூரியா மற்றும் உயிர் உரங்களை உற்பத்தி செய்வதற்காக நிறுவப்பட்டது.\n3. உலகளவில் விற்றுமுதல் மற்றும் உறுப்பினர் எண்ணிக்கையின் அடிப்படையில் IFFCO மிகப்பெரிய கூட்டுறவு நிறுவனங்களில் ஒன்றாக அங்கீகரிக்கப்பட்டுள்ளது.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+            "options": [
+                ("1, 2 and 3", "1, 2 மற்றும் 3"),
+                ("1 and 2 only", "1 மற்றும் 2 மட்டும்"),
+                ("2 and 3 only", "2 மற்றும் 3 மட்டும்"),
+                ("1 and 3 only", "1 மற்றும் 3 மட்டும்")
+            ],
+            "correct_key": "A",
+            "exp_en": "All three statements are correct. IFFCO (1967) and KRIBHCO (1980) are premier multi-state cooperative societies manufacturing and distributing chemical fertilizers and nano-fertilizers to millions of farmers across India.",
+            "exp_ta": "மூன்று கூற்றுகளும் சரியானவை. இஃப்கோ (1967) மற்றும் கிரிப்கோ (1980) ஆகியவை இந்தியாவின் முன்னணி பல மாநில கூட்டுறவு உர நிறுவனங்களாகும். உலக கூட்டுறவு கண்காணிப்பகத்தின்படி இஃப்கோ உலகின் மிகப்பெரிய கூட்டுறவு நிறுவனங்களில் ஒன்றாகும்.",
+            "why_a_en": "Correct. All three statements accurately state facts about IFFCO and KRIBHCO.",
+            "why_a_ta": "சரி. மூன்று கூற்றுகளும் இஃப்கோ மற்றும் கிரிப்கோ பற்றிய உண்மைகளைத் துல்லியமாகக் குறிப்பிடுகின்றன.",
+            "why_b_en": "Incorrect. Statement 3 is also correct.",
+            "why_b_ta": "தவறு. கூற்று 3-ம் சரியானது.",
+            "why_c_en": "Incorrect. Statement 1 is also correct.",
+            "why_c_ta": "தவறு. கூற்று 1-ம் சரியானது.",
+            "why_d_en": "Incorrect. Statement 2 is also correct.",
+            "why_d_ta": "தவறு. கூற்று 2-ம் சரியானது.",
+            "tip_en": "IFFCO developed the world's first Nano Urea Liquid in 2021 as an eco-friendly cooperative innovation.",
+            "tip_ta": "2021-ல் உலகின் முதல் நானோ யூரியாவை அறிமுகப்படுத்திய பெருமை இஃப்கோ (IFFCO) கூட்டுறவு அமைப்பையே சாரும்.",
+            "fact_en": "Both IFFCO and KRIBHCO are governed under the Multi-State Co-operative Societies Act, 2002.",
+            "fact_ta": "இஃப்கோ மற்றும் கிரிப்கோ ஆகிய இரண்டுமே பல மாநில கூட்டுறவு சங்கங்கள் சட்டம் 2002-ன் கீழ் நிர்வகிக்கப்படுகின்றன."
+        },
+
+        # CS_S_044: Cooperative Education and NCUI
+        {
+            "subtopic": "Cooperative Education and Training",
+            "stem_en": "Consider the following statements regarding cooperative education and training in India:\n1. National Cooperative Union of India (NCUI) is the apex organization representing the entire cooperative movement in India.\n2. The Vaikunth Mehta National Institute of Cooperative Management (VAMNICOM) at Pune is the premier national training institute for cooperative management.\n3. Cooperative education and training is the 5th principle of cooperation under the ICA framework.\nWhich of the statements given above are correct?",
+            "stem_ta": "இந்தியாவில் கூட்டுறவுக் கல்வி மற்றும் பயிற்சி தொடர்பான பின்வரும் கூற்றுகளை ஆராய்க:\n1. இந்திய தேசிய கூட்டுறவு ஒன்றியம் (NCUI) என்பது இந்தியாவின் ஒட்டுமொத்த கூட்டுறவு இயக்கத்தைப் பிரதிநிதித்துவப்படுத்தும் உச்ச அமைப்பாகும்.\n2. புனேயில் உள்ள வைகுந்த் மேத்தா தேசிய கூட்டுறவு மேலாண்மை நிறுவனம் (VAMNICOM) கூட்டுறவு மேலாண்மைக்கான முதன்மை தேசிய பயிற்சி நிறுவனமாகும்.\n3. கூட்டுறவுக் கல்வி மற்றும் பயிற்சி என்பது சர்வதேச கூட்டுறவு கூட்டமைப்பின் (ICA) 5-வது கோட்பாடாகும்.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+            "options": [
+                ("1, 2 and 3", "1, 2 மற்றும் 3"),
+                ("1 and 2 only", "1 மற்றும் 2 மட்டும்"),
+                ("2 and 3 only", "2 மற்றும் 3 மட்டும்"),
+                ("1 and 3 only", "1 மற்றும் 3 மட்டும்")
+            ],
+            "correct_key": "A",
+            "exp_en": "All three statements are correct. NCUI (established in 1929 as All India Co-operative Institutes Association) is the apex non-governmental promotional body. VAMNICOM Pune is named after legendary cooperative leader Vaikunth Lallubhai Mehta. Education, training, and information is Principle 5 of the 1995 ICA principles.",
+            "exp_ta": "மூன்று கூற்றுகளும் சரியானவை. 1929-ல் நிறுவப்பட்ட NCUI இந்தியாவின் கூட்டுறவு உச்ச அமைப்பாகும். புனேயில் உள்ள VAMNICOM நிறுவனம் வைகுந்த் மேத்தாவின் நினைவாக நிறுவப்பட்ட தேசிய கூட்டுறவு மேலாண்மை மையமாகும். கல்வி மற்றும் பயிற்சி என்பது ICA-ன் 5-வது கோட்பாடாகும்.",
+            "why_a_en": "Correct. All statements accurately reflect institutional arrangements for cooperative training.",
+            "why_a_ta": "சரி. அனைத்து கூற்றுகளும் கூட்டுறவு பயிற்சி அமைப்புகளைத் துல்லியமாக விவரிக்கின்றன.",
+            "why_b_en": "Incorrect. Statement 3 is also correct.",
+            "why_b_ta": "தவறு. கூற்று 3-ம் சரியானது.",
+            "why_c_en": "Incorrect. Statement 1 is also correct.",
+            "why_c_ta": "தவறு. கூற்று 1-ம் சரியானது.",
+            "why_d_en": "Incorrect. Statement 2 is also correct.",
+            "why_d_ta": "தவறு. கூற்று 2-ம் சரியானது.",
+            "tip_en": "Vaikunth Mehta is known as the 'Doyen of Cooperative Movement in India'; VAMNICOM in Pune is named after him.",
+            "tip_ta": "வைகுந்த் மேத்தா 'இந்திய கூட்டுறவு இயக்கத்தின் தந்தை/முன்னோடி' என்று அழைக்கப்படுகிறார்; புனே VAMNICOM நிறுவனம் இவர் பெயரில் உள்ளது.",
+            "fact_en": "NCUI is a member of the International Co-operative Alliance (ICA).",
+            "fact_ta": "NCUI அமைப்பு சர்வதேச கூட்டுறவு கூட்டணியின் (ICA) முதன்மை உறுப்பினராக உள்ளது."
+        },
+
+        # CS_S_045: National Cooperative Policy
+        {
+            "subtopic": "National Cooperative Policy",
+            "stem_en": "Consider the following statements regarding National Cooperative Policy in India:\n1. The first National Policy on Cooperatives was formulated by the Government of India in 2002.\n2. A national committee headed by former Union Cabinet Minister Suresh Prabhu was constituted in 2022 to draft a new National Cooperation Policy.\n3. The new policy seeks to create a 'Whole-of-Government' approach to integrate cooperatives across all economic sectors.\nWhich of the statements given above are correct?",
+            "stem_ta": "இந்தியாவில் தேசிய கூட்டுறவுக் கொள்கை தொடர்பான பின்வரும் கூற்றுகளை ஆராய்க:\n1. கூட்டுறவுக்கான முதல் தேசியக் கொள்கை 2002-ல் இந்திய அரசால் உருவாக்கப்பட்டது.\n2. புதிய தேசிய கூட்டுறவுக் கொள்கையை வரைவதற்காக முன்னாள் மத்திய அமைச்சர் சுரேஷ் பிரபு தலைமையில் 2022-ல் ஒரு தேசியக் குழு அமைக்கப்பட்டது.\n3. புதிய கொள்கையானது அனைத்துப் பொருளாதாரத் துறைகளிலும் கூட்டுறவுகளை ஒருங்கிணைக்க 'முழுமையான அரசாங்க' அணுகுமுறையை உருவாக்க முயல்கிறது.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+            "options": [
+                ("1, 2 and 3", "1, 2 மற்றும் 3"),
+                ("1 and 2 only", "1 மற்றும் 2 மட்டும்"),
+                ("2 and 3 only", "2 மற்றும் 3 மட்டும்"),
+                ("1 and 3 only", "1 மற்றும் 3 மட்டும்")
+            ],
+            "correct_key": "A",
+            "exp_en": "All three statements are correct. The first National Policy on Cooperatives was unveiled in March 2002. In September 2022, the Ministry of Cooperation constituted a 47-member committee chaired by Suresh Prabhu to formulate a vibrant new National Cooperation Policy Document to realize 'Sahakar se Samriddhi'.",
+            "exp_ta": "மூன்று கூற்றுகளும் சரியானவை. முதல் தேசிய கூட்டுறவுக் கொள்கை 2002-ல் வெளியிடப்பட்டது. செப்டம்பர் 2022-ல் சுரேஷ் பிரபு தலைமையில் 47 உறுப்பினர்கள் கொண்ட குழு புதிய தேசிய கூட்டுறவுக் கொள்கையை வரைய அமைக்கப்பட்டது.",
+            "why_a_en": "Correct. All statements accurately reflect national cooperative policy initiatives.",
+            "why_a_ta": "சரி. அனைத்து கூற்றுகளும் தேசிய கூட்டுறவுக் கொள்கை முயற்சிகளைத் துல்லியமாக விவரிக்கின்றன.",
+            "why_b_en": "Incorrect. Statement 3 is also correct.",
+            "why_b_ta": "தவறு. கூற்று 3-ம் சரியானது.",
+            "why_c_en": "Incorrect. Statement 1 is also correct.",
+            "why_c_ta": "தவறு. கூற்று 1-ம் சரியானது.",
+            "why_d_en": "Incorrect. Statement 2 is also correct.",
+            "why_d_ta": "தவறு. கூற்று 2-ம் சரியானது.",
+            "tip_en": "Policy Milestones: 2002 Policy = Model Law adoption; 2022 Committee = Suresh Prabhu Committee for New National Cooperation Policy.",
+            "tip_ta": "கொள்கை மைல்கற்கள்: 2002 = முதல் தேசியக் கொள்கை; 2022 = சுரேஷ் பிரபு குழு புதிய கூட்டுறவுக் கொள்கைக்காக அமைக்கப்பட்டது.",
+            "fact_en": "The proposed policy focuses on cooperative exports, organic farming, and certified seed production.",
+            "fact_ta": "புதிய கொள்கையானது கூட்டுறவு ஏற்றுமதி, இயற்கை விவசாயம் மற்றும் விதை உற்பத்தியில் அதிக கவனம் செலுத்துகிறது."
+        },
+
+        # CS_S_046: Three New National Multistate Cooperatives (2023)
+        {
+            "subtopic": "New Multi-State Cooperatives 2023",
+            "stem_en": "Consider the following statements regarding the three new national-level multi-state cooperative societies established in 2023:\n1. National Cooperative Exports Limited (NCEL) was established to promote exports of cooperative products.\n2. National Cooperative Organics Limited (NCOL) was established to certify and market organic farm produce.\n3. Bharatiya Beej Sahakari Samiti Limited (BBSSL) was established to produce and distribute certified quality seeds.\nWhich of the statements given above are correct?",
+            "stem_ta": "2023-ல் அமைக்கப்பட்ட மூன்று புதிய தேசிய அளவிலான பல மாநில கூட்டுறவு சங்கங்கள் தொடர்பான பின்வரும் கூற்றுகளை ஆராய்க:\n1. கூட்டுறவு அமைப்புகளின் விளைபொருட்களை ஏற்றுமதி செய்வதை ஊக்குவிக்க தேசிய கூட்டுறவு ஏற்றுமதி நிறுவனம் (NCEL) தொடங்கப்பட்டது.\n2. இயற்கை விவசாய விளைபொருட்களைச் சான்றளித்து சந்தைப்படுத்த தேசிய கூட்டுறவு இயற்கை நிறுவனம் (NCOL) தொடங்கப்பட்டது.\n3. சான்றளிக்கப்பட்ட தரமான விதைகளை உற்பத்தி செய்து விநியோகிக்க பாரதிய பீஜ் சககாரி சமிதி (BBSSL) தொடங்கப்பட்டது.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+            "options": [
+                ("1, 2 and 3", "1, 2 மற்றும் 3"),
+                ("1 and 2 only", "1 மற்றும் 2 மட்டும்"),
+                ("2 and 3 only", "2 மற்றும் 3 மட்டும்"),
+                ("1 and 3 only", "1 மற்றும் 3 மட்டும்")
+            ],
+            "correct_key": "A",
+            "exp_en": "All three statements are correct. In January 2023, the Union Cabinet approved the establishment of three new apex multi-state cooperative societies under the MSCS Act, 2002 promoted by leading cooperatives (IFFCO, KRIBHCO, NAFED, NDDB, NCDC): NCEL (Exports), NCOL (Organics), and BBSSL (Seeds).",
+            "exp_ta": "மூன்று கூற்றுகளும் சரியானவை. ஜனவரி 2023-ல் மத்திய அமைச்சரவை மூன்று புதிய தேசிய பல மாநில கூட்டுறவு சங்கங்களுக்கு ஒப்புதல் அளித்தது: ஏற்றுமதிக்கான NCEL, இயற்கை வேளாண்மைக்கான NCOL, மற்றும் விதை உற்பத்திக்கான BBSSL.",
+            "why_a_en": "Correct. All statements accurately describe the three new national cooperatives.",
+            "why_a_ta": "சரி. அனைத்து கூற்றுகளும் 2023-ல் உருவாக்கப்பட்ட மூன்று புதிய தேசிய கூட்டுறவுகளைச் சரியாக விவரிக்கின்றன.",
+            "why_b_en": "Incorrect. Statement 3 is also correct.",
+            "why_b_ta": "தவறு. கூற்று 3-ம் சரியானது.",
+            "why_c_en": "Incorrect. Statement 1 is also correct.",
+            "why_c_ta": "தவறு. கூற்று 1-ம் சரியானது.",
+            "why_d_en": "Incorrect. Statement 2 is also correct.",
+            "why_d_ta": "தவறு. கூற்று 2-ம் சரியானது.",
+            "tip_en": "Remember the 3 New National Apex Cooperatives: NCEL = Exports; NCOL = Organics; BBSSL = Seeds.",
+            "tip_ta": "மூன்று புதிய தேசிய கூட்டுறவுகள்: NCEL = ஏற்றுமதி; NCOL = இயற்கை வேளாண்மை; BBSSL = விதைகள்.",
+            "fact_en": "NCOL markets organic products under the brand name 'Bharat Organics'.",
+            "fact_ta": "NCOL தனது இயற்கை விளைபொருட்களை 'பாரத் ஆர்கானிக்ஸ்' (Bharat Organics) என்ற பிராண்ட் பெயரில் சந்தைப்படுத்துகிறது."
+        },
+
+        # CS_S_047: Co-operative Bank Supervision and DICGC Cover
+        {
+            "subtopic": "Deposit Insurance for Cooperative Banks",
+            "stem_en": "Consider the following statements regarding deposit insurance coverage for cooperative banks:\n1. Deposits in insured co-operative banks are protected by the Deposit Insurance and Credit Guarantee Corporation (DICGC).\n2. The deposit insurance cover is up to ₹5 lakh per depositor per insured bank (principal and interest combined).\n3. Primary Agricultural Credit Societies (PACS) are covered under the DICGC insurance scheme.\nWhich of the statements given above are correct?",
+            "stem_ta": "கூட்டுறவு வங்கிகளுக்கான வைப்புத்தொகை காப்பீடு தொடர்பான பின்வரும் கூற்றுகளை ஆராய்க:\n1. காப்பீடு செய்யப்பட்ட கூட்டுறவு வங்கிகளில் உள்ள வைப்புத்தொகைகள் வைப்புத்தொகை காப்பீடு மற்றும் கடன் உத்தரவாதக் கழகத்தால் (DICGC) பாதுகாக்கப்படுகின்றன.\n2. ஒரு வங்கியின் ஒரு வைப்புத்தொகையாளருக்கு அதிகபட்சமாக ₹5 லட்சம் வரை காப்பீட்டுத் தொகை வழங்கப்படுகிறது.\n3. தொடக்க வேளாண் கடன் சங்கங்கள் (PACS) DICGC காப்பீட்டுத் திட்டத்தின் கீழ் பாதுகாக்கப்படுகின்றன.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+            "options": [
+                ("1 and 2 only", "1 மற்றும் 2 மட்டும்"),
+                ("1 only", "1 மட்டும்"),
+                ("2 and 3 only", "2 மற்றும் 3 மட்டும்"),
+                ("1, 2 and 3", "1, 2 மற்றும் 3")
+            ],
+            "correct_key": "A",
+            "exp_en": "Statements 1 and 2 are correct. Under the DICGC Act 1961, eligible cooperative banks are covered up to ₹5 lakh per depositor. Statement 3 is INCORRECT because PACS are credit societies and NOT banks; hence PACS deposits are NOT insured by DICGC.",
+            "exp_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. DICGC சட்டத்தின் கீழ் கூட்டுறவு வங்கி வைப்புகளுக்கு ₹5 லட்சம் வரை காப்பீடு உண்டு. ஆனால் தொடக்க வேளாண் கடன் சங்கங்கள் (PACS) வங்கிகள் அல்ல என்பதால் அவற்றின் வைப்புகளுக்கு DICGC காப்பீடு கிடைக்காது (கூற்று 3 தவறு).",
+            "why_a_en": "Correct. Statements 1 and 2 are true; statement 3 is false as PACS are not covered by DICGC.",
+            "why_a_ta": "சரி. கூற்றுகள் 1 மற்றும் 2 சரியானவை; PACS-க்கு DICGC காப்பீடு இல்லாததால் கூற்று 3 தவறு.",
+            "why_b_en": "Incorrect. Statement 2 is also correct (limit raised to ₹5 lakh in 2020).",
+            "why_b_ta": "தவறு. 2020-ல் ₹5 லட்சமாக உயர்த்தப்பட்டதால் கூற்று 2-ம் சரியானது.",
+            "why_c_en": "Incorrect. Statement 3 is false.",
+            "why_c_ta": "தவறு. கூற்று 3 தவறானது.",
+            "why_d_en": "Incorrect. Statement 3 is false.",
+            "why_d_ta": "தவறு. கூற்று 3 தவறானது.",
+            "tip_en": "Critical Difference: Urban Co-op Banks and State/DCCBs = Covered by DICGC (₹5 lakh). PACS = NOT covered by DICGC.",
+            "tip_ta": "முக்கிய வேறுபாடு: நகர்ப்புற / மாவட்ட மத்திய வங்கிகள் = DICGC காப்பீடு உண்டு (₹5 லட்சம்). PACS = காப்பீடு இல்லை.",
+            "fact_en": "The deposit insurance limit was increased from ₹1 lakh to ₹5 lakh with effect from 4 February 2020.",
+            "fact_ta": "வைப்புத்தொகை காப்பீட்டு வரம்பு 2020 பிப்ரவரி 4 முதல் ₹1 லட்சத்திலிருந்து ₹5 லட்சமாக உயர்த்தப்பட்டது."
+        },
+
+        # CS_S_048: Primary Weavers Cooperative Societies (PWCS) in TN
+        {
+            "subtopic": "Handloom Cooperatives in Tamil Nadu",
+            "stem_en": "Consider the following statements regarding Primary Weavers' Cooperative Societies in Tamil Nadu:\n1. They provide continuous employment to traditional handloom weavers by supplying yarn and dyes.\n2. They procure woven cloth from members and market it through Co-optex and open market outlets.\n3. The Tamil Nadu government provides a 20% rebate on sale of handloom products during festival seasons.\nWhich of the statements given above are correct?",
+            "stem_ta": "தமிழ்நாட்டில் தொடக்க நெசவாளர் கூட்டுறவு சங்கங்கள் தொடர்பான பின்வரும் கூற்றுகளை ஆராய்க:\n1. அவை பாரம்பரிய கைத்தறி நெசவாளர்களுக்கு நூல் மற்றும் சாயங்களை வழங்கி தொடர் வேலைவாய்ப்பை வழங்குகின்றன.\n2. அவை உறுப்பினர்களிடமிருந்து நெய்த துணிகளைக் கொள்முதல் செய்து கோ-ஆப்லெக்ஸ் மற்றும் வெளிச்சந்தைக் கடைகள் மூலம் விற்பனை செய்கின்றன.\n3. பண்டிகைக் காலங்களில் கைத்தறி பொருட்கள் விற்பனைக்கு தமிழ்நாடு அரசு 20% தள்ளுபடி மானியம் (Rebate) வழங்குகிறது.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+            "options": [
+                ("1, 2 and 3", "1, 2 மற்றும் 3"),
+                ("1 and 2 only", "1 மற்றும் 2 மட்டும்"),
+                ("2 and 3 only", "2 மற்றும் 3 மட்டும்"),
+                ("1 and 3 only", "1 மற்றும் 3 மட்டும்")
+            ],
+            "correct_key": "A",
+            "exp_en": "All three statements are correct. In Tamil Nadu, Primary Weavers Cooperative Societies operate under the master-weaver elimination model, supplying inputs and buying finished cloth. The State Government supports the handloom sector through festival rebate schemes (usually 20-30% rebate).",
+            "exp_ta": "மூன்று கூற்றுகளும் சரியானவை. தமிழகத்தில் உள்ள தொடக்க நெசவாளர் கூட்டுறவு சங்கங்கள் மூலப்பொருட்களை வழங்கி முடிக்கப்பட்ட ஆடைகளைப் பெற்று நெசவாளர்களைப் பாதுகாக்கின்றன. அரசு பண்டிகைக் காலங்களில் கைத்தறி விற்பனைக்கு தள்ளுபடி மானியங்களை வழங்குகிறது.",
+            "why_a_en": "Correct. All statements accurately reflect Tamil Nadu handloom welfare policies.",
+            "why_a_ta": "சரி. அனைத்து கூற்றுகளும் தமிழக கைத்தறி நெசவாளர் நலக் கொள்கைகளைச் சரியாக விளக்குகின்றன.",
+            "why_b_en": "Incorrect. Statement 3 is also correct.",
+            "why_b_ta": "தவறு. கூற்று 3-ம் சரியானது.",
+            "why_c_en": "Incorrect. Statement 1 is also correct.",
+            "why_c_ta": "தவறு. கூற்று 1-ம் சரியானது.",
+            "why_d_en": "Incorrect. Statement 2 is also correct.",
+            "why_d_ta": "தவறு. கூற்று 2-ம் சரியானது.",
+            "tip_en": "Tamil Nadu Handloom Schemes: Free Uniform Scheme for school children + Free Dhoti and Saree Scheme for Pongal are executed through weaver cooperatives.",
+            "tip_ta": "தமிழக திட்டங்கள்: இலவச சீருடைத் திட்டம் மற்றும் பொங்கல் இலவச வேட்டி-சேலை திட்டம் ஆகியவை நெசவாளர் கூட்டுறவு மூலமே நிறைவேற்றப்படுகின்றன.",
+            "fact_en": "Over 1,100 handloom weaver cooperative societies operate in Tamil Nadu.",
+            "fact_ta": "தமிழ்நாட்டில் 1,100-க்கும் மேற்பட்ட கைத்தறி நெசவாளர் கூட்டுறவு சங்கங்கள் செயல்படுகின்றன."
+        },
+
+        # CS_S_049: National Cooperative Database
+        {
+            "subtopic": "Digital Initiatives in Cooperation",
+            "stem_en": "Consider the following statements regarding the National Cooperative Database launched by the Ministry of Cooperation:\n1. It is a comprehensive web-based portal capturing data of all cooperative societies across India.\n2. It maps cooperatives across all three tiers: Primary, District and Apex levels.\n3. The database identifies 'dry' or unserved panchayats and villages to establish new primary cooperatives (PACS, Dairy, Fishery).\nWhich of the statements given above are correct?",
+            "stem_ta": "கூட்டுறவு அமைச்சகத்தால் தொடங்கப்பட்ட தேசிய கூட்டுறவு தரவுத்தளம் (National Cooperative Database) தொடர்பான பின்வரும் கூற்றுகளை ஆராய்க:\n1. இது இந்தியா முழுவதும் உள்ள அனைத்துக் கூட்டுறவு சங்கங்களின் தரவுகளையும் உள்ளடக்கிய ஒரு விரிவான வலைத்தளமாகும்.\n2. இது தொடக்க, மாவட்ட மற்றும் உச்ச அமைப்புகள் என மூன்றடுக்குகளிலும் கூட்டுறவுகளை வரைபடமாக்குகிறது.\n3. புதிய தொடக்கக் கூட்டுறவுகளை (PACS, பால்வளம், மீன்வளம்) அமைப்பதற்காக கூட்டுறவு சங்கங்களே இல்லாத ஊராட்சிகள் மற்றும் கிராமங்களை இத்தரவுத்தளம் அடையாளம் காண்கிறது.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+            "options": [
+                ("1, 2 and 3", "1, 2 மற்றும் 3"),
+                ("1 and 2 only", "1 மற்றும் 2 மட்டும்"),
+                ("2 and 3 only", "2 மற்றும் 3 மட்டும்"),
+                ("1 and 3 only", "1 மற்றும் 3 மட்டும்")
+            ],
+            "correct_key": "A",
+            "exp_en": "All three statements are correct. The National Cooperative Database was officially launched in March 2024. It catalogs data of over 8 lakh cooperative societies in India across 3 phases, identifying uncovered panchayats to realize the Cabinet's goal of setting up 2 lakh new multipurpose PACS, dairy and fishery cooperatives.",
+            "exp_ta": "மூன்று கூற்றுகளும் சரியானவை. மார்ச் 2024-ல் தொடங்கப்பட்ட தேசிய கூட்டுறவு தரவுத்தளம் நாட்டில் உள்ள 8 லட்சத்திற்கும் மேற்பட்ட கூட்டுறவு சங்கங்களின் தரவுகளைக் கொண்டுள்ளது. கூட்டுறவு சங்கங்களே இல்லாத பஞ்சாயத்துகளில் 2 லட்சம் புதிய சங்கங்களைத் தொடங்குவதே இதன் நோக்கமாகும்.",
+            "why_a_en": "Correct. All statements accurately describe the National Cooperative Database.",
+            "why_a_ta": "சரி. அனைத்து கூற்றுகளும் தேசிய கூட்டுறவு தரவுத்தளத்தின் நோக்கங்களைச் சரியாக விவரிக்கின்றன.",
+            "why_b_en": "Incorrect. Statement 3 is also correct.",
+            "why_b_ta": "தவறு. கூற்று 3-ம் சரியானது.",
+            "why_c_en": "Incorrect. Statement 1 is also correct.",
+            "why_c_ta": "தவறு. கூற்று 1-ம் சரியானது.",
+            "why_d_en": "Incorrect. Statement 2 is also correct.",
+            "why_d_ta": "தவறு. கூற்று 2-ம் சரியானது.",
+            "tip_en": "Target: 2 lakh new Primary Agricultural Credit Societies (PACS), Dairy and Fisheries cooperatives in uncovered panchayats over 5 years.",
+            "tip_ta": "இலக்கு: கூட்டுறவு இல்லாத பஞ்சாயத்துகளில் 5 ஆண்டுகளில் 2 லட்சம் புதிய தொடக்க வேளாண், பால் மற்றும் மீன்வளக் கூட்டுறவுகள் தொடங்குதல்.",
+            "fact_en": "The database was developed in collaboration with State Governments and Registrar offices.",
+            "fact_ta": "இத்தரவுத்தளம் மாநில அரசுகள் மற்றும் பதிவாளர் அலுவலகங்களுடன் இணைந்து உருவாக்கப்பட்டது."
+        },
+
+        # CS_S_050: Summary of Constitutional Balance in Co-operatives
+        {
+            "subtopic": "Constitutional Balance Post-2021",
+            "stem_en": "Consider the following statements summarizing the constitutional status of co-operative societies in India today:\n1. The right to form co-operative societies remains a Fundamental Right under Article 19(1)(c).\n2. The promotion of co-operative societies remains an active Directive Principle of State Policy under Article 43B.\n3. Part IX-B applies exclusively to Multi-State Co-operative Societies and Union Territories, while State co-operatives are governed by respective State Legislatures under List II Entry 32.\nWhich of the statements given above are correct?",
+            "stem_ta": "இன்று இந்தியாவில் கூட்டுறவு சங்கங்களின் அரசியலமைப்பு அந்தஸ்தை சுருக்கமாகக் கூறும் பின்வரும் கூற்றுகளை ஆராய்க:\n1. கூட்டுறவு சங்கங்களை அமைக்கும் உரிமை உறுப்பு 19(1)(c)-ன் கீழ் ஓர் அடிப்படை உரிமையாகத் தொடர்கிறது.\n2. கூட்டுறவு சங்கங்களை ஊக்குவிப்பது உறுப்பு 43B-ன் கீழ் அரசு வழிகாட்டு நெறிமுறையாகத் தொடர்கிறது.\n3. பகுதி IX-B பல மாநில கூட்டுறவு சங்கங்கள் மற்றும் யூனியன் பிரதேசங்களுக்கு மட்டுமே பொருந்தும்; மாநிலக் கூட்டுறவுகள் பட்டியல் II பதிவு 32-ன் கீழ் அந்தந்த மாநில சட்டமன்றங்களால் ஆளப்படுகின்றன.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+            "options": [
+                ("1, 2 and 3", "1, 2 மற்றும் 3"),
+                ("1 and 2 only", "1 மற்றும் 2 மட்டும்"),
+                ("2 and 3 only", "2 மற்றும் 3 மட்டும்"),
+                ("1 and 3 only", "1 மற்றும் 3 மட்டும்")
+            ],
+            "correct_key": "A",
+            "exp_en": "All three statements are correct. Post the 2021 Supreme Court judgment in Union of India v. Rajendra N. Shah: (1) Article 19(1)(c) is 100% valid; (2) Article 43B is 100% valid; (3) Part IX-B is severed — it governs Multi-State Cooperatives (List I Entry 44) and UTs (Article 246(4)), whereas State cooperatives revert exclusively to State Legislative autonomy under List II Entry 32.",
+            "exp_ta": "மூன்று கூற்றுகளும் சரியானவை. 2021 ராஜேந்திர ஷா உச்சநீதிமன்றத் தீர்ப்பிற்குப் பிறகு: (1) உறுப்பு 19(1)(c) செல்லும்; (2) உறுப்பு 43B செல்லும்; (3) பகுதி IX-B பல மாநில கூட்டுறவு மற்றும் யூனியன் பிரதேசங்களுக்கு மட்டுமே செல்லும். மாநில கூட்டுறவு சங்கங்கள் மாநிலப் பட்டியல் பதிவு 32-ன் கீழ் மாநிலங்களின் தனித்துவமான அதிகாரத்தில் உள்ளன.",
+            "why_a_en": "Correct. All three statements accurately summarize the present post-2021 constitutional reality.",
+            "why_a_ta": "சரி. மூன்று கூற்றுகளும் 2021 தீர்ப்பிற்குப் பிந்தைய தற்போதைய அரசியலமைப்பு நிலையைத் துல்லியமாகச் சுருக்கிக் கூறுகின்றன.",
+            "why_b_en": "Incorrect. Statement 3 is also correct.",
+            "why_b_ta": "தவறு. கூற்று 3-ம் சரியானது.",
+            "why_c_en": "Incorrect. Statement 1 is also correct.",
+            "why_c_ta": "தவறு. கூற்று 1-ம் சரியானது.",
+            "why_d_en": "Incorrect. Statement 2 is also correct.",
+            "why_d_ta": "தவறு. கூற்று 2-ம் சரியானது.",
+            "tip_en": "Master Summary: Part III (19(1)(c)) = UPHELD; Part IV (43B) = UPHELD; Part IX-B = UPHELD for Multi-State & UTs, INVALID for State Cooperatives.",
+            "tip_ta": "முழுச் சுருக்கம்: பகுதி III (19(1)(c)) = செல்லும்; பகுதி IV (43B) = செல்லும்; பகுதி IX-B = பல மாநிலம் & யூனியன் பிரதேசங்களுக்கு செல்லும், மாநிலக் கூட்டுறவுகளுக்கு செல்லாது.",
+            "fact_en": "This landmark doctrine represents one of the finest applications of the Doctrine of Severability in Indian constitutional jurisprudence.",
+            "fact_ta": "இந்திய அரசியலமைப்பு நீதித்துறை வரலாற்றில் பிரித்தெடுக்கும் கோட்பாட்டின் மிகச் சிறந்த பயன்பாடுகளில் இது ஒன்றாகும்."
+        }
+    ]
+
+
+def build_statement_file():
+    raw_list = (
+        get_statement_raw_questions() +
+        get_statement_questions_batch2() +
+        get_statement_questions_batch3() +
+        get_statement_questions_batch4()
+    )
+    print(f"Loaded {len(raw_list)} raw Statement questions.")
+    assert len(raw_list) == 50, f"Expected 50 questions, got {len(raw_list)}"
+
+    questions = []
+    for idx, item in enumerate(raw_list, start=1):
+        qid = f"CS_S_{idx:03d}"
+        opts = item["options"]
+        correct_key = item["correct_key"]
+
+        q = make_coop_q(
+            qid=qid,
+            diff="Medium",
+            qtype="statement_based",
+            subtopic=item["subtopic"],
+            en_stem=item["stem_en"],
+            ta_stem=item["stem_ta"],
+            en_a=opts[0][0],
+            ta_a=opts[0][1],
+            en_b=opts[1][0],
+            ta_b=opts[1][1],
+            en_c=opts[2][0],
+            ta_c=opts[2][1],
+            en_d=opts[3][0],
+            ta_d=opts[3][1],
+            correct_key=correct_key,
+            exp_en=item["exp_en"],
+            exp_ta=item["exp_ta"],
+            why_a_en=item["why_a_en"],
+            why_a_ta=item["why_a_ta"],
+            why_b_en=item["why_b_en"],
+            why_b_ta=item["why_b_ta"],
+            why_c_en=item["why_c_en"],
+            why_c_ta=item["why_c_ta"],
+            why_d_en=item["why_d_en"],
+            why_d_ta=item["why_d_ta"],
+            tip_en=item["tip_en"],
+            tip_ta=item["tip_ta"],
+            fact_en=item["fact_en"],
+            fact_ta=item["fact_ta"],
+            tags=["polity", "cooperative_societies", "statement", item["subtopic"].lower().replace(" ", "_")]
+        )
+        questions.append(q)
+
+    # Randomize and balance answer keys: 12-13 per option, max run <= 2
+    balanced = randomize_and_balance_dataset(questions, seed=101)
+    key_dist = Counter(q["correct_answer"] for q in balanced)
+    print(f"Balanced Key Distribution: {dict(key_dist)}")
+
+    out_dir = os.path.join("data", "questions", "polity")
+    os.makedirs(out_dir, exist_ok=True)
+    out_path = os.path.join(out_dir, "cooperative_societies_statement_based.json")
+
+    with open(out_path, "w", encoding="utf-8") as f:
+        json.dump(balanced, f, ensure_ascii=False, indent=2)
+    print(f"Saved balanced Statement MCQs to {out_path}")
+
+    # Validation
+    rep = ContentValidator.validate_file(out_path, expected_count=50, expected_prefix="CS_S_")
+    print(f"Validation: {'PASS' if rep.is_valid else 'FAIL'} | Total: {rep.total_audited}")
+    print(f"Keys: {rep.key_distribution}")
+    if not rep.is_valid:
+        for iss in rep.issues:
+            print("  Issue:", iss.severity, iss.field_name, iss.message)
+    return rep.is_valid
+
+
+if __name__ == "__main__":
+    success = build_statement_file()
+    if not success:
+        exit(1)

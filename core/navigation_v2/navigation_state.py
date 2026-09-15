@@ -186,6 +186,9 @@ def discover_note_parts(subject: str, topic_id_or_base: str) -> Dict[int, str]:
         "advocate_general": ["advocate_general"],
         "cm_state_council_ministers": ["chief_minister_state_council_of_ministers", "cm_state_council_ministers"],
         "chief_minister_state_council_of_ministers": ["chief_minister_state_council_of_ministers", "cm_state_council_ministers"],
+        "directive_principles": ["directive_principles", "dpsp", "directive_principles_of_state_policy"],
+        "directive_principles_of_state_policy": ["directive_principles", "dpsp", "directive_principles_of_state_policy"],
+        "dpsp": ["directive_principles", "dpsp", "directive_principles_of_state_policy"],
     }
     if base_no_part in alias_map:
         for alias in alias_map[base_no_part]:
@@ -299,6 +302,9 @@ def check_repository_availability(subject: str, topic_id_or_title: str) -> Dict[
             "amendments": ["constitutional_amendments", "amendments", "ca"],
             "constitutional_schedules": ["constitutional_schedules", "schedules", "sch"],
             "schedules": ["constitutional_schedules", "schedules", "sch"],
+            "directive_principles": ["directive_principles", "dpsp", "directive_principles_of_state_policy"],
+            "directive_principles_of_state_policy": ["directive_principles", "dpsp", "directive_principles_of_state_policy"],
+            "dpsp": ["directive_principles", "dpsp", "directive_principles_of_state_policy"],
         }
         if repo_basename in alias_map:
             for alias in alias_map[repo_basename]:
@@ -333,7 +339,7 @@ def check_repository_availability(subject: str, topic_id_or_title: str) -> Dict[
             "assertion_reason": _any_exists(["assertion_reason", "reasoning", "assertion"]),
             "match_the_following": _any_exists(["match_the_following", "match"]),
             "chronology": _any_exists(["chronology"]),
-            "grand_test": _any_exists(["grand_test"]),
+            "grand_test": _any_exists(["grand_test", "grand"]),
             "pyq": _any_exists(["pyq", "pyq_practice"]),
         }
 

@@ -15,13 +15,13 @@
     "options": [
       {
         "id": "A",
-        "en": "A cantonment area under the Ministry of Defence",
-        "ta": "பாதுகாப்பு அமைச்சகத்தின் கீழ் உள்ள ஒரு ராணுவக் குடியிருப்பு பகுதி"
+        "en": "An industrial township where municipal services are provided by an industrial establishment",
+        "ta": "தொழில் நிறுவனத்தால் நகராட்சி சேவைகள் வழங்கப்படும் ஒரு தொழில் நகரம் (Industrial Township)"
       },
       {
         "id": "B",
-        "en": "An industrial township where municipal services are provided by an industrial establishment",
-        "ta": "தொழில் நிறுவனத்தால் நகராட்சி சேவைகள் வழங்கப்படும் ஒரு தொழில் நகரம் (Industrial Township)"
+        "en": "A cantonment area under the Ministry of Defence",
+        "ta": "பாதுகாப்பு அமைச்சகத்தின் கீழ் உள்ள ஒரு ராணுவக் குடியிருப்பு பகுதி"
       },
       {
         "id": "C",
@@ -35,19 +35,19 @@
       }
     ],
     "options_en": [
-      "A cantonment area under the Ministry of Defence",
       "An industrial township where municipal services are provided by an industrial establishment",
+      "A cantonment area under the Ministry of Defence",
       "A special economic zone managed by a private developer",
       "A port trust governed by the Major Port Trusts Act"
     ],
     "options_ta": [
-      "பாதுகாப்பு அமைச்சகத்தின் கீழ் உள்ள ஒரு ராணுவக் குடியிருப்பு பகுதி",
       "தொழில் நிறுவனத்தால் நகராட்சி சேவைகள் வழங்கப்படும் ஒரு தொழில் நகரம் (Industrial Township)",
+      "பாதுகாப்பு அமைச்சகத்தின் கீழ் உள்ள ஒரு ராணுவக் குடியிருப்பு பகுதி",
       "தனியார் நிறுவனத்தால் நிர்வகிக்கப்படும் சிறப்புப் பொருளாதார மண்டலம்",
       "முக்கிய துறைமுகப் பொறுப்புக் கழகச் சட்டத்தால் நிர்வகிக்கப்படும் துறைமுகப் பகுதி"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "The proviso to Article 243Q(1) specifies that a Municipality may not be constituted in such urban area or part thereof as the Governor may, having regard to the size of the area and the municipal services being provided by an industrial establishment, specify by public notification to be an industrial township.",
       "ta": "உறுப்பு 243Q(1)-ன் வரம்புரை, ஒரு தொழில் நிறுவனத்தால் நகராட்சி சேவைகள் வழங்கப்பட்டு வரும் பகுதியின் அளவைக் கருத்தில் கொண்டு ஆளுநர் பொது அறிவிக்கை மூலம் 'தொழில் நகரம்' என அறிவித்தால் அங்கு நகராட்சி அமைக்கப்பட வேண்டியதில்லை என்று கூறுகிறது."
@@ -56,12 +56,12 @@
     "explanation_ta": "உறுப்பு 243Q(1)-ன் வரம்புரை, ஒரு தொழில் நிறுவனத்தால் நகராட்சி சேவைகள் வழங்கப்பட்டு வரும் பகுதியின் அளவைக் கருத்தில் கொண்டு ஆளுநர் பொது அறிவிக்கை மூலம் 'தொழில் நகரம்' என அறிவித்தால் அங்கு நகராட்சி அமைக்கப்பட வேண்டியதில்லை என்று கூறுகிறது.",
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Cantonment Boards are governed under Cantonments Act 2006, not under 243Q proviso.",
-        "ta": "தவறானது. ராணுவக் குடியிருப்பு வாரியங்கள் 2006-ஆம் ஆண்டின் சட்டத்தால் நிர்வகிக்கப்படுகின்றன."
-      },
-      "B": {
         "en": "Correct. Industrial townships providing municipal services can be exempted by the Governor.",
         "ta": "சரியானது. நகராட்சி சேவைகளை வழங்கும் தொழில் நகரங்களுக்கு ஆளுநர் விலக்களிக்கலாம்."
+      },
+      "B": {
+        "en": "Incorrect. Cantonment Boards are governed under Cantonments Act 2006, not under 243Q proviso.",
+        "ta": "தவறானது. ராணுவக் குடியிருப்பு வாரியங்கள் 2006-ஆம் ஆண்டின் சட்டத்தால் நிர்வகிக்கப்படுகின்றன."
       },
       "C": {
         "en": "Incorrect. SEZs do not have this explicit constitutional exemption unless declared an industrial township.",
@@ -202,8 +202,8 @@
       },
       {
         "id": "B",
-        "en": "Members of the Lok Sabha and State Legislative Assembly representing constituencies which comprise wholly or partly the municipal area",
-        "ta": "நகராட்சிப் பகுதியை முழுமையாகவோ அல்லது பகுதியாகவோ உள்ளடக்கிய தொகுதிகளைப் பிரதிநிதித்துவப்படுத்தும் மக்களவை மற்றும் மாநில சட்டமன்ற உறுப்பினர்கள்"
+        "en": "Only Union Cabinet Ministers from that State",
+        "ta": "அந்த மாநிலத்தைச் சேர்ந்த மத்திய அமைச்சரவை அமைச்சர்கள் மட்டுமே"
       },
       {
         "id": "C",
@@ -212,24 +212,24 @@
       },
       {
         "id": "D",
-        "en": "Only Union Cabinet Ministers from that State",
-        "ta": "அந்த மாநிலத்தைச் சேர்ந்த மத்திய அமைச்சரவை அமைச்சர்கள் மட்டுமே"
+        "en": "Members of the Lok Sabha and State Legislative Assembly representing constituencies which comprise wholly or partly the municipal area",
+        "ta": "நகராட்சிப் பகுதியை முழுமையாகவோ அல்லது பகுதியாகவோ உள்ளடக்கிய தொகுதிகளைப் பிரதிநிதித்துவப்படுத்தும் மக்களவை மற்றும் மாநில சட்டமன்ற உறுப்பினர்கள்"
       }
     ],
     "options_en": [
       "Any Member of Parliament irrespective of their constituency",
-      "Members of the Lok Sabha and State Legislative Assembly representing constituencies which comprise wholly or partly the municipal area",
+      "Only Union Cabinet Ministers from that State",
       "Only nominated members of the State Legislative Council",
-      "Only Union Cabinet Ministers from that State"
+      "Members of the Lok Sabha and State Legislative Assembly representing constituencies which comprise wholly or partly the municipal area"
     ],
     "options_ta": [
       "தொகுதியைப் பொருட்படுத்தாமல் எந்தவொரு நாடாளுமன்ற உறுப்பினரும்",
-      "நகராட்சிப் பகுதியை முழுமையாகவோ அல்லது பகுதியாகவோ உள்ளடக்கிய தொகுதிகளைப் பிரதிநிதித்துவப்படுத்தும் மக்களவை மற்றும் மாநில சட்டமன்ற உறுப்பினர்கள்",
+      "அந்த மாநிலத்தைச் சேர்ந்த மத்திய அமைச்சரவை அமைச்சர்கள் மட்டுமே",
       "மாநில சட்ட மேலவையின் நியமன உறுப்பினர்கள் மட்டுமே",
-      "அந்த மாநிலத்தைச் சேர்ந்த மத்திய அமைச்சரவை அமைச்சர்கள் மட்டுமே"
+      "நகராட்சிப் பகுதியை முழுமையாகவோ அல்லது பகுதியாகவோ உள்ளடக்கிய தொகுதிகளைப் பிரதிநிதித்துவப்படுத்தும் மக்களவை மற்றும் மாநில சட்டமன்ற உறுப்பினர்கள்"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Article 243R(2)(a)(ii) allows state laws to provide for representation in a Municipality of members of the House of the People (Lok Sabha) and the Legislative Assembly of the State representing constituencies which comprise wholly or partly the Municipal area.",
       "ta": "உறுப்பு 243R(2)(a)(ii) நகராட்சிப் பகுதியை முழுமையாகவோ அல்லது பகுதியாகவோ உள்ளடக்கிய தொகுதிகளைப் பிரதிநிதித்துவப்படுத்தும் மக்களவை மற்றும் சட்டமன்ற உறுப்பினர்களுக்கு நகராட்சியில் பிரதிநிதித்துவம் வழங்க மாநில சட்டத்திற்கு அதிகாரம் அளிக்கிறது."
@@ -242,16 +242,16 @@
         "ta": "தவறானது. அவர்கள் நகராட்சிப் பகுதியை உள்ளடக்கிய தொகுதியைப் பிரதிநிதித்துவப்படுத்த வேண்டும்."
       },
       "B": {
-        "en": "Correct. MLAs and Lok Sabha MPs representing constituencies covering the municipality may be represented.",
-        "ta": "சரியானது. நகராட்சிப் பகுதிக்குட்பட்ட தொகுதிகளின் எம்.எல்.ஏ.க்கள் மற்றும் மக்களவை எம்.பி.க்களுக்கு பிரதிநிதித்துவம் வழங்கப்படலாம்."
+        "en": "Incorrect. Union Ministers have no ex-officio seat.",
+        "ta": "தவறானது. மத்திய அமைச்சர்களுக்கு இதில் பதவிவழி இடம் இல்லை."
       },
       "C": {
         "en": "Incorrect. MLCs have a different criterion (must be registered as electors).",
         "ta": "தவறானது. மேலவை உறுப்பினர்களுக்கு வாக்காளராகப் பதிவு செய்திருக்க வேண்டும் என்ற தனி விதி உள்ளது."
       },
       "D": {
-        "en": "Incorrect. Union Ministers have no ex-officio seat.",
-        "ta": "தவறானது. மத்திய அமைச்சர்களுக்கு இதில் பதவிவழி இடம் இல்லை."
+        "en": "Correct. MLAs and Lok Sabha MPs representing constituencies covering the municipality may be represented.",
+        "ta": "சரியானது. நகராட்சிப் பகுதிக்குட்பட்ட தொகுதிகளின் எம்.எல்.ஏ.க்கள் மற்றும் மக்களவை எம்.பி.க்களுக்கு பிரதிநிதித்துவம் வழங்கப்படலாம்."
       }
     },
     "tnpsc_tip": {
@@ -292,13 +292,13 @@
       },
       {
         "id": "B",
-        "en": "Registered as electors within the municipal area",
-        "ta": "அந்த நகராட்சிப் பகுதிக்குள் வாக்காளர்களாகப் பதிவு செய்யப்பட்டுள்ளவர்களாக இருக்க வேண்டும்"
+        "en": "Nominated directly by the Governor",
+        "ta": "ஆளுநரால் நேரடியாக நியமிக்கப்பட்டவர்களாக இருக்க வேண்டும்"
       },
       {
         "id": "C",
-        "en": "Nominated directly by the Governor",
-        "ta": "ஆளுநரால் நேரடியாக நியமிக்கப்பட்டவர்களாக இருக்க வேண்டும்"
+        "en": "Registered as electors within the municipal area",
+        "ta": "அந்த நகராட்சிப் பகுதிக்குள் வாக்காளர்களாகப் பதிவு செய்யப்பட்டுள்ளவர்களாக இருக்க வேண்டும்"
       },
       {
         "id": "D",
@@ -308,18 +308,18 @@
     ],
     "options_en": [
       "Born in that municipal area",
-      "Registered as electors within the municipal area",
       "Nominated directly by the Governor",
+      "Registered as electors within the municipal area",
       "Serving as Ministers in the State Cabinet"
     ],
     "options_ta": [
       "அந்த நகராட்சிப் பகுதியில் பிறந்தவர்களாக இருக்க வேண்டும்",
-      "அந்த நகராட்சிப் பகுதிக்குள் வாக்காளர்களாகப் பதிவு செய்யப்பட்டுள்ளவர்களாக இருக்க வேண்டும்",
       "ஆளுநரால் நேரடியாக நியமிக்கப்பட்டவர்களாக இருக்க வேண்டும்",
+      "அந்த நகராட்சிப் பகுதிக்குள் வாக்காளர்களாகப் பதிவு செய்யப்பட்டுள்ளவர்களாக இருக்க வேண்டும்",
       "மாநில அமைச்சரவையில் அமைச்சர்களாகப் பணியாற்றுபவர்களாக இருக்க வேண்டும்"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Article 243R(2)(a)(iii) provides for representation in a Municipality of members of the Council of States and the Legislative Council of the State 'registered as electors within the Municipal area'.",
       "ta": "உறுப்பு 243R(2)(a)(iii) 'நகராட்சிப் பகுதிக்குள் வாக்காளர்களாகப் பதிவு செய்யப்பட்டுள்ள' மாநிலங்களவை மற்றும் சட்ட மேலவை உறுப்பினர்களுக்கு நகராட்சியில் பிரதிநிதித்துவம் வழங்க வழிசெய்கிறது."
@@ -332,12 +332,12 @@
         "ta": "தவறானது. பிறந்த இடம் கணக்கில் கொள்ளப்படுவதில்லை."
       },
       "B": {
-        "en": "Correct. They must be registered as voters within the municipal boundary.",
-        "ta": "சரியானது. அவர்கள் நகராட்சி எல்லைக்குள் வாக்காளராகப் பதிவு செய்யப்பட்டிருக்க வேண்டும்."
-      },
-      "C": {
         "en": "Incorrect. Governor does not nominate them to municipalities.",
         "ta": "தவறானது. ஆளுநர் இவர்களை நகராட்சிக்கு நியமிப்பதில்லை."
+      },
+      "C": {
+        "en": "Correct. They must be registered as voters within the municipal boundary.",
+        "ta": "சரியானது. அவர்கள் நகராட்சி எல்லைக்குள் வாக்காளராகப் பதிவு செய்யப்பட்டிருக்க வேண்டும்."
       },
       "D": {
         "en": "Incorrect. Ministerial post is not required.",
@@ -383,13 +383,13 @@
       },
       {
         "id": "B",
-        "en": "Provided by the Legislature of a State by law (can be direct or indirect)",
-        "ta": "மாநில சட்டமன்றம் சட்டம் இயற்றுவதன் மூலம் தீர்மானிக்கப்படுகிறது (நேரடியாகவோ அல்லது மறைமுகமாகவோ இருக்கலாம்)"
+        "en": "Mandatorily by indirect election by the elected ward councillors only",
+        "ta": "கட்டாயமாக தேர்ந்தெடுக்கப்பட்ட வார்டு உறுப்பினர்களால் மறைமுகத் தேர்தல் மூலம் மட்டுமே"
       },
       {
         "id": "C",
-        "en": "Mandatorily by indirect election by the elected ward councillors only",
-        "ta": "கட்டாயமாக தேர்ந்தெடுக்கப்பட்ட வார்டு உறுப்பினர்களால் மறைமுகத் தேர்தல் மூலம் மட்டுமே"
+        "en": "Provided by the Legislature of a State by law (can be direct or indirect)",
+        "ta": "மாநில சட்டமன்றம் சட்டம் இயற்றுவதன் மூலம் தீர்மானிக்கப்படுகிறது (நேரடியாகவோ அல்லது மறைமுகமாகவோ இருக்கலாம்)"
       },
       {
         "id": "D",
@@ -399,18 +399,18 @@
     ],
     "options_en": [
       "Mandatorily by direct election by the voters of the entire city",
-      "Provided by the Legislature of a State by law (can be direct or indirect)",
       "Mandatorily by indirect election by the elected ward councillors only",
+      "Provided by the Legislature of a State by law (can be direct or indirect)",
       "By rotation among the senior-most councillors"
     ],
     "options_ta": [
       "கட்டாயமாக முழு நகர வாக்காளர்களால் நேரடித் தேர்தல் மூலம் மட்டுமே",
-      "மாநில சட்டமன்றம் சட்டம் இயற்றுவதன் மூலம் தீர்மானிக்கப்படுகிறது (நேரடியாகவோ அல்லது மறைமுகமாகவோ இருக்கலாம்)",
       "கட்டாயமாக தேர்ந்தெடுக்கப்பட்ட வார்டு உறுப்பினர்களால் மறைமுகத் தேர்தல் மூலம் மட்டுமே",
+      "மாநில சட்டமன்றம் சட்டம் இயற்றுவதன் மூலம் தீர்மானிக்கப்படுகிறது (நேரடியாகவோ அல்லது மறைமுகமாகவோ இருக்கலாம்)",
       "மூத்த உறுப்பினர்களுக்கு இடையே சுழற்சி முறை மூலம்"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Article 243R(2)(b) leaves the manner of election of the Chairperson of a Municipality entirely to the State Legislature by law, which may prescribe direct election by voters or indirect election by councillors.",
       "ta": "உறுப்பு 243R(2)(b) நகராட்சித் தலைவர் தேர்ந்தெடுக்கப்படும் முறையை மாநில சட்டமன்றத்தின் சட்டத்திற்கே விட்டுவிடுகிறது; அது நேரடித் தேர்தலாகவோ அல்லது மறைமுகத் தேர்தலாகவோ இருக்கலாம்."
@@ -423,12 +423,12 @@
         "ta": "தவறானது. நேரடித் தேர்தல் அரசியலமைப்பால் கட்டாயமாக்கப்படவில்லை."
       },
       "B": {
-        "en": "Correct. State Legislature has full discretion over direct vs indirect election of Chairperson.",
-        "ta": "சரியானது. தலைவர் நேரடியா அல்லது மறைமுகமா என்பதை முடிவு செய்யும் முழு அதிகாரம் மாநில சட்டமன்றத்திற்கே உள்ளது."
-      },
-      "C": {
         "en": "Incorrect. Indirect election is mandatory for intermediate and district Panchayats under Art 243C(5), but NOT for Municipalities!",
         "ta": "தவறானது. ஊராட்சிகளில் இடைநிலை மற்றும் மாவட்ட அளவில் மறைமுகத் தேர்தல் கட்டாயம் (243C(5)), ஆனால் நகராட்சிகளில் அல்ல!"
+      },
+      "C": {
+        "en": "Correct. State Legislature has full discretion over direct vs indirect election of Chairperson.",
+        "ta": "சரியானது. தலைவர் நேரடியா அல்லது மறைமுகமா என்பதை முடிவு செய்யும் முழு அதிகாரம் மாநில சட்டமன்றத்திற்கே உள்ளது."
       },
       "D": {
         "en": "Incorrect. Rotation among senior members does not exist in the Constitution.",
@@ -559,13 +559,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Power to abolish all Wards Committees at will",
-        "ta": "அனைத்து வார்டு குழுக்களையும் தன்னிச்சையாக ரத்து செய்யும் அதிகாரம்"
+        "en": "Power to make provision for the constitution of committees in addition to Wards Committees",
+        "ta": "வார்டு குழுக்களைத் தவிர மற்ற குழுக்களை அமைப்பதற்கான விதிகளை உருவாக்கும் அதிகாரம்"
       },
       {
         "id": "B",
-        "en": "Power to make provision for the constitution of committees in addition to Wards Committees",
-        "ta": "வார்டு குழுக்களைத் தவிர மற்ற குழுக்களை அமைப்பதற்கான விதிகளை உருவாக்கும் அதிகாரம்"
+        "en": "Power to abolish all Wards Committees at will",
+        "ta": "அனைத்து வார்டு குழுக்களையும் தன்னிச்சையாக ரத்து செய்யும் அதிகாரம்"
       },
       {
         "id": "C",
@@ -579,19 +579,19 @@
       }
     ],
     "options_en": [
-      "Power to abolish all Wards Committees at will",
       "Power to make provision for the constitution of committees in addition to Wards Committees",
+      "Power to abolish all Wards Committees at will",
       "Power to replace elected councillors with bureaucrat committees",
       "Power to appoint judicial commissions to run municipalities"
     ],
     "options_ta": [
-      "அனைத்து வார்டு குழுக்களையும் தன்னிச்சையாக ரத்து செய்யும் அதிகாரம்",
       "வார்டு குழுக்களைத் தவிர மற்ற குழுக்களை அமைப்பதற்கான விதிகளை உருவாக்கும் அதிகாரம்",
+      "அனைத்து வார்டு குழுக்களையும் தன்னிச்சையாக ரத்து செய்யும் அதிகாரம்",
       "தேர்ந்தெடுக்கப்பட்ட உறுப்பினர்களுக்குப் பதிலாக அதிகாரத்துவக் குழுக்களை நியமிக்கும் அதிகாரம்",
       "நகராட்சிகளை நடத்த நீதித்துறை ஆணையங்களை அமைக்கும் அதிகாரம்"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Article 243S(5) clarifies that nothing in Article 243S shall be deemed to prevent the Legislature of a State from making any provision for the constitution of committees in addition to the Wards Committees (e.g. Standing Committees, Accounts Committees).",
       "ta": "உறுப்பு 243S(5) வார்டு குழுக்களைத் தவிர மற்ற குழுக்களை (எ.கா. நிலைக்குழுக்கள், கணக்குக் குழுக்கள்) அமைப்பதற்கான விதிகளை உருவாக்குவதிலிருந்து மாநில சட்டமன்றத்தை எதுவும் தடுக்காது என்று கூறுகிறது."
@@ -600,12 +600,12 @@
     "explanation_ta": "உறுப்பு 243S(5) வார்டு குழுக்களைத் தவிர மற்ற குழுக்களை (எ.கா. நிலைக்குழுக்கள், கணக்குக் குழுக்கள்) அமைப்பதற்கான விதிகளை உருவாக்குவதிலிருந்து மாநில சட்டமன்றத்தை எதுவும் தடுக்காது என்று கூறுகிறது.",
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Wards Committees are mandatory where population >= 3 lakhs; they cannot be abolished.",
-        "ta": "தவறானது. 3 லட்சம் மக்கள்தொகை உள்ள இடங்களில் வார்டு குழுக்கள் கட்டாயமானவை."
-      },
-      "B": {
         "en": "Correct. State legislatures can constitute Standing Committees, Taxation Committees, Public Health Committees, etc.",
         "ta": "சரியானது. மாநில சட்டமன்றங்கள் நிலைக்குழுக்கள், வரிவிதிப்புக் குழுக்கள் போன்ற கூடுதல் குழுக்களை அமைக்கலாம்."
+      },
+      "B": {
+        "en": "Incorrect. Wards Committees are mandatory where population >= 3 lakhs; they cannot be abolished.",
+        "ta": "தவறானது. 3 லட்சம் மக்கள்தொகை உள்ள இடங்களில் வார்டு குழுக்கள் கட்டாயமானவை."
       },
       "C": {
         "en": "Incorrect. Democratic structure cannot be replaced by bureaucrats.",
@@ -650,13 +650,13 @@
     "options": [
       {
         "id": "A",
-        "en": "To prevent candidates from serving more than one year",
-        "ta": "வேட்பாளர்கள் ஒரு வருடத்திற்கு மேல் பணியாற்றுவதைத் தடுக்க"
+        "en": "To ensure that reservation benefits spread across all wards and no single ward is permanently reserved",
+        "ta": "இடஒதுக்கீட்டின் நன்மைகள் அனைத்து வார்டுகளுக்கும் பரவுவதையும், எந்தவொரு வார்டும் நிரந்தரமாக ஒதுக்கப்படாமல் இருப்பதையும் உறுதி செய்ய"
       },
       {
         "id": "B",
-        "en": "To ensure that reservation benefits spread across all wards and no single ward is permanently reserved",
-        "ta": "இடஒதுக்கீட்டின் நன்மைகள் அனைத்து வார்டுகளுக்கும் பரவுவதையும், எந்தவொரு வார்டும் நிரந்தரமாக ஒதுக்கப்படாமல் இருப்பதையும் உறுதி செய்ய"
+        "en": "To prevent candidates from serving more than one year",
+        "ta": "வேட்பாளர்கள் ஒரு வருடத்திற்கு மேல் பணியாற்றுவதைத் தடுக்க"
       },
       {
         "id": "C",
@@ -670,19 +670,19 @@
       }
     ],
     "options_en": [
-      "To prevent candidates from serving more than one year",
       "To ensure that reservation benefits spread across all wards and no single ward is permanently reserved",
+      "To prevent candidates from serving more than one year",
       "To comply with directives from the Union Ministry of Home Affairs",
       "To automatically dissolve councils after every election"
     ],
     "options_ta": [
-      "வேட்பாளர்கள் ஒரு வருடத்திற்கு மேல் பணியாற்றுவதைத் தடுக்க",
       "இடஒதுக்கீட்டின் நன்மைகள் அனைத்து வார்டுகளுக்கும் பரவுவதையும், எந்தவொரு வார்டும் நிரந்தரமாக ஒதுக்கப்படாமல் இருப்பதையும் உறுதி செய்ய",
+      "வேட்பாளர்கள் ஒரு வருடத்திற்கு மேல் பணியாற்றுவதைத் தடுக்க",
       "மத்திய உள்துறை அமைச்சகத்தின் வழிகாட்டுதல்களுக்கு இணங்க",
       "ஒவ்வொரு தேர்தலுக்குப் பிறகும் நகராட்சிகளை தானாகக் கலைக்க"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Allotment by rotation under Article 243T(1) and (3) ensures geographical spread of political representation, prevents the permanent political disenfranchisement of general electors in any ward, and builds leadership across the entire municipal territory.",
       "ta": "உறுப்பு 243T(1) மற்றும் (3)-ன் கீழ் சுழற்சி முறை இடஒதுக்கீடு என்பது பிரதிநிதித்துவத்தை அனைத்து வார்டுகளுக்கும் விரிவுபடுத்தவும், எந்தவொரு வார்டிலும் பொதுப் பிரிவினர் நிரந்தரமாகப் புறக்கணிக்கப்படாமல் இருக்கவும் வழிவகுக்கிறது."
@@ -691,12 +691,12 @@
     "explanation_ta": "உறுப்பு 243T(1) மற்றும் (3)-ன் கீழ் சுழற்சி முறை இடஒதுக்கீடு என்பது பிரதிநிதித்துவத்தை அனைத்து வார்டுகளுக்கும் விரிவுபடுத்தவும், எந்தவொரு வார்டிலும் பொதுப் பிரிவினர் நிரந்தரமாகப் புறக்கணிக்கப்படாமல் இருக்கவும் வழிவகுக்கிறது.",
     "why_not_others": {
       "A": {
-        "en": "Incorrect. The elected member serves the full 5-year term; rotation happens at the next general election.",
-        "ta": "தவறானது. உறுப்பினர் 5 ஆண்டுகள் பணியாற்றுகிறார்; அடுத்த தேர்தலிலேயே சுழற்சி நிகழும்."
-      },
-      "B": {
         "en": "Correct. Rotation prevents permanent entrenchment of reservation in specific wards.",
         "ta": "சரியானது. குறிப்பிட்ட வார்டுகளில் இடஒதுக்கீடு நிரந்தரமாவதை சுழற்சி முறை தடுக்கிறது."
+      },
+      "B": {
+        "en": "Incorrect. The elected member serves the full 5-year term; rotation happens at the next general election.",
+        "ta": "தவறானது. உறுப்பினர் 5 ஆண்டுகள் பணியாற்றுகிறார்; அடுத்த தேர்தலிலேயே சுழற்சி நிகழும்."
       },
       "C": {
         "en": "Incorrect. It is a constitutional mechanism, not an MHA directive.",
@@ -837,8 +837,8 @@
       },
       {
         "id": "B",
-        "en": "Reservation of seats for SCs and STs and reservation of offices of Chairpersons for SCs and STs only",
-        "ta": "SC மற்றும் ST பிரிவினருக்கான இடஒதுக்கீடு மற்றும் தலைவர் பதவிகளுக்கான இடஒதுக்கீடு மட்டுமே"
+        "en": "OBC reservation only",
+        "ta": "OBC இடஒதுக்கீடு மட்டுமே"
       },
       {
         "id": "C",
@@ -847,24 +847,24 @@
       },
       {
         "id": "D",
-        "en": "OBC reservation only",
-        "ta": "OBC இடஒதுக்கீடு மட்டுமே"
+        "en": "Reservation of seats for SCs and STs and reservation of offices of Chairpersons for SCs and STs only",
+        "ta": "SC மற்றும் ST பிரிவினருக்கான இடஒதுக்கீடு மற்றும் தலைவர் பதவிகளுக்கான இடஒதுக்கீடு மட்டுமே"
       }
     ],
     "options_en": [
       "Reservation for women only",
-      "Reservation of seats for SCs and STs and reservation of offices of Chairpersons for SCs and STs only",
+      "OBC reservation only",
       "Both SC/ST reservation and Women reservation simultaneously",
-      "OBC reservation only"
+      "Reservation of seats for SCs and STs and reservation of offices of Chairpersons for SCs and STs only"
     ],
     "options_ta": [
       "பெண்களுக்கான இடஒதுக்கீடு மட்டுமே",
-      "SC மற்றும் ST பிரிவினருக்கான இடஒதுக்கீடு மற்றும் தலைவர் பதவிகளுக்கான இடஒதுக்கீடு மட்டுமே",
+      "OBC இடஒதுக்கீடு மட்டுமே",
       "SC/ST இடஒதுக்கீடு மற்றும் மகளிர் இடஒதுக்கீடு இரண்டும் ஒரே நேரத்தில்",
-      "OBC இடஒதுக்கீடு மட்டுமே"
+      "SC மற்றும் ST பிரிவினருக்கான இடஒதுக்கீடு மற்றும் தலைவர் பதவிகளுக்கான இடஒதுக்கீடு மட்டுமே"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Article 243T(5) states that reservation of seats for SCs and STs and reservation of offices of Chairpersons for SCs and STs shall cease to have effect on the expiration of the period specified in Article 334. Women's reservation is PERMANENT and NOT linked to Article 334!",
       "ta": "உறுப்பு 243T(5) உறுப்பு 334-ல் குறிப்பிடப்பட்டுள்ள காலாவதியாகும் காலக்கெடு SC மற்றும் ST இடஒதுக்கீட்டிற்கு மட்டுமே பொருந்தும் என்று கூறுகிறது. பெண்களுக்கான இடஒதுக்கீடு நிரந்தரமானது மற்றும் உறுப்பு 334-டன் இணைக்கப்படவில்லை!"
@@ -877,16 +877,16 @@
         "ta": "தவறானது. மகளிர் இடஒதுக்கீட்டிற்கு எந்த காலாவதி தேதியும் அரசியலமைப்பில் இல்லை."
       },
       "B": {
-        "en": "Correct. Article 334 sunset clause applies ONLY to SC/ST reservation.",
-        "ta": "சரியானது. உறுப்பு 334 காலக்கெடு SC/ST இடஒதுக்கீட்டிற்கு மட்டுமே பொருந்தும்."
+        "en": "Incorrect. OBC reservation is governed by state legislative policy.",
+        "ta": "தவறானது. OBC இடஒதுக்கீடு மாநில அரசின் கொள்கைக்கு உட்பட்டது."
       },
       "C": {
         "en": "Incorrect. Women's reservation does NOT expire with Article 334.",
         "ta": "தவறானது. மகளிர் இடஒதுக்கீடு உறுப்பு 334-டன் முடிவடையாது."
       },
       "D": {
-        "en": "Incorrect. OBC reservation is governed by state legislative policy.",
-        "ta": "தவறானது. OBC இடஒதுக்கீடு மாநில அரசின் கொள்கைக்கு உட்பட்டது."
+        "en": "Correct. Article 334 sunset clause applies ONLY to SC/ST reservation.",
+        "ta": "சரியானது. உறுப்பு 334 காலக்கெடு SC/ST இடஒதுக்கீட்டிற்கு மட்டுமே பொருந்தும்."
       }
     },
     "tnpsc_tip": {
@@ -924,13 +924,13 @@
     "options": [
       {
         "id": "A",
-        "en": "The Governor must obtain prior approval of the President",
-        "ta": "ஆளுநர் குடியரசுத் தலைவரின் முன் அனுமதியைப் பெற வேண்டும்"
+        "en": "The Municipality must be given a reasonable opportunity of being heard",
+        "ta": "நகராட்சி தனது விளக்கத்தை அளிக்க ஒரு நியாயமான வாய்ப்பு வழங்கப்பட வேண்டும்"
       },
       {
         "id": "B",
-        "en": "The Municipality must be given a reasonable opportunity of being heard",
-        "ta": "நகராட்சி தனது விளக்கத்தை அளிக்க ஒரு நியாயமான வாய்ப்பு வழங்கப்பட வேண்டும்"
+        "en": "The Governor must obtain prior approval of the President",
+        "ta": "ஆளுநர் குடியரசுத் தலைவரின் முன் அனுமதியைப் பெற வேண்டும்"
       },
       {
         "id": "C",
@@ -944,19 +944,19 @@
       }
     ],
     "options_en": [
-      "The Governor must obtain prior approval of the President",
       "The Municipality must be given a reasonable opportunity of being heard",
+      "The Governor must obtain prior approval of the President",
       "A resolution must be passed by a two-thirds majority in the State Assembly",
       "A judicial inquiry by a sitting High Court Judge must be completed"
     ],
     "options_ta": [
-      "ஆளுநர் குடியரசுத் தலைவரின் முன் அனுமதியைப் பெற வேண்டும்",
       "நகராட்சி தனது விளக்கத்தை அளிக்க ஒரு நியாயமான வாய்ப்பு வழங்கப்பட வேண்டும்",
+      "ஆளுநர் குடியரசுத் தலைவரின் முன் அனுமதியைப் பெற வேண்டும்",
       "மாநில சட்டமன்றத்தில் மூன்றில் இரண்டு பங்கு பெரும்பான்மையுடன் தீர்மானம் நிறைவேற்றப்பட வேண்டும்",
       "உயர் நீதிமன்ற நீதிபதியின் நீதி விசாரணை முடிக்கப்பட வேண்டும்"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "The proviso to Article 243U(1) mandates: 'Provided that a Municipality shall be given a reasonable opportunity of being heard before its dissolution.' This incorporates the fundamental principle of natural justice (audi alteram partem).",
       "ta": "உறுப்பு 243U(1)-ன் வரம்புரை: 'ஒரு நகராட்சி கலைக்கப்படுவதற்கு முன்பு அதற்கு தனது தரப்பு நியாயத்தைக் கூற நியாயமான வாய்ப்பு அளிக்கப்பட வேண்டும்' என்று கட்டாயமாக்குகிறது. இது இயற்கையான நீதிக் கோட்பாட்டை (Audi alteram partem) உறுதி செய்கிறது."
@@ -965,12 +965,12 @@
     "explanation_ta": "உறுப்பு 243U(1)-ன் வரம்புரை: 'ஒரு நகராட்சி கலைக்கப்படுவதற்கு முன்பு அதற்கு தனது தரப்பு நியாயத்தைக் கூற நியாயமான வாய்ப்பு அளிக்கப்பட வேண்டும்' என்று கட்டாயமாக்குகிறது. இது இயற்கையான நீதிக் கோட்பாட்டை (Audi alteram partem) உறுதி செய்கிறது.",
     "why_not_others": {
       "A": {
-        "en": "Incorrect. President's approval is not required for municipal dissolution.",
-        "ta": "தவறானது. நகராட்சிக் கலைப்பிற்கு குடியரசுத் தலைவரின் அனுமதி தேவையில்லை."
-      },
-      "B": {
         "en": "Correct. Opportunity of being heard is constitutionally guaranteed.",
         "ta": "சரியானது. விளக்கமளிக்க நியாயமான வாய்ப்பு அரசியலமைப்பு ரீதியாக உறுதி செய்யப்பட்டுள்ளது."
+      },
+      "B": {
+        "en": "Incorrect. President's approval is not required for municipal dissolution.",
+        "ta": "தவறானது. நகராட்சிக் கலைப்பிற்கு குடியரசுத் தலைவரின் அனுமதி தேவையில்லை."
       },
       "C": {
         "en": "Incorrect. Assembly resolution is not required.",
@@ -1015,13 +1015,13 @@
     "options": [
       {
         "id": "A",
-        "en": "The Governor of the State whose decision shall be final",
-        "ta": "மாநில ஆளுநருக்கு (அவரது முடிவே இறுதியானது)"
+        "en": "Such authority and in such manner as the Legislature of a State may by law provide",
+        "ta": "மாநில சட்டமன்றம் சட்டத்தின் மூலம் வகுத்துள்ள அதிகார அமைப்பு மற்றும் முறைக்கு"
       },
       {
         "id": "B",
-        "en": "Such authority and in such manner as the Legislature of a State may by law provide",
-        "ta": "மாநில சட்டமன்றம் சட்டத்தின் மூலம் வகுத்துள்ள அதிகார அமைப்பு மற்றும் முறைக்கு"
+        "en": "The Governor of the State whose decision shall be final",
+        "ta": "மாநில ஆளுநருக்கு (அவரது முடிவே இறுதியானது)"
       },
       {
         "id": "C",
@@ -1035,19 +1035,19 @@
       }
     ],
     "options_en": [
-      "The Governor of the State whose decision shall be final",
       "Such authority and in such manner as the Legislature of a State may by law provide",
+      "The Governor of the State whose decision shall be final",
       "The State Election Commissioner exclusively",
       "The High Court of the State through a public interest litigation"
     ],
     "options_ta": [
-      "மாநில ஆளுநருக்கு (அவரது முடிவே இறுதியானது)",
       "மாநில சட்டமன்றம் சட்டத்தின் மூலம் வகுத்துள்ள அதிகார அமைப்பு மற்றும் முறைக்கு",
+      "மாநில ஆளுநருக்கு (அவரது முடிவே இறுதியானது)",
       "மாநில தேர்தல் ஆணையருக்கு மட்டுமே",
       "பொது நல வழக்கு மூலம் மாநில உயர் நீதிமன்றத்திற்கு"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Article 243V(2) provides that if any question arises as to disqualification of a municipal councillor, 'the question shall be referred for the decision of such authority and in such manner as the Legislature of a State may, by law, provide.'",
       "ta": "உறுப்பு 243V(2) நகராட்சி உறுப்பினர் தகுதியிழப்பு தொடர்பான கேள்வி எழுந்தால், 'மாநில சட்டமன்றம் சட்டம் மூலம் வகுக்கக்கூடிய அதிகார அமைப்பின் முடிவிற்கு அக்கேள்வி அனுப்பப்பட வேண்டும்' என்று கூறுகிறது."
@@ -1056,12 +1056,12 @@
     "explanation_ta": "உறுப்பு 243V(2) நகராட்சி உறுப்பினர் தகுதியிழப்பு தொடர்பான கேள்வி எழுந்தால், 'மாநில சட்டமன்றம் சட்டம் மூலம் வகுக்கக்கூடிய அதிகார அமைப்பின் முடிவிற்கு அக்கேள்வி அனுப்பப்பட வேண்டும்' என்று கூறுகிறது.",
     "why_not_others": {
       "A": {
-        "en": "Incorrect. The Governor decides MLA disqualifications under Article 192, NOT municipal councillor disqualifications!",
-        "ta": "தவறானது. ஆளுநர் உறுப்பு 192-ன் கீழ் எம்.எல்.ஏ.க்களின் தகுதியிழப்பைத் தீர்மானிக்கிறார், நகராட்சி உறுப்பினர்களை அல்ல!"
-      },
-      "B": {
         "en": "Correct. State Legislature determines the adjudicating authority by law.",
         "ta": "சரியானது. மாநில சட்டமன்றமே சட்டம் மூலம் தீர்ப்பளிக்கும் அதிகார அமைப்பைத் தீர்மானிக்கிறது."
+      },
+      "B": {
+        "en": "Incorrect. The Governor decides MLA disqualifications under Article 192, NOT municipal councillor disqualifications!",
+        "ta": "தவறானது. ஆளுநர் உறுப்பு 192-ன் கீழ் எம்.எல்.ஏ.க்களின் தகுதியிழப்பைத் தீர்மானிக்கிறார், நகராட்சி உறுப்பினர்களை அல்ல!"
       },
       "C": {
         "en": "Incorrect. SEC does not automatically have this adjudicatory power unless specified by state law.",
@@ -1111,13 +1111,13 @@
       },
       {
         "id": "B",
-        "en": "Urban planning including town planning",
-        "ta": "நகரத் திட்டமிடல் உட்பட நகர்ப்புற திட்டமிடல் (Urban planning including town planning)"
+        "en": "Roads and bridges",
+        "ta": "சாலைகள் மற்றும் பாலங்கள்"
       },
       {
         "id": "C",
-        "en": "Roads and bridges",
-        "ta": "சாலைகள் மற்றும் பாலங்கள்"
+        "en": "Urban planning including town planning",
+        "ta": "நகரத் திட்டமிடல் உட்பட நகர்ப்புற திட்டமிடல் (Urban planning including town planning)"
       },
       {
         "id": "D",
@@ -1127,18 +1127,18 @@
     ],
     "options_en": [
       "Regulation of land-use and construction of buildings",
-      "Urban planning including town planning",
       "Roads and bridges",
+      "Urban planning including town planning",
       "Water supply for domestic, industrial and commercial purposes"
     ],
     "options_ta": [
       "நிலப் பயன்பாட்டு ஒழுங்குமுறை மற்றும் கட்டடங்கள் கட்டுதல்",
-      "நகரத் திட்டமிடல் உட்பட நகர்ப்புற திட்டமிடல் (Urban planning including town planning)",
       "சாலைகள் மற்றும் பாலங்கள்",
+      "நகரத் திட்டமிடல் உட்பட நகர்ப்புற திட்டமிடல் (Urban planning including town planning)",
       "குடிநீர், தொழிற்சாலை மற்றும் வணிக நோக்கங்களுக்கான நீர் விநியோகம்"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Item 1 of the Twelfth Schedule is 'Urban planning including town planning', making organized spatial growth the foremost constitutional functional item of Municipalities.",
       "ta": "12-வது அட்டவணையின் முதல் பாடம் 'நகரத் திட்டமிடல் உட்பட நகர்ப்புற திட்டமிடல்' ஆகும்; இது திட்டமிட்ட நகர்ப்புற வளர்ச்சியை நகராட்சிகளின் முதன்மைப் பணியாக்குகிறது."
@@ -1151,12 +1151,12 @@
         "ta": "தவறானது. நிலப் பயன்பாடு மற்றும் கட்டட ஒழுங்குமுறை என்பது 2-வது பாடம்."
       },
       "B": {
-        "en": "Correct. Item 1 is Urban planning including town planning.",
-        "ta": "சரியானது. முதல் பாடம் நகரத் திட்டமிடல் ஆகும்."
-      },
-      "C": {
         "en": "Incorrect. Roads and bridges is Item 3.",
         "ta": "தவறானது. சாலைகள் மற்றும் பாலங்கள் 3-வது பாடம்."
+      },
+      "C": {
+        "en": "Correct. Item 1 is Urban planning including town planning.",
+        "ta": "சரியானது. முதல் பாடம் நகரத் திட்டமிடல் ஆகும்."
       },
       "D": {
         "en": "Incorrect. Water supply is Item 4.",
@@ -1202,13 +1202,13 @@
       },
       {
         "id": "B",
-        "en": "Public health, sanitation conservancy and solid waste management",
-        "ta": "பொதுச் சுகாதாரம், துப்புரவுப் பணிகள் மற்றும் திடக் கழிவு மேலாண்மை"
+        "en": "Urban forestry, protection of the environment and promotion of ecological aspects",
+        "ta": "நகர்ப்புற வனவியல், சுற்றுச்சூழல் பாதுகாப்பு மற்றும் சுற்றுச்சூழல் அம்சங்களை மேம்படுத்துதல்"
       },
       {
         "id": "C",
-        "en": "Urban forestry, protection of the environment and promotion of ecological aspects",
-        "ta": "நகர்ப்புற வனவியல், சுற்றுச்சூழல் பாதுகாப்பு மற்றும் சுற்றுச்சூழல் அம்சங்களை மேம்படுத்துதல்"
+        "en": "Public health, sanitation conservancy and solid waste management",
+        "ta": "பொதுச் சுகாதாரம், துப்புரவுப் பணிகள் மற்றும் திடக் கழிவு மேலாண்மை"
       },
       {
         "id": "D",
@@ -1218,18 +1218,18 @@
     ],
     "options_en": [
       "Fire services",
-      "Public health, sanitation conservancy and solid waste management",
       "Urban forestry, protection of the environment and promotion of ecological aspects",
+      "Public health, sanitation conservancy and solid waste management",
       "Slum improvement and upgradation"
     ],
     "options_ta": [
       "தீயணைப்பு சேவைகள்",
-      "பொதுச் சுகாதாரம், துப்புரவுப் பணிகள் மற்றும் திடக் கழிவு மேலாண்மை",
       "நகர்ப்புற வனவியல், சுற்றுச்சூழல் பாதுகாப்பு மற்றும் சுற்றுச்சூழல் அம்சங்களை மேம்படுத்துதல்",
+      "பொதுச் சுகாதாரம், துப்புரவுப் பணிகள் மற்றும் திடக் கழிவு மேலாண்மை",
       "சேரி மேம்பாடு மற்றும் தரம் உயர்த்துதல்"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Item 8 of the Twelfth Schedule is 'Urban forestry, protection of the environment and promotion of ecological aspects', vesting green infrastructure responsibilities in Municipalities.",
       "ta": "12-வது அட்டவணையின் 8-வது பாடம் 'நகர்ப்புற வனவியல், சுற்றுச்சூழல் பாதுகாப்பு மற்றும் சுற்றுச்சூழல் அம்சங்களை மேம்படுத்துதல்' ஆகும்; இது பசுமைப் பராமரிப்புப் பொறுப்பை நகராட்சிகளுக்கு வழங்குகிறது."
@@ -1242,12 +1242,12 @@
         "ta": "தவறானது. தீயணைப்பு சேவைகள் 7-வது பாடம்."
       },
       "B": {
-        "en": "Incorrect. Public health, sanitation and solid waste management is Item 6.",
-        "ta": "தவறானது. பொதுச் சுகாதாரம் மற்றும் திடக் கழிவு மேலாண்மை 6-வது பாடம்."
-      },
-      "C": {
         "en": "Correct. Item 8 deals with urban forestry and environmental protection.",
         "ta": "சரியானது. 8-வது பாடம் நகர்ப்புற வனவியல் மற்றும் சுற்றுச்சூழல் தொடர்பானது."
+      },
+      "C": {
+        "en": "Incorrect. Public health, sanitation and solid waste management is Item 6.",
+        "ta": "தவறானது. பொதுச் சுகாதாரம் மற்றும் திடக் கழிவு மேலாண்மை 6-வது பாடம்."
       },
       "D": {
         "en": "Incorrect. Slum improvement is Item 10.",
@@ -1289,8 +1289,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Burials and burial grounds (Item 14)",
-        "ta": "மயானங்கள் மற்றும் இடுகாடுகள் (பாடம் 14)"
+        "en": "Safeguarding the interests of weaker sections of society, including the handicapped and mentally retarded (Item 9)",
+        "ta": "மாற்றுத்திறனாளிகள் மற்றும் மனநலம் குன்றியவர்கள் உட்பட சமூகத்தின் நலிந்த பிரிவினரின் நலன்களைப் பாதுகாத்தல் (பாடம் 9)"
       },
       {
         "id": "B",
@@ -1299,8 +1299,8 @@
       },
       {
         "id": "C",
-        "en": "Safeguarding the interests of weaker sections of society, including the handicapped and mentally retarded (Item 9)",
-        "ta": "மாற்றுத்திறனாளிகள் மற்றும் மனநலம் குன்றியவர்கள் உட்பட சமூகத்தின் நலிந்த பிரிவினரின் நலன்களைப் பாதுகாத்தல் (பாடம் 9)"
+        "en": "Burials and burial grounds (Item 14)",
+        "ta": "மயானங்கள் மற்றும் இடுகாடுகள் (பாடம் 14)"
       },
       {
         "id": "D",
@@ -1309,19 +1309,19 @@
       }
     ],
     "options_en": [
-      "Burials and burial grounds (Item 14)",
-      "Vital statistics including registration of births and deaths (Item 16)",
       "Safeguarding the interests of weaker sections of society, including the handicapped and mentally retarded (Item 9)",
+      "Vital statistics including registration of births and deaths (Item 16)",
+      "Burials and burial grounds (Item 14)",
       "Cattle pounds and prevention of cruelty to animals (Item 15)"
     ],
     "options_ta": [
-      "மயானங்கள் மற்றும் இடுகாடுகள் (பாடம் 14)",
-      "பிறப்பு மற்றும் இறப்பு பதிவு உள்ளிட்ட முக்கிய புள்ளிவிவரங்கள் (பாடம் 16)",
       "மாற்றுத்திறனாளிகள் மற்றும் மனநலம் குன்றியவர்கள் உட்பட சமூகத்தின் நலிந்த பிரிவினரின் நலன்களைப் பாதுகாத்தல் (பாடம் 9)",
+      "பிறப்பு மற்றும் இறப்பு பதிவு உள்ளிட்ட முக்கிய புள்ளிவிவரங்கள் (பாடம் 16)",
+      "மயானங்கள் மற்றும் இடுகாடுகள் (பாடம் 14)",
       "கால்நடைப் பட்டிகள் மற்றும் விலங்குகள் வதை தடுப்பு (பாடம் 15)"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Item 9 of the Twelfth Schedule explicitly mandates 'Safeguarding the interests of weaker sections of society, including the handicapped and mentally retarded', followed by Item 10 (Slum improvement) and Item 11 (Urban poverty alleviation).",
       "ta": "12-வது அட்டவணையின் பாடம் 9 வெளிப்படையாக 'மாற்றுத்திறனாளிகள் மற்றும் மனவளர்ச்சி குன்றியவர்கள் உட்பட சமூகத்தின் நலிந்த பிரிவினரின் நலன்களைப் பாதுகாத்தல்' என்று கூறுகிறது; இதைத் தொடர்ந்து பாடம் 10 (சேரி மேம்பாடு) மற்றும் பாடம் 11 (நகர்ப்புற வறுமை ஒழிப்பு) உள்ளன."
@@ -1330,16 +1330,16 @@
     "explanation_ta": "12-வது அட்டவணையின் பாடம் 9 வெளிப்படையாக 'மாற்றுத்திறனாளிகள் மற்றும் மனவளர்ச்சி குன்றியவர்கள் உட்பட சமூகத்தின் நலிந்த பிரிவினரின் நலன்களைப் பாதுகாத்தல்' என்று கூறுகிறது; இதைத் தொடர்ந்து பாடம் 10 (சேரி மேம்பாடு) மற்றும் பாடம் 11 (நகர்ப்புற வறுமை ஒழிப்பு) உள்ளன.",
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Item 14 relates to cremation and burial facilities.",
-        "ta": "தவறானது. பாடம் 14 மயான வசதிகள் தொடர்பானது."
+        "en": "Correct. Item 9 is the social justice and disability welfare item.",
+        "ta": "சரியானது. பாடம் 9 சமூக நீதி மற்றும் மாற்றுத்திறனாளிகள் நலப் பாடமாகும்."
       },
       "B": {
         "en": "Incorrect. Item 16 is administrative record-keeping.",
         "ta": "தவறானது. பாடம் 16 நிர்வாகப் பதிவேடு தொடர்பானது."
       },
       "C": {
-        "en": "Correct. Item 9 is the social justice and disability welfare item.",
-        "ta": "சரியானது. பாடம் 9 சமூக நீதி மற்றும் மாற்றுத்திறனாளிகள் நலப் பாடமாகும்."
+        "en": "Incorrect. Item 14 relates to cremation and burial facilities.",
+        "ta": "தவறானது. பாடம் 14 மயான வசதிகள் தொடர்பானது."
       },
       "D": {
         "en": "Incorrect. Item 15 relates to animal welfare.",
@@ -1386,13 +1386,13 @@
       },
       {
         "id": "B",
-        "en": "Public amenities including street lighting and parking lots",
-        "ta": "தெரு விளக்குகள் மற்றும் வாகன நிறுத்துமிடம் உள்ளிட்ட பொது வசதிகள்"
+        "en": "Regulation of slaughter houses and tanneries",
+        "ta": "கசாப்புக் கூடங்கள் மற்றும் தோல் பதனிடும் தொழிற்சாலைகளை ஒழுங்குபடுத்துதல்"
       },
       {
         "id": "C",
-        "en": "Regulation of slaughter houses and tanneries",
-        "ta": "கசாப்புக் கூடங்கள் மற்றும் தோல் பதனிடும் தொழிற்சாலைகளை ஒழுங்குபடுத்துதல்"
+        "en": "Public amenities including street lighting and parking lots",
+        "ta": "தெரு விளக்குகள் மற்றும் வாகன நிறுத்துமிடம் உள்ளிட்ட பொது வசதிகள்"
       },
       {
         "id": "D",
@@ -1402,18 +1402,18 @@
     ],
     "options_en": [
       "Vital statistics including registration of births and deaths",
-      "Public amenities including street lighting and parking lots",
       "Regulation of slaughter houses and tanneries",
+      "Public amenities including street lighting and parking lots",
       "Promotion of cultural, educational and aesthetic aspects"
     ],
     "options_ta": [
       "பிறப்பு மற்றும் இறப்பு பதிவு உள்ளிட்ட முக்கிய புள்ளிவிவரங்கள்",
-      "தெரு விளக்குகள் மற்றும் வாகன நிறுத்துமிடம் உள்ளிட்ட பொது வசதிகள்",
       "கசாப்புக் கூடங்கள் மற்றும் தோல் பதனிடும் தொழிற்சாலைகளை ஒழுங்குபடுத்துதல்",
+      "தெரு விளக்குகள் மற்றும் வாகன நிறுத்துமிடம் உள்ளிட்ட பொது வசதிகள்",
       "கலாச்சார, கல்வி மற்றும் அழகியல் அம்சங்களை மேம்படுத்துதல்"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Item 18, the last item of the Twelfth Schedule, is 'Regulation of slaughter houses and tanneries'.",
       "ta": "12-வது அட்டவணையின் கடைசிப் பாடமான 18-வது பாடம் 'கசாப்புக் கூடங்கள் மற்றும் தோல் பதனிடும் தொழிற்சாலைகளை ஒழுங்குபடுத்துதல்' (Regulation of slaughter houses and tanneries) ஆகும்."
@@ -1426,12 +1426,12 @@
         "ta": "தவறானது. முக்கிய புள்ளிவிவரங்கள் 16-வது பாடம்."
       },
       "B": {
-        "en": "Incorrect. Public amenities is Item 17.",
-        "ta": "தவறானது. பொது வசதிகள் 17-வது பாடம்."
-      },
-      "C": {
         "en": "Correct. Item 18 is regulation of slaughter houses and tanneries.",
         "ta": "சரியானது. 18-வது பாடம் கசாப்புக் கூடங்கள் மற்றும் தோல் பதனிடும் தொழிற்சாலைகளை ஒழுங்குபடுத்துதல்."
+      },
+      "C": {
+        "en": "Incorrect. Public amenities is Item 17.",
+        "ta": "தவறானது. பொது வசதிகள் 17-வது பாடம்."
       },
       "D": {
         "en": "Incorrect. Cultural and aesthetic aspects is Item 13.",
@@ -1478,13 +1478,13 @@
       },
       {
         "id": "B",
-        "en": "Professional Tax",
-        "ta": "தொழில் வரி (Professional Tax)"
+        "en": "Property Tax (House Tax)",
+        "ta": "சொத்து வரி (வீட்டு வரி - Property Tax)"
       },
       {
         "id": "C",
-        "en": "Property Tax (House Tax)",
-        "ta": "சொத்து வரி (வீட்டு வரி - Property Tax)"
+        "en": "Professional Tax",
+        "ta": "தொழில் வரி (Professional Tax)"
       },
       {
         "id": "D",
@@ -1494,18 +1494,18 @@
     ],
     "options_en": [
       "Entertainment Tax",
-      "Professional Tax",
       "Property Tax (House Tax)",
+      "Professional Tax",
       "Advertisement Tax"
     ],
     "options_ta": [
       "கேளிக்கை வரி",
-      "தொழில் வரி (Professional Tax)",
       "சொத்து வரி (வீட்டு வரி - Property Tax)",
+      "தொழில் வரி (Professional Tax)",
       "விளம்பர வரி"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Property tax (on lands and buildings) is the backbone and largest component of municipal own-source tax revenue in India, accounting for over 60% of total municipal own taxes.",
       "ta": "சொத்து வரி (நிலங்கள் மற்றும் கட்டடங்கள் மீதான வரி) இந்தியாவில் நகராட்சிகளின் சொந்த வரி வருவாயின் முதுகெலும்பாகவும் மிகப்பெரிய பகுதியாகவும் திகழ்கிறது (மொத்த சொந்த வரியில் 60%-க்கும் மேல்)."
@@ -1518,12 +1518,12 @@
         "ta": "தவறானது. கேளிக்கை வரி பெரும்பாலும் ஜிஎஸ்டியில் இணைக்கப்பட்டுவிட்டது."
       },
       "B": {
-        "en": "Incorrect. Professional tax has a constitutional ceiling under Article 276 (Rs. 2,500 per annum).",
-        "ta": "தவறானது. தொழில் வரிக்கு உறுப்பு 276-ன் கீழ் உச்சவரம்பு உள்ளது (ஆண்டுக்கு ரூ. 2,500)."
-      },
-      "C": {
         "en": "Correct. Property tax is the primary internal revenue source for ULBs.",
         "ta": "சரியானது. சொத்து வரியே நகர்ப்புற உள்ளாட்சி அமைப்புகளின் முதன்மை சொந்த வருவாய் ஆதாரமாகும்."
+      },
+      "C": {
+        "en": "Incorrect. Professional tax has a constitutional ceiling under Article 276 (Rs. 2,500 per annum).",
+        "ta": "தவறானது. தொழில் வரிக்கு உறுப்பு 276-ன் கீழ் உச்சவரம்பு உள்ளது (ஆண்டுக்கு ரூ. 2,500)."
       },
       "D": {
         "en": "Incorrect. Advertisement tax generates minor municipal revenue.",
@@ -1574,29 +1574,29 @@
       },
       {
         "id": "C",
-        "en": "The Legislature of the State together with an explanatory memorandum of actions taken",
-        "ta": "மேற்கொள்ளப்பட்ட நடவடிக்கைகள் குறித்த விளக்கக் குறிப்புடன் மாநில சட்டமன்றத்தின் முன்"
+        "en": "The High Court of the State",
+        "ta": "மாநில உயர் நீதிமன்றத்தின் முன்"
       },
       {
         "id": "D",
-        "en": "The High Court of the State",
-        "ta": "மாநில உயர் நீதிமன்றத்தின் முன்"
+        "en": "The Legislature of the State together with an explanatory memorandum of actions taken",
+        "ta": "மேற்கொள்ளப்பட்ட நடவடிக்கைகள் குறித்த விளக்கக் குறிப்புடன் மாநில சட்டமன்றத்தின் முன்"
       }
     ],
     "options_en": [
       "The Union Finance Commission directly",
       "The President of India and the Parliament",
-      "The Legislature of the State together with an explanatory memorandum of actions taken",
-      "The High Court of the State"
+      "The High Court of the State",
+      "The Legislature of the State together with an explanatory memorandum of actions taken"
     ],
     "options_ta": [
       "மத்திய நிதி ஆணையத்தின் முன் நேரடியாக",
       "இந்தியக் குடியரசுத் தலைவர் மற்றும் நாடாளுமன்றத்தின் முன்",
-      "மேற்கொள்ளப்பட்ட நடவடிக்கைகள் குறித்த விளக்கக் குறிப்புடன் மாநில சட்டமன்றத்தின் முன்",
-      "மாநில உயர் நீதிமன்றத்தின் முன்"
+      "மாநில உயர் நீதிமன்றத்தின் முன்",
+      "மேற்கொள்ளப்பட்ட நடவடிக்கைகள் குறித்த விளக்கக் குறிப்புடன் மாநில சட்டமன்றத்தின் முன்"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Article 243Y(2) provides that the Governor shall cause every recommendation made by the Commission under this article together with an explanatory memorandum as to the action taken thereon to be laid before the Legislature of the State.",
       "ta": "உறுப்பு 243Y(2) ஆளுநர் நிதி ஆணையத்தின் ஒவ்வொரு பரிந்துரையையும் அதன் மீது எடுக்கப்பட்ட நடவடிக்கைகள் குறித்த விளக்கக் குறிப்புடன் மாநில சட்டமன்றத்தின் முன் சமர்ப்பிக்க வேண்டும் என்று கூறுகிறது."
@@ -1613,12 +1613,12 @@
         "ta": "தவறானது. மத்திய நிதி ஆணைய அறிக்கையே நாடாளுமன்றத்தில் சமர்ப்பிக்கப்படும் (உறுப்பு 281)."
       },
       "C": {
-        "en": "Correct. Placed before the State Legislature with an Action Taken Report (ATR).",
-        "ta": "சரியானது. எடுக்கப்பட்ட நடவடிக்கை அறிக்கையுடன் (ATR) மாநில சட்டமன்றத்தின் முன் வைக்கப்படும்."
-      },
-      "D": {
         "en": "Incorrect. The judiciary is not the recipient of financial policy reports.",
         "ta": "தவறானது. நீதிமன்றங்களில் நிதி அறிக்கைகள் சமர்ப்பிக்கப்படுவதில்லை."
+      },
+      "D": {
+        "en": "Correct. Placed before the State Legislature with an Action Taken Report (ATR).",
+        "ta": "சரியானது. எடுக்கப்பட்ட நடவடிக்கை அறிக்கையுடன் (ATR) மாநில சட்டமன்றத்தின் முன் வைக்கப்படும்."
       }
     },
     "tnpsc_tip": {
@@ -1661,13 +1661,13 @@
       },
       {
         "id": "B",
-        "en": "Article 280(3)(bb)",
-        "ta": "உறுப்பு 280(3)(bb)"
+        "en": "Article 280(3)(c)",
+        "ta": "உறுப்பு 280(3)(c)"
       },
       {
         "id": "C",
-        "en": "Article 280(3)(c)",
-        "ta": "உறுப்பு 280(3)(c)"
+        "en": "Article 280(3)(bb)",
+        "ta": "உறுப்பு 280(3)(bb)"
       },
       {
         "id": "D",
@@ -1677,18 +1677,18 @@
     ],
     "options_en": [
       "Article 280(3)(a)",
-      "Article 280(3)(bb)",
       "Article 280(3)(c)",
+      "Article 280(3)(bb)",
       "Article 280(3)(b)"
     ],
     "options_ta": [
       "உறுப்பு 280(3)(a)",
-      "உறுப்பு 280(3)(bb)",
       "உறுப்பு 280(3)(c)",
+      "உறுப்பு 280(3)(bb)",
       "உறுப்பு 280(3)(b)"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Article 280(3)(c) was added by the 74th CAA, mandating the Finance Commission of India to recommend measures needed to augment the Consolidated Fund of a State to supplement the resources of the Municipalities on the basis of recommendations made by the SFC.",
       "ta": "74-வது CAA மூலம் உறுப்பு 280(3)(c) சேர்க்கப்பட்டது; இது மாநில நிதி ஆணையத்தின் பரிந்துரைகளின் அடிப்படையில் நகராட்சிகளின் நிதி ஆதாரங்களை ஈடுசெய்ய மாநிலத் தொகுப்பு நிதியைப் பெருக்குவதற்கான நடவடிக்கைகளைப் பரிந்துரைக்க மத்திய நிதி ஆணையத்திற்கு ஆணையிடுகிறது."
@@ -1701,12 +1701,12 @@
         "ta": "தவறானது. 280(3)(a) மத்திய மற்றும் மாநிலங்களுக்கு இடையிலான வரிப் பகிர்வு தொடர்பானது."
       },
       "B": {
-        "en": "Incorrect. Article 280(3)(bb) was added by 73rd CAA and relates to Panchayats.",
-        "ta": "தவறானது. உறுப்பு 280(3)(bb) 73-வது CAA மூலம் ஊராட்சிகளுக்காக சேர்க்கப்பட்டது."
-      },
-      "C": {
         "en": "Correct. Article 280(3)(c) relates to Municipalities.",
         "ta": "சரியானது. உறுப்பு 280(3)(c) நகராட்சிகள் தொடர்பானது."
+      },
+      "C": {
+        "en": "Incorrect. Article 280(3)(bb) was added by 73rd CAA and relates to Panchayats.",
+        "ta": "தவறானது. உறுப்பு 280(3)(bb) 73-வது CAA மூலம் ஊராட்சிகளுக்காக சேர்க்கப்பட்டது."
       },
       "D": {
         "en": "Incorrect. Article 280(3)(b) relates to principles governing grants-in-aid to States under Article 275.",
@@ -1753,13 +1753,13 @@
       },
       {
         "id": "B",
-        "en": "By an executive order issued by the Governor at his pleasure",
-        "ta": "ஆளுநர் தனது விருப்பத்தின் பேரில் பிறப்பிக்கும் நிர்வாக உத்தரவு மூலம்"
+        "en": "In like manner and on the like grounds as a Judge of a High Court",
+        "ta": "உயர் நீதிமன்ற நீதிபதியைப் போன்ற முறை மற்றும் காரணங்களின் அடிப்படையில் மட்டுமே"
       },
       {
         "id": "C",
-        "en": "In like manner and on the like grounds as a Judge of a High Court",
-        "ta": "உயர் நீதிமன்ற நீதிபதியைப் போன்ற முறை மற்றும் காரணங்களின் அடிப்படையில் மட்டுமே"
+        "en": "By an executive order issued by the Governor at his pleasure",
+        "ta": "ஆளுநர் தனது விருப்பத்தின் பேரில் பிறப்பிக்கும் நிர்வாக உத்தரவு மூலம்"
       },
       {
         "id": "D",
@@ -1769,18 +1769,18 @@
     ],
     "options_en": [
       "By a simple resolution passed by the State Legislative Assembly",
-      "By an executive order issued by the Governor at his pleasure",
       "In like manner and on the like grounds as a Judge of a High Court",
+      "By an executive order issued by the Governor at his pleasure",
       "By an order of the Chief Election Commissioner of India"
     ],
     "options_ta": [
       "மாநில சட்டமன்றத்தில் நிறைவேற்றப்படும் எளிய தீர்மானம் மூலம்",
-      "ஆளுநர் தனது விருப்பத்தின் பேரில் பிறப்பிக்கும் நிர்வாக உத்தரவு மூலம்",
       "உயர் நீதிமன்ற நீதிபதியைப் போன்ற முறை மற்றும் காரணங்களின் அடிப்படையில் மட்டுமே",
+      "ஆளுநர் தனது விருப்பத்தின் பேரில் பிறப்பிக்கும் நிர்வாக உத்தரவு மூலம்",
       "இந்தியத் தலைமைத் தேர்தல் ஆணையரின் உத்தரவு மூலம்"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Article 243K(2) establishes robust constitutional independence: the State Election Commissioner 'shall not be removed from his office except in like manner and on the like grounds as a Judge of a High Court'. This requires an address by Parliament with special majority under Article 124(4)/217.",
       "ta": "உறுப்பு 243K(2) உறுதியான அரசியலமைப்பு சுதந்திரத்தை நிறுவுகிறது: 'மாநில தேர்தல் ஆணையரை உயர் நீதிமன்ற நீதிபதியைப் போன்ற முறை மற்றும் காரணங்களின் அடிப்படையில் அன்றி பதவியிலிருந்து நீக்க முடியாது'. இதற்கு நாடாளுமன்றத்தில் சிறப்புப் பெரும்பான்மையுடன் கூடிய தீர்மானம் தேவைப்படுகிறது."
@@ -1793,12 +1793,12 @@
         "ta": "தவறானது. மாநில சட்டமன்றத்திற்கு தன்னிச்சையாக நீக்கும் அதிகாரம் இல்லை."
       },
       "B": {
-        "en": "Incorrect. The State Election Commissioner does NOT hold office during the pleasure of the Governor.",
-        "ta": "தவறானது. மாநில தேர்தல் ஆணையர் ஆளுநரின் விருப்பத்தின் பேரில் பதவியில் இருப்பதில்லை."
-      },
-      "C": {
         "en": "Correct. Tenure security is identical to a High Court Judge.",
         "ta": "சரியானது. பதவிப் பாதுகாப்பு உயர் நீதிமன்ற நீதிபதிக்கு இணையானது."
+      },
+      "C": {
+        "en": "Incorrect. The State Election Commissioner does NOT hold office during the pleasure of the Governor.",
+        "ta": "தவறானது. மாநில தேர்தல் ஆணையர் ஆளுநரின் விருப்பத்தின் பேரில் பதவியில் இருப்பதில்லை."
       },
       "D": {
         "en": "Incorrect. ECI has no disciplinary or removal control over SEC.",
@@ -1942,29 +1942,29 @@
       },
       {
         "id": "C",
-        "en": "The ratio between the population of rural and urban areas in that district",
-        "ta": "அந்த மாவட்டத்தின் ஊரக மற்றும் நகர்ப்புற மக்கள்தொகை விகிதத்திற்கு ஏற்ப"
+        "en": "An equal 50:50 split regardless of population",
+        "ta": "மக்கள்தொகையைப் பொருட்படுத்தாமல் சமமான 50:50 பகிர்வு"
       },
       {
         "id": "D",
-        "en": "An equal 50:50 split regardless of population",
-        "ta": "மக்கள்தொகையைப் பொருட்படுத்தாமல் சமமான 50:50 பகிர்வு"
+        "en": "The ratio between the population of rural and urban areas in that district",
+        "ta": "அந்த மாவட்டத்தின் ஊரக மற்றும் நகர்ப்புற மக்கள்தொகை விகிதத்திற்கு ஏற்ப"
       }
     ],
     "options_en": [
       "The total revenue collected from rural vs urban areas",
       "The geographical land area of rural vs urban jurisdictions",
-      "The ratio between the population of rural and urban areas in that district",
-      "An equal 50:50 split regardless of population"
+      "An equal 50:50 split regardless of population",
+      "The ratio between the population of rural and urban areas in that district"
     ],
     "options_ta": [
       "ஊரக மற்றும் நகர்ப்புறங்களில் வசூலிக்கப்படும் மொத்த வருவாய் அடிப்படையில்",
       "ஊரக மற்றும் நகர்ப்புற நிலப்பரப்பு பரப்பளவின் அடிப்படையில்",
-      "அந்த மாவட்டத்தின் ஊரக மற்றும் நகர்ப்புற மக்கள்தொகை விகிதத்திற்கு ஏற்ப",
-      "மக்கள்தொகையைப் பொருட்படுத்தாமல் சமமான 50:50 பகிர்வு"
+      "மக்கள்தொகையைப் பொருட்படுத்தாமல் சமமான 50:50 பகிர்வு",
+      "அந்த மாவட்டத்தின் ஊரக மற்றும் நகர்ப்புற மக்கள்தொகை விகிதத்திற்கு ஏற்ப"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Article 243ZD(2)(b) specifies that the seats shall be shared between rural Panchayats and Municipalities 'in proportion to the ratio between the population of the rural areas and of the urban areas in the district'.",
       "ta": "உறுப்பு 243ZD(2)(b) மாவட்டத்தின் ஊரகப் பகுதிகள் மற்றும் நகர்ப்புறப் பகுதிகளின் மக்கள்தொகை விகிதத்திற்கு ஏற்ப இடங்கள் ஊராட்சி மற்றும் நகராட்சி பிரதிநிதிகளுக்கு இடையே பகிர்ந்தளிக்கப்பட வேண்டும் என்று கூறுகிறது."
@@ -1981,12 +1981,12 @@
         "ta": "தவறானது. நிலப்பரப்பு அரசியலமைப்பு அடிப்படை அல்ல."
       },
       "C": {
-        "en": "Correct. Ratio is strictly based on rural vs urban population of the district.",
-        "ta": "சரியானது. மாவட்டத்தின் ஊரக மற்றும் நகர்ப்புற மக்கள்தொகை விகிதப்படியே இடங்கள் ஒதுக்கப்படுகின்றன."
-      },
-      "D": {
         "en": "Incorrect. Equal split would distort democratic representation in highly rural or highly urban districts.",
         "ta": "தவறானது. சமமான 50:50 பகிர்வு ஜனநாயகப் பிரதிநிதித்துவத்திற்கு எதிரானது."
+      },
+      "D": {
+        "en": "Correct. Ratio is strictly based on rural vs urban population of the district.",
+        "ta": "சரியானது. மாவட்டத்தின் ஊரக மற்றும் நகர்ப்புற மக்கள்தொகை விகிதப்படியே இடங்கள் ஒதுக்கப்படுகின்றன."
       }
     },
     "tnpsc_tip": {
@@ -2033,29 +2033,29 @@
       },
       {
         "id": "C",
-        "en": "Not less than two-thirds (66.67%)",
-        "ta": "மூன்றில் இரண்டு பங்கிற்கு (66.67%) குறையாமல்"
+        "en": "Not less than half (50%)",
+        "ta": "பாதிக்குக் குறையாமல் (50%)"
       },
       {
         "id": "D",
-        "en": "Not less than half (50%)",
-        "ta": "பாதிக்குக் குறையாமல் (50%)"
+        "en": "Not less than two-thirds (66.67%)",
+        "ta": "மூன்றில் இரண்டு பங்கிற்கு (66.67%) குறையாமல்"
       }
     ],
     "options_en": [
       "Not less than three-fourths (75%)",
       "Not less than four-fifths (80%)",
-      "Not less than two-thirds (66.67%)",
-      "Not less than half (50%)"
+      "Not less than half (50%)",
+      "Not less than two-thirds (66.67%)"
     ],
     "options_ta": [
       "நான்கில் மூன்று பங்கிற்கு (75%) குறையாமல்",
       "ஐந்தில் நான்கு பங்கிற்கு (80%) குறையாமல்",
-      "மூன்றில் இரண்டு பங்கிற்கு (66.67%) குறையாமல்",
-      "பாதிக்குக் குறையாமல் (50%)"
+      "பாதிக்குக் குறையாமல் (50%)",
+      "மூன்றில் இரண்டு பங்கிற்கு (66.67%) குறையாமல்"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Article 243ZE(2)(b) provides that not less than two-thirds (2/3) of the members of a Metropolitan Planning Committee shall be elected by, and from amongst, the elected members of the Municipalities and Chairpersons of the Panchayats in the Metropolitan area.",
       "ta": "உறுப்பு 243ZE(2)(b) பெருநகர திட்டக் குழுவின் உறுப்பினர்களில் மூன்றில் இரண்டு பங்கிற்கு (2/3) குறையாமல் பெருநகரப் பகுதியில் உள்ள நகராட்சிகளின் தேர்ந்தெடுக்கப்பட்ட உறுப்பினர்கள் மற்றும் பஞ்சாயத்துத் தலைவர்களால் தேர்ந்தெடுக்கப்பட வேண்டும் என்று கூறுகிறது."
@@ -2072,12 +2072,12 @@
         "ta": "தவறானது. 4/5 என்பது DPC-க்குரிய விகிதமாகும் (உறுப்பு 243ZD)."
       },
       "C": {
-        "en": "Correct. MPC elected proportion is two-thirds (2/3).",
-        "ta": "சரியானது. MPC-ல் தேர்ந்தெடுக்கப்பட்ட உறுப்பினர் விகிதம் மூன்றில் இரண்டு பங்கு (2/3) ஆகும்."
-      },
-      "D": {
         "en": "Incorrect. 50% is incorrect.",
         "ta": "தவறானது. 50% தவறானது."
+      },
+      "D": {
+        "en": "Correct. MPC elected proportion is two-thirds (2/3).",
+        "ta": "சரியானது. MPC-ல் தேர்ந்தெடுக்கப்பட்ட உறுப்பினர் விகிதம் மூன்றில் இரண்டு பங்கு (2/3) ஆகும்."
       }
     },
     "tnpsc_tip": {
@@ -2115,8 +2115,8 @@
     "options": [
       {
         "id": "A",
-        "en": "The Union Ministry of Housing and Urban Affairs",
-        "ta": "மத்திய வீட்டுவசதி மற்றும் நகர்ப்புற விவகாரங்கள் அமைச்சகத்திற்கு"
+        "en": "The Government of the State",
+        "ta": "மாநில அரசுக்கு (Government of the State)"
       },
       {
         "id": "B",
@@ -2125,8 +2125,8 @@
       },
       {
         "id": "C",
-        "en": "The Government of the State",
-        "ta": "மாநில அரசுக்கு (Government of the State)"
+        "en": "The Union Ministry of Housing and Urban Affairs",
+        "ta": "மத்திய வீட்டுவசதி மற்றும் நகர்ப்புற விவகாரங்கள் அமைச்சகத்திற்கு"
       },
       {
         "id": "D",
@@ -2135,19 +2135,19 @@
       }
     ],
     "options_en": [
-      "The Union Ministry of Housing and Urban Affairs",
-      "The NITI Aayog directly",
       "The Government of the State",
+      "The NITI Aayog directly",
+      "The Union Ministry of Housing and Urban Affairs",
       "The Governor of the State exclusively"
     ],
     "options_ta": [
-      "மத்திய வீட்டுவசதி மற்றும் நகர்ப்புற விவகாரங்கள் அமைச்சகத்திற்கு",
-      "நிதி ஆயோக்கிற்கு நேரடியாக",
       "மாநில அரசுக்கு (Government of the State)",
+      "நிதி ஆயோக்கிற்கு நேரடியாக",
+      "மத்திய வீட்டுவசதி மற்றும் நகர்ப்புற விவகாரங்கள் அமைச்சகத்திற்கு",
       "ஆளுநருக்கு மட்டுமே"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Article 243ZE(4) states: 'The Chairperson of every Metropolitan Planning Committee shall forward the development plan, as recommended by such Committee, to the Government of the State.'",
       "ta": "உறுப்பு 243ZE(4): 'ஒவ்வொரு பெருநகர திட்டக் குழுவின் தலைவரும் அக்குழுவால் பரிந்துரைக்கப்பட்ட வளர்ச்சித் திட்டத்தை மாநில அரசுக்கு அனுப்பி வைக்க வேண்டும்' என்று கூறுகிறது."
@@ -2156,16 +2156,16 @@
     "explanation_ta": "உறுப்பு 243ZE(4): 'ஒவ்வொரு பெருநகர திட்டக் குழுவின் தலைவரும் அக்குழுவால் பரிந்துரைக்கப்பட்ட வளர்ச்சித் திட்டத்தை மாநில அரசுக்கு அனுப்பி வைக்க வேண்டும்' என்று கூறுகிறது.",
     "why_not_others": {
       "A": {
-        "en": "Incorrect. The plan goes to the State Government, not the Union Ministry.",
-        "ta": "தவறானது. இத்திட்டம் மத்திய அமைச்சகத்திற்குச் செல்வதில்லை."
+        "en": "Correct. Both DPC (243ZD(4)) and MPC (243ZE(4)) forward their plans to the State Government.",
+        "ta": "சரியானது. DPC மற்றும் MPC ஆகிய இரண்டுமே தங்களது திட்டங்களை மாநில அரசுக்கே சமர்ப்பிக்கின்றன."
       },
       "B": {
         "en": "Incorrect. NITI Aayog has no direct statutory link under 243ZE.",
         "ta": "தவறானது. நிதி ஆயோக்கிற்கு இதில் நேரடித் தொடர்பில்லை."
       },
       "C": {
-        "en": "Correct. Both DPC (243ZD(4)) and MPC (243ZE(4)) forward their plans to the State Government.",
-        "ta": "சரியானது. DPC மற்றும் MPC ஆகிய இரண்டுமே தங்களது திட்டங்களை மாநில அரசுக்கே சமர்ப்பிக்கின்றன."
+        "en": "Incorrect. The plan goes to the State Government, not the Union Ministry.",
+        "ta": "தவறானது. இத்திட்டம் மத்திய அமைச்சகத்திற்குச் செல்வதில்லை."
       },
       "D": {
         "en": "Incorrect. The constitutional text specifies 'Government of the State', not the Governor personally.",
@@ -2307,29 +2307,29 @@
       },
       {
         "id": "C",
-        "en": "74th Constitutional Amendment Act under Ministry of Housing and Urban Affairs",
-        "ta": "வீட்டுவசதி மற்றும் நகர்ப்புற விவகாரங்கள் அமைச்சகத்தின் கீழ் 74-வது CAA"
+        "en": "Cantonments Act, 2006 under the Ministry of Defence",
+        "ta": "பாதுகாப்பு அமைச்சகத்தின் கீழ் 2006-ஆம் ஆண்டின் ராணுவக் குடியிருப்புச் சட்டம்"
       },
       {
         "id": "D",
-        "en": "Cantonments Act, 2006 under the Ministry of Defence",
-        "ta": "பாதுகாப்பு அமைச்சகத்தின் கீழ் 2006-ஆம் ஆண்டின் ராணுவக் குடியிருப்புச் சட்டம்"
+        "en": "74th Constitutional Amendment Act under Ministry of Housing and Urban Affairs",
+        "ta": "வீட்டுவசதி மற்றும் நகர்ப்புற விவகாரங்கள் அமைச்சகத்தின் கீழ் 74-வது CAA"
       }
     ],
     "options_en": [
       "Armed Forces Special Powers Act under the Ministry of Defence",
       "Cantonments Act, 1924 under the Ministry of Home Affairs",
-      "74th Constitutional Amendment Act under Ministry of Housing and Urban Affairs",
-      "Cantonments Act, 2006 under the Ministry of Defence"
+      "Cantonments Act, 2006 under the Ministry of Defence",
+      "74th Constitutional Amendment Act under Ministry of Housing and Urban Affairs"
     ],
     "options_ta": [
       "பாதுகாப்பு அமைச்சகத்தின் கீழ் ஆயுதப்படை சிறப்பு அதிகாரச் சட்டம்",
       "உள்துறை அமைச்சகத்தின் கீழ் 1924-ஆம் ஆண்டின் ராணுவக் குடியிருப்புச் சட்டம்",
-      "வீட்டுவசதி மற்றும் நகர்ப்புற விவகாரங்கள் அமைச்சகத்தின் கீழ் 74-வது CAA",
-      "பாதுகாப்பு அமைச்சகத்தின் கீழ் 2006-ஆம் ஆண்டின் ராணுவக் குடியிருப்புச் சட்டம்"
+      "பாதுகாப்பு அமைச்சகத்தின் கீழ் 2006-ஆம் ஆண்டின் ராணுவக் குடியிருப்புச் சட்டம்",
+      "வீட்டுவசதி மற்றும் நகர்ப்புற விவகாரங்கள் அமைச்சகத்தின் கீழ் 74-வது CAA"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Cantonment Boards are established for municipal administration of civilian population in cantonment areas under the Cantonments Act, 2006 (which replaced the Cantonments Act 1924), functioning under the administrative control of the Union Ministry of Defence.",
       "ta": "ராணுவக் குடியிருப்பு வாரியங்கள் 1924-ஆம் ஆண்டின் சட்டத்தை மாற்றியமைத்த 2006-ஆம் ஆண்டின் ராணுவக் குடியிருப்புச் சட்டத்தின் கீழ் மத்திய பாதுகாப்பு அமைச்சகத்தின் கட்டுப்பாட்டில் இயங்குகின்றன."
@@ -2346,12 +2346,12 @@
         "ta": "தவறானது. 1924 சட்டம் 2006 சட்டத்தால் மாற்றப்பட்டது."
       },
       "C": {
-        "en": "Incorrect. Cantonment boards are NOT created under 74th CAA and NOT under MoHUA.",
-        "ta": "தவறானது. இவை 74-வது CAA-ன் கீழ் இல்லை."
-      },
-      "D": {
         "en": "Correct. Cantonments Act 2006 under Ministry of Defence.",
         "ta": "சரியானது. பாதுகாப்பு அமைச்சகத்தின் கீழ் 2006-ஆம் ஆண்டின் ராணுவக் குடியிருப்புச் சட்டம்."
+      },
+      "D": {
+        "en": "Incorrect. Cantonment boards are NOT created under 74th CAA and NOT under MoHUA.",
+        "ta": "தவறானது. இவை 74-வது CAA-ன் கீழ் இல்லை."
       }
     },
     "tnpsc_tip": {
@@ -2388,8 +2388,8 @@
     "options": [
       {
         "id": "A",
-        "en": "An officer appointed by the Union Ministry of Home Affairs",
-        "ta": "மத்திய உள்துறை அமைச்சகத்தால் நியமிக்கப்படும் அதிகாரி"
+        "en": "The Military Officer Commanding the Station (Station Commander)",
+        "ta": "ராணுவ நிலையத்தின் தலைமைத் தளபதி (Station Commander)"
       },
       {
         "id": "B",
@@ -2403,24 +2403,24 @@
       },
       {
         "id": "D",
-        "en": "The Military Officer Commanding the Station (Station Commander)",
-        "ta": "ராணுவ நிலையத்தின் தலைமைத் தளபதி (Station Commander)"
+        "en": "An officer appointed by the Union Ministry of Home Affairs",
+        "ta": "மத்திய உள்துறை அமைச்சகத்தால் நியமிக்கப்படும் அதிகாரி"
       }
     ],
     "options_en": [
-      "An officer appointed by the Union Ministry of Home Affairs",
+      "The Military Officer Commanding the Station (Station Commander)",
       "An elected civilian representative chosen by voters of the cantonment",
       "The District Magistrate / Collector of the district",
-      "The Military Officer Commanding the Station (Station Commander)"
+      "An officer appointed by the Union Ministry of Home Affairs"
     ],
     "options_ta": [
-      "மத்திய உள்துறை அமைச்சகத்தால் நியமிக்கப்படும் அதிகாரி",
+      "ராணுவ நிலையத்தின் தலைமைத் தளபதி (Station Commander)",
       "ராணுவக் குடியிருப்பின் வாக்காளர்களால் தேர்ந்தெடுக்கப்பட்ட குடிமைப் பிரதிநிதி",
       "மாவட்ட ஆட்சித்தலைவர்",
-      "ராணுவ நிலையத்தின் தலைமைத் தளபதி (Station Commander)"
+      "மத்திய உள்துறை அமைச்சகத்தால் நியமிக்கப்படும் அதிகாரி"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "The Military Officer Commanding the Station is the ex-officio President of the Cantonment Board. The Vice-President is elected by the elected civilian members from amongst themselves for a term of 5 years.",
       "ta": "ராணுவ நிலையத்தின் தலைமைத் தளபதியே (Military Officer Commanding the Station) ராணுவக் குடியிருப்பு வாரியத்தின் பதவிவழித் தலைவராகச் செயல்படுகிறார். துணைத்தலைவர் தேர்ந்தெடுக்கப்பட்ட குடிமை உறுப்பினர்களால் தங்களில் ஒருவராக 5 ஆண்டுகளுக்குத் தேர்ந்தெடுக்கப்படுகிறார்."
@@ -2429,8 +2429,8 @@
     "explanation_ta": "ராணுவ நிலையத்தின் தலைமைத் தளபதியே (Military Officer Commanding the Station) ராணுவக் குடியிருப்பு வாரியத்தின் பதவிவழித் தலைவராகச் செயல்படுகிறார். துணைத்தலைவர் தேர்ந்தெடுக்கப்பட்ட குடிமை உறுப்பினர்களால் தங்களில் ஒருவராக 5 ஆண்டுகளுக்குத் தேர்ந்தெடுக்கப்படுகிறார்.",
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Executive officer is from the Indian Defence Estates Service (IDES), appointed by President of India.",
-        "ta": "தவறானது. தலைமை நிர்வாக அதிகாரி IDES பணியிலிருந்து நியமிக்கப்படுகிறார்."
+        "en": "Correct. Station Commander is the ex-officio President.",
+        "ta": "சரியானது. ராணுவ நிலையத்தின் தலைமைத் தளபதியே பதவிவழித் தலைவர்."
       },
       "B": {
         "en": "Incorrect. An elected civilian member serves as the Vice-President.",
@@ -2441,8 +2441,8 @@
         "ta": "தவறானது. மாவட்ட ஆட்சியர் தலைவராக இருப்பதில்லை."
       },
       "D": {
-        "en": "Correct. Station Commander is the ex-officio President.",
-        "ta": "சரியானது. ராணுவ நிலையத்தின் தலைமைத் தளபதியே பதவிவழித் தலைவர்."
+        "en": "Incorrect. Executive officer is from the Indian Defence Estates Service (IDES), appointed by President of India.",
+        "ta": "தவறானது. தலைமை நிர்வாக அதிகாரி IDES பணியிலிருந்து நியமிக்கப்படுகிறார்."
       }
     },
     "tnpsc_tip": {
@@ -2479,8 +2479,8 @@
     "options": [
       {
         "id": "A",
-        "en": "A resolution passed by the District Planning Committee",
-        "ta": "மாவட்ட திட்டக் குழுவின் தீர்மானம் மூலம்"
+        "en": "An Act of Parliament (Major Port Authorities Act)",
+        "ta": "நாடாளுமன்றத்தின் ஒரு சட்டம் மூலம் (Major Port Authorities Act)"
       },
       {
         "id": "B",
@@ -2494,24 +2494,24 @@
       },
       {
         "id": "D",
-        "en": "An Act of Parliament (Major Port Authorities Act)",
-        "ta": "நாடாளுமன்றத்தின் ஒரு சட்டம் மூலம் (Major Port Authorities Act)"
+        "en": "A resolution passed by the District Planning Committee",
+        "ta": "மாவட்ட திட்டக் குழுவின் தீர்மானம் மூலம்"
       }
     ],
     "options_en": [
-      "A resolution passed by the District Planning Committee",
+      "An Act of Parliament (Major Port Authorities Act)",
       "The respective State Municipal Corporations Act",
       "An executive decree of the State Governor",
-      "An Act of Parliament (Major Port Authorities Act)"
+      "A resolution passed by the District Planning Committee"
     ],
     "options_ta": [
-      "மாவட்ட திட்டக் குழுவின் தீர்மானம் மூலம்",
+      "நாடாளுமன்றத்தின் ஒரு சட்டம் மூலம் (Major Port Authorities Act)",
       "அந்தந்த மாநில மாநகராட்சி சட்டங்கள் மூலம்",
       "மாநில ஆளுநரின் நிர்வாக ஆணை மூலம்",
-      "நாடாளுமன்றத்தின் ஒரு சட்டம் மூலம் (Major Port Authorities Act)"
+      "மாவட்ட திட்டக் குழுவின் தீர்மானம் மூலம்"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Port Trusts are statutory urban bodies established in major port areas by an Act of Parliament (formerly Major Port Trusts Act 1963, now Major Port Authorities Act 2021) to manage and provide civic amenities in and around the port area.",
       "ta": "துறைமுகப் பொறுப்புக் கழகங்கள் நாடாளுமன்றச் சட்டத்தின் மூலம் (முன்னர் 1963 சட்டம், தற்போது 2021-ஆம் ஆண்டின் முக்கிய துறைமுக அதிகார சட்டம்) துறைமுகப் பகுதியில் குடிமை வசதிகளை நிர்வகிக்க அமைக்கப்பட்ட சட்டப்பூர்வ நகர்ப்புற அமைப்புகளாகும்."
@@ -2520,8 +2520,8 @@
     "explanation_ta": "துறைமுகப் பொறுப்புக் கழகங்கள் நாடாளுமன்றச் சட்டத்தின் மூலம் (முன்னர் 1963 சட்டம், தற்போது 2021-ஆம் ஆண்டின் முக்கிய துறைமுக அதிகார சட்டம்) துறைமுகப் பகுதியில் குடிமை வசதிகளை நிர்வகிக்க அமைக்கப்பட்ட சட்டப்பூர்வ நகர்ப்புற அமைப்புகளாகும்.",
     "why_not_others": {
       "A": {
-        "en": "Incorrect. DPC has no power to establish port authorities.",
-        "ta": "தவறானது. DPC-க்கு துறைமுகங்களை அமைக்கும் அதிகாரம் இல்லை."
+        "en": "Correct. Port trusts are established by Acts of Parliament.",
+        "ta": "சரியானது. துறைமுகப் பொறுப்புக் கழகங்கள் நாடாளுமன்ற சட்டங்களால் நிறுவப்படுகின்றன."
       },
       "B": {
         "en": "Incorrect. State Municipal Acts do not govern major port trusts.",
@@ -2532,8 +2532,8 @@
         "ta": "தவறானது. முக்கிய துறைமுகங்கள் மத்தியப் பட்டியலில் உள்ளன (பதிவு 27)."
       },
       "D": {
-        "en": "Correct. Port trusts are established by Acts of Parliament.",
-        "ta": "சரியானது. துறைமுகப் பொறுப்புக் கழகங்கள் நாடாளுமன்ற சட்டங்களால் நிறுவப்படுகின்றன."
+        "en": "Incorrect. DPC has no power to establish port authorities.",
+        "ta": "தவறானது. DPC-க்கு துறைமுகங்களை அமைக்கும் அதிகாரம் இல்லை."
       }
     },
     "tnpsc_tip": {
@@ -2575,8 +2575,8 @@
       },
       {
         "id": "B",
-        "en": "It has an elected council with a directly elected Mayor",
-        "ta": "இது நேரடியாகத் தேர்ந்தெடுக்கப்பட்ட மேயரைக் கொண்ட தேர்ந்தெடுக்கப்பட்ட மன்றமாகும்"
+        "en": "It is an entirely nominated body created by government notification without an elective basis",
+        "ta": "இது தேர்தல் அடிப்படை இல்லாமல் அரசாங்க அறிவிக்கையால் உருவாக்கப்பட்ட முழுமையாக நியமனம் செய்யப்பட்ட ஒரு குழு"
       },
       {
         "id": "C",
@@ -2585,24 +2585,24 @@
       },
       {
         "id": "D",
-        "en": "It is an entirely nominated body created by government notification without an elective basis",
-        "ta": "இது தேர்தல் அடிப்படை இல்லாமல் அரசாங்க அறிவிக்கையால் உருவாக்கப்பட்ட முழுமையாக நியமனம் செய்யப்பட்ட ஒரு குழு"
+        "en": "It has an elected council with a directly elected Mayor",
+        "ta": "இது நேரடியாகத் தேர்ந்தெடுக்கப்பட்ட மேயரைக் கொண்ட தேர்ந்தெடுக்கப்பட்ட மன்றமாகும்"
       }
     ],
     "options_en": [
       "It has constitutional status under Article 243Q",
-      "It has an elected council with a directly elected Mayor",
+      "It is an entirely nominated body created by government notification without an elective basis",
       "It is governed under Part IX of the Constitution like a Panchayat",
-      "It is an entirely nominated body created by government notification without an elective basis"
+      "It has an elected council with a directly elected Mayor"
     ],
     "options_ta": [
       "இது உறுப்பு 243Q-ன் கீழ் அரசியலமைப்பு அந்தஸ்தைப் பெற்றுள்ளது",
-      "இது நேரடியாகத் தேர்ந்தெடுக்கப்பட்ட மேயரைக் கொண்ட தேர்ந்தெடுக்கப்பட்ட மன்றமாகும்",
+      "இது தேர்தல் அடிப்படை இல்லாமல் அரசாங்க அறிவிக்கையால் உருவாக்கப்பட்ட முழுமையாக நியமனம் செய்யப்பட்ட ஒரு குழு",
       "இது பஞ்சாயத்து போல அரசியலமைப்பின் பகுதி IX-ன் கீழ் நிர்வகிக்கப்படுகிறது",
-      "இது தேர்தல் அடிப்படை இல்லாமல் அரசாங்க அறிவிக்கையால் உருவாக்கப்பட்ட முழுமையாக நியமனம் செய்யப்பட்ட ஒரு குழு"
+      "இது நேரடியாகத் தேர்ந்தெடுக்கப்பட்ட மேயரைக் கொண்ட தேர்ந்தெடுக்கப்பட்ட மன்றமாகும்"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "A Notified Area Committee was established by a notification in the official gazette for fast-growing industrial towns or towns not yet fulfilling conditions for a municipality. Crucially, all its members, including the chairman, were nominated by the state government, making it non-elective.",
       "ta": "அறிவிக்கப்பட்ட பகுதி குழு (Notified Area Committee) விரைவாக வளரும் தொழில் நகரங்களுக்காக அரசிதழ் அறிவிக்கை மூலம் உருவாக்கப்பட்டது. முக்கியமாக, அதன் தலைவர் உட்பட அனைத்து உறுப்பினர்களும் மாநில அரசால் நியமிக்கப்பட்டனர் (தேர்தல் முறை இல்லை)."
@@ -2615,16 +2615,16 @@
         "ta": "தவறானது. 74-வது CAA-ன் உறுப்பு 243Q இத்தகைய நியமன அமைப்புகளுக்குப் பதிலாக தேர்ந்தெடுக்கப்பட்ட அமைப்புகளைக் கொண்டுவந்தது."
       },
       "B": {
-        "en": "Incorrect. It had no elected councillors or mayor.",
-        "ta": "தவறானது. இதில் தேர்ந்தெடுக்கப்பட்ட உறுப்பினர்களோ மேயரோ இல்லை."
+        "en": "Correct. It was an entirely nominated non-elected body.",
+        "ta": "சரியானது. இது முழுமையாக நியமிக்கப்பட்ட தேர்தல் இல்லாத ஒரு குழு."
       },
       "C": {
         "en": "Incorrect. It is an urban body, not a rural panchayat.",
         "ta": "தவறானது. இது நகர்ப்புற அமைப்பு, ஊராட்சி அல்ல."
       },
       "D": {
-        "en": "Correct. It was an entirely nominated non-elected body.",
-        "ta": "சரியானது. இது முழுமையாக நியமிக்கப்பட்ட தேர்தல் இல்லாத ஒரு குழு."
+        "en": "Incorrect. It had no elected councillors or mayor.",
+        "ta": "தவறானது. இதில் தேர்ந்தெடுக்கப்பட்ட உறுப்பினர்களோ மேயரோ இல்லை."
       }
     },
     "tnpsc_tip": {
@@ -2671,29 +2671,29 @@
       },
       {
         "id": "C",
-        "en": "Military cantonments during wartime",
-        "ta": "போர்க் காலத்தில் ராணுவ முகாம்களுக்காக"
+        "en": "Small towns to provide limited civic functions like street lighting, drainage, and conservancy",
+        "ta": "தெரு விளக்குகள், வடிகால் மற்றும் துப்புரவு போன்ற வரையறுக்கப்பட்ட குடிமைப் பணிகளை சிறிய நகரங்களில் வழங்க"
       },
       {
         "id": "D",
-        "en": "Small towns to provide limited civic functions like street lighting, drainage, and conservancy",
-        "ta": "தெரு விளக்குகள், வடிகால் மற்றும் துப்புரவு போன்ற வரையறுக்கப்பட்ட குடிமைப் பணிகளை சிறிய நகரங்களில் வழங்க"
+        "en": "Military cantonments during wartime",
+        "ta": "போர்க் காலத்தில் ராணுவ முகாம்களுக்காக"
       }
     ],
     "options_en": [
       "Tribal areas governed under the Sixth Schedule",
       "Large metropolitan cities with population above 10 lakhs",
-      "Military cantonments during wartime",
-      "Small towns to provide limited civic functions like street lighting, drainage, and conservancy"
+      "Small towns to provide limited civic functions like street lighting, drainage, and conservancy",
+      "Military cantonments during wartime"
     ],
     "options_ta": [
       "6-வது அட்டவணையின் கீழ் நிர்வகிக்கப்படும் பழங்குடியினர் பகுதிகளுக்காக",
       "10 லட்சத்திற்கும் அதிகமான மக்கள்தொகை கொண்ட பெரிய பெருநகரங்களுக்காக",
-      "போர்க் காலத்தில் ராணுவ முகாம்களுக்காக",
-      "தெரு விளக்குகள், வடிகால் மற்றும் துப்புரவு போன்ற வரையறுக்கப்பட்ட குடிமைப் பணிகளை சிறிய நகரங்களில் வழங்க"
+      "தெரு விளக்குகள், வடிகால் மற்றும் துப்புரவு போன்ற வரையறுக்கப்பட்ட குடிமைப் பணிகளை சிறிய நகரங்களில் வழங்க",
+      "போர்க் காலத்தில் ராணுவ முகாம்களுக்காக"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "A Town Area Committee was a semi-municipal authority set up for small towns by a separate act of state legislature to perform limited municipal functions like sanitation, lighting, and roads.",
       "ta": "நகரப் பகுதி குழு (Town Area Committee) என்பது சிறிய நகரங்களில் சுகாதாரம், விளக்குகள் போன்ற வரையறுக்கப்பட்ட நகராட்சிப் பணிகளைச் செய்ய மாநில சட்டமன்றத்தின் தனிச் சட்டம் மூலம் அமைக்கப்பட்ட ஒரு பகுதியளவு நகராட்சி அமைப்பாகும்."
@@ -2710,12 +2710,12 @@
         "ta": "தவறானது. பெருநகரங்களில் மாநகராட்சிகள் உள்ளன."
       },
       "C": {
-        "en": "Incorrect. Cantonment boards manage military stations.",
-        "ta": "தவறானது. ராணுவ முகாம்களை Cantonment Boards நிர்வகிக்கின்றன."
-      },
-      "D": {
         "en": "Correct. Set up for small towns with limited civic functions.",
         "ta": "சரியானது. வரையறுக்கப்பட்ட குடிமைப் பணிகளைக் கொண்ட சிறிய நகரங்களுக்காக அமைக்கப்பட்டது."
+      },
+      "D": {
+        "en": "Incorrect. Cantonment boards manage military stations.",
+        "ta": "தவறானது. ராணுவ முகாம்களை Cantonment Boards நிர்வகிக்கின்றன."
       }
     },
     "tnpsc_tip": {
@@ -2757,8 +2757,8 @@
       },
       {
         "id": "B",
-        "en": "The Governor under Article 243Q by a general decree",
-        "ta": "ஆளுநரால் உறுப்பு 243Q-ன் கீழ் பொது ஆணை மூலம்"
+        "en": "Public sector or large corporate undertakings to provide civic amenities to their staff and workers near plants",
+        "ta": "தொழிற்சாலைகளுக்கு அருகில் ஊழியர்களுக்கு குடிமை வசதிகளை வழங்க பொதுத்துறை அல்லது பெரிய தனியார் நிறுவனங்களால்"
       },
       {
         "id": "C",
@@ -2767,24 +2767,24 @@
       },
       {
         "id": "D",
-        "en": "Public sector or large corporate undertakings to provide civic amenities to their staff and workers near plants",
-        "ta": "தொழிற்சாலைகளுக்கு அருகில் ஊழியர்களுக்கு குடிமை வசதிகளை வழங்க பொதுத்துறை அல்லது பெரிய தனியார் நிறுவனங்களால்"
+        "en": "The Governor under Article 243Q by a general decree",
+        "ta": "ஆளுநரால் உறுப்பு 243Q-ன் கீழ் பொது ஆணை மூலம்"
       }
     ],
     "options_en": [
       "The Ministry of External Affairs for foreign diplomats",
-      "The Governor under Article 243Q by a general decree",
+      "Public sector or large corporate undertakings to provide civic amenities to their staff and workers near plants",
       "The State Election Commission to conduct mock polls",
-      "Public sector or large corporate undertakings to provide civic amenities to their staff and workers near plants"
+      "The Governor under Article 243Q by a general decree"
     ],
     "options_ta": [
       "வெளிநாட்டு தூதர்களுக்காக வெளியுறவு அமைச்சகத்தால்",
-      "ஆளுநரால் உறுப்பு 243Q-ன் கீழ் பொது ஆணை மூலம்",
+      "தொழிற்சாலைகளுக்கு அருகில் ஊழியர்களுக்கு குடிமை வசதிகளை வழங்க பொதுத்துறை அல்லது பெரிய தனியார் நிறுவனங்களால்",
       "மாதிரித் தேர்தல்களை நடத்த மாநில தேர்தல் ஆணையத்தால்",
-      "தொழிற்சாலைகளுக்கு அருகில் ஊழியர்களுக்கு குடிமை வசதிகளை வழங்க பொதுத்துறை அல்லது பெரிய தனியார் நிறுவனங்களால்"
+      "ஆளுநரால் உறுப்பு 243Q-ன் கீழ் பொது ஆணை மூலம்"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "A Township is established by large public or private enterprises (like BHEL, SAIL, NLC, HMT) to provide housing, water, electricity, sanitation, and roads to their staff. It has no elected councillors; an appointed Town Administrator manages civic services.",
       "ta": "டவுன்ஷிப் என்பது BHEL, NLC போன்ற பெரிய பொதுத்துறை அல்லது தனியார் நிறுவனங்களால் தங்கள் ஊழியர்களுக்கு வீட்டுவசதி, குடிநீர், மின்சாரம், சுகாதாரம் போன்ற வசதிகளை வழங்க நிறுவப்படுகிறது. இதில் தேர்ந்தெடுக்கப்பட்ட மன்றம் இருப்பதில்லை; நியமிக்கப்பட்ட நிர்வாகியே நிர்வகிக்கிறார்."
@@ -2797,16 +2797,16 @@
         "ta": "தவறானது. வெளியுறவு அமைச்சகம் இதை அமைப்பதில்லை."
       },
       "B": {
-        "en": "Incorrect. Townships are established by corporate enterprises, not constitutional decree.",
-        "ta": "தவறானது. டவுன்ஷிப்புகள் நிறுவனங்களால் அமைக்கப்படுகின்றன."
+        "en": "Correct. Townships are company/undertaking towns without elected councils.",
+        "ta": "சரியானது. டவுன்ஷிப்புகள் என்பது தேர்ந்தெடுக்கப்பட்ட மன்றங்கள் இல்லாத நிறுவன நகரங்கள்."
       },
       "C": {
         "en": "Incorrect. SEC has no role in establishing townships.",
         "ta": "தவறானது. SEC-க்கு இதில் தொடர்பில்லை."
       },
       "D": {
-        "en": "Correct. Townships are company/undertaking towns without elected councils.",
-        "ta": "சரியானது. டவுன்ஷிப்புகள் என்பது தேர்ந்தெடுக்கப்பட்ட மன்றங்கள் இல்லாத நிறுவன நகரங்கள்."
+        "en": "Incorrect. Townships are established by corporate enterprises, not constitutional decree.",
+        "ta": "தவறானது. டவுன்ஷிப்புகள் நிறுவனங்களால் அமைக்கப்படுகின்றன."
       }
     },
     "tnpsc_tip": {
@@ -2944,29 +2944,29 @@
       },
       {
         "id": "C",
-        "en": "Executive power is exercised by the District Collector, while Mayor has only ceremonial status",
-        "ta": "நிர்வாக அதிகாரம் மாவட்ட ஆட்சியரால் பயன்படுத்தப்படுகிறது, மேயருக்கு சம்பிரதாய அந்தஸ்து மட்டுமே உள்ளது"
+        "en": "Deliberative and legislative power rests with the Council headed by the Mayor, while executive power is vested in the Municipal Commissioner",
+        "ta": "விவாத மற்றும் சட்டமன்ற அதிகாரம் மேயர் தலைமையிலான மன்றத்திடம் உள்ளது; நிர்வாக அதிகாரம் மாநகராட்சி ஆணையரிடம் உள்ளது"
       },
       {
         "id": "D",
-        "en": "Deliberative and legislative power rests with the Council headed by the Mayor, while executive power is vested in the Municipal Commissioner",
-        "ta": "விவாத மற்றும் சட்டமன்ற அதிகாரம் மேயர் தலைமையிலான மன்றத்திடம் உள்ளது; நிர்வாக அதிகாரம் மாநகராட்சி ஆணையரிடம் உள்ளது"
+        "en": "Executive power is exercised by the District Collector, while Mayor has only ceremonial status",
+        "ta": "நிர்வாக அதிகாரம் மாவட்ட ஆட்சியரால் பயன்படுத்தப்படுகிறது, மேயருக்கு சம்பிரதாய அந்தஸ்து மட்டுமே உள்ளது"
       }
     ],
     "options_en": [
       "The Municipal Commissioner makes all policy decisions and the Council merely ratifies them",
       "Both legislative and executive powers are fully concentrated in the Mayor alone",
-      "Executive power is exercised by the District Collector, while Mayor has only ceremonial status",
-      "Deliberative and legislative power rests with the Council headed by the Mayor, while executive power is vested in the Municipal Commissioner"
+      "Deliberative and legislative power rests with the Council headed by the Mayor, while executive power is vested in the Municipal Commissioner",
+      "Executive power is exercised by the District Collector, while Mayor has only ceremonial status"
     ],
     "options_ta": [
       "நகராட்சி ஆணையரே அனைத்துக் கொள்கை முடிவுகளையும் எடுக்கிறார், மன்றம் அதை அங்கீகரிக்க மட்டுமே செய்கிறது",
       "சட்டமன்ற மற்றும் நிர்வாக அதிகாரங்கள் இரண்டும் மேயரிடம் மட்டுமே குவிக்கப்பட்டுள்ளன",
-      "நிர்வாக அதிகாரம் மாவட்ட ஆட்சியரால் பயன்படுத்தப்படுகிறது, மேயருக்கு சம்பிரதாய அந்தஸ்து மட்டுமே உள்ளது",
-      "விவாத மற்றும் சட்டமன்ற அதிகாரம் மேயர் தலைமையிலான மன்றத்திடம் உள்ளது; நிர்வாக அதிகாரம் மாநகராட்சி ஆணையரிடம் உள்ளது"
+      "விவாத மற்றும் சட்டமன்ற அதிகாரம் மேயர் தலைமையிலான மன்றத்திடம் உள்ளது; நிர்வாக அதிகாரம் மாநகராட்சி ஆணையரிடம் உள்ளது",
+      "நிர்வாக அதிகாரம் மாவட்ட ஆட்சியரால் பயன்படுத்தப்படுகிறது, மேயருக்கு சம்பிரதாய அந்தஸ்து மட்டுமே உள்ளது"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "A Municipal Corporation has a dual structure based on the Bombay Model pioneered by Pherozeshah Mehta: The deliberative/legislative wing is the elected Municipal Council headed by the Mayor, while the executive authority is vested in the Municipal Commissioner (usually an IAS officer).",
       "ta": "மாநகராட்சி பெரோஸ்ஷா மேத்தாவால் உருவாக்கப்பட்ட பம்பாய் மாதிரியை அடிப்படையாகக் கொண்ட இரட்டைக் கட்டமைப்பைக் கொண்டுள்ளது: விவாதப் பிரிவு என்பது மேயர் தலைமையிலான தேர்ந்தெடுக்கப்பட்ட மன்றம்; நிர்வாக அதிகாரம் மாநகராட்சி ஆணையரிடம் (பொதுவாக IAS அதிகாரி) உள்ளது."
@@ -2983,12 +2983,12 @@
         "ta": "தவறானது. இந்தியாவில் மேயரிடம் ஒற்றை நிர்வாக அதிகாரம் குவிந்திருக்கவில்லை."
       },
       "C": {
-        "en": "Incorrect. District Collector does not run municipal corporations; the Municipal Commissioner is independent of the Collector.",
-        "ta": "தவறானது. மாவட்ட ஆட்சியர் மாநகராட்சியை நடத்துவதில்லை; ஆணையர் தனித்துவமானவர்."
-      },
-      "D": {
         "en": "Correct. Council (Mayor) = Deliberative; Municipal Commissioner = Executive.",
         "ta": "சரியானது. மன்றம் (மேயர்) = விவாத/கொள்கைப் பிரிவு; ஆணையர் = தலைமை நிர்வாகப் பிரிவு."
+      },
+      "D": {
+        "en": "Incorrect. District Collector does not run municipal corporations; the Municipal Commissioner is independent of the Collector.",
+        "ta": "தவறானது. மாவட்ட ஆட்சியர் மாநகராட்சியை நடத்துவதில்லை; ஆணையர் தனித்துவமானவர்."
       }
     },
     "tnpsc_tip": {
@@ -3036,29 +3036,29 @@
       },
       {
         "id": "C",
-        "en": "Bombay (Mumbai)",
-        "ta": "பம்பாய் (மும்பை)"
+        "en": "Calcutta (Kolkata)",
+        "ta": "கல்கத்தா (கொல்கத்தா)"
       },
       {
         "id": "D",
-        "en": "Calcutta (Kolkata)",
-        "ta": "கல்கத்தா (கொல்கத்தா)"
+        "en": "Bombay (Mumbai)",
+        "ta": "பம்பாய் (மும்பை)"
       }
     ],
     "options_en": [
       "Delhi",
       "Madras (Chennai)",
-      "Bombay (Mumbai)",
-      "Calcutta (Kolkata)"
+      "Calcutta (Kolkata)",
+      "Bombay (Mumbai)"
     ],
     "options_ta": [
       "டெல்லி",
       "மெட்ராஸ் (சென்னை)",
-      "பம்பாய் (மும்பை)",
-      "கல்கத்தா (கொல்கத்தா)"
+      "கல்கத்தா (கொல்கத்தா)",
+      "பம்பாய் (மும்பை)"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "The Mayor-in-Council system was introduced in Calcutta Municipal Corporation in 1984 under the Calcutta Municipal Corporation Act, 1980. It functions like a cabinet form of government where the Mayor acts like a Chief Minister with an executive cabinet of councillors.",
       "ta": "மேயர்-இன்-கவுன்சில் முறை 1980-ஆம் ஆண்டின் சட்டத்தின் கீழ் 1984-ல் கல்கத்தா மாநகராட்சியில் அறிமுகப்படுத்தப்பட்டது. இது ஒரு நாடாளுமன்ற அமைச்சரவை முறை போல இயங்குகிறது; இதில் மேயர் முதலமைச்சர் போலவும், தேர்ந்தெடுக்கப்பட்ட உறுப்பினர்கள் அமைச்சர்கள் போலவும் செயல்படுகின்றனர்."
@@ -3075,12 +3075,12 @@
         "ta": "தவறானது. சென்னை பாரம்பரிய ஆணையர் நிர்வாக மாதிரியைப் பின்பற்றுகிறது."
       },
       "C": {
-        "en": "Incorrect. Bombay follows the classical 1888 Commissioner Model.",
-        "ta": "தவறானது. பம்பாய் பாரம்பரிய 1888 ஆணையர் மாதிரியைப் பின்பற்றுகிறது."
-      },
-      "D": {
         "en": "Correct. Calcutta was the pioneer of the Mayor-in-Council system in 1984.",
         "ta": "சரியானது. கல்கத்தா 1984-ல் மேயர்-இன்-கவுன்சில் முறையின் முன்னோடியாகும்."
+      },
+      "D": {
+        "en": "Incorrect. Bombay follows the classical 1888 Commissioner Model.",
+        "ta": "தவறானது. பம்பாய் பாரம்பரிய 1888 ஆணையர் மாதிரியைப் பின்பற்றுகிறது."
       }
     },
     "tnpsc_tip": {
@@ -3208,8 +3208,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Entry 18",
-        "ta": "பதிவு 18"
+        "en": "Entry 5",
+        "ta": "பதிவு 5 (Entry 5)"
       },
       {
         "id": "B",
@@ -3223,24 +3223,24 @@
       },
       {
         "id": "D",
-        "en": "Entry 5",
-        "ta": "பதிவு 5 (Entry 5)"
+        "en": "Entry 18",
+        "ta": "பதிவு 18"
       }
     ],
     "options_en": [
-      "Entry 18",
+      "Entry 5",
       "Entry 3",
       "Entry 12",
-      "Entry 5"
+      "Entry 18"
     ],
     "options_ta": [
-      "பதிவு 18",
+      "பதிவு 5 (Entry 5)",
       "பதிவு 3",
       "பதிவு 12",
-      "பதிவு 5 (Entry 5)"
+      "பதிவு 18"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Entry 5 of List II (State List) deals with 'Local government, that is to say, the constitution and powers of municipal corporations, improvement trusts, district boards, mining settlement authorities and other local authorities for the purpose of local self-government or village administration.'",
       "ta": "பட்டியல் II-ன் பதிவு 5: 'உள்ளாட்சி, அதாவது உள்ளாட்சி சுயஅரசு அல்லது கிராம நிர்வாகத்தின் நோக்கத்திற்காக மாநகராட்சிகள், மாவட்ட வாரியங்கள் மற்றும் பிற உள்ளாட்சி அதிகார அமைப்புகளை அமைத்தல் மற்றும் அவற்றின் அதிகாரங்கள்' என்று குறிப்பிடுகிறது."
@@ -3249,8 +3249,8 @@
     "explanation_ta": "பட்டியல் II-ன் பதிவு 5: 'உள்ளாட்சி, அதாவது உள்ளாட்சி சுயஅரசு அல்லது கிராம நிர்வாகத்தின் நோக்கத்திற்காக மாநகராட்சிகள், மாவட்ட வாரியங்கள் மற்றும் பிற உள்ளாட்சி அதிகார அமைப்புகளை அமைத்தல் மற்றும் அவற்றின் அதிகாரங்கள்' என்று குறிப்பிடுகிறது.",
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Entry 18 relates to Land, rights in or over land, land tenures.",
-        "ta": "தவறானது. பதிவு 18 நிலம் மற்றும் நில உரிமை தொடர்பானது."
+        "en": "Correct. Entry 5 of State List is Local Government.",
+        "ta": "சரியானது. மாநிலப் பட்டியலின் பதிவு 5 உள்ளாட்சி நிர்வாகம் தொடர்பானது."
       },
       "B": {
         "en": "Incorrect. Entry 3 relates to officers and servants of the High Court.",
@@ -3261,8 +3261,8 @@
         "ta": "தவறானது. பதிவு 12 நூலகங்கள், அருங்காட்சியகங்கள் தொடர்பானது."
       },
       "D": {
-        "en": "Correct. Entry 5 of State List is Local Government.",
-        "ta": "சரியானது. மாநிலப் பட்டியலின் பதிவு 5 உள்ளாட்சி நிர்வாகம் தொடர்பானது."
+        "en": "Incorrect. Entry 18 relates to Land, rights in or over land, land tenures.",
+        "ta": "தவறானது. பதிவு 18 நிலம் மற்றும் நில உரிமை தொடர்பானது."
       }
     },
     "tnpsc_tip": {
@@ -3310,29 +3310,29 @@
       },
       {
         "id": "C",
-        "en": "The State Election Commission",
-        "ta": "மாநில தேர்தல் ஆணையம்"
+        "en": "The State Government",
+        "ta": "மாநில அரசு (State Government)"
       },
       {
         "id": "D",
-        "en": "The State Government",
-        "ta": "மாநில அரசு (State Government)"
+        "en": "The State Election Commission",
+        "ta": "மாநில தேர்தல் ஆணையம்"
       }
     ],
     "options_en": [
       "The Governor in his individual discretion",
       "The Mayor of the Municipal Corporation",
-      "The State Election Commission",
-      "The State Government"
+      "The State Government",
+      "The State Election Commission"
     ],
     "options_ta": [
       "ஆளுநர் தனது தனிப்பட்ட விருப்பத்தின் பேரில்",
       "மாநகராட்சியின் மேயர்",
-      "மாநில தேர்தல் ஆணையம்",
-      "மாநில அரசு (State Government)"
+      "மாநில அரசு (State Government)",
+      "மாநில தேர்தல் ஆணையம்"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "The Municipal Commissioner is appointed by the State Government (usually drawn from the Indian Administrative Service or senior state civil services). He is responsible for the overall executive and administrative functioning of the Corporation.",
       "ta": "மாநகராட்சி ஆணையர் மாநில அரசால் நியமிக்கப்படுகிறார் (பொதுவாக IAS அதிகாரி அல்லது மூத்த மாநில சிவில் சர்வீஸ் அதிகாரி). இவர் மாநகராட்சியின் ஒட்டுமொத்த நிர்வாக அமலாக்கத்திற்குப் பொறுப்பாவார்."
@@ -3349,12 +3349,12 @@
         "ta": "தவறானது. மேயர் ஆணையரை நியமிப்பதில்லை."
       },
       "C": {
-        "en": "Incorrect. SEC has no executive appointment powers.",
-        "ta": "தவறானது. தேர்தல் ஆணையத்திற்கு நிர்வாக நியமன அதிகாரம் இல்லை."
-      },
-      "D": {
         "en": "Correct. State Government appoints the Municipal Commissioner.",
         "ta": "சரியானது. மாநில அரசே மாநகராட்சி ஆணையரை நியமிக்கிறது."
+      },
+      "D": {
+        "en": "Incorrect. SEC has no executive appointment powers.",
+        "ta": "தவறானது. தேர்தல் ஆணையத்திற்கு நிர்வாக நியமன அதிகாரம் இல்லை."
       }
     },
     "tnpsc_tip": {
@@ -3391,8 +3391,8 @@
     "options": [
       {
         "id": "A",
-        "en": "The 'First Citizen' of the city and presiding officer of the Municipal Council",
-        "ta": "நகரத்தின் 'முதல் குடிமகன்' மற்றும் மாநகராட்சி மன்றத்தின் தலைவர் (தலைமையேற்று நடத்துபவர்)"
+        "en": "The ex-officio chairman of the State Public Service Commission",
+        "ta": "மாநில அரசுப் பணியாளர் தேர்வாணையத்தின் பதவிவழித் தலைவர்"
       },
       {
         "id": "B",
@@ -3406,24 +3406,24 @@
       },
       {
         "id": "D",
-        "en": "The ex-officio chairman of the State Public Service Commission",
-        "ta": "மாநில அரசுப் பணியாளர் தேர்வாணையத்தின் பதவிவழித் தலைவர்"
+        "en": "The 'First Citizen' of the city and presiding officer of the Municipal Council",
+        "ta": "நகரத்தின் 'முதல் குடிமகன்' மற்றும் மாநகராட்சி மன்றத்தின் தலைவர் (தலைமையேற்று நடத்துபவர்)"
       }
     ],
     "options_en": [
-      "The 'First Citizen' of the city and presiding officer of the Municipal Council",
+      "The ex-officio chairman of the State Public Service Commission",
       "The chief executive officer with personal veto over expenditures",
       "An employee of the Department of Municipal Administration",
-      "The ex-officio chairman of the State Public Service Commission"
+      "The 'First Citizen' of the city and presiding officer of the Municipal Council"
     ],
     "options_ta": [
-      "நகரத்தின் 'முதல் குடிமகன்' மற்றும் மாநகராட்சி மன்றத்தின் தலைவர் (தலைமையேற்று நடத்துபவர்)",
+      "மாநில அரசுப் பணியாளர் தேர்வாணையத்தின் பதவிவழித் தலைவர்",
       "செலவினங்கள் மீது தனிப்பட்ட வீட்டோ அதிகாரம் கொண்ட தலைமை நிர்வாக அதிகாரி",
       "நகராட்சி நிர்வாகத் துறையின் ஒரு ஊழியர்",
-      "மாநில அரசுப் பணியாளர் தேர்வாணையத்தின் பதவிவழித் தலைவர்"
+      "நகரத்தின் 'முதல் குடிமகன்' மற்றும் மாநகராட்சி மன்றத்தின் தலைவர் (தலைமையேற்று நடத்துபவர்)"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "The Mayor is revered as the 'First Citizen' of the city, presiding over meetings of the Corporation Council, receiving visiting dignitaries, and exercising political leadership, while executive administrative powers are wielded by the Municipal Commissioner.",
       "ta": "மேயர் நகரத்தின் 'முதல் குடிமகன்' என்று போற்றப்படுகிறார்; இவர் மாநகராட்சி மன்றக் கூட்டங்களுக்குத் தலைமை தாங்குகிறார், முக்கிய பிரமுகர்களை வரவேற்கிறார் மற்றும் அரசியல் தலைமைத்துவத்தை வழங்குகிறார்; நிர்வாக அதிகாரங்கள் ஆணையரால் பயன்படுத்தப்படுகின்றன."
@@ -3432,8 +3432,8 @@
     "explanation_ta": "மேயர் நகரத்தின் 'முதல் குடிமகன்' என்று போற்றப்படுகிறார்; இவர் மாநகராட்சி மன்றக் கூட்டங்களுக்குத் தலைமை தாங்குகிறார், முக்கிய பிரமுகர்களை வரவேற்கிறார் மற்றும் அரசியல் தலைமைத்துவத்தை வழங்குகிறார்; நிர்வாக அதிகாரங்கள் ஆணையரால் பயன்படுத்தப்படுகின்றன.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Mayor is the First Citizen of the city and presiding officer.",
-        "ta": "சரியானது. மேயர் நகரத்தின் முதல் குடிமகன் மற்றும் மன்றக் கூட்டங்களின் தலைவர்."
+        "en": "Incorrect. PSC is an entirely separate constitutional body under Article 315.",
+        "ta": "தவறானது. TNPSC தனி அரசியலமைப்பு அமைப்பு."
       },
       "B": {
         "en": "Incorrect. Executive power rests with the Commissioner, not the Mayor alone in the classical model.",
@@ -3444,8 +3444,8 @@
         "ta": "தவறானது. மேயர் தேர்ந்தெடுக்கப்பட்ட மக்கள் பிரதிநிதி."
       },
       "D": {
-        "en": "Incorrect. PSC is an entirely separate constitutional body under Article 315.",
-        "ta": "தவறானது. TNPSC தனி அரசியலமைப்பு அமைப்பு."
+        "en": "Correct. Mayor is the First Citizen of the city and presiding officer.",
+        "ta": "சரியானது. மேயர் நகரத்தின் முதல் குடிமகன் மற்றும் மன்றக் கூட்டங்களின் தலைவர்."
       }
     },
     "tnpsc_tip": {
@@ -3573,8 +3573,8 @@
     "options": [
       {
         "id": "A",
-        "en": "The validity of any law relating to the delimitation of constituencies or the allotment of seats to such constituencies",
-        "ta": "தொகுதிகளின் எல்லை மறுவரையறை அல்லது அத்தொகுதிகளுக்கு இடங்கள் ஒதுக்கீடு செய்வது தொடர்பான எந்தவொரு சட்டத்தின் செல்லுபடியாகும் தன்மை"
+        "en": "Any law governing the service conditions of municipal engineers",
+        "ta": "நகராட்சிப் பொறியாளர்களின் பணிக்கால நிபந்தனைகளை நிர்வகிக்கும் சட்டம்"
       },
       {
         "id": "B",
@@ -3588,24 +3588,24 @@
       },
       {
         "id": "D",
-        "en": "Any law governing the service conditions of municipal engineers",
-        "ta": "நகராட்சிப் பொறியாளர்களின் பணிக்கால நிபந்தனைகளை நிர்வகிக்கும் சட்டம்"
+        "en": "The validity of any law relating to the delimitation of constituencies or the allotment of seats to such constituencies",
+        "ta": "தொகுதிகளின் எல்லை மறுவரையறை அல்லது அத்தொகுதிகளுக்கு இடங்கள் ஒதுக்கீடு செய்வது தொடர்பான எந்தவொரு சட்டத்தின் செல்லுபடியாகும் தன்மை"
       }
     ],
     "options_en": [
-      "The validity of any law relating to the delimitation of constituencies or the allotment of seats to such constituencies",
+      "Any law governing the service conditions of municipal engineers",
       "Any law increasing municipal property tax rates",
       "Any law regulating fire safety licenses in commercial buildings",
-      "Any law governing the service conditions of municipal engineers"
+      "The validity of any law relating to the delimitation of constituencies or the allotment of seats to such constituencies"
     ],
     "options_ta": [
-      "தொகுதிகளின் எல்லை மறுவரையறை அல்லது அத்தொகுதிகளுக்கு இடங்கள் ஒதுக்கீடு செய்வது தொடர்பான எந்தவொரு சட்டத்தின் செல்லுபடியாகும் தன்மை",
+      "நகராட்சிப் பொறியாளர்களின் பணிக்கால நிபந்தனைகளை நிர்வகிக்கும் சட்டம்",
       "நகராட்சி சொத்து வரி விகிதங்களை உயர்த்தும் எந்தவொரு சட்டமும்",
       "வணிகக் கட்டடங்களில் தீயணைப்புப் பாதுகாப்பு உரிமங்களை ஒழுங்குபடுத்தும் சட்டம்",
-      "நகராட்சிப் பொறியாளர்களின் பணிக்கால நிபந்தனைகளை நிர்வகிக்கும் சட்டம்"
+      "தொகுதிகளின் எல்லை மறுவரையறை அல்லது அத்தொகுதிகளுக்கு இடங்கள் ஒதுக்கீடு செய்வது தொடர்பான எந்தவொரு சட்டத்தின் செல்லுபடியாகும் தன்மை"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Article 243ZG(a) bars the jurisdiction of courts: 'The validity of any law relating to the delimitation of constituencies or the allotment of seats to such constituencies, made or purporting to be made under article 243ZA shall not be called in question in any court.'",
       "ta": "உறுப்பு 243ZG(a) நீதிமன்றங்களின் அதிகார வரம்பைத் தடுக்கிறது: 'உறுப்பு 243ZA-ன் கீழ் செய்யப்பட்ட தொகுதிகளின் எல்லை மறுவரையறை அல்லது இடங்கள் ஒதுக்கீடு தொடர்பான எந்தவொரு சட்டத்தின் செல்லுபடியாகும் தன்மையையும் எந்த நீதிமன்றத்திலும் கேள்வி கேட்க முடியாது.'"
@@ -3614,8 +3614,8 @@
     "explanation_ta": "உறுப்பு 243ZG(a) நீதிமன்றங்களின் அதிகார வரம்பைத் தடுக்கிறது: 'உறுப்பு 243ZA-ன் கீழ் செய்யப்பட்ட தொகுதிகளின் எல்லை மறுவரையறை அல்லது இடங்கள் ஒதுக்கீடு தொடர்பான எந்தவொரு சட்டத்தின் செல்லுபடியாகும் தன்மையையும் எந்த நீதிமன்றத்திலும் கேள்வி கேட்க முடியாது.'",
     "why_not_others": {
       "A": {
-        "en": "Correct. Ward delimitation laws are shielded from judicial challenge under 243ZG(a).",
-        "ta": "சரியானது. வார்டு மறுவரையறைச் சட்டங்கள் உறுப்பு 243ZG(a)-ன் கீழ் நீதிமன்றத் தலையீட்டிலிருந்து பாதுகாக்கப்பட்டுள்ளன."
+        "en": "Incorrect. Service laws are subject to administrative tribunals and High Court review.",
+        "ta": "தவறானது. பணிக்கால விதிகள் நீதிமன்ற ஆய்வுக்கு உட்பட்டவை."
       },
       "B": {
         "en": "Incorrect. Tax laws can be challenged for arbitrariness or lack of legislative competence.",
@@ -3626,8 +3626,8 @@
         "ta": "தவறானது. ஒழுங்குமுறைச் சட்டங்கள் நீதிப் புனராய்விற்கு உட்பட்டவை."
       },
       "D": {
-        "en": "Incorrect. Service laws are subject to administrative tribunals and High Court review.",
-        "ta": "தவறானது. பணிக்கால விதிகள் நீதிமன்ற ஆய்வுக்கு உட்பட்டவை."
+        "en": "Correct. Ward delimitation laws are shielded from judicial challenge under 243ZG(a).",
+        "ta": "சரியானது. வார்டு மறுவரையறைச் சட்டங்கள் உறுப்பு 243ZG(a)-ன் கீழ் நீதிமன்றத் தலையீட்டிலிருந்து பாதுகாக்கப்பட்டுள்ளன."
       }
     },
     "tnpsc_tip": {
@@ -3664,8 +3664,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Tamil Nadu District Municipalities Act, 1920",
-        "ta": "தமிழ்நாடு மாவட்ட நகராட்சிகள் சட்டம், 1920 (TN District Municipalities Act, 1920)"
+        "en": "Tamil Nadu Panchayats Act, 1994",
+        "ta": "தமிழ்நாடு ஊராட்சிகள் சட்டம், 1994"
       },
       {
         "id": "B",
@@ -3679,24 +3679,24 @@
       },
       {
         "id": "D",
-        "en": "Tamil Nadu Panchayats Act, 1994",
-        "ta": "தமிழ்நாடு ஊராட்சிகள் சட்டம், 1994"
+        "en": "Tamil Nadu District Municipalities Act, 1920",
+        "ta": "தமிழ்நாடு மாவட்ட நகராட்சிகள் சட்டம், 1920 (TN District Municipalities Act, 1920)"
       }
     ],
     "options_en": [
-      "Tamil Nadu District Municipalities Act, 1920",
+      "Tamil Nadu Panchayats Act, 1994",
       "Madras Local Boards Act, 1884",
       "Madras Village Panchayats Act, 1950",
-      "Tamil Nadu Panchayats Act, 1994"
+      "Tamil Nadu District Municipalities Act, 1920"
     ],
     "options_ta": [
-      "தமிழ்நாடு மாவட்ட நகராட்சிகள் சட்டம், 1920 (TN District Municipalities Act, 1920)",
+      "தமிழ்நாடு ஊராட்சிகள் சட்டம், 1994",
       "மெட்ராஸ் உள்ளாட்சி வாரியங்கள் சட்டம், 1884",
       "மெட்ராஸ் கிராம ஊராட்சிகள் சட்டம், 1950",
-      "தமிழ்நாடு ஊராட்சிகள் சட்டம், 1994"
+      "தமிழ்நாடு மாவட்ட நகராட்சிகள் சட்டம், 1920 (TN District Municipalities Act, 1920)"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "The Tamil Nadu District Municipalities Act, 1920 (Madras Act V of 1920) was the foundational legislation regulating municipalities and town panchayats across Tamil Nadu for over a century, amended extensively following the 74th CAA.",
       "ta": "தமிழ்நாடு மாவட்ட நகராட்சிகள் சட்டம், 1920 (1920-ஆம் ஆண்டின் மெட்ராஸ் சட்டம் V) ஒரு நூற்றாண்டுக்கும் மேலாக தமிழ்நாட்டின் நகராட்சிகள் மற்றும் பேரூராட்சிகளை ஒழுங்குபடுத்திய அடிப்படை சட்டமாகும்; இது 74-வது CAA-க்குப் பிறகு விரிவாகத் திருத்தப்பட்டது."
@@ -3705,8 +3705,8 @@
     "explanation_ta": "தமிழ்நாடு மாவட்ட நகராட்சிகள் சட்டம், 1920 (1920-ஆம் ஆண்டின் மெட்ராஸ் சட்டம் V) ஒரு நூற்றாண்டுக்கும் மேலாக தமிழ்நாட்டின் நகராட்சிகள் மற்றும் பேரூராட்சிகளை ஒழுங்குபடுத்திய அடிப்படை சட்டமாகும்; இது 74-வது CAA-க்குப் பிறகு விரிவாகத் திருத்தப்பட்டது.",
     "why_not_others": {
       "A": {
-        "en": "Correct. The 1920 Act governed district municipalities.",
-        "ta": "சரியானது. 1920 சட்டம் மாவட்ட நகராட்சிகளை நிர்வகித்தது."
+        "en": "Incorrect. The 1994 Act governs rural Panchayati Raj in Tamil Nadu.",
+        "ta": "தவறானது. 1994 சட்டம் ஊரக ஊராட்சிகளை நிர்வகிக்கிறது."
       },
       "B": {
         "en": "Incorrect. The 1884 Act created taluk and district boards.",
@@ -3717,8 +3717,8 @@
         "ta": "தவறானது. 1950 சட்டம் கிராம ஊராட்சிகள் தொடர்பானது."
       },
       "D": {
-        "en": "Incorrect. The 1994 Act governs rural Panchayati Raj in Tamil Nadu.",
-        "ta": "தவறானது. 1994 சட்டம் ஊரக ஊராட்சிகளை நிர்வகிக்கிறது."
+        "en": "Correct. The 1920 Act governed district municipalities.",
+        "ta": "சரியானது. 1920 சட்டம் மாவட்ட நகராட்சிகளை நிர்வகித்தது."
       }
     },
     "tnpsc_tip": {
@@ -3754,8 +3754,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Urban poverty alleviation",
-        "ta": "நகர்ப்புற வறுமை ஒழிப்பு (Urban poverty alleviation)"
+        "en": "Promotion of cultural, educational and aesthetic aspects",
+        "ta": "கலாச்சார, கல்வி மற்றும் அழகியல் அம்சங்களை மேம்படுத்துதல்"
       },
       {
         "id": "B",
@@ -3764,8 +3764,8 @@
       },
       {
         "id": "C",
-        "en": "Promotion of cultural, educational and aesthetic aspects",
-        "ta": "கலாச்சார, கல்வி மற்றும் அழகியல் அம்சங்களை மேம்படுத்துதல்"
+        "en": "Urban poverty alleviation",
+        "ta": "நகர்ப்புற வறுமை ஒழிப்பு (Urban poverty alleviation)"
       },
       {
         "id": "D",
@@ -3774,19 +3774,19 @@
       }
     ],
     "options_en": [
-      "Urban poverty alleviation",
-      "Slum improvement and upgradation",
       "Promotion of cultural, educational and aesthetic aspects",
+      "Slum improvement and upgradation",
+      "Urban poverty alleviation",
       "Water supply for domestic, industrial and commercial purposes"
     ],
     "options_ta": [
-      "நகர்ப்புற வறுமை ஒழிப்பு (Urban poverty alleviation)",
-      "சேரி மேம்பாடு மற்றும் தரம் உயர்த்துதல்",
       "கலாச்சார, கல்வி மற்றும் அழகியல் அம்சங்களை மேம்படுத்துதல்",
+      "சேரி மேம்பாடு மற்றும் தரம் உயர்த்துதல்",
+      "நகர்ப்புற வறுமை ஒழிப்பு (Urban poverty alleviation)",
       "குடிநீர் விநியோகம்"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Item 11 of the Twelfth Schedule is 'Urban poverty alleviation', under which municipalities implement schemes like DAY-NULM (Deendayal Antyodaya Yojana - National Urban Livelihoods Mission).",
       "ta": "12-வது அட்டவணையின் 11-வது பாடம் 'நகர்ப்புற வறுமை ஒழிப்பு' ஆகும்; இதன் கீழ் நகராட்சிகள் DAY-NULM போன்ற வாழ்வாதாரத் திட்டங்களைச் செயல்படுத்துகின்றன."
@@ -3795,16 +3795,16 @@
     "explanation_ta": "12-வது அட்டவணையின் 11-வது பாடம் 'நகர்ப்புற வறுமை ஒழிப்பு' ஆகும்; இதன் கீழ் நகராட்சிகள் DAY-NULM போன்ற வாழ்வாதாரத் திட்டங்களைச் செயல்படுத்துகின்றன.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Item 11 = Urban poverty alleviation.",
-        "ta": "சரியானது. பாடம் 11 = நகர்ப்புற வறுமை ஒழிப்பு."
+        "en": "Incorrect. Cultural aspects is Item 13.",
+        "ta": "தவறானது. கலாச்சார அம்சங்கள் பாடம் 13."
       },
       "B": {
         "en": "Incorrect. Slum improvement is Item 10.",
         "ta": "தவறானது. சேரி மேம்பாடு பாடம் 10."
       },
       "C": {
-        "en": "Incorrect. Cultural aspects is Item 13.",
-        "ta": "தவறானது. கலாச்சார அம்சங்கள் பாடம் 13."
+        "en": "Correct. Item 11 = Urban poverty alleviation.",
+        "ta": "சரியானது. பாடம் 11 = நகர்ப்புற வறுமை ஒழிப்பு."
       },
       "D": {
         "en": "Incorrect. Water supply is Item 4.",
@@ -3845,8 +3845,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Slum improvement and upgradation",
-        "ta": "சேரி மேம்பாடு மற்றும் தரம் உயர்த்துதல் (Slum improvement and upgradation)"
+        "en": "Urban forestry",
+        "ta": "நகர்ப்புற வனவியல்"
       },
       {
         "id": "B",
@@ -3860,24 +3860,24 @@
       },
       {
         "id": "D",
-        "en": "Urban forestry",
-        "ta": "நகர்ப்புற வனவியல்"
+        "en": "Slum improvement and upgradation",
+        "ta": "சேரி மேம்பாடு மற்றும் தரம் உயர்த்துதல் (Slum improvement and upgradation)"
       }
     ],
     "options_en": [
-      "Slum improvement and upgradation",
+      "Urban forestry",
       "Fire services",
       "Burials and burial grounds",
-      "Urban forestry"
+      "Slum improvement and upgradation"
     ],
     "options_ta": [
-      "சேரி மேம்பாடு மற்றும் தரம் உயர்த்துதல் (Slum improvement and upgradation)",
+      "நகர்ப்புற வனவியல்",
       "தீயணைப்பு சேவைகள்",
       "மயானங்கள் மற்றும் இடுகாடுகள்",
-      "நகர்ப்புற வனவியல்"
+      "சேரி மேம்பாடு மற்றும் தரம் உயர்த்துதல் (Slum improvement and upgradation)"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Item 10 of the Twelfth Schedule is 'Slum improvement and upgradation', which empowers municipalities to provide in-situ rehabilitation, housing, tap water, toilets, and electricity in informal settlements.",
       "ta": "12-வது அட்டவணையின் பாடம் 10 'சேரி மேம்பாடு மற்றும் தரம் உயர்த்துதல்' ஆகும்; இது குடிசைப் பகுதிகளில் மறுவாழ்வு, முறையான வீடுகள், குடிநீர், கழிப்பறை மற்றும் மின்சார வசதிகளை வழங்க நகராட்சிகளுக்கு அதிகாரம் அளிக்கிறது."
@@ -3886,8 +3886,8 @@
     "explanation_ta": "12-வது அட்டவணையின் பாடம் 10 'சேரி மேம்பாடு மற்றும் தரம் உயர்த்துதல்' ஆகும்; இது குடிசைப் பகுதிகளில் மறுவாழ்வு, முறையான வீடுகள், குடிநீர், கழிப்பறை மற்றும் மின்சார வசதிகளை வழங்க நகராட்சிகளுக்கு அதிகாரம் அளிக்கிறது.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Item 10 relates to slums.",
-        "ta": "சரியானது. பாடம் 10 குடிசைப் பகுதிகள் தொடர்பானது."
+        "en": "Incorrect. Urban forestry is Item 8.",
+        "ta": "தவறானது. நகர்ப்புற வனவியல் பாடம் 8."
       },
       "B": {
         "en": "Incorrect. Fire services is Item 7.",
@@ -3898,8 +3898,8 @@
         "ta": "தவறானது. மயானங்கள் பாடம் 14."
       },
       "D": {
-        "en": "Incorrect. Urban forestry is Item 8.",
-        "ta": "தவறானது. நகர்ப்புற வனவியல் பாடம் 8."
+        "en": "Correct. Item 10 relates to slums.",
+        "ta": "சரியானது. பாடம் 10 குடிசைப் பகுதிகள் தொடர்பானது."
       }
     },
     "tnpsc_tip": {
@@ -3937,13 +3937,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Vital statistics including registration of births and deaths",
-        "ta": "பிறப்பு மற்றும் இறப்பு பதிவு உள்ளிட்ட முக்கிய புள்ளிவிவரங்கள் (Vital statistics)"
+        "en": "Regulation of slaughter houses",
+        "ta": "கசாப்புக் கூடங்களை ஒழுங்குபடுத்துதல்"
       },
       {
         "id": "B",
-        "en": "Regulation of slaughter houses",
-        "ta": "கசாப்புக் கூடங்களை ஒழுங்குபடுத்துதல்"
+        "en": "Vital statistics including registration of births and deaths",
+        "ta": "பிறப்பு மற்றும் இறப்பு பதிவு உள்ளிட்ட முக்கிய புள்ளிவிவரங்கள் (Vital statistics)"
       },
       {
         "id": "C",
@@ -3957,19 +3957,19 @@
       }
     ],
     "options_en": [
-      "Vital statistics including registration of births and deaths",
       "Regulation of slaughter houses",
+      "Vital statistics including registration of births and deaths",
       "Public amenities including street lighting",
       "Cattle pounds and prevention of cruelty to animals"
     ],
     "options_ta": [
-      "பிறப்பு மற்றும் இறப்பு பதிவு உள்ளிட்ட முக்கிய புள்ளிவிவரங்கள் (Vital statistics)",
       "கசாப்புக் கூடங்களை ஒழுங்குபடுத்துதல்",
+      "பிறப்பு மற்றும் இறப்பு பதிவு உள்ளிட்ட முக்கிய புள்ளிவிவரங்கள் (Vital statistics)",
       "தெரு விளக்குகள் உள்ளிட்ட பொது வசதிகள்",
       "கால்நடைப் பட்டிகள் மற்றும் விலங்குகள் வதை தடுப்பு"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Item 16 of the Twelfth Schedule is 'Vital statistics including registration of births and deaths'. In municipal areas, the Municipal Health Officer usually acts as the Chief Registrar of Births and Deaths.",
       "ta": "12-வது அட்டவணையின் 16-வது பாடம் 'பிறப்பு மற்றும் இறப்பு பதிவு உள்ளிட்ட முக்கிய புள்ளிவிவரங்கள்' ஆகும். நகராட்சிப் பகுதிகளில் நகராட்சி சுகாதார அதிகாரி பிறப்பு மற்றும் இறப்பு தலைமைப் பதிவாளராகச் செயல்படுகிறார்."
@@ -3978,12 +3978,12 @@
     "explanation_ta": "12-வது அட்டவணையின் 16-வது பாடம் 'பிறப்பு மற்றும் இறப்பு பதிவு உள்ளிட்ட முக்கிய புள்ளிவிவரங்கள்' ஆகும். நகராட்சிப் பகுதிகளில் நகராட்சி சுகாதார அதிகாரி பிறப்பு மற்றும் இறப்பு தலைமைப் பதிவாளராகச் செயல்படுகிறார்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Item 16 relates to vital statistics.",
-        "ta": "சரியானது. பாடம் 16 முக்கிய புள்ளிவிவரங்கள் தொடர்பானது."
-      },
-      "B": {
         "en": "Incorrect. Slaughter houses is Item 18.",
         "ta": "தவறானது. கசாப்புக் கூடங்கள் பாடம் 18."
+      },
+      "B": {
+        "en": "Correct. Item 16 relates to vital statistics.",
+        "ta": "சரியானது. பாடம் 16 முக்கிய புள்ளிவிவரங்கள் தொடர்பானது."
       },
       "C": {
         "en": "Incorrect. Public amenities is Item 17.",
@@ -4119,8 +4119,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Burials and burial grounds; cremations, cremation grounds and electric crematoriums",
-        "ta": "மயானங்கள் மற்றும் இடுகாடுகள்; தகனங்கள், சுடுகாடுகள் மற்றும் மின்மயானங்கள்"
+        "en": "Urban planning",
+        "ta": "நகரத் திட்டமிடல்"
       },
       {
         "id": "B",
@@ -4134,24 +4134,24 @@
       },
       {
         "id": "D",
-        "en": "Urban planning",
-        "ta": "நகரத் திட்டமிடல்"
+        "en": "Burials and burial grounds; cremations, cremation grounds and electric crematoriums",
+        "ta": "மயானங்கள் மற்றும் இடுகாடுகள்; தகனங்கள், சுடுகாடுகள் மற்றும் மின்மயானங்கள்"
       }
     ],
     "options_en": [
-      "Burials and burial grounds; cremations, cremation grounds and electric crematoriums",
+      "Urban planning",
       "Water supply for domestic purposes",
       "Slum improvement",
-      "Urban planning"
+      "Burials and burial grounds; cremations, cremation grounds and electric crematoriums"
     ],
     "options_ta": [
-      "மயானங்கள் மற்றும் இடுகாடுகள்; தகனங்கள், சுடுகாடுகள் மற்றும் மின்மயானங்கள்",
+      "நகரத் திட்டமிடல்",
       "குடிநீர் விநியோகம்",
       "சேரி மேம்பாடு",
-      "நகரத் திட்டமிடல்"
+      "மயானங்கள் மற்றும் இடுகாடுகள்; தகனங்கள், சுடுகாடுகள் மற்றும் மின்மயானங்கள்"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Item 14 of the Twelfth Schedule is 'Burials and burial grounds; cremations, cremation grounds and electric crematoriums'. Municipalities maintain public burial and cremation grounds and issue burial/cremation passes.",
       "ta": "12-வது அட்டவணையின் 14-வது பாடம் 'மயானங்கள் மற்றும் இடுகாடுகள்; தகனங்கள், சுடுகாடுகள் மற்றும் மின்மயானங்கள்' ஆகும். நகராட்சிகள் பொது மயானங்களைப் பராமரித்து தகன அனுமதிகளை வழங்குகின்றன."
@@ -4160,8 +4160,8 @@
     "explanation_ta": "12-வது அட்டவணையின் 14-வது பாடம் 'மயானங்கள் மற்றும் இடுகாடுகள்; தகனங்கள், சுடுகாடுகள் மற்றும் மின்மயானங்கள்' ஆகும். நகராட்சிகள் பொது மயானங்களைப் பராமரித்து தகன அனுமதிகளை வழங்குகின்றன.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Item 14 deals with burials, cremations, and crematoriums.",
-        "ta": "சரியானது. பாடம் 14 மயானங்கள் மற்றும் மின்மயானங்கள் தொடர்பானது."
+        "en": "Incorrect. Urban planning is Item 1.",
+        "ta": "தவறானது. நகரத் திட்டமிடல் பாடம் 1."
       },
       "B": {
         "en": "Incorrect. Water supply is Item 4.",
@@ -4172,8 +4172,8 @@
         "ta": "தவறானது. சேரி மேம்பாடு பாடம் 10."
       },
       "D": {
-        "en": "Incorrect. Urban planning is Item 1.",
-        "ta": "தவறானது. நகரத் திட்டமிடல் பாடம் 1."
+        "en": "Correct. Item 14 deals with burials, cremations, and crematoriums.",
+        "ta": "சரியானது. பாடம் 14 மயானங்கள் மற்றும் மின்மயானங்கள் தொடர்பானது."
       }
     },
     "tnpsc_tip": {
@@ -4210,8 +4210,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Promotion of cultural, educational and aesthetic aspects",
-        "ta": "கலாச்சார, கல்வி மற்றும் அழகியல் அம்சங்களை மேம்படுத்துதல் (Promotion of cultural, educational and aesthetic aspects)"
+        "en": "Public health and sanitation",
+        "ta": "பொதுச் சுகாதாரம் மற்றும் துப்புரவு"
       },
       {
         "id": "B",
@@ -4220,8 +4220,8 @@
       },
       {
         "id": "C",
-        "en": "Public health and sanitation",
-        "ta": "பொதுச் சுகாதாரம் மற்றும் துப்புரவு"
+        "en": "Promotion of cultural, educational and aesthetic aspects",
+        "ta": "கலாச்சார, கல்வி மற்றும் அழகியல் அம்சங்களை மேம்படுத்துதல் (Promotion of cultural, educational and aesthetic aspects)"
       },
       {
         "id": "D",
@@ -4230,19 +4230,19 @@
       }
     ],
     "options_en": [
-      "Promotion of cultural, educational and aesthetic aspects",
-      "Fire services",
       "Public health and sanitation",
+      "Fire services",
+      "Promotion of cultural, educational and aesthetic aspects",
       "Urban poverty alleviation"
     ],
     "options_ta": [
-      "கலாச்சார, கல்வி மற்றும் அழகியல் அம்சங்களை மேம்படுத்துதல் (Promotion of cultural, educational and aesthetic aspects)",
-      "தீயணைப்பு சேவைகள்",
       "பொதுச் சுகாதாரம் மற்றும் துப்புரவு",
+      "தீயணைப்பு சேவைகள்",
+      "கலாச்சார, கல்வி மற்றும் அழகியல் அம்சங்களை மேம்படுத்துதல் (Promotion of cultural, educational and aesthetic aspects)",
       "நகர்ப்புற வறுமை ஒழிப்பு"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Item 13 of the Twelfth Schedule is 'Promotion of cultural, educational and aesthetic aspects', enabling municipalities to run municipal schools, public libraries, museums, and preserve civic heritage.",
       "ta": "12-வது அட்டவணையின் பாடம் 13 'கலாச்சார, கல்வி மற்றும் அழகியல் அம்சங்களை மேம்படுத்துதல்' ஆகும்; இது நகராட்சிகள் நகராட்சிப் பள்ளிகள், பொது நூலகங்கள் மற்றும் பாரம்பரியக் கட்டடங்களைப் பராமரிக்க அதிகாரம் அளிக்கிறது."
@@ -4251,16 +4251,16 @@
     "explanation_ta": "12-வது அட்டவணையின் பாடம் 13 'கலாச்சார, கல்வி மற்றும் அழகியல் அம்சங்களை மேம்படுத்துதல்' ஆகும்; இது நகராட்சிகள் நகராட்சிப் பள்ளிகள், பொது நூலகங்கள் மற்றும் பாரம்பரியக் கட்டடங்களைப் பராமரிக்க அதிகாரம் அளிக்கிறது.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Item 13 deals with cultural, educational, and aesthetic promotion.",
-        "ta": "சரியானது. பாடம் 13 கலாச்சார, கல்வி மற்றும் அழகியல் மேம்பாடு தொடர்பானது."
+        "en": "Incorrect. Public health is Item 6.",
+        "ta": "தவறானது. பொதுச் சுகாதாரம் பாடம் 6."
       },
       "B": {
         "en": "Incorrect. Fire services is Item 7.",
         "ta": "தவறானது. தீயணைப்பு சேவைகள் பாடம் 7."
       },
       "C": {
-        "en": "Incorrect. Public health is Item 6.",
-        "ta": "தவறானது. பொதுச் சுகாதாரம் பாடம் 6."
+        "en": "Correct. Item 13 deals with cultural, educational, and aesthetic promotion.",
+        "ta": "சரியானது. பாடம் 13 கலாச்சார, கல்வி மற்றும் அழகியல் மேம்பாடு தொடர்பானது."
       },
       "D": {
         "en": "Incorrect. Urban poverty alleviation is Item 11.",
@@ -4301,13 +4301,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Provision of urban amenities and facilities such as parks, gardens, playgrounds",
-        "ta": "பூங்காக்கள், தோட்டங்கள், விளையாட்டு மைதானங்கள் போன்ற நகர்ப்புற வசதிகளை வழங்குதல்"
+        "en": "Slum clearance and redevelopment",
+        "ta": "சேரி அகற்றம் மற்றும் மறுசீரமைப்பு"
       },
       {
         "id": "B",
-        "en": "Slum clearance and redevelopment",
-        "ta": "சேரி அகற்றம் மற்றும் மறுசீரமைப்பு"
+        "en": "Provision of urban amenities and facilities such as parks, gardens, playgrounds",
+        "ta": "பூங்காக்கள், தோட்டங்கள், விளையாட்டு மைதானங்கள் போன்ற நகர்ப்புற வசதிகளை வழங்குதல்"
       },
       {
         "id": "C",
@@ -4321,19 +4321,19 @@
       }
     ],
     "options_en": [
-      "Provision of urban amenities and facilities such as parks, gardens, playgrounds",
       "Slum clearance and redevelopment",
+      "Provision of urban amenities and facilities such as parks, gardens, playgrounds",
       "Regulation of slaughter houses",
       "Roads and bridges construction"
     ],
     "options_ta": [
-      "பூங்காக்கள், தோட்டங்கள், விளையாட்டு மைதானங்கள் போன்ற நகர்ப்புற வசதிகளை வழங்குதல்",
       "சேரி அகற்றம் மற்றும் மறுசீரமைப்பு",
+      "பூங்காக்கள், தோட்டங்கள், விளையாட்டு மைதானங்கள் போன்ற நகர்ப்புற வசதிகளை வழங்குதல்",
       "கசாப்புக் கூடங்கள் ஒழுங்குமுறை",
       "சாலைகள் மற்றும் பாலங்கள் அமைத்தல்"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Item 12 of the Twelfth Schedule is 'Provision of urban amenities and facilities such as parks, gardens, playgrounds', which focuses on enhancing quality of urban life and green recreational spaces.",
       "ta": "12-வது அட்டவணையின் 12-வது பாடம் 'பூங்காக்கள், தோட்டங்கள், விளையாட்டு மைதானங்கள் போன்ற நகர்ப்புற வசதிகளை வழங்குதல்' ஆகும்; இது நகர்ப்புற வாழ்க்கைத் தரம் மற்றும் பொழுதுபோக்கு இடங்களை மேம்படுத்துவதில் கவனம் செலுத்துகிறது."
@@ -4342,12 +4342,12 @@
     "explanation_ta": "12-வது அட்டவணையின் 12-வது பாடம் 'பூங்காக்கள், தோட்டங்கள், விளையாட்டு மைதானங்கள் போன்ற நகர்ப்புற வசதிகளை வழங்குதல்' ஆகும்; இது நகர்ப்புற வாழ்க்கைத் தரம் மற்றும் பொழுதுபோக்கு இடங்களை மேம்படுத்துவதில் கவனம் செலுத்துகிறது.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Item 12 covers parks, gardens, and playgrounds.",
-        "ta": "சரியானது. பாடம் 12 பூங்காக்கள், தோட்டங்கள் மற்றும் மைதானங்களை உள்ளடக்கியது."
-      },
-      "B": {
         "en": "Incorrect. Slum improvement is Item 10.",
         "ta": "தவறானது. சேரி மேம்பாடு பாடம் 10."
+      },
+      "B": {
+        "en": "Correct. Item 12 covers parks, gardens, and playgrounds.",
+        "ta": "சரியானது. பாடம் 12 பூங்காக்கள், தோட்டங்கள் மற்றும் மைதானங்களை உள்ளடக்கியது."
       },
       "C": {
         "en": "Incorrect. Slaughter houses is Item 18.",
@@ -4392,13 +4392,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Public amenities including street lighting, parking lots, bus stops and public conveniences",
-        "ta": "தெரு விளக்குகள், வாகன நிறுத்துமிடங்கள், பேருந்து நிறுத்தங்கள் மற்றும் பொதுக் கழிப்பிடங்கள் உள்ளிட்ட பொது வசதிகள்"
+        "en": "Water supply for industrial purposes only",
+        "ta": "தொழில்துறைக்கான நீர் விநியோகம் மட்டுமே"
       },
       {
         "id": "B",
-        "en": "Water supply for industrial purposes only",
-        "ta": "தொழில்துறைக்கான நீர் விநியோகம் மட்டுமே"
+        "en": "Public amenities including street lighting, parking lots, bus stops and public conveniences",
+        "ta": "தெரு விளக்குகள், வாகன நிறுத்துமிடங்கள், பேருந்து நிறுத்தங்கள் மற்றும் பொதுக் கழிப்பிடங்கள் உள்ளிட்ட பொது வசதிகள்"
       },
       {
         "id": "C",
@@ -4412,19 +4412,19 @@
       }
     ],
     "options_en": [
-      "Public amenities including street lighting, parking lots, bus stops and public conveniences",
       "Water supply for industrial purposes only",
+      "Public amenities including street lighting, parking lots, bus stops and public conveniences",
       "Fire fighting and disaster management",
       "Regulation of tanneries exclusively"
     ],
     "options_ta": [
-      "தெரு விளக்குகள், வாகன நிறுத்துமிடங்கள், பேருந்து நிறுத்தங்கள் மற்றும் பொதுக் கழிப்பிடங்கள் உள்ளிட்ட பொது வசதிகள்",
       "தொழில்துறைக்கான நீர் விநியோகம் மட்டுமே",
+      "தெரு விளக்குகள், வாகன நிறுத்துமிடங்கள், பேருந்து நிறுத்தங்கள் மற்றும் பொதுக் கழிப்பிடங்கள் உள்ளிட்ட பொது வசதிகள்",
       "தீயணைப்பு மற்றும் பேரிடர் மேலாண்மை",
       "தோல் பதனிடும் தொழிற்சாலைகள் ஒழுங்குமுறை மட்டுமே"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Item 17 of the Twelfth Schedule is 'Public amenities including street lighting, parking lots, bus stops and public conveniences', representing the everyday civic infrastructure managed by municipalities.",
       "ta": "12-வது அட்டவணையின் 17-வது பாடம் 'தெரு விளக்குகள், வாகன நிறுத்துமிடங்கள், பேருந்து நிறுத்தங்கள் மற்றும் பொதுக் கழிப்பிடங்கள் உள்ளிட்ட பொது வசதிகள்' ஆகும்; இது நகராட்சிகளால் நிர்வகிக்கப்படும் அன்றாட குடிமை உள்கட்டமைப்பைக் குறிக்கிறது."
@@ -4433,12 +4433,12 @@
     "explanation_ta": "12-வது அட்டவணையின் 17-வது பாடம் 'தெரு விளக்குகள், வாகன நிறுத்துமிடங்கள், பேருந்து நிறுத்தங்கள் மற்றும் பொதுக் கழிப்பிடங்கள் உள்ளிட்ட பொது வசதிகள்' ஆகும்; இது நகராட்சிகளால் நிர்வகிக்கப்படும் அன்றாட குடிமை உள்கட்டமைப்பைக் குறிக்கிறது.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Item 17 encompasses street lights, parking lots, bus stops, and public toilets.",
-        "ta": "சரியானது. பாடம் 17 தெருவிளக்குகள், பார்க்கிங், பேருந்து நிறுத்தங்கள், கழிப்பறைகளை உள்ளடக்கியது."
-      },
-      "B": {
         "en": "Incorrect. Water supply is Item 4.",
         "ta": "தவறானது. குடிநீர் விநியோகம் பாடம் 4."
+      },
+      "B": {
+        "en": "Correct. Item 17 encompasses street lights, parking lots, bus stops, and public toilets.",
+        "ta": "சரியானது. பாடம் 17 தெருவிளக்குகள், பார்க்கிங், பேருந்து நிறுத்தங்கள், கழிப்பறைகளை உள்ளடக்கியது."
       },
       "C": {
         "en": "Incorrect. Fire services is Item 7.",
@@ -4484,8 +4484,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Executive Officer (EO)",
-        "ta": "செயல் அலுவலர் (Executive Officer - EO)"
+        "en": "Block Development Officer",
+        "ta": "வட்டார வளர்ச்சி அலுவலர் (BDO)"
       },
       {
         "id": "B",
@@ -4494,8 +4494,8 @@
       },
       {
         "id": "C",
-        "en": "Block Development Officer",
-        "ta": "வட்டார வளர்ச்சி அலுவலர் (BDO)"
+        "en": "Executive Officer (EO)",
+        "ta": "செயல் அலுவலர் (Executive Officer - EO)"
       },
       {
         "id": "D",
@@ -4504,19 +4504,19 @@
       }
     ],
     "options_en": [
-      "Executive Officer (EO)",
-      "Municipal Commissioner",
       "Block Development Officer",
+      "Municipal Commissioner",
+      "Executive Officer (EO)",
       "Panchayat Secretary"
     ],
     "options_ta": [
-      "செயல் அலுவலர் (Executive Officer - EO)",
-      "நகராட்சி ஆணையர்",
       "வட்டார வளர்ச்சி அலுவலர் (BDO)",
+      "நகராட்சி ஆணையர்",
+      "செயல் அலுவலர் (Executive Officer - EO)",
       "ஊராட்சிச் செயலாளர்"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "In Tamil Nadu, while Municipal Corporations and Municipal Councils are administered by Municipal Commissioners, Town Panchayats (Nagar Panchayats) are administered by an 'Executive Officer' (EO) appointed by the Directorate of Town Panchayats.",
       "ta": "தமிழ்நாட்டில், மாநகராட்சிகள் மற்றும் நகராட்சிகள் ஆணையர்களால் நிர்வகிக்கப்படும் அதே வேளையில், பேரூராட்சிகள் பேரூராட்சிகள் இயக்ககத்தால் நியமிக்கப்படும் 'செயல் அலுவலர்' (Executive Officer - EO) என்பவரால் நிர்வகிக்கப்படுகின்றன."
@@ -4525,16 +4525,16 @@
     "explanation_ta": "தமிழ்நாட்டில், மாநகராட்சிகள் மற்றும் நகராட்சிகள் ஆணையர்களால் நிர்வகிக்கப்படும் அதே வேளையில், பேரூராட்சிகள் பேரூராட்சிகள் இயக்ககத்தால் நியமிக்கப்படும் 'செயல் அலுவலர்' (Executive Officer - EO) என்பவரால் நிர்வகிக்கப்படுகின்றன.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Town Panchayats in TN are headed by Executive Officers.",
-        "ta": "சரியானது. தமிழ்நாட்டில் பேரூராட்சிகள் செயல் அலுவலர்களால் (EO) நிர்வகிக்கப்படுகின்றன."
+        "en": "Incorrect. BDO heads the rural Panchayat Union (Block).",
+        "ta": "தவறானது. BDO ஊராட்சி ஒன்றியத்தை (வட்டாரம்) நிர்வகிக்கிறார்."
       },
       "B": {
         "en": "Incorrect. Municipal Commissioner heads a Municipal Council or Corporation.",
         "ta": "தவறானது. நகராட்சி ஆணையர் நகராட்சி அல்லது மாநகராட்சியை வழிநடத்துகிறார்."
       },
       "C": {
-        "en": "Incorrect. BDO heads the rural Panchayat Union (Block).",
-        "ta": "தவறானது. BDO ஊராட்சி ஒன்றியத்தை (வட்டாரம்) நிர்வகிக்கிறார்."
+        "en": "Correct. Town Panchayats in TN are headed by Executive Officers.",
+        "ta": "சரியானது. தமிழ்நாட்டில் பேரூராட்சிகள் செயல் அலுவலர்களால் (EO) நிர்வகிக்கப்படுகின்றன."
       },
       "D": {
         "en": "Incorrect. Panchayat Secretary is the administrative staff for a rural Village Panchayat.",

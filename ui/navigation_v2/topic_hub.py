@@ -257,7 +257,7 @@ def render_topic_hub(user: str):
     st.markdown("### 📝 Practice Questions")
     st.markdown("<p style='color: #64748B; font-size: 0.85rem; margin-top: -8px; margin-bottom: 14px;'>Choose a practice mode for this topic.</p>", unsafe_allow_html=True)
     
-    p_cols = st.columns(4, gap="small")
+    p_cols = st.columns(3, gap="small")
     
     practice_types = [
         ("Easy", "easy", "🟢", "Basic memory & direct factual questions"),
@@ -268,16 +268,21 @@ def render_topic_hub(user: str):
         ("Match the Following", "match_the_following", "📊", "Cross-matching tables & pairs"),
         ("Chronology", "chronology", "⏱️", "Sequential timeline order checks"),
         ("PYQ Practice", "pyq", "🏛️", "Previous Year Question repository"),
+        ("Grand Test", "grand_test", "🏆", "100-question comprehensive topic grand test simulator"),
     ]
 
     for idx, (p_title, p_key, p_icon, p_desc) in enumerate(practice_types):
-        p_col = p_cols[idx % 4]
+        p_col = p_cols[idx % 3]
         is_avail = avail.get(p_key, False)
         
         if p_key == "easy":
             status_html = '<span style="font-size:0.7rem; color:#15803D; font-weight:700;">● Ready</span>' if is_avail else '<span style="font-size:0.7rem; color:#DC2626; font-weight:700;">Mode Not Available</span>'
             btn_label = "📝 Start Practice"
             btn_disabled = False
+        elif p_key == "grand_test":
+            status_html = '<span style="font-size:0.7rem; color:#D97706; font-weight:700;">● Ready (100 Qs)</span>' if is_avail else '<span style="font-size:0.7rem; color:#94A3B8;">Coming Soon</span>'
+            btn_label = "🏆 Start Grand Test"
+            btn_disabled = not is_avail
         else:
             status_html = '<span style="font-size:0.7rem; color:#15803D; font-weight:700;">● Ready</span>' if is_avail else '<span style="font-size:0.7rem; color:#94A3B8;">Coming Soon</span>'
             btn_label = f"Continue → {p_title}"
@@ -303,6 +308,28 @@ def render_topic_hub(user: str):
                         st.rerun()
                     else:
                         st.warning("Repository Not Available")
+                elif p_key == "grand_test":
+                    with st.spinner("⏳ Loading Grand Test Repository..."):
+                        questions = load_questions(repository_id, "grand_test")
+                        if questions:
+                            st.session_state.update({
+                                "test_subject": subject,
+                                "test_topic_id": topic_id,
+                                "test_repository_id": repository_id,
+                                "test_topic": repository_id,
+                                "test_qs": questions,
+                                "q_index": 0,
+                                "score": 0,
+                                "answered": False,
+                                "test_active": True,
+                                "test_mode": "grand_test",
+                                "start_time": time.time(),
+                                "test_start_xp": st.session_state.get("xp", 0),
+                            })
+                            st.session_state["main_menu"] = "🔥 Daily Challenge"
+                            st.rerun()
+                        else:
+                            st.warning("Grand Test repository could not be loaded.")
                 else:
                     started = start_practice_session(subject, topic_id, repository_id, display_title, p_key)
                     if started:

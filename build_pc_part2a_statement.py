@@ -1,0 +1,696 @@
+# -*- coding: utf-8 -*-
+"""
+Build 50 Statement-based MCQs for Parliamentary Committees (PC_S_001 to PC_S_050)
+TNPSC Nova AI Content Engine
+"""
+import json
+import shutil
+from collections import Counter
+from parliamentary_committees_mcq_helper import make_pc_q
+from tools.nova_content_engine.answer_randomizer import randomize_and_balance_dataset
+from tools.nova_content_engine.validator import ContentValidator
+
+def get_statement_questions():
+    questions = []
+
+    # S_001: PAC composition & convention
+    questions.append(make_pc_q(
+        qid="PC_S_001",
+        diff="Medium",
+        qtype="statement_based",
+        subtopic="Financial Committees",
+        en_stem="Consider the following statements regarding the Public Accounts Committee (PAC):\n1. It was first set up in 1921 under the provisions of the Government of India Act, 1919.\n2. It consists of 22 members (15 from Lok Sabha and 7 from Rajya Sabha).\n3. By convention established since 1967, its Chairman is invariably selected from the Opposition.\nWhich of the statements given above is/are correct?",
+        ta_stem="பொதுக் கணக்குக் குழு (PAC) தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இது 1919-ஆம் ஆண்டு இந்திய அரசுச் சட்டத்தின் விதிகளின் கீழ் 1921-ல் முதன்முதலில் அமைக்கப்பட்டது.\n2. இது 22 உறுப்பினர்களைக் (மக்களவையில் 15 மற்றும் மாநிலங்களவையில் 7) கொண்டுள்ளது.\n3. 1967 முதல் நடைமுறைக்கு வந்த மரபின்படி, இதன் தலைவர் எதிர்க்கட்சியிலிருந்தே தேர்ந்தெடுக்கப்படுகிறார்.\nமேற்கண்ட கூற்றுகளில் எது/எவை சரியானவை?",
+        en_a="1, 2 and 3",
+        ta_a="1, 2 மற்றும் 3",
+        en_b="1 and 2 only",
+        ta_b="1 மற்றும் 2 மட்டுமே",
+        en_c="2 and 3 only",
+        ta_c="2 மற்றும் 3 மட்டுமே",
+        en_d="1 only",
+        ta_d="1 மட்டுமே",
+        correct_key="A",
+        exp_en="All three statements are correct. PAC was created in 1921 under Montford reforms. It has 22 members (15 LS + 7 RS) elected via proportional representation by single transferable vote. Since 1967, its chairman is from the opposition.",
+        exp_ta="மூன்று கூற்றுகளும் சரியானவை. PAC 1921-ல் மாண்ட்ஃபோர்ட் சீர்திருத்தங்களின் கீழ் உருவாக்கப்பட்டது. இதில் 22 உறுப்பினர்கள் (15 LS + 7 RS) உள்ளனர். 1967 முதல் எதிர்க்கட்சி உறுப்பினரே இதன் தலைவராக நியமிக்கப்படுகிறார்.",
+        why_a_en="Correct. All three statements accurately state the historical origin, composition, and chair convention of PAC.",
+        why_a_ta="சரி. மூன்று கூற்றுகளும் PAC-ன் தோற்றம், கட்டமைப்பு மற்றும் தலைமை மரபை சரியாகக் கூறுகின்றன.",
+        why_b_en="Incorrect because statement 3 is also correct.",
+        why_b_ta="தவறு, ஏனெனில் கூற்று 3-ம் சரியானது.",
+        why_c_en="Incorrect because statement 1 is also correct.",
+        why_c_ta="தவறு, ஏனெனில் கூற்று 1-ம் சரியானது.",
+        why_d_en="Incorrect because statements 2 and 3 are also correct.",
+        why_d_ta="தவறு, ஏனெனில் கூற்றுகள் 2 மற்றும் 3-ம் சரியானவை.",
+        tip_en="PAC is the oldest parliamentary financial committee in India.",
+        tip_ta="இந்தியாவின் மிக மூத்த நாடாளுமன்ற நிதிக் குழு PAC ஆகும்.",
+        fact_en="The term of office of PAC members is one year.",
+        fact_ta="PAC உறுப்பினர்களின் பதவிக்காலம் ஒரு ஆண்டாகும்."
+    ))
+
+    # S_002: Estimates Committee features
+    questions.append(make_pc_q(
+        qid="PC_S_002",
+        diff="Medium",
+        qtype="statement_based",
+        subtopic="Financial Committees",
+        en_stem="Consider the following statements regarding the Estimates Committee:\n1. It was set up in 1950 on the recommendation of John Mathai.\n2. Originally it had 25 members, which was increased to 30 in 1956.\n3. The Rajya Sabha has no representation whatsoever in this committee.\nWhich of the statements given above are correct?",
+        ta_stem="மதிப்பீட்டுக் குழு தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இது 1950-ல் ஜான் மத்தாயின் பரிந்துரையின் பேரில் அமைக்கப்பட்டது.\n2. தொடக்கத்தில் 25 உறுப்பினர்களைக் கொண்டிருந்த இது, 1956-ல் 30 ஆக உயர்த்தப்பட்டது.\n3. இக்குழுவில் மாநிலங்களவைக்கு எந்தப் பிரதிநிதித்துவமும் கிடையாது.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+        en_a="1, 2 and 3",
+        ta_a="1, 2 மற்றும் 3",
+        en_b="1 and 2 only",
+        ta_b="1 மற்றும் 2 மட்டுமே",
+        en_c="2 and 3 only",
+        ta_c="2 மற்றும் 3 மட்டுமே",
+        en_d="1 and 3 only",
+        ta_d="1 மற்றும் 3 மட்டுமே",
+        correct_key="A",
+        exp_en="All three statements are correct. The post-independence Estimates Committee was set up in 1950 on Finance Minister John Mathai's recommendation with 25 members, raised to 30 in 1956. All 30 members are from Lok Sabha alone.",
+        exp_ta="மூன்று கூற்றுகளும் சரியானவை. சுதந்திரத்திற்குப் பின் மதிப்பீட்டுக் குழு 1950-ல் ஜான் மத்தாய் பரிந்துரையில் 25 உறுப்பினர்களுடன் அமைக்கப்பட்டு, 1956-ல் 30 ஆக உயர்த்தப்பட்டது. 30 உறுப்பினர்களும் மக்களவையிலிருந்து மட்டுமே தேர்ந்தெடுக்கப்படுகின்றனர்.",
+        why_a_en="Correct. All three statements are factually and procedurally accurate.",
+        why_a_ta="சரி. மூன்று கூற்றுகளும் உண்மையானவை மற்றும் சரியானவை.",
+        why_b_en="Incorrect because statement 3 is also correct.",
+        why_b_ta="தவறு, ஏனெனில் கூற்று 3-ம் சரியானது.",
+        why_c_en="Incorrect because statement 1 is also correct.",
+        why_c_ta="தவறு, ஏனெனில் கூற்று 1-ம் சரியானது.",
+        why_d_en="Incorrect because statement 2 is also correct.",
+        why_d_ta="தவறு, ஏனெனில் கூற்று 2-ம் சரியானது.",
+        tip_en="Estimates Committee is the largest committee of Parliament with 30 members.",
+        tip_ta="நாடாளுமன்றத்தின் மிகப்பெரிய குழு 30 உறுப்பினர்களைக் கொண்ட மதிப்பீட்டுக் குழுவாகும்.",
+        fact_en="The Chairman of the Estimates Committee is invariably from the ruling party, appointed by the Speaker.",
+        fact_ta="மதிப்பீட்டுக் குழுவின் தலைவர் சபாநாயகரால் ஆளும் கட்சியிலிருந்தே நியமிக்கப்படுகிறார்."
+    ))
+
+    # S_003: Committee on Public Undertakings (COPU)
+    questions.append(make_pc_q(
+        qid="PC_S_003",
+        diff="Hard",
+        qtype="statement_based",
+        subtopic="Financial Committees",
+        en_stem="Consider the following statements regarding the Committee on Public Undertakings (COPU):\n1. It was created in 1964 on the recommendation of the Krishna Menon Committee.\n2. A member of the Rajya Sabha can be appointed as the Chairman of COPU.\n3. It cannot examine matters of major government policy as distinct from commercial functions.\nWhich of the statements given above is/are correct?",
+        ta_stem="பொதுத்துறை நிறுவனங்களுக்கான குழு (COPU) தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இது கிருஷ்ண மேனன் குழுவின் பரிந்துரையின் பேரில் 1964-ல் உருவாக்கப்பட்டது.\n2. மாநிலங்களவை உறுப்பினர் ஒருவர் COPU-ன் தலைவராக நியமிக்கப்பட முடியும்.\n3. வணிக செயல்பாடுகளிலிருந்து மாறுபட்ட அரசின் முக்கிய கொள்கை விவகாரங்களை இது ஆய்வு செய்ய முடியாது.\nமேற்கண்ட கூற்றுகளில் எது/எவை சரியானவை?",
+        en_a="1 and 3 only",
+        ta_a="1 மற்றும் 3 மட்டுமே",
+        en_b="1, 2 and 3",
+        ta_b="1, 2 மற்றும் 3",
+        en_c="2 and 3 only",
+        ta_c="2 மற்றும் 3 மட்டுமே",
+        en_d="1 only",
+        ta_d="1 மட்டுமே",
+        correct_key="A",
+        exp_en="Statements 1 and 3 are correct. Statement 2 is INCORRECT because the Chairman of COPU is appointed by the Speaker from amongst the members of Lok Sabha only; a Rajya Sabha member cannot be Chairman of COPU.",
+        exp_ta="கூற்றுகள் 1 மற்றும் 3 சரியானவை. கூற்று 2 தவறானது, ஏனெனில் COPU தலைவர் மக்களவை உறுப்பினர்களிலிருந்தே சபாநாயகரால் நியமிக்கப்பட வேண்டும்; மாநிலங்களவை உறுப்பினர் தலைவராக முடியாது.",
+        why_a_en="Correct. Statements 1 and 3 are true; statement 2 is false as COPU chairman must be from Lok Sabha.",
+        why_a_ta="சரி. கூற்றுகள் 1 மற்றும் 3 சரியானவை; கூற்று 2 தவறு ஏனெனில் தலைவர் மக்களவை உறுப்பினராக மட்டுமே இருக்க வேண்டும்.",
+        why_b_en="Incorrect because statement 2 is false.",
+        why_b_ta="தவறு, ஏனெனில் கூற்று 2 தவறானது.",
+        why_c_en="Incorrect because statement 1 is true and statement 2 is false.",
+        why_c_ta="தவறு, ஏனெனில் கூற்று 1 சரியானது மற்றும் 2 தவறானது.",
+        why_d_en="Incorrect because statement 3 is also correct.",
+        why_d_ta="தவறு, ஏனெனில் கூற்று 3-ம் சரியானது.",
+        tip_en="Remember: Even though Rajya Sabha has 7 members in COPU, its Chairman is ALWAYS from Lok Sabha.",
+        tip_ta="நினைவில் கொள்க: COPU-ல் மாநிலங்களவைக்கு 7 உறுப்பினர்கள் இருந்தாலும், தலைவர் எப்போதும் மக்களவை உறுப்பினரே.",
+        fact_en="COPU was initially formed with 15 members in 1964 and expanded to 22 in 1974.",
+        fact_ta="COPU 1964-ல் 15 உறுப்பினர்களுடன் தொடங்கப்பட்டு, 1974-ல் 22 ஆக உயர்த்தப்பட்டது."
+    ))
+
+    # S_004: DRSC structure and mandate
+    questions.append(make_pc_q(
+        qid="PC_S_004",
+        diff="Hard",
+        qtype="statement_based",
+        subtopic="Departmentally Related Standing Committees",
+        en_stem="Consider the following statements regarding Departmentally Related Standing Committees (DRSCs):\n1. Currently, there are 24 DRSCs (16 under Lok Sabha and 8 under Rajya Sabha).\n2. Each DRSC consists of 31 members (21 from Lok Sabha and 10 from Rajya Sabha).\n3. DRSCs can examine the day-to-day administration of the concerned ministries.\nWhich of the statements given above is/are correct?",
+        ta_stem="துறை சார்ந்த நிலைக்குழுக்கள் (DRSCs) தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. தற்போது 24 DRSC குழுக்கள் உள்ளன (16 மக்களவையின் கீழ் மற்றும் 8 மாநிலங்களவையின் கீழ்).\n2. ஒவ்வொரு DRSC குழுவிலும் 31 உறுப்பினர்கள் (மக்களவை 21 + மாநிலங்களவை 10) உள்ளனர்.\n3. சம்பந்தப்பட்ட அமைச்சகங்களின் அன்றாட நிர்வாகத்தை DRSCs ஆய்வு செய்ய முடியும்.\nமேற்கண்ட கூற்றுகளில் எது/எவை சரியானவை?",
+        en_a="1 and 2 only",
+        ta_a="1 மற்றும் 2 மட்டுமே",
+        en_b="1, 2 and 3",
+        ta_b="1, 2 மற்றும் 3",
+        en_c="2 and 3 only",
+        ta_c="2 மற்றும் 3 மட்டுமே",
+        en_d="1 only",
+        ta_d="1 மட்டுமே",
+        correct_key="A",
+        exp_en="Statements 1 and 2 are correct. Statement 3 is INCORRECT because Rule 331E(2) explicitly states that the DRSCs shall NOT consider matters of day-to-day administration of the concerned ministries/departments.",
+        exp_ta="கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் விதி 331E(2)-ன் படி DRSCs அமைச்சகங்களின் அன்றாட நிர்வாக விவகாரங்களை ஆய்வு செய்ய முடியாது.",
+        why_a_en="Correct. 1 and 2 are accurate; 3 is false as DRSCs are barred from day-to-day administration.",
+        why_a_ta="சரி. 1 மற்றும் 2 சரியானவை; அன்றாட நிர்வாகத்தில் தலையிட முடியாது என்பதால் 3 தவறானது.",
+        why_b_en="Incorrect because statement 3 is false.",
+        why_b_ta="தவறு, ஏனெனில் கூற்று 3 தவறானது.",
+        why_c_en="Incorrect because statement 1 is true and statement 3 is false.",
+        why_c_ta="தவறு, ஏனெனில் கூற்று 1 சரியானது மற்றும் 3 தவறானது.",
+        why_d_en="Incorrect because statement 2 is also correct.",
+        why_d_ta="தவறு, ஏனெனில் கூற்று 2-ம் சரியானது.",
+        tip_en="DRSCs focus on broad policy, budget demands, bills, and annual reports, NOT micro-administration.",
+        tip_ta="DRSCs கொள்கை, பட்ஜெட் மற்றும் மசோதாக்களையே ஆய்வு செய்கின்றன; நுண் நிர்வாகத்தில் தலையிடுவதில்லை.",
+        fact_en="DRSCs were set up in 1993 with 17 committees and expanded to 24 in 2004.",
+        fact_ta="1993-ல் 17 குழுக்களுடன் தொடங்கப்பட்ட DRSCs, 2004-ல் 24 ஆக அதிகரிக்கப்பட்டன."
+    ))
+
+    # S_005: Business Advisory Committee
+    questions.append(make_pc_q(
+        qid="PC_S_005",
+        diff="Medium",
+        qtype="statement_based",
+        subtopic="Committees on Day-to-Day Business",
+        en_stem="Consider the following statements regarding the Business Advisory Committee (BAC):\n1. In the Lok Sabha, the Speaker is the ex-officio Chairman of the BAC.\n2. In the Rajya Sabha, the Chairman of the Rajya Sabha heads the BAC.\n3. It regulates the program and allocates time for government legislative business.\nWhich of the statements given above are correct?",
+        ta_stem="அலுவல் ஆலோசனைக் குழு (BAC) தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. மக்களவையில் சபாநாயகர் இதன் அலுவல் வழித் தலைவராக செயல்படுகிறார்.\n2. மாநிலங்களவையில் அதன் தலைவர் BAC-க்கு தலைமை தாங்குகிறார்.\n3. இது அவையின் நிகழ்ச்சிகளை ஒழுங்குபடுத்தி அரசு சட்ட விவகாரங்களுக்கான நேரத்தை ஒதுக்குகிறது.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+        en_a="1, 2 and 3",
+        ta_a="1, 2 மற்றும் 3",
+        en_b="1 and 2 only",
+        ta_b="1 மற்றும் 2 மட்டுமே",
+        en_c="1 and 3 only",
+        ta_c="1 மற்றும் 3 மட்டுமே",
+        en_d="2 and 3 only",
+        ta_d="2 மற்றும் 3 மட்டுமே",
+        correct_key="A",
+        exp_en="All three statements are correct. In Lok Sabha, BAC has 15 members chaired by the Speaker. In Rajya Sabha, BAC has 11 members chaired by the Chairman. It allocates time for bills, discussions, and financial business.",
+        exp_ta="மூன்று கூற்றுகளும் சரியானவை. மக்களவை BAC-ல் சபாநாயகர் தலைமையில் 15 உறுப்பினர்களும், மாநிலங்களவையில் தலைவர் தலைமையில் 11 உறுப்பினர்களும் உள்ளனர். இது விவாதங்கள் மற்றும் மசோதாக்களுக்கான நேரத்தை ஒதுக்குகிறது.",
+        why_a_en="Correct. All three statements accurately state BAC's leadership and core mandate.",
+        why_a_ta="சரி. மூன்று கூற்றுகளும் BAC-ன் தலைமை மற்றும் முக்கிய பணிகளை சரியாகக் கூறுகின்றன.",
+        why_b_en="Incorrect because statement 3 is also correct.",
+        why_b_ta="தவறு, ஏனெனில் கூற்று 3-ம் சரியானது.",
+        why_c_en="Incorrect because statement 2 is also correct.",
+        why_c_ta="தவறு, ஏனெனில் கூற்று 2-ம் சரியானது.",
+        why_d_en="Incorrect because statement 1 is also correct.",
+        why_d_ta="தவறு, ஏனெனில் கூற்று 1-ம் சரியானது.",
+        tip_en="BAC allocations are moved as formal motions in the House and adopted by vote.",
+        tip_ta="BAC நேர ஒதுக்கீடுகள் அவையில் தீர்மானமாக முன்மொழியப்பட்டு நிறைவேற்றப்படுகின்றன.",
+        fact_en="Minister of Parliamentary Affairs is an ex-officio member of the BAC.",
+        fact_ta="நாடாளுமன்ற விவகாரங்கள் துறை அமைச்சர் BAC-ன் அலுவல் வழி உறுப்பினராவார்."
+    ))
+
+    # S_006: Committee on Government Assurances
+    questions.append(make_pc_q(
+        qid="PC_S_006",
+        diff="Medium",
+        qtype="statement_based",
+        subtopic="Committees to Scrutinize and Control",
+        en_stem="Consider the following statements regarding the Committee on Government Assurances:\n1. It was first constituted in India in 1953.\n2. Its purpose is to track the fulfillment of assurances and undertakings given by ministers on the floor of the House.\n3. The standard norm for fulfilling an assurance is three months.\nWhich of the statements given above are correct?",
+        ta_stem="அரசு உறுதிமொழிகளுக்கான குழு தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இது இந்தியாவில் 1953-ல் முதன்முதலில் அமைக்கப்பட்டது.\n2. அவையில் அமைச்சர்கள் அளித்த உறுதிமொழிகள் நிறைவேற்றப்படுவதைக் கண்காணிப்பதே இதன் நோக்கமாகும்.\n3. ஓர் உறுதிமொழியை நிறைவேற்ற நிர்ணயிக்கப்பட்ட வழக்கமான கால வரம்பு மூன்று மாதங்கள் ஆகும்.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+        en_a="1, 2 and 3",
+        ta_a="1, 2 மற்றும் 3",
+        en_b="1 and 2 only",
+        ta_b="1 மற்றும் 2 மட்டுமே",
+        en_c="2 and 3 only",
+        ta_c="2 மற்றும் 3 மட்டுமே",
+        en_d="1 only",
+        ta_d="1 மட்டுமே",
+        correct_key="A",
+        exp_en="All three statements are correct. The Committee on Government Assurances was institutionalized in 1953 (an Indian innovation). It scrutinizes ministerial promises made during Question Hour/debates. The standard time allotted for implementation is 3 months.",
+        exp_ta="மூன்று கூற்றுகளும் சரியானவை. இக்குழு 1953-ல் அமைக்கப்பட்டது (இந்தியாவின் புதுமை). அமைச்சர்கள் அவையில் அளித்த வாக்குறுதிகளைக் கண்காணிக்கிறது. அதை நிறைவேற்ற 3 மாத கால அவகாசம் வழக்கமாக வழங்கப்படுகிறது.",
+        why_a_en="Correct. All three statements are factually sound.",
+        why_a_ta="சரி. மூன்று கூற்றுகளும் சரியானவை.",
+        why_b_en="Incorrect because statement 3 is also correct.",
+        why_b_ta="தவறு, ஏனெனில் கூற்று 3-ம் சரியானது.",
+        why_c_en="Incorrect because statement 1 is also correct.",
+        why_c_ta="தவறு, ஏனெனில் கூற்று 1-ம் சரியானது.",
+        why_d_en="Incorrect because statements 2 and 3 are also correct.",
+        why_d_ta="தவறு, ஏனெனில் கூற்றுகள் 2 மற்றும் 3-ம் சரியானவை.",
+        tip_en="Membership: 15 in Lok Sabha, 10 in Rajya Sabha.",
+        tip_ta="உறுப்பினர்கள்: மக்களவையில் 15, மாநிலங்களவையில் 10.",
+        fact_en="If a ministry fails to implement within 3 months, it must seek an extension of time from the Committee.",
+        fact_ta="3 மாதங்களுக்குள் நிறைவேற்ற முடியாவிட்டால் அமைச்சகம் இக்குழுவிடம் கால நீட்டிப்பு கோர வேண்டும்."
+    ))
+
+    # S_007: Committee on Subordinate Legislation
+    questions.append(make_pc_q(
+        qid="PC_S_007",
+        diff="Hard",
+        qtype="statement_based",
+        subtopic="Committees to Scrutinize and Control",
+        en_stem="Consider the following statements regarding the Committee on Subordinate Legislation:\n1. It exists in both Houses with 15 members each.\n2. It examines whether delegated legislation is in accordance with the Constitution and the parent Act.\n3. It can strike down a statutory rule directly without placing its report before Parliament.\nWhich of the statements given above is/are correct?",
+        ta_stem="துணைச் சட்டங்களுக்கான குழு தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இது இரு அவைகளிலும் தலா 15 உறுப்பினர்களுடன் செயல்படுகிறது.\n2. ஒப்படைக்கப்பட்ட விதிகள் அரசியலமைப்பு மற்றும் மூலச் சட்டத்திற்கு உட்பட்டுள்ளனவா என்பதை இது ஆய்வு செய்கிறது.\n3. நாடாளுமன்றத்தில் அறிக்கை சமர்ப்பிக்காமல் நேரடியாகவே ஒரு விதியை இதனால் ரத்து செய்ய முடியும்.\nமேற்கண்ட கூற்றுகளில் எது/எவை சரியானவை?",
+        en_a="1 and 2 only",
+        ta_a="1 மற்றும் 2 மட்டுமே",
+        en_b="1, 2 and 3",
+        ta_b="1, 2 மற்றும் 3",
+        en_c="2 and 3 only",
+        ta_c="2 மற்றும் 3 மட்டுமே",
+        en_d="1 only",
+        ta_d="1 மட்டுமே",
+        correct_key="A",
+        exp_en="Statements 1 and 2 are correct. Statement 3 is INCORRECT because the Committee has only recommendatory powers; it reports its findings to the House, which may amend or annul the rule, or the government amends the rule based on the report. The committee itself cannot strike down rules directly.",
+        exp_ta="கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் குழுவிற்கு பரிந்துரை அதிகாரம் மட்டுமே உண்டு; அது அவைக்கு அறிக்கை அளிக்கிறது. குழு நேரடியாக எந்த விதியையும் ரத்து செய்ய முடியாது.",
+        why_a_en="Correct. 1 and 2 are accurate; 3 is false as committee cannot directly annul statutory rules.",
+        why_a_ta="சரி. 1 மற்றும் 2 சரியானவை; குழுவால் நேரடியாக விதியை ரத்து செய்ய முடியாது என்பதால் 3 தவறு.",
+        why_b_en="Incorrect because statement 3 is false.",
+        why_b_ta="தவறு, ஏனெனில் கூற்று 3 தவறானது.",
+        why_c_en="Incorrect because statement 1 is true and statement 3 is false.",
+        why_c_ta="தவறு, ஏனெனில் கூற்று 1 சரியானது மற்றும் 3 தவறானது.",
+        why_d_en="Incorrect because statement 2 is also correct.",
+        why_d_ta="தவறு, ஏனெனில் கூற்று 2-ம் சரியானது.",
+        tip_en="Set up in 1953 in Lok Sabha and 1964 in Rajya Sabha.",
+        tip_ta="1953-ல் மக்களவையிலும், 1964-ல் மாநிலங்களவையிலும் அமைக்கப்பட்டது.",
+        fact_en="It examines whether delegated rules bar court jurisdiction or impose unauthorized taxes.",
+        fact_ta="நீதிமன்ற வரம்பைத் தடுக்கிறதா அல்லது அனுமதியற்ற வரி விதிக்கிறதா என்பதை இது தீவிரமாக ஆய்வு செய்கிறது."
+    ))
+
+    # S_008: Committee on Welfare of SCs and STs
+    questions.append(make_pc_q(
+        qid="PC_S_008",
+        diff="Medium",
+        qtype="statement_based",
+        subtopic="Committees to Scrutinize and Control",
+        en_stem="Consider the following statements regarding the Committee on the Welfare of Scheduled Castes and Scheduled Tribes:\n1. It consists of 30 members (20 from Lok Sabha and 10 from Rajya Sabha).\n2. Members are elected by proportional representation by means of single transferable vote.\n3. A Union Minister is eligible to be elected as its Chairman.\nWhich of the statements given above is/are correct?",
+        ta_stem="பட்டியலிடப்பட்ட சாதியினர் மற்றும் பழங்குடியினர் நலனுக்கான குழு தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இதில் 30 உறுப்பினர்கள் (மக்களவை 20 + மாநிலங்களவை 10) உள்ளனர்.\n2. உறுப்பினர்கள் ஒற்றை மாற்று வாக்கு மூலம் விகிதாசாரப் பிரதிநிதித்துவ அடிப்படையில் தேர்ந்தெடுக்கப்படுகின்றனர்.\n3. மத்திய அமைச்சர் ஒருவர் இதன் தலைவராகத் தேர்ந்தெடுக்கப்பட தகுதியுடையவர்.\nமேற்கண்ட கூற்றுகளில் எது/எவை சரியானவை?",
+        en_a="1 and 2 only",
+        ta_a="1 மற்றும் 2 மட்டுமே",
+        en_b="1, 2 and 3",
+        ta_b="1, 2 மற்றும் 3",
+        en_c="2 and 3 only",
+        ta_c="2 மற்றும் 3 மட்டுமே",
+        en_d="1 only",
+        ta_d="1 மட்டுமே",
+        correct_key="A",
+        exp_en="Statements 1 and 2 are correct. Statement 3 is INCORRECT because a Minister cannot be a member or Chairman of the Committee on the Welfare of SCs and STs.",
+        exp_ta="கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் மத்திய அமைச்சர் ஒருவர் இக்குழுவில் உறுப்பினராகவோ தலைவராகவோ இருக்க முடியாது.",
+        why_a_en="Correct. 1 and 2 are true; 3 is false as ministers are barred.",
+        why_a_ta="சரி. 1 மற்றும் 2 சரியானவை; அமைச்சர்களுக்குத் தடை என்பதால் 3 தவறானது.",
+        why_b_en="Incorrect because statement 3 is false.",
+        why_b_ta="தவறு, ஏனெனில் கூற்று 3 தவறானது.",
+        why_c_en="Incorrect because statement 1 is true and statement 3 is false.",
+        why_c_ta="தவறு, ஏனெனில் கூற்று 1 சரியானது மற்றும் 3 தவறானது.",
+        why_d_en="Incorrect because statement 2 is also correct.",
+        why_d_ta="தவறு, ஏனெனில் கூற்று 2-ம் சரியானது.",
+        tip_en="Term of office is one year.",
+        tip_ta="பதவிக்காலம் ஒரு ஆண்டாகும்.",
+        fact_en="It examines reports of National Commission for SCs (Art. 338) and National Commission for STs (Art. 338A).",
+        fact_ta="தேசிய எஸ்சி ஆணையம் மற்றும் தேசிய எஸ்டி ஆணையத்தின் அறிக்கைகளை இது ஆய்வு செய்கிறது."
+    ))
+
+    # S_009: Committee on Empowerment of Women
+    questions.append(make_pc_q(
+        qid="PC_S_009",
+        diff="Medium",
+        qtype="statement_based",
+        subtopic="Committees to Scrutinize and Control",
+        en_stem="Consider the following statements regarding the Committee on Empowerment of Women:\n1. It was constituted in 1997 during the 11th Lok Sabha.\n2. It consists of 30 members (20 from Lok Sabha and 10 from Rajya Sabha).\n3. It considers reports submitted by the National Commission for Women.\nWhich of the statements given above are correct?",
+        ta_stem="பெண்கள் அதிகாரமளித்தல் குழு தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இது 11-வது மக்களவையின் போது 1997-ல் அமைக்கப்பட்டது.\n2. இதில் 30 உறுப்பினர்கள் (மக்களவை 20 + மாநிலங்களவை 10) உள்ளனர்.\n3. இது தேசிய மகளிர் ஆணையம் சமர்ப்பிக்கும் அறிக்கைகளைப் பரிசீலிக்கிறது.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+        en_a="1, 2 and 3",
+        ta_a="1, 2 மற்றும் 3",
+        en_b="1 and 2 only",
+        ta_b="1 மற்றும் 2 மட்டுமே",
+        en_c="2 and 3 only",
+        ta_c="2 மற்றும் 3 மட்டுமே",
+        en_d="1 and 3 only",
+        ta_d="1 மற்றும் 3 மட்டுமே",
+        correct_key="A",
+        exp_en="All three statements are correct. Formed in 1997, it has 30 members (20 LS + 10 RS) and reviews measures to secure equality, status, and welfare for women, examining NCW reports.",
+        exp_ta="மூன்று கூற்றுகளும் சரியானவை. 1997-ல் அமைக்கப்பட்ட இதில் 30 உறுப்பினர்கள் (20 LS + 10 RS) உள்ளனர். பெண்களுக்கான சமத்துவம் மற்றும் நலத்திட்டங்களை மதிப்பாய்வு செய்து NCW அறிக்கைகளை ஆய்வு செய்கிறது.",
+        why_a_en="Correct. All three statements accurately describe the inception, size, and function of this committee.",
+        why_a_ta="சரி. மூன்று கூற்றுகளும் இக்குழுவின் உருவாக்கம், கட்டமைப்பு மற்றும் பணிகளைச் சரியாகக் கூறுகின்றன.",
+        why_b_en="Incorrect because statement 3 is also correct.",
+        why_b_ta="தவறு, ஏனெனில் கூற்று 3-ம் சரியானது.",
+        why_c_en="Incorrect because statement 1 is also correct.",
+        why_c_ta="தவறு, ஏனெனில் கூற்று 1-ம் சரியானது.",
+        why_d_en="Incorrect because statement 2 is also correct.",
+        why_d_ta="தவறு, ஏனெனில் கூற்று 2-ம் சரியானது.",
+        tip_en="A minister cannot be a member of this committee.",
+        tip_ta="அமைச்சர் ஒருவர் இதில் உறுப்பினராக முடியாது.",
+        fact_en="It was established on the occasion of the 50th anniversary of Indian Independence.",
+        fact_ta="இந்திய சுதந்திரத்தின் 50-வது ஆண்டு பொன்விழாவை முன்னிட்டு இது நிறுவப்பட்டது."
+    ))
+
+    # S_010: Ethics Committee
+    questions.append(make_pc_q(
+        qid="PC_S_010",
+        diff="Hard",
+        qtype="statement_based",
+        subtopic="Committees to Inquire",
+        en_stem="Consider the following statements regarding the Ethics Committee of Parliament:\n1. It was first constituted in the Rajya Sabha in 1997 and in the Lok Sabha in 2000.\n2. It enforces the Code of Conduct for members and examines cases of ethical misconduct.\n3. It maintains the Register of Members' Interests.\nWhich of the statements given above are correct?",
+        ta_stem="நாடாளுமன்றத்தின் ஒழுக்கநெறிக் குழு தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இது முதன்முதலில் மாநிலங்களவையில் 1997-லும், மக்களவையில் 2000-லும் அமைக்கப்பட்டது.\n2. இது உறுப்பினர்களின் நடத்தை விதிகளை அமல்படுத்தி ஒழுக்கக்கேடான நடவடிக்கைகளை ஆய்வு செய்கிறது.\n3. இது உறுப்பினர்களின் நிதி நலன்கள் பதிவேட்டைப் பராமரிக்கிறது.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+        en_a="1, 2 and 3",
+        ta_a="1, 2 மற்றும் 3",
+        en_b="1 and 2 only",
+        ta_b="1 மற்றும் 2 மட்டுமே",
+        en_c="2 and 3 only",
+        ta_c="2 மற்றும் 3 மட்டுமே",
+        en_d="1 and 3 only",
+        ta_d="1 மற்றும் 3 மட்டுமே",
+        correct_key="A",
+        exp_en="All three statements are correct. Rajya Sabha setup in 1997, Lok Sabha in 2000. It oversees ethical conduct, penalizes misconduct, and maintains the Register of Members' Interests.",
+        exp_ta="மூன்று கூற்றுகளும் சரியானவை. மாநிலங்களவையில் 1997 மற்றும் மக்களவையில் 2000-ல் அமைக்கப்பட்டது. இது நடத்தை விதிகளை அமல்படுத்தி, உறுப்பினர்களின் நலன்கள் பதிவேட்டைப் பராமரிக்கிறது.",
+        why_a_en="Correct. All three statements accurately state the evolution and responsibilities of the Ethics Committee.",
+        why_a_ta="சரி. மூன்று கூற்றுகளும் ஒழுக்கநெறிக் குழுவின் பரிணாமம் மற்றும் பணிகளை சரியாகக் கூறுகின்றன.",
+        why_b_en="Incorrect because statement 3 is also correct.",
+        why_b_ta="தவறு, ஏனெனில் கூற்று 3-ம் சரியானது.",
+        why_c_en="Incorrect because statement 1 is also correct.",
+        why_c_ta="தவறு, ஏனெனில் கூற்று 1-ம் சரியானது.",
+        why_d_en="Incorrect because statement 2 is also correct.",
+        why_d_ta="தவறு, ஏனெனில் கூற்று 2-ம் சரியானது.",
+        tip_en="Membership: 15 in Lok Sabha, 10 in Rajya Sabha.",
+        tip_ta="உறுப்பினர்கள்: மக்களவையில் 15, மாநிலங்களவையில் 10.",
+        fact_en="It recommended the expulsion of members involved in accepting cash for asking questions.",
+        fact_ta="கேள்வி கேட்க பணம் பெற்ற எம்பிக்களைப் பதவி நீக்கம் செய்ய இது பரிந்துரைத்தது."
+    ))
+
+    # S_011 to S_050: Systematic Statement-based questions covering all subtopics
+    statement_specs = [
+        ("S_011", "Financial Committees",
+         "Consider the following statements regarding the tenure and election of financial committees:\n1. Members of PAC, Estimates Committee, and COPU hold office for a period of one year.\n2. All three committees use proportional representation by single transferable vote.\n3. Ministers can be elected to these committees with Prime Minister's approval.\nWhich of the statements given above is/are correct?",
+         "நிதிக் குழுக்களின் பதவிக்காலம் மற்றும் தேர்தல் தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. PAC, மதிப்பீட்டுக் குழு மற்றும் COPU உறுப்பினர்கள் 1 ஆண்டு காலத்திற்குப் பதவி வகிக்கின்றனர்.\n2. மூன்று குழுக்களுமே ஒற்றை மாற்று வாக்கு மூலம் விகிதாசாரப் பிரதிநிதித்துவ முறையைப் பயன்படுத்துகின்றன.\n3. பிரதமரின் ஒப்புதலுடன் அமைச்சர்கள் இக்குழுக்களுக்குத் தேர்ந்தெடுக்கப்படலாம்.\nமேற்கண்ட கூற்றுகளில் எது/எவை சரியானவை?",
+         "1 and 2 only", "1 மற்றும் 2 மட்டுமே", "1, 2 and 3", "1, 2 மற்றும் 3", "2 and 3 only", "2 மற்றும் 3 மட்டுமே", "1 only", "1 மட்டுமே", "A",
+         "Statements 1 and 2 are correct. Statement 3 is false as ministers are strictly barred under the Rules.",
+         "கூற்றுகள் 1 மற்றும் 2 சரியானவை. விதிகளின்படி அமைச்சர்களுக்கு தடை உள்ளதால் கூற்று 3 தவறானது."),
+
+        ("S_012", "Committees on Day-to-Day Business",
+         "Consider the following statements regarding the Committee on Private Members' Bills and Resolutions:\n1. It exists only in the Lok Sabha.\n2. It is chaired by the Deputy Speaker of the Lok Sabha.\n3. In the Rajya Sabha, the Business Advisory Committee performs this function.\nWhich of the statements given above are correct?",
+         "தனிநபர் மசோதாக்கள் மற்றும் தீர்மானங்களுக்கான குழு தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இது மக்களவையில் மட்டுமே உள்ளது.\n2. மக்களவைத் துணை சபாநாயகர் இதற்குத் தலைமை தாங்குகிறார்.\n3. மாநிலங்களவையில் அலுவல் ஆலோசனைக் குழுவே இப்பணியைச் செய்கிறது.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+         "1, 2 and 3", "1, 2 மற்றும் 3", "1 and 2 only", "1 மற்றும் 2 மட்டுமே", "2 and 3 only", "2 மற்றும் 3 மட்டுமே", "1 only", "1 மட்டுமே", "A",
+         "All three statements are correct. Only LS has this committee (15 members chaired by Deputy Speaker). RS BAC handles private members' business.",
+         "மூன்று கூற்றுகளும் சரியானவை. மக்களவையில் மட்டுமே இக்குழு உள்ளது (15 உறுப்பினர்கள், துணை சபாநாயகர் தலைவர்). மாநிலங்களவையில் BAC இப்பணியைக் கவனிக்கிறது."),
+
+        ("S_013", "Committees on Day-to-Day Business",
+         "Consider the following statements regarding the Committee on Absence of Members from Sittings of the House:\n1. It is a committee special to the Lok Sabha consisting of 15 members.\n2. It examines leave applications of members who wish to be absent for 60 or more days.\n3. Rajya Sabha has an identical standing committee of 10 members.\nWhich of the statements given above is/are correct?",
+         "உறுப்பினர்கள் வருகை தராததற்கான குழு தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இது மக்களவைக்கு மட்டுமே உரிய 15 உறுப்பினர்களைக் கொண்ட குழுவாகும்.\n2. 60 அல்லது அதற்கு மேற்பட்ட நாட்கள் விடுப்பு கோரும் உறுப்பினர்களின் விண்ணப்பங்களை இது ஆய்வு செய்கிறது.\n3. மாநிலங்களவையில் 10 உறுப்பினர்களைக் கொண்ட இதே போன்ற நிலைக்குழு உள்ளது.\nமேற்கண்ட கூற்றுகளில் எது/எவை சரியானவை?",
+         "1 and 2 only", "1 மற்றும் 2 மட்டுமே", "1, 2 and 3", "1, 2 மற்றும் 3", "2 and 3 only", "2 மற்றும் 3 மட்டுமே", "1 only", "1 மட்டுமே", "A",
+         "Statements 1 and 2 are correct. Statement 3 is false because Rajya Sabha has no such committee; applications are dealt with by the House directly.",
+         "கூற்றுகள் 1 மற்றும் 2 சரியானவை. மாநிலங்களவையில் இக்குழு கிடையாது; அவையே நேரடியாக முடிவெடுக்கிறது என்பதால் 3 தவறானது."),
+
+        ("S_014", "House Keeping Committees",
+         "Consider the following statements regarding the General Purposes Committee:\n1. It advises the Speaker on matters concerning the affairs of the House not covered by other committees.\n2. It consists of the Speaker, Deputy Speaker, members of panel of chairpersons, and all standing committee chairpersons.\n3. The Speaker is its ex-officio Chairman.\nWhich of the statements given above are correct?",
+         "பொது நோக்கக் குழு தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. பிற குழுக்களின் கீழ் வராத அவையின் விவகாரங்கள் குறித்து சபாநாயகருக்கு இது ஆலோசனை வழங்குகிறது.\n2. இதில் சபாநாயகர், துணை சபாநாயகர், அவைத் தலைவர் குழுவினர் மற்றும் அனைத்து நிலைக்குழுத் தலைவர்கள் இடம்பெற்றுள்ளனர்.\n3. சபாநாயகரே இதன் அலுவல் வழித் தலைவராக செயல்படுகிறார்.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+         "1, 2 and 3", "1, 2 மற்றும் 3", "1 and 2 only", "1 மற்றும் 2 மட்டுமே", "2 and 3 only", "2 மற்றும் 3 மட்டுமே", "1 and 3 only", "1 மற்றும் 3 மட்டுமே", "A",
+         "All three statements are correct. The General Purposes Committee is a senior advisory body chaired by the Speaker.",
+         "மூன்று கூற்றுகளும் சரியானவை. சபாநாயகர் தலைமையிலான உயர் ஆலோசனைக் குழுவே பொது நோக்கக் குழுவாகும்."),
+
+        ("S_015", "House Keeping Committees",
+         "Consider the following statements regarding the Library Committee:\n1. It consists of 9 members (6 from Lok Sabha and 3 from Rajya Sabha).\n2. The Deputy Speaker of the Lok Sabha is its ex-officio Chairman.\n3. It assists MPs in utilizing library and research services.\nWhich of the statements given above are correct?",
+         "நூலகக் குழு தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இதில் 9 உறுப்பினர்கள் (மக்களவை 6 + மாநிலங்களவை 3) உள்ளனர்.\n2. மக்களவைத் துணை சபாநாயகரே இதன் அலுவல் வழித் தலைவராவார்.\n3. எம்பிக்கள் நூலகம் மற்றும் ஆராய்ச்சி சேவைகளைப் பயன்படுத்த இது உதவுகிறது.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+         "1, 2 and 3", "1, 2 மற்றும் 3", "1 and 2 only", "1 மற்றும் 2 மட்டுமே", "2 and 3 only", "2 மற்றும் 3 மட்டுமே", "1 and 3 only", "1 மற்றும் 3 மட்டுமே", "A",
+         "All three statements are correct. 9 members (6 LS + 3 RS) chaired by Deputy Speaker.",
+         "மூன்று கூற்றுகளும் சரியானவை. துணை சபாநாயகர் தலைமையிலான 9 உறுப்பினர்கள் (6 LS + 3 RS)."),
+
+        ("S_016", "Committees to Scrutinize and Control",
+         "Consider the following statements regarding the Joint Committee on Offices of Profit:\n1. It consists of 15 members (10 from Lok Sabha and 5 from Rajya Sabha).\n2. It recommends whether holders of certain government offices should be exempted from disqualification under Article 102(1)(a).\n3. It can directly unseat an MP without a decision by the President under Article 103.\nWhich of the statements given above is/are correct?",
+         "ஆதாயம் தரும் பதவிகளுக்கான கூட்டுக் குழு தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இதில் 15 உறுப்பினர்கள் (மக்களவை 10 + மாநிலங்களவை 5) உள்ளனர்.\n2. சரத்து 102(1)(a)-ன் கீழ் சில பதவிகளுக்கு தகுதிநீக்கத்திலிருந்து விலக்களிக்கலாமா என இது பரிந்துரைக்கிறது.\n3. சரத்து 103-ன் கீழ் குடியரசுத் தலைவரின் முடிவின்றி ஓர் எம்பியை நேரடியாகப் பதவி நீக்க இதற்கு அதிகாரம் உண்டு.\nமேற்கண்ட கூற்றுகளில் எது/எவை சரியானவை?",
+         "1 and 2 only", "1 மற்றும் 2 மட்டுமே", "1, 2 and 3", "1, 2 மற்றும் 3", "2 and 3 only", "2 மற்றும் 3 மட்டுமே", "1 only", "1 மட்டுமே", "A",
+         "Statements 1 and 2 are correct. Statement 3 is false as disqualification decisions are made by the President on Election Commission advice under Art. 103.",
+         "கூற்றுகள் 1 மற்றும் 2 சரியானவை. சரத்து 103-ன் படி குடியரசுத் தலைவரே தேர்தல் ஆணைய ஆலோசனையில் தகுதிநீக்கம் செய்ய முடியும் என்பதால் 3 தவறு."),
+
+        ("S_017", "Committees to Inquire",
+         "Consider the following statements regarding the Committee of Privileges:\n1. It examines questions of breach of privilege and contempt of the House.\n2. It consists of 15 members in Lok Sabha and 10 members in Rajya Sabha.\n3. Its recommendations are legally binding on the Supreme Court.\nWhich of the statements given above is/are correct?",
+         "உரிமைகள் குழு தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இது நாடாளுமன்ற உரிமை மீறல் மற்றும் அவை அவமதிப்பு விவகாரங்களை விசாரிக்கிறது.\n2. இதில் மக்களவையில் 15 மற்றும் மாநிலங்களவையில் 10 உறுப்பினர்கள் உள்ளனர்.\n3. இதன் பரிந்துரைகள் உச்ச நீதிமன்றத்தைக் கட்டுப்படுத்தும் சட்டப்பூர்வ தன்மை கொண்டவை.\nமேற்கண்ட கூற்றுகளில் எது/எவை சரியானவை?",
+         "1 and 2 only", "1 மற்றும் 2 மட்டுமே", "1, 2 and 3", "1, 2 மற்றும் 3", "2 and 3 only", "2 மற்றும் 3 மட்டுமே", "1 only", "1 மட்டுமே", "A",
+         "Statements 1 and 2 are correct. Statement 3 is false as committee reports go to the House for adoption, not binding the Supreme Court.",
+         "கூற்றுகள் 1 மற்றும் 2 சரியானவை. அறிக்கை அவைக்கு அளிக்கப்படுகிறதே தவிர உச்ச நீதிமன்றத்தைக் கட்டுப்படுத்தாது என்பதால் 3 தவறு."),
+
+        ("S_018", "Committees to Inquire",
+         "Consider the following statements regarding the Committee on Petitions:\n1. In Lok Sabha, it consists of 15 members; in Rajya Sabha, it has 10 members.\n2. It examines petitions on bills and matters of general public interest.\n3. It can entertain petitions regarding personal disputes pending in High Courts.\nWhich of the statements given above is/are correct?",
+         "மனுக்கள் குழு தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. மக்களவையில் 15 உறுப்பினர்களும், மாநிலங்களவையில் 10 உறுப்பினர்களும் உள்ளனர்.\n2. மசோதாக்கள் மற்றும் பொது நலன் சார்ந்த மனுக்களை இது ஆய்வு செய்கிறது.\n3. உயர் நீதிமன்றங்களில் நிலுவையில் உள்ள தனிநபர் வழக்குகள் குறித்த மனுக்களை இது பரிசீலிக்கலாம்.\nமேற்கண்ட கூற்றுகளில் எது/எவை சரியானவை?",
+         "1 and 2 only", "1 மற்றும் 2 மட்டுமே", "1, 2 and 3", "1, 2 மற்றும் 3", "2 and 3 only", "2 மற்றும் 3 மட்டுமே", "1 only", "1 மட்டுமே", "A",
+         "Statements 1 and 2 are correct. Statement 3 is false because sub-judice matters and personal grievances are strictly inadmissible.",
+         "கூற்றுகள் 1 மற்றும் 2 சரியானவை. நீதிமன்றத்தில் நிலுவையில் உள்ள வழக்குகள் மற்றும் தனிநபர் குறைகள் அனுமதிக்கப்படாது என்பதால் 3 தவறு."),
+
+        ("S_019", "Consultative Committees",
+         "Consider the following statements regarding Consultative Committees:\n1. They are constituted by the Ministry of Parliamentary Affairs.\n2. The Union Minister in charge of the concerned Ministry acts as Chairman.\n3. They are not parliamentary committees within the technical meaning of the Rules of Procedure.\nWhich of the statements given above are correct?",
+         "ஆலோசனைக் குழுக்கள் தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இவை நாடாளுமன்ற விவகாரங்கள் துறை அமைச்சகத்தால் அமைக்கப்படுகின்றன.\n2. சம்பந்தப்பட்ட மத்திய அமைச்சரே இதன் தலைவராகச் செயல்படுகிறார்.\n3. நடைமுறை விதிகளின்படி இவை தொழில்நுட்ப ரீதியாக நாடாளுமன்றக் குழுக்கள் அல்ல.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+         "1, 2 and 3", "1, 2 மற்றும் 3", "1 and 2 only", "1 மற்றும் 2 மட்டுமே", "2 and 3 only", "2 மற்றும் 3 மட்டுமே", "1 and 3 only", "1 மற்றும் 3 மட்டுமே", "A",
+         "All three statements are correct. Consultative committees are informal ministerial discussion forums organized by the Ministry of Parliamentary Affairs.",
+         "மூன்று கூற்றுகளும் சரியானவை. இவை நாடாளுமன்ற விவகார அமைச்சகத்தால் நிர்வகிக்கப்படும் முறைசாரா கலந்துரையாடல் குழுக்களாகும்."),
+
+        ("S_020", "Ad Hoc Committees",
+         "Consider the following statements regarding Joint Parliamentary Committees (JPCs):\n1. A JPC is an Ad Hoc Committee set up for a specific inquiry or bill.\n2. It dissolves automatically after presenting its report to Parliament.\n3. It has the power to summon official documents and examine witnesses on oath.\nWhich of the statements given above are correct?",
+         "கூட்டுக் கூட்டு நாடாளுமன்றக் குழுக்கள் (JPCs) தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. JPC என்பது குறிப்பிட்ட விசாரணை அல்லது மசோதாவிற்காக அமைக்கப்படும் ஒரு தற்காலிகக் குழுவாகும்.\n2. நாடாளுமன்றத்தில் அறிக்கை சமர்ப்பித்தவுடன் இது தானாகவே கலைந்துவிடும்.\n3. அரசு ஆவணங்களை வரவழைக்கவும் சாட்சிகளிடம் சத்தியப் பிரமாணம் பெற்று விசாரிக்கவும் இதற்கு அதிகாரம் உண்டு.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+         "1, 2 and 3", "1, 2 மற்றும் 3", "1 and 2 only", "1 மற்றும் 2 மட்டுமே", "2 and 3 only", "2 மற்றும் 3 மட்டுமே", "1 and 3 only", "1 மற்றும் 3 மட்டுமே", "A",
+         "All three statements are correct. JPCs are ad hoc investigative/advisory bodies with full evidentiary powers that cease upon report submission.",
+         "மூன்று கூற்றுகளும் சரியானவை. JPC ஒரு தற்காலிக விசாரணைக் குழுவாகும்; அறிக்கை அளித்ததும் முடிவுக்கு வரும்."),
+
+        ("S_021", "Departmentally Related Standing Committees",
+         "Consider the following statements regarding the working of DRSCs:\n1. Their reports are advisory in nature and not binding on the Government.\n2. The concerned ministry must inform the committee within six months about action taken.\n3. DRSC proceedings are held in camera (in private).\nWhich of the statements given above are correct?",
+         "DRSC குழுக்களின் செயல்பாடு தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இவற்றின் பரிந்துரைகள் ஆலோசனைக் கூறுகளைக் கொண்டவை; அரசைக் கட்டுப்படுத்தாது.\n2. சம்பந்தப்பட்ட அமைச்சகம் எடுக்கப்பட்ட நடவடிக்கைகள் குறித்து 6 மாதங்களுக்குள் தெரிவிக்க வேண்டும்.\n3. DRSC கூட்டங்கள் ரகசியமாக (in camera) நடத்தப்படுகின்றன.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+         "1, 2 and 3", "1, 2 மற்றும் 3", "1 and 2 only", "1 மற்றும் 2 மட்டுமே", "2 and 3 only", "2 மற்றும் 3 மட்டுமே", "1 and 3 only", "1 மற்றும் 3 மட்டுமே", "A",
+         "All three statements are correct. DRSCs are advisory, mandate 6-month Action Taken replies, and hold closed-door sittings.",
+         "மூன்று கூற்றுகளும் சரியானவை. ஆலோசனைக் கூறுகள், 6 மாத நடவடிக்கை அறிக்கை மற்றும் ரகசியக் கூட்டங்கள் ஆகியவை இதன் இயல்புகளாகும்."),
+
+        ("S_022", "Financial Committees",
+         "Consider the following statements regarding the Public Accounts Committee and the CAG:\n1. The CAG acts as a friend, philosopher, and guide to the PAC.\n2. The PAC examines the Appropriation Accounts, Finance Accounts, and CAG audit reports.\n3. The PAC has executive powers to disallow expenditure already incurred by departments.\nWhich of the statements given above is/are correct?",
+         "பொதுக் கணக்குக் குழு மற்றும் CAG தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. CAG பொதுக் கணக்குக் குழுவிற்கு நண்பன், தத்துவஞானி மற்றும் வழிகாட்டியாக செயல்படுகிறார்.\n2. PAC ஒதுக்கீட்டுக் கணக்குகள், நிதிக் கணக்குகள் மற்றும் CAG தணிக்கை அறிக்கைகளை ஆய்வு செய்கிறது.\n3. துறைகள் ஏற்கனவே செய்த செலவினங்களை ரத்து செய்யும் நிர்வாக அதிகாரம் PAC-க்கு உண்டு.\nமேற்கண்ட கூற்றுகளில் எது/எவை சரியானவை?",
+         "1 and 2 only", "1 மற்றும் 2 மட்டுமே", "1, 2 and 3", "1, 2 மற்றும் 3", "2 and 3 only", "2 மற்றும் 3 மட்டுமே", "1 only", "1 மட்டுமே", "A",
+         "Statements 1 and 2 are correct. Statement 3 is false because PAC has no executive power to disallow expenditure; its role is post-facto advisory scrutiny.",
+         "கூற்றுகள் 1 மற்றும் 2 சரியானவை. செலவினங்களை ரத்து செய்யும் நிர்வாக அதிகாரம் PAC-க்கு கிடையாது என்பதால் 3 தவறு."),
+
+        ("S_023", "Financial Committees",
+         "Consider the following statements regarding the Estimates Committee:\n1. It examines whether economies and organizational improvements can be effected.\n2. It suggests alternative policies to bring about efficiency in administration.\n3. It examines the estimates before the budget is presented to Parliament.\nWhich of the statements given above is/are correct?",
+         "மதிப்பீட்டுக் குழு தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. சிக்கன நடவடிக்கைகள் மற்றும் நிர்வாக முன்னேற்றங்களை மேற்கொள்ள முடியுமா என்பதை இது ஆய்வு செய்கிறது.\n2. நிர்வாகத்தில் செயல்திறனைக் கொண்டுவர மாற்று கொள்கைகளை இது பரிந்துரைக்கிறது.\n3. பட்ஜெட் நாடாளுமன்றத்தில் தாக்கல் செய்யப்படுவதற்கு முன்பே இது மதிப்பீடுகளை ஆய்வு செய்கிறது.\nமேற்கண்ட கூற்றுகளில் எது/எவை சரியானவை?",
+         "1 and 2 only", "1 மற்றும் 2 மட்டுமே", "1, 2 and 3", "1, 2 மற்றும் 3", "2 and 3 only", "2 மற்றும் 3 மட்டுமே", "1 only", "1 மட்டுமே", "A",
+         "Statements 1 and 2 are correct. Statement 3 is false because the committee examines estimates throughout the year after the budget is presented/voted.",
+         "கூற்றுகள் 1 மற்றும் 2 சரியானவை. பட்ஜெட் தாக்கல் செய்யப்பட்டு நிறைவேற்றப்பட்ட பின்னரே ஆண்டு முழுவதும் இது ஆய்வு செய்கிறது என்பதால் 3 தவறு."),
+
+        ("S_024", "Classification of Committees",
+         "Consider the following statements regarding Standing Committees vs Ad Hoc Committees:\n1. Standing Committees are permanent bodies constituted periodically under the Rules.\n2. Ad Hoc Committees are temporary and cease to exist after completing their mandate.\n3. Select Committees on Bills are Standing Committees.\nWhich of the statements given above is/are correct?",
+         "நிலைக்குழுக்கள் மற்றும் தற்காலிகக் குழுக்கள் தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. நிலைக்குழுக்கள் விதிகளின் கீழ் குறிப்பிட்ட கால இடைவெளியில் தொடர்ந்து அமைக்கப்படும் நிரந்தர அமைப்புகள்.\n2. தற்காலிகக் குழுக்கள் தற்காலிகமானவை மற்றும் பணி முடிந்ததும் கலைந்துவிடும்.\n3. மசோதாக்கள் மீதான தேர்வுக் குழுக்கள் நிலைக்குழுக்களாகும்.\nமேற்கண்ட கூற்றுகளில் எது/எவை சரியானவை?",
+         "1 and 2 only", "1 மற்றும் 2 மட்டுமே", "1, 2 and 3", "1, 2 மற்றும் 3", "2 and 3 only", "2 மற்றும் 3 மட்டுமே", "1 only", "1 மட்டுமே", "A",
+         "Statements 1 and 2 are correct. Statement 3 is false because Select Committees on Bills are Ad Hoc Committees.",
+         "கூற்றுகள் 1 மற்றும் 2 சரியானவை. மசோதாக்கள் மீதான தேர்வுக் குழுக்கள் தற்காலிகக் குழுக்கள் (Ad Hoc) என்பதால் 3 தவறு."),
+
+        ("S_025", "Parliamentary Committee Rules",
+         "Consider the following statements regarding committee quorum and voting:\n1. The quorum to constitute a sitting of a parliamentary committee is one-third of its total members.\n2. Questions are decided by a majority of votes of members present and voting.\n3. The Chairman of the committee has a casting vote in case of a tie.\nWhich of the statements given above are correct?",
+         "குழுவின் கோரம் மற்றும் வாக்கெடுப்பு தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. ஒரு குழுக் கூட்டம் நடைபெறுவதற்கான குறைந்தபட்ச வரம்பு (Quorum) மொத்த உறுப்பினர்களில் மூன்றில் ஒரு பங்கு ஆகும்.\n2. வருகை தந்து வாக்களிக்கும் உறுப்பினர்களின் பெரும்பான்மை மூலம் முடிவுகள் தீர்மானிக்கப்படுகின்றன.\n3. வாக்குகள் சமமாகும் போது குழுத் தலைவருக்கு முடிவெடுக்கும் வாக்கு (casting vote) உண்டு.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+         "1, 2 and 3", "1, 2 மற்றும் 3", "1 and 2 only", "1 மற்றும் 2 மட்டுமே", "2 and 3 only", "2 மற்றும் 3 மட்டுமே", "1 and 3 only", "1 மற்றும் 3 மட்டுமே", "A",
+         "All three statements are correct under Lok Sabha Rules 259 and 262.",
+         "விதிகள் 259 மற்றும் 262-ன் படி மூன்று கூற்றுகளும் சரியானவை."),
+
+        ("S_026", "Constitutional Framework",
+         "Consider the following statements regarding constitutional provisions for parliamentary committees:\n1. Article 105(3) protects the powers and privileges of parliamentary committees.\n2. Article 105(2) confers immunity on members for anything said or any vote given in any committee.\n3. Article 118(1) empowers Parliament to frame rules governing committee procedures.\nWhich of the statements given above are correct?",
+         "நாடாளுமன்றக் குழுக்களுக்கான அரசியலமைப்பு விதிகள் தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. சரத்து 105(3) நாடாளுமன்றக் குழுக்களின் அதிகாரங்கள் மற்றும் சலுகைகளைப் பாதுகாக்கிறது.\n2. சரத்து 105(2) குழுக்களில் பேசியது அல்லது வாக்களித்தது தொடர்பாக உறுப்பினர்களுக்கு விலக்களிப்பு வழங்குகிறது.\n3. சரத்து 118(1) குழு நடைமுறைகளை நிர்வகிக்கும் விதிகளை உருவாக்க நாடாளுமன்றத்திற்கு அதிகாரமளிக்கிறது.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+         "1, 2 and 3", "1, 2 மற்றும் 3", "1 and 2 only", "1 மற்றும் 2 மட்டுமே", "2 and 3 only", "2 மற்றும் 3 மட்டுமே", "1 and 3 only", "1 மற்றும் 3 மட்டுமே", "A",
+         "All three statements are correct under Articles 105(2), 105(3), and 118(1).",
+         "சரத்துகள் 105(2), 105(3) மற்றும் 118(1)-ன் படி மூன்று கூற்றுகளும் சரியானவை."),
+
+        ("S_027", "Financial Committees",
+         "Consider the following statements regarding the role of Rajya Sabha in financial committees:\n1. Rajya Sabha has 7 members in PAC and 7 members in COPU.\n2. Rajya Sabha has no members in the Estimates Committee.\n3. A Rajya Sabha member can become Chairman of PAC but not COPU.\nWhich of the statements given above is/are correct?",
+         "நிதிக் குழுக்களில் மாநிலங்களவையின் பங்கு தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. PAC-ல் 7 மற்றும் COPU-ல் 7 மாநிலங்களவை உறுப்பினர்கள் உள்ளனர்.\n2. மதிப்பீட்டுக் குழுவில் மாநிலங்களவைக்கு உறுப்பினர்கள் இல்லை.\n3. மாநிலங்களவை உறுப்பினர் PAC தலைவராக முடியும் ஆனால் COPU தலைவராக முடியாது.\nமேற்கண்ட கூற்றுகளில் எது/எவை சரியானவை?",
+         "1 and 2 only", "1 மற்றும் 2 மட்டுமே", "1, 2 and 3", "1, 2 மற்றும் 3", "2 and 3 only", "2 மற்றும் 3 மட்டுமே", "1 only", "1 மட்டுமே", "A",
+         "Statements 1 and 2 are correct. Statement 3 is false because PAC Chairman is also appointed by Speaker from Lok Sabha members only.",
+         "கூற்றுகள் 1 மற்றும் 2 சரியானவை. PAC தலைவரும் மக்களவை உறுப்பினர்களிலிருந்தே சபாநாயகரால் நியமிக்கப்படுகிறார் என்பதால் 3 தவறு."),
+
+        ("S_028", "Departmentally Related Standing Committees",
+         "Consider the following statements regarding DRSCs under Rajya Sabha:\n1. 8 out of 24 DRSCs function under the Chairman of the Rajya Sabha.\n2. The Committee on Home Affairs and Committee on Human Resource Development (Education) are under Rajya Sabha.\n3. The Committee on Defence and Committee on Finance are under Rajya Sabha.\nWhich of the statements given above is/are correct?",
+         "மாநிலங்களவையின் கீழ் உள்ள DRSCs தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. 24 DRSC குழுக்களில் 8 குழுக்கள் மாநிலங்களவைத் தலைவரின் கீழ் செயல்படுகின்றன.\n2. உள்துறை விவகாரக் குழு மற்றும் மனிதவள மேம்பாட்டுக் குழு (கல்வி) மாநிலங்களவையின் கீழ் உள்ளன.\n3. பாதுகாப்புத் துறைக் குழு மற்றும் நிதித் துறைக் குழு மாநிலங்களவையின் கீழ் உள்ளன.\nமேற்கண்ட கூற்றுகளில் எது/எவை சரியானவை?",
+         "1 and 2 only", "1 மற்றும் 2 மட்டுமே", "1, 2 and 3", "1, 2 மற்றும் 3", "2 and 3 only", "2 மற்றும் 3 மட்டுமே", "1 only", "1 மட்டுமே", "A",
+         "Statements 1 and 2 are correct. Statement 3 is false because Defence and Finance DRSCs are under Lok Sabha.",
+         "கூற்றுகள் 1 மற்றும் 2 சரியானவை. பாதுகாப்பு மற்றும் நிதி DRSC குழுக்கள் மக்களவையின் கீழ் இயங்குவதால் 3 தவறு."),
+
+        ("S_029", "Committees on Day-to-Day Business",
+         "Consider the following statements regarding the Rules Committee:\n1. In Lok Sabha, it consists of 15 members including the Speaker.\n2. In Rajya Sabha, it consists of 16 members including the Chairman.\n3. The Presiding Officers of the respective Houses act as ex-officio Chairpersons.\nWhich of the statements given above are correct?",
+         "விதிகள் குழு தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. மக்களவையில் சபாநாயகர் உட்பட 15 உறுப்பினர்கள் உள்ளனர்.\n2. மாநிலங்களவையில் தலைவர் உட்பட 16 உறுப்பினர்கள் உள்ளனர்.\n3. அந்தந்த அவைகளின் தலைமை அதிகாரிகள் இதன் அலுவல் வழித் தலைவர்களாகச் செயல்படுகின்றனர்.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+         "1, 2 and 3", "1, 2 மற்றும் 3", "1 and 2 only", "1 மற்றும் 2 மட்டுமே", "2 and 3 only", "2 மற்றும் 3 மட்டுமே", "1 and 3 only", "1 மற்றும் 3 மட்டுமே", "A",
+         "All three statements are correct. LS Rules Committee has 15; RS Rules Committee has 16; both chaired by presiding officers.",
+         "மூன்று கூற்றுகளும் சரியானவை. மக்களவையில் 15, மாநிலங்களவையில் 16; தலைமை அதிகாரிகள் தலைமை தாங்குகின்றனர்."),
+
+        ("S_030", "House Keeping Committees",
+         "Consider the following statements regarding the House Committee of Parliament:\n1. It deals with residential accommodation and amenities allotted to MPs.\n2. Both Lok Sabha and Rajya Sabha have their own separate House Committees.\n3. In Lok Sabha, it consists of 12 members appointed by the Speaker.\nWhich of the statements given above are correct?",
+         "நாடாளுமன்ற அவை குழு (House Committee) தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. எம்பிக்களுக்கு ஒதுக்கப்படும் தங்குமிடம் மற்றும் வசதிகளை இது கையாள்கிறது.\n2. மக்களவை மற்றும் மாநிலங்களவை இரண்டும் தங்களது சொந்த தனித்தனி அவை குழுக்களைக் கொண்டுள்ளன.\n3. மக்களவையில் சபாநாயகரால் நியமிக்கப்படும் 12 உறுப்பினர்களை இது கொண்டுள்ளது.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+         "1, 2 and 3", "1, 2 மற்றும் 3", "1 and 2 only", "1 மற்றும் 2 மட்டுமே", "2 and 3 only", "2 மற்றும் 3 மட்டுமே", "1 and 3 only", "1 மற்றும் 3 மட்டுமே", "A",
+         "All three statements are correct regarding the House Committee for MP residential welfare.",
+         "எம்பிக்களின் குடியிருப்பு வசதிக்கான அவை குழு தொடர்பான மூன்று கூற்றுகளும் சரியானவை."),
+
+        ("S_031", "Committees to Scrutinize and Control",
+         "Consider the following statements regarding the Committee on Papers Laid on the Table:\n1. It was first constituted in Lok Sabha in 1975.\n2. It examines whether papers laid by ministers comply with statutory provisions and timelines.\n3. It consists of 15 members in Lok Sabha and 10 in Rajya Sabha.\nWhich of the statements given above are correct?",
+         "அவை மேசையில் வைக்கப்படும் ஆவணங்களுக்கான குழு தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இது மக்களவையில் 1975-ல் முதன்முதலில் அமைக்கப்பட்டது.\n2. அமைச்சர்கள் வைக்கும் ஆவணங்கள் சட்ட விதிகள் மற்றும் கால வரம்புகளுக்கு உட்பட்டுள்ளனவா என்பதை இது ஆய்வு செய்கிறது.\n3. மக்களவையில் 15 மற்றும் மாநிலங்களவையில் 10 உறுப்பினர்களைக் கொண்டுள்ளது.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+         "1, 2 and 3", "1, 2 மற்றும் 3", "1 and 2 only", "1 மற்றும் 2 மட்டுமே", "2 and 3 only", "2 மற்றும் 3 மட்டுமே", "1 and 3 only", "1 மற்றும் 3 மட்டுமே", "A",
+         "All three statements are correct. Established in 1975 to eliminate delays in tabling statutory papers.",
+         "மூன்று கூற்றுகளும் சரியானவை. ஆவணங்களை வைப்பதில் ஏற்படும் தாமதங்களைத் தவிர்க்க 1975-ல் இது அமைக்கப்பட்டது."),
+
+        ("S_032", "Ad Hoc Committees",
+         "Consider the following statements regarding Inquiry Committees of Parliament:\n1. They are constituted from time to time by motion or by the Presiding Officer.\n2. Examples include committees to inquire into the conduct of certain members.\n3. They are permanent standing committees with five-year terms.\nWhich of the statements given above is/are correct?",
+         "நாடாளுமன்ற விசாரணைக் குழுக்கள் தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இவை தீர்மானம் மூலம் அல்லது தலைமை அதிகாரியால் அவ்வப்போது அமைக்கப்படுகின்றன.\n2. சில உறுப்பினர்களின் நடத்தையை விசாரிக்க அமைக்கப்பட்ட குழுக்கள் இதற்கு உதாரணங்களாகும்.\n3. இவை 5 ஆண்டு பதவிக்காலம் கொண்ட நிரந்தர நிலைக்குழுக்களாகும்.\nமேற்கண்ட கூற்றுகளில் எது/எவை சரியானவை?",
+         "1 and 2 only", "1 மற்றும் 2 மட்டுமே", "1, 2 and 3", "1, 2 மற்றும் 3", "2 and 3 only", "2 மற்றும் 3 மட்டுமே", "1 only", "1 மட்டுமே", "A",
+         "Statements 1 and 2 are correct. Statement 3 is false because inquiry committees are ad hoc, not permanent.",
+         "கூற்றுகள் 1 மற்றும் 2 சரியானவை. விசாரணைக் குழுக்கள் தற்காலிகமானவை (ad hoc) என்பதால் 3 தவறு."),
+
+        ("S_033", "Ad Hoc Committees",
+         "Consider the following statements regarding Select and Joint Committees on Bills:\n1. A Select Committee consists of members from one House only.\n2. A Joint Committee consists of members from both Houses in a 2:1 ratio.\n3. They perform clause-by-clause scrutiny and take evidence from public and experts.\nWhich of the statements given above are correct?",
+         "மசோதாக்கள் மீதான தேர்வு மற்றும் கூட்டுக் குழுக்கள் தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. தேர்வுக் குழு ஒரு அவையின் உறுப்பினர்களை மட்டுமே கொண்டுள்ளது.\n2. கூட்டுக் குழு இரு அவைகளின் உறுப்பினர்களையும் 2:1 விகிதத்தில் கொண்டுள்ளது.\n3. இவை ஒவ்வொரு பிரிவாக ஆய்வு செய்து பொதுமக்கள் மற்றும் நிபுணர்களிடம் சாட்சியங்களைப் பெறுகின்றன.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+         "1, 2 and 3", "1, 2 மற்றும் 3", "1 and 2 only", "1 மற்றும் 2 மட்டுமே", "2 and 3 only", "2 மற்றும் 3 மட்டுமே", "1 and 3 only", "1 மற்றும் 3 மட்டுமே", "A",
+         "All three statements are correct regarding legislative bill scrutiny committees.",
+         "மசோதாக்களை ஆய்வு செய்யும் குழுக்கள் குறித்த மூன்று கூற்றுகளும் சரியானவை."),
+
+        ("S_034", "Parliamentary Committee Powers",
+         "Consider the following statements regarding committee power to send for persons, papers, and records:\n1. Under Rule 270, a committee has the power to summon persons and call for records.\n2. If disclosure prejudices national security, the decision of the Speaker is final.\n3. A witness refusing to answer before a committee can be prosecuted for contempt of the House.\nWhich of the statements given above are correct?",
+         "ஆவணங்கள் மற்றும் நபர்களை வரவழைக்கும் குழுவின் அதிகாரம் தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. விதி 270-ன் கீழ் நபர்களை வரவழைக்கவும் ஆவணங்களைக் கோரவும் குழுவிற்கு அதிகாரம் உண்டு.\n2. ஆவணத்தை வெளியிடுவது நாட்டின் பாதுகாப்பிற்கு எதிரானது எனில் சபாநாயகரின் முடிவே இறுதியானது.\n3. குழுவின் முன் பதிலளிக்க மறுக்கும் சாட்சி மீது அவை அவமதிப்பு நடவடிக்கை எடுக்கப்படலாம்.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+         "1, 2 and 3", "1, 2 மற்றும் 3", "1 and 2 only", "1 மற்றும் 2 மட்டுமே", "2 and 3 only", "2 மற்றும் 3 மட்டுமே", "1 and 3 only", "1 மற்றும் 3 மட்டுமே", "A",
+         "All three statements are correct under Lok Sabha Rule 270 and Speaker's Directions.",
+         "விதி 270 மற்றும் சபாநாயகரின் வழிகாட்டுதலின்படி மூன்று கூற்றுகளும் சரியானவை."),
+
+        ("S_035", "Parliamentary Committee Rules",
+         "Consider the following statements regarding the Minute of Dissent:\n1. A member disagreeing with the committee report may record a Minute of Dissent.\n2. It must be couched in temperate language and submitted before report presentation.\n3. It is appended to the main report of the committee.\nWhich of the statements given above are correct?",
+         "மாறுபட்ட கருத்து அறிக்கை (Minute of Dissent) தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. குழுவின் அறிக்கையை ஏற்காத உறுப்பினர் மாறுபட்ட கருத்து அறிக்கையைப் பதிவு செய்யலாம்.\n2. இது கண்ணியமான மொழியில் எழுதப்பட்டு அறிக்கை தாக்கல் செய்யப்படுவதற்கு முன் அளிக்கப்பட வேண்டும்.\n3. இது குழுவின் முதன்மை அறிக்கையுடன் இணைக்கப்படுகிறது.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+         "1, 2 and 3", "1, 2 மற்றும் 3", "1 and 2 only", "1 மற்றும் 2 மட்டுமே", "2 and 3 only", "2 மற்றும் 3 மட்டுமே", "1 and 3 only", "1 மற்றும் 3 மட்டுமே", "A",
+         "All three statements are correct regarding the right to record dissent under Rule 274.",
+         "விதி 274-ன் படியான மாறுபட்ட கருத்து அறிக்கை தொடர்பான மூன்று கூற்றுகளும் சரியானவை."),
+
+        ("S_036", "Parliamentary Committee Reports",
+         "Consider the following statements regarding Action Taken Reports (ATRs):\n1. The concerned ministry must inform the committee within six months on action taken.\n2. The committee presents an Action Taken Report back to Parliament.\n3. Unaccepted recommendations are dropped and never reported again.\nWhich of the statements given above is/are correct?",
+         "நடவடிக்கை எடுக்கப்பட்ட அறிக்கை (ATR) தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. எடுக்கப்பட்ட நடவடிக்கை குறித்து சம்பந்தப்பட்ட அமைச்சகம் 6 மாதங்களுக்குள் தெரிவிக்க வேண்டும்.\n2. குழு தனது நடவடிக்கை எடுக்கப்பட்ட அறிக்கையை மீண்டும் நாடாளுமன்றத்தில் சமர்ப்பிக்கிறது.\n3. ஏற்கப்படாத பரிந்துரைகள் கைவிடப்பட்டு மீண்டும் அவைக்குத் தெரிவிக்கப்படுவதில்லை.\nமேற்கண்ட கூற்றுகளில் எது/எவை சரியானவை?",
+         "1 and 2 only", "1 மற்றும் 2 மட்டுமே", "1, 2 and 3", "1, 2 மற்றும் 3", "2 and 3 only", "2 மற்றும் 3 மட்டுமே", "1 only", "1 மட்டுமே", "A",
+         "Statements 1 and 2 are correct. Statement 3 is false because the committee specifically reports which recommendations were not accepted and reiterates its views.",
+         "கூற்றுகள் 1 மற்றும் 2 சரியானவை. ஏற்கப்படாத பரிந்துரைகளை குழு சுட்டிக்காட்டி தனது கருத்தை மீண்டும் வலியுறுத்துகிறது என்பதால் 3 தவறு."),
+
+        ("S_037", "Financial Committees",
+         "Consider the following statements regarding the Estimates Committee:\n1. It is often called a 'Continuous Economy Committee'.\n2. It suggests alternative policies to bring about efficiency and economy.\n3. Its recommendations are legally binding executive orders on the Cabinet.\nWhich of the statements given above is/are correct?",
+         "மதிப்பீட்டுக் குழு தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இது பெரும்பாலும் 'தொடர் சிக்கனக் குழு' என்று அழைக்கப்படுகிறது.\n2. செயல்திறன் மற்றும் சிக்கனத்தைக் கொண்டுவர மாற்று கொள்கைகளை இது பரிந்துரைக்கிறது.\n3. இதன் பரிந்துரைகள் அமைச்சரவையைக் கட்டுப்படுத்தும் சட்டப்பூர்வ நிர்வாக உத்தரவுகளாகும்.\nமேற்கண்ட கூற்றுகளில் எது/எவை சரியானவை?",
+         "1 and 2 only", "1 மற்றும் 2 மட்டுமே", "1, 2 and 3", "1, 2 மற்றும் 3", "2 and 3 only", "2 மற்றும் 3 மட்டுமே", "1 only", "1 மட்டுமே", "A",
+         "Statements 1 and 2 are correct. Statement 3 is false because recommendations are advisory in nature.",
+         "கூற்றுகள் 1 மற்றும் 2 சரியானவை. பரிந்துரைகள் ஆலோசனைக் கூறுகளைக் கொண்டவையே தவிர நிர்வாக உத்தரவுகள் அல்ல என்பதால் 3 தவறு."),
+
+        ("S_038", "Financial Committees",
+         "Consider the following statements regarding the Committee on Public Undertakings (COPU):\n1. It examines reports and accounts of public undertakings.\n2. It examines CAG audit reports on public enterprises.\n3. It can examine day-to-day administration and individual tenders.\nWhich of the statements given above is/are correct?",
+         "பொதுத்துறை நிறுவனங்களுக்கான குழு (COPU) தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இது பொதுத்துறை நிறுவனங்களின் அறிக்கைகள் மற்றும் கணக்குகளை ஆய்வு செய்கிறது.\n2. பொதுத்துறை மீதான CAG தணிக்கை அறிக்கைகளை இது ஆய்வு செய்கிறது.\n3. இது அன்றாட நிர்வாகம் மற்றும் தனிப்பட்ட டெண்டர்களை ஆய்வு செய்ய முடியும்.\nமேற்கண்ட கூற்றுகளில் எது/எவை சரியானவை?",
+         "1 and 2 only", "1 மற்றும் 2 மட்டுமே", "1, 2 and 3", "1, 2 மற்றும் 3", "2 and 3 only", "2 மற்றும் 3 மட்டுமே", "1 only", "1 மட்டுமே", "A",
+         "Statements 1 and 2 are correct. Statement 3 is false because COPU is barred from examining day-to-day administration under Rule 312A.",
+         "கூற்றுகள் 1 மற்றும் 2 சரியானவை. விதி 312A-ன் கீழ் அன்றாட நிர்வாகத்தில் தலையிட முடியாது என்பதால் 3 தவறு."),
+
+        ("S_039", "Departmentally Related Standing Committees",
+         "Consider the following statements regarding the 2004 DRSC restructuring:\n1. The number of DRSCs was increased from 17 to 24 in July 2004.\n2. The membership of each DRSC was reduced from 45 to 31.\n3. The ratio of Lok Sabha to Rajya Sabha members was maintained at approximately 2:1 (21 LS + 10 RS).\nWhich of the statements given above are correct?",
+         "2004 DRSC மறுசீரமைப்பு தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. ஜூலை 2004-ல் DRSCs எண்ணிக்கை 17-லிருந்து 24 ஆக உயர்த்தப்பட்டது.\n2. ஒவ்வொரு DRSC குழுவின் உறுப்பினர் எண்ணிக்கை 45-லிருந்து 31 ஆகக் குறைக்கப்பட்டது.\n3. மக்களவை மற்றும் மாநிலங்களவை உறுப்பினர்களின் விகிதம் சுமார் 2:1 (21 LS + 10 RS) ஆகப் பராமரிக்கப்பட்டது.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+         "1, 2 and 3", "1, 2 மற்றும் 3", "1 and 2 only", "1 மற்றும் 2 மட்டுமே", "2 and 3 only", "2 மற்றும் 3 மட்டுமே", "1 and 3 only", "1 மற்றும் 3 மட்டுமே", "A",
+         "All three statements are correct regarding the July 2004 expansion and restructuring of DRSCs.",
+         "ஜூலை 2004-ல் DRSC குழுக்கள் விரிவாக்கம் மற்றும் மறுசீரமைப்பு குறித்த மூன்று கூற்றுகளும் சரியானவை."),
+
+        ("S_040", "Parliamentary Committee Rules",
+         "Consider the following statements regarding the role of Deputy Speaker in committees:\n1. If the Deputy Speaker is a member of any committee, he is automatically appointed its Chairman.\n2. The Deputy Speaker chairs the Committee on Private Members' Bills and Resolutions.\n3. The Deputy Speaker chairs the Library Committee.\nWhich of the statements given above are correct?",
+         "குழுக்களில் துணை சபாநாயகரின் பங்கு தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. துணை சபாநாயகர் ஏதேனும் ஒரு குழுவில் உறுப்பினராக இருந்தால், அவரே தானாகவே அதன் தலைவராக நியமிக்கப்படுவார்.\n2. துணை சபாநாயகர் தனிநபர் மசோதாக்கள் மற்றும் தீர்மானங்களுக்கான குழுவிற்கு தலைமை தாங்குகிறார்.\n3. துணை சபாநாயகர் நூலகக் குழுவிற்கு தலைமை தாங்குகிறார்.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+         "1, 2 and 3", "1, 2 மற்றும் 3", "1 and 2 only", "1 மற்றும் 2 மட்டுமே", "2 and 3 only", "2 மற்றும் 3 மட்டுமே", "1 and 3 only", "1 மற்றும் 3 மட்டுமே", "A",
+         "All three statements are correct under Lok Sabha Rule 258 proviso and practice.",
+         "மக்களவை விதி 258 மற்றும் நடைமுறையின்படி மூன்று கூற்றுகளும் சரியானவை."),
+
+        ("S_041", "Parliamentary Committee Rules",
+         "Consider the following statements regarding sub-committees:\n1. A parliamentary committee may appoint one or more sub-committees to examine specialized issues.\n2. Sub-committees have the powers of the undivided parent committee.\n3. Reports of sub-committees must be adopted by the whole committee before tabling.\nWhich of the statements given above are correct?",
+         "துணைக் குழுக்கள் தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. சிறப்பு விவகாரங்களை ஆய்வு செய்ய ஒரு நாடாளுமன்றக் குழு ஒன்று அல்லது அதற்கு மேற்பட்ட துணைக் குழுக்களை நியமிக்கலாம்.\n2. துணைக் குழுக்களுக்கு முழு தாய்க் குழுவின் அதிகாரங்கள் உண்டு.\n3. துணைக் குழுக்களின் அறிக்கைகள் அவையில் வைக்கப்படுவதற்கு முன் முழு குழுவால் அங்கீகரிக்கப்பட வேண்டும்.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+         "1, 2 and 3", "1, 2 மற்றும் 3", "1 and 2 only", "1 மற்றும் 2 மட்டுமே", "2 and 3 only", "2 மற்றும் 3 மட்டுமே", "1 and 3 only", "1 மற்றும் 3 மட்டுமே", "A",
+         "All three statements are correct under Lok Sabha Rule 263.",
+         "மக்களவை விதி 263-ன் கீழ் மூன்று கூற்றுகளும் சரியானவை."),
+
+        ("S_042", "Parliamentary Committees Overview",
+         "Consider the following statements regarding committee meetings during inter-session periods:\n1. Parliamentary committees can sit whilst the House is prorogued or adjourned.\n2. A committee can undertake study tours outside Delhi with the prior permission of the Speaker.\n3. Committees can continue their work even after Lok Sabha has been dissolved.\nWhich of the statements given above is/are correct?",
+         "அவை கூடாத இடைப்பட்ட காலங்களில் குழுக் கூட்டங்கள் தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. அவை ஒத்திவைக்கப்பட்டிருக்கும் போதோ அல்லது கூட்டத்தொடர் முடித்துவைக்கப்பட்டிருக்கும் போதோ குழுக்கள் கூட முடியும்.\n2. சபாநாயகரின் முன் அனுமதியுடன் குழு டெல்லிக்கு வெளியே ஆய்வுப் பயணங்களை மேற்கொள்ளலாம்.\n3. மக்களவை கலைக்கப்பட்ட பின்னரும் குழுக்கள் தொடர்ந்து பணியாற்ற முடியும்.\nமேற்கண்ட கூற்றுகளில் எது/எவை சரியானவை?",
+         "1 and 2 only", "1 மற்றும் 2 மட்டுமே", "1, 2 and 3", "1, 2 மற்றும் 3", "2 and 3 only", "2 மற்றும் 3 மட்டுமே", "1 only", "1 மட்டுமே", "A",
+         "Statements 1 and 2 are correct. Statement 3 is false because dissolution of Lok Sabha dissolves all its committees.",
+         "கூற்றுகள் 1 மற்றும் 2 சரியானவை. மக்களவை கலைக்கப்படும் போது அதன் அனைத்து குழுக்களும் கலைந்துவிடும் என்பதால் 3 தவறு."),
+
+        ("S_043", "Committees to Inquire",
+         "Consider the following statements regarding the Committee of Privileges:\n1. A question of privilege may be referred to the committee by the Speaker.\n2. The committee has power to examine witnesses on oath and inspect confidential documents.\n3. The committee itself passes the final sentencing order without placing the report before the House.\nWhich of the statements given above is/are correct?",
+         "உரிமைகள் குழு தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. உரிமை மீறல் விவகாரத்தை சபாநாயகர் இக்குழுவின் ஆய்வுக்கு அனுப்பலாம்.\n2. சாட்சிகளிடம் சத்தியப் பிரமாணம் பெற்று விசாரிக்கவும் ரகசிய ஆவணங்களை ஆய்வு செய்யவும் குழுவிற்கு அதிகாரம் உண்டு.\n3. அவையில் அறிக்கை வைக்காமல் குழுவே இறுதி தண்டனை உத்தரவைப் பிறப்பிக்கிறது.\nமேற்கண்ட கூற்றுகளில் எது/எவை சரியானவை?",
+         "1 and 2 only", "1 மற்றும் 2 மட்டுமே", "1, 2 and 3", "1, 2 மற்றும் 3", "2 and 3 only", "2 மற்றும் 3 மட்டுமே", "1 only", "1 மட்டுமே", "A",
+         "Statements 1 and 2 are correct. Statement 3 is false because the House takes the final decision on penalties based on the report.",
+         "கூற்றுகள் 1 மற்றும் 2 சரியானவை. குழு அறிக்கையின் அடிப்படையில் அவையே இறுதி தண்டனை முடிவை எடுக்கிறது என்பதால் 3 தவறு."),
+
+        ("S_044", "Financial Committees",
+         "Consider the following statements regarding the Estimates Committee:\n1. It consists of 30 members elected annually from Lok Sabha alone.\n2. Proportional representation by single transferable vote is used.\n3. The Speaker invariably appoints an Opposition MP as its Chairman.\nWhich of the statements given above is/are correct?",
+         "மதிப்பீட்டுக் குழு தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இது மக்களவையிலிருந்து மட்டுமே ஆண்டுதோறும் தேர்ந்தெடுக்கப்படும் 30 உறுப்பினர்களைக் கொண்டுள்ளது.\n2. ஒற்றை மாற்று வாக்கு மூலம் விகிதாசாரப் பிரதிநிதித்துவ முறை பயன்படுத்தப்படுகிறது.\n3. சபாநாயகர் எப்போதும் எதிர்க்கட்சி எம்பியையே இதன் தலைவராக நியமிக்கிறார்.\nமேற்கண்ட கூற்றுகளில் எது/எவை சரியானவை?",
+         "1 and 2 only", "1 மற்றும் 2 மட்டுமே", "1, 2 and 3", "1, 2 மற்றும் 3", "2 and 3 only", "2 மற்றும் 3 மட்டுமே", "1 only", "1 மட்டுமே", "A",
+         "Statements 1 and 2 are correct. Statement 3 is false because the Chairman of Estimates Committee is invariably from the ruling party.",
+         "கூற்றுகள் 1 மற்றும் 2 சரியானவை. மதிப்பீட்டுக் குழுவின் தலைவர் எப்போதும் ஆளும் கட்சியிலிருந்தே நியமிக்கப்படுகிறார் என்பதால் 3 தவறு."),
+
+        ("S_045", "Financial Committees",
+         "Consider the following statements regarding the Public Accounts Committee:\n1. The Chairman is by convention from the Opposition since 1967.\n2. The Committee can issue direct orders to disallow expenditures.\n3. The Committee is assisted by the Comptroller and Auditor General.\nWhich of the statements given above is/are correct?",
+         "பொதுக் கணக்குக் குழு தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. 1967 முதல் எதிர்க்கட்சி உறுப்பினரே இதன் தலைவராக மரபுப்படி நியமிக்கப்படுகிறார்.\n2. செலவினங்களை ரத்து செய்ய இக்குழு நேரடி உத்தரவுகளைப் பிறப்பிக்க முடியும்.\n3. இக்குழுவிற்கு இந்தியக் கணக்குத் தணிக்கைத் தலைவர் (CAG) உதவுகிறார்.\nமேற்கண்ட கூற்றுகளில் எது/எவை சரியானவை?",
+         "1 and 3 only", "1 மற்றும் 3 மட்டுமே", "1, 2 and 3", "1, 2 மற்றும் 3", "1 and 2 only", "1 மற்றும் 2 மட்டுமே", "2 and 3 only", "2 மற்றும் 3 மட்டுமே", "A",
+         "Statements 1 and 3 are correct. Statement 2 is false as PAC has no executive power to disallow expenditures.",
+         "கூற்றுகள் 1 மற்றும் 3 சரியானவை. செலவினங்களை ரத்து செய்யும் நேரடி நிர்வாக அதிகாரம் PAC-க்கு இல்லை என்பதால் 2 தவறு."),
+
+        ("S_046", "Classification of Committees",
+         "Consider the following statements regarding Joint Committees on Bills:\n1. Members from Lok Sabha and Rajya Sabha are represented in a 2:1 ratio.\n2. The motion for reference originates in the House where the Bill is introduced.\n3. The Joint Committee ceases to exist after presenting its report.\nWhich of the statements given above are correct?",
+         "மசோதாக்கள் மீதான கூட்டுக் குழுக்கள் தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. மக்களவை மற்றும் மாநிலங்களவை உறுப்பினர்கள் 2:1 விகிதத்தில் பிரதிநிதித்துவப்படுத்தப்படுகின்றனர்.\n2. மசோதா அறிமுகப்படுத்தப்பட்ட அவையிலேயே இதை அமைப்பதற்கான தீர்மானம் தொடங்குகிறது.\n3. அறிக்கை சமர்ப்பித்தவுடன் இக்கூட்டுக் குழு கலைந்துவிடுகிறது.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+         "1, 2 and 3", "1, 2 மற்றும் 3", "1 and 2 only", "1 மற்றும் 2 மட்டுமே", "2 and 3 only", "2 மற்றும் 3 மட்டுமே", "1 and 3 only", "1 மற்றும் 3 மட்டுமே", "A",
+         "All three statements are correct regarding Joint Committees on Bills.",
+         "மசோதாக்கள் மீதான கூட்டுக் குழுக்கள் குறித்த மூன்று கூற்றுகளும் சரியானவை."),
+
+        ("S_047", "Departmentally Related Standing Committees",
+         "Consider the following statements regarding the 24 DRSCs:\n1. 16 work under Lok Sabha and 8 work under Rajya Sabha.\n2. Each committee has 31 members (21 LS + 10 RS).\n3. Members are nominated by the Prime Minister directly.\nWhich of the statements given above is/are correct?",
+         "24 DRSC குழுக்கள் தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. 16 குழுக்கள் மக்களவையின் கீழும், 8 குழுக்கள் மாநிலங்களவையின் கீழும் இயங்குகின்றன.\n2. ஒவ்வொரு குழுவிலும் 31 உறுப்பினர்கள் (21 LS + 10 RS) உள்ளனர்.\n3. உறுப்பினர்களைப் பிரதமரே நேரடியாக நியமிக்கிறார்.\nமேற்கண்ட கூற்றுகளில் எது/எவை சரியானவை?",
+         "1 and 2 only", "1 மற்றும் 2 மட்டுமே", "1, 2 and 3", "1, 2 மற்றும் 3", "2 and 3 only", "2 மற்றும் 3 மட்டுமே", "1 only", "1 மட்டுமே", "A",
+         "Statements 1 and 2 are correct. Statement 3 is false because Speaker nominates LS members and Chairman nominates RS members.",
+         "கூற்றுகள் 1 மற்றும் 2 சரியானவை. சபாநாயகர் மக்களவை உறுப்பினர்களையும், தலைவர் மாநிலங்களவை உறுப்பினர்களையும் நியமிக்கின்றனர் என்பதால் 3 தவறு."),
+
+        ("S_048", "Committees to Scrutinize and Control",
+         "Consider the following statements regarding the Committee on Government Assurances:\n1. It was first set up in 1953 in the Lok Sabha.\n2. It has 15 members in Lok Sabha and 10 in Rajya Sabha.\n3. It tracks the fulfillment of assurances given by ministers on the floor.\nWhich of the statements given above are correct?",
+         "அரசு உறுதிமொழிகளுக்கான குழு தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இது 1953-ல் மக்களவையில் முதன்முதலில் அமைக்கப்பட்டது.\n2. மக்களவையில் 15 மற்றும் மாநிலங்களவையில் 10 உறுப்பினர்களைக் கொண்டுள்ளது.\n3. அவையில் அமைச்சர்கள் அளித்த வாக்குறுதிகள் நிறைவேற்றப்படுவதை இது கண்காணிக்கிறது.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+         "1, 2 and 3", "1, 2 மற்றும் 3", "1 and 2 only", "1 மற்றும் 2 மட்டுமே", "2 and 3 only", "2 மற்றும் 3 மட்டுமே", "1 and 3 only", "1 மற்றும் 3 மட்டுமே", "A",
+         "All three statements are correct regarding the Committee on Government Assurances.",
+         "அரசு உறுதிமொழிகளுக்கான குழு குறித்த மூன்று கூற்றுகளும் சரியானவை."),
+
+        ("S_049", "Committees to Scrutinize and Control",
+         "Consider the following statements regarding the Committee on Subordinate Legislation:\n1. It examines whether executive rules are within the scope of delegated power.\n2. It exists in both Lok Sabha and Rajya Sabha with 15 members each.\n3. Ministers cannot be members of this committee.\nWhich of the statements given above are correct?",
+         "துணைச் சட்டங்களுக்கான குழு தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. அரசு விதிகள் ஒப்படைக்கப்பட்ட அதிகார வரம்பிற்குள் உள்ளனவா என்பதை இது ஆய்வு செய்கிறது.\n2. மக்களவை மற்றும் மாநிலங்களவை இரண்டிலும் தலா 15 உறுப்பினர்களுடன் செயல்படுகிறது.\n3. அமைச்சர்கள் இதில் உறுப்பினராக முடியாது.\nமேற்கண்ட கூற்றுகளில் எவை சரியானவை?",
+         "1, 2 and 3", "1, 2 மற்றும் 3", "1 and 2 only", "1 மற்றும் 2 மட்டுமே", "2 and 3 only", "2 மற்றும் 3 மட்டுமே", "1 and 3 only", "1 மற்றும் 3 மட்டுமே", "A",
+         "All three statements are correct under parliamentary rules.",
+         "நாடாளுமன்ற விதிகளின்படி மூன்று கூற்றுகளும் சரியானவை."),
+
+        ("S_050", "Parliamentary Committees Overview",
+         "Consider the following statements regarding Parliamentary Standing Committees:\n1. They secure continuous legislative oversight over the executive.\n2. They facilitate detailed, non-partisan examination of complex policy issues.\n3. They have rendered debates on the floor of the Parliament completely unnecessary.\nWhich of the statements given above is/are correct?",
+         "நாடாளுமன்ற நிலைக்குழுக்கள் தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இவை நிர்வாகத்தின் மீது தொடர்ச்சியான நாடாளுமன்றக் கண்காணிப்பை உறுதி செய்கின்றன.\n2. சிக்கலான கொள்கை விவகாரங்களை கட்சி வேறுபாடின்றி விரிவாக ஆய்வு செய்ய உதவுகின்றன.\n3. நாடாளுமன்ற அவையில் விவாதங்கள் நடப்பதை இவை முற்றிலும் தேவையற்றதாக ஆக்கிவிட்டன.\nமேற்கண்ட கூற்றுகளில் எது/எவை சரியானவை?",
+         "1 and 2 only", "1 மற்றும் 2 மட்டுமே", "1, 2 and 3", "1, 2 மற்றும் 3", "2 and 3 only", "2 மற்றும் 3 மட்டுமே", "1 only", "1 மட்டுமே", "A",
+         "Statements 1 and 2 are correct. Statement 3 is false because committee work aids and enriches floor debates rather than replacing the sovereign House.",
+         "கூற்றுகள் 1 மற்றும் 2 சரியானவை. குழுவின் பணி அவை விவாதங்களுக்குத் துணையாக இருக்கிறதே தவிர அவையின் விவாதங்களை தேவையற்றதாக்கவில்லை என்பதால் 3 தவறு.")
+    ]
+
+    for qid, sub, en_s, ta_s, en_a, ta_a, en_b, ta_b, en_c, ta_c, en_d, ta_d, corr, exp_e, exp_t in statement_specs:
+        full_qid = f"PC_{qid}"
+        questions.append(make_pc_q(
+            qid=full_qid,
+            diff="Medium" if int(qid.replace("S_", "")) % 2 == 0 else "Hard",
+            qtype="statement_based",
+            subtopic=sub,
+            en_stem=en_s,
+            ta_stem=ta_s,
+            en_a=en_a,
+            ta_a=ta_a,
+            en_b=en_b,
+            ta_b=ta_b,
+            en_c=en_c,
+            ta_c=ta_c,
+            en_d=en_d,
+            ta_d=ta_d,
+            correct_key=corr,
+            exp_en=exp_e,
+            exp_ta=exp_t,
+            why_a_en="Correct. Accurately identifies the truth value of the statements.",
+            why_a_ta="சரி. கூற்றுகளின் உண்மை நிலையைச் சரியாகக் குறிப்பிடுகிறது.",
+            why_b_en="Incorrect option combination.",
+            why_b_ta="தவறான தெரிவுக் கூட்டமைப்பு.",
+            why_c_en="Incorrect option combination.",
+            why_c_ta="தவறான தெரிவுக் கூட்டமைப்பு.",
+            why_d_en="Incorrect option combination.",
+            why_d_ta="தவறான தெரிவுக் கூட்டமைப்பு.",
+            tip_en="Statement-based questions in TNPSC require checking each numbered statement individually before selecting options.",
+            tip_ta="TNPSC கூற்று வினாக்களில் ஒவ்வொரு எண்ணிடப்பட்ட கூற்றையும் தனித்தனியாகச் சரிபார்த்த பின் விடையைத் தேர்ந்தெடுக்கவும்.",
+            fact_en="Parliamentary standing committees act as institutional watchdogs ensuring executive accountability to Parliament.",
+            fact_ta="நாடாளுமன்ற நிலைக்குழுக்கள் நிர்வாகப் பொறுப்புடைமையை நிலைநிறுத்தும் கண்காணிப்பாளர்களாகச் செயல்படுகின்றன."
+        ))
+
+    return questions
+
+def main():
+    qs = get_statement_questions()
+    print(f"Generated {len(qs)} Statement questions.")
+    balanced_qs = randomize_and_balance_dataset(qs, seed=2028)
+    keys = [q["correct_answer"] for q in balanced_qs]
+    print("Part 2A PC Statement Key counts:", Counter(keys))
+
+    validator = ContentValidator()
+    all_errors = []
+    for q in balanced_qs:
+        errs = validator.validate_question(q)
+        if errs:
+            all_errors.extend(errs)
+
+    if all_errors:
+        print(f"Validation failed with {len(all_errors)} errors:")
+        for err in all_errors[:10]:
+            print(f"  - {err}")
+        raise ValueError("Validation failed!")
+
+    out_file1 = "data/questions/polity/parliamentary_committees_statement_based.json"
+    out_file2 = "data/questions/polity/parliamentary_committees_statement.json"
+
+    with open(out_file1, "w", encoding="utf-8") as f:
+        json.dump(balanced_qs, f, ensure_ascii=False, indent=2)
+    with open(out_file2, "w", encoding="utf-8") as f:
+        json.dump(balanced_qs, f, ensure_ascii=False, indent=2)
+
+    print(f"Successfully wrote {len(balanced_qs)} statement MCQs to {out_file1} and alias {out_file2}")
+
+if __name__ == "__main__":
+    main()

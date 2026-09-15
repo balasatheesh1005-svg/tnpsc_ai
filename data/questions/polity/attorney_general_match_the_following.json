@@ -15,13 +15,13 @@
     "options": [
       {
         "id": "A",
-        "en": "a-2, b-1, c-4, d-3",
-        "ta": "a-2, b-1, c-4, d-3"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "B",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-2, b-1, c-4, d-3",
+        "ta": "a-2, b-1, c-4, d-3"
       },
       {
         "id": "C",
@@ -35,19 +35,19 @@
       }
     ],
     "options_en": [
-      "a-2, b-1, c-4, d-3",
       "a-1, b-2, c-3, d-4",
+      "a-2, b-1, c-4, d-3",
       "a-3, b-4, c-1, d-2",
       "a-4, b-3, c-2, d-1"
     ],
     "options_ta": [
-      "a-2, b-1, c-4, d-3",
       "a-1, b-2, c-3, d-4",
+      "a-2, b-1, c-4, d-3",
       "a-3, b-4, c-1, d-2",
       "a-4, b-3, c-2, d-1"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Under the Constitution: Article 76 establishes the AG; Article 88 grants parliamentary audience without vote; Article 105(4) confers MP privileges; Article 143 involves AG arguing Presidential references.",
       "ta": "அரசியலமைப்பின் கீழ்: சரத்து 76 தலைமை வழக்கறிஞரை உருவாக்குகிறது; சரத்து 88 வாக்குரிமையின்றி பேசும் உரிமையை அளிக்கிறது; சரத்து 105(4) எம்பி சலுகைகளை வழங்குகிறது; சரத்து 143 குடியரசுத் தலைவர் குறிப்புரைகளில் AG வாதாடுவதைக் குறிக்கிறது."
@@ -56,12 +56,12 @@
     "explanation_ta": "அரசியலமைப்பின் கீழ்: சரத்து 76 தலைமை வழக்கறிஞரை உருவாக்குகிறது; சரத்து 88 வாக்குரிமையின்றி பேசும் உரிமையை அளிக்கிறது; சரத்து 105(4) எம்பி சலுகைகளை வழங்குகிறது; சரத்து 143 குடியரசுத் தலைவர் குறிப்புரைகளில் AG வாதாடுவதைக் குறிக்கிறது.",
     "why_not_others": {
       "A": {
-        "en": "Option B (a-2, b-1, c-4, d-3) contains mismatched pairs.",
-        "ta": "தெரிவு B (a-2, b-1, c-4, d-3) தவறாகப் பொருத்தப்பட்ட இணைகளைக் கொண்டுள்ளது."
-      },
-      "B": {
         "en": "Option A (a-1, b-2, c-3, d-4) correctly matches all four items in List-I with List-II.",
         "ta": "தெரிவு A (a-1, b-2, c-3, d-4) பட்டியல்-I-ல் உள்ள நான்கு கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
+      },
+      "B": {
+        "en": "Option B (a-2, b-1, c-4, d-3) contains mismatched pairs.",
+        "ta": "தெரிவு B (a-2, b-1, c-4, d-3) தவறாகப் பொருத்தப்பட்ட இணைகளைக் கொண்டுள்ளது."
       },
       "C": {
         "en": "Option C (a-3, b-4, c-1, d-2) contains mismatched pairs.",
@@ -121,13 +121,13 @@
       },
       {
         "id": "B",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-4, b-3, c-2, d-1",
+        "ta": "a-4, b-3, c-2, d-1"
       },
       {
         "id": "C",
-        "en": "a-4, b-3, c-2, d-1",
-        "ta": "a-4, b-3, c-2, d-1"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "D",
@@ -137,18 +137,18 @@
     ],
     "options_en": [
       "a-2, b-1, c-4, d-3",
-      "a-1, b-2, c-3, d-4",
       "a-4, b-3, c-2, d-1",
+      "a-1, b-2, c-3, d-4",
       "a-3, b-4, c-1, d-2"
     ],
     "options_ta": [
       "a-2, b-1, c-4, d-3",
-      "a-1, b-2, c-3, d-4",
       "a-4, b-3, c-2, d-1",
+      "a-1, b-2, c-3, d-4",
       "a-3, b-4, c-1, d-2"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Constitutional parallels: Art 76 matches Art 165; Art 88 matches Art 177; Art 105(4) matches Art 194(4); AG requires SC judge qualifications while Advocate General requires HC judge qualifications.",
       "ta": "அரசியலமைப்பு இணை விதிகள்: சரத்து 76 இணை 165; சரத்து 88 இணை 177; சரத்து 105(4) இணை 194(4); AG உச்ச நீதிமன்ற நீதிபதி தகுதியையும், அட்வகேட் ஜெனரல் உயர் நீதிமன்ற நீதிபதி தகுதியையும் கொண்டிருக்க வேண்டும்."
@@ -161,12 +161,12 @@
         "ta": "தெரிவு B (a-2, b-1, c-4, d-3) தவறாகப் பொருத்தப்பட்ட இணைகளைக் கொண்டுள்ளது."
       },
       "B": {
-        "en": "Option A (a-1, b-2, c-3, d-4) correctly matches all four items in List-I with List-II.",
-        "ta": "தெரிவு A (a-1, b-2, c-3, d-4) பட்டியல்-I-ல் உள்ள நான்கு கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
-      },
-      "C": {
         "en": "Option C (a-4, b-3, c-2, d-1) contains mismatched pairs.",
         "ta": "தெரிவு C (a-4, b-3, c-2, d-1) தவறாகப் பொருத்தப்பட்ட இணைகளைக் கொண்டுள்ளது."
+      },
+      "C": {
+        "en": "Option A (a-1, b-2, c-3, d-4) correctly matches all four items in List-I with List-II.",
+        "ta": "தெரிவு A (a-1, b-2, c-3, d-4) பட்டியல்-I-ல் உள்ள நான்கு கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
       },
       "D": {
         "en": "Option D (a-3, b-4, c-1, d-2) contains mismatched pairs.",
@@ -424,8 +424,8 @@
       },
       {
         "id": "B",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-4, b-3, c-2, d-1",
+        "ta": "a-4, b-3, c-2, d-1"
       },
       {
         "id": "C",
@@ -434,24 +434,24 @@
       },
       {
         "id": "D",
-        "en": "a-4, b-3, c-2, d-1",
-        "ta": "a-4, b-3, c-2, d-1"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       }
     ],
     "options_en": [
       "a-2, b-1, c-4, d-3",
-      "a-1, b-2, c-3, d-4",
+      "a-4, b-3, c-2, d-1",
       "a-3, b-4, c-1, d-2",
-      "a-4, b-3, c-2, d-1"
+      "a-1, b-2, c-3, d-4"
     ],
     "options_ta": [
       "a-2, b-1, c-4, d-3",
-      "a-1, b-2, c-3, d-4",
+      "a-4, b-3, c-2, d-1",
       "a-3, b-4, c-1, d-2",
-      "a-4, b-3, c-2, d-1"
+      "a-1, b-2, c-3, d-4"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Setalvad served 1950-1963; Daphtary was 1st SG and 2nd AG; Niren De argued Basic Structure and Emergency cases; S.V. Gupte was appointed by the Morarji Desai Janata government in 1977.",
       "ta": "செடல்வாட் 1950-1963 வரை பணியாற்றினார்; தப்தாரி முதல் SG மற்றும் 2-வது AG; நீரேன் டே அடிப்படைக் கட்டமைப்பு மற்றும் அவசரநிலை வழக்குகளில் ஆஜரானார்; எஸ்.வி. குப்தே 1977 மொரார்ஜி தேசாய் அரசால் நியமிக்கப்பட்டார்."
@@ -464,16 +464,16 @@
         "ta": "தெரிவு B (a-2, b-1, c-4, d-3) தவறாகப் பொருத்தப்பட்ட இணைகளைக் கொண்டுள்ளது."
       },
       "B": {
-        "en": "Option A (a-1, b-2, c-3, d-4) correctly matches all four items in List-I with List-II.",
-        "ta": "தெரிவு A (a-1, b-2, c-3, d-4) பட்டியல்-I-ல் உள்ள நான்கு கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
+        "en": "Option D (a-4, b-3, c-2, d-1) contains mismatched pairs.",
+        "ta": "தெரிவு D (a-4, b-3, c-2, d-1) தவறாகப் பொருத்தப்பட்ட இணைகளைக் கொண்டுள்ளது."
       },
       "C": {
         "en": "Option C (a-3, b-4, c-1, d-2) contains mismatched pairs.",
         "ta": "தெரிவு C (a-3, b-4, c-1, d-2) தவறாகப் பொருத்தப்பட்ட இணைகளைக் கொண்டுள்ளது."
       },
       "D": {
-        "en": "Option D (a-4, b-3, c-2, d-1) contains mismatched pairs.",
-        "ta": "தெரிவு D (a-4, b-3, c-2, d-1) தவறாகப் பொருத்தப்பட்ட இணைகளைக் கொண்டுள்ளது."
+        "en": "Option A (a-1, b-2, c-3, d-4) correctly matches all four items in List-I with List-II.",
+        "ta": "தெரிவு A (a-1, b-2, c-3, d-4) பட்டியல்-I-ல் உள்ள நான்கு கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
       }
     },
     "tnpsc_tip": {
@@ -520,13 +520,13 @@
     "options": [
       {
         "id": "A",
-        "en": "a-2, b-1, c-4, d-3",
-        "ta": "a-2, b-1, c-4, d-3"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "B",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-2, b-1, c-4, d-3",
+        "ta": "a-2, b-1, c-4, d-3"
       },
       {
         "id": "C",
@@ -540,19 +540,19 @@
       }
     ],
     "options_en": [
-      "a-2, b-1, c-4, d-3",
       "a-1, b-2, c-3, d-4",
+      "a-2, b-1, c-4, d-3",
       "a-3, b-4, c-1, d-2",
       "a-4, b-3, c-2, d-1"
     ],
     "options_ta": [
-      "a-2, b-1, c-4, d-3",
       "a-1, b-2, c-3, d-4",
+      "a-2, b-1, c-4, d-3",
       "a-3, b-4, c-1, d-2",
       "a-4, b-3, c-2, d-1"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Berubari Union established necessity of Art 368 amendment for territory cession; Kesavananda Bharati established Basic Structure; ADM Jabalpur dealt with Art 359 suspension; Maneka Gandhi established substantive due process in Art 21.",
       "ta": "பெருபாரி நிலப்பரப்பு திருத்தம் தொடர்பானது; கேசவானந்த பாரதி அடிப்படைக் கட்டமைப்பை நிறுவியது; ADM ஜபல்பூர் அவசரநிலை சரத்து 359 தொடர்பானது; மேனகா காந்தி சரத்து 21-ன் நியாயமான நடைமுறையை நிறுவியது."
@@ -561,12 +561,12 @@
     "explanation_ta": "பெருபாரி நிலப்பரப்பு திருத்தம் தொடர்பானது; கேசவானந்த பாரதி அடிப்படைக் கட்டமைப்பை நிறுவியது; ADM ஜபல்பூர் அவசரநிலை சரத்து 359 தொடர்பானது; மேனகா காந்தி சரத்து 21-ன் நியாயமான நடைமுறையை நிறுவியது.",
     "why_not_others": {
       "A": {
-        "en": "Option B (a-2, b-1, c-4, d-3) contains mismatched pairs.",
-        "ta": "தெரிவு B (a-2, b-1, c-4, d-3) தவறாகப் பொருத்தப்பட்ட இணைகளைக் கொண்டுள்ளது."
-      },
-      "B": {
         "en": "Option A (a-1, b-2, c-3, d-4) correctly matches all four items in List-I with List-II.",
         "ta": "தெரிவு A (a-1, b-2, c-3, d-4) பட்டியல்-I-ல் உள்ள நான்கு கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
+      },
+      "B": {
+        "en": "Option B (a-2, b-1, c-4, d-3) contains mismatched pairs.",
+        "ta": "தெரிவு B (a-2, b-1, c-4, d-3) தவறாகப் பொருத்தப்பட்ட இணைகளைக் கொண்டுள்ளது."
       },
       "C": {
         "en": "Option C (a-3, b-4, c-1, d-2) contains mismatched pairs.",
@@ -722,8 +722,8 @@
     "options": [
       {
         "id": "A",
-        "en": "a-3, b-4, c-1, d-2",
-        "ta": "a-3, b-4, c-1, d-2"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "B",
@@ -732,8 +732,8 @@
       },
       {
         "id": "C",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-3, b-4, c-1, d-2",
+        "ta": "a-3, b-4, c-1, d-2"
       },
       {
         "id": "D",
@@ -742,19 +742,19 @@
       }
     ],
     "options_en": [
-      "a-3, b-4, c-1, d-2",
-      "a-2, b-1, c-4, d-3",
       "a-1, b-2, c-3, d-4",
+      "a-2, b-1, c-4, d-3",
+      "a-3, b-4, c-1, d-2",
       "a-4, b-3, c-2, d-1"
     ],
     "options_ta": [
-      "a-3, b-4, c-1, d-2",
-      "a-2, b-1, c-4, d-3",
       "a-1, b-2, c-3, d-4",
+      "a-2, b-1, c-4, d-3",
+      "a-3, b-4, c-1, d-2",
       "a-4, b-3, c-2, d-1"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Setalvad was appointed under Nehru in 1950; Niren De under Indira Gandhi in 1968; K. Parasaran under Indira/Rajiv in 1983; Soli Sorabjee under V.P. Singh in 1989.",
       "ta": "1950-ல் நேரு ஆட்சியில் செடல்வாட்; 1968-ல் இந்திரா காந்தி ஆட்சியில் நீரேன் டே; 1983-ல் இந்திரா/ராஜீவ் ஆட்சியில் கே. பராசரன்; 1989-ல் வி.பி. சிங் ஆட்சியில் சோலி சொராப்ஜி நியமிக்கப்பட்டனர்."
@@ -763,16 +763,16 @@
     "explanation_ta": "1950-ல் நேரு ஆட்சியில் செடல்வாட்; 1968-ல் இந்திரா காந்தி ஆட்சியில் நீரேன் டே; 1983-ல் இந்திரா/ராஜீவ் ஆட்சியில் கே. பராசரன்; 1989-ல் வி.பி. சிங் ஆட்சியில் சோலி சொராப்ஜி நியமிக்கப்பட்டனர்.",
     "why_not_others": {
       "A": {
-        "en": "Option C (a-3, b-4, c-1, d-2) contains mismatched pairs.",
-        "ta": "தெரிவு C (a-3, b-4, c-1, d-2) தவறாகப் பொருத்தப்பட்ட இணைகளைக் கொண்டுள்ளது."
+        "en": "Option A (a-1, b-2, c-3, d-4) correctly matches all four items in List-I with List-II.",
+        "ta": "தெரிவு A (a-1, b-2, c-3, d-4) பட்டியல்-I-ல் உள்ள நான்கு கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
       },
       "B": {
         "en": "Option B (a-2, b-1, c-4, d-3) contains mismatched pairs.",
         "ta": "தெரிவு B (a-2, b-1, c-4, d-3) தவறாகப் பொருத்தப்பட்ட இணைகளைக் கொண்டுள்ளது."
       },
       "C": {
-        "en": "Option A (a-1, b-2, c-3, d-4) correctly matches all four items in List-I with List-II.",
-        "ta": "தெரிவு A (a-1, b-2, c-3, d-4) பட்டியல்-I-ல் உள்ள நான்கு கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
+        "en": "Option C (a-3, b-4, c-1, d-2) contains mismatched pairs.",
+        "ta": "தெரிவு C (a-3, b-4, c-1, d-2) தவறாகப் பொருத்தப்பட்ட இணைகளைக் கொண்டுள்ளது."
       },
       "D": {
         "en": "Option D (a-4, b-3, c-2, d-1) contains mismatched pairs.",
@@ -828,13 +828,13 @@
       },
       {
         "id": "B",
-        "en": "a-2, b-1, c-4, d-3",
-        "ta": "a-2, b-1, c-4, d-3"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "C",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-2, b-1, c-4, d-3",
+        "ta": "a-2, b-1, c-4, d-3"
       },
       {
         "id": "D",
@@ -844,18 +844,18 @@
     ],
     "options_en": [
       "a-3, b-4, c-1, d-2",
-      "a-2, b-1, c-4, d-3",
       "a-1, b-2, c-3, d-4",
+      "a-2, b-1, c-4, d-3",
       "a-4, b-3, c-2, d-1"
     ],
     "options_ta": [
       "a-3, b-4, c-1, d-2",
-      "a-2, b-1, c-4, d-3",
       "a-1, b-2, c-3, d-4",
+      "a-2, b-1, c-4, d-3",
       "a-4, b-3, c-2, d-1"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "AG remuneration is determined by the President; Advocate General by the Governor; SC Judges by Parliament; CAG by Parliament under Art 148.",
       "ta": "AG ஊதியம் குடியரசுத் தலைவராலும்; அட்வகேட் ஜெனரல் ஊதியம் ஆளுநராலும்; உச்ச நீதிமன்ற நீதிபதிகள் ஊதியம் நாடாளுமன்றத்தாலும்; சிஏஜி ஊதியம் நாடாளுமன்றச் சட்டத்தாலும் நிர்ணயிக்கப்படுகிறது."
@@ -868,12 +868,12 @@
         "ta": "தெரிவு C (a-3, b-4, c-1, d-2) தவறாகப் பொருத்தப்பட்ட இணைகளைக் கொண்டுள்ளது."
       },
       "B": {
-        "en": "Option B (a-2, b-1, c-4, d-3) contains mismatched pairs.",
-        "ta": "தெரிவு B (a-2, b-1, c-4, d-3) தவறாகப் பொருத்தப்பட்ட இணைகளைக் கொண்டுள்ளது."
-      },
-      "C": {
         "en": "Option A (a-1, b-2, c-3, d-4) correctly matches all four items in List-I with List-II.",
         "ta": "தெரிவு A (a-1, b-2, c-3, d-4) பட்டியல்-I-ல் உள்ள நான்கு கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
+      },
+      "C": {
+        "en": "Option B (a-2, b-1, c-4, d-3) contains mismatched pairs.",
+        "ta": "தெரிவு B (a-2, b-1, c-4, d-3) தவறாகப் பொருத்தப்பட்ட இணைகளைக் கொண்டுள்ளது."
       },
       "D": {
         "en": "Option D (a-4, b-3, c-2, d-1) contains mismatched pairs.",
@@ -1035,29 +1035,29 @@
       },
       {
         "id": "C",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-4, b-3, c-2, d-1",
+        "ta": "a-4, b-3, c-2, d-1"
       },
       {
         "id": "D",
-        "en": "a-4, b-3, c-2, d-1",
-        "ta": "a-4, b-3, c-2, d-1"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       }
     ],
     "options_en": [
       "a-3, b-4, c-1, d-2",
       "a-2, b-1, c-4, d-3",
-      "a-1, b-2, c-3, d-4",
-      "a-4, b-3, c-2, d-1"
+      "a-4, b-3, c-2, d-1",
+      "a-1, b-2, c-3, d-4"
     ],
     "options_ta": [
       "a-3, b-4, c-1, d-2",
       "a-2, b-1, c-4, d-3",
-      "a-1, b-2, c-3, d-4",
-      "a-4, b-3, c-2, d-1"
+      "a-4, b-3, c-2, d-1",
+      "a-1, b-2, c-3, d-4"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Durante bene placito refers to pleasure tenure; Pre-audience is priority of speech; Amicus Curiae is friend of court; Nolle Prosequi is prosecutorial withdrawal power not available to Indian AG.",
       "ta": "Durante bene placito என்பது விருப்பக் கோட்பாடு; Pre-audience என்பது முன்னுரிமை வாதாடல்; Amicus Curiae என்பது நீதிமன்ற நண்பர்; Nolle Prosequi என்பது இந்திய AG-க்கு இல்லாத தன்னிச்சை வழக்கு ரத்து அதிகாரம்."
@@ -1074,12 +1074,12 @@
         "ta": "தெரிவு B (a-2, b-1, c-4, d-3) தவறாகப் பொருத்தப்பட்ட இணைகளைக் கொண்டுள்ளது."
       },
       "C": {
-        "en": "Option A (a-1, b-2, c-3, d-4) correctly matches all four items in List-I with List-II.",
-        "ta": "தெரிவு A (a-1, b-2, c-3, d-4) பட்டியல்-I-ல் உள்ள நான்கு கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
-      },
-      "D": {
         "en": "Option D (a-4, b-3, c-2, d-1) contains mismatched pairs.",
         "ta": "தெரிவு D (a-4, b-3, c-2, d-1) தவறாகப் பொருத்தப்பட்ட இணைகளைக் கொண்டுள்ளது."
+      },
+      "D": {
+        "en": "Option A (a-1, b-2, c-3, d-4) correctly matches all four items in List-I with List-II.",
+        "ta": "தெரிவு A (a-1, b-2, c-3, d-4) பட்டியல்-I-ல் உள்ள நான்கு கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
       }
     },
     "tnpsc_tip": {
@@ -1136,29 +1136,29 @@
       },
       {
         "id": "C",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-4, b-3, c-2, d-1",
+        "ta": "a-4, b-3, c-2, d-1"
       },
       {
         "id": "D",
-        "en": "a-4, b-3, c-2, d-1",
-        "ta": "a-4, b-3, c-2, d-1"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       }
     ],
     "options_en": [
       "a-3, b-4, c-1, d-2",
       "a-2, b-1, c-4, d-3",
-      "a-1, b-2, c-3, d-4",
-      "a-4, b-3, c-2, d-1"
+      "a-4, b-3, c-2, d-1",
+      "a-1, b-2, c-3, d-4"
     ],
     "options_ta": [
       "a-3, b-4, c-1, d-2",
       "a-2, b-1, c-4, d-3",
-      "a-1, b-2, c-3, d-4",
-      "a-4, b-3, c-2, d-1"
+      "a-4, b-3, c-2, d-1",
+      "a-1, b-2, c-3, d-4"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "AG has no fixed tenure under Art 76(4); CAG has 6 yrs / 65 yrs under Art 148; SC Judge serves up to 65 yrs; HC Judge serves up to 62 yrs.",
       "ta": "AG-க்கு நிலையான பதவிக்காலம் இல்லை (சரத்து 76(4)); CAG 6 ஆண்டுகள்/65 வயது; SC நீதிபதி 65 வயது வரை; HC நீதிபதி 62 வயது வரை பதவி வகிக்கின்றனர்."
@@ -1175,12 +1175,12 @@
         "ta": "தெரிவு B (a-2, b-1, c-4, d-3) தவறாகப் பொருத்தப்பட்ட இணைகளைக் கொண்டுள்ளது."
       },
       "C": {
-        "en": "Option A (a-1, b-2, c-3, d-4) correctly matches all four items in List-I with List-II.",
-        "ta": "தெரிவு A (a-1, b-2, c-3, d-4) பட்டியல்-I-ல் உள்ள நான்கு கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
-      },
-      "D": {
         "en": "Option D (a-4, b-3, c-2, d-1) contains mismatched pairs.",
         "ta": "தெரிவு D (a-4, b-3, c-2, d-1) தவறாகப் பொருத்தப்பட்ட இணைகளைக் கொண்டுள்ளது."
+      },
+      "D": {
+        "en": "Option A (a-1, b-2, c-3, d-4) correctly matches all four items in List-I with List-II.",
+        "ta": "தெரிவு A (a-1, b-2, c-3, d-4) பட்டியல்-I-ல் உள்ள நான்கு கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
       }
     },
     "tnpsc_tip": {
@@ -1232,8 +1232,8 @@
       },
       {
         "id": "B",
-        "en": "a-3, b-4, c-1, d-2",
-        "ta": "a-3, b-4, c-1, d-2"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "C",
@@ -1242,24 +1242,24 @@
       },
       {
         "id": "D",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-3, b-4, c-1, d-2",
+        "ta": "a-3, b-4, c-1, d-2"
       }
     ],
     "options_en": [
       "a-4, b-2, c-1, d-3",
-      "a-3, b-4, c-1, d-2",
+      "a-1, b-2, c-3, d-4",
       "a-2, b-1, c-4, d-3",
-      "a-1, b-2, c-3, d-4"
+      "a-3, b-4, c-1, d-2"
     ],
     "options_ta": [
       "a-4, b-2, c-1, d-3",
-      "a-3, b-4, c-1, d-2",
+      "a-1, b-2, c-3, d-4",
       "a-2, b-1, c-4, d-3",
-      "a-1, b-2, c-3, d-4"
+      "a-3, b-4, c-1, d-2"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "AG advises Union (Art 76); SG assists AG (executive post); Advocate General advises State (Art 165); Public Prosecutor conducts criminal trials (CrPC Sec 24).",
       "ta": "AG மத்திய அரசுக்கு ஆலோசிக்கிறார் (சரத்து 76); SG அவருக்கு உதவுகிறார்; அட்வகேட் ஜெனரல் மாநிலத்திற்கு ஆலோசிக்கிறார் (சரத்து 165); அரசு வழக்கறிஞர் குற்றவியல் வழக்குகளை நடத்துகிறார் (CrPC பிரிவு 24)."
@@ -1272,16 +1272,16 @@
         "ta": "தெரிவு D (a-4, b-2, c-1, d-3) தவறாகப் பொருத்தப்பட்ட இணைகளைக் கொண்டுள்ளது."
       },
       "B": {
-        "en": "Option B (a-3, b-4, c-1, d-2) contains mismatched pairs.",
-        "ta": "தெரிவு B (a-3, b-4, c-1, d-2) தவறாகப் பொருத்தப்பட்ட இணைகளைக் கொண்டுள்ளது."
+        "en": "Option A (a-1, b-2, c-3, d-4) correctly matches all four items in List-I with List-II.",
+        "ta": "தெரிவு A (a-1, b-2, c-3, d-4) பட்டியல்-I-ல் உள்ள நான்கு கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
       },
       "C": {
         "en": "Option C (a-2, b-1, c-4, d-3) contains mismatched pairs.",
         "ta": "தெரிவு C (a-2, b-1, c-4, d-3) தவறாகப் பொருத்தப்பட்ட இணைகளைக் கொண்டுள்ளது."
       },
       "D": {
-        "en": "Option A (a-1, b-2, c-3, d-4) correctly matches all four items in List-I with List-II.",
-        "ta": "தெரிவு A (a-1, b-2, c-3, d-4) பட்டியல்-I-ல் உள்ள நான்கு கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
+        "en": "Option B (a-3, b-4, c-1, d-2) contains mismatched pairs.",
+        "ta": "தெரிவு B (a-3, b-4, c-1, d-2) தவறாகப் பொருத்தப்பட்ட இணைகளைக் கொண்டுள்ளது."
       }
     },
     "tnpsc_tip": {
@@ -1434,8 +1434,8 @@
       },
       {
         "id": "B",
-        "en": "a-2, b-1, c-4, d-3",
-        "ta": "a-2, b-1, c-4, d-3"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "C",
@@ -1444,24 +1444,24 @@
       },
       {
         "id": "D",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-2, b-1, c-4, d-3",
+        "ta": "a-2, b-1, c-4, d-3"
       }
     ],
     "options_en": [
       "a-4, b-3, c-2, d-1",
-      "a-2, b-1, c-4, d-3",
+      "a-1, b-2, c-3, d-4",
       "a-3, b-4, c-1, d-2",
-      "a-1, b-2, c-3, d-4"
+      "a-2, b-1, c-4, d-3"
     ],
     "options_ta": [
       "a-4, b-3, c-2, d-1",
-      "a-2, b-1, c-4, d-3",
+      "a-1, b-2, c-3, d-4",
       "a-3, b-4, c-1, d-2",
-      "a-1, b-2, c-3, d-4"
+      "a-2, b-1, c-4, d-3"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "G.E. Vahanvati served 2009-2014; Mukul Rohatgi served 2014-2017; K.K. Venugopal served 2017-2022; R. Venkataramani took charge in October 2022.",
       "ta": "ஜி.இ. வாகனவதி 2009-2014; முகுல் ரோஹத்கி 2014-2017; கே.கே. வேணுகோபால் 2017-2022; ஆர். வெங்கடரமணி அக்டோபர் 2022 முதல் பணியாற்றி வருகிறார்."
@@ -1474,16 +1474,16 @@
         "ta": "தெரிவு D (a-4, b-3, c-2, d-1) தவறாகப் பொருத்தப்பட்ட இணைகளைக் கொண்டுள்ளது."
       },
       "B": {
-        "en": "Option B (a-2, b-1, c-4, d-3) contains mismatched pairs.",
-        "ta": "தெரிவு B (a-2, b-1, c-4, d-3) தவறாகப் பொருத்தப்பட்ட இணைகளைக் கொண்டுள்ளது."
+        "en": "Option A (a-1, b-2, c-3, d-4) correctly matches all four items in List-I with List-II.",
+        "ta": "தெரிவு A (a-1, b-2, c-3, d-4) பட்டியல்-I-ல் உள்ள நான்கு கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
       },
       "C": {
         "en": "Option C (a-3, b-4, c-1, d-2) contains mismatched pairs.",
         "ta": "தெரிவு C (a-3, b-4, c-1, d-2) தவறாகப் பொருத்தப்பட்ட இணைகளைக் கொண்டுள்ளது."
       },
       "D": {
-        "en": "Option A (a-1, b-2, c-3, d-4) correctly matches all four items in List-I with List-II.",
-        "ta": "தெரிவு A (a-1, b-2, c-3, d-4) பட்டியல்-I-ல் உள்ள நான்கு கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
+        "en": "Option B (a-2, b-1, c-4, d-3) contains mismatched pairs.",
+        "ta": "தெரிவு B (a-2, b-1, c-4, d-3) தவறாகப் பொருத்தப்பட்ட இணைகளைக் கொண்டுள்ளது."
       }
     },
     "tnpsc_tip": {
@@ -1540,29 +1540,29 @@
       },
       {
         "id": "C",
-        "en": "a-3, b-4, c-1, d-2",
-        "ta": "a-3, b-4, c-1, d-2"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "D",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-3, b-4, c-1, d-2",
+        "ta": "a-3, b-4, c-1, d-2"
       }
     ],
     "options_en": [
       "a-4, b-3, c-2, d-1",
       "a-2, b-1, c-4, d-3",
-      "a-3, b-4, c-1, d-2",
-      "a-1, b-2, c-3, d-4"
+      "a-1, b-2, c-3, d-4",
+      "a-3, b-4, c-1, d-2"
     ],
     "options_ta": [
       "a-4, b-3, c-2, d-1",
       "a-2, b-1, c-4, d-3",
-      "a-3, b-4, c-1, d-2",
-      "a-1, b-2, c-3, d-4"
+      "a-1, b-2, c-3, d-4",
+      "a-3, b-4, c-1, d-2"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "All these articles reside in Part V (The Union): Art 76 in Chapter I; Arts 88 & 105 in Chapter II; Art 143 in Chapter IV.",
       "ta": "இவை அனைத்தும் பகுதி V-ல் (ஒன்றியம்) உள்ளன: சரத்து 76 அத்தியாயம் I; சரத்து 88 & 105 அத்தியாயம் II; சரத்து 143 அத்தியாயம் IV."
@@ -1579,12 +1579,12 @@
         "ta": "தெரிவு B (a-2, b-1, c-4, d-3) தவறாகப் பொருத்தப்பட்ட இணைகளைக் கொண்டுள்ளது."
       },
       "C": {
-        "en": "Option C (a-3, b-4, c-1, d-2) contains mismatched pairs.",
-        "ta": "தெரிவு C (a-3, b-4, c-1, d-2) தவறாகப் பொருத்தப்பட்ட இணைகளைக் கொண்டுள்ளது."
-      },
-      "D": {
         "en": "Option A (a-1, b-2, c-3, d-4) correctly matches all four items in List-I with List-II.",
         "ta": "தெரிவு A (a-1, b-2, c-3, d-4) பட்டியல்-I-ல் உள்ள நான்கு கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
+      },
+      "D": {
+        "en": "Option C (a-3, b-4, c-1, d-2) contains mismatched pairs.",
+        "ta": "தெரிவு C (a-3, b-4, c-1, d-2) தவறாகப் பொருத்தப்பட்ட இணைகளைக் கொண்டுள்ளது."
       }
     },
     "tnpsc_tip": {
@@ -1631,8 +1631,8 @@
     "options": [
       {
         "id": "A",
-        "en": "a-4, b-3, c-2, d-1",
-        "ta": "a-4, b-3, c-2, d-1"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "B",
@@ -1646,24 +1646,24 @@
       },
       {
         "id": "D",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-4, b-3, c-2, d-1",
+        "ta": "a-4, b-3, c-2, d-1"
       }
     ],
     "options_en": [
-      "a-4, b-3, c-2, d-1",
+      "a-1, b-2, c-3, d-4",
       "a-2, b-1, c-4, d-3",
       "a-3, b-4, c-1, d-2",
-      "a-1, b-2, c-3, d-4"
+      "a-4, b-3, c-2, d-1"
     ],
     "options_ta": [
-      "a-4, b-3, c-2, d-1",
+      "a-1, b-2, c-3, d-4",
       "a-2, b-1, c-4, d-3",
       "a-3, b-4, c-1, d-2",
-      "a-1, b-2, c-3, d-4"
+      "a-4, b-3, c-2, d-1"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Article 74 is Cabinet advice to President; Article 76(2) is AG advice to Government; Article 143 is Presidential reference to SC; Article 163 is Cabinet advice to Governor.",
       "ta": "சரத்து 74 குடியரசுத் தலைவருக்கு அமைச்சரவை ஆலோசனை; சரத்து 76(2) அரசுக்கு AG ஆலோசனை; சரத்து 143 உச்ச நீதிமன்றக் குறிப்புரை; சரத்து 163 ஆளுநருக்கு அமைச்சரவை ஆலோசனை."
@@ -1672,8 +1672,8 @@
     "explanation_ta": "சரத்து 74 குடியரசுத் தலைவருக்கு அமைச்சரவை ஆலோசனை; சரத்து 76(2) அரசுக்கு AG ஆலோசனை; சரத்து 143 உச்ச நீதிமன்றக் குறிப்புரை; சரத்து 163 ஆளுநருக்கு அமைச்சரவை ஆலோசனை.",
     "why_not_others": {
       "A": {
-        "en": "Option D (a-4, b-3, c-2, d-1) contains mismatched pairs.",
-        "ta": "தெரிவு D (a-4, b-3, c-2, d-1) தவறாகப் பொருத்தப்பட்ட இணைகளைக் கொண்டுள்ளது."
+        "en": "Option A (a-1, b-2, c-3, d-4) correctly matches all four items in List-I with List-II.",
+        "ta": "தெரிவு A (a-1, b-2, c-3, d-4) பட்டியல்-I-ல் உள்ள நான்கு கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
       },
       "B": {
         "en": "Option B (a-2, b-1, c-4, d-3) contains mismatched pairs.",
@@ -1684,8 +1684,8 @@
         "ta": "தெரிவு C (a-3, b-4, c-1, d-2) தவறாகப் பொருத்தப்பட்ட இணைகளைக் கொண்டுள்ளது."
       },
       "D": {
-        "en": "Option A (a-1, b-2, c-3, d-4) correctly matches all four items in List-I with List-II.",
-        "ta": "தெரிவு A (a-1, b-2, c-3, d-4) பட்டியல்-I-ல் உள்ள நான்கு கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
+        "en": "Option D (a-4, b-3, c-2, d-1) contains mismatched pairs.",
+        "ta": "தெரிவு D (a-4, b-3, c-2, d-1) தவறாகப் பொருத்தப்பட்ட இணைகளைக் கொண்டுள்ளது."
       }
     },
     "tnpsc_tip": {
@@ -1742,29 +1742,29 @@
       },
       {
         "id": "C",
-        "en": "a-3, b-4, c-1, d-2",
-        "ta": "a-3, b-4, c-1, d-2"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "D",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-3, b-4, c-1, d-2",
+        "ta": "a-3, b-4, c-1, d-2"
       }
     ],
     "options_en": [
       "a-4, b-3, c-2, d-1",
       "a-2, b-1, c-4, d-3",
-      "a-3, b-4, c-1, d-2",
-      "a-1, b-2, c-3, d-4"
+      "a-1, b-2, c-3, d-4",
+      "a-3, b-4, c-1, d-2"
     ],
     "options_ta": [
       "a-4, b-3, c-2, d-1",
       "a-2, b-1, c-4, d-3",
-      "a-3, b-4, c-1, d-2",
-      "a-1, b-2, c-3, d-4"
+      "a-1, b-2, c-3, d-4",
+      "a-3, b-4, c-1, d-2"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Setalvad and Sorabjee hailed from the Bombay Bar; K. Parasaran and R. Venkataramani originated from the Madras Bar.",
       "ta": "செடல்வாட் மற்றும் சொராப்ஜி பம்பாய் பார் அசோசியேஷனையும்; கே. பராசரன் மற்றும் ஆர். வெங்கடரமணி மதராஸ் பார் அசோசியேஷனையும் பூர்வீகமாகக் கொண்டவர்கள்."
@@ -1781,12 +1781,12 @@
         "ta": "தெரிவு B (a-2, b-1, c-4, d-3) தவறாகப் பொருத்தப்பட்ட இணைகளைக் கொண்டுள்ளது."
       },
       "C": {
-        "en": "Option C (a-3, b-4, c-1, d-2) contains mismatched pairs.",
-        "ta": "தெரிவு C (a-3, b-4, c-1, d-2) தவறாகப் பொருத்தப்பட்ட இணைகளைக் கொண்டுள்ளது."
-      },
-      "D": {
         "en": "Option A (a-1, b-2, c-3, d-4) correctly matches all four items in List-I with List-II.",
         "ta": "தெரிவு A (a-1, b-2, c-3, d-4) பட்டியல்-I-ல் உள்ள நான்கு கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
+      },
+      "D": {
+        "en": "Option C (a-3, b-4, c-1, d-2) contains mismatched pairs.",
+        "ta": "தெரிவு C (a-3, b-4, c-1, d-2) தவறாகப் பொருத்தப்பட்ட இணைகளைக் கொண்டுள்ளது."
       }
     },
     "tnpsc_tip": {
@@ -1833,8 +1833,8 @@
     "options": [
       {
         "id": "A",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-4, b-3, c-2, d-1",
+        "ta": "a-4, b-3, c-2, d-1"
       },
       {
         "id": "B",
@@ -1848,24 +1848,24 @@
       },
       {
         "id": "D",
-        "en": "a-4, b-3, c-2, d-1",
-        "ta": "a-4, b-3, c-2, d-1"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       }
     ],
     "options_en": [
-      "a-1, b-2, c-3, d-4",
+      "a-4, b-3, c-2, d-1",
       "a-2, b-1, c-4, d-3",
       "a-3, b-4, c-1, d-2",
-      "a-4, b-3, c-2, d-1"
+      "a-1, b-2, c-3, d-4"
     ],
     "options_ta": [
-      "a-1, b-2, c-3, d-4",
+      "a-4, b-3, c-2, d-1",
       "a-2, b-1, c-4, d-3",
       "a-3, b-4, c-1, d-2",
-      "a-4, b-3, c-2, d-1"
+      "a-1, b-2, c-3, d-4"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Setalvad chaired the 1st Law Commission; AG is ex-officio BCI member; Central Agency coordinates SC litigation; Dept of Legal Affairs routes references.",
       "ta": "செடல்வாட் 1-வது சட்ட ஆணையத் தலைவராக இருந்தார்; AG பார் கவுன்சில் உறுப்பினர்; சென்ட்ரல் ஏஜென்சி SC வழக்குகளை ஒருங்கிணைக்கிறது; சட்ட விவகாரங்கள் துறை குறிப்புகளை அனுப்புகிறது."
@@ -1874,8 +1874,8 @@
     "explanation_ta": "செடல்வாட் 1-வது சட்ட ஆணையத் தலைவராக இருந்தார்; AG பார் கவுன்சில் உறுப்பினர்; சென்ட்ரல் ஏஜென்சி SC வழக்குகளை ஒருங்கிணைக்கிறது; சட்ட விவகாரங்கள் துறை குறிப்புகளை அனுப்புகிறது.",
     "why_not_others": {
       "A": {
-        "en": "Option A (a-1, b-2, c-3, d-4) correctly matches all four items in List-I with List-II.",
-        "ta": "தெரிவு A (a-1, b-2, c-3, d-4) பட்டியல்-I-ல் உள்ள நான்கு கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
+        "en": "Option D (a-4, b-3, c-2, d-1) contains mismatched pairs.",
+        "ta": "தெரிவு D (a-4, b-3, c-2, d-1) தவறாகப் பொருத்தப்பட்ட இணைகளைக் கொண்டுள்ளது."
       },
       "B": {
         "en": "Option B (a-2, b-1, c-4, d-3) contains mismatched pairs.",
@@ -1886,8 +1886,8 @@
         "ta": "தெரிவு C (a-3, b-4, c-1, d-2) தவறாகப் பொருத்தப்பட்ட இணைகளைக் கொண்டுள்ளது."
       },
       "D": {
-        "en": "Option D (a-4, b-3, c-2, d-1) contains mismatched pairs.",
-        "ta": "தெரிவு D (a-4, b-3, c-2, d-1) தவறாகப் பொருத்தப்பட்ட இணைகளைக் கொண்டுள்ளது."
+        "en": "Option A (a-1, b-2, c-3, d-4) correctly matches all four items in List-I with List-II.",
+        "ta": "தெரிவு A (a-1, b-2, c-3, d-4) பட்டியல்-I-ல் உள்ள நான்கு கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
       }
     },
     "tnpsc_tip": {
@@ -1934,8 +1934,8 @@
     "options": [
       {
         "id": "A",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-3, b-4, c-1, d-2",
+        "ta": "a-3, b-4, c-1, d-2"
       },
       {
         "id": "B",
@@ -1944,8 +1944,8 @@
       },
       {
         "id": "C",
-        "en": "a-3, b-4, c-1, d-2",
-        "ta": "a-3, b-4, c-1, d-2"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "D",
@@ -1954,19 +1954,19 @@
       }
     ],
     "options_en": [
-      "a-1, b-2, c-3, d-4",
-      "a-2, b-1, c-4, d-3",
       "a-3, b-4, c-1, d-2",
+      "a-2, b-1, c-4, d-3",
+      "a-1, b-2, c-3, d-4",
       "a-4, b-3, c-2, d-1"
     ],
     "options_ta": [
-      "a-1, b-2, c-3, d-4",
-      "a-2, b-1, c-4, d-3",
       "a-3, b-4, c-1, d-2",
+      "a-2, b-1, c-4, d-3",
+      "a-1, b-2, c-3, d-4",
       "a-4, b-3, c-2, d-1"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Section 23 deals with pre-audience; Section 4 with BCI structure; Section 16 with senior advocate designation; Section 35 with disciplinary proceedings.",
       "ta": "பிரிவு 23 முதன்மை வாதாடல்; பிரிவு 4 பார் கவுன்சில் கட்டமைப்பு; பிரிவு 16 மூத்த வழக்கறிஞர் அந்தஸ்து; பிரிவு 35 ஒழுங்கு நடவடிக்கைகள் பற்றியதாகும்."
@@ -1975,16 +1975,16 @@
     "explanation_ta": "பிரிவு 23 முதன்மை வாதாடல்; பிரிவு 4 பார் கவுன்சில் கட்டமைப்பு; பிரிவு 16 மூத்த வழக்கறிஞர் அந்தஸ்து; பிரிவு 35 ஒழுங்கு நடவடிக்கைகள் பற்றியதாகும்.",
     "why_not_others": {
       "A": {
-        "en": "Option A (a-1, b-2, c-3, d-4) correctly matches all four items in List-I with List-II.",
-        "ta": "தெரிவு A (a-1, b-2, c-3, d-4) பட்டியல்-I-ல் உள்ள நான்கு கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
+        "en": "Option C (a-3, b-4, c-1, d-2) contains mismatched pairs.",
+        "ta": "தெரிவு C (a-3, b-4, c-1, d-2) தவறாகப் பொருத்தப்பட்ட இணைகளைக் கொண்டுள்ளது."
       },
       "B": {
         "en": "Option B (a-2, b-1, c-4, d-3) contains mismatched pairs.",
         "ta": "தெரிவு B (a-2, b-1, c-4, d-3) தவறாகப் பொருத்தப்பட்ட இணைகளைக் கொண்டுள்ளது."
       },
       "C": {
-        "en": "Option C (a-3, b-4, c-1, d-2) contains mismatched pairs.",
-        "ta": "தெரிவு C (a-3, b-4, c-1, d-2) தவறாகப் பொருத்தப்பட்ட இணைகளைக் கொண்டுள்ளது."
+        "en": "Option A (a-1, b-2, c-3, d-4) correctly matches all four items in List-I with List-II.",
+        "ta": "தெரிவு A (a-1, b-2, c-3, d-4) பட்டியல்-I-ல் உள்ள நான்கு கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
       },
       "D": {
         "en": "Option D (a-4, b-3, c-2, d-1) contains mismatched pairs.",
@@ -2035,8 +2035,8 @@
     "options": [
       {
         "id": "A",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-4, b-3, c-2, d-1",
+        "ta": "a-4, b-3, c-2, d-1"
       },
       {
         "id": "B",
@@ -2050,24 +2050,24 @@
       },
       {
         "id": "D",
-        "en": "a-4, b-3, c-2, d-1",
-        "ta": "a-4, b-3, c-2, d-1"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       }
     ],
     "options_en": [
-      "a-1, b-2, c-3, d-4",
+      "a-4, b-3, c-2, d-1",
       "a-2, b-1, c-4, d-3",
       "a-3, b-4, c-1, d-2",
-      "a-4, b-3, c-2, d-1"
+      "a-1, b-2, c-3, d-4"
     ],
     "options_ta": [
-      "a-1, b-2, c-3, d-4",
+      "a-4, b-3, c-2, d-1",
       "a-2, b-1, c-4, d-3",
       "a-3, b-4, c-1, d-2",
-      "a-4, b-3, c-2, d-1"
+      "a-1, b-2, c-3, d-4"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "AG holds office during pleasure of President; SC Judge, CAG, and CEC can only be removed by parliamentary address by special majority under Art 124(4).",
       "ta": "AG குடியரசுத் தலைவரின் விருப்பப்படி நீக்கப்படுகிறார்; SC நீதிபதி, CAG மற்றும் CEC ஆகியோர் சரத்து 124(4)-ன் படி நாடாளுமன்ற சிறப்பு பெரும்பான்மை தீர்மானம் மூலமே நீக்கப்பட முடியும்."
@@ -2076,8 +2076,8 @@
     "explanation_ta": "AG குடியரசுத் தலைவரின் விருப்பப்படி நீக்கப்படுகிறார்; SC நீதிபதி, CAG மற்றும் CEC ஆகியோர் சரத்து 124(4)-ன் படி நாடாளுமன்ற சிறப்பு பெரும்பான்மை தீர்மானம் மூலமே நீக்கப்பட முடியும்.",
     "why_not_others": {
       "A": {
-        "en": "Option A (a-1, b-2, c-3, d-4) correctly matches all four items in List-I with List-II.",
-        "ta": "தெரிவு A (a-1, b-2, c-3, d-4) பட்டியல்-I-ல் உள்ள நான்கு கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
+        "en": "Option D (a-4, b-3, c-2, d-1) contains mismatched pairs.",
+        "ta": "தெரிவு D (a-4, b-3, c-2, d-1) தவறாகப் பொருத்தப்பட்ட இணைகளைக் கொண்டுள்ளது."
       },
       "B": {
         "en": "Option B (a-2, b-1, c-4, d-3) contains mismatched pairs.",
@@ -2088,8 +2088,8 @@
         "ta": "தெரிவு C (a-3, b-4, c-1, d-2) தவறாகப் பொருத்தப்பட்ட இணைகளைக் கொண்டுள்ளது."
       },
       "D": {
-        "en": "Option D (a-4, b-3, c-2, d-1) contains mismatched pairs.",
-        "ta": "தெரிவு D (a-4, b-3, c-2, d-1) தவறாகப் பொருத்தப்பட்ட இணைகளைக் கொண்டுள்ளது."
+        "en": "Option A (a-1, b-2, c-3, d-4) correctly matches all four items in List-I with List-II.",
+        "ta": "தெரிவு A (a-1, b-2, c-3, d-4) பட்டியல்-I-ல் உள்ள நான்கு கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
       }
     },
     "tnpsc_tip": {
@@ -2237,8 +2237,8 @@
     "options": [
       {
         "id": "A",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-3, b-4, c-1, d-2",
+        "ta": "a-3, b-4, c-1, d-2"
       },
       {
         "id": "B",
@@ -2247,8 +2247,8 @@
       },
       {
         "id": "C",
-        "en": "a-3, b-4, c-1, d-2",
-        "ta": "a-3, b-4, c-1, d-2"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "D",
@@ -2257,19 +2257,19 @@
       }
     ],
     "options_en": [
-      "a-1, b-2, c-3, d-4",
-      "a-2, b-1, c-4, d-3",
       "a-3, b-4, c-1, d-2",
+      "a-2, b-1, c-4, d-3",
+      "a-1, b-2, c-3, d-4",
       "a-4, b-3, c-2, d-1"
     ],
     "options_ta": [
-      "a-1, b-2, c-3, d-4",
-      "a-2, b-1, c-4, d-3",
       "a-3, b-4, c-1, d-2",
+      "a-2, b-1, c-4, d-3",
+      "a-1, b-2, c-3, d-4",
       "a-4, b-3, c-2, d-1"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Article 88 allows AG to speak without vote; Art 100 governs parliamentary voting; Art 177 allows Advocate General to speak without vote; Art 189 governs state legislative voting.",
       "ta": "சரத்து 88 AG-க்கு வாக்கின்றி பேச உரிமை அளிக்கிறது; சரத்து 100 நாடாளுமன்ற வாக்கெடுப்பு; சரத்து 177 அட்வகேட் ஜெனரலுக்கு வாக்கின்றி பேச உரிமை அளிக்கிறது; சரத்து 189 சட்டமன்ற வாக்கெடுப்பு."
@@ -2278,16 +2278,16 @@
     "explanation_ta": "சரத்து 88 AG-க்கு வாக்கின்றி பேச உரிமை அளிக்கிறது; சரத்து 100 நாடாளுமன்ற வாக்கெடுப்பு; சரத்து 177 அட்வகேட் ஜெனரலுக்கு வாக்கின்றி பேச உரிமை அளிக்கிறது; சரத்து 189 சட்டமன்ற வாக்கெடுப்பு.",
     "why_not_others": {
       "A": {
-        "en": "Option A (a-1, b-2, c-3, d-4) correctly matches all four items in List-I with List-II.",
-        "ta": "தெரிவு A (a-1, b-2, c-3, d-4) பட்டியல்-I-ல் உள்ள நான்கு கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
+        "en": "Option C (a-3, b-4, c-1, d-2) contains mismatched pairs.",
+        "ta": "தெரிவு C (a-3, b-4, c-1, d-2) தவறாகப் பொருத்தப்பட்ட இணைகளைக் கொண்டுள்ளது."
       },
       "B": {
         "en": "Option B (a-2, b-1, c-4, d-3) contains mismatched pairs.",
         "ta": "தெரிவு B (a-2, b-1, c-4, d-3) தவறாகப் பொருத்தப்பட்ட இணைகளைக் கொண்டுள்ளது."
       },
       "C": {
-        "en": "Option C (a-3, b-4, c-1, d-2) contains mismatched pairs.",
-        "ta": "தெரிவு C (a-3, b-4, c-1, d-2) தவறாகப் பொருத்தப்பட்ட இணைகளைக் கொண்டுள்ளது."
+        "en": "Option A (a-1, b-2, c-3, d-4) correctly matches all four items in List-I with List-II.",
+        "ta": "தெரிவு A (a-1, b-2, c-3, d-4) பட்டியல்-I-ல் உள்ள நான்கு கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
       },
       "D": {
         "en": "Option D (a-4, b-3, c-2, d-1) contains mismatched pairs.",
@@ -2338,13 +2338,13 @@
     "options": [
       {
         "id": "A",
-        "en": "a-1, b-2, c-3, d-4",
-        "ta": "a-1, b-2, c-3, d-4"
+        "en": "a-2, b-1, c-4, d-3",
+        "ta": "a-2, b-1, c-4, d-3"
       },
       {
         "id": "B",
-        "en": "a-2, b-1, c-4, d-3",
-        "ta": "a-2, b-1, c-4, d-3"
+        "en": "a-1, b-2, c-3, d-4",
+        "ta": "a-1, b-2, c-3, d-4"
       },
       {
         "id": "C",
@@ -2358,19 +2358,19 @@
       }
     ],
     "options_en": [
-      "a-1, b-2, c-3, d-4",
       "a-2, b-1, c-4, d-3",
+      "a-1, b-2, c-3, d-4",
       "a-3, b-4, c-1, d-2",
       "a-4, b-3, c-2, d-1"
     ],
     "options_ta": [
-      "a-1, b-2, c-3, d-4",
       "a-2, b-1, c-4, d-3",
+      "a-1, b-2, c-3, d-4",
       "a-3, b-4, c-1, d-2",
       "a-4, b-3, c-2, d-1"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Audi alteram partem means hear the other side; Nemo judex means no one is judge in their own case; Locus standi is standing to sue; Quo warranto tests right to hold public office.",
       "ta": "Audi alteram partem என்பது இரு தரப்பும் கேட்கப்பட வேண்டும்; Nemo judex என்பது தன் வழக்கில் தானே நீதிபதி அல்ல; Locus standi என்பது நீதிமன்றம் செல்லும் தகுதி; Quo warranto என்பது தகுதி வினவும் பேராணை."
@@ -2379,12 +2379,12 @@
     "explanation_ta": "Audi alteram partem என்பது இரு தரப்பும் கேட்கப்பட வேண்டும்; Nemo judex என்பது தன் வழக்கில் தானே நீதிபதி அல்ல; Locus standi என்பது நீதிமன்றம் செல்லும் தகுதி; Quo warranto என்பது தகுதி வினவும் பேராணை.",
     "why_not_others": {
       "A": {
-        "en": "Option A (a-1, b-2, c-3, d-4) correctly matches all four items in List-I with List-II.",
-        "ta": "தெரிவு A (a-1, b-2, c-3, d-4) பட்டியல்-I-ல் உள்ள நான்கு கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
-      },
-      "B": {
         "en": "Option B (a-2, b-1, c-4, d-3) contains mismatched pairs.",
         "ta": "தெரிவு B (a-2, b-1, c-4, d-3) தவறாகப் பொருத்தப்பட்ட இணைகளைக் கொண்டுள்ளது."
+      },
+      "B": {
+        "en": "Option A (a-1, b-2, c-3, d-4) correctly matches all four items in List-I with List-II.",
+        "ta": "தெரிவு A (a-1, b-2, c-3, d-4) பட்டியல்-I-ல் உள்ள நான்கு கூறுகளையும் பட்டியல்-II உடன் சரியாகப் பொருத்துகிறது."
       },
       "C": {
         "en": "Option C (a-3, b-4, c-1, d-2) contains mismatched pairs.",

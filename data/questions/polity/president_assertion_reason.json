@@ -72,7 +72,28 @@
       "topic": "President of India",
       "type": "Reasoning",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "Both (A) and (R) are correct, and (R) is the correct explanation of (A)",
+      "Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)",
+      "(A) is correct, but (R) is incorrect",
+      "(A) is incorrect, but (R) is correct"
+    ],
+    "options_ta": [
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்",
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல",
+      "(A) சரி, ஆனால் (R) தவறு",
+      "(A) தவறு, ஆனால் (R) சரி"
+    ],
+    "answer": "a",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Both (A) and (R) are correct, and (R) correctly explains why the President is a nominal executive (he is constitutionally bound by Cabinet a..."
   },
   {
     "id": "POLITY_PRESIDENT_REASONING_002",
@@ -89,8 +110,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Both (A) and (R) are correct, and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
+        "en": "(A) is correct, but (R) is incorrect",
+        "ta": "(A) சரி, ஆனால் (R) தவறு"
       },
       {
         "id": "B",
@@ -99,8 +120,8 @@
       },
       {
         "id": "C",
-        "en": "(A) is correct, but (R) is incorrect",
-        "ta": "(A) சரி, ஆனால் (R) தவறு"
+        "en": "Both (A) and (R) are correct, and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
       },
       {
         "id": "D",
@@ -108,7 +129,7 @@
         "ta": "(A) தவறு, ஆனால் (R) சரி"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "C",
     "explanation": {
       "en": "Both (A) and (R) are correct, and (R) is the exact constitutional rationale for excluding nominated members from Article 54.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) நியமன உறுப்பினர்களை விலக்குவதற்கான சரியான அரசியலமைப்பு தர்க்கமாகும்."
@@ -126,16 +147,16 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Correct. Both (A) and (R) are correct, and (R) is the correct explanation of (A) is the accurate constitutional answer. Both (A) and (R) are correct, and (R) is the exact constitutional rationale for excluding nominated members from Article 54.",
-        "ta": "சரி. (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும் என்பது சரியான அரசியலமைப்பு பதிலாகும். (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) நியமன உறுப்பினர்களை விலக்குவதற்கான சரியான அரசியலமைப்பு தர்க்கமாகும்."
+        "en": "Incorrect. Option C ((A) is correct, but (R) is incorrect) is not supported by the constitutional facts under Article reference or President Notes.",
+        "ta": "தவறு. தெரிவு C ((A) சரி, ஆனால் (R) தவறு) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "B": {
         "en": "Incorrect. Option B (Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)) is not supported by the constitutional facts under Article reference or President Notes.",
         "ta": "தவறு. தெரிவு B ((A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "C": {
-        "en": "Incorrect. Option C ((A) is correct, but (R) is incorrect) is not supported by the constitutional facts under Article reference or President Notes.",
-        "ta": "தவறு. தெரிவு C ((A) சரி, ஆனால் (R) தவறு) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
+        "en": "Correct. Both (A) and (R) are correct, and (R) is the correct explanation of (A) is the accurate constitutional answer. Both (A) and (R) are correct, and (R) is the exact constitutional rationale for excluding nominated members from Article 54.",
+        "ta": "சரி. (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும் என்பது சரியான அரசியலமைப்பு பதிலாகும். (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) நியமன உறுப்பினர்களை விலக்குவதற்கான சரியான அரசியலமைப்பு தர்க்கமாகும்."
       },
       "D": {
         "en": "Incorrect. Option D ((A) is incorrect, but (R) is correct) is not supported by the constitutional facts under Article reference or President Notes.",
@@ -147,7 +168,28 @@
       "topic": "President of India",
       "type": "Reasoning",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "(A) is correct, but (R) is incorrect",
+      "Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)",
+      "Both (A) and (R) are correct, and (R) is the correct explanation of (A)",
+      "(A) is incorrect, but (R) is correct"
+    ],
+    "options_ta": [
+      "(A) சரி, ஆனால் (R) தவறு",
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல",
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்",
+      "(A) தவறு, ஆனால் (R) சரி"
+    ],
+    "answer": "c",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Both (A) and (R) are correct, and (R) is the exact constitutional rationale for excluding nominated members from Article 54."
   },
   {
     "id": "POLITY_PRESIDENT_REASONING_003",
@@ -169,13 +211,13 @@
       },
       {
         "id": "B",
-        "en": "Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல"
+        "en": "(A) is correct, but (R) is incorrect",
+        "ta": "(A) சரி, ஆனால் (R) தவறு"
       },
       {
         "id": "C",
-        "en": "(A) is correct, but (R) is incorrect",
-        "ta": "(A) சரி, ஆனால் (R) தவறு"
+        "en": "Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல"
       },
       {
         "id": "D",
@@ -183,7 +225,7 @@
         "ta": "(A) தவறு, ஆனால் (R) சரி"
       }
     ],
-    "correct_answer": "C",
+    "correct_answer": "B",
     "explanation": {
       "en": "(A) is correct (pardoning is an executive act of grace). (R) is INCORRECT because Supreme Court held in Kehar Singh (1989) that President DOES NOT sit as a court of appeal!",
       "ta": "(A) சரி (மன்னிப்பு என்பது நிர்வாகக் கருணை செயலாகும்). கேஹர் சிங் வழக்கில் குடியரசுத் தலைவர் மேல்முறையீட்டு நீதிமன்றமாகச் செயல்படவில்லை எனத் தீர்ப்பளிக்கப்பட்டதால் (R) தவறானது."
@@ -205,12 +247,12 @@
         "ta": "தவறு. தெரிவு A ((A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "B": {
-        "en": "Incorrect. Option B (Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)) is not supported by the constitutional facts under Article reference or President Notes.",
-        "ta": "தவறு. தெரிவு B ((A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
-      },
-      "C": {
         "en": "Correct. (A) is correct, but (R) is incorrect is the accurate constitutional answer. (A) is correct (pardoning is an executive act of grace). (R) is INCORRECT because Supreme Court held in Kehar Singh (1989) that President DOES NOT sit as a court of appeal!",
         "ta": "சரி. (A) சரி, ஆனால் (R) தவறு என்பது சரியான அரசியலமைப்பு பதிலாகும். (A) சரி (மன்னிப்பு என்பது நிர்வாகக் கருணை செயலாகும்). கேஹர் சிங் வழக்கில் குடியரசுத் தலைவர் மேல்முறையீட்டு நீதிமன்றமாகச் செயல்படவில்லை எனத் தீர்ப்பளிக்கப்பட்டதால் (R) தவறானது."
+      },
+      "C": {
+        "en": "Incorrect. Option B (Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)) is not supported by the constitutional facts under Article reference or President Notes.",
+        "ta": "தவறு. தெரிவு B ((A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "D": {
         "en": "Incorrect. Option D ((A) is incorrect, but (R) is correct) is not supported by the constitutional facts under Article reference or President Notes.",
@@ -222,7 +264,28 @@
       "topic": "President of India",
       "type": "Reasoning",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "Both (A) and (R) are correct, and (R) is the correct explanation of (A)",
+      "(A) is correct, but (R) is incorrect",
+      "Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)",
+      "(A) is incorrect, but (R) is correct"
+    ],
+    "options_ta": [
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்",
+      "(A) சரி, ஆனால் (R) தவறு",
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல",
+      "(A) தவறு, ஆனால் (R) சரி"
+    ],
+    "answer": "b",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "(A) is correct (pardoning is an executive act of grace). (R) is INCORRECT because Supreme Court held in Kehar Singh (1989) that President DO..."
   },
   {
     "id": "POLITY_PRESIDENT_REASONING_004",
@@ -244,13 +307,13 @@
       },
       {
         "id": "B",
-        "en": "Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல"
+        "en": "(A) is correct, but (R) is incorrect",
+        "ta": "(A) சரி, ஆனால் (R) தவறு"
       },
       {
         "id": "C",
-        "en": "(A) is correct, but (R) is incorrect",
-        "ta": "(A) சரி, ஆனால் (R) தவறு"
+        "en": "Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல"
       },
       {
         "id": "D",
@@ -258,7 +321,7 @@
         "ta": "(A) தவறு, ஆனால் (R) சரி"
       }
     ],
-    "correct_answer": "C",
+    "correct_answer": "B",
     "explanation": {
       "en": "(A) is correct under Article 123(3). (R) is INCORRECT because an Ordinance can ONLY be issued during recess of Parliament (when at least one House is not in session).",
       "ta": "(A) சரி (உறுப்பு 123(3)). இரு அவைகளும் கூட்டத்தொடரில் இருக்கும் போது அவசரச் சட்டம் பிறப்பிக்க முடியாது என்பதால் (R) தவறானது."
@@ -280,12 +343,12 @@
         "ta": "தவறு. தெரிவு A ((A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "B": {
-        "en": "Incorrect. Option B (Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)) is not supported by the constitutional facts under Article reference or President Notes.",
-        "ta": "தவறு. தெரிவு B ((A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
-      },
-      "C": {
         "en": "Correct. (A) is correct, but (R) is incorrect is the accurate constitutional answer. (A) is correct under Article 123(3). (R) is INCORRECT because an Ordinance can ONLY be issued during recess of Parliament (when at least one House is not in session).",
         "ta": "சரி. (A) சரி, ஆனால் (R) தவறு என்பது சரியான அரசியலமைப்பு பதிலாகும். (A) சரி (உறுப்பு 123(3)). இரு அவைகளும் கூட்டத்தொடரில் இருக்கும் போது அவசரச் சட்டம் பிறப்பிக்க முடியாது என்பதால் (R) தவறானது."
+      },
+      "C": {
+        "en": "Incorrect. Option B (Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)) is not supported by the constitutional facts under Article reference or President Notes.",
+        "ta": "தவறு. தெரிவு B ((A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "D": {
         "en": "Incorrect. Option D ((A) is incorrect, but (R) is correct) is not supported by the constitutional facts under Article reference or President Notes.",
@@ -297,7 +360,28 @@
       "topic": "President of India",
       "type": "Reasoning",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "Both (A) and (R) are correct, and (R) is the correct explanation of (A)",
+      "(A) is correct, but (R) is incorrect",
+      "Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)",
+      "(A) is incorrect, but (R) is correct"
+    ],
+    "options_ta": [
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்",
+      "(A) சரி, ஆனால் (R) தவறு",
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல",
+      "(A) தவறு, ஆனால் (R) சரி"
+    ],
+    "answer": "b",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "(A) is correct under Article 123(3). (R) is INCORRECT because an Ordinance can ONLY be issued during recess of Parliament (when at least one..."
   },
   {
     "id": "POLITY_PRESIDENT_REASONING_005",
@@ -314,8 +398,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Both (A) and (R) are correct, and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
+        "en": "(A) is incorrect, but (R) is correct",
+        "ta": "(A) தவறு, ஆனால் (R) சரி"
       },
       {
         "id": "B",
@@ -329,11 +413,11 @@
       },
       {
         "id": "D",
-        "en": "(A) is incorrect, but (R) is correct",
-        "ta": "(A) தவறு, ஆனால் (R) சரி"
+        "en": "Both (A) and (R) are correct, and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "D",
     "explanation": {
       "en": "Both (A) and (R) are correct, and (R) provides the historical context and explanation why 44th CAA added the Article 20 & 21 safeguard.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) 44வது திருத்தம் ஏன் உறுப்புகள் 20 & 21 பாதுகாப்பைச் சேர்த்தது என்பதற்கான வரலாற்றுக் பின்னணி விளக்கமாகும்."
@@ -351,8 +435,8 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Correct. Both (A) and (R) are correct, and (R) is the correct explanation of (A) is the accurate constitutional answer. Both (A) and (R) are correct, and (R) provides the historical context and explanation why 44th CAA added the Article 20 & 21 safeguard.",
-        "ta": "சரி. (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும் என்பது சரியான அரசியலமைப்பு பதிலாகும். (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) 44வது திருத்தம் ஏன் உறுப்புகள் 20 & 21 பாதுகாப்பைச் சேர்த்தது என்பதற்கான வரலாற்றுக் பின்னணி விளக்கமாகும்."
+        "en": "Incorrect. Option D ((A) is incorrect, but (R) is correct) is not supported by the constitutional facts under Article reference or President Notes.",
+        "ta": "தவறு. தெரிவு D ((A) தவறு, ஆனால் (R) சரி) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "B": {
         "en": "Incorrect. Option B (Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)) is not supported by the constitutional facts under Article reference or President Notes.",
@@ -363,8 +447,8 @@
         "ta": "தவறு. தெரிவு C ((A) சரி, ஆனால் (R) தவறு) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "D": {
-        "en": "Incorrect. Option D ((A) is incorrect, but (R) is correct) is not supported by the constitutional facts under Article reference or President Notes.",
-        "ta": "தவறு. தெரிவு D ((A) தவறு, ஆனால் (R) சரி) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
+        "en": "Correct. Both (A) and (R) are correct, and (R) is the correct explanation of (A) is the accurate constitutional answer. Both (A) and (R) are correct, and (R) provides the historical context and explanation why 44th CAA added the Article 20 & 21 safeguard.",
+        "ta": "சரி. (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும் என்பது சரியான அரசியலமைப்பு பதிலாகும். (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) 44வது திருத்தம் ஏன் உறுப்புகள் 20 & 21 பாதுகாப்பைச் சேர்த்தது என்பதற்கான வரலாற்றுக் பின்னணி விளக்கமாகும்."
       }
     },
     "metadata": {
@@ -372,7 +456,28 @@
       "topic": "President of India",
       "type": "Reasoning",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "(A) is incorrect, but (R) is correct",
+      "Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)",
+      "(A) is correct, but (R) is incorrect",
+      "Both (A) and (R) are correct, and (R) is the correct explanation of (A)"
+    ],
+    "options_ta": [
+      "(A) தவறு, ஆனால் (R) சரி",
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல",
+      "(A) சரி, ஆனால் (R) தவறு",
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
+    ],
+    "answer": "d",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Both (A) and (R) are correct, and (R) provides the historical context and explanation why 44th CAA added the Article 20 & 21 safeguard."
   },
   {
     "id": "POLITY_PRESIDENT_REASONING_006",
@@ -447,7 +552,28 @@
       "topic": "President of India",
       "type": "Reasoning",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "Both (A) and (R) are correct, and (R) is the correct explanation of (A)",
+      "Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)",
+      "(A) is correct, but (R) is incorrect",
+      "(A) is incorrect, but (R) is correct"
+    ],
+    "options_ta": [
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்",
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல",
+      "(A) சரி, ஆனால் (R) தவறு",
+      "(A) தவறு, ஆனால் (R) சரி"
+    ],
+    "answer": "a",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Both (A) and (R) are correct, and (R) explains why (A) is true (since President previously recommended its introduction, returning it for re..."
   },
   {
     "id": "POLITY_PRESIDENT_REASONING_007",
@@ -464,8 +590,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Both (A) and (R) are correct, and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
+        "en": "(A) is correct, but (R) is incorrect",
+        "ta": "(A) சரி, ஆனால் (R) தவறு"
       },
       {
         "id": "B",
@@ -474,8 +600,8 @@
       },
       {
         "id": "C",
-        "en": "(A) is correct, but (R) is incorrect",
-        "ta": "(A) சரி, ஆனால் (R) தவறு"
+        "en": "Both (A) and (R) are correct, and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
       },
       {
         "id": "D",
@@ -483,7 +609,7 @@
         "ta": "(A) தவறு, ஆனால் (R) சரி"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "C",
     "explanation": {
       "en": "Both (A) and (R) are correct, and (R) is the exact judicial foundation established by SC in Bommai (1994).",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) பொம்மை வழக்கின் சரியான நீதித் தீர்ப்பு விளக்கமாகும்."
@@ -501,16 +627,16 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Correct. Both (A) and (R) are correct, and (R) is the correct explanation of (A) is the accurate constitutional answer. Both (A) and (R) are correct, and (R) is the exact judicial foundation established by SC in Bommai (1994).",
-        "ta": "சரி. (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும் என்பது சரியான அரசியலமைப்பு பதிலாகும். (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) பொம்மை வழக்கின் சரியான நீதித் தீர்ப்பு விளக்கமாகும்."
+        "en": "Incorrect. Option C ((A) is correct, but (R) is incorrect) is not supported by the constitutional facts under Article reference or President Notes.",
+        "ta": "தவறு. தெரிவு C ((A) சரி, ஆனால் (R) தவறு) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "B": {
         "en": "Incorrect. Option B (Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)) is not supported by the constitutional facts under Article reference or President Notes.",
         "ta": "தவறு. தெரிவு B ((A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "C": {
-        "en": "Incorrect. Option C ((A) is correct, but (R) is incorrect) is not supported by the constitutional facts under Article reference or President Notes.",
-        "ta": "தவறு. தெரிவு C ((A) சரி, ஆனால் (R) தவறு) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
+        "en": "Correct. Both (A) and (R) are correct, and (R) is the correct explanation of (A) is the accurate constitutional answer. Both (A) and (R) are correct, and (R) is the exact judicial foundation established by SC in Bommai (1994).",
+        "ta": "சரி. (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும் என்பது சரியான அரசியலமைப்பு பதிலாகும். (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) பொம்மை வழக்கின் சரியான நீதித் தீர்ப்பு விளக்கமாகும்."
       },
       "D": {
         "en": "Incorrect. Option D ((A) is incorrect, but (R) is correct) is not supported by the constitutional facts under Article reference or President Notes.",
@@ -522,7 +648,28 @@
       "topic": "President of India",
       "type": "Reasoning",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "(A) is correct, but (R) is incorrect",
+      "Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)",
+      "Both (A) and (R) are correct, and (R) is the correct explanation of (A)",
+      "(A) is incorrect, but (R) is correct"
+    ],
+    "options_ta": [
+      "(A) சரி, ஆனால் (R) தவறு",
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல",
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்",
+      "(A) தவறு, ஆனால் (R) சரி"
+    ],
+    "answer": "c",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Both (A) and (R) are correct, and (R) is the exact judicial foundation established by SC in Bommai (1994)."
   },
   {
     "id": "POLITY_PRESIDENT_REASONING_008",
@@ -597,7 +744,28 @@
       "topic": "President of India",
       "type": "Reasoning",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "Both (A) and (R) are correct, and (R) is the correct explanation of (A)",
+      "Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)",
+      "(A) is correct, but (R) is incorrect",
+      "(A) is incorrect, but (R) is correct"
+    ],
+    "options_ta": [
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்",
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல",
+      "(A) சரி, ஆனால் (R) தவறு",
+      "(A) தவறு, ஆனால் (R) சரி"
+    ],
+    "answer": "a",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Both (A) and (R) are correct, and (R) correctly explains why MLA vote values vary across States (population differs across States)."
   },
   {
     "id": "POLITY_PRESIDENT_REASONING_009",
@@ -614,13 +782,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Both (A) and (R) are correct, and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
+        "en": "Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல"
       },
       {
         "id": "B",
-        "en": "Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல"
+        "en": "Both (A) and (R) are correct, and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
       },
       {
         "id": "C",
@@ -633,7 +801,7 @@
         "ta": "(A) தவறு, ஆனால் (R) சரி"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "B",
     "explanation": {
       "en": "Both (A) and (R) are correct, and (R) explains why all MPs have equal vote value (national total MLA votes divided by total elected MPs).",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) ஏன் அனைத்து எம்பிக்களுக்கும் சமமான வாக்கு மதிப்பு உள்ளது என்பதைச் சரியாக விளக்குகிறது."
@@ -651,12 +819,12 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Correct. Both (A) and (R) are correct, and (R) is the correct explanation of (A) is the accurate constitutional answer. Both (A) and (R) are correct, and (R) explains why all MPs have equal vote value (national total MLA votes divided by total elected MPs).",
-        "ta": "சரி. (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும் என்பது சரியான அரசியலமைப்பு பதிலாகும். (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) ஏன் அனைத்து எம்பிக்களுக்கும் சமமான வாக்கு மதிப்பு உள்ளது என்பதைச் சரியாக விளக்குகிறது."
-      },
-      "B": {
         "en": "Incorrect. Option B (Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)) is not supported by the constitutional facts under Article reference or President Notes.",
         "ta": "தவறு. தெரிவு B ((A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
+      },
+      "B": {
+        "en": "Correct. Both (A) and (R) are correct, and (R) is the correct explanation of (A) is the accurate constitutional answer. Both (A) and (R) are correct, and (R) explains why all MPs have equal vote value (national total MLA votes divided by total elected MPs).",
+        "ta": "சரி. (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும் என்பது சரியான அரசியலமைப்பு பதிலாகும். (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) ஏன் அனைத்து எம்பிக்களுக்கும் சமமான வாக்கு மதிப்பு உள்ளது என்பதைச் சரியாக விளக்குகிறது."
       },
       "C": {
         "en": "Incorrect. Option C ((A) is correct, but (R) is incorrect) is not supported by the constitutional facts under Article reference or President Notes.",
@@ -672,7 +840,28 @@
       "topic": "President of India",
       "type": "Reasoning",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)",
+      "Both (A) and (R) are correct, and (R) is the correct explanation of (A)",
+      "(A) is correct, but (R) is incorrect",
+      "(A) is incorrect, but (R) is correct"
+    ],
+    "options_ta": [
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல",
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்",
+      "(A) சரி, ஆனால் (R) தவறு",
+      "(A) தவறு, ஆனால் (R) சரி"
+    ],
+    "answer": "b",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Both (A) and (R) are correct, and (R) explains why all MPs have equal vote value (national total MLA votes divided by total elected MPs)."
   },
   {
     "id": "POLITY_PRESIDENT_REASONING_010",
@@ -689,8 +878,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Both (A) and (R) are correct, and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
+        "en": "(A) is correct, but (R) is incorrect",
+        "ta": "(A) சரி, ஆனால் (R) தவறு"
       },
       {
         "id": "B",
@@ -699,8 +888,8 @@
       },
       {
         "id": "C",
-        "en": "(A) is correct, but (R) is incorrect",
-        "ta": "(A) சரி, ஆனால் (R) தவறு"
+        "en": "Both (A) and (R) are correct, and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
       },
       {
         "id": "D",
@@ -708,7 +897,7 @@
         "ta": "(A) தவறு, ஆனால் (R) சரி"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "C",
     "explanation": {
       "en": "Both (A) and (R) are correct, and (R) explains why the procedure is quasi-judicial (investigation + evidence + defense right).",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) ஏன் இந்நடைமுறை பகுதி-நீதிமன்ற நடைமுறை என்பதைச் சரியாக விளக்குகிறது."
@@ -726,16 +915,16 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Correct. Both (A) and (R) are correct, and (R) is the correct explanation of (A) is the accurate constitutional answer. Both (A) and (R) are correct, and (R) explains why the procedure is quasi-judicial (investigation + evidence + defense right).",
-        "ta": "சரி. (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும் என்பது சரியான அரசியலமைப்பு பதிலாகும். (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) ஏன் இந்நடைமுறை பகுதி-நீதிமன்ற நடைமுறை என்பதைச் சரியாக விளக்குகிறது."
+        "en": "Incorrect. Option C ((A) is correct, but (R) is incorrect) is not supported by the constitutional facts under Article reference or President Notes.",
+        "ta": "தவறு. தெரிவு C ((A) சரி, ஆனால் (R) தவறு) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "B": {
         "en": "Incorrect. Option B (Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)) is not supported by the constitutional facts under Article reference or President Notes.",
         "ta": "தவறு. தெரிவு B ((A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "C": {
-        "en": "Incorrect. Option C ((A) is correct, but (R) is incorrect) is not supported by the constitutional facts under Article reference or President Notes.",
-        "ta": "தவறு. தெரிவு C ((A) சரி, ஆனால் (R) தவறு) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
+        "en": "Correct. Both (A) and (R) are correct, and (R) is the correct explanation of (A) is the accurate constitutional answer. Both (A) and (R) are correct, and (R) explains why the procedure is quasi-judicial (investigation + evidence + defense right).",
+        "ta": "சரி. (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும் என்பது சரியான அரசியலமைப்பு பதிலாகும். (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) ஏன் இந்நடைமுறை பகுதி-நீதிமன்ற நடைமுறை என்பதைச் சரியாக விளக்குகிறது."
       },
       "D": {
         "en": "Incorrect. Option D ((A) is incorrect, but (R) is correct) is not supported by the constitutional facts under Article reference or President Notes.",
@@ -747,7 +936,28 @@
       "topic": "President of India",
       "type": "Reasoning",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "(A) is correct, but (R) is incorrect",
+      "Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)",
+      "Both (A) and (R) are correct, and (R) is the correct explanation of (A)",
+      "(A) is incorrect, but (R) is correct"
+    ],
+    "options_ta": [
+      "(A) சரி, ஆனால் (R) தவறு",
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல",
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்",
+      "(A) தவறு, ஆனால் (R) சரி"
+    ],
+    "answer": "c",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Both (A) and (R) are correct, and (R) explains why the procedure is quasi-judicial (investigation + evidence + defense right)."
   },
   {
     "id": "POLITY_PRESIDENT_REASONING_011",
@@ -764,8 +974,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Both (A) and (R) are correct, and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
+        "en": "(A) is incorrect, but (R) is correct",
+        "ta": "(A) தவறு, ஆனால் (R) சரி"
       },
       {
         "id": "B",
@@ -779,11 +989,11 @@
       },
       {
         "id": "D",
-        "en": "(A) is incorrect, but (R) is correct",
-        "ta": "(A) தவறு, ஆனால் (R) சரி"
+        "en": "Both (A) and (R) are correct, and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "D",
     "explanation": {
       "en": "Both (A) and (R) are correct, and (R) correctly states the amendment that created the mandatory assent rule.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) ஒப்புதலைக் கட்டாயமாக்கிய திருத்தத்தைச் சரியாகக் குறிப்பிடுகிறது."
@@ -801,8 +1011,8 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Correct. Both (A) and (R) are correct, and (R) is the correct explanation of (A) is the accurate constitutional answer. Both (A) and (R) are correct, and (R) correctly states the amendment that created the mandatory assent rule.",
-        "ta": "சரி. (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும் என்பது சரியான அரசியலமைப்பு பதிலாகும். (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) ஒப்புதலைக் கட்டாயமாக்கிய திருத்தத்தைச் சரியாகக் குறிப்பிடுகிறது."
+        "en": "Incorrect. Option D ((A) is incorrect, but (R) is correct) is not supported by the constitutional facts under Article reference or President Notes.",
+        "ta": "தவறு. தெரிவு D ((A) தவறு, ஆனால் (R) சரி) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "B": {
         "en": "Incorrect. Option B (Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)) is not supported by the constitutional facts under Article reference or President Notes.",
@@ -813,8 +1023,8 @@
         "ta": "தவறு. தெரிவு C ((A) சரி, ஆனால் (R) தவறு) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "D": {
-        "en": "Incorrect. Option D ((A) is incorrect, but (R) is correct) is not supported by the constitutional facts under Article reference or President Notes.",
-        "ta": "தவறு. தெரிவு D ((A) தவறு, ஆனால் (R) சரி) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
+        "en": "Correct. Both (A) and (R) are correct, and (R) is the correct explanation of (A) is the accurate constitutional answer. Both (A) and (R) are correct, and (R) correctly states the amendment that created the mandatory assent rule.",
+        "ta": "சரி. (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும் என்பது சரியான அரசியலமைப்பு பதிலாகும். (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) ஒப்புதலைக் கட்டாயமாக்கிய திருத்தத்தைச் சரியாகக் குறிப்பிடுகிறது."
       }
     },
     "metadata": {
@@ -822,7 +1032,28 @@
       "topic": "President of India",
       "type": "Reasoning",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "(A) is incorrect, but (R) is correct",
+      "Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)",
+      "(A) is correct, but (R) is incorrect",
+      "Both (A) and (R) are correct, and (R) is the correct explanation of (A)"
+    ],
+    "options_ta": [
+      "(A) தவறு, ஆனால் (R) சரி",
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல",
+      "(A) சரி, ஆனால் (R) தவறு",
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
+    ],
+    "answer": "d",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Both (A) and (R) are correct, and (R) correctly states the amendment that created the mandatory assent rule."
   },
   {
     "id": "POLITY_PRESIDENT_REASONING_012",
@@ -839,8 +1070,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Both (A) and (R) are correct, and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
+        "en": "(A) is incorrect, but (R) is correct",
+        "ta": "(A) தவறு, ஆனால் (R) சரி"
       },
       {
         "id": "B",
@@ -854,11 +1085,11 @@
       },
       {
         "id": "D",
-        "en": "(A) is incorrect, but (R) is correct",
-        "ta": "(A) தவறு, ஆனால் (R) சரி"
+        "en": "Both (A) and (R) are correct, and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "D",
     "explanation": {
       "en": "Both (A) and (R) are correct, and (R) explains the specific constitutional restriction introduced by 44th CAA.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) 44வது திருத்தம் கொண்டுவந்த குறிப்பிட்ட அரசியலமைப்பு தடையை விளக்குகிறது."
@@ -876,8 +1107,8 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Correct. Both (A) and (R) are correct, and (R) is the correct explanation of (A) is the accurate constitutional answer. Both (A) and (R) are correct, and (R) explains the specific constitutional restriction introduced by 44th CAA.",
-        "ta": "சரி. (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும் என்பது சரியான அரசியலமைப்பு பதிலாகும். (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) 44வது திருத்தம் கொண்டுவந்த குறிப்பிட்ட அரசியலமைப்பு தடையை விளக்குகிறது."
+        "en": "Incorrect. Option D ((A) is incorrect, but (R) is correct) is not supported by the constitutional facts under Article reference or President Notes.",
+        "ta": "தவறு. தெரிவு D ((A) தவறு, ஆனால் (R) சரி) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "B": {
         "en": "Incorrect. Option B (Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)) is not supported by the constitutional facts under Article reference or President Notes.",
@@ -888,8 +1119,8 @@
         "ta": "தவறு. தெரிவு C ((A) சரி, ஆனால் (R) தவறு) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "D": {
-        "en": "Incorrect. Option D ((A) is incorrect, but (R) is correct) is not supported by the constitutional facts under Article reference or President Notes.",
-        "ta": "தவறு. தெரிவு D ((A) தவறு, ஆனால் (R) சரி) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
+        "en": "Correct. Both (A) and (R) are correct, and (R) is the correct explanation of (A) is the accurate constitutional answer. Both (A) and (R) are correct, and (R) explains the specific constitutional restriction introduced by 44th CAA.",
+        "ta": "சரி. (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும் என்பது சரியான அரசியலமைப்பு பதிலாகும். (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) 44வது திருத்தம் கொண்டுவந்த குறிப்பிட்ட அரசியலமைப்பு தடையை விளக்குகிறது."
       }
     },
     "metadata": {
@@ -897,7 +1128,28 @@
       "topic": "President of India",
       "type": "Reasoning",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "(A) is incorrect, but (R) is correct",
+      "Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)",
+      "(A) is correct, but (R) is incorrect",
+      "Both (A) and (R) are correct, and (R) is the correct explanation of (A)"
+    ],
+    "options_ta": [
+      "(A) தவறு, ஆனால் (R) சரி",
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல",
+      "(A) சரி, ஆனால் (R) தவறு",
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
+    ],
+    "answer": "d",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Both (A) and (R) are correct, and (R) explains the specific constitutional restriction introduced by 44th CAA."
   },
   {
     "id": "POLITY_PRESIDENT_REASONING_013",
@@ -914,13 +1166,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Both (A) and (R) are correct, and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
+        "en": "Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல"
       },
       {
         "id": "B",
-        "en": "Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல"
+        "en": "Both (A) and (R) are correct, and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
       },
       {
         "id": "C",
@@ -933,7 +1185,7 @@
         "ta": "(A) தவறு, ஆனால் (R) சரி"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "B",
     "explanation": {
       "en": "Both (A) and (R) are correct, and (R) provides the historical confirmation of (A).",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) வரலாற்றுக் கூற்றை உறுதிப்படுத்துகிறது."
@@ -951,12 +1203,12 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Correct. Both (A) and (R) are correct, and (R) is the correct explanation of (A) is the accurate constitutional answer. Both (A) and (R) are correct, and (R) provides the historical confirmation of (A).",
-        "ta": "சரி. (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும் என்பது சரியான அரசியலமைப்பு பதிலாகும். (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) வரலாற்றுக் கூற்றை உறுதிப்படுத்துகிறது."
-      },
-      "B": {
         "en": "Incorrect. Option B (Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)) is not supported by the constitutional facts under Article reference or President Notes.",
         "ta": "தவறு. தெரிவு B ((A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
+      },
+      "B": {
+        "en": "Correct. Both (A) and (R) are correct, and (R) is the correct explanation of (A) is the accurate constitutional answer. Both (A) and (R) are correct, and (R) provides the historical confirmation of (A).",
+        "ta": "சரி. (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும் என்பது சரியான அரசியலமைப்பு பதிலாகும். (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) வரலாற்றுக் கூற்றை உறுதிப்படுத்துகிறது."
       },
       "C": {
         "en": "Incorrect. Option C ((A) is correct, but (R) is incorrect) is not supported by the constitutional facts under Article reference or President Notes.",
@@ -972,7 +1224,28 @@
       "topic": "President of India",
       "type": "Reasoning",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)",
+      "Both (A) and (R) are correct, and (R) is the correct explanation of (A)",
+      "(A) is correct, but (R) is incorrect",
+      "(A) is incorrect, but (R) is correct"
+    ],
+    "options_ta": [
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல",
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்",
+      "(A) சரி, ஆனால் (R) தவறு",
+      "(A) தவறு, ஆனால் (R) சரி"
+    ],
+    "answer": "b",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Both (A) and (R) are correct, and (R) provides the historical confirmation of (A)."
   },
   {
     "id": "POLITY_PRESIDENT_REASONING_014",
@@ -989,8 +1262,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Both (A) and (R) are correct, and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
+        "en": "(A) is incorrect, but (R) is correct",
+        "ta": "(A) தவறு, ஆனால் (R) சரி"
       },
       {
         "id": "B",
@@ -1004,11 +1277,11 @@
       },
       {
         "id": "D",
-        "en": "(A) is incorrect, but (R) is correct",
-        "ta": "(A) தவறு, ஆனால் (R) சரி"
+        "en": "Both (A) and (R) are correct, and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "D",
     "explanation": {
       "en": "Both (A) and (R) are correct, and (R) provides the constitutional rationale under Article 361.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) உறுப்பு 361-ன் கீழ் அரசியலமைப்பு தர்க்கத்தை வழங்குகிறது."
@@ -1026,8 +1299,8 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Correct. Both (A) and (R) are correct, and (R) is the correct explanation of (A) is the accurate constitutional answer. Both (A) and (R) are correct, and (R) provides the constitutional rationale under Article 361.",
-        "ta": "சரி. (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும் என்பது சரியான அரசியலமைப்பு பதிலாகும். (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) உறுப்பு 361-ன் கீழ் அரசியலமைப்பு தர்க்கத்தை வழங்குகிறது."
+        "en": "Incorrect. Option D ((A) is incorrect, but (R) is correct) is not supported by the constitutional facts under Article reference or President Notes.",
+        "ta": "தவறு. தெரிவு D ((A) தவறு, ஆனால் (R) சரி) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "B": {
         "en": "Incorrect. Option B (Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)) is not supported by the constitutional facts under Article reference or President Notes.",
@@ -1038,8 +1311,8 @@
         "ta": "தவறு. தெரிவு C ((A) சரி, ஆனால் (R) தவறு) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "D": {
-        "en": "Incorrect. Option D ((A) is incorrect, but (R) is correct) is not supported by the constitutional facts under Article reference or President Notes.",
-        "ta": "தவறு. தெரிவு D ((A) தவறு, ஆனால் (R) சரி) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
+        "en": "Correct. Both (A) and (R) are correct, and (R) is the correct explanation of (A) is the accurate constitutional answer. Both (A) and (R) are correct, and (R) provides the constitutional rationale under Article 361.",
+        "ta": "சரி. (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும் என்பது சரியான அரசியலமைப்பு பதிலாகும். (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) உறுப்பு 361-ன் கீழ் அரசியலமைப்பு தர்க்கத்தை வழங்குகிறது."
       }
     },
     "metadata": {
@@ -1047,7 +1320,28 @@
       "topic": "President of India",
       "type": "Reasoning",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "(A) is incorrect, but (R) is correct",
+      "Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)",
+      "(A) is correct, but (R) is incorrect",
+      "Both (A) and (R) are correct, and (R) is the correct explanation of (A)"
+    ],
+    "options_ta": [
+      "(A) தவறு, ஆனால் (R) சரி",
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல",
+      "(A) சரி, ஆனால் (R) தவறு",
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
+    ],
+    "answer": "d",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Both (A) and (R) are correct, and (R) provides the constitutional rationale under Article 361."
   },
   {
     "id": "POLITY_PRESIDENT_REASONING_015",
@@ -1069,13 +1363,13 @@
       },
       {
         "id": "B",
-        "en": "Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல"
+        "en": "(A) is correct, but (R) is incorrect",
+        "ta": "(A) சரி, ஆனால் (R) தவறு"
       },
       {
         "id": "C",
-        "en": "(A) is correct, but (R) is incorrect",
-        "ta": "(A) சரி, ஆனால் (R) தவறு"
+        "en": "Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல"
       },
       {
         "id": "D",
@@ -1083,7 +1377,7 @@
         "ta": "(A) தவறு, ஆனால் (R) சரி"
       }
     ],
-    "correct_answer": "C",
+    "correct_answer": "B",
     "explanation": {
       "en": "(A) is correct (absolute criminal immunity under Art 361(2)). (R) is INCORRECT because Civil proceedings CAN be instituted for personal acts after giving 2 months written notice under Art 361(4)!",
       "ta": "(A) சரி (முழு குற்றவியல் விலக்களிப்பு). உறுப்பு 361(4)-ன் கீழ் 2 மாத அறிவிப்பிற்குப் பின் உரிமையியல் நடவடிக்கை எடுக்கலாம் என்பதால் (R) தவறானது."
@@ -1105,12 +1399,12 @@
         "ta": "தவறு. தெரிவு A ((A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "B": {
-        "en": "Incorrect. Option B (Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)) is not supported by the constitutional facts under Article reference or President Notes.",
-        "ta": "தவறு. தெரிவு B ((A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
-      },
-      "C": {
         "en": "Correct. (A) is correct, but (R) is incorrect is the accurate constitutional answer. (A) is correct (absolute criminal immunity under Art 361(2)). (R) is INCORRECT because Civil proceedings CAN be instituted for personal acts after giving 2 months written notice under Art 361(4)!",
         "ta": "சரி. (A) சரி, ஆனால் (R) தவறு என்பது சரியான அரசியலமைப்பு பதிலாகும். (A) சரி (முழு குற்றவியல் விலக்களிப்பு). உறுப்பு 361(4)-ன் கீழ் 2 மாத அறிவிப்பிற்குப் பின் உரிமையியல் நடவடிக்கை எடுக்கலாம் என்பதால் (R) தவறானது."
+      },
+      "C": {
+        "en": "Incorrect. Option B (Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)) is not supported by the constitutional facts under Article reference or President Notes.",
+        "ta": "தவறு. தெரிவு B ((A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "D": {
         "en": "Incorrect. Option D ((A) is incorrect, but (R) is correct) is not supported by the constitutional facts under Article reference or President Notes.",
@@ -1122,7 +1416,28 @@
       "topic": "President of India",
       "type": "Reasoning",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "Both (A) and (R) are correct, and (R) is the correct explanation of (A)",
+      "(A) is correct, but (R) is incorrect",
+      "Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)",
+      "(A) is incorrect, but (R) is correct"
+    ],
+    "options_ta": [
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்",
+      "(A) சரி, ஆனால் (R) தவறு",
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல",
+      "(A) தவறு, ஆனால் (R) சரி"
+    ],
+    "answer": "b",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "(A) is correct (absolute criminal immunity under Art 361(2)). (R) is INCORRECT because Civil proceedings CAN be instituted for personal acts..."
   },
   {
     "id": "POLITY_PRESIDENT_REASONING_016",
@@ -1197,7 +1512,28 @@
       "topic": "President of India",
       "type": "Reasoning",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "Both (A) and (R) are correct, and (R) is the correct explanation of (A)",
+      "Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)",
+      "(A) is correct, but (R) is incorrect",
+      "(A) is incorrect, but (R) is correct"
+    ],
+    "options_ta": [
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்",
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல",
+      "(A) சரி, ஆனால் (R) தவறு",
+      "(A) தவறு, ஆனால் (R) சரி"
+    ],
+    "answer": "c",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "(A) is correct (Art 85 dissolution power). (R) is INCORRECT because President is NOT BOUND to dissolve Lok Sabha on advice of a defeated PM ..."
   },
   {
     "id": "POLITY_PRESIDENT_REASONING_017",
@@ -1272,7 +1608,28 @@
       "topic": "President of India",
       "type": "Reasoning",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "Both (A) and (R) are correct, and (R) is the correct explanation of (A)",
+      "Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)",
+      "(A) is correct, but (R) is incorrect",
+      "(A) is incorrect, but (R) is correct"
+    ],
+    "options_ta": [
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்",
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல",
+      "(A) சரி, ஆனால் (R) தவறு",
+      "(A) தவறு, ஆனால் (R) சரி"
+    ],
+    "answer": "a",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Both (A) and (R) are correct, and (R) correctly cites the authoritative judicial precedents."
   },
   {
     "id": "POLITY_PRESIDENT_REASONING_018",
@@ -1289,8 +1646,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Both (A) and (R) are correct, and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
+        "en": "(A) is correct, but (R) is incorrect",
+        "ta": "(A) சரி, ஆனால் (R) தவறு"
       },
       {
         "id": "B",
@@ -1299,8 +1656,8 @@
       },
       {
         "id": "C",
-        "en": "(A) is correct, but (R) is incorrect",
-        "ta": "(A) சரி, ஆனால் (R) தவறு"
+        "en": "Both (A) and (R) are correct, and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
       },
       {
         "id": "D",
@@ -1308,7 +1665,7 @@
         "ta": "(A) தவறு, ஆனால் (R) சரி"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "C",
     "explanation": {
       "en": "Both (A) and (R) are correct, and (R) accurately explains why President's veto over reserved State Bills is 'Absolute'.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) ஏன் குடியரசுத் தலைவர் வீட்டோ 'முழுமையானது' என்பதைச் சரியாக விளக்குகிறது."
@@ -1326,16 +1683,16 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Correct. Both (A) and (R) are correct, and (R) is the correct explanation of (A) is the accurate constitutional answer. Both (A) and (R) are correct, and (R) accurately explains why President's veto over reserved State Bills is 'Absolute'.",
-        "ta": "சரி. (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும் என்பது சரியான அரசியலமைப்பு பதிலாகும். (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) ஏன் குடியரசுத் தலைவர் வீட்டோ 'முழுமையானது' என்பதைச் சரியாக விளக்குகிறது."
+        "en": "Incorrect. Option C ((A) is correct, but (R) is incorrect) is not supported by the constitutional facts under Article reference or President Notes.",
+        "ta": "தவறு. தெரிவு C ((A) சரி, ஆனால் (R) தவறு) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "B": {
         "en": "Incorrect. Option B (Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)) is not supported by the constitutional facts under Article reference or President Notes.",
         "ta": "தவறு. தெரிவு B ((A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "C": {
-        "en": "Incorrect. Option C ((A) is correct, but (R) is incorrect) is not supported by the constitutional facts under Article reference or President Notes.",
-        "ta": "தவறு. தெரிவு C ((A) சரி, ஆனால் (R) தவறு) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
+        "en": "Correct. Both (A) and (R) are correct, and (R) is the correct explanation of (A) is the accurate constitutional answer. Both (A) and (R) are correct, and (R) accurately explains why President's veto over reserved State Bills is 'Absolute'.",
+        "ta": "சரி. (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும் என்பது சரியான அரசியலமைப்பு பதிலாகும். (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) ஏன் குடியரசுத் தலைவர் வீட்டோ 'முழுமையானது' என்பதைச் சரியாக விளக்குகிறது."
       },
       "D": {
         "en": "Incorrect. Option D ((A) is incorrect, but (R) is correct) is not supported by the constitutional facts under Article reference or President Notes.",
@@ -1347,7 +1704,28 @@
       "topic": "President of India",
       "type": "Reasoning",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "(A) is correct, but (R) is incorrect",
+      "Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)",
+      "Both (A) and (R) are correct, and (R) is the correct explanation of (A)",
+      "(A) is incorrect, but (R) is correct"
+    ],
+    "options_ta": [
+      "(A) சரி, ஆனால் (R) தவறு",
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல",
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்",
+      "(A) தவறு, ஆனால் (R) சரி"
+    ],
+    "answer": "c",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Both (A) and (R) are correct, and (R) accurately explains why President's veto over reserved State Bills is 'Absolute'."
   },
   {
     "id": "POLITY_PRESIDENT_REASONING_019",
@@ -1374,16 +1752,16 @@
       },
       {
         "id": "C",
-        "en": "(A) is correct, but (R) is incorrect",
-        "ta": "(A) சரி, ஆனால் (R) தவறு"
+        "en": "(A) is incorrect, but (R) is correct",
+        "ta": "(A) தவறு, ஆனால் (R) சரி"
       },
       {
         "id": "D",
-        "en": "(A) is incorrect, but (R) is correct",
-        "ta": "(A) தவறு, ஆனால் (R) சரி"
+        "en": "(A) is correct, but (R) is incorrect",
+        "ta": "(A) சரி, ஆனால் (R) தவறு"
       }
     ],
-    "correct_answer": "C",
+    "correct_answer": "D",
     "explanation": {
       "en": "(A) is correct (Art 143 advisory jurisdiction). (R) is INCORRECT because Supreme Court's advisory opinion under Art 143 is NOT BINDING on the President!",
       "ta": "(A) சரி. உறுப்பு 143-ன் கீழ் உச்ச நீதிமன்ற ஆலோசனை குடியரசுத் தலைவரைக் கட்டுப்படுத்தாது என்பதால் (R) தவறானது."
@@ -1409,12 +1787,12 @@
         "ta": "தவறு. தெரிவு B ((A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "C": {
-        "en": "Correct. (A) is correct, but (R) is incorrect is the accurate constitutional answer. (A) is correct (Art 143 advisory jurisdiction). (R) is INCORRECT because Supreme Court's advisory opinion under Art 143 is NOT BINDING on the President!",
-        "ta": "சரி. (A) சரி, ஆனால் (R) தவறு என்பது சரியான அரசியலமைப்பு பதிலாகும். (A) சரி. உறுப்பு 143-ன் கீழ் உச்ச நீதிமன்ற ஆலோசனை குடியரசுத் தலைவரைக் கட்டுப்படுத்தாது என்பதால் (R) தவறானது."
-      },
-      "D": {
         "en": "Incorrect. Option D ((A) is incorrect, but (R) is correct) is not supported by the constitutional facts under Article reference or President Notes.",
         "ta": "தவறு. தெரிவு D ((A) தவறு, ஆனால் (R) சரி) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
+      },
+      "D": {
+        "en": "Correct. (A) is correct, but (R) is incorrect is the accurate constitutional answer. (A) is correct (Art 143 advisory jurisdiction). (R) is INCORRECT because Supreme Court's advisory opinion under Art 143 is NOT BINDING on the President!",
+        "ta": "சரி. (A) சரி, ஆனால் (R) தவறு என்பது சரியான அரசியலமைப்பு பதிலாகும். (A) சரி. உறுப்பு 143-ன் கீழ் உச்ச நீதிமன்ற ஆலோசனை குடியரசுத் தலைவரைக் கட்டுப்படுத்தாது என்பதால் (R) தவறானது."
       }
     },
     "metadata": {
@@ -1422,7 +1800,28 @@
       "topic": "President of India",
       "type": "Reasoning",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "Both (A) and (R) are correct, and (R) is the correct explanation of (A)",
+      "Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)",
+      "(A) is incorrect, but (R) is correct",
+      "(A) is correct, but (R) is incorrect"
+    ],
+    "options_ta": [
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்",
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல",
+      "(A) தவறு, ஆனால் (R) சரி",
+      "(A) சரி, ஆனால் (R) தவறு"
+    ],
+    "answer": "d",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "(A) is correct (Art 143 advisory jurisdiction). (R) is INCORRECT because Supreme Court's advisory opinion under Art 143 is NOT BINDING on th..."
   },
   {
     "id": "POLITY_PRESIDENT_REASONING_020",
@@ -1439,8 +1838,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Both (A) and (R) are correct, and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
+        "en": "(A) is correct, but (R) is incorrect",
+        "ta": "(A) சரி, ஆனால் (R) தவறு"
       },
       {
         "id": "B",
@@ -1449,8 +1848,8 @@
       },
       {
         "id": "C",
-        "en": "(A) is correct, but (R) is incorrect",
-        "ta": "(A) சரி, ஆனால் (R) தவறு"
+        "en": "Both (A) and (R) are correct, and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
       },
       {
         "id": "D",
@@ -1458,7 +1857,7 @@
         "ta": "(A) தவறு, ஆனால் (R) சரி"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "C",
     "explanation": {
       "en": "Both (A) and (R) are correct, and (R) provides the constitutional rationale for excluding MLCs.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) MLC-க்களை விலக்குவதற்கான அரசியலமைப்பு தர்க்கத்தை வழங்குகிறது."
@@ -1476,16 +1875,16 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Correct. Both (A) and (R) are correct, and (R) is the correct explanation of (A) is the accurate constitutional answer. Both (A) and (R) are correct, and (R) provides the constitutional rationale for excluding MLCs.",
-        "ta": "சரி. (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும் என்பது சரியான அரசியலமைப்பு பதிலாகும். (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) MLC-க்களை விலக்குவதற்கான அரசியலமைப்பு தர்க்கத்தை வழங்குகிறது."
+        "en": "Incorrect. Option C ((A) is correct, but (R) is incorrect) is not supported by the constitutional facts under Article reference or President Notes.",
+        "ta": "தவறு. தெரிவு C ((A) சரி, ஆனால் (R) தவறு) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "B": {
         "en": "Incorrect. Option B (Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)) is not supported by the constitutional facts under Article reference or President Notes.",
         "ta": "தவறு. தெரிவு B ((A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "C": {
-        "en": "Incorrect. Option C ((A) is correct, but (R) is incorrect) is not supported by the constitutional facts under Article reference or President Notes.",
-        "ta": "தவறு. தெரிவு C ((A) சரி, ஆனால் (R) தவறு) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
+        "en": "Correct. Both (A) and (R) are correct, and (R) is the correct explanation of (A) is the accurate constitutional answer. Both (A) and (R) are correct, and (R) provides the constitutional rationale for excluding MLCs.",
+        "ta": "சரி. (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும் என்பது சரியான அரசியலமைப்பு பதிலாகும். (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) MLC-க்களை விலக்குவதற்கான அரசியலமைப்பு தர்க்கத்தை வழங்குகிறது."
       },
       "D": {
         "en": "Incorrect. Option D ((A) is incorrect, but (R) is correct) is not supported by the constitutional facts under Article reference or President Notes.",
@@ -1497,7 +1896,28 @@
       "topic": "President of India",
       "type": "Reasoning",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "(A) is correct, but (R) is incorrect",
+      "Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)",
+      "Both (A) and (R) are correct, and (R) is the correct explanation of (A)",
+      "(A) is incorrect, but (R) is correct"
+    ],
+    "options_ta": [
+      "(A) சரி, ஆனால் (R) தவறு",
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல",
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்",
+      "(A) தவறு, ஆனால் (R) சரி"
+    ],
+    "answer": "c",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Both (A) and (R) are correct, and (R) provides the constitutional rationale for excluding MLCs."
   },
   {
     "id": "POLITY_PRESIDENT_REASONING_021",
@@ -1514,8 +1934,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Both (A) and (R) are correct, and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
+        "en": "(A) is incorrect, but (R) is correct",
+        "ta": "(A) தவறு, ஆனால் (R) சரி"
       },
       {
         "id": "B",
@@ -1529,11 +1949,11 @@
       },
       {
         "id": "D",
-        "en": "(A) is incorrect, but (R) is correct",
-        "ta": "(A) தவறு, ஆனால் (R) சரி"
+        "en": "Both (A) and (R) are correct, and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "D",
     "explanation": {
       "en": "Both (A) and (R) are correct, and (R) reflects the mandatory Art 352(3) requirement added by 44th CAA 1978.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) 44வது திருத்தம் சேர்த்த உறுப்பு 352(3) கட்டாய நிபந்தனையைப் பிரதிபலிக்கிறது."
@@ -1551,8 +1971,8 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Correct. Both (A) and (R) are correct, and (R) is the correct explanation of (A) is the accurate constitutional answer. Both (A) and (R) are correct, and (R) reflects the mandatory Art 352(3) requirement added by 44th CAA 1978.",
-        "ta": "சரி. (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும் என்பது சரியான அரசியலமைப்பு பதிலாகும். (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) 44வது திருத்தம் சேர்த்த உறுப்பு 352(3) கட்டாய நிபந்தனையைப் பிரதிபலிக்கிறது."
+        "en": "Incorrect. Option D ((A) is incorrect, but (R) is correct) is not supported by the constitutional facts under Article reference or President Notes.",
+        "ta": "தவறு. தெரிவு D ((A) தவறு, ஆனால் (R) சரி) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "B": {
         "en": "Incorrect. Option B (Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)) is not supported by the constitutional facts under Article reference or President Notes.",
@@ -1563,8 +1983,8 @@
         "ta": "தவறு. தெரிவு C ((A) சரி, ஆனால் (R) தவறு) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "D": {
-        "en": "Incorrect. Option D ((A) is incorrect, but (R) is correct) is not supported by the constitutional facts under Article reference or President Notes.",
-        "ta": "தவறு. தெரிவு D ((A) தவறு, ஆனால் (R) சரி) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
+        "en": "Correct. Both (A) and (R) are correct, and (R) is the correct explanation of (A) is the accurate constitutional answer. Both (A) and (R) are correct, and (R) reflects the mandatory Art 352(3) requirement added by 44th CAA 1978.",
+        "ta": "சரி. (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும் என்பது சரியான அரசியலமைப்பு பதிலாகும். (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) 44வது திருத்தம் சேர்த்த உறுப்பு 352(3) கட்டாய நிபந்தனையைப் பிரதிபலிக்கிறது."
       }
     },
     "metadata": {
@@ -1572,7 +1992,28 @@
       "topic": "President of India",
       "type": "Reasoning",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "(A) is incorrect, but (R) is correct",
+      "Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)",
+      "(A) is correct, but (R) is incorrect",
+      "Both (A) and (R) are correct, and (R) is the correct explanation of (A)"
+    ],
+    "options_ta": [
+      "(A) தவறு, ஆனால் (R) சரி",
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல",
+      "(A) சரி, ஆனால் (R) தவறு",
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
+    ],
+    "answer": "d",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Both (A) and (R) are correct, and (R) reflects the mandatory Art 352(3) requirement added by 44th CAA 1978."
   },
   {
     "id": "POLITY_PRESIDENT_REASONING_022",
@@ -1647,7 +2088,28 @@
       "topic": "President of India",
       "type": "Reasoning",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "Both (A) and (R) are correct, and (R) is the correct explanation of (A)",
+      "Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)",
+      "(A) is correct, but (R) is incorrect",
+      "(A) is incorrect, but (R) is correct"
+    ],
+    "options_ta": [
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்",
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல",
+      "(A) சரி, ஆனால் (R) தவறு",
+      "(A) தவறு, ஆனால் (R) சரி"
+    ],
+    "answer": "a",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Both (A) and (R) are correct, and (R) is the exact constitutional provision under Art 360(4)(b)."
   },
   {
     "id": "POLITY_PRESIDENT_REASONING_023",
@@ -1664,8 +2126,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Both (A) and (R) are correct, and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
+        "en": "(A) is correct, but (R) is incorrect",
+        "ta": "(A) சரி, ஆனால் (R) தவறு"
       },
       {
         "id": "B",
@@ -1674,8 +2136,8 @@
       },
       {
         "id": "C",
-        "en": "(A) is correct, but (R) is incorrect",
-        "ta": "(A) சரி, ஆனால் (R) தவறு"
+        "en": "Both (A) and (R) are correct, and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்"
       },
       {
         "id": "D",
@@ -1683,7 +2145,7 @@
         "ta": "(A) தவறு, ஆனால் (R) சரி"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "C",
     "explanation": {
       "en": "Both (A) and (R) are correct, and (R) cites the constitutional clause protecting election continuity.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) தேர்தல் தொடர்ச்சியைப் பாதுகாக்கும் அரசியலமைப்பு விதியைக் குறிப்பிடுகிறது."
@@ -1701,16 +2163,16 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Correct. Both (A) and (R) are correct, and (R) is the correct explanation of (A) is the accurate constitutional answer. Both (A) and (R) are correct, and (R) cites the constitutional clause protecting election continuity.",
-        "ta": "சரி. (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும் என்பது சரியான அரசியலமைப்பு பதிலாகும். (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) தேர்தல் தொடர்ச்சியைப் பாதுகாக்கும் அரசியலமைப்பு விதியைக் குறிப்பிடுகிறது."
+        "en": "Incorrect. Option C ((A) is correct, but (R) is incorrect) is not supported by the constitutional facts under Article reference or President Notes.",
+        "ta": "தவறு. தெரிவு C ((A) சரி, ஆனால் (R) தவறு) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "B": {
         "en": "Incorrect. Option B (Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)) is not supported by the constitutional facts under Article reference or President Notes.",
         "ta": "தவறு. தெரிவு B ((A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "C": {
-        "en": "Incorrect. Option C ((A) is correct, but (R) is incorrect) is not supported by the constitutional facts under Article reference or President Notes.",
-        "ta": "தவறு. தெரிவு C ((A) சரி, ஆனால் (R) தவறு) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
+        "en": "Correct. Both (A) and (R) are correct, and (R) is the correct explanation of (A) is the accurate constitutional answer. Both (A) and (R) are correct, and (R) cites the constitutional clause protecting election continuity.",
+        "ta": "சரி. (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும் என்பது சரியான அரசியலமைப்பு பதிலாகும். (A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) தேர்தல் தொடர்ச்சியைப் பாதுகாக்கும் அரசியலமைப்பு விதியைக் குறிப்பிடுகிறது."
       },
       "D": {
         "en": "Incorrect. Option D ((A) is incorrect, but (R) is correct) is not supported by the constitutional facts under Article reference or President Notes.",
@@ -1722,7 +2184,28 @@
       "topic": "President of India",
       "type": "Reasoning",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "(A) is correct, but (R) is incorrect",
+      "Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)",
+      "Both (A) and (R) are correct, and (R) is the correct explanation of (A)",
+      "(A) is incorrect, but (R) is correct"
+    ],
+    "options_ta": [
+      "(A) சரி, ஆனால் (R) தவறு",
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல",
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்",
+      "(A) தவறு, ஆனால் (R) சரி"
+    ],
+    "answer": "c",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Both (A) and (R) are correct, and (R) cites the constitutional clause protecting election continuity."
   },
   {
     "id": "POLITY_PRESIDENT_REASONING_024",
@@ -1744,13 +2227,13 @@
       },
       {
         "id": "B",
-        "en": "Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல"
+        "en": "(A) is correct, but (R) is incorrect",
+        "ta": "(A) சரி, ஆனால் (R) தவறு"
       },
       {
         "id": "C",
-        "en": "(A) is correct, but (R) is incorrect",
-        "ta": "(A) சரி, ஆனால் (R) தவறு"
+        "en": "Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல"
       },
       {
         "id": "D",
@@ -1758,7 +2241,7 @@
         "ta": "(A) தவறு, ஆனால் (R) சரி"
       }
     ],
-    "correct_answer": "C",
+    "correct_answer": "B",
     "explanation": {
       "en": "(A) is correct under Article 53(2). (R) is INCORRECT because exercise of Supreme Command and power to declare war is REGULATED BY PARLIAMENTARY LAW!",
       "ta": "(A) சரி. போர்ப் பிரகடன அதிகாரம் நாடாளுமன்றச் சட்டத்தால் சீர்படுத்தப்படுவதால் (R) தவறானது."
@@ -1780,12 +2263,12 @@
         "ta": "தவறு. தெரிவு A ((A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "B": {
-        "en": "Incorrect. Option B (Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)) is not supported by the constitutional facts under Article reference or President Notes.",
-        "ta": "தவறு. தெரிவு B ((A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
-      },
-      "C": {
         "en": "Correct. (A) is correct, but (R) is incorrect is the accurate constitutional answer. (A) is correct under Article 53(2). (R) is INCORRECT because exercise of Supreme Command and power to declare war is REGULATED BY PARLIAMENTARY LAW!",
         "ta": "சரி. (A) சரி, ஆனால் (R) தவறு என்பது சரியான அரசியலமைப்பு பதிலாகும். (A) சரி. போர்ப் பிரகடன அதிகாரம் நாடாளுமன்றச் சட்டத்தால் சீர்படுத்தப்படுவதால் (R) தவறானது."
+      },
+      "C": {
+        "en": "Incorrect. Option B (Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)) is not supported by the constitutional facts under Article reference or President Notes.",
+        "ta": "தவறு. தெரிவு B ((A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல) அரசியலமைப்பு விதிகள் அல்லது குடியரசுத் தலைவர் குறிப்புகளின் படி தவறான கூற்றாகும்."
       },
       "D": {
         "en": "Incorrect. Option D ((A) is incorrect, but (R) is correct) is not supported by the constitutional facts under Article reference or President Notes.",
@@ -1797,7 +2280,28 @@
       "topic": "President of India",
       "type": "Reasoning",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "Both (A) and (R) are correct, and (R) is the correct explanation of (A)",
+      "(A) is correct, but (R) is incorrect",
+      "Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)",
+      "(A) is incorrect, but (R) is correct"
+    ],
+    "options_ta": [
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்",
+      "(A) சரி, ஆனால் (R) தவறு",
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல",
+      "(A) தவறு, ஆனால் (R) சரி"
+    ],
+    "answer": "b",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "(A) is correct under Article 53(2). (R) is INCORRECT because exercise of Supreme Command and power to declare war is REGULATED BY PARLIAMENT..."
   },
   {
     "id": "POLITY_PRESIDENT_REASONING_025",
@@ -1872,6 +2376,27 @@
       "topic": "President of India",
       "type": "Reasoning",
       "level": "TNPSC Group 1"
-    }
+    },
+    "options_en": [
+      "Both (A) and (R) are correct, and (R) is the correct explanation of (A)",
+      "Both (A) and (R) are correct, but (R) is NOT the correct explanation of (A)",
+      "(A) is correct, but (R) is incorrect",
+      "(A) is incorrect, but (R) is correct"
+    ],
+    "options_ta": [
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கு சரியான விளக்கமாகும்",
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கு சரியான விளக்கமல்ல",
+      "(A) சரி, ஆனால் (R) தவறு",
+      "(A) தவறு, ஆனால் (R) சரி"
+    ],
+    "answer": "a",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "Polity",
+      "President of India"
+    ],
+    "revision_fact": "Both (A) and (R) are correct, and (R) provides the constitutional objective and explanation of Article 71(2)."
   }
 ]

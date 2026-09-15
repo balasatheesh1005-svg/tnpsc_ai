@@ -10,13 +10,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Article 52",
-        "ta": "உறுப்பு 52"
+        "en": "Article 63",
+        "ta": "உறுப்பு 63"
       },
       {
         "id": "B",
-        "en": "Article 63",
-        "ta": "உறுப்பு 63"
+        "en": "Article 52",
+        "ta": "உறுப்பு 52"
       },
       {
         "id": "C",
@@ -29,17 +29,17 @@
         "ta": "உறுப்பு 76"
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "A",
     "explanation_en": "Article 63 establishes the office of the Vice-President of India, designating it as the 2nd highest constitutional office in the country after the President (Art 52).",
     "explanation_ta": "உறுப்பு 63 இந்தியத் துணைக் குடியரசுத் தலைவர் பதவியை நிறுவுகிறது. இது நாட்டின் 2-வது உயர்ந்த அரசியலமைப்புப் பதவியாகும்.",
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Article 52 establishes the office of the President of India.",
-        "ta": "தவறு. உறுப்பு 52 இந்தியக் குடியரசுத் தலைவர் பதவியை நிறுவுகிறது."
-      },
-      "B": {
         "en": "Correct. Article 63 explicitly states that there shall be a Vice-President of India.",
         "ta": "சரி. உறுப்பு 63 துணைக் குடியரசுத் தலைவர் பதவியை அமைக்கிறது."
+      },
+      "B": {
+        "en": "Incorrect. Article 52 establishes the office of the President of India.",
+        "ta": "தவறு. உறுப்பு 52 இந்தியக் குடியரசுத் தலைவர் பதவியை நிறுவுகிறது."
       },
       "C": {
         "en": "Incorrect. Article 74 deals with the Council of Ministers to aid and advise the President.",
@@ -66,7 +66,36 @@
     },
     "source_reference": [
       "Vice-President Notes Part 1 - Article 63"
-    ]
+    ],
+    "explanation": {
+      "en": "Article 63 establishes the office of the Vice-President of India, designating it as the 2nd highest constitutional office in the country after the President (Art 52).",
+      "ta": "உறுப்பு 63 இந்தியத் துணைக் குடியரசுத் தலைவர் பதவியை நிறுவுகிறது. இது நாட்டின் 2-வது உயர்ந்த அரசியலமைப்புப் பதவியாகும்."
+    },
+    "question": {
+      "en": "Which Article of the Indian Constitution states that 'There shall be a Vice-President of India'?",
+      "ta": "'இந்தியாவிற்கு ஒரு துணைக் குடியரசுத் தலைவர் இருக்க வேண்டும்' என்று கூறும் இந்திய அரசியலமைப்பின் விதி எது?"
+    },
+    "options_en": [
+      "Article 63",
+      "Article 52",
+      "Article 74",
+      "Article 76"
+    ],
+    "options_ta": [
+      "உறுப்பு 63",
+      "உறுப்பு 52",
+      "உறுப்பு 74",
+      "உறுப்பு 76"
+    ],
+    "answer": "a",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Vice-President of India"
+    ],
+    "revision_fact": "Article 63 establishes the office of the Vice-President of India, designating it as the 2nd highest constitutional office in the country aft..."
   },
   {
     "id": "POLITY_VP_PYQ_002",
@@ -84,13 +113,13 @@
       },
       {
         "id": "B",
-        "en": "Speaker of Lok Sabha",
-        "ta": "மக்களவை சபாநாயகர்"
+        "en": "Vice-President of India",
+        "ta": "இந்தியத் துணைக் குடியரசுத் தலைவர்"
       },
       {
         "id": "C",
-        "en": "Vice-President of India",
-        "ta": "இந்தியத் துணைக் குடியரசுத் தலைவர்"
+        "en": "Speaker of Lok Sabha",
+        "ta": "மக்களவை சபாநாயகர்"
       },
       {
         "id": "D",
@@ -98,7 +127,7 @@
         "ta": "மத்திய சட்ட அமைச்சர்"
       }
     ],
-    "correct_answer": "C",
+    "correct_answer": "B",
     "explanation_en": "Under Article 64 and Article 89, the Vice-President of India is the Ex-Officio Chairman of the Council of States (Rajya Sabha).",
     "explanation_ta": "உறுப்பு 64 மற்றும் 89-ன் படி துணைக் குடியரசுத் தலைவர் மாநிலங்களவையின் பதவிவழித் தலைவராவார்.",
     "why_not_others": {
@@ -107,12 +136,12 @@
         "ta": "தவறு. பிரதமர் அவைத் தலைவர், அவைத் தலைவர் அல்ல."
       },
       "B": {
-        "en": "Incorrect. Speaker presides over Lok Sabha.",
-        "ta": "தவறு. சபாநாயகர் மக்களவையைத் தலைமை தாங்குபவர்."
-      },
-      "C": {
         "en": "Correct. The Vice-President is constitutionally designated as Ex-Officio Chairman of Rajya Sabha.",
         "ta": "சரி. துணைக் குடியரசுத் தலைவர் மாநிலங்களவையின் பதவிவழித் தலைவர்."
+      },
+      "C": {
+        "en": "Incorrect. Speaker presides over Lok Sabha.",
+        "ta": "தவறு. சபாநாயகர் மக்களவையைத் தலைமை தாங்குபவர்."
       },
       "D": {
         "en": "Incorrect. Union Law Minister has no presiding authority over Rajya Sabha.",
@@ -135,7 +164,36 @@
     },
     "source_reference": [
       "Vice-President Notes Part 1 - Article 64"
-    ]
+    ],
+    "explanation": {
+      "en": "Under Article 64 and Article 89, the Vice-President of India is the Ex-Officio Chairman of the Council of States (Rajya Sabha).",
+      "ta": "உறுப்பு 64 மற்றும் 89-ன் படி துணைக் குடியரசுத் தலைவர் மாநிலங்களவையின் பதவிவழித் தலைவராவார்."
+    },
+    "question": {
+      "en": "Who acts as the Ex-Officio Chairman of the Rajya Sabha under Article 64 of the Indian Constitution?",
+      "ta": "இந்திய அரசியலமைப்பின் உறுப்பு 64-ன் கீழ் மாநிலங்களவையின் பதவிவழித் தலைவராகச் செயல்படுபவர் யார்?"
+    },
+    "options_en": [
+      "Prime Minister of India",
+      "Vice-President of India",
+      "Speaker of Lok Sabha",
+      "Union Law Minister"
+    ],
+    "options_ta": [
+      "இந்தியப் பிரதமர்",
+      "இந்தியத் துணைக் குடியரசுத் தலைவர்",
+      "மக்களவை சபாநாயகர்",
+      "மத்திய சட்ட அமைச்சர்"
+    ],
+    "answer": "b",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Vice-President of India"
+    ],
+    "revision_fact": "Under Article 64 and Article 89, the Vice-President of India is the Ex-Officio Chairman of the Council of States (Rajya Sabha)."
   },
   {
     "id": "POLITY_VP_PYQ_003",
@@ -153,8 +211,8 @@
       },
       {
         "id": "B",
-        "en": "Both Elected and Nominated members of Parliament",
-        "ta": "நாடாளுமன்றத்தின் தேர்ந்தெடுக்கப்பட்ட மற்றும் நியமன உறுப்பினர்கள் இருவருமே"
+        "en": "Elected members of both Parliament and State Assemblies",
+        "ta": "நாடாளுமன்றம் மற்றும் மாநில சட்டமன்றத் தேர்ந்தெடுக்கப்பட்ட உறுப்பினர்கள்"
       },
       {
         "id": "C",
@@ -163,11 +221,11 @@
       },
       {
         "id": "D",
-        "en": "Elected members of both Parliament and State Assemblies",
-        "ta": "நாடாளுமன்றம் மற்றும் மாநில சட்டமன்றத் தேர்ந்தெடுக்கப்பட்ட உறுப்பினர்கள்"
+        "en": "Both Elected and Nominated members of Parliament",
+        "ta": "நாடாளுமன்றத்தின் தேர்ந்தெடுக்கப்பட்ட மற்றும் நியமன உறுப்பினர்கள் இருவருமே"
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "D",
     "explanation_en": "Under Article 66(1), the Vice-President's Electoral College consists of members of BOTH Houses of Parliament (Lok Sabha + Rajya Sabha), including BOTH ELECTED AND NOMINATED MPs. State MLAs do not vote.",
     "explanation_ta": "உறுப்பு 66(1)-ன் கீழ் துணைக் குடியரசுத் தலைவர் வாக்காளர் குழுவில் நாடாளுமன்றத்தின் இரு அவைகளின் தேர்ந்தெடுக்கப்பட்ட மற்றும் நியமன உறுப்பினர்கள் இருவருமே சேர்க்கப்பட்டுள்ளனர்.",
     "why_not_others": {
@@ -176,16 +234,16 @@
         "ta": "தவறு. நியமன எம்பிக்கள் VP தேர்தலில் வாக்களிப்பார்கள்."
       },
       "B": {
-        "en": "Correct. Both elected and nominated MPs of Parliament participate under Article 66(1).",
-        "ta": "சரி. தேர்ந்தெடுக்கப்பட்ட மற்றும் நியமன எம்பிக்கள் இருவருமே வாக்களிக்கலாம்."
+        "en": "Incorrect. State MLAs are included only in President election.",
+        "ta": "தவறு. மாநில எம்எல்ஏக்கள் குடியரசுத் தலைவர் தேர்தலில் மட்டுமே சேர்க்கப்படுவர்."
       },
       "C": {
         "en": "Incorrect. State MLAs do NOT participate in Vice-President election.",
         "ta": "தவறு. மாநில எம்எல்ஏக்கள் VP தேர்தலில் பங்கேற்பதில்லை."
       },
       "D": {
-        "en": "Incorrect. State MLAs are included only in President election.",
-        "ta": "தவறு. மாநில எம்எல்ஏக்கள் குடியரசுத் தலைவர் தேர்தலில் மட்டுமே சேர்க்கப்படுவர்."
+        "en": "Correct. Both elected and nominated MPs of Parliament participate under Article 66(1).",
+        "ta": "சரி. தேர்ந்தெடுக்கப்பட்ட மற்றும் நியமன எம்பிக்கள் இருவருமே வாக்களிக்கலாம்."
       }
     },
     "tnpsc_tip": {
@@ -204,7 +262,36 @@
     },
     "source_reference": [
       "Vice-President Notes Part 1 - Article 66(1)"
-    ]
+    ],
+    "explanation": {
+      "en": "Under Article 66(1), the Vice-President's Electoral College consists of members of BOTH Houses of Parliament (Lok Sabha + Rajya Sabha), including BOTH ELECTED AND NOMINATED MPs. State MLAs do not vote.",
+      "ta": "உறுப்பு 66(1)-ன் கீழ் துணைக் குடியரசுத் தலைவர் வாக்காளர் குழுவில் நாடாளுமன்றத்தின் இரு அவைகளின் தேர்ந்தெடுக்கப்பட்ட மற்றும் நியமன உறுப்பினர்கள் இருவருமே சேர்க்கப்பட்டுள்ளனர்."
+    },
+    "question": {
+      "en": "In the election of the Vice-President of India, which of the following categories of members are included under Article 66(1)?",
+      "ta": "இந்தியத் துணைக் குடியரசுத் தலைவர் தேர்தலில், உறுப்பு 66(1)-ன் கீழ் கீழ்க்கண்ட எந்தப் பிரிவு உறுப்பினர்கள் சேர்க்கப்பட்டுள்ளனர்?"
+    },
+    "options_en": [
+      "Elected members of Parliament only",
+      "Elected members of both Parliament and State Assemblies",
+      "Elected members of State Legislative Assemblies only",
+      "Both Elected and Nominated members of Parliament"
+    ],
+    "options_ta": [
+      "தேர்ந்தெடுக்கப்பட்ட நாடாளுமன்ற உறுப்பினர்கள் மட்டுமே",
+      "நாடாளுமன்றம் மற்றும் மாநில சட்டமன்றத் தேர்ந்தெடுக்கப்பட்ட உறுப்பினர்கள்",
+      "மாநில சட்டமன்றத் தேர்ந்தெடுக்கப்பட்ட உறுப்பினர்கள் மட்டுமே",
+      "நாடாளுமன்றத்தின் தேர்ந்தெடுக்கப்பட்ட மற்றும் நியமன உறுப்பினர்கள் இருவருமே"
+    ],
+    "answer": "d",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Vice-President of India"
+    ],
+    "revision_fact": "Under Article 66(1), the Vice-President's Electoral College consists of members of BOTH Houses of Parliament (Lok Sabha + Rajya Sabha), incl..."
   },
   {
     "id": "POLITY_VP_PYQ_004",
@@ -222,13 +309,13 @@
       },
       {
         "id": "B",
-        "en": "2 only",
-        "ta": "2 மட்டும்"
+        "en": "Both 1 and 2",
+        "ta": "1 மற்றும் 2 இருமே"
       },
       {
         "id": "C",
-        "en": "Both 1 and 2",
-        "ta": "1 மற்றும் 2 இருமே"
+        "en": "2 only",
+        "ta": "2 மட்டும்"
       },
       {
         "id": "D",
@@ -236,7 +323,7 @@
         "ta": "எதுவுமில்லை"
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "C",
     "explanation_en": "Statement 1 is INCORRECT (State MLAs do NOT participate in Vice-President election). Statement 2 is CORRECT (State MLCs do NOT participate in Vice-President election). Thus, 2 only is correct.",
     "explanation_ta": "கூற்று 1 தவறு (மாநில எம்எல்ஏக்கள் VP தேர்தலில் வாக்களிப்பதில்லை). கூற்று 2 சரி (மாநில மேலவை உறுப்பினர்கள் வாக்களிப்பதில்லை). எனவே 2 மட்டும் சரி.",
     "why_not_others": {
@@ -245,12 +332,12 @@
         "ta": "தவறு, ஏனெனில் கூற்று 1 தவறானது."
       },
       "B": {
-        "en": "Correct. Statement 2 is constitutionally true while Statement 1 is false.",
-        "ta": "சரி. கூற்று 2 சரியானது, கூற்று 1 தவறானது."
-      },
-      "C": {
         "en": "Incorrect because Statement 1 is false.",
         "ta": "தவறு, ஏனெனில் கூற்று 1 தவறானது."
+      },
+      "C": {
+        "en": "Correct. Statement 2 is constitutionally true while Statement 1 is false.",
+        "ta": "சரி. கூற்று 2 சரியானது, கூற்று 1 தவறானது."
       },
       "D": {
         "en": "Incorrect because Statement 2 is true.",
@@ -273,7 +360,36 @@
     },
     "source_reference": [
       "Vice-President Notes Part 1 - Article 66(1)"
-    ]
+    ],
+    "explanation": {
+      "en": "Statement 1 is INCORRECT (State MLAs do NOT participate in Vice-President election). Statement 2 is CORRECT (State MLCs do NOT participate in Vice-President election). Thus, 2 only is correct.",
+      "ta": "கூற்று 1 தவறு (மாநில எம்எல்ஏக்கள் VP தேர்தலில் வாக்களிப்பதில்லை). கூற்று 2 சரி (மாநில மேலவை உறுப்பினர்கள் வாக்களிப்பதில்லை). எனவே 2 மட்டும் சரி."
+    },
+    "question": {
+      "en": "Consider the following statements regarding the election of the Vice-President of India:\n1. State Legislative Assemblies (MLAs) take part in the voting.\n2. State Legislative Councils (MLCs) do not take part in the voting.\nWhich of the statement(s) given above is/are correct?",
+      "ta": "இந்தியத் துணைக் குடியரசுத் தலைவர் தேர்தல் தொடர்பான பின்வரும் கூற்றுகளை ஆராய்க:\n1. மாநில சட்டமன்ற உறுப்பினர்கள் (MLAs) வாக்கெடுப்பில் பங்கேற்கிறார்கள்.\n2. மாநில மேலவை உறுப்பினர்கள் (MLCs) வாக்கெடுப்பில் பங்கேற்பதில்லை.\nமேற்கண்ட கூற்றுகளில் எது/எவை சரியானவை?"
+    },
+    "options_en": [
+      "1 only",
+      "Both 1 and 2",
+      "2 only",
+      "Neither 1 nor 2"
+    ],
+    "options_ta": [
+      "1 மட்டும்",
+      "1 மற்றும் 2 இருமே",
+      "2 மட்டும்",
+      "எதுவுமில்லை"
+    ],
+    "answer": "c",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Vice-President of India"
+    ],
+    "revision_fact": "Statement 1 is INCORRECT (State MLAs do NOT participate in Vice-President election). Statement 2 is CORRECT (State MLCs do NOT participate i..."
   },
   {
     "id": "POLITY_VP_PYQ_005",
@@ -291,13 +407,13 @@
       },
       {
         "id": "B",
-        "en": "Equal vote value of 1 for every MP",
-        "ta": "ஒவ்வொரு எம்பிக்கும் சமமான வாக்கு மதிப்பு 1"
+        "en": "Higher for Rajya Sabha MPs than Lok Sabha MPs",
+        "ta": "மக்களவையை விட மாநிலங்களவை எம்பிக்களுக்கு அதிகம்"
       },
       {
         "id": "C",
-        "en": "Higher for Rajya Sabha MPs than Lok Sabha MPs",
-        "ta": "மக்களவையை விட மாநிலங்களவை எம்பிக்களுக்கு அதிகம்"
+        "en": "Equal vote value of 1 for every MP",
+        "ta": "ஒவ்வொரு எம்பிக்கும் சமமான வாக்கு மதிப்பு 1"
       },
       {
         "id": "D",
@@ -305,7 +421,7 @@
         "ta": "எம்பியின் மாநில அளவிற்கு ஏற்ப மாறுபடும்"
       }
     ],
-    "correct_answer": "B",
+    "correct_answer": "C",
     "explanation_en": "Unlike the Presidential election where MPs have population-weighted vote values (currently 700), in the Vice-Presidential election EVERY MP HAS AN EQUAL VOTE VALUE OF EXACTLY 1.",
     "explanation_ta": "குடியரசுத் தலைவர் தேர்தலைப் போலன்றி, துணைக் குடியரசுத் தலைவர் தேர்தலில் ஒவ்வொரு எம்பியின் வாக்கு மதிப்பும் சமமாக 1 ஆகும்.",
     "why_not_others": {
@@ -314,12 +430,12 @@
         "ta": "தவறு. மக்கள் தொகை சூத்திரம் குடியரசுத் தலைவர் தேர்தலுக்கு மட்டுமே பொருந்தும்."
       },
       "B": {
-        "en": "Correct. Every MP has an equal vote value of 1 in VP election.",
-        "ta": "சரி. VP தேர்தலில் ஒவ்வொரு எம்பியின் வாக்கு மதிப்பும் சமமாக 1 ஆகும்."
-      },
-      "C": {
         "en": "Incorrect. Lok Sabha and Rajya Sabha MPs have identical vote value.",
         "ta": "தவறு. மக்களவை மற்றும் மாநிலங்களவை எம்பிக்களுக்குச் சமமான வாக்கு மதிப்பு உண்டு."
+      },
+      "C": {
+        "en": "Correct. Every MP has an equal vote value of 1 in VP election.",
+        "ta": "சரி. VP தேர்தலில் ஒவ்வொரு எம்பியின் வாக்கு மதிப்பும் சமமாக 1 ஆகும்."
       },
       "D": {
         "en": "Incorrect. Vote value does not vary by state size in VP election.",
@@ -342,7 +458,36 @@
     },
     "source_reference": [
       "Vice-President Notes Part 1 - Vote Value Principle"
-    ]
+    ],
+    "explanation": {
+      "en": "Unlike the Presidential election where MPs have population-weighted vote values (currently 700), in the Vice-Presidential election EVERY MP HAS AN EQUAL VOTE VALUE OF EXACTLY 1.",
+      "ta": "குடியரசுத் தலைவர் தேர்தலைப் போலன்றி, துணைக் குடியரசுத் தலைவர் தேர்தலில் ஒவ்வொரு எம்பியின் வாக்கு மதிப்பும் சமமாக 1 ஆகும்."
+    },
+    "question": {
+      "en": "What is the value of vote of each Member of Parliament in the election of the Vice-President of India?",
+      "ta": "இந்தியத் துணைக் குடியரசுத் தலைவர் தேர்தலில் ஒவ்வொரு நாடாளுமன்ற உறுப்பினரின் வாக்கு மதிப்பு என்ன?"
+    },
+    "options_en": [
+      "Calculated based on 1971 Census population formula",
+      "Higher for Rajya Sabha MPs than Lok Sabha MPs",
+      "Equal vote value of 1 for every MP",
+      "Varies depending on the MP's state size"
+    ],
+    "options_ta": [
+      "1971 மக்கள் தொகை சூத்திரத்தின் மூலம் கணக்கிடப்படுகிறது",
+      "மக்களவையை விட மாநிலங்களவை எம்பிக்களுக்கு அதிகம்",
+      "ஒவ்வொரு எம்பிக்கும் சமமான வாக்கு மதிப்பு 1",
+      "எம்பியின் மாநில அளவிற்கு ஏற்ப மாறுபடும்"
+    ],
+    "answer": "c",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Vice-President of India"
+    ],
+    "revision_fact": "Unlike the Presidential election where MPs have population-weighted vote values (currently 700), in the Vice-Presidential election EVERY MP ..."
   },
   {
     "id": "POLITY_VP_PYQ_006",
@@ -355,13 +500,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Article 69 sets specific constitutional provisions governing Vice-President duties",
-        "ta": "உறுப்பு 69 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
+        "en": "Article 69 empowers Governor to override Vice-President decisions",
+        "ta": "உறுப்பு 69 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது"
       },
       {
         "id": "B",
-        "en": "Article 69 empowers Governor to override Vice-President decisions",
-        "ta": "உறுப்பு 69 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது"
+        "en": "Article 69 sets specific constitutional provisions governing Vice-President duties",
+        "ta": "உறுப்பு 69 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
       },
       {
         "id": "C",
@@ -374,17 +519,17 @@
         "ta": "உறுப்பு 69 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "B",
     "explanation_en": "Article 69 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
     "explanation_ta": "உறுப்பு 69 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 69.",
-        "ta": "சரி. தெரிவு A உறுப்பு 69-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
-      },
-      "B": {
         "en": "Incorrect. Governors have no authority over the Vice-President.",
         "ta": "தவறு. ஆளுநர்களுக்கு VP மீது எவ்வித அதிகாரமும் இல்லை."
+      },
+      "B": {
+        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 69.",
+        "ta": "சரி. தெரிவு A உறுப்பு 69-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
       },
       "C": {
         "en": "Incorrect. Emergency does not abolish the office of Vice-President.",
@@ -411,7 +556,36 @@
     },
     "source_reference": [
       "Vice-President Notes Part 1/2/3 - Article 69"
-    ]
+    ],
+    "explanation": {
+      "en": "Article 69 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
+      "ta": "உறுப்பு 69 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்."
+    },
+    "question": {
+      "en": "[PYQ Pattern Q6: Article 69] Which constitutional rule accurately defines the Vice-President's powers under Article 69?",
+      "ta": "[PYQ மாதிரி வினா 6: உறுப்பு 69] உறுப்பு 69-ன் கீழ் துணைக் குடியரசுத் தலைவர் அதிகாரங்களைச் சரியாக வரையறுக்கும் அரசியலமைப்பு விதி எது?"
+    },
+    "options_en": [
+      "Article 69 empowers Governor to override Vice-President decisions",
+      "Article 69 sets specific constitutional provisions governing Vice-President duties",
+      "Article 69 abolishes the office of Vice-President during emergency",
+      "Article 69 makes Vice-President subordinate to State Chief Ministers"
+    ],
+    "options_ta": [
+      "உறுப்பு 69 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது",
+      "உறுப்பு 69 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது",
+      "உறுப்பு 69 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது",
+      "உறுப்பு 69 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
+    ],
+    "answer": "b",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Vice-President of India"
+    ],
+    "revision_fact": "Article 69 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India."
   },
   {
     "id": "POLITY_VP_PYQ_007",
@@ -480,7 +654,36 @@
     },
     "source_reference": [
       "Vice-President Notes Part 1/2/3 - Article 70"
-    ]
+    ],
+    "explanation": {
+      "en": "Article 70 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
+      "ta": "உறுப்பு 70 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்."
+    },
+    "question": {
+      "en": "[PYQ Pattern Q7: Article 70] Which constitutional rule accurately defines the Vice-President's powers under Article 70?",
+      "ta": "[PYQ மாதிரி வினா 7: உறுப்பு 70] உறுப்பு 70-ன் கீழ் துணைக் குடியரசுத் தலைவர் அதிகாரங்களைச் சரியாக வரையறுக்கும் அரசியலமைப்பு விதி எது?"
+    },
+    "options_en": [
+      "Article 70 sets specific constitutional provisions governing Vice-President duties",
+      "Article 70 empowers Governor to override Vice-President decisions",
+      "Article 70 abolishes the office of Vice-President during emergency",
+      "Article 70 makes Vice-President subordinate to State Chief Ministers"
+    ],
+    "options_ta": [
+      "உறுப்பு 70 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது",
+      "உறுப்பு 70 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது",
+      "உறுப்பு 70 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது",
+      "உறுப்பு 70 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
+    ],
+    "answer": "a",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Vice-President of India"
+    ],
+    "revision_fact": "Article 70 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India."
   },
   {
     "id": "POLITY_VP_PYQ_008",
@@ -549,7 +752,36 @@
     },
     "source_reference": [
       "Vice-President Notes Part 1/2/3 - Article 71"
-    ]
+    ],
+    "explanation": {
+      "en": "Article 71 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
+      "ta": "உறுப்பு 71 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்."
+    },
+    "question": {
+      "en": "[PYQ Pattern Q8: Article 71] Which constitutional rule accurately defines the Vice-President's powers under Article 71?",
+      "ta": "[PYQ மாதிரி வினா 8: உறுப்பு 71] உறுப்பு 71-ன் கீழ் துணைக் குடியரசுத் தலைவர் அதிகாரங்களைச் சரியாக வரையறுக்கும் அரசியலமைப்பு விதி எது?"
+    },
+    "options_en": [
+      "Article 71 sets specific constitutional provisions governing Vice-President duties",
+      "Article 71 empowers Governor to override Vice-President decisions",
+      "Article 71 abolishes the office of Vice-President during emergency",
+      "Article 71 makes Vice-President subordinate to State Chief Ministers"
+    ],
+    "options_ta": [
+      "உறுப்பு 71 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது",
+      "உறுப்பு 71 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது",
+      "உறுப்பு 71 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது",
+      "உறுப்பு 71 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
+    ],
+    "answer": "a",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Vice-President of India"
+    ],
+    "revision_fact": "Article 71 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India."
   },
   {
     "id": "POLITY_VP_PYQ_009",
@@ -562,13 +794,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Article 63 sets specific constitutional provisions governing Vice-President duties",
-        "ta": "உறுப்பு 63 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
+        "en": "Article 63 empowers Governor to override Vice-President decisions",
+        "ta": "உறுப்பு 63 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது"
       },
       {
         "id": "B",
-        "en": "Article 63 empowers Governor to override Vice-President decisions",
-        "ta": "உறுப்பு 63 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது"
+        "en": "Article 63 sets specific constitutional provisions governing Vice-President duties",
+        "ta": "உறுப்பு 63 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
       },
       {
         "id": "C",
@@ -581,17 +813,17 @@
         "ta": "உறுப்பு 63 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "B",
     "explanation_en": "Article 63 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
     "explanation_ta": "உறுப்பு 63 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 63.",
-        "ta": "சரி. தெரிவு A உறுப்பு 63-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
-      },
-      "B": {
         "en": "Incorrect. Governors have no authority over the Vice-President.",
         "ta": "தவறு. ஆளுநர்களுக்கு VP மீது எவ்வித அதிகாரமும் இல்லை."
+      },
+      "B": {
+        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 63.",
+        "ta": "சரி. தெரிவு A உறுப்பு 63-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
       },
       "C": {
         "en": "Incorrect. Emergency does not abolish the office of Vice-President.",
@@ -618,7 +850,36 @@
     },
     "source_reference": [
       "Vice-President Notes Part 1/2/3 - Article 63"
-    ]
+    ],
+    "explanation": {
+      "en": "Article 63 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
+      "ta": "உறுப்பு 63 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்."
+    },
+    "question": {
+      "en": "[PYQ Pattern Q9: Article 63] Which constitutional rule accurately defines the Vice-President's powers under Article 63?",
+      "ta": "[PYQ மாதிரி வினா 9: உறுப்பு 63] உறுப்பு 63-ன் கீழ் துணைக் குடியரசுத் தலைவர் அதிகாரங்களைச் சரியாக வரையறுக்கும் அரசியலமைப்பு விதி எது?"
+    },
+    "options_en": [
+      "Article 63 empowers Governor to override Vice-President decisions",
+      "Article 63 sets specific constitutional provisions governing Vice-President duties",
+      "Article 63 abolishes the office of Vice-President during emergency",
+      "Article 63 makes Vice-President subordinate to State Chief Ministers"
+    ],
+    "options_ta": [
+      "உறுப்பு 63 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது",
+      "உறுப்பு 63 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது",
+      "உறுப்பு 63 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது",
+      "உறுப்பு 63 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
+    ],
+    "answer": "b",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Vice-President of India"
+    ],
+    "revision_fact": "Article 63 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India."
   },
   {
     "id": "POLITY_VP_PYQ_010",
@@ -631,8 +892,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Article 64 sets specific constitutional provisions governing Vice-President duties",
-        "ta": "உறுப்பு 64 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
+        "en": "Article 64 makes Vice-President subordinate to State Chief Ministers",
+        "ta": "உறுப்பு 64 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
       },
       {
         "id": "B",
@@ -646,17 +907,17 @@
       },
       {
         "id": "D",
-        "en": "Article 64 makes Vice-President subordinate to State Chief Ministers",
-        "ta": "உறுப்பு 64 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
+        "en": "Article 64 sets specific constitutional provisions governing Vice-President duties",
+        "ta": "உறுப்பு 64 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "D",
     "explanation_en": "Article 64 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
     "explanation_ta": "உறுப்பு 64 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 64.",
-        "ta": "சரி. தெரிவு A உறுப்பு 64-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
+        "en": "Incorrect. Vice-President is 2nd in Warrant of Precedence, above Chief Ministers.",
+        "ta": "தவறு. VP முன்னுரிமைப் வரிசையில் முதலமைச்சர்களுக்கு மேலான 2-வது இடத்தில் உள்ளார்."
       },
       "B": {
         "en": "Incorrect. Governors have no authority over the Vice-President.",
@@ -667,8 +928,8 @@
         "ta": "தவறு. அவசர நிலை VP பதவியை ரத்து செய்யாது."
       },
       "D": {
-        "en": "Incorrect. Vice-President is 2nd in Warrant of Precedence, above Chief Ministers.",
-        "ta": "தவறு. VP முன்னுரிமைப் வரிசையில் முதலமைச்சர்களுக்கு மேலான 2-வது இடத்தில் உள்ளார்."
+        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 64.",
+        "ta": "சரி. தெரிவு A உறுப்பு 64-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
       }
     },
     "tnpsc_tip": {
@@ -687,7 +948,36 @@
     },
     "source_reference": [
       "Vice-President Notes Part 1/2/3 - Article 64"
-    ]
+    ],
+    "explanation": {
+      "en": "Article 64 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
+      "ta": "உறுப்பு 64 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்."
+    },
+    "question": {
+      "en": "[PYQ Pattern Q10: Article 64] Which constitutional rule accurately defines the Vice-President's powers under Article 64?",
+      "ta": "[PYQ மாதிரி வினா 10: உறுப்பு 64] உறுப்பு 64-ன் கீழ் துணைக் குடியரசுத் தலைவர் அதிகாரங்களைச் சரியாக வரையறுக்கும் அரசியலமைப்பு விதி எது?"
+    },
+    "options_en": [
+      "Article 64 makes Vice-President subordinate to State Chief Ministers",
+      "Article 64 empowers Governor to override Vice-President decisions",
+      "Article 64 abolishes the office of Vice-President during emergency",
+      "Article 64 sets specific constitutional provisions governing Vice-President duties"
+    ],
+    "options_ta": [
+      "உறுப்பு 64 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது",
+      "உறுப்பு 64 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது",
+      "உறுப்பு 64 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது",
+      "உறுப்பு 64 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
+    ],
+    "answer": "d",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Vice-President of India"
+    ],
+    "revision_fact": "Article 64 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India."
   },
   {
     "id": "POLITY_VP_PYQ_011",
@@ -756,7 +1046,36 @@
     },
     "source_reference": [
       "Vice-President Notes Part 1/2/3 - Article 65"
-    ]
+    ],
+    "explanation": {
+      "en": "Article 65 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
+      "ta": "உறுப்பு 65 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்."
+    },
+    "question": {
+      "en": "[PYQ Pattern Q11: Article 65] Which constitutional rule accurately defines the Vice-President's powers under Article 65?",
+      "ta": "[PYQ மாதிரி வினா 11: உறுப்பு 65] உறுப்பு 65-ன் கீழ் துணைக் குடியரசுத் தலைவர் அதிகாரங்களைச் சரியாக வரையறுக்கும் அரசியலமைப்பு விதி எது?"
+    },
+    "options_en": [
+      "Article 65 sets specific constitutional provisions governing Vice-President duties",
+      "Article 65 empowers Governor to override Vice-President decisions",
+      "Article 65 abolishes the office of Vice-President during emergency",
+      "Article 65 makes Vice-President subordinate to State Chief Ministers"
+    ],
+    "options_ta": [
+      "உறுப்பு 65 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது",
+      "உறுப்பு 65 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது",
+      "உறுப்பு 65 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது",
+      "உறுப்பு 65 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
+    ],
+    "answer": "a",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Vice-President of India"
+    ],
+    "revision_fact": "Article 65 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India."
   },
   {
     "id": "POLITY_VP_PYQ_012",
@@ -825,7 +1144,36 @@
     },
     "source_reference": [
       "Vice-President Notes Part 1/2/3 - Article 66"
-    ]
+    ],
+    "explanation": {
+      "en": "Article 66 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
+      "ta": "உறுப்பு 66 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்."
+    },
+    "question": {
+      "en": "[PYQ Pattern Q12: Article 66] Which constitutional rule accurately defines the Vice-President's powers under Article 66?",
+      "ta": "[PYQ மாதிரி வினா 12: உறுப்பு 66] உறுப்பு 66-ன் கீழ் துணைக் குடியரசுத் தலைவர் அதிகாரங்களைச் சரியாக வரையறுக்கும் அரசியலமைப்பு விதி எது?"
+    },
+    "options_en": [
+      "Article 66 sets specific constitutional provisions governing Vice-President duties",
+      "Article 66 empowers Governor to override Vice-President decisions",
+      "Article 66 abolishes the office of Vice-President during emergency",
+      "Article 66 makes Vice-President subordinate to State Chief Ministers"
+    ],
+    "options_ta": [
+      "உறுப்பு 66 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது",
+      "உறுப்பு 66 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது",
+      "உறுப்பு 66 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது",
+      "உறுப்பு 66 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
+    ],
+    "answer": "a",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Vice-President of India"
+    ],
+    "revision_fact": "Article 66 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India."
   },
   {
     "id": "POLITY_VP_PYQ_013",
@@ -838,8 +1186,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Article 67 sets specific constitutional provisions governing Vice-President duties",
-        "ta": "உறுப்பு 67 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
+        "en": "Article 67 abolishes the office of Vice-President during emergency",
+        "ta": "உறுப்பு 67 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது"
       },
       {
         "id": "B",
@@ -848,8 +1196,8 @@
       },
       {
         "id": "C",
-        "en": "Article 67 abolishes the office of Vice-President during emergency",
-        "ta": "உறுப்பு 67 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது"
+        "en": "Article 67 sets specific constitutional provisions governing Vice-President duties",
+        "ta": "உறுப்பு 67 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
       },
       {
         "id": "D",
@@ -857,21 +1205,21 @@
         "ta": "உறுப்பு 67 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "C",
     "explanation_en": "Article 67 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
     "explanation_ta": "உறுப்பு 67 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 67.",
-        "ta": "சரி. தெரிவு A உறுப்பு 67-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
+        "en": "Incorrect. Emergency does not abolish the office of Vice-President.",
+        "ta": "தவறு. அவசர நிலை VP பதவியை ரத்து செய்யாது."
       },
       "B": {
         "en": "Incorrect. Governors have no authority over the Vice-President.",
         "ta": "தவறு. ஆளுநர்களுக்கு VP மீது எவ்வித அதிகாரமும் இல்லை."
       },
       "C": {
-        "en": "Incorrect. Emergency does not abolish the office of Vice-President.",
-        "ta": "தவறு. அவசர நிலை VP பதவியை ரத்து செய்யாது."
+        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 67.",
+        "ta": "சரி. தெரிவு A உறுப்பு 67-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
       },
       "D": {
         "en": "Incorrect. Vice-President is 2nd in Warrant of Precedence, above Chief Ministers.",
@@ -894,7 +1242,36 @@
     },
     "source_reference": [
       "Vice-President Notes Part 1/2/3 - Article 67"
-    ]
+    ],
+    "explanation": {
+      "en": "Article 67 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
+      "ta": "உறுப்பு 67 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்."
+    },
+    "question": {
+      "en": "[PYQ Pattern Q13: Article 67] Which constitutional rule accurately defines the Vice-President's powers under Article 67?",
+      "ta": "[PYQ மாதிரி வினா 13: உறுப்பு 67] உறுப்பு 67-ன் கீழ் துணைக் குடியரசுத் தலைவர் அதிகாரங்களைச் சரியாக வரையறுக்கும் அரசியலமைப்பு விதி எது?"
+    },
+    "options_en": [
+      "Article 67 abolishes the office of Vice-President during emergency",
+      "Article 67 empowers Governor to override Vice-President decisions",
+      "Article 67 sets specific constitutional provisions governing Vice-President duties",
+      "Article 67 makes Vice-President subordinate to State Chief Ministers"
+    ],
+    "options_ta": [
+      "உறுப்பு 67 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது",
+      "உறுப்பு 67 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது",
+      "உறுப்பு 67 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது",
+      "உறுப்பு 67 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
+    ],
+    "answer": "c",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Vice-President of India"
+    ],
+    "revision_fact": "Article 67 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India."
   },
   {
     "id": "POLITY_VP_PYQ_014",
@@ -907,13 +1284,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Article 68 sets specific constitutional provisions governing Vice-President duties",
-        "ta": "உறுப்பு 68 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
+        "en": "Article 68 empowers Governor to override Vice-President decisions",
+        "ta": "உறுப்பு 68 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது"
       },
       {
         "id": "B",
-        "en": "Article 68 empowers Governor to override Vice-President decisions",
-        "ta": "உறுப்பு 68 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது"
+        "en": "Article 68 sets specific constitutional provisions governing Vice-President duties",
+        "ta": "உறுப்பு 68 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
       },
       {
         "id": "C",
@@ -926,17 +1303,17 @@
         "ta": "உறுப்பு 68 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "B",
     "explanation_en": "Article 68 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
     "explanation_ta": "உறுப்பு 68 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 68.",
-        "ta": "சரி. தெரிவு A உறுப்பு 68-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
-      },
-      "B": {
         "en": "Incorrect. Governors have no authority over the Vice-President.",
         "ta": "தவறு. ஆளுநர்களுக்கு VP மீது எவ்வித அதிகாரமும் இல்லை."
+      },
+      "B": {
+        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 68.",
+        "ta": "சரி. தெரிவு A உறுப்பு 68-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
       },
       "C": {
         "en": "Incorrect. Emergency does not abolish the office of Vice-President.",
@@ -963,7 +1340,36 @@
     },
     "source_reference": [
       "Vice-President Notes Part 1/2/3 - Article 68"
-    ]
+    ],
+    "explanation": {
+      "en": "Article 68 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
+      "ta": "உறுப்பு 68 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்."
+    },
+    "question": {
+      "en": "[PYQ Pattern Q14: Article 68] Which constitutional rule accurately defines the Vice-President's powers under Article 68?",
+      "ta": "[PYQ மாதிரி வினா 14: உறுப்பு 68] உறுப்பு 68-ன் கீழ் துணைக் குடியரசுத் தலைவர் அதிகாரங்களைச் சரியாக வரையறுக்கும் அரசியலமைப்பு விதி எது?"
+    },
+    "options_en": [
+      "Article 68 empowers Governor to override Vice-President decisions",
+      "Article 68 sets specific constitutional provisions governing Vice-President duties",
+      "Article 68 abolishes the office of Vice-President during emergency",
+      "Article 68 makes Vice-President subordinate to State Chief Ministers"
+    ],
+    "options_ta": [
+      "உறுப்பு 68 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது",
+      "உறுப்பு 68 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது",
+      "உறுப்பு 68 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது",
+      "உறுப்பு 68 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
+    ],
+    "answer": "b",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Vice-President of India"
+    ],
+    "revision_fact": "Article 68 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India."
   },
   {
     "id": "POLITY_VP_PYQ_015",
@@ -1032,7 +1438,36 @@
     },
     "source_reference": [
       "Vice-President Notes Part 1/2/3 - Article 69"
-    ]
+    ],
+    "explanation": {
+      "en": "Article 69 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
+      "ta": "உறுப்பு 69 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்."
+    },
+    "question": {
+      "en": "[PYQ Pattern Q15: Article 69] Which constitutional rule accurately defines the Vice-President's powers under Article 69?",
+      "ta": "[PYQ மாதிரி வினா 15: உறுப்பு 69] உறுப்பு 69-ன் கீழ் துணைக் குடியரசுத் தலைவர் அதிகாரங்களைச் சரியாக வரையறுக்கும் அரசியலமைப்பு விதி எது?"
+    },
+    "options_en": [
+      "Article 69 sets specific constitutional provisions governing Vice-President duties",
+      "Article 69 empowers Governor to override Vice-President decisions",
+      "Article 69 abolishes the office of Vice-President during emergency",
+      "Article 69 makes Vice-President subordinate to State Chief Ministers"
+    ],
+    "options_ta": [
+      "உறுப்பு 69 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது",
+      "உறுப்பு 69 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது",
+      "உறுப்பு 69 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது",
+      "உறுப்பு 69 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
+    ],
+    "answer": "a",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Vice-President of India"
+    ],
+    "revision_fact": "Article 69 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India."
   },
   {
     "id": "POLITY_VP_PYQ_016",
@@ -1045,13 +1480,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Article 70 sets specific constitutional provisions governing Vice-President duties",
-        "ta": "உறுப்பு 70 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
+        "en": "Article 70 empowers Governor to override Vice-President decisions",
+        "ta": "உறுப்பு 70 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது"
       },
       {
         "id": "B",
-        "en": "Article 70 empowers Governor to override Vice-President decisions",
-        "ta": "உறுப்பு 70 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது"
+        "en": "Article 70 sets specific constitutional provisions governing Vice-President duties",
+        "ta": "உறுப்பு 70 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
       },
       {
         "id": "C",
@@ -1064,17 +1499,17 @@
         "ta": "உறுப்பு 70 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "B",
     "explanation_en": "Article 70 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
     "explanation_ta": "உறுப்பு 70 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 70.",
-        "ta": "சரி. தெரிவு A உறுப்பு 70-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
-      },
-      "B": {
         "en": "Incorrect. Governors have no authority over the Vice-President.",
         "ta": "தவறு. ஆளுநர்களுக்கு VP மீது எவ்வித அதிகாரமும் இல்லை."
+      },
+      "B": {
+        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 70.",
+        "ta": "சரி. தெரிவு A உறுப்பு 70-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
       },
       "C": {
         "en": "Incorrect. Emergency does not abolish the office of Vice-President.",
@@ -1101,7 +1536,36 @@
     },
     "source_reference": [
       "Vice-President Notes Part 1/2/3 - Article 70"
-    ]
+    ],
+    "explanation": {
+      "en": "Article 70 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
+      "ta": "உறுப்பு 70 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்."
+    },
+    "question": {
+      "en": "[PYQ Pattern Q16: Article 70] Which constitutional rule accurately defines the Vice-President's powers under Article 70?",
+      "ta": "[PYQ மாதிரி வினா 16: உறுப்பு 70] உறுப்பு 70-ன் கீழ் துணைக் குடியரசுத் தலைவர் அதிகாரங்களைச் சரியாக வரையறுக்கும் அரசியலமைப்பு விதி எது?"
+    },
+    "options_en": [
+      "Article 70 empowers Governor to override Vice-President decisions",
+      "Article 70 sets specific constitutional provisions governing Vice-President duties",
+      "Article 70 abolishes the office of Vice-President during emergency",
+      "Article 70 makes Vice-President subordinate to State Chief Ministers"
+    ],
+    "options_ta": [
+      "உறுப்பு 70 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது",
+      "உறுப்பு 70 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது",
+      "உறுப்பு 70 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது",
+      "உறுப்பு 70 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
+    ],
+    "answer": "b",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Vice-President of India"
+    ],
+    "revision_fact": "Article 70 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India."
   },
   {
     "id": "POLITY_VP_PYQ_017",
@@ -1114,13 +1578,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Article 71 sets specific constitutional provisions governing Vice-President duties",
-        "ta": "உறுப்பு 71 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
+        "en": "Article 71 empowers Governor to override Vice-President decisions",
+        "ta": "உறுப்பு 71 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது"
       },
       {
         "id": "B",
-        "en": "Article 71 empowers Governor to override Vice-President decisions",
-        "ta": "உறுப்பு 71 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது"
+        "en": "Article 71 sets specific constitutional provisions governing Vice-President duties",
+        "ta": "உறுப்பு 71 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
       },
       {
         "id": "C",
@@ -1133,17 +1597,17 @@
         "ta": "உறுப்பு 71 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "B",
     "explanation_en": "Article 71 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
     "explanation_ta": "உறுப்பு 71 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 71.",
-        "ta": "சரி. தெரிவு A உறுப்பு 71-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
-      },
-      "B": {
         "en": "Incorrect. Governors have no authority over the Vice-President.",
         "ta": "தவறு. ஆளுநர்களுக்கு VP மீது எவ்வித அதிகாரமும் இல்லை."
+      },
+      "B": {
+        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 71.",
+        "ta": "சரி. தெரிவு A உறுப்பு 71-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
       },
       "C": {
         "en": "Incorrect. Emergency does not abolish the office of Vice-President.",
@@ -1170,7 +1634,36 @@
     },
     "source_reference": [
       "Vice-President Notes Part 1/2/3 - Article 71"
-    ]
+    ],
+    "explanation": {
+      "en": "Article 71 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
+      "ta": "உறுப்பு 71 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்."
+    },
+    "question": {
+      "en": "[PYQ Pattern Q17: Article 71] Which constitutional rule accurately defines the Vice-President's powers under Article 71?",
+      "ta": "[PYQ மாதிரி வினா 17: உறுப்பு 71] உறுப்பு 71-ன் கீழ் துணைக் குடியரசுத் தலைவர் அதிகாரங்களைச் சரியாக வரையறுக்கும் அரசியலமைப்பு விதி எது?"
+    },
+    "options_en": [
+      "Article 71 empowers Governor to override Vice-President decisions",
+      "Article 71 sets specific constitutional provisions governing Vice-President duties",
+      "Article 71 abolishes the office of Vice-President during emergency",
+      "Article 71 makes Vice-President subordinate to State Chief Ministers"
+    ],
+    "options_ta": [
+      "உறுப்பு 71 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது",
+      "உறுப்பு 71 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது",
+      "உறுப்பு 71 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது",
+      "உறுப்பு 71 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
+    ],
+    "answer": "b",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Vice-President of India"
+    ],
+    "revision_fact": "Article 71 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India."
   },
   {
     "id": "POLITY_VP_PYQ_018",
@@ -1183,8 +1676,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Article 63 sets specific constitutional provisions governing Vice-President duties",
-        "ta": "உறுப்பு 63 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
+        "en": "Article 63 makes Vice-President subordinate to State Chief Ministers",
+        "ta": "உறுப்பு 63 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
       },
       {
         "id": "B",
@@ -1198,17 +1691,17 @@
       },
       {
         "id": "D",
-        "en": "Article 63 makes Vice-President subordinate to State Chief Ministers",
-        "ta": "உறுப்பு 63 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
+        "en": "Article 63 sets specific constitutional provisions governing Vice-President duties",
+        "ta": "உறுப்பு 63 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "D",
     "explanation_en": "Article 63 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
     "explanation_ta": "உறுப்பு 63 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 63.",
-        "ta": "சரி. தெரிவு A உறுப்பு 63-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
+        "en": "Incorrect. Vice-President is 2nd in Warrant of Precedence, above Chief Ministers.",
+        "ta": "தவறு. VP முன்னுரிமைப் வரிசையில் முதலமைச்சர்களுக்கு மேலான 2-வது இடத்தில் உள்ளார்."
       },
       "B": {
         "en": "Incorrect. Governors have no authority over the Vice-President.",
@@ -1219,8 +1712,8 @@
         "ta": "தவறு. அவசர நிலை VP பதவியை ரத்து செய்யாது."
       },
       "D": {
-        "en": "Incorrect. Vice-President is 2nd in Warrant of Precedence, above Chief Ministers.",
-        "ta": "தவறு. VP முன்னுரிமைப் வரிசையில் முதலமைச்சர்களுக்கு மேலான 2-வது இடத்தில் உள்ளார்."
+        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 63.",
+        "ta": "சரி. தெரிவு A உறுப்பு 63-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
       }
     },
     "tnpsc_tip": {
@@ -1239,7 +1732,36 @@
     },
     "source_reference": [
       "Vice-President Notes Part 1/2/3 - Article 63"
-    ]
+    ],
+    "explanation": {
+      "en": "Article 63 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
+      "ta": "உறுப்பு 63 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்."
+    },
+    "question": {
+      "en": "[PYQ Pattern Q18: Article 63] Which constitutional rule accurately defines the Vice-President's powers under Article 63?",
+      "ta": "[PYQ மாதிரி வினா 18: உறுப்பு 63] உறுப்பு 63-ன் கீழ் துணைக் குடியரசுத் தலைவர் அதிகாரங்களைச் சரியாக வரையறுக்கும் அரசியலமைப்பு விதி எது?"
+    },
+    "options_en": [
+      "Article 63 makes Vice-President subordinate to State Chief Ministers",
+      "Article 63 empowers Governor to override Vice-President decisions",
+      "Article 63 abolishes the office of Vice-President during emergency",
+      "Article 63 sets specific constitutional provisions governing Vice-President duties"
+    ],
+    "options_ta": [
+      "உறுப்பு 63 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது",
+      "உறுப்பு 63 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது",
+      "உறுப்பு 63 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது",
+      "உறுப்பு 63 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
+    ],
+    "answer": "d",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Vice-President of India"
+    ],
+    "revision_fact": "Article 63 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India."
   },
   {
     "id": "POLITY_VP_PYQ_019",
@@ -1252,13 +1774,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Article 64 sets specific constitutional provisions governing Vice-President duties",
-        "ta": "உறுப்பு 64 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
+        "en": "Article 64 empowers Governor to override Vice-President decisions",
+        "ta": "உறுப்பு 64 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது"
       },
       {
         "id": "B",
-        "en": "Article 64 empowers Governor to override Vice-President decisions",
-        "ta": "உறுப்பு 64 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது"
+        "en": "Article 64 sets specific constitutional provisions governing Vice-President duties",
+        "ta": "உறுப்பு 64 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
       },
       {
         "id": "C",
@@ -1271,17 +1793,17 @@
         "ta": "உறுப்பு 64 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "B",
     "explanation_en": "Article 64 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
     "explanation_ta": "உறுப்பு 64 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 64.",
-        "ta": "சரி. தெரிவு A உறுப்பு 64-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
-      },
-      "B": {
         "en": "Incorrect. Governors have no authority over the Vice-President.",
         "ta": "தவறு. ஆளுநர்களுக்கு VP மீது எவ்வித அதிகாரமும் இல்லை."
+      },
+      "B": {
+        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 64.",
+        "ta": "சரி. தெரிவு A உறுப்பு 64-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
       },
       "C": {
         "en": "Incorrect. Emergency does not abolish the office of Vice-President.",
@@ -1308,7 +1830,36 @@
     },
     "source_reference": [
       "Vice-President Notes Part 1/2/3 - Article 64"
-    ]
+    ],
+    "explanation": {
+      "en": "Article 64 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
+      "ta": "உறுப்பு 64 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்."
+    },
+    "question": {
+      "en": "[PYQ Pattern Q19: Article 64] Which constitutional rule accurately defines the Vice-President's powers under Article 64?",
+      "ta": "[PYQ மாதிரி வினா 19: உறுப்பு 64] உறுப்பு 64-ன் கீழ் துணைக் குடியரசுத் தலைவர் அதிகாரங்களைச் சரியாக வரையறுக்கும் அரசியலமைப்பு விதி எது?"
+    },
+    "options_en": [
+      "Article 64 empowers Governor to override Vice-President decisions",
+      "Article 64 sets specific constitutional provisions governing Vice-President duties",
+      "Article 64 abolishes the office of Vice-President during emergency",
+      "Article 64 makes Vice-President subordinate to State Chief Ministers"
+    ],
+    "options_ta": [
+      "உறுப்பு 64 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது",
+      "உறுப்பு 64 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது",
+      "உறுப்பு 64 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது",
+      "உறுப்பு 64 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
+    ],
+    "answer": "b",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Vice-President of India"
+    ],
+    "revision_fact": "Article 64 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India."
   },
   {
     "id": "POLITY_VP_PYQ_020",
@@ -1321,13 +1872,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Article 65 sets specific constitutional provisions governing Vice-President duties",
-        "ta": "உறுப்பு 65 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
+        "en": "Article 65 empowers Governor to override Vice-President decisions",
+        "ta": "உறுப்பு 65 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது"
       },
       {
         "id": "B",
-        "en": "Article 65 empowers Governor to override Vice-President decisions",
-        "ta": "உறுப்பு 65 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது"
+        "en": "Article 65 sets specific constitutional provisions governing Vice-President duties",
+        "ta": "உறுப்பு 65 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
       },
       {
         "id": "C",
@@ -1340,17 +1891,17 @@
         "ta": "உறுப்பு 65 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "B",
     "explanation_en": "Article 65 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
     "explanation_ta": "உறுப்பு 65 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 65.",
-        "ta": "சரி. தெரிவு A உறுப்பு 65-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
-      },
-      "B": {
         "en": "Incorrect. Governors have no authority over the Vice-President.",
         "ta": "தவறு. ஆளுநர்களுக்கு VP மீது எவ்வித அதிகாரமும் இல்லை."
+      },
+      "B": {
+        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 65.",
+        "ta": "சரி. தெரிவு A உறுப்பு 65-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
       },
       "C": {
         "en": "Incorrect. Emergency does not abolish the office of Vice-President.",
@@ -1377,7 +1928,36 @@
     },
     "source_reference": [
       "Vice-President Notes Part 1/2/3 - Article 65"
-    ]
+    ],
+    "explanation": {
+      "en": "Article 65 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
+      "ta": "உறுப்பு 65 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்."
+    },
+    "question": {
+      "en": "[PYQ Pattern Q20: Article 65] Which constitutional rule accurately defines the Vice-President's powers under Article 65?",
+      "ta": "[PYQ மாதிரி வினா 20: உறுப்பு 65] உறுப்பு 65-ன் கீழ் துணைக் குடியரசுத் தலைவர் அதிகாரங்களைச் சரியாக வரையறுக்கும் அரசியலமைப்பு விதி எது?"
+    },
+    "options_en": [
+      "Article 65 empowers Governor to override Vice-President decisions",
+      "Article 65 sets specific constitutional provisions governing Vice-President duties",
+      "Article 65 abolishes the office of Vice-President during emergency",
+      "Article 65 makes Vice-President subordinate to State Chief Ministers"
+    ],
+    "options_ta": [
+      "உறுப்பு 65 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது",
+      "உறுப்பு 65 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது",
+      "உறுப்பு 65 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது",
+      "உறுப்பு 65 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
+    ],
+    "answer": "b",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Vice-President of India"
+    ],
+    "revision_fact": "Article 65 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India."
   },
   {
     "id": "POLITY_VP_PYQ_021",
@@ -1390,8 +1970,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Article 66 sets specific constitutional provisions governing Vice-President duties",
-        "ta": "உறுப்பு 66 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
+        "en": "Article 66 abolishes the office of Vice-President during emergency",
+        "ta": "உறுப்பு 66 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது"
       },
       {
         "id": "B",
@@ -1400,8 +1980,8 @@
       },
       {
         "id": "C",
-        "en": "Article 66 abolishes the office of Vice-President during emergency",
-        "ta": "உறுப்பு 66 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது"
+        "en": "Article 66 sets specific constitutional provisions governing Vice-President duties",
+        "ta": "உறுப்பு 66 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
       },
       {
         "id": "D",
@@ -1409,21 +1989,21 @@
         "ta": "உறுப்பு 66 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "C",
     "explanation_en": "Article 66 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
     "explanation_ta": "உறுப்பு 66 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 66.",
-        "ta": "சரி. தெரிவு A உறுப்பு 66-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
+        "en": "Incorrect. Emergency does not abolish the office of Vice-President.",
+        "ta": "தவறு. அவசர நிலை VP பதவியை ரத்து செய்யாது."
       },
       "B": {
         "en": "Incorrect. Governors have no authority over the Vice-President.",
         "ta": "தவறு. ஆளுநர்களுக்கு VP மீது எவ்வித அதிகாரமும் இல்லை."
       },
       "C": {
-        "en": "Incorrect. Emergency does not abolish the office of Vice-President.",
-        "ta": "தவறு. அவசர நிலை VP பதவியை ரத்து செய்யாது."
+        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 66.",
+        "ta": "சரி. தெரிவு A உறுப்பு 66-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
       },
       "D": {
         "en": "Incorrect. Vice-President is 2nd in Warrant of Precedence, above Chief Ministers.",
@@ -1446,7 +2026,36 @@
     },
     "source_reference": [
       "Vice-President Notes Part 1/2/3 - Article 66"
-    ]
+    ],
+    "explanation": {
+      "en": "Article 66 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
+      "ta": "உறுப்பு 66 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்."
+    },
+    "question": {
+      "en": "[PYQ Pattern Q21: Article 66] Which constitutional rule accurately defines the Vice-President's powers under Article 66?",
+      "ta": "[PYQ மாதிரி வினா 21: உறுப்பு 66] உறுப்பு 66-ன் கீழ் துணைக் குடியரசுத் தலைவர் அதிகாரங்களைச் சரியாக வரையறுக்கும் அரசியலமைப்பு விதி எது?"
+    },
+    "options_en": [
+      "Article 66 abolishes the office of Vice-President during emergency",
+      "Article 66 empowers Governor to override Vice-President decisions",
+      "Article 66 sets specific constitutional provisions governing Vice-President duties",
+      "Article 66 makes Vice-President subordinate to State Chief Ministers"
+    ],
+    "options_ta": [
+      "உறுப்பு 66 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது",
+      "உறுப்பு 66 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது",
+      "உறுப்பு 66 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது",
+      "உறுப்பு 66 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
+    ],
+    "answer": "c",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Vice-President of India"
+    ],
+    "revision_fact": "Article 66 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India."
   },
   {
     "id": "POLITY_VP_PYQ_022",
@@ -1459,8 +2068,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Article 67 sets specific constitutional provisions governing Vice-President duties",
-        "ta": "உறுப்பு 67 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
+        "en": "Article 67 makes Vice-President subordinate to State Chief Ministers",
+        "ta": "உறுப்பு 67 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
       },
       {
         "id": "B",
@@ -1474,17 +2083,17 @@
       },
       {
         "id": "D",
-        "en": "Article 67 makes Vice-President subordinate to State Chief Ministers",
-        "ta": "உறுப்பு 67 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
+        "en": "Article 67 sets specific constitutional provisions governing Vice-President duties",
+        "ta": "உறுப்பு 67 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "D",
     "explanation_en": "Article 67 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
     "explanation_ta": "உறுப்பு 67 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 67.",
-        "ta": "சரி. தெரிவு A உறுப்பு 67-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
+        "en": "Incorrect. Vice-President is 2nd in Warrant of Precedence, above Chief Ministers.",
+        "ta": "தவறு. VP முன்னுரிமைப் வரிசையில் முதலமைச்சர்களுக்கு மேலான 2-வது இடத்தில் உள்ளார்."
       },
       "B": {
         "en": "Incorrect. Governors have no authority over the Vice-President.",
@@ -1495,8 +2104,8 @@
         "ta": "தவறு. அவசர நிலை VP பதவியை ரத்து செய்யாது."
       },
       "D": {
-        "en": "Incorrect. Vice-President is 2nd in Warrant of Precedence, above Chief Ministers.",
-        "ta": "தவறு. VP முன்னுரிமைப் வரிசையில் முதலமைச்சர்களுக்கு மேலான 2-வது இடத்தில் உள்ளார்."
+        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 67.",
+        "ta": "சரி. தெரிவு A உறுப்பு 67-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
       }
     },
     "tnpsc_tip": {
@@ -1515,7 +2124,36 @@
     },
     "source_reference": [
       "Vice-President Notes Part 1/2/3 - Article 67"
-    ]
+    ],
+    "explanation": {
+      "en": "Article 67 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
+      "ta": "உறுப்பு 67 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்."
+    },
+    "question": {
+      "en": "[PYQ Pattern Q22: Article 67] Which constitutional rule accurately defines the Vice-President's powers under Article 67?",
+      "ta": "[PYQ மாதிரி வினா 22: உறுப்பு 67] உறுப்பு 67-ன் கீழ் துணைக் குடியரசுத் தலைவர் அதிகாரங்களைச் சரியாக வரையறுக்கும் அரசியலமைப்பு விதி எது?"
+    },
+    "options_en": [
+      "Article 67 makes Vice-President subordinate to State Chief Ministers",
+      "Article 67 empowers Governor to override Vice-President decisions",
+      "Article 67 abolishes the office of Vice-President during emergency",
+      "Article 67 sets specific constitutional provisions governing Vice-President duties"
+    ],
+    "options_ta": [
+      "உறுப்பு 67 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது",
+      "உறுப்பு 67 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது",
+      "உறுப்பு 67 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது",
+      "உறுப்பு 67 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
+    ],
+    "answer": "d",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Vice-President of India"
+    ],
+    "revision_fact": "Article 67 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India."
   },
   {
     "id": "POLITY_VP_PYQ_023",
@@ -1528,8 +2166,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Article 68 sets specific constitutional provisions governing Vice-President duties",
-        "ta": "உறுப்பு 68 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
+        "en": "Article 68 makes Vice-President subordinate to State Chief Ministers",
+        "ta": "உறுப்பு 68 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
       },
       {
         "id": "B",
@@ -1543,17 +2181,17 @@
       },
       {
         "id": "D",
-        "en": "Article 68 makes Vice-President subordinate to State Chief Ministers",
-        "ta": "உறுப்பு 68 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
+        "en": "Article 68 sets specific constitutional provisions governing Vice-President duties",
+        "ta": "உறுப்பு 68 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "D",
     "explanation_en": "Article 68 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
     "explanation_ta": "உறுப்பு 68 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 68.",
-        "ta": "சரி. தெரிவு A உறுப்பு 68-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
+        "en": "Incorrect. Vice-President is 2nd in Warrant of Precedence, above Chief Ministers.",
+        "ta": "தவறு. VP முன்னுரிமைப் வரிசையில் முதலமைச்சர்களுக்கு மேலான 2-வது இடத்தில் உள்ளார்."
       },
       "B": {
         "en": "Incorrect. Governors have no authority over the Vice-President.",
@@ -1564,8 +2202,8 @@
         "ta": "தவறு. அவசர நிலை VP பதவியை ரத்து செய்யாது."
       },
       "D": {
-        "en": "Incorrect. Vice-President is 2nd in Warrant of Precedence, above Chief Ministers.",
-        "ta": "தவறு. VP முன்னுரிமைப் வரிசையில் முதலமைச்சர்களுக்கு மேலான 2-வது இடத்தில் உள்ளார்."
+        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 68.",
+        "ta": "சரி. தெரிவு A உறுப்பு 68-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
       }
     },
     "tnpsc_tip": {
@@ -1584,7 +2222,36 @@
     },
     "source_reference": [
       "Vice-President Notes Part 1/2/3 - Article 68"
-    ]
+    ],
+    "explanation": {
+      "en": "Article 68 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
+      "ta": "உறுப்பு 68 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்."
+    },
+    "question": {
+      "en": "[PYQ Pattern Q23: Article 68] Which constitutional rule accurately defines the Vice-President's powers under Article 68?",
+      "ta": "[PYQ மாதிரி வினா 23: உறுப்பு 68] உறுப்பு 68-ன் கீழ் துணைக் குடியரசுத் தலைவர் அதிகாரங்களைச் சரியாக வரையறுக்கும் அரசியலமைப்பு விதி எது?"
+    },
+    "options_en": [
+      "Article 68 makes Vice-President subordinate to State Chief Ministers",
+      "Article 68 empowers Governor to override Vice-President decisions",
+      "Article 68 abolishes the office of Vice-President during emergency",
+      "Article 68 sets specific constitutional provisions governing Vice-President duties"
+    ],
+    "options_ta": [
+      "உறுப்பு 68 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது",
+      "உறுப்பு 68 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது",
+      "உறுப்பு 68 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது",
+      "உறுப்பு 68 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
+    ],
+    "answer": "d",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Vice-President of India"
+    ],
+    "revision_fact": "Article 68 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India."
   },
   {
     "id": "POLITY_VP_PYQ_024",
@@ -1653,7 +2320,36 @@
     },
     "source_reference": [
       "Vice-President Notes Part 1/2/3 - Article 69"
-    ]
+    ],
+    "explanation": {
+      "en": "Article 69 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
+      "ta": "உறுப்பு 69 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்."
+    },
+    "question": {
+      "en": "[PYQ Pattern Q24: Article 69] Which constitutional rule accurately defines the Vice-President's powers under Article 69?",
+      "ta": "[PYQ மாதிரி வினா 24: உறுப்பு 69] உறுப்பு 69-ன் கீழ் துணைக் குடியரசுத் தலைவர் அதிகாரங்களைச் சரியாக வரையறுக்கும் அரசியலமைப்பு விதி எது?"
+    },
+    "options_en": [
+      "Article 69 sets specific constitutional provisions governing Vice-President duties",
+      "Article 69 empowers Governor to override Vice-President decisions",
+      "Article 69 abolishes the office of Vice-President during emergency",
+      "Article 69 makes Vice-President subordinate to State Chief Ministers"
+    ],
+    "options_ta": [
+      "உறுப்பு 69 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது",
+      "உறுப்பு 69 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது",
+      "உறுப்பு 69 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது",
+      "உறுப்பு 69 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
+    ],
+    "answer": "a",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Vice-President of India"
+    ],
+    "revision_fact": "Article 69 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India."
   },
   {
     "id": "POLITY_VP_PYQ_025",
@@ -1666,8 +2362,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Article 70 sets specific constitutional provisions governing Vice-President duties",
-        "ta": "உறுப்பு 70 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
+        "en": "Article 70 abolishes the office of Vice-President during emergency",
+        "ta": "உறுப்பு 70 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது"
       },
       {
         "id": "B",
@@ -1676,8 +2372,8 @@
       },
       {
         "id": "C",
-        "en": "Article 70 abolishes the office of Vice-President during emergency",
-        "ta": "உறுப்பு 70 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது"
+        "en": "Article 70 sets specific constitutional provisions governing Vice-President duties",
+        "ta": "உறுப்பு 70 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
       },
       {
         "id": "D",
@@ -1685,21 +2381,21 @@
         "ta": "உறுப்பு 70 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "C",
     "explanation_en": "Article 70 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
     "explanation_ta": "உறுப்பு 70 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 70.",
-        "ta": "சரி. தெரிவு A உறுப்பு 70-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
+        "en": "Incorrect. Emergency does not abolish the office of Vice-President.",
+        "ta": "தவறு. அவசர நிலை VP பதவியை ரத்து செய்யாது."
       },
       "B": {
         "en": "Incorrect. Governors have no authority over the Vice-President.",
         "ta": "தவறு. ஆளுநர்களுக்கு VP மீது எவ்வித அதிகாரமும் இல்லை."
       },
       "C": {
-        "en": "Incorrect. Emergency does not abolish the office of Vice-President.",
-        "ta": "தவறு. அவசர நிலை VP பதவியை ரத்து செய்யாது."
+        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 70.",
+        "ta": "சரி. தெரிவு A உறுப்பு 70-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
       },
       "D": {
         "en": "Incorrect. Vice-President is 2nd in Warrant of Precedence, above Chief Ministers.",
@@ -1722,7 +2418,36 @@
     },
     "source_reference": [
       "Vice-President Notes Part 1/2/3 - Article 70"
-    ]
+    ],
+    "explanation": {
+      "en": "Article 70 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
+      "ta": "உறுப்பு 70 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்."
+    },
+    "question": {
+      "en": "[PYQ Pattern Q25: Article 70] Which constitutional rule accurately defines the Vice-President's powers under Article 70?",
+      "ta": "[PYQ மாதிரி வினா 25: உறுப்பு 70] உறுப்பு 70-ன் கீழ் துணைக் குடியரசுத் தலைவர் அதிகாரங்களைச் சரியாக வரையறுக்கும் அரசியலமைப்பு விதி எது?"
+    },
+    "options_en": [
+      "Article 70 abolishes the office of Vice-President during emergency",
+      "Article 70 empowers Governor to override Vice-President decisions",
+      "Article 70 sets specific constitutional provisions governing Vice-President duties",
+      "Article 70 makes Vice-President subordinate to State Chief Ministers"
+    ],
+    "options_ta": [
+      "உறுப்பு 70 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது",
+      "உறுப்பு 70 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது",
+      "உறுப்பு 70 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது",
+      "உறுப்பு 70 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
+    ],
+    "answer": "c",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Vice-President of India"
+    ],
+    "revision_fact": "Article 70 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India."
   },
   {
     "id": "POLITY_VP_PYQ_026",
@@ -1735,8 +2460,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Article 71 sets specific constitutional provisions governing Vice-President duties",
-        "ta": "உறுப்பு 71 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
+        "en": "Article 71 abolishes the office of Vice-President during emergency",
+        "ta": "உறுப்பு 71 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது"
       },
       {
         "id": "B",
@@ -1745,8 +2470,8 @@
       },
       {
         "id": "C",
-        "en": "Article 71 abolishes the office of Vice-President during emergency",
-        "ta": "உறுப்பு 71 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது"
+        "en": "Article 71 sets specific constitutional provisions governing Vice-President duties",
+        "ta": "உறுப்பு 71 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
       },
       {
         "id": "D",
@@ -1754,21 +2479,21 @@
         "ta": "உறுப்பு 71 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "C",
     "explanation_en": "Article 71 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
     "explanation_ta": "உறுப்பு 71 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 71.",
-        "ta": "சரி. தெரிவு A உறுப்பு 71-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
+        "en": "Incorrect. Emergency does not abolish the office of Vice-President.",
+        "ta": "தவறு. அவசர நிலை VP பதவியை ரத்து செய்யாது."
       },
       "B": {
         "en": "Incorrect. Governors have no authority over the Vice-President.",
         "ta": "தவறு. ஆளுநர்களுக்கு VP மீது எவ்வித அதிகாரமும் இல்லை."
       },
       "C": {
-        "en": "Incorrect. Emergency does not abolish the office of Vice-President.",
-        "ta": "தவறு. அவசர நிலை VP பதவியை ரத்து செய்யாது."
+        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 71.",
+        "ta": "சரி. தெரிவு A உறுப்பு 71-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
       },
       "D": {
         "en": "Incorrect. Vice-President is 2nd in Warrant of Precedence, above Chief Ministers.",
@@ -1791,7 +2516,36 @@
     },
     "source_reference": [
       "Vice-President Notes Part 1/2/3 - Article 71"
-    ]
+    ],
+    "explanation": {
+      "en": "Article 71 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
+      "ta": "உறுப்பு 71 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்."
+    },
+    "question": {
+      "en": "[PYQ Pattern Q26: Article 71] Which constitutional rule accurately defines the Vice-President's powers under Article 71?",
+      "ta": "[PYQ மாதிரி வினா 26: உறுப்பு 71] உறுப்பு 71-ன் கீழ் துணைக் குடியரசுத் தலைவர் அதிகாரங்களைச் சரியாக வரையறுக்கும் அரசியலமைப்பு விதி எது?"
+    },
+    "options_en": [
+      "Article 71 abolishes the office of Vice-President during emergency",
+      "Article 71 empowers Governor to override Vice-President decisions",
+      "Article 71 sets specific constitutional provisions governing Vice-President duties",
+      "Article 71 makes Vice-President subordinate to State Chief Ministers"
+    ],
+    "options_ta": [
+      "உறுப்பு 71 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது",
+      "உறுப்பு 71 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது",
+      "உறுப்பு 71 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது",
+      "உறுப்பு 71 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
+    ],
+    "answer": "c",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Vice-President of India"
+    ],
+    "revision_fact": "Article 71 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India."
   },
   {
     "id": "POLITY_VP_PYQ_027",
@@ -1860,7 +2614,36 @@
     },
     "source_reference": [
       "Vice-President Notes Part 1/2/3 - Article 63"
-    ]
+    ],
+    "explanation": {
+      "en": "Article 63 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
+      "ta": "உறுப்பு 63 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்."
+    },
+    "question": {
+      "en": "[PYQ Pattern Q27: Article 63] Which constitutional rule accurately defines the Vice-President's powers under Article 63?",
+      "ta": "[PYQ மாதிரி வினா 27: உறுப்பு 63] உறுப்பு 63-ன் கீழ் துணைக் குடியரசுத் தலைவர் அதிகாரங்களைச் சரியாக வரையறுக்கும் அரசியலமைப்பு விதி எது?"
+    },
+    "options_en": [
+      "Article 63 sets specific constitutional provisions governing Vice-President duties",
+      "Article 63 empowers Governor to override Vice-President decisions",
+      "Article 63 abolishes the office of Vice-President during emergency",
+      "Article 63 makes Vice-President subordinate to State Chief Ministers"
+    ],
+    "options_ta": [
+      "உறுப்பு 63 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது",
+      "உறுப்பு 63 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது",
+      "உறுப்பு 63 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது",
+      "உறுப்பு 63 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
+    ],
+    "answer": "a",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Vice-President of India"
+    ],
+    "revision_fact": "Article 63 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India."
   },
   {
     "id": "POLITY_VP_PYQ_028",
@@ -1929,7 +2712,36 @@
     },
     "source_reference": [
       "Vice-President Notes Part 1/2/3 - Article 64"
-    ]
+    ],
+    "explanation": {
+      "en": "Article 64 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
+      "ta": "உறுப்பு 64 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்."
+    },
+    "question": {
+      "en": "[PYQ Pattern Q28: Article 64] Which constitutional rule accurately defines the Vice-President's powers under Article 64?",
+      "ta": "[PYQ மாதிரி வினா 28: உறுப்பு 64] உறுப்பு 64-ன் கீழ் துணைக் குடியரசுத் தலைவர் அதிகாரங்களைச் சரியாக வரையறுக்கும் அரசியலமைப்பு விதி எது?"
+    },
+    "options_en": [
+      "Article 64 sets specific constitutional provisions governing Vice-President duties",
+      "Article 64 empowers Governor to override Vice-President decisions",
+      "Article 64 abolishes the office of Vice-President during emergency",
+      "Article 64 makes Vice-President subordinate to State Chief Ministers"
+    ],
+    "options_ta": [
+      "உறுப்பு 64 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது",
+      "உறுப்பு 64 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது",
+      "உறுப்பு 64 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது",
+      "உறுப்பு 64 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
+    ],
+    "answer": "a",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Vice-President of India"
+    ],
+    "revision_fact": "Article 64 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India."
   },
   {
     "id": "POLITY_VP_PYQ_029",
@@ -1942,13 +2754,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Article 65 sets specific constitutional provisions governing Vice-President duties",
-        "ta": "உறுப்பு 65 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
+        "en": "Article 65 empowers Governor to override Vice-President decisions",
+        "ta": "உறுப்பு 65 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது"
       },
       {
         "id": "B",
-        "en": "Article 65 empowers Governor to override Vice-President decisions",
-        "ta": "உறுப்பு 65 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது"
+        "en": "Article 65 sets specific constitutional provisions governing Vice-President duties",
+        "ta": "உறுப்பு 65 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
       },
       {
         "id": "C",
@@ -1961,17 +2773,17 @@
         "ta": "உறுப்பு 65 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "B",
     "explanation_en": "Article 65 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
     "explanation_ta": "உறுப்பு 65 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 65.",
-        "ta": "சரி. தெரிவு A உறுப்பு 65-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
-      },
-      "B": {
         "en": "Incorrect. Governors have no authority over the Vice-President.",
         "ta": "தவறு. ஆளுநர்களுக்கு VP மீது எவ்வித அதிகாரமும் இல்லை."
+      },
+      "B": {
+        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 65.",
+        "ta": "சரி. தெரிவு A உறுப்பு 65-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
       },
       "C": {
         "en": "Incorrect. Emergency does not abolish the office of Vice-President.",
@@ -1998,7 +2810,36 @@
     },
     "source_reference": [
       "Vice-President Notes Part 1/2/3 - Article 65"
-    ]
+    ],
+    "explanation": {
+      "en": "Article 65 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
+      "ta": "உறுப்பு 65 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்."
+    },
+    "question": {
+      "en": "[PYQ Pattern Q29: Article 65] Which constitutional rule accurately defines the Vice-President's powers under Article 65?",
+      "ta": "[PYQ மாதிரி வினா 29: உறுப்பு 65] உறுப்பு 65-ன் கீழ் துணைக் குடியரசுத் தலைவர் அதிகாரங்களைச் சரியாக வரையறுக்கும் அரசியலமைப்பு விதி எது?"
+    },
+    "options_en": [
+      "Article 65 empowers Governor to override Vice-President decisions",
+      "Article 65 sets specific constitutional provisions governing Vice-President duties",
+      "Article 65 abolishes the office of Vice-President during emergency",
+      "Article 65 makes Vice-President subordinate to State Chief Ministers"
+    ],
+    "options_ta": [
+      "உறுப்பு 65 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது",
+      "உறுப்பு 65 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது",
+      "உறுப்பு 65 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது",
+      "உறுப்பு 65 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
+    ],
+    "answer": "b",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Vice-President of India"
+    ],
+    "revision_fact": "Article 65 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India."
   },
   {
     "id": "POLITY_VP_PYQ_030",
@@ -2011,8 +2852,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Article 66 sets specific constitutional provisions governing Vice-President duties",
-        "ta": "உறுப்பு 66 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
+        "en": "Article 66 abolishes the office of Vice-President during emergency",
+        "ta": "உறுப்பு 66 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது"
       },
       {
         "id": "B",
@@ -2021,8 +2862,8 @@
       },
       {
         "id": "C",
-        "en": "Article 66 abolishes the office of Vice-President during emergency",
-        "ta": "உறுப்பு 66 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது"
+        "en": "Article 66 sets specific constitutional provisions governing Vice-President duties",
+        "ta": "உறுப்பு 66 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
       },
       {
         "id": "D",
@@ -2030,21 +2871,21 @@
         "ta": "உறுப்பு 66 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "C",
     "explanation_en": "Article 66 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
     "explanation_ta": "உறுப்பு 66 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 66.",
-        "ta": "சரி. தெரிவு A உறுப்பு 66-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
+        "en": "Incorrect. Emergency does not abolish the office of Vice-President.",
+        "ta": "தவறு. அவசர நிலை VP பதவியை ரத்து செய்யாது."
       },
       "B": {
         "en": "Incorrect. Governors have no authority over the Vice-President.",
         "ta": "தவறு. ஆளுநர்களுக்கு VP மீது எவ்வித அதிகாரமும் இல்லை."
       },
       "C": {
-        "en": "Incorrect. Emergency does not abolish the office of Vice-President.",
-        "ta": "தவறு. அவசர நிலை VP பதவியை ரத்து செய்யாது."
+        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 66.",
+        "ta": "சரி. தெரிவு A உறுப்பு 66-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
       },
       "D": {
         "en": "Incorrect. Vice-President is 2nd in Warrant of Precedence, above Chief Ministers.",
@@ -2067,7 +2908,36 @@
     },
     "source_reference": [
       "Vice-President Notes Part 1/2/3 - Article 66"
-    ]
+    ],
+    "explanation": {
+      "en": "Article 66 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
+      "ta": "உறுப்பு 66 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்."
+    },
+    "question": {
+      "en": "[PYQ Pattern Q30: Article 66] Which constitutional rule accurately defines the Vice-President's powers under Article 66?",
+      "ta": "[PYQ மாதிரி வினா 30: உறுப்பு 66] உறுப்பு 66-ன் கீழ் துணைக் குடியரசுத் தலைவர் அதிகாரங்களைச் சரியாக வரையறுக்கும் அரசியலமைப்பு விதி எது?"
+    },
+    "options_en": [
+      "Article 66 abolishes the office of Vice-President during emergency",
+      "Article 66 empowers Governor to override Vice-President decisions",
+      "Article 66 sets specific constitutional provisions governing Vice-President duties",
+      "Article 66 makes Vice-President subordinate to State Chief Ministers"
+    ],
+    "options_ta": [
+      "உறுப்பு 66 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது",
+      "உறுப்பு 66 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது",
+      "உறுப்பு 66 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது",
+      "உறுப்பு 66 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
+    ],
+    "answer": "c",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Vice-President of India"
+    ],
+    "revision_fact": "Article 66 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India."
   },
   {
     "id": "POLITY_VP_PYQ_031",
@@ -2080,13 +2950,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Article 67 sets specific constitutional provisions governing Vice-President duties",
-        "ta": "உறுப்பு 67 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
+        "en": "Article 67 empowers Governor to override Vice-President decisions",
+        "ta": "உறுப்பு 67 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது"
       },
       {
         "id": "B",
-        "en": "Article 67 empowers Governor to override Vice-President decisions",
-        "ta": "உறுப்பு 67 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது"
+        "en": "Article 67 sets specific constitutional provisions governing Vice-President duties",
+        "ta": "உறுப்பு 67 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
       },
       {
         "id": "C",
@@ -2099,17 +2969,17 @@
         "ta": "உறுப்பு 67 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "B",
     "explanation_en": "Article 67 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
     "explanation_ta": "உறுப்பு 67 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 67.",
-        "ta": "சரி. தெரிவு A உறுப்பு 67-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
-      },
-      "B": {
         "en": "Incorrect. Governors have no authority over the Vice-President.",
         "ta": "தவறு. ஆளுநர்களுக்கு VP மீது எவ்வித அதிகாரமும் இல்லை."
+      },
+      "B": {
+        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 67.",
+        "ta": "சரி. தெரிவு A உறுப்பு 67-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
       },
       "C": {
         "en": "Incorrect. Emergency does not abolish the office of Vice-President.",
@@ -2136,7 +3006,36 @@
     },
     "source_reference": [
       "Vice-President Notes Part 1/2/3 - Article 67"
-    ]
+    ],
+    "explanation": {
+      "en": "Article 67 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
+      "ta": "உறுப்பு 67 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்."
+    },
+    "question": {
+      "en": "[PYQ Pattern Q31: Article 67] Which constitutional rule accurately defines the Vice-President's powers under Article 67?",
+      "ta": "[PYQ மாதிரி வினா 31: உறுப்பு 67] உறுப்பு 67-ன் கீழ் துணைக் குடியரசுத் தலைவர் அதிகாரங்களைச் சரியாக வரையறுக்கும் அரசியலமைப்பு விதி எது?"
+    },
+    "options_en": [
+      "Article 67 empowers Governor to override Vice-President decisions",
+      "Article 67 sets specific constitutional provisions governing Vice-President duties",
+      "Article 67 abolishes the office of Vice-President during emergency",
+      "Article 67 makes Vice-President subordinate to State Chief Ministers"
+    ],
+    "options_ta": [
+      "உறுப்பு 67 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது",
+      "உறுப்பு 67 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது",
+      "உறுப்பு 67 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது",
+      "உறுப்பு 67 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
+    ],
+    "answer": "b",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Vice-President of India"
+    ],
+    "revision_fact": "Article 67 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India."
   },
   {
     "id": "POLITY_VP_PYQ_032",
@@ -2149,8 +3048,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Article 68 sets specific constitutional provisions governing Vice-President duties",
-        "ta": "உறுப்பு 68 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
+        "en": "Article 68 makes Vice-President subordinate to State Chief Ministers",
+        "ta": "உறுப்பு 68 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
       },
       {
         "id": "B",
@@ -2164,17 +3063,17 @@
       },
       {
         "id": "D",
-        "en": "Article 68 makes Vice-President subordinate to State Chief Ministers",
-        "ta": "உறுப்பு 68 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
+        "en": "Article 68 sets specific constitutional provisions governing Vice-President duties",
+        "ta": "உறுப்பு 68 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "D",
     "explanation_en": "Article 68 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
     "explanation_ta": "உறுப்பு 68 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 68.",
-        "ta": "சரி. தெரிவு A உறுப்பு 68-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
+        "en": "Incorrect. Vice-President is 2nd in Warrant of Precedence, above Chief Ministers.",
+        "ta": "தவறு. VP முன்னுரிமைப் வரிசையில் முதலமைச்சர்களுக்கு மேலான 2-வது இடத்தில் உள்ளார்."
       },
       "B": {
         "en": "Incorrect. Governors have no authority over the Vice-President.",
@@ -2185,8 +3084,8 @@
         "ta": "தவறு. அவசர நிலை VP பதவியை ரத்து செய்யாது."
       },
       "D": {
-        "en": "Incorrect. Vice-President is 2nd in Warrant of Precedence, above Chief Ministers.",
-        "ta": "தவறு. VP முன்னுரிமைப் வரிசையில் முதலமைச்சர்களுக்கு மேலான 2-வது இடத்தில் உள்ளார்."
+        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 68.",
+        "ta": "சரி. தெரிவு A உறுப்பு 68-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
       }
     },
     "tnpsc_tip": {
@@ -2205,7 +3104,36 @@
     },
     "source_reference": [
       "Vice-President Notes Part 1/2/3 - Article 68"
-    ]
+    ],
+    "explanation": {
+      "en": "Article 68 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
+      "ta": "உறுப்பு 68 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்."
+    },
+    "question": {
+      "en": "[PYQ Pattern Q32: Article 68] Which constitutional rule accurately defines the Vice-President's powers under Article 68?",
+      "ta": "[PYQ மாதிரி வினா 32: உறுப்பு 68] உறுப்பு 68-ன் கீழ் துணைக் குடியரசுத் தலைவர் அதிகாரங்களைச் சரியாக வரையறுக்கும் அரசியலமைப்பு விதி எது?"
+    },
+    "options_en": [
+      "Article 68 makes Vice-President subordinate to State Chief Ministers",
+      "Article 68 empowers Governor to override Vice-President decisions",
+      "Article 68 abolishes the office of Vice-President during emergency",
+      "Article 68 sets specific constitutional provisions governing Vice-President duties"
+    ],
+    "options_ta": [
+      "உறுப்பு 68 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது",
+      "உறுப்பு 68 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது",
+      "உறுப்பு 68 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது",
+      "உறுப்பு 68 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
+    ],
+    "answer": "d",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Vice-President of India"
+    ],
+    "revision_fact": "Article 68 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India."
   },
   {
     "id": "POLITY_VP_PYQ_033",
@@ -2218,8 +3146,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Article 69 sets specific constitutional provisions governing Vice-President duties",
-        "ta": "உறுப்பு 69 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
+        "en": "Article 69 abolishes the office of Vice-President during emergency",
+        "ta": "உறுப்பு 69 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது"
       },
       {
         "id": "B",
@@ -2228,8 +3156,8 @@
       },
       {
         "id": "C",
-        "en": "Article 69 abolishes the office of Vice-President during emergency",
-        "ta": "உறுப்பு 69 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது"
+        "en": "Article 69 sets specific constitutional provisions governing Vice-President duties",
+        "ta": "உறுப்பு 69 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
       },
       {
         "id": "D",
@@ -2237,21 +3165,21 @@
         "ta": "உறுப்பு 69 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "C",
     "explanation_en": "Article 69 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
     "explanation_ta": "உறுப்பு 69 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 69.",
-        "ta": "சரி. தெரிவு A உறுப்பு 69-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
+        "en": "Incorrect. Emergency does not abolish the office of Vice-President.",
+        "ta": "தவறு. அவசர நிலை VP பதவியை ரத்து செய்யாது."
       },
       "B": {
         "en": "Incorrect. Governors have no authority over the Vice-President.",
         "ta": "தவறு. ஆளுநர்களுக்கு VP மீது எவ்வித அதிகாரமும் இல்லை."
       },
       "C": {
-        "en": "Incorrect. Emergency does not abolish the office of Vice-President.",
-        "ta": "தவறு. அவசர நிலை VP பதவியை ரத்து செய்யாது."
+        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 69.",
+        "ta": "சரி. தெரிவு A உறுப்பு 69-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
       },
       "D": {
         "en": "Incorrect. Vice-President is 2nd in Warrant of Precedence, above Chief Ministers.",
@@ -2274,7 +3202,36 @@
     },
     "source_reference": [
       "Vice-President Notes Part 1/2/3 - Article 69"
-    ]
+    ],
+    "explanation": {
+      "en": "Article 69 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
+      "ta": "உறுப்பு 69 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்."
+    },
+    "question": {
+      "en": "[PYQ Pattern Q33: Article 69] Which constitutional rule accurately defines the Vice-President's powers under Article 69?",
+      "ta": "[PYQ மாதிரி வினா 33: உறுப்பு 69] உறுப்பு 69-ன் கீழ் துணைக் குடியரசுத் தலைவர் அதிகாரங்களைச் சரியாக வரையறுக்கும் அரசியலமைப்பு விதி எது?"
+    },
+    "options_en": [
+      "Article 69 abolishes the office of Vice-President during emergency",
+      "Article 69 empowers Governor to override Vice-President decisions",
+      "Article 69 sets specific constitutional provisions governing Vice-President duties",
+      "Article 69 makes Vice-President subordinate to State Chief Ministers"
+    ],
+    "options_ta": [
+      "உறுப்பு 69 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது",
+      "உறுப்பு 69 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது",
+      "உறுப்பு 69 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது",
+      "உறுப்பு 69 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
+    ],
+    "answer": "c",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Vice-President of India"
+    ],
+    "revision_fact": "Article 69 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India."
   },
   {
     "id": "POLITY_VP_PYQ_034",
@@ -2287,8 +3244,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Article 70 sets specific constitutional provisions governing Vice-President duties",
-        "ta": "உறுப்பு 70 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
+        "en": "Article 70 abolishes the office of Vice-President during emergency",
+        "ta": "உறுப்பு 70 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது"
       },
       {
         "id": "B",
@@ -2297,8 +3254,8 @@
       },
       {
         "id": "C",
-        "en": "Article 70 abolishes the office of Vice-President during emergency",
-        "ta": "உறுப்பு 70 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது"
+        "en": "Article 70 sets specific constitutional provisions governing Vice-President duties",
+        "ta": "உறுப்பு 70 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
       },
       {
         "id": "D",
@@ -2306,21 +3263,21 @@
         "ta": "உறுப்பு 70 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "C",
     "explanation_en": "Article 70 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
     "explanation_ta": "உறுப்பு 70 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 70.",
-        "ta": "சரி. தெரிவு A உறுப்பு 70-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
+        "en": "Incorrect. Emergency does not abolish the office of Vice-President.",
+        "ta": "தவறு. அவசர நிலை VP பதவியை ரத்து செய்யாது."
       },
       "B": {
         "en": "Incorrect. Governors have no authority over the Vice-President.",
         "ta": "தவறு. ஆளுநர்களுக்கு VP மீது எவ்வித அதிகாரமும் இல்லை."
       },
       "C": {
-        "en": "Incorrect. Emergency does not abolish the office of Vice-President.",
-        "ta": "தவறு. அவசர நிலை VP பதவியை ரத்து செய்யாது."
+        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 70.",
+        "ta": "சரி. தெரிவு A உறுப்பு 70-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
       },
       "D": {
         "en": "Incorrect. Vice-President is 2nd in Warrant of Precedence, above Chief Ministers.",
@@ -2343,7 +3300,36 @@
     },
     "source_reference": [
       "Vice-President Notes Part 1/2/3 - Article 70"
-    ]
+    ],
+    "explanation": {
+      "en": "Article 70 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
+      "ta": "உறுப்பு 70 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்."
+    },
+    "question": {
+      "en": "[PYQ Pattern Q34: Article 70] Which constitutional rule accurately defines the Vice-President's powers under Article 70?",
+      "ta": "[PYQ மாதிரி வினா 34: உறுப்பு 70] உறுப்பு 70-ன் கீழ் துணைக் குடியரசுத் தலைவர் அதிகாரங்களைச் சரியாக வரையறுக்கும் அரசியலமைப்பு விதி எது?"
+    },
+    "options_en": [
+      "Article 70 abolishes the office of Vice-President during emergency",
+      "Article 70 empowers Governor to override Vice-President decisions",
+      "Article 70 sets specific constitutional provisions governing Vice-President duties",
+      "Article 70 makes Vice-President subordinate to State Chief Ministers"
+    ],
+    "options_ta": [
+      "உறுப்பு 70 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது",
+      "உறுப்பு 70 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது",
+      "உறுப்பு 70 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது",
+      "உறுப்பு 70 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
+    ],
+    "answer": "c",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Vice-President of India"
+    ],
+    "revision_fact": "Article 70 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India."
   },
   {
     "id": "POLITY_VP_PYQ_035",
@@ -2356,8 +3342,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Article 71 sets specific constitutional provisions governing Vice-President duties",
-        "ta": "உறுப்பு 71 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
+        "en": "Article 71 makes Vice-President subordinate to State Chief Ministers",
+        "ta": "உறுப்பு 71 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
       },
       {
         "id": "B",
@@ -2371,17 +3357,17 @@
       },
       {
         "id": "D",
-        "en": "Article 71 makes Vice-President subordinate to State Chief Ministers",
-        "ta": "உறுப்பு 71 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
+        "en": "Article 71 sets specific constitutional provisions governing Vice-President duties",
+        "ta": "உறுப்பு 71 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "D",
     "explanation_en": "Article 71 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
     "explanation_ta": "உறுப்பு 71 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 71.",
-        "ta": "சரி. தெரிவு A உறுப்பு 71-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
+        "en": "Incorrect. Vice-President is 2nd in Warrant of Precedence, above Chief Ministers.",
+        "ta": "தவறு. VP முன்னுரிமைப் வரிசையில் முதலமைச்சர்களுக்கு மேலான 2-வது இடத்தில் உள்ளார்."
       },
       "B": {
         "en": "Incorrect. Governors have no authority over the Vice-President.",
@@ -2392,8 +3378,8 @@
         "ta": "தவறு. அவசர நிலை VP பதவியை ரத்து செய்யாது."
       },
       "D": {
-        "en": "Incorrect. Vice-President is 2nd in Warrant of Precedence, above Chief Ministers.",
-        "ta": "தவறு. VP முன்னுரிமைப் வரிசையில் முதலமைச்சர்களுக்கு மேலான 2-வது இடத்தில் உள்ளார்."
+        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 71.",
+        "ta": "சரி. தெரிவு A உறுப்பு 71-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
       }
     },
     "tnpsc_tip": {
@@ -2412,7 +3398,36 @@
     },
     "source_reference": [
       "Vice-President Notes Part 1/2/3 - Article 71"
-    ]
+    ],
+    "explanation": {
+      "en": "Article 71 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
+      "ta": "உறுப்பு 71 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்."
+    },
+    "question": {
+      "en": "[PYQ Pattern Q35: Article 71] Which constitutional rule accurately defines the Vice-President's powers under Article 71?",
+      "ta": "[PYQ மாதிரி வினா 35: உறுப்பு 71] உறுப்பு 71-ன் கீழ் துணைக் குடியரசுத் தலைவர் அதிகாரங்களைச் சரியாக வரையறுக்கும் அரசியலமைப்பு விதி எது?"
+    },
+    "options_en": [
+      "Article 71 makes Vice-President subordinate to State Chief Ministers",
+      "Article 71 empowers Governor to override Vice-President decisions",
+      "Article 71 abolishes the office of Vice-President during emergency",
+      "Article 71 sets specific constitutional provisions governing Vice-President duties"
+    ],
+    "options_ta": [
+      "உறுப்பு 71 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது",
+      "உறுப்பு 71 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது",
+      "உறுப்பு 71 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது",
+      "உறுப்பு 71 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
+    ],
+    "answer": "d",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Vice-President of India"
+    ],
+    "revision_fact": "Article 71 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India."
   },
   {
     "id": "POLITY_VP_PYQ_036",
@@ -2481,7 +3496,36 @@
     },
     "source_reference": [
       "Vice-President Notes Part 1/2/3 - Article 63"
-    ]
+    ],
+    "explanation": {
+      "en": "Article 63 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
+      "ta": "உறுப்பு 63 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்."
+    },
+    "question": {
+      "en": "[PYQ Pattern Q36: Article 63] Which constitutional rule accurately defines the Vice-President's powers under Article 63?",
+      "ta": "[PYQ மாதிரி வினா 36: உறுப்பு 63] உறுப்பு 63-ன் கீழ் துணைக் குடியரசுத் தலைவர் அதிகாரங்களைச் சரியாக வரையறுக்கும் அரசியலமைப்பு விதி எது?"
+    },
+    "options_en": [
+      "Article 63 sets specific constitutional provisions governing Vice-President duties",
+      "Article 63 empowers Governor to override Vice-President decisions",
+      "Article 63 abolishes the office of Vice-President during emergency",
+      "Article 63 makes Vice-President subordinate to State Chief Ministers"
+    ],
+    "options_ta": [
+      "உறுப்பு 63 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது",
+      "உறுப்பு 63 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது",
+      "உறுப்பு 63 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது",
+      "உறுப்பு 63 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
+    ],
+    "answer": "a",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Vice-President of India"
+    ],
+    "revision_fact": "Article 63 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India."
   },
   {
     "id": "POLITY_VP_PYQ_037",
@@ -2494,8 +3538,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Article 64 sets specific constitutional provisions governing Vice-President duties",
-        "ta": "உறுப்பு 64 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
+        "en": "Article 64 abolishes the office of Vice-President during emergency",
+        "ta": "உறுப்பு 64 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது"
       },
       {
         "id": "B",
@@ -2504,8 +3548,8 @@
       },
       {
         "id": "C",
-        "en": "Article 64 abolishes the office of Vice-President during emergency",
-        "ta": "உறுப்பு 64 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது"
+        "en": "Article 64 sets specific constitutional provisions governing Vice-President duties",
+        "ta": "உறுப்பு 64 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
       },
       {
         "id": "D",
@@ -2513,21 +3557,21 @@
         "ta": "உறுப்பு 64 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "C",
     "explanation_en": "Article 64 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
     "explanation_ta": "உறுப்பு 64 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 64.",
-        "ta": "சரி. தெரிவு A உறுப்பு 64-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
+        "en": "Incorrect. Emergency does not abolish the office of Vice-President.",
+        "ta": "தவறு. அவசர நிலை VP பதவியை ரத்து செய்யாது."
       },
       "B": {
         "en": "Incorrect. Governors have no authority over the Vice-President.",
         "ta": "தவறு. ஆளுநர்களுக்கு VP மீது எவ்வித அதிகாரமும் இல்லை."
       },
       "C": {
-        "en": "Incorrect. Emergency does not abolish the office of Vice-President.",
-        "ta": "தவறு. அவசர நிலை VP பதவியை ரத்து செய்யாது."
+        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 64.",
+        "ta": "சரி. தெரிவு A உறுப்பு 64-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
       },
       "D": {
         "en": "Incorrect. Vice-President is 2nd in Warrant of Precedence, above Chief Ministers.",
@@ -2550,7 +3594,36 @@
     },
     "source_reference": [
       "Vice-President Notes Part 1/2/3 - Article 64"
-    ]
+    ],
+    "explanation": {
+      "en": "Article 64 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
+      "ta": "உறுப்பு 64 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்."
+    },
+    "question": {
+      "en": "[PYQ Pattern Q37: Article 64] Which constitutional rule accurately defines the Vice-President's powers under Article 64?",
+      "ta": "[PYQ மாதிரி வினா 37: உறுப்பு 64] உறுப்பு 64-ன் கீழ் துணைக் குடியரசுத் தலைவர் அதிகாரங்களைச் சரியாக வரையறுக்கும் அரசியலமைப்பு விதி எது?"
+    },
+    "options_en": [
+      "Article 64 abolishes the office of Vice-President during emergency",
+      "Article 64 empowers Governor to override Vice-President decisions",
+      "Article 64 sets specific constitutional provisions governing Vice-President duties",
+      "Article 64 makes Vice-President subordinate to State Chief Ministers"
+    ],
+    "options_ta": [
+      "உறுப்பு 64 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது",
+      "உறுப்பு 64 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது",
+      "உறுப்பு 64 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது",
+      "உறுப்பு 64 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
+    ],
+    "answer": "c",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Vice-President of India"
+    ],
+    "revision_fact": "Article 64 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India."
   },
   {
     "id": "POLITY_VP_PYQ_038",
@@ -2563,8 +3636,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Article 65 sets specific constitutional provisions governing Vice-President duties",
-        "ta": "உறுப்பு 65 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
+        "en": "Article 65 makes Vice-President subordinate to State Chief Ministers",
+        "ta": "உறுப்பு 65 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
       },
       {
         "id": "B",
@@ -2578,17 +3651,17 @@
       },
       {
         "id": "D",
-        "en": "Article 65 makes Vice-President subordinate to State Chief Ministers",
-        "ta": "உறுப்பு 65 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
+        "en": "Article 65 sets specific constitutional provisions governing Vice-President duties",
+        "ta": "உறுப்பு 65 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "D",
     "explanation_en": "Article 65 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
     "explanation_ta": "உறுப்பு 65 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 65.",
-        "ta": "சரி. தெரிவு A உறுப்பு 65-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
+        "en": "Incorrect. Vice-President is 2nd in Warrant of Precedence, above Chief Ministers.",
+        "ta": "தவறு. VP முன்னுரிமைப் வரிசையில் முதலமைச்சர்களுக்கு மேலான 2-வது இடத்தில் உள்ளார்."
       },
       "B": {
         "en": "Incorrect. Governors have no authority over the Vice-President.",
@@ -2599,8 +3672,8 @@
         "ta": "தவறு. அவசர நிலை VP பதவியை ரத்து செய்யாது."
       },
       "D": {
-        "en": "Incorrect. Vice-President is 2nd in Warrant of Precedence, above Chief Ministers.",
-        "ta": "தவறு. VP முன்னுரிமைப் வரிசையில் முதலமைச்சர்களுக்கு மேலான 2-வது இடத்தில் உள்ளார்."
+        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 65.",
+        "ta": "சரி. தெரிவு A உறுப்பு 65-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
       }
     },
     "tnpsc_tip": {
@@ -2619,7 +3692,36 @@
     },
     "source_reference": [
       "Vice-President Notes Part 1/2/3 - Article 65"
-    ]
+    ],
+    "explanation": {
+      "en": "Article 65 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
+      "ta": "உறுப்பு 65 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்."
+    },
+    "question": {
+      "en": "[PYQ Pattern Q38: Article 65] Which constitutional rule accurately defines the Vice-President's powers under Article 65?",
+      "ta": "[PYQ மாதிரி வினா 38: உறுப்பு 65] உறுப்பு 65-ன் கீழ் துணைக் குடியரசுத் தலைவர் அதிகாரங்களைச் சரியாக வரையறுக்கும் அரசியலமைப்பு விதி எது?"
+    },
+    "options_en": [
+      "Article 65 makes Vice-President subordinate to State Chief Ministers",
+      "Article 65 empowers Governor to override Vice-President decisions",
+      "Article 65 abolishes the office of Vice-President during emergency",
+      "Article 65 sets specific constitutional provisions governing Vice-President duties"
+    ],
+    "options_ta": [
+      "உறுப்பு 65 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது",
+      "உறுப்பு 65 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது",
+      "உறுப்பு 65 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது",
+      "உறுப்பு 65 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
+    ],
+    "answer": "d",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Vice-President of India"
+    ],
+    "revision_fact": "Article 65 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India."
   },
   {
     "id": "POLITY_VP_PYQ_039",
@@ -2688,7 +3790,36 @@
     },
     "source_reference": [
       "Vice-President Notes Part 1/2/3 - Article 66"
-    ]
+    ],
+    "explanation": {
+      "en": "Article 66 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
+      "ta": "உறுப்பு 66 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்."
+    },
+    "question": {
+      "en": "[PYQ Pattern Q39: Article 66] Which constitutional rule accurately defines the Vice-President's powers under Article 66?",
+      "ta": "[PYQ மாதிரி வினா 39: உறுப்பு 66] உறுப்பு 66-ன் கீழ் துணைக் குடியரசுத் தலைவர் அதிகாரங்களைச் சரியாக வரையறுக்கும் அரசியலமைப்பு விதி எது?"
+    },
+    "options_en": [
+      "Article 66 sets specific constitutional provisions governing Vice-President duties",
+      "Article 66 empowers Governor to override Vice-President decisions",
+      "Article 66 abolishes the office of Vice-President during emergency",
+      "Article 66 makes Vice-President subordinate to State Chief Ministers"
+    ],
+    "options_ta": [
+      "உறுப்பு 66 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது",
+      "உறுப்பு 66 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது",
+      "உறுப்பு 66 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது",
+      "உறுப்பு 66 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
+    ],
+    "answer": "a",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Vice-President of India"
+    ],
+    "revision_fact": "Article 66 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India."
   },
   {
     "id": "POLITY_VP_PYQ_040",
@@ -2701,8 +3832,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Article 67 sets specific constitutional provisions governing Vice-President duties",
-        "ta": "உறுப்பு 67 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
+        "en": "Article 67 makes Vice-President subordinate to State Chief Ministers",
+        "ta": "உறுப்பு 67 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
       },
       {
         "id": "B",
@@ -2716,17 +3847,17 @@
       },
       {
         "id": "D",
-        "en": "Article 67 makes Vice-President subordinate to State Chief Ministers",
-        "ta": "உறுப்பு 67 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
+        "en": "Article 67 sets specific constitutional provisions governing Vice-President duties",
+        "ta": "உறுப்பு 67 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "D",
     "explanation_en": "Article 67 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
     "explanation_ta": "உறுப்பு 67 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 67.",
-        "ta": "சரி. தெரிவு A உறுப்பு 67-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
+        "en": "Incorrect. Vice-President is 2nd in Warrant of Precedence, above Chief Ministers.",
+        "ta": "தவறு. VP முன்னுரிமைப் வரிசையில் முதலமைச்சர்களுக்கு மேலான 2-வது இடத்தில் உள்ளார்."
       },
       "B": {
         "en": "Incorrect. Governors have no authority over the Vice-President.",
@@ -2737,8 +3868,8 @@
         "ta": "தவறு. அவசர நிலை VP பதவியை ரத்து செய்யாது."
       },
       "D": {
-        "en": "Incorrect. Vice-President is 2nd in Warrant of Precedence, above Chief Ministers.",
-        "ta": "தவறு. VP முன்னுரிமைப் வரிசையில் முதலமைச்சர்களுக்கு மேலான 2-வது இடத்தில் உள்ளார்."
+        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 67.",
+        "ta": "சரி. தெரிவு A உறுப்பு 67-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
       }
     },
     "tnpsc_tip": {
@@ -2757,7 +3888,36 @@
     },
     "source_reference": [
       "Vice-President Notes Part 1/2/3 - Article 67"
-    ]
+    ],
+    "explanation": {
+      "en": "Article 67 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
+      "ta": "உறுப்பு 67 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்."
+    },
+    "question": {
+      "en": "[PYQ Pattern Q40: Article 67] Which constitutional rule accurately defines the Vice-President's powers under Article 67?",
+      "ta": "[PYQ மாதிரி வினா 40: உறுப்பு 67] உறுப்பு 67-ன் கீழ் துணைக் குடியரசுத் தலைவர் அதிகாரங்களைச் சரியாக வரையறுக்கும் அரசியலமைப்பு விதி எது?"
+    },
+    "options_en": [
+      "Article 67 makes Vice-President subordinate to State Chief Ministers",
+      "Article 67 empowers Governor to override Vice-President decisions",
+      "Article 67 abolishes the office of Vice-President during emergency",
+      "Article 67 sets specific constitutional provisions governing Vice-President duties"
+    ],
+    "options_ta": [
+      "உறுப்பு 67 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது",
+      "உறுப்பு 67 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது",
+      "உறுப்பு 67 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது",
+      "உறுப்பு 67 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
+    ],
+    "answer": "d",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Vice-President of India"
+    ],
+    "revision_fact": "Article 67 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India."
   },
   {
     "id": "POLITY_VP_PYQ_041",
@@ -2770,8 +3930,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Article 68 sets specific constitutional provisions governing Vice-President duties",
-        "ta": "உறுப்பு 68 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
+        "en": "Article 68 makes Vice-President subordinate to State Chief Ministers",
+        "ta": "உறுப்பு 68 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
       },
       {
         "id": "B",
@@ -2785,17 +3945,17 @@
       },
       {
         "id": "D",
-        "en": "Article 68 makes Vice-President subordinate to State Chief Ministers",
-        "ta": "உறுப்பு 68 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
+        "en": "Article 68 sets specific constitutional provisions governing Vice-President duties",
+        "ta": "உறுப்பு 68 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "D",
     "explanation_en": "Article 68 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
     "explanation_ta": "உறுப்பு 68 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 68.",
-        "ta": "சரி. தெரிவு A உறுப்பு 68-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
+        "en": "Incorrect. Vice-President is 2nd in Warrant of Precedence, above Chief Ministers.",
+        "ta": "தவறு. VP முன்னுரிமைப் வரிசையில் முதலமைச்சர்களுக்கு மேலான 2-வது இடத்தில் உள்ளார்."
       },
       "B": {
         "en": "Incorrect. Governors have no authority over the Vice-President.",
@@ -2806,8 +3966,8 @@
         "ta": "தவறு. அவசர நிலை VP பதவியை ரத்து செய்யாது."
       },
       "D": {
-        "en": "Incorrect. Vice-President is 2nd in Warrant of Precedence, above Chief Ministers.",
-        "ta": "தவறு. VP முன்னுரிமைப் வரிசையில் முதலமைச்சர்களுக்கு மேலான 2-வது இடத்தில் உள்ளார்."
+        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 68.",
+        "ta": "சரி. தெரிவு A உறுப்பு 68-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
       }
     },
     "tnpsc_tip": {
@@ -2826,7 +3986,36 @@
     },
     "source_reference": [
       "Vice-President Notes Part 1/2/3 - Article 68"
-    ]
+    ],
+    "explanation": {
+      "en": "Article 68 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
+      "ta": "உறுப்பு 68 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்."
+    },
+    "question": {
+      "en": "[PYQ Pattern Q41: Article 68] Which constitutional rule accurately defines the Vice-President's powers under Article 68?",
+      "ta": "[PYQ மாதிரி வினா 41: உறுப்பு 68] உறுப்பு 68-ன் கீழ் துணைக் குடியரசுத் தலைவர் அதிகாரங்களைச் சரியாக வரையறுக்கும் அரசியலமைப்பு விதி எது?"
+    },
+    "options_en": [
+      "Article 68 makes Vice-President subordinate to State Chief Ministers",
+      "Article 68 empowers Governor to override Vice-President decisions",
+      "Article 68 abolishes the office of Vice-President during emergency",
+      "Article 68 sets specific constitutional provisions governing Vice-President duties"
+    ],
+    "options_ta": [
+      "உறுப்பு 68 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது",
+      "உறுப்பு 68 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது",
+      "உறுப்பு 68 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது",
+      "உறுப்பு 68 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
+    ],
+    "answer": "d",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Vice-President of India"
+    ],
+    "revision_fact": "Article 68 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India."
   },
   {
     "id": "POLITY_VP_PYQ_042",
@@ -2839,8 +4028,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Article 69 sets specific constitutional provisions governing Vice-President duties",
-        "ta": "உறுப்பு 69 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
+        "en": "Article 69 abolishes the office of Vice-President during emergency",
+        "ta": "உறுப்பு 69 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது"
       },
       {
         "id": "B",
@@ -2849,8 +4038,8 @@
       },
       {
         "id": "C",
-        "en": "Article 69 abolishes the office of Vice-President during emergency",
-        "ta": "உறுப்பு 69 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது"
+        "en": "Article 69 sets specific constitutional provisions governing Vice-President duties",
+        "ta": "உறுப்பு 69 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
       },
       {
         "id": "D",
@@ -2858,21 +4047,21 @@
         "ta": "உறுப்பு 69 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "C",
     "explanation_en": "Article 69 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
     "explanation_ta": "உறுப்பு 69 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 69.",
-        "ta": "சரி. தெரிவு A உறுப்பு 69-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
+        "en": "Incorrect. Emergency does not abolish the office of Vice-President.",
+        "ta": "தவறு. அவசர நிலை VP பதவியை ரத்து செய்யாது."
       },
       "B": {
         "en": "Incorrect. Governors have no authority over the Vice-President.",
         "ta": "தவறு. ஆளுநர்களுக்கு VP மீது எவ்வித அதிகாரமும் இல்லை."
       },
       "C": {
-        "en": "Incorrect. Emergency does not abolish the office of Vice-President.",
-        "ta": "தவறு. அவசர நிலை VP பதவியை ரத்து செய்யாது."
+        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 69.",
+        "ta": "சரி. தெரிவு A உறுப்பு 69-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
       },
       "D": {
         "en": "Incorrect. Vice-President is 2nd in Warrant of Precedence, above Chief Ministers.",
@@ -2895,7 +4084,36 @@
     },
     "source_reference": [
       "Vice-President Notes Part 1/2/3 - Article 69"
-    ]
+    ],
+    "explanation": {
+      "en": "Article 69 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
+      "ta": "உறுப்பு 69 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்."
+    },
+    "question": {
+      "en": "[PYQ Pattern Q42: Article 69] Which constitutional rule accurately defines the Vice-President's powers under Article 69?",
+      "ta": "[PYQ மாதிரி வினா 42: உறுப்பு 69] உறுப்பு 69-ன் கீழ் துணைக் குடியரசுத் தலைவர் அதிகாரங்களைச் சரியாக வரையறுக்கும் அரசியலமைப்பு விதி எது?"
+    },
+    "options_en": [
+      "Article 69 abolishes the office of Vice-President during emergency",
+      "Article 69 empowers Governor to override Vice-President decisions",
+      "Article 69 sets specific constitutional provisions governing Vice-President duties",
+      "Article 69 makes Vice-President subordinate to State Chief Ministers"
+    ],
+    "options_ta": [
+      "உறுப்பு 69 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது",
+      "உறுப்பு 69 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது",
+      "உறுப்பு 69 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது",
+      "உறுப்பு 69 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
+    ],
+    "answer": "c",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Vice-President of India"
+    ],
+    "revision_fact": "Article 69 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India."
   },
   {
     "id": "POLITY_VP_PYQ_043",
@@ -2908,8 +4126,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Article 70 sets specific constitutional provisions governing Vice-President duties",
-        "ta": "உறுப்பு 70 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
+        "en": "Article 70 makes Vice-President subordinate to State Chief Ministers",
+        "ta": "உறுப்பு 70 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
       },
       {
         "id": "B",
@@ -2923,17 +4141,17 @@
       },
       {
         "id": "D",
-        "en": "Article 70 makes Vice-President subordinate to State Chief Ministers",
-        "ta": "உறுப்பு 70 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
+        "en": "Article 70 sets specific constitutional provisions governing Vice-President duties",
+        "ta": "உறுப்பு 70 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "D",
     "explanation_en": "Article 70 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
     "explanation_ta": "உறுப்பு 70 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 70.",
-        "ta": "சரி. தெரிவு A உறுப்பு 70-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
+        "en": "Incorrect. Vice-President is 2nd in Warrant of Precedence, above Chief Ministers.",
+        "ta": "தவறு. VP முன்னுரிமைப் வரிசையில் முதலமைச்சர்களுக்கு மேலான 2-வது இடத்தில் உள்ளார்."
       },
       "B": {
         "en": "Incorrect. Governors have no authority over the Vice-President.",
@@ -2944,8 +4162,8 @@
         "ta": "தவறு. அவசர நிலை VP பதவியை ரத்து செய்யாது."
       },
       "D": {
-        "en": "Incorrect. Vice-President is 2nd in Warrant of Precedence, above Chief Ministers.",
-        "ta": "தவறு. VP முன்னுரிமைப் வரிசையில் முதலமைச்சர்களுக்கு மேலான 2-வது இடத்தில் உள்ளார்."
+        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 70.",
+        "ta": "சரி. தெரிவு A உறுப்பு 70-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
       }
     },
     "tnpsc_tip": {
@@ -2964,7 +4182,36 @@
     },
     "source_reference": [
       "Vice-President Notes Part 1/2/3 - Article 70"
-    ]
+    ],
+    "explanation": {
+      "en": "Article 70 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
+      "ta": "உறுப்பு 70 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்."
+    },
+    "question": {
+      "en": "[PYQ Pattern Q43: Article 70] Which constitutional rule accurately defines the Vice-President's powers under Article 70?",
+      "ta": "[PYQ மாதிரி வினா 43: உறுப்பு 70] உறுப்பு 70-ன் கீழ் துணைக் குடியரசுத் தலைவர் அதிகாரங்களைச் சரியாக வரையறுக்கும் அரசியலமைப்பு விதி எது?"
+    },
+    "options_en": [
+      "Article 70 makes Vice-President subordinate to State Chief Ministers",
+      "Article 70 empowers Governor to override Vice-President decisions",
+      "Article 70 abolishes the office of Vice-President during emergency",
+      "Article 70 sets specific constitutional provisions governing Vice-President duties"
+    ],
+    "options_ta": [
+      "உறுப்பு 70 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது",
+      "உறுப்பு 70 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது",
+      "உறுப்பு 70 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது",
+      "உறுப்பு 70 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
+    ],
+    "answer": "d",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Vice-President of India"
+    ],
+    "revision_fact": "Article 70 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India."
   },
   {
     "id": "POLITY_VP_PYQ_044",
@@ -2977,13 +4224,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Article 71 sets specific constitutional provisions governing Vice-President duties",
-        "ta": "உறுப்பு 71 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
+        "en": "Article 71 empowers Governor to override Vice-President decisions",
+        "ta": "உறுப்பு 71 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது"
       },
       {
         "id": "B",
-        "en": "Article 71 empowers Governor to override Vice-President decisions",
-        "ta": "உறுப்பு 71 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது"
+        "en": "Article 71 sets specific constitutional provisions governing Vice-President duties",
+        "ta": "உறுப்பு 71 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
       },
       {
         "id": "C",
@@ -2996,17 +4243,17 @@
         "ta": "உறுப்பு 71 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "B",
     "explanation_en": "Article 71 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
     "explanation_ta": "உறுப்பு 71 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 71.",
-        "ta": "சரி. தெரிவு A உறுப்பு 71-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
-      },
-      "B": {
         "en": "Incorrect. Governors have no authority over the Vice-President.",
         "ta": "தவறு. ஆளுநர்களுக்கு VP மீது எவ்வித அதிகாரமும் இல்லை."
+      },
+      "B": {
+        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 71.",
+        "ta": "சரி. தெரிவு A உறுப்பு 71-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
       },
       "C": {
         "en": "Incorrect. Emergency does not abolish the office of Vice-President.",
@@ -3033,7 +4280,36 @@
     },
     "source_reference": [
       "Vice-President Notes Part 1/2/3 - Article 71"
-    ]
+    ],
+    "explanation": {
+      "en": "Article 71 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
+      "ta": "உறுப்பு 71 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்."
+    },
+    "question": {
+      "en": "[PYQ Pattern Q44: Article 71] Which constitutional rule accurately defines the Vice-President's powers under Article 71?",
+      "ta": "[PYQ மாதிரி வினா 44: உறுப்பு 71] உறுப்பு 71-ன் கீழ் துணைக் குடியரசுத் தலைவர் அதிகாரங்களைச் சரியாக வரையறுக்கும் அரசியலமைப்பு விதி எது?"
+    },
+    "options_en": [
+      "Article 71 empowers Governor to override Vice-President decisions",
+      "Article 71 sets specific constitutional provisions governing Vice-President duties",
+      "Article 71 abolishes the office of Vice-President during emergency",
+      "Article 71 makes Vice-President subordinate to State Chief Ministers"
+    ],
+    "options_ta": [
+      "உறுப்பு 71 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது",
+      "உறுப்பு 71 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது",
+      "உறுப்பு 71 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது",
+      "உறுப்பு 71 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
+    ],
+    "answer": "b",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Vice-President of India"
+    ],
+    "revision_fact": "Article 71 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India."
   },
   {
     "id": "POLITY_VP_PYQ_045",
@@ -3102,7 +4378,36 @@
     },
     "source_reference": [
       "Vice-President Notes Part 1/2/3 - Article 63"
-    ]
+    ],
+    "explanation": {
+      "en": "Article 63 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
+      "ta": "உறுப்பு 63 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்."
+    },
+    "question": {
+      "en": "[PYQ Pattern Q45: Article 63] Which constitutional rule accurately defines the Vice-President's powers under Article 63?",
+      "ta": "[PYQ மாதிரி வினா 45: உறுப்பு 63] உறுப்பு 63-ன் கீழ் துணைக் குடியரசுத் தலைவர் அதிகாரங்களைச் சரியாக வரையறுக்கும் அரசியலமைப்பு விதி எது?"
+    },
+    "options_en": [
+      "Article 63 sets specific constitutional provisions governing Vice-President duties",
+      "Article 63 empowers Governor to override Vice-President decisions",
+      "Article 63 abolishes the office of Vice-President during emergency",
+      "Article 63 makes Vice-President subordinate to State Chief Ministers"
+    ],
+    "options_ta": [
+      "உறுப்பு 63 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது",
+      "உறுப்பு 63 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது",
+      "உறுப்பு 63 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது",
+      "உறுப்பு 63 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
+    ],
+    "answer": "a",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Vice-President of India"
+    ],
+    "revision_fact": "Article 63 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India."
   },
   {
     "id": "POLITY_VP_PYQ_046",
@@ -3115,8 +4420,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Article 64 sets specific constitutional provisions governing Vice-President duties",
-        "ta": "உறுப்பு 64 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
+        "en": "Article 64 makes Vice-President subordinate to State Chief Ministers",
+        "ta": "உறுப்பு 64 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
       },
       {
         "id": "B",
@@ -3130,17 +4435,17 @@
       },
       {
         "id": "D",
-        "en": "Article 64 makes Vice-President subordinate to State Chief Ministers",
-        "ta": "உறுப்பு 64 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
+        "en": "Article 64 sets specific constitutional provisions governing Vice-President duties",
+        "ta": "உறுப்பு 64 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "D",
     "explanation_en": "Article 64 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
     "explanation_ta": "உறுப்பு 64 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 64.",
-        "ta": "சரி. தெரிவு A உறுப்பு 64-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
+        "en": "Incorrect. Vice-President is 2nd in Warrant of Precedence, above Chief Ministers.",
+        "ta": "தவறு. VP முன்னுரிமைப் வரிசையில் முதலமைச்சர்களுக்கு மேலான 2-வது இடத்தில் உள்ளார்."
       },
       "B": {
         "en": "Incorrect. Governors have no authority over the Vice-President.",
@@ -3151,8 +4456,8 @@
         "ta": "தவறு. அவசர நிலை VP பதவியை ரத்து செய்யாது."
       },
       "D": {
-        "en": "Incorrect. Vice-President is 2nd in Warrant of Precedence, above Chief Ministers.",
-        "ta": "தவறு. VP முன்னுரிமைப் வரிசையில் முதலமைச்சர்களுக்கு மேலான 2-வது இடத்தில் உள்ளார்."
+        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 64.",
+        "ta": "சரி. தெரிவு A உறுப்பு 64-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
       }
     },
     "tnpsc_tip": {
@@ -3171,7 +4476,36 @@
     },
     "source_reference": [
       "Vice-President Notes Part 1/2/3 - Article 64"
-    ]
+    ],
+    "explanation": {
+      "en": "Article 64 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
+      "ta": "உறுப்பு 64 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்."
+    },
+    "question": {
+      "en": "[PYQ Pattern Q46: Article 64] Which constitutional rule accurately defines the Vice-President's powers under Article 64?",
+      "ta": "[PYQ மாதிரி வினா 46: உறுப்பு 64] உறுப்பு 64-ன் கீழ் துணைக் குடியரசுத் தலைவர் அதிகாரங்களைச் சரியாக வரையறுக்கும் அரசியலமைப்பு விதி எது?"
+    },
+    "options_en": [
+      "Article 64 makes Vice-President subordinate to State Chief Ministers",
+      "Article 64 empowers Governor to override Vice-President decisions",
+      "Article 64 abolishes the office of Vice-President during emergency",
+      "Article 64 sets specific constitutional provisions governing Vice-President duties"
+    ],
+    "options_ta": [
+      "உறுப்பு 64 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது",
+      "உறுப்பு 64 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது",
+      "உறுப்பு 64 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது",
+      "உறுப்பு 64 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
+    ],
+    "answer": "d",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Vice-President of India"
+    ],
+    "revision_fact": "Article 64 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India."
   },
   {
     "id": "POLITY_VP_PYQ_047",
@@ -3184,8 +4518,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Article 65 sets specific constitutional provisions governing Vice-President duties",
-        "ta": "உறுப்பு 65 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
+        "en": "Article 65 abolishes the office of Vice-President during emergency",
+        "ta": "உறுப்பு 65 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது"
       },
       {
         "id": "B",
@@ -3194,8 +4528,8 @@
       },
       {
         "id": "C",
-        "en": "Article 65 abolishes the office of Vice-President during emergency",
-        "ta": "உறுப்பு 65 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது"
+        "en": "Article 65 sets specific constitutional provisions governing Vice-President duties",
+        "ta": "உறுப்பு 65 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
       },
       {
         "id": "D",
@@ -3203,21 +4537,21 @@
         "ta": "உறுப்பு 65 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "C",
     "explanation_en": "Article 65 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
     "explanation_ta": "உறுப்பு 65 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 65.",
-        "ta": "சரி. தெரிவு A உறுப்பு 65-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
+        "en": "Incorrect. Emergency does not abolish the office of Vice-President.",
+        "ta": "தவறு. அவசர நிலை VP பதவியை ரத்து செய்யாது."
       },
       "B": {
         "en": "Incorrect. Governors have no authority over the Vice-President.",
         "ta": "தவறு. ஆளுநர்களுக்கு VP மீது எவ்வித அதிகாரமும் இல்லை."
       },
       "C": {
-        "en": "Incorrect. Emergency does not abolish the office of Vice-President.",
-        "ta": "தவறு. அவசர நிலை VP பதவியை ரத்து செய்யாது."
+        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 65.",
+        "ta": "சரி. தெரிவு A உறுப்பு 65-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
       },
       "D": {
         "en": "Incorrect. Vice-President is 2nd in Warrant of Precedence, above Chief Ministers.",
@@ -3240,7 +4574,36 @@
     },
     "source_reference": [
       "Vice-President Notes Part 1/2/3 - Article 65"
-    ]
+    ],
+    "explanation": {
+      "en": "Article 65 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
+      "ta": "உறுப்பு 65 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்."
+    },
+    "question": {
+      "en": "[PYQ Pattern Q47: Article 65] Which constitutional rule accurately defines the Vice-President's powers under Article 65?",
+      "ta": "[PYQ மாதிரி வினா 47: உறுப்பு 65] உறுப்பு 65-ன் கீழ் துணைக் குடியரசுத் தலைவர் அதிகாரங்களைச் சரியாக வரையறுக்கும் அரசியலமைப்பு விதி எது?"
+    },
+    "options_en": [
+      "Article 65 abolishes the office of Vice-President during emergency",
+      "Article 65 empowers Governor to override Vice-President decisions",
+      "Article 65 sets specific constitutional provisions governing Vice-President duties",
+      "Article 65 makes Vice-President subordinate to State Chief Ministers"
+    ],
+    "options_ta": [
+      "உறுப்பு 65 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது",
+      "உறுப்பு 65 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது",
+      "உறுப்பு 65 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது",
+      "உறுப்பு 65 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
+    ],
+    "answer": "c",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Vice-President of India"
+    ],
+    "revision_fact": "Article 65 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India."
   },
   {
     "id": "POLITY_VP_PYQ_048",
@@ -3253,13 +4616,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Article 66 sets specific constitutional provisions governing Vice-President duties",
-        "ta": "உறுப்பு 66 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
+        "en": "Article 66 empowers Governor to override Vice-President decisions",
+        "ta": "உறுப்பு 66 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது"
       },
       {
         "id": "B",
-        "en": "Article 66 empowers Governor to override Vice-President decisions",
-        "ta": "உறுப்பு 66 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது"
+        "en": "Article 66 sets specific constitutional provisions governing Vice-President duties",
+        "ta": "உறுப்பு 66 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
       },
       {
         "id": "C",
@@ -3272,17 +4635,17 @@
         "ta": "உறுப்பு 66 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "B",
     "explanation_en": "Article 66 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
     "explanation_ta": "உறுப்பு 66 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 66.",
-        "ta": "சரி. தெரிவு A உறுப்பு 66-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
-      },
-      "B": {
         "en": "Incorrect. Governors have no authority over the Vice-President.",
         "ta": "தவறு. ஆளுநர்களுக்கு VP மீது எவ்வித அதிகாரமும் இல்லை."
+      },
+      "B": {
+        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 66.",
+        "ta": "சரி. தெரிவு A உறுப்பு 66-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
       },
       "C": {
         "en": "Incorrect. Emergency does not abolish the office of Vice-President.",
@@ -3309,7 +4672,36 @@
     },
     "source_reference": [
       "Vice-President Notes Part 1/2/3 - Article 66"
-    ]
+    ],
+    "explanation": {
+      "en": "Article 66 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
+      "ta": "உறுப்பு 66 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்."
+    },
+    "question": {
+      "en": "[PYQ Pattern Q48: Article 66] Which constitutional rule accurately defines the Vice-President's powers under Article 66?",
+      "ta": "[PYQ மாதிரி வினா 48: உறுப்பு 66] உறுப்பு 66-ன் கீழ் துணைக் குடியரசுத் தலைவர் அதிகாரங்களைச் சரியாக வரையறுக்கும் அரசியலமைப்பு விதி எது?"
+    },
+    "options_en": [
+      "Article 66 empowers Governor to override Vice-President decisions",
+      "Article 66 sets specific constitutional provisions governing Vice-President duties",
+      "Article 66 abolishes the office of Vice-President during emergency",
+      "Article 66 makes Vice-President subordinate to State Chief Ministers"
+    ],
+    "options_ta": [
+      "உறுப்பு 66 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது",
+      "உறுப்பு 66 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது",
+      "உறுப்பு 66 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது",
+      "உறுப்பு 66 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
+    ],
+    "answer": "b",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Vice-President of India"
+    ],
+    "revision_fact": "Article 66 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India."
   },
   {
     "id": "POLITY_VP_PYQ_049",
@@ -3322,13 +4714,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Article 67 sets specific constitutional provisions governing Vice-President duties",
-        "ta": "உறுப்பு 67 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
+        "en": "Article 67 empowers Governor to override Vice-President decisions",
+        "ta": "உறுப்பு 67 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது"
       },
       {
         "id": "B",
-        "en": "Article 67 empowers Governor to override Vice-President decisions",
-        "ta": "உறுப்பு 67 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது"
+        "en": "Article 67 sets specific constitutional provisions governing Vice-President duties",
+        "ta": "உறுப்பு 67 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
       },
       {
         "id": "C",
@@ -3341,17 +4733,17 @@
         "ta": "உறுப்பு 67 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "B",
     "explanation_en": "Article 67 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
     "explanation_ta": "உறுப்பு 67 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 67.",
-        "ta": "சரி. தெரிவு A உறுப்பு 67-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
-      },
-      "B": {
         "en": "Incorrect. Governors have no authority over the Vice-President.",
         "ta": "தவறு. ஆளுநர்களுக்கு VP மீது எவ்வித அதிகாரமும் இல்லை."
+      },
+      "B": {
+        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 67.",
+        "ta": "சரி. தெரிவு A உறுப்பு 67-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
       },
       "C": {
         "en": "Incorrect. Emergency does not abolish the office of Vice-President.",
@@ -3378,7 +4770,36 @@
     },
     "source_reference": [
       "Vice-President Notes Part 1/2/3 - Article 67"
-    ]
+    ],
+    "explanation": {
+      "en": "Article 67 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
+      "ta": "உறுப்பு 67 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்."
+    },
+    "question": {
+      "en": "[PYQ Pattern Q49: Article 67] Which constitutional rule accurately defines the Vice-President's powers under Article 67?",
+      "ta": "[PYQ மாதிரி வினா 49: உறுப்பு 67] உறுப்பு 67-ன் கீழ் துணைக் குடியரசுத் தலைவர் அதிகாரங்களைச் சரியாக வரையறுக்கும் அரசியலமைப்பு விதி எது?"
+    },
+    "options_en": [
+      "Article 67 empowers Governor to override Vice-President decisions",
+      "Article 67 sets specific constitutional provisions governing Vice-President duties",
+      "Article 67 abolishes the office of Vice-President during emergency",
+      "Article 67 makes Vice-President subordinate to State Chief Ministers"
+    ],
+    "options_ta": [
+      "உறுப்பு 67 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது",
+      "உறுப்பு 67 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது",
+      "உறுப்பு 67 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது",
+      "உறுப்பு 67 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
+    ],
+    "answer": "b",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Vice-President of India"
+    ],
+    "revision_fact": "Article 67 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India."
   },
   {
     "id": "POLITY_VP_PYQ_050",
@@ -3391,8 +4812,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Article 68 sets specific constitutional provisions governing Vice-President duties",
-        "ta": "உறுப்பு 68 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
+        "en": "Article 68 abolishes the office of Vice-President during emergency",
+        "ta": "உறுப்பு 68 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது"
       },
       {
         "id": "B",
@@ -3401,8 +4822,8 @@
       },
       {
         "id": "C",
-        "en": "Article 68 abolishes the office of Vice-President during emergency",
-        "ta": "உறுப்பு 68 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது"
+        "en": "Article 68 sets specific constitutional provisions governing Vice-President duties",
+        "ta": "உறுப்பு 68 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது"
       },
       {
         "id": "D",
@@ -3410,21 +4831,21 @@
         "ta": "உறுப்பு 68 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
       }
     ],
-    "correct_answer": "A",
+    "correct_answer": "C",
     "explanation_en": "Article 68 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
     "explanation_ta": "உறுப்பு 68 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 68.",
-        "ta": "சரி. தெரிவு A உறுப்பு 68-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
+        "en": "Incorrect. Emergency does not abolish the office of Vice-President.",
+        "ta": "தவறு. அவசர நிலை VP பதவியை ரத்து செய்யாது."
       },
       "B": {
         "en": "Incorrect. Governors have no authority over the Vice-President.",
         "ta": "தவறு. ஆளுநர்களுக்கு VP மீது எவ்வித அதிகாரமும் இல்லை."
       },
       "C": {
-        "en": "Incorrect. Emergency does not abolish the office of Vice-President.",
-        "ta": "தவறு. அவசர நிலை VP பதவியை ரத்து செய்யாது."
+        "en": "Correct. Option A accurately reflects the constitutional mandate of Article 68.",
+        "ta": "சரி. தெரிவு A உறுப்பு 68-ன் அரசியலமைப்பு விதியைச் சரியாகக் குறிப்பிடுகிறது."
       },
       "D": {
         "en": "Incorrect. Vice-President is 2nd in Warrant of Precedence, above Chief Ministers.",
@@ -3447,6 +4868,35 @@
     },
     "source_reference": [
       "Vice-President Notes Part 1/2/3 - Article 68"
-    ]
+    ],
+    "explanation": {
+      "en": "Article 68 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India.",
+      "ta": "உறுப்பு 68 பகுதி V அத்தியாயம் I-ன் கீழ் துணைக் குடியரசுத் தலைவரை நிர்வகிக்கும் அரசியலமைப்புப் பகுதியாகும்."
+    },
+    "question": {
+      "en": "[PYQ Pattern Q50: Article 68] Which constitutional rule accurately defines the Vice-President's powers under Article 68?",
+      "ta": "[PYQ மாதிரி வினா 50: உறுப்பு 68] உறுப்பு 68-ன் கீழ் துணைக் குடியரசுத் தலைவர் அதிகாரங்களைச் சரியாக வரையறுக்கும் அரசியலமைப்பு விதி எது?"
+    },
+    "options_en": [
+      "Article 68 abolishes the office of Vice-President during emergency",
+      "Article 68 empowers Governor to override Vice-President decisions",
+      "Article 68 sets specific constitutional provisions governing Vice-President duties",
+      "Article 68 makes Vice-President subordinate to State Chief Ministers"
+    ],
+    "options_ta": [
+      "உறுப்பு 68 அவசரக் காலத்தில் VP பதவியை ரத்து செய்கிறது",
+      "உறுப்பு 68 ஆளுநருக்கு VP முடிவுகளை ரத்து செய்யும் அதிகாரம் அளிக்கிறது",
+      "உறுப்பு 68 துணைக் குடியரசுத் தலைவர் பணிகளுக்கான குறிப்பிட்ட விதியை அளிக்கிறது",
+      "உறுப்பு 68 VP-ஐ மாநில முதலமைச்சர்களுக்குக் கீழ்ப்பட்டவராக்குகிறது"
+    ],
+    "answer": "c",
+    "bloom_level": "Apply",
+    "estimated_time_sec": 60,
+    "pyq_similarity": "High",
+    "tags": [
+      "Polity",
+      "Vice-President of India"
+    ],
+    "revision_fact": "Article 68 forms part of Chapter I of Part V of the Indian Constitution governing the Vice-President of India."
   }
 ]

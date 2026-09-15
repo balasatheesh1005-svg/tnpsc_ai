@@ -15,13 +15,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
       },
       {
         "id": "B",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
+        "en": "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல"
       },
       {
         "id": "C",
@@ -35,19 +35,19 @@
       }
     ],
     "options_en": [
-      "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
       "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
       "(A) is true but (R) is false",
       "(A) is false but (R) is true"
     ],
     "options_ta": [
-      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல",
       "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்",
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல",
       "(A) சரி, ஆனால் (R) தவறு",
       "(A) தவறு, ஆனால் (R) சரி"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Both (A) and (R) are true, and (R) is the correct explanation of (A). The constitutional recognition was necessitated precisely because pre-1992 municipal bodies were routinely superseded by state executives without holding regular elections.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும். 1992-க்கு முன்பு நகராட்சிகள் தொடர்ந்து கலைக்கப்பட்டு தேர்தல்கள் நடத்தப்படாமல் இருந்ததாலேயே அரசியலமைப்பு அந்தஸ்து வழங்கப்பட்டது."
@@ -56,12 +56,12 @@
     "explanation_ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும். 1992-க்கு முன்பு நகராட்சிகள் தொடர்ந்து கலைக்கப்பட்டு தேர்தல்கள் நடத்தப்படாமல் இருந்ததாலேயே அரசியலமைப்பு அந்தஸ்து வழங்கப்பட்டது.",
     "why_not_others": {
       "A": {
-        "en": "Reason directly explains why constitutional status was enacted.",
-        "ta": "காரணம் உறுதிமொழிக்கான நேரடி வரலாற்றுப் பின்னணியை விளக்குகிறது."
-      },
-      "B": {
         "en": "Option A is correct: Both statements are factual truths and Reason causally explains Assertion.",
         "ta": "விருப்பம் A சரியானது: இரண்டு கூற்றுகளும் உண்மையானவை மற்றும் காரணம் உறுதிமொழியை சரியாக விளக்குகிறது."
+      },
+      "B": {
+        "en": "Reason directly explains why constitutional status was enacted.",
+        "ta": "காரணம் உறுதிமொழிக்கான நேரடி வரலாற்றுப் பின்னணியை விளக்குகிறது."
       },
       "C": {
         "en": "Reason is completely true.",
@@ -111,13 +111,13 @@
       },
       {
         "id": "B",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
+        "en": "(A) is true but (R) is false",
+        "ta": "(A) சரி, ஆனால் (R) தவறு"
       },
       {
         "id": "C",
-        "en": "(A) is true but (R) is false",
-        "ta": "(A) சரி, ஆனால் (R) தவறு"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
       },
       {
         "id": "D",
@@ -127,18 +127,18 @@
     ],
     "options_en": [
       "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
       "(A) is true but (R) is false",
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
       "(A) is false but (R) is true"
     ],
     "options_ta": [
       "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல",
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்",
       "(A) சரி, ஆனால் (R) தவறு",
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்",
       "(A) தவறு, ஆனால் (R) சரி"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Both (A) and (R) are true, and (R) correctly explains (A). The proviso to Article 243Q(1) explicitly empowers the Governor to designate industrial townships (e.g. Jamshedpur, BHEL townships) exempting them from an elected municipality.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும். உறுப்பு 243Q(1)-ன் வரம்பு நிபந்தனை தொழில் நகரியங்களுக்கு தேர்ந்தெடுக்கப்பட்ட நகராட்சியிலிருந்து விலக்களிக்க ஆளுநருக்கு அதிகாரமளிக்கிறது."
@@ -151,12 +151,12 @@
         "ta": "R என்பது A-விற்கான அரசியலமைப்பு விதிவிலக்கை விளக்குகிறது."
       },
       "B": {
-        "en": "Option A is correct: Both statements are factual truths and Reason causally explains Assertion.",
-        "ta": "விருப்பம் A சரியானது: இரண்டு கூற்றுகளும் உண்மையானவை மற்றும் காரணம் உறுதிமொழியை சரியாக விளக்குகிறது."
-      },
-      "C": {
         "en": "Reason is true.",
         "ta": "காரணம் சரியானது."
+      },
+      "C": {
+        "en": "Option A is correct: Both statements are factual truths and Reason causally explains Assertion.",
+        "ta": "விருப்பம் A சரியானது: இரண்டு கூற்றுகளும் உண்மையானவை மற்றும் காரணம் உறுதிமொழியை சரியாக விளக்குகிறது."
       },
       "D": {
         "en": "Assertion is true.",
@@ -384,8 +384,8 @@
       },
       {
         "id": "B",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
+        "en": "(A) is false but (R) is true",
+        "ta": "(A) தவறு, ஆனால் (R) சரி"
       },
       {
         "id": "C",
@@ -394,24 +394,24 @@
       },
       {
         "id": "D",
-        "en": "(A) is false but (R) is true",
-        "ta": "(A) தவறு, ஆனால் (R) சரி"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
       }
     ],
     "options_en": [
       "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "(A) is false but (R) is true",
       "(A) is true but (R) is false",
-      "(A) is false but (R) is true"
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)"
     ],
     "options_ta": [
       "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல",
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்",
+      "(A) தவறு, ஆனால் (R) சரி",
       "(A) சரி, ஆனால் (R) தவறு",
-      "(A) தவறு, ஆனால் (R) சரி"
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Both (A) and (R) are true, and (R) is the correct constitutional explanation of (A). The affirmative constitutional guarantee under Article 243T brought lakhs of women into formal urban governance.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும். உறுப்பு 243T-ன் கீழ் உள்ள இடஒதுக்கீடு உத்தரவாதம் லட்சக்கணக்கான பெண்களை நகர்ப்புற நிர்வாகத்திற்கு கொண்டு வந்துள்ளது."
@@ -424,16 +424,16 @@
         "ta": "R-ல் உள்ள கட்டாய இடஒதுக்கீடே A-ன் மாற்றத்தை உருவாக்கியது."
       },
       "B": {
-        "en": "Option A is correct: Both statements are factual truths and Reason causally explains Assertion.",
-        "ta": "விருப்பம் A சரியானது: இரண்டு கூற்றுகளும் உண்மையானவை மற்றும் காரணம் உறுதிமொழியை சரியாக விளக்குகிறது."
+        "en": "A is true.",
+        "ta": "A சரியானது."
       },
       "C": {
         "en": "R is true.",
         "ta": "R சரியானது."
       },
       "D": {
-        "en": "A is true.",
-        "ta": "A சரியானது."
+        "en": "Option A is correct: Both statements are factual truths and Reason causally explains Assertion.",
+        "ta": "விருப்பம் A சரியானது: இரண்டு கூற்றுகளும் உண்மையானவை மற்றும் காரணம் உறுதிமொழியை சரியாக விளக்குகிறது."
       }
     },
     "tnpsc_tip": {
@@ -470,13 +470,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
       },
       {
         "id": "B",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
+        "en": "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல"
       },
       {
         "id": "C",
@@ -490,19 +490,19 @@
       }
     ],
     "options_en": [
-      "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
       "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
       "(A) is true but (R) is false",
       "(A) is false but (R) is true"
     ],
     "options_ta": [
-      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல",
       "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்",
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல",
       "(A) சரி, ஆனால் (R) தவறு",
       "(A) தவறு, ஆனால் (R) சரி"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Both (A) and (R) are true, and (R) explains the rationale behind Article 243U(4). Staggered tenures would disrupt state-wide local election schedules and State Finance Commission synchronization.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும். மாநிலம் தழுவிய தேர்தல் அட்டவணை மற்றும் நிதி ஆணையத்தின் பணிகளை ஒத்திசைக்கவே எஞ்சிய கால விதி வைக்கப்பட்டுள்ளது."
@@ -511,12 +511,12 @@
     "explanation_ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும். மாநிலம் தழுவிய தேர்தல் அட்டவணை மற்றும் நிதி ஆணையத்தின் பணிகளை ஒத்திசைக்கவே எஞ்சிய கால விதி வைக்கப்பட்டுள்ளது.",
     "why_not_others": {
       "A": {
-        "en": "Synchronized cycle in R is the exact reason for the remainder rule in A.",
-        "ta": "ஒத்திசைவான சுழற்சியே எஞ்சிய கால விதிக்குக் காரணமாகும்."
-      },
-      "B": {
         "en": "Option A is correct: Both statements are factual truths and Reason causally explains Assertion.",
         "ta": "விருப்பம் A சரியானது: இரண்டு கூற்றுகளும் உண்மையானவை மற்றும் காரணம் உறுதிமொழியை சரியாக விளக்குகிறது."
+      },
+      "B": {
+        "en": "Synchronized cycle in R is the exact reason for the remainder rule in A.",
+        "ta": "ஒத்திசைவான சுழற்சியே எஞ்சிய கால விதிக்குக் காரணமாகும்."
       },
       "C": {
         "en": "R is valid.",
@@ -652,8 +652,8 @@
     "options": [
       {
         "id": "A",
-        "en": "(A) is true but (R) is false",
-        "ta": "(A) சரி, ஆனால் (R) தவறு"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
       },
       {
         "id": "B",
@@ -662,8 +662,8 @@
       },
       {
         "id": "C",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
+        "en": "(A) is true but (R) is false",
+        "ta": "(A) சரி, ஆனால் (R) தவறு"
       },
       {
         "id": "D",
@@ -672,19 +672,19 @@
       }
     ],
     "options_en": [
-      "(A) is true but (R) is false",
-      "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
       "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+      "(A) is true but (R) is false",
       "(A) is false but (R) is true"
     ],
     "options_ta": [
-      "(A) சரி, ஆனால் (R) தவறு",
-      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல",
       "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்",
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல",
+      "(A) சரி, ஆனால் (R) தவறு",
       "(A) தவறு, ஆனால் (R) சரி"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Both (A) and (R) are true, and (R) is the correct explanation of (A). Because Article 243W uses 'may' rather than 'shall', the scope and extent of functional devolution varies widely depending on individual state political will.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும். உறுப்பு 243W கட்டாயப்படுத்தாமல் மாநில சட்டமன்றத்தின் விருப்பத்திற்கு விட்டுள்ளதால் மாநிலங்களுக்கு இடையே பணிகள் மாறுபடுகின்றன."
@@ -693,16 +693,16 @@
     "explanation_ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும். உறுப்பு 243W கட்டாயப்படுத்தாமல் மாநில சட்டமன்றத்தின் விருப்பத்திற்கு விட்டுள்ளதால் மாநிலங்களுக்கு இடையே பணிகள் மாறுபடுகின்றன.",
     "why_not_others": {
       "A": {
-        "en": "Option C is incorrect because R is true.",
-        "ta": "R உண்மையானது என்பதால் C தவறானது."
+        "en": "Option A is correct: Discretionary wording in R explains varying devolution in A.",
+        "ta": "விருப்பம் A சரியானது: R-ல் உள்ள விருப்ப உரிமை சொல்லே A-ன் வேறுபாட்டை விளக்குகிறது."
       },
       "B": {
         "en": "Option B is incorrect because R provides the legal reason.",
         "ta": "காரணம் சட்டப்பூர்வ காரணத்தை விளக்குவதால் B தவறானது."
       },
       "C": {
-        "en": "Option A is correct: Discretionary wording in R explains varying devolution in A.",
-        "ta": "விருப்பம் A சரியானது: R-ல் உள்ள விருப்ப உரிமை சொல்லே A-ன் வேறுபாட்டை விளக்குகிறது."
+        "en": "Option C is incorrect because R is true.",
+        "ta": "R உண்மையானது என்பதால் C தவறானது."
       },
       "D": {
         "en": "Option D is incorrect because A is true.",
@@ -748,13 +748,13 @@
       },
       {
         "id": "B",
-        "en": "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல"
+        "en": "(A) is true but (R) is false",
+        "ta": "(A) சரி, ஆனால் (R) தவறு"
       },
       {
         "id": "C",
-        "en": "(A) is true but (R) is false",
-        "ta": "(A) சரி, ஆனால் (R) தவறு"
+        "en": "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல"
       },
       {
         "id": "D",
@@ -764,18 +764,18 @@
     ],
     "options_en": [
       "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-      "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
       "(A) is true but (R) is false",
+      "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
       "(A) is false but (R) is true"
     ],
     "options_ta": [
       "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்",
-      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல",
       "(A) சரி, ஆனால் (R) தவறு",
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல",
       "(A) தவறு, ஆனால் (R) சரி"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "(A) is true but (R) is false. Income tax and corporate tax are exclusive Union taxes under the Union List (Entries 82 and 85). Municipalities can only levy taxes explicitly authorized by State Legislatures under Article 243X (like property tax, profession tax).",
       "ta": "(A) சரி, ஆனால் (R) தவறு. வருமான வரி மற்றும் நிறுவன வரி மத்திய அரசின் அதிகார வரம்பிற்குட்பட்டவை (மத்தியப் பட்டியல்). நகராட்சிகளுக்கு இவற்றை விதிக்கும் அதிகாரம் கிடையாது."
@@ -788,12 +788,12 @@
         "ta": "காரணம் முற்றிலும் தவறானது."
       },
       "B": {
-        "en": "R is false.",
-        "ta": "காரணம் தவறு."
-      },
-      "C": {
         "en": "Option C is correct: Assertion is true but Reason is factually false.",
         "ta": "விருப்பம் C சரியானது: உறுதிமொழி சரி ஆனால் காரணம் தவறு."
+      },
+      "C": {
+        "en": "R is false.",
+        "ta": "காரணம் தவறு."
       },
       "D": {
         "en": "A is a well-documented truth.",
@@ -935,29 +935,29 @@
       },
       {
         "id": "C",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
+        "en": "(A) is false but (R) is true",
+        "ta": "(A) தவறு, ஆனால் (R) சரி"
       },
       {
         "id": "D",
-        "en": "(A) is false but (R) is true",
-        "ta": "(A) தவறு, ஆனால் (R) சரி"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
       }
     ],
     "options_en": [
       "(A) is true but (R) is false",
       "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-      "(A) is false but (R) is true"
+      "(A) is false but (R) is true",
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)"
     ],
     "options_ta": [
       "(A) சரி, ஆனால் (R) தவறு",
       "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல",
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்",
-      "(A) தவறு, ஆனால் (R) சரி"
+      "(A) தவறு, ஆனால் (R) சரி",
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Both (A) and (R) are true, and (R) is the exact constitutional mechanism providing the security of tenure mentioned in (A). The removal requires an address by Parliament under Article 124(4) / 217.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும். உயர் நீதிமன்ற நீதிபதிக்கு இணையான பதவிநீக்கப் பாதுகாப்பு இருப்பதால் மாநில தேர்தல் ஆணையர் தன்னிச்சையாக செயல்பட முடிகிறது."
@@ -974,12 +974,12 @@
         "ta": "R-ல் உள்ள நீதிபதிக்கு இணையான பாதுகாப்பே A-ன் தன்னாட்சிக்குக் காரணமாகும்."
       },
       "C": {
-        "en": "Option A is correct: Both statements are factual truths and Reason causally explains Assertion.",
-        "ta": "விருப்பம் A சரியானது: இரண்டு கூற்றுகளும் உண்மையானவை மற்றும் காரணம் உறுதிமொழியை சரியாக விளக்குகிறது."
-      },
-      "D": {
         "en": "A is true.",
         "ta": "A சரியானது."
+      },
+      "D": {
+        "en": "Option A is correct: Both statements are factual truths and Reason causally explains Assertion.",
+        "ta": "விருப்பம் A சரியானது: இரண்டு கூற்றுகளும் உண்மையானவை மற்றும் காரணம் உறுதிமொழியை சரியாக விளக்குகிறது."
       }
     },
     "tnpsc_tip": {
@@ -1026,29 +1026,29 @@
       },
       {
         "id": "C",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
+        "en": "(A) is false but (R) is true",
+        "ta": "(A) தவறு, ஆனால் (R) சரி"
       },
       {
         "id": "D",
-        "en": "(A) is false but (R) is true",
-        "ta": "(A) தவறு, ஆனால் (R) சரி"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
       }
     ],
     "options_en": [
       "(A) is true but (R) is false",
       "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-      "(A) is false but (R) is true"
+      "(A) is false but (R) is true",
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)"
     ],
     "options_ta": [
       "(A) சரி, ஆனால் (R) தவறு",
       "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல",
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்",
-      "(A) தவறு, ஆனால் (R) சரி"
+      "(A) தவறு, ஆனால் (R) சரி",
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Both (A) and (R) are true, and (R) explains the practical necessity for the DPC under Article 243ZD. Isolating panchayat plans from municipal plans led to haphazard regional development.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும். ஊரக-நகர்ப்புற இணைப்பும் பகிரப்பட்ட உள்கட்டமைப்பும் ஒருங்கிணைந்த திட்டக்குழுவை அவசியமாக்குகின்றன."
@@ -1065,12 +1065,12 @@
         "ta": "R-ல் கூறப்பட்டுள்ள புறநகர் சூழலே DPC உருவாக்கத்திற்கு நேரடி காரணமாகும்."
       },
       "C": {
-        "en": "Option A is correct: Both statements are factual truths and Reason causally explains Assertion.",
-        "ta": "விருப்பம் A சரியானது: இரண்டு கூற்றுகளும் உண்மையானவை மற்றும் காரணம் உறுதிமொழியை சரியாக விளக்குகிறது."
-      },
-      "D": {
         "en": "A is true.",
         "ta": "A சரியானது."
+      },
+      "D": {
+        "en": "Option A is correct: Both statements are factual truths and Reason causally explains Assertion.",
+        "ta": "விருப்பம் A சரியானது: இரண்டு கூற்றுகளும் உண்மையானவை மற்றும் காரணம் உறுதிமொழியை சரியாக விளக்குகிறது."
       }
     },
     "tnpsc_tip": {
@@ -1112,8 +1112,8 @@
       },
       {
         "id": "B",
-        "en": "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
       },
       {
         "id": "C",
@@ -1122,24 +1122,24 @@
       },
       {
         "id": "D",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
+        "en": "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல"
       }
     ],
     "options_en": [
       "(A) is false but (R) is true",
-      "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
       "(A) is true but (R) is false",
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)"
+      "Both (A) and (R) are true but (R) is not the correct explanation of (A)"
     ],
     "options_ta": [
       "(A) தவறு, ஆனால் (R) சரி",
-      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல",
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்",
       "(A) சரி, ஆனால் (R) தவறு",
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Both (A) and (R) are true, and (R) explains why Article 243ZE mandates MPCs for million-plus metropolitan areas.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும். பல நகராட்சிகள் மற்றும் ஊராட்சிகளை உள்ளடக்கிய பெருநகரங்களுக்கு ஒருங்கிணைந்த திட்டமிடல் தேவைப்படுகிறது."
@@ -1152,16 +1152,16 @@
         "ta": "A சரியானது."
       },
       "B": {
-        "en": "Multi-jurisdictional complexity in R is the exact reason for MPC in A.",
-        "ta": "பல அமைப்புகள் இருக்கும் சிக்கலே MPC உருவாவதற்கான காரணமாகும்."
+        "en": "Option A is correct: Both statements are factual truths and Reason causally explains Assertion.",
+        "ta": "விருப்பம் A சரியானது: இரண்டு கூற்றுகளும் உண்மையானவை மற்றும் காரணம் உறுதிமொழியை சரியாக விளக்குகிறது."
       },
       "C": {
         "en": "R is true.",
         "ta": "R சரியானது."
       },
       "D": {
-        "en": "Option A is correct: Both statements are factual truths and Reason causally explains Assertion.",
-        "ta": "விருப்பம் A சரியானது: இரண்டு கூற்றுகளும் உண்மையானவை மற்றும் காரணம் உறுதிமொழியை சரியாக விளக்குகிறது."
+        "en": "Multi-jurisdictional complexity in R is the exact reason for MPC in A.",
+        "ta": "பல அமைப்புகள் இருக்கும் சிக்கலே MPC உருவாவதற்கான காரணமாகும்."
       }
     },
     "tnpsc_tip": {
@@ -1294,8 +1294,8 @@
       },
       {
         "id": "B",
-        "en": "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
       },
       {
         "id": "C",
@@ -1304,24 +1304,24 @@
       },
       {
         "id": "D",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
+        "en": "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல"
       }
     ],
     "options_en": [
       "(A) is false but (R) is true",
-      "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
       "(A) is true but (R) is false",
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)"
+      "Both (A) and (R) are true but (R) is not the correct explanation of (A)"
     ],
     "options_ta": [
       "(A) தவறு, ஆனால் (R) சரி",
-      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல",
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்",
       "(A) சரி, ஆனால் (R) தவறு",
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Both (A) and (R) are true, and (R) correctly explains the historical origin and rationale of the commissioner system in India.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும். பெரோஸ்ஷா மேத்தா 1888 பம்பாய் சட்டத்தில் அறிமுகப்படுத்திய மாதிரியே இன்றும் இந்தியாவில் பின்பற்றப்படுகிறது."
@@ -1334,16 +1334,16 @@
         "ta": "A சரியானது."
       },
       "B": {
-        "en": "Historical legacy in R explains the institutional structure in A.",
-        "ta": "R-ல் உள்ள வரலாற்று அமைப்பே A-ன் கட்டமைப்புக்குக் காரணமாகும்."
+        "en": "Option A is correct: Both statements are factual truths and Reason causally explains Assertion.",
+        "ta": "விருப்பம் A சரியானது: இரண்டு கூற்றுகளும் உண்மையானவை மற்றும் காரணம் உறுதிமொழியை சரியாக விளக்குகிறது."
       },
       "C": {
         "en": "R is true.",
         "ta": "R சரியானது."
       },
       "D": {
-        "en": "Option A is correct: Both statements are factual truths and Reason causally explains Assertion.",
-        "ta": "விருப்பம் A சரியானது: இரண்டு கூற்றுகளும் உண்மையானவை மற்றும் காரணம் உறுதிமொழியை சரியாக விளக்குகிறது."
+        "en": "Historical legacy in R explains the institutional structure in A.",
+        "ta": "R-ல் உள்ள வரலாற்று அமைப்பே A-ன் கட்டமைப்புக்குக் காரணமாகும்."
       }
     },
     "tnpsc_tip": {
@@ -1390,29 +1390,29 @@
       },
       {
         "id": "C",
-        "en": "(A) is true but (R) is false",
-        "ta": "(A) சரி, ஆனால் (R) தவறு"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
       },
       {
         "id": "D",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
+        "en": "(A) is true but (R) is false",
+        "ta": "(A) சரி, ஆனால் (R) தவறு"
       }
     ],
     "options_en": [
       "(A) is false but (R) is true",
       "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
-      "(A) is true but (R) is false",
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)"
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "(A) is true but (R) is false"
     ],
     "options_ta": [
       "(A) தவறு, ஆனால் (R) சரி",
       "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல",
-      "(A) சரி, ஆனால் (R) தவறு",
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்",
+      "(A) சரி, ஆனால் (R) தவறு"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Both (A) and (R) are true, and (R) explains the cabinet-style functioning of the Mayor-in-Council system introduced in Kolkata in 1984.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும். கொல்கத்தாவில் 1984-ல் தொடங்கப்பட்ட அமைச்சரவை போன்ற மேயர்-இன்-கவுன்சில் முறையில் மேயருக்கே முழு நிர்வாக அதிகாரம் உள்ளது."
@@ -1429,12 +1429,12 @@
         "ta": "அமைச்சரவை ஒப்பீடே அரசியல் தலைமையின் அதிகாரத்தை விளக்குகிறது."
       },
       "C": {
-        "en": "R is true.",
-        "ta": "R சரியானது."
-      },
-      "D": {
         "en": "Option A is correct: Both statements are factual truths and Reason causally explains Assertion.",
         "ta": "விருப்பம் A சரியானது: இரண்டு கூற்றுகளும் உண்மையானவை மற்றும் காரணம் உறுதிமொழியை சரியாக விளக்குகிறது."
+      },
+      "D": {
+        "en": "R is true.",
+        "ta": "R சரியானது."
       }
     },
     "tnpsc_tip": {
@@ -1471,8 +1471,8 @@
     "options": [
       {
         "id": "A",
-        "en": "(A) is false but (R) is true",
-        "ta": "(A) தவறு, ஆனால் (R) சரி"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
       },
       {
         "id": "B",
@@ -1486,24 +1486,24 @@
       },
       {
         "id": "D",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
+        "en": "(A) is false but (R) is true",
+        "ta": "(A) தவறு, ஆனால் (R) சரி"
       }
     ],
     "options_en": [
-      "(A) is false but (R) is true",
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
       "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
       "(A) is true but (R) is false",
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)"
+      "(A) is false but (R) is true"
     ],
     "options_ta": [
-      "(A) தவறு, ஆனால் (R) சரி",
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்",
       "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல",
       "(A) சரி, ஆனால் (R) தவறு",
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
+      "(A) தவறு, ஆனால் (R) சரி"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Both (A) and (R) are true, and (R) explains why Entry 3 of the Union List places cantonments under Central jurisdiction (Cantonments Act, 2006).",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும். இராணுவப் பாதுகாப்பு கருதி மத்தியப் பட்டியல் பதிவு 3 பாசறைகளை மத்திய அரசின் அதிகார வரம்பில் வைத்துள்ளது."
@@ -1512,8 +1512,8 @@
     "explanation_ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும். இராணுவப் பாதுகாப்பு கருதி மத்தியப் பட்டியல் பதிவு 3 பாசறைகளை மத்திய அரசின் அதிகார வரம்பில் வைத்துள்ளது.",
     "why_not_others": {
       "A": {
-        "en": "A is true.",
-        "ta": "A சரியானது."
+        "en": "Option A is correct: Both statements are factual truths and Reason causally explains Assertion.",
+        "ta": "விருப்பம் A சரியானது: இரண்டு கூற்றுகளும் உண்மையானவை மற்றும் காரணம் உறுதிமொழியை சரியாக விளக்குகிறது."
       },
       "B": {
         "en": "National security in R is the direct reason for Central administration in A.",
@@ -1524,8 +1524,8 @@
         "ta": "R சரியானது."
       },
       "D": {
-        "en": "Option A is correct: Both statements are factual truths and Reason causally explains Assertion.",
-        "ta": "விருப்பம் A சரியானது: இரண்டு கூற்றுகளும் உண்மையானவை மற்றும் காரணம் உறுதிமொழியை சரியாக விளக்குகிறது."
+        "en": "A is true.",
+        "ta": "A சரியானது."
       }
     },
     "tnpsc_tip": {
@@ -1572,29 +1572,29 @@
       },
       {
         "id": "C",
-        "en": "(A) is true but (R) is false",
-        "ta": "(A) சரி, ஆனால் (R) தவறு"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
       },
       {
         "id": "D",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
+        "en": "(A) is true but (R) is false",
+        "ta": "(A) சரி, ஆனால் (R) தவறு"
       }
     ],
     "options_en": [
       "(A) is false but (R) is true",
       "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
-      "(A) is true but (R) is false",
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)"
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "(A) is true but (R) is false"
     ],
     "options_ta": [
       "(A) தவறு, ஆனால் (R) சரி",
       "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல",
-      "(A) சரி, ஆனால் (R) தவறு",
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்",
+      "(A) சரி, ஆனால் (R) தவறு"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Both (A) and (R) are true, and (R) explains how functional parastatals bypass elected municipal councils, undermining local representative democracy.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும். தனி நோக்க முகமைகள் மாநில அரசின் கீழ் இயங்குவதால் தேர்ந்தெடுக்கப்பட்ட நகர்மன்றங்கள் பலவீனமடைகின்றன."
@@ -1611,12 +1611,12 @@
         "ta": "மாநில அரசின் கட்டுப்பாடு நகர்மன்ற அதிகார இழப்பை விளக்குகிறது."
       },
       "C": {
-        "en": "R is true.",
-        "ta": "R சரியானது."
-      },
-      "D": {
         "en": "Option A is correct: Both statements are factual truths and Reason causally explains Assertion.",
         "ta": "விருப்பம் A சரியானது: இரண்டு கூற்றுகளும் உண்மையானவை மற்றும் காரணம் உறுதிமொழியை சரியாக விளக்குகிறது."
+      },
+      "D": {
+        "en": "R is true.",
+        "ta": "R சரியானது."
       }
     },
     "tnpsc_tip": {
@@ -1653,8 +1653,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
+        "en": "(A) is false but (R) is true",
+        "ta": "(A) தவறு, ஆனால் (R) சரி"
       },
       {
         "id": "B",
@@ -1668,24 +1668,24 @@
       },
       {
         "id": "D",
-        "en": "(A) is false but (R) is true",
-        "ta": "(A) தவறு, ஆனால் (R) சரி"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
       }
     ],
     "options_en": [
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "(A) is false but (R) is true",
       "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
       "(A) is true but (R) is false",
-      "(A) is false but (R) is true"
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)"
     ],
     "options_ta": [
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்",
+      "(A) தவறு, ஆனால் (R) சரி",
       "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல",
       "(A) சரி, ஆனால் (R) தவறு",
-      "(A) தவறு, ஆனால் (R) சரி"
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Both (A) and (R) are true, and (R) explains why Ripon's philosophy earned the title of Magna Carta. Ripon explicitly prioritized democracy and civic training over bureaucratic efficiency.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும். ரிப்பன் பிரபு உள்ளாட்சி அமைப்புகளை மக்களாட்சிப் பயிற்சியின் களமாகப் பார்த்ததே இத்தீர்மானம் போற்றப்படக் காரணமாகும்."
@@ -1694,8 +1694,8 @@
     "explanation_ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும். ரிப்பன் பிரபு உள்ளாட்சி அமைப்புகளை மக்களாட்சிப் பயிற்சியின் களமாகப் பார்த்ததே இத்தீர்மானம் போற்றப்படக் காரணமாகும்.",
     "why_not_others": {
       "A": {
-        "en": "Option A is correct: Both statements are factual truths and Reason causally explains Assertion.",
-        "ta": "விருப்பம் A சரியானது: இரண்டு கூற்றுகளும் உண்மையானவை மற்றும் காரணம் உறுதிமொழியை சரியாக விளக்குகிறது."
+        "en": "A is true.",
+        "ta": "A சரியானது."
       },
       "B": {
         "en": "Political education philosophy in R directly justifies the Magna Carta moniker in A.",
@@ -1706,8 +1706,8 @@
         "ta": "R சரியானது."
       },
       "D": {
-        "en": "A is true.",
-        "ta": "A சரியானது."
+        "en": "Option A is correct: Both statements are factual truths and Reason causally explains Assertion.",
+        "ta": "விருப்பம் A சரியானது: இரண்டு கூற்றுகளும் உண்மையானவை மற்றும் காரணம் உறுதிமொழியை சரியாக விளக்குகிறது."
       }
     },
     "tnpsc_tip": {
@@ -1744,8 +1744,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
+        "en": "(A) is true but (R) is false",
+        "ta": "(A) சரி, ஆனால் (R) தவறு"
       },
       {
         "id": "B",
@@ -1754,8 +1754,8 @@
       },
       {
         "id": "C",
-        "en": "(A) is true but (R) is false",
-        "ta": "(A) சரி, ஆனால் (R) தவறு"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
       },
       {
         "id": "D",
@@ -1764,19 +1764,19 @@
       }
     ],
     "options_en": [
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-      "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
       "(A) is true but (R) is false",
+      "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
       "(A) is false but (R) is true"
     ],
     "options_ta": [
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்",
-      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல",
       "(A) சரி, ஆனால் (R) தவறு",
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல",
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்",
       "(A) தவறு, ஆனால் (R) சரி"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Both (A) and (R) are true, and (R) is the historical explanation of (A). Josiah Child and the Court of Directors created the Corporation to relieve the Company from the cost of maintaining Fort St. George and Black Town.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும். புனித ஜார்ஜ் கோட்டை மற்றும் நகரத்தின் பராமரிப்புச் செலவுகளை மக்களே ஏற்கும் வகையில் வரி வசூலிக்கவே மாநகராட்சி உருவாக்கப்பட்டது."
@@ -1785,16 +1785,16 @@
     "explanation_ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும். புனித ஜார்ஜ் கோட்டை மற்றும் நகரத்தின் பராமரிப்புச் செலவுகளை மக்களே ஏற்கும் வகையில் வரி வசூலிக்கவே மாநகராட்சி உருவாக்கப்பட்டது.",
     "why_not_others": {
       "A": {
-        "en": "Option A is correct: Both statements are factual truths and Reason causally explains Assertion.",
-        "ta": "விருப்பம் A சரியானது: இரண்டு கூற்றுகளும் உண்மையானவை மற்றும் காரணம் உறுதிமொழியை சரியாக விளக்குகிறது."
+        "en": "R is true.",
+        "ta": "R சரியானது."
       },
       "B": {
         "en": "Company financial strategy in R explains why the Corporation was created in A.",
         "ta": "கம்பெனியின் நிதிச் சுமையைக் குறைக்கும் உத்தியே A-ன் உருவாக்கத்திற்கு காரணமாகும்."
       },
       "C": {
-        "en": "R is true.",
-        "ta": "R சரியானது."
+        "en": "Option A is correct: Both statements are factual truths and Reason causally explains Assertion.",
+        "ta": "விருப்பம் A சரியானது: இரண்டு கூற்றுகளும் உண்மையானவை மற்றும் காரணம் உறுதிமொழியை சரியாக விளக்குகிறது."
       },
       "D": {
         "en": "A is true.",
@@ -1835,8 +1835,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
+        "en": "(A) is false but (R) is true",
+        "ta": "(A) தவறு, ஆனால் (R) சரி"
       },
       {
         "id": "B",
@@ -1850,24 +1850,24 @@
       },
       {
         "id": "D",
-        "en": "(A) is false but (R) is true",
-        "ta": "(A) தவறு, ஆனால் (R) சரி"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
       }
     ],
     "options_en": [
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "(A) is false but (R) is true",
       "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
       "(A) is true but (R) is false",
-      "(A) is false but (R) is true"
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)"
     ],
     "options_ta": [
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்",
+      "(A) தவறு, ஆனால் (R) சரி",
       "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல",
       "(A) சரி, ஆனால் (R) தவறு",
-      "(A) தவறு, ஆனால் (R) சரி"
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Both (A) and (R) are true, and (R) correctly explains (A). Weak digital infrastructure and discretionary manual surveys lead to severe revenue loss in property taxation.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும். டிஜிட்டல் உள்கட்டமைப்பு மற்றும் GIS குறைபாடுகளே சொத்துவரி ஏய்ப்பிற்கு முதன்மைக் காரணங்களாக உள்ளன."
@@ -1876,8 +1876,8 @@
     "explanation_ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும். டிஜிட்டல் உள்கட்டமைப்பு மற்றும் GIS குறைபாடுகளே சொத்துவரி ஏய்ப்பிற்கு முதன்மைக் காரணங்களாக உள்ளன.",
     "why_not_others": {
       "A": {
-        "en": "Option A is correct: Both statements are factual truths and Reason causally explains Assertion.",
-        "ta": "விருப்பம் A சரியானது: இரண்டு கூற்றுகளும் உண்மையானவை மற்றும் காரணம் உறுதிமொழியை சரியாக விளக்குகிறது."
+        "en": "A is true.",
+        "ta": "A சரியானது."
       },
       "B": {
         "en": "Lack of GIS in R explains under-assessment in A.",
@@ -1888,8 +1888,8 @@
         "ta": "R சரியானது."
       },
       "D": {
-        "en": "A is true.",
-        "ta": "A சரியானது."
+        "en": "Option A is correct: Both statements are factual truths and Reason causally explains Assertion.",
+        "ta": "விருப்பம் A சரியானது: இரண்டு கூற்றுகளும் உண்மையானவை மற்றும் காரணம் உறுதிமொழியை சரியாக விளக்குகிறது."
       }
     },
     "tnpsc_tip": {
@@ -2017,8 +2017,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
+        "en": "(A) is true but (R) is false",
+        "ta": "(A) சரி, ஆனால் (R) தவறு"
       },
       {
         "id": "B",
@@ -2027,8 +2027,8 @@
       },
       {
         "id": "C",
-        "en": "(A) is true but (R) is false",
-        "ta": "(A) சரி, ஆனால் (R) தவறு"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
       },
       {
         "id": "D",
@@ -2037,19 +2037,19 @@
       }
     ],
     "options_en": [
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-      "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
       "(A) is true but (R) is false",
+      "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
       "(A) is false but (R) is true"
     ],
     "options_ta": [
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்",
-      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல",
       "(A) சரி, ஆனால் (R) தவறு",
+      "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல",
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்",
       "(A) தவறு, ஆனால் (R) சரி"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Both (A) and (R) are true, and (R) is the constitutional reason that allows Tamil Nadu (and other states) to alter the mode of mayoral elections via state legislative amendments (e.g. 1996 direct, 2006 indirect, 2011 direct, 2018/2022 indirect).",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும். உறுப்பு 243R(2)(b) மாநிலங்களுக்கு அதிகாரம் அளித்துள்ளதாலேயே தமிழ்நாடு சட்டத் திருத்தங்கள் மூலம் முறையை மாற்ற முடிந்தது."
@@ -2058,16 +2058,16 @@
     "explanation_ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும். உறுப்பு 243R(2)(b) மாநிலங்களுக்கு அதிகாரம் அளித்துள்ளதாலேயே தமிழ்நாடு சட்டத் திருத்தங்கள் மூலம் முறையை மாற்ற முடிந்தது.",
     "why_not_others": {
       "A": {
-        "en": "Option A is correct: Both statements are factual truths and Reason causally explains Assertion.",
-        "ta": "விருப்பம் A சரியானது: இரண்டு கூற்றுகளும் உண்மையானவை மற்றும் காரணம் உறுதிமொழியை சரியாக விளக்குகிறது."
+        "en": "R is true.",
+        "ta": "R சரியானது."
       },
       "B": {
         "en": "State legislative discretion in R explains the shifting policy in A.",
         "ta": "மாநில சட்டமன்றத்தின் விருப்ப அதிகாரமே A-ன் கொள்கை மாற்றங்களை விளக்குகிறது."
       },
       "C": {
-        "en": "R is true.",
-        "ta": "R சரியானது."
+        "en": "Option A is correct: Both statements are factual truths and Reason causally explains Assertion.",
+        "ta": "விருப்பம் A சரியானது: இரண்டு கூற்றுகளும் உண்மையானவை மற்றும் காரணம் உறுதிமொழியை சரியாக விளக்குகிறது."
       },
       "D": {
         "en": "A is true.",
@@ -2109,13 +2109,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
+        "en": "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல"
       },
       {
         "id": "B",
-        "en": "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
-        "ta": "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல"
+        "en": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்"
       },
       {
         "id": "C",
@@ -2129,19 +2129,19 @@
       }
     ],
     "options_en": [
-      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
       "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+      "Both (A) and (R) are true and (R) is the correct explanation of (A)",
       "(A) is true but (R) is false",
       "(A) is false but (R) is true"
     ],
     "options_ta": [
-      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்",
       "(A) மற்றும் (R) இரண்டும் சரி, ஆனால் (R) என்பது (A)-விற்கான சரியான விளக்கமல்ல",
+      "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும்",
       "(A) சரி, ஆனால் (R) தவறு",
       "(A) தவறு, ஆனால் (R) சரி"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Both (A) and (R) are true, and (R) is the exact statutory basis for (A). While Article 243T sets a 33% floor, states are constitutionally competent to provide higher affirmative representation.",
       "ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும். 2016-ல் தமிழ்நாடு சட்டமன்றம் இயற்றிய சட்டமே 50% இடஒதுக்கீட்டை நடைமுறைப்படுத்தியது."
@@ -2150,12 +2150,12 @@
     "explanation_ta": "(A) மற்றும் (R) இரண்டும் சரி, மேலும் (R) என்பது (A)-விற்கான சரியான விளக்கமாகும். 2016-ல் தமிழ்நாடு சட்டமன்றம் இயற்றிய சட்டமே 50% இடஒதுக்கீட்டை நடைமுறைப்படுத்தியது.",
     "why_not_others": {
       "A": {
-        "en": "Option A is correct: Both statements are factual truths and Reason causally explains Assertion.",
-        "ta": "விருப்பம் A சரியானது: இரண்டு கூற்றுகளும் உண்மையானவை மற்றும் காரணம் உறுதிமொழியை சரியாக விளக்குகிறது."
-      },
-      "B": {
         "en": "2016 state law in R directly created the 50% reservation in A.",
         "ta": "2016 மாநில சட்டமே A-ன் 50% இடஒதுக்கீட்டை உருவாக்கியது."
+      },
+      "B": {
+        "en": "Option A is correct: Both statements are factual truths and Reason causally explains Assertion.",
+        "ta": "விருப்பம் A சரியானது: இரண்டு கூற்றுகளும் உண்மையானவை மற்றும் காரணம் உறுதிமொழியை சரியாக விளக்குகிறது."
       },
       "C": {
         "en": "R is true.",

@@ -15,13 +15,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Article 74(1)",
-        "ta": "உறுப்பு 74(1)"
+        "en": "Article 75(1)",
+        "ta": "உறுப்பு 75(1)"
       },
       {
         "id": "B",
-        "en": "Article 75(1)",
-        "ta": "உறுப்பு 75(1)"
+        "en": "Article 74(1)",
+        "ta": "உறுப்பு 74(1)"
       },
       {
         "id": "C",
@@ -35,19 +35,19 @@
       }
     ],
     "options_en": [
-      "Article 74(1)",
       "Article 75(1)",
+      "Article 74(1)",
       "Article 77(1)",
       "Article 78"
     ],
     "options_ta": [
-      "உறுப்பு 74(1)",
       "உறுப்பு 75(1)",
+      "உறுப்பு 74(1)",
       "உறுப்பு 77(1)",
       "உறுப்பு 78"
     ],
-    "correct_answer": "B",
-    "answer": "B",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Article 75(1) explicitly states that the Prime Minister shall be appointed by the President. Other ministers are appointed by the President on the advice of the Prime Minister.",
       "ta": "அரசியலமைப்பு உறுப்பு 75(1) பிரதமரை குடியரசுத் தலைவர் நியமிப்பார் எனத் தெளிவாகக் கூறுகிறது. மற்ற அமைச்சர்கள் பிரதமரின் ஆலோசனையின் பேரில் குடியரசுத் தலைவரால் நியமிக்கப்படுகின்றனர்."
@@ -82,12 +82,12 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Article 74(1) provides for a Council of Ministers with the PM at the head to aid and advise the President, not the appointment clause.",
-        "ta": "உறுப்பு 74(1) குடியரசுத் தலைவருக்கு உதவவும் ஆலோசணைகள் வழங்கவும் பிரதமரைத் தலைவராகக் கொண்ட அமைச்சரவையை வழங்குகிறது; இது நியமனப் பிரிவு அல்ல."
-      },
-      "B": {
         "en": "Article 75(1) is the exact constitutional provision empowering the President to appoint the Prime Minister.",
         "ta": "உறுப்பு 75(1) குடியரசுத் தலைவருக்குப் பிரதமரை நியமிக்க அதிகாரம் அளிக்கும் துல்லியமான அரசியலமைப்பு விதியாகும்."
+      },
+      "B": {
+        "en": "Article 74(1) provides for a Council of Ministers with the PM at the head to aid and advise the President, not the appointment clause.",
+        "ta": "உறுப்பு 74(1) குடியரசுத் தலைவருக்கு உதவவும் ஆலோசணைகள் வழங்கவும் பிரதமரைத் தலைவராகக் கொண்ட அமைச்சரவையை வழங்குகிறது; இது நியமனப் பிரிவு அல்ல."
       },
       "C": {
         "en": "Article 77(1) mandates that all executive actions of the Government of India shall be expressed to be taken in the name of the President.",
@@ -130,7 +130,11 @@
       "bloom_level": "Understand",
       "estimated_time_sec": 60,
       "pyq_similarity": "High"
-    }
+    },
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "revision_fact": "Article 75(1) explicitly states that the Prime Minister shall be appointed by the President. Other ministers are appointed by the President ..."
   },
   {
     "id": "POLITY_PM_EASY_002",
@@ -180,7 +184,7 @@
       "ஒன்றியத்தின் நீதித் துறைத் தலைவர்"
     ],
     "correct_answer": "B",
-    "answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "In India's parliamentary system, the President is the nominal executive (De Jure Head of State), while the Prime Minister is the real executive (De Facto Head of Government).",
       "ta": "இந்திய நாடாளுமன்ற ஜனநாயகத்தில், குடியரசுத் தலைவர் பெயரளவு நிர்வாகியாவார் (சட்டபூர்வத் தலைவர்); ஆனால் பிரதமர் உண்மையான நிர்வாகியாவார் (உண்மைத் தலைவர்)."
@@ -263,7 +267,11 @@
       "bloom_level": "Understand",
       "estimated_time_sec": 60,
       "pyq_similarity": "High"
-    }
+    },
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "revision_fact": "In India's parliamentary system, the President is the nominal executive (De Jure Head of State), while the Prime Minister is the real execut..."
   },
   {
     "id": "POLITY_PM_EASY_003",
@@ -286,8 +294,8 @@
       },
       {
         "id": "B",
-        "en": "6 months",
-        "ta": "6 மாதங்கள்"
+        "en": "5 years",
+        "ta": "5 ஆண்டுகள்"
       },
       {
         "id": "C",
@@ -296,24 +304,24 @@
       },
       {
         "id": "D",
-        "en": "5 years",
-        "ta": "5 ஆண்டுகள்"
+        "en": "6 months",
+        "ta": "6 மாதங்கள்"
       }
     ],
     "options_en": [
       "3 months",
-      "6 months",
+      "5 years",
       "1 year",
-      "5 years"
+      "6 months"
     ],
     "options_ta": [
       "3 மாதங்கள்",
-      "6 மாதங்கள்",
+      "5 ஆண்டுகள்",
       "1 ஆண்டு",
-      "5 ஆண்டுகள்"
+      "6 மாதங்கள்"
     ],
-    "correct_answer": "B",
-    "answer": "B",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Under Article 75(5), a minister (including the PM) who is not a member of Parliament for six consecutive months ceases to be a minister unless elected/nominated to either House.",
       "ta": "உறுப்பு 75(5)-ன் படி, நாடாளுமன்றத்தின் இரு அவைகளிலும் உறுப்பினராக இல்லாத ஒருவர் பிரதமராக நியமிக்கப்பட்டால், 6 மாதங்களுக்குள் ஏதேனும் ஒரு அவைக்குத் தேர்ந்தெடுக்கப்பட வேண்டும்."
@@ -352,16 +360,16 @@
         "ta": "3 மாதங்கள் என்பது உறுப்பு 75(5)-ன் கீழ் குறிப்பிடப்பட்ட அரசியலமைப்பு காலம் அல்ல."
       },
       "B": {
-        "en": "Six months is the exact limit provided by Article 75(5) and upheld by the Supreme Court in 1997.",
-        "ta": "6 மாதங்கள் என்பது உறுப்பு 75(5)-ல் குறிப்பிடப்பட்டு 1997-ல் உச்ச நீதிமன்றத்தால் உறுதி செய்யப்பட்ட துல்லியமான வரம்பாகும்."
+        "en": "Five years is the normal term of the Lok Sabha, not the non-member grace period.",
+        "ta": "5 ஆண்டுகள் என்பது மக்களவையின் சாதாரண ஆயுட்காலம்; உறுப்பினர் அல்லாதவருக்கான சலுகைக் காலம் அல்ல."
       },
       "C": {
         "en": "One year exceeds the mandatory six-month parliamentary membership requirement under Article 75(5).",
         "ta": "1 ஆண்டு என்பது உறுப்பு 75(5)-ன் கீழ் உள்ள 6 மாத அவகாச வரம்பை விட அதிகமாகும்."
       },
       "D": {
-        "en": "Five years is the normal term of the Lok Sabha, not the non-member grace period.",
-        "ta": "5 ஆண்டுகள் என்பது மக்களவையின் சாதாரண ஆயுட்காலம்; உறுப்பினர் அல்லாதவருக்கான சலுகைக் காலம் அல்ல."
+        "en": "Six months is the exact limit provided by Article 75(5) and upheld by the Supreme Court in 1997.",
+        "ta": "6 மாதங்கள் என்பது உறுப்பு 75(5)-ல் குறிப்பிடப்பட்டு 1997-ல் உச்ச நீதிமன்றத்தால் உறுதி செய்யப்பட்ட துல்லியமான வரம்பாகும்."
       }
     },
     "tnpsc_expert_tip": {
@@ -396,7 +404,11 @@
       "bloom_level": "Understand",
       "estimated_time_sec": 60,
       "pyq_similarity": "High"
-    }
+    },
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "revision_fact": "Under Article 75(5), a minister (including the PM) who is not a member of Parliament for six consecutive months ceases to be a minister unle..."
   },
   {
     "id": "POLITY_PM_EASY_004",
@@ -446,7 +458,7 @@
       "மாநிலங்களவைக்கு (Rajya Sabha)"
     ],
     "correct_answer": "C",
-    "answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Article 75(3) specifically states that the Council of Ministers shall be collectively responsible to the House of the People (Lok Sabha).",
       "ta": "அரசியலமைப்பு உறுப்பு 75(3) அமைச்சரவை மக்களவைக்கே (House of the People) கூட்டாகப் பொறுப்புடையது எனத் தெளிவாகக் குறிப்பிடுகிறது."
@@ -529,7 +541,11 @@
       "bloom_level": "Understand",
       "estimated_time_sec": 60,
       "pyq_similarity": "High"
-    }
+    },
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "revision_fact": "Article 75(3) specifically states that the Council of Ministers shall be collectively responsible to the House of the People (Lok Sabha)."
   },
   {
     "id": "POLITY_PM_EASY_005",
@@ -557,29 +573,29 @@
       },
       {
         "id": "C",
-        "en": "Article 77",
-        "ta": "உறுப்பு 77"
+        "en": "Article 78",
+        "ta": "உறுப்பு 78"
       },
       {
         "id": "D",
-        "en": "Article 78",
-        "ta": "உறுப்பு 78"
+        "en": "Article 77",
+        "ta": "உறுப்பு 77"
       }
     ],
     "options_en": [
       "Article 74",
       "Article 75",
-      "Article 77",
-      "Article 78"
+      "Article 78",
+      "Article 77"
     ],
     "options_ta": [
       "உறுப்பு 74",
       "உறுப்பு 75",
-      "உறுப்பு 77",
-      "உறுப்பு 78"
+      "உறுப்பு 78",
+      "உறுப்பு 77"
     ],
-    "correct_answer": "D",
-    "answer": "D",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Article 78 outlines the constitutional duties of the Prime Minister to communicate all decisions of the Council of Ministers to the President and furnish information as requested.",
       "ta": "அரசியலமைப்பு உறுப்பு 78 அமைச்சரவையின் அனைத்து முடிவுகளையும் குடியரசுத் தலைவருக்குத் தெரிவிப்பதும், அவர் கேட்கும் தகவல்களை வழங்குவதும் பிரதமரின் கடமை எனக் கூறுகிறது."
@@ -622,12 +638,12 @@
         "ta": "உறுப்பு 75 அமைச்சர்களின் நியமனம், பதவிக்காலம், பொறுப்பு, உறுதிமொழி மற்றும் தகுதிகளைப் பற்றியதாகும்."
       },
       "C": {
-        "en": "Article 77 deals with the conduct of executive business of the Government of India.",
-        "ta": "உறுப்பு 77 இந்திய அரசாங்கத்தின் நிர்வாக நடவடிக்கைகளை நடத்துவது பற்றியதாகும்."
-      },
-      "D": {
         "en": "Article 78 is the exact constitutional mandate defining the PM's duties to inform the President.",
         "ta": "உறுப்பு 78 குடியரசுத் தலைவருக்குத் தகவல் தெரிவிக்கும் பிரதமரின் கடமைகளை வரையறுக்கும் துல்லியமான அரசியலமைப்பு விதியாகும்."
+      },
+      "D": {
+        "en": "Article 77 deals with the conduct of executive business of the Government of India.",
+        "ta": "உறுப்பு 77 இந்திய அரசாங்கத்தின் நிர்வாக நடவடிக்கைகளை நடத்துவது பற்றியதாகும்."
       }
     },
     "tnpsc_expert_tip": {
@@ -662,7 +678,11 @@
       "bloom_level": "Understand",
       "estimated_time_sec": 60,
       "pyq_similarity": "High"
-    }
+    },
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "revision_fact": "Article 78 outlines the constitutional duties of the Prime Minister to communicate all decisions of the Council of Ministers to the Presiden..."
   },
   {
     "id": "POLITY_PM_EASY_006",
@@ -712,12 +732,12 @@
       "35 ஆண்டுகள்"
     ],
     "correct_answer": "B",
-    "answer": "B",
+    "answer": "b",
     "explanation": {
-      "en": "The minimum age for Lok Sabha membership is 25 years (Art 84). Hence, a Lok Sabha member can become PM at age 25. If from Rajya Sabha, the minimum age is 30 years.",
+      "en": "The minimum age for Lok Sabha membership is 25 years (Art 84). Hence, Option B is correct: a Lok Sabha member can become PM at age 25. If from Rajya Sabha, the minimum age is 30 years.",
       "ta": "மக்களவை உறுப்பினராவதற்கான குறைந்தபட்ச வயது 25 ஆண்டுகள் (உறுப்பு 84). எனவே மக்களவை உறுப்பினர் 25 வயதிலேயே பிரதமராக முடியும். மாநிலங்களவை உறுப்பினர் எனில் 30 வயதாகும்."
     },
-    "explanation_en": "The minimum age for Lok Sabha membership is 25 years (Art 84). Hence, a Lok Sabha member can become PM at age 25. If from Rajya Sabha, the minimum age is 30 years.",
+    "explanation_en": "The minimum age for Lok Sabha membership is 25 years (Art 84). Hence, Option B is correct: a Lok Sabha member can become PM at age 25. If from Rajya Sabha, the minimum age is 30 years.",
     "explanation_ta": "மக்களவை உறுப்பினராவதற்கான குறைந்தபட்ச வயது 25 ஆண்டுகள் (உறுப்பு 84). எனவே மக்களவை உறுப்பினர் 25 வயதிலேயே பிரதமராக முடியும். மாநிலங்களவை உறுப்பினர் எனில் 30 வயதாகும்.",
     "distractor_analysis": {
       "A": {
@@ -795,7 +815,11 @@
       "bloom_level": "Understand",
       "estimated_time_sec": 60,
       "pyq_similarity": "High"
-    }
+    },
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "revision_fact": "The minimum age for Lok Sabha membership is 25 years (Art 84). Hence, Option B is correct: a Lok Sabha member can become PM at age 25. If fr..."
   },
   {
     "id": "POLITY_PM_EASY_007",
@@ -813,8 +837,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Union Finance Minister",
-        "ta": "ஒன்றிய நிதியமைச்சர்"
+        "en": "Prime Minister of India",
+        "ta": "இந்தியப் பிரதமர்"
       },
       {
         "id": "B",
@@ -823,8 +847,8 @@
       },
       {
         "id": "C",
-        "en": "Prime Minister of India",
-        "ta": "இந்தியப் பிரதமர்"
+        "en": "Union Finance Minister",
+        "ta": "ஒன்றிய நிதியமைச்சர்"
       },
       {
         "id": "D",
@@ -833,19 +857,19 @@
       }
     ],
     "options_en": [
-      "Union Finance Minister",
-      "President of India",
       "Prime Minister of India",
+      "President of India",
+      "Union Finance Minister",
       "Governor of Reserve Bank of India"
     ],
     "options_ta": [
-      "ஒன்றிய நிதியமைச்சர்",
-      "இந்தியக் குடியரசுத் தலைவர்",
       "இந்தியப் பிரதமர்",
+      "இந்தியக் குடியரசுத் தலைவர்",
+      "ஒன்றிய நிதியமைச்சர்",
       "இந்திய ரிசர்வ் வங்கி ஆளுநர்"
     ],
-    "correct_answer": "C",
-    "answer": "C",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "The Prime Minister of India is the Ex-Officio Chairperson of NITI Aayog (National Institution for Transforming India), succeeding the former Planning Commission.",
       "ta": "இந்தியப் பிரதமர் நிதி ஆயோக்கின் (NITI Aayog) பதவிவழித் தலைவராகச் (Ex-Officio Chairperson) செயல்படுகிறார்."
@@ -880,16 +904,16 @@
     },
     "why_not_others": {
       "A": {
-        "en": "The Finance Minister is a key member/minister in NITI Aayog, but the PM is the Chairperson.",
-        "ta": "நிதியமைச்சர் நிதி ஆயோக்கின் முக்கிய அமைச்சரவை உறுப்பினராவார், ஆனால் பிரதமர் தலைவராவார்."
+        "en": "The Prime Minister is constitutionally and executive-wise designated as Ex-Officio Chairperson of NITI Aayog.",
+        "ta": "பிரதமர் நிதி ஆயோக்கின் பதவிவழித் தலைவராக நிர்வாக ரீதியாக நியமிக்கப்பட்டுள்ளார்."
       },
       "B": {
         "en": "The President is not involved in executive chairmanships of policy bodies like NITI Aayog.",
         "ta": "குடியரசுத் தலைவர் நிதி ஆயோக் போன்ற கொள்கை அமைப்புகளின் தலைவராகச் செயல்படுவதில்லை."
       },
       "C": {
-        "en": "The Prime Minister is constitutionally and executive-wise designated as Ex-Officio Chairperson of NITI Aayog.",
-        "ta": "பிரதமர் நிதி ஆயோக்கின் பதவிவழித் தலைவராக நிர்வாக ரீதியாக நியமிக்கப்பட்டுள்ளார்."
+        "en": "The Finance Minister is a key member/minister in NITI Aayog, but the PM is the Chairperson.",
+        "ta": "நிதியமைச்சர் நிதி ஆயோக்கின் முக்கிய அமைச்சரவை உறுப்பினராவார், ஆனால் பிரதமர் தலைவராவார்."
       },
       "D": {
         "en": "The RBI Governor heads India's central bank and monetary policy committee, not NITI Aayog.",
@@ -928,7 +952,11 @@
       "bloom_level": "Understand",
       "estimated_time_sec": 60,
       "pyq_similarity": "High"
-    }
+    },
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "revision_fact": "The Prime Minister of India is the Ex-Officio Chairperson of NITI Aayog (National Institution for Transforming India), succeeding the former..."
   },
   {
     "id": "POLITY_PM_EASY_008",
@@ -946,8 +974,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Chief Justice of India",
-        "ta": "இந்தியத் தலைமை நீதிபதி"
+        "en": "President of India",
+        "ta": "இந்தியக் குடியரசுத் தலைவர்"
       },
       {
         "id": "B",
@@ -956,8 +984,8 @@
       },
       {
         "id": "C",
-        "en": "President of India",
-        "ta": "இந்தியக் குடியரசுத் தலைவர்"
+        "en": "Chief Justice of India",
+        "ta": "இந்தியத் தலைமை நீதிபதி"
       },
       {
         "id": "D",
@@ -966,19 +994,19 @@
       }
     ],
     "options_en": [
-      "Chief Justice of India",
-      "Speaker of Lok Sabha",
       "President of India",
+      "Speaker of Lok Sabha",
+      "Chief Justice of India",
       "Outgoing Prime Minister"
     ],
     "options_ta": [
-      "இந்தியத் தலைமை நீதிபதி",
-      "மக்களவை சபாநாயகர்",
       "இந்தியக் குடியரசுத் தலைவர்",
+      "மக்களவை சபாநாயகர்",
+      "இந்தியத் தலைமை நீதிபதி",
       "பதவி விலகும் பிரதமர்"
     ],
-    "correct_answer": "C",
-    "answer": "C",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Under Article 75(4), before a Minister (including PM) enters upon office, the President (or a person appointed by him) administers the oaths of office and secrecy according to the Third Schedule.",
       "ta": "அரசியலமைப்பு உறுப்பு 75(4)-ன் படி, பிரதமர் பதவியேற்கும் முன், 3வது அட்டவணையின்படி குடியரசுத் தலைவர் அவர்களுக்குப் பதவிப் பிரமாணமும் இரகசியக் காப்புப் பிரமாணமும் செய்து வைக்கிறார்."
@@ -1013,16 +1041,16 @@
     },
     "why_not_others": {
       "A": {
-        "en": "The Chief Justice of India administers oath to the President, not to the Prime Minister.",
-        "ta": "இந்தியத் தலைமை நீதிபதி குடியரசுத் தலைவருக்குப் பிரமாணம் செய்து வைக்கிறார்; பிரதமருக்கு அல்ல."
+        "en": "The President of India is constitutionally authorized under Article 75(4) to administer oaths to the PM.",
+        "ta": "அரசியலமைப்பு உறுப்பு 75(4)-ன் கீழ் பிரதமருக்குப் பிரமாணம் செய்து வைக்க குடியரசுத் தலைவருக்கே அதிகாரம் உள்ளது."
       },
       "B": {
         "en": "The Speaker of Lok Sabha presides over Lok Sabha debates and does not administer oath to PM.",
         "ta": "சபாநாயகர் மக்களவை விவாதங்களை நடத்துபவர்; பிரதமருக்குப் பிரமாணம் செய்து வைப்பவர் அல்ல."
       },
       "C": {
-        "en": "The President of India is constitutionally authorized under Article 75(4) to administer oaths to the PM.",
-        "ta": "அரசியலமைப்பு உறுப்பு 75(4)-ன் கீழ் பிரதமருக்குப் பிரமாணம் செய்து வைக்க குடியரசுத் தலைவருக்கே அதிகாரம் உள்ளது."
+        "en": "The Chief Justice of India administers oath to the President, not to the Prime Minister.",
+        "ta": "இந்தியத் தலைமை நீதிபதி குடியரசுத் தலைவருக்குப் பிரமாணம் செய்து வைக்கிறார்; பிரதமருக்கு அல்ல."
       },
       "D": {
         "en": "The outgoing PM has no constitutional role in administering oaths to the successor.",
@@ -1061,7 +1089,11 @@
       "bloom_level": "Understand",
       "estimated_time_sec": 60,
       "pyq_similarity": "High"
-    }
+    },
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "revision_fact": "Under Article 75(4), before a Minister (including PM) enters upon office, the President (or a person appointed by him) administers the oaths..."
   },
   {
     "id": "POLITY_PM_EASY_009",
@@ -1111,7 +1143,7 @@
       "மாநிலங்களவைத் தலைவர்"
     ],
     "correct_answer": "B",
-    "answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "The Inter-State Council set up under Article 263 (established in 1990 based on Sarkaria Commission recommendations) is chaired by the Prime Minister of India.",
       "ta": "அரசியலமைப்பு உறுப்பு 263-ன் கீழ் (சர்க்காரியா ஆணைய பரிந்துரையால் 1990-ல் அமைக்கப்பட்ட) மாநிலங்களுக்கு இடையேயான குழுவின் தலைவராக இந்தியப் பிரதமர் செயல்படுகிறார்."
@@ -1194,7 +1226,11 @@
       "bloom_level": "Understand",
       "estimated_time_sec": 60,
       "pyq_similarity": "High"
-    }
+    },
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "revision_fact": "The Inter-State Council set up under Article 263 (established in 1990 based on Sarkaria Commission recommendations) is chaired by the Prime ..."
   },
   {
     "id": "POLITY_PM_EASY_010",
@@ -1217,8 +1253,8 @@
       },
       {
         "id": "B",
-        "en": "Jawaharlal Nehru",
-        "ta": "ஜவஹர்லால் நேரு"
+        "en": "Dr. B.R. Ambedkar",
+        "ta": "டாக்டர் பி.ஆர். அம்பேத்கர்"
       },
       {
         "id": "C",
@@ -1227,24 +1263,24 @@
       },
       {
         "id": "D",
-        "en": "Dr. B.R. Ambedkar",
-        "ta": "டாக்டர் பி.ஆர். அம்பேத்கர்"
+        "en": "Jawaharlal Nehru",
+        "ta": "ஜவஹர்லால் நேரு"
       }
     ],
     "options_en": [
       "Sardar Vallabhbhai Patel",
-      "Jawaharlal Nehru",
+      "Dr. B.R. Ambedkar",
       "Lal Bahadur Shastri",
-      "Dr. B.R. Ambedkar"
+      "Jawaharlal Nehru"
     ],
     "options_ta": [
       "சர்மித் சர்தார் வல்லபாய் படேல்",
-      "ஜவஹர்லால் நேரு",
+      "டாக்டர் பி.ஆர். அம்பேத்கர்",
       "லால் பகதூர் சாஸ்திரி",
-      "டாக்டர் பி.ஆர். அம்பேத்கர்"
+      "ஜவஹர்லால் நேரு"
     ],
-    "correct_answer": "B",
-    "answer": "B",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Pandit Jawaharlal Nehru was India's first Prime Minister (August 15, 1947 – May 27, 1964) and holds the record for the longest continuous tenure (16 years and 286 days).",
       "ta": "பண்டிட் ஜவஹர்லால் நேரு சுதந்திர இந்தியாவின் முதல் பிரதமராவார் (15 ஆகஸ்ட் 1947 - 27 மே 1964); அவரே மிக நீண்ட காலம் (16 ஆண்டுகள் 286 நாட்கள்) பதவி வகித்தவராவார்."
@@ -1283,16 +1319,16 @@
         "ta": "சர்தார் வல்லபாய் படேல் இந்தியாவின் முதல் துணைப் பிரதமரும் முதல் உள்துறை அமைச்சருமாவார்."
       },
       "B": {
-        "en": "Jawaharlal Nehru served continuously from 1947 until his death in 1964 as India's first and longest-serving PM.",
-        "ta": "ஜவஹர்லால் நேரு 1947 முதல் 1964 வரை இந்தியாவின் முதல் மற்றும் மிக நீண்ட காலம் பதவி வகித்த பிரதமராக இருந்தார்."
+        "en": "Dr. B.R. Ambedkar was India's first Law Minister and Chairman of the Drafting Committee.",
+        "ta": "டாக்டர் பி.ஆர். அம்பேத்கர் இந்தியாவின் முதல் சட்ட அமைச்சரும் வரைவுக் குழுவின் தலைவருமாவார்."
       },
       "C": {
         "en": "Lal Bahadur Shastri succeeded Nehru as India's second Prime Minister in 1964.",
         "ta": "லால் பகதூர் சாஸ்திரி 1964-ல் நேருவுக்குப் பிறகு இந்தியாவின் 2வது பிரதமரானார்."
       },
       "D": {
-        "en": "Dr. B.R. Ambedkar was India's first Law Minister and Chairman of the Drafting Committee.",
-        "ta": "டாக்டர் பி.ஆர். அம்பேத்கர் இந்தியாவின் முதல் சட்ட அமைச்சரும் வரைவுக் குழுவின் தலைவருமாவார்."
+        "en": "Jawaharlal Nehru served continuously from 1947 until his death in 1964 as India's first and longest-serving PM.",
+        "ta": "ஜவஹர்லால் நேரு 1947 முதல் 1964 வரை இந்தியாவின் முதல் மற்றும் மிக நீண்ட காலம் பதவி வகித்த பிரதமராக இருந்தார்."
       }
     },
     "tnpsc_expert_tip": {
@@ -1327,7 +1363,11 @@
       "bloom_level": "Understand",
       "estimated_time_sec": 60,
       "pyq_similarity": "High"
-    }
+    },
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "revision_fact": "Pandit Jawaharlal Nehru was India's first Prime Minister (August 15, 1947 – May 27, 1964) and holds the record for the longest continuous te..."
   },
   {
     "id": "POLITY_PM_EASY_011",
@@ -1345,8 +1385,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Sarojini Naidu",
-        "ta": "சரோஜினி நாயுடு"
+        "en": "Indira Gandhi",
+        "ta": "இந்திரா காந்தி"
       },
       {
         "id": "B",
@@ -1355,8 +1395,8 @@
       },
       {
         "id": "C",
-        "en": "Indira Gandhi",
-        "ta": "இந்திரா காந்தி"
+        "en": "Sarojini Naidu",
+        "ta": "சரோஜினி நாயுடு"
       },
       {
         "id": "D",
@@ -1365,19 +1405,19 @@
       }
     ],
     "options_en": [
-      "Sarojini Naidu",
-      "Sucheta Kripalani",
       "Indira Gandhi",
+      "Sucheta Kripalani",
+      "Sarojini Naidu",
       "Pratibha Patil"
     ],
     "options_ta": [
-      "சரோஜினி நாயுடு",
-      "சுசேதா கிருபாளனி",
       "இந்திரா காந்தி",
+      "சுசேதா கிருபாளனி",
+      "சரோஜினி நாயுடு",
       "பிரதிபா பாட்டீல்"
     ],
-    "correct_answer": "C",
-    "answer": "C",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Indira Gandhi became India's first female Prime Minister in 1966. Sarojini Naidu was first woman Governor, Sucheta Kripalani was first woman CM, Pratibha Patil was first woman President.",
       "ta": "இந்திரா காந்தி 1966-ல் இந்தியாவின் முதல் பெண் பிரதமரானார். சரோஜினி நாயுடு முதல் பெண் ஆளுநர், சுசேதா கிருபாளனி முதல் பெண் முதல்வர், பிரதிபா பாட்டீல் முதல் பெண் குடியரசுத் தலைவர்."
@@ -1412,16 +1452,16 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Sarojini Naidu was the first female Governor of an Indian state (UP).",
-        "ta": "சரோஜினி நாயுடு இந்தியாவின் முதல் பெண் ஆளுநர் (உத்தரப் பிரதேசம்)."
+        "en": "Indira Gandhi served as India's first woman Prime Minister from 1966 to 1977 and 1980 to 1984.",
+        "ta": "இந்திரா காந்தி இந்தியாவின் முதல் பெண் பிரதமராகச் பணியாற்றினார்."
       },
       "B": {
         "en": "Sucheta Kripalani was the first female Chief Minister of an Indian state (UP).",
         "ta": "சுசேதா கிருபாளனி இந்தியாவின் முதல் பெண் முதல்வர் (உத்தரப் பிரதேசம்)."
       },
       "C": {
-        "en": "Indira Gandhi served as India's first woman Prime Minister from 1966 to 1977 and 1980 to 1984.",
-        "ta": "இந்திரா காந்தி இந்தியாவின் முதல் பெண் பிரதமராகச் பணியாற்றினார்."
+        "en": "Sarojini Naidu was the first female Governor of an Indian state (UP).",
+        "ta": "சரோஜினி நாயுடு இந்தியாவின் முதல் பெண் ஆளுநர் (உத்தரப் பிரதேசம்)."
       },
       "D": {
         "en": "Pratibha Patil was India's first woman President (2007–2012).",
@@ -1460,7 +1500,11 @@
       "bloom_level": "Understand",
       "estimated_time_sec": 60,
       "pyq_similarity": "High"
-    }
+    },
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "revision_fact": "Indira Gandhi became India's first female Prime Minister in 1966. Sarojini Naidu was first woman Governor, Sucheta Kripalani was first woman..."
   },
   {
     "id": "POLITY_PM_EASY_012",
@@ -1478,8 +1522,8 @@
     "options": [
       {
         "id": "A",
-        "en": "42nd Amendment Act, 1976",
-        "ta": "42-வது திருத்தச் சட்டம், 1976"
+        "en": "91st Amendment Act, 2003",
+        "ta": "91-வது திருத்தச் சட்டம், 2003"
       },
       {
         "id": "B",
@@ -1488,8 +1532,8 @@
       },
       {
         "id": "C",
-        "en": "91st Amendment Act, 2003",
-        "ta": "91-வது திருத்தச் சட்டம், 2003"
+        "en": "42nd Amendment Act, 1976",
+        "ta": "42-வது திருத்தச் சட்டம், 1976"
       },
       {
         "id": "D",
@@ -1498,19 +1542,19 @@
       }
     ],
     "options_en": [
-      "42nd Amendment Act, 1976",
-      "44th Amendment Act, 1978",
       "91st Amendment Act, 2003",
+      "44th Amendment Act, 1978",
+      "42nd Amendment Act, 1976",
       "86th Amendment Act, 2002"
     ],
     "options_ta": [
-      "42-வது திருத்தச் சட்டம், 1976",
-      "44-வது திருத்தச் சட்டம், 1978",
       "91-வது திருத்தச் சட்டம், 2003",
+      "44-வது திருத்தச் சட்டம், 1978",
+      "42-வது திருத்தச் சட்டம், 1976",
       "86-வது திருத்தச் சட்டம், 2002"
     ],
-    "correct_answer": "C",
-    "answer": "C",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "The 91st Constitutional Amendment Act of 2003 inserted Article 75(1A), restricting the size of the Union Council of Ministers (including PM) to 15% of Lok Sabha membership.",
       "ta": "2003-ஆம் ஆண்டின் 91-வது அரசியலமைப்புத் திருத்தச் சட்டம் உறுப்பு 75(1A)-ஐ இணைத்து, பிரதமர் உட்பட அமைச்சர்களின் எண்ணிக்கையை மக்களவை பலத்தில் 15% ஆக வரம்பிட்டது."
@@ -1545,16 +1589,16 @@
     },
     "why_not_others": {
       "A": {
-        "en": "42nd Amendment 1976 made Presidential aid and advice binding under Article 74.",
-        "ta": "42வது திருத்தம் குடியரசுத் தலைவருக்கு அமைச்சரவையின் ஆலோசனையைக் கட்டாயமாக்கியது."
+        "en": "91st Amendment 2003 added Art 75(1A) setting the 15% limit on Council of Ministers size.",
+        "ta": "91வது திருத்தம் 2003 உறுப்பு 75(1A)-ல் 15% அமைச்சரவை வரம்பை நிர்ணயித்தது."
       },
       "B": {
         "en": "44th Amendment 1978 added reconsideration clause in Article 74(1).",
         "ta": "44வது திருத்தம் அமைச்சரவை ஆலோசனையை மறுபரிசீலனைக்கு அனுப்பும் உரிமையை வழங்கியது."
       },
       "C": {
-        "en": "91st Amendment 2003 added Art 75(1A) setting the 15% limit on Council of Ministers size.",
-        "ta": "91வது திருத்தம் 2003 உறுப்பு 75(1A)-ல் 15% அமைச்சரவை வரம்பை நிர்ணயித்தது."
+        "en": "42nd Amendment 1976 made Presidential aid and advice binding under Article 74.",
+        "ta": "42வது திருத்தம் குடியரசுத் தலைவருக்கு அமைச்சரவையின் ஆலோசனையைக் கட்டாயமாக்கியது."
       },
       "D": {
         "en": "86th Amendment 2002 made Right to Education a Fundamental Right under Article 21A.",
@@ -1593,7 +1637,11 @@
       "bloom_level": "Understand",
       "estimated_time_sec": 60,
       "pyq_similarity": "High"
-    }
+    },
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "revision_fact": "The 91st Constitutional Amendment Act of 2003 inserted Article 75(1A), restricting the size of the Union Council of Ministers (including PM)..."
   },
   {
     "id": "POLITY_PM_EASY_013",
@@ -1616,13 +1664,13 @@
       },
       {
         "id": "B",
-        "en": "The Council of Ministers automatically dissolves.",
-        "ta": "அமைச்சரவை தானாகவே கலைந்துவிடும் (Dissolves)."
+        "en": "The Vice-President automatically becomes Prime Minister.",
+        "ta": "துணைக் குடியரசுத் தலைவர் தானாகவே பிரதமராவார்."
       },
       {
         "id": "C",
-        "en": "The Vice-President automatically becomes Prime Minister.",
-        "ta": "துணைக் குடியரசுத் தலைவர் தானாகவே பிரதமராவார்."
+        "en": "The Council of Ministers automatically dissolves.",
+        "ta": "அமைச்சரவை தானாகவே கலைந்துவிடும் (Dissolves)."
       },
       {
         "id": "D",
@@ -1632,18 +1680,18 @@
     ],
     "options_en": [
       "Only the PM's office becomes vacant, other ministers continue.",
-      "The Council of Ministers automatically dissolves.",
       "The Vice-President automatically becomes Prime Minister.",
+      "The Council of Ministers automatically dissolves.",
       "Lok Sabha is automatically dissolved."
     ],
     "options_ta": [
       "பிரதமர் பதவி மட்டுமே காலியாகும், மற்ற அமைச்சர்கள் தொடர்வார்கள்.",
-      "அமைச்சரவை தானாகவே கலைந்துவிடும் (Dissolves).",
       "துணைக் குடியரசுத் தலைவர் தானாகவே பிரதமராவார்.",
+      "அமைச்சரவை தானாகவே கலைந்துவிடும் (Dissolves).",
       "மக்களவை தானாகவே கலைக்கப்படும்."
     ],
-    "correct_answer": "B",
-    "answer": "B",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Since the Prime Minister is the keystone of the Cabinet arch, the resignation or death of an incumbent PM automatically dissolves the Council of Ministers.",
       "ta": "பிரதமரே அமைச்சரவையின் மையத் தூண் (Keystone of Cabinet arch) என்பதால், அவர் பதவி விலகினாலும் அல்லது இறந்தாலும் அமைச்சரவை தானாகவே கலைந்துவிடும்."
@@ -1682,12 +1730,12 @@
         "ta": "பிரதமர் இல்லாமல் தனிப்பட்ட அமைச்சர்கள் செயல்பட முடியாது; முழு அமைச்சரவையும் வீழும்."
       },
       "B": {
-        "en": "The resignation or death of the Prime Minister automatically dissolves the Council of Ministers.",
-        "ta": "பிரதமரின் ராஜினாமா அல்லது இறப்பு அமைச்சரவையைத் தானாகவே கலைத்துவிடும்."
-      },
-      "C": {
         "en": "The Vice-President presides over Rajya Sabha and does not step in as PM automatically.",
         "ta": "துணைக் குடியரசுத் தலைவர் தானாகப் பிரதமராக முடியாது; குடியரசுத் தலைவர் புதிய பிரதமரை நியமிக்க வேண்டும்."
+      },
+      "C": {
+        "en": "The resignation or death of the Prime Minister automatically dissolves the Council of Ministers.",
+        "ta": "பிரதமரின் ராஜினாமா அல்லது இறப்பு அமைச்சரவையைத் தானாகவே கலைத்துவிடும்."
       },
       "D": {
         "en": "The Lok Sabha does not dissolve automatically; only the Council of Ministers dissolves to allow a new PM to be appointed.",
@@ -1726,7 +1774,11 @@
       "bloom_level": "Understand",
       "estimated_time_sec": 60,
       "pyq_similarity": "High"
-    }
+    },
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "revision_fact": "Since the Prime Minister is the keystone of the Cabinet arch, the resignation or death of an incumbent PM automatically dissolves the Counci..."
   },
   {
     "id": "POLITY_PM_EASY_014",
@@ -1776,7 +1828,7 @@
       "வி.பி. சிங்"
     ],
     "correct_answer": "B",
-    "answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Morarji Desai became India's first non-Congress Prime Minister in March 1977, heading the Janata Party government after the Emergency.",
       "ta": "மொரார்ஜி தேசாய் 1977 மார்ச்சில் அவசரநிலைக்குப் பிறகு ஜனதா கட்சி சார்பில் இந்தியாவின் முதல் காங்கிரஸ் அல்லாத பிரதமரானார்."
@@ -1859,7 +1911,11 @@
       "bloom_level": "Understand",
       "estimated_time_sec": 60,
       "pyq_similarity": "High"
-    }
+    },
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "revision_fact": "Morarji Desai became India's first non-Congress Prime Minister in March 1977, heading the Janata Party government after the Emergency."
   },
   {
     "id": "POLITY_PM_EASY_015",
@@ -1877,13 +1933,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Shall be inquired into by the Supreme Court only",
-        "ta": "உச்ச நீதிமன்றத்தால் மட்டுமே விசாரிக்கப்பட வேண்டும்"
+        "en": "Shall not be inquired into in any court",
+        "ta": "எந்தவொரு நீதிமன்றத்திலும் விசாரிக்கப்படக் கூடாது"
       },
       {
         "id": "B",
-        "en": "Shall not be inquired into in any court",
-        "ta": "எந்தவொரு நீதிமன்றத்திலும் விசாரிக்கப்படக் கூடாது"
+        "en": "Shall be inquired into by the Supreme Court only",
+        "ta": "உச்ச நீதிமன்றத்தால் மட்டுமே விசாரிக்கப்பட வேண்டும்"
       },
       {
         "id": "C",
@@ -1897,19 +1953,19 @@
       }
     ],
     "options_en": [
-      "Shall be inquired into by the Supreme Court only",
       "Shall not be inquired into in any court",
+      "Shall be inquired into by the Supreme Court only",
       "Shall be reviewed by Parliament",
       "Shall be published in the Official Gazette"
     ],
     "options_ta": [
-      "உச்ச நீதிமன்றத்தால் மட்டுமே விசாரிக்கப்பட வேண்டும்",
       "எந்தவொரு நீதிமன்றத்திலும் விசாரிக்கப்படக் கூடாது",
+      "உச்ச நீதிமன்றத்தால் மட்டுமே விசாரிக்கப்பட வேண்டும்",
       "நாடாளுமன்றத்தால் மறுபரிசீலனை செய்யப்பட வேண்டும்",
       "அரசிதழில் வெளியிடப்பட வேண்டும்"
     ],
-    "correct_answer": "B",
-    "answer": "B",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Article 74(2) explicitly bars judicial inquiry by stating: 'The question whether any, and if so what, advice was tendered by Ministers to the President shall not be inquired into in any court.'",
       "ta": "அரசியலமைப்பு உறுப்பு 74(2) 'அமைச்சர்கள் குடியரசுத் தலைவருக்கு வழங்கிய ஆலோசனை குறித்து எந்தவொரு நீதிமன்றமும் விசாரிக்கக் கூடாது' எனத் துல்லியமாகத் தடை விதிக்கிறது."
@@ -1944,12 +2000,12 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Courts are expressly barred from inquiring into Ministerial advice under Article 74(2).",
-        "ta": "உறுப்பு 74(2)-ன் கீழ் நீதிமன்றங்கள் அமைச்சரவை ஆலோசனையை விசாரிக்கத் தடை விதிக்கப்பட்டுள்ளது."
-      },
-      "B": {
         "en": "Article 74(2) creates an absolute constitutional immunity preventing judicial inspection of ministerial advice.",
         "ta": "உறுப்பு 74(2) நீதிமன்றங்கள் ஆலோசனையை ஆய்வு செய்வதைத் தடுக்கும் முமுமையான பாதுகாப்பை வழங்குகிறது."
+      },
+      "B": {
+        "en": "Courts are expressly barred from inquiring into Ministerial advice under Article 74(2).",
+        "ta": "உறுப்பு 74(2)-ன் கீழ் நீதிமன்றங்கள் அமைச்சரவை ஆலோசனையை விசாரிக்கத் தடை விதிக்கப்பட்டுள்ளது."
       },
       "C": {
         "en": "Parliament discusses government business but does not inquire into confidential advice to President under Art 74(2).",
@@ -1992,7 +2048,11 @@
       "bloom_level": "Understand",
       "estimated_time_sec": 60,
       "pyq_similarity": "High"
-    }
+    },
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "revision_fact": "Article 74(2) explicitly bars judicial inquiry by stating: 'The question whether any, and if so what, advice was tendered by Ministers to th..."
   },
   {
     "id": "POLITY_PM_EASY_016",
@@ -2042,7 +2102,7 @@
       "ஐ.கே. குஜ்ரால்"
     ],
     "correct_answer": "B",
-    "answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Chaudhary Charan Singh served as Prime Minister from July 1979 to January 1980 and resigned before the Lok Sabha convened, making him the only PM who never faced Parliament.",
       "ta": "சவுத்ரி சரன் சிங் 1979 ஜூலை முதல் 1980 ஜனவரி வரை பிரதமராக இருந்தார். மக்களவை கூடுவதற்கு முன்பே ராஜினாமா செய்ததால் நாடாளுமன்றத்தையே எதிர்கொள்ளாத ஒரே பிரதமரானார்."
@@ -2125,7 +2185,11 @@
       "bloom_level": "Understand",
       "estimated_time_sec": 60,
       "pyq_similarity": "High"
-    }
+    },
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "revision_fact": "Chaudhary Charan Singh served as Prime Minister from July 1979 to January 1980 and resigned before the Lok Sabha convened, making him the on..."
   },
   {
     "id": "POLITY_PM_EASY_017",
@@ -2175,7 +2239,7 @@
       "எச்.டி. தேவேகவுடா"
     ],
     "correct_answer": "B",
-    "answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Vishwanath Pratap (V.P.) Singh was the first Prime Minister to lose office following the passage of a No-Confidence Motion on November 7, 1990.",
       "ta": "விஸ்வநாத் பிரதாப் (வி.பி.) சிங் 1990 நவம்பர் 7 அன்று மக்களவையில் நம்பிக்கையில்லாத் தீர்மானம் தோற்கடிக்கப்பட்டதால் பதவியிழந்த முதல் பிரதமராவார்."
@@ -2258,7 +2322,11 @@
       "bloom_level": "Understand",
       "estimated_time_sec": 60,
       "pyq_similarity": "High"
-    }
+    },
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "revision_fact": "Vishwanath Pratap (V.P.) Singh was the first Prime Minister to lose office following the passage of a No-Confidence Motion on November 7, 19..."
   },
   {
     "id": "POLITY_PM_EASY_018",
@@ -2281,8 +2349,8 @@
       },
       {
         "id": "B",
-        "en": "He is a member of that specific House",
-        "ta": "அவர் குறிப்பிட்ட அவையின் உறுப்பினராக இருந்தால் ஒழிய"
+        "en": "He has served for at least 5 years",
+        "ta": "அவர் குறைந்தபட்சம் 5 ஆண்டுகள் பணியாற்றினால் ஒழிய"
       },
       {
         "id": "C",
@@ -2291,24 +2359,24 @@
       },
       {
         "id": "D",
-        "en": "He has served for at least 5 years",
-        "ta": "அவர் குறைந்தபட்சம் 5 ஆண்டுகள் பணியாற்றினால் ஒழிய"
+        "en": "He is a member of that specific House",
+        "ta": "அவர் குறிப்பிட்ட அவையின் உறுப்பினராக இருந்தால் ஒழிய"
       }
     ],
     "options_en": [
       "He is a Cabinet Minister",
-      "He is a member of that specific House",
+      "He has served for at least 5 years",
       "He obtains permission from the President",
-      "He has served for at least 5 years"
+      "He is a member of that specific House"
     ],
     "options_ta": [
       "அவர் அமைச்சரவை (Cabinet) அமைச்சராக இருந்தால் ஒழிய",
-      "அவர் குறிப்பிட்ட அவையின் உறுப்பினராக இருந்தால் ஒழிய",
+      "அவர் குறைந்தபட்சம் 5 ஆண்டுகள் பணியாற்றினால் ஒழிய",
       "குடியரசுத் தலைவரிடம் அனுமதி பெற்றால் ஒழிய",
-      "அவர் குறைந்தபட்சம் 5 ஆண்டுகள் பணியாற்றினால் ஒழிய"
+      "அவர் குறிப்பிட்ட அவையின் உறுப்பினராக இருந்தால் ஒழிய"
     ],
-    "correct_answer": "B",
-    "answer": "B",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Article 88 allows every Minister to speak and take part in both Lok Sabha and Rajya Sabha, but explicitly specifies that a Minister can vote ONLY in the House of which he is a member.",
       "ta": "அரசியலமைப்பு உறுப்பு 88 ஒரு அமைச்சர் இரு அவைகளிலும் பேசலாம் எனக் கூறுகிறது; ஆனால் அவர் உறுப்பினராக உள்ள அவையில் மட்டுமே வாக்களிக்க முடியும்."
@@ -2347,16 +2415,16 @@
         "ta": "கேபினட் பதவி உறுப்பினர் அல்லாத அவையில் வாக்களிக்கும் உரிமையை வழங்காது."
       },
       "B": {
-        "en": "Article 88 restricts voting strictly to the House in which the Minister holds membership.",
-        "ta": "உறுப்பு 88 வாக்களிக்கும் உரிமையை அமைச்சர் உறுப்பினராக இருக்கும் அவைக்கு மட்டுமே வரையறுக்கிறது."
+        "en": "Tenure length does not alter the mandatory parliamentary voting rule under Article 88.",
+        "ta": "பதவிக் காலம் வாக்களிக்கும் விதியை மாற்றாது."
       },
       "C": {
         "en": "The President cannot grant voting rights in Parliament contrary to Article 88.",
         "ta": "குடியரசுத் தலைவர் உறுப்பு 88-க்கு மாறாக வாக்களிக்கும் உரிமையை வழங்க முடியாது."
       },
       "D": {
-        "en": "Tenure length does not alter the mandatory parliamentary voting rule under Article 88.",
-        "ta": "பதவிக் காலம் வாக்களிக்கும் விதியை மாற்றாது."
+        "en": "Article 88 restricts voting strictly to the House in which the Minister holds membership.",
+        "ta": "உறுப்பு 88 வாக்களிக்கும் உரிமையை அமைச்சர் உறுப்பினராக இருக்கும் அவைக்கு மட்டுமே வரையறுக்கிறது."
       }
     },
     "tnpsc_expert_tip": {
@@ -2391,7 +2459,11 @@
       "bloom_level": "Understand",
       "estimated_time_sec": 60,
       "pyq_similarity": "High"
-    }
+    },
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "revision_fact": "Article 88 allows every Minister to speak and take part in both Lok Sabha and Rajya Sabha, but explicitly specifies that a Minister can vote..."
   },
   {
     "id": "POLITY_PM_EASY_019",
@@ -2414,13 +2486,13 @@
       },
       {
         "id": "B",
-        "en": "Article 75",
-        "ta": "உறுப்பு 75"
+        "en": "Article 352",
+        "ta": "உறுப்பு 352"
       },
       {
         "id": "C",
-        "en": "Article 352",
-        "ta": "உறுப்பு 352"
+        "en": "Article 75",
+        "ta": "உறுப்பு 75"
       },
       {
         "id": "D",
@@ -2430,18 +2502,18 @@
     ],
     "options_en": [
       "Article 74",
-      "Article 75",
       "Article 352",
+      "Article 75",
       "Article 78"
     ],
     "options_ta": [
       "உறுப்பு 74",
-      "உறுப்பு 75",
       "உறுப்பு 352",
+      "உறுப்பு 75",
       "உறுப்பு 78"
     ],
-    "correct_answer": "C",
-    "answer": "C",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "The term 'Cabinet' appears only ONCE in the Indian Constitution, inserted into Article 352 by the 44th Amendment Act (1978), defining it as the Council consisting of PM and other Cabinet Ministers.",
       "ta": "'கேபினட்' என்ற சொல் அரசியலமைப்பில் ஒரே ஒரு முறை மட்டுமே இடம்பெறுகிறது. 44-வது திருத்தச் சட்டம் (1978) மூலம் உறுப்பு 352-ல் 'தேசிய அவசரநிலை' அறிவிப்பு தொடர்பான பகுதியில் இது சேர்க்கப்பட்டது."
@@ -2480,12 +2552,12 @@
         "ta": "உறுப்பு 74 அமைச்சரவை (Council of Ministers) என்றே குறிப்பிடுகிறது."
       },
       "B": {
-        "en": "Article 75 details ministers' appointment and responsibility without using the term Cabinet.",
-        "ta": "உறுப்பு 75 கேபினட் என்ற சொல்லைப் பயன்படுத்தவில்லை."
-      },
-      "C": {
         "en": "Article 352 is the ONLY constitutional article where the word 'Cabinet' is explicitly defined.",
         "ta": "உறுப்பு 352 மட்டுமே 'கேபினட்' என்ற சொல் இடம்பெற்றுள்ள ஒரே அரசியலமைப்பு உறுப்பாகும்."
+      },
+      "C": {
+        "en": "Article 75 details ministers' appointment and responsibility without using the term Cabinet.",
+        "ta": "உறுப்பு 75 கேபினட் என்ற சொல்லைப் பயன்படுத்தவில்லை."
       },
       "D": {
         "en": "Article 78 outlines PM's duties to President and does not mention Cabinet.",
@@ -2524,7 +2596,11 @@
       "bloom_level": "Understand",
       "estimated_time_sec": 60,
       "pyq_similarity": "High"
-    }
+    },
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "revision_fact": "The term 'Cabinet' appears only ONCE in the Indian Constitution, inserted into Article 352 by the 44th Amendment Act (1978), defining it as ..."
   },
   {
     "id": "POLITY_PM_EASY_020",
@@ -2547,13 +2623,13 @@
       },
       {
         "id": "B",
-        "en": "Cabinet Committee on Economic Affairs",
-        "ta": "பொருளாதார விவகாரங்களுக்கான கேபினட் குழு"
+        "en": "Cabinet Committee on Political Affairs",
+        "ta": "அரசியல் விவகாரங்களுக்கான கேபினட் குழு"
       },
       {
         "id": "C",
-        "en": "Cabinet Committee on Political Affairs",
-        "ta": "அரசியல் விவகாரங்களுக்கான கேபினட் குழு"
+        "en": "Cabinet Committee on Economic Affairs",
+        "ta": "பொருளாதார விவகாரங்களுக்கான கேபினட் குழு"
       },
       {
         "id": "D",
@@ -2563,18 +2639,18 @@
     ],
     "options_en": [
       "Appointments Committee of the Cabinet",
-      "Cabinet Committee on Economic Affairs",
       "Cabinet Committee on Political Affairs",
+      "Cabinet Committee on Economic Affairs",
       "Cabinet Committee on Parliamentary Affairs"
     ],
     "options_ta": [
       "கேபினட் நியமனங்கள் குழு",
-      "பொருளாதார விவகாரங்களுக்கான கேபினட் குழு",
       "அரசியல் விவகாரங்களுக்கான கேபினட் குழு",
+      "பொருளாதார விவகாரங்களுக்கான கேபினட் குழு",
       "நாடாளுமன்ற விவகாரங்களுக்கான கேபினட் குழு"
     ],
-    "correct_answer": "C",
-    "answer": "C",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "The Cabinet Committee on Political Affairs (chaired by the Prime Minister) deals with all domestic and foreign political issues and is known as the 'Super-Cabinet'.",
       "ta": "பிரதமரைத் தலைவராகக் கொண்ட அரசியல் விவகாரங்களுக்கான கேபினட் குழு (Cabinet Committee on Political Affairs) 'சூப்பர் கேபினட்' என்று அழைக்கப்படுகிறது."
@@ -2613,12 +2689,12 @@
         "ta": "நியமனக் குழு உயர் பதவிகளைத் தீர்மானிக்கிறது; 'சூப்பர் கேபினட்' அல்ல."
       },
       "B": {
-        "en": "Economic Affairs Committee directs national financial strategy.",
-        "ta": "பொருளாதாரக் குழு நிதி உத்திகளைத் தீர்மானிக்கிறது."
-      },
-      "C": {
         "en": "Political Affairs Committee is chaired by PM and handles all supreme political affairs, hence called Super-Cabinet.",
         "ta": "அரசியல் விவகாரக் குழு பிரதமரால் தலைமை தாங்கப்பட்டு அனைத்து அரசியல் முடிவுகளையும் எடுப்பதால் 'சூப்பர் கேபினட்' எனப்படுகிறது."
+      },
+      "C": {
+        "en": "Economic Affairs Committee directs national financial strategy.",
+        "ta": "பொருளாதாரக் குழு நிதி உத்திகளைத் தீர்மானிக்கிறது."
       },
       "D": {
         "en": "Parliamentary Affairs Committee is chaired by the Home Minister, not PM.",
@@ -2657,7 +2733,11 @@
       "bloom_level": "Understand",
       "estimated_time_sec": 60,
       "pyq_similarity": "High"
-    }
+    },
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "revision_fact": "The Cabinet Committee on Political Affairs (chaired by the Prime Minister) deals with all domestic and foreign political issues and is known..."
   },
   {
     "id": "POLITY_PM_EASY_021",
@@ -2675,8 +2755,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Atal Bihari Vajpayee",
-        "ta": "அடல் பிஹாரி வாஜ்பாய்"
+        "en": "Chandra Shekhar",
+        "ta": "சந்திர சேகர்"
       },
       {
         "id": "B",
@@ -2685,8 +2765,8 @@
       },
       {
         "id": "C",
-        "en": "Chandra Shekhar",
-        "ta": "சந்திர சேகர்"
+        "en": "Atal Bihari Vajpayee",
+        "ta": "அடல் பிஹாரி வாஜ்பாய்"
       },
       {
         "id": "D",
@@ -2695,19 +2775,19 @@
       }
     ],
     "options_en": [
-      "Atal Bihari Vajpayee",
-      "Morarji Desai",
       "Chandra Shekhar",
+      "Morarji Desai",
+      "Atal Bihari Vajpayee",
       "I.K. Gujral"
     ],
     "options_ta": [
-      "அடல் பிஹாரி வாஜ்பாய்",
-      "மொரார்ஜி தேசாய்",
       "சந்திர சேகர்",
+      "மொரார்ஜி தேசாய்",
+      "அடல் பிஹாரி வாஜ்பாய்",
       "ஐ.கே. குஜ்ரால்"
     ],
-    "correct_answer": "A",
-    "answer": "A",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Vajpayee formed a 13-day government in May 1996 before resigning prior to floor test.",
       "ta": "வாஜ்பாய் 1996 மே மாதத்தில் 13 நாட்கள் மட்டுமே கொண்ட அரசை அமைத்து வாக்கெடுப்புக்கு முன் ராஜினாமா செய்தார்."
@@ -2742,16 +2822,16 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Option A is correct: Atal Bihari Vajpayee accurately reflects constitutional provisions regarding the Prime Minister.",
-        "ta": "தெரிவு A சரி: அடல் பிஹாரி வாஜ்பாய் என்பது பிரதமர் பற்றிய சரியான அரசியலமைப்பு விதியாகும்."
+        "en": "Option C (Chandra Shekhar) is incorrect as it misapplies parliamentary rules regarding the Prime Minister.",
+        "ta": "தெரிவு C (சந்திர சேகர்) தவறானது, ஏனெனில் இது நாடாளுமன்ற விதிகளை தவறாகப் பொருத்துகிறது."
       },
       "B": {
         "en": "Option B (Morarji Desai) is incorrect as it represents a common constitutional confusion regarding the executive authority.",
         "ta": "தெரிவு B (மொரார்ஜி தேசாய்) தவறானது, ஏனெனில் இது நிர்வாக அதிகாரம் பற்றிய பொதுவான குழப்பமாகும்."
       },
       "C": {
-        "en": "Option C (Chandra Shekhar) is incorrect as it misapplies parliamentary rules regarding the Prime Minister.",
-        "ta": "தெரிவு C (சந்திர சேகர்) தவறானது, ஏனெனில் இது நாடாளுமன்ற விதிகளை தவறாகப் பொருத்துகிறது."
+        "en": "Option A is correct: Atal Bihari Vajpayee accurately reflects constitutional provisions regarding the Prime Minister.",
+        "ta": "தெரிவு A சரி: அடல் பிஹாரி வாஜ்பாய் என்பது பிரதமர் பற்றிய சரியான அரசியலமைப்பு விதியாகும்."
       },
       "D": {
         "en": "Option D (I.K. Gujral) is incorrect as it contradicts established constitutional conventions.",
@@ -2790,7 +2870,11 @@
       "bloom_level": "Understand",
       "estimated_time_sec": 60,
       "pyq_similarity": "High"
-    }
+    },
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "revision_fact": "Vajpayee formed a 13-day government in May 1996 before resigning prior to floor test."
   },
   {
     "id": "POLITY_PM_EASY_022",
@@ -2808,8 +2892,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Indira Gandhi",
-        "ta": "இந்திரா காந்தி"
+        "en": "I.K. Gujral",
+        "ta": "ஐ.கே. குஜ்ரால்"
       },
       {
         "id": "B",
@@ -2823,24 +2907,24 @@
       },
       {
         "id": "D",
-        "en": "I.K. Gujral",
-        "ta": "ஐ.கே. குஜ்ரால்"
+        "en": "Indira Gandhi",
+        "ta": "இந்திரா காந்தி"
       }
     ],
     "options_en": [
-      "Indira Gandhi",
+      "I.K. Gujral",
       "Manmohan Singh",
       "H.D. Deve Gowda",
-      "I.K. Gujral"
+      "Indira Gandhi"
     ],
     "options_ta": [
-      "இந்திரா காந்தி",
+      "ஐ.கே. குஜ்ரால்",
       "மன்மோகன் சிங்",
       "எச்.டி. தேவேகவுடா",
-      "ஐ.கே. குஜ்ரால்"
+      "இந்திரா காந்தி"
     ],
-    "correct_answer": "A",
-    "answer": "A",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Indira Gandhi was a member of Rajya Sabha when she first became Prime Minister in 1966.",
       "ta": "1966-ல் இந்திரா காந்தி முதன்முதலில் பிரதமராக நியமிக்கப்பட்ட போது மாநிலங்களவை உறுப்பினராக இருந்தார்."
@@ -2875,8 +2959,8 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Option A is correct: Indira Gandhi accurately reflects constitutional provisions regarding the Prime Minister.",
-        "ta": "தெரிவு A சரி: இந்திரா காந்தி என்பது பிரதமர் பற்றிய சரியான அரசியலமைப்பு விதியாகும்."
+        "en": "Option D (I.K. Gujral) is incorrect as it contradicts established constitutional conventions.",
+        "ta": "தெரிவு D (ஐ.கே. குஜ்ரால்) தவறானது, ஏனெனில் இது அரசியலமைப்பு நடைமுறைகளுக்கு மாறானது."
       },
       "B": {
         "en": "Option B (Manmohan Singh) is incorrect as it represents a common constitutional confusion regarding the executive authority.",
@@ -2887,8 +2971,8 @@
         "ta": "தெரிவு C (எச்.டி. தேவேகவுடா) தவறானது, ஏனெனில் இது நாடாளுமன்ற விதிகளை தவறாகப் பொருத்துகிறது."
       },
       "D": {
-        "en": "Option D (I.K. Gujral) is incorrect as it contradicts established constitutional conventions.",
-        "ta": "தெரிவு D (ஐ.கே. குஜ்ரால்) தவறானது, ஏனெனில் இது அரசியலமைப்பு நடைமுறைகளுக்கு மாறானது."
+        "en": "Option A is correct: Indira Gandhi accurately reflects constitutional provisions regarding the Prime Minister.",
+        "ta": "தெரிவு A சரி: இந்திரா காந்தி என்பது பிரதமர் பற்றிய சரியான அரசியலமைப்பு விதியாகும்."
       }
     },
     "tnpsc_expert_tip": {
@@ -2923,7 +3007,11 @@
       "bloom_level": "Understand",
       "estimated_time_sec": 60,
       "pyq_similarity": "High"
-    }
+    },
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "revision_fact": "Indira Gandhi was a member of Rajya Sabha when she first became Prime Minister in 1966."
   },
   {
     "id": "POLITY_PM_EASY_023",
@@ -2941,8 +3029,8 @@
     "options": [
       {
         "id": "A",
-        "en": "President on PM's advice",
-        "ta": "பிரதமரின் ஆலோசனையின் பேரில் குடியரசுத் தலைவர்"
+        "en": "Speaker of Lok Sabha",
+        "ta": "மக்களவை சபாநாயகர்"
       },
       {
         "id": "B",
@@ -2956,24 +3044,24 @@
       },
       {
         "id": "D",
-        "en": "Speaker of Lok Sabha",
-        "ta": "மக்களவை சபாநாயகர்"
+        "en": "President on PM's advice",
+        "ta": "பிரதமரின் ஆலோசனையின் பேரில் குடியரசுத் தலைவர்"
       }
     ],
     "options_en": [
-      "President on PM's advice",
+      "Speaker of Lok Sabha",
       "Prime Minister directly",
       "Parliament by election",
-      "Speaker of Lok Sabha"
+      "President on PM's advice"
     ],
     "options_ta": [
-      "பிரதமரின் ஆலோசனையின் பேரில் குடியரசுத் தலைவர்",
+      "மக்களவை சபாநாயகர்",
       "பிரதமர் நேரடியாக",
       "நாடாளுமன்றம் தேர்தல் மூலம்",
-      "மக்களவை சபாநாயகர்"
+      "பிரதமரின் ஆலோசனையின் பேரில் குடியரசுத் தலைவர்"
     ],
-    "correct_answer": "A",
-    "answer": "A",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Under Article 75(1), the President appoints ministers strictly on the advice of the Prime Minister.",
       "ta": "உறுப்பு 75(1)-ன் படி குடியரசுத் தலைவர் பிரதமரின் ஆலோசனையின் பேரிலேயே மற்ற அமைச்சர்களை நியமிக்கிறார்."
@@ -3008,8 +3096,8 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Option A is correct: President on PM's advice accurately reflects constitutional provisions regarding the Prime Minister.",
-        "ta": "தெரிவு A சரி: பிரதமரின் ஆலோசனையின் பேரில் குடியரசுத் தலைவர் என்பது பிரதமர் பற்றிய சரியான அரசியலமைப்பு விதியாகும்."
+        "en": "Option D (Speaker of Lok Sabha) is incorrect as it contradicts established constitutional conventions.",
+        "ta": "தெரிவு D (மக்களவை சபாநாயகர்) தவறானது, ஏனெனில் இது அரசியலமைப்பு நடைமுறைகளுக்கு மாறானது."
       },
       "B": {
         "en": "Option B (Prime Minister directly) is incorrect as it represents a common constitutional confusion regarding the executive authority.",
@@ -3020,8 +3108,8 @@
         "ta": "தெரிவு C (நாடாளுமன்றம் தேர்தல் மூலம்) தவறானது, ஏனெனில் இது நாடாளுமன்ற விதிகளை தவறாகப் பொருத்துகிறது."
       },
       "D": {
-        "en": "Option D (Speaker of Lok Sabha) is incorrect as it contradicts established constitutional conventions.",
-        "ta": "தெரிவு D (மக்களவை சபாநாயகர்) தவறானது, ஏனெனில் இது அரசியலமைப்பு நடைமுறைகளுக்கு மாறானது."
+        "en": "Option A is correct: President on PM's advice accurately reflects constitutional provisions regarding the Prime Minister.",
+        "ta": "தெரிவு A சரி: பிரதமரின் ஆலோசனையின் பேரில் குடியரசுத் தலைவர் என்பது பிரதமர் பற்றிய சரியான அரசியலமைப்பு விதியாகும்."
       }
     },
     "tnpsc_expert_tip": {
@@ -3056,7 +3144,11 @@
       "bloom_level": "Understand",
       "estimated_time_sec": 60,
       "pyq_similarity": "High"
-    }
+    },
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "revision_fact": "Under Article 75(1), the President appoints ministers strictly on the advice of the Prime Minister."
   },
   {
     "id": "POLITY_PM_EASY_024",
@@ -3106,7 +3198,7 @@
       "இந்தியத் தலைமை நீதிபதி"
     ],
     "correct_answer": "A",
-    "answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Article 75(2) states that ministers hold office during the pleasure of the President (Individual Responsibility).",
       "ta": "உறுப்பு 75(2) அமைச்சர்கள் குடியரசுத் தலைவரின் விருப்பம் உள்ளவரை பதவி வகிப்பர் (தனிநபர் பொறுப்பு) எனக் கூறுகிறது."
@@ -3189,7 +3281,11 @@
       "bloom_level": "Understand",
       "estimated_time_sec": 60,
       "pyq_similarity": "High"
-    }
+    },
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "revision_fact": "Article 75(2) states that ministers hold office during the pleasure of the President (Individual Responsibility)."
   },
   {
     "id": "POLITY_PM_EASY_025",
@@ -3207,8 +3303,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Prime Minister",
-        "ta": "இந்தியப் பிரதமர்"
+        "en": "Union Home Minister",
+        "ta": "ஒன்றிய உள்துறை அமைச்சர்"
       },
       {
         "id": "B",
@@ -3217,8 +3313,8 @@
       },
       {
         "id": "C",
-        "en": "Union Home Minister",
-        "ta": "ஒன்றிய உள்துறை அமைச்சர்"
+        "en": "Prime Minister",
+        "ta": "இந்தியப் பிரதமர்"
       },
       {
         "id": "D",
@@ -3227,19 +3323,19 @@
       }
     ],
     "options_en": [
-      "Prime Minister",
-      "Speaker of Lok Sabha",
       "Union Home Minister",
+      "Speaker of Lok Sabha",
+      "Prime Minister",
       "Leader of Opposition"
     ],
     "options_ta": [
-      "இந்தியப் பிரதமர்",
-      "மக்களவை சபாநாயகர்",
       "ஒன்றிய உள்துறை அமைச்சர்",
+      "மக்களவை சபாநாயகர்",
+      "இந்தியப் பிரதமர்",
       "எதிர்க்கட்சித் தலைவர்"
     ],
-    "correct_answer": "A",
-    "answer": "A",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "By parliamentary convention, if the PM is a Lok Sabha member, he acts as Leader of the House in Lok Sabha.",
       "ta": "பிரதமர் மக்களவை உறுப்பினராக இருக்கும் பட்சத்தில், அவரே மக்களவையின் அவைத் தலைவராகச் (Leader of the House) செயல்படுகிறார்."
@@ -3274,16 +3370,16 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Option A is correct: Prime Minister accurately reflects constitutional provisions regarding the Prime Minister.",
-        "ta": "தெரிவு A சரி: இந்தியப் பிரதமர் என்பது பிரதமர் பற்றிய சரியான அரசியலமைப்பு விதியாகும்."
+        "en": "Option C (Union Home Minister) is incorrect as it misapplies parliamentary rules regarding the Prime Minister.",
+        "ta": "தெரிவு C (ஒன்றிய உள்துறை அமைச்சர்) தவறானது, ஏனெனில் இது நாடாளுமன்ற விதிகளை தவறாகப் பொருத்துகிறது."
       },
       "B": {
         "en": "Option B (Speaker of Lok Sabha) is incorrect as it represents a common constitutional confusion regarding the executive authority.",
         "ta": "தெரிவு B (மக்களவை சபாநாயகர்) தவறானது, ஏனெனில் இது நிர்வாக அதிகாரம் பற்றிய பொதுவான குழப்பமாகும்."
       },
       "C": {
-        "en": "Option C (Union Home Minister) is incorrect as it misapplies parliamentary rules regarding the Prime Minister.",
-        "ta": "தெரிவு C (ஒன்றிய உள்துறை அமைச்சர்) தவறானது, ஏனெனில் இது நாடாளுமன்ற விதிகளை தவறாகப் பொருத்துகிறது."
+        "en": "Option A is correct: Prime Minister accurately reflects constitutional provisions regarding the Prime Minister.",
+        "ta": "தெரிவு A சரி: இந்தியப் பிரதமர் என்பது பிரதமர் பற்றிய சரியான அரசியலமைப்பு விதியாகும்."
       },
       "D": {
         "en": "Option D (Leader of Opposition) is incorrect as it contradicts established constitutional conventions.",
@@ -3322,7 +3418,11 @@
       "bloom_level": "Understand",
       "estimated_time_sec": 60,
       "pyq_similarity": "High"
-    }
+    },
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "revision_fact": "By parliamentary convention, if the PM is a Lok Sabha member, he acts as Leader of the House in Lok Sabha."
   },
   {
     "id": "POLITY_PM_EASY_026",
@@ -3340,8 +3440,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Prime Minister of India",
-        "ta": "இந்தியப் பிரதமர்"
+        "en": "President of India",
+        "ta": "இந்தியக் குடியரசுத் தலைவர்"
       },
       {
         "id": "B",
@@ -3350,8 +3450,8 @@
       },
       {
         "id": "C",
-        "en": "President of India",
-        "ta": "இந்தியக் குடியரசுத் தலைவர்"
+        "en": "Prime Minister of India",
+        "ta": "இந்தியப் பிரதமர்"
       },
       {
         "id": "D",
@@ -3360,19 +3460,19 @@
       }
     ],
     "options_en": [
-      "Prime Minister of India",
-      "Union Home Minister",
       "President of India",
+      "Union Home Minister",
+      "Prime Minister of India",
       "NITI Aayog Vice-Chairman"
     ],
     "options_ta": [
-      "இந்தியப் பிரதமர்",
-      "ஒன்றிய உள்துறை அமைச்சர்",
       "இந்தியக் குடியரசுத் தலைவர்",
+      "ஒன்றிய உள்துறை அமைச்சர்",
+      "இந்தியப் பிரதமர்",
       "நிதி ஆயோக் துணைத் தலைவர்"
     ],
-    "correct_answer": "A",
-    "answer": "A",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "The National Integration Council (NIC) is chaired ex-officio by the Prime Minister of India.",
       "ta": "தேசிய ஒருமைப்பாட்டு கவுன்சிலின் (NIC) பதவிவழித் தலைவராக இந்தியப் பிரதமர் செயல்படுகிறார்."
@@ -3407,16 +3507,16 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Option A is correct: Prime Minister of India accurately reflects constitutional provisions regarding the Prime Minister.",
-        "ta": "தெரிவு A சரி: இந்தியப் பிரதமர் என்பது பிரதமர் பற்றிய சரியான அரசியலமைப்பு விதியாகும்."
+        "en": "Option C (President of India) is incorrect as it misapplies parliamentary rules regarding the Prime Minister.",
+        "ta": "தெரிவு C (இந்தியக் குடியரசுத் தலைவர்) தவறானது, ஏனெனில் இது நாடாளுமன்ற விதிகளை தவறாகப் பொருத்துகிறது."
       },
       "B": {
         "en": "Option B (Union Home Minister) is incorrect as it represents a common constitutional confusion regarding the executive authority.",
         "ta": "தெரிவு B (ஒன்றிய உள்துறை அமைச்சர்) தவறானது, ஏனெனில் இது நிர்வாக அதிகாரம் பற்றிய பொதுவான குழப்பமாகும்."
       },
       "C": {
-        "en": "Option C (President of India) is incorrect as it misapplies parliamentary rules regarding the Prime Minister.",
-        "ta": "தெரிவு C (இந்தியக் குடியரசுத் தலைவர்) தவறானது, ஏனெனில் இது நாடாளுமன்ற விதிகளை தவறாகப் பொருத்துகிறது."
+        "en": "Option A is correct: Prime Minister of India accurately reflects constitutional provisions regarding the Prime Minister.",
+        "ta": "தெரிவு A சரி: இந்தியப் பிரதமர் என்பது பிரதமர் பற்றிய சரியான அரசியலமைப்பு விதியாகும்."
       },
       "D": {
         "en": "Option D (NITI Aayog Vice-Chairman) is incorrect as it contradicts established constitutional conventions.",
@@ -3455,7 +3555,11 @@
       "bloom_level": "Understand",
       "estimated_time_sec": 60,
       "pyq_similarity": "High"
-    }
+    },
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "revision_fact": "The National Integration Council (NIC) is chaired ex-officio by the Prime Minister of India."
   },
   {
     "id": "POLITY_PM_EASY_027",
@@ -3505,7 +3609,7 @@
       "நாடாளுமன்றம்"
     ],
     "correct_answer": "A",
-    "answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Article 77(1) mandates that all executive actions of Government of India are taken in the name of President.",
       "ta": "உறுப்பு 77(1)-ன் படி இந்திய அரசின் அனைத்து நிர்வாக நடவடிக்கைகளும் குடியரசுத் தலைவரின் பெயரிலேயே மேற்கொள்ளப்படுகின்றன."
@@ -3588,7 +3692,11 @@
       "bloom_level": "Understand",
       "estimated_time_sec": 60,
       "pyq_similarity": "High"
-    }
+    },
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "revision_fact": "Article 77(1) mandates that all executive actions of Government of India are taken in the name of President."
   },
   {
     "id": "POLITY_PM_EASY_028",
@@ -3638,7 +3746,7 @@
       "இந்தியத் துணைக் குடியரசுத் தலைவர்"
     ],
     "correct_answer": "A",
-    "answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "The Prime Minister submits his resignation letter directly to the President of India.",
       "ta": "பிரதமர் தனது ராஜினாமா கடிதத்தை நேரடியாக இந்தியக் குடியரசுத் தலைவரிடம் சமர்ப்பிக்கிறார்."
@@ -3721,7 +3829,11 @@
       "bloom_level": "Understand",
       "estimated_time_sec": 60,
       "pyq_similarity": "High"
-    }
+    },
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "revision_fact": "The Prime Minister submits his resignation letter directly to the President of India."
   },
   {
     "id": "POLITY_PM_EASY_029",
@@ -3739,13 +3851,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Narendra Modi",
-        "ta": "நரேந்திர மோடி"
+        "en": "Rajiv Gandhi",
+        "ta": "ராஜீவ் காந்தி"
       },
       {
         "id": "B",
-        "en": "Rajiv Gandhi",
-        "ta": "ராஜீவ் காந்தி"
+        "en": "Narendra Modi",
+        "ta": "நரேந்திர மோடி"
       },
       {
         "id": "C",
@@ -3759,19 +3871,19 @@
       }
     ],
     "options_en": [
-      "Narendra Modi",
       "Rajiv Gandhi",
+      "Narendra Modi",
       "Manmohan Singh",
       "Atal Bihari Vajpayee"
     ],
     "options_ta": [
-      "நரேந்திர மோடி",
       "ராஜீவ் காந்தி",
+      "நரேந்திர மோடி",
       "மன்மோகன் சிங்",
       "அடல் பிஹாரி வாஜ்பாய்"
     ],
-    "correct_answer": "A",
-    "answer": "A",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Narendra Modi (born 17 September 1950) is the first Prime Minister born after India gained Independence.",
       "ta": "நரேந்திர மோடி (பிறப்பு 17 செப்டம்பர் 1950) சுதந்திரத்திற்குப் பிறகு பிறந்த முதல் இந்தியப் பிரதமராவார்."
@@ -3806,12 +3918,12 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Option A is correct: Narendra Modi accurately reflects constitutional provisions regarding the Prime Minister.",
-        "ta": "தெரிவு A சரி: நரேந்திர மோடி என்பது பிரதமர் பற்றிய சரியான அரசியலமைப்பு விதியாகும்."
-      },
-      "B": {
         "en": "Option B (Rajiv Gandhi) is incorrect as it represents a common constitutional confusion regarding the executive authority.",
         "ta": "தெரிவு B (ராஜீவ் காந்தி) தவறானது, ஏனெனில் இது நிர்வாக அதிகாரம் பற்றிய பொதுவான குழப்பமாகும்."
+      },
+      "B": {
+        "en": "Option A is correct: Narendra Modi accurately reflects constitutional provisions regarding the Prime Minister.",
+        "ta": "தெரிவு A சரி: நரேந்திர மோடி என்பது பிரதமர் பற்றிய சரியான அரசியலமைப்பு விதியாகும்."
       },
       "C": {
         "en": "Option C (Manmohan Singh) is incorrect as it misapplies parliamentary rules regarding the Prime Minister.",
@@ -3854,7 +3966,11 @@
       "bloom_level": "Understand",
       "estimated_time_sec": 60,
       "pyq_similarity": "High"
-    }
+    },
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "revision_fact": "Narendra Modi (born 17 September 1950) is the first Prime Minister born after India gained Independence."
   },
   {
     "id": "POLITY_PM_EASY_030",
@@ -3872,8 +3988,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Union Home Minister",
-        "ta": "ஒன்றிய உள்துறை அமைச்சர்"
+        "en": "Speaker of Lok Sabha",
+        "ta": "மக்களவை சபாநாயகர்"
       },
       {
         "id": "B",
@@ -3882,8 +3998,8 @@
       },
       {
         "id": "C",
-        "en": "Speaker of Lok Sabha",
-        "ta": "மக்களவை சபாநாயகர்"
+        "en": "Union Home Minister",
+        "ta": "ஒன்றிய உள்துறை அமைச்சர்"
       },
       {
         "id": "D",
@@ -3892,19 +4008,19 @@
       }
     ],
     "options_en": [
-      "Union Home Minister",
-      "Prime Minister",
       "Speaker of Lok Sabha",
+      "Prime Minister",
+      "Union Home Minister",
       "Minister of Parliamentary Affairs"
     ],
     "options_ta": [
-      "ஒன்றிய உள்துறை அமைச்சர்",
-      "இந்தியப் பிரதமர்",
       "மக்களவை சபாநாயகர்",
+      "இந்தியப் பிரதமர்",
+      "ஒன்றிய உள்துறை அமைச்சர்",
       "நாடாளுமன்ற விவகாரங்கள் துறை அமைச்சர்"
     ],
-    "correct_answer": "A",
-    "answer": "A",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Unlike most Cabinet Committees chaired by PM, the Cabinet Committee on Parliamentary Affairs is chaired by the Home Minister.",
       "ta": "பிரதமர் தலைமை தாங்கும் பெரும்பாலான கேபினட் குழுக்கள் போல் அல்லாமல், நாடாளுமன்ற விவகாரங்களுக்கான கேபினட் குழு உள்துறை அமைச்சரால் தலைமை தாங்கப்படுகிறது."
@@ -3939,16 +4055,16 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Option A is correct: Union Home Minister accurately reflects constitutional provisions regarding the Prime Minister.",
-        "ta": "தெரிவு A சரி: ஒன்றிய உள்துறை அமைச்சர் என்பது பிரதமர் பற்றிய சரியான அரசியலமைப்பு விதியாகும்."
+        "en": "Option C (Speaker of Lok Sabha) is incorrect as it misapplies parliamentary rules regarding the Prime Minister.",
+        "ta": "தெரிவு C (மக்களவை சபாநாயகர்) தவறானது, ஏனெனில் இது நாடாளுமன்ற விதிகளை தவறாகப் பொருத்துகிறது."
       },
       "B": {
         "en": "Option B (Prime Minister) is incorrect as it represents a common constitutional confusion regarding the executive authority.",
         "ta": "தெரிவு B (இந்தியப் பிரதமர்) தவறானது, ஏனெனில் இது நிர்வாக அதிகாரம் பற்றிய பொதுவான குழப்பமாகும்."
       },
       "C": {
-        "en": "Option C (Speaker of Lok Sabha) is incorrect as it misapplies parliamentary rules regarding the Prime Minister.",
-        "ta": "தெரிவு C (மக்களவை சபாநாயகர்) தவறானது, ஏனெனில் இது நாடாளுமன்ற விதிகளை தவறாகப் பொருத்துகிறது."
+        "en": "Option A is correct: Union Home Minister accurately reflects constitutional provisions regarding the Prime Minister.",
+        "ta": "தெரிவு A சரி: ஒன்றிய உள்துறை அமைச்சர் என்பது பிரதமர் பற்றிய சரியான அரசியலமைப்பு விதியாகும்."
       },
       "D": {
         "en": "Option D (Minister of Parliamentary Affairs) is incorrect as it contradicts established constitutional conventions.",
@@ -3987,7 +4103,11 @@
       "bloom_level": "Understand",
       "estimated_time_sec": 60,
       "pyq_similarity": "High"
-    }
+    },
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "revision_fact": "Unlike most Cabinet Committees chaired by PM, the Cabinet Committee on Parliamentary Affairs is chaired by the Home Minister."
   },
   {
     "id": "POLITY_PM_EASY_031",
@@ -4005,13 +4125,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Lal Bahadur Shastri",
-        "ta": "லால் பகதூர் சாஸ்திரி"
+        "en": "Jawaharlal Nehru",
+        "ta": "ஜவஹர்லால் நேரு"
       },
       {
         "id": "B",
-        "en": "Jawaharlal Nehru",
-        "ta": "ஜவஹர்லால் நேரு"
+        "en": "Lal Bahadur Shastri",
+        "ta": "லால் பகதூர் சாஸ்திரி"
       },
       {
         "id": "C",
@@ -4025,19 +4145,19 @@
       }
     ],
     "options_en": [
-      "Lal Bahadur Shastri",
       "Jawaharlal Nehru",
+      "Lal Bahadur Shastri",
       "Indira Gandhi",
       "Rajiv Gandhi"
     ],
     "options_ta": [
-      "லால் பகதூர் சாஸ்திரி",
       "ஜவஹர்லால் நேரு",
+      "லால் பகதூர் சாஸ்திரி",
       "இந்திரா காந்தி",
       "ராஜீவ் காந்தி"
     ],
-    "correct_answer": "A",
-    "answer": "A",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Lal Bahadur Shastri died at Tashkent (Uzbekistan/USSR) on January 11, 1966 after signing the Tashkent Declaration.",
       "ta": "லால் பகதூர் சாஸ்திரி தாஷ்கண்ட் ஒப்பந்தத்தில் கையெழுத்திட்ட பிறகு 1966 ஜனவரி 11 அன்று தாஷ்கண்டில் காலமானார்."
@@ -4072,12 +4192,12 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Option A is correct: Lal Bahadur Shastri accurately reflects constitutional provisions regarding the Prime Minister.",
-        "ta": "தெரிவு A சரி: லால் பகதூர் சாஸ்திரி என்பது பிரதமர் பற்றிய சரியான அரசியலமைப்பு விதியாகும்."
-      },
-      "B": {
         "en": "Option B (Jawaharlal Nehru) is incorrect as it represents a common constitutional confusion regarding the executive authority.",
         "ta": "தெரிவு B (ஜவஹர்லால் நேரு) தவறானது, ஏனெனில் இது நிர்வாக அதிகாரம் பற்றிய பொதுவான குழப்பமாகும்."
+      },
+      "B": {
+        "en": "Option A is correct: Lal Bahadur Shastri accurately reflects constitutional provisions regarding the Prime Minister.",
+        "ta": "தெரிவு A சரி: லால் பகதூர் சாஸ்திரி என்பது பிரதமர் பற்றிய சரியான அரசியலமைப்பு விதியாகும்."
       },
       "C": {
         "en": "Option C (Indira Gandhi) is incorrect as it misapplies parliamentary rules regarding the Prime Minister.",
@@ -4120,7 +4240,11 @@
       "bloom_level": "Understand",
       "estimated_time_sec": 60,
       "pyq_similarity": "High"
-    }
+    },
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "revision_fact": "Lal Bahadur Shastri died at Tashkent (Uzbekistan/USSR) on January 11, 1966 after signing the Tashkent Declaration."
   },
   {
     "id": "POLITY_PM_EASY_032",
@@ -4138,8 +4262,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Third Schedule",
-        "ta": "மூன்றாவது அட்டவணை"
+        "en": "Tenth Schedule",
+        "ta": "பத்தாவது அட்டவணை"
       },
       {
         "id": "B",
@@ -4153,24 +4277,24 @@
       },
       {
         "id": "D",
-        "en": "Tenth Schedule",
-        "ta": "பத்தாவது அட்டவணை"
+        "en": "Third Schedule",
+        "ta": "மூன்றாவது அட்டவணை"
       }
     ],
     "options_en": [
-      "Third Schedule",
+      "Tenth Schedule",
       "Second Schedule",
       "Fourth Schedule",
-      "Tenth Schedule"
+      "Third Schedule"
     ],
     "options_ta": [
-      "மூன்றாவது அட்டவணை",
+      "பத்தாவது அட்டவணை",
       "இரண்டாவது அட்டவணை",
       "நான்காவது அட்டவணை",
-      "பத்தாவது அட்டவணை"
+      "மூன்றாவது அட்டவணை"
     ],
-    "correct_answer": "A",
-    "answer": "A",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Forms of Oaths or Affirmations for Union Ministers and PM are prescribed under the Third Schedule.",
       "ta": "ஒன்றிய அமைச்சர்கள் மற்றும் பிரதமருக்கான பதவிப் பிரமாண படிவங்கள் 3-வது அட்டவணையில் குறிப்பிடப்பட்டுள்ளன."
@@ -4205,8 +4329,8 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Option A is correct: Third Schedule accurately reflects constitutional provisions regarding the Prime Minister.",
-        "ta": "தெரிவு A சரி: மூன்றாவது அட்டவணை என்பது பிரதமர் பற்றிய சரியான அரசியலமைப்பு விதியாகும்."
+        "en": "Option D (Tenth Schedule) is incorrect as it contradicts established constitutional conventions.",
+        "ta": "தெரிவு D (பத்தாவது அட்டவணை) தவறானது, ஏனெனில் இது அரசியலமைப்பு நடைமுறைகளுக்கு மாறானது."
       },
       "B": {
         "en": "Option B (Second Schedule) is incorrect as it represents a common constitutional confusion regarding the executive authority.",
@@ -4217,8 +4341,8 @@
         "ta": "தெரிவு C (நான்காவது அட்டவணை) தவறானது, ஏனெனில் இது நாடாளுமன்ற விதிகளை தவறாகப் பொருத்துகிறது."
       },
       "D": {
-        "en": "Option D (Tenth Schedule) is incorrect as it contradicts established constitutional conventions.",
-        "ta": "தெரிவு D (பத்தாவது அட்டவணை) தவறானது, ஏனெனில் இது அரசியலமைப்பு நடைமுறைகளுக்கு மாறானது."
+        "en": "Option A is correct: Third Schedule accurately reflects constitutional provisions regarding the Prime Minister.",
+        "ta": "தெரிவு A சரி: மூன்றாவது அட்டவணை என்பது பிரதமர் பற்றிய சரியான அரசியலமைப்பு விதியாகும்."
       }
     },
     "tnpsc_expert_tip": {
@@ -4253,7 +4377,11 @@
       "bloom_level": "Understand",
       "estimated_time_sec": 60,
       "pyq_similarity": "High"
-    }
+    },
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "revision_fact": "Forms of Oaths or Affirmations for Union Ministers and PM are prescribed under the Third Schedule."
   },
   {
     "id": "POLITY_PM_EASY_033",
@@ -4271,8 +4399,8 @@
     "options": [
       {
         "id": "A",
-        "en": "3rd Rank",
-        "ta": "3-வது தரவரிசை"
+        "en": "2nd Rank",
+        "ta": "2-வது தரவரிசை"
       },
       {
         "id": "B",
@@ -4281,8 +4409,8 @@
       },
       {
         "id": "C",
-        "en": "2nd Rank",
-        "ta": "2-வது தரவரிசை"
+        "en": "3rd Rank",
+        "ta": "3-வது தரவரிசை"
       },
       {
         "id": "D",
@@ -4291,19 +4419,19 @@
       }
     ],
     "options_en": [
-      "3rd Rank",
-      "1st Rank",
       "2nd Rank",
+      "1st Rank",
+      "3rd Rank",
       "4th Rank"
     ],
     "options_ta": [
-      "3-வது தரவரிசை",
-      "1-வது தரவரிசை",
       "2-வது தரவரிசை",
+      "1-வது தரவரிசை",
+      "3-வது தரவரிசை",
       "4-வது தரவரிசை"
     ],
-    "correct_answer": "A",
-    "answer": "A",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "In the official Order of Precedence: 1. President, 2. Vice-President, 3. Prime Minister.",
       "ta": "அரசு முன்னுரிமைப் பட்டியலில் (Order of Precedence): 1. குடியரசுத் தலைவர், 2. துணைக் குடியரசுத் தலைவர், 3. பிரதமர்."
@@ -4338,16 +4466,16 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Option A is correct: 3rd Rank accurately reflects constitutional provisions regarding the Prime Minister.",
-        "ta": "தெரிவு A சரி: 3-வது தரவரிசை என்பது பிரதமர் பற்றிய சரியான அரசியலமைப்பு விதியாகும்."
+        "en": "Option C (2nd Rank) is incorrect as it misapplies parliamentary rules regarding the Prime Minister.",
+        "ta": "தெரிவு C (2-வது தரவரிசை) தவறானது, ஏனெனில் இது நாடாளுமன்ற விதிகளை தவறாகப் பொருத்துகிறது."
       },
       "B": {
         "en": "Option B (1st Rank) is incorrect as it represents a common constitutional confusion regarding the executive authority.",
         "ta": "தெரிவு B (1-வது தரவரிசை) தவறானது, ஏனெனில் இது நிர்வாக அதிகாரம் பற்றிய பொதுவான குழப்பமாகும்."
       },
       "C": {
-        "en": "Option C (2nd Rank) is incorrect as it misapplies parliamentary rules regarding the Prime Minister.",
-        "ta": "தெரிவு C (2-வது தரவரிசை) தவறானது, ஏனெனில் இது நாடாளுமன்ற விதிகளை தவறாகப் பொருத்துகிறது."
+        "en": "Option A is correct: 3rd Rank accurately reflects constitutional provisions regarding the Prime Minister.",
+        "ta": "தெரிவு A சரி: 3-வது தரவரிசை என்பது பிரதமர் பற்றிய சரியான அரசியலமைப்பு விதியாகும்."
       },
       "D": {
         "en": "Option D (4th Rank) is incorrect as it contradicts established constitutional conventions.",
@@ -4386,7 +4514,11 @@
       "bloom_level": "Understand",
       "estimated_time_sec": 60,
       "pyq_similarity": "High"
-    }
+    },
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "revision_fact": "In the official Order of Precedence: 1. President, 2. Vice-President, 3. Prime Minister."
   },
   {
     "id": "POLITY_PM_EASY_034",
@@ -4404,8 +4536,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Can be PM for 6 months max",
-        "ta": "அதிகபட்சம் 6 மாதங்கள் பிரதமராக இருக்கலாம்"
+        "en": "Can remain PM indefinitely",
+        "ta": "காலவரையின்றி பிரதமராக இருக்கலாம்"
       },
       {
         "id": "B",
@@ -4414,8 +4546,8 @@
       },
       {
         "id": "C",
-        "en": "Can remain PM indefinitely",
-        "ta": "காலவரையின்றி பிரதமராக இருக்கலாம்"
+        "en": "Can be PM for 6 months max",
+        "ta": "அதிகபட்சம் 6 மாதங்கள் பிரதமராக இருக்கலாம்"
       },
       {
         "id": "D",
@@ -4424,19 +4556,19 @@
       }
     ],
     "options_en": [
-      "Can be PM for 6 months max",
-      "Cannot be appointed as PM at all",
       "Can remain PM indefinitely",
+      "Cannot be appointed as PM at all",
+      "Can be PM for 6 months max",
       "Requires 2/3rd Lok Sabha approval first"
     ],
     "options_ta": [
-      "அதிகபட்சம் 6 மாதங்கள் பிரதமராக இருக்கலாம்",
-      "பிரதமராக நியமிக்கப்படவே முடியாது",
       "காலவரையின்றி பிரதமராக இருக்கலாம்",
+      "பிரதமராக நியமிக்கப்படவே முடியாது",
+      "அதிகபட்சம் 6 மாதங்கள் பிரதமராக இருக்கலாம்",
       "மக்களவையின் 2/3 பங்கு அனுமதி தேவை"
     ],
-    "correct_answer": "A",
-    "answer": "A",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Supreme Court in 1997 held that a non-member can be appointed PM for 6 months, provided he gets elected to either House within that period.",
       "ta": "1997-ல் உச்ச நீதிமன்றம் நாடாளுமன்ற உறுப்பினர் அல்லாத ஒருவர் 6 மாதங்களுக்குப் பிரதமராக இருக்கலாம் எனத் தீர்ப்பளித்தது."
@@ -4471,16 +4603,16 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Option A is correct: Can be PM for 6 months max accurately reflects constitutional provisions regarding the Prime Minister.",
-        "ta": "தெரிவு A சரி: அதிகபட்சம் 6 மாதங்கள் பிரதமராக இருக்கலாம் என்பது பிரதமர் பற்றிய சரியான அரசியலமைப்பு விதியாகும்."
+        "en": "Option C (Can remain PM indefinitely) is incorrect as it misapplies parliamentary rules regarding the Prime Minister.",
+        "ta": "தெரிவு C (காலவரையின்றி பிரதமராக இருக்கலாம்) தவறானது, ஏனெனில் இது நாடாளுமன்ற விதிகளை தவறாகப் பொருத்துகிறது."
       },
       "B": {
         "en": "Option B (Cannot be appointed as PM at all) is incorrect as it represents a common constitutional confusion regarding the executive authority.",
         "ta": "தெரிவு B (பிரதமராக நியமிக்கப்படவே முடியாது) தவறானது, ஏனெனில் இது நிர்வாக அதிகாரம் பற்றிய பொதுவான குழப்பமாகும்."
       },
       "C": {
-        "en": "Option C (Can remain PM indefinitely) is incorrect as it misapplies parliamentary rules regarding the Prime Minister.",
-        "ta": "தெரிவு C (காலவரையின்றி பிரதமராக இருக்கலாம்) தவறானது, ஏனெனில் இது நாடாளுமன்ற விதிகளை தவறாகப் பொருத்துகிறது."
+        "en": "Option A is correct: Can be PM for 6 months max accurately reflects constitutional provisions regarding the Prime Minister.",
+        "ta": "தெரிவு A சரி: அதிகபட்சம் 6 மாதங்கள் பிரதமராக இருக்கலாம் என்பது பிரதமர் பற்றிய சரியான அரசியலமைப்பு விதியாகும்."
       },
       "D": {
         "en": "Option D (Requires 2/3rd Lok Sabha approval first) is incorrect as it contradicts established constitutional conventions.",
@@ -4519,7 +4651,11 @@
       "bloom_level": "Understand",
       "estimated_time_sec": 60,
       "pyq_similarity": "High"
-    }
+    },
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "revision_fact": "Supreme Court in 1997 held that a non-member can be appointed PM for 6 months, provided he gets elected to either House within that period."
   },
   {
     "id": "POLITY_PM_EASY_035",
@@ -4537,8 +4673,8 @@
     "options": [
       {
         "id": "A",
-        "en": "42nd Amendment Act, 1976",
-        "ta": "42-வது திருத்தச் சட்டம், 1976"
+        "en": "86th Amendment Act, 2002",
+        "ta": "86-வது திருத்தச் சட்டம், 2002"
       },
       {
         "id": "B",
@@ -4552,24 +4688,24 @@
       },
       {
         "id": "D",
-        "en": "86th Amendment Act, 2002",
-        "ta": "86-வது திருத்தச் சட்டம், 2002"
+        "en": "42nd Amendment Act, 1976",
+        "ta": "42-வது திருத்தச் சட்டம், 1976"
       }
     ],
     "options_en": [
-      "42nd Amendment Act, 1976",
+      "86th Amendment Act, 2002",
       "44th Amendment Act, 1978",
       "91st Amendment Act, 2003",
-      "86th Amendment Act, 2002"
+      "42nd Amendment Act, 1976"
     ],
     "options_ta": [
-      "42-வது திருத்தச் சட்டம், 1976",
+      "86-வது திருத்தச் சட்டம், 2002",
       "44-வது திருத்தச் சட்டம், 1978",
       "91-வது திருத்தச் சட்டம், 2003",
-      "86-வது திருத்தச் சட்டம், 2002"
+      "42-வது திருத்தச் சட்டம், 1976"
     ],
-    "correct_answer": "A",
-    "answer": "A",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "The 42nd Amendment Act 1976 amended Article 74(1) making the advice of Council of Ministers explicitly binding on the President.",
       "ta": "42-வது திருத்தச் சட்டம் 1976 உறுப்பு 74(1)-ல் திருத்தம் செய்து அமைச்சரவையின் ஆலோசனையை குடியரசுத் தலைவருக்குக் கட்டாயமாக்கியது."
@@ -4604,8 +4740,8 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Option A is correct: 42nd Amendment Act, 1976 accurately reflects constitutional provisions regarding the Prime Minister.",
-        "ta": "தெரிவு A சரி: 42-வது திருத்தச் சட்டம், 1976 என்பது பிரதமர் பற்றிய சரியான அரசியலமைப்பு விதியாகும்."
+        "en": "Option D (86th Amendment Act, 2002) is incorrect as it contradicts established constitutional conventions.",
+        "ta": "தெரிவு D (86-வது திருத்தச் சட்டம், 2002) தவறானது, ஏனெனில் இது அரசியலமைப்பு நடைமுறைகளுக்கு மாறானது."
       },
       "B": {
         "en": "Option B (44th Amendment Act, 1978) is incorrect as it represents a common constitutional confusion regarding the executive authority.",
@@ -4616,8 +4752,8 @@
         "ta": "தெரிவு C (91-வது திருத்தச் சட்டம், 2003) தவறானது, ஏனெனில் இது நாடாளுமன்ற விதிகளை தவறாகப் பொருத்துகிறது."
       },
       "D": {
-        "en": "Option D (86th Amendment Act, 2002) is incorrect as it contradicts established constitutional conventions.",
-        "ta": "தெரிவு D (86-வது திருத்தச் சட்டம், 2002) தவறானது, ஏனெனில் இது அரசியலமைப்பு நடைமுறைகளுக்கு மாறானது."
+        "en": "Option A is correct: 42nd Amendment Act, 1976 accurately reflects constitutional provisions regarding the Prime Minister.",
+        "ta": "தெரிவு A சரி: 42-வது திருத்தச் சட்டம், 1976 என்பது பிரதமர் பற்றிய சரியான அரசியலமைப்பு விதியாகும்."
       }
     },
     "tnpsc_expert_tip": {
@@ -4652,7 +4788,11 @@
       "bloom_level": "Understand",
       "estimated_time_sec": 60,
       "pyq_similarity": "High"
-    }
+    },
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "revision_fact": "The 42nd Amendment Act 1976 amended Article 74(1) making the advice of Council of Ministers explicitly binding on the President."
   },
   {
     "id": "POLITY_PM_EASY_036",
@@ -4702,7 +4842,7 @@
       "டாக்டர் எஸ். ராதாகிருஷ்ணன்"
     ],
     "correct_answer": "A",
-    "answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "P.V. Narasimha Rao (from Andhra Pradesh) became the first Prime Minister from South India in June 1991.",
       "ta": "பி.வி. நரசிம்ம ராவ் 1991 ஜூன் மாதத்தில் தென்னிந்தியாவிலிருந்து பிரதமரான முதல் தலைவராவார்."
@@ -4785,7 +4925,11 @@
       "bloom_level": "Understand",
       "estimated_time_sec": 60,
       "pyq_similarity": "High"
-    }
+    },
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "revision_fact": "P.V. Narasimha Rao (from Andhra Pradesh) became the first Prime Minister from South India in June 1991."
   },
   {
     "id": "POLITY_PM_EASY_037",
@@ -4803,8 +4947,8 @@
     "options": [
       {
         "id": "A",
-        "en": "P.V. Narasimha Rao",
-        "ta": "பி.வி. நரசிம்ம ராவ்"
+        "en": "Manmohan Singh (as Finance Minister under PM Rao)",
+        "ta": "மன்மோகன் சிங்"
       },
       {
         "id": "B",
@@ -4813,8 +4957,8 @@
       },
       {
         "id": "C",
-        "en": "Manmohan Singh (as Finance Minister under PM Rao)",
-        "ta": "மன்மோகன் சிங்"
+        "en": "P.V. Narasimha Rao",
+        "ta": "பி.வி. நரசிம்ம ராவ்"
       },
       {
         "id": "D",
@@ -4823,19 +4967,19 @@
       }
     ],
     "options_en": [
-      "P.V. Narasimha Rao",
-      "Rajiv Gandhi",
       "Manmohan Singh (as Finance Minister under PM Rao)",
+      "Rajiv Gandhi",
+      "P.V. Narasimha Rao",
       "V.P. Singh"
     ],
     "options_ta": [
-      "பி.வி. நரசிம்ம ராவ்",
-      "ராஜீவ் காந்தி",
       "மன்மோகன் சிங்",
+      "ராஜீவ் காந்தி",
+      "பி.வி. நரசிம்ம ராவ்",
       "வி.பி. சிங்"
     ],
-    "correct_answer": "A",
-    "answer": "A",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "P.V. Narasimha Rao was Prime Minister when LPG (Liberalisation, Privatisation, Globalisation) reforms were launched in 1991 with Manmohan Singh as Finance Minister.",
       "ta": "1991-ல் தாராளமயமாக்கல், தனியார்மயமாக்கல், உலகமயமாக்கல் (LPG) சீர்திருத்தங்கள் தொடங்கப்பட்ட போது பி.வி. நரசிம்ம ராவ் பிரதமராக இருந்தார்."
@@ -4870,16 +5014,16 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Option A is correct: P.V. Narasimha Rao accurately reflects constitutional provisions regarding the Prime Minister.",
-        "ta": "தெரிவு A சரி: பி.வி. நரசிம்ம ராவ் என்பது பிரதமர் பற்றிய சரியான அரசியலமைப்பு விதியாகும்."
+        "en": "Option C (Manmohan Singh (as Finance Minister under PM Rao)) is incorrect as it misapplies parliamentary rules regarding the Prime Minister.",
+        "ta": "தெரிவு C (மன்மோகன் சிங்) தவறானது, ஏனெனில் இது நாடாளுமன்ற விதிகளை தவறாகப் பொருத்துகிறது."
       },
       "B": {
         "en": "Option B (Rajiv Gandhi) is incorrect as it represents a common constitutional confusion regarding the executive authority.",
         "ta": "தெரிவு B (ராஜீவ் காந்தி) தவறானது, ஏனெனில் இது நிர்வாக அதிகாரம் பற்றிய பொதுவான குழப்பமாகும்."
       },
       "C": {
-        "en": "Option C (Manmohan Singh (as Finance Minister under PM Rao)) is incorrect as it misapplies parliamentary rules regarding the Prime Minister.",
-        "ta": "தெரிவு C (மன்மோகன் சிங்) தவறானது, ஏனெனில் இது நாடாளுமன்ற விதிகளை தவறாகப் பொருத்துகிறது."
+        "en": "Option A is correct: P.V. Narasimha Rao accurately reflects constitutional provisions regarding the Prime Minister.",
+        "ta": "தெரிவு A சரி: பி.வி. நரசிம்ம ராவ் என்பது பிரதமர் பற்றிய சரியான அரசியலமைப்பு விதியாகும்."
       },
       "D": {
         "en": "Option D (V.P. Singh) is incorrect as it contradicts established constitutional conventions.",
@@ -4918,7 +5062,11 @@
       "bloom_level": "Understand",
       "estimated_time_sec": 60,
       "pyq_similarity": "High"
-    }
+    },
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "revision_fact": "P.V. Narasimha Rao was Prime Minister when LPG (Liberalisation, Privatisation, Globalisation) reforms were launched in 1991 with Manmohan Si..."
   },
   {
     "id": "POLITY_PM_EASY_038",
@@ -4936,8 +5084,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Prime Minister of India",
-        "ta": "இந்தியப் பிரதமர்"
+        "en": "Union Home Minister",
+        "ta": "ஒன்றிய உள்துறை அமைச்சர்"
       },
       {
         "id": "B",
@@ -4951,24 +5099,24 @@
       },
       {
         "id": "D",
-        "en": "Union Home Minister",
-        "ta": "ஒன்றிய உள்துறை அமைச்சர்"
+        "en": "Prime Minister of India",
+        "ta": "இந்தியப் பிரதமர்"
       }
     ],
     "options_en": [
-      "Prime Minister of India",
+      "Union Home Minister",
       "President of India",
       "Cabinet Secretary",
-      "Union Home Minister"
+      "Prime Minister of India"
     ],
     "options_ta": [
-      "இந்தியப் பிரதமர்",
+      "ஒன்றிய உள்துறை அமைச்சர்",
       "இந்தியக் குடியரசுத் தலைவர்",
       "கேபினட் செயலாளர்",
-      "ஒன்றிய உள்துறை அமைச்சர்"
+      "இந்தியப் பிரதமர்"
     ],
-    "correct_answer": "A",
-    "answer": "A",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "The Prime Minister presides over the meetings of the Cabinet and influences its decisions.",
       "ta": "பிரதமரே கேபினட் அமைச்சரவைக் கூட்டங்களுக்கு தலைமை தாங்கி அதன் முடிவுகளைத் தீர்மானிக்கிறார்."
@@ -5003,8 +5151,8 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Option A is correct: Prime Minister of India accurately reflects constitutional provisions regarding the Prime Minister.",
-        "ta": "தெரிவு A சரி: இந்தியப் பிரதமர் என்பது பிரதமர் பற்றிய சரியான அரசியலமைப்பு விதியாகும்."
+        "en": "Option D (Union Home Minister) is incorrect as it contradicts established constitutional conventions.",
+        "ta": "தெரிவு D (ஒன்றிய உள்துறை அமைச்சர்) தவறானது, ஏனெனில் இது அரசியலமைப்பு நடைமுறைகளுக்கு மாறானது."
       },
       "B": {
         "en": "Option B (President of India) is incorrect as it represents a common constitutional confusion regarding the executive authority.",
@@ -5015,8 +5163,8 @@
         "ta": "தெரிவு C (கேபினட் செயலாளர்) தவறானது, ஏனெனில் இது நாடாளுமன்ற விதிகளை தவறாகப் பொருத்துகிறது."
       },
       "D": {
-        "en": "Option D (Union Home Minister) is incorrect as it contradicts established constitutional conventions.",
-        "ta": "தெரிவு D (ஒன்றிய உள்துறை அமைச்சர்) தவறானது, ஏனெனில் இது அரசியலமைப்பு நடைமுறைகளுக்கு மாறானது."
+        "en": "Option A is correct: Prime Minister of India accurately reflects constitutional provisions regarding the Prime Minister.",
+        "ta": "தெரிவு A சரி: இந்தியப் பிரதமர் என்பது பிரதமர் பற்றிய சரியான அரசியலமைப்பு விதியாகும்."
       }
     },
     "tnpsc_expert_tip": {
@@ -5051,7 +5199,11 @@
       "bloom_level": "Understand",
       "estimated_time_sec": 60,
       "pyq_similarity": "High"
-    }
+    },
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "revision_fact": "The Prime Minister presides over the meetings of the Cabinet and influences its decisions."
   },
   {
     "id": "POLITY_PM_EASY_039",
@@ -5101,7 +5253,7 @@
       "நரேந்திர மோடி"
     ],
     "correct_answer": "A",
-    "answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Rajiv Gandhi became India's youngest Prime Minister at the age of 40 in October 1984.",
       "ta": "ராஜீவ் காந்தி 1984 அக்டோபரில் தனது 40-வது வயதில் இந்தியாவின் மிக இளைய பிரதமரானார்."
@@ -5184,7 +5336,11 @@
       "bloom_level": "Understand",
       "estimated_time_sec": 60,
       "pyq_similarity": "High"
-    }
+    },
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "revision_fact": "Rajiv Gandhi became India's youngest Prime Minister at the age of 40 in October 1984."
   },
   {
     "id": "POLITY_PM_EASY_040",
@@ -5202,8 +5358,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Morarji Desai",
-        "ta": "மொரார்ஜி தேசாய்"
+        "en": "Manmohan Singh",
+        "ta": "மன்மோகன் சிங்"
       },
       {
         "id": "B",
@@ -5217,24 +5373,24 @@
       },
       {
         "id": "D",
-        "en": "Manmohan Singh",
-        "ta": "மன்மோகன் சிங்"
+        "en": "Morarji Desai",
+        "ta": "மொரார்ஜி தேசாய்"
       }
     ],
     "options_en": [
-      "Morarji Desai",
+      "Manmohan Singh",
       "Chaudhary Charan Singh",
       "Atal Bihari Vajpayee",
-      "Manmohan Singh"
+      "Morarji Desai"
     ],
     "options_ta": [
-      "மொரார்ஜி தேசாய்",
+      "மன்மோகன் சிங்",
       "சவுத்ரி சரன் சிங்",
       "அடல் பிஹாரி வாஜ்பாய்",
-      "மன்மோகன் சிங்"
+      "மொரார்ஜி தேசாய்"
     ],
-    "correct_answer": "A",
-    "answer": "A",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Morarji Desai became Prime Minister in March 1977 at the age of 81, making him the oldest person to assume the office.",
       "ta": "மொரார்ஜி தேசாய் 1977 மார்ச்சில் தனது 81-வது வயதில் பிரதமரானார்; அவரே இப்பதவியை வகித்த மிக மூத்த தலைவராவார்."
@@ -5269,8 +5425,8 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Option A is correct: Morarji Desai accurately reflects constitutional provisions regarding the Prime Minister.",
-        "ta": "தெரிவு A சரி: மொரார்ஜி தேசாய் என்பது பிரதமர் பற்றிய சரியான அரசியலமைப்பு விதியாகும்."
+        "en": "Option D (Manmohan Singh) is incorrect as it contradicts established constitutional conventions.",
+        "ta": "தெரிவு D (மன்மோகன் சிங்) தவறானது, ஏனெனில் இது அரசியலமைப்பு நடைமுறைகளுக்கு மாறானது."
       },
       "B": {
         "en": "Option B (Chaudhary Charan Singh) is incorrect as it represents a common constitutional confusion regarding the executive authority.",
@@ -5281,8 +5437,8 @@
         "ta": "தெரிவு C (அடல் பிஹாரி வாஜ்பாய்) தவறானது, ஏனெனில் இது நாடாளுமன்ற விதிகளை தவறாகப் பொருத்துகிறது."
       },
       "D": {
-        "en": "Option D (Manmohan Singh) is incorrect as it contradicts established constitutional conventions.",
-        "ta": "தெரிவு D (மன்மோகன் சிங்) தவறானது, ஏனெனில் இது அரசியலமைப்பு நடைமுறைகளுக்கு மாறானது."
+        "en": "Option A is correct: Morarji Desai accurately reflects constitutional provisions regarding the Prime Minister.",
+        "ta": "தெரிவு A சரி: மொரார்ஜி தேசாய் என்பது பிரதமர் பற்றிய சரியான அரசியலமைப்பு விதியாகும்."
       }
     },
     "tnpsc_expert_tip": {
@@ -5317,7 +5473,11 @@
       "bloom_level": "Understand",
       "estimated_time_sec": 60,
       "pyq_similarity": "High"
-    }
+    },
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "revision_fact": "Morarji Desai became Prime Minister in March 1977 at the age of 81, making him the oldest person to assume the office."
   },
   {
     "id": "POLITY_PM_EASY_041",
@@ -5335,8 +5495,8 @@
     "options": [
       {
         "id": "A",
-        "en": "PM commands Lok Sabha majority",
-        "ta": "பிரதமருக்கு மக்களவையில் பெரும்பான்மை ஆதரவு இருந்தால்"
+        "en": "Cabinet passes unanimous resolution",
+        "ta": "கேபினட் ஒருமனதாக தீர்மானம் நிறைவேற்றினால்"
       },
       {
         "id": "B",
@@ -5350,24 +5510,24 @@
       },
       {
         "id": "D",
-        "en": "Cabinet passes unanimous resolution",
-        "ta": "கேபினட் ஒருமனதாக தீர்மானம் நிறைவேற்றினால்"
+        "en": "PM commands Lok Sabha majority",
+        "ta": "பிரதமருக்கு மக்களவையில் பெரும்பான்மை ஆதரவு இருந்தால்"
       }
     ],
     "options_en": [
-      "PM commands Lok Sabha majority",
+      "Cabinet passes unanimous resolution",
       "PM belongs to Rajya Sabha",
       "PM has served at least 3 years",
-      "Cabinet passes unanimous resolution"
+      "PM commands Lok Sabha majority"
     ],
     "options_ta": [
-      "பிரதமருக்கு மக்களவையில் பெரும்பான்மை ஆதரவு இருந்தால்",
+      "கேபினட் ஒருமனதாக தீர்மானம் நிறைவேற்றினால்",
       "பிரதமர் மாநிலங்களவை உறுப்பினராக இருந்தால்",
       "பிரதமர் 3 ஆண்டுகள் பணியாற்றினால்",
-      "கேபினட் ஒருமனதாக தீர்மானம் நிறைவேற்றினால்"
+      "பிரதமருக்கு மக்களவையில் பெரும்பான்மை ஆதரவு இருந்தால்"
     ],
-    "correct_answer": "A",
-    "answer": "A",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "The President is bound to dissolve Lok Sabha on PM's advice ONLY IF the PM commands a clear majority in the Lok Sabha.",
       "ta": "பிரதமருக்கு மக்களவையில் பெரும்பான்மை ஆதரவு இருக்கும் வரை மட்டுமே மக்களவையைக் கலைக்க அவர் தரும் ஆலோசனை குடியரசுத் தலைவரைக் கட்டுப்படுத்தும்."
@@ -5402,8 +5562,8 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Option A is correct: PM commands Lok Sabha majority accurately reflects constitutional provisions regarding the Prime Minister.",
-        "ta": "தெரிவு A சரி: பிரதமருக்கு மக்களவையில் பெரும்பான்மை ஆதரவு இருந்தால் என்பது பிரதமர் பற்றிய சரியான அரசியலமைப்பு விதியாகும்."
+        "en": "Option D (Cabinet passes unanimous resolution) is incorrect as it contradicts established constitutional conventions.",
+        "ta": "தெரிவு D (கேபினட் ஒருமனதாக தீர்மானம் நிறைவேற்றினால்) தவறானது, ஏனெனில் இது அரசியலமைப்பு நடைமுறைகளுக்கு மாறானது."
       },
       "B": {
         "en": "Option B (PM belongs to Rajya Sabha) is incorrect as it represents a common constitutional confusion regarding the executive authority.",
@@ -5414,8 +5574,8 @@
         "ta": "தெரிவு C (பிரதமர் 3 ஆண்டுகள் பணியாற்றினால்) தவறானது, ஏனெனில் இது நாடாளுமன்ற விதிகளை தவறாகப் பொருத்துகிறது."
       },
       "D": {
-        "en": "Option D (Cabinet passes unanimous resolution) is incorrect as it contradicts established constitutional conventions.",
-        "ta": "தெரிவு D (கேபினட் ஒருமனதாக தீர்மானம் நிறைவேற்றினால்) தவறானது, ஏனெனில் இது அரசியலமைப்பு நடைமுறைகளுக்கு மாறானது."
+        "en": "Option A is correct: PM commands Lok Sabha majority accurately reflects constitutional provisions regarding the Prime Minister.",
+        "ta": "தெரிவு A சரி: பிரதமருக்கு மக்களவையில் பெரும்பான்மை ஆதரவு இருந்தால் என்பது பிரதமர் பற்றிய சரியான அரசியலமைப்பு விதியாகும்."
       }
     },
     "tnpsc_expert_tip": {
@@ -5450,7 +5610,11 @@
       "bloom_level": "Understand",
       "estimated_time_sec": 60,
       "pyq_similarity": "High"
-    }
+    },
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "revision_fact": "The President is bound to dissolve Lok Sabha on PM's advice ONLY IF the PM commands a clear majority in the Lok Sabha."
   },
   {
     "id": "POLITY_PM_EASY_042",
@@ -5468,8 +5632,8 @@
     "options": [
       {
         "id": "A",
-        "en": "President on PM's advice",
-        "ta": "பிரதமரின் ஆலோசனையின் பேரில் குடியரசுத் தலைவர்"
+        "en": "Parliament by resolution",
+        "ta": "நாடாளுமன்றம் தீர்மானம் மூலம்"
       },
       {
         "id": "B",
@@ -5478,8 +5642,8 @@
       },
       {
         "id": "C",
-        "en": "Parliament by resolution",
-        "ta": "நாடாளுமன்றம் தீர்மானம் மூலம்"
+        "en": "President on PM's advice",
+        "ta": "பிரதமரின் ஆலோசனையின் பேரில் குடியரசுத் தலைவர்"
       },
       {
         "id": "D",
@@ -5488,19 +5652,19 @@
       }
     ],
     "options_en": [
-      "President on PM's advice",
-      "Prime Minister directly without President",
       "Parliament by resolution",
+      "Prime Minister directly without President",
+      "President on PM's advice",
       "Cabinet Secretary"
     ],
     "options_ta": [
-      "பிரதமரின் ஆலோசனையின் பேரில் குடியரசுத் தலைவர்",
-      "பிரதமர் நேரடியாக",
       "நாடாளுமன்றம் தீர்மானம் மூலம்",
+      "பிரதமர் நேரடியாக",
+      "பிரதமரின் ஆலோசனையின் பேரில் குடியரசுத் தலைவர்",
       "கேபினட் செயலாளர்"
     ],
-    "correct_answer": "A",
-    "answer": "A",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Under Article 75(1) & Government of India Business Rules, portfolios are allocated to ministers by the President on the advice of PM.",
       "ta": "பிரதமரின் ஆலோசனையின் பேரிலேயே குடியரசுத் தலைவர் அமைச்சர்களுக்கு துறைகளை (Portfolios) ஒதுக்குகிறார்."
@@ -5535,16 +5699,16 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Option A is correct: President on PM's advice accurately reflects constitutional provisions regarding the Prime Minister.",
-        "ta": "தெரிவு A சரி: பிரதமரின் ஆலோசனையின் பேரில் குடியரசுத் தலைவர் என்பது பிரதமர் பற்றிய சரியான அரசியலமைப்பு விதியாகும்."
+        "en": "Option C (Parliament by resolution) is incorrect as it misapplies parliamentary rules regarding the Prime Minister.",
+        "ta": "தெரிவு C (நாடாளுமன்றம் தீர்மானம் மூலம்) தவறானது, ஏனெனில் இது நாடாளுமன்ற விதிகளை தவறாகப் பொருத்துகிறது."
       },
       "B": {
         "en": "Option B (Prime Minister directly without President) is incorrect as it represents a common constitutional confusion regarding the executive authority.",
         "ta": "தெரிவு B (பிரதமர் நேரடியாக) தவறானது, ஏனெனில் இது நிர்வாக அதிகாரம் பற்றிய பொதுவான குழப்பமாகும்."
       },
       "C": {
-        "en": "Option C (Parliament by resolution) is incorrect as it misapplies parliamentary rules regarding the Prime Minister.",
-        "ta": "தெரிவு C (நாடாளுமன்றம் தீர்மானம் மூலம்) தவறானது, ஏனெனில் இது நாடாளுமன்ற விதிகளை தவறாகப் பொருத்துகிறது."
+        "en": "Option A is correct: President on PM's advice accurately reflects constitutional provisions regarding the Prime Minister.",
+        "ta": "தெரிவு A சரி: பிரதமரின் ஆலோசனையின் பேரில் குடியரசுத் தலைவர் என்பது பிரதமர் பற்றிய சரியான அரசியலமைப்பு விதியாகும்."
       },
       "D": {
         "en": "Option D (Cabinet Secretary) is incorrect as it contradicts established constitutional conventions.",
@@ -5583,7 +5747,11 @@
       "bloom_level": "Understand",
       "estimated_time_sec": 60,
       "pyq_similarity": "High"
-    }
+    },
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "revision_fact": "Under Article 75(1) & Government of India Business Rules, portfolios are allocated to ministers by the President on the advice of PM."
   },
   {
     "id": "POLITY_PM_EASY_043",
@@ -5601,8 +5769,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Atal Bihari Vajpayee",
-        "ta": "அடல் பிஹாரி வாஜ்பாய்"
+        "en": "Chandra Shekhar",
+        "ta": "சந்திர சேகர்"
       },
       {
         "id": "B",
@@ -5616,24 +5784,24 @@
       },
       {
         "id": "D",
-        "en": "Chandra Shekhar",
-        "ta": "சந்திர சேகர்"
+        "en": "Atal Bihari Vajpayee",
+        "ta": "அடல் பிஹாரி வாஜ்பாய்"
       }
     ],
     "options_en": [
-      "Atal Bihari Vajpayee",
+      "Chandra Shekhar",
       "V.P. Singh",
       "H.D. Deve Gowda",
-      "Chandra Shekhar"
+      "Atal Bihari Vajpayee"
     ],
     "options_ta": [
-      "அடல் பிஹாரி வாஜ்பாய்",
+      "சந்திர சேகர்",
       "வி.பி. சிங்",
       "எச்.டி. தேவேகவுடா",
-      "சந்திர சேகர்"
+      "அடல் பிஹாரி வாஜ்பாய்"
     ],
-    "correct_answer": "A",
-    "answer": "A",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "In April 1999, Atal Bihari Vajpayee's 13-month coalition government lost a confidence motion in Lok Sabha by just 1 vote (269 vs 270).",
       "ta": "1999 ஏப்ரலில் வாஜ்பாய் தலைமையிலான கூட்டணி அரசு மக்களவையில் ஒரே ஒரு வாக்கு வித்தியாசத்தில் (269 vs 270) நம்பிக்கையில்லா தீர்மானத்தில் கவிழ்ந்தது."
@@ -5668,8 +5836,8 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Option A is correct: Atal Bihari Vajpayee accurately reflects constitutional provisions regarding the Prime Minister.",
-        "ta": "தெரிவு A சரி: அடல் பிஹாரி வாஜ்பாய் என்பது பிரதமர் பற்றிய சரியான அரசியலமைப்பு விதியாகும்."
+        "en": "Option D (Chandra Shekhar) is incorrect as it contradicts established constitutional conventions.",
+        "ta": "தெரிவு D (சந்திர சேகர்) தவறானது, ஏனெனில் இது அரசியலமைப்பு நடைமுறைகளுக்கு மாறானது."
       },
       "B": {
         "en": "Option B (V.P. Singh) is incorrect as it represents a common constitutional confusion regarding the executive authority.",
@@ -5680,8 +5848,8 @@
         "ta": "தெரிவு C (எச்.டி. தேவேகவுடா) தவறானது, ஏனெனில் இது நாடாளுமன்ற விதிகளை தவறாகப் பொருத்துகிறது."
       },
       "D": {
-        "en": "Option D (Chandra Shekhar) is incorrect as it contradicts established constitutional conventions.",
-        "ta": "தெரிவு D (சந்திர சேகர்) தவறானது, ஏனெனில் இது அரசியலமைப்பு நடைமுறைகளுக்கு மாறானது."
+        "en": "Option A is correct: Atal Bihari Vajpayee accurately reflects constitutional provisions regarding the Prime Minister.",
+        "ta": "தெரிவு A சரி: அடல் பிஹாரி வாஜ்பாய் என்பது பிரதமர் பற்றிய சரியான அரசியலமைப்பு விதியாகும்."
       }
     },
     "tnpsc_expert_tip": {
@@ -5716,7 +5884,11 @@
       "bloom_level": "Understand",
       "estimated_time_sec": 60,
       "pyq_similarity": "High"
-    }
+    },
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "revision_fact": "In April 1999, Atal Bihari Vajpayee's 13-month coalition government lost a confidence motion in Lok Sabha by just 1 vote (269 vs 270)."
   },
   {
     "id": "POLITY_PM_EASY_044",
@@ -5734,13 +5906,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Article 78(a)",
-        "ta": "உறுப்பு 78(a)"
+        "en": "Article 74(1)",
+        "ta": "உறுப்பு 74(1)"
       },
       {
         "id": "B",
-        "en": "Article 74(1)",
-        "ta": "உறுப்பு 74(1)"
+        "en": "Article 78(a)",
+        "ta": "உறுப்பு 78(a)"
       },
       {
         "id": "C",
@@ -5754,19 +5926,19 @@
       }
     ],
     "options_en": [
-      "Article 78(a)",
       "Article 74(1)",
+      "Article 78(a)",
       "Article 75(3)",
       "Article 77(2)"
     ],
     "options_ta": [
-      "உறுப்பு 78(a)",
       "உறுப்பு 74(1)",
+      "உறுப்பு 78(a)",
       "உறுப்பு 75(3)",
       "உறுப்பு 77(2)"
     ],
-    "correct_answer": "A",
-    "answer": "A",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Article 78(a) specifies that it shall be the duty of the PM to communicate to the President all decisions of the Council of Ministers relating to administration and legislation.",
       "ta": "அரசியலமைப்பு உறுப்பு 78(a) அமைச்சரவையின் அனைத்து நிர்வாக மற்றும் சட்ட முடிவுகளையும் குடியரசுத் தலைவருக்குத் தெரிவிப்பது பிரதமரின் கடமை எனக் கூறுகிறது."
@@ -5801,12 +5973,12 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Option A is correct: Article 78(a) accurately reflects constitutional provisions regarding the Prime Minister.",
-        "ta": "தெரிவு A சரி: உறுப்பு 78(a) என்பது பிரதமர் பற்றிய சரியான அரசியலமைப்பு விதியாகும்."
-      },
-      "B": {
         "en": "Option B (Article 74(1)) is incorrect as it represents a common constitutional confusion regarding the executive authority.",
         "ta": "தெரிவு B (உறுப்பு 74(1)) தவறானது, ஏனெனில் இது நிர்வாக அதிகாரம் பற்றிய பொதுவான குழப்பமாகும்."
+      },
+      "B": {
+        "en": "Option A is correct: Article 78(a) accurately reflects constitutional provisions regarding the Prime Minister.",
+        "ta": "தெரிவு A சரி: உறுப்பு 78(a) என்பது பிரதமர் பற்றிய சரியான அரசியலமைப்பு விதியாகும்."
       },
       "C": {
         "en": "Option C (Article 75(3)) is incorrect as it misapplies parliamentary rules regarding the Prime Minister.",
@@ -5849,7 +6021,11 @@
       "bloom_level": "Understand",
       "estimated_time_sec": 60,
       "pyq_similarity": "High"
-    }
+    },
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "revision_fact": "Article 78(a) specifies that it shall be the duty of the PM to communicate to the President all decisions of the Council of Ministers relati..."
   },
   {
     "id": "POLITY_PM_EASY_045",
@@ -5899,7 +6075,7 @@
       "சட்டம் ஒழுங்கைப் பராமரித்தல்"
     ],
     "correct_answer": "A",
-    "answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "By constitutional convention, a Caretaker Government carries on daily routine administration but cannot take major policy decisions or initiate new legislative policies.",
       "ta": "அரசியலமைப்பு நடைமுறைப்படி, இடைக்கால அரசு (Caretaker Government) அன்றாட நிர்வாகத்தைக் கவனிக்கலாம்; ஆனால் முக்கியக் கொள்கை முடிவுகளை எடுக்கக் கூடாது."
@@ -5982,7 +6158,11 @@
       "bloom_level": "Understand",
       "estimated_time_sec": 60,
       "pyq_similarity": "High"
-    }
+    },
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "revision_fact": "By constitutional convention, a Caretaker Government carries on daily routine administration but cannot take major policy decisions or initi..."
   },
   {
     "id": "POLITY_PM_EASY_046",
@@ -6000,8 +6180,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Rajiv Gandhi",
-        "ta": "ராஜீவ் காந்தி"
+        "en": "Narendra Modi",
+        "ta": "நரேந்திர மோடி"
       },
       {
         "id": "B",
@@ -6015,24 +6195,24 @@
       },
       {
         "id": "D",
-        "en": "Narendra Modi",
-        "ta": "நரேந்திர மோடி"
+        "en": "Rajiv Gandhi",
+        "ta": "ராஜீவ் காந்தி"
       }
     ],
     "options_en": [
-      "Rajiv Gandhi",
+      "Narendra Modi",
       "Morarji Desai",
       "P.V. Narasimha Rao",
-      "Narendra Modi"
+      "Rajiv Gandhi"
     ],
     "options_ta": [
-      "ராஜீவ் காந்தி",
+      "நரேந்திர மோடி",
       "மொரார்ஜி தேசாய்",
       "பி.வி. நரசிம்ம ராவ்",
-      "நரேந்திர மோடி"
+      "ராஜீவ் காந்தி"
     ],
-    "correct_answer": "A",
-    "answer": "A",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Rajiv Gandhi entered politics directly as an MP and PM without ever serving as a State Chief Minister. Desai (Bombay), Rao (AP), Modi (Gujarat) were all CMs.",
       "ta": "ராஜீவ் காந்தி மாநில முதல்வராகப் பணியாற்றாமல் நேரடியாகப் பிரதமரானவராவார். மொரார்ஜி தேசாய், நரசிம்ம ராவ், நரேந்திர மோடி ஆகியோர் முதல்வர்களாக இருந்தவர்கள்."
@@ -6067,8 +6247,8 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Option A is correct: Rajiv Gandhi accurately reflects constitutional provisions regarding the Prime Minister.",
-        "ta": "தெரிவு A சரி: ராஜீவ் காந்தி என்பது பிரதமர் பற்றிய சரியான அரசியலமைப்பு விதியாகும்."
+        "en": "Option D (Narendra Modi) is incorrect as it contradicts established constitutional conventions.",
+        "ta": "தெரிவு D (நரேந்திர மோடி) தவறானது, ஏனெனில் இது அரசியலமைப்பு நடைமுறைகளுக்கு மாறானது."
       },
       "B": {
         "en": "Option B (Morarji Desai) is incorrect as it represents a common constitutional confusion regarding the executive authority.",
@@ -6079,8 +6259,8 @@
         "ta": "தெரிவு C (பி.வி. நரசிம்ம ராவ்) தவறானது, ஏனெனில் இது நாடாளுமன்ற விதிகளை தவறாகப் பொருத்துகிறது."
       },
       "D": {
-        "en": "Option D (Narendra Modi) is incorrect as it contradicts established constitutional conventions.",
-        "ta": "தெரிவு D (நரேந்திர மோடி) தவறானது, ஏனெனில் இது அரசியலமைப்பு நடைமுறைகளுக்கு மாறானது."
+        "en": "Option A is correct: Rajiv Gandhi accurately reflects constitutional provisions regarding the Prime Minister.",
+        "ta": "தெரிவு A சரி: ராஜீவ் காந்தி என்பது பிரதமர் பற்றிய சரியான அரசியலமைப்பு விதியாகும்."
       }
     },
     "tnpsc_expert_tip": {
@@ -6115,7 +6295,11 @@
       "bloom_level": "Understand",
       "estimated_time_sec": 60,
       "pyq_similarity": "High"
-    }
+    },
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "revision_fact": "Rajiv Gandhi entered politics directly as an MP and PM without ever serving as a State Chief Minister. Desai (Bombay), Rao (AP), Modi (Gujar..."
   },
   {
     "id": "POLITY_PM_EASY_047",
@@ -6133,8 +6317,8 @@
     "options": [
       {
         "id": "A",
-        "en": "Prime Minister of India",
-        "ta": "இந்தியப் பிரதமர்"
+        "en": "Union Home Minister",
+        "ta": "ஒன்றிய உள்துறை அமைச்சர்"
       },
       {
         "id": "B",
@@ -6143,8 +6327,8 @@
       },
       {
         "id": "C",
-        "en": "Union Home Minister",
-        "ta": "ஒன்றிய உள்துறை அமைச்சர்"
+        "en": "Prime Minister of India",
+        "ta": "இந்தியப் பிரதமர்"
       },
       {
         "id": "D",
@@ -6153,19 +6337,19 @@
       }
     ],
     "options_en": [
-      "Prime Minister of India",
-      "Defence Minister",
       "Union Home Minister",
+      "Defence Minister",
+      "Prime Minister of India",
       "National Security Advisor"
     ],
     "options_ta": [
-      "இந்தியப் பிரதமர்",
-      "பாதுகாப்புத் துறை அமைச்சர்",
       "ஒன்றிய உள்துறை அமைச்சர்",
+      "பாதுகாப்புத் துறை அமைச்சர்",
+      "இந்தியப் பிரதமர்",
       "தேசிய பாதுகாப்பு ஆலோசகர்"
     ],
-    "correct_answer": "A",
-    "answer": "A",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "The Cabinet Committee on Security (CCS), which makes ultimate decisions on defense and national security, is chaired by the Prime Minister.",
       "ta": "இந்திய பாதுகாப்புக் கொள்கைகளின் உச்ச அமைப்பான பாதுகாப்பிற்கான கேபினட் குழுவின் (CCS) தலைவராக இந்தியப் பிரதமர் செயல்படுகிறார்."
@@ -6200,16 +6384,16 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Option A is correct: Prime Minister of India accurately reflects constitutional provisions regarding the Prime Minister.",
-        "ta": "தெரிவு A சரி: இந்தியப் பிரதமர் என்பது பிரதமர் பற்றிய சரியான அரசியலமைப்பு விதியாகும்."
+        "en": "Option C (Union Home Minister) is incorrect as it misapplies parliamentary rules regarding the Prime Minister.",
+        "ta": "தெரிவு C (ஒன்றிய உள்துறை அமைச்சர்) தவறானது, ஏனெனில் இது நாடாளுமன்ற விதிகளை தவறாகப் பொருத்துகிறது."
       },
       "B": {
         "en": "Option B (Defence Minister) is incorrect as it represents a common constitutional confusion regarding the executive authority.",
         "ta": "தெரிவு B (பாதுகாப்புத் துறை அமைச்சர்) தவறானது, ஏனெனில் இது நிர்வாக அதிகாரம் பற்றிய பொதுவான குழப்பமாகும்."
       },
       "C": {
-        "en": "Option C (Union Home Minister) is incorrect as it misapplies parliamentary rules regarding the Prime Minister.",
-        "ta": "தெரிவு C (ஒன்றிய உள்துறை அமைச்சர்) தவறானது, ஏனெனில் இது நாடாளுமன்ற விதிகளை தவறாகப் பொருத்துகிறது."
+        "en": "Option A is correct: Prime Minister of India accurately reflects constitutional provisions regarding the Prime Minister.",
+        "ta": "தெரிவு A சரி: இந்தியப் பிரதமர் என்பது பிரதமர் பற்றிய சரியான அரசியலமைப்பு விதியாகும்."
       },
       "D": {
         "en": "Option D (National Security Advisor) is incorrect as it contradicts established constitutional conventions.",
@@ -6248,7 +6432,11 @@
       "bloom_level": "Understand",
       "estimated_time_sec": 60,
       "pyq_similarity": "High"
-    }
+    },
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "revision_fact": "The Cabinet Committee on Security (CCS), which makes ultimate decisions on defense and national security, is chaired by the Prime Minister."
   },
   {
     "id": "POLITY_PM_EASY_048",
@@ -6266,13 +6454,13 @@
     "options": [
       {
         "id": "A",
-        "en": "Article 77(3)",
-        "ta": "உறுப்பு 77(3)"
+        "en": "Article 74(2)",
+        "ta": "உறுப்பு 74(2)"
       },
       {
         "id": "B",
-        "en": "Article 74(2)",
-        "ta": "உறுப்பு 74(2)"
+        "en": "Article 77(3)",
+        "ta": "உறுப்பு 77(3)"
       },
       {
         "id": "C",
@@ -6286,19 +6474,19 @@
       }
     ],
     "options_en": [
-      "Article 77(3)",
       "Article 74(2)",
+      "Article 77(3)",
       "Article 75(1)",
       "Article 78(c)"
     ],
     "options_ta": [
-      "உறுப்பு 77(3)",
       "உறுப்பு 74(2)",
+      "உறுப்பு 77(3)",
       "உறுப்பு 75(1)",
       "உறுப்பு 78(c)"
     ],
-    "correct_answer": "A",
-    "answer": "A",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Article 77(3) empowers the President to make rules for the more convenient transaction of the business of the Government of India and allocation of business among Ministers.",
       "ta": "இந்திய அரசின் நிர்வாக நடவடிக்கைகள் எளிதாக நடைபெற விதிகளையும் அமைச்சர்களுக்கான பணிகளையும் ஒதுக்கீடு செய்ய உறுப்பு 77(3) குடியரசுத் தலைவருக்கு அதிகாரம் அளிக்கிறது."
@@ -6333,12 +6521,12 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Option A is correct: Article 77(3) accurately reflects constitutional provisions regarding the Prime Minister.",
-        "ta": "தெரிவு A சரி: உறுப்பு 77(3) என்பது பிரதமர் பற்றிய சரியான அரசியலமைப்பு விதியாகும்."
-      },
-      "B": {
         "en": "Option B (Article 74(2)) is incorrect as it represents a common constitutional confusion regarding the executive authority.",
         "ta": "தெரிவு B (உறுப்பு 74(2)) தவறானது, ஏனெனில் இது நிர்வாக அதிகாரம் பற்றிய பொதுவான குழப்பமாகும்."
+      },
+      "B": {
+        "en": "Option A is correct: Article 77(3) accurately reflects constitutional provisions regarding the Prime Minister.",
+        "ta": "தெரிவு A சரி: உறுப்பு 77(3) என்பது பிரதமர் பற்றிய சரியான அரசியலமைப்பு விதியாகும்."
       },
       "C": {
         "en": "Option C (Article 75(1)) is incorrect as it misapplies parliamentary rules regarding the Prime Minister.",
@@ -6381,7 +6569,11 @@
       "bloom_level": "Understand",
       "estimated_time_sec": 60,
       "pyq_similarity": "High"
-    }
+    },
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "revision_fact": "Article 77(3) empowers the President to make rules for the more convenient transaction of the business of the Government of India and alloca..."
   },
   {
     "id": "POLITY_PM_EASY_049",
@@ -6399,13 +6591,13 @@
     "options": [
       {
         "id": "A",
-        "en": "On the floor of the House",
-        "ta": "மன்றத்தின் களத்தில் மட்டுமே (Floor Test)"
+        "en": "In Presidential chamber",
+        "ta": "குடியரசுத் தலைவர் மாளிகையில்"
       },
       {
         "id": "B",
-        "en": "In Presidential chamber",
-        "ta": "குடியரசுத் தலைவர் மாளிகையில்"
+        "en": "On the floor of the House",
+        "ta": "மன்றத்தின் களத்தில் மட்டுமே (Floor Test)"
       },
       {
         "id": "C",
@@ -6419,19 +6611,19 @@
       }
     ],
     "options_en": [
-      "On the floor of the House",
       "In Presidential chamber",
+      "On the floor of the House",
       "Through public referendum",
       "By signature petitions"
     ],
     "options_ta": [
-      "மன்றத்தின் களத்தில் மட்டுமே (Floor Test)",
       "குடியரசுத் தலைவர் மாளிகையில்",
+      "மன்றத்தின் களத்தில் மட்டுமே (Floor Test)",
       "பொது வாக்கெடுப்பு மூலம்",
       "கையெழுத்துப் படிவங்கள் மூலம்"
     ],
-    "correct_answer": "A",
-    "answer": "A",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "In SR Bommai v. Union of India (1994), the Supreme Court ruled that the majority of a government/PM can be tested ONLY on the floor of the House (Floor Test).",
       "ta": "1994 எஸ்.ஆர். பொம்மை வழக்கில் உச்ச நீதிமன்றம் ஒரு அரசின்/பிரதமரின் பெரும்பான்மை நாடாளுமன்ற/சட்டமன்றக் களத்தில் மட்டுமே (Floor Test) நிரூபிக்கப்பட வேண்டும் எனத் தீர்ப்பளித்தது."
@@ -6466,12 +6658,12 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Option A is correct: On the floor of the House accurately reflects constitutional provisions regarding the Prime Minister.",
-        "ta": "தெரிவு A சரி: மன்றத்தின் களத்தில் மட்டுமே (Floor Test) என்பது பிரதமர் பற்றிய சரியான அரசியலமைப்பு விதியாகும்."
-      },
-      "B": {
         "en": "Option B (In Presidential chamber) is incorrect as it represents a common constitutional confusion regarding the executive authority.",
         "ta": "தெரிவு B (குடியரசுத் தலைவர் மாளிகையில்) தவறானது, ஏனெனில் இது நிர்வாக அதிகாரம் பற்றிய பொதுவான குழப்பமாகும்."
+      },
+      "B": {
+        "en": "Option A is correct: On the floor of the House accurately reflects constitutional provisions regarding the Prime Minister.",
+        "ta": "தெரிவு A சரி: மன்றத்தின் களத்தில் மட்டுமே (Floor Test) என்பது பிரதமர் பற்றிய சரியான அரசியலமைப்பு விதியாகும்."
       },
       "C": {
         "en": "Option C (Through public referendum) is incorrect as it misapplies parliamentary rules regarding the Prime Minister.",
@@ -6514,7 +6706,11 @@
       "bloom_level": "Understand",
       "estimated_time_sec": 60,
       "pyq_similarity": "High"
-    }
+    },
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "revision_fact": "In SR Bommai v. Union of India (1994), the Supreme Court ruled that the majority of a government/PM can be tested ONLY on the floor of the H..."
   },
   {
     "id": "POLITY_PM_EASY_050",
@@ -6532,8 +6728,8 @@
     "options": [
       {
         "id": "A",
-        "en": "V.P. Singh",
-        "ta": "வி.பி. சிங்"
+        "en": "Charan Singh",
+        "ta": "சரன் சிங்"
       },
       {
         "id": "B",
@@ -6542,8 +6738,8 @@
       },
       {
         "id": "C",
-        "en": "Charan Singh",
-        "ta": "சரன் சிங்"
+        "en": "V.P. Singh",
+        "ta": "வி.பி. சிங்"
       },
       {
         "id": "D",
@@ -6552,19 +6748,19 @@
       }
     ],
     "options_en": [
-      "V.P. Singh",
-      "Morarji Desai",
       "Charan Singh",
+      "Morarji Desai",
+      "V.P. Singh",
       "H.D. Deve Gowda"
     ],
     "options_ta": [
-      "வி.பி. சிங்",
-      "மொரார்ஜி தேசாய்",
       "சரன் சிங்",
+      "மொரார்ஜி தேசாய்",
+      "வி.பி. சிங்",
       "எச்.டி. தேவேகவுடா"
     ],
-    "correct_answer": "A",
-    "answer": "A",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "V.P. Singh was the first Prime Minister whose government was brought down by a No-Confidence Motion voted on and passed by Lok Sabha in November 1990.",
       "ta": "1990 நவம்பரில் மக்களவையில் வாக்களிக்கப்பட்டு நிறைவேற்றப்பட்ட நம்பிக்கையில்லாத் தீர்மானத்தின் மூலம் பதவியிழந்த முதல் பிரதமர் வி.பி. சிங் ஆவார்."
@@ -6599,16 +6795,16 @@
     },
     "why_not_others": {
       "A": {
-        "en": "Option A is correct: V.P. Singh accurately reflects constitutional provisions regarding the Prime Minister.",
-        "ta": "தெரிவு A சரி: வி.பி. சிங் என்பது பிரதமர் பற்றிய சரியான அரசியலமைப்பு விதியாகும்."
+        "en": "Option C (Charan Singh) is incorrect as it misapplies parliamentary rules regarding the Prime Minister.",
+        "ta": "தெரிவு C (சரன் சிங்) தவறானது, ஏனெனில் இது நாடாளுமன்ற விதிகளை தவறாகப் பொருத்துகிறது."
       },
       "B": {
         "en": "Option B (Morarji Desai) is incorrect as it represents a common constitutional confusion regarding the executive authority.",
         "ta": "தெரிவு B (மொரார்ஜி தேசாய்) தவறானது, ஏனெனில் இது நிர்வாக அதிகாரம் பற்றிய பொதுவான குழப்பமாகும்."
       },
       "C": {
-        "en": "Option C (Charan Singh) is incorrect as it misapplies parliamentary rules regarding the Prime Minister.",
-        "ta": "தெரிவு C (சரன் சிங்) தவறானது, ஏனெனில் இது நாடாளுமன்ற விதிகளை தவறாகப் பொருத்துகிறது."
+        "en": "Option A is correct: V.P. Singh accurately reflects constitutional provisions regarding the Prime Minister.",
+        "ta": "தெரிவு A சரி: வி.பி. சிங் என்பது பிரதமர் பற்றிய சரியான அரசியலமைப்பு விதியாகும்."
       },
       "D": {
         "en": "Option D (H.D. Deve Gowda) is incorrect as it contradicts established constitutional conventions.",
@@ -6647,6 +6843,10 @@
       "bloom_level": "Understand",
       "estimated_time_sec": 60,
       "pyq_similarity": "High"
-    }
+    },
+    "bloom_level": "Apply",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "revision_fact": "V.P. Singh was the first Prime Minister whose government was brought down by a No-Confidence Motion voted on and passed by Lok Sabha in Nove..."
   }
 ]

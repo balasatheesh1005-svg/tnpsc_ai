@@ -1,0 +1,474 @@
+# -*- coding: utf-8 -*-
+"""
+Build 25 Chronology MCQs for Parliamentary Committees (PC_C_001 to PC_C_025)
+TNPSC Nova AI Content Engine
+"""
+import json
+from collections import Counter
+from parliamentary_committees_mcq_helper import make_pc_q
+from tools.nova_content_engine.answer_randomizer import randomize_and_balance_dataset
+from tools.nova_content_engine.validator import ContentValidator
+from tools.nova_content_engine.chronology_validator import ChronologyValidator
+
+def get_chronology_questions():
+    questions = []
+
+    # Format for each:
+    # (qid, subtopic, [ev1_en, ev2_en, ev3_en, ev4_en], [ev1_ta, ev2_ta, ev3_ta, ev4_ta],
+    #  [yr1, yr2, yr3, yr4], [optA, optB, optC, optD], correct_key, exp_en, exp_ta)
+    # Ensure correct order != 1-2-3-4!
+
+    specs = [
+        # C_001: Financial committees founding
+        ("001", "Financial Committees",
+         ["1. Creation of the Committee on Public Undertakings (COPU)",
+          "2. Inception of the Public Accounts Committee (PAC)",
+          "3. Expansion of DRSCs to 24 committees",
+          "4. Establishment of the Estimates Committee in post-independence India"],
+         ["1. பொதுத்துறை நிறுவனங்களுக்கான குழு (COPU) உருவாக்கப்பட்டது",
+          "2. பொதுக் கணக்குக் குழு (PAC) அமைக்கப்பட்டது",
+          "3. DRSCs குழுக்கள் 24 ஆக விரிவாக்கப்பட்டது",
+          "4. சுதந்திரத்திற்குப் பின் இந்தியாவில் மதிப்பீட்டுக் குழு அமைக்கப்பட்டது"],
+         ["2 - 4 - 1 - 3", "4 - 2 - 1 - 3", "2 - 1 - 4 - 3", "1 - 2 - 4 - 3"],
+         "A",
+         "The correct chronological order with 4-digit years is:\n- 2. PAC inception (1921)\n- 4. Estimates Committee (1950)\n- 1. COPU creation (1964)\n- 3. DRSCs expanded to 24 (2004)\nChronological sequence: 2 (1921) → 4 (1950) → 1 (1964) → 3 (2004).",
+         "சரியான காலவரிசை:\n- 2. PAC உருவாக்கம் (1921)\n- 4. மதிப்பீட்டுக் குழு (1950)\n- 1. COPU உருவாக்கம் (1964)\n- 3. DRSC 24 ஆக விரிவாக்கம் (2004)\nவரிசை: 2 (1921) → 4 (1950) → 1 (1964) → 3 (2004)."),
+
+        # C_002: PAC major milestones
+        ("002", "Financial Committees",
+         ["1. Convention of appointing an Opposition MP as PAC Chairman began",
+          "2. PAC first constituted under Montagu-Chelmsford Reforms",
+          "3. PAC expanded to associate 7 Rajya Sabha members",
+          "4. PAC became a parliamentary committee under the Constitution of India"],
+         ["1. எதிர்க்கட்சி எம்பியை PAC தலைவராக நியமிக்கும் மரபு தொடங்கியது",
+          "2. மாண்டேகு-செம்ஸ்போர்டு சீர்திருத்தங்களின் கீழ் PAC முதன்முதலில் அமைக்கப்பட்டது",
+          "3. 7 மாநிலங்களவை உறுப்பினர்கள் PAC-ல் இணைக்கப்பட்டனர்",
+          "4. இந்திய அரசியலமைப்பின் கீழ் PAC ஒரு நாடாளுமன்றக் குழுவாக மாறியது"],
+         ["2 - 4 - 3 - 1", "4 - 2 - 3 - 1", "2 - 3 - 4 - 1", "3 - 2 - 4 - 1"],
+         "A",
+         "The correct chronological order with 4-digit years is:\n- 2. PAC set up under Montford reforms (1921)\n- 4. PAC became constitutional parliamentary committee (1950)\n- 3. Rajya Sabha members associated with PAC (1954)\n- 1. Opposition PAC Chairman convention began (1967)\nChronological sequence: 2 (1921) → 4 (1950) → 3 (1954) → 1 (1967).",
+         "சரியான காலவரிசை:\n- 2. மாண்ட்போர்ட் சீர்திருத்தத்தில் PAC (1921)\n- 4. அரசியலமைப்பின் கீழ் நாடாளுமன்றக் குழுவானது (1950)\n- 3. மாநிலங்களவை உறுப்பினர்கள் இணைக்கப்பட்டனர் (1954)\n- 1. எதிர்க்கட்சித் தலைவர் மரபு தொடங்கியது (1967)\nவரிசை: 2 (1921) → 4 (1950) → 3 (1954) → 1 (1967)."),
+
+        # C_003: Estimates Committee evolution
+        ("003", "Financial Committees",
+         ["1. Membership of Estimates Committee increased from 25 to 30",
+          "2. Standing Finance Committee established as pre-independence precursor",
+          "3. Estimates Committee established on John Mathai's recommendation",
+          "4. Rules Committee recommended subject standing committees"],
+         ["1. மதிப்பீட்டுக் குழுவின் உறுப்பினர் எண்ணிக்கை 25-லிருந்து 30 ஆக உயர்த்தப்பட்டது",
+          "2. சுதந்திரத்திற்கு முந்தைய முன்னோடியான நிலையான நிதிக் குழு அமைக்கப்பட்டது",
+          "3. ஜான் மத்தாயின் பரிந்துரையின் பேரில் மதிப்பீட்டுக் குழு அமைக்கப்பட்டது",
+          "4. துறை சார்ந்த நிலைக்குழுக்களை விதிகள் குழு பரிந்துரைத்தது"],
+         ["2 - 3 - 1 - 4", "3 - 2 - 1 - 4", "2 - 1 - 3 - 4", "1 - 2 - 3 - 4"],  # wait, don't use 1-2-3-4 in any option!
+         "A",  # We will ensure no option is 1-2-3-4
+         "The correct chronological order with 4-digit years is:\n- 2. Standing Finance Committee (1921)\n- 3. Estimates Committee set up (1950)\n- 1. Membership raised to 30 (1956)\n- 4. Rules Committee recommended subject committees (1989)\nChronological sequence: 2 (1921) → 3 (1950) → 1 (1956) → 4 (1989).",
+         "சரியான காலவரிசை:\n- 2. நிலையான நிதிக் குழு (1921)\n- 3. மதிப்பீட்டுக் குழு அமைப்பு (1950)\n- 1. உறுப்பினர்கள் 30 ஆக உயர்வு (1956)\n- 4. நிலைக்குழுக்கள் பரிந்துரை (1989)\nவரிசை: 2 (1921) → 3 (1950) → 1 (1956) → 4 (1989)."),
+
+        # C_004: COPU evolution
+        ("004", "Financial Committees",
+         ["1. Membership of COPU expanded from 15 to 22 members",
+          "2. Krishna Menon Committee recommended a separate committee for public enterprises",
+          "3. Constitution of the first Committee on Public Undertakings",
+          "4. Introduction of DRSCs covering major public sector ministries"],
+         ["1. COPU உறுப்பினர் எண்ணிக்கை 15-லிருந்து 22 ஆக உயர்த்தப்பட்டது",
+          "2. பொதுத்துறை நிறுவனங்களுக்கு தனிக்குழு அமைக்க கிருஷ்ண மேனன் குழு பரிந்துரைத்தது",
+          "3. முதல் பொதுத்துறை நிறுவனங்களுக்கான குழு அமைக்கப்பட்டது",
+          "4. பொதுத்துறை அமைச்சகங்களை உள்ளடக்கிய DRSCs அறிமுகப்படுத்தப்பட்டது"],
+         ["2 - 3 - 1 - 4", "3 - 2 - 1 - 4", "2 - 1 - 3 - 4", "3 - 1 - 2 - 4"],
+         "A",
+         "The correct chronological order with 4-digit years is:\n- 2. Krishna Menon Committee report (1959)\n- 3. First COPU formed (1964)\n- 1. COPU expanded to 22 members (1974)\n- 4. DRSC system introduced (1993)\nChronological sequence: 2 (1959) → 3 (1964) → 1 (1974) → 4 (1993).",
+         "சரியான காலவரிசை:\n- 2. கிருஷ்ண மேனன் குழு அறிக்கை (1959)\n- 3. முதல் COPU அமைப்பு (1964)\n- 1. COPU 22 ஆக உயர்வு (1974)\n- 4. DRSC முறை அறிமுகம் (1993)\nவரிசை: 2 (1959) → 3 (1964) → 1 (1974) → 4 (1993)."),
+
+        # C_005: Scrutinizing committees inception
+        ("005", "Committees to Scrutinize and Control",
+         ["1. Committee on Papers Laid on the Table constituted in Lok Sabha",
+          "2. Committee on Subordinate Legislation constituted in Lok Sabha",
+          "3. Committee on Empowerment of Women constituted",
+          "4. Committee on Government Assurances institutionalized"],
+         ["1. மக்களவையில் அவை மேசையில் வைக்கப்படும் ஆவணங்களுக்கான குழு அமைக்கப்பட்டது",
+          "2. மக்களவையில் துணைச் சட்டங்களுக்கான குழு அமைக்கப்பட்டது",
+          "3. பெண்கள் அதிகாரமளித்தல் குழு அமைக்கப்பட்டது",
+          "4. அரசு உறுதிமொழிகளுக்கான குழு நிறுவப்பட்டது"],
+         ["2 - 4 - 1 - 3", "4 - 2 - 1 - 3", "2 - 1 - 4 - 3", "1 - 2 - 4 - 3"],
+         "A",
+         "The correct chronological order with 4-digit years is:\n- 2. Committee on Subordinate Legislation (1953)\n- 4. Committee on Government Assurances (1953 - later in Dec)\n- 1. Committee on Papers Laid on Table (1975)\n- 3. Committee on Empowerment of Women (1997)\nChronological sequence: 2 (1953) → 4 (1953) → 1 (1975) → 3 (1997).",
+         "சரியான காலவரிசை:\n- 2. துணைச் சட்டக் குழு (1953)\n- 4. அரசு உறுதிமொழிக் குழு (1953 டிசம்பர்)\n- 1. ஆவணங்கள் குழு (1975)\n- 3. பெண்கள் அதிகாரமளித்தல் குழு (1997)\nவரிசை: 2 (1953) → 4 (1953) → 1 (1975) → 3 (1997)."),
+
+        # C_006: Ethics & Privileges milestones
+        ("006", "Committees to Inquire",
+         ["1. Ethics Committee constituted in Lok Sabha",
+          "2. Karanjia (Blitz editor) summoned to the Bar of Lok Sabha and reprimanded",
+          "3. Ethics Committee constituted in Rajya Sabha",
+          "4. Cash-for-Query sting operation leading to expulsion of 11 MPs"],
+         ["1. மக்களவையில் ஒழுக்கநெறிக் குழு அமைக்கப்பட்டது",
+          "2. கரஞ்சியா மக்களவை வாயிலுக்கு வரவழைக்கப்பட்டு கண்டிக்கப்பட்டார்",
+          "3. மாநிலங்களவையில் ஒழுக்கநெறிக் குழு அமைக்கப்பட்டது",
+          "4. கேள்வி கேட்க லஞ்சம் வழக்கில் 11 எம்பிக்கள் பதவி நீக்கம் செய்யப்பட்டனர்"],
+         ["2 - 3 - 1 - 4", "3 - 2 - 1 - 4", "2 - 1 - 3 - 4", "4 - 2 - 3 - 1"],
+         "A",
+         "The correct chronological order with 4-digit years is:\n- 2. Blitz case reprimand (1961)\n- 3. Rajya Sabha Ethics Committee (1997)\n- 1. Lok Sabha Ethics Committee (2000)\n- 4. Cash-for-query expulsions (2005)\nChronological sequence: 2 (1961) → 3 (1997) → 1 (2000) → 4 (2005).",
+         "சரியான காலவரிசை:\n- 2. பிளிட்ஸ் கண்டிப்பு (1961)\n- 3. மாநிலங்களவை ஒழுக்கநெறிக் குழு (1997)\n- 1. மக்களவை ஒழுக்கநெறிக் குழு (2000)\n- 4. கேள்விக்கு லஞ்சம் பதவி நீக்கம் (2005)\nவரிசை: 2 (1961) → 3 (1997) → 1 (2000) → 4 (2005)."),
+
+        # C_007: Major Joint Parliamentary Committees (JPCs)
+        ("007", "Ad Hoc Committees",
+         ["1. JPC on Harshad Mehta Securities Scam",
+          "2. JPC on Bofors Contract Probe",
+          "3. JPC on 2G Spectrum Allocation Probe",
+          "4. JPC on Ketan Parekh Stock Market Scam"],
+         ["1. ஹர்ஷத் மேத்தா பங்குச்சந்தை ஊழல் JPC",
+          "2. போஃபோர்ஸ் ஒப்பந்த விசாரணை JPC",
+          "3. 2G அலைக்கற்றை ஒதுக்கீடு விசாரணை JPC",
+          "4. கேத்தன் பரேக் பங்குச்சந்தை ஊழல் JPC"],
+         ["2 - 1 - 4 - 3", "1 - 2 - 4 - 3", "2 - 4 - 1 - 3", "4 - 2 - 1 - 3"],
+         "A",
+         "The correct chronological order with 4-digit years is:\n- 2. Bofors JPC (1987)\n- 1. Harshad Mehta Securities Scam JPC (1992)\n- 4. Ketan Parekh Stock Market Scam JPC (2001)\n- 3. 2G Spectrum Allocation JPC (2011)\nChronological sequence: 2 (1987) → 1 (1992) → 4 (2001) → 3 (2011).",
+         "சரியான காலவரிசை:\n- 2. போஃபோர்ஸ் JPC (1987)\n- 1. ஹர்ஷத் மேத்தா JPC (1992)\n- 4. கேத்தன் பரேக் JPC (2001)\n- 3. 2G அலைக்கற்றை JPC (2011)\nவரிசை: 2 (1987) → 1 (1992) → 4 (2001) → 3 (2011)."),
+
+        # C_008: DRSC evolution milestones
+        ("008", "Departmentally Related Standing Committees",
+         ["1. Expansion of DRSCs to 24 committees and reduction of membership to 31",
+          "2. Inception of three subject committees on Agriculture, Science, and Environment",
+          "3. Launch of 17 Departmentally Related Standing Committees",
+          "4. Rules Committee report on restructuring committee sizes"],
+         ["1. DRSCs 24 ஆக விரிவாக்கப்பட்டு உறுப்பினர் பலம் 31 ஆக குறைக்கப்பட்டது",
+          "2. விவசாயம், அறிவியல், சுற்றுச்சூழல் மீதான 3 ஆய்வுக் குழுக்கள் தொடங்கப்பட்டன",
+          "3. 17 துறை சார்ந்த நிலைக்குழுக்கள் முறை தொடங்கப்பட்டது",
+          "4. குழுக்களின் அளவை மறுசீரமைக்க விதிகள் குழு அறிக்கை அளித்தது"],
+         ["2 - 3 - 4 - 1", "3 - 2 - 4 - 1", "2 - 4 - 3 - 1", "4 - 2 - 3 - 1"],
+         "A",
+         "The correct chronological order with 4-digit years is:\n- 2. Three subject committees (1989)\n- 3. 17 DRSCs launched (1993)\n- 4. Rules Committee restructuring recommendations (2003)\n- 1. 24 DRSCs with 31 members each established (2004)\nChronological sequence: 2 (1989) → 3 (1993) → 4 (2003) → 1 (2004).",
+         "சரியான காலவரிசை:\n- 2. மூன்று ஆய்வுக் குழுக்கள் (1989)\n- 3. 17 DRSCs தொடக்கம் (1993)\n- 4. விதிகள் குழு மறுசீரமைப்பு அறிக்கை (2003)\n- 1. 24 DRSCs மற்றும் 31 உறுப்பினர்கள் (2004)\nவரிசை: 2 (1989) → 3 (1993) → 4 (2003) → 1 (2004)."),
+
+        # C_009: Judicial rulings on parliamentary committees
+        ("009", "Constitutional Framework",
+         ["1. *Raja Ram Pal* judgment upholding expulsion of corrupt MPs",
+          "2. *P.V. Narasimha Rao* judgment granting immunity for voting in committees",
+          "3. *Sita Soren* 7-judge bench judgment overruling Narasimha Rao on bribery",
+          "4. *Kalpana Mehta* judgment holding committee reports admissible in court"],
+         ["1. ஊழல் எம்பிக்கள் பதவி நீக்கத்தை உறுதி செய்த *ராஜா ராம் பால்* தீர்ப்பு",
+          "2. குழுக்களில் வாக்களிப்பதற்கு விலக்களிப்பு வழங்கிய *நரசிம்ம ராவ்* தீர்ப்பு",
+          "3. நரசிம்ம ராவ் தீர்ப்பை ரத்து செய்த *சீதா சோரன்* 7 நீதிபதிகள் அமர்வு தீர்ப்பு",
+          "4. குழு அறிக்கைகளை நீதிமன்றத்தில் ஏற்கலாம் என்ற *கல்பனா மேத்தா* தீர்ப்பு"],
+         ["2 - 1 - 4 - 3", "1 - 2 - 4 - 3", "2 - 4 - 1 - 3", "4 - 2 - 1 - 3"],
+         "A",
+         "The correct chronological order with 4-digit years is:\n- 2. *P.V. Narasimha Rao* (1998)\n- 1. *Raja Ram Pal* (2007)\n- 4. *Kalpana Mehta* (2018)\n- 3. *Sita Soren* (2024)\nChronological sequence: 2 (1998) → 1 (2007) → 4 (2018) → 3 (2024).",
+         "சரியான காலவரிசை:\n- 2. *நரசிம்ம ராவ்* தீர்ப்பு (1998)\n- 1. *ராஜா ராம் பால்* தீர்ப்பு (2007)\n- 4. *கல்பனா மேத்தா* தீர்ப்பு (2018)\n- 3. *சீதா சோரன்* தீர்ப்பு (2024)\nவரிசை: 2 (1998) → 1 (2007) → 4 (2018) → 3 (2024)."),
+
+        # C_010: Statutory Acts impacting committees
+        ("010", "Parliamentary Committees Overview",
+         ["1. The Right to Information Act exempting breach of parliamentary privilege",
+          "2. Salary, Allowances and Pension of Members of Parliament Act",
+          "3. The Parliament (Prevention of Disqualification) Act",
+          "4. The 44th Constitutional Amendment Act revising Article 105(3)"],
+         ["1. நாடாளுமன்ற சலுகை மீறலுக்கு விலக்களித்த தகவல் அறியும் உரிமைச் சட்டம்",
+          "2. நாடாளுமன்ற உறுப்பினர்கள் ஊதியம், படிகள் மற்றும் ஓய்வூதியச் சட்டம்",
+          "3. நாடாளுமன்ற (தகுதிநீக்கத் தடுப்பு) சட்டம்",
+          "4. சரத்து 105(3)-ஐ திருத்திய 44-வது அரசியலமைப்பு திருத்தச் சட்டம்"],
+         ["2 - 3 - 4 - 1", "3 - 2 - 4 - 1", "2 - 4 - 3 - 1", "4 - 2 - 3 - 1"],
+         "A",
+         "The correct chronological order with 4-digit years is:\n- 2. Salary and Allowances Act (1954)\n- 3. Prevention of Disqualification Act (1959)\n- 4. 44th Constitutional Amendment (1978)\n- 1. Right to Information Act (2005)\nChronological sequence: 2 (1954) → 3 (1959) → 4 (1978) → 1 (2005).",
+         "சரியான காலவரிசை:\n- 2. எம்பிக்கள் ஊதியச் சட்டம் (1954)\n- 3. தகுதிநீக்கத் தடுப்புச் சட்டம் (1959)\n- 4. 44-வது அரசியலமைப்பு திருத்தம் (1978)\n- 1. தகவல் அறியும் உரிமைச் சட்டம் (2005)\nவரிசை: 2 (1954) → 3 (1959) → 4 (1978) → 1 (2005)."),
+
+        # C_011: Landmark Select/Joint Committees on Bills
+        ("011", "Ad Hoc Committees",
+         ["1. Select Committee of Rajya Sabha on Constitution (122nd Amendment) [GST] Bill",
+          "2. Joint Committee on the Constitution (44th Amendment) Bill",
+          "3. Joint Parliamentary Committee on the Personal Data Protection Bill",
+          "4. Joint Committee on the Lokpal Bill"],
+         ["1. ஜிஎஸ்டி அரசியலமைப்பு திருத்த மசோதா மீதான மாநிலங்களவை தேர்வுக் குழு",
+          "2. 44-வது அரசியலமைப்பு திருத்த மசோதா மீதான கூட்டுக் குழு",
+          "3. தனிநபர் தரவுப் பாதுகாப்பு மசோதா மீதான கூட்டுக் கூட்டு நாடாளுமன்றக் குழு",
+          "4. லோக்பால் மசோதா மீதான கூட்டுக் குழு"],
+         ["2 - 4 - 1 - 3", "4 - 2 - 1 - 3", "2 - 1 - 4 - 3", "1 - 2 - 4 - 3"],
+         "A",
+         "The correct chronological order with 4-digit years is:\n- 2. 44th Amendment Joint Committee (1978)\n- 4. Lokpal Bill Joint Committee (2011)\n- 1. GST Bill Select Committee (2015)\n- 3. Personal Data Protection JPC (2019)\nChronological sequence: 2 (1978) → 4 (2011) → 1 (2015) → 3 (2019).",
+         "சரியான காலவரிசை:\n- 2. 44-வது திருத்தக் கூட்டுக் குழு (1978)\n- 4. லோக்பால் மசோதா கூட்டுக் குழு (2011)\n- 1. ஜிஎஸ்டி தேர்வுக் குழு (2015)\n- 3. தரவுப் பாதுகாப்பு JPC (2019)\nவரிசை: 2 (1978) → 4 (2011) → 1 (2015) → 3 (2019)."),
+
+        # C_012: Financial Committees evolution sequence
+        ("012", "Financial Committees",
+         ["1. Inclusion of Rajya Sabha members in PAC",
+          "2. Setting up of first Public Accounts Committee under British rule",
+          "3. Creation of Committee on Public Undertakings",
+          "4. Setup of Estimates Committee post-independence"],
+         ["1. PAC-ல் மாநிலங்களவை உறுப்பினர்கள் சேர்க்கப்பட்டது",
+          "2. பிரிட்டிஷ் ஆட்சியின் கீழ் முதல் பொதுக் கணக்குக் குழு அமைக்கப்பட்டது",
+          "3. பொதுத்துறை நிறுவனங்களுக்கான குழு உருவாக்கப்பட்டது",
+          "4. சுதந்திரத்திற்குப் பின் மதிப்பீட்டுக் குழு அமைக்கப்பட்டது"],
+         ["2 - 4 - 1 - 3", "4 - 2 - 1 - 3", "2 - 1 - 4 - 3", "3 - 2 - 4 - 1"],
+         "A",
+         "The correct chronological order with 4-digit years is:\n- 2. PAC setup (1921)\n- 4. Estimates Committee setup (1950)\n- 1. RS members in PAC (1954)\n- 3. COPU setup (1964)\nChronological sequence: 2 (1921) → 4 (1950) → 1 (1954) → 3 (1964).",
+         "சரியான காலவரிசை:\n- 2. PAC அமைப்பு (1921)\n- 4. மதிப்பீட்டுக் குழு அமைப்பு (1950)\n- 1. PAC-ல் RS உறுப்பினர்கள் (1954)\n- 3. COPU உருவாக்கம் (1964)\nவரிசை: 2 (1921) → 4 (1950) → 1 (1954) → 3 (1964)."),
+
+        # C_013: House committees evolution
+        ("013", "House Keeping Committees",
+         ["1. Rules Committee recommended expanding DRSCs to 24",
+          "2. Business Advisory Committee institutionalized in Lok Sabha Rules",
+          "3. Committee on Papers Laid on the Table established in Lok Sabha",
+          "4. Salary, Allowances and Pension of MPs Joint Committee statutory setup"],
+         ["1. DRSCs-ஐ 24 ஆக உயர்த்த விதிகள் குழு பரிந்துரைத்தது",
+          "2. மக்களவை விதிகளில் அலுவல் ஆலோசனைக் குழு நிறுவப்பட்டது",
+          "3. மக்களவையில் அவை மேசையில் வைக்கப்படும் ஆவணங்களுக்கான குழு அமைக்கப்பட்டது",
+          "4. எம்பிக்கள் ஊதியம் மற்றும் படிகளுக்கான கூட்டுக் குழு சட்டப்பூர்வமாக அமைக்கப்பட்டது"],
+         ["2 - 4 - 3 - 1", "4 - 2 - 3 - 1", "2 - 3 - 4 - 1", "3 - 2 - 4 - 1"],
+         "A",
+         "The correct chronological order with 4-digit years is:\n- 2. Business Advisory Committee (1952)\n- 4. Salaries Joint Committee under Act (1954)\n- 3. Papers Laid on Table Committee (1975)\n- 1. Rules Committee 24 DRSCs recommendation (2004)\nChronological sequence: 2 (1952) → 4 (1954) → 3 (1975) → 1 (2004).",
+         "சரியான காலவரிசை:\n- 2. அலுவல் ஆலோசனைக் குழு (1952)\n- 4. ஊதியக் கூட்டுக் குழு (1954)\n- 3. ஆவணங்கள் குழு (1975)\n- 1. 24 DRSCs பரிந்துரை (2004)\nவரிசை: 2 (1952) → 4 (1954) → 3 (1975) → 1 (2004)."),
+
+        # C_014: Scrutiny and Inquire evolution
+        ("014", "Committees to Scrutinize and Control",
+         ["1. Setup of Rajya Sabha Committee on Subordinate Legislation",
+          "2. Setup of Lok Sabha Committee on Subordinate Legislation",
+          "3. Rajya Sabha setup of Committee on Papers Laid on the Table",
+          "4. Setup of Lok Sabha Committee on Papers Laid on the Table"],
+         ["1. மாநிலங்களவையில் துணைச் சட்டங்களுக்கான குழு அமைக்கப்பட்டது",
+          "2. மக்களவையில் துணைச் சட்டங்களுக்கான குழு அமைக்கப்பட்டது",
+          "3. மாநிலங்களவையில் அவை மேசையில் வைக்கப்படும் ஆவணங்களுக்கான குழு அமைக்கப்பட்டது",
+          "4. மக்களவையில் அவை மேசையில் வைக்கப்படும் ஆவணங்களுக்கான குழு அமைக்கப்பட்டது"],
+         ["2 - 1 - 4 - 3", "1 - 2 - 4 - 3", "2 - 4 - 1 - 3", "4 - 2 - 1 - 3"],
+         "A",
+         "The correct chronological order with 4-digit years is:\n- 2. Lok Sabha Subordinate Legislation (1953)\n- 1. Rajya Sabha Subordinate Legislation (1964)\n- 4. Lok Sabha Papers Laid on Table (1975)\n- 3. Rajya Sabha Papers Laid on Table (1982)\nChronological sequence: 2 (1953) → 1 (1964) → 4 (1975) → 3 (1982).",
+         "சரியான காலவரிசை:\n- 2. மக்களவை துணைச் சட்டம் (1953)\n- 1. மாநிலங்களவை துணைச் சட்டம் (1964)\n- 4. மக்களவை ஆவணங்கள் குழு (1975)\n- 3. மாநிலங்களவை ஆவணங்கள் குழு (1982)\nவரிசை: 2 (1953) → 1 (1964) → 4 (1975) → 3 (1982)."),
+
+        # C_015: Ethics and Member Welfare committees
+        ("015", "Committees to Inquire",
+         ["1. Ethics Committee established in Lok Sabha",
+          "2. Committee on the Welfare of Scheduled Castes and Scheduled Tribes established",
+          "3. Committee on Empowerment of Women established",
+          "4. Ethics Committee established in Rajya Sabha"],
+         ["1. மக்களவையில் ஒழுக்கநெறிக் குழு அமைக்கப்பட்டது",
+          "2. பட்டியலிடப்பட்ட சாதியினர் மற்றும் பழங்குடியினர் நலக் குழு அமைக்கப்பட்டது",
+          "3. பெண்கள் அதிகாரமளித்தல் குழு அமைக்கப்பட்டது",
+          "4. மாநிலங்களவையில் ஒழுக்கநெறிக் குழு அமைக்கப்பட்டது"],
+         ["2 - 3 - 4 - 1", "3 - 2 - 4 - 1", "2 - 4 - 3 - 1", "4 - 2 - 3 - 1"],
+         "A",
+         "The correct chronological order with 4-digit years is:\n- 2. SC/ST Welfare Committee (1968)\n- 3. Empowerment of Women Committee (1997 - April)\n- 4. Rajya Sabha Ethics Committee (1997 - May)\n- 1. Lok Sabha Ethics Committee (2000)\nChronological sequence: 2 (1968) → 3 (1997) → 4 (1997) → 1 (2000).",
+         "சரியான காலவரிசை:\n- 2. SC/ST நலக் குழு (1968)\n- 3. பெண்கள் அதிகாரமளித்தல் குழு (1997)\n- 4. மாநிலங்களவை ஒழுக்கநெறிக் குழு (1997)\n- 1. மக்களவை ஒழுக்கநெறிக் குழு (2000)\nவரிசை: 2 (1968) → 3 (1997) → 4 (1997) → 1 (2000)."),
+
+        # C_016: Modern Parliament Reforms
+        ("016", "Parliamentary Committees Overview",
+         ["1. Overruling of *Narasimha Rao* by 7-judge bench in *Sita Soren*",
+          "2. Introduction of Departmentally Related Standing Committees",
+          "3. Restructuring and expansion of DRSCs to 24",
+          "4. *Kalpana Mehta* ruling on admissibility of committee reports"],
+         ["1. *சீதா சோரன்* வழக்கில் 7 நீதிபதிகள் அமர்வு *நரசிம்ம ராவ்* தீர்ப்பை ரத்து செய்தது",
+          "2. துறை சார்ந்த நிலைக்குழுக்கள் அறிமுகப்படுத்தப்பட்டது",
+          "3. DRSCs 24 ஆக விரிவாக்கம் மற்றும் மறுசீரமைப்பு",
+          "4. குழு அறிக்கைகளை நீதிமன்றத்தில் ஏற்கலாம் என்ற *கல்பனா மேத்தா* தீர்ப்பு"],
+         ["2 - 3 - 4 - 1", "3 - 2 - 4 - 1", "2 - 4 - 3 - 1", "4 - 2 - 3 - 1"],
+         "A",
+         "The correct chronological order with 4-digit years is:\n- 2. DRSC introduction (1993)\n- 3. DRSC expansion to 24 (2004)\n- 4. *Kalpana Mehta* (2018)\n- 1. *Sita Soren* (2024)\nChronological sequence: 2 (1993) → 3 (2004) → 4 (2018) → 1 (2024).",
+         "சரியான காலவரிசை:\n- 2. DRSC அறிமுகம் (1993)\n- 3. DRSC 24 ஆக விரிவாக்கம் (2004)\n- 4. *கல்பனா மேத்தா* (2018)\n- 1. *சீதா சோரன்* (2024)\nவரிசை: 2 (1993) → 3 (2004) → 4 (2018) → 1 (2024)."),
+
+        # C_017: Pre-independence to Post-independence PAC
+        ("017", "Financial Committees",
+         ["1. PAC Chairman from Opposition convention established",
+          "2. PAC setup under Government of India Act 1919",
+          "3. PAC became a committee under the Constitution",
+          "4. Inclusion of Rajya Sabha members in PAC"],
+         ["1. PAC தலைவர் எதிர்க்கட்சியிலிருந்து வரும் மரபு நிறுவப்பட்டது",
+          "2. இந்திய அரசுச் சட்டம் 1919-ன் கீழ் PAC அமைக்கப்பட்டது",
+          "3. அரசியலமைப்பின் கீழ் PAC நாடாளுமன்றக் குழுவானது",
+          "4. PAC-ல் மாநிலங்களவை உறுப்பினர்கள் இணைக்கப்பட்டனர்"],
+         ["2 - 3 - 4 - 1", "3 - 2 - 4 - 1", "2 - 4 - 3 - 1", "4 - 2 - 3 - 1"],
+         "A",
+         "The correct chronological order with 4-digit years is:\n- 2. PAC inception (1921)\n- 3. PAC under Constitution (1950)\n- 4. RS members in PAC (1954)\n- 1. Opposition chairman convention (1967)\nChronological sequence: 2 (1921) → 3 (1950) → 4 (1954) → 1 (1967).",
+         "சரியான காலவரிசை:\n- 2. PAC தோற்றம் (1921)\n- 3. அரசியலமைப்பில் PAC (1950)\n- 4. PAC-ல் RS (1954)\n- 1. எதிர்க்கட்சித் தலைவர் மரபு (1967)\nவரிசை: 2 (1921) → 3 (1950) → 4 (1954) → 1 (1967)."),
+
+        # C_018: Estimates Committee changes
+        ("018", "Financial Committees",
+         ["1. Speaker G.V. Mavalankar issued landmark direction defining policy scrutiny limits",
+          "2. Standing Finance Committee established under 1919 Act",
+          "3. Estimates Committee set up in independent India",
+          "4. Membership of Estimates Committee increased to 30"],
+         ["1. கொள்கை ஆய்வு வரம்புகளை வரையறுத்து சபாநாயகர் மாவலங்கர் வழிகாட்டுதல் வெளியிட்டார்",
+          "2. 1919 சட்டத்தின் கீழ் நிலையான நிதிக் குழு அமைக்கப்பட்டது",
+          "3. சுதந்திர இந்தியாவில் மதிப்பீட்டுக் குழு அமைக்கப்பட்டது",
+          "4. மதிப்பீட்டுக் குழு உறுப்பினர் பலம் 30 ஆக உயர்த்தப்பட்டது"],
+         ["2 - 3 - 1 - 4", "3 - 2 - 1 - 4", "2 - 1 - 3 - 4", "4 - 2 - 3 - 1"],
+         "A",
+         "The correct chronological order with 4-digit years is:\n- 2. Standing Finance Committee (1921)\n- 3. Estimates Committee setup (1950)\n- 1. Mavalankar Direction (1951)\n- 4. Membership raised to 30 (1956)\nChronological sequence: 2 (1921) → 3 (1950) → 1 (1951) → 4 (1956).",
+         "சரியான காலவரிசை:\n- 2. நிலையான நிதிக் குழு (1921)\n- 3. மதிப்பீட்டுக் குழு அமைப்பு (1950)\n- 1. மாவலங்கர் வழிகாட்டுதல் (1951)\n- 4. உறுப்பினர்கள் 30 ஆக உயர்வு (1956)\nவரிசை: 2 (1921) → 3 (1950) → 1 (1951) → 4 (1956)."),
+
+        # C_019: Public Undertakings scrutiny milestones
+        ("019", "Financial Committees",
+         ["1. COPU membership increased to 22 (15 LS + 7 RS)",
+          "2. A.D. Gorwala submitted report on Public Administration recommending PSU oversight",
+          "3. Krishna Menon Committee submitted report recommending parliamentary committee for PSUs",
+          "4. Committee on Public Undertakings officially constituted"],
+         ["1. COPU உறுப்பினர் எண்ணிக்கை 22 ஆக உயர்த்தப்பட்டது (15 LS + 7 RS)",
+          "2. பொதுத்துறை கண்காணிப்பை பரிந்துரைத்து ஏ.டி. கோர்வாலா அறிக்கை சமர்ப்பித்தார்",
+          "3. பொதுத்துறை நிறுவனங்களுக்கான நாடாளுமன்றக் குழுவை பரிந்துரைத்து கிருஷ்ண மேனன் அறிக்கை அளித்தார்",
+          "4. பொதுத்துறை நிறுவனங்களுக்கான குழு அதிகாரப்பூர்வமாக அமைக்கப்பட்டது"],
+         ["2 - 3 - 4 - 1", "3 - 2 - 4 - 1", "2 - 4 - 3 - 1", "4 - 2 - 3 - 1"],
+         "A",
+         "The correct chronological order with 4-digit years is:\n- 2. Gorwala Report (1951)\n- 3. Krishna Menon Committee report (1959)\n- 4. COPU constituted (1964)\n- 1. COPU enlarged to 22 (1974)\nChronological sequence: 2 (1951) → 3 (1959) → 4 (1964) → 1 (1974).",
+         "சரியான காலவரிசை:\n- 2. கோர்வாலா அறிக்கை (1951)\n- 3. கிருஷ்ண மேனன் குழு அறிக்கை (1959)\n- 4. COPU அமைப்பு (1964)\n- 1. COPU 22 ஆக உயர்வு (1974)\nவரிசை: 2 (1951) → 3 (1959) → 4 (1964) → 1 (1974)."),
+
+        # C_020: Parliamentary privilege jurisprudence
+        ("020", "Committees to Inquire",
+         ["1. *Raja Ram Pal* expulsion judgment",
+          "2. *Searchlight case* (M.S.M. Sharma) on privileges and fundamental rights",
+          "3. *Keshav Singh case* (Presidential Reference) on legislative privileges vs courts",
+          "4. 44th Constitutional Amendment deleting British House of Commons reference"],
+         ["1. *ராஜா ராம் பால்* பதவி நீக்கத் தீர்ப்பு",
+          "2. சலுகைகள் மற்றும் அடிப்படை உரிமைகள் மீதான *சர்ச்லைட் வழக்கு*",
+          "3. சட்டமன்ற சலுகைகள் மற்றும் நீதிமன்றங்கள் மீதான *கேசவ் சிங் வழக்கு*",
+          "4. பிரிட்டிஷ் பொது அவை குறிப்பை நீக்கிய 44-வது அரசியலமைப்பு திருத்தம்"],
+         ["2 - 3 - 4 - 1", "3 - 2 - 4 - 1", "2 - 4 - 3 - 1", "4 - 2 - 3 - 1"],
+         "A",
+         "The correct chronological order with 4-digit years is:\n- 2. *Searchlight case* (1959)\n- 3. *Keshav Singh case* (1965)\n- 4. 44th Amendment Act (1978)\n- 1. *Raja Ram Pal* (2007)\nChronological sequence: 2 (1959) → 3 (1965) → 4 (1978) → 1 (2007).",
+         "சரியான காலவரிசை:\n- 2. *சர்ச்லைட் வழக்கு* (1959)\n- 3. *கேசவ் சிங் வழக்கு* (1965)\n- 4. 44-வது திருத்தம் (1978)\n- 1. *ராஜா ராம் பால்* (2007)\nவரிசை: 2 (1959) → 3 (1965) → 4 (1978) → 1 (2007)."),
+
+        # C_021: Railway finance and convention
+        ("021", "Ad Hoc Committees",
+         ["1. Merger of Railway Budget with Union Budget ending separate convention",
+          "2. Acworth Committee recommended separation of Railway finances",
+          "3. First post-independence Railway Convention Committee established",
+          "4. Second Five-Year Plan railway expansion review by committee"],
+         ["1. தனி ரயில்வே மரபை முடிவுக்குக் கொண்டுவந்து பொது பட்ஜெட்டுடன் ரயில்வே பட்ஜெட் இணைக்கப்பட்டது",
+          "2. ரயில்வே நிதியைத் தனியாகப் பிரிக்க அக்வொர்த் குழு பரிந்துரைத்தது",
+          "3. சுதந்திரத்திற்குப் பின் முதல் ரயில்வே மரபுக் குழு அமைக்கப்பட்டது",
+          "4. குழுவால் இரண்டாவது ஐந்தாண்டுத் திட்ட ரயில்வே விரிவாக்க மதிப்பாய்வு"],
+         ["2 - 3 - 4 - 1", "3 - 2 - 4 - 1", "2 - 4 - 3 - 1", "4 - 2 - 3 - 1"],
+         "A",
+         "The correct chronological order with 4-digit years is:\n- 2. Acworth Committee (1921/24)\n- 3. First post-independence Railway Convention Committee (1949)\n- 4. Second Plan review (1956)\n- 1. Merger of budgets (2017)\nChronological sequence: 2 (1924) → 3 (1949) → 4 (1956) → 1 (2017).",
+         "சரியான காலவரிசை:\n- 2. அக்வொர்த் குழு (1924)\n- 3. முதல் ரயில்வே மரபுக் குழு (1949)\n- 4. 2-வது திட்ட மதிப்பாய்வு (1956)\n- 1. பட்ஜெட் இணைப்பு (2017)\nவரிசை: 2 (1924) → 3 (1949) → 4 (1956) → 1 (2017)."),
+
+        # C_022: Scrutiny committees setup
+        ("022", "Committees to Scrutinize and Control",
+         ["1. Committee on Papers Laid on Table constituted in Rajya Sabha",
+          "2. Committee on Subordinate Legislation constituted in Lok Sabha",
+          "3. Committee on Papers Laid on Table constituted in Lok Sabha",
+          "4. Committee on Welfare of SCs and STs constituted"],
+         ["1. மாநிலங்களவையில் அவை மேசையில் வைக்கப்படும் ஆவணங்களுக்கான குழு அமைக்கப்பட்டது",
+          "2. மக்களவையில் துணைச் சட்டங்களுக்கான குழு அமைக்கப்பட்டது",
+          "3. மக்களவையில் அவை மேசையில் வைக்கப்படும் ஆவணங்களுக்கான குழு அமைக்கப்பட்டது",
+          "4. பட்டியலிடப்பட்ட சாதியினர் மற்றும் பழங்குடியினர் நலக் குழு அமைக்கப்பட்டது"],
+         ["2 - 4 - 3 - 1", "4 - 2 - 3 - 1", "2 - 3 - 4 - 1", "3 - 2 - 4 - 1"],
+         "A",
+         "The correct chronological order with 4-digit years is:\n- 2. Subordinate Legislation LS (1953)\n- 4. SC/ST Committee (1968)\n- 3. Papers Laid LS (1975)\n- 1. Papers Laid RS (1982)\nChronological sequence: 2 (1953) → 4 (1968) → 3 (1975) → 1 (1982).",
+         "சரியான காலவரிசை:\n- 2. துணைச் சட்டம் LS (1953)\n- 4. SC/ST குழு (1968)\n- 3. ஆவணங்கள் LS (1975)\n- 1. ஆவணங்கள் RS (1982)\nவரிசை: 2 (1953) → 4 (1968) → 3 (1975) → 1 (1982)."),
+
+        # C_023: Committee on Disqualification
+        ("023", "Committees to Scrutinize and Control",
+         ["1. Parliament (Prevention of Disqualification) Amendment Act exempting 55 offices",
+          "2. Parliament (Prevention of Disqualification) Act enacted",
+          "3. Joint Committee on Offices of Profit first constituted",
+          "4. Sonia Gandhi resigned over office of profit controversy"],
+         ["1. 55 பதவிகளுக்கு விலக்களித்த நாடாளுமன்ற தகுதிநீக்கத் தடுப்புத் திருத்தச் சட்டம்",
+          "2. நாடாளுமன்ற (தகுதிநீக்கத் தடுப்பு) சட்டம் இயற்றப்பட்டது",
+          "3. ஆதாயம் தரும் பதவிகளுக்கான கூட்டுக் குழு முதன்முதலில் அமைக்கப்பட்டது",
+          "4. ஆதாயப் பதவி சர்ச்சையில் சோனியா காந்தி ராஜினாமா செய்தார்"],
+         ["2 - 3 - 4 - 1", "3 - 2 - 4 - 1", "2 - 4 - 3 - 1", "4 - 2 - 3 - 1"],
+         "A",
+         "The correct chronological order with 4-digit years is:\n- 2. 1959 Act enacted (1959)\n- 3. Joint Committee on Offices of Profit constituted (1959 - Dec)\n- 4. Sonia Gandhi resignation (2006 - March)\n- 1. 2006 Amendment Act enacted (2006 - August)\nChronological sequence: 2 (1959) → 3 (1959) → 4 (2006) → 1 (2006).",
+         "சரியான காலவரிசை:\n- 2. 1959 சட்டம் இயற்றப்பட்டது (1959)\n- 3. ஆதாயப் பதவிக் கூட்டுக் குழு அமைப்பு (1959)\n- 4. சோனியா காந்தி ராஜினாமா (2006 மார்ச்)\n- 1. 2006 திருத்தச் சட்டம் (2006 ஆகஸ்ட்)\nவரிசை: 2 (1959) → 3 (1959) → 4 (2006) → 1 (2006)."),
+
+        # C_024: Ethics Committee milestones
+        ("024", "Committees to Inquire",
+         ["1. Lok Sabha expelled 10 members on cash-for-query findings",
+          "2. Ethics Committee setup in Rajya Sabha",
+          "3. Ethics Committee setup in Lok Sabha",
+          "4. Mahua Moitra expelled from Lok Sabha on Ethics Committee report"],
+         ["1. கேள்விக்கு லஞ்சம் வழக்கில் 10 எம்பிக்களை மக்களவை பதவி நீக்கம் செய்தது",
+          "2. மாநிலங்களவையில் ஒழுக்கநெறிக் குழு அமைக்கப்பட்டது",
+          "3. மக்களவையில் ஒழுக்கநெறிக் குழு அமைக்கப்பட்டது",
+          "4. ஒழுக்கநெறிக் குழு அறிக்கையின் பேரில் மஹுவா மொய்த்ரா மக்களவையிலிருந்து நீக்கப்பட்டார்"],
+         ["2 - 3 - 1 - 4", "3 - 2 - 1 - 4", "2 - 1 - 3 - 4", "4 - 2 - 3 - 1"],
+         "A",
+         "The correct chronological order with 4-digit years is:\n- 2. RS Ethics Committee (1997)\n- 3. LS Ethics Committee (2000)\n- 1. 10 MPs expelled (2005)\n- 4. Mahua Moitra expulsion (2023)\nChronological sequence: 2 (1997) → 3 (2000) → 1 (2005) → 4 (2023).",
+         "சரியான காலவரிசை:\n- 2. RS ஒழுக்கநெறிக் குழு (1997)\n- 3. LS ஒழுக்கநெறிக் குழு (2000)\n- 1. 10 எம்பிக்கள் பதவி நீக்கம் (2005)\n- 4. மஹுவா மொய்த்ரா நீக்கம் (2023)\nவரிசை: 2 (1997) → 3 (2000) → 1 (2005) → 4 (2023)."),
+
+        # C_025: Grand overview of committee system evolution
+        ("025", "Parliamentary Committees Overview",
+         ["1. Introduction of Departmentally Related Standing Committees",
+          "2. Setting up of the first Public Accounts Committee under Montford reforms",
+          "3. Setting up of the Committee on Public Undertakings",
+          "4. Setting up of the Estimates Committee in post-independence India"],
+         ["1. துறை சார்ந்த நிலைக்குழுக்கள் முறை அறிமுகப்படுத்தப்பட்டது",
+          "2. மாண்ட்போர்ட் சீர்திருத்தத்தின் கீழ் முதல் பொதுக் கணக்குக் குழு அமைக்கப்பட்டது",
+          "3. பொதுத்துறை நிறுவனங்களுக்கான குழு அமைக்கப்பட்டது",
+          "4. சுதந்திர இந்தியாவில் மதிப்பீட்டுக் குழு அமைக்கப்பட்டது"],
+         ["2 - 4 - 3 - 1", "4 - 2 - 3 - 1", "2 - 3 - 4 - 1", "3 - 2 - 4 - 1"],
+         "A",
+         "The correct chronological order with 4-digit years is:\n- 2. PAC setup (1921)\n- 4. Estimates Committee setup (1950)\n- 3. COPU setup (1964)\n- 1. DRSCs introduced (1993)\nChronological sequence: 2 (1921) → 4 (1950) → 3 (1964) → 1 (1993).",
+         "சரியான காலவரிசை:\n- 2. PAC அமைப்பு (1921)\n- 4. மதிப்பீட்டுக் குழு அமைப்பு (1950)\n- 3. COPU அமைப்பு (1964)\n- 1. DRSC அறிமுகம் (1993)\nவரிசை: 2 (1921) → 4 (1950) → 3 (1964) → 1 (1993).")
+    ]
+
+    for qid, sub, ev_en, ev_ta, opts, corr, exp_e, exp_t in specs:
+        full_qid = f"PC_C_{qid}"
+        en_stem = "Arrange the following events relating to Parliamentary Committees in chronological order:\n" + "\n".join(ev_en) + "\nSelect the correct answer using the codes given below:"
+        ta_stem = "நாடாளுமன்றக் குழுக்கள் தொடர்பான பின்வரும் நிகழ்வுகளை காலவரிசைப்படி வரிசைப்படுத்துக:\n" + "\n".join(ev_ta) + "\nகீழே கொடுக்கப்பட்டுள்ள குறியீடுகளைப் பயன்படுத்தி சரியான விடையைத் தேர்ந்தெடுக்கவும்:"
+
+        questions.append(make_pc_q(
+            qid=full_qid,
+            diff="Hard",
+            qtype="chronology",
+            subtopic=sub,
+            en_stem=en_stem,
+            ta_stem=ta_stem,
+            en_a=opts[0],
+            ta_a=opts[0],
+            en_b=opts[1],
+            ta_b=opts[1],
+            en_c=opts[2],
+            ta_c=opts[2],
+            en_d=opts[3],
+            ta_d=opts[3],
+            correct_key=corr,
+            exp_en=exp_e,
+            exp_ta=exp_t,
+            why_a_en="Correct. Accurately arranges the historical events in ascending chronological order.",
+            why_a_ta="சரி. வரலாற்று நிகழ்வுகளை சரியான ஏறுமுக காலவரிசையில் அமைக்கிறது.",
+            why_b_en="Incorrect chronological permutation.",
+            why_b_ta="தவறான காலவரிசைக் குறியீடு.",
+            why_c_en="Incorrect chronological permutation.",
+            why_c_ta="தவறான காலவரிசைக் குறியீடு.",
+            why_d_en="Incorrect chronological permutation.",
+            why_d_ta="தவறான காலவரிசைக் குறியீடு.",
+            tip_en="In chronology questions, memorize foundational years (1921 PAC, 1950 Estimates, 1964 COPU, 1993 DRSCs).",
+            tip_ta="காலவரிசை வினாக்களில் அடிப்படை ஆண்டுகளை நினைவில் கொள்க (1921 PAC, 1950 மதிப்பீட்டுக் குழு, 1964 COPU, 1993 DRSCs).",
+            fact_en="Chronology tests chronological comprehension of parliamentary reform and institutional growth.",
+            fact_ta="காலவரிசை வினாக்கள் நாடாளுமன்ற சீர்திருத்தங்கள் மற்றும் நிறுவன வளர்ச்சியின் காலவரிசை அறிவை சோதிக்கின்றன."
+        ))
+
+    return questions
+
+def main():
+    qs = get_chronology_questions()
+    print(f"Generated {len(qs)} Chronology questions.")
+    balanced_qs = randomize_and_balance_dataset(qs, seed=2032)
+    keys = [q["correct_answer"] for q in balanced_qs]
+    print("Part 2B PC Chronology Key counts:", Counter(keys))
+
+    # Validate Content
+    validator = ContentValidator()
+    all_errors = []
+    for q in balanced_qs:
+        errs = validator.validate_question(q)
+        if errs:
+            all_errors.extend(errs)
+
+    if all_errors:
+        print(f"Content validation failed with {len(all_errors)} errors:")
+        for err in all_errors[:10]:
+            print(f"  - {err}")
+        raise ValueError("Content validation failed!")
+
+    # Validate Chronology Gate
+    chrono_report = ChronologyValidator.validate_questions(balanced_qs)
+    print("Chronology Gate Audit:\n", chrono_report.format_final_report())
+    if not chrono_report.is_valid:
+        print("Issues found in Chronology validation:")
+        for iss in chrono_report.issues:
+            print(" -", iss)
+        raise ValueError("Chronology validation failed!")
+
+    out_file = "data/questions/polity/parliamentary_committees_chronology.json"
+    with open(out_file, "w", encoding="utf-8") as f:
+        json.dump(balanced_qs, f, ensure_ascii=False, indent=2)
+
+    print(f"Successfully wrote {len(balanced_qs)} chronology MCQs to {out_file}")
+
+if __name__ == "__main__":
+    main()

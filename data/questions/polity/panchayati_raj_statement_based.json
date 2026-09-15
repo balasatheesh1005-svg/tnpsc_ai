@@ -15,13 +15,13 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "B",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "C",
@@ -35,19 +35,19 @@
       }
     ],
     "options_en": [
-      "1 and 2 only",
       "1, 2 and 3",
+      "1 and 2 only",
       "1 and 3 only",
       "2 and 3 only"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டுமே",
       "1, 2 மற்றும் 3",
+      "1 மற்றும் 2 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
       "2 மற்றும் 3 மட்டுமே"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "All three statements are correct. The Balwant Rai Mehta Committee recommended: (1) a 3-tier structure (Gram Panchayat, Panchayat Samiti, Zilla Parishad), (2) Panchayat Samiti as the executive body and Zilla Parishad as supervisory/advisory, and (3) District Collector as Chairman of Zilla Parishad.",
       "ta": "மூன்று கூற்றுகளும் சரியானவை. பல்வந்த் ராய் மேத்தா குழு: (1) மூன்றடுக்கு முறை, (2) ஊராட்சி ஒன்றியம் முதன்மை நிர்வாக அமைப்பு, (3) மாவட்ட ஆட்சியர் ஜில்லா பரிஷத்தின் தலைவர் ஆகிய அனைத்தையும் பரிந்துரைத்தது."
@@ -56,12 +56,12 @@
     "explanation_ta": "மூன்று கூற்றுகளும் சரியானவை. பல்வந்த் ராய் மேத்தா குழு: (1) மூன்றடுக்கு முறை, (2) ஊராட்சி ஒன்றியம் முதன்மை நிர்வாக அமைப்பு, (3) மாவட்ட ஆட்சியர் ஜில்லா பரிஷத்தின் தலைவர் ஆகிய அனைத்தையும் பரிந்துரைத்தது.",
     "why_not_others": {
       "A": {
-        "en": "Incorrect. Statement 3 is also correct.",
-        "ta": "தவறானது. கூற்று 3-ம் சரியானது."
-      },
-      "B": {
         "en": "Correct. All three statements accurately state the core recommendations of Balwant Rai Mehta.",
         "ta": "சரியானது. மூன்று கூற்றுகளும் பல்வந்த் ராய் மேத்தா குழுவின் முக்கிய பரிந்துரைகளை துல்லியமாகக் கூறுகின்றன."
+      },
+      "B": {
+        "en": "Incorrect. Statement 3 is also correct.",
+        "ta": "தவறானது. கூற்று 3-ம் சரியானது."
       },
       "C": {
         "en": "Incorrect. Statement 2 is also correct.",
@@ -202,8 +202,8 @@
       },
       {
         "id": "B",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "C",
@@ -212,24 +212,24 @@
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       }
     ],
     "options_en": [
       "2 and 3 only",
-      "1 and 2 only",
+      "1, 2 and 3",
       "1 and 3 only",
-      "1, 2 and 3"
+      "1 and 2 only"
     ],
     "options_ta": [
       "2 மற்றும் 3 மட்டுமே",
-      "1 மற்றும் 2 மட்டுமே",
+      "1, 2 மற்றும் 3",
       "1 மற்றும் 3 மட்டுமே",
-      "1, 2 மற்றும் 3"
+      "1 மற்றும் 2 மட்டுமே"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Statements 1 and 2 are correct. SC/ST and Women reservations are mandatory. Statement 3 is incorrect because OBC reservation under Article 243D(6) is discretionary, leaving it to the wisdom of the State Legislature.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. SC/ST மற்றும் பெண்கள் இடஒதுக்கீடு கட்டாயமானது. கூற்று 3 தவறானது, ஏனெனில் உறுப்பு 243D(6)-ன் கீழ் OBC இடஒதுக்கீடு என்பது மாநிலத்தின் விருப்பத்திற்குரியது (கட்டாயமல்ல)."
@@ -242,16 +242,16 @@
         "ta": "தவறானது. கூற்று 3 தவறு."
       },
       "B": {
-        "en": "Correct. Statements 1 and 2 are accurate; Statement 3 is false.",
-        "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 2 சரி; கூற்று 3 தவறு."
+        "en": "Incorrect. Statement 3 is false.",
+        "ta": "தவறானது. கூற்று 3 தவறு."
       },
       "C": {
         "en": "Incorrect. Statement 3 is false.",
         "ta": "தவறானது. கூற்று 3 தவறு."
       },
       "D": {
-        "en": "Incorrect. Statement 3 is false.",
-        "ta": "தவறானது. கூற்று 3 தவறு."
+        "en": "Correct. Statements 1 and 2 are accurate; Statement 3 is false.",
+        "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 2 சரி; கூற்று 3 தவறு."
       }
     },
     "tnpsc_tip": {
@@ -293,13 +293,13 @@
       },
       {
         "id": "B",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "C",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "D",
@@ -309,18 +309,18 @@
     ],
     "options_en": [
       "2 and 3 only",
-      "1 and 2 only",
       "1 and 3 only",
+      "1 and 2 only",
       "1, 2 and 3"
     ],
     "options_ta": [
       "2 மற்றும் 3 மட்டுமே",
-      "1 மற்றும் 2 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
+      "1 மற்றும் 2 மட்டுமே",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because under Article 243E(4), a reconstituted Panchayat continues ONLY for the remainder of the period, not a fresh 5-year term.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பு 243E(4)-ன் படி முன்கூட்டியே கலைக்கப்பட்டு மீண்டும் அமைக்கப்படும் ஊராட்சி எஞ்சிய காலத்திற்கு மட்டுமே நீடிக்கும்; புதிய 5 ஆண்டு காலம் கிடைக்காது."
@@ -333,12 +333,12 @@
         "ta": "தவறானது. கூற்று 3 தவறு."
       },
       "B": {
-        "en": "Correct. Statements 1 and 2 are true; Statement 3 is false.",
-        "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 2 சரி; கூற்று 3 தவறு."
-      },
-      "C": {
         "en": "Incorrect. Statement 3 is false.",
         "ta": "தவறானது. கூற்று 3 தவறு."
+      },
+      "C": {
+        "en": "Correct. Statements 1 and 2 are true; Statement 3 is false.",
+        "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 2 சரி; கூற்று 3 தவறு."
       },
       "D": {
         "en": "Incorrect. Statement 3 is false.",
@@ -384,13 +384,13 @@
       },
       {
         "id": "B",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டுமே"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "C",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டுமே"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "D",
@@ -400,18 +400,18 @@
     ],
     "options_en": [
       "1 and 2 only",
-      "1 and 3 only",
       "2 and 3 only",
+      "1 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
       "1 மற்றும் 2 மட்டுமே",
-      "1 மற்றும் 3 மட்டுமே",
       "2 மற்றும் 3 மட்டுமே",
+      "1 மற்றும் 3 மட்டுமே",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Statements 1 and 3 are correct. Statement 2 is incorrect because the State Election Commissioner can only be removed in like manner and grounds as a Judge of a High Court (by the President after Parliamentary address), NOT by the Governor.",
       "ta": "கூற்றுகள் 1 மற்றும் 3 சரியானவை. கூற்று 2 தவறானது, ஏனெனில் உயர் நீதிமன்ற நீதிபதியைப் போன்றே (பாராளுமன்ற நடைமுறைக்குப் பின் குடியரசுத் தலைவரால்) மட்டுமே நீக்க முடியும்; ஆளுநரால் நீக்க முடியாது."
@@ -424,12 +424,12 @@
         "ta": "தவறானது. கூற்று 2 தவறு."
       },
       "B": {
-        "en": "Correct. Statements 1 and 3 are true; Statement 2 is false.",
-        "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 3 சரி; கூற்று 2 தவறு."
-      },
-      "C": {
         "en": "Incorrect. Statement 2 is false.",
         "ta": "தவறானது. கூற்று 2 தவறு."
+      },
+      "C": {
+        "en": "Correct. Statements 1 and 3 are true; Statement 2 is false.",
+        "ta": "சரியானது. கூற்றுகள் 1 மற்றும் 3 சரி; கூற்று 2 தவறு."
       },
       "D": {
         "en": "Incorrect. Statement 2 is false.",
@@ -562,13 +562,13 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "B",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "C",
@@ -582,19 +582,19 @@
       }
     ],
     "options_en": [
-      "1 and 2 only",
       "2 and 3 only",
+      "1 and 2 only",
       "1 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டுமே",
       "2 மற்றும் 3 மட்டுமே",
+      "1 மற்றும் 2 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Statement 1 is false because it is not universally mandatory for small states (<20 lakhs). Statements 2 and 3 are correct.",
       "ta": "கூற்று 1 தவறு, ஏனெனில் 20 லட்சத்திற்குக் குறைவான சிறிய மாநிலங்களுக்கு 3 அடுக்கு கட்டாயமல்ல. கூற்றுகள் 2 மற்றும் 3 சரி."
@@ -603,12 +603,12 @@
     "explanation_ta": "கூற்று 1 தவறு, ஏனெனில் 20 லட்சத்திற்குக் குறைவான சிறிய மாநிலங்களுக்கு 3 அடுக்கு கட்டாயமல்ல. கூற்றுகள் 2 மற்றும் 3 சரி.",
     "why_not_others": {
       "A": {
-        "en": "Option B evaluation based on constitutional statements.",
-        "ta": "அரசியலமைப்பு கூற்றுகளின் அடிப்படையிலான விருப்பம் B மதிப்பீடு."
-      },
-      "B": {
         "en": "Correct. Statement 1 is false because it is not universally mandatory for small states (<20 lakhs). Statements 2 and 3 are correct.",
         "ta": "சரியானது. கூற்று 1 தவறு, ஏனெனில் 20 லட்சத்திற்குக் குறைவான சிறிய மாநிலங்களுக்கு 3 அடுக்கு கட்டாயமல்ல. கூற்றுகள் 2 மற்றும் 3 சரி."
+      },
+      "B": {
+        "en": "Option B evaluation based on constitutional statements.",
+        "ta": "அரசியலமைப்பு கூற்றுகளின் அடிப்படையிலான விருப்பம் B மதிப்பீடு."
       },
       "C": {
         "en": "Option C evaluation based on constitutional statements.",
@@ -654,13 +654,13 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "B",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "C",
@@ -674,19 +674,19 @@
       }
     ],
     "options_en": [
-      "1 and 2 only",
       "1 and 3 only",
+      "1 and 2 only",
       "2 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
+      "1 மற்றும் 2 மட்டுமே",
       "2 மற்றும் 3 மட்டுமே",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Statement 2 is false because intermediate and district chairpersons are strictly elected INDIRECTLY by elected members under Article 243C(5)(b).",
       "ta": "கூற்று 2 தவறு, ஏனெனில் இடைநிலை மற்றும் மாவட்ட தலைவர்கள் தேர்ந்தெடுக்கப்பட்ட உறுப்பினர்களால் மட்டுமே மறைமுகமாகத் தேர்ந்தெடுக்கப்படுகின்றனர்."
@@ -695,12 +695,12 @@
     "explanation_ta": "கூற்று 2 தவறு, ஏனெனில் இடைநிலை மற்றும் மாவட்ட தலைவர்கள் தேர்ந்தெடுக்கப்பட்ட உறுப்பினர்களால் மட்டுமே மறைமுகமாகத் தேர்ந்தெடுக்கப்படுகின்றனர்.",
     "why_not_others": {
       "A": {
-        "en": "Option B evaluation based on constitutional statements.",
-        "ta": "அரசியலமைப்பு கூற்றுகளின் அடிப்படையிலான விருப்பம் B மதிப்பீடு."
-      },
-      "B": {
         "en": "Correct. Statement 2 is false because intermediate and district chairpersons are strictly elected INDIRECTLY by elected members under Article 243C(5)(b).",
         "ta": "சரியானது. கூற்று 2 தவறு, ஏனெனில் இடைநிலை மற்றும் மாவட்ட தலைவர்கள் தேர்ந்தெடுக்கப்பட்ட உறுப்பினர்களால் மட்டுமே மறைமுகமாகத் தேர்ந்தெடுக்கப்படுகின்றனர்."
+      },
+      "B": {
+        "en": "Option B evaluation based on constitutional statements.",
+        "ta": "அரசியலமைப்பு கூற்றுகளின் அடிப்படையிலான விருப்பம் B மதிப்பீடு."
       },
       "C": {
         "en": "Option C evaluation based on constitutional statements.",
@@ -843,8 +843,8 @@
       },
       {
         "id": "B",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "C",
@@ -853,24 +853,24 @@
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       }
     ],
     "options_en": [
       "2 and 3 only",
-      "1 and 2 only",
+      "1, 2 and 3",
       "1 and 3 only",
-      "1, 2 and 3"
+      "1 and 2 only"
     ],
     "options_ta": [
       "2 மற்றும் 3 மட்டுமே",
-      "1 மற்றும் 2 மட்டுமே",
+      "1, 2 மற்றும் 3",
       "1 மற்றும் 3 மட்டுமே",
-      "1, 2 மற்றும் 3"
+      "1 மற்றும் 2 மட்டுமே"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Statement 3 is false because courts are barred from interfering in or staying ongoing election processes once notification is issued.",
       "ta": "கூற்று 3 தவறு, ஏனெனில் தேர்தல் அறிவிக்கை வெளியான பிறகு நடப்பு தேர்தல்களுக்கு நீதிமன்றங்கள் தடையாணை பிறப்பிக்க முடியாது."
@@ -883,16 +883,16 @@
         "ta": "அரசியலமைப்பு கூற்றுகளின் அடிப்படையிலான விருப்பம் B மதிப்பீடு."
       },
       "B": {
-        "en": "Correct. Statement 3 is false because courts are barred from interfering in or staying ongoing election processes once notification is issued.",
-        "ta": "சரியானது. கூற்று 3 தவறு, ஏனெனில் தேர்தல் அறிவிக்கை வெளியான பிறகு நடப்பு தேர்தல்களுக்கு நீதிமன்றங்கள் தடையாணை பிறப்பிக்க முடியாது."
+        "en": "Option D evaluation based on constitutional statements.",
+        "ta": "அரசியலமைப்பு கூற்றுகளின் அடிப்படையிலான விருப்பம் D மதிப்பீடு."
       },
       "C": {
         "en": "Option C evaluation based on constitutional statements.",
         "ta": "அரசியலமைப்பு கூற்றுகளின் அடிப்படையிலான விருப்பம் C மதிப்பீடு."
       },
       "D": {
-        "en": "Option D evaluation based on constitutional statements.",
-        "ta": "அரசியலமைப்பு கூற்றுகளின் அடிப்படையிலான விருப்பம் D மதிப்பீடு."
+        "en": "Correct. Statement 3 is false because courts are barred from interfering in or staying ongoing election processes once notification is issued.",
+        "ta": "சரியானது. கூற்று 3 தவறு, ஏனெனில் தேர்தல் அறிவிக்கை வெளியான பிறகு நடப்பு தேர்தல்களுக்கு நீதிமன்றங்கள் தடையாணை பிறப்பிக்க முடியாது."
       }
     },
     "tnpsc_tip": {
@@ -930,13 +930,13 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "B",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "C",
@@ -950,19 +950,19 @@
       }
     ],
     "options_en": [
-      "1 and 2 only",
       "1, 2 and 3",
+      "1 and 2 only",
       "1 and 3 only",
       "2 and 3 only"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டுமே",
       "1, 2 மற்றும் 3",
+      "1 மற்றும் 2 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
       "2 மற்றும் 3 மட்டுமே"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "All three statements are correct under Section 4 of PESA Act, 1996.",
       "ta": "மூன்று கூற்றுகளும் 1996 PESA சட்டத்தின் பிரிவு 4-ன் கீழ் சரியானவை."
@@ -971,12 +971,12 @@
     "explanation_ta": "மூன்று கூற்றுகளும் 1996 PESA சட்டத்தின் பிரிவு 4-ன் கீழ் சரியானவை.",
     "why_not_others": {
       "A": {
-        "en": "Option A statement analysis.",
-        "ta": "விருப்பம் A கூற்று பகுப்பாய்வு."
-      },
-      "B": {
         "en": "Correct. All three statements are correct under Section 4 of PESA Act, 1996.",
         "ta": "சரியானது. மூன்று கூற்றுகளும் 1996 PESA சட்டத்தின் பிரிவு 4-ன் கீழ் சரியானவை."
+      },
+      "B": {
+        "en": "Option A statement analysis.",
+        "ta": "விருப்பம் A கூற்று பகுப்பாய்வு."
       },
       "C": {
         "en": "Option C statement analysis.",
@@ -1021,13 +1021,13 @@
     "options": [
       {
         "id": "A",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "B",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "C",
@@ -1041,19 +1041,19 @@
       }
     ],
     "options_en": [
-      "2 and 3 only",
       "1 and 2 only",
+      "2 and 3 only",
       "1 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
-      "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 2 மட்டுமே",
+      "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Statement 3 is false because in Tamil Nadu, the Village Panchayat President is directly elected by the voters.",
       "ta": "கூற்று 3 தவறு, ஏனெனில் தமிழ்நாட்டில் கிராம ஊராட்சித் தலைவர் மக்களால் நேரடியாகத் தேர்ந்தெடுக்கப்படுகிறார்."
@@ -1062,12 +1062,12 @@
     "explanation_ta": "கூற்று 3 தவறு, ஏனெனில் தமிழ்நாட்டில் கிராம ஊராட்சித் தலைவர் மக்களால் நேரடியாகத் தேர்ந்தெடுக்கப்படுகிறார்.",
     "why_not_others": {
       "A": {
-        "en": "Option B statement analysis.",
-        "ta": "விருப்பம் B கூற்று பகுப்பாய்வு."
-      },
-      "B": {
         "en": "Correct. Statement 3 is false because in Tamil Nadu, the Village Panchayat President is directly elected by the voters.",
         "ta": "சரியானது. கூற்று 3 தவறு, ஏனெனில் தமிழ்நாட்டில் கிராம ஊராட்சித் தலைவர் மக்களால் நேரடியாகத் தேர்ந்தெடுக்கப்படுகிறார்."
+      },
+      "B": {
+        "en": "Option B statement analysis.",
+        "ta": "விருப்பம் B கூற்று பகுப்பாய்வு."
       },
       "C": {
         "en": "Option C statement analysis.",
@@ -1117,13 +1117,13 @@
       },
       {
         "id": "B",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "C",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "D",
@@ -1133,18 +1133,18 @@
     ],
     "options_en": [
       "2 and 3 only",
-      "1 and 2 only",
       "1 and 3 only",
+      "1 and 2 only",
       "1, 2 and 3"
     ],
     "options_ta": [
       "2 மற்றும் 3 மட்டுமே",
-      "1 மற்றும் 2 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
+      "1 மற்றும் 2 மட்டுமே",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Statement 3 is false because devolution under Article 243G is discretionary ('may endow').",
       "ta": "கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243G-ன் கீழ் அதிகாரப் பகிர்வு விருப்பத்திற்குரியது."
@@ -1157,12 +1157,12 @@
         "ta": "விருப்பம் B கூற்று பகுப்பாய்வு."
       },
       "B": {
-        "en": "Correct. Statement 3 is false because devolution under Article 243G is discretionary ('may endow').",
-        "ta": "சரியானது. கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243G-ன் கீழ் அதிகாரப் பகிர்வு விருப்பத்திற்குரியது."
-      },
-      "C": {
         "en": "Option C statement analysis.",
         "ta": "விருப்பம் C கூற்று பகுப்பாய்வு."
+      },
+      "C": {
+        "en": "Correct. Statement 3 is false because devolution under Article 243G is discretionary ('may endow').",
+        "ta": "சரியானது. கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243G-ன் கீழ் அதிகாரப் பகிர்வு விருப்பத்திற்குரியது."
       },
       "D": {
         "en": "Option D statement analysis.",
@@ -1208,13 +1208,13 @@
       },
       {
         "id": "B",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "C",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "D",
@@ -1224,18 +1224,18 @@
     ],
     "options_en": [
       "1 and 2 only",
-      "2 and 3 only",
       "1, 2 and 3",
+      "2 and 3 only",
       "1 and 3 only"
     ],
     "options_ta": [
       "1 மற்றும் 2 மட்டுமே",
-      "2 மற்றும் 3 மட்டுமே",
       "1, 2 மற்றும் 3",
+      "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "All three statements are correct under Article 243ZD.",
       "ta": "மூன்று கூற்றுகளும் உறுப்பு 243ZD-ன் கீழ் சரியானவை."
@@ -1248,12 +1248,12 @@
         "ta": "விருப்பம் A கூற்று பகுப்பாய்வு."
       },
       "B": {
-        "en": "Option B statement analysis.",
-        "ta": "விருப்பம் B கூற்று பகுப்பாய்வு."
-      },
-      "C": {
         "en": "Correct. All three statements are correct under Article 243ZD.",
         "ta": "சரியானது. மூன்று கூற்றுகளும் உறுப்பு 243ZD-ன் கீழ் சரியானவை."
+      },
+      "C": {
+        "en": "Option B statement analysis.",
+        "ta": "விருப்பம் B கூற்று பகுப்பாய்வு."
       },
       "D": {
         "en": "Option C statement analysis.",
@@ -1294,8 +1294,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "B",
@@ -1304,8 +1304,8 @@
       },
       {
         "id": "C",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "D",
@@ -1314,19 +1314,19 @@
       }
     ],
     "options_en": [
-      "1 and 3 only",
-      "2 and 3 only",
       "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
-      "1 மற்றும் 3 மட்டுமே",
-      "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 2 மட்டுமே",
+      "2 மற்றும் 3 மட்டுமே",
+      "1 மற்றும் 3 மட்டுமே",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Statement 3 is false because disputes are referred to the authority prescribed by State Legislature under Article 243F(2).",
       "ta": "கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243F(2)-ன் படி மாநில சட்டம் குறிப்பிடும் அதிகாரியே இதைத் தீர்மானிக்கிறார்."
@@ -1335,16 +1335,16 @@
     "explanation_ta": "கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243F(2)-ன் படி மாநில சட்டம் குறிப்பிடும் அதிகாரியே இதைத் தீர்மானிக்கிறார்.",
     "why_not_others": {
       "A": {
-        "en": "Option C statement analysis.",
-        "ta": "விருப்பம் C கூற்று பகுப்பாய்வு."
+        "en": "Correct. Statement 3 is false because disputes are referred to the authority prescribed by State Legislature under Article 243F(2).",
+        "ta": "சரியானது. கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243F(2)-ன் படி மாநில சட்டம் குறிப்பிடும் அதிகாரியே இதைத் தீர்மானிக்கிறார்."
       },
       "B": {
         "en": "Option B statement analysis.",
         "ta": "விருப்பம் B கூற்று பகுப்பாய்வு."
       },
       "C": {
-        "en": "Correct. Statement 3 is false because disputes are referred to the authority prescribed by State Legislature under Article 243F(2).",
-        "ta": "சரியானது. கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243F(2)-ன் படி மாநில சட்டம் குறிப்பிடும் அதிகாரியே இதைத் தீர்மானிக்கிறார்."
+        "en": "Option C statement analysis.",
+        "ta": "விருப்பம் C கூற்று பகுப்பாய்வு."
       },
       "D": {
         "en": "Option D statement analysis.",
@@ -1390,13 +1390,13 @@
       },
       {
         "id": "B",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "C",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "D",
@@ -1406,18 +1406,18 @@
     ],
     "options_en": [
       "1 and 2 only",
-      "2 and 3 only",
       "1, 2 and 3",
+      "2 and 3 only",
       "1 and 3 only"
     ],
     "options_ta": [
       "1 மற்றும் 2 மட்டுமே",
-      "2 மற்றும் 3 மட்டுமே",
       "1, 2 மற்றும் 3",
+      "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "All three statements are correct under Section 4 of PESA Act, 1996.",
       "ta": "மூன்று கூற்றுகளும் 1996 PESA சட்டத்தின் பிரிவு 4-ன் கீழ் சரியானவை."
@@ -1430,12 +1430,12 @@
         "ta": "விருப்பம் A கூற்று பகுப்பாய்வு."
       },
       "B": {
-        "en": "Option B statement analysis.",
-        "ta": "விருப்பம் B கூற்று பகுப்பாய்வு."
-      },
-      "C": {
         "en": "Correct. All three statements are correct under Section 4 of PESA Act, 1996.",
         "ta": "சரியானது. மூன்று கூற்றுகளும் 1996 PESA சட்டத்தின் பிரிவு 4-ன் கீழ் சரியானவை."
+      },
+      "C": {
+        "en": "Option B statement analysis.",
+        "ta": "விருப்பம் B கூற்று பகுப்பாய்வு."
       },
       "D": {
         "en": "Option C statement analysis.",
@@ -1481,13 +1481,13 @@
       },
       {
         "id": "B",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "C",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "D",
@@ -1497,18 +1497,18 @@
     ],
     "options_en": [
       "1 and 3 only",
-      "2 and 3 only",
       "1 and 2 only",
+      "2 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
       "1 மற்றும் 3 மட்டுமே",
-      "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 2 மட்டுமே",
+      "2 மற்றும் 3 மட்டுமே",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Statement 3 is false because in Tamil Nadu, the Village Panchayat President is directly elected by the voters.",
       "ta": "கூற்று 3 தவறு, ஏனெனில் தமிழ்நாட்டில் கிராம ஊராட்சித் தலைவர் மக்களால் நேரடியாகத் தேர்ந்தெடுக்கப்படுகிறார்."
@@ -1521,12 +1521,12 @@
         "ta": "விருப்பம் C கூற்று பகுப்பாய்வு."
       },
       "B": {
-        "en": "Option B statement analysis.",
-        "ta": "விருப்பம் B கூற்று பகுப்பாய்வு."
-      },
-      "C": {
         "en": "Correct. Statement 3 is false because in Tamil Nadu, the Village Panchayat President is directly elected by the voters.",
         "ta": "சரியானது. கூற்று 3 தவறு, ஏனெனில் தமிழ்நாட்டில் கிராம ஊராட்சித் தலைவர் மக்களால் நேரடியாகத் தேர்ந்தெடுக்கப்படுகிறார்."
+      },
+      "C": {
+        "en": "Option B statement analysis.",
+        "ta": "விருப்பம் B கூற்று பகுப்பாய்வு."
       },
       "D": {
         "en": "Option D statement analysis.",
@@ -1577,29 +1577,29 @@
       },
       {
         "id": "C",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       }
     ],
     "options_en": [
       "1 and 3 only",
       "2 and 3 only",
-      "1 and 2 only",
-      "1, 2 and 3"
+      "1, 2 and 3",
+      "1 and 2 only"
     ],
     "options_ta": [
       "1 மற்றும் 3 மட்டுமே",
       "2 மற்றும் 3 மட்டுமே",
-      "1 மற்றும் 2 மட்டுமே",
-      "1, 2 மற்றும் 3"
+      "1, 2 மற்றும் 3",
+      "1 மற்றும் 2 மட்டுமே"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Statement 3 is false because devolution under Article 243G is discretionary ('may endow').",
       "ta": "கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243G-ன் கீழ் அதிகாரப் பகிர்வு விருப்பத்திற்குரியது."
@@ -1616,12 +1616,12 @@
         "ta": "விருப்பம் B கூற்று பகுப்பாய்வு."
       },
       "C": {
-        "en": "Correct. Statement 3 is false because devolution under Article 243G is discretionary ('may endow').",
-        "ta": "சரியானது. கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243G-ன் கீழ் அதிகாரப் பகிர்வு விருப்பத்திற்குரியது."
-      },
-      "D": {
         "en": "Option D statement analysis.",
         "ta": "விருப்பம் D கூற்று பகுப்பாய்வு."
+      },
+      "D": {
+        "en": "Correct. Statement 3 is false because devolution under Article 243G is discretionary ('may endow').",
+        "ta": "சரியானது. கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243G-ன் கீழ் அதிகாரப் பகிர்வு விருப்பத்திற்குரியது."
       }
     },
     "tnpsc_tip": {
@@ -1663,13 +1663,13 @@
       },
       {
         "id": "B",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "C",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "D",
@@ -1679,18 +1679,18 @@
     ],
     "options_en": [
       "1 and 2 only",
-      "2 and 3 only",
       "1, 2 and 3",
+      "2 and 3 only",
       "1 and 3 only"
     ],
     "options_ta": [
       "1 மற்றும் 2 மட்டுமே",
-      "2 மற்றும் 3 மட்டுமே",
       "1, 2 மற்றும் 3",
+      "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "All three statements are correct under Article 243ZD.",
       "ta": "மூன்று கூற்றுகளும் உறுப்பு 243ZD-ன் கீழ் சரியானவை."
@@ -1703,12 +1703,12 @@
         "ta": "விருப்பம் A கூற்று பகுப்பாய்வு."
       },
       "B": {
-        "en": "Option B statement analysis.",
-        "ta": "விருப்பம் B கூற்று பகுப்பாய்வு."
-      },
-      "C": {
         "en": "Correct. All three statements are correct under Article 243ZD.",
         "ta": "சரியானது. மூன்று கூற்றுகளும் உறுப்பு 243ZD-ன் கீழ் சரியானவை."
+      },
+      "C": {
+        "en": "Option B statement analysis.",
+        "ta": "விருப்பம் B கூற்று பகுப்பாய்வு."
       },
       "D": {
         "en": "Option C statement analysis.",
@@ -1754,13 +1754,13 @@
       },
       {
         "id": "B",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "C",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "D",
@@ -1770,18 +1770,18 @@
     ],
     "options_en": [
       "1 and 3 only",
-      "2 and 3 only",
       "1 and 2 only",
+      "2 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
       "1 மற்றும் 3 மட்டுமே",
-      "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 2 மட்டுமே",
+      "2 மற்றும் 3 மட்டுமே",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Statement 3 is false because disputes are referred to the authority prescribed by State Legislature under Article 243F(2).",
       "ta": "கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243F(2)-ன் படி மாநில சட்டம் குறிப்பிடும் அதிகாரியே இதைத் தீர்மானிக்கிறார்."
@@ -1794,12 +1794,12 @@
         "ta": "விருப்பம் C கூற்று பகுப்பாய்வு."
       },
       "B": {
-        "en": "Option B statement analysis.",
-        "ta": "விருப்பம் B கூற்று பகுப்பாய்வு."
-      },
-      "C": {
         "en": "Correct. Statement 3 is false because disputes are referred to the authority prescribed by State Legislature under Article 243F(2).",
         "ta": "சரியானது. கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243F(2)-ன் படி மாநில சட்டம் குறிப்பிடும் அதிகாரியே இதைத் தீர்மானிக்கிறார்."
+      },
+      "C": {
+        "en": "Option B statement analysis.",
+        "ta": "விருப்பம் B கூற்று பகுப்பாய்வு."
       },
       "D": {
         "en": "Option D statement analysis.",
@@ -1850,29 +1850,29 @@
       },
       {
         "id": "C",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டுமே"
       }
     ],
     "options_en": [
       "1 and 2 only",
       "2 and 3 only",
-      "1 and 3 only",
-      "1, 2 and 3"
+      "1, 2 and 3",
+      "1 and 3 only"
     ],
     "options_ta": [
       "1 மற்றும் 2 மட்டுமே",
       "2 மற்றும் 3 மட்டுமே",
-      "1 மற்றும் 3 மட்டுமே",
-      "1, 2 மற்றும் 3"
+      "1, 2 மற்றும் 3",
+      "1 மற்றும் 3 மட்டுமே"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "All three statements are correct under Section 4 of PESA Act, 1996.",
       "ta": "மூன்று கூற்றுகளும் 1996 PESA சட்டத்தின் பிரிவு 4-ன் கீழ் சரியானவை."
@@ -1889,12 +1889,12 @@
         "ta": "விருப்பம் B கூற்று பகுப்பாய்வு."
       },
       "C": {
-        "en": "Option C statement analysis.",
-        "ta": "விருப்பம் C கூற்று பகுப்பாய்வு."
-      },
-      "D": {
         "en": "Correct. All three statements are correct under Section 4 of PESA Act, 1996.",
         "ta": "சரியானது. மூன்று கூற்றுகளும் 1996 PESA சட்டத்தின் பிரிவு 4-ன் கீழ் சரியானவை."
+      },
+      "D": {
+        "en": "Option C statement analysis.",
+        "ta": "விருப்பம் C கூற்று பகுப்பாய்வு."
       }
     },
     "tnpsc_tip": {
@@ -1941,29 +1941,29 @@
       },
       {
         "id": "C",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       }
     ],
     "options_en": [
       "1 and 3 only",
       "2 and 3 only",
-      "1 and 2 only",
-      "1, 2 and 3"
+      "1, 2 and 3",
+      "1 and 2 only"
     ],
     "options_ta": [
       "1 மற்றும் 3 மட்டுமே",
       "2 மற்றும் 3 மட்டுமே",
-      "1 மற்றும் 2 மட்டுமே",
-      "1, 2 மற்றும் 3"
+      "1, 2 மற்றும் 3",
+      "1 மற்றும் 2 மட்டுமே"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Statement 3 is false because in Tamil Nadu, the Village Panchayat President is directly elected by the voters.",
       "ta": "கூற்று 3 தவறு, ஏனெனில் தமிழ்நாட்டில் கிராம ஊராட்சித் தலைவர் மக்களால் நேரடியாகத் தேர்ந்தெடுக்கப்படுகிறார்."
@@ -1980,12 +1980,12 @@
         "ta": "விருப்பம் B கூற்று பகுப்பாய்வு."
       },
       "C": {
-        "en": "Correct. Statement 3 is false because in Tamil Nadu, the Village Panchayat President is directly elected by the voters.",
-        "ta": "சரியானது. கூற்று 3 தவறு, ஏனெனில் தமிழ்நாட்டில் கிராம ஊராட்சித் தலைவர் மக்களால் நேரடியாகத் தேர்ந்தெடுக்கப்படுகிறார்."
-      },
-      "D": {
         "en": "Option D statement analysis.",
         "ta": "விருப்பம் D கூற்று பகுப்பாய்வு."
+      },
+      "D": {
+        "en": "Correct. Statement 3 is false because in Tamil Nadu, the Village Panchayat President is directly elected by the voters.",
+        "ta": "சரியானது. கூற்று 3 தவறு, ஏனெனில் தமிழ்நாட்டில் கிராம ஊராட்சித் தலைவர் மக்களால் நேரடியாகத் தேர்ந்தெடுக்கப்படுகிறார்."
       }
     },
     "tnpsc_tip": {
@@ -2032,29 +2032,29 @@
       },
       {
         "id": "C",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       }
     ],
     "options_en": [
       "1 and 3 only",
       "2 and 3 only",
-      "1 and 2 only",
-      "1, 2 and 3"
+      "1, 2 and 3",
+      "1 and 2 only"
     ],
     "options_ta": [
       "1 மற்றும் 3 மட்டுமே",
       "2 மற்றும் 3 மட்டுமே",
-      "1 மற்றும் 2 மட்டுமே",
-      "1, 2 மற்றும் 3"
+      "1, 2 மற்றும் 3",
+      "1 மற்றும் 2 மட்டுமே"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Statement 3 is false because devolution under Article 243G is discretionary ('may endow').",
       "ta": "கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243G-ன் கீழ் அதிகாரப் பகிர்வு விருப்பத்திற்குரியது."
@@ -2071,12 +2071,12 @@
         "ta": "விருப்பம் B கூற்று பகுப்பாய்வு."
       },
       "C": {
-        "en": "Correct. Statement 3 is false because devolution under Article 243G is discretionary ('may endow').",
-        "ta": "சரியானது. கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243G-ன் கீழ் அதிகாரப் பகிர்வு விருப்பத்திற்குரியது."
-      },
-      "D": {
         "en": "Option D statement analysis.",
         "ta": "விருப்பம் D கூற்று பகுப்பாய்வு."
+      },
+      "D": {
+        "en": "Correct. Statement 3 is false because devolution under Article 243G is discretionary ('may endow').",
+        "ta": "சரியானது. கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243G-ன் கீழ் அதிகாரப் பகிர்வு விருப்பத்திற்குரியது."
       }
     },
     "tnpsc_tip": {
@@ -2113,8 +2113,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "B",
@@ -2128,24 +2128,24 @@
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       }
     ],
     "options_en": [
-      "1 and 2 only",
+      "1, 2 and 3",
       "2 and 3 only",
       "1 and 3 only",
-      "1, 2 and 3"
+      "1 and 2 only"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டுமே",
+      "1, 2 மற்றும் 3",
       "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
-      "1, 2 மற்றும் 3"
+      "1 மற்றும் 2 மட்டுமே"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "All three statements are correct under Article 243ZD.",
       "ta": "மூன்று கூற்றுகளும் உறுப்பு 243ZD-ன் கீழ் சரியானவை."
@@ -2154,8 +2154,8 @@
     "explanation_ta": "மூன்று கூற்றுகளும் உறுப்பு 243ZD-ன் கீழ் சரியானவை.",
     "why_not_others": {
       "A": {
-        "en": "Option A statement analysis.",
-        "ta": "விருப்பம் A கூற்று பகுப்பாய்வு."
+        "en": "Correct. All three statements are correct under Article 243ZD.",
+        "ta": "சரியானது. மூன்று கூற்றுகளும் உறுப்பு 243ZD-ன் கீழ் சரியானவை."
       },
       "B": {
         "en": "Option B statement analysis.",
@@ -2166,8 +2166,8 @@
         "ta": "விருப்பம் C கூற்று பகுப்பாய்வு."
       },
       "D": {
-        "en": "Correct. All three statements are correct under Article 243ZD.",
-        "ta": "சரியானது. மூன்று கூற்றுகளும் உறுப்பு 243ZD-ன் கீழ் சரியானவை."
+        "en": "Option A statement analysis.",
+        "ta": "விருப்பம் A கூற்று பகுப்பாய்வு."
       }
     },
     "tnpsc_tip": {
@@ -2305,29 +2305,29 @@
       },
       {
         "id": "C",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டுமே"
       }
     ],
     "options_en": [
       "1 and 2 only",
       "2 and 3 only",
-      "1 and 3 only",
-      "1, 2 and 3"
+      "1, 2 and 3",
+      "1 and 3 only"
     ],
     "options_ta": [
       "1 மற்றும் 2 மட்டுமே",
       "2 மற்றும் 3 மட்டுமே",
-      "1 மற்றும் 3 மட்டுமே",
-      "1, 2 மற்றும் 3"
+      "1, 2 மற்றும் 3",
+      "1 மற்றும் 3 மட்டுமே"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "All three statements are correct under Section 4 of PESA Act, 1996.",
       "ta": "மூன்று கூற்றுகளும் 1996 PESA சட்டத்தின் பிரிவு 4-ன் கீழ் சரியானவை."
@@ -2344,12 +2344,12 @@
         "ta": "விருப்பம் B கூற்று பகுப்பாய்வு."
       },
       "C": {
-        "en": "Option C statement analysis.",
-        "ta": "விருப்பம் C கூற்று பகுப்பாய்வு."
-      },
-      "D": {
         "en": "Correct. All three statements are correct under Section 4 of PESA Act, 1996.",
         "ta": "சரியானது. மூன்று கூற்றுகளும் 1996 PESA சட்டத்தின் பிரிவு 4-ன் கீழ் சரியானவை."
+      },
+      "D": {
+        "en": "Option C statement analysis.",
+        "ta": "விருப்பம் C கூற்று பகுப்பாய்வு."
       }
     },
     "tnpsc_tip": {
@@ -2386,8 +2386,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "B",
@@ -2396,8 +2396,8 @@
       },
       {
         "id": "C",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "D",
@@ -2406,19 +2406,19 @@
       }
     ],
     "options_en": [
-      "1 and 3 only",
-      "2 and 3 only",
       "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
-      "1 மற்றும் 3 மட்டுமே",
-      "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 2 மட்டுமே",
+      "2 மற்றும் 3 மட்டுமே",
+      "1 மற்றும் 3 மட்டுமே",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Statement 3 is false because in Tamil Nadu, the Village Panchayat President is directly elected by the voters.",
       "ta": "கூற்று 3 தவறு, ஏனெனில் தமிழ்நாட்டில் கிராம ஊராட்சித் தலைவர் மக்களால் நேரடியாகத் தேர்ந்தெடுக்கப்படுகிறார்."
@@ -2427,16 +2427,16 @@
     "explanation_ta": "கூற்று 3 தவறு, ஏனெனில் தமிழ்நாட்டில் கிராம ஊராட்சித் தலைவர் மக்களால் நேரடியாகத் தேர்ந்தெடுக்கப்படுகிறார்.",
     "why_not_others": {
       "A": {
-        "en": "Option C statement analysis.",
-        "ta": "விருப்பம் C கூற்று பகுப்பாய்வு."
+        "en": "Correct. Statement 3 is false because in Tamil Nadu, the Village Panchayat President is directly elected by the voters.",
+        "ta": "சரியானது. கூற்று 3 தவறு, ஏனெனில் தமிழ்நாட்டில் கிராம ஊராட்சித் தலைவர் மக்களால் நேரடியாகத் தேர்ந்தெடுக்கப்படுகிறார்."
       },
       "B": {
         "en": "Option B statement analysis.",
         "ta": "விருப்பம் B கூற்று பகுப்பாய்வு."
       },
       "C": {
-        "en": "Correct. Statement 3 is false because in Tamil Nadu, the Village Panchayat President is directly elected by the voters.",
-        "ta": "சரியானது. கூற்று 3 தவறு, ஏனெனில் தமிழ்நாட்டில் கிராம ஊராட்சித் தலைவர் மக்களால் நேரடியாகத் தேர்ந்தெடுக்கப்படுகிறார்."
+        "en": "Option C statement analysis.",
+        "ta": "விருப்பம் C கூற்று பகுப்பாய்வு."
       },
       "D": {
         "en": "Option D statement analysis.",
@@ -2477,8 +2477,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "B",
@@ -2487,8 +2487,8 @@
       },
       {
         "id": "C",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "D",
@@ -2497,19 +2497,19 @@
       }
     ],
     "options_en": [
-      "1 and 3 only",
-      "2 and 3 only",
       "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
-      "1 மற்றும் 3 மட்டுமே",
-      "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 2 மட்டுமே",
+      "2 மற்றும் 3 மட்டுமே",
+      "1 மற்றும் 3 மட்டுமே",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Statement 3 is false because devolution under Article 243G is discretionary ('may endow').",
       "ta": "கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243G-ன் கீழ் அதிகாரப் பகிர்வு விருப்பத்திற்குரியது."
@@ -2518,16 +2518,16 @@
     "explanation_ta": "கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243G-ன் கீழ் அதிகாரப் பகிர்வு விருப்பத்திற்குரியது.",
     "why_not_others": {
       "A": {
-        "en": "Option C statement analysis.",
-        "ta": "விருப்பம் C கூற்று பகுப்பாய்வு."
+        "en": "Correct. Statement 3 is false because devolution under Article 243G is discretionary ('may endow').",
+        "ta": "சரியானது. கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243G-ன் கீழ் அதிகாரப் பகிர்வு விருப்பத்திற்குரியது."
       },
       "B": {
         "en": "Option B statement analysis.",
         "ta": "விருப்பம் B கூற்று பகுப்பாய்வு."
       },
       "C": {
-        "en": "Correct. Statement 3 is false because devolution under Article 243G is discretionary ('may endow').",
-        "ta": "சரியானது. கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243G-ன் கீழ் அதிகாரப் பகிர்வு விருப்பத்திற்குரியது."
+        "en": "Option C statement analysis.",
+        "ta": "விருப்பம் C கூற்று பகுப்பாய்வு."
       },
       "D": {
         "en": "Option D statement analysis.",
@@ -2573,8 +2573,8 @@
       },
       {
         "id": "B",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "C",
@@ -2583,24 +2583,24 @@
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டுமே"
       }
     ],
     "options_en": [
       "1 and 2 only",
-      "2 and 3 only",
+      "1, 2 and 3",
       "1 and 3 only",
-      "1, 2 and 3"
+      "2 and 3 only"
     ],
     "options_ta": [
       "1 மற்றும் 2 மட்டுமே",
-      "2 மற்றும் 3 மட்டுமே",
+      "1, 2 மற்றும் 3",
       "1 மற்றும் 3 மட்டுமே",
-      "1, 2 மற்றும் 3"
+      "2 மற்றும் 3 மட்டுமே"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "All three statements are correct under Article 243ZD.",
       "ta": "மூன்று கூற்றுகளும் உறுப்பு 243ZD-ன் கீழ் சரியானவை."
@@ -2613,16 +2613,16 @@
         "ta": "விருப்பம் A கூற்று பகுப்பாய்வு."
       },
       "B": {
-        "en": "Option B statement analysis.",
-        "ta": "விருப்பம் B கூற்று பகுப்பாய்வு."
+        "en": "Correct. All three statements are correct under Article 243ZD.",
+        "ta": "சரியானது. மூன்று கூற்றுகளும் உறுப்பு 243ZD-ன் கீழ் சரியானவை."
       },
       "C": {
         "en": "Option C statement analysis.",
         "ta": "விருப்பம் C கூற்று பகுப்பாய்வு."
       },
       "D": {
-        "en": "Correct. All three statements are correct under Article 243ZD.",
-        "ta": "சரியானது. மூன்று கூற்றுகளும் உறுப்பு 243ZD-ன் கீழ் சரியானவை."
+        "en": "Option B statement analysis.",
+        "ta": "விருப்பம் B கூற்று பகுப்பாய்வு."
       }
     },
     "tnpsc_tip": {
@@ -2659,8 +2659,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "B",
@@ -2669,8 +2669,8 @@
       },
       {
         "id": "C",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "D",
@@ -2679,19 +2679,19 @@
       }
     ],
     "options_en": [
-      "1 and 2 only",
-      "2 and 3 only",
       "1 and 3 only",
+      "2 and 3 only",
+      "1 and 2 only",
       "1, 2 and 3"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டுமே",
-      "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
+      "2 மற்றும் 3 மட்டுமே",
+      "1 மற்றும் 2 மட்டுமே",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Statement 3 is false because disputes are referred to the authority prescribed by State Legislature under Article 243F(2).",
       "ta": "கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243F(2)-ன் படி மாநில சட்டம் குறிப்பிடும் அதிகாரியே இதைத் தீர்மானிக்கிறார்."
@@ -2700,16 +2700,16 @@
     "explanation_ta": "கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243F(2)-ன் படி மாநில சட்டம் குறிப்பிடும் அதிகாரியே இதைத் தீர்மானிக்கிறார்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Statement 3 is false because disputes are referred to the authority prescribed by State Legislature under Article 243F(2).",
-        "ta": "சரியானது. கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243F(2)-ன் படி மாநில சட்டம் குறிப்பிடும் அதிகாரியே இதைத் தீர்மானிக்கிறார்."
+        "en": "Option C statement analysis.",
+        "ta": "விருப்பம் C கூற்று பகுப்பாய்வு."
       },
       "B": {
         "en": "Option B statement analysis.",
         "ta": "விருப்பம் B கூற்று பகுப்பாய்வு."
       },
       "C": {
-        "en": "Option C statement analysis.",
-        "ta": "விருப்பம் C கூற்று பகுப்பாய்வு."
+        "en": "Correct. Statement 3 is false because disputes are referred to the authority prescribed by State Legislature under Article 243F(2).",
+        "ta": "சரியானது. கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243F(2)-ன் படி மாநில சட்டம் குறிப்பிடும் அதிகாரியே இதைத் தீர்மானிக்கிறார்."
       },
       "D": {
         "en": "Option D statement analysis.",
@@ -2755,8 +2755,8 @@
       },
       {
         "id": "B",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "C",
@@ -2765,24 +2765,24 @@
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டுமே"
       }
     ],
     "options_en": [
       "1 and 2 only",
-      "2 and 3 only",
+      "1, 2 and 3",
       "1 and 3 only",
-      "1, 2 and 3"
+      "2 and 3 only"
     ],
     "options_ta": [
       "1 மற்றும் 2 மட்டுமே",
-      "2 மற்றும் 3 மட்டுமே",
+      "1, 2 மற்றும் 3",
       "1 மற்றும் 3 மட்டுமே",
-      "1, 2 மற்றும் 3"
+      "2 மற்றும் 3 மட்டுமே"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "All three statements are correct under Section 4 of PESA Act, 1996.",
       "ta": "மூன்று கூற்றுகளும் 1996 PESA சட்டத்தின் பிரிவு 4-ன் கீழ் சரியானவை."
@@ -2795,16 +2795,16 @@
         "ta": "விருப்பம் A கூற்று பகுப்பாய்வு."
       },
       "B": {
-        "en": "Option B statement analysis.",
-        "ta": "விருப்பம் B கூற்று பகுப்பாய்வு."
+        "en": "Correct. All three statements are correct under Section 4 of PESA Act, 1996.",
+        "ta": "சரியானது. மூன்று கூற்றுகளும் 1996 PESA சட்டத்தின் பிரிவு 4-ன் கீழ் சரியானவை."
       },
       "C": {
         "en": "Option C statement analysis.",
         "ta": "விருப்பம் C கூற்று பகுப்பாய்வு."
       },
       "D": {
-        "en": "Correct. All three statements are correct under Section 4 of PESA Act, 1996.",
-        "ta": "சரியானது. மூன்று கூற்றுகளும் 1996 PESA சட்டத்தின் பிரிவு 4-ன் கீழ் சரியானவை."
+        "en": "Option B statement analysis.",
+        "ta": "விருப்பம் B கூற்று பகுப்பாய்வு."
       }
     },
     "tnpsc_tip": {
@@ -2841,8 +2841,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "B",
@@ -2856,24 +2856,24 @@
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       }
     ],
     "options_en": [
-      "1 and 2 only",
+      "1, 2 and 3",
       "2 and 3 only",
       "1 and 3 only",
-      "1, 2 and 3"
+      "1 and 2 only"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டுமே",
+      "1, 2 மற்றும் 3",
       "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
-      "1, 2 மற்றும் 3"
+      "1 மற்றும் 2 மட்டுமே"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Statement 3 is false because in Tamil Nadu, the Village Panchayat President is directly elected by the voters.",
       "ta": "கூற்று 3 தவறு, ஏனெனில் தமிழ்நாட்டில் கிராம ஊராட்சித் தலைவர் மக்களால் நேரடியாகத் தேர்ந்தெடுக்கப்படுகிறார்."
@@ -2882,8 +2882,8 @@
     "explanation_ta": "கூற்று 3 தவறு, ஏனெனில் தமிழ்நாட்டில் கிராம ஊராட்சித் தலைவர் மக்களால் நேரடியாகத் தேர்ந்தெடுக்கப்படுகிறார்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Statement 3 is false because in Tamil Nadu, the Village Panchayat President is directly elected by the voters.",
-        "ta": "சரியானது. கூற்று 3 தவறு, ஏனெனில் தமிழ்நாட்டில் கிராம ஊராட்சித் தலைவர் மக்களால் நேரடியாகத் தேர்ந்தெடுக்கப்படுகிறார்."
+        "en": "Option D statement analysis.",
+        "ta": "விருப்பம் D கூற்று பகுப்பாய்வு."
       },
       "B": {
         "en": "Option B statement analysis.",
@@ -2894,8 +2894,8 @@
         "ta": "விருப்பம் C கூற்று பகுப்பாய்வு."
       },
       "D": {
-        "en": "Option D statement analysis.",
-        "ta": "விருப்பம் D கூற்று பகுப்பாய்வு."
+        "en": "Correct. Statement 3 is false because in Tamil Nadu, the Village Panchayat President is directly elected by the voters.",
+        "ta": "சரியானது. கூற்று 3 தவறு, ஏனெனில் தமிழ்நாட்டில் கிராம ஊராட்சித் தலைவர் மக்களால் நேரடியாகத் தேர்ந்தெடுக்கப்படுகிறார்."
       }
     },
     "tnpsc_tip": {
@@ -2932,8 +2932,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "B",
@@ -2942,8 +2942,8 @@
       },
       {
         "id": "C",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "D",
@@ -2952,19 +2952,19 @@
       }
     ],
     "options_en": [
-      "1 and 2 only",
-      "2 and 3 only",
       "1 and 3 only",
+      "2 and 3 only",
+      "1 and 2 only",
       "1, 2 and 3"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டுமே",
-      "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
+      "2 மற்றும் 3 மட்டுமே",
+      "1 மற்றும் 2 மட்டுமே",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Statement 3 is false because devolution under Article 243G is discretionary ('may endow').",
       "ta": "கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243G-ன் கீழ் அதிகாரப் பகிர்வு விருப்பத்திற்குரியது."
@@ -2973,16 +2973,16 @@
     "explanation_ta": "கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243G-ன் கீழ் அதிகாரப் பகிர்வு விருப்பத்திற்குரியது.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Statement 3 is false because devolution under Article 243G is discretionary ('may endow').",
-        "ta": "சரியானது. கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243G-ன் கீழ் அதிகாரப் பகிர்வு விருப்பத்திற்குரியது."
+        "en": "Option C statement analysis.",
+        "ta": "விருப்பம் C கூற்று பகுப்பாய்வு."
       },
       "B": {
         "en": "Option B statement analysis.",
         "ta": "விருப்பம் B கூற்று பகுப்பாய்வு."
       },
       "C": {
-        "en": "Option C statement analysis.",
-        "ta": "விருப்பம் C கூற்று பகுப்பாய்வு."
+        "en": "Correct. Statement 3 is false because devolution under Article 243G is discretionary ('may endow').",
+        "ta": "சரியானது. கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243G-ன் கீழ் அதிகாரப் பகிர்வு விருப்பத்திற்குரியது."
       },
       "D": {
         "en": "Option D statement analysis.",
@@ -3033,29 +3033,29 @@
       },
       {
         "id": "C",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டுமே"
       }
     ],
     "options_en": [
       "1 and 2 only",
       "2 and 3 only",
-      "1 and 3 only",
-      "1, 2 and 3"
+      "1, 2 and 3",
+      "1 and 3 only"
     ],
     "options_ta": [
       "1 மற்றும் 2 மட்டுமே",
       "2 மற்றும் 3 மட்டுமே",
-      "1 மற்றும் 3 மட்டுமே",
-      "1, 2 மற்றும் 3"
+      "1, 2 மற்றும் 3",
+      "1 மற்றும் 3 மட்டுமே"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "All three statements are correct under Article 243ZD.",
       "ta": "மூன்று கூற்றுகளும் உறுப்பு 243ZD-ன் கீழ் சரியானவை."
@@ -3072,12 +3072,12 @@
         "ta": "விருப்பம் B கூற்று பகுப்பாய்வு."
       },
       "C": {
-        "en": "Option C statement analysis.",
-        "ta": "விருப்பம் C கூற்று பகுப்பாய்வு."
-      },
-      "D": {
         "en": "Correct. All three statements are correct under Article 243ZD.",
         "ta": "சரியானது. மூன்று கூற்றுகளும் உறுப்பு 243ZD-ன் கீழ் சரியானவை."
+      },
+      "D": {
+        "en": "Option C statement analysis.",
+        "ta": "விருப்பம் C கூற்று பகுப்பாய்வு."
       }
     },
     "tnpsc_tip": {
@@ -3114,8 +3114,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "B",
@@ -3129,24 +3129,24 @@
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       }
     ],
     "options_en": [
-      "1 and 2 only",
+      "1, 2 and 3",
       "2 and 3 only",
       "1 and 3 only",
-      "1, 2 and 3"
+      "1 and 2 only"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டுமே",
+      "1, 2 மற்றும் 3",
       "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
-      "1, 2 மற்றும் 3"
+      "1 மற்றும் 2 மட்டுமே"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Statement 3 is false because disputes are referred to the authority prescribed by State Legislature under Article 243F(2).",
       "ta": "கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243F(2)-ன் படி மாநில சட்டம் குறிப்பிடும் அதிகாரியே இதைத் தீர்மானிக்கிறார்."
@@ -3155,8 +3155,8 @@
     "explanation_ta": "கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243F(2)-ன் படி மாநில சட்டம் குறிப்பிடும் அதிகாரியே இதைத் தீர்மானிக்கிறார்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Statement 3 is false because disputes are referred to the authority prescribed by State Legislature under Article 243F(2).",
-        "ta": "சரியானது. கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243F(2)-ன் படி மாநில சட்டம் குறிப்பிடும் அதிகாரியே இதைத் தீர்மானிக்கிறார்."
+        "en": "Option D statement analysis.",
+        "ta": "விருப்பம் D கூற்று பகுப்பாய்வு."
       },
       "B": {
         "en": "Option B statement analysis.",
@@ -3167,8 +3167,8 @@
         "ta": "விருப்பம் C கூற்று பகுப்பாய்வு."
       },
       "D": {
-        "en": "Option D statement analysis.",
-        "ta": "விருப்பம் D கூற்று பகுப்பாய்வு."
+        "en": "Correct. Statement 3 is false because disputes are referred to the authority prescribed by State Legislature under Article 243F(2).",
+        "ta": "சரியானது. கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243F(2)-ன் படி மாநில சட்டம் குறிப்பிடும் அதிகாரியே இதைத் தீர்மானிக்கிறார்."
       }
     },
     "tnpsc_tip": {
@@ -3205,8 +3205,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "B",
@@ -3220,24 +3220,24 @@
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       }
     ],
     "options_en": [
-      "1 and 2 only",
+      "1, 2 and 3",
       "2 and 3 only",
       "1 and 3 only",
-      "1, 2 and 3"
+      "1 and 2 only"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டுமே",
+      "1, 2 மற்றும் 3",
       "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
-      "1, 2 மற்றும் 3"
+      "1 மற்றும் 2 மட்டுமே"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "All three statements are correct under Section 4 of PESA Act, 1996.",
       "ta": "மூன்று கூற்றுகளும் 1996 PESA சட்டத்தின் பிரிவு 4-ன் கீழ் சரியானவை."
@@ -3246,8 +3246,8 @@
     "explanation_ta": "மூன்று கூற்றுகளும் 1996 PESA சட்டத்தின் பிரிவு 4-ன் கீழ் சரியானவை.",
     "why_not_others": {
       "A": {
-        "en": "Option A statement analysis.",
-        "ta": "விருப்பம் A கூற்று பகுப்பாய்வு."
+        "en": "Correct. All three statements are correct under Section 4 of PESA Act, 1996.",
+        "ta": "சரியானது. மூன்று கூற்றுகளும் 1996 PESA சட்டத்தின் பிரிவு 4-ன் கீழ் சரியானவை."
       },
       "B": {
         "en": "Option B statement analysis.",
@@ -3258,8 +3258,8 @@
         "ta": "விருப்பம் C கூற்று பகுப்பாய்வு."
       },
       "D": {
-        "en": "Correct. All three statements are correct under Section 4 of PESA Act, 1996.",
-        "ta": "சரியானது. மூன்று கூற்றுகளும் 1996 PESA சட்டத்தின் பிரிவு 4-ன் கீழ் சரியானவை."
+        "en": "Option A statement analysis.",
+        "ta": "விருப்பம் A கூற்று பகுப்பாய்வு."
       }
     },
     "tnpsc_tip": {
@@ -3296,8 +3296,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "B",
@@ -3306,8 +3306,8 @@
       },
       {
         "id": "C",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "D",
@@ -3316,19 +3316,19 @@
       }
     ],
     "options_en": [
-      "1 and 2 only",
-      "2 and 3 only",
       "1 and 3 only",
+      "2 and 3 only",
+      "1 and 2 only",
       "1, 2 and 3"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டுமே",
-      "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
+      "2 மற்றும் 3 மட்டுமே",
+      "1 மற்றும் 2 மட்டுமே",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Statement 3 is false because in Tamil Nadu, the Village Panchayat President is directly elected by the voters.",
       "ta": "கூற்று 3 தவறு, ஏனெனில் தமிழ்நாட்டில் கிராம ஊராட்சித் தலைவர் மக்களால் நேரடியாகத் தேர்ந்தெடுக்கப்படுகிறார்."
@@ -3337,16 +3337,16 @@
     "explanation_ta": "கூற்று 3 தவறு, ஏனெனில் தமிழ்நாட்டில் கிராம ஊராட்சித் தலைவர் மக்களால் நேரடியாகத் தேர்ந்தெடுக்கப்படுகிறார்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Statement 3 is false because in Tamil Nadu, the Village Panchayat President is directly elected by the voters.",
-        "ta": "சரியானது. கூற்று 3 தவறு, ஏனெனில் தமிழ்நாட்டில் கிராம ஊராட்சித் தலைவர் மக்களால் நேரடியாகத் தேர்ந்தெடுக்கப்படுகிறார்."
+        "en": "Option C statement analysis.",
+        "ta": "விருப்பம் C கூற்று பகுப்பாய்வு."
       },
       "B": {
         "en": "Option B statement analysis.",
         "ta": "விருப்பம் B கூற்று பகுப்பாய்வு."
       },
       "C": {
-        "en": "Option C statement analysis.",
-        "ta": "விருப்பம் C கூற்று பகுப்பாய்வு."
+        "en": "Correct. Statement 3 is false because in Tamil Nadu, the Village Panchayat President is directly elected by the voters.",
+        "ta": "சரியானது. கூற்று 3 தவறு, ஏனெனில் தமிழ்நாட்டில் கிராம ஊராட்சித் தலைவர் மக்களால் நேரடியாகத் தேர்ந்தெடுக்கப்படுகிறார்."
       },
       "D": {
         "en": "Option D statement analysis.",
@@ -3387,8 +3387,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "B",
@@ -3402,24 +3402,24 @@
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       }
     ],
     "options_en": [
-      "1 and 2 only",
+      "1, 2 and 3",
       "2 and 3 only",
       "1 and 3 only",
-      "1, 2 and 3"
+      "1 and 2 only"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டுமே",
+      "1, 2 மற்றும் 3",
       "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
-      "1, 2 மற்றும் 3"
+      "1 மற்றும் 2 மட்டுமே"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Statement 3 is false because devolution under Article 243G is discretionary ('may endow').",
       "ta": "கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243G-ன் கீழ் அதிகாரப் பகிர்வு விருப்பத்திற்குரியது."
@@ -3428,8 +3428,8 @@
     "explanation_ta": "கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243G-ன் கீழ் அதிகாரப் பகிர்வு விருப்பத்திற்குரியது.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Statement 3 is false because devolution under Article 243G is discretionary ('may endow').",
-        "ta": "சரியானது. கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243G-ன் கீழ் அதிகாரப் பகிர்வு விருப்பத்திற்குரியது."
+        "en": "Option D statement analysis.",
+        "ta": "விருப்பம் D கூற்று பகுப்பாய்வு."
       },
       "B": {
         "en": "Option B statement analysis.",
@@ -3440,8 +3440,8 @@
         "ta": "விருப்பம் C கூற்று பகுப்பாய்வு."
       },
       "D": {
-        "en": "Option D statement analysis.",
-        "ta": "விருப்பம் D கூற்று பகுப்பாய்வு."
+        "en": "Correct. Statement 3 is false because devolution under Article 243G is discretionary ('may endow').",
+        "ta": "சரியானது. கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243G-ன் கீழ் அதிகாரப் பகிர்வு விருப்பத்திற்குரியது."
       }
     },
     "tnpsc_tip": {
@@ -3478,8 +3478,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "B",
@@ -3493,24 +3493,24 @@
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       }
     ],
     "options_en": [
-      "1 and 2 only",
+      "1, 2 and 3",
       "2 and 3 only",
       "1 and 3 only",
-      "1, 2 and 3"
+      "1 and 2 only"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டுமே",
+      "1, 2 மற்றும் 3",
       "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
-      "1, 2 மற்றும் 3"
+      "1 மற்றும் 2 மட்டுமே"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "All three statements are correct under Article 243ZD.",
       "ta": "மூன்று கூற்றுகளும் உறுப்பு 243ZD-ன் கீழ் சரியானவை."
@@ -3519,8 +3519,8 @@
     "explanation_ta": "மூன்று கூற்றுகளும் உறுப்பு 243ZD-ன் கீழ் சரியானவை.",
     "why_not_others": {
       "A": {
-        "en": "Option A statement analysis.",
-        "ta": "விருப்பம் A கூற்று பகுப்பாய்வு."
+        "en": "Correct. All three statements are correct under Article 243ZD.",
+        "ta": "சரியானது. மூன்று கூற்றுகளும் உறுப்பு 243ZD-ன் கீழ் சரியானவை."
       },
       "B": {
         "en": "Option B statement analysis.",
@@ -3531,8 +3531,8 @@
         "ta": "விருப்பம் C கூற்று பகுப்பாய்வு."
       },
       "D": {
-        "en": "Correct. All three statements are correct under Article 243ZD.",
-        "ta": "சரியானது. மூன்று கூற்றுகளும் உறுப்பு 243ZD-ன் கீழ் சரியானவை."
+        "en": "Option A statement analysis.",
+        "ta": "விருப்பம் A கூற்று பகுப்பாய்வு."
       }
     },
     "tnpsc_tip": {
@@ -3569,8 +3569,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "B",
@@ -3584,24 +3584,24 @@
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       }
     ],
     "options_en": [
-      "1 and 2 only",
+      "1, 2 and 3",
       "2 and 3 only",
       "1 and 3 only",
-      "1, 2 and 3"
+      "1 and 2 only"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டுமே",
+      "1, 2 மற்றும் 3",
       "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
-      "1, 2 மற்றும் 3"
+      "1 மற்றும் 2 மட்டுமே"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Statement 3 is false because disputes are referred to the authority prescribed by State Legislature under Article 243F(2).",
       "ta": "கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243F(2)-ன் படி மாநில சட்டம் குறிப்பிடும் அதிகாரியே இதைத் தீர்மானிக்கிறார்."
@@ -3610,8 +3610,8 @@
     "explanation_ta": "கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243F(2)-ன் படி மாநில சட்டம் குறிப்பிடும் அதிகாரியே இதைத் தீர்மானிக்கிறார்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Statement 3 is false because disputes are referred to the authority prescribed by State Legislature under Article 243F(2).",
-        "ta": "சரியானது. கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243F(2)-ன் படி மாநில சட்டம் குறிப்பிடும் அதிகாரியே இதைத் தீர்மானிக்கிறார்."
+        "en": "Option D statement analysis.",
+        "ta": "விருப்பம் D கூற்று பகுப்பாய்வு."
       },
       "B": {
         "en": "Option B statement analysis.",
@@ -3622,8 +3622,8 @@
         "ta": "விருப்பம் C கூற்று பகுப்பாய்வு."
       },
       "D": {
-        "en": "Option D statement analysis.",
-        "ta": "விருப்பம் D கூற்று பகுப்பாய்வு."
+        "en": "Correct. Statement 3 is false because disputes are referred to the authority prescribed by State Legislature under Article 243F(2).",
+        "ta": "சரியானது. கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243F(2)-ன் படி மாநில சட்டம் குறிப்பிடும் அதிகாரியே இதைத் தீர்மானிக்கிறார்."
       }
     },
     "tnpsc_tip": {
@@ -3751,8 +3751,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "B",
@@ -3761,8 +3761,8 @@
       },
       {
         "id": "C",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "D",
@@ -3771,19 +3771,19 @@
       }
     ],
     "options_en": [
-      "1 and 2 only",
-      "2 and 3 only",
       "1 and 3 only",
+      "2 and 3 only",
+      "1 and 2 only",
       "1, 2 and 3"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டுமே",
-      "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
+      "2 மற்றும் 3 மட்டுமே",
+      "1 மற்றும் 2 மட்டுமே",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Statement 3 is false because in Tamil Nadu, the Village Panchayat President is directly elected by the voters.",
       "ta": "கூற்று 3 தவறு, ஏனெனில் தமிழ்நாட்டில் கிராம ஊராட்சித் தலைவர் மக்களால் நேரடியாகத் தேர்ந்தெடுக்கப்படுகிறார்."
@@ -3792,16 +3792,16 @@
     "explanation_ta": "கூற்று 3 தவறு, ஏனெனில் தமிழ்நாட்டில் கிராம ஊராட்சித் தலைவர் மக்களால் நேரடியாகத் தேர்ந்தெடுக்கப்படுகிறார்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Statement 3 is false because in Tamil Nadu, the Village Panchayat President is directly elected by the voters.",
-        "ta": "சரியானது. கூற்று 3 தவறு, ஏனெனில் தமிழ்நாட்டில் கிராம ஊராட்சித் தலைவர் மக்களால் நேரடியாகத் தேர்ந்தெடுக்கப்படுகிறார்."
+        "en": "Option C statement analysis.",
+        "ta": "விருப்பம் C கூற்று பகுப்பாய்வு."
       },
       "B": {
         "en": "Option B statement analysis.",
         "ta": "விருப்பம் B கூற்று பகுப்பாய்வு."
       },
       "C": {
-        "en": "Option C statement analysis.",
-        "ta": "விருப்பம் C கூற்று பகுப்பாய்வு."
+        "en": "Correct. Statement 3 is false because in Tamil Nadu, the Village Panchayat President is directly elected by the voters.",
+        "ta": "சரியானது. கூற்று 3 தவறு, ஏனெனில் தமிழ்நாட்டில் கிராம ஊராட்சித் தலைவர் மக்களால் நேரடியாகத் தேர்ந்தெடுக்கப்படுகிறார்."
       },
       "D": {
         "en": "Option D statement analysis.",
@@ -3842,8 +3842,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "B",
@@ -3857,24 +3857,24 @@
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       }
     ],
     "options_en": [
-      "1 and 2 only",
+      "1, 2 and 3",
       "2 and 3 only",
       "1 and 3 only",
-      "1, 2 and 3"
+      "1 and 2 only"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டுமே",
+      "1, 2 மற்றும் 3",
       "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
-      "1, 2 மற்றும் 3"
+      "1 மற்றும் 2 மட்டுமே"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Statement 3 is false because devolution under Article 243G is discretionary ('may endow').",
       "ta": "கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243G-ன் கீழ் அதிகாரப் பகிர்வு விருப்பத்திற்குரியது."
@@ -3883,8 +3883,8 @@
     "explanation_ta": "கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243G-ன் கீழ் அதிகாரப் பகிர்வு விருப்பத்திற்குரியது.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Statement 3 is false because devolution under Article 243G is discretionary ('may endow').",
-        "ta": "சரியானது. கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243G-ன் கீழ் அதிகாரப் பகிர்வு விருப்பத்திற்குரியது."
+        "en": "Option D statement analysis.",
+        "ta": "விருப்பம் D கூற்று பகுப்பாய்வு."
       },
       "B": {
         "en": "Option B statement analysis.",
@@ -3895,8 +3895,8 @@
         "ta": "விருப்பம் C கூற்று பகுப்பாய்வு."
       },
       "D": {
-        "en": "Option D statement analysis.",
-        "ta": "விருப்பம் D கூற்று பகுப்பாய்வு."
+        "en": "Correct. Statement 3 is false because devolution under Article 243G is discretionary ('may endow').",
+        "ta": "சரியானது. கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243G-ன் கீழ் அதிகாரப் பகிர்வு விருப்பத்திற்குரியது."
       }
     },
     "tnpsc_tip": {
@@ -3938,8 +3938,8 @@
       },
       {
         "id": "B",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "C",
@@ -3948,24 +3948,24 @@
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டுமே"
       }
     ],
     "options_en": [
       "1 and 2 only",
-      "2 and 3 only",
+      "1, 2 and 3",
       "1 and 3 only",
-      "1, 2 and 3"
+      "2 and 3 only"
     ],
     "options_ta": [
       "1 மற்றும் 2 மட்டுமே",
-      "2 மற்றும் 3 மட்டுமே",
+      "1, 2 மற்றும் 3",
       "1 மற்றும் 3 மட்டுமே",
-      "1, 2 மற்றும் 3"
+      "2 மற்றும் 3 மட்டுமே"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "All three statements are correct under Article 243ZD.",
       "ta": "மூன்று கூற்றுகளும் உறுப்பு 243ZD-ன் கீழ் சரியானவை."
@@ -3978,16 +3978,16 @@
         "ta": "விருப்பம் A கூற்று பகுப்பாய்வு."
       },
       "B": {
-        "en": "Option B statement analysis.",
-        "ta": "விருப்பம் B கூற்று பகுப்பாய்வு."
+        "en": "Correct. All three statements are correct under Article 243ZD.",
+        "ta": "சரியானது. மூன்று கூற்றுகளும் உறுப்பு 243ZD-ன் கீழ் சரியானவை."
       },
       "C": {
         "en": "Option C statement analysis.",
         "ta": "விருப்பம் C கூற்று பகுப்பாய்வு."
       },
       "D": {
-        "en": "Correct. All three statements are correct under Article 243ZD.",
-        "ta": "சரியானது. மூன்று கூற்றுகளும் உறுப்பு 243ZD-ன் கீழ் சரியானவை."
+        "en": "Option B statement analysis.",
+        "ta": "விருப்பம் B கூற்று பகுப்பாய்வு."
       }
     },
     "tnpsc_tip": {
@@ -4206,8 +4206,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "B",
@@ -4216,8 +4216,8 @@
       },
       {
         "id": "C",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "D",
@@ -4226,19 +4226,19 @@
       }
     ],
     "options_en": [
-      "1 and 2 only",
-      "2 and 3 only",
       "1 and 3 only",
+      "2 and 3 only",
+      "1 and 2 only",
       "1, 2 and 3"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டுமே",
-      "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
+      "2 மற்றும் 3 மட்டுமே",
+      "1 மற்றும் 2 மட்டுமே",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Statement 3 is false because in Tamil Nadu, the Village Panchayat President is directly elected by the voters.",
       "ta": "கூற்று 3 தவறு, ஏனெனில் தமிழ்நாட்டில் கிராம ஊராட்சித் தலைவர் மக்களால் நேரடியாகத் தேர்ந்தெடுக்கப்படுகிறார்."
@@ -4247,16 +4247,16 @@
     "explanation_ta": "கூற்று 3 தவறு, ஏனெனில் தமிழ்நாட்டில் கிராம ஊராட்சித் தலைவர் மக்களால் நேரடியாகத் தேர்ந்தெடுக்கப்படுகிறார்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Statement 3 is false because in Tamil Nadu, the Village Panchayat President is directly elected by the voters.",
-        "ta": "சரியானது. கூற்று 3 தவறு, ஏனெனில் தமிழ்நாட்டில் கிராம ஊராட்சித் தலைவர் மக்களால் நேரடியாகத் தேர்ந்தெடுக்கப்படுகிறார்."
+        "en": "Option C statement analysis.",
+        "ta": "விருப்பம் C கூற்று பகுப்பாய்வு."
       },
       "B": {
         "en": "Option B statement analysis.",
         "ta": "விருப்பம் B கூற்று பகுப்பாய்வு."
       },
       "C": {
-        "en": "Option C statement analysis.",
-        "ta": "விருப்பம் C கூற்று பகுப்பாய்வு."
+        "en": "Correct. Statement 3 is false because in Tamil Nadu, the Village Panchayat President is directly elected by the voters.",
+        "ta": "சரியானது. கூற்று 3 தவறு, ஏனெனில் தமிழ்நாட்டில் கிராம ஊராட்சித் தலைவர் மக்களால் நேரடியாகத் தேர்ந்தெடுக்கப்படுகிறார்."
       },
       "D": {
         "en": "Option D statement analysis.",
@@ -4297,13 +4297,13 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "B",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "C",
@@ -4317,19 +4317,19 @@
       }
     ],
     "options_en": [
-      "1 and 2 only",
       "2 and 3 only",
+      "1 and 2 only",
       "1 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டுமே",
       "2 மற்றும் 3 மட்டுமே",
+      "1 மற்றும் 2 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Statement 3 is false because devolution under Article 243G is discretionary ('may endow').",
       "ta": "கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243G-ன் கீழ் அதிகாரப் பகிர்வு விருப்பத்திற்குரியது."
@@ -4338,12 +4338,12 @@
     "explanation_ta": "கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243G-ன் கீழ் அதிகாரப் பகிர்வு விருப்பத்திற்குரியது.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Statement 3 is false because devolution under Article 243G is discretionary ('may endow').",
-        "ta": "சரியானது. கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243G-ன் கீழ் அதிகாரப் பகிர்வு விருப்பத்திற்குரியது."
-      },
-      "B": {
         "en": "Option B statement analysis.",
         "ta": "விருப்பம் B கூற்று பகுப்பாய்வு."
+      },
+      "B": {
+        "en": "Correct. Statement 3 is false because devolution under Article 243G is discretionary ('may endow').",
+        "ta": "சரியானது. கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243G-ன் கீழ் அதிகாரப் பகிர்வு விருப்பத்திற்குரியது."
       },
       "C": {
         "en": "Option C statement analysis.",
@@ -4393,8 +4393,8 @@
       },
       {
         "id": "B",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டுமே"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "C",
@@ -4403,24 +4403,24 @@
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டுமே"
       }
     ],
     "options_en": [
       "1 and 2 only",
-      "2 and 3 only",
+      "1, 2 and 3",
       "1 and 3 only",
-      "1, 2 and 3"
+      "2 and 3 only"
     ],
     "options_ta": [
       "1 மற்றும் 2 மட்டுமே",
-      "2 மற்றும் 3 மட்டுமே",
+      "1, 2 மற்றும் 3",
       "1 மற்றும் 3 மட்டுமே",
-      "1, 2 மற்றும் 3"
+      "2 மற்றும் 3 மட்டுமே"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "All three statements are correct under Article 243ZD.",
       "ta": "மூன்று கூற்றுகளும் உறுப்பு 243ZD-ன் கீழ் சரியானவை."
@@ -4433,16 +4433,16 @@
         "ta": "விருப்பம் A கூற்று பகுப்பாய்வு."
       },
       "B": {
-        "en": "Option B statement analysis.",
-        "ta": "விருப்பம் B கூற்று பகுப்பாய்வு."
+        "en": "Correct. All three statements are correct under Article 243ZD.",
+        "ta": "சரியானது. மூன்று கூற்றுகளும் உறுப்பு 243ZD-ன் கீழ் சரியானவை."
       },
       "C": {
         "en": "Option C statement analysis.",
         "ta": "விருப்பம் C கூற்று பகுப்பாய்வு."
       },
       "D": {
-        "en": "Correct. All three statements are correct under Article 243ZD.",
-        "ta": "சரியானது. மூன்று கூற்றுகளும் உறுப்பு 243ZD-ன் கீழ் சரியானவை."
+        "en": "Option B statement analysis.",
+        "ta": "விருப்பம் B கூற்று பகுப்பாய்வு."
       }
     },
     "tnpsc_tip": {
@@ -4479,8 +4479,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டுமே"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டுமே"
       },
       {
         "id": "B",
@@ -4489,8 +4489,8 @@
       },
       {
         "id": "C",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டுமே"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டுமே"
       },
       {
         "id": "D",
@@ -4499,19 +4499,19 @@
       }
     ],
     "options_en": [
-      "1 and 2 only",
-      "2 and 3 only",
       "1 and 3 only",
+      "2 and 3 only",
+      "1 and 2 only",
       "1, 2 and 3"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டுமே",
-      "2 மற்றும் 3 மட்டுமே",
       "1 மற்றும் 3 மட்டுமே",
+      "2 மற்றும் 3 மட்டுமே",
+      "1 மற்றும் 2 மட்டுமே",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Statement 3 is false because disputes are referred to the authority prescribed by State Legislature under Article 243F(2).",
       "ta": "கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243F(2)-ன் படி மாநில சட்டம் குறிப்பிடும் அதிகாரியே இதைத் தீர்மானிக்கிறார்."
@@ -4520,16 +4520,16 @@
     "explanation_ta": "கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243F(2)-ன் படி மாநில சட்டம் குறிப்பிடும் அதிகாரியே இதைத் தீர்மானிக்கிறார்.",
     "why_not_others": {
       "A": {
-        "en": "Correct. Statement 3 is false because disputes are referred to the authority prescribed by State Legislature under Article 243F(2).",
-        "ta": "சரியானது. கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243F(2)-ன் படி மாநில சட்டம் குறிப்பிடும் அதிகாரியே இதைத் தீர்மானிக்கிறார்."
+        "en": "Option C statement analysis.",
+        "ta": "விருப்பம் C கூற்று பகுப்பாய்வு."
       },
       "B": {
         "en": "Option B statement analysis.",
         "ta": "விருப்பம் B கூற்று பகுப்பாய்வு."
       },
       "C": {
-        "en": "Option C statement analysis.",
-        "ta": "விருப்பம் C கூற்று பகுப்பாய்வு."
+        "en": "Correct. Statement 3 is false because disputes are referred to the authority prescribed by State Legislature under Article 243F(2).",
+        "ta": "சரியானது. கூற்று 3 தவறு, ஏனெனில் உறுப்பு 243F(2)-ன் படி மாநில சட்டம் குறிப்பிடும் அதிகாரியே இதைத் தீர்மானிக்கிறார்."
       },
       "D": {
         "en": "Option D statement analysis.",

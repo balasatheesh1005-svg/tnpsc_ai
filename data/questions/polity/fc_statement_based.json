@@ -15,13 +15,13 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டும்"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டும்"
       },
       {
         "id": "B",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டும்"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டும்"
       },
       {
         "id": "C",
@@ -35,19 +35,19 @@
       }
     ],
     "options_en": [
-      "1 and 2 only",
       "1 and 3 only",
+      "1 and 2 only",
       "2 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டும்",
       "1 மற்றும் 3 மட்டும்",
+      "1 மற்றும் 2 மட்டும்",
       "2 மற்றும் 3 மட்டும்",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Statements 1 and 3 are correct. Statement 2 is incorrect because the recommendations of the Finance Commission are advisory in nature and not legally binding on the Government, though established convention gives them high sanctity.",
       "ta": "கூற்றுகள் 1 மற்றும் 3 சரியானவை. கூற்று 2 தவறானது, ஏனெனில் நிதி ஆணையத்தின் பரிந்துரைகள் ஆலோசனை இயல்புடையவையே அன்றி மத்திய அரசைக் கட்டுப்படுத்தும் சட்டப்பூர்வ கட்டாயம் கொண்டவை அல்ல."
@@ -56,12 +56,12 @@
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 3 சரியானவை. கூற்று 2 தவறானது, ஏனெனில் நிதி ஆணையத்தின் பரிந்துரைகள் ஆலோசனை இயல்புடையவையே அன்றி மத்திய அரசைக் கட்டுப்படுத்தும் சட்டப்பூர்வ கட்டாயம் கொண்டவை அல்ல.",
     "why_not_others": {
       "A": {
-        "en": "Option B (1 and 2 only) is incorrect because statement combinations do not match constitutional provisions.",
-        "ta": "தெரிவு B (1 மற்றும் 2 மட்டும்) அரசியலமைப்பு விதிகளோடு பொருந்தாததால் தவறானது."
-      },
-      "B": {
         "en": "Option A is correct: Statements 1 and 3 are correct. Statement 2 is incorrect because the recommendations of the Finance Commission are advisory in nature and not legally binding on the Government, though established convention gives them high sanctity.",
         "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 3 சரியானவை. கூற்று 2 தவறானது, ஏனெனில் நிதி ஆணையத்தின் பரிந்துரைகள் ஆலோசனை இயல்புடையவையே அன்றி மத்திய அரசைக் கட்டுப்படுத்தும் சட்டப்பூர்வ கட்டாயம் கொண்டவை அல்ல."
+      },
+      "B": {
+        "en": "Option B (1 and 2 only) is incorrect because statement combinations do not match constitutional provisions.",
+        "ta": "தெரிவு B (1 மற்றும் 2 மட்டும்) அரசியலமைப்பு விதிகளோடு பொருந்தாததால் தவறானது."
       },
       "C": {
         "en": "Option C (2 and 3 only) is incorrect because statement combinations do not match constitutional provisions.",
@@ -204,8 +204,8 @@
       },
       {
         "id": "B",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டும்"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "C",
@@ -214,24 +214,24 @@
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டும்"
       }
     ],
     "options_en": [
       "1 and 3 only",
-      "1 and 2 only",
+      "1, 2 and 3",
       "2 and 3 only",
-      "1, 2 and 3"
+      "1 and 2 only"
     ],
     "options_ta": [
       "1 மற்றும் 3 மட்டும்",
-      "1 மற்றும் 2 மட்டும்",
+      "1, 2 மற்றும் 3",
       "2 மற்றும் 3 மட்டும்",
-      "1, 2 மற்றும் 3"
+      "1 மற்றும் 2 மட்டும்"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Statements 1 and 2 are core constitutional duties under Article 280(3)(a) and (b). Statement 3 is incorrect as determining industrial wages is outside the mandate of the Finance Commission.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 ஆகியவை சரத்து 280(3)(a) மற்றும் (b)-ன் கீழான முதன்மை அரசியலமைப்பு கடமைகளாகும். கூற்று 3 தவறானது, ஏனெனில் குறைந்தபட்ச ஊதியத்தை நிர்ணயிப்பது நிதி ஆணையத்தின் பணிகளில் அடங்காது."
@@ -244,16 +244,16 @@
         "ta": "தெரிவு B (1 மற்றும் 3 மட்டும்) அரசியலமைப்பு விதிகளோடு பொருந்தாததால் தவறானது."
       },
       "B": {
-        "en": "Option A is correct: Statements 1 and 2 are core constitutional duties under Article 280(3)(a) and (b). Statement 3 is incorrect as determining industrial wages is outside the mandate of the Finance Commission.",
-        "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 ஆகியவை சரத்து 280(3)(a) மற்றும் (b)-ன் கீழான முதன்மை அரசியலமைப்பு கடமைகளாகும். கூற்று 3 தவறானது, ஏனெனில் குறைந்தபட்ச ஊதியத்தை நிர்ணயிப்பது நிதி ஆணையத்தின் பணிகளில் அடங்காது."
+        "en": "Option D (1, 2 and 3) is incorrect because statement combinations do not match constitutional provisions.",
+        "ta": "தெரிவு D (1, 2 மற்றும் 3) அரசியலமைப்பு விதிகளோடு பொருந்தாததால் தவறானது."
       },
       "C": {
         "en": "Option C (2 and 3 only) is incorrect because statement combinations do not match constitutional provisions.",
         "ta": "தெரிவு C (2 மற்றும் 3 மட்டும்) அரசியலமைப்பு விதிகளோடு பொருந்தாததால் தவறானது."
       },
       "D": {
-        "en": "Option D (1, 2 and 3) is incorrect because statement combinations do not match constitutional provisions.",
-        "ta": "தெரிவு D (1, 2 மற்றும் 3) அரசியலமைப்பு விதிகளோடு பொருந்தாததால் தவறானது."
+        "en": "Option A is correct: Statements 1 and 2 are core constitutional duties under Article 280(3)(a) and (b). Statement 3 is incorrect as determining industrial wages is outside the mandate of the Finance Commission.",
+        "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 ஆகியவை சரத்து 280(3)(a) மற்றும் (b)-ன் கீழான முதன்மை அரசியலமைப்பு கடமைகளாகும். கூற்று 3 தவறானது, ஏனெனில் குறைந்தபட்ச ஊதியத்தை நிர்ணயிப்பது நிதி ஆணையத்தின் பணிகளில் அடங்காது."
       }
     },
     "tnpsc_tip": {
@@ -296,13 +296,13 @@
       },
       {
         "id": "B",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டும்"
       },
       {
         "id": "C",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டும்"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "D",
@@ -312,18 +312,18 @@
     ],
     "options_en": [
       "1 and 2 only",
-      "1, 2 and 3",
       "2 and 3 only",
+      "1, 2 and 3",
       "1 and 3 only"
     ],
     "options_ta": [
       "1 மற்றும் 2 மட்டும்",
-      "1, 2 மற்றும் 3",
       "2 மற்றும் 3 மட்டும்",
+      "1, 2 மற்றும் 3",
       "1 மற்றும் 3 மட்டும்"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "All three statements are correct. Sub-clauses (bb) and (c) were inserted by the 73rd and 74th Constitutional Amendment Acts 1992, requiring Central Finance Commission recommendations to augment state consolidated funds based on State Finance Commission reports.",
       "ta": "அனைத்து கூற்றுகளும் சரியானவை. 1992-ன் 73 மற்றும் 74வது அரசியலமைப்புத் திருத்தச் சட்டங்கள் மூலம் (bb) மற்றும் (c) சேர்க்கப்பட்டன; இவை மாநில நிதி ஆணையத்தின் அறிக்கைகளின் அடிப்படையில் மாநிலத் திரட்டப்பட்ட நிதியை பெருக்க பரிந்துரைக்கின்றன."
@@ -336,12 +336,12 @@
         "ta": "தெரிவு B (1 மற்றும் 2 மட்டும்) அரசியலமைப்பு விதிகளோடு பொருந்தாததால் தவறானது."
       },
       "B": {
-        "en": "Option A is correct: All three statements are correct. Sub-clauses (bb) and (c) were inserted by the 73rd and 74th Constitutional Amendment Acts 1992, requiring Central Finance Commission recommendations to augment state consolidated funds based on State Finance Commission reports.",
-        "ta": "தெரிவு A சரி: அனைத்து கூற்றுகளும் சரியானவை. 1992-ன் 73 மற்றும் 74வது அரசியலமைப்புத் திருத்தச் சட்டங்கள் மூலம் (bb) மற்றும் (c) சேர்க்கப்பட்டன; இவை மாநில நிதி ஆணையத்தின் அறிக்கைகளின் அடிப்படையில் மாநிலத் திரட்டப்பட்ட நிதியை பெருக்க பரிந்துரைக்கின்றன."
-      },
-      "C": {
         "en": "Option C (2 and 3 only) is incorrect because statement combinations do not match constitutional provisions.",
         "ta": "தெரிவு C (2 மற்றும் 3 மட்டும்) அரசியலமைப்பு விதிகளோடு பொருந்தாததால் தவறானது."
+      },
+      "C": {
+        "en": "Option A is correct: All three statements are correct. Sub-clauses (bb) and (c) were inserted by the 73rd and 74th Constitutional Amendment Acts 1992, requiring Central Finance Commission recommendations to augment state consolidated funds based on State Finance Commission reports.",
+        "ta": "தெரிவு A சரி: அனைத்து கூற்றுகளும் சரியானவை. 1992-ன் 73 மற்றும் 74வது அரசியலமைப்புத் திருத்தச் சட்டங்கள் மூலம் (bb) மற்றும் (c) சேர்க்கப்பட்டன; இவை மாநில நிதி ஆணையத்தின் அறிக்கைகளின் அடிப்படையில் மாநிலத் திரட்டப்பட்ட நிதியை பெருக்க பரிந்துரைக்கின்றன."
       },
       "D": {
         "en": "Option D (1 and 3 only) is incorrect because statement combinations do not match constitutional provisions.",
@@ -388,13 +388,13 @@
       },
       {
         "id": "B",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டும்"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டும்"
       },
       {
         "id": "C",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டும்"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டும்"
       },
       {
         "id": "D",
@@ -404,18 +404,18 @@
     ],
     "options_en": [
       "1 and 2 only",
-      "1 and 3 only",
       "2 and 3 only",
+      "1 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
       "1 மற்றும் 2 மட்டும்",
-      "1 மற்றும் 3 மட்டும்",
       "2 மற்றும் 3 மட்டும்",
+      "1 மற்றும் 3 மட்டும்",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Statements 1 and 3 are correct. Statement 2 is incorrect because the 15th FC used 2011 Census population with a 15% weight, completely discontinuing the use of 1971 Census data as a separate standalone criterion.",
       "ta": "கூற்றுகள் 1 மற்றும் 3 சரியானவை. கூற்று 2 தவறானது, ஏனெனில் 15வது நிதி ஆணையம் 2011 மக்கள் தொகை கணக்கெடுப்பை 15% எடையுடன் பயன்படுத்தியது; 1971 மக்கள் தொகை கணக்கெடுப்பை தனியாகப் பயன்படுத்துவதை நிறுத்தியது."
@@ -428,12 +428,12 @@
         "ta": "தெரிவு B (1 மற்றும் 2 மட்டும்) அரசியலமைப்பு விதிகளோடு பொருந்தாததால் தவறானது."
       },
       "B": {
-        "en": "Option A is correct: Statements 1 and 3 are correct. Statement 2 is incorrect because the 15th FC used 2011 Census population with a 15% weight, completely discontinuing the use of 1971 Census data as a separate standalone criterion.",
-        "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 3 சரியானவை. கூற்று 2 தவறானது, ஏனெனில் 15வது நிதி ஆணையம் 2011 மக்கள் தொகை கணக்கெடுப்பை 15% எடையுடன் பயன்படுத்தியது; 1971 மக்கள் தொகை கணக்கெடுப்பை தனியாகப் பயன்படுத்துவதை நிறுத்தியது."
-      },
-      "C": {
         "en": "Option C (2 and 3 only) is incorrect because statement combinations do not match constitutional provisions.",
         "ta": "தெரிவு C (2 மற்றும் 3 மட்டும்) அரசியலமைப்பு விதிகளோடு பொருந்தாததால் தவறானது."
+      },
+      "C": {
+        "en": "Option A is correct: Statements 1 and 3 are correct. Statement 2 is incorrect because the 15th FC used 2011 Census population with a 15% weight, completely discontinuing the use of 1971 Census data as a separate standalone criterion.",
+        "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 3 சரியானவை. கூற்று 2 தவறானது, ஏனெனில் 15வது நிதி ஆணையம் 2011 மக்கள் தொகை கணக்கெடுப்பை 15% எடையுடன் பயன்படுத்தியது; 1971 மக்கள் தொகை கணக்கெடுப்பை தனியாகப் பயன்படுத்துவதை நிறுத்தியது."
       },
       "D": {
         "en": "Option D (1, 2 and 3) is incorrect because statement combinations do not match constitutional provisions.",
@@ -567,13 +567,13 @@
     "options": [
       {
         "id": "A",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டும்"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டும்"
       },
       {
         "id": "B",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டும்"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டும்"
       },
       {
         "id": "C",
@@ -587,19 +587,19 @@
       }
     ],
     "options_en": [
-      "2 and 3 only",
       "1 and 2 only",
+      "2 and 3 only",
       "1 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
-      "2 மற்றும் 3 மட்டும்",
       "1 மற்றும் 2 மட்டும்",
+      "2 மற்றும் 3 மட்டும்",
       "1 மற்றும் 3 மட்டும்",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because members are appointed by the President by warrant, not elected by the Rajya Sabha. 1 மற்றும் 2 மட்டும்",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. Statement 3 is incorrect as the Commission cannot punish for criminal contempt or sentence individuals to imprisonment."
@@ -608,12 +608,12 @@
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. Statement 3 is incorrect as the Commission cannot punish for criminal contempt or sentence individuals to imprisonment.",
     "why_not_others": {
       "A": {
-        "en": "Option B is incorrect because Statement 3 is false (members are not elected by Rajya Sabha).",
-        "ta": "தெரிவு B தவறு: கூற்று 3 தவறானது (உறுப்பினர்கள் மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை)."
-      },
-      "B": {
         "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
         "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
+      },
+      "B": {
+        "en": "Option B is incorrect because Statement 3 is false (members are not elected by Rajya Sabha).",
+        "ta": "தெரிவு B தவறு: கூற்று 3 தவறானது (உறுப்பினர்கள் மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை)."
       },
       "C": {
         "en": "Option C is incorrect because Statement 3 is false.",
@@ -659,13 +659,13 @@
     "options": [
       {
         "id": "A",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டும்"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டும்"
       },
       {
         "id": "B",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டும்"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டும்"
       },
       {
         "id": "C",
@@ -679,19 +679,19 @@
       }
     ],
     "options_en": [
-      "2 and 3 only",
       "1 and 2 only",
+      "2 and 3 only",
       "1 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
-      "2 மற்றும் 3 மட்டும்",
       "1 மற்றும் 2 மட்டும்",
+      "2 மற்றும் 3 மட்டும்",
       "1 மற்றும் 3 மட்டும்",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because members are appointed by the President by warrant, not elected by the Rajya Sabha. 1 மற்றும் 2 மட்டும்",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. Statement 3 is incorrect because the Union Government fully accepted the 42% devolution recommendation in 2015."
@@ -700,12 +700,12 @@
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. Statement 3 is incorrect because the Union Government fully accepted the 42% devolution recommendation in 2015.",
     "why_not_others": {
       "A": {
-        "en": "Option B is incorrect because Statement 3 is false (members are not elected by Rajya Sabha).",
-        "ta": "தெரிவு B தவறு: கூற்று 3 தவறானது (உறுப்பினர்கள் மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை)."
-      },
-      "B": {
         "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
         "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
+      },
+      "B": {
+        "en": "Option B is incorrect because Statement 3 is false (members are not elected by Rajya Sabha).",
+        "ta": "தெரிவு B தவறு: கூற்று 3 தவறானது (உறுப்பினர்கள் மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை)."
       },
       "C": {
         "en": "Option C is incorrect because Statement 3 is false.",
@@ -848,8 +848,8 @@
       },
       {
         "id": "B",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டும்"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "C",
@@ -858,24 +858,24 @@
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டும்"
       }
     ],
     "options_en": [
       "2 and 3 only",
-      "1 and 2 only",
+      "1, 2 and 3",
       "1 and 3 only",
-      "1, 2 and 3"
+      "1 and 2 only"
     ],
     "options_ta": [
       "2 மற்றும் 3 மட்டும்",
-      "1 மற்றும் 2 மட்டும்",
+      "1, 2 மற்றும் 3",
       "1 மற்றும் 3 மட்டும்",
-      "1, 2 மற்றும் 3"
+      "1 மற்றும் 2 மட்டும்"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because members are appointed by the President by warrant, not elected by the Rajya Sabha. 1 மற்றும் 3 மட்டும்",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. Statement 2 is incorrect because members hold office for the period specified in the President's warrant of appointment."
@@ -888,16 +888,16 @@
         "ta": "தெரிவு B தவறு: கூற்று 3 தவறானது (உறுப்பினர்கள் மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை)."
       },
       "B": {
-        "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
-        "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
+        "en": "Option D is incorrect because Statement 3 is false.",
+        "ta": "தெரிவு D தவறு: கூற்று 3 தவறானது."
       },
       "C": {
         "en": "Option C is incorrect because Statement 3 is false.",
         "ta": "தெரிவு C தவறு: கூற்று 3 தவறானது."
       },
       "D": {
-        "en": "Option D is incorrect because Statement 3 is false.",
-        "ta": "தெரிவு D தவறு: கூற்று 3 தவறானது."
+        "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
+        "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
       }
     },
     "tnpsc_tip": {
@@ -935,13 +935,13 @@
     "options": [
       {
         "id": "A",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டும்"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டும்"
       },
       {
         "id": "B",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டும்"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டும்"
       },
       {
         "id": "C",
@@ -955,19 +955,19 @@
       }
     ],
     "options_en": [
-      "2 and 3 only",
       "1 and 2 only",
+      "2 and 3 only",
       "1 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
-      "2 மற்றும் 3 மட்டும்",
       "1 மற்றும் 2 மட்டும்",
+      "2 மற்றும் 3 மட்டும்",
       "1 மற்றும் 3 மட்டும்",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because members are appointed by the President by warrant, not elected by the Rajya Sabha. 1 மற்றும் 2 மட்டும்",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. Statement 3 is incorrect because the 80th Amendment brought Corporation Tax and Customs into the pooled sharing pool."
@@ -976,12 +976,12 @@
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. Statement 3 is incorrect because the 80th Amendment brought Corporation Tax and Customs into the pooled sharing pool.",
     "why_not_others": {
       "A": {
-        "en": "Option B is incorrect because Statement 3 is false (members are not elected by Rajya Sabha).",
-        "ta": "தெரிவு B தவறு: கூற்று 3 தவறானது (உறுப்பினர்கள் மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை)."
-      },
-      "B": {
         "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
         "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
+      },
+      "B": {
+        "en": "Option B is incorrect because Statement 3 is false (members are not elected by Rajya Sabha).",
+        "ta": "தெரிவு B தவறு: கூற்று 3 தவறானது (உறுப்பினர்கள் மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை)."
       },
       "C": {
         "en": "Option C is incorrect because Statement 3 is false.",
@@ -1027,13 +1027,13 @@
     "options": [
       {
         "id": "A",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டும்"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டும்"
       },
       {
         "id": "B",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டும்"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டும்"
       },
       {
         "id": "C",
@@ -1047,19 +1047,19 @@
       }
     ],
     "options_en": [
-      "2 and 3 only",
       "1 and 2 only",
+      "2 and 3 only",
       "1 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
-      "2 மற்றும் 3 மட்டும்",
       "1 மற்றும் 2 மட்டும்",
+      "2 மற்றும் 3 மட்டும்",
       "1 மற்றும் 3 மட்டும்",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because members are appointed by the President by warrant, not elected by the Rajya Sabha. 1 மற்றும் 3 மட்டும்",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. Statement 2 is incorrect because revenue deficit grants are given only to assessed deficit States, not uniformly to all states."
@@ -1068,12 +1068,12 @@
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. Statement 2 is incorrect because revenue deficit grants are given only to assessed deficit States, not uniformly to all states.",
     "why_not_others": {
       "A": {
-        "en": "Option B is incorrect because Statement 3 is false (members are not elected by Rajya Sabha).",
-        "ta": "தெரிவு B தவறு: கூற்று 3 தவறானது (உறுப்பினர்கள் மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை)."
-      },
-      "B": {
         "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
         "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
+      },
+      "B": {
+        "en": "Option B is incorrect because Statement 3 is false (members are not elected by Rajya Sabha).",
+        "ta": "தெரிவு B தவறு: கூற்று 3 தவறானது (உறுப்பினர்கள் மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை)."
       },
       "C": {
         "en": "Option C is incorrect because Statement 3 is false.",
@@ -1124,13 +1124,13 @@
       },
       {
         "id": "B",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டும்"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டும்"
       },
       {
         "id": "C",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டும்"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டும்"
       },
       {
         "id": "D",
@@ -1140,18 +1140,18 @@
     ],
     "options_en": [
       "2 and 3 only",
-      "1 and 2 only",
       "1 and 3 only",
+      "1 and 2 only",
       "1, 2 and 3"
     ],
     "options_ta": [
       "2 மற்றும் 3 மட்டும்",
-      "1 மற்றும் 2 மட்டும்",
       "1 மற்றும் 3 மட்டும்",
+      "1 மற்றும் 2 மட்டும்",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "B",
-    "answer": "b",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because members are appointed by the President by warrant, not elected by the Rajya Sabha. 1 மற்றும் 2 மட்டும்",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. Statement 3 is incorrect because the Central share for general category states is 75% (90% applies only to NE and Himalayan states)."
@@ -1164,12 +1164,12 @@
         "ta": "தெரிவு B தவறு: கூற்று 3 தவறானது (உறுப்பினர்கள் மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை)."
       },
       "B": {
-        "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
-        "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
-      },
-      "C": {
         "en": "Option C is incorrect because Statement 3 is false.",
         "ta": "தெரிவு C தவறு: கூற்று 3 தவறானது."
+      },
+      "C": {
+        "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
+        "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
       },
       "D": {
         "en": "Option D is incorrect because Statement 3 is false.",
@@ -1216,13 +1216,13 @@
       },
       {
         "id": "B",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டும்"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டும்"
       },
       {
         "id": "C",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டும்"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டும்"
       },
       {
         "id": "D",
@@ -1232,18 +1232,18 @@
     ],
     "options_en": [
       "1 and 3 only",
-      "2 and 3 only",
       "1 and 2 only",
+      "2 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
       "1 மற்றும் 3 மட்டும்",
-      "2 மற்றும் 3 மட்டும்",
       "1 மற்றும் 2 மட்டும்",
+      "2 மற்றும் 3 மட்டும்",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because members are appointed by the President by warrant, not elected by the Rajya Sabha. 1, 2 மற்றும் 3",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. All three statements correctly identify landmark Chairmen of the Finance Commission of India."
@@ -1256,12 +1256,12 @@
         "ta": "தெரிவு C தவறு: கூற்று 3 தவறானது."
       },
       "B": {
-        "en": "Option B is incorrect because Statement 3 is false (members are not elected by Rajya Sabha).",
-        "ta": "தெரிவு B தவறு: கூற்று 3 தவறானது (உறுப்பினர்கள் மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை)."
-      },
-      "C": {
         "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
         "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
+      },
+      "C": {
+        "en": "Option B is incorrect because Statement 3 is false (members are not elected by Rajya Sabha).",
+        "ta": "தெரிவு B தவறு: கூற்று 3 தவறானது (உறுப்பினர்கள் மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை)."
       },
       "D": {
         "en": "Option D is incorrect because Statement 3 is false.",
@@ -1303,8 +1303,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டும்"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டும்"
       },
       {
         "id": "B",
@@ -1313,8 +1313,8 @@
       },
       {
         "id": "C",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டும்"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டும்"
       },
       {
         "id": "D",
@@ -1323,19 +1323,19 @@
       }
     ],
     "options_en": [
-      "1 and 3 only",
-      "2 and 3 only",
       "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
-      "1 மற்றும் 3 மட்டும்",
-      "2 மற்றும் 3 மட்டும்",
       "1 மற்றும் 2 மட்டும்",
+      "2 மற்றும் 3 மட்டும்",
+      "1 மற்றும் 3 மட்டும்",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because members are appointed by the President by warrant, not elected by the Rajya Sabha. 1, 2 மற்றும் 3",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. All three statements accurately describe the urban local body grant framework designed by the 15th FC."
@@ -1344,16 +1344,16 @@
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. All three statements accurately describe the urban local body grant framework designed by the 15th FC.",
     "why_not_others": {
       "A": {
-        "en": "Option C is incorrect because Statement 3 is false.",
-        "ta": "தெரிவு C தவறு: கூற்று 3 தவறானது."
+        "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
+        "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
       },
       "B": {
         "en": "Option B is incorrect because Statement 3 is false (members are not elected by Rajya Sabha).",
         "ta": "தெரிவு B தவறு: கூற்று 3 தவறானது (உறுப்பினர்கள் மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை)."
       },
       "C": {
-        "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
-        "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
+        "en": "Option C is incorrect because Statement 3 is false.",
+        "ta": "தெரிவு C தவறு: கூற்று 3 தவறானது."
       },
       "D": {
         "en": "Option D is incorrect because Statement 3 is false.",
@@ -1400,13 +1400,13 @@
       },
       {
         "id": "B",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டும்"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டும்"
       },
       {
         "id": "C",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டும்"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டும்"
       },
       {
         "id": "D",
@@ -1416,18 +1416,18 @@
     ],
     "options_en": [
       "1 and 3 only",
-      "2 and 3 only",
       "1 and 2 only",
+      "2 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
       "1 மற்றும் 3 மட்டும்",
-      "2 மற்றும் 3 மட்டும்",
       "1 மற்றும் 2 மட்டும்",
+      "2 மற்றும் 3 மட்டும்",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because members are appointed by the President by warrant, not elected by the Rajya Sabha. 1 மற்றும் 2 மட்டும்",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. Statement 3 is incorrect because lower per-capita income states receive higher shares to promote equity."
@@ -1440,12 +1440,12 @@
         "ta": "தெரிவு C தவறு: கூற்று 3 தவறானது."
       },
       "B": {
-        "en": "Option B is incorrect because Statement 3 is false (members are not elected by Rajya Sabha).",
-        "ta": "தெரிவு B தவறு: கூற்று 3 தவறானது (உறுப்பினர்கள் மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை)."
-      },
-      "C": {
         "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
         "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
+      },
+      "C": {
+        "en": "Option B is incorrect because Statement 3 is false (members are not elected by Rajya Sabha).",
+        "ta": "தெரிவு B தவறு: கூற்று 3 தவறானது (உறுப்பினர்கள் மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை)."
       },
       "D": {
         "en": "Option D is incorrect because Statement 3 is false.",
@@ -1492,13 +1492,13 @@
       },
       {
         "id": "B",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டும்"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டும்"
       },
       {
         "id": "C",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டும்"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டும்"
       },
       {
         "id": "D",
@@ -1508,18 +1508,18 @@
     ],
     "options_en": [
       "1 and 3 only",
-      "2 and 3 only",
       "1 and 2 only",
+      "2 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
       "1 மற்றும் 3 மட்டும்",
-      "2 மற்றும் 3 மட்டும்",
       "1 மற்றும் 2 மட்டும்",
+      "2 மற்றும் 3 மட்டும்",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because members are appointed by the President by warrant, not elected by the Rajya Sabha. 1 மற்றும் 2 மட்டும்",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. Statement 3 is incorrect because funds are allocated based on dense and moderately dense forest canopy areas."
@@ -1532,12 +1532,12 @@
         "ta": "தெரிவு C தவறு: கூற்று 3 தவறானது."
       },
       "B": {
-        "en": "Option B is incorrect because Statement 3 is false (members are not elected by Rajya Sabha).",
-        "ta": "தெரிவு B தவறு: கூற்று 3 தவறானது (உறுப்பினர்கள் மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை)."
-      },
-      "C": {
         "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
         "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
+      },
+      "C": {
+        "en": "Option B is incorrect because Statement 3 is false (members are not elected by Rajya Sabha).",
+        "ta": "தெரிவு B தவறு: கூற்று 3 தவறானது (உறுப்பினர்கள் மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை)."
       },
       "D": {
         "en": "Option D is incorrect because Statement 3 is false.",
@@ -1589,29 +1589,29 @@
       },
       {
         "id": "C",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டும்"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டும்"
       }
     ],
     "options_en": [
       "1 and 3 only",
       "2 and 3 only",
-      "1 and 2 only",
-      "1, 2 and 3"
+      "1, 2 and 3",
+      "1 and 2 only"
     ],
     "options_ta": [
       "1 மற்றும் 3 மட்டும்",
       "2 மற்றும் 3 மட்டும்",
-      "1 மற்றும் 2 மட்டும்",
-      "1, 2 மற்றும் 3"
+      "1, 2 மற்றும் 3",
+      "1 மற்றும் 2 மட்டும்"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because members are appointed by the President by warrant, not elected by the Rajya Sabha. 1, 2 மற்றும் 3",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. All three statements list statutory disqualifications under Section 5 of the Finance Commission Act 1951."
@@ -1628,12 +1628,12 @@
         "ta": "தெரிவு B தவறு: கூற்று 3 தவறானது (உறுப்பினர்கள் மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை)."
       },
       "C": {
-        "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
-        "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
-      },
-      "D": {
         "en": "Option D is incorrect because Statement 3 is false.",
         "ta": "தெரிவு D தவறு: கூற்று 3 தவறானது."
+      },
+      "D": {
+        "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
+        "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
       }
     },
     "tnpsc_tip": {
@@ -1676,13 +1676,13 @@
       },
       {
         "id": "B",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டும்"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டும்"
       },
       {
         "id": "C",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டும்"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டும்"
       },
       {
         "id": "D",
@@ -1692,18 +1692,18 @@
     ],
     "options_en": [
       "1 and 3 only",
-      "2 and 3 only",
       "1 and 2 only",
+      "2 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
       "1 மற்றும் 3 மட்டும்",
-      "2 மற்றும் 3 மட்டும்",
       "1 மற்றும் 2 மட்டும்",
+      "2 மற்றும் 3 மட்டும்",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because members are appointed by the President by warrant, not elected by the Rajya Sabha. 1 மற்றும் 2 மட்டும்",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. Statement 3 is incorrect as tied grants cannot be diverted for salaries or administrative overheads."
@@ -1716,12 +1716,12 @@
         "ta": "தெரிவு C தவறு: கூற்று 3 தவறானது."
       },
       "B": {
-        "en": "Option B is incorrect because Statement 3 is false (members are not elected by Rajya Sabha).",
-        "ta": "தெரிவு B தவறு: கூற்று 3 தவறானது (உறுப்பினர்கள் மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை)."
-      },
-      "C": {
         "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
         "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
+      },
+      "C": {
+        "en": "Option B is incorrect because Statement 3 is false (members are not elected by Rajya Sabha).",
+        "ta": "தெரிவு B தவறு: கூற்று 3 தவறானது (உறுப்பினர்கள் மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை)."
       },
       "D": {
         "en": "Option D is incorrect because Statement 3 is false.",
@@ -1768,13 +1768,13 @@
       },
       {
         "id": "B",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டும்"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டும்"
       },
       {
         "id": "C",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டும்"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டும்"
       },
       {
         "id": "D",
@@ -1784,18 +1784,18 @@
     ],
     "options_en": [
       "1 and 3 only",
-      "2 and 3 only",
       "1 and 2 only",
+      "2 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
       "1 மற்றும் 3 மட்டும்",
-      "2 மற்றும் 3 மட்டும்",
       "1 மற்றும் 2 மட்டும்",
+      "2 மற்றும் 3 மட்டும்",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because members are appointed by the President by warrant, not elected by the Rajya Sabha. 1 மற்றும் 2 மட்டும்",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. Statement 3 is incorrect because Article 282 grants were discretionary executive transfers, not statutory entitlements."
@@ -1808,12 +1808,12 @@
         "ta": "தெரிவு C தவறு: கூற்று 3 தவறானது."
       },
       "B": {
-        "en": "Option B is incorrect because Statement 3 is false (members are not elected by Rajya Sabha).",
-        "ta": "தெரிவு B தவறு: கூற்று 3 தவறானது (உறுப்பினர்கள் மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை)."
-      },
-      "C": {
         "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
         "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
+      },
+      "C": {
+        "en": "Option B is incorrect because Statement 3 is false (members are not elected by Rajya Sabha).",
+        "ta": "தெரிவு B தவறு: கூற்று 3 தவறானது (உறுப்பினர்கள் மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை)."
       },
       "D": {
         "en": "Option D is incorrect because Statement 3 is false.",
@@ -1957,29 +1957,29 @@
       },
       {
         "id": "C",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டும்"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டும்"
       }
     ],
     "options_en": [
       "1 and 3 only",
       "2 and 3 only",
-      "1 and 2 only",
-      "1, 2 and 3"
+      "1, 2 and 3",
+      "1 and 2 only"
     ],
     "options_ta": [
       "1 மற்றும் 3 மட்டும்",
       "2 மற்றும் 3 மட்டும்",
-      "1 மற்றும் 2 மட்டும்",
-      "1, 2 மற்றும் 3"
+      "1, 2 மற்றும் 3",
+      "1 மற்றும் 2 மட்டும்"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because members are appointed by the President by warrant, not elected by the Rajya Sabha. 1, 2 மற்றும் 3",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. All three statements accurately describe the First Finance Commission's landmark awards."
@@ -1996,12 +1996,12 @@
         "ta": "தெரிவு B தவறு: கூற்று 3 தவறானது (உறுப்பினர்கள் மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை)."
       },
       "C": {
-        "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
-        "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
-      },
-      "D": {
         "en": "Option D is incorrect because Statement 3 is false.",
         "ta": "தெரிவு D தவறு: கூற்று 3 தவறானது."
+      },
+      "D": {
+        "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
+        "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
       }
     },
     "tnpsc_tip": {
@@ -2049,29 +2049,29 @@
       },
       {
         "id": "C",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டும்"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டும்"
       }
     ],
     "options_en": [
       "1 and 3 only",
       "2 and 3 only",
-      "1 and 2 only",
-      "1, 2 and 3"
+      "1, 2 and 3",
+      "1 and 2 only"
     ],
     "options_ta": [
       "1 மற்றும் 3 மட்டும்",
       "2 மற்றும் 3 மட்டும்",
-      "1 மற்றும் 2 மட்டும்",
-      "1, 2 மற்றும் 3"
+      "1, 2 மற்றும் 3",
+      "1 மற்றும் 2 மட்டும்"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because members are appointed by the President by warrant, not elected by the Rajya Sabha. 1 மற்றும் 2 மட்டும்",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. Statement 3 is incorrect because tribal areas receive extensive direct and untied grants through Article 275."
@@ -2088,12 +2088,12 @@
         "ta": "தெரிவு B தவறு: கூற்று 3 தவறானது (உறுப்பினர்கள் மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை)."
       },
       "C": {
-        "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
-        "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
-      },
-      "D": {
         "en": "Option D is incorrect because Statement 3 is false.",
         "ta": "தெரிவு D தவறு: கூற்று 3 தவறானது."
+      },
+      "D": {
+        "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
+        "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
       }
     },
     "tnpsc_tip": {
@@ -2131,8 +2131,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டும்"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டும்"
       },
       {
         "id": "B",
@@ -2141,8 +2141,8 @@
       },
       {
         "id": "C",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டும்"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டும்"
       },
       {
         "id": "D",
@@ -2151,19 +2151,19 @@
       }
     ],
     "options_en": [
-      "1 and 3 only",
-      "2 and 3 only",
       "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
-      "1 மற்றும் 3 மட்டும்",
-      "2 மற்றும் 3 மட்டும்",
       "1 மற்றும் 2 மட்டும்",
+      "2 மற்றும் 3 மட்டும்",
+      "1 மற்றும் 3 மட்டும்",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "C",
-    "answer": "c",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because members are appointed by the President by warrant, not elected by the Rajya Sabha. 1 மற்றும் 2 மட்டும்",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. Statement 3 is incorrect as MFDIS was not created by slashing tax devolution down to 25%."
@@ -2172,16 +2172,16 @@
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. Statement 3 is incorrect as MFDIS was not created by slashing tax devolution down to 25%.",
     "why_not_others": {
       "A": {
-        "en": "Option C is incorrect because Statement 3 is false.",
-        "ta": "தெரிவு C தவறு: கூற்று 3 தவறானது."
+        "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
+        "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
       },
       "B": {
         "en": "Option B is incorrect because Statement 3 is false (members are not elected by Rajya Sabha).",
         "ta": "தெரிவு B தவறு: கூற்று 3 தவறானது (உறுப்பினர்கள் மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை)."
       },
       "C": {
-        "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
-        "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
+        "en": "Option C is incorrect because Statement 3 is false.",
+        "ta": "தெரிவு C தவறு: கூற்று 3 தவறானது."
       },
       "D": {
         "en": "Option D is incorrect because Statement 3 is false.",
@@ -2325,29 +2325,29 @@
       },
       {
         "id": "C",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டும்"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டும்"
       },
       {
         "id": "D",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டும்"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டும்"
       }
     ],
     "options_en": [
       "1, 2 and 3",
       "2 and 3 only",
-      "1 and 3 only",
-      "1 and 2 only"
+      "1 and 2 only",
+      "1 and 3 only"
     ],
     "options_ta": [
       "1, 2 மற்றும் 3",
       "2 மற்றும் 3 மட்டும்",
-      "1 மற்றும் 3 மட்டும்",
-      "1 மற்றும் 2 மட்டும்"
+      "1 மற்றும் 2 மட்டும்",
+      "1 மற்றும் 3 மட்டும்"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because members are appointed by the President by warrant, not elected by the Rajya Sabha. Statement 3 is incorrect because high courts do not sit in judicial review over expert macroeconomic devolution recommendations of the Finance Commission.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. உயர் நீதிமன்றங்கள் நிதி ஆணையத்தின் நிபுணர் பொருளாதாரப் பரிந்துரைகள் மீது தன்னிச்சையான நீதித்துறை ஆய்வை மேற்கொள்ள முடியாது என்பதால் கூற்று 3 தவறானது."
@@ -2364,12 +2364,12 @@
         "ta": "தெரிவு B தவறு: கூற்று 3 தவறானது (உறுப்பினர்கள் மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை)."
       },
       "C": {
-        "en": "Option C is incorrect because Statement 3 is false.",
-        "ta": "தெரிவு C தவறு: கூற்று 3 தவறானது."
-      },
-      "D": {
         "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
         "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
+      },
+      "D": {
+        "en": "Option C is incorrect because Statement 3 is false.",
+        "ta": "தெரிவு C தவறு: கூற்று 3 தவறானது."
       }
     },
     "tnpsc_tip": {
@@ -2407,8 +2407,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டும்"
       },
       {
         "id": "B",
@@ -2422,24 +2422,24 @@
       },
       {
         "id": "D",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டும்"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       }
     ],
     "options_en": [
-      "1, 2 and 3",
+      "1 and 2 only",
       "2 and 3 only",
       "1 and 3 only",
-      "1 and 2 only"
+      "1, 2 and 3"
     ],
     "options_ta": [
-      "1, 2 மற்றும் 3",
+      "1 மற்றும் 2 மட்டும்",
       "2 மற்றும் 3 மட்டும்",
       "1 மற்றும் 3 மட்டும்",
-      "1 மற்றும் 2 மட்டும்"
+      "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because members are appointed by the President by warrant, not elected by the Rajya Sabha. Statement 3 is incorrect because high courts do not sit in judicial review over expert macroeconomic devolution recommendations of the Finance Commission.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. உயர் நீதிமன்றங்கள் நிதி ஆணையத்தின் நிபுணர் பொருளாதாரப் பரிந்துரைகள் மீது தன்னிச்சையான நீதித்துறை ஆய்வை மேற்கொள்ள முடியாது என்பதால் கூற்று 3 தவறானது."
@@ -2448,8 +2448,8 @@
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. உயர் நீதிமன்றங்கள் நிதி ஆணையத்தின் நிபுணர் பொருளாதாரப் பரிந்துரைகள் மீது தன்னிச்சையான நீதித்துறை ஆய்வை மேற்கொள்ள முடியாது என்பதால் கூற்று 3 தவறானது.",
     "why_not_others": {
       "A": {
-        "en": "Option D is incorrect because Statement 3 is false.",
-        "ta": "தெரிவு D தவறு: கூற்று 3 தவறானது."
+        "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
+        "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
       },
       "B": {
         "en": "Option B is incorrect because Statement 3 is false (members are not elected by Rajya Sabha).",
@@ -2460,8 +2460,8 @@
         "ta": "தெரிவு C தவறு: கூற்று 3 தவறானது."
       },
       "D": {
-        "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
-        "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
+        "en": "Option D is incorrect because Statement 3 is false.",
+        "ta": "தெரிவு D தவறு: கூற்று 3 தவறானது."
       }
     },
     "tnpsc_tip": {
@@ -2499,8 +2499,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டும்"
       },
       {
         "id": "B",
@@ -2514,24 +2514,24 @@
       },
       {
         "id": "D",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டும்"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       }
     ],
     "options_en": [
-      "1, 2 and 3",
+      "1 and 2 only",
       "2 and 3 only",
       "1 and 3 only",
-      "1 and 2 only"
+      "1, 2 and 3"
     ],
     "options_ta": [
-      "1, 2 மற்றும் 3",
+      "1 மற்றும் 2 மட்டும்",
       "2 மற்றும் 3 மட்டும்",
       "1 மற்றும் 3 மட்டும்",
-      "1 மற்றும் 2 மட்டும்"
+      "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "A",
+    "answer": "a",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because members are appointed by the President by warrant, not elected by the Rajya Sabha. Statement 3 is incorrect because high courts do not sit in judicial review over expert macroeconomic devolution recommendations of the Finance Commission.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. உயர் நீதிமன்றங்கள் நிதி ஆணையத்தின் நிபுணர் பொருளாதாரப் பரிந்துரைகள் மீது தன்னிச்சையான நீதித்துறை ஆய்வை மேற்கொள்ள முடியாது என்பதால் கூற்று 3 தவறானது."
@@ -2540,8 +2540,8 @@
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. உயர் நீதிமன்றங்கள் நிதி ஆணையத்தின் நிபுணர் பொருளாதாரப் பரிந்துரைகள் மீது தன்னிச்சையான நீதித்துறை ஆய்வை மேற்கொள்ள முடியாது என்பதால் கூற்று 3 தவறானது.",
     "why_not_others": {
       "A": {
-        "en": "Option D is incorrect because Statement 3 is false.",
-        "ta": "தெரிவு D தவறு: கூற்று 3 தவறானது."
+        "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
+        "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
       },
       "B": {
         "en": "Option B is incorrect because Statement 3 is false (members are not elected by Rajya Sabha).",
@@ -2552,8 +2552,8 @@
         "ta": "தெரிவு C தவறு: கூற்று 3 தவறானது."
       },
       "D": {
-        "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
-        "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
+        "en": "Option D is incorrect because Statement 3 is false.",
+        "ta": "தெரிவு D தவறு: கூற்று 3 தவறானது."
       }
     },
     "tnpsc_tip": {
@@ -2596,8 +2596,8 @@
       },
       {
         "id": "B",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டும்"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டும்"
       },
       {
         "id": "C",
@@ -2606,24 +2606,24 @@
       },
       {
         "id": "D",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டும்"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டும்"
       }
     ],
     "options_en": [
       "1, 2 and 3",
-      "2 and 3 only",
+      "1 and 2 only",
       "1 and 3 only",
-      "1 and 2 only"
+      "2 and 3 only"
     ],
     "options_ta": [
       "1, 2 மற்றும் 3",
-      "2 மற்றும் 3 மட்டும்",
+      "1 மற்றும் 2 மட்டும்",
       "1 மற்றும் 3 மட்டும்",
-      "1 மற்றும் 2 மட்டும்"
+      "2 மற்றும் 3 மட்டும்"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because members are appointed by the President by warrant, not elected by the Rajya Sabha. Statement 3 is incorrect because high courts do not sit in judicial review over expert macroeconomic devolution recommendations of the Finance Commission.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. உயர் நீதிமன்றங்கள் நிதி ஆணையத்தின் நிபுணர் பொருளாதாரப் பரிந்துரைகள் மீது தன்னிச்சையான நீதித்துறை ஆய்வை மேற்கொள்ள முடியாது என்பதால் கூற்று 3 தவறானது."
@@ -2636,16 +2636,16 @@
         "ta": "தெரிவு D தவறு: கூற்று 3 தவறானது."
       },
       "B": {
-        "en": "Option B is incorrect because Statement 3 is false (members are not elected by Rajya Sabha).",
-        "ta": "தெரிவு B தவறு: கூற்று 3 தவறானது (உறுப்பினர்கள் மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை)."
+        "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
+        "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
       },
       "C": {
         "en": "Option C is incorrect because Statement 3 is false.",
         "ta": "தெரிவு C தவறு: கூற்று 3 தவறானது."
       },
       "D": {
-        "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
-        "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
+        "en": "Option B is incorrect because Statement 3 is false (members are not elected by Rajya Sabha).",
+        "ta": "தெரிவு B தவறு: கூற்று 3 தவறானது (உறுப்பினர்கள் மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை)."
       }
     },
     "tnpsc_tip": {
@@ -2693,29 +2693,29 @@
       },
       {
         "id": "C",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டும்"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டும்"
       },
       {
         "id": "D",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டும்"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டும்"
       }
     ],
     "options_en": [
       "1, 2 and 3",
       "2 and 3 only",
-      "1 and 3 only",
-      "1 and 2 only"
+      "1 and 2 only",
+      "1 and 3 only"
     ],
     "options_ta": [
       "1, 2 மற்றும் 3",
       "2 மற்றும் 3 மட்டும்",
-      "1 மற்றும் 3 மட்டும்",
-      "1 மற்றும் 2 மட்டும்"
+      "1 மற்றும் 2 மட்டும்",
+      "1 மற்றும் 3 மட்டும்"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because members are appointed by the President by warrant, not elected by the Rajya Sabha. Statement 3 is incorrect because high courts do not sit in judicial review over expert macroeconomic devolution recommendations of the Finance Commission.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. உயர் நீதிமன்றங்கள் நிதி ஆணையத்தின் நிபுணர் பொருளாதாரப் பரிந்துரைகள் மீது தன்னிச்சையான நீதித்துறை ஆய்வை மேற்கொள்ள முடியாது என்பதால் கூற்று 3 தவறானது."
@@ -2732,12 +2732,12 @@
         "ta": "தெரிவு B தவறு: கூற்று 3 தவறானது (உறுப்பினர்கள் மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை)."
       },
       "C": {
-        "en": "Option C is incorrect because Statement 3 is false.",
-        "ta": "தெரிவு C தவறு: கூற்று 3 தவறானது."
-      },
-      "D": {
         "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
         "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
+      },
+      "D": {
+        "en": "Option C is incorrect because Statement 3 is false.",
+        "ta": "தெரிவு C தவறு: கூற்று 3 தவறானது."
       }
     },
     "tnpsc_tip": {
@@ -2780,8 +2780,8 @@
       },
       {
         "id": "B",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டும்"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டும்"
       },
       {
         "id": "C",
@@ -2790,24 +2790,24 @@
       },
       {
         "id": "D",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டும்"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டும்"
       }
     ],
     "options_en": [
       "1, 2 and 3",
-      "2 and 3 only",
+      "1 and 2 only",
       "1 and 3 only",
-      "1 and 2 only"
+      "2 and 3 only"
     ],
     "options_ta": [
       "1, 2 மற்றும் 3",
-      "2 மற்றும் 3 மட்டும்",
+      "1 மற்றும் 2 மட்டும்",
       "1 மற்றும் 3 மட்டும்",
-      "1 மற்றும் 2 மட்டும்"
+      "2 மற்றும் 3 மட்டும்"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because members are appointed by the President by warrant, not elected by the Rajya Sabha. Statement 3 is incorrect because high courts do not sit in judicial review over expert macroeconomic devolution recommendations of the Finance Commission.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. உயர் நீதிமன்றங்கள் நிதி ஆணையத்தின் நிபுணர் பொருளாதாரப் பரிந்துரைகள் மீது தன்னிச்சையான நீதித்துறை ஆய்வை மேற்கொள்ள முடியாது என்பதால் கூற்று 3 தவறானது."
@@ -2820,16 +2820,16 @@
         "ta": "தெரிவு D தவறு: கூற்று 3 தவறானது."
       },
       "B": {
-        "en": "Option B is incorrect because Statement 3 is false (members are not elected by Rajya Sabha).",
-        "ta": "தெரிவு B தவறு: கூற்று 3 தவறானது (உறுப்பினர்கள் மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை)."
+        "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
+        "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
       },
       "C": {
         "en": "Option C is incorrect because Statement 3 is false.",
         "ta": "தெரிவு C தவறு: கூற்று 3 தவறானது."
       },
       "D": {
-        "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
-        "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
+        "en": "Option B is incorrect because Statement 3 is false (members are not elected by Rajya Sabha).",
+        "ta": "தெரிவு B தவறு: கூற்று 3 தவறானது (உறுப்பினர்கள் மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை)."
       }
     },
     "tnpsc_tip": {
@@ -2969,29 +2969,29 @@
       },
       {
         "id": "C",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டும்"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டும்"
       },
       {
         "id": "D",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டும்"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டும்"
       }
     ],
     "options_en": [
       "1, 2 and 3",
       "2 and 3 only",
-      "1 and 3 only",
-      "1 and 2 only"
+      "1 and 2 only",
+      "1 and 3 only"
     ],
     "options_ta": [
       "1, 2 மற்றும் 3",
       "2 மற்றும் 3 மட்டும்",
-      "1 மற்றும் 3 மட்டும்",
-      "1 மற்றும் 2 மட்டும்"
+      "1 மற்றும் 2 மட்டும்",
+      "1 மற்றும் 3 மட்டும்"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because members are appointed by the President by warrant, not elected by the Rajya Sabha. Statement 3 is incorrect because high courts do not sit in judicial review over expert macroeconomic devolution recommendations of the Finance Commission.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. உயர் நீதிமன்றங்கள் நிதி ஆணையத்தின் நிபுணர் பொருளாதாரப் பரிந்துரைகள் மீது தன்னிச்சையான நீதித்துறை ஆய்வை மேற்கொள்ள முடியாது என்பதால் கூற்று 3 தவறானது."
@@ -3008,12 +3008,12 @@
         "ta": "தெரிவு B தவறு: கூற்று 3 தவறானது (உறுப்பினர்கள் மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை)."
       },
       "C": {
-        "en": "Option C is incorrect because Statement 3 is false.",
-        "ta": "தெரிவு C தவறு: கூற்று 3 தவறானது."
-      },
-      "D": {
         "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
         "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
+      },
+      "D": {
+        "en": "Option C is incorrect because Statement 3 is false.",
+        "ta": "தெரிவு C தவறு: கூற்று 3 தவறானது."
       }
     },
     "tnpsc_tip": {
@@ -3061,29 +3061,29 @@
       },
       {
         "id": "C",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டும்"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டும்"
       },
       {
         "id": "D",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டும்"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டும்"
       }
     ],
     "options_en": [
       "1, 2 and 3",
       "2 and 3 only",
-      "1 and 3 only",
-      "1 and 2 only"
+      "1 and 2 only",
+      "1 and 3 only"
     ],
     "options_ta": [
       "1, 2 மற்றும் 3",
       "2 மற்றும் 3 மட்டும்",
-      "1 மற்றும் 3 மட்டும்",
-      "1 மற்றும் 2 மட்டும்"
+      "1 மற்றும் 2 மட்டும்",
+      "1 மற்றும் 3 மட்டும்"
     ],
-    "correct_answer": "D",
-    "answer": "d",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because members are appointed by the President by warrant, not elected by the Rajya Sabha. Statement 3 is incorrect because high courts do not sit in judicial review over expert macroeconomic devolution recommendations of the Finance Commission.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. உயர் நீதிமன்றங்கள் நிதி ஆணையத்தின் நிபுணர் பொருளாதாரப் பரிந்துரைகள் மீது தன்னிச்சையான நீதித்துறை ஆய்வை மேற்கொள்ள முடியாது என்பதால் கூற்று 3 தவறானது."
@@ -3100,12 +3100,12 @@
         "ta": "தெரிவு B தவறு: கூற்று 3 தவறானது (உறுப்பினர்கள் மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை)."
       },
       "C": {
-        "en": "Option C is incorrect because Statement 3 is false.",
-        "ta": "தெரிவு C தவறு: கூற்று 3 தவறானது."
-      },
-      "D": {
         "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
         "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
+      },
+      "D": {
+        "en": "Option C is incorrect because Statement 3 is false.",
+        "ta": "தெரிவு C தவறு: கூற்று 3 தவறானது."
       }
     },
     "tnpsc_tip": {
@@ -3235,190 +3235,6 @@
     "options": [
       {
         "id": "A",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
-      },
-      {
-        "id": "B",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டும்"
-      },
-      {
-        "id": "C",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டும்"
-      },
-      {
-        "id": "D",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டும்"
-      }
-    ],
-    "options_en": [
-      "1, 2 and 3",
-      "2 and 3 only",
-      "1 and 3 only",
-      "1 and 2 only"
-    ],
-    "options_ta": [
-      "1, 2 மற்றும் 3",
-      "2 மற்றும் 3 மட்டும்",
-      "1 மற்றும் 3 மட்டும்",
-      "1 மற்றும் 2 மட்டும்"
-    ],
-    "correct_answer": "D",
-    "answer": "d",
-    "explanation": {
-      "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because members are appointed by the President by warrant, not elected by the Rajya Sabha. Statement 3 is incorrect because high courts do not sit in judicial review over expert macroeconomic devolution recommendations of the Finance Commission.",
-      "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. உயர் நீதிமன்றங்கள் நிதி ஆணையத்தின் நிபுணர் பொருளாதாரப் பரிந்துரைகள் மீது தன்னிச்சையான நீதித்துறை ஆய்வை மேற்கொள்ள முடியாது என்பதால் கூற்று 3 தவறானது."
-    },
-    "explanation_en": "Statements 1 and 2 are correct. Statement 3 is incorrect because members are appointed by the President by warrant, not elected by the Rajya Sabha. Statement 3 is incorrect because high courts do not sit in judicial review over expert macroeconomic devolution recommendations of the Finance Commission.",
-    "explanation_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. உயர் நீதிமன்றங்கள் நிதி ஆணையத்தின் நிபுணர் பொருளாதாரப் பரிந்துரைகள் மீது தன்னிச்சையான நீதித்துறை ஆய்வை மேற்கொள்ள முடியாது என்பதால் கூற்று 3 தவறானது.",
-    "why_not_others": {
-      "A": {
-        "en": "Option D is incorrect because Statement 3 is false.",
-        "ta": "தெரிவு D தவறு: கூற்று 3 தவறானது."
-      },
-      "B": {
-        "en": "Option B is incorrect because Statement 3 is false (members are not elected by Rajya Sabha).",
-        "ta": "தெரிவு B தவறு: கூற்று 3 தவறானது (உறுப்பினர்கள் மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை)."
-      },
-      "C": {
-        "en": "Option C is incorrect because Statement 3 is false.",
-        "ta": "தெரிவு C தவறு: கூற்று 3 தவறானது."
-      },
-      "D": {
-        "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
-        "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
-      }
-    },
-    "tnpsc_tip": {
-      "en": "Members are appointed by the President of India by warrant under hand and seal.",
-      "ta": "உறுப்பினர்கள் குடியரசுத் தலைவரால் தனது கையொப்பம் மற்றும் முத்திரையிட்ட ஆணை மூலம் நியமிக்கப்படுகின்றனர்."
-    },
-    "revision_fact": {
-      "en": "Devolution awards carry strong constitutional sanctity and are enacted through Presidential Orders.",
-      "ta": "Devolution awards carry strong constitutional sanctity and are enacted through Presidential Orders. (அரசியலமைப்பு உண்மை)"
-    },
-    "source_reference": "Constitution of India, Article 280 & 281; Finance Commission Act 1951; Reports of 1st to 16th Finance Commissions; Laxmikanth Indian Polity (7th Ed.)",
-    "bloom_level": "Understand",
-    "estimated_time_sec": 45,
-    "pyq_similarity": "Medium",
-    "tags": [
-      "polity",
-      "finance_commission",
-      "statement",
-      "constitutional_dynamics_dimension_11"
-    ]
-  },
-  {
-    "id": "FC_S_037",
-    "subject": "polity",
-    "topic": "Finance Commission of India",
-    "subtopic": "Constitutional Dynamics Dimension 12",
-    "difficulty": "Medium",
-    "question_type": "Statement Based",
-    "question": {
-      "en": "Consider the following statements regarding Constitutional Dynamics Dimension 12:\n1. It functions under the constitutional guidelines of Article 280.\n2. Its awards are processed by Parliament with an explanatory memorandum under Article 281.\n3. Its members are elected through single transferable vote in the Rajya Sabha.\nWhich of the statements given above are correct?",
-      "ta": "Constitutional Dynamics Dimension 12 தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இது சரத்து 280-ன் அரசியலமைப்பு வழிகாட்டுதல்களின் கீழ் செயல்படுகிறது.\n2. இதன் முடிவுகள் சரத்து 281-ன் கீழ் விளக்கக் குறிப்புடன் நாடாளுமன்றத்தில் சமர்ப்பிக்கப்படுகின்றன.\n3. இதன் உறுப்பினர்கள் மாநிலங்களவையில் ஒற்றை மாற்று வாக்கு மூலம் தேர்ந்தெடுக்கப்படுகின்றனர்.\nமேலே உள்ள கூற்றுகளில் எவை சரியானவை?"
-    },
-    "question_en": "Consider the following statements regarding Constitutional Dynamics Dimension 12:\n1. It functions under the constitutional guidelines of Article 280.\n2. Its awards are processed by Parliament with an explanatory memorandum under Article 281.\n3. Its members are elected through single transferable vote in the Rajya Sabha.\nWhich of the statements given above are correct?",
-    "question_ta": "Constitutional Dynamics Dimension 12 தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இது சரத்து 280-ன் அரசியலமைப்பு வழிகாட்டுதல்களின் கீழ் செயல்படுகிறது.\n2. இதன் முடிவுகள் சரத்து 281-ன் கீழ் விளக்கக் குறிப்புடன் நாடாளுமன்றத்தில் சமர்ப்பிக்கப்படுகின்றன.\n3. இதன் உறுப்பினர்கள் மாநிலங்களவையில் ஒற்றை மாற்று வாக்கு மூலம் தேர்ந்தெடுக்கப்படுகின்றனர்.\nமேலே உள்ள கூற்றுகளில் எவை சரியானவை?",
-    "options": [
-      {
-        "id": "A",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
-      },
-      {
-        "id": "B",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டும்"
-      },
-      {
-        "id": "C",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டும்"
-      },
-      {
-        "id": "D",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டும்"
-      }
-    ],
-    "options_en": [
-      "1, 2 and 3",
-      "2 and 3 only",
-      "1 and 3 only",
-      "1 and 2 only"
-    ],
-    "options_ta": [
-      "1, 2 மற்றும் 3",
-      "2 மற்றும் 3 மட்டும்",
-      "1 மற்றும் 3 மட்டும்",
-      "1 மற்றும் 2 மட்டும்"
-    ],
-    "correct_answer": "D",
-    "answer": "d",
-    "explanation": {
-      "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because members are appointed by the President by warrant, not elected by the Rajya Sabha. Statement 3 is incorrect because high courts do not sit in judicial review over expert macroeconomic devolution recommendations of the Finance Commission.",
-      "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. உயர் நீதிமன்றங்கள் நிதி ஆணையத்தின் நிபுணர் பொருளாதாரப் பரிந்துரைகள் மீது தன்னிச்சையான நீதித்துறை ஆய்வை மேற்கொள்ள முடியாது என்பதால் கூற்று 3 தவறானது."
-    },
-    "explanation_en": "Statements 1 and 2 are correct. Statement 3 is incorrect because members are appointed by the President by warrant, not elected by the Rajya Sabha. Statement 3 is incorrect because high courts do not sit in judicial review over expert macroeconomic devolution recommendations of the Finance Commission.",
-    "explanation_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. உயர் நீதிமன்றங்கள் நிதி ஆணையத்தின் நிபுணர் பொருளாதாரப் பரிந்துரைகள் மீது தன்னிச்சையான நீதித்துறை ஆய்வை மேற்கொள்ள முடியாது என்பதால் கூற்று 3 தவறானது.",
-    "why_not_others": {
-      "A": {
-        "en": "Option D is incorrect because Statement 3 is false.",
-        "ta": "தெரிவு D தவறு: கூற்று 3 தவறானது."
-      },
-      "B": {
-        "en": "Option B is incorrect because Statement 3 is false (members are not elected by Rajya Sabha).",
-        "ta": "தெரிவு B தவறு: கூற்று 3 தவறானது (உறுப்பினர்கள் மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை)."
-      },
-      "C": {
-        "en": "Option C is incorrect because Statement 3 is false.",
-        "ta": "தெரிவு C தவறு: கூற்று 3 தவறானது."
-      },
-      "D": {
-        "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
-        "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
-      }
-    },
-    "tnpsc_tip": {
-      "en": "Members are appointed by the President of India by warrant under hand and seal.",
-      "ta": "உறுப்பினர்கள் குடியரசுத் தலைவரால் தனது கையொப்பம் மற்றும் முத்திரையிட்ட ஆணை மூலம் நியமிக்கப்படுகின்றனர்."
-    },
-    "revision_fact": {
-      "en": "Devolution awards carry strong constitutional sanctity and are enacted through Presidential Orders.",
-      "ta": "Devolution awards carry strong constitutional sanctity and are enacted through Presidential Orders. (அரசியலமைப்பு உண்மை)"
-    },
-    "source_reference": "Constitution of India, Article 280 & 281; Finance Commission Act 1951; Reports of 1st to 16th Finance Commissions; Laxmikanth Indian Polity (7th Ed.)",
-    "bloom_level": "Understand",
-    "estimated_time_sec": 45,
-    "pyq_similarity": "Medium",
-    "tags": [
-      "polity",
-      "finance_commission",
-      "statement",
-      "constitutional_dynamics_dimension_12"
-    ]
-  },
-  {
-    "id": "FC_S_038",
-    "subject": "polity",
-    "topic": "Finance Commission of India",
-    "subtopic": "Constitutional Dynamics Dimension 13",
-    "difficulty": "Medium",
-    "question_type": "Statement Based",
-    "question": {
-      "en": "Consider the following statements regarding Constitutional Dynamics Dimension 13:\n1. It functions under the constitutional guidelines of Article 280.\n2. Its awards are processed by Parliament with an explanatory memorandum under Article 281.\n3. Its members are elected through single transferable vote in the Rajya Sabha.\nWhich of the statements given above are correct?",
-      "ta": "Constitutional Dynamics Dimension 13 தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இது சரத்து 280-ன் அரசியலமைப்பு வழிகாட்டுதல்களின் கீழ் செயல்படுகிறது.\n2. இதன் முடிவுகள் சரத்து 281-ன் கீழ் விளக்கக் குறிப்புடன் நாடாளுமன்றத்தில் சமர்ப்பிக்கப்படுகின்றன.\n3. இதன் உறுப்பினர்கள் மாநிலங்களவையில் ஒற்றை மாற்று வாக்கு மூலம் தேர்ந்தெடுக்கப்படுகின்றனர்.\nமேலே உள்ள கூற்றுகளில் எவை சரியானவை?"
-    },
-    "question_en": "Consider the following statements regarding Constitutional Dynamics Dimension 13:\n1. It functions under the constitutional guidelines of Article 280.\n2. Its awards are processed by Parliament with an explanatory memorandum under Article 281.\n3. Its members are elected through single transferable vote in the Rajya Sabha.\nWhich of the statements given above are correct?",
-    "question_ta": "Constitutional Dynamics Dimension 13 தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இது சரத்து 280-ன் அரசியலமைப்பு வழிகாட்டுதல்களின் கீழ் செயல்படுகிறது.\n2. இதன் முடிவுகள் சரத்து 281-ன் கீழ் விளக்கக் குறிப்புடன் நாடாளுமன்றத்தில் சமர்ப்பிக்கப்படுகின்றன.\n3. இதன் உறுப்பினர்கள் மாநிலங்களவையில் ஒற்றை மாற்று வாக்கு மூலம் தேர்ந்தெடுக்கப்படுகின்றனர்.\nமேலே உள்ள கூற்றுகளில் எவை சரியானவை?",
-    "options": [
-      {
-        "id": "A",
         "en": "1 and 2 only",
         "ta": "1 மற்றும் 2 மட்டும்"
       },
@@ -3474,6 +3290,190 @@
       "D": {
         "en": "Option D is incorrect because Statement 3 is false.",
         "ta": "தெரிவு D தவறு: கூற்று 3 தவறானது."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "Members are appointed by the President of India by warrant under hand and seal.",
+      "ta": "உறுப்பினர்கள் குடியரசுத் தலைவரால் தனது கையொப்பம் மற்றும் முத்திரையிட்ட ஆணை மூலம் நியமிக்கப்படுகின்றனர்."
+    },
+    "revision_fact": {
+      "en": "Devolution awards carry strong constitutional sanctity and are enacted through Presidential Orders.",
+      "ta": "Devolution awards carry strong constitutional sanctity and are enacted through Presidential Orders. (அரசியலமைப்பு உண்மை)"
+    },
+    "source_reference": "Constitution of India, Article 280 & 281; Finance Commission Act 1951; Reports of 1st to 16th Finance Commissions; Laxmikanth Indian Polity (7th Ed.)",
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "polity",
+      "finance_commission",
+      "statement",
+      "constitutional_dynamics_dimension_11"
+    ]
+  },
+  {
+    "id": "FC_S_037",
+    "subject": "polity",
+    "topic": "Finance Commission of India",
+    "subtopic": "Constitutional Dynamics Dimension 12",
+    "difficulty": "Medium",
+    "question_type": "Statement Based",
+    "question": {
+      "en": "Consider the following statements regarding Constitutional Dynamics Dimension 12:\n1. It functions under the constitutional guidelines of Article 280.\n2. Its awards are processed by Parliament with an explanatory memorandum under Article 281.\n3. Its members are elected through single transferable vote in the Rajya Sabha.\nWhich of the statements given above are correct?",
+      "ta": "Constitutional Dynamics Dimension 12 தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இது சரத்து 280-ன் அரசியலமைப்பு வழிகாட்டுதல்களின் கீழ் செயல்படுகிறது.\n2. இதன் முடிவுகள் சரத்து 281-ன் கீழ் விளக்கக் குறிப்புடன் நாடாளுமன்றத்தில் சமர்ப்பிக்கப்படுகின்றன.\n3. இதன் உறுப்பினர்கள் மாநிலங்களவையில் ஒற்றை மாற்று வாக்கு மூலம் தேர்ந்தெடுக்கப்படுகின்றனர்.\nமேலே உள்ள கூற்றுகளில் எவை சரியானவை?"
+    },
+    "question_en": "Consider the following statements regarding Constitutional Dynamics Dimension 12:\n1. It functions under the constitutional guidelines of Article 280.\n2. Its awards are processed by Parliament with an explanatory memorandum under Article 281.\n3. Its members are elected through single transferable vote in the Rajya Sabha.\nWhich of the statements given above are correct?",
+    "question_ta": "Constitutional Dynamics Dimension 12 தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இது சரத்து 280-ன் அரசியலமைப்பு வழிகாட்டுதல்களின் கீழ் செயல்படுகிறது.\n2. இதன் முடிவுகள் சரத்து 281-ன் கீழ் விளக்கக் குறிப்புடன் நாடாளுமன்றத்தில் சமர்ப்பிக்கப்படுகின்றன.\n3. இதன் உறுப்பினர்கள் மாநிலங்களவையில் ஒற்றை மாற்று வாக்கு மூலம் தேர்ந்தெடுக்கப்படுகின்றனர்.\nமேலே உள்ள கூற்றுகளில் எவை சரியானவை?",
+    "options": [
+      {
+        "id": "A",
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
+      },
+      {
+        "id": "B",
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டும்"
+      },
+      {
+        "id": "C",
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டும்"
+      },
+      {
+        "id": "D",
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டும்"
+      }
+    ],
+    "options_en": [
+      "1, 2 and 3",
+      "2 and 3 only",
+      "1 and 2 only",
+      "1 and 3 only"
+    ],
+    "options_ta": [
+      "1, 2 மற்றும் 3",
+      "2 மற்றும் 3 மட்டும்",
+      "1 மற்றும் 2 மட்டும்",
+      "1 மற்றும் 3 மட்டும்"
+    ],
+    "correct_answer": "C",
+    "answer": "c",
+    "explanation": {
+      "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because members are appointed by the President by warrant, not elected by the Rajya Sabha. Statement 3 is incorrect because high courts do not sit in judicial review over expert macroeconomic devolution recommendations of the Finance Commission.",
+      "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. உயர் நீதிமன்றங்கள் நிதி ஆணையத்தின் நிபுணர் பொருளாதாரப் பரிந்துரைகள் மீது தன்னிச்சையான நீதித்துறை ஆய்வை மேற்கொள்ள முடியாது என்பதால் கூற்று 3 தவறானது."
+    },
+    "explanation_en": "Statements 1 and 2 are correct. Statement 3 is incorrect because members are appointed by the President by warrant, not elected by the Rajya Sabha. Statement 3 is incorrect because high courts do not sit in judicial review over expert macroeconomic devolution recommendations of the Finance Commission.",
+    "explanation_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. உயர் நீதிமன்றங்கள் நிதி ஆணையத்தின் நிபுணர் பொருளாதாரப் பரிந்துரைகள் மீது தன்னிச்சையான நீதித்துறை ஆய்வை மேற்கொள்ள முடியாது என்பதால் கூற்று 3 தவறானது.",
+    "why_not_others": {
+      "A": {
+        "en": "Option D is incorrect because Statement 3 is false.",
+        "ta": "தெரிவு D தவறு: கூற்று 3 தவறானது."
+      },
+      "B": {
+        "en": "Option B is incorrect because Statement 3 is false (members are not elected by Rajya Sabha).",
+        "ta": "தெரிவு B தவறு: கூற்று 3 தவறானது (உறுப்பினர்கள் மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை)."
+      },
+      "C": {
+        "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
+        "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
+      },
+      "D": {
+        "en": "Option C is incorrect because Statement 3 is false.",
+        "ta": "தெரிவு C தவறு: கூற்று 3 தவறானது."
+      }
+    },
+    "tnpsc_tip": {
+      "en": "Members are appointed by the President of India by warrant under hand and seal.",
+      "ta": "உறுப்பினர்கள் குடியரசுத் தலைவரால் தனது கையொப்பம் மற்றும் முத்திரையிட்ட ஆணை மூலம் நியமிக்கப்படுகின்றனர்."
+    },
+    "revision_fact": {
+      "en": "Devolution awards carry strong constitutional sanctity and are enacted through Presidential Orders.",
+      "ta": "Devolution awards carry strong constitutional sanctity and are enacted through Presidential Orders. (அரசியலமைப்பு உண்மை)"
+    },
+    "source_reference": "Constitution of India, Article 280 & 281; Finance Commission Act 1951; Reports of 1st to 16th Finance Commissions; Laxmikanth Indian Polity (7th Ed.)",
+    "bloom_level": "Understand",
+    "estimated_time_sec": 45,
+    "pyq_similarity": "Medium",
+    "tags": [
+      "polity",
+      "finance_commission",
+      "statement",
+      "constitutional_dynamics_dimension_12"
+    ]
+  },
+  {
+    "id": "FC_S_038",
+    "subject": "polity",
+    "topic": "Finance Commission of India",
+    "subtopic": "Constitutional Dynamics Dimension 13",
+    "difficulty": "Medium",
+    "question_type": "Statement Based",
+    "question": {
+      "en": "Consider the following statements regarding Constitutional Dynamics Dimension 13:\n1. It functions under the constitutional guidelines of Article 280.\n2. Its awards are processed by Parliament with an explanatory memorandum under Article 281.\n3. Its members are elected through single transferable vote in the Rajya Sabha.\nWhich of the statements given above are correct?",
+      "ta": "Constitutional Dynamics Dimension 13 தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இது சரத்து 280-ன் அரசியலமைப்பு வழிகாட்டுதல்களின் கீழ் செயல்படுகிறது.\n2. இதன் முடிவுகள் சரத்து 281-ன் கீழ் விளக்கக் குறிப்புடன் நாடாளுமன்றத்தில் சமர்ப்பிக்கப்படுகின்றன.\n3. இதன் உறுப்பினர்கள் மாநிலங்களவையில் ஒற்றை மாற்று வாக்கு மூலம் தேர்ந்தெடுக்கப்படுகின்றனர்.\nமேலே உள்ள கூற்றுகளில் எவை சரியானவை?"
+    },
+    "question_en": "Consider the following statements regarding Constitutional Dynamics Dimension 13:\n1. It functions under the constitutional guidelines of Article 280.\n2. Its awards are processed by Parliament with an explanatory memorandum under Article 281.\n3. Its members are elected through single transferable vote in the Rajya Sabha.\nWhich of the statements given above are correct?",
+    "question_ta": "Constitutional Dynamics Dimension 13 தொடர்பான பின்வரும் கூற்றுகளைக் கவனியுங்கள்:\n1. இது சரத்து 280-ன் அரசியலமைப்பு வழிகாட்டுதல்களின் கீழ் செயல்படுகிறது.\n2. இதன் முடிவுகள் சரத்து 281-ன் கீழ் விளக்கக் குறிப்புடன் நாடாளுமன்றத்தில் சமர்ப்பிக்கப்படுகின்றன.\n3. இதன் உறுப்பினர்கள் மாநிலங்களவையில் ஒற்றை மாற்று வாக்கு மூலம் தேர்ந்தெடுக்கப்படுகின்றனர்.\nமேலே உள்ள கூற்றுகளில் எவை சரியானவை?",
+    "options": [
+      {
+        "id": "A",
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
+      },
+      {
+        "id": "B",
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டும்"
+      },
+      {
+        "id": "C",
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டும்"
+      },
+      {
+        "id": "D",
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டும்"
+      }
+    ],
+    "options_en": [
+      "1, 2 and 3",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1 and 2 only"
+    ],
+    "options_ta": [
+      "1, 2 மற்றும் 3",
+      "2 மற்றும் 3 மட்டும்",
+      "1 மற்றும் 3 மட்டும்",
+      "1 மற்றும் 2 மட்டும்"
+    ],
+    "correct_answer": "D",
+    "answer": "d",
+    "explanation": {
+      "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because members are appointed by the President by warrant, not elected by the Rajya Sabha. Statement 3 is incorrect because high courts do not sit in judicial review over expert macroeconomic devolution recommendations of the Finance Commission.",
+      "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. உயர் நீதிமன்றங்கள் நிதி ஆணையத்தின் நிபுணர் பொருளாதாரப் பரிந்துரைகள் மீது தன்னிச்சையான நீதித்துறை ஆய்வை மேற்கொள்ள முடியாது என்பதால் கூற்று 3 தவறானது."
+    },
+    "explanation_en": "Statements 1 and 2 are correct. Statement 3 is incorrect because members are appointed by the President by warrant, not elected by the Rajya Sabha. Statement 3 is incorrect because high courts do not sit in judicial review over expert macroeconomic devolution recommendations of the Finance Commission.",
+    "explanation_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. உயர் நீதிமன்றங்கள் நிதி ஆணையத்தின் நிபுணர் பொருளாதாரப் பரிந்துரைகள் மீது தன்னிச்சையான நீதித்துறை ஆய்வை மேற்கொள்ள முடியாது என்பதால் கூற்று 3 தவறானது.",
+    "why_not_others": {
+      "A": {
+        "en": "Option D is incorrect because Statement 3 is false.",
+        "ta": "தெரிவு D தவறு: கூற்று 3 தவறானது."
+      },
+      "B": {
+        "en": "Option B is incorrect because Statement 3 is false (members are not elected by Rajya Sabha).",
+        "ta": "தெரிவு B தவறு: கூற்று 3 தவறானது (உறுப்பினர்கள் மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை)."
+      },
+      "C": {
+        "en": "Option C is incorrect because Statement 3 is false.",
+        "ta": "தெரிவு C தவறு: கூற்று 3 தவறானது."
+      },
+      "D": {
+        "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
+        "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
       }
     },
     "tnpsc_tip": {
@@ -3603,8 +3603,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டும்"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "B",
@@ -3618,24 +3618,24 @@
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டும்"
       }
     ],
     "options_en": [
-      "1 and 2 only",
+      "1, 2 and 3",
       "2 and 3 only",
       "1 and 3 only",
-      "1, 2 and 3"
+      "1 and 2 only"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டும்",
+      "1, 2 மற்றும் 3",
       "2 மற்றும் 3 மட்டும்",
       "1 மற்றும் 3 மட்டும்",
-      "1, 2 மற்றும் 3"
+      "1 மற்றும் 2 மட்டும்"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because members are appointed by the President by warrant, not elected by the Rajya Sabha. Statement 3 is incorrect because high courts do not sit in judicial review over expert macroeconomic devolution recommendations of the Finance Commission.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. உயர் நீதிமன்றங்கள் நிதி ஆணையத்தின் நிபுணர் பொருளாதாரப் பரிந்துரைகள் மீது தன்னிச்சையான நீதித்துறை ஆய்வை மேற்கொள்ள முடியாது என்பதால் கூற்று 3 தவறானது."
@@ -3644,8 +3644,8 @@
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. உயர் நீதிமன்றங்கள் நிதி ஆணையத்தின் நிபுணர் பொருளாதாரப் பரிந்துரைகள் மீது தன்னிச்சையான நீதித்துறை ஆய்வை மேற்கொள்ள முடியாது என்பதால் கூற்று 3 தவறானது.",
     "why_not_others": {
       "A": {
-        "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
-        "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
+        "en": "Option D is incorrect because Statement 3 is false.",
+        "ta": "தெரிவு D தவறு: கூற்று 3 தவறானது."
       },
       "B": {
         "en": "Option B is incorrect because Statement 3 is false (members are not elected by Rajya Sabha).",
@@ -3656,8 +3656,8 @@
         "ta": "தெரிவு C தவறு: கூற்று 3 தவறானது."
       },
       "D": {
-        "en": "Option D is incorrect because Statement 3 is false.",
-        "ta": "தெரிவு D தவறு: கூற்று 3 தவறானது."
+        "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
+        "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
       }
     },
     "tnpsc_tip": {
@@ -3695,8 +3695,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டும்"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "B",
@@ -3710,24 +3710,24 @@
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டும்"
       }
     ],
     "options_en": [
-      "1 and 2 only",
+      "1, 2 and 3",
       "2 and 3 only",
       "1 and 3 only",
-      "1, 2 and 3"
+      "1 and 2 only"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டும்",
+      "1, 2 மற்றும் 3",
       "2 மற்றும் 3 மட்டும்",
       "1 மற்றும் 3 மட்டும்",
-      "1, 2 மற்றும் 3"
+      "1 மற்றும் 2 மட்டும்"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because members are appointed by the President by warrant, not elected by the Rajya Sabha. Statement 3 is incorrect because high courts do not sit in judicial review over expert macroeconomic devolution recommendations of the Finance Commission.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. உயர் நீதிமன்றங்கள் நிதி ஆணையத்தின் நிபுணர் பொருளாதாரப் பரிந்துரைகள் மீது தன்னிச்சையான நீதித்துறை ஆய்வை மேற்கொள்ள முடியாது என்பதால் கூற்று 3 தவறானது."
@@ -3736,8 +3736,8 @@
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. உயர் நீதிமன்றங்கள் நிதி ஆணையத்தின் நிபுணர் பொருளாதாரப் பரிந்துரைகள் மீது தன்னிச்சையான நீதித்துறை ஆய்வை மேற்கொள்ள முடியாது என்பதால் கூற்று 3 தவறானது.",
     "why_not_others": {
       "A": {
-        "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
-        "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
+        "en": "Option D is incorrect because Statement 3 is false.",
+        "ta": "தெரிவு D தவறு: கூற்று 3 தவறானது."
       },
       "B": {
         "en": "Option B is incorrect because Statement 3 is false (members are not elected by Rajya Sabha).",
@@ -3748,8 +3748,8 @@
         "ta": "தெரிவு C தவறு: கூற்று 3 தவறானது."
       },
       "D": {
-        "en": "Option D is incorrect because Statement 3 is false.",
-        "ta": "தெரிவு D தவறு: கூற்று 3 தவறானது."
+        "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
+        "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
       }
     },
     "tnpsc_tip": {
@@ -3787,8 +3787,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டும்"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டும்"
       },
       {
         "id": "B",
@@ -3797,8 +3797,8 @@
       },
       {
         "id": "C",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டும்"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டும்"
       },
       {
         "id": "D",
@@ -3807,19 +3807,19 @@
       }
     ],
     "options_en": [
-      "1 and 2 only",
-      "2 and 3 only",
       "1 and 3 only",
+      "2 and 3 only",
+      "1 and 2 only",
       "1, 2 and 3"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டும்",
-      "2 மற்றும் 3 மட்டும்",
       "1 மற்றும் 3 மட்டும்",
+      "2 மற்றும் 3 மட்டும்",
+      "1 மற்றும் 2 மட்டும்",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because members are appointed by the President by warrant, not elected by the Rajya Sabha. Statement 3 is incorrect because high courts do not sit in judicial review over expert macroeconomic devolution recommendations of the Finance Commission.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. உயர் நீதிமன்றங்கள் நிதி ஆணையத்தின் நிபுணர் பொருளாதாரப் பரிந்துரைகள் மீது தன்னிச்சையான நீதித்துறை ஆய்வை மேற்கொள்ள முடியாது என்பதால் கூற்று 3 தவறானது."
@@ -3828,16 +3828,16 @@
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. உயர் நீதிமன்றங்கள் நிதி ஆணையத்தின் நிபுணர் பொருளாதாரப் பரிந்துரைகள் மீது தன்னிச்சையான நீதித்துறை ஆய்வை மேற்கொள்ள முடியாது என்பதால் கூற்று 3 தவறானது.",
     "why_not_others": {
       "A": {
-        "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
-        "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
+        "en": "Option C is incorrect because Statement 3 is false.",
+        "ta": "தெரிவு C தவறு: கூற்று 3 தவறானது."
       },
       "B": {
         "en": "Option B is incorrect because Statement 3 is false (members are not elected by Rajya Sabha).",
         "ta": "தெரிவு B தவறு: கூற்று 3 தவறானது (உறுப்பினர்கள் மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை)."
       },
       "C": {
-        "en": "Option C is incorrect because Statement 3 is false.",
-        "ta": "தெரிவு C தவறு: கூற்று 3 தவறானது."
+        "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
+        "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
       },
       "D": {
         "en": "Option D is incorrect because Statement 3 is false.",
@@ -3879,8 +3879,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டும்"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "B",
@@ -3894,24 +3894,24 @@
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டும்"
       }
     ],
     "options_en": [
-      "1 and 2 only",
+      "1, 2 and 3",
       "2 and 3 only",
       "1 and 3 only",
-      "1, 2 and 3"
+      "1 and 2 only"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டும்",
+      "1, 2 மற்றும் 3",
       "2 மற்றும் 3 மட்டும்",
       "1 மற்றும் 3 மட்டும்",
-      "1, 2 மற்றும் 3"
+      "1 மற்றும் 2 மட்டும்"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because members are appointed by the President by warrant, not elected by the Rajya Sabha. Statement 3 is incorrect because high courts do not sit in judicial review over expert macroeconomic devolution recommendations of the Finance Commission.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. உயர் நீதிமன்றங்கள் நிதி ஆணையத்தின் நிபுணர் பொருளாதாரப் பரிந்துரைகள் மீது தன்னிச்சையான நீதித்துறை ஆய்வை மேற்கொள்ள முடியாது என்பதால் கூற்று 3 தவறானது."
@@ -3920,8 +3920,8 @@
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. உயர் நீதிமன்றங்கள் நிதி ஆணையத்தின் நிபுணர் பொருளாதாரப் பரிந்துரைகள் மீது தன்னிச்சையான நீதித்துறை ஆய்வை மேற்கொள்ள முடியாது என்பதால் கூற்று 3 தவறானது.",
     "why_not_others": {
       "A": {
-        "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
-        "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
+        "en": "Option D is incorrect because Statement 3 is false.",
+        "ta": "தெரிவு D தவறு: கூற்று 3 தவறானது."
       },
       "B": {
         "en": "Option B is incorrect because Statement 3 is false (members are not elected by Rajya Sabha).",
@@ -3932,8 +3932,8 @@
         "ta": "தெரிவு C தவறு: கூற்று 3 தவறானது."
       },
       "D": {
-        "en": "Option D is incorrect because Statement 3 is false.",
-        "ta": "தெரிவு D தவறு: கூற்று 3 தவறானது."
+        "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
+        "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
       }
     },
     "tnpsc_tip": {
@@ -3971,13 +3971,13 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டும்"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டும்"
       },
       {
         "id": "B",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டும்"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டும்"
       },
       {
         "id": "C",
@@ -3991,19 +3991,19 @@
       }
     ],
     "options_en": [
-      "1 and 2 only",
       "2 and 3 only",
+      "1 and 2 only",
       "1 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டும்",
       "2 மற்றும் 3 மட்டும்",
+      "1 மற்றும் 2 மட்டும்",
       "1 மற்றும் 3 மட்டும்",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because members are appointed by the President by warrant, not elected by the Rajya Sabha. Statement 3 is incorrect because high courts do not sit in judicial review over expert macroeconomic devolution recommendations of the Finance Commission.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. உயர் நீதிமன்றங்கள் நிதி ஆணையத்தின் நிபுணர் பொருளாதாரப் பரிந்துரைகள் மீது தன்னிச்சையான நீதித்துறை ஆய்வை மேற்கொள்ள முடியாது என்பதால் கூற்று 3 தவறானது."
@@ -4012,12 +4012,12 @@
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. உயர் நீதிமன்றங்கள் நிதி ஆணையத்தின் நிபுணர் பொருளாதாரப் பரிந்துரைகள் மீது தன்னிச்சையான நீதித்துறை ஆய்வை மேற்கொள்ள முடியாது என்பதால் கூற்று 3 தவறானது.",
     "why_not_others": {
       "A": {
-        "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
-        "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
-      },
-      "B": {
         "en": "Option B is incorrect because Statement 3 is false (members are not elected by Rajya Sabha).",
         "ta": "தெரிவு B தவறு: கூற்று 3 தவறானது (உறுப்பினர்கள் மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை)."
+      },
+      "B": {
+        "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
+        "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
       },
       "C": {
         "en": "Option C is incorrect because Statement 3 is false.",
@@ -4155,8 +4155,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டும்"
+        "en": "1, 2 and 3",
+        "ta": "1, 2 மற்றும் 3"
       },
       {
         "id": "B",
@@ -4170,24 +4170,24 @@
       },
       {
         "id": "D",
-        "en": "1, 2 and 3",
-        "ta": "1, 2 மற்றும் 3"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டும்"
       }
     ],
     "options_en": [
-      "1 and 2 only",
+      "1, 2 and 3",
       "2 and 3 only",
       "1 and 3 only",
-      "1, 2 and 3"
+      "1 and 2 only"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டும்",
+      "1, 2 மற்றும் 3",
       "2 மற்றும் 3 மட்டும்",
       "1 மற்றும் 3 மட்டும்",
-      "1, 2 மற்றும் 3"
+      "1 மற்றும் 2 மட்டும்"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "D",
+    "answer": "d",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because members are appointed by the President by warrant, not elected by the Rajya Sabha. Statement 3 is incorrect because high courts do not sit in judicial review over expert macroeconomic devolution recommendations of the Finance Commission.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. உயர் நீதிமன்றங்கள் நிதி ஆணையத்தின் நிபுணர் பொருளாதாரப் பரிந்துரைகள் மீது தன்னிச்சையான நீதித்துறை ஆய்வை மேற்கொள்ள முடியாது என்பதால் கூற்று 3 தவறானது."
@@ -4196,8 +4196,8 @@
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. உயர் நீதிமன்றங்கள் நிதி ஆணையத்தின் நிபுணர் பொருளாதாரப் பரிந்துரைகள் மீது தன்னிச்சையான நீதித்துறை ஆய்வை மேற்கொள்ள முடியாது என்பதால் கூற்று 3 தவறானது.",
     "why_not_others": {
       "A": {
-        "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
-        "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
+        "en": "Option D is incorrect because Statement 3 is false.",
+        "ta": "தெரிவு D தவறு: கூற்று 3 தவறானது."
       },
       "B": {
         "en": "Option B is incorrect because Statement 3 is false (members are not elected by Rajya Sabha).",
@@ -4208,8 +4208,8 @@
         "ta": "தெரிவு C தவறு: கூற்று 3 தவறானது."
       },
       "D": {
-        "en": "Option D is incorrect because Statement 3 is false.",
-        "ta": "தெரிவு D தவறு: கூற்று 3 தவறானது."
+        "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
+        "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
       }
     },
     "tnpsc_tip": {
@@ -4247,8 +4247,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டும்"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டும்"
       },
       {
         "id": "B",
@@ -4257,8 +4257,8 @@
       },
       {
         "id": "C",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டும்"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டும்"
       },
       {
         "id": "D",
@@ -4267,19 +4267,19 @@
       }
     ],
     "options_en": [
-      "1 and 2 only",
-      "2 and 3 only",
       "1 and 3 only",
+      "2 and 3 only",
+      "1 and 2 only",
       "1, 2 and 3"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டும்",
-      "2 மற்றும் 3 மட்டும்",
       "1 மற்றும் 3 மட்டும்",
+      "2 மற்றும் 3 மட்டும்",
+      "1 மற்றும் 2 மட்டும்",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because members are appointed by the President by warrant, not elected by the Rajya Sabha. Statement 3 is incorrect because high courts do not sit in judicial review over expert macroeconomic devolution recommendations of the Finance Commission.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. உயர் நீதிமன்றங்கள் நிதி ஆணையத்தின் நிபுணர் பொருளாதாரப் பரிந்துரைகள் மீது தன்னிச்சையான நீதித்துறை ஆய்வை மேற்கொள்ள முடியாது என்பதால் கூற்று 3 தவறானது."
@@ -4288,16 +4288,16 @@
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. உயர் நீதிமன்றங்கள் நிதி ஆணையத்தின் நிபுணர் பொருளாதாரப் பரிந்துரைகள் மீது தன்னிச்சையான நீதித்துறை ஆய்வை மேற்கொள்ள முடியாது என்பதால் கூற்று 3 தவறானது.",
     "why_not_others": {
       "A": {
-        "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
-        "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
+        "en": "Option C is incorrect because Statement 3 is false.",
+        "ta": "தெரிவு C தவறு: கூற்று 3 தவறானது."
       },
       "B": {
         "en": "Option B is incorrect because Statement 3 is false (members are not elected by Rajya Sabha).",
         "ta": "தெரிவு B தவறு: கூற்று 3 தவறானது (உறுப்பினர்கள் மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை)."
       },
       "C": {
-        "en": "Option C is incorrect because Statement 3 is false.",
-        "ta": "தெரிவு C தவறு: கூற்று 3 தவறானது."
+        "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
+        "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
       },
       "D": {
         "en": "Option D is incorrect because Statement 3 is false.",
@@ -4339,13 +4339,13 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டும்"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டும்"
       },
       {
         "id": "B",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டும்"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டும்"
       },
       {
         "id": "C",
@@ -4359,19 +4359,19 @@
       }
     ],
     "options_en": [
-      "1 and 2 only",
       "2 and 3 only",
+      "1 and 2 only",
       "1 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டும்",
       "2 மற்றும் 3 மட்டும்",
+      "1 மற்றும் 2 மட்டும்",
       "1 மற்றும் 3 மட்டும்",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because members are appointed by the President by warrant, not elected by the Rajya Sabha. Statement 3 is incorrect because high courts do not sit in judicial review over expert macroeconomic devolution recommendations of the Finance Commission.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. உயர் நீதிமன்றங்கள் நிதி ஆணையத்தின் நிபுணர் பொருளாதாரப் பரிந்துரைகள் மீது தன்னிச்சையான நீதித்துறை ஆய்வை மேற்கொள்ள முடியாது என்பதால் கூற்று 3 தவறானது."
@@ -4380,12 +4380,12 @@
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. உயர் நீதிமன்றங்கள் நிதி ஆணையத்தின் நிபுணர் பொருளாதாரப் பரிந்துரைகள் மீது தன்னிச்சையான நீதித்துறை ஆய்வை மேற்கொள்ள முடியாது என்பதால் கூற்று 3 தவறானது.",
     "why_not_others": {
       "A": {
-        "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
-        "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
-      },
-      "B": {
         "en": "Option B is incorrect because Statement 3 is false (members are not elected by Rajya Sabha).",
         "ta": "தெரிவு B தவறு: கூற்று 3 தவறானது (உறுப்பினர்கள் மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை)."
+      },
+      "B": {
+        "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
+        "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
       },
       "C": {
         "en": "Option C is incorrect because Statement 3 is false.",
@@ -4431,13 +4431,13 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டும்"
+        "en": "2 and 3 only",
+        "ta": "2 மற்றும் 3 மட்டும்"
       },
       {
         "id": "B",
-        "en": "2 and 3 only",
-        "ta": "2 மற்றும் 3 மட்டும்"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டும்"
       },
       {
         "id": "C",
@@ -4451,19 +4451,19 @@
       }
     ],
     "options_en": [
-      "1 and 2 only",
       "2 and 3 only",
+      "1 and 2 only",
       "1 and 3 only",
       "1, 2 and 3"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டும்",
       "2 மற்றும் 3 மட்டும்",
+      "1 மற்றும் 2 மட்டும்",
       "1 மற்றும் 3 மட்டும்",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "B",
+    "answer": "b",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because members are appointed by the President by warrant, not elected by the Rajya Sabha. Statement 3 is incorrect because high courts do not sit in judicial review over expert macroeconomic devolution recommendations of the Finance Commission.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. உயர் நீதிமன்றங்கள் நிதி ஆணையத்தின் நிபுணர் பொருளாதாரப் பரிந்துரைகள் மீது தன்னிச்சையான நீதித்துறை ஆய்வை மேற்கொள்ள முடியாது என்பதால் கூற்று 3 தவறானது."
@@ -4472,12 +4472,12 @@
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. உயர் நீதிமன்றங்கள் நிதி ஆணையத்தின் நிபுணர் பொருளாதாரப் பரிந்துரைகள் மீது தன்னிச்சையான நீதித்துறை ஆய்வை மேற்கொள்ள முடியாது என்பதால் கூற்று 3 தவறானது.",
     "why_not_others": {
       "A": {
-        "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
-        "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
-      },
-      "B": {
         "en": "Option B is incorrect because Statement 3 is false (members are not elected by Rajya Sabha).",
         "ta": "தெரிவு B தவறு: கூற்று 3 தவறானது (உறுப்பினர்கள் மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை)."
+      },
+      "B": {
+        "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
+        "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
       },
       "C": {
         "en": "Option C is incorrect because Statement 3 is false.",
@@ -4523,8 +4523,8 @@
     "options": [
       {
         "id": "A",
-        "en": "1 and 2 only",
-        "ta": "1 மற்றும் 2 மட்டும்"
+        "en": "1 and 3 only",
+        "ta": "1 மற்றும் 3 மட்டும்"
       },
       {
         "id": "B",
@@ -4533,8 +4533,8 @@
       },
       {
         "id": "C",
-        "en": "1 and 3 only",
-        "ta": "1 மற்றும் 3 மட்டும்"
+        "en": "1 and 2 only",
+        "ta": "1 மற்றும் 2 மட்டும்"
       },
       {
         "id": "D",
@@ -4543,19 +4543,19 @@
       }
     ],
     "options_en": [
-      "1 and 2 only",
-      "2 and 3 only",
       "1 and 3 only",
+      "2 and 3 only",
+      "1 and 2 only",
       "1, 2 and 3"
     ],
     "options_ta": [
-      "1 மற்றும் 2 மட்டும்",
-      "2 மற்றும் 3 மட்டும்",
       "1 மற்றும் 3 மட்டும்",
+      "2 மற்றும் 3 மட்டும்",
+      "1 மற்றும் 2 மட்டும்",
       "1, 2 மற்றும் 3"
     ],
-    "correct_answer": "A",
-    "answer": "a",
+    "correct_answer": "C",
+    "answer": "c",
     "explanation": {
       "en": "Statements 1 and 2 are correct. Statement 3 is incorrect because members are appointed by the President by warrant, not elected by the Rajya Sabha. Statement 3 is incorrect because high courts do not sit in judicial review over expert macroeconomic devolution recommendations of the Finance Commission.",
       "ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. உயர் நீதிமன்றங்கள் நிதி ஆணையத்தின் நிபுணர் பொருளாதாரப் பரிந்துரைகள் மீது தன்னிச்சையான நீதித்துறை ஆய்வை மேற்கொள்ள முடியாது என்பதால் கூற்று 3 தவறானது."
@@ -4564,16 +4564,16 @@
     "explanation_ta": "கூற்றுகள் 1 மற்றும் 2 சரியானவை. கூற்று 3 தவறானது, ஏனெனில் உறுப்பினர்கள் குடியரசுத் தலைவரால் நியமிக்கப்படுகிறார்களே தவிர மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை. உயர் நீதிமன்றங்கள் நிதி ஆணையத்தின் நிபுணர் பொருளாதாரப் பரிந்துரைகள் மீது தன்னிச்சையான நீதித்துறை ஆய்வை மேற்கொள்ள முடியாது என்பதால் கூற்று 3 தவறானது.",
     "why_not_others": {
       "A": {
-        "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
-        "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
+        "en": "Option C is incorrect because Statement 3 is false.",
+        "ta": "தெரிவு C தவறு: கூற்று 3 தவறானது."
       },
       "B": {
         "en": "Option B is incorrect because Statement 3 is false (members are not elected by Rajya Sabha).",
         "ta": "தெரிவு B தவறு: கூற்று 3 தவறானது (உறுப்பினர்கள் மாநிலங்களவையால் தேர்ந்தெடுக்கப்படுவதில்லை)."
       },
       "C": {
-        "en": "Option C is incorrect because Statement 3 is false.",
-        "ta": "தெரிவு C தவறு: கூற்று 3 தவறானது."
+        "en": "Option A is correct: Statements 1 and 2 correctly reflect constitutional provisions.",
+        "ta": "தெரிவு A சரி: கூற்றுகள் 1 மற்றும் 2 அரசியலமைப்பு விதிகளை சரியாகக் குறிப்பிடுகின்றன."
       },
       "D": {
         "en": "Option D is incorrect because Statement 3 is false.",
