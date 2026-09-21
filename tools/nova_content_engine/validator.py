@@ -61,19 +61,26 @@ class ContentValidator:
     """
 
     @staticmethod
-    def validate_question(q: dict, expected_prefix: str = "") -> List[ValidationIssue]:
+    def validate_question(
+        q: dict,
+        expected_prefix: str = "",
+        expected_difficulty: Optional[str] = None,
+        expected_type: Optional[str] = None,
+    ) -> List[ValidationIssue]:
         issues = []
         qid = q.get("id", "UNKNOWN")
 
         # 1. Check ID format and prefix
         if not q.get("id"):
             issues.append(ValidationIssue("CRITICAL", qid, "id", "Missing question ID"))
-        elif expected_prefix and not str(q["id"]).startswith(expected_prefix):
-            issues.append(ValidationIssue("MAJOR", qid, "id", f"ID does not start with expected prefix {expected_prefix}"))
+        elif expected_prefix:
+            root_pfx = expected_prefix.rstrip("_")
+            if not (str(q["id"]).startswith(expected_prefix) or str(q["id"]).startswith(root_pfx)):
+                issues.append(ValidationIssue("MAJOR", qid, "id", f"ID does not start with expected prefix {expected_prefix}"))
 
         # 2. Check 24 required fields
         for f in REQUIRED_FIELDS:
-            if f not in q:
+            if f not in q or q[f] is None:
                 issues.append(ValidationIssue("CRITICAL", qid, f, f"Missing required field '{f}'"))
 
         # 3. Bilingual content checks
@@ -84,9 +91,17 @@ class ContentValidator:
         if not q_ta or len(str(q_ta).strip()) < 5:
             issues.append(ValidationIssue("CRITICAL", qid, "question_ta", "Tamil question text is missing or too short"))
 
+        # Tamil Unicode script check: question_ta must contain Tamil characters
+        if q_ta and not re.search(r"[\u0B80-\u0BFF]", str(q_ta)):
+            issues.append(ValidationIssue("CRITICAL", qid, "question_ta", "Tamil question text contains no Tamil Unicode characters"))
+
+        # Accidental Tamil in English question text check
+        if q_en and len(re.findall(r"[\u0B80-\u0BFF]", str(q_en))) > len(str(q_en)) * 0.3:
+            issues.append(ValidationIssue("CRITICAL", qid, "question_en", "English question text contains excessive Tamil characters"))
+
         # Placeholder checks
         for text_val, name in [(q_en, "question_en"), (q_ta, "question_ta")]:
-            if any(p in str(text_val).lower() for p in ["placeholder", "lorem ipsum", "todo", "tbd"]):
+            if any(p in str(text_val).lower() for p in ["placeholder", "lorem ipsum", "todo", "tbd", "dummy text"]):
                 issues.append(ValidationIssue("CRITICAL", qid, name, "Detected placeholder text"))
 
         # 4. Options check
@@ -97,12 +112,36 @@ class ContentValidator:
             opt_ids = [opt.get("id") for opt in options if isinstance(opt, dict)]
             if opt_ids != ["A", "B", "C", "D"]:
                 issues.append(ValidationIssue("CRITICAL", qid, "options", f"Option IDs must be ['A', 'B', 'C', 'D'], got {opt_ids}"))
+
+            en_texts = []
+            ta_texts = []
             for opt in options:
                 opt_id = opt.get("id", "")
-                if not opt.get("en") or len(str(opt["en"]).strip()) == 0:
+                en_t = str(opt.get("en", "")).strip()
+                ta_t = str(opt.get("ta", "")).strip()
+                en_texts.append(en_t)
+                ta_texts.append(ta_t)
+                if not en_t:
                     issues.append(ValidationIssue("CRITICAL", qid, f"options[{opt_id}].en", "Empty English option text"))
-                if not opt.get("ta") or len(str(opt["ta"]).strip()) == 0:
+                if not ta_t:
                     issues.append(ValidationIssue("CRITICAL", qid, f"options[{opt_id}].ta", "Empty Tamil option text"))
+
+            # Duplicate options check
+            if len(set(en_texts)) != 4 and all(en_texts):
+                issues.append(ValidationIssue("CRITICAL", qid, "options", "Duplicate English option texts within question"))
+            if len(set(ta_texts)) != 4 and all(ta_texts):
+                issues.append(ValidationIssue("CRITICAL", qid, "options", "Duplicate Tamil option texts within question"))
+
+            # Parity with options_en and options_ta
+            opts_en_field = q.get("options_en")
+            if isinstance(opts_en_field, list) and len(opts_en_field) == 4:
+                if [str(x).strip() for x in opts_en_field] != en_texts:
+                    issues.append(ValidationIssue("MAJOR", qid, "options_en", "options_en does not match options[].en"))
+
+            opts_ta_field = q.get("options_ta")
+            if isinstance(opts_ta_field, list) and len(opts_ta_field) == 4:
+                if [str(x).strip() for x in opts_ta_field] != ta_texts:
+                    issues.append(ValidationIssue("MAJOR", qid, "options_ta", "options_ta does not match options[].ta"))
 
         # 5. Answer integrity
         correct = q.get("correct_answer")
@@ -133,15 +172,47 @@ class ContentValidator:
         if not rf or (isinstance(rf, dict) and (not rf.get("en") or not rf.get("ta"))):
             issues.append(ValidationIssue("MINOR", qid, "revision_fact", "Incomplete bilingual revision_fact"))
 
-        # 7. Difficulty check
+        # 7. Source reference validation
+        src = q.get("source_reference")
+        if not isinstance(src, list) or len(src) == 0:
+            issues.append(ValidationIssue("MINOR", qid, "source_reference", "Missing or empty source_reference list"))
+
+        # 8. Difficulty check & consistency
         diff = q.get("difficulty")
         if diff not in ["Easy", "Medium", "Hard"]:
             issues.append(ValidationIssue("MAJOR", qid, "difficulty", f"Invalid difficulty: '{diff}'"))
+        elif expected_difficulty and diff != expected_difficulty:
+            issues.append(ValidationIssue("CRITICAL", qid, "difficulty", f"Difficulty mismatch: expected '{expected_difficulty}', got '{diff}'"))
+
+        # 9. Question type consistency check
+        qtype = str(q.get("question_type", "")).strip()
+        if expected_type:
+            if expected_type == "Statement" and "statement" not in qtype.lower():
+                issues.append(ValidationIssue("MAJOR", qid, "question_type", f"Expected Statement-type, got '{qtype}'"))
+            elif expected_type == "Assertion & Reason" and "reason" not in qtype.lower() and "assertion" not in qtype.lower():
+                issues.append(ValidationIssue("MAJOR", qid, "question_type", f"Expected Assertion & Reason type, got '{qtype}'"))
+            elif expected_type == "Chronology" and "chrono" not in qtype.lower():
+                issues.append(ValidationIssue("MAJOR", qid, "question_type", f"Expected Chronology type, got '{qtype}'"))
+            elif expected_type == "Match the Following" and "match" not in qtype.lower():
+                issues.append(ValidationIssue("MAJOR", qid, "question_type", f"Expected Match the Following type, got '{qtype}'"))
+
+        # Structural event validation for Chronology questions
+        if expected_type == "Chronology" or "chrono" in qtype.lower():
+            chrono_events = [l for l in str(q_en).split("\n") if re.match(r"^\s*[1-4]\.\s+", l.strip())]
+            if len(chrono_events) != 4:
+                issues.append(ValidationIssue("MAJOR", qid, "question_type", f"Chronology question stem must contain 4 numbered events, found {len(chrono_events)}"))
 
         return issues
 
     @classmethod
-    def validate_file(cls, filepath: str, expected_count: Optional[int] = None, expected_prefix: str = "") -> ValidationReport:
+    def validate_file(
+        cls,
+        filepath: str,
+        expected_count: Optional[int] = None,
+        expected_prefix: str = "",
+        expected_difficulty: Optional[str] = None,
+        expected_type: Optional[str] = None,
+    ) -> ValidationReport:
         if not os.path.exists(filepath):
             return ValidationReport(
                 is_valid=False,
@@ -167,6 +238,35 @@ class ContentValidator:
             )
 
         all_issues = []
+        fname = os.path.basename(filepath).lower()
+
+        # Check for legacy files
+        if fname in ["nature_and_structure_of_indian_economy_easy.json",
+                     "nature_and_structure_of_indian_economy_medium.json",
+                     "nature_and_structure_of_indian_economy_hard.json"]:
+            all_issues.append(ValidationIssue("MAJOR", "FILE", "legacy", f"File '{fname}' is an existing Economy legacy file."))
+
+        # Infer expected difficulty and type from filename if not explicitly provided
+        exp_diff = expected_difficulty
+        if not exp_diff:
+            if "_easy." in fname:
+                exp_diff = "Easy"
+            elif "_medium." in fname:
+                exp_diff = "Medium"
+            elif "_hard." in fname:
+                exp_diff = "Hard"
+
+        exp_type = expected_type
+        if not exp_type:
+            if "_statement" in fname:
+                exp_type = "Statement"
+            elif "_reasoning" in fname or "_assertion" in fname:
+                exp_type = "Assertion & Reason"
+            elif "_match" in fname:
+                exp_type = "Match the Following"
+            elif "_chronology" in fname:
+                exp_type = "Chronology"
+
         if expected_count is not None and len(questions) != expected_count:
             all_issues.append(ValidationIssue("CRITICAL", "COUNT", "length", f"Expected {expected_count} questions, got {len(questions)}"))
 
@@ -187,7 +287,12 @@ class ContentValidator:
                     all_issues.append(ValidationIssue("CRITICAL", qid, "question_en", "Duplicate English stem within file"))
                 seen_stems.add(stem_en)
 
-            q_issues = cls.validate_question(q, expected_prefix=expected_prefix)
+            q_issues = cls.validate_question(
+                q,
+                expected_prefix=expected_prefix,
+                expected_difficulty=exp_diff,
+                expected_type=exp_type,
+            )
             all_issues.extend(q_issues)
 
             if q.get("correct_answer"):

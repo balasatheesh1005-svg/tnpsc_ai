@@ -69,9 +69,16 @@ class ResolvedTopic:
     total_parts: int
 
 
-def derive_prefix(base_name: str) -> str:
+from .economy_mcq_config import ECONOMY_PREFIX_MAP
+
+
+def derive_prefix(base_name: str, subject: str = "polity") -> str:
+    if subject.lower() == "economy" and base_name in ECONOMY_PREFIX_MAP:
+        return ECONOMY_PREFIX_MAP[base_name]
     if base_name in KNOWN_PREFIXES:
         return KNOWN_PREFIXES[base_name]
+    if base_name in ECONOMY_PREFIX_MAP:
+        return ECONOMY_PREFIX_MAP[base_name]
     words = [w for w in base_name.split("_") if w]
     if len(words) > 1:
         return "".join([w[0].upper() for w in words])
@@ -105,7 +112,7 @@ def resolve_topic(
       1. Explicit argument / query (e.g. 'centre_state_relations', 'Centre-State Relations')
       2. Active topic from active_topic.json
       3. First in-progress topic from data/pipeline_status/
-      4. Default to 'polity_centre_state_relations'
+      4. Default to canonical starting topic for subject
     """
     subj = subject.lower().strip()
     candidate = None
@@ -155,8 +162,8 @@ def resolve_topic(
                         pass
 
     if not matched_meta:
-        # Default to Centre-State Relations if no candidate found
-        matched_meta = get_topic_metadata_by_id(subj, "polity_centre_state_relations")
+        default_id = "economy_nature_and_structure_of_indian_economy" if subj == "economy" else "polity_centre_state_relations"
+        matched_meta = get_topic_metadata_by_id(subj, default_id)
 
     topic_id = matched_meta["topic_id"]
     repo_id = matched_meta.get("repository_id", topic_id)
@@ -172,7 +179,7 @@ def resolve_topic(
         if repo_base in ["constitutional_schedules", "constitutional_amendments"]:
             base_name = repo_base
 
-    prefix = derive_prefix(base_name)
+    prefix = derive_prefix(base_name, subj)
 
     # Persist as active topic
     set_active_topic(topic_id, subj)

@@ -20,6 +20,9 @@ CATEGORY_FILES = [
 ]
 
 
+from .economy_mcq_config import ECONOMY_CATEGORY_SPEC
+
+
 class TopicDiscovery:
     """
     Topic discovery engine for Nova AI.
@@ -66,7 +69,8 @@ class TopicDiscovery:
         total_core = 0
         grand_test_count = 0
 
-        for cat, fname_tpl, expected_count, pfx_tpl in CATEGORY_FILES:
+        category_spec = ECONOMY_CATEGORY_SPEC if subj == "economy" else CATEGORY_FILES
+        for cat, fname_tpl, expected_count, pfx_tpl in category_spec:
             fname = fname_tpl.format(base=base)
             fpath = os.path.join(q_dir, fname)
             exists = os.path.exists(fpath)

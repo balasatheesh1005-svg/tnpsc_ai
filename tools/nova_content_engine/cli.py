@@ -5,15 +5,27 @@ import re
 import sys
 from typing import List, Optional, Tuple
 
-from .topic_resolver import resolve_topic, set_active_topic, ResolvedTopic
-from .discovery import TopicDiscovery
-from .blueprint_manager import BlueprintManager
-from .checkpoint import PipelineCheckpointManager, PipelineState
-from .validator import ContentValidator
-from .generator_runner import GeneratorRunner
-from .audit import TopicAuditor
-from .ui_smoke_test import run_ui_smoke_test
-from .auto_chain import AutoChainPipeline
+if __package__ is None or __package__ == "":
+    sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "../..")))
+    from tools.nova_content_engine.topic_resolver import resolve_topic, set_active_topic, ResolvedTopic
+    from tools.nova_content_engine.discovery import TopicDiscovery
+    from tools.nova_content_engine.blueprint_manager import BlueprintManager
+    from tools.nova_content_engine.checkpoint import PipelineCheckpointManager, PipelineState
+    from tools.nova_content_engine.validator import ContentValidator
+    from tools.nova_content_engine.generator_runner import GeneratorRunner
+    from tools.nova_content_engine.audit import TopicAuditor
+    from tools.nova_content_engine.ui_smoke_test import run_ui_smoke_test
+    from tools.nova_content_engine.auto_chain import AutoChainPipeline
+else:
+    from .topic_resolver import resolve_topic, set_active_topic, ResolvedTopic
+    from .discovery import TopicDiscovery
+    from .blueprint_manager import BlueprintManager
+    from .checkpoint import PipelineCheckpointManager, PipelineState
+    from .validator import ContentValidator
+    from .generator_runner import GeneratorRunner
+    from .audit import TopicAuditor
+    from .ui_smoke_test import run_ui_smoke_test
+    from .auto_chain import AutoChainPipeline
 
 if hasattr(sys.stdout, "reconfigure"):
     try:
@@ -129,9 +141,31 @@ def parse_natural_command(text: str) -> Tuple[Optional[str], Optional[str], Opti
     return None, None, topic_hint
 
 
+def build_help_parser() -> argparse.ArgumentParser:
+    """Build the parser used for side-effect-free CLI help output."""
+    parser = argparse.ArgumentParser(
+        prog="nova-content-engine",
+        description="TNPSC Nova AI content-engine workflow CLI",
+    )
+    parser.add_argument(
+        "command",
+        nargs="*",
+        help="status, discover, blueprint, generate, validate, smoke_test, or a natural-language command",
+    )
+    parser.add_argument("--topic", help="Topic name, slug, or topic ID")
+    parser.add_argument("--subject", default="polity", help="Subject namespace (default: polity)")
+    parser.add_argument("--dry-run", action="store_true", help="Plan generation without writing files")
+    parser.add_argument("--part-only", action="store_true", help="Run only the requested content part")
+    return parser
+
+
 def main(argv: Optional[List[str]] = None) -> int:
     if argv is None:
         argv = sys.argv[1:]
+
+    if "--help" in argv or "-h" in argv:
+        build_help_parser().print_help()
+        return 0
 
     # Separate flags from arguments
     dry_run = "--dry-run" in argv
