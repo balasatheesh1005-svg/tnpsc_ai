@@ -2,6 +2,7 @@ import html
 import streamlit as st
 
 from core.learning_intelligence_ai import get_learning_intelligence
+from core.test_topic_selector import get_test_config, start_practice_test
 from ui.components.cards import (
     glass_card,
     learning_dna_grid,
@@ -48,19 +49,22 @@ def render_learning_intelligence_dashboard(user: str = None):
     col_cta, _ = st.columns([2, 1])
     with col_cta:
         if st.button("⚡ Start Recovery Session →", type="primary", use_container_width=True):
-            st.session_state.update(
-                {
-                    "q_index": 0,
-                    "score": 0,
-                    "answered": False,
-                    "test_active": True,
-                    "test_mode": "weak",
-                    "test_results_processed": False,
-                    "test_subject": intel.get("subject", "polity").lower(),
-                    "test_topic": intel.get("topic", "general").lower(),
-                }
-            )
-            st.rerun()
+            test_config = get_test_config(user, mode="weak")
+            if not test_config:
+                st.info("No weak topics recorded yet. Complete a practice test first to identify your recovery areas.")
+            else:
+                success, msg = start_practice_test(
+                    subject=test_config["subject"],
+                    topic=test_config["topic"],
+                    level=test_config.get("level", "easy"),
+                    mode="weak",
+                    q_count=5,
+                    navigate=True,
+                )
+                if success:
+                    st.rerun()
+                else:
+                    st.warning("No practice questions found for this recovery topic.")
 
     st.write("")
 

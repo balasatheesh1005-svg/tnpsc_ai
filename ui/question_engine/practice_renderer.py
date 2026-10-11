@@ -77,9 +77,53 @@ def render_practice_question(user: str):
     q: NormalizedQuestion = UniversalQuestionAdapter.normalize(q_raw)
     prefix = "practice"
 
+    st.markdown(
+        """
+        <style>
+        @media (max-width: 640px) {
+            div[data-testid="stHorizontalBlock"]:has(.practice-top-marker) {
+                flex-direction: column !important;
+                gap: 8px !important;
+            }
+            div[data-testid="stHorizontalBlock"]:has(.practice-top-marker) > div[data-testid="column"] {
+                width: 100% !important;
+                min-width: 100% !important;
+                flex: 1 1 100% !important;
+            }
+
+            div[data-testid="stHorizontalBlock"]:has(.practice-nav-marker) {
+                display: flex !important;
+                flex-wrap: wrap !important;
+                gap: 8px !important;
+            }
+            div[data-testid="stHorizontalBlock"]:has(.practice-nav-marker) > div[data-testid="column"]:nth-child(2) {
+                order: 1 !important;
+                width: 100% !important;
+                min-width: 100% !important;
+                flex: 1 1 100% !important;
+            }
+            div[data-testid="stHorizontalBlock"]:has(.practice-nav-marker) > div[data-testid="column"]:nth-child(1) {
+                order: 2 !important;
+                width: calc(50% - 4px) !important;
+                min-width: calc(50% - 4px) !important;
+                flex: 1 1 calc(50% - 4px) !important;
+            }
+            div[data-testid="stHorizontalBlock"]:has(.practice-nav-marker) > div[data-testid="column"]:nth-child(3) {
+                order: 3 !important;
+                width: calc(50% - 4px) !important;
+                min-width: calc(50% - 4px) !important;
+                flex: 1 1 calc(50% - 4px) !important;
+            }
+        }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
     # Top Control Bar (Exit Practice Button)
     col_nav_top, col_title_top = st.columns([1, 4], gap="small")
     with col_nav_top:
+        st.markdown('<span class="practice-top-marker" style="display:none;"></span>', unsafe_allow_html=True)
         if st.button("Continue Learning →", key="practice_exit_top_btn", use_container_width=True):
             clear_practice_session()
             st.rerun()
@@ -141,6 +185,7 @@ def render_practice_question(user: str):
     c_prev, c_submit, c_next = st.columns([1, 2, 1], gap="small")
 
     with c_prev:
+        st.markdown('<span class="practice-nav-marker" style="display:none;"></span>', unsafe_allow_html=True)
         if st.button("⬅️ Previous", key="practice_prev_q_btn", disabled=(curr_i == 0), use_container_width=True):
             set_practice_question_index(curr_i - 1)
             st.rerun()
@@ -367,10 +412,30 @@ def render_practice_result_screen(user: str):
     else:
         next_btn_label = "Continue to Next Topic 📖"
 
+    st.markdown(
+        """
+        <style>
+        @media (max-width: 640px) {
+            div[data-testid="stHorizontalBlock"]:has(.practice-result-nav-marker) {
+                flex-direction: column !important;
+                gap: 8px !important;
+            }
+            div[data-testid="stHorizontalBlock"]:has(.practice-result-nav-marker) > div[data-testid="column"] {
+                width: 100% !important;
+                min-width: 100% !important;
+                flex: 1 1 100% !important;
+            }
+        }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
     btn_col1, btn_col2, btn_col3, btn_col4 = st.columns(4, gap="small")
 
     # SECONDARY ACTION 1: Review Answers
     with btn_col1:
+        st.markdown('<span class="practice-result-nav-marker" style="display:none;"></span>', unsafe_allow_html=True)
         if st.button("📖 Review Answers", key="practice_res_btn_review", use_container_width=True):
             st.session_state["practice_review_mode"] = True
             st.rerun()

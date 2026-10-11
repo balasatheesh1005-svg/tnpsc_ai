@@ -6,6 +6,7 @@ from core.revision_engine import (
     get_revision_analytics_v2,
     get_revision_mentor_message,
 )
+from core.test_topic_selector import get_test_config, start_practice_test
 from ui.components.cards import (
     glass_card,
     glass_card_html,
@@ -49,20 +50,28 @@ def render_revision_dashboard(user: str = None):
     col_cta1, col_cta2 = st.columns([2, 1])
     with col_cta1:
         if st.button("🚀 Start Revision →", type="primary", use_container_width=True):
-            st.session_state.update(
-                {
-                    "q_index": 0,
-                    "score": 0,
-                    "answered": False,
-                    "test_active": True,
-                    "test_mode": "revision",
-                    "test_results_processed": False,
-                    "test_subject": plan.get("raw_subject", "polity"),
-                    "test_topic": plan.get("raw_topic", "general"),
-                    "test_level": plan.get("raw_qtype", "easy"),
+            test_config = get_test_config(user, mode="revision")
+            if not test_config and plan and plan.get("status") in ["Due Today", "Overdue"]:
+                test_config = {
+                    "subject": plan.get("raw_subject", "polity"),
+                    "topic": plan.get("raw_topic", "general"),
+                    "level": plan.get("raw_qtype", "easy"),
                 }
-            )
-            st.rerun()
+            if not test_config:
+                st.info("No revision questions are due yet. Complete practice sessions to build your revision queue.")
+            else:
+                success, msg = start_practice_test(
+                    subject=test_config["subject"],
+                    topic=test_config["topic"],
+                    level=test_config.get("level", "easy"),
+                    mode="revision",
+                    q_count=5,
+                    navigate=True,
+                )
+                if success:
+                    st.rerun()
+                else:
+                    st.warning("No revision questions found for this topic.")
 
     st.write("")
 

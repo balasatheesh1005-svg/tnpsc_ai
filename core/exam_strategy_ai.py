@@ -37,16 +37,31 @@ TNPSC_SUBJECT_QUESTION_WEIGHTS = {
 }
 
 
-def _determine_overall_strategy(readiness_score: int, mock_accuracy: int) -> str:
+def _determine_overall_strategy(
+    readiness_score: Optional[int],
+    mock_accuracy: Optional[int],
+) -> str:
     """
     Selects overarching execution theme based on current readiness and mock accuracy.
+    Safely handles None when metrics are unavailable (e.g. fresh or early users).
     """
-    if readiness_score >= 80 and mock_accuracy >= 80:
-        return "Strength-First High-Velocity Execution"
-    elif readiness_score >= 65:
-        return "Balanced Systematic Progression"
+    if readiness_score is not None and mock_accuracy is not None:
+        if readiness_score >= 80 and mock_accuracy >= 80:
+            return "Strength-First High-Velocity Execution"
+        elif readiness_score >= 65:
+            return "Balanced Systematic Progression"
+        else:
+            return "High-Accuracy Tactical Focus"
+    elif readiness_score is not None and readiness_score > 0:
+        if readiness_score >= 80:
+            return "Strength-First High-Velocity Execution"
+        elif readiness_score >= 65:
+            return "Balanced Systematic Progression"
+        else:
+            return "High-Accuracy Tactical Focus"
     else:
-        return "High-Accuracy Tactical Focus"
+        # Generic starter guidance when metrics are unavailable
+        return "Balanced Systematic Progression"
 
 
 from core.performance import measure_time, record_cache_hit, record_cache_miss
@@ -58,6 +73,7 @@ def get_exam_strategy(
     user: Optional[str] = None,
     context: Optional[Any] = None,
     force_refresh: bool = False,
+    total_exam_minutes: int = 180,
 ) -> Dict[str, Any]:
     """
     Exam Execution Strategy Engine V2 - Master Exam Execution Hub.
@@ -76,7 +92,7 @@ def get_exam_strategy(
     Dashboard displays engine output ONLY. Zero evaluation calculations in UI.
     """
     user_str = str(user or "Guest")
-    cache_key = f"{ENGINE_CACHE_KEY_PREFIX}Exam Strategy Engine_{user_str}"
+    cache_key = f"{ENGINE_CACHE_KEY_PREFIX}Exam Strategy Engine_{user_str}_{total_exam_minutes}"
     if hasattr(st, "session_state") and not force_refresh and cache_key in st.session_state:
         record_cache_hit("Exam Strategy Engine")
         return st.session_state[cache_key]
@@ -96,8 +112,12 @@ def get_exam_strategy(
     progress_rows = get_progress(user, context=ctx)
     streak = get_streak(user, context=ctx)
 
-    readiness_score = int(readiness.get("overall_readiness_score", 70))
-    mock_accuracy = int(mock_data.get("overall_accuracy", 74))
+    raw_readiness = readiness.get("overall_readiness_score")
+    readiness_score = int(raw_readiness) if raw_readiness is not None else None
+
+    raw_mock_acc = mock_data.get("overall_accuracy")
+    mock_accuracy = int(raw_mock_acc) if raw_mock_acc is not None else None
+    has_mock_accuracy = mock_accuracy is not None
 
     overall_strategy = _determine_overall_strategy(readiness_score, mock_accuracy)
 
@@ -122,12 +142,17 @@ def get_exam_strategy(
 
     subject_strength_scores = {}
     for subj in candidate_subjects:
-        mock_acc = float(mock_sections.get(subj, {}).get("accuracy", 70)) if isinstance(mock_sections.get(subj), dict) else 70.0
+        mock_entry = mock_sections.get(subj) if isinstance(mock_sections, dict) else None
+        mock_acc_val = mock_entry.get("accuracy") if isinstance(mock_entry, dict) else None
         weak_count = weak_subject_counts.get(subj, 0)
         base_weight = TNPSC_SUBJECT_QUESTION_WEIGHTS.get(subj, 15)
         
-        # Strength score: Higher means ATTEMPT FIRST (stronger mastery, lower weakness)
-        strength_score = (mock_acc * 1.5) - (weak_count * 10.0) + (base_weight * 0.2)
+        if mock_acc_val is not None:
+            mock_acc = float(mock_acc_val)
+            strength_score = (mock_acc * 1.5) - (weak_count * 10.0) + (base_weight * 0.2)
+        else:
+            # Baseline syllabus-weight priority when mock accuracy is unavailable
+            strength_score = (base_weight * 1.5) - (weak_count * 10.0)
         subject_strength_scores[subj] = round(strength_score, 2)
 
     # Sort subjects descending by strength score (strongest first)
@@ -135,7 +160,12 @@ def get_exam_strategy(
     top_subject_order = subject_order[:5] if len(subject_order) >= 5 else subject_order
 
     # 4. Section-Wise Time Allocation Methodology
-    total_exam_minutes = 180
+    try:
+        total_exam_minutes = int(total_exam_minutes)
+        if total_exam_minutes <= 0:
+            total_exam_minutes = 180
+    except (TypeError, ValueError):
+        total_exam_minutes = 180
     # Reserve explicit Review & Buffer time (e.g. 15-25 mins based on exam length)
     review_buffer_minutes = max(10, min(30, int(round(total_exam_minutes * 0.12))))
     available_subject_minutes = total_exam_minutes - review_buffer_minutes
@@ -204,27 +234,50 @@ def get_exam_strategy(
         risk_alerts.append("Time Pressure Risk: Monitor elapsed time at the 60-minute mark to ensure pace matches targets.")
 
     # Weak Subject Risk
-    risk_alerts.append(f"Weak Subject Risk: Avoid spending excessive time on {lowest_subj} early in the exam.")
+    if weak_subject_counts:
+        risk_alerts.append(f"Weak Subject Risk: Avoid spending excessive time on {lowest_subj} early in the exam.")
+    else:
+        risk_alerts.append("Pacing Risk: Avoid lingering on unfamiliar questions early in the exam; mark and proceed.")
 
     # Guessing / Fatigue Risk
     risk_alerts.append("Fatigue & Guessing Risk: Take a 5-second mental reset between section transitions to maintain accuracy.")
 
     # 9. Strategy Confidence Calculation
     # Deterministic confidence based on mock history consistency, readiness, and streak
-    streak_val = float(streak) if isinstance(streak, (int, float)) else 5.0
-    raw_confidence = (readiness_score * 0.45) + (mock_accuracy * 0.45) + min(10.0, streak_val * 0.8)
-    strategy_confidence = max(65, min(98, int(round(raw_confidence))))
+    streak_val = float(streak) if isinstance(streak, (int, float)) else 0.0
 
-    confidence_reason = (
-        "The strategy is supported by consistent mock history, "
-        "stable readiness evaluation, and deterministic performance trends."
-    )
+    if has_mock_accuracy and readiness_score is not None and readiness.get("is_eligible", False):
+        raw_confidence = (readiness_score * 0.45) + (mock_accuracy * 0.45) + min(10.0, streak_val * 0.8)
+        strategy_confidence = max(65, min(98, int(round(raw_confidence))))
+        confidence_reason = (
+            "The strategy is supported by consistent mock history, "
+            "stable readiness evaluation, and deterministic performance trends."
+        )
+    elif readiness_score is not None and readiness_score > 0:
+        raw_confidence = (readiness_score * 0.6) + min(15.0, streak_val * 1.5)
+        strategy_confidence = max(55, min(85, int(round(raw_confidence))))
+        confidence_reason = (
+            "Strategy calibrated from verified practice accuracy and syllabus weightages. "
+            "Complete mock examinations to unlock full mock-pace calibration."
+        )
+    else:
+        strategy_confidence = 70
+        confidence_reason = (
+            "Standard exam blueprint strategy based on official TNPSC subject weightages. "
+            "Complete practice tests to unlock personalized strategy calibration."
+        )
 
     # 10. Mentor Strategy Advice
-    mentor_strategy = (
-        f"Begin with {top_subj} to build early momentum and confidence. "
-        f"Stick strictly to time allocations and reserve the final {review_buffer_minutes} minutes for systematic review."
-    )
+    if has_mock_accuracy:
+        mentor_strategy = (
+            f"Begin with {top_subj} to build early momentum and confidence. "
+            f"Stick strictly to time allocations and reserve the final {review_buffer_minutes} minutes for systematic review."
+        )
+    else:
+        mentor_strategy = (
+            f"Begin with high-weightage sections ({top_subj} & Polity) to build early momentum. "
+            f"Stick strictly to section time allocations and reserve {review_buffer_minutes} minutes for systematic review."
+        )
 
     # 11. Dashboard Sections Payload
     dashboard_sections = {
@@ -242,7 +295,7 @@ def get_exam_strategy(
         "review_buffer_minutes": review_buffer_minutes,
     }
 
-    return {
+    result = {
         "overall_strategy": overall_strategy,
         "subject_order": top_subject_order,
         "time_plan": time_plan,
@@ -256,6 +309,7 @@ def get_exam_strategy(
         "dashboard_sections": dashboard_sections,
     }
 
-    return get_cached_engine_result(
-        "Exam Strategy Engine", user, _compute, force_refresh=force_refresh
-    )
+    if hasattr(st, "session_state"):
+        st.session_state[cache_key] = result
+
+    return result

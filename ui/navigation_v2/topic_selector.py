@@ -121,81 +121,106 @@ def render_topic_selector():
         st.warning(f"No topics found for subject '{subj_title}'.")
         return
 
-    cols = st.columns(2, gap="medium")
-    for idx, raw_topic in enumerate(filtered_topics):
-        col = cols[idx % 2]
-        
-        # Fetch availability safely
-        try:
-            topic_id_lookup = raw_topic.get("topic_id") if isinstance(raw_topic, dict) else str(raw_topic)
-            print("[DEBUG] topic_id:", topic_id_lookup)
-            avail = check_repository_availability(subject, topic_id_lookup)
-            print("[DEBUG] check_repository_availability:", avail)
-        except Exception:
-            avail = {}
+    st.markdown(
+        """
+        <style>
+        @media (max-width: 640px) {
+            div[data-testid="stHorizontalBlock"]:has(.topic-card-item) {
+                flex-direction: column !important;
+                gap: 12px !important;
+            }
+            div[data-testid="stHorizontalBlock"]:has(.topic-card-item) > div[data-testid="column"] {
+                width: 100% !important;
+                min-width: 100% !important;
+                flex: 1 1 100% !important;
+            }
+            .topic-badges-container {
+                min-height: auto !important;
+            }
+        }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
 
-        card_data = validate_topic_card(raw_topic, avail)
+    for row_idx in range(0, len(filtered_topics), 2):
+        row_topics = filtered_topics[row_idx:row_idx + 2]
+        cols = st.columns(2, gap="medium")
+        for col_idx, raw_topic in enumerate(row_topics):
+            idx = row_idx + col_idx
+            col = cols[col_idx]
+            
+            # Fetch availability safely
+            try:
+                topic_id_lookup = raw_topic.get("topic_id") if isinstance(raw_topic, dict) else str(raw_topic)
+                print("[DEBUG] topic_id:", topic_id_lookup)
+                avail = check_repository_availability(subject, topic_id_lookup)
+                print("[DEBUG] check_repository_availability:", avail)
+            except Exception:
+                avail = {}
 
-        # Build pills
-        part_badge_html = ""
-        if card_data["total_parts"] > 1:
-            part_badge_html = (
-                f'<span style="display:inline-block; padding:3px 10px; border-radius:12px; '
-                f'background:#F1F5F9; color:#475569; font-weight:700; font-size:0.78rem; '
-                f'border:1px solid #E2E8F0;">📚 {card_data["total_parts"]} Parts</span>'
-            )
+            card_data = validate_topic_card(raw_topic, avail)
 
-        if card_data["has_notes"]:
-            notes_badge_html = (
-                '<span style="display:inline-block; padding:3px 10px; border-radius:12px; '
-                'background:#EFF6FF; color:#2563EB; font-weight:700; font-size:0.78rem; '
-                'border:1px solid #BFDBFE;">📖 Notes Ready</span>'
-            )
-        else:
-            notes_badge_html = (
-                '<span style="display:inline-block; padding:3px 10px; border-radius:12px; '
-                'background:#F8FAFC; color:#64748B; font-weight:700; font-size:0.78rem; '
-                'border:1px solid #E2E8F0;">📖 Notes Pending</span>'
-            )
-
-        if card_data["has_gt"]:
-            gt_badge_html = (
-                '<span style="display:inline-block; padding:3px 10px; border-radius:12px; '
-                'background:#FEF3C7; color:#D97706; font-weight:700; font-size:0.78rem; '
-                'border:1px solid #FDE68A;">🏆 Grand Test Ready</span>'
-            )
-        else:
-            gt_badge_html = (
-                '<span style="display:inline-block; padding:3px 10px; border-radius:12px; '
-                'background:#F8FAFC; color:#94A3B8; font-weight:700; font-size:0.78rem; '
-                'border:1px solid #E2E8F0;">🏆 Grand Test Not Available</span>'
-            )
-
-        repos_badge_html = (
-            f'<span style="display:inline-block; padding:3px 10px; border-radius:12px; '
-            f'background:#F1F5F9; color:#334155; font-weight:700; font-size:0.78rem; '
-            f'border:1px solid #E2E8F0;">{html.escape(card_data["practice_status"])}</span>'
-        )
-
-        badges_list = [b for b in [part_badge_html, notes_badge_html, gt_badge_html, repos_badge_html] if b]
-        badges_container_html = f'<div style="display: flex; flex-wrap: wrap; gap: 6px; min-height: 64px; align-content: flex-start; margin-bottom: 12px;">{"".join(badges_list)}</div>'
-
-        with col:
-            with st.container(border=True):
-                st.markdown(
-                    dedent(
-                        f"""
-                        <div style="min-height: 48px; margin-bottom: 8px;">
-                            <h4 style="margin: 0; color: #0F172A; font-size: 1.05rem; font-weight: 700; line-height: 1.3;">
-                                {html.escape(card_data['display_title'])}
-                            </h4>
-                        </div>
-                        """
-                    ).strip(),
-                    unsafe_allow_html=True,
+            # Build pills
+            part_badge_html = ""
+            if card_data["total_parts"] > 1:
+                part_badge_html = (
+                    f'<span style="display:inline-block; padding:3px 10px; border-radius:12px; '
+                    f'background:#F1F5F9; color:#475569; font-weight:700; font-size:0.78rem; '
+                    f'border:1px solid #E2E8F0;">📚 {card_data["total_parts"]} Parts</span>'
                 )
 
-                st.markdown(badges_container_html, unsafe_allow_html=True)
+            if card_data["has_notes"]:
+                notes_badge_html = (
+                    '<span style="display:inline-block; padding:3px 10px; border-radius:12px; '
+                    'background:#EFF6FF; color:#2563EB; font-weight:700; font-size:0.78rem; '
+                    'border:1px solid #BFDBFE;">📖 Notes Ready</span>'
+                )
+            else:
+                notes_badge_html = (
+                    '<span style="display:inline-block; padding:3px 10px; border-radius:12px; '
+                    'background:#F8FAFC; color:#64748B; font-weight:700; font-size:0.78rem; '
+                    'border:1px solid #E2E8F0;">📖 Notes Pending</span>'
+                )
+
+            if card_data["has_gt"]:
+                gt_badge_html = (
+                    '<span style="display:inline-block; padding:3px 10px; border-radius:12px; '
+                    'background:#FEF3C7; color:#D97706; font-weight:700; font-size:0.78rem; '
+                    'border:1px solid #FDE68A;">🏆 Grand Test Ready</span>'
+                )
+            else:
+                gt_badge_html = (
+                    '<span style="display:inline-block; padding:3px 10px; border-radius:12px; '
+                    'background:#F8FAFC; color:#94A3B8; font-weight:700; font-size:0.78rem; '
+                    'border:1px solid #E2E8F0;">🏆 Grand Test Not Available</span>'
+                )
+
+            repos_badge_html = (
+                f'<span style="display:inline-block; padding:3px 10px; border-radius:12px; '
+                f'background:#F1F5F9; color:#334155; font-weight:700; font-size:0.78rem; '
+                f'border:1px solid #E2E8F0;">{html.escape(card_data["practice_status"])}</span>'
+            )
+
+            badges_list = [b for b in [part_badge_html, notes_badge_html, gt_badge_html, repos_badge_html] if b]
+            badges_container_html = f'<div class="topic-badges-container" style="display: flex; flex-wrap: wrap; gap: 6px; min-height: 64px; align-content: flex-start; margin-bottom: 12px;">{"".join(badges_list)}</div>'
+
+            with col:
+                with st.container(border=True):
+                    st.markdown(
+                        dedent(
+                            f"""
+                            <div class="topic-card-item" style="min-height: 48px; margin-bottom: 8px;">
+                                <h4 style="margin: 0; color: #0F172A; font-size: 1.05rem; font-weight: 700; line-height: 1.3;">
+                                    {html.escape(card_data['display_title'])}
+                                </h4>
+                            </div>
+                            """
+                        ).strip(),
+                        unsafe_allow_html=True,
+                    )
+
+                    st.markdown(badges_container_html, unsafe_allow_html=True)
 
                 if st.button(
                     "Enter Topic Hub 🚀",

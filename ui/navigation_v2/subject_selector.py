@@ -14,21 +14,41 @@ def render_subject_selector(on_subject_selected=None):
         unsafe_allow_html=True,
     )
 
+    st.markdown(
+        """
+        <style>
+        @media (max-width: 640px) {
+            div[data-testid="stHorizontalBlock"]:has(.subject-card-item) {
+                flex-direction: column !important;
+                gap: 12px !important;
+            }
+            div[data-testid="stHorizontalBlock"]:has(.subject-card-item) > div[data-testid="column"] {
+                width: 100% !important;
+                min-width: 100% !important;
+                flex: 1 1 100% !important;
+            }
+        }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
     subjects = get_available_subjects()
-    cols = st.columns(2, gap="medium")
+    for row_idx in range(0, len(subjects), 2):
+        row_subjs = subjects[row_idx:row_idx + 2]
+        cols = st.columns(2, gap="medium")
+        for col_idx, subj in enumerate(row_subjs):
+            col = cols[col_idx]
+            s_id = subj["id"]
+            title = subj["title"]
+            icon = subj["icon"]
+            desc = subj["description"]
+            
+            topics_count = len(get_available_topics(s_id))
 
-    for idx, subj in enumerate(subjects):
-        col = cols[idx % 2]
-        s_id = subj["id"]
-        title = subj["title"]
-        icon = subj["icon"]
-        desc = subj["description"]
-        
-        topics_count = len(get_available_topics(s_id))
-
-        with col:
-            card_html = f"""
-            <div class="sidebar-welcome" style="margin-bottom: 15px; border-left: 5px solid #2563EB;">
+            with col:
+                card_html = f"""
+                <div class="sidebar-welcome subject-card-item" style="margin-bottom: 15px; border-left: 5px solid #2563EB;">
                 <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;">
                     <div style="font-size: 2rem;">{icon}</div>
                     <div>

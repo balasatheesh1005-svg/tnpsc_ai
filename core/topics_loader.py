@@ -55,18 +55,13 @@ def validate_topic_registration(topic_meta: dict) -> bool:
 
 def normalize_base_topic_id(subject: str, raw_id_or_filename: str) -> str:
     subj = subject.lower().strip()
+    if subj in ["gt", "gt_"]:
+        subj = "general_tamil"
     s = raw_id_or_filename.lower().strip()
 
     # Strip .json extension if present
     if s.endswith(".json"):
         s = s[:-5]
-
-    # Prefix with subject if missing
-    if not s.startswith(f"{subj}_"):
-        s = f"{subj}_{s}"
-
-    # Strip part suffix pattern (_part_1, _part1, _part_01, etc.)
-    base_id = re.sub(r"_part_?\d+$", "", s, flags=re.IGNORECASE)
 
     # Alias mapping to canonical repository_ids
     aliases = {
@@ -82,14 +77,31 @@ def normalize_base_topic_id(subject: str, raw_id_or_filename: str) -> str:
         "dpsp": "polity_directive_principles",
     }
 
+    if subj == "general_tamil":
+        if s.startswith("gt_") or s.startswith("general_tamil_"):
+            base_id = re.sub(r"_part_?\d+$", "", s, flags=re.IGNORECASE)
+            return aliases.get(base_id, base_id)
+        s = f"gt_{s}"
+    else:
+        # Prefix with subject if missing
+        if not s.startswith(f"{subj}_"):
+            s = f"{subj}_{s}"
+
+    # Strip part suffix pattern (_part_1, _part1, _part_01, etc.)
+    base_id = re.sub(r"_part_?\d+$", "", s, flags=re.IGNORECASE)
+
     return aliases.get(base_id, base_id)
 
 
 def format_title_from_base_id(subject: str, base_id: str) -> str:
     subj = subject.lower().strip()
+    if subj in ["gt", "gt_"]:
+        subj = "general_tamil"
     clean = base_id
     if clean.startswith(f"{subj}_"):
         clean = clean[len(subj) + 1 :]
+    elif subj == "general_tamil" and clean.startswith("gt_"):
+        clean = clean[3:]
 
     known_titles = {
         "historical_background": "Historical Background",
@@ -153,18 +165,26 @@ def format_title_from_base_id(subject: str, base_id: str) -> str:
 
 def get_topic_metadata_list(subject: str) -> List[Dict[str, any]]:
     subj = subject.lower().strip()
+    if subj in ["gt", "gt_"]:
+        subj = "general_tamil"
     file_path = f"data/structure/{subj}_structure.json"
     notes_dir = f"data/notes/{subj}"
 
     grouped_topics: Dict[str, Dict[str, any]] = {}
     topic_order: List[str] = []
+    structure_exists = os.path.exists(file_path)
 
     # 1. Load registry structure entries
-    if os.path.exists(file_path):
+    if structure_exists:
         try:
             with open(file_path, "r", encoding="utf-8") as f:
                 data = json.load(f)
             raw_topics = data.get("topics", [])
+            if not raw_topics and "units" in data:
+                for unit in data.get("units", []):
+                    if isinstance(unit, dict) and "topics" in unit:
+                        raw_topics.extend(unit.get("topics", []))
+
             for item in raw_topics:
                 if not isinstance(item, dict):
                     continue
@@ -203,19 +223,20 @@ def get_topic_metadata_list(subject: str) -> List[Dict[str, any]]:
             if m:
                 part_num = int(m.group(1))
 
-            if base_id not in grouped_topics:
-                topic_order.append(base_id)
-                disp_title = format_title_from_base_id(subj, base_id)
-                grouped_topics[base_id] = {
-                    "topic_id": base_id,
-                    "repository_id": base_id,
-                    "display_title": disp_title,
-                    "part": 1,
-                    "total_parts": part_num,
-                    "subject": subj,
-                }
-            else:
+            if base_id in grouped_topics:
                 grouped_topics[base_id]["total_parts"] = max(grouped_topics[base_id]["total_parts"], part_num)
+            elif not structure_exists:
+                if "audit" not in filename.lower():
+                    topic_order.append(base_id)
+                    disp_title = format_title_from_base_id(subj, base_id)
+                    grouped_topics[base_id] = {
+                        "topic_id": base_id,
+                        "repository_id": base_id,
+                        "display_title": disp_title,
+                        "part": 1,
+                        "total_parts": part_num,
+                        "subject": subj,
+                    }
 
     validated_topics = []
     for base_id in topic_order:

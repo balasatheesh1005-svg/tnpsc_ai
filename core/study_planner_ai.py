@@ -90,8 +90,10 @@ def get_personal_study_plan(
     topic = intelligence.get("topic", "Modern India")
     repo = intelligence.get("repository", "Hard Repository")
     qtype = intelligence.get("question_type", "Assertion & Reason")
-    bottleneck_acc = intelligence.get("current_mastery", 45.0)
-    target_mastery = intelligence.get("mastery_probability", 80.0)
+    raw_mastery = intelligence.get("current_mastery")
+    bottleneck_acc = float(raw_mastery) if raw_mastery is not None else 0.0
+    raw_target = intelligence.get("mastery_probability")
+    target_mastery = float(raw_target) if raw_target is not None else 80.0
 
     # Check Revision Status
     overdue_items = revision_analytics.get("overdue", [])

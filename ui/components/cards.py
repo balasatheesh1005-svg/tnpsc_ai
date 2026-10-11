@@ -698,9 +698,12 @@ def render_card_styles():
             .analytics-grid,
             .achievement-grid,
             .gauge-wrap,
-            .nova-plan-row,
-            .revision-grid {
+            .nova-plan-row {
                 grid-template-columns: 1fr;
+            }
+
+            .revision-grid {
+                grid-template-columns: 1fr !important;
             }
 
             .progress-header,
@@ -1416,7 +1419,8 @@ def recommendation_risk_alert_html(rec_data: dict) -> HtmlFragment:
 
 def readiness_hero_card_html(readiness_data: dict) -> HtmlFragment:
     """Render Hero Card with Circular Readiness Ring and Classification Level."""
-    score = int(readiness_data.get("overall_readiness", 74))
+    raw_score = readiness_data.get("overall_readiness")
+    score = int(raw_score) if raw_score is not None else 0
     level = html.escape(str(readiness_data.get("level", "Exam Ready")))
     reason = html.escape(str(readiness_data.get("readiness_reason", "")))
 
@@ -1545,15 +1549,19 @@ def strengths_improvements_card_html(strengths: list, improvements: list) -> Htm
 
 def mock_hero_card_html(mock_data: dict) -> HtmlFragment:
     """Render Mock Hero Card with Accuracy Ring and Attempt Ratio Bar."""
-    acc = int(mock_data.get("overall_accuracy", 74))
+    raw_acc = mock_data.get("overall_accuracy")
+    has_acc = raw_acc is not None
+    acc = int(raw_acc) if has_acc else 0
+    acc_disp = f"{acc}%" if has_acc else "--"
     level = html.escape(str(mock_data.get("mock_level", "Good")))
     ratio = mock_data.get("correct_vs_wrong", {})
-    c_pct = int(ratio.get("correct", acc))
-    w_pct = int(ratio.get("wrong", 14))
-    s_pct = int(ratio.get("skipped", 12))
-    att_rate = int(mock_data.get("attempt_rate", 88))
+    c_pct = int(ratio.get("correct", acc)) if has_acc else 0
+    w_pct = int(ratio.get("wrong", 0)) if has_acc else 0
+    s_pct = int(ratio.get("skipped", 0)) if has_acc else 100
+    raw_rate = mock_data.get("attempt_rate")
+    att_rate = int(raw_rate) if raw_rate is not None else 0
 
-    ring_color = "#10B981" if acc >= 85 else ("#2563EB" if acc >= 75 else ("#F97316" if acc >= 60 else "#EF4444"))
+    ring_color = "#94A3B8" if not has_acc else ("#10B981" if acc >= 85 else ("#2563EB" if acc >= 75 else ("#F97316" if acc >= 60 else "#EF4444")))
 
     return _fragment(f"""
     <div class="nova-glass-card" style="padding: 24px; margin-bottom: 20px; background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(243, 244, 246, 0.95)); border: 1px solid rgba(107, 114, 128, 0.3);">
@@ -1587,7 +1595,7 @@ def mock_hero_card_html(mock_data: dict) -> HtmlFragment:
 
             <div style="text-align: center; background: rgba(255, 255, 255, 0.9); padding: 18px 24px; border-radius: 20px; border: 2px solid {ring_color}; box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06); min-width: 140px;">
                 <div style="color: {ring_color}; font-size: 3.2rem; font-weight: 950; line-height: 1;">
-                    {acc}%
+                    {acc_disp}
                 </div>
                 <div style="color: #64748B; font-size: 0.75rem; font-weight: 900; text-transform: uppercase; margin-top: 4px;">
                     Mock Accuracy
@@ -1600,9 +1608,10 @@ def mock_hero_card_html(mock_data: dict) -> HtmlFragment:
 
 def mock_time_analysis_card_html(mock_data: dict) -> HtmlFragment:
     """Render Time Management Analysis Card."""
-    avg_time = int(mock_data.get("time_per_question", 58))
+    raw_time = mock_data.get("time_per_question")
+    avg_time_disp = f"Avg {int(raw_time)} sec / Question" if raw_time is not None else "No timing data recorded"
     analysis = html.escape(str(mock_data.get("time_analysis", "")))
-    slowest = html.escape(str(mock_data.get("slowest_section", "Economy")))
+    slowest = html.escape(str(mock_data.get("slowest_section", "N/A")))
 
     return _fragment(f"""
     <div class="nova-glass-card" style="padding: 20px; background: linear-gradient(135deg, rgba(239, 246, 255, 0.95), rgba(255, 251, 235, 0.95)); border: 1px solid rgba(245, 158, 11, 0.3);">
@@ -1611,7 +1620,7 @@ def mock_time_analysis_card_html(mock_data: dict) -> HtmlFragment:
                 ⏱️ Time Management Analysis
             </div>
             <span style="background: rgba(37, 99, 235, 0.1); color: #2563EB; font-size: 0.82rem; font-weight: 850; padding: 4px 12px; border-radius: 999px;">
-                Avg {avg_time} sec / Question
+                {avg_time_disp}
             </span>
         </div>
         <div style="color: #334155; font-size: 0.92rem; font-weight: 750; line-height: 1.4; background: rgba(255, 255, 255, 0.85); padding: 12px 16px; border-radius: 12px; border: 1px solid #E2E8F0;">
@@ -1699,12 +1708,12 @@ def mock_mistakes_strengths_html(mistakes: list, strengths: list) -> HtmlFragmen
 
 def predictive_hero_card_html(pred_data: dict) -> HtmlFragment:
     """Render Master Hero Card for Predictive Performance V2."""
-    readiness_range = html.escape(str(pred_data.get("estimated_readiness", "75–79%")))
-    mock_range = html.escape(str(pred_data.get("estimated_mock_accuracy", "76–80%")))
-    curr_readiness = int(pred_data.get("current_readiness", 72))
-    curr_mock = int(pred_data.get("current_mock_accuracy", 74))
-    confidence = int(pred_data.get("prediction_confidence", 92))
-    trend = html.escape(str(pred_data.get("readiness_trend", "Improving")))
+    readiness_range = html.escape(str(pred_data.get("estimated_readiness", "Unavailable")))
+    mock_range = html.escape(str(pred_data.get("estimated_mock_accuracy", "Unavailable")))
+    curr_readiness = int(pred_data.get("current_readiness") or 0)
+    curr_mock = int(pred_data.get("current_mock_accuracy") or 0)
+    confidence = int(pred_data.get("prediction_confidence") or 0)
+    trend = html.escape(str(pred_data.get("readiness_trend", "Stable")))
 
     conf_bg = "#10B981" if confidence >= 85 else ("#2563EB" if confidence >= 70 else "#F97316")
 
@@ -1814,7 +1823,7 @@ def predictive_comparison_cards_html(pred_data: dict) -> HtmlFragment:
 
 def predictive_confidence_card_html(pred_data: dict) -> HtmlFragment:
     """Render Prediction Confidence Meter & Rationale Card."""
-    confidence = int(pred_data.get("prediction_confidence", 92))
+    confidence = int(pred_data.get("prediction_confidence") or 0)
     reason = html.escape(str(pred_data.get("confidence_reason", "Sufficient learning data.")))
 
     c_color = "#10B981" if confidence >= 85 else ("#2563EB" if confidence >= 70 else "#F97316")
@@ -2086,7 +2095,8 @@ def adaptive_revision_mentor_card_html(plan: dict) -> HtmlFragment:
 def exam_strategy_hero_card_html(strat: dict) -> HtmlFragment:
     """Render Master Hero Card for Exam Strategy Engine V2."""
     overall = html.escape(str(strat.get("overall_strategy", "Strength-First Execution Strategy")))
-    confidence = int(strat.get("strategy_confidence", 91))
+    raw_conf = strat.get("strategy_confidence")
+    confidence = int(raw_conf) if raw_conf is not None else 70
     reason = html.escape(str(strat.get("confidence_reason", "Consistent mock history & stable readiness.")))
 
     conf_color = "#10B981" if confidence >= 85 else ("#2563EB" if confidence >= 70 else "#F97316")
@@ -2305,11 +2315,19 @@ def exam_strategy_mentor_card_html(strat: dict) -> HtmlFragment:
 def coach_hero_card_html(user_name: str, readiness_data: dict, recommendation_data: dict, streak: int) -> HtmlFragment:
     """Render Flagship Hero Card for AI Exam Coach Dashboard V2."""
     name = html.escape(str(user_name or "Aspirant"))
-    score = int(readiness_data.get("overall_readiness_score", 70))
-    level = html.escape(str(readiness_data.get("readiness_level", "Developing Readiness")))
-    focus = html.escape(str(recommendation_data.get("recommendation", "Modern India Revision")))
+    raw_score = readiness_data.get("overall_readiness_score")
+    score_val = int(raw_score) if raw_score is not None else 0
+    is_eligible = bool(readiness_data.get("is_eligible", False) and score_val > 0)
+    focus = html.escape(str(recommendation_data.get("recommendation", "Start Diagnostic Practice")))
 
-    msg = f"Good day, {name}! You are currently at the {level} stage. Today's primary focus: {focus}."
+    if not is_eligible:
+        score_display = "--"
+        level = "Diagnostic Stage"
+        msg = f"Welcome, {name}! Complete your first practice test to unlock personalized readiness, weakness tracking, and predictions."
+    else:
+        score_display = f"{score_val}%"
+        level = html.escape(str(readiness_data.get("readiness_level", "Developing Readiness")))
+        msg = f"Good day, {name}! You are currently at the {level} stage. Today's primary focus: {focus}."
 
     return _fragment(f"""
     <div class="nova-glass-card" style="padding: 26px; margin-bottom: 22px; background: linear-gradient(135deg, #0F172A, #1E3A8A, #2563EB); border: 1px solid rgba(147, 197, 253, 0.35); color: white; box-shadow: 0 16px 36px rgba(37, 99, 235, 0.25);">
@@ -2337,7 +2355,7 @@ def coach_hero_card_html(user_name: str, readiness_data: dict, recommendation_da
                         Overall Readiness
                     </div>
                     <div style="color: white; font-size: 2.2rem; font-weight: 950; line-height: 1;">
-                        {score}%
+                        {score_display}
                     </div>
                     <div style="color: #34D399; font-size: 0.82rem; font-weight: 900; margin-top: 6px;">
                         {level}
@@ -2361,7 +2379,7 @@ def coach_hero_card_html(user_name: str, readiness_data: dict, recommendation_da
 def coach_next_best_action_card_html(rec_data: dict) -> HtmlFragment:
     """Render ONE Single Primary Next Best Action Card."""
     action = html.escape(str(rec_data.get("recommendation", "Complete Economy Revision")))
-    reason = html.escape(str(rec_data.get("reason", "Highest impact on readiness trajectory.")))
+    reason = html.escape(str(rec_data.get("explanation") or rec_data.get("reason", "Highest impact on readiness trajectory.")))
     priority = html.escape(str(rec_data.get("priority", "HIGH")))
 
     return _fragment(f"""
@@ -2387,15 +2405,24 @@ def coach_next_best_action_card_html(rec_data: dict) -> HtmlFragment:
 
 def coach_mentor_summary_card_html(readiness_data: dict, rec_data: dict, revision_data: dict) -> HtmlFragment:
     """Render Unified AI Mentor Summary Card."""
-    readiness_level = html.escape(str(readiness_data.get("readiness_level", "Developing Readiness")))
-    focus = html.escape(str(rec_data.get("recommendation", "Geography Revision")))
-    phase = html.escape(str(revision_data.get("revision_phase", "30-Day Plan")))
+    raw_score = readiness_data.get("overall_readiness_score")
+    score_val = int(raw_score) if raw_score is not None else 0
+    is_eligible = bool(readiness_data.get("is_eligible", False) and score_val > 0)
+    if not is_eligible:
+        summary_text = (
+            "Welcome to AI Exam Coach! Complete your first practice test to unlock "
+            "personalized readiness analysis, weakness tracking, and adaptive revision cycles."
+        )
+    else:
+        readiness_level = html.escape(str(readiness_data.get("readiness_level", "Developing Readiness")))
+        focus = html.escape(str(rec_data.get("recommendation", "Geography Revision")))
+        phase = html.escape(str(revision_data.get("revision_phase", "30-Day Plan")))
 
-    summary_text = (
-        f"You are steadily improving in the {readiness_level} phase. "
-        f"Focus on {focus} today as part of your {phase}. "
-        "Complete your daily practice set before advancing to the next revision cycle."
-    )
+        summary_text = (
+            f"You are steadily improving in the {readiness_level} phase. "
+            f"Focus on {focus} today as part of your {phase}. "
+            "Complete your daily practice set before advancing to the next revision cycle."
+        )
 
     return _fragment(f"""
     <div class="nova-glass-card" style="padding: 22px; margin-bottom: 22px; background: linear-gradient(135deg, rgba(254, 243, 199, 0.95), rgba(253, 230, 138, 0.95)); border: 1px solid rgba(245, 158, 11, 0.4);">

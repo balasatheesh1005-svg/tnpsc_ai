@@ -72,17 +72,59 @@ def get_learning_intelligence(
     ctx = context or UserContext.get_or_create(user)
 
     # 1. Fetch Engine Data using shared context
-    progress_rows = get_progress(user, context=ctx)
-    weakness_data = get_weakness(user, context=ctx)
+    progress_rows = get_progress(user, context=ctx) or []
+    weakness_data = get_weakness(user, context=ctx) or {}
     revision_plan = get_intelligent_revision_plan(user, context=ctx)
     revision_analytics = get_revision_analytics_v2(user, context=ctx)
     streak = get_streak(user, context=ctx)
     xp_data = get_user_xp(user, context=ctx)
     memory = get_memory(user, context=ctx)
 
-    # 2. Analyze Subject & Topic Performance Breakdowns
+    # Check for meaningful test history
+    has_history = len(progress_rows) > 0 or bool(weakness_data)
+
+    if not has_history:
+        result = {
+            "subject": "Not enough data yet",
+            "topic": "Not enough data yet",
+            "repository": "N/A",
+            "question_type": "N/A",
+            "difficulty": "N/A",
+            "learning_strength": "Not enough data yet",
+            "learning_weakness": "Not enough data yet",
+            "weak_topic": None,
+            "strong_subject": None,
+            "mastered_count": 0,
+            "pending_count": 0,
+            "root_cause": "No Test History",
+            "root_explanation": "Complete practice tests to unlock diagnostic learning root causes.",
+            "learning_bottleneck": "No test history yet",
+            "recovery_plan": [],
+            "estimated_recovery": "N/A",
+            "current_mastery": 0.0,
+            "mastery_probability": 0.0,
+            "learning_dna": {k: 1 for k in ["knowledge", "memory", "application", "analysis", "speed", "accuracy", "consistency", "revision"]},
+            "recommendation": "Begin with Indian Polity: Fundamental Rights to establish your initial learning baseline.",
+            "mentor_insight": "Welcome! Complete your first practice test to unlock personalized learning intelligence.",
+            "is_eligible": False,
+        }
+        if hasattr(st, "session_state"):
+            st.session_state[cache_key] = result
+        return result
+
+    # 2. Analyze Subject & Topic Performance Breakdowns from REAL data
     all_accuracies = [float(r.get("accuracy", 0)) for r in progress_rows if r.get("accuracy") is not None]
     overall_acc = sum(all_accuracies) / len(all_accuracies) if all_accuracies else 0.0
+
+    # Dynamic Mastered & Pending Topics calculation
+    mastered_topics = set(
+        str(r.get("topic", "")).strip()
+        for r in progress_rows
+        if float(r.get("accuracy", 0)) >= 80.0
+    )
+    all_topics = set(str(r.get("topic", "")).strip() for r in progress_rows if r.get("topic"))
+    mastered_count = len(mastered_topics)
+    pending_count = len(all_topics - mastered_topics)
 
     # Categorize accuracies by sub-repository pattern
     foundation_accs = [float(r.get("accuracy", 0)) for r in progress_rows if "easy" in str(r.get("topic", "")).lower() or "notes" in str(r.get("topic", "")).lower()]
@@ -93,23 +135,43 @@ def get_learning_intelligence(
     chronology_accs = [float(r.get("accuracy", 0)) for r in progress_rows if "chronology" in str(r.get("topic", "")).lower()]
     pyq_accs = [float(r.get("accuracy", 0)) for r in progress_rows if "pyq" in str(r.get("topic", "")).lower()]
 
-    avg_foundation = sum(foundation_accs) / len(foundation_accs) if foundation_accs else (overall_acc if overall_acc else 75.0)
-    avg_hard = sum(hard_accs) / len(hard_accs) if hard_accs else (overall_acc * 0.75 if overall_acc else 45.0)
-    avg_assertion = sum(assertion_accs) / len(assertion_accs) if assertion_accs else (avg_hard * 0.85 if avg_hard else 38.0)
-    avg_statement = sum(statement_accs) / len(statement_accs) if statement_accs else (avg_hard * 0.9 if avg_hard else 48.0)
-    avg_chronology = sum(chronology_accs) / len(chronology_accs) if chronology_accs else 50.0
+    avg_foundation = sum(foundation_accs) / len(foundation_accs) if foundation_accs else overall_acc
+    avg_hard = sum(hard_accs) / len(hard_accs) if hard_accs else overall_acc
+    avg_assertion = sum(assertion_accs) / len(assertion_accs) if assertion_accs else overall_acc
+    avg_statement = sum(statement_accs) / len(statement_accs) if statement_accs else overall_acc
+    avg_chronology = sum(chronology_accs) / len(chronology_accs) if chronology_accs else overall_acc
+
+    # Strong Subject derived from real progress
+    subj_accs = {}
+    for r in progress_rows:
+        s = str(r.get("subject", "")).strip().title()
+        if s and r.get("accuracy") is not None:
+            subj_accs.setdefault(s, []).append(float(r["accuracy"]))
+    strong_subject = max(subj_accs.keys(), key=lambda k: sum(subj_accs[k]) / len(subj_accs[k])) if subj_accs else None
+
+    # Weak Topic from real weakness data
+    weak_topic = None
+    if weakness_data:
+        top_weak = sorted(weakness_data.items(), key=lambda x: x[1], reverse=True)[0][0]
+        if "-" in top_weak:
+            weak_topic = top_weak.split("-", 1)[1]
+        else:
+            weak_topic = top_weak
 
     # 3. Determine Root Cause
-    if avg_assertion < 55:
+    if len(progress_rows) < 5 and not weakness_data:
+        root_cause = "Early Learning Stage"
+        root_explanation = "Complete more practice sets across topics to unlock detailed root-cause diagnosis."
+    elif avg_assertion < 55 and assertion_accs:
         root_cause = "Concept Application"
         root_explanation = "Foundational knowledge is intact, but higher-order logical linking in Assertion & Reason requires practice."
-    elif avg_chronology < 55:
+    elif avg_chronology < 55 and chronology_accs:
         root_cause = "Chronological Recall"
         root_explanation = "Historical event sequences and timeline dates require spaced chronological ordering revision."
-    elif avg_statement < 55:
+    elif avg_statement < 55 and statement_accs:
         root_cause = "Multi-Statement Analysis"
-        root_explanation = "Evaluating multiple statement combinations (1, 2 only vs All correct) requires process-of-elimination techniques."
-    elif avg_hard < 55:
+        root_explanation = "Evaluating multiple statement combinations requires process-of-elimination techniques."
+    elif avg_hard < 55 and hard_accs:
         root_cause = "Application Skills"
         root_explanation = "Difficulty spikes in Hard repository questions reveal a need for deeper concept integration."
     elif overall_acc < 50:
@@ -120,31 +182,41 @@ def get_learning_intelligence(
         root_explanation = "Accuracy drops slightly under test conditions. Practice consistent timed sets to solidify recall."
 
     # 4. Determine Learning Bottleneck
-    subj = revision_plan.get("level1_subject", "History")
-    topic = revision_plan.get("level2_topic", "Modern India")
-    repo = revision_plan.get("level3_repository", "Hard Repository")
-    qtype = revision_plan.get("level4_question_type", "Assertion & Reason")
-    bottleneck_acc = revision_plan.get("accuracy", 38.0)
+    subj = strong_subject or revision_plan.get("level1_subject", "General")
+    topic = weak_topic or revision_plan.get("level2_topic", "General")
+    repo = revision_plan.get("level3_repository", "Foundation Repository")
+    qtype = revision_plan.get("level4_question_type", "Concept Questions")
+    bottleneck_acc = round(overall_acc, 1)
 
-    learning_bottleneck = f"{subj} ↓ {topic} ↓ {repo} ↓ {qtype}"
+    learning_bottleneck = f"{subj} ↓ {topic}" if weak_topic else "No critical bottleneck detected"
 
     # 5. Determine Learning Strength & Weakness
-    if avg_foundation >= 75:
+    if strong_subject:
+        learning_strength = f"Strong in {strong_subject}"
+    elif avg_foundation >= 75:
         learning_strength = "Foundational Knowledge & Key Terms"
     elif streak >= 5:
         learning_strength = "Daily Consistency & Study Habit"
     else:
-        learning_strength = "Topic Familiarity"
+        learning_strength = "Consistent Practice Habit"
 
-    learning_weakness = f"{qtype} ({bottleneck_acc}% Accuracy)"
+    if weak_topic:
+        learning_weakness = f"Needs Practice in {weak_topic.replace('_', ' ').title()}"
+    elif len(progress_rows) < 5:
+        learning_weakness = "Not enough data yet"
+    else:
+        learning_weakness = "No critical weakness recorded"
 
     # 6. Generate Rule-Based 4-Step Recovery Plan
-    recovery_plan = [
-        f"Step 1: Revise {qtype} notes & key concepts",
-        f"Step 2: Practice targeted {repo} practice set",
-        f"Step 3: Attempt {subj} PYQ Repository questions",
-        f"Step 4: Take full Grand Test to verify topic mastery",
-    ]
+    if weak_topic:
+        recovery_plan = [
+            f"Step 1: Revise {weak_topic.replace('_', ' ').title()} notes & key concepts",
+            f"Step 2: Practice targeted {weak_topic.replace('_', ' ').title()} practice set",
+            f"Step 3: Attempt PYQ Repository questions",
+            f"Step 4: Take full Grand Test to verify topic mastery",
+        ]
+    else:
+        recovery_plan = []
 
     # 7. Calculate Estimated Recovery Sessions & Time
     if bottleneck_acc < 45:
@@ -176,22 +248,13 @@ def get_learning_intelligence(
         "revision": _calculate_star_rating(rev_pct, 20, 100),
     }
 
-    # 10. Generate Current Recommendation & Mentor Insight (Rule-Based Templates, NO LLM)
-    recommendation = (
-        f"Focus {rec_sessions_count} focused sessions on {qtype} in {topic} "
-        f"to elevate Topic Mastery from {current_mastery}% to {projected_mastery}%."
-    )
-
-    if learning_dna["application"] <= 2:
-        mentor_insight = "Your conceptual knowledge is strong. Focus on concept application to push your score higher."
-    elif "Assertion" in qtype:
-        mentor_insight = "Your biggest improvement opportunity is Assertion & Reason. Master this pattern to secure top rank."
-    elif projected_mastery >= 85:
-        mentor_insight = f"One more revision cycle will likely push {topic} above 90% topic mastery."
-    elif overall_acc >= 80:
-        mentor_insight = "Grand Test revision is now highly recommended."
+    # 10. Generate Recommendation & Mentor Insight
+    if weak_topic:
+        recommendation = f"Focus practice on {weak_topic.replace('_', ' ').title()} to improve mastery."
+        mentor_insight = f"Targeted practice in {weak_topic.replace('_', ' ').title()} will significantly boost your exam readiness."
     else:
-        mentor_insight = "Executing your recovery plan consistently will build solid topic mastery."
+        recommendation = "Continue daily practice to build your subject mastery profile."
+        mentor_insight = "Keep up consistent practice across topics to refine your readiness metrics."
 
     # 11. Final Engine Output JSON Schema
     result = {
@@ -199,9 +262,13 @@ def get_learning_intelligence(
         "topic": topic,
         "repository": repo,
         "question_type": qtype,
-        "difficulty": revision_plan.get("level5_difficulty", "Hard"),
+        "difficulty": revision_plan.get("level5_difficulty", "Medium"),
         "learning_strength": learning_strength,
         "learning_weakness": learning_weakness,
+        "weak_topic": weak_topic,
+        "strong_subject": strong_subject,
+        "mastered_count": mastered_count,
+        "pending_count": pending_count,
         "root_cause": root_cause,
         "root_explanation": root_explanation,
         "learning_bottleneck": learning_bottleneck,
@@ -212,6 +279,7 @@ def get_learning_intelligence(
         "learning_dna": learning_dna,
         "recommendation": recommendation,
         "mentor_insight": mentor_insight,
+        "is_eligible": len(progress_rows) >= 5,
     }
 
     if hasattr(st, "session_state"):

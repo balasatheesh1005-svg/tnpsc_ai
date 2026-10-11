@@ -176,13 +176,52 @@ def render_topic_hub(user: str):
     # 3. LEARNING MODULES GRID
     st.markdown("### 🚀 Learning Modules")
 
+    st.markdown(
+        """
+        <style>
+        @media (max-width: 640px) {
+            div[data-testid="stHorizontalBlock"]:has(.hub-learning-card) {
+                flex-direction: column !important;
+                gap: 12px !important;
+            }
+            div[data-testid="stHorizontalBlock"]:has(.hub-learning-card) > div[data-testid="column"] {
+                width: 100% !important;
+                min-width: 100% !important;
+                flex: 1 1 100% !important;
+            }
+
+            div[data-testid="stHorizontalBlock"]:has(.hub-practice-card) {
+                flex-direction: column !important;
+                gap: 8px !important;
+            }
+            div[data-testid="stHorizontalBlock"]:has(.hub-practice-card) > div[data-testid="column"] {
+                width: 100% !important;
+                min-width: 100% !important;
+                flex: 1 1 100% !important;
+            }
+
+            div[data-testid="stHorizontalBlock"]:has(.hub-toolkit-marker) {
+                flex-direction: column !important;
+                gap: 8px !important;
+            }
+            div[data-testid="stHorizontalBlock"]:has(.hub-toolkit-marker) > div[data-testid="column"] {
+                width: 100% !important;
+                min-width: 100% !important;
+                flex: 1 1 100% !important;
+            }
+        }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
     m_col1, m_col2, m_col3 = st.columns(3, gap="medium")
 
     # CARD 1: READ NOTES
     with m_col1:
         st.markdown(
             f"""
-            <div class="sidebar-welcome" style="border-top: 4px solid #2563EB;">
+            <div class="sidebar-welcome hub-learning-card" style="border-top: 4px solid #2563EB;">
                 <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
                     <h3 style="margin:0; color:#0F172A; font-size:1.1rem;">📖 Study Notes</h3>
                     {'<span class="progress-pill" style="background:#DCFCE7; color:#15803D;">Ready</span>' if avail.get('notes') else '<span class="progress-pill">Coming Soon</span>'}
@@ -201,7 +240,7 @@ def render_topic_hub(user: str):
     with m_col2:
         st.markdown(
             f"""
-            <div class="sidebar-welcome" style="border-top: 4px solid #D97706;">
+            <div class="sidebar-welcome hub-learning-card" style="border-top: 4px solid #D97706;">
                 <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
                     <h3 style="margin:0; color:#0F172A; font-size:1.1rem;">🏆 Grand Test</h3>
                     {'<span class="progress-pill" style="background:#FEF3C7; color:#D97706;">100 Qs Elite</span>' if avail.get('grand_test') else '<span class="progress-pill">Coming Soon</span>'}
@@ -238,7 +277,7 @@ def render_topic_hub(user: str):
     with m_col3:
         st.markdown(
             """
-            <div class="sidebar-welcome" style="border-top: 4px solid #9333EA;">
+            <div class="sidebar-welcome hub-learning-card" style="border-top: 4px solid #9333EA;">
                 <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
                     <h3 style="margin:0; color:#0F172A; font-size:1.1rem;">🤖 AI Teacher</h3>
                     <span class="progress-pill" style="background:#F3E8FF; color:#7E22CE;">Active</span>
@@ -257,8 +296,6 @@ def render_topic_hub(user: str):
     st.markdown("### 📝 Practice Questions")
     st.markdown("<p style='color: #64748B; font-size: 0.85rem; margin-top: -8px; margin-bottom: 14px;'>Choose a practice mode for this topic.</p>", unsafe_allow_html=True)
     
-    p_cols = st.columns(3, gap="small")
-    
     practice_types = [
         ("Easy", "easy", "🟢", "Basic memory & direct factual questions"),
         ("Medium", "medium", "🟡", "Conceptual understanding & application"),
@@ -271,71 +308,75 @@ def render_topic_hub(user: str):
         ("Grand Test", "grand_test", "🏆", "100-question comprehensive topic grand test simulator"),
     ]
 
-    for idx, (p_title, p_key, p_icon, p_desc) in enumerate(practice_types):
-        p_col = p_cols[idx % 3]
-        is_avail = avail.get(p_key, False)
-        
-        if p_key == "easy":
-            status_html = '<span style="font-size:0.7rem; color:#15803D; font-weight:700;">● Ready</span>' if is_avail else '<span style="font-size:0.7rem; color:#DC2626; font-weight:700;">Mode Not Available</span>'
-            btn_label = "📝 Start Practice"
-            btn_disabled = False
-        elif p_key == "grand_test":
-            status_html = '<span style="font-size:0.7rem; color:#D97706; font-weight:700;">● Ready (100 Qs)</span>' if is_avail else '<span style="font-size:0.7rem; color:#94A3B8;">Coming Soon</span>'
-            btn_label = "🏆 Start Grand Test"
-            btn_disabled = not is_avail
-        else:
-            status_html = '<span style="font-size:0.7rem; color:#15803D; font-weight:700;">● Ready</span>' if is_avail else '<span style="font-size:0.7rem; color:#94A3B8;">Coming Soon</span>'
-            btn_label = f"Continue → {p_title}"
-            btn_disabled = not is_avail
+    for row_idx in range(0, len(practice_types), 3):
+        row_types = practice_types[row_idx:row_idx + 3]
+        p_cols = st.columns(3, gap="small")
+        for col_idx, (p_title, p_key, p_icon, p_desc) in enumerate(row_types):
+            idx = row_idx + col_idx
+            p_col = p_cols[col_idx]
+            is_avail = avail.get(p_key, False)
+            
+            if p_key == "easy":
+                status_html = '<span style="font-size:0.7rem; color:#15803D; font-weight:700;">● Ready</span>' if is_avail else '<span style="font-size:0.7rem; color:#DC2626; font-weight:700;">Mode Not Available</span>'
+                btn_label = "📝 Start Practice"
+                btn_disabled = False
+            elif p_key == "grand_test":
+                status_html = '<span style="font-size:0.7rem; color:#D97706; font-weight:700;">● Ready (100 Qs)</span>' if is_avail else '<span style="font-size:0.7rem; color:#94A3B8;">Coming Soon</span>'
+                btn_label = "🏆 Start Grand Test"
+                btn_disabled = not is_avail
+            else:
+                status_html = '<span style="font-size:0.7rem; color:#15803D; font-weight:700;">● Ready</span>' if is_avail else '<span style="font-size:0.7rem; color:#94A3B8;">Coming Soon</span>'
+                btn_label = f"Continue → {p_title}"
+                btn_disabled = not is_avail
 
-        with p_col:
-            st.markdown(
-                f"""
-                <div class="sidebar-welcome" style="padding: 10px; margin-bottom: 8px;">
-                    <div style="display:flex; justify-content:space-between; align-items:center;">
-                        <span style="font-weight:800; color:#0F172A; font-size:0.9rem;">{p_icon} {p_title}</span>
-                        {status_html}
+            with p_col:
+                st.markdown(
+                    f"""
+                    <div class="sidebar-welcome hub-practice-card" style="padding: 10px; margin-bottom: 8px;">
+                        <div style="display:flex; justify-content:space-between; align-items:center;">
+                            <span style="font-weight:800; color:#0F172A; font-size:0.9rem;">{p_icon} {p_title}</span>
+                            {status_html}
+                        </div>
+                        <p style="font-size:0.75rem; color:#64748B; margin: 4px 0 8px 0; min-height: 28px; line-height:1.2;">{p_desc}</p>
                     </div>
-                    <p style="font-size:0.75rem; color:#64748B; margin: 4px 0 8px 0; min-height: 28px; line-height:1.2;">{p_desc}</p>
-                </div>
-                """,
-                unsafe_allow_html=True,
-            )
-            if st.button(btn_label, key=f"hub_start_prac_{p_key}", disabled=btn_disabled, use_container_width=True):
-                if p_key == "easy":
-                    if is_avail:
-                        st.session_state["active_practice_setup"] = "easy"
-                        st.rerun()
-                    else:
-                        st.warning("Repository Not Available")
-                elif p_key == "grand_test":
-                    with st.spinner("⏳ Loading Grand Test Repository..."):
-                        questions = load_questions(repository_id, "grand_test")
-                        if questions:
-                            st.session_state.update({
-                                "test_subject": subject,
-                                "test_topic_id": topic_id,
-                                "test_repository_id": repository_id,
-                                "test_topic": repository_id,
-                                "test_qs": questions,
-                                "q_index": 0,
-                                "score": 0,
-                                "answered": False,
-                                "test_active": True,
-                                "test_mode": "grand_test",
-                                "start_time": time.time(),
-                                "test_start_xp": st.session_state.get("xp", 0),
-                            })
-                            st.session_state["main_menu"] = "🔥 Daily Challenge"
+                    """,
+                    unsafe_allow_html=True,
+                )
+                if st.button(btn_label, key=f"hub_start_prac_{p_key}", disabled=btn_disabled, use_container_width=True):
+                    if p_key == "easy":
+                        if is_avail:
+                            st.session_state["active_practice_setup"] = "easy"
                             st.rerun()
                         else:
-                            st.warning("Grand Test repository could not be loaded.")
-                else:
-                    started = start_practice_session(subject, topic_id, repository_id, display_title, p_key)
-                    if started:
-                        st.rerun()
+                            st.warning("Repository Not Available")
+                    elif p_key == "grand_test":
+                        with st.spinner("⏳ Loading Grand Test Repository..."):
+                            questions = load_questions(repository_id, "grand_test")
+                            if questions:
+                                st.session_state.update({
+                                    "test_subject": subject,
+                                    "test_topic_id": topic_id,
+                                    "test_repository_id": repository_id,
+                                    "test_topic": repository_id,
+                                    "test_qs": questions,
+                                    "q_index": 0,
+                                    "score": 0,
+                                    "answered": False,
+                                    "test_active": True,
+                                    "test_mode": "grand_test",
+                                    "start_time": time.time(),
+                                    "test_start_xp": st.session_state.get("xp", 0),
+                                })
+                                st.session_state["main_menu"] = "🔥 Daily Challenge"
+                                st.rerun()
+                            else:
+                                st.warning("Grand Test repository could not be loaded.")
                     else:
-                        st.warning(f"No questions loaded for {p_title}.")
+                        started = start_practice_session(subject, topic_id, repository_id, display_title, p_key)
+                        if started:
+                            st.rerun()
+                        else:
+                            st.warning(f"No questions loaded for {p_title}.")
 
     # 5. ADDITIONAL HUB TOOLKIT & FUTURE PLACEHOLDERS
     st.markdown("### 🛠️ Topic Toolkit & Future Upgrades")
@@ -343,6 +384,7 @@ def render_topic_hub(user: str):
     t_col1, t_col2, t_col3, t_col4 = st.columns(4, gap="small")
     
     with t_col1:
+        st.markdown('<span class="hub-toolkit-marker" style="display:none;"></span>', unsafe_allow_html=True)
         if st.button("🧠 Smart Revision", key="hub_tool_rev", use_container_width=True):
             st.session_state["main_menu"] = "🧠 Smart Revision"
             st.rerun()

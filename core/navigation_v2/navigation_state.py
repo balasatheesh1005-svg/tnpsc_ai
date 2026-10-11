@@ -1,5 +1,6 @@
 import os
 import re
+import json
 from pathlib import Path
 from typing import Dict, List, Optional
 import streamlit as st
@@ -205,16 +206,21 @@ def discover_note_parts(subject: str, topic_id_or_base: str) -> Dict[int, str]:
     parts_found = {}
 
     for c_base in candidate_bases:
-        # 1. Direct check for single-file note: c_base.json
+        # 1. Direct check for single-file note: c_base.json or <subj>_<c_base>.json
         single_file = notes_dir / f"{c_base}.json"
         if single_file.exists():
             parts_found[1] = str(single_file).replace("\\", "/")
+        else:
+            single_file_prefixed = notes_dir / f"{subj}_{c_base}.json"
+            if single_file_prefixed.exists():
+                parts_found[1] = str(single_file_prefixed).replace("\\", "/")
 
         # 2. Pattern scan for multi-part files
         for p_file in sorted(notes_dir.glob("*.json")):
             fname_no_ext = p_file.stem.lower()
+            fname_clean = fname_no_ext[len(subj) + 1 :] if fname_no_ext.startswith(f"{subj}_") else fname_no_ext
 
-            if fname_no_ext == c_base or fname_no_ext.startswith(f"{c_base}_part"):
+            if fname_no_ext == c_base or fname_no_ext.startswith(f"{c_base}_part") or fname_clean == c_base or fname_clean.startswith(f"{c_base}_part"):
                 part_num = None
                 match = re.search(r"_part_?(\d+)$", fname_no_ext)
                 if match:
@@ -229,7 +235,7 @@ def discover_note_parts(subject: str, topic_id_or_base: str) -> Dict[int, str]:
                     except Exception:
                         pass
 
-                if part_num is None and fname_no_ext == c_base:
+                if part_num is None and (fname_no_ext == c_base or fname_clean == c_base):
                     part_num = 1
 
                 if part_num is not None:
@@ -264,6 +270,8 @@ def check_repository_availability(subject: str, topic_id_or_title: str) -> Dict[
 
     try:
         subj = subject.lower().strip()
+        if subj in ["gt", "gt_"]:
+            subj = "general_tamil"
         meta = get_topic_metadata_by_id(subj, topic_id_or_title)
         if not meta or not isinstance(meta, dict):
             return default_res
@@ -327,20 +335,67 @@ def check_repository_availability(subject: str, topic_id_or_title: str) -> Dict[
                         return True
             return False
 
+        # Gold Bank fallback inspection
+        has_easy_gold = False
+        has_medium_gold = False
+        has_hard_gold = False
+        has_stmt_gold = False
+        has_ar_gold = False
+        has_match_gold = False
+        has_grand_gold = False
+        has_pyq_gold = False
+
+        gold_file = None
+        gold_candidates = []
+        for rb in repo_basenames + [topic_id_or_title, repository_id, note_basename]:
+            if rb:
+                gold_candidates.append(f"{base_q}/{rb}_gold.json")
+                if rb.startswith(f"{subj}_"):
+                    gold_candidates.append(f"{base_q}/{rb[len(subj)+1:]}_gold.json")
+                gold_candidates.append(f"{base_q}/{subj}_{rb}_gold.json")
+        for g_path in gold_candidates:
+            if os.path.exists(g_path):
+                gold_file = g_path
+                break
+
+        if gold_file:
+            try:
+                with open(gold_file, "r", encoding="utf-8") as gf:
+                    gdata = json.load(gf)
+                gqs = gdata.get("questions", []) if isinstance(gdata, dict) else gdata
+                if gqs:
+                    has_easy_gold = any(str(q.get("difficulty", "")).lower().strip() == "easy" for q in gqs)
+                    has_medium_gold = any(str(q.get("difficulty", "")).lower().strip() == "medium" for q in gqs)
+                    has_hard_gold = any(str(q.get("difficulty", "")).lower().strip() == "hard" for q in gqs)
+                    
+                    stmt_types = {"statement evaluation", "statement_evaluation", "statement", "statement based"}
+                    has_stmt_gold = any(str(q.get("question_type", "")).lower().strip() in stmt_types for q in gqs)
+                    
+                    ar_types = {"assertion reason", "assertion_reason", "assertion & reason", "assertion", "reasoning"}
+                    has_ar_gold = any(str(q.get("question_type", "")).lower().strip() in ar_types for q in gqs)
+                    
+                    match_types = {"match", "match_the_following", "match the following"}
+                    has_match_gold = any(str(q.get("question_type", "")).lower().strip() in match_types for q in gqs)
+                    
+                    has_grand_gold = len(gqs) > 0
+                    has_pyq_gold = any(q.get("question_origin") == "OFFICIAL_TNPSC_PYQ" for q in gqs)
+            except Exception:
+                pass
+
         return {
             "notes": notes_exist,
             "parts_found": len(parts_map),
             "parts_map": parts_map,
             "total_parts": total_parts,
-            "easy": _any_exists(["easy"]),
-            "medium": _any_exists(["medium"]),
-            "hard": _any_exists(["hard"]),
-            "statement_based": _any_exists(["statement_based", "statement"]),
-            "assertion_reason": _any_exists(["assertion_reason", "reasoning", "assertion"]),
-            "match_the_following": _any_exists(["match_the_following", "match"]),
+            "easy": _any_exists(["easy"]) or has_easy_gold,
+            "medium": _any_exists(["medium"]) or has_medium_gold,
+            "hard": _any_exists(["hard"]) or has_hard_gold,
+            "statement_based": _any_exists(["statement_based", "statement"]) or has_stmt_gold,
+            "assertion_reason": _any_exists(["assertion_reason", "reasoning", "assertion"]) or has_ar_gold,
+            "match_the_following": _any_exists(["match_the_following", "match"]) or has_match_gold,
             "chronology": _any_exists(["chronology"]),
-            "grand_test": _any_exists(["grand_test", "grand"]),
-            "pyq": _any_exists(["pyq", "pyq_practice"]),
+            "grand_test": _any_exists(["grand_test", "grand"]) or has_grand_gold,
+            "pyq": _any_exists(["pyq", "pyq_practice"]) or has_pyq_gold,
         }
 
     except Exception:

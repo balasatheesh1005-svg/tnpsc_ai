@@ -10,6 +10,7 @@ from core.supabase_client import supabase
 
 
 USERNAME_PATTERN = re.compile(r"^[a-zA-Z0-9_]{3,30}$")
+MOBILE_PATTERN = re.compile(r"^[6-9]\d{9}$")
 
 
 def normalize_email(email):
@@ -18,6 +19,12 @@ def normalize_email(email):
 
 def normalize_username(username):
     return (username or "").strip().lower()
+
+
+def normalize_mobile(mobile):
+    if not mobile:
+        return ""
+    return str(mobile).replace(" ", "").replace("-", "").strip()
 
 
 def _first_row(response):
@@ -61,10 +68,11 @@ def _looks_like_network_error(error):
     return any(marker in lower for marker in markers)
 
 
-def validate_signup(full_name, username, email, password, confirm_password):
+def validate_signup(full_name, username, email, mobile_number, password, confirm_password):
     full_name = (full_name or "").strip()
     username = normalize_username(username)
     email = normalize_email(email)
+    mobile = normalize_mobile(mobile_number)
 
     if not full_name:
         return False, "Full name is required."
@@ -72,6 +80,8 @@ def validate_signup(full_name, username, email, password, confirm_password):
         return False, "Username must be 3-30 characters and use only letters, numbers, or underscores."
     if not email or "@" not in email:
         return False, "Enter a valid email address."
+    if not MOBILE_PATTERN.match(mobile):
+        return False, "Please enter a valid 10-digit mobile number."
     if len(password or "") < 8:
         return False, "Password must contain at least 8 characters."
     if password != confirm_password:
@@ -151,13 +161,14 @@ def restore_auth_session():
     return True
 
 
-def sign_up(full_name, username, email, password, confirm_password):
-    valid, message = validate_signup(full_name, username, email, password, confirm_password)
+def sign_up(full_name, username, email, mobile_number, password, confirm_password):
+    valid, message = validate_signup(full_name, username, email, mobile_number, password, confirm_password)
     if not valid:
         return False, message
 
     username = normalize_username(username)
     email = normalize_email(email)
+    mobile = normalize_mobile(mobile_number)
     full_name = full_name.strip()
 
     if username_exists(username):
@@ -174,6 +185,7 @@ def sign_up(full_name, username, email, password, confirm_password):
                     "data": {
                         "full_name": full_name,
                         "username": username,
+                        "mobile_number": mobile,
                     }
                 },
             }
@@ -184,23 +196,25 @@ def sign_up(full_name, username, email, password, confirm_password):
     user = _auth_user(response)
     session = _auth_session(response)
     if not user:
+        print(f"[TNPSC Nova Auth][Signup] Auth API returned no user object for '{username}'.")
         return False, "Something went wrong. Please try again."
 
+    # Database trigger on_auth_user_created atomically inserts public.profiles row.
+    # Client-side unauthenticated upsert is omitted here to prevent RLS policy errors.
     profile = {
         "id": _user_id(user),
         "username": username,
         "full_name": full_name,
         "email": email,
+        "mobile_number": mobile,
     }
 
-    profile_response = supabase.table("profiles").upsert(profile, on_conflict="id").execute()
-    saved_profile = _first_row(profile_response) or profile
-
     if session:
-        save_auth_session(session, user, saved_profile)
+        save_auth_session(session, user, profile)
         return True, "Account created successfully."
 
     return True, "Account created. Please check your email if confirmation is enabled, then login."
+
 
 
 def login(identifier, password):
@@ -239,7 +253,10 @@ def login(identifier, password):
             "full_name": "",
             "email": email,
         }
-        supabase.table("profiles").upsert(profile, on_conflict="id").execute()
+        try:
+            supabase.table("profiles").upsert(profile, on_conflict="id").execute()
+        except Exception as pe:
+            print(f"[TNPSC Nova Auth][Login] Login profile upsert fallback failed: {_sanitize_log_message(pe)}")
 
     save_auth_session(session, user, profile)
     return True, "Logged in successfully."
@@ -272,21 +289,58 @@ def logout():
     clear_auth_session()
 
 
+def _sanitize_log_message(msg):
+    if not msg:
+        return ""
+    text = str(msg)
+    text = re.sub(r"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}", "[REDACTED_EMAIL]", text)
+    text = re.sub(r"\b[6-9]\d{9}\b", "[REDACTED_MOBILE]", text)
+    text = re.sub(r"eyJ[a-zA-Z0-9_-]+\.[a-zA-Z0-9_-]+\.[a-zA-Z0-9_-]+", "[REDACTED_TOKEN]", text)
+    return text
+
+
 def _friendly_auth_error(error, context=None):
     text = str(error)
     lower = text.lower()
+    context_label = (context or "auth").capitalize()
+    sanitized_text = _sanitize_log_message(text)
+    print(f"[TNPSC Nova Auth][{context_label}] Error: {sanitized_text}")
+
     if _looks_like_network_error(error):
         return "Unable to connect. Please check your internet connection."
+    if (
+        "rate limit" in lower
+        or "too many requests" in lower
+        or "429" in lower
+        or "over_email_send_rate_limit" in lower
+    ):
+        return "Too many attempts. Please try again later."
     if "invalid login" in lower or "invalid credentials" in lower:
         return "Incorrect password."
     if "user not found" in lower or "not found" in lower:
         return "No account found with this email."
-    if "already registered" in lower or "already exists" in lower:
+    if (
+        "already registered" in lower
+        or "already exists" in lower
+        or "user_already_exists" in lower
+        or "already been registered" in lower
+    ):
         return "This email is already registered."
-    if ("password" in lower and "weak" in lower) or "at least 8" in lower:
+    if (
+        ("password" in lower and ("weak" in lower or "short" in lower))
+        or "at least 8" in lower
+        or "should be at least" in lower
+    ):
         return "Password must contain at least 8 characters."
+    if (
+        "invalid email" in lower
+        or "email_invalid" in lower
+        or "unable to validate email" in lower
+    ):
+        return "Enter a valid email address."
     if "email" in lower and "confirm" in lower:
         return "Please confirm your email before logging in."
     if context == "reset" and ("invalid" in lower or "email" in lower):
         return "Enter a valid email address."
     return "Something went wrong. Please try again."
+

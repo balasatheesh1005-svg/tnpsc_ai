@@ -9,6 +9,7 @@ def render_signup_page():
         full_name = st.text_input("Full Name", placeholder="Your full name")
         username = st.text_input("Username", placeholder="unique_username")
         email = st.text_input("Email", placeholder="you@example.com")
+        mobile_number = st.text_input("Mobile Number", placeholder="10-digit mobile number")
         password = st.text_input("Password", type="password")
         confirm_password = st.text_input("Confirm Password", type="password")
         submitted = st.form_submit_button(
@@ -23,6 +24,7 @@ def render_signup_page():
                 full_name,
                 username,
                 email,
+                mobile_number,
                 password,
                 confirm_password,
             )

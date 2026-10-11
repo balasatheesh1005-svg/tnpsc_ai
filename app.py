@@ -81,7 +81,7 @@ from core.test_completion import complete_test
 from core.test_evaluator import evaluate_answer
 from core.test_revision import handle_correct_revision, handle_wrong_revision
 from core.progress_ai import get_progress
-from core.test_topic_selector import get_test_config
+from core.test_topic_selector import get_test_config, start_practice_test
 from core.test_weakness import handle_correct_answer, handle_wrong_answer
 from ui.dashboard import render_dashboard
 from ui.revision.dashboard import render_revision_dashboard
@@ -428,6 +428,12 @@ MENU_ALIASES = {
     "🔄 Smart Revision": "🧠 Smart Revision",
     "🧠 Weakness": "📚 Learn & Practice",
     "📊 Progress": "📊 Analytics",
+    "Learn & Practice": "📚 Learn & Practice",
+    "Practice Questions": "📚 Learn & Practice",
+    "🎯 Practice Questions": "📚 Learn & Practice",
+    "Study Hub": "📚 Learn & Practice",
+    "Study Hub (Practice Engine)": "📚 Learn & Practice",
+    "📚 Study Hub (Practice Engine)": "📚 Learn & Practice",
 }
 
 if "main_menu" in st.session_state:
@@ -439,11 +445,21 @@ if "main_menu" not in st.session_state or st.session_state["main_menu"] not in M
     st.session_state["main_menu"] = MENU_OPTIONS[0]
 
 if "navigate_to" in st.session_state:
-    nav_target = st.session_state.get("navigate_to")
-    if nav_target in MENU_ALIASES:
-        nav_target = MENU_ALIASES[nav_target]
+    raw_nav = st.session_state.get("navigate_to")
+    if raw_nav == "🧠 Weakness":
+        st.session_state["learn_practice_sub_tab"] = "🧠 Weak Areas"
+    elif raw_nav in (
+        "Practice Questions",
+        "🎯 Practice Questions",
+        "Study Hub",
+        "Study Hub (Practice Engine)",
+        "📚 Study Hub (Practice Engine)",
+    ):
+        st.session_state["learn_practice_sub_tab"] = "🎯 Practice Questions"
+    nav_target = MENU_ALIASES.get(raw_nav, raw_nav)
     if nav_target in MENU_OPTIONS:
         st.session_state["main_menu"] = nav_target
+        st.session_state["sidebar_main_menu"] = nav_target
     st.session_state.pop("navigate_to", None)
 
 current_menu = st.session_state["main_menu"]
@@ -709,85 +725,65 @@ elif selected == "🔥 Daily Challenge":
     with col1:
         if st.button("🚀 Start Daily Test", disabled=is_active):
             with st.spinner("⏳ Generating Test..."):
-                st.session_state.update(
-                    {
-                        "q_index": 0,
-                        "score": 0,
-                        "answered": False,
-                        "test_active": True,
-                        "test_mode": "daily",
-                        "test_results_processed": False,
-                        "test_start_xp": st.session_state.get("xp", 0),
-                    }
-                )
-            if "daily_test_config" in st.session_state:
-                test_config = st.session_state.daily_test_config
-            else:
-                test_config = get_test_config(user)
+                if "daily_test_config" in st.session_state:
+                    test_config = st.session_state.daily_test_config
+                else:
+                    test_config = get_test_config(user)
 
-            st.session_state.test_subject, st.session_state.test_topic = (
-                test_config["subject"],
-                test_config["topic"],
-            )
-            questions = load_questions(
-                test_config["subject"], test_config["topic"], test_config["level"]
-            )
-            if not questions:
-                st.error("No questions found")
-                st.stop()
-            st.session_state.test_qs = random.sample(questions, min(10, len(questions)))
-            st.rerun()
+                success, msg = start_practice_test(
+                    subject=test_config["subject"],
+                    topic=test_config["topic"],
+                    level=test_config.get("level", "easy"),
+                    mode="daily",
+                    q_count=10,
+                )
+                if success:
+                    st.rerun()
+                else:
+                    st.error(msg)
 
     # 🔥 WEAK TEST
     with col2:
         if st.button("🔥 Practice Weak Topics", disabled=is_active):
             with st.spinner("⏳ Loading Weak Topics..."):
-                st.session_state.update(
-                    {
-                        "test_active": True,
-                        "test_mode": "weak",
-                        "test_results_processed": False,
-                        "test_start_xp": st.session_state.get("xp", 0),
-                    }
-                )
-            test_config = get_test_config(user, mode="weak")
-            st.session_state.test_subject, st.session_state.test_topic = (
-                test_config["subject"],
-                test_config["topic"],
-            )
-            questions = load_questions(
-                test_config["subject"], test_config["topic"], test_config["level"]
-            )
-            if not questions:
-                st.error("No questions found")
-                st.stop()
-            st.session_state.test_qs = random.sample(questions, min(5, len(questions)))
-            st.rerun()
+                test_config = get_test_config(user, mode="weak")
+                if not test_config:
+                    st.info(
+                        "No weak topics recorded yet. Complete a practice test first to identify your weak areas."
+                    )
+                else:
+                    success, msg = start_practice_test(
+                        subject=test_config["subject"],
+                        topic=test_config["topic"],
+                        level=test_config.get("level", "easy"),
+                        mode="weak",
+                        q_count=5,
+                    )
+                    if success:
+                        st.rerun()
+                    else:
+                        st.error(msg)
 
     with col3:
         if st.button("📚 Start Revision Test", disabled=is_active):
             with st.spinner("⏳ Fetching Revision Queue..."):
-                st.session_state.update(
-                    {
-                        "test_active": True,
-                        "test_mode": "revision",
-                        "test_results_processed": False,
-                        "test_start_xp": st.session_state.get("xp", 0),
-                    }
-                )
-            test_config = get_test_config(user, mode="revision")
-            st.session_state.test_subject, st.session_state.test_topic = (
-                test_config["subject"],
-                test_config["topic"],
-            )
-            questions = load_questions(
-                test_config["subject"], test_config["topic"], test_config["level"]
-            )
-            if not questions:
-                st.error("❌ No revision questions found")
-                st.stop()
-            st.session_state.test_qs = random.sample(questions, min(5, len(questions)))
-            st.rerun()
+                test_config = get_test_config(user, mode="revision")
+                if not test_config:
+                    st.info(
+                        "No revision questions are due yet. Complete practice sessions to build your revision queue."
+                    )
+                else:
+                    success, msg = start_practice_test(
+                        subject=test_config["subject"],
+                        topic=test_config["topic"],
+                        level=test_config.get("level", "easy"),
+                        mode="revision",
+                        q_count=5,
+                    )
+                    if success:
+                        st.rerun()
+                    else:
+                        st.error(msg)
 
     # ---------------- SAFETY ----------------
     if not st.session_state.test_active:
@@ -1012,7 +1008,7 @@ elif selected == "🤖 AI Teacher":
 
 elif selected == "👨‍🏫 Personal Mentor":
 
-    safe_call(lambda: render_mentor(section, typing_effect, user))
+    safe_call(lambda: render_mentor(section, user=user))
 
 elif selected == "ℹ️ About":
 
@@ -1031,5 +1027,8 @@ overall_dur = end_timer("Total Page Render")
 record_render("Overall Page Render", overall_dur)
 
 if DEV_MODE:
-    print_summary()
+    try:
+        print_summary()
+    except Exception:
+        pass
 

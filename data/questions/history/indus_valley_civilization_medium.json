@@ -1,167 +1,897 @@
 [
   {
-    "question_en": "Assertion (A): The Indus Valley Civilization had advanced town planning.\nReason (R): Streets were laid out in grid pattern with proper drainage system.",
-    "question_ta": "Assertion: சிந்து சமவெளி நாகரிகத்தில் மேம்பட்ட நகர திட்டமிடல் இருந்தது.\nReason: சாலைகள் கட்டமைப்பு முறையில் வடிகால் அமைப்புடன் அமைக்கப்பட்டன.",
-    "options_en": ["Both A and R are true and R explains A", "Both A and R are true but R does not explain A", "A is true but R is false", "A is false but R is true"],
-    "options_ta": ["A மற்றும் R சரி, R சரியான விளக்கம்", "A மற்றும் R சரி, ஆனால் விளக்கம் அல்ல", "A சரி R தவறு", "A தவறு R சரி"],
-    "answer": "a",
+    "question_en": "Consider the following statements regarding Assertion (A): The Indus Valley Civilization had advanced town planning.\nReason (R): Streets were laid out in grid pattern with proper drainage system.:\n1. Both A and R are true and R explains A is directly associated with this historical event/concept.\n2. The grid pattern and drainage system prove advanced planning.\nWhich of the statements given above is/are correct?",
+    "question_ta": "பின்வரும் கூற்றுகளை ஆராய்க: Assertion: சிந்து சமவெளி நாகரிகத்தில் மேம்பட்ட நகர திட்டமிடல் இருந்தது.\nReason: சாலைகள் கட்டமைப்பு முறையில் வடிகால் அமைப்புடன் அமைக்கப்பட்டன.:\n1. A மற்றும் R சரி, R சரியான விளக்கம் இந்த வரலாற்று நிகழ்வு/கருத்துடன் நேரடியாக தொடர்புடையவர்/தொடர்புடையது.\n2. கட்டமைப்பு சாலைகள் மற்றும் வடிகால் அமைப்பு மேம்பட்ட திட்டமிடலை காட்டுகின்றன.\nமேற்கண்ட கூற்றுகளில் எது/எவை சரியானவை?",
+    "options_en": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "options_ta": [
+      "1 மட்டும்",
+      "2 மட்டும்",
+      "1 மற்றும் 2 இரண்டும்",
+      "இரண்டும் இல்லை"
+    ],
+    "answer": "c",
     "explanation_en": "The grid pattern and drainage system prove advanced planning.",
     "explanation_ta": "கட்டமைப்பு சாலைகள் மற்றும் வடிகால் அமைப்பு மேம்பட்ட திட்டமிடலை காட்டுகின்றன.",
-    "subject": "HISTORY",
-    "topic": "indus_valley_civilization"
+    "subject": "history",
+    "topic": "indus_valley_civilization",
+    "difficulty": "medium",
+    "why_not_others": {
+      "A": {
+        "en": "Incorrect. Option A ('1 only') is incomplete for Medium Q1 because statement 2 is also factually correct regarding this Harappan topic.",
+        "ta": "தவறு. தெரிவு A ('1 மட்டும்') பகுதி சரியே; ஏனெனில் கூற்று 2-ம் இத்தலைப்பில் வரலாற்று ரீதியாகச் சரியான தகவலாகும்."
+      },
+      "B": {
+        "en": "Incorrect. Option B ('2 only') is incomplete for Medium Q1 because statement 1 is also factually correct in this context.",
+        "ta": "தவறு. தெரிவு B ('2 மட்டும்') பகுதி சரியே; ஏனெனில் கூற்று 1-ம் இத்தலைப்பில் வரலாற்று ரீதியாகச் சரியான தகவலாகும்."
+      },
+      "C": {
+        "en": "Correct. Option C ('Both 1 and 2') is the correct answer. The grid pattern and drainage system prove advanced planning.",
+        "ta": "சரி. தெரிவு C ('1 மற்றும் 2 இரண்டும்') சரியான பதிலாகும். கட்டமைப்பு சாலைகள் மற்றும் வடிகால் அமைப்பு மேம்பட்ட திட்டமிடலை காட்டுகின்றன."
+      },
+      "D": {
+        "en": "Incorrect. Option D ('Neither 1 nor 2') is incorrect for Medium Q1 because both statements are supported by established archaeological evidence.",
+        "ta": "தவறு. தெரிவு D ('இரண்டும் இல்லை') தவறானது; ஏனெனில் இரு கூற்றுகளும் தொல்லியல் சான்றுகளால் நிரூபிக்கப்பட்ட உண்மைகள்."
+      }
+    },
+    "tnpsc_tip": {
+      "type": "exam_focus",
+      "en": "TNPSC Focus [MEDIUM Q1]: Pay attention to site/artefact distinctions in Harappan studies. Correct option is C.",
+      "ta": "தேர்வு கவனம் [MEDIUM வினா 1]: ஹரப்பா தொல்லியல் சான்றுகளின் தனித்துவமான வேறுபாடுகளைக் கவனிக்கவும்."
+    }
   },
   {
     "question_en": "Which among the following sites is correctly matched?\n1. Harappa – Granary\n2. Mohenjo-Daro – Great Bath\n3. Lothal – Dockyard",
     "question_ta": "சரியாக பொருந்தியது:\n1. ஹரப்பா – தானியக் களஞ்சியம்\n2. மொகஞ்சோதாரோ – பெரிய குளம்\n3. லோதல் – துறைமுகம்",
-    "options_en": ["1 only", "1 and 2", "2 and 3", "All"],
-    "options_ta": ["1 மட்டும்", "1 மற்றும் 2", "2 மற்றும் 3", "அனைத்தும்"],
+    "options_en": [
+      "1 only",
+      "1 and 2",
+      "2 and 3",
+      "All"
+    ],
+    "options_ta": [
+      "1 மட்டும்",
+      "1 மற்றும் 2",
+      "2 மற்றும் 3",
+      "அனைத்தும்"
+    ],
     "answer": "d",
     "explanation_en": "All the matches are correct.",
     "explanation_ta": "அனைத்தும் சரியாக பொருந்துகின்றன.",
-    "subject": "HISTORY",
-    "topic": "indus_valley_civilization"
+    "subject": "history",
+    "topic": "indus_valley_civilization",
+    "why_not_others": {
+      "A": {
+        "en": "Incorrect. Option A ('1 only') is incomplete for Medium Q2 because statement 2 is also factually correct regarding this Harappan topic.",
+        "ta": "தவறு. தெரிவு A ('1 மட்டும்') பகுதி சரியே; ஏனெனில் கூற்று 2-ம் இத்தலைப்பில் வரலாற்று ரீதியாகச் சரியான தகவலாகும்."
+      },
+      "B": {
+        "en": "Incorrect. '1 and 2' is not the correct answer for Medium Q2. All the matches are correct.",
+        "ta": "தவறு. '1 மற்றும் 2' இக்கேள்விக்குரிய சரியான விடை அன்று. அனைத்தும் சரியாக பொருந்துகின்றன."
+      },
+      "C": {
+        "en": "Incorrect. '2 and 3' is not the correct answer for Medium Q2. All the matches are correct.",
+        "ta": "தவறு. '2 மற்றும் 3' இக்கேள்விக்குரிய சரியான விடை அன்று. அனைத்தும் சரியாக பொருந்துகின்றன."
+      },
+      "D": {
+        "en": "Correct. Option D ('All') is the correct answer. All the matches are correct.",
+        "ta": "சரி. தெரிவு D ('அனைத்தும்') சரியான பதிலாகும். அனைத்தும் சரியாக பொருந்துகின்றன."
+      }
+    },
+    "tnpsc_tip": {
+      "type": "site_feature",
+      "en": "TNPSC Focus [MEDIUM Q2]: Pay attention to site/artefact distinctions in Harappan studies. Correct option is D.",
+      "ta": "தேர்வு கவனம் [MEDIUM வினா 2]: ஹரப்பா தொல்லியல் சான்றுகளின் தனித்துவமான வேறுபாடுகளைக் கவனிக்கவும்."
+    }
   },
   {
-    "question_en": "Which feature distinguishes the Indus Valley Civilization from contemporary civilizations?",
-    "question_ta": "சிந்து நாகரிகத்தை மற்ற சமகால நாகரிகங்களிலிருந்து வேறுபடுத்தியது எது?",
-    "options_en": ["Use of iron", "Advanced drainage system", "Horse riding", "Temple worship"],
-    "options_ta": ["இரும்பு பயன்பாடு", "மேம்பட்ட வடிகால் அமைப்பு", "குதிரை சவாரி", "கோவில் வழிபாடு"],
-    "answer": "b",
+    "question_en": "Consider the following statements regarding this historical topic:\nWhich feature distinguishes the Indus Valley Civilization from contemporary civilizations:\n1. Both 1 and 2 is a primary entity associated with this historical topic.\n2. The drainage system was highly advanced and unique.\nWhich of the statements given above is/are correct?",
+    "question_ta": "பின்வரும் கூற்றுகளை ஆராய்க (இந்த வரலாற்று தலைப்பு):\nசிந்து நாகரிகத்தை மற்ற சமகால நாகரிகங்களிலிருந்து வேறுபடுத்தியது எது:\n1. 1 மற்றும் 2 இரண்டும் என்பது இந்த வரலாற்று தலைப்பு தொடர்பான முதன்மை அம்சமாகும்.\n2. வடிகால் அமைப்பு மிகவும் மேம்பட்டதாக இருந்தது.\nமேற்கண்ட கூற்றுகளில் எது/எவை சரியானவை?",
+    "options_en": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "options_ta": [
+      "1 மட்டும்",
+      "2 மட்டும்",
+      "1 மற்றும் 2 இரண்டும்",
+      "இரண்டும் இல்லை"
+    ],
+    "answer": "c",
     "explanation_en": "The drainage system was highly advanced and unique.",
     "explanation_ta": "வடிகால் அமைப்பு மிகவும் மேம்பட்டதாக இருந்தது.",
-    "subject": "HISTORY",
-    "topic": "indus_valley_civilization"
+    "subject": "history",
+    "topic": "indus_valley_civilization",
+    "difficulty": "medium",
+    "why_not_others": {
+      "A": {
+        "en": "Incorrect. Option A ('1 only') is incomplete for Medium Q3 because statement 2 is also factually correct regarding this Harappan topic.",
+        "ta": "தவறு. தெரிவு A ('1 மட்டும்') பகுதி சரியே; ஏனெனில் கூற்று 2-ம் இத்தலைப்பில் வரலாற்று ரீதியாகச் சரியான தகவலாகும்."
+      },
+      "B": {
+        "en": "Incorrect. Option B ('2 only') is incomplete for Medium Q3 because statement 1 is also factually correct in this context.",
+        "ta": "தவறு. தெரிவு B ('2 மட்டும்') பகுதி சரியே; ஏனெனில் கூற்று 1-ம் இத்தலைப்பில் வரலாற்று ரீதியாகச் சரியான தகவலாகும்."
+      },
+      "C": {
+        "en": "Correct. Option C ('Both 1 and 2') is the correct answer. The drainage system was highly advanced and unique.",
+        "ta": "சரி. தெரிவு C ('1 மற்றும் 2 இரண்டும்') சரியான பதிலாகும். வடிகால் அமைப்பு மிகவும் மேம்பட்டதாக இருந்தது."
+      },
+      "D": {
+        "en": "Incorrect. Option D ('Neither 1 nor 2') is incorrect for Medium Q3 because both statements are supported by established archaeological evidence.",
+        "ta": "தவறு. தெரிவு D ('இரண்டும் இல்லை') தவறானது; ஏனெனில் இரு கூற்றுகளும் தொல்லியல் சான்றுகளால் நிரூபிக்கப்பட்ட உண்மைகள்."
+      }
+    },
+    "tnpsc_tip": {
+      "type": "exam_focus",
+      "en": "TNPSC Focus [MEDIUM Q3]: Pay attention to site/artefact distinctions in Harappan studies. Correct option is C.",
+      "ta": "தேர்வு கவனம் [MEDIUM வினா 3]: ஹரப்பா தொல்லியல் சான்றுகளின் தனித்துவமான வேறுபாடுகளைக் கவனிக்கவும்."
+    }
   },
   {
     "question_en": "Which among the following statements is correct regarding Harappan economy?\n1. Agriculture was the main occupation.\n2. Trade existed with Mesopotamia.\n3. Standardized weights were used.",
     "question_ta": "ஹரப்ப பொருளாதாரம் குறித்து சரியானவை:\n1. விவசாயம் முக்கிய தொழில்.\n2. மெசப்பொத்தாமியாவுடன் வர்த்தகம் இருந்தது.\n3. ஒரே மாதிரியான எடைகள் பயன்படுத்தப்பட்டன.",
-    "options_en": ["1 only", "1 and 2", "2 and 3", "All"],
-    "options_ta": ["1 மட்டும்", "1 மற்றும் 2", "2 மற்றும் 3", "அனைத்தும்"],
+    "options_en": [
+      "1 only",
+      "1 and 2",
+      "2 and 3",
+      "All"
+    ],
+    "options_ta": [
+      "1 மட்டும்",
+      "1 மற்றும் 2",
+      "2 மற்றும் 3",
+      "அனைத்தும்"
+    ],
     "answer": "d",
     "explanation_en": "All statements are correct regarding Harappan economy.",
     "explanation_ta": "ஹரப்ப பொருளாதாரம் குறித்து அனைத்தும் சரியானவை.",
-    "subject": "HISTORY",
-    "topic": "indus_valley_civilization"
+    "subject": "history",
+    "topic": "indus_valley_civilization",
+    "why_not_others": {
+      "A": {
+        "en": "Incorrect. Option A ('1 only') is incomplete for Medium Q4 because statement 2 is also factually correct regarding this Harappan topic.",
+        "ta": "தவறு. தெரிவு A ('1 மட்டும்') பகுதி சரியே; ஏனெனில் கூற்று 2-ம் இத்தலைப்பில் வரலாற்று ரீதியாகச் சரியான தகவலாகும்."
+      },
+      "B": {
+        "en": "Incorrect. '1 and 2' is not the correct answer for Medium Q4. All statements are correct regarding Harappan economy.",
+        "ta": "தவறு. '1 மற்றும் 2' இக்கேள்விக்குரிய சரியான விடை அன்று. ஹரப்ப பொருளாதாரம் குறித்து அனைத்தும் சரியானவை."
+      },
+      "C": {
+        "en": "Incorrect. '2 and 3' is not the correct answer for Medium Q4. All statements are correct regarding Harappan economy.",
+        "ta": "தவறு. '2 மற்றும் 3' இக்கேள்விக்குரிய சரியான விடை அன்று. ஹரப்ப பொருளாதாரம் குறித்து அனைத்தும் சரியானவை."
+      },
+      "D": {
+        "en": "Correct. Option D ('All') is the correct answer. All statements are correct regarding Harappan economy.",
+        "ta": "சரி. தெரிவு D ('அனைத்தும்') சரியான பதிலாகும். ஹரப்ப பொருளாதாரம் குறித்து அனைத்தும் சரியானவை."
+      }
+    },
+    "tnpsc_tip": {
+      "type": "site_feature",
+      "en": "TNPSC Focus [MEDIUM Q4]: Pay attention to site/artefact distinctions in Harappan studies. Correct option is D.",
+      "ta": "தேர்வு கவனம் [MEDIUM வினா 4]: ஹரப்பா தொல்லியல் சான்றுகளின் தனித்துவமான வேறுபாடுகளைக் கவனிக்கவும்."
+    }
   },
   {
-    "question_en": "Which among the following sites provided evidence of ploughed fields?",
-    "question_ta": "உழுத வயலின் ஆதாரம் கிடைத்த தளம் எது?",
-    "options_en": ["Lothal", "Kalibangan", "Harappa", "Banawali"],
-    "options_ta": ["லோதல்", "காலிபங்கன்", "ஹரப்பா", "பனவாலி"],
-    "answer": "b",
+    "question_en": "Consider the following statements regarding this historical topic:\nWhich among the following sites provided evidence of ploughed fields:\n1. Both 1 and 2 is a primary entity associated with this historical topic.\n2. Kalibangan revealed ploughed agricultural fields.\nWhich of the statements given above is/are correct?",
+    "question_ta": "பின்வரும் கூற்றுகளை ஆராய்க (இந்த வரலாற்று தலைப்பு):\nஉழுத வயலின் ஆதாரம் கிடைத்த தளம் எது:\n1. 1 மற்றும் 2 இரண்டும் என்பது இந்த வரலாற்று தலைப்பு தொடர்பான முதன்மை அம்சமாகும்.\n2. காலிபங்கனில் உழுத வயல் ஆதாரம் கிடைத்தது.\nமேற்கண்ட கூற்றுகளில் எது/எவை சரியானவை?",
+    "options_en": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "options_ta": [
+      "1 மட்டும்",
+      "2 மட்டும்",
+      "1 மற்றும் 2 இரண்டும்",
+      "இரண்டும் இல்லை"
+    ],
+    "answer": "c",
     "explanation_en": "Kalibangan revealed ploughed agricultural fields.",
     "explanation_ta": "காலிபங்கனில் உழுத வயல் ஆதாரம் கிடைத்தது.",
-    "subject": "HISTORY",
-    "topic": "indus_valley_civilization"
+    "subject": "history",
+    "topic": "indus_valley_civilization",
+    "difficulty": "medium",
+    "why_not_others": {
+      "A": {
+        "en": "Incorrect. Option A ('1 only') is incomplete for Medium Q5 because statement 2 is also factually correct regarding this Harappan topic.",
+        "ta": "தவறு. தெரிவு A ('1 மட்டும்') பகுதி சரியே; ஏனெனில் கூற்று 2-ம் இத்தலைப்பில் வரலாற்று ரீதியாகச் சரியான தகவலாகும்."
+      },
+      "B": {
+        "en": "Incorrect. Option B ('2 only') is incomplete for Medium Q5 because statement 1 is also factually correct in this context.",
+        "ta": "தவறு. தெரிவு B ('2 மட்டும்') பகுதி சரியே; ஏனெனில் கூற்று 1-ம் இத்தலைப்பில் வரலாற்று ரீதியாகச் சரியான தகவலாகும்."
+      },
+      "C": {
+        "en": "Correct. Option C ('Both 1 and 2') is the correct answer. Kalibangan revealed ploughed agricultural fields.",
+        "ta": "சரி. தெரிவு C ('1 மற்றும் 2 இரண்டும்') சரியான பதிலாகும். காலிபங்கனில் உழுத வயல் ஆதாரம் கிடைத்தது."
+      },
+      "D": {
+        "en": "Incorrect. Option D ('Neither 1 nor 2') is incorrect for Medium Q5 because both statements are supported by established archaeological evidence.",
+        "ta": "தவறு. தெரிவு D ('இரண்டும் இல்லை') தவறானது; ஏனெனில் இரு கூற்றுகளும் தொல்லியல் சான்றுகளால் நிரூபிக்கப்பட்ட உண்மைகள்."
+      }
+    },
+    "tnpsc_tip": {
+      "type": "exam_focus",
+      "en": "TNPSC Focus [MEDIUM Q5]: Pay attention to site/artefact distinctions in Harappan studies. Correct option is C.",
+      "ta": "தேர்வு கவனம் [MEDIUM வினா 5]: ஹரப்பா தொல்லியல் சான்றுகளின் தனித்துவமான வேறுபாடுகளைக் கவனிக்கவும்."
+    }
   },
   {
-    "question_en": "Assertion (A): The Harappans had trade relations with foreign countries.\nReason (R): Harappan seals have been found in Mesopotamia.",
-    "question_ta": "Assertion: ஹரப்பர்களுக்கு வெளிநாட்டு வர்த்தகம் இருந்தது.\nReason: ஹரப்ப முத்திரைகள் மெசப்பொத்தாமியாவில் கண்டுபிடிக்கப்பட்டுள்ளன.",
-    "options_en": ["Both true and R explains A", "Both true but R not explanation", "A true R false", "A false R true"],
-    "options_ta": ["இரண்டும் சரி காரணம் சரி", "இரண்டும் சரி விளக்கம் இல்லை", "A சரி R தவறு", "A தவறு R சரி"],
-    "answer": "a",
+    "question_en": "Consider the following statements regarding Assertion (A): The Harappans had trade relations with foreign countries.\nReason (R): Harappan seals have been found in Mesopotamia.:\n1. Both true and R explains A is directly associated with this historical event/concept.\n2. Mesopotamian evidence proves external trade.\nWhich of the statements given above is/are correct?",
+    "question_ta": "பின்வரும் கூற்றுகளை ஆராய்க: Assertion: ஹரப்பர்களுக்கு வெளிநாட்டு வர்த்தகம் இருந்தது.\nReason: ஹரப்ப முத்திரைகள் மெசப்பொத்தாமியாவில் கண்டுபிடிக்கப்பட்டுள்ளன.:\n1. இரண்டும் சரி காரணம் சரி இந்த வரலாற்று நிகழ்வு/கருத்துடன் நேரடியாக தொடர்புடையவர்/தொடர்புடையது.\n2. மெசப்பொத்தாமிய ஆதாரம் வெளிநாட்டு வர்த்தகத்தை உறுதிப்படுத்துகிறது.\nமேற்கண்ட கூற்றுகளில் எது/எவை சரியானவை?",
+    "options_en": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "options_ta": [
+      "1 மட்டும்",
+      "2 மட்டும்",
+      "1 மற்றும் 2 இரண்டும்",
+      "இரண்டும் இல்லை"
+    ],
+    "answer": "c",
     "explanation_en": "Mesopotamian evidence proves external trade.",
     "explanation_ta": "மெசப்பொத்தாமிய ஆதாரம் வெளிநாட்டு வர்த்தகத்தை உறுதிப்படுத்துகிறது.",
-    "subject": "HISTORY",
-    "topic": "indus_valley_civilization"
+    "subject": "history",
+    "topic": "indus_valley_civilization",
+    "difficulty": "medium",
+    "why_not_others": {
+      "A": {
+        "en": "Incorrect. Option A ('1 only') is incomplete for Medium Q6 because statement 2 is also factually correct regarding this Harappan topic.",
+        "ta": "தவறு. தெரிவு A ('1 மட்டும்') பகுதி சரியே; ஏனெனில் கூற்று 2-ம் இத்தலைப்பில் வரலாற்று ரீதியாகச் சரியான தகவலாகும்."
+      },
+      "B": {
+        "en": "Incorrect. Option B ('2 only') is incomplete for Medium Q6 because statement 1 is also factually correct in this context.",
+        "ta": "தவறு. தெரிவு B ('2 மட்டும்') பகுதி சரியே; ஏனெனில் கூற்று 1-ம் இத்தலைப்பில் வரலாற்று ரீதியாகச் சரியான தகவலாகும்."
+      },
+      "C": {
+        "en": "Correct. Option C ('Both 1 and 2') is the correct answer. Mesopotamian evidence proves external trade.",
+        "ta": "சரி. தெரிவு C ('1 மற்றும் 2 இரண்டும்') சரியான பதிலாகும். மெசப்பொத்தாமிய ஆதாரம் வெளிநாட்டு வர்த்தகத்தை உறுதிப்படுத்துகிறது."
+      },
+      "D": {
+        "en": "Incorrect. Option D ('Neither 1 nor 2') is incorrect for Medium Q6 because both statements are supported by established archaeological evidence.",
+        "ta": "தவறு. தெரிவு D ('இரண்டும் இல்லை') தவறானது; ஏனெனில் இரு கூற்றுகளும் தொல்லியல் சான்றுகளால் நிரூபிக்கப்பட்ட உண்மைகள்."
+      }
+    },
+    "tnpsc_tip": {
+      "type": "site_feature",
+      "en": "TNPSC Focus [MEDIUM Q6]: Pay attention to site/artefact distinctions in Harappan studies. Correct option is C.",
+      "ta": "தேர்வு கவனம் [MEDIUM வினா 6]: ஹரப்பா தொல்லியல் சான்றுகளின் தனித்துவமான வேறுபாடுகளைக் கவனிக்கவும்."
+    }
   },
   {
-    "question_en": "Which among the following is considered the largest Harappan site discovered in India?",
-    "question_ta": "இந்தியாவில் கண்டுபிடிக்கப்பட்ட மிகப்பெரிய ஹரப்பா தளம் எது?",
-    "options_en": ["Dholavira", "Rakhigarhi", "Lothal", "Kalibangan"],
-    "options_ta": ["தோலவீரா", "ராகிகர்ஹி", "லோதல்", "காலிபங்கன்"],
-    "answer": "b",
+    "question_en": "Consider the following statements regarding this historical topic:\nWhich among the following is considered the largest Harappan site discovered in India:\n1. Both 1 and 2 is a primary entity associated with this historical topic.\n2. Rakhigarhi is the largest Harappan site.\nWhich of the statements given above is/are correct?",
+    "question_ta": "பின்வரும் கூற்றுகளை ஆராய்க (இந்த வரலாற்று தலைப்பு):\nஇந்தியாவில் கண்டுபிடிக்கப்பட்ட மிகப்பெரிய ஹரப்பா தளம் எது:\n1. 1 மற்றும் 2 இரண்டும் என்பது இந்த வரலாற்று தலைப்பு தொடர்பான முதன்மை அம்சமாகும்.\n2. ராகிகர்ஹி மிகப்பெரிய ஹரப்பா தளம்.\nமேற்கண்ட கூற்றுகளில் எது/எவை சரியானவை?",
+    "options_en": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "options_ta": [
+      "1 மட்டும்",
+      "2 மட்டும்",
+      "1 மற்றும் 2 இரண்டும்",
+      "இரண்டும் இல்லை"
+    ],
+    "answer": "c",
     "explanation_en": "Rakhigarhi is the largest Harappan site.",
     "explanation_ta": "ராகிகர்ஹி மிகப்பெரிய ஹரப்பா தளம்.",
-    "subject": "HISTORY",
-    "topic": "indus_valley_civilization"
+    "subject": "history",
+    "topic": "indus_valley_civilization",
+    "difficulty": "medium",
+    "why_not_others": {
+      "A": {
+        "en": "Incorrect. Option A ('1 only') is incomplete for Medium Q7 because statement 2 is also factually correct regarding this Harappan topic.",
+        "ta": "தவறு. தெரிவு A ('1 மட்டும்') பகுதி சரியே; ஏனெனில் கூற்று 2-ம் இத்தலைப்பில் வரலாற்று ரீதியாகச் சரியான தகவலாகும்."
+      },
+      "B": {
+        "en": "Incorrect. Option B ('2 only') is incomplete for Medium Q7 because statement 1 is also factually correct in this context.",
+        "ta": "தவறு. தெரிவு B ('2 மட்டும்') பகுதி சரியே; ஏனெனில் கூற்று 1-ம் இத்தலைப்பில் வரலாற்று ரீதியாகச் சரியான தகவலாகும்."
+      },
+      "C": {
+        "en": "Correct. Option C ('Both 1 and 2') is the correct answer. Rakhigarhi is the largest Harappan site.",
+        "ta": "சரி. தெரிவு C ('1 மற்றும் 2 இரண்டும்') சரியான பதிலாகும். ராகிகர்ஹி மிகப்பெரிய ஹரப்பா தளம்."
+      },
+      "D": {
+        "en": "Incorrect. Option D ('Neither 1 nor 2') is incorrect for Medium Q7 because both statements are supported by established archaeological evidence.",
+        "ta": "தவறு. தெரிவு D ('இரண்டும் இல்லை') தவறானது; ஏனெனில் இரு கூற்றுகளும் தொல்லியல் சான்றுகளால் நிரூபிக்கப்பட்ட உண்மைகள்."
+      }
+    },
+    "tnpsc_tip": {
+      "type": "exam_focus",
+      "en": "TNPSC Focus [MEDIUM Q7]: Pay attention to site/artefact distinctions in Harappan studies. Correct option is C.",
+      "ta": "தேர்வு கவனம் [MEDIUM வினா 7]: ஹரப்பா தொல்லியல் சான்றுகளின் தனித்துவமான வேறுபாடுகளைக் கவனிக்கவும்."
+    }
   },
   {
-    "question_en": "The Great Bath discovered at Mohenjo-Daro indicates:",
-    "question_ta": "மொகஞ்சோதாரோவில் கண்டுபிடிக்கப்பட்ட பெரிய குளம் எதை காட்டுகிறது?",
-    "options_en": ["Military training", "Religious ritual bathing", "Swimming competition", "Agriculture"],
-    "options_ta": ["இராணுவ பயிற்சி", "மத சடங்கு குளியல்", "நீச்சல் போட்டி", "விவசாயம்"],
-    "answer": "b",
+    "question_en": "Consider the following statements regarding The Great Bath discovered at Mohenjo-Daro indicates::\n1. Religious ritual bathing is directly associated with this historical event/concept.\n2. The Great Bath was likely used for ritual bathing.\nWhich of the statements given above is/are correct?",
+    "question_ta": "பின்வரும் கூற்றுகளை ஆராய்க: மொகஞ்சோதாரோவில் கண்டுபிடிக்கப்பட்ட பெரிய குளம் எதை காட்டுகிறது:\n1. மத சடங்கு குளியல் இந்த வரலாற்று நிகழ்வு/கருத்துடன் நேரடியாக தொடர்புடையவர்/தொடர்புடையது.\n2. பெரிய குளம் மத சடங்கு குளியலுக்காக பயன்படுத்தப்பட்டிருக்கலாம்.\nமேற்கண்ட கூற்றுகளில் எது/எவை சரியானவை?",
+    "options_en": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "options_ta": [
+      "1 மட்டும்",
+      "2 மட்டும்",
+      "1 மற்றும் 2 இரண்டும்",
+      "இரண்டும் இல்லை"
+    ],
+    "answer": "c",
     "explanation_en": "The Great Bath was likely used for ritual bathing.",
     "explanation_ta": "பெரிய குளம் மத சடங்கு குளியலுக்காக பயன்படுத்தப்பட்டிருக்கலாம்.",
-    "subject": "HISTORY",
-    "topic": "indus_valley_civilization"
+    "subject": "history",
+    "topic": "indus_valley_civilization",
+    "difficulty": "medium",
+    "why_not_others": {
+      "A": {
+        "en": "Incorrect. Option A ('1 only') is incomplete for Medium Q8 because statement 2 is also factually correct regarding this Harappan topic.",
+        "ta": "தவறு. தெரிவு A ('1 மட்டும்') பகுதி சரியே; ஏனெனில் கூற்று 2-ம் இத்தலைப்பில் வரலாற்று ரீதியாகச் சரியான தகவலாகும்."
+      },
+      "B": {
+        "en": "Incorrect. Option B ('2 only') is incomplete for Medium Q8 because statement 1 is also factually correct in this context.",
+        "ta": "தவறு. தெரிவு B ('2 மட்டும்') பகுதி சரியே; ஏனெனில் கூற்று 1-ம் இத்தலைப்பில் வரலாற்று ரீதியாகச் சரியான தகவலாகும்."
+      },
+      "C": {
+        "en": "Correct. Option C ('Both 1 and 2') is the correct answer. The Great Bath was likely used for ritual bathing.",
+        "ta": "சரி. தெரிவு C ('1 மற்றும் 2 இரண்டும்') சரியான பதிலாகும். பெரிய குளம் மத சடங்கு குளியலுக்காக பயன்படுத்தப்பட்டிருக்கலாம்."
+      },
+      "D": {
+        "en": "Incorrect. Option D ('Neither 1 nor 2') is incorrect for Medium Q8 because both statements are supported by established archaeological evidence.",
+        "ta": "தவறு. தெரிவு D ('இரண்டும் இல்லை') தவறானது; ஏனெனில் இரு கூற்றுகளும் தொல்லியல் சான்றுகளால் நிரூபிக்கப்பட்ட உண்மைகள்."
+      }
+    },
+    "tnpsc_tip": {
+      "type": "site_feature",
+      "en": "TNPSC Focus [MEDIUM Q8]: Pay attention to site/artefact distinctions in Harappan studies. Correct option is C.",
+      "ta": "தேர்வு கவனம் [MEDIUM வினா 8]: ஹரப்பா தொல்லியல் சான்றுகளின் தனித்துவமான வேறுபாடுகளைக் கவனிக்கவும்."
+    }
   },
   {
     "question_en": "Which among the following is NOT correctly matched?\n1. Dholavira – Water Management\n2. Chanhudaro – Bead Industry\n3. Surkotada – Dockyard",
     "question_ta": "சரியாக பொருந்தாதது எது?\n1. தோலவீரா – நீர் மேலாண்மை\n2. சான்ஹுதாரோ – மணிமாலை தொழில்\n3. சுர்கோடடா – துறைமுகம்",
-    "options_en": ["1 only", "2 only", "3 only", "All"],
-    "options_ta": ["1 மட்டும்", "2 மட்டும்", "3 மட்டும்", "அனைத்தும்"],
+    "options_en": [
+      "1 only",
+      "2 only",
+      "3 only",
+      "All"
+    ],
+    "options_ta": [
+      "1 மட்டும்",
+      "2 மட்டும்",
+      "3 மட்டும்",
+      "அனைத்தும்"
+    ],
     "answer": "c",
     "explanation_en": "Surkotada is known for horse remains, not dockyard.",
     "explanation_ta": "சுர்கோடடா குதிரை எச்சங்களுக்கு புகழ்பெற்றது.",
-    "subject": "HISTORY",
-    "topic": "indus_valley_civilization"
+    "subject": "history",
+    "topic": "indus_valley_civilization",
+    "why_not_others": {
+      "A": {
+        "en": "Incorrect. Option A ('1 only') is incomplete for Medium Q9 because statement 2 is also factually correct regarding this Harappan topic.",
+        "ta": "தவறு. தெரிவு A ('1 மட்டும்') பகுதி சரியே; ஏனெனில் கூற்று 2-ம் இத்தலைப்பில் வரலாற்று ரீதியாகச் சரியான தகவலாகும்."
+      },
+      "B": {
+        "en": "Incorrect. Option B ('2 only') is incomplete for Medium Q9 because statement 1 is also factually correct in this context.",
+        "ta": "தவறு. தெரிவு B ('2 மட்டும்') பகுதி சரியே; ஏனெனில் கூற்று 1-ம் இத்தலைப்பில் வரலாற்று ரீதியாகச் சரியான தகவலாகும்."
+      },
+      "C": {
+        "en": "Correct. Option C ('3 only') is the correct answer. Surkotada is known for horse remains, not dockyard.",
+        "ta": "சரி. தெரிவு C ('3 மட்டும்') சரியான பதிலாகும். சுர்கோடடா குதிரை எச்சங்களுக்கு புகழ்பெற்றது."
+      },
+      "D": {
+        "en": "Incorrect. 'All' is not the correct answer for Medium Q9. Surkotada is known for horse remains, not dockyard.",
+        "ta": "தவறு. 'அனைத்தும்' இக்கேள்விக்குரிய சரியான விடை அன்று. சுர்கோடடா குதிரை எச்சங்களுக்கு புகழ்பெற்றது."
+      }
+    },
+    "tnpsc_tip": {
+      "type": "exam_focus",
+      "en": "TNPSC Focus [MEDIUM Q9]: Pay attention to site/artefact distinctions in Harappan studies. Correct option is C.",
+      "ta": "தேர்வு கவனம் [MEDIUM வினா 9]: ஹரப்பா தொல்லியல் சான்றுகளின் தனித்துவமான வேறுபாடுகளைக் கவனிக்கவும்."
+    }
   },
   {
-    "question_en": "Which among the following was a major reason for the decline of the Harappan Civilization?",
-    "question_ta": "ஹரப்ப நாகரிக வீழ்ச்சிக்கான முக்கிய காரணம் எது?",
-    "options_en": ["Iron invasion", "Climate change", "Roman invasion", "Volcanic eruption"],
-    "options_ta": ["இரும்பு படையெடுப்பு", "காலநிலை மாற்றம்", "ரோமர் படையெடுப்பு", "எரிமலை"],
-    "answer": "b",
+    "question_en": "Consider the following statements regarding this historical topic:\nWhich among the following was a major reason for the decline of the Harappan Civilization:\n1. Both 1 and 2 is a primary entity associated with this historical topic.\n2. Climate and river changes are considered major causes.\nWhich of the statements given above is/are correct?",
+    "question_ta": "பின்வரும் கூற்றுகளை ஆராய்க (இந்த வரலாற்று தலைப்பு):\nஹரப்ப நாகரிக வீழ்ச்சிக்கான முக்கிய காரணம் எது:\n1. 1 மற்றும் 2 இரண்டும் என்பது இந்த வரலாற்று தலைப்பு தொடர்பான முதன்மை அம்சமாகும்.\n2. காலநிலை மற்றும் நதி மாற்றங்கள் முக்கிய காரணமாக கருதப்படுகின்றன.\nமேற்கண்ட கூற்றுகளில் எது/எவை சரியானவை?",
+    "options_en": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "options_ta": [
+      "1 மட்டும்",
+      "2 மட்டும்",
+      "1 மற்றும் 2 இரண்டும்",
+      "இரண்டும் இல்லை"
+    ],
+    "answer": "c",
     "explanation_en": "Climate and river changes are considered major causes.",
     "explanation_ta": "காலநிலை மற்றும் நதி மாற்றங்கள் முக்கிய காரணமாக கருதப்படுகின்றன.",
-    "subject": "HISTORY",
-    "topic": "indus_valley_civilization"
+    "subject": "history",
+    "topic": "indus_valley_civilization",
+    "difficulty": "medium",
+    "why_not_others": {
+      "A": {
+        "en": "Incorrect. Option A ('1 only') is incomplete for Medium Q10 because statement 2 is also factually correct regarding this Harappan topic.",
+        "ta": "தவறு. தெரிவு A ('1 மட்டும்') பகுதி சரியே; ஏனெனில் கூற்று 2-ம் இத்தலைப்பில் வரலாற்று ரீதியாகச் சரியான தகவலாகும்."
+      },
+      "B": {
+        "en": "Incorrect. Option B ('2 only') is incomplete for Medium Q10 because statement 1 is also factually correct in this context.",
+        "ta": "தவறு. தெரிவு B ('2 மட்டும்') பகுதி சரியே; ஏனெனில் கூற்று 1-ம் இத்தலைப்பில் வரலாற்று ரீதியாகச் சரியான தகவலாகும்."
+      },
+      "C": {
+        "en": "Correct. Option C ('Both 1 and 2') is the correct answer. Climate and river changes are considered major causes.",
+        "ta": "சரி. தெரிவு C ('1 மற்றும் 2 இரண்டும்') சரியான பதிலாகும். காலநிலை மற்றும் நதி மாற்றங்கள் முக்கிய காரணமாக கருதப்படுகின்றன."
+      },
+      "D": {
+        "en": "Incorrect. Option D ('Neither 1 nor 2') is incorrect for Medium Q10 because both statements are supported by established archaeological evidence.",
+        "ta": "தவறு. தெரிவு D ('இரண்டும் இல்லை') தவறானது; ஏனெனில் இரு கூற்றுகளும் தொல்லியல் சான்றுகளால் நிரூபிக்கப்பட்ட உண்மைகள்."
+      }
+    },
+    "tnpsc_tip": {
+      "type": "site_feature",
+      "en": "TNPSC Focus [MEDIUM Q10]: Pay attention to site/artefact distinctions in Harappan studies. Correct option is C.",
+      "ta": "தேர்வு கவனம் [MEDIUM வினா 10]: ஹரப்பா தொல்லியல் சான்றுகளின் தனித்துவமான வேறுபாடுகளைக் கவனிக்கவும்."
+    }
   },
   {
-    "question_en": "The Indus script was mainly found on:",
-    "question_ta": "சிந்து எழுத்து பெரும்பாலும் எதில் காணப்படுகிறது?",
-    "options_en": ["Palm leaves", "Copper plates", "Seals", "Coins"],
-    "options_ta": ["ஓலைச்சுவடி", "செம்புத்தகடு", "முத்திரைகள்", "நாணயங்கள்"],
+    "question_en": "Consider the following statements regarding The Indus script was mainly found inscribed on::\n1. Seals is directly associated with this historical event/concept.\n2. Most inscriptions were found on seals.\nWhich of the statements given above is/are correct?",
+    "question_ta": "பின்வரும் கூற்றுகளை ஆராய்க: சிந்து சமவெளி எழுத்துக்கள் முக்கியமாக எவற்றில் பொறிக்கப்பட்டுள்ளன:\n1. முத்திரைகள் இந்த வரலாற்று நிகழ்வு/கருத்துடன் நேரடியாக தொடர்புடையவர்/தொடர்புடையது.\n2. பெரும்பாலான கல்வெட்டுகள் முத்திரைகளில் கிடைத்தன.\nமேற்கண்ட கூற்றுகளில் எது/எவை சரியானவை?",
+    "options_en": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "options_ta": [
+      "1 மட்டும்",
+      "2 மட்டும்",
+      "1 மற்றும் 2 இரண்டும்",
+      "இரண்டும் இல்லை"
+    ],
     "answer": "c",
     "explanation_en": "Most inscriptions were found on seals.",
     "explanation_ta": "பெரும்பாலான கல்வெட்டுகள் முத்திரைகளில் கிடைத்தன.",
-    "subject": "HISTORY",
-    "topic": "indus_valley_civilization"
+    "subject": "history",
+    "topic": "indus_valley_civilization",
+    "difficulty": "medium",
+    "why_not_others": {
+      "A": {
+        "en": "Incorrect. Option A ('1 only') is incomplete for Medium Q11 because statement 2 is also factually correct regarding this Harappan topic.",
+        "ta": "தவறு. தெரிவு A ('1 மட்டும்') பகுதி சரியே; ஏனெனில் கூற்று 2-ம் இத்தலைப்பில் வரலாற்று ரீதியாகச் சரியான தகவலாகும்."
+      },
+      "B": {
+        "en": "Incorrect. Option B ('2 only') is incomplete for Medium Q11 because statement 1 is also factually correct in this context.",
+        "ta": "தவறு. தெரிவு B ('2 மட்டும்') பகுதி சரியே; ஏனெனில் கூற்று 1-ம் இத்தலைப்பில் வரலாற்று ரீதியாகச் சரியான தகவலாகும்."
+      },
+      "C": {
+        "en": "Correct. Option C ('Both 1 and 2') is the correct answer. Most inscriptions were found on seals.",
+        "ta": "சரி. தெரிவு C ('1 மற்றும் 2 இரண்டும்') சரியான பதிலாகும். பெரும்பாலான கல்வெட்டுகள் முத்திரைகளில் கிடைத்தன."
+      },
+      "D": {
+        "en": "Incorrect. Option D ('Neither 1 nor 2') is incorrect for Medium Q11 because both statements are supported by established archaeological evidence.",
+        "ta": "தவறு. தெரிவு D ('இரண்டும் இல்லை') தவறானது; ஏனெனில் இரு கூற்றுகளும் தொல்லியல் சான்றுகளால் நிரூபிக்கப்பட்ட உண்மைகள்."
+      }
+    },
+    "tnpsc_tip": {
+      "type": "exam_focus",
+      "en": "TNPSC Focus [MEDIUM Q11]: Pay attention to site/artefact distinctions in Harappan studies. Correct option is C.",
+      "ta": "தேர்வு கவனம் [MEDIUM வினா 11]: ஹரப்பா தொல்லியல் சான்றுகளின் தனித்துவமான வேறுபாடுகளைக் கவனிக்கவும்."
+    }
   },
   {
     "question_en": "Which among the following statements about Harappan religion is correct?\n1. Mother Goddess worship existed.\n2. Tree worship was practiced.\n3. Temple structures have been discovered.",
     "question_ta": "ஹரப்ப மதம் குறித்து சரியானவை:\n1. தாய் தெய்வ வழிபாடு இருந்தது.\n2. மர வழிபாடு இருந்தது.\n3. கோவில் அமைப்புகள் கண்டுபிடிக்கப்பட்டன.",
-    "options_en": ["1 only", "1 and 2", "2 and 3", "All"],
-    "options_ta": ["1 மட்டும்", "1 மற்றும் 2", "2 மற்றும் 3", "அனைத்தும்"],
+    "options_en": [
+      "1 only",
+      "1 and 2",
+      "2 and 3",
+      "All"
+    ],
+    "options_ta": [
+      "1 மட்டும்",
+      "1 மற்றும் 2",
+      "2 மற்றும் 3",
+      "அனைத்தும்"
+    ],
     "answer": "b",
     "explanation_en": "Temple structures have not been found.",
     "explanation_ta": "கோவில் அமைப்புகள் கண்டுபிடிக்கப்படவில்லை.",
-    "subject": "HISTORY",
-    "topic": "indus_valley_civilization"
+    "subject": "history",
+    "topic": "indus_valley_civilization",
+    "why_not_others": {
+      "A": {
+        "en": "Incorrect. Option A ('1 only') is incomplete for Medium Q12 because statement 2 is also factually correct regarding this Harappan topic.",
+        "ta": "தவறு. தெரிவு A ('1 மட்டும்') பகுதி சரியே; ஏனெனில் கூற்று 2-ம் இத்தலைப்பில் வரலாற்று ரீதியாகச் சரியான தகவலாகும்."
+      },
+      "B": {
+        "en": "Correct. Option B ('1 and 2') is the correct answer. Temple structures have not been found.",
+        "ta": "சரி. தெரிவு B ('1 மற்றும் 2') சரியான பதிலாகும். கோவில் அமைப்புகள் கண்டுபிடிக்கப்படவில்லை."
+      },
+      "C": {
+        "en": "Incorrect. '2 and 3' is not the correct answer for Medium Q12. Temple structures have not been found.",
+        "ta": "தவறு. '2 மற்றும் 3' இக்கேள்விக்குரிய சரியான விடை அன்று. கோவில் அமைப்புகள் கண்டுபிடிக்கப்படவில்லை."
+      },
+      "D": {
+        "en": "Incorrect. 'All' is not the correct answer for Medium Q12. Temple structures have not been found.",
+        "ta": "தவறு. 'அனைத்தும்' இக்கேள்விக்குரிய சரியான விடை அன்று. கோவில் அமைப்புகள் கண்டுபிடிக்கப்படவில்லை."
+      }
+    },
+    "tnpsc_tip": {
+      "type": "site_feature",
+      "en": "TNPSC Focus [MEDIUM Q12]: Pay attention to site/artefact distinctions in Harappan studies. Correct option is B.",
+      "ta": "தேர்வு கவனம் [MEDIUM வினா 12]: ஹரப்பா தொல்லியல் சான்றுகளின் தனித்துவமான வேறுபாடுகளைக் கவனிக்கவும்."
+    }
   },
   {
-    "question_en": "Who announced the discovery of the Indus Valley Civilization to the world?",
-    "question_ta": "சிந்து நாகரிக கண்டுபிடிப்பை உலகிற்கு அறிவித்தவர் யார்?",
-    "options_en": ["Mortimer Wheeler", "John Marshall", "Dayaram Sahni", "S.R. Rao"],
-    "options_ta": ["மார்டிமர் வீலர்", "ஜான் மார்ஷல்", "தயாராம் சாஹ்னி", "எஸ்.ஆர். ராவ்"],
-    "answer": "b",
+    "question_en": "Consider the following statements regarding this historical topic:\nWho announced the discovery of the Indus Valley Civilization to the world:\n1. Both 1 and 2 is a primary entity associated with this historical topic.\n2. John Marshall officially announced the discovery.\nWhich of the statements given above is/are correct?",
+    "question_ta": "பின்வரும் கூற்றுகளை ஆராய்க (இந்த வரலாற்று தலைப்பு):\nசிந்து நாகரிக கண்டுபிடிப்பை உலகிற்கு அறிவித்தவர் யார்:\n1. 1 மற்றும் 2 இரண்டும் என்பது இந்த வரலாற்று தலைப்பு தொடர்பான முதன்மை அம்சமாகும்.\n2. ஜான் மார்ஷல் அதிகாரப்பூர்வமாக அறிவித்தார்.\nமேற்கண்ட கூற்றுகளில் எது/எவை சரியானவை?",
+    "options_en": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "options_ta": [
+      "1 மட்டும்",
+      "2 மட்டும்",
+      "1 மற்றும் 2 இரண்டும்",
+      "இரண்டும் இல்லை"
+    ],
+    "answer": "c",
     "explanation_en": "John Marshall officially announced the discovery.",
     "explanation_ta": "ஜான் மார்ஷல் அதிகாரப்பூர்வமாக அறிவித்தார்.",
-    "subject": "HISTORY",
-    "topic": "indus_valley_civilization"
+    "subject": "history",
+    "topic": "indus_valley_civilization",
+    "difficulty": "medium",
+    "why_not_others": {
+      "A": {
+        "en": "Incorrect. Option A ('1 only') is incomplete for Medium Q13 because statement 2 is also factually correct regarding this Harappan topic.",
+        "ta": "தவறு. தெரிவு A ('1 மட்டும்') பகுதி சரியே; ஏனெனில் கூற்று 2-ம் இத்தலைப்பில் வரலாற்று ரீதியாகச் சரியான தகவலாகும்."
+      },
+      "B": {
+        "en": "Incorrect. Option B ('2 only') is incomplete for Medium Q13 because statement 1 is also factually correct in this context.",
+        "ta": "தவறு. தெரிவு B ('2 மட்டும்') பகுதி சரியே; ஏனெனில் கூற்று 1-ம் இத்தலைப்பில் வரலாற்று ரீதியாகச் சரியான தகவலாகும்."
+      },
+      "C": {
+        "en": "Correct. Option C ('Both 1 and 2') is the correct answer. John Marshall officially announced the discovery.",
+        "ta": "சரி. தெரிவு C ('1 மற்றும் 2 இரண்டும்') சரியான பதிலாகும். ஜான் மார்ஷல் அதிகாரப்பூர்வமாக அறிவித்தார்."
+      },
+      "D": {
+        "en": "Incorrect. Option D ('Neither 1 nor 2') is incorrect for Medium Q13 because both statements are supported by established archaeological evidence.",
+        "ta": "தவறு. தெரிவு D ('இரண்டும் இல்லை') தவறானது; ஏனெனில் இரு கூற்றுகளும் தொல்லியல் சான்றுகளால் நிரூபிக்கப்பட்ட உண்மைகள்."
+      }
+    },
+    "tnpsc_tip": {
+      "type": "exam_focus",
+      "en": "TNPSC Focus [MEDIUM Q13]: Pay attention to site/artefact distinctions in Harappan studies. Correct option is C.",
+      "ta": "தேர்வு கவனம் [MEDIUM வினா 13]: ஹரப்பா தொல்லியல் சான்றுகளின் தனித்துவமான வேறுபாடுகளைக் கவனிக்கவும்."
+    }
   },
   {
-    "question_en": "Which site is known for evidence of horse remains?",
-    "question_ta": "குதிரை எச்சங்கள் கிடைத்த தளம் எது?",
-    "options_en": ["Harappa", "Lothal", "Surkotada", "Kalibangan"],
-    "options_ta": ["ஹரப்பா", "லோதல்", "சுர்கோடடா", "காலிபங்கன்"],
+    "question_en": "Consider the following statements regarding this historical topic:\nWhich site is known for evidence of horse remains:\n1. Both 1 and 2 is a primary entity associated with this historical topic.\n2. Horse remains were discovered at Surkotada.\nWhich of the statements given above is/are correct?",
+    "question_ta": "பின்வரும் கூற்றுகளை ஆராய்க (இந்த வரலாற்று தலைப்பு):\nகுதிரை எச்சங்கள் கிடைத்த தளம் எது:\n1. 1 மற்றும் 2 இரண்டும் என்பது இந்த வரலாற்று தலைப்பு தொடர்பான முதன்மை அம்சமாகும்.\n2. சுர்கோடடாவில் குதிரை எச்சங்கள் கண்டுபிடிக்கப்பட்டன.\nமேற்கண்ட கூற்றுகளில் எது/எவை சரியானவை?",
+    "options_en": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "options_ta": [
+      "1 மட்டும்",
+      "2 மட்டும்",
+      "1 மற்றும் 2 இரண்டும்",
+      "இரண்டும் இல்லை"
+    ],
     "answer": "c",
     "explanation_en": "Horse remains were discovered at Surkotada.",
     "explanation_ta": "சுர்கோடடாவில் குதிரை எச்சங்கள் கண்டுபிடிக்கப்பட்டன.",
-    "subject": "HISTORY",
-    "topic": "indus_valley_civilization"
+    "subject": "history",
+    "topic": "indus_valley_civilization",
+    "difficulty": "medium",
+    "why_not_others": {
+      "A": {
+        "en": "Incorrect. Option A ('1 only') is incomplete for Medium Q14 because statement 2 is also factually correct regarding this Harappan topic.",
+        "ta": "தவறு. தெரிவு A ('1 மட்டும்') பகுதி சரியே; ஏனெனில் கூற்று 2-ம் இத்தலைப்பில் வரலாற்று ரீதியாகச் சரியான தகவலாகும்."
+      },
+      "B": {
+        "en": "Incorrect. Option B ('2 only') is incomplete for Medium Q14 because statement 1 is also factually correct in this context.",
+        "ta": "தவறு. தெரிவு B ('2 மட்டும்') பகுதி சரியே; ஏனெனில் கூற்று 1-ம் இத்தலைப்பில் வரலாற்று ரீதியாகச் சரியான தகவலாகும்."
+      },
+      "C": {
+        "en": "Correct. Option C ('Both 1 and 2') is the correct answer. Horse remains were discovered at Surkotada.",
+        "ta": "சரி. தெரிவு C ('1 மற்றும் 2 இரண்டும்') சரியான பதிலாகும். சுர்கோடடாவில் குதிரை எச்சங்கள் கண்டுபிடிக்கப்பட்டன."
+      },
+      "D": {
+        "en": "Incorrect. Option D ('Neither 1 nor 2') is incorrect for Medium Q14 because both statements are supported by established archaeological evidence.",
+        "ta": "தவறு. தெரிவு D ('இரண்டும் இல்லை') தவறானது; ஏனெனில் இரு கூற்றுகளும் தொல்லியல் சான்றுகளால் நிரூபிக்கப்பட்ட உண்மைகள்."
+      }
+    },
+    "tnpsc_tip": {
+      "type": "site_feature",
+      "en": "TNPSC Focus [MEDIUM Q14]: Pay attention to site/artefact distinctions in Harappan studies. Correct option is C.",
+      "ta": "தேர்வு கவனம் [MEDIUM வினா 14]: ஹரப்பா தொல்லியல் சான்றுகளின் தனித்துவமான வேறுபாடுகளைக் கவனிக்கவும்."
+    }
   },
   {
-    "question_en": "Which among the following correctly explains the importance of the Indus Valley Civilization?",
-    "question_ta": "சிந்து நாகரிகத்தின் முக்கியத்துவத்தை சரியாக விளக்கும் கூற்று எது?",
-    "options_en": ["First iron civilization", "First urban civilization of India", "First Vedic civilization", "First Buddhist civilization"],
-    "options_ta": ["முதல் இரும்பு நாகரிகம்", "இந்தியாவின் முதல் நகர நாகரிகம்", "முதல் வேத நாகரிகம்", "முதல் புத்த நாகரிகம்"],
-    "answer": "b",
+    "question_en": "Consider the following statements regarding this historical topic:\nWhich among the following correctly explains the importance of the Indus Valley Civilization:\n1. Both 1 and 2 is a primary entity associated with this historical topic.\n2. It is regarded as India's first urban civilization.\nWhich of the statements given above is/are correct?",
+    "question_ta": "பின்வரும் கூற்றுகளை ஆராய்க (இந்த வரலாற்று தலைப்பு):\nசிந்து நாகரிகத்தின் முக்கியத்துவத்தை சரியாக விளக்கும் கூற்று எது:\n1. 1 மற்றும் 2 இரண்டும் என்பது இந்த வரலாற்று தலைப்பு தொடர்பான முதன்மை அம்சமாகும்.\n2. இது இந்தியாவின் முதல் நகர நாகரிகமாக கருதப்படுகிறது.\nமேற்கண்ட கூற்றுகளில் எது/எவை சரியானவை?",
+    "options_en": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "options_ta": [
+      "1 மட்டும்",
+      "2 மட்டும்",
+      "1 மற்றும் 2 இரண்டும்",
+      "இரண்டும் இல்லை"
+    ],
+    "answer": "c",
     "explanation_en": "It is regarded as India's first urban civilization.",
     "explanation_ta": "இது இந்தியாவின் முதல் நகர நாகரிகமாக கருதப்படுகிறது.",
-    "subject": "HISTORY",
-    "topic": "indus_valley_civilization"
+    "subject": "history",
+    "topic": "indus_valley_civilization",
+    "difficulty": "medium",
+    "why_not_others": {
+      "A": {
+        "en": "Incorrect. Option A ('1 only') is incomplete for Medium Q15 because statement 2 is also factually correct regarding this Harappan topic.",
+        "ta": "தவறு. தெரிவு A ('1 மட்டும்') பகுதி சரியே; ஏனெனில் கூற்று 2-ம் இத்தலைப்பில் வரலாற்று ரீதியாகச் சரியான தகவலாகும்."
+      },
+      "B": {
+        "en": "Incorrect. Option B ('2 only') is incomplete for Medium Q15 because statement 1 is also factually correct in this context.",
+        "ta": "தவறு. தெரிவு B ('2 மட்டும்') பகுதி சரியே; ஏனெனில் கூற்று 1-ம் இத்தலைப்பில் வரலாற்று ரீதியாகச் சரியான தகவலாகும்."
+      },
+      "C": {
+        "en": "Correct. Option C ('Both 1 and 2') is the correct answer. It is regarded as India's first urban civilization.",
+        "ta": "சரி. தெரிவு C ('1 மற்றும் 2 இரண்டும்') சரியான பதிலாகும். இது இந்தியாவின் முதல் நகர நாகரிகமாக கருதப்படுகிறது."
+      },
+      "D": {
+        "en": "Incorrect. Option D ('Neither 1 nor 2') is incorrect for Medium Q15 because both statements are supported by established archaeological evidence.",
+        "ta": "தவறு. தெரிவு D ('இரண்டும் இல்லை') தவறானது; ஏனெனில் இரு கூற்றுகளும் தொல்லியல் சான்றுகளால் நிரூபிக்கப்பட்ட உண்மைகள்."
+      }
+    },
+    "tnpsc_tip": {
+      "type": "exam_focus",
+      "en": "TNPSC Focus [MEDIUM Q15]: Pay attention to site/artefact distinctions in Harappan studies. Correct option is C.",
+      "ta": "தேர்வு கவனம் [MEDIUM வினா 15]: ஹரப்பா தொல்லியல் சான்றுகளின் தனித்துவமான வேறுபாடுகளைக் கவனிக்கவும்."
+    }
+  },
+  {
+    "question_en": "Consider the following statements regarding Dholavira:\n1. Dholavira is uniquely divided into three distinct planning sectors (Citadel, Middle Town, Lower Town).\n2. Dholavira features an advanced stone-cut water reservoir and drainage management system.\nWhich of the statements given above is/are correct?",
+    "question_ta": "தோலாவிரா பற்றிய பின்வரும் கூற்றுகளைக் கவனிக்கவும்:\n1. தோலாவிரா மூன்று தனித்துவமான நகரப் பிரிவுகளாக (கோட்டை, நடுத்தர நகரம், கீழ் நகரம்) பிரிக்கப்பட்டுள்ளது.\n2. தோலாவிரா மேம்பட்ட கல்வெட்டு நீர் தேக்கம் மற்றும் வடிகால் மேலாண்மை அமைப்பைக் கொண்டுள்ளது.\nமேற்கண்ட கூற்றுகளில் எது/எவை சரியானவை?",
+    "options_en": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "options_ta": [
+      "1 மட்டும்",
+      "2 மட்டும்",
+      "1 மற்றும் 2 ஆகிய இரண்டும்",
+      "இரண்டும் இல்லை"
+    ],
+    "answer": "c",
+    "explanation_en": "Both statements are correct. Dholavira in Rann of Kutch has a 3-tier town plan and massive water reservoirs.",
+    "explanation_ta": "இரண்டு கூற்றுகளும் சரியானவை. தோலாவிரா 3 அடுக்கு நகர அமைப்பையும் பெரும் நீர் தேக்கங்களையும் கொண்டுள்ளது.",
+    "subject": "history",
+    "topic": "indus_valley_civilization",
+    "why_not_others": {
+      "A": {
+        "en": "Incorrect. Option A ('1 only') is incomplete for Medium Q16 because statement 2 is also factually correct regarding this Harappan topic.",
+        "ta": "தவறு. தெரிவு A ('1 மட்டும்') பகுதி சரியே; ஏனெனில் கூற்று 2-ம் இத்தலைப்பில் வரலாற்று ரீதியாகச் சரியான தகவலாகும்."
+      },
+      "B": {
+        "en": "Incorrect. Option B ('2 only') is incomplete for Medium Q16 because statement 1 is also factually correct in this context.",
+        "ta": "தவறு. தெரிவு B ('2 மட்டும்') பகுதி சரியே; ஏனெனில் கூற்று 1-ம் இத்தலைப்பில் வரலாற்று ரீதியாகச் சரியான தகவலாகும்."
+      },
+      "C": {
+        "en": "Correct. Option C ('Both 1 and 2') is the correct answer. Both statements are correct. Dholavira in Rann of Kutch has a 3-tier town plan and massive water reservoirs.",
+        "ta": "சரி. தெரிவு C ('1 மற்றும் 2 ஆகிய இரண்டும்') சரியான பதிலாகும். இரண்டு கூற்றுகளும் சரியானவை. தோலாவிரா 3 அடுக்கு நகர அமைப்பையும் பெரும் நீர் தேக்கங்களையும் கொண்டுள்ளது."
+      },
+      "D": {
+        "en": "Incorrect. Option D ('Neither 1 nor 2') is incorrect for Medium Q16 because both statements are supported by established archaeological evidence.",
+        "ta": "தவறு. தெரிவு D ('இரண்டும் இல்லை') தவறானது; ஏனெனில் இரு கூற்றுகளும் தொல்லியல் சான்றுகளால் நிரூபிக்கப்பட்ட உண்மைகள்."
+      }
+    },
+    "tnpsc_tip": {
+      "type": "site_feature",
+      "en": "TNPSC Focus [MEDIUM Q16]: Pay attention to site/artefact distinctions in Harappan studies. Correct option is C.",
+      "ta": "தேர்வு கவனம் [MEDIUM வினா 16]: ஹரப்பா தொல்லியல் சான்றுகளின் தனித்துவமான வேறுபாடுகளைக் கவனிக்கவும்."
+    }
+  },
+  {
+    "question_en": "Consider the following statements regarding At which Harappan site were evidence of a ploughed agricultural field and fire altars discovered:\n1. Kalibangan is directly associated with this historical event/concept.\n2. Kalibangan in Rajasthan yielded a pre-Harappan ploughed field and series of raised brick fire altars.\nWhich of the statements given above is/are correct?",
+    "question_ta": "பின்வரும் கூற்றுகளை ஆராய்க: உழவு செய்யப்பட்ட விவசாய நிலம் மற்றும் நெருப்புப் பலிபீடங்களின் சான்றுகள் எந்த ஹரப்பா தளத்தில் கண்டுபிடிக்கப்பட்டன:\n1. காளிபங்கன் இந்த வரலாற்று நிகழ்வு/கருத்துடன் நேரடியாக தொடர்புடையவர்/தொடர்புடையது.\n2. ராஜஸ்தானில் உள்ள காளிபங்கனில் உழப்பட்ட நிலமும் நெருப்பு பலிபீடங்களும் கண்டறியப்பட்டன.\nமேற்கண்ட கூற்றுகளில் எது/எவை சரியானவை?",
+    "options_en": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "options_ta": [
+      "1 மட்டும்",
+      "2 மட்டும்",
+      "1 மற்றும் 2 இரண்டும்",
+      "இரண்டும் இல்லை"
+    ],
+    "answer": "c",
+    "explanation_en": "Kalibangan in Rajasthan yielded a pre-Harappan ploughed field and series of raised brick fire altars.",
+    "explanation_ta": "ராஜஸ்தானில் உள்ள காளிபங்கனில் உழப்பட்ட நிலமும் நெருப்பு பலிபீடங்களும் கண்டறியப்பட்டன.",
+    "subject": "history",
+    "topic": "indus_valley_civilization",
+    "difficulty": "medium",
+    "why_not_others": {
+      "A": {
+        "en": "Incorrect. Option A ('1 only') is incomplete for Medium Q17 because statement 2 is also factually correct regarding this Harappan topic.",
+        "ta": "தவறு. தெரிவு A ('1 மட்டும்') பகுதி சரியே; ஏனெனில் கூற்று 2-ம் இத்தலைப்பில் வரலாற்று ரீதியாகச் சரியான தகவலாகும்."
+      },
+      "B": {
+        "en": "Incorrect. Option B ('2 only') is incomplete for Medium Q17 because statement 1 is also factually correct in this context.",
+        "ta": "தவறு. தெரிவு B ('2 மட்டும்') பகுதி சரியே; ஏனெனில் கூற்று 1-ம் இத்தலைப்பில் வரலாற்று ரீதியாகச் சரியான தகவலாகும்."
+      },
+      "C": {
+        "en": "Correct. Option C ('Both 1 and 2') is the correct answer. Kalibangan in Rajasthan yielded a pre-Harappan ploughed field and series of raised brick fire altars.",
+        "ta": "சரி. தெரிவு C ('1 மற்றும் 2 இரண்டும்') சரியான பதிலாகும். ராஜஸ்தானில் உள்ள காளிபங்கனில் உழப்பட்ட நிலமும் நெருப்பு பலிபீடங்களும் கண்டறியப்பட்டன."
+      },
+      "D": {
+        "en": "Incorrect. Option D ('Neither 1 nor 2') is incorrect for Medium Q17 because both statements are supported by established archaeological evidence.",
+        "ta": "தவறு. தெரிவு D ('இரண்டும் இல்லை') தவறானது; ஏனெனில் இரு கூற்றுகளும் தொல்லியல் சான்றுகளால் நிரூபிக்கப்பட்ட உண்மைகள்."
+      }
+    },
+    "tnpsc_tip": {
+      "type": "exam_focus",
+      "en": "TNPSC Focus [MEDIUM Q17]: Pay attention to site/artefact distinctions in Harappan studies. Correct option is C.",
+      "ta": "தேர்வு கவனம் [MEDIUM வினா 17]: ஹரப்பா தொல்லியல் சான்றுகளின் தனித்துவமான வேறுபாடுகளைக் கவனிக்கவும்."
+    }
+  },
+  {
+    "question_en": "Consider the following statements regarding Cuneiform inscriptions from ancient Mesopotamia refer to the Indus Valley region by which name:\n1. Meluhha is directly associated with this historical event/concept.\n2. Mesopotamian records mention trade with 'Meluhha', identified by historians as the Indus Valley region.\nWhich of the statements given above is/are correct?",
+    "question_ta": "பின்வரும் கூற்றுகளை ஆராய்க: பண்டைய மெசபடோமியாவின் கியூனிபார்ம் கல்வெட்டுகள் சிந்துவெளிப் பகுதியை எந்தப் பெயரால் குறிப்பிடுகின்றன:\n1. மெலூஹா இந்த வரலாற்று நிகழ்வு/கருத்துடன் நேரடியாக தொடர்புடையவர்/தொடர்புடையது.\n2. மெசபடோமிய ஆவணங்கள் 'மெலூஹா' உடனான வர்த்தகத்தைக் குறிப்பிடுகின்றன. இது சிந்துவெளியைக் குறிக்கிறது.\nமேற்கண்ட கூற்றுகளில் எது/எவை சரியானவை?",
+    "options_en": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "options_ta": [
+      "1 மட்டும்",
+      "2 மட்டும்",
+      "1 மற்றும் 2 இரண்டும்",
+      "இரண்டும் இல்லை"
+    ],
+    "answer": "c",
+    "explanation_en": "Mesopotamian records mention trade with 'Meluhha', identified by historians as the Indus Valley region.",
+    "explanation_ta": "மெசபடோமிய ஆவணங்கள் 'மெலூஹா' உடனான வர்த்தகத்தைக் குறிப்பிடுகின்றன. இது சிந்துவெளியைக் குறிக்கிறது.",
+    "subject": "history",
+    "topic": "indus_valley_civilization",
+    "difficulty": "medium",
+    "why_not_others": {
+      "A": {
+        "en": "Incorrect. Option A ('1 only') is incomplete for Medium Q18 because statement 2 is also factually correct regarding this Harappan topic.",
+        "ta": "தவறு. தெரிவு A ('1 மட்டும்') பகுதி சரியே; ஏனெனில் கூற்று 2-ம் இத்தலைப்பில் வரலாற்று ரீதியாகச் சரியான தகவலாகும்."
+      },
+      "B": {
+        "en": "Incorrect. Option B ('2 only') is incomplete for Medium Q18 because statement 1 is also factually correct in this context.",
+        "ta": "தவறு. தெரிவு B ('2 மட்டும்') பகுதி சரியே; ஏனெனில் கூற்று 1-ம் இத்தலைப்பில் வரலாற்று ரீதியாகச் சரியான தகவலாகும்."
+      },
+      "C": {
+        "en": "Correct. Option C ('Both 1 and 2') is the correct answer. Mesopotamian records mention trade with 'Meluhha', identified by historians as the Indus Valley region.",
+        "ta": "சரி. தெரிவு C ('1 மற்றும் 2 இரண்டும்') சரியான பதிலாகும். மெசபடோமிய ஆவணங்கள் 'மெலூஹா' உடனான வர்த்தகத்தைக் குறிப்பிடுகின்றன. இது சிந்துவெளியைக் குறிக்கிறது."
+      },
+      "D": {
+        "en": "Incorrect. Option D ('Neither 1 nor 2') is incorrect for Medium Q18 because both statements are supported by established archaeological evidence.",
+        "ta": "தவறு. தெரிவு D ('இரண்டும் இல்லை') தவறானது; ஏனெனில் இரு கூற்றுகளும் தொல்லியல் சான்றுகளால் நிரூபிக்கப்பட்ட உண்மைகள்."
+      }
+    },
+    "tnpsc_tip": {
+      "type": "site_feature",
+      "en": "TNPSC Focus [MEDIUM Q18]: Pay attention to site/artefact distinctions in Harappan studies. Correct option is C.",
+      "ta": "தேர்வு கவனம் [MEDIUM வினா 18]: ஹரப்பா தொல்லியல் சான்றுகளின் தனித்துவமான வேறுபாடுகளைக் கவனிக்கவும்."
+    }
+  },
+  {
+    "question_en": "Consider the following statements regarding The Indus Valley script is described as 'Boustrophedon'. What does this term imply:\n1. Written alternately from right to left and left to right in consecutive lines is directly associated with this historical event/concept.\n2. Boustrophedon writing style alternates direction between right-to-left and left-to-right in successive lines.\nWhich of the statements given above is/are correct?",
+    "question_ta": "பின்வரும் கூற்றுகளை ஆராய்க: சிந்துவெளி எழுத்து முறை 'போஸ்ட்ரோஃபெடான்' என விவரிக்கப்படுகிறது. இதன் பொருள் என்ன:\n1. அடுத்தடுத்த வரிகளில் வலமிருந்து இடமாகவும், இடமிருந்து வலமாகவும் மாறி மாறி எழுதப்படுதல் இந்த வரலாற்று நிகழ்வு/கருத்துடன் நேரடியாக தொடர்புடையவர்/தொடர்புடையது.\n2. போஸ்ட்ரோஃபெடான் என்பது வலமிருந்து இடமாகவும் அடுத்த வரியில் இடமிருந்து வலமாகவும் மாற்றி எழுதும் முறையாகும்.\nமேற்கண்ட கூற்றுகளில் எது/எவை சரியானவை?",
+    "options_en": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "options_ta": [
+      "1 மட்டும்",
+      "2 மட்டும்",
+      "1 மற்றும் 2 இரண்டும்",
+      "இரண்டும் இல்லை"
+    ],
+    "answer": "c",
+    "explanation_en": "Boustrophedon writing style alternates direction between right-to-left and left-to-right in successive lines.",
+    "explanation_ta": "போஸ்ட்ரோஃபெடான் என்பது வலமிருந்து இடமாகவும் அடுத்த வரியில் இடமிருந்து வலமாகவும் மாற்றி எழுதும் முறையாகும்.",
+    "subject": "history",
+    "topic": "indus_valley_civilization",
+    "difficulty": "medium",
+    "why_not_others": {
+      "A": {
+        "en": "Incorrect. Option A ('1 only') is incomplete for Medium Q19 because statement 2 is also factually correct regarding this Harappan topic.",
+        "ta": "தவறு. தெரிவு A ('1 மட்டும்') பகுதி சரியே; ஏனெனில் கூற்று 2-ம் இத்தலைப்பில் வரலாற்று ரீதியாகச் சரியான தகவலாகும்."
+      },
+      "B": {
+        "en": "Incorrect. Option B ('2 only') is incomplete for Medium Q19 because statement 1 is also factually correct in this context.",
+        "ta": "தவறு. தெரிவு B ('2 மட்டும்') பகுதி சரியே; ஏனெனில் கூற்று 1-ம் இத்தலைப்பில் வரலாற்று ரீதியாகச் சரியான தகவலாகும்."
+      },
+      "C": {
+        "en": "Correct. Option C ('Both 1 and 2') is the correct answer. Boustrophedon writing style alternates direction between right-to-left and left-to-right in successive lines.",
+        "ta": "சரி. தெரிவு C ('1 மற்றும் 2 இரண்டும்') சரியான பதிலாகும். போஸ்ட்ரோஃபெடான் என்பது வலமிருந்து இடமாகவும் அடுத்த வரியில் இடமிருந்து வலமாகவும் மாற்றி எழுதும் முறையாகும்."
+      },
+      "D": {
+        "en": "Incorrect. Option D ('Neither 1 nor 2') is incorrect for Medium Q19 because both statements are supported by established archaeological evidence.",
+        "ta": "தவறு. தெரிவு D ('இரண்டும் இல்லை') தவறானது; ஏனெனில் இரு கூற்றுகளும் தொல்லியல் சான்றுகளால் நிரூபிக்கப்பட்ட உண்மைகள்."
+      }
+    },
+    "tnpsc_tip": {
+      "type": "exam_focus",
+      "en": "TNPSC Focus [MEDIUM Q19]: Pay attention to site/artefact distinctions in Harappan studies. Correct option is C.",
+      "ta": "தேர்வு கவனம் [MEDIUM வினா 19]: ஹரப்பா தொல்லியல் சான்றுகளின் தனித்துவமான வேறுபாடுகளைக் கவனிக்கவும்."
+    }
+  },
+  {
+    "question_en": "Consider the following statements regarding The famous bronze figurine of a 'Dancing Girl' was crafted using which technique and discovered at which site:\n1. Lost-wax casting at Mohenjo-daro is directly associated with this historical event/concept.\n2. The Dancing Girl statuette was made using Cire Perdue (Lost-wax) process and found at Mohenjo-daro.\nWhich of the statements given above is/are correct?",
+    "question_ta": "பின்வரும் கூற்றுகளை ஆராய்க: புகழ்பெற்ற 'நடனமாடும் பெண்' வெண்கலச் சிலை எந்த நுட்பத்தைப் பயன்படுத்தி வார்க்கப்பட்டது மற்றும் எங்கு கண்டெடுக்கப்பட்டது:\n1. மொஹஞ்சதாரோவில் மெழுகு வார்ப்பு முறை இந்த வரலாற்று நிகழ்வு/கருத்துடன் நேரடியாக தொடர்புடையவர்/தொடர்புடையது.\n2. நடனமாடும் பெண் சிலை மெழுகு வார்ப்பு முறையில் தயாரிக்கப்பட்டு மொஹஞ்சதாரோவில் கண்டெடுக்கப்பட்டது.\nமேற்கண்ட கூற்றுகளில் எது/எவை சரியானவை?",
+    "options_en": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "options_ta": [
+      "1 மட்டும்",
+      "2 மட்டும்",
+      "1 மற்றும் 2 இரண்டும்",
+      "இரண்டும் இல்லை"
+    ],
+    "answer": "c",
+    "explanation_en": "The Dancing Girl statuette was made using Cire Perdue (Lost-wax) process and found at Mohenjo-daro.",
+    "explanation_ta": "நடனமாடும் பெண் சிலை மெழுகு வார்ப்பு முறையில் தயாரிக்கப்பட்டு மொஹஞ்சதாரோவில் கண்டெடுக்கப்பட்டது.",
+    "subject": "history",
+    "topic": "indus_valley_civilization",
+    "difficulty": "medium",
+    "why_not_others": {
+      "A": {
+        "en": "Incorrect. Option A ('1 only') is incomplete for Medium Q20 because statement 2 is also factually correct regarding this Harappan topic.",
+        "ta": "தவறு. தெரிவு A ('1 மட்டும்') பகுதி சரியே; ஏனெனில் கூற்று 2-ம் இத்தலைப்பில் வரலாற்று ரீதியாகச் சரியான தகவலாகும்."
+      },
+      "B": {
+        "en": "Incorrect. Option B ('2 only') is incomplete for Medium Q20 because statement 1 is also factually correct in this context.",
+        "ta": "தவறு. தெரிவு B ('2 மட்டும்') பகுதி சரியே; ஏனெனில் கூற்று 1-ம் இத்தலைப்பில் வரலாற்று ரீதியாகச் சரியான தகவலாகும்."
+      },
+      "C": {
+        "en": "Correct. Option C ('Both 1 and 2') is the correct answer. The Dancing Girl statuette was made using Cire Perdue (Lost-wax) process and found at Mohenjo-daro.",
+        "ta": "சரி. தெரிவு C ('1 மற்றும் 2 இரண்டும்') சரியான பதிலாகும். நடனமாடும் பெண் சிலை மெழுகு வார்ப்பு முறையில் தயாரிக்கப்பட்டு மொஹஞ்சதாரோவில் கண்டெடுக்கப்பட்டது."
+      },
+      "D": {
+        "en": "Incorrect. Option D ('Neither 1 nor 2') is incorrect for Medium Q20 because both statements are supported by established archaeological evidence.",
+        "ta": "தவறு. தெரிவு D ('இரண்டும் இல்லை') தவறானது; ஏனெனில் இரு கூற்றுகளும் தொல்லியல் சான்றுகளால் நிரூபிக்கப்பட்ட உண்மைகள்."
+      }
+    },
+    "tnpsc_tip": {
+      "type": "site_feature",
+      "en": "TNPSC Focus [MEDIUM Q20]: Pay attention to site/artefact distinctions in Harappan studies. Correct option is C.",
+      "ta": "தேர்வு கவனம் [MEDIUM வினா 20]: ஹரப்பா தொல்லியல் சான்றுகளின் தனித்துவமான வேறுபாடுகளைக் கவனிக்கவும்."
+    }
   }
 ]

@@ -57,259 +57,138 @@ def get_mock_intelligence(
     ctx = context or UserContext.get_or_create(user)
 
     # 1. Fetch Engine Outputs (Zero duplicate logic)
-    progress_rows = get_progress(user, context=ctx)
+    progress_rows = get_progress(user, context=ctx) or []
     intelligence = get_learning_intelligence(user, context=ctx)
     readiness = get_exam_readiness(user, context=ctx)
     revision_analytics = get_revision_analytics_v2(user, context=ctx)
     weakness_data = get_weakness(user, context=ctx)
 
-    # 2. Compute Overall Mock Accuracy & Classification
-    all_accuracies = [float(r.get("accuracy", 0)) for r in progress_rows if r.get("accuracy") is not None]
-    if all_accuracies:
-        overall_accuracy = int(round(sum(all_accuracies) / len(all_accuracies)))
-    else:
-        overall_accuracy = int(round(intelligence.get("current_mastery", 74.0)))
+    # 2. Identify Genuine Mock / Grand Test Records
+    mock_rows = [
+        r for r in progress_rows
+        if "grand_test" in str(r.get("topic", "")).lower()
+        or "mock" in str(r.get("topic", "")).lower()
+        or "mock" in str(r.get("subject", "")).lower()
+    ]
+    has_mock_history = len(mock_rows) > 0
 
+    if not has_mock_history:
+        result = {
+            "overall_accuracy": None,
+            "mock_level": "No Mock History",
+            "has_mock_history": False,
+            "is_eligible": False,
+            "time_per_question": None,
+            "attempt_rate": 0,
+            "correct_vs_wrong": {"correct": 0, "wrong": 0},
+            "section_performance": [],
+            "question_types": [],
+            "mistakes": [],
+            "strengths": [],
+            "mistake_breakdown": {},
+            "time_analysis": {
+                "fastest_section": "N/A",
+                "fastest_time": "N/A",
+                "slowest_section": "N/A",
+                "slowest_time": "N/A",
+                "recommendation": "Complete a Mock or Grand Test to generate behavioral analysis.",
+            },
+            "summary": "No mock test history available. Complete a Mock or Grand Test to generate behavioral analysis.",
+            "slowest_section": "N/A",
+            "weakest_qtype": "N/A",
+        }
+        if hasattr(st, "session_state"):
+            st.session_state[cache_key] = result
+        return result
+
+    # 3. Compute Real Mock Metrics from Genuine Mock Attempts
+    mock_accuracies = [float(r.get("accuracy", 0)) for r in mock_rows if r.get("accuracy") is not None]
+    overall_accuracy = int(round(sum(mock_accuracies) / len(mock_accuracies))) if mock_accuracies else 0
     mock_level = _classify_mock_level(overall_accuracy)
 
-    # 3. Compute Simulated Behavioral Metrics
-    overall_avg_time_sec = max(35, min(75, int(round(65 - (overall_accuracy * 0.25)))))
-    attempt_rate = max(70, min(98, int(round(overall_accuracy + 15))))
+    # Behavioral metrics derived from real mock accuracy
+    attempt_rate = max(70, min(100, int(round(overall_accuracy + 10))))
     correct_count = int(round((overall_accuracy / 100.0) * 100))
     wrong_count = 100 - correct_count
     correct_vs_wrong = {"correct": correct_count, "wrong": wrong_count}
 
-    # 4. Section Performance Matrix
-    section_performance = [
-        {"subject": "History", "accuracy": int(round(min(100, overall_accuracy * 1.04))), "avg_time_sec": overall_avg_time_sec - 4, "status": "Strong"},
-        {"subject": "Polity", "accuracy": int(round(min(100, overall_accuracy * 1.01))), "avg_time_sec": overall_avg_time_sec - 2, "status": "Strong"},
-        {"subject": "Economy", "accuracy": int(round(min(100, overall_accuracy * 0.90))), "avg_time_sec": overall_avg_time_sec + 8, "status": "Needs Attention"},
-        {"subject": "Geography", "accuracy": int(round(min(100, overall_accuracy * 0.96))), "avg_time_sec": overall_avg_time_sec, "status": "Average"},
-        {"subject": "Science", "accuracy": int(round(min(100, overall_accuracy * 0.88))), "avg_time_sec": overall_avg_time_sec + 6, "status": "Needs Attention"},
-        {"subject": "Aptitude", "accuracy": int(round(min(100, overall_accuracy * 1.02))), "avg_time_sec": overall_avg_time_sec + 10, "status": "Strong"},
-    ]
+    # Subject breakdown from real mock rows
+    subj_map = {}
+    for r in mock_rows:
+        s = str(r.get("subject", "General")).strip().title()
+        if s and r.get("accuracy") is not None:
+            subj_map.setdefault(s, []).append(float(r["accuracy"]))
 
-    # 5. Question Type Performance Breakdown
-    question_types = [
-        {"type": "Direct Concept Questions", "accuracy": int(round(min(100, overall_accuracy * 1.12))), "status": "Mastered"},
-        {"type": "Multi-Statement Questions", "accuracy": int(round(min(100, overall_accuracy * 0.92))), "status": "Developing"},
-        {"type": "Assertion & Reason", "accuracy": int(round(min(100, overall_accuracy * 0.82))), "status": "Primary Bottleneck"},
-        {"type": "Chronological Ordering", "accuracy": int(round(min(100, overall_accuracy * 0.88))), "status": "Needs Practice"},
-    ]
+    section_performance = []
+    for s_name, s_accs in subj_map.items():
+        s_acc = int(round(sum(s_accs) / len(s_accs)))
+        s_status = "Strong" if s_acc >= 75 else ("Average" if s_acc >= 60 else "Needs Attention")
+        section_performance.append({
+            "subject": s_name,
+            "accuracy": s_acc,
+            "avg_time_sec": 55,
+            "status": s_status,
+        })
 
-    # 6. Top Observed Mistake Patterns
-    mistakes = [
-        {"pattern": "Logical Mislinking in Assertion & Reason", "frequency": "High", "impact": "-8 Marks"},
-        {"pattern": "Rushed Reading of Multi-Statement Options", "frequency": "Medium", "impact": "-5 Marks"},
-        {"pattern": "Factual Date Confusion in History Chronology", "frequency": "Medium", "impact": "-4 Marks"},
-        {"pattern": "Time Misallocation on Complex Aptitude Calculations", "frequency": "Low", "impact": "-3 Marks"},
-    ]
+    if not section_performance:
+        section_performance.append({
+            "subject": "General",
+            "accuracy": overall_accuracy,
+            "avg_time_sec": 55,
+            "status": "Stable",
+        })
 
-    # 7. Observed Strength Behaviors
-    strengths = [
-        {"behavior": "High Speed on Direct Concept Questions", "advantage": "+12 Mins Saved"},
-        {"behavior": "Strong Accuracy on Unit 8 & 9 Tamil Culture", "advantage": "+15 Marks Gained"},
-        {"behavior": "High Accuracy Stability in Indian Polity Articles", "advantage": "+10 Marks Gained"},
-        {"behavior": "Disciplined Question Selection Flow", "advantage": "+5 Mins Saved"},
-    ]
-
-    # 8. Time Analysis Matrix
     fastest_sec = min(section_performance, key=lambda x: x["avg_time_sec"])
     slowest_sec = max(section_performance, key=lambda x: x["avg_time_sec"])
-    weakest_qtype = min(question_types, key=lambda x: x["accuracy"])
+
+    # Observed patterns based on real score
+    mistakes = []
+    mistake_breakdown = {}
+    if overall_accuracy < 60:
+        pattern = "Concept Application in Difficult Questions"
+        mistakes.append({"pattern": pattern, "frequency": "High", "impact": "-10 Marks"})
+        mistake_breakdown[pattern] = "High"
+    elif overall_accuracy < 75:
+        pattern = "Time Management Under Timed Conditions"
+        mistakes.append({"pattern": pattern, "frequency": "Medium", "impact": "-5 Marks"})
+        mistake_breakdown[pattern] = "Medium"
+
+    strengths = []
+    if overall_accuracy >= 70:
+        strengths.append({"behavior": "Consistent Question Selection Flow", "advantage": "+5 Mins Saved"})
 
     time_analysis = {
         "fastest_section": fastest_sec["subject"],
         "fastest_time": f"{fastest_sec['avg_time_sec']}s / question",
         "slowest_section": slowest_sec["subject"],
         "slowest_time": f"{slowest_sec['avg_time_sec']}s / question",
-        "recommendation": f"Allocate 5 fewer seconds per question on {fastest_sec['subject']} to spend on {slowest_sec['subject']}.",
+        "recommendation": f"Maintain steady pace on {fastest_sec['subject']}.",
     }
 
-    # 9. Executive Behavioral Summary
     summary = (
-        f"Overall mock performance is {mock_level.lower()} ({overall_accuracy}% accuracy, {attempt_rate}% attempt rate). "
-        f"Primary behavioral improvement is reducing time spent on {slowest_sec['subject']} questions and "
-        f"solidifying {weakest_qtype['type']} practice."
+        f"Mock performance is {mock_level.lower()} ({overall_accuracy}% accuracy, {attempt_rate}% attempt rate)."
     )
 
-    # 10. Return Master JSON Output Schema
     result = {
         "overall_accuracy": overall_accuracy,
         "mock_level": mock_level,
-        "time_per_question": overall_avg_time_sec,
+        "has_mock_history": True,
+        "is_eligible": True,
+        "time_per_question": 55,
         "attempt_rate": attempt_rate,
         "correct_vs_wrong": correct_vs_wrong,
         "section_performance": section_performance,
-        "question_types": question_types,
-        "mistakes": mistakes[:4],
-        "strengths": strengths[:4],
+        "question_types": [],
+        "mistakes": mistakes,
+        "strengths": strengths,
+        "mistake_breakdown": mistake_breakdown,
         "time_analysis": time_analysis,
         "summary": summary,
         "slowest_section": slowest_sec["subject"],
-        "weakest_qtype": weakest_qtype["type"],
+        "weakest_qtype": "N/A",
     }
 
     if hasattr(st, "session_state"):
         st.session_state[cache_key] = result
 
     return result
-
-    # 1. Fetch Engine Outputs (Zero duplicate logic)
-    progress_rows = get_progress(user, context=ctx)
-    intelligence = get_learning_intelligence(user, context=ctx)
-    readiness = get_exam_readiness(user, context=ctx)
-    revision_analytics = get_revision_analytics_v2(user, context=ctx)
-    weakness_data = get_weakness(user, context=ctx)
-
-
-    # 2. Compute Overall Mock Accuracy & Classification
-    all_accuracies = [float(r.get("accuracy", 0)) for r in progress_rows if r.get("accuracy") is not None]
-    if all_accuracies:
-        overall_accuracy = int(round(sum(all_accuracies) / len(all_accuracies)))
-    else:
-        overall_accuracy = int(round(intelligence.get("current_mastery", 74.0)))
-
-    overall_accuracy = max(10, min(100, overall_accuracy))
-    mock_level = _classify_mock_level(overall_accuracy)
-
-    # 3. Attempt Behavior & Ratios (Correct / Wrong / Skipped)
-    correct_pct = overall_accuracy
-    wrong_pct = min(22, max(5, int(round((100 - overall_accuracy) * 0.55))))
-    skipped_pct = max(0, 100 - (correct_pct + wrong_pct))
-    attempt_rate = correct_pct + wrong_pct
-
-    correct_vs_wrong = {
-        "correct": correct_pct,
-        "wrong": wrong_pct,
-        "skipped": skipped_pct,
-    }
-
-    # 4. Time Management Analysis
-    overall_avg_time_sec = 58  # Baseline average seconds per question
-
-    # Section-wise performance & time allocation
-    readiness_subjects = readiness.get("subjects", [])
-    section_performance = []
-
-    # Standard section time mapping profiles
-    time_profiles = {
-        "History": 42,
-        "Polity": 50,
-        "Science": 55,
-        "Current Affairs": 48,
-        "Economy": 88,
-        "Geography": 62,
-    }
-
-    for item in readiness_subjects:
-        s_name = item.get("subject", "General")
-        s_score = int(item.get("score", overall_accuracy))
-        t_sec = time_profiles.get(s_name, 58)
-
-        section_performance.append({
-            "subject": s_name,
-            "accuracy": s_score,
-            "avg_time_sec": t_sec,
-        })
-
-    # Sort section performance to find fast and slow sections
-    sorted_sections = sorted(section_performance, key=lambda x: x["avg_time_sec"])
-    fastest_sec = sorted_sections[0]
-    slowest_sec = sorted_sections[-1]
-
-    # 5. Question Type Performance Analysis
-    qtype = intelligence.get("question_type", "Assertion & Reason")
-    bot_acc = float(intelligence.get("current_mastery", 55.0))
-
-    # Derive realistic question type accuracies from sub-repository signals
-    qtype_accuracy_map = {
-        "Direct Questions": max(50, min(95, overall_accuracy + 10)),
-        "Statement Questions": max(45, min(90, overall_accuracy - 2)),
-        "Match the Following": max(45, min(90, overall_accuracy - 5)),
-        "Chronology": max(40, min(85, overall_accuracy - 13)),
-        "Assertion & Reason": max(35, min(85, int(round(bot_acc)))),
-    }
-
-    question_types = []
-    for qt_label, qt_acc in qtype_accuracy_map.items():
-        question_types.append({
-            "type": qt_label,
-            "accuracy": qt_acc,
-        })
-
-    sorted_qtypes = sorted(question_types, key=lambda x: x["accuracy"])
-    weakest_qtype = sorted_qtypes[0]
-    strongest_qtype = sorted_qtypes[-1]
-
-    # 6. Mistake Pattern Analysis Logic
-    mistakes = []
-    if weakest_qtype["accuracy"] < 65:
-        mistakes.append(f"Weak {weakest_qtype['type']} ({weakest_qtype['accuracy']}%)")
-
-    lowest_section = sorted(section_performance, key=lambda x: x["accuracy"])[0]
-    if lowest_section["accuracy"] < 65:
-        mistakes.append(f"Low {lowest_section['subject']} Section Accuracy ({lowest_section['accuracy']}%)")
-
-    if slowest_sec["avg_time_sec"] > 70:
-        mistakes.append(f"Time Pressure Errors in {slowest_sec['subject']} ({slowest_sec['avg_time_sec']}s/Q)")
-
-    rev_pct = revision_analytics.get("progress", {}).get("percentage", 75)
-    if rev_pct < 60:
-        mistakes.append("Revision Errors & Spaced Memory Decay")
-
-    if not mistakes:
-        mistakes.append("Occasional Careless Errors in Hard Questions")
-
-    # 7. Strength Analysis Logic
-    strengths = []
-    if strongest_qtype["accuracy"] >= 75:
-        strengths.append(f"Excellent {strongest_qtype['type']} ({strongest_qtype['accuracy']}%)")
-
-    highest_section = sorted(section_performance, key=lambda x: x["accuracy"], reverse=True)[0]
-    if highest_section["accuracy"] >= 75:
-        strengths.append(f"Strong {highest_section['subject']} Performance ({highest_section['accuracy']}%)")
-
-    if fastest_sec["avg_time_sec"] <= 50:
-        strengths.append(f"Fast Pace in {fastest_sec['subject']} ({fastest_sec['avg_time_sec']}s/Q)")
-
-    if attempt_rate >= 80:
-        strengths.append(f"Strong Attempt Rate ({attempt_rate}%)")
-
-    if not strengths:
-        strengths.append("Consistent Mock Test Participation")
-
-    # 8. Time Analysis Rationale
-    time_analysis = (
-        f"{slowest_sec['subject']} section consumes excessive time ({slowest_sec['avg_time_sec']} sec/question "
-        f"vs {overall_avg_time_sec} sec overall average). Fast pace maintained in {fastest_sec['subject']} "
-        f"({fastest_sec['avg_time_sec']} sec/question)."
-    )
-
-    # 9. Master Intelligence Summary
-    summary = (
-        f"Overall mock performance is {mock_level.lower()} ({overall_accuracy}% accuracy, {attempt_rate}% attempt rate). "
-        f"Primary behavioral improvement is reducing time spent on {slowest_sec['subject']} questions and "
-        f"solidifying {weakest_qtype['type']} practice."
-    )
-
-    # 10. Return Master JSON Output Schema
-    return {
-        "overall_accuracy": overall_accuracy,
-        "mock_level": mock_level,
-        "time_per_question": overall_avg_time_sec,
-        "attempt_rate": attempt_rate,
-        "correct_vs_wrong": correct_vs_wrong,
-        "section_performance": section_performance,
-        "question_types": question_types,
-        "mistakes": mistakes[:4],
-        "strengths": strengths[:4],
-        "time_analysis": time_analysis,
-        "summary": summary,
-        "slowest_section": slowest_sec["subject"],
-        "weakest_qtype": weakest_qtype["type"],
-    }
-
-    return get_cached_engine_result(
-        "Mock Intelligence Engine", user, _compute, force_refresh=force_refresh
-    )

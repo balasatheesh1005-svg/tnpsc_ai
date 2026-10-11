@@ -160,8 +160,13 @@ def get_adaptive_final_revision(
 
     for subj in all_subjects:
         weak_penalty = weak_subject_counts.get(subj, 0) * 15.0
-        mock_acc = float(mock_sections.get(subj, {}).get("accuracy", 70)) if isinstance(mock_sections.get(subj), dict) else 70.0
-        mock_penalty = (100.0 - mock_acc) * 0.4
+        mock_entry = mock_sections.get(subj) if isinstance(mock_sections, dict) else None
+        mock_acc_val = mock_entry.get("accuracy") if isinstance(mock_entry, dict) else None
+        if mock_acc_val is not None:
+            mock_acc = float(mock_acc_val)
+            mock_penalty = (100.0 - mock_acc) * 0.4
+        else:
+            mock_penalty = 0.0
         weightage = float(STANDARD_SUBJECT_WEIGHTAGES.get(subj, 65))
         
         # Priority score: Higher score means HIGHER revision urgency
@@ -186,9 +191,9 @@ def get_adaptive_final_revision(
     # Ensure fallback topics if weakness data is sparse
     if not priority_topics:
         priority_topics = [
-            "Geography: Physical Geography & Climate",
-            "Economy: Indian Economy & Planning",
-            "Environment: Biodiversity & Ecology",
+            "Polity: Constitution of India",
+            "History: Freedom Struggle",
+            "Economy: Fiscal Policy",
         ]
     else:
         # Normalize display format
@@ -201,7 +206,8 @@ def get_adaptive_final_revision(
         revision_order = ["Economy", "Geography", "Science", "History"]
 
     # 6. Daily Target & 4-Cycle Revision
-    overall_readiness_score = int(readiness.get("overall_readiness_score", 68))
+    raw_readiness = readiness.get("overall_readiness_score")
+    overall_readiness_score = int(raw_readiness) if raw_readiness is not None else 0
     daily_target = _generate_daily_target(revision_phase, overall_readiness_score)
 
     revision_cycles = [
@@ -221,18 +227,22 @@ def get_adaptive_final_revision(
     # Mock behavior risk
     mistakes = mock_data.get("mistake_breakdown", {})
     assert_wrong = mistakes.get("Assertion & Reason", 0) if isinstance(mistakes, dict) else 0
-    if assert_wrong > 0 or "Assertion" in str(mock_data):
+    if assert_wrong > 0:
         risk_analysis.append("Weak Assertion & Reason performance — incorporate focused 15-question daily drills.")
     else:
         risk_analysis.append("Statement & Reason question speed — allocate dedicated PYQ timed drills.")
 
     # Revision health risk
-    rev_pct = revision_analytics.get("progress", {}).get("percentage", 70) if isinstance(revision_analytics, dict) else 70
+    rev_progress = revision_analytics.get("progress", {}) if isinstance(revision_analytics, dict) else {}
+    raw_rev_pct = rev_progress.get("percentage") if isinstance(rev_progress, dict) else None
+    rev_pct = int(raw_rev_pct) if raw_rev_pct is not None else 70
     if rev_pct < 75:
         risk_analysis.append(f"Revision coverage at {rev_pct}% — increase spaced review frequency for overdue topics.")
 
     # Incomplete repository risk
-    repo_comp = readiness.get("dimension_breakdown", {}).get("repository_completion", 65) if isinstance(readiness.get("dimension_breakdown"), dict) else 65
+    dim_breakdown = readiness.get("dimension_breakdown", {}) if isinstance(readiness, dict) else {}
+    raw_repo_comp = dim_breakdown.get("repository_completion") if isinstance(dim_breakdown, dict) else None
+    repo_comp = int(raw_repo_comp) if raw_repo_comp is not None else 65
     if repo_comp < 70:
         risk_analysis.append(f"Hard topic repository completion at {repo_comp}% — complete targeted hard sets before exam week.")
 

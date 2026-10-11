@@ -87,9 +87,14 @@ def get_predictive_performance(
     xp_data = get_user_xp(user, context=ctx)
 
     # 2. Extract Baseline Metrics
-    curr_readiness = int(round(readiness_data.get("overall_score", 72)))
-    curr_mock_acc = int(round(mock_data.get("overall_accuracy", 74)))
-    curr_mastery = int(round(intelligence_data.get("current_mastery", 70.0)))
+    raw_readiness = readiness_data.get("overall_score") or readiness_data.get("overall_readiness_score")
+    curr_readiness = int(round(raw_readiness)) if raw_readiness is not None else 0
+
+    raw_mock_acc = mock_data.get("overall_accuracy")
+    curr_mock_acc = int(round(raw_mock_acc)) if raw_mock_acc is not None else 0
+
+    raw_mastery = intelligence_data.get("current_mastery")
+    curr_mastery = int(round(raw_mastery)) if raw_mastery is not None else 0
 
     rev_prog = revision_analytics.get("progress", {})
     curr_rev_health = int(round(float(rev_prog.get("percentage", 75.0))))
@@ -146,48 +151,75 @@ def get_predictive_performance(
     repo_trend = _classify_trend(curr_repo, repo_low_delta)
 
     # 4. Confidence Calculation Logic (0-100%)
-    sample_size = len(progress_rows) if progress_rows else 5
-    base_confidence = 70
+    sample_size = len(progress_rows) if progress_rows else 0
+    is_eligible = (sample_size >= 5)
 
-    if sample_size >= 15:
-        base_confidence += 12
-    elif sample_size >= 5:
-        base_confidence += 6
-
-    if streak >= 5:
-        base_confidence += 8
-    elif streak >= 2:
-        base_confidence += 4
-
-    if curr_rev_health >= 70:
-        base_confidence += 6
-
-    confidence = max(50, min(96, base_confidence))
-
-    if confidence >= 88:
-        conf_reason = "Rich learning history, consistent study streak, and sufficient performance data across tests."
-    elif confidence >= 75:
-        conf_reason = "Moderate learning history and steady revision activity. Projections are well-supported."
+    if sample_size == 0:
+        est_readiness = "Unavailable"
+        readiness_trend = "No Data"
+        est_mock_acc = "Unavailable"
+        mock_trend = "No Data"
+        est_mastery = "Unavailable"
+        mastery_trend = "No Data"
+        est_rev_health = "Unavailable"
+        revision_trend = "No Data"
+        est_consistency = "Unavailable"
+        consistency_trend = "No Data"
+        est_repo = "Unavailable"
+        repo_trend = "No Data"
+        confidence = 0
+        conf_reason = "No learning history available yet. Complete daily practice tests to generate performance projections."
+        expl_bullets = [
+            "Complete initial practice sessions to begin tracking performance trajectory.",
+            "Prediction confidence requires at least 5 completed practice sessions.",
+        ]
+        pred_reason = "Performance trajectory projections unlock after completing initial practice tests."
+        mentor_proj = "Begin with daily practice tests to establish your performance baseline."
     else:
-        conf_reason = "Sparse activity history or developing study streak. Complete more daily practice tests to refine accuracy."
+        if sample_size < 5:
+            confidence = max(20, min(60, 25 + (sample_size * 8)))
+            conf_reason = f"Preliminary baseline trajectory based on {sample_size} completed test(s). 5+ tests required for mature projection."
+        else:
+            base_confidence = 70
+            if sample_size >= 15:
+                base_confidence += 12
+            elif sample_size >= 5:
+                base_confidence += 6
 
-    # 5. Prediction Explanation Rules
-    expl_bullets = [
-        f"Consistent revision health ({curr_rev_health}%) indicates stable memory retention.",
-        f"Active learning streak ({streak} days) supports continued gradual performance gains.",
-        f"Observed mock exam accuracy ({curr_mock_acc}%) provides a reliable baseline for next test performance.",
-        f"Topic mastery baseline ({curr_mastery}%) across target syllabus subjects shows positive trajectory.",
-    ]
+            if streak >= 5:
+                base_confidence += 8
+            elif streak >= 2:
+                base_confidence += 4
 
-    pred_reason = (
-        f"Based on consistent revision ({curr_rev_health}%), improving mock analytics ({curr_mock_acc}%), "
-        f"and a stable study streak ({streak} days), current learning trend indicates continued gradual improvement."
-    )
+            if curr_rev_health >= 70:
+                base_confidence += 6
 
-    mentor_proj = (
-        "If current study consistency and spaced revision continue, readiness and mock accuracy "
-        "are projected to improve steadily within the estimated target ranges."
-    )
+            confidence = max(50, min(96, base_confidence))
+
+            if confidence >= 88:
+                conf_reason = "Rich learning history, consistent study streak, and sufficient performance data across tests."
+            elif confidence >= 75:
+                conf_reason = "Moderate learning history and steady revision activity. Projections are well-supported."
+            else:
+                conf_reason = "Sparse activity history or developing study streak. Complete more daily practice tests to refine accuracy."
+
+        # 5. Prediction Explanation Rules
+        expl_bullets = [
+            f"Consistent revision health ({curr_rev_health}%) indicates stable memory retention.",
+            f"Active learning streak ({streak} days) supports continued gradual performance gains.",
+            f"Observed mock exam accuracy ({curr_mock_acc}%) provides a reliable baseline for next test performance.",
+            f"Topic mastery baseline ({curr_mastery}%) across target syllabus subjects shows positive trajectory.",
+        ]
+
+        pred_reason = (
+            f"Based on consistent revision ({curr_rev_health}%), improving mock analytics ({curr_mock_acc}%), "
+            f"and a stable study streak ({streak} days), current learning trend indicates continued gradual improvement."
+        )
+
+        mentor_proj = (
+            "If current study consistency and spaced revision continue, readiness and mock accuracy "
+            "are projected to improve steadily within the estimated target ranges."
+        )
 
     # 6. Structured Dimension Breakdown Dict
     dimensions = {
@@ -236,7 +268,9 @@ def get_predictive_performance(
     }
 
     # 7. Final Master Engine Output Schema
-    return {
+    result = {
+        "is_eligible": is_eligible,
+        "sample_size": sample_size,
         "current_readiness": curr_readiness,
         "estimated_readiness": est_readiness,
         "readiness_trend": readiness_trend,

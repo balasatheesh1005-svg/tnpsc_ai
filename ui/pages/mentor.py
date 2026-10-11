@@ -2,7 +2,9 @@ import streamlit as st
 from core.mentor_chat import mentor_reply
 
 
-def render_mentor(section, typing_effect, user):
+def render_mentor(section, typing_effect=None, user=None):
+    if user is None:
+        user = typing_effect if isinstance(typing_effect, str) else "Aspirant"
     st.markdown("## 🤖 Nova Personal Mentor")
     section("🧑‍🏫 Personal Mentor")
 

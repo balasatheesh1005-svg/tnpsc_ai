@@ -196,17 +196,16 @@ def _render_sources_and_notes(q: NormalizedQuestion, prefix: str):
             else:
                 textbooks.append(s)
 
-        st.markdown("#### 📖 Source References")
-        if textbooks:
-            for tb in textbooks:
-                st.markdown(f"• **{html.escape(tb)}**")
-        
-        if notes:
-            st.markdown("##### TNPSC Nova AI Notes")
-            for n in notes:
-                st.markdown(f"• **{html.escape(n)}**")
-    else:
-        st.info("Standard textbook reference: M. Laxmikanth Indian Polity / NCERT / Samacheer Kalvi.")
+        if textbooks or notes:
+            st.markdown("#### 📖 Source References")
+            if textbooks:
+                for tb in textbooks:
+                    st.markdown(f"• **{html.escape(tb)}**")
+            
+            if notes:
+                st.markdown("##### TNPSC Nova AI Notes")
+                for n in notes:
+                    st.markdown(f"• **{html.escape(n)}**")
 
     st.markdown("#### 📝 Personal Study Notes")
     note_key = f"{prefix}_note_{q.id}"

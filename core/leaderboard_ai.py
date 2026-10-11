@@ -14,11 +14,19 @@ def get_top_users():
     if hasattr(st, "session_state") and cache_key in st.session_state:
         return st.session_state[cache_key]
 
-    response = supabase.table(TABLE).select("username, accuracy").execute()
+    try:
+        response = supabase.rpc("get_global_leaderboard").execute()
+        rows = getattr(response, "data", None) or []
+    except Exception as e:
+        import logging
+        logging.getLogger(__name__).warning(f"Leaderboard RPC get_global_leaderboard failed: {e}")
+        rows = []
 
-    user_scores = {}
+    leaderboard = []
 
-    for row in response.data or []:
+    for row in rows or []:
+        if not isinstance(row, dict):
+            continue
 
         username = row.get("username")
 
@@ -30,14 +38,7 @@ def get_top_users():
         except (TypeError, ValueError):
             continue
 
-        user_scores.setdefault(username, []).append(accuracy)
-
-    leaderboard = []
-
-    for username, scores in user_scores.items():
-
-        avg_accuracy = sum(scores) / len(scores)
-        leaderboard.append((username, round(avg_accuracy, 2)))
+        leaderboard.append((username, round(accuracy, 2)))
 
     leaderboard.sort(key=lambda x: x[1], reverse=True)
     top_10 = leaderboard[:10]
@@ -45,3 +46,4 @@ def get_top_users():
         st.session_state[cache_key] = top_10
 
     return top_10
+

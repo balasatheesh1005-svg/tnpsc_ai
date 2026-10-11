@@ -25,6 +25,8 @@ def load_questions(
     if level is not None:
         # Legacy 3-argument call: (subject, topic/title, level)
         subject = repository_id_or_subject.lower().strip()
+        if subject in ["gt", "gt_"]:
+            subject = "general_tamil"
         topic_input = repository_type_or_topic
         repo_type = level.lower().strip()
         meta = get_topic_metadata_by_id(subject, topic_input)
@@ -34,8 +36,13 @@ def load_questions(
         arg1 = repository_id_or_subject.strip()
         repo_type = repository_type_or_topic.lower().strip()
         
-        if "_" in arg1:
+        if arg1.startswith("gt_") or arg1.startswith("general_tamil_"):
+            subject = "general_tamil"
+            repo_id = arg1
+        elif "_" in arg1:
             subject = arg1.split("_", 1)[0].lower()
+            if subject in ["gt", "gt_"]:
+                subject = "general_tamil"
             repo_id = arg1
         else:
             subject = "polity"
@@ -101,6 +108,7 @@ def load_questions(
             file_paths.append(f"data/questions/{subject}/{subject}_{r_base}_{cand}.json")
         file_paths.append(f"data/questions/{subject}/{repo_id}_{cand}.json")
 
+    # 1. Try legacy split files first
     for file_path in file_paths:
         if os.path.exists(file_path):
             try:
@@ -110,8 +118,54 @@ def load_questions(
                 print(f"[ERROR] Error loading question file {file_path}: {e}")
                 return []
 
+    # 2. Try consolidated Gold bank files (e.g., gt_u1_piritthu_serththu_ezhuthuthal_gold.json)
+    gold_candidates = []
+    for r_base in repo_basenames:
+        gold_candidates.append(f"data/questions/{subject}/{r_base}_gold.json")
+        gold_candidates.append(f"data/questions/{subject}/{subject}_{r_base}_gold.json")
+    gold_candidates.append(f"data/questions/{subject}/{repo_id}_gold.json")
+
+    for gold_path in gold_candidates:
+        if os.path.exists(gold_path):
+            try:
+                with open(gold_path, encoding="utf-8") as f:
+                    raw_data = json.load(f)
+                all_qs = raw_data.get("questions", []) if isinstance(raw_data, dict) else raw_data
+                return _filter_gold_questions(all_qs, repo_type)
+            except Exception as e:
+                print(f"[ERROR] Error loading Gold question file {gold_path}: {e}")
+                return []
+
     print(f"[MISSING] Missing question repository file for repo_id='{repo_id}', type='{repo_type}'")
     return []
+
+
+def _filter_gold_questions(questions: List[Dict[str, Any]], repo_type: str) -> List[Dict[str, Any]]:
+    """Filters consolidated Gold bank questions in-memory by requested practice mode."""
+    mode = repo_type.lower().strip()
+
+    if mode in ["easy", "medium", "hard"]:
+        return [q for q in questions if str(q.get("difficulty", "")).lower().strip() == mode]
+
+    if mode in ["statement", "statement_based"]:
+        target_types = {"statement evaluation", "statement_evaluation", "statement", "statement based"}
+        return [q for q in questions if str(q.get("question_type", "")).lower().strip() in target_types]
+
+    if mode in ["match", "match_the_following"]:
+        target_types = {"match", "match_the_following", "match the following"}
+        return [q for q in questions if str(q.get("question_type", "")).lower().strip() in target_types]
+
+    if mode in ["assertion", "assertion_reason", "reasoning"]:
+        target_types = {"assertion reason", "assertion_reason", "assertion & reason", "assertion", "reasoning"}
+        return [q for q in questions if str(q.get("question_type", "")).lower().strip() in target_types]
+
+    if mode in ["pyq", "pyq_practice"]:
+        return [q for q in questions if q.get("question_origin") == "OFFICIAL_TNPSC_PYQ" or "pyq" in str(q.get("tags", [])).lower()]
+
+    if mode in ["grand", "grand_test"]:
+        return questions
+
+    return questions
 
 
 def clear_questions_cache():
