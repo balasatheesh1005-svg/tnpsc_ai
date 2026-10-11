@@ -33,8 +33,11 @@ def render_theme_css():
         footer,
         [data-testid="stFooter"],
         #viewerBadge_link,
-        [class*="viewerBadge_container"],
-        [class*="viewerBadge_link"] {{
+        [class*="viewerBadge"],
+        [data-testid="manage-app-button"],
+        [class*="manage-app"],
+        [class*="manageApp"],
+        [data-testid="stDecoration"] {{
             display: none !important;
             visibility: hidden !important;
         }}
