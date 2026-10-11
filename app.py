@@ -424,6 +424,10 @@ MENU_ALIASES = {
     "📘 Daily Test": "🔥 Daily Challenge",
     "Daily Test": "🔥 Daily Challenge",
     "📚 Notes": "📚 Learn & Practice",
+    "Notes": "📚 Learn & Practice",
+    "Study Notes": "📚 Learn & Practice",
+    "📖 Study Notes": "📚 Learn & Practice",
+    "📚 Study Notes": "📚 Learn & Practice",
     "PYQ": "📜 PYQ",
     "🔄 Smart Revision": "🧠 Smart Revision",
     "🧠 Weakness": "📚 Learn & Practice",
@@ -438,6 +442,8 @@ MENU_ALIASES = {
 
 if "main_menu" in st.session_state:
     raw_menu = st.session_state["main_menu"]
+    if raw_menu in ("📚 Notes", "Notes", "Study Notes", "📖 Study Notes", "📚 Study Notes"):
+        st.session_state["learn_practice_sub_tab"] = "📚 Study Notes"
     if raw_menu in MENU_ALIASES:
         st.session_state["main_menu"] = MENU_ALIASES[raw_menu]
 
@@ -446,7 +452,9 @@ if "main_menu" not in st.session_state or st.session_state["main_menu"] not in M
 
 if "navigate_to" in st.session_state:
     raw_nav = st.session_state.get("navigate_to")
-    if raw_nav == "🧠 Weakness":
+    if raw_nav in ("📚 Notes", "Notes", "Study Notes", "📖 Study Notes", "📚 Study Notes"):
+        st.session_state["learn_practice_sub_tab"] = "📚 Study Notes"
+    elif raw_nav == "🧠 Weakness":
         st.session_state["learn_practice_sub_tab"] = "🧠 Weak Areas"
     elif raw_nav in (
         "Practice Questions",

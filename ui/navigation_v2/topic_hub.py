@@ -233,7 +233,7 @@ def render_topic_hub(user: str):
         )
         if st.button("📖 Study Notes", key="hub_launch_notes", type="primary" if avail.get('notes') else "secondary", disabled=not avail.get('notes'), use_container_width=True):
             st.session_state["study_stage"] = "notes"
-            st.session_state["main_menu"] = "📚 Learn & Practice"
+            st.session_state["navigate_to"] = "📚 Study Notes"
             st.rerun()
 
     # CARD 2: GRAND TEST
